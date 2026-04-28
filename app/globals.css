@@ -380,3 +380,118 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 /* feature hero rise-up keyframe */
 @keyframes riseUp{to{transform:translateY(0)}}
 
+
+/* ============================================== */
+/* Mobile / tablet optimizations                   */
+/* ============================================== */
+
+/* hide custom cursor on touch devices */
+@media (hover: none), (pointer: coarse){
+  body{cursor:auto}
+  button, a, .chip, .sb-tag, .sb-submit, .rest-card, .feature-card, .hood, .region-card, .side-card, .tab{cursor:pointer}
+  .cursor-dot, .cursor-ring{display:none}
+}
+
+@media (max-width: 1024px){
+  .nav{padding:16px 20px}
+  .nav ul{gap:18px; font-size:11px; letter-spacing:.15em}
+  .nav .right{display:none}
+  .side-label{display:none}
+
+  .hero-inner{padding:120px 20px 30px}
+  .hero-vertical{display:none}
+
+  .section-head{grid-template-columns:1fr; gap:20px; padding:80px 20px 40px; align-items:start}
+  .section-head .lede{justify-self:start; text-align:left; max-width:100%}
+
+  .features{padding:0 20px 80px}
+  .feature-card{flex:0 0 min(420px, 85vw)}
+
+  .restaurants{padding:80px 20px}
+  .rest-grid{grid-template-columns:repeat(6,1fr); gap:14px}
+  .rest-card, .rest-card.tall, .rest-card.square, .rest-card.wide{grid-column:span 6; aspect-ratio:4/3}
+
+  .stats{padding:80px 20px}
+  .stats-grid{grid-template-columns:repeat(2,1fr); gap:30px}
+
+  .hoods{padding:80px 20px}
+  .hood{grid-template-columns:48px 1fr auto; grid-template-rows:auto auto; gap:12px 16px; padding:20px 8px}
+  .hood h3{font-size:24px; grid-column:2; grid-row:1}
+  .hood .desc{grid-column:1 / -1; grid-row:2; font-size:12px}
+  .hood .count{grid-column:3; grid-row:1; font-size:10px}
+  .hood .arrow{display:none}
+  .hood .preview-strip{display:none}
+  .hood:hover{padding-left:8px}
+
+  .regions-grid{grid-template-columns:repeat(2,1fr); gap:12px}
+  .region-card{aspect-ratio:3/4}
+
+  footer{padding:60px 20px 30px}
+  .footer-top{grid-template-columns:1fr 1fr; gap:30px; padding-bottom:40px}
+  .footer-bot{flex-direction:column; gap:8px; padding-top:20px}
+
+  /* feature page */
+  .feat-hero-inner{padding:120px 20px 40px}
+  .feat-hero h1{font-size:clamp(40px,9vw,72px)}
+  .feat-hero .bot{grid-template-columns:1fr; gap:24px; padding-top:24px}
+
+  .feat-body{padding:0 20px}
+  .tabs{margin-top:40px}
+  .tab{padding:16px 14px; font-size:10px}
+
+  .article{padding:60px 0}
+  .article-head{grid-template-columns:1fr; gap:24px; padding-bottom:40px}
+  .article-head .label .big{font-size:48px}
+
+  .rank-item{grid-template-columns:1fr; gap:16px; padding:24px 0}
+  .rank-item .rank{font-size:64px}
+  .rank-item .imgs{grid-template-columns:1fr 1fr; grid-template-rows:repeat(2,100px)}
+
+  .quote-block{padding:80px 20px}
+  .quote-block blockquote{font-size:clamp(20px,5vw,32px)}
+
+  .side-grid{grid-template-columns:repeat(2,1fr); gap:12px}
+  .side-article h3{font-size:clamp(28px,7vw,44px); margin-bottom:24px}
+
+  /* search bar */
+  .search-bar-wrap{padding:50px 20px 40px}
+  .sb-tags{margin-top:14px; gap:8px}
+  .sb-tag{font-size:11px; padding:5px 10px}
+
+  /* marquee */
+  .marquee-track{font-size:clamp(18px,4vw,28px); gap:32px; padding:16px 0}
+  .marquee-track span{gap:32px}
+
+  /* filter bar */
+  .filter-bar{padding:20px 16px; gap:16px}
+
+  /* page transition - fewer panels for performance */
+  .page-transition{grid-template-columns:repeat(4,1fr)}
+  .page-transition span:nth-child(n+5){display:none}
+}
+
+@media (max-width: 600px){
+  .nav .brand{font-size:14px}
+  .nav .brand small{font-size:9px}
+  .nav ul{gap:14px; font-size:10px; letter-spacing:.1em}
+
+  .hero{min-height:600px}
+  .hero-inner{padding-top:100px}
+  .hero-meta{flex-direction:column; gap:6px; align-items:flex-start}
+  .hero-sub{flex-direction:column; align-items:flex-start; gap:24px; margin-top:24px}
+  .hero-sub p{max-width:100%}
+
+  .rest-grid{grid-template-columns:1fr}
+  .rest-card, .rest-card.tall, .rest-card.square, .rest-card.wide{grid-column:span 1; aspect-ratio:4/3}
+
+  .footer-top{grid-template-columns:1fr; gap:24px}
+
+  .regions-grid{grid-template-columns:1fr}
+
+  .feat-hero{min-height:600px}
+
+  .rank-item .imgs{grid-template-columns:1fr; grid-template-rows:repeat(3,140px)}
+  .rank-item .imgs .im:nth-child(1){grid-row:auto}
+
+  .side-grid{grid-template-columns:1fr}
+}
