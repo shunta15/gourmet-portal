@@ -27,14 +27,14 @@ export default function HomeClient() {
       <SearchBar region={region} onRegion={setRegion} />
       <Marquee
         items={[
-          "RAMEN / 拉麺",
-          "YAKINIKU / 焼肉",
-          "SUSHI / 鮨",
-          "IZAKAYA / 居酒屋",
-          "SOBA / 蕎麦",
-          "TEMPURA / 天婦羅",
-          "ROBATA / 炉端",
-          "KAPPO / 割烹",
+          "拉麺",
+          "焼肉",
+          "鮨",
+          "居酒屋",
+          "蕎麦",
+          "天婦羅",
+          "炉端",
+          "割烹",
         ]}
       />
       <FeaturesCarousel />
