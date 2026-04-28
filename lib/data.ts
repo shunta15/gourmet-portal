@@ -102,7 +102,7 @@ export const NATIONAL = {
   ] as Stat[],
   heroImages: [
     "https://images.unsplash.com/photo-1554797589-7241bb691973?w=1600&q=80",
-    "https://images.unsplash.com/photo-1580959375944-abd7e991f971?w=1600&q=80",
+    "https://images.unsplash.com/photo-1752135534175-44aa59a1bb50?w=1600&q=80",
     "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80",
     "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80",
   ],
