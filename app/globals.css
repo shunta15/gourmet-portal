@@ -616,3 +616,52 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 @media (max-width: 600px){
   .section-head h2{font-size:clamp(28px, 8vw, 44px)}
 }
+
+/* ============================================== */
+/* Restaurant intro article body                   */
+/* ============================================== */
+.article-body{
+  max-width:780px;
+  font:400 16px/2 var(--body);
+  color:var(--ink);
+  padding:0 0 20px;
+}
+.article-body p{margin-bottom:1.6em}
+.article-body p:last-child{margin-bottom:0}
+.article-body p::first-letter{
+  font:600 2.4em/1 var(--serif);
+  float:left;
+  margin:0.05em 0.12em 0 0;
+  color:var(--accent);
+}
+.article-body p:not(:first-of-type)::first-letter{
+  font:inherit; float:none; margin:0; color:inherit;
+}
+
+.highlights{
+  list-style:none;
+  padding:0;
+  margin-top:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.highlights li{
+  font:500 14px/1.6 var(--body);
+  color:var(--ink-soft);
+  padding-left:22px;
+  position:relative;
+}
+.highlights li::before{
+  content:"◎";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--accent);
+  font:500 14px/1.6 var(--mono);
+}
+
+@media (max-width: 1024px){
+  .article-body{font-size:15px; line-height:1.9}
+  .article-body p::first-letter{font-size:2em}
+}

@@ -79,7 +79,35 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
       </section>
 
       <div className="feat-body">
-        <section className="article" style={{ paddingTop: 80 }}>
+        {r.body && r.body.length > 0 && (
+          <section className="article" style={{ paddingTop: 80 }}>
+            <div className="article-head reveal">
+              <div className="label">
+                紹介
+                <span className="big">記</span>
+              </div>
+              <div>
+                <h2>
+                  この店、<em>こういう店。</em>
+                </h2>
+                {r.highlights && r.highlights.length > 0 && (
+                  <ul className="highlights">
+                    {r.highlights.map((h, i) => (
+                      <li key={i}>{h}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            <div className="article-body reveal">
+              {r.body.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section className="article">
           <div className="article-head reveal">
             <div className="label">
               詳細
