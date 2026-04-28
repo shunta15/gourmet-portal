@@ -602,3 +602,17 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 
 /* region card stats wrap */
 .region-card .rc-stats{row-gap:4px}
+
+/* ============================================== */
+/* Section heads: prevent column overflow          */
+/* ============================================== */
+.section-head h2{
+  font-size:clamp(32px, 5vw, 72px);
+  line-height:1.05;
+}
+@media (max-width: 1024px){
+  .section-head h2{font-size:clamp(28px, 6vw, 56px)}
+}
+@media (max-width: 600px){
+  .section-head h2{font-size:clamp(28px, 8vw, 44px)}
+}

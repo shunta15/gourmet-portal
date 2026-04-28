@@ -30,7 +30,13 @@ export default function FeaturesCarousel() {
         <div className="no">
           <b>◎ 01</b>FEATURES / 特集
         </div>
-        <h2 className="reveal-line" style={{ whiteSpace: "nowrap" }}>
+        <h2
+          className="reveal-line"
+          style={{
+            whiteSpace: "nowrap",
+            fontSize: "clamp(28px, 5vw, 64px)",
+          }}
+        >
           <span>
             今月の、<em>特集記事</em>
           </span>
