@@ -76,16 +76,13 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
 
         {r.body && r.body.length > 0 && (
           <section className="article" style={{ paddingTop: 80 }}>
-            <div className="article-head reveal">
-              <div className="label">
-                紹介
-                <span className="big">記</span>
-              </div>
-              <div>
-                <h2>
-                  この店、<em>こういう店。</em>
-                </h2>
-              </div>
+            <div
+              className="article-head reveal"
+              style={{ gridTemplateColumns: "1fr" }}
+            >
+              <h2>
+                この店、<em>こういう店。</em>
+              </h2>
             </div>
             <div className="article-body reveal">
               {r.body.map((p, i) => (
@@ -96,16 +93,13 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
         )}
 
         <section className="article">
-          <div className="article-head reveal">
-            <div className="label">
-              詳細
-              <span className="big">店</span>
-            </div>
-            <div>
-              <h2>
-                店舗、<em>詳細。</em>
-              </h2>
-            </div>
+          <div
+            className="article-head reveal"
+            style={{ gridTemplateColumns: "1fr" }}
+          >
+            <h2>
+              店舗、<em>詳細。</em>
+            </h2>
           </div>
 
           <div className="detail-specs">
@@ -131,14 +125,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             </div>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 16,
-              marginTop: 40,
-              flexWrap: "wrap",
-            }}
-          >
+          <div className="detail-actions">
             {r.reservationUrl && (
               <a
                 href={r.reservationUrl}
@@ -185,17 +172,13 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
         </section>
 
         <section className="article">
-          <div className="article-head reveal">
-            <div className="label">
-              ギャラリー
-              <span className="big">写</span>
-            </div>
-            <div>
-              <h2>
-                空間と、<em>料理。</em>
-              </h2>
-              <p className="sub">店内・料理の写真を紹介します。</p>
-            </div>
+          <div
+            className="article-head reveal"
+            style={{ gridTemplateColumns: "1fr" }}
+          >
+            <h2>
+              空間と、<em>料理。</em>
+            </h2>
           </div>
           <div
             style={{
@@ -223,17 +206,13 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
 
         {related.length > 0 && (
           <section className="article" style={{ borderBottom: "none" }}>
-            <div className="article-head reveal">
-              <div className="label">
-                関連店舗
-                <span className="big">他</span>
-              </div>
-              <div>
-                <h2>
-                  {region.name}の、<em>他の名店。</em>
-                </h2>
-                <p className="sub">同じ地域の編集部おすすめ店。</p>
-              </div>
+            <div
+              className="article-head reveal"
+              style={{ gridTemplateColumns: "1fr" }}
+            >
+              <h2>
+                {region.name}の、<em>他の名店。</em>
+              </h2>
             </div>
             <div
               className="rest-grid"

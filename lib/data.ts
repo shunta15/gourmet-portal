@@ -152,7 +152,7 @@ const RES_GALLERY_FALLBACK = [
 export const RESTAURANTS: Restaurant[] = [
   {
     id: "r01",
-    name: "やきとり嶋家 南麻布",
+    name: "やきとり嶋家",
     cuisine: "焼鳥",
     area: "南麻布",
     region: "tokyo",

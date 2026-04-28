@@ -74,16 +74,13 @@ export default function RestaurantShortVideos({
 
   return (
     <section className="article">
-      <div className="article-head reveal">
-        <div className="label">
-          動画
-          <span className="big">{video ? "1" : "—"}</span>
-        </div>
-        <div>
-          <h2>
-            ショート、<em>動画。</em>
-          </h2>
-        </div>
+      <div
+        className="article-head reveal"
+        style={{ gridTemplateColumns: "1fr" }}
+      >
+        <h2>
+          ショート、<em>動画。</em>
+        </h2>
       </div>
 
       <div className="restaurant-short-single">

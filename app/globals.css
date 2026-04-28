@@ -923,3 +923,114 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
   cursor:pointer;
 }
 .active-tag button:hover{background:rgba(255,255,255,.4)}
+
+/* ============================================== */
+/* Mobile UX improvements (Round 2)                */
+/* ============================================== */
+
+/* 1. Tap targets: chips/tags need ≥44px touch height */
+@media (max-width: 768px){
+  .hashtag{
+    padding:12px 16px;
+    font-size:13px;
+    min-height:40px;
+  }
+  .chip{
+    padding:11px 16px;
+    font-size:13px;
+    min-height:40px;
+  }
+  .sb-tag{
+    padding:11px 14px;
+    font-size:13px;
+  }
+  .tab{padding:18px 16px}
+}
+
+/* 2. Detail action buttons: stack full-width on small screens */
+.detail-actions{
+  display:flex;
+  gap:14px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+.detail-actions > a, .detail-actions > .chip{
+  flex:0 1 auto;
+}
+@media (max-width: 768px){
+  .detail-actions{
+    flex-direction:column;
+    gap:10px;
+  }
+  .detail-actions > a, .detail-actions > .chip{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+    padding:16px 20px !important;
+    font-size:14px;
+  }
+}
+
+/* 3. Modal: respect iOS notch / safe-area */
+.video-modal{
+  padding:max(40px, env(safe-area-inset-top, 40px)) 20px
+          max(40px, env(safe-area-inset-bottom, 40px)) 20px;
+}
+.video-close{
+  top:max(16px, env(safe-area-inset-top, 16px));
+  right:max(16px, env(safe-area-inset-right, 16px));
+}
+
+/* 4. Tighter article spacing on mobile */
+@media (max-width: 768px){
+  .article{padding:48px 0}
+  .article-head{padding-bottom:30px; gap:20px}
+  .article-head h2{font-size:clamp(24px, 6vw, 40px); line-height:1.15}
+  .article-body{font-size:14px; line-height:1.85}
+  .article-body p{margin-bottom:1.3em}
+}
+
+/* 5. Hero / hashtag-row mobile fixes */
+.feat-hero h1{
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  line-height:1.05;
+}
+@media (max-width: 768px){
+  .feat-hero h1{
+    font-size:clamp(32px, 9vw, 56px);
+    padding:0 8px;
+  }
+  .hashtag-row{
+    padding:32px 0 20px;
+    gap:6px;
+  }
+  .feat-hero-inner{padding:100px 16px 30px}
+  .hero-vertical{display:none}
+}
+
+/* Misc mobile polish */
+@media (max-width: 768px){
+  /* Restaurant card meta tighter */
+  .rest-card .meta{padding-right:0; font-size:9px}
+  .rest-card h4{font-size:18px}
+  .rest-card .cuisine{font-size:9px}
+  /* Detail specs left column shrink */
+  .detail-specs > div{grid-template-columns:1fr; gap:6px}
+  .detail-specs b{font-size:10px}
+  /* Side-label hidden globally on small */
+  .side-label{display:none}
+  /* Marquee slower on mobile */
+  .marquee-track{animation-duration:60s}
+  /* Footer spacing */
+  footer{padding:48px 16px 24px}
+}
+
+/* Reduce motion for users that prefer it */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration:.01ms !important;
+    transition-duration:.01ms !important;
+  }
+  .marquee-track, .typewriter::after{animation:none !important}
+}
