@@ -161,6 +161,7 @@ export const RESTAURANTS: Restaurant[] = [
     gallery: [
       "/restaurants/yakitori-shimaya-hero.webp",
       "/restaurants/yakitori-shimaya-table.jpg",
+      "/restaurants/yakitori-shimaya-skewer-wasabi.jpg",
       "/restaurants/yakitori-shimaya-skewers.jpg",
       "/restaurants/yakitori-shimaya-2.jpg",
       "/restaurants/yakitori-shimaya-3.jpg",
