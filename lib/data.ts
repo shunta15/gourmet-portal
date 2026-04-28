@@ -175,7 +175,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "東京メトロ南北線・都営三田線 白金高輪駅 徒歩5分",
     reservationUrl: "https://www.tablecheck.com/ja/shimaya315/reserve/landing",
     source: { label: "公式サイト", url: "http://www.shimaya315.com/" },
-    tags: ["焼鳥", "熊野地鶏", "個室", "テラス席", "ペット可", "デート", "接待"],
+    tags: ["焼鳥", "個室", "テラス席", "ペット可", "デート", "接待"],
     highlights: [
       "オリジナル熊野地鶏 × 熟成鶏",
       "半個室・テラス席・ペット同伴可",
