@@ -27,55 +27,18 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
           ref={heroRef}
           style={{ backgroundImage: `url(${r.image})` }}
         />
-        <div className="feat-hero-inner">
-          <div>
-            <div className="kicker">
-              <span className="b"></span>
-              <span>店舗紹介</span>
-              <span>·</span>
-              <span>{region.name}</span>
-              {r.rating && (
-                <>
-                  <span>·</span>
-                  <span>★ {r.rating}</span>
-                </>
-              )}
-            </div>
-            <div style={{ marginTop: 30 }} className="reveal-line">
-              <div
-                style={{
-                  font: "500 11px/1 var(--mono)",
-                  letterSpacing: ".35em",
-                  color: "var(--accent)",
-                }}
-              >
-                {r.cuisine} · {r.area}
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h1 style={{ marginBottom: 20 }}>{r.name}</h1>
-            <div className="bot">
-              <p>{r.desc}</p>
-              <div className="dt">
-                <h6>住所</h6>
-                <p>{r.address}</p>
-              </div>
-              <div className="dt">
-                <h6>営業時間</h6>
-                <p>
-                  {r.hours}
-                  <br />
-                  定休日: {r.closed}
-                </p>
-              </div>
-              <div className="dt">
-                <h6>アクセス</h6>
-                <p>{r.nearest}</p>
-              </div>
-            </div>
-          </div>
+        <div
+          className="feat-hero-inner"
+          style={{ justifyContent: "center", alignItems: "center" }}
+        >
+          <h1
+            style={{
+              textAlign: "center",
+              margin: 0,
+            }}
+          >
+            {r.name}
+          </h1>
         </div>
       </section>
 
@@ -91,13 +54,6 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 <h2>
                   この店、<em>こういう店。</em>
                 </h2>
-                {r.highlights && r.highlights.length > 0 && (
-                  <ul className="highlights">
-                    {r.highlights.map((h, i) => (
-                      <li key={i}>{h}</li>
-                    ))}
-                  </ul>
-                )}
               </div>
             </div>
             <div className="article-body reveal">
@@ -118,7 +74,6 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
               <h2>
                 店舗、<em>詳細。</em>
               </h2>
-              <p className="sub">{r.desc}</p>
             </div>
           </div>
 
