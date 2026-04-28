@@ -1,9 +1,3 @@
-import { NATIONAL } from "@/lib/data";
-
 export default function SideLabel() {
-  return (
-    <div className="side-label">
-      {NATIONAL.brandEn} · EDITION 2026 / SPRING
-    </div>
-  );
+  return <div className="side-label">マチノワ · 2026年 春号</div>;
 }

@@ -67,7 +67,7 @@ export default function SearchClient() {
               marginBottom: 16,
             }}
           >
-            ◎ SEARCH RESULTS / 検索結果
+            ◎ 検索結果
           </div>
           <h1
             style={{

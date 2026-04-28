@@ -11,7 +11,7 @@ export default function Nav() {
     <nav className="nav">
       <Link href="/" className="brand" data-cursor="HOME">
         マチノワ
-        <small>MACHINOWA&nbsp;·&nbsp;街の輪</small>
+        <small>街の輪</small>
       </Link>
       <ul>
         <li>

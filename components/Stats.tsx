@@ -1,12 +1,12 @@
-import { NATIONAL } from "@/lib/data";
+import { getNationalStats } from "@/lib/data";
 
 export default function Stats() {
-  const N = NATIONAL;
+  const stats = getNationalStats();
   return (
     <section className="stats">
       <div className="section-head" style={{ padding: "0 0 40px" }}>
         <div className="no">
-          <b>◎ ー</b>NATIONAL / 全国
+          <b>◎ ー</b>全国
         </div>
         <h2 className="reveal-line">
           <span>
@@ -16,7 +16,7 @@ export default function Stats() {
         <div className="lede">北海道から沖縄まで、編集部の足跡。</div>
       </div>
       <div className="stats-grid">
-        {N.stats.map((s, i) => (
+        {stats.map((s, i) => (
           <div key={i} className="stat reveal">
             <div className="n">
               {s.n.includes(".") ? (

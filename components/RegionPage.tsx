@@ -8,6 +8,7 @@ import {
   REGIONS,
   RESTAURANTS,
   FEATURES,
+  getRegionStats,
   type RegionKey,
 } from "@/lib/data";
 import { useParallax, useReveal } from "@/lib/hooks";
@@ -17,6 +18,7 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const r = REGIONS[regionKey];
+  const stats = getRegionStats(regionKey);
   const restaurants = RESTAURANTS.filter((x) => x.region === regionKey);
 
   useEffect(() => {
@@ -35,11 +37,11 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
           <div>
             <div className="kicker">
               <span className="b"></span>
-              <span>MINI PORTAL</span>
+              <span>地域別ポータル</span>
               <span>·</span>
-              <span>{r.nameEn}</span>
+              <span>{r.name}</span>
               <span>·</span>
-              <span>EDITION 2026</span>
+              <span>2026年 春号</span>
             </div>
             <div style={{ marginTop: 30 }} className="reveal-line">
               <div
@@ -60,15 +62,15 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
               <p>{r.intro}</p>
               <div className="dt">
                 <h6>店舗数</h6>
-                <p>{r.stats[0].n} 店</p>
+                <p>{stats[0].n} 店</p>
               </div>
               <div className="dt">
                 <h6>エリア</h6>
-                <p>{r.stats[1].n}</p>
+                <p>{stats[1].n}</p>
               </div>
               <div className="dt">
-                <h6>★ AVG</h6>
-                <p>{r.stats[3].n}</p>
+                <h6>★ 評価</h6>
+                <p>{stats[3].n}</p>
               </div>
             </div>
           </div>
@@ -80,9 +82,9 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
           r.name,
           r.tagline,
           r.subtitle,
-          r.nameEn.toUpperCase(),
+          r.tagline,
           "編集部厳選",
-          "2026 SPRING",
+          "2026年 春号",
         ]}
       />
 
@@ -90,8 +92,8 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              RESTAURANTS
-              <span className="big">{r.stats[0].n}</span>
+              店舗一覧
+              <span className="big">{stats[0].n}</span>
             </div>
             <div>
               <h2>
@@ -117,7 +119,7 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              JUMP
+              他地域へ
               <span className="big">他</span>
             </div>
             <div>
@@ -143,10 +145,9 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
                   />
                   <div className="rc-body">
                     <div className="rc-no">
-                      EDITION / {String(i + 1).padStart(2, "0")}
+                      地域 / {String(i + 1).padStart(2, "0")}
                     </div>
                     <h3>{rr.name}</h3>
-                    <div className="rc-en">{rr.nameEn}</div>
                     <p className="rc-tag">
                       <em>{rr.tagline}</em>
                     </p>
@@ -159,7 +160,7 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
         <section className="article" style={{ borderBottom: "none" }}>
           <div className="article-head reveal">
             <div className="label">
-              FEATURES
+              特集記事
               <span className="big">読</span>
             </div>
             <div>

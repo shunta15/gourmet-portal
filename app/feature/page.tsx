@@ -23,8 +23,6 @@ export default function FeatureIndexPage() {
           <div>
             <div className="kicker">
               <span className="b"></span>
-              <span>FEATURES</span>
-              <span>·</span>
               <span>特集記事 一覧</span>
             </div>
             <h1 style={{ marginTop: 24 }}>
@@ -64,7 +62,7 @@ export default function FeatureIndexPage() {
                 <span>{f.kicker}</span>
               </div>
               <div className="body">
-                <div className="kicker">FEATURE / {f.no}</div>
+                <div className="kicker">特集 / {f.no}</div>
                 <h3>{f.title}</h3>
                 <p>{f.sub}</p>
                 <span className="read">記事を読む →</span>

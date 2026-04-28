@@ -22,8 +22,7 @@ export default function RestaurantGrid({
       <div>
         <div className="section-head" style={{ padding: "0 0 40px" }}>
           <div className="no">
-            <b style={{ color: "var(--accent)" }}>◎ 02</b>RESTAURANTS /
-            今週の名店
+            <b style={{ color: "var(--accent)" }}>◎ 02</b>今週の名店
           </div>
           <h2 className="reveal-line">
             <span>
@@ -40,7 +39,7 @@ export default function RestaurantGrid({
 
         <div className="filter-bar">
           <div className="filter-group">
-            <div className="filter-label">◎ 地域 / REGION</div>
+            <div className="filter-label">◎ 地域</div>
             <div className="chips">
               {Object.entries(REGIONS).map(([k, r]) => (
                 <button
@@ -59,7 +58,7 @@ export default function RestaurantGrid({
             </div>
           </div>
           <div className="filter-group">
-            <div className="filter-label">◎ 業種 / CUISINE</div>
+            <div className="filter-label">◎ 業種</div>
             <div className="chips">
               {cuisines.map((c) => (
                 <button

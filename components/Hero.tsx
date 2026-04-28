@@ -42,11 +42,11 @@ export default function Hero() {
         ))}
       </div>
       <div className="hero-grid" />
-      <div className="hero-vertical">{N.brandEn} — NATIONAL EDITION 2026</div>
+      <div className="hero-vertical">マチノワ · 全国版 2026</div>
       <div className="hero-inner">
         <div className="hero-meta">
-          <span>◎ {N.brandEn} · 全国飲食店ポータル</span>
-          <span>VOL. 24 / SPRING 2026</span>
+          <span>◎ {N.brand} · 全国飲食店ポータル</span>
+          <span>第24号 · 2026年 春号</span>
         </div>
         <h1 className={"hero-title " + (inView ? "in" : "")}>
           <span className="line">
@@ -68,7 +68,7 @@ export default function Hero() {
           </p>
           <div className="cta">
             <div className="scroll-hint">
-              SCROLL TO EXPLORE <div className="bar" />
+              下へスクロール <div className="bar" />
             </div>
           </div>
         </div>

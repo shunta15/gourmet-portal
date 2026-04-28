@@ -3,7 +3,7 @@ export default function Footer() {
     <footer>
       <div className="footer-top">
         <div>
-          <h5>NEWSLETTER</h5>
+          <h5>ニュースレター</h5>
           <div className="big">
             毎週金曜、<em>日本の味</em>。
           </div>
@@ -12,7 +12,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h5>NAVIGATION</h5>
+          <h5>ナビゲーション</h5>
           <ul>
             <li>トップ</li>
             <li>特集</li>
@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>REGIONS</h5>
+          <h5>地域</h5>
           <ul>
             <li>東京・下町</li>
             <li>京都</li>
@@ -31,7 +31,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h5>ABOUT</h5>
+          <h5>サイト情報</h5>
           <ul>
             <li>編集部</li>
             <li>掲載基準</li>
@@ -41,8 +41,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bot">
-        <span>© 2026 MACHINOWA / 街の輪 · ALL RIGHTS RESERVED</span>
-        <span>日本 全国 — 2026.04</span>
+        <span>© 2026 マチノワ / 街の輪 · 無断転載禁止</span>
+        <span>日本 全国 — 2026年 4月</span>
       </div>
     </footer>
   );

@@ -30,7 +30,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
           <div>
             <div className="kicker">
               <span className="b"></span>
-              <span>RESTAURANT / {r.id.toUpperCase()}</span>
+              <span>店舗紹介</span>
               <span>·</span>
               <span>{region.name}</span>
               <span>·</span>
@@ -54,11 +54,11 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             <div className="bot">
               <p>{r.desc}</p>
               <div className="dt">
-                <h6>ADDRESS</h6>
+                <h6>住所</h6>
                 <p>{r.address}</p>
               </div>
               <div className="dt">
-                <h6>HOURS</h6>
+                <h6>営業時間</h6>
                 <p>
                   {r.hours}
                   <br />
@@ -66,7 +66,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 </p>
               </div>
               <div className="dt">
-                <h6>ACCESS</h6>
+                <h6>アクセス</h6>
                 <p>{r.nearest}</p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
         <section className="article" style={{ paddingTop: 80 }}>
           <div className="article-head reveal">
             <div className="label">
-              DETAILS
+              詳細
               <span className="big">店</span>
             </div>
             <div>
@@ -154,7 +154,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              GALLERY
+              ギャラリー
               <span className="big">写</span>
             </div>
             <div>
@@ -190,7 +190,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
           <section className="article" style={{ borderBottom: "none" }}>
             <div className="article-head reveal">
               <div className="label">
-                RELATED
+                関連店舗
                 <span className="big">他</span>
               </div>
               <div>

@@ -28,7 +28,7 @@ export default function FeaturesCarousel() {
     <section className="features">
       <div className="section-head">
         <div className="no">
-          <b>◎ 01</b>FEATURES / 特集
+          <b>◎ 01</b>特集
         </div>
         <h2
           className="reveal-line"
@@ -64,7 +64,7 @@ export default function FeaturesCarousel() {
               <span>{f.kicker}</span>
             </div>
             <div className="body">
-              <div className="kicker">FEATURE / {f.no}</div>
+              <div className="kicker">特集 / {f.no}</div>
               <h3
                 dangerouslySetInnerHTML={{
                   __html: f.title

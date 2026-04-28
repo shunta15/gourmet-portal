@@ -47,15 +47,15 @@ function FeatureHero({ article }: { article: FeatureArticle }) {
           <div className="bot">
             <p>{article.lede}</p>
             <div className="dt">
-              <h6>SUBTITLE</h6>
+              <h6>副題</h6>
               <p>{article.subtitle}</p>
             </div>
             <div className="dt">
-              <h6>EDITOR</h6>
+              <h6>編集</h6>
               <p>{article.author}</p>
             </div>
             <div className="dt">
-              <h6>ACTION</h6>
+              <h6>戻る</h6>
               <p>
                 <Link href="/" data-cursor="BACK">
                   ← トップへ戻る
@@ -138,7 +138,7 @@ function SideArticles({ article }: { article: FeatureArticle }) {
             marginBottom: 24,
           }}
         >
-          RELATED ARTICLES / 関連記事
+          関連記事
         </div>
         <h3>
           焼肉だけで、<em>終わらない夜。</em>
@@ -173,8 +173,8 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
           A.subtitle,
           "編集部厳選",
           A.kicker,
-          "BEST SELECTIONS",
-          "2026 SPRING",
+          "厳選五選",
+          "2026年 春号",
         ]}
       />
 
@@ -184,7 +184,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              SELECTIONS
+              厳選
               <span className="big">{A.ranking.length}</span>
             </div>
             <div>
@@ -209,7 +209,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
         <section className="article" style={{ borderBottom: "none" }}>
           <div className="article-head reveal">
             <div className="label">
-              EDITOR&apos;S NOTE<span className="big">末</span>
+              編集後記<span className="big">末</span>
             </div>
             <div>
               <h2>

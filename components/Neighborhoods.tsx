@@ -9,7 +9,7 @@ export default function Neighborhoods() {
         style={{ padding: "0 0 60px", gridTemplateColumns: "1fr 2fr 1fr" }}
       >
         <div className="no">
-          <b>◎ 03</b>AREA / エリア
+          <b>◎ 04</b>エリア
         </div>
         <h2 className="reveal-line">
           <span>
@@ -28,10 +28,9 @@ export default function Neighborhoods() {
             className="hood"
             data-cursor="ENTER"
           >
-            <div className="no">/ {n.no}</div>
+            <div className="no">{n.no}</div>
             <h3>
               <span className="main">{n.name}</span>
-              <span className="alt">{n.alt}</span>
             </h3>
             <div className="desc">{n.desc}</div>
             <div className="count">{n.count}</div>

@@ -101,10 +101,14 @@ export const NATIONAL = {
     { n: "4.8", l: "平均評価" },
   ] as Stat[],
   heroImages: [
-    "https://images.unsplash.com/photo-1554797589-7241bb691973?w=1600&q=80",
-    "https://images.unsplash.com/photo-1580959375944-abd7e991f971?w=1600&q=80",
-    "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80",
-    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80",
+    // 提灯と路地（夜の街並み）
+    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1800&q=85",
+    // 屋台の湯気と提灯（博多）
+    "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=1800&q=85",
+    // 焼肉・炭火の炎
+    "https://images.unsplash.com/photo-1597149961419-ea01eb1db6ad?w=1800&q=85",
+    // 暖簾のかかる夜の店構え
+    "https://images.unsplash.com/photo-1576867757603-05b134ebc379?w=1800&q=85",
   ],
 };
 
@@ -217,7 +221,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r01",
     name: "炭火焼 蔵之介",
-    cuisine: "YAKINIKU / 焼肉",
+    cuisine: "焼肉",
     area: "浅草",
     region: "shitamachi",
     rating: "4.9",
@@ -240,7 +244,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r02",
     name: "割烹 ひさご",
-    cuisine: "KAPPO / 割烹",
+    cuisine: "割烹",
     area: "根津",
     region: "shitamachi",
     rating: "4.8",
@@ -259,7 +263,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r03",
     name: "鮨 七五三",
-    cuisine: "SUSHI / 鮨",
+    cuisine: "鮨",
     area: "人形町",
     region: "shitamachi",
     rating: "4.9",
@@ -278,7 +282,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r04",
     name: "酒場 三日月",
-    cuisine: "IZAKAYA / 居酒屋",
+    cuisine: "居酒屋",
     area: "月島",
     region: "shitamachi",
     rating: "4.7",
@@ -297,7 +301,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r05",
     name: "蕎麦 松風",
-    cuisine: "SOBA / 蕎麦",
+    cuisine: "蕎麦",
     area: "谷中",
     region: "shitamachi",
     rating: "4.8",
@@ -316,7 +320,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r06",
     name: "炉端 まき",
-    cuisine: "ROBATA / 炉端",
+    cuisine: "炉端",
     area: "浅草橋",
     region: "shitamachi",
     rating: "4.7",
@@ -335,7 +339,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r07",
     name: "天ぷら 梅乃",
-    cuisine: "TEMPURA / 天婦羅",
+    cuisine: "天婦羅",
     area: "日本橋",
     region: "shitamachi",
     rating: "4.8",
@@ -354,7 +358,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r08",
     name: "もつ焼 ぼんた",
-    cuisine: "MOTSU / もつ焼",
+    cuisine: "もつ焼",
     area: "立石",
     region: "shitamachi",
     rating: "4.9",
@@ -375,7 +379,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r09",
     name: "京懐石 翠月",
-    cuisine: "KAISEKI / 懐石",
+    cuisine: "懐石",
     area: "祇園",
     region: "kyoto",
     rating: "4.9",
@@ -394,7 +398,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r10",
     name: "鴨川 はな",
-    cuisine: "OBANZAI / おばんざい",
+    cuisine: "おばんざい",
     area: "先斗町",
     region: "kyoto",
     rating: "4.7",
@@ -413,7 +417,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r11",
     name: "祇園 八重桜",
-    cuisine: "KAPPO / 割烹",
+    cuisine: "割烹",
     area: "祇園",
     region: "kyoto",
     rating: "4.8",
@@ -432,7 +436,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r12",
     name: "西陣 一献",
-    cuisine: "SAKE / 日本酒",
+    cuisine: "日本酒",
     area: "西陣",
     region: "kyoto",
     rating: "4.7",
@@ -451,7 +455,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r13",
     name: "祇園 串ぐら",
-    cuisine: "KUSHIAGE / 串揚げ",
+    cuisine: "串揚げ",
     area: "祇園",
     region: "kyoto",
     rating: "4.7",
@@ -472,7 +476,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r14",
     name: "串カツ 道頓",
-    cuisine: "KUSHIKATSU / 串カツ",
+    cuisine: "串カツ",
     area: "道頓堀",
     region: "osaka",
     rating: "4.6",
@@ -491,7 +495,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r15",
     name: "鉄板 みなみ",
-    cuisine: "TEPPAN / 鉄板焼",
+    cuisine: "鉄板焼",
     area: "難波",
     region: "osaka",
     rating: "4.8",
@@ -510,7 +514,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r16",
     name: "ホルモン 梅田",
-    cuisine: "HORUMON / もつ焼",
+    cuisine: "もつ焼",
     area: "梅田",
     region: "osaka",
     rating: "4.7",
@@ -529,7 +533,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r17",
     name: "お好み 法善",
-    cuisine: "OKONOMI / お好み焼",
+    cuisine: "お好み焼",
     area: "難波",
     region: "osaka",
     rating: "4.7",
@@ -548,7 +552,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r18",
     name: "ねぎ焼 はな",
-    cuisine: "NEGIYAKI / ねぎ焼",
+    cuisine: "ねぎ焼",
     area: "新世界",
     region: "osaka",
     rating: "4.6",
@@ -567,7 +571,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r19",
     name: "炉端 大阪",
-    cuisine: "ROBATA / 炉端",
+    cuisine: "炉端",
     area: "心斎橋",
     region: "osaka",
     rating: "4.7",
@@ -588,7 +592,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r20",
     name: "もつ鍋 龍",
-    cuisine: "MOTSUNABE / もつ鍋",
+    cuisine: "もつ鍋",
     area: "中洲",
     region: "hakata",
     rating: "4.8",
@@ -607,7 +611,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r21",
     name: "屋台 中洲",
-    cuisine: "YATAI / 屋台",
+    cuisine: "屋台",
     area: "中洲",
     region: "hakata",
     rating: "4.6",
@@ -626,7 +630,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r22",
     name: "水炊き 玄海",
-    cuisine: "MIZUTAKI / 水炊き",
+    cuisine: "水炊き",
     area: "天神",
     region: "hakata",
     rating: "4.8",
@@ -645,7 +649,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r23",
     name: "焼鳥 天神",
-    cuisine: "YAKITORI / 焼鳥",
+    cuisine: "焼鳥",
     area: "天神",
     region: "hakata",
     rating: "4.7",
@@ -664,7 +668,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r24",
     name: "鯖 長浜",
-    cuisine: "SEAFOOD / 海鮮",
+    cuisine: "海鮮",
     area: "長浜",
     region: "hakata",
     rating: "4.7",
@@ -685,7 +689,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r25",
     name: "海鮮 二条",
-    cuisine: "SEAFOOD / 海鮮",
+    cuisine: "海鮮",
     area: "二条市場",
     region: "sapporo",
     rating: "4.8",
@@ -704,7 +708,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r26",
     name: "ジンギスカン 月寒",
-    cuisine: "JINGISUKAN / ジンギスカン",
+    cuisine: "ジンギスカン",
     area: "月寒",
     region: "sapporo",
     rating: "4.7",
@@ -723,7 +727,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r27",
     name: "ラーメン 雪見",
-    cuisine: "RAMEN / 拉麺",
+    cuisine: "拉麺",
     area: "すすきの",
     region: "sapporo",
     rating: "4.6",
@@ -742,7 +746,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r28",
     name: "炭焼 すすきの",
-    cuisine: "ROBATA / 炉端",
+    cuisine: "炉端",
     area: "すすきの",
     region: "sapporo",
     rating: "4.8",
@@ -761,7 +765,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r29",
     name: "寿司 余市",
-    cuisine: "SUSHI / 鮨",
+    cuisine: "鮨",
     area: "円山",
     region: "sapporo",
     rating: "4.9",
@@ -780,7 +784,7 @@ export const RESTAURANTS: Restaurant[] = [
   {
     id: "r30",
     name: "味噌煮込み 雪原",
-    cuisine: "IZAKAYA / 居酒屋",
+    cuisine: "居酒屋",
     area: "大通",
     region: "sapporo",
     rating: "4.6",
@@ -919,12 +923,12 @@ export const SHORT_VIDEOS: ShortVideo[] = [
 ];
 
 export const NEIGHBORHOODS: Neighborhood[] = [
-  { no: "A", name: "浅草", alt: "Asakusa", desc: "雷門の先、仲見世の奥。観光地の顔をしながら、夜は別の街になる。", count: "52 店舗", image: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80", region: "shitamachi" },
-  { no: "B", name: "谷根千", alt: "Yanaka", desc: "谷中、根津、千駄木。猫と夕焼け段々と、小さな名店。", count: "38 店舗", image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80", region: "shitamachi" },
-  { no: "C", name: "月島", alt: "Tsukishima", desc: "もんじゃの街、その裏路地に。倉庫街のネオンが美しい。", count: "41 店舗", image: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=800&q=80", region: "shitamachi" },
-  { no: "D", name: "人形町", alt: "Ningyocho", desc: "江戸の芝居町。老舗と気鋭が並ぶ、銀座より濃い夜。", count: "34 店舗", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80", region: "shitamachi" },
-  { no: "E", name: "立石", alt: "Tateishi", desc: "せんべろの聖地。もつ焼の煙で空が霞む。", count: "29 店舗", image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80", region: "shitamachi" },
-  { no: "F", name: "神楽坂", alt: "Kagurazaka", desc: "石畳と黒塀。花街の記憶を、今も料理で継ぐ。", count: "45 店舗", image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80", region: "shitamachi" },
+  { no: "01", name: "浅草", alt: "Asakusa", desc: "雷門の先、仲見世の奥。観光地の顔をしながら、夜は別の街になる。", count: "52 店舗", image: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80", region: "shitamachi" },
+  { no: "02", name: "谷根千", alt: "Yanaka", desc: "谷中、根津、千駄木。猫と夕焼け段々と、小さな名店。", count: "38 店舗", image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80", region: "shitamachi" },
+  { no: "03", name: "月島", alt: "Tsukishima", desc: "もんじゃの街、その裏路地に。倉庫街のネオンが美しい。", count: "41 店舗", image: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=800&q=80", region: "shitamachi" },
+  { no: "04", name: "人形町", alt: "Ningyocho", desc: "江戸の芝居町。老舗と気鋭が並ぶ、銀座より濃い夜。", count: "34 店舗", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80", region: "shitamachi" },
+  { no: "05", name: "立石", alt: "Tateishi", desc: "せんべろの聖地。もつ焼の煙で空が霞む。", count: "29 店舗", image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80", region: "shitamachi" },
+  { no: "06", name: "神楽坂", alt: "Kagurazaka", desc: "石畳と黒塀。花街の記憶を、今も料理で継ぐ。", count: "45 店舗", image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80", region: "shitamachi" },
 ];
 
 /* ===================================================== */
@@ -936,7 +940,7 @@ export const FEATURES: Feature[] = [
     id: "f01",
     no: "01",
     tag: "旅特集",
-    kicker: "TRAVEL EDITION",
+    kicker: "旅特集 / 2026 春",
     title: "旅の夜は、ここの焼肉へ",
     sub: "浅草から月島まで。出張者も観光客も唸る、下町の炎を巡る五軒。",
     image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1400&q=80",
@@ -945,7 +949,7 @@ export const FEATURES: Feature[] = [
     id: "f02",
     no: "02",
     tag: "ランキング",
-    kicker: "BEST FIVE",
+    kicker: "厳選 五選",
     title: "下町焼肉、五選",
     sub: "ミシュラン常連から町場の名店まで。下町の焼肉、間違いない五軒。",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=1400&q=80",
@@ -954,7 +958,7 @@ export const FEATURES: Feature[] = [
     id: "f03",
     no: "03",
     tag: "季節特集",
-    kicker: "SEASONAL",
+    kicker: "季節特集",
     title: "春の和食、桜のように",
     sub: "根津の割烹、谷中の蕎麦、千住の鮨。季節を一皿に収める名匠たち。",
     image: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=1400&q=80",
@@ -963,7 +967,7 @@ export const FEATURES: Feature[] = [
     id: "f04",
     no: "04",
     tag: "裏路地",
-    kicker: "HIDDEN GEMS",
+    kicker: "隠れ家",
     title: "路地の奥、暖簾の先",
     sub: "看板もなく、案内もなく。それでも人が絶えない、隠れ家八軒。",
     image: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?w=1400&q=80",
@@ -972,7 +976,7 @@ export const FEATURES: Feature[] = [
     id: "f05",
     no: "05",
     tag: "ナイトガイド",
-    kicker: "AFTER HOURS",
+    kicker: "深夜ガイド",
     title: "二軒目、三軒目、四軒目",
     sub: "深夜0時からが本番。下町の夜を朝まで味わう、編集部の動線。",
     image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1400&q=80",
@@ -990,7 +994,7 @@ const SIDE_DEFAULT = [
 export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   f01: {
     id: "f01",
-    no: "FEATURE / 01",
+    no: "特集 / 01",
     kicker: "旅 × 下町グルメ ― 完全版",
     title: "旅行の夜は、ここの焼肉へ。",
     titleHTML:
@@ -1007,7 +1011,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "01",
         rankNum: 1,
         name: "炭火焼 蔵之介",
-        cuisine: "YAKINIKU / 備長炭",
+        cuisine: "備長炭",
         area: "浅草 ― 国際通り路地",
         desc: "築六十年の蔵を改装した店内。備長炭の遠赤外線で、シャトーブリアンが宝石のように光る。旅の一日目、最初の一皿はここと決めている。",
         images: [
@@ -1026,7 +1030,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "02",
         rankNum: 2,
         name: "焼肉 五線",
-        cuisine: "YAKINIKU / 熟成",
+        cuisine: "熟成",
         area: "月島 ― 倉庫街",
         desc: "倉庫をそのまま使った、無骨な空間。42日熟成の和牛を、塩と胡椒だけで。余計な演出を削ぎ落とした、職人の炎。",
         images: [
@@ -1045,7 +1049,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "03",
         rankNum: 3,
         name: "ホルモン 新次郎",
-        cuisine: "HORUMON / もつ焼",
+        cuisine: "もつ焼",
         area: "立石 ― 仲見世",
         desc: "せんべろ最終地点。生ビール大と特上ミノで、千五百円。観光ガイドには絶対に載らない、旅人のための場所。",
         images: [
@@ -1064,7 +1068,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "04",
         rankNum: 4,
         name: "炭火焼肉 燈火",
-        cuisine: "YAKINIKU / モダン",
+        cuisine: "モダン",
         area: "人形町 ― 甘酒横丁",
         desc: "老舗の町屋を若い職人が受け継いだ、静謐な店。シャリアピン風のロースと、自家製キムチ。旅二日目の夜に、じっくり。",
         images: [
@@ -1083,7 +1087,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "05",
         rankNum: 5,
         name: "焼肉 黎明",
-        cuisine: "YAKINIKU / 朝焼",
+        cuisine: "朝焼",
         area: "築地 ― 場外",
         desc: "朝6時から焼ける、世界唯一の朝焼肉。市場仕入れの極上ハラミを、夜明けと共に。帰りの新幹線前、最後の下町。",
         images: [
@@ -1108,12 +1112,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   f02: {
     id: "f02",
-    no: "FEATURE / 02",
+    no: "特集 / 02",
     kicker: "下町焼肉、ベストファイブ",
     title: "下町焼肉、五選。",
     titleHTML:
       "<span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">下町<em>焼肉</em>、</span></span><span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">五選。</span></span>",
-    subtitle: "BEST FIVE / 下町焼肉",
+    subtitle: "下町焼肉・五選",
     lede:
       "ミシュラン常連から町場の名店まで、下町に潜む焼肉店をひたすら歩いた。価格帯も雰囲気もばらばら、しかし、どれも \"間違いない\"。",
     date: "2026.04.13",
@@ -1125,7 +1129,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "01",
         rankNum: 1,
         name: "焼肉 五線",
-        cuisine: "YAKINIKU / 熟成",
+        cuisine: "熟成",
         area: "月島",
         desc: "42日熟成の赤身を、塩で。倉庫街の無骨な空間が、肉の輪郭を引き立てる。",
         images: [
@@ -1143,7 +1147,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "02",
         rankNum: 2,
         name: "炭火焼 蔵之介",
-        cuisine: "YAKINIKU / 備長炭",
+        cuisine: "備長炭",
         area: "浅草",
         desc: "蔵を改装した店内に、備長炭の赤い熾火。シャトーブリアンが宝石のように光る。",
         images: [
@@ -1161,7 +1165,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "03",
         rankNum: 3,
         name: "炭火焼肉 燈火",
-        cuisine: "YAKINIKU / モダン",
+        cuisine: "モダン",
         area: "人形町",
         desc: "町屋を継いだ若い職人。シャリアピン風のロースと、自家製キムチが評判。",
         images: [
@@ -1185,12 +1189,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   f03: {
     id: "f03",
-    no: "FEATURE / 03",
+    no: "特集 / 03",
     kicker: "春・季節を一皿に",
     title: "春の和食、桜のように。",
     titleHTML:
       "<span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">春の<em>和食</em>、</span></span><span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">桜のように。</span></span>",
-    subtitle: "SEASONAL / SPRING",
+    subtitle: "季節 / 春",
     lede:
       "桜の前線が日本列島を北上する四週間、和食の名匠たちは皿の上で春を再現する。割烹、蕎麦、鮨 ――― 三つの様式で、季節を読み解く。",
     date: "2026.03.30",
@@ -1202,7 +1206,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "01",
         rankNum: 1,
         name: "割烹 ひさご",
-        cuisine: "KAPPO / 割烹",
+        cuisine: "割烹",
         area: "根津",
         desc: "桜鯛と若竹の椀。季節は、皿の中で短く、強く咲く。",
         images: [
@@ -1220,7 +1224,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "02",
         rankNum: 2,
         name: "蕎麦 松風",
-        cuisine: "SOBA / 蕎麦",
+        cuisine: "蕎麦",
         area: "谷中",
         desc: "新蕎麦と桜海老のかき揚げ。粉の香りに、海の春が重なる。",
         images: [
@@ -1238,7 +1242,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "03",
         rankNum: 3,
         name: "鮨 七五三",
-        cuisine: "SUSHI / 鮨",
+        cuisine: "鮨",
         area: "人形町",
         desc: "白魚、桜鱒、平貝。江戸前の春を、十二貫で旅する。",
         images: [
@@ -1262,12 +1266,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   f04: {
     id: "f04",
-    no: "FEATURE / 04",
+    no: "特集 / 04",
     kicker: "看板のない名店たち",
     title: "路地の奥、暖簾の先。",
     titleHTML:
       "<span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">路地の奥、</span></span><span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\"><em>暖簾</em>の先。</span></span>",
-    subtitle: "HIDDEN GEMS / 隠れ家",
+    subtitle: "隠れ家",
     lede:
       "看板がない、案内がない、それでも人が絶えない。下町、京、博多 ――― 路地の奥にだけ咲く、八軒の名店を歩いた。",
     date: "2026.03.16",
@@ -1279,7 +1283,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "01",
         rankNum: 1,
         name: "酒場 三日月",
-        cuisine: "IZAKAYA / 居酒屋",
+        cuisine: "居酒屋",
         area: "月島",
         desc: "倉庫街の路地、看板は提灯ひとつ。日本酒40種、肴は黒板任せ。",
         images: [
@@ -1297,7 +1301,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "02",
         rankNum: 2,
         name: "西陣 一献",
-        cuisine: "SAKE / 日本酒",
+        cuisine: "日本酒",
         area: "京都・西陣",
         desc: "織元の街、暖簾だけが目印。京の地酒40種を、鯖寿司と漬物で。",
         images: [
@@ -1315,7 +1319,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "03",
         rankNum: 3,
         name: "屋台 中洲",
-        cuisine: "YATAI / 屋台",
+        cuisine: "屋台",
         area: "博多・中洲",
         desc: "那珂川沿い、提灯の下。豚骨と餃子で、博多の夜が始まる。",
         images: [
@@ -1339,12 +1343,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   f05: {
     id: "f05",
-    no: "FEATURE / 05",
+    no: "特集 / 05",
     kicker: "深夜0時からの動線",
     title: "二軒目、三軒目、四軒目。",
     titleHTML:
       "<span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\">二軒目、三軒目、</span></span><span class=\"line\" style=\"display:block;overflow:hidden\"><span style=\"display:inline-block\"><em>四軒目</em>。</span></span>",
-    subtitle: "AFTER HOURS / 深夜",
+    subtitle: "深夜の動線",
     lede:
       "下町の夜は、長い。一軒目で終わるのは、もったいない。深夜0時から朝6時まで、編集部が実際に歩いた動線を、そのまま記録した。",
     date: "2026.02.27",
@@ -1356,7 +1360,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "01",
         rankNum: 1,
         name: "もつ焼 ぼんた",
-        cuisine: "MOTSU / もつ焼",
+        cuisine: "もつ焼",
         area: "立石 ― 一軒目",
         desc: "立呑み14席、二十一時には満員。だから、二十二時に入る。",
         images: [
@@ -1374,7 +1378,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "02",
         rankNum: 2,
         name: "酒場 三日月",
-        cuisine: "IZAKAYA / 居酒屋",
+        cuisine: "居酒屋",
         area: "月島 ― 二軒目",
         desc: "黒板の本日のおすすめと、冷酒。腰を落ち着けて、深夜の本番。",
         images: [
@@ -1392,7 +1396,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         rank: "03",
         rankNum: 3,
         name: "焼肉 黎明",
-        cuisine: "YAKINIKU / 朝焼",
+        cuisine: "朝焼",
         area: "築地 ― 三軒目",
         desc: "朝6時開店、市場仕入れの極上ハラミ。夜明けと共に、最後の一皿。",
         images: [
@@ -1415,3 +1419,36 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       "翌朝の二日酔いは、それも記憶のうち。次の旅で、もう一度この線を辿ってみてほしい。",
   },
 };
+
+/* ===================================================== */
+/* Computed stats (derived from real data)              */
+/* ===================================================== */
+
+function avg(nums: number[]): string {
+  if (nums.length === 0) return "0.0";
+  const m = nums.reduce((a, b) => a + b, 0) / nums.length;
+  return m.toFixed(1);
+}
+
+export function getNationalStats(): Stat[] {
+  const ratings = RESTAURANTS.map((r) => parseFloat(r.rating));
+  const prefectures = new Set(Object.keys(REGIONS));
+  return [
+    { n: String(RESTAURANTS.length), l: "掲載店舗" },
+    { n: String(prefectures.size), l: "都道府県" },
+    { n: String(FEATURES.length), l: "特集記事" },
+    { n: avg(ratings), l: "平均評価" },
+  ];
+}
+
+export function getRegionStats(key: RegionKey): Stat[] {
+  const local = RESTAURANTS.filter((r) => r.region === key);
+  const ratings = local.map((r) => parseFloat(r.rating));
+  const areas = new Set(local.map((r) => r.area));
+  return [
+    { n: String(local.length), l: "登録店舗" },
+    { n: String(areas.size), l: "エリア" },
+    { n: String(FEATURES.length), l: "特集記事" },
+    { n: avg(ratings), l: "平均評価" },
+  ];
+}

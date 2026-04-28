@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { REGIONS, type RegionKey } from "@/lib/data";
+import { REGIONS, getRegionStats, type RegionKey } from "@/lib/data";
 
 export default function RegionsShowcase({
   region,
@@ -13,7 +13,7 @@ export default function RegionsShowcase({
         style={{ padding: "0 0 60px", gridTemplateColumns: "1fr 2fr 1fr" }}
       >
         <div className="no">
-          <b>◎ 04</b>MINI PORTALS / 地域別
+          <b>◎ 05</b>地域別ポータル
         </div>
         <h2 className="reveal-line">
           <span>
@@ -25,35 +25,39 @@ export default function RegionsShowcase({
         </div>
       </div>
       <div className="regions-grid">
-        {Object.entries(REGIONS).map(([k, r], i) => (
-          <Link
-            key={k}
-            href={`/region/${k}`}
-            className={"region-card " + (k === region ? "active" : "")}
-            data-cursor="ENTER"
-          >
-            <div
-              className="img"
-              style={{ backgroundImage: `url(${r.heroImages[0]})` }}
-            />
-            <div className="rc-body">
-              <div className="rc-no">EDITION / {String(i + 1).padStart(2, "0")}</div>
-              <h3>{r.name}</h3>
-              <div className="rc-en">{r.nameEn}</div>
-              <p className="rc-tag">
-                <em>{r.tagline}</em>
-              </p>
-              <div className="rc-stats">
-                <span>{r.stats[0].n} 店舗</span>
-                <span>·</span>
-                <span>{r.stats[1].n} エリア</span>
-                <span>·</span>
-                <span>★ {r.stats[3].n}</span>
+        {Object.entries(REGIONS).map(([k, r], i) => {
+          const s = getRegionStats(k as RegionKey);
+          return (
+            <Link
+              key={k}
+              href={`/region/${k}`}
+              className={"region-card " + (k === region ? "active" : "")}
+              data-cursor="ENTER"
+            >
+              <div
+                className="img"
+                style={{ backgroundImage: `url(${r.heroImages[0]})` }}
+              />
+              <div className="rc-body">
+                <div className="rc-no">
+                  地域 / {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3>{r.name}</h3>
+                <p className="rc-tag">
+                  <em>{r.tagline}</em>
+                </p>
+                <div className="rc-stats">
+                  <span>{s[0].n} 店舗</span>
+                  <span>·</span>
+                  <span>{s[1].n} エリア</span>
+                  <span>·</span>
+                  <span>★ {s[3].n}</span>
+                </div>
+                {k === region && <div className="rc-now">現在 表示中</div>}
               </div>
-              {k === region && <div className="rc-now">現在 表示中</div>}
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

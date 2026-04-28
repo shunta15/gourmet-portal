@@ -29,7 +29,7 @@ export default function ShortVideos() {
     <section className="shorts">
       <div className="section-head">
         <div className="no">
-          <b style={{ color: "var(--accent)" }}>◎ 03</b>SHORTS / ショート動画
+          <b style={{ color: "var(--accent)" }}>◎ 03</b>ショート動画
         </div>
         <h2 className="reveal-line">
           <span>

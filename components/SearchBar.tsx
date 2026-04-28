@@ -37,7 +37,7 @@ export default function SearchBar({
   return (
     <section className="search-bar-wrap">
       <div className="sb-head">
-        <div className="sb-no">◎ SEARCH / さがす</div>
+        <div className="sb-no">◎ お店をさがす</div>
         <h3 className="sb-title">
           <span>食べたいお店を、</span>
           <em>見つける。</em>
