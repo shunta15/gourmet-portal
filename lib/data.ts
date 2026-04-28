@@ -101,14 +101,10 @@ export const NATIONAL = {
     { n: "4.8", l: "平均評価" },
   ] as Stat[],
   heroImages: [
-    // 提灯と路地（夜の街並み）
-    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1800&q=85",
-    // 屋台の湯気と提灯（博多）
-    "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=1800&q=85",
-    // 焼肉・炭火の炎
-    "https://images.unsplash.com/photo-1597149961419-ea01eb1db6ad?w=1800&q=85",
-    // 暖簾のかかる夜の店構え
-    "https://images.unsplash.com/photo-1576867757603-05b134ebc379?w=1800&q=85",
+    "https://images.unsplash.com/photo-1554797589-7241bb691973?w=1600&q=80",
+    "https://images.unsplash.com/photo-1580959375944-abd7e991f971?w=1600&q=80",
+    "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80",
+    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80",
   ],
 };
 
