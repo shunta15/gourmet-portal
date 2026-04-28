@@ -823,3 +823,16 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
   transition:background .25s;
 }
 .video-close:hover{background:rgba(255,255,255,.25)}
+
+/* ============================================== */
+/* Feature/Restaurant hero: gallery crossfade      */
+/* ============================================== */
+.feat-hero .hero-media{position:absolute; inset:0}
+.feat-hero .hero-media .img{
+  position:absolute; inset:0;
+  background-size:cover; background-position:center;
+  opacity:0;
+  transform:scale(1.05);
+  transition:opacity 1.2s ease;
+}
+.feat-hero .hero-media .img.active{opacity:.65}

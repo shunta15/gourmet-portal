@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS, RESTAURANTS, type Restaurant } from "@/lib/data";
 import RestaurantCard from "./RestaurantCard";
@@ -19,14 +19,30 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
     (x) => x.region === r.region && x.id !== r.id
   ).slice(0, 4);
 
+  const heroImages =
+    r.gallery && r.gallery.length > 0 ? r.gallery : [r.image];
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    if (heroImages.length <= 1) return;
+    const t = setInterval(
+      () => setIdx((i) => (i + 1) % heroImages.length),
+      4500
+    );
+    return () => clearInterval(t);
+  }, [heroImages.length]);
+
   return (
     <div className="feat-page">
       <section className="feat-hero">
-        <div
-          className="img"
-          ref={heroRef}
-          style={{ backgroundImage: `url(${r.image})` }}
-        />
+        <div className="hero-media" ref={heroRef}>
+          {heroImages.map((src, i) => (
+            <div
+              key={i}
+              className={"img " + (i === idx ? "active" : "")}
+              style={{ backgroundImage: `url(${src})` }}
+            />
+          ))}
+        </div>
         <div
           className="feat-hero-inner"
           style={{ justifyContent: "center", alignItems: "center" }}
