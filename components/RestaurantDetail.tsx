@@ -33,8 +33,12 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
               <span>店舗紹介</span>
               <span>·</span>
               <span>{region.name}</span>
-              <span>·</span>
-              <span>★ {r.rating}</span>
+              {r.rating && (
+                <>
+                  <span>·</span>
+                  <span>★ {r.rating}</span>
+                </>
+              )}
             </div>
             <div style={{ marginTop: 30 }} className="reveal-line">
               <div
@@ -120,16 +124,18 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
               flexWrap: "wrap",
             }}
           >
-            <a
-              href={r.reservationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sb-submit"
-              style={{ padding: "16px 32px" }}
-              data-cursor="BOOK"
-            >
-              予約する →
-            </a>
+            {r.reservationUrl && (
+              <a
+                href={r.reservationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sb-submit"
+                style={{ padding: "16px 32px" }}
+                data-cursor="BOOK"
+              >
+                予約する →
+              </a>
+            )}
             <a
               href={mapsUrl}
               target="_blank"
@@ -140,6 +146,18 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             >
               Google Mapで開く
             </a>
+            {r.source && (
+              <a
+                href={r.source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="LINK"
+              >
+                {r.source.label} ↗
+              </a>
+            )}
             <Link
               href={`/region/${r.region}`}
               className="chip"

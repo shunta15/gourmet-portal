@@ -11,10 +11,15 @@ import RegionsShowcase from "./RegionsShowcase";
 import Neighborhoods from "./Neighborhoods";
 import Footer from "./Footer";
 import { useReveal } from "@/lib/hooks";
-import type { RegionKey } from "@/lib/data";
+import {
+  FEATURES,
+  SHORT_VIDEOS,
+  NEIGHBORHOODS,
+  type RegionKey,
+} from "@/lib/data";
 
 export default function HomeClient() {
-  const [region, setRegion] = useState<RegionKey>("shitamachi");
+  const [region, setRegion] = useState<RegionKey>("tokyo");
   useReveal([region]);
 
   useEffect(() => {
@@ -37,22 +42,22 @@ export default function HomeClient() {
           "割烹",
         ]}
       />
-      <FeaturesCarousel />
-      <ShortVideos />
+      {FEATURES.length > 0 && <FeaturesCarousel />}
+      {SHORT_VIDEOS.length > 0 && <ShortVideos />}
       <Marquee
         dark
         reverse
         items={[
           "街の“いいお店”、ぜんぶここに。",
           "編集部厳選",
-          "全国 30 店舗掲載中",
-          "北海道から沖縄まで",
+          "丁寧に選ぶ一軒",
+          "全国を、舌で歩く。",
         ]}
       />
       <RestaurantGrid region={region} onRegion={setRegion} />
       <Stats />
       <RegionsShowcase region={region} />
-      <Neighborhoods />
+      {NEIGHBORHOODS.length > 0 && <Neighborhoods />}
       <Footer />
     </>
   );

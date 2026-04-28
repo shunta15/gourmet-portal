@@ -13,7 +13,7 @@ export default function RestaurantCard({ r }: { r: Restaurant }) {
         <span>
           #{r.id.replace(/^r/, "").padStart(2, "0")} · {r.area}
         </span>
-        <span className="rating">★ {r.rating}</span>
+        {r.rating && <span className="rating">★ {r.rating}</span>}
       </div>
       <div className="body">
         <div className="cuisine">{r.cuisine}</div>

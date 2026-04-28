@@ -25,7 +25,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/region/shitamachi" data-cursor="ENTER">
+          <Link href="/region/tokyo" data-cursor="ENTER">
             エリア
           </Link>
         </li>
