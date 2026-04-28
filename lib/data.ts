@@ -155,9 +155,14 @@ export const RESTAURANTS: Restaurant[] = [
     area: "南麻布",
     region: "tokyo",
     shape: "wide",
-    image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&q=80",
-    gallery: RES_GALLERY_FALLBACK,
+    image: "/restaurants/yakitori-shimaya-hero.jpg",
+    gallery: [
+      "/restaurants/yakitori-shimaya-hero.jpg",
+      "/restaurants/yakitori-shimaya-2.jpg",
+      "/restaurants/yakitori-shimaya-3.jpg",
+      "/restaurants/yakitori-shimaya-4.jpg",
+      "/restaurants/yakitori-shimaya-food.jpg",
+    ],
     desc: "白金高輪駅から徒歩5分、南麻布の路地に佇む焼鳥店。オリジナル熊野地鶏を熟成専用冷蔵庫で寝かせた一串が看板。半個室・テラス席を備え、ペット同伴可の貴重な一軒。",
     address: "東京都港区南麻布2-7-25 ストーク麻布1F",
     hours: "火-土 16:30 - 23:00（L.O. 22:00） / 日月 16:30 - 22:00（L.O. 21:00）",
