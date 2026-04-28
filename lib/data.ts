@@ -43,6 +43,7 @@ export type Restaurant = {
   source?: { label: string; url: string };
   body?: string[];
   highlights?: string[];
+  tags?: string[];
 };
 
 export type Neighborhood = {
@@ -174,6 +175,23 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "東京メトロ南北線・都営三田線 白金高輪駅 徒歩5分",
     reservationUrl: "https://www.tablecheck.com/ja/shimaya315/reserve/landing",
     source: { label: "公式サイト", url: "http://www.shimaya315.com/" },
+    tags: [
+      "焼鳥",
+      "熊野地鶏",
+      "熟成鶏",
+      "備長炭",
+      "南麻布",
+      "港区",
+      "白金高輪",
+      "東京",
+      "カウンター",
+      "個室",
+      "テラス席",
+      "ペット可",
+      "デート",
+      "接待",
+      "貸切可",
+    ],
     highlights: [
       "オリジナル熊野地鶏 × 熟成鶏",
       "半個室・テラス席・ペット同伴可",
@@ -207,6 +225,23 @@ export const RESTAURANTS: Restaurant[] = [
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ003715487/",
     },
+    tags: [
+      "イタリアン",
+      "ワイン食堂",
+      "ワイン",
+      "六角橋",
+      "白楽",
+      "横浜",
+      "神奈川",
+      "個室",
+      "禁煙",
+      "Wi-Fi",
+      "一人飲み",
+      "デート",
+      "路地裏",
+      "商店街",
+      "2024年オープン",
+    ],
     highlights: [
       "2024年1月オープン、白楽の新しいワイン食堂",
       "国産牛の温製カルパッチョなど、皿ごとに丁寧な仕事",

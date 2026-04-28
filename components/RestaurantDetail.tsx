@@ -59,6 +59,21 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
       </section>
 
       <div className="feat-body">
+        {r.tags && r.tags.length > 0 && (
+          <div className="hashtag-row reveal">
+            {r.tags.map((t) => (
+              <Link
+                key={t}
+                href={`/search?tag=${encodeURIComponent(t)}`}
+                className="hashtag"
+                data-cursor="TAG"
+              >
+                #{t}
+              </Link>
+            ))}
+          </div>
+        )}
+
         {r.body && r.body.length > 0 && (
           <section className="article" style={{ paddingTop: 80 }}>
             <div className="article-head reveal">
