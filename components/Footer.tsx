@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bot">
-        <span>© 2026 AJIDOKORO NIPPON · ALL RIGHTS RESERVED</span>
+        <span>© 2026 MACHINOWA / 街の輪 · ALL RIGHTS RESERVED</span>
         <span>日本 全国 — 2026.04</span>
       </div>
     </footer>

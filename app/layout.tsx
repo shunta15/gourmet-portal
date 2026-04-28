@@ -6,13 +6,13 @@ import Nav from "@/components/Nav";
 import SideLabel from "@/components/SideLabel";
 
 export const metadata: Metadata = {
-  title: "味処 日本 — AJIDOKORO NIPPON / 全国飲食店ポータル",
+  title: "マチノワ — MACHINOWA / 街の輪・全国飲食店ポータル",
   description:
-    "全国47都道府県、編集部が一軒ずつ足を運んで取材した飲食店だけを掲載。広告や掲載料ではなく、編集部の舌と足で選んだ一軒ずつを、取材記事とともにお届けします。",
+    "全国47都道府県の飲食店を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。",
   openGraph: {
-    title: "味処 日本 — AJIDOKORO NIPPON",
+    title: "マチノワ — 街の輪",
     description:
-      "編集部取材 × 全国飲食店ポータル。街の\u201cいいお店\u201d、ぜんぶここに。",
+      "全国飲食店ポータル。街の\u201cいいお店\u201d、ぜんぶここに。",
     type: "website",
     locale: "ja_JP",
   },

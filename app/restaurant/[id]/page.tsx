@@ -13,7 +13,7 @@ export async function generateMetadata({
 }) {
   const { id } = await params;
   const r = RESTAURANTS.find((x) => x.id === id);
-  if (!r) return { title: "店舗が見つかりません — 味処 日本" };
+  if (!r) return { title: "店舗が見つかりません — マチノワ" };
   return {
     title: `${r.name} — ${r.area} ${r.cuisine.split(" / ")[1] || r.cuisine}`,
     description: r.desc,

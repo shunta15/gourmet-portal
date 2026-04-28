@@ -55,15 +55,7 @@ export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
           </div>
 
           <div>
-            <h1
-              style={{
-                marginBottom: 20,
-                font: "600 clamp(56px,10vw,150px)/0.95 var(--serif)",
-                letterSpacing: "-.02em",
-              }}
-            >
-              {r.name}
-            </h1>
+            <h1 style={{ marginBottom: 20 }}>{r.name}</h1>
             <div className="bot">
               <p>{r.intro}</p>
               <div className="dt">

@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import SearchBar from "./SearchBar";
 import Marquee from "./Marquee";
 import FeaturesCarousel from "./FeaturesCarousel";
+import ShortVideos from "./ShortVideos";
 import RestaurantGrid from "./RestaurantGrid";
 import Stats from "./Stats";
 import RegionsShowcase from "./RegionsShowcase";
@@ -37,6 +38,7 @@ export default function HomeClient() {
         ]}
       />
       <FeaturesCarousel />
+      <ShortVideos />
       <Marquee
         dark
         reverse

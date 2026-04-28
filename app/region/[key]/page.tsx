@@ -15,9 +15,9 @@ export async function generateMetadata({
 }) {
   const { key } = await params;
   const r = REGIONS[key as RegionKey];
-  if (!r) return { title: "地域が見つかりません — 味処 日本" };
+  if (!r) return { title: "地域が見つかりません — マチノワ" };
   return {
-    title: `${r.name} — ミニポータル / 味処 日本`,
+    title: `${r.name} — ミニポータル / マチノワ`,
     description: `${r.tagline}。${r.subtitle}`,
     openGraph: {
       title: `${r.name} — ${r.nameEn}`,

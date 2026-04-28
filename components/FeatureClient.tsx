@@ -75,7 +75,7 @@ function RankingList({ article }: { article: FeatureArticle }) {
       {article.ranking.map((r, i) => (
         <article key={i} className="rank-item reveal">
           <div className="rank">
-            第<em>{r.rank}</em>位
+            <em>{r.rank}</em>
           </div>
           <div className="info">
             <div className="cuisine">
@@ -184,15 +184,15 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              RANKING
-              <span className="big">{A.no.replace(/[^\d]/g, "") || "01"}</span>
+              SELECTIONS
+              <span className="big">{A.ranking.length}</span>
             </div>
             <div>
               <h2>
                 {A.subtitle.split(" / ")[0]}<em>。</em>
               </h2>
               <p className="sub">
-                編集部の足跡を、序列ではなく順路として読んで欲しい。{A.lede}
+                順位ではなく、編集部が選んだ{A.ranking.length}軒の名店を順にご紹介します。{A.lede}
               </p>
             </div>
           </div>

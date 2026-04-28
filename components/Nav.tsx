@@ -10,8 +10,8 @@ export default function Nav() {
   return (
     <nav className="nav">
       <Link href="/" className="brand" data-cursor="HOME">
-        味処 日本
-        <small>AJIDOKORO&nbsp;·&nbsp;NIPPON</small>
+        マチノワ
+        <small>MACHINOWA&nbsp;·&nbsp;街の輪</small>
       </Link>
       <ul>
         <li>

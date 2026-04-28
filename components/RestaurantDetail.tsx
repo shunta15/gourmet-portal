@@ -50,15 +50,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
           </div>
 
           <div>
-            <h1
-              style={{
-                marginBottom: 20,
-                font: "600 clamp(48px,8vw,120px)/0.95 var(--serif)",
-                letterSpacing: "-.02em",
-              }}
-            >
-              {r.name}
-            </h1>
+            <h1 style={{ marginBottom: 20 }}>{r.name}</h1>
             <div className="bot">
               <p>{r.desc}</p>
               <div className="dt">
@@ -97,100 +89,25 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             </div>
           </div>
 
-          <div
-            className="specs"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: "24px 40px",
-              padding: "32px 0",
-              borderTop: "1px solid var(--line)",
-              borderBottom: "1px solid var(--line)",
-              font: "400 14px/1.6 var(--body)",
-            }}
-          >
+          <div className="detail-specs">
             <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                予算
-              </b>
-              {r.budget}
-            </div>
-            <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                席数
-              </b>
-              {r.seats}
-            </div>
-            <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                営業時間
-              </b>
+              <b>営業時間</b>
               {r.hours}
             </div>
             <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                定休日
-              </b>
+              <b>定休日</b>
               {r.closed}
             </div>
             <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                アクセス
-              </b>
-              {r.nearest}
+              <b>席数</b>
+              {r.seats}
             </div>
             <div>
-              <b
-                style={{
-                  display: "block",
-                  font: "500 10px/1.5 var(--mono)",
-                  letterSpacing: ".2em",
-                  color: "var(--ink-soft)",
-                  marginBottom: 8,
-                }}
-              >
-                住所
-              </b>
+              <b>アクセス</b>
+              {r.nearest}
+            </div>
+            <div className="detail-spec-wide">
+              <b>住所</b>
               {r.address}
             </div>
           </div>

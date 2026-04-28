@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { FEATURES } from "@/lib/data";
 
 export const metadata = {
-  title: "特集記事 一覧 — 味処 日本",
+  title: "特集記事 一覧 — マチノワ",
   description:
     "編集部が週替わりでお届けする特集記事。旅・季節・隠れ家・深夜ガイドまで。",
 };
@@ -27,13 +27,7 @@ export default function FeatureIndexPage() {
               <span>·</span>
               <span>特集記事 一覧</span>
             </div>
-            <h1
-              style={{
-                marginTop: 24,
-                font: "600 clamp(48px,8vw,120px)/0.95 var(--serif)",
-                letterSpacing: "-.02em",
-              }}
-            >
+            <h1 style={{ marginTop: 24 }}>
               編集部の、<em>読みもの</em>。
             </h1>
             <p

@@ -88,8 +88,9 @@ export type FeatureArticle = {
 };
 
 export const NATIONAL = {
-  brand: "味処 日本",
-  brandEn: "AJIDOKORO NIPPON",
+  brand: "マチノワ",
+  brandEn: "MACHINOWA",
+  brandSub: "街の輪",
   tagline: ["街の“いいお店”、", "ぜんぶここに。"],
   subtitle:
     "全国47都道府県の飲食店を、エリア・業種・特集で巡れる食のポータル。食べたい気分から、お店が見つかります。",
@@ -797,6 +798,126 @@ export const RESTAURANTS: Restaurant[] = [
   },
 ];
 
+export type ShortVideo = {
+  id: string;
+  restaurantId: string;
+  thumbnail: string;
+  title: string;
+  cuisineEmoji: string;
+  cuisineLabel: string;
+  duration: string;
+  likes: string;
+  comments: string;
+  saves: string;
+};
+
+export const SHORT_VIDEOS: ShortVideo[] = [
+  {
+    id: "v01",
+    restaurantId: "r01",
+    thumbnail:
+      "https://images.unsplash.com/photo-1558030006-450675393462?w=720&q=80",
+    title: "備長炭で焼く、シャトーブリアン。",
+    cuisineEmoji: "🔥",
+    cuisineLabel: "焼肉",
+    duration: "0:32",
+    likes: "8.2K",
+    comments: "412",
+    saves: "1.1K",
+  },
+  {
+    id: "v02",
+    restaurantId: "r03",
+    thumbnail:
+      "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=720&q=80",
+    title: "江戸前、十二貫の旅。",
+    cuisineEmoji: "🍣",
+    cuisineLabel: "鮨",
+    duration: "0:48",
+    likes: "12.5K",
+    comments: "893",
+    saves: "2.4K",
+  },
+  {
+    id: "v03",
+    restaurantId: "r20",
+    thumbnail:
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=720&q=80",
+    title: "もつ鍋、白濁の湯気。",
+    cuisineEmoji: "🍲",
+    cuisineLabel: "もつ鍋",
+    duration: "0:28",
+    likes: "6.8K",
+    comments: "320",
+    saves: "890",
+  },
+  {
+    id: "v04",
+    restaurantId: "r25",
+    thumbnail:
+      "https://images.unsplash.com/photo-1591189824344-09baca0a9bf2?w=720&q=80",
+    title: "二条市場、朝の海鮮丼。",
+    cuisineEmoji: "🦀",
+    cuisineLabel: "海鮮",
+    duration: "0:36",
+    likes: "9.4K",
+    comments: "517",
+    saves: "1.6K",
+  },
+  {
+    id: "v05",
+    restaurantId: "r14",
+    thumbnail:
+      "https://images.unsplash.com/photo-1535924206242-349b8be23e80?w=720&q=80",
+    title: "二度漬け禁止。串カツ十本勝負。",
+    cuisineEmoji: "🥢",
+    cuisineLabel: "串カツ",
+    duration: "0:42",
+    likes: "11.3K",
+    comments: "672",
+    saves: "1.9K",
+  },
+  {
+    id: "v06",
+    restaurantId: "r09",
+    thumbnail:
+      "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=720&q=80",
+    title: "京懐石、十二の皿。",
+    cuisineEmoji: "🍵",
+    cuisineLabel: "懐石",
+    duration: "0:55",
+    likes: "14.7K",
+    comments: "1.2K",
+    saves: "3.2K",
+  },
+  {
+    id: "v07",
+    restaurantId: "r26",
+    thumbnail:
+      "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=720&q=80",
+    title: "雪夜、ジンギスカン。",
+    cuisineEmoji: "🐑",
+    cuisineLabel: "ジンギスカン",
+    duration: "0:31",
+    likes: "5.6K",
+    comments: "284",
+    saves: "740",
+  },
+  {
+    id: "v08",
+    restaurantId: "r21",
+    thumbnail:
+      "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=720&q=80",
+    title: "屋台、那珂川の夜風。",
+    cuisineEmoji: "🏮",
+    cuisineLabel: "屋台",
+    duration: "0:40",
+    likes: "7.9K",
+    comments: "395",
+    saves: "1.0K",
+  },
+];
+
 export const NEIGHBORHOODS: Neighborhood[] = [
   { no: "A", name: "浅草", alt: "Asakusa", desc: "雷門の先、仲見世の奥。観光地の顔をしながら、夜は別の街になる。", count: "52 店舗", image: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80", region: "shitamachi" },
   { no: "B", name: "谷根千", alt: "Yanaka", desc: "谷中、根津、千駄木。猫と夕焼け段々と、小さな名店。", count: "38 店舗", image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80", region: "shitamachi" },
@@ -883,7 +1004,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     heroImage: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1800&q=80",
     ranking: [
       {
-        rank: "壱",
+        rank: "01",
         rankNum: 1,
         name: "炭火焼 蔵之介",
         cuisine: "YAKINIKU / 備長炭",
@@ -895,14 +1016,14 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥12,000 ~ ¥18,000" },
-          { k: "営業", v: "17:00 ~ 24:00 / 月休" },
+          { k: "営業", v: "17:00 ~ 24:00" },
+          { k: "定休", v: "月曜" },
           { k: "席数", v: "28席 / 個室有" },
           { k: "最寄", v: "浅草駅 徒歩6分" },
         ],
       },
       {
-        rank: "弐",
+        rank: "02",
         rankNum: 2,
         name: "焼肉 五線",
         cuisine: "YAKINIKU / 熟成",
@@ -914,14 +1035,14 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥9,000 ~ ¥14,000" },
-          { k: "営業", v: "18:00 ~ 23:00 / 日月休" },
+          { k: "営業", v: "18:00 ~ 23:00" },
+          { k: "定休", v: "日・月曜" },
           { k: "席数", v: "18席" },
           { k: "最寄", v: "月島駅 徒歩4分" },
         ],
       },
       {
-        rank: "参",
+        rank: "03",
         rankNum: 3,
         name: "ホルモン 新次郎",
         cuisine: "HORUMON / もつ焼",
@@ -933,14 +1054,14 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥1,500 ~ ¥3,000" },
-          { k: "営業", v: "15:00 ~ 22:30 / 火休" },
+          { k: "営業", v: "15:00 ~ 22:30" },
+          { k: "定休", v: "火曜" },
           { k: "席数", v: "立ち呑み 14席" },
           { k: "最寄", v: "京成立石駅 徒歩2分" },
         ],
       },
       {
-        rank: "肆",
+        rank: "04",
         rankNum: 4,
         name: "炭火焼肉 燈火",
         cuisine: "YAKINIKU / モダン",
@@ -952,14 +1073,14 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1579684947550-22e945225d9a?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥8,000 ~ ¥12,000" },
-          { k: "営業", v: "17:30 ~ 23:00 / 水休" },
+          { k: "営業", v: "17:30 ~ 23:00" },
+          { k: "定休", v: "水曜" },
           { k: "席数", v: "22席 / カウンター有" },
           { k: "最寄", v: "人形町駅 徒歩3分" },
         ],
       },
       {
-        rank: "伍",
+        rank: "05",
         rankNum: 5,
         name: "焼肉 黎明",
         cuisine: "YAKINIKU / 朝焼",
@@ -971,8 +1092,8 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1615485290398-f825f5a69b7d?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥3,500 ~ ¥6,000" },
-          { k: "営業", v: "06:00 ~ 14:00 / 日休" },
+          { k: "営業", v: "06:00 ~ 14:00" },
+          { k: "定休", v: "日曜" },
           { k: "席数", v: "12席" },
           { k: "最寄", v: "築地駅 徒歩5分" },
         ],
@@ -1001,7 +1122,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     heroImage: "https://images.unsplash.com/photo-1544025162-d76694265947?w=1800&q=80",
     ranking: [
       {
-        rank: "壱",
+        rank: "01",
         rankNum: 1,
         name: "焼肉 五線",
         cuisine: "YAKINIKU / 熟成",
@@ -1013,14 +1134,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥9,000 ~ ¥14,000" },
           { k: "席数", v: "18席" },
           { k: "最寄", v: "月島駅 徒歩4分" },
           { k: "予約", v: "必須" },
         ],
       },
       {
-        rank: "弐",
+        rank: "02",
         rankNum: 2,
         name: "炭火焼 蔵之介",
         cuisine: "YAKINIKU / 備長炭",
@@ -1032,14 +1152,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥12,000 ~ ¥18,000" },
           { k: "席数", v: "28席" },
           { k: "最寄", v: "浅草駅 徒歩6分" },
           { k: "予約", v: "推奨" },
         ],
       },
       {
-        rank: "参",
+        rank: "03",
         rankNum: 3,
         name: "炭火焼肉 燈火",
         cuisine: "YAKINIKU / モダン",
@@ -1051,7 +1170,6 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1579684947550-22e945225d9a?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥8,000 ~ ¥12,000" },
           { k: "席数", v: "22席" },
           { k: "最寄", v: "人形町駅 徒歩3分" },
           { k: "予約", v: "推奨" },
@@ -1081,7 +1199,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     heroImage: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=1800&q=80",
     ranking: [
       {
-        rank: "壱",
+        rank: "01",
         rankNum: 1,
         name: "割烹 ひさご",
         cuisine: "KAPPO / 割烹",
@@ -1093,14 +1211,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥18,000 ~ ¥25,000" },
           { k: "席数", v: "8席" },
           { k: "最寄", v: "根津駅 徒歩4分" },
           { k: "予約", v: "必須" },
         ],
       },
       {
-        rank: "弐",
+        rank: "02",
         rankNum: 2,
         name: "蕎麦 松風",
         cuisine: "SOBA / 蕎麦",
@@ -1112,14 +1229,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥2,500 ~ ¥4,500" },
           { k: "席数", v: "16席" },
           { k: "最寄", v: "千駄木駅 徒歩5分" },
           { k: "予約", v: "不要" },
         ],
       },
       {
-        rank: "参",
+        rank: "03",
         rankNum: 3,
         name: "鮨 七五三",
         cuisine: "SUSHI / 鮨",
@@ -1131,7 +1247,6 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1572715376701-98568319fd0b?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥20,000 ~ ¥30,000" },
           { k: "席数", v: "10席" },
           { k: "最寄", v: "人形町駅 徒歩2分" },
           { k: "予約", v: "必須" },
@@ -1161,7 +1276,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     heroImage: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?w=1800&q=80",
     ranking: [
       {
-        rank: "壱",
+        rank: "01",
         rankNum: 1,
         name: "酒場 三日月",
         cuisine: "IZAKAYA / 居酒屋",
@@ -1173,14 +1288,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥4,500 ~ ¥7,000" },
           { k: "席数", v: "32席" },
           { k: "最寄", v: "月島駅 徒歩3分" },
           { k: "予約", v: "推奨" },
         ],
       },
       {
-        rank: "弐",
+        rank: "02",
         rankNum: 2,
         name: "西陣 一献",
         cuisine: "SAKE / 日本酒",
@@ -1192,14 +1306,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥3,500 ~ ¥6,000" },
           { k: "席数", v: "12席" },
           { k: "最寄", v: "今出川駅 徒歩8分" },
           { k: "予約", v: "推奨" },
         ],
       },
       {
-        rank: "参",
+        rank: "03",
         rankNum: 3,
         name: "屋台 中洲",
         cuisine: "YATAI / 屋台",
@@ -1211,7 +1324,6 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           "https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=800&q=80",
         ],
         specs: [
-          { k: "予算", v: "¥1,500 ~ ¥2,800" },
           { k: "席数", v: "立呑み 8席" },
           { k: "最寄", v: "中洲川端駅 徒歩5分" },
           { k: "予約", v: "不可" },
@@ -1241,7 +1353,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     heroImage: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1800&q=80",
     ranking: [
       {
-        rank: "壱",
+        rank: "01",
         rankNum: 1,
         name: "もつ焼 ぼんた",
         cuisine: "MOTSU / もつ焼",
@@ -1254,13 +1366,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         ],
         specs: [
           { k: "時刻", v: "21:30 入店" },
-          { k: "予算", v: "¥1,500" },
           { k: "滞在", v: "60分" },
           { k: "次", v: "京成押上線で月島へ" },
         ],
       },
       {
-        rank: "弐",
+        rank: "02",
         rankNum: 2,
         name: "酒場 三日月",
         cuisine: "IZAKAYA / 居酒屋",
@@ -1273,13 +1384,12 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         ],
         specs: [
           { k: "時刻", v: "23:00 入店" },
-          { k: "予算", v: "¥4,500" },
           { k: "滞在", v: "90分" },
           { k: "次", v: "タクシーで築地" },
         ],
       },
       {
-        rank: "参",
+        rank: "03",
         rankNum: 3,
         name: "焼肉 黎明",
         cuisine: "YAKINIKU / 朝焼",
@@ -1292,7 +1402,6 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         ],
         specs: [
           { k: "時刻", v: "06:00 入店" },
-          { k: "予算", v: "¥3,500" },
           { k: "滞在", v: "45分" },
           { k: "次", v: "始発で帰る" },
         ],

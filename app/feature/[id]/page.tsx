@@ -13,9 +13,9 @@ export async function generateMetadata({
 }) {
   const { id } = await params;
   const a = FEATURE_ARTICLES[id];
-  if (!a) return { title: "記事が見つかりません — 味処 日本" };
+  if (!a) return { title: "記事が見つかりません — マチノワ" };
   return {
-    title: `${a.title} — 味処 日本`,
+    title: `${a.title} — マチノワ`,
     description: a.lede,
     openGraph: {
       title: a.title,
