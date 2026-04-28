@@ -42,48 +42,63 @@ export default function ShortVideos() {
       </div>
 
       <div className="shorts-carousel" ref={scrollerRef}>
-        {SHORT_VIDEOS.map((v) => {
-          const r = RESTAURANTS.find((x) => x.id === v.restaurantId);
-          return (
-            <Link
-              key={v.id}
-              href={`/restaurant/${v.restaurantId}`}
-              className="short-card"
-              data-cursor="WATCH"
-            >
-              <div
-                className="thumb"
-                style={{ backgroundImage: `url(${v.thumbnail})` }}
-              />
-              <div className="play-btn" aria-hidden>
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path
-                    d="M7 4.5v13l11-6.5L7 4.5z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <div className="cuisine-tag">
-                <span className="emoji">{v.cuisineEmoji}</span>
-                {v.cuisineLabel}
-              </div>
-              <div className="duration">{v.duration}</div>
-              <div className="overlay">
-                <div className="title">{v.title}</div>
-                {r && (
-                  <div className="store">
-                    {r.name} <span className="dot">·</span> {r.area}
+        {SHORT_VIDEOS.length > 0 ? (
+          SHORT_VIDEOS.map((v) => {
+            const r = RESTAURANTS.find((x) => x.id === v.restaurantId);
+            return (
+              <Link
+                key={v.id}
+                href={`/restaurant/${v.restaurantId}`}
+                className="short-card"
+                data-cursor="WATCH"
+              >
+                <div
+                  className="thumb"
+                  style={{ backgroundImage: `url(${v.thumbnail})` }}
+                />
+                <div className="play-btn" aria-hidden>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path
+                      d="M7 4.5v13l11-6.5L7 4.5z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div className="cuisine-tag">
+                  <span className="emoji">{v.cuisineEmoji}</span>
+                  {v.cuisineLabel}
+                </div>
+                <div className="duration">{v.duration}</div>
+                <div className="overlay">
+                  <div className="title">{v.title}</div>
+                  {r && (
+                    <div className="store">
+                      {r.name} <span className="dot">·</span> {r.area}
+                    </div>
+                  )}
+                  <div className="stats">
+                    <span>♥ {v.likes}</span>
+                    <span>💬 {v.comments}</span>
+                    <span>🔖 {v.saves}</span>
                   </div>
-                )}
-                <div className="stats">
-                  <span>♥ {v.likes}</span>
-                  <span>💬 {v.comments}</span>
-                  <span>🔖 {v.saves}</span>
+                </div>
+              </Link>
+            );
+          })
+        ) : (
+          <>
+            {[0, 1, 2].map((i) => (
+              <div key={i} className="short-card placeholder">
+                <div className="thumb-placeholder" />
+                <div className="placeholder-label">撮影予定</div>
+                <div className="overlay">
+                  <div className="title">編集部 撮り下ろし</div>
+                  <div className="store">ショート動画 準備中</div>
                 </div>
               </div>
-            </Link>
-          );
-        })}
+            ))}
+          </>
+        )}
       </div>
 
       <div className="carousel-ctl">

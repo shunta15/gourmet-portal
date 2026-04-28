@@ -43,7 +43,7 @@ export default function HomeClient() {
         ]}
       />
       {FEATURES.length > 0 && <FeaturesCarousel />}
-      {SHORT_VIDEOS.length > 0 && <ShortVideos />}
+      <ShortVideos />
       <Marquee
         dark
         reverse

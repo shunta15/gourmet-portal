@@ -665,3 +665,22 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
   .article-body{font-size:15px; line-height:1.9}
   .article-body p::first-letter{font-size:2em}
 }
+
+/* ============================================== */
+/* Short videos: placeholder state                 */
+/* ============================================== */
+.short-card.placeholder{cursor:default; background:linear-gradient(135deg, #2a241c 0%, #14110d 100%)}
+.short-card.placeholder .thumb-placeholder{
+  position:absolute; inset:0;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 2px, transparent 2px 12px),
+    radial-gradient(circle at 30% 30%, rgba(199,71,42,.18), transparent 60%);
+}
+.short-card.placeholder .placeholder-label{
+  position:absolute; top:14px; left:14px; z-index:3;
+  background:rgba(199,71,42,.85); color:#fff;
+  padding:6px 10px; font:500 10px/1 var(--mono); letter-spacing:.2em;
+}
+.short-card.placeholder::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(20,17,13,.92) 100%)}
+.short-card.placeholder .overlay{color:#f4efe3}
+.short-card.placeholder .store{opacity:.65}
