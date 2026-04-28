@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
+import RestaurantCard from "./RestaurantCard";
 
 export default function RestaurantGrid({
   region,
@@ -11,8 +12,9 @@ export default function RestaurantGrid({
 }) {
   const R = REGIONS[region];
   const [cuisine, setCuisine] = useState("ALL");
-  const cuisines = ["ALL", ...new Set(RESTAURANTS.map((r) => r.cuisine))];
-  const filtered = RESTAURANTS.filter(
+  const regional = RESTAURANTS.filter((r) => r.region === region);
+  const cuisines = ["ALL", ...new Set(regional.map((r) => r.cuisine))];
+  const filtered = regional.filter(
     (r) => cuisine === "ALL" || r.cuisine === cuisine
   );
   return (
@@ -25,7 +27,7 @@ export default function RestaurantGrid({
           </div>
           <h2 className="reveal-line">
             <span>
-              編集部の、<em>太鼓判</em>
+              今週の、<em>名店</em>
             </span>
           </h2>
           <div
@@ -45,7 +47,10 @@ export default function RestaurantGrid({
                   key={k}
                   type="button"
                   className={"chip " + (k === region ? "on" : "")}
-                  onClick={() => onRegion(k as RegionKey)}
+                  onClick={() => {
+                    onRegion(k as RegionKey);
+                    setCuisine("ALL");
+                  }}
                   data-cursor="PICK"
                 >
                   {r.name}
@@ -71,7 +76,7 @@ export default function RestaurantGrid({
           </div>
           <div className="filter-meta">
             <div className="fm-count">
-              <em>{filtered.length}</em> / {RESTAURANTS.length} 店
+              <em>{filtered.length}</em> / {regional.length} 店
             </div>
             <div className="fm-tag">
               {R.name} ·{" "}
@@ -84,26 +89,7 @@ export default function RestaurantGrid({
 
         <div className="rest-grid">
           {filtered.map((r) => (
-            <article
-              key={r.id}
-              className={"rest-card " + (r.shape || "")}
-              data-cursor="VIEW"
-            >
-              <div
-                className="img"
-                style={{ backgroundImage: `url(${r.image})` }}
-              />
-              <div className="meta">
-                <span>
-                  #{String(r.id).padStart(2, "0")} · {r.area}
-                </span>
-                <span className="rating">★ {r.rating}</span>
-              </div>
-              <div className="body">
-                <div className="cuisine">{r.cuisine}</div>
-                <h4>{r.name}</h4>
-              </div>
-            </article>
+            <RestaurantCard key={r.id} r={r} />
           ))}
           {filtered.length === 0 && (
             <div className="no-results">

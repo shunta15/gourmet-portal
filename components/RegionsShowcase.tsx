@@ -1,12 +1,10 @@
-"use client";
+import Link from "next/link";
 import { REGIONS, type RegionKey } from "@/lib/data";
 
 export default function RegionsShowcase({
   region,
-  onRegion,
 }: {
   region: RegionKey;
-  onRegion: (r: RegionKey) => void;
 }) {
   return (
     <section className="hoods" style={{ background: "var(--bg-2)" }}>
@@ -28,11 +26,11 @@ export default function RegionsShowcase({
       </div>
       <div className="regions-grid">
         {Object.entries(REGIONS).map(([k, r], i) => (
-          <a
+          <Link
             key={k}
+            href={`/region/${k}`}
             className={"region-card " + (k === region ? "active" : "")}
             data-cursor="ENTER"
-            onClick={() => onRegion(k as RegionKey)}
           >
             <div
               className="img"
@@ -54,7 +52,7 @@ export default function RegionsShowcase({
               </div>
               {k === region && <div className="rc-now">現在 表示中</div>}
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

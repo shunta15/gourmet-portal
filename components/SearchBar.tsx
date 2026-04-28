@@ -1,25 +1,39 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 
 export default function SearchBar({
   region,
   onRegion,
-  onSearch,
 }: {
   region: RegionKey;
   onRegion: (r: RegionKey) => void;
-  onSearch?: (v: { q: string; cuisine: string }) => void;
 }) {
+  const router = useRouter();
   const [q, setQ] = useState("");
   const [cuisine, setCuisine] = useState("ALL");
   const cuisines = ["ALL", ...new Set(RESTAURANTS.map((r) => r.cuisine))];
+
+  const navigate = (overrideQ?: string) => {
+    const params = new URLSearchParams();
+    const finalQ = overrideQ ?? q;
+    if (finalQ) params.set("q", finalQ);
+    if (region) params.set("region", region);
+    if (cuisine && cuisine !== "ALL") params.set("cuisine", cuisine);
+    router.push(`/search?${params.toString()}`);
+  };
+
   const submit = (e?: FormEvent) => {
     if (e) e.preventDefault();
-    onSearch?.({ q, cuisine });
-    const g = document.querySelector(".restaurants") as HTMLElement | null;
-    if (g) window.scrollTo({ top: g.offsetTop - 40, behavior: "smooth" });
+    navigate();
   };
+
+  const onTagClick = (t: string) => {
+    setQ(t);
+    navigate(t);
+  };
+
   return (
     <section className="search-bar-wrap">
       <div className="sb-head">
@@ -79,12 +93,9 @@ export default function SearchBar({
           (t) => (
             <button
               key={t}
-              className="sb-tag"
               type="button"
-              onClick={() => {
-                setQ(t);
-                submit();
-              }}
+              className="sb-tag"
+              onClick={() => onTagClick(t)}
             >
               #{t}
             </button>

@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
-import { FEATURE_ARTICLE, type FeatureArticle } from "@/lib/data";
+import { FEATURES, type FeatureArticle } from "@/lib/data";
 import { useParallax, useReveal } from "@/lib/hooks";
 
 function FeatureHero({ article }: { article: FeatureArticle }) {
@@ -40,43 +40,15 @@ function FeatureHero({ article }: { article: FeatureArticle }) {
         </div>
 
         <div>
-          <h1 style={{ marginBottom: 20 }}>
-            <span
-              className="line"
-              style={{ display: "block", overflow: "hidden" }}
-            >
-              <span
-                style={{
-                  display: "inline-block",
-                  animation:
-                    "riseUp 1.2s cubic-bezier(.22,1,.36,1) forwards",
-                  transform: "translateY(110%)",
-                }}
-              >
-                旅の夜は、
-              </span>
-            </span>
-            <span
-              className="line"
-              style={{ display: "block", overflow: "hidden" }}
-            >
-              <span
-                style={{
-                  display: "inline-block",
-                  animation:
-                    "riseUp 1.2s .15s cubic-bezier(.22,1,.36,1) forwards",
-                  transform: "translateY(110%)",
-                }}
-              >
-                ここの<em>焼肉</em>へ。
-              </span>
-            </span>
-          </h1>
+          <h1
+            style={{ marginBottom: 20 }}
+            dangerouslySetInnerHTML={{ __html: article.titleHTML }}
+          />
           <div className="bot">
             <p>{article.lede}</p>
             <div className="dt">
-              <h6>TAGS</h6>
-              <p>焼肉 / 旅 / 下町</p>
+              <h6>SUBTITLE</h6>
+              <p>{article.subtitle}</p>
             </div>
             <div className="dt">
               <h6>EDITOR</h6>
@@ -136,28 +108,19 @@ function RankingList({ article }: { article: FeatureArticle }) {
   );
 }
 
-function FeatureTabs() {
-  const tabs = [
-    { no: "01", label: "旅の夜は焼肉" },
-    { no: "02", label: "下町焼肉五選" },
-    { no: "03", label: "春の和食" },
-    { no: "04", label: "路地の奥" },
-    { no: "05", label: "深夜の動線" },
-  ];
-  const [active, setActive] = useState(0);
+function FeatureTabs({ activeId }: { activeId: string }) {
   return (
     <div className="tabs">
-      {tabs.map((t, i) => (
-        <button
-          key={i}
-          type="button"
-          className={"tab " + (i === active ? "active" : "")}
-          onClick={() => setActive(i)}
+      {FEATURES.map((t) => (
+        <Link
+          key={t.id}
+          href={`/feature/${t.id}`}
+          className={"tab " + (t.id === activeId ? "active" : "")}
           data-cursor="READ"
         >
           <span className="no">{t.no}</span>
-          {t.label}
-        </button>
+          {t.title.length > 12 ? t.title.slice(0, 12) + "…" : t.title}
+        </Link>
       ))}
     </div>
   );
@@ -199,38 +162,37 @@ function SideArticles({ article }: { article: FeatureArticle }) {
   );
 }
 
-export default function FeatureClient() {
+export default function FeatureClient({ article }: { article: FeatureArticle }) {
   useReveal();
-  const A = FEATURE_ARTICLE;
+  const A = article;
   return (
     <div className="feat-page">
       <FeatureHero article={A} />
       <Marquee
         items={[
-          "YAKINIKU · 焼肉",
-          "旅 × 下町",
-          "五選",
-          "BEST FIVE",
+          A.subtitle,
           "編集部厳選",
+          A.kicker,
+          "BEST SELECTIONS",
           "2026 SPRING",
         ]}
       />
 
       <div className="feat-body">
-        <FeatureTabs />
+        <FeatureTabs activeId={A.id} />
 
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
               RANKING
-              <span className="big">01</span>
+              <span className="big">{A.no.replace(/[^\d]/g, "") || "01"}</span>
             </div>
             <div>
               <h2>
-                下町焼肉、<em>五選。</em>
+                {A.subtitle.split(" / ")[0]}<em>。</em>
               </h2>
               <p className="sub">
-                旅の夜、最初に向かうべき一軒から、帰る朝の一軒まで。編集部が百軒を巡り、五軒に絞った。序列ではなく、夜の順路と読んで欲しい。
+                編集部の足跡を、序列ではなく順路として読んで欲しい。{A.lede}
               </p>
             </div>
           </div>
@@ -253,19 +215,7 @@ export default function FeatureClient() {
               <h2>
                 炎は、<em>記憶になる。</em>
               </h2>
-              <p className="sub">
-                旅の夜、何を食べたかは、その旅そのものになる。焼肉は、特に。煙と炎、仲間の声、ビールの泡
-                ―― すべてがひとつの記憶に焼きつく。五軒のどれかが、あなたの次の旅の記憶になれば、編集部としてこれ以上の幸せはない。
-              </p>
-              <p
-                className="sub"
-                style={{
-                  marginTop: 30,
-                  font: "italic 500 15px/1.8 var(--serif)",
-                }}
-              >
-                ― 次回は「春の和食、桜のように」。乞うご期待。
-              </p>
+              <p className="sub">{A.closing}</p>
             </div>
           </div>
         </section>

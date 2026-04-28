@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { NEIGHBORHOODS } from "@/lib/data";
 
 export default function Neighborhoods() {
@@ -21,7 +22,12 @@ export default function Neighborhoods() {
       </div>
       <div className="hoods-list">
         {NEIGHBORHOODS.map((n, i) => (
-          <a key={i} className="hood" data-cursor="ENTER">
+          <Link
+            key={i}
+            href={`/search?region=${n.region}&q=${encodeURIComponent(n.name)}`}
+            className="hood"
+            data-cursor="ENTER"
+          >
             <div className="no">/ {n.no}</div>
             <h3>
               <span className="main">{n.name}</span>
@@ -34,7 +40,7 @@ export default function Neighborhoods() {
               className="preview-strip"
               style={{ backgroundImage: `url(${n.image})` }}
             />
-          </a>
+          </Link>
         ))}
       </div>
     </section>

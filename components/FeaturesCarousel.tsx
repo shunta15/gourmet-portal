@@ -41,10 +41,10 @@ export default function FeaturesCarousel() {
       </div>
 
       <div className="features-carousel" ref={scrollerRef}>
-        {FEATURES.map((f, i) => (
+        {FEATURES.map((f) => (
           <Link
             key={f.id}
-            href={i === 0 ? "/feature" : "/feature"}
+            href={`/feature/${f.id}`}
             className="feature-card"
             data-cursor="READ"
           >

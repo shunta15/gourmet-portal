@@ -25,10 +25,14 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <a data-cursor="SOON">エリア</a>
+          <Link href="/region/shitamachi" data-cursor="ENTER">
+            エリア
+          </Link>
         </li>
         <li>
-          <a data-cursor="SOON">予約</a>
+          <Link href="/search" data-cursor="SEARCH">
+            さがす
+          </Link>
         </li>
       </ul>
       <div className="right">

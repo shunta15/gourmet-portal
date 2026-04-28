@@ -43,13 +43,13 @@ export default function HomeClient() {
         items={[
           "街の“いいお店”、ぜんぶここに。",
           "編集部厳選",
-          "全国 1,861 店舗",
+          "全国 30 店舗掲載中",
           "北海道から沖縄まで",
         ]}
       />
       <RestaurantGrid region={region} onRegion={setRegion} />
       <Stats />
-      <RegionsShowcase region={region} onRegion={setRegion} />
+      <RegionsShowcase region={region} />
       <Neighborhoods />
       <Footer />
     </>
