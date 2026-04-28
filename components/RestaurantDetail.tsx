@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS, RESTAURANTS, type Restaurant } from "@/lib/data";
 import RestaurantCard from "./RestaurantCard";
+import RestaurantShortVideos from "./RestaurantShortVideos";
 import Footer from "./Footer";
 
 export default function RestaurantDetail({ r }: { r: Restaurant }) {
@@ -231,6 +232,8 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             ))}
           </div>
         </section>
+
+        <RestaurantShortVideos restaurantId={r.id} />
 
         {related.length > 0 && (
           <section className="article" style={{ borderBottom: "none" }}>

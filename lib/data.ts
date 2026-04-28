@@ -96,6 +96,7 @@ export type ShortVideo = {
   likes: string;
   comments: string;
   saves: string;
+  videoUrl?: string;
 };
 
 export const NATIONAL = {

@@ -684,3 +684,137 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 .short-card.placeholder::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(20,17,13,.92) 100%)}
 .short-card.placeholder .overlay{color:#f4efe3}
 .short-card.placeholder .store{opacity:.65}
+
+/* ============================================== */
+/* Restaurant detail: vertical specs               */
+/* ============================================== */
+.detail-specs{
+  grid-template-columns:1fr !important;
+  gap:0 !important;
+  padding:0 !important;
+  border:0 !important;
+}
+.detail-specs > div{
+  display:grid;
+  grid-template-columns:160px 1fr;
+  gap:24px;
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
+  align-items:start;
+}
+.detail-specs > div:first-child{border-top:1px solid var(--line)}
+.detail-specs > div.detail-spec-wide{grid-column:auto}
+.detail-specs b{
+  margin:0 !important;
+  font:500 11px/1.5 var(--mono) !important;
+  letter-spacing:.2em !important;
+  color:var(--ink-soft) !important;
+  padding-top:2px;
+}
+@media (max-width: 768px){
+  .detail-specs > div{grid-template-columns:1fr; gap:6px; padding:16px 0}
+}
+
+/* ============================================== */
+/* Restaurant short videos grid                    */
+/* ============================================== */
+.restaurant-shorts{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+  gap:14px;
+}
+.restaurant-shorts .short-card{
+  flex:initial;
+  aspect-ratio:9/16;
+  appearance:none;
+  border:0;
+  padding:0;
+  text-align:left;
+  font:inherit;
+  color:inherit;
+  background:var(--ink);
+}
+@media (max-width: 600px){
+  .restaurant-shorts{grid-template-columns:repeat(2, 1fr); gap:10px}
+}
+
+/* ============================================== */
+/* Video modal                                     */
+/* ============================================== */
+.video-modal{
+  position:fixed; inset:0; z-index:1000;
+  background:rgba(20,17,13,.92);
+  display:grid;
+  place-items:center;
+  padding:40px 20px;
+  cursor:pointer;
+  animation:fadeIn .25s ease;
+}
+@keyframes fadeIn{from{opacity:0} to{opacity:1}}
+.video-frame{
+  position:relative;
+  width:100%;
+  max-width:420px;
+  aspect-ratio:9/16;
+  background:#000;
+  cursor:default;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+.video-frame video,
+.video-frame iframe{
+  flex:1;
+  width:100%;
+  height:100%;
+  border:0;
+  background:#000;
+  object-fit:cover;
+}
+.video-fallback{
+  flex:1;
+  position:relative;
+}
+.video-fallback .thumb{
+  position:absolute; inset:0;
+  background-size:cover; background-position:center;
+  filter:brightness(.5);
+}
+.video-fallback .msg{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  color:#fff; font:500 14px/1 var(--mono); letter-spacing:.2em;
+}
+.video-meta{
+  position:absolute;
+  bottom:16px;
+  left:16px;
+  right:16px;
+  color:#fff;
+}
+.video-meta .title{
+  font:500 16px/1.4 var(--serif);
+  margin-bottom:8px;
+  text-shadow:0 2px 8px rgba(0,0,0,.7);
+}
+.video-meta .stats{
+  display:flex; gap:14px;
+  font:400 11px/1 var(--body);
+  opacity:.9;
+  text-shadow:0 1px 4px rgba(0,0,0,.7);
+}
+.video-close{
+  position:fixed;
+  top:24px; right:24px;
+  z-index:1001;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  width:44px; height:44px;
+  border-radius:50%;
+  border:0;
+  font:300 24px/1 var(--body);
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+  transition:background .25s;
+}
+.video-close:hover{background:rgba(255,255,255,.25)}
