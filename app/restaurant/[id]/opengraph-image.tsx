@@ -7,8 +7,13 @@ export const contentType = "image/png";
 
 const BASE = "https://gourmet-portal.vercel.app";
 
-export default async function OG({ params }: { params: { id: string } }) {
-  const r = RESTAURANTS.find((x) => x.id === params.id);
+export default async function OG({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const r = RESTAURANTS.find((x) => x.id === id);
   if (!r) {
     return new ImageResponse(
       (

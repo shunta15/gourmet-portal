@@ -5,8 +5,13 @@ export const alt = "マチノワ 地域別ポータル";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function OG({ params }: { params: { key: string } }) {
-  const r = REGIONS[params.key as RegionKey];
+export default async function OG({
+  params,
+}: {
+  params: Promise<{ key: string }>;
+}) {
+  const { key } = await params;
+  const r = REGIONS[key as RegionKey];
   if (!r) {
     return new ImageResponse(
       (

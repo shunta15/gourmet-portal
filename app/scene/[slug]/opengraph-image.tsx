@@ -5,8 +5,13 @@ export const alt = "マチノワ シーン別ポータル";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function OG({ params }: { params: { slug: string } }) {
-  const s = getSceneBySlug(params.slug);
+export default async function OG({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const s = getSceneBySlug(slug);
   if (!s) {
     return new ImageResponse(
       (
