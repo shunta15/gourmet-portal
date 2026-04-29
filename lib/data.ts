@@ -125,8 +125,10 @@ export const REGIONS: Record<RegionKey, Region> = {
     intro:
       "ビジネス街の裏路地、住宅地の角、駅から少し歩いた所。東京の名店は、地図に載らない場所にもひっそりと灯っている。",
     heroImages: [
-      "https://images.unsplash.com/photo-1554797589-7241bb691973?w=1600&q=80",
-      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=80",
+      // 東京の路地夜景
+      "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?w=1600&q=85",
+      // 新宿の赤提灯と歩行者
+      "https://images.unsplash.com/photo-1596713109885-c94bdfd7f19d?w=1600&q=85",
     ],
     stats: [],
   },
@@ -138,7 +140,10 @@ export const REGIONS: Record<RegionKey, Region> = {
     intro:
       "東京の喧騒から少し離れた、港町のリズム。商店街の昭和の風情と、若い店主の新しい料理が同居する街。",
     heroImages: [
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1600&q=80",
+      // 横浜の夜景（Akinori UEMURA, Yokohama）
+      "https://images.unsplash.com/photo-1541850126775-f2839ffe3970?w=1600&q=85",
+      // 横浜・コスモワールド観覧車
+      "https://images.unsplash.com/photo-1753596119761-d3ff23ef19f2?w=1600&q=85",
     ],
     stats: [],
   },
@@ -150,7 +155,10 @@ export const REGIONS: Record<RegionKey, Region> = {
     intro:
       "通りごとに表情を変える街。京阪神の食材が日常的に集まり、隠れ家から路面店まで、夜の選択肢が尽きない。",
     heroImages: [
-      "https://images.unsplash.com/photo-1535924206242-349b8be23e80?w=1600&q=80",
+      // 道頓堀川と街並み（Laura Barry, Dotonbori Osaka）
+      "https://images.unsplash.com/photo-1734427842844-29f08e51763a?w=1600&q=85",
+      // 通天閣・新世界の看板（Kiko K, Dotonbori Osaka）
+      "https://images.unsplash.com/photo-1713925104998-efe9fefec0bf?w=1600&q=85",
     ],
     stats: [],
   },

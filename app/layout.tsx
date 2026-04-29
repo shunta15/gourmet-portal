@@ -4,6 +4,7 @@ import Cursor from "@/components/Cursor";
 import ProgressBar from "@/components/ProgressBar";
 import Nav from "@/components/Nav";
 import SideLabel from "@/components/SideLabel";
+import { buildOrganizationJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gourmet-portal.vercel.app"),
@@ -36,6 +37,12 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildOrganizationJsonLd()),
+          }}
         />
       </head>
       <body>
