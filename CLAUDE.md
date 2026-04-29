@@ -1,35 +1,67 @@
 @AGENTS.md
 
-# マチノワ運用チーム
-
-このプロジェクトは8名のエージェントチームで運用しています。
+# マチノワ運用チーム（10名構成）
 
 ## チーム構成
 
+### 基幹チーム（実装・運用）
 | エージェント | 責務 |
 |---|---|
 | **machinowa-manager** | 統括・タスク振り分け・ユーザー窓口・最終承認 |
 | **machinowa-researcher** | 店舗情報・口コミ・画像URL収集 |
-| **machinowa-writer** | 紹介文・本文・特集記事執筆 |
+| **machinowa-writer** | 1店舗単位の紹介文・本文執筆 |
 | **machinowa-photo-curator** | 画像取得・選定・heroImages/gallery編成 |
 | **machinowa-designer** | UI/CSS/タイポ/レスポンシブ |
 | **machinowa-builder** | data.ts更新・実装・ビルド・デプロイ |
 | **machinowa-auditor** | 事実監査・デザイン監査・本番確認 |
-| **machinowa-seo** | メタ/OGP/構造化データ/タグ戦略 |
+
+### 戦略チーム（企画・SEO・分析）
+| エージェント | 責務 |
+|---|---|
+| **machinowa-editorial** | 特集記事の企画・構成・シーン別LP・連載管理 |
+| **machinowa-seo** | ローカルSEO/構造化データ/メタ/サイトマップ/シーン別ハブ |
+| **machinowa-analyst** | Search Console/Vercel Analytics/GA4分析・改善仮説 |
 
 ## ユーザー窓口
 **ユーザーは manager とのみ会話**。manager が各エージェントに振り分ける。
 
-## 標準ワークフロー（新店舗追加）
+## 標準ワークフロー
+
+### 新店舗追加
 ```
 researcher → writer + photo-curator（並列）
            → builder → auditor + seo（並列）
            → builder（最終デプロイ）→ manager 報告
 ```
 
-## 標準ワークフロー（UI改善）
+### 特集記事の作成
+```
+editorial（企画立案・構成）
+  → researcher（追加情報）
+  → writer（各店の文章）
+  → photo-curator（特集ヒーロー）
+  → seo（タイトル/メタ/JSON-LD）
+  → builder（FEATURE_ARTICLES 追加・実装）
+  → auditor（事実+表示監査）
+  → builder（デプロイ）→ manager 報告
+```
+
+### UI/UX改善
 ```
 designer → builder → auditor → manager
+```
+
+### SEO改善
+```
+seo（戦略） → builder（実装） → auditor（検証） → analyst（効果測定） → manager
+```
+
+### 流入分析・改善ループ
+```
+analyst（データ取得） → analyst（仮説立案）
+  → editorial / writer / seo / designer に改善依頼
+  → builder（実装）
+  → analyst（効果測定）
 ```
 
 ## 重要な運用ルール
@@ -43,6 +75,22 @@ designer → builder → auditor → manager
 
 ## 作業ディレクトリ
 - リサーチ: `agent-teams/research/<store_id>.md`
-- ワーク: `agent-teams/work/`
+- 企画: `agent-teams/work/editorial_<topic>.md`
+- 原稿: `agent-teams/work/<store_id>_copy.md`
+- 画像キュレーション: `agent-teams/work/<store_id>_images.md`
+- デザイン提案: `agent-teams/work/design_<topic>.md`
+- 監査レポート: `agent-teams/work/audit_<topic>_<date>.md`
+- SEO提案: `agent-teams/work/seo_<topic>_<date>.md`
+- 分析レポート: `agent-teams/work/analysis_<topic>_<date>.md`
 - ログ: `agent-teams/logs/`
 - 画像: `public/restaurants/`
+
+## SEO第一弾（推奨実装順）
+1. 全店舗に `Restaurant` JSON-LD 埋め込み
+2. `app/sitemap.ts` 動的生成
+3. `app/robots.ts`
+4. シーン別ハブ `/scene/[slug]`
+5. OGP画像の動的生成 `opengraph-image.tsx`
+6. 店舗 metadata 強化（地域+業種+店名）
+7. パンくずリスト + 内部リンク
+8. Lighthouse 90点以上維持
