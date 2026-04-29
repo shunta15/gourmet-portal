@@ -1,12 +1,15 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { SCENES } from "@/lib/scenes";
 
 export default function Nav() {
   const [today, setToday] = useState("");
+  const [sceneOpen, setSceneOpen] = useState(false);
   useEffect(() => {
     setToday(new Date().toLocaleDateString("ja-JP"));
   }, []);
+
   return (
     <nav className="nav">
       <Link href="/" className="brand" data-cursor="HOME">
@@ -28,6 +31,30 @@ export default function Nav() {
           <Link href="/region/tokyo" data-cursor="ENTER">
             エリア
           </Link>
+        </li>
+        <li
+          className="scene-menu"
+          onMouseEnter={() => setSceneOpen(true)}
+          onMouseLeave={() => setSceneOpen(false)}
+        >
+          <a data-cursor="PICK" style={{ cursor: "pointer" }}>
+            シーン
+          </a>
+          {sceneOpen && (
+            <div className="scene-dropdown">
+              {SCENES.map((s) => (
+                <Link
+                  key={s.slug}
+                  href={`/scene/${s.slug}`}
+                  className="scene-link"
+                  data-cursor="ENTER"
+                >
+                  <span className="emoji">{s.emoji}</span>
+                  <span>{s.name}</span>
+                </Link>
+              ))}
+            </div>
+          )}
         </li>
         <li>
           <Link href="/search" data-cursor="SEARCH">

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { RESTAURANTS, REGIONS, FEATURES } from "@/lib/data";
+import { SCENES } from "@/lib/scenes";
 
 const BASE = "https://gourmet-portal.vercel.app";
 
@@ -43,5 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...restaurants, ...regions, ...features];
+  const scenes: MetadataRoute.Sitemap = SCENES.map((s) => ({
+    url: `${BASE}/scene/${s.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...restaurants, ...regions, ...features, ...scenes];
 }
