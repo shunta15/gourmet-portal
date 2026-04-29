@@ -830,10 +830,13 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 .feat-hero .hero-media{position:absolute; inset:0}
 .feat-hero .hero-media .img{
   position:absolute; inset:0;
-  background-size:cover; background-position:center;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
   opacity:0;
-  transform:scale(1.05);
-  transition:opacity 1.2s ease;
+  transform:scale(1.01);
+  transition:opacity 1.4s ease;
+  will-change:opacity;
 }
 .feat-hero .hero-media .img.active{opacity:.92}
 

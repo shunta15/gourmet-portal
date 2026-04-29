@@ -31,6 +31,7 @@ export type Restaurant = {
   rating?: string;
   shape: "wide" | "tall" | "square";
   image: string;
+  heroImages?: string[];
   gallery: string[];
   desc: string;
   address: string;
@@ -158,6 +159,12 @@ export const RESTAURANTS: Restaurant[] = [
     region: "tokyo",
     shape: "wide",
     image: "/restaurants/yakitori-shimaya-hero.webp",
+    heroImages: [
+      "/restaurants/yakitori-shimaya-hero.webp",
+      "/restaurants/yakitori-shimaya-table.jpg",
+      "/restaurants/yakitori-shimaya-2.jpg",
+      "/restaurants/yakitori-shimaya-3.jpg",
+    ],
     gallery: [
       "/restaurants/yakitori-shimaya-hero.webp",
       "/restaurants/yakitori-shimaya-table.jpg",

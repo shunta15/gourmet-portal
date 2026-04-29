@@ -20,7 +20,11 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
   ).slice(0, 4);
 
   const heroImages =
-    r.gallery && r.gallery.length > 0 ? r.gallery : [r.image];
+    r.heroImages && r.heroImages.length > 0
+      ? r.heroImages
+      : r.gallery && r.gallery.length > 0
+      ? r.gallery
+      : [r.image];
   const [idx, setIdx] = useState(0);
   useEffect(() => {
     if (heroImages.length <= 1) return;
