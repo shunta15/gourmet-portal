@@ -228,7 +228,7 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 .feat-page{background:var(--bg); color:var(--ink)}
 .feat-hero{position:relative; height:100vh; min-height:720px; background:var(--ink); color:#f4efe3; overflow:hidden}
 .feat-hero .img{position:absolute; inset:0; background-size:cover; background-position:center; opacity:.55; transform:scale(1.05)}
-.feat-hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,17,13,.6) 0%, rgba(20,17,13,.1) 40%, rgba(20,17,13,.95) 100%)}
+.feat-hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,17,13,.25) 0%, rgba(20,17,13,0) 35%, rgba(20,17,13,.7) 100%)}
 .feat-hero-inner{position:relative; z-index:2; height:100%; padding:140px 40px 60px; display:flex; flex-direction:column; justify-content:space-between}
 .feat-hero .kicker{font:500 11px/1 var(--mono); letter-spacing:.3em; opacity:.8; display:flex; gap:16px; align-items:center}
 .feat-hero .kicker .b{width:24px; height:1px; background:var(--accent)}
@@ -835,7 +835,7 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
   transform:scale(1.05);
   transition:opacity 1.2s ease;
 }
-.feat-hero .hero-media .img.active{opacity:.65}
+.feat-hero .hero-media .img.active{opacity:.92}
 
 /* ============================================== */
 /* Hashtags                                        */
@@ -1033,4 +1033,11 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
     transition-duration:.01ms !important;
   }
   .marquee-track, .typewriter::after{animation:none !important}
+}
+
+/* ============================================== */
+/* Restaurant hero: brighter image + readable name */
+/* ============================================== */
+.feat-hero h1{
+  text-shadow:0 2px 18px rgba(20,17,13,.55), 0 1px 4px rgba(20,17,13,.4);
 }
