@@ -1164,3 +1164,33 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 @media (max-width: 1024px){
   .nav .scene-menu{display:none}
 }
+
+/* ============================================== */
+/* Restaurant hero: mobile optimization            */
+/* ============================================== */
+/* 通常: 100vh */
+.feat-hero{height:100vh; min-height:720px}
+
+/* スマホ: 高さを縮めて画像読み込み量と縦スクロール感を改善 */
+@media (max-width: 768px){
+  .feat-hero{height:60vh; min-height:420px; max-height:560px}
+  .feat-hero h1{
+    font-size:clamp(28px, 8vw, 48px) !important;
+  }
+}
+
+/* タブレット: 中間 */
+@media (max-width: 1024px) and (min-width: 769px){
+  .feat-hero{height:75vh; min-height:560px; max-height:720px}
+}
+
+/* very small portrait */
+@media (max-width: 480px){
+  .feat-hero{height:55vh; min-height:380px}
+}
+
+/* prefers-reduced-data: 低速回線では opacity を上げて画像数を減らした見え方に */
+@media (prefers-reduced-data: reduce){
+  .feat-hero .hero-media .img-wrap{opacity:0}
+  .feat-hero .hero-media .img-wrap.active{opacity:.85}
+}

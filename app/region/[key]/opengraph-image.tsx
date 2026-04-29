@@ -42,64 +42,96 @@ export default async function OG({
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-end",
-          padding: 80,
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          fontFamily: "serif",
-          color: "#fff",
           position: "relative",
+          background: "#14110d",
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={heroImage}
+          alt=""
+          width={1200}
+          height={630}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: 1200,
+            height: 630,
+            objectFit: "cover",
+          }}
+        />
         <div
           style={{
             position: "absolute",
-            inset: 0,
+            top: 0,
+            left: 0,
+            width: 1200,
+            height: 630,
+            display: "flex",
             background:
               "linear-gradient(180deg, rgba(20,17,13,0.2) 0%, rgba(20,17,13,0.55) 50%, rgba(20,17,13,0.92) 100%)",
-            display: "flex",
           }}
         />
         <div
           style={{
             position: "relative",
             display: "flex",
-            alignItems: "center",
-            gap: 16,
-            font: "500 22px sans-serif",
-            letterSpacing: "0.3em",
-            opacity: 0.9,
-            marginBottom: 18,
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            width: 1200,
+            height: 630,
+            padding: 80,
+            color: "#fff",
+            fontFamily: "serif",
           }}
         >
           <div
-            style={{ width: 48, height: 1, background: "#c7472a", display: "flex" }}
-          />
-          MACHINOWA / 地域別ポータル
-        </div>
-        <div
-          style={{
-            position: "relative",
-            font: "600 110px serif",
-            letterSpacing: "-0.02em",
-            lineHeight: 1.05,
-            marginBottom: 16,
-            display: "flex",
-          }}
-        >
-          {r.name}
-        </div>
-        <div
-          style={{
-            position: "relative",
-            font: "italic 500 36px serif",
-            color: "#c7472a",
-            display: "flex",
-          }}
-        >
-          {r.tagline}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 16,
+              fontFamily: "sans-serif",
+              fontSize: 22,
+              fontWeight: 500,
+              letterSpacing: 4,
+              opacity: 0.92,
+              marginBottom: 18,
+            }}
+          >
+            <div
+              style={{
+                width: 48,
+                height: 1,
+                background: "#c7472a",
+                display: "flex",
+              }}
+            />
+            <div style={{ display: "flex" }}>MACHINOWA / 地域別ポータル</div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 120,
+              fontWeight: 600,
+              lineHeight: 1.05,
+              letterSpacing: -2,
+              marginBottom: 16,
+            }}
+          >
+            {r.name}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 36,
+              fontWeight: 500,
+              fontStyle: "italic",
+              color: "#f0a085",
+            }}
+          >
+            {r.tagline}
+          </div>
         </div>
       </div>
     ),

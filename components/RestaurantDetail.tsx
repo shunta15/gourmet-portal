@@ -50,8 +50,9 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 alt={`${r.name} 店舗写真 ${i + 1}`}
                 fill
                 priority={i === 0}
-                sizes="100vw"
-                quality={85}
+                fetchPriority={i === 0 ? "high" : undefined}
+                sizes="(max-width: 600px) 100vw, (max-width: 1024px) 100vw, 1600px"
+                quality={i === 0 ? 80 : 70}
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
