@@ -7,6 +7,20 @@ export const contentType = "image/png";
 
 const BASE = "https://gourmet-portal.vercel.app";
 
+async function loadImageDataUrl(src: string): Promise<string | null> {
+  try {
+    const url = src.startsWith("http") ? src : `${BASE}${src}`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const buf = await res.arrayBuffer();
+    const ct = res.headers.get("content-type") || "image/jpeg";
+    const base64 = Buffer.from(buf).toString("base64");
+    return `data:${ct};base64,${base64}`;
+  } catch {
+    return null;
+  }
+}
+
 export default async function OG({
   params,
 }: {
@@ -36,7 +50,7 @@ export default async function OG({
     );
   }
   const cuisine = r.cuisine.split(" / ").pop() || r.cuisine;
-  const imageUrl = r.image.startsWith("http") ? r.image : `${BASE}${r.image}`;
+  const dataUrl = await loadImageDataUrl(r.image);
 
   return new ImageResponse(
     (
@@ -49,23 +63,23 @@ export default async function OG({
           background: "#14110d",
         }}
       >
-        {/* Background image */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={imageUrl}
-          alt=""
-          width={1200}
-          height={630}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: 1200,
-            height: 630,
-            objectFit: "cover",
-          }}
-        />
-        {/* Dark gradient overlay */}
+        {dataUrl && (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={dataUrl}
+            alt=""
+            width={1200}
+            height={630}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: 1200,
+              height: 630,
+              objectFit: "cover",
+            }}
+          />
+        )}
         <div
           style={{
             position: "absolute",
@@ -75,10 +89,9 @@ export default async function OG({
             height: 630,
             display: "flex",
             background:
-              "linear-gradient(180deg, rgba(20,17,13,0.15) 0%, rgba(20,17,13,0.55) 50%, rgba(20,17,13,0.92) 100%)",
+              "linear-gradient(180deg, rgba(20,17,13,0.2) 0%, rgba(20,17,13,0.55) 50%, rgba(20,17,13,0.92) 100%)",
           }}
         />
-        {/* Content */}
         <div
           style={{
             position: "relative",
