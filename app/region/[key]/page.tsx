@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import RegionPage from "@/components/RegionPage";
 import { REGIONS, type RegionKey } from "@/lib/data";
 
-const KEYS: RegionKey[] = ["tokyo", "yokohama"];
+const KEYS = Object.keys(REGIONS) as RegionKey[];
 
 export function generateStaticParams() {
   return KEYS.map((key) => ({ key }));

@@ -1044,3 +1044,18 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 .feat-hero h1{
   text-shadow:0 2px 18px rgba(20,17,13,.55), 0 1px 4px rgba(20,17,13,.4);
 }
+
+/* ============================================== */
+/* Hero with next/image (responsive optimization) */
+/* ============================================== */
+.feat-hero .hero-media .img-wrap{
+  position:absolute; inset:0;
+  opacity:0;
+  transform:scale(1.01);
+  transition:opacity 1.4s ease;
+  will-change:opacity;
+}
+.feat-hero .hero-media .img-wrap.active{opacity:.92}
+.feat-hero .hero-media .img-wrap img{
+  /* next/image は<img>を出力。object-fit/positionはinline styleで指定済み */
+}

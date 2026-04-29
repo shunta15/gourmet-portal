@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS, RESTAURANTS, type Restaurant } from "@/lib/data";
@@ -42,9 +43,18 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
           {heroImages.map((src, i) => (
             <div
               key={i}
-              className={"img " + (i === idx ? "active" : "")}
-              style={{ backgroundImage: `url(${src})` }}
-            />
+              className={"img-wrap " + (i === idx ? "active" : "")}
+            >
+              <Image
+                src={src}
+                alt={`${r.name} 店舗写真 ${i + 1}`}
+                fill
+                priority={i === 0}
+                sizes="100vw"
+                quality={85}
+                style={{ objectFit: "cover", objectPosition: "center" }}
+              />
+            </div>
           ))}
         </div>
         <div

@@ -1,6 +1,6 @@
 export type Stat = { n: string; l: string };
 
-export type RegionKey = "tokyo" | "yokohama";
+export type RegionKey = "tokyo" | "yokohama" | "osaka";
 
 export type Region = {
   name: string;
@@ -142,6 +142,18 @@ export const REGIONS: Record<RegionKey, Region> = {
     ],
     stats: [],
   },
+  osaka: {
+    name: "大阪",
+    nameEn: "Osaka",
+    tagline: "食い倒れ、夜更かし",
+    subtitle: "天六、福島、ミナミ、キタ ――― 笑って、食べて、また明日。",
+    intro:
+      "通りごとに表情を変える街。京阪神の食材が日常的に集まり、隠れ家から路面店まで、夜の選択肢が尽きない。",
+    heroImages: [
+      "https://images.unsplash.com/photo-1535924206242-349b8be23e80?w=1600&q=80",
+    ],
+    stats: [],
+  },
 };
 
 const RES_GALLERY_FALLBACK = [
@@ -247,6 +259,52 @@ export const RESTAURANTS: Restaurant[] = [
       "看板に「お任せ前菜盛り合わせ」あり。「あれもこれも食べて欲しいから、気がつくとたくさん盛っちゃう」とミクさん。国産牛の温製カルパッチョや季節野菜の一皿は、酒の肴としても料理単品としても成立する完成度。季節ごとに更新されるスペシャルメニューでは、旬の食材を「最高においしいかたちで」表現する仕事ぶりだ。",
       "ワインは、ライトから重厚まで幅広く。初心者でも玄人でも、その日の気分や料理に合うものを姉妹が一緒に選んでくれる。ビールも見逃せない――レンさんが注ぐ一杯は、同じ銘柄でも別物の表情を見せる。山梨「うちゅうブルーイング」のDDH IPAなど、商店街では随一のクラフトビール品揃えも自慢。",
       "金曜は人気ベーカリー panopiedra のパンが入荷、土曜はランチ営業、日曜にはカレー屋が間貸し――商店街の中継地点のように、一週間がリズムを持って動く。1人飲み、女子会、デート、近隣のプロ料理人の打ち上げまで客層は柔らかく多様。「イタリアみたいに、お通しとワイン1、2杯でも気軽に立ち寄って欲しい」――そう語るオーナーの想いそのままの、街の食堂である。",
+    ],
+  },
+  {
+    id: "r03",
+    name: "鶏居酒屋pao福",
+    cuisine: "鶏居酒屋",
+    area: "天神橋筋六丁目",
+    region: "osaka",
+    shape: "wide",
+    image: "/restaurants/paofuku-interior-wide.jpg",
+    heroImages: [
+      "/restaurants/paofuku-interior-wide.jpg",
+      "/restaurants/paofuku-storefront.jpg",
+      "/restaurants/paofuku-spread.jpg",
+      "/restaurants/paofuku-chicken-nanban.jpg",
+    ],
+    gallery: [
+      "/restaurants/paofuku-interior-wide.jpg",
+      "/restaurants/paofuku-storefront.jpg",
+      "/restaurants/paofuku-private-room.jpg",
+      "/restaurants/paofuku-private-room-2.jpg",
+      "/restaurants/paofuku-spread.jpg",
+      "/restaurants/paofuku-chicken-nanban.jpg",
+      "/restaurants/paofuku-chicken-nanban-2.jpg",
+      "/restaurants/paofuku-tori-sashi.jpg",
+      "/restaurants/paofuku-tsukune.jpg",
+      "/restaurants/paofuku-yakitori.jpg",
+      "/restaurants/paofuku-chicken-salad.jpg",
+      "/restaurants/paofuku-liver-sashi.jpg",
+      "/restaurants/paofuku-bottles.jpg",
+      "/restaurants/paofuku-highball.jpg",
+    ],
+    desc: "天神橋筋六丁目駅から徒歩6分、本庄東の住宅街に佇む鶏料理専門の居酒屋。京赤地鶏を使った鶏刺し・つくね・看板のチキン南蛮フライまで、鶏一筋のメニューが揃う。50席・最大50名貸切可、個室2室を備え、一人飲みから宴会まで応える一軒。",
+    address: "大阪府大阪市北区本庄東2-11-10",
+    hours: "月-日・祝・祝前 17:00 - 23:00（料理L.O. 22:00 / ドリンクL.O. 22:30）",
+    closed: "不定休",
+    seats: "50席 / 個室2室（24名・8名）/ 貸切24-50名対応",
+    nearest: "大阪メトロ堺筋線・谷町線・阪急千里線 天神橋筋六丁目駅 11番出口 徒歩6分",
+    reservationUrl: "https://www.hotpepper.jp/strJ003474513/",
+    source: { label: "公式サイト", url: "https://paofuku.com/" },
+    tags: ["鶏料理", "居酒屋", "京赤地鶏", "個室", "貸切可", "一人飲み", "宴会"],
+    body: [
+      "大阪メトロ堺筋線・谷町線・阪急千里線が交差する天神橋筋六丁目。にぎやかな商店街を抜け、本庄東の住宅街へ歩いていくと、木目の格子と「pao福」の看板を掲げた一軒に行き着く。鶏料理一筋の居酒屋「鶏居酒屋pao福」だ。",
+      "扱うのは京赤地鶏。国産地鶏の中でも肉質と旨味で知られるブランド鶏を、刺し・焼き・揚げの三本柱で味わわせる。看板は「チキン南蛮フライ」。サクッとした衣にたっぷりのタルタルが乗る一皿は、人気No.1の理由を口に運んだ瞬間に納得させる。鶏刺し四種盛り、肝刺し、自家製つくね三種、よだれ鶏 ――― どれをとっても鶏の輪郭がくっきりと出る。",
+      "店内は黄色い壁と黒いカーテンが効いた、明るく開けた空間。50席の中に個室が二部屋（最大24名・8名）あり、グループ利用にも対応する。一人で来てもカウンターでサクッと、宴会なら個室でじっくり、貸切なら最大50名まで――シーンを選ばない懐の深さが魅力だ。",
+      "ドリンクは生ビール、ハイボール（黄色い壁を背にしたサーバーが目を引く）、焼酎、日本酒、リキュール各種と、鶏料理に合わせやすいラインナップ。平均予算は通常3,500円、宴会コースで4,500円。住宅街の隠れ家ながら、地元客から会社帰りのグループまで連夜にぎわう、天六で押さえておきたい鶏の一軒だ。",
     ],
   },
 ];
