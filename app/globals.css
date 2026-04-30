@@ -172,10 +172,7 @@ section{position:relative}
 .rest-card.wide{grid-column:span 6; aspect-ratio:3/2}
 .rest-card.tall{grid-column:span 3; aspect-ratio:2/3}
 .rest-card.square{grid-column:span 4; aspect-ratio:1/1}
-.rest-grid--uniform .rest-card,
-.rest-grid--uniform .rest-card.wide,
-.rest-grid--uniform .rest-card.tall,
-.rest-grid--uniform .rest-card.square{grid-column:span 4; aspect-ratio:4/3}
+.rest-grid--uniform > .rest-card{grid-column:span 4 !important; aspect-ratio:4/3 !important}
 .rest-card .img{position:absolute; inset:0; background-size:cover; background-position:center; transition:transform 1s cubic-bezier(.22,1,.36,1), filter .6s; filter:grayscale(.3) contrast(1.05)}
 .rest-card:hover .img{transform:scale(1.08); filter:grayscale(0) contrast(1.1)}
 .rest-card::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 50%, rgba(20,17,13,.92) 100%); transition:opacity .4s}
