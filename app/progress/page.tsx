@@ -20,7 +20,6 @@ const TARGETS: { id: string; name: string }[] = [
   { id: "r08", name: "やまみ" },
   { id: "r09", name: "ももやき酒場 雄火屋" },
   { id: "r10", name: "第三共進丸" },
-  { id: "r11", name: "けやきCafé" },
   { id: "r12", name: "社交酒場イム" },
   { id: "r13", name: "KITEYA" },
   { id: "r14", name: "焼肉ホルモン 肉ぶくろ" },
