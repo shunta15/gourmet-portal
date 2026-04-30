@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# data.ts に変更がある時のみ画像URL/ローカルパスを検査する。
+set -eo pipefail
+
+if git diff --cached --name-only | grep -q '^lib/data\.ts$'; then
+  echo "lib/data.ts 変更を検出: 画像URL/パスを検査します..."
+  bash "$(git rev-parse --show-toplevel)/scripts/check-image-urls.sh"
+fi

@@ -72,6 +72,7 @@ analyst（データ取得） → analyst（仮説立案）
 5. 画像の出典を必ず把握
 6. **コード変更→commit→push→deploy→本番確認**まで完了させる
 7. 全エージェントは作業ログを `agent-teams/logs/` に保存
+8. **画像URL/パスは必ず疎通確認**: `lib/data.ts` を変更したら `npm run check:images` を通す（pre-commitフックで自動実行されるが、コミット前に手動でも回す）。404 や missing が出たら commit 禁止。Unsplash 暫定でも 200 必須
 
 ## 作業ディレクトリ
 - リサーチ: `agent-teams/research/<store_id>.md`
