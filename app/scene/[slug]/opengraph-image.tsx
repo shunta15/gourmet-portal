@@ -76,9 +76,6 @@ export default async function OG({
             gap: 32,
           }}
         >
-          <div style={{ fontSize: 160, lineHeight: 1, display: "flex" }}>
-            {s.emoji}
-          </div>
           <div
             style={{
               display: "flex",

@@ -8,6 +8,7 @@ import ShortVideos from "./ShortVideos";
 import RestaurantGrid from "./RestaurantGrid";
 import Stats from "./Stats";
 import RegionsShowcase from "./RegionsShowcase";
+import SceneSection from "./SceneSection";
 import Neighborhoods from "./Neighborhoods";
 import Footer from "./Footer";
 import { useReveal } from "@/lib/hooks";
@@ -56,6 +57,7 @@ export default function HomeClient() {
       />
       <RestaurantGrid region={region} onRegion={setRegion} />
       <Stats />
+      <SceneSection />
       <RegionsShowcase region={region} />
       {NEIGHBORHOODS.length > 0 && <Neighborhoods />}
       <Footer />

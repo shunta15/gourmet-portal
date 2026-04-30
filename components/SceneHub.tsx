@@ -19,12 +19,15 @@ export default function SceneHub({ scene }: { scene: Scene }) {
   );
 
   const otherScenes = SCENES.filter((s) => s.slug !== scene.slug);
+  const sceneNo = SCENES.findIndex((s) => s.slug === scene.slug) + 1;
 
   return (
     <div className="feat-page">
       <section className="scene-hero">
         <div className="scene-hero-inner">
-          <div className="scene-emoji">{scene.emoji}</div>
+          <div className="scene-no">
+            No.{String(sceneNo).padStart(2, "0")}
+          </div>
           <div
             style={{
               font: "500 11px/1 var(--mono)",
@@ -160,21 +163,26 @@ export default function SceneHub({ scene }: { scene: Scene }) {
             </h2>
           </div>
           <div className="scene-list">
-            {otherScenes.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/scene/${s.slug}`}
-                className="scene-card"
-                data-cursor="ENTER"
-              >
-                <div className="emoji">{s.emoji}</div>
-                <div className="info">
-                  <div className="name">{s.name}</div>
-                  <div className="tagline">{s.tagline}</div>
-                </div>
-                <div className="arrow">→</div>
-              </Link>
-            ))}
+            {otherScenes.map((s) => {
+              const no = SCENES.findIndex((x) => x.slug === s.slug) + 1;
+              return (
+                <Link
+                  key={s.slug}
+                  href={`/scene/${s.slug}`}
+                  className="scene-card"
+                  data-cursor="ENTER"
+                >
+                  <div className="no">
+                    {String(no).padStart(2, "0")}
+                  </div>
+                  <div className="info">
+                    <div className="name">{s.name}</div>
+                    <div className="tagline">{s.tagline}</div>
+                  </div>
+                  <div className="arrow">→</div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       </div>

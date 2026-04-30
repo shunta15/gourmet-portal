@@ -37,9 +37,13 @@ export default function Nav() {
           onMouseEnter={() => setSceneOpen(true)}
           onMouseLeave={() => setSceneOpen(false)}
         >
-          <a data-cursor="PICK" style={{ cursor: "pointer" }}>
+          <Link
+            href={`/scene/${SCENES[0].slug}`}
+            data-cursor="PICK"
+            onClick={() => setSceneOpen(false)}
+          >
             シーン
-          </a>
+          </Link>
           {sceneOpen && (
             <div className="scene-dropdown">
               {SCENES.map((s) => (
@@ -48,9 +52,10 @@ export default function Nav() {
                   href={`/scene/${s.slug}`}
                   className="scene-link"
                   data-cursor="ENTER"
+                  onClick={() => setSceneOpen(false)}
                 >
-                  <span className="emoji">{s.emoji}</span>
-                  <span>{s.name}</span>
+                  <span className="name">{s.name}</span>
+                  <span className="tagline">{s.tagline}</span>
                 </Link>
               ))}
             </div>

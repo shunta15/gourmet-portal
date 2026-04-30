@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { NATIONAL } from "@/lib/data";
 import { useParallax, useTypewriter } from "@/lib/hooks";
@@ -7,22 +8,46 @@ export default function Hero() {
   const N = NATIONAL;
   const [idx, setIdx] = useState(0);
   const [inView, setInView] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const mediaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const mqMobile = window.matchMedia("(max-width: 768px)");
+    const mqReduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => {
+      setIsMobile(mqMobile.matches);
+      setReducedMotion(mqReduced.matches);
+    };
+    update();
+    mqMobile.addEventListener("change", update);
+    mqReduced.addEventListener("change", update);
+    return () => {
+      mqMobile.removeEventListener("change", update);
+      mqReduced.removeEventListener("change", update);
+    };
+  }, []);
+
+  // Mobile: 2 images only (data savings). Desktop: full set.
+  const slides = isMobile ? N.heroImages.slice(0, 2) : N.heroImages;
+
+  useEffect(() => {
+    if (slides.length <= 1) return;
+    const interval = isMobile ? 7000 : 4500;
     const t = setInterval(
-      () => setIdx((i) => (i + 1) % N.heroImages.length),
-      4500
+      () => setIdx((i) => (i + 1) % slides.length),
+      interval
     );
     return () => clearInterval(t);
-  }, [N.heroImages.length]);
+  }, [slides.length, isMobile]);
 
   useEffect(() => {
     const t = setTimeout(() => setInView(true), 80);
     return () => clearTimeout(t);
   }, []);
 
-  useParallax(mediaRef, 0.15);
+  // Disable parallax on reduced-motion or mobile.
+  useParallax(mediaRef, reducedMotion || isMobile ? 0 : 0.15);
 
   const typed = useTypewriter(
     ["北海道から沖縄まで。", "今宵、どこで食す。", "一皿ずつ、旅をする。"],
@@ -33,12 +58,22 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-media" ref={mediaRef}>
-        {N.heroImages.map((src, i) => (
+        {slides.map((src, i) => (
           <div
-            key={i}
-            className={"img " + (i === idx ? "active" : "")}
-            style={{ backgroundImage: `url(${src})` }}
-          />
+            key={src}
+            className={"img-wrap " + (i === idx ? "active" : "")}
+          >
+            <Image
+              src={src}
+              alt=""
+              fill
+              priority={i === 0}
+              fetchPriority={i === 0 ? "high" : "low"}
+              sizes="100vw"
+              quality={i === 0 ? 75 : 65}
+              style={{ objectFit: "cover", objectPosition: "center" }}
+            />
+          </div>
         ))}
       </div>
       <div className="hero-grid" />
