@@ -1,6 +1,13 @@
 export type Stat = { n: string; l: string };
 
-export type RegionKey = "tokyo" | "yokohama" | "osaka" | "nagoya";
+export type RegionKey =
+  | "tokyo"
+  | "yokohama"
+  | "osaka"
+  | "nagoya"
+  | "fukuoka"
+  | "shizuoka"
+  | "kanagawa";
 
 export type Region = {
   name: string;
@@ -174,6 +181,51 @@ export const REGIONS: Record<RegionKey, Region> = {
       "https://images.unsplash.com/photo-1627045529601-087483c43dde?w=1600&q=85",
       // 名古屋テレビ塔と栄の夜
       "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?w=1600&q=85",
+    ],
+    stats: [],
+  },
+  fukuoka: {
+    name: "福岡",
+    nameEn: "Fukuoka",
+    tagline: "屋台の灯、博多の夜",
+    subtitle: "中洲、博多、長浜 ――― 一杯の屋台から、一夜の路地まで。",
+    intro:
+      "ラーメンや焼き鳥、もつ鍋だけが福岡じゃない。長浜の鮮魚、博多の駅前、中洲の路地裏 ――― 夜の選択肢が尽きない街。",
+    heroImages: [
+      // 日本の街角・もんじゃ店構え
+      "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=1600&q=85",
+      // 路地裏の赤提灯
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85",
+    ],
+    stats: [],
+  },
+  shizuoka: {
+    name: "静岡",
+    nameEn: "Shizuoka",
+    tagline: "海と山、温泉と。",
+    subtitle: "伊豆、熱海、富士山麓 ――― 風土に寄り添う一軒が、点在する。",
+    intro:
+      "海と山と温泉と、自然が日常の隣にある県。観光地の裏路地で、地元客と旅人が同じカウンターに並ぶ ――― 風通しのいい空気が、静岡の食の根。",
+    heroImages: [
+      // 富士山と桜
+      "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1600&q=85",
+      // 桜のクローズアップ
+      "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=1600&q=85",
+    ],
+    stats: [],
+  },
+  kanagawa: {
+    name: "神奈川",
+    nameEn: "Kanagawa",
+    tagline: "湖畔の珈琲、丘の上の一軒",
+    subtitle: "相模原、湘南、川崎 ――― 横浜の隣で、自分の時間を取り戻せる場所。",
+    intro:
+      "横浜から少し足を伸ばすと、湖、丘、川。神奈川には、都市と自然が同居する場所が点在する。一杯の珈琲のために訪れる価値のある一軒が、ここに。",
+    heroImages: [
+      // 箱根芦ノ湖の鳥居
+      "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=1600&q=85",
+      // 湖畔の山岳村落
+      "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?w=1600&q=85",
     ],
     stats: [],
   },
