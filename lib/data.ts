@@ -171,7 +171,7 @@ export const REGIONS: Record<RegionKey, Region> = {
       "味噌煮込みやひつまぶしだけの街じゃない。商店街の角に灯る町場のイタリアン、住宅地に佇む居酒屋。中京エリアの夜は、想像より懐が広い。",
     heroImages: [
       // 名古屋駅前夜景
-      "https://images.unsplash.com/photo-1583404488259-ce0c10dd80a3?w=1600&q=85",
+      "https://images.unsplash.com/photo-1627045529601-087483c43dde?w=1600&q=85",
       // 名古屋テレビ塔と栄の夜
       "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?w=1600&q=85",
     ],
@@ -180,7 +180,7 @@ export const REGIONS: Record<RegionKey, Region> = {
 };
 
 const RES_GALLERY_FALLBACK = [
-  "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=1200&q=80",
+  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
   "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=1200&q=80",
   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80",
 ];
@@ -393,18 +393,18 @@ export const RESTAURANTS: Restaurant[] = [
     rating: "3.05",
     shape: "wide",
     image:
-      "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f9a?w=1600&q=85",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=85",
     heroImages: [
-      "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f9a?w=1600&q=85",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=85",
       "https://images.unsplash.com/photo-1567337710282-00832b415979?w=1600&q=85",
-      "https://images.unsplash.com/photo-1546630392-db2375bc8169?w=1600&q=85",
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=85",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f9a?w=1600&q=85",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=85",
       "https://images.unsplash.com/photo-1567337710282-00832b415979?w=1600&q=85",
-      "https://images.unsplash.com/photo-1546630392-db2375bc8169?w=1600&q=85",
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=85",
       "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=1200&q=80",
-      "https://images.unsplash.com/photo-1532634726-8b9fb99825af?w=1200&q=80",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
     ],
     desc: "大阪メトロ緑橋駅から徒歩5分、城東区中浜の住宅街に佇む手羽先の居酒屋。カウンター席は一人飲み歓迎。最大30名までの貸切対応で、平日サク飲みから週末の宴会まで幅広く受ける、城東の日常使いの一軒。",
     address: "大阪府大阪市城東区中浜2-16-13",
