@@ -55,7 +55,7 @@ export default function HomeClient() {
           "全国を、舌で歩く。",
         ]}
       />
-      <RestaurantGrid region={region} onRegion={setRegion} />
+      <RestaurantGrid />
       <Stats />
       <SceneSection />
       <RegionsShowcase region={region} />

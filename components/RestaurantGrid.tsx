@@ -3,20 +3,20 @@ import { useState } from "react";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 import RestaurantCard from "./RestaurantCard";
 
-export default function RestaurantGrid({
-  region,
-  onRegion,
-}: {
-  region: RegionKey;
-  onRegion: (r: RegionKey) => void;
-}) {
-  const R = REGIONS[region];
+type RegionFilter = RegionKey | "ALL";
+
+export default function RestaurantGrid() {
+  const [region, setRegion] = useState<RegionFilter>("ALL");
   const [cuisine, setCuisine] = useState("ALL");
-  const regional = RESTAURANTS.filter((r) => r.region === region);
+  const regional =
+    region === "ALL"
+      ? RESTAURANTS
+      : RESTAURANTS.filter((r) => r.region === region);
   const cuisines = ["ALL", ...new Set(regional.map((r) => r.cuisine))];
   const filtered = regional.filter(
     (r) => cuisine === "ALL" || r.cuisine === cuisine
   );
+  const regionLabel = region === "ALL" ? "全国" : REGIONS[region].name;
   return (
     <section className="restaurants">
       <div>
@@ -41,13 +41,24 @@ export default function RestaurantGrid({
           <div className="filter-group">
             <div className="filter-label">◎ 地域</div>
             <div className="chips">
+              <button
+                type="button"
+                className={"chip " + (region === "ALL" ? "on" : "")}
+                onClick={() => {
+                  setRegion("ALL");
+                  setCuisine("ALL");
+                }}
+                data-cursor="PICK"
+              >
+                全国
+              </button>
               {Object.entries(REGIONS).map(([k, r]) => (
                 <button
                   key={k}
                   type="button"
                   className={"chip " + (k === region ? "on" : "")}
                   onClick={() => {
-                    onRegion(k as RegionKey);
+                    setRegion(k as RegionKey);
                     setCuisine("ALL");
                   }}
                   data-cursor="PICK"
@@ -78,7 +89,7 @@ export default function RestaurantGrid({
               <em>{filtered.length}</em> / {regional.length} 店
             </div>
             <div className="fm-tag">
-              {R.name} ·{" "}
+              {regionLabel} ·{" "}
               {cuisine === "ALL"
                 ? "全業種"
                 : cuisine.split(" / ")[1] || cuisine}
