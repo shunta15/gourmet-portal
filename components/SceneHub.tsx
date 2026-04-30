@@ -116,7 +116,7 @@ export default function SceneHub({ scene }: { scene: Scene }) {
           </div>
 
           {matched.length > 0 ? (
-            <div className="rest-grid">
+            <div className="rest-grid rest-grid--uniform">
               {matched.map((r) => (
                 <RestaurantCard key={r.id} r={r} />
               ))}
