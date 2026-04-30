@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# マチノワ運用チーム（10名構成）
+# マチノワ運用チーム（11名構成）
 
 ## チーム構成
 
@@ -13,7 +13,8 @@
 | **machinowa-photo-curator** | 画像取得・選定・heroImages/gallery編成 |
 | **machinowa-designer** | UI/CSS/タイポ/レスポンシブ |
 | **machinowa-builder** | data.ts更新・実装・ビルド・デプロイ |
-| **machinowa-auditor** | 事実監査・デザイン監査・本番確認 |
+| **machinowa-auditor** | 事実監査（事実誤認・誇張・リンク切れ・画像URL疎通・出典）|
+| **machinowa-visual-auditor** | **視覚監査専任。本番デプロイ後に各主要ページを実機相当幅でscreenshot撮影し、レイアウト崩れ・サイズ不一致・タイポ崩れ・画像表示・余白・カラー逸脱・モバイル崩れを検知する** |
 
 ### 戦略チーム（企画・SEO・分析）
 | エージェント | 責務 |
@@ -31,7 +32,8 @@
 ```
 researcher → writer + photo-curator（並列）
            → builder → auditor + seo（並列）
-           → builder（最終デプロイ）→ manager 報告
+           → builder（最終デプロイ）→ visual-auditor（実機screenshot確認）
+           → manager 報告
 ```
 
 ### 特集記事の作成
@@ -42,13 +44,14 @@ editorial（企画立案・構成）
   → photo-curator（特集ヒーロー）
   → seo（タイトル/メタ/JSON-LD）
   → builder（FEATURE_ARTICLES 追加・実装）
-  → auditor（事実+表示監査）
-  → builder（デプロイ）→ manager 報告
+  → auditor（事実+リンク監査）
+  → builder（デプロイ）→ visual-auditor（screenshot確認）
+  → manager 報告
 ```
 
 ### UI/UX改善
 ```
-designer → builder → auditor → manager
+designer → builder → auditor（コード規約） → visual-auditor（実機確認）→ manager
 ```
 
 ### SEO改善
@@ -73,6 +76,8 @@ analyst（データ取得） → analyst（仮説立案）
 6. **コード変更→commit→push→deploy→本番確認**まで完了させる
 7. 全エージェントは作業ログを `agent-teams/logs/` に保存
 8. **画像URL/パスは必ず疎通確認**: `lib/data.ts` を変更したら `npm run check:images` を通す（pre-commitフックで自動実行されるが、コミット前に手動でも回す）。404 や missing が出たら commit 禁止。Unsplash 暫定でも 200 必須
+9. **本番デプロイ後、視覚崩れがありうる変更（CSS/レイアウト/データ追加/画像差し替え/コンポーネント修正）は必ず visual-auditor を通す**。実機相当幅（375 / 768 / 1280px）で本番URLを screenshot し、レイアウト崩れ・サイズ不一致・タイポ崩れ・画像表示・余白・カラー逸脱・モバイル崩れを目視確認。ヒトの「目」抜きの完了報告は禁止
+10. **「class が HTML に出ている」「200 が返る」「TypeScript が通った」のいずれも、視覚確認の代替にはならない**。CSS minifier の最適化バグ等で実画面が壊れる事故が実際に発生済み
 
 ## 作業ディレクトリ
 - リサーチ: `agent-teams/research/<store_id>.md`
