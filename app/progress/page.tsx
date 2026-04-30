@@ -33,6 +33,17 @@ const TARGETS: { id: string; name: string }[] = [
   { id: "r22", name: "Michikusa Coffee Brewers" },
   { id: "r23", name: "上町珈琲" },
   { id: "r24", name: "居酒屋天佑 せがれ" },
+  { id: "r25", name: "なごし" },
+  { id: "r26", name: "居酒屋はし幸" },
+  { id: "r27", name: "ドットカフェ" },
+  { id: "r28", name: "World Tree Tea＆Coffee -世界樹のお茶-" },
+  { id: "r29", name: "旨いもの家 あづま" },
+  { id: "r30", name: "大五郎" },
+  { id: "r31", name: "美波" },
+  { id: "r32", name: "居酒屋 十兵衛" },
+  { id: "r33", name: "鶏屋 おち合" },
+  { id: "r34", name: "縄手" },
+  { id: "r35", name: "トラットリア デッラ ノンナ" },
 ];
 
 export default function ProgressPage() {
