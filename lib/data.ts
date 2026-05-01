@@ -2,7 +2,6 @@ export type Stat = { n: string; l: string };
 
 export type RegionKey =
   | "tokyo"
-  | "yokohama"
   | "osaka"
   | "nagoya"
   | "fukuoka"
@@ -142,21 +141,6 @@ export const REGIONS: Record<RegionKey, Region> = {
     ],
     stats: [],
   },
-  yokohama: {
-    name: "横浜",
-    nameEn: "Yokohama",
-    tagline: "港の街、商店街の灯り",
-    subtitle: "六角橋、白楽、関内 ――― 港町の懐かしさと、新しさ。",
-    intro:
-      "東京の喧騒から少し離れた、港町のリズム。商店街の昭和の風情と、若い店主の新しい料理が同居する街。",
-    heroImages: [
-      // 横浜の夜景（Akinori UEMURA, Yokohama）
-      "https://images.unsplash.com/photo-1541850126775-f2839ffe3970?w=1600&q=85",
-      // 横浜・コスモワールド観覧車
-      "https://images.unsplash.com/photo-1753596119761-d3ff23ef19f2?w=1600&q=85",
-    ],
-    stats: [],
-  },
   osaka: {
     name: "大阪",
     nameEn: "Osaka",
@@ -220,15 +204,15 @@ export const REGIONS: Record<RegionKey, Region> = {
   kanagawa: {
     name: "神奈川",
     nameEn: "Kanagawa",
-    tagline: "湖畔の珈琲、丘の上の一軒",
-    subtitle: "相模原、湘南、川崎 ――― 横浜の隣で、自分の時間を取り戻せる場所。",
+    tagline: "港の灯り、湖畔の珈琲",
+    subtitle: "港町、相模原、湘南、川崎 ――― 海沿いから丘の上の一軒まで。",
     intro:
-      "横浜から少し足を伸ばすと、湖、丘、川。神奈川には、都市と自然が同居する場所が点在する。一杯の珈琲のために訪れる価値のある一軒が、ここに。",
+      "商店街の昭和の風情が残る港町、湖と丘が近い相模原、海沿いの街。神奈川には、都市と自然が同居する場所ごとに、時間の使い方まで変えてくれる一軒が点在する。",
     heroImages: [
+      // 横浜の夜景（Akinori UEMURA, Yokohama）
+      "https://images.unsplash.com/photo-1541850126775-f2839ffe3970?w=1600&q=85",
       // 箱根芦ノ湖の鳥居
       "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=1600&q=85",
-      // 湖畔の山岳村落
-      "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?w=1600&q=85",
     ],
     stats: [],
   },
@@ -306,7 +290,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "キツネノアトチ",
     cuisine: "イタリアン / ワイン食堂",
     area: "六角橋",
-    region: "yokohama",
+    region: "kanagawa",
     shape: "tall",
     image: "/restaurants/kitsune-storefront-night.jpg",
     heroImages: [
@@ -3277,6 +3261,174 @@ export const RESTAURANTS: Restaurant[] = [
       "大阪メトロ谷町線・中崎町駅から徒歩4分、北区中崎西1丁目の建物2階に「ててりあ」はある。中崎町らしい古い建物の階段を上ると、カウンターとソファ席の小さな空間が現れる。昼も夜もいる場所として、街の人に静かに親しまれてきたカフェ＆バーだ。",
       "営業は月・火・木〜日の11:30〜翌0:00（L.O.23:30）と、水曜の19:00〜翌1:00（L.O.23:30）という少し変わったスケジュール。ランチタイムからアルコールも提供しており、コーヒーや軽食で昼をつないだあと、夕方以降はカクテルやハイボールに切り替えることもできる。",
       "予算は1,000〜2,999円で、12席の席数ゆえ個人の時間を大切にしやすい。定休日は不定休のため、初訪問前に確認するのが安心。中崎町でゆっくり一人で過ごしたい昼や、静かに飲みたい夜に、気負わず立ち寄れる一軒だ。",
+    ],
+  },
+  {
+    id: "r67",
+    name: "インフィニート",
+    cuisine: "イタリアン・ピザ",
+    area: "今池",
+    region: "nagoya",
+    shape: "wide",
+    image:
+      "https://tblg.k-img.com/restaurant/images/Rvw/346456/640x640_rect_0ef030baee684dabdece5b1a684d3aa0.jpg",
+    heroImages: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/346456/640x640_rect_0ef030baee684dabdece5b1a684d3aa0.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/333670/640x640_rect_ccb96f8bc518014568cc81b69300c021.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/160291/640x640_rect_160291663.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/346452/640x640_rect_b4badb997b316d2af5ae42f39a56516e.jpg",
+    ],
+    gallery: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/346456/640x640_rect_0ef030baee684dabdece5b1a684d3aa0.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/333670/640x640_rect_ccb96f8bc518014568cc81b69300c021.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/160291/640x640_rect_160291663.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/346452/640x640_rect_b4badb997b316d2af5ae42f39a56516e.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/333670/640x640_rect_666425baf0c789780cf730e2cd20fbe6.jpg",
+    ],
+    desc: "南イタリア・アマルフィ海岸の空気を名古屋・今池で。本格ナポリピッツァと自家製フレッシュパスタが揃うリストランテ。",
+    address: "愛知県名古屋市千種区内山3-31-23 第40プロスパー 1F",
+    hours: "ランチ 11:30〜14:15（L.O. 13:45）／ディナー 17:30〜22:00（L.O. 20:45）",
+    closed: "不定休",
+    seats: "20席",
+    budget: "¥1,000〜¥1,999（昼）／¥4,000〜¥4,999（夜）",
+    nearest: "今池駅 徒歩3分",
+    phone: "052-770-7987",
+    source: {
+      label: "食べログ",
+      url: "https://tabelog.com/aichi/A2301/A230106/23067140/",
+    },
+    tags: ["ピザ", "イタリアン", "パスタ", "今池", "名古屋", "ランチ"],
+    highlights: [
+      "南イタリア・カンパーニア州の伝統を再現した本格ナポリピッツァ",
+      "自家製フレッシュパスタを含む南イタリア家庭料理",
+      "今池駅から徒歩3分、ランチ〜ディナー通し営業",
+      "20席のこぢんまりとした空間でゆっくり食事を楽しめる",
+    ],
+  },
+  {
+    id: "r68",
+    name: "PASTA屋ケンしろう 本山本店",
+    cuisine: "パスタ",
+    area: "本山",
+    region: "nagoya",
+    shape: "wide",
+    image:
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg",
+    heroImages: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/128856/640x640_rect_128856491.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759103.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759472.jpg",
+    ],
+    gallery: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/128856/640x640_rect_128856491.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759103.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759472.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/319645/640x640_rect_82bfc2e4ba7c11270730cc1549cd0fcc.jpg",
+    ],
+    desc: "本山駅から徒歩2分のパスタ専門店。豊富なメニューとリーズナブルな価格で地元に愛され続ける一軒。テイクアウトにも対応。",
+    address: "愛知県名古屋市千種区猫洞通5-17-2",
+    hours: "月〜日 11:30〜15:00（L.O. 14:30）、17:30〜21:00（L.O. 20:30）",
+    closed: "不定休",
+    seats: "37席",
+    budget: "¥1,000〜¥1,999",
+    nearest: "本山駅 徒歩2分",
+    phone: "052-757-3955",
+    source: {
+      label: "食べログ",
+      url: "https://tabelog.com/aichi/A2301/A230107/23062579/",
+    },
+    tags: ["パスタ", "本山", "名古屋", "ランチ", "テイクアウト", "一人飯"],
+    highlights: [
+      "本山駅から徒歩2分、アクセス抜群のパスタ専門店",
+      "ランチ・ディナーともに営業、テイクアウトにも対応",
+      "37席・カウンター席あり、一人でも気軽に入れる",
+      "¥1,000〜¥1,999とリーズナブルな価格設定",
+    ],
+  },
+  {
+    id: "r69",
+    name: "タヴェルナ グイダ",
+    cuisine: "イタリアン",
+    area: "名駅南",
+    region: "nagoya",
+    shape: "wide",
+    image:
+      "https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938634.jpg",
+    heroImages: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938634.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/32965/640x640_rect_32965525.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/17072/640x640_rect_17072902.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938632.jpg",
+    ],
+    gallery: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938634.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/32965/640x640_rect_32965525.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/17072/640x640_rect_17072902.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938632.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/32965/640x640_rect_32965518.jpg",
+    ],
+    desc: "120種類のワインを擁するカジュアルイタリアンバル。イタリア伝統料理に日本の旬素材を合わせたコースが人気。個室は8〜15名まで対応。",
+    address: "愛知県名古屋市中村区名駅南1-20-5 近喜第4ビル 1F",
+    hours: "月〜土 11:30〜14:00、17:30〜22:00（曜日により異なる）",
+    closed: "不定休",
+    seats: "60席",
+    budget: "¥5,000〜¥5,999（夜）",
+    nearest: "近鉄名古屋駅 徒歩約8分",
+    phone: "052-581-1005",
+    source: {
+      label: "食べログ",
+      url: "https://tabelog.com/aichi/A2301/A230101/23004505/",
+    },
+    tags: ["イタリアン", "ワイン", "名駅南", "名古屋", "個室", "宴会"],
+    highlights: [
+      "120種類のワインを揃えたカジュアルイタリアンバル",
+      "8〜15名対応の個室あり、宴会・記念日に最適",
+      "イタリア伝統技法×日本の旬食材の融合コース料理",
+      "60席・近鉄名古屋駅から徒歩約8分",
+    ],
+  },
+  {
+    id: "r70",
+    name: "藍風珈琲店",
+    cuisine: "カフェ・沖縄料理",
+    area: "尼ケ坂",
+    region: "nagoya",
+    shape: "wide",
+    image:
+      "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg",
+    heroImages: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_0c194079582ec8765f7da58e94ec4aff.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/225321/640x640_rect_12314439cbe13325b959ba467733351a.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/225321/640x640_rect_40f9414e86b7413f726d22c76e1911ce.jpg",
+    ],
+    gallery: [
+      "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_0c194079582ec8765f7da58e94ec4aff.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/225321/640x640_rect_12314439cbe13325b959ba467733351a.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/225321/640x640_rect_40f9414e86b7413f726d22c76e1911ce.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/203304/640x640_rect_5ac6cce57d8c50b518fa38cef6695174.jpg",
+    ],
+    desc: "体にやさしい沖縄家庭料理と珈琲の店。早朝7時から営業し、曜日ごとに変わるランチセットが地元で愛される。全席禁煙・駐車場完備。",
+    address: "愛知県名古屋市北区杉村1-17-10",
+    hours: "火〜日 07:00〜17:00（木曜は〜14:00）",
+    closed: "月曜日、月1回日曜日（不定）",
+    seats: "21席",
+    budget: "〜¥1,999",
+    nearest: "尼ケ坂駅 徒歩約7分",
+    phone: "052-913-7741",
+    source: {
+      label: "食べログ",
+      url: "https://tabelog.com/aichi/A2301/A230110/23003923/",
+    },
+    tags: ["カフェ", "沖縄料理", "尼ケ坂", "名古屋", "モーニング", "ランチ"],
+    highlights: [
+      "早朝7時オープン、モーニングから利用できる",
+      "体にやさしい沖縄家庭料理が日替わりランチで楽しめる",
+      "全席禁煙・駐車場完備でファミリーにも安心",
+      "月曜定休、21席のアットホームな雰囲気",
     ],
   },
 ];
