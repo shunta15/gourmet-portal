@@ -95,10 +95,11 @@ grep 'id: "r67"' lib/data.ts
 ```
 
 ### 現在の状態（更新すること）
-- **最終ID: r183**（麺処やのや / 広島市南区宇品）
-- **次のID: r184**
-- **挿入点: `];` 直前（約7,000 行）**
-- **掲載店舗数: 172店舗**（欠番: r11・r26・r29・r98・r102・r109・r114・r119・r122・r136・r139）
+- **最終ID: r240**（和心イタリアン Hitotsu / 大阪府堺市中区）
+- **次のID: r241**
+- **挿入点: `];` 直前（約8,700 行）**
+- **掲載店舗数: 229店舗**（欠番: r11・r26・r29・r98・r102・r109・r114・r119・r122・r136・r139）
+- **Region: 16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）
 
 ---
 

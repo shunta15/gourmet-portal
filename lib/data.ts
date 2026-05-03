@@ -371,15 +371,15 @@ export const RESTAURANTS: Restaurant[] = [
     area: "南麻布",
     region: "tokyo",
     shape: "wide",
-    image: "/restaurants/yakitori-shimaya-hero.webp",
+    image: "/restaurants/yakitori-shimaya-3.jpg",
     heroImages: [
+      "/restaurants/yakitori-shimaya-3.jpg",
       "/restaurants/yakitori-shimaya-hero.webp",
       "/restaurants/yakitori-shimaya-table.jpg",
       "/restaurants/yakitori-shimaya-2.jpg",
-      "/restaurants/yakitori-shimaya-3.jpg",
     ],
     gallery: [
-      "/restaurants/yakitori-shimaya-hero.webp",
+      "/restaurants/yakitori-shimaya-3.jpg",
       "/restaurants/yakitori-shimaya-table.jpg",
       "/restaurants/yakitori-shimaya-skewer-wasabi.jpg",
       "/restaurants/yakitori-shimaya-skewers.jpg",
@@ -571,16 +571,16 @@ export const RESTAURANTS: Restaurant[] = [
     region: "osaka",
     rating: "3.05",
     shape: "wide",
-    image: "/restaurants/r05/r05-tebasaki-platter.jpg",
+    image: "/restaurants/r05/r05-counter.jpg",
     heroImages: [
-      "/restaurants/r05/r05-tebasaki-platter.jpg",
       "/restaurants/r05/r05-counter.jpg",
       "/restaurants/r05/r05-tables.jpg",
+      "/restaurants/r05/r05-tebasaki-platter.jpg",
       "/restaurants/r05/r05-tebasaki-fried.jpg",
     ],
     gallery: [
-      "/restaurants/r05/r05-tebasaki-platter.jpg",
       "/restaurants/r05/r05-counter.jpg",
+      "/restaurants/r05/r05-tebasaki-platter.jpg",
       "/restaurants/r05/r05-tables.jpg",
       "/restaurants/r05/r05-table-4seat.jpg",
       "/restaurants/r05/r05-tebasaki-fried.jpg",
@@ -677,15 +677,15 @@ export const RESTAURANTS: Restaurant[] = [
     region: "nagoya",
     rating: "3.66",
     shape: "tall",
-    image: "/restaurants/r07/r07-dandan-1.jpg",
+    image: "/restaurants/r07/r07-storefront.jpg",
     heroImages: [
-      "/restaurants/r07/r07-dandan-1.jpg",
       "/restaurants/r07/r07-storefront.jpg",
+      "/restaurants/r07/r07-dandan-1.jpg",
       "/restaurants/r07/r07-interior-tables.jpg",
       "/restaurants/r07/r07-dandan-set.jpg",
     ],
     gallery: [
-      "/restaurants/r07/r07-dandan-1.jpg",
+      "/restaurants/r07/r07-storefront.jpg",
       "/restaurants/r07/r07-dandan-set.jpg",
       "/restaurants/r07/r07-dandan-soup.jpg",
       "/restaurants/r07/r07-dandan-noodle.jpg",
@@ -735,17 +735,17 @@ export const RESTAURANTS: Restaurant[] = [
     region: "nagoya",
     rating: "3.60",
     shape: "tall",
-    image: "/restaurants/r08/r08-hero-sushi-roll.jpg",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg",
     heroImages: [
-      "/restaurants/r08/r08-hero-sushi-roll.jpg",
-      "/restaurants/r08/r08-sushi-platter.jpg",
-      "/restaurants/r08/r08-donburi-bowl.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/299883/640x640_rect_8ec646b2747e9c2969a13d81741b9f50.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/340105/640x640_rect_544dcca7f55e2e58d5960ea90525aff3.jpg",
     ],
     gallery: [
-      "/restaurants/r08/r08-hero-sushi-roll.jpg",
-      "/restaurants/r08/r08-sushi-platter.jpg",
-      "/restaurants/r08/r08-donburi-bowl.jpg",
-      "/restaurants/r08/r08-gyoza.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/299883/640x640_rect_8ec646b2747e9c2969a13d81741b9f50.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/340105/640x640_rect_544dcca7f55e2e58d5960ea90525aff3.jpg",
+      "https://tblg.k-img.com/restaurant/images/Rvw/340105/640x640_rect_ecd9a1b624fc7ae0613f2d19a5e1265f.jpg",
     ],
     desc: "名古屋・千種区の池下駅から徒歩5分。チサンマンション1階に佇む和食創作の居酒屋。カウンター6席とテーブル22席で、季節の刺身・揚げ物・一品料理を、銘酒とともに気軽に味わえる。",
     address: "愛知県名古屋市千種区池下1-6-20 チサンマンション1F",
@@ -3727,7 +3727,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "隠れ家 和バル かぎろひ",
     cuisine: "居酒屋・和バル",
     area: "岡場",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://tblg.k-img.com/restaurant/images/Rvw/345532/640x640_rect_09f0466dc489d42a445c6a149be0b556.jpg",
@@ -3769,7 +3769,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "神戸ミートバンク",
     cuisine: "焼肉",
     area: "三宮",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg",
@@ -3811,7 +3811,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "New York Garden Place hug",
     cuisine: "カフェ・パスタ",
     area: "六甲道",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg",
@@ -3853,7 +3853,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "サン珈琲 舞子店",
     cuisine: "喫茶店",
     area: "西舞子",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://tblg.k-img.com/restaurant/images/Rvw/208558/640x640_rect_431adf6d45b4f7ca70f02002f55c510c.jpg",
@@ -4020,7 +4020,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "菜々cafe",
     cuisine: "カフェ・和食",
     area: "神戸市北区",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg",
@@ -4062,7 +4062,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ちょびぽっぽ",
     cuisine: "カフェ・カレー",
     area: "垂水",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image:
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format",
@@ -4142,7 +4142,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "垂水炭火肉焼 網舞（Mo-bu）",
     cuisine: "焼肉",
     area: "垂水",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/356955/640x640_rect_c4ef95d9aaa19f66a39bd29702a2e237.jpg",
     heroImages: [
@@ -4473,7 +4473,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "わさびと魚",
     cuisine: "海鮮",
     area: "元町",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/311353/640x640_rect_f78ce16fc5ec36fe804e8905bee45909.jpg",
     heroImages: [
@@ -4515,7 +4515,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "めしと酒 ばんざい",
     cuisine: "居酒屋",
     area: "長田",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg",
     heroImages: [
@@ -4594,7 +4594,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ぎゅんた",
     cuisine: "お好み焼き・鉄板焼き",
     area: "神戸市灘区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/176705/640x640_rect_9731f0cb0cfe3206c138046a6ab8c082.jpg",
     heroImages: [
@@ -4705,7 +4705,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "うどん処 和心鶴々",
     cuisine: "うどん・カフェ",
     area: "神戸市須磨区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/355406/640x640_rect_0613760bf236b9feb7cbd2b90fb057ed.jpg",
     heroImages: [
@@ -4742,7 +4742,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "焼き鳥 華灯 ～はなび～",
     cuisine: "焼鳥・居酒屋",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/332991/640x640_rect_659c639f724ce7f6c1b6df0814a52c29.jpg",
     heroImages: [
@@ -4851,7 +4851,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ぎょうざ菜館 きてや",
     cuisine: "餃子・中華",
     area: "神戸市北区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/312295/640x640_rect_c71a7ebcea6b8860b7f7a18c11c203ef.jpg",
     heroImages: [
@@ -4960,7 +4960,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ホルモン かんてき",
     cuisine: "ホルモン焼き",
     area: "神戸市兵庫区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/33399/640x640_rect_33399113.jpg",
     heroImages: [
@@ -4996,7 +4996,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "カルメン",
     cuisine: "スペイン料理",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/260454/640x640_rect_85d5880bb325f59c57bc16317b188036.jpg",
     heroImages: [
@@ -5069,7 +5069,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "とりき",
     cuisine: "炭火焼・鳥料理",
     area: "神戸市東灘区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/232446/640x640_rect_479e8476557e45d9818bccc9cbb7cf1a.jpg",
     heroImages: [
@@ -5106,7 +5106,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "Trattoria YOSORO",
     cuisine: "イタリアン・ピザ",
     area: "神戸市灘区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/288586/640x640_rect_80a763753f8dc31d0c0724b9386f025f.jpg",
     heroImages: [
@@ -5143,7 +5143,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ストロングスタイル2.9",
     cuisine: "バー・スポーツバー",
     area: "神戸市灘区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/139637/640x640_rect_139637091.jpg",
     heroImages: [
@@ -5179,7 +5179,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "gennaio ジェンナイオ",
     cuisine: "イタリアン・バル",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/335164/640x640_rect_2ba8d6ad696e67ca8a98680587861b74.jpg",
     heroImages: [
@@ -5216,7 +5216,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "RISTRATTORIA filo",
     cuisine: "イタリアン・ピザ",
     area: "神戸市須磨区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/337584/640x640_rect_05afa8c201baeae03badffaccaaaa558.jpg",
     heroImages: [
@@ -5253,7 +5253,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "カイノクチ",
     cuisine: "薬膳粥・貝割烹",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg",
     heroImages: [
@@ -5290,7 +5290,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "ル・セルクル",
     cuisine: "フレンチ・イタリアン",
     area: "神戸市東灘区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg",
     heroImages: [
@@ -5364,7 +5364,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "勇すし",
     cuisine: "鮨・日本料理",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg",
     heroImages: [
@@ -5437,7 +5437,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "YASUKO'S KITCHEN",
     cuisine: "中国料理・広東料理",
     area: "神戸市中央区",
-    region: "osaka",
+    region: "hyogo",
     shape: "square",
     image: "https://tblg.k-img.com/restaurant/images/Rvw/227602/640x640_rect_91b10ed2af9882bb93b94f18f6d16282.jpg",
     heroImages: [
@@ -5473,7 +5473,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: "バールコソアド",
     cuisine: "イタリアン・ダイニングバー",
     area: "神戸市長田区",
-    region: "osaka",
+    region: "hyogo",
     shape: "wide",
     image: "https://ximg.retty.me/crop/s1200x800/q80/das/-/retty/img_ebisu/restaurant/100001766847/archive/3516728-67a719eab9dd4.jpg",
     heroImages: [
