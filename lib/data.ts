@@ -1232,7 +1232,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ004402380/",
     },
-    tags: ["居酒屋", "おでん", "海鮮", "テラス席", "ペット可", "宴会"],
+    tags: ["居酒屋", "おでん", "海鮮", "テラス席", "ペット可", "宴会", "ランチ"],
     highlights: [
       "秘伝のタレで二度揚げした鶏の唐揚げ（500円）が店内人気No.1",
       "カウンター・テーブル・ペット可テラス席の3シーン、10名以上で貸切可",
@@ -1328,7 +1328,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ003559994/",
     },
-    tags: ["ベトナム料理", "エスニック", "個室", "デート", "記念日", "テラス席"],
+    tags: ["ベトナム料理", "エスニック", "個室", "デート", "記念日", "テラス席", "ランチ"],
     highlights: [
       "来店客の約9割が注文する生春巻（ゴイクン）が創業20年来の看板",
       "完全個室（最大10名）・テラス席（ペット可、喫煙可）あり",
@@ -1508,7 +1508,7 @@ export const RESTAURANTS: Restaurant[] = [
     reservationUrl: "https://www.hotpepper.jp/strJ001232100/",
     instagram: "https://www.instagram.com/tenyu_segare/",
     source: { label: "ホットペッパーグルメ", url: "https://www.hotpepper.jp/strJ001232100/" },
-    tags: ["居酒屋", "餃子", "お造り", "天ぷら", "天満", "土日昼飲み"],
+    tags: ["居酒屋", "餃子", "お造り", "天ぷら", "天満", "土日昼飲み", "ランチ"],
     highlights: [
       "旧「餃子がぎょうさん 天佑」。実家の味を再現した中身ぎっしりの手作り餃子が看板",
       "手作りラー油・酢こしょうで味変。お造り・天ぷらなど居酒屋メニューも幅広い",
@@ -1687,7 +1687,7 @@ export const RESTAURANTS: Restaurant[] = [
     instagram: "https://www.instagram.com/daigorou0426/",
     rating: "3.31",
     source: { label: "食べログ", url: "https://tabelog.com/en/osaka/A2701/A270202/27135888/" },
-    tags: ["居酒屋", "牡蠣", "海鮮", "秋田地酒", "なんば", "全席禁煙", "昼飲み", "鍋"],
+    tags: ["居酒屋", "牡蠣", "海鮮", "秋田地酒", "なんば", "全席禁煙", "昼飲み", "鍋", "日本酒"],
     highlights: [
       "牡蠣専門店「佐々木孫べぇ」姉妹店。生牡蠣・蒸し牡蠣を通年提供",
       "看板の牡蠣の辛鍋コース（¥5,500〜）と期間限定の牡蠣10ピース¥1,500がコスパで人気",
@@ -1732,7 +1732,7 @@ export const RESTAURANTS: Restaurant[] = [
     reservationUrl: "https://www.hotpepper.jp/strJ001162938/yoyaku/",
     rating: "3.27",
     source: { label: "食べログ", url: "https://tabelog.com/aichi/A2301/A230103/23090270/" },
-    tags: ["居酒屋", "海鮮", "焼き鳥", "日本酒", "名古屋・錦", "チキンカツ", "隠れ家"],
+    tags: ["居酒屋", "海鮮", "焼き鳥", "日本酒", "名古屋・錦", "チキンカツ", "隠れ家", "ランチ"],
     highlights: [
       "塩麹と蜂蜜で一晩寝かせたチキンカツ（583円）が看板の手作り料理",
       "毎日市場直仕入れの旬魚と限定日本酒10種が常時入れ替わり",
@@ -1777,7 +1777,7 @@ export const RESTAURANTS: Restaurant[] = [
     reservationUrl: "https://www.hotpepper.jp/strJ003559001/yoyaku/",
     rating: "3.35",
     source: { label: "食べログ", url: "https://tabelog.com/osaka/A2701/A270201/27092542/" },
-    tags: ["居酒屋", "焼き鳥", "串かつ", "おでん", "堺筋本町", "南船場", "コスパ"],
+    tags: ["居酒屋", "焼き鳥", "串かつ", "おでん", "堺筋本町", "南船場", "コスパ", "ランチ"],
     highlights: [
       "鳥取産ブランド鶏「がいな鶏」の炭火焼き鳥・一枚焼きが看板",
       "串かつ・おでんも揃うオールラウンドな居酒屋メニュー",
@@ -1823,7 +1823,7 @@ export const RESTAURANTS: Restaurant[] = [
     instagram: "https://www.instagram.com/toriya_ochiai/",
     rating: "3.16",
     source: { label: "食べログ", url: "https://tabelog.com/osaka/A2701/A270304/27132593/" },
-    tags: ["焼き鳥", "鶏割烹", "地鶏", "黒さつま鶏", "野江内代", "城東区", "禁煙"],
+    tags: ["焼き鳥", "鶏割烹", "地鶏", "黒さつま鶏", "野江内代", "城東区", "禁煙", "ランチ"],
     highlights: [
       "鹿児島産「黒さつま鶏」を牧場から直仕入れ。焼き鳥と和食を融合した鶏割烹",
       "鶏たたき（黒さつま鶏）・親子丼（さつま若しゃも）が看板の逸品",
@@ -1913,7 +1913,7 @@ export const RESTAURANTS: Restaurant[] = [
     instagram: "https://www.instagram.com/trattoria_della_nonna/",
     rating: "3.39",
     source: { label: "食べログ", url: "https://tabelog.com/osaka/A2701/A270102/27104244/" },
-    tags: ["イタリアン", "マルケ州", "郷土料理", "ワイン", "肥後橋", "高麗橋", "隠れ家"],
+    tags: ["イタリアン", "マルケ州", "郷土料理", "ワイン", "肥後橋", "高麗橋", "隠れ家", "ランチ"],
     highlights: [
       "マルケ州ミシュラン一つ星で修業した七里健太シェフが2018年開業",
       "ポルケッタ（豚バラロール焼き）・ストロッツァプレーティ（手打ちショートパスタ）が看板",
@@ -2088,7 +2088,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "大阪メトロ中央線 九条駅 徒歩4分",
     instagram: "https://www.instagram.com/udon_2022/",
     source: { label: "公式サイト", url: "https://1000udon.com/" },
-    tags: ["うどん", "手打ち", "国産小麦", "九条", "西区", "ランチ"],
+    tags: ["うどん", "手打ち", "国産小麦", "九条", "西区", "ランチ", "そば・うどん"],
     highlights: [
       "国産小麦100%の自家製麺。圧力鍋仕込みでモチモチに仕上げる手打ちうどん",
       "天然出汁にこだわった一杯。化学調味料に頼らない透明感のあるつゆ",
@@ -2132,7 +2132,7 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "06-6195-7598",
     reservationUrl: "https://www.hotpepper.jp/strJ003365911/",
     source: { label: "公式サイト", url: "https://comfortzone8kyoitarian.com/" },
-    tags: ["イタリアン", "京野菜", "十三", "淀川区", "女子会", "ロングピザ"],
+    tags: ["イタリアン", "京野菜", "十三", "淀川区", "女子会", "ロングピザ", "ランチ"],
     highlights: [
       "2022年開業。十三バイパス沿いの落ち着いた京野菜イタリアン",
       "京都市場直送の旬野菜を主役に。京野菜パスタ・京野菜ピザが看板",
@@ -2221,7 +2221,7 @@ export const RESTAURANTS: Restaurant[] = [
     reservationUrl: "https://www.hotpepper.jp/strJ004470559/",
     instagram: "https://www.instagram.com/hibino_kudamono/",
     source: { label: "食べログ", url: "https://tabelog.com/aichi/A2301/A230101/23094197/" },
-    tags: ["フルーツパーラー", "カフェ", "名駅", "西区", "老舗", "パフェ", "生ジュース"],
+    tags: ["フルーツパーラー", "カフェ", "名駅", "西区", "老舗", "パフェ", "生ジュース", "ランチ"],
     highlights: [
       "1953年創業の老舗果物店が運営するフルーツパーラー。72年の目利きが選ぶ旬の果実",
       "本格生ジュースとフルーツパフェが看板。ランチメニューにも果物が随所に登場",
@@ -2264,7 +2264,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "JR京浜東北線・湘南新宿ライン 浦和駅 西口 徒歩圏",
     phone: "048-711-8116",
     source: { label: "公式サイト", url: "https://watsuki2018.com/" },
-    tags: ["和食", "居酒屋", "浦和", "日本酒", "旬の料理"],
+    tags: ["和食", "居酒屋", "浦和", "日本酒", "旬の料理", "ランチ"],
     highlights: [
       "JR浦和駅から徒歩圏、岸町の蓮見ビル1Fの和食居酒屋",
       "四季折々の旬を活かす日替わり一品料理。仕入れで変わるメニューが楽しい",
@@ -2352,7 +2352,7 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "052-919-2525",
     reservationUrl: "https://www.hotpepper.jp/strJ000401440/",
     source: { label: "食べログ", url: "https://tabelog.com/aichi/A2301/A230110/23003324/" },
-    tags: ["海鮮", "魚料理", "居酒屋", "黒川", "北区", "個室", "宴会"],
+    tags: ["海鮮", "魚料理", "居酒屋", "黒川", "北区", "個室", "宴会", "ランチ"],
     highlights: [
       "名古屋市営地下鉄 黒川駅徒歩圏、黒川ガスプラザB1Fの大人の和みダイニング",
       "産直の鮮魚を活かす創作料理が看板。お造り・寿司・煮魚・揚げ物まで幅広く",
@@ -2482,7 +2482,7 @@ export const RESTAURANTS: Restaurant[] = [
     reservationUrl: "https://www.hotpepper.jp/strJ003923002/",
     instagram: "https://www.instagram.com/yoishiba_tanimachi6/",
     source: { label: "食べログ", url: "https://tabelog.com/osaka/A2701/A270204/27145335/" },
-    tags: ["春巻き", "よだれ鶏", "居酒屋", "犬同伴可", "ペット可", "谷町六丁目", "創作中華"],
+    tags: ["春巻き", "よだれ鶏", "居酒屋", "犬同伴可", "ペット可", "谷町六丁目", "創作中華", "ランチ"],
     highlights: [
       "黒柴店長「ごま」が看板の犬同伴OK居酒屋。テラス席に大型犬まで入店可",
       "創作春巻きとよだれ鶏デラックスが看板。海鮮や牛・豚も贅沢に使う一皿",
@@ -2614,7 +2614,7 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "06-6370-4260",
     rating: "3.16",
     source: { label: "食べログ", url: "https://tabelog.com/en/osaka/A2701/A270307/27029974/" },
-    tags: ["喫茶店", "モーニング", "淡路", "東淀川区", "老舗", "現金のみ"],
+    tags: ["喫茶店", "モーニング", "淡路", "東淀川区", "老舗", "現金のみ", "ランチ"],
     highlights: [
       "阪急淡路駅 徒歩2分の老舗喫茶店。地元の日常を支える日本の喫茶文化",
       "9:00〜11:00の朝食メニューが看板。長時間営業で午後の長居にも対応",
@@ -3029,7 +3029,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "食べログ",
       url: "https://tabelog.com/saitama/A1104/A110401/11056531/",
     },
-    tags: ["居酒屋", "海鮮", "上尾", "一人飲み", "昼飲み"],
+    tags: ["居酒屋", "海鮮", "上尾", "一人飲み", "昼飲み", "ランチ"],
     highlights: [
       "上尾市役所裏に2021年春オープンの海鮮居酒屋",
       "11:00〜翌0:00の通し営業、昼飲みにも対応",
@@ -3505,7 +3505,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "食べログ",
       url: "https://tabelog.com/aichi/A2301/A230101/23004505/",
     },
-    tags: ["イタリアン", "ワイン", "名駅南", "名古屋", "個室", "宴会"],
+    tags: ["イタリアン", "ワイン", "名駅南", "名古屋", "個室", "宴会", "ランチ"],
     highlights: [
       "120種類のワインを揃えたカジュアルイタリアンバル",
       "8〜15名対応の個室あり、宴会・記念日に最適",
@@ -3714,7 +3714,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "食べログ",
       url: "https://tabelog.com/saitama/A1102/A110201/11001826/",
     },
-    tags: ["イタリアン", "ピザ", "ワイン", "川口", "埼玉", "禁煙"],
+    tags: ["イタリアン", "ピザ", "ワイン", "川口", "埼玉", "禁煙", "ランチ"],
     highlights: [
       "カプート社小麦粉を使用した本格ナポリピザ",
       "完全禁煙の落ち着いた隠れ家イタリアン",
@@ -3923,7 +3923,7 @@ export const RESTAURANTS: Restaurant[] = [
       label: "食べログ",
       url: "https://tabelog.com/saitama/A1101/A110103/11062929/",
     },
-    tags: ["ラーメン", "鶏そば", "岩槻", "埼玉", "淡麗系"],
+    tags: ["ラーメン", "鶏そば", "岩槻", "埼玉", "淡麗系", "ランチ"],
     highlights: [
       "淡麗鶏そばを看板に据えた2024年オープンの新店",
       "特製鶏そば¥1,200が人気ナンバーワン",
@@ -4250,7 +4250,7 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜¥5,999",
     nearest: "地下鉄鶴舞線 浄心駅より徒歩3分",
     phone: "052-532-6262",
-    tags: ["イタリアン", "オステリア", "浄心", "名古屋"],
+    tags: ["イタリアン", "オステリア", "浄心", "名古屋", "ランチ"],
     highlights: [
       "毎朝市場から仕入れる新鮮食材を使用",
       "その日のおすすめが記された黒板メニュー",
@@ -4292,7 +4292,7 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜¥1,999",
     nearest: "JR高槻駅より徒歩4分",
     phone: "072-600-2081",
-    tags: ["ラーメン", "高槻", "こだわり", "深夜営業"],
+    tags: ["ラーメン", "高槻", "こだわり", "深夜営業", "ランチ"],
     highlights: [
       "8席のみの小さな専門店でこだわりの一杯",
       "JR高槻駅から徒歩4分のアクセス",
@@ -4371,7 +4371,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "8",
     budget: "¥1,000〜¥1,999",
     nearest: "JR平塚駅より徒歩約10分",
-    tags: ["ラーメン", "手打ち", "平塚", "神奈川"],
+    tags: ["ラーメン", "手打ち", "平塚", "神奈川", "ランチ"],
     highlights: [
       "8席のみ、平塚の隠れ家的手打ちラーメン店",
       "JR平塚駅から徒歩約10分の住宅街に佇む",
@@ -4497,7 +4497,7 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥5,000",
     nearest: "JR元町駅より徒歩3分",
     phone: "078-321-1300",
-    tags: ["海鮮", "天ぷら", "元町", "神戸"],
+    tags: ["海鮮", "天ぷら", "元町", "神戸", "ランチ"],
     highlights: [
       "予約不可・ウォークインのみの人気海鮮店",
       "JR元町駅から徒歩3分の好立地",
@@ -4587,7 +4587,7 @@ export const RESTAURANTS: Restaurant[] = [
       "檜カウンターとお座敷を完備",
       "接待・会食にも対応",
     ],
-    tags: ["海鮮", "日本料理", "蒲田", "大田区", "日本酒"],
+    tags: ["海鮮", "日本料理", "蒲田", "大田区", "日本酒", "ランチ"],
   },
   {
     id: "r96",
@@ -4661,7 +4661,7 @@ export const RESTAURANTS: Restaurant[] = [
       "住宅街の一軒家イタリアン",
       "日曜ディナーは完全予約制",
     ],
-    tags: ["パスタ", "イタリアン", "川越", "上福岡", "手打ちパスタ"],
+    tags: ["パスタ", "イタリアン", "川越", "上福岡", "手打ちパスタ", "ランチ"],
   },
   {
     id: "r99",
@@ -4698,7 +4698,7 @@ export const RESTAURANTS: Restaurant[] = [
       "貸切パーティーに対応",
       "ランチ・ディナーともに営業",
     ],
-    tags: ["イタリアン", "パスタ", "ピザ", "さいたま", "浦和", "貸切"],
+    tags: ["イタリアン", "パスタ", "ピザ", "さいたま", "浦和", "貸切", "ランチ"],
   },
   {
     id: "r100",
@@ -4735,7 +4735,7 @@ export const RESTAURANTS: Restaurant[] = [
       "32席・カウンターとテーブルを完備",
       "ランチのみの営業（平日〜15時）",
     ],
-    tags: ["うどん", "カフェ", "スイーツ", "神戸", "板宿", "須磨"],
+    tags: ["うどん", "カフェ", "スイーツ", "神戸", "板宿", "須磨", "ランチ", "そば・うどん"],
   },
   {
     id: "r101",
@@ -4807,7 +4807,7 @@ export const RESTAURANTS: Restaurant[] = [
       "うどん＋居酒屋メニューの融合",
       "大師前駅から徒歩4分",
     ],
-    tags: ["うどん", "居酒屋", "深夜", "足立区", "西新井", "福岡うどん"],
+    tags: ["うどん", "居酒屋", "深夜", "足立区", "西新井", "福岡うどん", "そば・うどん"],
   },
   {
     id: "r104",
@@ -4881,7 +4881,7 @@ export const RESTAURANTS: Restaurant[] = [
       "谷上駅から徒歩3分",
       "カウンター・テーブル25席",
     ],
-    tags: ["餃子", "中華", "神戸", "谷上", "北区"],
+    tags: ["餃子", "中華", "神戸", "谷上", "北区", "ランチ"],
   },
   {
     id: "r106",
@@ -5025,7 +5025,7 @@ export const RESTAURANTS: Restaurant[] = [
       "スペイン料理の老舗",
       "37席・ランチ・ディナーともに営業",
     ],
-    tags: ["スペイン料理", "タパス", "パエリア", "神戸", "三宮"],
+    tags: ["スペイン料理", "タパス", "パエリア", "神戸", "三宮", "ランチ"],
   },
   {
     id: "r111",
@@ -5062,7 +5062,7 @@ export const RESTAURANTS: Restaurant[] = [
       "接待・特別な日に最適",
       "25席・落ち着いた隠れ家空間",
     ],
-    tags: ["フレンチ", "コース料理", "志木", "埼玉", "接待", "記念日"],
+    tags: ["フレンチ", "コース料理", "志木", "埼玉", "接待", "記念日", "ランチ"],
   },
   {
     id: "r112",
@@ -7437,7 +7437,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "鞍馬口駅 341m",
     phone: "075-285-1660",
     highlights: ["石臼挽き・手打ちのこだわり蕎麦", "鞍馬口駅すぐの静かな蕎麦店", "ランチと夜の2部営業"],
-    tags: ["そば", "京都", "北区", "鞍馬口", "手打ちそば"],
+    tags: ["そば", "京都", "北区", "鞍馬口", "手打ちそば", "そば・うどん"],
   },
   {
     id: "r196",
@@ -7592,7 +7592,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "神宮丸太町駅 圏内",
     phone: "075-751-7887",
     highlights: ["台湾まぜそばと鶏白湯の専門店", "聖護院・岡崎エリアの人気ラーメン店", "濃厚なのに後味すっきりの一杯"],
-    tags: ["ラーメン", "台湾まぜそば", "鶏白湯", "京都", "左京区", "聖護院"],
+    tags: ["ラーメン", "台湾まぜそば", "鶏白湯", "京都", "左京区", "聖護院", "そば・うどん"],
   },
   {
     id: "r201",
@@ -8052,7 +8052,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "40",
     nearest: "南海堺駅 徒歩約10分",
     highlights: ["国登録有形文化財の旧煉瓦建築でコーヒーを", "長崎発JUNE COFFEEの大阪1号店", "焼きたてパンと本格コーヒーの組み合わせ"],
-    tags: ["カフェ", "ベーカリー", "大阪", "堺", "文化財"],
+    tags: ["カフェ", "ベーカリー", "大阪", "堺", "文化財", "パン"],
   },
   {
     id: "r220",
@@ -8097,7 +8097,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "30",
     nearest: "車利用推奨（湯来温泉エリア）",
     highlights: ["湯来温泉郷の素朴なうどん食堂", "もつ煮込みうどんが名物", "温泉観光とあわせて訪れたい一軒"],
-    tags: ["うどん", "定食", "広島", "佐伯区", "湯来"],
+    tags: ["うどん", "定食", "広島", "佐伯区", "湯来", "そば・うどん"],
   },
   {
     id: "r222",
@@ -8272,6 +8272,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "山陽女学園前駅",
     phone: "082-923-5551",
+    tags: ["そば", "広島", "佐伯区", "美の里", "手打ちそば", "そば・うどん", "ランチ"],
   },
   {
     id: "r228",
@@ -8418,6 +8419,7 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "下鴨生駅",
     phone: "0948-52-3379",
     instagram: "yakitatepan_warawara",
+    tags: ["パン", "ベーカリー", "福岡", "嘉麻", "焼きたて", "朝食"],
   },
   {
     id: "r233",
@@ -8447,6 +8449,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "4",
     nearest: "北野駅",
     phone: "0942-78-7624",
+    tags: ["パン", "ベーカリー", "福岡", "久留米", "北野", "地元産小麦", "朝食"],
   },
   {
     id: "r234",
@@ -8592,6 +8595,7 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "18",
     nearest: "近鉄布施駅",
     phone: "06-6781-0357",
+    tags: ["そば", "大阪", "東大阪", "布施", "手打ちそば", "石臼挽き", "そば・うどん", "ランチ"],
   },
   {
     id: "r239",
