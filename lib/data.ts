@@ -395,7 +395,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "カウンター・テーブル / 2階貸切可・テラス席有",
     nearest: "東京メトロ南北線・都営三田線 白金高輪駅 徒歩5分",
     reservationUrl: "https://www.tablecheck.com/ja/shimaya315/reserve/landing",
-    rating: "3.41",
     source: { label: "公式サイト", url: "http://www.shimaya315.com/" },
     tags: ["焼鳥", "個室", "テラス席", "ペット可", "デート", "接待"],
     highlights: [
@@ -502,7 +501,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "50席 / 個室2室（24名・8名）/ 貸切24-50名対応",
     nearest: "大阪メトロ堺筋線・谷町線・阪急千里線 天神橋筋六丁目駅 11番出口 徒歩6分",
     reservationUrl: "https://www.hotpepper.jp/strJ003474513/",
-    rating: "3.06",
     source: { label: "公式サイト", url: "https://paofuku.com/" },
     tags: ["鶏料理", "居酒屋", "京赤地鶏", "個室", "貸切可", "一人飲み", "宴会"],
     budget: "¥2,000〜¥4,000",
@@ -974,7 +972,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ ￥1,000〜￥2,000 / ディナー ￥2,000前後",
     nearest: "名鉄瀬戸線 森下駅 徒歩5分",
     reservationUrl: "https://www.hotpepper.jp/strJ003411304/yoyaku/",
-    rating: "3.44",
     source: {
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ003411304/",
@@ -1033,7 +1030,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "夜 ￥3,000〜￥3,999",
     nearest: "阪急京都線 上新庄駅 徒歩7分",
     reservationUrl: "https://www.hotpepper.jp/strJ004444109/yoyaku/",
-    rating: "3.07",
     source: {
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ004444109/",
@@ -1187,7 +1183,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "〜￥999",
     nearest: "Osaka Metro今里筋線 蒲生四丁目駅 徒歩圏",
     phone: "06-6931-4894",
-    rating: "3.20",
     source: {
       label: "大阪府商店街魅力発見サイト",
       url: "https://osaka-shotengai-info.com/shop/hakusendo/",
@@ -1425,7 +1420,6 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "080-1910-9337",
     reservationUrl: "https://www.hotpepper.jp/strJ001279581/",
     instagram: "https://www.instagram.com/michikusacoffeebrewers/",
-    rating: "3.16",
     source: { label: "ホットペッパーグルメ", url: "https://www.hotpepper.jp/strJ001279581/" },
     tags: ["カフェ", "スペシャルティコーヒー", "サイフォン", "自家焙煎", "博多", "隠れ家"],
     highlights: [
@@ -1516,7 +1510,6 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "06-4397-3077",
     reservationUrl: "https://www.hotpepper.jp/strJ001232100/",
     instagram: "https://www.instagram.com/tenyu_segare/",
-    rating: "3.09",
     source: { label: "ホットペッパーグルメ", url: "https://www.hotpepper.jp/strJ001232100/" },
     tags: ["居酒屋", "餃子", "お造り", "天ぷら", "天満", "土日昼飲み", "ランチ"],
     highlights: [
@@ -2099,7 +2092,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "昼 ￥1,000前後 / 夜 ￥1,500〜￥2,000",
     nearest: "大阪メトロ中央線 九条駅 徒歩4分",
     instagram: "https://www.instagram.com/udon_2022/",
-    rating: "3.55",
     source: { label: "公式サイト", url: "https://1000udon.com/" },
     tags: ["うどん", "手打ち", "国産小麦", "九条", "西区", "ランチ", "そば・うどん"],
     highlights: [
@@ -2144,7 +2136,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "阪急宝塚本線 十三駅 徒歩6分",
     phone: "06-6195-7598",
     reservationUrl: "https://www.hotpepper.jp/strJ003365911/",
-    rating: "3.08",
     source: { label: "公式サイト", url: "https://comfortzone8kyoitarian.com/" },
     tags: ["イタリアン", "京野菜", "十三", "淀川区", "女子会", "ロングピザ", "ランチ"],
     highlights: [
@@ -2190,7 +2181,6 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "06-6539-1818",
     reservationUrl: "https://autoreserve.com/ja/restaurants/VqzVRTMTHcW1f7VB9cDT",
     instagram: "https://www.instagram.com/stone_cafe_stone/",
-    rating: "3.39",
     source: { label: "公式サイト", url: "https://www.cafe-stone.com/" },
     tags: ["カフェ", "和モダン", "新町", "堀江", "西区", "エルメス食器"],
     highlights: [
@@ -2279,7 +2269,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "昼 ￥1,000前後 / 夜 ￥4,000〜￥5,000",
     nearest: "JR京浜東北線・湘南新宿ライン 浦和駅 西口 徒歩圏",
     phone: "048-711-8116",
-    rating: "3.24",
     source: { label: "公式サイト", url: "https://watsuki2018.com/" },
     tags: ["和食", "居酒屋", "浦和", "日本酒", "旬の料理", "ランチ"],
     highlights: [
@@ -2324,7 +2313,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "JR大宮駅 東口 徒歩4分",
     phone: "048-783-5586",
     reservationUrl: "https://r.gnavi.co.jp/au4x24jj0000/",
-    rating: "3.31",
     source: { label: "公式サイト", url: "https://gourmet513.com/page/index?gs=aRH0Dheys31m" },
     tags: ["おでん", "串揚げ", "居酒屋", "大宮", "宴会", "飲み放題"],
     highlights: [
@@ -2547,7 +2535,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "JR難波駅・大阪メトロ なんば駅 徒歩2〜3分",
     phone: "06-6585-7503",
     reservationUrl: "https://www.hotpepper.jp/strJ003388265/",
-    rating: "3.26",
     source: { label: "公式サイト", url: "https://fritteria-caiotto.com/" },
     tags: ["ワインバル", "イタリアン", "なんば", "浪速区", "アラカルト", "良コスパ"],
     highlights: [
@@ -2592,7 +2579,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "大阪メトロ谷町線・堺筋線 天神橋筋六丁目駅 徒歩4分（約146m）",
     phone: "06-6948-6929",
     reservationUrl: "https://autoreserve.com/ja/restaurants/7APpD6iNLjwEyDZnThNU",
-    rating: "3.58",
     source: { label: "公式サイト", url: "https://pizzeria-lfc.com/" },
     tags: ["ナポリピッツァ", "ピザ", "イタリアン", "天神橋筋六丁目", "薪窯", "天満"],
     highlights: [
@@ -2680,7 +2666,6 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "06-6224-0075",
     reservationUrl: "https://www.tablecheck.com/en/lisian-osaka",
     instagram: "https://www.instagram.com/lisian.osaka/",
-    rating: "3.56",
     source: { label: "公式サイト", url: "https://lisian-osaka.com/" },
     tags: ["和牛", "イタリアン", "ワイン", "本町", "心斎橋", "南久宝寺町", "ファインダイニング"],
     highlights: [
@@ -2787,7 +2772,6 @@ export const RESTAURANTS: Restaurant[] = [
       "大阪メトロ御堂筋線 西中島南方駅 徒歩約4〜5分 / 阪急京都線 南方駅 徒歩約5分",
     phone: "06-6195-7705",
     reservationUrl: "https://www.hotpepper.jp/strJ003532395/",
-    rating: "3.21",
     source: {
       label: "ホットペッパーグルメ",
       url: "https://www.hotpepper.jp/strJ003532395/",
@@ -4298,8 +4282,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜¥5,999",
     nearest: "JR垂水駅 東口より徒歩1分",
     phone: "078-754-8596",
-    rating: "3.04",
-    source: { label: "食べログ", url: "https://tabelog.com/hyogo/A2801/A280110/28075447/" },
     tags: ["炭火焼肉", "国産牛", "垂水", "神戸"],
     highlights: [
       "垂水駅東口から徒歩わずか30秒の好立地",
@@ -4342,7 +4324,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥3,999",
     nearest: "東急東横線 白楽駅より徒歩2分",
     phone: "045-633-1867",
-    rating: "3.31",
     tags: ["立ち飲み", "居酒屋", "白楽", "横浜"],
     highlights: [
       "白楽駅から徒歩2分の好アクセス",
@@ -4385,7 +4366,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜¥5,999",
     nearest: "地下鉄鶴舞線 浄心駅より徒歩3分",
     phone: "052-532-6262",
-    rating: "3.70",
     tags: ["イタリアン", "オステリア", "浄心", "名古屋", "ランチ"],
     highlights: [
       "毎朝市場から仕入れる新鮮食材を使用",
@@ -4428,7 +4408,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜¥1,999",
     nearest: "JR高槻駅より徒歩4分",
     phone: "072-600-2081",
-    rating: "3.15",
     tags: ["ラーメン", "高槻", "こだわり", "深夜営業", "ランチ"],
     highlights: [
       "8席のみの小さな専門店でこだわりの一杯",
@@ -4470,7 +4449,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "10",
     budget: "¥3,000〜¥4,000",
     nearest: "大阪市営地下鉄 文の里駅より徒歩3分",
-    rating: "3.17",
     tags: ["ビストロ", "フレンチ", "シャルキトリー", "文の里", "大阪"],
     highlights: [
       "2024年秋オープンの注目フレンチビストロ",
@@ -4509,7 +4487,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "8",
     budget: "¥1,000〜¥1,999",
     nearest: "JR平塚駅より徒歩約10分",
-    rating: "3.50",
     tags: ["ラーメン", "手打ち", "平塚", "神奈川", "ランチ"],
     highlights: [
       "8席のみ、平塚の隠れ家的手打ちラーメン店",
@@ -4552,7 +4529,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "JR蒲田駅 西口より徒歩5分",
     phone: "03-6424-8494",
-    rating: "3.34",
     tags: ["お好み焼き", "ワイン", "広島", "蒲田"],
     highlights: [
       "広島出身シェフによる鉄板焼きとワインのペアリング",
@@ -4595,7 +4571,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,500〜¥2,000",
     nearest: "JR蒲田駅より徒歩5分",
     phone: "03-6782-3769",
-    rating: "3.15",
     tags: ["お好み焼き", "居酒屋", "蒲田", "深夜"],
     highlights: [
       "蒲田駅徒歩5分、50席の大箱お好み焼き居酒屋",
@@ -4638,7 +4613,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥5,000",
     nearest: "JR元町駅より徒歩3分",
     phone: "078-321-1300",
-    rating: "3.37",
     tags: ["海鮮", "天ぷら", "元町", "神戸", "ランチ"],
     highlights: [
       "予約不可・ウォークインのみの人気海鮮店",
@@ -4723,7 +4697,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥10,000〜14,999",
     nearest: "JR蒲田駅南口徒歩9分",
     phone: "03-3735-7707",
-    rating: "3.35",
     highlights: [
       "毎朝仕入れる鮮魚の一品料理",
       "豊富な日本酒・銘柄取り揃え",
@@ -4766,7 +4739,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜4,999",
     nearest: "JR六甲道駅徒歩約9分",
     phone: "078-842-1422",
-    rating: "3.31",
     highlights: [
       "鉄板で焼き上げる本格お好み焼き",
       "韓国料理メニューも充実",
@@ -4850,7 +4822,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥3,000〜3,999",
     nearest: "JR中浦和駅徒歩約12分",
     phone: "048-711-3695",
-    rating: "3.34",
     highlights: [
       "生パスタとピザが看板メニュー",
       "浦和レッズ応援「レッズ飯パスタ」",
@@ -4892,7 +4863,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "〜¥1,999",
     nearest: "板宿駅（地下鉄・山陽電車）徒歩約3分",
     phone: "078-732-1128",
-    rating: "3.30",
     highlights: [
       "板宿駅から徒歩3分の好アクセス",
       "うどん・カフェ・スイーツの複合業態",
@@ -4935,7 +4905,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜4,999",
     nearest: "神戸市営地下鉄 三宮駅徒歩5分",
     phone: "050-5593-5512",
-    rating: "3.13",
     highlights: [
       "深夜4時まで営業・二次会に最適",
       "個室20席・グループ利用に対応",
@@ -5061,7 +5030,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥2,000〜2,999",
     nearest: "北神急行 谷上駅徒歩3分",
     phone: "078-582-1369",
-    rating: "3.29",
     highlights: [
       "自家製餃子が看板メニュー",
       "多彩な中華小皿料理",
@@ -5104,7 +5072,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜7,999",
     nearest: "JR蒲田駅西口徒歩4分",
     phone: "03-6428-7350",
-    rating: "3.41",
     highlights: [
       "ナチュラルワインが豊富に揃う",
       "深夜1時まで営業",
@@ -5146,7 +5113,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "個室・VIPルームあり",
     nearest: "和泉中央駅（車利用推奨）",
     phone: "072-443-1188",
-    rating: "3.17",
     highlights: [
       "個室・VIPルームを完備",
       "厳選素材の本格焼肉",
@@ -5189,7 +5155,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000前後",
     nearest: "高速神戸駅徒歩約1分",
     phone: "078-362-7690",
-    rating: "3.04",
     highlights: [
       "高速神戸駅から徒歩1分",
       "新鮮ホルモンの炭火焼き",
@@ -5230,7 +5195,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥5,000〜5,999",
     nearest: "阪急神戸三宮駅徒歩約1分",
     phone: "078-331-2228",
-    rating: "3.41",
     highlights: [
       "三宮駅徒歩1分の超好立地",
       "本格タパス・パエリア",
@@ -5273,7 +5237,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥3,000〜3,999 / ディナー¥6,000〜7,999",
     nearest: "東武東上線 志木駅東口徒歩3分",
     phone: "048-485-9179",
-    rating: "3.24",
     highlights: [
       "志木駅東口徒歩3分のビル地下",
       "丁寧なフレンチコース料理",
@@ -5357,7 +5320,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥3,000〜3,999",
     nearest: "阪神大石駅・JR摩耶駅 各徒歩5分",
     phone: "050-5596-0214",
-    rating: "3.52",
     highlights: [
       "手打ちパスタとナポリ風ピザ",
       "大石駅・摩耶駅から徒歩5分",
@@ -5400,7 +5362,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "阪神新在家駅徒歩約2分",
     phone: "090-7115-3083",
-    rating: "3.04",
     highlights: [
       "新在家駅から徒歩2分",
       "深夜2時まで営業",
@@ -5442,7 +5403,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥4,000〜4,999 / ディナー¥8,000〜9,999",
     nearest: "神戸市営地下鉄 三宮駅徒歩3分",
     phone: "050-5868-3120",
-    rating: "3.60",
     highlights: [
       "三宮駅徒歩3分",
       "深夜3時まで営業",
@@ -5485,7 +5445,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥3,000〜3,999",
     nearest: "JR須磨海浜公園駅徒歩約4分",
     phone: "078-735-3075",
-    rating: "3.37",
     highlights: [
       "石窯焼きピザと手打ちパスタ",
       "須磨海浜公園駅から徒歩4分",
@@ -5570,7 +5529,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥6,000〜7,999",
     nearest: "阪神芦屋駅西口徒歩約7分",
     phone: "078-411-2267",
-    rating: "3.49",
     highlights: [
       "オープンキッチンを囲む16席",
       "フレンチ×イタリアンの融合料理",
@@ -5613,7 +5571,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥6,000〜7,999",
     nearest: "多摩モノレール 立川南駅",
     phone: "042-525-8562",
-    rating: "3.36",
     highlights: [
       "旬の魚介中心の充実した一品料理",
       "豊富な日本酒・焼酎のラインナップ",
@@ -5656,7 +5613,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥15,000〜19,999",
     nearest: "神戸市営地下鉄 三宮駅徒歩約3分",
     phone: "078-331-3043",
-    rating: "3.64",
     highlights: [
       "三宮駅徒歩3分・深夜2時まで営業",
       "カウンター18席で職人の技を間近に",
@@ -5699,7 +5655,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,200 / ディナー¥5,000〜5,999",
     nearest: "京急蒲田駅徒歩約4分",
     phone: "03-3731-4593",
-    rating: "3.22",
     highlights: [
       "昼の握りランチから夜の本格鮨まで",
       "職人が丁寧に仕立てる江戸前鮨",
@@ -5741,7 +5696,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥4,000〜4,999",
     nearest: "神戸市営地下鉄 三宮駅徒歩約5分",
     phone: "078-335-7188",
-    rating: "3.47",
     highlights: [
       "本格広東料理・飲茶が揃う50席",
       "三宮駅徒歩5分・北野坂沿い",
@@ -5782,7 +5736,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "カウンター・テーブル席あり",
     nearest: "JR新長田駅南口徒歩1分",
     phone: "078-647-8933",
-    rating: "3.08",
     highlights: [
       "新長田駅南口から徒歩1分",
       "深夜2時まで営業",
@@ -5825,7 +5778,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥2,000〜3,000",
     nearest: "JR立川駅南口徒歩約5分",
     phone: "042-595-8155",
-    rating: "3.07",
     highlights: [
       "立川駅南口徒歩5分",
       "串焼きと角ハイボールが評判",
@@ -5867,7 +5819,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜4,999",
     nearest: "JR蒲田駅徒歩10分",
     phone: "03-6826-9402",
-    rating: "3.06",
     highlights: [
       "16席限定の少人数向け焼肉店",
       "厳選国産牛を堪能",
@@ -5909,7 +5860,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜5,999",
     nearest: "JR立川駅徒歩3分",
     phone: "042-595-7995",
-    rating: "3.08",
     highlights: [
       "立川駅徒歩3分の好立地",
       "土日祝は昼12時から営業",
@@ -5951,7 +5901,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜4,999",
     nearest: "阪急京都河原町駅徒歩2分",
     phone: "050-5869-7012",
-    rating: "3.24",
     highlights: [
       "河原町駅徒歩2分の好立地",
       "海鮮・鉄板焼きが揃う38席",
@@ -5989,8 +5938,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥2,000〜2,999",
     nearest: "阪急桂駅徒歩1分",
     phone: "075-382-3300",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26028151/" },
     highlights: [
       "桂駅徒歩1分の好アクセス",
       "ステーキ・イタリアンがリーズナブル",
@@ -6032,7 +5979,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜4,999",
     nearest: "京阪山科駅徒歩4分",
     phone: "075-582-1811",
-    rating: "3.07",
     highlights: [
       "炭火で焼き上げる本格焼き鳥",
       "深夜1時半まで営業",
@@ -6074,7 +6020,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜5,999",
     nearest: "嵐電西大路三条駅徒歩3分",
     phone: "075-963-5575",
-    rating: "3.03",
     highlights: [
       "旬の海鮮を使った日本料理",
       "西院駅から徒歩3分",
@@ -6116,7 +6061,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜5,999",
     nearest: "阪急桂駅徒歩5分",
     phone: "075-394-2223",
-    rating: "3.01",
     highlights: [
       "10席限定のプライベートな空間",
       "豊富なワインと丁寧な洋食",
@@ -6158,8 +6102,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "ランチ¥1,000〜1,999 / ディナー¥4,000〜4,999",
     nearest: "阪急上桂駅徒歩約8分",
     phone: "075-874-7683",
-    rating: "3.34",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26040082/" },
     highlights: [
       "ランチ・ディナーともに対応",
       "丁寧な洋食を30席で",
@@ -6201,7 +6143,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥5,000〜5,999",
     nearest: "叡山電鉄元田中駅徒歩1分",
     phone: "075-722-8311",
-    rating: "3.21",
     highlights: [
       "元田中駅から徒歩1分",
       "本格イタリアン20席",
@@ -6242,8 +6183,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "テラス席あり",
     nearest: "近鉄奈良駅徒歩約10分",
     phone: "0742-42-6986",
-    rating: "3.07",
-    source: { label: "食べログ", url: "https://tabelog.com/nara/A2901/A290101/29014928/" },
     highlights: [
       "佐保川沿いの開放的なブックカフェ",
       "壁一面の本棚でゆっくり読書",
@@ -6285,8 +6224,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "要確認",
     nearest: "近鉄奈良駅 徒歩8分",
     phone: "0742-22-7600",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/nara/A2901/A290101/29001488/" },
     highlights: ["一軒家の隠れ家レストラン", "ステーキ・創作洋食", "ディナー専門"],
     budget: "¥1,500〜¥3,000",
     body: [
@@ -6325,8 +6262,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜¥1,999",
     nearest: "学研奈良登美ケ丘駅 徒歩約18分",
     phone: "0742-53-0305",
-    rating: "3.01",
-    source: { label: "食べログ", url: "https://tabelog.com/nara/A2901/A290102/29004429/" },
     highlights: ["深夜2時まで営業", "68席の広々空間", "お好み焼き・鉄板焼き"],
     body: [
       "奈良市押熊町の「いってつ」は、深夜2時まで営業する68席の大型お好み焼き・鉄板焼き店だ。奈良市北部の押熊エリアに位置し、地元密着の鉄板焼き店として長年愛されている。",
@@ -6364,7 +6299,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "西京極駅 徒歩5分",
     phone: "075-285-2541",
-    rating: "3.17",
     highlights: ["炭火焼き鳥専門店", "深夜12時まで営業", "西京極の人気店"],
     body: [
       "京都・右京区西京極、阪急西京極駅から徒歩5分の北裏町に「鶏心」がある。厳選した鶏を備長炭で焼き上げる炭火焼き鳥専門店で、鶏の質と炭火の組み合わせにこだわる一軒だ。",
@@ -6401,7 +6335,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "要確認",
     nearest: "四条大宮駅 徒歩圏内",
     phone: "075-366-0924",
-    rating: "3.41",
     highlights: ["塩べた焼発祥の店", "四条大宮の名物店", "独自スタイルのべた焼き"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -6465,7 +6398,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥2,000〜¥2,999",
     nearest: "西院駅・山ノ内駅 徒歩圏内",
     phone: "075-874-2520",
-    rating: "3.09",
     highlights: ["広島焼き専門店", "ランチ・ディナー営業", "西院エリアの名店"],
     body: [
       "京都・右京区西院エリア、山ノ内山ノ下町のマンションユーラク1Fに「広島焼き やきべえ」がある。本場広島のそば入りお好み焼きを京都で楽しめる専門店だ。",
@@ -6503,7 +6435,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "烏丸駅 徒歩4分 / 河原町駅 徒歩4分",
     phone: "075-744-1035",
-    rating: "3.30",
     highlights: ["出汁×日本酒の和食居酒屋", "2F掘りごたつ個室", "貸切10〜20名対応"],
     body: [
       "京都・中京区烏丸エリアの井筒屋町に「お出汁と日本酒 せつ」がある。京都らしい出汁文化と日本酒を組み合わせた和食居酒屋で、1Fカウンター・テーブル、2F掘りごたつの二層構造を持つ。",
@@ -6540,7 +6471,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "14席",
     nearest: "西院駅 徒歩圏内",
     phone: "075-748-9187",
-    rating: "3.21",
     highlights: ["14席の小さなイタリアン", "フレンチ×イタリアン融合", "西院の隠れ家レストラン"],
     budget: "¥5,000〜¥10,000",
     body: [
@@ -6579,8 +6509,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥3,999",
     nearest: "近鉄伏見駅 徒歩1分",
     phone: "075-643-0043",
-    rating: "3.15",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26011520/" },
     highlights: ["駅高架下の個性派ダイニング", "ネパール・インド料理", "深夜1時まで営業"],
     body: [
       "京都・伏見区深草、近鉄伏見駅高架下に「南国電波」がある。ネパール・インド料理をベースにしたカフェ・ダイニングバーで、スパイシーなカレーと民族料理が楽しめる個性的な一軒だ。",
@@ -6617,7 +6545,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "要確認",
     nearest: "元田中駅 徒歩5分",
     phone: "075-703-0770",
-    rating: "3.37",
     highlights: ["自家焙煎珈琲専門店", "旅をテーマにした店内", "元田中駅近くの人気カフェ"],
     budget: "〜¥1,000",
     body: [
@@ -6656,7 +6583,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥3,999",
     nearest: "丸太町駅 徒歩5分",
     phone: "075-212-1469",
-    rating: "3.17",
     highlights: ["深夜2時まで営業", "鉄板焼き・お好み焼き", "二条通の隠れ家"],
     body: [
       "京都・中京区二条通高倉西入の「鉄板焼き 仁」は、深夜2:00まで営業する鉄板焼き・お好み焼き店だ。二条通沿いという京都の中心部近くに位置し、地元の常連客に長年愛される一軒となっている。",
@@ -6719,8 +6645,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥3,999",
     nearest: "清水五条駅 徒歩圏内",
     phone: "075-600-9158",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260201/26043944/" },
     highlights: ["深夜0時まで営業", "カウンター席あり", "清水五条の人気お好み焼き"],
     body: [
       "京都・下京区麩屋町通高辻の「お好み焼き健士朗」は、21席の落ち着いた空間で本格お好み焼きを提供する店だ。近鉄清水五条駅からアクセスしやすい鍵屋小路会館1Fに位置する。",
@@ -6758,8 +6682,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥8,000〜¥9,999",
     nearest: "烏丸駅 徒歩3分",
     phone: "075-741-8300",
-    rating: "3.32",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260201/26038401/" },
     highlights: ["カウンター15席のみ", "四条烏丸徒歩3分", "こだわり焼き鳥"],
     body: [
       "京都・下京区月鉾町、四条烏丸から徒歩3分に「京都鳥八」がある。カウンター15席のみという小さな焼き鳥専門店で、厳選素材を丁寧に焼き上げる高品質な一軒だ。",
@@ -6797,8 +6719,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "京阪山科駅 徒歩圏内",
     phone: "075-581-3703",
-    rating: "3.02",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260603/26028229/" },
     highlights: ["山科の地元人気居酒屋", "深夜0時まで営業", "旬の料理と地酒"],
     body: [
       "京都・山科区御陵中内町、京阪山科駅近くに「俵崎」がある。22席の温かみある空間で旬の料理と地酒を楽しめる居酒屋で、深夜0時まで営業する山科の一軒だ。",
@@ -6836,7 +6756,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "河原町駅 徒歩3分",
     phone: "075-351-5251",
-    rating: "3.06",
     highlights: ["木屋町の深夜イタリアン", "深夜0時まで毎日営業", "17席の親密な空間"],
     body: [
       "京都・下京区木屋町通仏光寺上ル天王町、阪急河原町駅から徒歩3分に「Taverna Mezzanotte」がある。17席の小さなイタリア料理店（トラットリア）で、深夜0時まで営業する木屋町の一軒だ。",
@@ -6874,7 +6793,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥10,000〜¥14,999",
     nearest: "祇園四条駅 徒歩圏内",
     phone: "075-748-1911",
-    rating: "3.56",
     highlights: ["祇園の本格ピッツェリア", "ナポリピッツァ", "ランチ・ディナー営業"],
     body: [
       "京都・東山区祇園、花見小路エリアの祇園町北側に「est pizzeria e trattoria GION」がある。19席の空間で本格ナポリピッツァとイタリア料理を楽しめるピッツェリア＆トラットリアだ。",
@@ -6912,7 +6830,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜¥4,999",
     nearest: "藤森駅 徒歩1分",
     phone: "075-643-5133",
-    rating: "3.05",
     highlights: ["藤森駅すぐの本格ビストロ", "ランチ1,000円台〜", "2F貸切4〜16名対応"],
     body: [
       "京都・伏見区深草直違橋、京阪藤森駅すぐに「フレンチ食堂ビストロなかたに」がある。ランチ¥1,000台〜というリーズナブルな価格で本格フランス料理が楽しめるフレンチビストロだ。",
@@ -6950,8 +6867,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜¥2,999",
     nearest: "伏見桃山駅 徒歩圏内",
     phone: "075-585-9216",
-    rating: "3.29",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26043416/" },
     highlights: ["朝9時からオール営業", "自家菜園野菜使用", "伏見桃山のイタリアンカフェ"],
     body: [
       "京都・伏見区桃山の「Bar Arietta」は、自家菜園で育てた野菜を使うイタリアンカフェだ。朝9時から深夜23時まで通し営業し、モーニング・ランチ・カフェ・ディナーと一日中使える。",
@@ -6988,7 +6903,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "17席",
     nearest: "嵯峨嵐山駅方面",
     phone: "075-881-9551",
-    rating: "3.23",
     highlights: ["嵐山エリアの塩とんこつ", "嵐らーめん800円〜", "17席の地元密着ラーメン"],
     budget: "〜¥1,500",
     body: [
@@ -7027,8 +6941,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜¥3,999",
     nearest: "烏丸駅・四条烏丸 徒歩圏内",
     phone: "075-351-2288",
-    rating: "3.26",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260201/26039273/" },
     highlights: ["築100年の京町家改装", "おでん・おばんざい", "四条烏丸の創作居酒屋"],
     body: [
       "京都・下京区高材木町、四条烏丸エリアの築100年の京町家を改装した「めし処 ぽち」がある。2023年4月にオープンした創作居酒屋で、おでん・おばんざいを中心に京の食文化を気軽に楽しめる。",
@@ -7092,7 +7004,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥20,000〜",
     nearest: "河原町駅・四条駅 徒歩圏内",
     phone: "050-1721-1060",
-    rating: "3.29",
     highlights: ["明治期京町家改装のカウンター鮨", "ミシュランガイド掲載", "江戸前握り"],
     body: [
       "京都・下京区御幸町通、河原町エリアの明治期京町家を改装した「鮨今尽」がある。2025年1月にオープンし、ミシュランガイドにも掲載された江戸前鮨の一軒だ。",
@@ -7130,7 +7041,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥20,000〜¥29,999",
     nearest: "祇園四条駅 徒歩圏内",
     phone: "075-585-5747",
-    rating: "3.50",
     highlights: ["10席限定のコース料理", "二十四節気の季節料理", "祇園の和洋折衷イノベーティブ"],
     body: [
       "京都・東山区祇園町南側、花見小路の「祇をん 段ばた」は、10席限定のコース料理専門店だ。二十四節気をテーマに季節感を最大限に表現した創作和食を和洋折衷のスタイルで提供する。",
@@ -7159,8 +7069,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜3,999",
     nearest: "阪急桂駅東口 徒歩1分",
     phone: "075-383-4110",
-    rating: "3.09",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26003549/" },
     highlights: ["桂駅徒歩1分の韓国家庭料理", "チヂミ・チゲ・プルコギ", "コスパ◎地元に愛される隠れ家"],
     body: [
       "京都・西京区川島北裏町、阪急桂駅東口から徒歩1分のはつみビル2Fに「ぱんちゃん家」がある。チヂミ・チゲ・プルコギなど本場韓国の家庭料理が揃う韓国料理の隠れ家的な一軒だ。",
@@ -7188,8 +7096,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "バス停「金閣寺道」 徒歩5分",
     phone: "075-462-4949",
-    rating: "3.05",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260501/26039827/" },
     highlights: ["キジ出汁の珍しいきじそば", "あっさり清湯×手打ち麺", "金閣寺エリアの人気ラーメン"],
     budget: "〜¥1,500",
     body: [
@@ -7219,8 +7125,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥10,000〜14,999",
     nearest: "四条駅・烏丸御池駅 圏内",
     phone: "080-4984-0390",
-    rating: "3.23",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260201/26041406/" },
     highlights: ["京都発・フライ割烹という独自ジャンル", "厳選素材のコース料理", "ランチ・ディナーともコースのみ"],
     body: [
       "京都・中京区西洞院通六角下ル、烏丸御池・四条エリアの「みくり桑」は、フライ割烹という独自ジャンルを確立した料理店だ。厳選素材をカリッと揚げる「フライ割烹」のスタイルがコース料理で楽しめる。",
@@ -7277,8 +7181,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜4,999",
     nearest: "森下駅",
     phone: "052-932-0575",
-    rating: "3.07",
-    source: { label: "食べログ", url: "https://tabelog.com/aichi/A2301/A230110/23089035/" },
     highlights: ["ジャンルフリーの自由な創作料理", "和・伊・仏の技法を融合", "森下駅エリアのランチ〜ディナー通し"],
     body: [
       "名古屋・東区徳川町、地下鉄森下駅エリアの「e9uipe nine」は、イタリアン・和食・フレンチの技法を組み合わせたジャンルフリーの創作料理レストランだ。ランチからディナーまで11:00〜22:00の通し営業が特徴。",
@@ -7307,8 +7209,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥999以下",
     nearest: "古川橋駅",
     phone: "06-6904-3751",
-    rating: "3.10",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2707/A270701/27021204/" },
     highlights: ["リーズナブルな本格町中華", "定食・ランチセット充実", "地元で長年愛される一軒"],
     body: [
       "大阪府門真市、古川橋駅から近い立地に店を構える「タオタオ」は、町中華の気軽さと本格的な中国料理の品質を兼ね備えた一軒だ。リーズナブルな価格帯でありながら、定食・ランチセットが充実しており地域の食事処として長年愛されている。",
@@ -7337,8 +7237,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "博多駅 徒歩3〜4分",
     phone: "092-471-9455",
-    rating: "3.40",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4001/A400101/40002420/" },
     highlights: ["博多駅すぐの本格パスタ専門店", "¥1,000台でコスパ◎", "ランチタイムはサラリーマンに人気"],
     body: [
       "博多駅から徒歩3〜4分、福岡朝日ビルB2Fに「ぼんじょるの」がある。厳選食材を使った本格パスタが¥1,000台で楽しめるパスタ専門店で、ランチタイムはサラリーマンや観光客で賑わう人気店だ。",
@@ -7367,7 +7265,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "丸太町駅 徒歩5分",
     phone: "075-221-4072",
-    rating: "3.37",
     highlights: ["長年愛される京都中華の老舗", "リーズナブルなランチ・ディナー", "丸太町駅圏内の地元の名店"],
     body: [
       "京都・中京区丸太町通、丸太町駅から徒歩5分に「京都中華 ハマムラ」がある。京都で長年親しまれてきた「京都中華」のスタイルを守り続ける老舗中華料理店だ。",
@@ -7395,7 +7292,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "四条駅4番出口 徒歩4分 / 烏丸駅26番出口 徒歩4分",
     phone: "075-744-0265",
-    rating: "3.08",
     highlights: ["ディナー専門の和食料理屋", "旬食材を使った季節感ある和食", "四条・烏丸からアクセス便利"],
     budget: "¥5,000〜¥10,000",
     body: [
@@ -7425,7 +7321,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜3,999",
     nearest: "滝の茶屋駅 徒歩圏内",
     phone: "078-747-0677",
-    rating: "3.07",
     highlights: ["テラス席のある開放的なイタリアン", "垂水・滝の茶屋エリアの隠れ家", "ランチ・ディナーともに充実"],
     body: [
       "神戸・垂水区名谷町、滝の茶屋駅近くに「Giraffa TERRACE」がある。テラス席を備えた開放的な空間で、本格イタリアンをリーズナブルに楽しめるレストランだ。",
@@ -7481,7 +7376,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜4,999",
     nearest: "阪神元町駅東出口 徒歩5分",
     phone: "078-321-5525",
-    rating: "3.38",
     highlights: ["元町の丁寧な和食レストラン", "旬の食材を活かした料理", "金土日はディナー23時まで"],
     body: [
       "神戸・元町、阪神元町駅東出口から徒歩5分の栄町通に「ORINAS」がある。旬の食材を活かした丁寧な和食を神戸・元町で楽しめるレストランだ。",
@@ -7508,8 +7402,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "水曜",
     seats: "—",
     nearest: "北野白梅町駅 約500m",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26043896/" },
     highlights: ["本格担々麺の専門店", "ごまの風味豊かなスープ", "北野白梅町エリアの人気店"],
     budget: "〜¥1,500",
     body: [
@@ -7539,8 +7431,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜2,999",
     nearest: "阪急春日野道駅 徒歩2分",
     phone: "070-8350-9226",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/hyogo/A2801/A280103/28065180/" },
     highlights: ["春日野道駅すぐの地元食堂", "日替わり定食と家庭的な小鉢", "16席のアットホームな空間"],
     body: [
       "神戸・阪急春日野道駅から徒歩2分の東雲通に「きず那」がある。16席のこじんまりした食堂で、地元の人たちに長年愛されるアットホームな一軒だ。",
@@ -7569,8 +7459,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "山陽西代駅南出口 徒歩1分",
     phone: "080-5060-0915",
-    rating: "3.55",
-    source: { label: "食べログ", url: "https://tabelog.com/hyogo/A2801/A280110/28070596/" },
     highlights: ["西代駅すぐの本格ベトナム料理", "フォー・生春巻きなど定番メニュー", "ランチ¥1,000台のコスパ◎"],
     body: [
       "神戸・山陽西代駅南出口から徒歩1分の御屋敷通2Fに「アジアンキッチン ロータス」がある。フォー・生春巻きなど本格的なベトナム料理をリーズナブルに楽しめる30席の店だ。",
@@ -7599,8 +7487,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥10,000〜14,999",
     nearest: "三宮駅 徒歩約3分",
     phone: "078-392-8610",
-    rating: "3.63",
-    source: { label: "食べログ", url: "https://tabelog.com/hyogo/A2801/A280101/28033591/" },
     highlights: ["三宮の10席限定日本料理店", "カウンターで職人の仕事を堪能", "旬の食材を使った本格和食"],
     body: [
       "神戸・三宮駅から徒歩約3分、芸亭ビル1Fに「りょうり屋 くどう」がある。カウンター中心の10席という空間で、職人の仕事を間近に感じながら季節の食材を使った日本料理を楽しめる店だ。",
@@ -7629,8 +7515,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥8,000〜9,999",
     nearest: "阪急西向日駅 約2.2km",
     phone: "075-874-5551",
-    rating: "3.30",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26022324/" },
     highlights: ["1日5組限定の完全予約制フレンチ", "里山の自然に囲まれた非日常空間", "二十四節気の地元野菜を活かした料理"],
     body: [
       "京都・西京区大原野上里北ノ町の里山に「レストラン スポンタネ」がある。阪急西向日駅よりタクシーで数分という立地の完全予約制フレンチレストランで、1日5組限定のプライベートな食事が特徴だ。",
@@ -7659,7 +7543,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "胡町駅 徒歩5分",
     phone: "050-5600-4158",
-    rating: "3.32",
     highlights: ["22時〜翌6時の深夜ラーメン専門", "広島・流川の夜を支える尾道系", "豚骨醤油スープの尾道ラーメン"],
     body: [
       "広島・流川町の藤田ビル1Fに「尾道ラーメン一〜WAN〜」がある。22時から翌6時という深夜・早朝専門の営業スタイルで、広島市内の夜を過ごす人々に長年愛されてきた深夜ラーメン店だ。",
@@ -7688,8 +7571,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜3,999",
     nearest: "下祇園駅 徒歩2分",
     phone: "082-874-7210",
-    rating: "3.05",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340107/34021160/" },
     highlights: ["備長炭で焼き上げる本格炭焼き", "下祇園駅すぐの夜専門焼き鳥店", "地元常連に愛される25席"],
     body: [
       "広島・安佐南区祇園、下祇園駅から徒歩2分に「炭焼Kitchen 達磨」がある。備長炭で地鶏を丁寧に焼き上げる炭火焼き鳥専門店で、25席の空間で地元の常連客に愛される夜の一軒だ。",
@@ -7718,8 +7599,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥999以下",
     nearest: "宇品二丁目駅 徒歩約30m",
     phone: "082-569-7530",
-    rating: "3.31",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340102/34022698/" },
     highlights: ["濃厚なのにすっきりの鶏白湯ラーメン", "宇品駅目の前のアクセス◎", "¥1,000以下のコスパ最高"],
     body: [
       "広島・南区宇品御幸、宇品二丁目駅から徒歩約30mという駅前に「麺処やのや」がある。濃厚なのにすっきりとした後味の鶏白湯スープが自慢のラーメン専門店だ。",
@@ -7757,8 +7636,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥20,000〜29,999",
     nearest: "本通駅 徒歩4分",
     phone: "082-240-5300",
-    rating: "3.50",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340113/34016480/" },
     highlights: ["29年継続の広島中心部の江戸前鮨", "9席カウンターのみの完全予約制", "職人の技を間近に感じる一夜"],
     body: [
       "広島・中区本通、ヤオキンビル1Fに「吉鮨」がある。29年間広島・本通に根を下ろし続ける江戸前鮨の一軒で、9席のカウンターのみというこだわりの設計が職人との一体感を生む。",
@@ -7822,8 +7699,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "八丁堀電停 徒歩1分",
     phone: "082-243-3080",
-    rating: "3.31",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340112/34026352/" },
     highlights: ["八丁堀すぐの和食割烹", "深夜23:30まで営業", "旬の食材を使った割烹料理"],
     budget: "¥6,000〜¥12,000",
     body: [
@@ -7861,8 +7736,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "北山駅 圏内",
     phone: "075-723-3329",
-    rating: "3.44",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260503/26002166/" },
     highlights: ["フレンチ出身シェフの本格洋食定食", "上賀茂神社近くの一膳飯屋", "ランチ・ディナーともに気軽に利用可"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -7900,8 +7773,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "広島駅 徒歩圏内",
     phone: "090-4804-8826",
-    rating: "3.20",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340121/34029946/" },
     highlights: ["広島駅北口すぐの海鮮丼専門店", "新鮮魚介がリーズナブル", "ホットサンドも人気"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -7939,8 +7810,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "藤森駅 圏内",
     phone: "075-642-8876",
-    rating: "3.33",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26015415/" },
     highlights: ["昭和レトロ薫る純喫茶", "オーガニックコーヒーとハンドメイドカレー", "名物のりトーストは必食"],
     budget: "〜¥1,000",
     body: [
@@ -7978,8 +7847,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "毘沙門台駅 圏内",
     phone: "082-876-0535",
-    rating: "3.07",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340107/34018162/" },
     highlights: ["年中無休の地元居酒屋", "毎日17時〜24時まで営業", "毘沙門台エリアの常連に愛される一軒"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8017,7 +7884,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "八丁堀・幟町エリア",
     phone: "082-554-1355",
-    rating: "3.55",
     highlights: ["1日3組限定の本格トスカーナ料理", "広島では珍しい食材・器材を使用", "バータイムは20時から"],
     budget: "¥8,000〜¥15,000",
     body: [
@@ -8056,8 +7922,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥8,000〜14,999",
     nearest: "京都河原町駅 徒歩6分",
     phone: "075-744-0981",
-    rating: "3.61",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260201/26037178/" },
     highlights: ["ミシュラン掲載のフレンチレストラン", "京都産食材を活かした繊細な料理", "富小路通の2階に佇む隠れ家感"],
     body: [
       "京都・中京区富小路通蛸薬師下ル、若葉ビル2Fに「Luca（ルカ）」がある。ミシュランガイドにも掲載された実力派フレンチレストランで、京都出身シェフが地元食材を贅沢に使った料理を提供する。",
@@ -8094,8 +7958,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "アストラムライン高取駅 徒歩約5分",
     phone: "082-846-4883",
-    rating: "3.09",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340107/34029188/" },
     highlights: ["精肉店直営のコスパ◎肉ダイニング", "高取北の隠れ家的ロケーション", "ランチから食べ飲み放題まで対応"],
     budget: "¥3,000〜¥8,000",
     body: [
@@ -8134,8 +7996,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜3,999",
     nearest: "京都市役所前駅 188m",
     phone: "075-255-1527",
-    rating: "3.21",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260202/26038233/" },
     highlights: ["三条・河原町の炭火イタリアン酒場", "土鍋リゾットと豊富なワイン", "カウンター主体で一人飲みにも◎"],
     body: [
       "京都・中京区恵比須町、京都市役所前・三条河原町近くのエアポートビル1Fに「イタリアン酒場 COVO」がある。炭火焼き・土鍋リゾット・豊富なワインが揃うイタリアン酒場で、32席を備える。",
@@ -8173,7 +8033,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥1,000〜1,999",
     nearest: "鞍馬口駅 341m",
     phone: "075-285-1660",
-    rating: "3.08",
     highlights: ["石臼挽き・手打ちのこだわり蕎麦", "鞍馬口駅すぐの静かな蕎麦店", "ランチと夜の2部営業"],
     body: [
       "京都・北区新町通鞍馬口下ル、烏丸線鞍馬口駅すぐに「石臼引き手打ちそば 定七」がある。石臼で挽いたそば粉を手打ちした本格蕎麦専門店で、ランチと夜の2部営業で旬の肴とともに楽しめる。",
@@ -8209,8 +8068,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "不定休（事前確認推奨）",
     seats: "—",
     nearest: "姪浜駅 圏内",
-    rating: "3.34",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4001/A400203/40021356/" },
     highlights: ["うに山盛りパスタが看板メニュー", "深夜1〜3時まで営業のバータイム", "ランチから深夜まで通し使える"],
     budget: "¥3,000〜¥5,000",
     body: [
@@ -8248,8 +8105,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "伏見桃山駅 圏内",
     phone: "080-1407-8989",
-    rating: "3.37",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26027026/" },
     highlights: ["伏水酒蔵小路の伏見日本酒×炭火焼き", "昼飲みにも対応の通し営業", "酒蔵の風情の中で食と酒を堪能"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8288,8 +8143,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥4,000〜7,999",
     nearest: "国際会館駅 圏内",
     phone: "050-3647-2029",
-    rating: "3.60",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260503/26035627/" },
     highlights: ["完全予約制の焼きたてローストビーフ専門店", "里山の自然に囲まれた非日常空間", "フレンチ出身シェフのコース¥4,200〜"],
     body: [
       "京都・北区上賀茂本山の里山に「ローストビーフの店 Watanabe」がある。フレンチ出身の渡辺シェフが腕を振るう完全予約制のローストビーフ専門店で、焼きたてローストビーフのコースが楽しめる。",
@@ -8326,8 +8179,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "竹田駅 圏内",
     phone: "075-602-7088",
-    rating: "3.24",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26007849/" },
     highlights: ["竹田エリアの地元に愛される中華", "ランチ・ディナー2部営業", "リーズナブルな定食・ラーメン"],
     budget: "¥1,500〜¥3,000",
     body: [
@@ -8365,8 +8216,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "神宮丸太町駅 圏内",
     phone: "075-751-7887",
-    rating: "3.10",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260202/26038485/" },
     highlights: ["台湾まぜそばと鶏白湯の専門店", "聖護院・岡崎エリアの人気ラーメン店", "濃厚なのに後味すっきりの一杯"],
     budget: "〜¥1,500",
     body: [
@@ -8405,8 +8254,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥3,000〜5,999",
     nearest: "伏見桃山駅 徒歩1分 / 桃山御陵前駅 徒歩2分",
     phone: "075-603-6111",
-    rating: "3.10",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26019130/" },
     highlights: ["500g超えオマール海老が名物", "伏見桃山駅1分のイタリアンワインバー", "ランチ・ディナーともに充実"],
     body: [
       "京都・伏見区京町、伏見桃山駅から徒歩1分のファーストビル1Fに「オマール海老とワイン酒場 アルヴェーレ」がある。500g超えのカナダ産オマール海老を名物にしたイタリアンワインバーだ。",
@@ -8444,8 +8291,6 @@ export const RESTAURANTS: Restaurant[] = [
     budget: "¥999以下",
     nearest: "桂駅 944m",
     phone: "075-925-8311",
-    rating: "3.12",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26039508/" },
     highlights: ["旬フルーツとエディブルフラワーのタルト", "カラフルで美しいケーキが並ぶ", "桂エリアの手作りパティスリー"],
     body: [
       "京都・西京区山田大吉見町の「ONE TART」は、旬のフルーツをふんだんに使ったタルト専門店だ。カラフルで美しいタルトにエディブルフラワーを添えたキラキラの見た目が特徴で、SNSでも話題になっている。",
@@ -8482,8 +8327,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "—",
     nearest: "西院駅（阪急） 徒歩約2分",
     phone: "075-311-6066",
-    rating: "3.04",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26035676/" },
     highlights: ["西院駅すぐの本格お好み焼き", "深夜1時まで営業の夜型グルメ", "地元常連客に愛される一軒"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -8514,8 +8357,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "広島電鉄袋町駅 徒歩3分",
     phone: "082-207-1950",
     instagram: "mugentei_yakiniku",
-    rating: "3.09",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340116/34031483/" },
     highlights: ["全室完全個室の焼肉", "広島名産コウネも楽しめる", "記念日プラン充実"],
     budget: "¥4,000〜¥8,000",
     body: [
@@ -8544,8 +8385,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "不定休（事前確認推奨）",
     seats: "4",
     nearest: "地下鉄東西線蹴上駅 徒歩約10分",
-    rating: "3.46",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260301/26037809/" },
     highlights: ["1組限定・完全貸し切り", "創作中華と京都のお茶の融合", "カウンター4席のプライベート空間"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8575,8 +8414,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "30",
     nearest: "近鉄・京阪伏見桃山駅 徒歩4分",
     phone: "070-8351-5576",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26042457/" },
     highlights: ["日本酒と中華の気軽な組み合わせ", "伏見桃山の酒どころに佇む", "ランチ・ディナー両対応"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8605,8 +8442,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "火曜",
     seats: "20",
     nearest: "近鉄桃山御陵前駅 徒歩3分",
-    rating: "3.16",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260601/26041295/" },
     highlights: ["活魚の豪快な海鮮盛り", "伏見大手筋商店街のハシゴ酒に最適", "平日15時から気軽に一杯"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8637,8 +8472,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "叡山電鉄茶山駅 徒歩約7分",
     phone: "075-746-7729",
     instagram: "kyoto.yuwa",
-    rating: "3.20",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260302/26040430/" },
     highlights: ["オールスター洋食の欲張りランチ", "住宅街の隠れ家洋食店", "移転後も地元に愛される実力"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -8668,8 +8501,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "30",
     nearest: "阪急桂駅 徒歩約1分",
     phone: "075-382-5700",
-    rating: "3.16",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260401/26040445/" },
     highlights: ["京野菜×本格中華のコース", "桂駅徒歩1分の好アクセス", "コスパ高い4000円コース"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8699,8 +8530,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "地下鉄東西線二条城前駅 徒歩約10分",
     phone: "075-802-6100",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/kyoto/A2601/A260203/26038348/" },
     highlights: ["食べログ中国料理百名店", "京町家の落ち着いた空間", "ディナーは完全予約制おまかせのみ"],
     budget: "¥3,000〜¥6,000",
     body: [
@@ -8730,7 +8559,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "25",
     nearest: "叡山電鉄一乗寺駅 徒歩約5分",
     phone: "075-708-8112",
-    rating: "3.06",
     highlights: ["一乗寺ラーメン激戦区の人気店", "背脂チャッチャッ系の熟成麺", "ラーメンマニアが全国から集う"],
     budget: "〜¥1,500",
     body: [
@@ -8760,8 +8588,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "30",
     nearest: "泉北高速鉄道 栂・美木多駅 徒歩7分",
     phone: "090-4764-1403",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27098788/" },
     highlights: ["南国リゾート気分の癒し空間", "こだわりのハワイアンコーヒー", "泉北ニュータウンの憩いの場"],
     budget: "〜¥1,500",
     body: [
@@ -8791,8 +8617,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "60",
     nearest: "泉北高速鉄道 深井駅 徒歩5分",
     phone: "072-278-0990",
-    rating: "3.08",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27059524/" },
     highlights: ["紀州備長炭で丁寧に焼き上げる一串", "全60席・個室完備", "深井駅徒歩5分の好立地"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8821,8 +8645,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "25",
     nearest: "近鉄南大阪線 北野田駅 徒歩約10分",
     phone: "072-286-7729",
-    rating: "3.05",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27115235/" },
     highlights: ["季節感あふれる手作り一品料理", "洋風アレンジの創作居酒屋", "堺東区の隠れ家的存在"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -8852,8 +8674,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "近江鉄道 日野駅 徒歩約15分",
     phone: "0748-36-2299",
-    rating: "3.09",
-    source: { label: "食べログ", url: "https://tabelog.com/shiga/A2503/A250302/25012978/" },
     highlights: ["焼きたて本格団子の甘味処", "近江の里山に佇む和カフェ", "2023年秋オープンの注目店"],
     budget: "〜¥1,000",
     body: [
@@ -8883,8 +8703,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "40",
     nearest: "地下鉄御堂筋線・泉北高速 中百舌鳥駅 徒歩約5分",
     phone: "072-252-2008",
-    rating: "3.36",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27018858/" },
     highlights: ["深夜1時まで営業のスタミナラーメン", "背脂濃厚スープが食欲を刺激", "餃子・唐揚げとのセットが人気"],
     budget: "〜¥1,500",
     body: [
@@ -8942,8 +8760,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "25",
     nearest: "阪堺電車 御陵前駅 徒歩2分",
     phone: "072-224-2122",
-    rating: "3.37",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27040479/" },
     highlights: ["創業30年超えの老舗洋食", "名物ビーフクリームコロッケ", "テイクアウトも充実"],
     budget: "¥1,500〜¥3,000",
     body: [
@@ -8972,8 +8788,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "年末年始のみ",
     seats: "40",
     nearest: "南海堺駅 徒歩約10分",
-    rating: "3.40",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27137757/" },
     highlights: ["国登録有形文化財の旧煉瓦建築でコーヒーを", "長崎発JUNE COFFEEの大阪1号店", "焼きたてパンと本格コーヒーの組み合わせ"],
     budget: "〜¥1,500",
     body: [
@@ -9003,8 +8817,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "25",
     nearest: "JR呉線 向洋駅 徒歩約10分",
     phone: "080-2170-5123",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340123/34023515/" },
     highlights: ["ホルモン焼きそば・辛麺など個性派メニュー", "テレビ取材も受けた広島南区の名店", "ランチから夜まで通える地元の顔"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -9033,8 +8845,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "火・水曜",
     seats: "30",
     nearest: "車利用推奨（湯来温泉エリア）",
-    rating: "3.01",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340127/34032615/" },
     highlights: ["湯来温泉郷の素朴なうどん食堂", "もつ煮込みうどんが名物", "温泉観光とあわせて訪れたい一軒"],
     budget: "〜¥1,500",
     body: [
@@ -9072,8 +8882,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "16",
     nearest: "河戸帆待川駅",
     phone: "082-812-0850",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340106/34020132/" },
     tags: ["カフェ", "定食", "広島", "安佐北区", "可部", "ランチ"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -9110,8 +8918,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "高月駅",
     phone: "090-6757-9435",
-    rating: "3.07",
-    source: { label: "食べログ", url: "https://tabelog.com/shiga/A2504/A250403/25012227/" },
     tags: ["定食", "食堂", "滋賀", "長浜", "ランチ", "夜営業"],
     budget: "¥1,000〜¥2,000",
     body: [
@@ -9184,8 +8990,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "17",
     nearest: "中電前駅",
     phone: "082-243-8829",
-    rating: "3.32",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340117/34030969/" },
     tags: ["洋食", "広島", "中区", "ランチ", "ディナー"],
     budget: "¥1,500〜¥3,000",
     body: [
@@ -9222,8 +9026,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "64",
     nearest: "深井駅",
     phone: "072-281-3006",
-    rating: "3.33",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27035134/" },
     tags: ["居酒屋", "大阪", "堺", "深夜営業", "一人飲み", "宴会"],
     budget: "¥3,000〜¥5,000",
     body: [
@@ -9261,8 +9063,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "山陽女学園前駅",
     phone: "082-923-5551",
     budget: "〜¥1,500",
-    rating: "3.54",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340127/34023341/" },
     body: [
       "広島市佐伯区美の里の住宅街に、ひっそりと暖簾を掲げる手打ちそば専門店。自家製粉から手がけるそばは香りと風味が豊かで、地元の常連客から長年愛されている。",
       "11時開店で売り切れ次第終了という潔いスタイル。木曜定休。近隣に住む人が足繁く通う、地域に根ざした一軒だ。",
@@ -9298,8 +9098,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "車利用推奨",
     phone: "090-9726-0014",
     instagram: "kominkacafe_nagomi",
-    rating: "3.05",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4003/A400302/40071489/" },
     tags: ["カフェ", "バー", "古民家", "福岡", "宮若", "深夜営業"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -9335,8 +9133,6 @@ export const RESTAURANTS: Restaurant[] = [
     closed: "不定休（事前確認推奨）",
     seats: "10",
     nearest: "当別駅",
-    rating: "3.15",
-    source: { label: "食べログ", url: "https://tabelog.com/hokkaido/A0107/A010702/1075583/" },
     tags: ["カフェ", "コーヒー", "北海道", "当別", "ランチ"],
     budget: "〜¥1,000",
     body: [
@@ -9373,8 +9169,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "15",
     nearest: "福間駅",
     phone: "080-7835-3787",
-    rating: "3.22",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4003/A400302/40062846/" },
     tags: ["焼き鳥", "居酒屋", "福岡", "福津", "一人飲み", "宴会"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -9411,8 +9205,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "緑地公園駅・曽根駅",
     phone: "06-7174-1871",
-    rating: "3.03",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2706/A270601/27065919/" },
     tags: ["居酒屋", "名古屋めし", "大阪", "豊中", "一人飲み", "宴会"],
     budget: "¥3,000〜¥5,000",
     body: [
@@ -9451,8 +9243,6 @@ export const RESTAURANTS: Restaurant[] = [
     phone: "0948-52-3379",
     instagram: "yakitatepan_warawara",
     budget: "〜¥1,000",
-    rating: "3.00",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4007/A400702/40058491/" },
     body: [
       "福岡・嘉麻市のゆめマート稲築店内に構える焼きたてパン専門店。毎朝丁寧に焼き上げた総菜パンから菓子パンまでが早朝7時から並び、朝の買い物と合わせて立ち寄れる。",
       "日曜・祝日は定休。売り切れ次第閉店というスタイルが地元客の間で早起きを促す。新鮮な焼きたてパンを確実に手に入れたければ開店直後が狙い目だ。",
@@ -9488,8 +9278,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "北野駅",
     phone: "0942-78-7624",
     budget: "〜¥1,000",
-    rating: "3.06",
-    source: { label: "食べログ", url: "https://tabelog.com/fukuoka/A4008/A400801/40029416/" },
     body: [
       "福岡・久留米の北野駅すぐに構えるパン専門店。地元産小麦を使った食事パンから菓子パンまで豊富に揃え、月曜から土曜の朝7時から夜まで営業する。",
       "日曜は休みだが、週6日の安定した営業が地域住民の日常に溶け込んでいる。素材の味を活かしたシンプルなパンが根強いファンを持つ、地元密着の一軒。",
@@ -9524,8 +9312,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "高井田駅（大阪メトロ）",
     phone: "06-6720-8735",
-    rating: "3.04",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2707/A270703/27146350/" },
     tags: ["カフェ", "大阪", "東大阪", "ランチ"],
     budget: "〜¥1,000",
     body: [
@@ -9562,8 +9348,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "72",
     nearest: "堺東駅",
     phone: "072-232-3504",
-    rating: "3.34",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27008943/" },
     tags: ["日本料理", "居酒屋", "大阪", "堺", "ランチ", "ディナー"],
     budget: "¥3,000〜¥5,000",
     body: [
@@ -9600,8 +9384,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "23",
     nearest: "八戸ノ里駅（近鉄奈良線）",
     phone: "06-6783-1112",
-    rating: "3.09",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2707/A270703/27075116/" },
     tags: ["居酒屋", "小皿料理", "大阪", "東大阪", "一人飲み", "深夜営業"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -9638,8 +9420,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "22",
     nearest: "元宇品口バス停",
     phone: "082-251-7717",
-    rating: "3.26",
-    source: { label: "食べログ", url: "https://tabelog.com/hiroshima/A3401/A340102/34002171/" },
     tags: ["イタリアン", "広島", "南区", "ランチ", "ディナー"],
     budget: "¥2,000〜¥4,000",
     body: [
@@ -9677,8 +9457,6 @@ export const RESTAURANTS: Restaurant[] = [
     nearest: "近鉄布施駅",
     phone: "06-6781-0357",
     budget: "〜¥1,500",
-    rating: "3.40",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2707/A270703/27014683/" },
     body: [
       "大阪・東大阪市長堂、近鉄大阪線の布施駅から徒歩圏内に「手打ちそば屋 庵 いほり」がある。石臼挽きの粉を使った手打ちそばをリーズナブルに楽しめる地元の名店だ。",
       "蕎麦の風味と喉越しにこだわる店主が、毎日その日分のそばを手打ちで仕上げる。ざるそば・かけそばなどシンプルなメニューで蕎麦本来の味を堪能でき、地元客を中心に「近所に一軒あってほしい蕎麦屋」として長く愛されている。",
@@ -9714,8 +9492,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "13",
     nearest: "元町駅（車利用推奨）",
     phone: "011-788-9288",
-    rating: "3.55",
-    source: { label: "食べログ", url: "https://tabelog.com/hokkaido/A0101/A010202/1069676/" },
     tags: ["ラーメン", "北海道", "札幌", "一人飲み"],
     budget: "〜¥1,500",
     body: [
@@ -9752,8 +9528,6 @@ export const RESTAURANTS: Restaurant[] = [
     seats: "20",
     nearest: "深井駅",
     phone: "072-270-5319",
-    rating: "3.15",
-    source: { label: "食べログ", url: "https://tabelog.com/osaka/A2705/A270501/27101014/" },
     tags: ["イタリアン", "和食", "大阪", "堺", "ランチ", "ディナー"],
     budget: "¥2,000〜¥4,000",
     body: [
