@@ -10905,7 +10905,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -10914,7 +10914,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "広島市中心部に構える割烹。季節の食材を丁寧に扱ったコース料理が評判で、接待や記念日に重宝される隠れ家的な一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "割烹" },
           { k: "エリア", v: "広島・八丁堀" },
@@ -10928,7 +10928,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮丼",
         area: "広島・広島駅北口",
         desc: "広島駅北口エリアの海鮮丼とホットサンドの専門店。新鮮な魚介を使った丼は地元ランチ客に愛される一皿。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮丼" },
           { k: "エリア", v: "広島・広島駅北口" },
@@ -10942,7 +10942,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島・幟町",
         desc: "完全予約制の本格イタリアン。広島・幟町の隠れ家で、厳選食材を使ったコース料理が評判。特別な日の選択肢として人気を集める。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "広島・幟町" },
@@ -10956,7 +10956,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ステーキ・肉料理",
         area: "広島・高取",
         desc: "精肉店直営のステーキ・肉料理店。確かな目利きで選んだ肉を適正価格で提供する、広島・安佐南区の実力店。",
-        images: ["https://images.unsplash.com/photo-1544025162-d76694265947?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/281008/640x640_rect_db2133e9dbf840102ae784f73ce5d060.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ステーキ・肉料理" },
           { k: "エリア", v: "広島・安佐南区" },
@@ -11005,7 +11005,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11014,7 +11014,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・堺",
         desc: "堺エリアの居酒屋。深夜まで営業し、一人飲みから宴会まで幅広く対応する。季節の酒肴と豊富な日本酒が揃う。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・堺" },
@@ -11028,7 +11028,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・居酒屋",
         area: "大阪・堺",
         desc: "堺で評判の日本料理・居酒屋。ランチからディナーまで通し営業し、旬の食材を使った和の一品が揃う。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/62900/640x640_rect_62900362.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "日本料理・居酒屋" },
           { k: "エリア", v: "大阪・堺" },
@@ -11077,7 +11077,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/350659/640x640_rect_8abcd21db487394715e747d2ae11b7d0.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11086,7 +11086,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん・居酒屋",
         area: "東京・西新井",
         desc: "足立区西新井の深夜うどん居酒屋。福岡うどんのスタイルで深夜営業し、仕事帰りの締めの一杯に重宝される。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350659/640x640_rect_8abcd21db487394715e747d2ae11b7d0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "うどん・居酒屋" },
           { k: "エリア", v: "東京・西新井" },
@@ -11100,7 +11100,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ダイニングバー",
         area: "神戸・新長田",
         desc: "神戸・長田区の深夜まで営業するイタリアンバー。ピザとクラフトビールが揃い、遅い時間でも活気ある空間が続く。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://ximg.retty.me/crop/s1200x800/q80/das/-/retty/img_ebisu/restaurant/100001766847/archive/3516728-67a719eab9dd4.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・バー" },
           { k: "エリア", v: "神戸・新長田" },
@@ -11114,7 +11114,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー・夜カフェ",
         area: "福岡・宮若",
         desc: "福岡・宮若の古民家を改装した深夜カフェ。夜20時から早朝3時まで営業し、音楽と静かな空間が深夜の拠り所になっている。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [
           { k: "ジャンル", v: "バー・夜カフェ" },
           { k: "エリア", v: "福岡・宮若" },
@@ -11128,7 +11128,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・バー",
         area: "福岡・姪浜",
         desc: "福岡・姪浜の深夜営業イタリアンバー。料理とドリンクのクオリティが高く、深夜でも食事を楽しめる数少ない一軒。",
-        images: ["https://images.unsplash.com/photo-1544025162-d76694265947?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/199463/640x640_rect_28056dce35037d23a1e556b0e8f2f46c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・バー" },
           { k: "エリア", v: "福岡・姪浜" },
@@ -11163,7 +11163,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r23/r23-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -11172,7 +11172,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "大阪・上本町",
         desc: "天王寺区・上本町に構える珈琲と紅茶の専門店。こだわりの豆を丁寧に抽出した一杯は、静かな午後のひと休みにぴったり。ランチタイムも地元の常連で賑わう。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r23/r23-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "珈琲・紅茶専門店" },
           { k: "エリア", v: "大阪・上本町" },
@@ -11186,7 +11186,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・フレンチスイーツ",
         area: "大阪・本町",
         desc: "靭公園そば、ミシュラン一つ星「Différence」の姉妹店。和歌山産の旬の果物を使ったフレンチスイーツと丁寧なコーヒーが評判。食べログカフェWEST百名店2025選出。",
-        images: ["https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・フレンチスイーツ" },
           { k: "エリア", v: "大阪・本町" },
@@ -11200,7 +11200,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪・新町",
         desc: "大阪メトロ西長堀駅から徒歩3分、堀江・新町エリアのカフェ。エルメスの食器でいただくナポリタンやスイーツが大人女性に愛される。INSOUビル2Fの隠れ家的な一軒。",
-        images: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"],
+        images: ["/restaurants/r41/r41-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "和モダンカフェ" },
           { k: "エリア", v: "大阪・新町" },
@@ -11214,7 +11214,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "大阪・蒲生四丁目",
         desc: "城東区・蒲生四丁目の住宅街に佇くカフェ。地元客がランチに通う穴場で、手作りのワンプレートランチと自家製スイーツが揃う。ゆったりとした空間が魅力。",
-        images: ["https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303895/640x640_rect_fad6e51378d4ed75d6c0c3dd529a420e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "大阪・蒲生四丁目" },
@@ -11263,7 +11263,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/r30/r30-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -11272,7 +11272,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮・牡蠣・秋田地酒",
         area: "大阪・なんば",
         desc: "なんば駅31番出口から徒歩1〜2分。牡蠣専門店の姉妹店で生牡蠣・牡蠣の辛鍋コースと秋田地酒30種以上が揃う全席禁煙の居酒屋。海鮮好きにはたまらない一軒。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮・牡蠣" },
           { k: "エリア", v: "大阪・なんば" },
@@ -11286,7 +11286,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "干物居酒屋・海鮮",
         area: "大阪・梅田",
         desc: "東梅田駅徒歩1分、大阪駅前第4ビルB2F。脂の乗ったトロサバが看板の干物専門居酒屋。昼は干物定食、夜は干物を肴に豊富な日本酒が揃い、ランチも夜も使い勝手がよい。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r47/r47-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "干物居酒屋・海鮮" },
           { k: "エリア", v: "大阪・梅田" },
@@ -11300,7 +11300,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮・和食",
         area: "大阪・北浜",
         desc: "北浜駅6番出口から徒歩1分のビルB1F。市場直送の旬の鮮魚と厳選日本酒約30種が揃う隠れ家的空間。炊きたて鯛飯が看板で、ひとり飲みから会食まで対応する。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r25/r25-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮・和食" },
           { k: "エリア", v: "大阪・北浜" },
@@ -11314,7 +11314,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・大阪城北詰",
         desc: "都島区・大阪城北詰駅すぐの居酒屋。リーズナブルな価格で旬の料理と豊富なドリンクが楽しめ、宴会・コース利用にも対応する。仕事帰りの一杯から大人数の飲み会まで幅広く使える。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・大阪城北詰" },
@@ -11328,7 +11328,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理（和食）",
         area: "大阪・福島",
         desc: "阪神「福島」駅東出口から徒歩1分。一軒家をフルリノベした和モダンの小料理屋。当日仕入れで変わる先付・前菜盛りと日本酒10種前後が揃う。食べログ評価4.2の実力店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/r21/r21-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・小料理" },
           { k: "エリア", v: "大阪・福島" },
@@ -11342,7 +11342,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・堺",
         desc: "堺・深井駅近くの本格居酒屋。旬の食材を使ったこだわりの酒肴と豊富な日本酒・焼酎が自慢。個室も完備し、少人数から宴会まで幅広く対応する地元の名店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・堺" },
@@ -11377,7 +11377,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r35/r35-image-1.png",
     ranking: [
       {
         rank: "01",
@@ -11386,7 +11386,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（マルケ州郷土料理）",
         area: "大阪・高麗橋",
         desc: "肥後橋駅徒歩3分の2階隠れ家イタリアン。シェフがマルケ州ミシュラン星付きレストランで修業後2018年開業。ポルケッタやストロッツァプレーティなど本場郷土料理を16席で提供。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [
           { k: "ジャンル", v: "イタリアン（マルケ州）" },
           { k: "エリア", v: "大阪・高麗橋" },
@@ -11400,7 +11400,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ナポリピッツァ",
         area: "大阪・天神橋六丁目",
         desc: "天神橋筋六丁目駅から徒歩4分のナポリピッツァ専門店。本場ナポリのマリオ・アクント製薪窯で焼き上げる一枚は生地の香ばしさと耳のもっちり感が圧倒的。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ナポリピッツァ" },
           { k: "エリア", v: "大阪・天神橋六丁目" },
@@ -11414,7 +11414,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（和牛・ワイン）",
         area: "大阪・本町",
         desc: "本町駅から徒歩5分、三休橋ガーデンスケープ内のイタリアン。熊本県産黒毛和牛「和王」とイタリアン、厳選ワインを軸にした大人の一軒。会食・デートに最適な空間。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛・ワイン" },
           { k: "エリア", v: "大阪・本町" },
@@ -11428,7 +11428,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・肥後橋",
         desc: "西区・肥後橋エリアに構えるイタリア料理の一軒。食材へのこだわりと丁寧なサービスで、大阪のイタリアンシーンを長く支えてきた実力店。ランチ・ディナーともに予約推奨。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・肥後橋" },
@@ -11442,7 +11442,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和食",
         area: "大阪・堺",
         desc: "堺・深井駅徒歩3分。和の食材を生かしたイタリア料理が楽しめる唯一無二の一軒。ランチも充実し、夜は少人数の貸切にも対応。大阪南部エリアで際立つ個性。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/294224/640x640_rect_e94abf2460a1517056b29355bb3a61c5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和食" },
           { k: "エリア", v: "大阪・堺" },
@@ -11477,7 +11477,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/321866/640x640_rect_22a0e0186c9d3bb6f48bd41d282e11d5.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11486,7 +11486,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "京都・上桂",
         desc: "阪急上桂駅から徒歩8分の住宅街に位置する洋食店。ランチ・ディナーともにコースや定食スタイルで丁寧な洋食を30席で提供する。地元住民に長く愛される実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321866/640x640_rect_22a0e0186c9d3bb6f48bd41d282e11d5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食" },
           { k: "エリア", v: "京都・上桂" },
@@ -11500,7 +11500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・烏丸",
         desc: "京都・烏丸エリアのお出汁と日本酒の和食居酒屋。1Fカウンター・テーブル、2F掘りごたつの二層構造。丁寧に引いた出汁料理と厳選日本酒のペアリングが評判でランチも人気。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食" },
           { k: "エリア", v: "京都・烏丸" },
@@ -11514,7 +11514,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食・食堂",
         area: "京都・上賀茂",
         desc: "上賀茂神社近くの一膳飯屋。フレンチ出身のシェフが作るランチ・ディナーの洋食定食が評判。定食スタイルで気軽に本格洋食が楽しめる、地元北区の名店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/275893/640x640_rect_d599dd2b77e9ccd8fca72f31a405c9f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食・食堂" },
           { k: "エリア", v: "京都・上賀茂" },
@@ -11528,7 +11528,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "京都・鞍馬口",
         desc: "鞍馬口駅すぐ、石臼で挽いたそば粉を手打ちにした蕎麦専門店。ランチと夜の2部営業で、丁寧に打ち上げたそばと旬の肴を楽しめる。京都北部の静かな住宅街に佇む一軒。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "京都・鞍馬口" },
@@ -11577,7 +11577,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11586,7 +11586,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮・鉄板焼き",
         area: "京都・河原町",
         desc: "京都河原町駅から徒歩2分の好立地。海鮮・鉄板焼きを中心に多彩なメニューを揃え、カウンター・テーブル・個室の38席で夜通し楽しめる。仕事帰りから宴会まで対応。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮・鉄板焼き" },
           { k: "エリア", v: "京都・河原町" },
@@ -11600,7 +11600,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本料理",
         area: "京都・西院",
         desc: "嵐電西大路三条駅から徒歩3分の京都・西院エリア。旬の海鮮を使った日本料理を18席のこじんまりとした空間で提供する、地元客に愛される居酒屋。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/331261/640x640_rect_9d06d2a99ac81fdeb00a786e07c878e1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・日本料理" },
           { k: "エリア", v: "京都・西院" },
@@ -11614,7 +11614,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "京都・山科",
         desc: "京阪山科駅近くの居酒屋。22席の温かみある空間で旬の料理と地酒を楽しめる。火〜日・祝は深夜0時まで営業し、仕事終わりの遅い時間にも重宝する。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/277711/640x640_rect_2cbf466cf374bdbd588ba6fd3ca982b0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "京都・山科" },
@@ -11628,7 +11628,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "京都・四条烏丸",
         desc: "四条烏丸エリア、築100年の京町家を改装した創作居酒屋。おでん・おばんざいを中心に京の食文化を気軽に楽しめる。2023年4月開業の新しい名店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "京都・四条烏丸" },
@@ -11642,7 +11642,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・炭火焼き",
         area: "京都・伏見",
         desc: "伏見エリアの居酒屋・炭火焼き食堂。伏見の清水が育む食材と地酒を組み合わせ、炭火で焼き上げる一品が揃う。伏見観光の締めにも適した一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/328301/640x640_rect_f1d6cbc8d4e70770d029717c8cf7d286.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・炭火焼き" },
           { k: "エリア", v: "京都・伏見" },
@@ -11677,7 +11677,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11686,7 +11686,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎",
         area: "京都・元田中",
         desc: "叡山電鉄・元田中駅近くの自家焙煎珈琲専門店。旅をテーマにした空間で、その日に焙煎したコーヒーを提供する。火〜日の10〜19時営業で、週末のカフェ巡りにも最適。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・自家焙煎" },
           { k: "エリア", v: "京都・元田中" },
@@ -11700,7 +11700,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "京都・藤森",
         desc: "京都・伏見区深草、藤森駅エリアにある昭和レトロ薫る喫茶店。オーガニックコーヒーとハンドメイドカレーが評判で、のりトーストも必食メニュー。ゆったりくつろげる空間。",
-        images: ["https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/344614/640x640_rect_67cdf1bac10ae95c624cd4f7ed30c4bd.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "京都・藤森" },
@@ -11714,7 +11714,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "タルト・ケーキ",
         area: "京都・桂",
         desc: "京都市西京区・桂エリアのタルト専門店。旬のフルーツをふんだんに使ったカラフルで美しいタルトが並び、エディブルフラワーを添えたキラキラのタルトは必見。",
-        images: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/329117/640x640_rect_e1d8b760fdfad2ee805c1913ed3e4831.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "タルト・ケーキ" },
           { k: "エリア", v: "京都・桂" },
@@ -11749,7 +11749,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/167493/640x640_rect_47c3f3c66358f2bd3a4ee4549b8623fb.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11758,7 +11758,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "京都・祇園",
         desc: "祇園・花見小路エリアのピッツェリア＆トラットリア。19席の空間で本格ナポリピッツァとイタリア料理を提供。ディナーはコース10,000〜15,000円で、特別な夜に映える一軒。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/167493/640x640_rect_47c3f3c66358f2bd3a4ee4549b8623fb.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ピザ" },
           { k: "エリア", v: "京都・祇園" },
@@ -11772,7 +11772,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・元田中",
         desc: "叡山電鉄元田中駅から徒歩1分のイタリアン。テーブル14席・カウンター6席の20席で、本格的なイタリア料理とワインを夜のみ提供する。気軽に通えるリストランテ。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・元田中" },
@@ -11786,7 +11786,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・西院",
         desc: "京都・西院の2Fに佇む小さなイタリア料理店。フレンチの技法を取り入れた融合スタイルで、14席の親密な空間にてコース料理を提供。予約推奨の隠れ家リストランテ。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349961/640x640_rect_5707d43430d229294751589884a5b2c0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・西院" },
@@ -11800,7 +11800,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・木屋町",
         desc: "阪急河原町駅徒歩3分、木屋町の路地に佇くイタリア料理店。17席の小さな空間で深夜0時まで営業するトラットリア。遅い時間まで使えるのが魅力。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・木屋町" },
@@ -11814,7 +11814,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・三条",
         desc: "京都市役所前・三条河原町近くのイタリアン酒場。炭火焼きや土鍋リゾット、豊富なワインが揃うカウンター中心の店内で、一人飲みからデートまで幅広く使える。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/210500/640x640_rect_ab44285941c29f0ac74620eed6931bb1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・三条" },
@@ -11849,7 +11849,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/173898/640x640_rect_7ded90469b1ad4bf0b0825ae185bb16b.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11858,7 +11858,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン・鶏白湯",
         area: "広島・宇品",
         desc: "宇品二丁目駅からほぼ目の前の鶏白湯ラーメン専門店。濃厚なのにすっきりとした後味のスープが自慢で、¥1,000以下のコスパも魅力。ランチとディナーともに地元客でにぎわう。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/173898/640x640_rect_7ded90469b1ad4bf0b0825ae185bb16b.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン・鶏白湯" },
           { k: "エリア", v: "広島・宇品" },
@@ -11872,7 +11872,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮丼",
         area: "広島・広島駅北口",
         desc: "広島駅北口からすぐ近くの海鮮丼とホットサンドの店。新鮮な魚介を使った海鮮丼がリーズナブルに楽しめる穴場。水・日・祝定休で月〜土が狙い目。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮丼" },
           { k: "エリア", v: "広島・広島駅北口" },
@@ -11900,7 +11900,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・定食",
         area: "広島・可部",
         desc: "広島・可部の住宅街に佇む一軒家カフェ。日替わりランチや焼き菓子など手づくりにこだわったメニューがそろい、地元に長く愛されている穏やかな空間。",
-        images: ["https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/186464/640x640_rect_945631b4bab9d89ca18c3daf9fe2bc14.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・定食" },
           { k: "エリア", v: "広島・可部" },
@@ -11914,7 +11914,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "広島・中区",
         desc: "広島・中区のビル1階に構える洋食店。コスパ抜群のランチ定食が人気で夜はコース料理も楽しめる。材料がなくなり次第終了という人気ぶりで、早めの来店が鉄則。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/334818/640x640_rect_a17a1cd6caa5658709fa74242cd84907.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食" },
           { k: "エリア", v: "広島・中区" },
@@ -11949,7 +11949,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -11958,7 +11958,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "広島・本通",
         desc: "広島・本通エリアに29年間根を下ろす江戸前鮨の一軒。9席のカウンターのみで職人と向き合いながら丁寧に握られるネタを堪能できる。コースのみの完全予約制。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "寿司" },
           { k: "エリア", v: "広島・本通" },
@@ -11972,7 +11972,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "広島・毘沙門台",
         desc: "広島・毘沙門台エリアにある居酒屋。定休日なしで毎日17時から深夜まで営業しており、地元のビジネスマンや常連客に愛されるアットホームな雰囲気が魅力。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "広島・毘沙門台" },
@@ -11986,7 +11986,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島・幟町",
         desc: "広島・幟町にあるトスカーナ料理をベースにしたリストランテ。予約は1日3組限定で食材へのこだわりが評判。バータイムは20時から。特別な夜に訪れたい一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "広島・幟町" },
@@ -12000,7 +12000,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ステーキ・肉料理",
         area: "広島・高取",
         desc: "精肉店直営の肉ダイニング。高取北の隠れ家的な場所にあり、ランチから食べ飲み放題のコースまで対応。仕入れ直結ならではのコスパの高い肉料理が揃う一軒。",
-        images: ["https://images.unsplash.com/photo-1544025162-d76694265947?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/281008/640x640_rect_db2133e9dbf840102ae784f73ce5d060.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ステーキ・肉料理" },
           { k: "エリア", v: "広島・高取" },
@@ -12049,7 +12049,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200",
+    heroImage: "/restaurants/r09/r09-hero.jpg",
     ranking: [
       {
         rank: "01",
@@ -12058,7 +12058,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・地鶏",
         area: "福岡・博多区美野島",
         desc: "博多区美野島の地鶏×焼酎の酒場。炭火で炙る看板のももやきと九州の焼酎を中心に揃えたドリンクで、平日のサク飲みから金土の深夜まで開ける32席の居酒屋。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・地鶏" },
           { k: "エリア", v: "福岡・博多区美野島" },
@@ -12072,7 +12072,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡・長浜",
         desc: "福岡・中央区長浜の鮮魚市場のすぐ近く、赤坂駅から歩いて立ち寄れる和食居酒屋。長浜の港町の流通を活かした寿司・刺身を22席のカウンター・テーブル・小上がりで提供。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r10/r10-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "日本料理・海鮮" },
           { k: "エリア", v: "福岡・長浜" },
@@ -12086,7 +12086,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "福岡・福津",
         desc: "福岡・福津の福間駅そばの焼鳥居酒屋。備長炭で丁寧に焼き上げた鶏串は絶品で、鮮度にこだわった刺身や酒肴も充実。地元客が通い続ける福津の名店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/267711/640x640_rect_90801af4c12588d03bab33bb0cee854e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "福岡・福津" },
@@ -12100,7 +12100,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・バー",
         area: "福岡・姪浜",
         desc: "姪浜駅圏内のイタリアン&バー。うに山盛りパスタが看板メニューで、ランチは¥1,000台から。ディナーは深夜1時〜3時まで営業し、食後のバータイムも楽しめる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/199463/640x640_rect_28056dce35037d23a1e556b0e8f2f46c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・バー" },
           { k: "エリア", v: "福岡・姪浜" },
@@ -12114,7 +12114,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー・夜カフェ",
         area: "福岡・宮若",
         desc: "福岡・宮若市の山間に建つ古民家を活用した深夜カフェ。木のぬくもりあふれる空間でドライブの途中にも気軽に立ち寄れる隠れ家。夜の静けさを堪能できる一軒。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [
           { k: "ジャンル", v: "バー・夜カフェ" },
           { k: "エリア", v: "福岡・宮若" },
@@ -12149,7 +12149,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r22/r22-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12158,7 +12158,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スペシャルティコーヒー",
         area: "福岡・博多駅前",
         desc: "JR博多駅から徒歩約8分のロースタリー兼カフェ。サイフォン抽出×自家焙煎スペシャルティコーヒーが看板。朝8:00開店で、カウンター6席＋テーブル3卓の小さな名店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スペシャルティコーヒー" },
           { k: "エリア", v: "福岡・博多駅前" },
@@ -12172,7 +12172,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン",
         area: "福岡・嘉麻",
         desc: "福岡・嘉麻のゆめマート稲築店内に構える焼きたてパン専門店。毎朝丁寧に焼き上げた多彩なパンが早朝から並ぶ。地元住民が朝の一本を求めて通い続ける店。",
-        images: ["https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/190734/640x640_rect_84bc31df60c436d2326e12f3d38461d5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン" },
           { k: "エリア", v: "福岡・嘉麻" },
@@ -12186,7 +12186,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン",
         area: "福岡・久留米",
         desc: "福岡・久留米の北野駅すぐのパン屋。地元産小麦にこだわった食事パンから菓子パンまで豊富にそろい、朝7時から開店する。久留米エリアで長く愛されるベーカリー。",
-        images: ["https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/237537/640x640_rect_431670485ecca9f0913b783726468a1b.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン" },
           { k: "エリア", v: "福岡・久留米" },
@@ -12221,7 +12221,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -12230,7 +12230,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・三宮",
         desc: "神戸・三宮から徒歩3分。A5ランク和牛をカジュアルに味わえる焼肉店。塩タン・赤身・ホルモンとコスパの良いラインナップが揃い、気軽に和牛を楽しめる。",
-        images: ["https://images.unsplash.com/photo-1544025162-d76694265947?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉" },
           { k: "エリア", v: "神戸・三宮" },
@@ -12244,7 +12244,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮",
         area: "神戸・元町",
         desc: "神戸・元町駅から徒歩3分の海鮮・天ぷら専門店。予約不可のウォークインのみで売り切れ次第終了。鮮度抜群の魚料理をランチとディナーで楽しめる人気店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311353/640x640_rect_f78ce16fc5ec36fe804e8905bee45909.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮" },
           { k: "エリア", v: "神戸・元町" },
@@ -12258,7 +12258,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "神戸・岡場",
         desc: "神戸・岡場駅から徒歩1分のビル3階に佇む隠れ家和バル。和食とバルの要素を融合させた料理と豊富なドリンクが揃う夜の一軒。ひとり飲みからグループまで対応。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345532/640x640_rect_09f0466dc489d42a445c6a149be0b556.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・和バル" },
           { k: "エリア", v: "神戸・岡場" },
@@ -12272,7 +12272,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "神戸・灘区",
         desc: "神戸・灘区の大石駅・摩耶駅から徒歩5分のイタリア料理店。手打ちパスタやナポリ風ピザを中心とした本格イタリアンを、アットホームな15席で楽しめる。",
-        images: ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/288586/640x640_rect_80a763753f8dc31d0c0724b9386f025f.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ピザ" },
           { k: "エリア", v: "神戸・灘区" },
@@ -12286,7 +12286,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・バル",
         area: "神戸・三宮",
         desc: "神戸三宮駅から徒歩3分のイタリアン・バル。カウンター6席・テーブル6席の計12席という小空間で、本格イタリアンと豊富なワインを深夜3時まで楽しめる。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/335164/640x640_rect_2ba8d6ad696e67ca8a98680587861b74.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・バル" },
           { k: "エリア", v: "神戸・三宮" },
@@ -12300,7 +12300,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ダイニングバー",
         area: "神戸・新長田",
         desc: "新長田駅南口から徒歩1分のアスタピア商業施設内。本格ピザ・パスタと豊富なワインを深夜2時まで楽しめるイタリアンダイニングバー。長田エリアの深夜の拠点。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://ximg.retty.me/crop/s1200x800/q80/das/-/retty/img_ebisu/restaurant/100001766847/archive/3516728-67a719eab9dd4.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ダイニングバー" },
           { k: "エリア", v: "神戸・新長田" },
@@ -12335,7 +12335,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r36/r36-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12344,7 +12344,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・手羽先・名古屋メシ",
         area: "名古屋・栄",
         desc: "栄駅セントラルパーク7A出口から徒歩10秒の手羽先専門居酒屋。名物の手羽先は1本190円、もつ鍋やこだわりの日本酒も揃う。終電まで使える栄の便利な一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/r36/r36-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・手羽先" },
           { k: "エリア", v: "名古屋・栄" },
@@ -12358,7 +12358,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮居酒屋・魚料理",
         area: "名古屋・黒川",
         desc: "地下鉄黒川駅徒歩圏、黒川ガスプラザB1Fの海鮮居酒屋。産直の鮮魚を活かす創作料理と、ランチ・ディナーとも幅広い時間帯で楽しめる「大人の和みダイニング」。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r45/r45-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "海鮮居酒屋" },
           { k: "エリア", v: "名古屋・黒川" },
@@ -12372,7 +12372,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・立ち飲み",
         area: "名古屋・栄",
         desc: "栄・矢場町通の路地に灯る「大人のアジト」。一階は立ち呑みのせんべろスタンド、二階はカウンター・ソファー・座敷の49席。月〜日深夜2時まで通し営業する名古屋の社交場。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・立ち飲み" },
           { k: "エリア", v: "名古屋・栄" },
@@ -12386,7 +12386,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食創作居酒屋",
         area: "名古屋・池下",
         desc: "池下駅から徒歩5分のチサンマンション1階。カウンター6席とテーブル22席で、季節の刺身・揚げ物・一品料理を銘酒とともに気軽に味わえる和食創作居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食創作居酒屋" },
           { k: "エリア", v: "名古屋・池下" },
@@ -12400,7 +12400,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "名古屋・国際センター",
         desc: "名古屋・国際センター駅徒歩3分。本格中華料理と割烹の技を融合させた夜のみ営業の中華割烹。特製の担々麺や酢豚が名物で、名古屋の食通が通う隠れた実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/219646/640x640_rect_7a1a0b1ca64efc9f84beaf99dac2a0ac.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "中華料理" },
           { k: "エリア", v: "名古屋・国際センター" },
@@ -12435,7 +12435,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200",
+    heroImage: "/restaurants/yakitori-shimaya-3.jpg",
     ranking: [
       {
         rank: "01",
@@ -12444,7 +12444,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "東京・南麻布",
         desc: "白金高輪駅から徒歩5分、南麻布の路地に佇む焼鳥店。オリジナル熊野地鶏を熟成専用冷蔵庫で寝かせた一串が看板。半個室・テラス席を備え、ペット同伴可の貴重な一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "東京・南麻布" },
@@ -12458,7 +12458,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥・炭火",
         area: "大阪・九条",
         desc: "大阪・九条駅から2分の炭火焼鳥店。食べログ評価3.53で地元の支持が厚く、カウンター13席と2階の個室が揃う。17:30開店で遅い時間まで使いやすい一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/346192/640x640_rect_ca92a66018ae9d3fdfb24e40c93a2aa7.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼鳥・炭火" },
           { k: "エリア", v: "大阪・九条" },
@@ -12472,7 +12472,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥・居酒屋",
         area: "神戸・中央区",
         desc: "三宮駅徒歩5分の神戸・中山手通に佇く焼き鳥・居酒屋。個室20席を含む24席で、深夜4時まで営業するため二次会・締めの一杯にも重宝する。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/332991/640x640_rect_659c639f724ce7f6c1b6df0814a52c29.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼鳥・居酒屋" },
           { k: "エリア", v: "神戸・中央区" },
@@ -12486,7 +12486,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・居酒屋",
         area: "京都・山科",
         desc: "京阪山科駅から徒歩4分、炭火で丁寧に焼き上げる焼き鳥専門店。カウンター6席・座敷18席の24席構成で、深夜1時半まで営業する山科の人気店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼き鳥・居酒屋" },
           { k: "エリア", v: "京都・山科" },
@@ -12500,7 +12500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥",
         area: "京都・西京極",
         desc: "阪急西京極駅から徒歩5分の炭火焼き鳥専門店。厳選した鶏を炭火でじっくり焼き上げる本格派。アクセスしやすい立地で、京都西部エリアの焼鳥ファンに愛される一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/300074/640x640_rect_3372d21a0e3971a90336514a92a04379.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼き鳥" },
           { k: "エリア", v: "京都・西京極" },
@@ -12514,7 +12514,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥",
         area: "広島・祇園",
         desc: "下祇園駅徒歩2分の炭焼き焼き鳥店。厳選した地鶏を備長炭で丁寧に焼き上げ、素材の旨みを最大限に引き出す。月〜土の夜のみ営業で地元常連客に愛される25席の店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129242/640x640_rect_129242311.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼き鳥" },
           { k: "エリア", v: "広島・祇園" },
@@ -12528,7 +12528,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "福岡・福津",
         desc: "福岡・福津の福間駅そばの焼鳥居酒屋。備長炭で丁寧に焼き上げた鶏串は絶品で、鮮度にこだわった刺身や酒肴も充実。九州の食材を生かした福岡の炭火焼鳥の一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/267711/640x640_rect_90801af4c12588d03bab33bb0cee854e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "福岡・福津" },
@@ -12563,7 +12563,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r22/r22-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12572,7 +12572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スペシャルティコーヒー",
         area: "福岡・博多駅前",
         desc: "JR博多駅から徒歩約8分のロースタリー兼カフェ。サイフォン抽出×自家焙煎スペシャルティコーヒーが看板。朝8:00開店で地元のコーヒーラバーが集まる小さな名所。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スペシャルティ" },
           { k: "エリア", v: "福岡・博多" },
@@ -12586,7 +12586,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・アジアコーヒー専門店",
         area: "大阪・中崎町",
         desc: "大阪メトロ中崎町駅から徒歩約3分、2024年8月開業の中国茶・野草茶・アジアコーヒー専門スタンド。中国語を話せるオーナーが茶農家を直接訪問して仕入れた希少茶葉を提供。",
-        images: ["https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"],
+        images: ["/restaurants/r28/r28-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "中国茶・アジアコーヒー" },
           { k: "エリア", v: "大阪・中崎町" },
@@ -12600,7 +12600,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪・新町",
         desc: "堀江・新町エリアのINSOUビル2Fに構える和モダンカフェ。エルメスの食器でいただくナポリタンやスイーツが大人女性に愛される。食べログカフェWEST百名店選出の実力店。",
-        images: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"],
+        images: ["/restaurants/r41/r41-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "和モダンカフェ" },
           { k: "エリア", v: "大阪・新町" },
@@ -12614,7 +12614,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪・中崎町",
         desc: "中崎町駅から徒歩4分の2階に構えるカフェ＆バー。12席の小さな空間でランチから深夜まで通し営業。昼のコーヒーも夜のカクテルも楽しめる気軽な一軒。",
-        images: ["https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・バー" },
           { k: "エリア", v: "大阪・中崎町" },
@@ -12628,7 +12628,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎",
         area: "京都・元田中",
         desc: "叡山電鉄・元田中駅近くの自家焙煎珈琲専門店。旅をテーマにした空間でその日に焙煎したコーヒーを提供する。火〜日の10〜19時営業。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・自家焙煎" },
           { k: "エリア", v: "京都・元田中" },
@@ -12691,7 +12691,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r49/r49-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12700,7 +12700,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ワインバル・イタリアン",
         area: "大阪・なんば",
         desc: "JR難波駅・地下鉄なんば駅から徒歩2〜3分のワインと小料理の店。グラスワイン¥500〜、一品¥550〜の良コスパ。シェフが市場で買い付けた魚介と野菜が主役のデートにも最適な空間。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["/restaurants/r49/r49-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ワインバル・イタリアン" },
           { k: "エリア", v: "大阪・なんば" },
@@ -12714,7 +12714,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（和牛・ワイン）",
         area: "大阪・本町",
         desc: "本町駅から徒歩5分、三休橋ガーデンスケープ内のイタリアン。熊本県産黒毛和牛「和王」とイタリアン、厳選ワインを軸にした大人の空間。記念日ディナーにも最適。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -12728,7 +12728,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "東京・蒲田",
         desc: "蒲田駅西口から徒歩4分のフランス料理ビストロ。豊富なナチュラルワインとフレンチ料理を、深夜1時まで楽しめる大人の隠れ家。カジュアルすぎず格式ばらずのデートに理想的。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "東京・蒲田" },
@@ -12742,7 +12742,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・木屋町",
         desc: "阪急河原町駅徒歩3分、木屋町の路地に佇くイタリア料理店。17席の小さな空間で深夜0時まで営業するトラットリア。京都の夜にカップルでしっとり過ごすのに最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・木屋町" },
@@ -12756,7 +12756,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "京都・富小路通の2階に佇むフレンチレストラン。ミシュランにも掲載され、京都出身シェフが地元食材を贅沢に使った料理を提供。ランチ・ディナーともに予約推奨の記念日向けの一軒。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -12770,7 +12770,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・伏見桃山",
         desc: "伏見桃山駅から徒歩1分のイタリアンワインバー。500g超えのカナダ産オマール海老が名物で、各種調理法で楽しめるオマールの迫力はデートや記念日に最高の演出となる。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/256486/640x640_rect_0492c0beabadce22cdbb7af0e6bfe6a9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・伏見桃山" },
@@ -12805,7 +12805,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/r38/r38-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12814,7 +12814,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み居酒屋",
         area: "大阪・関目",
         desc: "京阪・大阪メトロ関目駅から徒歩1分、2024年4月にオープンしたスタンド酒場。すべて手作りの料理がリーズナブルにいただける城東のアットホームな立ち飲み店。ひとり飲みに最適。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "立ち飲み居酒屋" },
           { k: "エリア", v: "大阪・関目" },
@@ -12828,7 +12828,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "福岡・多の津",
         desc: "福岡市東区・多の津に構えるラーメン店。コクはありながらもすっきりとした後味が特徴のスープを夜遅くまで提供する。一人でカウンターに座って向き合う一杯が格別。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "福岡・多の津" },
@@ -12842,7 +12842,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み",
         area: "神奈川・白楽",
         desc: "白楽駅から徒歩2分の立ち飲みスタンド。1階カウンターと2階テーブル席の2層構造で、フラッと一杯にも宴会にも対応。地域密着の温かい雰囲気でひとり飲みに心地よい。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/273536/640x640_rect_244e42e06cd1e13457233882f6e0f916.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "立ち飲み" },
           { k: "エリア", v: "神奈川・白楽" },
@@ -12856,7 +12856,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん・居酒屋",
         area: "東京・西新井",
         desc: "足立区・大師前駅近くで深夜21時から翌朝6時まで営業する福岡うどん居酒屋。博多系うどんと豊富な一品料理を夜通し楽しめる、深夜のひとり飯に最高の一軒。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350659/640x640_rect_8abcd21db487394715e747d2ae11b7d0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "うどん・居酒屋" },
           { k: "エリア", v: "東京・西新井" },
@@ -12870,7 +12870,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "京都・鞍馬口",
         desc: "鞍馬口駅すぐ、石臼で挽いたそば粉を手打ちにした蕎麦専門店。カウンター席でひとり向き合う一杯が最高。ランチと夜の2部営業で、静かな京都北部の佇まいも魅力。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "京都・鞍馬口" },
@@ -12919,7 +12919,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r37/r37-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -12928,7 +12928,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "大阪・三国",
         desc: "阪急三国駅から徒歩圏、淀川区三国本町の街道沿いに佇むラーメン店。澄んだスープと丁寧な仕事で地元客から長く愛される一軒。1000円以内で本格的な一杯が楽しめる。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r37/r37-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "大阪・三国" },
@@ -12942,7 +12942,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "京都・上桂",
         desc: "阪急上桂駅から徒歩8分の住宅街に位置する洋食店。30席でランチ・ディナーともに定食スタイルで丁寧な洋食を提供。リーズナブルな価格で地元に長く愛される実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321866/640x640_rect_22a0e0186c9d3bb6f48bd41d282e11d5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食" },
           { k: "エリア", v: "京都・上桂" },
@@ -12956,7 +12956,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食・食堂",
         area: "京都・上賀茂",
         desc: "上賀茂神社近くのフレンチ出身シェフが作る洋食定食の一膳飯屋。定食スタイルで気軽に本格洋食が楽しめ、1000円以内のランチが地元の北区住民に愛される。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/275893/640x640_rect_d599dd2b77e9ccd8fca72f31a405c9f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食・食堂" },
           { k: "エリア", v: "京都・上賀茂" },
@@ -13019,7 +13019,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200",
+    heroImage: "/restaurants/r49/r49-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -13028,7 +13028,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ワインバル・イタリアン",
         area: "大阪・なんば",
         desc: "なんば駅から徒歩2〜3分のワインと小料理の店。グラスワイン¥500〜、一品¥550〜の良コスパ。シェフが市場で買い付けた魚介と野菜が主役の、気軽なワインバル。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["/restaurants/r49/r49-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ワインバル・イタリアン" },
           { k: "エリア", v: "大阪・なんば" },
@@ -13042,7 +13042,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "名古屋・錦",
         desc: "名古屋・錦三丁目、第三錦ビル2階奥の隠れ家イタリアン。愛知近郊の野菜を使った料理とソムリエが選ぶワインを楽しめる。名古屋でワインと食事を楽しむ大人の一軒。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ワインバー" },
           { k: "エリア", v: "名古屋・錦" },
@@ -13056,7 +13056,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・自然派ワイン",
         area: "大阪・新福島",
         desc: "新福島駅から徒歩4分。「まごわやさしい」の思想で組む栄養バランス定食と自然派ワイン・純米酒が楽しめる居酒屋。食べログ評価3.58で48席の個室も揃える。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356315/640x640_rect_b0e5a4869832aa5740d0e7b08a8a71e9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・自然派ワイン" },
           { k: "エリア", v: "大阪・新福島" },
@@ -13070,7 +13070,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・ワインバー",
         area: "京都・桂",
         desc: "阪急桂駅から徒歩5分、全10席限定のビストロ。豊富なワインと丁寧な洋食料理を静かな空間で楽しめる桂エリアの隠れ家。少人数での贅沢なワイン会に最適。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266717/640x640_rect_a828f880ddc9a34da8e77f2a56944b88.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・ワインバー" },
           { k: "エリア", v: "京都・桂" },
@@ -13084,7 +13084,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン",
         area: "京都・桂",
         desc: "阪急桂駅から徒歩1分のバル・イタリアン。ステーキや本格イタリアン料理とワインを30席でリーズナブルに楽しめる。気軽にワインと食事を楽しめる京都の人気バル。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241443/640x640_rect_ce97ea00f4d496a118d5094ffb137c7f.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "バル・イタリアン" },
           { k: "エリア", v: "京都・桂" },
@@ -13098,7 +13098,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・伏見桃山",
         desc: "伏見桃山駅から徒歩1分のイタリアンワインバー。500g超えのカナダ産オマール海老が名物で各種調理法で楽しめる。ワインとオマールの組み合わせが圧巻の一軒。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/256486/640x640_rect_0492c0beabadce22cdbb7af0e6bfe6a9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・伏見桃山" },
@@ -13133,7 +13133,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-05",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "/restaurants/r06/r06-hero.jpg",
     ranking: [
       {
         rank: "01",
@@ -13142,7 +13142,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "東京・浅草",
         desc: "東京・浅草エリアに構えるラーメン店。独自のスープと丁寧な麺仕事で地元客から支持される一軒。浅草観光の締めにも立ち寄れる便利な立地。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r06/r06-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "東京・浅草" },
@@ -13156,7 +13156,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "福岡・多の津",
         desc: "福岡市東区・多の津のラーメン店。コクはありながらすっきりとした後味が特徴のスープを夜遅くまで提供する。九州の食文化を受け継ぐ福岡ラーメンの一軒。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "福岡・多の津" },
@@ -13170,7 +13170,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "京都・右京区",
         desc: "京都市右京区に構えるラーメン店。京都のラーメン文化を体現する一杯で、地元ラーメンファンから支持を受ける。深夜まで営業し仕事帰りの締めにも重宝する。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/10037/640x640_rect_10037958.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "京都・右京区" },
@@ -13184,7 +13184,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "担々麺・ラーメン",
         area: "京都・北野",
         desc: "京都・北野エリアの担々麺専門店。本格的な担々麺と豊富なバリエーションが揃い、辛さや痺れの調整も可能。京都でも数少ない本格担々麺の専門店として評判。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354520/640x640_rect_151cf4870d4b57ffc7d915fc6b84e167.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "担々麺・ラーメン" },
           { k: "エリア", v: "京都・北野" },
@@ -13198,7 +13198,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "台湾まぜそば・ラーメン",
         area: "京都・岡崎",
         desc: "京都・岡崎エリアの台湾まぜそば専門店。汁なし麺に特製ダレと豊富なトッピングを混ぜて食べる一杯は、ラーメンとはまた異なる満足感をもたらす京都の人気店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/226035/640x640_rect_0cd778219bc68ba16a2847887be512e7.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "台湾まぜそば・ラーメン" },
           { k: "エリア", v: "京都・岡崎" },
@@ -13247,7 +13247,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -13256,7 +13256,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "大田区蒲田",
         desc: "京急蒲田駅から徒歩約4分の老舗鮨店。昼の握りランチから夜の本格鮨まで、職人が丁寧に仕立てる江戸前鮨を蒲田で楽しめる一軒。ランチは¥15,000前後とハレの日にも相応しい。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "鮨" },
           { k: "エリア", v: "大田区蒲田" },
@@ -13270,7 +13270,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "大田区新蒲田",
         desc: "毎朝仕入れる新鮮な魚介を主役に、季節感溢れる一品料理と豊富な日本酒が揃う蒲田の海鮮・日本料理店。檜の一枚板カウンター席とお座敷を備え、接待や会食にも対応する。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311687/640x640_rect_8c9db276fdfb26056674b72307316d2c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮・日本料理" },
           { k: "エリア", v: "大田区新蒲田" },
@@ -13284,7 +13284,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大田区西蒲田",
         desc: "蒲田駅西口から徒歩4分のフランス料理ビストロ。豊富なナチュラルワインとフレンチ料理を楽しめる大人の隠れ家。深夜1時まで営業するため、ランチ遅めの利用にも対応する。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "大田区西蒲田" },
@@ -13298,7 +13298,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "浅草",
         desc: "浅草仲見世通りからほど近く、馬道通りを折れた裏路地に灯る一軒。中華料理で腕を磨いた店主・渡邉直通氏が手がける鶏白湯ラーメン。ニンニクを使わず脂を閉じ込めた一杯を、カウンター18席のみで提供する。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r06/r06-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "浅草" },
@@ -13312,7 +13312,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "立川市",
         desc: "立川の居酒屋。旬の魚介を中心とした一品料理と豊富な日本酒・焼酎が揃う。カウンター11席・テーブル10席の落ち着いた空間で、素材の味を活かした料理をじっくりと楽しめる。ランチ利用にも対応する。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/247649/640x640_rect_979169f3c6dd92dbfad0e3ecc46eb795.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・日本料理" },
           { k: "エリア", v: "立川市" },
@@ -13347,7 +13347,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/yakitori-shimaya-3.jpg",
     ranking: [
       {
         rank: "01",
@@ -13356,7 +13356,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "南麻布",
         desc: "白金高輪駅から徒歩5分、南麻布の路地に佇む焼鳥店。オリジナル熊野地鶏を熟成専用冷蔵庫で寝かせた一串が看板。半個室・テラス席を備え、接待やデートにも対応する貴重な一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "南麻布" },
@@ -13370,7 +13370,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き",
         area: "蒲田",
         desc: "広島出身シェフが手がける鉄板お好み焼き×ワインバー。蒲田駅西口から徒歩5分の10席限定店。農園直送の野菜と広島産食材を使った「ニクタマ焼き」はメディアでも話題。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/271400/640x640_rect_22f7d95f81e1551fe0e8c283e9afabf3.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き・ワインバー" },
           { k: "エリア", v: "蒲田" },
@@ -13384,7 +13384,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き",
         area: "蒲田",
         desc: "蒲田駅から徒歩5分、SANKOビル5Fに構えるお好み焼き居酒屋。50席の広々とした空間で、出汁にこだわった創作焼きを夜遅くまで提供。宴会から気軽な一杯まで対応する。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/268383/640x640_rect_75f760daa4c4facf8328fe7cfd4538f8.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き" },
           { k: "エリア", v: "蒲田" },
@@ -13398,7 +13398,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・居酒屋",
         area: "立川市",
         desc: "立川駅南口から徒歩約5分の焼き鳥居酒屋。カウンターと小上がりを備えた小規模店で、串焼きと角ハイボールを気軽に楽しめるアットホームな一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/154588/640x640_rect_154588899.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼き鳥・居酒屋" },
           { k: "エリア", v: "立川市" },
@@ -13412,7 +13412,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "立川市",
         desc: "立川駅から徒歩3分のビル2Fに構える焼肉店。38席を備え、平日は16時から、週末は昼12時から営業するアクセス良好な焼肉店。国産牛のランチからディナーまで幅広く利用できる。",
-        images: ["https://images.unsplash.com/photo-1544025162-d76694265947?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322422/640x640_rect_56aae8792b6f6ca3b1cdef5c1a515dc5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉" },
           { k: "エリア", v: "立川市" },
@@ -13447,7 +13447,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -13456,7 +13456,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大田区西蒲田",
         desc: "蒲田駅西口から徒歩4分のフランス料理ビストロ。豊富なナチュラルワインとフレンチ料理を深夜1時まで楽しめる大人の隠れ家。仕事帰りの「もう一軒」に最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "大田区西蒲田" },
@@ -13470,7 +13470,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥",
         area: "西蒲田",
         desc: "西蒲田の路地に佇む小さな焼き鳥屋。15時から開く早い時間の一杯に地元客が集う、コスパ抜群のこだわり串焼き店。昼下がりから使えるのが嬉しい。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/287657/640x640_rect_be2142a880af2238b65c44cf9a2ab48e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼き鳥" },
           { k: "エリア", v: "西蒲田" },
@@ -13484,7 +13484,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん・居酒屋",
         area: "足立区西新井",
         desc: "足立区・大師前駅近くで深夜21時から翌朝6時まで営業する福岡うどん居酒屋。博多系うどんと豊富な一品料理を夜通し楽しめる、知る人ぞ知る深夜の名店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350659/640x640_rect_8abcd21db487394715e747d2ae11b7d0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "うどん・居酒屋" },
           { k: "エリア", v: "足立区西新井" },
@@ -13498,7 +13498,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "浅草",
         desc: "浅草の路地裏に灯る鶏白湯ラーメン専門店。中華料理で腕を磨いた店主・渡邉氏が丁寧に仕込むスープはニンニクを使わず脂を閉じ込めた一杯。カウンター18席のみの小さな店に行列が絶えない。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r06/r06-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "浅草" },
@@ -13533,7 +13533,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "/restaurants/r10/r10-hero.jpg",
     ranking: [
       {
         rank: "01",
@@ -13542,7 +13542,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "中央区・長浜",
         desc: "福岡・中央区長浜の鮮魚市場のすぐ近く、赤坂駅から歩いて立ち寄れる和食居酒屋。長浜の港町の流通を活かした寿司・刺身を、22席のカウンター・テーブル・小上がりで提供する。ランチの海鮮定食は地元客に人気。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r10/r10-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "日本料理・海鮮" },
           { k: "エリア", v: "中央区・長浜" },
@@ -13556,7 +13556,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ・イタリアン",
         area: "福岡・博多",
         desc: "博多駅徒歩3〜4分、福岡朝日ビルB2Fに佇むパスタ専門店。ランチタイムはサラリーマンや観光客で賑わう人気店。厳選食材を使った本格パスタが¥1,000台で楽しめる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/333921/640x640_rect_4214b5aeefccdbbb4c8c622c77e65904.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パスタ・イタリアン" },
           { k: "エリア", v: "福岡・博多駅前" },
@@ -13570,7 +13570,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・バー",
         area: "福岡・姪浜",
         desc: "姪浜駅圏内のイタリアン&バー。うに山盛りパスタが看板メニューで、ランチは¥1,000台から。九州産食材を活かした本格イタリアンが手の届く価格で楽しめる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/199463/640x640_rect_28056dce35037d23a1e556b0e8f2f46c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・バー" },
           { k: "エリア", v: "福岡・姪浜" },
@@ -13584,7 +13584,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スペシャルティコーヒー",
         area: "博多区・博多駅前",
         desc: "JR・地下鉄「博多」駅博多口から徒歩約8分のロースタリー兼カフェ。サイフォン抽出×自家焙煎スペシャルティコーヒーが看板。朝8時から開店し、ランチ前後のカフェ休憩にも最適。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スペシャルティコーヒー" },
           { k: "エリア", v: "博多区・博多駅前" },
@@ -13598,7 +13598,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "多の津",
         desc: "福岡市東区・多の津に構えるラーメン店。コクはありながらもすっきりとした後味が特徴のスープを夜遅くまで提供する地元の一軒。ランチ利用も可能で、福岡ラーメンの多様性を体感できる。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "福岡・多の津" },
@@ -13633,7 +13633,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r52/r52-image-2.jpg",
     ranking: [
       {
         rank: "01",
@@ -13642,7 +13642,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（和牛・ワイン）",
         area: "大阪・本町",
         desc: "本町駅から徒歩5分、三休橋ガーデンスケープ内のイタリアン。熊本県産黒毛和牛「和王」とイタリアン、厳選ワインを軸に据えた大人の一軒。接待・ビジネス会食に相応しい格調ある空間。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -13656,7 +13656,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フライ割烹",
         area: "京都・烏丸",
         desc: "烏丸御池駅圏内のフライ割烹。厳選素材をカリッと揚げた「フライ割烹」という独自ジャンルが特徴。コースでゆったりと楽しむスタイルで、接待・記念日に最適な京都の実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/335077/640x640_rect_bf9608e68b5774b1a015c07cf269081e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フライ割烹" },
           { k: "エリア", v: "京都・烏丸" },
@@ -13670,7 +13670,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "八丁堀電停から徒歩1分の割烹。旬の食材を活かした和食を広島・立町で楽しめる。月〜土・祝は17時から深夜まで営業し、遅い時間の接待にも対応する広島の実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "割烹" },
           { k: "エリア", v: "広島・八丁堀" },
@@ -13684,7 +13684,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "東京・南麻布",
         desc: "白金高輪駅から徒歩5分、南麻布の路地に佇む焼鳥店。オリジナル熊野地鶏の熟成串が看板。半個室・テラス席を備え、ペット同伴可。2階はワンフロア貸切も可能で接待・会食に幅広く対応。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "東京・南麻布" },
@@ -13698,7 +13698,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "東京・大田区新蒲田",
         desc: "毎朝仕入れる新鮮な魚介を主役に、季節感溢れる一品料理と豊富な日本酒が揃う蒲田の海鮮・日本料理店。檜の一枚板カウンター席とお座敷を備え、接待や会食にも対応する東京の実力店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311687/640x640_rect_8c9db276fdfb26056674b72307316d2c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮・日本料理" },
           { k: "エリア", v: "東京・新蒲田" },
@@ -13733,7 +13733,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -13742,7 +13742,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・旭区関目高殿",
         desc: "関目高殿駅から徒歩圏内の落ち着いたビストロ。記念日・デートに評判の個室を備え、フレンチベースの創作料理とワインが楽しめる。昼のランチも人気が高い大阪の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "大阪・関目高殿" },
@@ -13756,7 +13756,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・文の里",
         desc: "文の里駅近くの静かな路地に佇むビストロ。シャルキトリーなど本場フランスの食文化を大阪で体感できる一軒。ワインのセレクションも充実し、大人のデートや会食に適している。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/277310/640x640_rect_482a31082e3e6cd0b52e8c737325809f.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "大阪・文の里" },
@@ -13770,7 +13770,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・フレンチ寄り",
         area: "大阪・本町",
         desc: "本町駅から徒歩5分の三休橋ガーデンスケープ内。熊本県産黒毛和牛「和王」とイタリアン、厳選ワインを軸にした上質な一軒。接待・記念日に選ばれる大阪のファインダイニング。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -13784,7 +13784,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・パスタ",
         area: "大阪・肥後橋",
         desc: "肥後橋駅そばの食べログ百名店。本格パスタとワインバーが融合した一軒で、ランチのコスパも高評価。デートや女子会にも支持される大阪・西区の実力イタリアン。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・肥後橋" },
@@ -13798,7 +13798,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（マルケ州郷土料理）",
         area: "大阪・高麗橋",
         desc: "中央区高麗橋の隠れ家イタリアン。イタリア・マルケ州の郷土料理を丁寧に仕上げ、豊富なワインと合わせて楽しめる。昼のランチも評判で、大阪の本格イタリアン好きに知られる一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・高麗橋" },
@@ -13833,7 +13833,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r52/r52-image-2.jpg",
     ranking: [
       {
         rank: "01",
@@ -13842,7 +13842,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・本町",
         desc: "本町の三休橋ガーデンスケープ内に構える、大阪を代表するファインダイニング。熊本県産黒毛和牛「和王」を主軸に、イタリアンの技法と厳選ワインが融合した格調ある空間で特別な夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -13856,7 +13856,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・肥後橋",
         desc: "食べログ百名店にも名を連ねる肥後橋のイタリアン。本格パスタとワインのペアリングが評判で、肥後橋の隠れ家的な立地も魅力。大阪の夜に豊かな時間を添えてくれる一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・肥後橋" },
@@ -13870,7 +13870,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（マルケ州）",
         area: "大阪・高麗橋",
         desc: "中央区高麗橋の隠れ家イタリアン。イタリア・マルケ州の郷土料理を再現した本格コースは、大阪のイタリアン好きの間で口コミが絶えない。夜の静かな路地で過ごす大人の時間がここにある。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・高麗橋" },
@@ -13884,7 +13884,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉・ホルモン",
         area: "大阪・上新庄",
         desc: "上新庄エリアで個室と掘りごたつ席が揃う焼肉店。ホルモンを中心に豊富な肉メニューが並び、宴会・貸切にも対応。大人数でも少人数でも、大阪の夜を肉とともに楽しめる一軒。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/r14/r14-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "焼肉・ホルモン" },
           { k: "エリア", v: "大阪・上新庄" },
@@ -13898,7 +13898,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・北浜",
         desc: "北浜駅徒歩圏内の海鮮居酒屋。新鮮な魚介と厳選日本酒が揃い、鯛飯が名物として人気を集める。個室・宴会対応で、北浜の夜ごはんの選択肢として高い評価を得ている大阪の実力店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r25/r25-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮" },
           { k: "エリア", v: "大阪・北浜" },
@@ -13933,7 +13933,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r15/r15-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -13942,7 +13942,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶・バー",
         area: "大阪・関目",
         desc: "城東区・関目に佇くクラシック音楽喫茶。深夜まで営業し、クラシックの流れる空間でコーヒーや酒を楽しめる大阪の異色の名店。昭和の薫りを残しながら独自の世界観を持つ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r15/r15-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "クラシック音楽喫茶・Bar" },
           { k: "エリア", v: "大阪・関目" },
@@ -13956,7 +13956,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "大阪・城東区",
         desc: "昭和レトロな雰囲気が漂う大阪・城東区の老舗喫茶。駄菓子といか焼きが楽しめるユニークなラインアップで地元客に長く愛される。大阪の下町カフェ文化を体感できる一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r17/r17-01.jpg"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "大阪・城東区" },
@@ -13970,7 +13970,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・フレンチスイーツ",
         area: "大阪・靭本町",
         desc: "靭本町のおしゃれなカフェ。フレンチトーストやパフェなどフレンチスイーツが評判で、食べログ百名店にも選出。デートや女子会に人気の、大阪・西区を代表する洗練されたカフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スイーツ" },
           { k: "エリア", v: "大阪・靭本町" },
@@ -13984,7 +13984,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "コーヒー専門店",
         area: "大阪・上本町",
         desc: "1943年創業の老舗コーヒー専門店。長年にわたり自家焙煎にこだわり続ける大阪・上本町の名店で、ギフトとしても人気が高い。大阪のコーヒー文化の歴史を体感できる希少な一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r23/r23-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "コーヒー専門店" },
           { k: "エリア", v: "大阪・上本町" },
@@ -13998,7 +13998,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和モダン",
         area: "大阪・新町",
         desc: "西区・新町の和モダンなカフェ。エルメスの食器を使うこだわりが話題で、堀江エリアに位置する洗練された空間が特徴。ランチからカフェタイムまで通える大阪・西区の実力店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r41/r41-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "大阪・新町" },
@@ -14056,7 +14056,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き（べた焼き）",
         area: "京都市中京区四条大宮",
         desc: "京都・四条大宮のべた焼き専門店。京都独自のスタイル「べた焼き」を現代に伝える数少ない店の一軒。地元客に長く愛されるシンプルで力強い味わいが特徴。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/206921/640x640_rect_f3281007ae6f791b121eaf63a7daf9d0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き（べた焼き）" },
           { k: "エリア", v: "京都・四条大宮" },
@@ -14070,7 +14070,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き",
         area: "京都市下京区清水五条",
         desc: "京都・清水五条駅近くのお好み焼き店。鉄板焼きも充実しており、地元の常連客と観光客の双方に支持される京都のお好み焼き実力店。コスパの良さも評判。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/337154/640x640_rect_9bb4257ca67b339d49ad0de6d7695a26.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き・鉄板焼き" },
           { k: "エリア", v: "京都・清水五条" },
@@ -14084,7 +14084,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き",
         area: "京都市右京区西院",
         desc: "京都・西院の深夜まで営業するお好み焼き店。夜遅くまで賑わう西院エリアで、しっかりとした鉄板料理を楽しめる。地元の飲み客にも愛されるアットホームな一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240464/640x640_rect_e93a027ff8b0dd884aafb7dec97cb06c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き" },
           { k: "エリア", v: "京都・西院" },
@@ -14098,7 +14098,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き・鉄板焼き",
         area: "奈良市",
         desc: "奈良市で深夜まで営業するお好み焼き・鉄板焼き店。観光地としての奈良とは異なる、地元の夜の顔を体感できる。鉄板で焼き上げる料理全般が揃い、飲みながら楽しむスタイルが人気。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/3494/9edd22d5c1517c654b2815a4a32f0a2a.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "お好み焼き・鉄板焼き" },
           { k: "エリア", v: "奈良市" },
@@ -14133,7 +14133,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14142,7 +14142,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "京都・河原町のミシュラン掲載フレンチ。京都の食文化を踏まえた上質なフレンチコースが評判で、記念日・特別な会食に選ばれる一軒。京都の夜を格調高く演出したいなら必訪の名店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -14156,7 +14156,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・西向日",
         desc: "京都郊外・西向日の完全予約制フレンチ。コース一本に絞り込んだ構成で、旬の食材を活かした料理が高い評価を受けている。週末に郊外まで足を伸ばす価値がある京都フレンチの実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・西京区" },
@@ -14170,7 +14170,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・ビストロ",
         area: "京都・伏見",
         desc: "伏見区・藤森エリアのフレンチ食堂。「食堂」の名が示す通り、気軽に通えるビストロスタイルのフレンチが魅力。伏見の地に根付き、地元客に親しまれている京都の穴場フレンチ。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/307411/640x640_rect_5008bd03cb3fa118a9f09f41a9f843d2.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ・ビストロ" },
           { k: "エリア", v: "京都・伏見区" },
@@ -14184,7 +14184,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ローストビーフ・フレンチ",
         area: "京都・上賀茂",
         desc: "完全予約制で営む上賀茂の専門店。ローストビーフを主軸にフレンチの技法を取り入れた料理が評判。予約が取りにくいほどの人気で、京都北区の隠れた名店として食通に知られる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338668/640x640_rect_ddb336e742a3f8fcc72ecd5cd62744ca.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ローストビーフ・フレンチ" },
           { k: "エリア", v: "京都・上賀茂" },
@@ -14219,7 +14219,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14228,7 +14228,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "京都・鞍馬口",
         desc: "京都市北区・鞍馬口のそば専門店。石臼で挽いたそば粉を職人が丁寧に手打ちする本格そばが評判。香り高い一杯を、京都の静かな住宅街の中で楽しめる知る人ぞ知る名店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "京都・鞍馬口" },
@@ -14242,7 +14242,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン・台湾まぜそば",
         area: "京都・聖護院",
         desc: "左京区・聖護院エリアのラーメン・台湾まぜそば店。多彩な麺メニューが揃い、そばの枠を超えた麺文化の厚みを体感できる。聖護院という立地も合わせ、京都の麺シーンを代表する一軒。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/226035/640x640_rect_0cd778219bc68ba16a2847887be512e7.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ラーメン・まぜそば" },
           { k: "エリア", v: "京都・聖護院" },
@@ -14277,7 +14277,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14286,7 +14286,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食（イノベーティブ）",
         area: "京都・祇園",
         desc: "祇園東山区の和食店。イノベーティブなアプローチで京都の食材を昇華したコース料理が高評価。¥20,000以上の高単価ながら予約が絶えない、京都ディナーシーンの頂点に立つ一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食・イノベーティブ" },
           { k: "エリア", v: "京都・祇園" },
@@ -14300,7 +14300,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・四条",
         desc: "四条・下京区のディナー専門料理屋。夜のみの営業で旬の食材を使った和食コースを提供する。予約制の落ち着いた空間で、京都の食材と技が凝縮された一夜を体験できる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食" },
           { k: "エリア", v: "京都・四条" },
@@ -14314,7 +14314,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司（江戸前）",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都・河原町の江戸前寿司店。町家を改装した趣ある空間で、熟練の職人が握る江戸前鮨を楽しめる。京都でありながら本格江戸前を体験できる数少ない名店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "寿司（江戸前）" },
           { k: "エリア", v: "京都・河原町" },
@@ -14328,7 +14328,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都・河原町フレンチ。京都の食材とフランス料理の技法を組み合わせたコースで、記念日・会食に最適な格調ある一軒。京都の夜を最高のフレンチで締めたい方に。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -14363,7 +14363,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14372,7 +14372,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・パスタ",
         area: "神戸・六甲道",
         desc: "六甲道駅近くのカフェ&パスタ店。ニューヨークスタイルのガーデンスペースで開放的なランチが楽しめる。スイーツも充実しており、女子会やカジュアルなランチデートにも最適な神戸の人気店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・パスタ" },
           { k: "エリア", v: "神戸・六甲道" },
@@ -14386,7 +14386,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・天ぷら",
         area: "神戸・元町",
         desc: "元町エリアの海鮮・天ぷら店。新鮮な魚介を使った料理が評判で、神戸・元町の食文化を体感できる一軒。ランチの天ぷら定食が地元客に好評で、平日でも混み合う人気店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311353/640x640_rect_f78ce16fc5ec36fe804e8905bee45909.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮・天ぷら" },
           { k: "エリア", v: "神戸・元町" },
@@ -14400,7 +14400,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん・カフェ",
         area: "神戸・須磨",
         desc: "須磨・板宿エリアのうどん&カフェ。手打ちうどんをランチの主役に据え、スイーツとのセット提供も人気。神戸・須磨の静かな住宅街に佇む、地元に愛される温かみのある一軒。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/355406/640x640_rect_0613760bf236b9feb7cbd2b90fb057ed.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "うどん・カフェ" },
           { k: "エリア", v: "神戸・須磨" },
@@ -14414,7 +14414,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "神戸・元町",
         desc: "元町・中央区の和食店。旬の食材を使ったランチメニューが充実しており、神戸の食材を活かした丁寧な一皿が楽しめる。落ち着いた空間で昼のひとときを過ごしたい方に最適な神戸の和食店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322849/640x640_rect_ad8557ce446cf558b68fddc46fceeb57.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食" },
           { k: "エリア", v: "神戸・元町" },
@@ -14428,7 +14428,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂・定食",
         area: "神戸・春日野道",
         desc: "春日野道駅近くの食堂。定食をメインに据えたシンプルながら充実したランチが評判で、地元の常連客に長く支持されている。神戸・中央区の庶民派ランチの実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/268486/640x640_rect_0200916a27ad772997b29e396360f7dd.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "食堂・定食" },
           { k: "エリア", v: "神戸・春日野道" },
@@ -14463,7 +14463,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14472,7 +14472,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スイーツ",
         area: "神戸・六甲道",
         desc: "六甲道のニューヨークスタイルカフェ。開放的なガーデンスペースで過ごすカフェタイムが魅力。スイーツの種類が豊富で、友人との女子会やデートのひとときに最適な神戸の人気カフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・スイーツ" },
           { k: "エリア", v: "神戸・六甲道" },
@@ -14486,7 +14486,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店・コーヒー",
         area: "神戸・西舞子",
         desc: "垂水区・西舞子の喫茶店。モーニングサービスが充実しており、朝から地元客で賑わう。コーヒーへのこだわりと落ち着いた空間が神戸・垂水エリアの常連に愛される老舗的な一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/208558/640x640_rect_431adf6d45b4f7ca70f02002f55c510c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "喫茶店・コーヒー" },
           { k: "エリア", v: "神戸・西舞子" },
@@ -14500,7 +14500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "神戸市北区",
         desc: "自家農園の野菜を使った料理が評判の神戸市北区の隠れ家カフェ。緑に囲まれた静かな空間でいただくランチとカフェメニューが人気で、神戸郊外の自然の中でゆっくり過ごしたい方に最適。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・和食" },
           { k: "エリア", v: "神戸・北区" },
@@ -14563,7 +14563,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r13/r13-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -14572,7 +14572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "名古屋・東区徳川町",
         desc: "東区・徳川町の洋食店。ハンバーグとカツレツが評判で、ランチのコスパが高い名古屋の洋食名店。禁煙・デートにも対応した清潔感ある空間で、平日昼に地元ビジネス客が多く訪れる。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r13/r13-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "洋食" },
           { k: "エリア", v: "名古屋・東区" },
@@ -14586,7 +14586,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・魚料理",
         area: "名古屋・北区黒川",
         desc: "北区・黒川の産直海鮮・魚料理店。産地直送の新鮮な魚介を使ったランチが充実しており、個室でゆったり楽しめる名古屋の海鮮実力店。夜の居酒屋としても人気が高い。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r45/r45-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "海鮮・魚料理" },
           { k: "エリア", v: "名古屋・黒川" },
@@ -14600,7 +14600,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "名古屋・南区",
         desc: "南区・外山・桜本町のイタリアン。パスタ・ピザが充実し、禁煙の清潔な空間でランチを楽しめる。地元ファミリーや主婦層に人気が高い名古屋・南区のイタリアン実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "名古屋・南区" },
@@ -14614,7 +14614,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "名古屋・今池",
         desc: "今池エリアのイタリアン。ピザとパスタを中心に、名古屋のイタリアン好きに知られる一軒。ランチのコスパが高く、近隣のビジネス客や大学生にも人気の今池の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/346456/640x640_rect_0ef030baee684dabdece5b1a684d3aa0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ピザ" },
           { k: "エリア", v: "名古屋・今池" },
@@ -14628,7 +14628,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ",
         area: "名古屋・本山",
         desc: "本山駅近くのパスタ専門店。手頃な価格で本格パスタが楽しめ、テイクアウトにも対応。ひとりでも気軽に入れる一人飯スタイルが人気で、名古屋・本山のランチシーンを支える実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パスタ" },
           { k: "エリア", v: "名古屋・本山" },
@@ -14663,7 +14663,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r43/r43-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -14672,7 +14672,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フルーツパーラー・カフェ",
         area: "名古屋・西区名駅",
         desc: "名駅エリアの老舗フルーツパーラー。新鮮なフルーツを使ったパフェや生ジュースが評判で、ランチメニューも充実。名古屋・西区の食文化を支える老舗ならではのクオリティが光る一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r43/r43-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "フルーツパーラー・カフェ" },
           { k: "エリア", v: "名古屋・名駅" },
@@ -14686,7 +14686,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・沖縄料理",
         area: "名古屋・尼ケ坂",
         desc: "尼ケ坂エリアのカフェ。沖縄料理とのユニークな組み合わせが特徴で、モーニングから営業するランチカフェとして地元に定着。名古屋・北区のちょっと変わった個性派カフェとして人気を集める。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・沖縄料理" },
           { k: "エリア", v: "名古屋・尼ケ坂" },
@@ -14700,7 +14700,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "コーヒースタンド・ナチュラルワイン",
         area: "名古屋・北区清水",
         desc: "北区・清水のコーヒースタンド。ナチュラルワインも扱うコンセプトストアで、古着との組み合わせが話題の新感覚店。名古屋の新しいカフェカルチャーを体感したい方に薦めたい一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r46/r46-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "コーヒースタンド" },
           { k: "エリア", v: "名古屋・北区清水" },
@@ -14779,7 +14779,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14788,7 +14788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "埼玉・志木市",
         desc: "志木市のフレンチレストラン。本格コース料理を接待・記念日に使える洗練された空間で提供する。埼玉でフレンチを食べるなら外せない一軒で、ランチコースのコスパも高評価。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "埼玉・志木" },
@@ -14802,7 +14802,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食居酒屋",
         area: "埼玉・浦和",
         desc: "浦和駅エリアの和食居酒屋。旬の料理と厳選日本酒が揃い、ランチから夜まで通えるオールラウンダーな一軒。浦和の地に根付いた地元客に愛される、埼玉の和食実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r42/r42-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "和食居酒屋" },
           { k: "エリア", v: "埼玉・浦和" },
@@ -14816,7 +14816,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "埼玉・川口",
         desc: "川口市のイタリアンレストラン。ピザ・パスタを中心に本格イタリアンが楽しめ、ワインのセレクションも充実。禁煙の清潔な空間で、埼玉・川口のイタリアン好きに長く愛されている実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/308012/640x640_rect_dbf8d16d5664bcd27f15f88ab7d351f5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "埼玉・川口" },
@@ -14830,7 +14830,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "おでん・居酒屋",
         area: "埼玉・大宮",
         desc: "大宮区・仲町のおでん&串揚げ居酒屋。飲み放題付きプランが揃い、宴会・グループ利用に最適。大宮の夜を盛り上げる実力店として埼玉の居酒屋好きに知られている。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r44/r44-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "おでん・居酒屋" },
           { k: "エリア", v: "埼玉・大宮" },
@@ -14844,7 +14844,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ・イタリアン",
         area: "埼玉・川越",
         desc: "川越市の手打ちパスタ店。国産小麦を使った手打ちパスタが評判で、ランチタイムの人気が高い。川越の観光と合わせて訪れたい埼玉・川越の本格パスタ実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/355332/640x640_rect_da3080fa4d359890eeb6ff3df882f37b.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パスタ・イタリアン" },
           { k: "エリア", v: "埼玉・川越" },
@@ -14879,7 +14879,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14888,7 +14888,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・三宮",
         desc: "三宮駅近くのA5和牛専門焼肉店。神戸という立地にふさわしい上質な和牛を堪能できる一軒で、特別な記念日・会食に選ばれる神戸の焼肉名店。ディナー専門の格調ある空間が評判。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉（A5和牛）" },
           { k: "エリア", v: "神戸・三宮" },
@@ -14902,7 +14902,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "炭火焼肉",
         area: "神戸・垂水",
         desc: "垂水エリアの炭火焼肉店。国産牛を炭火でじっくり焼き上げるスタイルが特徴で、肉の旨みを最大限に引き出す。神戸・垂水の地に根付く焼肉実力店として地元客に高い評価を受けている。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356955/640x640_rect_c4ef95d9aaa19f66a39bd29702a2e237.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "炭火焼肉" },
           { k: "エリア", v: "神戸・垂水" },
@@ -14916,7 +14916,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "大阪・岸和田",
         desc: "岸和田市の個室焼肉・VIPルーム完備の焼肉店。大阪南部エリアで接待や特別な会食に使える格式ある焼肉店。個室でゆったりと高品質な肉を楽しみたいシーンに最適。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324743/640x640_rect_f75495d231628d2863e5337430e3db05.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉（個室）" },
           { k: "エリア", v: "大阪・岸和田" },
@@ -14930,7 +14930,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "東京・大田区蒲田",
         desc: "蒲田の国産牛焼肉店。リーズナブルな価格で質の高い焼肉が楽しめ、東京・大田区エリアの焼肉好きに人気が高い。グループでの宴会・友人との夕食に重宝する蒲田の焼肉実力店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/292977/640x640_rect_11a9214ece1eee9443cfd1aed085d3f9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉" },
           { k: "エリア", v: "東京・蒲田" },
@@ -14944,7 +14944,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "東京・立川",
         desc: "立川市の焼肉店。多摩エリアを代表する焼肉実力店で、ランチの焼肉定食もコスパが高く評判。家族での食事から少人数の会食まで幅広く対応する東京・多摩の焼肉名店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322422/640x640_rect_56aae8792b6f6ca3b1cdef5c1a515dc5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉" },
           { k: "エリア", v: "東京・立川" },
@@ -14979,7 +14979,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -14988,7 +14988,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都フレンチ。河原町の洗練された立地で、京都の食材を活かしたコース料理が評判。特別な夜に選びたい京都を代表するフレンチの一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -15002,7 +15002,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・関目高殿",
         desc: "大阪・旭区関目高殿の落ち着いたビストロ。個室を備えた記念日・デートに評判の一軒で、フレンチベースの創作料理とワインが楽しめる大阪の実力ビストロ。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "大阪・関目高殿" },
@@ -15016,7 +15016,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "東京・蒲田",
         desc: "蒲田・西蒲田の深夜まで営業するビストロ。日本ワインとフレンチ料理のペアリングが評判で、東京・大田区の食通に知られる隠れ家的な一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・フレンチ" },
           { k: "エリア", v: "東京・蒲田" },
@@ -15030,7 +15030,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "埼玉・志木",
         desc: "志木市の本格フレンチ。接待・記念日に使える洗練されたコース料理が評判で、埼玉を代表するフレンチレストランとして地元の食通から支持されている。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "埼玉・志木" },
@@ -15044,7 +15044,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・ビストロ",
         area: "京都・伏見",
         desc: "伏見区・藤森エリアのフレンチ食堂。「食堂」の名の通り気軽に通えるビストロスタイルで、伏見の地元客に長く支持されている京都の穴場フレンチ実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/307411/640x640_rect_5008bd03cb3fa118a9f09f41a9f843d2.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ・ビストロ" },
           { k: "エリア", v: "京都・伏見区" },
@@ -15079,7 +15079,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -15088,7 +15088,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "京都・鞍馬口",
         desc: "京都市北区・鞍馬口の手打ちそば専門店。石臼で挽いたそば粉を職人が手打ちする本格そばが評判で、香り高い一杯を静かな京都の住宅街で楽しめる知る人ぞ知る名店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "京都・鞍馬口" },
@@ -15102,7 +15102,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "大阪・東大阪",
         desc: "東大阪・布施の手打ちそば店。石臼挽きにこだわる本格派で、国産そば粉の香りと職人の技が光る一杯を提供。ランチタイムに地元の麺好きが足を運ぶ大阪・東大阪の実力店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/334675/640x640_rect_9f9aef70022df6d3d5e23fa4d577a805.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "大阪・東大阪" },
@@ -15116,7 +15116,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん",
         area: "大阪・九条",
         desc: "西区・九条の手打ちうどん店。国産小麦を使ったうどんが評判で、ランチのコスパも高い大阪の実力うどん店。夜のうどん居酒屋スタイルも楽しめる、九条エリアの人気店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r39/r39-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "うどん" },
           { k: "エリア", v: "大阪・九条" },
@@ -15130,7 +15130,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば",
         area: "広島・佐伯区",
         desc: "広島市佐伯区の手打ちそば店。広島郊外の自然豊かなエリアで、こだわりの手打ちそばを提供するランチ実力店。広島の麺文化の奥深さを体感できる穴場的な存在。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/127644/640x640_rect_127644941.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "そば" },
           { k: "エリア", v: "広島・佐伯区" },
@@ -15144,7 +15144,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "うどん",
         area: "神戸・須磨",
         desc: "須磨・板宿エリアのうどん&カフェ。手打ちうどんとスイーツが楽しめるユニークな組み合わせが地元客に人気。神戸のうどん文化を気軽に体感できる、须磨の実力麺店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/355406/640x640_rect_0613760bf236b9feb7cbd2b90fb057ed.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "うどん" },
           { k: "エリア", v: "神戸・須磨" },
@@ -15179,7 +15179,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r51/r51-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -15188,7 +15188,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店・カフェ",
         area: "大阪・淡路",
         desc: "東淀川区・淡路の老舗喫茶店。モーニングが充実しており、朝から地元の常連客で賑わう。現金のみの昔ながらのスタイルで、昭和の喫茶文化を体感できる大阪の隠れた名喫茶。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r51/r51-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "大阪・淡路" },
@@ -15202,7 +15202,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・沖縄料理",
         area: "名古屋・尼ケ坂",
         desc: "名古屋・北区のカフェ。モーニングから営業し、コーヒーと沖縄料理のユニークな組み合わせが地元客に人気。名古屋のモーニング文化を個性豊かな形で体感できる一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "名古屋・尼ケ坂" },
@@ -15216,7 +15216,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "神戸・西舞子",
         desc: "垂水区・西舞子の喫茶店。充実したモーニングサービスが朝から地元客を引き付ける。コーヒーと朝食のセットが充実しており、神戸・垂水エリアで朝を過ごすなら訪れたい一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/208558/640x640_rect_431adf6d45b4f7ca70f02002f55c510c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "神戸・西舞子" },
@@ -15230,7 +15230,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン・ベーカリー",
         area: "福岡・嘉麻",
         desc: "福岡・嘉麻市の焼きたてパン店。地元産素材を使った焼きたてのパンが朝から楽しめる。福岡郊外でありながら地元客が朝の開店前から並ぶ、九州の朝ごはん文化を体感できる名店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/190734/640x640_rect_84bc31df60c436d2326e12f3d38461d5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン・ベーカリー" },
           { k: "エリア", v: "福岡・嘉麻" },
@@ -15244,7 +15244,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン・ベーカリー",
         area: "福岡・久留米",
         desc: "福岡・久留米北野の地元産小麦を使ったベーカリー。朝食用の焼きたてパンが充実しており、地元産素材へのこだわりが評判。久留米の朝ごはん文化を支える福岡の実力ベーカリー。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/237537/640x640_rect_431670485ecca9f0913b783726468a1b.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン・ベーカリー" },
           { k: "エリア", v: "福岡・久留米" },
@@ -15279,7 +15279,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/paofuku-interior-wide.jpg",
     ranking: [
       {
         rank: "01",
@@ -15288,7 +15288,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鶏料理・居酒屋",
         area: "大阪・天神橋筋六丁目",
         desc: "天六の鶏料理居酒屋。京赤地鶏を使った料理が評判で、個室・貸切に対応した宴会向けの一軒。一人飲みから大人数まで幅広く対応できる大阪の鶏料理実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/paofuku-interior-wide.jpg"],
         specs: [
           { k: "ジャンル", v: "鶏料理・居酒屋" },
           { k: "エリア", v: "大阪・天六" },
@@ -15302,7 +15302,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・手羽先",
         area: "大阪・城東区緑橋",
         desc: "城東区・緑橋の手羽先居酒屋。貸切・宴会対応で、ファミリーや大人数グループにも対応する大阪の使い勝手のいい居酒屋。手羽先を中心にボリューム感のあるメニューが揃う。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r05/r05-counter.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・手羽先" },
           { k: "エリア", v: "大阪・緑橋" },
@@ -15316,7 +15316,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・おばんざい",
         area: "大阪・野田阪神",
         desc: "福島区・野田阪神の居酒屋。おばんざいと炭火焼きを軸に、個室・貸切対応で宴会から少人数まで対応。大阪・福島区で落ち着いた雰囲気の中で楽しめる実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r19/r19-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・おばんざい" },
           { k: "エリア", v: "大阪・野田阪神" },
@@ -15330,7 +15330,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "おでん・居酒屋",
         area: "埼玉・大宮",
         desc: "大宮のおでん&串揚げ居酒屋。飲み放題付きプランが充実し、大人数での宴会に最適。大宮の夜を盛り上げる実力店として、埼玉の歓送迎会・忘年会の定番となっている。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r44/r44-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "おでん・居酒屋" },
           { k: "エリア", v: "埼玉・大宮" },
@@ -15344,7 +15344,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・自然派ワイン",
         area: "大阪・福島",
         desc: "福島区・新福島の居酒屋。自然派ワイン・純米酒が揃い、個室対応で宴会・会食にも使える。ランチも評判で、大阪・福島エリアの幅広いシーンに対応できる実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356315/640x640_rect_b0e5a4869832aa5740d0e7b08a8a71e9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・福島" },
@@ -15358,7 +15358,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理",
         area: "大阪・十三",
         desc: "淀川区・十三の大箱中国料理店。宴会・貸切に対応した大人数向けの一軒で、ランチも充実。大阪・十三エリアで宴会の選択肢として活用できる、地元に根付いた中国料理実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/305790/640x640_rect_827ec9aa4ebce237e6f94e54b1e1298a.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "中国料理" },
           { k: "エリア", v: "大阪・十三" },
@@ -15393,7 +15393,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "/restaurants/r27/r27-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -15402,7 +15402,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・フレンチスイーツ",
         area: "大阪・靭本町",
         desc: "靭本町の食べログ百名店カフェ。フレンチトースト・パフェなどフォトジェニックなスイーツが充実し、女子会・インスタ撮影にも最適。大阪・西区でおしゃれな時間を過ごすなら外せない一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スイーツ" },
           { k: "エリア", v: "大阪・靭本町" },
@@ -15416,7 +15416,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・十三",
         desc: "淀川区・十三のイタリアン。京野菜を使った創作イタリアンとロングピザが人気で、女子会・グループランチに最適。テラス席もあり、大阪・十三のおしゃれな空間で楽しめる実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r40/r40-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・十三" },
@@ -15430,7 +15430,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・関目高殿",
         desc: "関目高殿の落ち着いたビストロ。記念日・女子会に評判の個室を備え、フレンチベースの料理とワインが楽しめる。大阪でちょっと特別な女子会をするならこの一軒が最適。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ" },
           { k: "エリア", v: "大阪・関目高殿" },
@@ -15444,7 +15444,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "埼玉・上尾",
         desc: "上尾市のカフェ。オムライスやデザートが評判で、埼玉の女子会・ランチに人気の一軒。スイーツのクオリティが高く、食後のカフェタイムも充実している上尾の実力カフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/267717/640x640_rect_b3e61e23d6975018a7f7ec4bb46fb4b9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "埼玉・上尾" },
@@ -15458,7 +15458,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "神戸市北区",
         desc: "神戸市北区の自家農園野菜カフェ。緑に囲まれた隠れ家的な空間で、インスタ映えする自然派ランチが楽しめる。神戸郊外のゆったりした女子会スポットとして評判を集めている。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・和食" },
           { k: "エリア", v: "神戸・北区" },
@@ -15493,7 +15493,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r34/r34-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -15502,7 +15502,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・東淀川",
         desc: "淀川区・東淀川の夫婦経営の小さな居酒屋。海鮮・魚料理と日本酒が中心のシンプルなスタイルで、口コミで広まった大阪の隠れ家実力店。路地の奥に佇む外観が隠れ家感を演出する。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r34/r34-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮" },
           { k: "エリア", v: "大阪・東淀川" },
@@ -15516,7 +15516,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・高麗橋",
         desc: "中央区高麗橋の隠れ家イタリアン。イタリア・マルケ州の郷土料理を再現した本格コースが口コミで広まった一軒。大阪の繁華街のすぐそばにある、知る人ぞ知る実力イタリアン。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・高麗橋" },
@@ -15530,7 +15530,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "神戸・岡場",
         desc: "神戸市北区・岡場の隠れ家和バル。深夜まで営業し、地元の常連客に口コミで広まった一軒。「隠れ家」の名に恥じない、わかりにくい立地と落ち着いた空間が魅力の神戸の実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345532/640x640_rect_09f0466dc489d42a445c6a149be0b556.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・和バル" },
           { k: "エリア", v: "神戸・岡場" },
@@ -15544,7 +15544,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "神戸市北区",
         desc: "神戸市北区の緑に囲まれた隠れ家カフェ。自家農園の野菜を使った料理と静かな空間が口コミで広まった。神戸郊外の自然の中でひっそりと営む、知る人ぞ知る名カフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "神戸・北区" },
@@ -15558,7 +15558,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・文の里",
         desc: "文の里駅近くの静かな路地のビストロ。シャルキトリーなど本場フランスの食文化を再現した本格派で、大阪の食通が密かに通う隠れ家ビストロ。ワインのセレクションも充実している。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/277310/640x640_rect_482a31082e3e6cd0b52e8c737325809f.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ" },
           { k: "エリア", v: "大阪・文の里" },
@@ -15616,7 +15616,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン・ベーカリー",
         area: "福岡・嘉麻",
         desc: "福岡・嘉麻市の焼きたてパン専門店。地元産素材を使った焼きたてパンが朝から楽しめる。開店前から並ぶ地元ファンが多い、九州のベーカリー文化を支える実力店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/190734/640x640_rect_84bc31df60c436d2326e12f3d38461d5.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン・ベーカリー" },
           { k: "エリア", v: "福岡・嘉麻" },
@@ -15630,7 +15630,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン・ベーカリー",
         area: "福岡・久留米",
         desc: "福岡・久留米北野の地元産小麦ベーカリー。朝食用の焼きたてパンが充実し、地元産素材へのこだわりが評判。久留米の地に根付く、福岡のベーカリー文化を支える名店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/237537/640x640_rect_431670485ecca9f0913b783726468a1b.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パン・ベーカリー" },
           { k: "エリア", v: "福岡・久留米" },
@@ -15665,7 +15665,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/r38/r38-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -15674,7 +15674,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み居酒屋",
         area: "大阪・関目",
         desc: "城東区・関目の立ち飲み居酒屋。深夜まで営業しており、仕事帰りにサクッと一杯楽しめる大阪の実力立ち飲み店。新店ながら関目エリアの飲み客に素早く定着した話題の一軒。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "立ち飲み居酒屋" },
           { k: "エリア", v: "大阪・関目" },
@@ -15702,7 +15702,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・立ち飲み",
         area: "名古屋・栄",
         desc: "名古屋・中区栄/矢場町の立ち飲み居酒屋。せんべろスタイルと個室の両方を備えた珍しい構成で、もつ鍋なども楽しめる。名古屋の立ち飲み文化と宴会を一手に担う実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・立ち飲み" },
           { k: "エリア", v: "名古屋・栄" },
@@ -15737,7 +15737,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -15746,7 +15746,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食・イノベーティブ",
         area: "京都・祇園東山",
         desc: "祇園・東山区のイノベーティブ和食。京都の食材を現代的な手法で昇華したコース料理が評判で、祇園観光の夜ごはんに相応しい格調ある一軒。ミシュランクラスの実力で予約必須。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食・イノベーティブ" },
           { k: "エリア", v: "京都・祇園" },
@@ -15760,7 +15760,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司（江戸前）",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都・河原町の江戸前寿司店。四条河原町観光の帰りに訪れたい、町家を改装した趣ある空間で本格江戸前鮨が楽しめる。京都観光の記念日に相応しい実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "寿司" },
           { k: "エリア", v: "京都・河原町" },
@@ -15774,7 +15774,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食・居酒屋",
         area: "京都・烏丸",
         desc: "中京区・烏丸エリアの和食居酒屋。出汁と日本酒を軸にした京都らしい一皿が観光客にも人気。四条烏丸観光のあとに気軽に入れる、地元色豊かな京都の和食実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食・居酒屋" },
           { k: "エリア", v: "京都・烏丸" },
@@ -15788,7 +15788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮・鉄板焼き",
         area: "京都・河原町",
         desc: "下京区・河原町エリアの居酒屋。海鮮・鉄板焼きが揃い、京都観光の夜ごはんに気軽に使える実力店。京都の夜の河原町エリアで、旅の締めくくりに最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮" },
           { k: "エリア", v: "京都・河原町" },
@@ -15802,7 +15802,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・創作料理",
         area: "京都・四条烏丸",
         desc: "下京区・四条烏丸の町家居酒屋。おでんと創作料理が揃い、京都観光後に気軽に立ち寄れる温かい一軒。旅人と地元客が共に集まる四条烏丸エリアの実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・創作料理" },
           { k: "エリア", v: "京都・四条烏丸" },
@@ -15837,7 +15837,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r30/r30-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -15846,7 +15846,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・なんば",
         desc: "浪速区・なんば周辺の居酒屋。牡蠣・海鮮・秋田地酒が揃い、全席禁煙で過ごしやすい。なんば観光の夜ごはんとして地元客・旅行者双方から支持される大阪の実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮" },
           { k: "エリア", v: "大阪・なんば" },
@@ -15860,7 +15860,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・干物",
         area: "大阪・梅田",
         desc: "梅田・大阪駅前第4ビルの干物居酒屋。JR大阪駅至近で、梅田観光のあとに気軽に立ち寄れる。干物・海鮮・日本酒が揃い、ランチも充実している梅田の実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r47/r47-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・干物" },
           { k: "エリア", v: "大阪・梅田" },
@@ -15874,7 +15874,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ナポリピッツァ",
         area: "大阪・天満",
         desc: "北区・天神橋筋六丁目の薪窯ナポリピッツァ店。天満・天六エリア観光のランチ・ディナーに最適な本格ピッツァの実力店。大阪でナポリの味を体感できる、旅行者にも人気の一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ナポリピッツァ" },
           { k: "エリア", v: "大阪・天満" },
@@ -15888,7 +15888,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・串かつ",
         area: "大阪・堺筋本町",
         desc: "中央区・堺筋本町の大阪らしい居酒屋。焼き鳥・串かつ・おでんと大阪グルメが揃い、コスパも高い。観光客が「大阪の居酒屋文化」を手軽に体験できる堺筋本町の実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r32/r32-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・堺筋本町" },
@@ -15902,7 +15902,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・北浜",
         desc: "北浜駅周辺の海鮮居酒屋。鯛飯が名物で日本酒のセレクションも充実。北浜・中之島観光のあとに寄りたい大阪の実力居酒屋で、旅の締めくくりに最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r25/r25-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・海鮮" },
           { k: "エリア", v: "大阪・北浜" },
@@ -15937,7 +15937,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -15946,7 +15946,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "八丁堀電停から徒歩1分の割烹。旬の食材を活かした和食コースが評判で、広島観光後の夜ごはんに相応しい格調ある空間。月〜土の深夜まで営業し、遅い時間にも対応する広島の実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "割烹" },
           { k: "エリア", v: "広島・八丁堀" },
@@ -15960,7 +15960,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "広島・本通",
         desc: "広島・本通の完全予約制寿司店。カウンターで職人の技を間近に感じながら楽しむ本格寿司は、広島観光の特別な夜に選びたい一軒。本通商店街観光のあとに予約して訪れたい広島の名店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "寿司" },
           { k: "エリア", v: "広島・本通" },
@@ -15974,7 +15974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮丼",
         area: "広島・広島駅北口",
         desc: "広島駅北口エリアの海鮮丼&ホットサンド専門店。新鮮な魚介を使った丼は観光客にも地元客にも人気。広島駅周辺の観光拠点として、旅の昼ごはんに最適な広島の実力ランチ店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮丼" },
           { k: "エリア", v: "広島・広島駅" },
@@ -15988,7 +15988,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島・幟町",
         desc: "広島・幟町の完全予約制本格イタリアン。八丁堀観光エリアにほど近く、広島旅行中の特別な夕食として選ばれる隠れ家的な一軒。厳選食材を使ったコースは広島の食通に絶賛される。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "広島・幟町" },
@@ -16037,7 +16037,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/227602/640x640_rect_91b10ed2af9882bb93b94f18f6d16282.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16046,7 +16046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理・広東料理",
         area: "神戸・三宮北野",
         desc: "三宮・北野エリアの広東料理・飲茶店。南京町観光のあとに訪れたい本格中国料理の実力店で、飲茶が評判。異人館観光とセットで楽しめる神戸ならではのグルメスポット。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/227602/640x640_rect_91b10ed2af9882bb93b94f18f6d16282.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "中国料理・飲茶" },
           { k: "エリア", v: "神戸・三宮" },
@@ -16060,7 +16060,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・天ぷら",
         area: "神戸・元町",
         desc: "元町の海鮮・天ぷら店。元町観光のランチ・ディナーに最適な実力店で、新鮮な魚介を使った料理が評判。元町商店街観光と合わせて訪れたい、地元に根付いた神戸の海鮮名店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311353/640x640_rect_f78ce16fc5ec36fe804e8905bee45909.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮・天ぷら" },
           { k: "エリア", v: "神戸・元町" },
@@ -16074,7 +16074,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "スペイン料理",
         area: "神戸・三宮",
         desc: "三宮のスペイン料理・タパス店。パエリアとタパスが評判で、神戸観光の夜ごはんに異国情緒を添える一軒。異人館文化の残る神戸らしい、スペインの食文化を楽しめる実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/260454/640x640_rect_85d5880bb325f59c57bc16317b188036.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "スペイン料理" },
           { k: "エリア", v: "神戸・三宮" },
@@ -16088,7 +16088,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸・芦屋",
         desc: "神戸・芦屋の東灘区のフレンチ&イタリアンコース料理。神戸観光の特別なディナーに選びたい実力店で、ランチのコスパも高評価。神戸・芦屋エリアの格調ある食体験を提供する。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ・イタリアン" },
           { k: "エリア", v: "神戸・芦屋" },
@@ -16102,7 +16102,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司・鮨",
         area: "神戸・三宮",
         desc: "三宮の寿司・鮨店。深夜まで営業し、神戸観光の夜に訪れたい日本料理の実力店。三宮という神戸観光の中心地にあり、アクセスも良好な神戸の鮨名店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "寿司・鮨" },
           { k: "エリア", v: "神戸・三宮" },
@@ -16137,7 +16137,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16146,7 +16146,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都フレンチ。河原町の洗練された空間で、特別なデートに選ばれる一軒。フランス料理の技法と京都食材が融合したコースは、記念日デートの最高の選択肢。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -16160,7 +16160,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン・ステーキ",
         area: "京都・桂",
         desc: "西京区・桂のバル。イタリアン・ステーキが楽しめるカジュアルなデート向きの一軒。気軽に入れる雰囲気と充実したワインセレクションで、さりげないデートにも対応できる京都西部の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241443/640x640_rect_ce97ea00f4d496a118d5094ffb137c7f.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "バル・ステーキ" },
           { k: "エリア", v: "京都・桂" },
@@ -16174,7 +16174,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・西院",
         desc: "右京区・西院の隠れ家イタリアン。コース料理が評判で、二人での特別な夕食に最適な落ち着いた空間が魅力。京都・西院という地元エリアに根付いた、デートにも使える実力イタリアン。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349961/640x640_rect_5707d43430d229294751589884a5b2c0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・西院" },
@@ -16188,7 +16188,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "京都・伏見桃山",
         desc: "伏見桃山のイタリアン・ワインバー。オマール海老を主役にしたデートにぴったりの豪華な一皿が評判。日本酒の産地・伏見でワインと料理のペアリングを楽しめる、特別なデートの選択肢。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/256486/640x640_rect_0492c0beabadce22cdbb7af0e6bfe6a9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・ワインバー" },
           { k: "エリア", v: "京都・伏見桃山" },
@@ -16202,7 +16202,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "京都・三条",
         desc: "中京区・三条のイタリアン酒場。炭火焼きとワインバーを兼ね備えたデートにも使えるおしゃれな一軒。三条エリアの夜を彩る、カジュアルから少し特別まで対応できる京都の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/210500/640x640_rect_ab44285941c29f0ac74620eed6931bb1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・三条" },
@@ -16237,7 +16237,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16246,7 +16246,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・肥後橋",
         desc: "食べログ百名店の肥後橋イタリアン。本格パスタとワインのペアリングが評判で、デートに人気の落ち着いた空間が魅力。ランチデートでも夜デートでも対応できる大阪西区の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・肥後橋" },
@@ -16260,7 +16260,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・十三",
         desc: "十三の京野菜イタリアン。テラス席と女子会・デート向けのおしゃれな空間が魅力。ロングピザと創作イタリアンで、大阪・十三エリアのカジュアルデートランチに最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r40/r40-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "大阪・十三" },
@@ -16274,7 +16274,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・本町",
         desc: "本町のファインダイニング。熊本県産黒毛和牛とイタリアン、厳選ワインの組み合わせが記念日デートに最高の一軒。本町という大阪のビジネス街に佇む格調ある空間が特別感を演出。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -16288,7 +16288,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スイーツ",
         area: "大阪・靭本町",
         desc: "靭本町の食べログ百名店カフェ。フレンチトーストとパフェがデートのカフェタイムに最適で、おしゃれな空間が魅力。ランチデートのあとのスイーツ目的で訪れたい大阪西区の実力カフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "カフェ・スイーツ" },
           { k: "エリア", v: "大阪・靭本町" },
@@ -16302,7 +16302,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "大阪・関目高殿",
         desc: "関目高殿の記念日・デートに評判のビストロ。個室を備えた落ち着いた空間でフレンチベースの料理とワインが楽しめる。大阪でちょっと特別なデートをしたいなら選びたい実力ビストロ。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ" },
           { k: "エリア", v: "大阪・関目高殿" },
@@ -16337,7 +16337,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16346,7 +16346,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸・芦屋",
         desc: "芦屋の東灘区のフレンチ&イタリアンコース料理。神戸の夜景が望める芦屋エリアで、デート・記念日に相応しい格調ある一軒。ランチのコスパも高評価で、昼デートにも最適。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ・イタリアン" },
           { k: "エリア", v: "神戸・芦屋" },
@@ -16360,7 +16360,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉（A5和牛）",
         area: "神戸・三宮",
         desc: "三宮のA5和牛専門焼肉店。神戸の夜景スポットに近い三宮で、上質な和牛を二人で楽しむデートのスタイルが人気。記念日・特別なデートの夜ごはんに選ばれる神戸の焼肉名店。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "焼肉（A5和牛）" },
           { k: "エリア", v: "神戸・三宮" },
@@ -16374,7 +16374,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "スペイン料理",
         area: "神戸・三宮",
         desc: "三宮のスペイン料理・タパス店。パエリアを囲む二人のデートスタイルが評判で、神戸の異国情緒ある夜を演出する。神戸・三宮の夜を楽しみながら異国の料理を楽しめる特別な一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/260454/640x640_rect_85d5880bb325f59c57bc16317b188036.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "スペイン料理" },
           { k: "エリア", v: "神戸・三宮" },
@@ -16388,7 +16388,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "神戸・垂水",
         desc: "垂水区のテラス席付きイタリアン。海を望むテラスで楽しむ神戸デートは格別。明石海峡大橋が見える垂水エリアで、神戸の絶景とイタリアンが融合した唯一無二のデートスポット。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/250736/640x640_rect_dcfa7c14b0d245ff55f4827598826b62.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン（テラス席）" },
           { k: "エリア", v: "神戸・垂水" },
@@ -16402,7 +16402,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・パスタ",
         area: "神戸・六甲道",
         desc: "六甲道のニューヨークスタイルカフェ。デートのカフェタイム・ランチに最適なガーデンスペースが魅力。六甲山の緑を感じながら二人でゆっくり過ごせる神戸のデートカフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "神戸・六甲道" },
@@ -16437,7 +16437,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16446,7 +16446,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・木屋町",
         desc: "下京区・木屋町の深夜まで営業するイタリアン。京都旅行の夜に木屋町を散策しながら立ち寄れる、宿泊観光客にとっても使いやすい一軒。深夜まで開いているため、夜の京都を楽しんだ後に寄れる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "京都・木屋町" },
@@ -16460,7 +16460,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本料理",
         area: "京都・西院",
         desc: "右京区・西院の居酒屋。日本料理・海鮮を主軸にした地元色豊かな一軒で、京都旅行中に地元民の行きつけ店を体験したい旅行者にも人気。阪急西院駅近くでアクセスも良好。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/331261/640x640_rect_9d06d2a99ac81fdeb00a786e07c878e1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・日本料理" },
           { k: "エリア", v: "京都・西院" },
@@ -16474,7 +16474,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・四条",
         desc: "四条・下京区のディナー専門料理屋。旬の食材を使った和食コースを夜のみ提供する。予約制で落ち着いた空間が、京都旅行の特別な夜ごはんに最適。旅の記憶に残る一食を京都で体験できる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食" },
           { k: "エリア", v: "京都・四条" },
@@ -16488,7 +16488,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・おでん",
         area: "京都・四条烏丸",
         desc: "四条烏丸の町家居酒屋。おでんと創作料理が揃い、旅行者も地元客も共に楽しむ温かい空間。京都旅行の夜に四条烏丸周辺を歩きながら気軽に立ち寄れる実力居酒屋。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "京都・四条烏丸" },
@@ -16502,7 +16502,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本酒",
         area: "京都・伏見",
         desc: "伏見区の日本酒居酒屋。日本酒の産地・伏見で地酒を楽しむ炭火焼きスタイルが旅行者にも評判。伏見稲荷・伏見散策の後に訪れたい、京都旅行の夜ごはんに最適な実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/328301/640x640_rect_f1d6cbc8d4e70770d029717c8cf7d286.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "居酒屋・日本酒" },
           { k: "エリア", v: "京都・伏見" },
@@ -16537,7 +16537,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r47/r47-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -16546,7 +16546,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋ランチ・干物",
         area: "大阪・梅田",
         desc: "梅田・大阪駅前第4ビルの居酒屋ランチ。梅田観光の定番立ち寄りスポットとして旅行者に人気で、干物・海鮮中心の充実したランチが1,000円前後から楽しめる。大阪旅行の昼ごはんに最適。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r47/r47-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋ランチ" },
           { k: "エリア", v: "大阪・梅田" },
@@ -16560,7 +16560,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋ランチ",
         area: "大阪・堺筋本町",
         desc: "堺筋本町の居酒屋ランチ。焼き鳥・串かつ・おでんと大阪グルメが一皿で楽しめるランチセットがコスパ抜群。大阪旅行中に「大阪の居酒屋ランチ文化」を体験するなら外せない一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r32/r32-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋ランチ" },
           { k: "エリア", v: "大阪・堺筋本町" },
@@ -16574,7 +16574,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮ランチ",
         area: "大阪・北浜",
         desc: "北浜の海鮮居酒屋ランチ。中之島・北浜観光のあとに訪れたい、鯛飯が名物の実力店。大阪旅行の昼ごはんとして、北浜の歴史的建築エリアと合わせて楽しめる一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r25/r25-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "海鮮ランチ" },
           { k: "エリア", v: "大阪・北浜" },
@@ -16588,7 +16588,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアンランチ",
         area: "大阪・高麗橋",
         desc: "中央区高麗橋の隠れ家イタリアンランチ。大阪・ビジネス街のランチとして地元客に人気で、旅行者も立ち寄りやすい昼の使い勝手の良さが魅力。大阪旅行中の本格ランチに最適。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [
           { k: "ジャンル", v: "イタリアンランチ" },
           { k: "エリア", v: "大阪・高麗橋" },
@@ -16602,7 +16602,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ナポリピッツァ",
         area: "大阪・天満",
         desc: "天神橋筋六丁目の薪窯ナポリピッツァ。天六・天満観光のランチに最適で、旅行者にも人気の本格ピッツァが楽しめる。大阪旅行中に「本場ナポリ」を体験できる天満の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "ピッツァ" },
           { k: "エリア", v: "大阪・天満" },
@@ -16674,7 +16674,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮丼",
         area: "広島・広島駅",
         desc: "広島駅北口の海鮮丼&ホットサンド専門店。広島旅行の昼ごはんに新鮮な魚介丼が楽しめる実力店。広島駅からアクセスしやすく、旅行者が立ち寄りやすい立地も魅力。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "海鮮丼" },
           { k: "エリア", v: "広島・広島駅" },
@@ -16688,7 +16688,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "八丁堀の割烹。広島の旬の食材を使ったコース料理が評判で、広島旅行の夜ごはんの特別な選択肢として旅行者に選ばれる。広島の食文化の真髄を体感したいなら予約必須の実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "割烹" },
           { k: "エリア", v: "広島・八丁堀" },
@@ -16702,7 +16702,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "広島市中区",
         desc: "広島市中区の洋食店。ランチ・ディナー共に充実した広島の洋食名店で、旅行者も気軽に立ち寄れる使い勝手の良い一軒。広島観光の合間に洋食を楽しみたいなら選びたい実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/334818/640x640_rect_a17a1cd6caa5658709fa74242cd84907.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "洋食" },
           { k: "エリア", v: "広島市中区" },
@@ -16737,7 +16737,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/329117/640x640_rect_e1d8b760fdfad2ee805c1913ed3e4831.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16746,7 +16746,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "タルト・スイーツ",
         area: "京都・桂",
         desc: "西京区・桂のタルト&ケーキ&スイーツ専門店。女子旅のスイーツ目的で訪れたい、写真映えする美しいタルトが評判の京都の実力スイーツ店。SNSでも話題の桂エリアのカフェスポット。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/329117/640x640_rect_e1d8b760fdfad2ee805c1913ed3e4831.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "タルト・スイーツ" },
           { k: "エリア", v: "京都・桂" },
@@ -16760,7 +16760,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎コーヒー",
         area: "京都・元田中",
         desc: "左京区・元田中の自家焙煎コーヒー専門カフェ。女子旅の休憩スポットとして、スペシャルティコーヒーをゆっくり楽しめる一軒。京都らしい落ち着いた空間でのカフェタイムが旅の思い出になる。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・コーヒー" },
           { k: "エリア", v: "京都・元田中" },
@@ -16774,7 +16774,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "京都・伏見区深草",
         desc: "伏見区・深草の昭和レトロ喫茶。女子旅で「昭和レトロ喫茶体験」を楽しみたい方に最適な一軒。京都・伏見稲荷観光のあとに立ち寄れる距離感で、旅の写真にも映える空間が魅力。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/344614/640x640_rect_67cdf1bac10ae95c624cd4f7ed30c4bd.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "京都・深草" },
@@ -16788,7 +16788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・カフェ",
         area: "京都・元田中",
         desc: "左京区・元田中のイタリアンカフェ。ワインとイタリアン料理が楽しめる女子旅の夕食にも最適な一軒。洛中の落ち着いたエリアで、女子旅の夜に二人でゆっくり過ごせる京都の実力店。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン・カフェ" },
           { k: "エリア", v: "京都・元田中" },
@@ -16802,7 +16802,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・ワインバー",
         area: "京都・桂",
         desc: "西京区・桂のビストロ&ワインバー。洋食スタイルで女子旅のディナーにも最適な一軒。京都郊外の落ち着いたエリアに佇み、ワインと料理でゆっくり過ごせる女子旅向けの実力ビストロ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266717/640x640_rect_a828f880ddc9a34da8e77f2a56944b88.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "ビストロ・ワインバー" },
           { k: "エリア", v: "京都・桂" },
@@ -16837,7 +16837,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -16846,7 +16846,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スイーツ",
         area: "神戸・六甲道",
         desc: "六甲道のニューヨークスタイルカフェ。女子旅のカフェタイムに最適な開放的なガーデンスペースが魅力。スイーツが充実しており、神戸女子旅のインスタ映えスポットとして人気が高い。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ・スイーツ" },
           { k: "エリア", v: "神戸・六甲道" },
@@ -16860,7 +16860,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "神戸市北区",
         desc: "北区の自家農園カフェ。自然に囲まれた隠れ家的空間が女子旅の「映えスポット」として人気。神戸郊外の緑の中でゆっくりとランチとカフェタイムを過ごせる、女子旅必訪の実力カフェ。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "カフェ" },
           { k: "エリア", v: "神戸・北区" },
@@ -16888,7 +16888,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "神戸・西舞子",
         desc: "垂水区・西舞子の喫茶店。明石海峡大橋観光とセットで訪れたい、神戸女子旅の休憩スポット。充実したモーニング・コーヒーが旅の朝に心地よいリズムをもたらす神戸の老舗的な一軒。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/208558/640x640_rect_431adf6d45b4f7ca70f02002f55c510c.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "喫茶店" },
           { k: "エリア", v: "神戸・西舞子" },
@@ -16902,7 +16902,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン（テラス席）",
         area: "神戸・垂水",
         desc: "垂水区の海が見えるテラス席イタリアン。神戸女子旅の「絶景カフェ・レストラン」として評判で、明石海峡大橋を望む景色と料理を同時に楽しめる唯一無二のスポット。",
-        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/250736/640x640_rect_dcfa7c14b0d245ff55f4827598826b62.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン（テラス）" },
           { k: "エリア", v: "神戸・垂水" },
@@ -16937,7 +16937,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/r06/r06-hero.jpg",
     ranking: [
       {
         rank: "01",
@@ -16946,7 +16946,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン（鶏白湯）",
         area: "東京・浅草",
         desc: "東京・浅草の鶏白湯ラーメン店。禁煙・一人飲み対応で、ひとり旅の東京グルメに最適な実力店。浅草観光のあとに一人でサッと食べられる、東京ひとり旅の強い味方。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=800"],
+        images: ["/restaurants/r06/r06-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "ラーメン" },
           { k: "エリア", v: "東京・浅草" },
@@ -16974,7 +16974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・立ち飲み",
         area: "名古屋・栄",
         desc: "名古屋・栄の立ち飲み居酒屋。一人でも気軽に入れる雰囲気で、名古屋ひとり旅の夜に最適。「社交酒場」の名の通り、一人客が自然と会話できる名古屋の立ち飲み文化を体感できる。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋・立ち飲み" },
           { k: "エリア", v: "名古屋・栄" },
@@ -16988,7 +16988,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・東淀川",
         desc: "大阪・東淀川の夫婦経営の小さな居酒屋。一人でも入りやすいカウンター中心の空間で、大阪ひとり旅の夜ごはんに最適。旅人も地元客も温かく迎える、大阪の隠れ家居酒屋の実力店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800"],
+        images: ["/restaurants/r34/r34-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "居酒屋" },
           { k: "エリア", v: "大阪・東淀川" },
@@ -17002,7 +17002,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ",
         area: "名古屋・本山",
         desc: "名古屋・本山のパスタ専門店。一人飯スタイルで気軽に入れる一軒で、テイクアウトにも対応。ひとり旅の名古屋グルメとして手軽にパスタを楽しみたい方に最適な名古屋の実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "パスタ" },
           { k: "エリア", v: "名古屋・本山" },
@@ -17037,7 +17037,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約6分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=1200",
     ranking: [
       {
         rank: "01",
@@ -17046,7 +17046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食・イノベーティブ",
         area: "京都・祇園",
         desc: "祇園のイノベーティブ和食。¥20,000〜の高単価ながら予約が絶えない京都の記念日ディナーの頂点に立つ一軒。祇園の古都の雰囲気の中で過ごす特別な夜は、生涯の記憶となる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "和食" },
           { k: "エリア", v: "京都・祇園" },
@@ -17060,7 +17060,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・本町",
         desc: "本町のファインダイニング。黒毛和牛「和王」とイタリアン、厳選ワインの組み合わせが記念日に最高の選択肢。大阪の記念日ディナーで選ばれ続ける格調ある実力店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [
           { k: "ジャンル", v: "イタリアン・和牛" },
           { k: "エリア", v: "大阪・本町" },
@@ -17074,7 +17074,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "ミシュラン掲載の京都フレンチ。記念日ディナーで選ばれる格調ある一軒で、京都食材とフランス料理の融合が特別な夜を演出する。京都を訪れる記念日には必ず候補に入れたい名店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "京都・河原町" },
@@ -17088,7 +17088,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸・芦屋",
         desc: "芦屋のフレンチ&イタリアンコース料理。神戸の記念日ディナーに相応しい格調ある空間で、大切な人との特別な夜を過ごせる。神戸という立地が記念日の思い出をより豊かにしてくれる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ・イタリアン" },
           { k: "エリア", v: "神戸・芦屋" },
@@ -17102,7 +17102,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "東京・南麻布",
         desc: "南麻布の路地に佇む焼鳥店。熊野地鶏の熟成串が評判で、半個室・テラス席・ペット同伴可と多様な記念日スタイルに対応。東京の記念日ディナーに、ちょっと違う「焼鳥でお祝い」という選択肢。",
-        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [
           { k: "ジャンル", v: "焼鳥" },
           { k: "エリア", v: "東京・南麻布" },
@@ -17116,7 +17116,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "埼玉・志木",
         desc: "埼玉・志木の本格フレンチ。首都圏で記念日ディナーに相応しいフレンチを探すなら、志木まで足を伸ばす価値がある実力店。ランチからディナーまで、埼玉の記念日シーンを彩る名店。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "フレンチ" },
           { k: "エリア", v: "埼玉・志木" },
@@ -17151,7 +17151,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "約5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "/restaurants/r36/r36-image-1.jpg",
     ranking: [
       {
         rank: "01",
@@ -17160,7 +17160,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "手羽先・居酒屋",
         area: "名古屋・栄",
         desc: "栄エリアの手羽先専門居酒屋。名古屋観光の夜ごはんに「名古屋めし・手羽先」を体験するなら外せない一軒。栄という名古屋観光の中心地にあり、アクセスも良好な名古屋の実力店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r36/r36-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "手羽先・居酒屋" },
           { k: "エリア", v: "名古屋・栄" },
@@ -17174,7 +17174,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理・四川",
         area: "名古屋・鳴海",
         desc: "緑区・鳴海の四川料理・担々麺専門店。名古屋の中華好きに知られる実力店で、禁煙・ランチ営業で観光客も立ち寄りやすい。名古屋観光で一風変わったグルメを楽しみたい方に最適。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r07/r07-storefront.jpg"],
         specs: [
           { k: "ジャンル", v: "中国料理・四川" },
           { k: "エリア", v: "名古屋・鳴海" },
@@ -17188,7 +17188,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "名古屋・名駅南",
         desc: "名駅南のイタリアンレストラン。名古屋駅周辺の観光後に訪れやすい立地で、個室・宴会対応も充実。ランチ・ディナー共に使えるオールラウンダーな名古屋の実力イタリアン。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938634.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "イタリアン" },
           { k: "エリア", v: "名古屋・名駅南" },
@@ -17202,7 +17202,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・魚料理",
         area: "名古屋・黒川",
         desc: "北区・黒川の産直海鮮・魚料理店。名古屋城観光エリアからほど近い黒川で、新鮮な魚介を産地直送で提供する実力店。名古屋観光の夜ごはんに海鮮を楽しみたい方に最適。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["/restaurants/r45/r45-image-1.jpg"],
         specs: [
           { k: "ジャンル", v: "海鮮・魚料理" },
           { k: "エリア", v: "名古屋・黒川" },
@@ -17216,7 +17216,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理・割烹",
         area: "名古屋・国際センター",
         desc: "国際センター駅近くの中華割烹。担々麺・ディナーコースが評判で、名古屋観光エリアからアクセスしやすい立地。和のテイストを取り入れた中華料理で、名古屋観光の食体験を豊かにする一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=800"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/219646/640x640_rect_7a1a0b1ca64efc9f84beaf99dac2a0ac.jpg?w=800"],
         specs: [
           { k: "ジャンル", v: "中華料理・割烹" },
           { k: "エリア", v: "名古屋・国際センター" },
@@ -17251,7 +17251,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/354696/640x640_rect_0a0a945eb9fee623f4a942e806f0fbba.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17260,7 +17260,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "奈良市",
         desc: "奈良市内の川沿いに佇む静かなブックカフェ。観光の疲れをリセットするのに最適な、落ち着いた空間と丁寧なコーヒーが揃う。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354696/640x640_rect_0a0a945eb9fee623f4a942e806f0fbba.jpg?w=800"],
         specs: [{ k: "エリア", v: "奈良市" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -17270,7 +17270,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "奈良市",
         desc: "奈良市内で人気の洋食店。家庭的な温かさのある料理が並び、観光後のランチに地元客から長年支持されている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/1105/640x640_rect_1105229.jpg?w=800"],
         specs: [{ k: "エリア", v: "奈良市" }, { k: "ジャンル", v: "洋食" }],
       },
       {
@@ -17280,7 +17280,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き",
         area: "奈良市",
         desc: "奈良市内の老舗お好み焼き店。地元に根付いた素朴な味わいと、気取らない雰囲気が旅人にも親しまれている。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/3494/9edd22d5c1517c654b2815a4a32f0a2a.jpg?w=800"],
         specs: [{ k: "エリア", v: "奈良市" }, { k: "ジャンル", v: "お好み焼き" }],
       },
     ],
@@ -17303,7 +17303,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/kitsune-storefront-night.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -17312,7 +17312,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワイン食堂",
         area: "六角橋",
         desc: "六角橋の住宅街に佇むイタリアン×ワイン食堂。産地にこだわったナチュラルワインと手作りの料理が、地元ファンを惹きつけてやまない。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/kitsune-storefront-night.jpg"],
         specs: [{ k: "エリア", v: "六角橋" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -17322,7 +17322,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎コーヒー",
         area: "緑区・津久井湖",
         desc: "津久井湖畔の自然に囲まれた自家焙煎コーヒー店。都市の喧騒から離れ、丁寧に淹れた一杯を味わえる穴場スポット。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r16/r16-01.webp"],
         specs: [{ k: "エリア", v: "緑区・津久井湖" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -17332,7 +17332,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み",
         area: "白楽",
         desc: "白楽の路地に構える個性的な立ち飲みバー。センスある品揃えと店主のキャラクターが光る、地元で愛されるスタンド。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/273536/640x640_rect_244e42e06cd1e13457233882f6e0f916.jpg?w=800"],
         specs: [{ k: "エリア", v: "白楽" }, { k: "ジャンル", v: "立ち飲み" }],
       },
       {
@@ -17342,7 +17342,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "平塚",
         desc: "平塚で評判の手打ち麺が光るラーメン店。麺への妥協を許さない店主のこだわりが、行列を生み出している。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/352979/640x640_rect_7ffb5d6f3403c27b54b561e2c564e54d.jpg?w=800"],
         specs: [{ k: "エリア", v: "平塚" }, { k: "ジャンル", v: "ラーメン" }],
       },
     ],
@@ -17365,7 +17365,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/79672/640x640_rect_79672120.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17374,7 +17374,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "掛川",
         desc: "掛川で評判の海鮮炉端焼き。駿河湾の鮮魚を豪快に焼き上げる料理と、地酒の組み合わせが地元で根強い支持を集めている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/79672/640x640_rect_79672120.jpg?w=800"],
         specs: [{ k: "エリア", v: "掛川" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -17384,7 +17384,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "新静岡",
         desc: "新静岡駅近くの洗練されたカフェ。静岡茶を取り入れたオリジナルドリンクと丁寧なフードが、街の喫茶文化を更新している。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/309080/640x640_rect_5a66c757c06656991a2dee7a8f3dc6a5.jpg?w=800"],
         specs: [{ k: "エリア", v: "新静岡" }, { k: "ジャンル", v: "カフェ" }],
       },
     ],
@@ -17426,7 +17426,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "定食・食堂",
         area: "滋賀・長浜",
         desc: "長浜の町家エリアに構える定食食堂。近江野菜をふんだんに使った日替わり定食は、旅行者と地元客の両方に愛されている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/352539/640x640_rect_5d514e452c159ef8f91075686ecf6783.jpg?w=800"],
         specs: [{ k: "エリア", v: "長浜" }, { k: "ジャンル", v: "定食" }],
       },
     ],
@@ -17449,7 +17449,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17458,7 +17458,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・洋食",
         area: "和歌山・那智勝浦",
         desc: "世界遺産・熊野那智大社の玄関口に立つ古民家カフェ。旅の疲れを癒す丁寧なコーヒーと洋食が、地元と旅行者の両方に支持されている。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
         specs: [{ k: "エリア", v: "和歌山・那智勝浦" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -17468,7 +17468,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食ダイニング",
         area: "群馬・渋川",
         desc: "伊香保温泉の近く、渋川に構える和食ダイニング。群馬の山の幸を活かした料理と地酒のペアリングが、温泉旅の夜を豊かにする。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800"],
         specs: [{ k: "エリア", v: "群馬・渋川" }, { k: "ジャンル", v: "和食ダイニング" }],
       },
       {
@@ -17501,7 +17501,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/313825/640x640_rect_5d9f09de238f7eb633efa09bf40a5d9a.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17510,7 +17510,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "北海道・当別",
         desc: "北海道・当別の自然の中に佇くコーヒースタンド。北海道の澄んだ空気の中で飲む一杯は、都市のカフェとは異なる特別な体験をもたらす。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/313825/640x640_rect_5d9f09de238f7eb633efa09bf40a5d9a.jpg?w=800"],
         specs: [{ k: "エリア", v: "北海道・当別" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -17520,7 +17520,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "北海道・札幌",
         desc: "札幌で評判のラーメン店。北海道産の素材を活かしたスープと、丁寧に作られた麺が、地元ラーメンファンを唸らせる実力店。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356162/640x640_rect_1184b2c9137fb703842c77e104981fd7.jpg?w=800"],
         specs: [{ k: "エリア", v: "北海道・札幌" }, { k: "ジャンル", v: "ラーメン" }],
       },
     ],
@@ -17543,7 +17543,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17552,7 +17552,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都市左京区",
         desc: "京都・左京区の自家焙煎カフェ。旅をテーマにした空間と、産地にこだわった豆の焙煎が、コーヒーファンを引きつけている。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市左京区" }, { k: "ジャンル", v: "カフェ・自家焙煎" }],
       },
       {
@@ -17562,7 +17562,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スペシャルティコーヒー",
         area: "博多区・博多駅前",
         desc: "博多駅前のスペシャルティコーヒー専門店。産地・農園まで遡ったトレーサビリティへのこだわりが、コーヒー通から高い評価を受けている。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡・博多" }, { k: "ジャンル", v: "スペシャルティコーヒー" }],
       },
       {
@@ -17572,7 +17572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "天王寺区・上本町",
         desc: "大阪・上本町の珈琲専門店。紅茶も扱う幅広い茶葉の知識と、一杯一杯を丁寧に淹れる姿勢が、常連客に愛されてきた。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r23/r23-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・上本町" }, { k: "ジャンル", v: "珈琲専門店" }],
       },
       {
@@ -17582,7 +17582,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・アジアコーヒー",
         area: "北区・中崎町",
         desc: "大阪・中崎町のユニークな茶店。中国茶とアジア各国のコーヒーを扱う、国内でも珍しい専門性が茶好きを集める。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r28/r28-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・中崎町" }, { k: "ジャンル", v: "中国茶・アジアコーヒー" }],
       },
       {
@@ -17592,7 +17592,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "コーヒースタンド・ナチュラルワイン",
         area: "京都・清水",
         desc: "京都・清水エリアのコーヒースタンド。昼はコーヒー、夜はナチュラルワインと二刀流で運営する、新しい形の店。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r46/r46-image-1.jpg"],
         specs: [{ k: "エリア", v: "京都・清水" }, { k: "ジャンル", v: "コーヒースタンド" }],
       },
       {
@@ -17602,7 +17602,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店",
         area: "神戸・西舞子",
         desc: "明石海峡大橋を望む神戸・舞子の老舗喫茶。昭和の喫茶文化を今に伝える空間と、変わらぬ味が地元に親しまれている。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/208558/640x640_rect_431adf6d45b4f7ca70f02002f55c510c.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・舞子" }, { k: "ジャンル", v: "喫茶店" }],
       },
       {
@@ -17612,7 +17612,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "北海道・当別",
         desc: "北海道の大自然の中に立つコーヒースタンド。澄んだ空気の中で飲む一杯は、旅の特別な記憶になる。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/313825/640x640_rect_5d9f09de238f7eb633efa09bf40a5d9a.jpg?w=800"],
         specs: [{ k: "エリア", v: "北海道・当別" }, { k: "ジャンル", v: "カフェ" }],
       },
     ],
@@ -17635,7 +17635,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/268486/640x640_rect_0200916a27ad772997b29e396360f7dd.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17644,7 +17644,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂",
         area: "神戸・春日野道",
         desc: "神戸・春日野道の大衆食堂。気取らない雰囲気と量・値段のバランスが、地元のサラリーマンや学生に長年愛されてきた。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/268486/640x640_rect_0200916a27ad772997b29e396360f7dd.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・春日野道" }, { k: "予算", v: "¥1,000〜2,999" }],
       },
       {
@@ -17654,7 +17654,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食・食堂",
         area: "京都・上賀茂",
         desc: "京都・上賀茂の一膳飯屋。洋食の要素を取り入れた定食が並び、近隣の住民が毎日通う地域の台所として機能している。",
-        images: ["https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/275893/640x640_rect_d599dd2b77e9ccd8fca72f31a405c9f1.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・上賀茂" }, { k: "ジャンル", v: "洋食定食" }],
       },
       {
@@ -17684,7 +17684,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・定食",
         area: "広島・可部",
         desc: "広島・可部のカフェ定食店。ランチタイムの定食は野菜中心のヘルシーな内容で、地域の女性客を中心に人気を集めている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/186464/640x640_rect_945631b4bab9d89ca18c3daf9fe2bc14.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・可部" }, { k: "ジャンル", v: "カフェ定食" }],
       },
     ],
@@ -17707,7 +17707,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/yakitori-shimaya-3.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -17716,7 +17716,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "東京・南麻布",
         desc: "東京・南麻布の焼鳥店。テラス席では東京の緑を眺めながら職人の焼鳥を楽しめる、都心の贅沢な外食体験を提供する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [{ k: "エリア", v: "東京・南麻布" }, { k: "ジャンル", v: "焼鳥" }],
       },
       {
@@ -17726,7 +17726,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・大阪城北詰",
         desc: "大阪城公園に隣接するロケーションを活かした居酒屋。テラス席からの開放感と、気軽な居酒屋メニューの組み合わせが人気。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・大阪城北詰" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -17736,7 +17736,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ベトナム料理",
         area: "名古屋・東区",
         desc: "名古屋・東区のベトナム料理店。テラス席でいただくフォーやバインミーは、日常を少し非日常に変えてくれる。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["/restaurants/r20/r20-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・東区" }, { k: "ジャンル", v: "ベトナム料理" }],
       },
       {
@@ -17746,7 +17746,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "神戸・垂水",
         desc: "神戸・垂水のイタリアンレストラン。明石海峡を望むテラス席でいただくパスタは、神戸随一の絶景ダイニング体験を約束する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/250736/640x640_rect_dcfa7c14b0d245ff55f4827598826b62.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・垂水" }, { k: "予算", v: "¥3,000〜3,999" }],
       },
     ],
@@ -17769,7 +17769,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r04/r04-info-4.webp",
     ranking: [
       {
         rank: "BEST 01",
@@ -17778,7 +17778,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "名古屋・豊田本町",
         desc: "名古屋・南区の創作イタリアン。ファミリー向けの広いスペースと、子どもから大人まで楽しめる多様なメニューが家族連れに好評。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r04/r04-info-4.webp"],
         specs: [{ k: "エリア", v: "名古屋・南区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -17788,7 +17788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・手羽先",
         area: "大阪・緑橋",
         desc: "大阪・緑橋の手羽先居酒屋。ボリューム満点の手羽先と豊富な単品メニューが、子ども連れのファミリーにも対応できる。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r05/r05-counter.jpg"],
         specs: [{ k: "エリア", v: "大阪・緑橋" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -17798,7 +17798,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理",
         area: "大阪・十三",
         desc: "大阪・十三の本格中国料理店。円卓を囲んでシェアするスタイルが家族の食事に最適で、豊富なメニューで誰も飽きさせない。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/305790/640x640_rect_827ec9aa4ebce237e6f94e54b1e1298a.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・十三" }, { k: "ジャンル", v: "中国料理" }],
       },
     ],
@@ -17821,7 +17821,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17830,7 +17830,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食創作居酒屋",
         area: "名古屋・池下",
         desc: "名古屋・池下の和食創作居酒屋。旬の食材を活かした一品料理と、厳選した日本酒のラインナップが、食通の舌を満足させる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・池下" }, { k: "ジャンル", v: "和食創作居酒屋" }],
       },
       {
@@ -17840,7 +17840,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理",
         area: "大阪・福島",
         desc: "大阪・福島の小料理居酒屋。季節ごとに変わる日本酒と、丁寧に作られた和の小皿料理が、静かな夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["/restaurants/r21/r21-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "小料理・居酒屋" }],
       },
       {
@@ -17850,7 +17850,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食居酒屋",
         area: "埼玉・浦和",
         desc: "埼玉・浦和の和食居酒屋。地酒と和食の組み合わせを追求した店で、埼玉の食文化の底力を示している。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r42/r42-image-1.jpg"],
         specs: [{ k: "エリア", v: "埼玉・浦和" }, { k: "ジャンル", v: "和食居酒屋" }],
       },
       {
@@ -17860,7 +17860,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都市中京区",
         desc: "京都・中京区の出汁と日本酒に特化した和食店。丁寧に引いた出汁を軸に、京の食材を活かした一皿が並ぶ。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・中京区" }, { k: "ジャンル", v: "和食" }],
       },
       {
@@ -17870,7 +17870,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・四条",
         desc: "京都・四条の料理屋。旬の食材を使った会席スタイルの料理が、京料理の粋を現代に伝えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・四条" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
     ],
@@ -17893,7 +17893,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -17902,7 +17902,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ",
         area: "名古屋・本山",
         desc: "名古屋・本山のパスタ専門店。本格的なパスタがテイクアウトできることで話題。店内の仕立て同様のクオリティを自宅で楽しめる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・本山" }, { k: "ジャンル", v: "パスタ" }],
       },
       {
@@ -17912,7 +17912,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "惣菜・デリ",
         area: "名古屋・庄内通",
         desc: "名古屋・庄内通のデリ・惣菜店。季節の食材を使ったバリエーション豊かな惣菜がテイクアウトでき、地元の食卓を豊かにしている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323624/640x640_rect_8489d0570c14a196eba6e417ee04cf2f.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・庄内通" }, { k: "ジャンル", v: "惣菜・デリ" }],
       },
       {
@@ -17945,7 +17945,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200",
+    heroImage: "/restaurants/r15/r15-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -17954,7 +17954,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "クラシック音楽喫茶・Bar",
         area: "大阪・関目",
         desc: "大阪・関目のクラシック音楽喫茶バー。仕事終わりに一人でバーボンを傾けながら、クラシックの生演奏に耳を傾けられる希少な空間。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["/restaurants/r15/r15-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・関目" }, { k: "ジャンル", v: "音楽喫茶・Bar" }],
       },
       {
@@ -17964,7 +17964,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・手羽先",
         area: "名古屋・東桜",
         desc: "名古屋・栄の手羽先居酒屋。名古屋メシの代表格・手羽先を豪快に食べながら、仲間と一杯やる仕事終わりの定番スポット。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r36/r36-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・栄" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -17974,7 +17974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み居酒屋",
         area: "大阪・関目",
         desc: "大阪・関目の個性派立ち飲み居酒屋。店主のキャラクターと手頃な価格が、常連客を引き付ける帰り道の一軒。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・関目" }, { k: "ジャンル", v: "立ち飲み" }],
       },
       {
@@ -17984,7 +17984,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪・中崎町",
         desc: "大阪・中崎町のカフェ&バー。昼はカフェ、夜はバーとして機能し、仕事終わりの一杯から深夜のひとりタイムまで使える懐の深い一軒。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・中崎町" }, { k: "ジャンル", v: "カフェ・バー" }],
       },
       {
@@ -17994,7 +17994,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "大阪・高槻",
         desc: "大阪・高槻の人気ラーメン店。仕事帰りに一杯食べたいラーメンとして、高槻の会社員から強い支持を集めている。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/343442/640x640_rect_353c2c218c2288b7267049626c6f55cf.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・高槻" }, { k: "ジャンル", v: "ラーメン" }],
       },
     ],
@@ -18017,7 +18017,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=1200",
+    heroImage: "/restaurants/r16/r16-01.webp",
     ranking: [
       {
         rank: "BEST 01",
@@ -18026,7 +18026,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎コーヒー",
         area: "神奈川・津久井湖",
         desc: "神奈川・津久井湖畔の自家焙煎カフェ。週末のドライブを兼ねて訪れる客も多く、森と湖を眺めながらのブランチは格別の時間をもたらす。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r16/r16-01.webp"],
         specs: [{ k: "エリア", v: "神奈川・津久井湖" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -18036,7 +18036,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店・カフェ",
         area: "大阪・淡路",
         desc: "大阪・淡路の昭和レトロな喫茶店。モーニングからランチにかけての時間帯を地元の常連が支える、週末の朝の定番スポット。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["/restaurants/r51/r51-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・淡路" }, { k: "ジャンル", v: "喫茶店" }],
       },
       {
@@ -18046,7 +18046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "和歌山・那智勝浦",
         desc: "熊野の玄関口・那智勝浦の古民家カフェ。旅の朝食に最適な丁寧な一皿と、落ち着いた空間が旅行者に休息をもたらす。",
-        images: ["https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=600"],
+        images: ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"],
         specs: [{ k: "エリア", v: "和歌山・那智勝浦" }, { k: "ジャンル", v: "カフェ" }],
       },
     ],
@@ -18069,7 +18069,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -18078,7 +18078,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "神戸市北区",
         desc: "神戸・北区の野菜中心のカフェ&和食店。地元農家との連携による新鮮野菜を使った料理が、ヘルシー志向の女性客を中心に支持されている。",
-        images: ["https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市北区" }, { k: "ジャンル", v: "カフェ・和食" }],
       },
       {
@@ -18088,7 +18088,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "薬膳粥・貝割烹",
         area: "神戸市中央区",
         desc: "神戸・中央区の薬膳粥と貝割烹の専門店。中医学の知識に基づいた薬膳料理が、体の調子を整えたい方に選ばれている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "薬膳粥" }],
       },
       {
@@ -18098,7 +18098,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "インド料理",
         area: "京都市伏見区",
         desc: "京都・伏見区のインド料理店。スパイスの力で体を内側から温めるカレーは、ヘルシー志向の観点からも注目される一軒。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129438/640x640_rect_129438593.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市伏見区" }, { k: "ジャンル", v: "インド料理" }],
       },
       {
@@ -18108,7 +18108,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ベトナム料理",
         area: "神戸・西代",
         desc: "神戸・西代のベトナム料理店。野菜とハーブをふんだんに使ったベトナム料理は、低カロリーでありながら満足感が高い。",
-        images: ["https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323527/640x640_rect_82b3ca7d5dade2c27f92d557fd3b9b8b.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・西代" }, { k: "予算", v: "¥1,000〜1,999" }],
       },
     ],
@@ -18131,7 +18131,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -18140,7 +18140,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都市東山区",
         desc: "京都・祇園の和食店。伝統的な技法と現代の感性を融合させた料理が、京料理の新たな可能性を示している。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・東山" }, { k: "ジャンル", v: "和食" }],
       },
       {
@@ -18150,7 +18150,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フライ割烹",
         area: "京都・烏丸",
         desc: "京都・烏丸のフライ割烹という唯一無二のジャンルを開拓した店。揚げ物を割烹のレベルまで昇華させた職人技が光る。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/335077/640x640_rect_bf9608e68b5774b1a015c07cf269081e.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・烏丸" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
       {
@@ -18160,7 +18160,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・四条",
         desc: "京都・四条の料理屋。素材の声を聴く調理哲学が、会席料理に静かな輝きをもたらしている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・四条" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
       {
@@ -18170,7 +18170,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "広島・本通",
         desc: "広島・本通の鮨店。瀬戸内の恵みを最大限に活かした握りが、広島の鮨文化を支えている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・本通" }, { k: "ジャンル", v: "寿司" }],
       },
       {
@@ -18180,7 +18180,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ローストビーフ・フレンチ",
         area: "京都・上賀茂",
         desc: "京都・上賀茂のローストビーフ専門店。フレンチの技法でローストビーフを仕上げ、京都に新たなグルメジャンルを確立した。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/338668/640x640_rect_ddb336e742a3f8fcc72ecd5cd62744ca.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・上賀茂" }, { k: "ジャンル", v: "ローストビーフ" }],
       },
     ],
@@ -18203,7 +18203,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r16/r16-01.webp",
     ranking: [
       {
         rank: "BEST 01",
@@ -18212,7 +18212,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・自家焙煎コーヒー",
         area: "神奈川・津久井湖",
         desc: "津久井湖畔にひっそりと佇む自家焙煎カフェ。地元の常連が大切にしてきた、SNSには出てこない本物のコーヒーがある。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r16/r16-01.webp"],
         specs: [{ k: "エリア", v: "神奈川・津久井湖" }, { k: "ジャンル", v: "カフェ" }],
       },
       {
@@ -18222,7 +18222,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・スペシャルティコーヒー",
         area: "福岡・博多駅前",
         desc: "博多駅前の路地に構えるスペシャルティコーヒー専門店。コーヒー通の間では知られているが、観光客の目にはなかなか触れない隠れた名店。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡・博多" }, { k: "ジャンル", v: "スペシャルティコーヒー" }],
       },
       {
@@ -18232,7 +18232,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・東淀川",
         desc: "大阪・東淀川の海鮮居酒屋。地の魚を活かした料理と、相性の良い地酒を揃える。地元の酒好きが集う実力店。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r34/r34-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・東淀川" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -18242,7 +18242,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・福島",
         desc: "大阪・福島の路地裏に潜む中華料理店。派手な宣伝はしないが、地元に長年愛されてきた実力が一皿に詰まっている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/139284/640x640_rect_139284057.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "中華料理" }],
       },
       {
@@ -18252,7 +18252,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "神戸・岡場",
         desc: "神戸・岡場の隠れ家和バル。その名の通り、知る人ぞ知る存在感で地元の食通を迎え続けている。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345532/640x640_rect_09f0466dc489d42a445c6a149be0b556.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・岡場" }, { k: "ジャンル", v: "和バル" }],
       },
     ],
@@ -18275,7 +18275,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200",
+    heroImage: "/restaurants/kitsune-storefront-night.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18284,7 +18284,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワイン食堂",
         area: "神奈川・六角橋",
         desc: "横浜・六角橋のワイン食堂。ナチュラルワインと手作りのイタリア料理の組み合わせが、ワイン好きを引き付ける。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["/restaurants/kitsune-storefront-night.jpg"],
         specs: [{ k: "エリア", v: "神奈川・六角橋" }, { k: "ジャンル", v: "イタリアン・ワイン" }],
       },
       {
@@ -18294,7 +18294,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "コーヒースタンド・ナチュラルワイン",
         area: "京都・清水",
         desc: "京都・清水のコーヒースタンド兼ナチュラルワインバー。昼のコーヒーから夜のナチュラルワインへのシフトが話題を呼んでいる。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["/restaurants/r46/r46-image-1.jpg"],
         specs: [{ k: "エリア", v: "京都・清水" }, { k: "ジャンル", v: "ナチュラルワイン" }],
       },
       {
@@ -18314,7 +18314,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・南久宝寺町",
         desc: "大阪・中央区の和牛×ワイン×イタリアンの三位一体を実現した店。厳選和牛とワインのペアリングが特別な夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪・中央区" }, { k: "予算", v: "¥10,000〜¥15,000" }],
       },
       {
@@ -18324,7 +18324,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "名古屋・錦",
         desc: "名古屋・錦のワインバー&イタリアン。豊富なワインリストと料理のクオリティが、名古屋のワイン愛好家を集める。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800"],
         specs: [{ k: "エリア", v: "名古屋・錦" }, { k: "ジャンル", v: "イタリアン・ワイン" }],
       },
     ],
@@ -18347,7 +18347,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "/restaurants/r21/r21-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18356,7 +18356,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理",
         area: "大阪・福島",
         desc: "大阪・福島の小料理居酒屋。季節の日本酒と、それに寄り添う小皿料理の組み合わせが、酒好きの心を掴んで離さない。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r21/r21-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -18376,7 +18376,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・牡蠣・秋田地酒",
         area: "大阪・なんば",
         desc: "大阪・なんばの牡蠣と秋田地酒の居酒屋。秋田の蔵元と直接つながる地酒ラインナップが、日本酒ファンを全国から集める。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・なんば" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -18386,7 +18386,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・東淀川",
         desc: "大阪・東淀川の魚料理居酒屋。地の魚を活かした料理と、相性の良い地酒を揃える。地元の酒好きが集う実力店。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r34/r34-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・東淀川" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -18396,7 +18396,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食居酒屋",
         area: "埼玉・浦和",
         desc: "埼玉・浦和の和食居酒屋。埼玉近郊の蔵元を中心とした地酒と、丁寧な和食料理のペアリングが、浦和の日本酒文化を支えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r42/r42-image-1.jpg"],
         specs: [{ k: "エリア", v: "埼玉・浦和" }, { k: "ジャンル", v: "和食居酒屋" }],
       },
     ],
@@ -18419,7 +18419,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "/restaurants/r06/r06-hero.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18428,7 +18428,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "東京・浅草",
         desc: "東京・浅草の実力派ラーメン店。丁寧に取ったスープと自家製麺の組み合わせが、浅草のラーメンシーンを牽引している。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["/restaurants/r06/r06-hero.jpg"],
         specs: [{ k: "エリア", v: "東京・浅草" }, { k: "ジャンル", v: "ラーメン" }],
       },
       {
@@ -18438,7 +18438,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "大阪・三国",
         desc: "大阪・三国の実力ラーメン店。地元客が通い続ける安定した美味しさと、丁寧な仕事ぶりが評価されている。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["/restaurants/r37/r37-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・三国" }, { k: "予算", v: "¥1,000前後" }],
       },
       {
@@ -18448,7 +18448,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "福岡・多の津",
         desc: "福岡・多の津の実力ラーメン店。豚骨文化の土地で独自のスタイルを確立した、福岡ラーメンの新たな旗手。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡・多の津" }, { k: "ジャンル", v: "ラーメン" }],
       },
       {
@@ -18458,7 +18458,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "京都市右京区",
         desc: "京都・右京区の実力ラーメン店。京都の出汁文化を下敷きにした独自のスープが、京都ラーメンファンを唸らせる。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/10037/640x640_rect_10037958.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市右京区" }, { k: "ジャンル", v: "ラーメン" }],
       },
       {
@@ -18468,7 +18468,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "北海道・札幌",
         desc: "北海道・札幌の実力ラーメン店。北の大地の素材を活かしたスープが、札幌ラーメンの可能性を更新している。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356162/640x640_rect_1184b2c9137fb703842c77e104981fd7.jpg?w=800"],
         specs: [{ k: "エリア", v: "北海道・札幌" }, { k: "ジャンル", v: "ラーメン" }],
       },
     ],
@@ -18491,7 +18491,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "/restaurants/r20/r20-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18500,7 +18500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ベトナム料理",
         area: "名古屋・東区",
         desc: "名古屋・東区のベトナム料理店。現地の食材と調理法にこだわり、日本で本格的なベトナムの味を再現している。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["/restaurants/r20/r20-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・東区" }, { k: "ジャンル", v: "ベトナム料理" }],
       },
       {
@@ -18510,7 +18510,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "スペイン料理",
         area: "神戸市中央区",
         desc: "神戸・中央区のスペイン料理店。タパスからパエリアまで、本場のスペイン料理文化を神戸に根付かせた老舗。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/260454/640x640_rect_85d5880bb325f59c57bc16317b188036.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "スペイン料理" }],
       },
       {
@@ -18520,7 +18520,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理・広東料理",
         area: "神戸市中央区",
         desc: "神戸・中央区の広東料理店。本場香港仕込みの技法で作る点心と料理が、神戸の中華街文化とは異なる本物の広東の味を伝える。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/227602/640x640_rect_91b10ed2af9882bb93b94f18f6d16282.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "広東料理" }],
       },
       {
@@ -18530,7 +18530,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "インド料理",
         area: "京都市伏見区",
         desc: "京都・伏見区の本格インド料理店。南インドのスパイスカレーと、北インドの料理の両方を扱う幅広さが魅力。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129438/640x640_rect_129438593.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市伏見区" }, { k: "ジャンル", v: "インド料理" }],
       },
       {
@@ -18540,7 +18540,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ベトナム料理",
         area: "神戸・西代",
         desc: "神戸・西代のベトナム料理店。フォーやバインミーを中心としたメニューが、リーズナブルな価格で本格的なベトナムの味を楽しませてくれる。",
-        images: ["https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323527/640x640_rect_82b3ca7d5dade2c27f92d557fd3b9b8b.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・西代" }, { k: "予算", v: "¥1,000〜1,999" }],
       },
     ],
@@ -18563,7 +18563,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r50/r50-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18572,7 +18572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ナポリピッツァ",
         area: "大阪・国分寺",
         desc: "大阪・北区のナポリピッツァ専門店。薪窯で焼き上げる本格ナポリピッツァが、大阪のピザシーンで高い評価を受けている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・北区" }, { k: "ジャンル", v: "ナポリピッツァ" }],
       },
       {
@@ -18582,7 +18582,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "名古屋・南区",
         desc: "名古屋・南区のイタリアンレストラン。石窯で焼くピザと本格イタリアン料理が、名古屋のイタリアンファンを引き付けている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"],
         specs: [{ k: "エリア", v: "名古屋・南区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -18592,7 +18592,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "名古屋・今池",
         desc: "名古屋・今池のイタリアン&ピザ店。個性的な空間とこだわりのピザが、今池の食シーンに彩りを添えている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/346456/640x640_rect_0ef030baee684dabdece5b1a684d3aa0.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・今池" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -18602,7 +18602,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "神戸市灘区",
         desc: "神戸・灘区のイタリアントラットリア。地元産食材を活かしたピザと料理が、神戸のイタリアン文化を豊かにしている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/288586/640x640_rect_80a763753f8dc31d0c0724b9386f025f.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・灘区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -18612,7 +18612,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "神戸市須磨区",
         desc: "神戸・須磨区の本格イタリアンレストラン。海を望むロケーションで楽しむピザが、神戸の食の豊かさを象徴している。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/337584/640x640_rect_05afa8c201baeae03badffaccaaaa558.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・須磨区" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -18635,7 +18635,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "/restaurants/r07/r07-storefront.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18644,7 +18644,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理・四川",
         area: "名古屋・鳴海",
         desc: "名古屋・鳴海の四川料理専門店。本場四川の麻辣を忠実に再現した料理が、名古屋の中華ファンを唸らせている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r07/r07-storefront.jpg"],
         specs: [{ k: "エリア", v: "名古屋・鳴海" }, { k: "ジャンル", v: "四川料理" }],
       },
       {
@@ -18654,7 +18654,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・福島",
         desc: "大阪・福島の路地裏チャイニーズ。本格的な中国料理を気軽に楽しめる店として、地元グルメ通に重宝されている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/139284/640x640_rect_139284057.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "中華料理" }],
       },
       {
@@ -18664,7 +18664,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・緑地公園",
         desc: "大阪・緑地公園の中華料理店。地元住民に長年愛される安定した味と、手頃な価格設定が人気の理由だ。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345852/640x640_rect_ff6cd16fb19539d5f3c6168ae34c744f.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・緑地公園" }, { k: "ジャンル", v: "中華料理" }],
       },
       {
@@ -18674,7 +18674,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理",
         area: "大阪・十三",
         desc: "大阪・十三の本格中国料理店。広いメニュー展開と安定したクオリティが、十三の食シーンを支えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/305790/640x640_rect_827ec9aa4ebce237e6f94e54b1e1298a.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・十三" }, { k: "ジャンル", v: "中国料理" }],
       },
       {
@@ -18684,7 +18684,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "名古屋・国際センター",
         desc: "名古屋・国際センターの中華割烹。割烹の技法を中国料理に取り入れた独自スタイルが、名古屋の中華シーンに新風を吹き込む。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/219646/640x640_rect_7a1a0b1ca64efc9f84beaf99dac2a0ac.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・国際センター" }, { k: "ジャンル", v: "中華割烹" }],
       },
     ],
@@ -18707,7 +18707,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "/restaurants/r27/r27-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18716,7 +18716,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・フレンチスイーツ",
         area: "大阪・靭本町",
         desc: "大阪・靭本町のフレンチスイーツカフェ。パティシエが手がけるフレンチスタイルのスイーツが、靭公園エリアの新たな名物になっている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・靭本町" }, { k: "ジャンル", v: "フレンチスイーツ" }],
       },
       {
@@ -18726,7 +18726,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フルーツパーラー・カフェ",
         area: "名古屋・名駅",
         desc: "名古屋・名駅のフルーツパーラー。季節のフルーツを贅沢に使ったパフェやスイーツが、名古屋のスイーツファンを集めている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r43/r43-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・名駅" }, { k: "ジャンル", v: "フルーツパーラー" }],
       },
       {
@@ -18736,7 +18736,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "タルト・ケーキ",
         area: "京都・桂",
         desc: "京都・桂のタルト専門店。フルーツタルトからチョコレートまで、丁寧に作られたタルトが京都のスイーツシーンを豊かにしている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/329117/640x640_rect_e1d8b760fdfad2ee805c1913ed3e4831.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・桂" }, { k: "ジャンル", v: "タルト・ケーキ" }],
       },
       {
@@ -18769,7 +18769,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -18778,7 +18778,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨・日本料理",
         area: "神戸市中央区",
         desc: "神戸・中央区の鮨と日本料理の店。瀬戸内・播磨灘の新鮮な魚介を使った鮨が、神戸の鮨文化を支えている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "鮨・日本料理" }],
       },
       {
@@ -18788,7 +18788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "東京・蒲田",
         desc: "東京・蒲田の老舗鮨店。江戸前の技法を守り続ける職人の握りは、蒲田という下町に相応しい実直な美味しさを持つ。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・蒲田" }, { k: "ジャンル", v: "鮨" }],
       },
       {
@@ -18798,7 +18798,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "京都市下京区",
         desc: "京都・下京区の鮨店。京都の出汁文化と鮨を融合させた独自スタイルが、京都の鮨シーンに新たな地平を拓いている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市下京区" }, { k: "ジャンル", v: "寿司" }],
       },
       {
@@ -18808,7 +18808,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "広島・本通",
         desc: "広島・本通の鮨店。瀬戸内の豊かな魚介を活かした広島鮨が、地元と旅行者の両方から愛されている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・本通" }, { k: "ジャンル", v: "寿司" }],
       },
     ],
@@ -18831,7 +18831,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200",
+    heroImage: "/restaurants/r09/r09-hero.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18840,7 +18840,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・地鶏",
         area: "福岡・博多区",
         desc: "福岡・博多の地鶏居酒屋。九州産の地鶏を豪快に焼き上げる料理と福岡の地酒が、博多の夜を盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡・博多" }, { k: "ジャンル", v: "地鶏居酒屋" }],
       },
       {
@@ -18850,7 +18850,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理",
         area: "大阪・福島",
         desc: "大阪・福島の小料理居酒屋。季節の一品料理と日本酒の組み合わせが、大阪の居酒屋文化の粋を体現している。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r21/r21-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "小料理居酒屋" }],
       },
       {
@@ -18860,7 +18860,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・なんば",
         desc: "大阪・なんばの海鮮居酒屋。牡蠣と秋田地酒の組み合わせが名物で、大阪の夜の食文化を彩る一軒。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・なんば" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -18870,7 +18870,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本料理",
         area: "京都市右京区",
         desc: "京都・西院の居酒屋兼日本料理店。京都の食材を使った一品料理と地酒が、西院の夜を豊かにしている。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/331261/640x640_rect_9d06d2a99ac81fdeb00a786e07c878e1.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・西院" }, { k: "ジャンル", v: "居酒屋・日本料理" }],
       },
       {
@@ -18880,7 +18880,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "京都市山科区",
         desc: "京都・山科区の地元密着型居酒屋。観光地化された京都ではなく、地元住民が通い続ける本物の居酒屋文化がここにある。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/277711/640x640_rect_2cbf466cf374bdbd588ba6fd3ca982b0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・山科" }, { k: "ジャンル", v: "居酒屋" }],
       },
     ],
@@ -18903,7 +18903,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/yakitori-shimaya-3.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -18912,7 +18912,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "東京・南麻布",
         desc: "東京・南麻布の焼鳥の名店。職人が炭火で丁寧に焼き上げる串は、港区の夜に相応しい気品と美味しさを持つ。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/yakitori-shimaya-3.jpg"],
         specs: [{ k: "エリア", v: "東京・南麻布" }, { k: "ジャンル", v: "焼鳥" }],
       },
       {
@@ -18922,7 +18922,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "東京・新蒲田",
         desc: "東京・新蒲田の海鮮と日本料理の店。市場直送の鮮魚を使った料理が、蒲田の食文化を支えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311687/640x640_rect_8c9db276fdfb26056674b72307316d2c.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・新蒲田" }, { k: "ジャンル", v: "海鮮・日本料理" }],
       },
       {
@@ -18932,7 +18932,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "東京・西蒲田",
         desc: "東京・西蒲田のフレンチビストロ。下町の立地に構える本格フレンチが、蒲田に新しい食の選択肢をもたらしている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・西蒲田" }, { k: "ジャンル", v: "フレンチビストロ" }],
       },
       {
@@ -18942,7 +18942,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "東京・立川",
         desc: "東京・立川の実力居酒屋。多摩エリアの食材を活かした料理と地酒が、立川の夜を豊かにしている。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/247649/640x640_rect_979169f3c6dd92dbfad0e3ecc46eb795.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・立川" }, { k: "ジャンル", v: "居酒屋" }],
       },
     ],
@@ -18965,7 +18965,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -18974,7 +18974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・三宮",
         desc: "神戸・三宮の焼肉店。神戸牛をはじめとする上質な黒毛和牛が揃い、神戸の夜を豊かに演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・三宮" }, { k: "ジャンル", v: "焼肉" }],
       },
       {
@@ -18984,7 +18984,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・垂水",
         desc: "神戸・垂水の炭火焼肉店。炭火の香りと上質な肉の組み合わせが、垂水のディナーシーンを牽引する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356955/640x640_rect_c4ef95d9aaa19f66a39bd29702a2e237.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・垂水" }, { k: "ジャンル", v: "焼肉" }],
       },
       {
@@ -18994,7 +18994,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮",
         area: "神戸・元町",
         desc: "神戸・元町の海鮮専門店。瀬戸内と日本海の新鮮な魚介が揃い、神戸の海の恵みを存分に楽しめる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311353/640x640_rect_f78ce16fc5ec36fe804e8905bee45909.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・元町" }, { k: "ジャンル", v: "海鮮" }],
       },
       {
@@ -19004,7 +19004,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸市東灘区",
         desc: "神戸・東灘区のフレンチ&イタリアンレストラン。開港以来の西洋料理文化を受け継ぐ神戸らしい一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・東灘区" }, { k: "ジャンル", v: "フレンチ・イタリアン" }],
       },
       {
@@ -19014,7 +19014,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨・日本料理",
         area: "神戸市中央区",
         desc: "神戸・中央区の鮨と日本料理の名店。瀬戸内の魚介を使った握りが、神戸の鮨文化を代表している。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "鮨・日本料理" }],
       },
     ],
@@ -19037,7 +19037,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/139284/640x640_rect_139284057.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19046,7 +19046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・福島",
         desc: "大阪・福島の路地裏に構える本格中華。地元の食通が通い続ける実力派で、大阪中華の底力を示している。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/139284/640x640_rect_139284057.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "中華料理" }],
       },
       {
@@ -19056,7 +19056,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・緑地公園",
         desc: "大阪・緑地公園の中華料理店。地元住民に長年愛されてきた安定した美味しさが魅力の一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345852/640x640_rect_ff6cd16fb19539d5f3c6168ae34c744f.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・緑地公園" }, { k: "ジャンル", v: "中華料理" }],
       },
       {
@@ -19066,7 +19066,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国料理",
         area: "大阪・十三",
         desc: "大阪・十三の本格中国料理。円卓を囲む宴席から気軽なランチまで幅広く対応し、十三の食文化を支えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/305790/640x640_rect_827ec9aa4ebce237e6f94e54b1e1298a.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・十三" }, { k: "ジャンル", v: "中国料理" }],
       },
       {
@@ -19076,7 +19076,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中華料理",
         area: "大阪・門真",
         desc: "大阪・門真のリーズナブルな中華料理店。コストパフォーマンスの高さで地元ファンを集める実力店。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/296105/640x640_rect_5c92d6d2ddb0cbb35f41320da270f2ca.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・門真" }, { k: "予算", v: "¥999以下" }],
       },
     ],
@@ -19118,7 +19118,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市下京区",
         desc: "京都・下京区のイタリアンレストラン。夜のタヴェルナとして、ワインと料理を楽しめるバー使いもできる一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・下京区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19128,7 +19128,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・三条",
         desc: "京都・三条のイタリアン酒場。ワインと料理をカジュアルに楽しめるスタイルが、三条の夜を賑わせている。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/210500/640x640_rect_ab44285941c29f0ac74620eed6931bb1.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・三条" }, { k: "ジャンル", v: "イタリアン酒場" }],
       },
       {
@@ -19138,7 +19138,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・伏見桃山",
         desc: "京都・伏見桃山のオマール海老とワインの店。伏見の酒文化とワイン文化が融合した、京都らしい個性的な一軒。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/256486/640x640_rect_0492c0beabadce22cdbb7af0e6bfe6a9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・伏見桃山" }, { k: "ジャンル", v: "イタリアン酒場" }],
       },
     ],
@@ -19161,7 +19161,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "/restaurants/r09/r09-hero.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -19170,7 +19170,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・地鶏",
         area: "福岡・博多区",
         desc: "福岡・博多の地鶏居酒屋。九州産の地鶏を炭火でもも焼きにする料理が名物で、博多のディナーを豪快に演出する。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡・博多" }, { k: "ジャンル", v: "地鶏居酒屋" }],
       },
       {
@@ -19180,7 +19180,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡・長浜",
         desc: "福岡・長浜の海鮮日本料理店。博多漁港に近い立地を活かした鮮魚料理が、福岡ディナーの定番として知られる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r10/r10-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡・長浜" }, { k: "予算", v: "¥3,000〜¥3,999" }],
       },
       {
@@ -19190,7 +19190,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・バー",
         area: "福岡・姪浜",
         desc: "福岡・姪浜のイタリアン&バー。海を感じるロケーションで楽しむ料理とドリンクが、姪浜の夜の食文化を担っている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/199463/640x640_rect_28056dce35037d23a1e556b0e8f2f46c.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡・姪浜" }, { k: "ジャンル", v: "イタリアン・バー" }],
       },
       {
@@ -19200,7 +19200,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー・夜カフェ",
         area: "福岡・宮若",
         desc: "福岡・宮若の古民家を改装したバー&夜カフェ。福岡市郊外の静かな環境で、特別な夜時間を過ごせる一軒。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [{ k: "エリア", v: "福岡・宮若" }, { k: "ジャンル", v: "夜カフェ・バー" }],
       },
     ],
@@ -19223,7 +19223,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19232,7 +19232,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・三宮",
         desc: "神戸・三宮の焼肉店。神戸牛を中心とした上質な肉の品揃えが、神戸焼肉シーンのトップクラスとして評価されている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・三宮" }, { k: "ジャンル", v: "焼肉" }],
       },
       {
@@ -19242,7 +19242,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "神戸・垂水",
         desc: "神戸・垂水の炭火焼肉の名店。炭火の遠赤外線で仕上げる肉の旨みが引き立つ料理が、垂水の焼肉文化を担っている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356955/640x640_rect_c4ef95d9aaa19f66a39bd29702a2e237.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・垂水" }, { k: "ジャンル", v: "炭火焼肉" }],
       },
       {
@@ -19252,7 +19252,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き・鉄板焼き",
         area: "神戸市灘区",
         desc: "神戸・灘区の鉄板焼き&お好み焼き店。神戸のソウルフードであるお好み焼きと、鉄板焼きの両方が楽しめる。",
-        images: ["https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/176705/640x640_rect_9731f0cb0cfe3206c138046a6ab8c082.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・灘区" }, { k: "ジャンル", v: "鉄板焼き" }],
       },
       {
@@ -19262,7 +19262,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ホルモン焼き",
         area: "神戸市兵庫区",
         desc: "神戸・兵庫区のホルモン焼き専門店。新鮮なホルモンを七輪で焼く豪快な食体験が、神戸の下町文化を体現している。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/33399/640x640_rect_33399113.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・兵庫区" }, { k: "ジャンル", v: "ホルモン焼き" }],
       },
     ],
@@ -19285,7 +19285,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200",
+    heroImage: "/restaurants/r15/r15-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -19294,7 +19294,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "クラシック音楽喫茶・Bar",
         area: "大阪・関目",
         desc: "大阪・関目のクラシック音楽バー。クラシックの音楽に包まれながら飲む一杯は、大阪の喧騒を忘れさせてくれる特別な体験だ。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["/restaurants/r15/r15-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・関目" }, { k: "ジャンル", v: "音楽バー" }],
       },
       {
@@ -19304,7 +19304,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み居酒屋",
         area: "大阪・関目",
         desc: "大阪・関目の個性的な立ち飲みスタンド。店主の人柄と手頃な価格が、地元の常連を毎晩引き付けている。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・関目" }, { k: "ジャンル", v: "立ち飲み" }],
       },
       {
@@ -19314,7 +19314,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪・中崎町",
         desc: "大阪・中崎町のカフェ&バー。ヴィンテージな内装と昼夜を問わない使い勝手の良さが、中崎町の文化的な食シーンを担っている。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・中崎町" }, { k: "ジャンル", v: "カフェ・バー" }],
       },
     ],
@@ -19337,7 +19337,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19346,7 +19346,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食創作居酒屋",
         area: "名古屋・池下",
         desc: "名古屋・池下の和食創作居酒屋。季節の食材を活かした一品料理が揃い、名古屋の夜の和食シーンを代表する一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・池下" }, { k: "ジャンル", v: "和食居酒屋" }],
       },
       {
@@ -19356,7 +19356,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・手羽先",
         area: "名古屋・栄",
         desc: "名古屋・栄の手羽先居酒屋。名古屋メシの代表格・手羽先を中心に、名古屋の夜食文化を体現している。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r36/r36-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・栄" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -19366,7 +19366,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮居酒屋",
         area: "名古屋・黒川",
         desc: "名古屋・黒川の産直海鮮居酒屋。産地から直送した鮮魚を創作料理に仕立て、名古屋の海鮮シーンに新風を吹き込む。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r45/r45-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・黒川" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -19376,7 +19376,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "名古屋・名駅南",
         desc: "名古屋・名駅南の本格イタリアンレストラン。名古屋のイタリアンシーンを牽引する実力店として、地元食通に長年支持されている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/79938/640x640_rect_79938634.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・名駅南" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -19399,7 +19399,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-01",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r40/r40-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -19408,7 +19408,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・京野菜",
         area: "大阪・十三",
         desc: "大阪・十三の京野菜イタリアン。京都産の野菜を使ったパスタが、大阪とイタリアと京都の三者を結びつける独自のスタイルを生んでいる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r40/r40-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・十三" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19428,7 +19428,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ナポリピッツァ・パスタ",
         area: "大阪・北区",
         desc: "大阪・北区のナポリピッツァ&パスタ専門店。ピザ同様、パスタのクオリティも高く、大阪のイタリアンシーンを彩っている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・北区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19438,7 +19438,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "名古屋・南区",
         desc: "名古屋・南区のイタリアントラットリア。本格的なパスタと石窯ピザが揃い、名古屋のイタリアンファンを満足させる一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"],
         specs: [{ k: "エリア", v: "名古屋・南区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19448,7 +19448,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・肥後橋",
         desc: "大阪・肥後橋の本格イタリアンレストラン。パスタを軸とした料理と丁寧なサービスが、大阪ビジネス街のランチ・ディナーシーンを支えている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・肥後橋" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -19471,7 +19471,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/241443/640x640_rect_ce97ea00f4d496a118d5094ffb137c7f.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19480,7 +19480,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン",
         area: "京都市西京区",
         desc: "嵐山エリアの帰り道に立ち寄れる京都・西京区のイタリアンバル。地元の常連に愛されるアットホームな空間で、ワインと料理が疲れた足を癒す。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/241443/640x640_rect_ce97ea00f4d496a118d5094ffb137c7f.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市西京区" }, { k: "ジャンル", v: "バル・イタリアン" }],
       },
       {
@@ -19490,7 +19490,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・ワインバー",
         area: "京都市西京区",
         desc: "京都・西京区のビストロ&ワインバー。嵐山観光を終えた夜、ナチュラルワインと気軽な料理でほっと一息つける隠れ家的存在。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266717/640x640_rect_a828f880ddc9a34da8e77f2a56944b88.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市西京区" }, { k: "ジャンル", v: "ビストロ・ワインバー" }],
       },
       {
@@ -19500,7 +19500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "京都市西京区",
         desc: "京都・西京区の洋食店。嵐山からアクセスしやすい立地で、丁寧に作られた洋食が旅の疲れを温かく迎えてくれる。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321866/640x640_rect_22a0e0186c9d3bb6f48bd41d282e11d5.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市西京区" }, { k: "ジャンル", v: "洋食" }],
       },
       {
@@ -19510,7 +19510,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市右京区",
         desc: "京都・右京区のオステリア。嵯峨野エリアに近く、観光後の夕食に立ち寄れる本格イタリアンが揃う。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349961/640x640_rect_5707d43430d229294751589884a5b2c0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市右京区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19520,7 +19520,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥",
         area: "京都市右京区",
         desc: "京都・右京区の焼き鳥店。嵐山観光の締めに、地元民と肩を並べて炭火焼き鳥を楽しめる一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/300074/640x640_rect_3372d21a0e3971a90336514a92a04379.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市右京区" }, { k: "ジャンル", v: "焼き鳥" }],
       },
     ],
@@ -19543,7 +19543,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200",
+    heroImage: "/restaurants/paofuku-interior-wide.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -19552,7 +19552,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鶏居酒屋",
         area: "大阪・天神橋筋六丁目",
         desc: "天神橋筋六丁目の鶏専門居酒屋。鶏料理のバリエーションと手頃な価格が、天満のはしご飲みの一軒目に最適。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/paofuku-interior-wide.jpg"],
         specs: [{ k: "エリア", v: "大阪・天神橋六丁目" }, { k: "ジャンル", v: "鶏居酒屋" }],
       },
       {
@@ -19562,7 +19562,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・天満",
         desc: "天満エリアの居酒屋。餃子・お造り・天ぷらと多彩な料理が揃い、はしご飲みの途中でしっかり食べたい時に重宝する。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・天満" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -19572,7 +19572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・おばんざい・炭火焼",
         area: "大阪・野田阪神",
         desc: "大阪・野田阪神エリアのおばんざい炭火焼き居酒屋。季節の惣菜と炭火の香りが、天満エリアの夜を豊かにする。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r19/r19-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・野田阪神" }, { k: "ジャンル", v: "おばんざい・炭火焼" }],
       },
       {
@@ -19582,7 +19582,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・堺筋本町",
         desc: "大阪・堺筋本町の焼き鳥・串かつ・おでんが揃う居酒屋。天満エリアのはしご飲みのラストを担う、気軽な一軒。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r32/r32-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・堺筋本町" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -19592,7 +19592,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥・炭火",
         area: "大阪・九条",
         desc: "大阪・九条の炭火焼鳥店。天満エリアからひと移動した先に待つ実力店。締めの炭火焼鳥で夜を完結させたい。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/346192/640x640_rect_ca92a66018ae9d3fdfb24e40c93a2aa7.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・九条" }, { k: "ジャンル", v: "焼鳥・炭火" }],
       },
     ],
@@ -19615,7 +19615,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19624,7 +19624,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "広島・八丁堀の和食割烹。宮島観光の帰りに広島市内でゆっくり食事をしたい時、その特別な夜に相応しい格のある一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・八丁堀" }, { k: "ジャンル", v: "和食割烹" }],
       },
       {
@@ -19634,7 +19634,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島・幟町",
         desc: "広島・幟町の本格イタリアン。広島観光のディナーに、瀬戸内の食材を使ったイタリア料理で宮島の旅を締めくくる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・幟町" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -19644,7 +19644,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "広島市中区",
         desc: "広島市中区の洋食店。宮島観光から帰ってきた体に、温かい洋食が心地よく染みる。地元にも愛される安定の実力店。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/334818/640x640_rect_a17a1cd6caa5658709fa74242cd84907.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島市中区" }, { k: "ジャンル", v: "洋食" }],
       },
       {
@@ -19654,7 +19654,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ステーキ・肉料理",
         area: "広島・高取",
         desc: "広島・高取の肉料理ダイニング。宮島観光の特別な思い出を、上質な肉料理で締めくくる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/281008/640x640_rect_db2133e9dbf840102ae784f73ce5d060.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・高取" }, { k: "ジャンル", v: "ステーキ・肉料理" }],
       },
     ],
@@ -19677,7 +19677,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19686,7 +19686,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "薬膳粥・貝割烹",
         area: "神戸市中央区",
         desc: "神戸・中央区の薬膳粥と貝割烹の専門店。異人館散策で歩き疲れた体に、薬膳の滋味が染み渡る昼食を提供する。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "薬膳粥" }],
       },
       {
@@ -19696,7 +19696,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "神戸・元町",
         desc: "神戸・元町の和食店。異人館から元町商店街に流れる観光動線上で、落ち着いた和食のランチが楽しめる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322849/640x640_rect_ad8557ce446cf558b68fddc46fceeb57.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・元町" }, { k: "予算", v: "¥4,000〜4,999" }],
       },
       {
@@ -19706,7 +19706,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸市東灘区",
         desc: "神戸・東灘区のフレンチ&イタリアンレストラン。北野の洋館文化に通じる西洋料理の伝統を、ランチで手軽に体験できる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・東灘区" }, { k: "ジャンル", v: "フレンチ・イタリアン" }],
       },
       {
@@ -19716,7 +19716,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "神戸・三宮",
         desc: "神戸・三宮の日本料理店。北野から三宮へ降りてきた後、旬の食材を使った本格日本料理で異人館散策の余韻を楽しむ。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/229145/640x640_rect_ae7bfc4e7ef48f6ef7d095cdbc9afa3b.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・三宮" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
     ],
@@ -19739,7 +19739,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/355332/640x640_rect_da3080fa4d359890eeb6ff3df882f37b.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19748,7 +19748,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ・イタリアン",
         area: "埼玉・川越市",
         desc: "川越市のパスタ&イタリアンの名店。小江戸観光の後、蔵造りの街並みから少し離れた場所で本格パスタを楽しめる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/355332/640x640_rect_da3080fa4d359890eeb6ff3df882f37b.jpg?w=800"],
         specs: [{ k: "エリア", v: "埼玉・川越市" }, { k: "ジャンル", v: "パスタ・イタリアン" }],
       },
       {
@@ -19758,7 +19758,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "おでん・串揚げ・居酒屋",
         area: "埼玉・大宮",
         desc: "大宮のおでん&串揚げ居酒屋。川越観光から大宮に移動し、埼玉の地元酒場文化でしめくくる一日がおすすめ。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r44/r44-image-1.jpg"],
         specs: [{ k: "エリア", v: "埼玉・大宮" }, { k: "ジャンル", v: "おでん・居酒屋" }],
       },
       {
@@ -19768,7 +19768,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食居酒屋",
         area: "埼玉・浦和",
         desc: "浦和の和食居酒屋。川越観光の後、浦和エリアで埼玉の地酒と和食を楽しむ夜の選択肢。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r42/r42-image-1.jpg"],
         specs: [{ k: "エリア", v: "埼玉・浦和" }, { k: "ジャンル", v: "和食居酒屋" }],
       },
       {
@@ -19778,7 +19778,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "埼玉・浦和",
         desc: "浦和の本格イタリアンレストラン。川越・浦和エリアのイタリアンシーンを牽引する一軒で、観光の締めに相応しい。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/330833/640x640_rect_adfab374006ddd7ef5b27fa41001b65a.jpg?w=800"],
         specs: [{ k: "エリア", v: "埼玉・浦和" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -19801,7 +19801,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "/restaurants/r10/r10-hero.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -19810,7 +19810,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡・長浜",
         desc: "福岡・長浜の海鮮日本料理店。太宰府観光から博多に戻った夜、長浜の海鮮で福岡観光の締めくくりを。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r10/r10-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡・長浜" }, { k: "予算", v: "¥3,000〜¥3,999" }],
       },
       {
@@ -19820,7 +19820,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ・イタリアン",
         area: "福岡・博多",
         desc: "博多のパスタ&イタリアン。太宰府から博多に戻る動線上で、気軽に本格パスタを楽しめる一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/333921/640x640_rect_4214b5aeefccdbbb4c8c622c77e65904.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡・博多" }, { k: "ジャンル", v: "パスタ・イタリアン" }],
       },
       {
@@ -19830,7 +19830,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥",
         area: "福岡・福津",
         desc: "福岡・福津の焼鳥専門店。太宰府観光からアクセスしやすい福津エリアで、九州産の鶏を炭火で楽しむ。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/267711/640x640_rect_90801af4c12588d03bab33bb0cee854e.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡・福津" }, { k: "ジャンル", v: "焼鳥" }],
       },
       {
@@ -19840,7 +19840,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン",
         area: "福岡・久留米",
         desc: "福岡・久留米のパン屋。太宰府観光の帰り道、久留米エリアで地元に愛されるパンをテイクアウトする旅のひとコマ。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/237537/640x640_rect_431670485ecca9f0913b783726468a1b.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡・久留米" }, { k: "ジャンル", v: "パン" }],
       },
     ],
@@ -19863,7 +19863,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/307411/640x640_rect_5008bd03cb3fa118a9f09f41a9f843d2.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19872,7 +19872,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都市伏見区",
         desc: "京都・伏見区のフレンチ食堂。伏見稲荷観光の後、気軽に本格フレンチが楽しめる隠れ家的ビストロ。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/307411/640x640_rect_5008bd03cb3fa118a9f09f41a9f843d2.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市伏見区" }, { k: "ジャンル", v: "フレンチ" }],
       },
       {
@@ -19882,7 +19882,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市伏見区",
         desc: "京都・伏見区のイタリアンバー。伏見の夜、地酒文化とワインが交差する一軒。伏見稲荷観光の帰りに立ち寄れる。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市伏見区" }, { k: "ジャンル", v: "イタリアン・バー" }],
       },
       {
@@ -19892,7 +19892,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・炭火焼き",
         area: "京都・伏見",
         desc: "京都・伏見の居酒屋&炭火焼き。日本有数の酒どころ・伏見の地酒と炭火料理を楽しめる、観光後の夜食に最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/328301/640x640_rect_f1d6cbc8d4e70770d029717c8cf7d286.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・伏見" }, { k: "ジャンル", v: "居酒屋・炭火焼き" }],
       },
       {
@@ -19902,7 +19902,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都・伏見桃山",
         desc: "京都・伏見桃山のオマール海老とワインの店。伏見観光の締めに、特別なディナーを楽しみたい時の一軒。",
-        images: ["https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/256486/640x640_rect_0492c0beabadce22cdbb7af0e6bfe6a9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・伏見桃山" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -19925,7 +19925,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -19934,7 +19934,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "東京・蒲田",
         desc: "蒲田の老舗鮨店。江戸前の技法を守り続ける職人の握りは、下町蒲田に相応しい実直な美味しさを持つ。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・蒲田" }, { k: "ジャンル", v: "鮨" }],
       },
       {
@@ -19944,7 +19944,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ・フレンチ",
         area: "東京・西蒲田",
         desc: "蒲田・西蒲田のフレンチビストロ。下町に構える本格フレンチが、蒲田の食シーンに新しい選択肢をもたらしている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・西蒲田" }, { k: "ジャンル", v: "フレンチビストロ" }],
       },
       {
@@ -19954,7 +19954,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "東京・新蒲田",
         desc: "新蒲田の海鮮と日本料理の店。市場直送の鮮魚を使った料理が、蒲田の夜食シーンを支えている。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/311687/640x640_rect_8c9db276fdfb26056674b72307316d2c.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・新蒲田" }, { k: "ジャンル", v: "海鮮・日本料理" }],
       },
       {
@@ -19964,7 +19964,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼肉",
         area: "東京・蒲田",
         desc: "蒲田の焼肉店。下町らしいコストパフォーマンスと上質な肉の組み合わせが、蒲田の焼肉ファンを集めている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/292977/640x640_rect_11a9214ece1eee9443cfd1aed085d3f9.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・蒲田" }, { k: "ジャンル", v: "焼肉" }],
       },
       {
@@ -19974,7 +19974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥",
         area: "東京・西蒲田",
         desc: "蒲田・西蒲田の焼き鳥居酒屋。地元の常連が集まる昔ながらの焼き鳥店で、蒲田の下町文化を体感できる。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/287657/640x640_rect_be2142a880af2238b65c44cf9a2ab48e.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京・西蒲田" }, { k: "ジャンル", v: "焼き鳥" }],
       },
     ],
@@ -19997,7 +19997,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20006,7 +20006,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "京都・河原町のフレンチレストラン。デートのランチに最適な洗練された空間と、丁寧なフレンチのコースが二人の特別な時間を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・河原町" }, { k: "ジャンル", v: "フレンチ" }],
       },
       {
@@ -20016,7 +20016,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市東山区",
         desc: "京都・祇園のイタリアンレストラン。祇園の情緒あふれる街並みを楽しんだ後のランチに、本格ピザとパスタで気分を盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/167493/640x640_rect_47c3f3c66358f2bd3a4ee4549b8623fb.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・東山区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -20026,7 +20026,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市左京区",
         desc: "京都・左京区のイタリアンカフェ。デートのランチに気軽に使えるカジュアルな雰囲気で、美味しいイタリアンが楽しめる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市左京区" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -20036,7 +20036,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・西向日",
         desc: "京都・西向日のフレンチレストラン。ランチのコースで本格フレンチを手頃に楽しめる、デートの昼食に打ってつけの一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・西向日" }, { k: "予算", v: "¥8,000〜9,999" }],
       },
       {
@@ -20046,7 +20046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "京都市下京区",
         desc: "京都・下京区のイタリアンタヴェルナ。昼のランチも充実しており、カジュアルにデートの食事に使える実力店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都市下京区" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -20069,7 +20069,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r52/r52-image-2.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20078,7 +20078,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・南久宝寺町",
         desc: "大阪・中央区の和牛×ワイン×イタリアンの三位一体レストラン。特別なシーンを想定した個室対応と、厳選和牛のディナーコースが、プロポーズの夜を完璧に演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪・中央区" }, { k: "予算", v: "¥10,000〜¥15,000" }],
       },
       {
@@ -20088,7 +20088,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・高麗橋",
         desc: "大阪・高麗橋のイタリアンレストラン。マルケ州の郷土料理を現代的に解釈したコースが、大切な夜の食卓を彩る。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [{ k: "エリア", v: "大阪・高麗橋" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -20098,7 +20098,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ",
         area: "大阪・関目高殿",
         desc: "大阪・関目高殿のビストロ。落ち着いた雰囲気と丁寧な料理が、二人だけの特別な夜を静かに盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・関目高殿" }, { k: "ジャンル", v: "ビストロ" }],
       },
       {
@@ -20108,7 +20108,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪・新町",
         desc: "大阪・新町の和モダンカフェ。洗練された空間でのアフタヌーンティーやディナーが、プロポーズ前後の特別な時間を演出する。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["/restaurants/r41/r41-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・新町" }, { k: "ジャンル", v: "和モダンカフェ" }],
       },
     ],
@@ -20131,7 +20131,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20140,7 +20140,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸市東灘区",
         desc: "神戸・東灘区のフレンチ&イタリアンレストラン。夜景デートの後、港町ならではの洗練された料理で二人の夜を締めくくる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・東灘区" }, { k: "ジャンル", v: "フレンチ・イタリアン" }],
       },
       {
@@ -20150,7 +20150,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "神戸・垂水",
         desc: "神戸・垂水の明石海峡を望むイタリアンレストラン。夜景と料理が重なる瞬間が、二人の記憶に深く刻まれる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/250736/640x640_rect_dcfa7c14b0d245ff55f4827598826b62.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・垂水" }, { k: "予算", v: "¥3,000〜3,999" }],
       },
       {
@@ -20160,7 +20160,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "神戸・三宮",
         desc: "神戸・三宮の日本料理店。夜景デートの帰り道、三宮で旬の食材を使った料理と地酒でゆっくりと時間を過ごす。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/229145/640x640_rect_ae7bfc4e7ef48f6ef7d095cdbc9afa3b.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・三宮" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
       {
@@ -20170,7 +20170,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨・日本料理",
         area: "神戸市中央区",
         desc: "神戸・中央区の鮨と日本料理の名店。夜景デートの特別な夜に、神戸の海の恵みを使った鮨で締めくくる。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸市中央区" }, { k: "ジャンル", v: "鮨・日本料理" }],
       },
     ],
@@ -20193,7 +20193,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20202,7 +20202,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島・幟町",
         desc: "広島・幟町の本格イタリアン。広島デートのディナーに、瀬戸内の食材を使ったイタリア料理で特別な夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・幟町" }, { k: "ジャンル", v: "イタリアン" }],
       },
       {
@@ -20212,7 +20212,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "寿司",
         area: "広島・本通",
         desc: "広島・本通の鮨店。デートのランチまたはディナーに、瀬戸内の新鮮な魚介を使った握りで特別感を演出。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・本通" }, { k: "ジャンル", v: "寿司" }],
       },
       {
@@ -20222,7 +20222,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ステーキ・肉料理",
         area: "広島・高取",
         desc: "広島・高取の肉料理ダイニング。デートのディナーに上質な肉料理を楽しみ、広島の夜を豊かに締めくくる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/281008/640x640_rect_db2133e9dbf840102ae784f73ce5d060.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・高取" }, { k: "ジャンル", v: "ステーキ・肉料理" }],
       },
       {
@@ -20232,7 +20232,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "広島・八丁堀の和食割烹。広島デートの特別な夜に、格のある和食コースで二人の時間を演出する。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・八丁堀" }, { k: "ジャンル", v: "和食割烹" }],
       },
     ],
@@ -20255,7 +20255,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200",
+    heroImage: "/restaurants/r43/r43-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20264,7 +20264,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フルーツパーラー・カフェ",
         area: "名古屋・名駅",
         desc: "名古屋・名駅のフルーツパーラー。季節のフルーツを使ったパフェやスイーツが映えるデートのカフェタイムに最適。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r43/r43-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・名駅" }, { k: "ジャンル", v: "フルーツパーラー" }],
       },
       {
@@ -20274,7 +20274,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "コーヒースタンド・ナチュラルワイン",
         area: "名古屋・清水",
         desc: "名古屋・清水のコーヒースタンド。昼はスペシャルティコーヒー、夜はナチュラルワインが楽しめる、デートの時間帯を選ばない一軒。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["/restaurants/r46/r46-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・清水" }, { k: "ジャンル", v: "コーヒースタンド" }],
       },
       {
@@ -20284,7 +20284,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "名古屋・徳川町",
         desc: "名古屋・徳川町の洋食店。カフェ使いもできるゆったりとした空間が、デートの昼食に二人の会話を弾ませる。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["/restaurants/r13/r13-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・徳川町" }, { k: "ジャンル", v: "洋食" }],
       },
       {
@@ -20294,7 +20294,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・沖縄料理",
         area: "名古屋・尼ケ坂",
         desc: "名古屋・尼ケ坂の個性的なカフェ。沖縄料理とコーヒーのユニークな組み合わせが、デートの話題作りにも一役買う。",
-        images: ["https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・尼ケ坂" }, { k: "ジャンル", v: "カフェ" }],
       },
     ],
@@ -20317,7 +20317,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200",
+    heroImage: "/restaurants/r21/r21-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20326,7 +20326,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理",
         area: "大阪・福島",
         desc: "大阪・福島の小料理居酒屋。落ち着いた空間と丁寧な料理が初デートの緊張をほぐし、自然な会話へと誘う。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r21/r21-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "小料理居酒屋" }],
       },
       {
@@ -20336,7 +20336,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・海鮮",
         area: "大阪・東淀川",
         desc: "大阪・東淀川の海鮮居酒屋。新鮮な魚料理を話題にしながら、自然に距離が縮まる初デートの場所として機能する。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r34/r34-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・東淀川" }, { k: "ジャンル", v: "海鮮居酒屋" }],
       },
       {
@@ -20346,7 +20346,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "神戸・長田",
         desc: "神戸・長田の居酒屋。活気があり過ぎず、かつ盛り上がれる適度な雰囲気が初デートに最適。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・長田" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -20356,7 +20356,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "神戸・岡場",
         desc: "神戸・岡場の隠れ家和バル。「知ってる店があって」と連れていける、センスを感じさせる初デートの一軒。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/345532/640x640_rect_09f0466dc489d42a445c6a149be0b556.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・岡場" }, { k: "ジャンル", v: "和バル" }],
       },
       {
@@ -20366,7 +20366,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪・中崎町",
         desc: "大阪・中崎町のカフェ&バー。居酒屋というよりバー寄りの雰囲気で、初デートの場所選びに迷った時の最終手段として機能する。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・中崎町" }, { k: "ジャンル", v: "カフェ・バー" }],
       },
     ],
@@ -20389,7 +20389,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20398,7 +20398,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・西向日",
         desc: "京都・西向日のフレンチレストラン。記念日前日のランチに本格フレンチのコースを楽しむ、少し贅沢な一日を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・西向日" }, { k: "予算", v: "¥8,000〜9,999" }],
       },
       {
@@ -20408,7 +20408,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "京都・河原町",
         desc: "京都・河原町のフレンチ。記念日前日のランチに、洗練されたフレンチのひとときで気分を高めていく。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・河原町" }, { k: "ジャンル", v: "フレンチ" }],
       },
       {
@@ -20418,7 +20418,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "神戸・元町",
         desc: "神戸・元町の和食店。記念日前日のランチに旬の和食コースで、特別な日へのカウントダウンを食で演出する。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322849/640x640_rect_ad8557ce446cf558b68fddc46fceeb57.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・元町" }, { k: "予算", v: "¥4,000〜4,999" }],
       },
       {
@@ -20428,7 +20428,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "広島・八丁堀の和食割烹。記念日前日に少し格のある和食を楽しみ、翌日の本番への期待を高める。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・八丁堀" }, { k: "ジャンル", v: "和食割烹" }],
       },
       {
@@ -20438,7 +20438,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "大阪・高麗橋",
         desc: "大阪・高麗橋のイタリアンレストラン。記念日前日のランチにイタリア料理のコースで、二人の気分をゆっくり盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r35/r35-image-1.png"],
         specs: [{ k: "エリア", v: "大阪・高麗橋" }, { k: "ジャンル", v: "イタリアン" }],
       },
     ],
@@ -20480,7 +20480,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "名古屋・錦",
         desc: "名古屋・錦の創作和食居酒屋。多彩な料理と適度な活気が、合コンの場を盛り上げる重要な要素になる。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r31/r31-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋・錦" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -20490,7 +20490,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・自然派ワイン",
         area: "大阪・新福島",
         desc: "大阪・新福島の自然派ワイン居酒屋。おしゃれな雰囲気でワインを囲む合コンスタイルが、参加者の印象を高める。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356315/640x640_rect_b0e5a4869832aa5740d0e7b08a8a71e9.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・新福島" }, { k: "ジャンル", v: "居酒屋・ワイン" }],
       },
       {
@@ -20500,7 +20500,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・立ち飲み",
         area: "名古屋・栄",
         desc: "名古屋・栄の社交酒場。「社交」の名の通り、人との出会いを楽しむためのカジュアルな空間が婚活・合コンに最適。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [{ k: "エリア", v: "名古屋・栄" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -20510,7 +20510,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥・洋食居酒屋",
         area: "大阪・西中島南方",
         desc: "大阪・西中島南方の居酒屋。焼き鳥と洋食の組み合わせが場を和ませ、初対面同士の会話のきっかけを作ってくれる。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
         specs: [{ k: "エリア", v: "大阪・西中島南方" }, { k: "ジャンル", v: "焼鳥・居酒屋" }],
       },
     ],
@@ -20552,7 +20552,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・南久宝寺町",
         desc: "大阪・中央区の和牛×ワイン×イタリアンレストラン。個室での誕生日ディナーコースが、特別な夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪・中央区" }, { k: "予算", v: "¥10,000〜¥15,000" }],
       },
       {
@@ -20562,7 +20562,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "広島・毘沙門台",
         desc: "広島・毘沙門台の居酒屋。誕生日会の予算に合わせた宴会コースと個室対応が、使いやすい幹事にとって頼もしい一軒。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・毘沙門台" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -20572,7 +20572,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "創作中華居酒屋",
         area: "大阪・谷町六丁目",
         desc: "大阪・谷町六丁目の創作中華居酒屋。独創的な料理が誕生日会の話題になり、記憶に残る一夜を作り出す。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r48/r48-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・谷町六丁目" }, { k: "ジャンル", v: "創作中華居酒屋" }],
       },
       {
@@ -20582,7 +20582,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・鶏割烹",
         area: "大阪・野江",
         desc: "大阪・野江の焼き鳥と鶏割烹の店。誕生日会に特別感を演出する鶏料理のコースが、大人数での宴席にも対応している。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r33/r33-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・野江" }, { k: "ジャンル", v: "焼き鳥・鶏割烹" }],
       },
     ],
@@ -20605,7 +20605,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r18/r18-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20614,7 +20614,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋",
         area: "大阪・大阪城北詰",
         desc: "大阪城公園に隣接する居酒屋。大阪城の夜景を眺めながら食事できる開放的なロケーションが、デートの夜を格別にする。",
-        images: ["https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・大阪城北詰" }, { k: "ジャンル", v: "居酒屋" }],
       },
       {
@@ -20624,7 +20624,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和牛",
         area: "大阪・南久宝寺町",
         desc: "大阪・中央区の上質なイタリアンレストラン。夜の大阪の空気を纏いながら、和牛とワインの特別なひとときを過ごす。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪・中央区" }, { k: "予算", v: "¥10,000〜¥15,000" }],
       },
       {
@@ -20644,7 +20644,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪・新町",
         desc: "大阪・新町の和モダンカフェ。夜の大阪・堀江エリアの洗練された空気の中で、二人の特別な夜を演出する。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["/restaurants/r41/r41-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・新町" }, { k: "ジャンル", v: "和モダンカフェ" }],
       },
     ],
@@ -20667,7 +20667,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200",
+    heroImage: "/restaurants/r15/r15-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20676,7 +20676,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "クラシック音楽喫茶・Bar",
         area: "大阪・関目",
         desc: "大阪・関目のクラシック音楽バー。賑やかな一軒目の後、ここで音楽に耳を傾けながら会話を深める二軒目として機能する。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["/restaurants/r15/r15-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・関目" }, { k: "ジャンル", v: "音楽バー" }],
       },
       {
@@ -20696,7 +20696,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪・中崎町",
         desc: "大阪・中崎町のカフェ&バー。夜はバーとして機能し、一軒目の居酒屋から流れてくる二軒目の定番として中崎町の人気店。",
-        images: ["https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・中崎町" }, { k: "ジャンル", v: "カフェ・バー" }],
       },
       {
@@ -20706,7 +20706,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー・スポーツバー",
         area: "神戸市灘区",
         desc: "神戸・灘区のスポーツバー。試合を見ながら飲む二軒目スタイルで、スポーツ好きの仲間との飲み会に特に最適。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/139637/640x640_rect_139637091.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・灘区" }, { k: "ジャンル", v: "スポーツバー" }],
       },
       {
@@ -20716,7 +20716,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "シーシャカフェ",
         area: "名古屋・栄",
         desc: "名古屋・栄のシーシャカフェ。水タバコを楽しみながらゆっくり会話する二軒目として、名古屋の新しい夜の選択肢。",
-        images: ["https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354322/640x640_rect_10c1754a1e038f5a13d353abebae0bad.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋・栄" }, { k: "予算", v: "¥2,000〜2,999" }],
       },
     ],
@@ -20739,7 +20739,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20748,7 +20748,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都・四条",
         desc: "京都・四条の料理屋。会席スタイルの本格和食が接待ランチに最適で、料理・空間・サービスの三拍子が揃った一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・四条" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
       {
@@ -20758,7 +20758,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "神戸・元町",
         desc: "神戸・元町の和食店。落ち着いた個室での接待ランチに対応しており、港町・神戸のブランドイメージを活かした印象的な接待ができる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/322849/640x640_rect_ad8557ce446cf558b68fddc46fceeb57.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・元町" }, { k: "予算", v: "¥4,000〜4,999" }],
       },
       {
@@ -20768,7 +20768,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "神戸・三宮",
         desc: "神戸・三宮の日本料理店。格のある本格日本料理が接待の場を引き締め、上司や取引先への誠実さを伝えられる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/229145/640x640_rect_ae7bfc4e7ef48f6ef7d095cdbc9afa3b.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸・三宮" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
       {
@@ -20778,7 +20778,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "割烹",
         area: "広島・八丁堀",
         desc: "広島・八丁堀の和食割烹。格式高い割烹料理が接待の格を示し、大切な商談の場を整えてくれる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島・八丁堀" }, { k: "ジャンル", v: "和食割烹" }],
       },
       {
@@ -20788,7 +20788,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "埼玉・志木市",
         desc: "埼玉・志木市の本格フレンチ。フレンチのコースランチが、埼玉エリアの接待や特別なビジネスランチに最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [{ k: "エリア", v: "埼玉・志木市" }, { k: "ジャンル", v: "フレンチ" }],
       },
     ],
@@ -20811,7 +20811,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    heroImage: "/restaurants/r30/r30-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20820,7 +20820,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
         area: "大阪",
         desc: "広い掘りごたつ席と個室が充実した大阪の居酒屋。海鮮・焼き鳥・和食と品数が豊富で、取り分けしながら家族でゆっくり食事できる。子どもが食べやすいメニューも揃っている。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・和食" }, { k: "予算", v: "夜 平均￥4,500" }],
       },
       {
@@ -20830,7 +20830,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼鳥・炭火",
         area: "大阪・福島",
         desc: "福島エリアの炭火焼き鳥専門店。半個室のボックス席が多く、小さな子ども連れでも周囲を気にせず食事できる。こどもプレートの相談も可能。",
-        images: ["https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/356315/640x640_rect_b0e5a4869832aa5740d0e7b08a8a71e9.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・福島" }, { k: "ジャンル", v: "焼鳥・炭火" }, { k: "予算", v: "夜 ￥3,000〜￥3,999" }],
       },
       {
@@ -20840,7 +20840,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "お好み焼き・海鮮",
         area: "東京",
         desc: "東京の下町にある老舗お好み焼き店。鉄板を囲んで家族で一緒に焼く体験が子どもにも大人気。座敷席もあり、寝転んでも気にならない雰囲気。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/268383/640x640_rect_75f760daa4c4facf8328fe7cfd4538f8.jpg?w=800"],
         specs: [{ k: "エリア", v: "東京" }, { k: "ジャンル", v: "お好み焼き" }, { k: "予算", v: "¥3,000〜¥5,000" }],
       },
       {
@@ -20850,7 +20850,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "定食・食堂",
         area: "広島",
         desc: "広島の家庭的な定食屋。畳の座敷席でゆったり食べられ、子ども向けの小さいお茶碗や器も用意してもらえる。揚げ物から煮物まで幅広い和食が家族みんなで楽しめる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/186464/640x640_rect_945631b4bab9d89ca18c3daf9fe2bc14.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "定食・食堂" }, { k: "予算", v: "¥1,000〜¥2,000" }],
       },
       {
@@ -20860,7 +20860,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・和食）",
         area: "大阪",
         desc: "海鮮と和食を中心とした大阪の居酒屋。個室完備で子連れでも気兼ねなく利用できる。刺身・天ぷら・煮物と品揃えが豊富で、子どもが食べやすいメニューを取り分けて楽しめる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
     ],
@@ -20883,7 +20883,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -20892,7 +20892,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本料理",
         area: "京都",
         desc: "京都の炭火焼き鳥の名店。カウンター席からライブ感ある調理を眺めながら、焼きたての串と日本酒を一人で楽しめる。常連客が多く、気づけば話が弾む居心地の良い空間。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "焼き鳥・日本料理" }, { k: "予算", v: "¥5,000〜5,999" }],
       },
       {
@@ -20912,7 +20912,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・日本料理",
         area: "京都",
         desc: "京都の和モダンな一軒。出汁を生かした料理と厳選された日本酒のペアリングが楽しめる。カウンター席から職人の手仕事を眺めながら、ひとりで贅沢な時間を過ごせる。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "日本料理" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
       {
@@ -20922,7 +20922,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み・うどん",
         area: "大阪",
         desc: "大阪の気軽な立ち飲みスタイルの酒場。一人でふらっと入れる雰囲気と、手頃な価格で飲めるのが魅力。仕事終わりに一杯だけ引っ掛けるのに最適。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "立ち飲み" }, { k: "予算", v: "夜 ￥1,500〜￥2,000" }],
       },
       {
@@ -20955,7 +20955,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=1200",
+    heroImage: "/restaurants/r44/r44-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -20964,7 +20964,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮居酒屋・魚料理",
         area: "さいたま・大宮",
         desc: "大宮の海鮮居酒屋。大人数向けの個室と充実したコース料理が揃い、送別会・歓迎会に最適。新鮮な海鮮と豊富なドリンクメニューで宴席を盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600"],
+        images: ["/restaurants/r44/r44-image-1.jpg"],
         specs: [{ k: "エリア", v: "さいたま・大宮" }, { k: "ジャンル", v: "海鮮居酒屋" }, { k: "予算", v: "夜 ￥4,000〜￥5,000" }],
       },
       {
@@ -20974,7 +20974,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "さいたま",
         desc: "さいたまの和バルスタイルの居酒屋。落ち着いた個室空間で、コース料理と飲み放題プランが充実。送別会の幹事が安心して使える、コスパと雰囲気のバランスが取れた一軒。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/308012/640x640_rect_dbf8d16d5664bcd27f15f88ab7d351f5.jpg?w=800"],
         specs: [{ k: "エリア", v: "さいたま" }, { k: "ジャンル", v: "和バル" }, { k: "予算", v: "夜 ¥3,000〜¥3,999" }],
       },
       {
@@ -20994,7 +20994,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（おばんざい・炭火焼）",
         area: "大阪",
         desc: "大阪城北詰の居酒屋。おばんざいや炭火焼きのコースが充実し、送別会や歓迎会に最適。広めの席配置で大人数も対応可能。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・おばんざい" }, { k: "予算", v: "夜 ￥2,000〜￥3,000" }],
       },
       {
@@ -21004,7 +21004,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食・居酒屋",
         area: "名古屋",
         desc: "名古屋の社交的な雰囲気が魅力の洋食居酒屋。送別会・歓迎会コースが充実しており、洋食とお酒を組み合わせた楽しいひとときを演出してくれる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "洋食・居酒屋" }, { k: "予算", v: "ディナー ￥2,000前後" }],
       },
     ],
@@ -21027,7 +21027,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21036,7 +21036,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都",
         desc: "京都の落ち着いた雰囲気の料理屋。旬の食材を使った繊細な和食が家族の記念日を彩る。個室利用が可能で、還暦・古希祝いにも対応している。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "和食" }, { k: "予算", v: "¥3,000〜3,999" }],
       },
       {
@@ -21046,7 +21046,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨・和食",
         area: "京都",
         desc: "京都の本格鮨店。特別な家族の記念日に、上質な鮨を囲む時間は格別だ。職人が目の前で握る鮨は、見ているだけでも楽しく、家族全員が喜べる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鮨" }, { k: "予算", v: "¥20,000〜¥29,999" }],
       },
       {
@@ -21056,7 +21056,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食割烹",
         area: "広島",
         desc: "広島の和食割烹。個室完備で家族のプライベートな食事に最適。旬の素材を活かした割烹料理は、特別な節目の日を格調高く彩る。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "和食割烹" }, { k: "予算", v: "¥1,000〜¥2,000" }],
       },
       {
@@ -21066,7 +21066,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・和洋折衷",
         area: "神戸",
         desc: "神戸の落ち着いたレストラン。家族の記念日に、和の素材をフレンチの技法で仕上げた特別なコース料理を楽しめる。個室対応でゆっくりと会話が弾む。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "フレンチ" }, { k: "予算", v: "¥1,000〜1,999" }],
       },
       {
@@ -21076,7 +21076,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・炭火焼",
         area: "さいたま",
         desc: "さいたまの上質なフレンチレストラン。家族の特別な祝いの席に、素材の旨みを引き出した炭火焼きと季節のコース料理を提供。温かなサービスで節目の記念日を演出。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [{ k: "エリア", v: "さいたま" }, { k: "ジャンル", v: "フレンチ" }, { k: "予算", v: "¥8,000〜9,999" }],
       },
     ],
@@ -21099,7 +21099,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=1200",
+    heroImage: "/restaurants/r18/r18-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -21108,7 +21108,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（おばんざい・炭火焼）",
         area: "大阪",
         desc: "大阪城北詰の居酒屋。おばんざいと炭火焼きの充実したコースに飲み放題がセットになったプランが人気。コスパが高く、宴会シーンで多く利用される。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 ￥2,000〜￥3,000" }],
       },
       {
@@ -21118,7 +21118,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・和バル",
         area: "さいたま",
         desc: "さいたまの和バル。飲み放題付きコースが充実しており、ビール・ハイボール・サワー・ワインまで幅広いドリンクが楽しめる。食事のクオリティも高く、宴会向けの人気店。",
-        images: ["https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/308012/640x640_rect_dbf8d16d5664bcd27f15f88ab7d351f5.jpg?w=800"],
         specs: [{ k: "エリア", v: "さいたま" }, { k: "ジャンル", v: "和バル" }, { k: "予算", v: "¥3,000〜¥3,999" }],
       },
       {
@@ -21128,7 +21128,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・炭火焼き鳥",
         area: "大阪",
         desc: "大阪の炭火焼き鳥と洋食を組み合わせたユニークな居酒屋。飲み放題プランがコスパ良く、焼き鳥から洋食まで幅広いメニューで宴会を盛り上げる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・焼き鳥" }, { k: "予算", v: "夜 ￥3,000〜￥3,999" }],
       },
       {
@@ -21138,7 +21138,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・和食）",
         area: "大阪",
         desc: "海鮮と和食が中心の大阪の居酒屋。飲み放題コースは料理の品数も多く、宴会をしっかり満足させてくれる内容。友人グループや職場の飲み会に最適。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
       {
@@ -21148,7 +21148,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食・居酒屋",
         area: "名古屋",
         desc: "名古屋の社交的な居酒屋。飲み放題プランで名古屋めしと洋食のコースを楽しめる。賑やかな雰囲気が宴会の盛り上がりをさらに後押ししてくれる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["/restaurants/r12/r12-hero.jpg"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "洋食・居酒屋" }, { k: "予算", v: "ディナー ￥2,000前後" }],
       },
     ],
@@ -21171,7 +21171,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21180,7 +21180,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨・和食",
         area: "京都",
         desc: "京都の本格鮨店。カウンター越しに職人が握る鮨を、間近で見ながら食べる体験は格別だ。一人で訪れることで、職人との会話が生まれ、食の奥深さをより深く楽しめる。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鮨" }, { k: "予算", v: "¥20,000〜¥29,999" }],
       },
       {
@@ -21190,7 +21190,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・居酒屋",
         area: "京都",
         desc: "京都の炭火焼き鳥の名店。カウンター越しに炭火の熱と煙を感じながら、串が焼き上がる瞬間を目で楽しめる。職人との会話も弾む、一人焼き鳥の聖地。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "焼き鳥" }, { k: "予算", v: "¥5,000〜5,999" }],
       },
       {
@@ -21200,7 +21200,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "京都",
         desc: "京都の老舗洋食屋。カウンター席から料理人のライブ調理を眺めながら、丁寧に仕上げられた洋食を堪能できる。一人で訪れると、料理の背景にある物語が聞けることも。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266717/640x640_rect_a828f880ddc9a34da8e77f2a56944b88.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "洋食" }, { k: "予算", v: "ランチ¥1,000〜1,999" }],
       },
       {
@@ -21210,7 +21210,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー",
         area: "京都",
         desc: "京都の落ち着いたバー。カウンター越しにバーテンダーが作るカクテルを眺めながら、静かな時間を過ごせる。一人でも自然に馴染める空気感が心地よい名店。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バー" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -21220,7 +21220,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "福岡",
         desc: "福岡のコーヒー専門店。バリスタが目の前で丁寧にドリップするコーヒーをカウンター席で楽しめる。豆の説明を聞きながら一杯を待つ時間も、一人時間の醍醐味だ。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "珈琲専門店" }, { k: "予算", v: "コーヒー豆 100g〜￥500" }],
       },
     ],
@@ -21243,7 +21243,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21252,7 +21252,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "福岡",
         desc: "福岡の深夜営業ラーメン店。濃厚なとんこつスープが深夜の空腹を満たしてくれる。24時を過ぎても行列が絶えない、夜ふかし派の聖地的存在。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "ラーメン" }, { k: "予算", v: "¥2,000〜¥2,999" }],
       },
       {
@@ -21262,7 +21262,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "シーシャ・バー",
         area: "大阪",
         desc: "大阪の深夜営業シーシャカフェ。深夜でもゆったりとシーシャと飲み物を楽しめる空間は、夜の終わりを引き延ばしたい人に最適。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354322/640x640_rect_10c1754a1e038f5a13d353abebae0bad.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "シーシャ・バー" }, { k: "予算", v: "¥2,000〜¥3,000" }],
       },
       {
@@ -21272,7 +21272,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー・カフェ",
         area: "大阪",
         desc: "大阪のカフェバー。深夜でもピザやドリンクを楽しめる。気軽に入れる雰囲気で、仕事帰りや飲み会の〆に重宝される一軒。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "カフェ・バー" }, { k: "予算", v: "¥1,000〜¥1,999" }],
       },
       {
@@ -21282,7 +21282,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー",
         area: "京都",
         desc: "京都の深夜営業バー。終電後でも静かに飲める空間が魅力。バーテンダーが丁寧に作るカクテルで、深夜の時間をゆっくり締めくくれる。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バー" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -21292,7 +21292,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂",
         area: "京都",
         desc: "京都の深夜食堂スタイルの一軒。深夜でもしっかりとした食事が食べられる。ラーメン・定食・小鉢が揃い、深夜の空腹を満たしてくれる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "食堂" }, { k: "予算", v: "〜¥1,500" }],
       },
     ],
@@ -21315,7 +21315,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200",
+    heroImage: "/restaurants/r22/r22-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -21324,7 +21324,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "福岡",
         desc: "福岡のスペシャルティコーヒー専門店。朝一番に丁寧にドリップされた一杯を楽しめる。豆の説明を聞きながらコーヒーを待つ朝の時間は、特別なリラックスタイムになる。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "珈琲専門店" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21334,7 +21334,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・和食",
         area: "福岡",
         desc: "福岡の古民家を改装したカフェ。朝の静かな時間に、和の空間でゆっくりと朝食を楽しめる。和定食スタイルのモーニングが人気で、地元の常連客が朝から訪れる一軒。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21344,7 +21344,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都の朝から営業しているカフェ。トーストとコーヒーのモーニングセットが充実。観光前の朝食に最適で、京都の朝の空気を感じながらゆっくり過ごせる。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21354,7 +21354,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パン",
         area: "福岡",
         desc: "福岡の朝に焼きたてパンが楽しめるパン屋。朝一番に届く焼きたての香りと、できたてのパンで迎える朝は格別。モーニングに立ち寄るだけで一日が良くなる。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/190734/640x640_rect_84bc31df60c436d2326e12f3d38461d5.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "パン" }, { k: "予算", v: "〜¥1,000" }],
       },
     ],
@@ -21377,7 +21377,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21386,7 +21386,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂",
         area: "京都",
         desc: "京都の地元民に愛される食堂。ランチは日替わり定食を中心に、コスパの高い充実した内容が揃う。地元の常連客が毎日通うほど、安くて美味しい一軒。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "食堂" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -21396,7 +21396,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・軽食",
         area: "名古屋",
         desc: "名古屋のコスパランチが充実したカフェ。千円以下でサラダ・メイン・ドリンクのセットが楽しめる。地元のランチ族から支持される人気の一軒。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/344331/640x640_rect_3843da606d96ed92bfbb89f6272eb6fa.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "¥999以下" }],
       },
       {
@@ -21406,7 +21406,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン・鶏白湯",
         area: "広島",
         desc: "広島のランチが充実したラーメン店。鶏白湯スープのラーメンが千円以下で楽しめる。濃厚なスープとのど越しの良い麺のコスパが高く、地元のリピーターが多い。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129242/640x640_rect_129242311.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "ラーメン" }, { k: "予算", v: "¥999以下" }],
       },
       {
@@ -21416,7 +21416,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・喫茶",
         area: "広島",
         desc: "広島の海鮮丼とホットサンドが自慢のランチ店。海鮮丼がリーズナブルな価格で楽しめ、コスパの高さが評判。近隣の会社員やランチ客で賑わう人気店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "海鮮" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21426,7 +21426,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "定食・食堂",
         area: "広島",
         desc: "広島の家庭的な定食屋。手作りの惣菜と白ご飯のランチセットが低価格で楽しめる。野菜を中心とした体に優しいメニューが人気で、地元のランチ需要を支える一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/186464/640x640_rect_945631b4bab9d89ca18c3daf9fe2bc14.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "定食" }, { k: "予算", v: "¥1,000〜¥2,000" }],
       },
     ],
@@ -21449,7 +21449,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21458,7 +21458,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島",
         desc: "広島の高級イタリアンレストラン。広島の食材をイタリアンの技法で昇華させたコース料理は、接待の場でも話題になる内容だ。個室完備で、重要な会食に安心して使える。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "イタリアン" }, { k: "予算", v: "¥8,000〜¥15,000" }],
       },
       {
@@ -21468,7 +21468,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ",
         area: "さいたま",
         desc: "さいたまの本格フレンチ。炭火焼きとフレンチの技法を組み合わせた独自のコース料理が、接待の場で強い印象を残す。ソムリエによるワインペアリングも充実。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800"],
         specs: [{ k: "エリア", v: "さいたま" }, { k: "ジャンル", v: "フレンチ" }, { k: "予算", v: "¥8,000〜9,999" }],
       },
       {
@@ -21478,7 +21478,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "大阪",
         desc: "大阪の高級イタリアン。和牛とワインのペアリングが接待の話題になる。洗練された空間と行き届いたサービスで、VIPをもてなすのに申し分ない一軒。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "イタリアン" }, { k: "予算", v: "夜 ￥10,000〜￥14,999" }],
       },
       {
@@ -21488,7 +21488,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "神戸",
         desc: "神戸の高級海鮮・日本料理店。新鮮な海の幸を使った料理と厳選された日本酒のラインナップが接待の格を高める。個室完備で、落ち着いた雰囲気の会食に最適。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "海鮮・日本料理" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
     ],
@@ -21511,7 +21511,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200",
+    heroImage: "/restaurants/r27/r27-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -21520,7 +21520,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・アジアコーヒー専門店",
         area: "大阪",
         desc: "大阪のアジアンテイストのカフェ。中国茶と台湾スイーツが楽しめる空間は、女子会のインスタ映えスポットとしても人気。ゆっくり過ごせる個室感ある席が嬉しい。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "中国茶・カフェ" }, { k: "予算", v: "ドリンク ￥2,000〜￥2,999" }],
       },
       {
@@ -21530,7 +21530,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪",
         desc: "大阪の和モダンなカフェ。和と洋を融合させた内装と料理が女子会の雰囲気を盛り上げる。パスタやスイーツが充実し、長居できる居心地の良さが魅力。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["/restaurants/r40/r40-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "和モダンカフェ" }, { k: "予算", v: "昼 ￥1,200〜￥1,800" }],
       },
       {
@@ -21540,7 +21540,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都の落ち着いた雰囲気のカフェ。ケーキとコーヒーのセットが充実し、写真映えするスイーツが女子会の話題になる。京都観光の合間にも立ち寄りやすい立地。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21550,7 +21550,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都の個性的なカフェ。独特のインテリアと南国テイストのドリンクが女子会の写真映えに最適。SNSでも話題になった、雰囲気重視のカフェ。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129438/640x640_rect_129438593.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21583,7 +21583,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21592,7 +21592,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・日本料理",
         area: "京都",
         desc: "京都の炭火焼き鳥の名店。旅の最後の夜に、京都の地酒と焼き鳥で一日を締めくくる。旅の疲れを吹き飛ばす濃厚な味と、常連が集う温かな雰囲気が旅の記憶に残る。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "焼き鳥・居酒屋" }, { k: "予算", v: "¥5,000〜5,999" }],
       },
       {
@@ -21602,7 +21602,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食ダイニング",
         area: "広島",
         desc: "広島の和食ダイニング。旅の最後に、広島の食材を使った寿司と和食で旅を締める。素材の良さと丁寧な仕事ぶりが、旅の最後にふさわしい格の食事を提供する。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "和食ダイニング" }, { k: "予算", v: "¥2,000〜¥4,000" }],
       },
       {
@@ -21612,7 +21612,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡",
         desc: "福岡の海鮮と日本料理の居酒屋。博多の食材を活かした料理で福岡の旅を締めくくる。明太子・もつ鍋など福岡ならではの食を旅の最後の夜に楽しめる。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥3,999" }],
       },
       {
@@ -21622,7 +21622,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
         area: "大阪",
         desc: "大阪の海鮮と焼き鳥の居酒屋。大阪の旅の締めに、串と地酒でゆっくり過ごせる。気取らない雰囲気と豊富なメニューが旅の最後の夜を締めるのに最適。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 平均 ￥4,500" }],
       },
       {
@@ -21632,7 +21632,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理（和食）",
         area: "名古屋",
         desc: "名古屋の小料理居酒屋。名古屋観光の最後に、地元の味と日本酒で旅を締める。手仕事の丁寧な小料理と落ち着いた空間が、旅の疲れをほどよく癒してくれる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r20/r20-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "小料理・居酒屋" }, { k: "予算", v: "夜 〜￥5,999" }],
       },
     ],
@@ -21655,7 +21655,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21664,7 +21664,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バー",
         area: "京都",
         desc: "京都の静かなバー。食後のカクテル一杯で夜を締めくくるのに最適。バーテンダーと会話しながら、ディナーの余韻をゆっくり楽しめる落ち着いた空間。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バー" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -21674,7 +21674,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "シーシャカフェ",
         area: "京都",
         desc: "京都のシーシャカフェ。食後にシーシャを楽しみながらゆっくり過ごせる。煙の香りと音楽が心地よい空間で、特別な夜の二軒目として最適。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/335077/640x640_rect_bf9608e68b5774b1a015c07cf269081e.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "シーシャカフェ" }, { k: "予算", v: "¥2,000〜2,999" }],
       },
       {
@@ -21684,7 +21684,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "クラシック音楽喫茶・Bar",
         area: "大阪",
         desc: "大阪のクラシック音楽が流れるバー。食後に本格的なクラシックの世界に浸りながら一杯飲む、知的な夜の二軒目。独特の雰囲気が忘れられない体験を提供する。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["/restaurants/r14/r14-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "クラシック音楽喫茶・Bar" }, { k: "予算", v: "要確認" }],
       },
       {
@@ -21694,7 +21694,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "福岡",
         desc: "福岡のスペシャルティコーヒー専門店。食後のコーヒー一杯で夜を締めるのに最適。バリスタが丁寧に淹れる一杯は、ディナーの余韻をさらに豊かにしてくれる。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "珈琲専門店" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21704,7 +21704,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・バー",
         area: "大阪",
         desc: "大阪のカフェバー。食後のバーとして気軽に入れる雰囲気があり、ピザやデザートを追加でつまみながらお酒を楽しめる。友人との二軒目にも最適。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/323742/640x640_rect_0b1dfe85c0b9cb93d2d45a3d20a890d1.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "カフェ・バー" }, { k: "予算", v: "¥1,000〜¥1,999" }],
       },
     ],
@@ -21727,7 +21727,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21736,7 +21736,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "京都",
         desc: "京都の和の一軒。花見の後に、出汁の旨みを生かした料理と日本酒で春の一日を締める。桜の季節には旬の山菜や春野菜を使った特別メニューが揃う。",
-        images: ["https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "日本料理" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
       {
@@ -21746,7 +21746,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都",
         desc: "京都の和食の料理屋。春の旬の食材を使った季節料理が花見の後の食事にぴったり。地元に愛される落ち着いた空間で、桜の余韻を楽しみながら食事ができる。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "和食" }, { k: "予算", v: "¥3,000〜3,999" }],
       },
       {
@@ -21756,7 +21756,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン",
         area: "京都",
         desc: "京都のバルスタイルの一軒。花見帰りに立ち寄れる気軽さと、春の食材を使ったイタリアンの料理が心地よく融合する。ワインと合わせて春の夜を楽しめる。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バル" }, { k: "予算", v: "¥2,000〜2,999" }],
       },
       {
@@ -21766,7 +21766,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・和食）",
         area: "大阪",
         desc: "大阪の海鮮居酒屋。大阪での花見の後に、春の海の幸と日本酒で宴を延長するのに最適。気取らない雰囲気が花見のカジュアルなテンションとよく合う。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
       {
@@ -21776,7 +21776,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡",
         desc: "福岡の海鮮居酒屋。春の福岡での花見の後に、新鮮な海の幸で一杯。春限定のコースやメニューが花見シーズンの締めにふさわしい充実した内容。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥3,999" }],
       },
     ],
@@ -21799,7 +21799,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21808,7 +21808,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂",
         area: "京都",
         desc: "京都の食堂。夏には冷やし麺や冷製料理が充実し、暑い日でも食欲をそそるさっぱりしたランチが楽しめる。夏限定メニューが地元ファンに好評。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "食堂" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -21818,7 +21818,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮",
         area: "広島",
         desc: "広島の海鮮丼専門店。夏に食べたい新鮮な海の幸を丼で楽しめる。冷たいご飯の上に乗った色鮮やかな海鮮が、夏の暑さをさっぱり吹き飛ばしてくれる。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/340761/640x640_rect_e1b5343d0e6e0249c6010c691d8e7bbe.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "海鮮丼" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -21828,7 +21828,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "担担麺・麺料理",
         area: "京都",
         desc: "京都の担担麺専門店。夏には冷やし担担麺が登場し、ゴマと辛みのさっぱりとした一杯が夏の食欲を満たしてくれる。暑い日に食べたい冷製麺の逸品。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/354520/640x640_rect_151cf4870d4b57ffc7d915fc6b84e167.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "担担麺" }, { k: "予算", v: "¥1,000〜2,999" }],
       },
       {
@@ -21838,7 +21838,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食ダイニング",
         area: "広島",
         desc: "広島の和食ダイニング。夏には旬の海の幸を使った刺身定食や冷製前菜が充実。暑い夏でも食べられる、さっぱりとした和食が揃う一軒。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "和食・寿司" }, { k: "予算", v: "¥2,000〜¥4,000" }],
       },
       {
@@ -21848,7 +21848,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "干物居酒屋・海鮮",
         area: "名古屋",
         desc: "名古屋の海鮮・干物居酒屋。夏に食べたい干物の塩気とさっぱり感が、暑い季節に食欲をそそる。冷たいビールと一緒に夏の海の幸を堪能できる。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r46/r46-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "海鮮・干物" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
     ],
@@ -21871,7 +21871,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -21880,7 +21880,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "京都",
         desc: "京都の鮨の名店。秋の紅葉シーズンに、旬のネタを使った鮨で一日を締める贅沢。秋刀魚・戻り鰹など秋の旬ネタが揃う、紅葉の後の最上の選択肢。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鮨" }, { k: "予算", v: "¥20,000〜¥29,999" }],
       },
       {
@@ -21890,7 +21890,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "京都",
         desc: "京都の和の一軒。秋の松茸・栗・柿などの旬食材を使った出汁料理が、紅葉後の疲れた体を温めてくれる。秋限定のコースは予約必至の人気メニュー。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "日本料理" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
       {
@@ -21900,7 +21900,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鉄板焼き",
         area: "京都",
         desc: "京都の鉄板焼き専門店。秋の旬野菜と肉を目の前で焼き上げる鉄板のパフォーマンスが紅葉後の特別な夕食を演出する。温かい料理が秋の体に染みる。",
-        images: ["https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/242937/640x640_rect_9453b7cc6836253010b4f6f6f9648945.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鉄板焼き" }, { k: "予算", v: "¥3,000〜¥5,000" }],
       },
       {
@@ -21910,7 +21910,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和食",
         area: "京都",
         desc: "京都の和食料理屋。秋の食材をふんだんに使った季節料理が、紅葉観光の後の食事にぴったり。秋冬のコースは温かみのある料理が揃い、体の芯から温まる。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "和食" }, { k: "予算", v: "¥3,000〜3,999" }],
       },
       {
@@ -21920,7 +21920,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・和食",
         area: "大阪府堺市",
         desc: "大阪府堺市の和心イタリアン。秋の食材を和とイタリアンの融合で表現した料理が、紅葉後の食事に新鮮な驚きをもたらす。秋限定メニューも見逃せない。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/294224/640x640_rect_e94abf2460a1517056b29355bb3a61c5.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪・堺市" }, { k: "ジャンル", v: "和心イタリアン" }, { k: "予算", v: "¥4,000〜¥6,000" }],
       },
     ],
@@ -21943,7 +21943,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200",
+    heroImage: "/restaurants/r52/r52-image-2.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -21952,7 +21952,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ワインバー",
         area: "大阪",
         desc: "大阪の高級イタリアン。クリスマスシーズンには特別コースが用意され、和牛とワインのペアリングが大切な人との夜を格別に演出する。空間の洗練度がクリスマスにぴったり。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["/restaurants/r52/r52-image-2.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "イタリアン" }, { k: "予算", v: "夜 ￥10,000〜￥14,999" }],
       },
       {
@@ -21962,7 +21962,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸",
         desc: "神戸のフレンチイタリアン。神戸の夜景を楽しみながらのクリスマスディナーは格別だ。冬限定のコース料理と厳選ワインが、大切な人との夜を特別なものにする。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "フレンチ・イタリアン" }, { k: "予算", v: "ディナー¥6,000〜7,999" }],
       },
       {
@@ -21972,7 +21972,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "京都・祇園",
         desc: "京都・祇園のレストラン。クリスマスシーズンには祇園の情緒ある街並みとともに、特別なコース料理で大切な一夜を過ごせる。京都の冬の夜と合わさる雰囲気が最高。",
-        images: ["https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/167493/640x640_rect_47c3f3c66358f2bd3a4ee4549b8623fb.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都・祇園" }, { k: "ジャンル", v: "フレンチ・イタリアン" }, { k: "予算", v: "¥4,000〜¥4,999" }],
       },
       {
@@ -21982,7 +21982,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島",
         desc: "広島の高級イタリアン。クリスマスには個室でのコースディナーが人気。地元食材を使ったイタリアンが、特別な夜の期待に応える充実した内容を提供する。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "イタリアン" }, { k: "予算", v: "¥8,000〜¥15,000" }],
       },
       {
@@ -21992,7 +21992,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ",
         area: "大阪",
         desc: "大阪のビストロ。クリスマスシーズンには特別なコースが用意され、洗練された空間でロマンティックな夜を過ごせる。二人の特別な夜にふさわしいクオリティを持つ一軒。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "ビストロ" }, { k: "予算", v: "夜 ￥6,000〜￥7,999" }],
       },
     ],
@@ -22015,7 +22015,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=1200",
+    heroImage: "/restaurants/r48/r48-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22024,7 +22024,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ワインバル・イタリアン",
         area: "大阪",
         desc: "大阪のワインバルスタイルの居酒屋。仕事帰りにワインと春巻きやよだれ鶏でアフター5を楽しむのに最適。コスパが高く、仕事終わりの定番として地元で人気。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["/restaurants/r48/r48-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪・谷町六丁目" }, { k: "ジャンル", v: "ワインバル" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
       {
@@ -22034,7 +22034,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン",
         area: "京都",
         desc: "京都のバルスタイルの一軒。仕事帰りに立ち寄れる気軽さと、ワインと合わせたイタリアン料理が心地よく融合する。コスパよく美味しい時間を過ごせるアフター5向きの店。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バル" }, { k: "予算", v: "¥2,000〜2,999" }],
       },
       {
@@ -22044,7 +22044,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ",
         area: "大阪",
         desc: "大阪のビストロスタイルの一軒。仕事帰りに気軽に入れる雰囲気と充実したドリンクメニューが魅力。ビストロらしい本格料理がコスパよく楽しめるアフター5の名店。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/343442/640x640_rect_353c2c218c2288b7267049626c6f55cf.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "ビストロ" }, { k: "予算", v: "¥3,000〜¥4,000" }],
       },
       {
@@ -22054,7 +22054,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ビストロ",
         area: "大阪",
         desc: "大阪のビストロ。アフター5のワインタイムに最適な充実したワインリストと、本格ビストロ料理が仕事帰りの疲れを癒してくれる。落ち着いた空間で贅沢な時間。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "ビストロ" }, { k: "予算", v: "夜 ￥6,000〜￥7,999" }],
       },
       {
@@ -22064,7 +22064,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン・ピザ",
         area: "神戸",
         desc: "神戸のイタリアン。仕事終わりに本格ピザとワインで一杯楽しめるカジュアルな雰囲気が魅力。アフター5のコスパランチからディナーまで幅広く対応する一軒。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/335164/640x640_rect_2ba8d6ad696e67ca8a98680587861b74.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "イタリアン・ピザ" }, { k: "予算", v: "ディナー¥3,000〜3,999" }],
       },
     ],
@@ -22087,7 +22087,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200",
+    heroImage: "/restaurants/r32/r32-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22096,7 +22096,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・鶏割烹",
         area: "大阪",
         desc: "大阪の鶏割烹専門店。年末の家族の食事に、上質な鶏料理のコースで特別な夜を演出できる。個室完備で家族のプライベートな宴を楽しめる、年末年始にふさわしい一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["/restaurants/r32/r32-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "鶏割烹" }, { k: "予算", v: "夜 ￥6,000〜￥8,000" }],
       },
       {
@@ -22106,7 +22106,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮居酒屋",
         area: "さいたま",
         desc: "さいたまの海鮮居酒屋。年末に家族で新鮮な海の幸と熱燗を楽しむ一夜が、来年への活力になる。大人数も入れる広い座敷と個室が家族の年末会食に最適。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["/restaurants/r44/r44-image-1.jpg"],
         specs: [{ k: "エリア", v: "さいたま" }, { k: "ジャンル", v: "海鮮居酒屋" }, { k: "予算", v: "夜 ￥4,000〜￥5,000" }],
       },
       {
@@ -22116,7 +22116,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "神戸",
         desc: "神戸の高級海鮮・日本料理店。新年のお祝い食事に、格調高い和の空間で家族みんなが喜ぶ料理を囲む特別な時間を提供。年始の家族会食に最適の一軒。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "海鮮・日本料理" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
       {
@@ -22126,7 +22126,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "京都",
         desc: "京都の鮨の名店。年始の特別な食事に、カウンターで職人が握る鮨を家族で楽しむ贅沢。新年の始まりにふさわしい、品格ある一食が食卓を彩る。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鮨" }, { k: "予算", v: "¥20,000〜¥29,999" }],
       },
       {
@@ -22136,7 +22136,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
         area: "大阪",
         desc: "大阪の居酒屋。年末の忘年会や家族の食事に、海鮮・焼き鳥・和食の充実した品揃えで家族全員が満足できる。広い席配置で家族の年末会食に最適。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 平均 ￥4,500" }],
       },
     ],
@@ -22159,7 +22159,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200",
+    heroImage: "/restaurants/r22/r22-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22168,7 +22168,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・紅茶専門店",
         area: "福岡",
         desc: "福岡のスペシャルティコーヒー専門店。休日の午後に丁寧にドリップされたコーヒーを楽しむ時間は格別。豆の説明を聞きながら、自分のペースでゆっくりと過ごせる。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "珈琲専門店" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22178,7 +22178,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "福岡",
         desc: "福岡の古民家を改装したカフェ。休日の昼下がりに、和の空間でゆったりとコーヒーや甘味を楽しめる。古民家特有の温かみのある空間が、何もしない贅沢な時間を演出。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22188,7 +22188,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都の個性的なカフェ。独特のインテリアの中でゆっくり過ごす休日の午後は格別。静かな時間が流れ、本を読みながら過ごすのに最適な雰囲気を持つ一軒。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129438/640x640_rect_129438593.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22198,7 +22198,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・カフェ",
         area: "大阪",
         desc: "大阪の中国茶専門カフェ。休日の昼下がりに、ゆっくり淹れた中国茶と台湾スイーツで過ごす時間は特別だ。茶葉の香りに包まれた空間が、日常から切り離してくれる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "中国茶・カフェ" }, { k: "予算", v: "ドリンク ￥2,000〜￥2,999" }],
       },
     ],
@@ -22221,7 +22221,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200",
+    heroImage: "/restaurants/r24/r24-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22230,7 +22230,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・和食）",
         area: "大阪",
         desc: "大阪の海鮮・和食居酒屋。遅い時間でも新鮮な海の幸とお酒を楽しめる。深夜まで活気があり、仕事帰りの遅い時間にも気兼ねなく入れる雰囲気が魅力。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
       {
@@ -22250,7 +22250,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・ラーメン",
         area: "福岡",
         desc: "福岡の深夜も営業している居酒屋系ラーメン店。遅い時間でも濃厚なとんこつラーメンと一杯が楽しめる。深夜の終着駅として福岡の夜ふかし派に愛される一軒。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "ラーメン・居酒屋" }, { k: "予算", v: "¥2,000〜¥2,999" }],
       },
       {
@@ -22260,7 +22260,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・炭火焼き",
         area: "福岡",
         desc: "福岡のキッチン&バー。深夜まで料理と酒を楽しめる。炭火焼きと本格カクテルを組み合わせた一軒で、遅い時間でも充実した食事とドリンクが楽しめる。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/199463/640x640_rect_28056dce35037d23a1e556b0e8f2f46c.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "居酒屋・バー" }, { k: "予算", v: "¥2,000〜¥4,000" }],
       },
       {
@@ -22270,7 +22270,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・居酒屋",
         area: "大阪",
         desc: "大阪の日本料理と居酒屋を組み合わせた一軒。遅い時間まで日本料理とお酒が楽しめる。和の落ち着いた空間で夜遅くにゆっくりと過ごせる、夜ふかし族の味方。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/342191/640x640_rect_ea735a59fcfdbbfd2c9a8d2dac392581.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "日本料理・居酒屋" }, { k: "予算", v: "¥3,000〜¥5,000" }],
       },
     ],
@@ -22293,7 +22293,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    heroImage: "/restaurants/r30/r30-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22302,7 +22302,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
         area: "大阪",
         desc: "大阪の居酒屋。早い時間から活気があり、家族やグループで夕方から食事ができる。海鮮・焼き鳥・和食と品揃えが豊富で、早めのディナーを充実させてくれる。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 平均 ￥4,500" }],
       },
       {
@@ -22312,7 +22312,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "バル・イタリアン",
         area: "京都",
         desc: "京都のバル。夕方早い時間から開いており、仕事終わりや観光の夕食として早めに利用できる。ワインと料理のペアリングが充実し、早めのディナーを贅沢に演出。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "バル" }, { k: "予算", v: "¥2,000〜2,999" }],
       },
       {
@@ -22322,7 +22322,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（おばんざい・炭火焼）",
         area: "大阪",
         desc: "大阪の居酒屋。夕方から開いており、早めのディナーとして利用しやすい。おばんざいと炭火焼きのコースが早い時間から楽しめる、ファミリーにも人気の一軒。",
-        images: ["https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"],
+        images: ["/restaurants/r18/r18-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 ￥2,000〜￥3,000" }],
       },
       {
@@ -22332,7 +22332,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理・海鮮",
         area: "福岡",
         desc: "福岡の海鮮居酒屋。夕方早い時間から海の幸と日本酒を楽しめる。早めのディナーでも充実したメニューが揃い、博多の夜の入口として最適な一軒。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r09/r09-hero.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "海鮮居酒屋" }, { k: "予算", v: "夜 ￥3,000〜￥3,999" }],
       },
       {
@@ -22342,7 +22342,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋・小料理（和食）",
         area: "名古屋",
         desc: "名古屋の小料理居酒屋。早めの夕食から利用でき、手仕事の丁寧な小料理が早い時間から楽しめる。名古屋の早いディナー文化に合わせた一軒。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r20/r20-image-1.jpg"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "小料理・居酒屋" }, { k: "予算", v: "夜 〜￥5,999" }],
       },
     ],
@@ -22365,7 +22365,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -22374,7 +22374,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲・喫茶",
         area: "名古屋",
         desc: "名古屋の老舗珈琲店。週末のモーニングセットが名古屋らしい充実した内容で有名。コーヒー一杯の値段でトースト・ゆで卵・サラダが付いてくる名古屋モーニングの王道。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=800"],
         specs: [{ k: "エリア", v: "名古屋" }, { k: "ジャンル", v: "珈琲・喫茶" }, { k: "予算", v: "〜¥999" }],
       },
       {
@@ -22384,7 +22384,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "福岡",
         desc: "福岡の古民家カフェ。週末の朝に特別なモーニングが提供され、和の空間でゆっくり朝食を楽しめる。地元の常連が週末の朝を楽しみに訪れる、特別感ある一軒。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22394,7 +22394,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都のカフェ。週末には特別なモーニングメニューが用意され、観光前の朝食として人気。京都の朝の空気を感じながら、ゆっくりとした週末のスタートが切れる。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/319398/640x640_rect_a234309bf3f036e9943ebcbe1c155ee0.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22404,7 +22404,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "昭和レトロ喫茶",
         area: "神奈川",
         desc: "神奈川の昭和レトロな喫茶店。週末の朝にレトロな雰囲気の中でモーニングを楽しむ体験が特別だ。懐かしい雰囲気とコーヒーの香りが週末の朝を特別にしてくれる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r16/r16-01.webp"],
         specs: [{ k: "エリア", v: "神奈川" }, { k: "ジャンル", v: "昭和レトロ喫茶" }, { k: "予算", v: "〜¥999" }],
       },
     ],
@@ -22427,7 +22427,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=1200",
+    heroImage: "/restaurants/r32/r32-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22436,7 +22436,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・鶏割烹",
         area: "大阪",
         desc: "大阪の鶏割烹居酒屋。地元の常連客が毎週通う一軒。炭火で丁寧に焼き上げた串と地酒の組み合わせが最高で、観光客に教えたくないと思う地元民の名店。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["/restaurants/r32/r32-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "焼き鳥・鶏割烹" }, { k: "予算", v: "夜 ￥6,000〜￥8,000" }],
       },
       {
@@ -22446,7 +22446,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
         area: "大阪",
         desc: "大阪の地元民に愛される居酒屋。海鮮・焼き鳥・和食の品揃えが圧倒的で、地元の常連が定期的に顔を出す。観光ガイドには載っていない、本物の大阪居酒屋文化がある。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r30/r30-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "夜 平均 ￥4,500" }],
       },
       {
@@ -22456,7 +22456,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "立ち飲み",
         area: "大阪",
         desc: "大阪の気軽な立ち飲み酒場。地元のサラリーマンや常連客が仕事帰りに立ち寄る、大阪の下町居酒屋の雰囲気が残る一軒。安くて旨い、本物の大阪ローカル飲み場。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["/restaurants/r38/r38-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "立ち飲み" }, { k: "予算", v: "夜 ￥1,500〜￥2,000" }],
       },
       {
@@ -22466,7 +22466,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "居酒屋（海鮮・和食）",
         area: "大阪",
         desc: "大阪の海鮮居酒屋。親から子へと受け継がれた大阪の居酒屋文化が生きている一軒。地元の常連が集い、昔ながらの温かい雰囲気の中でお酒と料理を楽しめる。",
-        images: ["https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600"],
+        images: ["/restaurants/r24/r24-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋・海鮮" }, { k: "予算", v: "夜 ￥3,000〜￥4,000" }],
       },
       {
@@ -22476,7 +22476,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば・居酒屋",
         area: "大阪",
         desc: "大阪の居酒屋。地元の常連客が毎週通う、大阪ならではの居酒屋文化が凝縮した一軒。手作りの肴とお酒が、地元民の心をつかんで離さない。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "居酒屋" }, { k: "予算", v: "〜¥1,500" }],
       },
     ],
@@ -22499,7 +22499,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -22508,7 +22508,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・居酒屋",
         area: "京都",
         desc: "京都の地元民が愛する炭火焼き鳥の名店。観光客にはほとんど知られていない、京都人のソウルフード。常連客がカウンターを埋める夜の光景が本物の京都の姿を教えてくれる。",
-        images: ["https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "焼き鳥" }, { k: "予算", v: "¥5,000〜5,999" }],
       },
       {
@@ -22528,7 +22528,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "洋食",
         area: "京都",
         desc: "京都の老舗洋食屋。地元の人々に長年愛される一軒で、観光ガイドには載っていない隠れた名店。昔ながらの洋食の味が、京都人の心のふるさとになっている。",
-        images: ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/266717/640x640_rect_a828f880ddc9a34da8e77f2a56944b88.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "洋食" }, { k: "予算", v: "ランチ¥1,000〜1,999" }],
       },
       {
@@ -22538,7 +22538,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "食堂",
         area: "京都",
         desc: "京都の地元食堂。地元の常連が毎日のように通う、飾らない京都の日常食がある。ランチの日替わり定食が地元ファンに支持され、観光客ではなく京都人のための食堂。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "食堂" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -22548,7 +22548,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "京都",
         desc: "京都の日本料理店。地元の食通に愛される、京料理の真髄が詰まった一軒。観光客向けではなく、本物の京料理を求める地元の人々が通う本物のお店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "日本料理" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
     ],
@@ -22571,7 +22571,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -22580,7 +22580,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "海鮮・日本料理",
         area: "神戸",
         desc: "神戸の地元民に愛される海鮮居酒屋。神戸の海の幸を使った料理と厳選された日本酒が、地元のリピーターを引きつけてやまない。観光地化されていない本物の神戸の味。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "海鮮・日本料理" }, { k: "予算", v: "¥10,000〜14,999" }],
       },
       {
@@ -22590,7 +22590,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "パスタ・イタリアン",
         area: "神戸",
         desc: "神戸の地元に愛されるパスタ専門店。神戸らしい洋食文化が生きている一軒で、地元の常連が毎週通う。シンプルで完成度の高いパスタが神戸人の心を掴む。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/176705/640x640_rect_9731f0cb0cfe3206c138046a6ab8c082.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "パスタ・イタリアン" }, { k: "予算", v: "¥1,000〜1,999" }],
       },
       {
@@ -22600,7 +22600,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "焼き鳥・居酒屋",
         area: "神戸",
         desc: "神戸の地元居酒屋。地元の常連客が集まるバールスタイルの焼き鳥店。神戸の日常の飲み場として、地元の人々に長年愛されている一軒。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://ximg.retty.me/crop/s1200x800/q80/das/-/retty/img_ebisu/restaurant/100001766847/archive/3516728-67a719eab9dd4.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "バール・焼き鳥" }, { k: "予算", v: "¥2,000〜3,000" }],
       },
       {
@@ -22610,7 +22610,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・カレー",
         area: "神戸",
         desc: "神戸の地元カフェ。地元の常連客が毎週ランチに通う一軒。カレーとカフェメニューのシンプルさが神戸人の日常に溶け込んでいる、気取らない本物の地元カフェ。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "カフェ・カレー" }, { k: "予算", v: "〜¥1,999" }],
       },
       {
@@ -22620,7 +22620,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "スペイン料理",
         area: "神戸",
         desc: "神戸の個性的な一軒。地元で知る人ぞ知るユニークな店で、地元の食通が集まる。神戸ならではの多文化な食文化が詰まった、観光客にはなかなか見つけられない隠れ名店。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/33399/640x640_rect_33399113.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "スペイン料理" }, { k: "予算", v: "ディナー¥5,000〜5,999" }],
       },
     ],
@@ -22643,7 +22643,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1200",
+    heroImage: "/restaurants/r27/r27-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22652,7 +22652,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・カフェ",
         area: "大阪",
         desc: "大阪のアジアンテイストのカフェ。中国茶と台湾スイーツのビジュアルがSNS映えで話題になった一軒。色鮮やかなティードリンクと古民家風の空間が写真映えに最適。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "中国茶・カフェ" }, { k: "予算", v: "ドリンク ￥2,000〜￥2,999" }],
       },
       {
@@ -22662,7 +22662,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "京都",
         desc: "京都の個性的なカフェ。ユニークなインテリアとドリンクのビジュアルがSNSで拡散された。写真を撮らずにはいられない独特の世界観が、インスタ映えスポットとして人気。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129438/640x640_rect_129438593.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22672,7 +22672,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ・カレー",
         area: "神戸",
         desc: "神戸の彩り豊かなカレーカフェ。鮮やかな色合いのカレープレートと可愛らしい空間が、写真映えのポイント。神戸らしいお洒落な雰囲気がSNS受け抜群。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "カフェ・カレー" }, { k: "予算", v: "〜¥1,999" }],
       },
       {
@@ -22682,7 +22682,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "カフェ",
         area: "福岡",
         desc: "福岡の古民家カフェ。古民家の風情ある空間と和のテイストが写真映えに最適。縁側や障子など、日本の伝統的な空間を背景にした写真がインスタで人気を集める。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "カフェ" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22715,7 +22715,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "4分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1200",
+    heroImage: "/restaurants/r27/r27-image-1.jpg",
     ranking: [
       {
         rank: "BEST 01",
@@ -22724,7 +22724,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "中国茶・アジアコーヒー専門店",
         area: "大阪",
         desc: "大阪のアジアコーヒー専門店。台湾コーヒーや中国茶を専門に扱い、コーヒー通には新鮮なアジアのコーヒー文化を体験できる一軒。豆の産地や淹れ方にこだわる。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["/restaurants/r27/r27-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "アジアコーヒー" }, { k: "予算", v: "ドリンク ￥2,000〜￥2,999" }],
       },
       {
@@ -22734,7 +22734,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "喫茶店・カフェ",
         area: "大阪",
         desc: "大阪の老舗喫茶店。昭和の喫茶文化を受け継ぐ一軒で、コーヒー通が認める本格的なブレンドが味わえる。時代を超えて愛されるコーヒーの味が大阪の喫茶文化を体現。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r50/r50-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "喫茶店" }, { k: "予算", v: "￥1,000〜￥1,999" }],
       },
       {
@@ -22764,7 +22764,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "和モダンカフェ",
         area: "大阪",
         desc: "大阪の和モダンカフェ。和の空間でこだわりのコーヒーを楽しめる。イタリアンエスプレッソの技法と和の素材を融合させたコーヒーが、コーヒー通の心を掴む独自のスタイル。",
-        images: ["https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"],
+        images: ["/restaurants/r40/r40-image-1.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "和モダンカフェ" }, { k: "予算", v: "昼 ￥1,200〜￥1,800" }],
       },
     ],
@@ -22787,7 +22787,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "3分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -22796,7 +22796,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "とんこつラーメン",
         area: "福岡",
         desc: "福岡の深夜ラーメンの代名詞的存在。深夜でも行列ができる濃厚なとんこつスープが、深夜の空腹を満たしてくれる。博多の深夜文化を体現する一杯。",
-        images: ["https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "とんこつラーメン" }, { k: "予算", v: "¥2,000〜¥2,999" }],
       },
       {
@@ -22806,7 +22806,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "大阪",
         desc: "大阪の深夜も営業するラーメン店。深夜でもクオリティの高い一杯が楽しめる。大阪の深夜グルメ文化を支える、夜ふかし族の強い味方。",
-        images: ["https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600"],
+        images: ["/restaurants/r05/r05-counter.jpg"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "ラーメン" }, { k: "予算", v: "夜 ～￥999" }],
       },
       {
@@ -22816,7 +22816,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン・鶏白湯",
         area: "広島",
         desc: "広島の鶏白湯ラーメンの名店。深夜でも営業し、濃厚な鶏白湯スープが深夜の身体に染みる。広島の深夜グルメシーンを支える一軒。",
-        images: ["https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/129242/640x640_rect_129242311.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "鶏白湯ラーメン" }, { k: "予算", v: "¥999以下" }],
       },
       {
@@ -22826,7 +22826,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "ラーメン",
         area: "京都",
         desc: "京都の深夜ラーメン店。深夜でもしっかりとした一杯が食べられる、京都の夜ふかし族のための店。京都の夜の締めとして多くの人に利用されている。",
-        images: ["https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/228510/640x640_rect_b38ed4cadba595dc0f412ea7ba1051ed.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "ラーメン" }, { k: "予算", v: "〜¥1,500" }],
       },
       {
@@ -22836,7 +22836,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "そば・ラーメン",
         area: "大阪",
         desc: "大阪の深夜も営業する麺類の店。ラーメンとそばを提供し、深夜の小腹を温かい麺で満たしてくれる。大阪の夜の締めとして地元民に愛される一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/334675/640x640_rect_9f9aef70022df6d3d5e23fa4d577a805.jpg?w=800"],
         specs: [{ k: "エリア", v: "大阪" }, { k: "ジャンル", v: "そば・ラーメン" }, { k: "予算", v: "〜¥1,500" }],
       },
     ],
@@ -22859,7 +22859,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-05-04",
     reading: "5分",
     author: "マチノワ編集部",
-    heroImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    heroImage: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=1200",
     ranking: [
       {
         rank: "BEST 01",
@@ -22868,7 +22868,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "鮨",
         area: "京都",
         desc: "京都の鮨の最高峰。旬のネタと熟練の職人技が生み出す一皿一皿は、まさに芸術品だ。日本人として生まれたことに感謝したくなる、この国の食文化の粋が詰まった一軒。",
-        images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "鮨" }, { k: "予算", v: "¥20,000〜¥29,999" }],
       },
       {
@@ -22878,7 +22878,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "イタリアン",
         area: "広島",
         desc: "広島の食材とイタリアンの技が出会う場所。地域の食文化を世界の料理言語で語るという試みが、食べるたびに新しい発見をもたらしてくれる。日本のイタリアンの新たな可能性を示す。",
-        images: ["https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800"],
         specs: [{ k: "エリア", v: "広島" }, { k: "ジャンル", v: "イタリアン" }, { k: "予算", v: "¥8,000〜¥15,000" }],
       },
       {
@@ -22888,7 +22888,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "フレンチ・イタリアン",
         area: "神戸",
         desc: "神戸のフレンチイタリアン。神戸の異国情緒と日本の食材が融合した独自のスタイルは、全国屈指の完成度を誇る。何度訪れても新しい発見がある、時間をかけて楽しむ一軒。",
-        images: ["https://images.unsplash.com/photo-1547592180-85f173990554?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800"],
         specs: [{ k: "エリア", v: "神戸" }, { k: "ジャンル", v: "フレンチ・イタリアン" }, { k: "予算", v: "ディナー¥6,000〜7,999" }],
       },
       {
@@ -22898,7 +22898,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "珈琲専門店",
         area: "福岡",
         desc: "福岡のスペシャルティコーヒー専門店。日本のコーヒー文化を世界水準で表現する一軒。バリスタの技術と豆へのこだわりが、一杯のコーヒーに込められた物語を語る。",
-        images: ["https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600"],
+        images: ["/restaurants/r22/r22-image-1.jpg"],
         specs: [{ k: "エリア", v: "福岡" }, { k: "ジャンル", v: "珈琲専門店" }, { k: "予算", v: "〜¥1,000" }],
       },
       {
@@ -22908,7 +22908,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         cuisine: "日本料理",
         area: "京都",
         desc: "京都の日本料理の真髄。出汁という日本料理の根幹を徹底的に追求した料理は、食べるたびに日本の食文化の深さを教えてくれる。日本酒とのペアリングも含めて、食の芸術と呼べる体験。",
-        images: ["https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"],
+        images: ["https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800"],
         specs: [{ k: "エリア", v: "京都" }, { k: "ジャンル", v: "日本料理" }, { k: "予算", v: "¥5,000〜¥10,000" }],
       },
     ],
