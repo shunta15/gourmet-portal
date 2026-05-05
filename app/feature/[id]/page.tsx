@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import FeatureClient from "@/components/FeatureClient";
 import { FEATURE_ARTICLES, FEATURES } from "@/lib/data";
+import {
+  buildArticleJsonLd,
+  buildFeatureBreadcrumbJsonLd,
+} from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return FEATURES.map((f) => ({ id: f.id }));
@@ -33,5 +37,19 @@ export default async function FeaturePage({
   const { id } = await params;
   const article = FEATURE_ARTICLES[id];
   if (!article) notFound();
-  return <FeatureClient article={article} />;
+  const articleJsonLd = buildArticleJsonLd(article);
+  const breadcrumbJsonLd = buildFeatureBreadcrumbJsonLd(article);
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <FeatureClient article={article} />
+    </>
+  );
 }

@@ -1,4 +1,4 @@
-import { REGIONS, type Restaurant } from "./data";
+import { REGIONS, type Restaurant, type FeatureArticle } from "./data";
 
 const BASE = "https://gourmet-portal.vercel.app";
 
@@ -134,4 +134,45 @@ export function jsonLdScript(data: Record<string, unknown>) {
     type: "application/ld+json" as const,
     json: JSON.stringify(data),
   };
+}
+
+export function buildArticleJsonLd(a: FeatureArticle): Record<string, unknown> {
+  const url = `${BASE}/feature/${a.id}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": url,
+    headline: a.title,
+    description: a.lede,
+    image: a.heroImage,
+    datePublished: a.date,
+    dateModified: a.date,
+    author: {
+      "@type": "Organization",
+      name: a.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "マチノワ",
+      url: BASE,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE}/icon.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+}
+
+export function buildFeatureBreadcrumbJsonLd(
+  a: FeatureArticle
+): Record<string, unknown> {
+  return buildBreadcrumbJsonLd([
+    { name: "ホーム", url: BASE },
+    { name: "特集記事", url: `${BASE}/feature` },
+    { name: a.title, url: `${BASE}/feature/${a.id}` },
+  ]);
 }
