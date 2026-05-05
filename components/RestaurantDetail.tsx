@@ -130,6 +130,31 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
               <b>席数</b>
               {r.seats}
             </div>
+            {r.budget && (
+              <div>
+                <b>予算</b>
+                {r.budget}
+              </div>
+            )}
+            {r.rating && (
+              <div>
+                <b>評価</b>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                  <span style={{ color: "#f59e0b", fontSize: "1.1em" }}>★</span>
+                  {r.rating}
+                  {r.source && (
+                    <a
+                      href={r.source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: "0.75em", opacity: 0.6, marginLeft: 4 }}
+                    >
+                      ({r.source.label})
+                    </a>
+                  )}
+                </span>
+              </div>
+            )}
             <div>
               <b>アクセス</b>
               {r.nearest}
@@ -153,6 +178,28 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 予約する →
               </a>
             )}
+            {r.phone && (
+              <a
+                href={`tel:${r.phone.replace(/[^\d+]/g, "")}`}
+                className="sb-submit"
+                style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
+                data-cursor="CALL"
+              >
+                📞 {r.phone}
+              </a>
+            )}
+            {!r.phone && !r.reservationUrl && (
+              <a
+                href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="LINK"
+              >
+                Googleで詳細を調べる ↗
+              </a>
+            )}
             <a
               href={mapsUrl}
               target="_blank"
@@ -163,7 +210,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             >
               Google Mapで開く
             </a>
-            {r.source && (
+            {r.source && !r.rating && (
               <a
                 href={r.source.url}
                 target="_blank"
