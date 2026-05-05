@@ -97,9 +97,10 @@ grep 'id: "r67"' lib/data.ts
 ### 現在の状態（更新すること）
 - **最終ID: r240**（和心イタリアン Hitotsu / 大阪府堺市中区）
 - **次のID: r241**
-- **挿入点: `];` 直前（約8,700 行）**
+- **挿入点: `];` 直前（約10,800 行付近）**
 - **掲載店舗数: 229店舗**（欠番: r11・r26・r29・r98・r102・r109・r114・r119・r122・r136・r139）
 - **Region: 16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）
+- **特集記事数: 150本**（No.1〜No.150、feature-value-lunch-129 はIDに注意）
 
 ---
 
