@@ -5,24 +5,7 @@ import { useMemo, useState, useEffect, type FormEvent } from "react";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
-
-// 業種カテゴリー（部分一致でフィルタリング）
-const CUISINE_GROUPS = [
-  { label: "居酒屋",             keywords: ["居酒屋"] },
-  { label: "焼き鳥・炭火焼き",   keywords: ["焼き鳥", "焼鳥", "炭火焼"] },
-  { label: "焼肉・ホルモン",     keywords: ["焼肉", "ホルモン"] },
-  { label: "和食・割烹",         keywords: ["和食", "割烹", "日本料理"] },
-  { label: "寿司・海鮮",         keywords: ["寿司", "鮨", "海鮮"] },
-  { label: "ラーメン",           keywords: ["ラーメン", "担々麺", "担担麺", "まぜそば"] },
-  { label: "そば・うどん",       keywords: ["そば", "うどん"] },
-  { label: "中華料理",           keywords: ["中華", "中国料理", "餃子"] },
-  { label: "イタリアン・パスタ", keywords: ["イタリアン", "パスタ", "ピッツァ", "ピザ"] },
-  { label: "フレンチ・ビストロ", keywords: ["フレンチ", "ビストロ"] },
-  { label: "カフェ・喫茶",       keywords: ["カフェ", "喫茶", "コーヒー", "珈琲"] },
-  { label: "定食・食堂・洋食",   keywords: ["定食", "食堂", "洋食"] },
-  { label: "お好み焼き",         keywords: ["お好み焼き", "鉄板焼き"] },
-  { label: "バー・バル",         keywords: ["バー", "バル"] },
-] as const;
+import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 
 export default function SearchClient() {
   const router = useRouter();
@@ -160,7 +143,7 @@ export default function SearchClient() {
                 <option value="ALL">すべての業種</option>
                 {CUISINE_GROUPS.map((g) => (
                   <option key={g.label} value={g.label}>
-                    {g.label}
+                    {g.icon} {g.label}
                   </option>
                 ))}
               </select>
