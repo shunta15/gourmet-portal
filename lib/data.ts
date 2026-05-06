@@ -7287,15 +7287,14 @@ export const RESTAURANTS: Restaurant[] = [
     area: "京都・桂",
     region: "kyoto",
     shape: "square",
-    image: "/restaurants/r164/r164-01.jpg",
+    image: "/restaurants/r164/r164-02.jpg",
     heroImages: [
-      "/restaurants/r164/r164-01.jpg",
       "/restaurants/r164/r164-02.jpg",
       "/restaurants/r164/r164-03.jpg",
       "/restaurants/r164/r164-04.jpg",
+      "/restaurants/r164/r164-05.jpg",
     ],
     gallery: [
-      "/restaurants/r164/r164-01.jpg",
       "/restaurants/r164/r164-02.jpg",
       "/restaurants/r164/r164-03.jpg",
       "/restaurants/r164/r164-04.jpg",
@@ -7303,6 +7302,7 @@ export const RESTAURANTS: Restaurant[] = [
       "/restaurants/r164/r164-06.jpg",
       "/restaurants/r164/r164-07.jpg",
       "/restaurants/r164/r164-08.jpg",
+      "/restaurants/r164/r164-09.jpg",
     ],
     desc: "阪急桂駅東口徒歩1分。本場韓国の家庭料理が味わえる隠れ家的な韓国料理店。チヂミやチゲ、プルコギなど定番メニューが揃い、コスパの良さで地元客から愛される。",
     address: "京都府京都市西京区川島北裏町69 はつみビル2F",
@@ -10166,7 +10166,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA SELECTION",
     title: "広島の名店5選",
     sub: "路地裏に潜む一軒家レストランから話題の新店まで",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800",
   },
   {
     id: "feature-sakai-izakaya",
@@ -10175,7 +10175,7 @@ export const FEATURES: Feature[] = [
     kicker: "SAKAI DEEP DIVE",
     title: "大阪・堺エリアのディープ居酒屋",
     sub: "地元に愛される個性派の一軒を深掘りする",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800",
   },
   {
     id: "feature-late-night",
@@ -10184,7 +10184,7 @@ export const FEATURES: Feature[] = [
     kicker: "NIGHT OWL GUIDE",
     title: "深夜まで楽しめる店 全国版",
     sub: "仕事帰りでも間に合う、全国の深夜営業店を厳選",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/350659/640x640_rect_8abcd21db487394715e747d2ae11b7d0.jpg?w=800",
   },
   {
     id: "feature-osaka-lunch",
@@ -10193,7 +10193,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA LUNCH GUIDE",
     title: "大阪ランチおすすめ5選 地元民が通う名店",
     sub: "チェーン店では出会えない、大阪の旨い昼ごはん",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r23/r23-image-1.jpg",
   },
   {
     id: "feature-osaka-izakaya",
@@ -10202,7 +10202,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA NIGHT OUT",
     title: "大阪の居酒屋おすすめ｜ひとり飲みから宴会まで",
     sub: "大阪を熟知した地元民が選ぶ、個性派居酒屋6選",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r30/r30-image-1.jpg",
   },
   {
     id: "feature-osaka-italian",
@@ -10211,7 +10211,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA ITALIAN",
     title: "大阪で本格イタリアンが食べられる店5選",
     sub: "隠れ家から薪窯ピッツァまで、大阪イタリアンの実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r35/r35-image-1.png",
   },
   {
     id: "feature-kyoto-lunch",
@@ -10220,7 +10220,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO LUNCH SPOTS",
     title: "京都のランチ穴場5選 観光客に知られていない名店",
     sub: "古都の住宅街に潜む、地元に愛されるランチの名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/321866/640x640_rect_22a0e0186c9d3bb6f48bd41d282e11d5.jpg?w=800",
   },
   {
     id: "feature-kyoto-izakaya",
@@ -10229,7 +10229,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO NIGHT LIFE",
     title: "京都の夜に行きたい居酒屋・バル5選",
     sub: "町家や路地裏に灯る、京都ならではの夜の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/216656/640x640_rect_f0ecd0cd382d5b0153203da391309612.jpg?w=800",
   },
   {
     id: "feature-kyoto-cafe",
@@ -10238,7 +10238,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO CAFE TOUR",
     title: "京都カフェ巡り｜スペシャルティ＆レトロ喫茶3選",
     sub: "豆から選ぶ自家焙煎珈琲と、昭和の空気が漂う喫茶店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800",
   },
   {
     id: "feature-kyoto-italian",
@@ -10247,7 +10247,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO ITALIAN",
     title: "京都イタリアンの名店｜祇園・西院・一乗寺エリア",
     sub: "古都に根を張る本格イタリア料理店を地区別に紹介",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/167493/640x640_rect_47c3f3c66358f2bd3a4ee4549b8623fb.jpg?w=800",
   },
   {
     id: "feature-hiroshima-lunch",
@@ -10256,7 +10256,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA LUNCH",
     title: "広島市内ランチおすすめ5選 穴場から話題店まで",
     sub: "広島の日常の昼ごはんを支える名店たちを紹介",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/173898/640x640_rect_7ded90469b1ad4bf0b0825ae185bb16b.jpg?w=800",
   },
   {
     id: "feature-hiroshima-dinner",
@@ -10265,7 +10265,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA DINNER",
     title: "広島の夜ごはん｜海鮮・肉・イタリアン名店5選",
     sub: "広島の夜を豊かにする、ジャンルを超えた実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/324602/640x640_rect_5ffd22ecbcf5a27d740f28961c78d752.jpg?w=800",
   },
   {
     id: "feature-fukuoka-izakaya",
@@ -10274,7 +10274,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA NIGHT GUIDE",
     title: "福岡の居酒屋・焼鳥おすすめ5選",
     sub: "九州の食材と焼酎が交わる、福岡の夜の一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r09/r09-hero.jpg",
   },
   {
     id: "feature-fukuoka-cafe",
@@ -10283,7 +10283,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA CAFE & BAKERY",
     title: "福岡のカフェ＆パン屋｜スペシャルティ＆ベーカリー3選",
     sub: "コーヒーとパンへの情熱が詰まった、福岡の朝の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r22/r22-image-1.jpg",
   },
   {
     id: "feature-kobe-restaurant",
@@ -10292,7 +10292,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE SELECTION",
     title: "神戸のレストラン＆居酒屋おすすめ6選",
     sub: "港町の文化が育んだ、神戸ならではの食の多様性",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800",
   },
   {
     id: "feature-nagoya-meshi",
@@ -10301,7 +10301,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA GOURMET",
     title: "名古屋めし＆名古屋グルメが食べられる店5選",
     sub: "手羽先・みそかつ・ひつまぶし…名古屋の食文化を体感",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r36/r36-image-1.jpg",
   },
   {
     id: "feature-yakitori",
@@ -10310,7 +10310,7 @@ export const FEATURES: Feature[] = [
     kicker: "CHARCOAL YAKITORI",
     title: "全国焼鳥おすすめ｜炭火で焼き上げる名店7選",
     sub: "東京から広島・京都・福岡まで、炭火焼鳥の精鋭たち",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/yakitori-shimaya-3.jpg",
   },
   {
     id: "feature-cafe-nationwide",
@@ -10319,7 +10319,7 @@ export const FEATURES: Feature[] = [
     kicker: "CAFE JOURNEY",
     title: "全国カフェ特集｜個性派スペシャルティ＆隠れ家カフェ",
     sub: "豆・空間・ストーリーで選ぶ、全国の個性派カフェ7選",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r22/r22-image-1.jpg",
   },
   {
     id: "feature-date-restaurant",
@@ -10328,7 +10328,7 @@ export const FEATURES: Feature[] = [
     kicker: "DATE NIGHT PICKS",
     title: "デート・記念日に使える雰囲気レストラン6選",
     sub: "非日常の空間で特別な夜を演出する、選りすぐりの名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r49/r49-image-1.jpg",
   },
   {
     id: "feature-solo-dining",
@@ -10337,7 +10337,7 @@ export const FEATURES: Feature[] = [
     kicker: "SOLO DINING GUIDE",
     title: "一人でも入りやすい！カウンター席のある名店6選",
     sub: "おひとりさまを温かく迎えるカウンター文化の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r38/r38-image-1.jpg",
   },
   {
     id: "feature-cospa-lunch",
@@ -10346,7 +10346,7 @@ export const FEATURES: Feature[] = [
     kicker: "BEST VALUE LUNCH",
     title: "コスパ最強！1000円以下で満足できる店5選",
     sub: "財布に優しく、胃袋を満たす。全国コスパ名店の発掘",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r37/r37-image-1.jpg",
   },
   {
     id: "feature-wine-bar",
@@ -10355,7 +10355,7 @@ export const FEATURES: Feature[] = [
     kicker: "WINE & FOOD",
     title: "ワインと料理を楽しめるバル＆イタリアン6選",
     sub: "グラス一杯から始まる、大人のワイン居酒屋ガイド",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r49/r49-image-1.jpg",
   },
   {
     id: "feature-ramen",
@@ -10364,7 +10364,7 @@ export const FEATURES: Feature[] = [
     kicker: "RAMEN JOURNEY",
     title: "全国ラーメン名店特集｜個性派の一杯を巡る",
     sub: "澄んだスープから濃厚系まで、全国のラーメン精鋭店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r06/r06-hero.jpg",
   },
   {
     id: "feature-tokyo-lunch",
@@ -10373,7 +10373,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO LUNCH GUIDE",
     title: "東京のランチおすすめ5選 蒲田・立川・浅草の名店",
     sub: "地元に根ざした東京の昼ごはん——チェーン店にない一皿",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=800",
   },
   {
     id: "feature-tokyo-izakaya",
@@ -10382,7 +10382,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO NIGHT OUT",
     title: "東京の居酒屋おすすめ5選 南麻布・蒲田・立川の名店",
     sub: "焼鳥から焼肉、鮨まで——東京の夜を彩る個性派居酒屋",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/yakitori-shimaya-3.jpg",
   },
   {
     id: "feature-tokyo-cafe",
@@ -10391,7 +10391,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO CAFE & BISTRO",
     title: "東京のカフェ＆ビストロ4選 南麻布・蒲田エリア",
     sub: "深夜まで開く隠れ家ビストロから路地裏カフェまで",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/351709/640x640_rect_ca63fb90f1b6c6ef69ccbc8dd07f3b2e.jpg?w=800",
   },
   {
     id: "feature-fukuoka-lunch",
@@ -10400,7 +10400,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA LUNCH SPOTS",
     title: "福岡ランチおすすめ5選 博多・長浜・姪浜の名店",
     sub: "九州の食材を活かした福岡の昼ごはん——地元民が通う一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r10/r10-hero.jpg",
   },
   {
     id: "feature-business-dinner",
@@ -10409,7 +10409,7 @@ export const FEATURES: Feature[] = [
     kicker: "BUSINESS DINING",
     title: "接待・ビジネスディナーに使える店5選",
     sub: "個室・落ち着いた雰囲気・確かな料理——接待の鉄則を満たす名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r52/r52-image-2.jpg",
   },
   {
     id: "feature-osaka-french",
@@ -10418,7 +10418,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA FRENCH & BISTRO",
     title: "大阪で食べるフレンチ・ビストロ5選",
     sub: "パリ気分で楽しむ大阪の実力ビストロ——肥後橋・文の里・本町から",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/289576/640x640_rect_574c96a2ad6f692814e448510545e040.jpg?w=800",
   },
   {
     id: "feature-osaka-dinner",
@@ -10427,7 +10427,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA DINNER GUIDE",
     title: "大阪ディナーおすすめ5選 夜の名店",
     sub: "記念日から気軽な夜ごはんまで、大阪の夜を彩る実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r52/r52-image-2.jpg",
   },
   {
     id: "feature-osaka-cafe",
@@ -10436,7 +10436,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA CAFE & KISSA",
     title: "大阪カフェ＆喫茶おすすめ5選",
     sub: "昭和レトロ喫茶から洗練されたスペシャルティまで、大阪のカフェ文化",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r15/r15-image-1.jpg",
   },
   {
     id: "feature-okonomiyaki",
@@ -10445,7 +10445,7 @@ export const FEATURES: Feature[] = [
     kicker: "OKONOMIYAKI SELECTION",
     title: "全国お好み焼き名店特集",
     sub: "広島・大阪・京都——鉄板の上に宿る各地の個性を食べ比べる",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/206921/640x640_rect_f3281007ae6f791b121eaf63a7daf9d0.jpg",
   },
   {
     id: "feature-kyoto-french",
@@ -10454,7 +10454,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO FRENCH & BISTRO",
     title: "京都のフレンチ・ビストロおすすめ4選",
     sub: "古都の風情に溶け込む、本格フレンチの名店たち",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800",
   },
   {
     id: "feature-kyoto-soba",
@@ -10463,7 +10463,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO SOBA",
     title: "京都の手打ちそば名店を訪ねる",
     sub: "石臼挽きの香り高いそば粉——職人の技が光る京都の一杯",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800",
   },
   {
     id: "feature-kyoto-dinner",
@@ -10472,7 +10472,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO DINNER",
     title: "京都ディナー特集・夜の名店4選",
     sub: "祇園から四条まで、特別な夜にふさわしい京都の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800",
   },
   {
     id: "feature-kobe-lunch",
@@ -10481,7 +10481,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE LUNCH GUIDE",
     title: "神戸のランチおすすめ5選",
     sub: "元町・六甲道・垂水——神戸の昼ごはんはジャンルも雰囲気も多彩",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800",
   },
   {
     id: "feature-kobe-cafe",
@@ -10490,7 +10490,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE CAFE & SWEETS",
     title: "神戸カフェ＆スイーツ5選",
     sub: "山と海に挟まれた神戸で出会う、ゆったり過ごせるカフェ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800",
   },
   {
     id: "feature-nagoya-lunch",
@@ -10499,7 +10499,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA LUNCH GUIDE",
     title: "名古屋ランチおすすめ5選",
     sub: "洋食・イタリアン・海鮮——名古屋の旨い昼ごはんを網羅",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r13/r13-image-1.jpg",
   },
   {
     id: "feature-nagoya-cafe",
@@ -10508,7 +10508,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA CAFE & MORNING",
     title: "名古屋カフェ＆モーニング5選",
     sub: "名古屋のカフェ文化を象徴するモーニングと個性派コーヒースタンド",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r43/r43-image-1.jpg",
   },
   {
     id: "feature-hiroshima-okonomiyaki",
@@ -10517,7 +10517,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA OKONOMIYAKI",
     title: "広島お好み焼き名店を食べ歩く",
     sub: "重ねて焼く本場の広島焼き——地元民が通う実力店を厳選",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800",
   },
   {
     id: "feature-saitama-restaurant",
@@ -10526,7 +10526,7 @@ export const FEATURES: Feature[] = [
     kicker: "SAITAMA SELECTION",
     title: "埼玉のおすすめレストラン5選",
     sub: "浦和・大宮・川越——埼玉に根付く実力店をジャンル横断で紹介",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/357408/640x640_rect_8d7e71964ddf6d032db4e5a709d4777a.jpg?w=800",
   },
   {
     id: "feature-yakiniku",
@@ -10535,7 +10535,7 @@ export const FEATURES: Feature[] = [
     kicker: "YAKINIKU SELECTION",
     title: "全国焼肉名店特集5選",
     sub: "和牛の旨みを最大限に引き出す——各地の焼肉実力店を一挙紹介",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800",
   },
   {
     id: "feature-french-nationwide",
@@ -10544,7 +10544,7 @@ export const FEATURES: Feature[] = [
     kicker: "FRENCH & BISTRO JAPAN",
     title: "全国フレンチ・ビストロ特集",
     sub: "東京から京都・大阪・埼玉まで、各地に宿る本格フレンチの実力",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800",
   },
   {
     id: "feature-soba-udon",
@@ -10553,7 +10553,7 @@ export const FEATURES: Feature[] = [
     kicker: "SOBA & UDON JAPAN",
     title: "全国そば・うどん名店特集",
     sub: "石臼挽き・手打ち・讃岐系——各地の麺職人が生み出す一杯",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241921/640x640_rect_0048aeb45dd2d80952ddedbf3570a6cb.jpg?w=800",
   },
   {
     id: "feature-morning",
@@ -10562,7 +10562,7 @@ export const FEATURES: Feature[] = [
     kicker: "MORNING SELECTION",
     title: "朝ごはんに行きたいモーニング5選",
     sub: "一日の始まりをもっと豊かに——こだわりのモーニングが楽しめる店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r51/r51-image-1.jpg",
   },
   {
     id: "feature-group-party",
@@ -10571,7 +10571,7 @@ export const FEATURES: Feature[] = [
     kicker: "GROUP & PARTY",
     title: "宴会・グループ向け個室居酒屋6選",
     sub: "歓送迎会・忘年会・友人との大人数に——個室が使える名居酒屋",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/paofuku-interior-wide.jpg",
   },
   {
     id: "feature-ladies",
@@ -10580,7 +10580,7 @@ export const FEATURES: Feature[] = [
     kicker: "LADIES GATHERING",
     title: "女子会にぴったりのカフェ＆レストラン5選",
     sub: "インスタ映え・ゆったり空間・フォトジェニックな一皿——女子会の最適解",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r27/r27-image-1.jpg",
   },
   {
     id: "feature-hidden-gem",
@@ -10589,7 +10589,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIDDEN GEMS",
     title: "隠れ家レストラン特集・知る人ぞ知る名店",
     sub: "看板も小さく、口コミだけで広まる——大阪・神戸・京都の隠れた実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r34/r34-image-1.jpg",
   },
   {
     id: "feature-bakery",
@@ -10598,7 +10598,7 @@ export const FEATURES: Feature[] = [
     kicker: "BAKERY SELECTION",
     title: "行列のできるパン屋＆ベーカリー5選",
     sub: "地元産小麦・石窯・焼きたて——全国のこだわりベーカリーを巡る",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/190734/640x640_rect_84bc31df60c436d2326e12f3d38461d5.jpg",
   },
   {
     id: "feature-tachinom",
@@ -10607,7 +10607,7 @@ export const FEATURES: Feature[] = [
     kicker: "STANDING BAR CULTURE",
     title: "立ち飲み文化を楽しむ全国の名店5選",
     sub: "サクッと一杯、気さくな雰囲気——日本が誇る立ち飲み文化の真髄",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r38/r38-image-1.jpg",
   },
   {
     id: "feature-kyoto-sightseeing",
@@ -10616,7 +10616,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO FOOD GUIDE",
     title: "京都観光のついでに寄りたい名店5選",
     sub: "祇園・河原町・四条——観光動線上にある京都グルメの実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800",
   },
   {
     id: "feature-osaka-sightseeing",
@@ -10625,7 +10625,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA FOOD GUIDE",
     title: "大阪観光で外せないグルメスポット5選",
     sub: "なんば・梅田・北浜——大阪を旅するなら一度は寄りたい名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r30/r30-image-1.jpg",
   },
   {
     id: "feature-hiroshima-sightseeing",
@@ -10634,7 +10634,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA FOOD GUIDE",
     title: "広島観光グルメ——原爆ドーム周辺の名店5選",
     sub: "八丁堀・本通・流川——広島観光とセットで楽しむ食の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800",
   },
   {
     id: "feature-kobe-sightseeing",
@@ -10643,7 +10643,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE FOOD GUIDE",
     title: "神戸観光グルメ——南京町・元町周辺の名店5選",
     sub: "三宮・元町・南京町——神戸観光を食で彩る実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/227602/640x640_rect_91b10ed2af9882bb93b94f18f6d16282.jpg?w=800",
   },
   {
     id: "feature-kyoto-date",
@@ -10652,7 +10652,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO DATE SPOT",
     title: "京都でデートするなら外せないレストラン5選",
     sub: "祇園から河原町——二人で過ごす特別な京都の夜",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800",
   },
   {
     id: "feature-osaka-date",
@@ -10661,7 +10661,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA DATE SPOT",
     title: "大阪デートにおすすめのレストラン5選",
     sub: "肥後橋・十三・本町——大阪でふたりの時間を豊かにする一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/233084/640x640_rect_554a725b6a2d453b82fce34d5cf3ffd6.jpg?w=800",
   },
   {
     id: "feature-kobe-date",
@@ -10670,7 +10670,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE DATE DINING",
     title: "神戸デートグルメ——夜景と食事を楽しむ5選",
     sub: "三宮・元町・芦屋——神戸の夜景と共に過ごす大人のデート",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800",
   },
   {
     id: "feature-kyoto-travel-dinner",
@@ -10679,7 +10679,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO NIGHT DINING",
     title: "京都旅行の夜ごはんにおすすめ5選",
     sub: "和食・寿司・居酒屋——旅の夜を格上げする京都の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg?w=800",
   },
   {
     id: "feature-osaka-travel-lunch",
@@ -10688,7 +10688,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA TRAVEL LUNCH",
     title: "大阪旅行のランチに外せない名店5選",
     sub: "なんば・梅田・堺筋——大阪旅行の昼ごはんはここで決まり",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r47/r47-image-1.jpg",
   },
   {
     id: "feature-hiroshima-travel",
@@ -10697,7 +10697,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA TRAVEL GOURMET",
     title: "広島旅行で絶対食べたい名物料理の店",
     sub: "お好み焼き・牡蠣・海鮮——広島に来たら外せない一皿",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg",
   },
   {
     id: "feature-ladies-trip-kyoto",
@@ -10706,7 +10706,7 @@ export const FEATURES: Feature[] = [
     kicker: "LADIES TRIP KYOTO",
     title: "女子旅で行きたい京都のカフェ＆スイーツ5選",
     sub: "古都の風情とおしゃれな一皿——女子旅に最高の京都カフェ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/329117/640x640_rect_e1d8b760fdfad2ee805c1913ed3e4831.jpg?w=800",
   },
   {
     id: "feature-ladies-trip-kobe",
@@ -10715,7 +10715,7 @@ export const FEATURES: Feature[] = [
     kicker: "LADIES TRIP KOBE",
     title: "女子旅で行きたい神戸のおしゃれカフェ5選",
     sub: "港町の風とスイーツ——神戸女子旅のカフェ巡り",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/306799/640x640_rect_b6494aa5d57cc2b0911f4abeb801e7f1.jpg?w=800",
   },
   {
     id: "feature-solo-trip",
@@ -10724,7 +10724,7 @@ export const FEATURES: Feature[] = [
     kicker: "SOLO TRAVEL GOURMET",
     title: "ひとり旅のグルメ——一人でも入りやすい全国の名店",
     sub: "カウンター・立ち飲み・ラーメン——ひとり旅の食を充実させる全国の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r06/r06-hero.jpg",
   },
   {
     id: "feature-anniversary-nationwide",
@@ -10733,7 +10733,7 @@ export const FEATURES: Feature[] = [
     kicker: "ANNIVERSARY DINING",
     title: "記念日ディナーに使える全国の名店6選",
     sub: "大阪・京都・神戸・東京——大切な記念日に選びたい全国の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800",
   },
   {
     id: "feature-nagoya-sightseeing",
@@ -10742,7 +10742,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA FOOD GUIDE",
     title: "名古屋観光グルメ——栄・名駅周辺の名店5選",
     sub: "栄・名駅南・今池——名古屋観光と合わせて訪れたい食の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r36/r36-image-1.jpg",
   },
   {
     id: "feature-nara-sightseeing",
@@ -10751,7 +10751,7 @@ export const FEATURES: Feature[] = [
     kicker: "NARA FOOD GUIDE",
     title: "奈良観光グルメ——奈良公園周辺の名店3選",
     sub: "鹿と古刹の街で出会う、奈良に根付いた個性派の一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/354696/640x640_rect_0a0a945eb9fee623f4a942e806f0fbba.jpg?w=800",
   },
   {
     id: "feature-kanagawa-restaurant",
@@ -10760,7 +10760,7 @@ export const FEATURES: Feature[] = [
     kicker: "KANAGAWA SELECTION",
     title: "神奈川のおすすめレストラン4選",
     sub: "横浜・平塚・津久井湖——神奈川の多彩な食シーンを巡る",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/kitsune-storefront-night.jpg",
   },
   {
     id: "feature-shizuoka-restaurant",
@@ -10769,7 +10769,7 @@ export const FEATURES: Feature[] = [
     kicker: "SHIZUOKA SELECTION",
     title: "静岡グルメ——海鮮炉端と隠れ家カフェの2選",
     sub: "掛川の炉端焼きと新静岡の隠れ家珈琲——静岡の食の個性",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/79672/640x640_rect_79672120.jpg?w=800",
   },
   {
     id: "feature-shiga-restaurant",
@@ -10778,7 +10778,7 @@ export const FEATURES: Feature[] = [
     kicker: "SHIGA SELECTION",
     title: "滋賀グルメ——琵琶湖のほとりで楽しむ食の名店",
     sub: "日野の甘味処と長浜の食堂——滋賀の穏やかな食文化",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/352539/640x640_rect_5d514e452c159ef8f91075686ecf6783.jpg",
   },
   {
     id: "feature-regional-hidden",
@@ -10787,7 +10787,7 @@ export const FEATURES: Feature[] = [
     kicker: "REGIONAL HIDDEN GEMS",
     title: "地方の隠れ名店——和歌山・群馬・鹿児島から",
     sub: "観光地から離れた場所に宿る、知る人ぞ知る3店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/127644/640x640_rect_127644941.jpg",
   },
   {
     id: "feature-hokkaido-restaurant",
@@ -10796,7 +10796,7 @@ export const FEATURES: Feature[] = [
     kicker: "HOKKAIDO SELECTION",
     title: "北海道グルメ——当別・札幌の実力店2選",
     sub: "大自然の中のコーヒースタンドと札幌の深夜ラーメン",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/313825/640x640_rect_5d9f09de238f7eb633efa09bf40a5d9a.jpg?w=800",
   },
   {
     id: "feature-coffee-nationwide",
@@ -10805,7 +10805,7 @@ export const FEATURES: Feature[] = [
     kicker: "COFFEE JAPAN",
     title: "コーヒー好きのための全国カフェ特集",
     sub: "自家焙煎・スペシャルティ・老舗珈琲——各地の一杯を巡る",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/338848/640x640_rect_36945abe7109d85b1ce874b47378ac0e.jpg?w=800",
   },
   {
     id: "feature-teishoku",
@@ -10814,7 +10814,7 @@ export const FEATURES: Feature[] = [
     kicker: "TEISHOKU JAPAN",
     title: "絶品ランチ定食特集——日本の昼ごはん文化を味わう",
     sub: "食堂・食事処・一膳飯屋——シンプルだから旨い定食の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/268486/640x640_rect_0200916a27ad772997b29e396360f7dd.jpg?w=800",
   },
   {
     id: "feature-terrace",
@@ -10823,7 +10823,7 @@ export const FEATURES: Feature[] = [
     kicker: "TERRACE DINING",
     title: "夏に行きたいテラス席のある店5選",
     sub: "開放感・青空・心地よい風——テラス席で過ごす特別な食事",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/yakitori-shimaya-3.jpg",
   },
   {
     id: "feature-family",
@@ -10832,7 +10832,7 @@ export const FEATURES: Feature[] = [
     kicker: "FAMILY DINING",
     title: "親子で行けるファミリーレストラン5選",
     sub: "広い席・キッズ対応・にぎやかでも安心——家族連れに優しい名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r04/r04-info-4.webp",
   },
   {
     id: "feature-washoku",
@@ -10841,7 +10841,7 @@ export const FEATURES: Feature[] = [
     kicker: "WASHOKU JAPAN",
     title: "祖父母と行きたい和食の名店5選",
     sub: "和の空間・旬の一皿・ゆったりした時間——世代を超えた食卓",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=800",
   },
   {
     id: "feature-takeout",
@@ -10850,7 +10850,7 @@ export const FEATURES: Feature[] = [
     kicker: "TAKEOUT SELECTION",
     title: "テイクアウトできる店5選——家で楽しむ名店の味",
     sub: "パン・惣菜・パスタ——外出先や自宅でも楽しめるテイクアウト名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/127759/640x640_rect_127759467.jpg?w=800",
   },
   {
     id: "feature-after-work",
@@ -10859,7 +10859,7 @@ export const FEATURES: Feature[] = [
     kicker: "AFTER WORK BAR",
     title: "仕事終わりにサクッと一杯——深夜営業の名店5選",
     sub: "22時以降もやっている——大阪・京都・名古屋の深夜グルメ実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r15/r15-image-1.jpg",
   },
   {
     id: "feature-weekend-brunch",
@@ -10868,7 +10868,7 @@ export const FEATURES: Feature[] = [
     kicker: "WEEKEND BRUNCH",
     title: "週末のブランチにおすすめ5選",
     sub: "土日の朝昼をゆったりと——週末限定・モーニング充実の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r16/r16-01.webp",
   },
   {
     id: "feature-healthy",
@@ -10877,7 +10877,7 @@ export const FEATURES: Feature[] = [
     kicker: "HEALTHY DINING",
     title: "体に優しい・ヘルシーごはんの名店5選",
     sub: "野菜・自家農園・薬膳——体の内側から整える食の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/188619/640x640_rect_1db866cf7e700e74725acd5f24dc7637.jpg?w=800",
   },
   {
     id: "feature-craft",
@@ -10886,7 +10886,7 @@ export const FEATURES: Feature[] = [
     kicker: "CHEF'S CRAFT",
     title: "料理人のこだわりが光る一軒——全国から厳選6店",
     sub: "完全予約制・一本勝負・職人の哲学——料理と真摯に向き合う店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/266453/640x640_rect_47f8f060a17c8a3129bc85091c25dd66.jpg?w=800",
   },
   {
     id: "feature-local-secret",
@@ -10895,7 +10895,7 @@ export const FEATURES: Feature[] = [
     kicker: "LOCAL SECRET",
     title: "地元民おすすめの穴場グルメ——全国から5選",
     sub: "口コミだけで広まった——地元に深く根ざす穴場の実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r16/r16-01.webp",
   },
   {
     id: "feature-wine-nationwide",
@@ -10904,7 +10904,7 @@ export const FEATURES: Feature[] = [
     kicker: "WINE DINING JAPAN",
     title: "ワインと料理を愉しむ全国の名店5選",
     sub: "ナチュラルワイン・ソムリエ厳選・産地直送——各地のワイン名店を巡る",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/kitsune-storefront-night.jpg",
   },
   {
     id: "feature-japanese-sake",
@@ -10913,7 +10913,7 @@ export const FEATURES: Feature[] = [
     kicker: "NIHONSHU SELECTION",
     title: "日本酒と料理を楽しむ全国の名店5選",
     sub: "地酒・純米・おまかせ——日本酒文化の深みを体感できる実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r21/r21-image-1.jpg",
   },
   {
     id: "feature-ramen-nationwide",
@@ -10922,7 +10922,7 @@ export const FEATURES: Feature[] = [
     kicker: "RAMEN JAPAN",
     title: "全国ラーメン巡り——各地の個性派を食べ比べる",
     sub: "鶏白湯・塩・尾道・深夜——日本各地のラーメン文化を一挙紹介",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r06/r06-hero.jpg",
   },
   {
     id: "feature-ethnic",
@@ -10931,7 +10931,7 @@ export const FEATURES: Feature[] = [
     kicker: "ETHNIC DINING JAPAN",
     title: "エスニック・アジア料理の名店5選",
     sub: "ベトナム・インド・中国・スペイン——日本各地のエスニック実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r20/r20-image-1.jpg",
   },
   {
     id: "feature-pizza-nationwide",
@@ -10940,7 +10940,7 @@ export const FEATURES: Feature[] = [
     kicker: "PIZZA JAPAN",
     title: "全国ピザ・ナポリピッツァ名店特集",
     sub: "薪窯・石窯・ナポリ仕込み——各地の本格ピッツァを楽しむ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r50/r50-image-1.jpg",
   },
   {
     id: "feature-chinese-nationwide",
@@ -10949,7 +10949,7 @@ export const FEATURES: Feature[] = [
     kicker: "CHINESE DINING JAPAN",
     title: "全国中華料理・中国料理の名店5選",
     sub: "四川・広東・上海・担々麺——各地の中華名店を食べ比べる",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r07/r07-storefront.jpg",
   },
   {
     id: "feature-sweets-nationwide",
@@ -10958,7 +10958,7 @@ export const FEATURES: Feature[] = [
     kicker: "SWEETS JAPAN",
     title: "全国スイーツ＆デザート名店特集",
     sub: "パフェ・タルト・甘味処——各地の絶品スイーツを巡る",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r27/r27-image-1.jpg",
   },
   {
     id: "feature-sushi-nationwide",
@@ -10967,7 +10967,7 @@ export const FEATURES: Feature[] = [
     kicker: "SUSHI JAPAN",
     title: "全国寿司・鮨の名店特集",
     sub: "江戸前・ミシュラン・完全予約制——各地の寿司職人の技を体感する",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/345568/640x640_rect_c7c59e621aa50d8d345cce793fd4a1c9.jpg?w=800",
   },
   {
     id: "feature-izakaya-nationwide",
@@ -10976,7 +10976,7 @@ export const FEATURES: Feature[] = [
     kicker: "IZAKAYA JAPAN",
     title: "全国居酒屋の名店——各地の飲み文化を巡る",
     sub: "大阪・京都・福岡・東京——地域色豊かな居酒屋文化を食べ飲み比べる",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r09/r09-hero.jpg",
   },
   {
     id: "feature-tokyo-dinner",
@@ -10985,7 +10985,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO DINNER",
     title: "東京ディナーおすすめ5選",
     sub: "南麻布・蒲田・立川——東京の夜を彩る実力ディナー店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/yakitori-shimaya-3.jpg",
   },
   {
     id: "feature-kobe-dinner",
@@ -10994,7 +10994,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE DINNER",
     title: "神戸ディナーおすすめ5選",
     sub: "三宮・元町・芦屋——神戸の夜を格上げする実力ディナー店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800",
   },
   {
     id: "feature-osaka-chinese",
@@ -11003,7 +11003,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA CHINESE",
     title: "大阪の中華料理おすすめ5選",
     sub: "十三・福島・門真——大阪の中華シーンは奥が深い",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/139284/640x640_rect_139284057.jpg?w=800",
   },
   {
     id: "feature-kyoto-bar",
@@ -11012,7 +11012,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO BAR SCENE",
     title: "京都のバー＆深夜グルメ5選",
     sub: "木屋町・烏丸御池・伏見——京都の夜を彩るバーと深夜の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/92967/640x640_rect_92967574.jpg",
   },
   {
     id: "feature-fukuoka-dinner",
@@ -11021,7 +11021,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA DINNER",
     title: "福岡ディナーおすすめ5選",
     sub: "博多・姪浜・福津——福岡の夜を満喫する実力ディナー店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r09/r09-hero.jpg",
   },
   {
     id: "feature-kobe-yakiniku",
@@ -11030,7 +11030,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE YAKINIKU",
     title: "神戸の焼肉＆鉄板焼き5選",
     sub: "三宮・六甲道・垂水——神戸和牛の本場で楽しむ肉の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241096/640x640_rect_d2a47440ecb9b388d029f814738d8bb9.jpg?w=800",
   },
   {
     id: "feature-osaka-bar",
@@ -11039,7 +11039,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA BAR SCENE",
     title: "大阪のバー＆深夜グルメ5選",
     sub: "中崎町・関目・堀江——大阪の夜を彩る個性的なバーと深夜の一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r15/r15-image-1.jpg",
   },
   {
     id: "feature-nagoya-dinner",
@@ -11048,7 +11048,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA DINNER",
     title: "名古屋ディナーおすすめ5選",
     sub: "栄・名駅南・浄心——名古屋の夜ごはんに選びたい実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/317336/640x640_rect_83f3a7cbc62ea0afb8a9734e1df7c3c5.jpg?w=800",
   },
   {
     id: "feature-osaka-pasta",
@@ -11057,7 +11057,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA PASTA & ITALIAN",
     title: "大阪のパスタ＆イタリアン名店特集",
     sub: "薪窯ピッツァから手打ちパスタまで——大阪イタリアンの実力を総覧",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r40/r40-image-1.jpg",
   },
   {
     id: "feature-kyoto-arashiyama",
@@ -11066,7 +11066,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO ARASHIYAMA",
     title: "京都・嵐山観光後に寄りたい名店5選",
     sub: "竹林の小径の帰り道、地元に愛される一軒で旅を締める",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/241443/640x640_rect_ce97ea00f4d496a118d5094ffb137c7f.jpg?w=800",
   },
   {
     id: "feature-osaka-tenjin-crawl",
@@ -11075,7 +11075,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA TENJIN",
     title: "大阪・天満〜天神橋のはしご飲み5選",
     sub: "日本一長い商店街に並ぶ、地元呑み文化の真髄",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/paofuku-interior-wide.jpg",
   },
   {
     id: "feature-hiroshima-miyajima",
@@ -11084,7 +11084,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA MIYAJIMA",
     title: "広島・宮島観光のついでに寄りたい名店4選",
     sub: "世界遺産の余韻を、広島の本物の味で締める",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800",
   },
   {
     id: "feature-kobe-kitano",
@@ -11093,7 +11093,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE KITANO",
     title: "神戸・北野異人館散策後のランチ4選",
     sub: "西洋の薫りが残る坂の街で、港町グルメを楽しむ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800",
   },
   {
     id: "feature-saitama-kawagoe",
@@ -11102,7 +11102,7 @@ export const FEATURES: Feature[] = [
     kicker: "KAWAGOE GOURMET",
     title: "埼玉・川越観光のついでに寄りたい名店4選",
     sub: "小江戸・川越を食でたどる、埼玉の奥深さ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/355332/640x640_rect_da3080fa4d359890eeb6ff3df882f37b.jpg?w=800",
   },
   {
     id: "feature-fukuoka-dazaifu",
@@ -11111,7 +11111,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA DAZAIFU",
     title: "福岡・太宰府観光後のグルメ4選",
     sub: "学問の神様に詣でた後は、博多の食文化を味わう",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r10/r10-hero.jpg",
   },
   {
     id: "feature-kyoto-fushimi",
@@ -11120,7 +11120,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO FUSHIMI",
     title: "京都・伏見稲荷エリアのグルメ4選",
     sub: "千本鳥居の参拝後、伏見の地酒文化と食を楽しむ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/307411/640x640_rect_5008bd03cb3fa118a9f09f41a9f843d2.jpg?w=800",
   },
   {
     id: "feature-tokyo-kamata",
@@ -11129,7 +11129,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO KAMATA",
     title: "東京・蒲田の知られざるグルメ5選",
     sub: "下町の食の底力——羽田空港の隣町に宿る実力店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/350490/640x640_rect_2271cbc7a1ba7a8f82f48158e25a0e59.jpg?w=800",
   },
   {
     id: "feature-kyoto-date-lunch",
@@ -11138,7 +11138,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO DATE LUNCH",
     title: "京都・昼デートにおすすめのランチ5選",
     sub: "古都の空気の中、二人で過ごす特別な昼食を",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/198509/640x640_rect_f039a0f26edc448f4731b98a46ae5368.jpg?w=800",
   },
   {
     id: "feature-osaka-propose-dinner",
@@ -11147,7 +11147,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA PROPOSE DINNER",
     title: "大阪でプロポーズするならここ——特別な夜の名店4選",
     sub: "一生に一度の瞬間にふさわしい、大阪の至高のレストラン",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r52/r52-image-2.jpg",
   },
   {
     id: "feature-kobe-night-view-date",
@@ -11156,7 +11156,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE NIGHT VIEW DATE",
     title: "神戸・夜景デート後のレストラン4選",
     sub: "1000万ドルの夜景の後に、港町の食で夜を完成させる",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/156736/640x640_rect_156736717.jpg?w=800",
   },
   {
     id: "feature-hiroshima-date",
@@ -11165,7 +11165,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIROSHIMA DATE",
     title: "広島デートの食事プラン4選",
     sub: "平和記念公園からお好み焼きまで、広島デートの食の選択肢",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/349719/640x640_rect_0e731d8edbc72c37a97e56a87b636e56.jpg?w=800",
   },
   {
     id: "feature-nagoya-date-cafe",
@@ -11174,7 +11174,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA DATE CAFE",
     title: "名古屋デートで使えるカフェ4選",
     sub: "モーニング文化の街で、二人の時間を彩るカフェを探して",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r43/r43-image-1.jpg",
   },
   {
     id: "feature-first-date-izakaya",
@@ -11183,7 +11183,7 @@ export const FEATURES: Feature[] = [
     kicker: "FIRST DATE IZAKAYA",
     title: "初デートで失敗しない居酒屋選び5選",
     sub: "話しやすさ・料理・価格——三拍子揃った居酒屋の選び方",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r21/r21-image-1.jpg",
   },
   {
     id: "feature-anniversary-lunch",
@@ -11192,7 +11192,7 @@ export const FEATURES: Feature[] = [
     kicker: "ANNIVERSARY LUNCH",
     title: "記念日の前日ランチに使える店5選",
     sub: "本番前日の昼食を、さりげなく特別にする一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/320844/640x640_rect_20eaf9c6332162849b7168e9bc20b4e9.jpg?w=800",
   },
   {
     id: "feature-goukon-restaurant",
@@ -11201,7 +11201,7 @@ export const FEATURES: Feature[] = [
     kicker: "GOUKON SCENE",
     title: "合コン・婚活にぴったりの店5選",
     sub: "話が弾む環境と、席を離れやすいレイアウトが重要",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/356315/640x640_rect_b0e5a4869832aa5740d0e7b08a8a71e9.jpg",
   },
   {
     id: "feature-birthday-private-room",
@@ -11210,7 +11210,7 @@ export const FEATURES: Feature[] = [
     kicker: "BIRTHDAY PRIVATE ROOM",
     title: "誕生日会ができる個室の店5選",
     sub: "サプライズにも対応——個室と個別配慮が光る一軒を探して",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/186464/640x640_rect_945631b4bab9d89ca18c3daf9fe2bc14.jpg",
   },
   {
     id: "feature-osaka-view-dinner",
@@ -11219,7 +11219,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA VIEW DINNER",
     title: "大阪・夜景が楽しめるディナー4選",
     sub: "夜の大阪を眺めながら、特別な夜を演出する",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r18/r18-image-1.jpg",
   },
   {
     id: "feature-second-bar",
@@ -11228,7 +11228,7 @@ export const FEATURES: Feature[] = [
     kicker: "SECOND BAR GUIDE",
     title: "飲み会の二軒目に使える店5選",
     sub: "盛り上がった流れを途切れさせない、二軒目の選び方",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r15/r15-image-1.jpg",
   },
   {
     id: "feature-business-lunch",
@@ -11237,7 +11237,7 @@ export const FEATURES: Feature[] = [
     kicker: "BUSINESS LUNCH",
     title: "上司を連れて行ける接待ランチ5選",
     sub: "品格と話しやすさを両立した、ビジネスランチの名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800",
   },
   {
     id: "feature-kodawari-lunch",
@@ -11246,7 +11246,7 @@ export const FEATURES: Feature[] = [
     kicker: "FAMILY LUNCH",
     title: "子連れランチに安心な店5選",
     sub: "ベビーカーOK・個室あり・取り分けしやすい、家族で気兼ねなく食べられる一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r30/r30-image-1.jpg",
   },
   {
     id: "feature-solo-drinking",
@@ -11255,7 +11255,7 @@ export const FEATURES: Feature[] = [
     kicker: "SOLO DRINK",
     title: "テレワーク後の一人飲み5選",
     sub: "カウンター席でゆっくり飲める、仕事上がりのひとり時間に最適な店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800",
   },
   {
     id: "feature-farewell-party",
@@ -11264,7 +11264,7 @@ export const FEATURES: Feature[] = [
     kicker: "FAREWELL PARTY",
     title: "転勤・送別会に使える店5選",
     sub: "大人数でも個室対応、コースが充実した送別・歓迎シーンの名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r44/r44-image-1.jpg",
   },
   {
     id: "feature-family-washoku",
@@ -11273,7 +11273,7 @@ export const FEATURES: Feature[] = [
     kicker: "FAMILY CELEBRATION",
     title: "家族での和食お祝い5選",
     sub: "還暦・卒業・入学記念に。個室で落ち着いて食べられる和の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/282166/640x640_rect_54586aac3e61948ae0f58d683aff0918.jpg?w=800",
   },
   {
     id: "feature-nomihodai",
@@ -11282,7 +11282,7 @@ export const FEATURES: Feature[] = [
     kicker: "ALL YOU CAN DRINK",
     title: "飲み放題コースで盛り上がれる店5選",
     sub: "コスパ抜群の飲み放題プランで、仲間との宴会をとことん楽しむ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r18/r18-image-1.jpg",
   },
   {
     id: "feature-counter-solo",
@@ -11291,7 +11291,7 @@ export const FEATURES: Feature[] = [
     kicker: "COUNTER DINING",
     title: "カウンター席で一人を楽しめる店5選",
     sub: "料理人と会話しながら食べる。一人の時間を豊かにするカウンター席の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800",
   },
   {
     id: "feature-late-night-gourmet",
@@ -11300,7 +11300,7 @@ export const FEATURES: Feature[] = [
     kicker: "LATE NIGHT",
     title: "深夜でも食べられる名店5選",
     sub: "23時を過ぎても開いている、夜ふかし派の強い味方",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800",
   },
   {
     id: "feature-morning-restaurant",
@@ -11309,7 +11309,7 @@ export const FEATURES: Feature[] = [
     kicker: "MORNING MEAL",
     title: "朝ごはんが食べられる名店4選",
     sub: "早起きして食べたい、モーニングが充実した全国の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r22/r22-image-1.jpg",
   },
   {
     id: "feature-value-lunch-129",
@@ -11318,7 +11318,7 @@ export const FEATURES: Feature[] = [
     kicker: "VALUE LUNCH",
     title: "コスパ最強ランチ5選",
     sub: "千円以内でこの内容！地元で愛されるお得すぎるランチの名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800",
   },
   {
     id: "feature-luxury-meeting",
@@ -11327,7 +11327,7 @@ export const FEATURES: Feature[] = [
     kicker: "PREMIUM DINING",
     title: "接待・会食に使える高級店4選",
     sub: "大切な取引先との食事に。格調高く、料理のクオリティで勝負できる名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800",
   },
   {
     id: "feature-girls-cafe",
@@ -11336,7 +11336,7 @@ export const FEATURES: Feature[] = [
     kicker: "GIRLS MEETUP",
     title: "女子会で使えるおしゃれカフェ5選",
     sub: "インスタ映えも満点、大阪・京都のカフェで過ごす午後の女子時間",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r27/r27-image-1.jpg",
   },
   {
     id: "feature-travel-dinner",
@@ -11345,7 +11345,7 @@ export const FEATURES: Feature[] = [
     kicker: "TRAVEL CLOSING",
     title: "旅の締めに食べたい夜ごはん5選",
     sub: "観光の最後を締めくくる、心に残る一軒を全国から厳選",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800",
   },
   {
     id: "feature-after-dinner-bar",
@@ -11354,7 +11354,7 @@ export const FEATURES: Feature[] = [
     kicker: "AFTER DINNER",
     title: "食後に寄りたいバー・カフェ5選",
     sub: "ディナーの余韻を楽しむ、ゆったり過ごせる二軒目の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/354218/640x640_rect_a9855aee16527a4dd71c510b1dffe18c.jpg?w=800",
   },
   {
     id: "feature-spring-hanami",
@@ -11363,7 +11363,7 @@ export const FEATURES: Feature[] = [
     kicker: "SPRING HANAMI",
     title: "花見の後に行きたい名店5選",
     sub: "桜を眺めた帰り道、春の食材と日本酒で一日を締める",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800",
   },
   {
     id: "feature-summer-cool-food",
@@ -11372,7 +11372,7 @@ export const FEATURES: Feature[] = [
     kicker: "SUMMER REFRESH",
     title: "夏にさっぱり食べたいグルメ5選",
     sub: "暑い夏に食べたい、冷やし麺・海鮮・爽快な一皿の名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/234841/640x640_rect_0ffaaf868040c75f826d10972626e319.jpg?w=800",
   },
   {
     id: "feature-autumn-koyo",
@@ -11381,7 +11381,7 @@ export const FEATURES: Feature[] = [
     kicker: "AUTUMN FOLIAGE",
     title: "紅葉の後に食べたい名店5選",
     sub: "秋の観光スポットを歩いた後、旬の食材で一日を締める",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800",
   },
   {
     id: "feature-winter-christmas",
@@ -11390,7 +11390,7 @@ export const FEATURES: Feature[] = [
     kicker: "WINTER CHRISTMAS",
     title: "冬・クリスマスディナーに使える店5選",
     sub: "大切な人と過ごすクリスマスイブに、特別な一軒を選ぶ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r52/r52-image-2.jpg",
   },
   {
     id: "feature-after5-bistro",
@@ -11399,7 +11399,7 @@ export const FEATURES: Feature[] = [
     kicker: "AFTER FIVE",
     title: "アフター5のバル・ビストロ5選",
     sub: "仕事終わりに気軽に立ち寄れる、コスパと雰囲気のいい洋食系の店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r48/r48-image-1.jpg",
   },
   {
     id: "feature-year-end-family",
@@ -11408,7 +11408,7 @@ export const FEATURES: Feature[] = [
     kicker: "YEAR END & NEW YEAR",
     title: "年末年始に家族で食べたい店5選",
     sub: "特別な年の終わりと始まりを、家族みんなで囲む食卓",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r32/r32-image-1.jpg",
   },
   {
     id: "feature-holiday-cafe",
@@ -11417,7 +11417,7 @@ export const FEATURES: Feature[] = [
     kicker: "HOLIDAY AFTERNOON",
     title: "休日の昼下がりに過ごすカフェ4選",
     sub: "何もしない贅沢な一日に。本と珈琲と、居心地のいい席がある店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r22/r22-image-1.jpg",
   },
   {
     id: "feature-late-night-izakaya",
@@ -11426,7 +11426,7 @@ export const FEATURES: Feature[] = [
     kicker: "NIGHT OWL",
     title: "夜遅くまで飲める居酒屋5選",
     sub: "23時を過ぎても賑わう、夜ふかし派のための全国居酒屋",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r24/r24-image-1.jpg",
   },
   {
     id: "feature-early-dinner",
@@ -11435,7 +11435,7 @@ export const FEATURES: Feature[] = [
     kicker: "EARLY DINNER",
     title: "早めのディナーに使える店5選",
     sub: "17〜19時台に開いている、早起きの夕食を豊かにする名店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r30/r30-image-1.jpg",
   },
   {
     id: "feature-weekend-morning",
@@ -11444,7 +11444,7 @@ export const FEATURES: Feature[] = [
     kicker: "WEEKEND MORNING",
     title: "週末モーニングが楽しめる名店4選",
     sub: "休日の朝だけ開く特別なモーニング。平日とは違う朝の贅沢",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/246363/640x640_rect_7efd4b51d5389356f9b0d92c99a92a99.jpg?w=800",
   },
   {
     id: "feature-osaka-local-izakaya",
@@ -11453,7 +11453,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA LOCAL BAR",
     title: "地元民が通う大阪の居酒屋5選",
     sub: "観光客向けじゃない。大阪人が毎週通いたくなる本物の居酒屋",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r32/r32-image-1.jpg",
   },
   {
     id: "feature-kyoto-local-restaurant",
@@ -11462,7 +11462,7 @@ export const FEATURES: Feature[] = [
     kicker: "KYOTO LOCAL SPOT",
     title: "地元民が通う京都の名店5選",
     sub: "観光ガイドには載っていない。京都人が愛する、本当の京都グルメ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/240863/640x640_rect_1238f640a87de7194e607040e1eba177.jpg?w=800",
   },
   {
     id: "feature-kobe-local-restaurant",
@@ -11471,7 +11471,7 @@ export const FEATURES: Feature[] = [
     kicker: "KOBE LOCAL SPOT",
     title: "地元民が通う神戸の名店5選",
     sub: "観光地化されていない神戸の味。地元っ子が毎週通う本物の一軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/321548/640x640_rect_5cec7a44becc8f39c41c742b591430c6.jpg?w=800",
   },
   {
     id: "feature-instagrammable-cafe",
@@ -11480,7 +11480,7 @@ export const FEATURES: Feature[] = [
     kicker: "INSTAGRAM WORTHY",
     title: "インスタ映えするカフェ5選",
     sub: "写真を撮りたくなる空間・料理・ドリンクが揃った全国のカフェ",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r27/r27-image-1.jpg",
   },
   {
     id: "feature-osaka-coffee",
@@ -11489,7 +11489,7 @@ export const FEATURES: Feature[] = [
     kicker: "OSAKA COFFEE",
     title: "コーヒー通の大阪珈琲店5選",
     sub: "スペシャルティからレトロ喫茶まで。大阪のコーヒー文化を深掘り",
-    image: "/restaurants/r240/r240-01.png",
+    image: "/restaurants/r27/r27-image-1.jpg",
   },
   {
     id: "feature-midnight-ramen",
@@ -11498,7 +11498,7 @@ export const FEATURES: Feature[] = [
     kicker: "MIDNIGHT RAMEN",
     title: "深夜ラーメン5選",
     sub: "夜中に無性に食べたくなる一杯。深夜でも行列ができる全国のラーメン店",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/351856/640x640_rect_f2e731f38d5a8e3c9f3ca5ce49d79b11.jpg?w=800",
   },
   {
     id: "feature-nationwide-selection",
@@ -11507,7 +11507,7 @@ export const FEATURES: Feature[] = [
     kicker: "MACHINOWA SELECTION",
     title: "マチノワ編集部が選ぶ全国の名店5選",
     sub: "地域・ジャンルを超えた、マチノワが自信を持って推薦する五軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800",
   },
   {
     id: "feature-tokyo-lunch-best",
@@ -11516,7 +11516,7 @@ export const FEATURES: Feature[] = [
     kicker: "TOKYO LUNCH",
     title: "東京ランチおすすめ5選｜コスパ×クオリティの名店",
     sub: "昼どきの東京で価格以上の満足が得られる五軒",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800",
   },
   {
     id: "feature-nagoya-morning",
@@ -11525,7 +11525,7 @@ export const FEATURES: Feature[] = [
     kicker: "NAGOYA MORNING",
     title: "名古屋モーニング文化を楽しめる店5選",
     sub: "コーヒー一杯でトースト付き——名古屋が誇る朝食文化",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800",
   },
   {
     id: "feature-fukuoka-lunch-cospa",
@@ -11534,7 +11534,7 @@ export const FEATURES: Feature[] = [
     kicker: "FUKUOKA LUNCH",
     title: "福岡ランチのコスパ最強店5選",
     sub: "博多のランチはなぜこんなに安くて美味いのか",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800",
   },
   {
     id: "feature-yokohama-lunch",
@@ -11543,7 +11543,7 @@ export const FEATURES: Feature[] = [
     kicker: "YOKOHAMA LUNCH",
     title: "横浜の中華街以外で食べるランチ5選",
     sub: "知られざる横浜グルメの底力",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800",
   },
   {
     id: "feature-saitama-omiya-lunch",
@@ -11552,7 +11552,7 @@ export const FEATURES: Feature[] = [
     kicker: "OMIYA LUNCH",
     title: "埼玉・大宮周辺のランチ名店5選",
     sub: "首都圏のベッドタウンが誇る食の実力",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/317089/640x640_rect_e3bcbad31fd00d3b3060fed87fe424d9.jpg?w=800",
   },
   {
     id: "feature-sapporo-lunch",
@@ -11561,7 +11561,7 @@ export const FEATURES: Feature[] = [
     kicker: "SAPPORO LUNCH",
     title: "北海道・札幌のランチおすすめ5選",
     sub: "食材王国・北海道の実力をランチで体感",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/63515/640x640_rect_63515505.jpg?w=800",
   },
   {
     id: "feature-nara-lunch",
@@ -11570,7 +11570,7 @@ export const FEATURES: Feature[] = [
     kicker: "NARA LUNCH",
     title: "奈良観光のついでに寄りたいランチ4選",
     sub: "鹿と古都の間で出会う、奈良の食",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/336634/640x640_rect_2a8d46775bb41b5ed9f41823c705cb5c.jpg?w=800",
   },
   {
     id: "feature-himeji-lunch",
@@ -11579,7 +11579,7 @@ export const FEATURES: Feature[] = [
     kicker: "HIMEJI LUNCH",
     title: "姫路城周辺のランチ4選",
     sub: "白鷺城の麓で出会う、播磨の食",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/282143/30943084e2f6d1a45a43a86870e964a3.jpg?w=800",
   },
   {
     id: "feature-gunma-local-gourmet",
@@ -11588,7 +11588,7 @@ export const FEATURES: Feature[] = [
     kicker: "GUNMA GOURMET",
     title: "群馬のローカルグルメ5選",
     sub: "上州の食文化、知られざる魅力",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/295047/640x640_rect_9e675d609df9a8b59d14f5a74d99aac6.jpg?w=800",
   },
   {
     id: "feature-kagoshima-local",
@@ -11597,7 +11597,7 @@ export const FEATURES: Feature[] = [
     kicker: "KAGOSHIMA GOURMET",
     title: "鹿児島の名物料理が食べられる店5選",
     sub: "薩摩の食文化を堪能する",
-    image: "/restaurants/r240/r240-01.png",
+    image: "https://tblg.k-img.com/restaurant/images/Rvw/303138/640x640_rect_194ca71fc29e1ffe2fef3000a90f2f29.jpg?w=800",
   },
 
   {
