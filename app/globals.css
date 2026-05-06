@@ -301,22 +301,32 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 }
 
 
-.filter-bar{display:grid; grid-template-columns:1fr 1.5fr auto; gap:32px; padding:28px 32px; background:#f4efe3; border:1px solid var(--line); margin-bottom:48px; align-items:start}
+/* --- filter bar ------------------------------------------------- */
+.filter-bar{display:flex; flex-direction:column; background:#f4efe3; border:1px solid var(--line); margin-bottom:48px; overflow:hidden}
+.filter-bar-top{display:flex; justify-content:space-between; align-items:start; gap:32px; padding:28px 32px}
 .filter-group .filter-label{font:500 10px/1 var(--mono); letter-spacing:.25em; color:var(--ink-soft); margin-bottom:14px}
 .filter-group .chips{display:flex; flex-wrap:wrap; gap:6px}
-.chip{appearance:none; border:1px solid var(--line); background:transparent; color:var(--ink); padding:7px 13px; font:500 12px/1 var(--body); letter-spacing:.03em; cursor:none; transition:all .25s; border-radius:999px}
+/* region chips */
+.chip{appearance:none; border:1px solid var(--line); background:transparent; color:var(--ink); padding:8px 15px; font:500 12px/1 var(--body); letter-spacing:.03em; cursor:none; transition:all .25s; border-radius:999px}
 .chip:hover{border-color:var(--ink); background:rgba(20,17,13,.06)}
 .chip.on{background:var(--ink); color:#f4efe3; border-color:var(--ink)}
-/* 業種チップはコンパクトに */
-.cuisine-chips .chip{padding:6px 11px; font-size:11.5px}
-.filter-meta{text-align:right; padding-left:24px; border-left:1px solid var(--line); min-width:180px}
+/* meta */
+.filter-meta{text-align:right; padding-left:24px; border-left:1px solid var(--line); min-width:160px; flex-shrink:0}
 .filter-meta .fm-count{font:600 34px/1 var(--serif); color:var(--ink)}
 .filter-meta .fm-count em{font-style:italic; color:var(--accent); font-size:48px}
 .filter-meta .fm-tag{font:italic 400 13px/1.4 var(--serif); color:var(--ink-soft); margin-top:8px}
+/* cuisine tab row */
+.filter-cuisine{border-top:1px solid var(--line); padding:0 24px}
+.filter-cuisine .filter-label{font:500 10px/1 var(--mono); letter-spacing:.25em; color:var(--ink-soft); padding:16px 8px 0}
+.cuisine-scroll{display:flex; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none; gap:0}
+.cuisine-scroll::-webkit-scrollbar{display:none}
+.cz-tab{flex-shrink:0; padding:13px 18px; font:500 13px/1 var(--body); background:none; border:0; border-bottom:2px solid transparent; color:var(--ink-soft); transition:color .2s, border-color .2s; letter-spacing:.02em; cursor:none}
+.cz-tab:hover{color:var(--ink)}
+.cz-tab.on{color:var(--accent); border-bottom-color:var(--accent); font-weight:600}
 .no-results{grid-column:span 12; padding:80px 40px; text-align:center; font:italic 400 18px/1.6 var(--serif); color:var(--ink-soft); border:1px dashed var(--line)}
 @media (max-width:900px){
-  .filter-bar{grid-template-columns:1fr; gap:20px}
-  .filter-meta{text-align:left; padding-left:0; border-left:0; border-top:1px solid var(--line); padding-top:16px}
+  .filter-bar-top{flex-direction:column; gap:20px}
+  .filter-meta{text-align:left; padding-left:0; border-left:0; border-top:1px solid var(--line); padding-top:16px; min-width:0}
 }
 
 
