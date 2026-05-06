@@ -6,7 +6,7 @@ import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 import RestaurantCard from "./RestaurantCard";
 
 type RegionFilter = RegionKey | "ALL";
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 8;
 
 export default function RestaurantGrid() {
   const [region, setRegion] = useState<RegionFilter>("ALL");
@@ -99,7 +99,7 @@ export default function RestaurantGrid() {
           </div>
         </div>
 
-        <div className="rest-grid">
+        <div className="rest-grid rest-grid--compact">
           {filtered.slice(0, visible).map((r) => (
             <RestaurantCard key={r.id} r={r} />
           ))}
