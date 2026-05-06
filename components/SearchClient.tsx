@@ -6,6 +6,24 @@ import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 
+// 業種カテゴリー（部分一致でフィルタリング）
+const CUISINE_GROUPS = [
+  { label: "居酒屋",             keywords: ["居酒屋"] },
+  { label: "焼き鳥・炭火焼き",   keywords: ["焼き鳥", "焼鳥", "炭火焼"] },
+  { label: "焼肉・ホルモン",     keywords: ["焼肉", "ホルモン"] },
+  { label: "和食・割烹",         keywords: ["和食", "割烹", "日本料理"] },
+  { label: "寿司・海鮮",         keywords: ["寿司", "鮨", "海鮮"] },
+  { label: "ラーメン",           keywords: ["ラーメン", "担々麺", "担担麺", "まぜそば"] },
+  { label: "そば・うどん",       keywords: ["そば", "うどん"] },
+  { label: "中華料理",           keywords: ["中華", "中国料理", "餃子"] },
+  { label: "イタリアン・パスタ", keywords: ["イタリアン", "パスタ", "ピッツァ", "ピザ"] },
+  { label: "フレンチ・ビストロ", keywords: ["フレンチ", "ビストロ"] },
+  { label: "カフェ・喫茶",       keywords: ["カフェ", "喫茶", "コーヒー", "珈琲"] },
+  { label: "定食・食堂・洋食",   keywords: ["定食", "食堂", "洋食"] },
+  { label: "お好み焼き",         keywords: ["お好み焼き", "鉄板焼き"] },
+  { label: "バー・バル",         keywords: ["バー", "バル"] },
+] as const;
+
 export default function SearchClient() {
   const router = useRouter();
   const sp = useSearchParams();
@@ -22,10 +40,7 @@ export default function SearchClient() {
     setTag(sp.get("tag") || "");
   }, [sp]);
 
-  const cuisines = useMemo(
-    () => ["ALL", ...new Set(RESTAURANTS.map((r) => r.cuisine))],
-    []
-  );
+  // cuisines は CUISINE_GROUPS に統合済み
 
   // Aggregate all unique tags for the cloud
   const allTags = useMemo(() => {
@@ -40,7 +55,13 @@ export default function SearchClient() {
     const needle = q.trim().toLowerCase();
     return RESTAURANTS.filter((r) => {
       if (region && r.region !== region) return false;
-      if (cuisine !== "ALL" && r.cuisine !== cuisine) return false;
+      if (cuisine !== "ALL") {
+        const group = CUISINE_GROUPS.find((g) => g.label === cuisine);
+        if (group) {
+          const matched = group.keywords.some((kw) => r.cuisine.includes(kw));
+          if (!matched) return false;
+        }
+      }
       if (tag && !(r.tags || []).includes(tag)) return false;
       if (needle) {
         const hay = (
@@ -136,9 +157,10 @@ export default function SearchClient() {
                 value={cuisine}
                 onChange={(e) => setCuisine(e.target.value)}
               >
-                {cuisines.map((c) => (
-                  <option key={c} value={c}>
-                    {c === "ALL" ? "すべての業種" : c}
+                <option value="ALL">すべての業種</option>
+                {CUISINE_GROUPS.map((g) => (
+                  <option key={g.label} value={g.label}>
+                    {g.label}
                   </option>
                 ))}
               </select>
