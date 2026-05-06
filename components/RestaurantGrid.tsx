@@ -36,10 +36,7 @@ export default function RestaurantGrid() {
               今週の、<em>名店</em>
             </span>
           </h2>
-          <div
-            className="lede"
-            style={{ color: "rgba(244,239,227,.7)" }}
-          >
+          <div className="lede">
             地域と業種を選んで、お店を絞り込めます。
           </div>
         </div>
