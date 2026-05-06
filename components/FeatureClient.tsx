@@ -70,6 +70,58 @@ function FeatureHero({ article }: { article: FeatureArticle }) {
 }
 
 function RankingList({ article }: { article: FeatureArticle }) {
+  const isCourse = article.articleType === "course";
+
+  if (isCourse) {
+    return (
+      <div className="course-timeline">
+        {article.ranking.map((r, i) => (
+          <div key={i} className="course-stop-wrap">
+            <article className="course-stop reveal">
+              <div className="course-stop-label">
+                <span className="course-stop-no">{r.rank}</span>
+                {r.time && <span className="course-badge course-badge-time">{r.time}</span>}
+                {r.purpose && <span className="course-badge course-badge-purpose">{r.purpose}</span>}
+              </div>
+              <div className="info">
+                <div className="cuisine">
+                  {r.cuisine} · {r.area}
+                </div>
+                <h3>{r.name}</h3>
+                <p className="desc">{r.desc}</p>
+                <div className="specs">
+                  {r.specs.map((s, j) => (
+                    <div key={j}>
+                      <b>{s.k}</b>
+                      {s.v}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="imgs">
+                {r.images.map((im, j) => (
+                  <div
+                    key={j}
+                    className="im"
+                    style={{ backgroundImage: `url(${im})` }}
+                    data-cursor="ZOOM"
+                  />
+                ))}
+              </div>
+            </article>
+            {r.transit && (
+              <div className="course-transit">
+                <span className="course-transit-line" />
+                <span className="course-transit-text">↓ {r.transit}</span>
+                <span className="course-transit-line" />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="ranking">
       {article.ranking.map((r, i) => (

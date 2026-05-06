@@ -1302,3 +1302,26 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
   .scene-section-card{border-right:none}
   .scene-section-card:hover{padding-left:24px}
 }
+
+/* ─── course timeline ─────────────────────────────────────────── */
+.course-timeline{display:flex; flex-direction:column; gap:0}
+.course-stop-wrap{display:flex; flex-direction:column}
+.course-stop{display:grid; grid-template-columns:180px 1.2fr 1fr; gap:40px; padding:36px 0; border-top:1px solid var(--line); position:relative}
+.course-stop-label{display:flex; flex-direction:column; gap:12px; align-items:flex-start; padding-top:4px}
+.course-stop-no{font:600 clamp(36px,5vw,72px)/0.9 var(--mono); letter-spacing:.08em; color:var(--accent)}
+.course-badge{display:inline-block; padding:4px 10px; border-radius:2px; font:500 10px/1.4 var(--mono); letter-spacing:.2em; text-transform:uppercase; white-space:nowrap}
+.course-badge-time{background:var(--accent); color:#fff}
+.course-badge-purpose{background:transparent; border:1px solid var(--line); color:var(--ink-soft)}
+.course-transit{display:flex; align-items:center; gap:16px; padding:16px 0 16px 180px; color:var(--ink-soft)}
+.course-transit-line{flex:1; height:1px; background:var(--line)}
+.course-transit-text{font:500 11px/1 var(--mono); letter-spacing:.25em; white-space:nowrap; color:var(--ink-soft)}
+@media (max-width: 1024px){
+  .course-stop{grid-template-columns:1fr; gap:16px; padding:24px 0}
+  .course-stop-no{font-size:48px}
+  .course-transit{padding-left:0}
+}
+@media (max-width: 600px){
+  .course-stop-no{font-size:36px}
+  .course-transit{gap:10px}
+  .course-transit-text{font-size:10px}
+}
