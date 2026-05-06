@@ -40,54 +40,44 @@ export default function RestaurantGrid() {
           </div>
         </div>
 
-        <div className="filter-bar">
-          <div className="filter-bar-top">
-            <div className="filter-group">
-              <div className="filter-label">◎ 地域</div>
-              <div className="chips">
+        <div className="fs">
+          {/* 地域行 */}
+          <div className="fs-row">
+            <span className="fs-lbl">地域</span>
+            <div className="fs-chips">
+              <button
+                type="button"
+                className={"fs-chip " + (region === "ALL" ? "on" : "")}
+                onClick={() => { setRegion("ALL"); setCuisine("ALL"); }}
+                data-cursor="PICK"
+              >
+                全国
+              </button>
+              {Object.entries(REGIONS).map(([k, r]) => (
                 <button
+                  key={k}
                   type="button"
-                  className={"chip " + (region === "ALL" ? "on" : "")}
-                  onClick={() => {
-                    setRegion("ALL");
-                    setCuisine("ALL");
-                  }}
+                  className={"fs-chip " + (k === region ? "on" : "")}
+                  onClick={() => { setRegion(k as RegionKey); setCuisine("ALL"); }}
                   data-cursor="PICK"
                 >
-                  全国
+                  {r.name}
                 </button>
-                {Object.entries(REGIONS).map(([k, r]) => (
-                  <button
-                    key={k}
-                    type="button"
-                    className={"chip " + (k === region ? "on" : "")}
-                    onClick={() => {
-                      setRegion(k as RegionKey);
-                      setCuisine("ALL");
-                    }}
-                    data-cursor="PICK"
-                  >
-                    {r.name}
-                  </button>
-                ))}
-              </div>
+              ))}
             </div>
-            <div className="filter-meta">
-              <div className="fm-count">
-                <em>{filtered.length}</em> / {regional.length} 店
-              </div>
-              <div className="fm-tag">
-                {regionLabel} · {cuisine === "ALL" ? "全業種" : cuisine}
-              </div>
+            <div className="fs-count">
+              <em>{filtered.length}</em>
+              <span>/ {regional.length} 店</span>
             </div>
           </div>
 
-          <div className="filter-cuisine">
-            <div className="filter-label">◎ 業種</div>
-            <div className="cuisine-scroll">
+          {/* 業種行 */}
+          <div className="fs-row">
+            <span className="fs-lbl">業種</span>
+            <div className="fs-tiles">
               <button
                 type="button"
-                className={"cz-tab " + (cuisine === "ALL" ? "on" : "")}
+                className={"fs-tile " + (cuisine === "ALL" ? "on" : "")}
                 onClick={() => setCuisine("ALL")}
                 data-cursor="PICK"
               >
@@ -97,7 +87,7 @@ export default function RestaurantGrid() {
                 <button
                   key={g.label}
                   type="button"
-                  className={"cz-tab " + (g.label === cuisine ? "on" : "")}
+                  className={"fs-tile " + (g.label === cuisine ? "on" : "")}
                   onClick={() => setCuisine(g.label)}
                   data-cursor="PICK"
                 >
