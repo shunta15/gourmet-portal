@@ -301,32 +301,32 @@ body.no-cursor, body.no-cursor *{cursor:auto !important}
 }
 
 
-/* --- filter section -------------------------------------------- */
-.fs{margin-bottom:48px}
-.fs-row{display:flex; align-items:center; gap:20px; padding:18px 0; border-top:1px solid var(--line)}
-.fs-row:last-child{border-bottom:1px solid var(--line)}
-.fs-lbl{font:500 10px/1 var(--mono); letter-spacing:.28em; color:var(--ink-soft); width:28px; flex-shrink:0}
+/* --- filter section (dark theme: inside .restaurants) ----------- */
+.fs{margin-bottom:48px; --fs-fg:#f4efe3; --fs-fg-soft:rgba(244,239,227,.6); --fs-line:rgba(244,239,227,.18); --fs-hover:rgba(244,239,227,.08)}
+.fs-row{display:flex; align-items:center; gap:20px; padding:18px 0; border-top:1px solid var(--fs-line)}
+.fs-row:last-child{border-bottom:1px solid var(--fs-line)}
+.fs-lbl{font:500 10px/1 var(--mono); letter-spacing:.28em; color:var(--fs-fg-soft); width:28px; flex-shrink:0}
 /* region chips */
 .fs-chips{display:flex; flex-wrap:wrap; gap:6px; flex:1}
-.fs-chip{appearance:none; background:transparent; border:1px solid var(--line); color:var(--ink); padding:7px 14px; font:500 12px/1 var(--body); letter-spacing:.03em; border-radius:999px; cursor:none; transition:all .22s}
-.fs-chip:hover{border-color:var(--ink); background:rgba(20,17,13,.05)}
-.fs-chip.on{background:var(--ink); color:#f4efe3; border-color:var(--ink)}
+.fs-chip{appearance:none; background:transparent; border:1px solid var(--fs-line); color:var(--fs-fg); padding:7px 14px; font:500 12px/1 var(--body); letter-spacing:.03em; border-radius:999px; cursor:none; transition:all .22s}
+.fs-chip:hover{border-color:var(--fs-fg); background:var(--fs-hover)}
+.fs-chip.on{background:var(--fs-fg); color:var(--ink); border-color:var(--fs-fg)}
 /* count */
 .fs-count{margin-left:auto; text-align:right; flex-shrink:0; line-height:1}
 .fs-count em{font:600 42px/1 var(--serif); font-style:italic; color:var(--accent)}
-.fs-count span{display:block; font:500 11px/1 var(--mono); color:var(--ink-soft); margin-top:6px; letter-spacing:.15em}
+.fs-count span{display:block; font:500 11px/1 var(--mono); color:var(--fs-fg-soft); margin-top:6px; letter-spacing:.15em}
 /* cuisine tiles */
 .fs-tiles{display:flex; flex-wrap:wrap; gap:6px; flex:1}
-.fs-tile{appearance:none; background:transparent; border:1px solid var(--line); color:var(--ink-soft); padding:9px 16px; font:500 13px/1 var(--body); letter-spacing:.02em; border-radius:2px; cursor:none; transition:all .2s}
-.fs-tile:hover{border-color:var(--ink); color:var(--ink); background:rgba(20,17,13,.03)}
+.fs-tile{appearance:none; background:transparent; border:1px solid var(--fs-line); color:var(--fs-fg-soft); padding:9px 16px; font:500 13px/1 var(--body); letter-spacing:.02em; border-radius:2px; cursor:none; transition:all .2s}
+.fs-tile:hover{border-color:var(--fs-fg); color:var(--fs-fg); background:var(--fs-hover)}
 .fs-tile.on{background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600}
 .no-results{grid-column:span 12; padding:80px 40px; text-align:center; font:italic 400 18px/1.6 var(--serif); color:var(--ink-soft); border:1px dashed var(--line)}
-/* more bar */
-.more-bar{display:flex; align-items:center; justify-content:center; gap:32px; margin-top:48px; padding-top:32px; border-top:1px solid var(--line); flex-wrap:wrap}
-.more-btn{appearance:none; background:var(--ink); color:#f4efe3; border:0; padding:18px 40px; font:500 13px/1.4 var(--body); letter-spacing:.08em; cursor:none; transition:background .2s; display:flex; flex-direction:column; align-items:center; gap:6px}
-.more-btn:hover{background:var(--accent)}
+/* more bar (dark theme: inside .restaurants) */
+.more-bar{display:flex; align-items:center; justify-content:center; gap:32px; margin-top:48px; padding-top:32px; border-top:1px solid rgba(244,239,227,.18); flex-wrap:wrap}
+.more-btn{appearance:none; background:#f4efe3; color:var(--ink); border:0; padding:18px 40px; font:500 13px/1.4 var(--body); letter-spacing:.08em; cursor:none; transition:background .2s, color .2s; display:flex; flex-direction:column; align-items:center; gap:6px}
+.more-btn:hover{background:var(--accent); color:#fff}
 .more-btn span{font:500 10px/1 var(--mono); letter-spacing:.2em; opacity:.65}
-.more-link{font:500 12px/1 var(--mono); letter-spacing:.2em; color:var(--ink-soft); border-bottom:1px solid var(--line); padding-bottom:4px; transition:color .2s, border-color .2s}
+.more-link{font:500 12px/1 var(--mono); letter-spacing:.2em; color:rgba(244,239,227,.7); border-bottom:1px solid rgba(244,239,227,.25); padding-bottom:4px; transition:color .2s, border-color .2s}
 .more-link:hover{color:var(--accent); border-bottom-color:var(--accent)}
 @media (max-width:900px){
   .fs-row{flex-wrap:wrap}
