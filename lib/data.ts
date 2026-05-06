@@ -131,10 +131,10 @@ export const NATIONAL = {
   subtitle:
     "全国の飲食店を、エリア・業種・特集で巡れる食のポータル。食べたい気分から、お店が見つかります。",
   heroImages: [
-    "https://images.unsplash.com/photo-1554797589-7241bb691973?w=1600&q=80",
-    "https://images.unsplash.com/photo-1752135534175-44aa59a1bb50?w=1600&q=80",
-    "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80",
-    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80",
+    "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1600&q=80",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80",
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80",
+    "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1600&q=80",
   ],
 };
 

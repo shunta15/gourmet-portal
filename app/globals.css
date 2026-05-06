@@ -85,6 +85,7 @@ img{display:block; max-width:100%}
   position:absolute; inset:0;
   opacity:0; transition:opacity 1.2s ease; transform:scale(1.06);
   will-change:opacity;
+  filter:brightness(1.25) contrast(1.02) saturate(1.08);
 }
 .hero-media .img-wrap.active{opacity:1}
 .hero-media::after{
