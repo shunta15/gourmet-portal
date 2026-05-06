@@ -90,7 +90,7 @@ export default function RestaurantGrid() {
                   onClick={() => setCuisine(g.label)}
                   data-cursor="PICK"
                 >
-                  <span className="chip-icon">{g.icon}</span>{g.label}
+                  {g.label}
                 </button>
               ))}
             </div>

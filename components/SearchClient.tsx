@@ -143,7 +143,7 @@ export default function SearchClient() {
                 <option value="ALL">すべての業種</option>
                 {CUISINE_GROUPS.map((g) => (
                   <option key={g.label} value={g.label}>
-                    {g.icon} {g.label}
+                    {g.label}
                   </option>
                 ))}
               </select>
