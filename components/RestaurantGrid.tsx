@@ -1,14 +1,18 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 import RestaurantCard from "./RestaurantCard";
 
 type RegionFilter = RegionKey | "ALL";
+const PAGE_SIZE = 12;
 
 export default function RestaurantGrid() {
   const [region, setRegion] = useState<RegionFilter>("ALL");
   const [cuisine, setCuisine] = useState("ALL");
+  const [visible, setVisible] = useState(PAGE_SIZE);
+  const resetVisible = () => setVisible(PAGE_SIZE);
   const regional =
     region === "ALL"
       ? RESTAURANTS
@@ -48,7 +52,7 @@ export default function RestaurantGrid() {
               <button
                 type="button"
                 className={"fs-chip " + (region === "ALL" ? "on" : "")}
-                onClick={() => { setRegion("ALL"); setCuisine("ALL"); }}
+                onClick={() => { setRegion("ALL"); setCuisine("ALL"); resetVisible(); }}
                 data-cursor="PICK"
               >
                 全国
@@ -58,7 +62,7 @@ export default function RestaurantGrid() {
                   key={k}
                   type="button"
                   className={"fs-chip " + (k === region ? "on" : "")}
-                  onClick={() => { setRegion(k as RegionKey); setCuisine("ALL"); }}
+                  onClick={() => { setRegion(k as RegionKey); setCuisine("ALL"); resetVisible(); }}
                   data-cursor="PICK"
                 >
                   {r.name}
@@ -78,7 +82,7 @@ export default function RestaurantGrid() {
               <button
                 type="button"
                 className={"fs-tile " + (cuisine === "ALL" ? "on" : "")}
-                onClick={() => setCuisine("ALL")}
+                onClick={() => { setCuisine("ALL"); resetVisible(); }}
                 data-cursor="PICK"
               >
                 すべて
@@ -88,7 +92,7 @@ export default function RestaurantGrid() {
                   key={g.label}
                   type="button"
                   className={"fs-tile " + (g.label === cuisine ? "on" : "")}
-                  onClick={() => setCuisine(g.label)}
+                  onClick={() => { setCuisine(g.label); resetVisible(); }}
                   data-cursor="PICK"
                 >
                   {g.label}
@@ -99,7 +103,7 @@ export default function RestaurantGrid() {
         </div>
 
         <div className="rest-grid">
-          {filtered.map((r) => (
+          {filtered.slice(0, visible).map((r) => (
             <RestaurantCard key={r.id} r={r} />
           ))}
           {filtered.length === 0 && (
@@ -108,6 +112,23 @@ export default function RestaurantGrid() {
             </div>
           )}
         </div>
+
+        {filtered.length > visible && (
+          <div className="more-bar">
+            <button
+              type="button"
+              className="more-btn"
+              onClick={() => setVisible((v) => v + PAGE_SIZE)}
+              data-cursor="MORE"
+            >
+              さらに読み込む
+              <span>残り {filtered.length - visible} 店</span>
+            </button>
+            <Link href="/search" className="more-link" data-cursor="SEARCH">
+              絞り込んで探す →
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
