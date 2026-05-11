@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/agent-teams/"],
       },
     ],
-    sitemap: "https://gourmet-portal.vercel.app/sitemap.xml",
+    sitemap: "https://machinowa.tokyo/sitemap.xml",
   };
 }

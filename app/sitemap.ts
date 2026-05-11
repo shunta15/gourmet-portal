@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { RESTAURANTS, REGIONS, FEATURES } from "@/lib/data";
 import { SCENES } from "@/lib/scenes";
 
-const BASE = "https://gourmet-portal.vercel.app";
+const BASE = "https://machinowa.tokyo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
