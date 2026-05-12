@@ -7,7 +7,7 @@ import SideLabel from "@/components/SideLabel";
 import { buildOrganizationJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gourmet-portal.vercel.app"),
+  metadataBase: new URL("https://machinowa.tokyo"),
   title: "マチノワ / 街の輪 — 全国飲食店ポータル",
   description:
     "全国47都道府県の飲食店を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。",

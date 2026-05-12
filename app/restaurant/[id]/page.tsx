@@ -6,7 +6,7 @@ import {
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
 
-const BASE = "https://gourmet-portal.vercel.app";
+const BASE = "https://machinowa.tokyo";
 
 export function generateStaticParams() {
   return RESTAURANTS.map((r) => ({ id: r.id }));

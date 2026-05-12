@@ -3,7 +3,7 @@ import SceneHub from "@/components/SceneHub";
 import { SCENES, getSceneBySlug } from "@/lib/scenes";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonld";
 
-const BASE = "https://gourmet-portal.vercel.app";
+const BASE = "https://machinowa.tokyo";
 
 export function generateStaticParams() {
   return SCENES.map((s) => ({ slug: s.slug }));

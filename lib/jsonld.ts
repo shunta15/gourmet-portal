@@ -1,6 +1,6 @@
 import { REGIONS, type Restaurant, type FeatureArticle } from "./data";
 
-const BASE = "https://gourmet-portal.vercel.app";
+const BASE = "https://machinowa.tokyo";
 
 /* 営業時間文字列を OpeningHoursSpecification の配列に変換 */
 function parseOpeningHours(

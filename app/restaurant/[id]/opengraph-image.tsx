@@ -5,7 +5,7 @@ export const alt = "マチノワ 店舗紹介";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const BASE = "https://gourmet-portal.vercel.app";
+const BASE = "https://machinowa.tokyo";
 
 async function loadImageDataUrl(src: string): Promise<string | null> {
   try {
