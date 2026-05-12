@@ -97,6 +97,21 @@ function RankingList({ article }: { article: FeatureArticle }) {
                     </div>
                   ))}
                 </div>
+                {r.href && (
+                  <Link
+                    href={r.href}
+                    className="chip"
+                    style={{
+                      display: "inline-flex",
+                      marginTop: 18,
+                      padding: "12px 18px",
+                      borderRadius: 0,
+                    }}
+                    data-cursor="VIEW"
+                  >
+                    店舗詳細を見る →
+                  </Link>
+                )}
               </div>
               <div className="imgs">
                 {r.images.map((im, j) => (
@@ -143,6 +158,21 @@ function RankingList({ article }: { article: FeatureArticle }) {
                 </div>
               ))}
             </div>
+            {r.href && (
+              <Link
+                href={r.href}
+                className="chip"
+                style={{
+                  display: "inline-flex",
+                  marginTop: 18,
+                  padding: "12px 18px",
+                  borderRadius: 0,
+                }}
+                data-cursor="VIEW"
+              >
+                店舗詳細を見る →
+              </Link>
+            )}
           </div>
           <div className="imgs">
             {r.images.map((im, j) => (
@@ -179,6 +209,8 @@ function FeatureTabs({ activeId }: { activeId: string }) {
 }
 
 function SideArticles({ article }: { article: FeatureArticle }) {
+  const isGuide = article.articleType === "guide";
+
   return (
     <div className="side-article">
       <div>
@@ -193,21 +225,21 @@ function SideArticles({ article }: { article: FeatureArticle }) {
           関連記事
         </div>
         <h3>
-          焼肉だけで、<em>終わらない夜。</em>
+          次に読む、<em>{isGuide ? "街ガイド" : "利用シーン"}。</em>
         </h3>
       </div>
       <div className="side-grid">
         {article.sideArticles.map((s, i) => (
-          <a key={i} className="side-card" data-cursor="READ">
+          <Link key={i} href={s.h} className="side-card" data-cursor="READ">
             <div
               className="img"
               style={{ backgroundImage: `url(${s.img})` }}
             />
             <div className="info">
               <div className="t">{s.t}</div>
-              <h4>{s.h}</h4>
+              <h4>記事を読む →</h4>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
@@ -217,6 +249,11 @@ function SideArticles({ article }: { article: FeatureArticle }) {
 export default function FeatureClient({ article }: { article: FeatureArticle }) {
   useReveal();
   const A = article;
+  const isGuide = A.articleType === "guide";
+  const introText = isGuide
+    ? `順位ではなく、編集部が選んだ${A.ranking.length}スポットを順にご紹介します。`
+    : `順位ではなく、編集部が選んだ${A.ranking.length}軒の名店を順にご紹介します。`;
+
   return (
     <div className="feat-page">
       <FeatureHero article={A} />
@@ -244,7 +281,8 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
                 {A.subtitle.split(" / ")[0]}<em>。</em>
               </h2>
               <p className="sub">
-                順位ではなく、編集部が選んだ{A.ranking.length}軒の名店を順にご紹介します。{A.lede}
+                {introText}
+                {A.lede}
               </p>
             </div>
           </div>
@@ -265,7 +303,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
             </div>
             <div>
               <h2>
-                炎は、<em>記憶になる。</em>
+                最後に、<em>{isGuide ? "歩き方" : "選び方"}。</em>
               </h2>
               <p className="sub">{A.closing}</p>
             </div>

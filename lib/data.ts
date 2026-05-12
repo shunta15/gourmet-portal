@@ -1,3 +1,8 @@
+import {
+  CURATED_FEATURE_ARTICLES,
+  CURATED_FEATURES,
+} from "./curatedFeatures";
+
 export type Stat = { n: string; l: string };
 
 export type RegionKey =
@@ -84,6 +89,7 @@ export type RankItem = {
   desc: string;
   images: string[];
   specs: { k: string; v: string }[];
+  href?: string;
   time?: string;
   purpose?: string;
   transit?: string;
@@ -106,7 +112,7 @@ export type FeatureArticle = {
   quote: string;
   quoteCite: string;
   closing: string;
-  articleType?: "ranking" | "course";
+  articleType?: "ranking" | "course" | "guide";
 };
 
 export type ShortVideo = {
@@ -121,6 +127,7 @@ export type ShortVideo = {
   comments: string;
   saves: string;
   videoUrl?: string;
+  url?: string;
 };
 
 export const NATIONAL = {
@@ -10158,7 +10165,7 @@ export const RESTAURANTS: Restaurant[] = [
 
 export const NEIGHBORHOODS: Neighborhood[] = [];
 
-export const FEATURES: Feature[] = [
+const GENERATED_FEATURES: Feature[] = [
   {
     id: "feature-hiroshima-meiten",
     no: "01",
@@ -11782,7 +11789,12 @@ export const FEATURES: Feature[] = [
   },
 ];
 
-export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
+export const FEATURES: Feature[] = [
+  ...CURATED_FEATURES,
+  ...GENERATED_FEATURES,
+];
+
+const GENERATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   "feature-hiroshima-meiten": {
     id: "feature-hiroshima-meiten",
     no: "01",
@@ -24759,7 +24771,83 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
 
 };
 
-export const SHORT_VIDEOS: ShortVideo[] = [];
+export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
+  ...CURATED_FEATURE_ARTICLES,
+  ...GENERATED_FEATURE_ARTICLES,
+};
+
+export const SHORT_VIDEOS: ShortVideo[] = [
+  {
+    id: "sv-nazatu-1",
+    restaurantId: "",
+    url: "/nazatu",
+    thumbnail: "/videos/nazatu/1-1_thumb.jpg",
+    title: "ナーザトゥ #1",
+    cuisineEmoji: "",
+    cuisineLabel: "エスニック",
+    duration: "0:30",
+    likes: "-",
+    comments: "-",
+    saves: "-",
+    videoUrl: "/videos/nazatu/1-1.mp4",
+  },
+  {
+    id: "sv-nazatu-2",
+    restaurantId: "",
+    url: "/nazatu",
+    thumbnail: "/videos/nazatu/1-2_thumb.jpg",
+    title: "ナーザトゥ #2",
+    cuisineEmoji: "",
+    cuisineLabel: "エスニック",
+    duration: "0:30",
+    likes: "-",
+    comments: "-",
+    saves: "-",
+    videoUrl: "/videos/nazatu/1-2.mp4",
+  },
+  {
+    id: "sv-nazatu-3",
+    restaurantId: "",
+    url: "/nazatu",
+    thumbnail: "/videos/nazatu/3-2_thumb.jpg",
+    title: "ナーザトゥ #3",
+    cuisineEmoji: "",
+    cuisineLabel: "エスニック",
+    duration: "0:30",
+    likes: "-",
+    comments: "-",
+    saves: "-",
+    videoUrl: "/videos/nazatu/3-2.mp4",
+  },
+  {
+    id: "sv-nazatu-review",
+    restaurantId: "",
+    url: "/nazatu",
+    thumbnail: "/videos/nazatu/review_thumb.jpg",
+    title: "さーらー感想",
+    cuisineEmoji: "",
+    cuisineLabel: "エスニック",
+    duration: "0:30",
+    likes: "-",
+    comments: "-",
+    saves: "-",
+    videoUrl: "/videos/nazatu/review.mp4",
+  },
+  {
+    id: "sv-nazatu-photo",
+    restaurantId: "",
+    url: "/nazatu",
+    thumbnail: "/videos/nazatu/photo_thumb.jpg",
+    title: "写真を撮る",
+    cuisineEmoji: "",
+    cuisineLabel: "エスニック",
+    duration: "0:30",
+    likes: "-",
+    comments: "-",
+    saves: "-",
+    videoUrl: "/videos/nazatu/photo.mp4",
+  },
+];
 
 /* ===================================================== */
 /* Computed stats (derived from real data)              */

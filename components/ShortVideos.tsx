@@ -45,10 +45,11 @@ export default function ShortVideos() {
         {SHORT_VIDEOS.length > 0 ? (
           SHORT_VIDEOS.map((v) => {
             const r = RESTAURANTS.find((x) => x.id === v.restaurantId);
+            const href = v.url ?? `/restaurant/${v.restaurantId}`;
             return (
               <Link
                 key={v.id}
-                href={`/restaurant/${v.restaurantId}`}
+                href={href}
                 className="short-card"
                 data-cursor="WATCH"
               >
