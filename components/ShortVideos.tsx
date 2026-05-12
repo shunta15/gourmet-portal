@@ -65,24 +65,6 @@ export default function ShortVideos() {
                     />
                   </svg>
                 </div>
-                <div className="cuisine-tag">
-                  <span className="emoji">{v.cuisineEmoji}</span>
-                  {v.cuisineLabel}
-                </div>
-                <div className="duration">{v.duration}</div>
-                <div className="overlay">
-                  <div className="title">{v.title}</div>
-                  {r && (
-                    <div className="store">
-                      {r.name} <span className="dot">·</span> {r.area}
-                    </div>
-                  )}
-                  <div className="stats">
-                    <span>♥ {v.likes}</span>
-                    <span>💬 {v.comments}</span>
-                    <span>🔖 {v.saves}</span>
-                  </div>
-                </div>
               </Link>
             );
           })
