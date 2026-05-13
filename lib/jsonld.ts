@@ -91,15 +91,6 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
     };
   }
 
-  if (r.rating) {
-    jsonLd.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: r.rating,
-      bestRating: "5",
-      ratingCount: "1",
-    };
-  }
-
   return jsonLd;
 }
 
@@ -138,13 +129,14 @@ export function jsonLdScript(data: Record<string, unknown>) {
 
 export function buildArticleJsonLd(a: FeatureArticle): Record<string, unknown> {
   const url = `${BASE}/feature/${a.id}`;
+  const image = a.heroImage.startsWith("http") ? a.heroImage : `${BASE}${a.heroImage}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     "@id": url,
     headline: a.title,
     description: a.lede,
-    image: a.heroImage,
+    image,
     datePublished: a.date,
     dateModified: a.date,
     author: {
@@ -175,4 +167,27 @@ export function buildFeatureBreadcrumbJsonLd(
     { name: "特集記事", url: `${BASE}/feature` },
     { name: a.title, url: `${BASE}/feature/${a.id}` },
   ]);
+}
+
+export function buildFeatureItemListJsonLd(
+  a: FeatureArticle
+): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${BASE}/feature/${a.id}#itemlist`,
+    name: a.title,
+    itemListElement: a.ranking.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      description: item.desc,
+      image: item.images?.[0]?.startsWith("http")
+        ? item.images[0]
+        : item.images?.[0]
+          ? `${BASE}${item.images[0]}`
+          : undefined,
+      url: item.href ? `${BASE}${item.href}` : `${BASE}/feature/${a.id}#spot-${index + 1}`,
+    })),
+  };
 }

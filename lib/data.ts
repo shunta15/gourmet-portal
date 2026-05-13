@@ -2,6 +2,14 @@ import {
   CURATED_FEATURE_ARTICLES,
   CURATED_FEATURES,
 } from "./curatedFeatures";
+import {
+  CITY_GUIDE_FEATURE_ARTICLES,
+  CITY_GUIDE_FEATURES,
+} from "./cityGuideFeatures";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES,
+  NEW_GUIDE_FEATURES,
+} from "./newGuideFeatures";
 
 export type Stat = { n: string; l: string };
 
@@ -12248,9 +12256,12 @@ const GENERATED_FEATURES: Feature[] = [
 ];
 
 export const FEATURES: Feature[] = [
-  ...CURATED_FEATURES,
-  ...GENERATED_FEATURES,
+  ...NEW_GUIDE_FEATURES,
 ];
+
+export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
+
+export const FEATURE_INDEXABLE_IDS = new Set(FEATURES.map((f) => f.id));
 
 const GENERATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   "feature-hiroshima-meiten": {
@@ -25231,7 +25242,9 @@ const GENERATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
 
 export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...CURATED_FEATURE_ARTICLES,
+  ...CITY_GUIDE_FEATURE_ARTICLES,
   ...GENERATED_FEATURE_ARTICLES,
+  ...NEW_GUIDE_FEATURE_ARTICLES,
 };
 
 export const SHORT_VIDEOS: ShortVideo[] = [

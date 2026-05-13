@@ -1,0 +1,22 @@
+name: Check image URLs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "lib/data.ts"
+      - "public/restaurants/**"
+      - "scripts/check-image-urls.sh"
+  pull_request:
+    paths:
+      - "lib/data.ts"
+      - "public/restaurants/**"
+      - "scripts/check-image-urls.sh"
+
+jobs:
+  check-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run image URL/path check
+        run: bash scripts/check-image-urls.sh

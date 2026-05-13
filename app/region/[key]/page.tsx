@@ -19,10 +19,16 @@ export async function generateMetadata({
   return {
     title: `${r.name} — ミニポータル / マチノワ`,
     description: `${r.tagline}。${r.subtitle}`,
+    alternates: {
+      canonical: `/region/${key}`,
+    },
     openGraph: {
       title: `${r.name} — ${r.nameEn}`,
       description: r.subtitle,
+      url: `https://machinowa.tokyo/region/${key}`,
       images: [r.heroImages[0]],
+      type: "website",
+      locale: "ja_JP",
     },
   };
 }
