@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Cursor from "@/components/Cursor";
-import ProgressBar from "@/components/ProgressBar";
-import Nav from "@/components/Nav";
-import SideLabel from "@/components/SideLabel";
+import SiteShell from "@/components/SiteShell";
 import { buildOrganizationJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
@@ -46,11 +43,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Cursor />
-        <ProgressBar />
-        <Nav />
-        <SideLabel />
-        {children}
+        <SiteShell>
+          {children}
+        </SiteShell>
       </body>
     </html>
   );

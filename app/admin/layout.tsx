@@ -47,9 +47,17 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </Link>
           ))}
         </nav>
+        <a
+          href="https://machinowa.tokyo"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "block", margin: "0 20px 12px", padding: "8px 12px", background: "transparent", border: "1px solid #333", color: "#888", cursor: "pointer", fontSize: 13, borderRadius: 4, textDecoration: "none", textAlign: "center" }}
+        >
+          ↗ サイトを見る
+        </a>
         <button
           onClick={handleLogout}
-          style={{ margin: "0 20px 20px", padding: "8px 12px", background: "transparent", border: "1px solid #333", color: "#888", cursor: "pointer", fontSize: 13, borderRadius: 4 }}
+          style={{ margin: "0 20px 20px", padding: "8px 12px", background: "transparent", border: "1px solid #333", color: "#888", cursor: "pointer", fontSize: 13, borderRadius: 4, width: "calc(100% - 40px)" }}
         >
           ログアウト
         </button>
