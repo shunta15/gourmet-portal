@@ -18,7 +18,7 @@ export default function NazatuPage() {
     <main
       style={{
         minHeight: "100vh",
-        background: "#0a0a0a",
+        background: "#ffffff",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -28,7 +28,7 @@ export default function NazatuPage() {
     >
       <h1
         style={{
-          color: "#fff",
+          color: "#111",
           fontSize: "1.25rem",
           fontWeight: 700,
           letterSpacing: "0.05em",
@@ -60,7 +60,7 @@ export default function NazatuPage() {
           />
           <p
             style={{
-              color: "#aaa",
+              color: "#666",
               fontSize: "0.8rem",
               textAlign: "center",
             }}
