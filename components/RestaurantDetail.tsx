@@ -136,6 +136,20 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 {r.budget}
               </div>
             )}
+            {r.googleRating && (
+              <div>
+                <b>Google評価</b>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+                  <span style={{ color: "#f59e0b", fontSize: "1.1em" }}>★</span>
+                  {r.googleRating}
+                  {r.googleReviewCount && (
+                    <span style={{ fontSize: "0.8em", opacity: 0.6 }}>
+                      ({r.googleReviewCount.toLocaleString()}件)
+                    </span>
+                  )}
+                </span>
+              </div>
+            )}
             {r.rating && (
               <div>
                 <b>評価</b>
