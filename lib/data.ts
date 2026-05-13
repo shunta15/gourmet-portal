@@ -68,6 +68,8 @@ export type Restaurant = {
   body?: string[];
   highlights?: string[];
   tags?: string[];
+  googleRating?: number;
+  googleReviewCount?: number;
 };
 
 export type Neighborhood = {
@@ -377,6 +379,8 @@ const RES_GALLERY_FALLBACK = [
 export const RESTAURANTS: Restaurant[] = [
   {
     id: "r01",
+    googleRating: 4.2,
+    googleReviewCount: 173,
     name: "やきとり嶋家",
     cuisine: "焼鳥",
     area: "南麻布",
@@ -423,6 +427,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r02",
+    googleRating: 4.9,
+    googleReviewCount: 25,
     name: "キツネノアトチ",
     cuisine: "イタリアン / ワイン食堂",
     area: "六角橋",
@@ -477,6 +483,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r03",
+    googleRating: 4.6,
+    googleReviewCount: 84,
     name: "鶏居酒屋pao福",
     cuisine: "鶏居酒屋",
     area: "天神橋筋六丁目",
@@ -524,6 +532,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r04",
+    googleRating: 4.2,
+    googleReviewCount: 69,
     name: "お喜楽イタリア創作料理 Basta Basta",
     cuisine: "イタリアン",
     area: "南区・豊田本町",
@@ -579,6 +589,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r05",
+    googleRating: 4.6,
+    googleReviewCount: 17,
     name: "手羽だるま 緑橋店",
     cuisine: "居酒屋・手羽先",
     area: "城東区・緑橋",
@@ -634,6 +646,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r06",
+    googleRating: 4.5,
+    googleReviewCount: 924,
     name: "らーめん渡邉",
     cuisine: "ラーメン",
     area: "浅草",
@@ -685,6 +699,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r07",
+    googleRating: 4.5,
+    googleReviewCount: 226,
     name: "中国菜 たな華",
     cuisine: "中華料理・四川",
     area: "緑区・鳴海",
@@ -743,6 +759,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r08",
+    googleRating: 4.4,
+    googleReviewCount: 88,
     name: "やまみ",
     cuisine: "和食創作居酒屋",
     area: "千種区・池下",
@@ -796,6 +814,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r09",
+    googleRating: 4.7,
+    googleReviewCount: 77,
     name: "ももやき酒場 雄火屋",
     cuisine: "居酒屋・地鶏",
     area: "博多区・美野島",
@@ -855,6 +875,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r10",
+    googleRating: 4.1,
+    googleReviewCount: 115,
     name: "第三共進丸",
     cuisine: "日本料理・海鮮",
     area: "中央区・長浜",
@@ -898,6 +920,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r12",
+    googleRating: 4.0,
+    googleReviewCount: 264,
     name: "社交酒場イム",
     cuisine: "居酒屋・立ち飲み",
     area: "中区・栄/矢場町",
@@ -956,6 +980,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r13",
+    googleRating: 4.5,
+    googleReviewCount: 189,
     name: "KITEYA",
     cuisine: "洋食",
     area: "東区・徳川町",
@@ -1010,6 +1036,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r14",
+    googleRating: 4.8,
+    googleReviewCount: 162,
     name: "焼肉ホルモン 肉ぶくろ",
     cuisine: "焼肉・ホルモン",
     area: "東淀川区・上新庄",
@@ -1068,6 +1096,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r15",
+    googleRating: 4.2,
+    googleReviewCount: 81,
     name: "クラシック音楽喫茶・Bar あんさんぶる",
     cuisine: "クラシック音楽喫茶・Bar",
     area: "城東区・関目",
@@ -1119,6 +1149,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r16",
+    googleRating: 5.0,
+    googleReviewCount: 56,
     name: "ほたる珈房",
     cuisine: "カフェ・自家焙煎コーヒー",
     area: "緑区・津久井湖",
@@ -1170,6 +1202,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r17",
+    googleRating: 4.2,
+    googleReviewCount: 81,
     name: "白泉堂",
     cuisine: "昭和レトロ喫茶・駄菓子",
     area: "城東区・今福西",
@@ -1213,6 +1247,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r18",
+    googleRating: 4.7,
+    googleReviewCount: 24,
     name: "居酒屋 浅い月会い 大阪城北詰駅前店",
     cuisine: "居酒屋",
     area: "都島区・大阪城北詰",
@@ -1261,6 +1297,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r19",
+    googleRating: 4.7,
+    googleReviewCount: 6,
     name: "おばんざいと炭火焼 小次郎",
     cuisine: "居酒屋（おばんざい・炭火焼）",
     area: "福島区・野田阪神",
@@ -1309,6 +1347,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r20",
+    googleRating: 4.6,
+    googleReviewCount: 52,
     name: "アンナンブルー izumi168",
     cuisine: "ベトナム料理",
     area: "東区・泉",
@@ -1357,6 +1397,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r21",
+    googleRating: 4.8,
+    googleReviewCount: 37,
     name: "月と桜",
     cuisine: "居酒屋・小料理（和食）",
     area: "福島区・福島",
@@ -1401,6 +1443,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r22",
+    googleRating: 4.4,
+    googleReviewCount: 253,
     name: "Michikusa Coffee Brewers",
     cuisine: "カフェ・スペシャルティコーヒー",
     area: "博多区・博多駅前",
@@ -1447,6 +1491,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r23",
+    googleRating: 4.1,
+    googleReviewCount: 11,
     name: "上町珈琲",
     cuisine: "珈琲・紅茶専門店",
     area: "天王寺区・上本町",
@@ -1492,6 +1538,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r24",
+    googleRating: 4.7,
+    googleReviewCount: 163,
     name: "居酒屋天佑 せがれ",
     cuisine: "居酒屋（餃子・お造り・天ぷら）",
     area: "北区・天満／天神橋筋六丁目",
@@ -1537,6 +1585,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r25",
+    googleRating: 4.2,
+    googleReviewCount: 159,
     name: "居酒屋 和 NAGOSHI（なごし）",
     cuisine: "居酒屋（海鮮・和食）",
     area: "中央区・北浜",
@@ -1582,6 +1632,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r27",
+    googleRating: 4.4,
+    googleReviewCount: 135,
     name: ".cafe（ドットカフェ）",
     cuisine: "カフェ・フレンチスイーツ",
     area: "西区・靭本町",
@@ -1627,6 +1679,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r28",
+    googleRating: 4.9,
+    googleReviewCount: 48,
     name: "World Tree Tea＆Coffee -世界樹のお茶-",
     cuisine: "中国茶・アジアコーヒー専門店",
     area: "北区・中崎町",
@@ -1671,6 +1725,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r30",
+    googleRating: 4.5,
+    googleReviewCount: 73,
     name: "大五郎",
     cuisine: "居酒屋（海鮮・牡蠣・秋田地酒）",
     area: "浪速区・なんば",
@@ -1716,6 +1772,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r31",
+    googleRating: 4.2,
+    googleReviewCount: 131,
     name: "食べ処 飲み処 美波",
     cuisine: "居酒屋（海鮮・焼き鳥・創作和食）",
     area: "中区・錦",
@@ -1761,6 +1819,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r32",
+    googleRating: 4.1,
+    googleReviewCount: 117,
     name: "居酒屋 十兵衛",
     cuisine: "居酒屋（焼き鳥・串かつ・おでん）",
     area: "中央区・堺筋本町",
@@ -1806,6 +1866,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r33",
+    googleRating: 4.9,
+    googleReviewCount: 40,
     name: "鶏屋 おち合",
     cuisine: "焼き鳥・鶏割烹",
     area: "城東区・野江",
@@ -1852,6 +1914,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r34",
+    googleRating: 4.3,
+    googleReviewCount: 46,
     name: "縄手",
     cuisine: "居酒屋（海鮮・魚料理）",
     area: "淀川区・東淀川",
@@ -1896,6 +1960,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r35",
+    googleRating: 4.4,
+    googleReviewCount: 59,
     name: "トラットリア デッラ ノンナ",
     cuisine: "イタリアン（マルケ州郷土料理）",
     area: "中央区・高麗橋",
@@ -1942,6 +2008,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r36",
+    googleRating: 4.1,
+    googleReviewCount: 116,
     name: "栄の中心で手羽先を叫ぶ さかてば",
     cuisine: "居酒屋（手羽先・名古屋メシ）",
     area: "東区・東桜",
@@ -1988,6 +2056,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r37",
+    googleRating: 4.4,
+    googleReviewCount: 73,
     name: "麺処 ほりばた",
     cuisine: "ラーメン",
     area: "淀川区・三国",
@@ -2031,6 +2101,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r38",
+    googleRating: 4.5,
+    googleReviewCount: 18,
     name: "stand 酒場 マコチとピーナッツ",
     cuisine: "立ち飲み居酒屋",
     area: "城東区・関目",
@@ -2076,6 +2148,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r39",
+    googleRating: 4.4,
+    googleReviewCount: 248,
     name: "千年UDON",
     cuisine: "うどん",
     area: "西区・九条",
@@ -2119,6 +2193,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r40",
+    googleRating: 4.5,
+    googleReviewCount: 47,
     name: "Comfort Zone 8 京いたりあん",
     cuisine: "イタリアン（京野菜）",
     area: "淀川区・十三",
@@ -2163,6 +2239,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r41",
+    googleRating: 4.3,
+    googleReviewCount: 100,
     name: "STONE Cafe",
     cuisine: "和モダンカフェ",
     area: "西区・新町",
@@ -2208,6 +2286,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r43",
+    googleRating: 4.7,
+    googleReviewCount: 43,
     name: "日々の果物",
     cuisine: "フルーツパーラー・カフェ",
     area: "西区・名駅",
@@ -2253,6 +2333,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r42",
+    googleRating: 4.5,
+    googleReviewCount: 57,
     name: "和酒和膳 和つき",
     cuisine: "和食居酒屋",
     area: "浦和区・浦和",
@@ -2296,6 +2378,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r44",
+    googleRating: 4.2,
+    googleReviewCount: 185,
     name: "おでん家 万昌 ぶらっせ 大宮本店",
     cuisine: "おでん・串揚げ・居酒屋",
     area: "大宮区・仲町",
@@ -2340,6 +2424,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r45",
+    googleRating: 4.0,
+    googleReviewCount: 291,
     name: "産直創作鮮魚 厨 一里",
     cuisine: "海鮮居酒屋・魚料理",
     area: "北区・黒川",
@@ -2385,6 +2471,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r46",
+    googleRating: 4.4,
+    googleReviewCount: 17,
     name: "greeting",
     cuisine: "コーヒースタンド・ナチュラルワイン",
     area: "北区・清水",
@@ -2428,6 +2516,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r47",
+    googleRating: 4.0,
+    googleReviewCount: 562,
     name: "居酒屋 ひもの野郎 大阪駅前第4ビル本店",
     cuisine: "干物居酒屋・海鮮",
     area: "北区・梅田",
@@ -2472,6 +2562,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r48",
+    googleRating: 4.7,
+    googleReviewCount: 181,
     name: "春巻きとよだれ鶏 酔いしば 谷町六丁目",
     cuisine: "創作中華居酒屋",
     area: "中央区・谷町六丁目",
@@ -2518,6 +2610,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r49",
+    googleRating: 4.3,
+    googleReviewCount: 49,
     name: "ワインと小料理 caiotto（カイト）",
     cuisine: "ワインバル・イタリアン",
     area: "浪速区・元町",
@@ -2562,6 +2656,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r50",
+    googleRating: 4.5,
+    googleReviewCount: 227,
     name: "PIZZERIA L.F.C",
     cuisine: "ナポリピッツァ",
     area: "北区・国分寺",
@@ -2606,6 +2702,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r51",
+    googleRating: 3.7,
+    googleReviewCount: 114,
     name: "風車",
     cuisine: "喫茶店・カフェ",
     area: "東淀川区・淡路",
@@ -2650,6 +2748,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r52",
+    googleRating: 4.9,
+    googleReviewCount: 243,
     name: "和牛とワインとイタリアン Lisian",
     cuisine: "イタリアン（和牛・ワイン）",
     area: "中央区・南久宝寺町",
@@ -2693,6 +2793,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r53",
+    googleRating: 4.6,
+    googleReviewCount: 32,
     name: "Wine & Italian l'ORTO",
     cuisine: "イタリアン・ワインバー",
     area: "中区・錦/栄",
@@ -2755,6 +2857,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r54",
+    googleRating: 4.6,
+    googleReviewCount: 85,
     name: "炭火焼き鳥と洋食の居酒屋Cooo+",
     cuisine: "焼鳥・洋食居酒屋",
     area: "淀川区・西中島南方",
@@ -2816,6 +2920,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r55",
+    googleRating: 4.3,
+    googleReviewCount: 216,
     name: "トラットリア ラ ロッカ",
     cuisine: "イタリアン",
     area: "南区・外山/桜本町",
@@ -2878,6 +2984,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r56",
+    googleRating: 4.1,
+    googleReviewCount: 111,
     name: "イル・クアドリフォーリオ",
     cuisine: "イタリアン",
     area: "西区・肥後橋",
@@ -2930,6 +3038,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r57",
+    googleRating: 4.4,
+    googleReviewCount: 75,
     name: "ビストロ リアン",
     cuisine: "ビストロ",
     area: "旭区・関目高殿",
@@ -2983,6 +3093,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r58",
+    googleRating: 4.4,
+    googleReviewCount: 85,
     name: "まいこカフェ",
     cuisine: "カフェ",
     area: "上尾市・上尾",
@@ -3035,6 +3147,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r59",
+    googleRating: 4.6,
+    googleReviewCount: 25,
     name: "肴酒笑処 五十嵐",
     cuisine: "居酒屋・海鮮",
     area: "上尾市・上尾",
@@ -3087,6 +3201,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r60",
+    googleRating: 4.2,
+    googleReviewCount: 34,
     name: "食べカフェ Pu-a-Pu",
     cuisine: "カフェ",
     area: "城東区・蒲生四丁目",
@@ -3128,6 +3244,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r61",
+    googleRating: 4.3,
+    googleReviewCount: 158,
     name: "路地裏チャイニーズ 有馬",
     cuisine: "中華料理",
     area: "福島区・福島",
@@ -3173,6 +3291,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r62",
+    googleRating: 4.6,
+    googleReviewCount: 193,
     name: "バランス食堂 七源 福島店",
     cuisine: "居酒屋・自然派ワイン",
     area: "福島区・新福島",
@@ -3225,6 +3345,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r63",
+    googleRating: 4.9,
+    googleReviewCount: 55,
     name: "炭焼屋サンペイ",
     cuisine: "焼鳥・炭火",
     area: "西区・九条",
@@ -3277,6 +3399,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r64",
+    googleRating: 3.9,
+    googleReviewCount: 259,
     name: "華や 緑地公園店",
     cuisine: "中華料理",
     area: "豊中市・緑地公園",
@@ -3326,6 +3450,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r65",
+    googleRating: 4.7,
+    googleReviewCount: 87,
     name: "中国料理 鴻福",
     cuisine: "中国料理",
     area: "淀川区・十三",
@@ -3378,6 +3504,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r66",
+    googleRating: 4.6,
+    googleReviewCount: 59,
     name: "CAFE＆BAR ててりあ",
     cuisine: "カフェ・バー",
     area: "北区・中崎町",
@@ -3431,6 +3559,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r67",
+    googleRating: 4.2,
+    googleReviewCount: 175,
     name: "インフィニート",
     cuisine: "イタリアン・ピザ",
     area: "今池",
@@ -3478,6 +3608,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r68",
+    googleRating: 4.1,
+    googleReviewCount: 290,
     name: "PASTA屋ケンしろう 本山本店",
     cuisine: "パスタ",
     area: "本山",
@@ -3528,6 +3660,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r69",
+    googleRating: 3.1,
+    googleReviewCount: 144,
     name: "タヴェルナ グイダ",
     cuisine: "イタリアン",
     area: "名駅南",
@@ -3574,6 +3708,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r70",
+    googleRating: 4.2,
+    googleReviewCount: 85,
     name: "藍風珈琲店",
     cuisine: "カフェ・沖縄料理",
     area: "尼ケ坂",
@@ -3625,6 +3761,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r71",
+    googleRating: 4.0,
+    googleReviewCount: 77,
     name: "えど屋",
     cuisine: "焼き鳥",
     area: "西蒲田",
@@ -3675,6 +3813,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r72",
+    googleRating: 4.4,
+    googleReviewCount: 14,
     name: "Kitchen Sunny",
     cuisine: "惣菜・デリ",
     area: "庄内通",
@@ -3725,6 +3865,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r73",
+    googleRating: 4.4,
+    googleReviewCount: 96,
     name: "中華割烹 わらじん",
     cuisine: "中華料理",
     area: "国際センター",
@@ -3767,6 +3909,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r74",
+    googleRating: 4.4,
+    googleReviewCount: 124,
     name: "NUTTY DINING",
     cuisine: "イタリアン",
     area: "川口",
@@ -3813,6 +3957,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r75",
+    googleRating: 4.3,
+    googleReviewCount: 27,
     name: "隠れ家 和バル かぎろひ",
     cuisine: "居酒屋・和バル",
     area: "岡場",
@@ -3864,6 +4010,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r76",
+    googleRating: 4.8,
+    googleReviewCount: 83,
     name: "神戸ミートバンク",
     cuisine: "焼肉",
     area: "三宮",
@@ -3906,6 +4054,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r77",
+    googleRating: 4.2,
+    googleReviewCount: 195,
     name: "New York Garden Place hug",
     cuisine: "カフェ・パスタ",
     area: "六甲道",
@@ -3956,6 +4106,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r78",
+    googleRating: 4.2,
+    googleReviewCount: 111,
     name: "サン珈琲 舞子店",
     cuisine: "喫茶店",
     area: "西舞子",
@@ -4007,6 +4159,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r79",
+    googleRating: 4.3,
+    googleReviewCount: 256,
     name: "麺屋 三槍",
     cuisine: "ラーメン",
     area: "岩槻",
@@ -4056,6 +4210,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r80",
+    googleRating: 3.7,
+    googleReviewCount: 213,
     name: "一也ラーメン",
     cuisine: "ラーメン",
     area: "多の津",
@@ -4107,6 +4263,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r81",
+    googleRating: 4.2,
+    googleReviewCount: 47,
     name: "海鮮ろばた 八咫烏",
     cuisine: "居酒屋・海鮮",
     area: "掛川",
@@ -4158,6 +4316,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r82",
+    googleRating: 4.0,
+    googleReviewCount: 165,
     name: "菜々cafe",
     cuisine: "カフェ・和食",
     area: "神戸市北区",
@@ -4209,6 +4369,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r83",
+    googleRating: 4.9,
+    googleReviewCount: 43,
     name: "ちょびぽっぽ",
     cuisine: "カフェ・カレー",
     area: "垂水",
@@ -4255,6 +4417,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r84",
+    googleRating: 4.0,
+    googleReviewCount: 3,
     name: "cafe trois",
     cuisine: "カフェ",
     area: "新静岡",
@@ -4306,6 +4470,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r85",
+    googleRating: 4.8,
+    googleReviewCount: 40,
     name: "垂水炭火肉焼 網舞（Mo-bu）",
     cuisine: "焼肉",
     area: "垂水",
@@ -4351,6 +4517,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r86",
+    googleRating: 4.8,
+    googleReviewCount: 48,
     name: "HOURS",
     cuisine: "立ち飲み",
     area: "白楽",
@@ -4396,6 +4564,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r87",
+    googleRating: 4.1,
+    googleReviewCount: 164,
     name: "オステリア オルカドーロ",
     cuisine: "イタリアン",
     area: "浄心",
@@ -4441,6 +4611,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r88",
+    googleRating: 4.5,
+    googleReviewCount: 241,
     name: "麺や晴斗",
     cuisine: "ラーメン",
     area: "高槻",
@@ -4486,6 +4658,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r89",
+    googleRating: 4.3,
+    googleReviewCount: 17,
     name: "ビストロ ル コワン",
     cuisine: "ビストロ",
     area: "文の里",
@@ -4530,6 +4704,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r90",
+    googleRating: 4.2,
+    googleReviewCount: 92,
     name: "手打ち カドワキ",
     cuisine: "ラーメン",
     area: "平塚",
@@ -4574,6 +4750,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r91",
+    googleRating: 4.5,
+    googleReviewCount: 78,
     name: "NIKUTAMA 蒲田 東京総本店",
     cuisine: "お好み焼き",
     area: "蒲田",
@@ -4619,6 +4797,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r92",
+    googleRating: 4.5,
+    googleReviewCount: 31,
     name: "お好み焼き としちゃん",
     cuisine: "お好み焼き",
     area: "蒲田",
@@ -4664,6 +4844,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r93",
+    googleRating: 4.1,
+    googleReviewCount: 168,
     name: "わさびと魚",
     cuisine: "海鮮",
     area: "元町",
@@ -4709,6 +4891,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r94",
+    googleRating: 4.0,
+    googleReviewCount: 7,
     name: "めしと酒 ばんざい",
     cuisine: "居酒屋",
     area: "長田",
@@ -4754,6 +4938,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r95",
+    googleRating: 4.4,
+    googleReviewCount: 137,
     name: "魚菜屋 なかむら",
     cuisine: "海鮮・日本料理",
     area: "大田区新蒲田",
@@ -4799,6 +4985,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r96",
+    googleRating: 4.2,
+    googleReviewCount: 90,
     name: "ぎゅんた",
     cuisine: "お好み焼き・鉄板焼き",
     area: "神戸市灘区",
@@ -4844,6 +5032,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r97",
+    googleRating: 4.3,
+    googleReviewCount: 159,
     name: "パスタの店 Piante",
     cuisine: "パスタ・イタリアン",
     area: "川越市",
@@ -4888,6 +5078,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r99",
+    googleRating: 4.3,
+    googleReviewCount: 106,
     name: "イタリア料理 アニマロッサ",
     cuisine: "イタリアン",
     area: "さいたま市浦和区",
@@ -4930,6 +5122,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r100",
+    googleRating: 4.0,
+    googleReviewCount: 106,
     name: "うどん処 和心鶴々",
     cuisine: "うどん・カフェ",
     area: "神戸市須磨区",
@@ -4975,6 +5169,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r101",
+    googleRating: 4.5,
+    googleReviewCount: 81,
     name: "焼き鳥 華灯 ～はなび～",
     cuisine: "焼鳥・居酒屋",
     area: "神戸市中央区",
@@ -5019,6 +5215,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r103",
+    googleRating: 4.3,
+    googleReviewCount: 27,
     name: "うどん でんぶ",
     cuisine: "うどん・居酒屋",
     area: "足立区西新井",
@@ -5064,6 +5262,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r104",
+    googleRating: 4.0,
+    googleReviewCount: 120,
     name: "豊楽亭",
     cuisine: "中華料理・ラーメン",
     area: "春日部市",
@@ -5109,6 +5309,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r105",
+    googleRating: 3.3,
+    googleReviewCount: 35,
     name: "ぎょうざ菜館 きてや",
     cuisine: "餃子・中華",
     area: "神戸市北区",
@@ -5154,6 +5356,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r106",
+    googleRating: 4.0,
+    googleReviewCount: 95,
     name: "nouaison ヌエゾン",
     cuisine: "ビストロ・フレンチ",
     area: "大田区西蒲田",
@@ -5199,6 +5403,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r107",
+    googleRating: 4.2,
+    googleReviewCount: 100,
     name: "焼肉 膳",
     cuisine: "焼肉",
     area: "岸和田市",
@@ -5243,6 +5449,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r108",
+    googleRating: 3.8,
+    googleReviewCount: 37,
     name: "ホルモン かんてき",
     cuisine: "ホルモン焼き",
     area: "神戸市兵庫区",
@@ -5287,6 +5495,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r110",
+    googleRating: 3.9,
+    googleReviewCount: 173,
     name: "カルメン",
     cuisine: "スペイン料理",
     area: "神戸市中央区",
@@ -5332,6 +5542,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r111",
+    googleRating: 4.5,
+    googleReviewCount: 123,
     name: "ラ・サンセリテ",
     cuisine: "フレンチ",
     area: "志木市",
@@ -5376,6 +5588,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r112",
+    googleRating: 3.4,
+    googleReviewCount: 80,
     name: "とりき",
     cuisine: "炭火焼・鳥料理",
     area: "神戸市東灘区",
@@ -5421,6 +5635,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r113",
+    googleRating: 4.5,
+    googleReviewCount: 36,
     name: "Trattoria YOSORO",
     cuisine: "イタリアン・ピザ",
     area: "神戸市灘区",
@@ -5466,6 +5682,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r115",
+    googleRating: 4.9,
+    googleReviewCount: 7,
     name: "ストロングスタイル2.9",
     cuisine: "バー・スポーツバー",
     area: "神戸市灘区",
@@ -5507,6 +5725,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r116",
+    googleRating: 4.6,
+    googleReviewCount: 138,
     name: "gennaio ジェンナイオ",
     cuisine: "イタリアン・バル",
     area: "神戸市中央区",
@@ -5549,6 +5769,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r117",
+    googleRating: 3.9,
+    googleReviewCount: 161,
     name: "RISTRATTORIA filo",
     cuisine: "イタリアン・ピザ",
     area: "神戸市須磨区",
@@ -5591,6 +5813,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r118",
+    googleRating: 4.6,
+    googleReviewCount: 185,
     name: "カイノクチ",
     cuisine: "薬膳粥・貝割烹",
     area: "神戸市中央区",
@@ -5636,6 +5860,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r120",
+    googleRating: 4.7,
+    googleReviewCount: 30,
     name: "ル・セルクル",
     cuisine: "フレンチ・イタリアン",
     area: "神戸市東灘区",
@@ -5681,6 +5907,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r121",
+    googleRating: 4.3,
+    googleReviewCount: 135,
     name: "くわせ屋",
     cuisine: "居酒屋",
     area: "立川市",
@@ -5723,6 +5951,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r123",
+    googleRating: 4.3,
+    googleReviewCount: 97,
     name: "勇すし",
     cuisine: "鮨・日本料理",
     area: "神戸市中央区",
@@ -5768,6 +5998,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r124",
+    googleRating: 4.1,
+    googleReviewCount: 70,
     name: "蛇乃目鮨",
     cuisine: "鮨",
     area: "大田区蒲田",
@@ -5812,6 +6044,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r125",
+    googleRating: 4.2,
+    googleReviewCount: 115,
     name: "YASUKO'S KITCHEN",
     cuisine: "中国料理・広東料理",
     area: "神戸市中央区",
@@ -5856,6 +6090,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r126",
+    googleRating: 4.9,
+    googleReviewCount: 17,
     name: "バールコソアド",
     cuisine: "イタリアン・ダイニングバー",
     area: "神戸市長田区",
@@ -5900,6 +6136,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r127",
+    googleRating: 4.6,
+    googleReviewCount: 22,
     name: "葉舞風 ばんぶー",
     cuisine: "焼き鳥・居酒屋",
     area: "立川市",
@@ -5944,6 +6182,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r128",
+    googleRating: 4.4,
+    googleReviewCount: 322,
     name: "焼肉いちもん 蒲田",
     cuisine: "焼肉",
     area: "大田区蒲田",
@@ -5988,6 +6228,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r129",
+    googleRating: 4.2,
+    googleReviewCount: 220,
     name: "焼肉 黒テツ 立川店",
     cuisine: "焼肉",
     area: "立川市",
@@ -6032,6 +6274,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r130",
+    googleRating: 4.4,
+    googleReviewCount: 169,
     name: "魚々鶏夜",
     cuisine: "居酒屋・海鮮・鉄板焼き",
     area: "京都市下京区",
@@ -6075,6 +6319,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r131",
+    googleRating: 3.9,
+    googleReviewCount: 43,
     name: "グラスホッパー",
     cuisine: "バル・イタリアン",
     area: "京都市西京区",
@@ -6115,6 +6361,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r132",
+    googleRating: 4.6,
+    googleReviewCount: 135,
     name: "炭火 やきとり 信",
     cuisine: "焼き鳥・居酒屋",
     area: "京都市山科区",
@@ -6159,6 +6407,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r133",
+    googleRating: 4.7,
+    googleReviewCount: 40,
     name: "西院 わた邉",
     cuisine: "居酒屋・日本料理",
     area: "京都市右京区",
@@ -6195,6 +6445,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r134",
+    googleRating: 5.0,
+    googleReviewCount: 8,
     name: "オクダ料理店",
     cuisine: "ビストロ・ワインバー",
     area: "京都市西京区",
@@ -6237,6 +6489,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r135",
+    googleRating: 4.3,
+    googleReviewCount: 99,
     name: "桜と都",
     cuisine: "洋食",
     area: "京都市西京区",
@@ -6281,6 +6535,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r137",
+    googleRating: 4.6,
+    googleReviewCount: 50,
     name: "アンチョビ・カフェ",
     cuisine: "イタリアン",
     area: "京都市左京区",
@@ -6325,6 +6581,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r138",
+    googleRating: 4.5,
+    googleReviewCount: 22,
     name: "Book Cafe 川べり",
     cuisine: "カフェ",
     area: "奈良市",
@@ -6369,6 +6627,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r140",
+    googleRating: 4.3,
+    googleReviewCount: 63,
     name: "キッチンPEPITA",
     cuisine: "洋食",
     area: "奈良市",
@@ -6449,6 +6709,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r142",
+    googleRating: 4.0,
+    googleReviewCount: 51,
     name: "鶏心",
     cuisine: "焼き鳥",
     area: "京都市右京区",
@@ -6489,6 +6751,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r143",
+    googleRating: 4.3,
+    googleReviewCount: 262,
     name: "モッさんのべた焼",
     cuisine: "お好み焼き",
     area: "京都市中京区",
@@ -6529,6 +6793,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r144",
+    googleRating: 4.8,
+    googleReviewCount: 162,
     name: "気ウエスト",
     cuisine: "バー",
     area: "京都市中京区",
@@ -6561,6 +6827,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r145",
+    googleRating: 4.2,
+    googleReviewCount: 157,
     name: "広島焼き やきべえ",
     cuisine: "お好み焼き",
     area: "京都市右京区",
@@ -6601,6 +6869,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r146",
+    googleRating: 4.0,
+    googleReviewCount: 64,
     name: "お出汁と日本酒 せつ",
     cuisine: "和食",
     area: "京都市中京区",
@@ -6641,6 +6911,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r147",
+    googleRating: 4.7,
+    googleReviewCount: 77,
     name: "Osteria S.Puro",
     cuisine: "イタリアン",
     area: "京都市右京区",
@@ -6681,6 +6953,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r148",
+    googleRating: 4.1,
+    googleReviewCount: 72,
     name: "南国電波",
     cuisine: "インド料理",
     area: "京都市伏見区",
@@ -6721,6 +6995,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r149",
+    googleRating: 4.1,
+    googleReviewCount: 237,
     name: "京都珈琲焙煎所 旅の音",
     cuisine: "カフェ",
     area: "京都市左京区",
@@ -6761,6 +7037,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r150",
+    googleRating: 4.1,
+    googleReviewCount: 82,
     name: "鉄板焼き 仁",
     cuisine: "お好み焼き",
     area: "京都市中京区",
@@ -6801,6 +7079,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r151",
+    googleRating: 5.0,
+    googleReviewCount: 10,
     name: "焼鳥 信蔵",
     cuisine: "焼き鳥",
     area: "京都市中京区",
@@ -6833,6 +7113,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r152",
+    googleRating: 4.9,
+    googleReviewCount: 98,
     name: "お好み焼き健士朗",
     cuisine: "お好み焼き",
     area: "京都市下京区",
@@ -6873,6 +7155,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r153",
+    googleRating: 4.5,
+    googleReviewCount: 87,
     name: "京都鳥八",
     cuisine: "焼き鳥",
     area: "京都市下京区",
@@ -6913,6 +7197,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r154",
+    googleRating: 4.4,
+    googleReviewCount: 46,
     name: "俵崎",
     cuisine: "居酒屋",
     area: "京都市山科区",
@@ -6953,6 +7239,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r155",
+    googleRating: 4.2,
+    googleReviewCount: 56,
     name: "Taverna Mezzanotte",
     cuisine: "イタリアン",
     area: "京都市下京区",
@@ -6993,6 +7281,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r156",
+    googleRating: 4.2,
+    googleReviewCount: 149,
     name: "est pizzeria e trattoria GION",
     cuisine: "イタリアン",
     area: "京都市東山区",
@@ -7033,6 +7323,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r157",
+    googleRating: 4.1,
+    googleReviewCount: 7,
     name: "フレンチ食堂ビストロなかたに",
     cuisine: "フレンチ",
     area: "京都市伏見区",
@@ -7073,6 +7365,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r158",
+    googleRating: 4.3,
+    googleReviewCount: 19,
     name: "Bar Arietta",
     cuisine: "イタリアン",
     area: "京都市伏見区",
@@ -7113,6 +7407,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r159",
+    googleRating: 4.0,
+    googleReviewCount: 235,
     name: "らーめん 嵐",
     cuisine: "ラーメン",
     area: "京都市右京区",
@@ -7153,6 +7449,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r160",
+    googleRating: 4.3,
+    googleReviewCount: 178,
     name: "めし処 ぽち",
     cuisine: "居酒屋",
     area: "京都市下京区",
@@ -7193,6 +7491,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r161",
+    googleRating: 4.3,
+    googleReviewCount: 8,
     name: "深夜ラーメンB",
     cuisine: "ラーメン",
     area: "京都市左京区",
@@ -7223,6 +7523,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r162",
+    googleRating: 4.5,
+    googleReviewCount: 48,
     name: "鮨今尽",
     cuisine: "寿司",
     area: "京都市下京区",
@@ -7253,6 +7555,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r163",
+    googleRating: 4.6,
+    googleReviewCount: 49,
     name: "祇をん 段ばた",
     cuisine: "和食",
     area: "京都市東山区",
@@ -7289,6 +7593,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r164",
+    googleRating: 4.1,
+    googleReviewCount: 79,
     name: "ぱんちゃん家",
     cuisine: "韓国料理",
     area: "京都・桂",
@@ -7329,6 +7635,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r165",
+    googleRating: 4.4,
+    googleReviewCount: 141,
     name: "きじそば 雉弥",
     cuisine: "ラーメン",
     area: "京都・金閣寺",
@@ -7361,6 +7669,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r166",
+    googleRating: 4.3,
+    googleReviewCount: 98,
     name: "みくり桑",
     cuisine: "フライ割烹",
     area: "京都・烏丸",
@@ -7401,6 +7711,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r167",
+    googleRating: 4.8,
+    googleReviewCount: 199,
     name: "sheesha yonaga",
     cuisine: "シーシャカフェ",
     area: "名古屋・栄",
@@ -7438,6 +7750,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r168",
+    googleRating: 4.4,
+    googleReviewCount: 19,
     name: "e9uipe nine",
     cuisine: "創作料理",
     area: "名古屋・森下",
@@ -7478,6 +7792,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r169",
+    googleRating: 4.0,
+    googleReviewCount: 51,
     name: "タオタオ",
     cuisine: "中華料理",
     area: "大阪・門真",
@@ -7518,6 +7834,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r170",
+    googleRating: 4.0,
+    googleReviewCount: 135,
     name: "ぼんじょるの",
     cuisine: "パスタ・イタリアン",
     area: "福岡・博多",
@@ -7558,6 +7876,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r171",
+    googleRating: 3.4,
+    googleReviewCount: 247,
     name: "京都中華 ハマムラ",
     cuisine: "中華料理",
     area: "京都・丸太町",
@@ -7598,6 +7918,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r172",
+    googleRating: 4.9,
+    googleReviewCount: 27,
     name: "料理屋かねみつ",
     cuisine: "和食",
     area: "京都・四条",
@@ -7638,6 +7960,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r173",
+    googleRating: 4.0,
+    googleReviewCount: 168,
     name: "Giraffa TERRACE",
     cuisine: "イタリアン",
     area: "神戸・垂水",
@@ -7678,6 +8002,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r174",
+    googleRating: 4.0,
+    googleReviewCount: 3,
     name: "cafe GRANO",
     cuisine: "カフェ",
     area: "神戸・兵庫",
@@ -7717,6 +8043,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r175",
+    googleRating: 4.6,
+    googleReviewCount: 51,
     name: "ORINAS",
     cuisine: "和食",
     area: "神戸・元町",
@@ -7757,6 +8085,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r176",
+    googleRating: 4.4,
+    googleReviewCount: 2325,
     name: "麺屋 担担軒",
     cuisine: "担々麺・ラーメン",
     area: "京都・北野",
@@ -7796,6 +8126,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r177",
+    googleRating: 4.4,
+    googleReviewCount: 34,
     name: "きず那",
     cuisine: "食堂",
     area: "神戸・春日野道",
@@ -7836,6 +8168,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r178",
+    googleRating: 4.5,
+    googleReviewCount: 23,
     name: "アジアンキッチン ロータス",
     cuisine: "ベトナム料理",
     area: "神戸・西代",
@@ -7876,6 +8210,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r179",
+    googleRating: 4.3,
+    googleReviewCount: 85,
     name: "りょうり屋 くどう",
     cuisine: "日本料理",
     area: "神戸・三宮",
@@ -7914,6 +8250,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r180",
+    googleRating: 4.2,
+    googleReviewCount: 157,
     name: "レストラン スポンタネ",
     cuisine: "フレンチ",
     area: "京都・西向日",
@@ -7954,6 +8292,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r181",
+    googleRating: 3.8,
+    googleReviewCount: 162,
     name: "尾道ラーメン一〜WAN〜",
     cuisine: "ラーメン",
     area: "広島・流川",
@@ -7994,6 +8334,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r182",
+    googleRating: 3.8,
+    googleReviewCount: 77,
     name: "炭焼Kitchen 達磨",
     cuisine: "焼き鳥",
     area: "広島・祇園",
@@ -8034,6 +8376,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r183",
+    googleRating: 4.0,
+    googleReviewCount: 244,
     name: "麺処やのや",
     cuisine: "ラーメン・鶏白湯",
     area: "広島・宇品",
@@ -8074,6 +8418,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r184",
+    googleRating: 4.8,
+    googleReviewCount: 104,
     name: "吉鮨",
     cuisine: "寿司",
     area: "広島・本通",
@@ -8111,6 +8457,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r185",
+    googleRating: 4.4,
+    googleReviewCount: 7,
     name: "和Diner 凪",
     cuisine: "和食ダイニング",
     area: "群馬・渋川",
@@ -8146,6 +8494,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r186",
+    googleRating: 4.3,
+    googleReviewCount: 100,
     name: "和食割烹 こきゅう別邸",
     cuisine: "割烹",
     area: "広島・八丁堀",
@@ -8186,6 +8536,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r187",
+    googleRating: 4.2,
+    googleReviewCount: 263,
     name: "一膳飯屋 りぃぼん",
     cuisine: "洋食・食堂",
     area: "京都・上賀茂",
@@ -8224,6 +8576,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r188",
+    googleRating: 4.7,
+    googleReviewCount: 51,
     name: "海鮮丼&ホットサンド nanchi",
     cuisine: "海鮮丼",
     area: "広島・広島駅北口",
@@ -8264,6 +8618,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r189",
+    googleRating: 4.3,
+    googleReviewCount: 86,
     name: "喫茶うずら",
     cuisine: "喫茶店",
     area: "京都・藤森",
@@ -8301,6 +8657,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r190",
+    googleRating: 4.0,
+    googleReviewCount: 55,
     name: "Y's Dining一博",
     cuisine: "居酒屋",
     area: "広島・毘沙門台",
@@ -8341,6 +8699,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r191",
+    googleRating: 4.7,
+    googleReviewCount: 48,
     name: "Bottega del 29 ボッテガニック",
     cuisine: "イタリアン",
     area: "広島・幟町",
@@ -8381,6 +8741,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r192",
+    googleRating: 4.8,
+    googleReviewCount: 65,
     name: "Luca（ルカ）",
     cuisine: "フレンチ",
     area: "京都・河原町",
@@ -8415,6 +8777,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r193",
+    googleRating: 4.4,
+    googleReviewCount: 119,
     name: "旬の肉ダイニング exe9tive",
     cuisine: "ステーキ・肉料理",
     area: "広島・高取",
@@ -8453,6 +8817,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r194",
+    googleRating: 4.6,
+    googleReviewCount: 138,
     name: "イタリアン酒場 COVO",
     cuisine: "イタリアン",
     area: "京都・三条",
@@ -8493,6 +8859,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r195",
+    googleRating: 4.4,
+    googleReviewCount: 123,
     name: "石臼引き手打ちそば 定七",
     cuisine: "そば",
     area: "京都・鞍馬口",
@@ -8533,6 +8901,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r196",
+    googleRating: 4.3,
+    googleReviewCount: 135,
     name: "Kitchen&Bar Qualia",
     cuisine: "イタリアン・バー",
     area: "福岡・姪浜",
@@ -8572,6 +8942,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r197",
+    googleRating: 4.2,
+    googleReviewCount: 31,
     name: "伏水89丁目食堂",
     cuisine: "居酒屋・炭火焼き",
     area: "京都・伏見",
@@ -8612,6 +8984,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r198",
+    googleRating: 4.6,
+    googleReviewCount: 142,
     name: "ローストビーフの店 Watanabe",
     cuisine: "ローストビーフ・フレンチ",
     area: "京都・上賀茂",
@@ -8652,6 +9026,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r199",
+    googleRating: 3.9,
+    googleReviewCount: 115,
     name: "中華処 揚子江",
     cuisine: "中華料理",
     area: "京都・竹田",
@@ -8692,6 +9068,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r200",
+    googleRating: 4.4,
+    googleReviewCount: 131,
     name: "麺屋やまひで 京都聖護院店",
     cuisine: "台湾まぜそば・ラーメン",
     area: "京都・岡崎",
@@ -8732,6 +9110,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r201",
+    googleRating: 3.8,
+    googleReviewCount: 139,
     name: "オマール海老とワイン酒場 アルヴェーレ",
     cuisine: "イタリアン",
     area: "京都・伏見桃山",
@@ -8772,6 +9152,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r202",
+    googleRating: 4.1,
+    googleReviewCount: 35,
     name: "ONE TART",
     cuisine: "タルト・ケーキ",
     area: "京都・桂",
@@ -8812,6 +9194,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r203",
+    googleRating: 3.1,
+    googleReviewCount: 51,
     name: "あじひろ 西院店",
     cuisine: "お好み焼き",
     area: "京都・西院",
@@ -8852,6 +9236,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r204",
+    googleRating: 4.9,
+    googleReviewCount: 288,
     name: "個室焼肉 夢幻邸",
     cuisine: "焼肉",
     area: "広島市中区大手町",
@@ -8885,6 +9271,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r205",
+    googleRating: 4.9,
+    googleReviewCount: 38,
     name: "茶京華 結〜musubi〜",
     cuisine: "中華料理",
     area: "京都市左京区浄土寺",
@@ -8918,6 +9306,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r206",
+    googleRating: 4.7,
+    googleReviewCount: 50,
     name: "京酒場 chow",
     cuisine: "中華・居酒屋",
     area: "京都市伏見区平野町",
@@ -8952,6 +9342,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r207",
+    googleRating: 4.6,
+    googleReviewCount: 106,
     name: "海鮮立呑 活魚パラダイス",
     cuisine: "海鮮・立ち飲み",
     area: "京都市伏見区両替町",
@@ -8985,6 +9377,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r208",
+    googleRating: 4.6,
+    googleReviewCount: 147,
     name: "洋定食 優和",
     cuisine: "洋食",
     area: "京都市左京区北白川",
@@ -9020,6 +9414,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r209",
+    googleRating: 4.5,
+    googleReviewCount: 74,
     name: "旬菜中華 喜鳥",
     cuisine: "中華料理",
     area: "京都市西京区川島",
@@ -9054,6 +9450,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r210",
+    googleRating: 4.5,
+    googleReviewCount: 121,
     name: "中国料理よかっと",
     cuisine: "中華料理",
     area: "京都市上京区下立売通",
@@ -9088,6 +9486,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r211",
+    googleRating: 4.0,
+    googleReviewCount: 189,
     name: "熟成麺屋 神来 一乗寺店",
     cuisine: "ラーメン",
     area: "京都市左京区一乗寺",
@@ -9122,6 +9522,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r212",
+    googleRating: 4.2,
+    googleReviewCount: 38,
     name: "ハワイアンカフェ PiliAloha",
     cuisine: "カフェ・ハワイアン",
     area: "大阪府堺市南区檜尾",
@@ -9156,6 +9558,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r213",
+    googleRating: 4.2,
+    googleReviewCount: 76,
     name: "炭火焼鳥 Dining 晴レル屋",
     cuisine: "焼き鳥",
     area: "大阪府堺市中区深井沢町",
@@ -9190,6 +9594,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r214",
+    googleRating: 4.4,
+    googleReviewCount: 12,
     name: "一品・季節料理洋風酒場こうちゃん",
     cuisine: "日本料理・洋食居酒屋",
     area: "大阪府堺市東区日置荘西町",
@@ -9224,6 +9630,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r215",
+    googleRating: 4.4,
+    googleReviewCount: 132,
     name: "茶屋 茶茶丸",
     cuisine: "甘味処・和カフェ",
     area: "滋賀県蒲生郡日野町松尾",
@@ -9258,6 +9666,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r216",
+    googleRating: 4.0,
+    googleReviewCount: 217,
     name: "力横綱 中百舌鳥店",
     cuisine: "ラーメン",
     area: "大阪府堺市北区中百舌鳥町",
@@ -9292,6 +9702,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r217",
+    googleRating: 4.8,
+    googleReviewCount: 33,
     name: "炙り家 泰炭",
     cuisine: "居酒屋・炭火焼",
     area: "鹿児島県薩摩郡さつま町",
@@ -9326,6 +9738,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r218",
+    googleRating: 4.4,
+    googleReviewCount: 221,
     name: "キッチンまつ本",
     cuisine: "洋食",
     area: "大阪府堺市堺区南半町東",
@@ -9360,6 +9774,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r219",
+    googleRating: 3.9,
+    googleReviewCount: 107,
     name: "JUNE COFFEE OSAKA",
     cuisine: "カフェ・ベーカリー",
     area: "大阪府堺市堺区永代町",
@@ -9391,6 +9807,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r220",
+    googleRating: 4.3,
+    googleReviewCount: 32,
     name: "お好み焼 サンタナ",
     cuisine: "お好み焼き",
     area: "広島市南区堀越",
@@ -9418,6 +9836,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r221",
+    googleRating: 4.5,
+    googleReviewCount: 55,
     name: "麵処 太楽福 湯来本店",
     cuisine: "うどん・定食",
     area: "広島市佐伯区湯来町",
@@ -9451,6 +9871,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r222",
+    googleRating: 4.2,
+    googleReviewCount: 145,
     name: "おはしとこむぎ",
     cuisine: "カフェ・定食",
     area: "広島・可部",
@@ -9490,6 +9912,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r223",
+    googleRating: 4.0,
+    googleReviewCount: 63,
     name: "めぐり食堂",
     cuisine: "定食・食堂",
     area: "滋賀・長浜",
@@ -9529,6 +9953,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r224",
+    googleRating: 4.8,
+    googleReviewCount: 13,
     name: "汽ノ舎",
     cuisine: "カフェ",
     area: "和歌山・那智勝浦",
@@ -9558,6 +9984,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r225",
+    googleRating: 4.7,
+    googleReviewCount: 300,
     name: "洋食膳処 ハレレア",
     cuisine: "洋食",
     area: "広島市中区",
@@ -9597,6 +10025,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r226",
+    googleRating: 4.7,
+    googleReviewCount: 386,
     name: "酒菜の肴 遊食家",
     cuisine: "居酒屋",
     area: "大阪・堺",
@@ -9636,6 +10066,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r227",
+    googleRating: 4.1,
+    googleReviewCount: 236,
     name: "手打ちそば 無着庵",
     cuisine: "そば",
     area: "広島市佐伯区",
@@ -9674,6 +10106,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r228",
+    googleRating: 4.3,
+    googleReviewCount: 184,
     name: "古民家カフェ 和/NAGOMI",
     cuisine: "バー・夜カフェ",
     area: "福岡・宮若",
@@ -9714,6 +10148,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r229",
+    googleRating: 4.5,
+    googleReviewCount: 41,
     name: "コーヒースタンド MENDORIn.",
     cuisine: "カフェ",
     area: "北海道・当別",
@@ -9749,6 +10185,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r230",
+    googleRating: 4.3,
+    googleReviewCount: 31,
     name: "焼とり かい華",
     cuisine: "焼鳥",
     area: "福岡・福津",
@@ -9788,6 +10226,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r231",
+    googleRating: 4.7,
+    googleReviewCount: 18,
     name: "酒楽家 なが江",
     cuisine: "居酒屋・名古屋めし",
     area: "大阪・豊中",
@@ -9827,6 +10267,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r232",
+    googleRating: 4.6,
+    googleReviewCount: 32,
     name: "焼きたてパン 笑笑",
     cuisine: "パン",
     area: "福岡・嘉麻",
@@ -9866,6 +10308,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r233",
+    googleRating: 4.1,
+    googleReviewCount: 56,
     name: "グーチョキ パンヤ",
     cuisine: "パン",
     area: "福岡・久留米",
@@ -9904,6 +10348,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r234",
+    googleRating: 4.7,
+    googleReviewCount: 47,
     name: "MACHICOCO CAFE",
     cuisine: "カフェ",
     area: "大阪・東大阪",
@@ -9941,6 +10387,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r235",
+    googleRating: 4.0,
+    googleReviewCount: 154,
     name: "和彩弥 嶋川",
     cuisine: "日本料理・居酒屋",
     area: "大阪・堺",
@@ -9980,6 +10428,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r236",
+    googleRating: 4.4,
+    googleReviewCount: 67,
     name: "ESORA（エソラ）",
     cuisine: "居酒屋・小皿料理",
     area: "大阪・東大阪",
@@ -10019,6 +10469,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r237",
+    googleRating: 4.1,
+    googleReviewCount: 160,
     name: "シップ",
     cuisine: "イタリアン",
     area: "広島市南区",
@@ -10058,6 +10510,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r238",
+    googleRating: 4.1,
+    googleReviewCount: 247,
     name: "手打ちそば屋 庵 いほり",
     cuisine: "そば",
     area: "大阪・東大阪",
@@ -10087,6 +10541,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r239",
+    googleRating: 4.2,
+    googleReviewCount: 407,
     name: "麺や 貴一",
     cuisine: "ラーメン",
     area: "北海道・札幌",
@@ -10126,6 +10582,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     id: "r240",
+    googleRating: 4.3,
+    googleReviewCount: 80,
     name: "和心イタリアン Hitotsu",
     cuisine: "イタリアン・和食",
     area: "大阪・堺",
