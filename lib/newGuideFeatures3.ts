@@ -103,7 +103,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_3: Record<string, FeatureArticle> = {
     ],
     sideArticles: [
       side("六本木・港区夜景5選", "new-roppongi-night", I.rainbow),
-      side("お台場デート5選", "new-odaiba-date", I.rainbow),
+      side("銀座・丸の内デート5選", "new-ginza-marunouchi", I.shibuya),
     ],
     quote: "東京タワーは昼間の赤白コントラストも美しいが、夜のオレンジ発光が東京で最も「古典的に美しい」夜景。",
     quoteCite: author,
@@ -557,8 +557,8 @@ export const NEW_GUIDE_FEATURE_ARTICLES_3: Record<string, FeatureArticle> = {
         [I.rainbow], [{ k: "最寄り駅", v: "市場前駅 直結" }, { k: "料金", v: "各自" }]),
     ],
     sideArticles: [
-      side("お台場デート5選", "new-odaiba-date", I.rainbow),
-      side("東京夜景5選", "new-tokyo-night-view", I.rainbow),
+      side("東京スカイツリー周辺5選", "new-skytree-area", I.skytree),
+      side("六本木・港区夜景5選", "new-roppongi-night", I.rainbow),
     ],
     quote: "豊洲は市場・デジタルアート・温泉が徒歩圏内。東京湾岸の新しいエンタメ拠点として急成長中。",
     quoteCite: author,
@@ -662,8 +662,8 @@ export const NEW_GUIDE_FEATURE_ARTICLES_3: Record<string, FeatureArticle> = {
         [I.rainbow], [{ k: "最寄り駅", v: "天王洲アイル駅 徒歩5分" }, { k: "料金", v: "無料" }]),
     ],
     sideArticles: [
-      side("お台場デート5選", "new-odaiba-date", I.rainbow),
-      side("東京タワー周辺5選", "new-tokyo-tower-area", I.rainbow),
+      side("六本木・港区夜景5選", "new-roppongi-night", I.rainbow),
+      side("東京スカイツリー周辺5選", "new-skytree-area", I.skytree),
     ],
     quote: "東京の夜景は「高さ」「橋」「水辺」で全く違う表情になる。3か所以上巡ると東京の夜景の全貌が見えてくる。",
     quoteCite: author,
