@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
-import { RESTAURANTS, REGIONS, FEATURES } from "@/lib/data";
+import { RESTAURANTS, REGIONS, FEATURES, type RegionKey } from "@/lib/data";
 import { SCENES } from "@/lib/scenes";
+import { getFeatureCountsByRegion } from "@/lib/featureRegions";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -45,5 +46,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...restaurants, ...regions, ...features, ...scenes];
+  const featureCounts = getFeatureCountsByRegion();
+  const featureRegionHubs: MetadataRoute.Sitemap = (
+    Object.keys(REGIONS) as RegionKey[]
+  )
+    .filter((k) => featureCounts[k] > 0)
+    .map((k) => ({
+      url: `${BASE}/feature/region/${k}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    }));
+
+  return [
+    ...staticPages,
+    ...restaurants,
+    ...regions,
+    ...features,
+    ...scenes,
+    ...featureRegionHubs,
+  ];
 }

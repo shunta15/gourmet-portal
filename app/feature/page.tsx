@@ -1,14 +1,27 @@
-import Link from "next/link";
 import Footer from "@/components/Footer";
-import { FEATURES } from "@/lib/data";
+import FeatureListClient from "@/components/FeatureListClient";
+import { FEATURES, REGIONS, type RegionKey } from "@/lib/data";
+import {
+  getFeatureRegions,
+  getFeatureCountsByRegion,
+} from "@/lib/featureRegions";
 
 export const metadata = {
   title: "特集記事 一覧 — マチノワ",
   description:
-    "編集部が週替わりでお届けする特集記事。旅・季節・隠れ家・深夜ガイドまで。",
+    "編集部が週替わりでお届けする特集記事。旅・季節・隠れ家・深夜ガイドまで。地域とキーワードで絞り込めます。",
+  alternates: { canonical: "/feature" },
 };
 
 export default function FeatureIndexPage() {
+  const regionMap: Record<string, RegionKey[]> = Object.fromEntries(
+    FEATURES.map((f) => [f.id, getFeatureRegions(f.id)])
+  );
+  const counts = getFeatureCountsByRegion();
+  const availableRegions = (Object.keys(REGIONS) as RegionKey[]).filter(
+    (k) => counts[k] > 0
+  );
+
   return (
     <>
       <section className="feat-hero" style={{ minHeight: 480 }}>
@@ -37,40 +50,19 @@ export default function FeatureIndexPage() {
               }}
             >
               旅、季節、隠れ家、深夜の動線。週替わりで、街の食卓を巡ります。
+              地域・キーワードでも絞り込めます。
             </p>
           </div>
         </div>
       </section>
 
-      <section className="features" style={{ paddingTop: 80 }}>
-        <div className="features-carousel" style={{ flexWrap: "wrap" }}>
-          {FEATURES.map((f) => (
-            <Link
-              key={f.id}
-              href={`/feature/${f.id}`}
-              className="feature-card"
-              data-cursor="READ"
-              style={{ flex: "0 0 min(420px, 90vw)" }}
-            >
-              <div
-                className="img"
-                style={{ backgroundImage: `url(${f.image})` }}
-              />
-              <div className="big-no">{f.no}</div>
-              <div className="meta">
-                <span className="tag">{f.tag}</span>
-                <span>{f.kicker}</span>
-              </div>
-              <div className="body">
-                <div className="kicker">特集 / {f.no}</div>
-                <h3>{f.title}</h3>
-                <p>{f.sub}</p>
-                <span className="read">記事を読む →</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <div style={{ height: 40 }} />
+
+      <FeatureListClient
+        features={FEATURES}
+        regionMap={regionMap}
+        availableRegions={availableRegions}
+      />
 
       <Footer />
     </>
