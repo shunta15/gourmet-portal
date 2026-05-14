@@ -38,8 +38,86 @@ function spot(rankNum: number, city: string, name: string, angle: string, image:
   };
 }
 
+/**
+ * 各ガイド記事のヒーロー画像（Wikimedia Commons、HTTP 200 疎通済み）。
+ * 旧来の /guide-assets/*.svg プレースホルダーは廃止。地名・施設名と
+ * 一致する実写画像を割り当てる。出典確認日 2026-05-15。
+ */
+const GUIDE_IMG: Record<string, string> = {
+  // 神奈川
+  "guide-yokohama-sightseeing-spots":   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yamashita_Park_%40_Yokohama_%289054590638%29.jpg/1280px-Yamashita_Park_%40_Yokohama_%289054590638%29.jpg",
+  "guide-yokohama-minatomirai-date":    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg/1280px-Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg",
+  "guide-yokohama-rainy-day-spots":     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yamashita_Park_%40_Yokohama_%289054590638%29.jpg/1280px-Yamashita_Park_%40_Yokohama_%289054590638%29.jpg",
+  "guide-kamakura-daytrip-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tsurugaoka_Hachimangu_001.jpg/1280px-Tsurugaoka_Hachimangu_001.jpg",
+  "guide-kamakura-rainy-day-spots":     "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Engakuji%2C_Kamakura.jpg/1280px-Engakuji%2C_Kamakura.jpg",
+  "guide-hakone-daytrip-spots":         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Owakudani_%40_Hakone_%2810621413133%29.jpg/1280px-Owakudani_%40_Hakone_%2810621413133%29.jpg",
+  "guide-odawara-castle-town":          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Odawara_Castle_20211201.jpg/1280px-Odawara_Castle_20211201.jpg",
+  "guide-kawasaki-family-spots":        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Kawasaki_Industrial_Area_Japan_08_%2894111183%29.jpeg/1280px-Kawasaki_Industrial_Area_Japan_08_%2894111183%29.jpeg",
+  "guide-enoshima-date-spots":          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Enoshima_20170210-2.jpg/1280px-Enoshima_20170210-2.jpg",
+  // 東京
+  "guide-tokyo-first-trip-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg",
+  "guide-tokyo-rainy-day-spots":        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg",
+  "guide-tokyo-family-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg",
+  "guide-asakusa-ueno-walk":            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg",
+  "guide-shibuya-harajuku-date":        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
+  // 京都
+  "guide-kyoto-rainy-day-spots":        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+  "guide-kyoto-arashiyama-halfday":     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Togetsu-ky%C5%8D_bridge_at_golden_hour%2C_Kyoto%2C_Japan.jpg/1280px-Togetsu-ky%C5%8D_bridge_at_golden_hour%2C_Kyoto%2C_Japan.jpg",
+  "guide-kyoto-gion-date":              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Gion_Hanamik%C3%B4ji-d%C3%B4ri.jpg/1280px-Gion_Hanamik%C3%B4ji-d%C3%B4ri.jpg",
+  "guide-kyoto-family-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
+  // 大阪
+  "guide-osaka-rainy-day-spots":        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/1280px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
+  "guide-osaka-namba-date":             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dotonbori_Glico_LED_signs_at_night%2C3rd_November_2014.JPG/1280px-Dotonbori_Glico_LED_signs_at_night%2C3rd_November_2014.JPG",
+  "guide-osaka-family-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/1280px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
+  "guide-osaka-umeda-date":             "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Umeda_Sky_Building%2C_Osaka%2C_November_2016_-01.jpg/1280px-Umeda_Sky_Building%2C_Osaka%2C_November_2016_-01.jpg",
+  // 神戸
+  "guide-kobe-rainy-day-spots":         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kobe_Meriken_Park01bs3200.jpg/1280px-Kobe_Meriken_Park01bs3200.jpg",
+  "guide-kobe-kitano-walk":             "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg/1280px-Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg",
+  // 名古屋
+  "guide-nagoya-rainy-day-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1280px-Nagoya_Castle%28Larger%29.jpg",
+  "guide-nagoya-family-spots":          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1280px-Nagoya_Castle%28Larger%29.jpg",
+  // 奈良
+  "guide-nara-rainy-day-spots":         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
+  "guide-nara-family-spots":            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
+  // 広島
+  "guide-hiroshima-sightseeing-spots":  "https://upload.wikimedia.org/wikipedia/commons/5/51/A-Bomb_Dome.jpg",
+  "guide-hiroshima-rainy-day-spots":    "https://upload.wikimedia.org/wikipedia/commons/5/51/A-Bomb_Dome.jpg",
+  "guide-hiroshima-miyajima-daytrip":   "https://upload.wikimedia.org/wikipedia/commons/f/fe/Itsukushima_torii_angle.jpg",
+  // 福岡
+  "guide-fukuoka-sightseeing-spots":    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hakata_Station_20180306.jpg/1280px-Hakata_Station_20180306.jpg",
+  "guide-fukuoka-date-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hakata_Station_20180306.jpg/1280px-Hakata_Station_20180306.jpg",
+  "guide-fukuoka-rainy-day-spots":      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hakata_Station_20180306.jpg/1280px-Hakata_Station_20180306.jpg",
+  // 静岡
+  "guide-shizuoka-fuji-view-spots":     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg/1280px-Mount_Fuji_at_sunset%2C_March_2025.jpg",
+  "guide-shizuoka-family-spots":        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg/1280px-Mount_Fuji_at_sunset%2C_March_2025.jpg",
+  // 北海道
+  "guide-sapporo-sightseeing-spots":    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sapporo_TV_tower_20230709_01.jpg/1280px-Sapporo_TV_tower_20230709_01.jpg",
+  "guide-sapporo-winter-spots":         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sapporo_TV_tower_20230709_01.jpg/1280px-Sapporo_TV_tower_20230709_01.jpg",
+  // 埼玉
+  "guide-saitama-omiya-spots":          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hikawa_Shrine%2C_Omiya_-_Jan_2%2C_2025.jpg/1280px-Hikawa_Shrine%2C_Omiya_-_Jan_2%2C_2025.jpg",
+  "guide-kawagoe-sightseeing-spots":    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kawagoe_Toki_no_Kane_1.jpg/1280px-Kawagoe_Toki_no_Kane_1.jpg",
+  // 滋賀
+  "guide-shiga-biwako-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Top_view_of_Lake_Biwa.jpg/1280px-Top_view_of_Lake_Biwa.jpg",
+  "guide-otsu-date-spots":              "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Otsu_Mangetsu-ji_Ukimido_18.jpg/1280px-Otsu_Mangetsu-ji_Ukimido_18.jpg",
+  // 和歌山
+  "guide-wakayama-sightseeing-spots":   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wakayama_Castle_Nishinomaru_Garden04bs3200.jpg/1280px-Wakayama_Castle_Nishinomaru_Garden04bs3200.jpg",
+  "guide-koyasan-spots":                "https://upload.wikimedia.org/wikipedia/commons/b/bf/Koyasan%2C_Kongobu-ji_%282005%29_01.jpg",
+  // 鹿児島
+  "guide-kagoshima-sightseeing-spots":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sakurajima55.jpg/1280px-Sakurajima55.jpg",
+  "guide-kagoshima-family-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sakurajima55.jpg/1280px-Sakurajima55.jpg",
+  // 群馬
+  "guide-gunma-onsen-spots":            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/2023.04.26_Yubatake_%28Kusatsu_Onsen%29.jpg/1280px-2023.04.26_Yubatake_%28Kusatsu_Onsen%29.jpg",
+  "guide-takasaki-maebashi-spots":      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Takasaki-byakui-dai-Kannon.jpg",
+  // 兵庫
+  "guide-himeji-sightseeing-spots":     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/1280px-Himeji_Castle%2C_November_2016_-02.jpg",
+  "guide-nishinomiya-date-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Nishinomiya-jinja01s4592.jpg/1280px-Nishinomiya-jinja01s4592.jpg",
+};
+
+const FALLBACK_GUIDE_IMG =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yamashita_Park_%40_Yokohama_%289054590638%29.jpg/1280px-Yamashita_Park_%40_Yokohama_%289054590638%29.jpg";
+
 function guideImage(id: string): string {
-  return `/guide-assets/${id}.svg`;
+  return GUIDE_IMG[id] ?? FALLBACK_GUIDE_IMG;
 }
 
 const seeds: GuideSeed[] = [

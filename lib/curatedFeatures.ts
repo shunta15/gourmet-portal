@@ -44,7 +44,7 @@ export const CURATED_FEATURES: Feature[] = [
     kicker: "KYOTO CITY GUIDE",
     title: "京都市観光スポット5選。初めての京都で外さない場所",
     sub: "清水寺、伏見稲荷、二条城。王道をただ並べず、歩き方で選ぶ京都案内",
-    image: "/guide-assets/guide-editorial.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
   },
   {
     id: "guide-osaka-sightseeing-spots",
@@ -53,7 +53,7 @@ export const CURATED_FEATURES: Feature[] = [
     kicker: "OSAKA CITY GUIDE",
     title: "大阪市観光スポット5選。半日でも回りやすい王道ルート",
     sub: "大阪城、中之島、道頓堀、新世界、梅田。街の表情が変わる5スポット",
-    image: "/guide-assets/guide-editorial.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/1280px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
   },
   {
     id: "guide-kobe-date-spots",
@@ -62,7 +62,7 @@ export const CURATED_FEATURES: Feature[] = [
     kicker: "KOBE DATE GUIDE",
     title: "神戸市でデート行くなら5選。昼から夜景までつながる場所",
     sub: "港、異人館、ハーブ園、六甲山。会話が続く神戸デートの行き先",
-    image: "/guide-assets/guide-editorial.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kobe_Meriken_Park01bs3200.jpg/1280px-Kobe_Meriken_Park01bs3200.jpg",
   },
   {
     id: "guide-nagoya-date-spots",
@@ -71,7 +71,7 @@ export const CURATED_FEATURES: Feature[] = [
     kicker: "NAGOYA DATE GUIDE",
     title: "名古屋市でデート行くなら5選。雨の日でも使いやすい街歩き",
     sub: "城、庭園、商店街、夜景。名古屋の距離感で選ぶデートスポット",
-    image: "/guide-assets/guide-editorial.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1280px-Nagoya_Castle%28Larger%29.jpg",
   },
   {
     id: "guide-nara-sightseeing-spots",
@@ -80,7 +80,7 @@ export const CURATED_FEATURES: Feature[] = [
     kicker: "NARA CITY GUIDE",
     title: "奈良市観光スポット5選。半日で古都を深く歩く",
     sub: "奈良公園、東大寺、春日大社、ならまち。徒歩でつながる古都の入口",
-    image: "/guide-assets/guide-editorial.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
   },
   {
     id: "scene-osaka-fukushima-date",
@@ -188,7 +188,7 @@ export const CURATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date,
     reading: "約6分",
     author,
-    heroImage: "/guide-assets/guide-editorial.svg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
     ranking: [
       spot(1, {
         name: "清水寺",
@@ -283,7 +283,7 @@ export const CURATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date,
     reading: "約6分",
     author,
-    heroImage: "/guide-assets/guide-editorial.svg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/1280px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
     ranking: [
       spot(1, {
         name: "大阪城公園",
@@ -378,7 +378,7 @@ export const CURATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date,
     reading: "約5分",
     author,
-    heroImage: "/guide-assets/guide-editorial.svg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kobe_Meriken_Park01bs3200.jpg/1280px-Kobe_Meriken_Park01bs3200.jpg",
     ranking: [
       spot(1, {
         name: "神戸ハーバーランド",
@@ -473,7 +473,7 @@ export const CURATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date,
     reading: "約5分",
     author,
-    heroImage: "/guide-assets/guide-editorial.svg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1280px-Nagoya_Castle%28Larger%29.jpg",
     ranking: [
       spot(1, {
         name: "名古屋城",
@@ -568,7 +568,7 @@ export const CURATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date,
     reading: "約5分",
     author,
-    heroImage: "/guide-assets/guide-editorial.svg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
     ranking: [
       spot(1, {
         name: "奈良公園",
