@@ -10,6 +10,14 @@ import {
   NEW_GUIDE_FEATURE_ARTICLES,
   NEW_GUIDE_FEATURES,
 } from "./newGuideFeatures";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES_2,
+  NEW_GUIDE_FEATURES_2,
+} from "./newGuideFeatures2";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES_3,
+  NEW_GUIDE_FEATURES_3,
+} from "./newGuideFeatures3";
 
 export type Stat = { n: string; l: string };
 
@@ -12257,6 +12265,8 @@ const GENERATED_FEATURES: Feature[] = [
 
 export const FEATURES: Feature[] = [
   ...NEW_GUIDE_FEATURES,
+  ...NEW_GUIDE_FEATURES_2,
+  ...NEW_GUIDE_FEATURES_3,
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
@@ -25245,6 +25255,8 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...CITY_GUIDE_FEATURE_ARTICLES,
   ...GENERATED_FEATURE_ARTICLES,
   ...NEW_GUIDE_FEATURE_ARTICLES,
+  ...NEW_GUIDE_FEATURE_ARTICLES_2,
+  ...NEW_GUIDE_FEATURE_ARTICLES_3,
 };
 
 export const SHORT_VIDEOS: ShortVideo[] = [
