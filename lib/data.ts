@@ -18,6 +18,18 @@ import {
   NEW_GUIDE_FEATURE_ARTICLES_3,
   NEW_GUIDE_FEATURES_3,
 } from "./newGuideFeatures3";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES_4,
+  NEW_GUIDE_FEATURES_4,
+} from "./newGuideFeatures4";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES_5,
+  NEW_GUIDE_FEATURES_5,
+} from "./newGuideFeatures5";
+import {
+  NEW_GUIDE_FEATURE_ARTICLES_6,
+  NEW_GUIDE_FEATURES_6,
+} from "./newGuideFeatures6";
 
 export type Stat = { n: string; l: string };
 
@@ -12267,6 +12279,9 @@ export const FEATURES: Feature[] = [
   ...NEW_GUIDE_FEATURES,
   ...NEW_GUIDE_FEATURES_2,
   // NEW_GUIDE_FEATURES_3 は品質向上まで一時的にnoindex（FEATURE_ARTICLESには残存・URL有効）
+  ...NEW_GUIDE_FEATURES_4,   // NG-66,71,75,76,77,78,79 の7本をindex追加
+  ...NEW_GUIDE_FEATURES_5,   // NG-80,81,88,90 の4本をindex追加
+  ...NEW_GUIDE_FEATURES_6,   // NG-102 の1本をindex追加
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
@@ -25257,6 +25272,9 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEW_GUIDE_FEATURE_ARTICLES,
   ...NEW_GUIDE_FEATURE_ARTICLES_2,
   ...NEW_GUIDE_FEATURE_ARTICLES_3,
+  ...NEW_GUIDE_FEATURE_ARTICLES_4,
+  ...NEW_GUIDE_FEATURE_ARTICLES_5,
+  ...NEW_GUIDE_FEATURE_ARTICLES_6,
 };
 
 export const SHORT_VIDEOS: ShortVideo[] = [
