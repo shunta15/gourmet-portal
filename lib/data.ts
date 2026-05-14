@@ -12266,7 +12266,7 @@ const GENERATED_FEATURES: Feature[] = [
 export const FEATURES: Feature[] = [
   ...NEW_GUIDE_FEATURES,
   ...NEW_GUIDE_FEATURES_2,
-  ...NEW_GUIDE_FEATURES_3,
+  // NEW_GUIDE_FEATURES_3 は品質向上まで一時的にnoindex（FEATURE_ARTICLESには残存・URL有効）
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
