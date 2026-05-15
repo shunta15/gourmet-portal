@@ -91,13 +91,13 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
   // Kitchen&Bar Qualia (福岡市西区姪の浜)
   // 画像: public/restaurants/qualia/image_1〜6.jpg (オーナー提供)
   "feature-qualia-meinohama": {
-    id: "feature-qualia-meinohama", no: "ST-Q01", articleType: "guide",
+    id: "feature-qualia-meinohama", no: "", articleType: "guide",
     kicker: "QUALIA MEINOHAMA",
     title: "姪浜デートに使いたいKitchen&Bar Qualiaの魅力5選。創作イタリアンと本格カクテルで過ごす大人の夜",
-    titleHTML: "姪浜デートの夜。<br>Kitchen&Bar Qualia 魅力5選",
+    titleHTML: "Qualia、<br>姪浜の<em>夜。</em>",
     subtitle: "創作イタリアンと本格カクテル。福岡市西区姪の浜で、食事もお酒も1軒で完結する大人の夜",
     lede: "天神や博多から地下鉄空港線で約15分、福岡市西区の姪浜（めいのはま）は海と住宅街が同居する落ち着いたエリア。観光客で混む天神中心部とは違い、夜は地元の人たちが静かにディナーを楽しむ街。その姪浜で「料理もお酒も1軒で完結できる」場所として、Kitchen&Bar Qualia（クオリア）が地元のデート層に選ばれている。この記事では、姪浜デートや記念日ディナー、二軒目のバー利用までを1軒で組めるKitchen&Bar Qualiaの魅力を、5つの視点で紹介する。",
-    date, reading: "約8分", author,
+    date, reading: "", author,
     heroImage: "/restaurants/qualia/image_1.jpg",
     ranking: [
       p(1, "1軒で完結する Kitchen & Bar の業態", "創作イタリアン・バー", "姪の浜",

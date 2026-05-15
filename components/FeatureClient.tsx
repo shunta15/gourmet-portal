@@ -20,11 +20,19 @@ function FeatureHero({ article }: { article: FeatureArticle }) {
         <div>
           <div className="kicker">
             <span className="b"></span>
-            <span>{article.no}</span>
-            <span>·</span>
+            {article.no && (
+              <>
+                <span>{article.no}</span>
+                <span>·</span>
+              </>
+            )}
             <span>{article.date}</span>
-            <span>·</span>
-            <span>{article.reading}</span>
+            {article.reading && (
+              <>
+                <span>·</span>
+                <span>{article.reading}</span>
+              </>
+            )}
           </div>
           <div style={{ marginTop: 30 }} className="reveal-line">
             <div
