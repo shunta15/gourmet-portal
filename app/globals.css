@@ -382,9 +382,9 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .side-card .t{font:500 9px/1 var(--mono); letter-spacing:.2em; opacity:.8; margin-bottom:6px}
 
 .quote-block{padding:120px 40px; text-align:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
-.quote-block .quote-label{font:500 11px/1 var(--mono); letter-spacing:.35em; color:var(--accent); margin-bottom:36px}
-.quote-block .quote-label::before{content:""; display:inline-block; width:24px; height:1px; background:var(--accent); vertical-align:middle; margin-right:14px; transform:translateY(-1px)}
-.quote-block .quote-label::after{content:""; display:inline-block; width:24px; height:1px; background:var(--accent); vertical-align:middle; margin-left:14px; transform:translateY(-1px)}
+.quote-block .quote-label{font:500 clamp(16px,1.8vw,22px)/1 var(--mono); letter-spacing:.3em; color:var(--accent); margin-bottom:48px}
+.quote-block .quote-label::before{content:""; display:inline-block; width:40px; height:1.5px; background:var(--accent); vertical-align:middle; margin-right:20px; transform:translateY(-2px)}
+.quote-block .quote-label::after{content:""; display:inline-block; width:40px; height:1.5px; background:var(--accent); vertical-align:middle; margin-left:20px; transform:translateY(-2px)}
 .quote-block blockquote{font:400 clamp(28px,4vw,56px)/1.4 var(--serif); max-width:1200px; margin:0 auto; font-style:italic}
 .quote-block blockquote::before{content:"「"; color:var(--accent); font-size:1.5em; vertical-align:-0.1em}
 .quote-block blockquote::after{content:"」"; color:var(--accent); font-size:1.5em; vertical-align:-0.1em}
