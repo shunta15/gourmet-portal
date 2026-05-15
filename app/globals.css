@@ -292,9 +292,11 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .article-head .sub{font:400 15px/1.9 var(--body); color:var(--ink-soft); margin-top:20px; max-width:640px}
 
 .ranking{display:flex; flex-direction:column; gap:40px}
-.rank-item{display:grid; grid-template-columns:120px 1.2fr 1fr; gap:40px; padding:30px 0; border-top:1px solid var(--line); position:relative}
+.rank-item{display:grid; grid-template-columns:140px 1.2fr 1fr; gap:40px; padding:30px 0; border-top:1px solid var(--line); position:relative}
 .rank-item .rank{font:600 clamp(80px,10vw,140px)/0.9 var(--serif); letter-spacing:-.04em}
 .rank-item .rank em{font-style:italic; color:var(--accent)}
+/* POINT / SPOT などの英字ラベル付きランクは、ラベルを小さく上に置いて数字を大きく見せる */
+.rank-item .rank .rank-label{display:block; font:500 11px/1 var(--mono); letter-spacing:.3em; color:var(--accent); margin-bottom:14px; opacity:.85}
 .rank-item .info h3{font:500 32px/1.2 var(--serif); margin-bottom:10px}
 .rank-item .cuisine{font:500 11px/1 var(--mono); letter-spacing:.25em; color:var(--accent); margin-bottom:20px}
 .rank-item .desc{font:400 14px/1.9 var(--body); color:var(--ink-soft); max-width:480px; margin-bottom:20px}

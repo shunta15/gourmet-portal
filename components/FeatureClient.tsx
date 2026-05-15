@@ -147,10 +147,20 @@ function RankingList({ article }: { article: FeatureArticle }) {
 
   return (
     <div className="ranking">
-      {article.ranking.map((r, i) => (
+      {article.ranking.map((r, i) => {
+        // "POINT 01" / "SPOT 01" のような英字＋数字は分割表示
+        const labelMatch = r.rank.match(/^([A-Z]+)\s+(\d+)$/);
+        return (
         <article key={i} className="rank-item reveal">
           <div className="rank">
-            <em>{r.rank}</em>
+            {labelMatch ? (
+              <>
+                <span className="rank-label">{labelMatch[1]}</span>
+                <em>{labelMatch[2]}</em>
+              </>
+            ) : (
+              <em>{r.rank}</em>
+            )}
           </div>
           <div className="info">
             <div className="cuisine">
@@ -193,7 +203,8 @@ function RankingList({ article }: { article: FeatureArticle }) {
             ))}
           </div>
         </article>
-      ))}
+        );
+      })}
     </div>
   );
 }
