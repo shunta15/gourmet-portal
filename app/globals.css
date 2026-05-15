@@ -303,6 +303,8 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .rank-item .imgs{display:grid; grid-template-columns:2fr 1fr; gap:8px; grid-template-rows:repeat(2,120px)}
 .rank-item .imgs .im{background-size:cover; background-position:center; transition:transform .6s}
 .rank-item .imgs .im:nth-child(1){grid-row:span 2}
+/* 単店舗特集など 1画像のみの spot は、横長コンテナで縦方向の見切れを抑える */
+.rank-item .imgs .im:only-child{grid-column:span 2; grid-row:span 2; min-height:320px}
 .rank-item:hover .imgs .im{transform:scale(1.04)}
 
 /* search bar ------------------------------------- */
@@ -543,6 +545,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 
   .rank-item .imgs{grid-template-columns:1fr; grid-template-rows:repeat(3,140px)}
   .rank-item .imgs .im:nth-child(1){grid-row:auto}
+  .rank-item .imgs .im:only-child{grid-row:span 2; min-height:280px}
 
   .side-grid{grid-template-columns:1fr}
 }
