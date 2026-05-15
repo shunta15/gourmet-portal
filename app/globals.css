@@ -1282,6 +1282,28 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .feat-hero{height:55vh; min-height:380px}
 }
 
+/* ============================================== */
+/* Feature article hero: content drives height     */
+/* ============================================== */
+/* 特集記事ページは紹介文も含むので、高さを縮めず内容が必ず収まるようにする */
+.feat-page .feat-hero{height:auto; min-height:100vh; max-height:none}
+.feat-page .feat-hero-inner{min-height:100vh}
+@supports (height: 100svh){
+  .feat-page .feat-hero{min-height:100svh}
+  .feat-page .feat-hero-inner{min-height:100svh}
+}
+@media (max-width: 768px){
+  .feat-page .feat-hero{height:auto !important; min-height:100vh !important; max-height:none !important}
+  .feat-page .feat-hero-inner{min-height:100vh}
+  .feat-page .feat-hero h1{font-size:clamp(28px, 8vw, 48px) !important}
+}
+@media (max-width: 1024px) and (min-width: 769px){
+  .feat-page .feat-hero{height:auto; min-height:100vh; max-height:none}
+}
+@media (max-width: 480px){
+  .feat-page .feat-hero{height:auto !important; min-height:100vh !important}
+}
+
 /* prefers-reduced-data: 低速回線では opacity を上げて画像数を減らした見え方に */
 @media (prefers-reduced-data: reduce){
   .feat-hero .hero-media .img-wrap{opacity:0}

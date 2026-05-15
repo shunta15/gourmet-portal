@@ -30,7 +30,7 @@ export async function generateMetadata({
       title: a.title,
       description: a.lede,
       url: `https://machinowa.tokyo/feature/${a.id}`,
-      images: [a.heroImage],
+      images: [a.ogImage ?? a.heroImage],
       type: "article",
       locale: "ja_JP",
     },

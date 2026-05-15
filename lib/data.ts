@@ -137,6 +137,9 @@ export type FeatureArticle = {
   reading: string;
   author: string;
   heroImage: string;
+  // OGP/Twitter Card 用の上書き画像。指定がなければ heroImage を使用。
+  // 例: hero がプレースホルダのドラフトでも、SNS シェア時には別の画像を見せたい場合に。
+  ogImage?: string;
   ranking: RankItem[];
   sideArticles: { t: string; h: string; img: string }[];
   quote: string;
