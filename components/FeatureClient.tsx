@@ -258,9 +258,15 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
   useReveal();
   const A = article;
   const isGuide = A.articleType === "guide";
-  const introText = isGuide
-    ? `順位ではなく、編集部が選んだ${A.ranking.length}スポットを順にご紹介します。`
-    : `順位ではなく、編集部が選んだ${A.ranking.length}軒の名店を順にご紹介します。`;
+  // 単店舗特集（POINT 表記の記事）は「魅力○選」に切り替える
+  const isSinglePoint =
+    A.ranking.length > 0 && /^POINT/i.test(A.ranking[0].rank);
+  const headLabel = isSinglePoint ? "魅力" : "厳選";
+  const introText = isSinglePoint
+    ? `編集部が選んだ${A.ranking.length}つの魅力を順にご紹介します。`
+    : isGuide
+      ? `順位ではなく、編集部が選んだ${A.ranking.length}スポットを順にご紹介します。`
+      : `順位ではなく、編集部が選んだ${A.ranking.length}軒の名店を順にご紹介します。`;
 
   return (
     <div className="feat-page">
@@ -270,7 +276,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
           A.subtitle,
           "編集部厳選",
           A.kicker,
-          "厳選五選",
+          isSinglePoint ? "魅力五選" : "厳選五選",
           "2026年 春号",
         ]}
       />
@@ -281,7 +287,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
         <section className="article">
           <div className="article-head reveal">
             <div className="label">
-              厳選
+              {headLabel}
               <span className="big">{A.ranking.length}</span>
             </div>
             <div>
