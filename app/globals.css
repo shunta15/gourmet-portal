@@ -264,13 +264,13 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .feat-hero{position:relative; min-height:100vh; background:var(--ink); color:#f4efe3; overflow:hidden}
 .feat-hero .img{position:absolute; inset:0; background-size:cover; background-position:center; opacity:.55; transform:scale(1.05)}
 .feat-hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,17,13,.25) 0%, rgba(20,17,13,0) 35%, rgba(20,17,13,.7) 100%)}
-.feat-hero-inner{position:relative; z-index:2; min-height:100vh; padding:140px 40px 60px; display:flex; flex-direction:column; justify-content:space-between; gap:60px}
+.feat-hero-inner{position:relative; z-index:2; min-height:100vh; padding:120px 40px 60px; display:flex; flex-direction:column; justify-content:space-between; gap:48px; box-sizing:border-box}
 .feat-hero .kicker{font:500 11px/1 var(--mono); letter-spacing:.3em; opacity:.8; display:flex; gap:16px; align-items:center}
 .feat-hero .kicker .b{width:24px; height:1px; background:var(--accent)}
-.feat-hero h1{font:600 clamp(60px,10vw,160px)/0.95 var(--serif); letter-spacing:-.02em; max-width:1200px}
+.feat-hero h1{font:600 clamp(56px,8vw,128px)/0.95 var(--serif); letter-spacing:-.02em; max-width:1200px}
 .feat-hero h1 em{font-style:italic; color:var(--accent); font-weight:400}
 .feat-hero .bot{display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; align-items:end; padding-top:30px; border-top:1px solid rgba(244,239,227,.25)}
-.feat-hero .bot p{max-width:540px; font:400 14px/1.9 var(--body); opacity:.85}
+.feat-hero .bot p{max-width:540px; font:400 14px/1.85 var(--body); opacity:.85; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden}
 .feat-hero .bot .dt h6{font:500 10px/1 var(--mono); letter-spacing:.3em; opacity:.6; margin-bottom:10px}
 .feat-hero .bot .dt p{font:500 14px/1.5 var(--body); opacity:1}
 
@@ -484,9 +484,10 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .footer-bot{flex-direction:column; gap:8px; padding-top:20px}
 
   /* feature page */
-  .feat-hero-inner{padding:120px 20px 40px}
+  .feat-hero-inner{padding:100px 20px 40px; gap:32px}
   .feat-hero h1{font-size:clamp(40px,9vw,72px)}
-  .feat-hero .bot{grid-template-columns:1fr; gap:24px; padding-top:24px}
+  .feat-hero .bot{grid-template-columns:1fr; gap:18px; padding-top:20px}
+  .feat-hero .bot p{-webkit-line-clamp:5; font-size:13px; line-height:1.8}
 
   .feat-body{padding:0 20px}
   .tabs{margin-top:40px}
