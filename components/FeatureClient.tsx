@@ -315,6 +315,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
         </section>
 
         <section className="quote-block">
+          <div className="quote-label">編集部のひとこと</div>
           <blockquote>{A.quote}</blockquote>
           <cite>{A.quoteCite}</cite>
         </section>
