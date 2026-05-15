@@ -5,27 +5,38 @@
 set -eo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-DATA_FILE="$ROOT/lib/data.ts"
+LIB_DIR="$ROOT/lib"
 PUBLIC_DIR="$ROOT/public"
 
-if [[ ! -f "$DATA_FILE" ]]; then
-  echo "ERROR: $DATA_FILE not found"
+if [[ ! -d "$LIB_DIR" ]]; then
+  echo "ERROR: $LIB_DIR not found"
   exit 1
 fi
 
 fail=0
 
 # 1) 外部画像URL（拡張子付き or images.unsplash.com）の疎通確認
+# data.ts 単独ではなく lib/ 配下を全部 scan する。import 元の
+# newGuideFeatures*.ts や curatedFeatures.ts の URL も対象にする。
 remote_urls=$( {
-  grep -oE 'https?://[a-zA-Z0-9./?&=_:%~+\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)(\?[^"]*)?' "$DATA_FILE" || true
-  grep -oE 'https://images\.unsplash\.com/photo-[a-z0-9-]+(\?[^"]*)?' "$DATA_FILE" || true
+  grep -rEho 'https?://[a-zA-Z0-9./?&=_:%~+\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
+  grep -rEho 'https://images\.unsplash\.com/photo-[a-z0-9-]+(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
 } | sort -u )
 
 if [[ -n "$remote_urls" ]]; then
   echo "[1/2] checking remote image URLs..."
   while IFS= read -r url; do
     [[ -z "$url" ]] && continue
-    code=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 8 "$url" || echo "000")
+    # 1回目で 429/503 (Wikimedia rate-limit) なら待ってから 2回目を試す
+    code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (compatible; MachinowaBot/1.0)" --max-time 10 "$url" 2>/dev/null || echo "000")
+    if [[ "$code" == "429" || "$code" == "503" ]]; then
+      sleep 4
+      code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (compatible; MachinowaBot/1.0)" --max-time 10 "$url" 2>/dev/null || echo "000")
+    fi
+    if [[ "$code" == "429" || "$code" == "503" ]]; then
+      sleep 8
+      code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (compatible; MachinowaBot/1.0)" --max-time 10 "$url" 2>/dev/null || echo "000")
+    fi
     if [[ "$code" != "200" ]]; then
       echo "  NG  $code  $url"
       fail=1
@@ -34,7 +45,7 @@ if [[ -n "$remote_urls" ]]; then
 fi
 
 # 2) ローカル画像パス（"/xxx/...拡張子"）が public 配下に実在するか
-local_paths=$(grep -oE '"/[a-zA-Z0-9_\-]+/[a-zA-Z0-9_./\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)"' "$DATA_FILE" | tr -d '"' | sort -u || true)
+local_paths=$(grep -rEho '"/[a-zA-Z0-9_\-]+/[a-zA-Z0-9_./\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)"' "$LIB_DIR" 2>/dev/null | tr -d '"' | sort -u || true)
 
 if [[ -n "$local_paths" ]]; then
   echo "[2/2] checking local image paths..."

@@ -80,9 +80,9 @@ const GUIDE_IMG: Record<string, string> = {
   "guide-nara-rainy-day-spots":         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
   "guide-nara-family-spots":            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/1280px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
   // 広島
-  "guide-hiroshima-sightseeing-spots":  "https://upload.wikimedia.org/wikipedia/commons/5/51/A-Bomb_Dome.jpg",
-  "guide-hiroshima-rainy-day-spots":    "https://upload.wikimedia.org/wikipedia/commons/5/51/A-Bomb_Dome.jpg",
-  "guide-hiroshima-miyajima-daytrip":   "https://upload.wikimedia.org/wikipedia/commons/f/fe/Itsukushima_torii_angle.jpg",
+  "guide-hiroshima-sightseeing-spots":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/A-Bomb_Dome.jpg/1280px-A-Bomb_Dome.jpg",
+  "guide-hiroshima-rainy-day-spots":    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/A-Bomb_Dome.jpg/1280px-A-Bomb_Dome.jpg",
+  "guide-hiroshima-miyajima-daytrip":   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Itsukushima_torii_angle.jpg/1280px-Itsukushima_torii_angle.jpg",
   // 福岡
   "guide-fukuoka-sightseeing-spots":    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hakata_Station_20180306.jpg/1280px-Hakata_Station_20180306.jpg",
   "guide-fukuoka-date-spots":           "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hakata_Station_20180306.jpg/1280px-Hakata_Station_20180306.jpg",
@@ -101,13 +101,13 @@ const GUIDE_IMG: Record<string, string> = {
   "guide-otsu-date-spots":              "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Otsu_Mangetsu-ji_Ukimido_18.jpg/1280px-Otsu_Mangetsu-ji_Ukimido_18.jpg",
   // 和歌山
   "guide-wakayama-sightseeing-spots":   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wakayama_Castle_Nishinomaru_Garden04bs3200.jpg/1280px-Wakayama_Castle_Nishinomaru_Garden04bs3200.jpg",
-  "guide-koyasan-spots":                "https://upload.wikimedia.org/wikipedia/commons/b/bf/Koyasan%2C_Kongobu-ji_%282005%29_01.jpg",
+  "guide-koyasan-spots":                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Koyasan%2C_Kongobu-ji_%282005%29_01.jpg/1280px-Koyasan%2C_Kongobu-ji_%282005%29_01.jpg",
   // 鹿児島
   "guide-kagoshima-sightseeing-spots":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sakurajima55.jpg/1280px-Sakurajima55.jpg",
   "guide-kagoshima-family-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sakurajima55.jpg/1280px-Sakurajima55.jpg",
   // 群馬
   "guide-gunma-onsen-spots":            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/2023.04.26_Yubatake_%28Kusatsu_Onsen%29.jpg/1280px-2023.04.26_Yubatake_%28Kusatsu_Onsen%29.jpg",
-  "guide-takasaki-maebashi-spots":      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Takasaki-byakui-dai-Kannon.jpg",
+  "guide-takasaki-maebashi-spots":      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Takasaki-byakui-dai-Kannon.jpg/1280px-Takasaki-byakui-dai-Kannon.jpg",
   // 兵庫
   "guide-himeji-sightseeing-spots":     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/1280px-Himeji_Castle%2C_November_2016_-02.jpg",
   "guide-nishinomiya-date-spots":       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Nishinomiya-jinja01s4592.jpg/1280px-Nishinomiya-jinja01s4592.jpg",

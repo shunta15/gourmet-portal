@@ -32,19 +32,37 @@ img{display:block; max-width:100%}
 .cursor-ring.hot::after{content:attr(data-label); position:absolute; inset:0; display:grid; place-items:center; color:#fff; font:500 10px/1 var(--mono); letter-spacing:.12em; text-transform:uppercase}
 
 /* nav -------------------------------------------- */
+/* スクリム + テキストシャドウで「中間色背景でも文字が消えない」設計に変更。
+   mix-blend-mode:difference は背景が中間色のとき文字が消えるので廃止。 */
 .nav{
   position:fixed; top:0; left:0; right:0; z-index:50;
   display:flex; align-items:center; justify-content:space-between;
-  padding:20px 40px; mix-blend-mode:difference; color:#fff;
+  padding:20px 40px; color:#fff;
+  /* 上部に黒の薄いグラデーション。明るい画像でも白文字が常に読める */
+  background:linear-gradient(to bottom,
+    rgba(10,8,4,.55) 0%,
+    rgba(10,8,4,.32) 55%,
+    rgba(10,8,4,0) 100%);
+  /* 古い safari でも効くようにフォールバックも付ける */
+  backdrop-filter:blur(6px) saturate(110%);
+  -webkit-backdrop-filter:blur(6px) saturate(110%);
 }
-.nav .brand{font:700 16px/1 var(--serif); letter-spacing:.16em}
-.nav .brand small{font:500 10px/1 var(--mono); letter-spacing:.3em; opacity:.7; display:block; margin-top:4px}
-.nav ul{display:flex; gap:28px; list-style:none; font:500 12px/1 var(--mono); letter-spacing:.2em; text-transform:uppercase}
-.nav ul a{position:relative}
-.nav ul a::after{content:""; position:absolute; left:0; bottom:-6px; height:1px; width:0; background:#fff; transition:width .3s ease}
+/* 全文字に微弱な影で輪郭を確保（明るい背景での視認性確保） */
+.nav, .nav a, .nav .brand, .nav .right{
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+.nav .brand{font:700 16px/1 var(--serif); letter-spacing:.16em; color:#fff}
+.nav .brand small{font:500 10px/1 var(--mono); letter-spacing:.3em; opacity:.85; display:block; margin-top:4px}
+.nav ul{display:flex; gap:28px; list-style:none; font:500 12px/1 var(--mono); letter-spacing:.2em; text-transform:uppercase; margin:0; padding:0}
+.nav ul a{position:relative; color:#fff; padding:6px 2px; transition:opacity .2s ease, color .2s ease}
+.nav ul a:hover{opacity:.85}
+.nav ul a::after{content:""; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:var(--accent); transition:width .25s ease; border-radius:1px}
 .nav ul a:hover::after{width:100%}
-.nav .right{display:flex; gap:24px; align-items:center; font:500 11px/1 var(--mono); letter-spacing:.2em}
-.nav .dot{width:6px; height:6px; background:var(--accent); border-radius:50%; display:inline-block; margin-right:8px; animation:pulse 1.6s infinite}
+/* 現在のページのリンクはアクセントカラーで強調 */
+.nav ul a.active{color:var(--accent)}
+.nav ul a.active::after{width:100%; background:var(--accent)}
+.nav .right{display:flex; gap:24px; align-items:center; font:500 11px/1 var(--mono); letter-spacing:.2em; color:#fff}
+.nav .dot{width:6px; height:6px; background:var(--accent); border-radius:50%; display:inline-block; margin-right:8px; animation:pulse 1.6s infinite; box-shadow:0 0 6px rgba(199,71,42,.6)}
 @keyframes pulse{0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.4; transform:scale(1.4)}}
 
 /* page transition -------------------------------- */

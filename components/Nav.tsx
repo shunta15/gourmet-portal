@@ -1,14 +1,35 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SCENES } from "@/lib/scenes";
+
+/**
+ * グローバルナビ。現在のページに応じて .active クラスを付与し、
+ * 背景が明るい/暗いに関わらず読めるように、CSS 側でスクリム+text-shadow+
+ * accent カラーのアクティブ表示で可読性を担保している。
+ */
+function isActive(pathname: string, target: string, exact = false): boolean {
+  if (!pathname) return false;
+  if (exact) return pathname === target;
+  if (target === "/") return pathname === "/";
+  return pathname === target || pathname.startsWith(target + "/");
+}
 
 export default function Nav() {
   const [today, setToday] = useState("");
   const [sceneOpen, setSceneOpen] = useState(false);
+  const pathname = usePathname() ?? "";
+
   useEffect(() => {
     setToday(new Date().toLocaleDateString("ja-JP"));
   }, []);
+
+  const activeTop     = isActive(pathname, "/", true);
+  const activeFeature = isActive(pathname, "/feature");
+  const activeRegion  = isActive(pathname, "/region");
+  const activeScene   = isActive(pathname, "/scene");
+  const activeSearch  = isActive(pathname, "/search");
 
   return (
     <nav className="nav">
@@ -18,17 +39,32 @@ export default function Nav() {
       </Link>
       <ul>
         <li>
-          <Link href="/" data-cursor="HOME">
+          <Link
+            href="/"
+            data-cursor="HOME"
+            className={activeTop ? "active" : ""}
+            aria-current={activeTop ? "page" : undefined}
+          >
             トップ
           </Link>
         </li>
         <li>
-          <Link href="/feature" data-cursor="READ">
+          <Link
+            href="/feature"
+            data-cursor="READ"
+            className={activeFeature ? "active" : ""}
+            aria-current={activeFeature ? "page" : undefined}
+          >
             特集
           </Link>
         </li>
         <li>
-          <Link href="/region/tokyo" data-cursor="ENTER">
+          <Link
+            href="/region/tokyo"
+            data-cursor="ENTER"
+            className={activeRegion ? "active" : ""}
+            aria-current={activeRegion ? "page" : undefined}
+          >
             エリア
           </Link>
         </li>
@@ -40,6 +76,8 @@ export default function Nav() {
           <Link
             href={`/scene/${SCENES[0].slug}`}
             data-cursor="PICK"
+            className={activeScene ? "active" : ""}
+            aria-current={activeScene ? "page" : undefined}
             onClick={() => setSceneOpen(false)}
           >
             シーン
@@ -62,7 +100,12 @@ export default function Nav() {
           )}
         </li>
         <li>
-          <Link href="/search" data-cursor="SEARCH">
+          <Link
+            href="/search"
+            data-cursor="SEARCH"
+            className={activeSearch ? "active" : ""}
+            aria-current={activeSearch ? "page" : undefined}
+          >
             さがす
           </Link>
         </li>

@@ -23,7 +23,7 @@ const IMG = {
   skytree:       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg",
   rainbow:       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg",
   odaiba:        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg",
-  ikebukuro:     "https://upload.wikimedia.org/wikipedia/commons/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg",
+  ikebukuro:     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg",
   ikebukuro_sta: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg",
   yebisu:        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg",
   daikanyama:    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg",

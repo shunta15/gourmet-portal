@@ -7,7 +7,7 @@ const IMG = {
   yokohama:       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yamashita_Park_%40_Yokohama_%289054590638%29.jpg/1280px-Yamashita_Park_%40_Yokohama_%289054590638%29.jpg",
   kamakura:       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tsurugaoka_Hachimangu_001.jpg/1280px-Tsurugaoka_Hachimangu_001.jpg",
   minatomirai:    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg/1280px-Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg",
-  chinatown:      "https://upload.wikimedia.org/wikipedia/commons/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg",
+  chinatown:      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg/1280px-Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg",
   enoshima:       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Enoshima_20170210-2.jpg/1280px-Enoshima_20170210-2.jpg",
   kamakura_zen:   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Engakuji%2C_Kamakura.jpg/1280px-Engakuji%2C_Kamakura.jpg",
   shonan:         "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Shonan_Beach_FM.jpg/1280px-Shonan_Beach_FM.jpg",

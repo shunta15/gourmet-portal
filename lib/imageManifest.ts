@@ -269,7 +269,7 @@ export const IMAGE_MANIFEST: Record<string, ImageEntry> = {
     match: "exact",
   },
   "new-yokohama-gourmet": {
-    url: "https://upload.wikimedia.org/wikipedia/commons/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg/1280px-Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg",
     alt: "横浜中華街善隣門（夜景）",
     source: "Wikimedia Commons",
     license: "CC BY-SA 4.0",
