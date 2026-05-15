@@ -8,12 +8,27 @@ export const metadata: Metadata = {
   title: "マチノワ / 街の輪 — 全国飲食店ポータル",
   description:
     "全国47都道府県の飲食店を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。",
+  // app/icon.tsx と app/apple-icon.tsx が自動登録されるが、
+  // 確実に Google / SNS が拾うように明示しておく
+  icons: {
+    icon: [{ url: "/icon", type: "image/png", sizes: "64x64" }],
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "マチノワ — 街の輪",
     description:
-      "全国飲食店ポータル。街の\u201cいいお店\u201d、ぜんぶここに。",
+      "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。",
     type: "website",
     locale: "ja_JP",
+    siteName: "マチノワ",
+    images: [{ url: "/apple-icon", width: 180, height: 180, alt: "マチノワ" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "マチノワ — 街の輪",
+    description:
+      "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。",
+    images: ["/apple-icon"],
   },
 };
 
