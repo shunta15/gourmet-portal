@@ -1,0 +1,7 @@
+/* admin 専用スタイル: Tailwind + shadcn/ui */
+/* 公開サイトに影響を与えないため /admin/* 配下のみで適用 */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
