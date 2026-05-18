@@ -44,3 +44,6 @@ next-env.d.ts
 /agent-teams/logs/
 /agent-teams/work/
 /agent-teams/research/
+
+# Supabase CLI temp
+supabase/.temp/
