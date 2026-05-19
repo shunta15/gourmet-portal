@@ -2,6 +2,12 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Loader2, AlertCircle } from "lucide-react";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -28,51 +34,59 @@ export default function AdminLogin() {
   }
 
   return (
-    <div style={{
-      minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
-      background: "#0f0f0f", fontFamily: "sans-serif",
-    }}>
-      <div style={{ width: 360, background: "#1a1a1a", border: "1px solid #2a2a2a", borderRadius: 8, padding: 40 }}>
-        <h1 style={{ fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 8, letterSpacing: 2 }}>
-          MACHINOWA CMS
-        </h1>
-        <p style={{ fontSize: 13, color: "#666", marginBottom: 32 }}>管理画面にログイン</p>
-
-        <form onSubmit={handleLogin}>
-          <div style={{ marginBottom: 16 }}>
-            <label style={{ display: "block", fontSize: 12, color: "#888", marginBottom: 6 }}>メールアドレス</label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{ width: "100%", padding: "10px 12px", background: "#0f0f0f", border: "1px solid #333", borderRadius: 4, color: "#fff", fontSize: 14, boxSizing: "border-box" }}
-            />
+    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <Card className="w-full max-w-sm">
+        <CardHeader className="space-y-2 text-center">
+          <div className="font-mono text-[10px] tracking-[0.4em] text-muted-foreground">
+            MACHINOWA
           </div>
-          <div style={{ marginBottom: 24 }}>
-            <label style={{ display: "block", fontSize: 12, color: "#888", marginBottom: 6 }}>パスワード</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              style={{ width: "100%", padding: "10px 12px", background: "#0f0f0f", border: "1px solid #333", borderRadius: 4, color: "#fff", fontSize: 14, boxSizing: "border-box" }}
-            />
-          </div>
+          <CardTitle className="text-xl tracking-wide">CMS にログイン</CardTitle>
+          <CardDescription>編集チーム向けの管理画面です</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="email">メールアドレス</Label>
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                autoComplete="email"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="password">パスワード</Label>
+              <Input
+                id="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                autoComplete="current-password"
+              />
+            </div>
 
-          {error && (
-            <p style={{ fontSize: 13, color: "#f87171", marginBottom: 16 }}>{error}</p>
-          )}
+            {error && (
+              <Alert variant="destructive">
+                <AlertCircle className="size-4" />
+                <AlertDescription>{error}</AlertDescription>
+              </Alert>
+            )}
 
-          <button
-            type="submit"
-            disabled={loading}
-            style={{ width: "100%", padding: "12px", background: "#fff", color: "#000", border: "none", borderRadius: 4, fontSize: 14, fontWeight: 600, cursor: loading ? "not-allowed" : "pointer", opacity: loading ? 0.6 : 1 }}
-          >
-            {loading ? "ログイン中..." : "ログイン"}
-          </button>
-        </form>
-      </div>
+            <Button type="submit" className="w-full" disabled={loading}>
+              {loading ? (
+                <>
+                  <Loader2 className="size-4 animate-spin" /> ログイン中...
+                </>
+              ) : (
+                "ログイン"
+              )}
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   );
 }

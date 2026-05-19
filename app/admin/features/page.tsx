@@ -1,21 +1,30 @@
 import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Plus, Search } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type Filter = "active" | "published" | "drafts" | "legacy" | "all";
 
 const FILTER_LABEL: Record<Filter, string> = {
-  active: "実稼働 (公開＋下書き)",
+  active: "実稼働",
   published: "公開のみ",
-  drafts: "下書き (noindex)",
-  legacy: "旧 legacy のみ",
+  drafts: "下書き",
+  legacy: "旧 legacy",
   all: "全件",
 };
 
-/**
- * id prefix で「実稼働」か「legacy か」を判別する。
- * - new- / guide- / course- / scene- = 実稼働
- * - feature- = 旧 legacy（公開サイトのカード一覧からはリンクされていない）
- */
 function isLegacyId(id: string): boolean {
   return id.startsWith("feature-");
 }
@@ -33,7 +42,6 @@ export default async function AdminFeatures({
 
   const supabase = await createClient();
 
-  // 件数集計用に全件 (id, published) だけ取得して JS 側で分類する
   const { data: idIndex } = await supabase
     .from("feature_articles")
     .select("id, published")
@@ -48,7 +56,6 @@ export default async function AdminFeatures({
     active: ids.filter((x: any) => !isLegacyId(x.id)).length,
   };
 
-  // 表示対象 id のフィルタ条件
   let allowedIds: string[] | null = null;
   if (filter === "active") {
     allowedIds = ids.filter((x: any) => !isLegacyId(x.id)).map((x: any) => x.id);
@@ -58,7 +65,7 @@ export default async function AdminFeatures({
     allowedIds = ids.filter((x: any) => !x.published && !isLegacyId(x.id)).map((x: any) => x.id);
   } else if (filter === "legacy") {
     allowedIds = ids.filter((x: any) => isLegacyId(x.id)).map((x: any) => x.id);
-  } // "all" は null のまま=フィルタなし
+  }
 
   let query = supabase
     .from("feature_articles")
@@ -67,7 +74,6 @@ export default async function AdminFeatures({
 
   if (allowedIds !== null) {
     if (allowedIds.length === 0) {
-      // 0件のときに Supabase の .in([]) が全件返してしまう対策
       query = query.in("id", ["__empty_sentinel__"]);
     } else {
       query = query.in("id", allowedIds);
@@ -81,125 +87,149 @@ export default async function AdminFeatures({
   const totalPages = Math.ceil((count ?? 0) / perPage);
 
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: "#fff" }}>
-          特集記事 <span style={{ fontSize: 14, color: "#888", fontWeight: 400 }}>({count ?? 0}件)</span>
-        </h1>
-        <a href="/admin/features/new"
-          style={{ padding: "8px 20px", background: "#fff", color: "#000", borderRadius: 4, textDecoration: "none", fontSize: 13, fontWeight: 600 }}>
-          + 新規追加
-        </a>
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">特集記事</h1>
+          <p className="mt-1 text-sm text-muted-foreground">{count ?? 0} 件表示中</p>
+        </div>
+        <Link href="/admin/features/new" className={buttonVariants({ variant: "default" })}>
+          <Plus className="size-4" /> 新規追加
+        </Link>
       </div>
 
-      {/* 件数サマリ */}
-      <div style={{ display: "flex", gap: 16, marginBottom: 16, padding: "12px 16px", background: "#0a0a0a", border: "1px solid #2a2a2a", borderRadius: 8, fontSize: 12, color: "#999" }}>
-        <span><span style={{ color: "#86efac" }}>●</span> 公開: <strong style={{ color: "#fff" }}>{counts.published}</strong></span>
-        <span><span style={{ color: "#fca5a5" }}>●</span> 下書き: <strong style={{ color: "#fff" }}>{counts.drafts}</strong></span>
-        <span><span style={{ color: "#fde047" }}>●</span> 旧 legacy: <strong style={{ color: "#fff" }}>{counts.legacy}</strong></span>
-        <span style={{ marginLeft: "auto" }}>合計: <strong style={{ color: "#fff" }}>{counts.all}</strong></span>
-      </div>
+      {/* サマリ */}
+      <Card className="px-5 py-4">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+          <div className="flex items-center gap-2">
+            <span className="size-2 rounded-full bg-emerald-500" />
+            <span className="text-muted-foreground">公開</span>
+            <span className="font-semibold">{counts.published}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="size-2 rounded-full bg-rose-500" />
+            <span className="text-muted-foreground">下書き</span>
+            <span className="font-semibold">{counts.drafts}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="size-2 rounded-full bg-yellow-500" />
+            <span className="text-muted-foreground">legacy</span>
+            <span className="font-semibold">{counts.legacy}</span>
+          </div>
+          <div className="ml-auto text-muted-foreground">
+            合計 <span className="font-semibold text-foreground">{counts.all}</span>
+          </div>
+        </div>
+      </Card>
 
       {/* フィルタタブ */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+      <div className="flex flex-wrap gap-2">
         {(Object.keys(FILTER_LABEL) as Filter[]).map((k) => {
-          const n = counts[k];
           const active = filter === k;
+          const params = new URLSearchParams();
+          params.set("filter", k);
+          if (q) params.set("q", q);
           return (
             <Link
               key={k}
-              href={`/admin/features?filter=${k}${q ? `&q=${encodeURIComponent(q)}` : ""}`}
-              style={{
-                padding: "6px 14px",
-                borderRadius: 6,
-                fontSize: 12,
-                textDecoration: "none",
-                background: active ? "#fff" : "#1a1a1a",
-                color: active ? "#000" : "#aaa",
-                border: `1px solid ${active ? "#fff" : "#333"}`,
-                fontWeight: active ? 600 : 400,
-              }}
+              href={`/admin/features?${params.toString()}`}
+              className={cn(buttonVariants({ variant: active ? "default" : "outline", size: "sm" }), active && "shadow-sm")}
             >
-              {FILTER_LABEL[k]} ({n})
+              {FILTER_LABEL[k]}
+              <Badge variant="secondary" className="ml-2 px-1.5 py-0 text-[10px]">
+                {counts[k]}
+              </Badge>
             </Link>
           );
         })}
       </div>
 
-      <form style={{ display: "flex", gap: 12, marginBottom: 20 }}>
-        <input
-          type="hidden"
-          name="filter"
-          value={filter}
-        />
-        <input
-          name="q"
-          defaultValue={q}
-          placeholder="タイトルで検索..."
-          style={{ flex: 1, padding: "8px 12px", background: "#1a1a1a", border: "1px solid #333", borderRadius: 4, color: "#fff", fontSize: 13 }}
-        />
-        <button type="submit" style={{ padding: "8px 16px", background: "#333", border: "none", borderRadius: 4, color: "#fff", cursor: "pointer", fontSize: 13 }}>
-          検索
-        </button>
+      {/* 検索 */}
+      <form className="flex flex-wrap items-center gap-2">
+        <input type="hidden" name="filter" value={filter} />
+        <div className="relative flex-1 min-w-[200px]">
+          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            name="q"
+            defaultValue={q}
+            placeholder="タイトルで検索…"
+            className="pl-9"
+          />
+        </div>
+        <Button type="submit" variant="secondary">検索</Button>
       </form>
 
-      <div style={{ background: "#1a1a1a", border: "1px solid #2a2a2a", borderRadius: 8, overflow: "hidden" }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-          <thead>
-            <tr style={{ borderBottom: "1px solid #2a2a2a" }}>
-              {["No", "タイトル", "キッカー", "日付", "状態", "操作"].map(h => (
-                <th key={h} style={{ padding: "12px 16px", textAlign: "left", color: "#888", fontWeight: 500 }}>{h}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
+      {/* テーブル */}
+      <Card className="p-0 overflow-hidden">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-20">No</TableHead>
+              <TableHead>タイトル</TableHead>
+              <TableHead>キッカー</TableHead>
+              <TableHead className="w-28">日付</TableHead>
+              <TableHead className="w-24">状態</TableHead>
+              <TableHead className="w-20 text-right">操作</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {articles?.map((a) => {
               const legacy = isLegacyId(a.id);
               return (
-                <tr key={a.id} style={{ borderBottom: "1px solid #222" }}>
-                  <td style={{ padding: "12px 16px", color: "#666", fontFamily: "monospace" }}>{a.no}</td>
-                  <td style={{ padding: "12px 16px", color: "#fff" }}>
-                    {a.title}
-                    {legacy && <span style={{ marginLeft: 8, fontSize: 10, padding: "1px 6px", borderRadius: 999, background: "#3a2a0a", color: "#fde047" }}>LEGACY</span>}
-                  </td>
-                  <td style={{ padding: "12px 16px", color: "#888" }}>{a.kicker}</td>
-                  <td style={{ padding: "12px 16px", color: "#888" }}>{a.date}</td>
-                  <td style={{ padding: "12px 16px" }}>
-                    <span style={{
-                      fontSize: 11, padding: "2px 8px", borderRadius: 999,
-                      background: a.published ? "#14532d" : "#3f1515",
-                      color: a.published ? "#86efac" : "#fca5a5"
-                    }}>
+                <TableRow key={a.id}>
+                  <TableCell className="font-mono text-xs text-muted-foreground">{a.no || "—"}</TableCell>
+                  <TableCell className="font-medium">
+                    <span className="line-clamp-1">{a.title}</span>
+                    {legacy && (
+                      <Badge variant="outline" className="ml-2 text-[10px] text-yellow-500 border-yellow-500/40">
+                        LEGACY
+                      </Badge>
+                    )}
+                  </TableCell>
+                  <TableCell className="text-muted-foreground text-xs">{a.kicker}</TableCell>
+                  <TableCell className="text-muted-foreground text-xs">{a.date}</TableCell>
+                  <TableCell>
+                    <Badge variant={a.published ? "default" : "destructive"}>
                       {a.published ? "公開" : "非公開"}
-                    </span>
-                  </td>
-                  <td style={{ padding: "12px 16px" }}>
-                    <Link href={`/admin/features/${a.id}`} style={{ color: "#60a5fa", textDecoration: "none", fontSize: 12 }}>
+                    </Badge>
+                  </TableCell>
+                  <TableCell className="text-right">
+                    <Link href={`/admin/features/${a.id}`} className={buttonVariants({ variant: "link", size: "sm" })}>
                       編集
                     </Link>
-                  </td>
-                </tr>
+                  </TableCell>
+                </TableRow>
               );
             })}
             {(!articles || articles.length === 0) && (
-              <tr>
-                <td colSpan={6} style={{ padding: "40px 16px", textAlign: "center", color: "#666" }}>
+              <TableRow>
+                <TableCell colSpan={6} className="py-10 text-center text-muted-foreground">
                   該当する記事がありません
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             )}
-          </tbody>
-        </table>
-      </div>
+          </TableBody>
+        </Table>
+      </Card>
 
+      {/* ページネーション */}
       {totalPages > 1 && (
-        <div style={{ display: "flex", gap: 8, justifyContent: "center", marginTop: 24 }}>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
-            <Link key={p} href={`/admin/features?filter=${filter}&q=${encodeURIComponent(q)}&page=${p}`}
-              style={{ padding: "6px 12px", borderRadius: 4, textDecoration: "none", fontSize: 13, background: p === page ? "#fff" : "#1a1a1a", color: p === page ? "#000" : "#888", border: "1px solid #333" }}>
-              {p}
-            </Link>
-          ))}
+        <div className="flex flex-wrap justify-center gap-1">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => {
+            const params = new URLSearchParams();
+            params.set("filter", filter);
+            if (q) params.set("q", q);
+            params.set("page", String(p));
+            return (
+              <Link
+                key={p}
+                href={`/admin/features?${params.toString()}`}
+                className={buttonVariants({ variant: p === page ? "default" : "outline", size: "sm" }) + " size-9 p-0"}
+              >
+                {p}
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>
