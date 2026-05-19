@@ -120,11 +120,30 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
       ? await supabase.from("restaurants").insert(payload)
       : await supabase.from("restaurants").update(payload).eq("id", form.id);
 
-    setSaving(false);
     if (err) {
+      setSaving(false);
       toast.error(`保存失敗: ${err.message}`);
       return;
     }
+
+    // 公開ページの ISR キャッシュを即時クリア
+    try {
+      await fetch("/api/revalidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paths: [
+            `/restaurant/${form.id}`,
+            `/region/${form.region}`,
+            "/",
+          ],
+        }),
+      });
+    } catch (e) {
+      console.warn("revalidate failed:", e);
+    }
+
+    setSaving(false);
     toast.success(isNew ? "店舗を追加しました" : "変更を保存しました");
     router.push("/admin/restaurants");
     router.refresh();

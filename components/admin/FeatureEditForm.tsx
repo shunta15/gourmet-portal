@@ -77,11 +77,26 @@ export default function FeatureEditForm({ article }: { article: FeatureArticle |
       ? await supabase.from("feature_articles").insert(form)
       : await supabase.from("feature_articles").update(form).eq("id", form.id);
 
-    setSaving(false);
     if (err) {
+      setSaving(false);
       toast.error(`保存失敗: ${err.message}`);
       return;
     }
+
+    // 公開ページの ISR キャッシュを即時クリア
+    try {
+      await fetch("/api/revalidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paths: [`/feature/${form.id}`, "/"],
+        }),
+      });
+    } catch (e) {
+      console.warn("revalidate failed:", e);
+    }
+
+    setSaving(false);
     toast.success(isNew ? "記事を追加しました" : "変更を保存しました");
     router.push("/admin/features");
     router.refresh();

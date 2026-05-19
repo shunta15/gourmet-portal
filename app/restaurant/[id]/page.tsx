@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import RestaurantDetail from "@/components/RestaurantDetail";
-import { RESTAURANTS, REGIONS } from "@/lib/data";
+import { REGIONS } from "@/lib/data";
+import {
+  getRestaurantById,
+  getAllRestaurantIds,
+} from "@/lib/db/restaurants";
 import {
   buildRestaurantJsonLd,
   buildBreadcrumbJsonLd,
@@ -8,8 +12,15 @@ import {
 
 const BASE = "https://machinowa.tokyo";
 
-export function generateStaticParams() {
-  return RESTAURANTS.map((r) => ({ id: r.id }));
+// 公開ページは Supabase が真の source-of-truth。
+// 60秒ごとに ISR で再生成、admin での編集が最大60秒で反映される。
+export const revalidate = 60;
+// generateStaticParams 外の ID も SSR でレスポンス可
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const ids = await getAllRestaurantIds();
+  return ids.map((id) => ({ id }));
 }
 
 export async function generateMetadata({
@@ -18,11 +29,10 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const r = RESTAURANTS.find((x) => x.id === id);
+  const r = await getRestaurantById(id);
   if (!r) return { title: "店舗が見つかりません — マチノワ" };
   const region = REGIONS[r.region];
   const cuisineLabel = r.cuisine.split(" / ").pop() || r.cuisine;
-  // ローカルSEO最適化: 「<エリア> <業種> <店名> | マチノワ」パターン
   const title = `${r.name} | ${r.area}の${cuisineLabel} — マチノワ`;
   return {
     title,
@@ -61,7 +71,7 @@ export default async function RestaurantPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const r = RESTAURANTS.find((x) => x.id === id);
+  const r = await getRestaurantById(id);
   if (!r) notFound();
   const region = REGIONS[r.region];
 
