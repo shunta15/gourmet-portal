@@ -1,7 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Switch } from "@/components/ui/switch";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Loader2, Save, Trash2, ExternalLink } from "lucide-react";
+import ImageUploader from "./ImageUploader";
+import ImageArrayUploader from "./ImageArrayUploader";
+import ArrayInput from "./ArrayInput";
 
 type Restaurant = {
   id: string;
@@ -31,74 +53,57 @@ type Restaurant = {
   published: boolean;
 };
 
-const REGIONS = ["tokyo","osaka","kyoto","nagoya","fukuoka","hyogo","kanagawa","saitama","nara","hiroshima","shiga","gunma","kagoshima","wakayama","hokkaido"];
+const REGIONS = [
+  "tokyo", "osaka", "kyoto", "nagoya", "fukuoka", "hyogo",
+  "kanagawa", "saitama", "nara", "hiroshima", "shiga",
+  "gunma", "kagoshima", "wakayama", "hokkaido", "shizuoka",
+];
 
-function ArrayField({ label, value, onChange }: { label: string; value: string[]; onChange: (v: string[]) => void }) {
-  return (
-    <div style={{ marginBottom: 20 }}>
-      <label style={labelStyle}>{label}</label>
-      {value.map((item, i) => (
-        <div key={i} style={{ display: "flex", gap: 8, marginBottom: 8 }}>
-          <input
-            value={item}
-            onChange={(e) => { const n = [...value]; n[i] = e.target.value; onChange(n); }}
-            style={{ ...inputStyle, flex: 1 }}
-          />
-          <button type="button" onClick={() => onChange(value.filter((_, j) => j !== i))}
-            style={{ ...btnSmall, background: "#3f1515", color: "#fca5a5" }}>✕</button>
-        </div>
-      ))}
-      <button type="button" onClick={() => onChange([...value, ""])} style={btnSmall}>+ 追加</button>
-    </div>
-  );
-}
+const SHAPES = ["square", "tall", "wide"];
 
-const inputStyle: React.CSSProperties = { padding: "8px 12px", background: "#0f0f0f", border: "1px solid #333", borderRadius: 4, color: "#fff", fontSize: 13, width: "100%", boxSizing: "border-box" };
-const labelStyle: React.CSSProperties = { display: "block", fontSize: 12, color: "#888", marginBottom: 6 };
-const btnSmall: React.CSSProperties = { padding: "5px 10px", background: "#2a2a2a", border: "1px solid #333", borderRadius: 4, color: "#aaa", cursor: "pointer", fontSize: 12 };
+const empty: Restaurant = {
+  id: "",
+  name: "",
+  cuisine: "",
+  area: "",
+  region: "tokyo",
+  shape: "square",
+  image: "",
+  hero_images: [],
+  gallery: [],
+  desc: "",
+  address: "",
+  hours: "",
+  closed: "",
+  seats: "",
+  nearest: "",
+  phone: "",
+  budget: "",
+  rating: "",
+  reservation_url: "",
+  source_label: "",
+  source_url: "",
+  tags: [],
+  highlights: [],
+  body: [],
+  published: true,
+};
 
 export default function RestaurantEditForm({ restaurant }: { restaurant: Restaurant | null }) {
   const isNew = !restaurant;
   const router = useRouter();
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState("");
+  const [deleting, setDeleting] = useState(false);
+  const [form, setForm] = useState<Restaurant>({ ...empty, ...(restaurant ?? {}) });
 
-  const [form, setForm] = useState<Restaurant>({
-    id: restaurant?.id ?? "",
-    name: restaurant?.name ?? "",
-    cuisine: restaurant?.cuisine ?? "",
-    area: restaurant?.area ?? "",
-    region: restaurant?.region ?? "osaka",
-    shape: restaurant?.shape ?? "square",
-    image: restaurant?.image ?? "",
-    hero_images: restaurant?.hero_images ?? [],
-    gallery: restaurant?.gallery ?? [],
-    desc: restaurant?.desc ?? "",
-    address: restaurant?.address ?? "",
-    hours: restaurant?.hours ?? "",
-    closed: restaurant?.closed ?? "",
-    seats: restaurant?.seats ?? "",
-    nearest: restaurant?.nearest ?? "",
-    phone: restaurant?.phone ?? "",
-    budget: restaurant?.budget ?? "",
-    rating: restaurant?.rating ?? "",
-    reservation_url: restaurant?.reservation_url ?? "",
-    source_label: restaurant?.source_label ?? "",
-    source_url: restaurant?.source_url ?? "",
-    tags: restaurant?.tags ?? [],
-    highlights: restaurant?.highlights ?? [],
-    body: restaurant?.body ?? [],
-    published: restaurant?.published ?? true,
-  });
-
-  function set(key: keyof Restaurant, value: any) {
+  function set<K extends keyof Restaurant>(key: K, value: Restaurant[K]) {
     setForm((f) => ({ ...f, [key]: value }));
   }
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
+  async function handleSubmit(e?: React.FormEvent) {
+    e?.preventDefault();
+    if (saving) return;
     setSaving(true);
-    setError("");
 
     const supabase = createClient();
     const payload = {
@@ -115,143 +120,467 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
       ? await supabase.from("restaurants").insert(payload)
       : await supabase.from("restaurants").update(payload).eq("id", form.id);
 
+    setSaving(false);
     if (err) {
-      setError(err.message);
-      setSaving(false);
-    } else {
-      router.push("/admin/restaurants");
-      router.refresh();
+      toast.error(`保存失敗: ${err.message}`);
+      return;
     }
+    toast.success(isNew ? "店舗を追加しました" : "変更を保存しました");
+    router.push("/admin/restaurants");
+    router.refresh();
   }
 
+  async function handleDelete() {
+    if (!form.id) return;
+    setDeleting(true);
+    const supabase = createClient();
+    const { error: err } = await supabase
+      .from("restaurants")
+      .delete()
+      .eq("id", form.id);
+    setDeleting(false);
+    if (err) {
+      toast.error(`削除失敗: ${err.message}`);
+      return;
+    }
+    toast.success("店舗を削除しました");
+    router.push("/admin/restaurants");
+    router.refresh();
+  }
+
+  // Cmd+S / Ctrl+S で保存
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === "s") {
+        e.preventDefault();
+        handleSubmit();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [form, saving]);
+
+  const folder = form.id || "new";
+
   return (
-    <form onSubmit={handleSubmit}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
-        {/* 左カラム */}
-        <div>
-          <h2 style={{ fontSize: 14, color: "#aaa", marginBottom: 20, fontWeight: 500 }}>基本情報</h2>
-
-          {isNew && (
-            <div style={{ marginBottom: 20 }}>
-              <label style={labelStyle}>ID（例: r241）</label>
-              <input value={form.id} onChange={e => set("id", e.target.value)} required style={inputStyle} placeholder="r241" />
-            </div>
+    <form onSubmit={handleSubmit} className="space-y-6">
+      {/* ヘッダー */}
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+        <div className="space-y-1">
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-semibold tracking-tight">
+              {isNew ? "新規店舗追加" : form.name || "(無題)"}
+            </h1>
+            {!isNew && (
+              <Badge variant="outline" className="font-mono text-xs">
+                {form.id}
+              </Badge>
+            )}
+            <Badge variant={form.published ? "default" : "destructive"}>
+              {form.published ? "公開中" : "非公開"}
+            </Badge>
+          </div>
+          {!isNew && (
+            <a
+              href={`https://machinowa.tokyo/restaurant/${form.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
+            >
+              公開ページを開く <ExternalLink className="size-3" />
+            </a>
           )}
-
-          <div style={{ marginBottom: 20 }}>
-            <label style={labelStyle}>店舗名 *</label>
-            <input value={form.name} onChange={e => set("name", e.target.value)} required style={inputStyle} />
-          </div>
-          <div style={{ marginBottom: 20 }}>
-            <label style={labelStyle}>ジャンル</label>
-            <input value={form.cuisine} onChange={e => set("cuisine", e.target.value)} style={inputStyle} />
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>エリア名</label>
-              <input value={form.area} onChange={e => set("area", e.target.value)} style={inputStyle} />
-            </div>
-            <div>
-              <label style={labelStyle}>リージョン *</label>
-              <select value={form.region} onChange={e => set("region", e.target.value)} style={inputStyle}>
-                {REGIONS.map(r => <option key={r} value={r}>{r}</option>)}
-              </select>
-            </div>
-          </div>
-          <div style={{ marginBottom: 20 }}>
-            <label style={labelStyle}>短い説明文</label>
-            <textarea value={form.desc} onChange={e => set("desc", e.target.value)} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
-          </div>
-          <div style={{ marginBottom: 20 }}>
-            <label style={labelStyle}>住所 *</label>
-            <input value={form.address} onChange={e => set("address", e.target.value)} required style={inputStyle} />
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>営業時間</label>
-              <input value={form.hours} onChange={e => set("hours", e.target.value)} style={inputStyle} />
-            </div>
-            <div>
-              <label style={labelStyle}>定休日</label>
-              <input value={form.closed} onChange={e => set("closed", e.target.value)} style={inputStyle} />
-            </div>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>席数</label>
-              <input value={form.seats} onChange={e => set("seats", e.target.value)} style={inputStyle} />
-            </div>
-            <div>
-              <label style={labelStyle}>最寄り駅</label>
-              <input value={form.nearest} onChange={e => set("nearest", e.target.value)} style={inputStyle} />
-            </div>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>電話番号</label>
-              <input value={form.phone ?? ""} onChange={e => set("phone", e.target.value)} style={inputStyle} />
-            </div>
-            <div>
-              <label style={labelStyle}>予算</label>
-              <input value={form.budget ?? ""} onChange={e => set("budget", e.target.value)} style={inputStyle} placeholder="¥2,000〜¥4,000" />
-            </div>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>評価スコア</label>
-              <input value={form.rating ?? ""} onChange={e => set("rating", e.target.value)} style={inputStyle} placeholder="3.45" />
-            </div>
-            <div>
-              <label style={labelStyle}>予約URL</label>
-              <input value={form.reservation_url ?? ""} onChange={e => set("reservation_url", e.target.value)} style={inputStyle} />
-            </div>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
-            <div>
-              <label style={labelStyle}>出典ラベル</label>
-              <input value={form.source_label ?? ""} onChange={e => set("source_label", e.target.value)} style={inputStyle} placeholder="公式サイト" />
-            </div>
-            <div>
-              <label style={labelStyle}>出典URL</label>
-              <input value={form.source_url ?? ""} onChange={e => set("source_url", e.target.value)} style={inputStyle} />
-            </div>
-          </div>
-          <div style={{ marginBottom: 20 }}>
-            <label style={{ ...labelStyle, display: "flex", alignItems: "center", gap: 8 }}>
-              <input type="checkbox" checked={form.published} onChange={e => set("published", e.target.checked)} />
-              公開する
-            </label>
-          </div>
         </div>
 
-        {/* 右カラム */}
-        <div>
-          <h2 style={{ fontSize: 14, color: "#aaa", marginBottom: 20, fontWeight: 500 }}>画像・コンテンツ</h2>
-
-          <div style={{ marginBottom: 20 }}>
-            <label style={labelStyle}>メイン画像URL</label>
-            <input value={form.image} onChange={e => set("image", e.target.value)} style={inputStyle} />
-            {form.image && <img src={form.image} alt="" style={{ marginTop: 8, width: "100%", maxHeight: 160, objectFit: "cover", borderRadius: 4, opacity: 0.8 }} />}
-          </div>
-
-          <ArrayField label="ヒーロー画像（URL）" value={form.hero_images} onChange={v => set("hero_images", v)} />
-          <ArrayField label="ギャラリー画像（URL）" value={form.gallery} onChange={v => set("gallery", v)} />
-          <ArrayField label="タグ" value={form.tags} onChange={v => set("tags", v)} />
-          <ArrayField label="ハイライト（3点）" value={form.highlights} onChange={v => set("highlights", v)} />
-          <ArrayField label="本文（段落ごと）" value={form.body} onChange={v => set("body", v)} />
+        <div className="flex items-center gap-2">
+          {!isNew && (
+            <Dialog>
+              <DialogTrigger>
+                <Button type="button" variant="destructive" size="lg">
+                  <Trash2 className="size-4" /> 削除
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>本当に削除しますか？</DialogTitle>
+                  <DialogDescription>
+                    <span className="font-semibold text-foreground">{form.name}</span>（{form.id}）
+                    を完全に削除します。この操作は取り消せません。
+                  </DialogDescription>
+                </DialogHeader>
+                <DialogFooter>
+                  <Button
+                    type="button"
+                    variant="destructive"
+                    onClick={handleDelete}
+                    disabled={deleting}
+                  >
+                    {deleting ? <Loader2 className="size-4 animate-spin" /> : <Trash2 className="size-4" />}
+                    完全に削除する
+                  </Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+          )}
+          <Button type="submit" size="lg" disabled={saving}>
+            {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
+            {saving ? "保存中…" : isNew ? "追加" : "保存"}
+          </Button>
         </div>
       </div>
 
-      {error && <p style={{ color: "#f87171", fontSize: 13, marginBottom: 16 }}>{error}</p>}
+      <Tabs defaultValue="basic" className="space-y-4">
+        <TabsList>
+          <TabsTrigger value="basic">基本情報</TabsTrigger>
+          <TabsTrigger value="business">営業情報</TabsTrigger>
+          <TabsTrigger value="images">画像</TabsTrigger>
+          <TabsTrigger value="content">本文・タグ</TabsTrigger>
+          <TabsTrigger value="meta">メタ情報</TabsTrigger>
+        </TabsList>
 
-      <div style={{ display: "flex", gap: 12, paddingTop: 24, borderTop: "1px solid #2a2a2a", marginTop: 24 }}>
-        <button type="submit" disabled={saving}
-          style={{ padding: "10px 32px", background: "#fff", color: "#000", border: "none", borderRadius: 4, fontSize: 14, fontWeight: 600, cursor: saving ? "not-allowed" : "pointer", opacity: saving ? 0.6 : 1 }}>
-          {saving ? "保存中..." : isNew ? "追加する" : "変更を保存"}
-        </button>
-        <a href="/admin/restaurants" style={{ padding: "10px 20px", background: "transparent", border: "1px solid #333", borderRadius: 4, color: "#888", textDecoration: "none", fontSize: 14 }}>
-          キャンセル
-        </a>
+        {/* ───── 基本 ───── */}
+        <TabsContent value="basic" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">店舗の基本情報</CardTitle>
+              <CardDescription>店名・ジャンル・エリアなど、検索や一覧で使われる情報</CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 sm:grid-cols-2">
+              {isNew && (
+                <div className="sm:col-span-2 space-y-2">
+                  <Label htmlFor="id">ID *</Label>
+                  <Input
+                    id="id"
+                    value={form.id}
+                    onChange={(e) => set("id", e.target.value)}
+                    required
+                    placeholder="r241"
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    例: r241 — 既存 ID と被らないようにしてください
+                  </p>
+                </div>
+              )}
+
+              <div className="sm:col-span-2 space-y-2">
+                <Label htmlFor="name">店舗名 *</Label>
+                <Input
+                  id="name"
+                  value={form.name}
+                  onChange={(e) => set("name", e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="cuisine">ジャンル</Label>
+                <Input
+                  id="cuisine"
+                  value={form.cuisine}
+                  onChange={(e) => set("cuisine", e.target.value)}
+                  placeholder="創作イタリアン・バー"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="region">リージョン *</Label>
+                <select
+                  id="region"
+                  value={form.region}
+                  onChange={(e) => set("region", e.target.value)}
+                  className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 text-sm shadow-xs"
+                >
+                  {REGIONS.map((r) => (
+                    <option key={r} value={r}>{r}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="area">エリア名</Label>
+                <Input
+                  id="area"
+                  value={form.area}
+                  onChange={(e) => set("area", e.target.value)}
+                  placeholder="姪の浜"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="shape">カード形状</Label>
+                <select
+                  id="shape"
+                  value={form.shape}
+                  onChange={(e) => set("shape", e.target.value)}
+                  className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 text-sm shadow-xs"
+                >
+                  {SHAPES.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="sm:col-span-2 space-y-2">
+                <Label htmlFor="desc">短い説明</Label>
+                <Textarea
+                  id="desc"
+                  value={form.desc}
+                  onChange={(e) => set("desc", e.target.value)}
+                  rows={3}
+                  placeholder="一覧カードや SEO descriptions に使う 60〜140字程度"
+                />
+              </div>
+
+              <div className="sm:col-span-2 flex items-center gap-3 pt-2">
+                <Switch
+                  id="published"
+                  checked={form.published}
+                  onCheckedChange={(v) => set("published", v)}
+                />
+                <Label htmlFor="published" className="cursor-pointer">
+                  公開する
+                </Label>
+                <span className="text-xs text-muted-foreground">
+                  OFF にすると公開ページから消えます（URL は維持）
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* ───── 営業情報 ───── */}
+        <TabsContent value="business" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">営業情報・アクセス</CardTitle>
+              <CardDescription>住所、営業時間、予約 URL など</CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 sm:grid-cols-2">
+              <div className="sm:col-span-2 space-y-2">
+                <Label htmlFor="address">住所 *</Label>
+                <Input
+                  id="address"
+                  value={form.address}
+                  onChange={(e) => set("address", e.target.value)}
+                  required
+                  placeholder="福岡県福岡市西区姪の浜..."
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="hours">営業時間</Label>
+                <Input
+                  id="hours"
+                  value={form.hours}
+                  onChange={(e) => set("hours", e.target.value)}
+                  placeholder="18:00 - 24:00"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="closed">定休日</Label>
+                <Input
+                  id="closed"
+                  value={form.closed}
+                  onChange={(e) => set("closed", e.target.value)}
+                  placeholder="水曜"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="nearest">最寄り駅</Label>
+                <Input
+                  id="nearest"
+                  value={form.nearest}
+                  onChange={(e) => set("nearest", e.target.value)}
+                  placeholder="姪浜駅 徒歩5分"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="seats">席数</Label>
+                <Input
+                  id="seats"
+                  value={form.seats}
+                  onChange={(e) => set("seats", e.target.value)}
+                  placeholder="28席"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="phone">電話番号</Label>
+                <Input
+                  id="phone"
+                  value={form.phone ?? ""}
+                  onChange={(e) => set("phone", e.target.value)}
+                  placeholder="092-xxx-xxxx"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="budget">予算</Label>
+                <Input
+                  id="budget"
+                  value={form.budget ?? ""}
+                  onChange={(e) => set("budget", e.target.value)}
+                  placeholder="¥4,000〜¥8,000"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="rating">評価スコア</Label>
+                <Input
+                  id="rating"
+                  value={form.rating ?? ""}
+                  onChange={(e) => set("rating", e.target.value)}
+                  placeholder="3.45"
+                />
+              </div>
+
+              <div className="sm:col-span-2 space-y-2">
+                <Label htmlFor="reservation_url">予約 URL</Label>
+                <Input
+                  id="reservation_url"
+                  value={form.reservation_url ?? ""}
+                  onChange={(e) => set("reservation_url", e.target.value)}
+                  placeholder="https://..."
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* ───── 画像 ───── */}
+        <TabsContent value="images" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">メイン画像</CardTitle>
+              <CardDescription>店舗カードや一覧で使う、サムネイル画像</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ImageUploader
+                value={form.image}
+                onChange={(v) => set("image", v)}
+                folder={folder}
+                previewHeight={220}
+              />
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">ヒーロー画像（最大5枚）</CardTitle>
+              <CardDescription>店舗ページ上部のヒーロースライダーに使う画像</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ImageArrayUploader
+                value={form.hero_images}
+                onChange={(v) => set("hero_images", v)}
+                folder={folder}
+              />
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">ギャラリー画像</CardTitle>
+              <CardDescription>店舗ページ下部のギャラリーに使う画像</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ImageArrayUploader
+                value={form.gallery}
+                onChange={(v) => set("gallery", v)}
+                folder={folder}
+              />
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* ───── 本文・タグ ───── */}
+        <TabsContent value="content" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">タグ</CardTitle>
+              <CardDescription>シーン・利用ガイドに使う（例: デート / 接待 / 一人ご飯）</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ArrayInput
+                value={form.tags}
+                onChange={(v) => set("tags", v)}
+                placeholder="タグ名"
+              />
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">ハイライト</CardTitle>
+              <CardDescription>店舗ページ上部に並ぶ 3 ポイント</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ArrayInput
+                value={form.highlights}
+                onChange={(v) => set("highlights", v)}
+                placeholder="○○が看板メニュー"
+              />
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">本文</CardTitle>
+              <CardDescription>段落ごとに1ブロック。記事のメイン</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ArrayInput
+                value={form.body}
+                onChange={(v) => set("body", v)}
+                placeholder="段落の本文…"
+                multiline
+              />
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* ───── メタ情報（出典） ───── */}
+        <TabsContent value="meta" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">出典・参照</CardTitle>
+              <CardDescription>事実情報の参照元（食べログ・公式サイトなど）</CardDescription>
+            </CardHeader>
+            <CardContent className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-2">
+                <Label htmlFor="source_label">出典ラベル</Label>
+                <Input
+                  id="source_label"
+                  value={form.source_label ?? ""}
+                  onChange={(e) => set("source_label", e.target.value)}
+                  placeholder="公式サイト"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="source_url">出典 URL</Label>
+                <Input
+                  id="source_url"
+                  value={form.source_url ?? ""}
+                  onChange={(e) => set("source_url", e.target.value)}
+                  placeholder="https://..."
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
+
+      {/* フッター */}
+      <div className="flex items-center justify-between gap-3 border-t border-border pt-4 text-xs text-muted-foreground">
+        <span>⌘+S で保存できます</span>
+        <Button type="submit" size="lg" disabled={saving}>
+          {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
+          {saving ? "保存中…" : isNew ? "追加" : "保存"}
+        </Button>
       </div>
     </form>
   );

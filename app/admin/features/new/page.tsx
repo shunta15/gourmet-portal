@@ -1,12 +1,16 @@
+import Link from "next/link";
 import FeatureEditForm from "@/components/admin/FeatureEditForm";
+import { ArrowLeft } from "lucide-react";
 
 export default function NewFeature() {
   return (
-    <div>
-      <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 32 }}>
-        <a href="/admin/features" style={{ color: "#888", textDecoration: "none", fontSize: 13 }}>← 特集記事一覧</a>
-        <h1 style={{ fontSize: 20, fontWeight: 700, color: "#fff" }}>新規特集記事追加</h1>
-      </div>
+    <div className="space-y-4">
+      <Link
+        href="/admin/features"
+        className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+      >
+        <ArrowLeft className="size-3.5" /> 特集記事一覧に戻る
+      </Link>
       <FeatureEditForm article={null} />
     </div>
   );
