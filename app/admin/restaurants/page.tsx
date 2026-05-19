@@ -23,11 +23,12 @@ const REGIONS = [
 export default async function AdminRestaurants({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; region?: string; page?: string }>;
+  searchParams: Promise<{ q?: string; region?: string; page?: string; sort?: string }>;
 }) {
   const params = await searchParams;
   const q = params.q ?? "";
   const region = params.region ?? "";
+  const sort = params.sort ?? "id";
   const page = parseInt(params.page ?? "1");
   const perPage = 30;
 
@@ -35,8 +36,16 @@ export default async function AdminRestaurants({
 
   let query = supabase
     .from("restaurants")
-    .select("id, name, area, region, cuisine, published", { count: "exact" })
-    .order("id");
+    .select("id, name, area, region, cuisine, published, updated_at", { count: "exact" });
+
+  // 並び順
+  if (sort === "updated") {
+    query = query.order("updated_at", { ascending: false });
+  } else if (sort === "name") {
+    query = query.order("name");
+  } else {
+    query = query.order("id");
+  }
 
   if (q) query = query.ilike("name", `%${q}%`);
   if (region) query = query.eq("region", region);
@@ -78,6 +87,15 @@ export default async function AdminRestaurants({
           {REGIONS.map((r) => (
             <option key={r} value={r}>{r}</option>
           ))}
+        </select>
+        <select
+          name="sort"
+          defaultValue={sort}
+          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <option value="id">ID 順</option>
+          <option value="name">名前順</option>
+          <option value="updated">最近編集順</option>
         </select>
         <Button type="submit" variant="secondary">絞り込み</Button>
         {(q || region) && (

@@ -10,6 +10,7 @@ import {
   Newspaper,
   ExternalLink,
   LogOut,
+  Image as ImageIcon,
 } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -29,6 +30,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     { href: "/admin", label: "ダッシュボード", icon: LayoutDashboard },
     { href: "/admin/restaurants", label: "店舗", icon: Store },
     { href: "/admin/features", label: "特集記事", icon: Newspaper },
+    { href: "/admin/storage", label: "画像ライブラリ", icon: ImageIcon },
   ];
 
   async function handleLogout() {
