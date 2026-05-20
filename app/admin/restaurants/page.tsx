@@ -2,17 +2,8 @@ import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { Plus, Search } from "lucide-react";
+import SelectableTable, { StatusBadge } from "@/components/admin/SelectableTable";
 
 const REGIONS = [
   "tokyo", "osaka", "kyoto", "nagoya", "fukuoka", "hyogo",
@@ -38,14 +29,9 @@ export default async function AdminRestaurants({
     .from("restaurants")
     .select("id, name, area, region, cuisine, published, updated_at", { count: "exact" });
 
-  // 並び順
-  if (sort === "updated") {
-    query = query.order("updated_at", { ascending: false });
-  } else if (sort === "name") {
-    query = query.order("name");
-  } else {
-    query = query.order("id");
-  }
+  if (sort === "updated") query = query.order("updated_at", { ascending: false });
+  else if (sort === "name") query = query.order("name");
+  else query = query.order("id");
 
   if (q) query = query.ilike("name", `%${q}%`);
   if (region) query = query.eq("region", region);
@@ -67,21 +53,15 @@ export default async function AdminRestaurants({
         </Link>
       </div>
 
-      {/* 検索フィルタ */}
       <form className="flex flex-wrap items-center gap-2">
         <div className="relative flex-1 min-w-[200px]">
           <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            name="q"
-            defaultValue={q}
-            placeholder="店舗名で検索…"
-            className="pl-9"
-          />
+          <Input name="q" defaultValue={q} placeholder="店舗名で検索…" className="pl-9" />
         </div>
         <select
           name="region"
           defaultValue={region}
-          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs"
         >
           <option value="">全エリア</option>
           {REGIONS.map((r) => (
@@ -91,7 +71,7 @@ export default async function AdminRestaurants({
         <select
           name="sort"
           defaultValue={sort}
-          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs"
         >
           <option value="id">ID 順</option>
           <option value="name">名前順</option>
@@ -105,62 +85,54 @@ export default async function AdminRestaurants({
         )}
       </form>
 
-      {/* テーブル */}
-      <Card className="p-0 overflow-hidden">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-20">ID</TableHead>
-              <TableHead>店舗名</TableHead>
-              <TableHead>エリア</TableHead>
-              <TableHead>ジャンル</TableHead>
-              <TableHead className="w-24">状態</TableHead>
-              <TableHead className="w-20 text-right">操作</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {restaurants?.map((r) => (
-              <TableRow key={r.id}>
-                <TableCell className="font-mono text-xs text-muted-foreground">{r.id}</TableCell>
-                <TableCell className="font-medium">{r.name}</TableCell>
-                <TableCell className="text-muted-foreground">{r.area}</TableCell>
-                <TableCell className="text-muted-foreground">{r.cuisine}</TableCell>
-                <TableCell>
-                  <Badge variant={r.published ? "default" : "destructive"}>
-                    {r.published ? "公開" : "非公開"}
-                  </Badge>
-                </TableCell>
-                <TableCell className="text-right">
-                  <Link href={`/admin/restaurants/${r.id}`} className={buttonVariants({ variant: "link", size: "sm" })}>
-                    編集
-                  </Link>
-                </TableCell>
-              </TableRow>
-            ))}
-            {(!restaurants || restaurants.length === 0) && (
-              <TableRow>
-                <TableCell colSpan={6} className="py-10 text-center text-muted-foreground">
-                  該当する店舗がありません
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </Card>
+      <SelectableTable
+        rows={(restaurants ?? []) as any[]}
+        table="restaurants"
+        editHref={(r) => `/admin/restaurants/${r.id}`}
+        emptyMessage="該当する店舗がありません"
+        columns={[
+          {
+            key: "id",
+            label: "ID",
+            className: "w-20",
+            render: (r: any) => <span className="font-mono text-xs text-muted-foreground">{r.id}</span>,
+          },
+          {
+            key: "name",
+            label: "店舗名",
+            render: (r: any) => <span className="font-medium">{r.name}</span>,
+          },
+          {
+            key: "area",
+            label: "エリア",
+            render: (r: any) => <span className="text-muted-foreground">{r.area}</span>,
+          },
+          {
+            key: "cuisine",
+            label: "ジャンル",
+            render: (r: any) => <span className="text-muted-foreground">{r.cuisine}</span>,
+          },
+          {
+            key: "published",
+            label: "状態",
+            className: "w-24",
+            render: (r: any) => <StatusBadge published={r.published} />,
+          },
+        ]}
+      />
 
-      {/* ページネーション */}
       {totalPages > 1 && (
         <div className="flex flex-wrap justify-center gap-1">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => {
-            const params = new URLSearchParams();
-            if (q) params.set("q", q);
-            if (region) params.set("region", region);
-            params.set("page", String(p));
-            const href = `/admin/restaurants?${params.toString()}`;
+            const usp = new URLSearchParams();
+            if (q) usp.set("q", q);
+            if (region) usp.set("region", region);
+            if (sort) usp.set("sort", sort);
+            usp.set("page", String(p));
             return (
               <Link
                 key={p}
-                href={href}
+                href={`/admin/restaurants?${usp.toString()}`}
                 className={buttonVariants({ variant: p === page ? "default" : "outline", size: "sm" }) + " size-9 p-0"}
               >
                 {p}

@@ -4,16 +4,9 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { Plus, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
+import SelectableTable, { StatusBadge } from "@/components/admin/SelectableTable";
 
 type Filter = "active" | "published" | "drafts" | "legacy" | "all";
 
@@ -32,11 +25,12 @@ function isLegacyId(id: string): boolean {
 export default async function AdminFeatures({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; page?: string; filter?: Filter }>;
+  searchParams: Promise<{ q?: string; page?: string; filter?: Filter; sort?: string }>;
 }) {
   const params = await searchParams;
   const q = params.q ?? "";
   const filter: Filter = (params.filter as Filter) ?? "active";
+  const sort = params.sort ?? "no";
   const page = parseInt(params.page ?? "1");
   const perPage = 30;
 
@@ -69,8 +63,11 @@ export default async function AdminFeatures({
 
   let query = supabase
     .from("feature_articles")
-    .select("id, no, title, kicker, date, published", { count: "exact" })
-    .order("no");
+    .select("id, no, title, kicker, date, published, updated_at", { count: "exact" });
+
+  if (sort === "updated") query = query.order("updated_at", { ascending: false });
+  else if (sort === "title") query = query.order("title");
+  else query = query.order("no");
 
   if (allowedIds !== null) {
     if (allowedIds.length === 0) {
@@ -98,7 +95,6 @@ export default async function AdminFeatures({
         </Link>
       </div>
 
-      {/* サマリ */}
       <Card className="px-5 py-4">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
           <div className="flex items-center gap-2">
@@ -122,17 +118,16 @@ export default async function AdminFeatures({
         </div>
       </Card>
 
-      {/* フィルタタブ */}
       <div className="flex flex-wrap gap-2">
         {(Object.keys(FILTER_LABEL) as Filter[]).map((k) => {
           const active = filter === k;
-          const params = new URLSearchParams();
-          params.set("filter", k);
-          if (q) params.set("q", q);
+          const usp = new URLSearchParams();
+          usp.set("filter", k);
+          if (q) usp.set("q", q);
           return (
             <Link
               key={k}
-              href={`/admin/features?${params.toString()}`}
+              href={`/admin/features?${usp.toString()}`}
               className={cn(buttonVariants({ variant: active ? "default" : "outline", size: "sm" }), active && "shadow-sm")}
             >
               {FILTER_LABEL[k]}
@@ -144,86 +139,82 @@ export default async function AdminFeatures({
         })}
       </div>
 
-      {/* 検索 */}
       <form className="flex flex-wrap items-center gap-2">
         <input type="hidden" name="filter" value={filter} />
         <div className="relative flex-1 min-w-[200px]">
           <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            name="q"
-            defaultValue={q}
-            placeholder="タイトルで検索…"
-            className="pl-9"
-          />
+          <Input name="q" defaultValue={q} placeholder="タイトルで検索…" className="pl-9" />
         </div>
+        <select
+          name="sort"
+          defaultValue={sort}
+          className="h-9 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs"
+        >
+          <option value="no">No 順</option>
+          <option value="title">タイトル順</option>
+          <option value="updated">最近編集順</option>
+        </select>
         <Button type="submit" variant="secondary">検索</Button>
       </form>
 
-      {/* テーブル */}
-      <Card className="p-0 overflow-hidden">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-20">No</TableHead>
-              <TableHead>タイトル</TableHead>
-              <TableHead>キッカー</TableHead>
-              <TableHead className="w-28">日付</TableHead>
-              <TableHead className="w-24">状態</TableHead>
-              <TableHead className="w-20 text-right">操作</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {articles?.map((a) => {
-              const legacy = isLegacyId(a.id);
-              return (
-                <TableRow key={a.id}>
-                  <TableCell className="font-mono text-xs text-muted-foreground">{a.no || "—"}</TableCell>
-                  <TableCell className="font-medium">
-                    <span className="line-clamp-1">{a.title}</span>
-                    {legacy && (
-                      <Badge variant="outline" className="ml-2 text-[10px] text-yellow-500 border-yellow-500/40">
-                        LEGACY
-                      </Badge>
-                    )}
-                  </TableCell>
-                  <TableCell className="text-muted-foreground text-xs">{a.kicker}</TableCell>
-                  <TableCell className="text-muted-foreground text-xs">{a.date}</TableCell>
-                  <TableCell>
-                    <Badge variant={a.published ? "default" : "destructive"}>
-                      {a.published ? "公開" : "非公開"}
-                    </Badge>
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <Link href={`/admin/features/${a.id}`} className={buttonVariants({ variant: "link", size: "sm" })}>
-                      編集
-                    </Link>
-                  </TableCell>
-                </TableRow>
-              );
-            })}
-            {(!articles || articles.length === 0) && (
-              <TableRow>
-                <TableCell colSpan={6} className="py-10 text-center text-muted-foreground">
-                  該当する記事がありません
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </Card>
+      <SelectableTable
+        rows={(articles ?? []) as any[]}
+        table="feature_articles"
+        editHref={(a) => `/admin/features/${a.id}`}
+        emptyMessage="該当する記事がありません"
+        columns={[
+          {
+            key: "no",
+            label: "No",
+            className: "w-20",
+            render: (a: any) => <span className="font-mono text-xs text-muted-foreground">{a.no || "—"}</span>,
+          },
+          {
+            key: "title",
+            label: "タイトル",
+            render: (a: any) => (
+              <span className="font-medium">
+                <span className="line-clamp-1">{a.title}</span>
+                {isLegacyId(a.id) && (
+                  <Badge variant="outline" className="ml-2 text-[10px] text-yellow-500 border-yellow-500/40">
+                    LEGACY
+                  </Badge>
+                )}
+              </span>
+            ),
+          },
+          {
+            key: "kicker",
+            label: "キッカー",
+            render: (a: any) => <span className="text-muted-foreground text-xs">{a.kicker}</span>,
+          },
+          {
+            key: "date",
+            label: "日付",
+            className: "w-28",
+            render: (a: any) => <span className="text-muted-foreground text-xs">{a.date}</span>,
+          },
+          {
+            key: "published",
+            label: "状態",
+            className: "w-24",
+            render: (a: any) => <StatusBadge published={a.published} />,
+          },
+        ]}
+      />
 
-      {/* ページネーション */}
       {totalPages > 1 && (
         <div className="flex flex-wrap justify-center gap-1">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => {
-            const params = new URLSearchParams();
-            params.set("filter", filter);
-            if (q) params.set("q", q);
-            params.set("page", String(p));
+            const usp = new URLSearchParams();
+            usp.set("filter", filter);
+            if (q) usp.set("q", q);
+            if (sort) usp.set("sort", sort);
+            usp.set("page", String(p));
             return (
               <Link
                 key={p}
-                href={`/admin/features?${params.toString()}`}
+                href={`/admin/features?${usp.toString()}`}
                 className={buttonVariants({ variant: p === page ? "default" : "outline", size: "sm" }) + " size-9 p-0"}
               >
                 {p}
