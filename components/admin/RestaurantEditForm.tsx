@@ -29,6 +29,7 @@ import ArrayInput from "./ArrayInput";
 import DuplicateWarning from "./DuplicateWarning";
 import AIDraftButton from "./AIDraftButton";
 import ContentLintWarning from "./ContentLintWarning";
+import AIRewriteButton from "./AIRewriteButton";
 
 type Restaurant = {
   id: string;
@@ -388,7 +389,14 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
               </div>
 
               <div className="sm:col-span-2 space-y-2">
-                <Label htmlFor="desc">短い説明</Label>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="desc">短い説明</Label>
+                  <AIRewriteButton
+                    text={form.desc}
+                    context={`店名: ${form.name}, ジャンル: ${form.cuisine}, エリア: ${form.area}`}
+                    onResult={(t) => set("desc", t)}
+                  />
+                </div>
                 <Textarea
                   id="desc"
                   value={form.desc}

@@ -24,6 +24,8 @@ import {
 import { Loader2, Save, Trash2, ExternalLink, Info } from "lucide-react";
 import ImageUploader from "./ImageUploader";
 import ContentLintWarning from "./ContentLintWarning";
+import AIFeatureDraftButton from "./AIFeatureDraftButton";
+import AIRewriteButton from "./AIRewriteButton";
 
 type FeatureArticle = {
   id: string;
@@ -166,6 +168,20 @@ export default function FeatureEditForm({ article }: { article: FeatureArticle |
         </div>
 
         <div className="flex items-center gap-2">
+          {isNew && (
+            <AIFeatureDraftButton
+              onResult={(d) => {
+                setForm((f) => ({
+                  ...f,
+                  title: d.title || f.title,
+                  title_html: d.titleHTML || f.title_html,
+                  subtitle: d.subtitle || f.subtitle,
+                  kicker: d.kicker || f.kicker,
+                  lede: d.lede || f.lede,
+                }));
+              }}
+            />
+          )}
           {!isNew && (
             <Dialog>
               <DialogTrigger>
@@ -357,7 +373,14 @@ export default function FeatureEditForm({ article }: { article: FeatureArticle |
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="lede">lede（リード文）</Label>
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="lede">lede（リード文）</Label>
+                  <AIRewriteButton
+                    text={form.lede}
+                    context={`記事タイトル: ${form.title}`}
+                    onResult={(t) => set("lede", t)}
+                  />
+                </div>
                 <Textarea
                   id="lede"
                   value={form.lede}

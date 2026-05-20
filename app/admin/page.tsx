@@ -14,6 +14,7 @@ import {
   Image as ImageIcon,
 } from "lucide-react";
 import Link from "next/link";
+import AIInsightsCard from "@/components/admin/AIInsightsCard";
 
 export default async function AdminDashboard() {
   const supabase = await createClient();
@@ -100,6 +101,9 @@ export default async function AdminDashboard() {
           );
         })}
       </div>
+
+      {/* AI Insights */}
+      <AIInsightsCard />
 
       {/* Quick actions */}
       <Card>

@@ -1,9 +1,10 @@
 "use client";
 import { useState, useRef } from "react";
+import { toast } from "sonner";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Loader2, Upload, X, Link as LinkIcon } from "lucide-react";
+import { Loader2, Upload, X, Link as LinkIcon, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -16,6 +17,9 @@ type Props = {
   previewHeight?: number;
   /** 入力 URL も許可（true なら URL 直入力 UI も表示） */
   allowUrl?: boolean;
+  /** AI alt 生成を許可する場合、onAlt と context を渡す */
+  onAlt?: (alt: string) => void;
+  altContext?: string;
 };
 
 export default function ImageUploader({
@@ -26,11 +30,37 @@ export default function ImageUploader({
   className,
   previewHeight = 160,
   allowUrl = true,
+  onAlt,
+  altContext,
 }: Props) {
   const [uploading, setUploading] = useState(false);
+  const [generatingAlt, setGeneratingAlt] = useState(false);
   const [error, setError] = useState("");
   const [dragging, setDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  async function generateAlt() {
+    if (!value || !onAlt) return;
+    setGeneratingAlt(true);
+    try {
+      const res = await fetch("/api/ai/image-alt", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ imageUrl: value, context: altContext }),
+      });
+      const json = await res.json();
+      if (!res.ok) {
+        toast.error(json?.error ?? "AI alt 生成失敗");
+        return;
+      }
+      onAlt(json.alt || "");
+      toast.success("AI が alt を生成しました");
+    } catch (e: any) {
+      toast.error(`通信エラー: ${e?.message}`);
+    } finally {
+      setGeneratingAlt(false);
+    }
+  }
 
   async function handleFile(file: File) {
     if (!file.type.startsWith("image/")) {
@@ -160,6 +190,19 @@ export default function ImageUploader({
               className="pl-8 text-xs"
             />
           </div>
+          {onAlt && value && (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={generateAlt}
+              disabled={generatingAlt}
+              title="この画像の alt テキストを AI が自動生成"
+            >
+              {generatingAlt ? <Loader2 className="size-3.5 animate-spin" /> : <Sparkles className="size-3.5" />}
+              AI alt
+            </Button>
+          )}
         </div>
       )}
     </div>
