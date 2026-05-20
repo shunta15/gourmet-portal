@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/dialog";
 import { Loader2, Save, Trash2, ExternalLink, Info } from "lucide-react";
 import ImageUploader from "./ImageUploader";
+import ContentLintWarning from "./ContentLintWarning";
 
 type FeatureArticle = {
   id: string;
@@ -364,6 +365,11 @@ export default function FeatureEditForm({ article }: { article: FeatureArticle |
                   rows={6}
                   placeholder="記事冒頭の語り出し…"
                 />
+                <ContentLintWarning text={form.lede} />
+              </div>
+
+              <div className="space-y-2">
+                <ContentLintWarning text={form.subtitle} />
               </div>
             </CardContent>
           </Card>

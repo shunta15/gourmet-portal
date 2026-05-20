@@ -28,6 +28,7 @@ import ImageArrayUploader from "./ImageArrayUploader";
 import ArrayInput from "./ArrayInput";
 import DuplicateWarning from "./DuplicateWarning";
 import AIDraftButton from "./AIDraftButton";
+import ContentLintWarning from "./ContentLintWarning";
 
 type Restaurant = {
   id: string;
@@ -395,6 +396,7 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
                   rows={3}
                   placeholder="一覧カードや SEO descriptions に使う 60〜140字程度"
                 />
+                <ContentLintWarning text={form.desc} />
               </div>
 
               <div className="sm:col-span-2 flex items-center gap-3 pt-2">
