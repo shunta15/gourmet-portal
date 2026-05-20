@@ -2,7 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Plus, Search, Download } from "lucide-react";
+import { Plus, Search, Download, Upload } from "lucide-react";
 import SelectableTable, { StatusBadge } from "@/components/admin/SelectableTable";
 
 const REGIONS = [
@@ -49,11 +49,14 @@ export default async function AdminRestaurants({
           <p className="mt-1 text-sm text-muted-foreground">{count ?? 0} 件</p>
         </div>
         <div className="flex items-center gap-2">
+          <Link href="/admin/restaurants/import" className={buttonVariants({ variant: "outline" })}>
+            <Upload className="size-4" /> CSV 取込
+          </Link>
           <a
             href={`/api/admin/export-restaurants${region ? `?region=${region}` : ""}`}
             className={buttonVariants({ variant: "outline" })}
           >
-            <Download className="size-4" /> CSV
+            <Download className="size-4" /> CSV 出力
           </a>
           <Link href="/admin/restaurants/new" className={buttonVariants({ variant: "default" })}>
             <Plus className="size-4" /> 新規追加
