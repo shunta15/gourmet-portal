@@ -1,39 +1,46 @@
 /* admin 専用スタイル: Tailwind v4 + shadcn/ui */
-/* マチノワブランド: 和紙(白) ＋ 墨(濃灰) ＋ 朱アクセント (#c7472a) */
-/* ライトテーマで視認性最優先 */
+/* マチノワブランド: 墨ベース ＋ 朱アクセント (#c7472a) */
+/* 境界線を強くして要素同士の境目を明確に */
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * 重要: CSS 変数は :root レベルで定義する。
+ * Dialog / DropdownMenu などが Portal で <body> 直下に飛ばされるとき、
+ * .admin-root スコープだと届かないため。
+ * admin.css は admin layout でのみ import されるので、admin 以外には流れない。
+ */
+:root,
 .admin-root {
-  --background: oklch(0.99 0.005 80);     /* ほぼ白（紙寄り）*/
-  --foreground: oklch(0.18 0.006 60);     /* 濃い墨 */
-  --card: oklch(1 0 0);                   /* 真っ白カード */
-  --card-foreground: oklch(0.18 0.006 60);
-  --popover: oklch(1 0 0);                /* ダイアログも真っ白 */
-  --popover-foreground: oklch(0.18 0.006 60);
-  --primary: oklch(0.55 0.18 33);         /* 朱 #c7472a 相当 */
+  --background: oklch(0.22 0.006 60);     /* ダーク背景・墨ベース */
+  --foreground: oklch(0.97 0.015 80);     /* くっきり和紙の白 */
+  --card: oklch(0.30 0.008 60);           /* カードは明確に明るく */
+  --card-foreground: oklch(0.97 0.015 80);
+  --popover: oklch(0.32 0.008 60);        /* ダイアログ・ポップオーバー */
+  --popover-foreground: oklch(0.97 0.015 80);
+  --primary: oklch(0.65 0.18 33);         /* 朱 #c7472a */
   --primary-foreground: oklch(0.99 0.015 80);
-  --secondary: oklch(0.96 0.006 80);
-  --secondary-foreground: oklch(0.20 0.006 60);
-  --muted: oklch(0.96 0.006 80);
-  --muted-foreground: oklch(0.45 0.008 60);
-  --shadcn-accent: oklch(0.55 0.18 33 / 12%);
-  --accent-foreground: oklch(0.20 0.006 60);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.85 0.006 80);          /* 灰色の罫線 */
-  --input: oklch(0.82 0.006 80);           /* 入力欄の枠 */
-  --ring: oklch(0.55 0.18 33);
+  --secondary: oklch(0.38 0.008 60);
+  --secondary-foreground: oklch(0.97 0.015 80);
+  --muted: oklch(0.34 0.008 60);
+  --muted-foreground: oklch(0.80 0.012 80);
+  --shadcn-accent: oklch(0.65 0.18 33 / 22%);
+  --accent-foreground: oklch(0.97 0.015 80);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 35%);           /* 罫線をかなり強く */
+  --input: oklch(1 0 0 / 38%);            /* 入力欄の枠もくっきり */
+  --ring: oklch(0.65 0.18 33);
   --radius: 0.625rem;
-  --sidebar: oklch(0.98 0.006 80);         /* サイドバーは微妙にくすませる */
-  --sidebar-foreground: oklch(0.20 0.006 60);
-  --sidebar-primary: oklch(0.55 0.18 33);
+  --sidebar: oklch(0.17 0.006 60);        /* サイドバーは一段濃い墨 */
+  --sidebar-foreground: oklch(0.97 0.015 80);
+  --sidebar-primary: oklch(0.65 0.18 33);
   --sidebar-primary-foreground: oklch(0.99 0.015 80);
-  --sidebar-accent: oklch(0.94 0.008 80);
-  --sidebar-accent-foreground: oklch(0.20 0.006 60);
-  --sidebar-border: oklch(0.85 0.006 80);
-  --sidebar-ring: oklch(0.55 0.18 33);
+  --sidebar-accent: oklch(0.30 0.008 60);
+  --sidebar-accent-foreground: oklch(0.97 0.015 80);
+  --sidebar-border: oklch(1 0 0 / 18%);
+  --sidebar-ring: oklch(0.65 0.18 33);
 }
 
 @theme inline {
@@ -76,7 +83,7 @@
   min-height: 100vh;
 }
 
-/* カーソルを通常に戻す（公開サイトはカスタムカーソル使用） */
+/* カーソルを通常に戻す */
 .admin-root,
 .admin-root * {
   cursor: auto;
@@ -91,37 +98,59 @@
   cursor: text;
 }
 
-/* 入力欄を明示的に白＋灰枠で */
+/* 入力欄に強い境界線・暗背景 */
 .admin-root input,
 .admin-root textarea,
 .admin-root select {
-  background-color: #ffffff !important;
+  background-color: oklch(0.16 0.006 60) !important;  /* 背景より暗い */
   color: var(--foreground) !important;
-  border: 1px solid var(--input) !important;
+  border: 1.5px solid oklch(1 0 0 / 30%) !important;
 }
 .admin-root input::placeholder,
 .admin-root textarea::placeholder {
-  color: var(--muted-foreground) !important;
-  opacity: 0.7;
+  color: oklch(0.70 0.012 80) !important;
+}
+.admin-root input:focus,
+.admin-root textarea:focus,
+.admin-root select:focus {
+  border-color: var(--primary) !important;
+  outline: 2px solid oklch(0.65 0.18 33 / 30%);
+  outline-offset: 1px;
 }
 
-/* タブを明確に */
+/* カードに強い境界線 */
+.admin-root [data-slot="card"] {
+  background-color: var(--card);
+  border: 1px solid oklch(1 0 0 / 18%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* タブ: 境界をはっきり */
 .admin-root [data-slot="tabs-list"] {
-  background-color: var(--secondary) !important;
-  border: 1px solid var(--border);
+  background-color: oklch(0.16 0.006 60) !important;
+  border: 1px solid oklch(1 0 0 / 22%);
+  padding: 4px;
 }
 .admin-root [data-slot="tabs-trigger"] {
-  color: var(--muted-foreground) !important;
-  padding: 6px 14px !important;
+  color: oklch(0.78 0.012 80) !important;
+  padding: 6px 16px !important;
   font-weight: 500;
 }
 .admin-root [data-slot="tabs-trigger"][data-active] {
-  background-color: #ffffff !important;
+  background-color: var(--card) !important;
   color: var(--foreground) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* カードに薄いシャドウ */
-.admin-root [data-slot="card"] {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+/* CardHeader と CardContent の間に区切り線 */
+.admin-root [data-slot="card-header"] {
+  border-bottom: 1px solid oklch(1 0 0 / 14%);
+  padding-bottom: 16px;
+}
+
+/* セクション間のスペーシング強化 */
+.admin-root .space-y-4 > * + *,
+.admin-root .space-y-6 > * + *,
+.admin-root .space-y-3 > * + * {
+  margin-top: 16px;
 }

@@ -116,7 +116,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </div>
       </main>
 
-      <Toaster theme="light" />
+      <Toaster theme="dark" />
       <CommandPalette />
     </div>
   );
