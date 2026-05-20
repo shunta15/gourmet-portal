@@ -13,6 +13,7 @@ import {
   Image as ImageIcon,
 } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
+import CommandPalette from "@/components/admin/CommandPalette";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -46,6 +47,17 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="border-b border-sidebar-border px-5 py-5">
           <div className="text-[10px] font-mono tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
           <div className="mt-1 text-base font-semibold tracking-wide">CMS</div>
+          <button
+            type="button"
+            onClick={() => {
+              const ev = new KeyboardEvent("keydown", { key: "k", metaKey: true });
+              window.dispatchEvent(ev);
+            }}
+            className="mt-3 flex w-full items-center justify-between gap-2 rounded-md border border-sidebar-border bg-muted/20 px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:bg-muted/30"
+          >
+            <span>クイック検索…</span>
+            <kbd className="rounded border border-sidebar-border bg-background/40 px-1.5 py-0.5 font-mono text-[10px]">⌘K</kbd>
+          </button>
         </div>
 
         <nav className="flex-1 space-y-1 px-3 py-4">
@@ -100,6 +112,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       </main>
 
       <Toaster theme="dark" />
+      <CommandPalette />
     </div>
   );
 }
