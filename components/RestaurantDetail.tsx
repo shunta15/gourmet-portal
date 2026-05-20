@@ -202,6 +202,18 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 📞 {r.phone}
               </a>
             )}
+            {r.address && (
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + " " + r.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="MAP"
+              >
+                Google マップで開く ↗
+              </a>
+            )}
             {!r.phone && !r.reservationUrl && (
               <a
                 href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
