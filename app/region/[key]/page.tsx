@@ -1,8 +1,13 @@
 import { notFound } from "next/navigation";
 import RegionPage from "@/components/RegionPage";
 import { REGIONS, type RegionKey } from "@/lib/data";
+import { getRestaurantsByRegion } from "@/lib/db/restaurants";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
+
+// 公開ページは Supabase を真の source-of-truth として使う
+export const revalidate = 60;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return KEYS.map((key) => ({ key }));
@@ -40,5 +45,7 @@ export default async function Page({
 }) {
   const { key } = await params;
   if (!KEYS.includes(key as RegionKey)) notFound();
-  return <RegionPage regionKey={key as RegionKey} />;
+  // DB から該当 region の店舗を取得して Client へ渡す
+  const restaurants = await getRestaurantsByRegion(key as RegionKey);
+  return <RegionPage regionKey={key as RegionKey} restaurants={restaurants} />;
 }

@@ -10,16 +10,24 @@ import {
   FEATURES,
   getRegionStats,
   type RegionKey,
+  type Restaurant,
 } from "@/lib/data";
 import { useParallax, useReveal } from "@/lib/hooks";
 
-export default function RegionPage({ regionKey }: { regionKey: RegionKey }) {
+export default function RegionPage({
+  regionKey,
+  restaurants: restaurantsProp,
+}: {
+  regionKey: RegionKey;
+  restaurants?: Restaurant[];
+}) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const r = REGIONS[regionKey];
   const stats = getRegionStats(regionKey);
-  const restaurants = RESTAURANTS.filter((x) => x.region === regionKey);
+  // Server から DB 経由で渡された restaurants を優先。フォールバックは data.ts
+  const restaurants = restaurantsProp ?? RESTAURANTS.filter((x) => x.region === regionKey);
 
   useEffect(() => {
     document.body.setAttribute("data-region", regionKey);
