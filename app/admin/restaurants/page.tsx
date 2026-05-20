@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Plus, Search, Download, Upload } from "lucide-react";
-import SelectableTable, { StatusBadge } from "@/components/admin/SelectableTable";
+import SelectableTable from "@/components/admin/SelectableTable";
 
 const REGIONS = [
   "tokyo", "osaka", "kyoto", "nagoya", "fukuoka", "hyogo",
@@ -98,38 +98,8 @@ export default async function AdminRestaurants({
 
       <SelectableTable
         rows={(restaurants ?? []) as any[]}
-        table="restaurants"
-        editHref={(r) => `/admin/restaurants/${r.id}`}
+        kind="restaurants"
         emptyMessage="該当する店舗がありません"
-        columns={[
-          {
-            key: "id",
-            label: "ID",
-            className: "w-20",
-            render: (r: any) => <span className="font-mono text-xs text-muted-foreground">{r.id}</span>,
-          },
-          {
-            key: "name",
-            label: "店舗名",
-            render: (r: any) => <span className="font-medium">{r.name}</span>,
-          },
-          {
-            key: "area",
-            label: "エリア",
-            render: (r: any) => <span className="text-muted-foreground">{r.area}</span>,
-          },
-          {
-            key: "cuisine",
-            label: "ジャンル",
-            render: (r: any) => <span className="text-muted-foreground">{r.cuisine}</span>,
-          },
-          {
-            key: "published",
-            label: "状態",
-            className: "w-24",
-            render: (r: any) => <StatusBadge published={r.published} />,
-          },
-        ]}
       />
 
       {totalPages > 1 && (

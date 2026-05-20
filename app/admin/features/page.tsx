@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Plus, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-import SelectableTable, { StatusBadge } from "@/components/admin/SelectableTable";
+import SelectableTable from "@/components/admin/SelectableTable";
 
 type Filter = "active" | "published" | "drafts" | "legacy" | "all";
 
@@ -159,48 +159,8 @@ export default async function AdminFeatures({
 
       <SelectableTable
         rows={(articles ?? []) as any[]}
-        table="feature_articles"
-        editHref={(a) => `/admin/features/${a.id}`}
+        kind="feature_articles"
         emptyMessage="該当する記事がありません"
-        columns={[
-          {
-            key: "no",
-            label: "No",
-            className: "w-20",
-            render: (a: any) => <span className="font-mono text-xs text-muted-foreground">{a.no || "—"}</span>,
-          },
-          {
-            key: "title",
-            label: "タイトル",
-            render: (a: any) => (
-              <span className="font-medium">
-                <span className="line-clamp-1">{a.title}</span>
-                {isLegacyId(a.id) && (
-                  <Badge variant="outline" className="ml-2 text-[10px] text-yellow-500 border-yellow-500/40">
-                    LEGACY
-                  </Badge>
-                )}
-              </span>
-            ),
-          },
-          {
-            key: "kicker",
-            label: "キッカー",
-            render: (a: any) => <span className="text-muted-foreground text-xs">{a.kicker}</span>,
-          },
-          {
-            key: "date",
-            label: "日付",
-            className: "w-28",
-            render: (a: any) => <span className="text-muted-foreground text-xs">{a.date}</span>,
-          },
-          {
-            key: "published",
-            label: "状態",
-            className: "w-24",
-            render: (a: any) => <StatusBadge published={a.published} />,
-          },
-        ]}
       />
 
       {totalPages > 1 && (
