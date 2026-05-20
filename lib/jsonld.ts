@@ -5,7 +5,7 @@ const BASE = "https://machinowa.tokyo";
 /* 営業時間文字列を OpeningHoursSpecification の配列に変換 */
 function parseOpeningHours(
   hours: string,
-  closed: string
+  _closed: string
 ): Array<Record<string, unknown>> | undefined {
   // 「月-土 16:30 - 23:00 / 日月 16:30 - 22:00」のようなケースを大まかにパース
   // 失敗したらフリーテキストで返す
@@ -55,6 +55,87 @@ function parseOpeningHours(
   return result.length > 0 ? result : undefined;
 }
 
+/* 住所文字列から postalCode / addressRegion / streetAddress を抽出 */
+function parseAddress(
+  raw: string,
+  regionName: string | undefined
+): {
+  streetAddress: string;
+  postalCode?: string;
+  addressRegion?: string;
+} {
+  let s = (raw || "").trim();
+
+  // 〒123-4567 抽出
+  let postalCode: string | undefined;
+  const postalMatch = s.match(/〒?\s*(\d{3}-\d{4})/);
+  if (postalMatch) {
+    postalCode = postalMatch[1];
+    s = s.replace(postalMatch[0], "").trim();
+  }
+
+  // 都道府県抽出（東京都/大阪府/京都府/北海道/{XX}県）
+  let addressRegion: string | undefined;
+  const prefMatch = s.match(/^(東京都|大阪府|京都府|北海道|.{2,3}県)/);
+  if (prefMatch) {
+    addressRegion = prefMatch[1];
+  } else if (regionName) {
+    // フォールバックで region 名（例: "東京"）に都/府/県を補完
+    if (regionName === "東京") addressRegion = "東京都";
+    else if (regionName === "大阪") addressRegion = "大阪府";
+    else if (regionName === "京都") addressRegion = "京都府";
+    else if (regionName === "北海道") addressRegion = "北海道";
+    else if (regionName) addressRegion = `${regionName}県`;
+  }
+
+  return {
+    streetAddress: s,
+    postalCode,
+    addressRegion,
+  };
+}
+
+/* 予算文字列 → priceRange (¥ / ¥¥ / ¥¥¥ / ¥¥¥¥) へ正規化
+ * 1人あたりおおよその金額を schema.org の表現に合わせる。
+ * - ~3000円       → ¥
+ * - 3000-7000円   → ¥¥
+ * - 7000-15000円  → ¥¥¥
+ * - 15000円~      → ¥¥¥¥
+ */
+function normalizePriceRange(budget: string | undefined): string | undefined {
+  if (!budget) return undefined;
+  // 「3000-5000円」「¥4000」「3,500円〜」のような表記から数字を抽出
+  const nums = budget
+    .replace(/,/g, "")
+    .match(/\d{3,6}/g);
+  if (!nums || nums.length === 0) {
+    // 既に ¥ 記号で書かれていればそのまま使う
+    if (/^[¥$]+$/.test(budget.trim())) return budget.trim();
+    return undefined;
+  }
+  const max = Math.max(...nums.map((n) => parseInt(n, 10)));
+  if (max < 3000) return "¥";
+  if (max < 7000) return "¥¥";
+  if (max < 15000) return "¥¥¥";
+  return "¥¥¥¥";
+}
+
+/* 電話番号を E.164 形式に近づけて整形（schema.org の telephone 推奨形式）
+ * 「03-1234-5678」→「+81-3-1234-5678」
+ * 「090-1234-5678」→「+81-90-1234-5678」
+ * パースに失敗したら元の文字列を返す。
+ */
+function normalizePhone(phone: string | undefined): string | undefined {
+  if (!phone) return undefined;
+  const t = phone.trim();
+  // 既に +81 で始まる
+  if (/^\+81/.test(t)) return t;
+  // 0X-... 形式
+  const m = t.match(/^0(\d{1,4})-(.+)$/);
+  if (m) return `+81-${m[1]}-${m[2]}`;
+  return t;
+}
+
 export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
   const region = REGIONS[r.region];
   const url = `${BASE}/restaurant/${r.id}`;
@@ -62,6 +143,17 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
     .filter(Boolean)
     .map((p) => (p.startsWith("http") ? p : `${BASE}${p}`));
   const cuisine = r.cuisine.split(" / ").pop() || r.cuisine;
+
+  const addr = parseAddress(r.address, region?.name);
+
+  const postalAddress: Record<string, unknown> = {
+    "@type": "PostalAddress",
+    streetAddress: addr.streetAddress,
+    addressLocality: region?.name,
+    addressCountry: "JP",
+  };
+  if (addr.addressRegion) postalAddress.addressRegion = addr.addressRegion;
+  if (addr.postalCode) postalAddress.postalCode = addr.postalCode;
 
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -72,17 +164,22 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
     image: images,
     description: r.desc,
     servesCuisine: cuisine,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: r.address,
-      addressLocality: region?.name,
-      addressCountry: "JP",
-    },
+    address: postalAddress,
   };
 
+  // 電話番号
+  const tel = normalizePhone(r.phone);
+  if (tel) jsonLd.telephone = tel;
+
+  // 価格帯（schema.org の Restaurant では priceRange は推奨フィールド）
+  const priceRange = normalizePriceRange(r.budget);
+  if (priceRange) jsonLd.priceRange = priceRange;
+
+  // 営業時間
   const hours = parseOpeningHours(r.hours, r.closed);
   if (hours) jsonLd.openingHoursSpecification = hours;
 
+  // 予約
   if (r.reservationUrl) {
     jsonLd.acceptsReservations = "True";
     jsonLd.potentialAction = {
@@ -90,6 +187,30 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
       target: r.reservationUrl,
     };
   }
+
+  // Google レビューを Aggregate Rating として埋め込む
+  // 注意: 出典が明確で信頼できる場合のみ。捏造禁止
+  if (
+    typeof r.googleRating === "number" &&
+    typeof r.googleReviewCount === "number" &&
+    r.googleReviewCount > 0 &&
+    r.googleRating > 0 &&
+    r.googleRating <= 5
+  ) {
+    jsonLd.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: r.googleRating,
+      reviewCount: r.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    };
+  }
+
+  // SNS / 出典をエンティティの sameAs として補強
+  const sameAs: string[] = [];
+  if (r.instagram) sameAs.push(r.instagram);
+  if (r.source?.url) sameAs.push(r.source.url);
+  if (sameAs.length > 0) jsonLd.sameAs = sameAs;
 
   return jsonLd;
 }

@@ -34,8 +34,8 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <Card className="w-full max-w-sm">
+    <div className="w-full px-4">
+      <Card className="mx-auto w-full max-w-sm">
         <CardHeader className="space-y-2 text-center">
           <div className="font-mono text-[10px] tracking-[0.4em] text-muted-foreground">
             MACHINOWA

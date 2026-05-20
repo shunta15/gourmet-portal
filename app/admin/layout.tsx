@@ -21,7 +21,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   if (pathname === "/admin/login") {
     return (
-      <div className="admin-root dark">
+      <div className="admin-root dark flex min-h-screen items-center justify-center">
         {children}
       </div>
     );

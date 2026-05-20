@@ -25,6 +25,7 @@ import ImageUploader from "./ImageUploader";
 import ImageArrayUploader from "./ImageArrayUploader";
 import ArrayInput from "./ArrayInput";
 import DuplicateWarning from "./DuplicateWarning";
+import AIDraftButton from "./AIDraftButton";
 
 type Restaurant = {
   id: string;
@@ -214,6 +215,32 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
         </div>
 
         <div className="flex items-center gap-2">
+          {isNew && (
+            <AIDraftButton
+              onResult={(d) => {
+                setForm((f) => ({
+                  ...f,
+                  name: d.name || f.name,
+                  cuisine: d.cuisine || f.cuisine,
+                  area: d.area || f.area,
+                  region: d.region || f.region,
+                  address: d.address || f.address,
+                  hours: d.hours || f.hours,
+                  closed: d.closed || f.closed,
+                  seats: d.seats || f.seats,
+                  nearest: d.nearest || f.nearest,
+                  phone: d.phone || f.phone,
+                  budget: d.budget || f.budget,
+                  rating: d.rating || f.rating,
+                  desc: d.desc || f.desc,
+                  highlights: (d.highlights && d.highlights.length ? d.highlights : f.highlights),
+                  tags: (d.tags && d.tags.length ? d.tags : f.tags),
+                  source_label: d.source_label || f.source_label,
+                  source_url: d.source_url || f.source_url,
+                }));
+              }}
+            />
+          )}
           {!isNew && (
             <Dialog>
               <DialogTrigger>
