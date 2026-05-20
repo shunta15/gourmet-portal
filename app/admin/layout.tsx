@@ -46,9 +46,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <div className="admin-root dark flex min-h-screen font-sans">
       {/* サイドバー */}
       <aside className="flex w-60 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground">
-        <div className="border-b border-sidebar-border px-5 py-5">
-          <div className="text-[10px] font-mono tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
-          <div className="mt-1 text-base font-semibold tracking-wide">CMS</div>
+        <div className="border-b border-sidebar-border px-5 py-6">
+          <div className="flex items-center gap-2">
+            <div className="h-px w-6 bg-primary" />
+            <div className="text-[10px] font-mono tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
+          </div>
+          <div className="mt-2 text-lg font-semibold tracking-wide">CMS</div>
           <button
             type="button"
             onClick={() => {
@@ -108,7 +111,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
       {/* メイン */}
       <main className="flex-1 overflow-y-auto">
-        <div className="mx-auto max-w-7xl p-8">
+        <div className="mx-auto max-w-6xl p-8">
           {children}
         </div>
       </main>
