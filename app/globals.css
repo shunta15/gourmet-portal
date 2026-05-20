@@ -1257,6 +1257,12 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 }
 
 /* ============================================== */
+/* Feature index tiles (地域・テーマカード)         */
+/* ============================================== */
+.feature-tile{transition:background .2s, transform .2s, border-color .2s}
+.feature-tile:hover{background:#fff; border-color:var(--accent); transform:translateY(-2px)}
+
+/* ============================================== */
 /* Restaurant hero: mobile optimization            */
 /* ============================================== */
 /* 通常: 100vh */
