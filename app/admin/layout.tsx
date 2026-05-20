@@ -22,7 +22,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   if (pathname === "/admin/login") {
     return (
-      <div className="admin-root dark flex min-h-screen items-center justify-center">
+      <div className="admin-root flex min-h-screen items-center justify-center">
         {children}
       </div>
     );
@@ -43,7 +43,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   return (
-    <div className="admin-root dark flex min-h-screen font-sans">
+    <div className="admin-root flex min-h-screen font-sans">
       {/* サイドバー */}
       <aside className="flex w-60 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground">
         <div className="border-b border-sidebar-border px-5 py-6">
@@ -116,7 +116,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </div>
       </main>
 
-      <Toaster theme="dark" />
+      <Toaster theme="light" />
       <CommandPalette />
     </div>
   );

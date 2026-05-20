@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function OwnerPortal() {
   return (
-    <div className="admin-root dark min-h-screen px-4 py-12">
+    <div className="admin-root min-h-screen px-4 py-12">
       <div className="mx-auto max-w-2xl space-y-6">
         <div>
           <div className="font-mono text-[10px] tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
