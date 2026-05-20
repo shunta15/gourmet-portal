@@ -24,6 +24,7 @@ import { Loader2, Save, Trash2, ExternalLink } from "lucide-react";
 import ImageUploader from "./ImageUploader";
 import ImageArrayUploader from "./ImageArrayUploader";
 import ArrayInput from "./ArrayInput";
+import DuplicateWarning from "./DuplicateWarning";
 
 type Restaurant = {
   id: string;
@@ -289,6 +290,12 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
                   value={form.name}
                   onChange={(e) => set("name", e.target.value)}
                   required
+                />
+                <DuplicateWarning
+                  name={form.name}
+                  region={form.region}
+                  area={form.area}
+                  excludeId={isNew ? undefined : form.id}
                 />
               </div>
 
