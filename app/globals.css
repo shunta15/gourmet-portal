@@ -368,6 +368,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .fs-count{margin-left:0; text-align:left; width:100%; border-top:1px solid var(--line); padding-top:14px; margin-top:4px}
 }
 
+.side-article{padding:100px 0 120px}
 .side-article h3{font:500 clamp(32px,5vw,72px)/1 var(--serif); max-width:900px; margin-bottom:40px}
 .side-article h3 em{font-style:italic; color:var(--accent)}
 .side-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px}
@@ -505,6 +506,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .quote-block{padding:80px 20px}
   .quote-block blockquote{font-size:clamp(20px,5vw,32px)}
 
+  .side-article{padding:60px 0 80px}
   .side-grid{grid-template-columns:repeat(2,1fr); gap:12px}
   .side-article h3{font-size:clamp(28px,7vw,44px); margin-bottom:24px}
 
