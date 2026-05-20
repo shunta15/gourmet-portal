@@ -320,9 +320,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
           <cite>{A.quoteCite}</cite>
         </section>
 
-        <SideArticles article={A} />
-
-        <section className="article" style={{ borderBottom: "none" }}>
+        <section className="article">
           <div className="article-head reveal">
             <div className="label">
               編集後記<span className="big">末</span>
@@ -335,6 +333,8 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
             </div>
           </div>
         </section>
+
+        <SideArticles article={A} />
       </div>
 
       <Footer />
