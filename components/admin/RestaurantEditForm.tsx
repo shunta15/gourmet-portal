@@ -20,7 +20,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Loader2, Save, Trash2, ExternalLink } from "lucide-react";
+import { Loader2, Save, Trash2, ExternalLink, Copy } from "lucide-react";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 import ImageUploader from "./ImageUploader";
 import ImageArrayUploader from "./ImageArrayUploader";
 import ArrayInput from "./ArrayInput";
@@ -92,7 +94,8 @@ const empty: Restaurant = {
 };
 
 export default function RestaurantEditForm({ restaurant }: { restaurant: Restaurant | null }) {
-  const isNew = !restaurant;
+  // id が空の場合は「複製の下書き」なので新規扱い
+  const isNew = !restaurant || !restaurant.id;
   const router = useRouter();
   const [saving, setSaving] = useState(false);
   const [deleting, setDeleting] = useState(false);
@@ -215,6 +218,15 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
         </div>
 
         <div className="flex items-center gap-2">
+          {!isNew && (
+            <Link
+              href={`/admin/restaurants/new?cloneFrom=${form.id}`}
+              className={buttonVariants({ variant: "outline", size: "lg" })}
+              title="この店舗をテンプレートに新規追加"
+            >
+              <Copy className="size-4" /> 複製
+            </Link>
+          )}
           {isNew && (
             <AIDraftButton
               onResult={(d) => {

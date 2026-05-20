@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
 import { buildOrganizationJsonLd } from "@/lib/jsonld";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -65,6 +66,7 @@ export default function RootLayout({
         <SiteShell>
           {children}
         </SiteShell>
+        <Analytics />
       </body>
     </html>
   );
