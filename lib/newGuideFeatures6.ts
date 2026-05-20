@@ -208,7 +208,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
       p(5, "近鉄八尾駅から徒歩8分。八尾散歩と組み合わせる使い方", "利用ガイド", "八尾市本町",
         "近鉄八尾から徒歩8分の生活道路沿い。八尾神社・久宝寺寺内町と組み合わせて「ちゃんとした蕎麦昼」を楽しむ",
         "にし田は近鉄大阪線の近鉄八尾駅から徒歩約8分（駅から464m）。観光客がわざわざ訪れる立地ではないが、それゆえに地元の人たちの日常に溶け込んだ「ちゃんとした蕎麦屋」として機能している。せっかく八尾まで足を運ぶなら、近隣の八尾神社や、少し足を伸ばして久宝寺寺内町（江戸期の町割が残る歴史地区）と組み合わせるのが編集部のおすすめ動線。午前に寺内町を散策→にし田で昼蕎麦→午後に河内木綿の老舗や八尾市立歴史民俗資料館へ、というルートで八尾を半日楽しめる。ランチタイムは観光客より地元客で席が埋まる時間帯があるので、訪問前に営業時間を電話（072-994-2688）で確認しておくと安心だ。定休日は水曜（公式情報）。駐車場は店舗側に用意があるが、台数は限られるので近隣コインパーキング併用が無難。",
-        ["/restaurants/nishida-yao/placeholder.jpg"], [{ k: "アクセス", v: "近鉄大阪線 近鉄八尾駅 徒歩8分（464m）" }, { k: "営業", v: "ランチ11:00〜／木金土はディナーも営業／定休日 水曜" }])],
+        ["/restaurants/nishida-yao/yao_kintetsu_station.jpg", "/restaurants/nishida-yao/yao_kenshoji.jpg"], [{ k: "アクセス", v: "近鉄大阪線 近鉄八尾駅 徒歩8分（464m）" }, { k: "営業", v: "ランチ11:00〜／木金土はディナーも営業／定休日 水曜" }])],
     sideArticles: [
       side("Kitchen&Bar Qualia（姪浜）", "feature-qualia-meinohama", "/restaurants/qualia/image_4.jpg"),
       side("汽ノ舎（那智勝浦）", "feature-kinosha-nachikatsuura", "/restaurants/kinosha/nachi-falls.jpg")],
