@@ -46,26 +46,26 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <div className="admin-root flex min-h-screen font-sans">
       {/* サイドバー */}
       <aside className="flex w-72 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground">
-        <div className="border-b border-sidebar-border px-6 py-7">
+        <div className="border-b border-sidebar-border px-6 py-8">
           <div className="flex items-center gap-3">
             <div className="h-px w-8 bg-primary" />
-            <div className="text-[10px] font-mono tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
+            <div className="text-xs font-mono tracking-[0.35em] text-muted-foreground">MACHINOWA</div>
           </div>
-          <div className="mt-3 text-xl font-semibold tracking-wide">CMS</div>
+          <div className="mt-3 text-2xl font-semibold tracking-wide">CMS</div>
           <button
             type="button"
             onClick={() => {
               const ev = new KeyboardEvent("keydown", { key: "k", metaKey: true });
               window.dispatchEvent(ev);
             }}
-            className="mt-5 flex w-full items-center justify-between gap-2 rounded-lg border border-sidebar-border bg-muted/20 px-4 py-2.5 text-xs text-muted-foreground transition-colors hover:bg-muted/30"
+            className="mt-6 flex w-full items-center justify-between gap-2 rounded-lg border border-sidebar-border bg-muted/20 px-4 py-3 text-sm text-muted-foreground transition-colors hover:bg-muted/30"
           >
             <span>クイック検索…</span>
-            <kbd className="rounded border border-sidebar-border bg-background/40 px-1.5 py-0.5 font-mono text-[10px]">⌘K</kbd>
+            <kbd className="rounded border border-sidebar-border bg-background/40 px-2 py-0.5 font-mono text-xs">⌘K</kbd>
           </button>
         </div>
 
-        <nav className="flex-1 space-y-1.5 px-4 py-6">
+        <nav className="flex-1 space-y-2 px-4 py-7">
           {navItems.map((item) => {
             const active = pathname === item.href || (item.href !== "/admin" && pathname.startsWith(item.href));
             const Icon = item.icon;
@@ -74,26 +74,26 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-3 rounded-lg px-4 py-3 text-sm transition-colors",
+                  "flex items-center gap-3.5 rounded-lg px-4 py-3.5 text-base transition-colors",
                   active
-                    ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
-                    : "text-sidebar-foreground/70 hover:bg-sidebar-accent/50 hover:text-sidebar-foreground"
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground font-semibold"
+                    : "text-sidebar-foreground/80 hover:bg-sidebar-accent/50 hover:text-sidebar-foreground"
                 )}
               >
-                <Icon className="size-4" />
+                <Icon className="size-5" />
                 {item.label}
               </Link>
             );
           })}
         </nav>
 
-        <div className="space-y-1.5 border-t border-sidebar-border px-4 py-4">
+        <div className="space-y-2 border-t border-sidebar-border px-4 py-5">
           <a
             href="https://machinowa.tokyo"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "flex w-full items-center gap-2 rounded-lg px-4 py-2.5 text-sm text-sidebar-foreground/70 transition-colors hover:bg-sidebar-accent/40 hover:text-sidebar-foreground"
+              "flex w-full items-center gap-3 rounded-lg px-4 py-3 text-sm text-sidebar-foreground/75 transition-colors hover:bg-sidebar-accent/40 hover:text-sidebar-foreground"
             )}
           >
             <ExternalLink className="size-4" /> 公開サイトを見る
@@ -101,7 +101,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <button
             onClick={handleLogout}
             className={cn(
-              "flex w-full items-center gap-2 rounded-lg px-4 py-2.5 text-left text-sm text-sidebar-foreground/70 transition-colors hover:bg-sidebar-accent/40 hover:text-sidebar-foreground"
+              "flex w-full items-center gap-3 rounded-lg px-4 py-3 text-left text-sm text-sidebar-foreground/75 transition-colors hover:bg-sidebar-accent/40 hover:text-sidebar-foreground"
             )}
           >
             <LogOut className="size-4" /> ログアウト
