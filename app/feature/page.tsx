@@ -11,17 +11,17 @@ export const metadata = {
 };
 
 // よく出てくる tag を「テーマ」として束ねる（カテゴリ統合）
-const THEME_GROUPS: { label: string; emoji: string; tags: string[] }[] = [
-  { label: "デート", emoji: "💞", tags: ["デート"] },
-  { label: "観光・街歩き", emoji: "🗾", tags: ["観光", "街歩き", "散歩", "散歩・自然", "観光・博物館"] },
-  { label: "雨の日", emoji: "☔️", tags: ["雨の日"] },
-  { label: "夜景・夜遊び", emoji: "🌃", tags: ["夜景"] },
-  { label: "カフェ・朝活", emoji: "☕️", tags: ["カフェ", "カフェ・朝活"] },
-  { label: "家族・子連れ", emoji: "👨‍👩‍👧", tags: ["家族", "ファミリー"] },
-  { label: "ショッピング", emoji: "🛍", tags: ["ショッピング"] },
-  { label: "アート", emoji: "🎨", tags: ["アート"] },
-  { label: "グルメ", emoji: "🍴", tags: ["グルメ"] },
-  { label: "時間つぶし", emoji: "⏳", tags: ["時間つぶし"] },
+const THEME_GROUPS: { label: string; labelEn: string; tags: string[] }[] = [
+  { label: "デート", labelEn: "DATE", tags: ["デート"] },
+  { label: "観光・街歩き", labelEn: "SIGHTSEEING", tags: ["観光", "街歩き", "散歩", "散歩・自然", "観光・博物館"] },
+  { label: "雨の日", labelEn: "RAINY DAY", tags: ["雨の日"] },
+  { label: "夜景・夜遊び", labelEn: "NIGHT", tags: ["夜景"] },
+  { label: "カフェ・朝活", labelEn: "CAFE / MORNING", tags: ["カフェ", "カフェ・朝活"] },
+  { label: "家族・子連れ", labelEn: "FAMILY", tags: ["家族", "ファミリー"] },
+  { label: "ショッピング", labelEn: "SHOPPING", tags: ["ショッピング"] },
+  { label: "アート", labelEn: "ART", tags: ["アート"] },
+  { label: "グルメ", labelEn: "GOURMET", tags: ["グルメ"] },
+  { label: "時間つぶし", labelEn: "KILL TIME", tags: ["時間つぶし"] },
 ];
 
 function countByTheme(group: { tags: string[] }): number {
@@ -174,8 +174,10 @@ export default async function FeatureIndexPage({
                 }}
                 className="feature-tile"
               >
-                <div style={{ font: "500 28px/1" }}>{g.emoji}</div>
-                <div style={{ font: "500 18px/1.3 var(--serif)", marginTop: 4 }}>{g.label}</div>
+                <div style={{ font: "500 10px/1 var(--mono)", letterSpacing: ".3em", color: "var(--accent)" }}>
+                  {g.labelEn}
+                </div>
+                <div style={{ font: "500 22px/1.3 var(--serif)" }}>{g.label}</div>
                 <div style={{ font: "400 12px/1.6 var(--body)", color: "var(--ink-soft)" }}>
                   {countByTheme(g)} 記事
                 </div>
