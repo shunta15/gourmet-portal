@@ -199,7 +199,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
                 data-cursor="CALL"
               >
-                📞 {r.phone}
+                電話する（{r.phone}）
               </a>
             )}
             {r.address && (
