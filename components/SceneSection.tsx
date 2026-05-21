@@ -10,7 +10,7 @@ export default function SceneSection() {
           <b>05</b> SCENE
         </div>
         <h2>
-          気分で、<em>選ぶ。</em>
+          シーンで、<em>選ぶ。</em>
         </h2>
         <p className="lede">
           デート、接待、一人飲み——その夜の状況に合わせて、編集部が選んだ一軒へ。
