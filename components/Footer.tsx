@@ -42,10 +42,10 @@ export default function Footer() {
         <div>
           <h5>ニュースレター</h5>
           <div className="big">
-            毎週金曜、<em>日本の味</em>。
+            マチノワで繋がる、<em>まだ見ぬ出会い</em>。
           </div>
           <p style={{ marginTop: 20, opacity: 0.6, fontSize: 13 }}>
-            編集部厳選の一軒を、週に一度お届け。
+            知らない街と一軒との出会いを、編集部が毎週金曜にお届け。
           </p>
           {!done ? (
             <form onSubmit={handleSubscribe} style={{ marginTop: 20, display: "flex", gap: 8, flexWrap: "wrap" }}>
