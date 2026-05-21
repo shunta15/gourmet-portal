@@ -1,7 +1,15 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import { FEATURES, REGIONS, type RegionKey } from "@/lib/data";
+import { FEATURES, FEATURE_ARTICLES, REGIONS, type RegionKey } from "@/lib/data";
 import { getFeatureCountsByRegion, getFeaturesByRegion } from "@/lib/featureRegions";
+
+// 最新の特集記事を 3 つ抽出（FEATURE_ARTICLES.date の降順）
+function getLatestFeatures(n = 3): typeof FEATURES {
+  return FEATURES.map((f) => ({ f, date: FEATURE_ARTICLES[f.id]?.date ?? "" }))
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, n)
+    .map((x) => x.f);
+}
 
 export const metadata = {
   title: "特集記事 — 地域・テーマから探す | マチノワ",
@@ -95,6 +103,61 @@ export default async function FeatureIndexPage({
                 編集部が週替わりでお届けする特集。地域・テーマから読みたい一本を選んでください。
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* 最新の特集 */}
+        <section style={{ padding: "80px 40px 0", maxWidth: 1400, margin: "0 auto" }}>
+          <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 32 }}>
+            <div>
+              <h2 style={{ font: "500 28px/1.3 var(--serif)", marginBottom: 8 }}>
+                最新の特集。
+              </h2>
+              <p style={{ font: "400 14px/1.8 var(--body)", color: "var(--ink-soft)" }}>
+                編集部が直近で公開した3本。
+              </p>
+            </div>
+            <Link
+              href="/feature?all=1"
+              style={{
+                font: "500 12px/1 var(--body)",
+                color: "var(--ink-soft)",
+                textDecoration: "underline",
+                textUnderlineOffset: 4,
+              }}
+            >
+              全件を見る →
+            </Link>
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+              gap: 20,
+            }}
+          >
+            {getLatestFeatures(3).map((f) => (
+              <Link
+                key={f.id}
+                href={`/feature/${f.id}`}
+                className="feature-card"
+                data-cursor="READ"
+                style={{ display: "block" }}
+              >
+                <div className="img" style={{ backgroundImage: `url(${f.image})` }} />
+                <div className="big-no">{f.no}</div>
+                <div className="meta">
+                  <span className="tag">{f.tag}</span>
+                  <span>{f.kicker}</span>
+                </div>
+                <div className="body">
+                  <div className="kicker">特集 / {f.no}</div>
+                  <h3>{f.title}</h3>
+                  <p>{f.sub}</p>
+                  <span className="read">記事を読む →</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
 
