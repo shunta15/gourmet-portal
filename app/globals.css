@@ -272,7 +272,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .feat-hero .bot{display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; align-items:end; padding-top:30px; border-top:1px solid rgba(244,239,227,.25)}
 .feat-hero .bot p{max-width:540px; font:400 14px/1.85 var(--body); opacity:.85; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden}
 .feat-hero .bot .dt h6{font:500 10px/1 var(--mono); letter-spacing:.3em; opacity:.6; margin-bottom:10px}
-.feat-hero .bot .dt p{font:500 12px/1.55 var(--body); opacity:.9}
+.feat-hero .bot .dt p{font:500 10px/1.55 var(--body); opacity:.9; letter-spacing:.02em}
 
 /* feature article carousel ----------------------- */
 .feat-body{padding:0 40px}

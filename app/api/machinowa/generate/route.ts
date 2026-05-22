@@ -65,10 +65,11 @@ Google Maps URL: ${mapsUrl}
 7. **編集部目線の主観・人称（編集部・私）を使い、口語的なトーン**: 「〜だ。」「〜と思う。」「〜が嬉しい。」など、AIっぽい優等生文体ではなく編集者の体温が乗った文章にする。
 8. **誇張・推測は避け、わからない数値は「公式情報を確認」と書く**: 営業時間・価格・席数などの具体的事実が確定できない場合は「変動するので公式情報をご確認ください」等で逃げる。
 9. **lede は 250〜400 字**、POINT の desc は **各 350〜500 字**、closing は **400〜600 字**。quote は **80〜140 字に厳守**（長く語らない）。subtitle は **20〜35 字に厳守**。
-10. **画像は全て下記の固定 placeholder URL を使う**（heroImage / ogImage / 各 POINT の images すべて。Claude が独自に画像URLを選ぶことは絶対禁止）:
-    - heroImage: \`/restaurants/_placeholder/feature-hero.jpg\`
-    - ogImage: \`/restaurants/_placeholder/feature-og.jpg\`
-    - 各 POINT images: \`["/restaurants/_placeholder/feature-point.jpg"]\`
+10. **画像は固定 placeholder のみ使用**（Claude が独自に画像URLを選ぶことは絶対禁止）。配置パターン:
+    - heroImage: \`/restaurants/_placeholder/feature-hero.jpg\`（必ず）
+    - ogImage: \`/restaurants/_placeholder/feature-og.jpg\`（必ず）
+    - POINT 1, 2 の images: \`["/restaurants/_placeholder/feature-point.jpg"]\`（placeholder入れる）
+    - POINT 3, 4, 5 の images: \`[]\`（空配列にする。画像なしレイアウトで OK）
 11. **【絶対厳守】文中で何かを引用・強調するときは半角ダブルクォート \`"\` を絶対に使わない**。TypeScript 構文エラーになる。代わりに日本語の \`「」\` を使うこと。例: \`「サードウェーブ系」\` ○ / \`"サードウェーブ系"\` ✗
 
 # 出力形式
