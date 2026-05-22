@@ -100,7 +100,13 @@ function rowToArticle(row: DbArticleRow, ranks: DbRankItemRow[] = []): FeatureAr
 export async function getFeatureArticleById(rawId: string): Promise<FeatureArticle | null> {
   // Next.js のバージョンによって SSG 時に params が URL エンコードされたまま
   // 渡される場合がある（非 ASCII パスセグメント）。デコードして統一する。
-  const id = decodeURIComponent(rawId);
+  // Vercel 本番環境では decodeURIComponent が URIError を投げる場合があるため try/catch。
+  let id: string;
+  try {
+    id = decodeURIComponent(rawId);
+  } catch {
+    id = rawId;
+  }
   let dbArticle: FeatureArticle | null = null;
   try {
     const { data, error } = await db()
