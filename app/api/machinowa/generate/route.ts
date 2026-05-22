@@ -64,8 +64,11 @@ Google Maps URL: ${mapsUrl}
 6. **titleHTML は 2行構成・em タグで店舗名強調**: 例「Qualia、<br>姪浜の<em>夜。</em>」
 7. **編集部目線の主観・人称（編集部・私）を使い、口語的なトーン**: 「〜だ。」「〜と思う。」「〜が嬉しい。」など、AIっぽい優等生文体ではなく編集者の体温が乗った文章にする。
 8. **誇張・推測は避け、わからない数値は「公式情報を確認」と書く**: 営業時間・価格・席数などの具体的事実が確定できない場合は「変動するので公式情報をご確認ください」等で逃げる。
-9. **lede は 250〜400 字**、POINT の desc は **各 350〜500 字**、closing は **400〜600 字**。中身の濃い文章を書くこと。
-10. **画像はすべて Unsplash の placeholder で OK**: 後で人間が差し替える前提。
+9. **lede は 250〜400 字**、POINT の desc は **各 350〜500 字**、closing は **400〜600 字**。quote は **80〜140 字に厳守**（長く語らない）。subtitle は **20〜35 字に厳守**。
+10. **画像は全て下記の固定 placeholder URL を使う**（heroImage / ogImage / 各 POINT の images すべて。Claude が独自に画像URLを選ぶことは絶対禁止）:
+    - heroImage: \`/restaurants/_placeholder/feature-hero.jpg\`
+    - ogImage: \`/restaurants/_placeholder/feature-og.jpg\`
+    - 各 POINT images: \`["/restaurants/_placeholder/feature-point.jpg"]\`
 
 # 出力形式
 
@@ -85,8 +88,8 @@ idは "teleapo-feat-${slugify(storeName)}" 固定。
   date: "${new Date().toISOString().slice(0, 10)}",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400&q=80",
-  ogImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80",
+  heroImage: "/restaurants/_placeholder/feature-hero.jpg",
+  ogImage: "/restaurants/_placeholder/feature-og.jpg",
   ranking: [
     {
       rank: "POINT 01", rankNum: 1,
@@ -95,7 +98,7 @@ idは "teleapo-feat-${slugify(storeName)}" 固定。
       area: "（エリア名。例: 姪の浜）",
       purpose: "（POINT のサブキャッチ・1〜2行）",
       desc: "（350〜500字。利用シーン文脈込み）",
-      images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"],
+      images: ["/restaurants/_placeholder/feature-point.jpg"],
       specs: [{ k: "（キー）", v: "（値）" }, { k: "（キー）", v: "（値）" }]
     },
     // POINT 02: 看板料理・商品の魅力
@@ -104,7 +107,7 @@ idは "teleapo-feat-${slugify(storeName)}" 固定。
     // POINT 05: 必ず「利用シーンと周辺との組み合わせ方」（周辺観光や1日プラン込み）
   ],
   sideArticles: [],
-  quote: "（編集部視点の総括コメント。150〜250字）",
+  quote: "（編集部視点の総括コメント。80〜140字に厳守。短く印象的に）",
   quoteCite: "マチノワ編集部",
   closing: "（編集部が考える「黄金動線」を時刻付きで具体的に。所要時間・予算・予約のアドバイスも。400〜600字）",
 }

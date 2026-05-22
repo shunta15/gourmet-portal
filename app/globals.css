@@ -384,7 +384,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .quote-block .quote-label{font:500 clamp(16px,1.8vw,22px)/1 var(--mono); letter-spacing:.3em; color:var(--accent); margin-bottom:48px}
 .quote-block .quote-label::before{content:""; display:inline-block; width:40px; height:1.5px; background:var(--accent); vertical-align:middle; margin-right:20px; transform:translateY(-2px)}
 .quote-block .quote-label::after{content:""; display:inline-block; width:40px; height:1.5px; background:var(--accent); vertical-align:middle; margin-left:20px; transform:translateY(-2px)}
-.quote-block blockquote{font:400 clamp(28px,4vw,56px)/1.4 var(--serif); max-width:1200px; margin:0 auto; font-style:italic}
+.quote-block blockquote{font:400 clamp(20px,2.4vw,32px)/1.6 var(--serif); max-width:900px; margin:0 auto; font-style:italic}
 .quote-block blockquote::before{content:"「"; color:var(--accent); font-size:1.5em; vertical-align:-0.1em}
 .quote-block blockquote::after{content:"」"; color:var(--accent); font-size:1.5em; vertical-align:-0.1em}
 .quote-block cite{display:block; margin-top:30px; font:500 11px/1 var(--mono); letter-spacing:.25em; color:var(--ink-soft); font-style:normal}
@@ -504,7 +504,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .rank-item .imgs{grid-template-columns:1fr 1fr; grid-template-rows:repeat(2,100px)}
 
   .quote-block{padding:80px 20px}
-  .quote-block blockquote{font-size:clamp(20px,5vw,32px)}
+  .quote-block blockquote{font-size:clamp(18px,4vw,24px)}
 
   .side-article{padding:60px 0 80px}
   .side-grid{grid-template-columns:repeat(2,1fr); gap:12px}

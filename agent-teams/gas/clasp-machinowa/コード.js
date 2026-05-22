@@ -4,33 +4,27 @@
  * マチノワ記事自動生成モニター
  * 毎日 9:00 / 18:00 (JST) に実行。記事生成完了時はメールで通知。
  *
- * 事前準備:
- *   - サービスから「Google Sheets API」を追加すること
- *   - 詰めOKリスト!A1 の QUERY を A:V に制限（W列以降は GAS 書き込み用）
- *   - 初回 setupAll() を実行
- *
- * 【書き戻し設計】
- * - 読み込み元: 「詰めOKリスト」(QUERYで詰めOKに絞り込み済み)
- * - 書き込み先: 「詰めOKリスト」の W〜Z 列 (QUERY範囲外なので直接書ける)
- * - トスアップ元シートには一切書き込まない
+ * 事前準備: サービスから「Google Sheets API」を追加すること
+ * 初回セットアップ: setupAll() を一度だけ実行する
  */
 
-const SHEET_ID    = '1d4A0-2kbVBACSsC2F-7KiUJTlu1k6ryn3sRvXlYq3R4';
-const SHEET_NAME  = '詰めOKリスト'; // 読み込み & 書き込み先（QUERYで詰めOKに絞り込み済み）
-const API_URL     = 'https://machinowa.tokyo/api/machinowa/generate';
+// 「詰めOKリスト」が入っているスプレッドシート（マチノワ自動記事制作）
+const SHEET_ID     = '1d4A0-2kbVBACSsC2F-7KiUJTlu1k6ryn3sRvXlYq3R4';
+const SHEET_NAME   = '詰めOKリスト'; // QUERYで詰めOKのみ抽出済みシート
+const API_URL      = 'https://machinowa.tokyo/api/machinowa/generate';
 const NOTIFY_EMAIL = 'linkateinc315@link8.info';
 
-// 列インデックス（1始まり）
-// A〜V は QUERY 結果。W〜Z は GAS が書き込む管理列。
+// 「詰めOKリスト」シートの列インデックス（1始まり）
+// ※ A〜V は IMPORTRANGE+QUERY 範囲。W〜Z はユーザーが手動追加した管理列。
 const COL = {
   STORE:        4,   // D 店舗名
   URL:         10,   // J Google Maps URL
   P_STATUS:    16,   // P 詰めステータス
   U_STATUS:    21,   // U ステータス
-  FEAT_DONE:   23,   // W 特集記事_済
-  FEAT_URL:    24,   // X 特集記事_URL
-  REST_DONE:   25,   // Y 店舗紹介_済
-  REST_URL:    26,   // Z 店舗紹介_URL
+  FEAT_DONE:   23,   // W 特集記事_済（書き戻し用）
+  FEAT_URL:    24,   // X 特集記事_URL（書き戻し用）
+  REST_DONE:   25,   // Y 店舗紹介_済（書き戻し用）
+  REST_URL:    26,   // Z 店舗紹介_URL（書き戻し用）
 };
 
 // ─────────────────────────────────────────────────────────
@@ -39,7 +33,6 @@ const COL = {
 function setupAll() {
   _setupSecret();
   _setupTriggers();
-  _ensureHeaders();
   Logger.log('✅ セットアップ完了');
 }
 
@@ -52,41 +45,26 @@ function _setupSecret() {
 function _setupTriggers() {
   ScriptApp.getProjectTriggers().forEach(t => ScriptApp.deleteTrigger(t));
 
-  [10, 15, 20].forEach(hour => {
-    ScriptApp.newTrigger('checkAndGenerate')
-      .timeBased().atHour(hour).everyDays(1).inTimezone('Asia/Tokyo').create();
-  });
+  ScriptApp.newTrigger('checkAndGenerate')
+    .timeBased().atHour(9).everyDays(1).inTimezone('Asia/Tokyo').create();
 
-  Logger.log('トリガー設定: 毎日 10:00 / 15:00 / 20:00 (JST)');
-}
+  ScriptApp.newTrigger('checkAndGenerate')
+    .timeBased().atHour(18).everyDays(1).inTimezone('Asia/Tokyo').create();
 
-function _ensureHeaders() {
-  const headers = ['特集記事_済', '特集記事_URL', '店舗紹介_済', '店舗紹介_URL'];
-  const res = Sheets.Spreadsheets.Values.get(
-    SHEET_ID, `${SHEET_NAME}!W1:Z1`, { valueRenderOption: 'FORMATTED_VALUE' }
-  );
-  const current = (res.values && res.values[0]) || [];
-  if (headers.every((h, i) => (current[i] || '').toString().trim() === h)) {
-    Logger.log('ヘッダー設定済み');
-    return;
-  }
-  Sheets.Spreadsheets.Values.update(
-    { values: [headers] },
-    SHEET_ID, `${SHEET_NAME}!W1:Z1`,
-    { valueInputOption: 'USER_ENTERED' }
-  );
-  Logger.log('ヘッダー設定: W1〜Z1');
+  Logger.log('トリガー設定: 毎日 9:00 / 18:00 (JST)');
 }
 
 // ─────────────────────────────────────────────────────────
 // checkAndGenerate: トリガーから呼ばれるメイン処理
-// 詰めOKリストを読み、未生成の行で記事生成 → 同じ行のW〜Zに書き戻し
+// Sheets API v4 で計算済み値を取得（IMPORTRANGE/QUERY対応）
+// 生成後は W/X（特集）または Y/Z（店舗紹介）に書き戻す
 // ─────────────────────────────────────────────────────────
 function checkAndGenerate() {
   const props  = PropertiesService.getScriptProperties();
   const secret = props.getProperty('MACHINOWA_SECRET');
-  const results = [];
+  const results  = [];
 
+  // Sheets API v4 で「詰めOKリスト」の計算済み値を取得（A〜Z までまとめて）
   let rows;
   try {
     const res = Sheets.Spreadsheets.Values.get(
@@ -102,6 +80,7 @@ function checkAndGenerate() {
 
   Logger.log(`🔍 取得行数: ${rows.length}行`);
 
+  // 1行目はヘッダー → 2行目以降がデータ
   for (let i = 1; i < rows.length; i++) {
     const row       = rows[i];
     const storeName = (row[COL.STORE - 1] || '').toString().trim();
@@ -113,9 +92,9 @@ function checkAndGenerate() {
     const featDone = (row[COL.FEAT_DONE - 1] || '').toString().trim();
     const restDone = (row[COL.REST_DONE - 1] || '').toString().trim();
 
-    const rowNum = i + 1;
+    const rowNum = i + 1; // 1始まりの行番号
 
-    // 詰めOK かつ 特集記事未生成
+    // 詰めOK かつ 特集記事未生成（W列が空）
     if (pStatus === '詰めOK' && !featDone) {
       Logger.log(`📝 特集記事生成: ${storeName} (row ${rowNum})`);
       const result = _callApi({ storeName, mapsUrl, type: 'feature', rowNum, secret });
@@ -128,7 +107,7 @@ function checkAndGenerate() {
       Utilities.sleep(5000);
     }
 
-    // 商談完了 かつ 店舗紹介未生成
+    // 商談完了 かつ 店舗紹介未生成（Y列が空）
     if (uStatus === '商談完了' && !restDone) {
       Logger.log(`🏪 店舗紹介生成: ${storeName} (row ${rowNum})`);
       const result = _callApi({ storeName, mapsUrl, type: 'restaurant', rowNum, secret });
@@ -150,6 +129,9 @@ function checkAndGenerate() {
   }
 }
 
+// ─────────────────────────────────────────────────────────
+// スプレッドシートへ書き戻し（「済」マーク + URL）
+// ─────────────────────────────────────────────────────────
 function _writeBack(rowNum, doneCol, urlCol, url) {
   const colLetter = (n) => {
     let s = '';
@@ -169,7 +151,7 @@ function _writeBack(rowNum, doneCol, urlCol, url) {
       { valueInputOption: 'USER_ENTERED' }
     );
     Sheets.Spreadsheets.Values.update(
-      { values: [[`=HYPERLINK("${url}","${url}")`]] },
+      { values: [[url]] },
       SHEET_ID, urlRange,
       { valueInputOption: 'USER_ENTERED' }
     );
@@ -179,45 +161,33 @@ function _writeBack(rowNum, doneCol, urlCol, url) {
   }
 }
 
-// 既存4本のURLを詰めOKリストに書き戻す（一度きり実行用）
-function backfillExistingFeatures() {
-  _ensureHeaders();
-
-  const generated = {
-    'ルーラル':         'https://machinowa.tokyo/feature/teleapo-feat-ルラル',
-    '炭や。よつ葉':     'https://machinowa.tokyo/feature/teleapo-feat-炭やよつ葉',
-    'OWL(営業時間状況で変わります)': 'https://machinowa.tokyo/feature/teleapo-feat-owl営業時間状況で変わります',
-    'あんばい 食楽厨房': 'https://machinowa.tokyo/feature/teleapo-feat-あんばい-食楽厨房',
-  };
-
-  const res = Sheets.Spreadsheets.Values.get(
-    SHEET_ID, `${SHEET_NAME}!A1:Z`, { valueRenderOption: 'FORMATTED_VALUE' }
-  );
-  const rows = res.values || [];
-
-  let count = 0;
-  for (let i = 1; i < rows.length; i++) {
-    const storeName = (rows[i][COL.STORE - 1] || '').toString().trim();
-    if (!generated[storeName]) continue;
-    _writeBack(i + 1, COL.FEAT_DONE, COL.FEAT_URL, generated[storeName]);
-    Logger.log(`✅ ${storeName} (row ${i + 1}) → ${generated[storeName]}`);
-    count++;
-  }
-  Logger.log(`完了 (${count}件)`);
-}
-
+// ─────────────────────────────────────────────────────────
+// テスト実行（「詰めOKリスト」の最初の5件だけ確認）
+// ─────────────────────────────────────────────────────────
 function testRun() {
-  const res = Sheets.Spreadsheets.Values.get(
-    SHEET_ID, `${SHEET_NAME}!A1:Z`, { valueRenderOption: 'FORMATTED_VALUE' }
-  );
-  const rows = res.values || [];
+  let rows;
+  try {
+    const res = Sheets.Spreadsheets.Values.get(
+      SHEET_ID,
+      `${SHEET_NAME}!A1:Z`,
+      { valueRenderOption: 'FORMATTED_VALUE' }
+    );
+    rows = res.values || [];
+  } catch (e) {
+    Logger.log('❌ Sheets API エラー: ' + e.message);
+    return;
+  }
+
   Logger.log(`取得行数: ${rows.length}`);
   for (let i = 0; i < Math.min(6, rows.length); i++) {
     const row = rows[i];
-    Logger.log(`row${i}: D=${row[COL.STORE-1]} P=${row[COL.P_STATUS-1]} U=${row[COL.U_STATUS-1]} W=${row[COL.FEAT_DONE-1]} X=${row[COL.FEAT_URL-1]}`);
+    Logger.log(`row${i}: D=${row[COL.STORE-1]} P=${row[COL.P_STATUS-1]} U=${row[COL.U_STATUS-1]} W=${row[COL.FEAT_DONE-1]} X=${row[COL.FEAT_URL-1]} Y=${row[COL.REST_DONE-1]} Z=${row[COL.REST_URL-1]}`);
   }
 }
 
+// ─────────────────────────────────────────────────────────
+// API 呼び出し
+// ─────────────────────────────────────────────────────────
 function _callApi(payload) {
   try {
     const options = {
@@ -237,6 +207,9 @@ function _callApi(payload) {
   return null;
 }
 
+// ─────────────────────────────────────────────────────────
+// メール通知
+// ─────────────────────────────────────────────────────────
 function _sendNotification(results) {
   const now     = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
   const subject = `【マチノワ】記事自動生成 ${results.length}件完了 (${now})`;
