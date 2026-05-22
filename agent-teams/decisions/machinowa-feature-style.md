@@ -54,6 +54,29 @@ placeholder 画像は無地の暗色グラデーション JPEG（PIL で生成�
 - CSS: `app/globals.css` (.feat-hero, .quote-block)
 - 参考記事: `lib/newGuideFeatures6.ts` (feature-qualia-meinohama / feature-kinosha-nachikatsuura / feature-nishida-yao)
 
+## 修正フロー（2026-05-22 確定）
+
+**既存記事の修正は GAS/API を一切経由せず、エージェントが直接ファイル編集する**
+
+ユーザーから「○○の記事のここを直して」と依頼されたら：
+1. `lib/teleapo-features.ts` を直接編集
+2. 必要に応じて画像を `public/restaurants/{店舗ID}/` に配置
+3. ローカルビルドで構文確認 (`npm run build`)
+4. commit → push → `vercel --prod`
+
+**禁止事項**:
+- ❌ 修正のためにスプシを編集してGASトリガーで再生成
+- ❌ 修正のために API `/api/machinowa/generate` を叩く（テキストの大幅刷新は別、軽微修正には使わない）
+
+**新規記事の生成のみ** GAS → API パイプラインを使う。
+
+### 画像差し替え
+1. Chrome MCP で Google Maps の店舗ページを開く
+2. JS で `grass-cs/` プレフィックスの画像 URL を抽出
+3. `=w1400-h800-p-k-no` 等にサイズ拡張して `curl` でダウンロード
+4. `public/restaurants/teleapo-{slug}/hero.jpg` などに配置
+5. `lib/teleapo-features.ts` の `heroImage` / `images` パスを書き換え
+
 ## 絶対やってはいけないこと
 
 - ❌ プロンプトで画像URLを Claude に自由に選ばせる
