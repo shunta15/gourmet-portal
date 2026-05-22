@@ -297,7 +297,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .rank-item .rank em{font-style:italic; color:var(--accent)}
 /* POINT / SPOT などの英字ラベル付きランクは、ラベルを小さく上に置いて数字を大きく見せる */
 .rank-item .rank .rank-label{display:block; font:500 11px/1 var(--mono); letter-spacing:.3em; color:var(--accent); margin-bottom:14px; opacity:.85}
-.rank-item .info h3{font:500 32px/1.2 var(--serif); margin-bottom:10px}
+.rank-item .info h3{font:500 clamp(20px,2vw,26px)/1.3 var(--serif); margin-bottom:10px}
 .rank-item .cuisine{font:500 11px/1 var(--mono); letter-spacing:.25em; color:var(--accent); margin-bottom:20px}
 .rank-item .desc{font:400 14px/1.9 var(--body); color:var(--ink-soft); max-width:480px; margin-bottom:20px}
 .rank-item .specs{display:grid; grid-template-columns:repeat(2,1fr); gap:16px 40px; font:400 12px/1.5 var(--body); border-top:1px dashed var(--line); padding-top:16px}
