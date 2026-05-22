@@ -106,32 +106,38 @@ function checkAndGenerate() {
     pendingStores: [],    // 未処理対象の店舗名
   };
 
-  // ─── Step 1: ステータス列のみ batchGet で取得（軽量スキャン） ───
+  // ─── Step 1: カーソルから先だけ batchGet で取得（インクリメンタルスキャン） ───
+  // Script Properties に lastScannedRow を保存し、次回はその先だけ読む。
+  // QUERY-drivenシートで途中行に挿入が起きた場合は resetCursor() で再スキャン。
   // D(店舗名) / J(URL) / P(P_STATUS) / U(U_STATUS) / W(FEAT_DONE) / Y(REST_DONE)
-  // フル A:Z (26列) ではなく必要な6列のみ → 転送量 ~75% カット
+  const cursorBefore = parseInt(props.getProperty('LAST_SCANNED_ROW') || '1', 10);
+  const startRow = Math.max(2, cursorBefore + 1); // 最低 row 2 から
+  stats.cursorBefore = cursorBefore;
+  Logger.log(`📍 前回カーソル: ${cursorBefore} → 今回スキャン開始: ${startRow}行目`);
+
   let statusRows = []; // {rowNum, storeName, mapsUrl, pStatus, uStatus, featDone, restDone}
   try {
     const ranges = [
-      `${SHEET_NAME}!D2:D`,
-      `${SHEET_NAME}!J2:J`,
-      `${SHEET_NAME}!P2:P`,
-      `${SHEET_NAME}!U2:U`,
-      `${SHEET_NAME}!W2:W`,
-      `${SHEET_NAME}!Y2:Y`,
+      `${SHEET_NAME}!D${startRow}:D`,
+      `${SHEET_NAME}!J${startRow}:J`,
+      `${SHEET_NAME}!P${startRow}:P`,
+      `${SHEET_NAME}!U${startRow}:U`,
+      `${SHEET_NAME}!W${startRow}:W`,
+      `${SHEET_NAME}!Y${startRow}:Y`,
     ];
     const res = Sheets.Spreadsheets.Values.batchGet(
       SHEET_ID, { ranges: ranges, valueRenderOption: 'FORMATTED_VALUE' }
     );
     const cols = res.valueRanges.map(vr => (vr.values || []).map(r => (r[0] || '').toString().trim()));
-    const maxLen = Math.max(...cols.map(c => c.length));
-    stats.totalRows = maxLen + 1; // ヘッダー含めて
-    Logger.log(`🔍 取得行数: ${maxLen}行（軽量スキャン: ${ranges.length}列のみ）`);
+    const maxLen = Math.max(0, ...cols.map(c => c.length));
+    stats.totalRows = maxLen; // 今回スキャンした行数
+    Logger.log(`🔍 取得行数: ${maxLen}行（${startRow}行目から、${ranges.length}列のみ）`);
 
     for (let i = 0; i < maxLen; i++) {
       const storeName = cols[0][i] || '';
       if (!storeName) continue;
       statusRows.push({
-        rowNum:    i + 2, // ヘッダー分 +1, さらに 0-indexed→1-indexed
+        rowNum:    startRow + i, // startRow をオフセット
         storeName: storeName,
         mapsUrl:   cols[1][i] || '',
         pStatus:   cols[2][i] || '',
@@ -228,9 +234,40 @@ function checkAndGenerate() {
     stats.silentFailure = true;
   }
 
+  // ─── カーソル更新 ───
+  // 今回スキャンした範囲のうち、全候補を処理しきった場合のみカーソルを進める
+  // (上限到達で残った場合は次回も同じ範囲を再スキャン)
+  if (statusRows.length > 0 && stats.deferred === undefined) {
+    const maxScanned = Math.max(...statusRows.map(r => r.rowNum));
+    props.setProperty('LAST_SCANNED_ROW', String(maxScanned));
+    stats.cursorAfter = maxScanned;
+    Logger.log(`📍 カーソル更新: ${stats.cursorBefore} → ${maxScanned}`);
+  } else if (stats.deferred) {
+    Logger.log(`📍 カーソル据え置き: ${stats.cursorBefore}（未処理${stats.deferred}件あるため次回も再スキャン）`);
+    stats.cursorAfter = stats.cursorBefore;
+  } else {
+    stats.cursorAfter = stats.cursorBefore;
+  }
+
   // 常に通知（0件処理でもサマリーを送る）
   _sendNotification(results, stats);
   Logger.log(`✅ 通知送信完了 (処理${results.length}件, 期待${expectedThisRun}件)`);
+}
+
+// カーソルをリセット: スプシ全体を再スキャンしたい時に手動実行
+function resetCursor() {
+  PropertiesService.getScriptProperties().deleteProperty('LAST_SCANNED_ROW');
+  Logger.log('✅ カーソルをリセットしました。次回 checkAndGenerate は row 2 から全スキャンします。');
+}
+
+// カーソルを特定の行にセット: 過去行を再処理したい時用
+function setCursor(rowNum) {
+  if (!rowNum || isNaN(rowNum) || rowNum < 1) {
+    Logger.log('❌ rowNum を引数で指定してください (例: setCursor(140) で row 141 以降をスキャン)');
+    return;
+  }
+  PropertiesService.getScriptProperties().setProperty('LAST_SCANNED_ROW', String(rowNum));
+  Logger.log(`✅ カーソルを ${rowNum} にセット。次回は row ${rowNum + 1} 以降をスキャンします。`);
 }
 
 function _writeBack(rowNum, doneCol, urlCol, url) {
@@ -340,9 +377,9 @@ function _sendNotification(results, stats) {
     ...lines,
     ``,
     `■ サマリー`,
-    `取得行数: ${stats.totalRows || '?'}`,
-    `詰めOK: 全${stats.featOkRows||0} / 済${stats.featDoneRows||0} / 未${stats.featPendingRows||0} → 処理${stats.featProcessed||0} エラー${stats.featError||0}`,
-    `商談完了: 全${stats.restOkRows||0} / 済${stats.restDoneRows||0} / 未${stats.restPendingRows||0} → 処理${stats.restProcessed||0} エラー${stats.restError||0}`,
+    `スキャン範囲: row ${(stats.cursorBefore||0) + 1} 以降 (${stats.totalRows || 0}行) / カーソル: ${stats.cursorBefore||0} → ${stats.cursorAfter||stats.cursorBefore||0}`,
+    `詰めOK(新規): 全${stats.featOkRows||0} / 済${stats.featDoneRows||0} / 未${stats.featPendingRows||0} → 処理${stats.featProcessed||0} エラー${stats.featError||0}`,
+    `商談完了(新規): 全${stats.restOkRows||0} / 済${stats.restDoneRows||0} / 未${stats.restPendingRows||0} → 処理${stats.restProcessed||0} エラー${stats.restError||0}`,
     stats.fatalError ? `❌ 致命エラー: ${stats.fatalError}` : '',
     stats.silentFailure ? `🚨 異常: 未処理あるのに何も処理されなかった。コードのスキップ条件を確認すべし。` : '',
     stats.deferred ? `⏭ 上限到達で次回繰越: ${stats.deferred}件（MAX_PROCESS_PER_RUN）` : '',
