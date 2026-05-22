@@ -308,6 +308,9 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 /* 単店舗特集など 1画像のみの spot は、横長コンテナで縦方向の見切れを抑える */
 .rank-item .imgs .im:only-child{grid-column:span 2; grid-row:span 2; min-height:320px}
 .rank-item:hover .imgs .im{transform:scale(1.04)}
+/* 画像未設定スロット用プレースホルダー（imgs が空のとき） */
+.rank-item .imgs:empty{display:flex; align-items:center; justify-content:center; min-height:240px; background:linear-gradient(135deg, #1a1612 0%, #2a2520 100%); position:relative}
+.rank-item .imgs:empty::before{content:"画像イメージ"; font:500 14px/1 var(--mono); letter-spacing:.3em; color:rgba(244,239,227,.35)}
 
 /* search bar ------------------------------------- */
 .search-bar-wrap{padding:80px 40px 60px; background:#f4efe3; border-bottom:1px solid var(--line)}
