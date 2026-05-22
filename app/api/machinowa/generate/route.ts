@@ -34,14 +34,110 @@ function slugify(name: string): string {
     .slice(0, 40);
 }
 
+// ─── Google Maps URL から GBP（Google Business Profile）情報を取得 ─
+// 短縮URL/cid URL を解決し、店舗名・住所・座標・ジャンル等を抽出する。
+// 取得できなければ null。Claude のハルシネーション防止のため必須。
+async function fetchPlaceInfo(mapsUrl: string): Promise<{
+  name: string;
+  address: string;
+  lat: string;
+  lng: string;
+  category: string;
+  description: string;
+  url: string;
+} | null> {
+  if (!mapsUrl) return null;
+  try {
+    // リダイレクト追跡（短縮URL / cid URL 両対応）
+    const res = await fetch(mapsUrl, {
+      redirect: "follow",
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; MachinowaBot/1.0)" },
+    });
+    const finalUrl = res.url;
+    const html = await res.text();
+
+    // URL から店舗名と座標を抽出
+    let name = "";
+    let lat = "";
+    let lng = "";
+    const placeMatch = finalUrl.match(/\/maps\/place\/([^/@]+)/);
+    if (placeMatch) {
+      name = decodeURIComponent(placeMatch[1]).replace(/\+/g, " ");
+    }
+    const coordMatch = finalUrl.match(/@([-\d.]+),([-\d.]+)/);
+    if (coordMatch) {
+      lat = coordMatch[1];
+      lng = coordMatch[2];
+    }
+
+    // HTML の og:title / og:description / その他から情報抽出
+    const ogTitle =
+      html.match(/<meta[^>]*property="og:title"[^>]*content="([^"]+)"/)?.[1] ??
+      html.match(/<meta[^>]*content="([^"]+)"[^>]*property="og:title"/)?.[1] ?? "";
+    const ogDesc =
+      html.match(/<meta[^>]*property="og:description"[^>]*content="([^"]+)"/)?.[1] ??
+      html.match(/<meta[^>]*content="([^"]+)"[^>]*property="og:description"/)?.[1] ?? "";
+
+    // og:title 例: "ルーラル - Google マップ"
+    if (!name && ogTitle) name = ogTitle.replace(/\s*-\s*Google\s*マップ.*$/i, "").trim();
+
+    // og:description は住所や評価が入る
+    let address = "";
+    let category = "";
+    if (ogDesc) {
+      // 「★4.5・カフェ・〒596-0845 大阪府岸和田市…」のような構造
+      const addrMatch = ogDesc.match(/〒?\d{3}-?\d{4}\s*[^・\n]+/);
+      if (addrMatch) address = addrMatch[0].trim();
+      const catMatch = ogDesc.match(/・([^・〒\d★]+?)・/);
+      if (catMatch) category = catMatch[1].trim();
+    }
+
+    // HTML本文から住所を補完（〒xxx-xxxx 形式）
+    if (!address) {
+      const addrInBody = html.match(/〒\d{3}-?\d{4}\s*[^"<>\n]{5,80}/);
+      if (addrInBody) address = addrInBody[0].trim();
+    }
+
+    return { name, address, lat, lng, category, description: ogDesc, url: finalUrl };
+  } catch (e) {
+    console.warn("[fetchPlaceInfo] failed:", e);
+    return null;
+  }
+}
+
 // ─── 特集記事の生成プロンプト ───────────────────────────────
 // 既存の高品質特集記事 (feature-qualia-meinohama / feature-kinosha-nachikatsuura /
 // feature-nishida-yao) のフォーマットを踏襲する。
-function buildFeaturePrompt(storeName: string, mapsUrl: string): string {
+function buildFeaturePrompt(
+  storeName: string,
+  mapsUrl: string,
+  gbp: Awaited<ReturnType<typeof fetchPlaceInfo>>
+): string {
+  // GBP（Google Business Profile）情報がない場合はエリア推測禁止を強く伝える
+  const gbpBlock = gbp
+    ? `【Google Business Profile（GBP）から取得した一次情報 — これを必ず根拠にする】
+店舗名: ${gbp.name || storeName}
+住所: ${gbp.address || "（取得失敗：座標から推定すること）"}
+緯度経度: ${gbp.lat}, ${gbp.lng}
+業種カテゴリ: ${gbp.category || "（取得失敗）"}
+Google詳細: ${gbp.description || "（取得失敗）"}
+最終URL: ${gbp.url}`
+    : `【⚠️ GBP取得失敗】Maps URLが解決できなかった。エリア・住所・業種を推測で書くことは禁止。
+記事には具体的エリア名・最寄り駅・観光情報を入れず、抽象的な記述に留めること。`;
+
   return `あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの「単店舗特集記事」を生成してください。
 
 店舗名: ${storeName}
 Google Maps URL: ${mapsUrl}
+
+${gbpBlock}
+
+# ⚠️ 最重要：場所・業種の推測は絶対禁止
+GBP情報が示す住所・緯度経度・カテゴリのみを根拠にしてください。
+店舗名から「○○なら××エリア」と推測することは絶対禁止です（例：「ルーラル」→「ルーラル＝rural＝郊外」→「福岡の郊外」のような連想は虚偽の温床）。
+緯度経度から実際の都道府県・市区町村・最寄り駅を割り出し、そのエリアの文脈で書くこと。
+GBPが取れていない場合は、エリア固有の情報を含めず抽象的に書くこと。
+
 
 # 重要：マチノワの特集記事とは何か
 
@@ -117,13 +213,34 @@ idは "teleapo-feat-${slugify(storeName)}" 固定。
 }
 
 // ─── 店舗紹介記事の生成プロンプト ──────────────────────────
-function buildRestaurantPrompt(storeName: string, mapsUrl: string, nextId: string): string {
+function buildRestaurantPrompt(
+  storeName: string,
+  mapsUrl: string,
+  nextId: string,
+  gbp: Awaited<ReturnType<typeof fetchPlaceInfo>>
+): string {
+  const gbpBlock = gbp
+    ? `【GBP情報】
+名前: ${gbp.name || storeName}
+住所: ${gbp.address}
+緯度経度: ${gbp.lat}, ${gbp.lng}
+業種: ${gbp.category}
+詳細: ${gbp.description}`
+    : `【⚠️ GBP取得失敗】エリア・住所・業種を推測しないこと`;
+
   return `
 あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの店舗紹介データを生成してください。
 
 店舗名: ${storeName}
 Google Maps URL: ${mapsUrl}
 割り当てID: ${nextId}
+
+${gbpBlock}
+
+# ⚠️ 最重要
+GBP の住所・緯度経度から実際の都道府県・市区町村を割り出し、それを root にデータを書くこと。
+店舗名から場所を推測することは絶対禁止。
+
 
 以下の TypeScript オブジェクトを生成してください。型は Restaurant です。
 
@@ -248,10 +365,18 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "storeName and type are required" }, { status: 400 });
   }
 
+  // GBP（Google Business Profile）情報を取得（必須・ハルシネーション防止）
+  const gbp = await fetchPlaceInfo(mapsUrl);
+  if (!gbp) {
+    console.warn(`[generate] GBP取得失敗: ${storeName} (${mapsUrl})`);
+  } else {
+    console.log(`[generate] GBP: ${gbp.name} / ${gbp.address} / ${gbp.lat},${gbp.lng}`);
+  }
+
   try {
     if (type === "feature") {
       // ── 特集記事生成 ──
-      const prompt = buildFeaturePrompt(storeName, mapsUrl);
+      const prompt = buildFeaturePrompt(storeName, mapsUrl, gbp);
       const generated = await generateWithClaude(prompt);
       if (!generated) throw new Error("Claude returned empty content");
 
@@ -295,7 +420,7 @@ export async function POST(req: NextRequest) {
     } else if (type === "restaurant") {
       // ── 店舗紹介生成 ──
       const nextId  = await getNextRestaurantId();
-      const prompt  = buildRestaurantPrompt(storeName, mapsUrl, nextId);
+      const prompt  = buildRestaurantPrompt(storeName, mapsUrl, nextId, gbp);
       const generated = await generateWithClaude(prompt);
       if (!generated) throw new Error("Claude returned empty content");
 
