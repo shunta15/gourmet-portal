@@ -80,7 +80,7 @@ idは "teleapo-feat-${slugify(storeName)}" 固定。
   kicker: "（店舗名のローマ字大文字。例: QUALIA MEINOHAMA）",
   title: "（エリア＋シーン＋店舗名＋短いキャッチ。30〜60字）",
   titleHTML: "（2行構成。店舗名と短いフレーズを <em></em> で強調。例: Qualia、<br>姪浜の<em>夜。</em>）",
-  subtitle: "（業態 + エリア + 利用シーン示唆。40〜70字）",
+  subtitle: "（業態 + エリア + シーン示唆。20〜35字。短く。改行なしで1〜2行に収まる長さ）",
   lede: "（周辺エリアからのアクセス・街の文脈→店のポジショニング→5点案内、で250〜400字。AIっぽくならず編集部目線で）",
   date: "${new Date().toISOString().slice(0, 10)}",
   reading: "",
