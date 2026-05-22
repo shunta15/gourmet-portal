@@ -97,7 +97,10 @@ function rowToArticle(row: DbArticleRow, ranks: DbRankItemRow[] = []): FeatureAr
  * DB の ranking_items は specs / quote / closing が欠落するので、
  * data.ts に同 ID があればそちらをマージする（DB の hero/title/lede 優先）。
  */
-export async function getFeatureArticleById(id: string): Promise<FeatureArticle | null> {
+export async function getFeatureArticleById(rawId: string): Promise<FeatureArticle | null> {
+  // Next.js のバージョンによって SSG 時に params が URL エンコードされたまま
+  // 渡される場合がある（非 ASCII パスセグメント）。デコードして統一する。
+  const id = decodeURIComponent(rawId);
   let dbArticle: FeatureArticle | null = null;
   try {
     const { data, error } = await db()
