@@ -20,6 +20,10 @@ const SHEET_NAME  = '詰めOKリスト'; // 読み込み & 書き込み先（QUE
 const API_URL     = 'https://machinowa.tokyo/api/machinowa/generate';
 const NOTIFY_EMAIL = 'linkateinc315@link8.info';
 
+// 1回の cron で処理する最大件数（暴走・タイムアウト・課金急増を防ぐ）
+// Claude API ~60秒/件、GAS は6分制限のため 3-5 件が安全
+const MAX_PROCESS_PER_RUN = 3;
+
 // 列インデックス（1始まり）
 // A〜V は QUERY 結果。W〜Z は GAS が書き込む管理列。
 const COL = {
@@ -86,68 +90,147 @@ function checkAndGenerate() {
   const props  = PropertiesService.getScriptProperties();
   const secret = props.getProperty('MACHINOWA_SECRET');
   const results = [];
+  // 監視用カウンタ（無音失敗検知のため）
+  const stats = {
+    totalRows: 0,
+    featOkRows: 0,        // 詰めOK 行数
+    featDoneRows: 0,      // 詰めOK かつ W=済
+    featPendingRows: 0,   // 詰めOK かつ W=空 → 処理対象
+    restOkRows: 0,        // 商談完了 行数
+    restDoneRows: 0,
+    restPendingRows: 0,
+    featProcessed: 0,
+    restProcessed: 0,
+    featError: 0,
+    restError: 0,
+    pendingStores: [],    // 未処理対象の店舗名
+  };
 
-  let rows;
+  // ─── Step 1: ステータス列のみ batchGet で取得（軽量スキャン） ───
+  // D(店舗名) / J(URL) / P(P_STATUS) / U(U_STATUS) / W(FEAT_DONE) / Y(REST_DONE)
+  // フル A:Z (26列) ではなく必要な6列のみ → 転送量 ~75% カット
+  let statusRows = []; // {rowNum, storeName, mapsUrl, pStatus, uStatus, featDone, restDone}
   try {
-    const res = Sheets.Spreadsheets.Values.get(
-      SHEET_ID,
-      `${SHEET_NAME}!A1:Z`,
-      { valueRenderOption: 'FORMATTED_VALUE' }
+    const ranges = [
+      `${SHEET_NAME}!D2:D`,
+      `${SHEET_NAME}!J2:J`,
+      `${SHEET_NAME}!P2:P`,
+      `${SHEET_NAME}!U2:U`,
+      `${SHEET_NAME}!W2:W`,
+      `${SHEET_NAME}!Y2:Y`,
+    ];
+    const res = Sheets.Spreadsheets.Values.batchGet(
+      SHEET_ID, { ranges: ranges, valueRenderOption: 'FORMATTED_VALUE' }
     );
-    rows = res.values || [];
+    const cols = res.valueRanges.map(vr => (vr.values || []).map(r => (r[0] || '').toString().trim()));
+    const maxLen = Math.max(...cols.map(c => c.length));
+    stats.totalRows = maxLen + 1; // ヘッダー含めて
+    Logger.log(`🔍 取得行数: ${maxLen}行（軽量スキャン: ${ranges.length}列のみ）`);
+
+    for (let i = 0; i < maxLen; i++) {
+      const storeName = cols[0][i] || '';
+      if (!storeName) continue;
+      statusRows.push({
+        rowNum:    i + 2, // ヘッダー分 +1, さらに 0-indexed→1-indexed
+        storeName: storeName,
+        mapsUrl:   cols[1][i] || '',
+        pStatus:   cols[2][i] || '',
+        uStatus:   cols[3][i] || '',
+        featDone:  cols[4][i] || '',
+        restDone:  cols[5][i] || '',
+      });
+    }
   } catch (e) {
     Logger.log('❌ Sheets API エラー: ' + e.message);
+    _sendNotification([], { ...stats, fatalError: 'Sheets API: ' + e.message });
     return;
   }
 
-  Logger.log(`🔍 取得行数: ${rows.length}行`);
-
-  for (let i = 1; i < rows.length; i++) {
-    const row       = rows[i];
-    const storeName = (row[COL.STORE - 1] || '').toString().trim();
-    if (!storeName) continue;
-
-    const mapsUrl  = (row[COL.URL - 1]       || '').toString().trim();
-    const pStatus  = (row[COL.P_STATUS - 1]  || '').toString().trim();
-    const uStatus  = (row[COL.U_STATUS - 1]  || '').toString().trim();
-    const featDone = (row[COL.FEAT_DONE - 1] || '').toString().trim();
-    const restDone = (row[COL.REST_DONE - 1] || '').toString().trim();
-
-    const rowNum = i + 1;
-
-    // 詰めOK かつ 特集記事未生成
-    if (pStatus === '詰めOK' && !featDone) {
-      Logger.log(`📝 特集記事生成: ${storeName} (row ${rowNum})`);
-      const result = _callApi({ storeName, mapsUrl, type: 'feature', rowNum, secret });
-      if (result && result.url) {
-        _writeBack(rowNum, COL.FEAT_DONE, COL.FEAT_URL, result.url);
-        results.push({ type: '特集記事', storeName, url: result.url, status: '✅ 完了' });
+  // ─── Step 2: 未処理候補を抽出（カウンタ更新も同時に） ───
+  const featCandidates = [];
+  const restCandidates = [];
+  for (const r of statusRows) {
+    if (r.pStatus === '詰めOK') {
+      stats.featOkRows++;
+      if (r.featDone) {
+        stats.featDoneRows++;
       } else {
-        results.push({ type: '特集記事', storeName, url: '', status: '❌ エラー' });
+        stats.featPendingRows++;
+        stats.pendingStores.push(`feat:${r.storeName}(${r.rowNum})`);
+        featCandidates.push(r);
       }
-      Utilities.sleep(5000);
     }
-
-    // 商談完了 かつ 店舗紹介未生成
-    if (uStatus === '商談完了' && !restDone) {
-      Logger.log(`🏪 店舗紹介生成: ${storeName} (row ${rowNum})`);
-      const result = _callApi({ storeName, mapsUrl, type: 'restaurant', rowNum, secret });
-      if (result && result.url) {
-        _writeBack(rowNum, COL.REST_DONE, COL.REST_URL, result.url);
-        results.push({ type: '店舗紹介', storeName, url: result.url, status: '✅ 完了' });
+    if (r.uStatus === '商談完了') {
+      stats.restOkRows++;
+      if (r.restDone) {
+        stats.restDoneRows++;
       } else {
-        results.push({ type: '店舗紹介', storeName, url: '', status: '❌ エラー' });
+        stats.restPendingRows++;
+        stats.pendingStores.push(`rest:${r.storeName}(${r.rowNum})`);
+        restCandidates.push(r);
       }
-      Utilities.sleep(5000);
     }
   }
 
-  if (results.length > 0) {
-    _sendNotification(results);
-    Logger.log(`✅ ${results.length}件処理完了 → 通知送信`);
-  } else {
-    Logger.log('📭 新規処理対象なし');
+  Logger.log(`📋 候補数: 特集${featCandidates.length}件 / 店舗紹介${restCandidates.length}件 / 上限${MAX_PROCESS_PER_RUN}件/回`);
+
+  // ─── Step 3: 上限まで処理 ───
+  let budget = MAX_PROCESS_PER_RUN;
+
+  for (const r of featCandidates) {
+    if (budget <= 0) break;
+    Logger.log(`📝 特集記事生成: ${r.storeName} (row ${r.rowNum})`);
+    const result = _callApi({ storeName: r.storeName, mapsUrl: r.mapsUrl, type: 'feature', rowNum: r.rowNum, secret });
+    if (result && result.url) {
+      _writeBack(r.rowNum, COL.FEAT_DONE, COL.FEAT_URL, result.url);
+      results.push({ type: '特集記事', storeName: r.storeName, url: result.url, status: '✅ 完了' });
+      stats.featProcessed++;
+    } else {
+      results.push({ type: '特集記事', storeName: r.storeName, url: '', status: '❌ エラー' });
+      stats.featError++;
+    }
+    budget--;
+    Utilities.sleep(5000);
   }
+
+  for (const r of restCandidates) {
+    if (budget <= 0) break;
+    Logger.log(`🏪 店舗紹介生成: ${r.storeName} (row ${r.rowNum})`);
+    const result = _callApi({ storeName: r.storeName, mapsUrl: r.mapsUrl, type: 'restaurant', rowNum: r.rowNum, secret });
+    if (result && result.url) {
+      _writeBack(r.rowNum, COL.REST_DONE, COL.REST_URL, result.url);
+      results.push({ type: '店舗紹介', storeName: r.storeName, url: result.url, status: '✅ 完了' });
+      stats.restProcessed++;
+    } else {
+      results.push({ type: '店舗紹介', storeName: r.storeName, url: '', status: '❌ エラー' });
+      stats.restError++;
+    }
+    budget--;
+    Utilities.sleep(5000);
+  }
+
+  // 上限到達で残った候補があれば記録
+  const totalCandidates = featCandidates.length + restCandidates.length;
+  const totalProcessed  = stats.featProcessed + stats.restProcessed + stats.featError + stats.restError;
+  if (totalCandidates > totalProcessed) {
+    stats.deferred = totalCandidates - totalProcessed;
+    Logger.log(`⏭ 次回繰越: ${stats.deferred}件（MAX_PROCESS_PER_RUN=${MAX_PROCESS_PER_RUN} に到達）`);
+  }
+
+  Logger.log(`📊 詰めOK: 全${stats.featOkRows} / 済${stats.featDoneRows} / 未${stats.featPendingRows} → 処理${stats.featProcessed} / エラー${stats.featError}`);
+  Logger.log(`📊 商談完了: 全${stats.restOkRows} / 済${stats.restDoneRows} / 未${stats.restPendingRows} → 処理${stats.restProcessed} / エラー${stats.restError}`);
+
+  // 無音失敗検知: 候補があるのに処理0件なら異常（上限到達は別カウント）
+  const expectedThisRun = Math.min(stats.featPendingRows + stats.restPendingRows, MAX_PROCESS_PER_RUN);
+  const actualWork      = stats.featProcessed + stats.restProcessed + stats.featError + stats.restError;
+  if (expectedThisRun > 0 && actualWork === 0) {
+    Logger.log(`🚨 異常: 未処理${expectedThisRun}件あるのに処理0件。スキップロジックを疑え。pending=${JSON.stringify(stats.pendingStores)}`);
+    stats.silentFailure = true;
+  }
+
+  // 常に通知（0件処理でもサマリーを送る）
+  _sendNotification(results, stats);
+  Logger.log(`✅ 通知送信完了 (処理${results.length}件, 期待${expectedThisRun}件)`);
 }
 
 function _writeBack(rowNum, doneCol, urlCol, url) {
@@ -237,24 +320,81 @@ function _callApi(payload) {
   return null;
 }
 
-function _sendNotification(results) {
-  const now     = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
-  const subject = `【マチノワ】記事自動生成 ${results.length}件完了 (${now})`;
+function _sendNotification(results, stats) {
+  const now = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+  stats = stats || {};
 
-  const lines = results.map(r =>
-    `${r.status} [${r.type}] ${r.storeName}\n${r.url ? '   → ' + r.url : '   → 生成失敗'}`
-  );
+  // 件名: 異常時は🚨、通常は✅
+  const silent = stats.silentFailure ? '🚨 無音失敗 ' : '';
+  const subject = `【マチノワ】${silent}記事生成 処理${results.length}件 / 未${(stats.featPendingRows||0) + (stats.restPendingRows||0)}件 (${now})`;
+
+  const lines = results.length > 0
+    ? results.map(r => `${r.status} [${r.type}] ${r.storeName}\n${r.url ? '   → ' + r.url : '   → 生成失敗'}`)
+    : ['(処理件数 0件)'];
 
   const body = [
     `マチノワ記事自動生成レポート`,
     `実行日時: ${now}`,
     ``,
+    `■ 処理結果`,
     ...lines,
+    ``,
+    `■ サマリー`,
+    `取得行数: ${stats.totalRows || '?'}`,
+    `詰めOK: 全${stats.featOkRows||0} / 済${stats.featDoneRows||0} / 未${stats.featPendingRows||0} → 処理${stats.featProcessed||0} エラー${stats.featError||0}`,
+    `商談完了: 全${stats.restOkRows||0} / 済${stats.restDoneRows||0} / 未${stats.restPendingRows||0} → 処理${stats.restProcessed||0} エラー${stats.restError||0}`,
+    stats.fatalError ? `❌ 致命エラー: ${stats.fatalError}` : '',
+    stats.silentFailure ? `🚨 異常: 未処理あるのに何も処理されなかった。コードのスキップ条件を確認すべし。` : '',
+    stats.deferred ? `⏭ 上限到達で次回繰越: ${stats.deferred}件（MAX_PROCESS_PER_RUN）` : '',
+    stats.pendingStores && stats.pendingStores.length ? `未処理候補: ${stats.pendingStores.join(', ')}` : '',
     ``,
     `─────────────────`,
     `スプレッドシート:`,
     `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`,
-  ].join('\n');
+  ].filter(Boolean).join('\n');
 
   MailApp.sendEmail(NOTIFY_EMAIL, subject, body);
+}
+
+// 一度きり実行: rows 2-143 で P=詰めOK / W=空 を W=スキップ で埋める（手動指定運用に戻すため）
+function bulkSkipPending() {
+  const res = Sheets.Spreadsheets.Values.get(
+    SHEET_ID, `${SHEET_NAME}!A1:Z`, { valueRenderOption: 'FORMATTED_VALUE' }
+  );
+  const rows = res.values || [];
+  let skipped = 0;
+  const data = [];
+  for (let i = 1; i < rows.length; i++) {
+    const rowNum = i + 1;
+    if (rowNum < 2 || rowNum > 143) continue;
+    const pStatus  = (rows[i][COL.P_STATUS - 1]  || '').toString().trim();
+    const featDone = (rows[i][COL.FEAT_DONE - 1] || '').toString().trim();
+    if (pStatus !== '詰めOK' || featDone) continue;
+    data.push({ range: `${SHEET_NAME}!W${rowNum}`, values: [['スキップ']] });
+    skipped++;
+  }
+  if (data.length) {
+    Sheets.Spreadsheets.Values.batchUpdate(
+      { valueInputOption: 'USER_ENTERED', data: data }, SHEET_ID
+    );
+  }
+  Logger.log(`✅ スキップマーク完了: ${skipped}行`);
+}
+
+// 一度きり実行: 社交酒場イムの W2/X2 をクリア
+function clearShakaisakabaImu() {
+  const res = Sheets.Spreadsheets.Values.get(
+    SHEET_ID, `${SHEET_NAME}!A2:Z2`, { valueRenderOption: 'FORMATTED_VALUE' }
+  );
+  const row = res.values && res.values[0] || [];
+  const storeName = (row[COL.STORE - 1] || '').toString().trim();
+  if (storeName !== '社交酒場イム') {
+    Logger.log(`❌ row 2 が 社交酒場イム ではない: ${storeName}`);
+    return;
+  }
+  Sheets.Spreadsheets.Values.update(
+    { values: [['スキップ', '']] }, SHEET_ID, `${SHEET_NAME}!W2:X2`,
+    { valueInputOption: 'USER_ENTERED' }
+  );
+  Logger.log(`✅ row 2 (社交酒場イム): W2=スキップ, X2=空`);
 }

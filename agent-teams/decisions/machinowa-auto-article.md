@@ -51,3 +51,39 @@
 - ❌ noindex を外す
 - ❌ 条件チェックに余計なフィルタを追加する
 - ❌ ユーザー確認なしに本番デプロイ後の挙動を「OK」と判断する（公開状態の最終確認はユーザー）
+- ❌ **デバッグ用の `TEMP_TARGETS` / `setupAllHack` などの一時フィルタをコミット／保存したまま帰らない**（無音失敗の元凶）
+
+## 2026-05-22 21:11 障害と再発防止策
+
+### 障害
+- 20:00 cron 実行（20:03:04）が 2.861秒 で完了 → 「新規処理対象なし」をログに出して終了
+- 実際には W列空 の 詰めOK が2件（row 144, 145）存在
+- 原因: GASコードにデバッグ用の `TEMP_TARGETS`（4店舗だけ処理する一時フィルタ）が残ったまま 20:00 を迎えた。4店舗は既に W=済 なので何もすることがなくスキップされた。
+- 21:11 にフィルタ削除して保存。
+
+### 再発防止策（実装済み）
+`agent-teams/gas/machinowa-monitor.gs` の `checkAndGenerate()` に以下を追加：
+
+1. **stats カウンタ** で各種件数を追跡
+   - `totalRows` / `featOkRows` / `featDoneRows` / `featPendingRows`
+   - `restOkRows` / `restDoneRows` / `restPendingRows`
+   - `featProcessed` / `restProcessed` / `featError` / `restError`
+   - `pendingStores`: 未処理候補の店舗名リスト
+
+2. **無音失敗の自動検知**
+   - `expectedWork = featPending + restPending`
+   - `actualWork   = processed + error の合計`
+   - `expectedWork > 0 && actualWork === 0` のとき `stats.silentFailure = true`
+
+3. **常に通知メールを送る**（処理0件でもサマリーを送信）
+   - 件名に `🚨 無音失敗` プレフィックスが付くので即発見できる
+   - 本文に `取得行数 / 全/済/未/処理/エラー` の数字、未処理店舗リスト、致命エラーを記載
+
+4. **Sheets API 致命エラーも通知する**
+   - 以前は Logger.log のみで通知メールが飛ばなかった
+   - 今は `fatalError` を stats に積んで `_sendNotification` を呼ぶ
+
+### 監視運用
+- 10:00 / 15:00 / 20:00 のたびに `linkateinc315@link8.info` にメール 1通
+- 件名で 0件処理 / 異常 / 正常 を判別可
+- 「件数 0 / 未 0」なら問題なし、「未 ≧ 1」なら処理されてない
