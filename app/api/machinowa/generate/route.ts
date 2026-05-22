@@ -7,7 +7,6 @@
  * body: {
  *   storeName: string   // 店舗名
  *   mapsUrl:   string   // Google Maps URL
- *   notes:     string   // 備考
  *   type:      'feature' | 'restaurant'
  *   rowNum:    number   // スプシの行番号
  *   secret:    string   // MACHINOWA_SECRET
@@ -36,13 +35,12 @@ function slugify(name: string): string {
 }
 
 // ─── 特集記事の生成プロンプト ───────────────────────────────
-function buildFeaturePrompt(storeName: string, mapsUrl: string, notes: string): string {
+function buildFeaturePrompt(storeName: string, mapsUrl: string): string {
   return `
 あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの特集記事を生成してください。
 
 店舗名: ${storeName}
 Google Maps URL: ${mapsUrl}
-メモ: ${notes || "（なし）"}
 
 以下の TypeScript オブジェクトを生成してください。型は FeatureArticle です。
 idは "teleapo-feat-${slugify(storeName)}" としてください。
@@ -89,13 +87,12 @@ idは "teleapo-feat-${slugify(storeName)}" としてください。
 }
 
 // ─── 店舗紹介記事の生成プロンプト ──────────────────────────
-function buildRestaurantPrompt(storeName: string, mapsUrl: string, notes: string, nextId: string): string {
+function buildRestaurantPrompt(storeName: string, mapsUrl: string, nextId: string): string {
   return `
 あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの店舗紹介データを生成してください。
 
 店舗名: ${storeName}
 Google Maps URL: ${mapsUrl}
-メモ: ${notes || "（なし）"}
 割り当てID: ${nextId}
 
 以下の TypeScript オブジェクトを生成してください。型は Restaurant です。
@@ -204,7 +201,7 @@ export async function POST(req: NextRequest) {
   const secret = process.env.MACHINOWA_GENERATE_SECRET;
   if (!secret) return NextResponse.json({ error: "Secret not configured" }, { status: 500 });
 
-  let body: { storeName: string; mapsUrl: string; notes: string; type: string; rowNum: number; secret: string };
+  let body: { storeName: string; mapsUrl: string; type: string; rowNum: number; secret: string };
   try {
     body = await req.json();
   } catch {
@@ -215,7 +212,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { storeName, mapsUrl, notes, type } = body;
+  const { storeName, mapsUrl, type } = body;
 
   if (!storeName || !type) {
     return NextResponse.json({ error: "storeName and type are required" }, { status: 400 });
@@ -224,7 +221,7 @@ export async function POST(req: NextRequest) {
   try {
     if (type === "feature") {
       // ── 特集記事生成 ──
-      const prompt = buildFeaturePrompt(storeName, mapsUrl, notes);
+      const prompt = buildFeaturePrompt(storeName, mapsUrl);
       const generated = await generateWithClaude(prompt);
       if (!generated) throw new Error("Claude returned empty content");
 
@@ -268,7 +265,7 @@ export async function POST(req: NextRequest) {
     } else if (type === "restaurant") {
       // ── 店舗紹介生成 ──
       const nextId  = await getNextRestaurantId();
-      const prompt  = buildRestaurantPrompt(storeName, mapsUrl, notes, nextId);
+      const prompt  = buildRestaurantPrompt(storeName, mapsUrl, nextId);
       const generated = await generateWithClaude(prompt);
       if (!generated) throw new Error("Claude returned empty content");
 
