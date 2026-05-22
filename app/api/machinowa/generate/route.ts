@@ -391,7 +391,22 @@ export async function POST(req: NextRequest) {
   const secret = process.env.MACHINOWA_GENERATE_SECRET;
   if (!secret) return NextResponse.json({ error: "Secret not configured" }, { status: 500 });
 
-  let body: { storeName: string; mapsUrl: string; type: string; rowNum: number; secret: string };
+  let body: {
+    storeName: string;
+    mapsUrl: string;
+    type: string;
+    rowNum: number;
+    secret: string;
+    gbpOverride?: {
+      name?: string;
+      address?: string;
+      lat?: string;
+      lng?: string;
+      category?: string;
+      description?: string;
+      url?: string;
+    };
+  };
   try {
     body = await req.json();
   } catch {
@@ -409,11 +424,26 @@ export async function POST(req: NextRequest) {
   }
 
   // GBP（Google Business Profile）情報を取得（必須・ハルシネーション防止）
-  const gbp = await fetchPlaceInfo(mapsUrl);
-  if (!gbp) {
-    console.warn(`[generate] GBP取得失敗: ${storeName} (${mapsUrl})`);
+  // body.gbpOverride が指定された場合は API 取得をスキップして手動値を使う
+  let gbp: Awaited<ReturnType<typeof fetchPlaceInfo>>;
+  if (body.gbpOverride) {
+    gbp = {
+      name: body.gbpOverride.name || storeName,
+      address: body.gbpOverride.address || "",
+      lat: body.gbpOverride.lat || "",
+      lng: body.gbpOverride.lng || "",
+      category: body.gbpOverride.category || "",
+      description: body.gbpOverride.description || "",
+      url: body.gbpOverride.url || mapsUrl,
+    };
+    console.log(`[generate] GBP override: ${gbp.name} / ${gbp.address}`);
   } else {
-    console.log(`[generate] GBP: ${gbp.name} / ${gbp.address} / ${gbp.lat},${gbp.lng}`);
+    gbp = await fetchPlaceInfo(mapsUrl);
+    if (!gbp) {
+      console.warn(`[generate] GBP取得失敗: ${storeName} (${mapsUrl})`);
+    } else {
+      console.log(`[generate] GBP: ${gbp.name} / ${gbp.address} / ${gbp.lat},${gbp.lng}`);
+    }
   }
 
   try {
