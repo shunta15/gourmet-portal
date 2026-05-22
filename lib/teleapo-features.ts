@@ -22,8 +22,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   date: "2026-05-22",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "/restaurants/_placeholder/feature-hero.jpg",
-  ogImage: "/restaurants/_placeholder/feature-og.jpg",
+  heroImage: "/restaurants/teleapo-rural/hero.jpg",
+  ogImage: "/restaurants/teleapo-rural/hero.jpg",
   ranking: [
     {
       rank: "POINT 01",
@@ -33,7 +33,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "岸和田市阿間河滝町",
       purpose: "日常の喧騒を忘れ、自然の中で過ごす時間を手に入れる",
       desc: "ルーラルの最大の魅力は、その立地にある。岸和田市街地から府道を南東へ進み、和泉山脈の麓へ入っていくと、次第に視界が開け、緑が濃くなっていく。阿間河滝町は、観光地化されていない静かな山間エリアで、訪れる人も限られる。この場所を選んだということ自体が、店の哲学を物語っている。都市生活者にとって、こうした場所へ足を運ぶこと自体が小さな旅であり、日常からの離脱だ。駐車場から店へ向かう数歩の間に、空気が変わるのを感じる。鳥の声、風の音、木々の揺れ。ルーラルは「わざわざ行く価値がある店」というより、「わざわざ行く過程そのものが体験」の店なのだと思う。この立地だからこそ、訪れた人は自然と肩の力が抜け、ゆったりとした時間の流れに身を委ねることができる。週末の午後、予定を詰め込まず、ただここで過ごすためだけに訪れる。そんな贅沢な時間の使い方を、この場所は許してくれる。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-rural/point1.jpg"],
       specs: [
         { k: "所在地", v: "大阪府岸和田市阿間河滝町" },
         { k: "アクセス", v: "岸和田市街地から車で約20分" }
@@ -47,7 +47,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "岸和田市",
       purpose: "都市生活とは異なる価値観を体験する",
       desc: "店名「ルーラル」には明確な意図がある。Ruralとは、都市（Urban）の対極にある概念だ。単に「田舎」という意味ではなく、自然と共生する暮らし、スローな時間、本質的な豊かさを指す言葉として使われることが多い。この店がその名を冠している以上、提供しているのは単なる飲食サービスではなく、ライフスタイルそのものなのだろう。都市で働き、効率を追い求める日々の中で、私たちは何かを置き去りにしている。その「何か」を取り戻すための場所として、ルーラルは存在するのだと思う。たとえば、ゆっくりと淹れたコーヒーを味わう時間、窓の外の景色をぼんやりと眺める時間、誰とも話さずただ自分と向き合う時間。こうした時間は、都市の中では意識的に作らなければ得られない。しかしここでは、自然とそうした時間が流れる。訪れる人は、この空間と時間そのものを「消費」するのではなく、「体験」する。それがルーラルの提案する価値なのだと、私は考えている。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-rural/point2.jpg"],
       specs: [
         { k: "コンセプト", v: "田園的な時間と空間の提供" },
         { k: "客層", v: "静かな時間を求める大人" }
@@ -114,8 +114,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   date: "2026-05-22",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "/restaurants/_placeholder/feature-hero.jpg",
-  ogImage: "/restaurants/_placeholder/feature-og.jpg",
+  heroImage: "/restaurants/teleapo-anbai/hero.jpg",
+  ogImage: "/restaurants/teleapo-anbai/hero.jpg",
   ranking: [
     {
       rank: "POINT 01",
@@ -125,7 +125,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "小倉北区",
       purpose: "地元に根ざした、日常使いできる大人の居酒屋",
       desc: "店名にある「あんばい」という言葉が、この店のすべてを物語っている。派手な演出や奇をてらったメニューはない。けれど、素材の持ち味を活かした料理、親しみやすい価格帯、落ち着いた店内の雰囲気。すべてが「ちょうど良い」バランスで整えられている。北九州という土地柄、地元の新鮮な魚介類や野菜が手に入りやすい環境にあり、店主はそれらを活かした季節感のある料理を提供している。観光客向けの派手な店ではなく、地元の人々が何度でも足を運びたくなる、そんな居心地の良さがここにはある。一人でカウンターに座って静かに一杯やるもよし、仲間と小上がりで語らうもよし。この店は、訪れる人のペースに寄り添ってくれる。仕事帰りに立ち寄るには肩肘張らず、大切な人との食事には丁寧すぎる。そのちょうど中間、「あんばい」を心得た店なのだ。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-anbai/point1.jpg"],
       specs: [
         { k: "業態", v: "和食中心の居酒屋" },
         { k: "雰囲気", v: "落ち着いた大人向け" }
@@ -139,7 +139,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "小倉北区",
       purpose: "季節の素材が光る、日替わりメニュー",
       desc: "あんばい 食楽厨房の料理は、旬の素材を中心に組み立てられている。北九州という立地を活かし、関門海峡で獲れる新鮮な魚介類や、地元の農家から仕入れる野菜が食卓を彩る。日替わりのおすすめ料理が黒板に書かれていることも多く、訪れるたびに新しい発見がある。刺身は鮮度が良く、シンプルに素材の味を楽しめる。焼き物や煮物も丁寧な仕事がされており、家庭的でありながら、プロの技を感じさせる仕上がりだ。一品料理の価格帯も手頃で、複数品頼んでも財布に優しいのが嬉しい。酒の肴としてちょうど良い量感で、ついつい追加注文してしまう。地酒や焼酎の品揃えも充実しており、料理との相性を楽しむのも一興だ。派手な盛り付けや創作料理ではないが、丁寧に作られた料理は、食べる人の心をほっとさせてくれる。二軒目として立ち寄った際も、しっかりと満足できる内容だ。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-anbai/point2.jpg"],
       specs: [
         { k: "おすすめ", v: "日替わり旬の料理" },
         { k: "価格帯", v: "一品500円〜1500円程度（要確認）" }
@@ -206,8 +206,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   date: "2026-05-22",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "/restaurants/_placeholder/feature-hero.jpg",
-  ogImage: "/restaurants/_placeholder/feature-og.jpg",
+  heroImage: "/restaurants/teleapo-sumiya-yotsuba/hero.jpg",
+  ogImage: "/restaurants/teleapo-sumiya-yotsuba/hero.jpg",
   ranking: [
     {
       rank: "POINT 01",
@@ -217,7 +217,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "寝屋川市",
       purpose: "炭の香りが立ち上る、王道の焼き物を中心に据えた大人の時間",
       desc: "店名に「炭」を冠するだけあって、炭や。よつ葉の核心は炭火焼にある。炭火で焼き上げる串焼きや魚介は、遠赤外線の力で素材の旨味を引き出し、表面には香ばしい焦げ目、中にはふっくらとした水分を残す。ガス火では出せない奥行きのある味わいが、この店の最大の武器だ。接待や記念日ディナーでは、旬の魚や地鶏の炭火焼を中心にコースを組んでもらうのも良いだろうし、ふだん使いなら好きな串を数本ずつオーダーして日本酒やビールと合わせる楽しみ方もできる。価格帯は2,000〜5,000円とGoogle情報にある通り、居酒屋としてはやや上質な価格帯だが、素材の質と調理技術を考えれば納得のコストパフォーマンスだと思う。炭火の香りが立ち込める店内で、一口噛みしめるたびに素材の良さを実感できる。それが炭や。よつ葉の醍醐味だ。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-sumiya-yotsuba/point1.jpg"],
       specs: [
         { k: "業態", v: "炭火焼居酒屋" },
         { k: "価格帯", v: "2,000〜5,000円" },
@@ -232,7 +232,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "寝屋川市",
       purpose: "炭火焼だけでなく、刺身や煮物、揚げ物まで幅広く楽しめる",
       desc: "炭火焼が看板とはいえ、炭や。よつ葉は居酒屋として料理の幅が広い。刺身や前菜、煮物、揚げ物といった定番メニューが揃い、どれも丁寧な仕事が感じられる。特に旬の素材を使った一品料理は、季節ごとに顔ぶれが変わるため、何度訪れても新しい発見がある。例えば春なら筍の土佐煮、夏なら鱧の落とし、秋には松茸の炭火焼、冬は鰤の刺身といった具合だ。こうした季節感を大切にする姿勢は、接待や記念日の席で重宝する。また、日本酒好きには嬉しい酒肴のラインナップも豊富で、塩辛や酒盗、クリームチーズの味噌漬けといった定番から、日替わりのおばんざいまで揃う。私が特に気に入っているのは、炭火焼と一品料理を交互に注文しながら、ゆっくりと時間をかけて飲む楽しみ方だ。炭火の香ばしさと、繊細な味付けの一品料理。この対比が、夜の時間を豊かにしてくれる。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: ["/restaurants/teleapo-sumiya-yotsuba/point2.jpg"],
       specs: [
         { k: "料理の特徴", v: "旬の素材を活かした季節の一品" },
         { k: "おすすめ", v: "刺身・煮物・酒肴" }
@@ -299,8 +299,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   date: "2026-05-22",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "/restaurants/_placeholder/feature-hero.jpg",
-  ogImage: "/restaurants/_placeholder/feature-og.jpg",
+  heroImage: "/restaurants/teleapo-owl/hero.jpg",
+  ogImage: "/restaurants/teleapo-owl/hero.jpg",
   ranking: [
     {
       rank: "POINT 01",
@@ -310,7 +310,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "門司",
       purpose: "柔軟な営業スタイルが生む、特別な一夜",
       desc: "OWLの最大の特徴は、その営業形態にある。店名に（営業時間状況で変わります）と明記されているように、営業日や営業時間が固定されていない。これは不便なようで、実は地元に根ざした店ならではの柔軟さだ。常連客はSNSや電話で営業状況を確認し、開いている日を狙って訪れる。観光で門司を訪れた人にとっては、偶然開いていたときの喜びがひとしおだ。予算は2,000〜3,000円と手頃で、気負わずふらりと立ち寄れる価格帯。居酒屋というカテゴリのなかでも、チェーン店にはない個人店の温度感がある。店主のペースで営業しているからこそ、料理やサービスに無理がなく、自然体の雰囲気が漂う。門司港レトロの華やかさとは対照的な、日常の延長にある夜を過ごしたいなら、この店がぴったりだと思う。営業日の確認は必須だが、それもまた旅の一部として楽しみたい。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: [],
       specs: [
         { k: "予算", v: "¥2,000〜3,000" },
         { k: "営業形態", v: "変動制（要確認）" }
@@ -324,7 +324,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       area: "門司",
       purpose: "日常使いできる、親しみやすいメニュー構成",
       desc: "居酒屋OWLの魅力は、肩肘張らずに楽しめる料理にある。Google評価4.3★という高評価は、派手さではなく、地に足のついた美味しさが支えているのだろう。予算2,000〜3,000円という設定からも、コース料理ではなく、好きなものを好きなだけ頼めるアラカルトスタイルが想像できる。門司という土地柄、関門海峡の海の幸を使った料理が並ぶ可能性は高い。ふぐ、イカ、地魚の刺身や焼き物。あるいは北九州名物のぬか炊きや、焼きカレーといった郷土の味も期待したい。居酒屋だから、ビールや焼酎、日本酒との相性を考えた味付けがされているはずだ。一人で訪れてカウンターで軽く飲むもよし、友人や家族と小上がりでゆっくり語らうもよし。観光客が門司港レトロで海鮮丼を食べた後、夜にもう一軒、地元の味を求めて立ち寄るにも最適だ。具体的なメニューは公式情報を確認してほしいが、このエリアと価格帯なら、期待を裏切らない一皿が並ぶと編集部は考えている。",
-      images: ["/restaurants/_placeholder/feature-point.jpg"],
+      images: [],
       specs: [
         { k: "評価", v: "4.3★（Google）" },
         { k: "スタイル", v: "アラカルト中心" }
