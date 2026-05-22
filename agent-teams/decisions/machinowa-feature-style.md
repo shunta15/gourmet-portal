@@ -23,14 +23,16 @@
 - AI っぽい優等生文体は避ける
 - 誇張・推測は禁止、不明な数値は「公式情報をご確認ください」
 
-## 画像ポリシー
+## 画像ポリシー（2026-05-22 確定）
 
-**画像は必ず固定 placeholder を使う**（Claude が独自に画像URLを選ぶことは絶対禁止）:
-- `heroImage`: `/restaurants/_placeholder/feature-hero.jpg`
-- `ogImage`: `/restaurants/_placeholder/feature-og.jpg`
-- 各 POINT `images`: `["/restaurants/_placeholder/feature-point.jpg"]`
+**画像は固定 placeholder のみ使用**（Claude が独自に画像URLを選ぶことは絶対禁止）:
+- `heroImage`: `/restaurants/_placeholder/feature-hero.jpg`（**必ず**）
+- `ogImage`: `/restaurants/_placeholder/feature-og.jpg`（**必ず**）
+- **POINT 1, 2** `images`: `["/restaurants/_placeholder/feature-point.jpg"]`（必ず placeholder 入れる）
+- **POINT 3, 4, 5** `images`: `[]`（空配列。CSS で「画像イメージ」ラベル + 暗色背景が表示される）
 
-→ 後で人間が公式店舗写真／エリア写真に差し替える前提。Unsplash 等の汎用画像が業態と合わないトラブルを防ぐため固定化。
+placeholder 画像は無地の暗色グラデーション JPEG（PIL で生成）。
+後で人間が公式店舗写真／エリア写真に差し替える前提。Unsplash 等の汎用画像が業態と合わないトラブルを防ぐため固定化。
 
 ## CSS 調整
 
