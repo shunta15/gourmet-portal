@@ -35,30 +35,53 @@ function slugify(name: string): string {
 }
 
 // ─── 特集記事の生成プロンプト ───────────────────────────────
+// 既存の高品質特集記事 (feature-qualia-meinohama / feature-kinosha-nachikatsuura /
+// feature-nishida-yao) のフォーマットを踏襲する。
 function buildFeaturePrompt(storeName: string, mapsUrl: string): string {
-  return `
-あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの特集記事を生成してください。
+  return `あなたはマチノワ編集部のライターです。以下の店舗情報をもとに、マチノワの「単店舗特集記事」を生成してください。
 
 店舗名: ${storeName}
 Google Maps URL: ${mapsUrl}
 
-以下の TypeScript オブジェクトを生成してください。型は FeatureArticle です。
-idは "teleapo-feat-${slugify(storeName)}" としてください。
-5つのポイント（POINT 01〜05）を含めてください。
-画像は https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80 などの飲食店向け Unsplash URL を使用してください（実際の店舗画像ではなく）。
+# 重要：マチノワの特集記事とは何か
 
-必ず以下の形式で出力してください（コードブロックのみ）:
+単に店の特徴を列挙する「店舗紹介」ではありません。
+「**特定のエリア・利用シーンの中に、その店を位置づけて語る**」記事です。
+
+良い例（参考）:
+- タイトル: 「姪浜デートのディナーにはKitchen&Bar Qualia。創作イタリアンと本格カクテルで過ごす、大人のための一軒をご紹介」
+- lede の冒頭: 「天神や博多から地下鉄空港線でわずか15分。福岡市西区の姪浜（めいのはま）は、海と住宅街がふしぎと同居する、肩肘張らない街だ。」
+- POINT 5 は必ず「利用シーンと組み合わせ方」（周辺観光・アクセス動線込み）
+- closing は「黄金動線」具体タイムライン（17:30 待ち合わせ→18:30 散歩→19:00 店→21:00 バー...）
+
+# 必須事項
+
+1. **エリア知識を必ず使う**: Google Maps URL に含まれる地名・店舗名から場所を特定し、その街・最寄り駅・周辺観光・近隣エリアとの関係を文中に織り込むこと。例えば「天神から地下鉄で15分」「観光客が少ない地元エリア」「世界遺産○○から車で15分」など。
+2. **利用シーン文脈を必ず入れる**: デート/接待/記念日/二軒目/観光/家族/ひとり、など想定される利用シーンを具体的に書く。
+3. **POINT 5 は固定で「利用シーンと周辺の組み合わせ方」**: 周辺観光スポットや 1日プランへの組み込み方を書く。
+4. **closing は「編集部の考える黄金動線」を時刻付きで**: 例「9:00 ○○→10:30 ××→12:30 当店→14:00 △△」のように具体的なタイムライン。
+5. **タイトルは「エリア＋シーン＋店舗名＋短いキャッチ」**: 単なる店舗名+キャッチではダメ。
+6. **titleHTML は 2行構成・em タグで店舗名強調**: 例「Qualia、<br>姪浜の<em>夜。</em>」
+7. **編集部目線の主観・人称（編集部・私）を使い、口語的なトーン**: 「〜だ。」「〜と思う。」「〜が嬉しい。」など、AIっぽい優等生文体ではなく編集者の体温が乗った文章にする。
+8. **誇張・推測は避け、わからない数値は「公式情報を確認」と書く**: 営業時間・価格・席数などの具体的事実が確定できない場合は「変動するので公式情報をご確認ください」等で逃げる。
+9. **lede は 250〜400 字**、POINT の desc は **各 350〜500 字**、closing は **400〜600 字**。中身の濃い文章を書くこと。
+10. **画像はすべて Unsplash の placeholder で OK**: 後で人間が差し替える前提。
+
+# 出力形式
+
+idは "teleapo-feat-${slugify(storeName)}" 固定。
+必ず以下の TypeScript オブジェクトをコードブロックのみで出力してください:
 
 \`\`\`typescript
 {
   id: "teleapo-feat-${slugify(storeName)}",
   no: "",
   articleType: "guide" as const,
-  kicker: "STORE FEATURE",
-  title: "（タイトル）",
-  titleHTML: "（HTMLタイトル・emタグ使用）",
-  subtitle: "（サブタイトル）",
-  lede: "（リード文 200字程度）",
+  kicker: "（店舗名のローマ字大文字。例: QUALIA MEINOHAMA）",
+  title: "（エリア＋シーン＋店舗名＋短いキャッチ。30〜60字）",
+  titleHTML: "（2行構成。店舗名と短いフレーズを <em></em> で強調。例: Qualia、<br>姪浜の<em>夜。</em>）",
+  subtitle: "（業態 + エリア + 利用シーン示唆。40〜70字）",
+  lede: "（周辺エリアからのアクセス・街の文脈→店のポジショニング→5点案内、で250〜400字。AIっぽくならず編集部目線で）",
   date: "${new Date().toISOString().slice(0, 10)}",
   reading: "",
   author: "マチノワ編集部",
@@ -67,23 +90,25 @@ idは "teleapo-feat-${slugify(storeName)}" としてください。
   ranking: [
     {
       rank: "POINT 01", rankNum: 1,
-      name: "ポイント1のタイトル",
-      cuisine: "ジャンル",
-      area: "エリア",
-      purpose: "一行説明",
-      desc: "説明文（200字程度）",
+      name: "（業態・コンセプトの核心。30字以内）",
+      cuisine: "（業態タグ。例: 創作イタリアン・バー）",
+      area: "（エリア名。例: 姪の浜）",
+      purpose: "（POINT のサブキャッチ・1〜2行）",
+      desc: "（350〜500字。利用シーン文脈込み）",
       images: ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"],
-      specs: [{ k: "キー", v: "バリュー" }]
+      specs: [{ k: "（キー）", v: "（値）" }, { k: "（キー）", v: "（値）" }]
     },
-    // POINT 02〜05 も同様に
+    // POINT 02: 看板料理・商品の魅力
+    // POINT 03: もう1つの強み（ドリンク・空間・接客 等）
+    // POINT 04: 内装・雰囲気・店内空間
+    // POINT 05: 必ず「利用シーンと周辺との組み合わせ方」（周辺観光や1日プラン込み）
   ],
   sideArticles: [],
-  quote: "（締めのコメント 100字程度）",
+  quote: "（編集部視点の総括コメント。150〜250字）",
   quoteCite: "マチノワ編集部",
-  closing: "（まとめ 200字程度）",
+  closing: "（編集部が考える「黄金動線」を時刻付きで具体的に。所要時間・予算・予約のアドバイスも。400〜600字）",
 }
-\`\`\`
-`;
+\`\`\``;
 }
 
 // ─── 店舗紹介記事の生成プロンプト ──────────────────────────
@@ -132,7 +157,7 @@ Google Maps URL: ${mapsUrl}
 async function generateWithClaude(prompt: string): Promise<string> {
   const message = await anthropic.messages.create({
     model: "claude-sonnet-4-5",
-    max_tokens: 4096,
+    max_tokens: 12000,
     messages: [{ role: "user", content: prompt }],
   });
 
