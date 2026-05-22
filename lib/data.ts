@@ -30,6 +30,8 @@ import {
   NEW_GUIDE_FEATURE_ARTICLES_6,
   NEW_GUIDE_FEATURES_6,
 } from "./newGuideFeatures6";
+import { TELEAPO_FEATURE_ARTICLES } from "./teleapo-features";
+import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
 
 export type Stat = { n: string; l: string };
 
@@ -10598,6 +10600,7 @@ export const RESTAURANTS: Restaurant[] = [
       "営業は月水木がランチ11:00〜14:30とディナー17:30〜22:00、金土は〜23:00、日祝はディナーのみ。火曜・第2月曜定休。少人数の貸切にも対応し、堺のウェスタンエリアで記念日や接待にも活用できる。",
     ],
   },
+  ...TELEAPO_RESTAURANTS,  // テレアポ経由 店舗紹介（自動生成）
 ];
 
 export const NEIGHBORHOODS: Neighborhood[] = [];
@@ -10629,6 +10632,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEW_GUIDE_FEATURE_ARTICLES_4,
   ...NEW_GUIDE_FEATURE_ARTICLES_5,
   ...NEW_GUIDE_FEATURE_ARTICLES_6,
+  ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（noindex）
 };
 
 export const SHORT_VIDEOS: ShortVideo[] = [
