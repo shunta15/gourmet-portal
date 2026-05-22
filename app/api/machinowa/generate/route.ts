@@ -69,6 +69,7 @@ Google Maps URL: ${mapsUrl}
     - heroImage: \`/restaurants/_placeholder/feature-hero.jpg\`
     - ogImage: \`/restaurants/_placeholder/feature-og.jpg\`
     - 各 POINT images: \`["/restaurants/_placeholder/feature-point.jpg"]\`
+11. **【絶対厳守】文中で何かを引用・強調するときは半角ダブルクォート \`"\` を絶対に使わない**。TypeScript 構文エラーになる。代わりに日本語の \`「」\` を使うこと。例: \`「サードウェーブ系」\` ○ / \`"サードウェーブ系"\` ✗
 
 # 出力形式
 
