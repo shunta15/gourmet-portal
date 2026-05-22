@@ -70,6 +70,20 @@ async function fetchPlaceInfo(mapsUrl: string): Promise<{
       lng = coordMatch[2];
     }
 
+    // cid URL の場合は URL に lat/lng が無い → HTML から抽出を試みる
+    // Maps の HTML には APP_INITIALIZATION_STATE 等に座標が埋め込まれている
+    if (!lat || !lng) {
+      // パターン: ;,LAT,LNG] / [null,null,LAT,LNG / "LAT,LNG" 等
+      const htmlCoord =
+        html.match(/\\?"latLng\\?":\s*\{?\\?"latitude\\?":\s*([-\d.]+),\s*\\?"longitude\\?":\s*([-\d.]+)/) ??
+        html.match(/null,\s*null,\s*([-\d.]+),\s*([-\d.]+)\]/) ??
+        html.match(/center=([-\d.]+)%2C([-\d.]+)/);
+      if (htmlCoord) {
+        lat = htmlCoord[1];
+        lng = htmlCoord[2];
+      }
+    }
+
     // HTML の og:title / og:description / その他から情報抽出
     const ogTitle =
       html.match(/<meta[^>]*property="og:title"[^>]*content="([^"]+)"/)?.[1] ??
@@ -96,6 +110,35 @@ async function fetchPlaceInfo(mapsUrl: string): Promise<{
     if (!address) {
       const addrInBody = html.match(/〒\d{3}-?\d{4}\s*[^"<>\n]{5,80}/);
       if (addrInBody) address = addrInBody[0].trim();
+    }
+
+    // 住所がまだ取れない＆座標がある → Nominatim (OSM) で reverse geocoding
+    if (!address && lat && lng) {
+      try {
+        const geoRes = await fetch(
+          `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=ja&zoom=18`,
+          { headers: { "User-Agent": "MachinowaBot/1.0 (linkateinc315@link8.info)" } }
+        );
+        if (geoRes.ok) {
+          const geo = await geoRes.json();
+          if (geo.display_name) {
+            // display_name 例: "1643, 阿間河滝町, 岸和田市, 大阪府, 596-0845, 日本"
+            // 日本語表記なのでそのまま使う
+            address = geo.display_name.replace(/, 日本$/, "").trim();
+            if (geo.address) {
+              const parts = [
+                geo.address.state || geo.address.province || "",
+                geo.address.city || geo.address.town || geo.address.county || "",
+                geo.address.suburb || geo.address.neighbourhood || "",
+                geo.address.road || "",
+              ].filter(Boolean);
+              if (parts.length > 0) address = parts.join("");
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("[Nominatim] failed:", e);
+      }
     }
 
     return { name, address, lat, lng, category, description: ogDesc, url: finalUrl };
