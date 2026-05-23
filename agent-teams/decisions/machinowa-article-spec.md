@@ -19,6 +19,16 @@
    - [`feature-nishida-yao`](../../lib/newGuideFeatures6.ts) 住宅地・地元密着系
 4. **noindex 公開**: FEATURES（公開一覧）には載せない、URL のみ有効
 5. **店舗追加は明示指示があった時のみ**。勝手に増やさない
+6. **自動化の監視シートは「詰めOKリスト」のみ**（2026-05-24 ユーザー明言・絶対忘れない）
+   - スプシ ID: `1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk`
+   - シート名: `詰めOKリスト`（IMPORTRANGE + QUERY で詰めOKに絞り込み済み）
+   - **トスアップ元シートではない**（全店舗が入っていて自動化対象外案件も含まれる）
+   - 列構成:
+     - A〜V: QUERY 結果（読み取り専用） — D=店舗名 / J=Maps URL / P=詰めステータス / U=ステータス
+     - W〜Z: 自動化が書き込む管理列 — W=feature済 / X=feature URL / Y=restaurant済 / Z=restaurant URL
+7. **自動化対象は スプシ row 146 以降のみ**（2026-05-24 ユーザー明言）
+   - row 145 以下は「時すでに遅し」の旧案件のため永久スキップ
+   - フィルタ実装: [`scripts/sheets-candidates.mjs`](../../scripts/sheets-candidates.mjs) の `MIN_SOURCE_ROW = 146`
 
 ---
 
