@@ -78,7 +78,9 @@
 
 ```ts
 {
-  id: "teleapo-feat-<slug>",      // 店舗名から英数+ハイフン化
+  id: "<店舗名>",                 // 店舗名のみ（日本語OK）。teleapo-feat- 等のプレフィックス禁止
+                                  // 注釈（営業時間・移転・閉店等）は ID に入れない（例: OWL ○ / owl営業時間状況で変わります ✗）
+                                  // URL: /feature/<id>
   no: "",
   articleType: "guide" as const,
   kicker: "<英大文字キャッチ>",     // 例: "QUALIA MEINOHAMA"
@@ -89,7 +91,7 @@
   date: "<YYYY-MM-DD>",
   reading: "",
   author: "マチノワ編集部",
-  heroImage: "/restaurants/teleapo-<slug>/hero.jpg",
+  heroImage: "/restaurants/teleapo-<slug>/hero.jpg",  // 画像ディレクトリ名は teleapo-<英数slug> でOK（URLとは別物）
   ogImage: "/restaurants/teleapo-<slug>/hero.jpg",
   ranking: [POINT 01〜05],
   sideArticles: [],
@@ -183,16 +185,27 @@ GBP から取れる情報が少ない自動生成では、各 POINT の論点を
 
 ---
 
-## 6. ファイル出力
+## 6. ファイル出力・ID 命名
 
 ### 特集記事（feature）
 - 追記先: `lib/teleapo-features.ts`
 - 末尾の `};` の直前に1ブロック追記
-- key は `"teleapo-feat-<slug>"`
+- **key と id は店舗名のみ（日本語OK・プレフィックス禁止）**
+  - 例: `"ルーラル"` / `"あんばい食楽厨房"` / `"OWL"` / `"晩餐-Bansun"`
+  - 注釈（「（営業時間状況で変わります）」「（移転）」「※閉店」等）は除外
+  - URL に入れて不安な記号は除外: `。` `/` `(` `)` `?` `&` `#` `%` 等
+  - 残してOK: 英数・ひらがな・カタカナ・漢字・`-`
 
 ### 店舗紹介（restaurant）
 - 追記先: `lib/teleapo-restaurants.ts`
-- key は `"teleapo-rest-<slug>"`（要確認、ファイル既存構造に合わせる）
+- key/id 規約は feature と同じ（店舗名のみ）
+- URL は `/restaurant/<店舗名>`
+
+### URL 形式（2026-05-24 確定）
+- 特集: `machinowa.tokyo/feature/<店舗名>`
+- 店舗: `machinowa.tokyo/restaurant/<店舗名>`
+- 日本語IDは Next.js が自動で percent-encode して配信する（SSG 検証済み）
+- 旧 `/feature/teleapo-feat-*` は middleware.ts で 301 → 新URLへ救済（既存6記事のみ）
 
 ---
 
