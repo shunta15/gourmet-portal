@@ -16,10 +16,10 @@ function backfillExistingFeatures() {
 
   // 既に生成済みの4本（店舗名 → 特集記事URL）
   const generated = {
-    'ルーラル':         'https://machinowa.tokyo/feature/teleapo-feat-ルラル',
-    '炭や。よつ葉':     'https://machinowa.tokyo/feature/teleapo-feat-炭やよつ葉',
-    'OWL(営業時間状況で変わります)': 'https://machinowa.tokyo/feature/teleapo-feat-owl営業時間状況で変わります',
-    'あんばい 食楽厨房': 'https://machinowa.tokyo/feature/teleapo-feat-あんばい-食楽厨房',
+    'ルーラル':         'https://machinowa.tokyo/feature/%E3%83%AB%E3%83%BC%E3%83%A9%E3%83%AB',
+    '炭や。よつ葉':     'https://machinowa.tokyo/feature/%E7%82%AD%E3%82%84%E3%82%88%E3%81%A4%E8%91%89',
+    'OWL(営業時間状況で変わります)': 'https://machinowa.tokyo/feature/OWL',
+    'あんばい 食楽厨房': 'https://machinowa.tokyo/feature/%E3%81%82%E3%82%93%E3%81%B0%E3%81%84%E9%A3%9F%E6%A5%BD%E5%8E%A8%E6%88%BF',
   };
 
   // 詰めOKリストを全件取得

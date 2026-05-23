@@ -2,8 +2,31 @@ import { NextResponse, type NextRequest } from "next/server";
 import { updateSession } from "@/lib/supabase/middleware";
 import { DELETED_FEATURE_IDS } from "@/lib/deletedFeatureIds";
 
+// 旧 teleapo-feat-* ID → 新 ID（店舗名のみ）リダイレクトマップ。
+// URL 命名規約変更（2026-05-24）に伴い、過去に公開した URL を 301 で新 URL に救済する。
+const TELEAPO_FEAT_REDIRECTS: Record<string, string> = {
+  "teleapo-feat-ルラル": "ルーラル",
+  "teleapo-feat-あんばい-食楽厨房": "あんばい食楽厨房",
+  "teleapo-feat-炭やよつ葉": "炭やよつ葉",
+  "teleapo-feat-owl営業時間状況で変わります": "OWL",
+  "teleapo-feat-久留米-和洋創作酒場-晩餐-bansun-": "晩餐-Bansun",
+  "teleapo-feat-炭火家本舗-なんばや": "炭火家本舗なんばや",
+};
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // 旧 teleapo-feat-* URL → 新 URL に 301 リダイレクト
+  const teleapoMatch = pathname.match(/^\/feature\/(teleapo-feat-[^/]+)\/?$/);
+  if (teleapoMatch) {
+    const oldId = decodeURIComponent(teleapoMatch[1]);
+    const newId = TELEAPO_FEAT_REDIRECTS[oldId];
+    if (newId) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/feature/${encodeURIComponent(newId)}`;
+      return NextResponse.redirect(url, 301);
+    }
+  }
 
   // 削除済み特集記事 (294件) → /feature にリダイレクト (301 Permanent)
   // 404 を返すと Google から「死に URL」扱いされ、関連性のあった

@@ -20,12 +20,12 @@ const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 
 // 6記事の情報（行番号順）
 const articles = [
-  { row: 140, name: 'ルーラル', url: 'https://machinowa.tokyo/feature/teleapo-feat-ルラル' },
-  { row: 141, name: '炭や。よつ葉', url: 'https://machinowa.tokyo/feature/teleapo-feat-炭やよつ葉' },
-  { row: 142, name: 'OWL(営業時間状況で変わります)', url: 'https://machinowa.tokyo/feature/teleapo-feat-owl営業時間状況で変わります' },
-  { row: 143, name: 'あんばい 食楽厨房', url: 'https://machinowa.tokyo/feature/teleapo-feat-あんばい-食楽厨房' },
-  { row: 144, name: '久留米 和洋/創作酒場 晩餐-Bansun-', url: 'https://machinowa.tokyo/feature/teleapo-feat-久留米-和洋創作酒場-晩餐-bansun-' },
-  { row: 145, name: '炭火家本舗 なんばや', url: 'https://machinowa.tokyo/feature/teleapo-feat-炭火家本舗-なんばや' },
+  { row: 140, name: 'ルーラル', url: 'https://machinowa.tokyo/feature/%E3%83%AB%E3%83%BC%E3%83%A9%E3%83%AB' },
+  { row: 141, name: '炭や。よつ葉', url: 'https://machinowa.tokyo/feature/%E7%82%AD%E3%82%84%E3%82%88%E3%81%A4%E8%91%89' },
+  { row: 142, name: 'OWL(営業時間状況で変わります)', url: 'https://machinowa.tokyo/feature/OWL' },
+  { row: 143, name: 'あんばい 食楽厨房', url: 'https://machinowa.tokyo/feature/%E3%81%82%E3%82%93%E3%81%B0%E3%81%84%E9%A3%9F%E6%A5%BD%E5%8E%A8%E6%88%BF' },
+  { row: 144, name: '久留米 和洋/創作酒場 晩餐-Bansun-', url: 'https://machinowa.tokyo/feature/%E6%99%A9%E9%A4%90-Bansun' },
+  { row: 145, name: '炭火家本舗 なんばや', url: 'https://machinowa.tokyo/feature/%E7%82%AD%E7%81%AB%E5%AE%B6%E6%9C%AC%E8%88%97%E3%81%AA%E3%82%93%E3%81%B0%E3%82%84' },
 ];
 
 // 1. W1 / X1 ヘッダー書き込み

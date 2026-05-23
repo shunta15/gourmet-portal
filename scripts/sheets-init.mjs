@@ -22,12 +22,12 @@ const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 // 既存6記事の情報
 // 注意: source_row（トスアップ元シートの行）は実データを見て後で埋める
 const existingArticles = [
-  { type: 'feature', name: 'ルーラル', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-ルラル' },
-  { type: 'feature', name: '炭や。よつ葉', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-炭やよつ葉' },
-  { type: 'feature', name: 'OWL(営業時間状況で変わります)', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-owl営業時間状況で変わります' },
-  { type: 'feature', name: 'あんばい 食楽厨房', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-あんばい-食楽厨房' },
-  { type: 'feature', name: '久留米 和洋/創作酒場 晩餐-Bansun-', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-久留米-和洋創作酒場-晩餐-bansun-' },
-  { type: 'feature', name: '炭火家本舗 なんばや', mapsUrl: '', url: 'https://machinowa.tokyo/feature/teleapo-feat-炭火家本舗-なんばや' },
+  { type: 'feature', name: 'ルーラル', mapsUrl: '', url: 'https://machinowa.tokyo/feature/%E3%83%AB%E3%83%BC%E3%83%A9%E3%83%AB' },
+  { type: 'feature', name: '炭や。よつ葉', mapsUrl: '', url: 'https://machinowa.tokyo/feature/%E7%82%AD%E3%82%84%E3%82%88%E3%81%A4%E8%91%89' },
+  { type: 'feature', name: 'OWL(営業時間状況で変わります)', mapsUrl: '', url: 'https://machinowa.tokyo/feature/OWL' },
+  { type: 'feature', name: 'あんばい 食楽厨房', mapsUrl: '', url: 'https://machinowa.tokyo/feature/%E3%81%82%E3%82%93%E3%81%B0%E3%81%84%E9%A3%9F%E6%A5%BD%E5%8E%A8%E6%88%BF' },
+  { type: 'feature', name: '久留米 和洋/創作酒場 晩餐-Bansun-', mapsUrl: '', url: 'https://machinowa.tokyo/feature/%E6%99%A9%E9%A4%90-Bansun' },
+  { type: 'feature', name: '炭火家本舗 なんばや', mapsUrl: '', url: 'https://machinowa.tokyo/feature/%E7%82%AD%E7%81%AB%E5%AE%B6%E6%9C%AC%E8%88%97%E3%81%AA%E3%82%93%E3%81%B0%E3%82%84' },
 ];
 
 // 1. タブが既に存在するかチェック

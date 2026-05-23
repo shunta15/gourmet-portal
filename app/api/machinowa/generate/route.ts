@@ -213,12 +213,12 @@ GBPが取れていない場合は、エリア固有の情報を含めず抽象�
 
 # 出力形式
 
-idは "teleapo-feat-${slugify(storeName)}" 固定。
+idは "${storeName}" 固定（店舗名そのまま。teleapo-feat- プレフィックスは付けない）。
 必ず以下の TypeScript オブジェクトをコードブロックのみで出力してください:
 
 \`\`\`typescript
 {
-  id: "teleapo-feat-${slugify(storeName)}",
+  id: "${storeName}",
   no: "",
   articleType: "guide" as const,
   kicker: "（店舗名のローマ字大文字。例: QUALIA MEINOHAMA）",
@@ -453,7 +453,7 @@ export async function POST(req: NextRequest) {
       const generated = await generateWithClaude(prompt);
       if (!generated) throw new Error("Claude returned empty content");
 
-      const id = `teleapo-feat-${slugify(storeName)}`;
+      const id = storeName;
 
       // 既存ファイルを取得して末尾に追記
       const token = process.env.GITHUB_TOKEN;
