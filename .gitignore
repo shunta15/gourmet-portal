@@ -33,6 +33,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Service account JSON keys（secrets は routine prompt に埋め込む方式のため git には入れない）
+/automation/secrets/sa.json
+/automation/secrets/*.json
+/automation/secrets/*.txt
+
 # vercel
 .vercel
 
