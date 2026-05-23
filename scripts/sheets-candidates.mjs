@@ -87,9 +87,13 @@ for (let i = 0; i < maxLen; i++) {
     continue;
   }
 
+  // W/Y 列が「済」「エラー: ...」のどちらかなら処理済扱い（再試行しない）
+  const featProcessed = wDone === '済' || wDone.startsWith('エラー');
+  const restProcessed = yDone === '済' || yDone.startsWith('エラー');
+
   if (isFeat) {
     featOkTotal++;
-    if (wDone) {
+    if (featProcessed) {
       featDoneTotal++;
     } else {
       featCandidates.push({ sourceRow, name, url, pStat: p, uStat: u });
@@ -97,7 +101,7 @@ for (let i = 0; i < maxLen; i++) {
   }
   if (isRest) {
     restOkTotal++;
-    if (yDone) {
+    if (restProcessed) {
       restDoneTotal++;
     } else {
       restCandidates.push({ sourceRow, name, url, pStat: p, uStat: u });

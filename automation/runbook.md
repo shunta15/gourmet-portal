@@ -131,15 +131,37 @@ git push origin main
 
 ## f. スプシ書き戻し
 
+成功時:
 ```bash
 node scripts/sheets-mark-done.mjs --type=feature --row=<行> --url=<生成URL>
 # または
 node scripts/sheets-mark-done.mjs --type=restaurant --row=<行> --url=<生成URL>
 ```
 
+エラー時（GBP取得失敗 / 画像取得失敗 / ビルド失敗 / push失敗など）:
+```bash
+node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="GBP取得失敗"
+```
+
 書き戻し列:
-- feature → W/X 列（処理状態 / URL）
-- restaurant → Y/Z 列
+- feature → W=ステータス / X=URL（成功時のみ）
+- restaurant → Y=ステータス / Z=URL（成功時のみ）
+
+エラー状態（W=「エラー: ...」）は次回以降スキップされる。
+人間がスプシでエラー店舗を確認し、原因解消後にW列をクリアすれば再試行対象になる。
+
+## g. メール通知（必須）
+
+実行結果を Gmail MCP で `linkateinc315@link8.info` に必ず送信:
+
+- 件名（成功 / 候補0件）: `[マチノワ自動化] HH:00JST 結果 (処理X件 / エラーY件)`
+- 件名（致命エラー時）: `🚨[マチノワ自動化] HH:00JST 致命エラー`
+- 本文:
+  - 実行時刻
+  - 処理件数（成功 / エラー / スキップ）
+  - 各記事の URL（`machinowa.tokyo/feature/<店舗名>`）
+  - エラー詳細（店舗名 + 失敗理由）
+  - 残候補数
 
 ---
 
