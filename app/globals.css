@@ -613,7 +613,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   border-bottom:1px solid var(--line);
   font:400 14px/1.6 var(--body);
 }
-.detail-specs > div{min-width:0; word-break:break-word}
+.detail-specs > div{min-width:0; word-break:keep-all; overflow-wrap:break-word; line-break:strict}
 .detail-specs b{
   display:block;
   font:500 10px/1.5 var(--mono);
@@ -1059,6 +1059,28 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   word-break:keep-all;
   overflow-wrap:break-word;
   line-height:1.05;
+}
+
+/* 6. 日本語の禁則・文節改行（全特集記事の見出し・本文の不自然な行末を防ぐ）
+   word-break:auto-phrase は Chrome 119+/Safari 17.4+ で文節区切り改行になる
+   非対応ブラウザは line-break:strict + keep-all で行末禁則のみ効かせる */
+.feat-hero h1,
+.feat-hero .bot p,
+.lede,
+.section-head h2,
+.section-head p,
+.rank-item .info h3,
+.rank-item .desc,
+.course-stop .info h3,
+.course-stop .desc,
+.quote-block blockquote,
+.article-body p,
+.detail-meta,
+.detail-content p{
+  line-break:strict;
+  word-break:auto-phrase;
+  overflow-wrap:break-word;
+  hanging-punctuation:allow-end;
 }
 @media (max-width: 768px){
   .feat-hero h1{
