@@ -4,15 +4,18 @@
 //
 // 監視シート: 「詰めOKリスト」（IMPORTRANGE + QUERY で詰めOKに絞り込み済み）
 //   A〜V: QUERY 結果（読み取り専用）
-//     D 店舗名 / J Maps URL / P 詰めステータス / U ステータス
+//     D=店舗名 / J=Maps URL / P=詰めステータス / U=ステータス
 //   W〜Z: 自動化が書き込む管理列
-//     W feature済フラグ / X feature URL / Y restaurant済フラグ / Z restaurant URL
+//     W=feature済フラグ / X=feature URL / Y=restaurant済フラグ / Z=restaurant URL
 //
 // 未処理判定:
-//   feature    → W列空（P=詰めOK は QUERY で暗黙絞り込み済）
-//   restaurant → Y列空 かつ U=商談完了
+//   feature    → P='詰めOK' かつ W が空
+//   restaurant → U='商談完了' かつ Y が空
+//   W/Y が「済」「エラー:」「処理中:」のいずれかで始まる行は処理済扱い（次回スキップ）
 //
 // 行範囲: row >= MIN_SOURCE_ROW（145以下は永久スキップ）
+//
+// race防止: A:Z を 1 リクエストで取得（行ズレ防止）
 
 import { google } from 'googleapis';
 import { readFileSync } from 'fs';
@@ -28,10 +31,26 @@ const SHEET_NAME = '詰めOKリスト';
 // row 145 以下は「時すでに遅し」の旧案件のため永久スキップ
 const MIN_SOURCE_ROW = 146;
 
+// 文字列正規化: trim + 全角空白除去 + 改行除去 + ゼロ幅除去 + 先頭シングルクォート除去
+function normalize(v) {
+  if (v == null) return '';
+  return String(v)
+    .replace(/^'+/, '')               // 先頭シングルクォート（Sheets が prefix する場合がある）
+    .replace(/[​-‍﻿]/g, '')  // ゼロ幅文字
+    .replace(/[　\s]+/g, ' ')     // 全角・半角空白を統合
+    .trim();
+}
+
+// 処理済扱いとなるステータス（済 / エラー: / 処理中:）
+function isProcessed(statusCell) {
+  const v = normalize(statusCell);
+  return v === '済' || v.startsWith('エラー') || v.startsWith('処理中');
+}
+
 const credentials = JSON.parse(readFileSync(KEY_PATH, 'utf-8'));
 const auth = new google.auth.GoogleAuth({
   credentials,
-  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
 });
 const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 
@@ -39,26 +58,14 @@ console.log('🔍 候補検出 (dry-run)');
 console.log(`📄 監視シート: 「${SHEET_NAME}」`);
 console.log('');
 
-// 詰めOKリストから D, J, P, U, W, X, Y, Z 列を batchGet
-const src = await sheets.spreadsheets.values.batchGet({
+// A:Z を 1 レンジで取得（race / 行ズレ防止）
+const res = await sheets.spreadsheets.values.get({
   spreadsheetId: SHEET_ID,
-  ranges: [
-    `${SHEET_NAME}!D2:D`,  // 店舗名
-    `${SHEET_NAME}!J2:J`,  // Maps URL
-    `${SHEET_NAME}!P2:P`,  // 詰めステータス
-    `${SHEET_NAME}!U2:U`,  // ステータス
-    `${SHEET_NAME}!W2:W`,  // feature 処理済
-    `${SHEET_NAME}!X2:X`,  // feature URL
-    `${SHEET_NAME}!Y2:Y`,  // restaurant 処理済
-    `${SHEET_NAME}!Z2:Z`,  // restaurant URL
-  ],
+  range: `${SHEET_NAME}!A2:Z`,
+  valueRenderOption: 'FORMATTED_VALUE',
 });
-const cols = src.data.valueRanges.map(vr =>
-  (vr.values || []).map(r => (r[0] || '').toString().trim())
-);
-const [names, urls, pStats, uStats, featDone, featUrl, restDone, restUrl] = cols;
-const maxLen = Math.max(...cols.map(c => c.length));
-console.log(`📊 「${SHEET_NAME}」: ${maxLen}行`);
+const rows = res.data.values || [];
+console.log(`📊 「${SHEET_NAME}」: ${rows.length}行`);
 console.log('');
 
 const featCandidates = [];
@@ -67,33 +74,34 @@ let featOkTotal = 0, restOkTotal = 0;
 let featDoneTotal = 0, restDoneTotal = 0;
 let skippedOldRows = 0;
 
-for (let i = 0; i < maxLen; i++) {
-  const name = names[i] || '';
-  if (!name) continue;
-  const url = urls[i] || '';
-  const p = pStats[i] || '';
-  const u = uStats[i] || '';
-  const wDone = featDone[i] || '';
-  const yDone = restDone[i] || '';
+// 列 index（0始まり）: D=3, J=9, P=15, U=20, W=22, X=23, Y=24, Z=25
+const IDX = { NAME: 3, URL: 9, P: 15, U: 20, W: 22, X: 23, Y: 24, Z: 25 };
+
+for (let i = 0; i < rows.length; i++) {
+  const r = rows[i] || [];
+  const name = normalize(r[IDX.NAME]);
+  const url  = normalize(r[IDX.URL]);
+  const p    = normalize(r[IDX.P]);
+  const u    = normalize(r[IDX.U]);
+  const wDone = r[IDX.W] || '';
+  const yDone = r[IDX.Y] || '';
   const sourceRow = i + 2;
 
-  // 詰めOKリストは QUERY で詰めOKだけが入っている前提だが、念のため P列もチェック
+  // 詰めOK / 商談完了 のどちらでもない行（空白行や別ステータス）はスキップ
   const isFeat = p === '詰めOK';
   const isRest = u === '商談完了';
+  if (!isFeat && !isRest) continue;
+  if (!name && !url) continue;  // どちらも空なら QUERY 異常行
 
-  // row < MIN_SOURCE_ROW は永久スキップ
+  // row 145 以下は永久スキップ
   if (sourceRow < MIN_SOURCE_ROW) {
-    if (isFeat || isRest) skippedOldRows++;
+    skippedOldRows++;
     continue;
   }
 
-  // W/Y 列が「済」「エラー: ...」のどちらかなら処理済扱い（再試行しない）
-  const featProcessed = wDone === '済' || wDone.startsWith('エラー');
-  const restProcessed = yDone === '済' || yDone.startsWith('エラー');
-
   if (isFeat) {
     featOkTotal++;
-    if (featProcessed) {
+    if (isProcessed(wDone)) {
       featDoneTotal++;
     } else {
       featCandidates.push({ sourceRow, name, url, pStat: p, uStat: u });
@@ -101,7 +109,7 @@ for (let i = 0; i < maxLen; i++) {
   }
   if (isRest) {
     restOkTotal++;
-    if (restProcessed) {
+    if (isProcessed(yDone)) {
       restDoneTotal++;
     } else {
       restCandidates.push({ sourceRow, name, url, pStat: p, uStat: u });
@@ -115,8 +123,9 @@ if (skippedOldRows > 0) {
 }
 
 console.log(`📊 ステータス別（row >= ${MIN_SOURCE_ROW}）:`);
-console.log(`   詰めOK: ${featOkTotal}件 (済 ${featDoneTotal} / 未処理 ${featCandidates.length})`);
-console.log(`   商談完了: ${restOkTotal}件 (済 ${restDoneTotal} / 未処理 ${restCandidates.length})`);
+console.log(`   詰めOK: ${featOkTotal}件 (処理済 ${featDoneTotal} / 未処理 ${featCandidates.length})`);
+console.log(`   商談完了: ${restOkTotal}件 (処理済 ${restDoneTotal} / 未処理 ${restCandidates.length})`);
+console.log(`   ※ 処理済 = 「済」「エラー:」「処理中:」のいずれか`);
 console.log('');
 
 if (featCandidates.length > 0) {

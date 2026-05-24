@@ -1,6 +1,6 @@
 # マチノワ記事自動生成 Runbook
 
-**最終更新: 2026-05-24**
+**最終更新: 2026-05-24（複数エージェント監査反映済）**
 
 このドキュメントは **schedule skill（CronCreate / cowork）によるリモートエージェント** が起動時に従う手順書。
 記事の中身の書き方は [`agent-teams/decisions/machinowa-article-spec.md`](../agent-teams/decisions/machinowa-article-spec.md) を必ず参照する。
@@ -10,38 +10,45 @@
 ## 全体フロー
 
 ```
-1. 環境準備
-   - サービスアカウント鍵を /automation/secrets/sa.json に配置（routine prompt の base64 を decode）
-   - 必要なら npm install
-
-2. 候補抽出（軽量）
-   - node scripts/sheets-candidates.mjs
-   - 出力: feature / restaurant の未処理候補と件数
-
-3. 候補がなければ通知だけして終了
-
-4. 候補がある場合、上限 MAX=3 件まで処理（暴走防止）
+0. 環境準備（鍵配置・npm install）
+1. 規約読み込み（spec.md / runbook.md を必ず開く）
+2. 候補抽出（node scripts/sheets-candidates.mjs）
+3. 候補が0件なら Step 8 のメール通知だけ実行して終了
+4. 候補がある場合、上限 MAX=3 件まで処理
    各候補で以下を順に実行:
-
-   a. GBP（一次情報）確認
-   b. 画像取得
-   c. 記事生成（machinowa-article-spec.md に従う）
-   d. ビルド検証
-   e. commit & push
-   f. スプシ書き戻し
-
-5. 完了通知（メール）
-   - 処理件数・URL一覧・残候補数を linkateinc315@link8.info へ
+   a. ロック取得（処理中マーク）
+   b. GBP（一次情報）確認
+   c. 画像取得（POINT 01/02 用 + 検証）
+   d. 記事生成（machinowa-article-spec.md に従う）
+   e. ビルド検証
+   f. 禁止語grep検査（commit前ガード）
+   g. commit & push（rebase + リトライ）
+   h. スプシ書き戻し（成功 or エラー）
+   i. 5秒スリープ
+5. 完了通知（必ずメール送信）
 ```
 
 ---
 
-## a. GBP 確認（一次情報）
+## a. ロック取得（race防止）
+
+各候補処理の **最初** にスプシ W/Y 列へ「処理中: ...」を書き込み、他 routine が同じ行を掴まないようにする。
+
+```bash
+node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=processing
+# または
+node scripts/sheets-mark-done.mjs --type=restaurant --row=<行> --status=processing
+```
+
+- これにより W/Y に「処理中: YYYY-MM-DD HH:MM JST」が入り、次回 candidates 抽出で **処理済扱い** となりスキップされる
+- 万一処理中に CCR がクラッシュしても、人間がスプシで「処理中:」をクリアすれば再試行対象に戻る
+
+## b. GBP 確認（一次情報）
 
 **店舗名から場所・業種・住所を推測することは絶対禁止。** スプシに貼られた Maps URL のみが事実ソース。
 
 ```bash
-curl -L --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36" "<Maps URL>" -o /tmp/gbp.html
+curl -L --max-time 30 --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36" "<Maps URL>" -o /tmp/gbp.html
 ```
 
 抽出する項目:
@@ -52,40 +59,45 @@ curl -L --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKi
 - `grass-cs/` プレフィックス → 店舗写真 URL
 
 ### GBP が取れなかった場合
-- **記事を書かない。スキップして次の候補へ**
-- 「住所不明だから抽象的に書く」は禁止（過去のハルシネ事故の原因）
+- スプシに `--status=error --reason="GBP取得失敗"` を書いて次の候補へ
+- 「住所不明だから抽象的に書く」は絶対禁止（過去のハルシネ事故の原因）
 
 ---
 
-## b. 画像取得
+## c. 画像取得
 
 画像ソース許容範囲: GBP / 公式HP / 公式Instagram / オーナー提供（その店舗の実物のみ。Unsplash 等の汎用画像は絶対禁止）
 
-詳細規約は [`agent-teams/decisions/machinowa-article-spec.md`](../agent-teams/decisions/machinowa-article-spec.md) §16 を参照。
-
-### GBP 画像の取得手順
-1. Maps HTML から `https://lh3.googleusercontent.com/...=grass-cs/...` を抽出
-2. URL 末尾を `=w1400-h800-p-k-no` に書き換えてサイズ拡張
-3. `curl` でダウンロード:
+### 取得手順（優先順）
+1. **GBP の grass-cs/ 画像**を抽出（最優先）
+   - URL 末尾を `=w1400-h800-p-k-no` に書き換えてサイズ拡張
+2. GBP に 2 枚以上ない場合は **公式ホームページ**から取得
+3. それでも揃わない場合は **公式 Instagram**から取得
 
 ```bash
 mkdir -p public/restaurants/teleapo-<slug>
-curl -o public/restaurants/teleapo-<slug>/hero.jpg "<image url>"
-curl -o public/restaurants/teleapo-<slug>/point2.jpg "<image url>"
+curl --max-time 30 -o public/restaurants/teleapo-<slug>/hero.jpg "<image url>"
+curl --max-time 30 -o public/restaurants/teleapo-<slug>/point2.jpg "<image url>"
 ```
 
+### 画像検証（必須）
+1枚ごとに以下を確認:
+- **ファイルサイズ ≥ 20KB**（小さすぎる = エラーページや透明 PNG の可能性）
+- `file public/restaurants/teleapo-<slug>/hero.jpg` で `JPEG image data` または `PNG image data` を確認
+- 失敗したら別の URL を試す、それでも揃わなければスキップ
+
 ### 画像配置先
-- `public/restaurants/teleapo-<slug>/hero.jpg` （= POINT 01 用にも流用）
+- `public/restaurants/teleapo-<slug>/hero.jpg`（POINT 01 用にも流用）
 - `public/restaurants/teleapo-<slug>/point2.jpg`
 - POINT 03〜05 は不要（spec.md §16 で `[]` 指定）
 
 ### 必須・任意
-- 必須: hero / POINT 01 / POINT 02
-- 1枚も揃わない場合は **記事生成スキップ**
+- 必須: hero / POINT 01 / POINT 02 の実画像 2枚
+- POINT 01・02 で実画像が 0 枚しか揃わない場合: **記事生成スキップ**（`--status=error --reason="画像取得失敗"`）
 
 ---
 
-## c. 記事生成
+## d. 記事生成
 
 **spec.md を必ず開いて、構成・字数・トーン・禁止表現に従う。**
 
@@ -96,63 +108,104 @@ curl -o public/restaurants/teleapo-<slug>/point2.jpg "<image url>"
 - §17: ID/URL 命名規約
 - §18: ファイル出力形式（TypeScript object）
 
+### ID 衝突回避
+ID は店舗名のみだが、既存記事と衝突する場合（同名チェーン等）は `<店舗名>-<市区町村>` で suffix を付ける。
+例: `スターバックス` 既存 → 新規は `スターバックス-渋谷` のように。
+
 ### 出力先
 - 特集記事: [`lib/teleapo-features.ts`](../lib/teleapo-features.ts) の末尾 `};` 直前に追記
 - 店舗紹介: [`lib/teleapo-restaurants.ts`](../lib/teleapo-restaurants.ts)
 
-### ID
-- 店舗名のみ（日本語OK・プレフィックス禁止・注釈除外）
-- 詳細は spec.md §17
-
 ---
 
-## d. ビルド検証
+## e. ビルド検証
 
 ```bash
 npm run build
 ```
 
 - 型エラー・コンパイルエラーがないことを確認
-- エラーなら `git checkout` で revert、次の候補へスキップ
+- エラーなら以下を実行して次の候補へスキップ:
+  - `git checkout -- lib/teleapo-features.ts`（ファイル revert）
+  - `rm -rf public/restaurants/teleapo-<slug>/`（**画像ディレクトリも削除**、ゴミ防止）
+  - `node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="ビルド失敗: <要約>"`
 - TypeScript で詰まりやすい点:
   - 文中で `"` を使うと構文エラー → 日本語の `「」` を使う（spec.md §19）
 
 ---
 
-## e. commit & push
+## f. 禁止語 grep 検査（commit前ガード）
+
+spec.md §14 の禁止表現を含む記事はコミットしない。**commit直前に必ず実行**:
 
 ```bash
-git add lib/teleapo-features.ts public/restaurants/teleapo-<slug>/
-git commit -m "feat(teleapo): 特集記事を自動生成 – <店舗名>"
-git push origin main
+PATTERNS='(素朴|派手さはない|奇をてらった.*ではない|日本一|絶品|最高の|呼び込みについて)'
+if grep -E "$PATTERNS" lib/teleapo-features.ts; then
+  echo "禁止語検出 → revert"
+  git checkout -- lib/teleapo-features.ts
+  rm -rf public/restaurants/teleapo-<slug>/
+  node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="禁止語含む: <パターン>"
+  # 次の候補へ
+fi
 ```
 
 ---
 
-## f. スプシ書き戻し
+## g. commit & push
 
-成功時:
+```bash
+git add lib/teleapo-features.ts public/restaurants/teleapo-<slug>/
+git commit -m "feat(teleapo): 特集記事を自動生成 – <店舗名>"
+
+# push（リモート最新を取り込んでから）
+git pull --rebase origin main
+if ! git push origin main; then
+  # 1度だけリトライ（rebase conflict 等への耐性）
+  git pull --rebase origin main
+  if ! git push origin main; then
+    git reset --hard HEAD~1
+    rm -rf public/restaurants/teleapo-<slug>/
+    node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="git push失敗: <要約>"
+    # 次の候補へ
+  fi
+fi
+```
+
+---
+
+## h. スプシ書き戻し
+
+成功時（ロック「処理中:」を「済」+URL に上書き）:
 ```bash
 node scripts/sheets-mark-done.mjs --type=feature --row=<行> --url=<生成URL>
 # または
 node scripts/sheets-mark-done.mjs --type=restaurant --row=<行> --url=<生成URL>
 ```
 
-エラー時（GBP取得失敗 / 画像取得失敗 / ビルド失敗 / push失敗など）:
-```bash
-node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="GBP取得失敗"
-```
+エラー時はそれぞれの Step で個別に書き戻し済み（§e / §f / §g 参照）。
 
 書き戻し列:
 - feature → W=ステータス / X=URL（成功時のみ）
 - restaurant → Y=ステータス / Z=URL（成功時のみ）
 
-エラー状態（W=「エラー: ...」）は次回以降スキップされる。
+エラー状態は次回以降スキップされる。
 人間がスプシでエラー店舗を確認し、原因解消後にW列をクリアすれば再試行対象になる。
 
-## g. メール通知（必須）
+---
 
-実行結果を Gmail MCP で `linkateinc315@link8.info` に必ず送信:
+## i. 5秒スリープ
+
+```bash
+sleep 5
+```
+
+連続実行による Maps / Sheets API レート制限・bot 検知回避。
+
+---
+
+## 5. 完了メール通知（必須）
+
+実行結果を Gmail MCP で `linkateinc315@link8.info` に**必ず送信**:
 
 - 件名（成功 / 候補0件）: `[マチノワ自動化] HH:00JST 結果 (処理X件 / エラーY件)`
 - 件名（致命エラー時）: `🚨[マチノワ自動化] HH:00JST 致命エラー`
@@ -163,15 +216,9 @@ node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --re
   - エラー詳細（店舗名 + 失敗理由）
   - 残候補数
 
----
-
-## 完了通知
-
-routine 完了時に以下を stdout に出力（routine 経由でメール送信される）:
-- 処理した件数
-- 各記事の URL
-- エラー件数（あれば原因）
-- 残候補数
+### Gmail 送信失敗時
+- **try/catch でラップ**、送信失敗しても stdout には必ず結果を出力（routine 全体は成功扱いで終わる）
+- Gmail 障害で routine が落ちると次回起動時に状態が把握できなくなる
 
 ---
 
@@ -180,19 +227,30 @@ routine 完了時に以下を stdout に出力（routine 経由でメール送�
 0. **🚨 監視シートは「詰めOKリスト」のみ**（絶対忘れない・2026-05-24 ユーザー明言）
    - スプシ ID: `1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk`
    - シート名: `詰めOKリスト`（QUERY 絞り込み済み）
-   - **トスアップ元シートは見ない**（全店舗が入っていて対象外案件も含む）
-   - 列: A〜V QUERY結果（読み取り） / W〜Z 自動化書き込み
-     - W feature済 / X feature URL / Y restaurant済 / Z restaurant URL
+   - **トスアップ元シートは見ない**
+   - 列: A〜V QUERY結果 / W〜Z 自動化書き込み（W feature済 / X feature URL / Y restaurant済 / Z restaurant URL）
 1. **自動化対象は スプシ row 146 以降のみ**（row 145 以下は永久スキップ）
-   - フィルタは `scripts/sheets-candidates.mjs` の `MIN_SOURCE_ROW = 146` で実装済
-   - 旧案件は「時すでに遅し」で対象外（2026-05-24 ユーザー明言）
 2. **GBP の住所が確認できない時は記事を作らない**（場所推測禁止）
 3. **店舗名から場所・業種・客層を推測することは絶対禁止**
-4. **画像は実店舗のもののみ**（Unsplash 等の汎用画像 NG）
-5. **失礼な表現禁止**: spec.md §14 の禁止表現リスト遵守
+4. **画像は実店舗のもののみ + 20KB以上検証**（Unsplash 等 NG、プレースホルダ NG）
+5. **失礼な表現禁止**: spec.md §14 + 禁止語 grep でガード
 6. **noindex のまま**: FEATURES 一覧に載せない、URL だけ存在
 7. **1 回の実行で最大 3 件まで**（暴走防止）
 8. **各処理の間は最低 5 秒空ける**
+9. **必ずロック取得 → 必ずスプシ書き戻し → 必ずメール送信**（無音失敗禁止）
+
+---
+
+## 過去事故テーブル（同じ失敗をしない）
+
+| 事故 | 教訓 | 防止策 |
+|---|---|---|
+| ルーラル → 福岡・志免と書いた（実：岸和田） | 店舗名連想禁止 | GBP 必須 |
+| 炭や。よつ葉 → 博多と書いた（実：寝屋川） | 同上 | 同上 |
+| OWL → 博多と書いた（実：門司） | 同上 | 同上 |
+| 晩餐-Bansun- が「白身魚のカルパッチョ風」と勝手にメニュー描写 | メニュー推測禁止 | spec §15 割愛ルール |
+| 晩餐-Bansun- POINT 03 に「派手さはない」 | 禁止表現 | spec §14 + grep ガード（§f） |
+| OWL の本文に「（営業時間状況で変わります）」が残った | ID/本文ともに注釈除外 | spec §17 + lede/desc にも注釈入れない |
 
 ---
 
