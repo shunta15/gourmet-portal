@@ -2,24 +2,29 @@
 // 詰めOKリスト の W/X (feature) または Y/Z (restaurant) に処理結果を書き込む
 //
 // 使い方:
-//   ロック取得（処理開始時）:
+//   ロック取得（処理開始時、空 or「処理中:」古い のみ上書き）:
 //     node scripts/sheets-mark-done.mjs --type=feature --row=146 --status=processing
-//   成功:
+//   成功（冪等: 既に「済」なら no-op）:
 //     node scripts/sheets-mark-done.mjs --type=feature --row=146 --url=https://...
-//     node scripts/sheets-mark-done.mjs --type=feature --row=146 --status=done --url=https://...
-//   エラー:
+//   エラー（自動日付付与・24時間後にリトライ対象）:
 //     node scripts/sheets-mark-done.mjs --type=feature --row=146 --status=error --reason="GBP取得失敗"
+//   永久エラー（禁止語など、二度と試行しない）:
+//     node scripts/sheets-mark-done.mjs --type=feature --row=146 --status=permanent_error --reason="禁止語含む"
 //
 // 列マッピング:
 //   feature    → W=ステータス, X=URL（成功時のみ）
 //   restaurant → Y=ステータス, Z=URL（成功時のみ）
 //
 // ステータス値:
-//   "処理中: YYYY-MM-DD HH:MM JST" — ロック取得（race防止用）
-//   "済"                            — 成功
-//   "エラー: 理由"                   — 失敗
+//   "処理中: YYYY-MM-DD HH:MM JST" — 一時ロック
+//   "済"                            — 成功（冪等保護対象）
+//   "エラー: 理由 (YYYY-MM-DD)"      — 24時間後にリトライ対象
+//   "永久エラー: 理由"               — 二度とリトライしない
 //
-// 「処理中:」「済」「エラー:」のいずれも次回 candidates 抽出時にスキップ対象。
+// 冪等性:
+//   - 既に「済」のセルは --force なしでは上書きしない
+//   - 既に「永久エラー」のセルも --force なしでは上書きしない
+//   - 「処理中」「エラー」「空」は上書き可能
 
 import { google } from 'googleapis';
 import { readFileSync } from 'fs';
@@ -29,7 +34,7 @@ import { dirname, join } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
 const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
-const MIN_SOURCE_ROW = 146;  // candidates.mjs と必ず一致させる
+const MIN_SOURCE_ROW = 146;
 
 const args = Object.fromEntries(
   process.argv.slice(2).map(a => {
@@ -38,7 +43,7 @@ const args = Object.fromEntries(
   })
 );
 
-const { type, row, url, reason } = args;
+const { type, row, url, reason, force } = args;
 let { status = url ? 'done' : null } = args;
 
 if (!['feature', 'restaurant'].includes(type)) {
@@ -50,55 +55,43 @@ if (!row || isNaN(row)) {
   process.exit(1);
 }
 if (Number(row) < MIN_SOURCE_ROW) {
-  console.error(`❌ row ${row} は MIN_SOURCE_ROW=${MIN_SOURCE_ROW} 未満。書き戻し拒否（旧案件保護）`);
+  console.error(`❌ row ${row} は MIN_SOURCE_ROW=${MIN_SOURCE_ROW} 未満。書き戻し拒否`);
   process.exit(1);
 }
 if (!status) {
-  console.error('❌ --status=done|processing|error のいずれか、もしくは --url=... を指定');
+  console.error('❌ --status=done|processing|error|permanent_error または --url=... を指定');
   process.exit(1);
 }
-if (!['done', 'processing', 'error'].includes(status)) {
-  console.error(`❌ --status は done | processing | error。受け取った値: ${status}`);
+if (!['done', 'processing', 'error', 'permanent_error'].includes(status)) {
+  console.error(`❌ --status は done|processing|error|permanent_error。受け取った値: ${status}`);
   process.exit(1);
 }
 if (status === 'done' && !url) {
   console.error('❌ --status=done では --url=<生成URL> 必須');
   process.exit(1);
 }
-if (status === 'error' && !reason) {
-  console.error('❌ --status=error では --reason="..." 必須');
+if ((status === 'error' || status === 'permanent_error') && !reason) {
+  console.error('❌ エラー時は --reason="..." 必須');
   process.exit(1);
 }
 
 const doneCol = type === 'feature' ? 'W' : 'Y';
 const urlCol  = type === 'feature' ? 'X' : 'Z';
 
-// セルインジェクション防止: 先頭が = + - @ なら ' を前置
-const sanitizeCell = (s) => {
+// セルインジェクション防止
+const sanitize = (s) => {
   const v = String(s);
   return /^[=+\-@]/.test(v) ? `'${v}` : v;
 };
-// HYPERLINK 関数内の " エスケープ
 const escapeQuote = (s) => String(s).replace(/"/g, '""');
-
-let updates;
-if (status === 'done') {
-  updates = [
-    { range: `詰めOKリスト!${doneCol}${row}`, values: [['済']] },
-    { range: `詰めOKリスト!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(url)}","${escapeQuote(url)}")`]] },
-  ];
-} else if (status === 'processing') {
-  // ロック取得: JST 時刻を入れて競合の証跡を残す
-  const jst = new Date(Date.now() + 9 * 3600 * 1000).toISOString().replace('T', ' ').slice(0, 16);
-  updates = [
-    { range: `詰めOKリスト!${doneCol}${row}`, values: [[`処理中: ${jst} JST`]] },
-  ];
-} else {
-  // エラー時はステータス列のみ
-  updates = [
-    { range: `詰めOKリスト!${doneCol}${row}`, values: [[sanitizeCell(`エラー: ${reason}`)]] },
-  ];
-}
+const jstNow = () => {
+  const d = new Date(Date.now() + 9 * 3600 * 1000);
+  return d.toISOString().replace('T', ' ').slice(0, 16);
+};
+const jstDateOnly = () => {
+  const d = new Date(Date.now() + 9 * 3600 * 1000);
+  return d.toISOString().slice(0, 10);
+};
 
 try {
   const credentials = JSON.parse(readFileSync(KEY_PATH, 'utf-8'));
@@ -107,6 +100,47 @@ try {
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
   const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
+
+  // 冪等チェック: 現在のセル値を読み取る
+  const cur = await sheets.spreadsheets.values.get({
+    spreadsheetId: SHEET_ID,
+    range: `詰めOKリスト!${doneCol}${row}`,
+  });
+  const currentVal = (cur.data.values?.[0]?.[0] || '').toString().trim();
+
+  // 上書き禁止条件（--force で迂回可）
+  if (!force) {
+    if (currentVal === '済') {
+      console.log(`ℹ️  row ${row} ${type}: 既に「済」のため no-op (冪等保護)`);
+      process.exit(0);
+    }
+    if (currentVal.startsWith('永久エラー')) {
+      console.log(`ℹ️  row ${row} ${type}: 既に「永久エラー」のため no-op (人手解除待ち)`);
+      process.exit(0);
+    }
+  }
+
+  let updates;
+  if (status === 'done') {
+    updates = [
+      { range: `詰めOKリスト!${doneCol}${row}`, values: [['済']] },
+      { range: `詰めOKリスト!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(url)}","${escapeQuote(url)}")`]] },
+    ];
+  } else if (status === 'processing') {
+    updates = [
+      { range: `詰めOKリスト!${doneCol}${row}`, values: [[`処理中: ${jstNow()} JST`]] },
+    ];
+  } else if (status === 'permanent_error') {
+    updates = [
+      { range: `詰めOKリスト!${doneCol}${row}`, values: [[sanitize(`永久エラー: ${reason}`)]] },
+    ];
+  } else {
+    // error（24h後リトライ対象。日付付与）
+    updates = [
+      { range: `詰めOKリスト!${doneCol}${row}`, values: [[sanitize(`エラー: ${reason} (${jstDateOnly()})`)]] },
+    ];
+  }
+
   await sheets.spreadsheets.values.batchUpdate({
     spreadsheetId: SHEET_ID,
     requestBody: { valueInputOption: 'USER_ENTERED', data: updates },
@@ -116,8 +150,10 @@ try {
     console.log(`✅ row ${row} ${type}: ${doneCol}=済, ${urlCol}=${url}`);
   } else if (status === 'processing') {
     console.log(`🔒 row ${row} ${type}: ${doneCol}=処理中ロック取得`);
+  } else if (status === 'permanent_error') {
+    console.log(`⛔ row ${row} ${type}: ${doneCol}=永久エラー: ${reason}`);
   } else {
-    console.log(`⚠️  row ${row} ${type}: ${doneCol}=エラー: ${reason}`);
+    console.log(`⚠️  row ${row} ${type}: ${doneCol}=エラー: ${reason} (${jstDateOnly()}) ※24h後リトライ`);
   }
 } catch (e) {
   console.error(`❌ Sheets API 書き戻し失敗 (row ${row} ${type} status=${status}): ${e.message}`);

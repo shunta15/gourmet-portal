@@ -144,7 +144,8 @@ if grep -E "$PATTERNS" lib/teleapo-features.ts; then
   echo "禁止語検出 → revert"
   git checkout -- lib/teleapo-features.ts
   rm -rf public/restaurants/teleapo-<slug>/
-  node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="禁止語含む: <パターン>"
+  # 禁止語は永久エラー扱い（人手で記事品質判断が必要）
+  node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=permanent_error --reason="禁止語含む"
   # 次の候補へ
 fi
 ```
@@ -155,6 +156,15 @@ fi
 
 ```bash
 git add lib/teleapo-features.ts public/restaurants/teleapo-<slug>/
+
+# commit 前に差分が本当に存在するか確認（空コミット防止）
+if git diff --cached --quiet; then
+  echo "差分なし → 別 routine が先に書いた可能性"
+  rm -rf public/restaurants/teleapo-<slug>/
+  node scripts/sheets-mark-done.mjs --type=feature --row=<行> --status=error --reason="差分なし(競合)"
+  # 次の候補へ
+fi
+
 git commit -m "feat(teleapo): 特集記事を自動生成 – <店舗名>"
 
 # push（リモート最新を取り込んでから）
@@ -193,13 +203,14 @@ node scripts/sheets-mark-done.mjs --type=restaurant --row=<行> --url=<生成URL
 
 ---
 
-## i. 5秒スリープ
+## i. 5秒スリープ（強制実行）
 
 ```bash
 sleep 5
 ```
 
 連続実行による Maps / Sheets API レート制限・bot 検知回避。
+**prompt の文字列指示ではなく、必ず bash の `sleep 5` を実行すること**（モデル任せにしない）。
 
 ---
 
@@ -207,14 +218,19 @@ sleep 5
 
 実行結果を Gmail MCP で `linkateinc315@link8.info` に**必ず送信**:
 
-- 件名（成功 / 候補0件）: `[マチノワ自動化] HH:00JST 結果 (処理X件 / エラーY件)`
+- 件名（成功 / 候補0件）: `[マチノワ自動化] HH:00JST 結果 (処理X件 / エラーY件 / 累計エラーZ件)`
 - 件名（致命エラー時）: `🚨[マチノワ自動化] HH:00JST 致命エラー`
 - 本文:
   - 実行時刻
-  - 処理件数（成功 / エラー / スキップ）
+  - 処理件数（今回成功 / 今回エラー / スキップ）
   - 各記事の URL（`machinowa.tokyo/feature/<店舗名>`）
-  - エラー詳細（店舗名 + 失敗理由）
+  - 今回のエラー詳細（店舗名 + 失敗理由）
+  - **累計エラー件数**（sheets-candidates の出力から取得）
   - 残候補数
+
+### エラーステータスの種類
+- `エラー: 理由 (YYYY-MM-DD)` → 24時間経過後に **自動リトライ対象**
+- `永久エラー: 理由` → 二度と試行しない（禁止語含むなど。人手解除待ち）
 
 ### Gmail 送信失敗時
 - **try/catch でラップ**、送信失敗しても stdout には必ず結果を出力（routine 全体は成功扱いで終わる）
