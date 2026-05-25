@@ -45,6 +45,11 @@ node scripts/sheets-mark-done.mjs --type=restaurant --row=<行> --status=process
 
 ## b. GBP 確認（一次情報）
 
+**🚨 ユーザー明言（2026-05-26）: Maps URL が示す店舗が絶対的に正しい。**
+- 店舗名（D列）と Maps URL（J列）が食い違って見えても、Maps URL の店舗が事実
+- **必ず Maps URL に直接アクセス**して Google Maps の店舗ページから住所・業態・写真を取得する
+- 座標逆引き・店舗名再検索で「データ不整合」判断するのは禁止（過去の事故あり）
+
 **店舗名から場所・業種・住所を推測することは絶対禁止。** スプシに貼られた Maps URL のみが事実ソース。
 
 ```bash
