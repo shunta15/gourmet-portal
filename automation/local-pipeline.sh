@@ -187,8 +187,8 @@ PROMPT_EOF
   log "  claude 終了 exit=$CLAUDE_EXIT"
   log "  詳細ログ: $CLAUDE_LOG"
 
-  # claude の最終出力から結果判定
-  FINAL_LINE=$(grep -oE '✅ COMPLETED [^\\]+' "$CLAUDE_LOG" | tail -1)
+  # claude の最終出力から結果判定（絵文字 ✅ あり/なし両対応）
+  FINAL_LINE=$(grep -oE '(✅ )?COMPLETED row [^\\]+' "$CLAUDE_LOG" | tail -1)
   if [ -n "$FINAL_LINE" ]; then
     log "  $FINAL_LINE"
     if echo "$FINAL_LINE" | grep -q "https://"; then
@@ -216,6 +216,17 @@ log "完了サマリ: 成功 $SUCCESS / エラー $ERROR"
 [ -n "$SUCCESS_URLS" ] && log "成功URL:$SUCCESS_URLS"
 [ -n "$ERROR_LIST" ] && log "エラー:$ERROR_LIST"
 log "============================================================"
+
+# === Vercel 本番デプロイ（成功が1件以上あれば実行） ===
+if [ $SUCCESS -gt 0 ]; then
+  log ""
+  log "▼ Vercel 本番デプロイ"
+  vercel --prod --yes >> "$LOG_FILE" 2>&1 && {
+    log "✅ Vercel デプロイ完了"
+  } || {
+    log "⚠️ Vercel デプロイ失敗（git push 済みなので次の手動デプロイで反映）"
+  }
+fi
 
 if [ $SUCCESS -gt 0 ]; then
   notify "✅ マチノワ自動化 $HOUR_LABEL" "成功 $SUCCESS件 / エラー $ERROR件"
