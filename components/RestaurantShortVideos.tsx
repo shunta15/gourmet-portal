@@ -46,7 +46,7 @@ function VideoPlayer({
           <div className="video-fallback">
             <div
               className="thumb"
-              style={{ backgroundImage: `url(${video.thumbnail})` }}
+              style={{ backgroundImage: `url("${video.thumbnail}")` }}
             />
             <div className="msg">動画は準備中です</div>
           </div>
@@ -93,7 +93,7 @@ export default function RestaurantShortVideos({
           >
             <div
               className="thumb"
-              style={{ backgroundImage: `url(${video.thumbnail})` }}
+              style={{ backgroundImage: `url("${video.thumbnail}")` }}
             />
             <div className="play-btn" aria-hidden>
               <svg width="28" height="28" viewBox="0 0 22 22" fill="none">

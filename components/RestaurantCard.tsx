@@ -8,7 +8,7 @@ export default function RestaurantCard({ r }: { r: Restaurant }) {
       className={"rest-card " + (r.shape || "")}
       data-cursor="VIEW"
     >
-      <div className="img" style={{ backgroundImage: `url(${r.image})` }} />
+      <div className="img" style={{ backgroundImage: `url("${r.image}")` }} />
       <div className="meta">
         <span>
           #{r.id.replace(/^r/, "").padStart(2, "0")} · {r.area}

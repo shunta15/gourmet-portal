@@ -56,7 +56,7 @@ export default function FeaturesCarousel() {
           >
             <div
               className="img"
-              style={{ backgroundImage: `url(${f.image})` }}
+              style={{ backgroundImage: `url("${f.image}")` }}
             />
             <div className="big-no">{f.no}</div>
             <div className="meta">

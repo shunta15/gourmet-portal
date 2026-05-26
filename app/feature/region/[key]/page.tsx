@@ -58,7 +58,7 @@ export default async function FeatureRegionHub({
         <div
           className="img"
           style={{
-            backgroundImage: `url(${region.heroImages[0]})`,
+            backgroundImage: `url("${region.heroImages[0]}")`,
           }}
         />
         <div className="feat-hero-inner" style={{ justifyContent: "center" }}>
@@ -112,7 +112,7 @@ export default async function FeatureRegionHub({
             >
               <div
                 className="img"
-                style={{ backgroundImage: `url(${f.image})` }}
+                style={{ backgroundImage: `url("${f.image}")` }}
               />
               <div className="big-no">{f.no}</div>
               <div className="meta">

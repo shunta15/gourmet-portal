@@ -39,7 +39,7 @@ export default function RegionPage({
         <div
           className="img"
           ref={heroRef}
-          style={{ backgroundImage: `url(${r.heroImages[0]})` }}
+          style={{ backgroundImage: `url("${r.heroImages[0]}")` }}
         />
         <div className="feat-hero-inner">
           <div>
@@ -149,7 +149,7 @@ export default function RegionPage({
                 >
                   <div
                     className="img"
-                    style={{ backgroundImage: `url(${rr.heroImages[0]})` }}
+                    style={{ backgroundImage: `url("${rr.heroImages[0]}")` }}
                   />
                   <div className="rc-body">
                     <div className="rc-no">
@@ -190,7 +190,7 @@ export default function RegionPage({
               >
                 <div
                   className="img"
-                  style={{ backgroundImage: `url(${f.image})` }}
+                  style={{ backgroundImage: `url("${f.image}")` }}
                 />
                 <div className="info">
                   <div className="t">{f.kicker}</div>

@@ -36,7 +36,7 @@ export default function RegionsShowcase({
             >
               <div
                 className="img"
-                style={{ backgroundImage: `url(${r.heroImages[0]})` }}
+                style={{ backgroundImage: `url("${r.heroImages[0]}")` }}
               />
               <div className="rc-body">
                 <div className="rc-no">

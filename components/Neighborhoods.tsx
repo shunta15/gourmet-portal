@@ -37,7 +37,7 @@ export default function Neighborhoods() {
             <div className="arrow">→</div>
             <div
               className="preview-strip"
-              style={{ backgroundImage: `url(${n.image})` }}
+              style={{ backgroundImage: `url("${n.image}")` }}
             />
           </Link>
         ))}

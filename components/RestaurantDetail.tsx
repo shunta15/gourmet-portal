@@ -280,7 +280,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 key={i}
                 style={{
                   aspectRatio: "4/3",
-                  backgroundImage: `url(${img})`,
+                  backgroundImage: `url("${img}")`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

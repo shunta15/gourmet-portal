@@ -14,7 +14,7 @@ function FeatureHero({ article }: { article: FeatureArticle }) {
       <div
         className="img"
         ref={imgRef}
-        style={{ backgroundImage: `url(${article.heroImage})` }}
+        style={{ backgroundImage: `url("${article.heroImage}")` }}
       />
       <div className="feat-hero-inner">
         <div>
@@ -126,7 +126,7 @@ function RankingList({ article }: { article: FeatureArticle }) {
                   <div
                     key={j}
                     className="im"
-                    style={{ backgroundImage: `url(${im})` }}
+                    style={{ backgroundImage: `url("${im}")` }}
                     data-cursor="ZOOM"
                   />
                 ))}
@@ -197,7 +197,7 @@ function RankingList({ article }: { article: FeatureArticle }) {
               <div
                 key={j}
                 className="im"
-                style={{ backgroundImage: `url(${im})` }}
+                style={{ backgroundImage: `url("${im}")` }}
                 data-cursor="ZOOM"
               />
             ))}
@@ -252,7 +252,7 @@ function SideArticles({ article }: { article: FeatureArticle }) {
           <Link key={i} href={s.h} className="side-card" data-cursor="READ">
             <div
               className="img"
-              style={{ backgroundImage: `url(${s.img})` }}
+              style={{ backgroundImage: `url("${s.img}")` }}
             />
             <div className="info">
               <div className="t">{s.t}</div>

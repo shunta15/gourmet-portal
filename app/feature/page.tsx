@@ -144,7 +144,7 @@ export default async function FeatureIndexPage({
                 data-cursor="READ"
                 style={{ display: "block" }}
               >
-                <div className="img" style={{ backgroundImage: `url(${f.image})` }} />
+                <div className="img" style={{ backgroundImage: `url("${f.image}")` }} />
                 <div className="big-no">{f.no}</div>
                 <div className="meta">
                   <span className="tag">{f.tag}</span>
@@ -350,7 +350,7 @@ export default async function FeatureIndexPage({
                 data-cursor="READ"
                 style={{ flex: "0 0 min(420px, 90vw)" }}
               >
-                <div className="img" style={{ backgroundImage: `url(${f.image})` }} />
+                <div className="img" style={{ backgroundImage: `url("${f.image}")` }} />
                 <div className="big-no">{f.no}</div>
                 <div className="meta">
                   <span className="tag">{f.tag}</span>

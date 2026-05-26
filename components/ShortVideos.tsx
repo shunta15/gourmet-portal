@@ -55,7 +55,7 @@ export default function ShortVideos() {
               >
                 <div
                   className="thumb"
-                  style={{ backgroundImage: `url(${v.thumbnail})` }}
+                  style={{ backgroundImage: `url("${v.thumbnail}")` }}
                 />
                 <div className="play-btn" aria-hidden>
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
