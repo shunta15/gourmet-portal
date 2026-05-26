@@ -86,10 +86,21 @@ while IFS= read -r CANDIDATE; do
 - Google Maps URL: __MAPS_URL__
 - スプシ行番号: __ROW__
 
+# 🚨 絶対遵守ルール（ユーザー明言 2026-05-26 / 2026-05-27）
+- **スプシ J列の Maps URL が示す店舗が絶対的に正しい**
+- **店舗名検索で別店舗を拾うのは絶対禁止**（同名店が複数あっても、Maps URL の店舗だけが正解）
+- **手順1の前に必ず Maps URL を WebFetch / Chrome MCP navigate で開いて、リダイレクト先の正式な店舗名・住所・座標を取得すること**
+- D列の店舗名は手入力で誤字・別表記の可能性あり。Maps URL が機械的に正しい
+- 座標から逆引きして「データ不整合」と判断するのは禁止（過去事故あり：点心厨房 桃花を川崎の店と誤判定）
+
 # 手順（必ず順番に実行・タスク完了まで止まらない）
 
 1. agent-teams/decisions/machinowa-article-spec.md を Read で必ず読む
-2. 店舗特定: Maps URL は WebFetch / Chrome MCP / WebSearch で店舗名検索 → 住所/最寄り駅/業態を特定（推測禁止、必ず公式情報から）
+2. 店舗特定（最重要）:
+   - **まず Maps URL を WebFetch で開く**（__MAPS_URL__）。リダイレクト後の URL に `/maps/place/<店舗名>/@<lat>,<lng>/` が含まれているはずなので、そこから正式な店舗名・座標を確定
+   - リダイレクトが取れない場合は Chrome MCP の navigate で開いて get_page_text で店舗名・住所を取得
+   - **Maps URL から取れた店舗名と D列店舗名が違っても、Maps URL の店舗を採用する**
+   - その後、確定した店舗名 + 住所で公式サイト / 食べログ / ホットペッパー等を WebSearch して詳細情報を取得（推測禁止、必ず公式情報から）
 3. 画像取得（重要）: 以下の優先順で画像URL2枚を見つける
    - 公式ホームページ（WebSearch で店舗名+公式 → WebFetch で HTML → img タグ抽出）
    - 公式 Instagram
