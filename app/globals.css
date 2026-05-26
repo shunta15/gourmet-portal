@@ -1069,6 +1069,8 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
 .lede,
 .section-head h2,
 .section-head p,
+.article-head h2,
+.article-head .sub,
 .rank-item .info h3,
 .rank-item .desc,
 .course-stop .info h3,
