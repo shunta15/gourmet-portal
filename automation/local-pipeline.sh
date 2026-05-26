@@ -75,32 +75,53 @@ while IFS= read -r CANDIDATE; do
     continue
   }
 
+  # === 店舗特定（bash 側で完結。claude には検索させない） ===
+  log "  Maps URL 解決中..."
+  RESOLVED_JSON=$(node scripts/resolve-maps-url.mjs "$MAPS_URL" 2>>"$LOG_FILE") || {
+    log "  ❌ Maps URL 解決失敗。スキップ"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="Maps URL解決失敗" >> "$LOG_FILE" 2>&1
+    ERROR=$((ERROR+1))
+    ERROR_LIST="$ERROR_LIST\n  - $NAME: Maps URL解決失敗"
+    continue
+  }
+  RESOLVED_NAME=$(echo "$RESOLVED_JSON" | jq -r '.name')
+  RESOLVED_LAT=$(echo "$RESOLVED_JSON" | jq -r '.lat')
+  RESOLVED_LNG=$(echo "$RESOLVED_JSON" | jq -r '.lng')
+  RESOLVED_PREF=$(echo "$RESOLVED_JSON" | jq -r '.prefecture // "不明"')
+  RESOLVED_CITY=$(echo "$RESOLVED_JSON" | jq -r '.city // "不明"')
+  RESOLVED_ADDR=$(echo "$RESOLVED_JSON" | jq -r '.address // "不明"')
+  log "  ✅ 解決: $RESOLVED_NAME / $RESOLVED_PREF $RESOLVED_CITY"
+  log "     座標: $RESOLVED_LAT, $RESOLVED_LNG"
+
   # claude に丸投げするプロンプト
   # heredoc はシングルクォートで bash のパースを無効化
-  # 変数は __ROW__ / __NAME__ / __MAPS_URL__ のプレースホルダで埋め、後で置換
+  # プレースホルダ方式で安全に値を埋め込む
   CLAUDE_PROMPT=$(cat <<'PROMPT_EOF'
 あなたはマチノワ編集部のライターです。以下の店舗の特集記事を作成して本番に公開してください。
 
-# 店舗情報
-- 店舗名: __NAME__
-- Google Maps URL: __MAPS_URL__
-- スプシ行番号: __ROW__
+# 🚨 店舗特定は完了済（bash 側で Maps URL から機械的に取得済み）
+- **正式店舗名（絶対正解）**: __RESOLVED_NAME__
+- **都道府県**: __RESOLVED_PREF__
+- **市区町村**: __RESOLVED_CITY__
+- **住所（OpenStreetMap逆ジオコーディング結果）**: __RESOLVED_ADDR__
+- **座標**: __RESOLVED_LAT__, __RESOLVED_LNG__
+- **元 Maps URL**: __MAPS_URL__
+- **スプシ行番号**: __ROW__
+- **スプシ D列の店舗名（参考・手入力なので誤字あり得る）**: __NAME__
 
-# 🚨 絶対遵守ルール（ユーザー明言 2026-05-26 / 2026-05-27）
-- **スプシ J列の Maps URL が示す店舗が絶対的に正しい**
-- **店舗名検索で別店舗を拾うのは絶対禁止**（同名店が複数あっても、Maps URL の店舗だけが正解）
-- **手順1の前に必ず Maps URL を WebFetch / Chrome MCP navigate で開いて、リダイレクト先の正式な店舗名・住所・座標を取得すること**
-- D列の店舗名は手入力で誤字・別表記の可能性あり。Maps URL が機械的に正しい
-- 座標から逆引きして「データ不整合」と判断するのは禁止（過去事故あり：点心厨房 桃花を川崎の店と誤判定）
+# 🚨 絶対遵守ルール（ユーザー明言 2026-05-27）
+- **上記の「正式店舗名」「都道府県」「市区町村」が絶対正解。これを使え**
+- **店舗名で WebSearch して別店舗を探すのは絶対禁止**（同名店舗を拾うリスク）
+- **WebSearch を使うときは必ず「正式店舗名 + 都道府県 + 市区町村」をクエリに含めて、別店舗が混入しないようにする**
+- 公式サイト・食べログ・ホットペッパー等で取得した情報の住所が、上記都道府県と一致しなければ「別店舗」と判断して採用しない
 
 # 手順（必ず順番に実行・タスク完了まで止まらない）
 
 1. agent-teams/decisions/machinowa-article-spec.md を Read で必ず読む
-2. 店舗特定（最重要）:
-   - **まず Maps URL を WebFetch で開く**（__MAPS_URL__）。リダイレクト後の URL に `/maps/place/<店舗名>/@<lat>,<lng>/` が含まれているはずなので、そこから正式な店舗名・座標を確定
-   - リダイレクトが取れない場合は Chrome MCP の navigate で開いて get_page_text で店舗名・住所を取得
-   - **Maps URL から取れた店舗名と D列店舗名が違っても、Maps URL の店舗を採用する**
-   - その後、確定した店舗名 + 住所で公式サイト / 食べログ / ホットペッパー等を WebSearch して詳細情報を取得（推測禁止、必ず公式情報から）
+2. 詳細情報収集:
+   - WebSearch クエリは必ず「__RESOLVED_NAME__ __RESOLVED_PREF__ __RESOLVED_CITY__」の形で実行
+   - ヒットした店舗の住所が __RESOLVED_PREF__ __RESOLVED_CITY__ と一致するもののみ採用
+   - 一致しないページは完全に無視（同名別店舗の可能性）
 3. 画像取得（重要）: 以下の優先順で画像URL2枚を見つける
    - 公式ホームページ（WebSearch で店舗名+公式 → WebFetch で HTML → img タグ抽出）
    - 公式 Instagram
@@ -152,6 +173,12 @@ PROMPT_EOF
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__ROW__/$ROW}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__NAME__/$NAME}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__MAPS_URL__/$MAPS_URL}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_NAME__/$RESOLVED_NAME}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_PREF__/$RESOLVED_PREF}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_CITY__/$RESOLVED_CITY}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_ADDR__/$RESOLVED_ADDR}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_LAT__/$RESOLVED_LAT}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_LNG__/$RESOLVED_LNG}"
 
   log "  claude CLI 起動..."
   CLAUDE_LOG="$LOG_DIR/$NOW.row$ROW.claude.log"
