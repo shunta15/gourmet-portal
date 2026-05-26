@@ -13,6 +13,15 @@ const TELEAPO_FEAT_REDIRECTS: Record<string, string> = {
   "teleapo-feat-炭火家本舗-なんばや": "炭火家本舗なんばや",
 };
 
+// スペース含む旧 ID → 新 ID（スペース除去）リダイレクトマップ。
+// 2026-05-27: URL にスペース（%20）を含むとクリック時に途中で切れて
+// 500 になる事例があったため、ID 自体からスペースを除去した。
+const SPACE_ID_REDIRECTS: Record<string, string> = {
+  "あそび割烹 賢太朗": "あそび割烹賢太朗",
+  "小梟 シャオシャオ": "小梟シャオシャオ",
+  "焼肉ホルモン 牛に恋したブタ野郎": "焼肉ホルモン牛に恋したブタ野郎",
+};
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -21,6 +30,18 @@ export async function middleware(request: NextRequest) {
   if (teleapoMatch) {
     const oldId = decodeURIComponent(teleapoMatch[1]);
     const newId = TELEAPO_FEAT_REDIRECTS[oldId];
+    if (newId) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/feature/${encodeURIComponent(newId)}`;
+      return NextResponse.redirect(url, 301);
+    }
+  }
+
+  // スペース含む旧 ID → 新 ID（スペース除去）に 301 リダイレクト
+  const featureGenericMatch = pathname.match(/^\/feature\/([^/]+)\/?$/);
+  if (featureGenericMatch) {
+    const decoded = decodeURIComponent(featureGenericMatch[1]);
+    const newId = SPACE_ID_REDIRECTS[decoded];
     if (newId) {
       const url = request.nextUrl.clone();
       url.pathname = `/feature/${encodeURIComponent(newId)}`;
