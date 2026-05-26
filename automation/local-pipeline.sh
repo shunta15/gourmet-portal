@@ -76,86 +76,71 @@ while IFS= read -r CANDIDATE; do
   }
 
   # claude に丸投げするプロンプト
-  CLAUDE_PROMPT=$(cat <<EOF
+  # heredoc はシングルクォートで bash のパースを無効化
+  # 変数は __ROW__ / __NAME__ / __MAPS_URL__ のプレースホルダで埋め、後で置換
+  CLAUDE_PROMPT=$(cat <<'PROMPT_EOF'
 あなたはマチノワ編集部のライターです。以下の店舗の特集記事を作成して本番に公開してください。
 
 # 店舗情報
-- 店舗名: $NAME
-- Google Maps URL: $MAPS_URL
-- スプシ行番号: $ROW
+- 店舗名: __NAME__
+- Google Maps URL: __MAPS_URL__
+- スプシ行番号: __ROW__
 
 # 手順（必ず順番に実行・タスク完了まで止まらない）
 
-1. **必読**: agent-teams/decisions/machinowa-article-spec.md を Read
-2. **店舗特定**: Maps URL を WebFetch で開く / WebSearch で店舗名検索 → 住所・最寄り駅・業態を特定（推測禁止、必ず公式情報から）
-3. **画像取得（重要）**: 以下の優先順で画像URLを2枚見つける
-   - 公式ホームページ（WebSearch で「$NAME 公式」検索 → WebFetch で HTML 取得 → img タグから抽出）
-   - 公式 Instagram（あれば）
-   - 食べログ・ホットペッパー・ぐるなび等の店舗ページ（=img タグ抽出）
+1. agent-teams/decisions/machinowa-article-spec.md を Read で必ず読む
+2. 店舗特定: Maps URL は WebFetch / Chrome MCP / WebSearch で店舗名検索 → 住所/最寄り駅/業態を特定（推測禁止、必ず公式情報から）
+3. 画像取得（重要）: 以下の優先順で画像URL2枚を見つける
+   - 公式ホームページ（WebSearch で店舗名+公式 → WebFetch で HTML → img タグ抽出）
+   - 公式 Instagram
+   - 食べログ・ホットペッパー・ぐるなび等の店舗ページ
    見つけた画像URLを Bash の curl で download:
-   \`\`\`
-   mkdir -p public/restaurants/teleapo-$NAME
-   curl --max-time 30 -o public/restaurants/teleapo-$NAME/hero.jpg "<URL1>"
-   curl --max-time 30 -o public/restaurants/teleapo-$NAME/point2.jpg "<URL2>"
-   \`\`\`
-   各画像は **20KB 以上 + JPEG/PNG** であることを Bash で確認:
-   \`\`\`
-   file public/restaurants/teleapo-$NAME/hero.jpg
-   wc -c public/restaurants/teleapo-$NAME/hero.jpg
-   \`\`\`
-   失敗したら以下を実行してこのタスクを終了:
-   \`\`\`
-   rm -rf public/restaurants/teleapo-$NAME
-   node scripts/sheets-mark-done.mjs --type=feature --row=$ROW --status=error --reason="画像取得失敗"
-   \`\`\`
-4. **記事生成**: spec.md §1〜13 厳守で本文 3000字以上 / 「」使用 / id="$NAME"
-   lib/teleapo-features.ts の末尾 \`};\` 直前に TypeScript object として Edit ツールで追記
-5. **ビルド**: \`npm run build\` を Bash で実行。失敗したら:
-   \`\`\`
-   git checkout -- lib/teleapo-features.ts
-   rm -rf public/restaurants/teleapo-$NAME
-   node scripts/sheets-mark-done.mjs --type=feature --row=$ROW --status=error --reason="ビルド失敗"
-   \`\`\`
-6. **禁止語チェック**:
-   \`\`\`
-   grep -E '(素朴|派手さはない|奇をてらった.*ではない|日本一|絶品|最高の|呼び込み)' lib/teleapo-features.ts
-   \`\`\`
-   ヒットしたら:
-   \`\`\`
-   git checkout -- lib/teleapo-features.ts
-   rm -rf public/restaurants/teleapo-$NAME
-   node scripts/sheets-mark-done.mjs --type=feature --row=$ROW --status=permanent_error --reason="禁止語含む"
-   \`\`\`
-7. **commit & push**:
-   \`\`\`
-   git add lib/teleapo-features.ts public/restaurants/teleapo-$NAME/
-   git commit -m "feat(teleapo): 特集記事を自動生成 – $NAME"
-   git pull --rebase origin main
-   git push origin main
-   \`\`\`
+     mkdir -p public/restaurants/teleapo-__NAME__
+     curl --max-time 30 -o public/restaurants/teleapo-__NAME__/hero.jpg URL1
+     curl --max-time 30 -o public/restaurants/teleapo-__NAME__/point2.jpg URL2
+   各画像が 20KB 以上 + JPEG/PNG であることを file コマンドと wc -c で確認
+   失敗したら:
+     rm -rf public/restaurants/teleapo-__NAME__
+     node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=画像取得失敗
+4. 記事生成: spec.md §1〜13 厳守で本文 3000字以上、文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __NAME__ のみ
+   lib/teleapo-features.ts の末尾 }; 直前に TypeScript object として Edit ツールで追記
+5. ビルド: npm run build を Bash で実行。失敗したら:
+     git checkout -- lib/teleapo-features.ts
+     rm -rf public/restaurants/teleapo-__NAME__
+     node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=ビルド失敗
+6. 禁止語 grep: パターン（素朴|派手さはない|奇をてらった.*ではない|日本一|絶品|最高の|呼び込み）を lib/teleapo-features.ts に grep。ヒットしたら:
+     git checkout -- lib/teleapo-features.ts
+     rm -rf public/restaurants/teleapo-__NAME__
+     node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=permanent_error --reason=禁止語含む
+7. commit & push:
+     git add lib/teleapo-features.ts public/restaurants/teleapo-__NAME__/
+     git commit -m feat(teleapo)記事を自動生成
+     git pull --rebase origin main
+     git push origin main
    push 失敗時:
-   \`\`\`
-   git reset --hard HEAD~1
-   rm -rf public/restaurants/teleapo-$NAME
-   node scripts/sheets-mark-done.mjs --type=feature --row=$ROW --status=error --reason="git push失敗"
-   \`\`\`
-8. **スプシ書き戻し**:
-   \`\`\`
-   node scripts/sheets-mark-done.mjs --type=feature --row=$ROW --url=https://machinowa.tokyo/feature/$NAME
-   \`\`\`
+     git reset --hard HEAD~1
+     rm -rf public/restaurants/teleapo-__NAME__
+     node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=git push失敗
+8. スプシ書き戻し:
+     node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --url=https://machinowa.tokyo/feature/__NAME__
 
 # 絶対厳守
 - 場所推測禁止（必ず公式情報から）
 - 画像は実店舗のもののみ（Unsplash 等の汎用画像 NG）
-- 半角 " を文中で使わない → 「」
-- author 固定「マチノワ編集部」
-- id="$NAME" のみ（注釈や接頭辞禁止）
+- 文中で半角ダブルクォートを使わない（日本語の「」を使う）
+- author 固定 マチノワ編集部
+- id は __NAME__ のみ（注釈や接頭辞禁止）
 
 # 完了
-全ステップ完了したら「✅ COMPLETED row $ROW: <URL or 失敗理由>」と1行出力して終了してください。
-タスクが完了するまで停止しないでください。複数の Bash ツール呼び出しが必要です。
-EOF
+全ステップ完了したら「COMPLETED row __ROW__ URL: <生成URL or 失敗理由>」と1行出力して終了。
+タスクが完了するまで停止しない。複数の Bash ツール呼び出しが必要。
+PROMPT_EOF
 )
+
+  # プレースホルダ → 実値 置換
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__ROW__/$ROW}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__NAME__/$NAME}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__MAPS_URL__/$MAPS_URL}"
 
   log "  claude CLI 起動..."
   CLAUDE_LOG="$LOG_DIR/$NOW.row$ROW.claude.log"
