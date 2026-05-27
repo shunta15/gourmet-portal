@@ -92,7 +92,9 @@ while IFS= read -r CANDIDATE; do
   RESOLVED_ADDR=$(echo "$RESOLVED_JSON" | jq -r '.address // "不明"')
   # URL/ファイルパス用に正式店舗名からスペースを除去
   # （URL にスペースを含むとクリック時に切れる事故が発生したため・2026-05-27）
-  SAFE_NAME=$(echo "$RESOLVED_NAME" | tr -d ' 　')
+  # tr -d は UTF-8 マルチバイト文字を壊すので bash パラメータ展開で除去
+  SAFE_NAME="${RESOLVED_NAME// /}"
+  SAFE_NAME="${SAFE_NAME//　/}"
   log "  ✅ 解決: $RESOLVED_NAME / $RESOLVED_PREF $RESOLVED_CITY"
   log "     座標: $RESOLVED_LAT, $RESOLVED_LNG"
   log "     ID用: $SAFE_NAME"
