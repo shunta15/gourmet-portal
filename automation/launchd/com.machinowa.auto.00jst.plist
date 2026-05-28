@@ -3,26 +3,28 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.machinowa.auto.15jst</string>
+    <string>com.machinowa.auto.00jst</string>
 
     <key>ProgramArguments</key>
     <array>
+        <string>/usr/bin/caffeinate</string>
+        <string>-i</string>
         <string>/Users/shunta/claude/gourmet-portal/automation/local-pipeline.sh</string>
-        <string>15jst</string>
+        <string>00jst</string>
     </array>
 
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>15</integer>
+        <integer>0</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/shunta/Library/Logs/machinowa-auto/launchd-15jst.stdout.log</string>
+    <string>/Users/shunta/Library/Logs/machinowa-auto/launchd-00jst.stdout.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/shunta/Library/Logs/machinowa-auto/launchd-15jst.stderr.log</string>
+    <string>/Users/shunta/Library/Logs/machinowa-auto/launchd-00jst.stderr.log</string>
 
     <key>WorkingDirectory</key>
     <string>/Users/shunta/claude/gourmet-portal</string>

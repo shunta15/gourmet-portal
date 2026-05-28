@@ -53,7 +53,7 @@ ERROR=0
 SUCCESS_URLS=""
 ERROR_LIST=""
 
-MAX=${MAX_CANDIDATES:-3}
+MAX=${MAX_CANDIDATES:-5}
 PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
 
 while IFS= read -r CANDIDATE; do
@@ -244,4 +244,17 @@ else
 fi
 
 find "$LOG_DIR" -name "*.log" -mtime +30 -delete 2>/dev/null
+
+# === 残未処理あれば 5 分後に自己再発火（取りこぼし防止） ===
+REMAINING=$(node scripts/sheets-candidates-json.mjs 2>/dev/null | tail -1 | jq -r '.feature | length' 2>/dev/null || echo 0)
+if [ "${REMAINING:-0}" -gt 0 ] && [ "$HOUR_LABEL" != "self-restart" ] && [[ "$HOUR_LABEL" != manual* ]] && [[ "$HOUR_LABEL" != retry* ]]; then
+  log ""
+  log "⏰ 残り未処理 $REMAINING 件あり。5 分後に自己再発火 (caffeinate)"
+  (
+    sleep 300
+    /usr/bin/caffeinate -i "$REPO/automation/local-pipeline.sh" "self-restart" > "$LOG_DIR/$(date '+%Y%m%d-%H%M%S').self-restart.log" 2>&1
+  ) > /dev/null 2>&1 &
+  disown
+fi
+
 exit 0
