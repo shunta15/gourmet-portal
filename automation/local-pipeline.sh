@@ -53,7 +53,7 @@ ERROR=0
 SUCCESS_URLS=""
 ERROR_LIST=""
 
-MAX=${MAX_CANDIDATES:-5}
+MAX=${MAX_CANDIDATES:-10}
 PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
 
 while IFS= read -r CANDIDATE; do
