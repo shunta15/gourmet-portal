@@ -143,6 +143,12 @@ while IFS= read -r CANDIDATE; do
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=画像取得失敗
 4. 記事生成: spec.md §1〜13 厳守で本文 3000字以上、文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
    lib/teleapo-features.ts の末尾 }; 直前に TypeScript object として Edit ツールで追記
+   ★脱テンプレ必須（spec.md §14「脱テンプレ規約」厳守）:
+     - closing を「編集部が考える」で始めるのは絶対禁止。店の固有要素・時間軸・客層・立地・問いのいずれかから書き出す
+     - 「初めてなら、まずは」「初訪問なら、まずは」を使わない
+     - lede 末尾に「今回は、〜5つのポイントに分けて紹介していく」を書かない
+     - 「訪問前に公式情報での確認を」の固定形は1記事1回まで。POINT 内では言い換える
+     - 既存記事と書き出し・締めが被らないよう、店ごとにゼロから組む
 5. ビルド: npm run build を Bash で実行。失敗したら:
      git checkout -- lib/teleapo-features.ts
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
@@ -151,6 +157,7 @@ while IFS= read -r CANDIDATE; do
      git checkout -- lib/teleapo-features.ts
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=permanent_error --reason=禁止語含む
+6b. 脱テンプレ自己チェック: 今回追記した記事ブロックに対し、closing が「編集部が考える」で始まる/「初めてなら、まずは」「初訪問なら、まずは」「5つのポイントに分けて紹介」を含む、のいずれかに当てはまらないか確認。当てはまったら closing/lede を書き直してから次へ進む（公開前に必ず潰す）
 7. commit & push:
      git add lib/teleapo-features.ts public/restaurants/teleapo-__SAFE_NAME__/
      git commit -m feat(teleapo)記事を自動生成
