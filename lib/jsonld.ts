@@ -241,6 +241,30 @@ export function buildOrganizationJsonLd(): Record<string, unknown> {
   };
 }
 
+/* WebSite + SearchAction（Google のサイトリンク検索ボックス用）
+ * 検索結果にサイト内検索ボックスが表示される可能性が生まれる。
+ * /search?q=<語> がサイト内検索のエンドポイント。 */
+export function buildWebSiteJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BASE}/#website`,
+    name: "マチノワ",
+    alternateName: "MACHINOWA / 街の輪",
+    url: BASE,
+    inLanguage: "ja",
+    publisher: { "@id": `${BASE}/#organization` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BASE}/search?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+}
+
 export function jsonLdScript(data: Record<string, unknown>) {
   return {
     type: "application/ld+json" as const,

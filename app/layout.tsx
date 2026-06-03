@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
-import { buildOrganizationJsonLd } from "@/lib/jsonld";
+import { buildOrganizationJsonLd, buildWebSiteJsonLd } from "@/lib/jsonld";
 import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -35,6 +35,13 @@ export const metadata: Metadata = {
       "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。",
     images: ["/apple-icon"],
   },
+  // Google Search Console の所有権確認。
+  // Vercel の環境変数 GOOGLE_SITE_VERIFICATION に
+  // Search Console で発行されるコード（content の値）を設定すると
+  // <meta name="google-site-verification"> が自動で出力される。
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({
@@ -59,6 +66,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(buildOrganizationJsonLd()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildWebSiteJsonLd()),
           }}
         />
       </head>
