@@ -31,6 +31,10 @@ import {
   NEW_GUIDE_FEATURES_6,
 } from "./newGuideFeatures6";
 import { TELEAPO_FEATURE_ARTICLES } from "./teleapo-features";
+import {
+  KANSAI_FEATURES,
+  KANSAI_FEATURE_ARTICLES,
+} from "./newGuideFeaturesKansai";
 import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
 
 export type Stat = { n: string; l: string };
@@ -10614,6 +10618,7 @@ export const FEATURES: Feature[] = [
   ...NEW_GUIDE_FEATURES_4,   // NG-66,71,75,76,77,78,79 の7本をindex追加
   ...NEW_GUIDE_FEATURES_5,   // NG-80,81,88,90 の4本をindex追加
   ...NEW_GUIDE_FEATURES_6,   // NG-102 の1本をindex追加
+  ...KANSAI_FEATURES,        // KS-01〜 関西エリア（大阪・京都・神戸）index対象
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
@@ -10632,6 +10637,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEW_GUIDE_FEATURE_ARTICLES_4,
   ...NEW_GUIDE_FEATURE_ARTICLES_5,
   ...NEW_GUIDE_FEATURE_ARTICLES_6,
+  ...KANSAI_FEATURE_ARTICLES,   // 関西エリア 街ガイド（index対象）
   ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（noindex）
 };
 
