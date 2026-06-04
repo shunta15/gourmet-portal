@@ -17,6 +17,10 @@ HOUR_LABEL=${1:-"manual"}
 NOW=$(date '+%Y%m%d-%H%M%S')
 LOG_FILE="$LOG_DIR/$NOW.$HOUR_LABEL.log"
 
+# ロケールを UTF-8 に固定（変数直後の日本語でbashが変数名を誤認する事故の保険）
+export LANG="ja_JP.UTF-8"
+export LC_ALL="ja_JP.UTF-8"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export PATH="$HOME/.nvm/versions/node/v22.22.0/bin:/usr/local/bin:/opt/homebrew/bin:$PATH"
@@ -245,9 +249,9 @@ if [ $SUCCESS -gt 0 ]; then
 fi
 
 if [ $SUCCESS -gt 0 ]; then
-  notify "✅ マチノワ自動化 $HOUR_LABEL" "成功 $SUCCESS件 / エラー $ERROR件"
+  notify "✅ マチノワ自動化 $HOUR_LABEL" "成功 ${SUCCESS}件 / エラー ${ERROR}件"
 else
-  notify "⚠️ マチノワ自動化 $HOUR_LABEL" "全件エラー $ERROR件"
+  notify "⚠️ マチノワ自動化 $HOUR_LABEL" "全件エラー ${ERROR}件"
 fi
 
 find "$LOG_DIR" -name "*.log" -mtime +30 -delete 2>/dev/null
