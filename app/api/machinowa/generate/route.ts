@@ -387,6 +387,22 @@ async function getNextRestaurantId(): Promise<string> {
 
 // ─── メインハンドラー ─────────────────────────────────────
 export async function POST(req: NextRequest) {
+  // 【廃止】この旧パイプライン（GAS → Vercel API → GitHub）は、Vercel が
+  // maps.google.com に到達できず GBP 取得が必ず失敗するため、ローカル launchd
+  // パイプライン（Playwright で Maps 解決）へ完全移行済み。
+  // 旧 GAS トリガーが残っていて毎日叩いてくるので、ここで明示的に無効化する。
+  // どうしても再有効化したい場合のみ Vercel 環境変数 MACHINOWA_GENERATE_ENABLED=1 を設定。
+  if (process.env.MACHINOWA_GENERATE_ENABLED !== "1") {
+    return NextResponse.json(
+      {
+        error: "retired",
+        message:
+          "この記事生成APIは廃止されました。生成はローカルパイプラインに移行済みです（GBP取得がVercelのネットワーク制限で失敗するため）。スプレッドシートの旧Apps Scriptトリガーを停止してください。",
+      },
+      { status: 410 }
+    );
+  }
+
   // Secret 検証
   const secret = process.env.MACHINOWA_GENERATE_SECRET;
   if (!secret) return NextResponse.json({ error: "Secret not configured" }, { status: 500 });
