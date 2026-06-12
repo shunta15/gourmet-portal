@@ -29,6 +29,7 @@ import { google } from 'googleapis';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { loadLedger, isGenerated } from './ledger.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
@@ -98,6 +99,7 @@ let featPermErrTotal = 0, restPermErrTotal = 0;
 let skippedOldRows = 0;
 
 const IDX = { NAME: 3, URL: 9, P: 15, U: 20, W: 22, X: 23, Y: 24, Z: 25 };
+const led = loadLedger();
 
 for (let i = 0; i < rows.length; i++) {
   const r = rows[i] || [];
@@ -121,11 +123,15 @@ for (let i = 0; i < rows.length; i++) {
 
   if (isFeat) {
     featOkTotal++;
-    const s = classifyStatus(wRaw);
-    if (s === 'done') featDoneTotal++;
-    else if (s === 'permanent_error') { featPermErrTotal++; featErrors.push({ sourceRow, name, raw: normalize(wRaw) }); }
-    else if (s === 'error_cooldown') featErrors.push({ sourceRow, name, raw: normalize(wRaw) });
-    else if (isUnprocessed(s)) featCandidates.push({ sourceRow, name, url, status: s });
+    // 処理済み判定は台帳（cid・店名）が正。W列は IMPORTRANGE 行ズレで信用しない。
+    if (isGenerated(led, url, name)) { featDoneTotal++; }
+    else {
+      const s = classifyStatus(wRaw);
+      if (s === 'permanent_error') { featPermErrTotal++; featErrors.push({ sourceRow, name, raw: normalize(wRaw) }); }
+      else if (s === 'error_cooldown') featErrors.push({ sourceRow, name, raw: normalize(wRaw) });
+      else if (s === 'processing') { /* ロック中: スキップ */ }
+      else { featCandidates.push({ sourceRow, name, url, status: s }); } // empty / 行ズレ済 / リトライ可
+    }
   }
   if (isRest) {
     restOkTotal++;

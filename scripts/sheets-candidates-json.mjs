@@ -6,6 +6,7 @@ import { google } from 'googleapis';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { loadLedger, isGenerated } from './ledger.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
@@ -48,6 +49,7 @@ const res = await sheets.spreadsheets.values.get({
 });
 const rows = res.data.values || [];
 const IDX = { NAME: 3, URL: 9, P: 15, U: 20, W: 22, Y: 24 };
+const led = loadLedger();
 
 const feature = [];
 const restaurant = [];
@@ -63,10 +65,13 @@ for (let i = 0; i < rows.length; i++) {
   if (!name && !url) continue;
 
   if (p === '詰めOK') {
+    // 処理済み判定は「台帳（cid・店名）」が唯一の正。W列は IMPORTRANGE 行ズレで信用しない。
+    if (isGenerated(led, url, name)) continue;            // 生成済み → スキップ（重複防止）
     const s = classifyStatus(r[IDX.W]);
-    if (s === 'empty' || s === 'error_retryable') {
-      feature.push({ sourceRow, name, url });
-    }
+    // 未生成なら、W列の「済」(=行ズレで残った別店の済)は無視して候補にする。
+    // ただし直近エラー冷却 / 処理中ロック / 永久エラーは尊重（取りこぼし救済より誤連打防止）。
+    if (s === 'permanent_error' || s === 'processing' || s === 'error_cooldown') continue;
+    feature.push({ sourceRow, name, url });                // empty / 行ズレ済 / リトライ可
   }
   if (u === '商談完了') {
     const s = classifyStatus(r[IDX.Y]);

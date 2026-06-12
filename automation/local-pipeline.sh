@@ -34,6 +34,13 @@ log "============================================================"
 log "マチノワ自動化 v2 開始 (label=$HOUR_LABEL)"
 log "============================================================"
 
+# === Step 0: 処理済み台帳を再構築（IMPORTRANGE 行ズレ対策の自己修復） ===
+# teleapo-features.ts（生成済みの確定記録）+ スプシの cid から台帳を作り直す。
+# 以降の候補抽出は行番号でなく cid・店名で重複判定するため、行がズレても破綻しない。
+log ""
+log "▼ Step 0: 処理済み台帳 再構築"
+node scripts/reconcile-ledger.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳再構築に失敗（既存台帳で続行）"
+
 # === Step 1: 候補抽出 ===
 log ""
 log "▼ Step 1: 候補抽出"
@@ -215,6 +222,8 @@ PROMPT_EOF
       SUCCESS=$((SUCCESS+1))
       URL=$(echo "$FINAL_LINE" | grep -oE 'https://[^ ]+' | head -1)
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
+      # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
     else
       ERROR=$((ERROR+1))
       ERROR_LIST="$ERROR_LIST\n  - $NAME: $FINAL_LINE"
