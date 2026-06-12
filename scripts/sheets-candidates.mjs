@@ -35,7 +35,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
 const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 const SHEET_NAME = '詰めOKリスト';
-const MIN_SOURCE_ROW = 146;
+const MIN_SOURCE_ROW = 175;
 const RETRY_AFTER_HOURS = 24;
 
 function normalize(v) {
