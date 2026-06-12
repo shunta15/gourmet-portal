@@ -41,6 +41,12 @@ log ""
 log "▼ Step 0: 処理済み台帳 再構築"
 node scripts/reconcile-ledger.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳再構築に失敗（既存台帳で続行）"
 
+# === Step 0.5: スプシ表示の再同期（行ズレで剥がれた 済/URL を貼り直す） ===
+# IMPORTRANGE で行がズレると生成済みの店から W=済/X=URL が剥がれ、
+# シート上「記事できてない」ように見える。台帳に合わせて毎回貼り直す。
+log "▼ Step 0.5: スプシ 済/URL 再同期"
+node scripts/sheets-sync-status.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 済/URL 再同期に失敗（続行）"
+
 # === Step 1: 候補抽出 ===
 log ""
 log "▼ Step 1: 候補抽出"
@@ -53,7 +59,7 @@ FEAT_COUNT=$(echo "$CANDIDATES_JSON" | jq -r '.feature | length')
 log "feature 未処理: $FEAT_COUNT 件"
 
 if [ "$FEAT_COUNT" -eq 0 ]; then
-  log "✅ 候補0件、終了"
+  log "✅ 候補0件、終了（台帳・スプシ表示は同期済み）"
   notify "✅ マチノワ自動化 $HOUR_LABEL" "候補0件で正常終了"
   exit 0
 fi
