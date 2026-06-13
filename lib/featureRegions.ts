@@ -380,6 +380,37 @@ const REGION_KEYWORDS: Record<RegionKey, Weighted[]> = {
  */
 const MANUAL_OVERRIDES: Record<string, RegionKey | RegionKey[]> = {
   // 例: "feature-multi-area-foo": ["tokyo", "kanagawa"],
+  // ── 街ガイド第7弾（30本）: id→region を明示固定 ──
+  "kansai-namba-dotonbori-walk": "osaka",
+  "kansai-shinsekai-tsutenkaku": "osaka",
+  "kansai-tennoji-abeno-family": "osaka",
+  "kansai-osaka-castle-walk": "osaka",
+  "kansai-tempozan-family": "osaka",
+  "kansai-expo-park-family": "osaka",
+  "kansai-fushimi-inari-walk": "kyoto",
+  "kansai-kinkakuji-walk": "kyoto",
+  "kansai-kawaramachi-pontocho-date": "kyoto",
+  "kansai-uji-walk": "kyoto",
+  "kansai-kitano-ijinkan-date": "hyogo",
+  "kansai-sannomiya-nankinmachi-walk": "hyogo",
+  "kansai-arima-onsen-walk": "hyogo",
+  "kansai-nara-park-walk": "nara",
+  "kansai-naramachi-walk": "nara",
+  "chubu-nagoya-station-walk": "nagoya",
+  "chubu-atsuta-jingu-walk": "nagoya",
+  "chubu-nagoya-port-family": "nagoya",
+  "chubu-atami-onsen-date": "shizuoka",
+  "kyushu-tenjin-walk": "fukuoka",
+  "kyushu-nakasu-kawabata-walk": "fukuoka",
+  "kyushu-ohori-park-family": "fukuoka",
+  "kyushu-dazaifu-walk": "fukuoka",
+  "kyushu-kagoshima-tenmonkan": "kagoshima",
+  "hokkaido-sapporo-odori-walk": "hokkaido",
+  "hokkaido-susukino-night-date": "hokkaido",
+  "hokkaido-otaru-canal-date": "hokkaido",
+  "chugoku-hiroshima-peace-walk": "hiroshima",
+  "chugoku-miyajima-walk": "hiroshima",
+  "kanto-kawagoe-walk": "saitama",
 };
 
 /**
