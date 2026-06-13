@@ -105,6 +105,7 @@ grep 'id: "r67"' lib/data.ts
   - **FEATURES（indexed）追加**: NG-66,71,75,76,77,78,79（file4）＋ NG-80,81,88,90（file5）＋ NG-102（file6）= 12本
   - **NOINDEX（URL有効）追加**: 残り25本はFEATURE_ARTICLESのみ収録
   - **街ガイド第7弾（2026-06-13）= 新規30本・全てindex対象**: `lib/newGuideFeatures7.ts` に収録。大阪6/京都4/神戸3/奈良2/名古屋3/静岡1/福岡4/鹿児島1/北海道3/広島2/埼玉1。region hub の 奈良・福岡・北海道・広島・鹿児島・埼玉 を新規点灯。`lib/featureRegions.ts` の MANUAL_OVERRIDES に id→region 固定済み。生成パイプライン: `scripts/resolve-commons-images.mjs`（Commons API で画像実URL解決＋200確認）→ `scripts/emit-feature-file.mjs`（TS生成）。画像は全て Wikimedia Commons
+  - **街ガイド第8弾（2026-06-14）= 新規24本・全てindex対象**: `lib/newGuideFeatures8.ts` に収録。脱テンプレ強化（4ペルソナ＝モデルコース/セレクト/街歩き随筆/テーマ特化、articleType course7/ranking3/guide14、スポット数3〜6で可変、定型骨格を封印）。**画像はビジョン照合方式**: Commonsから被写体別に候補を複数DL→AIが実画像を開いて被写体・所在地を照合し一致のみ採用（取り違え・別地域を排除。「南禅寺=中国/千畳敷=青森/岡公園=群馬」等の取り違えを実検出）。正しい実画像が無いニッチ/店内スポットは誤写真を当てず記事から除去し本文整形。滋賀・和歌山・群馬の region hub を新規点灯。パイプライン: `scripts/resolve-images-v2.mjs`→vision-verify WF→`scripts/finalize-images8.mjs`→`scripts/emit-feature-file8.mjs`
 
 ---
 
