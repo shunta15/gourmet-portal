@@ -44,14 +44,14 @@ chmod 600 automation/secrets/sa.json
 - ID は店舗名のみ（teleapo-feat- などのプレフィックス禁止・注釈除外）
   - 既存記事と衝突する場合は `<店舗名>-<市区町村>` で suffix
 - 各処理結果は必ずスプシに書き戻す（成功も失敗も）
-- 最後に必ずメール通知を送る（候補0件でも送る）
+- 結果は標準出力(stdout)にのみ出す。メール送信・Gmail下書き作成は一切しない
 
 # Step 2: 候補抽出
 
 npm ci --prefer-offline --no-audit --no-fund 2>&1 | tail -5 || npm install --silent --no-audit --no-fund 2>&1 | tail -5
 node scripts/sheets-candidates.mjs
 
-# Step 3: 候補が0件なら Step 8 のメール通知だけ実行して終了
+# Step 3: 候補が0件なら結果を stdout に出して終了（メール・Gmail下書きは作らない）
 
 # Step 4: 候補があれば最大3件処理
 
@@ -122,30 +122,21 @@ candidates の上位3件まで、各候補に対し runbook.md §a〜i を順番
 
 # Step 5〜7: （Step 4 のループ内で§a〜i を実行）
 
-# Step 8: 完了メール通知（必須・try/catch で守る）
+# Step 8: 完了処理（結果は stdout のみ）
 
-Gmail MCP を使って linkateinc315@link8.info にメール送信。
-Gmail送信が失敗しても routine は終了させる（stdoutには必ず結果を出す）。
+🚫 メール送信・Gmail 下書き作成は一切行わない（ユーザー指示により 2026-06-18 廃止）。
+Gmail MCP（create_draft 等）は絶対に呼ばない。結果は標準出力(stdout)にのみ出力する。
 
-- 件名（成功 / 候補0件）: `[マチノワ自動化] HH:00JST 結果 (処理X件 / エラーY件)`
-- 件名（致命エラー時）: `🚨[マチノワ自動化] HH:00JST 致命エラー`
-- 本文:
+- stdout 形式:
   実行時刻: YYYY-MM-DD HH:MM JST
   処理件数: 成功X / エラーY / スキップZ
-  
-  ▼ 成功した記事
-  - <店舗名>: https://machinowa.tokyo/feature/<店舗名>
-  
-  ▼ エラー店舗
-  - <店舗名>: <失敗理由>
-  
-  残候補数: feature N件 / restaurant M件
+  ▼ 成功した記事 / ▼ エラー店舗 / 残候補数: feature N件 / restaurant M件
 
 # 絶対厳守ルール（再掲）
 
 1. 監視シートは「詰めOKリスト」のみ
 2. row 146 以降のみ対象
-3. ロック取得（§a）→ 処理 → 書き戻し（§h or エラー時の各§）→ メール通知 の順を必ず守る
+3. ロック取得（§a）→ 処理 → 書き戻し（§h or エラー時の各§）→ stdout出力 の順を必ず守る
 4. GBP の住所・座標が確認できない時は記事を作らない
 5. 店舗名から場所推測は絶対禁止
 6. 画像は実店舗のもののみ + 20KB以上検証
@@ -155,7 +146,7 @@ Gmail送信が失敗しても routine は終了させる（stdoutには必ず結
 10. author は必ず「マチノワ編集部」
 11. ID/URL に teleapo-feat- 等のプレフィックスを付けない
 12. 全ての結果（成功・エラー）をスプシに書き戻す
-13. 最後に必ずメール通知を送る（候補0件でも送る）
+13. メール送信・Gmail下書き作成は禁止（結果は stdout のみ・ユーザー指示2026-06-18）
 14. ID 衝突したら `<店舗名>-<市区町村>` suffix
 15. ビルド/push 失敗時は revert + 画像ディレクトリ削除 + エラー書き戻し
 ```
