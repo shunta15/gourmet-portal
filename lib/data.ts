@@ -47,6 +47,10 @@ import {
   NEWGUIDE8_FEATURES,
   NEWGUIDE8_FEATURE_ARTICLES,
 } from "./newGuideFeatures8";
+import {
+  NEWGUIDE9_FEATURES,
+  NEWGUIDE9_FEATURE_ARTICLES,
+} from "./newGuideFeatures9";
 import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
 
 export type Stat = { n: string; l: string };
@@ -10634,6 +10638,7 @@ export const FEATURES: Feature[] = [
   ...CHUBU_FEATURES,         // CB-01〜 中部エリア（名古屋）index対象
   ...NEWGUIDE7_FEATURES,     // 街ガイド第7弾30本（全国拡張）index対象
   ...NEWGUIDE8_FEATURES,     // 街ガイド第8弾24本（脱テンプレ・画像ビジョン照合）index対象
+  ...NEWGUIDE9_FEATURES,     // 街ガイド第9弾24本（有名ランドマーク・画像ビジョン照合）index対象
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
@@ -10656,6 +10661,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...CHUBU_FEATURE_ARTICLES,    // 中部エリア 街ガイド（index対象）
   ...NEWGUIDE7_FEATURE_ARTICLES, // 街ガイド第7弾30本（index対象）
   ...NEWGUIDE8_FEATURE_ARTICLES, // 街ガイド第8弾24本（index対象）
+  ...NEWGUIDE9_FEATURE_ARTICLES, // 街ガイド第9弾24本（index対象）
   ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（noindex）
 };
 

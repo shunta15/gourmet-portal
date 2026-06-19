@@ -12,7 +12,7 @@
  * 入力: automation/batch8-raw.json  （{articles:[{id,spots:[{name,imageSubject,imageRegion}]}]}）
  * 出力: automation/batch8-candidates.json
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -94,8 +94,25 @@ async function gatherCandidates(spot) {
 
 const data = JSON.parse(readFileSync(IN, 'utf-8'));
 const articles = data.articles || data;
+// 途中再開: 既存OUTに同idで全spot候補済みの記事があれば再利用してスキップ
+let resume = {};
+if (existsSync(OUT)) {
+  try {
+    const prev = JSON.parse(readFileSync(OUT, 'utf-8')).articles || [];
+    for (const a of prev) if (Array.isArray(a.spots) && a.spots.every((s) => 'candidates' in s)) resume[a.id] = a;
+  } catch { /* 壊れOUTは無視 */ }
+}
+const save = () => writeFileSync(OUT, JSON.stringify({ articles }, null, 2), 'utf-8');
 let totalSpots = 0, withCand = 0;
 for (const art of articles) {
+  const r = resume[art.id];
+  if (r && r.spots.length === art.spots.length) {
+    for (let i = 0; i < art.spots.length; i++) art.spots[i].candidates = r.spots[i].candidates || [];
+    art.spots.forEach((s) => { totalSpots++; if (s.candidates.length) withCand++; });
+    process.stderr.write(`= ${art.id} 既処理を再利用\n`);
+    save();
+    continue;
+  }
   for (let i = 0; i < art.spots.length; i++) {
     const spot = art.spots[i];
     totalSpots++;
@@ -103,15 +120,16 @@ for (const art of articles) {
     spot.candidates = [];
     for (let n = 0; n < cands.length; n++) {
       const localPath = join(IMGDIR, `${art.id}__${i + 1}__${n + 1}.jpg`);
-      const okdl = await download(cands[n].url, localPath);
+      const okdl = existsSync(localPath) ? true : await download(cands[n].url, localPath);
       if (okdl) spot.candidates.push({ url: cands[n].url, file: cands[n].file, localPath, w: cands[n].w, h: cands[n].h, desc: cands[n].desc });
-      await sleep(80);
+      await sleep(60);
     }
     if (spot.candidates.length) withCand++;
     process.stderr.write(`${spot.candidates.length ? '✓' : '✗'} ${art.id} #${i + 1} ${spot.name} (${spot.imageSubject}) → 候補${spot.candidates.length}枚\n`);
   }
+  save(); // 記事ごとに逐次保存（停止しても進捗が残る）
 }
-writeFileSync(OUT, JSON.stringify({ articles }, null, 2), 'utf-8');
+save();
 console.log(`\n=== 候補収集 ${withCand}/${totalSpots} スポットで候補あり ===`);
 console.log(`画像DL先: ${IMGDIR}`);
 console.log(`出力: ${OUT}`);
