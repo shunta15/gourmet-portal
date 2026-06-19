@@ -461,6 +461,22 @@ const MANUAL_OVERRIDES: Record<string, RegionKey | RegionKey[]> = {
   "wakayama-koyasan-course": "wakayama",
   "shiga-hieizan-enryakuji": "shiga",
   "gunma-tomioka-silk": "gunma",
+  // ── 街ガイド第10弾（15本・世界遺産級）: id→region 固定 ──
+  "kyoto-toji-temple": "kyoto",
+  "kyoto-daigoji": "kyoto",
+  "kyoto-kamo-shrines": "kyoto",
+  "nara-tanzan-shrine": "nara",
+  "hyogo-takeda-castle": "hyogo",
+  "hyogo-awaji-akashi": "hyogo",
+  "shiga-biwako-terrace": "shiga",
+  "wakayama-kimiidera-wakaura": "wakayama",
+  "aichi-korankei": "nagoya",
+  "aichi-okazaki-castle": "nagoya",
+  "shizuoka-fujinomiya": "shizuoka",
+  "shizuoka-oigawa-sumata": "shizuoka",
+  "hokkaido-toyako": "hokkaido",
+  "hokkaido-shiretoko": "hokkaido",
+  "kagoshima-kirishima": "kagoshima",
 };
 
 /**
