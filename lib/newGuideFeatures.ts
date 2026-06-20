@@ -1,2050 +1,4987 @@
-import type { Feature, FeatureArticle, RankItem } from "./data";
+import type { Feature, FeatureArticle } from "./data";
 
-const date = "2026-05-14";
-const author = "マチノワ編集部";
-
-// ——— Image URLs (Wikimedia Commons) ———
-const I = {
-  mm_blue:    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg",
-  mm_sakura:  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Minato_mirai_21_sakura-0332.jpg/1280px-Minato_mirai_21_sakura-0332.jpg",
-  cosmo:      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg",
-  kishamichi: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg",
-  kisha2:     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kisha-michi-Yokohama-02.jpg/1280px-Kisha-michi-Yokohama-02.jpg",
-  akarenga:   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG",
-  osanbashi:  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg",
-  osanbashi2: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg",
-  yamashita:  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg",
-  yamashita2: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG",
-  chinatown:  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg",
-  china_nite: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yokohama_Chinatowns_East_Gate_At_Night.jpg/1280px-Yokohama_Chinatowns_East_Gate_At_Night.jpg",
-  museum:     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg",
-  museum_n:   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG",
-  motomachi:  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG",
-  hachimangu: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg",
-  daibutsu:   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg",
-  hasedera:   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg",
-  yuigahama:  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg",
-  kenchoji:   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg",
-  enoshima:   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg",
-  enobch:     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg",
-  yumoto:     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg",
-  odawara:    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg",
-  odawara2:   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Odawara_Castle_02.jpg/1280px-Odawara_Castle_02.jpg",
-  dobuita:    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg",
-  miura:      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg",
-  miura2:     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Miura_Kaigan_02.jpg/1280px-Miura_Kaigan_02.jpg",
-  chigasaki:  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg",
-  lazona:     "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg",
-  yoko_sta:   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg",
-  noge:       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg",
-  shin_yoko:  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg",
-  tamapla:    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg",
-  kohoku:     "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg",
-};
-
-function s(
-  n: number, name: string, type: string, area: string,
-  purpose: string, desc: string, imgs: string[],
-  specs: { k: string; v: string }[], transit?: string,
-): RankItem {
-  return {
-    rank: `SPOT ${String(n).padStart(2, "0")}`,
-    rankNum: n,
-    name, cuisine: type, area, purpose, desc,
-    images: imgs, specs, transit,
-  };
-}
-
-function side(t: string, id: string, img: string) {
-  return { t, h: `/feature/${id}`, img };
-}
-
-// ═══════════════════════════════════════════════════════
-// ARTICLE DEFINITIONS (30本)
-// ═══════════════════════════════════════════════════════
+// 自動生成（脱テンプレ改修 2026-06-20）: テキスト/articleTypeを4ペルソナで多様化。スポット・画像は保持。
 
 export const NEW_GUIDE_FEATURES: Feature[] = [
-  // 1
   {
-    id: "new-minatomirai-date",
-    no: "NG-01", tag: "デート", kicker: "MINATOMIRAI DATE",
-    title: "みなとみらいデート5選。昼から夜景までつながる場所",
-    sub: "汽車道、コスモクロック、スカイガーデン。横浜の港を一日かけて歩く",
-    image: I.mm_blue,
+    "id": "new-minatomirai-date",
+    "no": "NG-01",
+    "tag": "デート",
+    "kicker": "MINATOMIRAI DATE",
+    "title": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
+    "sub": "海の上の遊歩道を渡り、観覧車を見上げ、芝生でひと息。タワーの展望フロアで夕景を待ち、最後は木のデッキで夜の港に灯がともるまで。横浜の海際を、昼から夜へ、ただ歩いてつないだ一日の随筆。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
   },
-  // 2
   {
-    id: "new-minatomirai-rainy-date",
-    no: "NG-02", tag: "雨の日", kicker: "MINATOMIRAI RAINY DATE",
-    title: "みなとみらい雨の日デート5選。濡れずに一日楽しめる場所",
-    sub: "カップヌードルミュージアム、横浜美術館、AIR CABIN。天気に強い港町のデート",
-    image: I.cosmo,
+    "id": "new-minatomirai-rainy-date",
+    "no": "NG-02",
+    "tag": "雨の日",
+    "kicker": "MINATOMIRAI RAINY DATE",
+    "title": "みなとみらい、雨でも濡れないデート半日コース。屋内でつなぐ一日",
+    "sub": "美術館からスカイガーデン、屋内ロープウェイまで。傘を畳んだまま歩ける港町の動線を一本に組んだ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
   },
-  // 3
   {
-    id: "new-sakuragicho-night-date",
-    no: "NG-03", tag: "デート", kicker: "SAKURAGICHO NIGHT DATE",
-    title: "桜木町夜デート5選。夜景と光が似合う場所",
-    sub: "汽車道の夜、コスモクロック21、AIR CABIN。桜木町から歩いて回る夜の港",
-    image: I.cosmo,
+    "id": "new-sakuragicho-night-date",
+    "no": "NG-03",
+    "tag": "デート",
+    "kicker": "SAKURAGICHO NIGHT DATE",
+    "title": "桜木町、夜の港を歩くデートさんぽ。光が水に落ちる時間に",
+    "sub": "汽車道の街灯、コスモクロックの色替わり、AIR CABINの空中散歩。みなとみらいの夜を地続きに歩く",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
   },
-  // 4
   {
-    id: "new-akarenga-date",
-    no: "NG-04", tag: "デート", kicker: "AKARENGA DATE",
-    title: "赤レンガ倉庫周辺デート3選。港の空気を感じる場所",
-    sub: "赤レンガ倉庫、象の鼻パーク、ハンマーヘッド。海沿いを歩くだけで成立するデート",
-    image: I.akarenga,
+    "id": "new-akarenga-date",
+    "no": "NG-04",
+    "tag": "デート",
+    "kicker": "AKARENGA DATE",
+    "title": "赤レンガ倉庫から始める、海との距離が変わる港デート",
+    "sub": "煉瓦の倉庫、象の鼻のテラス、客船が着く埠頭。歩くたびに海の見え方が一段ずつ近づいていく",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
   },
-  // 5
   {
-    id: "new-osanbashi-nightview-date",
-    no: "NG-05", tag: "デート", kicker: "OSANBASHI NIGHT VIEW",
-    title: "大さん橋周辺で夜景を見るデート3選",
-    sub: "大さん橋屋上デッキ、山下公園、港の見える丘公園。横浜夜景の三定番",
-    image: I.osanbashi,
+    "id": "new-osanbashi-nightview-date",
+    "no": "NG-05",
+    "tag": "デート",
+    "kicker": "OSANBASHI NIGHT VIEW",
+    "title": "大さん橋・山下公園・港の見える丘公園で外さない横浜夜景デート",
+    "sub": "高い展望台に登らなくても港の夜は十分に美しい。歩いてつなげる横浜夜景の三定番",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
   },
-  // 6
   {
-    id: "new-bashamichi-architecture",
-    no: "NG-06", tag: "街歩き", kicker: "BASHAMICHI ARCHITECTURE",
-    title: "馬車道レトロ建築さんぽ5選。明治・大正の洋館を歩く",
-    sub: "旧横浜正金銀行、旧生糸検査所、県庁本庁舎。関内で重なる時代の層",
-    image: I.museum,
+    "id": "new-bashamichi-architecture",
+    "no": "NG-06",
+    "tag": "街歩き",
+    "kicker": "BASHAMICHI ARCHITECTURE",
+    "title": "馬車道から日本大通りへ、洋館を歩く。明治・大正の石が残る関内さんぽ",
+    "sub": "旧横浜正金銀行、旧生糸検査所、県庁キングの塔。関内に積もった時代の層を、足の裏で確かめる",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
   },
-  // 7
   {
-    id: "new-kannai-nihondori",
-    no: "NG-07", tag: "街歩き", kicker: "KANNAI NIHONDORI WALK",
-    title: "関内・日本大通りさんぽ5選。横浜発祥の街を歩く",
-    sub: "日本大通り、開港資料館、スタジアム界隈。横浜らしさが残る中心地の歩き方",
-    image: I.museum_n,
+    "id": "new-kannai-nihondori",
+    "no": "NG-07",
+    "tag": "街歩き",
+    "kicker": "KANNAI NIHONDORI WALK",
+    "title": "関内・日本大通りを歩く。横浜が生まれた場所をたどるさんぽ",
+    "sub": "幅三十メートルの並木道から、ジャックの塔、横浜公園、開港資料館、馬車道へ。石とレンガに残る開港の記憶を拾いながら",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
   },
-  // 8
   {
-    id: "new-yamashita-date",
-    no: "NG-08", tag: "デート", kicker: "YAMASHITA DATE",
-    title: "山下公園周辺デート5選。港と丘をつなぐ横浜の定番",
-    sub: "山下公園、氷川丸、港の見える丘公園、山手洋館。海から丘へ歩くコース",
-    image: I.yamashita,
+    "id": "new-yamashita-date",
+    "no": "NG-08",
+    "tag": "デート",
+    "kicker": "YAMASHITA DATE",
+    "title": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
+    "sub": "海沿いの遊歩道で始め、氷川丸とタワーを挟み、坂を上って丘の上の港の眺めで締める一日",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
   },
-  // 9
   {
-    id: "new-chinatown-sightseeing",
-    no: "NG-09", tag: "観光", kicker: "CHINATOWN SIGHTSEEING",
-    title: "横浜中華街周辺で遊ぶ5選。食べる以外の楽しみ方",
-    sub: "関帝廟、媽祖廟、山下公園、元町。中華街を起点に広げる横浜散策",
-    image: I.chinatown,
+    "id": "new-chinatown-sightseeing",
+    "no": "NG-09",
+    "tag": "観光",
+    "kicker": "CHINATOWN SIGHTSEEING",
+    "title": "横浜中華街から港まで、食べる以外を歩く一日。",
+    "sub": "関帝廟と媽祖廟の朱、山下公園の海風、元町の坂道。胃袋以外の感覚で味わう横浜散策。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
   },
-  // 10
   {
-    id: "new-motomachi-yamate",
-    no: "NG-10", tag: "街歩き", kicker: "MOTOMACHI YAMATE WALK",
-    title: "元町・山手さんぽ5選。坂と洋館を歩く横浜",
-    sub: "元町ストリート、外国人墓地、ブラフ18番館、山手イタリア山庭園。港が見える丘の街",
-    image: I.motomachi,
+    "id": "new-motomachi-yamate",
+    "no": "NG-10",
+    "tag": "街歩き",
+    "kicker": "MOTOMACHI YAMATE WALK",
+    "title": "元町から山手の坂を歩く。横浜の居留地時代をたどる午後",
+    "sub": "元町ストリートを抜け、外国人墓地の脇を上り、ブラフ18番館とイタリア山庭園を経て、港の見える丘へ。坂のひとつひとつに開港の記憶がある",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
   },
-  // 11
   {
-    id: "new-yokohama-station-rainy",
-    no: "NG-11", tag: "雨の日", kicker: "YOKOHAMA STATION RAINY DATE",
-    title: "横浜駅周辺雨の日デート5選。屋内でも飽きない場所",
-    sub: "そごう、ジョイナス、ベイクォーター、アンパンマン。雨でも一日動ける横浜駅",
-    image: I.yoko_sta,
+    "id": "new-yokohama-station-rainy",
+    "no": "NG-11",
+    "tag": "雨の日",
+    "kicker": "YOKOHAMA STATION RAINY DATE",
+    "title": "横浜駅、雨の日は地下でつながる。傘を畳んだまま回る屋内さんぽ",
+    "sub": "そごう、ポルタ、ジョイナス。東口も西口も、地下通路でひとつながりになっている街",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
   },
-  // 12
   {
-    id: "new-yokohama-station-bored",
-    no: "NG-12", tag: "街歩き", kicker: "YOKOHAMA STATION BORED",
-    title: "横浜駅周辺で暇つぶし5選。時間ができたときの定番",
-    sub: "東口ベイクォーター、鶴屋町、天理スタミナラーメン、西口地下街。駅から徒歩圏内の過ごし方",
-    image: I.yoko_sta,
+    "id": "new-yokohama-station-bored",
+    "no": "NG-12",
+    "tag": "街歩き",
+    "kicker": "YOKOHAMA STATION BORED",
+    "title": "横浜駅、空いた時間を歩く。東口から西口、そして海側へ",
+    "sub": "地下街でコーヒーを一杯。気が向けば美術館か展望台まで。横浜駅は手持ち無沙汰をいつのまにか散歩に変えてくれる",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
   },
-  // 13
   {
-    id: "new-noge-bar-hop",
-    no: "NG-13", tag: "街歩き", kicker: "NOGE PRE-DRINK WALK",
-    title: "野毛ではしご酒前に歩きたい場所3選",
-    sub: "野毛山動物園、野毛山公園、野毛本通り。飲む前の30分で行ける場所",
-    image: I.noge,
+    "id": "new-noge-bar-hop",
+    "no": "NG-13",
+    "tag": "街歩き",
+    "kicker": "NOGE PRE-DRINK WALK",
+    "title": "野毛、昭和の飲み屋街を歩く夜。横浜・桜木町の路地酒場さんぽ",
+    "sub": "都橋商店街、野毛本通り、日ノ出町ガード下。みなとみらいの灯の裏側で続く大人の夜",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
   },
-  // 14
   {
-    id: "new-shin-yokohama-bored",
-    no: "NG-14", tag: "街歩き", kicker: "SHIN-YOKOHAMA TIME FILLER",
-    title: "新横浜で時間調整するなら5選",
-    sub: "ラーメン博物館、日産スタジアム、新横浜公園、鶴見川。新幹線の前後に使いやすい場所",
-    image: I.shin_yoko,
+    "id": "new-shin-yokohama-bored",
+    "no": "NG-14",
+    "tag": "街歩き",
+    "kicker": "SHIN-YOKOHAMA TIME FILLER",
+    "title": "新横浜、新幹線待ちの数時間を歩く。ライブ前後にも効く時間つぶし",
+    "sub": "ラーメン博物館からスケートリンク、鶴見川沿いの公園まで。乗換の合間が、ちょっとした遠出に変わる駅",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
   },
-  // 15
   {
-    id: "new-yokohama-arena-spots",
-    no: "NG-15", tag: "街歩き", kicker: "YOKOHAMA ARENA SPOTS",
-    title: "横浜アリーナ前後に寄りたい場所5選",
-    sub: "ラーメン博物館、新横浜プリンスペペ、新横浜公園、鶴見川沿い。ライブ前後の時間の使い方",
-    image: I.shin_yoko,
+    "id": "new-yokohama-arena-spots",
+    "no": "NG-15",
+    "tag": "街歩き",
+    "kicker": "YOKOHAMA ARENA SPOTS",
+    "title": "新横浜、ライブの前後を歩く。横浜アリーナ徒歩圏のさんぽ",
+    "sub": "ラーメン博物館の昭和、鶴見川の風、駅ビルのレストラン街。開演までの時間と、終演後の余韻が落ち着く場所を、駅から歩いた順に書いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
   },
-  // 16
   {
-    id: "new-kamakura-komachi",
-    no: "NG-16", tag: "街歩き", kicker: "KAMAKURA KOMACHI WALK",
-    title: "鎌倉小町通り周辺さんぽ5選。食べながら歩く鎌倉の入口",
-    sub: "小町通り、鶴岡八幡宮、段葛、若宮大路。鎌倉駅から歩いて回れる定番コース",
-    image: I.hachimangu,
+    "id": "new-kamakura-komachi",
+    "no": "NG-16",
+    "tag": "街歩き",
+    "kicker": "KAMAKURA KOMACHI WALK",
+    "title": "鎌倉、小町通りから八幡宮へ歩く。参道さんぽの半日",
+    "sub": "食べ歩きの湯気、石段の上の静けさ、若宮大路の長い参道",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
   },
-  // 17
   {
-    id: "new-hase-yuigahama-date",
-    no: "NG-17", tag: "デート", kicker: "HASE YUIGAHAMA DATE",
-    title: "長谷・由比ヶ浜デート5選。大仏と海を一日で歩く",
-    sub: "長谷寺、鎌倉大仏、由比ヶ浜、御霊神社。江ノ電で移動するゆっくりした鎌倉デート",
-    image: I.hasedera,
+    "id": "new-hase-yuigahama-date",
+    "no": "NG-17",
+    "tag": "デート",
+    "kicker": "HASE YUIGAHAMA DATE",
+    "title": "長谷・由比ヶ浜デート半日コース。大仏から海へ、江ノ電で下る一日",
+    "sub": "高徳院から長谷寺、由比ヶ浜へ。山の寺を下って海に出る、鎌倉・長谷の王道どり",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
   },
-  // 18
   {
-    id: "new-enoshima-evening-date",
-    no: "NG-18", tag: "デート", kicker: "ENOSHIMA EVENING DATE",
-    title: "江の島夕方デート5選。日没前後が一番きれいな場所",
-    sub: "シーキャンドル、稚児ヶ淵、片瀬東浜、龍恋の鐘。夕景を軸に回る江の島コース",
-    image: I.enoshima,
+    "id": "new-enoshima-evening-date",
+    "no": "NG-18",
+    "tag": "デート",
+    "kicker": "ENOSHIMA EVENING DATE",
+    "title": "江ノ島、夕陽を追いかけるデート。サンセットから夜景まで",
+    "sub": "シーキャンドルが灯り、相模湾が金色から藍色へ変わる時間を二人で",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
   },
-  // 19
   {
-    id: "new-kamakura-rainy",
-    no: "NG-19", tag: "雨の日", kicker: "KAMAKURA RAINY DAY",
-    title: "鎌倉雨の日観光5選。雨でも楽しめる寺社と屋根のある場所",
-    sub: "長谷寺、建長寺、鎌倉文学館、小町通り。雨の鎌倉で予定を崩さない",
-    image: I.kenchoji,
+    "id": "new-kamakura-rainy",
+    "no": "NG-19",
+    "tag": "雨の日",
+    "kicker": "KAMAKURA RAINY DAY",
+    "title": "鎌倉、雨の日を歩く。濡れた苔と屋根を打つ音をめぐる半日",
+    "sub": "鎌倉国宝館から長谷寺、円覚寺、建長寺、歴史文化交流館へ。傘の下でしか出会えない鎌倉がある",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
   },
-  // 20
   {
-    id: "new-kawasaki-rainy-date",
-    no: "NG-20", tag: "雨の日", kicker: "KAWASAKI RAINY DATE",
-    title: "川崎駅周辺雨の日デート5選。駅直結で濡れずに過ごせる場所",
-    sub: "ラゾーナ川崎、ミューザ川崎、モアーズ、アトレ、チッタデッラ。雨に強い川崎駅圏内",
-    image: I.lazona,
+    "id": "new-kawasaki-rainy-date",
+    "no": "NG-20",
+    "tag": "雨の日",
+    "kicker": "KAWASAKI RAINY DATE",
+    "title": "川崎、雨でも傘がいらない一日。ラゾーナから映画まで濡れずに歩く",
+    "sub": "ラゾーナ川崎、チネチッタ、藤子・F・不二雄ミュージアム。降っても予定が崩れない川崎の屋内",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
   },
-  // 21
   {
-    id: "new-musashikosugi-family",
-    no: "NG-21", tag: "家族", kicker: "MUSASHI-KOSUGI FAMILY",
-    title: "武蔵小杉で子連れおでかけ5選。駅近で子どもが喜ぶ場所",
-    sub: "等々力緑地、中原平和公園、武蔵小杉周辺公園、コスギサード。川崎市のちょうどいい規模感",
-    image: I.lazona,
+    "id": "new-musashikosugi-family",
+    "no": "NG-21",
+    "tag": "家族",
+    "kicker": "MUSASHI-KOSUGI FAMILY",
+    "title": "武蔵小杉、子連れで丸一日。タワマン街の遊び場めぐり",
+    "sub": "等々力緑地の芝生も、グランツリーの屋内も。天気に左右されない街の懐の深さ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
   },
-  // 22
   {
-    id: "new-tamaplaza-azamino",
-    no: "NG-22", tag: "街歩き", kicker: "TAMAPLAZA AZAMINO WALK",
-    title: "たまプラーザ・あざみ野さんぽ5選。緑と商業施設が混ざる郊外の歩き方",
-    sub: "たまプラーザテラス、こどもの国、恩田川、あざみ野ガーデンズ。週末に使いやすい街",
-    image: I.tamapla,
+    "id": "new-tamaplaza-azamino",
+    "no": "NG-22",
+    "tag": "街歩き",
+    "kicker": "TAMAPLAZA AZAMINO WALK",
+    "title": "たまプラーザからあざみ野を歩く。子どもと一日、横浜北部さんぽ",
+    "sub": "駅直結のテラスから、こどもの国の牧場、二俣川の植物園、あざみ野の小さな庭、都筑の緑道へ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
   },
-  // 23
   {
-    id: "new-hakoneyumoto",
-    no: "NG-23", tag: "観光", kicker: "HAKONE YUMOTO WALK",
-    title: "箱根湯本駅周辺さんぽ5選。温泉街を歩いて感じる箱根の入口",
-    sub: "湯本温泉街、早川沿い、阿弥陀寺、旧街道石畳、足湯スポット。箱根の玄関口を味わう",
-    image: I.yumoto,
+    "id": "new-hakoneyumoto",
+    "no": "NG-23",
+    "tag": "観光",
+    "kicker": "HAKONE YUMOTO WALK",
+    "title": "箱根湯本で過ごす温泉半日。湯につかり、老舗の味を歩く",
+    "sub": "新宿からロマンスカーで約85分。箱根の玄関口で、温泉・蕎麦・土産を一日に収める",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
   },
-  // 24
   {
-    id: "new-odawara",
-    no: "NG-24", tag: "観光", kicker: "ODAWARA HALF-DAY",
-    title: "小田原駅周辺半日観光5選。城下町を歩いて感じる小田原",
-    sub: "小田原城、報徳二宮神社、ミナカ小田原、なりわい交流館、小田原漁港。箱根の手前で寄れる街",
-    image: I.odawara,
+    "id": "new-odawara",
+    "no": "NG-24",
+    "tag": "観光",
+    "kicker": "ODAWARA HALF-DAY",
+    "title": "小田原、城と海をつなぐ城下町さんぽ。天守から漁港・文学館まで歩く",
+    "sub": "戦国の城、蒲鉾の里、早川の漁港、そして文人の館。海でつながる城下町をひと歩き",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
   },
-  // 25
   {
-    id: "new-chigasaki-beach",
-    no: "NG-25", tag: "街歩き", kicker: "CHIGASAKI BEACH WALK",
-    title: "茅ヶ崎海沿いさんぽ5選。サザンと烏帽子岩の街を歩く",
-    sub: "サザンビーチ、烏帽子岩、ヘッドランド、茅ヶ崎公園、柳島海岸。湘南のゆるい空気感",
-    image: I.chigasaki,
+    "id": "new-chigasaki-beach",
+    "no": "NG-25",
+    "tag": "街歩き",
+    "kicker": "CHIGASAKI BEACH WALK",
+    "title": "茅ヶ崎、海風をたどって歩く一日。サザンビーチから里山の丘まで",
+    "sub": "白い砂浜と烏帽子岩、サーフカルチャーの匂い。潮の音をなぞって茅ヶ崎をひと巡りする",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
   },
-  // 26
   {
-    id: "new-fujisawa-bored",
-    no: "NG-26", tag: "街歩き", kicker: "FUJISAWA TIME FILLER",
-    title: "藤沢駅周辺で時間調整5選。江の島の前後に使いやすい場所",
-    sub: "遊行寺、藤沢本町商店街、ふじさわ宿交流館、境川。江の島に向かう前の藤沢の過ごし方",
-    image: I.enobch,
+    "id": "new-fujisawa-bored",
+    "no": "NG-26",
+    "tag": "街歩き",
+    "kicker": "FUJISAWA TIME FILLER",
+    "title": "藤沢、江ノ電の起点をぶらり歩く。湘南の玄関口で過ごす空き時間",
+    "sub": "藤沢駅前から鵠沼の砂浜、江ノ島、そして遊行寺の参道へ。乗り換えの一駅で終わらせない街の歩き方",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
   },
-  // 27
   {
-    id: "new-yokosuka-dobuita",
-    no: "NG-27", tag: "街歩き", kicker: "YOKOSUKA DOBUITA WALK",
-    title: "横須賀どぶ板通り周辺さんぽ5選。米軍と港町が混ざる街",
-    sub: "どぶ板通り、ヴェルニー公園、軍港めぐり、横須賀美術館、猿島。横須賀らしさを歩く",
-    image: I.dobuita,
+    "id": "new-yokosuka-dobuita",
+    "no": "NG-27",
+    "tag": "街歩き",
+    "kicker": "YOKOSUKA DOBUITA WALK",
+    "title": "横須賀どぶ板通りから始める半日コース。米軍基地の街で日本離れした一日を歩く",
+    "sub": "スカジャンの商店街から戦艦三笠、無人島の要塞跡まで。横須賀だけのアメリカンと海軍史を一筆書きでつなぐ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
   },
-  // 28
   {
-    id: "new-miura-kaigan",
-    no: "NG-28", tag: "観光", kicker: "MIURA KAIGAN DAY TRIP",
-    title: "三浦海岸日帰りさんぽ5選。京急で行く半島の先端",
-    sub: "三浦海岸、城ヶ島、三崎港、毘沙門天、剣崎灯台。マグロと海と断崖のある三浦半島",
-    image: I.miura,
+    "id": "new-miura-kaigan",
+    "no": "NG-28",
+    "tag": "観光",
+    "kicker": "MIURA KAIGAN DAY TRIP",
+    "title": "三浦海岸から三崎港へ、海を一日歩く半日コース。砂浜・城ヶ島・マグロまで",
+    "sub": "京急で約1時間20分。白い砂浜から相模湾の岬、漁港のマグロまで、三浦半島の先端をひとつながりに味わう一日",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
   },
-  // 29
   {
-    id: "new-kohoku-nt-family",
-    no: "NG-29", tag: "家族", kicker: "KOHOKU NT FAMILY",
-    title: "港北ニュータウン子連れおでかけ5選。整備された街で半日遊ぶ",
-    sub: "センター北・南、横浜市歴史博物館、大塚・歳勝土遺跡公園、花木園。港北区の子連れ定番",
-    image: I.kohoku,
+    "id": "new-kohoku-nt-family",
+    "no": "NG-29",
+    "tag": "家族",
+    "kicker": "KOHOKU NT FAMILY",
+    "title": "港北ニュータウンで子どもと過ごす休日。センター北・南をつなぐ家族の半日",
+    "sub": "観覧車のあるモール、芝生の公園、弥生の遺跡、緑道、歴史博物館。計画都市ならではの徒歩圏に、子連れの一日がきれいに収まる",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
   },
-  // 30
   {
-    id: "new-yokohama-first-date",
-    no: "NG-30", tag: "デート", kicker: "YOKOHAMA FIRST DATE",
-    title: "横浜で初デートに使いやすい街5選",
-    sub: "みなとみらい、元町・中華街、桜木町、関内、横浜駅西口。初めてのデートで外さない横浜の選び方",
-    image: I.mm_blue,
-  }];
-
-// ═══════════════════════════════════════════════════════
-// ARTICLE DETAIL (FeatureArticle)
-// ═══════════════════════════════════════════════════════
+    "id": "new-yokohama-first-date",
+    "no": "NG-30",
+    "tag": "デート",
+    "kicker": "YOKOHAMA FIRST DATE",
+    "title": "横浜、初デートの半日コース。港町を歩いて中華街で締める一日",
+    "sub": "みなとみらいから中華街へ。横浜が初対面の相手に強い理由を、歩く順に追っていく",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+  }
+];
 
 export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
-
-  // ─── 1. みなとみらいデート5選 ───
   "new-minatomirai-date": {
-    id: "new-minatomirai-date",
-    no: "NG-01", articleType: "guide",
-    kicker: "MINATOMIRAI DATE",
-    title: "みなとみらいデート5選。昼から夜景までつながる場所",
-    titleHTML: "みなとみらい<br>デート5選。",
-    subtitle: "汽車道、コスモクロック、スカイガーデン。横浜の港を一日かけて歩く",
-    lede: "みなとみらいは横浜博覧会（1989年）を契機に開発された湾岸エリアで、桜木町〜みなとみらい間の1.5kmに観覧車・ランドマークタワー・ショッピング・港湾施設が一直線で並ぶ。対象は初〜3回目のデートで横浜の代表的な景観を網羅したいカップル、写真スポットを多く回りたい2人。標準は13:00集合・20:30解散の7時間30分コース、予算は1人6,000〜12,000円。ここでは時系列で歩きやすいみなとみらいの5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.mm_blue,
-    ranking: [
-      s(1, "汽車道", "プロムナード", "みなとみらい",
-        "昼に歩く。海風と鉄橋が写真になる",
-        "汽車道は1997年整備、旧横浜港駅の貨物線路を活用した約500mの遊歩道。海面の上を歩く構造で、両側に海と街の景色が開ける。「会話を切らさずに次の目的地に向かいたい」2人に向く動線。桜木町駅から徒歩約5分でアクセスでき、夕方17〜18時の薄明時間に渡るとコスモワールド・ランドマークのライトアップと夕日が重なる構図が撮れる。雨天時は屋根がないので滑りにくい靴推奨、強風時は欄干から離れて歩くのが安全。次のコスモワールド方面まで徒歩7分で繋がる。",
-        [I.kishamichi, I.kisha2],
-        [
-          { k: "最寄り駅", v: "桜木町駅 徒歩5分" },
-          { k: "所要時間", v: "片道20〜30分" },
-          { k: "雨の日", v: "✕ 屋外のため不向き" },
-          { k: "おすすめ時間", v: "午前〜昼" }]),
-      s(2, "コスモクロック21 / コスモワールド", "観覧車・遊園地", "みなとみらい",
-        "夕方から夜。動きながら眺める横浜の夜景",
-        "1989年開園のコスモワールド内、直径100m・最高地点112.5mの観覧車「コスモクロック21」が湾岸の象徴。「乗らずに眺めるだけでも絵になる」設計で、外からの撮影スポットとしても優秀。1回800〜900円程度、所要約15分。土日19〜21時はピーク混雑で30〜60分待ちが発生するため、平日夜または閉園前22時頃が現実的。ジェットコースター・お化け屋敷・水のアトラクションなど他の乗り物も併設、入園無料・乗り物個別チケット制。悪天候時は乗車中の視界が悪くなり、強風時は運休することがある。",
-        [I.cosmo, I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩3分" },
-          { k: "料金目安", v: "観覧車 900円（変動あり）" },
-          { k: "雨の日", v: "△ 観覧車は可、遊園地は一部制限あり" },
-          { k: "おすすめ時間", v: "夕方〜夜" }]),
-      s(3, "臨港パーク", "公園・水辺", "みなとみらい",
-        "開放感が欲しいときに。芝生と海風で休む",
-        "臨港パークはパシフィコ横浜に隣接する約7.2haの海沿い公園で、芝生広場とベイブリッジを望む景観が広がる。「観覧車の混雑を抜けて少し休みたい」「ピクニック気分で過ごしたい」2人に最適な休憩スポット。ベンチが豊富で、コンビニで買った飲み物片手に30〜60分過ごせる。桜木町駅から徒歩約12分、みなとみらい駅から徒歩約5分。夜のライトアップは22時頃まで点灯。強風日や雨天時は屋外滞在が辛いため、隣接のパシフィコ横浜館内に避難すると快適。",
-        [I.mm_blue, I.mm_sakura],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩8分" },
-          { k: "所要時間", v: "30分〜1時間" },
-          { k: "雨の日", v: "✕ 屋外芝生エリア" },
-          { k: "おすすめ時間", v: "昼〜夕方" }]),
-      s(4, "横浜ランドマークタワー スカイガーデン", "展望台", "みなとみらい",
-        "高さ273mから見下ろす横浜全景",
-        "1993年開業、高さ296mのランドマークタワー69階に「スカイガーデン」展望フロアが入る。地上273mの屋内型展望スペースで、横浜港・東京湾・東京方面の景色が360度近く広がる。「待ち時間を抑えて夜景を撮りたい」「ベンチでゆっくりくつろぎたい」2人に向く。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動するため公式サイトで確認。東京の高い展望台と比べて待ち時間が短く、土日夜でも15〜30分で入れることが多い。雨の日でも雲の上に出ることがあり、視界が劇的に変わる景色になることもある。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 直結" },
-          { k: "料金", v: "大人 1,000円" },
-          { k: "雨の日", v: "◎ 屋内・展望フロア" },
-          { k: "おすすめ時間", v: "夕暮れ〜夜" }]),
-      s(5, "大さん橋国際客船ターミナル", "展望デッキ", "中区・山下",
-        "夜景の定番。屋上デッキで横浜港を見渡す",
-        "1894年開港の横浜港大さん橋は2002年リニューアル、屋上「クジラの背中」と呼ばれる木のデッキは入場無料・24時間開放。「予算を抑えて港の夜景を楽しみたい」大学生・初デート層に最も刺さるスポット。ランドマーク・コスモクロック・ベイブリッジ・みなとみらい全景が同時に視界に入る構図が撮れる。日本大通り駅から徒歩7分、桜木町駅から徒歩約15分。夜23時以降は人が減り、写真と語らいに集中できる時間帯。風が強い日（特に冬12〜2月）は体感気温が低いため防寒必須。",
-        [I.osanbashi, I.osanbashi2],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩7分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△ 一部屋内あり、デッキは雨天不可" },
-          { k: "おすすめ時間", v: "夕方〜夜" }])],
-    sideArticles: [
-      side("みなとみらい雨の日デート5選", "new-minatomirai-rainy-date", I.cosmo),
-      side("大さん橋夜景デート3選", "new-osanbashi-nightview-date", I.osanbashi)],
-    quote: "みなとみらいは順番を決めてから来ると、倍楽しくなる。",
-    quoteCite: author,
-    closing: "標準動線: 桜木町駅13:00→汽車道（13:00〜13:30）→コスモクロック21・コスモワールド（13:30〜15:30）→臨港パークで休憩（15:30〜16:30）→ランドマーク スカイガーデン（17:00〜19:00 夕景〜夜景）→大さん橋屋上で夜景観賞（19:30〜20:30）。所要7時間30分、予算は1人6,000〜12,000円。土日18〜21時はコスモクロック・展望台ともピーク混雑、平日デートまたは早めの動き出しが現実的。雨の日はコスモワールド屋外を諦め、ランドマーク展望＋クイーンズスクエア＋マークイズの屋内中心に切り替える。失敗しやすいのは「観覧車の待ち時間を読み違えて他を回れない」「大さん橋の冬の体感寒さで滞在を短縮」「閉店時間を見落とす」。事前に運行時間・営業時間・予約状況を公式サイトで確認、防寒装備を冬は必ず持参。この記事は横浜デートを初めて組み立てる人、王道の代表的なスポットを網羅したい2人に向く。",
+    "id": "new-minatomirai-date",
+    "no": "NG-01",
+    "articleType": "guide",
+    "kicker": "MINATOMIRAI DATE",
+    "title": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
+    "titleHTML": "みなとみらい、昼の海から夜景へ歩くデート。<br>汽車道から大さん橋まで港をたどる",
+    "subtitle": "海の上の遊歩道を渡り、観覧車を見上げ、芝生でひと息。タワーの展望フロアで夕景を待ち、最後は木のデッキで夜の港に灯がともるまで。横浜の海際を、昼から夜へ、ただ歩いてつないだ一日の随筆。",
+    "lede": "みなとみらいの昼は、いつも少し風がある。桜木町の改札を抜けると正面に海が広がっていて、潮の匂いと観覧車のシルエットが、もう先で待っているのが見える。横浜博覧会のあとに生まれたこの湾岸は、桜木町からみなとみらいまでのわずか一・五キロのあいだに、観覧車も、塔も、港の施設も、ぜんぶ一直線に並べてしまった街だ。だから歩く順番に迷うことがない。海に沿って、ただ前へ進めばいい。私たちはこの日、昼の明るい海から歩きはじめて、夜景まで二人で連れ立っていくことにした。最初に足を乗せたのは、海の上をまっすぐ伸びる汽車道だ。板張りの遊歩道の両側に水面が開け、会話が途切れても気まずくならない。そういう街の歩き方を、ここから日が落ちるまでの時間に書きとめておきたい。なお観覧車の運行や展望フロアの時間は折にふれて変わるので、出かける前にそれぞれの公式をのぞいておくと、当日あわてずにすむ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "汽車道",
+        "cuisine": "プロムナード",
+        "area": "みなとみらい",
+        "purpose": "昼に歩く。海風と鉄橋が写真になる",
+        "desc": "汽車道は1997年整備、旧横浜港駅の貨物線路を活用した約500mの遊歩道。海面の上を歩く構造で、両側に海と街の景色が開ける。「会話を切らさずに次の目的地に向かいたい」2人に向く動線。桜木町駅から徒歩約5分でアクセスでき、夕方17〜18時の薄明時間に渡るとコスモワールド・ランドマークのライトアップと夕日が重なる構図が撮れる。雨天時は屋根がないので滑りにくい靴推奨、強風時は欄干から離れて歩くのが安全。次のコスモワールド方面まで徒歩7分で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kisha-michi-Yokohama-02.jpg/1280px-Kisha-michi-Yokohama-02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 徒歩5分"
+          },
+          {
+            "k": "所要時間",
+            "v": "片道20〜30分"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外のため不向き"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "午前〜昼"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "コスモクロック21 / コスモワールド",
+        "cuisine": "観覧車・遊園地",
+        "area": "みなとみらい",
+        "purpose": "夕方から夜。動きながら眺める横浜の夜景",
+        "desc": "1989年開園のコスモワールド内、直径100m・最高地点112.5mの観覧車「コスモクロック21」が湾岸の象徴。「乗らずに眺めるだけでも絵になる」設計で、外からの撮影スポットとしても優秀。1回800〜900円程度、所要約15分。土日19〜21時はピーク混雑で30〜60分待ちが発生するため、平日夜または閉園前22時頃が現実的。ジェットコースター・お化け屋敷・水のアトラクションなど他の乗り物も併設、入園無料・乗り物個別チケット制。悪天候時は乗車中の視界が悪くなり、強風時は運休することがある。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩3分"
+          },
+          {
+            "k": "料金目安",
+            "v": "観覧車 900円（変動あり）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 観覧車は可、遊園地は一部制限あり"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "臨港パーク",
+        "cuisine": "公園・水辺",
+        "area": "みなとみらい",
+        "purpose": "開放感が欲しいときに。芝生と海風で休む",
+        "desc": "臨港パークはパシフィコ横浜に隣接する約7.2haの海沿い公園で、芝生広場とベイブリッジを望む景観が広がる。「観覧車の混雑を抜けて少し休みたい」「ピクニック気分で過ごしたい」2人に最適な休憩スポット。ベンチが豊富で、コンビニで買った飲み物片手に30〜60分過ごせる。桜木町駅から徒歩約12分、みなとみらい駅から徒歩約5分。夜のライトアップは22時頃まで点灯。強風日や雨天時は屋外滞在が辛いため、隣接のパシフィコ横浜館内に避難すると快適。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Minato_mirai_21_sakura-0332.jpg/1280px-Minato_mirai_21_sakura-0332.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩8分"
+          },
+          {
+            "k": "所要時間",
+            "v": "30分〜1時間"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外芝生エリア"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "昼〜夕方"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "横浜ランドマークタワー スカイガーデン",
+        "cuisine": "展望台",
+        "area": "みなとみらい",
+        "purpose": "高さ273mから見下ろす横浜全景",
+        "desc": "1993年開業、高さ296mのランドマークタワー69階に「スカイガーデン」展望フロアが入る。地上273mの屋内型展望スペースで、横浜港・東京湾・東京方面の景色が360度近く広がる。「待ち時間を抑えて夜景を撮りたい」「ベンチでゆっくりくつろぎたい」2人に向く。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動するため公式サイトで確認。東京の高い展望台と比べて待ち時間が短く、土日夜でも15〜30分で入れることが多い。雨の日でも雲の上に出ることがあり、視界が劇的に変わる景色になることもある。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "大人 1,000円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内・展望フロア"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕暮れ〜夜"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "大さん橋国際客船ターミナル",
+        "cuisine": "展望デッキ",
+        "area": "中区・山下",
+        "purpose": "夜景の定番。屋上デッキで横浜港を見渡す",
+        "desc": "1894年開港の横浜港大さん橋は2002年リニューアル、屋上「クジラの背中」と呼ばれる木のデッキは入場無料・24時間開放。「予算を抑えて港の夜景を楽しみたい」大学生・初デート層に最も刺さるスポット。ランドマーク・コスモクロック・ベイブリッジ・みなとみらい全景が同時に視界に入る構図が撮れる。日本大通り駅から徒歩7分、桜木町駅から徒歩約15分。夜23時以降は人が減り、写真と語らいに集中できる時間帯。風が強い日（特に冬12〜2月）は体感気温が低いため防寒必須。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩7分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 一部屋内あり、デッキは雨天不可"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "みなとみらい雨の日デート5選",
+        "h": "/feature/new-minatomirai-rainy-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+      },
+      {
+        "t": "大さん橋夜景デート3選",
+        "h": "/feature/new-osanbashi-nightview-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+      }
+    ],
+    "quote": "海の上の遊歩道から、木のデッキの夜景まで。みなとみらいは、昼と夜のあいだを歩いて渡れる街だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "汽車道の板を踏みながら、まずは海の上をゆっくり渡っていく。旧横浜港駅の貨物線路を活かした五百メートルほどの遊歩道は、両側に海と街の景色をいっぺんに開いてくれて、歩いているだけで気分がほどけていく。渡りきった先には、コスモワールドの観覧車コスモクロック21が湾岸の空に大きく回っている。乗ってもいいし、乗らずに見上げるだけでも絵になる。私たちは外から写真を撮って、しばらく回転を眺めていた。観覧車の人波を抜けたら、臨港パークの芝生でひと休み。パシフィコ横浜の隣に広がる海沿いの公園で、ベイブリッジを遠くに望みながら芝に腰を下ろすと、さっきまでの賑わいが嘘のように静かになる。日が傾きはじめたら、いよいよ高い場所へ。ランドマークタワー六十九階のスカイガーデンに上がると、地上二百七十三メートルの窓いっぱいに横浜港と東京湾、その先の東京方面までが広がって、夕景がゆっくり夜景へと色を変えていくのを、ガラス越しに二人で見送る。展望フロアを下りる頃にはもう街は夜だ。最後に向かうのは大さん橋。クジラの背中と呼ばれる木のデッキは入場無料で夜も開いていて、足の下のうねる木の感触ごと、みなとみらいの灯りと行き交う船を独り占めできる。昼の海ではじまった一日が、海辺の夜景でしずかに閉じていく。冬は港の風が思いのほか冷えるので、上に羽織るものをひとつ多めに。坂はないけれど距離はそれなりに歩くから、足になじんだ靴で出かけたい。海に沿って前へ進むだけの一日の、その手応えが、帰りの電車でもまだ足に残っている。営業時間や運行・予約の状況は移ろいやすいので、足を運ぶ前にそれぞれの公式で一度たしかめておきたい。"
   },
-
-  // ─── 2. みなとみらい雨の日デート5選 ───
   "new-minatomirai-rainy-date": {
-    id: "new-minatomirai-rainy-date",
-    no: "NG-02", articleType: "guide",
-    kicker: "MINATOMIRAI RAINY DATE",
-    title: "みなとみらい雨の日デート5選。濡れずに一日楽しめる場所",
-    titleHTML: "みなとみらい<br>雨の日デート5選。",
-    subtitle: "カップヌードルミュージアム、横浜美術館、AIR CABIN。天気に強い港町のデート",
-    lede: "みなとみらいは雨の日に強い屋内施設の密度が高いエリア。美術館・ミュージアム・展望台・大型商業施設・屋内型ロープウェイが徒歩圏内で繋がるため、屋外を諦めても1日が成立する。対象は雨予報で予定が崩れた2人、子連れで雨の日に時間を潰したいファミリー、屋内派のカップル。標準は11:00集合・19:00解散の8時間コース、予算は1人6,000〜10,000円。ここでは雨の日でも傘を最小限にできる屋内中心5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.cosmo,
-    ranking: [
-      s(1, "カップヌードルミュージアム 横浜", "体験型ミュージアム", "みなとみらい",
-        "自分だけのカップヌードルを作る体験が軸",
-        "2011年開館、日清食品が運営する体験型ミュージアム。カップヌードルの歴史展示・パッケージ製作体験・チキンラーメン手作り工房（要事前予約）など、子連れカップル・ファミリーに人気。「雨の日の家族デート」「体験型施設で1〜2時間遊びたい」目的に最適。館内のフードアトラクション「NOODLES BAZAAR ワールド麺ロード」では世界の麺料理が500〜800円で食べられる。営業時間10〜18時、火曜休館。馬車道駅から徒歩6分、雨の日でも傘を畳んだまま入館しやすい立地。所要1〜2時間、入場料は変動（公式サイトで確認）。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩8分" },
-          { k: "料金", v: "大人 500円（マイカップ体験別途）" },
-          { k: "雨の日", v: "◎ 全屋内" },
-          { k: "所要時間", v: "2〜3時間" }]),
-      s(2, "横浜美術館", "美術館", "みなとみらい",
-        "2024年リニューアル。近現代美術のコレクションを見る",
-        "1989年開館、丹下健三設計の横浜の中核美術館。2024年3月にリニューアルオープンし、エントランス・展示室・カフェが一新された。近代以降の絵画・彫刻・写真・現代美術を中心に、年5〜6本の企画展を開催。「雨の日に文化体験を組みたい」大人の2人に最も向くスポット。館内のミュージアムカフェは丹下設計の特徴的な吹き抜け空間で、雨の日のティータイムに使いやすく、外の天気を忘れられる空気がある。営業時間10〜18時、木曜休館（公式サイトで確認）。みなとみらい駅から徒歩3分、ランドマークタワー側から屋内通路で繋がる。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩3分" },
-          { k: "料金", v: "展示により異なる（コレクション展 500円〜）" },
-          { k: "雨の日", v: "◎ 全屋内" },
-          { k: "所要時間", v: "1〜2時間" }]),
-      s(3, "マークイズみなとみらい", "ショッピングモール", "みなとみらい",
-        "地下でランドマークタワーと繋がる大型モール",
-        "マークイズみなとみらいは2013年開業、みなとみらい駅直結の大型ショッピングモール。200店舗以上の専門店・飲食店・スーパーが揃い、雨天時でも1棟で半日過ごせる。「雨の日に買い物と食事を一気に済ませたい」家族・カップルに向く。屋上の「みんなの庭」は雨天時は閉鎖だが、晴れ間に出ると港の景観が楽しめる。営業時間10〜21時（飲食は23時まで）、みなとみらい駅地下通路で直結し傘なしで入れる。雨天時の動線として、横浜美術館の後にここに移動するのが現実的。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 直結" },
-          { k: "料金", v: "無料（ショッピング・飲食別途）" },
-          { k: "雨の日", v: "◎ 全屋内・駅直結" },
-          { k: "所要時間", v: "1〜3時間" }]),
-      s(4, "横浜ランドマークタワー スカイガーデン", "展望台", "みなとみらい",
-        "雨でも楽しめる。窓ガラスに霧が映える日もある",
-        "ランドマークタワー69階・地上273mの屋内展望フロア「スカイガーデン」。横浜港・東京湾・富士山（晴天時）・東京方面まで見渡せる屋内展望スペース。「雨でも展望は諦めたくない」「写真をゆっくり撮りたい」2人に最適。雨の日でも雲の上に出ることがあり、視界が劇的に変わる景色になることもある「雨の日ならではの景色」が体験できる。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動（公式サイトで確認）。みなとみらい駅から地下通路で繋がっており、雨の日でも傘なしでアクセスできる。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 直結" },
-          { k: "料金", v: "大人 1,000円" },
-          { k: "雨の日", v: "◎ 屋内展望フロア" },
-          { k: "おすすめ時間", v: "どの時間帯でも可" }]),
-      s(5, "YOKOHAMA AIR CABIN", "ロープウェイ", "みなとみらい",
-        "都市型ゴンドラ。雨の日でも乗れる",
-        "2021年開業の屋内型ロープウェイ「YOKOHAMA AIR CABIN」は、桜木町駅前から運河パーク駅まで片道5分・630mの空中散歩。ゴンドラ内は冷暖房完備で雨・寒気の影響を受けず、雨の日にこそ価値が出る稀有な観光施設。「歩く距離を短くしたい」「雨でも空中の景色を楽しみたい」2人に最適。片道1,000円・往復1,800円程度（公式サイトで確認）、運行時間は10〜22時頃。桜木町駅前の屋根のある乗り場で並べるため、雨の日の待ち時間でも濡れない。土日19〜21時のピーク以外は比較的すぐ乗れる。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "桜木町駅 直結" },
-          { k: "料金", v: "片道 1,000円" },
-          { k: "雨の日", v: "△ 強風・強雨で運休あり" },
-          { k: "所要時間", v: "約5分" }])],
-    sideArticles: [
-      side("みなとみらいデート5選", "new-minatomirai-date", I.mm_blue),
-      side("横浜駅周辺雨の日デート", "new-yokohama-station-rainy", I.mm_blue)],
-    quote: "雨でも選択肢が多いのがみなとみらいの強み。事前に屋内の動線を決めておくだけで安心感が違う。",
-    quoteCite: author,
-    closing: "標準動線: みなとみらい駅11:00→横浜美術館（11:00〜13:00）→館内カフェでランチ→マークイズみなとみらいで買い物（14:00〜15:30）→ランドマーク スカイガーデン（15:30〜17:00）→AIR CABIN で桜木町方向へ（17:00〜17:15）→カップヌードルミュージアム（17:15〜18:45）→赤レンガ倉庫内のレストランで夕食。所要8時間、予算は美術館・展望・AIR CABIN・夕食込みで1人6,000〜10,000円。土日午後は美術館・展望ともピーク混雑、平日または雨予報の日は比較的空いている。晴天時はAIR CABINよりも徒歩・汽車道のほうが景色が良いので、雨予報のときに使う発想で十分。失敗しやすいのは「美術館の休館日見落とし」（木曜が休みの館が多い）と「カップヌードルミュージアムの手作り体験予約見落とし」。事前に公式サイトで開館日と体験予約を必ず確認。この記事は雨で予定変更を余儀なくされた人、屋内派の2人、子連れファミリーに向く。",
+    "id": "new-minatomirai-rainy-date",
+    "no": "NG-02",
+    "articleType": "course",
+    "kicker": "MINATOMIRAI RAINY DATE",
+    "title": "みなとみらい、雨でも濡れないデート半日コース。屋内でつなぐ一日",
+    "titleHTML": "みなとみらい、雨でも濡れないデート半日コース。<br>屋内でつなぐ一日",
+    "subtitle": "美術館からスカイガーデン、屋内ロープウェイまで。傘を畳んだまま歩ける港町の動線を一本に組んだ",
+    "lede": "みなとみらいは、空が崩れた日ほど真価を見せる街だ。美術館もミュージアムも展望フロアも大型モールも、そして屋根のあるロープウェイまでが、地下通路やデッキで緩やかに繋がっている。だから雨で屋外の予定が消えても、二人の一日はほとんど目減りしない。このコースは「傘の開閉回数をできるだけ減らす」ことだけを設計の軸に据えた。午前は静かな美術館で時間をかけ、昼は館内で食事、午後は買い物と展望で高さを味わい、夕方は空中散歩で気分を変えてから締めの体験へ。屋根の下を辿りながらも、横浜らしい高さと水辺の景色はきちんと拾えるよう順番を組んでいる。なお各施設の料金や開館日は時期で動くので、出かける前に公式サイトでその日の状況を一度のぞいておくと安心だ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "カップヌードルミュージアム 横浜",
+        "cuisine": "体験型ミュージアム",
+        "area": "みなとみらい",
+        "purpose": "自分だけのカップヌードルを作る体験が軸",
+        "desc": "2011年開館、日清食品が運営する体験型ミュージアム。カップヌードルの歴史展示・パッケージ製作体験・チキンラーメン手作り工房（要事前予約）など、子連れカップル・ファミリーに人気。「雨の日の家族デート」「体験型施設で1〜2時間遊びたい」目的に最適。館内のフードアトラクション「NOODLES BAZAAR ワールド麺ロード」では世界の麺料理が500〜800円で食べられる。営業時間10〜18時、火曜休館。馬車道駅から徒歩6分、雨の日でも傘を畳んだまま入館しやすい立地。所要1〜2時間、入場料は変動（公式サイトで確認）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩8分"
+          },
+          {
+            "k": "料金",
+            "v": "大人 500円（マイカップ体験別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 全屋内"
+          },
+          {
+            "k": "所要時間",
+            "v": "2〜3時間"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "横浜美術館",
+        "cuisine": "美術館",
+        "area": "みなとみらい",
+        "purpose": "2024年リニューアル。近現代美術のコレクションを見る",
+        "desc": "1989年開館、丹下健三設計の横浜の中核美術館。2024年3月にリニューアルオープンし、エントランス・展示室・カフェが一新された。近代以降の絵画・彫刻・写真・現代美術を中心に、年5〜6本の企画展を開催。「雨の日に文化体験を組みたい」大人の2人に最も向くスポット。館内のミュージアムカフェは丹下設計の特徴的な吹き抜け空間で、雨の日のティータイムに使いやすく、外の天気を忘れられる空気がある。営業時間10〜18時、木曜休館（公式サイトで確認）。みなとみらい駅から徒歩3分、ランドマークタワー側から屋内通路で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "展示により異なる（コレクション展 500円〜）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 全屋内"
+          },
+          {
+            "k": "所要時間",
+            "v": "1〜2時間"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "マークイズみなとみらい",
+        "cuisine": "ショッピングモール",
+        "area": "みなとみらい",
+        "purpose": "地下でランドマークタワーと繋がる大型モール",
+        "desc": "マークイズみなとみらいは2013年開業、みなとみらい駅直結の大型ショッピングモール。200店舗以上の専門店・飲食店・スーパーが揃い、雨天時でも1棟で半日過ごせる。「雨の日に買い物と食事を一気に済ませたい」家族・カップルに向く。屋上の「みんなの庭」は雨天時は閉鎖だが、晴れ間に出ると港の景観が楽しめる。営業時間10〜21時（飲食は23時まで）、みなとみらい駅地下通路で直結し傘なしで入れる。雨天時の動線として、横浜美術館の後にここに移動するのが現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料（ショッピング・飲食別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 全屋内・駅直結"
+          },
+          {
+            "k": "所要時間",
+            "v": "1〜3時間"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "横浜ランドマークタワー スカイガーデン",
+        "cuisine": "展望台",
+        "area": "みなとみらい",
+        "purpose": "雨でも楽しめる。窓ガラスに霧が映える日もある",
+        "desc": "ランドマークタワー69階・地上273mの屋内展望フロア「スカイガーデン」。横浜港・東京湾・富士山（晴天時）・東京方面まで見渡せる屋内展望スペース。「雨でも展望は諦めたくない」「写真をゆっくり撮りたい」2人に最適。雨の日でも雲の上に出ることがあり、視界が劇的に変わる景色になることもある「雨の日ならではの景色」が体験できる。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動（公式サイトで確認）。みなとみらい駅から地下通路で繋がっており、雨の日でも傘なしでアクセスできる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "大人 1,000円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展望フロア"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "どの時間帯でも可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "YOKOHAMA AIR CABIN",
+        "cuisine": "ロープウェイ",
+        "area": "みなとみらい",
+        "purpose": "都市型ゴンドラ。雨の日でも乗れる",
+        "desc": "2021年開業の屋内型ロープウェイ「YOKOHAMA AIR CABIN」は、桜木町駅前から運河パーク駅まで片道5分・630mの空中散歩。ゴンドラ内は冷暖房完備で雨・寒気の影響を受けず、雨の日にこそ価値が出る稀有な観光施設。「歩く距離を短くしたい」「雨でも空中の景色を楽しみたい」2人に最適。片道1,000円・往復1,800円程度（公式サイトで確認）、運行時間は10〜22時頃。桜木町駅前の屋根のある乗り場で並べるため、雨の日の待ち時間でも濡れない。土日19〜21時のピーク以外は比較的すぐ乗れる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "片道 1,000円"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 強風・強雨で運休あり"
+          },
+          {
+            "k": "所要時間",
+            "v": "約5分"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "みなとみらいデート5選",
+        "h": "/feature/new-minatomirai-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "横浜駅周辺雨の日デート",
+        "h": "/feature/new-yokohama-station-rainy",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "雨の日のみなとみらいは、屋内をどう繋ぐかが満足度を決める。動線さえ先に決めておけば、天気予報を気にせず一日を楽しめる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝はみなとみらい駅で待ち合わせ、まず横浜美術館へ。リニューアルした明るいエントランスから展示室を巡り、ひと回りしたら館内のカフェでゆっくり昼をとる。午後はマークイズみなとみらいへ移り、雨音の届かないモールの中で買い物と休憩。落ち着いたらランドマークタワーへ上がり、69階のスカイガーデンで港と東京湾を見下ろす——晴れていれば富士山まで届く高さだ。夕方は桜木町側へ下りてYOKOHAMA AIR CABINに乗り、冷暖房の効いたゴンドラから運河の灯りを眺めながら運河パーク方面へ。最後はカップヌードルミュージアムで自分だけの一杯を仕上げ、赤レンガ倉庫の屋内レストランで夕食に落ち着く。混雑は土日午後の美術館と展望がピークで、平日や雨予報の日ほど人が少なく回りやすい。気をつけたいのは、休館日に当たる美術館があることと、ミュージアムの手作り体験が予約制であること。この二つだけは、その日の開館状況と空き枠を公式で先に押さえておきたい。"
   },
-
-  // ─── 3. 桜木町夜デート5選 ───
   "new-sakuragicho-night-date": {
-    id: "new-sakuragicho-night-date",
-    no: "NG-03", articleType: "guide",
-    kicker: "SAKURAGICHO NIGHT DATE",
-    title: "桜木町夜デート5選。夜景と光が似合う場所",
-    titleHTML: "桜木町<br>夜デート5選。",
-    subtitle: "汽車道の夜、コスモクロック21、AIR CABIN。桜木町から歩いて回る夜の港",
-    lede: "桜木町は「徒歩で複数の夜景スポットをハシゴしたい2人」に最も向く横浜エリア。JR根岸線・横浜市営地下鉄・みなとみらい線が交差し、駅から徒歩5分以内に汽車道・コスモワールド観覧車・AIR CABINが並ぶため、移動時間より景色を見る時間に充てられる。対象は初〜3回目のデートのカップル、夜景写真を撮りたい友人同士。標準は18:00集合・22:30解散の4時間30分コース、予算は1人5,000〜10,000円。ここでは時系列で動きやすい桜木町の夜景5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.cosmo,
-    ranking: [
-      s(1, "汽車道（夜）", "プロムナード", "みなとみらい",
-        "夜は街灯と水面の反射で雰囲気が変わる",
-        "汽車道は桜木町駅前から運河パーク方向に約500m続く海上の遊歩道。夜は両側の街灯と水面の反射でロマンチックな雰囲気が広がり、対岸のランドマーク・コスモクロックのライトアップを真正面から眺められる。「初デートで沈黙が怖い」2人に最適な散歩区間で、約10分の歩行中に自然に会話が始まる構図。桜木町駅から徒歩5分で歩き始められる。夜10時頃まで人通りがある区画で、深夜帯の女性1人歩きは避けたほうが安全。次は徒歩7分でコスモワールド方向につながる。",
-        [I.kishamichi, I.kisha2],
-        [
-          { k: "最寄り駅", v: "桜木町駅 徒歩5分" },
-          { k: "雨の日", v: "✕ 屋外遊歩道" },
-          { k: "おすすめ時間", v: "日没後〜22時頃" }]),
-      s(2, "コスモクロック21（夜）", "観覧車", "みなとみらい",
-        "ライトアップされた観覧車が夜の象徴",
-        "1989年開園、コスモワールド内の直径100m・最高地点112.5mの観覧車「コスモクロック21」。夜のライトアップは時間ごとに色が変わり、ゴンドラに乗らずに外から眺めるだけでも横浜夜景の象徴として絵になる。「乗車中に2人で景色を独占したい」カップルに向く。1回800〜900円程度（公式で確認）、所要約15分。土日19〜21時はピーク混雑（30〜60分待ち）、平日夜または閉園前22時頃が空いている。悪天候時は乗車中の視界が悪くなるので、外から眺めるだけにする判断が現実的。",
-        [I.cosmo],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩3分" },
-          { k: "料金目安", v: "観覧車 900円" },
-          { k: "おすすめ時間", v: "19時〜22時" }]),
-      s(3, "YOKOHAMA AIR CABIN（夜）", "ロープウェイ", "みなとみらい",
-        "夜のゴンドラから見る港の光",
-        "2021年開業、桜木町駅前と運河パーク駅を結ぶ屋内型ロープウェイ「YOKOHAMA AIR CABIN」。片道5分・630mの空中散歩で、夜の運行（21時頃まで）は地上の光が真下から見られる稀有な体験。「待ち時間を抑えて高所からの夜景を見たい」「歩く距離を短くしたい」2人に向く。片道1,000円・往復1,800円程度（公式で確認）、ゴンドラ内は冷暖房完備で雨・寒気の影響を受けない。土日19〜21時はゴンドラ待ち15〜30分が発生するため、先に乗ってから歩く順番が空きやすい。雨天時はこのスポットが最大の救世主で、屋内で景色だけ確保できる。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "桜木町駅 直結" },
-          { k: "料金", v: "片道 1,000円" },
-          { k: "おすすめ時間", v: "夕暮れ〜夜" }]),
-      s(4, "野毛山公園（夜景スポット）", "公園・展望", "野毛",
-        "地元の人が使う穴場の夜景スポット",
-        "野毛山公園は桜木町駅から徒歩約15分の高台にある公園で、夜景スポットとして地元客に知られる隠れた名所。「観光客の少ない夜景を撮りたい」「混雑を抜けて静かに過ごしたい」2人に向く。公園内の展望広場からみなとみらい・横浜港の夜景が遠望でき、料金無料・24時間開放。駅から坂を上る区間があるため歩きやすい靴推奨。野毛動物園が併設されており、昼間は無料で動物観察も可能。深夜帯は街灯が控えめなので、女性1人歩きは避ける。",
-        [I.cosmo],
-        [
-          { k: "最寄り駅", v: "桜木町駅 徒歩15分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" },
-          { k: "おすすめ時間", v: "日没後" }]),
-      s(5, "新港ふ頭・横浜ハンマーヘッド", "ウォーターフロント", "新港",
-        "夜の港に停泊する船と光を見る",
-        "新港ふ頭・横浜ハンマーヘッドは2019年開業、客船ターミナルと商業施設の複合エリア。夜のライトアップは大型客船が停泊している夜に最も絵になり、海風と港の現役感が伝わる稀有なロケーション。「観光地化されすぎていない、横浜らしい港の現場を見たい」2人に向く。館内のレストラン・カフェは21〜23時まで営業、夜景観賞後の食事や2軒目に使える。馬車道駅から徒歩6分、赤レンガ倉庫から徒歩10分で繋がる。1914年製造のハンマーヘッドクレーンも夜のライトアップが美しく、写真スポットとして優秀。",
-        [I.akarenga, I.osanbashi],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩10分" },
-          { k: "料金", v: "無料（ショッピング・飲食別途）" },
-          { k: "おすすめ時間", v: "夕方〜夜" }])],
-    sideArticles: [
-      side("みなとみらいデート5選", "new-minatomirai-date", I.mm_blue),
-      side("赤レンガ倉庫周辺デート3選", "new-akarenga-date", I.akarenga)],
-    quote: "桜木町の夜は、歩き始めればそのまま景色が続く。目的地を決めすぎないほうが気持ちよく過ごせる。",
-    quoteCite: author,
-    closing: "標準動線: 桜木町駅18:00集合→汽車道で夜散歩（18:00〜18:30）→AIR CABIN（18:30〜19:00）→コスモクロック21（19:00〜20:00 観覧車）→ハンマーヘッドへ徒歩（20:00〜20:30）→新港ふ頭・ハンマーヘッドでディナー（20:30〜22:00）→大さん橋方面または野毛山公園で締めの夜景。所要4時間30分、予算は1人5,000〜10,000円。土日19〜21時は観覧車・AIR CABINがピーク混雑、平日夜または日曜の遅めの時間帯（20時開始）に動き出すと待ちが減る。雨の日はAIR CABIN＋ランドマーク展望＋赤レンガ屋内エリアに切り替え、汽車道・野毛山公園は諦める判断が現実的。失敗しやすいのは「コスモワールドの閉園時間を見落として観覧車に乗れない」「冬の海風の体感寒さで滞在を短縮」「野毛山公園への徒歩距離を読み違える」。事前に運行時間・防寒装備・歩く距離を確認。この記事は予算を抑えながら横浜の夜景を網羅したいデート層に最適。",
+    "id": "new-sakuragicho-night-date",
+    "no": "NG-03",
+    "articleType": "guide",
+    "kicker": "SAKURAGICHO NIGHT DATE",
+    "title": "桜木町、夜の港を歩くデートさんぽ。光が水に落ちる時間に",
+    "titleHTML": "桜木町、夜の港を歩くデートさんぽ。<br>光が水に落ちる時間に",
+    "subtitle": "汽車道の街灯、コスモクロックの色替わり、AIR CABINの空中散歩。みなとみらいの夜を地続きに歩く",
+    "lede": "日が落ちてから桜木町の改札を抜けると、空気の温度がひとつ下がって、運河のほうから潮の匂いが流れてくる。この街の夜がいいのは、見たい景色がぜんぶ歩いてつながっているところだ。汽車道の街灯、観覧車の色、空をすべる小さなゴンドラ——それらが半径数百メートルのなかに収まっていて、移動に気を取られずに、光そのものを眺めていられる。だからここでは目的地を細かく決めず、足の向くまま、水辺に沿って二人で歩くことをすすめたい。観覧車の運行や各施設の終了時刻はその日その日で変わるので、出かける前に公式サイトを一度のぞいておくと、現地で慌てずにすむ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "汽車道（夜）",
+        "cuisine": "プロムナード",
+        "area": "みなとみらい",
+        "purpose": "夜は街灯と水面の反射で雰囲気が変わる",
+        "desc": "汽車道は桜木町駅前から運河パーク方向に約500m続く海上の遊歩道。夜は両側の街灯と水面の反射でロマンチックな雰囲気が広がり、対岸のランドマーク・コスモクロックのライトアップを真正面から眺められる。「初デートで沈黙が怖い」2人に最適な散歩区間で、約10分の歩行中に自然に会話が始まる構図。桜木町駅から徒歩5分で歩き始められる。夜10時頃まで人通りがある区画で、深夜帯の女性1人歩きは避けたほうが安全。次は徒歩7分でコスモワールド方向につながる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kisha-michi-Yokohama-02.jpg/1280px-Kisha-michi-Yokohama-02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 徒歩5分"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外遊歩道"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "日没後〜22時頃"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "コスモクロック21（夜）",
+        "cuisine": "観覧車",
+        "area": "みなとみらい",
+        "purpose": "ライトアップされた観覧車が夜の象徴",
+        "desc": "1989年開園、コスモワールド内の直径100m・最高地点112.5mの観覧車「コスモクロック21」。夜のライトアップは時間ごとに色が変わり、ゴンドラに乗らずに外から眺めるだけでも横浜夜景の象徴として絵になる。「乗車中に2人で景色を独占したい」カップルに向く。1回800〜900円程度（公式で確認）、所要約15分。土日19〜21時はピーク混雑（30〜60分待ち）、平日夜または閉園前22時頃が空いている。悪天候時は乗車中の視界が悪くなるので、外から眺めるだけにする判断が現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩3分"
+          },
+          {
+            "k": "料金目安",
+            "v": "観覧車 900円"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "19時〜22時"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "YOKOHAMA AIR CABIN（夜）",
+        "cuisine": "ロープウェイ",
+        "area": "みなとみらい",
+        "purpose": "夜のゴンドラから見る港の光",
+        "desc": "2021年開業、桜木町駅前と運河パーク駅を結ぶ屋内型ロープウェイ「YOKOHAMA AIR CABIN」。片道5分・630mの空中散歩で、夜の運行（21時頃まで）は地上の光が真下から見られる稀有な体験。「待ち時間を抑えて高所からの夜景を見たい」「歩く距離を短くしたい」2人に向く。片道1,000円・往復1,800円程度（公式で確認）、ゴンドラ内は冷暖房完備で雨・寒気の影響を受けない。土日19〜21時はゴンドラ待ち15〜30分が発生するため、先に乗ってから歩く順番が空きやすい。雨天時はこのスポットが最大の救世主で、屋内で景色だけ確保できる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "片道 1,000円"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕暮れ〜夜"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "野毛山公園（夜景スポット）",
+        "cuisine": "公園・展望",
+        "area": "野毛",
+        "purpose": "地元の人が使う穴場の夜景スポット",
+        "desc": "野毛山公園は桜木町駅から徒歩約15分の高台にある公園で、夜景スポットとして地元客に知られる隠れた名所。「観光客の少ない夜景を撮りたい」「混雑を抜けて静かに過ごしたい」2人に向く。公園内の展望広場からみなとみらい・横浜港の夜景が遠望でき、料金無料・24時間開放。駅から坂を上る区間があるため歩きやすい靴推奨。野毛動物園が併設されており、昼間は無料で動物観察も可能。深夜帯は街灯が控えめなので、女性1人歩きは避ける。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 徒歩15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "日没後"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "新港ふ頭・横浜ハンマーヘッド",
+        "cuisine": "ウォーターフロント",
+        "area": "新港",
+        "purpose": "夜の港に停泊する船と光を見る",
+        "desc": "新港ふ頭・横浜ハンマーヘッドは2019年開業、客船ターミナルと商業施設の複合エリア。夜のライトアップは大型客船が停泊している夜に最も絵になり、海風と港の現役感が伝わる稀有なロケーション。「観光地化されすぎていない、横浜らしい港の現場を見たい」2人に向く。館内のレストラン・カフェは21〜23時まで営業、夜景観賞後の食事や2軒目に使える。馬車道駅から徒歩6分、赤レンガ倉庫から徒歩10分で繋がる。1914年製造のハンマーヘッドクレーンも夜のライトアップが美しく、写真スポットとして優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（ショッピング・飲食別途）"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "みなとみらいデート5選",
+        "h": "/feature/new-minatomirai-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "赤レンガ倉庫周辺デート3選",
+        "h": "/feature/new-akarenga-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+      }
+    ],
+    "quote": "桜木町の夜は、歩き始めればそのまま景色が続く。目的地を決めすぎないほうが気持ちよく過ごせる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "改札を出たら、まず汽車道へ。両側に灯る街灯が水面で揺れて、対岸のランドマークと観覧車がまっすぐ正面に並ぶ。そこからAIR CABINに乗れば、たった五分の空中散歩で港の光が足の下を流れていく。降りたら運河沿いを進んで、色を変えつづけるコスモクロックの真下へ。ゴンドラに乗らなくても、見上げているだけで十分に絵になる時間だ。人の波に疲れたら、駅から坂をのぼって野毛山公園へ抜けると、急に静かな夜景が広がって息がつける。最後は新港ふ頭・ハンマーヘッドまで足を延ばし、大型客船が停まっていれば、その白い船体が港の夜に浮かんで一日の締めくくりになる。冬の海風は思ったより冷えるから羽織るものを一枚、歩く距離もそこそこあるから歩きやすい靴を。あとは光の落ちる順に、ゆっくり歩けばいい。"
   },
-
-  // ─── 4. 赤レンガ倉庫周辺デート3選 ───
   "new-akarenga-date": {
-    id: "new-akarenga-date",
-    no: "NG-04", articleType: "guide",
-    kicker: "AKARENGA DATE",
-    title: "赤レンガ倉庫周辺デート3選。港の空気を感じる場所",
-    titleHTML: "赤レンガ倉庫<br>周辺デート3選。",
-    subtitle: "赤レンガ倉庫、象の鼻パーク、ハンマーヘッド。海沿いを歩くだけで成立するデート",
-    lede: "赤レンガ倉庫周辺は明治・大正の港湾遺構と近代みなとみらいの景観が交差する横浜らしいエリア。対象は2〜3回目のデートのカップル、または横浜観光の初心者で歴史建築と海沿い散歩を組み合わせたい人。標準は14:00集合・19:00解散の5時間コース、予算は食事込みで1人4,500〜8,000円。1911年竣工の赤レンガ倉庫を中心に、象の鼻パーク・横浜ハンマーヘッドが徒歩で繋がる海沿いルートで、東京とは違う「港町デート」の質感を作り出す。ここでは赤レンガを起点に海沿いを歩く3スポットを紹介する。",
-    date, reading: "約6分", author,
-    heroImage: I.akarenga,
-    ranking: [
-      s(1, "横浜赤レンガ倉庫", "歴史建築・商業施設", "新港",
-        "明治期の倉庫がそのまま商業施設に。食事もショッピングもできる",
-        "1911年（明治44年）竣工、横浜港の倉庫として建てられた赤煉瓦の2棟。2002年に大規模リニューアルし、1号館はイベントホール、2号館は商業施設として再生した国指定重要文化財。館内には飲食・物販・スイーツの店舗が60以上入居し、ランチからディナーまで対応する価格帯の広さがある。「歴史建築の中で食事をしたい」「写真映えする場所でデートを成立させたい」2人に最も向く。夕方17時前後はライトアップ前で人波が一時的に減り、写真撮影に向いた時間帯になる。クリスマス・オクトーバーフェスト・春のフラワーフェスティバルなど、季節イベント開催時は2倍以上の混雑になるため、予約必須。馬車道駅から徒歩6分、桜木町駅から徒歩15分。",
-        [I.akarenga],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩12分 / 馬車道駅 徒歩6分" },
-          { k: "営業時間", v: "施設により異なる（11時〜20時頃）" },
-          { k: "雨の日", v: "◎ 屋内施設あり、広場は屋外" }]),
-      s(2, "象の鼻パーク", "公園・ウォーターフロント", "新港",
-        "開港の歴史と現在の海がある、無料で開放された広場",
-        "横浜港の旧税関跡地を整備した遊歩道型公園（2009年開園）。横浜開港150周年記念事業の一環として整備され、象の鼻のような形のテラスが特徴の港湾公園。「赤レンガで買い物・食事をした後の腹ごなし散歩」として組み込むのが定番で、ベンチで30分〜1時間休めるサイズ感。コンビニで買ったコーヒー片手にテラス席に座ると、横浜港の景観を独占できる時間帯（特に平日午後）がある。夜のライトアップ「象の鼻パークライトアップ」は20時頃まで点灯（季節により変動）、夕暮れ時の薄明時間が最も絵になる。日本大通り駅から徒歩3分、赤レンガ倉庫から徒歩5分の至近距離で、足が疲れた2人にも優しい動線。",
-        [I.osanbashi2],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ ほぼ屋外" },
-          { k: "所要時間", v: "15〜30分" }]),
-      s(3, "横浜ハンマーヘッド", "ウォーターフロント複合施設", "新港",
-        "赤レンガの隣の新しい港。開放的な岸壁テラス",
-        "2019年開業、新港ふ頭客船ターミナルを核とする複合施設「横浜ハンマーヘッド」。豪華客船の発着・着岸を間近で見られる稀有なロケーションで、横浜港の現役の港湾機能を体感できる。「観光地化されすぎていない、横浜らしい港の現場を見たい」人に向く。館内には KITTE 系列のレストラン・カフェ・ベイクリエ・チョコレート専門店などが並び、夕食候補として優秀。ハンマーヘッドクレーン（1914年製造の歴史的な港湾クレーン）は屋外展示で写真スポット。赤レンガ倉庫から徒歩約10分、徒歩動線で繋がる海沿いの最終目的地として組み込みやすい。営業時間11〜21時（レストランは〜23時）。",
-        [I.akarenga, I.osanbashi],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩10分" },
-          { k: "料金", v: "無料（飲食別途）" },
-          { k: "雨の日", v: "△ 屋内部分あり" },
-          { k: "おすすめ時間", v: "夕方〜夜" }])],
-    sideArticles: [
-      side("大さん橋夜景デート3選", "new-osanbashi-nightview-date", I.osanbashi),
-      side("みなとみらいデート5選", "new-minatomirai-date", I.mm_blue)],
-    quote: "赤レンガ→象の鼻→ハンマーヘッドの順に歩くと、海との距離感が変わりながら港を体感できる。",
-    quoteCite: author,
-    closing: "標準動線: 馬車道駅14:00集合→赤レンガ倉庫（14:00〜16:00 ショッピング＋カフェ）→象の鼻パーク（16:00〜17:00 夕景）→横浜ハンマーヘッド（17:00〜19:00 ディナー）→海沿い夜景観賞。所要5時間、予算は食事込みで1人4,500〜8,000円（赤レンガでのディナーなら〜10,000円）。土日夕方の赤レンガ広場はイベント時に大混雑するので、平日のほうが落ち着いて回れる。雨の日は赤レンガ倉庫館内・ハンマーヘッド館内で完結できるので、屋内中心ルートに切り替えれば傘を最小限に。失敗しやすいのは「赤レンガで時間を使いすぎて他を回れない」点と「冬の象の鼻パークでの防寒不足」（海風が強い）。時間がない場合は赤レンガ倉庫だけ60〜90分滞在で完結する。この記事は2〜3回目のデートで「みなとみらいよりもう少し落ち着いた横浜」を体験させたい層に向く。",
+    "id": "new-akarenga-date",
+    "no": "NG-04",
+    "articleType": "guide",
+    "kicker": "AKARENGA DATE",
+    "title": "赤レンガ倉庫から始める、海との距離が変わる港デート",
+    "titleHTML": "赤レンガ倉庫から始める、<br>海との距離が変わる港デート",
+    "subtitle": "煉瓦の倉庫、象の鼻のテラス、客船が着く埠頭。歩くたびに海の見え方が一段ずつ近づいていく",
+    "lede": "港町のデートが面白いのは、同じ「海沿いを歩く」でも、場所ごとに海との間合いがまるで違うところにある。赤レンガ倉庫の前ではまだ広場と建物越しの海で、象の鼻パークに出ると視界がひらけて水面が近づき、ハンマーヘッドまで来ると、現役の埠頭に着く客船を目の前に港そのものへ立っている。この記事はその「海への近づき方」を一本の軸にして、赤レンガ倉庫周辺を二人で歩く時間を組み立てる。1911年竣工の煉瓦の倉庫を入口に、明治・大正の港湾遺構と今のみなとみらいが背中合わせに並ぶ景色を、急がず順に味わっていきたい。みなとみらいの華やかさよりもう少し落ち着いた横浜を、二度目三度目のデートで見せたいときに効く道のりだ。",
+    "date": "2026-05-14",
+    "reading": "約6分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "横浜赤レンガ倉庫",
+        "cuisine": "歴史建築・商業施設",
+        "area": "新港",
+        "purpose": "明治期の倉庫がそのまま商業施設に。食事もショッピングもできる",
+        "desc": "1911年（明治44年）竣工、横浜港の倉庫として建てられた赤煉瓦の2棟。2002年に大規模リニューアルし、1号館はイベントホール、2号館は商業施設として再生した国指定重要文化財。館内には飲食・物販・スイーツの店舗が60以上入居し、ランチからディナーまで対応する価格帯の広さがある。「歴史建築の中で食事をしたい」「写真映えする場所でデートを成立させたい」2人に最も向く。夕方17時前後はライトアップ前で人波が一時的に減り、写真撮影に向いた時間帯になる。クリスマス・オクトーバーフェスト・春のフラワーフェスティバルなど、季節イベント開催時は2倍以上の混雑になるため、予約必須。馬車道駅から徒歩6分、桜木町駅から徒歩15分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩12分 / 馬車道駅 徒歩6分"
+          },
+          {
+            "k": "営業時間",
+            "v": "施設により異なる（11時〜20時頃）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内施設あり、広場は屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "象の鼻パーク",
+        "cuisine": "公園・ウォーターフロント",
+        "area": "新港",
+        "purpose": "開港の歴史と現在の海がある、無料で開放された広場",
+        "desc": "横浜港の旧税関跡地を整備した遊歩道型公園（2009年開園）。横浜開港150周年記念事業の一環として整備され、象の鼻のような形のテラスが特徴の港湾公園。「赤レンガで買い物・食事をした後の腹ごなし散歩」として組み込むのが定番で、ベンチで30分〜1時間休めるサイズ感。コンビニで買ったコーヒー片手にテラス席に座ると、横浜港の景観を独占できる時間帯（特に平日午後）がある。夜のライトアップ「象の鼻パークライトアップ」は20時頃まで点灯（季節により変動）、夕暮れ時の薄明時間が最も絵になる。日本大通り駅から徒歩3分、赤レンガ倉庫から徒歩5分の至近距離で、足が疲れた2人にも優しい動線。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ ほぼ屋外"
+          },
+          {
+            "k": "所要時間",
+            "v": "15〜30分"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜ハンマーヘッド",
+        "cuisine": "ウォーターフロント複合施設",
+        "area": "新港",
+        "purpose": "赤レンガの隣の新しい港。開放的な岸壁テラス",
+        "desc": "2019年開業、新港ふ頭客船ターミナルを核とする複合施設「横浜ハンマーヘッド」。豪華客船の発着・着岸を間近で見られる稀有なロケーションで、横浜港の現役の港湾機能を体感できる。「観光地化されすぎていない、横浜らしい港の現場を見たい」人に向く。館内には KITTE 系列のレストラン・カフェ・ベイクリエ・チョコレート専門店などが並び、夕食候補として優秀。ハンマーヘッドクレーン（1914年製造の歴史的な港湾クレーン）は屋外展示で写真スポット。赤レンガ倉庫から徒歩約10分、徒歩動線で繋がる海沿いの最終目的地として組み込みやすい。営業時間11〜21時（レストランは〜23時）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（飲食別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 屋内部分あり"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "大さん橋夜景デート3選",
+        "h": "/feature/new-osanbashi-nightview-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+      },
+      {
+        "t": "みなとみらいデート5選",
+        "h": "/feature/new-minatomirai-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "海との距離が一段ずつ縮まっていく感覚を、会話の途切れる隙間ごと楽しめるのが港歩きの良さだ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "煉瓦の広場でひとしきり過ごしたら、海の方角へ足を向けて象の鼻パークへ。テラスに腰を下ろすと、さっきまで建物越しだった水面がぐっと近くなり、夕方なら空の色が水に落ちていく時間に当たる。そのまま埠頭沿いを歩いてハンマーヘッドへ抜けると、着岸する大きな船の影が二人の会話の背景になる。海風は思いのほか強く、冬場は一枚多めに羽織って出るくらいでちょうどいい。週末夕方の赤レンガ広場はイベントで賑わう日も多いので、静かに港を味わいたいなら平日の方が二人の歩調で回れる。雨の日は煉瓦の館内とハンマーヘッドの館内をつなぐだけでも十分に成立するし、店ごとの営業時間やメニューは折々で変わるから、行きたい店があれば出かける前に公式の案内をのぞいておくと当日が安心だ。海の見え方が変わっていく順に歩く——それだけで、横浜の港はちゃんとデートになる。"
   },
-
-  // ─── 5. 大さん橋周辺で夜景を見るデート3選 ───
   "new-osanbashi-nightview-date": {
-    id: "new-osanbashi-nightview-date",
-    no: "NG-05", articleType: "guide",
-    kicker: "OSANBASHI NIGHT VIEW",
-    title: "大さん橋周辺で夜景を見るデート3選",
-    titleHTML: "大さん橋周辺で<br>夜景を見るデート3選",
-    subtitle: "大さん橋屋上デッキ、山下公園、港の見える丘公園。横浜夜景の三定番",
-    lede: "横浜の夜景デートで「ハズレなし」の3スポットといえば、大さん橋屋上デッキ・山下公園・港の見える丘公園。いずれも入場無料で、徒歩圏内に並んでおり、海風と夜景を浴びながら歩く動線が組める。高い展望台に登らなくても、地上から見上げる港の夜景は十分に美しい。ここでは元町・中華街駅を起点に、無料で完結する横浜夜景3スポットを紹介する。",
-    date, reading: "約6分", author,
-    heroImage: I.osanbashi,
-    ranking: [
-      s(1, "大さん橋国際客船ターミナル 屋上デッキ", "展望デッキ", "中区・新港",
-        "横浜港を360度見渡せる、入場無料の屋上",
-        "1894年開港の横浜港大さん橋は2002年に大規模リニューアル。屋上の「クジラの背中」と呼ばれる木のデッキが、横浜随一の夜景観賞スポットになっている。入場無料・24時間開放で、夜の混雑時間（19〜21時）でもベンチに座って夜景を眺める余裕がある。屋上からはランドマークタワー・コスモクロック21・ベイブリッジが同時に視界に入る構図。デッキは滑りにくい木材で、雨の日でも安全に歩ける。海風が強い日は防寒対策が必要、特に冬は手袋・マフラー推奨。日本大通り駅から徒歩7分、元町・中華街駅から徒歩10分。",
-        [I.osanbashi, I.osanbashi2],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩7分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外デッキ" },
-          { k: "おすすめ時間", v: "日没〜22時" }]),
-      s(2, "山下公園（夜）", "公園・水辺", "中区・山下",
-        "氷川丸を横目に、海沿いを歩く夜散歩",
-        "1930年開園、日本最初の臨海公園。横浜港に沿って約700mに渡って整備された遊歩道型の公園。氷川丸（1930年就航の客船・夜間ライトアップあり）、インド水塔、未来のバラ園など歴史的施設が点在する。夜のライトアップは大さん橋方向・みなとみらい方向ともに美しく、ベンチも豊富にあるためゆっくり座れる。入場無料・24時間開放だが、夜遅い時間帯は人通りが減るため、女性1人歩きは避けたほうが安全。元町・中華街駅から徒歩3分、大さん橋から徒歩10分。中華街でディナー後の散歩動線として組み込みやすい。",
-        [I.yamashita, I.yamashita2],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩3分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" },
-          { k: "おすすめ時間", v: "夜〜21時頃" }]),
-      s(3, "港の見える丘公園", "展望公園", "山手",
-        "山の上から見下ろす横浜港の夜景",
-        "横浜山手の丘の上、海抜35mに位置する展望公園。「港の見える丘」の名の通り、横浜港・ベイブリッジ・みなとみらい方向の夜景が見下ろせる。明治時代の外国人居留地の名残として、フランス山地区・イギリス山地区の旧外国人邸宅が公園内に残る。バラ園は5〜6月と10〜11月が見頃で、夜のライトアップ期間中はバラ＋夜景の構図が絵になる。石川町駅から徒歩20分（坂が急なので注意）、元町・中華街駅から徒歩10分。夜の坂道は街灯が控えめなので、明るい靴・歩きやすい服装推奨。",
-        [I.yamashita],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" },
-          { k: "おすすめ時間", v: "日没後" }])],
-    sideArticles: [
-      side("山下公園周辺デート5選", "new-yamashita-date", I.yamashita),
-      side("赤レンガ倉庫周辺デート3選", "new-akarenga-date", I.akarenga)],
-    quote: "大さん橋から山下公園を歩いて、丘に上がる。この30分の動線が横浜夜景の答えになる。",
-    quoteCite: author,
-    closing: "標準動線は、元町・中華街駅で18:00集合→中華街でディナー（18:00〜19:30）→山下公園で夜景散歩（19:30〜20:30）→大さん橋屋上デッキで夜景観賞（20:30〜21:30）→港の見える丘公園で締め（22:00〜22:30）→元町・中華街駅で解散。所要4〜5時間、予算はディナー込みで1人3,500〜7,000円が目安（夜景3スポットすべて無料）。「予算を抑えてロマンチックな夜景デートを組みたい人」「徒歩で港町の夜を歩きたい人」「展望台に並ぶのが嫌な2人」に向く。土日19〜21時は大さん橋がやや混むが、無料スポットなので並ばずに入れる。雨の日は屋外中心の動線なので傘必須、または屋内（赤レンガ倉庫・ランドマーク）に切り替える。時間がない場合は、大さん橋→山下公園の2点で1時間半に圧縮できる。迷ったら、まず大さん橋屋上に座って夜景を眺めるだけで、横浜デートの満足度は十分に成立する。3スポットすべてが入場無料という点は、価格を抑えながらクオリティ高いデートを組みたい大学生・初デート層に特に向く。電車賃と中華街ディナーを含めても2人で1万円以内に収まる現実的な予算感。歩く距離は合計1.5km程度で、適度な運動量で会話が自然に続く設計になっている。冬季は海風が強いため重ね着が必須、夏季は虫除け・水分補給を意識すると快適度が大きく変わる。",
+    "id": "new-osanbashi-nightview-date",
+    "no": "NG-05",
+    "articleType": "ranking",
+    "kicker": "OSANBASHI NIGHT VIEW",
+    "title": "大さん橋・山下公園・港の見える丘公園で外さない横浜夜景デート",
+    "titleHTML": "大さん橋・山下公園・港の見える丘公園。<br>無料で外さない横浜の夜景デート",
+    "subtitle": "高い展望台に登らなくても港の夜は十分に美しい。歩いてつなげる横浜夜景の三定番",
+    "lede": "横浜の夜景でデートを組むとき、迷ったら立ち寄って外さないのはどこか——その問いに答えるつもりで、大さん橋屋上デッキ・山下公園・港の見える丘公園の三つを選んだ。選んだ理由ははっきりしている。三つとも入場料がいらず、しかも徒歩圏に並んでいて、海風と灯りを浴びながら歩いてつなげられる。展望台のエレベーターに並ばなくても、地上から見上げる港の夜景はそれだけで絵になる。背伸びした演出に頼らず、横浜という街そのものの夜を見せてくれる三定番を、目利きの順で紹介したい。",
+    "date": "2026-05-14",
+    "reading": "約6分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "大さん橋国際客船ターミナル 屋上デッキ",
+        "cuisine": "展望デッキ",
+        "area": "中区・新港",
+        "purpose": "横浜港を360度見渡せる、入場無料の屋上",
+        "desc": "1894年開港の横浜港大さん橋は2002年に大規模リニューアル。屋上の「クジラの背中」と呼ばれる木のデッキが、横浜随一の夜景観賞スポットになっている。入場無料・24時間開放で、夜の混雑時間（19〜21時）でもベンチに座って夜景を眺める余裕がある。屋上からはランドマークタワー・コスモクロック21・ベイブリッジが同時に視界に入る構図。デッキは滑りにくい木材で、雨の日でも安全に歩ける。海風が強い日は防寒対策が必要、特に冬は手袋・マフラー推奨。日本大通り駅から徒歩7分、元町・中華街駅から徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩7分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外デッキ"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "日没〜22時"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "山下公園（夜）",
+        "cuisine": "公園・水辺",
+        "area": "中区・山下",
+        "purpose": "氷川丸を横目に、海沿いを歩く夜散歩",
+        "desc": "1930年開園、日本最初の臨海公園。横浜港に沿って約700mに渡って整備された遊歩道型の公園。氷川丸（1930年就航の客船・夜間ライトアップあり）、インド水塔、未来のバラ園など歴史的施設が点在する。夜のライトアップは大さん橋方向・みなとみらい方向ともに美しく、ベンチも豊富にあるためゆっくり座れる。入場無料・24時間開放だが、夜遅い時間帯は人通りが減るため、女性1人歩きは避けたほうが安全。元町・中華街駅から徒歩3分、大さん橋から徒歩10分。中華街でディナー後の散歩動線として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夜〜21時頃"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "港の見える丘公園",
+        "cuisine": "展望公園",
+        "area": "山手",
+        "purpose": "山の上から見下ろす横浜港の夜景",
+        "desc": "横浜山手の丘の上、海抜35mに位置する展望公園。「港の見える丘」の名の通り、横浜港・ベイブリッジ・みなとみらい方向の夜景が見下ろせる。明治時代の外国人居留地の名残として、フランス山地区・イギリス山地区の旧外国人邸宅が公園内に残る。バラ園は5〜6月と10〜11月が見頃で、夜のライトアップ期間中はバラ＋夜景の構図が絵になる。石川町駅から徒歩20分（坂が急なので注意）、元町・中華街駅から徒歩10分。夜の坂道は街灯が控えめなので、明るい靴・歩きやすい服装推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "日没後"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "山下公園周辺デート5選",
+        "h": "/feature/new-yamashita-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+      },
+      {
+        "t": "赤レンガ倉庫周辺デート3選",
+        "h": "/feature/new-akarenga-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+      }
+    ],
+    "quote": "大さん橋に座り、山下公園を歩き、丘へ上がる。この三つを線でつなぐと、横浜の夜が一番きれいに見える。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "三つに優劣をつけるなら、最初に立つべきは大さん橋屋上デッキだ。「クジラの背中」と呼ばれる木のデッキに腰を下ろせば、みなとみらいの灯りが正面に広がり、それだけで夜の満足度が決まる。二番手は海沿いを約700m歩ける山下公園。氷川丸のライトアップを横目に、会話が自然と続く距離感がいい。最後は港の見える丘公園で、海抜35mからベイブリッジ越しの夜景を見下ろして締める——高低差が一日に起伏をつけてくれる。三つを通しで歩いても1.5kmほど、合間に中華街でディナーを挟めば、電車賃を含めても二人で1万円に収まる現実的な予算感になる。海風が抜ける屋外中心なので、冬は一枚多めに、夏は虫除けと水分をひとつ。雨なら傘を持つか、赤レンガ倉庫やランドマークの屋内へ切り替えればいい。なお三定番はいずれも無料・夜間開放が魅力だが、開放時間や周辺施設の営業は変わることがあるので、出かける前に各公式の案内へ一度目を通しておくと安心だ。時間が足りない夜は、大さん橋と山下公園の二つだけでも横浜の夜は十分に成り立つ。"
   },
-
-  // ─── 6. 馬車道レトロ建築さんぽ5選 ───
   "new-bashamichi-architecture": {
-    id: "new-bashamichi-architecture",
-    no: "NG-06", articleType: "guide",
-    kicker: "BASHAMICHI ARCHITECTURE",
-    title: "馬車道レトロ建築さんぽ5選。明治・大正の洋館を歩く",
-    titleHTML: "馬車道<br>レトロ建築さんぽ5選。",
-    subtitle: "旧横浜正金銀行、旧生糸検査所、県庁本庁舎。関内で重なる時代の層",
-    lede: "馬車道は1869年に日本で最初に「馬車道」として整備された通り。明治・大正の歴史的洋館が今も現役で残る、東京駅丸の内側に匹敵する近代建築遺産の集積地。対象は近代建築・歴史散歩が好きな大人のカップル、または横浜の文化的な裏面を深掘りしたい人。標準は13:00集合・17:30解散の4時間30分コース、予算は博物館込みで1人2,500〜4,500円。ここでは馬車道駅・関内駅を起点に洋館建築を巡る5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.museum,
-    ranking: [
-      s(1, "神奈川県立歴史博物館（旧横浜正金銀行本店）", "歴史建築・博物館", "馬車道",
-        "1904年竣工のネオ・バロック様式。ドームが目印",
-        "1904年（明治37年）竣工、横浜正金銀行本店として建てられた西洋古典主義建築。設計は妻木頼黄。1995年に神奈川県立歴史博物館本館として再生され、「神奈川の歴史と文化」を紹介する常設展と企画展を展開。「明治の近代建築の内部を歩きたい」「神奈川の歴史を体系的に学びたい」2人に向く。ドーム屋根・コリント式の柱・装飾豊かなファサードが代表例。営業時間9〜17時、月曜休館（公式サイトで確認）。馬車道駅から徒歩3分、次の旧横浜市庁舎まで徒歩5分。",
-        [I.museum, I.museum_n],
-        [
-          { k: "最寄り駅", v: "馬車道駅 徒歩1分" },
-          { k: "入館料", v: "常設展 300円" },
-          { k: "雨の日", v: "◎ 屋内見学可" }]),
-      s(2, "旧横浜市庁舎（横浜市歴史的建造物）", "歴史建築", "関内",
-        "1959年竣工の市庁舎がそのまま保存活用中",
-        "旧横浜市庁舎（横浜市歴史的建造物）は1959年竣工、村野藤吾設計の市庁舎建築。2020年に新庁舎完成後、外観は保存され北棟・南棟と中庭の景観が今も見られる。「戦後モダニズム建築の代表例を見たい」「村野藤吾の設計を体感したい」建築好きに向く。現在は外観のみの見学（無料）、内部は商業利用のため公開なし。関内駅から徒歩2分、馬車道駅からも徒歩5分。夜のライトアップ時の外観も写真スポットとして優秀。",
-        [I.museum],
-        [
-          { k: "最寄り駅", v: "関内駅 徒歩5分" },
-          { k: "料金", v: "外観無料" },
-          { k: "雨の日", v: "△ 外観見学のみの場合は天候依存" }]),
-      s(3, "横浜第二合同庁舎（旧横浜生糸検査所）", "歴史建築", "馬車道",
-        "1926年の生糸検査所が現在も現役の庁舎として使われている",
-        "1923年（大正12年）竣工、横浜第二合同庁舎（旧横浜生糸検査所）。設計は遠藤於菟。生糸の品質検査を行っていた歴史的施設で、現在は北仲ノットの一部として保存・再生されている。「明治〜昭和の生糸貿易史」に興味がある人に向く。横浜の生糸貿易は明治〜昭和初期に世界最大級だった歴史的背景があり、この施設はその記憶を物理的に伝える建築。外観は無料で見学できる。馬車道駅から徒歩2分、市役所側の動線で他の歴史建築と組み合わせやすい。",
-        [I.museum_n],
-        [
-          { k: "最寄り駅", v: "馬車道駅 徒歩3分" },
-          { k: "料金", v: "外観無料" }]),
-      s(4, "神奈川県庁本庁舎（キングの塔）", "歴史建築", "関内",
-        "横浜三塔のひとつ「キング」。帝冠様式の塔が目印",
-        "1928年竣工の神奈川県庁本庁舎（キングの塔）は、横浜三塔（キング・クイーン・ジャック）のうちのキング塔。塔屋部分が48mの高さで、横浜港から見上げると港の景観の一部になる。「横浜三塔をすべて見つけたい」建築好きに最適。県庁見学コース（要事前予約・公式サイト確認）で内部を見られる。三塔を全部見て歩くと、馬車道〜日本大通り〜山下公園のエリアを徒歩でカバーできる動線になる。馬車道駅から徒歩5分、日本大通り駅から徒歩3分。",
-        [I.museum],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩3分" },
-          { k: "料金", v: "外観無料（内部見学は平日限定）" },
-          { k: "雨の日", v: "◎ 内部見学可（要確認）" }]),
-      s(5, "横浜開港資料館（旧英国総領事館）", "歴史建築・資料館", "日本大通り",
-        "1931年竣工の旧英国総領事館。庭の大木と石造りが印象的",
-        "1931年竣工、旧英国総領事館の建物を活用した横浜開港資料館。ペリー来航（1853年）から関東大震災（1923年）までの横浜の歴史・写真・資料を展示。「横浜開港の歴史を学びたい」「英国総領事館の旧館を見たい」歴史好きに最適。館内の中庭は無料エリアで、玉楠の木（樹齢200年以上）が植えられている。営業時間9:30〜17:00、月曜休館（公式サイトで確認）。日本大通り駅から徒歩2分、馬車道散歩の最終目的地として組み込みやすい。",
-        [I.museum_n],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩1分" },
-          { k: "入館料", v: "大人 200円" },
-          { k: "雨の日", v: "◎ 屋内展示あり" }])],
-    sideArticles: [
-      side("関内・日本大通りさんぽ5選", "new-kannai-nihondori", I.museum_n),
-      side("元町・山手さんぽ5選", "new-motomachi-yamate", I.motomachi)],
-    quote: "馬車道から日本大通りにかけて1kmも歩けば、100年以上の建築が今も生きているのがわかる。",
-    quoteCite: author,
-    closing: "標準動線: 馬車道駅13:00→神奈川県立歴史博物館（13:00〜14:30 建築＋常設展）→旧横浜市庁舎（14:30〜15:00 外観）→旧生糸検査所（15:00〜15:30 外観）→神奈川県庁キング塔（15:30〜16:00 外観）→横浜開港資料館（16:00〜17:30）→赤レンガ倉庫方向へ。所要4時間30分、予算は博物館入場込みで1人2,500〜4,500円。土日午後は神奈川県立歴史博物館で企画展がある時にやや混むが、平日午後は基本的に静か。雨の日は屋内中心ルート（県立歴史博物館＋横浜開港資料館）で2〜3時間過ごせる。失敗しやすいのは「博物館の休館日見落とし」（月曜休館の館が多い）と「県庁の事前予約見落とし」（内部見学は要予約）。事前に公式サイトで開館日・予約状況を必ず確認。この記事は明治・大正の洋館建築が好きな大人のデート層、横浜の文化史を深掘りしたい人に最適。",
+    "id": "new-bashamichi-architecture",
+    "no": "NG-06",
+    "articleType": "guide",
+    "kicker": "BASHAMICHI ARCHITECTURE",
+    "title": "馬車道から日本大通りへ、洋館を歩く。明治・大正の石が残る関内さんぽ",
+    "titleHTML": "馬車道から日本大通りへ、洋館を歩く。<br>明治・大正の石が残る関内さんぽ",
+    "subtitle": "旧横浜正金銀行、旧生糸検査所、県庁キングの塔。関内に積もった時代の層を、足の裏で確かめる",
+    "lede": "馬車道は1869年、日本で最初に「馬車道」として整えられた通りだ。歩き出すと、石造りの重い扉や、見上げるほど高い列柱が、ひとつまたひとつと視界に入ってくる。明治・大正に建った洋館が、いまも役所として、博物館として、現役で働いているのがこの街の面白いところ。東京駅の丸の内側に並ぶ近代建築群に引けを取らない遺産が、関内のわずか1km四方に静かに集まっている。日本大通りに向けてゆっくり足を進めながら、横浜が開港の街として積み上げてきた時間の層を、看板ではなく建物そのものから読み取っていく。そんな半日の散歩を、ここでは綴る。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "神奈川県立歴史博物館（旧横浜正金銀行本店）",
+        "cuisine": "歴史建築・博物館",
+        "area": "馬車道",
+        "purpose": "1904年竣工のネオ・バロック様式。ドームが目印",
+        "desc": "1904年（明治37年）竣工、横浜正金銀行本店として建てられた西洋古典主義建築。設計は妻木頼黄。1995年に神奈川県立歴史博物館本館として再生され、「神奈川の歴史と文化」を紹介する常設展と企画展を展開。「明治の近代建築の内部を歩きたい」「神奈川の歴史を体系的に学びたい」2人に向く。ドーム屋根・コリント式の柱・装飾豊かなファサードが代表例。営業時間9〜17時、月曜休館（公式サイトで確認）。馬車道駅から徒歩3分、次の旧横浜市庁舎まで徒歩5分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "馬車道駅 徒歩1分"
+          },
+          {
+            "k": "入館料",
+            "v": "常設展 300円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内見学可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "旧横浜市庁舎（横浜市歴史的建造物）",
+        "cuisine": "歴史建築",
+        "area": "関内",
+        "purpose": "1959年竣工の市庁舎がそのまま保存活用中",
+        "desc": "旧横浜市庁舎（横浜市歴史的建造物）は1959年竣工、村野藤吾設計の市庁舎建築。2020年に新庁舎完成後、外観は保存され北棟・南棟と中庭の景観が今も見られる。「戦後モダニズム建築の代表例を見たい」「村野藤吾の設計を体感したい」建築好きに向く。現在は外観のみの見学（無料）、内部は商業利用のため公開なし。関内駅から徒歩2分、馬車道駅からも徒歩5分。夜のライトアップ時の外観も写真スポットとして優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "関内駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "外観無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 外観見学のみの場合は天候依存"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜第二合同庁舎（旧横浜生糸検査所）",
+        "cuisine": "歴史建築",
+        "area": "馬車道",
+        "purpose": "1926年の生糸検査所が現在も現役の庁舎として使われている",
+        "desc": "1923年（大正12年）竣工、横浜第二合同庁舎（旧横浜生糸検査所）。設計は遠藤於菟。生糸の品質検査を行っていた歴史的施設で、現在は北仲ノットの一部として保存・再生されている。「明治〜昭和の生糸貿易史」に興味がある人に向く。横浜の生糸貿易は明治〜昭和初期に世界最大級だった歴史的背景があり、この施設はその記憶を物理的に伝える建築。外観は無料で見学できる。馬車道駅から徒歩2分、市役所側の動線で他の歴史建築と組み合わせやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "馬車道駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "外観無料"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "神奈川県庁本庁舎（キングの塔）",
+        "cuisine": "歴史建築",
+        "area": "関内",
+        "purpose": "横浜三塔のひとつ「キング」。帝冠様式の塔が目印",
+        "desc": "1928年竣工の神奈川県庁本庁舎（キングの塔）は、横浜三塔（キング・クイーン・ジャック）のうちのキング塔。塔屋部分が48mの高さで、横浜港から見上げると港の景観の一部になる。「横浜三塔をすべて見つけたい」建築好きに最適。県庁見学コース（要事前予約・公式サイト確認）で内部を見られる。三塔を全部見て歩くと、馬車道〜日本大通り〜山下公園のエリアを徒歩でカバーできる動線になる。馬車道駅から徒歩5分、日本大通り駅から徒歩3分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "外観無料（内部見学は平日限定）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 内部見学可（要確認）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "横浜開港資料館（旧英国総領事館）",
+        "cuisine": "歴史建築・資料館",
+        "area": "日本大通り",
+        "purpose": "1931年竣工の旧英国総領事館。庭の大木と石造りが印象的",
+        "desc": "1931年竣工、旧英国総領事館の建物を活用した横浜開港資料館。ペリー来航（1853年）から関東大震災（1923年）までの横浜の歴史・写真・資料を展示。「横浜開港の歴史を学びたい」「英国総領事館の旧館を見たい」歴史好きに最適。館内の中庭は無料エリアで、玉楠の木（樹齢200年以上）が植えられている。営業時間9:30〜17:00、月曜休館（公式サイトで確認）。日本大通り駅から徒歩2分、馬車道散歩の最終目的地として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩1分"
+          },
+          {
+            "k": "入館料",
+            "v": "大人 200円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展示あり"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "関内・日本大通りさんぽ5選",
+        "h": "/feature/new-kannai-nihondori",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+      },
+      {
+        "t": "元町・山手さんぽ5選",
+        "h": "/feature/new-motomachi-yamate",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+      }
+    ],
+    "quote": "馬車道から日本大通りまで、たった1kmを歩くだけで、100年を越えた建築がいまも生きて呼吸しているのがわかる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "馬車道駅を出てまず向かったのは、旧横浜正金銀行本店だった神奈川県立歴史博物館。重厚な石の正面に圧倒されながら、建物と常設展でひと息に時代を遡る。表に出れば、村野藤吾が手がけた旧横浜市庁舎の中庭がすぐそこ。北棟と南棟に挟まれた戦後モダニズムの風景を眺め、運河寄りへ歩けば、生糸の品質を検査していた旧横浜生糸検査所の煉瓦が現れる。横浜が生糸で栄えた頃の記憶が、壁の質感に残っている。そこから関内側へ折り返し、横浜三塔のキング、神奈川県庁本庁舎を見上げる。塔屋までの48mを首を反らして追ったら、最後は日本大通りへ。旧英国総領事館を活かした横浜開港資料館で、ペリー来航から関東大震災までの横浜をたっぷり辿って締めくくる。足を伸ばせば赤レンガ倉庫もすぐだ。月曜が休館の館が多く、県庁の内部見学は予約が要ることもあるので、出かける前に各館の開館日と予約の要否は公式サイトでひと目だけ確かめておくと安心。雨の日は県立歴史博物館と横浜開港資料館の屋内だけでも、二、三時間はゆうに楽しめた。"
   },
-
-  // ─── 7. 関内・日本大通りさんぽ5選 ───
   "new-kannai-nihondori": {
-    id: "new-kannai-nihondori",
-    no: "NG-07", articleType: "guide",
-    kicker: "KANNAI NIHONDORI WALK",
-    title: "関内・日本大通りさんぽ5選。横浜発祥の街を歩く",
-    titleHTML: "関内・日本大通り<br>さんぽ5選。",
-    subtitle: "日本大通り、開港資料館、スタジアム界隈。横浜らしさが残る中心地の歩き方",
-    lede: "関内・日本大通りは横浜開港（1859年）の発祥地で、横浜の「中心街」としての歴史的位置を体感できる。対象は横浜の歴史に興味があるカップル、ベイスターズファン、または横浜建築散歩を楽しみたい人。標準は13:00集合・18:00解散の5時間コース、予算は食事込みで1人3,500〜6,000円。日本大通り・横浜公園・横浜スタジアム・馬車道商店街が徒歩圏内で繋がる。ここでは関内駅・日本大通り駅を起点に5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.museum_n,
-    ranking: [
-      s(1, "日本大通り", "歴史的街路", "関内",
-        "日本初の西洋式街路。ケヤキ並木と歴史建築が並ぶ",
-        "1879年（明治12年）整備、R.H. ブラントン設計の幅員30mの大通り。日本で最初の西洋式街路として知られる。通り沿いに神奈川県庁本庁舎・横浜地方裁判所・横浜開港資料館・三井物産横浜ビルなどの近代建築が並ぶ。「文化財建築をまとめて見たい」「街路樹の景観を楽しみたい」2人に向く。イチョウ並木は11月中旬〜12月初旬が黄葉のピーク。歩道が広く、ベンチも整備されているため散歩しやすい。日本大通り駅から横浜公園方向へ徒歩5〜10分、関内方向へも徒歩5分の好立地。",
-        [I.museum, I.museum_n],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 直結" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△ 並木道のため多少の雨なら歩ける" }]),
-      s(2, "横浜市開港記念会館（ジャックの塔）", "歴史建築", "関内",
-        "横浜三塔「ジャック」。1917年竣工のドーム付き建築",
-        "1917年竣工、横浜三塔のジャックの塔として知られる横浜市開港記念会館。関東大震災で内部を焼失したが、1989年復元工事で大正期の姿が現代に蘇った。「横浜三塔をすべて見つけたい」建築好きに向く。館内は会議室として現役で使われており、外観見学は無料・内部は公開日に限定（公式サイトで確認）。関内駅から徒歩3分、日本大通りからも徒歩2分。ステンドグラス・大階段・八角形の塔屋が大正期の建築意匠の見どころ。",
-        [I.museum],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩2分" },
-          { k: "料金", v: "外観無料（内部見学は時間帯限定）" },
-          { k: "雨の日", v: "◎ 内部見学可" }]),
-      s(3, "横浜スタジアム周辺（横浜公園）", "公園", "関内",
-        "球場を囲む公園。チューリップの名所でもある",
-        "1876年開園、日本初の西洋式公園のひとつ。横浜スタジアムを囲む形で広場・遊歩道・チューリップ花壇が整備されている。春のチューリップ花壇は約14万本のチューリップが咲き誇り、横浜公園春の花壇展として地元客に知られる。「横浜スタジアム観戦の前後に時間を潰したい」「日本最古の西洋式公園を歩きたい」人に向く。横浜スタジアムでDeNAベイスターズのナイトゲームがある日（年間70試合）は18時前後から人波が増えるので、デートとして使うなら試合のない日が静か。公園内のレストラン「ALL DAY HOMECOMING」も観戦前後の食事に使える。関内駅から徒歩5分、日本大通り駅から徒歩2分。",
-        [I.museum_n],
-        [
-          { k: "最寄り駅", v: "関内駅 徒歩3分" },
-          { k: "料金", v: "無料（試合観戦は別途）" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(4, "横浜開港資料館", "資料館・歴史建築", "日本大通り",
-        "旧英国総領事館を転用した資料館。庭の老木が印象的",
-        "1981年開館、横浜開港の歴史を展示する博物館。1931年竣工の旧英国総領事館を本館として使用している。「横浜の歴史をしっかり学びたい」「ペリー来航から関東大震災までの歴史に興味がある」人に最も向く。ペリー来航（1853年）から関東大震災（1923年）までの横浜の歴史・写真・資料を展示。館内の中庭は無料エリアで、玉楠の木（樹齢200年以上）が植えられている。営業時間9:30〜17:00、月曜休館（公式サイトで確認）。日本大通り駅から徒歩2分の駅近で、関内エリアの観光起点として使いやすい。",
-        [I.museum],
-        [
-          { k: "最寄り駅", v: "日本大通り駅 徒歩1分" },
-          { k: "入館料", v: "大人 200円" },
-          { k: "雨の日", v: "◎ 屋内展示あり" }]),
-      s(5, "馬車道商店街", "歴史的商店街", "馬車道",
-        "レンガ敷きの歩道が続く横浜らしい通り",
-        "馬車道商店街は1869年（明治2年）に整備された、日本初の馬車専用道路だった通り。明治期は外国人居留地と関内を結ぶメインストリートとして栄え、現在も近代建築・老舗店・カフェが並ぶ歴史商店街として残る。「明治の街路設計を歩きたい」「老舗の喫茶店でお茶したい」散歩好きに向く。ガス灯のレプリカ・馬車道の石碑などが街角に点在し、歴史散歩の道標になる。馬車道駅から徒歩すぐ、関内駅からも徒歩5分。営業時間は店舗による（おおむね10〜20時）。",
-        [I.museum_n],
-        [
-          { k: "最寄り駅", v: "馬車道駅 直結" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△ アーケードなし" }])],
-    sideArticles: [
-      side("馬車道レトロ建築さんぽ5選", "new-bashamichi-architecture", I.museum),
-      side("横浜中華街周辺で遊ぶ5選", "new-chinatown-sightseeing", I.chinatown)],
-    quote: "関内から日本大通りを歩くと、横浜がどうやってできた街なのかが少しわかってくる。",
-    quoteCite: author,
-    closing: "標準動線: 日本大通り駅13:00→日本大通り散歩（13:00〜14:00）→横浜市開港記念会館（14:00〜14:30 ジャック塔）→横浜公園・横浜スタジアム周辺散歩（14:30〜15:30）→横浜開港資料館（15:30〜16:30）→馬車道商店街でお茶・夕食（17:00〜18:00）→赤レンガ倉庫方向へ。所要5時間、予算は食事・博物館込みで1人3,500〜6,000円。ベイスターズのホームゲーム日（公式サイトで確認）は18時以降の関内駅周辺が混雑するので、デートでは試合日を避けるか、観戦を組み込むか決めて来る。雨の日は横浜開港資料館＋馬車道商店街の屋内・アーケード中心で2〜3時間過ごせる。失敗しやすいのは「ベイスターズ試合日を見落として混雑に巻き込まれる」「ジャック塔の公開日を見落とす」「歴史博物館の月曜休館を見落とす」。事前に試合スケジュール・施設公開日を公式サイトで確認するのが安全。この記事は横浜の歴史と建築を深掘りしたい大人のデート層、文化散歩好きに向く。",
+    "id": "new-kannai-nihondori",
+    "no": "NG-07",
+    "articleType": "guide",
+    "kicker": "KANNAI NIHONDORI WALK",
+    "title": "関内・日本大通りを歩く。横浜が生まれた場所をたどるさんぽ",
+    "titleHTML": "関内・日本大通りを歩く。<br>横浜が生まれた場所をたどるさんぽ",
+    "subtitle": "幅三十メートルの並木道から、ジャックの塔、横浜公園、開港資料館、馬車道へ。石とレンガに残る開港の記憶を拾いながら",
+    "lede": "関内駅で電車を降りて海の方へ少し下ると、急に空が広く感じられる場所に出る。日本大通りだ。幅三十メートルの並木道の両側に、県庁や裁判所の重い石の建物が並んでいて、足元の歩道には季節ごとに葉が落ちたり影が伸びたりする。横浜という街は、ペリーが来て港が開いた一八五九年に、まさにこのあたりから始まった。歩いていると、その「最初の一歩」がどこにあったのかが、看板の説明ではなく建物の重さや通りの広さの方から伝わってくる。今日はその発祥の感触を確かめるように、駅を起点にしてゆっくり海側へ向かって歩いてみる。歴史を勉強しに行くというより、横浜がどうやってこの形になったのかを足で読みに行く、そんな半日の散歩だ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "日本大通り",
+        "cuisine": "歴史的街路",
+        "area": "関内",
+        "purpose": "日本初の西洋式街路。ケヤキ並木と歴史建築が並ぶ",
+        "desc": "1879年（明治12年）整備、R.H. ブラントン設計の幅員30mの大通り。日本で最初の西洋式街路として知られる。通り沿いに神奈川県庁本庁舎・横浜地方裁判所・横浜開港資料館・三井物産横浜ビルなどの近代建築が並ぶ。「文化財建築をまとめて見たい」「街路樹の景観を楽しみたい」2人に向く。イチョウ並木は11月中旬〜12月初旬が黄葉のピーク。歩道が広く、ベンチも整備されているため散歩しやすい。日本大通り駅から横浜公園方向へ徒歩5〜10分、関内方向へも徒歩5分の好立地。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 並木道のため多少の雨なら歩ける"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "横浜市開港記念会館（ジャックの塔）",
+        "cuisine": "歴史建築",
+        "area": "関内",
+        "purpose": "横浜三塔「ジャック」。1917年竣工のドーム付き建築",
+        "desc": "1917年竣工、横浜三塔のジャックの塔として知られる横浜市開港記念会館。関東大震災で内部を焼失したが、1989年復元工事で大正期の姿が現代に蘇った。「横浜三塔をすべて見つけたい」建築好きに向く。館内は会議室として現役で使われており、外観見学は無料・内部は公開日に限定（公式サイトで確認）。関内駅から徒歩3分、日本大通りからも徒歩2分。ステンドグラス・大階段・八角形の塔屋が大正期の建築意匠の見どころ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩2分"
+          },
+          {
+            "k": "料金",
+            "v": "外観無料（内部見学は時間帯限定）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 内部見学可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜スタジアム周辺（横浜公園）",
+        "cuisine": "公園",
+        "area": "関内",
+        "purpose": "球場を囲む公園。チューリップの名所でもある",
+        "desc": "1876年開園、日本初の西洋式公園のひとつ。横浜スタジアムを囲む形で広場・遊歩道・チューリップ花壇が整備されている。春のチューリップ花壇は約14万本のチューリップが咲き誇り、横浜公園春の花壇展として地元客に知られる。「横浜スタジアム観戦の前後に時間を潰したい」「日本最古の西洋式公園を歩きたい」人に向く。横浜スタジアムでDeNAベイスターズのナイトゲームがある日（年間70試合）は18時前後から人波が増えるので、デートとして使うなら試合のない日が静か。公園内のレストラン「ALL DAY HOMECOMING」も観戦前後の食事に使える。関内駅から徒歩5分、日本大通り駅から徒歩2分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "関内駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（試合観戦は別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "横浜開港資料館",
+        "cuisine": "資料館・歴史建築",
+        "area": "日本大通り",
+        "purpose": "旧英国総領事館を転用した資料館。庭の老木が印象的",
+        "desc": "1981年開館、横浜開港の歴史を展示する博物館。1931年竣工の旧英国総領事館を本館として使用している。「横浜の歴史をしっかり学びたい」「ペリー来航から関東大震災までの歴史に興味がある」人に最も向く。ペリー来航（1853年）から関東大震災（1923年）までの横浜の歴史・写真・資料を展示。館内の中庭は無料エリアで、玉楠の木（樹齢200年以上）が植えられている。営業時間9:30〜17:00、月曜休館（公式サイトで確認）。日本大通り駅から徒歩2分の駅近で、関内エリアの観光起点として使いやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日本大通り駅 徒歩1分"
+          },
+          {
+            "k": "入館料",
+            "v": "大人 200円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展示あり"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "馬車道商店街",
+        "cuisine": "歴史的商店街",
+        "area": "馬車道",
+        "purpose": "レンガ敷きの歩道が続く横浜らしい通り",
+        "desc": "馬車道商店街は1869年（明治2年）に整備された、日本初の馬車専用道路だった通り。明治期は外国人居留地と関内を結ぶメインストリートとして栄え、現在も近代建築・老舗店・カフェが並ぶ歴史商店街として残る。「明治の街路設計を歩きたい」「老舗の喫茶店でお茶したい」散歩好きに向く。ガス灯のレプリカ・馬車道の石碑などが街角に点在し、歴史散歩の道標になる。馬車道駅から徒歩すぐ、関内駅からも徒歩5分。営業時間は店舗による（おおむね10〜20時）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "馬車道駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ アーケードなし"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "馬車道レトロ建築さんぽ5選",
+        "h": "/feature/new-bashamichi-architecture",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+      },
+      {
+        "t": "横浜中華街周辺で遊ぶ5選",
+        "h": "/feature/new-chinatown-sightseeing",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+      }
+    ],
+    "quote": "関内から日本大通りを歩くと、横浜がどうやってできた街なのかが、説明されるより先に体に入ってくる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "日本大通り駅を出てまず通りそのものを端から端まで歩き、明治の都市計画が引いた直線を体で測ってみる。突き当たり近くで横浜市開港記念会館の時計塔、ジャックの塔を見上げると、赤レンガと白い石の縞模様がよく目立つ。そのまま横浜公園に入れば、スタジアムを囲む遊歩道と花壇が広がっていて、試合のない日は驚くほど静かだ。日が傾いてきたら横浜開港資料館に寄り、旧英国総領事館の館内で開港から関東大震災までの横浜をひと通りたどる。最後は馬車道商店街まで歩き、近代建築とカフェが混じる通りでお茶か早めの夕食をとって一日を閉じる。歩き終えてみると、別々に見えた建物や通りが、開港という一点から枝分かれしてできた同じ街の部位だったとわかってくる。ベイスターズのホームゲームと重なると関内駅まわりは夕方から人で埋まるので、観戦を組み込むのでなければ試合日を外しておくと歩きやすい。会館の塔内公開日や資料館の休館日は変わることがあるので、出かける前にそれぞれの公式ページをのぞいておくと当てが外れない。"
   },
-
-  // ─── 8. 山下公園周辺デート5選 ───
   "new-yamashita-date": {
-    id: "new-yamashita-date",
-    no: "NG-08", articleType: "guide",
-    kicker: "YAMASHITA DATE",
-    title: "山下公園周辺デート5選。港と丘をつなぐ横浜の定番",
-    titleHTML: "山下公園<br>周辺デート5選。",
-    subtitle: "山下公園、氷川丸、港の見える丘公園、山手洋館。海から丘へ歩くコース",
-    lede: "山下公園は1930年開園の日本初の臨海公園で、横浜の港町としての象徴的な公園。対象は2〜3回目のデートで横浜の港町と山手の洋館の両方を組み合わせたい人、ファミリーで横浜定番を散歩したい家族。標準は13:00集合・19:30解散の6時間30分コース、予算は食事込みで1人5,000〜8,000円。山下公園・氷川丸・港の見える丘公園・山手西洋館・マリンタワーが徒歩圏で繋がる。ここでは山下公園を中心とした5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.yamashita,
-    ranking: [
-      s(1, "山下公園", "公園・水辺", "中区・山下",
-        "横浜港に沿って伸びる公園。花と海と氷川丸",
-        "1930年開園、関東大震災（1923年）の瓦礫を埋め立てて造成された港湾公園。横浜港に沿って約700mの遊歩道があり、ベンチが豊富で休憩しながら散歩できる。「横浜の港町としての象徴的な公園を歩きたい」観光客に最も向く。桜・チューリップ・バラと季節ごとの花が楽しめ、年間を通じて表情が変わる。夜のライトアップは大さん橋・氷川丸・みなとみらい方向が美しく、夜景デートの定番。元町・中華街駅から徒歩3分、日本大通り駅から徒歩8分の至近距離。",
-        [I.yamashita, I.yamashita2],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩3分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" },
-          { k: "おすすめ時間", v: "午前〜夕方" }]),
-      s(2, "氷川丸（日本郵船氷川丸）", "船舶ミュージアム", "山下",
-        "現役引退した客船をそのまま見学できる",
-        "1930年就航の貨客船で、1961年まで太平洋航路で運航していた歴史的客船。山下公園に係留され、内部見学ができる（入館料は公式サイトで確認）。「戦前のクルーズ客船の内部を歩きたい」歴史好きに向く。船内は当時の客室・操舵室・エンジンルームが保存され、戦前の生活を体感できる。国際船舶振興会の運営で、教育的価値が高い博物館型展示。見学所要時間は1時間程度。山下公園入口から徒歩3分、デッキ上のカフェも併設されており、海風を受けながらコーヒーが楽しめる。",
-        [I.yamashita],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩5分" },
-          { k: "入館料", v: "大人 300円" },
-          { k: "雨の日", v: "◎ 船内見学は屋内" }]),
-      s(3, "港の見える丘公園", "展望公園", "山手",
-        "山の上から横浜港が一望できる無料の展望スポット",
-        "1962年開園、横浜港を見下ろす丘の上の展望公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場・展望台が整備されている。バラ園は5〜6月と10〜11月が見頃、約330種2,200本のバラが咲き誇る。展望広場からはベイブリッジ・横浜港・みなとみらいの景色が見え、夕方の眺望が特に絵になる。元町・中華街駅から徒歩10分、坂が急な区画があるので歩きやすい靴推奨。",
-        [I.yamashita],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(4, "山手西洋館エリア（ブラフ18番館など）", "歴史建築", "山手",
-        "明治〜大正期の洋館が7棟公開。入場無料",
-        "山手西洋館エリアは外国人居留地時代に作られた7軒の西洋館を一般公開している（横浜市が管理）。ブラフ18番館、ベーリック・ホール、エリスマン邸、外交官の家、山手234番館などが点在。「アールデコ・チューダー様式・ジョージアン様式の建築意匠を比較したい」建築好きに最適。見学は無料（一部有料）、各館の営業時間は10〜17時、月曜休館の館が多い（公式サイトで確認）。館ごとに庭園もあり、5〜6月のバラの季節は花と建築の両方が見頃。石川町駅から徒歩10〜20分、坂が多い区画なので2〜3館に絞って回るのが現実的。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩10〜15分" },
-          { k: "料金", v: "無料（一部施設は有料）" },
-          { k: "雨の日", v: "◎ 屋内見学可" }]),
-      s(5, "マリンタワー", "展望台", "山下",
-        "改修後リニューアル。山下公園の正面にある展望台",
-        "1961年開業、高さ106mの横浜のシンボル塔。2009年に大規模リニューアル、現在の営業形態は展望階＋飲食フロア。「横浜の昭和の象徴と港の景色を組み合わせたい」「夕景〜夜景を見たい」人に向く。展望階からは横浜港・ベイブリッジ・みなとみらいが見渡せる。営業時間10〜22時、入場料は変動（公式サイトで確認）。山下公園に隣接、元町・中華街駅から徒歩5分の好立地で、デートの締めの夜景観賞に組み込みやすい。",
-        [I.yamashita2],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩5分" },
-          { k: "入館料", v: "大人 750円" },
-          { k: "雨の日", v: "◎ 屋内展望フロア" }])],
-    sideArticles: [
-      side("大さん橋夜景デート3選", "new-osanbashi-nightview-date", I.osanbashi),
-      side("元町・山手さんぽ5選", "new-motomachi-yamate", I.motomachi)],
-    quote: "山下公園は起点。ここから海沿いか丘側か、どちらに向かうかで一日の景色が変わる。",
-    quoteCite: author,
-    closing: "標準動線: 元町・中華街駅13:00→山下公園で散歩（13:00〜14:00）→氷川丸見学（14:00〜15:00）→マリンタワー展望（15:00〜16:00）→港の見える丘公園で展望（16:00〜17:00）→山手西洋館（17:00〜18:30 1〜2館）→中華街でディナー。所要6時間30分、予算は氷川丸・タワー入場・食事込みで1人5,000〜8,000円。土日午後の港の見える丘公園のバラ園・西洋館は混雑、平日午後または朝が落ち着く。雨の日は氷川丸見学＋マリンタワー＋元町商店街の屋内中心で半日が組める。失敗しやすいのは「西洋館の月曜休館を見落とす」「坂道の歩き距離を読み違える」「マリンタワーの混雑時間（土日18〜21時）を見落とす」。事前に公式サイトで休館日・営業時間・歩きやすい靴を確認。この記事は2〜3回目のデートで横浜の港町と山手の洋館の両方を組み合わせたい人、ファミリーで横浜定番を散歩したい家族に向く。",
+    "id": "new-yamashita-date",
+    "no": "NG-08",
+    "articleType": "course",
+    "kicker": "YAMASHITA DATE",
+    "title": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
+    "titleHTML": "山下公園から山手へ、<br>海と丘をつなぐ横浜の半日デート",
+    "subtitle": "海沿いの遊歩道で始め、氷川丸とタワーを挟み、坂を上って丘の上の港の眺めで締める一日",
+    "lede": "横浜という街は、海の高さと丘の高さで表情が二つに分かれる。波止場のにぎわいと、坂を上った先の静かな洋館街。どちらか片方だけでは横浜の半分しか見たことにならない。だからこのコースは、その二つを一本の線でつなぐように組んだ。午後の早い時間に山下公園の海辺から歩き出し、氷川丸とマリンタワーで港の歴史を肌で感じてから、山手の坂を上がって港の見える丘公園へ。低い場所から高い場所へ向かって日が傾いていくので、丘に着くころには眼下の港が夕色に染まりはじめる——そういう光の動きを味方につけられる順路だ。二、三度目の横浜デートで、定番をただ消化するのではなく一日として記憶に残したい二人に向いている。氷川丸やマリンタワーの入館料・開館時間は時期で変わるので、出かける前に各公式サイトで一度だけ目を通しておくと安心して歩ける。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "山下公園",
+        "cuisine": "公園・水辺",
+        "area": "中区・山下",
+        "purpose": "横浜港に沿って伸びる公園。花と海と氷川丸",
+        "desc": "1930年開園、関東大震災（1923年）の瓦礫を埋め立てて造成された港湾公園。横浜港に沿って約700mの遊歩道があり、ベンチが豊富で休憩しながら散歩できる。「横浜の港町としての象徴的な公園を歩きたい」観光客に最も向く。桜・チューリップ・バラと季節ごとの花が楽しめ、年間を通じて表情が変わる。夜のライトアップは大さん橋・氷川丸・みなとみらい方向が美しく、夜景デートの定番。元町・中華街駅から徒歩3分、日本大通り駅から徒歩8分の至近距離。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "午前〜夕方"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "氷川丸（日本郵船氷川丸）",
+        "cuisine": "船舶ミュージアム",
+        "area": "山下",
+        "purpose": "現役引退した客船をそのまま見学できる",
+        "desc": "1930年就航の貨客船で、1961年まで太平洋航路で運航していた歴史的客船。山下公園に係留され、内部見学ができる（入館料は公式サイトで確認）。「戦前のクルーズ客船の内部を歩きたい」歴史好きに向く。船内は当時の客室・操舵室・エンジンルームが保存され、戦前の生活を体感できる。国際船舶振興会の運営で、教育的価値が高い博物館型展示。見学所要時間は1時間程度。山下公園入口から徒歩3分、デッキ上のカフェも併設されており、海風を受けながらコーヒーが楽しめる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩5分"
+          },
+          {
+            "k": "入館料",
+            "v": "大人 300円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 船内見学は屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "港の見える丘公園",
+        "cuisine": "展望公園",
+        "area": "山手",
+        "purpose": "山の上から横浜港が一望できる無料の展望スポット",
+        "desc": "1962年開園、横浜港を見下ろす丘の上の展望公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場・展望台が整備されている。バラ園は5〜6月と10〜11月が見頃、約330種2,200本のバラが咲き誇る。展望広場からはベイブリッジ・横浜港・みなとみらいの景色が見え、夕方の眺望が特に絵になる。元町・中華街駅から徒歩10分、坂が急な区画があるので歩きやすい靴推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "山手西洋館エリア（ブラフ18番館など）",
+        "cuisine": "歴史建築",
+        "area": "山手",
+        "purpose": "明治〜大正期の洋館が7棟公開。入場無料",
+        "desc": "山手西洋館エリアは外国人居留地時代に作られた7軒の西洋館を一般公開している（横浜市が管理）。ブラフ18番館、ベーリック・ホール、エリスマン邸、外交官の家、山手234番館などが点在。「アールデコ・チューダー様式・ジョージアン様式の建築意匠を比較したい」建築好きに最適。見学は無料（一部有料）、各館の営業時間は10〜17時、月曜休館の館が多い（公式サイトで確認）。館ごとに庭園もあり、5〜6月のバラの季節は花と建築の両方が見頃。石川町駅から徒歩10〜20分、坂が多い区画なので2〜3館に絞って回るのが現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩10〜15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（一部施設は有料）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内見学可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "マリンタワー",
+        "cuisine": "展望台",
+        "area": "山下",
+        "purpose": "改修後リニューアル。山下公園の正面にある展望台",
+        "desc": "1961年開業、高さ106mの横浜のシンボル塔。2009年に大規模リニューアル、現在の営業形態は展望階＋飲食フロア。「横浜の昭和の象徴と港の景色を組み合わせたい」「夕景〜夜景を見たい」人に向く。展望階からは横浜港・ベイブリッジ・みなとみらいが見渡せる。営業時間10〜22時、入場料は変動（公式サイトで確認）。山下公園に隣接、元町・中華街駅から徒歩5分の好立地で、デートの締めの夜景観賞に組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩5分"
+          },
+          {
+            "k": "入館料",
+            "v": "大人 750円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展望フロア"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "大さん橋夜景デート3選",
+        "h": "/feature/new-osanbashi-nightview-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+      },
+      {
+        "t": "元町・山手さんぽ5選",
+        "h": "/feature/new-motomachi-yamate",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+      }
+    ],
+    "quote": "山下公園が一日の起点。ここから海沿いを行くか、坂を上って丘へ向かうか——選んだ高さの分だけ、見える横浜が変わる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "元町・中華街駅を午後一時に出て、まずは山下公園の遊歩道へ。約七百メートルの海沿いをゆっくり歩き、ベンチでみなとみらいの対岸を眺めながら一時間ほど。そのまま公園に係留された氷川丸へ移り、戦前のクルーズ客船の船内を一時間かけて見て回る。船を降りたらマリンタワーへ上がり、高さ百六メートルからの港の全景を二人で確かめる。ここまでが海の高さの横浜。午後四時前後から山手の坂を上りはじめ、港の見える丘公園の展望台へ。日が傾く時間に着けるよう逆算しておくと、眼下の港と空が一番きれいに重なる。バラの季節なら園内のバラ園も合わせて。そこから山手西洋館を一、二軒のぞき、ブラフ18番館やベーリック・ホールで居留地時代の空気に触れたら、坂を下って中華街で夕食。締めはやはりここがいい。気をつけたいのは、山手西洋館は月曜が休みになりがちな点と、海から丘まで案外な坂と距離がある点。歩きやすい靴で出るだけで一日の快適さがまるで違う。雨に当たった日は無理に丘を目指さず、氷川丸の船内見学とマリンタワー、元町商店街のアーケードを屋根のある場所だけでつないでも、横浜らしい半日になる。最新の休館日や開館時間は、念のため各施設の公式で確かめてから向かってほしい。"
   },
-
-  // ─── 9. 横浜中華街周辺で遊ぶ5選 ───
   "new-chinatown-sightseeing": {
-    id: "new-chinatown-sightseeing",
-    no: "NG-09", articleType: "guide",
-    kicker: "CHINATOWN SIGHTSEEING",
-    title: "横浜中華街周辺で遊ぶ5選。食べる以外の楽しみ方",
-    titleHTML: "横浜中華街<br>周辺で遊ぶ5選。",
-    subtitle: "関帝廟、媽祖廟、山下公園、元町。中華街を起点に広げる横浜散策",
-    lede: "横浜中華街は150年以上の歴史を持つ日本最大の中華街で、約600軒の中華料理店と物販店が0.2km²の区画に集中している。「食べる」だけでなく「歩く・買う・参拝する・撮る」と複数の楽しみ方ができる、観光地として完成度の高いエリア。対象は中華街を観光として楽しみたい家族・カップル、食事以外の文化体験も組み合わせたい人。標準は13:00集合・19:30解散の6時間30分コース、予算は食事込みで1人4,000〜8,000円。ここでは中華街の食事以外も楽しめる5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.chinatown,
-    ranking: [
-      s(1, "横浜中華街（街歩き）", "中国文化・グルメ", "中華街",
-        "中国の廟や門を見ながら食べ歩く",
-        "中華街の中心を東西に貫く約520mのメインストリート。両側に飲茶・小籠包・北京ダック・餃子の専門店が並び、食べ歩き客で賑わう。「中華まんや胡麻団子・タピオカドリンクで食べ歩きしたい」観光客の定番スポット。1個300〜800円、土日12〜13時のランチピークは歩行者だけでも進みにくいほどの混雑、平日昼または14時以降が現実的。通りの両端には善隣門（東門）と中華街大通り西門が建ち、写真スポットとして優秀。夜のライトアップ（19時頃から点灯）は赤と金の灯籠が街全体を照らし、昼とは別のエリアになる。元町・中華街駅から徒歩5分。",
-        [I.chinatown, I.china_nite],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 直結" },
-          { k: "料金", v: "無料（飲食別途）" },
-          { k: "雨の日", v: "△ 屋根のある商店街あり" }]),
-      s(2, "関帝廟（横浜中華街）", "中国寺院", "中華街",
-        "中華街の中心にある関羽を祀る廟。内部見学可",
-        "1862年創建、横浜中華街の鎮守として華僑が篤く信仰する廟。三国志の英雄・関羽を祀り、商売繁盛・忠義の神として知られる。「中華圏の宗教文化に触れたい」「装飾の凝った廟建築を見たい」人に向く。色彩豊かな装飾・金箔の柱・龍の彫刻が圧巻で、屋内見学は無料（参拝料は任意）。中華街大通りから1ブロック南、関帝廟通り沿いに位置する。毎年旧暦8月の関帝誕（祭事）には大規模なイベントが開催される。営業時間9〜19時、関帝廟通りには占い店も並ぶ。",
-        [I.chinatown],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩5分" },
-          { k: "入廟料", v: "100円" },
-          { k: "雨の日", v: "◎ 屋内" }]),
-      s(3, "横浜媽祖廟", "中国寺院", "中華街",
-        "2006年創建の新しい廟。台湾・福建の海の神様を祀る",
-        "媽祖（まそ）は航海・漁業の守護神で、2006年に新築された朱色の媽祖廟は中華街の新たなランドマーク。「華僑コミュニティの新しい祈りの場を見たい」「朱色の鮮やかな建築を撮影したい」人に向く。関帝廟と並び、横浜中華街の2大廟として中華系コミュニティの中心。建物の屋根の装飾・龍の彫刻・媽祖像の金箔細工が見応えある。営業時間9〜19時、参拝料は任意（線香は500円程度）。中華街南端に位置し、元町方向への動線として組み込みやすい。",
-        [I.china_nite],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩8分" },
-          { k: "料金", v: "無料（参拝自由）" },
-          { k: "雨の日", v: "◎ 屋内" }]),
-      s(4, "山下公園（食後の散歩）", "公園・水辺", "山下",
-        "食事後の散歩に。中華街から徒歩5分",
-        "山下公園は中華街東門（朝陽門）から徒歩約7分、横浜港に沿って約700m続く臨海公園。「中華街での食べ歩きの後、海風を浴びてリセットしたい」観光客に向く。ベンチが豊富で、中華街で買った中華まんを片手に海を眺めながら食べる「中華街→山下公園」コンビが定番動線。夜のライトアップは大さん橋・氷川丸・みなとみらい方向が美しく、デート利用にも適している。入場無料・24時間開放だが、深夜は人通りが少ないので女性1人歩きは避ける。元町・中華街駅から徒歩3分。",
-        [I.yamashita, I.yamashita2],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩3分" },
-          { k: "料金", v: "無料" },
-          { k: "おすすめ時間", v: "食後の夕方〜夜" }]),
-      s(5, "元町ショッピングストリート", "商店街", "元町",
-        "中華街から歩いてすぐ。横浜らしい個性派ショップが並ぶ",
-        "元町ショッピングストリートは中華街南口から徒歩約5分、約500mのショッピング通り。「中華街の喧騒を抜けて落ち着いた買い物をしたい」大人の2人に向く。1860年代の外国人居留地時代に整備された老舗ブランド街で、ミハマ・キタムラ・タカヒロなど横浜発祥の革製品・服飾雑貨・宝飾品が並ぶ。営業時間は店舗により異なる（おおむね11〜19時）、土日午後は最も賑わう時間帯。元町・中華街駅から徒歩3分、中華街・山下公園からも徒歩圏内で動線を組みやすい。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 直結" },
-          { k: "料金", v: "無料（ショッピング別途）" },
-          { k: "雨の日", v: "△ アーケードなし" }])],
-    sideArticles: [
-      side("元町・山手さんぽ5選", "new-motomachi-yamate", I.motomachi),
-      side("山下公園周辺デート5選", "new-yamashita-date", I.yamashita)],
-    quote: "中華街は食事の前後に歩く廟と山下公園があると、立体的な時間が作れる。",
-    quoteCite: author,
-    closing: "標準動線: 元町・中華街駅13:00→朝陽門→中華街大通りで食べ歩き（13:00〜14:30）→関帝廟・媽祖廟参拝（14:30〜15:30）→山下公園で海風休憩（15:30〜16:30）→元町ショッピングストリート（16:30〜18:00）→中華街でディナー（18:00〜19:30）。所要6時間30分、予算は食事込みで1人4,000〜8,000円。土日12〜14時のランチタイムは大通りが歩行困難、開門直後の10時または15時以降がスムーズ。雨の日も中華街は屋内動線が多く、廟・店内で快適に過ごせる。失敗しやすいのは「ランチタイムに突入して大通りで身動き取れない」「廟の参拝マナーを知らずに失礼な行動をする」「元町商店街の閉店時間（19時）を見落とす」。土日昼は早めに動き、夜は18時前に元町商店街での買い物を済ませる。この記事は中華街を観光として楽しみたい家族・カップル、食事以外の文化体験も組み合わせたい人に向く。",
+    "id": "new-chinatown-sightseeing",
+    "no": "NG-09",
+    "articleType": "guide",
+    "kicker": "CHINATOWN SIGHTSEEING",
+    "title": "横浜中華街から港まで、食べる以外を歩く一日。",
+    "titleHTML": "横浜中華街から港まで、<br>食べる以外を歩く一日。",
+    "subtitle": "関帝廟と媽祖廟の朱、山下公園の海風、元町の坂道。胃袋以外の感覚で味わう横浜散策。",
+    "lede": "中華街の門をくぐると、まず匂いが押し寄せてくる。蒸籠の湯気、八角の甘さ、胡麻油で揚がる音。けれど一日この街を歩いていると、舌だけでは受け取りきれないものがたくさん残っているのに気づく。朱塗りの廟に灯る線香の煙、海から吹き込む風、坂の上から見下ろす屋根瓦の連なり。日本最大のこの中華街は600軒近い店がひしめく食の街でありながら、一歩路地を折れれば信仰の場があり、門を抜ければ港の公園が広がっている。食べることをいったん脇に置いて、見て、香って、手を合わせて、また歩く。そんな半日の散歩として、中華街とその周りを一本につないでみた。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "横浜中華街（街歩き）",
+        "cuisine": "中国文化・グルメ",
+        "area": "中華街",
+        "purpose": "中国の廟や門を見ながら食べ歩く",
+        "desc": "中華街の中心を東西に貫く約520mのメインストリート。両側に飲茶・小籠包・北京ダック・餃子の専門店が並び、食べ歩き客で賑わう。「中華まんや胡麻団子・タピオカドリンクで食べ歩きしたい」観光客の定番スポット。1個300〜800円、土日12〜13時のランチピークは歩行者だけでも進みにくいほどの混雑、平日昼または14時以降が現実的。通りの両端には善隣門（東門）と中華街大通り西門が建ち、写真スポットとして優秀。夜のライトアップ（19時頃から点灯）は赤と金の灯籠が街全体を照らし、昼とは別のエリアになる。元町・中華街駅から徒歩5分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yokohama_Chinatowns_East_Gate_At_Night.jpg/1280px-Yokohama_Chinatowns_East_Gate_At_Night.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料（飲食別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 屋根のある商店街あり"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "関帝廟（横浜中華街）",
+        "cuisine": "中国寺院",
+        "area": "中華街",
+        "purpose": "中華街の中心にある関羽を祀る廟。内部見学可",
+        "desc": "1862年創建、横浜中華街の鎮守として華僑が篤く信仰する廟。三国志の英雄・関羽を祀り、商売繁盛・忠義の神として知られる。「中華圏の宗教文化に触れたい」「装飾の凝った廟建築を見たい」人に向く。色彩豊かな装飾・金箔の柱・龍の彫刻が圧巻で、屋内見学は無料（参拝料は任意）。中華街大通りから1ブロック南、関帝廟通り沿いに位置する。毎年旧暦8月の関帝誕（祭事）には大規模なイベントが開催される。営業時間9〜19時、関帝廟通りには占い店も並ぶ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩5分"
+          },
+          {
+            "k": "入廟料",
+            "v": "100円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜媽祖廟",
+        "cuisine": "中国寺院",
+        "area": "中華街",
+        "purpose": "2006年創建の新しい廟。台湾・福建の海の神様を祀る",
+        "desc": "媽祖（まそ）は航海・漁業の守護神で、2006年に新築された朱色の媽祖廟は中華街の新たなランドマーク。「華僑コミュニティの新しい祈りの場を見たい」「朱色の鮮やかな建築を撮影したい」人に向く。関帝廟と並び、横浜中華街の2大廟として中華系コミュニティの中心。建物の屋根の装飾・龍の彫刻・媽祖像の金箔細工が見応えある。営業時間9〜19時、参拝料は任意（線香は500円程度）。中華街南端に位置し、元町方向への動線として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yokohama_Chinatowns_East_Gate_At_Night.jpg/1280px-Yokohama_Chinatowns_East_Gate_At_Night.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩8分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（参拝自由）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "山下公園（食後の散歩）",
+        "cuisine": "公園・水辺",
+        "area": "山下",
+        "purpose": "食事後の散歩に。中華街から徒歩5分",
+        "desc": "山下公園は中華街東門（朝陽門）から徒歩約7分、横浜港に沿って約700m続く臨海公園。「中華街での食べ歩きの後、海風を浴びてリセットしたい」観光客に向く。ベンチが豊富で、中華街で買った中華まんを片手に海を眺めながら食べる「中華街→山下公園」コンビが定番動線。夜のライトアップは大さん橋・氷川丸・みなとみらい方向が美しく、デート利用にも適している。入場無料・24時間開放だが、深夜は人通りが少ないので女性1人歩きは避ける。元町・中華街駅から徒歩3分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "食後の夕方〜夜"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "元町ショッピングストリート",
+        "cuisine": "商店街",
+        "area": "元町",
+        "purpose": "中華街から歩いてすぐ。横浜らしい個性派ショップが並ぶ",
+        "desc": "元町ショッピングストリートは中華街南口から徒歩約5分、約500mのショッピング通り。「中華街の喧騒を抜けて落ち着いた買い物をしたい」大人の2人に向く。1860年代の外国人居留地時代に整備された老舗ブランド街で、ミハマ・キタムラ・タカヒロなど横浜発祥の革製品・服飾雑貨・宝飾品が並ぶ。営業時間は店舗により異なる（おおむね11〜19時）、土日午後は最も賑わう時間帯。元町・中華街駅から徒歩3分、中華街・山下公園からも徒歩圏内で動線を組みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料（ショッピング別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ アーケードなし"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "元町・山手さんぽ5選",
+        "h": "/feature/new-motomachi-yamate",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+      },
+      {
+        "t": "山下公園周辺デート5選",
+        "h": "/feature/new-yamashita-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+      }
+    ],
+    "quote": "食事の前後に廟と海辺をはさむと、中華街は平面ではなく、奥行きのある一日に変わる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "大通りを歩き終え、関帝廟の前で立ち止まると、揚げ物の喧騒が嘘のように静かになる。線香を一本あげて、媽祖廟の鮮やかな朱を見上げ、そのまま朝陽門を抜けて山下公園へ。海風に当たると、食べ歩きで火照った体がすっと冷めて、来た道のすべてがいったんリセットされる気がする。最後は喧騒を背に元町の坂を上がり、落ち着いた店先を冷やかして一日を閉じる。歩いてみて思うのは、廟も公園も商店街も、それぞれ閉じる時間や賑わう時間が違うということだ。大通りが人で埋まる土日の昼を外して動けば、街は驚くほど素直に歩かせてくれる。廟での作法や各所の開いている時間は土地のしきたりや季節で変わるので、訪ねる前にひと言、公式の案内に目を通しておくと足取りが軽くなる。胃袋を満たしに来たはずが、気づけば香りと光と海風のほうが記憶に残っている——中華街は、そういう歩き方のできる街だ。"
   },
-
-  // ─── 10. 元町・山手さんぽ5選 ───
   "new-motomachi-yamate": {
-    id: "new-motomachi-yamate",
-    no: "NG-10", articleType: "guide",
-    kicker: "MOTOMACHI YAMATE WALK",
-    title: "元町・山手さんぽ5選。坂と洋館を歩く横浜",
-    titleHTML: "元町・山手<br>さんぽ5選。",
-    subtitle: "元町ストリート、外国人墓地、ブラフ18番館、山手イタリア山庭園。港が見える丘の街",
-    lede: "元町・山手は1860年代の横浜開港時に外国人居留地として整備されたエリアで、現在も洋館・教会・洋風住宅が点在する独特の街並み。対象は明治・大正の洋館建築が好きな大人のデート層、または中華街の喧騒を抜けて静かな横浜を歩きたい人。標準は13:00集合・19:00解散の6時間コース、予算は食事込みで1人4,000〜8,000円。ハイブランドの旗艦店が並ぶ元町商店街と、外国人墓地・西洋館・港の見える丘公園が広がる山手地区が徒歩で繋がる。ここでは元町・山手の散歩を5スポットで紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.motomachi,
-    ranking: [
-      s(1, "元町ショッピングストリート", "商店街", "元町",
-        "横浜固有の「ハマトラ」文化が生まれた通り",
-        "元町ショッピングストリートは1864年に外国人居留地の生活道路として整備された約500mのメインストリート。現在は革製品・服飾雑貨・スイーツ・宝飾品の高品質店が並び、横浜の老舗ブランド（ミハマ・キタムラ・タカヒロなど）の旗艦店が多い。「ハイブランドのウィンドウショッピングをゆっくり楽しみたい」大人の2人に向く。メインストリートから1本入った仲通りにはアトリエ・ギャラリーも点在し、観光客が少なく落ち着いた散歩ができる。営業時間は店舗により異なる（おおむね11〜19時）、土日午後は最も賑わう時間帯。元町・中華街駅から徒歩3分。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩1分" },
-          { k: "料金", v: "無料（ショッピング別途）" },
-          { k: "雨の日", v: "△ アーケードなし" }]),
-      s(2, "外国人墓地（横浜外国人墓地）", "歴史スポット", "山手",
-        "幕末から続く外国人墓地。春と秋は一般公開",
-        "1869年開設、世界中の外国人約4,800人が眠る墓地。日本に貢献した外国人や、横浜開港期の商人・宣教師・教育者が埋葬されている。「歴史の重みを感じる散歩」が目的の人に向くスポットで、騒がしさが完全に消える区画。見学は土日祝日のみ、見学寄付金200〜500円程度（公式サイトで確認）。丘の上に位置し、墓地から港の景色を見渡せるロケーションも独特。石川町駅から徒歩約10分、上り坂が続くので歩きやすい靴と水分が必須。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩10分" },
-          { k: "料金", v: "寄付制（公開期間中）" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(3, "ブラフ18番館", "歴史建築（西洋館）", "山手",
-        "1920年代の外国人居留地の住宅。無料で内部見学可",
-        "ブラフ18番館は1923年（大正12年）頃築の山手地区を代表する西洋館のひとつ。「アールデコ様式の内装をゆっくり見たい」建築好きに向く。横浜山手のイタリア山庭園内に位置し、見学は無料・営業時間9:30〜17時（公式サイトで確認）。館内の家具・暖炉・装飾も大正期のまま保存され、外国人居住者の生活が体感できる。石川町駅から徒歩約5分、坂道は短く比較的アクセスが楽な西洋館。他の山手西洋館との徒歩動線が10〜15分以内で繋がる。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩15分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "◎ 屋内見学可" }]),
-      s(4, "山手イタリア山庭園", "庭園", "山手",
-        "明治期の外交官邸跡地が公開庭園に",
-        "山手イタリア山庭園は山手地区の一角に整備された幾何学式の洋風庭園。「写真映えする整形式庭園を見たい」「ブラフ18番館とセットで歩きたい」人に向く。庭園内には外交官の家（重要文化財）とブラフ18番館が建ち、両館とも無料公開。桜・バラの季節が美しく、横浜港・みなとみらい方向の眺望も楽しめる。営業時間9:30〜17時（公式サイトで確認）、入園無料。石川町駅から徒歩約5分、坂を上ってアクセス。",
-        [I.motomachi],
-        [
-          { k: "最寄り駅", v: "石川町駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△ 庭は屋外、建物内は可" }]),
-      s(5, "港の見える丘公園", "展望公園", "山手",
-        "山手さんぽの締め。横浜港と大橋が見える展望広場",
-        "1962年開園、横浜港を見下ろす丘の上の公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場・展望台が整備されている。バラ園は5〜6月と10〜11月が見頃、約330種2,200本のバラが咲き誇る。展望広場からはベイブリッジ・横浜港・みなとみらいの景色が見え、夕方の眺望が特に絵になる。元町・中華街駅から徒歩10分。",
-        [I.yamashita],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外メイン" },
-          { k: "おすすめ時間", v: "午前〜夕方" }])],
-    sideArticles: [
-      side("横浜中華街周辺で遊ぶ5選", "new-chinatown-sightseeing", I.chinatown),
-      side("山下公園周辺デート5選", "new-yamashita-date", I.yamashita)],
-    quote: "元町から山手の坂を上がると、横浜の外国人居留地時代の時間が感じられる。",
-    quoteCite: author,
-    closing: "標準動線: 元町・中華街駅13:00→元町ショッピングストリート（13:00〜14:30 ショッピング）→坂を上って外国人墓地（14:30〜15:30）→ブラフ18番館・山手イタリア山庭園（15:30〜16:30）→港の見える丘公園で展望（16:30〜18:00）→元町商店街でディナー（18:00〜19:00）。所要6時間、予算は食事込みで1人4,000〜8,000円。土日午後の元町・港の見える丘公園は混雑、平日午後または朝が落ち着いている。雨の日は坂道は滑りやすいので、元町商店街＋西洋館の屋内中心に切り替え、丘の上の公園は諦める判断が現実的。失敗しやすいのは「歩く距離の見積もりミス」（坂が多く、想定より体力を消耗）と「西洋館の休館日見落とし」（月曜休館の館が多い）、「外国人墓地の見学日見落とし」（土日祝のみ公開）。事前に開館日と歩きやすい靴を必ず確認。この記事は明治・大正の洋館建築が好きな大人のデート層、文化散歩が好きなカップルに最も向く。",
+    "id": "new-motomachi-yamate",
+    "no": "NG-10",
+    "articleType": "guide",
+    "kicker": "MOTOMACHI YAMATE WALK",
+    "title": "元町から山手の坂を歩く。横浜の居留地時代をたどる午後",
+    "titleHTML": "元町から山手の坂を歩く。<br>横浜の居留地時代をたどる午後",
+    "subtitle": "元町ストリートを抜け、外国人墓地の脇を上り、ブラフ18番館とイタリア山庭園を経て、港の見える丘へ。坂のひとつひとつに開港の記憶がある",
+    "lede": "元町・中華街駅の改札を出て地上に上がると、すぐに空気が変わる。中華街のあの揚げ物と八角の匂い、客引きの声、赤と金の喧騒——それを背中に置いて元町側へ歩き出すと、街は急に静かになる。元町・山手は1860年代の横浜開港時に外国人居留地として整備された一帯で、いまも洋館・教会・洋風住宅が坂のあちこちに残っている。海沿いの平らな商店街と、その南に立ち上がる丘の上の住宅地。このふたつが徒歩でつながっているのが、ここを歩いて面白い理由だと思う。平地から坂を上り、上りきった先で港を見下ろす——街そのものが、開港からの百数十年を高さで物語っているような場所だ。今日はその傾斜を、足で確かめながら上っていく。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "元町ショッピングストリート",
+        "cuisine": "商店街",
+        "area": "元町",
+        "purpose": "横浜固有の「ハマトラ」文化が生まれた通り",
+        "desc": "元町ショッピングストリートは1864年に外国人居留地の生活道路として整備された約500mのメインストリート。現在は革製品・服飾雑貨・スイーツ・宝飾品の高品質店が並び、横浜の老舗ブランド（ミハマ・キタムラ・タカヒロなど）の旗艦店が多い。「ハイブランドのウィンドウショッピングをゆっくり楽しみたい」大人の2人に向く。メインストリートから1本入った仲通りにはアトリエ・ギャラリーも点在し、観光客が少なく落ち着いた散歩ができる。営業時間は店舗により異なる（おおむね11〜19時）、土日午後は最も賑わう時間帯。元町・中華街駅から徒歩3分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩1分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（ショッピング別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ アーケードなし"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "外国人墓地（横浜外国人墓地）",
+        "cuisine": "歴史スポット",
+        "area": "山手",
+        "purpose": "幕末から続く外国人墓地。春と秋は一般公開",
+        "desc": "1869年開設、世界中の外国人約4,800人が眠る墓地。日本に貢献した外国人や、横浜開港期の商人・宣教師・教育者が埋葬されている。「歴史の重みを感じる散歩」が目的の人に向くスポットで、騒がしさが完全に消える区画。見学は土日祝日のみ、見学寄付金200〜500円程度（公式サイトで確認）。丘の上に位置し、墓地から港の景色を見渡せるロケーションも独特。石川町駅から徒歩約10分、上り坂が続くので歩きやすい靴と水分が必須。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "寄付制（公開期間中）"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "ブラフ18番館",
+        "cuisine": "歴史建築（西洋館）",
+        "area": "山手",
+        "purpose": "1920年代の外国人居留地の住宅。無料で内部見学可",
+        "desc": "ブラフ18番館は1923年（大正12年）頃築の山手地区を代表する西洋館のひとつ。「アールデコ様式の内装をゆっくり見たい」建築好きに向く。横浜山手のイタリア山庭園内に位置し、見学は無料・営業時間9:30〜17時（公式サイトで確認）。館内の家具・暖炉・装飾も大正期のまま保存され、外国人居住者の生活が体感できる。石川町駅から徒歩約5分、坂道は短く比較的アクセスが楽な西洋館。他の山手西洋館との徒歩動線が10〜15分以内で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内見学可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "山手イタリア山庭園",
+        "cuisine": "庭園",
+        "area": "山手",
+        "purpose": "明治期の外交官邸跡地が公開庭園に",
+        "desc": "山手イタリア山庭園は山手地区の一角に整備された幾何学式の洋風庭園。「写真映えする整形式庭園を見たい」「ブラフ18番館とセットで歩きたい」人に向く。庭園内には外交官の家（重要文化財）とブラフ18番館が建ち、両館とも無料公開。桜・バラの季節が美しく、横浜港・みなとみらい方向の眺望も楽しめる。営業時間9:30〜17時（公式サイトで確認）、入園無料。石川町駅から徒歩約5分、坂を上ってアクセス。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "石川町駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 庭は屋外、建物内は可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "港の見える丘公園",
+        "cuisine": "展望公園",
+        "area": "山手",
+        "purpose": "山手さんぽの締め。横浜港と大橋が見える展望広場",
+        "desc": "1962年開園、横浜港を見下ろす丘の上の公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場・展望台が整備されている。バラ園は5〜6月と10〜11月が見頃、約330種2,200本のバラが咲き誇る。展望広場からはベイブリッジ・横浜港・みなとみらいの景色が見え、夕方の眺望が特に絵になる。元町・中華街駅から徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外メイン"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "午前〜夕方"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "横浜中華街周辺で遊ぶ5選",
+        "h": "/feature/new-chinatown-sightseeing",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+      },
+      {
+        "t": "山下公園周辺デート5選",
+        "h": "/feature/new-yamashita-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+      }
+    ],
+    "quote": "坂を一段上がるごとに、横浜が外国人居留地だった時間に少しずつ近づいていく。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "昼すぎに元町・中華街駅から歩き出し、まず元町ショッピングストリートをひやかしながら抜ける。革のにおいのする店、ショーウィンドウの帽子、老舗の包み紙——買わなくても、見て歩くだけで時間が溶けていく通りだ。やがて石畳の先で道が上りに変わり、息が少し上がってくるころ外国人墓地の門が見えてくる。海を望む斜面に並ぶ墓碑をしばらく眺めてから、さらに坂を行くとブラフ18番館の白い壁が木立の間に現れる。室内のしつらえをゆっくり見て、続くイタリア山庭園では幾何学に刈り込まれた植栽と外交官の家を巡る。庭園を出て尾根づたいに進めば、夕方の港の見える丘公園。ベンチに腰を下ろすと、ベイブリッジまで含めた横浜港が一望できて、ここまで上ってきた甲斐があったと毎回思う。歩いてみて実感するのは、想像よりずっと坂が多いということ。革靴やヒールより、歩き慣れた靴で来た日のほうが圧倒的に楽しめる。それから、山手の洋館は月曜に休む館が多く、外国人墓地の一般公開も曜日が限られている。坂の上まで上ってから閉まっていた、という残念を避けるために、開館日や公開日は出かける前にそれぞれの公式案内でひと目だけ確かめておきたい。雨の日なら、滑りやすい坂と丘の上の展望はあきらめて、元町の通りと屋内の洋館を中心に組み替えるのが現実的だ。晴れていてもいなくても、この街は急がず、坂の途中で何度も足を止めるくらいがちょうどいい。"
   },
-
-  // NG-11 ─────────────────────────────────────────────────
   "new-yokohama-station-rainy": {
-    id: "new-yokohama-station-rainy",
-    no: "NG-11", articleType: "guide", kicker: "YOKOHAMA STATION RAINY DAY",
-    title: "横浜駅雨の日5選。濡れずに一日楽しめるショッピングモール＆スポット",
-    titleHTML: "横浜駅<br>雨の日5選。",
-    subtitle: "そごう・ポルタ・ジョイナス。横浜駅周辺は地下街でつながった屋内スポットの宝庫",
-    lede: "横浜駅は「雨の日に予定が崩れたとき、すぐに屋根の下に入れる」関東屈指のターミナル。JR・東急・京急・相鉄・地下鉄が交差し、東口・西口・南口の3方向すべてに地下通路で繋がる商業施設が並ぶ。対象は雨予報で他のエリアが厳しい人、みなとみらいや鎌倉に向かう途中で雨に降られた人、乗り換えの待ち時間2〜4時間を有効に使いたい人。標準は13:00集合・19:00解散の6時間コース、予算は1人4,500〜8,000円。ここでは傘を最小限にできる屋内中心の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.yoko_sta,
-    ranking: [
-      s(1, "そごう横浜店", "百貨店", "横浜駅東口",
-        "駅直結の大型百貨店。美術展・催事も充実",
-        "1981年開業、横浜駅東口直結の老舗大型百貨店。地下〜10階に飲食・物販・美術館・レストラン街が揃い、雨の日の半日を1棟で過ごせる規模。「雨の日に文化的な時間と買い物を両方加えたい」大人の2人に向く。8階の「そごう美術館」は東口エリア唯一の本格美術館で、企画展が定期開催される（料金は公式サイトで確認）。デパ地下のスイーツ・惣菜は19時前後の閉店間際に値引きが出やすく、夕食調達に使える。土日午後14〜16時は美術館とデパ地下が同時に混むので、平日午後または朝10時開店直後が落ち着く。次は地下通路で中央通路→東口側のポルタへ向かう。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 直結（徒歩0分）" },
-          { k: "営業時間", v: "10:00〜20:00（美術館は展覧会による）" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(2, "横浜ポルタ", "地下街", "横浜駅",
-        "横浜駅地下に広がるショッピング街。飲食店多数",
-        "横浜ポルタは横浜駅東口の地下街（1980年開業）。約100店舗の飲食・物販・サービス店舗が地下通路沿いに並び、傘なしで歩ける動線が組める。「軽食・カフェで30〜60分過ごしたい」「東口の地下街で雨を凌ぎたい」人に最適。営業時間は店舗による（おおむね10〜21時、飲食は23時頃まで）。JR横浜駅東口・東急東横線・横浜市営地下鉄ブルーラインと直結し、雨の日の中継拠点として優秀。次は同じく地下通路で西口の高島屋・ジョイナス方面に繋がる。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 地下直結" },
-          { k: "営業時間", v: "11:00〜21:00（店舗による）" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(3, "横浜ジョイナス", "ショッピングモール", "横浜駅",
-        "相鉄線横浜駅直上のモール。ファッション・雑貨",
-        "横浜駅西口地下から地上3階まで広がる商業施設「相鉄ジョイナス」（1973年開業）。350以上の店舗があり、ファストファッション・100均・スイーツ・カフェ・タピオカ店など「日常使い系」が中心。「価格を抑えてのショッピングを楽しみたい」「雨の日の若い世代のデート」にフィットする。営業時間10〜21時（飲食は店舗による）。中央通路の地下から相鉄線改札方向に直結し、入口を見つけるのが初訪問者にとっての最初のハードル。案内サインを見ながら歩けば必ず辿り着くが、初回は15分ほど余裕を持っておく。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 直結（相鉄）" },
-          { k: "営業時間", v: "11:00〜21:00" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(4, "横浜モアーズ", "ショッピングモール", "横浜駅西口",
-        "西口直結の複合商業施設。若者向け〜カジュアルまで",
-        "横浜モアーズは1974年開業、横浜駅西口直結の中型商業施設。ファッション中心の若い世代向けの店舗構成で、雨の日の買い物・カフェに使える。営業時間は店舗による（おおむね10〜21時）。JR横浜駅西口から地下通路で直結、雨の日でも傘なしで入れる。ジョイナス・高島屋と組み合わせて西口エリアの屋内散策ルートが組める。若い世代向けの店舗が多いため、20代カップルの雨の日デートに使いやすい。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅西口 徒歩1分" },
-          { k: "営業時間", v: "11:00〜21:00" },
-          { k: "雨の日", v: "◎ ほぼ屋内" }]),
-      s(5, "横浜高島屋", "百貨店", "横浜駅西口",
-        "西口を代表する老舗百貨店。食料品・催事が充実",
-        "1959年開業、横浜駅西口直結の大型商業施設「横浜高島屋」。本館・西館・東館の3館構成で、地下のデパ地下、低層階のファッション・雑貨、高層階のレストラン街と多層構造。「夕食候補を多めに見たい」「ファッションのウィンドウショッピングをゆっくり楽しみたい」人に向く。営業時間10〜20時（レストランは23時まで）。西口は東口と地下通路・連絡橋で繋がっており、雨の日も傘を畳んだまま移動できる横浜駅の利点。土日午後の食料品売り場は会計待ち10〜15分が発生するので、夕食調達は18時前か21時前後にずらす。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅西口 徒歩2分" },
-          { k: "営業時間", v: "10:00〜20:00" },
-          { k: "雨の日", v: "◎ 完全屋内" }])],
-    sideArticles: [
-      side("みなとみらい雨の日デート5選", "new-minatomirai-rainy-date", I.cosmo),
-      side("川崎雨の日デート5選", "new-kawasaki-rainy-date", I.lazona)],
-    quote: "横浜駅周辺は地下街と百貨店がつながっており、雨の日でも完全屋内で一日楽しめる。",
-    quoteCite: author,
-    closing: "標準動線: JR横浜駅東口13:00→そごう美術館（13:00〜14:30）→そごう内ランチ→東口地下通路→ポルタで休憩（15:00〜15:30）→中央通路で西口へ→ジョイナスでショッピング（15:30〜16:30）→横浜モアーズ（16:30〜17:30）→高島屋でデパ地下＋夕食（17:30〜19:00）。所要6時間、予算は美術館・食事込みで1人4,500〜8,000円。土日午後は商業施設・レストランが混雑するので、平日午後または夕方17時前が現実的。晴れの日はみなとみらい・赤レンガへ徒歩動線が組めるが、雨天時はこの屋内ルートで完結させる。失敗しやすいのは「地下通路の方向を間違えて遠回り」（特に初訪問者）と「ジョイナスとポルタの混同」（隣接の別施設）、「そごう美術館の月曜休館を見落とす」。案内サインを見て「ジョイナス＝西口」「ポルタ＝東口」と覚え、事前に美術館の休館日を確認。この記事は雨の日に急遽予定を組み替える必要が出た人、ターミナル駅の使い方を知りたい人に最も向く。",
+    "id": "new-yokohama-station-rainy",
+    "no": "NG-11",
+    "articleType": "guide",
+    "kicker": "YOKOHAMA STATION RAINY DAY",
+    "title": "横浜駅、雨の日は地下でつながる。傘を畳んだまま回る屋内さんぽ",
+    "titleHTML": "横浜駅、雨の日は地下でつながる。<br>傘を畳んだまま回る屋内さんぽ",
+    "subtitle": "そごう、ポルタ、ジョイナス。東口も西口も、地下通路でひとつながりになっている街",
+    "lede": "横浜駅の雨は、案外こわくない。JR・東急・京急・相鉄・地下鉄が束になって乗り入れるこのターミナルは、駅を中心に東口・西口・南口の三方向へ地下通路が枝を伸ばし、その先に大きな商業施設がぶら下がっている。だから雨の日ならではの楽しみ方は、空模様を見上げて行き先を諦めることではなく、地上に出ないまま施設から施設へ渡り歩く「屋内のはしご」そのものにある。みなとみらいへ向かう途中で降られても、乗り換えの待ち時間が中途半端に空いても、ここでは傘を畳んだままひと続きの時間に変えられる。濡れずに歩ける範囲がどこまで広いのか——それを確かめるつもりで、東口から西口へ、地下を辿ってみたい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "そごう横浜店",
+        "cuisine": "百貨店",
+        "area": "横浜駅東口",
+        "purpose": "駅直結の大型百貨店。美術展・催事も充実",
+        "desc": "1981年開業、横浜駅東口直結の老舗大型百貨店。地下〜10階に飲食・物販・美術館・レストラン街が揃い、雨の日の半日を1棟で過ごせる規模。「雨の日に文化的な時間と買い物を両方加えたい」大人の2人に向く。8階の「そごう美術館」は東口エリア唯一の本格美術館で、企画展が定期開催される（料金は公式サイトで確認）。デパ地下のスイーツ・惣菜は19時前後の閉店間際に値引きが出やすく、夕食調達に使える。土日午後14〜16時は美術館とデパ地下が同時に混むので、平日午後または朝10時開店直後が落ち着く。次は地下通路で中央通路→東口側のポルタへ向かう。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 直結（徒歩0分）"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜20:00（美術館は展覧会による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "横浜ポルタ",
+        "cuisine": "地下街",
+        "area": "横浜駅",
+        "purpose": "横浜駅地下に広がるショッピング街。飲食店多数",
+        "desc": "横浜ポルタは横浜駅東口の地下街（1980年開業）。約100店舗の飲食・物販・サービス店舗が地下通路沿いに並び、傘なしで歩ける動線が組める。「軽食・カフェで30〜60分過ごしたい」「東口の地下街で雨を凌ぎたい」人に最適。営業時間は店舗による（おおむね10〜21時、飲食は23時頃まで）。JR横浜駅東口・東急東横線・横浜市営地下鉄ブルーラインと直結し、雨の日の中継拠点として優秀。次は同じく地下通路で西口の高島屋・ジョイナス方面に繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 地下直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "11:00〜21:00（店舗による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜ジョイナス",
+        "cuisine": "ショッピングモール",
+        "area": "横浜駅",
+        "purpose": "相鉄線横浜駅直上のモール。ファッション・雑貨",
+        "desc": "横浜駅西口地下から地上3階まで広がる商業施設「相鉄ジョイナス」（1973年開業）。350以上の店舗があり、ファストファッション・100均・スイーツ・カフェ・タピオカ店など「日常使い系」が中心。「価格を抑えてのショッピングを楽しみたい」「雨の日の若い世代のデート」にフィットする。営業時間10〜21時（飲食は店舗による）。中央通路の地下から相鉄線改札方向に直結し、入口を見つけるのが初訪問者にとっての最初のハードル。案内サインを見ながら歩けば必ず辿り着くが、初回は15分ほど余裕を持っておく。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 直結（相鉄）"
+          },
+          {
+            "k": "営業時間",
+            "v": "11:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "横浜モアーズ",
+        "cuisine": "ショッピングモール",
+        "area": "横浜駅西口",
+        "purpose": "西口直結の複合商業施設。若者向け〜カジュアルまで",
+        "desc": "横浜モアーズは1974年開業、横浜駅西口直結の中型商業施設。ファッション中心の若い世代向けの店舗構成で、雨の日の買い物・カフェに使える。営業時間は店舗による（おおむね10〜21時）。JR横浜駅西口から地下通路で直結、雨の日でも傘なしで入れる。ジョイナス・高島屋と組み合わせて西口エリアの屋内散策ルートが組める。若い世代向けの店舗が多いため、20代カップルの雨の日デートに使いやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅西口 徒歩1分"
+          },
+          {
+            "k": "営業時間",
+            "v": "11:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ ほぼ屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "横浜高島屋",
+        "cuisine": "百貨店",
+        "area": "横浜駅西口",
+        "purpose": "西口を代表する老舗百貨店。食料品・催事が充実",
+        "desc": "1959年開業、横浜駅西口直結の大型商業施設「横浜高島屋」。本館・西館・東館の3館構成で、地下のデパ地下、低層階のファッション・雑貨、高層階のレストラン街と多層構造。「夕食候補を多めに見たい」「ファッションのウィンドウショッピングをゆっくり楽しみたい」人に向く。営業時間10〜20時（レストランは23時まで）。西口は東口と地下通路・連絡橋で繋がっており、雨の日も傘を畳んだまま移動できる横浜駅の利点。土日午後の食料品売り場は会計待ち10〜15分が発生するので、夕食調達は18時前か21時前後にずらす。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅西口 徒歩2分"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜20:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "みなとみらい雨の日デート5選",
+        "h": "/feature/new-minatomirai-rainy-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+      },
+      {
+        "t": "川崎雨の日デート5選",
+        "h": "/feature/new-kawasaki-rainy-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+      }
+    ],
+    "quote": "東口の地下街と西口の百貨店が通路でつながっているから、雨の日でも一度も傘をひらかずに横浜駅を回り切れる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "歩く順番に迷ったら、東口から始めるのがわかりやすい。まずJR東口に直結したそごう横浜店に入り、美術館で静かな時間を取ってから同じ建物の中で昼を済ませる。降りて東口の地下街・横浜ポルタへ移れば、カフェや軽食の店が通路沿いに続いていて、コーヒー一杯ぶんの休憩がちょうど挟まる。そこから中央の地下通路を西口側へ抜けると、相鉄ジョイナスの広い店ぞろえが待っていて、横浜モアーズの若い空気を覗き、最後は横浜高島屋のデパ地下で夕食の総菜やみやげを選んで締める。ここまで、一度も外へ出ていない。つまずきやすいのは方向で、初めてだと「ジョイナスは西口、ポルタは東口」が頭で結びつかず地下で遠回りしがち。案内サインの方角だけ先に確かめておくと迷わない。そごう美術館は休館日のある施設なので、足を運ぶ日に開いているかは公式の案内をのぞいてから出かけたい。晴れていれば赤レンガやみなとみらいまで足を延ばせる横浜駅だが、雨の日はこの地下のひと回りだけで、十分に一日が埋まってしまう。"
   },
-
-  // NG-12 ─────────────────────────────────────────────────
   "new-yokohama-station-bored": {
-    id: "new-yokohama-station-bored",
-    no: "NG-12", articleType: "guide", kicker: "YOKOHAMA STATION TIME",
-    title: "横浜駅周辺で時間つぶし5選。待ち時間・移動前に寄れる場所",
-    titleHTML: "横浜駅周辺で<br>時間つぶし5選。",
-    subtitle: "地下街からそごう美術館まで。横浜駅は「時間が空いたら」のスポットに困らない",
-    lede: "横浜駅で時間を持て余したとき、駅周辺で「30分〜半日」と滞在時間に応じて使えるスポットを知っておくと便利。JR・東急・京急・相鉄・地下鉄の5路線が交差する乗換ハブで、駅周辺は美術館・商業施設・ベイサイドエリアが揃う。対象は乗り換えで30分余った人、夜行バスや特急の待ち時間を有効に使いたい人、デート前の待ち合わせ時間が早すぎた人。標準は14:00集合・19:00解散の5時間コース、予算は1人2,500〜6,000円。ここでは横浜駅周辺で時間調整に使える5スポットを、滞在時間の長さ別に紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.yoko_sta,
-    ranking: [
-      s(1, "そごう美術館", "美術館", "横浜駅東口",
-        "横浜駅直結で行けるアート空間。企画展が年間通じて開催",
-        "そごう美術館はそごう横浜店8階に1985年開館、入場有料の本格的な美術館。横浜エリアでは数少ない本館型美術館で、年5〜6本の企画展を開催（料金は変動、公式サイトで確認）。「短時間で文化的な体験を組み込みたい」「乗り換え1〜2時間の待ち時間にアートを見たい」人に向く。営業時間10〜20時、月曜は休館または企画展により変動。JR横浜駅東口直結のそごう館内なので、雨の日でも傘なしでアクセスできる。1時間半〜2時間の滞在で1企画展を見て、デパ地下でお茶という流れが組みやすい。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 直結（徒歩5分）" },
-          { k: "入館料", v: "展覧会による（1,000〜1,500円程度）" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "アソビル", "複合エンタメ施設", "横浜駅東口",
-        "ゲーム・謎解き・バー・DJブース。横浜駅徒歩2分の遊び場",
-        "アソビルは横浜駅東口から徒歩約3分、2019年開業の体験型エンタメ施設。1〜4階に複数のテーマパーク・eスポーツ・カフェ・物販が入り、屋内で2〜3時間遊べる。「子連れで雨の日に時間を潰したい」「友人グループで遊びたい」目的に最適。営業時間10〜21時（施設により異なる）、料金は施設ごとの個別料金制。JR横浜駅東口側の屋根のある動線でアクセス可能で、雨天時にも便利。新感覚アクティビティが多いので、リピート訪問でも飽きにくい構成。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅東口 徒歩2分" },
-          { k: "営業時間", v: "11:00〜23:00（フロアによる）" },
-          { k: "雨の日", v: "◎" }]),
-      s(3, "横浜ポルタ（散策）", "地下街", "横浜駅",
-        "地下街をぶらぶらするだけでも時間が過ぎる",
-        "横浜ポルタは横浜駅東口の地下街（1980年開業）。「乗り換えの30〜60分でカフェかランチを取りたい」目的に最適。約100店舗の飲食・物販・カフェが地下通路沿いに並び、雨の日でも傘なしで歩ける。営業時間は店舗による（おおむね10〜21時、飲食は23時頃まで）。JR横浜駅東口・東急東横線・横浜市営地下鉄ブルーラインと直結。席数が多く、混雑時でも空席が見つかりやすい。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 地下直結" },
-          { k: "料金", v: "無料（飲食・ショッピング別途）" },
-          { k: "雨の日", v: "◎" }]),
-      s(4, "CIAL横浜", "駅ビル", "横浜駅",
-        "JR横浜駅直結の駅ビル。土産・カフェ・雑貨",
-        "CIAL横浜は横浜駅西口直結の駅ビル型商業施設で、2011年に現名称でリニューアル。地下〜地上6階にファッション・雑貨・カフェ・スイーツが揃い、若い世代向けの店舗構成。「西口で短時間ショッピングしたい」「お土産・スイーツ調達」に使いやすい。営業時間10〜21時（飲食店は22時まで）。JR横浜駅西口の屋根のある動線でアクセス可能。横浜駅西口・高島屋・ジョイナスと組み合わせて西口エリアの屋内散策ルートが組める。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00（一部店舗異なる）" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "横浜ランドマークタワー展望台（スカイガーデン）", "展望台", "みなとみらい",
-        "横浜駅から徒歩15分。69Fから見る横浜の全景",
-        "横浜駅東口から徒歩約10分、桜木町方向に1駅進んだ場所にあるランドマークタワー69階の屋内展望フロア「スカイガーデン」。横浜港・東京湾・東京方面の景色が360度近く広がる展望台。「乗り換えで時間が2〜3時間以上ある」「横浜の眺望を見てから出発したい」人に向く。営業時間10〜21時（土日祝22時まで延長）、入場料は変動（公式サイトで確認）。桜木町駅から徒歩5分、みなとみらい駅から徒歩3分でアクセスでき、横浜駅から1〜2駅の移動で訪問可能。雨でも雲の上に出ることがあり、視界の変化が劇的なのが魅力。",
-        [I.yoko_sta],
-        [
-          { k: "最寄り駅", v: "横浜駅 徒歩15分 / みなとみらい駅 徒歩5分" },
-          { k: "入場料", v: "大人1,000円" },
-          { k: "雨の日", v: "◎ 屋内展望台" }])],
-    sideArticles: [
-      side("横浜駅雨の日5選", "new-yokohama-station-rainy", I.mm_blue),
-      side("みなとみらいデート5選", "new-minatomirai-date", I.mm_blue)],
-    quote: "横浜駅は東口・西口それぞれに百貨店・地下街・エンタメ施設が揃い、時間が空いても困らない。",
-    quoteCite: author,
-    closing: "標準動線（半日）: JR横浜駅東口14:00→そごう美術館（14:00〜15:30）→ポルタでカフェ（15:30〜16:00）→中央通路で西口へ→CIAL横浜（16:00〜17:00）→桜木町に移動してランドマーク スカイガーデン（17:30〜19:00 夕景）。短時間（30〜60分）の場合はポルタやCIALで軽食＋休憩。所要1〜5時間、予算は1人2,500〜6,000円。土日午後は美術館・展望台が混雑するが、平日昼や夕方は空いている。雨の日は地下通路移動で完結するので、屋外を諦めて屋内中心に切り替える。失敗しやすいのは「ランドマーク展望台までの移動時間（徒歩10分＋JR1駅）を読み違える」「美術館の月曜休館を見落とす」「アソビルの個別料金体系を知らずに高額になる」。事前に施設の営業時間と料金体系を公式サイトで確認。この記事は乗換時間の調整・夜行バス待ちの暇潰し・デート前の待機時間に使える知識を求める人に向く。",
+    "id": "new-yokohama-station-bored",
+    "no": "NG-12",
+    "articleType": "guide",
+    "kicker": "YOKOHAMA STATION TIME",
+    "title": "横浜駅、空いた時間を歩く。東口から西口、そして海側へ",
+    "titleHTML": "横浜駅、空いた時間を歩く。<br>東口から西口、そして海側へ",
+    "subtitle": "地下街でコーヒーを一杯。気が向けば美術館か展望台まで。横浜駅は手持ち無沙汰をいつのまにか散歩に変えてくれる",
+    "lede": "五つの路線が地下で絡み合う横浜駅では、人の流れに乗っているだけで自分がどこへ向かっているのか分からなくなる瞬間がある。乗り換えで小一時間、夜行バスまでまだ間がある、待ち合わせより早く着いてしまった——そんな宙ぶらりんの時間を、この駅はわりと優しく引き受けてくれる。東口の地下街を抜ければ百貨店の上に静かな美術館があり、西口に渡れば若い人で賑わう駅ビルがあって、その先、海の方角へ少し足を伸ばせば空に近い展望フロアまでたどり着く。改札を出てから海側へ、地下から空へ。手の中で持て余していた時間が、歩いているうちに散歩に変わっていく道筋を、東口側から順にたどってみたい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "そごう美術館",
+        "cuisine": "美術館",
+        "area": "横浜駅東口",
+        "purpose": "横浜駅直結で行けるアート空間。企画展が年間通じて開催",
+        "desc": "そごう美術館はそごう横浜店8階に1985年開館、入場有料の本格的な美術館。横浜エリアでは数少ない本館型美術館で、年5〜6本の企画展を開催（料金は変動、公式サイトで確認）。「短時間で文化的な体験を組み込みたい」「乗り換え1〜2時間の待ち時間にアートを見たい」人に向く。営業時間10〜20時、月曜は休館または企画展により変動。JR横浜駅東口直結のそごう館内なので、雨の日でも傘なしでアクセスできる。1時間半〜2時間の滞在で1企画展を見て、デパ地下でお茶という流れが組みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 直結（徒歩5分）"
+          },
+          {
+            "k": "入館料",
+            "v": "展覧会による（1,000〜1,500円程度）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "アソビル",
+        "cuisine": "複合エンタメ施設",
+        "area": "横浜駅東口",
+        "purpose": "ゲーム・謎解き・バー・DJブース。横浜駅徒歩2分の遊び場",
+        "desc": "アソビルは横浜駅東口から徒歩約3分、2019年開業の体験型エンタメ施設。1〜4階に複数のテーマパーク・eスポーツ・カフェ・物販が入り、屋内で2〜3時間遊べる。「子連れで雨の日に時間を潰したい」「友人グループで遊びたい」目的に最適。営業時間10〜21時（施設により異なる）、料金は施設ごとの個別料金制。JR横浜駅東口側の屋根のある動線でアクセス可能で、雨天時にも便利。新感覚アクティビティが多いので、リピート訪問でも飽きにくい構成。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅東口 徒歩2分"
+          },
+          {
+            "k": "営業時間",
+            "v": "11:00〜23:00（フロアによる）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜ポルタ（散策）",
+        "cuisine": "地下街",
+        "area": "横浜駅",
+        "purpose": "地下街をぶらぶらするだけでも時間が過ぎる",
+        "desc": "横浜ポルタは横浜駅東口の地下街（1980年開業）。「乗り換えの30〜60分でカフェかランチを取りたい」目的に最適。約100店舗の飲食・物販・カフェが地下通路沿いに並び、雨の日でも傘なしで歩ける。営業時間は店舗による（おおむね10〜21時、飲食は23時頃まで）。JR横浜駅東口・東急東横線・横浜市営地下鉄ブルーラインと直結。席数が多く、混雑時でも空席が見つかりやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 地下直結"
+          },
+          {
+            "k": "料金",
+            "v": "無料（飲食・ショッピング別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "CIAL横浜",
+        "cuisine": "駅ビル",
+        "area": "横浜駅",
+        "purpose": "JR横浜駅直結の駅ビル。土産・カフェ・雑貨",
+        "desc": "CIAL横浜は横浜駅西口直結の駅ビル型商業施設で、2011年に現名称でリニューアル。地下〜地上6階にファッション・雑貨・カフェ・スイーツが揃い、若い世代向けの店舗構成。「西口で短時間ショッピングしたい」「お土産・スイーツ調達」に使いやすい。営業時間10〜21時（飲食店は22時まで）。JR横浜駅西口の屋根のある動線でアクセス可能。横浜駅西口・高島屋・ジョイナスと組み合わせて西口エリアの屋内散策ルートが組める。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00（一部店舗異なる）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "横浜ランドマークタワー展望台（スカイガーデン）",
+        "cuisine": "展望台",
+        "area": "みなとみらい",
+        "purpose": "横浜駅から徒歩15分。69Fから見る横浜の全景",
+        "desc": "横浜駅東口から徒歩約10分、桜木町方向に1駅進んだ場所にあるランドマークタワー69階の屋内展望フロア「スカイガーデン」。横浜港・東京湾・東京方面の景色が360度近く広がる展望台。「乗り換えで時間が2〜3時間以上ある」「横浜の眺望を見てから出発したい」人に向く。営業時間10〜21時（土日祝22時まで延長）、入場料は変動（公式サイトで確認）。桜木町駅から徒歩5分、みなとみらい駅から徒歩3分でアクセスでき、横浜駅から1〜2駅の移動で訪問可能。雨でも雲の上に出ることがあり、視界の変化が劇的なのが魅力。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横浜駅 徒歩15分 / みなとみらい駅 徒歩5分"
+          },
+          {
+            "k": "入場料",
+            "v": "大人1,000円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展望台"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "横浜駅雨の日5選",
+        "h": "/feature/new-yokohama-station-rainy",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "みなとみらいデート5選",
+        "h": "/feature/new-minatomirai-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "東口にも西口にも、百貨店と地下街とエンタメ施設が控えている。空いた時間に困ることのない、懐の深い駅だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "歩いてみると、こんな流れになる。JR東口の改札を出たら、まずそごう横浜店の八階へ上がってそごう美術館で企画展を一本。展示の余韻を残したまま地下のポルタへ降り、賑わう通路沿いのカフェで一息つく。そこから中央通路を西口へと渡れば、駅直結のCIAL横浜でウィンドウショッピング。まだ陽が高ければ、桜木町方面へ一駅、徒歩なら十分ほど歩いてランドマークタワーへ向かい、六十九階のスカイガーデンで暮れていく港を眺める。三十分しか空いていない日なら、ポルタかCIALでコーヒーと甘いものを摘まむだけでも十分に満ち足りる。歩いてみて分かるのは、展望台までの距離も、美術館の休館日も、施設ごとの料金の組み立ても、頭の中の地図とは少しずれていることが多いということ。だから出かける前に、行きたい場所の開いている時間と料金は公式サイトでひと目たしかめておくと、宙ぶらりんの時間がそのまま気持ちのいい寄り道になる。"
   },
-
-  // NG-13 ─────────────────────────────────────────────────
   "new-noge-bar-hop": {
-    id: "new-noge-bar-hop",
-    no: "NG-13", articleType: "guide", kicker: "NOGE BAR HOP",
-    title: "野毛はしご酒3選。横浜の昭和飲み屋街をぶらぶらする夜",
-    titleHTML: "野毛<br>はしご酒3選。",
-    subtitle: "都橋商店街、野毛小路、日ノ出町ガード下。横浜の大人の夜を楽しむエリア",
-    lede: "桜木町駅から大岡川を渡ってすぐ、野毛は昭和から続く飲み屋文化が今も生きている横浜の歓楽街だ。対象は「観光地化していない地元の飲み屋を歩きたい人」「価格を抑えてはしごしたい大学生・若手社会人」「昭和の大衆酒場文化を体感したい人」。標準は18:00集合・終電解散の3〜5時間コース、予算は1人5,000〜8,000円（はしご3軒の場合）。みなとみらいの整った景観から徒歩数分の距離に立ち飲み・もつ焼き・小さなバーが密集し、1軒1,000〜2,500円で2軒・3軒とはしごできる密度がある。観光客向けに整備された街ではないため、価格表示のある店を選んで入るのが基本。",
-    date, reading: "約6分", author,
-    heroImage: I.noge,
-    ranking: [
-      s(1, "都橋商店街（野毛小路）", "レトロ飲み屋街", "野毛",
-        "大岡川沿いに並ぶ昭和の名残。2階建て弧状の飲み屋建築",
-        "大岡川の弧に沿うように建てられた長屋型の飲み屋ビル群。昭和30年代の木造2階建てがそのまま現役で、幅2〜3畳の小さなバー・スナック・居酒屋がびっしりと連なる。「昭和の飲み屋文化を体感したい」「写真スポットとして使いたい」観光的な目的にも向く。営業時間や客層は店ごとに大きく異なり、地元の常連が多い店ほど一見でも歓迎してくれる傾向がある。18時前後の人がまだ少ない時間帯に1軒目として使うと、店主と話しながら店を選び直す余白ができる。観光客しか集まらない店もあるため、店頭のメニューと価格表示を見てから入るのが安全。桜木町駅から徒歩5分、終電を逃しても帰路を組み直しやすい立地もはしごの起点として優秀。次の野毛本通りまで徒歩3分の至近距離。",
-        [I.noge],
-        [
-          { k: "最寄り駅", v: "桜木町駅 徒歩5分 / 日ノ出町駅 徒歩5分" },
-          { k: "料金", v: "店舗による（1,000〜3,000円/軒）" },
-          { k: "おすすめ時間", v: "18:00〜24:00" }]),
-      s(2, "野毛大道芸エリア（野毛本通り）", "飲み屋街", "野毛",
-        "大道芸イベントで有名。日常的にも飲食店が密集するエリア",
-        "野毛本通り・宮川町通り・野毛小路を中心とした、いわゆる「野毛の中心」エリア。もつ焼き・串揚げ・中華・餃子・町中華・スパイスカレーまで業態が広く、夕方17時から営業する店が多い。「腰を据えて食事と飲み物を組み合わせたい」2軒目・3軒目に最適。毎年春に「野毛大道芸」が開催されるが、普段から路上に椅子を出した立ち飲みが何軒もあり、1軒目より2軒目以降に腰を落ち着けて飲む場所として向く。予算は1人2,000〜3,500円が中心で、現金のみ・伝票なしの店もあるので小銭を多めに持って行きたい。金土の20時以降は満席になりやすく、空席を求めて路地を歩くうちに次の店が見つかるのも野毛の楽しみ方。終電前に切り上げるなら22時頃から日ノ出町方向への移動が現実的。",
-        [I.noge],
-        [
-          { k: "最寄り駅", v: "桜木町駅 徒歩7分" },
-          { k: "料金", v: "立ち飲み500円〜" },
-          { k: "おすすめ時間", v: "17:00〜" }]),
-      s(3, "日ノ出町ガード下", "バー・居酒屋", "日ノ出町",
-        "京急高架下の小規模バーが集まるエリア。野毛と徒歩圏",
-        "京急本線・日ノ出町駅の高架下から続く、野毛より少し新しい世代の小箱が並ぶ一帯。クラフトビール・ナチュラルワイン・ジャズバー・スタンディングと、野毛本通りの大衆酒場ではあまり見ない業態が増えている。「締めの1杯を上質な小箱で過ごしたい」洗練派にフィットする。野毛本通りから徒歩7〜10分で移動でき、はしごの「締め」として20時以降に入る使い方が向く。深夜まで営業する店が多く、最終電車の時間まで腰を据えやすい。ただし福富町方面（黄金町・伊勢佐木町寄り）は客引きが出る区画もあるため、付いていかず店頭表示で判断すること。京急の日ノ出町駅から横浜・品川方面に戻りやすいのも締めの動線として現実的。",
-        [I.noge],
-        [
-          { k: "最寄り駅", v: "日ノ出町駅 徒歩2分" },
-          { k: "料金", v: "店舗による" },
-          { k: "おすすめ時間", v: "19:00〜" }])],
-    sideArticles: [
-      side("桜木町夜景デート5選", "new-sakuragicho-night-date", I.cosmo),
-      side("馬車道・歴史建築5選", "new-bashamichi-architecture", I.museum)],
-    quote: "野毛の飲み屋街は、昭和の大衆酒場文化がいまも息づく横浜の名所。",
-    quoteCite: author,
-    closing: "標準動線: 都橋商店街（18:00〜19:00で軽く1軒目）→野毛本通り（19:00〜21:00で食事中心の2軒目）→日ノ出町ガード下（21:00〜終電で締めの一杯）。所要1.5〜3時間、予算は1人5,000〜8,000円が目安。金土の20時以降と大道芸の週末は混雑で待ち時間が長くなるので、開店直後の17〜18時スタートが快適。雨の日は屋根のある都橋商店街→日ノ出町ガード下のルートに絞ると傘を畳んだまま動ける。失敗しやすいのは「料金表示のない店で会計が不明瞭」「現金不足でカード使えず詰む」「終電時間の見落としで福富町方面に流れる」。事前にATMで現金を用意し、店頭で必ず料金表示を確認、終電時刻を逆算してから動き出す。迷ったら最初の1軒は都橋商店街、最後の1軒は日ノ出町ガード下のクラフトビール系、と決めておくと間の野毛本通りで「今日の気分」に任せて2〜3軒選ぶ余白を持てる。この記事は観光地化していない地元の飲み屋を歩きたい大学生・若手社会人、横浜の昭和文化を体感したい人に最も向く。",
+    "id": "new-noge-bar-hop",
+    "no": "NG-13",
+    "articleType": "guide",
+    "kicker": "NOGE BAR HOP",
+    "title": "野毛、昭和の飲み屋街を歩く夜。横浜・桜木町の路地酒場さんぽ",
+    "titleHTML": "野毛、昭和の飲み屋街を歩く夜。<br>横浜・桜木町の路地酒場さんぽ",
+    "subtitle": "都橋商店街、野毛本通り、日ノ出町ガード下。みなとみらいの灯の裏側で続く大人の夜",
+    "lede": "桜木町の改札を出て大岡川を渡ると、みなとみらいの澄んだ光がふっと途切れて、急に空気が湿って濃くなる。それが野毛だ。ここは昭和から続く飲み屋文化がいまも生きている横浜の歓楽街で、整った観光地の顔をいっさい持っていない。路地に入れば、もつ焼きの煙、誰かの笑い声、ガラス戸ごしに見える赤い提灯。立ち飲みも、二畳ほどの小さなバーも、間口の狭いもつ焼き屋も、肩を寄せ合うように密集している。今夜は地図をきっちり決めずに、川沿いから高架下まで、灯りの濃いほうへ足を向けて歩いてみる。一軒で長居せず、一杯ずつ重ねていくのがこの街の歩き方だ。値段の出ていない店に怯む必要はない。店頭に料金が書いてある店から覗けば、横浜の路地はずっと優しい顔を見せてくれる。",
+    "date": "2026-05-14",
+    "reading": "約6分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "都橋商店街（野毛小路）",
+        "cuisine": "レトロ飲み屋街",
+        "area": "野毛",
+        "purpose": "大岡川沿いに並ぶ昭和の名残。2階建て弧状の飲み屋建築",
+        "desc": "大岡川の弧に沿うように建てられた長屋型の飲み屋ビル群。昭和30年代の木造2階建てがそのまま現役で、幅2〜3畳の小さなバー・スナック・居酒屋がびっしりと連なる。「昭和の飲み屋文化を体感したい」「写真スポットとして使いたい」観光的な目的にも向く。営業時間や客層は店ごとに大きく異なり、地元の常連が多い店ほど一見でも歓迎してくれる傾向がある。18時前後の人がまだ少ない時間帯に1軒目として使うと、店主と話しながら店を選び直す余白ができる。観光客しか集まらない店もあるため、店頭のメニューと価格表示を見てから入るのが安全。桜木町駅から徒歩5分、終電を逃しても帰路を組み直しやすい立地もはしごの起点として優秀。次の野毛本通りまで徒歩3分の至近距離。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 徒歩5分 / 日ノ出町駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "店舗による（1,000〜3,000円/軒）"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "18:00〜24:00"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "野毛大道芸エリア（野毛本通り）",
+        "cuisine": "飲み屋街",
+        "area": "野毛",
+        "purpose": "大道芸イベントで有名。日常的にも飲食店が密集するエリア",
+        "desc": "野毛本通り・宮川町通り・野毛小路を中心とした、いわゆる「野毛の中心」エリア。もつ焼き・串揚げ・中華・餃子・町中華・スパイスカレーまで業態が広く、夕方17時から営業する店が多い。「腰を据えて食事と飲み物を組み合わせたい」2軒目・3軒目に最適。毎年春に「野毛大道芸」が開催されるが、普段から路上に椅子を出した立ち飲みが何軒もあり、1軒目より2軒目以降に腰を落ち着けて飲む場所として向く。予算は1人2,000〜3,500円が中心で、現金のみ・伝票なしの店もあるので小銭を多めに持って行きたい。金土の20時以降は満席になりやすく、空席を求めて路地を歩くうちに次の店が見つかるのも野毛の楽しみ方。終電前に切り上げるなら22時頃から日ノ出町方向への移動が現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "桜木町駅 徒歩7分"
+          },
+          {
+            "k": "料金",
+            "v": "立ち飲み500円〜"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "17:00〜"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "日ノ出町ガード下",
+        "cuisine": "バー・居酒屋",
+        "area": "日ノ出町",
+        "purpose": "京急高架下の小規模バーが集まるエリア。野毛と徒歩圏",
+        "desc": "京急本線・日ノ出町駅の高架下から続く、野毛より少し新しい世代の小箱が並ぶ一帯。クラフトビール・ナチュラルワイン・ジャズバー・スタンディングと、野毛本通りの大衆酒場ではあまり見ない業態が増えている。「締めの1杯を上質な小箱で過ごしたい」洗練派にフィットする。野毛本通りから徒歩7〜10分で移動でき、はしごの「締め」として20時以降に入る使い方が向く。深夜まで営業する店が多く、最終電車の時間まで腰を据えやすい。ただし福富町方面（黄金町・伊勢佐木町寄り）は客引きが出る区画もあるため、付いていかず店頭表示で判断すること。京急の日ノ出町駅から横浜・品川方面に戻りやすいのも締めの動線として現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "日ノ出町駅 徒歩2分"
+          },
+          {
+            "k": "料金",
+            "v": "店舗による"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "19:00〜"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "桜木町夜景デート5選",
+        "h": "/feature/new-sakuragicho-night-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+      },
+      {
+        "t": "馬車道・歴史建築5選",
+        "h": "/feature/new-bashamichi-architecture",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+      }
+    ],
+    "quote": "みなとみらいの灯の裏側に、昭和の大衆酒場がそのまま息づいている。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "川沿いの長屋でぬるい一杯を空け、本通りでもつ焼きの脂と煙にまみれ、最後は高架下でクラフトビールのグラスを傾ける。歩いて回ると、野毛は一つの街というより、世代の違う酒場が地続きにつながった帯のような場所だと気づく。昭和の木造の路地から、ほんの数分歩くだけで、いまの横浜の若い店に景色が入れ替わっていく。終電の時刻だけは頭の片隅に置いておきたい。逆算を忘れて飲み続けると、気づけば最後の一杯が福富町のほうへ流れてしまう。財布の現金も少し多めに用意しておくと安心だ。カードの通らない古い店も、まだこの界隈には残っている。料金や営業時間は店ごとにまちまちで移ろいやすいので、気になった店は店頭の表示か公式の案内でその都度たしかめてほしい。煙と灯りのなかをひと巡りした帰り道、また大岡川の橋を渡るころには、みなとみらいの澄んだ光が今度はやけによそよそしく見える。それくらい、野毛の夜は人懐っこい。"
   },
-
-  // NG-14 ─────────────────────────────────────────────────
   "new-shin-yokohama-bored": {
-    id: "new-shin-yokohama-bored",
-    no: "NG-14", articleType: "guide", kicker: "SHIN-YOKOHAMA TIME",
-    title: "新横浜で時間つぶし5選。新幹線待ち・ライブ前後に使える場所",
-    titleHTML: "新横浜で<br>時間つぶし5選。",
-    subtitle: "ラーメン博物館、スケートリンク、新横浜公園。新幹線の待ち時間にも対応できるエリア",
-    lede: "新横浜は東海道新幹線・JR横浜線・横浜市営地下鉄が集まる横浜北部のターミナル。新幹線の乗換・横浜アリーナでのイベント参加・日産スタジアム観戦などで訪れる人が多いが、駅周辺で時間を潰すスポットも整っている。対象は新幹線乗換の2〜4時間待ちを有効に使いたい人、アリーナ/スタジアムのイベント前後の時間調整、地方からの遠征客。標準は14:00集合・19:00解散の5時間コース、予算は1人2,500〜5,000円。ここでは新横浜駅周辺で時間調整に使える5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.shin_yoko,
-    ranking: [
-      s(1, "新横浜ラーメン博物館", "フードテーマパーク", "新横浜",
-        "全国の有名ラーメン店が集結。昭和33年の街並みを再現",
-        "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる。「ラーメンを複数の名店で食べ比べたい」「新幹線乗換の食事として組み込みたい」目的に最適。1〜2時間滞在で2〜3軒のラーメンを食べられる規模感。営業時間11〜22時、入場料は変動（公式サイトで確認）。新横浜駅北口から徒歩5分でアクセス可能。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩2分" },
-          { k: "入場料", v: "大人380円" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(2, "新横浜スケートセンター", "屋内スケートリンク", "新横浜",
-        "通年営業の本格スケートリンク。初心者も貸靴あり",
-        "新横浜スケートセンターは新横浜駅から徒歩約7分、通年利用可能なアイススケート場。「子供連れで雨の日に体を動かしたい」「冬季のデートで新感覚な体験を組みたい」家族・カップルに向く。貸靴1,000円程度・滑走料1,500〜2,000円程度（料金は変動、公式サイトで確認）。営業時間は曜日・時期により変動するため事前確認が必須。土日午後はファミリーで混雑するが、平日午前は比較的空いている。1〜2時間の体験滞在で、ラーメン博物館とセットで半日コースが組める。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩10分" },
-          { k: "料金", v: "大人1,500円程度（スケートレンタル別途）" },
-          { k: "雨の日", v: "◎ 屋内" }]),
-      s(3, "新横浜公園", "公園", "新横浜",
-        "日産スタジアム隣接の広大な都市公園",
-        "新横浜公園は1998年整備、日産スタジアム周辺に広がる約36haの大型公園。「散歩・ランニング・サイクリングを楽しみたい」「子供と外遊びをしたい」家族に最適。鶴見川沿いの遊歩道・芝生広場・遊具・草地広場が整備され、季節の花も楽しめる。新横浜駅から徒歩7分、入園無料・24時間開放。イベント開催日は周辺道路が混雑するため、平日の使用が現実的。雨の日は屋外利用が辛いため、館内施設に切り替え。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(4, "キュービックプラザ新横浜", "駅ビル", "新横浜",
-        "新横浜駅直結のショッピング施設。飲食・土産も充実",
-        "キュービックプラザ新横浜は2008年開業、新横浜駅直結の大型商業施設。9〜10階のレストラン街・地下のデパ地下・低層階のファッション・雑貨フロアが揃い、新幹線乗換のついでに食事・買い物が完結する。「乗換時間で確実に食事を済ませたい」「天候に左右されずに時間を潰したい」人に最適。営業時間11〜21時（レストランは22時まで）。駅から徒歩30秒の至近距離で、雨の日でも傘なしで入れる。次の動線として駅構内に直結。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(5, "日産スタジアム（横浜国際総合競技場）", "スタジアム", "新横浜",
-        "収容7.2万人の国内最大スタジアム。イベント時は周辺が賑わう",
-        "日産スタジアム（横浜国際総合競技場）は1998年開業、収容人数約72,000人の日本最大級のサッカースタジアム。「横浜F・マリノス観戦」「サッカー日本代表戦の応援」目的の人に最適。試合がない日でも周辺の新横浜公園を散歩でき、外観の建築規模が圧巻。新横浜駅から徒歩約20分（バスもあり）、新幹線乗換の合間にはやや距離がある。試合観戦は1試合5,000〜10,000円程度（チケットによる、公式で確認）。ナイトゲーム後は新横浜駅周辺の飲食店が深夜営業を続けることが多い。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩12分 / 小机駅 徒歩10分" },
-          { k: "料金", v: "イベントによる（外観見学は無料）" }])],
-    sideArticles: [
-      side("横浜アリーナ周辺5選", "new-yokohama-arena-spots", I.mm_blue),
-      side("横浜駅周辺で時間つぶし5選", "new-yokohama-station-bored", I.mm_blue)],
-    quote: "新横浜はラーメン博物館を軸に、スケートリンクや公園と組み合わせれば半日楽しめる。",
-    quoteCite: author,
-    closing: "標準動線: 新横浜駅14:00→キュービックプラザでショッピング・カフェ（14:00〜15:00）→ラーメン博物館で食べ比べ（15:00〜16:30）→新横浜公園で散歩（16:30〜17:30）→キュービックプラザ階上で夕食（17:30〜19:00）。所要5時間、予算は食事込みで1人2,500〜5,000円。イベント開催日（アリーナ・スタジアム）は周辺の混雑が激しいので、イベントなしの平日が落ち着いて回れる。雨の日はキュービックプラザ・ラーメン博物館・スケートセンターの屋内ルートで完結。失敗しやすいのは「新横浜公園・日産スタジアムへの徒歩距離（15〜20分）を読み違える」「スケートセンターの営業時間を見落とす」「イベント開催日に来てしまい飲食店が満席」。事前にイベントカレンダーと施設営業時間を公式サイトで確認。この記事は新幹線乗換時間を有効活用したい人、地方からの遠征客に向く。",
+    "id": "new-shin-yokohama-bored",
+    "no": "NG-14",
+    "articleType": "guide",
+    "kicker": "SHIN-YOKOHAMA TIME",
+    "title": "新横浜、新幹線待ちの数時間を歩く。ライブ前後にも効く時間つぶし",
+    "titleHTML": "新横浜、新幹線待ちの数時間を歩く。<br>ライブ前後にも効く時間つぶし",
+    "subtitle": "ラーメン博物館からスケートリンク、鶴見川沿いの公園まで。乗換の合間が、ちょっとした遠出に変わる駅",
+    "lede": "新横浜の改札を出ると、いつも誰かが時計を気にしている。次の新幹線まで二時間、横浜アリーナの開場まで一時間半、日産スタジアムのキックオフまで微妙に余った夕方。みんな手持ち無沙汰のまま、駅ビルの上の方を見上げている。東海道新幹線とJR横浜線、市営地下鉄が交わるこの横浜北部のターミナルは、通り過ぎる街だと思われがちだ。けれど改札から数分の範囲に、ラーメンの湯気も、氷の上の冷たい空気も、川沿いの広い空も揃っている。私はこの「待ち時間」をただ潰すのではなく、少しだけ歩いてみることにした。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "新横浜ラーメン博物館",
+        "cuisine": "フードテーマパーク",
+        "area": "新横浜",
+        "purpose": "全国の有名ラーメン店が集結。昭和33年の街並みを再現",
+        "desc": "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる。「ラーメンを複数の名店で食べ比べたい」「新幹線乗換の食事として組み込みたい」目的に最適。1〜2時間滞在で2〜3軒のラーメンを食べられる規模感。営業時間11〜22時、入場料は変動（公式サイトで確認）。新横浜駅北口から徒歩5分でアクセス可能。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩2分"
+          },
+          {
+            "k": "入場料",
+            "v": "大人380円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "新横浜スケートセンター",
+        "cuisine": "屋内スケートリンク",
+        "area": "新横浜",
+        "purpose": "通年営業の本格スケートリンク。初心者も貸靴あり",
+        "desc": "新横浜スケートセンターは新横浜駅から徒歩約7分、通年利用可能なアイススケート場。「子供連れで雨の日に体を動かしたい」「冬季のデートで新感覚な体験を組みたい」家族・カップルに向く。貸靴1,000円程度・滑走料1,500〜2,000円程度（料金は変動、公式サイトで確認）。営業時間は曜日・時期により変動するため事前確認が必須。土日午後はファミリーで混雑するが、平日午前は比較的空いている。1〜2時間の体験滞在で、ラーメン博物館とセットで半日コースが組める。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "大人1,500円程度（スケートレンタル別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "新横浜公園",
+        "cuisine": "公園",
+        "area": "新横浜",
+        "purpose": "日産スタジアム隣接の広大な都市公園",
+        "desc": "新横浜公園は1998年整備、日産スタジアム周辺に広がる約36haの大型公園。「散歩・ランニング・サイクリングを楽しみたい」「子供と外遊びをしたい」家族に最適。鶴見川沿いの遊歩道・芝生広場・遊具・草地広場が整備され、季節の花も楽しめる。新横浜駅から徒歩7分、入園無料・24時間開放。イベント開催日は周辺道路が混雑するため、平日の使用が現実的。雨の日は屋外利用が辛いため、館内施設に切り替え。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "キュービックプラザ新横浜",
+        "cuisine": "駅ビル",
+        "area": "新横浜",
+        "purpose": "新横浜駅直結のショッピング施設。飲食・土産も充実",
+        "desc": "キュービックプラザ新横浜は2008年開業、新横浜駅直結の大型商業施設。9〜10階のレストラン街・地下のデパ地下・低層階のファッション・雑貨フロアが揃い、新幹線乗換のついでに食事・買い物が完結する。「乗換時間で確実に食事を済ませたい」「天候に左右されずに時間を潰したい」人に最適。営業時間11〜21時（レストランは22時まで）。駅から徒歩30秒の至近距離で、雨の日でも傘なしで入れる。次の動線として駅構内に直結。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "日産スタジアム（横浜国際総合競技場）",
+        "cuisine": "スタジアム",
+        "area": "新横浜",
+        "purpose": "収容7.2万人の国内最大スタジアム。イベント時は周辺が賑わう",
+        "desc": "日産スタジアム（横浜国際総合競技場）は1998年開業、収容人数約72,000人の日本最大級のサッカースタジアム。「横浜F・マリノス観戦」「サッカー日本代表戦の応援」目的の人に最適。試合がない日でも周辺の新横浜公園を散歩でき、外観の建築規模が圧巻。新横浜駅から徒歩約20分（バスもあり）、新幹線乗換の合間にはやや距離がある。試合観戦は1試合5,000〜10,000円程度（チケットによる、公式で確認）。ナイトゲーム後は新横浜駅周辺の飲食店が深夜営業を続けることが多い。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩12分 / 小机駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "イベントによる（外観見学は無料）"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "横浜アリーナ周辺5選",
+        "h": "/feature/new-yokohama-arena-spots",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "横浜駅周辺で時間つぶし5選",
+        "h": "/feature/new-yokohama-station-bored",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "通り過ぎるはずだった駅で、湯気と氷と川風に寄り道する数時間。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "歩き終えてみると、新横浜は「乗換のついで」では惜しい街だった。まず地下のラーメン博物館で昭和の路地に降り、ミニサイズの一杯を二、三軒はしごして腹を温める。氷の匂いが恋しければ駅から七分ほどのスケートセンターへ、体を動かしたければ鶴見川を渡って三十六ヘクタールの公園を端まで歩く。日産スタジアムの大屋根が見えてきたら、もう駅前ではないと気づくはずだ。帰りはキュービックプラザの上層階で食事を済ませ、そのまま改札へ滑り込めばいい。スタジアムやアリーナで催しがある日は、人の波がまるで別の街のように膨らむので、開催情報と各施設の営業時間だけは出かける前に公式で見ておくと、慌てずに済む。乗換の数時間が、ちょっとした遠出に変わる。それがこの駅の懐の深さだと思う。"
   },
-
-  // NG-15 ─────────────────────────────────────────────────
   "new-yokohama-arena-spots": {
-    id: "new-yokohama-arena-spots",
-    no: "NG-15", articleType: "guide", kicker: "YOKOHAMA ARENA SPOTS",
-    title: "横浜アリーナ周辺5選。ライブ前後に使えるスポット",
-    titleHTML: "横浜アリーナ<br>周辺5選。",
-    subtitle: "ラーメン博物館、スケートリンク、新横浜公園。ライブの待ち時間を快適に過ごす方法",
-    lede: "横浜アリーナはコンサート・スポーツイベントの集客力で東京ドーム・武道館と並ぶ主要な大型イベント施設。新横浜駅から徒歩5分の駅近で、ライブ前後の食事・カフェ・物販を駅周辺で組み立てやすい。対象はアリーナのコンサート参加客、地方からの遠征ファン、グッズ販売の整理券狙いの早朝来場客。標準は16:30集合・23:30解散の7時間コース（ライブチケット込み）、予算は食事・グッズ込みで1人15,000〜25,000円。ここでは横浜アリーナ参加時に役立つ駅周辺5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.shin_yoko,
-    ranking: [
-      s(1, "新横浜ラーメン博物館", "フードテーマパーク", "新横浜",
-        "ライブ前の腹ごしらえに最適。アリーナから徒歩5分",
-        "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる。「ライブ前に軽くお腹を満たしたい」「複数のラーメンを少量ずつ試したい」目的に最適。営業時間11〜22時、入場料は変動。新横浜駅北口から徒歩5分、アリーナまでさらに徒歩5分で繋がる動線。ライブ開演前16〜17時のピークは混雑するため、開場直後または14時前に動くと現実的。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩2分" },
-          { k: "入場料", v: "380円" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "新横浜公園・鶴見川沿い遊歩道", "公園・遊歩道", "新横浜",
-        "アリーナ横の公園。開演前の散歩・飲食にちょうどいい",
-        "新横浜公園と鶴見川沿いの遊歩道は約36haの大型公園区画で、横浜アリーナの東側に広がる。「ライブ前の屋外時間を確保したい」「グッズ列に並ぶ前の集合場所にしたい」目的に向く。鶴見川沿いの遊歩道・芝生広場・遊具が整備され、ベンチも豊富。新横浜駅から徒歩7分、アリーナから徒歩5分。入園無料・24時間開放だが、ライブ終演後の深夜帯は街灯が控えめなため、駅へ戻る経路は明るい大通りを選ぶ。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(3, "キュービックプラザ新横浜", "駅ビル", "新横浜",
-        "駅直結でグッズ袋の一時保管・土産購入にも対応",
-        "キュービックプラザ新横浜は新横浜駅直結の大型商業施設（2008年開業）。ライブ前の食事に9〜10階のレストラン街が使いやすい。「ライブ前の17〜18時に1〜1.5時間で食事を済ませたい」目的に最適。和洋中・寿司・カフェなど業態が広く、ライブ参加客で混むので予約推奨の店舗もある。営業時間11〜22時。新横浜駅から徒歩30秒の至近距離で、ライブ後の終演22時前後にも飲食店がまだ開いている強み。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(4, "新横浜スケートセンター", "屋内スケートリンク", "新横浜",
-        "ライブ前日や翌日に体を動かしたいときに",
-        "新横浜スケートセンターは通年利用可能なアイススケート場。「ライブ前の時間が4〜5時間以上余った」「友人と新感覚な体験を組みたい」グループに向く。新横浜駅から徒歩7分、貸靴・滑走料込みで1人2,500〜3,500円程度。1〜2時間で滑り終わるサイズ感で、ライブ前の体力消費に注意（汗対策）。営業時間は曜日・時期により変動するため事前確認推奨。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 徒歩10分" },
-          { k: "料金", v: "大人1,500円程度" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "新横浜近辺のカフェ・コワーキング", "カフェ", "新横浜",
-        "遠方から来た場合の休憩・荷物まとめに使えるカフェ",
-        "新横浜駅周辺のカフェ・コワーキングスペースは、ライブ後の余韻を共有する場として使える。「ライブの感想を共有したい」「グッズ整理の時間が欲しい」グループに向く。Wi-Fi・電源完備の店舗もあり、地方からの遠征客が宿に戻る前の中継地としても便利。新横浜駅周辺の徒歩5分圏内に5〜10軒程度、終演後の22〜24時も営業する店もある。1人500〜1,500円程度のカフェ滞在。深夜帯の電車時刻と合わせて利用時間を決める。",
-        [I.shin_yoko],
-        [
-          { k: "最寄り駅", v: "新横浜駅 周辺" },
-          { k: "料金", v: "500〜1,000円程度" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("新横浜で時間つぶし5選", "new-shin-yokohama-bored", I.mm_blue),
-      side("横浜駅周辺で時間つぶし5選", "new-yokohama-station-bored", I.mm_blue)],
-    quote: "横浜アリーナ周辺は新横浜駅から徒歩圏内に飲食・体験施設が揃い、前後の時間を使いやすい。",
-    quoteCite: author,
-    closing: "標準動線: 新横浜駅16:30到着→キュービックプラザでディナー（16:30〜18:00）→アリーナ会場入場（18:00〜18:30）→ライブ（18:30〜21:30）→新横浜公園を経由して駅へ→カフェで余韻共有（22:00〜23:30）→新横浜駅から帰路。所要7時間、予算はライブチケット＋食事＋カフェ込みで1人15,000〜25,000円。ライブ開催日は新横浜駅・キュービックプラザのレストランが混雑するため、予約推奨。雨の日もアリーナ・駅・キュービックプラザが至近距離で繋がるため、傘の煩わしさは最小限。失敗しやすいのは「グッズ販売の整理券時間を見落とす」（朝5〜7時から並ぶ必要がある場合も）と「終演後の電車混雑を読み違える」（新横浜駅は終電帯の改札待ちが発生）。事前に公式アナウンスで整理券・グッズ販売の時間を確認、終電1本前を目安に駅に向かう。この記事はアリーナのコンサート参加客、地方からの遠征ファンに最も向く。",
+    "id": "new-yokohama-arena-spots",
+    "no": "NG-15",
+    "articleType": "guide",
+    "kicker": "YOKOHAMA ARENA SPOTS",
+    "title": "新横浜、ライブの前後を歩く。横浜アリーナ徒歩圏のさんぽ",
+    "titleHTML": "新横浜、ライブの前後を歩く。<br>横浜アリーナ徒歩圏のさんぽ",
+    "subtitle": "ラーメン博物館の昭和、鶴見川の風、駅ビルのレストラン街。開演までの時間と、終演後の余韻が落ち着く場所を、駅から歩いた順に書いた。",
+    "lede": "新横浜の駅前は、新幹線の高架とビル群がつくる直線的な街並みだ。けれど横浜アリーナのある北側に向かって歩くと、その硬さが少しずつほどけていく。ライブの日、ここには独特の空気が流れている。同じアーティストの名前を背負ったTシャツが行き交い、開演を待つ高揚と、まだ何も始まっていない手持ち無沙汰が同居する。私はその「前後の時間」が好きで、何度か早めに着いては駅の周りを歩いてきた。アリーナは新横浜駅から徒歩五分ほど。改札を出てから会場に吸い込まれるまでのあいだに、思いのほか色々な顔の街が挟まっている。地下に潜れば昭和の路地があり、川沿いに出れば水と空が開け、駅ビルの上層には静かなレストラン街がある。この記事は、その道すがらで足を止めたくなった場所を、歩いた順に書きとめたものだ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "新横浜ラーメン博物館",
+        "cuisine": "フードテーマパーク",
+        "area": "新横浜",
+        "purpose": "ライブ前の腹ごしらえに最適。アリーナから徒歩5分",
+        "desc": "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる。「ライブ前に軽くお腹を満たしたい」「複数のラーメンを少量ずつ試したい」目的に最適。営業時間11〜22時、入場料は変動。新横浜駅北口から徒歩5分、アリーナまでさらに徒歩5分で繋がる動線。ライブ開演前16〜17時のピークは混雑するため、開場直後または14時前に動くと現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩2分"
+          },
+          {
+            "k": "入場料",
+            "v": "380円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "新横浜公園・鶴見川沿い遊歩道",
+        "cuisine": "公園・遊歩道",
+        "area": "新横浜",
+        "purpose": "アリーナ横の公園。開演前の散歩・飲食にちょうどいい",
+        "desc": "新横浜公園と鶴見川沿いの遊歩道は約36haの大型公園区画で、横浜アリーナの東側に広がる。「ライブ前の屋外時間を確保したい」「グッズ列に並ぶ前の集合場所にしたい」目的に向く。鶴見川沿いの遊歩道・芝生広場・遊具が整備され、ベンチも豊富。新横浜駅から徒歩7分、アリーナから徒歩5分。入園無料・24時間開放だが、ライブ終演後の深夜帯は街灯が控えめなため、駅へ戻る経路は明るい大通りを選ぶ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "キュービックプラザ新横浜",
+        "cuisine": "駅ビル",
+        "area": "新横浜",
+        "purpose": "駅直結でグッズ袋の一時保管・土産購入にも対応",
+        "desc": "キュービックプラザ新横浜は新横浜駅直結の大型商業施設（2008年開業）。ライブ前の食事に9〜10階のレストラン街が使いやすい。「ライブ前の17〜18時に1〜1.5時間で食事を済ませたい」目的に最適。和洋中・寿司・カフェなど業態が広く、ライブ参加客で混むので予約推奨の店舗もある。営業時間11〜22時。新横浜駅から徒歩30秒の至近距離で、ライブ後の終演22時前後にも飲食店がまだ開いている強み。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "新横浜スケートセンター",
+        "cuisine": "屋内スケートリンク",
+        "area": "新横浜",
+        "purpose": "ライブ前日や翌日に体を動かしたいときに",
+        "desc": "新横浜スケートセンターは通年利用可能なアイススケート場。「ライブ前の時間が4〜5時間以上余った」「友人と新感覚な体験を組みたい」グループに向く。新横浜駅から徒歩7分、貸靴・滑走料込みで1人2,500〜3,500円程度。1〜2時間で滑り終わるサイズ感で、ライブ前の体力消費に注意（汗対策）。営業時間は曜日・時期により変動するため事前確認推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "大人1,500円程度"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "新横浜近辺のカフェ・コワーキング",
+        "cuisine": "カフェ",
+        "area": "新横浜",
+        "purpose": "遠方から来た場合の休憩・荷物まとめに使えるカフェ",
+        "desc": "新横浜駅周辺のカフェ・コワーキングスペースは、ライブ後の余韻を共有する場として使える。「ライブの感想を共有したい」「グッズ整理の時間が欲しい」グループに向く。Wi-Fi・電源完備の店舗もあり、地方からの遠征客が宿に戻る前の中継地としても便利。新横浜駅周辺の徒歩5分圏内に5〜10軒程度、終演後の22〜24時も営業する店もある。1人500〜1,500円程度のカフェ滞在。深夜帯の電車時刻と合わせて利用時間を決める。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "新横浜駅 周辺"
+          },
+          {
+            "k": "料金",
+            "v": "500〜1,000円程度"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "新横浜で時間つぶし5選",
+        "h": "/feature/new-shin-yokohama-bored",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "横浜駅周辺で時間つぶし5選",
+        "h": "/feature/new-yokohama-station-bored",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "改札と会場のあいだの数百メートルに、昭和の路地も、川の風も、夜のレストラン街もある。新横浜は「待ち時間」を持て余させない街だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "歩き終えてみると、新横浜という街は会場までの動線そのものが小さな散歩道になっている、と思う。駅前のビルの硬さ、地下の昭和、川沿いの開けた空、上層階の静けさ——そのどれもが徒歩圏に収まっていて、開演前の時間を埋めるにも、終演後の火照りを冷ますにも、ちょうどいい距離感だった。ライブのある夜は駅周辺の飲食店が一斉に混むので、ゆっくり食べたい店があるなら早めに席を押さえておくと心強い。各施設の営業時間や料金、ラーメン博物館の出店状況などは折に触れて変わるから、出かける前にそれぞれの公式ページをのぞいておくと安心だ。終演後の改札はしばらく人で詰まる。余韻を一杯のコーヒーに預けて、波が引いたころに駅へ向かう——そんな帰り方が、私にはいちばん心地よかった。"
   },
-
-  // NG-16 ─────────────────────────────────────────────────
   "new-kamakura-komachi": {
-    id: "new-kamakura-komachi",
-    no: "NG-16", articleType: "guide", kicker: "KAMAKURA KOMACHI",
-    title: "鎌倉小町通り・鶴岡八幡宮周辺5選。鎌倉観光の王道ルート",
-    titleHTML: "鎌倉<br>小町通り5選。",
-    subtitle: "小町通りの食べ歩き、鶴岡八幡宮の参拝、若宮大路の歩き方",
-    lede: "小町通りは鎌倉駅東口から鶴岡八幡宮までの約360m続く商店街で、鎌倉観光のハイライト。食べ歩き・お土産・カフェが並ぶ参道型の通りで、平日でも観光客で賑わう。鶴岡八幡宮参拝とセットで使う動線が王道で、半日コースの主軸として機能する。ここでは小町通り・鶴岡八幡宮を中心とした鎌倉の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.hachimangu,
-    ranking: [
-      s(1, "小町通り", "食べ歩き・ショッピング街", "鎌倉駅東口",
-        "鎌倉駅から鶴岡八幡宮まで続く食べ歩きストリート",
-        "鎌倉駅東口から鶴岡八幡宮まで続く360mの商店街。両側に約250店舗が並び、和雑貨・食べ歩きフード（人形焼・コロッケ・揚げまんじゅう・抹茶ソフトなど）・カフェが密集する。土日午後は歩行困難なほどの混雑、開門直後の9〜10時または16時以降が比較的スムーズ。1〜2時間の散歩で全店舗を眺められる距離感。鎌倉駅東口から徒歩30秒の駅近で、観光起点として優秀。",
-        [I.hachimangu],
-        [
-          { k: "最寄り駅", v: "鎌倉駅東口 徒歩1分" },
-          { k: "料金", v: "無料（飲食・購入別途）" },
-          { k: "雨の日", v: "△ 屋根あり店舗多数" }]),
-      s(2, "鶴岡八幡宮", "神社・歴史", "雪ノ下",
-        "鎌倉の総鎮守。段葛・本殿・ぼたん園と見どころ多数",
-        "1063年創建、鎌倉幕府が公式の鶴岡八幡宮として整備した神社。鎌倉の中央に位置し、源頼朝が源氏の守り神として崇敬した。本宮までは約200段の階段を登る形になり、参拝後は本宮広場から鎌倉の街並みを見下ろせる。営業時間（参拝可能時間）は6〜21時、入場無料。おみくじは100円程度、本宮の参拝混雑は土日10〜15時がピーク。境内は四季の景観が美しく、桜（3月末〜4月）・牡丹（4月）・蓮（7〜8月）・紅葉（11月）が見頃。小町通り北端から徒歩1分の至近距離。",
-        [I.hachimangu],
-        [
-          { k: "最寄り駅", v: "鎌倉駅東口 徒歩10分" },
-          { k: "料金", v: "境内無料（ぼたん苑・宝物殿は別途）" },
-          { k: "雨の日", v: "△ 屋外メイン" }]),
-      s(3, "鎌倉国宝館", "博物館", "雪ノ下",
-        "鶴岡八幡宮境内にある博物館。国宝・重文の仏像が充実",
-        "鎌倉の老舗和菓子店は鎌倉散歩のハイライト。「鎌倉まめや」（豆菓子）・「鳩サブレ豊島屋」（鳩の形のサブレ）・「鎌倉五郎本店」（半月の最中）・「不二家飯店」（鎌倉名物の中華まん）など、定番の手土産候補が小町通り沿いに並ぶ。1個300〜800円程度、箱詰めは1,500〜3,500円。土日午後はレジ待ちが10〜20分発生することがあり、早めに購入するのが現実的。",
-        [I.hachimangu],
-        [
-          { k: "最寄り駅", v: "鎌倉駅東口 徒歩12分（鶴岡八幡宮境内）" },
-          { k: "入館料", v: "一般700円" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(4, "若宮大路", "参道・散策路", "鎌倉駅周辺",
-        "鎌倉駅から海へ続く参道。3段構造の「段葛」が映える",
-        "鎌倉駅東口から徒歩約10分、鎌倉駅周辺は近年カフェ文化が成熟している。鎌倉野菜を使う洋食店、地元のロースタリーが運営するスペシャルティコーヒー店、北欧家具を活かしたインテリアカフェなど業態が幅広い。1〜2時間の休憩スポットとして、小町通りの混雑を抜けて立ち寄りやすい。1人1,000〜2,500円程度。営業時間は店舗により異なる（おおむね10〜18時）。",
-        [I.hachimangu],
-        [
-          { k: "最寄り駅", v: "鎌倉駅 徒歩1分（起点）" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(5, "鎌倉幕府跡（鎌倉歴史文化交流館）", "歴史スポット", "御成町",
-        "頼朝の幕府があった場所。発掘品と歴史を展示する施設",
-        "鎌倉駅近辺の若宮大路（鶴岡八幡宮の参道）の西側には、観光客が少ない静かな住宅街が広がる。個人経営のギャラリー・古書店・町中華・寿司屋などが点在し、小町通りの賑やかさを抜けてゆっくり過ごせる。若宮大路には桜並木があり、3月末〜4月初旬の花見シーズンには両側の桜が美しい。鎌倉文学館（旧前田家別邸）も近くにあり、文学好きには立ち寄る価値がある。",
-        [I.hachimangu],
-        [
-          { k: "最寄り駅", v: "鎌倉駅 徒歩10分" },
-          { k: "入館料", v: "無料" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("長谷・由比ヶ浜デート5選", "new-hase-yuigahama-date", I.hasedera),
-      side("鎌倉雨の日5選", "new-kamakura-rainy", I.kenchoji)],
-    quote: "鎌倉駅から鶴岡八幡宮まで、小町通りで食べ歩きしながら歩くのが鎌倉観光の王道。",
-    quoteCite: author,
-    closing: "標準動線は、鎌倉駅東口→小町通り食べ歩き（10:30〜12:00）→鶴岡八幡宮参拝（12:00〜13:30）→若宮大路で老舗ランチ（13:30〜14:30）→鎌倉駅周辺のカフェで休憩（14:30〜16:00）→小町通りで土産購入→江ノ電で長谷・大仏方面（16:00〜18:00）。所要6〜7時間、予算は食事＋土産込みで1人4,500〜8,000円が目安。「鎌倉観光の王道を1日で網羅したい人」「家族・友達同士の散歩」「初めての鎌倉訪問」に向く。桜（3月末〜4月）と紅葉（11月）のピークは土日混雑が激しいため、平日または朝9時前後に着くのが現実的。雨の日は小町通りはアーケード区画があるが完全屋根ではないので、屋内のカフェに早めに避難する。時間がない場合は、小町通り→鶴岡八幡宮の2点で2時間半に圧縮できる。迷ったら、9時に鎌倉駅着で小町通り→鶴岡八幡宮→若宮大路ランチ→江ノ電で長谷大仏、というシンプルな1日プランが王道。",
+    "id": "new-kamakura-komachi",
+    "no": "NG-16",
+    "articleType": "guide",
+    "kicker": "KAMAKURA KOMACHI",
+    "title": "鎌倉、小町通りから八幡宮へ歩く。参道さんぽの半日",
+    "titleHTML": "鎌倉、小町通りから八幡宮へ歩く。<br>参道さんぽの半日",
+    "subtitle": "食べ歩きの湯気、石段の上の静けさ、若宮大路の長い参道",
+    "lede": "鎌倉駅の東口を出ると、人の流れがそのまま小町通りへ吸い込まれていく。揚げまんじゅうの油の匂い、抹茶ソフトの列、和雑貨の店先から漏れる声。たった360mの商店街なのに、ここを抜けるだけで二十分はかかる。歩く速度を落として、人形焼をひとつ買って、看板を眺めながら進む——それがこの通りの正しい歩き方だと思う。やがて喧騒が途切れ、鶴岡八幡宮の朱色が見えてくる。賑わいから静けさへ、味から祈りへ。鎌倉の半日は、この温度差を歩くことで成立している。私が好きな順で、駅から八幡宮、そして駅の裏手まで、足の向くままに辿ってみる。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "小町通り",
+        "cuisine": "食べ歩き・ショッピング街",
+        "area": "鎌倉駅東口",
+        "purpose": "鎌倉駅から鶴岡八幡宮まで続く食べ歩きストリート",
+        "desc": "鎌倉駅東口から鶴岡八幡宮まで続く360mの商店街。両側に約250店舗が並び、和雑貨・食べ歩きフード（人形焼・コロッケ・揚げまんじゅう・抹茶ソフトなど）・カフェが密集する。土日午後は歩行困難なほどの混雑、開門直後の9〜10時または16時以降が比較的スムーズ。1〜2時間の散歩で全店舗を眺められる距離感。鎌倉駅東口から徒歩30秒の駅近で、観光起点として優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅東口 徒歩1分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（飲食・購入別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 屋根あり店舗多数"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "鶴岡八幡宮",
+        "cuisine": "神社・歴史",
+        "area": "雪ノ下",
+        "purpose": "鎌倉の総鎮守。段葛・本殿・ぼたん園と見どころ多数",
+        "desc": "1063年創建、鎌倉幕府が公式の鶴岡八幡宮として整備した神社。鎌倉の中央に位置し、源頼朝が源氏の守り神として崇敬した。本宮までは約200段の階段を登る形になり、参拝後は本宮広場から鎌倉の街並みを見下ろせる。営業時間（参拝可能時間）は6〜21時、入場無料。おみくじは100円程度、本宮の参拝混雑は土日10〜15時がピーク。境内は四季の景観が美しく、桜（3月末〜4月）・牡丹（4月）・蓮（7〜8月）・紅葉（11月）が見頃。小町通り北端から徒歩1分の至近距離。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅東口 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "境内無料（ぼたん苑・宝物殿は別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 屋外メイン"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "鎌倉国宝館",
+        "cuisine": "博物館",
+        "area": "雪ノ下",
+        "purpose": "鶴岡八幡宮境内にある博物館。国宝・重文の仏像が充実",
+        "desc": "鎌倉の老舗和菓子店は鎌倉散歩のハイライト。「鎌倉まめや」（豆菓子）・「鳩サブレ豊島屋」（鳩の形のサブレ）・「鎌倉五郎本店」（半月の最中）・「不二家飯店」（鎌倉名物の中華まん）など、定番の手土産候補が小町通り沿いに並ぶ。1個300〜800円程度、箱詰めは1,500〜3,500円。土日午後はレジ待ちが10〜20分発生することがあり、早めに購入するのが現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅東口 徒歩12分（鶴岡八幡宮境内）"
+          },
+          {
+            "k": "入館料",
+            "v": "一般700円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "若宮大路",
+        "cuisine": "参道・散策路",
+        "area": "鎌倉駅周辺",
+        "purpose": "鎌倉駅から海へ続く参道。3段構造の「段葛」が映える",
+        "desc": "鎌倉駅東口から徒歩約10分、鎌倉駅周辺は近年カフェ文化が成熟している。鎌倉野菜を使う洋食店、地元のロースタリーが運営するスペシャルティコーヒー店、北欧家具を活かしたインテリアカフェなど業態が幅広い。1〜2時間の休憩スポットとして、小町通りの混雑を抜けて立ち寄りやすい。1人1,000〜2,500円程度。営業時間は店舗により異なる（おおむね10〜18時）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅 徒歩1分（起点）"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "鎌倉幕府跡（鎌倉歴史文化交流館）",
+        "cuisine": "歴史スポット",
+        "area": "御成町",
+        "purpose": "頼朝の幕府があった場所。発掘品と歴史を展示する施設",
+        "desc": "鎌倉駅近辺の若宮大路（鶴岡八幡宮の参道）の西側には、観光客が少ない静かな住宅街が広がる。個人経営のギャラリー・古書店・町中華・寿司屋などが点在し、小町通りの賑やかさを抜けてゆっくり過ごせる。若宮大路には桜並木があり、3月末〜4月初旬の花見シーズンには両側の桜が美しい。鎌倉文学館（旧前田家別邸）も近くにあり、文学好きには立ち寄る価値がある。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅 徒歩10分"
+          },
+          {
+            "k": "入館料",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "長谷・由比ヶ浜デート5選",
+        "h": "/feature/new-hase-yuigahama-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+      },
+      {
+        "t": "鎌倉雨の日5選",
+        "h": "/feature/new-kamakura-rainy",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+      }
+    ],
+    "quote": "食べ歩きの湯気を抜けて石段を登りきると、さっきまでの賑わいが嘘のように静かになる。鎌倉はその落差が面白い。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝のうちに駅に着けば、小町通りはまだ呼吸が浅く、湯気の立つ店先をゆっくり覗ける。食べ歩きで小腹を満たしたら、そのまま鶴岡八幡宮へ。二百段近い石段を登りきった本宮の前で、ようやく息を整える。下りてきたら若宮大路の長い参道を海の方へ少し歩き、老舗で遅めの昼を。午後は駅へ戻ってカフェに腰を落ち着け、最後にもう一度小町通りで土産を選ぶ——気がつけば夕方になっている。桜と紅葉の時季は土日の混みようが別格なので、朝の早い時間に着くのが結局いちばん気持ちいい。屋根の切れる区画も多いから、雨の日は早めに屋内のカフェへ逃げ込むのが正解。各店の値段や開店時間は移ろいやすいので、出かける前にそれぞれの公式で一度たしかめておくと安心して歩ける。"
   },
-
-  // NG-17 ─────────────────────────────────────────────────
   "new-hase-yuigahama-date": {
-    id: "new-hase-yuigahama-date",
-    no: "NG-17", articleType: "guide", kicker: "HASE YUIGAHAMA DATE",
-    title: "長谷・由比ヶ浜デート5選。大仏と海を一日で楽しむ鎌倉コース",
-    titleHTML: "長谷・由比ヶ浜<br>デート5選。",
-    subtitle: "高徳院（鎌倉大仏）、長谷寺、由比ヶ浜。江ノ電で巡る海と寺のデートルート",
-    lede: "鎌倉の長谷・由比ガ浜エリアは、江ノ電で鎌倉駅から1〜2駅の距離にあり、鎌倉大仏（高徳院）・長谷寺・由比ガ浜海岸が徒歩圏内に並ぶ。鎌倉駅周辺の小町通りとは違う、ローカルな散歩道とビーチが楽しめる動線が組める。海と寺院を組み合わせたデートとして、鎌倉の鉄板コースのひとつ。ここでは江ノ電長谷駅を起点に、5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.daibutsu,
-    ranking: [
-      s(1, "高徳院（鎌倉大仏）", "史跡・仏像", "長谷",
-        "高さ11.3mの国宝銅造阿弥陀如来坐像。胎内拝観も可",
-        "1252年頃に建立されたとされる高徳院の大仏（阿弥陀如来坐像）。高さ約11.3m、国宝指定の銅造大仏。鎌倉観光のハイライトのひとつで、大仏の胎内拝観（20円程度）もできる。営業時間8〜17:30（季節により変動）、拝観料は変動（公式サイトで確認）。土日11〜14時はピーク混雑、平日午前または15時以降が落ち着いている。江ノ電「長谷駅」から徒歩7分。",
-        [I.daibutsu],
-        [
-          { k: "最寄り駅", v: "江ノ電 長谷駅 徒歩10分" },
-          { k: "拝観料", v: "300円（胎内拝観+50円）" },
-          { k: "雨の日", v: "△ 屋外メインだが大仏自体は見られる" }]),
-      s(2, "長谷寺", "寺院・庭園", "長谷",
-        "見晴台からの海の眺め。アジサイの季節は特に美しい",
-        "8世紀創建、十一面観音菩薩立像を本尊とする寺院。山腹に位置し、本堂の前から由比ガ浜と海の景色が見下ろせる「眺望散策路」が美しい。境内には「四季の景観」が計算された植栽があり、紫陽花（6月）・紅葉（11月）が特に有名。営業時間8〜17時、拝観料は変動（公式サイトで確認）。弁天窟（弁財天を祀る洞窟）も見どころ。長谷駅から徒歩5分。",
-        [I.hasedera],
-        [
-          { k: "最寄り駅", v: "江ノ電 長谷駅 徒歩5分" },
-          { k: "拝観料", v: "400円" },
-          { k: "雨の日", v: "△ 堂内は可、庭は雨天も美しい" }]),
-      s(3, "由比ヶ浜海岸", "海水浴場・散策", "由比ヶ浜",
-        "夏は海水浴、オフシーズンは散歩。鎌倉市民の海",
-        "鎌倉の南端に広がる由比ガ浜は約900mの白い砂浜。材木座海岸と並ぶ鎌倉の代表的なビーチで、夏は海水浴客で賑わうが、それ以外の季節は静かな散歩道。夕日が美しく、富士山が見える日もある。サーファーが朝・夕に集まる場所でもある。長谷駅から徒歩5分、鎌倉駅から徒歩約15分。",
-        [I.yuigahama],
-        [
-          { k: "最寄り駅", v: "江ノ電 由比ヶ浜駅 徒歩3分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(4, "鎌倉文学館", "文学館・庭園", "長谷",
-        "旧前田侯爵別邸を活用した文学館。バラ庭園が有名",
-        "長谷駅周辺は鎌倉の隠れた飲食・カフェの集積地。鎌倉野菜を使う洋食店、海を見ながら食事できるカフェ、創作和菓子の店、自家焙煎コーヒー専門店などが点在する。1人1,500〜3,500円程度、ランチ＋カフェで2時間滞在しやすい。土日午後は混雑、平日午後または朝が落ち着く。長谷駅から徒歩3〜10分の範囲。",
-        [I.yuigahama],
-        [
-          { k: "最寄り駅", v: "江ノ電 由比ヶ浜駅 徒歩10分" },
-          { k: "入館料", v: "500円" },
-          { k: "雨の日", v: "◎ 屋内展示あり" }]),
-      s(5, "江ノ電 長谷駅周辺カフェ", "カフェ", "長谷",
-        "長谷駅周辺には隠れ家系カフェが点在。散策の休憩に",
-        "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。鎌倉ゆかりの作家（夏目漱石、川端康成、芥川龍之介、芹沢光治良、安部公房など）の原稿・初版本を展示。建物自体が大正期の洋館で、建築見学としても価値がある。営業時間9〜17時、月曜休館（公式サイトで確認）、入館料は変動。由比ガ浜駅から徒歩7分、長谷駅から徒歩10分。",
-        [I.hasedera],
-        [
-          { k: "最寄り駅", v: "江ノ電 長谷駅 周辺" },
-          { k: "料金", v: "700〜1,500円程度" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("鎌倉小町通り・八幡宮5選", "new-kamakura-komachi", I.hachimangu),
-      side("江ノ島夕暮れデート5選", "new-enoshima-evening-date", I.enoshima)],
-    quote: "大仏→長谷寺→由比ヶ浜という長谷エリアの定番コースは、半日でテンポよく回れる鎌倉デートの王道。",
-    quoteCite: author,
-    closing: "標準動線は、江ノ電長谷駅→高徳院（鎌倉大仏）参拝（11:00〜12:30）→長谷寺で眺望＋紫陽花/紅葉（12:30〜14:00）→長谷の路地カフェでランチ（14:00〜15:30）→鎌倉文学館（15:30〜16:30）→由比ガ浜で夕景（17:00〜18:00）→鎌倉駅へ。所要6〜7時間、予算は拝観料＋食事込みで1人5,000〜8,000円が目安。「鎌倉の海と寺院を1日で組み合わせたい人」「鎌倉駅前の混雑を抜けて静かな散策をしたい人」「夕日と富士山のロケーションが好きな2人」に向く。梅雨時期の長谷寺は紫陽花のピーク（6月中旬〜下旬）で大混雑、開門直後の8時または閉門前16時が現実的。雨の日は長谷寺・大仏・鎌倉文学館の屋内中心ルートに切り替える。時間がない場合は、長谷寺＋大仏＋由比ガ浜の3点で2時間半に圧縮できる。迷ったら、11時の長谷駅着で大仏→長谷寺→由比ガ浜の徒歩動線が王道。鎌倉観光は鎌倉駅周辺の小町通りに集中しがちだが、長谷駅・由比ガ浜駅周辺は混雑が比較的緩和されており、ローカルな鎌倉の魅力を体験するのに向いている。江ノ電1日乗車券（800円程度）を使うと、長谷・極楽寺・稲村ヶ崎・江ノ島まで自由に乗り降りできるので、半日コース・1日コースのどちらにも柔軟に対応できる。",
+    "id": "new-hase-yuigahama-date",
+    "no": "NG-17",
+    "articleType": "course",
+    "kicker": "HASE YUIGAHAMA DATE",
+    "title": "長谷・由比ヶ浜デート半日コース。大仏から海へ、江ノ電で下る一日",
+    "titleHTML": "長谷・由比ヶ浜デート半日コース。<br>大仏から海へ、江ノ電で下る一日",
+    "subtitle": "高徳院から長谷寺、由比ヶ浜へ。山の寺を下って海に出る、鎌倉・長谷の王道どり",
+    "lede": "鎌倉駅で電車を降りると、まず小町通りの人波に呑まれる。けれど江ノ電に乗り換えて一駅、二駅と西へ進むだけで、空気がふっとほどけて潮の匂いに変わる。長谷という街は、山の中腹に大仏と古刹を抱え、坂を下りきった先に砂浜が広がる、高いところから低いところへ自然に流れていく地形をしている。このコースは、その地形に逆らわず素直に下っていくように組んだ。まず標高の高い高徳院と長谷寺で寺と眺望を味わい、路地でひと息入れて、最後は海へ。歩く方向が下り基調なので二人とも疲れにくく、午後の光がだんだん柔らかくなっていくのを、上から海へと追いかけるような半日になる。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "高徳院（鎌倉大仏）",
+        "cuisine": "史跡・仏像",
+        "area": "長谷",
+        "purpose": "高さ11.3mの国宝銅造阿弥陀如来坐像。胎内拝観も可",
+        "desc": "1252年頃に建立されたとされる高徳院の大仏（阿弥陀如来坐像）。高さ約11.3m、国宝指定の銅造大仏。鎌倉観光のハイライトのひとつで、大仏の胎内拝観（20円程度）もできる。営業時間8〜17:30（季節により変動）、拝観料は変動（公式サイトで確認）。土日11〜14時はピーク混雑、平日午前または15時以降が落ち着いている。江ノ電「長谷駅」から徒歩7分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 長谷駅 徒歩10分"
+          },
+          {
+            "k": "拝観料",
+            "v": "300円（胎内拝観+50円）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 屋外メインだが大仏自体は見られる"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "長谷寺",
+        "cuisine": "寺院・庭園",
+        "area": "長谷",
+        "purpose": "見晴台からの海の眺め。アジサイの季節は特に美しい",
+        "desc": "8世紀創建、十一面観音菩薩立像を本尊とする寺院。山腹に位置し、本堂の前から由比ガ浜と海の景色が見下ろせる「眺望散策路」が美しい。境内には「四季の景観」が計算された植栽があり、紫陽花（6月）・紅葉（11月）が特に有名。営業時間8〜17時、拝観料は変動（公式サイトで確認）。弁天窟（弁財天を祀る洞窟）も見どころ。長谷駅から徒歩5分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 長谷駅 徒歩5分"
+          },
+          {
+            "k": "拝観料",
+            "v": "400円"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 堂内は可、庭は雨天も美しい"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "由比ヶ浜海岸",
+        "cuisine": "海水浴場・散策",
+        "area": "由比ヶ浜",
+        "purpose": "夏は海水浴、オフシーズンは散歩。鎌倉市民の海",
+        "desc": "鎌倉の南端に広がる由比ガ浜は約900mの白い砂浜。材木座海岸と並ぶ鎌倉の代表的なビーチで、夏は海水浴客で賑わうが、それ以外の季節は静かな散歩道。夕日が美しく、富士山が見える日もある。サーファーが朝・夕に集まる場所でもある。長谷駅から徒歩5分、鎌倉駅から徒歩約15分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 由比ヶ浜駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "鎌倉文学館",
+        "cuisine": "文学館・庭園",
+        "area": "長谷",
+        "purpose": "旧前田侯爵別邸を活用した文学館。バラ庭園が有名",
+        "desc": "長谷駅周辺は鎌倉の隠れた飲食・カフェの集積地。鎌倉野菜を使う洋食店、海を見ながら食事できるカフェ、創作和菓子の店、自家焙煎コーヒー専門店などが点在する。1人1,500〜3,500円程度、ランチ＋カフェで2時間滞在しやすい。土日午後は混雑、平日午後または朝が落ち着く。長谷駅から徒歩3〜10分の範囲。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 由比ヶ浜駅 徒歩10分"
+          },
+          {
+            "k": "入館料",
+            "v": "500円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内展示あり"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "江ノ電 長谷駅周辺カフェ",
+        "cuisine": "カフェ",
+        "area": "長谷",
+        "purpose": "長谷駅周辺には隠れ家系カフェが点在。散策の休憩に",
+        "desc": "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。鎌倉ゆかりの作家（夏目漱石、川端康成、芥川龍之介、芹沢光治良、安部公房など）の原稿・初版本を展示。建物自体が大正期の洋館で、建築見学としても価値がある。営業時間9〜17時、月曜休館（公式サイトで確認）、入館料は変動。由比ガ浜駅から徒歩7分、長谷駅から徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 長谷駅 周辺"
+          },
+          {
+            "k": "料金",
+            "v": "700〜1,500円程度"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "鎌倉小町通り・八幡宮5選",
+        "h": "/feature/new-kamakura-komachi",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+      },
+      {
+        "t": "江ノ島夕暮れデート5選",
+        "h": "/feature/new-enoshima-evening-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+      }
+    ],
+    "quote": "山の寺から海へ。標高を下げながら歩くから足どりは軽く、光は時間とともに海側へ傾いていく。長谷は地形がそのまま順路になっている街だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "江ノ電長谷駅に11時ごろ着くのが、このコースの心地よい起点になる。まず高徳院へ歩き、露坐の大仏と向き合って12時半ごろまで。続いて長谷寺へ移り、眺望散策路から由比ヶ浜の海を見下ろしつつ14時前後まで境内を巡る。ここで一度坂を下り、長谷の路地に点在するカフェや洋食店で遅めのランチを15時過ぎまで。腹ごしらえができたら鎌倉文学館で建物と展示をゆっくり眺め、16時半ごろに外へ。そのまま由比ヶ浜まで下りれば、ちょうど西陽が海を染める時間に間に合う。砂浜で日が落ちるのを見届けて、由比ヶ浜駅か鎌倉駅へ戻れば一日が静かに閉じる。長谷寺の紫陽花を狙うなら6月中旬から下旬がピークで、この時期は開門直後か夕方でないと境内がかなり混む。雨なら大仏・長谷寺・文学館の屋内を厚めに、海は短く切り上げると無理がない。江ノ電は乗り降りが多くなるので一日乗車券を一枚持っておくと身軽だが、券種や運賃は変わることがあるので出かける前に公式で見ておくと安心だ。"
   },
-
-  // NG-18 ─────────────────────────────────────────────────
   "new-enoshima-evening-date": {
-    id: "new-enoshima-evening-date",
-    no: "NG-18", articleType: "guide", kicker: "ENOSHIMA EVENING DATE",
-    title: "江ノ島夕暮れデート5選。サンセットと夜景が見えるスポット",
-    titleHTML: "江ノ島<br>夕暮れデート5選。",
-    subtitle: "シーキャンドル、稚児ヶ淵、岩屋洞窟。湘南の島で迎える夕暮れ",
-    lede: "江の島は神奈川県藤沢市の湘南海岸に浮かぶ小島で、徒歩で渡れる橋（弁天橋）で本土と繋がる。弁財天を祀る江島神社・展望灯台「シーキャンドル」・洞窟「岩屋」が島内に並び、半日かけて回れる規模。夕陽の時間帯（16〜18時）が最も美しく、デートとして組み立てやすい。ここでは江の島の夕景〜夜景を楽しむ5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.enoshima,
-    ranking: [
-      s(1, "江ノ島シーキャンドル（江の島展望灯台）", "展望台", "江ノ島",
-        "高さ59.8mの展望灯台。湘南の海と夕焼けを360度見渡せる",
-        "江の島の主な神社は辺津宮・中津宮・奥津宮の三宮からなる江島神社。島の参道を歩きながら三社を巡るのが江の島観光の基本。参道は石段の連続でやや体力を要する（エスカーで楽もできる）。参道沿いには食べ歩き店も多く、しらす丼・たこせんべい・タピオカドリンクなどが並ぶ。境内無料、エスカー利用は別途料金。江ノ電「江ノ島駅」から徒歩10分。",
-        [I.enoshima],
-        [
-          { k: "最寄り駅", v: "小田急 片瀬江ノ島駅 徒歩20分（島内）" },
-          { k: "料金", v: "展望料金500円（別途入園料）" },
-          { k: "おすすめ時間", v: "日没1時間前〜日没後" }]),
-      s(2, "稚児ヶ淵", "岩場・展望", "江ノ島 岩屋",
-        "江ノ島西側の岩場。夕日が海に沈む瞬間が見られる",
-        "江の島中央部にある展望灯台「江の島シーキャンドル」。60mの高さから富士山・相模湾・伊豆半島が見渡せる。夕暮れ時の眺望が特に美しく、晴れた日の日没30分前後に登るのが最も得な使い方。営業時間9〜20時（季節により変動）、料金は公式サイトで確認。エスカーを使うと展望灯台の入り口まで楽に到達できる。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "片瀬江ノ島駅 徒歩30分（島内）" },
-          { k: "料金", v: "無料" },
-          { k: "おすすめ時間", v: "夕方（日没時間に合わせて）" }]),
-      s(3, "江ノ島岩屋洞窟", "洞窟・観光", "江ノ島 岩屋",
-        "波食洞窟を歩いて探検。全長152mの自然洞窟",
-        "江の島の最奥部にある洞窟「岩屋」は海水が浸食した天然の洞穴。複数の洞窟が連なり、ロウソクの灯りで照らされた幻想的な空間が体験できる。営業時間9〜18時（夏季は20時まで延長期間あり）、料金は公式サイトで確認。江ノ島駅から徒歩30分（島内奥地）と最も遠いスポットだが、ここまで行かないと江の島を半分しか体験していない。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "片瀬江ノ島駅 徒歩35分（島内）" },
-          { k: "料金", v: "500円" },
-          { k: "雨の日", v: "◎（屋内洞窟）" }]),
-      s(4, "江ノ島弁天仲見世通り", "参道・食べ歩き", "江ノ島",
-        "島の入口から続く参道。たこせん・しらす丼の食べ歩き",
-        "片瀬海岸（江の島本土側の海岸）から見る夕暮れの富士山のシルエットは湘南を代表する絶景。夕方の時間帯（16〜18時頃）に江の島で過ごすように時間を調整するのが賢い計画。片瀬海岸西浜・東浜の両側に分かれ、両側から江の島を眺める構図が違う。片瀬江ノ島駅から徒歩すぐ、江ノ島駅からも徒歩10分。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "片瀬江ノ島駅 徒歩5分（入口）" },
-          { k: "料金", v: "食べ歩き300〜1,000円程度" }]),
-      s(5, "湘南港（ヨットハーバー）", "港・散策", "江ノ島",
-        "江ノ島西側の港。ヨットが並ぶ夕景がおしゃれ",
-        "江の島には「しらす丼」「生しらす丼」「たこせんべい」「江の島まんじゅう」などの名物がある。生しらすは水揚げがある日のみ提供（悪天候や休漁期は釜揚げのみ）。1杯1,200〜2,000円程度。江の島の参道沿いには30軒以上の食事処があり、テラス席から海を見ながら食べられる店も多い。夕食候補としても優秀、夕日を見ながらの食事は記憶に残る。土日午後はピーク混雑、開店直後または夕方17時以降がスムーズ。",
-        [I.enoshima],
-        [
-          { k: "最寄り駅", v: "片瀬江ノ島駅 徒歩20分" },
-          { k: "料金", v: "無料（周辺カフェ利用は別途）" },
-          { k: "おすすめ時間", v: "夕方" }])],
-    sideArticles: [
-      side("長谷・由比ヶ浜デート5選", "new-hase-yuigahama-date", I.hasedera),
-      side("茅ヶ崎ビーチ5選", "new-chigasaki-beach", I.chigasaki)],
-    quote: "江ノ島のシーキャンドルから見る夕日は、湘南で迎える夕暮れの中でも特別な景色。",
-    quoteCite: author,
-    closing: "標準動線は、江ノ電江ノ島駅→江島神社参道→辺津宮（15:00〜15:30）→シーキャンドル展望（16:00〜17:00）→岩屋洞窟（17:00〜18:00）→片瀬海岸で夕景（18:00〜19:00）→江の島の食事処でしらす丼ディナー（19:00〜20:30）→江ノ電で藤沢経由帰京。所要約5時間、予算はシーキャンドル＋岩屋＋食事込みで1人5,000〜9,000円が目安。「夕日と富士山のロケーションが好きな2人」「徒歩で島内を一周したいアクティブな2人」「湘南のしらす丼を食べたい人」に向く。週末は岩屋洞窟が16〜17時にピーク混雑、土日は早めの動き出しが現実的。雨の日は岩屋洞窟・シーキャンドル屋内空間で完結できるが、参道の坂と階段は滑りやすいので注意。時間がない場合は、江島神社＋シーキャンドルの2点で2時間半に圧縮できる。迷ったら、夕日のピーク（16〜18時）に江の島にいるよう逆算してスケジュールを組むのが正解。江の島は半島型の小島で、本土側からの徒歩アクセスがちょうど良い距離感（弁天橋を渡って約10分）。電車（小田急片瀬江ノ島駅・江ノ電江ノ島駅）でのアクセスが便利で、自家用車での訪問は駐車場が限られるので電車推奨。夕日の時間帯（16〜18時）に合わせて到着するスケジュールが、江の島観光の質を最大化する鍵。",
+    "id": "new-enoshima-evening-date",
+    "no": "NG-18",
+    "articleType": "guide",
+    "kicker": "ENOSHIMA EVENING DATE",
+    "title": "江ノ島、夕陽を追いかけるデート。サンセットから夜景まで",
+    "titleHTML": "江ノ島、夕陽を追いかけるデート。<br>サンセットから夜景まで",
+    "subtitle": "シーキャンドルが灯り、相模湾が金色から藍色へ変わる時間を二人で",
+    "lede": "江の島でデートをするなら、狙うべき時間帯ははっきりしている。日が西へ傾きはじめる夕方だ。神奈川県藤沢市の湘南海岸に浮かぶこの小島は、弁天橋を渡ってすぐ、本土と地続きのような距離感で歩いて入れる。昼の参道は活気のある観光地の顔をしているが、太陽が相模湾の水面に近づくにつれて、島全体の色が変わっていく。海が金色に染まり、富士山のシルエットが浮かび上がり、やがてシーキャンドルに明かりが灯る——この一連の移ろいを、肩を並べて眺める。それがこの記事で提案したい江の島の楽しみ方だ。だから順路よりも、まず「どの瞬間にどこにいたいか」から逆算して読んでほしい。施設の点灯時刻や料金は季節で動くので、出かける前に各公式サイトで最新の情報を一度のぞいておくと安心できる。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "江ノ島シーキャンドル（江の島展望灯台）",
+        "cuisine": "展望台",
+        "area": "江ノ島",
+        "purpose": "高さ59.8mの展望灯台。湘南の海と夕焼けを360度見渡せる",
+        "desc": "江の島の主な神社は辺津宮・中津宮・奥津宮の三宮からなる江島神社。島の参道を歩きながら三社を巡るのが江の島観光の基本。参道は石段の連続でやや体力を要する（エスカーで楽もできる）。参道沿いには食べ歩き店も多く、しらす丼・たこせんべい・タピオカドリンクなどが並ぶ。境内無料、エスカー利用は別途料金。江ノ電「江ノ島駅」から徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "小田急 片瀬江ノ島駅 徒歩20分（島内）"
+          },
+          {
+            "k": "料金",
+            "v": "展望料金500円（別途入園料）"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "日没1時間前〜日没後"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "稚児ヶ淵",
+        "cuisine": "岩場・展望",
+        "area": "江ノ島 岩屋",
+        "purpose": "江ノ島西側の岩場。夕日が海に沈む瞬間が見られる",
+        "desc": "江の島中央部にある展望灯台「江の島シーキャンドル」。60mの高さから富士山・相模湾・伊豆半島が見渡せる。夕暮れ時の眺望が特に美しく、晴れた日の日没30分前後に登るのが最も得な使い方。営業時間9〜20時（季節により変動）、料金は公式サイトで確認。エスカーを使うと展望灯台の入り口まで楽に到達できる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "片瀬江ノ島駅 徒歩30分（島内）"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方（日没時間に合わせて）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "江ノ島岩屋洞窟",
+        "cuisine": "洞窟・観光",
+        "area": "江ノ島 岩屋",
+        "purpose": "波食洞窟を歩いて探検。全長152mの自然洞窟",
+        "desc": "江の島の最奥部にある洞窟「岩屋」は海水が浸食した天然の洞穴。複数の洞窟が連なり、ロウソクの灯りで照らされた幻想的な空間が体験できる。営業時間9〜18時（夏季は20時まで延長期間あり）、料金は公式サイトで確認。江ノ島駅から徒歩30分（島内奥地）と最も遠いスポットだが、ここまで行かないと江の島を半分しか体験していない。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "片瀬江ノ島駅 徒歩35分（島内）"
+          },
+          {
+            "k": "料金",
+            "v": "500円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎（屋内洞窟）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "江ノ島弁天仲見世通り",
+        "cuisine": "参道・食べ歩き",
+        "area": "江ノ島",
+        "purpose": "島の入口から続く参道。たこせん・しらす丼の食べ歩き",
+        "desc": "片瀬海岸（江の島本土側の海岸）から見る夕暮れの富士山のシルエットは湘南を代表する絶景。夕方の時間帯（16〜18時頃）に江の島で過ごすように時間を調整するのが賢い計画。片瀬海岸西浜・東浜の両側に分かれ、両側から江の島を眺める構図が違う。片瀬江ノ島駅から徒歩すぐ、江ノ島駅からも徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "片瀬江ノ島駅 徒歩5分（入口）"
+          },
+          {
+            "k": "料金",
+            "v": "食べ歩き300〜1,000円程度"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "湘南港（ヨットハーバー）",
+        "cuisine": "港・散策",
+        "area": "江ノ島",
+        "purpose": "江ノ島西側の港。ヨットが並ぶ夕景がおしゃれ",
+        "desc": "江の島には「しらす丼」「生しらす丼」「たこせんべい」「江の島まんじゅう」などの名物がある。生しらすは水揚げがある日のみ提供（悪天候や休漁期は釜揚げのみ）。1杯1,200〜2,000円程度。江の島の参道沿いには30軒以上の食事処があり、テラス席から海を見ながら食べられる店も多い。夕食候補としても優秀、夕日を見ながらの食事は記憶に残る。土日午後はピーク混雑、開店直後または夕方17時以降がスムーズ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "片瀬江ノ島駅 徒歩20分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（周辺カフェ利用は別途）"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "長谷・由比ヶ浜デート5選",
+        "h": "/feature/new-hase-yuigahama-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+      },
+      {
+        "t": "茅ヶ崎ビーチ5選",
+        "h": "/feature/new-chigasaki-beach",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+      }
+    ],
+    "quote": "海が金色から藍色へ変わっていく数十分は、江の島でしか味わえない二人だけの時間になる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "夕陽デートの軸になるのは、日没の前後一時間だ。まずは明るいうちに江島神社の参道を上り、三宮を巡って体を慣らしておく。陽が傾きはじめたらシーキャンドルへ。展望台は日没の三十分ほど前に上がると、海が金色に輝く瞬間から空が藍に沈むまでをひと続きで見届けられる。塔を降りたら島の最奥、稚児ヶ淵まで足を伸ばすと、岩場の向こうに沈む残照と、灯りはじめた洞窟の幻想的な対比が待っている。岩屋を抜けて引き返す頃には島はすっかり夜の顔。帰りは弁天仲見世通りの灯りの下を歩き、湘南港のヨットハーバーに浮かぶ船影を眺めて締めくくる。海沿いの石段や濡れた岩場は暗くなると足元が見えにくいので、歩きやすい靴で、二人とも少し早めに動き出すくらいがちょうどいい。陽が沈む瞬間に島にいられるよう逆算する——それだけ押さえておけば、江の島の夕暮れはきっと忘れられない景色になる。"
   },
-
-  // NG-19 ─────────────────────────────────────────────────
   "new-kamakura-rainy": {
-    id: "new-kamakura-rainy",
-    no: "NG-19", articleType: "guide", kicker: "KAMAKURA RAINY DAY",
-    title: "鎌倉雨の日5選。雨でも楽しめる屋内スポットと濡れても美しい庭",
-    titleHTML: "鎌倉<br>雨の日5選。",
-    subtitle: "鎌倉国宝館、建長寺方丈、円覚寺。雨がむしろ似合う鎌倉の寺社と博物館",
-    lede: "鎌倉は雨の日にも楽しみ方が変わる珍しい観光地。寺院の境内が雨で深まり、苔と木々の緑が一段と美しくなる「雨の日にこそ見られる景観」がある。対象は「雨予報で鎌倉観光を諦めるか迷っている人」「混雑を避けて鎌倉を歩きたい人」「写真撮影や読書を雨の風情で楽しみたい大人」。標準は11:00集合・17:30解散の6時間30分コース、予算は拝観料＋食事込みで1人4,500〜7,500円。ここでは雨の日に強い鎌倉5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.kenchoji,
-    ranking: [
-      s(1, "鎌倉国宝館", "博物館", "雪ノ下",
-        "鶴岡八幡宮境内の屋内博物館。国宝・重文の仏像が充実",
-        "1283年創建、北鎌倉の禅宗寺院。鎌倉五山第二位の格式を持つ。雨の日は境内の苔が一段と緑が深まり、本堂の屋根から雨が落ちる景観が美しい。「雨の日に寺院の静謐な空気を体感したい」「禅の世界に触れたい」人に向く。国宝の梵鐘・宝冠釈迦如来像が見どころで、参拝拝観料は変動（公式サイトで確認）。日曜朝の「暁天坐禅会」は一般参加可（事前確認推奨）。雨の日は観光客が大幅に減り、平日並みの落ち着きで歩ける。北鎌倉駅から徒歩すぐ、次は徒歩3分の東慶寺方向へ。",
-        [I.kenchoji],
-        [
-          { k: "最寄り駅", v: "鎌倉駅 徒歩12分" },
-          { k: "入館料", v: "700円" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(2, "長谷寺（雨天）", "寺院", "長谷",
-        "雨の日の長谷寺は濡れた石段と緑が美しい。混雑も少ない",
-        "1281年創建、鎌倉時代の女性の「駆け込み寺」として歴史的に有名な尼寺。梅・桜・水仙・あじさい・雪ノ下と四季の花が境内に咲き、雨に濡れた花が一段と美しい。「雨と花の組み合わせを写真に撮りたい」「歴史的な尼寺の静けさを体感したい」人に向く。「花の寺」として知られ、特に6月のあじさい時期は雨景観と花が組み合わさり、雨の日ならではの絶景になる。拝観料は変動（公式サイトで確認）。北鎌倉駅から徒歩3分、円覚寺と組み合わせて1時間半で2寺を回れる。",
-        [I.hasedera],
-        [
-          { k: "最寄り駅", v: "江ノ電 長谷駅 徒歩5分" },
-          { k: "拝観料", v: "400円" },
-          { k: "雨の日", v: "○ 雨天の庭も見どころ" }]),
-      s(3, "円覚寺", "禅寺", "北鎌倉",
-        "北鎌倉の名刹。雨に濡れた山門と境内の雰囲気が格別",
-        "鎌倉の小町通りは一部アーケード区画があり、雨でも傘を畳めるエリアがある。食べ歩きを楽しめる場所も多く、雨を避けながら店から店へ短距離で移動できる。「雨を避けながら食べ歩きと買い物を楽しみたい」2人に最適。店内にイートインスペースがある店も多いため、屋内で休憩しながら食べられる。観光客の少ない雨の日は、店主とゆっくり話せる落ち着いた時間が持てる。土日午後でも雨の日は晴天時の半分程度の人出で、写真と買い物が両立しやすい。",
-        [I.kenchoji],
-        [
-          { k: "最寄り駅", v: "JR北鎌倉駅 徒歩1分" },
-          { k: "拝観料", v: "500円" },
-          { k: "雨の日", v: "○ 濡れた境内が趣深い" }]),
-      s(4, "建長寺（方丈・庭園）", "禅寺", "山ノ内",
-        "鎌倉五山第一位。方丈庭園は雨の日こそ見ごたえあり",
-        "鎌倉の街には雨の日に楽しめるカフェが点在する。鎌倉文学館の隣の「ハウス・オブ・ラブズ」・小町通り奥の「カフェ・ヴィヴモン・ディモンシュ」など、雨の日のおもむきを楽しめるカフェが多い。「雨の日に長居できる場所が欲しい」「読書とコーヒーで2時間粘りたい」人に向く。コーヒー＋スイーツで1〜2時間休憩しながら、雨の鎌倉を窓越しに眺める贅沢な時間。1人1,500〜3,000円程度、営業時間は店舗による。鎌倉駅から徒歩5〜15分の範囲に良質なカフェが点在。",
-        [I.kenchoji],
-        [
-          { k: "最寄り駅", v: "JR北鎌倉駅 徒歩15分 / 鎌倉駅 徒歩20分" },
-          { k: "拝観料", v: "500円" },
-          { k: "雨の日", v: "○" }]),
-      s(5, "鎌倉歴史文化交流館", "博物館", "御成町",
-        "旧川喜多邸の建物を活用。鎌倉の発掘品と文化財を展示",
-        "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。雨の日に訪れると、大正期の洋館の屋根に雨が落ちる音と、館内の静謐な空気の組み合わせが文学的な雰囲気を作る。「文学好きの2人」「大正期の洋館建築が好きな人」に最も向く。鎌倉ゆかりの作家（夏目漱石・川端康成・芥川龍之介など）の原稿・初版本を展示。営業時間9〜17時、月曜休館（公式サイトで確認）、入館料は変動。由比ガ浜駅から徒歩7分、長谷駅から徒歩10分。",
-        [I.kenchoji],
-        [
-          { k: "最寄り駅", v: "鎌倉駅 徒歩10分" },
-          { k: "入館料", v: "無料" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("鎌倉小町通り・八幡宮5選", "new-kamakura-komachi", I.hachimangu),
-      side("長谷・由比ヶ浜デート5選", "new-hase-yuigahama-date", I.daibutsu)],
-    quote: "雨の鎌倉は、観光客が減り、濡れた苔と石畳が静かな禅の空気感を際立てる。",
-    quoteCite: author,
-    closing: "標準動線: 北鎌倉駅11:00→円覚寺で雨の境内（11:00〜12:30）→東慶寺で花と苔（12:30〜13:30）→鎌倉駅へ移動→小町通りで屋内中心の食べ歩き＋カフェ休憩（14:00〜16:00）→鎌倉文学館（16:00〜17:30）。所要6時間30分、予算は拝観料＋食事込みで1人4,500〜7,500円。雨の日は観光客が大幅に減り、平日並みの落ち着きで歩ける逆メリットがある。傘・レインコート・防水ブーツ・タオルを持参すると快適。鎌倉の寺院は石段が滑りやすいので、歩きやすい滑り止め付きの靴が安全。失敗しやすいのは「滑り止めのない靴で石段で滑る」「タオル不足で観賞中の冷え」「文学館の休館日見落とし」。事前に天気と防水装備、各館の開館日を必ず確認。この記事は雨予報で鎌倉観光を迷っている人、混雑を避けたい大人、写真撮影と読書好きの2人に最適。",
+    "id": "new-kamakura-rainy",
+    "no": "NG-19",
+    "articleType": "guide",
+    "kicker": "KAMAKURA RAINY DAY",
+    "title": "鎌倉、雨の日を歩く。濡れた苔と屋根を打つ音をめぐる半日",
+    "titleHTML": "鎌倉、雨の日を歩く。<br>濡れた苔と屋根を打つ音をめぐる半日",
+    "subtitle": "鎌倉国宝館から長谷寺、円覚寺、建長寺、歴史文化交流館へ。傘の下でしか出会えない鎌倉がある",
+    "lede": "傘を差して北鎌倉の改札を出ると、空気がいつもより重く、静かだった。観光客の声がまばらになり、代わりに雨が木々を打つ音が境内のすみずみまで届く。鎌倉という街は、晴れた日の写真ばかりが出回るけれど、ほんとうは雨に強い。寺の苔は水を含んで緑を深め、石畳は黒く濡れて光り、洋館の屋根は雨だれの音で満たされる。要するに、晴れの鎌倉が「見る」街だとすれば、雨の鎌倉は「聞く」「感じる」街なのだ。この日歩いたのは、傘を畳んでも畳まなくても風情が損なわれない場所ばかり。濡れることを厭わず、むしろ雨を連れて歩くつもりで、博物館と寺と洋館をつないでみた。拝観料や開館日は季節で動くので、出かける前に各館の公式ページを一度のぞいておくと、雨の日の予定が崩れにくい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "鎌倉国宝館",
+        "cuisine": "博物館",
+        "area": "雪ノ下",
+        "purpose": "鶴岡八幡宮境内の屋内博物館。国宝・重文の仏像が充実",
+        "desc": "1283年創建、北鎌倉の禅宗寺院。鎌倉五山第二位の格式を持つ。雨の日は境内の苔が一段と緑が深まり、本堂の屋根から雨が落ちる景観が美しい。「雨の日に寺院の静謐な空気を体感したい」「禅の世界に触れたい」人に向く。国宝の梵鐘・宝冠釈迦如来像が見どころで、参拝拝観料は変動（公式サイトで確認）。日曜朝の「暁天坐禅会」は一般参加可（事前確認推奨）。雨の日は観光客が大幅に減り、平日並みの落ち着きで歩ける。北鎌倉駅から徒歩すぐ、次は徒歩3分の東慶寺方向へ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅 徒歩12分"
+          },
+          {
+            "k": "入館料",
+            "v": "700円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "長谷寺（雨天）",
+        "cuisine": "寺院",
+        "area": "長谷",
+        "purpose": "雨の日の長谷寺は濡れた石段と緑が美しい。混雑も少ない",
+        "desc": "1281年創建、鎌倉時代の女性の「駆け込み寺」として歴史的に有名な尼寺。梅・桜・水仙・あじさい・雪ノ下と四季の花が境内に咲き、雨に濡れた花が一段と美しい。「雨と花の組み合わせを写真に撮りたい」「歴史的な尼寺の静けさを体感したい」人に向く。「花の寺」として知られ、特に6月のあじさい時期は雨景観と花が組み合わさり、雨の日ならではの絶景になる。拝観料は変動（公式サイトで確認）。北鎌倉駅から徒歩3分、円覚寺と組み合わせて1時間半で2寺を回れる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 長谷駅 徒歩5分"
+          },
+          {
+            "k": "拝観料",
+            "v": "400円"
+          },
+          {
+            "k": "雨の日",
+            "v": "○ 雨天の庭も見どころ"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "円覚寺",
+        "cuisine": "禅寺",
+        "area": "北鎌倉",
+        "purpose": "北鎌倉の名刹。雨に濡れた山門と境内の雰囲気が格別",
+        "desc": "鎌倉の小町通りは一部アーケード区画があり、雨でも傘を畳めるエリアがある。食べ歩きを楽しめる場所も多く、雨を避けながら店から店へ短距離で移動できる。「雨を避けながら食べ歩きと買い物を楽しみたい」2人に最適。店内にイートインスペースがある店も多いため、屋内で休憩しながら食べられる。観光客の少ない雨の日は、店主とゆっくり話せる落ち着いた時間が持てる。土日午後でも雨の日は晴天時の半分程度の人出で、写真と買い物が両立しやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR北鎌倉駅 徒歩1分"
+          },
+          {
+            "k": "拝観料",
+            "v": "500円"
+          },
+          {
+            "k": "雨の日",
+            "v": "○ 濡れた境内が趣深い"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "建長寺（方丈・庭園）",
+        "cuisine": "禅寺",
+        "area": "山ノ内",
+        "purpose": "鎌倉五山第一位。方丈庭園は雨の日こそ見ごたえあり",
+        "desc": "鎌倉の街には雨の日に楽しめるカフェが点在する。鎌倉文学館の隣の「ハウス・オブ・ラブズ」・小町通り奥の「カフェ・ヴィヴモン・ディモンシュ」など、雨の日のおもむきを楽しめるカフェが多い。「雨の日に長居できる場所が欲しい」「読書とコーヒーで2時間粘りたい」人に向く。コーヒー＋スイーツで1〜2時間休憩しながら、雨の鎌倉を窓越しに眺める贅沢な時間。1人1,500〜3,000円程度、営業時間は店舗による。鎌倉駅から徒歩5〜15分の範囲に良質なカフェが点在。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR北鎌倉駅 徒歩15分 / 鎌倉駅 徒歩20分"
+          },
+          {
+            "k": "拝観料",
+            "v": "500円"
+          },
+          {
+            "k": "雨の日",
+            "v": "○"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "鎌倉歴史文化交流館",
+        "cuisine": "博物館",
+        "area": "御成町",
+        "purpose": "旧川喜多邸の建物を活用。鎌倉の発掘品と文化財を展示",
+        "desc": "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。雨の日に訪れると、大正期の洋館の屋根に雨が落ちる音と、館内の静謐な空気の組み合わせが文学的な雰囲気を作る。「文学好きの2人」「大正期の洋館建築が好きな人」に最も向く。鎌倉ゆかりの作家（夏目漱石・川端康成・芥川龍之介など）の原稿・初版本を展示。営業時間9〜17時、月曜休館（公式サイトで確認）、入館料は変動。由比ガ浜駅から徒歩7分、長谷駅から徒歩10分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "鎌倉駅 徒歩10分"
+          },
+          {
+            "k": "入館料",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "鎌倉小町通り・八幡宮5選",
+        "h": "/feature/new-kamakura-komachi",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+      },
+      {
+        "t": "長谷・由比ヶ浜デート5選",
+        "h": "/feature/new-hase-yuigahama-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg"
+      }
+    ],
+    "quote": "雨の鎌倉は、人が引いたぶんだけ静けさが増す。濡れた苔と石畳が、禅の空気をそっと前へ押し出してくる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝の北鎌倉から歩きはじめ、まず鎌倉国宝館で雨音をまといながら緑の深い境内をめぐった。長谷寺へまわると、雨に濡れた四季の花が花びらの重みまで見せてくれて、傘越しの一枚がいちばん美しかった。昼を過ぎて円覚寺の界隈へ、アーケードのある区画では傘を畳み、店から店へ短い距離を渡りながら一息ついた。午後は建長寺の方丈と庭園で、屋根を伝う雨だれをぼんやり眺める時間。最後に鎌倉歴史文化交流館で、雨の音と館内の静けさが溶け合う心地よさに浸って、一日を閉じた。歩いてみてわかったのは、雨の日こそ鎌倉の石段は油断ならないということ。滑り止めのある靴を選び、タオルを一枚多めに入れておくと、冷えにも足元にも慌てずに済む。傘とレインコートさえあれば、人の少ない境内をほとんど独り占めできる贅沢が、雨の日には待っている。靴底さえ気をつければ、これほど静かで満ち足りた鎌倉はそうない。"
   },
-
-  // NG-20 ─────────────────────────────────────────────────
   "new-kawasaki-rainy-date": {
-    id: "new-kawasaki-rainy-date",
-    no: "NG-20", articleType: "guide", kicker: "KAWASAKI RAINY DATE",
-    title: "川崎雨の日デート5選。ラゾーナ川崎から映画まで濡れずに楽しむ",
-    titleHTML: "川崎<br>雨の日デート5選。",
-    subtitle: "ラゾーナ川崎、川崎市民ミュージアム、チネチッタ。雨でも快適な川崎の屋内スポット",
-    lede: "川崎は神奈川県東部の工業都市で、東京と横浜の中間に位置する。ラゾーナ川崎・川崎ルフロン・チネチッタなど大型商業施設が川崎駅周辺に集中しており、雨の日でも一日完結できる屋内デート都市として優秀。対象は雨予報で予定が崩れたカップル、映画と食事を組み合わせたい2人、東京と横浜の中間で待ち合わせたい人。標準は12:00集合・21:00解散の9時間コース、予算は映画・食事込みで1人4,500〜8,000円。ここでは川崎の雨の日デートに使える5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.lazona,
-    ranking: [
-      s(1, "ラゾーナ川崎プラザ", "ショッピングモール", "川崎駅西口",
-        "JR川崎駅直結の大型モール。200店舗以上で雨の日に最強",
-        "ラゾーナ川崎プラザは2006年開業、川崎駅西口直結の超大型ショッピングセンター。300店舗以上が入る巨大施設で、ファッション・雑貨・飲食・スーパー・映画館まで1棟で完結する。「雨の日に1棟で半日過ごしたい」「家族で大型施設を楽しみたい」目的に最適。営業時間10〜21時（飲食は22時まで）、駅直結で雨に濡れずに入れる。屋内外のテラス席（雨天時は屋内のみ）、噴水広場、サンクンガーデンなど休憩スペースも豊富。次の動線として地下通路で川崎駅東口・チネチッタ方向に繋がる。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "JR川崎駅西口 直結" },
-          { k: "営業時間", v: "10:00〜21:00（飲食は〜23:00）" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(2, "ユナイテッド・シネマ川崎（ラゾーナ内）", "映画館", "川崎駅西口",
-        "ラゾーナ川崎3Fの映画館。IMAX・ドルビーも完備",
-        "ユナイテッド・シネマ川崎はラゾーナ川崎プラザ内にあるシネコン（IMAX対応）。「雨の日に映画でゆっくり過ごしたい」カップル・家族に最適。10スクリーン・約1,800席で、上映本数が多く時間調整しやすい。1回1,800〜2,200円、上映後にラゾーナ内のレストランで食事に直結できる。土日午後の人気作品は満席が多いため、事前のWEB予約推奨。雨の日は外に出ずに半日過ごせる利点。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "JR川崎駅西口 直結" },
-          { k: "料金", v: "一般2,000円（作品による）" },
-          { k: "雨の日", v: "◎" }]),
-      s(3, "川崎チネチッタ", "映画館・エンタメ街", "川崎駅東口",
-        "川崎駅東口のシネマ複合エリア。La Cittadella内",
-        "川崎チネチッタは川崎駅東口から徒歩約5分、映画館とアトラクション施設、レストラン・カフェが集まるエンターテインメント施設。「映画＋ボウリング・ビリヤード・ダーツバーで多様な遊びを組みたい」グループに最適。映画館「チネチッタ川崎」は1〜13スクリーンで、上映本数が多い。営業時間は施設による（おおむね10〜23時）。ラゾーナと地下通路で繋がる動線で、雨の日でも傘なしで両施設をハシゴできる。週末夜は若者で賑わうため、落ち着いた時間を求めるなら平日推奨。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "JR川崎駅東口 徒歩5分" },
-          { k: "料金", v: "一般2,000円（作品による）" },
-          { k: "雨の日", v: "◎" }]),
-      s(4, "川崎市藤子・F・不二雄ミュージアム", "博物館", "登戸（川崎市多摩区）",
-        "ドラえもんの原作者・藤子F不二雄の作品世界を体験",
-        "川崎市藤子・F・不二雄ミュージアムは川崎駅から南武線で約25分の登戸駅近郊、ドラえもん・パーマン・キテレツ大百科などの原画・展示・体験施設。「子連れで雨の日に1日かけて遊びたい」「藤子・F・不二雄ファンとしての聖地巡礼」目的に最適。完全予約制（チケットは月単位で発売）、入場料は変動（公式サイトで確認）。1〜2時間の滞在で、原画・ジオラマ・カフェ・ショップが楽しめる。雨の日でも完全屋内で過ごせる。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "JR登戸駅 バス5分 / JR川崎駅 バス約20分" },
-          { k: "入館料", v: "大人1,000円（要事前予約）" },
-          { k: "雨の日", v: "◎ 完全屋内" }]),
-      s(5, "川崎市市民ミュージアム（仮移転中）", "博物館・美術館", "川崎",
-        "考古・歴史・美術・マンガ文化を扱う総合博物館",
-        "川崎市市民ミュージアム（仮移転中）は川崎市の歴史・文化を展示する博物館。「川崎の歴史をしっかり学びたい」教育的家族・大人に向く。2019年の台風被害で旧館は休館中、仮移転先で企画展・特別展示を継続している（最新情報は公式サイトで確認）。ラゾーナ川崎・チネチッタとの組み合わせで雨の日の文化デーを組める。営業時間・入場料は公式で確認。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "仮移転先による（公式要確認）" },
-          { k: "入館料", v: "展覧会による" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("横浜駅雨の日5選", "new-yokohama-station-rainy", I.mm_blue),
-      side("武蔵小杉ファミリー5選", "new-musashikosugi-family", I.lazona)],
-    quote: "川崎はラゾーナを軸に、映画・ショッピング・グルメが雨の日でも完結する都市型エンタメエリア。",
-    quoteCite: author,
-    closing: "標準動線（雨の日）: 川崎駅西口12:00→ラゾーナ川崎でランチ＋ショッピング（12:00〜14:30）→ユナイテッド・シネマ川崎で映画（14:30〜17:00）→地下通路でチネチッタへ→ボウリング・ダーツ・夕食（17:00〜20:00）→ラゾーナ内でデザートカフェ。所要9時間、予算は映画・食事込みで1人4,500〜8,000円。土日午後は商業施設・映画館が混雑、平日午後または開店直後が比較的空いている。晴れの日はラゾーナの屋外テラスが使えるが、雨でも屋内完結で動ける。失敗しやすいのは「藤子・F・不二雄ミュージアムの完全予約制を知らずに来てしまう」「映画の人気作品の事前予約見落とし」「ラゾーナとチネチッタの地下通路ルートを知らずに雨の中を歩く」。事前にチケット予約と地下通路の入口を確認。この記事は雨の日に1日デートを完結させたい2人、川崎駅周辺で映画・買い物・食事を楽しみたい人に向く。",
+    "id": "new-kawasaki-rainy-date",
+    "no": "NG-20",
+    "articleType": "guide",
+    "kicker": "KAWASAKI RAINY DATE",
+    "title": "川崎、雨でも傘がいらない一日。ラゾーナから映画まで濡れずに歩く",
+    "titleHTML": "川崎、雨でも傘がいらない一日。<br>ラゾーナから映画まで濡れずに歩く",
+    "subtitle": "ラゾーナ川崎、チネチッタ、藤子・F・不二雄ミュージアム。降っても予定が崩れない川崎の屋内",
+    "lede": "雨の日の予定ほど心細いものはない。空模様を気にしながら傘を差し、靴を濡らし、結局どこにも腰を据えられないまま日が暮れる——そんな一日を、川崎は最初から想定していないように見える。東京と横浜のちょうど中間、川崎駅の西口を出れば、駅とほとんど一体になった大きな商業施設がそのまま待っている。屋根の下に食事も買い物も映画も揃い、施設から施設へも傘を畳んだまま移れてしまう。つまりここは、雨だからこそ強い街だ。この記事では「降っているからどこへも行けない」を「降っているからここがいい」に変える、川崎の屋内デートの楽しみ方を、ひとつずつ歩いていく。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "ラゾーナ川崎プラザ",
+        "cuisine": "ショッピングモール",
+        "area": "川崎駅西口",
+        "purpose": "JR川崎駅直結の大型モール。200店舗以上で雨の日に最強",
+        "desc": "ラゾーナ川崎プラザは2006年開業、川崎駅西口直結の超大型ショッピングセンター。300店舗以上が入る巨大施設で、ファッション・雑貨・飲食・スーパー・映画館まで1棟で完結する。「雨の日に1棟で半日過ごしたい」「家族で大型施設を楽しみたい」目的に最適。営業時間10〜21時（飲食は22時まで）、駅直結で雨に濡れずに入れる。屋内外のテラス席（雨天時は屋内のみ）、噴水広場、サンクンガーデンなど休憩スペースも豊富。次の動線として地下通路で川崎駅東口・チネチッタ方向に繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR川崎駅西口 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00（飲食は〜23:00）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "ユナイテッド・シネマ川崎（ラゾーナ内）",
+        "cuisine": "映画館",
+        "area": "川崎駅西口",
+        "purpose": "ラゾーナ川崎3Fの映画館。IMAX・ドルビーも完備",
+        "desc": "ユナイテッド・シネマ川崎はラゾーナ川崎プラザ内にあるシネコン（IMAX対応）。「雨の日に映画でゆっくり過ごしたい」カップル・家族に最適。10スクリーン・約1,800席で、上映本数が多く時間調整しやすい。1回1,800〜2,200円、上映後にラゾーナ内のレストランで食事に直結できる。土日午後の人気作品は満席が多いため、事前のWEB予約推奨。雨の日は外に出ずに半日過ごせる利点。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR川崎駅西口 直結"
+          },
+          {
+            "k": "料金",
+            "v": "一般2,000円（作品による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "川崎チネチッタ",
+        "cuisine": "映画館・エンタメ街",
+        "area": "川崎駅東口",
+        "purpose": "川崎駅東口のシネマ複合エリア。La Cittadella内",
+        "desc": "川崎チネチッタは川崎駅東口から徒歩約5分、映画館とアトラクション施設、レストラン・カフェが集まるエンターテインメント施設。「映画＋ボウリング・ビリヤード・ダーツバーで多様な遊びを組みたい」グループに最適。映画館「チネチッタ川崎」は1〜13スクリーンで、上映本数が多い。営業時間は施設による（おおむね10〜23時）。ラゾーナと地下通路で繋がる動線で、雨の日でも傘なしで両施設をハシゴできる。週末夜は若者で賑わうため、落ち着いた時間を求めるなら平日推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR川崎駅東口 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "一般2,000円（作品による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "川崎市藤子・F・不二雄ミュージアム",
+        "cuisine": "博物館",
+        "area": "登戸（川崎市多摩区）",
+        "purpose": "ドラえもんの原作者・藤子F不二雄の作品世界を体験",
+        "desc": "川崎市藤子・F・不二雄ミュージアムは川崎駅から南武線で約25分の登戸駅近郊、ドラえもん・パーマン・キテレツ大百科などの原画・展示・体験施設。「子連れで雨の日に1日かけて遊びたい」「藤子・F・不二雄ファンとしての聖地巡礼」目的に最適。完全予約制（チケットは月単位で発売）、入場料は変動（公式サイトで確認）。1〜2時間の滞在で、原画・ジオラマ・カフェ・ショップが楽しめる。雨の日でも完全屋内で過ごせる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR登戸駅 バス5分 / JR川崎駅 バス約20分"
+          },
+          {
+            "k": "入館料",
+            "v": "大人1,000円（要事前予約）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 完全屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "川崎市市民ミュージアム（仮移転中）",
+        "cuisine": "博物館・美術館",
+        "area": "川崎",
+        "purpose": "考古・歴史・美術・マンガ文化を扱う総合博物館",
+        "desc": "川崎市市民ミュージアム（仮移転中）は川崎市の歴史・文化を展示する博物館。「川崎の歴史をしっかり学びたい」教育的家族・大人に向く。2019年の台風被害で旧館は休館中、仮移転先で企画展・特別展示を継続している（最新情報は公式サイトで確認）。ラゾーナ川崎・チネチッタとの組み合わせで雨の日の文化デーを組める。営業時間・入場料は公式で確認。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "仮移転先による（公式要確認）"
+          },
+          {
+            "k": "入館料",
+            "v": "展覧会による"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "横浜駅雨の日5選",
+        "h": "/feature/new-yokohama-station-rainy",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "武蔵小杉ファミリー5選",
+        "h": "/feature/new-musashikosugi-family",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+      }
+    ],
+    "quote": "川崎は、雨を理由に予定を諦めなくていい街。屋根の下だけで食事も映画も遊びも一日分そろう。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "雨の日の川崎は、駅西口のラゾーナ川崎プラザから始めるのが気楽だ。まずは館内でゆっくり昼食をとり、買い物のあいだに窓の外の雨脚を確かめる。同じ建物の上階にはユナイテッド・シネマ川崎があるので、午後の雨が強まる時間帯はそのまま一本観てしまえばいい。映画館が同じ屋根の下にあるというだけで、雨の午後はずいぶん過ごしやすくなる。気分を変えたくなったら東口の川崎チネチッタへ。映画館にボウリングやダーツが集まったエリアで、夕方からの時間を持て余さない。一日をのんびり一か所で過ごしたい日や、二人の趣味が原画やキャラクターに寄っている日は、南武線で少し足を延ばして登戸方面の川崎市藤子・F・不二雄ミュージアムを丸ごと目的地にしてしまう手もある。川崎の歴史に触れたくなったら川崎市市民ミュージアムへ——ただしここは台風被害を経て仮移転中で、展示の内容も会期も入れ替わっていく。藤子・F・不二雄ミュージアムの入館や人気作品の上映回、仮移転先のいまの展示と開館状況は、出かける前にそれぞれの公式ページで最新を見ておくと、当日に戸惑わない。混雑を避けたいなら土日の午後より、平日や各施設の開いた直後がねらい目。雨に追われずに動ける一日を、川崎は用意してくれている。"
   },
-
-  // NG-21 ─────────────────────────────────────────────────
   "new-musashikosugi-family": {
-    id: "new-musashikosugi-family",
-    no: "NG-21", articleType: "guide", kicker: "MUSASHIKOSUGI FAMILY",
-    title: "武蔵小杉ファミリースポット5選。子連れで一日過ごせる場所",
-    titleHTML: "武蔵小杉<br>ファミリー5選。",
-    subtitle: "ららテラス・グランツリー・等々力緑地。タワマン街の意外な子育て環境",
-    lede: "武蔵小杉は神奈川県川崎市中原区のターミナル駅で、JR南武線・東急東横線・JR横須賀線・東急目黒線が交差する2010年代の再開発エリア。対象は子連れファミリー、川崎フロンターレ観戦と組み合わせたい家族、武蔵小杉の再開発を体感したい大人。標準は11:00集合・19:30解散の8時間30分コース、予算は1家族4,500〜9,000円。駅周辺は商業施設・公園・図書館・河川敷などファミリー向けスポットが集約されている。ここでは武蔵小杉駅周辺の家族向け5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.lazona,
-    ranking: [
-      s(1, "等々力緑地", "大型公園", "武蔵小杉",
-        "川崎市最大の都市公園。野球場・プールと子どもが遊べる広場",
-        "等々力緑地は1976年開園、武蔵小杉駅から徒歩約15分の大型公園（約43ha）。「子供と一緒に芝生で遊びたい」「フロンターレ観戦と組み合わせたい」家族に最適。等々力陸上競技場、市民ミュージアム、室内プール、釣り堀、芝生広場、サイクリングコースが整備されている。等々力陸上競技場では川崎フロンターレのホームゲームが開催される。週末はピクニックや家族の散歩客で賑わう。入園無料、フロンターレ試合日は周辺道路が混雑するため平日推奨。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "東急武蔵小杉駅 徒歩15分" },
-          { k: "料金", v: "無料（施設利用は別途）" },
-          { k: "雨の日", v: "✕ 屋外メイン" }]),
-      s(2, "ららテラス武蔵小杉", "ショッピングモール", "武蔵小杉",
-        "武蔵小杉駅直結のショッピング施設。子ども服・飲食充実",
-        "ららテラス武蔵小杉は2014年開業、武蔵小杉駅東急口直結の中型商業施設。「軽食・カフェで30〜60分過ごしたい」「日常の買い物を済ませたい」家族に向く。Tully's Coffee・スーパー・カフェ・レストランが揃い、グランツリーと組み合わせて使う動線が組める。営業時間は店舗による（おおむね10〜22時）。ファミリー向けの食事処が多く、子連れでも利用しやすい店舗構成。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "武蔵小杉駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(3, "グランツリー武蔵小杉", "ショッピングモール", "武蔵小杉",
-        "子ども向けの体験型スポットが充実した大型モール",
-        "グランツリー武蔵小杉は2014年開業、武蔵小杉駅JR口直結の超大型商業施設。「子連れで雨の日に1棟で半日過ごしたい」家族に最適。100店舗以上の専門店、飲食店、無印良品、ニトリ、ファミリー向けの大型書店、フードコートが揃う。営業時間10〜21時、家族連れに使いやすい店舗構成。屋上に小さなガーデンとキッズスペースがあり、晴れた日は子供を遊ばせられる。ららテラスと地下・連絡通路で繋がる。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "武蔵小杉駅 徒歩5分" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(4, "中原市民館・中原図書館", "公共施設", "武蔵小杉",
-        "子連れで立ち寄れる公共施設。図書館の絵本コーナーが広い",
-        "中原市民館・中原図書館は武蔵小杉駅から徒歩約5分、川崎市中原区の公共施設。「子供と一緒に本を読みたい」「無料で半日過ごしたい」家族に向く。1〜5階に図書館・市民学習室・市民ホール・キッズスペースが入る複合施設。営業時間9〜21時（図書館は施設により異なる、公式で確認）、入場無料。雨の日の屋内シェルターとしても優秀で、子連れの長時間滞在に対応する設計。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "武蔵小杉駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "丸子橋・多摩川河川敷", "河川敷・散策", "武蔵小杉",
-        "多摩川沿いの広い河川敷。バーベキュー・サイクリングにも",
-        "丸子橋・多摩川河川敷は武蔵小杉駅から徒歩約20分、多摩川を挟む東京・神奈川境界の河川敷。「子供と外遊びをしたい」「ランニング・サイクリングを家族で」目的に最適。広大な河川敷では野球場・サッカー場・芝生広場が整備され、地元の少年団・市民スポーツが活発。桜の季節は丸子橋付近の桜並木が美しく、花見スポットとして使える。雨の日は屋外利用が辛いため、館内施設に切り替え。電車でのアクセスは武蔵小杉駅から徒歩、または車でのアクセスも可能。",
-        [I.lazona],
-        [
-          { k: "最寄り駅", v: "東急武蔵小杉駅 徒歩20分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }])],
-    sideArticles: [
-      side("川崎雨の日デート5選", "new-kawasaki-rainy-date", I.lazona),
-      side("たまプラーザ・あざみ野5選", "new-tamaplaza-azamino", I.mm_blue)],
-    quote: "武蔵小杉は等々力緑地とグランツリーを組み合わせると、子連れでも一日余裕で過ごせる。",
-    quoteCite: author,
-    closing: "標準動線: 武蔵小杉駅11:00→グランツリーでランチ＋買い物（11:00〜14:00）→ららテラスでカフェ（14:00〜15:00）→徒歩で等々力緑地へ（15:00〜17:00 公園遊び）→中原市民館・図書館で休憩（17:00〜18:00）→グランツリー内ディナー（18:00〜19:30）。所要8時間30分、予算は食事＋施設込みで1家族4,500〜9,000円。土日は等々力緑地・グランツリーが混雑、平日午後または朝が落ち着く。雨の日は等々力緑地・河川敷を諦めて、グランツリー＋ららテラス＋中原市民館の屋内中心ルートに切り替える。失敗しやすいのは「フロンターレ試合日に来てしまい等々力緑地が大混雑」「子供の体力を考慮せず詰め込みすぎる」「河川敷への徒歩距離（20分）を読み違える」。事前にフロンターレ試合スケジュールを公式サイトで確認、子供連れは午前1施設＋午後1施設のペース配分に留める。この記事は子連れで休日を過ごしたい家族、フロンターレ観戦と組み合わせたい家族、武蔵小杉の再開発を体感したい人に向く。",
+    "id": "new-musashikosugi-family",
+    "no": "NG-21",
+    "articleType": "guide",
+    "kicker": "MUSASHIKOSUGI FAMILY",
+    "title": "武蔵小杉、子連れで丸一日。タワマン街の遊び場めぐり",
+    "titleHTML": "武蔵小杉、子連れで丸一日。<br>タワマン街の遊び場めぐり",
+    "subtitle": "等々力緑地の芝生も、グランツリーの屋内も。天気に左右されない街の懐の深さ",
+    "lede": "武蔵小杉という街は、見上げれば高層マンションばかりが目につく。けれど子どもを連れて一日歩いてみると、この街の本当の強みは別のところにあると気づく。それは「逃げ場の多さ」だ。広い芝生で走り回らせたい日には等々力緑地があり、空が崩れた日には駅直結の商業施設だけで半日が成立する。JR南武線・横須賀線、東急東横線・目黒線が交わるこの再開発エリアは、2010年代に一気に表情を変えた。子連れの一日というのは、たいてい計画どおりにはいかない。眠気、ぐずり、急な雨。その揺れを丸ごと受け止めてくれる場所が駅の徒歩圏に詰まっているのが、この街で過ごす安心感の正体だと思う。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "等々力緑地",
+        "cuisine": "大型公園",
+        "area": "武蔵小杉",
+        "purpose": "川崎市最大の都市公園。野球場・プールと子どもが遊べる広場",
+        "desc": "等々力緑地は1976年開園、武蔵小杉駅から徒歩約15分の大型公園（約43ha）。「子供と一緒に芝生で遊びたい」「フロンターレ観戦と組み合わせたい」家族に最適。等々力陸上競技場、市民ミュージアム、室内プール、釣り堀、芝生広場、サイクリングコースが整備されている。等々力陸上競技場では川崎フロンターレのホームゲームが開催される。週末はピクニックや家族の散歩客で賑わう。入園無料、フロンターレ試合日は周辺道路が混雑するため平日推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "東急武蔵小杉駅 徒歩15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（施設利用は別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外メイン"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "ららテラス武蔵小杉",
+        "cuisine": "ショッピングモール",
+        "area": "武蔵小杉",
+        "purpose": "武蔵小杉駅直結のショッピング施設。子ども服・飲食充実",
+        "desc": "ららテラス武蔵小杉は2014年開業、武蔵小杉駅東急口直結の中型商業施設。「軽食・カフェで30〜60分過ごしたい」「日常の買い物を済ませたい」家族に向く。Tully's Coffee・スーパー・カフェ・レストランが揃い、グランツリーと組み合わせて使う動線が組める。営業時間は店舗による（おおむね10〜22時）。ファミリー向けの食事処が多く、子連れでも利用しやすい店舗構成。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "武蔵小杉駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "グランツリー武蔵小杉",
+        "cuisine": "ショッピングモール",
+        "area": "武蔵小杉",
+        "purpose": "子ども向けの体験型スポットが充実した大型モール",
+        "desc": "グランツリー武蔵小杉は2014年開業、武蔵小杉駅JR口直結の超大型商業施設。「子連れで雨の日に1棟で半日過ごしたい」家族に最適。100店舗以上の専門店、飲食店、無印良品、ニトリ、ファミリー向けの大型書店、フードコートが揃う。営業時間10〜21時、家族連れに使いやすい店舗構成。屋上に小さなガーデンとキッズスペースがあり、晴れた日は子供を遊ばせられる。ららテラスと地下・連絡通路で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "武蔵小杉駅 徒歩5分"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "中原市民館・中原図書館",
+        "cuisine": "公共施設",
+        "area": "武蔵小杉",
+        "purpose": "子連れで立ち寄れる公共施設。図書館の絵本コーナーが広い",
+        "desc": "中原市民館・中原図書館は武蔵小杉駅から徒歩約5分、川崎市中原区の公共施設。「子供と一緒に本を読みたい」「無料で半日過ごしたい」家族に向く。1〜5階に図書館・市民学習室・市民ホール・キッズスペースが入る複合施設。営業時間9〜21時（図書館は施設により異なる、公式で確認）、入場無料。雨の日の屋内シェルターとしても優秀で、子連れの長時間滞在に対応する設計。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "武蔵小杉駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "丸子橋・多摩川河川敷",
+        "cuisine": "河川敷・散策",
+        "area": "武蔵小杉",
+        "purpose": "多摩川沿いの広い河川敷。バーベキュー・サイクリングにも",
+        "desc": "丸子橋・多摩川河川敷は武蔵小杉駅から徒歩約20分、多摩川を挟む東京・神奈川境界の河川敷。「子供と外遊びをしたい」「ランニング・サイクリングを家族で」目的に最適。広大な河川敷では野球場・サッカー場・芝生広場が整備され、地元の少年団・市民スポーツが活発。桜の季節は丸子橋付近の桜並木が美しく、花見スポットとして使える。雨の日は屋外利用が辛いため、館内施設に切り替え。電車でのアクセスは武蔵小杉駅から徒歩、または車でのアクセスも可能。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "東急武蔵小杉駅 徒歩20分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "川崎雨の日デート5選",
+        "h": "/feature/new-kawasaki-rainy-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+      },
+      {
+        "t": "たまプラーザ・あざみ野5選",
+        "h": "/feature/new-tamaplaza-azamino",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "外遊びの日も、雨に降られた日も、武蔵小杉はちゃんと子連れの一日を着地させてくれる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝の光が芝生に落ちる時間に等々力緑地へ着けば、子どもは到着した瞬間から走り出す。体力の続くうちに外遊びを済ませ、お腹が空いたら駅方向へ戻ってグランツリーで昼食をとるのが流れとしては自然だ。午後はららテラスでひと息ついてもいいし、中原図書館で絵本を広げて静かな時間に切り替えてもいい。天気と気分しだいで、丸子橋から多摩川の河川敷へ足をのばす日もあるだろう。歩いて気づくのは、この街が「一施設で午前、別の一施設で午後」というくらいゆるい配分でちょうどいいということ。詰め込むより、子どもの機嫌に合わせて一つ削るほうが結局うまくいく。川崎フロンターレの試合がある日は等々力周辺が一気に人で埋まるので、外遊び中心の予定ならその日は避けたい。試合日程や各施設の営業時間、料金は変わることがあるから、出かける前に公式の案内へ目を通しておくと当日の段取りがぶれない。"
   },
-
-  // NG-22 ─────────────────────────────────────────────────
   "new-tamaplaza-azamino": {
-    id: "new-tamaplaza-azamino",
-    no: "NG-22", articleType: "guide", kicker: "TAMAPLAZA AZAMINO",
-    title: "たまプラーザ・あざみ野5選。子連れ・ファミリーに優しい郊外エリア",
-    titleHTML: "たまプラーザ<br>ファミリー5選。",
-    subtitle: "たまプラーザテラス、こどもの国、横浜市こども植物園。横浜北部のファミリー定番",
-    lede: "たまプラーザ・あざみ野は東急田園都市線の沿線にある神奈川県横浜市青葉区のベッドタウン。閑静な高級住宅街と大型商業施設「たまプラーザテラス」、自然豊富な公園が共存する、ファミリー・夫婦向けの落ち着いた街。対象は子連れで自然と買い物を組み合わせたい家族、東京方面からの帰路で寄りたい大人、閑静な高級住宅街の雰囲気を体感したい人。標準は10:00集合・17:00解散の7時間コース、予算は1家族4,000〜7,500円。渋谷から田園都市線で約25分の距離。",
-    date, reading: "約7分", author,
-    heroImage: I.tamapla,
-    ranking: [
-      s(1, "たまプラーザテラス", "ショッピングモール", "たまプラーザ",
-        "東急たまプラーザ駅直結の大型モール。ファミリー向け施設充実",
-        "たまプラーザテラスは2010年開業、たまプラーザ駅直結の大型商業施設。100以上の店舗、ファッション・雑貨・カフェ・レストランが揃う。「子連れで雨の日に1棟で過ごしたい」「東京からの帰路で寄りたい」家族に最適。営業時間10〜21時。週末は地元家族で混雑するが、平日午前は落ち着いている。ガーデンエリア（屋外）はゆったり座れるベンチがあり、休憩スポットとして優秀。",
-        [I.tamapla],
-        [
-          { k: "最寄り駅", v: "東急田園都市線 たまプラーザ駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00（飲食は〜22:00）" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "こどもの国（横浜市）", "子ども向けテーマパーク", "恩田・成瀬",
-        "東京・横浜最大級の子ども向け施設。牧場・プール・遊具が揃う",
-        "横浜市こどもの国はたまプラーザ駅からバスで約20分、約100haの巨大な自然公園型遊戯施設。「子連れで丸一日遊びたい」家族に最適。遊具・牧場・サイクリング・ボート・冬季はスケートリンク（要事前確認）など多彩なアクティビティが揃う。営業時間9:30〜16:30、月曜休園（公式サイトで確認）、入園料は変動。土日午後は混雑するが、平日午後または開園直後の朝が現実的。1日かけて遊べる規模なので、たまプラーザを軸にした半日コースでは別日に組み込むのが現実的。",
-        [I.tamapla],
-        [
-          { k: "最寄り駅", v: "東急こどもの国線 こどもの国駅 徒歩3分" },
-          { k: "入場料", v: "大人800円・子ども500円" },
-          { k: "雨の日", v: "△（一部屋内施設あり）" }]),
-      s(3, "横浜市こども植物園", "植物園・公園", "旭区（二俣川）",
-        "子どもが植物に触れられる体験型植物園。入園無料",
-        "横浜市こども植物園は旭区（二俣川駅近郊）に位置する植物園で、たまプラーザからは少し離れる。「子供と一緒に植物観察を楽しみたい」「教育的な体験を組み込みたい」家族に向く。営業時間9〜16:30、月曜休園（公式サイトで確認）、入園無料。1〜2時間で園内を1周できる規模で、季節ごとの花・樹木が楽しめる。たまプラーザからは車または乗り継ぎでのアクセスとなるため、半日コースに組み込むなら一日コース化が現実的。",
-        [I.tamapla],
-        [
-          { k: "最寄り駅", v: "相鉄 二俣川駅 徒歩15分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△ 温室は可" }]),
-      s(4, "あざみ野ガーデンズ", "ショッピングモール", "あざみ野",
-        "東急あざみ野駅直結のショッピング施設",
-        "あざみ野ガーデンズは2007年開業、あざみ野駅から徒歩約5分の中型商業施設。「あざみ野駅周辺で軽く買い物・カフェ」する家族に向く。営業時間10〜21時。ファッション・雑貨・スーパー・カフェ・レストランが揃う。たまプラーザテラスから田園都市線で1駅、徒歩でも約15分の距離。ファミリー向けの店舗が多く、子連れ家族の日常的な買い物拠点として機能する。",
-        [I.tamapla],
-        [
-          { k: "最寄り駅", v: "東急田園都市線 あざみ野駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "港北ニュータウン・都筑区公園群", "公園", "都筑区",
-        "たまプラーザ〜港北ニュータウン間の公園緑道。ファミリー散策に",
-        "港北ニュータウン・都筑区公園群はあざみ野駅から横浜市営地下鉄で2〜3駅のセンター北・センター南エリアに広がる計画的な公園ネットワーク。「広大な緑道を散歩したい」「子供と外遊びを満喫したい」家族に向く。都筑区ふるさと公園・大塚・歳勝土遺跡公園・牛久保緑道など、複数の公園が遊歩道で繋がる構造。あざみ野からの足を伸ばすルートとして組み込みやすい。入園無料・24時間開放（公園による）、自転車道も整備されている。",
-        [I.tamapla],
-        [
-          { k: "最寄り駅", v: "市営地下鉄 センター北・センター南駅周辺" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }])],
-    sideArticles: [
-      side("武蔵小杉ファミリー5選", "new-musashikosugi-family", I.lazona),
-      side("港北NT・ファミリー5選", "new-kohoku-nt-family", I.mm_blue)],
-    quote: "たまプラーザ周辺は公園・こどもの国・ショッピングモールが揃い、子連れで一日遊べる。",
-    quoteCite: author,
-    closing: "標準動線: たまプラーザ駅10:00→たまプラーザテラスで買い物＋ランチ（10:00〜13:00）→ガーデンエリアで休憩（13:00〜13:30）→田園都市線であざみ野駅へ→あざみ野ガーデンズでお茶（13:30〜14:30）→市営地下鉄でセンター北・センター南エリアへ→港北ニュータウン緑道散歩（14:30〜17:00）。所要7時間、予算は1家族4,000〜7,500円。土日午後のたまプラーザテラス・あざみ野ガーデンズは混雑、開店直後または平日午後がスムーズ。雨の日はテラス内・あざみ野ガーデンズ・モザイクモール港北の屋内ルートに切り替える。失敗しやすいのは「こどもの国までの距離を読み違えて1日コースを半日に詰めようとする」「公園の月曜休園を見落とす」。事前に施設の営業時間を公式サイトで確認、こどもの国は別日で1日コース化が現実的。この記事は子連れで自然と買い物を組み合わせたい家族、東京方面からの帰路で寄りたい大人に向く。",
+    "id": "new-tamaplaza-azamino",
+    "no": "NG-22",
+    "articleType": "guide",
+    "kicker": "TAMAPLAZA AZAMINO",
+    "title": "たまプラーザからあざみ野を歩く。子どもと一日、横浜北部さんぽ",
+    "titleHTML": "たまプラーザからあざみ野を歩く。<br>子どもと一日、横浜北部さんぽ",
+    "subtitle": "駅直結のテラスから、こどもの国の牧場、二俣川の植物園、あざみ野の小さな庭、都筑の緑道へ",
+    "lede": "田園都市線で渋谷を出て二十数分。坂を切り通した線路がトンネルを抜けるたび、空が広がっていく。たまプラーザの改札を出ると、駅前広場に面したテラスの白い庇が見えて、ベビーカーを押す人と買い物袋を提げた人が同じ速さで歩いている。ここは横浜市青葉区、高級住宅街と大型の商業施設と緑の多い公園が地続きになった街だ。背伸びをした観光地ではないから、子どもの手を引いてゆっくり歩くのにちょうどいい。今日はその北部を、駅前の賑わいから牧場の匂い、植物園の静けさ、小さな庭、そして都筑の緑道へと、一日かけて辿ってみる。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "たまプラーザテラス",
+        "cuisine": "ショッピングモール",
+        "area": "たまプラーザ",
+        "purpose": "東急たまプラーザ駅直結の大型モール。ファミリー向け施設充実",
+        "desc": "たまプラーザテラスは2010年開業、たまプラーザ駅直結の大型商業施設。100以上の店舗、ファッション・雑貨・カフェ・レストランが揃う。「子連れで雨の日に1棟で過ごしたい」「東京からの帰路で寄りたい」家族に最適。営業時間10〜21時。週末は地元家族で混雑するが、平日午前は落ち着いている。ガーデンエリア（屋外）はゆったり座れるベンチがあり、休憩スポットとして優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "東急田園都市線 たまプラーザ駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00（飲食は〜22:00）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "こどもの国（横浜市）",
+        "cuisine": "子ども向けテーマパーク",
+        "area": "恩田・成瀬",
+        "purpose": "東京・横浜最大級の子ども向け施設。牧場・プール・遊具が揃う",
+        "desc": "横浜市こどもの国はたまプラーザ駅からバスで約20分、約100haの巨大な自然公園型遊戯施設。「子連れで丸一日遊びたい」家族に最適。遊具・牧場・サイクリング・ボート・冬季はスケートリンク（要事前確認）など多彩なアクティビティが揃う。営業時間9:30〜16:30、月曜休園（公式サイトで確認）、入園料は変動。土日午後は混雑するが、平日午後または開園直後の朝が現実的。1日かけて遊べる規模なので、たまプラーザを軸にした半日コースでは別日に組み込むのが現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "東急こどもの国線 こどもの国駅 徒歩3分"
+          },
+          {
+            "k": "入場料",
+            "v": "大人800円・子ども500円"
+          },
+          {
+            "k": "雨の日",
+            "v": "△（一部屋内施設あり）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "横浜市こども植物園",
+        "cuisine": "植物園・公園",
+        "area": "旭区（二俣川）",
+        "purpose": "子どもが植物に触れられる体験型植物園。入園無料",
+        "desc": "横浜市こども植物園は旭区（二俣川駅近郊）に位置する植物園で、たまプラーザからは少し離れる。「子供と一緒に植物観察を楽しみたい」「教育的な体験を組み込みたい」家族に向く。営業時間9〜16:30、月曜休園（公式サイトで確認）、入園無料。1〜2時間で園内を1周できる規模で、季節ごとの花・樹木が楽しめる。たまプラーザからは車または乗り継ぎでのアクセスとなるため、半日コースに組み込むなら一日コース化が現実的。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "相鉄 二俣川駅 徒歩15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△ 温室は可"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "あざみ野ガーデンズ",
+        "cuisine": "ショッピングモール",
+        "area": "あざみ野",
+        "purpose": "東急あざみ野駅直結のショッピング施設",
+        "desc": "あざみ野ガーデンズは2007年開業、あざみ野駅から徒歩約5分の中型商業施設。「あざみ野駅周辺で軽く買い物・カフェ」する家族に向く。営業時間10〜21時。ファッション・雑貨・スーパー・カフェ・レストランが揃う。たまプラーザテラスから田園都市線で1駅、徒歩でも約15分の距離。ファミリー向けの店舗が多く、子連れ家族の日常的な買い物拠点として機能する。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "東急田園都市線 あざみ野駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "港北ニュータウン・都筑区公園群",
+        "cuisine": "公園",
+        "area": "都筑区",
+        "purpose": "たまプラーザ〜港北ニュータウン間の公園緑道。ファミリー散策に",
+        "desc": "港北ニュータウン・都筑区公園群はあざみ野駅から横浜市営地下鉄で2〜3駅のセンター北・センター南エリアに広がる計画的な公園ネットワーク。「広大な緑道を散歩したい」「子供と外遊びを満喫したい」家族に向く。都筑区ふるさと公園・大塚・歳勝土遺跡公園・牛久保緑道など、複数の公園が遊歩道で繋がる構造。あざみ野からの足を伸ばすルートとして組み込みやすい。入園無料・24時間開放（公園による）、自転車道も整備されている。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "市営地下鉄 センター北・センター南駅周辺"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "武蔵小杉ファミリー5選",
+        "h": "/feature/new-musashikosugi-family",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+      },
+      {
+        "t": "港北NT・ファミリー5選",
+        "h": "/feature/new-kohoku-nt-family",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      }
+    ],
+    "quote": "買い物も、牧場も、緑道も、ぜんぶ電車で繋がっている。子どもと歩くには、ちょうどいい広さの街だった。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝はテラスの開店を待つくらいでいい。子連れなら無理に詰め込まず、こどもの国は丸一日とって別の日に回すのが結局いちばん満ち足りる、というのが何度か歩いてみての実感だ。テラスで遅めの朝食をとってから駅前で過ごし、午後はあざみ野へ移って小さな庭でお茶を一杯。そこから地下鉄で都筑へ抜けて、夕方の光が長くなる頃に緑道を歩く——そんな緩急のつけ方が、この街の懐の深さと合っている。公園には休園日があり、施設の開く時間も季節で動くので、出かける前にそれぞれの公式ページをのぞいておくと一日が崩れない。歩き終えて駅へ戻る頃、買い物袋と土の匂いと夕陽が同居しているのは、たぶんこのエリアだけの贅沢だと思う。"
   },
-
-  // NG-23 ─────────────────────────────────────────────────
   "new-hakoneyumoto": {
-    id: "new-hakoneyumoto",
-    no: "NG-23", articleType: "guide", kicker: "HAKONE YUMOTO",
-    title: "箱根湯本5選。日帰り温泉と老舗の味を楽しむ半日コース",
-    titleHTML: "箱根湯本<br>5選。",
-    subtitle: "箱根湯本温泉、天山湯治郷、湯本商店街。小田原から20分で行ける温泉郷",
-    lede: "箱根湯本は箱根の玄関口で、新宿から特急ロマンスカーで約85分。箱根湯本駅周辺は温泉旅館・お土産店・温泉まんじゅう店・蕎麦屋が並ぶ昭和の温泉街の雰囲気が残る。対象は日帰り温泉を楽しみたいカップル、出張帰りの寄り道に使いたい1人客、箱根観光の起点として温泉街を体験したい家族。標準は10:30集合・17:30解散の7時間コース、予算は温泉＋食事＋お土産込みで1人6,000〜12,000円。ここでは箱根湯本周辺の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.yumoto,
-    ranking: [
-      s(1, "箱根湯本温泉（日帰り入浴）", "温泉", "箱根湯本",
-        "小田原から箱根登山電車20分。日帰り入浴できる旅館が複数",
-        "箱根湯本温泉は箱根17湯のひとつで、最古の温泉地として歴史的に有名。「日帰り温泉を午前中にゆっくり入りたい」目的に最適。駅周辺の旅館は日帰り入浴を提供する施設が多く、午前10時〜午後5時の時間帯で利用可能（料金は施設により異なる、公式サイトで確認）。湯本駅から徒歩5〜15分の範囲に老舗旅館が並ぶ。新宿からアクセスしやすく、出張・旅行帰りの寄り道でも使える。深夜帯まで利用できる施設は限られるため、夕方17時以降の利用は事前確認が必須。",
-        [I.yumoto],
-        [
-          { k: "最寄り駅", v: "箱根登山鉄道 箱根湯本駅 徒歩5〜20分（施設による）" },
-          { k: "料金", v: "1,000〜2,000円程度（施設による）" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "天山湯治郷", "温泉施設", "箱根湯本",
-        "箱根を代表する日帰り温泉。露天風呂・サウナ・食事処完備",
-        "天山湯治郷は箱根湯本駅から無料送迎バスで約10分、自然に囲まれた本格的な日帰り温泉施設。「源泉かけ流しの温泉でゆっくり過ごしたい」「静かな環境で湯治気分を味わいたい」目的に最適。5つの源泉と13の浴槽があり、半日かけて温泉ハシゴができる。営業時間9〜23時、入浴料は変動（公式サイトで確認）。館内には食事処・休憩室があり、温泉＋食事で半日完結する。土日午後は混雑するため、開湯直後または平日推奨。",
-        [I.yumoto],
-        [
-          { k: "最寄り駅", v: "箱根湯本駅 バス10分 / タクシー5分" },
-          { k: "料金", v: "大人1,300円（タオル別途）" },
-          { k: "雨の日", v: "◎" }]),
-      s(3, "箱根湯本商店街", "食べ歩き・土産", "箱根湯本",
-        "箱根湯本駅から続く参道商店街。温泉まんじゅう・かまぼこが定番",
-        "箱根湯本商店街は湯本駅前から早川沿いに約500m続く土産・飲食街。「温泉まんじゅう・かまぼこ・寄せ木細工の土産を調達したい」観光客に最適。「丸嶋本店」「菊川商店」「鈴廣」など老舗の温泉まんじゅう・蕎麦屋・かまぼこ店が並ぶ。1個150〜200円、店頭で蒸したてが食べられる店もある。営業時間は店舗による（おおむね9〜18時）、土日午後は買い物客で混雑する。湯本駅前の動線上にあり、温泉前後の散策に組み込みやすい。",
-        [I.yumoto],
-        [
-          { k: "最寄り駅", v: "箱根湯本駅 徒歩1分" },
-          { k: "料金", v: "食べ歩き200〜500円程度" }]),
-      s(4, "箱根湯本美術館", "美術館", "箱根湯本",
-        "早川沿いに建つ日本画・工芸の美術館",
-        "箱根湯本美術館は湯本駅から徒歩約3分、地元作家の作品を中心に展示する小規模美術館。「温泉後にアートで気分を切り替えたい」大人の2人に向く。営業時間10〜17時（公式サイトで確認）、入館料は変動。1時間程度の滞在で、地元の絵画・工芸品を鑑賞できる。湯本駅前の動線上にあり、温泉前後の文化体験として組み込みやすい。",
-        [I.yumoto],
-        [
-          { k: "最寄り駅", v: "箱根湯本駅 徒歩15分" },
-          { k: "入館料", v: "展覧会による" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "箱根登山電車（湯本→強羅）", "観光鉄道", "箱根湯本→強羅",
-        "スイッチバックで山を登る登山電車。車窓のあじさいが有名",
-        "箱根登山電車（湯本→強羅）は1919年開業の山岳鉄道で、湯本駅から強羅駅まで約40分のスイッチバック運転が体験できる。「箱根の山岳景観を電車から楽しみたい」「強羅・大涌谷方面に足を伸ばしたい」目的に最適。片道420円程度（料金は変動、公式サイトで確認）、6月のあじさいシーズンは特に絵になる。営業時間は始発5時頃〜終電23時頃。湯本駅から強羅まで1日かけて足を伸ばすコースの起点として組み込みやすい。",
-        [I.yumoto],
-        [
-          { k: "最寄り駅", v: "箱根湯本駅 発（所要45分で強羅）" },
-          { k: "料金", v: "箱根湯本〜強羅：460円（フリーパス推奨）" }])],
-    sideArticles: [
-      side("小田原観光5選", "new-odawara", I.odawara),
-      side("鎌倉雨の日5選", "new-kamakura-rainy", I.kenchoji)],
-    quote: "箱根湯本は新宿から特急ロマンスカーで85分、小田原から20分。日帰り温泉の定番エリア。",
-    quoteCite: author,
-    closing: "標準動線: 新宿8:30出発ロマンスカー→10:30湯本到着→旅館で日帰り温泉（11:00〜13:00）→蕎麦ランチ（13:00〜14:30）→湯本商店街で土産購入（14:30〜15:30）→湯本美術館（15:30〜16:30）→箱根登山電車で強羅方面散策（16:30〜17:30）→ロマンスカーで帰京。所要7時間、予算は温泉＋食事＋土産込みで1人6,000〜12,000円。土日午前のロマンスカー＋日帰り温泉は予約推奨。雨の日も温泉・旅館・蕎麦屋・お土産店すべて屋内で完結できる。失敗しやすいのは「日帰り温泉の最終受付時間を見落として入浴できない」「ロマンスカーの予約見落とし」「強羅・大涌谷まで足を伸ばす時間配分のミス」。事前に温泉施設の最終受付・ロマンスカー予約・観光ルートを確認。この記事は日帰りで箱根の温泉を楽しみたい人、温泉街の昭和の雰囲気を体感したい人、ロマンスカーの旅と組み合わせたい人に向く。",
+    "id": "new-hakoneyumoto",
+    "no": "NG-23",
+    "articleType": "course",
+    "kicker": "HAKONE YUMOTO",
+    "title": "箱根湯本で過ごす温泉半日。湯につかり、老舗の味を歩く",
+    "titleHTML": "箱根湯本で過ごす温泉半日。<br>湯につかり、老舗の味を歩く",
+    "subtitle": "新宿からロマンスカーで約85分。箱根の玄関口で、温泉・蕎麦・土産を一日に収める",
+    "lede": "箱根の入口に立つ箱根湯本は、駅を出た瞬間から早川のせせらぎと湯けむりの匂いに迎えられる街だ。温泉旅館の暖簾、温泉まんじゅうを蒸す湯気、寄せ木細工を並べた土産店——昭和の温泉街の空気が今も路地に残っている。奥箱根まで足を伸ばさずとも、ここだけで湯と味と買い物がひと通り揃うのが、この街の懐の深さだ。この半日コースは、午前のうちに湯にゆっくり浸かり、昼に蕎麦をたぐり、午後は商店街と美術館を抜けて登山電車の山景色で締める、という流れで組んだ。温泉を中心に置きつつ、急がず歩いて回れる距離感を大事にしている。料金や受付時間は施設ごとに動くので、出かける前に各公式サイトをのぞいておくと安心だ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "箱根湯本温泉（日帰り入浴）",
+        "cuisine": "温泉",
+        "area": "箱根湯本",
+        "purpose": "小田原から箱根登山電車20分。日帰り入浴できる旅館が複数",
+        "desc": "箱根湯本温泉は箱根17湯のひとつで、最古の温泉地として歴史的に有名。「日帰り温泉を午前中にゆっくり入りたい」目的に最適。駅周辺の旅館は日帰り入浴を提供する施設が多く、午前10時〜午後5時の時間帯で利用可能（料金は施設により異なる、公式サイトで確認）。湯本駅から徒歩5〜15分の範囲に老舗旅館が並ぶ。新宿からアクセスしやすく、出張・旅行帰りの寄り道でも使える。深夜帯まで利用できる施設は限られるため、夕方17時以降の利用は事前確認が必須。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根登山鉄道 箱根湯本駅 徒歩5〜20分（施設による）"
+          },
+          {
+            "k": "料金",
+            "v": "1,000〜2,000円程度（施設による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "天山湯治郷",
+        "cuisine": "温泉施設",
+        "area": "箱根湯本",
+        "purpose": "箱根を代表する日帰り温泉。露天風呂・サウナ・食事処完備",
+        "desc": "天山湯治郷は箱根湯本駅から無料送迎バスで約10分、自然に囲まれた本格的な日帰り温泉施設。「源泉かけ流しの温泉でゆっくり過ごしたい」「静かな環境で湯治気分を味わいたい」目的に最適。5つの源泉と13の浴槽があり、半日かけて温泉ハシゴができる。営業時間9〜23時、入浴料は変動（公式サイトで確認）。館内には食事処・休憩室があり、温泉＋食事で半日完結する。土日午後は混雑するため、開湯直後または平日推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根湯本駅 バス10分 / タクシー5分"
+          },
+          {
+            "k": "料金",
+            "v": "大人1,300円（タオル別途）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "箱根湯本商店街",
+        "cuisine": "食べ歩き・土産",
+        "area": "箱根湯本",
+        "purpose": "箱根湯本駅から続く参道商店街。温泉まんじゅう・かまぼこが定番",
+        "desc": "箱根湯本商店街は湯本駅前から早川沿いに約500m続く土産・飲食街。「温泉まんじゅう・かまぼこ・寄せ木細工の土産を調達したい」観光客に最適。「丸嶋本店」「菊川商店」「鈴廣」など老舗の温泉まんじゅう・蕎麦屋・かまぼこ店が並ぶ。1個150〜200円、店頭で蒸したてが食べられる店もある。営業時間は店舗による（おおむね9〜18時）、土日午後は買い物客で混雑する。湯本駅前の動線上にあり、温泉前後の散策に組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根湯本駅 徒歩1分"
+          },
+          {
+            "k": "料金",
+            "v": "食べ歩き200〜500円程度"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "箱根湯本美術館",
+        "cuisine": "美術館",
+        "area": "箱根湯本",
+        "purpose": "早川沿いに建つ日本画・工芸の美術館",
+        "desc": "箱根湯本美術館は湯本駅から徒歩約3分、地元作家の作品を中心に展示する小規模美術館。「温泉後にアートで気分を切り替えたい」大人の2人に向く。営業時間10〜17時（公式サイトで確認）、入館料は変動。1時間程度の滞在で、地元の絵画・工芸品を鑑賞できる。湯本駅前の動線上にあり、温泉前後の文化体験として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根湯本駅 徒歩15分"
+          },
+          {
+            "k": "入館料",
+            "v": "展覧会による"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "箱根登山電車（湯本→強羅）",
+        "cuisine": "観光鉄道",
+        "area": "箱根湯本→強羅",
+        "purpose": "スイッチバックで山を登る登山電車。車窓のあじさいが有名",
+        "desc": "箱根登山電車（湯本→強羅）は1919年開業の山岳鉄道で、湯本駅から強羅駅まで約40分のスイッチバック運転が体験できる。「箱根の山岳景観を電車から楽しみたい」「強羅・大涌谷方面に足を伸ばしたい」目的に最適。片道420円程度（料金は変動、公式サイトで確認）、6月のあじさいシーズンは特に絵になる。営業時間は始発5時頃〜終電23時頃。湯本駅から強羅まで1日かけて足を伸ばすコースの起点として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根湯本駅 発（所要45分で強羅）"
+          },
+          {
+            "k": "料金",
+            "v": "箱根湯本〜強羅：460円（フリーパス推奨）"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "小田原観光5選",
+        "h": "/feature/new-odawara",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+      },
+      {
+        "t": "鎌倉雨の日5選",
+        "h": "/feature/new-kamakura-rainy",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+      }
+    ],
+    "quote": "奥まで行かなくても、湯と老舗の味が揃う。それが玄関口・箱根湯本の贅沢だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "新宿を朝のロマンスカーで発てば、10時半ごろには湯本のホームに降り立てる。まずは駅周辺の旅館で日帰り入浴を一風呂、昼前まで湯に身を委ねたい。昼は早川沿いの蕎麦屋でひと息つき、午後は商店街へ。丸嶋本店や菊川商店の温泉まんじゅう、鈴廣のかまぼこを物色しながら、早川の流れに沿って歩くだけで気分がほぐれる。土産を抱えたら、湯本駅から歩いてすぐの美術館でしばし静けさに浸り、最後は登山電車に乗り込む。スイッチバックで山肌を登っていく車窓が、温泉だけでは終わらない箱根の奥行きを見せてくれる。強羅で折り返して湯本へ戻り、夕方のロマンスカーで帰京——というのが無理のない一日の輪郭だ。週末午前のロマンスカーと日帰り入浴は埋まりやすいので、座席と最終受付の時刻だけは先に押さえておきたい。降っても温泉・旅館・蕎麦屋・土産店はすべて屋根の下で完結するから、雨の日こそ箱根湯本は強い。"
   },
-
-  // NG-24 ─────────────────────────────────────────────────
   "new-odawara": {
-    id: "new-odawara",
-    no: "NG-24", articleType: "guide", kicker: "ODAWARA SIGHTSEEING",
-    title: "小田原観光5選。小田原城と老舗グルメを楽しむ半日コース",
-    titleHTML: "小田原<br>観光5選。",
-    subtitle: "小田原城、かまぼこの里、小田原宿なりわい交流館。新幹線でも立ち寄れる城下町",
-    lede: "小田原は神奈川県西部、戦国時代の北条氏の城下町として栄えた歴史を持つ。東京から新幹線で約35分、東海道線でも約80分の距離で、箱根の玄関口としても機能する。対象は東京近郊で城下町を歩きたい人、干物・蒲鉾・海鮮の食文化を1日で制覇したい人、箱根への通り道に1日設ける家族。標準は10:00集合・17:00解散の7時間コース、予算は食事＋土産込みで1人5,000〜10,000円。ここでは小田原観光の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.odawara,
-    ranking: [
-      s(1, "小田原城", "史跡・城郭", "小田原",
-        "北条氏の居城。天守閣からは相模湾・富士山が見渡せる",
-        "小田原城は1417年に大森氏が築城、1495年に北条氏が拡張した戦国時代の名城。1960年に天守閣が復元され、現在は小田原城址公園として一般公開されている。「東京近郊で本格的な城を見たい」「春の桜の名所として訪れたい」観光客に最適。天守閣の入場は有料（公式サイトで確認）、城址公園の散策は無料。春の桜の季節は都内屈指の桜の名所で、約330本の桜が城を囲む。小田原駅から徒歩10分でアクセス可能。",
-        [I.odawara],
-        [
-          { k: "最寄り駅", v: "小田原駅 徒歩10分" },
-          { k: "入場料", v: "天守閣：大人510円" },
-          { k: "雨の日", v: "◎ 天守閣内は屋内" }]),
-      s(2, "小田原かまぼこの里（鈴廣）", "食体験・土産", "風祭",
-        "かまぼこの老舗・鈴廣の複合施設。製造体験・試食・土産",
-        "小田原かまぼこの里（鈴廣本店）は風祭駅徒歩1分、小田原蒲鉾の代表ブランド「鈴廣」の本店。「蒲鉾の工場見学・手作り体験・試食をしたい」観光客・家族に最適。工場見学は無料、手作り体験は要事前申込（1人2,000〜3,000円程度、公式で確認）。営業時間9〜18時、レストラン・物販・カフェも併設し1〜2時間滞在できる。小田原駅から箱根登山鉄道で1駅・約4分でアクセスできる。箱根方面への動線にも組み込みやすい。",
-        [I.odawara],
-        [
-          { k: "最寄り駅", v: "箱根登山鉄道 風祭駅 徒歩1分" },
-          { k: "体験料", v: "かまぼこ作り：1,500円程度" },
-          { k: "雨の日", v: "◎ 屋内" }]),
-      s(3, "小田原宿なりわい交流館", "歴史展示", "小田原",
-        "東海道小田原宿の歴史を伝える無料展示施設",
-        "小田原宿なりわい交流館は1932年築の旧建物を活用した観光案内・展示施設。「小田原の歴史的な街並みを体感したい」「無料の観光拠点を起点に動きたい」人に向く。営業時間10〜19時（4〜10月）、無料。館内では小田原の歴史・東海道宿場町の名残を展示し、観光情報も入手できる。小田原駅から徒歩7分、城下町散歩の起点として組み込みやすい。次の早川漁港方面への動線として徒歩・バスで繋がる。",
-        [I.odawara2],
-        [
-          { k: "最寄り駅", v: "小田原駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "◎" }]),
-      s(4, "小田原漁港（早川港）", "漁港・海鮮グルメ", "早川",
-        "地魚の直売と食堂が並ぶ漁港。アジ・金目鯛が名物",
-        "小田原漁港（早川港）はJR早川駅から徒歩5分、小田原の海産物拠点。「漁港直結の海鮮食堂で漁師飯を食べたい」観光客に最適。「魚国総本店」「魚市場食堂」「うを徳」など、アジフライ・刺身定食・海鮮丼が地元価格（1人1,500〜3,500円）で食べられる。営業時間11〜15時、土日は行列必至（予約推奨）。小田原駅から東海道線で1駅・約3分でアクセスできる。干物店も周辺に集中し、土産購入の動線として優秀。",
-        [I.odawara2],
-        [
-          { k: "最寄り駅", v: "JR・小田急 早川駅 徒歩5分" },
-          { k: "料金", v: "定食1,000〜2,000円程度" },
-          { k: "おすすめ時間", v: "朝〜昼（11:00〜14:00）" }]),
-      s(5, "小田原文学館・白秋童謡館", "文学館", "小田原",
-        "北原白秋ゆかりの場所。洋館の建物と庭が美しい",
-        "小田原文学館・白秋童謡館は小田原駅から徒歩約15分、白秋・梓みちよ・湯木貞一ゆかりの文学施設。「文学好きの大人」「小田原の文化を深掘りしたい」人に向く。1923年築の旧田中光顕別邸を利用した洋館建築で、建物自体が見応えがある。営業時間9〜17時、月曜休館（公式で確認）、入館料は変動。小田原城・小田原宿との徒歩動線で繋がる。",
-        [I.odawara],
-        [
-          { k: "最寄り駅", v: "小田原駅 徒歩12分" },
-          { k: "入館料", v: "300円" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("箱根湯本5選", "new-hakoneyumoto", I.yumoto),
-      side("三浦海岸5選", "new-miura-kaigan", I.miura)],
-    quote: "小田原は新幹線の停車駅でもあり、半日だけでも城・かまぼこ・漁港グルメを楽しめる。",
-    quoteCite: author,
-    closing: "標準動線: 小田原駅10:00→小田原城散策（10:00〜11:30）→小田原宿なりわい交流館（11:30〜12:00）→蒲鉾通り（鈴廣）で工場見学＋試食＋ランチ（12:00〜14:00）→早川漁港で海鮮ランチ追加または干物購入（14:00〜15:30）→小田原文学館・白秋童謡館（15:30〜17:00）→東海道散歩→箱根方面へ移動。所要7時間、予算は食事＋土産込みで1人5,000〜10,000円。桜の時期（3月末〜4月初旬）の小田原城は大混雑、平日朝または夕方推奨。雨の日は鈴廣かまぼこの里・小田原宿なりわい交流館・小田原文学館の屋内中心で完結できる。失敗しやすいのは「小田原城天守閣の閉門時間（16:30）を見落とす」「鈴廣の手作り体験の事前予約見落とし」「漁港食堂のランチタイム終了（15時）を見落とす」。事前に閉門時間・予約状況・食堂の営業時間を公式サイトで確認。この記事は東京近郊で城下町を歩きたい人、干物・蒲鉾・海鮮の食文化を1日で制覇したい人、箱根への通り道に1日設ける家族に向く。",
+    "id": "new-odawara",
+    "no": "NG-24",
+    "articleType": "guide",
+    "kicker": "ODAWARA SIGHTSEEING",
+    "title": "小田原、城と海をつなぐ城下町さんぽ。天守から漁港・文学館まで歩く",
+    "titleHTML": "小田原、城と海をつなぐ城下町さんぽ。<br>天守から漁港・文学館まで歩く",
+    "subtitle": "戦国の城、蒲鉾の里、早川の漁港、そして文人の館。海でつながる城下町をひと歩き",
+    "lede": "小田原という街は、城を中心にしていながら、いつも海の匂いがしている。北条五代が関東に睨みをきかせた戦国の城下でありながら、坂を下りれば相模湾がひらけ、漁師町の路地からは干物の香りが漂ってくる。城の威厳と、海の暮らし。本来なら噛み合わなそうなこの二つが、ここでは一日のなかで地続きにつながっているのが面白い。今回はその「城と海でできた城下町」という性格を一本の糸にして、復興天守を仰ぐ高台から、蒲鉾の本店、漁港の岸壁、そして海を見て暮らした文人の館までを足でつないで歩いてみる。新幹線が停まる駅から、すべて徒歩と短い移動圏に収まっているのも、この街の懐の深さだ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "小田原城",
+        "cuisine": "史跡・城郭",
+        "area": "小田原",
+        "purpose": "北条氏の居城。天守閣からは相模湾・富士山が見渡せる",
+        "desc": "小田原城は1417年に大森氏が築城、1495年に北条氏が拡張した戦国時代の名城。1960年に天守閣が復元され、現在は小田原城址公園として一般公開されている。「東京近郊で本格的な城を見たい」「春の桜の名所として訪れたい」観光客に最適。天守閣の入場は有料（公式サイトで確認）、城址公園の散策は無料。春の桜の季節は都内屈指の桜の名所で、約330本の桜が城を囲む。小田原駅から徒歩10分でアクセス可能。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "小田原駅 徒歩10分"
+          },
+          {
+            "k": "入場料",
+            "v": "天守閣：大人510円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 天守閣内は屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "小田原かまぼこの里（鈴廣）",
+        "cuisine": "食体験・土産",
+        "area": "風祭",
+        "purpose": "かまぼこの老舗・鈴廣の複合施設。製造体験・試食・土産",
+        "desc": "小田原かまぼこの里（鈴廣本店）は風祭駅徒歩1分、小田原蒲鉾の代表ブランド「鈴廣」の本店。「蒲鉾の工場見学・手作り体験・試食をしたい」観光客・家族に最適。工場見学は無料、手作り体験は要事前申込（1人2,000〜3,000円程度、公式で確認）。営業時間9〜18時、レストラン・物販・カフェも併設し1〜2時間滞在できる。小田原駅から箱根登山鉄道で1駅・約4分でアクセスできる。箱根方面への動線にも組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "箱根登山鉄道 風祭駅 徒歩1分"
+          },
+          {
+            "k": "体験料",
+            "v": "かまぼこ作り：1,500円程度"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎ 屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "小田原宿なりわい交流館",
+        "cuisine": "歴史展示",
+        "area": "小田原",
+        "purpose": "東海道小田原宿の歴史を伝える無料展示施設",
+        "desc": "小田原宿なりわい交流館は1932年築の旧建物を活用した観光案内・展示施設。「小田原の歴史的な街並みを体感したい」「無料の観光拠点を起点に動きたい」人に向く。営業時間10〜19時（4〜10月）、無料。館内では小田原の歴史・東海道宿場町の名残を展示し、観光情報も入手できる。小田原駅から徒歩7分、城下町散歩の起点として組み込みやすい。次の早川漁港方面への動線として徒歩・バスで繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Odawara_Castle_02.jpg/1280px-Odawara_Castle_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "小田原駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "小田原漁港（早川港）",
+        "cuisine": "漁港・海鮮グルメ",
+        "area": "早川",
+        "purpose": "地魚の直売と食堂が並ぶ漁港。アジ・金目鯛が名物",
+        "desc": "小田原漁港（早川港）はJR早川駅から徒歩5分、小田原の海産物拠点。「漁港直結の海鮮食堂で漁師飯を食べたい」観光客に最適。「魚国総本店」「魚市場食堂」「うを徳」など、アジフライ・刺身定食・海鮮丼が地元価格（1人1,500〜3,500円）で食べられる。営業時間11〜15時、土日は行列必至（予約推奨）。小田原駅から東海道線で1駅・約3分でアクセスできる。干物店も周辺に集中し、土産購入の動線として優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Odawara_Castle_02.jpg/1280px-Odawara_Castle_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR・小田急 早川駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "定食1,000〜2,000円程度"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "朝〜昼（11:00〜14:00）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "小田原文学館・白秋童謡館",
+        "cuisine": "文学館",
+        "area": "小田原",
+        "purpose": "北原白秋ゆかりの場所。洋館の建物と庭が美しい",
+        "desc": "小田原文学館・白秋童謡館は小田原駅から徒歩約15分、白秋・梓みちよ・湯木貞一ゆかりの文学施設。「文学好きの大人」「小田原の文化を深掘りしたい」人に向く。1923年築の旧田中光顕別邸を利用した洋館建築で、建物自体が見応えがある。営業時間9〜17時、月曜休館（公式で確認）、入館料は変動。小田原城・小田原宿との徒歩動線で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "小田原駅 徒歩12分"
+          },
+          {
+            "k": "入館料",
+            "v": "300円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "箱根湯本5選",
+        "h": "/feature/new-hakoneyumoto",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+      },
+      {
+        "t": "三浦海岸5選",
+        "h": "/feature/new-miura-kaigan",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+      }
+    ],
+    "quote": "城を仰いで一日が始まり、海の幸で締めくくる。小田原は、山の城と海の町が背中合わせに同居している。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝のうちに天守へ登って相模湾を見渡し、城下の町家で街道時代の空気に触れ、風祭で蒲鉾の生まれる現場をのぞき、早川の岸壁で揚がったばかりの魚を口にして、最後に海を愛した文人の館で一日を閉じる――この順でたどると、小田原が「城の街」でも「漁師町」でもなく、その両方でできた城下町だということが体で分かってくる。歩いてみて思うのは、ここでは歴史も食もすべて海につながっているということだ。なお、天守の閉門時刻や蒲鉾の手作り体験の予約枠、漁港食堂の昼の営業時間は季節や曜日でこまめに動くので、出かける前に各施設の公式案内へ一度目を通しておくと、坂の上で門が閉まっていた、食堂が終わっていた、という空振りを避けられる。城を見上げて歩き始め、海の幸で締める。小田原の一日は、その縦糸でちょうど一本に編み上がる。"
   },
-
-  // NG-25 ─────────────────────────────────────────────────
   "new-chigasaki-beach": {
-    id: "new-chigasaki-beach",
-    no: "NG-25", articleType: "guide", kicker: "CHIGASAKI BEACH",
-    title: "茅ヶ崎ビーチ5選。湘南のサーファーズパラダイスを歩く",
-    titleHTML: "茅ヶ崎<br>ビーチ5選。",
-    subtitle: "サザンビーチ、ヘッドランド、海沿いカフェ。茅ヶ崎で感じる湘南の空気",
-    lede: "茅ヶ崎は神奈川県中央南部、湘南海岸の中心都市。サザンビーチちがさき・烏帽子岩・茅ヶ崎海岸など海関連スポットが集まり、サーフィン文化の街として知られる。対象は湘南海岸でゆっくり散歩したい人、サザンオールスターズの聖地巡礼を組みたい人、サーフィン文化に触れたいカップル。標準は10:30集合・18:00解散の7時間30分コース、予算は1人3,000〜6,000円。東京から東海道線で約60分。",
-    date, reading: "約7分", author,
-    heroImage: I.chigasaki,
-    ranking: [
-      s(1, "サザンビーチちがさき", "海水浴場・砂浜", "茅ヶ崎",
-        "茅ヶ崎駅から徒歩15分。サザンオールスターズの聖地",
-        "サザンビーチちがさきは茅ヶ崎海岸の中心、約1.2kmの白い砂浜のビーチ。「夕日と海岸散歩をゆっくり楽しみたい」「サザンの聖地として訪れたい」観光客に最適。サザンオールスターズの聖地としても知られ、海岸前にはサザンの記念碑「茅ヶ崎サザンビーチちがさき・C」のモニュメントがある。夏は海水浴・サーフィンで賑わうが、それ以外の季節は朝・夕の散歩に最適。茅ヶ崎駅から徒歩約20分（バスもあり）。",
-        [I.chigasaki],
-        [
-          { k: "最寄り駅", v: "JR茅ヶ崎駅 徒歩15分" },
-          { k: "料金", v: "無料" },
-          { k: "おすすめ時間", v: "夕方（サンセット）" }]),
-      s(2, "ヘッドランド（突堤）", "サーフスポット・散策", "茅ヶ崎",
-        "人工突堤からの眺め。波が割れるサーフスポットとして有名",
-        "ヘッドランド（突堤）はサザンビーチちがさきの東端に整備された人工岬で、海に突き出た約100mの堤防。「海と烏帽子岩を間近で見たい」「写真スポットとして使いたい」観光客に向く。堤防の先端から烏帽子岩を望むロケーションが絶景で、サーファーの波待ちポイントとしても利用される。突堤は無料・24時間開放だが、強風時・荒天時は危険なため立入禁止になることがある。茅ヶ崎駅から徒歩約25分、サザンビーチから徒歩約5分。",
-        [I.chigasaki],
-        [
-          { k: "最寄り駅", v: "JR茅ヶ崎駅 徒歩20分" },
-          { k: "料金", v: "無料" }]),
-      s(3, "Tバー（チャーム茅ヶ崎）周辺カフェ群", "カフェ・ダイニング", "茅ヶ崎",
-        "海岸通り沿いのサーファーズカフェ。茅ヶ崎らしい雰囲気",
-        "Tバー（チャーム茅ヶ崎）周辺は茅ヶ崎駅南口から海岸方向にかけて、サーファー文化の中心地。「サーファースタイルの店を巡りたい」「海岸前のおしゃれカフェで過ごしたい」目的に向く。サーフショップ・スケートショップ・カフェ・ベーカリー・古着屋が並び、東京とは違う湘南スタイルの店構えが楽しめる。1人1,000〜2,500円程度のランチ・カフェが中心。営業時間は店舗による。",
-        [I.chigasaki],
-        [
-          { k: "最寄り駅", v: "JR茅ヶ崎駅 徒歩15〜20分" },
-          { k: "料金", v: "ランチ1,000〜2,500円程度" }]),
-      s(4, "旧相模川橋脚（国指定史跡）", "史跡", "茅ヶ崎",
-        "鎌倉時代の橋の橋脚が地震で出現。屋外の国指定史跡",
-        "旧相模川橋脚は茅ヶ崎駅から徒歩約15分、1923年関東大震災で隆起した相模川の旧橋脚跡。国指定史跡で、鎌倉時代の橋脚が残る稀有な遺跡。「歴史的な遺跡と海岸を組み合わせたい」考古学好きに向く。外観見学は無料、夜間ライトアップもあり（季節による）。茅ヶ崎駅から徒歩でアクセス可能。1時間程度の見学で他のスポットと組み合わせやすい。",
-        [I.chigasaki],
-        [
-          { k: "最寄り駅", v: "JR茅ヶ崎駅 徒歩30分 or 自転車15分" },
-          { k: "料金", v: "無料" }]),
-      s(5, "茅ヶ崎公園（里山の丘公園）", "自然公園", "茅ヶ崎",
-        "茅ヶ崎の内陸にある森の公園。里山の自然を保全",
-        "茅ヶ崎公園（里山の丘公園）は茅ヶ崎駅から徒歩約20分の市民公園で、芝生・池・遊歩道・里山区画が整備されている。「子供と外遊びをしたい」「自然散歩を楽しみたい」家族に向く。桜・紅葉の季節が美しく、地元の散歩客で賑わう。入園無料、平日は地元住民のローカルな雰囲気が楽しめる。海岸とは別の方向に位置するため、半日コースに組み込む際は時間配分を逆算する。",
-        [I.chigasaki],
-        [
-          { k: "最寄り駅", v: "JR茅ヶ崎駅 バス15分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }])],
-    sideArticles: [
-      side("江ノ島夕暮れデート5選", "new-enoshima-evening-date", I.enoshima),
-      side("藤沢で時間つぶし5選", "new-fujisawa-bored", I.enobch)],
-    quote: "茅ヶ崎は湘南の海とサーファー文化が一体になった場所。海岸線を歩くだけで湘南気分になれる。",
-    quoteCite: author,
-    closing: "標準動線: 茅ヶ崎駅10:30→海岸方向へ徒歩→サザンビーチで朝散歩（11:00〜12:00）→ヘッドランド突堤で景観撮影（12:00〜12:30）→Tバー周辺のサーフ系カフェでランチ（12:30〜14:00）→旧相模川橋脚で歴史散歩（14:00〜15:00）→茅ヶ崎公園で自然散策（15:30〜17:00）→海岸で夕日観賞（17:00〜18:00）。所要7時間30分、予算は1人3,000〜6,000円。夏のピーク（7〜8月）は海水浴客で混雑、その他の季節は静か。雨の日は屋内のサーフ系カフェ・茅ヶ崎美術館（茅ヶ崎駅から徒歩10分）に切り替えると傘最小限。失敗しやすいのは「夕日の時間（季節により17〜18時）を見逃して暗くなる前に駅に戻れない」「ヘッドランドの強風時の立入禁止を知らずに行く」「Tバー周辺の店の定休日を見落とす」。事前に天候・店舗営業日を公式サイトで確認、夕日のピーク時間に逆算して動き出す。この記事は湘南海岸でゆっくり散歩したい人、サザンオールスターズの聖地巡礼を組みたい人、サーフィン文化に触れたいカップルに最も向く。",
+    "id": "new-chigasaki-beach",
+    "no": "NG-25",
+    "articleType": "guide",
+    "kicker": "CHIGASAKI BEACH",
+    "title": "茅ヶ崎、海風をたどって歩く一日。サザンビーチから里山の丘まで",
+    "titleHTML": "茅ヶ崎、海風をたどって歩く一日。<br>サザンビーチから里山の丘まで",
+    "subtitle": "白い砂浜と烏帽子岩、サーフカルチャーの匂い。潮の音をなぞって茅ヶ崎をひと巡りする",
+    "lede": "東海道線が茅ヶ崎に近づくと、車窓の空気がすこし緩む。神奈川の中央南部、湘南海岸のまんなかにあるこの街は、駅に降り立った瞬間から潮の匂いがする。サザンビーチちがさき、沖に浮かぶ烏帽子岩、海沿いに点在するサーフ系の店。海とサーフカルチャーが溶け合ったこの土地は、目的地を急いで消化するより、潮風の向かう先をなんとなく追いかけて歩くのが似合う。今日はそんなふうに、駅から海へ、海から少し内陸へと、足の向くまま茅ヶ崎をひと巡りしてみる。東京からは東海道線で一時間ほど、思い立てば昼前には砂浜に立てる近さだ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "サザンビーチちがさき",
+        "cuisine": "海水浴場・砂浜",
+        "area": "茅ヶ崎",
+        "purpose": "茅ヶ崎駅から徒歩15分。サザンオールスターズの聖地",
+        "desc": "サザンビーチちがさきは茅ヶ崎海岸の中心、約1.2kmの白い砂浜のビーチ。「夕日と海岸散歩をゆっくり楽しみたい」「サザンの聖地として訪れたい」観光客に最適。サザンオールスターズの聖地としても知られ、海岸前にはサザンの記念碑「茅ヶ崎サザンビーチちがさき・C」のモニュメントがある。夏は海水浴・サーフィンで賑わうが、それ以外の季節は朝・夕の散歩に最適。茅ヶ崎駅から徒歩約20分（バスもあり）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR茅ヶ崎駅 徒歩15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方（サンセット）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "ヘッドランド（突堤）",
+        "cuisine": "サーフスポット・散策",
+        "area": "茅ヶ崎",
+        "purpose": "人工突堤からの眺め。波が割れるサーフスポットとして有名",
+        "desc": "ヘッドランド（突堤）はサザンビーチちがさきの東端に整備された人工岬で、海に突き出た約100mの堤防。「海と烏帽子岩を間近で見たい」「写真スポットとして使いたい」観光客に向く。堤防の先端から烏帽子岩を望むロケーションが絶景で、サーファーの波待ちポイントとしても利用される。突堤は無料・24時間開放だが、強風時・荒天時は危険なため立入禁止になることがある。茅ヶ崎駅から徒歩約25分、サザンビーチから徒歩約5分。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR茅ヶ崎駅 徒歩20分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "Tバー（チャーム茅ヶ崎）周辺カフェ群",
+        "cuisine": "カフェ・ダイニング",
+        "area": "茅ヶ崎",
+        "purpose": "海岸通り沿いのサーファーズカフェ。茅ヶ崎らしい雰囲気",
+        "desc": "Tバー（チャーム茅ヶ崎）周辺は茅ヶ崎駅南口から海岸方向にかけて、サーファー文化の中心地。「サーファースタイルの店を巡りたい」「海岸前のおしゃれカフェで過ごしたい」目的に向く。サーフショップ・スケートショップ・カフェ・ベーカリー・古着屋が並び、東京とは違う湘南スタイルの店構えが楽しめる。1人1,000〜2,500円程度のランチ・カフェが中心。営業時間は店舗による。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR茅ヶ崎駅 徒歩15〜20分"
+          },
+          {
+            "k": "料金",
+            "v": "ランチ1,000〜2,500円程度"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "旧相模川橋脚（国指定史跡）",
+        "cuisine": "史跡",
+        "area": "茅ヶ崎",
+        "purpose": "鎌倉時代の橋の橋脚が地震で出現。屋外の国指定史跡",
+        "desc": "旧相模川橋脚は茅ヶ崎駅から徒歩約15分、1923年関東大震災で隆起した相模川の旧橋脚跡。国指定史跡で、鎌倉時代の橋脚が残る稀有な遺跡。「歴史的な遺跡と海岸を組み合わせたい」考古学好きに向く。外観見学は無料、夜間ライトアップもあり（季節による）。茅ヶ崎駅から徒歩でアクセス可能。1時間程度の見学で他のスポットと組み合わせやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR茅ヶ崎駅 徒歩30分 or 自転車15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "茅ヶ崎公園（里山の丘公園）",
+        "cuisine": "自然公園",
+        "area": "茅ヶ崎",
+        "purpose": "茅ヶ崎の内陸にある森の公園。里山の自然を保全",
+        "desc": "茅ヶ崎公園（里山の丘公園）は茅ヶ崎駅から徒歩約20分の市民公園で、芝生・池・遊歩道・里山区画が整備されている。「子供と外遊びをしたい」「自然散歩を楽しみたい」家族に向く。桜・紅葉の季節が美しく、地元の散歩客で賑わう。入園無料、平日は地元住民のローカルな雰囲気が楽しめる。海岸とは別の方向に位置するため、半日コースに組み込む際は時間配分を逆算する。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR茅ヶ崎駅 バス15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "江ノ島夕暮れデート5選",
+        "h": "/feature/new-enoshima-evening-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+      },
+      {
+        "t": "藤沢で時間つぶし5選",
+        "h": "/feature/new-fujisawa-bored",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+      }
+    ],
+    "quote": "茅ヶ崎は、海岸線を歩いているだけで自然と肩の力が抜けていく街だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "駅から海へ向かって下りていくと、まずサザンビーチの白い砂浜が広がり、しばらく波打ち際を歩いて東端のヘッドランドまで足を伸ばす。突堤の先で烏帽子岩を眺めたら、Tバー周辺のサーフ系カフェに腰を落ち着けて昼を取る。午後は海を背に内陸へ折り返し、旧相模川橋脚で関東大震災が地中から押し上げた中世の遺構に少し時間を忘れ、最後は里山の丘公園で芝生に座って一日を閉じる。海と歴史と緑が短い距離に同居しているのが、この街を歩いていて飽きない理由だ。夕日が砂浜を染めるころに浜へ戻れば一日が美しく締まるが、日没の時刻は季節でずいぶん動くので、その日の入り時間だけは出発前に調べておくと安心できる。海辺の店は定休日や営業時間がまちまちなので、立ち寄りたい一軒があるなら最新の情報を公式で一度確かめておくといい。ヘッドランドは強風時に立入が制限されることがあるから、風の強い日は無理をせず手前から海を眺めるくらいがちょうどいい。歩き終えてみると、特別な何かを見たというより、潮の音と砂の感触がしばらく体に残る。それが茅ヶ崎を歩いた、という実感なのだと思う。"
   },
-
-  // NG-26 ─────────────────────────────────────────────────
   "new-fujisawa-bored": {
-    id: "new-fujisawa-bored",
-    no: "NG-26", articleType: "guide", kicker: "FUJISAWA TIME",
-    title: "藤沢で時間つぶし5選。江ノ島・湘南の拠点駅でできること",
-    titleHTML: "藤沢で<br>時間つぶし5選。",
-    subtitle: "藤沢駅周辺・鵠沼海岸・江ノ島。江ノ電の出発点で時間が空いたときのプラン",
-    lede: "藤沢は神奈川県中央南部、湘南エリアの中核都市で、東京から東海道線で約45分。JR・小田急・江ノ電が交差する交通の要所で、駅周辺に商業施設・商店街が広がる。対象は「江の島・鎌倉観光の中継として半日使いたい人」「藤沢駅周辺でショッピングと文化散歩を組み合わせたい人」「観光地化されていない湘南の生活感を体感したい人」。標準は11:00集合・17:00解散の6時間コース、予算は1人3,500〜6,000円。ここでは藤沢駅周辺〜鵠沼海岸〜江の島〜藤沢本町を組み合わせた5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.enobch,
-    ranking: [
-      s(1, "藤沢駅周辺ショッピング（藤沢ルミネ・サンパール広場）", "ショッピング", "藤沢駅",
-        "小田急・JR・江ノ電が集まる拠点駅のショッピング施設",
-        "藤沢駅直結のルミネ藤沢とサンパール広場周辺は、藤沢の駅前再開発で整備された商業ゾーン。ルミネ藤沢は2017年リニューアル後、ファッション・雑貨・カフェ・レストランが揃い、雨の日でも傘なしで入れる。「江の島・鎌倉観光に向かう途中で短時間お茶したい」「乗り換え待ちの1時間を有効に使いたい」人に向く。営業時間は店舗による（おおむね10〜21時、レストランは22時まで）。週末は地元客と観光客で賑わうが、平日午後は落ち着いて利用できる。次の動線として江ノ電・小田急どちらにも徒歩2分でアクセスできる利便性が強み。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "藤沢駅 直結・徒歩1分" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "鵠沼海岸（辻堂〜片瀬）", "海岸・散策", "鵠沼海岸",
-        "藤沢から自転車15分。湘南の広大な砂浜が続く",
-        "鵠沼海岸は藤沢市南部、相模湾に面した約2kmの砂浜海岸。藤沢駅から江ノ電で5分の鵠沼海岸駅、または小田急片瀬江ノ島駅から徒歩でアクセスできる。「サーフィンを眺めながら海岸を散歩したい」「観光客が少ない湘南を体験したい」人に向く。夏は海水浴客で混雑するが、それ以外の季節は地元のサーファーとランナーのローカルな景観が広がる。夕暮れ時は富士山のシルエットと組み合わさる絶景になることがあり、写真スポットとして優秀。海岸周辺はサーフショップ・小さなカフェが点在し、駅から徒歩10分以内に休憩スポットが見つかる。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "江ノ電 鵠沼海岸駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }]),
-      s(3, "江ノ島（藤沢からのアクセス）", "観光島", "片瀬江ノ島",
-        "藤沢から江ノ電で20分。島内の観光は2〜3時間",
-        "江の島は藤沢市の南端、片瀬海岸沖に浮かぶ周囲約4kmの島。藤沢駅から小田急の特急ロマンスカーで片瀬江ノ島駅まで約20分、江ノ電なら江ノ島駅から徒歩15分で島内に渡れる。「藤沢を通過点にせず、半日で江の島まで足を伸ばしたい」観光客に最も向く。島内には江島神社・シーキャンドル展望灯台・岩屋洞窟が点在し、しらす丼・たこせんべいの食べ歩きも定番。土日午後はピーク混雑、平日午前または夕方以降が現実的。夕方の島内夕日は湘南屈指の景観で、藤沢発の半日コースのハイライトになる。",
-        [I.enoshima],
-        [
-          { k: "最寄り駅", v: "江ノ電 片瀬江ノ島駅 （藤沢から20分）" },
-          { k: "料金", v: "江ノ電片道260円（フリーパス推奨）" }]),
-      s(4, "藤沢市民ギャラリー", "ギャラリー", "藤沢",
-        "無料で入れる市民ギャラリー。企画展が定期開催",
-        "藤沢市民ギャラリーは藤沢駅北口から徒歩約3分、ODAKYU湘南GATE6階に位置する市民向け展示施設。市民の絵画・写真・書道・工芸の作品展が中心で、ローカルアートに触れたい人にフィットする。営業時間10〜18時、企画展は無料の場合が多い（公式サイトで確認）。観光客がほぼ来ない区画で、平日午後は数組の地元客だけの落ち着いた時間帯になることが多い。藤沢市の文化発信拠点として、知る人ぞ知るスポット。次の動線として藤沢駅周辺の商業施設・遊行寺方向どちらにも徒歩で繋がる。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "藤沢駅 徒歩5分" },
-          { k: "料金", v: "無料（展示による）" },
-          { k: "雨の日", v: "◎" }]),
-      s(5, "藤沢本町・遊行寺", "寺院・散策", "藤沢本町",
-        "時宗の総本山・清浄光寺（遊行寺）。銀杏の大木が有名",
-        "遊行寺（清浄光寺）は藤沢駅から徒歩約10分、藤沢本町に位置する1325年創建の時宗の総本山。「時宗の歴史を学びたい」「観光地化されていない静かな寺院を歩きたい」人に向く。境内は無料で参拝可能、本堂・宝物館（一部有料）が見どころで、年に数回の大法要が開催される。東海道五十三次の藤沢宿を背景に持つ歴史的立地で、周辺は旧東海道の宿場町の名残が残る。観光客がほぼ来ないため、平日でも週末でも落ち着いて散策できる。拝観時間は9〜16時、月によっては早めに閉門するため事前確認推奨。",
-        [I.enobch],
-        [
-          { k: "最寄り駅", v: "小田急 藤沢本町駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△" }])],
-    sideArticles: [
-      side("茅ヶ崎ビーチ5選", "new-chigasaki-beach", I.chigasaki),
-      side("江ノ島夕暮れデート5選", "new-enoshima-evening-date", I.enoshima)],
-    quote: "藤沢は江ノ電・江ノ島への玄関口。時間が空いたら江ノ島まで足を延ばすのが湘南の楽しみ方。",
-    quoteCite: author,
-    closing: "標準動線: 藤沢駅11:00→ルミネ藤沢・サンパール広場でランチ＋休憩（11:00〜12:30）→遊行寺参拝（12:30〜13:30）→藤沢市民ギャラリー（13:30〜14:00）→江ノ電で鵠沼海岸へ（14:00〜15:30 海岸散歩）→江ノ電または小田急で江の島方向（15:30〜17:00 シーキャンドル・岩屋）→片瀬江ノ島駅から帰京。所要約6時間、予算は1人3,500〜6,000円が目安。観光地（江の島・鎌倉）よりも観光客が少なく、平日でも落ち着いた散歩ができる。土日午後は江の島だけが混雑するため、藤沢駅周辺・遊行寺は平日のような落ち着きで歩ける。雨の日はルミネ藤沢＋遊行寺（本堂は屋根あり）＋藤沢市民ギャラリーの屋内中心ルートで完結。失敗しやすいのは「藤沢を通過点と決めつけて時間を取らない」点と「江の島で時間を取りすぎて他を見落とす」点。藤沢駅で1〜2時間、江の島で2〜3時間、と時間配分を事前に決めて動き出すのが現実的。この記事は江の島・鎌倉観光のついでに藤沢市内も歩きたい人に向く。",
+    "id": "new-fujisawa-bored",
+    "no": "NG-26",
+    "articleType": "guide",
+    "kicker": "FUJISAWA TIME",
+    "title": "藤沢、江ノ電の起点をぶらり歩く。湘南の玄関口で過ごす空き時間",
+    "titleHTML": "藤沢、江ノ電の起点をぶらり歩く。<br>湘南の玄関口で過ごす空き時間",
+    "subtitle": "藤沢駅前から鵠沼の砂浜、江ノ島、そして遊行寺の参道へ。乗り換えの一駅で終わらせない街の歩き方",
+    "lede": "藤沢駅で電車を降りると、改札の上を行き交う人波に、どこか海へ向かう軽やかさが混じっている。JRと小田急、そして江ノ電が一点で交わるこの駅は、湘南という言葉が指す広い海辺の、ちょうど真ん中あたりの玄関にあたる。多くの人がここを江の島や鎌倉への通過点として駆け抜けていくけれど、改札を出て少し足を止めると、駅前の賑わいから砂浜の潮風、古い門前町の静けさまでが、案外狭い範囲に肩を寄せ合っているのが見えてくる。電車待ちの一時間でも、半日の空き時間でも、この街は表情を変えて付き合ってくれる。今日はその藤沢を、駅前から海へ、そして山あいの寺へと、気の向くまま歩いてみる。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "藤沢駅周辺ショッピング（藤沢ルミネ・サンパール広場）",
+        "cuisine": "ショッピング",
+        "area": "藤沢駅",
+        "purpose": "小田急・JR・江ノ電が集まる拠点駅のショッピング施設",
+        "desc": "藤沢駅直結のルミネ藤沢とサンパール広場周辺は、藤沢の駅前再開発で整備された商業ゾーン。ルミネ藤沢は2017年リニューアル後、ファッション・雑貨・カフェ・レストランが揃い、雨の日でも傘なしで入れる。「江の島・鎌倉観光に向かう途中で短時間お茶したい」「乗り換え待ちの1時間を有効に使いたい」人に向く。営業時間は店舗による（おおむね10〜21時、レストランは22時まで）。週末は地元客と観光客で賑わうが、平日午後は落ち着いて利用できる。次の動線として江ノ電・小田急どちらにも徒歩2分でアクセスできる利便性が強み。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "藤沢駅 直結・徒歩1分"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "鵠沼海岸（辻堂〜片瀬）",
+        "cuisine": "海岸・散策",
+        "area": "鵠沼海岸",
+        "purpose": "藤沢から自転車15分。湘南の広大な砂浜が続く",
+        "desc": "鵠沼海岸は藤沢市南部、相模湾に面した約2kmの砂浜海岸。藤沢駅から江ノ電で5分の鵠沼海岸駅、または小田急片瀬江ノ島駅から徒歩でアクセスできる。「サーフィンを眺めながら海岸を散歩したい」「観光客が少ない湘南を体験したい」人に向く。夏は海水浴客で混雑するが、それ以外の季節は地元のサーファーとランナーのローカルな景観が広がる。夕暮れ時は富士山のシルエットと組み合わさる絶景になることがあり、写真スポットとして優秀。海岸周辺はサーフショップ・小さなカフェが点在し、駅から徒歩10分以内に休憩スポットが見つかる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 鵠沼海岸駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "江ノ島（藤沢からのアクセス）",
+        "cuisine": "観光島",
+        "area": "片瀬江ノ島",
+        "purpose": "藤沢から江ノ電で20分。島内の観光は2〜3時間",
+        "desc": "江の島は藤沢市の南端、片瀬海岸沖に浮かぶ周囲約4kmの島。藤沢駅から小田急の特急ロマンスカーで片瀬江ノ島駅まで約20分、江ノ電なら江ノ島駅から徒歩15分で島内に渡れる。「藤沢を通過点にせず、半日で江の島まで足を伸ばしたい」観光客に最も向く。島内には江島神社・シーキャンドル展望灯台・岩屋洞窟が点在し、しらす丼・たこせんべいの食べ歩きも定番。土日午後はピーク混雑、平日午前または夕方以降が現実的。夕方の島内夕日は湘南屈指の景観で、藤沢発の半日コースのハイライトになる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "江ノ電 片瀬江ノ島駅 （藤沢から20分）"
+          },
+          {
+            "k": "料金",
+            "v": "江ノ電片道260円（フリーパス推奨）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "藤沢市民ギャラリー",
+        "cuisine": "ギャラリー",
+        "area": "藤沢",
+        "purpose": "無料で入れる市民ギャラリー。企画展が定期開催",
+        "desc": "藤沢市民ギャラリーは藤沢駅北口から徒歩約3分、ODAKYU湘南GATE6階に位置する市民向け展示施設。市民の絵画・写真・書道・工芸の作品展が中心で、ローカルアートに触れたい人にフィットする。営業時間10〜18時、企画展は無料の場合が多い（公式サイトで確認）。観光客がほぼ来ない区画で、平日午後は数組の地元客だけの落ち着いた時間帯になることが多い。藤沢市の文化発信拠点として、知る人ぞ知るスポット。次の動線として藤沢駅周辺の商業施設・遊行寺方向どちらにも徒歩で繋がる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "藤沢駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（展示による）"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "藤沢本町・遊行寺",
+        "cuisine": "寺院・散策",
+        "area": "藤沢本町",
+        "purpose": "時宗の総本山・清浄光寺（遊行寺）。銀杏の大木が有名",
+        "desc": "遊行寺（清浄光寺）は藤沢駅から徒歩約10分、藤沢本町に位置する1325年創建の時宗の総本山。「時宗の歴史を学びたい」「観光地化されていない静かな寺院を歩きたい」人に向く。境内は無料で参拝可能、本堂・宝物館（一部有料）が見どころで、年に数回の大法要が開催される。東海道五十三次の藤沢宿を背景に持つ歴史的立地で、周辺は旧東海道の宿場町の名残が残る。観光客がほぼ来ないため、平日でも週末でも落ち着いて散策できる。拝観時間は9〜16時、月によっては早めに閉門するため事前確認推奨。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "小田急 藤沢本町駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "茅ヶ崎ビーチ5選",
+        "h": "/feature/new-chigasaki-beach",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+      },
+      {
+        "t": "江ノ島夕暮れデート5選",
+        "h": "/feature/new-enoshima-evening-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+      }
+    ],
+    "quote": "江ノ電のホームに立つと、もう海の匂いがする。乗り換えのつもりが、ついそのまま波打ち際まで歩いてしまう街だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "駅前のルミネで遅い昼を済ませ、サンパール広場のベンチでひと息ついたら、江ノ電のホームへ降りていく。五分も揺られないうちに鵠沼海岸の駅に着き、改札を抜けた先には相模湾が広がっている。サーファーの黒い影を眺めながら砂浜を歩き、潮風に飽きたころ片瀬江ノ島へ。橋を渡って島に入り、参道の石段を上ってシーキャンドルや岩屋の奥まで足を延ばせば、ふと振り返ったとき夕方の光が海面で揺れている。海から駅へ戻る途中、北口側のODAKYU湘南GATEに寄れば、市民ギャラリーの展示が無料で開いていることもある。地元の人が描いた絵や写真を眺めて街の素顔に触れたら、最後は本町まで歩いて遊行寺へ。広い参道を上りきった先の境内は、駅前の喧騒が嘘のように静かで、時宗の総本山らしい落ち着きが残っている。海と門前町、その両方を一日のうちに行き来できるのが藤沢の懐の深さだ。江の島の岩屋やシーキャンドルは時期によって営業や入場の扱いが変わるので、出かける前に公式の案内を一度のぞいておくと安心して歩ける。通過点と決めつけずに改札を出てみると、湘南の中心はこんなに豊かだったのかと、歩き終えてから気づくはずだ。"
   },
-
-  // NG-27 ─────────────────────────────────────────────────
   "new-yokosuka-dobuita": {
-    id: "new-yokosuka-dobuita",
-    no: "NG-27", articleType: "guide", kicker: "YOKOSUKA DOBUITA",
-    title: "横須賀どぶ板通り5選。米軍基地の街で日本離れした体験を",
-    titleHTML: "横須賀<br>どぶ板通り5選。",
-    subtitle: "どぶ板通り、猿島、三笠公園。横須賀の独自文化とアメリカンな空気",
-    lede: "横須賀は神奈川県東部、三浦半島の入口に位置する旧軍港都市。対象は「ミリタリー・アメリカ文化に興味がある人」「日本の海軍史に触れたい人」「東京近郊で異文化体験をしたい人」。標準は11:00集合・18:00解散の7時間コース、予算は食事＋艦見学＋遊覧船込みで1人6,000〜10,000円。どぶ板通り・戦艦三笠・猿島・ヴェルニー公園・横須賀美術館と性格の違うスポットが半日〜1日で組み合わさる。ここでは初訪問でも回りやすい横須賀の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.dobuita,
-    ranking: [
-      s(1, "どぶ板通り", "ショッピング・グルメ", "横須賀中央",
-        "米海軍横須賀基地隣接の商店街。横須賀バーガー・タトゥー・米軍放出品",
-        "どぶ板通りは横須賀本町2〜3丁目に約300m続く商店街で、戦後米軍兵士相手に発展した「リトルアメリカ」の象徴。スカジャン専門店・ミリタリーショップ・米軍兵士行きつけのアメリカン食堂・バーが今も並ぶ。「ミリタリー・スカジャン文化に触れたい」「ヨコスカネイビーバーガー・海軍カレーを食べ歩きたい」人に最も向く。営業時間は店舗による（おおむね10〜23時、バーは深夜まで）。週末は観光客で賑わうが、平日午後は地元客と兵士のローカルな雰囲気が残る。横須賀中央駅から徒歩15分、京急汐入駅からも徒歩5分でアクセスできる。",
-        [I.dobuita],
-        [
-          { k: "最寄り駅", v: "京急 汐入駅 徒歩3分" },
-          { k: "料金", v: "バーガー1,500〜2,000円程度" }]),
-      s(2, "猿島（東京湾唯一の無人島）", "島・史跡", "猿島",
-        "横須賀港からフェリー10分。幕末の要塞跡が残る無人島",
-        "猿島は東京湾唯一の無人島で、横須賀本港から船で約10分の沖合に浮かぶ。明治期の旧日本軍要塞跡が島内に残り、トンネル・砲台跡・煉瓦造りの兵舎が探検気分で歩ける。「廃墟・要塞遺構を歩きたい」「海と歴史を組み合わせたい」人に最適。渡船は1日数便（料金・運航時間は公式サイトで確認）、所要は島内散策含めて2〜3時間。夏期は海水浴・BBQでにぎわうが、秋〜春は静かな史跡散歩として歩ける。悪天候時は欠航することがあるため、当日の運航状況の事前確認が必須。",
-        [I.dobuita],
-        [
-          { k: "最寄り駅", v: "横須賀中央駅 徒歩15分（三笠桟橋から乗船）" },
-          { k: "フェリー料金", v: "往復1,300円（別途入島料300円）" },
-          { k: "雨の日", v: "✕（海況による）" }]),
-      s(3, "三笠公園・戦艦三笠", "史跡・公園", "横須賀",
-        "日本海海戦で活躍した戦艦三笠が保存展示。公園も広大",
-        "三笠公園は横須賀本港に隣接する公園で、戦艦三笠（1902年竣工、日露戦争の旗艦）が記念艦として保存・展示されている。「日本の海軍史に触れたい」「明治の艦艇を内部から見たい」歴史好きに最も向く。戦艦三笠の内部見学（料金は公式サイトで確認）は艦橋・砲塔・士官室まで歩ける珍しい体験。公園内は無料、海と艦の景色が絵になる。横須賀中央駅から徒歩15分、京急汐入駅からも徒歩10分。営業時間は季節により変動するため公式サイトで確認、月曜は休艦日。",
-        [I.dobuita],
-        [
-          { k: "最寄り駅", v: "京急 横須賀中央駅 徒歩15分" },
-          { k: "入場料", v: "500円（三笠艦内）" },
-          { k: "雨の日", v: "○ 艦内は屋内" }]),
-      s(4, "ヴェルニー公園（横須賀港ビュー）", "公園", "横須賀",
-        "海上自衛隊・米海軍の艦船が見える港沿いの公園",
-        "ヴェルニー公園は横須賀駅前の市民公園で、フランス式庭園として整備されている。「桜とバラの花と港の眺望を組み合わせたい」「フランス造船師ヴェルニーの歴史に触れたい」人に向く。対岸の海上自衛隊基地・米軍基地が海越しに眺められるロケーションで、横須賀ならではの景観。ヴェルニー記念館（造船記念館）も併設されている（営業時間9〜17時、月曜休館）。桜（4月）・バラ（5〜6月、10〜11月）の季節が特に美しい。横須賀駅から徒歩1分の駅近で、駅と他のスポットを繋ぐ動線の起点になる。",
-        [I.dobuita],
-        [
-          { k: "最寄り駅", v: "JR横須賀駅 徒歩2分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "△（屋外）" }]),
-      s(5, "横須賀美術館", "美術館", "観音崎",
-        "相模湾を望む丘の上の美術館。建物と自然環境が一体",
-        "横須賀美術館は観音崎の高台、東京湾を見下ろすロケーションに2007年開館した美術館。「海を見ながらアートを鑑賞したい」建築・現代美術が好きな人に最も向く。建物は山本理顕設計の現代建築で、展示空間そのものが見応えのある作品。横須賀ゆかりの作家や近現代美術を中心に企画展を展開する。営業時間10〜18時、第1月曜休館（公式サイトで確認）。横須賀中央駅からバス約30分または車で15分、市街地から少し離れるためアクセスに時間を見ておく。",
-        [I.dobuita],
-        [
-          { k: "最寄り駅", v: "横須賀中央駅 バス約30分" },
-          { k: "入館料", v: "コレクション展：300円" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("三浦海岸5選", "new-miura-kaigan", I.miura),
-      side("小田原観光5選", "new-odawara", I.odawara)],
-    quote: "どぶ板通りのアメリカンな雰囲気と猿島の幕末遺跡は、横須賀でしか体験できない景色。",
-    quoteCite: author,
-    closing: "標準動線: 横須賀中央駅11:00→どぶ板通り散策＋ランチ（11:00〜13:00）→三笠公園で戦艦三笠見学（13:30〜15:00）→三笠桟橋から猿島へ（15:00〜17:00 島内探検）→ヴェルニー公園で夕景（17:30〜18:30）→横須賀美術館は1日コース化する場合に追加。所要約7時間、予算は食事＋艦見学＋猿島往復込みで1人6,000〜10,000円。週末は猿島の渡船が満席必至（特に夏期）、平日または事前予約推奨。雨の日は猿島が欠航することが多いため、屋内のどぶ板通り店舗・戦艦三笠艦内・横須賀美術館に切り替えて短縮版で動ける。失敗しやすいのは「猿島の運航時間を見落として最終便を逃す」点と「ドブ板通りで時間を使いすぎて三笠公園が閉館後になる」点。猿島往復は所要2〜3時間、戦艦三笠は1〜1.5時間、ドブ板通りは1〜2時間と時間配分を逆算して動き出す。この記事はミリタリー・スカジャン文化・海軍史に興味があるカップル・男性グループに最も向く。",
+    "id": "new-yokosuka-dobuita",
+    "no": "NG-27",
+    "articleType": "course",
+    "kicker": "YOKOSUKA DOBUITA",
+    "title": "横須賀どぶ板通りから始める半日コース。米軍基地の街で日本離れした一日を歩く",
+    "titleHTML": "横須賀どぶ板通りから始める半日コース。<br>米軍基地の街で日本離れした一日を歩く",
+    "subtitle": "スカジャンの商店街から戦艦三笠、無人島の要塞跡まで。横須賀だけのアメリカンと海軍史を一筆書きでつなぐ",
+    "lede": "横須賀は三浦半島の入口に開けた旧軍港の街で、いまも米軍基地が暮らしの隣にある。だから商店街にスカジャンが並び、英語の看板の食堂からハンバーガーの匂いが流れ、その先に明治の戦艦と無人島の要塞跡が控えている——この密度を一日で味わうには、歩く順番が効く。米軍文化の濃いどぶ板通りで足を慣らし、海軍史の三笠で時代をさかのぼり、最後に船で猿島へ渡って異界の遺構に踏み込む。基地の街のアメリカンと、日本の海をめぐる近代史が、駅から港へ向かう一本の線の上に並ぶように設計したのがこのコースだ。船の便や見学の所要は季節で動くので、出発前に運航・開館の最新情報だけは公式でひと目見ておきたい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "どぶ板通り",
+        "cuisine": "ショッピング・グルメ",
+        "area": "横須賀中央",
+        "purpose": "米海軍横須賀基地隣接の商店街。横須賀バーガー・タトゥー・米軍放出品",
+        "desc": "どぶ板通りは横須賀本町2〜3丁目に約300m続く商店街で、戦後米軍兵士相手に発展した「リトルアメリカ」の象徴。スカジャン専門店・ミリタリーショップ・米軍兵士行きつけのアメリカン食堂・バーが今も並ぶ。「ミリタリー・スカジャン文化に触れたい」「ヨコスカネイビーバーガー・海軍カレーを食べ歩きたい」人に最も向く。営業時間は店舗による（おおむね10〜23時、バーは深夜まで）。週末は観光客で賑わうが、平日午後は地元客と兵士のローカルな雰囲気が残る。横須賀中央駅から徒歩15分、京急汐入駅からも徒歩5分でアクセスできる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "京急 汐入駅 徒歩3分"
+          },
+          {
+            "k": "料金",
+            "v": "バーガー1,500〜2,000円程度"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "猿島（東京湾唯一の無人島）",
+        "cuisine": "島・史跡",
+        "area": "猿島",
+        "purpose": "横須賀港からフェリー10分。幕末の要塞跡が残る無人島",
+        "desc": "猿島は東京湾唯一の無人島で、横須賀本港から船で約10分の沖合に浮かぶ。明治期の旧日本軍要塞跡が島内に残り、トンネル・砲台跡・煉瓦造りの兵舎が探検気分で歩ける。「廃墟・要塞遺構を歩きたい」「海と歴史を組み合わせたい」人に最適。渡船は1日数便（料金・運航時間は公式サイトで確認）、所要は島内散策含めて2〜3時間。夏期は海水浴・BBQでにぎわうが、秋〜春は静かな史跡散歩として歩ける。悪天候時は欠航することがあるため、当日の運航状況の事前確認が必須。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横須賀中央駅 徒歩15分（三笠桟橋から乗船）"
+          },
+          {
+            "k": "フェリー料金",
+            "v": "往復1,300円（別途入島料300円）"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕（海況による）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "三笠公園・戦艦三笠",
+        "cuisine": "史跡・公園",
+        "area": "横須賀",
+        "purpose": "日本海海戦で活躍した戦艦三笠が保存展示。公園も広大",
+        "desc": "三笠公園は横須賀本港に隣接する公園で、戦艦三笠（1902年竣工、日露戦争の旗艦）が記念艦として保存・展示されている。「日本の海軍史に触れたい」「明治の艦艇を内部から見たい」歴史好きに最も向く。戦艦三笠の内部見学（料金は公式サイトで確認）は艦橋・砲塔・士官室まで歩ける珍しい体験。公園内は無料、海と艦の景色が絵になる。横須賀中央駅から徒歩15分、京急汐入駅からも徒歩10分。営業時間は季節により変動するため公式サイトで確認、月曜は休艦日。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "京急 横須賀中央駅 徒歩15分"
+          },
+          {
+            "k": "入場料",
+            "v": "500円（三笠艦内）"
+          },
+          {
+            "k": "雨の日",
+            "v": "○ 艦内は屋内"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "ヴェルニー公園（横須賀港ビュー）",
+        "cuisine": "公園",
+        "area": "横須賀",
+        "purpose": "海上自衛隊・米海軍の艦船が見える港沿いの公園",
+        "desc": "ヴェルニー公園は横須賀駅前の市民公園で、フランス式庭園として整備されている。「桜とバラの花と港の眺望を組み合わせたい」「フランス造船師ヴェルニーの歴史に触れたい」人に向く。対岸の海上自衛隊基地・米軍基地が海越しに眺められるロケーションで、横須賀ならではの景観。ヴェルニー記念館（造船記念館）も併設されている（営業時間9〜17時、月曜休館）。桜（4月）・バラ（5〜6月、10〜11月）の季節が特に美しい。横須賀駅から徒歩1分の駅近で、駅と他のスポットを繋ぐ動線の起点になる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR横須賀駅 徒歩2分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "△（屋外）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "横須賀美術館",
+        "cuisine": "美術館",
+        "area": "観音崎",
+        "purpose": "相模湾を望む丘の上の美術館。建物と自然環境が一体",
+        "desc": "横須賀美術館は観音崎の高台、東京湾を見下ろすロケーションに2007年開館した美術館。「海を見ながらアートを鑑賞したい」建築・現代美術が好きな人に最も向く。建物は山本理顕設計の現代建築で、展示空間そのものが見応えのある作品。横須賀ゆかりの作家や近現代美術を中心に企画展を展開する。営業時間10〜18時、第1月曜休館（公式サイトで確認）。横須賀中央駅からバス約30分または車で15分、市街地から少し離れるためアクセスに時間を見ておく。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "横須賀中央駅 バス約30分"
+          },
+          {
+            "k": "入館料",
+            "v": "コレクション展：300円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "三浦海岸5選",
+        "h": "/feature/new-miura-kaigan",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+      },
+      {
+        "t": "小田原観光5選",
+        "h": "/feature/new-odawara",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+      }
+    ],
+    "quote": "アメリカンなどぶ板通りと、無人島に眠る幕末・明治の要塞跡。この二つが地続きなのは、日本広しといえど横須賀だけだ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "横須賀中央駅を午前11時に出て、まずはどぶ板通りへ。スカジャンの専門店やミリタリーショップを冷やかしながら、昼はアメリカン食堂でボリュームのある一皿を腹に入れる。13時すぎに三笠公園へ移り、記念艦・戦艦三笠の艦内をひと回りすれば、商店街の空気から一転して日露戦争の旗艦の甲板に立っている。15時、三笠桟橋から船に乗れば10分で猿島。トンネルや煉瓦の兵舎跡を抜けていくうち、ここが東京湾に浮かぶ無人島だと忘れそうになる。最終便で港へ戻り、夕方はヴェルニー公園で潜水艦と港の灯りを眺めてしめる——美術館まで足を延ばすなら、これを丸一日コースに広げるとよい。コツは時間の逆算で、猿島の往復に2〜3時間、三笠に1時間強、どぶ板に1〜2時間と見ておくと、最終便を逃したり三笠の閉館に間に合わなかったりという取りこぼしが減る。風の強い日や悪天の猿島は欠航しやすいので、その日は屋内のどぶ板の店、三笠の艦内、横須賀美術館に振り替えて短縮版でも十分楽しめる。運航ダイヤと各施設の時間は変わりうるから、当日の動き出し前に公式でもう一度たしかめておくと安心だ。"
   },
-
-  // NG-28 ─────────────────────────────────────────────────
   "new-miura-kaigan": {
-    id: "new-miura-kaigan",
-    no: "NG-28", articleType: "guide", kicker: "MIURA KAIGAN",
-    title: "三浦海岸5選。東京から最も近い本格的な海でできること",
-    titleHTML: "三浦海岸<br>5選。",
-    subtitle: "三浦海岸、城ヶ島、三崎港のマグロ。三浦半島の先端まで行く価値",
-    lede: "三浦海岸は神奈川県三浦半島の最南端、東京から京急で約1時間20分。白い砂浜と相模湾の眺望、地元産マグロ・三浦野菜のグルメが楽しめる、日帰り観光に最適なエリア。対象は東京近郊で日帰り海岸旅行を組みたい人、マグロを食べに行きたい食通、桜と菜の花の早咲きを見たい人。標準は10:30集合・18:00解散の7時間30分コース、予算は食事＋土産込みで1人5,000〜9,000円。ここでは三浦海岸の5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.miura,
-    ranking: [
-      s(1, "三浦海岸", "海水浴場", "三浦海岸",
-        "京急で都内から約70分。透明度の高い砂浜と水平線",
-        "三浦海岸は約1kmの白い砂浜のビーチ。京急三浦海岸駅から徒歩5分の駅近。「東京から日帰りで海岸散歩を楽しみたい」「サーファーの早朝活動を見たい」観光客に最適。夏は海水浴客で賑わうが、それ以外の季節は朝・夕の散歩道として静か。夕日が美しく、富士山が見える日もある。サーファーが朝・夕に集まる場所でもある。",
-        [I.miura],
-        [
-          { k: "最寄り駅", v: "京急 三浦海岸駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "おすすめ時間", v: "晴天時、午前〜夕方" }]),
-      s(2, "城ヶ島", "離島・自然", "三浦市城ヶ島",
-        "三浦半島南端の小島。断崖と磯が続く自然景観",
-        "城ヶ島は三浦半島最南端の小島で、相模湾の絶景スポット。「夕日と富士山の組み合わせを写真に撮りたい」観光客に最適。城ヶ島大橋を歩いて渡れる（または車で）、島内には灯台・遊歩道・洞窟が点在。京急三崎口駅からバスでアクセス、所要約30分。夕日と富士山の組み合わせは三浦半島屈指の景観で、午後遅めの時間に訪れるのが現実的。島内散策は2〜3時間あれば一周できる規模。",
-        [I.miura2],
-        [
-          { k: "最寄り駅", v: "三崎口駅 バス25分" },
-          { k: "料金", v: "無料（公園内）" },
-          { k: "雨の日", v: "✕ 屋外" }]),
-      s(3, "三崎港・まぐろの食堂街", "海鮮グルメ", "三崎港",
-        "マグロの水揚げ量で知られる漁港。地魚・まぐろ定食",
-        "三崎港は三浦市の中心漁港で、マグロ漁港として有名。「マグロを地元価格で食べたい」「漁師の店で本格的な海鮮を体験したい」食通に最適。港周辺には「うらり」「魚音」「庄和丸」など海鮮丼・鮪料理の店が並ぶ。1人2,500〜5,000円程度、地元の漁師が運営する店も多い。三浦海岸駅からバスで約20分、または京急三崎口駅から徒歩。営業時間は店舗による（おおむね11〜15時、夜は予約営業）。",
-        [I.miura2],
-        [
-          { k: "最寄り駅", v: "三崎口駅 バス20分" },
-          { k: "料金", v: "まぐろ定食1,500〜2,500円" },
-          { k: "おすすめ時間", v: "ランチ（11:00〜14:00）" }]),
-      s(4, "剱崎（けんざき）灯台", "灯台・自然", "三浦市剱崎",
-        "三浦半島東岸の灯台。東京湾入口を見渡す展望地",
-        "剱崎（けんざき）灯台は三浦半島の南東端、東京湾の入口に建つ灯台。「東京湾を一望したい」「観光客の少ない穴場スポットを探したい」目的に向く。1871年初点灯、現存する灯台のなかでは古い部類。灯台周辺は遊歩道として整備され、太平洋・東京湾の両方の景色が見られる。三浦海岸駅または京急三崎口駅からバス＋徒歩でアクセス、所要約40分。車での訪問が現実的、駐車場は少数。",
-        [I.miura],
-        [
-          { k: "最寄り駅", v: "三崎口駅 バス・タクシー15分" },
-          { k: "料金", v: "無料" }]),
-      s(5, "三浦海岸 河津桜まつり（1〜2月）", "季節イベント", "三浦海岸",
-        "日本一早咲きの河津桜と菜の花。1月下旬〜2月末が見頃",
-        "三浦海岸 河津桜まつりは2月中旬〜3月初旬、京急三浦海岸駅から徒歩約15分の場所で開催される早咲き桜のまつり。「早春の桜と菜の花の組み合わせを見たい」観光客に最適。約1,000本の河津桜が満開になり、菜の花とのコントラストが美しい。祭り期間中は屋台・物産展も出店、地元のマグロ料理も楽しめる。東京から日帰り可能で、2〜3月の春の風物詩として人気が高い。祭り期間外は静かな桜並木として散歩できる。",
-        [I.miura],
-        [
-          { k: "最寄り駅", v: "京急 三浦海岸駅 徒歩1分" },
-          { k: "期間", v: "1月下旬〜2月末頃（年により変動）" },
-          { k: "料金", v: "無料" }])],
-    sideArticles: [
-      side("横須賀どぶ板5選", "new-yokosuka-dobuita", I.dobuita),
-      side("茅ヶ崎ビーチ5選", "new-chigasaki-beach", I.chigasaki)],
-    quote: "三浦海岸は「東京から一番近い本格的な海」として、日帰りで海気分を味わいたいときの定番。",
-    quoteCite: author,
-    closing: "標準動線: 京急三浦海岸駅10:30→三浦海岸で散歩（10:30〜12:00）→駅前バスで三崎港へ（12:00〜12:30）→三崎港で海鮮ランチ（12:30〜14:30）→城ヶ島散策（14:30〜16:30）→剱崎灯台（時間が許せば追加、または別日）→三浦海岸駅周辺で野菜土産購入→京急で帰京。所要7時間30分、予算は食事＋土産込みで1人5,000〜9,000円。夏のピーク（7〜8月）は海水浴客で混雑、それ以外の季節は落ち着いて回れる。雨の日は屋内の食事処と道の駅の組み合わせで完結。失敗しやすいのは「三崎港のランチタイム終了（15時）を見落とす」「城ヶ島のバスの本数が少ないことを知らずに移動」「剱崎まで足を伸ばして時間切れになる」。事前にバスの時刻表と店舗の営業時間を公式サイトで確認、剱崎は別日コース化が現実的。この記事は東京近郊で日帰り海岸旅行を組みたい人、マグロを食べに行きたい食通、河津桜の早咲きを見たい人に向く。",
+    "id": "new-miura-kaigan",
+    "no": "NG-28",
+    "articleType": "course",
+    "kicker": "MIURA KAIGAN",
+    "title": "三浦海岸から三崎港へ、海を一日歩く半日コース。砂浜・城ヶ島・マグロまで",
+    "titleHTML": "三浦海岸から三崎港へ、海を一日歩く半日コース。<br>砂浜・城ヶ島・マグロまで",
+    "subtitle": "京急で約1時間20分。白い砂浜から相模湾の岬、漁港のマグロまで、三浦半島の先端をひとつながりに味わう一日",
+    "lede": "三浦海岸は、東京から京急でわずか1時間20分ほどの距離にありながら、駅を降りた瞬間に潮の匂いが変わる、紛れもなく「本物の海」の街だ。観光地として作り込まれた風景ではなく、サーファーが朝を過ごし、漁師がマグロを水揚げし、早春には河津桜が線路沿いを彩る——そんな生活と海が地続きになった土地である。だからこのコースは、ひとつの名所を目指すのではなく、砂浜・岬・漁港という三浦半島の三つの顔を、北から南へ海岸線をなぞるように歩く半日の行程として組んだ。三浦海岸駅で朝の砂浜に立ち、バスで三崎港へ下って地元価格のマグロを腹に収め、最南端の城ヶ島で相模湾の絶景に締めくくる。歩く距離は短くないが、その一日で三浦の海をひととおり体に入れられる、欲張りなようで理にかなった回り方だ。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "三浦海岸",
+        "cuisine": "海水浴場",
+        "area": "三浦海岸",
+        "purpose": "京急で都内から約70分。透明度の高い砂浜と水平線",
+        "desc": "三浦海岸は約1kmの白い砂浜のビーチ。京急三浦海岸駅から徒歩5分の駅近。「東京から日帰りで海岸散歩を楽しみたい」「サーファーの早朝活動を見たい」観光客に最適。夏は海水浴客で賑わうが、それ以外の季節は朝・夕の散歩道として静か。夕日が美しく、富士山が見える日もある。サーファーが朝・夕に集まる場所でもある。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "京急 三浦海岸駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "晴天時、午前〜夕方"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "城ヶ島",
+        "cuisine": "離島・自然",
+        "area": "三浦市城ヶ島",
+        "purpose": "三浦半島南端の小島。断崖と磯が続く自然景観",
+        "desc": "城ヶ島は三浦半島最南端の小島で、相模湾の絶景スポット。「夕日と富士山の組み合わせを写真に撮りたい」観光客に最適。城ヶ島大橋を歩いて渡れる（または車で）、島内には灯台・遊歩道・洞窟が点在。京急三崎口駅からバスでアクセス、所要約30分。夕日と富士山の組み合わせは三浦半島屈指の景観で、午後遅めの時間に訪れるのが現実的。島内散策は2〜3時間あれば一周できる規模。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Miura_Kaigan_02.jpg/1280px-Miura_Kaigan_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "三崎口駅 バス25分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（公園内）"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕ 屋外"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "三崎港・まぐろの食堂街",
+        "cuisine": "海鮮グルメ",
+        "area": "三崎港",
+        "purpose": "マグロの水揚げ量で知られる漁港。地魚・まぐろ定食",
+        "desc": "三崎港は三浦市の中心漁港で、マグロ漁港として有名。「マグロを地元価格で食べたい」「漁師の店で本格的な海鮮を体験したい」食通に最適。港周辺には「うらり」「魚音」「庄和丸」など海鮮丼・鮪料理の店が並ぶ。1人2,500〜5,000円程度、地元の漁師が運営する店も多い。三浦海岸駅からバスで約20分、または京急三崎口駅から徒歩。営業時間は店舗による（おおむね11〜15時、夜は予約営業）。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Miura_Kaigan_02.jpg/1280px-Miura_Kaigan_02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "三崎口駅 バス20分"
+          },
+          {
+            "k": "料金",
+            "v": "まぐろ定食1,500〜2,500円"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "ランチ（11:00〜14:00）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "剱崎（けんざき）灯台",
+        "cuisine": "灯台・自然",
+        "area": "三浦市剱崎",
+        "purpose": "三浦半島東岸の灯台。東京湾入口を見渡す展望地",
+        "desc": "剱崎（けんざき）灯台は三浦半島の南東端、東京湾の入口に建つ灯台。「東京湾を一望したい」「観光客の少ない穴場スポットを探したい」目的に向く。1871年初点灯、現存する灯台のなかでは古い部類。灯台周辺は遊歩道として整備され、太平洋・東京湾の両方の景色が見られる。三浦海岸駅または京急三崎口駅からバス＋徒歩でアクセス、所要約40分。車での訪問が現実的、駐車場は少数。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "三崎口駅 バス・タクシー15分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "三浦海岸 河津桜まつり（1〜2月）",
+        "cuisine": "季節イベント",
+        "area": "三浦海岸",
+        "purpose": "日本一早咲きの河津桜と菜の花。1月下旬〜2月末が見頃",
+        "desc": "三浦海岸 河津桜まつりは2月中旬〜3月初旬、京急三浦海岸駅から徒歩約15分の場所で開催される早咲き桜のまつり。「早春の桜と菜の花の組み合わせを見たい」観光客に最適。約1,000本の河津桜が満開になり、菜の花とのコントラストが美しい。祭り期間中は屋台・物産展も出店、地元のマグロ料理も楽しめる。東京から日帰り可能で、2〜3月の春の風物詩として人気が高い。祭り期間外は静かな桜並木として散歩できる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "京急 三浦海岸駅 徒歩1分"
+          },
+          {
+            "k": "期間",
+            "v": "1月下旬〜2月末頃（年により変動）"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "横須賀どぶ板5選",
+        "h": "/feature/new-yokosuka-dobuita",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+      },
+      {
+        "t": "茅ヶ崎ビーチ5選",
+        "h": "/feature/new-chigasaki-beach",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+      }
+    ],
+    "quote": "名所をひとつ見て帰るのではなく、砂浜・漁港・岬と海の表情が移り変わっていくのを一日かけて追える。それが東京から最も近い「本物の海」、三浦の歩き方だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝10時半、京急三浦海岸駅に降りたら、まずは徒歩5分の砂浜へ。約1kmの白い渚を相模湾の風を受けながら歩き、サーファーや早朝の海を眺めて昼前まで過ごす。正午過ぎ、駅前からバスで三崎港へ南下し、12時半には港の食堂街でマグロのランチへ。漁港ならではの地元価格を味わったら、ここで一日のいちばん豪勢な時間を取りたい。午後は城ヶ島大橋を渡って三浦半島最南端の城ヶ島へ。灯台や遊歩道、岩場の洞窟を巡り、夕方にかけて相模湾の水平線と、運がよければ富士山の影まで望む。帰路は三浦海岸駅周辺で三浦野菜を土産に求めて京急で帰京、というのが無理のない流れだ。なお東端の剱崎灯台まで足を伸ばすと一日では時間が足りなくなりやすく、見たいなら別の日に独立した行程として組むのが現実的。城ヶ島方面はバスの本数が限られるので、出発前に時刻表を押さえておくと午後の組み立てが楽になる。夏のピークは海水浴客で賑わい、それ以外の季節は静かに回れる——食堂の営業時間やバスのダイヤは変わることもあるので、出かける朝に各公式サイトでひと目だけ確かめておくと安心だ。"
   },
-
-  // NG-29 ─────────────────────────────────────────────────
   "new-kohoku-nt-family": {
-    id: "new-kohoku-nt-family",
-    no: "NG-29", articleType: "guide", kicker: "KOHOKU NT FAMILY",
-    title: "港北ニュータウン・ファミリースポット5選。センター北・南の子連れ定番",
-    titleHTML: "港北NT<br>ファミリー5選。",
-    subtitle: "モザイクモール、都筑区ふるさと公園、大塚・歳勝土遺跡公園。計画都市の緑と施設",
-    lede: "港北ニュータウンは横浜市都筑区の計画都市で、横浜市営地下鉄「センター北駅」「センター南駅」を中心に大型商業施設・公園・図書館・博物館・遺跡公園が徒歩圏で広がる、子育てファミリーの街。対象は子連れで休日を過ごしたい家族、緑道散歩を楽しみたい大人、横浜の北部で文化体験をしたい人。標準は10:00集合・17:00解散の7時間コース、予算は1家族3,500〜7,000円。東京方面・横浜方面のどちらにも電車で30〜40分の好立地。ここでは港北ニュータウンの家族向け5スポットを紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.kohoku,
-    ranking: [
-      s(1, "モザイクモール港北", "ショッピングモール", "センター北",
-        "センター北駅直結の大型モール。子ども向け施設・映画館完備",
-        "モザイクモール港北はセンター北駅直結の大型商業施設（2000年開業）。5階建てに約160店舗、ファッション・雑貨・飲食・キッズスペース・観覧車・カラオケまで揃う。「子連れで雨の日に1棟で過ごしたい」家族に最適。屋上の「ハマの大観覧車」は高さ50mで、横浜北部の景色が見渡せる（料金は公式サイトで確認）。営業時間10〜21時、観覧車は22時まで運行。センター北駅から徒歩1分の駅近で、雨天時でも傘なしでアクセス可能。",
-        [I.kohoku],
-        [
-          { k: "最寄り駅", v: "市営地下鉄 センター北駅 直結" },
-          { k: "営業時間", v: "10:00〜21:00" },
-          { k: "雨の日", v: "◎" }]),
-      s(2, "都筑区ふるさと公園", "自然公園", "都筑区",
-        "港北ニュータウン内の自然保全区。緑道が続く散歩コース",
-        "都筑区ふるさと公園はセンター南駅から徒歩約10分、都筑区を代表する自然公園。「子供と一緒に芝生で遊びたい」「ピクニックを楽しみたい」家族に向く。芝生広場・遊具・池・遊歩道が整備され、桜・紅葉の季節は地元住民で賑わう。近隣の都筑民家園では、江戸時代の旧家を移築・保存した古民家を見学できる（無料、月曜休館）。公園内で2〜3時間過ごせる規模感で、ピクニック持参が現実的。雨の日は公園を諦めて館内施設に切り替え。",
-        [I.kohoku],
-        [
-          { k: "最寄り駅", v: "市営地下鉄 センター南駅 徒歩10分" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }]),
-      s(3, "大塚・歳勝土遺跡公園（弥生の丘展示館）", "史跡・公園", "都筑区",
-        "弥生時代の集落跡が復元展示。子どもが古代生活を学べる",
-        "大塚・歳勝土遺跡公園はセンター北駅から徒歩約10分、弥生時代の遺跡を活用した史跡公園。「子供と一緒に古代の歴史に触れたい」教育的な家族におすすめ。復元された竪穴住居・方形周溝墓を屋外で見学でき、隣接する「都筑民家園 弥生の丘展示館」では出土品・遺跡解説が無料で楽しめる。営業時間9〜17時、月曜休館（公式サイトで確認）。公園自体は24時間開放、無料。横浜市歴史博物館とセットで「弥生〜江戸の歴史散歩」が組める。",
-        [I.kohoku],
-        [
-          { k: "最寄り駅", v: "市営地下鉄 センター北駅 徒歩10分" },
-          { k: "料金", v: "公園無料（展示館無料）" },
-          { k: "雨の日", v: "△（展示館は可）" }]),
-      s(4, "港北ニュータウン緑道（牛久保緑道ほか）", "緑道・散策", "港北区〜都筑区",
-        "市営地下鉄沿線に続く緑道。ベビーカーでも歩ける遊歩道",
-        "港北ニュータウンの緑道（牛久保緑道・茅ヶ崎公園など）は計画的に整備された約15kmの遊歩道ネットワーク。「都心から離れた緑道散歩を楽しみたい」「ランニング・サイクリングを家族で」目的に最適。幅広い遊歩道で、ベビーカー・自転車も通行可能。季節ごとの花・樹木が植えられ、桜並木・紫陽花・銀杏並木のスポットが点在する。センター北・センター南エリアから徒歩で繋がる。雨の日は緑道を諦めて館内施設に切り替え。",
-        [I.kohoku],
-        [
-          { k: "最寄り駅", v: "センター北・南・仲町台駅 周辺" },
-          { k: "料金", v: "無料" },
-          { k: "雨の日", v: "✕" }]),
-      s(5, "横浜市歴史博物館", "博物館", "センター北",
-        "港北ニュータウンに建つ横浜市の総合歴史博物館",
-        "横浜市歴史博物館はセンター北駅から徒歩約5分、横浜の原始時代から現代までの歴史を展示する博物館。「親子で歴史学習を組みたい」家族に最も向く。1995年開館、原始〜古代〜中世〜近世〜近代の通史展示が体系的で、模型・映像・体験コーナーも充実。営業時間9〜17時、月曜休館（公式サイトで確認）、入場料は変動。隣接する大塚・歳勝土遺跡公園とセットで訪れる動線が組める。雨の日の屋内見学先として優秀。",
-        [I.kohoku],
-        [
-          { k: "最寄り駅", v: "市営地下鉄 センター北駅 徒歩10分" },
-          { k: "入館料", v: "300円" },
-          { k: "雨の日", v: "◎" }])],
-    sideArticles: [
-      side("たまプラーザ・あざみ野5選", "new-tamaplaza-azamino", I.mm_blue),
-      side("武蔵小杉ファミリー5選", "new-musashikosugi-family", I.lazona)],
-    quote: "港北ニュータウンは計画都市らしく、公園・緑道・商業施設のバランスが取れたファミリーエリア。",
-    quoteCite: author,
-    closing: "標準動線: センター北駅10:00→モザイクモール港北でランチ＋観覧車（10:00〜12:30）→横浜市歴史博物館（12:30〜14:00）→大塚・歳勝土遺跡公園（14:00〜15:00）→センター南へ徒歩→都筑区ふるさと公園で遊ぶ（15:00〜16:30）→港北ニュータウン緑道散歩（16:30〜17:00）→センター南駅で解散。所要7時間、予算は1家族3,500〜7,000円。土日午後の商業施設は混雑、平日午後または朝が落ち着く。雨の日は緑道・公園を諦めて、モザイクモール・歴史博物館・遺跡公園展示館の屋内中心ルートに切り替える。失敗しやすいのは「博物館の月曜休館を見落とす」「子供の体力を考慮せず詰め込みすぎる」「観覧車の運休時間を知らずに行く」。事前に休館日と観覧車運行情報を公式サイトで確認、子供連れは午前1施設＋午後1施設のペース配分に留める。この記事は子連れで休日を過ごしたい家族、緑道散歩を楽しみたい大人、横浜北部で文化体験をしたい人に向く。",
+    "id": "new-kohoku-nt-family",
+    "no": "NG-29",
+    "articleType": "course",
+    "kicker": "KOHOKU NT FAMILY",
+    "title": "港北ニュータウンで子どもと過ごす休日。センター北・南をつなぐ家族の半日",
+    "titleHTML": "港北ニュータウンで子どもと過ごす休日。<br>センター北・南をつなぐ家族の半日",
+    "subtitle": "観覧車のあるモール、芝生の公園、弥生の遺跡、緑道、歴史博物館。計画都市ならではの徒歩圏に、子連れの一日がきれいに収まる",
+    "lede": "港北ニュータウンは、横浜市都筑区につくられた計画都市だ。地図を引いた段階から、商業施設と公園と緑道が徒歩圏に同居するよう設計されている。だから子連れで動いても、駅から駅へ歩くだけで「遊ぶ」「学ぶ」「休む」が無理なく切り替わる。センター北とセンター南という二つの地下鉄駅を背骨にして、午前は屋根のある場所で過ごし、昼を挟んで芝生や緑道に出る——そんな半日の組み立てが街の構造そのものから自然に立ち上がってくる。この記事では、観覧車のあるモールを起点に、博物館・遺跡公園・芝生の公園・緑道を地続きにつなぐ家族向けの道のりを、歩いた順に追っていく。東京方面からも横浜方面からも電車で30〜40分という距離感も、休日の小旅行にちょうどいい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "モザイクモール港北",
+        "cuisine": "ショッピングモール",
+        "area": "センター北",
+        "purpose": "センター北駅直結の大型モール。子ども向け施設・映画館完備",
+        "desc": "モザイクモール港北はセンター北駅直結の大型商業施設（2000年開業）。5階建てに約160店舗、ファッション・雑貨・飲食・キッズスペース・観覧車・カラオケまで揃う。「子連れで雨の日に1棟で過ごしたい」家族に最適。屋上の「ハマの大観覧車」は高さ50mで、横浜北部の景色が見渡せる（料金は公式サイトで確認）。営業時間10〜21時、観覧車は22時まで運行。センター北駅から徒歩1分の駅近で、雨天時でも傘なしでアクセス可能。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "市営地下鉄 センター北駅 直結"
+          },
+          {
+            "k": "営業時間",
+            "v": "10:00〜21:00"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "都筑区ふるさと公園",
+        "cuisine": "自然公園",
+        "area": "都筑区",
+        "purpose": "港北ニュータウン内の自然保全区。緑道が続く散歩コース",
+        "desc": "都筑区ふるさと公園はセンター南駅から徒歩約10分、都筑区を代表する自然公園。「子供と一緒に芝生で遊びたい」「ピクニックを楽しみたい」家族に向く。芝生広場・遊具・池・遊歩道が整備され、桜・紅葉の季節は地元住民で賑わう。近隣の都筑民家園では、江戸時代の旧家を移築・保存した古民家を見学できる（無料、月曜休館）。公園内で2〜3時間過ごせる規模感で、ピクニック持参が現実的。雨の日は公園を諦めて館内施設に切り替え。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "市営地下鉄 センター南駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "大塚・歳勝土遺跡公園（弥生の丘展示館）",
+        "cuisine": "史跡・公園",
+        "area": "都筑区",
+        "purpose": "弥生時代の集落跡が復元展示。子どもが古代生活を学べる",
+        "desc": "大塚・歳勝土遺跡公園はセンター北駅から徒歩約10分、弥生時代の遺跡を活用した史跡公園。「子供と一緒に古代の歴史に触れたい」教育的な家族におすすめ。復元された竪穴住居・方形周溝墓を屋外で見学でき、隣接する「都筑民家園 弥生の丘展示館」では出土品・遺跡解説が無料で楽しめる。営業時間9〜17時、月曜休館（公式サイトで確認）。公園自体は24時間開放、無料。横浜市歴史博物館とセットで「弥生〜江戸の歴史散歩」が組める。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "市営地下鉄 センター北駅 徒歩10分"
+          },
+          {
+            "k": "料金",
+            "v": "公園無料（展示館無料）"
+          },
+          {
+            "k": "雨の日",
+            "v": "△（展示館は可）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "港北ニュータウン緑道（牛久保緑道ほか）",
+        "cuisine": "緑道・散策",
+        "area": "港北区〜都筑区",
+        "purpose": "市営地下鉄沿線に続く緑道。ベビーカーでも歩ける遊歩道",
+        "desc": "港北ニュータウンの緑道（牛久保緑道・茅ヶ崎公園など）は計画的に整備された約15kmの遊歩道ネットワーク。「都心から離れた緑道散歩を楽しみたい」「ランニング・サイクリングを家族で」目的に最適。幅広い遊歩道で、ベビーカー・自転車も通行可能。季節ごとの花・樹木が植えられ、桜並木・紫陽花・銀杏並木のスポットが点在する。センター北・センター南エリアから徒歩で繋がる。雨の日は緑道を諦めて館内施設に切り替え。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "センター北・南・仲町台駅 周辺"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "雨の日",
+            "v": "✕"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "横浜市歴史博物館",
+        "cuisine": "博物館",
+        "area": "センター北",
+        "purpose": "港北ニュータウンに建つ横浜市の総合歴史博物館",
+        "desc": "横浜市歴史博物館はセンター北駅から徒歩約5分、横浜の原始時代から現代までの歴史を展示する博物館。「親子で歴史学習を組みたい」家族に最も向く。1995年開館、原始〜古代〜中世〜近世〜近代の通史展示が体系的で、模型・映像・体験コーナーも充実。営業時間9〜17時、月曜休館（公式サイトで確認）、入場料は変動。隣接する大塚・歳勝土遺跡公園とセットで訪れる動線が組める。雨の日の屋内見学先として優秀。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "市営地下鉄 センター北駅 徒歩10分"
+          },
+          {
+            "k": "入館料",
+            "v": "300円"
+          },
+          {
+            "k": "雨の日",
+            "v": "◎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "たまプラーザ・あざみ野5選",
+        "h": "/feature/new-tamaplaza-azamino",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "武蔵小杉ファミリー5選",
+        "h": "/feature/new-musashikosugi-family",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+      }
+    ],
+    "quote": "どこかを諦めて移動するのではなく、歩いていれば次の場所に着く——港北ニュータウンの設計は、子連れの一日と相性がいい。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "朝10時にセンター北駅で集まり、まずモザイクモール港北で早めの昼と観覧車。屋根の下なので、天気を気にせず一日を始められる。昼すぎに駅近くの横浜市歴史博物館へ移り、原始から現代までの展示を親子で巡ったら、徒歩圏の大塚・歳勝土遺跡公園に出て、復元された竪穴住居を実際に見て歩く。午後は線を変えてセンター南側へ。都筑区ふるさと公園の芝生で子どもを思い切り走らせ、最後は港北ニュータウン緑道をひと区間散歩して、夕方にセンター南駅で解散——おおよそそんな流れになる。子どもの体力に合わせるなら、午前に屋内一カ所、午後に屋外一カ所くらいのペースに落とすと最後まで機嫌が保ちやすい。雨でも、モール・博物館・遺跡公園の展示館と屋根のある場所だけでつないで一日を成立させられるのが、この街の強みだ。なお博物館は曜日によって休館があり、観覧車も運休する時間帯がある。出かける前に、それぞれの公式サイトで当日の開館状況と運行情報をひと目だけ確かめておくと安心だ。"
   },
-
-  // NG-30 ─────────────────────────────────────────────────
   "new-yokohama-first-date": {
-    id: "new-yokohama-first-date",
-    no: "NG-30", articleType: "guide", kicker: "YOKOHAMA FIRST DATE",
-    title: "横浜初デート5選。初めての相手を連れて行くなら絶対外さない場所",
-    titleHTML: "横浜<br>初デート5選。",
-    subtitle: "みなとみらい、山下公園、中華街。横浜の「定番」がなぜ定番なのか",
-    lede: "初デートで横浜を選ぶなら、横浜の特徴である「港町」「中華街」「夜景」「散歩」を1日で組み合わせるのが王道。東京と違って横浜は徒歩で繋がるエリアが多く、移動の手間が少ない。対象は初〜2回目のデートで横浜デートを組みたいカップル、東京の喧騒を避けて港町の雰囲気を体験させたい人、徒歩中心で自然な会話を組みたい2人。標準は13:00集合・21:00解散の8時間コース、予算は食事込みで1人6,000〜12,000円。ここでは初デートで横浜を回るための5スポットを時系列で紹介する。",
-    date, reading: "約7分", author,
-    heroImage: I.mm_blue,
-    ranking: [
-      s(1, "みなとみらい・ランドマークタワー〜スカイガーデン", "展望台・港", "みなとみらい",
-        "初デートに外れなし。展望台→汽車道→赤レンガという王道ルート",
-        "みなとみらいエリアはJR桜木町駅から徒歩5分でアクセスでき、ランドマークタワーのスカイガーデン（69階・地上273m）が観光のハイライト。「初デートで横浜のシンボル景観を見せたい」「展望台から都市の地理感を共有したい」2人に最適。スカイガーデンは横浜港・東京湾・東京方面の景色が360度近く広がり、夕方〜夜景の境目が特に絵になる。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動（公式サイトで確認）。次は徒歩約7分の赤レンガ倉庫方向へ。",
-        [I.mm_blue],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩3分" },
-          { k: "スカイガーデン入場料", v: "大人1,000円" },
-          { k: "おすすめ時間", v: "夕方〜夜景" }]),
-      s(2, "赤レンガ倉庫", "複合施設・散策", "みなとみらい",
-        "明治の倉庫をリノベした定番スポット。港の景色と一緒に",
-        "1911年竣工の煉瓦倉庫を改修した複合施設「横浜赤レンガ倉庫」。館内にはレストラン・カフェ・物販店が60以上入り、初デートのカフェ休憩・買い物・ディナーすべてに対応する。「歴史建築の中で食事をしたい」「写真映えする場所で会話を続けたい」2人に向く。週末の広場では季節イベントが開催される。桜木町駅から徒歩15分、馬車道駅から徒歩6分。夕方17時前後のライトアップ前で人波が一時的に減り、写真撮影に向いた時間帯。",
-        [I.akarenga],
-        [
-          { k: "最寄り駅", v: "馬車道駅 徒歩6分 / みなとみらい駅 徒歩12分" },
-          { k: "料金", v: "無料（飲食・ショッピング別途）" }]),
-      s(3, "山下公園・大さん橋", "公園・展望", "山下町",
-        "港の見える公園と客船ターミナル。横浜らしい景色の核心",
-        "山下公園・大さん橋エリアは1930年開園の臨海公園と1894年開港の客船ターミナル。「ベンチで30〜40分座って語り合いたい」「予算を抑えて夜景を楽しみたい」初デート層に最適。山下公園は約700mの遊歩道で、海と港を眺めながら散歩できる。大さん橋屋上「クジラの背中」は入場無料・24時間開放で、横浜全景の夜景が見渡せる。元町・中華街駅から徒歩3〜10分。海風が強い日（特に冬12〜2月）は防寒対策が必要。",
-        [I.yamashita],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩5分" },
-          { k: "料金", v: "無料" },
-          { k: "おすすめ時間", v: "夕方〜夜景" }]),
-      s(4, "横浜中華街", "グルメ・観光", "中華街",
-        "初デートの夕食は中華街で決まり。日本最大の中華街",
-        "横浜中華街は150年以上の歴史を持つ日本最大の中華街で、約600軒の中華料理店と物販店が0.2km²の区画に集中している。「初デートのディナーで外れにくい場所を選びたい」2人に最適。食べ歩きスタイル（1人2,000〜3,000円）か店内コース（1人4,000〜8,000円）かを事前に決めて入るのが効率的。土日18〜20時のディナータイムはピーク混雑、予約推奨。元町・中華街駅から徒歩5分。夜のライトアップ（19時頃から点灯）は赤と金の灯籠が街全体を照らし、昼とは別のエリアになる。",
-        [I.chinatown],
-        [
-          { k: "最寄り駅", v: "元町・中華街駅 徒歩2分" },
-          { k: "料金", v: "食べ歩き200円〜 / コース料理3,000〜8,000円" }]),
-      s(5, "コスモクロック21（夜景）", "観覧車・夜景", "みなとみらい",
-        "デートの締めはコスモクロック。横浜港の夜景と一緒に",
-        "1989年開園のコスモクロック21は直径100m・最高地点112.5mの観覧車で、夜のライトアップが横浜夜景の象徴。「初デートの締めとして観覧車に乗りたい」カップルに最適。1回800〜900円程度、所要約15分。土日19〜21時のピーク混雑（30〜60分待ち）は避けて、20時以降または平日夜が現実的。桜木町駅・みなとみらい駅から徒歩7〜10分。夜景観賞の最終目的地として組み込みやすい。",
-        [I.cosmo],
-        [
-          { k: "最寄り駅", v: "みなとみらい駅 徒歩5分" },
-          { k: "料金", v: "900円" },
-          { k: "おすすめ時間", v: "夜（20:00〜）" }])],
-    sideArticles: [
-      side("みなとみらいデート5選", "new-minatomirai-date", I.mm_blue),
-      side("山下公園デート5選", "new-yamashita-date", I.yamashita)],
-    quote: "横浜の「定番」は、なぜ定番かを分かっている人だけが連れて行ける場所。初めての相手に横浜を案内するなら、この5ヶ所で外れはない。",
-    quoteCite: author,
-    closing: "標準動線: JR桜木町駅13:00集合→ランドマーク スカイガーデン（13:00〜14:30 夕景前の景観）→赤レンガ倉庫でカフェ＋ショッピング（14:30〜17:00）→大さん橋へ徒歩→夕景観賞（17:00〜18:00）→中華街へ徒歩→中華街でディナー（18:30〜20:30）→コスモクロック21の観覧車で締め（20:30〜21:00）→桜木町駅で解散。所要8時間、予算は1人6,000〜12,000円。土日夕方17〜19時はピーク混雑、特に中華街は予約推奨。雨の日はランドマーク展望・赤レンガ倉庫・中華街屋内中心で完結できる。失敗しやすいのは「観覧車の閉園時間（22時前後）を見落として乗れない」「中華街での店選びに時間がかかり次の予定が遅れる」「大さん橋での冬の防寒不足」。事前に観覧車の運行時間・中華街のディナー予約・防寒装備を確認。この記事は初〜2回目のデートで横浜デートを組みたいカップル、東京の喧騒を避けて港町を体験させたい人に最も向く。",
-  },
+    "id": "new-yokohama-first-date",
+    "no": "NG-30",
+    "articleType": "course",
+    "kicker": "YOKOHAMA FIRST DATE",
+    "title": "横浜、初デートの半日コース。港町を歩いて中華街で締める一日",
+    "titleHTML": "横浜、初デートの半日コース。<br>港町を歩いて中華街で締める一日",
+    "subtitle": "みなとみらいから中華街へ。横浜が初対面の相手に強い理由を、歩く順に追っていく",
+    "lede": "横浜という街は、初めて二人で出かける相手と過ごすのにちょうどいい。港があり、煉瓦の倉庫があり、夜になれば海越しに灯りが揺れる。しかも、その見せ場のほとんどが歩いて繋がっている。電車を乗り継いで沈黙する時間が少なく、景色が次々と移り変わるから、会話が途切れても気まずくならない。このコースは、桜木町から海沿いを南へ下りながら、昼の景観・煉瓦のカフェ・夕暮れの海・中華街の灯りと、横浜が持つ表情を順番に味わえるよう組んだ。背伸びしすぎず、それでいて「連れてきてよかった」と思える定番だけを、午後から夜にかけての半日に収めている。食事を含めた予算の目安はおおよそ一人六千円から一万二千円ほどだが、店や時期で動くので、財布の中身は少し余裕を持っておきたい。",
+    "date": "2026-05-14",
+    "reading": "約7分",
+    "author": "マチノワ編集部",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg",
+    "ranking": [
+      {
+        "rank": "SPOT 01",
+        "rankNum": 1,
+        "name": "みなとみらい・ランドマークタワー〜スカイガーデン",
+        "cuisine": "展望台・港",
+        "area": "みなとみらい",
+        "purpose": "初デートに外れなし。展望台→汽車道→赤レンガという王道ルート",
+        "desc": "みなとみらいエリアはJR桜木町駅から徒歩5分でアクセスでき、ランドマークタワーのスカイガーデン（69階・地上273m）が観光のハイライト。「初デートで横浜のシンボル景観を見せたい」「展望台から都市の地理感を共有したい」2人に最適。スカイガーデンは横浜港・東京湾・東京方面の景色が360度近く広がり、夕方〜夜景の境目が特に絵になる。営業時間10〜21時（土日祝は22時まで延長）、入場料は変動（公式サイトで確認）。次は徒歩約7分の赤レンガ倉庫方向へ。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩3分"
+          },
+          {
+            "k": "スカイガーデン入場料",
+            "v": "大人1,000円"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜景"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 02",
+        "rankNum": 2,
+        "name": "赤レンガ倉庫",
+        "cuisine": "複合施設・散策",
+        "area": "みなとみらい",
+        "purpose": "明治の倉庫をリノベした定番スポット。港の景色と一緒に",
+        "desc": "1911年竣工の煉瓦倉庫を改修した複合施設「横浜赤レンガ倉庫」。館内にはレストラン・カフェ・物販店が60以上入り、初デートのカフェ休憩・買い物・ディナーすべてに対応する。「歴史建築の中で食事をしたい」「写真映えする場所で会話を続けたい」2人に向く。週末の広場では季節イベントが開催される。桜木町駅から徒歩15分、馬車道駅から徒歩6分。夕方17時前後のライトアップ前で人波が一時的に減り、写真撮影に向いた時間帯。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "馬車道駅 徒歩6分 / みなとみらい駅 徒歩12分"
+          },
+          {
+            "k": "料金",
+            "v": "無料（飲食・ショッピング別途）"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 03",
+        "rankNum": 3,
+        "name": "山下公園・大さん橋",
+        "cuisine": "公園・展望",
+        "area": "山下町",
+        "purpose": "港の見える公園と客船ターミナル。横浜らしい景色の核心",
+        "desc": "山下公園・大さん橋エリアは1930年開園の臨海公園と1894年開港の客船ターミナル。「ベンチで30〜40分座って語り合いたい」「予算を抑えて夜景を楽しみたい」初デート層に最適。山下公園は約700mの遊歩道で、海と港を眺めながら散歩できる。大さん橋屋上「クジラの背中」は入場無料・24時間開放で、横浜全景の夜景が見渡せる。元町・中華街駅から徒歩3〜10分。海風が強い日（特に冬12〜2月）は防寒対策が必要。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "無料"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夕方〜夜景"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 04",
+        "rankNum": 4,
+        "name": "横浜中華街",
+        "cuisine": "グルメ・観光",
+        "area": "中華街",
+        "purpose": "初デートの夕食は中華街で決まり。日本最大の中華街",
+        "desc": "横浜中華街は150年以上の歴史を持つ日本最大の中華街で、約600軒の中華料理店と物販店が0.2km²の区画に集中している。「初デートのディナーで外れにくい場所を選びたい」2人に最適。食べ歩きスタイル（1人2,000〜3,000円）か店内コース（1人4,000〜8,000円）かを事前に決めて入るのが効率的。土日18〜20時のディナータイムはピーク混雑、予約推奨。元町・中華街駅から徒歩5分。夜のライトアップ（19時頃から点灯）は赤と金の灯籠が街全体を照らし、昼とは別のエリアになる。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "元町・中華街駅 徒歩2分"
+          },
+          {
+            "k": "料金",
+            "v": "食べ歩き200円〜 / コース料理3,000〜8,000円"
+          }
+        ]
+      },
+      {
+        "rank": "SPOT 05",
+        "rankNum": 5,
+        "name": "コスモクロック21（夜景）",
+        "cuisine": "観覧車・夜景",
+        "area": "みなとみらい",
+        "purpose": "デートの締めはコスモクロック。横浜港の夜景と一緒に",
+        "desc": "1989年開園のコスモクロック21は直径100m・最高地点112.5mの観覧車で、夜のライトアップが横浜夜景の象徴。「初デートの締めとして観覧車に乗りたい」カップルに最適。1回800〜900円程度、所要約15分。土日19〜21時のピーク混雑（30〜60分待ち）は避けて、20時以降または平日夜が現実的。桜木町駅・みなとみらい駅から徒歩7〜10分。夜景観賞の最終目的地として組み込みやすい。",
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "みなとみらい駅 徒歩5分"
+          },
+          {
+            "k": "料金",
+            "v": "900円"
+          },
+          {
+            "k": "おすすめ時間",
+            "v": "夜（20:00〜）"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [
+      {
+        "t": "みなとみらいデート5選",
+        "h": "/feature/new-minatomirai-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+      },
+      {
+        "t": "山下公園デート5選",
+        "h": "/feature/new-yamashita-date",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+      }
+    ],
+    "quote": "横浜の「定番」は、なぜそこが定番なのかを知っている人が連れて行くと、ぐっと印象が変わる。初対面の相手を案内するなら、この五ヶ所をこの順で。それだけで、横浜は外れない。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "流れはこうだ。午後一時に桜木町駅で待ち合わせ、まずはランドマークタワーのスカイガーデンへ上がって、夕景に染まる前の港全体を見渡す。下りたら赤レンガ倉庫まで歩き、二時半から五時前後はカフェで一息ついたり、館内の店を冷やかしたりして過ごす。日が傾く頃に大さん橋へ移動し、ウッドデッキで一時間ほど海と対岸の街並みを眺める。あたりが暗くなったら中華街へ入り、六時半すぎから二時間ほどかけてゆっくり夕食。最後はコスモクロック21の観覧車に乗って、光の海を上から眺めて締めれば、桜木町に戻って解散だ。土日の夕方、五時から七時は人が一気に増える時間帯で、特に中華街は席が埋まりやすいので食事処は先に押さえておくと安心できる。観覧車は夜遅くに運転を終えるので、締めに乗るつもりなら終了時刻を頭に入れておきたいし、冬の大さん橋は海風が思いのほか冷えるから上着は一枚多めに。観覧車の運行時間や中華街の予約可否、各施設の料金は変わることがあるので、出かける前に公式の案内で確かめておくと当日が滑らかに進む。"
+  }
 };
