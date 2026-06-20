@@ -1,0 +1,43 @@
+{
+  "id": "new-kannai-nihondori",
+  "file": "newGuideFeatures",
+  "persona": "A",
+  "tag": "街歩き",
+  "currentTitle": "関内・日本大通りさんぽ5選。横浜発祥の街を歩く",
+  "currentSubtitle": "日本大通り、開港資料館、スタジアム界隈。横浜らしさが残る中心地の歩き方",
+  "currentLede": "関内・日本大通りは横浜開港（1859年）の発祥地で、横浜の「中心街」としての歴史的位置を体感できる。対象は横浜の歴史に興味があるカップル、ベイスターズファン、または横浜建築散歩を楽しみたい人。標準は13:00集合・18:00解散の5時間コース、予算は食事込みで1人3,500〜6,000円。日本大通り・横浜公園・横浜スタジアム・馬車道商店街が徒歩圏内で繋がる。ここでは関内駅・日本大通り駅を起点に5スポットを紹介する。",
+  "currentQuote": "関内から日本大通りを歩くと、横浜がどうやってできた街なのかが少しわかってくる。",
+  "currentClosing": "標準動線: 日本大通り駅13:00→日本大通り散歩（13:00〜14:00）→横浜市開港記念会館（14:00〜14:30 ジャック塔）→横浜公園・横浜スタジアム周辺散歩（14:30〜15:30）→横浜開港資料館（15:30〜16:30）→馬車道商店街でお茶・夕食（17:00〜18:00）→赤レンガ倉庫方向へ。所要5時間、予算は食事・博物館込みで1人3,500〜6,000円。ベイスターズのホームゲーム日（公式サイトで確認）は18時以降の関内駅周辺が混雑するので、デートでは試合日を避けるか、観戦を組み込むか決めて来る。雨の日は横浜開港資料館＋馬車道商店街の屋内・アーケード中心で2〜3時間過ごせる。失敗しやすいのは「ベイスターズ試合日を見落として混雑に巻き込まれる」「ジャック塔の公開日を見落とす」「歴史博物館の月曜休館を見落とす」。事前に試合スケジュール・施設公開日を公式サイトで確認するのが安全。この記事は横浜の歴史と建築を深掘りしたい大人のデート層、文化散歩好きに向く。",
+  "spots": [
+    {
+      "name": "日本大通り",
+      "area": "関内",
+      "descHead": "1879年（明治12年）整備、R.H. ブラントン設計の幅員30mの大通り。日本で最初の西洋式街路として知られる。通り沿いに神奈川県庁本庁舎・横浜地方裁判所・横浜開港資料館・三井物",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜市開港記念会館（ジャックの塔）",
+      "area": "関内",
+      "descHead": "1917年竣工、横浜三塔のジャックの塔として知られる横浜市開港記念会館。関東大震災で内部を焼失したが、1989年復元工事で大正期の姿が現代に蘇った。「横浜三塔をすべて見つけたい」建",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜スタジアム周辺（横浜公園）",
+      "area": "関内",
+      "descHead": "1876年開園、日本初の西洋式公園のひとつ。横浜スタジアムを囲む形で広場・遊歩道・チューリップ花壇が整備されている。春のチューリップ花壇は約14万本のチューリップが咲き誇り、横浜公",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    },
+    {
+      "name": "横浜開港資料館",
+      "area": "日本大通り",
+      "descHead": "1981年開館、横浜開港の歴史を展示する博物館。1931年竣工の旧英国総領事館を本館として使用している。「横浜の歴史をしっかり学びたい」「ペリー来航から関東大震災までの歴史に興味が",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "馬車道商店街",
+      "area": "馬車道",
+      "descHead": "馬車道商店街は1869年（明治2年）に整備された、日本初の馬車専用道路だった通り。明治期は外国人居留地と関内を結ぶメインストリートとして栄え、現在も近代建築・老舗店・カフェが並ぶ歴",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    }
+  ]
+}

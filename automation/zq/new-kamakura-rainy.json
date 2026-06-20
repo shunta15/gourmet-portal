@@ -1,0 +1,17 @@
+{
+  "id": "new-kamakura-rainy",
+  "zeros": [
+    {
+      "idx": 2,
+      "name": "長谷寺（雨天）",
+      "imageSubject": "長谷寺（鎌倉長谷寺の本堂と境内、観音山の斜面に広がる伽藍）",
+      "imageRegion": "神奈川県鎌倉市"
+    },
+    {
+      "idx": 4,
+      "name": "建長寺（方丈・庭園）",
+      "imageSubject": "建長寺の方丈（龍王殿）と庭園（背後の山を借景にした池泉庭園）",
+      "imageRegion": "神奈川県鎌倉市"
+    }
+  ]
+}

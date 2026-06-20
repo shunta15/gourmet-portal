@@ -1,0 +1,43 @@
+{
+  "id": "new-motomachi-yamate",
+  "file": "newGuideFeatures",
+  "persona": "B",
+  "tag": "街歩き",
+  "currentTitle": "元町・山手さんぽ5選。坂と洋館を歩く横浜",
+  "currentSubtitle": "元町ストリート、外国人墓地、ブラフ18番館、山手イタリア山庭園。港が見える丘の街",
+  "currentLede": "元町・山手は1860年代の横浜開港時に外国人居留地として整備されたエリアで、現在も洋館・教会・洋風住宅が点在する独特の街並み。対象は明治・大正の洋館建築が好きな大人のデート層、または中華街の喧騒を抜けて静かな横浜を歩きたい人。標準は13:00集合・19:00解散の6時間コース、予算は食事込みで1人4,000〜8,000円。ハイブランドの旗艦店が並ぶ元町商店街と、外国人墓地・西洋館・港の見える丘公園が広がる山手地区が徒歩で繋がる。ここでは元町・山手の散歩を5スポットで紹介する。",
+  "currentQuote": "元町から山手の坂を上がると、横浜の外国人居留地時代の時間が感じられる。",
+  "currentClosing": "標準動線: 元町・中華街駅13:00→元町ショッピングストリート（13:00〜14:30 ショッピング）→坂を上って外国人墓地（14:30〜15:30）→ブラフ18番館・山手イタリア山庭園（15:30〜16:30）→港の見える丘公園で展望（16:30〜18:00）→元町商店街でディナー（18:00〜19:00）。所要6時間、予算は食事込みで1人4,000〜8,000円。土日午後の元町・港の見える丘公園は混雑、平日午後または朝が落ち着いている。雨の日は坂道は滑りやすいので、元町商店街＋西洋館の屋内中心に切り替え、丘の上の公園は諦める判断が現実的。失敗しやすいのは「歩く距離の見積もりミス」（坂が多く、想定より体力を消耗）と「西洋館の休館日見落とし」（月曜休館の館が多い）、「外国人墓地の見学日見落とし」（土日祝のみ公開）。事前に開館日と歩きやすい靴を必ず確認。この記事は明治・大正の洋館建築が好きな大人のデート層、文化散歩が好きなカップルに最も向く。",
+  "spots": [
+    {
+      "name": "元町ショッピングストリート",
+      "area": "元町",
+      "descHead": "元町ショッピングストリートは1864年に外国人居留地の生活道路として整備された約500mのメインストリート。現在は革製品・服飾雑貨・スイーツ・宝飾品の高品質店が並び、横浜の老舗ブラ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "外国人墓地（横浜外国人墓地）",
+      "area": "山手",
+      "descHead": "1869年開設、世界中の外国人約4,800人が眠る墓地。日本に貢献した外国人や、横浜開港期の商人・宣教師・教育者が埋葬されている。「歴史の重みを感じる散歩」が目的の人に向くスポット",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "ブラフ18番館",
+      "area": "山手",
+      "descHead": "ブラフ18番館は1923年（大正12年）頃築の山手地区を代表する西洋館のひとつ。「アールデコ様式の内装をゆっくり見たい」建築好きに向く。横浜山手のイタリア山庭園内に位置し、見学は無",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "山手イタリア山庭園",
+      "area": "山手",
+      "descHead": "山手イタリア山庭園は山手地区の一角に整備された幾何学式の洋風庭園。「写真映えする整形式庭園を見たい」「ブラフ18番館とセットで歩きたい」人に向く。庭園内には外交官の家（重要文化財）",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "港の見える丘公園",
+      "area": "山手",
+      "descHead": "1962年開園、横浜港を見下ろす丘の上の公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場・展",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    }
+  ]
+}

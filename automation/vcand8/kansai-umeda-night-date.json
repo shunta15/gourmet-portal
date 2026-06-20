@@ -1,0 +1,189 @@
+{
+  "id": "kansai-umeda-night-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "グランフロント大阪",
+      "imageSubject": "グランフロント大阪（JR大阪駅北側・うめきたに建つ南館・北館からなる大型複合商業施設のガラス張り外観）",
+      "imageRegion": "大阪府大阪市北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__1__1.jpg",
+          "file": "File:Grand Front Osaka in 201409.JPG",
+          "desc": "Grand Front Osaka, Osaka, Osaka Prefecture, Japan",
+          "w": 3840,
+          "h": 2400
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__1__2.jpg",
+          "file": "File:グランフロント大阪 GRAND FRONT OSAKA - panoramio.jpg",
+          "desc": "グランフロント大阪 GRAND FRONT OSAKA",
+          "w": 3264,
+          "h": 2448
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "HEP FIVE観覧車",
+      "imageSubject": "HEP FIVE観覧車（HEP FIVEのビル屋上に設置された直径75m・最高到達点106mの赤い観覧車）",
+      "imageRegion": "大阪府大阪市北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__2__1.jpg",
+          "file": "File:HEP FIVE Ferris Wheel. Osaka, Kansai region, Island of Honshu, Japan.jpg",
+          "desc": "HEP FIVE Ferris Wheel. Osaka, Kansai region, Island of Honshu, Japan",
+          "w": 1200,
+          "h": 800
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__2__2.jpg",
+          "file": "File:HEP Five Ferris Wheel.jpg",
+          "desc": "The ferris wheel at HEP Five in Osaka. Taken at night.",
+          "w": 1000,
+          "h": 660
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__2__3.jpg",
+          "file": "File:Beautiful, old and rusty Railway Clock (5435290313).jpg",
+          "desc": "From the other side. No. 3 in a series of 3 pictures dedicated to this beautiful old and rusty clock on the railway track from the Ōsaka Station 大阪駅 next to the",
+          "w": 1857,
+          "h": 2476
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__2__4.jpg",
+          "file": "File:HEP-FIVE,Osaka-Japan.JPG",
+          "desc": "HEP-FIVE,Osaka-Japan",
+          "w": 3072,
+          "h": 2304
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "梅田スカイビル 空中庭園展望台",
+      "imageSubject": "梅田スカイビル空中庭園展望台（2棟の超高層ビルを上部で連結し屋上に円形の展望リングを持つ独特の外観）",
+      "imageRegion": "大阪府大阪市北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__3__1.jpg",
+          "file": "File:Umeda Sky Building, Osaka, November 2016 -02.jpg",
+          "desc": "Umeda Sky Building, designed by Hiroshi Hara and completed in 1993, is the nineteenth-tallest building in Osaka Prefecture, Japan, and one of the city's most re",
+          "w": 5751,
+          "h": 3728
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__3__2.jpg",
+          "file": "File:Umeda Sky Building, Osaka, November 2016 -01.jpg",
+          "desc": "Umeda Sky Building, designed by Hiroshi Hara and completed in 1993, is the nineteenth-tallest building in Osaka Prefecture, Japan, and one of the city's most re",
+          "w": 5558,
+          "h": 3568
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__3__3.jpg",
+          "file": "File:Umeda Sky Building 201807.jpg",
+          "desc": "Day view In Umeda from Umeda Sky Building",
+          "w": 4912,
+          "h": 2760
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__3__4.jpg",
+          "file": "File:20100715 Osaka Umeda Sky Building escalator 1855.jpg",
+          "desc": "Escalator Tunnel, Umeda Sky Building, Osaka",
+          "w": 4212,
+          "h": 2807
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "大阪市中央公会堂",
+      "imageSubject": "大阪市中央公会堂（中之島に建つ1918年竣工のネオ・ルネサンス様式、赤煉瓦と銅板屋根の重要文化財建築）",
+      "imageRegion": "大阪府大阪市北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__4__1.jpg",
+          "file": "File:2020 大阪市中央公会堂.jpg",
+          "desc": "大阪市中央公会堂",
+          "w": 5753,
+          "h": 3835
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__4__2.jpg",
+          "file": "File:大阪市中央公会堂 - panoramio.jpg",
+          "desc": "大阪市中央公会堂",
+          "w": 2592,
+          "h": 1936
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__4__3.jpg",
+          "file": "File:Osaka City Central Public Hall 20160221.JPG",
+          "desc": "大阪市中央公会堂",
+          "w": 4313,
+          "h": 2875
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__4__4.jpg",
+          "file": "File:Osaka City Central Public Hall-20071015.JPG",
+          "desc": "Osaka City Central Public Hall（Built in 1918）",
+          "w": 1504,
+          "h": 1000
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "中之島 水辺の夜さんぽ",
+      "imageSubject": "なにわ橋から望む中之島の夜景（堂島川・土佐堀川に挟まれた中之島のビル群と水面に映る灯り）",
+      "imageRegion": "大阪府大阪市北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__5__1.jpg",
+          "file": "File:2019 OSAKA Hikari-Renaissance01-r.jpg",
+          "desc": "The OSAKA Hikari-Renaissance (大阪光のルネサンス) at Osaka City, Japan.\n\n Canon PowerShot G9 X Mark II",
+          "w": 5472,
+          "h": 3648
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__5__2.jpg",
+          "file": "File:2019 OSAKA Hikari-Renaissance02-r.jpg",
+          "desc": "The OSAKA Hikari-Renaissance (大阪光のルネサンス) at Osaka City, Japan.\n\n Canon PowerShot G9 X Mark II",
+          "w": 3648,
+          "h": 5472
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__5__3.jpg",
+          "file": "File:Hanshin Expressway Route 1 at Night in 201412 001.JPG",
+          "desc": "Hanshin Expressway Route 1 in Osaka, Osaka Prefecture, Japan",
+          "w": 3840,
+          "h": 2160
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-umeda-night-date__5__4.jpg",
+          "file": "File:Hanshin Expressway Route 1 at Night in 201412 002.JPG",
+          "desc": "Hanshin Expressway Route 1 in Osaka, Osaka Prefecture, Japan",
+          "w": 3840,
+          "h": 2160
+        }
+      ]
+    }
+  ]
+}

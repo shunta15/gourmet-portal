@@ -1,0 +1,181 @@
+{
+  "id": "new-hakoneyumoto",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "箱根湯本温泉（日帰り入浴）",
+      "imageSubject": "箱根湯本駅の駅舎外観（箱根登山鉄道の起点駅、山あいの三角屋根の駅舎）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__1__1.jpg",
+          "file": "File:Hakone 20090901133720 (8674794905).jpg",
+          "desc": "hakone_20090901133720",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__1__2.jpg",
+          "file": "File:Hakone-tozan dual gauge at yumoto.jpg",
+          "desc": "Between Iriuda station and Hakone-yumoto station is dual gauge section consisting of 1067mm and 1435mm gauge as of year 2011. took at Hakone-yumoto station.",
+          "w": 2976,
+          "h": 3968
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__1__3.jpg",
+          "file": "File:Hakone-Yumoto Gate.JPG",
+          "desc": "箱根湯本駅改札口",
+          "w": 2560,
+          "h": 1920
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__1__4.jpg",
+          "file": "File:Hakone-Yumoto Station (10621054455).jpg",
+          "desc": "Hakone-Yumoto Station",
+          "w": 3648,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "天山湯治郷",
+      "imageSubject": "天山湯治郷の和風の日帰り温泉施設外観・露天風呂（早川支流沿いの木造湯治場）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__2__1.jpg",
+          "file": "File:Houses in the woods, river in foreground. (19329298853).jpg",
+          "desc": "Hayakawa River and Dogashima Onsen in Hakone, Kanagawa Prefecture, Japan",
+          "w": 2460,
+          "h": 3444
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "箱根湯本商店街",
+      "imageSubject": "箱根湯本駅前から早川沿いに続く土産物店が並ぶ商店街の通り",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__3__1.jpg",
+          "file": "File:Hakone 20090901134224 (8674795563).jpg",
+          "desc": "hakone_20090901134224",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__3__2.jpg",
+          "file": "File:Hakone Town (39702918035).jpg",
+          "desc": "Hakone, Kanagawa, Japan",
+          "w": 4534,
+          "h": 3018
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__3__3.jpg",
+          "file": "File:Hakone-Yumoto (10621387176).jpg",
+          "desc": "Hakone-Yumoto",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__3__4.jpg",
+          "file": "File:Hakone-Yumoto main street.jpg",
+          "desc": "Main street of Hakone-Yumoto in Kanagawa prefecture.",
+          "w": 5184,
+          "h": 3888
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "箱根湯本美術館",
+      "imageSubject": "箱根湯本駅周辺の小規模美術館の建物外観",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__4__1.jpg",
+          "file": "File:Hakone Ashinoko Art Museum and Japan National Route 1.JPG",
+          "desc": "国道1号と箱根芦ノ湖美術館",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__4__2.jpg",
+          "file": "File:Hakone Mononofu-no-Sato Art Museum.JPG",
+          "desc": "Hakone Mononofu-no-Sato Art Museum",
+          "w": 2560,
+          "h": 1920
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__4__3.jpg",
+          "file": "File:Hakone Museum of Photography.JPG",
+          "desc": "Hakone Museum of Photography",
+          "w": 2560,
+          "h": 1920
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__4__4.jpg",
+          "file": "File:Interior view - Hakone Museum of Art - Hakone, Kanagawa, Japan - DSC08274.jpg",
+          "desc": "Interior view - Hakone Museum of Art - Hakone, Kanagawa, Japan.",
+          "w": 5472,
+          "h": 3648
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "箱根登山電車（湯本→強羅）",
+      "imageSubject": "箱根登山電車の赤い車両（湯本〜強羅間を走るスイッチバックの山岳鉄道）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__5__1.jpg",
+          "file": "File:Hakone Tozan Type Moha 1 Conductor's Cab 1.jpg",
+          "desc": "Driver's cab of Hakone Tozan Railway Type Moha 1 Electric Train",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__5__2.jpg",
+          "file": "File:Hakone Tozan Type Moha 1 Conductor's Cab 2.jpg",
+          "desc": "Driver's cab of Hakone Tozan Railway Type Moha 1 Electric Train",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__5__3.jpg",
+          "file": "File:Hakone Tozan Type Moha 1 Conductor's Cab 3.jpg",
+          "desc": "Driver's cab of Hakone Tozan Railway Type Moha 1 Electric Train",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hakoneyumoto__5__4.jpg",
+          "file": "File:Hakone-Tozan Series2000-2002 Cab.jpg",
+          "desc": "Hakone Tozan Railway 2000 Series Train Cab (2002)",
+          "w": 2495,
+          "h": 1663
+        }
+      ]
+    }
+  ]
+}

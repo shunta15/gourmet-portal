@@ -1,0 +1,205 @@
+{
+  "id": "new-kanagawa-weekend",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "横浜・みなとみらい（土曜午前）",
+      "imageSubject": "横浜ランドマークタワーを中心としたみなとみらいの高層ビル群と海沿いの水辺の景観",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__1__1.jpg",
+          "file": "File:2024 Yokohama Landmark Tower (1).jpg",
+          "desc": "Yokohama Landmark Tower (神奈川県横浜市)",
+          "w": 1663,
+          "h": 2500
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__1__2.jpg",
+          "file": "File:2024 Yokohama Landmark Tower (2).jpg",
+          "desc": "Yokohama Landmark Tower",
+          "w": 1671,
+          "h": 2500
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__1__3.jpg",
+          "file": "File:2024 Yokohama Landmark Tower (3).jpg",
+          "desc": "Yokohama Landmark Tower ＆ Nippon Maru (ship, 1930)",
+          "w": 1834,
+          "h": 2500
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__1__4.jpg",
+          "file": "File:20250101 Cosmo Clock 21, Landmark Tower 122120.jpg",
+          "desc": "Cosmo Clock 21 i Landmark Tower",
+          "w": 4032,
+          "h": 2268
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "横浜中華街（土曜ランチ）",
+      "imageSubject": "横浜中華街の善隣門（朱色と金の装飾が施された牌楼／門）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__2__1.jpg",
+          "file": "File:Zenrinmon Gate.jpg",
+          "desc": "Zenrinmon Gate, Chinatown, Yokohama, on a Sunday. This is one of the main entrances to Chinatown",
+          "w": 2736,
+          "h": 3648
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__2__2.jpg",
+          "file": "File:Yokohama Chinatown temple.jpg",
+          "desc": "Temple in Yokohama Chinatown, Japan.",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__2__3.jpg",
+          "file": "File:Double Ten Day 1997 parade in Japan.jpg",
+          "desc": "​駐日本莊代表銘耀(左三)主持雙十國慶遊行\n(民國八十六年十月十日)",
+          "w": 780,
+          "h": 1104
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__2__4.jpg",
+          "file": "File:40000kei Motomachi-Chūkagai station train door.jpg",
+          "desc": "Seibu 40000 series EMU set 40102 at Motomachi-Chukagai Station on an S-Train service",
+          "w": 4608,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "鎌倉（土曜午後〜夕方）",
+      "imageSubject": "鶴岡八幡宮の本宮へ続く大石段と朱塗りの社殿",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__3__1.jpg",
+          "file": "File:2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan - panoramio (7).jpg",
+          "desc": "2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan",
+          "w": 3313,
+          "h": 2465
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__3__2.jpg",
+          "file": "File:2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan - panoramio - jetsun (3).jpg",
+          "desc": "2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan",
+          "w": 1936,
+          "h": 1296
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__3__3.jpg",
+          "file": "File:2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan - panoramio - jetsun (4).jpg",
+          "desc": "2 Chome-1 Yukinoshita, Kamakura-shi, Kanagawa-ken 248-0005, Japan",
+          "w": 1936,
+          "h": 1296
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__3__4.jpg",
+          "file": "File:202408101236 IMG 0997.jpg",
+          "desc": "鶴岡八幡宮（2024年8月10日12時36分）",
+          "w": 3024,
+          "h": 4032
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "箱根湯本（日曜・温泉日帰り）",
+      "imageSubject": "箱根・大涌谷の白い噴煙が立ちのぼる火山性の荒涼とした谷",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__4__1.jpg",
+          "file": "File:161223 Owakudani Hakone Japan07s3.jpg",
+          "desc": "Ōwakudani in Hakone Kanagawa prefecture, Japan",
+          "w": 4000,
+          "h": 6000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__4__2.jpg",
+          "file": "File:161223 Owakudani Hakone Japan08s3.jpg",
+          "desc": "Ōwakudani in Hakone Kanagawa prefecture, Japan",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__4__3.jpg",
+          "file": "File:A view of Owakudani - a volcanic valley with active sulphur vents and hot springs in Hakone, Japan.jpg",
+          "desc": "A view of Owakudani - a volcanic valley with active sulphur vents and hot springs in Hakone, Kanagawa Prefecture, Japan",
+          "w": 8160,
+          "h": 4590
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__4__4.jpg",
+          "file": "File:A view of Owakudani - a volcanic valley with active sulphur vents in Hakone, Japan.jpg",
+          "desc": "A view of Owakudani - a volcanic valley with active sulphur vents and hot springs in Hakone, Kanagawa Prefecture, Japan",
+          "w": 8160,
+          "h": 4590
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "湘南経由の帰路（選択肢として）",
+      "imageSubject": "湘南海岸（茅ヶ崎・藤沢）の砂浜と相模湾の海並み",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__5__1.jpg",
+          "file": "File:Parks in Kugenumakaigan.jpg",
+          "desc": "Parks in Kugenumakaigan ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__5__2.jpg",
+          "file": "File:Tennis courts above 県立湘南海岸公園西部駐車場.jpg",
+          "desc": "Shonan Beach Park (park in Japan)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__5__3.jpg",
+          "file": "File:Tsunami refuge tower at Shonan beach.JPG",
+          "desc": "湘南海岸公園（神奈川県藤沢市）の津波避難タワー",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kanagawa-weekend__5__4.jpg",
+          "file": "File:湘南海岸公園1960.jpg",
+          "desc": "完成した湘南海岸公園（1960年）",
+          "w": 999,
+          "h": 621
+        }
+      ]
+    }
+  ]
+}

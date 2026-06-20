@@ -1,0 +1,43 @@
+{
+  "id": "new-sakuragicho-night-date",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "デート",
+  "currentTitle": "桜木町夜デート5選。夜景と光が似合う場所",
+  "currentSubtitle": "汽車道の夜、コスモクロック21、AIR CABIN。桜木町から歩いて回る夜の港",
+  "currentLede": "桜木町は「徒歩で複数の夜景スポットをハシゴしたい2人」に最も向く横浜エリア。JR根岸線・横浜市営地下鉄・みなとみらい線が交差し、駅から徒歩5分以内に汽車道・コスモワールド観覧車・AIR CABINが並ぶため、移動時間より景色を見る時間に充てられる。対象は初〜3回目のデートのカップル、夜景写真を撮りたい友人同士。標準は18:00集合・22:30解散の4時間30分コース、予算は1人5,000〜10,000円。ここでは時系列で動きやすい桜木町の夜景5スポットを紹介する。",
+  "currentQuote": "桜木町の夜は、歩き始めればそのまま景色が続く。目的地を決めすぎないほうが気持ちよく過ごせる。",
+  "currentClosing": "標準動線: 桜木町駅18:00集合→汽車道で夜散歩（18:00〜18:30）→AIR CABIN（18:30〜19:00）→コスモクロック21（19:00〜20:00 観覧車）→ハンマーヘッドへ徒歩（20:00〜20:30）→新港ふ頭・ハンマーヘッドでディナー（20:30〜22:00）→大さん橋方面または野毛山公園で締めの夜景。所要4時間30分、予算は1人5,000〜10,000円。土日19〜21時は観覧車・AIR CABINがピーク混雑、平日夜または日曜の遅めの時間帯（20時開始）に動き出すと待ちが減る。雨の日はAIR CABIN＋ランドマーク展望＋赤レンガ屋内エリアに切り替え、汽車道・野毛山公園は諦める判断が現実的。失敗しやすいのは「コスモワールドの閉園時間を見落として観覧車に乗れない」「冬の海風の体感寒さで滞在を短縮」「野毛山公園への徒歩距離を読み違える」。事前に運行時間・防寒装備・歩く距離を確認。この記事は予算を抑えながら横浜の夜景を網羅したいデート層に最適。",
+  "spots": [
+    {
+      "name": "汽車道（夜）",
+      "area": "みなとみらい",
+      "descHead": "汽車道は桜木町駅前から運河パーク方向に約500m続く海上の遊歩道。夜は両側の街灯と水面の反射でロマンチックな雰囲気が広がり、対岸のランドマーク・コスモクロックのライトアップを真正面",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg"
+    },
+    {
+      "name": "コスモクロック21（夜）",
+      "area": "みなとみらい",
+      "descHead": "1989年開園、コスモワールド内の直径100m・最高地点112.5mの観覧車「コスモクロック21」。夜のライトアップは時間ごとに色が変わり、ゴンドラに乗らずに外から眺めるだけでも横",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    },
+    {
+      "name": "YOKOHAMA AIR CABIN（夜）",
+      "area": "みなとみらい",
+      "descHead": "2021年開業、桜木町駅前と運河パーク駅を結ぶ屋内型ロープウェイ「YOKOHAMA AIR CABIN」。片道5分・630mの空中散歩で、夜の運行（21時頃まで）は地上の光が真下か",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "野毛山公園（夜景スポット）",
+      "area": "野毛",
+      "descHead": "野毛山公園は桜木町駅から徒歩約15分の高台にある公園で、夜景スポットとして地元客に知られる隠れた名所。「観光客の少ない夜景を撮りたい」「混雑を抜けて静かに過ごしたい」2人に向く。公",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    },
+    {
+      "name": "新港ふ頭・横浜ハンマーヘッド",
+      "area": "新港",
+      "descHead": "新港ふ頭・横浜ハンマーヘッドは2019年開業、客船ターミナルと商業施設の複合エリア。夜のライトアップは大型客船が停泊している夜に最も絵になり、海風と港の現役感が伝わる稀有なロケーシ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    }
+  ]
+}

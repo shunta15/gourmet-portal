@@ -1,0 +1,43 @@
+{
+  "id": "new-shinjuku-park",
+  "file": "newGuideFeatures4",
+  "persona": "D",
+  "tag": "散歩・自然",
+  "currentTitle": "新宿御苑5選。都心最大の庭園と周辺カフェ",
+  "currentSubtitle": "新宿御苑、KITTE屋上、思い出横丁。新宿の喧騒の中に残る緑の楽園",
+  "currentLede": "新宿御苑は新宿駅から徒歩10分、面積58.3haという都心では珍しい本格的な国民公園。フランス式・イギリス式・日本庭園の3様式を1日で歩き分けられる、東京で最も「散歩のために設計された場所」のひとつ。春の桜・初夏のバラ・秋の紅葉・冬の温室と通年で見るものがあり、新宿の喧騒から「一駅分のリセット」として使いやすい。ここでは新宿御苑を軸に、周辺の隠れた休憩スポット・カフェも含めた5スポットを紹介する。",
+  "currentQuote": "新宿御苑は新宿駅から5分なのに、別世界のような静けさがある。昼のピクニックか朝の散歩か、用途を決めてから出かけるのが正解。",
+  "currentClosing": "標準動線は、新宿御苑前駅大木戸門→御苑入園（10:00〜12:00 散策＋日本庭園）→御苑内で持参の昼食→温室（13:00〜14:00）→御苑前カフェで休憩（14:30〜15:30）→四谷方面へ徒歩散歩（15:30〜17:00）。所要6〜7時間、予算は入園料＋食事込みで1人2,000〜4,000円が目安。「都心で静かに過ごしたい人」「公園・温室・庭園を一日かけて歩きたい人」「桜・紅葉のピーク以外の御苑を知りたい人」に向く。桜と紅葉のピーク（3月末〜4月第1週、11月中旬〜下旬）の週末は入園待ちが発生するので、平日または開園直後の9時に行く。雨の日は温室＋カフェに絞ると傘を最小限にして1〜2時間過ごせる。時間がない場合は、御苑メインゲート→日本庭園→温室の3点に絞れば2時間コースに圧縮できる。迷ったら、平日午前10時に大木戸門から入り、3様式の庭園を1時間ずつ歩いて温室で締める、というシンプルな歩き方が御苑との上手な付き合い方。",
+  "spots": [
+    {
+      "name": "新宿御苑（日本庭園エリア）",
+      "area": "新宿",
+      "descHead": "1949年に国民公園として開放。約58.3haの広大な敷地に約1万本の樹木が植えられ、フランス式整形庭園・イギリス式風景庭園・日本庭園・温室が並ぶ。桜の季節（3月下旬〜4月上旬）は",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿御苑前周辺のカフェ街",
+      "area": "新宿御苑前",
+      "descHead": "御苑内の温室は2012年リニューアル、3,000㎡の屋内空間に約2,400種類の熱帯・亜熱帯植物が展示される。バナナ・ハイビスカス・食虫植物・サガリバナ・ヒスイカズラなど、日本では",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "KITTE丸の内屋上テラス（参考：同コンセプト）と新宿南口",
+      "area": "新宿南口",
+      "descHead": "御苑南西部に約2,000坪の純和風庭園。池泉回遊式の構造で、池の中央に旧御涼亭（茶室）が浮かぶ景観が美しい。桜・つつじ・紅葉と季節ごとの植栽が計算されており、写真スポットとして上位",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿西口・東口の老舗デパート",
+      "area": "新宿",
+      "descHead": "新宿御苑前駅周辺は、御苑訪問者を迎えるカフェ・喫茶店が10軒以上集まっている。個人経営のスペシャルティコーヒー店、北欧家具のショールーム併設カフェ、街の老舗喫茶店など業態が幅広い。",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "思い出横丁（新宿西口）",
+      "area": "新宿西口",
+      "descHead": "新宿御苑から徒歩10分、四谷駅・四ツ谷三丁目駅エリアは、新宿の繁華街とは違う「江戸の旧宿場町」の歴史が残る区画。迎賓館赤坂離宮（外観のみ無料見学可、館内見学は要事前予約・公式サイト",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ]
+}

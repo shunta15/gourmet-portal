@@ -1,0 +1,173 @@
+{
+  "id": "new-nakameguro-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "目黒川桜並木",
+      "imageSubject": "中目黒の目黒川沿いに約800本のソメイヨシノが満開になり川面を覆う桜のトンネル（両岸の遊歩道と川を覆う桜並木）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__1__1.jpg",
+          "file": "File:202304011628 IMG 5778.jpg",
+          "desc": "目黒川の桜並木（2023年4月1日16時28分）",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__1__2.jpg",
+          "file": "File:202304011628 IMG 5777.jpg",
+          "desc": "目黒川の桜並木（2023年4月1日16時28分）",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__1__3.jpg",
+          "file": "File:De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg",
+          "desc": "8月の目黒川。目黒区中目黒2丁目のなかめ公園橋から下流・南東の方向を見る。中央の橋は中里橋。両岸は桜並木。左の木立の向うに目黒駐屯地がある。一番奥の建物はアルコタワー。地図はこちら。",
+          "w": 2048,
+          "h": 1365
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "中目黒高架下",
+      "imageSubject": "東急東横線中目黒駅の高架橋下を再整備した中目黒高架下の商業区画（高架の鉄骨構造と連なる店舗）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__2__1.jpg",
+          "file": "File:吉そば 2017 入店 踏み台 (32941760660).jpg",
+          "desc": "中目黒駅旁邊的一間小小拉麵店，那年夏天和她在這間拉麵店用餐，我們各點了一個一般拉麵與蕎麥麵。後來我自己又再來吃一次。最主要是他的湯清清淡淡的，對於炎熱的夏天很舒服。\n2017 年我又來了一趟中目黑，但是這裡變成空地了。或許是目黑高架下新的商店街帶動周圍的店家更新。\n原來懷念的地方也會因為城市更新而變成回憶。\nYoshi",
+          "w": 3089,
+          "h": 2048
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "スタバ リザーブ ロースタリー東京",
+      "imageSubject": "スターバックス リザーブ ロースタリー東京の外観（中目黒高架下に建つ4階建てガラス張りの旗艦店）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__3__1.jpg",
+          "file": "File:2Fから見たメインバー.jpg",
+          "desc": "2Fから見たメインバー",
+          "w": 1300,
+          "h": 975
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__3__2.jpg",
+          "file": "File:3Fのアリビアーモ.jpg",
+          "desc": "3Fのアリビアーモ",
+          "w": 1400,
+          "h": 1050
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__3__3.jpg",
+          "file": "File:4Fから1Fを見る.jpg",
+          "desc": "桜をモチーフにした飾り。4Fから1Fを見る",
+          "w": 1300,
+          "h": 975
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__3__4.jpg",
+          "file": "File:4Fにあるテラス.jpg",
+          "desc": "4Fにあるテラス",
+          "w": 1300,
+          "h": 975
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "目黒川沿いのカフェ・ショップ",
+      "imageSubject": "目黒川両岸の遊歩道に点在する個人経営のカフェ・コーヒースタンド・セレクトショップが並ぶ川沿いの街並み",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__4__1.jpg",
+          "file": "File:Walk along Meguro river near Nakameguro 4.jpg",
+          "desc": "Walk along Meguro river near Nakameguro ",
+          "w": 3072,
+          "h": 4080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__4__2.jpg",
+          "file": "File:Walk along Meguro river near Nakameguro 8.jpg",
+          "desc": "Walk along Meguro river near Nakameguro ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__4__3.jpg",
+          "file": "File:Walk along Meguro river near Nakameguro 6.jpg",
+          "desc": "Walk along Meguro river near Nakameguro ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__4__4.jpg",
+          "file": "File:Walk along Meguro river near Nakameguro 7.jpg",
+          "desc": "Walk along Meguro river near Nakameguro ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "祐天寺・池尻大橋周辺",
+      "imageSubject": "祐天寺の山門と本堂（目黒区祐天寺の浄土宗寺院、明顕山祐天寺）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__5__1.jpg",
+          "file": "File:Chimney in Yutenji.jpg",
+          "desc": "Chimney in Yutenji ",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__5__2.jpg",
+          "file": "File:The Japanese-style Chinese noodle RAMEN of the restaurant RAIRAIKEN at Yutenji Tokyo.jpg",
+          "desc": "Some insist that the first ramen, i.e. Japanese-style Chinese noodle was served at the restaurant named RAIRAIKEN (1910-1944, 1945-1976) at Asakusa, Tokyo. Alth",
+          "w": 1687,
+          "h": 1488
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__5__3.jpg",
+          "file": "File:Yutenji Amidado.jpg",
+          "desc": "祐天寺阿弥陀堂",
+          "w": 3637,
+          "h": 2728
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__5__4.jpg",
+          "file": "File:Yutenji Hondo.jpg",
+          "desc": "祐天寺本堂（登録有形文化財）",
+          "w": 4319,
+          "h": 3239
+        }
+      ]
+    }
+  ]
+}

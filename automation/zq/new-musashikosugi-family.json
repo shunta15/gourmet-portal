@@ -1,0 +1,17 @@
+{
+  "id": "new-musashikosugi-family",
+  "zeros": [
+    {
+      "idx": 4,
+      "name": "中原市民館・中原図書館",
+      "imageSubject": "中原市民館・中原図書館が入る川崎市中原区の公共施設の建物外観",
+      "imageRegion": "神奈川県川崎市中原区"
+    },
+    {
+      "idx": 5,
+      "name": "丸子橋・多摩川河川敷",
+      "imageSubject": "丸子橋と多摩川の河川敷（東京・神奈川の境を流れる多摩川）",
+      "imageRegion": "神奈川県川崎市中原区"
+    }
+  ]
+}

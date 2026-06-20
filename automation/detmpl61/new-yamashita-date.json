@@ -1,0 +1,43 @@
+{
+  "id": "new-yamashita-date",
+  "file": "newGuideFeatures",
+  "persona": "D",
+  "tag": "デート",
+  "currentTitle": "山下公園周辺デート5選。港と丘をつなぐ横浜の定番",
+  "currentSubtitle": "山下公園、氷川丸、港の見える丘公園、山手洋館。海から丘へ歩くコース",
+  "currentLede": "山下公園は1930年開園の日本初の臨海公園で、横浜の港町としての象徴的な公園。対象は2〜3回目のデートで横浜の港町と山手の洋館の両方を組み合わせたい人、ファミリーで横浜定番を散歩したい家族。標準は13:00集合・19:30解散の6時間30分コース、予算は食事込みで1人5,000〜8,000円。山下公園・氷川丸・港の見える丘公園・山手西洋館・マリンタワーが徒歩圏で繋がる。ここでは山下公園を中心とした5スポットを紹介する。",
+  "currentQuote": "山下公園は起点。ここから海沿いか丘側か、どちらに向かうかで一日の景色が変わる。",
+  "currentClosing": "標準動線: 元町・中華街駅13:00→山下公園で散歩（13:00〜14:00）→氷川丸見学（14:00〜15:00）→マリンタワー展望（15:00〜16:00）→港の見える丘公園で展望（16:00〜17:00）→山手西洋館（17:00〜18:30 1〜2館）→中華街でディナー。所要6時間30分、予算は氷川丸・タワー入場・食事込みで1人5,000〜8,000円。土日午後の港の見える丘公園のバラ園・西洋館は混雑、平日午後または朝が落ち着く。雨の日は氷川丸見学＋マリンタワー＋元町商店街の屋内中心で半日が組める。失敗しやすいのは「西洋館の月曜休館を見落とす」「坂道の歩き距離を読み違える」「マリンタワーの混雑時間（土日18〜21時）を見落とす」。事前に公式サイトで休館日・営業時間・歩きやすい靴を確認。この記事は2〜3回目のデートで横浜の港町と山手の洋館の両方を組み合わせたい人、ファミリーで横浜定番を散歩したい家族に向く。",
+  "spots": [
+    {
+      "name": "山下公園",
+      "area": "中区・山下",
+      "descHead": "1930年開園、関東大震災（1923年）の瓦礫を埋め立てて造成された港湾公園。横浜港に沿って約700mの遊歩道があり、ベンチが豊富で休憩しながら散歩できる。「横浜の港町としての象徴",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "氷川丸（日本郵船氷川丸）",
+      "area": "山下",
+      "descHead": "1930年就航の貨客船で、1961年まで太平洋航路で運航していた歴史的客船。山下公園に係留され、内部見学ができる（入館料は公式サイトで確認）。「戦前のクルーズ客船の内部を歩きたい」",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "港の見える丘公園",
+      "area": "山手",
+      "descHead": "1962年開園、横浜港を見下ろす丘の上の展望公園。「丘の上からの港の眺望と、季節の花を組み合わせたい」2人に向く。イギリス山地区とフランス山地区に分かれ、それぞれにバラ園・芝生広場",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "山手西洋館エリア（ブラフ18番館など）",
+      "area": "山手",
+      "descHead": "山手西洋館エリアは外国人居留地時代に作られた7軒の西洋館を一般公開している（横浜市が管理）。ブラフ18番館、ベーリック・ホール、エリスマン邸、外交官の家、山手234番館などが点在。",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "マリンタワー",
+      "area": "山下",
+      "descHead": "1961年開業、高さ106mの横浜のシンボル塔。2009年に大規模リニューアル、現在の営業形態は展望階＋飲食フロア。「横浜の昭和の象徴と港の景色を組み合わせたい」「夕景〜夜景を見た",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "new-kohoku-nt-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "モザイクモール港北",
+      "imageSubject": "モザイクモール港北の屋上に設置された大型観覧車（センター北駅前のショッピングモール屋上の赤い観覧車）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__1.jpg",
+          "file": "File:Around Center Kita sta.jpg",
+          "desc": "The area around Center Kita station on the Yokohama municipal subway Blue line.",
+          "w": 6501,
+          "h": 2461
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__2.jpg",
+          "file": "File:Mosaic Mall Kohoku.jpg",
+          "desc": "モザイクモール港北。阪急百貨店を核テナントとした大型商業施設である。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__3.jpg",
+          "file": "File:Mosaic Mall Kohoku 20200209.jpg",
+          "desc": "モザイクモール港北",
+          "w": 4130,
+          "h": 3099
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__4.jpg",
+          "file": "File:Mosaic Mall Kohoku 20200209-2.jpg",
+          "desc": "モザイクモール港北",
+          "w": 4320,
+          "h": 3240
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "都筑区ふるさと公園",
+      "imageSubject": "都筑区ふるさと公園の芝生広場と園内の池・遊歩道のある里山風景",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": []
+    },
+    {
+      "spot": 3,
+      "name": "大塚・歳勝土遺跡公園（弥生の丘展示館）",
+      "imageSubject": "大塚・歳勝土遺跡公園に復元された弥生時代の竪穴住居（茅葺きの復元住居群）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__3__1.jpg",
+          "file": "File:Otsuka-Saikachido Site, Otsuka Site, hori.jpg",
+          "desc": "大塚・歳勝土遺跡 大塚遺跡地区環濠",
+          "w": 5568,
+          "h": 3712
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__3__2.jpg",
+          "file": "File:Otsuka-Saikachido Site, Otsuka Site, gaikan-4.jpg",
+          "desc": "大塚・歳勝土遺跡 大塚遺跡地区概観",
+          "w": 5568,
+          "h": 3712
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__3__3.jpg",
+          "file": "File:Otsuka-Saikachido Site, Otsuka Site, gaikan-1.jpg",
+          "desc": "大塚・歳勝土遺跡 大塚遺跡地区概観",
+          "w": 5568,
+          "h": 3712
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__3__4.jpg",
+          "file": "File:Otsuka-Saikachido Site, Otsuka Site, souko.jpg",
+          "desc": "大塚・歳勝土遺跡 大塚遺跡地区高床倉庫",
+          "w": 5568,
+          "h": 3712
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "港北ニュータウン緑道（牛久保緑道ほか）",
+      "imageSubject": "港北ニュータウン緑道の遊歩道（樹木に囲まれた歩行者専用の緑道の小径）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": []
+    },
+    {
+      "spot": 5,
+      "name": "横浜市歴史博物館",
+      "imageSubject": "横浜市歴史博物館の建物外観（センター北駅近くの博物館の外観）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__5__1.jpg",
+          "file": "File:Yokohama History Museum 20150201.jpg",
+          "desc": "横浜市歴史博物館、建物正面",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__5__2.jpg",
+          "file": "File:Rooftop of the Yokohama History Museum.jpg",
+          "desc": "横浜市歴史博物館屋上より。屋上広場を通じて大塚・歳勝土遺跡へと回遊できるようになっている。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__5__3.jpg",
+          "file": "File:矢崎山遺跡出土 土師器 はそう.JPG",
+          "desc": "矢崎山遺跡出土 土師器 𤭯",
+          "w": 2681,
+          "h": 2660
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__5__4.jpg",
+          "file": "File:長者原遺跡 出土品.JPG",
+          "desc": "長者原遺跡 出土品",
+          "w": 4729,
+          "h": 2950
+        }
+      ]
+    }
+  ]
+}

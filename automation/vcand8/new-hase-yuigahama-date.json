@@ -1,0 +1,197 @@
+{
+  "id": "new-hase-yuigahama-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "高徳院（鎌倉大仏）",
+      "imageSubject": "高徳院の露坐の鎌倉大仏（屋外に座す青銅の阿弥陀如来坐像、高さ約11.3m）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__1__1.jpg",
+          "file": "File:高徳院鎌倉大仏20190626-P1030418.jpg",
+          "desc": "高徳院鎌倉大仏",
+          "w": 1600,
+          "h": 1201
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__1__2.jpg",
+          "file": "File:Kamakura Daibutsu-2.jpg",
+          "desc": "鎌倉 大仏",
+          "w": 2031,
+          "h": 1513
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__1__3.jpg",
+          "file": "File:Kamakura Daibutsu-5.jpg",
+          "desc": "鎌倉 大仏",
+          "w": 2048,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "長谷寺",
+      "imageSubject": "長谷寺の山腹の境内と眺望散策路から見下ろす由比ヶ浜の海",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__2__1.jpg",
+          "file": "File:長谷寺 - panoramio (2).jpg",
+          "desc": "長谷寺",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__2__2.jpg",
+          "file": "File:Hasedera Sakurai Nara pref58s5s4272.jpg",
+          "desc": "Hondo of Hase-dera Buddhist temple (Japan's National Treasure) in Sakurai, Nara prefecture, Japan",
+          "w": 4272,
+          "h": 2848
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__2__3.jpg",
+          "file": "File:Hase-dera.jpg",
+          "desc": "Main building of Hase-dera temple, Kamakura, Japan",
+          "w": 2288,
+          "h": 1712
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__2__4.jpg",
+          "file": "File:Iiyama Kannon.jpg",
+          "desc": "Main Hall of Iiyama Kannon temple in Atsugi, Kanagawa",
+          "w": 3872,
+          "h": 2592
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "由比ヶ浜海岸",
+      "imageSubject": "由比ヶ浜海岸の広い砂浜と相模湾（夕景・富士山が望める日もある約900mのビーチ）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__3__1.jpg",
+          "file": "File:Kamakura Yuigahama beach during winter with strong wind.jpg",
+          "desc": "Kamakura Yuigahama beach during winter with strong wind ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__3__2.jpg",
+          "file": "File:Yuigahama 01.jpg",
+          "desc": "夕刻の由比ヶ浜",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__3__3.jpg",
+          "file": "File:Yuigahama beach 01.jpg",
+          "desc": "Yuigahama",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__3__4.jpg",
+          "file": "File:Yuigahama beach 03.jpg",
+          "desc": "Yuigahama",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "鎌倉文学館",
+      "imageSubject": "長谷の路地に並ぶ鎌倉のカフェ・洋食店の店構え",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__4__1.jpg",
+          "file": "File:バラ園の盛り - 鎌倉文学館で撮影Pcs34560 IMG1629.jpg",
+          "desc": "バラ園の盛り. 鎌倉文学館で撮影.",
+          "w": 5472,
+          "h": 3648
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__4__2.jpg",
+          "file": "File:230128 Kamakura Museum of Literature Kamakura Kanagawa pref Japan01s3.jpg",
+          "desc": "Kamakura Museum of Literature in Kamakura, Kanagawa prefecture, Japan",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__4__3.jpg",
+          "file": "File:Kamakura Museum of Literature 20221204 01.jpg",
+          "desc": "鎌倉文学館本館入口",
+          "w": 5480,
+          "h": 2740
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__4__4.jpg",
+          "file": "File:Kamakura Museum of Literature 20221204 04.jpg",
+          "desc": "鎌倉文学館本館入口",
+          "w": 5480,
+          "h": 2740
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "江ノ電 長谷駅周辺カフェ",
+      "imageSubject": "鎌倉文学館（旧前田侯爵家鎌倉別邸を改装した洋館の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__5__1.jpg",
+          "file": "File:230128 Kamakura Museum of Literature Kamakura Kanagawa pref Japan01s3.jpg",
+          "desc": "Kamakura Museum of Literature in Kamakura, Kanagawa prefecture, Japan",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__5__2.jpg",
+          "file": "File:230128 Kamakura Museum of Literature Kamakura Kanagawa pref Japan02s3.jpg",
+          "desc": "Kamakura Museum of Literature in Kamakura, Kanagawa prefecture, Japan",
+          "w": 5700,
+          "h": 3800
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__5__3.jpg",
+          "file": "File:230128 Kamakura Museum of Literature Kamakura Kanagawa pref Japan03s3.jpg",
+          "desc": "Kamakura Museum of Literature in Kamakura, Kanagawa prefecture, Japan",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__5__4.jpg",
+          "file": "File:230128 Kamakura Museum of Literature Kamakura Kanagawa pref Japan04s3.jpg",
+          "desc": "Kamakura Museum of Literature in Kamakura, Kanagawa prefecture, Japan",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    }
+  ]
+}

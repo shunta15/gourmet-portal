@@ -1,0 +1,173 @@
+{
+  "id": "new-kamakura-rainy",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "鎌倉国宝館",
+      "imageSubject": "鎌倉国宝館（鎌倉・鶴岡八幡宮境内にある校倉造風の博物館建築の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__1__1.jpg",
+          "file": "File:Kamakura Museum of National Treasures panoramic.jpg",
+          "desc": "The Kamakura Museum of National Treasures, panoramic view obtained from two images",
+          "w": 5361,
+          "h": 1797
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__1__2.jpg",
+          "file": "File:Kamakura Museum of National Treasures.jpg",
+          "desc": "Kamakura Museum of National Treasures in Kamakura, Kanagawa",
+          "w": 4212,
+          "h": 2803
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "長谷寺（雨天）",
+      "imageSubject": "長谷寺（鎌倉長谷寺の本堂と境内、観音山の斜面に広がる伽藍）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__2__1.jpg",
+          "file": "File:1993-11-23 View from Hasedera (Kamakura).jpg",
+          "desc": "長谷寺からみた鎌倉の海",
+          "w": 1476,
+          "h": 1001
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__2__2.jpg",
+          "file": "File:3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan - panoramio - jetsun (2).jpg",
+          "desc": "3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan",
+          "w": 1936,
+          "h": 1296
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__2__3.jpg",
+          "file": "File:3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan - panoramio - jetsun (3).jpg",
+          "desc": "3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan",
+          "w": 1936,
+          "h": 1296
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__2__4.jpg",
+          "file": "File:3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan - panoramio - jetsun (4).jpg",
+          "desc": "3 Chome Hase, Kamakura-shi, Kanagawa-ken 248-0016, Japan",
+          "w": 1936,
+          "h": 1296
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "円覚寺",
+      "imageSubject": "円覚寺（北鎌倉・円覚寺の山門／三門の木造楼門）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__3__1.jpg",
+          "file": "File:Enkaku-ji Naha Okinawa02n.jpg",
+          "desc": "Enkaku-ji is a National Historic Site in Naha, Okinawa prefecture, Japan.",
+          "w": 4500,
+          "h": 3000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__3__2.jpg",
+          "file": "File:Enkaku-ji Naha Okinawa01n.jpg",
+          "desc": "Enkaku-ji is a National Historic Site in Naha, Okinawa prefecture, Japan.",
+          "w": 4380,
+          "h": 2920
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "建長寺（方丈・庭園）",
+      "imageSubject": "建長寺の方丈（龍王殿）と庭園（背後の山を借景にした池泉庭園）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__4__1.jpg",
+          "file": "File:Hansobo Shrine @ Kencho-ji @ Kamakura (13897786481).jpg",
+          "desc": "Hansobo Shrine @ Kencho-ji @ Kamakura",
+          "w": 3968,
+          "h": 2976
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__4__2.jpg",
+          "file": "File:Kamakura, le sanctuaire.jpg",
+          "desc": "Temple de  Hase-dera de  Kamakura Japon",
+          "w": 1274,
+          "h": 1022
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__4__3.jpg",
+          "file": "File:Kenchin-jiru.jpg",
+          "desc": "Kenchin-jiru served at Tenshin-an, a restaurant located outside Kencho-ji Temple in Yamanouchi, Kamakura.",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__4__4.jpg",
+          "file": "File:Kencho-ji Temple @ Kamakura (13897782171).jpg",
+          "desc": "Kencho-ji Temple @ Kamakura",
+          "w": 3968,
+          "h": 2976
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "鎌倉歴史文化交流館",
+      "imageSubject": "鎌倉歴史文化交流館（御成町にあるモダニズム建築の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__5__1.jpg",
+          "file": "File:Kamakura Museum of History & Culture 1.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__5__2.jpg",
+          "file": "File:Kamakura Museum of History & Culture 3.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__5__3.jpg",
+          "file": "File:Kamakura Museum of History & Culture 2.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__5__4.jpg",
+          "file": "File:Kamakura Museum of History & Culture 5.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        }
+      ]
+    }
+  ]
+}

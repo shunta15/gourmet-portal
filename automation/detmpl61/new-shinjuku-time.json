@@ -1,0 +1,43 @@
+{
+  "id": "new-shinjuku-time",
+  "file": "newGuideFeatures2",
+  "persona": "C",
+  "tag": "時間つぶし",
+  "currentTitle": "新宿で時間つぶし5選。歌舞伎町・西口・南口エリア",
+  "currentSubtitle": "新宿御苑、歌舞伎町、高島屋タイムズスクエア。乗り換え前の時間が余ったとき",
+  "currentLede": "新宿は東口・西口・南口でまったく顔の違う3つの街が背中合わせに同居している、東京で最も「時間つぶしが効く」ターミナルだ。乗り換えで30分余った日も、夜行バスを待つ4時間も、雨で予定が崩れた半日も、徒歩圏に対応できる選択肢がある。東口は歌舞伎町と老舗百貨店、西口は超高層ビルと飲み屋横丁、南口は新しい商業施設と緑の公園、というのが大枠の地図感だ。この記事では、所要30分〜半日のレンジで使い分けられる5スポットを、初訪問でも迷子になりにくい順序で並べる。",
+  "currentQuote": "新宿は迷子になっても楽しい。東口・南口・西口それぞれに全く異なる顔がある。",
+  "currentClosing": "標準動線（半日コース）は、新宿御苑（10:00〜12:00）→高島屋タイムズスクエア（12:00〜14:00ランチ＋書店）→新宿中央公園・都庁展望台（14:30〜16:00）→思い出横丁（17:00〜18:30早めの夕食）→歌舞伎町タワー（19:00〜映画 or ライブ）。所要6〜8時間で1日コースになる。短い時間しかない場合は、駅から徒歩3分以内の高島屋タイムズスクエア・思い出横丁・歌舞伎町タワーのどれか1つに絞る。「乗り換えの空き時間を有効に使いたい人」「雨で予定が崩れた人」「新宿の3つの顔を一気に見たい人」に向く。雨の日は新宿御苑（温室）→ルミネ・タイムズスクエア（屋内通路）→歌舞伎町タワー（ビル内完結）の屋内中心ルートに切り替えると傘なしで動ける。土日の歌舞伎町は18時以降に人波が一気に増えるので、混雑を避けたい人は東口より南口・西口で過ごす方が落ち着く。迷ったら、平日昼は新宿御苑、雨は高島屋＋書店、夜は思い出横丁、と1スポットだけ決めて行くのが新宿との上手な付き合い方。",
+  "spots": [
+    {
+      "name": "新宿御苑",
+      "area": "新宿",
+      "descHead": "新宿駅から徒歩10〜15分、58haの広大な国民公園で、フランス式・イギリス式・日本庭園の3様式を1日で歩ける。桜の名所として有名だが、初夏のバラ・秋の紅葉・冬の温室と通年で「見る",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "歌舞伎町・東急歌舞伎町タワー",
+      "area": "歌舞伎町",
+      "descHead": "東口側の歌舞伎町は日本最大の歓楽街として知られるが、2023年開業の東急歌舞伎町タワーが入り口の雰囲気を一新している。ライブハウス（Zepp Shinjuku）・109シネマズプレ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "高島屋タイムズスクエア",
+      "area": "新宿南口",
+      "descHead": "新宿駅新南改札直結の商業ビル群。高島屋・紀伊國屋書店新宿南店・ハンズ新宿が同じビルに入り、雨の日の時間つぶしとして都内屈指の総合力を持つ。紀伊國屋書店は8フロア構成で、洋書・専門書",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿中央公園",
+      "area": "西新宿",
+      "descHead": "西新宿の超高層ビル群の足元に広がる都市公園。芝生広場・噴水・野外ステージ・熊野神社が混在し、ビジネスマンの昼食休憩から、夕方のジョギング、夜のライトアップ撮影まで時間帯ごとに表情が",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "思い出横丁",
+      "area": "新宿西口",
+      "descHead": "新宿駅西口ガード下に残る、戦後闇市の名残をそのまま継ぐ路地。もつ焼き・焼鳥・ラーメン・小料理の小箱が80軒ほど密集し、1人1,500〜2,500円で2軒はしごできる価格帯。席数2〜",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ]
+}

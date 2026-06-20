@@ -1,0 +1,43 @@
+{
+  "id": "new-hakoneyumoto",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "観光",
+  "currentTitle": "箱根湯本5選。日帰り温泉と老舗の味を楽しむ半日コース",
+  "currentSubtitle": "箱根湯本温泉、天山湯治郷、湯本商店街。小田原から20分で行ける温泉郷",
+  "currentLede": "箱根湯本は箱根の玄関口で、新宿から特急ロマンスカーで約85分。箱根湯本駅周辺は温泉旅館・お土産店・温泉まんじゅう店・蕎麦屋が並ぶ昭和の温泉街の雰囲気が残る。対象は日帰り温泉を楽しみたいカップル、出張帰りの寄り道に使いたい1人客、箱根観光の起点として温泉街を体験したい家族。標準は10:30集合・17:30解散の7時間コース、予算は温泉＋食事＋お土産込みで1人6,000〜12,000円。ここでは箱根湯本周辺の5スポットを紹介する。",
+  "currentQuote": "箱根湯本は新宿から特急ロマンスカーで85分、小田原から20分。日帰り温泉の定番エリア。",
+  "currentClosing": "標準動線: 新宿8:30出発ロマンスカー→10:30湯本到着→旅館で日帰り温泉（11:00〜13:00）→蕎麦ランチ（13:00〜14:30）→湯本商店街で土産購入（14:30〜15:30）→湯本美術館（15:30〜16:30）→箱根登山電車で強羅方面散策（16:30〜17:30）→ロマンスカーで帰京。所要7時間、予算は温泉＋食事＋土産込みで1人6,000〜12,000円。土日午前のロマンスカー＋日帰り温泉は予約推奨。雨の日も温泉・旅館・蕎麦屋・お土産店すべて屋内で完結できる。失敗しやすいのは「日帰り温泉の最終受付時間を見落として入浴できない」「ロマンスカーの予約見落とし」「強羅・大涌谷まで足を伸ばす時間配分のミス」。事前に温泉施設の最終受付・ロマンスカー予約・観光ルートを確認。この記事は日帰りで箱根の温泉を楽しみたい人、温泉街の昭和の雰囲気を体感したい人、ロマンスカーの旅と組み合わせたい人に向く。",
+  "spots": [
+    {
+      "name": "箱根湯本温泉（日帰り入浴）",
+      "area": "箱根湯本",
+      "descHead": "箱根湯本温泉は箱根17湯のひとつで、最古の温泉地として歴史的に有名。「日帰り温泉を午前中にゆっくり入りたい」目的に最適。駅周辺の旅館は日帰り入浴を提供する施設が多く、午前10時〜午",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "天山湯治郷",
+      "area": "箱根湯本",
+      "descHead": "天山湯治郷は箱根湯本駅から無料送迎バスで約10分、自然に囲まれた本格的な日帰り温泉施設。「源泉かけ流しの温泉でゆっくり過ごしたい」「静かな環境で湯治気分を味わいたい」目的に最適。5",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根湯本商店街",
+      "area": "箱根湯本",
+      "descHead": "箱根湯本商店街は湯本駅前から早川沿いに約500m続く土産・飲食街。「温泉まんじゅう・かまぼこ・寄せ木細工の土産を調達したい」観光客に最適。「丸嶋本店」「菊川商店」「鈴廣」など老舗の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根湯本美術館",
+      "area": "箱根湯本",
+      "descHead": "箱根湯本美術館は湯本駅から徒歩約3分、地元作家の作品を中心に展示する小規模美術館。「温泉後にアートで気分を切り替えたい」大人の2人に向く。営業時間10〜17時（公式サイトで確認）、",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根登山電車（湯本→強羅）",
+      "area": "箱根湯本→強羅",
+      "descHead": "箱根登山電車（湯本→強羅）は1919年開業の山岳鉄道で、湯本駅から強羅駅まで約40分のスイッチバック運転が体験できる。「箱根の山岳景観を電車から楽しみたい」「強羅・大涌谷方面に足を",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    }
+  ]
+}

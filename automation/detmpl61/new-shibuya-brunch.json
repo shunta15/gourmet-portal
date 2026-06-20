@@ -1,0 +1,43 @@
+{
+  "id": "new-shibuya-brunch",
+  "file": "newGuideFeatures4",
+  "persona": "A",
+  "tag": "カフェ",
+  "currentTitle": "渋谷ブランチ5選。スクランブル周辺の朝食と昼食",
+  "currentSubtitle": "渋谷ストリーム、代々木公園、渋谷ヒカリエ。渋谷で週末のゆっくりブランチ",
+  "currentLede": "渋谷のブランチ文化は、再開発で増えた高層ビル内のレストランと、奥渋谷・神南エリアの個人経営カフェの2極で進化している。朝10時〜午後2時の「土曜の遅めの朝食」枠は、平日に来られない仕事をしている人にとっての貴重なリセット時間。ここでは「ホテルの朝食ほどフォーマルじゃないが、コンビニ朝食より一段上」を狙える5スポットを紹介する。渋谷駅から徒歩15分圏内に集まるため、3〜4店をハシゴすることもできる。",
+  "currentQuote": "渋谷のブランチは「スクランブルを避ける」ことが重要。ストリーム・松濤・代々木公園の3択で、渋谷の別の顔が見える。",
+  "currentClosing": "標準動線は、土曜10時に渋谷駅集合→宮下公園屋上で散歩（10:00〜10:30）→奥渋谷のベーカリー（10:30〜12:00）→奥渋谷カフェでブランチ（12:00〜13:30）→宮益坂方向のカフェで2杯目（14:00〜15:00）→渋谷スカイで夕景前の街並み観賞。所要4〜5時間、予算は1人3,500〜7,000円が目安。「土曜の遅めの朝食をゆっくり過ごしたい人」「個人経営のローカル店を発見したい人」「渋谷スクランブルの混雑を避けて散歩したい人」に向く。渋谷スカイは事前予約が前提（土日午前は当日券が取りにくい）、奥渋谷のベーカリーは10時前に焼きたてが出ることが多いので早めの起床がポイント。雨の日は宮下公園屋上を諦め、渋谷スクランブルスクエア→ヒカリエの屋内ルートに切り替える。時間がない場合は、奥渋谷ベーカリー（30分）→近所のカフェ（60分）の2点で90分コースに圧縮できる。迷ったら、奥渋谷の住宅街に踏み込んで、店頭の雰囲気で1軒選ぶ、というシンプルな歩き方が奥渋谷ブランチの王道。",
+  "spots": [
+    {
+      "name": "渋谷ストリーム（渋谷川沿い遊歩道）",
+      "area": "渋谷",
+      "descHead": "2019年開業、渋谷駅直結の230mの超高層ビル。地下2階〜地上47階の複合施設で、最上層に展望施設「SHIBUYA SKY」、中層階にレストランフロアが入る。渋谷ストリーム・渋谷",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "渋谷ヒカリエ（展望フロア）",
+      "area": "渋谷",
+      "descHead": "渋谷駅の北西側、奥渋谷（神山町・松濤）は、渋谷の喧騒から1〜2ブロック歩いた途端に静かな住宅街になる、東京で珍しい立地。個人経営のスペシャルティコーヒーロースタリー、自家製パン中心",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "松濤・鉢山エリアのカフェ",
+      "area": "渋谷〜松濤",
+      "descHead": "宮下公園（MIYASHITA PARK）は2020年リニューアル、新南口出口から徒歩3分の高架線下の複合施設。屋上のスケートパーク・ボルダリングウォール・芝生広場が無料開放され、ブ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "渋谷スクランブルスクエア展望台（SHIBUYA SKY）",
+      "area": "渋谷",
+      "descHead": "渋谷駅から徒歩約8〜10分、奥渋谷の住宅街にひっそり点在する「全粒粉・天然酵母・自家製発酵」のベーカリーが4〜5軒。土曜午前9〜11時の焼きたて時間帯は地元客で行列ができる。1個3",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "代々木公園でのピクニックブランチ",
+      "area": "代々木公園",
+      "descHead": "渋谷宮益坂上から青山方向へ向かう通り沿いには、ニュージーランド系・オーストラリア系・北欧系のオーセンティックな朝食カフェが点在する。アボカドトースト・エッグベネディクト・アサイーボ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    }
+  ]
+}

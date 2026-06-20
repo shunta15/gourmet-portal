@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修 2026-06-20）: テキスト/articleTypeを4ペルソナで多様化。スポット・画像は保持。
+// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
 
 export const NEW_GUIDE_FEATURES_6: Feature[] = [
   {
@@ -10,7 +10,7 @@ export const NEW_GUIDE_FEATURES_6: Feature[] = [
     "kicker": "KANAGAWA WEEKEND",
     "title": "神奈川を週末で歩く。横浜・鎌倉・箱根、性格の違う街をつなぐ二日間",
     "sub": "港町・古都・温泉。電車で一時間圏内にまるで違う表情が並ぶ県を、欲張りすぎずにつなぐ",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Mount_Fuji_from_Lake_Ashi_20211202-2.jpg/1280px-Mount_Fuji_from_Lake_Ashi_20211202-2.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2024_Yokohama_Landmark_Tower_%283%29.jpg/1280px-2024_Yokohama_Landmark_Tower_%283%29.jpg"
   }
 ];
 
@@ -27,7 +27,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約8分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Mount_Fuji_from_Lake_Ashi_20211202-2.jpg/1280px-Mount_Fuji_from_Lake_Ashi_20211202-2.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2024_Yokohama_Landmark_Tower_%283%29.jpg/1280px-2024_Yokohama_Landmark_Tower_%283%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -38,7 +38,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
         "purpose": "初日はみなとみらいで港の景色をスタートに",
         "desc": "週末初日の朝はみなとみらいで始めるのがおすすめ。東京から電車約30分、ランドマークタワー・赤レンガ倉庫・大さん橋を歩いて港の景色を一気に体験できる。「横浜の代表的な景観を半日で網羅したい」観光客に最適。山下公園→大さん橋→赤レンガ倉庫の徒歩ルートで約2時間、海風と港の眺めで体が「旅モード」に切り替わる。桜木町駅・みなとみらい駅・元町中華街駅の3駅から動線が組みやすい。中華街でのランチを組み合わせれば、横浜エリアで半日が成立する。夕方からは鎌倉方面に移動するか、横浜で夜景を見るか選べる二段構え。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg/1280px-Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2024_Yokohama_Landmark_Tower_%283%29.jpg/1280px-2024_Yokohama_Landmark_Tower_%283%29.jpg"
         ],
         "specs": [
           {
@@ -56,7 +56,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
         "purpose": "みなとみらいの後は中華街でランチ。王道コース",
         "desc": "横浜中華街は週末ランチのハイライト。約600軒の中華料理店が集まる日本最大の中華街。「中華街の食べ歩きで気軽に複数店を楽しみたい」「横浜の代表的な食文化を体験したい」観光客に最適。観光客が最も集中する12〜13時のピークを避けるため、11時30分到着または14時以降が現実的。食べ歩きメイン（1人2,000〜3,000円）か店内コース（1人4,000〜8,000円）かを事前に決めて入るのが効率的。東門・西門・南門・北門の4方向から入れる。元町・中華街駅徒歩5分の駅近で、横浜・鎌倉方向どちらにも電車で繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg/1280px-Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Zenrinmon_Gate.jpg/1280px-Zenrinmon_Gate.jpg"
         ],
         "specs": [
           {
@@ -78,7 +78,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
         "purpose": "横浜から電車で30分。午後の鎌倉は人が減り始める",
         "desc": "横浜から鎌倉へはJR横須賀線で約30分。観光客が集中する朝〜昼を避け、午後14時頃から動き始めると人波が落ち着く。「古都鎌倉の寺社を半日で歩きたい」観光客に最適。北鎌倉→鎌倉のルートで円覚寺・建長寺・鶴岡八幡宮を参拝、その後は小町通りで食べ歩き、由比ガ浜方向への散歩動線が組める。鎌倉駅から江ノ電に乗ると約7分で長谷駅、高徳院（鎌倉大仏）と長谷寺へ徒歩アクセスできる。夕方17時頃の小町通りは観光客が引き、落ち着いて店に入れる時間帯。鎌倉駅近のホテル・旅館に宿泊する場合は、夜の鎌倉散歩も組み込める。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tsurugaoka_Hachimangu_001.jpg/1280px-Tsurugaoka_Hachimangu_001.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/202408101236_IMG_0997.jpg/1280px-202408101236_IMG_0997.jpg"
         ],
         "specs": [
           {
@@ -96,7 +96,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
         "purpose": "二日目は箱根の温泉。小田原経由で行くのがおすすめ",
         "desc": "週末2日目は箱根の温泉でリフレッシュ。鎌倉から箱根湯本へは鎌倉→横浜→小田原→箱根湯本の経路で約2時間。「温泉旅行を1日コースに組み込みたい」家族・カップルに最適。箱根湯本の日帰り温泉施設は午前中入浴が現実的で、午後は大涌谷ロープウェイまたは芦ノ湖遊覧船で景色を楽しむ。大涌谷の硫黄地帯と富士山の組み合わせは箱根のハイライト、晴天時は富士山が見渡せる。ポーラ美術館（仙石原）で印象派絵画と森の中の建築を組み合わせるルートも人気。箱根湯本駅周辺で温泉まんじゅう・寄せ木細工などのお土産を調達して新宿方面に戻る動線。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Owakudani_%40_Hakone_%2810621413133%29.jpg/1280px-Owakudani_%40_Hakone_%2810621413133%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/A_view_of_Owakudani_-_a_volcanic_valley_with_active_sulphur_vents_and_hot_springs_in_Hakone%2C_Japan.jpg/1280px-A_view_of_Owakudani_-_a_volcanic_valley_with_active_sulphur_vents_and_hot_springs_in_Hakone%2C_Japan.jpg"
         ],
         "specs": [
           {

@@ -1,0 +1,43 @@
+{
+  "id": "new-chigasaki-beach",
+  "file": "newGuideFeatures",
+  "persona": "B",
+  "tag": "街歩き",
+  "currentTitle": "茅ヶ崎ビーチ5選。湘南のサーファーズパラダイスを歩く",
+  "currentSubtitle": "サザンビーチ、ヘッドランド、海沿いカフェ。茅ヶ崎で感じる湘南の空気",
+  "currentLede": "茅ヶ崎は神奈川県中央南部、湘南海岸の中心都市。サザンビーチちがさき・烏帽子岩・茅ヶ崎海岸など海関連スポットが集まり、サーフィン文化の街として知られる。対象は湘南海岸でゆっくり散歩したい人、サザンオールスターズの聖地巡礼を組みたい人、サーフィン文化に触れたいカップル。標準は10:30集合・18:00解散の7時間30分コース、予算は1人3,000〜6,000円。東京から東海道線で約60分。",
+  "currentQuote": "茅ヶ崎は湘南の海とサーファー文化が一体になった場所。海岸線を歩くだけで湘南気分になれる。",
+  "currentClosing": "標準動線: 茅ヶ崎駅10:30→海岸方向へ徒歩→サザンビーチで朝散歩（11:00〜12:00）→ヘッドランド突堤で景観撮影（12:00〜12:30）→Tバー周辺のサーフ系カフェでランチ（12:30〜14:00）→旧相模川橋脚で歴史散歩（14:00〜15:00）→茅ヶ崎公園で自然散策（15:30〜17:00）→海岸で夕日観賞（17:00〜18:00）。所要7時間30分、予算は1人3,000〜6,000円。夏のピーク（7〜8月）は海水浴客で混雑、その他の季節は静か。雨の日は屋内のサーフ系カフェ・茅ヶ崎美術館（茅ヶ崎駅から徒歩10分）に切り替えると傘最小限。失敗しやすいのは「夕日の時間（季節により17〜18時）を見逃して暗くなる前に駅に戻れない」「ヘッドランドの強風時の立入禁止を知らずに行く」「Tバー周辺の店の定休日を見落とす」。事前に天候・店舗営業日を公式サイトで確認、夕日のピーク時間に逆算して動き出す。この記事は湘南海岸でゆっくり散歩したい人、サザンオールスターズの聖地巡礼を組みたい人、サーフィン文化に触れたいカップルに最も向く。",
+  "spots": [
+    {
+      "name": "サザンビーチちがさき",
+      "area": "茅ヶ崎",
+      "descHead": "サザンビーチちがさきは茅ヶ崎海岸の中心、約1.2kmの白い砂浜のビーチ。「夕日と海岸散歩をゆっくり楽しみたい」「サザンの聖地として訪れたい」観光客に最適。サザンオールスターズの聖地",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "ヘッドランド（突堤）",
+      "area": "茅ヶ崎",
+      "descHead": "ヘッドランド（突堤）はサザンビーチちがさきの東端に整備された人工岬で、海に突き出た約100mの堤防。「海と烏帽子岩を間近で見たい」「写真スポットとして使いたい」観光客に向く。堤防の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "Tバー（チャーム茅ヶ崎）周辺カフェ群",
+      "area": "茅ヶ崎",
+      "descHead": "Tバー（チャーム茅ヶ崎）周辺は茅ヶ崎駅南口から海岸方向にかけて、サーファー文化の中心地。「サーファースタイルの店を巡りたい」「海岸前のおしゃれカフェで過ごしたい」目的に向く。サーフ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "旧相模川橋脚（国指定史跡）",
+      "area": "茅ヶ崎",
+      "descHead": "旧相模川橋脚は茅ヶ崎駅から徒歩約15分、1923年関東大震災で隆起した相模川の旧橋脚跡。国指定史跡で、鎌倉時代の橋脚が残る稀有な遺跡。「歴史的な遺跡と海岸を組み合わせたい」考古学好",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "茅ヶ崎公園（里山の丘公園）",
+      "area": "茅ヶ崎",
+      "descHead": "茅ヶ崎公園（里山の丘公園）は茅ヶ崎駅から徒歩約20分の市民公園で、芝生・池・遊歩道・里山区画が整備されている。「子供と外遊びをしたい」「自然散歩を楽しみたい」家族に向く。桜・紅葉の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "kansai-gion-higashiyama-date",
+  "file": "newGuideFeaturesKansai",
+  "persona": "B",
+  "tag": "デート",
+  "currentTitle": "祇園・東山デート5選。八坂神社から清水寺へ石畳を歩く",
+  "currentSubtitle": "八坂神社、高台寺、二年坂、清水寺。京都らしい一日を歩いてつなぐ",
+  "currentLede": "京都・東山は、八坂神社から清水寺へと続く石畳の坂道沿いに、寺社と町家のショップがまとまった、徒歩で巡れる定番の観光エリアだ。八坂神社から清水寺までは約1.3km、寄り道をしなければ徒歩30分ほどで、坂と石段を上り下りしながら京都らしい景色が途切れず続く。対象は、京都で半日デートを組みたいカップル、有名どころを効率よく一度に回りたい2人。標準は10:00出発・15:00ごろ解散の約5時間コース、拝観料の合計は1人1,200〜1,800円が目安。ここでは祇園から清水寺へと自然に上っていく5スポットを、歩く順番で紹介する。",
+  "currentQuote": "東山は、坂をのぼりきるほど京都らしくなっていく道だ。",
+  "currentClosing": "標準動線: 10:00 八坂神社で待ち合わせて参拝（10:00〜10:30）→ 奥の円山公園で池と桜の庭を歩く（10:30〜11:00）→ ねねの道を上って高台寺で庭を眺める（11:15〜12:00）→ 二年坂・産寧坂で町家のショップを覗きながら昼食やスイーツ（12:00〜13:30）→ 坂を上りきって清水寺の舞台で京都市街を見渡して締める（13:45〜15:00）。所要約5時間、拝観料の合計は1人1,200〜1,800円が目安。このルートのいいところは、四条の賑わいから坂をのぼるごとに景色が京都らしくなり、最後の清水の舞台で一気に視界が開けることだ。注意したいのは、東山一帯が坂と石段の連続で歩きやすい靴が必須なこと、二年坂・産寧坂や清水寺は昼前後に混みやすいこと、そして寺社の拝観時間が夕方には終わること。雨の日は、高台寺や清水寺の諸堂、坂沿いの店内を中心に組み替えると歩きやすい。拝観料・拝観時間・ライトアップの有無は時期で変わるため、訪問前に各施設の公式情報で確認しておきたい。京都で半日、定番をひと続きに歩いて回りたい2人に向くコースだ。",
+  "spots": [
+    {
+      "name": "八坂神社",
+      "area": "京都市東山区・祇園",
+      "descHead": "八坂神社は祇園のシンボルともいえる神社で、四条通の東端に立つ朱塗りの西楼門が待ち合わせの目印になる。全国の祇園社の総本社で、縁結びの神としても知られ、境内の摂社・大国主社は良縁を願",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/South_Tower_Gate_of_Yasaka_Shrine_in_Kyoto%2C_20240820_1706_5167.jpg/1280px-South_Tower_Gate_of_Yasaka_Shrine_in_Kyoto%2C_20240820_1706_5167.jpg"
+    },
+    {
+      "name": "円山公園",
+      "area": "京都市東山区・祇園",
+      "descHead": "円山公園は八坂神社の東に広がる京都市最古の公園で、池泉回遊式の庭園を中心に、桜の名所として知られる。中央のしだれ桜は特に有名で、春には花見客で賑わう。園内は無料で歩け、ベンチや茶店",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maruyama_Park_Kyoto_1905.jpg/1280px-Maruyama_Park_Kyoto_1905.jpg"
+    },
+    {
+      "name": "高台寺",
+      "area": "京都市東山区・高台寺",
+      "descHead": "高台寺は、豊臣秀吉の正室・北政所ねねが、秀吉の菩提を弔うために建てた寺で、「ねねの寺」として親しまれている。ねねの道と呼ばれる石畳の坂を上ると入口があり、小堀遠州が手がけたと伝わる",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kodai-ji_Temple_%40_Kyoto_%2813310459195%29.jpg/1280px-Kodai-ji_Temple_%40_Kyoto_%2813310459195%29.jpg"
+    },
+    {
+      "name": "二年坂・産寧坂",
+      "area": "京都市東山区・清水",
+      "descHead": "二年坂（二寧坂）と産寧坂（三年坂）は、高台寺方面から清水寺へと続く200mほどの石畳の坂道で、京町家を生かしたショップやカフェ、土産物店が軒を連ねる。歩くだけで京都らしい景観が楽し",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pedestrian_road_with_pavements_and_paper_umbrellas%2C_Higashiyama-ku%2C_Kyoto%2C_Japan%2C_early_morning.jpg/1280px-Pedestrian_road_with_pavements_and_paper_umbrellas%2C_Higashiyama-ku%2C_Kyoto%2C_Japan%2C_early_morning.jpg"
+    },
+    {
+      "name": "清水寺",
+      "area": "京都市東山区・清水",
+      "descHead": "清水寺は、坂道の頂点に建つ世界文化遺産の寺院で、崖からせり出す「清水の舞台」で知られる。本堂の舞台からは京都市街を見渡せ、春の桜や秋の紅葉の時期には、境内が一面に色づく。拝観料は大",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg"
+    }
+  ]
+}

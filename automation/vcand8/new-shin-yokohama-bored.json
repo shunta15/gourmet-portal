@@ -1,0 +1,205 @@
+{
+  "id": "new-shin-yokohama-bored",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "新横浜ラーメン博物館",
+      "imageSubject": "新横浜ラーメン博物館の館内・昭和レトロな路地を再現したジオラマ空間（地下フロアの夕暮れ風セットと提灯）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__1__1.jpg",
+          "file": "File:とんこつラーメン 新横浜ラーメン博物館 2023年9月17日の横浜市 202309171737.jpg",
+          "desc": "とんこつラーメン新横浜ラーメン博物館にて（2023年9月17日17時37分）\n This photo was taken with iPhone 12 Pro",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__1__2.jpg",
+          "file": "File:熊本ラーメン こむらさき 新横浜ラーメン博物館 2025年11月26日の横浜市 202511261839 IMG 5315.jpg",
+          "desc": "天地返し\n『吸血鬼すぐ死ぬ』とのコラボラーメン\nドラルクの黒き闇に覆われし担々麺 ¥1,400\n熊本ラーメン こむらさき\n新横浜ラーメン博物館にて\n（2025年11月26日18時39分）\n\n This photo was taken with iPhone 12 Pro",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__1__3.jpg",
+          "file": "File:熊本ラーメン こむらさき 新横浜ラーメン博物館 2025年11月26日の横浜市 202511261827 IMG 5308.jpg",
+          "desc": "熊本ラーメン こむらさき\n新横浜ラーメン博物館にて\n（2025年11月26日18時27分）\n\n This photo was taken with iPhone 12 Pro",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__1__4.jpg",
+          "file": "File:ドラルクの黒き闇に覆われし担々麺 熊本ラーメン こむらさき 新横浜ラーメン博物館 2025年11月26日の横浜市 202511261838 IMG 5313.jpg",
+          "desc": "『吸血鬼すぐ死ぬ』とのコラボラーメン\nドラルクの黒き闇に覆われし担々麺 ¥1,400\n熊本ラーメン こむらさき\n新横浜ラーメン博物館にて\n（2025年11月26日18時38分）\n\n This photo was taken with iPhone 12 Pro",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "新横浜スケートセンター",
+      "imageSubject": "新横浜スケートセンターのアイススケートリンク（屋内の白い氷面）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__2__1.jpg",
+          "file": "File:KOSÉ新横浜スケートセンター（場外）.jpg",
+          "desc": "KOSÉ新横浜スケートセンター（場外）",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__2__2.jpg",
+          "file": "File:新横浜スケートセンター - panoramio.jpg",
+          "desc": "新横浜スケートセンター",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__2__3.jpg",
+          "file": "File:新横浜スケートセンター - panoramio (1).jpg",
+          "desc": "新横浜スケートセンター",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__2__4.jpg",
+          "file": "File:北海道ワイルズ対横浜GRITSの交流戦 KOSÉ新横浜スケートセンター 2023年9月17日の横浜市 202309171355 DSCN1954.jpg",
+          "desc": "試合前セレモニーの前に転倒するも平然を装うグルーガ\n新横浜スケートセンターにて\n\n（2023年9月17日13時55分）",
+          "w": 5184,
+          "h": 3888
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "新横浜公園",
+      "imageSubject": "新横浜公園の鶴見川沿いに広がる芝生広場と遊歩道（日産スタジアムを背にした緑地）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__3__1.jpg",
+          "file": "File:新横浜公園 - panoramio.jpg",
+          "desc": "新横浜公園",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__3__2.jpg",
+          "file": "File:新横浜公園 - panoramio (1).jpg",
+          "desc": "新横浜公園",
+          "w": 3648,
+          "h": 2048
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__3__3.jpg",
+          "file": "File:新横浜公園 - panoramio (4).jpg",
+          "desc": "新横浜公園",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__3__4.jpg",
+          "file": "File:新横浜公園 - panoramio (2).jpg",
+          "desc": "新横浜公園",
+          "w": 3648,
+          "h": 2048
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "キュービックプラザ新横浜",
+      "imageSubject": "キュービックプラザ新横浜の外観（新横浜駅直結の高層複合ビル）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__4__1.jpg",
+          "file": "File:キュービックプラザ新横浜専用駐輪場 - panoramio.jpg",
+          "desc": "キュービックプラザ新横浜専用駐輪場",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__4__2.jpg",
+          "file": "File:キュービックプラザ新横浜専用駐輪場 - panoramio (1).jpg",
+          "desc": "キュービックプラザ新横浜専用駐輪場",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__4__3.jpg",
+          "file": "File:GRAND KIOSK in CUBIC PLAZA Shin-yokohama.jpg",
+          "desc": "東海道新幹線新横浜駅ビルのキュービックプラザ新横浜内に出店するグランドキオスク",
+          "w": 4608,
+          "h": 3456
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__4__4.jpg",
+          "file": "File:JR新横浜駅 2025年1月5日の横浜市 202501051739 IMG 9120.jpg",
+          "desc": "キュービックプラザ新横浜内のJR新横浜駅（2025年1月5日17時39分）\n This photo was taken with iPhone 12 Pro",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "日産スタジアム（横浜国際総合競技場）",
+      "imageSubject": "日産スタジアム（横浜国際総合競技場）の大屋根と外観全景",
+      "imageRegion": "神奈川県横浜市港北区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__5__1.jpg",
+          "file": "File:Nissan International Stadium Yokohama.jpg",
+          "desc": "Aerial view of International Stadium Yokohama, Japan",
+          "w": 4826,
+          "h": 2712
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__5__2.jpg",
+          "file": "File:International Stadium Yokohama aerial shot.jpg",
+          "desc": "横浜国際競技場の航空写真",
+          "w": 4896,
+          "h": 3672
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__5__3.jpg",
+          "file": "File:20250104 International Stadium Yokohama 123533.jpg",
+          "desc": "Wejście na stadion drużyny Yokohama F. Marinos",
+          "w": 4624,
+          "h": 3468
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shin-yokohama-bored__5__4.jpg",
+          "file": "File:20250104 International Stadium Yokohama 132639.jpg",
+          "desc": "Stadion drużyny Yokohama F. Marinos",
+          "w": 4032,
+          "h": 2268
+        }
+      ]
+    }
+  ]
+}

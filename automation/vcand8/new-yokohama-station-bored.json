@@ -1,0 +1,173 @@
+{
+  "id": "new-yokohama-station-bored",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "そごう美術館",
+      "imageSubject": "横浜そごう（そごう横浜店）が入る横浜駅東口の大型百貨店ビルの外観。そごう美術館は同店8階に入る",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__1__1.jpg",
+          "file": "File:Yokohama Shitoshi Bld.jpg",
+          "desc": "Yokohama Shintoshi building seen from the west side of Yokohama station.",
+          "w": 3163,
+          "h": 1779
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__1__2.jpg",
+          "file": "File:Marie-Antoinette sortant de la Conciergerie, le 16 octobre 1793.jpg",
+          "desc": "Table presented at the Salon of the Society of French Artists of 1885 (n ° 441). Georges Cain was curator of the Carnavalet Museum from 1897 to 1919.",
+          "w": 4400,
+          "h": 3646
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "アソビル",
+      "imageSubject": "横浜駅東口の体験型エンタメ施設アソビルの建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__2__1.jpg",
+          "file": "File:AsoBuild 01.jpg",
+          "desc": "横浜市西区（横浜駅みなみ東口）の横浜中央郵便局別館跡にオープンしたエンターテイメント施設「アソビル」の外観。メインエントランスがある南（帷子川）側より。",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__2__2.jpg",
+          "file": "File:AsoBuild, POST STREET01.jpg",
+          "desc": "横浜市西区、アソビル1階「POST STREET」（グルメフロア）。",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__2__3.jpg",
+          "file": "File:AsoBuild, POST STREET02.jpg",
+          "desc": "横浜市西区、アソビル1階「POST STREET」（グルメフロア）。",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__2__4.jpg",
+          "file": "File:AsoBuild 04.jpg",
+          "desc": "横浜市西区の横浜中央郵便局別館跡にオープンしたエンターテイメント施設「アソビル」、横浜駅みなみ東口の暫定通路に接続する施設入口部。",
+          "w": 3702,
+          "h": 2776
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜ポルタ（散策）",
+      "imageSubject": "横浜駅東口の地下街・横浜ポルタの店舗が並ぶ地下通路の様子",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__3__1.jpg",
+          "file": "File:2 Chome-16 Takashima, Nishi-ku, Yokohama-shi, Kanagawa-ken 220-0011, Japan - panoramio (36).jpg",
+          "desc": "横浜ポルタの通路。",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__3__2.jpg",
+          "file": "File:2 Chome-16 Takashima, Nishi-ku, Yokohama-shi, Kanagawa-ken 220-0011, Japan - panoramio (39).jpg",
+          "desc": "横浜ポルタ内の案内窓口。",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__3__3.jpg",
+          "file": "File:2 Chome-16 Takashima, Nishi-ku, Yokohama-shi, Kanagawa-ken 220-0011, Japan - panoramio (45).jpg",
+          "desc": "横浜ポルタ内の証明写真機ほか。",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__3__4.jpg",
+          "file": "File:2 Chome-16 Takashima, Nishi-ku, Yokohama-shi, Kanagawa-ken 220-0011, Japan - panoramio (50).jpg",
+          "desc": "横浜ポルタ内の「はなまるうどん」（右手前）ほか飲食店。",
+          "w": 4592,
+          "h": 3448
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "CIAL横浜",
+      "imageSubject": "横浜駅西口直結の駅ビル型商業施設CIAL横浜の外観またはフロアの様子",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__4__1.jpg",
+          "file": "File:横浜駅 旧CIAL.JPG",
+          "desc": "横浜駅 旧CIAL閉鎖後の様子",
+          "w": 2280,
+          "h": 1696
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__4__2.jpg",
+          "file": "File:CIAL Sakuragicho 05.JPG",
+          "desc": "CIAL桜木町の西側（野毛側）建物内に位置する「停車場ビュッフェ」ゾーン。横浜の歴史を感じさせる飲食店が並ぶ。画像中央の店舗は1900年（昭和33年）創業の老舗そば屋「川村屋」。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__4__3.jpg",
+          "file": "File:CIAL Sakuragicho 08.JPG",
+          "desc": "フレッシュジュースなどが飲める横浜水信CIAL桜木町店。店舗はCIAL桜木町の西側に位置するものの、「YOKOHAMA BAZAR」内に区分される。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__4__4.jpg",
+          "file": "File:CIAL Sakuragicho 07.JPG",
+          "desc": "CIAL桜木町の南側、JR桜木町駅南改札前に位置する「横濱情報プラザ」ゾーン。クロークサービス (手荷物預かり等) を併設する観光案内所や横浜の土産品などを扱う横濱銘品館、さらにコンビニや本屋などが入る。",
+          "w": 3264,
+          "h": 2448
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "横浜ランドマークタワー展望台（スカイガーデン）",
+      "imageSubject": "横浜ランドマークタワー（みなとみらいの超高層ビル）の全景。69階に展望フロア「スカイガーデン」がある",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__5__1.jpg",
+          "file": "File:Yokohama Kitanaka 2020 Aerial.jpg",
+          "desc": "View of Yokohama Kitanaka district from the Landmark Tower Sky Garden observation deck.",
+          "w": 3840,
+          "h": 2160
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__5__2.jpg",
+          "file": "File:Yokohama Cosmo World from Above 2.JPG",
+          "desc": "Yokohama Cosmo World (including Cosmo Clock 21) and the Yokohama Bay Bridge viewed from the Yokohama Landmark Tower's Sky Garden (observation deck on the 69th f",
+          "w": 4512,
+          "h": 3000
+        }
+      ]
+    }
+  ]
+}

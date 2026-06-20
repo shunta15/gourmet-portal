@@ -1,0 +1,43 @@
+{
+  "id": "new-marunouchi-walk",
+  "file": "newGuideFeatures4",
+  "persona": "B",
+  "tag": "散歩",
+  "currentTitle": "丸の内散歩5選。東京駅と皇居外苑を歩く",
+  "currentSubtitle": "丸の内仲通り、東京駅赤レンガ駅舎、KITTE屋上。東京の中枢を歩く大人の休日",
+  "currentLede": "丸の内は東京駅丸の内駅舎を中心に、皇居外苑の松並木・丸の内仲通りのケヤキ並木・三菱一号館美術館の赤煉瓦が、徒歩10分圏内に揃う「都心の文化散歩」エリア。ビジネスマンの街というイメージが強いが、土日は丸の内仲通りが歩行者天国になり、車のない通りでカフェとアートを楽しめる。東京駅から皇居まで徒歩10分という近さで、東京観光の起点としても使いやすい。ここでは初訪問の人が迷わず半日歩ける、丸の内の建築・緑・アート5スポットを紹介する。",
+  "currentQuote": "丸の内は週末が狙い目。平日のビジネス街が静かになり、赤レンガの駅舎と皇居の緑を独り占めできる。東京の中枢で過ごす贅沢な休日。",
+  "currentClosing": "標準動線は、東京駅丸の内南口→東京駅丸の内駅舎を撮影→KITTE 屋上「KITTEガーデン」（13:00〜13:45）→丸の内仲通りを北上（13:45〜15:00 散歩＋カフェ）→三菱一号館美術館（15:00〜17:00）→皇居外苑・二重橋（17:00〜18:00 夕暮れの散歩）。所要4〜5時間、予算は入場料込みで1人2,500〜5,000円が目安。「東京の建築と緑を歩いて見たい人」「皇居・東京駅・美術館を一日で繋ぎたい人」「ビジネス街の意外な静けさを体験したい人」に向く。土日午前は人波が少なく写真と散歩に向き、平日昼はビジネスマンのランチ客で飲食店が混む。雨の日はKITTE→東京駅構内→丸の内仲通り（屋根なし区間は短い）→三菱一号館美術館の屋内中心ルートで動ける。時間がない場合は、東京駅丸の内駅舎→丸の内仲通り→KITTE屋上の3点で90分コースに圧縮できる。イルミネーション期（11月末〜2月）は最後を丸の内仲通り夜景にすると満足度が最大化する。",
+  "spots": [
+    {
+      "name": "東京駅丸の内駅舎（赤レンガ駅舎）",
+      "area": "丸の内",
+      "descHead": "1914年竣工、辰野金吾設計のネオバロック様式赤煉瓦駅舎。2012年に創建当時の姿に復元され、南北のドーム屋根が現代に蘇った。国指定重要文化財。「東京駅の赤煉瓦駅舎を撮影したい」「",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "丸の内仲通り",
+      "area": "丸の内",
+      "descHead": "東京駅丸の内側から有楽町方向へ約1.2km続くケヤキ並木のストリート。両側に高級ブランド路面店・カフェ・レストラン・ギャラリーが並ぶ。「ケヤキ並木の景観をゆっくり楽しみたい」「土日",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "皇居外苑（皇居前広場）",
+      "area": "皇居前",
+      "descHead": "皇居外苑は皇居の南東側を取り囲む広大な広場。皇居前広場・二重橋・桔梗門が無料で開放されている。「皇居の正門と二重橋を撮影したい」「日本の中心地らしい景観を歩きたい」観光客に最適。二",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "三菱一号館美術館",
+      "area": "丸の内",
+      "descHead": "1894年竣工（2010年復元）、ジョサイア・コンドル設計の赤煉瓦オフィスビルを再現した美術館。「近代美術・装飾美術が好きな大人」「赤煉瓦建築の内部を歩きたい」人に向く。近代美術（",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "KITTE（旧東京中央郵便局）",
+      "area": "丸の内",
+      "descHead": "KITTE丸の内は東京駅丸の内南口前、1933年竣工の旧東京中央郵便局を保存・改修した複合施設（2013年開業）。「東京駅ホームを真上から見下ろしたい」「無料の展望スペースを使いた",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    }
+  ]
+}

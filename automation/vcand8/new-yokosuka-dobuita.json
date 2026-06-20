@@ -1,0 +1,197 @@
+{
+  "id": "new-yokosuka-dobuita",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "どぶ板通り",
+      "imageSubject": "横須賀どぶ板通り商店街のアーケードと、スカジャン店やアメリカン食堂が並ぶ通りの街並み",
+      "imageRegion": "神奈川県横須賀市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__1__1.jpg",
+          "file": "File:横須賀市どぶ板通り 鈴木酒店付近 Pcs34560 mono009.jpg",
+          "desc": "横須賀市どぶ板通り 鈴木酒店付近",
+          "w": 1200,
+          "h": 900
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__1__2.jpg",
+          "file": "File:横須賀市どぶ板通り 外人向けショットバー Surf Taco - Pcs34560 mono008.jpg",
+          "desc": "横須賀市どぶ板通り 外人向けショットバー",
+          "w": 1200,
+          "h": 900
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__1__3.jpg",
+          "file": "File:Dobuita street.jpg",
+          "desc": "本町一丁目側から見た汐入駅側入口の眺め",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__1__4.jpg",
+          "file": "File:Yokosuka DobuitaStreet.JPG",
+          "desc": "Dobuita Street, Yokosuka, Kanagawa, Japan.\nlocation:Yokosuka\ncaption:”Dobuita\" Street",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "猿島（東京湾唯一の無人島）",
+      "imageSubject": "猿島（東京湾の無人島）に残る明治期の旧軍要塞跡で、煉瓦造りのトンネルや砲台跡の遺構",
+      "imageRegion": "神奈川県横須賀市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__2__1.jpg",
+          "file": "File:Saru shima01.jpg",
+          "desc": "",
+          "w": 1029,
+          "h": 789
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__2__2.jpg",
+          "file": "File:Saru-shima island Aerial photograph.jpg",
+          "desc": "猿島を空撮（2025年）",
+          "w": 4309,
+          "h": 3232
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__2__3.jpg",
+          "file": "File:Sarushima Northern Cove.jpg",
+          "desc": "Sarushima Northern Cove",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__2__4.jpg",
+          "file": "File:Sarushima Northwestern Overlook.jpg",
+          "desc": "Sarushima Northwestern Overlook",
+          "w": 4032,
+          "h": 2268
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "三笠公園・戦艦三笠",
+      "imageSubject": "三笠公園に記念艦として保存・展示されている戦艦三笠（日露戦争の旗艦）の艦体",
+      "imageRegion": "神奈川県横須賀市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__3__1.jpg",
+          "file": "File:Mikasa Side View.jpg",
+          "desc": "神奈川県横須賀市にある三笠公園の博物館船「三笠」。",
+          "w": 4608,
+          "h": 2592
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__3__2.jpg",
+          "file": "File:Mikasa (324779410).jpg",
+          "desc": "三笠公園にて戦艦三笠。言わずと知れた日露戦争時の日本海海戦で日本艦隊の旗艦となっていた艦である。この船上で東郷が全艦回頭を命じた。日本の守り神は今は横須賀のシンボルとなっている。\nPentax K100D+SIGMA 17-70mm/F2.8-4.5\n\n[MAP by ALPSLAB]",
+          "w": 1280,
+          "h": 854
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__3__3.jpg",
+          "file": "File:Battleship Mikasa 2.jpg",
+          "desc": "Battleship Mikasa in Mikasa Park at Yokosuka,Kanagawa,Japan.",
+          "w": 1200,
+          "h": 799
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "ヴェルニー公園（横須賀港ビュー）",
+      "imageSubject": "ヴェルニー公園のフランス式庭園と、対岸に横須賀港・潜水艦が見える港の眺望",
+      "imageRegion": "神奈川県横須賀市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__4__1.jpg",
+          "file": "File:41cm gun from the Japanese battleship Mutsu at Yokosuka in January 2019.jpg",
+          "desc": "A 41 cm/45 3rd Year Type naval gun recovered from the Japanese battleship Mutsu and emplaced in a park in Yokosuka. The gun was on display at the Museum of Mari",
+          "w": 4297,
+          "h": 2581
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__4__2.jpg",
+          "file": "File:From Verny park (200791401).jpg",
+          "desc": "U.S. Navy Yokosuka base from the Verny park.\n\n2隻をクローズアップ。",
+          "w": 1024,
+          "h": 576
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__4__3.jpg",
+          "file": "File:Nagato Memorial YOKOSUKA.jpg",
+          "desc": "横須賀長門慰霊碑",
+          "w": 2654,
+          "h": 3538
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__4__4.jpg",
+          "file": "File:USS Milius (DDG-69) seen from Verny Park.jpg",
+          "desc": "USS Milius (DDG-69) in port at Yokosuka, taken August 18th, 2025",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "横須賀美術館",
+      "imageSubject": "観音崎の高台に建つ横須賀美術館（山本理顕設計）の現代建築外観と東京湾を望むロケーション",
+      "imageRegion": "神奈川県横須賀市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__5__1.jpg",
+          "file": "File:Yokosuka Museum of Art 2009.jpg",
+          "desc": "Yokosuka Museum of Art, at Yokosuka Kanagawa Japan, designed by Riken Yamamoto in 2007.",
+          "w": 4256,
+          "h": 2002
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__5__2.jpg",
+          "file": "File:Yokosuka Museum of Art 20100717.jpg",
+          "desc": "横須賀美術館 図書室",
+          "w": 3648,
+          "h": 2432
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__5__3.jpg",
+          "file": "File:Yokosuka Museum of Art 20081017-05.jpg",
+          "desc": "横須賀美術館",
+          "w": 2592,
+          "h": 1944
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__5__4.jpg",
+          "file": "File:Yokosuka Museum of Art 20091206.jpg",
+          "desc": "横須賀美術館",
+          "w": 2048,
+          "h": 1536
+        }
+      ]
+    }
+  ]
+}

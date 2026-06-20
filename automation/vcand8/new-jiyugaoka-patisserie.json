@@ -1,0 +1,189 @@
+{
+  "id": "new-jiyugaoka-patisserie",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "自由が丘 モンブラン（発祥の店）",
+      "imageSubject": "自由が丘の商店街・遊歩道沿いに洋菓子店やカフェが並ぶ街並み（パティスリーが密集する駅前区画）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__1__1.jpg",
+          "file": "File:40000kei Jiyūgaoka station train door.jpg",
+          "desc": "The view from the interior of a Seibu 40000 series EMU at Jiyugaoka Station on an S-Train service",
+          "w": 3072,
+          "h": 4608
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__1__2.jpg",
+          "file": "File:EL-Light (OLED) 1.jpg",
+          "desc": "自由が丘駅定期券売り場に設置されている有機EL照明。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__1__3.jpg",
+          "file": "File:EL-Light (OLED) 2.jpg",
+          "desc": "自由が丘駅正面口シースルー改札口に設置されている有機EL照明。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__1__4.jpg",
+          "file": "File:Escalator maintenance at Jiyūgaoka Station.jpg",
+          "desc": "Jiyūgaoka Station (railway station in Meguro, Tokyo, Japan)",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "自由が丘スイーツフォレスト（閉業に注意）",
+      "imageSubject": "自由が丘の商店街アーケード・通りの街並み（旧スイーツフォレスト跡地周辺の自由が丘中心街）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__2__1.jpg",
+          "file": "File:40000kei Jiyūgaoka station train door.jpg",
+          "desc": "The view from the interior of a Seibu 40000 series EMU at Jiyugaoka Station on an S-Train service",
+          "w": 3072,
+          "h": 4608
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__2__2.jpg",
+          "file": "File:EL-Light (OLED) 1.jpg",
+          "desc": "自由が丘駅定期券売り場に設置されている有機EL照明。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__2__3.jpg",
+          "file": "File:EL-Light (OLED) 2.jpg",
+          "desc": "自由が丘駅正面口シースルー改札口に設置されている有機EL照明。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__2__4.jpg",
+          "file": "File:Escalator maintenance at Jiyūgaoka Station.jpg",
+          "desc": "Jiyūgaoka Station (railway station in Meguro, Tokyo, Japan)",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "自由が丘駅周辺の個人パティスリー",
+      "imageSubject": "自由が丘駅周辺の細い路地に個人経営の洋菓子店・カフェが点在する裏通りの街並み",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__3__1.jpg",
+          "file": "File:Jiyugaoka Sta.'s LED and OLED Lighting.jpg",
+          "desc": "LED and OLED lighting at Jiyugaoka Station.",
+          "w": 3456,
+          "h": 2304
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__3__2.jpg",
+          "file": "File:Nagoya Subway Jiyugaoka Station.jpg",
+          "desc": "Nagoya Subway Jiyugaoka Station",
+          "w": 3008,
+          "h": 2000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__3__3.jpg",
+          "file": "File:Capt. Isoroku Yamamoto, Sec. Wilbur, Capt. Kiyoshi Hasegawa & Admiral Eberle, (2-17-26) LCCN2016850839.jpg",
+          "desc": "Title: Capt. Isoroku Yamamoto, Sec. Wilbur, Capt. Kiyoshi Hasegawa &amp; Admiral Eberle, [2/17/26]\nAbstract/medium: 1 negative : glass ; 5 x 7 in. or smaller",
+          "w": 6059,
+          "h": 4354
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__3__4.jpg",
+          "file": "File:Commanders of the Nanking Entry Ceremony01.jpg",
+          "desc": "Commanders on the dais of the Nanking Entry Ceremony.",
+          "w": 1302,
+          "h": 1259
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "自由が丘の路地散歩とカフェ",
+      "imageSubject": "自由が丘から緑が丘・奥沢方面へ伸びる住宅街の細い路地・遊歩道（九品仏川緑道など）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__4__1.jpg",
+          "file": "File:2 Chome Okusawa, Setagaya-ku, Tōkyō-to 158-0083, Japan - panoramio.jpg",
+          "desc": "2 Chome Okusawa, Setagaya-ku, Tōkyō-to 158-0083, Japan",
+          "w": 3000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__4__2.jpg",
+          "file": "File:606 - panoramio (1).jpg",
+          "desc": "606",
+          "w": 3456,
+          "h": 2304
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__4__3.jpg",
+          "file": "File:Cool furniture store in jiyugaoka - J-PERIOD (2460869660).jpg",
+          "desc": "See where this picture was taken. [?]",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__4__4.jpg",
+          "file": "File:Dairokuten Shrine (第六天神社) - panoramio.jpg",
+          "desc": "Dairokuten Shrine (第六天神社)",
+          "w": 2112,
+          "h": 2816
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "熊野神社と駒場公園方向",
+      "imageSubject": "奥沢の熊野神社（自由が丘・奥沢の鎮守の社殿・鳥居）",
+      "imageRegion": "東京都世田谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__5__1.jpg",
+          "file": "File:Big Snake (大蛇) on the Torii (鳥居) at Okusawa Shrine (奥澤神社) - panoramio.jpg",
+          "desc": "Big Snake (大蛇) on the Torii (鳥居) at Okusawa Shrine (奥澤神社)",
+          "w": 2816,
+          "h": 2112
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-jiyugaoka-patisserie__5__2.jpg",
+          "file": "File:Torii with a straw snake in Okusawa Shrine.jpg",
+          "desc": "Torii with a straw snake in Okusawa Shrine in Tokyo.",
+          "w": 4928,
+          "h": 3264
+        }
+      ]
+    }
+  ]
+}

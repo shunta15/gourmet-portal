@@ -1,0 +1,17 @@
+{
+  "id": "kansai-umeda-night-date",
+  "zeros": [
+    {
+      "idx": 2,
+      "name": "HEP FIVE観覧車",
+      "imageSubject": "HEP FIVE観覧車（HEP FIVEのビル屋上に設置された直径75m・最高到達点106mの赤い観覧車）",
+      "imageRegion": "大阪府大阪市北区"
+    },
+    {
+      "idx": 5,
+      "name": "中之島 水辺の夜さんぽ",
+      "imageSubject": "なにわ橋から望む中之島の夜景（堂島川・土佐堀川に挟まれた中之島のビル群と水面に映る灯り）",
+      "imageRegion": "大阪府大阪市北区"
+    }
+  ]
+}

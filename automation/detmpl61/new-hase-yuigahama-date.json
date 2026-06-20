@@ -1,0 +1,43 @@
+{
+  "id": "new-hase-yuigahama-date",
+  "file": "newGuideFeatures",
+  "persona": "A",
+  "tag": "デート",
+  "currentTitle": "長谷・由比ヶ浜デート5選。大仏と海を一日で楽しむ鎌倉コース",
+  "currentSubtitle": "高徳院（鎌倉大仏）、長谷寺、由比ヶ浜。江ノ電で巡る海と寺のデートルート",
+  "currentLede": "鎌倉の長谷・由比ガ浜エリアは、江ノ電で鎌倉駅から1〜2駅の距離にあり、鎌倉大仏（高徳院）・長谷寺・由比ガ浜海岸が徒歩圏内に並ぶ。鎌倉駅周辺の小町通りとは違う、ローカルな散歩道とビーチが楽しめる動線が組める。海と寺院を組み合わせたデートとして、鎌倉の鉄板コースのひとつ。ここでは江ノ電長谷駅を起点に、5スポットを紹介する。",
+  "currentQuote": "大仏→長谷寺→由比ヶ浜という長谷エリアの定番コースは、半日でテンポよく回れる鎌倉デートの王道。",
+  "currentClosing": "標準動線は、江ノ電長谷駅→高徳院（鎌倉大仏）参拝（11:00〜12:30）→長谷寺で眺望＋紫陽花/紅葉（12:30〜14:00）→長谷の路地カフェでランチ（14:00〜15:30）→鎌倉文学館（15:30〜16:30）→由比ガ浜で夕景（17:00〜18:00）→鎌倉駅へ。所要6〜7時間、予算は拝観料＋食事込みで1人5,000〜8,000円が目安。「鎌倉の海と寺院を1日で組み合わせたい人」「鎌倉駅前の混雑を抜けて静かな散策をしたい人」「夕日と富士山のロケーションが好きな2人」に向く。梅雨時期の長谷寺は紫陽花のピーク（6月中旬〜下旬）で大混雑、開門直後の8時または閉門前16時が現実的。雨の日は長谷寺・大仏・鎌倉文学館の屋内中心ルートに切り替える。時間がない場合は、長谷寺＋大仏＋由比ガ浜の3点で2時間半に圧縮できる。迷ったら、11時の長谷駅着で大仏→長谷寺→由比ガ浜の徒歩動線が王道。鎌倉観光は鎌倉駅周辺の小町通りに集中しがちだが、長谷駅・由比ガ浜駅周辺は混雑が比較的緩和されており、ローカルな鎌倉の魅力を体験するのに向いている。江ノ電1日乗車券（800円程度）を使うと、長谷・極楽寺・稲村ヶ崎・江ノ島まで自由に乗り降りできるので、半日コース・1日コースのどちらにも柔軟に対応できる。",
+  "spots": [
+    {
+      "name": "高徳院（鎌倉大仏）",
+      "area": "長谷",
+      "descHead": "1252年頃に建立されたとされる高徳院の大仏（阿弥陀如来坐像）。高さ約11.3m、国宝指定の銅造大仏。鎌倉観光のハイライトのひとつで、大仏の胎内拝観（20円程度）もできる。営業時間",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg"
+    },
+    {
+      "name": "長谷寺",
+      "area": "長谷",
+      "descHead": "8世紀創建、十一面観音菩薩立像を本尊とする寺院。山腹に位置し、本堂の前から由比ガ浜と海の景色が見下ろせる「眺望散策路」が美しい。境内には「四季の景観」が計算された植栽があり、紫陽花",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    },
+    {
+      "name": "由比ヶ浜海岸",
+      "area": "由比ヶ浜",
+      "descHead": "鎌倉の南端に広がる由比ガ浜は約900mの白い砂浜。材木座海岸と並ぶ鎌倉の代表的なビーチで、夏は海水浴客で賑わうが、それ以外の季節は静かな散歩道。夕日が美しく、富士山が見える日もある",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+    },
+    {
+      "name": "鎌倉文学館",
+      "area": "長谷",
+      "descHead": "長谷駅周辺は鎌倉の隠れた飲食・カフェの集積地。鎌倉野菜を使う洋食店、海を見ながら食事できるカフェ、創作和菓子の店、自家焙煎コーヒー専門店などが点在する。1人1,500〜3,500円",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+    },
+    {
+      "name": "江ノ電 長谷駅周辺カフェ",
+      "area": "長谷",
+      "descHead": "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。鎌倉ゆかりの作家（夏目漱石、川端康成、芥川龍之介、芹沢光治良、安部公房など）の原稿・初版本を展示。建物自体が大",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    }
+  ]
+}

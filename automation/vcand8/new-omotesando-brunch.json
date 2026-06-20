@@ -1,0 +1,205 @@
+{
+  "id": "new-omotesando-brunch",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "表参道ヒルズ周辺のカフェ",
+      "imageSubject": "表参道のケヤキ並木とハイブランド店が連なる表参道（けやき並木の歩道と街路樹の景観）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__1__1.jpg",
+          "file": "File:Omotesando 2007 b.JPG",
+          "desc": "Omote-sando Street with its street trees of Japanese Zelkova, or Keaki, in Shibuya Ward, Tokyo. The Omotesando Hills complex is on the left side of the street i",
+          "w": 1024,
+          "h": 682
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__1__2.jpg",
+          "file": "File:\"Tours\" French restaurant in Omotesando.JPG",
+          "desc": "フランス料理店「ブラッセリートゥール」。港区北青山3丁目5-19。",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__1__3.jpg",
+          "file": "File:(Upload-from-mobile-1750675919)IMG 0678.jpg",
+          "desc": "2025年6月21日 表参道WALL&amp;WALLにて 佐々木ひまわり近影",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__1__4.jpg",
+          "file": "File:Athleta 2.jpg",
+          "desc": "Athleta (Brazilian-Japanese sportswear company)",
+          "w": 3072,
+          "h": 4080
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "根津美術館と庭園",
+      "imageSubject": "根津美術館（隈研吾設計の本館エントランスへ続く竹垣の通路、または日本庭園の緑）",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__2__1.jpg",
+          "file": "File:2018 Nezu Museum 1.jpg",
+          "desc": "根津美術館。隈研吾設計。",
+          "w": 2500,
+          "h": 1635
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__2__2.jpg",
+          "file": "File:2018 Nezu Museum 2.jpg",
+          "desc": "根津美術館。隈研吾設計。",
+          "w": 2500,
+          "h": 1693
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__2__3.jpg",
+          "file": "File:Fashion show at Nezu Museum.jpg",
+          "desc": "10th anniversary show at Nezu Museum, Tokio",
+          "w": 2048,
+          "h": 1365
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__2__4.jpg",
+          "file": "File:Nezu Cafe 201805.jpg",
+          "desc": "Nezu Cafe",
+          "w": 2736,
+          "h": 1824
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "青山通り沿いのベーカリー",
+      "imageSubject": "青山通り沿いのベーカリー店頭の焼きたてパンが並ぶ陳列（青山エリアのパン屋の外観・ショーケース）",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__3__1.jpg",
+          "file": "File:Akasaka banner Japan National Route 246 -05.jpg",
+          "desc": "The Japan National Route 246. This located is Akasaka in Minato, Tokyo, Japan.",
+          "w": 2100,
+          "h": 300
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__3__2.jpg",
+          "file": "File:Aoyama avenue in summer morning, seen from Shibuya Stream.jpg",
+          "desc": "Aoyama avenue in summer morning, seen from Shibuya Stream ",
+          "w": 3072,
+          "h": 4080
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__3__3.jpg",
+          "file": "File:Aoyama St. - panoramio.jpg",
+          "desc": "Aoyama St.",
+          "w": 1024,
+          "h": 768
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__3__4.jpg",
+          "file": "File:Construction at Aoyama University.jpg",
+          "desc": "Construction at Aoyama University ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "岡本太郎記念館（南青山）",
+      "imageSubject": "岡本太郎記念館の中庭に立つ岡本太郎の立体作品群（元アトリエ兼自宅の庭に並ぶ彫刻）",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__4__1.jpg",
+          "file": "File:TARO OKAMOTO Memorial House - panoramio.jpg",
+          "desc": "TARO OKAMOTO Memorial House",
+          "w": 2560,
+          "h": 1920
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__4__2.jpg",
+          "file": "File:Taro Okamoto Memorial Museum Tokyo.jpg",
+          "desc": "Taro Okamoto Memorial Museum at Aoyama, Tokyo",
+          "w": 2022,
+          "h": 1517
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__4__3.jpg",
+          "file": "File:Taro Okamoto Memorial Museum.jpg",
+          "desc": "Taro Okamoto Memorial Museum (museum in Minato-ku, Tokyo)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__4__4.jpg",
+          "file": "File:Chugoku-suita IC.JPG",
+          "desc": "2007年5月26日、万博記念公園駅前より投稿者が撮影",
+          "w": 1280,
+          "h": 960
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "代々木公園方向への路地散歩",
+      "imageSubject": "代々木八幡・代々木公園方向の青山裏手の住宅街の細い路地（観光客の少ない閑静な生活路地）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__5__1.jpg",
+          "file": "File:Bag to put on toilets and close afver use, during disasters.jpg",
+          "desc": "Bag to put on toilets and close afver use, during disasters ",
+          "w": 3072,
+          "h": 4080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__5__2.jpg",
+          "file": "File:Barbarian @ Yoyogi Park @ Tokyo (13406878615).jpg",
+          "desc": "Barbarian @ Yoyogi Park @ Tokyo",
+          "w": 2976,
+          "h": 3968
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__5__3.jpg",
+          "file": "File:Bridge Yoyogipark.JPG",
+          "desc": "Bridge on pond in Yoyogi-park at Tokyo on holiday",
+          "w": 800,
+          "h": 450
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__5__4.jpg",
+          "file": "File:Can Am 3-wheel motorcycle leading Mario-style karts near Yoyogi Park.jpg",
+          "desc": "Can Am 3-wheel motorcycle leading Mario-style karts near Yoyogi Park ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "chubu-sakae-osu-date",
+  "file": "newGuideFeaturesChubu",
+  "persona": "C",
+  "tag": "デート",
+  "currentTitle": "名古屋・栄〜大須デート5選。タワーから門前町まで歩く",
+  "currentSubtitle": "MIRAI TOWER、オアシス21、大須商店街。名古屋の中心を一日で",
+  "currentLede": "名古屋の栄は、シンボルタワーと公園、商業施設が集まる中心市街で、そこから地下鉄ひと駅・徒歩圏の大須へ抜けると、400年の歴史を持つ門前町の商店街が広がる。タワーの展望から食べ歩きまで、性格の違う時間を一日でつなげられるのが、このエリアのデートの強みだ。対象は名古屋で半日から一日デートを組みたいカップル、買い物と街歩きと夜景をまとめて楽しみたい2人。標準は13:00集合・20:00解散の約7時間コース、予算は1人5,000〜10,000円が目安。ここでは栄から大須へと歩いてつながる5スポットを、回る順番で紹介する。",
+  "currentQuote": "栄から大須へ歩くと、同じ街なのに景色の温度が一段変わる。",
+  "currentClosing": "標準動線: 13:00 栄で待ち合わせ、中部電力 MIRAI TOWER の展望台で名古屋の街を見渡す（13:00〜13:45）→ オアシス21の水の宇宙船を歩いて空中散歩（13:45〜14:30）→ 久屋大通公園を緑を眺めながら南へ歩く（14:30〜15:00）→ 地下鉄または徒歩で大須へ移動し、大須商店街で食べ歩きと買い物（15:30〜18:00）→ 門前の大須観音で手を合わせて締める（18:00〜18:30）。日が暮れたら栄へ戻り、MIRAI TOWERのライトアップをもう一度見上げるのもいい。所要約7時間、予算は1人5,000〜10,000円が目安。このルートの魅力は、タワーと公園の都会的な景色から、大須の下町の賑わいへと、一日のなかで街の温度が切り替わることだ。注意したいのは、久屋大通公園が屋外中心で天候に左右されること、大須商店街は店ごとに営業時間と定休日が違うこと、そして週末は商店街もタワーも混みやすいこと。雨の日は、MIRAI TOWER・オアシス21・大須商店街のアーケードなど屋内・半屋内を中心に組み替えると歩きやすい。営業時間・入場料・縁日の日程は変わることがあるため、訪問前に各施設の公式情報で確認しておきたい。名古屋で、展望と街歩きと食べ歩きを一日でまとめて楽しみたい2人に向くコースだ。",
+  "spots": [
+    {
+      "name": "中部電力 MIRAI TOWER",
+      "area": "名古屋市中区・栄",
+      "descHead": "中部電力 MIRAI TOWER（旧・名古屋テレビ塔）は、栄の久屋大通公園に立つ名古屋のシンボルタワーで、全国のタワーで初めて国の重要文化財に指定された塔としても知られる。地上の展",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nagoya_TV_Tower_2024-07-24.jpg/1280px-Nagoya_TV_Tower_2024-07-24.jpg"
+    },
+    {
+      "name": "オアシス21",
+      "area": "名古屋市東区・栄",
+      "descHead": "オアシス21は、栄駅にほぼ直結する複合施設で、屋上に水をたたえたガラスの大屋根「水の宇宙船」が浮かぶ、名古屋を代表する建築のひとつだ。空中の回廊からは、MIRAI TOWERや栄の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg/1280px-Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg"
+    },
+    {
+      "name": "久屋大通公園（Hisaya-odori Park）",
+      "area": "名古屋市中区・栄",
+      "descHead": "久屋大通公園は、栄の中心を南北に貫く細長い公園で、MIRAI TOWERを軸に芝生やショップ、カフェが並ぶ。リニューアルを経て、緑地と商業施設が一体になった開放的な空間になり、ベン",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Media_Hiroba_of_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_3.jpg/1280px-Media_Hiroba_of_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_3.jpg"
+    },
+    {
+      "name": "大須商店街",
+      "area": "名古屋市中区・大須",
+      "descHead": "大須商店街は、大須観音の門前町として400年の歴史を持つ商店街で、古着やサブカルチャーの店、老舗の和菓子、各国のグルメまでが混ざり合う、名古屋でも独特の活気を持つエリアだ。食べ歩き",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Frutta_di_Frutta_in_Osu_shopping_street.jpg/1280px-Frutta_di_Frutta_in_Osu_shopping_street.jpg"
+    },
+    {
+      "name": "大須観音",
+      "area": "名古屋市中区・大須",
+      "descHead": "大須観音は、大須商店街の名前の由来にもなっている寺院で、正式には北野山真福寺宝生院という。日本三大観音の一つに数えられることもあり、朱塗りの本堂と門前の賑わいが、商店街の核として一",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg/1280px-Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg"
+    }
+  ]
+}

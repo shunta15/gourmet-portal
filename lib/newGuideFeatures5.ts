@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修 2026-06-20）: テキスト/articleTypeを4ペルソナで多様化。スポット・画像は保持。
+// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
 
 export const NEW_GUIDE_FEATURES_5: Feature[] = [
   {
@@ -10,7 +10,7 @@ export const NEW_GUIDE_FEATURES_5: Feature[] = [
     "kicker": "NAKAMEGURO MORNING",
     "title": "中目黒、朝の目黒川を歩く半日コース。週末の早起きで街を独り占めする",
     "sub": "川沿いの遊歩道から高架下のベーカリー、世界4店舗目のロースタリーまで。夜とは別の顔をした中目黒を、朝の光の中で",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg/1280px-De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg"
   },
   {
     "id": "new-jiyugaoka-patisserie",
@@ -28,7 +28,7 @@ export const NEW_GUIDE_FEATURES_5: Feature[] = [
     "kicker": "TOYOSU GOURMET",
     "title": "豊洲、市場の朝とアートの午後。湾岸でグルメを食べ歩く",
     "sub": "築地から移った市場の現場感、千客万来の海鮮、チームラボの没入空間。再開発でひとつながりになった豊洲の食を歩く",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG/1280px-Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG"
   },
   {
     "id": "new-hachioji-gourmet",
@@ -37,7 +37,7 @@ export const NEW_GUIDE_FEATURES_5: Feature[] = [
     "kicker": "HACHIOJI GOURMET",
     "title": "八王子を歩く、玉ねぎラーメンと城跡の半日さんぽ",
     "sub": "刻みタマネギの醤油ラーメンから、北条の山城、高尾の稜線まで。東京の西のはずれで出会う、もうひとつの食と歴史の手ざわり",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hachioji_ramen_001.jpg/1280px-Hachioji_ramen_001.jpg"
   }
 ];
 
@@ -54,7 +54,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg/1280px-De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -65,7 +65,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "春は桜のトンネル、年中おしゃれなコーヒー散歩コース",
         "desc": "目黒川沿い散歩（中目黒〜池尻大橋）は約3.8kmの遊歩道型の朝散歩コース。朝6〜9時の時間帯、ランナーと散歩する地元住民だけの静かな水辺になる。「都心で静かな朝散歩を楽しみたい」「早朝のランニングコースに組み込みたい」目的に最適。桜の季節（3月末〜4月第1週）の早朝は花見客が出ておらず、満開の桜を独り占めできる時間帯。中目黒駅から徒歩2分、池尻大橋駅から徒歩3分でアクセス可能。夏の早朝は気温も高くなく、朝活向きの時間帯。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg/1280px-De_Meguro_in_Nakameguro_2-ch%C5%8Dme%2C_stroomafwaarts_gezien_vanaf_de_Nakamek%C5%8Den-brug%2C_-13_augustus_2018_a.jpg"
         ],
         "specs": [
           {
@@ -145,7 +145,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "中目黒から少し足を伸ばすと静かなカフェが点在",
         "desc": "池尻大橋〜三宿方向は中目黒から目黒川を上流に1.5〜2km歩いた先のエリア。「中目黒の混雑を抜けてさらに静かなカフェを探したい」「新興のおしゃれカフェエリアを開拓したい」大人の2人に向く。若手シェフの自家焙煎コーヒー店・ナチュラルワインのビストロ・自家製パンのベーカリーが集まる注目区画。観光客がほぼ来ないため、平日朝でも週末朝でも落ち着いて入れる。池尻大橋駅・三軒茶屋駅から徒歩5〜15分。店舗の定休日が分散するため、Googleマップで事前確認推奨。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ikejiri-Ohashi_Station_east_exit_A_-_2019-09-09.jpg/1280px-Ikejiri-Ohashi_Station_east_exit_A_-_2019-09-09.jpg"
         ],
         "specs": [
           {
@@ -316,7 +316,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG/1280px-Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -327,7 +327,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "2024年開業の場外グルメ施設。海鮮丼・寿司・天ぷら",
         "desc": "千客万来は豊洲市場6街区に2024年2月開業、江戸時代の商店街をモチーフにした飲食・物販施設。「築地の場外市場の役割を継承した飲食街を体験したい」観光客に最適。寿司・海鮮丼・天ぷら・うなぎ・洋食・スイーツと業態が広い。屋上には温泉「東京豊洲 万葉倶楽部」が併設され、湾岸の景色を見ながら入浴できる。ランチピーク（11〜14時）は行列必至、開店直後の10時前または14時以降が現実的。1人2,500〜6,000円程度、市場の隣という立地で食材鮮度は安定している。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG/1280px-Toyosu_Senkyaku_Banrai_2F_Edomae_Plaza_2024.JPG"
         ],
         "specs": [
           {
@@ -397,7 +397,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "豊洲の湾岸に面した大型ショッピングモール",
         "desc": "アーバンドックららぽーと豊洲は2006年開業、180店舗以上の大型商業施設。「雨の日にショッピング・カフェを楽しみたい」「子連れで時間を潰したい」家族に最適。1〜3階に飲食・物販、屋外に芝生広場「ガーデンガレリア」、湾岸ターミナル「KIDS-O」など子連れ家族向け施設が充実。営業時間10〜21時（レストランは22時まで）。豊洲駅直結なので、市場や teamLab Planets での疲れを癒す最終目的地として使える。雨の日でも傘なしでアクセスできる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Entrance%2C_LaLaport_Toyosu%2C_Tokyo_-_Feb_19%2C_2015.jpg/1280px-Entrance%2C_LaLaport_Toyosu%2C_Tokyo_-_Feb_19%2C_2015.jpg"
         ],
         "specs": [
           {
@@ -419,7 +419,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "豊洲半島を一周する約2.3kmの遊歩道。レインボーブリッジが見える",
         "desc": "豊洲ぐるり公園は豊洲市場の北側、晴海運河沿いに広がる遊歩道型の公園。「ランチ後の腹ごなしに散歩したい」「都心から離れた湾岸の景観を楽しみたい」人に向く。都心方向・台場方向・湾岸の景色を見ながら徒歩約20分の散歩コースが組める。晴れた日の夕方は富士山が遠くに見えることもあり、ランチ後の散歩に最適。ベンチ・自転車道・釣り場が整備され、家族連れ・ランナーで賑わう。ゆりかもめ「市場前駅」から徒歩5分、豊洲駅から徒歩15分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Toyosu_Gururi_Park%2C_at_Toyosu%2C_Koto%2C_Tokyo_%282019-01-01%29_02.jpg/1280px-Toyosu_Gururi_Park%2C_at_Toyosu%2C_Koto%2C_Tokyo_%282019-01-01%29_02.jpg"
         ],
         "specs": [
           {
@@ -450,7 +450,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hachioji_ramen_001.jpg/1280px-Hachioji_ramen_001.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -461,7 +461,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "たまねぎの刻みが入る独自スタイルの醤油ラーメン",
         "desc": "八王子ラーメンは「醤油ベースに刻みタマネギを乗せる」という独特のスタイルで、八王子市内に専門店が30軒以上ある。「八王子の独自ラーメン文化を体験したい」「複数店でラーメンを食べ比べたい」食通に最適。1968年創業の「初富士」が発祥とされ、その後に八王子市内で派生した店が今も継承する地域ラーメン文化。1杯800〜1,200円、JR八王子駅・京王八王子駅から徒歩圏に複数店が集まる。土日昼はピーク混雑、平日昼または夕方17時以降が比較的空いている。23区側からは少し遠いため、わざわざ食べに来る価値がある独立した食文化。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Hachioji_ramen_001.jpg/1280px-Hachioji_ramen_001.jpg"
         ],
         "specs": [
           {
@@ -483,7 +483,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "北条氏の山城跡。整備された遊歩道でハイキングも",
         "desc": "八王子城跡は1587年北条氏照が築城、1590年豊臣秀吉の小田原征伐で落城した戦国時代の山城。「戦国史跡を歩きたい」「ハイキングと史跡を組み合わせたい」歴史好きに向く。城跡公園として整備され、本丸跡・御主殿跡・曳橋などが見学できる。入山無料、ガイドハウス（管理棟）も無料。JR高尾駅からバス＋徒歩でアクセス、所要約30分。山城のため歩きやすい靴と水分が必須、所要は登山＋見学で2〜3時間。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%E5%85%AB%E7%8E%8B%E5%AD%90%E5%9F%8E%E8%B7%A1_-_panoramio.jpg/1280px-%E5%85%AB%E7%8E%8B%E5%AD%90%E5%9F%8E%E8%B7%A1_-_panoramio.jpg"
         ],
         "specs": [
           {
@@ -527,7 +527,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "多摩エリアのクラフトビール文化。都心より落ち着いた雰囲気",
         "desc": "八王子駅周辺の地ビール・クラフトビール文化は近年急速に成長し、地元ブルワリーの直営店が複数ある。「八王子ラーメンの後に地ビールでクールダウンしたい」「クラフトビール文化を体験したい」目的に最適。代表的なブルワリーは「Far Yeast Brewing」「Hops & Herbs」など、八王子市内産のホップ・地元食材を使う店もある。1人2,000〜4,000円程度、夕方17時から営業する店が中心。JR八王子駅から徒歩5〜10分の範囲に集中。週末夜は地元客で賑わうため、予約推奨。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/5/5c/TeKu_beerglass_with_Belgian_craft_beer.png"
         ],
         "specs": [
           {

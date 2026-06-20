@@ -1,0 +1,17 @@
+{
+  "id": "new-sakuragicho-night-date",
+  "zeros": [
+    {
+      "idx": 2,
+      "name": "コスモクロック21（夜）",
+      "imageSubject": "よこはまコスモワールドの大観覧車コスモクロック21の夜のライトアップ全景",
+      "imageRegion": "神奈川県横浜市中区"
+    },
+    {
+      "idx": 4,
+      "name": "野毛山公園（夜景スポット）",
+      "imageSubject": "野毛山公園（高台の展望広場）から見下ろすみなとみらいの夜景",
+      "imageRegion": "神奈川県横浜市西区"
+    }
+  ]
+}

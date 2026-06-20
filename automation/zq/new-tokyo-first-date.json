@@ -1,0 +1,23 @@
+{
+  "id": "new-tokyo-first-date",
+  "zeros": [
+    {
+      "idx": 3,
+      "name": "お台場海浜公園（夜景）",
+      "imageSubject": "お台場海浜公園から望むレインボーブリッジと東京湾の夕景・夜景",
+      "imageRegion": "東京都港区"
+    },
+    {
+      "idx": 4,
+      "name": "銀座ディナー・GINZA SIX",
+      "imageSubject": "銀座の街並み（GINZA SIX周辺の高級複合商業ビルが並ぶ中央通り）",
+      "imageRegion": "東京都中央区"
+    },
+    {
+      "idx": 5,
+      "name": "新宿（締め・バー）",
+      "imageSubject": "新宿の夜の繁華街（歌舞伎町・新宿三丁目のネオンと高層ビル群）",
+      "imageRegion": "東京都新宿区"
+    }
+  ]
+}

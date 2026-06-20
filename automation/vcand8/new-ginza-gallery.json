@@ -1,0 +1,205 @@
+{
+  "id": "new-ginza-gallery",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "GINZA SIX（銀座六丁目）",
+      "imageSubject": "GINZA SIX（銀座六丁目の大型複合商業施設）の中央通りに面したファサード外観",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__1__1.jpg",
+          "file": "File:Ginza Six 01.jpg",
+          "desc": "銀座松坂屋跡に建設された新商業施設、Ginza Six（中央区銀座6丁目）。",
+          "w": 3072,
+          "h": 2048
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__1__2.jpg",
+          "file": "File:Ginza Six 02.jpg",
+          "desc": "銀座松坂屋跡に建設された新商業施設、Ginza Six（中央区銀座6丁目）。",
+          "w": 3072,
+          "h": 2048
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__1__3.jpg",
+          "file": "File:GINZA SIX Entrance view 201806.jpg",
+          "desc": "GINZA SIX",
+          "w": 2736,
+          "h": 1824
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__1__4.jpg",
+          "file": "File:GINZA SIX Exterior view 2018.jpg",
+          "desc": "GINZA SIX",
+          "w": 1824,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "銀座 伊東屋（G.Itoya）",
+      "imageSubject": "銀座 伊東屋（G.Itoya）銀座本店の赤いクリップ看板が付いたビル外観",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__2__1.jpg",
+          "file": "File:Itoya-2.jpg",
+          "desc": "銀座 伊東屋",
+          "w": 800,
+          "h": 600
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__2__2.jpg",
+          "file": "File:Itoya-1.jpg",
+          "desc": "銀座 伊東屋",
+          "w": 800,
+          "h": 600
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__2__3.jpg",
+          "file": "File:Ginza Itoya (34207621235).jpg",
+          "desc": "Ginza Itoya",
+          "w": 4608,
+          "h": 3456
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__2__4.jpg",
+          "file": "File:Itoya (20076839120).jpg",
+          "desc": "itoya",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "銀座画廊街（クリエイションギャラリーG8ほか）",
+      "imageSubject": "銀座八丁目の資生堂本社・資生堂ギャラリーが入る資生堂銀座ビルの外観",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__3__1.jpg",
+          "file": "File:Shiseido ginza building 2014-2.jpg",
+          "desc": "A photo of　the entrace of  Shiseido head office,Ginza,Chuo-ku,Tokyo,Japan.",
+          "w": 3958,
+          "h": 3415
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__3__2.jpg",
+          "file": "File:Shiseido ginza building 2014.jpg",
+          "desc": "A photo of Shiseido head office,Ginza,Chuo-ku,Tokyo,Japan.",
+          "w": 2708,
+          "h": 4465
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__3__3.jpg",
+          "file": "File:Shiseido Parlor Ginza 2018.jpg",
+          "desc": "Shiseido Parlor Ginza",
+          "w": 1824,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__3__4.jpg",
+          "file": "File:Tokyo ginza shiseido building 2014.jpg",
+          "desc": "A photo of \"Tokyo Ginza Shiseido Building\"Ginza,chuo-ku,Tokyo,Japan.",
+          "w": 3053,
+          "h": 4608
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "松屋銀座・銀座三越",
+      "imageSubject": "銀座のあづま通り・みゆき通りなど中央通りから一本入った細い路地の街並み",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__4__1.jpg",
+          "file": "File:Miharakoji street ginza 2014.jpg",
+          "desc": "a photo of \"Mihara Koji(street)\".Ginza,Chuo-ku,Tokyo,Japan.",
+          "w": 4608,
+          "h": 3440
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__4__2.jpg",
+          "file": "File:PonchanPortrait (2009 photo; cropped 2022).JPG",
+          "desc": "Ponchan, alley cat in Ginza, Tokyo",
+          "w": 3411,
+          "h": 2267
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__4__3.jpg",
+          "file": "File:PonchanPortrait.JPG",
+          "desc": "Ponchan, alley cat in Ginza, Tokyo",
+          "w": 4288,
+          "h": 2848
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__4__4.jpg",
+          "file": "File:Picaso Tower in Ginza, Tokyo (west side).jpg",
+          "desc": "West side of the Picaso Tower in Ginza, Tokyo, built around 1950 for a beauty products company",
+          "w": 3024,
+          "h": 4032
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "歌舞伎座・銀座四丁目交差点",
+      "imageSubject": "銀座四丁目交差点に建つ銀座三越のライオン像と建物外観",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__5__1.jpg",
+          "file": "File:Ginza Mitsukoshi Lion Statue (53028865755).jpg",
+          "desc": "銀座三越 ライオン像",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__5__2.jpg",
+          "file": "File:Ginza Mitsukoshi Lion Statue (53028476491).jpg",
+          "desc": "銀座三越 ライオン像",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__5__3.jpg",
+          "file": "File:Ginza Mitsukoshi Lion Statue (53028650114).jpg",
+          "desc": "銀座三越 ライオン像",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__5__4.jpg",
+          "file": "File:Ginza Mitsukoshi Lion Statue (53028964848).jpg",
+          "desc": "銀座三越 ライオン像",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "new-fujisawa-bored",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "街歩き",
+  "currentTitle": "藤沢で時間つぶし5選。江ノ島・湘南の拠点駅でできること",
+  "currentSubtitle": "藤沢駅周辺・鵠沼海岸・江ノ島。江ノ電の出発点で時間が空いたときのプラン",
+  "currentLede": "藤沢は神奈川県中央南部、湘南エリアの中核都市で、東京から東海道線で約45分。JR・小田急・江ノ電が交差する交通の要所で、駅周辺に商業施設・商店街が広がる。対象は「江の島・鎌倉観光の中継として半日使いたい人」「藤沢駅周辺でショッピングと文化散歩を組み合わせたい人」「観光地化されていない湘南の生活感を体感したい人」。標準は11:00集合・17:00解散の6時間コース、予算は1人3,500〜6,000円。ここでは藤沢駅周辺〜鵠沼海岸〜江の島〜藤沢本町を組み合わせた5スポットを紹介する。",
+  "currentQuote": "藤沢は江ノ電・江ノ島への玄関口。時間が空いたら江ノ島まで足を延ばすのが湘南の楽しみ方。",
+  "currentClosing": "標準動線: 藤沢駅11:00→ルミネ藤沢・サンパール広場でランチ＋休憩（11:00〜12:30）→遊行寺参拝（12:30〜13:30）→藤沢市民ギャラリー（13:30〜14:00）→江ノ電で鵠沼海岸へ（14:00〜15:30 海岸散歩）→江ノ電または小田急で江の島方向（15:30〜17:00 シーキャンドル・岩屋）→片瀬江ノ島駅から帰京。所要約6時間、予算は1人3,500〜6,000円が目安。観光地（江の島・鎌倉）よりも観光客が少なく、平日でも落ち着いた散歩ができる。土日午後は江の島だけが混雑するため、藤沢駅周辺・遊行寺は平日のような落ち着きで歩ける。雨の日はルミネ藤沢＋遊行寺（本堂は屋根あり）＋藤沢市民ギャラリーの屋内中心ルートで完結。失敗しやすいのは「藤沢を通過点と決めつけて時間を取らない」点と「江の島で時間を取りすぎて他を見落とす」点。藤沢駅で1〜2時間、江の島で2〜3時間、と時間配分を事前に決めて動き出すのが現実的。この記事は江の島・鎌倉観光のついでに藤沢市内も歩きたい人に向く。",
+  "spots": [
+    {
+      "name": "藤沢駅周辺ショッピング（藤沢ルミネ・サンパール広場）",
+      "area": "藤沢駅",
+      "descHead": "藤沢駅直結のルミネ藤沢とサンパール広場周辺は、藤沢の駅前再開発で整備された商業ゾーン。ルミネ藤沢は2017年リニューアル後、ファッション・雑貨・カフェ・レストランが揃い、雨の日でも",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "鵠沼海岸（辻堂〜片瀬）",
+      "area": "鵠沼海岸",
+      "descHead": "鵠沼海岸は藤沢市南部、相模湾に面した約2kmの砂浜海岸。藤沢駅から江ノ電で5分の鵠沼海岸駅、または小田急片瀬江ノ島駅から徒歩でアクセスできる。「サーフィンを眺めながら海岸を散歩した",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島（藤沢からのアクセス）",
+      "area": "片瀬江ノ島",
+      "descHead": "江の島は藤沢市の南端、片瀬海岸沖に浮かぶ周囲約4kmの島。藤沢駅から小田急の特急ロマンスカーで片瀬江ノ島駅まで約20分、江ノ電なら江ノ島駅から徒歩15分で島内に渡れる。「藤沢を通過",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    },
+    {
+      "name": "藤沢市民ギャラリー",
+      "area": "藤沢",
+      "descHead": "藤沢市民ギャラリーは藤沢駅北口から徒歩約3分、ODAKYU湘南GATE6階に位置する市民向け展示施設。市民の絵画・写真・書道・工芸の作品展が中心で、ローカルアートに触れたい人にフィ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "藤沢本町・遊行寺",
+      "area": "藤沢本町",
+      "descHead": "遊行寺（清浄光寺）は藤沢駅から徒歩約10分、藤沢本町に位置する1325年創建の時宗の総本山。「時宗の歴史を学びたい」「観光地化されていない静かな寺院を歩きたい」人に向く。境内は無料",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    }
+  ]
+}

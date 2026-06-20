@@ -1,0 +1,125 @@
+{
+  "id": "new-akarenga-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "横浜赤レンガ倉庫",
+      "imageSubject": "横浜赤レンガ倉庫の煉瓦造り2棟の外観（1号館・2号館）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__1__1.jpg",
+          "file": "File:横浜赤レンガ倉庫２号館 - panoramio.jpg",
+          "desc": "横浜赤レンガ倉庫２号館",
+          "w": 2592,
+          "h": 1626
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__1__2.jpg",
+          "file": "File:横浜赤レンガ倉庫 - panoramio.jpg",
+          "desc": "横浜赤レンガ倉庫。",
+          "w": 2560,
+          "h": 1920
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__1__3.jpg",
+          "file": "File:横浜赤レンガ倉庫 - panoramio - hazuijunpei.jpg",
+          "desc": "横浜赤レンガ倉庫",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__1__4.jpg",
+          "file": "File:赤レンガ倉庫（横浜）.jpg",
+          "desc": "東日本大震災直後の赤レンガ倉庫。",
+          "w": 3648,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "象の鼻パーク",
+      "imageSubject": "象の鼻パークの象の鼻のような曲線を描く防波堤テラスと横浜港の眺め",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__2__1.jpg",
+          "file": "File:Night view of Yokohama Minatomirai 21 from Zou-no-hana Park（1）.jpg",
+          "desc": "象の鼻パークより撮影する横浜市みなとみらい21の夜景",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__2__2.jpg",
+          "file": "File:Night view of Yokohama Minatomirai 21 from Zou-no-hana Park（2）.jpg",
+          "desc": "象の鼻パークより撮影する横浜市みなとみらい21の夜景",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__2__3.jpg",
+          "file": "File:Night view of Yokohama Minatomirai 21 from Zou-no-hana Park（3）.jpg",
+          "desc": "象の鼻パークより撮影する横浜市みなとみらい21の夜景",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__2__4.jpg",
+          "file": "File:象の鼻パーク - panoramio.jpg",
+          "desc": "象の鼻パーク隣の昭和ビル。",
+          "w": 2304,
+          "h": 1728
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜ハンマーヘッド",
+      "imageSubject": "横浜ハンマーヘッド（新港ふ頭客船ターミナル複合施設）の建物外観とハンマーヘッドクレーン",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__3__1.jpg",
+          "file": "File:YOKOHAMA HAMMERHEAD - D02b.jpg",
+          "desc": "横浜市中区新港にある客船ターミナル複合施設「横浜ハンマーヘッド」の外観。",
+          "w": 3937,
+          "h": 2953
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__3__2.jpg",
+          "file": "File:横浜ハンマーヘッドからみた海 01.jpg",
+          "desc": "横浜ハンマーヘッドからみた海の画像",
+          "w": 3840,
+          "h": 2160
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__3__3.jpg",
+          "file": "File:横浜ハンマーヘッドからみた海 02.jpg",
+          "desc": "横浜ハンマーヘッドからみた海の画像",
+          "w": 3840,
+          "h": 2160
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__3__4.jpg",
+          "file": "File:YOKOHAMA HAMMERHEAD - Diamond Princess 07.jpg",
+          "desc": "横浜市中区新港にある複合施設「横浜ハンマーヘッド」（新港ふ頭客船ターミナル）へ2019年11月4日に第一号入港したクルーズ客船「ダイヤモンドプリンセス」。右側は歴史的な産業遺構の「ハンマーヘッドクレーン」。",
+          "w": 3822,
+          "h": 2864
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "new-bashamichi-architecture",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "街歩き",
+  "currentTitle": "馬車道レトロ建築さんぽ5選。明治・大正の洋館を歩く",
+  "currentSubtitle": "旧横浜正金銀行、旧生糸検査所、県庁本庁舎。関内で重なる時代の層",
+  "currentLede": "馬車道は1869年に日本で最初に「馬車道」として整備された通り。明治・大正の歴史的洋館が今も現役で残る、東京駅丸の内側に匹敵する近代建築遺産の集積地。対象は近代建築・歴史散歩が好きな大人のカップル、または横浜の文化的な裏面を深掘りしたい人。標準は13:00集合・17:30解散の4時間30分コース、予算は博物館込みで1人2,500〜4,500円。ここでは馬車道駅・関内駅を起点に洋館建築を巡る5スポットを紹介する。",
+  "currentQuote": "馬車道から日本大通りにかけて1kmも歩けば、100年以上の建築が今も生きているのがわかる。",
+  "currentClosing": "標準動線: 馬車道駅13:00→神奈川県立歴史博物館（13:00〜14:30 建築＋常設展）→旧横浜市庁舎（14:30〜15:00 外観）→旧生糸検査所（15:00〜15:30 外観）→神奈川県庁キング塔（15:30〜16:00 外観）→横浜開港資料館（16:00〜17:30）→赤レンガ倉庫方向へ。所要4時間30分、予算は博物館入場込みで1人2,500〜4,500円。土日午後は神奈川県立歴史博物館で企画展がある時にやや混むが、平日午後は基本的に静か。雨の日は屋内中心ルート（県立歴史博物館＋横浜開港資料館）で2〜3時間過ごせる。失敗しやすいのは「博物館の休館日見落とし」（月曜休館の館が多い）と「県庁の事前予約見落とし」（内部見学は要予約）。事前に公式サイトで開館日・予約状況を必ず確認。この記事は明治・大正の洋館建築が好きな大人のデート層、横浜の文化史を深掘りしたい人に最適。",
+  "spots": [
+    {
+      "name": "神奈川県立歴史博物館（旧横浜正金銀行本店）",
+      "area": "馬車道",
+      "descHead": "1904年（明治37年）竣工、横浜正金銀行本店として建てられた西洋古典主義建築。設計は妻木頼黄。1995年に神奈川県立歴史博物館本館として再生され、「神奈川の歴史と文化」を紹介する",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "旧横浜市庁舎（横浜市歴史的建造物）",
+      "area": "関内",
+      "descHead": "旧横浜市庁舎（横浜市歴史的建造物）は1959年竣工、村野藤吾設計の市庁舎建築。2020年に新庁舎完成後、外観は保存され北棟・南棟と中庭の景観が今も見られる。「戦後モダニズム建築の代",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜第二合同庁舎（旧横浜生糸検査所）",
+      "area": "馬車道",
+      "descHead": "1923年（大正12年）竣工、横浜第二合同庁舎（旧横浜生糸検査所）。設計は遠藤於菟。生糸の品質検査を行っていた歴史的施設で、現在は北仲ノットの一部として保存・再生されている。「明治",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    },
+    {
+      "name": "神奈川県庁本庁舎（キングの塔）",
+      "area": "関内",
+      "descHead": "1928年竣工の神奈川県庁本庁舎（キングの塔）は、横浜三塔（キング・クイーン・ジャック）のうちのキング塔。塔屋部分が48mの高さで、横浜港から見上げると港の景観の一部になる。「横浜",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜開港資料館（旧英国総領事館）",
+      "area": "日本大通り",
+      "descHead": "1931年竣工、旧英国総領事館の建物を活用した横浜開港資料館。ペリー来航（1853年）から関東大震災（1923年）までの横浜の歴史・写真・資料を展示。「横浜開港の歴史を学びたい」「",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    }
+  ]
+}

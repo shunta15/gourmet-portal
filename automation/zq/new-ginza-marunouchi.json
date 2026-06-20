@@ -1,0 +1,17 @@
+{
+  "id": "new-ginza-marunouchi",
+  "zeros": [
+    {
+      "idx": 1,
+      "name": "銀座六丁目・GINZA SIX",
+      "imageSubject": "GINZA SIX（銀座六丁目の大型複合商業施設）の外観ファサード、または屋上庭園(GINZA SIX GARDEN)から銀座方面を望む眺め",
+      "imageRegion": "東京都中央区"
+    },
+    {
+      "idx": 5,
+      "name": "銀座三越・松屋銀座",
+      "imageSubject": "銀座四丁目交差点に面する銀座三越の建物外観（中央通り沿い、ライオン像のある老舗百貨店）と向かいの松屋銀座",
+      "imageRegion": "東京都中央区"
+    }
+  ]
+}

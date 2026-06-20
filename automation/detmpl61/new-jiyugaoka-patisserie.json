@@ -1,0 +1,43 @@
+{
+  "id": "new-jiyugaoka-patisserie",
+  "file": "newGuideFeatures5",
+  "persona": "C",
+  "tag": "スイーツ",
+  "currentTitle": "自由が丘スイーツ5選。パティスリーの街を歩く",
+  "currentSubtitle": "モンブラン発祥の街・自由が丘の洋菓子店と隠れカフェ。週末の甘い午後",
+  "currentLede": "自由が丘は東京で最もパティスリーが密集している街として知られる。東急東横線・大井町線の自由が丘駅を中心に、半径500m以内にショコラトリー・洋菓子店・サロン・ベーカリー・カフェが30軒以上集まり、徒歩で巡って食べ比べができる稀有な場所だ。週末は混雑するが、平日午後は比較的落ち着いた中で店内のショーケースをじっくり見比べられる。ここでは初訪問の人がスイーツハシゴしやすい、自由が丘の5スポットを紹介する。",
+  "currentQuote": "自由が丘は「1軒決めて、あとは歩く」が正解。目的のパティスリーを1軒決め、あとは路地を歩いて気になった店に入ればいい。",
+  "currentClosing": "標準動線は、自由が丘駅正面口→駅前パティスリー街（13:00〜14:30 ショーケース観察＋購入）→裏路地の隠れ家パティスリー（14:30〜15:30）→和菓子店（15:30〜16:00 手土産）→九品仏川緑道で休憩＆食べる（16:00〜17:00）→サンセットエリアでコーヒー。所要4〜5時間、予算は1人2,500〜6,000円（購入量で大きく振れる）が目安。「スイーツ好きの2人デート」「友達同士の食べ比べ」「手土産調達」「平日の落ち着いた午後散歩」に向く。土日午後は中心街がピーク混雑、開店直後の10〜11時または14時前の時間がスムーズ。雨の日は緑道散歩を諦めて、駅前のカフェに移動して購入したスイーツをそこで食べる動線に切り替える。時間がない場合は、駅前パティスリー1軒→緑道で食べる、の2点で1時間半に圧縮できる。迷ったら、まず1軒で1個ずつ買って外で食べてから次の店に移る、という「歩きながら食べる」スタイルが自由が丘との上手な付き合い方。",
+  "spots": [
+    {
+      "name": "自由が丘 モンブラン（発祥の店）",
+      "area": "自由が丘",
+      "descHead": "自由が丘駅正面口から徒歩2〜5分の中心区画には、フランス菓子の老舗・新進気鋭のパティシエの店・大手チェーンの旗艦店が並ぶ。「複数のパティスリーで食べ比べしたい」「手土産候補を多めに",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘スイーツフォレスト（閉業に注意）",
+      "area": "自由が丘",
+      "descHead": "自由が丘スイーツフォレストは2003年開業の屋内型スイーツテーマパークだったが、2023年5月に閉業した。「過去にあった有名スポットを知りたい」歴史的興味の対象として記載。現在は跡",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘駅周辺の個人パティスリー",
+      "area": "自由が丘",
+      "descHead": "自由が丘駅周辺の路地（駅正面口から徒歩5〜10分）には、観光客が少ない個人経営のパティスリーが点在する。「店主と話しながらスイーツを選びたい」「観光客の少ない店でゆっくり選びたい」",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘の路地散歩とカフェ",
+      "area": "自由が丘",
+      "descHead": "自由が丘の路地散歩は、自由が丘駅から放射状に伸びる細い通り（緑が丘・奥沢方向）を歩くコース。「観光地化されていない自由が丘の住宅街を歩きたい」「散歩しながら個人店を発見したい」目的",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "熊野神社と駒場公園方向",
+      "area": "自由が丘〜駒場",
+      "descHead": "熊野神社と駒場公園方向は自由が丘駅から徒歩約15分、奥沢・緑が丘エリア。「自由が丘の静かな住宅街を抜けて駒場・池尻方面に歩きたい」散歩好きに向く。熊野神社は江戸期創建の地元の鎮守、",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    }
+  ]
+}

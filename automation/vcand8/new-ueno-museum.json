@@ -1,0 +1,197 @@
+{
+  "id": "new-ueno-museum",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "東京国立博物館",
+      "imageSubject": "東京国立博物館本館（昭和初期の帝冠様式・瓦屋根を載せた石造りの正面ファサード）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__1__1.jpg",
+          "file": "File:Tokyo National Museum, Honkan 2010.jpg",
+          "desc": "Honkan,Tokyo National Museum, at Taito-ku Tokyo Japan, designed by Jin Watanabe in 1937.",
+          "w": 3476,
+          "h": 2307
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__1__2.jpg",
+          "file": "File:Tokyo National Museum 東京国立博物館 - panoramio.jpg",
+          "desc": "Tokyo National Museum 東京国立博物館",
+          "w": 1280,
+          "h": 960
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__1__3.jpg",
+          "file": "File:Tokyo national museum , 東京国立博物館 - panoramio.jpg",
+          "desc": "Tokyo national museum , 東京国立博物館",
+          "w": 4208,
+          "h": 848
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__1__4.jpg",
+          "file": "File:Tokyo national museum , 東京国立博物館 - panoramio (1).jpg",
+          "desc": "Tokyo national museum , 東京国立博物館",
+          "w": 6061,
+          "h": 1600
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "上野動物園",
+      "imageSubject": "上野動物園のジャイアントパンダ（笹を食べる姿、または園の表門）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__2__1.jpg",
+          "file": "File:Ueno zoo, Tokyo, Japan (14158176795).jpg",
+          "desc": "Ueno zoo, Tokyo, Japan",
+          "w": 4928,
+          "h": 3264
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__2__2.jpg",
+          "file": "File:Lion - Ueno Zoo.jpg",
+          "desc": "I'm shooting through a dirty window so it looks like a glamour shot.",
+          "w": 5877,
+          "h": 3306
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__2__3.jpg",
+          "file": "File:上野動物公園, Ueno Zoo（Ueno Zoological Gardens） - panoramio (8).jpg",
+          "desc": "上野動物公園, Ueno Zoo（Ueno Zoological Gardens）",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__2__4.jpg",
+          "file": "File:\"Pelican\" Island on Shinobazu pond, Ueno Zoo.jpg",
+          "desc": "\"Pelican\" Island on Shinobazu pond, Ueno Zoo ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "上野公園・花見エリア",
+      "imageSubject": "上野公園の桜並木（メインストリートを覆う満開のソメイヨシノのトンネル）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__3__1.jpg",
+          "file": "File:上野恩賜公園 - panoramio (7).jpg",
+          "desc": "上野恩賜公園",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__3__2.jpg",
+          "file": "File:上野恩賜公園 - panoramio (8).jpg",
+          "desc": "上野恩賜公園",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__3__3.jpg",
+          "file": "File:東京都上野恩賜公園 - panoramio (3).jpg",
+          "desc": "東京都上野恩賜公園",
+          "w": 4770,
+          "h": 3178
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__3__4.jpg",
+          "file": "File:Japanese Gardens - Cherry Blossoms and Stone Lantern, at Ueno Park.jpg",
+          "desc": "Cherry Blossoms and Stone Lantern, at Ueno Park",
+          "w": 1907,
+          "h": 2401
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "不忍池・弁天堂",
+      "imageSubject": "不忍池と弁天堂（蓮に囲まれた池の中之島に建つ八角形の弁天堂）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__4__1.jpg",
+          "file": "File:Shinobazu-no-ike Benten-dō, Kan'eiji 16.jpg",
+          "desc": "不忍池辯天堂",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__4__2.jpg",
+          "file": "File:Shinobazu-no-ike Benten-dō, Kan'eiji 15.jpg",
+          "desc": "不忍池辯天堂",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__4__3.jpg",
+          "file": "File:Shinobazu-no-ike Benten-dō, Kan'eiji 08.jpg",
+          "desc": "不忍池辯天堂",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__4__4.jpg",
+          "file": "File:Shinobazu-no-ike Benten-dō, Kan'eiji 22.jpg",
+          "desc": "不忍池辯天堂",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "アメ横商店街",
+      "imageSubject": "アメ横商店街（JR高架沿いに看板と人がひしめく上野アメ横の通り）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__5__1.jpg",
+          "file": "File:Ameya-Yokochō Entrance.jpg",
+          "desc": "This is the entrance to Ameya-Yokochō Shopping District near the Ueno Royal Museum.",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__5__2.jpg",
+          "file": "File:Ameyoko June 2022.jpg",
+          "desc": "Ameyoko June 2022 ",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__5__3.jpg",
+          "file": "File:Ameya Yokocho Shopping Street (53074765369).jpg",
+          "desc": "アメヤ横丁",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    }
+  ]
+}

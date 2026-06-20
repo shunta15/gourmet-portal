@@ -1,0 +1,189 @@
+{
+  "id": "new-roppongi-night",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "六本木ヒルズ展望台（東京シティビュー）",
+      "imageSubject": "六本木ヒルズ森タワー（高さ238mの超高層ビル）の外観全景",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__1__1.jpg",
+          "file": "File:六本木ヒルズ大展望台 東京シティビュー - panoramio (25).jpg",
+          "desc": "六本木ヒルズ大展望台 東京シティビュー",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__1__2.jpg",
+          "file": "File:六本木ヒルズ大展望台 東京シティビュー - panoramio (20).jpg",
+          "desc": "六本木ヒルズ大展望台 東京シティビュー",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__1__3.jpg",
+          "file": "File:六本木ヒルズ大展望台 東京シティビュー - panoramio.jpg",
+          "desc": "六本木ヒルズ大展望台 東京シティビュー",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__1__4.jpg",
+          "file": "File:六本木ヒルズ大展望台 東京シティビュー - panoramio (44).jpg",
+          "desc": "六本木ヒルズ大展望台 東京シティビュー",
+          "w": 3264,
+          "h": 2448
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "東京タワー",
+      "imageSubject": "東京タワー（高さ333mの赤と白の電波塔）の塔体全景",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__2__1.jpg",
+          "file": "File:Tokyo Tower, Minato City.jpg",
+          "desc": "A high-angle night photograph of Tokyo, Japan. The Tokyo Tower is prominently illuminated in its traditional orange \"Landmark Light.\" To the left, several moder",
+          "w": 5991,
+          "h": 3370
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__2__2.jpg",
+          "file": "File:Minato City, Tokyo, Japan (Night).jpg",
+          "desc": "The skyline of Minato City, Tokyo, as seen from the Shibuya Stream building.",
+          "w": 4622,
+          "h": 2600
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__2__3.jpg",
+          "file": "File:Japan-Tokyo-tower-1024.jpg",
+          "desc": "View from below onto the Tokyo Tower",
+          "w": 4000,
+          "h": 3000
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "麻布台ヒルズ",
+      "imageSubject": "麻布台ヒルズの森JPタワー（高さ330mの超高層ビル）外観",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__3__1.jpg",
+          "file": "File:麻布台ヒルズ.jpg",
+          "desc": "神谷町駅前からの全景",
+          "w": 3024,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__3__2.jpg",
+          "file": "File:Azabudai Hills 202307.jpg",
+          "desc": "麻布台ヒルズ。2023年7月30日撮影。",
+          "w": 5153,
+          "h": 3870
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__3__3.jpg",
+          "file": "File:Azabudai Hills, opening day 41.jpg",
+          "desc": "Azabudai Hills, opening day ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__3__4.jpg",
+          "file": "File:Azabudai Hills opening day.jpg",
+          "desc": "Azabudai Hills opening day ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "芝公園・増上寺",
+      "imageSubject": "増上寺の三門（大きな朱塗りの山門）越しに見上げる東京タワー",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__4__1.jpg",
+          "file": "File:Tokyo---2025-05-24 003.jpg",
+          "desc": "東京都港区にある西新橋三丁目交差点の歩道橋から見える東京都港区芝公園3丁目付近、中央は芝公園アネックス、中央奥は東京タワー、左端は増上寺方面。",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__4__2.jpg",
+          "file": "File:Tokyo---2025-05-24 005.jpg",
+          "desc": "東京都港区にある西新橋三丁目交差点の歩道橋から見える、東京都港区芝公園4丁目にある増上寺",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__4__3.jpg",
+          "file": "File:Tokyo---2025-05-24 004.jpg",
+          "desc": "東京都港区にある西新橋三丁目交差点の歩道橋から見える、東京都港区芝公園4丁目にある増上寺",
+          "w": 3648,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "国立新美術館",
+      "imageSubject": "国立新美術館の波打つガラスカーテンウォールのファサード（黒川紀章設計）",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__5__1.jpg",
+          "file": "File:National Art Center Tokyo 2008.jpg",
+          "desc": "National Art Center, Tokyo at Minato-ku Tokyo Japan. Good Design Award 2008.",
+          "w": 2700,
+          "h": 1800
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__5__2.jpg",
+          "file": "File:National Art Center, Tokyo - DSC06720.JPG",
+          "desc": "Interior of the National Art Center, Tokyo - Tokyo, Japan.",
+          "w": 5193,
+          "h": 3488
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__5__3.jpg",
+          "file": "File:2018 National Art Center, Tokyo 2.jpg",
+          "desc": "国立新美術館、東京都港区、黒川紀章設計。",
+          "w": 2500,
+          "h": 1678
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__5__4.jpg",
+          "file": "File:The National Art Center , Tokyo - panoramio (1).jpg",
+          "desc": "Outside the the National Art Center (Tokyo) at blue hour.",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    }
+  ]
+}

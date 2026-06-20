@@ -1,0 +1,172 @@
+{
+  "id": "new-nakameguro-morning",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "目黒川沿い散歩（中目黒〜池尻大橋）",
+      "imageSubject": "目黒川沿いの遊歩道（中目黒〜池尻大橋区間、川を縁取る桜並木と水辺の散歩道）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__1__1.jpg",
+          "file": "File:2 Chome Higashigotanda, Shinagawa-ku, Tōkyō-to 141-0022, Japan - panoramio.jpg",
+          "desc": "2 Chome Higashigotanda, Shinagawa-ku, Tōkyō-to 141-0022, Japan",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__1__2.jpg",
+          "file": "File:De Meguro in Nakameguro 2-chōme, stroomafwaarts gezien vanaf de Nakamekōen-brug, -13 augustus 2018 a.jpg",
+          "desc": "8月の目黒川。目黒区中目黒2丁目のなかめ公園橋から下流・南東の方向を見る。中央の橋は中里橋。両岸は桜並木。左の木立の向うに目黒駐屯地がある。一番奥の建物はアルコタワー。地図はこちら。",
+          "w": 2048,
+          "h": 1365
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__1__3.jpg",
+          "file": "File:De Meguro in Nishi-Gotanda 2-chōme, stroomopwaarts gezien naar het westnoordwesten vanaf de Honmura-brug, -23 oktober 2018.jpg",
+          "desc": "目黒川。品川区西五反田2丁目の本村橋〔ほんむらばし〕から上流（西北西）の方向を見る。両岸ともに西五反田2丁目。写真中央に見えるのは都道418号線の谷山橋〔ややまばし〕と首都高速2号目黒線の高架。地図はこちら。",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__1__4.jpg",
+          "file": "File:DSC05504 (31719409292).jpg",
+          "desc": "DSC05504",
+          "w": 4000,
+          "h": 6000
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "スターバックスリザーブロースタリー東京",
+      "imageSubject": "スターバックス リザーブ ロースタリー 東京の建物外観（中目黒・目黒川沿いの大型旗艦店）",
+      "imageRegion": "東京都目黒区",
+      "candidates": []
+    },
+    {
+      "spot": 3,
+      "name": "中目黒高架下（東横線高架下）",
+      "imageSubject": "中目黒高架下（東急東横線の高架橋下を再整備した商業区画の街並み）",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__3__1.jpg",
+          "file": "File:202408100817 IMG 0849.jpg",
+          "desc": "中目黒駅（2024年8月10日08時17分）",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__3__2.jpg",
+          "file": "File:202408100817 IMG 0850.jpg",
+          "desc": "中目黒駅（2024年8月10日08時17分）",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__3__3.jpg",
+          "file": "File:202408100818 IMG 0851.jpg",
+          "desc": "中目黒駅（2024年8月10日08時18分）",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__3__4.jpg",
+          "file": "File:202408100821 IMG 0852.jpg",
+          "desc": "急行湘南台行き\n中目黒駅にて\n\n（2024年8月10日08時21分）",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "中目黒〜代官山の徒歩ルート",
+      "imageSubject": "中目黒から代官山へ抜ける閑静な住宅街の坂道・路地",
+      "imageRegion": "東京都目黒区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__4__1.jpg",
+          "file": "File:\"Cirty library\" in Daikanyama.jpg",
+          "desc": "\"Cirty library\" in Daikanyama ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__4__2.jpg",
+          "file": "File:20150725 haremame.jpg",
+          "desc": "The stage of the Haretara-solani-mame-maite, Daikanyana Tokyo",
+          "w": 4128,
+          "h": 3096
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__4__3.jpg",
+          "file": "File:Aoba-Japan international school.jpg",
+          "desc": "Aoba-Japan international school ",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__4__4.jpg",
+          "file": "File:Aoyama Jogakuin Daikanyama Campus.jpg",
+          "desc": "青山女学院代官山校舎",
+          "w": 1080,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "池尻大橋〜三宿方向のカフェエリア",
+      "imageSubject": "池尻大橋〜三宿エリアの落ち着いた街並みとカフェの並ぶ通り",
+      "imageRegion": "東京都世田谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__5__1.jpg",
+          "file": "File:DT-02 station number.png",
+          "desc": "田園都市線の池尻大橋の駅ナンバリング記号",
+          "w": 1024,
+          "h": 1024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__5__2.jpg",
+          "file": "File:Ikejiri-Ohashi Station east exit A - 2019-09-09.jpg",
+          "desc": "Ikejiri-Ōhashi Station east entrance (池尻大橋駅の東口)",
+          "w": 4592,
+          "h": 3064
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__5__3.jpg",
+          "file": "File:Ikejiri-Ohashi Station east exit B - 2019-09-09.jpg",
+          "desc": "Ikejiri-Ōhashi Station east entrance (池尻大橋駅の東口)",
+          "w": 4592,
+          "h": 3064
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__5__4.jpg",
+          "file": "File:Ikejiri-Ohashi Station platforms A - 2019-09-09.jpg",
+          "desc": "Ikejiri-Ōhashi Station platform (池尻大橋駅のホーム)",
+          "w": 4592,
+          "h": 3064
+        }
+      ]
+    }
+  ]
+}

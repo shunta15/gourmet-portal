@@ -1,0 +1,43 @@
+{
+  "id": "new-kamakura-komachi",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "街歩き",
+  "currentTitle": "鎌倉小町通り・鶴岡八幡宮周辺5選。鎌倉観光の王道ルート",
+  "currentSubtitle": "小町通りの食べ歩き、鶴岡八幡宮の参拝、若宮大路の歩き方",
+  "currentLede": "小町通りは鎌倉駅東口から鶴岡八幡宮までの約360m続く商店街で、鎌倉観光のハイライト。食べ歩き・お土産・カフェが並ぶ参道型の通りで、平日でも観光客で賑わう。鶴岡八幡宮参拝とセットで使う動線が王道で、半日コースの主軸として機能する。ここでは小町通り・鶴岡八幡宮を中心とした鎌倉の5スポットを紹介する。",
+  "currentQuote": "鎌倉駅から鶴岡八幡宮まで、小町通りで食べ歩きしながら歩くのが鎌倉観光の王道。",
+  "currentClosing": "標準動線は、鎌倉駅東口→小町通り食べ歩き（10:30〜12:00）→鶴岡八幡宮参拝（12:00〜13:30）→若宮大路で老舗ランチ（13:30〜14:30）→鎌倉駅周辺のカフェで休憩（14:30〜16:00）→小町通りで土産購入→江ノ電で長谷・大仏方面（16:00〜18:00）。所要6〜7時間、予算は食事＋土産込みで1人4,500〜8,000円が目安。「鎌倉観光の王道を1日で網羅したい人」「家族・友達同士の散歩」「初めての鎌倉訪問」に向く。桜（3月末〜4月）と紅葉（11月）のピークは土日混雑が激しいため、平日または朝9時前後に着くのが現実的。雨の日は小町通りはアーケード区画があるが完全屋根ではないので、屋内のカフェに早めに避難する。時間がない場合は、小町通り→鶴岡八幡宮の2点で2時間半に圧縮できる。迷ったら、9時に鎌倉駅着で小町通り→鶴岡八幡宮→若宮大路ランチ→江ノ電で長谷大仏、というシンプルな1日プランが王道。",
+  "spots": [
+    {
+      "name": "小町通り",
+      "area": "鎌倉駅東口",
+      "descHead": "鎌倉駅東口から鶴岡八幡宮まで続く360mの商店街。両側に約250店舗が並び、和雑貨・食べ歩きフード（人形焼・コロッケ・揚げまんじゅう・抹茶ソフトなど）・カフェが密集する。土日午後は",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鶴岡八幡宮",
+      "area": "雪ノ下",
+      "descHead": "1063年創建、鎌倉幕府が公式の鶴岡八幡宮として整備した神社。鎌倉の中央に位置し、源頼朝が源氏の守り神として崇敬した。本宮までは約200段の階段を登る形になり、参拝後は本宮広場から",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鎌倉国宝館",
+      "area": "雪ノ下",
+      "descHead": "鎌倉の老舗和菓子店は鎌倉散歩のハイライト。「鎌倉まめや」（豆菓子）・「鳩サブレ豊島屋」（鳩の形のサブレ）・「鎌倉五郎本店」（半月の最中）・「不二家飯店」（鎌倉名物の中華まん）など、",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "若宮大路",
+      "area": "鎌倉駅周辺",
+      "descHead": "鎌倉駅東口から徒歩約10分、鎌倉駅周辺は近年カフェ文化が成熟している。鎌倉野菜を使う洋食店、地元のロースタリーが運営するスペシャルティコーヒー店、北欧家具を活かしたインテリアカフェ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鎌倉幕府跡（鎌倉歴史文化交流館）",
+      "area": "御成町",
+      "descHead": "鎌倉駅近辺の若宮大路（鶴岡八幡宮の参道）の西側には、観光客が少ない静かな住宅街が広がる。個人経営のギャラリー・古書店・町中華・寿司屋などが点在し、小町通りの賑やかさを抜けてゆっくり",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    }
+  ]
+}

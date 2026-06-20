@@ -1,0 +1,43 @@
+{
+  "id": "new-ebisu-daikanyama",
+  "file": "newGuideFeatures2",
+  "persona": "A",
+  "tag": "デート",
+  "currentTitle": "恵比寿・代官山5選。おしゃれなカフェと坂道散歩",
+  "currentSubtitle": "代官山T-SITE、恵比寿ガーデンプレイス、目黒川。都内で最もおしゃれな住宅街",
+  "currentLede": "恵比寿〜代官山は、渋谷駅から徒歩15分の距離にありながら、騒がしさが急に減って静かになる、東京の中で「徒歩で空気が変わる」体験ができる珍しいエリアだ。代官山T-SITEの蔦屋書店・恵比寿ガーデンプレイスのバカラシャンデリア・目黒川沿いのカフェ、とハードもソフトも高品質で、大人のデートとして外しにくい。ショッピング・読書・散歩・写真・夕食という流れが2km圏内で完結するため、渋谷の延長として「もう一歩落ち着いた街」に行きたい時の選択肢になる。ここでは代官山〜恵比寿〜中目黒を歩いて繋ぐ5スポットを紹介する。",
+  "currentQuote": "代官山T-SITEで本を選んでスタバでコーヒーを飲み、目黒川を歩いて恵比寿ガーデンプレイスでディナー。このルートが恵比寿・代官山デートの完成形。",
+  "currentClosing": "標準動線は、代官山駅→代官山T-SITE（13:00〜14:30読書＋コーヒー）→ログロード代官山（14:30〜15:30散歩＋ショッピング）→目黒川沿いを中目黒方向へ歩く（15:30〜16:30）→中目黒で軽くカフェ（16:30〜17:30）→恵比寿ガーデンプレイス（18:00〜19:30夕方の景観＋写真美術館 or ヱビスビール記念館）→アトレ恵比寿で夕食（20:00〜）。所要6〜7時間。「都心で落ち着いた半日デートを組みたい人」「読書・散歩・写真の3軸が好きな人」「桜の時期に来たい人」に向く。桜ピーク（3月末〜4月第1週）の目黒川沿いは大混雑で歩行も困難なので、早朝6〜8時に来るか、平日昼を狙う。雨の日は代官山T-SITE→ログロード→アトレ恵比寿の屋内中心ルートに切り替えると傘なしで動ける。時間が足りない場合は、代官山T-SITE（90分）→目黒川沿い（30分）→恵比寿ガーデンプレイス（60分）の3点で3時間コースになる。",
+  "spots": [
+    {
+      "name": "代官山T-SITE（蔦屋書店）",
+      "area": "代官山",
+      "descHead": "代官山駅から徒歩5分、3棟構成の蔦屋書店を中心とした文化複合施設。アート・建築・料理・旅・文学のセレクトが極めて高感度で、書店としての専門性が高い。館内にスターバックスが併設されて",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+    },
+    {
+      "name": "恵比寿ガーデンプレイス",
+      "area": "恵比寿",
+      "descHead": "1994年開業、旧サッポロビール工場跡地を再開発した大型複合施設。恵比寿ガーデンプレイスタワー・三越・ヱビスビール記念館・東京都写真美術館・ウェスティンホテル東京が一つの広場を囲む",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    },
+    {
+      "name": "目黒川沿い",
+      "area": "中目黒",
+      "descHead": "代官山〜中目黒〜池尻大橋を結ぶ目黒川は、約3.8kmの遊歩道が整備された都心の水辺。3月末〜4月第1週の桜並木は東京でも有数の名所で、満開時は川面に花びらが流れる桜のトンネルになる",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "代官山・ログロード代官山",
+      "area": "代官山",
+      "descHead": "2015年開業、旧東横線渋谷〜代官山間の高架跡地を活用した低層の遊歩道型商業施設。全長約220m、5棟の低層建築にスターバックス・スプリングバレーブルワリー・カフェ・セレクトショッ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+    },
+    {
+      "name": "恵比寿・アトレ恵比寿（飲食）",
+      "area": "恵比寿",
+      "descHead": "JR恵比寿駅直結の大型駅ビル。本館・西館・東館の3館構成で、ファッション・雑貨・食料品・飲食が揃う。本館の地下〜2階の食料品フロアは、デパ地下級のスイーツ・惣菜・酒類を扱い、夕食難",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "kansai-kobe-harborland-family",
+  "file": "newGuideFeaturesKansai",
+  "persona": "C",
+  "tag": "子連れ",
+  "currentTitle": "神戸ハーバーランド子連れ5選。海辺で一日遊べる場所",
+  "currentSubtitle": "アンパンマンミュージアム、モザイク、ポートタワー。港の親子おでかけ",
+  "currentLede": "神戸ハーバーランドからメリケンパークにかけての海辺は、室内で遊べる施設と、ベビーカーで歩ける広い公園が、徒歩圏内にまとまった親子向けのエリアだ。電車を乗り継がずに一日を組み立てられるため、小さな子ども連れでも移動の負担が少ない。対象は未就学児から小学生の子どもを連れた家族、屋内と屋外を天気に合わせて行き来したい親子。標準は10:00出発・16:00ごろ解散の約6時間コース、予算は子ども料金や食事を含めて1家族（大人2＋子1）で8,000〜15,000円が目安。ここでは港の景色を眺めながら歩いてつながる5スポットを、回る順番で紹介する。",
+  "currentQuote": "海沿いに施設がまとまっているから、子どもの機嫌に合わせて順番を入れ替えられる。",
+  "currentClosing": "標準動線: 10:00 神戸アンパンマンこどもミュージアム＆モールで、体力のある午前のうちに室内遊び（10:00〜12:00、WEBチケットは事前購入）→ ハーバーランドのモザイクで昼食と大観覧車（12:00〜13:30）→ 橋を渡ってメリケンパークの芝生で休憩し、BE KOBEで記念写真（13:45〜14:30）→ 神戸ポートタワーで港を見下ろす（14:45〜15:30）→ 隣の神戸海洋博物館・カワサキワールドで乗り物展示を楽しんで締める（15:30〜16:30）。所要約6時間、予算は大人2＋子1で8,000〜15,000円が目安。このエリアの強みは、屋内施設と屋外の公園が海沿いに密集していて、子どもの機嫌や天気に合わせて順番を入れ替えられることだ。ぐずったら室内へ、元気なら公園へと切り替えられる。注意したいのは、メリケンパークが屋外中心で夏の日差しと冬の海風を受けやすいこと、アンパンマンミュージアムが日時指定制で当日いきなりは入りにくいこと、そして週末は施設も飲食も混みやすいこと。雨の日は、アンパンマンミュージアム・ポートタワー・海洋博物館・モザイク館内など屋内中心に組み替えると一日もつ。料金・営業時間・休館日は変わることがあるため、訪問前に各施設の公式サイトで確認しておきたい。神戸で、小さな子ども連れでも移動を最小限に一日遊びたい家族に向くコースだ。",
+  "spots": [
+    {
+      "name": "神戸アンパンマンこどもミュージアム＆モール",
+      "area": "神戸市中央区・ハーバーランド",
+      "descHead": "神戸アンパンマンこどもミュージアム＆モールは、ハーバーランドの海沿いに建つ2階建ての施設で、2階の有料ミュージアムと、1階の入場無料のショッピングモールに分かれている。ミュージアム",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/130720_Kobe_Anpanman_Children%27s_Museum_%26_Mall_Kobe_Japan01s3.jpg/1280px-130720_Kobe_Anpanman_Children%27s_Museum_%26_Mall_Kobe_Japan01s3.jpg"
+    },
+    {
+      "name": "神戸ハーバーランド（モザイク・大観覧車）",
+      "area": "神戸市中央区・ハーバーランド",
+      "descHead": "神戸ハーバーランドは、大型商業施設のumieや、海に面したレンガ調の「モザイク」が並ぶ港のショッピングエリアだ。モザイクの屋上には大観覧車があり、ゴンドラから神戸港とポートタワー、",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Kobe%27s_Harborland%2C_Hyogo%2C_Japan_--_Night_View_of_Mosaic_Ferris_Wheel.jpg/1280px-Kobe%27s_Harborland%2C_Hyogo%2C_Japan_--_Night_View_of_Mosaic_Ferris_Wheel.jpg"
+    },
+    {
+      "name": "メリケンパーク・BE KOBE",
+      "area": "神戸市中央区・メリケンパーク",
+      "descHead": "メリケンパークは、ハーバーランドから対岸へ渡った海沿いの広い公園で、芝生と開けた空間が広がり、子どもが思いきり走り回れる。園内には写真スポットとして人気の「BE KOBE」モニュメ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/BE_KOBE_20190216.jpg/1280px-BE_KOBE_20190216.jpg"
+    },
+    {
+      "name": "神戸ポートタワー",
+      "area": "神戸市中央区・メリケンパーク",
+      "descHead": "神戸ポートタワーは、メリケンパークに建つ高さ約108mのパイプ構造のタワーで、鼓のようにくびれた赤い外観が神戸港のシンボルになっている。展望フロアからは神戸港、六甲山、市街地が見渡",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kobe_Port_Tower_and_Maritime_Museum%2C_November_2016.jpg/1280px-Kobe_Port_Tower_and_Maritime_Museum%2C_November_2016.jpg"
+    },
+    {
+      "name": "神戸海洋博物館・カワサキワールド",
+      "area": "神戸市中央区・メリケンパーク",
+      "descHead": "神戸海洋博物館は、メリケンパークの白い帆のような屋根が目印の博物館で、神戸港の歴史や船のしくみを、模型や展示でわかりやすく学べる。館内に併設された「カワサキワールド」は、川崎重工業",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kobekaiyohakubutsukan2.JPG/1280px-Kobekaiyohakubutsukan2.JPG"
+    }
+  ]
+}

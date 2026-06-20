@@ -1,0 +1,165 @@
+{
+  "id": "new-chinatown-sightseeing",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "横浜中華街（街歩き）",
+      "imageSubject": "横浜中華街・中華街大通りの賑わい（牌楼が立ち並ぶメインストリートと飲茶・点心店の店先）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__1__1.jpg",
+          "file": "File:1880年頃の横浜中華街.jpg",
+          "desc": "1880年頃撮影の横浜中華街光景",
+          "w": 3587,
+          "h": 2331
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__1__2.jpg",
+          "file": "File:1935年の横浜中華街.jpg",
+          "desc": "1935年撮影の横浜中華街の光景",
+          "w": 3397,
+          "h": 2281
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__1__3.jpg",
+          "file": "File:2022年の横浜中華街 2.jpg",
+          "desc": "2022年の横浜中華街 ",
+          "w": 3024,
+          "h": 4032
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__1__4.jpg",
+          "file": "File:2022年の横浜中華街.jpg",
+          "desc": "2022年の横浜中華街 ",
+          "w": 3024,
+          "h": 4032
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "関帝廟（横浜中華街）",
+      "imageSubject": "横浜中華街・関帝廟の極彩色の外観（関羽を祀る朱と金で装飾された廟建築の正面）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__2__1.jpg",
+          "file": "File:関帝廟、横浜中華街 - panoramio.jpg",
+          "desc": "関帝廟、横浜中華街",
+          "w": 1167,
+          "h": 723
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__2__2.jpg",
+          "file": "File:横浜中華街 関帝廟 - panoramio.jpg",
+          "desc": "横浜中華街 関帝廟",
+          "w": 1920,
+          "h": 1080
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜媽祖廟",
+      "imageSubject": "横浜媽祖廟の朱色の楼門と本殿外観（2006年建立、中華街の航海の女神を祀る廟）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__3__1.jpg",
+          "file": "File:横浜中華街 媽祖廟 - panoramio.jpg",
+          "desc": "横浜中華街 媽祖廟",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__3__2.jpg",
+          "file": "File:横浜中華街 媽祖廟 - panoramio (13).jpg",
+          "desc": "横浜中華街 媽祖廟",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__3__3.jpg",
+          "file": "File:横浜中華街 媽祖廟 媽祖和讃 - panoramio.jpg",
+          "desc": "横浜中華街 媽祖廟 媽祖和讃",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__3__4.jpg",
+          "file": "File:横浜中華街 媽祖廟 - panoramio (5).jpg",
+          "desc": "横浜中華街 媽祖廟",
+          "w": 1920,
+          "h": 1080
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "山下公園（食後の散歩）",
+      "imageSubject": "山下公園から望む横浜港とみなとみらいの眺め（海沿いの臨海公園の遊歩道と芝生）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__4__1.jpg",
+          "file": "File:20250103 San Diego Frendship Fountain, Yamashita Park 114141.jpg",
+          "desc": "Park Yamashita",
+          "w": 4000,
+          "h": 3000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__4__2.jpg",
+          "file": "File:20250103 Yamashita Park 113106.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__4__3.jpg",
+          "file": "File:20250103 Yamashita Park 113248.jpg",
+          "desc": "Park Yamashita",
+          "w": 4080,
+          "h": 3060
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__4__4.jpg",
+          "file": "File:20250103 Yamashita Park 113323.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "元町ショッピングストリート",
+      "imageSubject": "元町ショッピングストリートの街並み（外国人居留地由来の落ち着いた商店通り）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chinatown-sightseeing__5__1.jpg",
+          "file": "File:Saint Patricks Day in Motomachi Yokohama.jpg",
+          "desc": "Saint Patrick's Day in Motomachi street, Yokohama, Japan.",
+          "w": 1440,
+          "h": 960
+        }
+      ]
+    }
+  ]
+}

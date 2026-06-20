@@ -1,0 +1,43 @@
+{
+  "id": "new-ueno-museum",
+  "file": "newGuideFeatures2",
+  "persona": "A",
+  "tag": "観光・博物館",
+  "currentTitle": "上野公園5選。博物館・美術館と花見スポット",
+  "currentSubtitle": "東京国立博物館、上野動物園、不忍池。文化と自然が凝縮した都市公園",
+  "currentLede": "上野公園は国立博物館・国立科学博物館・国立西洋美術館・東京都美術館・上野動物園が1km四方に集まる、日本最大規模の文化・自然複合エリア。1日では到底回りきれない規模なので、「博物館を1〜2館＋動物園か不忍池＋アメ横」というように事前に2〜3軸を決めてから訪れたほうが満足度が高い。桜の名所としても上位で、3月末〜4月上旬は園内が花見客で大変な賑わいになる。ここでは初訪問の人がエリアの全体像を掴みやすい5スポットを、午前から夕方までの時間軸で並べる。",
+  "currentQuote": "上野は博物館・動物園・花見・アメ横が1km以内に揃う、東京で最もコスパの高い観光エリア。",
+  "currentClosing": "標準動線は、JR上野駅公園口→東京国立博物館（9:30〜12:00）→公園内昼食→上野動物園 or 国立科学博物館（13:00〜16:00）→不忍池・弁天堂（16:00〜17:00）→アメ横で夕食（17:00〜19:00）。所要6〜8時間。1日コースが組める珍しいエリアなので、博物館・動物園のどちらか一方を諦めて昼前に着くプランが現実的。「丸一日東京の文化と自然を浴びたい人」「子連れで知的好奇心を刺激したい人」「桜の時期にだけ来たい人」に向く。桜ピーク（3月末〜4月第1週）の週末は園内が大混雑なので、来訪は朝9時前か夕方16時以降にずらすか、平日を選ぶ。雨の日は屋内中心に切り替え、博物館2館＋アメ横で1日を構成すると傘を畳んだまま過ごせる。時間が足りない時は、東京国立博物館だけに絞って常設展を2時間見て帰る方が、5施設を1時間ずつ駆け足で回るより満足度が高い。",
+  "spots": [
+    {
+      "name": "東京国立博物館",
+      "area": "上野",
+      "descHead": "本館・東洋館・平成館・法隆寺宝物館・黒田記念館からなる、日本最大の総合博物館。本館の常設展だけで縄文〜江戸期までの日本美術史が通史で見られ、特別展は年5〜6本のペースで巡る。最大の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "上野動物園",
+      "area": "上野",
+      "descHead": "1882年開園、日本最古の動物園。東園と西園が地下道・モノレール跡通路でつながり、ジャイアントパンダ・ゴリラ・ホッキョクグマ・アムールトラなど代表的な動物がコンパクトに揃う。「半日",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "上野公園・花見エリア",
+      "area": "上野",
+      "descHead": "上野公園のメインストリートには約800本のソメイヨシノが並び、東京を代表する花見スポットになる。3月最終週〜4月第1週がピークで、この期間は夜間ライトアップ・出店・大道芸が出て祭り",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "不忍池・弁天堂",
+      "area": "上野",
+      "descHead": "上野公園の南端に広がる広大な天然池。蓮池・ボート池・鵜の池の3区画に分かれており、夏は蓮の花が水面を埋め尽くす独特の風景になる。中之島には弁天堂（不忍池辯天堂）が建ち、参拝とセット",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "アメ横商店街",
+      "area": "上野",
+      "descHead": "JR上野駅〜御徒町駅間の高架沿いに約400m続く商店街。戦後の闇市が起源で、鮮魚・乾物・スパイス・チョコレート・スニーカー・化粧品まで業種が混在する。観光土産を狙うより、本来は地元",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    }
+  ]
+}

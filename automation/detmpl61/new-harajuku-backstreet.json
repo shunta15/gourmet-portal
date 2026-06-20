@@ -1,0 +1,43 @@
+{
+  "id": "new-harajuku-backstreet",
+  "file": "newGuideFeatures4",
+  "persona": "B",
+  "tag": "ショッピング",
+  "currentTitle": "裏原宿5選。ストリートファッションの発信地を歩く",
+  "currentSubtitle": "キャットストリート、ラフォーレ原宿、明治神宮。ハイブランドとインディーズが交差する原宿の核心へ",
+  "currentLede": "原宿は竹下通りと表参道のメイン通りだけを歩くと「混んだ観光街」で終わるが、一本路地に入ると古着・カフェ・ストリート系セレクトショップが密集する「裏原宿」が広がっている。メインから外れた瞬間に観光客の比率が落ち、地元ファッション関係者と古着ハンターの街に切り替わる。ここでは表参道駅・明治神宮前駅を起点に、人通りの少ない路地を歩いて掘り出し物を探す5スポットを、半日ルートで紹介する。古着・ストリートカルチャー・カフェ・パン屋に興味がある人ほど発見が大きい。",
+  "currentQuote": "ハイブランドの表参道に対して、裏原宿はストリートとインディーズの聖地。「好きなもの」に出会えるのは間違いなく裏原宿側。",
+  "currentClosing": "標準動線は、明治神宮前駅→裏原宿エリア（11:00〜13:00 古着ハント）→キャットストリート（13:00〜14:30 コーヒー＋ストリートブランド）→神宮前4丁目古着街（14:30〜16:00）→青山・表参道（16:00〜17:30 ハイブランド散歩）→表参道のカフェで休憩。所要5〜6時間、予算は古着購入で大きく振れるが食事込みで1人5,000〜10,000円が目安。「古着とストリートカルチャーが好きな人」「観光メインの場所を避けたい人」「表参道のハイブランドと裏原宿の対比を楽しめる人」に向く。土日午後はピーク混雑で店内ゆっくり選べないので、古着が目的なら平日午前または日曜朝が現実的。雨の日は表参道ヒルズ・GYRE・Tokyu Plaza Omotesando Harajuku の屋内モールに切り替えると傘なしで回れる。時間がない場合は、裏原宿（90分）→キャットストリート（60分）の2点で2時間半に圧縮できる。迷ったら、最初に裏原宿で1〜2軒入って好みの古着を見つけ、その路線で次の店を探す、と決めると効率がいい。",
+  "spots": [
+    {
+      "name": "キャットストリート",
+      "area": "原宿",
+      "descHead": "明治神宮前駅から徒歩5分、原宿の代名詞だった裏路地エリア。1990〜2000年代のストリートカルチャー全盛期から残る古着屋・スケーターショップ・カフェが点在する。BAPE（ベイシン",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "ラフォーレ原宿",
+      "area": "原宿",
+      "descHead": "明治通り沿いから1本入った神宮前4丁目周辺は、東京の古着シーンの中心地。アメリカ古着・ヨーロッパ古着・80〜90年代のアーカイブまで、価格帯と専門性が分かれた店が10軒以上密集する",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "明治神宮",
+      "area": "原宿",
+      "descHead": "明治神宮前駅と表参道駅の中間、キャットストリート（旧渋谷川遊歩道）周辺はスペシャルティコーヒーの小箱が並ぶ。ブルーボトルコーヒー青山・% Arabica などの全国チェーンのフラッ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "竹下通り",
+      "area": "原宿",
+      "descHead": "明治通りから表参道方向に伸びる細い遊歩道型の通り。元渋谷川を暗渠化した上にできた歩道で、低層の店舗が両側に並ぶ「歩いて楽しい」設計になっている。アディダスオリジナルス・カルバンクラ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "神宮前エリアの古着屋巡り",
+      "area": "原宿",
+      "descHead": "表参道交差点から青山1丁目方向に伸びる欅並木の高級住宅街・ブランド街。表参道ヒルズ（安藤忠雄設計）・各国ハイブランド路面店・カフェが並ぶ。裏原宿の古着ハンティングの後、青山方面でハ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    }
+  ]
+}

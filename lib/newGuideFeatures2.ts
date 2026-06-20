@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修 2026-06-20）: テキスト/articleTypeを4ペルソナで多様化。スポット・画像は保持。
+// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
 
 export const NEW_GUIDE_FEATURES_2: Feature[] = [
   {
@@ -10,7 +10,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "ASAKUSA DATE",
     "title": "浅草、雷門から川辺まで歩くデートさんぽ",
     "sub": "仲見世の食べ歩き、浅草寺の参道、隅田川の夕景。下町をふたりで地続きに歩く一日",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg/1280px-Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg"
   },
   {
     "id": "new-ueno-museum",
@@ -19,7 +19,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "UENO MUSEUM",
     "title": "上野公園、文化と自然を一日で歩く半日コース",
     "sub": "東京国立博物館から不忍池、アメ横まで。1km四方に博物館・動物園・桜・市場が凝縮する街の歩き方",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg"
   },
   {
     "id": "new-shinjuku-time",
@@ -28,7 +28,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "SHINJUKU TIME",
     "title": "新宿、余った時間を歩く。三つの顔をつなぐさんぽ",
     "sub": "緑の御苑から闇市の路地まで。乗り換えの隙間が、ひとつの街歩きに変わる",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg/1280px-Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg"
   },
   {
     "id": "new-shibuya-harajuku",
@@ -55,7 +55,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "GINZA MARUNOUCHI DATE",
     "title": "銀座から丸の内へ、二人で歩く半日",
     "sub": "GINZA SIXの屋上から二重橋まで。買い物と建築と緑が地続きになる、大人の歩き方",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg"
   },
   {
     "id": "new-roppongi-night",
@@ -82,7 +82,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "TOKYO RAINY DAY",
     "title": "東京、雨だからこそ屋内文化をはしごする一日。博物館とアートで濡れずに過ごす",
     "sub": "上野の博物館から豊洲のデジタルアート、白金台のアールデコ建築まで。傘を畳んだまま深く楽しむ東京の雨天プラン",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg"
   },
   {
     "id": "new-tokyo-family",
@@ -100,7 +100,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "TOKYO FIRST DATE",
     "title": "東京、初デートの半日コース。浅草から夜景まで歩いてつなぐ",
     "sub": "浅草・スカイツリー・お台場・銀座・新宿。表情の違う五つの街を一本の線でつなぐ初デートの設計図",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nakamise%2C_Asakusa.jpg/1280px-Nakamise%2C_Asakusa.jpg"
   },
   {
     "id": "new-ebisu-daikanyama",
@@ -109,7 +109,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "EBISU DAIKANYAMA DATE",
     "title": "恵比寿・代官山、午後から夜までのデート半日コース。坂道とおしゃれカフェをつなぐ",
     "sub": "代官山T-SITEで本を選び、目黒川を歩いて、恵比寿ガーデンプレイスで夜を迎える流れ方",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/1280px-Tsutaya-1.JPG"
   },
   {
     "id": "new-nakameguro-walk",
@@ -118,7 +118,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "NAKAMEGURO WALK",
     "title": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
     "sub": "川沿いを上流へ。高架下、スタバリザーブ、点在する個人店をつないで祐天寺まで",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/202304011628_IMG_5778.jpg/1280px-202304011628_IMG_5778.jpg"
   },
   {
     "id": "new-kichijoji-day",
@@ -127,7 +127,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "KICHIJOJI DAY",
     "title": "吉祥寺を一日歩く。井の頭公園からハモニカ横丁へ",
     "sub": "井の頭恩賜公園、ハモニカ横丁、サンロード。住みたい街の日常を、足の向くまま辿ってみた",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Inokashira_park_pond_2024.jpg/1280px-Inokashira_park_pond_2024.jpg"
   }
 ];
 
@@ -144,7 +144,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg/1280px-Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -155,7 +155,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "食べ歩きしながら仲見世を歩く",
         "desc": "雷門から浅草寺本堂まで約250mの参道が仲見世通り。人形焼・揚げまんじゅう・芋ようかん・きびだんごなど、食べ歩き向きの小さい和菓子が両側に並ぶ。営業はおおむね10時〜18時で、夕方以降は閉店した店も増えるため、買い食いを軸にするなら午後3時前が安全。デートとしては「2人で1つずつ買って分け合う」スタイルが歩きやすく、片手が空くので雷門での記念撮影もしやすい。週末や祝日は雷門前の混雑が激しく、提灯の真下で写真を撮るには10〜20分の順番待ちを覚悟したい。雨の日はアーケード状の屋根があるので、傘を畳めるのが地味に大きい利点。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg/1280px-Kaminarimon_the_Thunder_Gate_by_night_%289412266136%29.jpg"
         ],
         "specs": [
           {
@@ -177,7 +177,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "江戸創建の寺院。本堂と五重塔を参拝",
         "desc": "628年創建とされる東京最古の寺で、雷門〜宝蔵門〜本堂〜五重塔が一列に並ぶ。境内は無料で参拝でき、おみくじ（100円程度）は凶が出ても結ばずに持ち帰る人もいる。本堂の天井絵や、本堂裏手の影向堂・薬師堂など、観光客が立ち止まらない静かな場所がデートでは効く。夕方の鐘が鳴る17時前後は人が一気に減り、ライトアップ後の写真が落ち着いて撮れる時間帯。毎月18日の縁日や、5月の三社祭・7月のほおずき市は半日仕事になる規模なので、混雑を避けたいなら避けるか覚悟して臨む。雨の日は参道のアーケードと本堂の屋根で意外と濡れずに参拝が完結する。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg/1280px-Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg"
         ],
         "specs": [
           {
@@ -199,7 +199,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "川沿い散歩。スカイツリーとアサヒビールタワーが絵になる",
         "desc": "浅草駅東側の吾妻橋を渡ると、隅田川沿いに整備された遊歩道「隅田川テラス」が広がる。対岸にはアサヒビール本社の金の炎オブジェと東京スカイツリーが並び、浅草でしか撮れない構図になる。デートでは仲見世の食べ歩きで満腹になった後、川沿いを30分ほど歩いて消化する使い方が現実的。夕方17〜18時の薄明かりと、夜のスカイツリー点灯時間（公式サイトで確認）が特に絵になる。水上バスは浅草〜お台場・浜離宮便があり、続けてお台場方面に動線をつなぐなら使い勝手がよい。雨天時は欄干の屋根がないので、橋の上の長時間滞在は避けて店内に避難する判断が必要。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Asahi_beer01s3872.jpg/1280px-Asahi_beer01s3872.jpg"
         ],
         "specs": [
           {
@@ -221,7 +221,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "日本最古の遊園地。昭和レトロな雰囲気",
         "desc": "1853年開園、現存する日本最古の遊園地。狭い敷地に絶叫系ではない「昭和レトロな乗り物」が密集する。ローラーコースター・カルーセル・スペースショット・お化け屋敷など、所要15〜30分の小さなアトラクションが中心で、予算を抑えながら「2人で乗って笑う」体験を作りやすい。入園料と乗り物代は別会計の従量制で、フリーパスを買うかチケット制で済ますかは滞在予定時間で決める。雨天時も一部の屋根付きアトラクションが営業するが、運休になる乗り物もあるため、公式サイトで運休情報を確認してから訪れたい。1〜2時間で出ても満足できる規模なので、浅草寺参拝の前後どちらにも組み込みやすい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Asakusa_Hanayashiki_-01.jpg/1280px-Asakusa_Hanayashiki_-01.jpg"
         ],
         "specs": [
           {
@@ -243,7 +243,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "昼から飲める大衆酒場街。浅草らしい締め",
         "desc": "仲見世裏側の馬道通り・伝法院通り・ホッピー通り（公園本通り）は、昼から営業する大衆酒場の集積地。もつ煮込み・牛すじ・焼きとん・ホッピーといった昭和の組み合わせが定番で、デートの「締めの1〜2杯」を1人1,500〜2,500円程度で済ませやすい。店外席のテーブルは賑やかだが、観光客同士の相席になることも多く、静かに話したいなら店内席を狙う。夕方17時頃から混み始め、土日は18時で満席の店が多い。事前予約を受けない店がほとんどなので、ピーク前に入るか、店頭の待ち時間を見て移動する判断が必要。酔った客とのトラブルを避けるため、深夜帯まで残らず最終電車前にいったん引くのが無難。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Koenhondori_shopping_street_asakusa_2014.jpg/1280px-Koenhondori_shopping_street_asakusa_2014.jpg"
         ],
         "specs": [
           {
@@ -285,7 +285,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -296,7 +296,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "日本最大の博物館。国宝・重文を間近で見られる",
         "desc": "本館・東洋館・平成館・法隆寺宝物館・黒田記念館からなる、日本最大の総合博物館。本館の常設展だけで縄文〜江戸期までの日本美術史が通史で見られ、特別展は年5〜6本のペースで巡る。最大の魅力は「いつ行ってもおもしろい」点で、季節の特別陳列や仏像群の入れ替えがあり、リピートしてもネタが尽きない。1〜2時間ではもったいないので、本館だけでも3時間は欲しい。雨の日や猛暑日の屋内避難先としても上位。入場料・特別展料金は変動するので、訪問前に公式サイトで確認し、混雑を避けるなら平日午前を狙う。庭園公開期間（春と秋）は本館裏の池と茶室が解放され、博物館とは別の静かな散策が楽しめる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg"
         ],
         "specs": [
           {
@@ -366,7 +366,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "蓮の花と弁天堂。都心の湖畔散歩",
         "desc": "上野公園の南端に広がる広大な天然池。蓮池・ボート池・鵜の池の3区画に分かれており、夏は蓮の花が水面を埋め尽くす独特の風景になる。中之島には弁天堂（不忍池辯天堂）が建ち、参拝とセットで一周30分の散歩コースが組める。ボート池では足漕ぎボート・手漕ぎボート・スワンボートが利用でき、デートの定番。営業時間は季節変動があり、最終受付は閉園1時間前。池の周囲は歩道が広く整備されているので雨の日でも歩きやすいが、ボートは雨天時運休になりやすい。JR上野駅・京成上野駅・湯島駅の3駅から徒歩圏で、博物館エリアから動物園を経由して締めに使う動線が自然。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Shinobazu-no-ike_Benten-d%C5%8D%2C_Kan%27eiji_08.jpg/1280px-Shinobazu-no-ike_Benten-d%C5%8D%2C_Kan%27eiji_08.jpg"
         ],
         "specs": [
           {
@@ -388,7 +388,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "戦後闇市の面影が残る活気ある商店街",
         "desc": "JR上野駅〜御徒町駅間の高架沿いに約400m続く商店街。戦後の闇市が起源で、鮮魚・乾物・スパイス・チョコレート・スニーカー・化粧品まで業種が混在する。観光土産を狙うより、本来は地元の生活市場として機能している場で、年末の魚介類セールが特に有名。立ち食い系の海鮮丼・串焼き・タイ料理・トルコ料理など、本格的なエスニックの小箱が増えているので、博物館・動物園で疲れた後の夕食候補としても優秀。通路は狭く、傘を差すと進めない混雑になる時間帯があるため、雨の日は高架下や店内に避難するのが現実的。御徒町駅側に抜けると秋葉原方面へも徒歩で動線がつながる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ameya-Yokoch%C5%8D_Entrance.jpg/1280px-Ameya-Yokoch%C5%8D_Entrance.jpg"
         ],
         "specs": [
           {
@@ -430,7 +430,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg/1280px-Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -441,7 +441,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "広大な都市公園。春の桜と温室が人気",
         "desc": "新宿駅から徒歩10〜15分、58haの広大な国民公園で、フランス式・イギリス式・日本庭園の3様式を1日で歩ける。桜の名所として有名だが、初夏のバラ・秋の紅葉・冬の温室と通年で「見るもの」がある。温室はバナナ・ハイビスカス・食虫植物まで揃い、雨の日や猛暑日の屋内避難先としても優秀。入園料は大人500円前後（公式サイトで確認）、入園は閉園1時間前まで。新宿三丁目駅から行く場合は伊勢丹側からアクセスしやすく、新宿御苑前駅からなら大木戸門が最寄り。アルコール持込・遊具・ペット入園は禁止で、ピクニックは静かに楽しむ前提のルールを把握しておきたい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg/1280px-Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building%2C_Tokyo%2C_Japan.jpg"
         ],
         "specs": [
           {
@@ -485,7 +485,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "南口直結の大型百貨店＆商業施設",
         "desc": "新宿駅新南改札直結の商業ビル群。高島屋・紀伊國屋書店新宿南店・ハンズ新宿が同じビルに入り、雨の日の時間つぶしとして都内屈指の総合力を持つ。紀伊國屋書店は8フロア構成で、洋書・専門書・雑誌のラインナップが新宿エリアでは最大級。高島屋のデパ地下は19〜20時に閉店間際の値引きが出ることもあり、夕食調達に向く。建物内の通路でJR新宿駅・新宿三丁目駅と連絡しているため、雨天時に傘を畳んだままアクセスできる動線が組める。営業時間は店舗により異なるが、おおむね10時〜21時。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Takashimaya-Times-Square.jpg/1280px-Takashimaya-Times-Square.jpg"
         ],
         "specs": [
           {
@@ -511,7 +511,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "西口の高層ビル群を背景にした都市公園",
         "desc": "西新宿の超高層ビル群の足元に広がる都市公園。芝生広場・噴水・野外ステージ・熊野神社が混在し、ビジネスマンの昼食休憩から、夕方のジョギング、夜のライトアップ撮影まで時間帯ごとに表情が変わる。新宿駅西口から徒歩10分、都庁前駅から徒歩5分の位置で、都庁展望台と組み合わせて半日コースが組める。都庁展望台は無料で南北どちらかが開いており、所要1時間。雨の日は屋内に避難できる選択肢として優秀。公園内のSHUKNOVAは飲食店・キッズスペースが入る複合施設で、子連れにも使いやすい。夜は街灯が少ない区画があるため、女性1人の深夜利用は中央通路から外れないほうが安全。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shinjuku_Central_Park_4.jpg/1280px-Shinjuku_Central_Park_4.jpg"
         ],
         "specs": [
           {
@@ -533,7 +533,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "新宿西口の戦後ヤミ市横丁。昭和の雰囲気",
         "desc": "新宿駅西口ガード下に残る、戦後闇市の名残をそのまま継ぐ路地。もつ焼き・焼鳥・ラーメン・小料理の小箱が80軒ほど密集し、1人1,500〜2,500円で2軒はしごできる価格帯。席数2〜10席の極小店が中心で、相席・回転重視・短時間滞在が前提。土日18時以降や金曜の夕方は満席・行列になりやすく、開店直後の17時前後に入るとスムーズ。観光地化が進んでいるが、地元客向けの店も多く、店頭の客層と料金表示を見て判断する。深夜帯は酔客同士のトラブルがゼロではないので、長居せず終電前に切り上げるのが無難。JR新宿駅西口から徒歩30秒という究極の駅近で、乗り換えの待ち時間1時間にも使える。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku-West_Omoide-Yokocho.jpg/1280px-Shinjuku-West_Omoide-Yokocho.jpg"
         ],
         "specs": [
           {
@@ -608,7 +608,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "都内の森。初詣参拝者数日本一の神社",
         "desc": "原宿駅と代々木公園の間に広がる約70万㎡の鎮守の森。1920年創建の人工林だが、今はネイティブな雑木林として確立した静謐な空間が広がる。南参道→大鳥居→本殿で約15分、参拝後に御苑（500円程度）に寄ると四季の花と清正井（きよまさのいど）が楽しめる。正月三が日の初詣は全国1位の参拝者数なので避けるか覚悟して訪れる。本殿の祈祷時間と参拝順序、御朱印の受付時間は公式サイトで確認するのが安全。渋谷の喧騒を1ブロック歩くだけで切り替えられる「東京のリセット装置」として2人デートに効く場所。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Meiji-jing%C5%AB_grand_torii_d%27entr%C3%A9e.jpg/1280px-Meiji-jing%C5%AB_grand_torii_d%27entr%C3%A9e.jpg"
         ],
         "specs": [
           {
@@ -630,7 +630,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "広い芝生でのんびり。東京最大の都市公園のひとつ",
         "desc": "明治神宮に隣接する約54haの都市公園。ピクニックエリア・サイクリングロード・野外ステージ・噴水広場と分散しており、休日は芝生にレジャーシートを敷く家族・カップル・大学生で賑わう。桜の時期は花見スポット、夏は屋外イベントの会場、秋はイチョウ並木の紅葉と季節ごとに表情が変わる。明治神宮参拝の後、芝生で30分〜1時間休む使い方が体力的にちょうどよい。夜は街灯が少ない区画があり、深夜の女性1人歩きは避けたほうが安全。原宿駅から徒歩5分、参宮橋駅・代々木公園駅から徒歩3分と複数の駅からアクセスできる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Yoyogi_Park_%40_Tokyo_%2813406878405%29.jpg/1280px-Yoyogi_Park_%40_Tokyo_%2813406878405%29.jpg"
         ],
         "specs": [
           {
@@ -652,7 +652,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "若者カルチャーの発信地。クレープ・古着・コスプレ",
         "desc": "原宿駅の真正面、約350mの若者向けショッピングストリート。クレープ・タピオカ・チーズハットグなど食べ歩きフードが両側に並び、ロリータファッション・古着屋・アクセサリー店が密集する。外国人観光客の比率が高く、平日でも14〜17時はピーク混雑になる。食べ歩きを軸にするなら開店直後の11時前後が空いている。通りの真ん中で立ち止まると人波が止まるので、店頭で買って端に寄って食べるのがマナー。竹下通りの北東端は明治神宮前駅、南西端はJR原宿駅に直結し、表参道方面へは徒歩で繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Japan_Tokyo_Takeshita_street_at_summer_-_%E6%9D%B1%E4%BA%AC%E7%AB%B9%E4%B8%8B.jpg/1280px-Japan_Tokyo_Takeshita_street_at_summer_-_%E6%9D%B1%E4%BA%AC%E7%AB%B9%E4%B8%8B.jpg"
         ],
         "specs": [
           {
@@ -674,7 +674,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "欅並木とハイブランドが続く東京一おしゃれな通り",
         "desc": "明治神宮前駅から青山1丁目方向に約1.1km続く欅並木の大通り。両側にハイブランドの路面店・カフェ・ギャラリーが並び、表参道ヒルズ（安藤忠雄設計）が中央のランドマーク。11月末〜12月のシャンパンゴールドのイルミネーションは都内屈指の規模で、夕方17時前後の点灯時間は通り全体が金色に染まる。夜になると人波が減り、写真撮影と店舗ウィンドウ鑑賞に向いた時間帯になる。青山1丁目側まで歩くと根津美術館・岡本太郎記念館などの文化施設に動線が繋がる。原宿側からの逆コースで歩くと、最後を青山のレストランでディナーとして締められる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/%E8%A1%A8%E5%8F%82%E9%81%93%E3%83%92%E3%83%AB%E3%82%BA_-_panoramio.jpg/1280px-%E8%A1%A8%E5%8F%82%E9%81%93%E3%83%92%E3%83%AB%E3%82%BA_-_panoramio.jpg"
         ],
         "specs": [
           {
@@ -753,7 +753,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "スカイツリー足元の商業施設。300店舗以上",
         "desc": "スカイツリーの足元に広がる、地下〜31階の大型商業施設。約300店舗の飲食・物販・体験が積層しており、展望台の前後・雨の日の時間つぶし・土産の調達まで1棟で完結する。1階の「ソラマチ商店街」は江戸下町をモチーフにしたレトロ通りで、和雑貨・和菓子が中心。30〜31階のレストランフロアはスカイツリーを近接で見ながら食事ができる景色重視の店が多く、夜景目当ての予約が取りやすい。館内にプラネタリウム「天空」・郵政博物館・すみだ水族館が同居するため、悪天候時の組み合わせに強い。営業時間は店舗による（おおむね10〜21時）。土日昼のフードコートは満席率が高いので時間をずらすのが現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tokyo_Soramachi_2012.JPG/1280px-Tokyo_Soramachi_2012.JPG"
         ],
         "specs": [
           {
@@ -779,7 +779,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "スカイツリー内の都市型水族館。クラゲが人気",
         "desc": "ソラマチ5〜6階に位置する、屋内型の都市型水族館。クラゲ・チンアナゴ・ペンギン・金魚を「展示」より「鑑賞空間」として見せる設計で、薄暗い館内で水槽を見上げるレイアウトはデートにも向く。ペンギンプールは飼育員の解説タイムが日に数回あり、子連れにも楽しい。館内は順路が固定されていないので、混んでいる区画を後回しにできるのが利点。所要は1〜1.5時間で、ソラマチ・展望台と組み合わせやすい時間設計。夕方以降は混雑が落ち着くので、雨の日の午後〜夕方が最も快適に見られる時間帯。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sumida-Aquarium-1.jpg/1280px-Sumida-Aquarium-1.jpg"
         ],
         "specs": [
           {
@@ -805,7 +805,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "橋の上からスカイツリーを正面に見る無料スポット",
         "desc": "スカイツリーの北側、北十間川にかかる十間橋は、橋上から塔と「水面に映る逆さスカイツリー」が同時に撮れる無料の絶景スポット。本格的に撮影する場合は風のない朝・夕の薄明時間が望ましく、夜のライトアップ点灯時も人気。押上（スカイツリー前）駅から徒歩7分、とうきょうスカイツリー駅から徒歩8分、生活道路なので静かに歩ける。三脚を使う本格カメラマンが日に数人立つが、スマホ撮影でも十分絵になる。周辺は住宅地のため、深夜の大声・路上飲酒は避け、観光地としてのマナーを守って利用したい。雨の日は欄干に屋根がなく濡れるので滞在は短時間に切り上げる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Kitajikken_gawa_Tokyo_Skytree_20150716.jpg/1280px-Kitajikken_gawa_Tokyo_Skytree_20150716.jpg"
         ],
         "specs": [
           {
@@ -869,7 +869,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -880,7 +880,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "銀座最大の商業施設。屋上庭園と地下食料品売り場",
         "desc": "銀座6丁目にある、銀座最大規模の複合商業施設。241店舗が入居し、屋上に無料の日本庭園と展望デッキを持つ。1階のフラッグシップ・地下2階のデパ地下・観世能楽堂・蔦屋書店銀座が同居する構造で、ショッピングだけでなく文化体験まで1棟で完結する設計が強み。屋上庭園は銀座中央通りを見下ろせる無料スポットとして、デートで気軽に立ち寄れる。蔦屋書店銀座は美術書・建築書・アートグッズが充実し、本好きの2人なら30分以上滞在できる。営業時間は10:30〜20:30、レストランは〜23時。土日の14〜17時はピーク混雑のため、開店直後または夕方以降が落ち着く。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg"
         ],
         "specs": [
           {
@@ -906,7 +906,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "都心の緑。富士山が見える日本最大の公園",
         "desc": "皇居の南東側を取り囲む外苑エリアは、皇居前広場・二重橋・桔梗門が無料で開放されている。二重橋は皇居の正門石橋と奥の鉄橋が連なる景観で、東京中心部とは思えない静けさが広がる。丸の内側の和田倉門・大手門から入ると皇居東御苑（江戸城本丸跡）に続き、こちらも無料で散策できる。皇居外苑は早朝の散歩・ジョギングコースとしても有名で、ランナーが多い時間帯は歩道の通行に気をつけたい。雨の日は屋根がないので長時間滞在には向かないが、皇居前広場の松並木は雨天時の構図としても絵になる。皇居東御苑の開園日・閉園日は宮内庁公式サイトで事前確認するのが安全。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%E4%BA%8C%E9%87%8D%E6%A9%8B_%28Nijubashi_Bridge_at_the_Palace%29_%288342653710%29.jpg/1280px-%E4%BA%8C%E9%87%8D%E6%A9%8B_%28Nijubashi_Bridge_at_the_Palace%29_%288342653710%29.jpg"
         ],
         "specs": [
           {
@@ -928,7 +928,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "欅並木のおしゃれな通り。週末は歩行者天国",
         "desc": "東京駅丸の内側から有楽町方向へ続く約1.2kmのストリート。高級ブランド路面店・カフェ・レストラン・ギャラリーが両側に並び、ケヤキの街路樹が四季を演出する。週末は車両通行止めになり、テーブル席が通りに出る「アーバンテラス」イベントが定期開催される。11月末〜2月のシャンパンゴールドのイルミネーションは都内屈指の規模で、夕方〜夜の散歩が特に絵になる。丸の内ブリックスクエア・新丸ビル・KITTEなどの商業施設が交差する区画は、雨の日の屋内避難先としても使いやすい。通り沿いには三菱一号館美術館もあり、近代洋画の企画展を見るために組み込む選択肢もある。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Empty_street_during_the_coronavirus_pandemic_in_Marunouchi_Nakad%C5%8Dri_Street_Chiyoda_Tokyo_Japan_20200405_121643.jpg/1280px-Empty_street_during_the_coronavirus_pandemic_in_Marunouchi_Nakad%C5%8Dri_Street_Chiyoda_Tokyo_Japan_20200405_121643.jpg"
         ],
         "specs": [
           {
@@ -950,7 +950,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "辰野金吾設計の赤煉瓦駅舎。国指定重要文化財",
         "desc": "1914年竣工、辰野金吾設計のネオバロック様式赤煉瓦駅舎。2012年に創建当時の姿に復元され、南北のドーム屋根が現代に蘇った。国指定重要文化財。外観は無料で見学でき、夜間のライトアップ点灯時の構図が特に有名。丸の内駅舎正面の駅前広場（行幸通り）の中央線から見上げる構図が王道で、皇居方向に向かって伸びる直線が美しい。駅舎南北のドーム内部は通り抜け自由で、天井の干支のレリーフが見上げ撮影の定番。東京ステーションギャラリーはドーム内に併設された美術館で、企画展を見るために組み込めば雨の日の屋内コースに変わる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%E6%9D%B1%E4%BA%AC%E9%A7%85%E4%B8%B8%E3%81%AE%E5%86%85%E5%8F%A3%E9%A7%85%E8%88%8E_Tokyo_station_2015.1.04_-_panoramio.jpg/1280px-%E6%9D%B1%E4%BA%AC%E9%A7%85%E4%B8%B8%E3%81%AE%E5%86%85%E5%8F%A3%E9%A7%85%E8%88%8E_Tokyo_station_2015.1.04_-_panoramio.jpg"
         ],
         "specs": [
           {
@@ -972,7 +972,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "銀座の老舗百貨店。高品質なデパ地下と催事",
         "desc": "中央通り銀座4丁目交差点を挟んで向かい合う老舗百貨店。三越のライオン像・松屋のショーウィンドウは銀座の象徴で、入店せず外観だけ見て歩いても楽しい。デパ地下のスイーツ・惣菜・食料品フロアは銀座エリアでも上位の充実度で、デートの手土産調達に向く。催事フロアでは物産展・絵画展・伝統工芸展が頻繁に開催され、入場無料の展示も多い。営業時間はおおむね10〜20時で、レストランフロアは21〜22時まで延長される。土日の中央通りは歩行者天国になる時間帯があり（時間は季節で変動・公式で確認）、車を気にせず横断できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2019_Ginza_Mitsukoshi.jpg/1280px-2019_Ginza_Mitsukoshi.jpg"
         ],
         "specs": [
           {
@@ -1051,7 +1051,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京の象徴。333mの赤い鉄塔",
         "desc": "1958年竣工、高さ333mの電波塔。メインデッキ（150m）とトップデッキ（250m）の2層構造で、料金体系は変動するため公式サイトで確認。スカイツリーより小ぶりだが、首都高と都心ビル群を間近で見下ろす構図はスカイツリーから望むものとは別物の迫力がある。ライトアップは季節ごとに色が変わり、夏・冬・特別期で印象が違う。六本木ヒルズから徒歩20分で到達でき、麻布台ヒルズ・増上寺を経由する散歩動線として組みやすい。最寄りは赤羽橋駅徒歩5分、神谷町駅から徒歩10分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tokyo_Tower%2C_Minato_City.jpg/1280px-Tokyo_Tower%2C_Minato_City.jpg"
         ],
         "specs": [
           {
@@ -1073,7 +1073,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "2023年開業の新名所。低層緑化と高層タワーの融合",
         "desc": "2023年11月開業、330mの森JPタワーを核とする再開発エリア。商業・住宅・チームラボ常設施設「Forest of Resonating Lamps」・高級ホテルJanu Tokyo / Aman Residences が入居する複合街区。中央広場の緑化・水盤・夜間のライトアップが美しく、入場無料で散歩できるエリアが広い。森JPタワー最上階に展望施設「東京ビュー」もあるが、入場予約と料金は公式サイトで要確認。六本木ヒルズと東京タワーの動線の中間に位置するため、3点回遊の「中継地」として2人で立ち止まる時間が作りやすい。最寄りは神谷町駅徒歩5分、六本木一丁目駅から徒歩3分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg/1280px-%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA.jpg"
         ],
         "specs": [
           {
@@ -1117,7 +1117,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "建築自体が美しい。夜の外観ライトアップも見もの",
         "desc": "2007年開業、黒川紀章設計の波打つガラスファサードが特徴の国立美術館。常設展は持たず、年5〜6本の大型企画展が並走する。館内のミュージアムショップとカフェは入場無料で立ち寄れ、夜間（おおむね20時まで開館の日もある）の建築外観ライトアップは美術館単体で見る価値がある。六本木ヒルズから徒歩7分、東京メトロ乃木坂駅直結。夜景デートの締めに、屋内のアート鑑賞でクールダウンする選択肢として使いやすい。六本木の夜景ハシゴで疲れたタイミングに、座って美術書を眺める時間として価値がある。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/National_Art_Center_Tokyo_2008.jpg/1280px-National_Art_Center_Tokyo_2008.jpg"
         ],
         "specs": [
           {
@@ -1191,7 +1191,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東西対面の大型百貨店。日本有数の売り場面積",
         "desc": "JR池袋駅の東口に西武・西口に東武が向かい合う構造は、池袋ならではの景観。西武池袋本店は本館・別館・書籍館（リブロ）の複合構造で、デパ地下は東京でも有数の規模。東武百貨店池袋店も本館・プラザ館・スパイス館の3館体制で、レストラン街「スパイス」は20店舗以上。両店ともJR・西武・東武・地下鉄の駅と直結し、雨の日に傘を差さずに移動できるのが副都心ターミナルらしい強み。営業時間はおおむね10〜21時（レストランは〜22時）。デパ地下の閉店30分前は値引きが出やすく、夕食調達に組み込むと現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tobu-dept_ikebukuro.JPG/1280px-Tobu-dept_ikebukuro.JPG"
         ],
         "specs": [
           {
@@ -1217,7 +1217,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "広場型公園。ライブ・イベントの発信地",
         "desc": "池袋駅西口直結の広場公園で、石田衣良の小説『池袋ウエストゲートパーク』の舞台。中央に円形シアター「グローバルリング」があり、無料イベント・路上ライブ・大道芸が定期開催される。周辺は東京芸術劇場が隣接し、クラシック・演劇・展覧会の拠点として文化的な顔も持つ。夕方〜夜のライトアップが美しく、待ち合わせや軽く休憩する場として機能する。週末はイベントで混雑することがあり、静かに過ごしたいなら平日午後が落ち着く。西口側はホテル・飲み屋街が密集する区画もあり、深夜の女性1人歩きは中央通路を外れない判断が必要。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ikebukuro-Tokyo---2024-06_020.jpg/1280px-Ikebukuro-Tokyo---2024-06_020.jpg"
         ],
         "specs": [
           {
@@ -1239,7 +1239,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "腐女子・アニメファンの聖地商店街",
         "desc": "池袋東口・東池袋4丁目周辺に広がる、女性向けアニメ・漫画・同人グッズの商店街。アニメイト池袋本店・らしんばん池袋・K-BOOKSなどの大型店が密集し、BL・乙女ゲーム・声優グッズの品揃えでは日本最大級。秋葉原の「男性向け」と対をなす「女性向け」オタクカルチャーの中心地として知られ、コスプレイベントや声優イベントが頻繁に開催される。観光客的に1時間ほど歩くだけでも、アニメ・コミック文化の最新動向が体感できる。営業時間は店舗による（おおむね11〜20時）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Animate_Ikebukuro_20120613_2.jpg/1280px-Animate_Ikebukuro_20120613_2.jpg"
         ],
         "specs": [
           {
@@ -1261,7 +1261,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "旧としまえん跡地の天然温泉施設",
         "desc": "2020年に閉園した遊園地「としまえん」跡地の一部を活用した日帰り温泉施設「庭の湯」。天然温泉・サウナ・岩盤浴・露天風呂が揃い、池袋から西武池袋線で約10分という都心立地が魅力。「としまえん」跡地は2023年にワーナー ブラザース スタジオツアー東京 - メイキング・オブ・ハリー・ポッターも開業しており、施設の前後を組み合わせると1日コースが組める。庭の湯の料金・営業時間は変動するため、訪問前に公式サイトで確認。豊島園駅からは庭の湯・スタジオツアーともに徒歩2分の駅近で、雨の日でも傘を差さずに到達できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Toshimaen_Niwa-no-yu.JPG/1280px-Toshimaen_Niwa-no-yu.JPG"
         ],
         "specs": [
           {
@@ -1307,7 +1307,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1318,7 +1318,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "国宝・重文が揃う日本最大の博物館。雨の日は静かで見やすい",
         "desc": "上野公園内、日本最大の総合博物館。本館・東洋館・平成館・法隆寺宝物館・黒田記念館の5棟が建ち並び、晴天時の上野公園は花見客で混雑するが、雨の日は来館者が減り、本館の常設展をゆっくり鑑賞できる。国宝・重要文化財を含む11万件超の収蔵品が日替わりで陳列され、年5〜6本の特別展も並走する。本館の常設展だけで縄文〜江戸期までの日本美術史を通史で見られるため、初訪問でも満足度が高い。上野駅・鶯谷駅から徒歩10分前後で、地下道や園内アーケードを活用すれば傘の出し入れを最小化できる。閉館は17時（金土は21時まで延長期間あり）、特別展料金は変動するので公式サイトで確認。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg"
         ],
         "specs": [
           {
@@ -1344,7 +1344,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "足を浸ける没入型アート体験",
         "desc": "豊洲駅から徒歩10分、水に足を入れながら歩く没入型デジタルアート施設。床・壁・天井すべてが映像と鏡で構成された複数のインスタレーションを順路で歩き、1施設で40〜60分の体験になる。全身が映像に包まれる演出のため、雨天時の屋内娯楽として完全に「外の天気を忘れられる」強さがある。事前予約・日時指定制で、当日券はほぼ取れない。料金は公式サイトで確認。床に水を張った作品があるため、短パン・スカートでの入場が推奨される（短パン貸出あり）。豊洲駅と直結ではないが、ゆりかもめ・東京メトロ有楽町線の駅から雨でも歩ける距離。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/The_glistening_balls.jpg/1280px-The_glistening_balls.jpg"
         ],
         "specs": [
           {
@@ -1370,7 +1370,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "旧朝香宮邸のアールデコ建築が美しい",
         "desc": "1933年竣工、旧朝香宮邸を改装した美術館。建物自体がアールデコ建築の傑作で、ルネ・ラリックのシャンデリア、アンリ・ラパンの装飾、内装の意匠を建物のまま見られる。本館では年4〜5本の企画展が開催され、写真・装飾美術・現代美術と幅広いテーマを扱う。目黒駅から徒歩6分、首都高沿いの広大な緑地に囲まれた静かな立地で、雨の日は来場者が減り、室内装飾を独り占めできる感覚になる。庭園部分は雨天時も歩け、苔と石畳の色が雨で深まる「雨の日にこそ映える庭」として知られる。入場料・休館日は公式サイトで確認。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Tokyo_Metropolitan_Teien_Art_Museum_P7310853.jpg/1280px-Tokyo_Metropolitan_Teien_Art_Museum_P7310853.jpg"
         ],
         "specs": [
           {
@@ -1422,7 +1422,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "雨の日の時間つぶし最強格。大型書店併設",
         "desc": "新宿駅新南改札直結の商業ビル群。高島屋・紀伊國屋書店新宿南店・ハンズ新宿が同じビルに同居し、雨の日の総合避難先として都内屈指の規模を誇る。紀伊國屋書店新宿南店は8フロア構成、洋書・専門書・雑誌のラインナップは新宿エリア最大級で、1冊立ち読みするだけで雨が止む規模の蔵書がある。高島屋12〜13階のレストラン街は20店舗以上で、雨天時の夕食難民を吸収する許容量がある。JR新宿駅新南改札からビル内に直接入れるため、傘を畳んだまま到達できる。営業時間は店舗による（おおむね10〜21時）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Sazanterasu.jpg/1280px-Sazanterasu.jpg"
         ],
         "specs": [
           {
@@ -1523,7 +1523,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京湾に面した大型公園。世界最大級の回遊水槽",
         "desc": "東京湾に面した広大な公園で、葛西臨海水族園・大観覧車・芝生広場・渚エリアが揃う。水族園のマグロが回遊する大水槽は世界最大級で、ペンギン・サメ・東京湾の魚類を1〜2時間で見られる。公園部分は無料で広大な芝生があり、ピクニック・サイクリング・夏は水遊びまで楽しめる。JR葛西臨海公園駅から徒歩1分の駅近で、改札を出ると目の前に水族園と観覧車の景観が広がる。週末の昼食ピーク時は園内レストランが混雑するので、駅前のコンビニ・お弁当を持参するのも現実的。雨の日は水族園で2〜3時間過ごせるが、屋外部分は濡れるので天気予報を見てから訪問計画を立てたい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tokyo_See_Life_Park_01.jpg/1280px-Tokyo_See_Life_Park_01.jpg"
         ],
         "specs": [
           {
@@ -1545,7 +1545,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京近郊最大の遊園地。プールと絶叫ライドが揃う",
         "desc": "東京都稲城市と神奈川県川崎市にまたがる本格的な遊園地。絶叫系のジェットコースター・子ども向けの小型ライド・夏季営業の屋外プール「WAI」が揃い、1日かけて楽しめる規模。新宿・渋谷から京王線または小田急線で30〜40分のアクセスで、京王よみうりランド駅からスカイシャトル（ゴンドラ）で園内入り。冬季のイルミネーション「ジュエルミネーション」は関東最大級の規模で、夜の家族デートに向く。入園料・乗り物料金は公式サイトで確認、フリーパスを使うか個別チケット制で済ますかは滞在時間で判断。土日祝の昼〜夕方は絶叫系アトラクションが30〜90分待ちになるため、開園直後の入園が現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E3%82%88%E3%81%BF%E3%81%86%E3%82%8A%E3%83%A9%E3%83%B3%E3%83%89_-_panoramio.jpg/1280px-%E3%82%88%E3%81%BF%E3%81%86%E3%82%8A%E3%83%A9%E3%83%B3%E3%83%89_-_panoramio.jpg"
         ],
         "specs": [
           {
@@ -1567,7 +1567,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "水の仕組みを体験できる無料施設",
         "desc": "ゆりかもめ・有明テニスの森駅から徒歩3分、東京都水道局が運営する無料の体験型科学館。水道水ができる仕組み・水循環・浄水場の役割を、模型・ゲーム・映像・体験ブースで学べる。対象は小学校低学年〜中学年が中心だが、大人も「都市の水インフラ」の解説として興味深い。完全屋内で、雨の日の時間つぶしとしても優秀。入場無料は子連れにとって地味に大きい利点。営業時間は9:30〜17:00、月曜休館（祝日の場合は翌日）。有明エリアは東京ビッグサイト・チームラボ・水の広場公園と組み合わせて1日コースが組めるため、湾岸エリアでの家族おでかけの起点にもなる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tokyo_Water_Science_Museum_%2849017%29.jpg/1280px-Tokyo_Water_Science_Museum_%2849017%29.jpg"
         ],
         "specs": [
           {
@@ -1613,7 +1613,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nakamise%2C_Asakusa.jpg/1280px-Nakamise%2C_Asakusa.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1624,7 +1624,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京のスタートは浅草が定番。食べ歩きしながら参拝",
         "desc": "雷門から仲見世通り・浅草寺・隅田川テラスまで徒歩圏で連なる、東京で最も「東京らしさ」が伝わる下町スポット。食べ歩き（人形焼・揚げまんじゅう・芋ようかんなど）と参拝、川沿い散歩を組み合わせて1〜1.5時間で完結する。週末14〜16時は雷門前の混雑がピークなので、平日または午前9〜11時のほうが写真と動線が確保しやすい。次のスカイツリー方向へは徒歩15分、または銀座線→押上駅で5分。デートの「掴み」として、食べ歩きで自然に2人の距離が縮まる点で最初に配置すると効きやすい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nakamise%2C_Asakusa.jpg/1280px-Nakamise%2C_Asakusa.jpg"
         ],
         "specs": [
           {
@@ -1668,7 +1668,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "レインボーブリッジと東京タワーが同時に見える海岸",
         "desc": "ゆりかもめ「お台場海浜公園駅」から徒歩3分、東京湾に面した広大な海浜公園。レインボーブリッジ・東京タワー・東京ベイの夜景が一度に視界に入る構図で、初デートの「決定的瞬間」として組み込みやすいロケーション。日没後30分が最も美しく、平日でも19時頃は数組のカップルが定位置で写真を撮っている。アクアシティお台場・デックス東京ビーチがすぐ隣で、雨天時は屋内へ避難できる。次の銀座へはゆりかもめ→新橋→銀座線で20分強。海風が強い日は防寒対策が必要。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Evening_Tokyo_Bay_from_Aquacity_Odaiba_2.jpg/1280px-Evening_Tokyo_Bay_from_Aquacity_Odaiba_2.jpg"
         ],
         "specs": [
           {
@@ -1690,7 +1690,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "都内で最も格のある食事場所のひとつ",
         "desc": "GINZA SIXは2017年開業、銀座最大規模の複合施設。13階のレストラン街は和洋中・寿司・天ぷらと多様で、初デートのディナーに使いやすい価格帯から高級店まで幅広い。屋上の無料庭園「GINZA SIX ガーデン」も写真スポットとして優秀。土日のディナー時間帯は予約推奨。多くの店が17〜19時の早めの時間と21時以降が空いている。周辺には松屋・三越のデパ地下があり、手土産調達の動線にも繋がる。次の新宿への移動は丸ノ内線または銀座線で15分弱、終電を意識する場合は移動時間を逆算しておく。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg"
         ],
         "specs": [
           {
@@ -1712,7 +1712,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "夜の締めは新宿の多彩なバーで",
         "desc": "都営大江戸線・JR・小田急・京王の4線が集まる新宿駅は終電帯の利便性が高く、初デートの「締めの一杯」を入れやすい。ゴールデン街の小箱・歌舞伎町タワー上層のホテルバー・新宿三丁目の落ち着いた個室バーなど、選択肢が広い。1人1,500〜3,000円程度のバー1軒で1時間ほど。深夜帯の歌舞伎町中央通りは強引な客引きが出ることがあるので、声をかけられても付いていかず、料金表示のある店を選んで入る。新宿駅西口・東口・南口で帰路の電車が違うので、デートの締めには相手の帰りの路線方向に近い店を選ぶ気配りが効く。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Kabukicho_%2852646669114%29.jpg/1280px-Kabukicho_%2852646669114%29.jpg"
         ],
         "specs": [
           {
@@ -1749,7 +1749,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/1280px-Tsutaya-1.JPG",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1760,7 +1760,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "蔦屋書店の旗艦店。本・音楽・映像が一体",
         "desc": "代官山駅から徒歩5分、3棟構成の蔦屋書店を中心とした文化複合施設。アート・建築・料理・旅・文学のセレクトが極めて高感度で、書店としての専門性が高い。館内にスターバックスが併設されており、本を持ち込んで席で読みながらコーヒーを楽しむスタイルが定着している。営業時間は7:00〜26:00（深夜2時）と長く、朝の打ち合わせから深夜の読書まで使い分けられる。週末の14〜17時は席が埋まりやすく、デートで使うなら開店直後の午前か、夕方以降の夜帯が落ち着く。雨の日でも蔦屋〜ログロード代官山〜代官山駅は屋根のある通路で繋がり、傘を畳んだまま動きやすい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tsutaya-1.JPG/1280px-Tsutaya-1.JPG"
         ],
         "specs": [
           {
@@ -1786,7 +1786,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "旧ヱビスビール工場跡地。レストランと美術館",
         "desc": "1994年開業、旧サッポロビール工場跡地を再開発した大型複合施設。恵比寿ガーデンプレイスタワー・三越・ヱビスビール記念館・東京都写真美術館・ウェスティンホテル東京が一つの広場を囲む。中央広場のバカラシャンデリア（毎年11〜1月設置）は日本国内では珍しい本物のバカラのクリスタルで、クリスマス〜年末のデート定番になっている。写真美術館は写真・映像作品の専門展示館で、企画展は年5〜6本。雨の日は地下のスカイウォーク（恵比寿駅からの動く歩道）で傘を差さずに到達できる。営業時間は店舗による、レストラン街は深夜まで営業する店も多い。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lustre_Baccarat%2C_Yebisu_Garden_Place_-31374.jpeg/1280px-Lustre_Baccarat%2C_Yebisu_Garden_Place_-31374.jpeg"
         ],
         "specs": [
           {
@@ -1830,7 +1830,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "緑豊かな遊歩道型ショッピング施設",
         "desc": "2015年開業、旧東横線渋谷〜代官山間の高架跡地を活用した低層の遊歩道型商業施設。全長約220m、5棟の低層建築にスターバックス・スプリングバレーブルワリー・カフェ・セレクトショップが入る。蔦屋書店から徒歩2分の距離で、両者をハシゴするのが代官山デートの定番動線。緑に囲まれたウッドデッキの遊歩道が、都心とは思えない落ち着きを作る。営業時間はおおむね11〜21時、店舗による。雨の日は店舗ごとに屋根があるため、店から店へは傘なしで移動できないが、店内滞在は問題ない。建築設計が秀逸で、写真背景としても優れている。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tokyo---Ebisu-and-Shibuya---2026-02-04_050.jpg/1280px-Tokyo---Ebisu-and-Shibuya---2026-02-04_050.jpg"
         ],
         "specs": [
           {
@@ -1852,7 +1852,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "恵比寿駅直結の駅ビル。ランチ・ディナーに使いやすい",
         "desc": "JR恵比寿駅直結の大型駅ビル。本館・西館・東館の3館構成で、ファッション・雑貨・食料品・飲食が揃う。本館の地下〜2階の食料品フロアは、デパ地下級のスイーツ・惣菜・酒類を扱い、夕食難民・手土産難民を吸収する。レストラン街はカジュアル〜やや格高めまで幅広く、デートの夕食候補として現実的な価格帯。JR恵比寿駅と直結し、雨の日でも傘を差さずにビル内に入れるアクセスの良さが地味に大きい。西館は恵比寿ガーデンプレイス方向にあり、ガーデンプレイス散策の前後の食事場所として組み込みやすい。営業時間は店舗による（おおむね10〜22時、レストランは〜23時）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Atre_Ebisu_station_building_Tokyo_Japan_2021.jpg/1280px-Atre_Ebisu_station_building_Tokyo_Japan_2021.jpg"
         ],
         "specs": [
           {
@@ -1898,7 +1898,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/202304011628_IMG_5778.jpg/1280px-202304011628_IMG_5778.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1909,7 +1909,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京一の桜の名所。3月末〜4月初旬は圧巻",
         "desc": "中目黒駅周辺から代官山・池尻大橋方向へ約3.8km続く桜並木。約800本のソメイヨシノが両岸に並び、満開時は川面に花びらが流れる桜のトンネルになる。夜のライトアップ（3月下旬〜4月初旬、点灯時間は公式発表で確認）も有名で、夜桜デートの定番。ピーク時の週末は歩道が一方通行規制になるほどの混雑で、平日の早朝7〜9時か夜21時以降に行くのが現実的。桜以外の季節も川沿いに個性的なカフェ・パティスリーが並び、散歩そのものが目的になる遊歩道。中目黒駅から徒歩2分、代官山駅から徒歩10分の距離。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/202304011628_IMG_5778.jpg/1280px-202304011628_IMG_5778.jpg"
         ],
         "specs": [
           {
@@ -1957,7 +1957,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "スタバ世界最大級の旗艦店。インテリアが圧巻",
         "desc": "中目黒高架下に2019年に開業したスタバの世界4店舗目（東京・上海・ニューヨーク・ミラノ）の旗艦店。4階建ての空間に焙煎機・スペシャルティコーヒーバー・ティバーナ・カクテルバーが分散し、コーヒーをテーマにした体験型店舗として国際的な注目を集める。コーヒー1杯700円〜、限定グッズや豆も購入できる。土日午後は最大1〜2時間の入店待ちが発生することがあり、平日午前または夜20時以降が比較的空いている。建築設計が秀逸で、内部での写真撮影が制限されている区画もあるため、入店時の案内に従う。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/2F%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%90%E3%83%BC.jpg/1280px-2F%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%90%E3%83%BC.jpg"
         ],
         "specs": [
           {
@@ -2005,7 +2005,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "中目黒から少し歩いた先の静かな住宅街",
         "desc": "中目黒から目黒川を上流方向に1.5km歩くと祐天寺、さらに上流の池尻大橋まで2.5kmで到達できる。祐天寺周辺は古民家カフェ・町中華・古本屋が点在する静かな住宅地で、中目黒よりさらにローカルな空気が残る。池尻大橋は若手シェフのバー・自然派ワインのビストロが集まり始めている注目エリア。中目黒の混雑を抜けた先の「次の中目黒」として、デートの後半に組み込むと差が出る。祐天寺駅・池尻大橋駅まで徒歩で歩いてから電車で帰る動線にすると、往復の電車運賃も最小化できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Yutenji_Hondo.jpg/1280px-Yutenji_Hondo.jpg"
         ],
         "specs": [
           {
@@ -2047,7 +2047,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Inokashira_park_pond_2024.jpg/1280px-Inokashira_park_pond_2024.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -2058,7 +2058,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "ボート乗り・花見・動物園。都内随一の住宅地公園",
         "desc": "1917年開園、武蔵野市と三鷹市にまたがる都立公園。井の頭池を中心に約38haの広さがあり、「都心から最も近い、本格的な自然」として住民の日常に組み込まれている。池ではスワンボート・手漕ぎボート・足漕ぎボートが利用でき、デート定番の風景。園内には井の頭自然文化園（小さな動物園、無料エリアと有料エリアあり）・野外ステージ・井の頭弁財天が点在し、週末はミュージシャンの路上演奏や大道芸が見られる。桜の名所としても都内有数で、3月末〜4月第1週は花見客で大変な賑わいになる。吉祥寺駅南口（公園口）から徒歩5分、駅から公園までの七井橋通りはカフェ・雑貨屋が並ぶ散歩道として楽しい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Inokashira_park_pond_2024.jpg/1280px-Inokashira_park_pond_2024.jpg"
         ],
         "specs": [
           {
@@ -2080,7 +2080,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "昭和レトロな路地横丁。昼から飲める小さな店が密集",
         "desc": "吉祥寺駅北口から徒歩1分、戦後闇市の名残を継ぐ路地。幅1.5〜2mの狭い通路に串焼き・もつ焼き・ラーメン・小料理・バー・古着屋が80軒ほど密集する。昼から営業する店も多く、昼飲み聖地としての地位を確立している。1人1,500〜2,500円程度で2軒はしごできる価格帯。近年は若手バーテンダー・料理人がリノベーションして始めた小箱が増え、新旧の業態が混在する独特の生態系になっている。土日18時以降は満席・行列になりやすく、開店直後の17時前後または平日午後が狙い目。観光客と地元客のバランスが取れた珍しい横丁で、ガード下と昭和の路地らしい風情を素直に楽しめる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/In_Harmonica_Yokocho%2C_Kichijoji_%2853417121000%29.jpg/1280px-In_Harmonica_Yokocho%2C_Kichijoji_%2853417121000%29.jpg"
         ],
         "specs": [
           {
@@ -2102,7 +2102,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "昔ながらの商店街。個性的な店と専門店が混在",
         "desc": "吉祥寺駅北口から伸びる、長さ約340mのアーケード商店街。ファッション・食品・雑貨・カフェ・ファストフード・100円ショップとチェーン店と個人店が混在し、「住民の日常買い物」と「観光客の街歩き」が共存する設計になっている。アーケードがあるため雨の日でも傘なしで歩けるのが大きな利点。サンロードから1本入ったダイヤ街・中道通りは、より個人色の強いセレクトショップ・古着屋・パン屋が並び、サンロードと組み合わせて2〜3時間歩ける厚みがある。営業時間は店舗による（おおむね10〜21時）。週末の14〜17時はピーク混雑、朝10〜11時または平日昼が落ち着く。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kichijoji_Sun_Road_shopping_street_with_stay-at-home_advisory.jpg/1280px-Kichijoji_Sun_Road_shopping_street_with_stay-at-home_advisory.jpg"
         ],
         "specs": [
           {
@@ -2124,7 +2124,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "大型商業施設が駅直結で揃う。雨の日にも使いやすい",
         "desc": "駅周辺にヨドバシカメラ吉祥寺（大型家電量販店）・東急百貨店吉祥寺店・コピス吉祥寺・キラリナ京王吉祥寺と大型商業施設が4棟集中し、雨の日でも傘なしで店間移動できる。東急百貨店のデパ地下は中央線沿線では大宮以南で最大規模の食料品売り場で、スイーツ・惣菜・お弁当・酒類のラインナップが揃う。ヨドバシカメラ吉祥寺は家電・カメラ・パソコン・スマートフォンを実機で比較できる規模で、新宿・池袋に行かなくても買い物が完結する。営業時間は店舗による（おおむね10〜21時）。JR吉祥寺駅から徒歩1〜5分の駅近で、雨の日の時間つぶしとしても優秀。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kichijoji%282008-03-09%29_-_panoramio.jpg/1280px-Kichijoji%282008-03-09%29_-_panoramio.jpg"
         ],
         "specs": [
           {
@@ -2146,7 +2146,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "緑豊かな街路と個性的なカフェが点在",
         "desc": "サンロード北端から成蹊大学方向に伸びる中道通りは、個人経営の小箱が並ぶ街歩きのハイライト。セレクトショップ・古着屋・パン屋・コーヒースタンド・小さなギャラリーが密集し、「吉祥寺らしい落ち着いた住宅地の延長」を体感できる区画。成蹊大学を超えて住宅街に入ると、隠れ家カフェ・パティスリー・ベーカリーが点在し、観光客がほぼ来ない静かな散策になる。営業時間は店舗ごとに差があり、月曜定休の店も多いため、訪問前に営業日を確認する。吉祥寺駅から徒歩10〜15分の距離なので、サンロードと組み合わせて午後の散策に向く。雨の日は屋根のある区画が少なく、傘を差しての歩きになる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/1_Chome_Kichij%C5%8Dji_Minamich%C5%8D%2C_Musashino-shi%2C_T%C5%8Dky%C5%8D-to_180-0003%2C_Japan_-_panoramio_%283%29.jpg/1280px-1_Chome_Kichij%C5%8Dji_Minamich%C5%8D%2C_Musashino-shi%2C_T%C5%8Dky%C5%8D-to_180-0003%2C_Japan_-_panoramio_%283%29.jpg"
         ],
         "specs": [
           {

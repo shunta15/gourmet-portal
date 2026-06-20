@@ -1,0 +1,189 @@
+{
+  "id": "new-harajuku-backstreet",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "キャットストリート",
+      "imageSubject": "原宿キャットストリート（旧渋谷川遊歩道）の歩行者専用路地に低層のアパレルショップが並ぶ街並み",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__1__1.jpg",
+          "file": "File:Cat Street, Ura Harajuku 1.jpg",
+          "desc": "Cat Street, Ura Harajuku",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__1__2.jpg",
+          "file": "File:Harajuku-Cat-street-04.jpg",
+          "desc": "原宿キャットストリート、旧渋谷川遊歩道。東京都渋谷区神宮前、旧穏田橋付近。",
+          "w": 1600,
+          "h": 1067
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__1__3.jpg",
+          "file": "File:Harajuku-Cat-street-05.jpg",
+          "desc": "原宿キャットストリート、旧渋谷川遊歩道。東京都渋谷区神宮前、旧穏田橋付近。",
+          "w": 1600,
+          "h": 1067
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__1__4.jpg",
+          "file": "File:Cat Street Tokyo 1.JPG",
+          "desc": "The Cat Street at Omotesando, Tokyo",
+          "w": 1024,
+          "h": 768
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "ラフォーレ原宿",
+      "imageSubject": "ラフォーレ原宿の建物外観（明治通りと表参道の交差点に建つ商業施設のファサード）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__2__1.jpg",
+          "file": "File:Niigata NEXT21 Lion statue.jpg",
+          "desc": "新潟三越からNEXT21に寄贈されたライオン像",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__2__2.jpg",
+          "file": "File:Laforet Harajuku1.jpg",
+          "desc": "ラフォーレ原宿",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "明治神宮",
+      "imageSubject": "明治神宮の大鳥居（参道に立つ木造の大型鳥居）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__3__1.jpg",
+          "file": "File:Meiji Jingu Stadium aerial view.jpg",
+          "desc": "Aerial view of Meiji Jingu Stadium, Tokyo, Japan",
+          "w": 4316,
+          "h": 2877
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__3__2.jpg",
+          "file": "File:Meiji-jingū grand torii d'entrée.jpg",
+          "desc": "photographie d'un grand torii en bois de cèdre",
+          "w": 5184,
+          "h": 3456
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__3__3.jpg",
+          "file": "File:Meiji-jingū vin de Bourgogne.jpg",
+          "desc": "Image d'une information sur la provenance des vins de Bourgogne",
+          "w": 5088,
+          "h": 3392
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__3__4.jpg",
+          "file": "File:Meiji-jingū main hall.jpg",
+          "desc": "image du bâtiment principal du sanctuaire",
+          "w": 5172,
+          "h": 3260
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "竹下通り",
+      "imageSubject": "原宿・竹下通りの入口アーチと両側に店舗が連なる細い歩行者天国の通り",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__4__1.jpg",
+          "file": "File:Takeshita Dōri S from Otowa INT Hakata-eki-minami 1-chōme Hakata-ku Fukuoka 20230803.jpg",
+          "desc": "Takeshita Dōri, the view south from Otowa Intersection (Address: Hakata-eki-minami 1-chōme, Hakata-ku, Fukuoka City, Japan 812-0016)",
+          "w": 4000,
+          "h": 1680
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__4__2.jpg",
+          "file": "File:Takeshita Dōri S from Hakata-eki-higashi INT Hakata-eki-chūōgai and Hakata-eki-higashi Hakata-ku Fukuoka 20230803.jpg",
+          "desc": "Takeshita Dōri, the view south from Hakata-eki-higashi Intersection (Address: Hakata-eki-chūōgai and Hakata-eki-higashi, Hakata-ku, Fukuoka City, Japan 812-0012",
+          "w": 4000,
+          "h": 1680
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__4__3.jpg",
+          "file": "File:Behind the \"Takeshita Street\" sign 3.jpg",
+          "desc": "Behind the \"Takeshita Street\" sign ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__4__4.jpg",
+          "file": "File:Japan Tokyo Takeshita street at summer - 東京竹下.jpg",
+          "desc": "Japan Tokyo Takeshita street at summer",
+          "w": 1499,
+          "h": 844
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "神宮前エリアの古着屋巡り",
+      "imageSubject": "神宮前エリアの古着屋が連なる裏路地（看板を掲げた古着店が並ぶ街角）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__5__1.jpg",
+          "file": "File:1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan - panoramio (1).jpg",
+          "desc": "1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__5__2.jpg",
+          "file": "File:1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan - panoramio (2).jpg",
+          "desc": "1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__5__3.jpg",
+          "file": "File:1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan - panoramio (3).jpg",
+          "desc": "1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__5__4.jpg",
+          "file": "File:1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan - panoramio (4).jpg",
+          "desc": "1 Chome-18 Jingūmae, Shibuya-ku, Tōkyō-to 150-0001, Japan",
+          "w": 4592,
+          "h": 3448
+        }
+      ]
+    }
+  ]
+}

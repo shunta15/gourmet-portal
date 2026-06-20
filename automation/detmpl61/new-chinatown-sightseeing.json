@@ -1,0 +1,43 @@
+{
+  "id": "new-chinatown-sightseeing",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "観光",
+  "currentTitle": "横浜中華街周辺で遊ぶ5選。食べる以外の楽しみ方",
+  "currentSubtitle": "関帝廟、媽祖廟、山下公園、元町。中華街を起点に広げる横浜散策",
+  "currentLede": "横浜中華街は150年以上の歴史を持つ日本最大の中華街で、約600軒の中華料理店と物販店が0.2km²の区画に集中している。「食べる」だけでなく「歩く・買う・参拝する・撮る」と複数の楽しみ方ができる、観光地として完成度の高いエリア。対象は中華街を観光として楽しみたい家族・カップル、食事以外の文化体験も組み合わせたい人。標準は13:00集合・19:30解散の6時間30分コース、予算は食事込みで1人4,000〜8,000円。ここでは中華街の食事以外も楽しめる5スポットを紹介する。",
+  "currentQuote": "中華街は食事の前後に歩く廟と山下公園があると、立体的な時間が作れる。",
+  "currentClosing": "標準動線: 元町・中華街駅13:00→朝陽門→中華街大通りで食べ歩き（13:00〜14:30）→関帝廟・媽祖廟参拝（14:30〜15:30）→山下公園で海風休憩（15:30〜16:30）→元町ショッピングストリート（16:30〜18:00）→中華街でディナー（18:00〜19:30）。所要6時間30分、予算は食事込みで1人4,000〜8,000円。土日12〜14時のランチタイムは大通りが歩行困難、開門直後の10時または15時以降がスムーズ。雨の日も中華街は屋内動線が多く、廟・店内で快適に過ごせる。失敗しやすいのは「ランチタイムに突入して大通りで身動き取れない」「廟の参拝マナーを知らずに失礼な行動をする」「元町商店街の閉店時間（19時）を見落とす」。土日昼は早めに動き、夜は18時前に元町商店街での買い物を済ませる。この記事は中華街を観光として楽しみたい家族・カップル、食事以外の文化体験も組み合わせたい人に向く。",
+  "spots": [
+    {
+      "name": "横浜中華街（街歩き）",
+      "area": "中華街",
+      "descHead": "中華街の中心を東西に貫く約520mのメインストリート。両側に飲茶・小籠包・北京ダック・餃子の専門店が並び、食べ歩き客で賑わう。「中華まんや胡麻団子・タピオカドリンクで食べ歩きしたい",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "関帝廟（横浜中華街）",
+      "area": "中華街",
+      "descHead": "1862年創建、横浜中華街の鎮守として華僑が篤く信仰する廟。三国志の英雄・関羽を祀り、商売繁盛・忠義の神として知られる。「中華圏の宗教文化に触れたい」「装飾の凝った廟建築を見たい」",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "横浜媽祖廟",
+      "area": "中華街",
+      "descHead": "媽祖（まそ）は航海・漁業の守護神で、2006年に新築された朱色の媽祖廟は中華街の新たなランドマーク。「華僑コミュニティの新しい祈りの場を見たい」「朱色の鮮やかな建築を撮影したい」人",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yokohama_Chinatowns_East_Gate_At_Night.jpg/1280px-Yokohama_Chinatowns_East_Gate_At_Night.jpg"
+    },
+    {
+      "name": "山下公園（食後の散歩）",
+      "area": "山下",
+      "descHead": "山下公園は中華街東門（朝陽門）から徒歩約7分、横浜港に沿って約700m続く臨海公園。「中華街での食べ歩きの後、海風を浴びてリセットしたい」観光客に向く。ベンチが豊富で、中華街で買っ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "元町ショッピングストリート",
+      "area": "元町",
+      "descHead": "元町ショッピングストリートは中華街南口から徒歩約5分、約500mのショッピング通り。「中華街の喧騒を抜けて落ち着いた買い物をしたい」大人の2人に向く。1860年代の外国人居留地時代",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    }
+  ]
+}

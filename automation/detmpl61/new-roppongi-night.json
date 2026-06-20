@@ -1,0 +1,43 @@
+{
+  "id": "new-roppongi-night",
+  "file": "newGuideFeatures2",
+  "persona": "A",
+  "tag": "夜景",
+  "currentTitle": "六本木・港区夜景5選。ヒルズと東京タワーを望む夜",
+  "currentSubtitle": "六本木ヒルズ展望台、東京タワー、麻布台ヒルズ。港区の夜を上から眺める",
+  "currentLede": "六本木は美術館・展望台・高級ホテル・夜景バーが半径800mに集中する、東京の「夜景デートを徒歩で完結できる」エリアだ。六本木ヒルズ展望台と東京タワーは徒歩20分の距離で、間に芝公園・増上寺・麻布台ヒルズが挟まる動線になる。夕暮れ前の17時頃に1点目に入り、夜景の点灯時間を挟みながら3〜4スポットを2〜4時間で巡るのが現実的。ここでは初訪問でも迷わず夜景を楽しめる港区5スポットを、時系列で並べる。",
+  "currentQuote": "六本木ヒルズの展望台から東京タワーを眺め、歩いて芝公園まで行くと夜景のハシゴができる。",
+  "currentClosing": "標準動線は、六本木ヒルズ展望台（17:00〜19:00 マジックアワー）→麻布台ヒルズ（19:00〜20:00 中央広場散歩）→芝公園・増上寺（20:00〜20:45 東京タワーとの構図撮影）→東京タワー（21:00〜22:00 展望）→六本木の夜景バーで締め。所要4〜5時間、入場料合計は3,500〜6,000円程度が目安（公式サイトで料金確認）。「夜景デートを定番で外したくない人」「歩く距離を惜しまず複数スポット回りたい人」「写真を撮りながら歩きたい人」に向く。土日19〜21時の展望台はピーク混雑なので、平日または日時指定券での事前予約が前提。雨の日は屋外スカイデッキが閉鎖されるため、屋内のシティビュー＋森美術館に切り替え、東京タワーを諦めて室内コースに再編成する。時間がない場合は、六本木ヒルズ展望台→東京タワー（タクシー10分）の2点だけで2時間半コースに圧縮できる。迷ったら、日没30分前にどこか1ヶ所の展望台に入って夕景〜夜景の境目を見るのが最も効率がよい。",
+  "spots": [
+    {
+      "name": "六本木ヒルズ展望台（東京シティビュー）",
+      "area": "六本木",
+      "descHead": "高さ238m・地上52階の屋内展望デッキ「東京シティビュー」と、屋外スカイデッキ。六本木駅直結のヒルズ森タワー最上部に位置する。屋外スカイデッキは追加料金で開放され、雨天・強風時は",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "東京タワー",
+      "area": "芝公園",
+      "descHead": "1958年竣工、高さ333mの電波塔。メインデッキ（150m）とトップデッキ（250m）の2層構造で、料金体系は変動するため公式サイトで確認。スカイツリーより小ぶりだが、首都高と都",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "麻布台ヒルズ",
+      "area": "麻布",
+      "descHead": "2023年11月開業、330mの森JPタワーを核とする再開発エリア。商業・住宅・チームラボ常設施設「Forest of Resonating Lamps」・高級ホテルJanu To",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "芝公園・増上寺",
+      "area": "芝公園",
+      "descHead": "1393年創建、徳川将軍家の菩提寺。三門越しに見上げる東京タワーの構図は、東京の昼夜どちらでも撮れる定番ショット。夜は東京タワーのライトアップを背景に、増上寺の屋根と松のシルエット",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "国立新美術館",
+      "area": "六本木",
+      "descHead": "2007年開業、黒川紀章設計の波打つガラスファサードが特徴の国立美術館。常設展は持たず、年5〜6本の大型企画展が並走する。館内のミュージアムショップとカフェは入場無料で立ち寄れ、夜",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    }
+  ]
+}

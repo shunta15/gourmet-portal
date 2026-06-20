@@ -1,0 +1,43 @@
+{
+  "id": "new-minatomirai-rainy-date",
+  "file": "newGuideFeatures",
+  "persona": "A",
+  "tag": "雨の日",
+  "currentTitle": "みなとみらい雨の日デート5選。濡れずに一日楽しめる場所",
+  "currentSubtitle": "カップヌードルミュージアム、横浜美術館、AIR CABIN。天気に強い港町のデート",
+  "currentLede": "みなとみらいは雨の日に強い屋内施設の密度が高いエリア。美術館・ミュージアム・展望台・大型商業施設・屋内型ロープウェイが徒歩圏内で繋がるため、屋外を諦めても1日が成立する。対象は雨予報で予定が崩れた2人、子連れで雨の日に時間を潰したいファミリー、屋内派のカップル。標準は11:00集合・19:00解散の8時間コース、予算は1人6,000〜10,000円。ここでは雨の日でも傘を最小限にできる屋内中心5スポットを紹介する。",
+  "currentQuote": "雨でも選択肢が多いのがみなとみらいの強み。事前に屋内の動線を決めておくだけで安心感が違う。",
+  "currentClosing": "標準動線: みなとみらい駅11:00→横浜美術館（11:00〜13:00）→館内カフェでランチ→マークイズみなとみらいで買い物（14:00〜15:30）→ランドマーク スカイガーデン（15:30〜17:00）→AIR CABIN で桜木町方向へ（17:00〜17:15）→カップヌードルミュージアム（17:15〜18:45）→赤レンガ倉庫内のレストランで夕食。所要8時間、予算は美術館・展望・AIR CABIN・夕食込みで1人6,000〜10,000円。土日午後は美術館・展望ともピーク混雑、平日または雨予報の日は比較的空いている。晴天時はAIR CABINよりも徒歩・汽車道のほうが景色が良いので、雨予報のときに使う発想で十分。失敗しやすいのは「美術館の休館日見落とし」（木曜が休みの館が多い）と「カップヌードルミュージアムの手作り体験予約見落とし」。事前に公式サイトで開館日と体験予約を必ず確認。この記事は雨で予定変更を余儀なくされた人、屋内派の2人、子連れファミリーに向く。",
+  "spots": [
+    {
+      "name": "カップヌードルミュージアム 横浜",
+      "area": "みなとみらい",
+      "descHead": "2011年開館、日清食品が運営する体験型ミュージアム。カップヌードルの歴史展示・パッケージ製作体験・チキンラーメン手作り工房（要事前予約）など、子連れカップル・ファミリーに人気。「",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "横浜美術館",
+      "area": "みなとみらい",
+      "descHead": "1989年開館、丹下健三設計の横浜の中核美術館。2024年3月にリニューアルオープンし、エントランス・展示室・カフェが一新された。近代以降の絵画・彫刻・写真・現代美術を中心に、年5",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "マークイズみなとみらい",
+      "area": "みなとみらい",
+      "descHead": "マークイズみなとみらいは2013年開業、みなとみらい駅直結の大型ショッピングモール。200店舗以上の専門店・飲食店・スーパーが揃い、雨天時でも1棟で半日過ごせる。「雨の日に買い物と",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "横浜ランドマークタワー スカイガーデン",
+      "area": "みなとみらい",
+      "descHead": "ランドマークタワー69階・地上273mの屋内展望フロア「スカイガーデン」。横浜港・東京湾・富士山（晴天時）・東京方面まで見渡せる屋内展望スペース。「雨でも展望は諦めたくない」「写真",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "YOKOHAMA AIR CABIN",
+      "area": "みなとみらい",
+      "descHead": "2021年開業の屋内型ロープウェイ「YOKOHAMA AIR CABIN」は、桜木町駅前から運河パーク駅まで片道5分・630mの空中散歩。ゴンドラ内は冷暖房完備で雨・寒気の影響を受",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    }
+  ]
+}

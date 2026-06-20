@@ -1,0 +1,205 @@
+{
+  "id": "new-yokohama-station-rainy",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "そごう横浜店",
+      "imageSubject": "そごう横浜店の建物外観（横浜駅東口に直結する大型百貨店ビル）",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__1__1.jpg",
+          "file": "File:そごう横浜店 - panoramio.jpg",
+          "desc": "そごう横浜店",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__1__2.jpg",
+          "file": "File:L'OCCITANE そごう横浜店 - panoramio.jpg",
+          "desc": "L'OCCITANE そごう横浜店",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__1__3.jpg",
+          "file": "File:Yokohama Shitoshi Bld.jpg",
+          "desc": "Yokohama Shintoshi building seen from the west side of Yokohama station.",
+          "w": 3163,
+          "h": 1779
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__1__4.jpg",
+          "file": "File:Sogo Yokohama.jpg",
+          "desc": "そごう横浜店",
+          "w": 5328,
+          "h": 4000
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "横浜ポルタ",
+      "imageSubject": "横浜駅東口地下街「横浜ポルタ」の地下通路と店舗が並ぶ屋内コンコース",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__2__1.jpg",
+          "file": "File:Yokohama Porta Noth.jpg",
+          "desc": "The east entrance of \"Yokohama Porta\" underground shopping street at the east exit of Yokohama station (Yokohama Sogo side).\nThis photo was taken from the \"Shin",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__2__2.jpg",
+          "file": "File:Yokohama station Porta Entrance Outside.jpg",
+          "desc": "The exterior of the Yokohama Porta entrance on the east exit of Yokohama Station. It is designed with the motif of Yokohama Station for the 3rd generation.",
+          "w": 3603,
+          "h": 2703
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__2__3.jpg",
+          "file": "File:Yokohama PORTA2011.JPG",
+          "desc": "横浜駅東口の地下街横浜ポルタ",
+          "w": 4000,
+          "h": 3000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__2__4.jpg",
+          "file": "File:Yokohama PORTA trefficsign.JPG",
+          "desc": "横浜ポルタ入口、羽田空港リムジンバスの所要時間を表示する電光掲示板",
+          "w": 4000,
+          "h": 3000
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜ジョイナス",
+      "imageSubject": "横浜駅西口の商業施設「相鉄ジョイナス」の館内または外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__3__1.jpg",
+          "file": "File:JOINUS YOKOHAMA - panoramio.jpg",
+          "desc": "JOINUS YOKOHAMA",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__3__2.jpg",
+          "file": "File:Yokohama Joinus 001.JPG",
+          "desc": "横浜ジョイナスの地下1階。なお洋服店「S357」は2011年1月に閉店して撤退した。",
+          "w": 2816,
+          "h": 2112
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__3__3.jpg",
+          "file": "File:Bank of Yokohama ATM bij Joinus Yokohama, -19 maart 2016.jpg",
+          "desc": "横浜ジョイナスの1階入口付近にある横浜銀行のATM。正式名称は「横浜銀行・横浜駅前支店・相鉄横浜駅前出張所」。右手奥が相鉄線の改札口。",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__3__4.jpg",
+          "file": "File:Aoyama Flower Market (Yokohama JOINUS).JPG",
+          "desc": "Aoyama Flower Market (Yokohama, Japan)",
+          "w": 1280,
+          "h": 960
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "横浜モアーズ",
+      "imageSubject": "横浜駅西口直結の商業施設「横浜モアーズ」の建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__4__1.jpg",
+          "file": "File:Yokohama MORE'S.JPG",
+          "desc": "Yokohama MORE'S",
+          "w": 3072,
+          "h": 1728
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__4__2.jpg",
+          "file": "File:Yokohama mores.jpg",
+          "desc": "Yokohama more's",
+          "w": 4000,
+          "h": 2250
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__4__3.jpg",
+          "file": "File:Okadaya More's Yokohama 002.JPG",
+          "desc": "Yokohama Okadaya MORE'S in the night",
+          "w": 1280,
+          "h": 800
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__4__4.jpg",
+          "file": "File:Sagami-Ono Okadaya-MORE'S 001.JPG",
+          "desc": "相模大野岡田屋モアーズ",
+          "w": 2816,
+          "h": 2112
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "横浜高島屋",
+      "imageSubject": "横浜駅西口直結の百貨店「横浜高島屋」の建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__5__1.jpg",
+          "file": "File:高島屋横浜店 - panoramio.jpg",
+          "desc": "高島屋横浜店",
+          "w": 4592,
+          "h": 3448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__5__2.jpg",
+          "file": "File:Yokohama takashimaya.JPG",
+          "desc": "高島屋　横浜店",
+          "w": 2816,
+          "h": 2112
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__5__3.jpg",
+          "file": "File:Yokohama-STA East-2023.jpg",
+          "desc": "Panoramic view of the east side of Yokohama Station in 2023",
+          "w": 5333,
+          "h": 3556
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__5__4.jpg",
+          "file": "File:Yokohama Takashimaya.JPG",
+          "desc": "Yokohama Takashimaya",
+          "w": 3072,
+          "h": 1728
+        }
+      ]
+    }
+  ]
+}

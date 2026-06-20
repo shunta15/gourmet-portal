@@ -1,0 +1,205 @@
+{
+  "id": "new-tokyo-first-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "浅草・仲見世通り→浅草寺",
+      "imageSubject": "浅草・仲見世通りの参道（雷門から浅草寺へ続く土産物店の連なりと赤い提灯）",
+      "imageRegion": "東京都台東区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__1__1.jpg",
+          "file": "File:Nakamise, Asakusa.jpg",
+          "desc": "Nakamise, Asakusa - Senso-ji, Tokyo, Japan",
+          "w": 1888,
+          "h": 1260
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__1__2.jpg",
+          "file": "File:Sensō-ji Tempel mit Nakamise-dor.jpg",
+          "desc": "Sensō-ji Tempel mit Hozo-mon, Nakamise-dori und Kaminari-mon.",
+          "w": 3412,
+          "h": 3513
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__1__3.jpg",
+          "file": "File:Nakamise 20141227 03.jpg",
+          "desc": "東京浅草寺仲見世通り",
+          "w": 3240,
+          "h": 2160
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__1__4.jpg",
+          "file": "File:Nakamise 20141227 01.jpg",
+          "desc": "東京浅草寺仲見世通り",
+          "w": 3240,
+          "h": 2160
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "東京スカイツリー天望デッキ",
+      "imageSubject": "東京スカイツリー（高さ634mの電波塔の全景）",
+      "imageRegion": "東京都墨田区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__2__1.jpg",
+          "file": "File:Tokyo Skytree Tembo Deck (53081429525).jpg",
+          "desc": "東京スカイツリー 天望デッキ",
+          "w": 8064,
+          "h": 6048
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__2__2.jpg",
+          "file": "File:Tokyo Skytree Tembo Deck (53081021166).jpg",
+          "desc": "東京スカイツリー 天望デッキ",
+          "w": 8064,
+          "h": 6048
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__2__3.jpg",
+          "file": "File:Tembo Deck @ Tokyo Skytree (9464416624).jpg",
+          "desc": "Tembo Deck @ Tokyo Skytree",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__2__4.jpg",
+          "file": "File:Tembo Deck @ Tokyo Skytree (9461642787).jpg",
+          "desc": "Tembo Deck @ Tokyo Skytree",
+          "w": 3648,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "お台場海浜公園（夜景）",
+      "imageSubject": "お台場海浜公園から望むレインボーブリッジと東京湾の夕景・夜景",
+      "imageRegion": "東京都港区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__3__1.jpg",
+          "file": "File:Boats @ Rainbow Bridge (9609651781).jpg",
+          "desc": "Boats @ Rainbow Bridge",
+          "w": 1280,
+          "h": 720
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__3__2.jpg",
+          "file": "File:Evening Tokyo Bay from Aquacity Odaiba 2.jpg",
+          "desc": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--b",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__3__3.jpg",
+          "file": "File:Evening Tokyo Bay from Aquacity Odaiba.jpg",
+          "desc": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--b",
+          "w": 5344,
+          "h": 2944
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__3__4.jpg",
+          "file": "File:Harumi Boat Terminal @ Rainbow Bridge (11641580674).jpg",
+          "desc": "Harumi Boat Terminal @ Rainbow Bridge",
+          "w": 3968,
+          "h": 2976
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "銀座ディナー・GINZA SIX",
+      "imageSubject": "銀座の街並み（GINZA SIX周辺の高級複合商業ビルが並ぶ中央通り）",
+      "imageRegion": "東京都中央区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__4__1.jpg",
+          "file": "File:Ginza Six 01.jpg",
+          "desc": "銀座松坂屋跡に建設された新商業施設、Ginza Six（中央区銀座6丁目）。",
+          "w": 3072,
+          "h": 2048
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__4__2.jpg",
+          "file": "File:Ginza Six 02.jpg",
+          "desc": "銀座松坂屋跡に建設された新商業施設、Ginza Six（中央区銀座6丁目）。",
+          "w": 3072,
+          "h": 2048
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__4__3.jpg",
+          "file": "File:GINZA SIX Entrance view 201806.jpg",
+          "desc": "GINZA SIX",
+          "w": 2736,
+          "h": 1824
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__4__4.jpg",
+          "file": "File:GINZA SIX Exterior view 2018.jpg",
+          "desc": "GINZA SIX",
+          "w": 1824,
+          "h": 2736
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "新宿（締め・バー）",
+      "imageSubject": "新宿の夜の繁華街（歌舞伎町・新宿三丁目のネオンと高層ビル群）",
+      "imageRegion": "東京都新宿区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__5__1.jpg",
+          "file": "File:Kabukicho (52646669114).jpg",
+          "desc": "歌舞伎町",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__5__2.jpg",
+          "file": "File:Kabukicho (53134248180).jpg",
+          "desc": "歌舞伎町",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__5__3.jpg",
+          "file": "File:Kabukicho (53138176776).jpg",
+          "desc": "歌舞伎町",
+          "w": 6000,
+          "h": 4000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__5__4.jpg",
+          "file": "File:Kabukicho (53150208765).jpg",
+          "desc": "歌舞伎町",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    }
+  ]
+}

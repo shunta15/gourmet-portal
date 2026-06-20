@@ -1,0 +1,164 @@
+{
+  "id": "new-tamaplaza-azamino",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "たまプラーザテラス",
+      "imageSubject": "たまプラーザ駅前と直結する商業施設「たまプラーザテラス」のガーデンウォーク／駅前広場の外観",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__1__1.jpg",
+          "file": "File:Tama Plaza Terrace 01.jpg",
+          "desc": "たまプラーザテラス　ノースプラザ",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__1__2.jpg",
+          "file": "File:Tama Plaza Terrace Link Plaza.jpg",
+          "desc": "たまプラーザテラス リンクプラザ",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__1__3.jpg",
+          "file": "File:Tama Plaza Terrace 06.jpg",
+          "desc": "たまプラーザテラスロゴ",
+          "w": 1592,
+          "h": 606
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__1__4.jpg",
+          "file": "File:Tama Plaza Terrace 03.jpg",
+          "desc": "たまプラーザテラス　サウスプラザ",
+          "w": 2048,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "こどもの国（横浜市）",
+      "imageSubject": "横浜市「こどもの国」の広い芝生広場・牧場や園内の緑地の風景",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__2__1.jpg",
+          "file": "File:Kodomonokuni Station -37719.jpeg",
+          "desc": "Kodomonokuni Station (railway station in the Aoba-ku, Yokohama, Kanagawa Prefecture, Japan)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__2__2.jpg",
+          "file": "File:Kodomonokuni Station -83318.jpeg",
+          "desc": "Kodomonokuni Station (railway station in the Aoba-ku, Yokohama, Kanagawa Prefecture, Japan)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__2__3.jpg",
+          "file": "File:Kodomonokuni Station.jpg",
+          "desc": "Kodomonokuni Station (railway station in the Aoba-ku, Yokohama, Kanagawa Prefecture, Japan)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__2__4.jpg",
+          "file": "File:こどもの国.jpg",
+          "desc": "こどもの国歩道橋 (横浜市青葉区奈良町)",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜市こども植物園",
+      "imageSubject": "横浜市こども植物園の温室・花壇など園内の植物景観",
+      "imageRegion": "神奈川県横浜市旭区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__3__1.jpg",
+          "file": "File:Yokohama Municipal Children's Botanical Garden 20180429-02.jpg",
+          "desc": "en:Yokohama Municipal Children's Botanical Garden ",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__3__2.jpg",
+          "file": "File:Yokohama Municipal Children's Botanical Garden 20180429-03.jpg",
+          "desc": "en:Yokohama Municipal Children's Botanical Garden ",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__3__3.jpg",
+          "file": "File:Yokohama Municipal Children's Botanical Garden 20180429-01.jpg",
+          "desc": "en:Yokohama Municipal Children's Botanical Garden ",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__3__4.jpg",
+          "file": "File:Yokohamadake.jpg",
+          "desc": "1912年に松野重太郎により発見されたヨコハマダケ。ササの一種である。横浜市こども植物園にて。",
+          "w": 4160,
+          "h": 3120
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "あざみ野ガーデンズ",
+      "imageSubject": "あざみ野駅近くの商業施設「あざみ野ガーデンズ」の外観・中庭",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__4__1.jpg",
+          "file": "File:Tokyu Bus NJ1654.jpg",
+          "desc": "東急バス。あ71系統 黒須田経由あざみ野ガーデンズ行き",
+          "w": 1198,
+          "h": 795
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__4__2.jpg",
+          "file": "File:Tokyu azamino tennis garden yokohama 2014.jpg",
+          "desc": "A photo of Tokyu Azamino Tennis Garden (A tennis court in Yokohama,Kanagawa.)Obacho,Aoba-ku,Yokohama city,Kanagawa pref.,Japan.",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tamaplaza-azamino__4__3.jpg",
+          "file": "File:Azamino gardens yokohama 2014.jpg",
+          "desc": "A photo of Azamino Gardens(A commercial complex in Yokohama,Kanagawa)Obacho,Aoba-ku,Yokohama city,Kanagawa pref.,Japan.",
+          "w": 3591,
+          "h": 2676
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "港北ニュータウン・都筑区公園群",
+      "imageSubject": "港北ニュータウン（都筑区）の遊歩道・緑道（せせらぎ緑道など）の並木と歩道",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "candidates": []
+    }
+  ]
+}

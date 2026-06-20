@@ -1,0 +1,43 @@
+{
+  "id": "new-ginza-marunouchi",
+  "file": "newGuideFeatures2",
+  "persona": "C",
+  "tag": "デート",
+  "currentTitle": "銀座・丸の内デート5選。百貨店と皇居外苑散歩",
+  "currentSubtitle": "銀座六丁目、皇居外苑、丸の内仲通り。大人のデートに外れなし",
+  "currentLede": "銀座〜丸の内は、ハイブランドの路面店・老舗百貨店・煉瓦の駅舎・皇居の緑が徒歩圏で繋がる、東京で最も「大人の落ち着き」を背景にしたデートが組みやすいエリアだ。ショッピング目的だけでなく、皇居外苑の散歩や東京駅の建築見学を組み合わせると、歩く・買う・食べる・撮るのバランスが取れた半日コースになる。週末は丸の内仲通りが歩行者天国になり、車のいない通りでウィンドウショッピングが楽しめるのもこのエリアの特典。ここでは初訪問の2人でも自然な順序で回れる5スポットを紹介する。",
+  "currentQuote": "銀座〜丸の内は「大人のデート」として東京で最も格が高いエリア。皇居の緑と組み合わせると歩き甲斐がある。",
+  "currentClosing": "標準動線は、有楽町駅または銀座駅→GINZA SIX（13:00〜14:30ショッピング＋屋上庭園）→丸の内仲通りを歩く（14:30〜15:30）→東京駅丸の内駅舎（15:30〜16:00写真）→皇居外苑・二重橋（16:00〜17:00散歩）→銀座三越・松屋銀座（17:00〜19:00デパ地下＋夕食）。所要5〜6時間。「大人のデートを格高めで組みたい人」「都心の建築と緑を一度に見たい人」「ショッピングと散歩のバランスを取りたい人」に向く。週末の丸の内仲通り歩行者天国とイルミネーションのある11〜2月は写真映えが最大化する季節。雨の日はGINZA SIX・KITTE・東京駅構内・百貨店という「屋内のみ」で1日が組めるので、傘を畳んだまま動ける。時間が足りない場合は、東京駅丸の内駅舎（外観15分）→丸の内仲通り（散歩30分）→GINZA SIX屋上庭園、の3点で90分コースになる。",
+  "spots": [
+    {
+      "name": "銀座六丁目・GINZA SIX",
+      "area": "銀座",
+      "descHead": "銀座6丁目にある、銀座最大規模の複合商業施設。241店舗が入居し、屋上に無料の日本庭園と展望デッキを持つ。1階のフラッグシップ・地下2階のデパ地下・観世能楽堂・蔦屋書店銀座が同居す",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "皇居外苑・二重橋",
+      "area": "丸の内",
+      "descHead": "皇居の南東側を取り囲む外苑エリアは、皇居前広場・二重橋・桔梗門が無料で開放されている。二重橋は皇居の正門石橋と奥の鉄橋が連なる景観で、東京中心部とは思えない静けさが広がる。丸の内側",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "丸の内仲通り",
+      "area": "丸の内",
+      "descHead": "東京駅丸の内側から有楽町方向へ続く約1.2kmのストリート。高級ブランド路面店・カフェ・レストラン・ギャラリーが両側に並び、ケヤキの街路樹が四季を演出する。週末は車両通行止めになり",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "東京駅丸の内駅舎",
+      "area": "丸の内",
+      "descHead": "1914年竣工、辰野金吾設計のネオバロック様式赤煉瓦駅舎。2012年に創建当時の姿に復元され、南北のドーム屋根が現代に蘇った。国指定重要文化財。外観は無料で見学でき、夜間のライトア",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "銀座三越・松屋銀座",
+      "area": "銀座",
+      "descHead": "中央通り銀座4丁目交差点を挟んで向かい合う老舗百貨店。三越のライオン像・松屋のショーウィンドウは銀座の象徴で、入店せず外観だけ見て歩いても楽しい。デパ地下のスイーツ・惣菜・食料品フ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    }
+  ]
+}

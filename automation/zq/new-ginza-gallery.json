@@ -1,0 +1,29 @@
+{
+  "id": "new-ginza-gallery",
+  "zeros": [
+    {
+      "idx": 1,
+      "name": "GINZA SIX（銀座六丁目）",
+      "imageSubject": "GINZA SIX（銀座六丁目の大型複合商業施設）の中央通りに面したファサード外観",
+      "imageRegion": "東京都中央区"
+    },
+    {
+      "idx": 3,
+      "name": "銀座画廊街（クリエイションギャラリーG8ほか）",
+      "imageSubject": "銀座八丁目の資生堂本社・資生堂ギャラリーが入る資生堂銀座ビルの外観",
+      "imageRegion": "東京都中央区"
+    },
+    {
+      "idx": 4,
+      "name": "松屋銀座・銀座三越",
+      "imageSubject": "銀座のあづま通り・みゆき通りなど中央通りから一本入った細い路地の街並み",
+      "imageRegion": "東京都中央区"
+    },
+    {
+      "idx": 5,
+      "name": "歌舞伎座・銀座四丁目交差点",
+      "imageSubject": "銀座四丁目交差点に建つ銀座三越のライオン像と建物外観",
+      "imageRegion": "東京都中央区"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "new-nakameguro-morning",
+  "file": "newGuideFeatures5",
+  "persona": "A",
+  "tag": "カフェ・朝活",
+  "currentTitle": "中目黒モーニング5選。目黒川沿いで迎える週末の朝",
+  "currentSubtitle": "目黒川、中目黒高架下、スタバリザーブ。春は桜、年中おしゃれな朝の中目黒",
+  "currentLede": "中目黒の朝は、観光客のいない目黒川と、開店前の高架下店舗の静けさが、東京で珍しい「都心のローカル朝時間」を作り出す。桜のピーク以外の季節、平日午前7〜9時の中目黒は地元住民とランナーだけの街で、夜の賑やかさからは想像できない落ち着きが広がる。ここでは早起きして中目黒で過ごす朝5スポットを、平日朝・週末朝の使い方を含めて紹介する。通勤前の1時間でも、休日のゆっくりした午前でも組み込める動線設計。",
+  "currentQuote": "中目黒の朝は「目黒川→高架下→スタバリザーブ」の3点セット。この順番で回れば、東京で最も格のいいモーニングコースが完成する。",
+  "currentClosing": "標準動線（休日朝）は、中目黒駅集合7:00→目黒川を池尻大橋方向に歩く（7:00〜8:00）→中目黒駅前のベーカリー（8:00〜8:30）→駅前のコーヒー店で朝食（8:30〜9:30）→代官山T-SITEまで徒歩散歩（9:30〜10:30）→T-SITE で読書（10:30〜12:00）。所要5時間、予算は1人2,000〜3,500円が目安。「都心で静かな朝を過ごしたい人」「ランナー・散歩派」「コーヒーとパンの組み合わせが好きな人」に向く。桜ピーク（3月末〜4月第1週）の早朝6〜8時はまだ花見客が出ておらず、満開の桜を独り占めできる時間帯。雨の日は中目黒駅前のコーヒー店＋ベーカリーで2〜3時間粘る形になるが、人が少ない分むしろ落ち着く。時間がない場合は、目黒川を30分歩く→コーヒー1杯、で90分コースに圧縮できる。迷ったら、中目黒駅で降りて川沿いを上流方向に歩き、気になったコーヒー店で1杯飲む、というシンプルな組み立てが中目黒朝活の王道。",
+  "spots": [
+    {
+      "name": "目黒川沿い散歩（中目黒〜池尻大橋）",
+      "area": "中目黒",
+      "descHead": "目黒川沿い散歩（中目黒〜池尻大橋）は約3.8kmの遊歩道型の朝散歩コース。朝6〜9時の時間帯、ランナーと散歩する地元住民だけの静かな水辺になる。「都心で静かな朝散歩を楽しみたい」「",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "スターバックスリザーブロースタリー東京",
+      "area": "中目黒",
+      "descHead": "2019年開業のスターバックスリザーブロースタリー東京は、中目黒駅から徒歩約3分、世界で4店舗目（東京・上海・ニューヨーク・ミラノ）のスタバ旗艦店。「朝のスペシャルティコーヒーを上",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒高架下（東横線高架下）",
+      "area": "中目黒",
+      "descHead": "中目黒高架下（東横線高架下）は東急東横線の中目黒駅高架橋下を再整備した商業施設。朝7時開店のベーカリー・コーヒースタンドがあり、朝散歩の途中で軽食を調達できる。「焼きたてパンを朝の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒〜代官山の徒歩ルート",
+      "area": "中目黒〜代官山",
+      "descHead": "中目黒〜代官山の徒歩ルートは約1.5km・徒歩約15分、朝のカフェハシゴに最適。「朝7〜9時の閑静な高級住宅街を歩きたい」「中目黒と代官山の両方の朝を比べたい」目的に向く。ルート途",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "池尻大橋〜三宿方向のカフェエリア",
+      "area": "池尻大橋",
+      "descHead": "池尻大橋〜三宿方向は中目黒から目黒川を上流に1.5〜2km歩いた先のエリア。「中目黒の混雑を抜けてさらに静かなカフェを探したい」「新興のおしゃれカフェエリアを開拓したい」大人の2人",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    }
+  ]
+}

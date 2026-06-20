@@ -1,0 +1,43 @@
+{
+  "id": "new-yokohama-first-date",
+  "file": "newGuideFeatures",
+  "persona": "B",
+  "tag": "デート",
+  "currentTitle": "横浜初デート5選。初めての相手を連れて行くなら絶対外さない場所",
+  "currentSubtitle": "みなとみらい、山下公園、中華街。横浜の「定番」がなぜ定番なのか",
+  "currentLede": "初デートで横浜を選ぶなら、横浜の特徴である「港町」「中華街」「夜景」「散歩」を1日で組み合わせるのが王道。東京と違って横浜は徒歩で繋がるエリアが多く、移動の手間が少ない。対象は初〜2回目のデートで横浜デートを組みたいカップル、東京の喧騒を避けて港町の雰囲気を体験させたい人、徒歩中心で自然な会話を組みたい2人。標準は13:00集合・21:00解散の8時間コース、予算は食事込みで1人6,000〜12,000円。ここでは初デートで横浜を回るための5スポットを時系列で紹介する。",
+  "currentQuote": "横浜の「定番」は、なぜ定番かを分かっている人だけが連れて行ける場所。初めての相手に横浜を案内するなら、この5ヶ所で外れはない。",
+  "currentClosing": "標準動線: JR桜木町駅13:00集合→ランドマーク スカイガーデン（13:00〜14:30 夕景前の景観）→赤レンガ倉庫でカフェ＋ショッピング（14:30〜17:00）→大さん橋へ徒歩→夕景観賞（17:00〜18:00）→中華街へ徒歩→中華街でディナー（18:30〜20:30）→コスモクロック21の観覧車で締め（20:30〜21:00）→桜木町駅で解散。所要8時間、予算は1人6,000〜12,000円。土日夕方17〜19時はピーク混雑、特に中華街は予約推奨。雨の日はランドマーク展望・赤レンガ倉庫・中華街屋内中心で完結できる。失敗しやすいのは「観覧車の閉園時間（22時前後）を見落として乗れない」「中華街での店選びに時間がかかり次の予定が遅れる」「大さん橋での冬の防寒不足」。事前に観覧車の運行時間・中華街のディナー予約・防寒装備を確認。この記事は初〜2回目のデートで横浜デートを組みたいカップル、東京の喧騒を避けて港町を体験させたい人に最も向く。",
+  "spots": [
+    {
+      "name": "みなとみらい・ランドマークタワー〜スカイガーデン",
+      "area": "みなとみらい",
+      "descHead": "みなとみらいエリアはJR桜木町駅から徒歩5分でアクセスでき、ランドマークタワーのスカイガーデン（69階・地上273m）が観光のハイライト。「初デートで横浜のシンボル景観を見せたい」",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "赤レンガ倉庫",
+      "area": "みなとみらい",
+      "descHead": "1911年竣工の煉瓦倉庫を改修した複合施設「横浜赤レンガ倉庫」。館内にはレストラン・カフェ・物販店が60以上入り、初デートのカフェ休憩・買い物・ディナーすべてに対応する。「歴史建築",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    },
+    {
+      "name": "山下公園・大さん橋",
+      "area": "山下町",
+      "descHead": "山下公園・大さん橋エリアは1930年開園の臨海公園と1894年開港の客船ターミナル。「ベンチで30〜40分座って語り合いたい」「予算を抑えて夜景を楽しみたい」初デート層に最適。山下",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "横浜中華街",
+      "area": "中華街",
+      "descHead": "横浜中華街は150年以上の歴史を持つ日本最大の中華街で、約600軒の中華料理店と物販店が0.2km²の区画に集中している。「初デートのディナーで外れにくい場所を選びたい」2人に最適",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "コスモクロック21（夜景）",
+      "area": "みなとみらい",
+      "descHead": "1989年開園のコスモクロック21は直径100m・最高地点112.5mの観覧車で、夜のライトアップが横浜夜景の象徴。「初デートの締めとして観覧車に乗りたい」カップルに最適。1回80",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    }
+  ]
+}

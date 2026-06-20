@@ -1,0 +1,205 @@
+{
+  "id": "new-shibuya-brunch",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "渋谷ストリーム（渋谷川沿い遊歩道）",
+      "imageSubject": "渋谷ストリーム（渋谷川沿いの遊歩道と稲荷橋広場、川沿いの飲食店テラスが連なる景観）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__1__1.jpg",
+          "file": "File:Shibuya Stream Excel Hotel Tokyu.jpg",
+          "desc": "Shibuya Stream Excel Hotel Tokyu (hotel in Tokyo, Japan)",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__1__2.jpg",
+          "file": "File:Shibuya Stream-2f.jpg",
+          "desc": "渋谷ストリーム",
+          "w": 4496,
+          "h": 3000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__1__3.jpg",
+          "file": "File:Shibuya Stream-2f1.jpg",
+          "desc": "渋谷ストリーム",
+          "w": 4496,
+          "h": 3000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__1__4.jpg",
+          "file": "File:Shibuya Stream-2h.jpg",
+          "desc": "渋谷ストリーム",
+          "w": 4496,
+          "h": 3000
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "渋谷ヒカリエ（展望フロア）",
+      "imageSubject": "渋谷ヒカリエの高層ビル外観（青山通り側から見上げたガラスファサードの全景）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__2__1.jpg",
+          "file": "File:Blue Impulse T-4 in Shibuya, Tokyo 010.jpg",
+          "desc": "ブルーインパルス展示飛行（SAYONARA国立競技場） @SHIBUYA_010",
+          "w": 4000,
+          "h": 6016
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__2__2.jpg",
+          "file": "File:Blue Impulse T-4 in Shibuya, Tokyo 018.jpg",
+          "desc": "ブルーインパルス展示飛行（SAYONARA国立競技場） @SHIBUYA_018",
+          "w": 4000,
+          "h": 6016
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__2__3.jpg",
+          "file": "File:Construction on Shibuya Station seen from Yamanote Line platform - Oct 28 2019 15 51 41 090000.jpeg",
+          "desc": "工事中の渋谷駅 (construction on Shibuya Station)",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__2__4.jpg",
+          "file": "File:Construction on Shibuya Station seen from Yamanote Line platform - Oct 28 2019.jpeg",
+          "desc": "工事中の渋谷駅 (construction on Shibuya Station)",
+          "w": 3828,
+          "h": 5516
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "松濤・鉢山エリアのカフェ",
+      "imageSubject": "松濤・鉢山町の閑静な住宅街の街路（渋谷駅至近とは思えない低層住宅の並ぶ通り）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__3__1.jpg",
+          "file": "File:Nabeshima Shoto park (60387).jpg",
+          "desc": "Nabeshima Shoto park ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__3__2.jpg",
+          "file": "File:Nabeshima Shoto park (73046).jpg",
+          "desc": "Nabeshima Shoto park ",
+          "w": 3072,
+          "h": 4080
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__3__3.jpg",
+          "file": "File:Nabeshima Shoto park (81056).jpg",
+          "desc": "Nabeshima Shoto park ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__3__4.jpg",
+          "file": "File:Nabeshima Shoto park.jpg",
+          "desc": "Nabeshima Shoto park ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "渋谷スクランブルスクエア展望台（SHIBUYA SKY）",
+      "imageSubject": "SHIBUYA SKY（渋谷スクランブルスクエア屋上展望台から見下ろすスクランブル交差点と東京の街並み）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__4__1.jpg",
+          "file": "File:Shibuya Scramble Square - SHIBUYA SKY 10.jpg",
+          "desc": "渋谷スクランブルスクエア、屋外展望空間「SHIBUYA SKY -SKY STAGE」",
+          "w": 2500,
+          "h": 1521
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__4__2.jpg",
+          "file": "File:SHIBUYA SKY Logo.jpg",
+          "desc": "渋谷スカイのロゴ。",
+          "w": 5328,
+          "h": 4000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__4__3.jpg",
+          "file": "File:Shibuya Sky entrance, 14F.jpg",
+          "desc": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--b",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__4__4.jpg",
+          "file": "File:Shibuya Scramble Square SHIBUYA SKY (53083861869).jpg",
+          "desc": "渋谷スクランブルスクエア SHIBUYA SKY",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "代々木公園でのピクニックブランチ",
+      "imageSubject": "代々木公園の中央広場の芝生と樹木（噴水池や開けた芝生エリアの景観）",
+      "imageRegion": "東京都渋谷区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__5__1.jpg",
+          "file": "File:Bag to put on toilets and close afver use, during disasters.jpg",
+          "desc": "Bag to put on toilets and close afver use, during disasters ",
+          "w": 3072,
+          "h": 4080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__5__2.jpg",
+          "file": "File:Barbarian @ Yoyogi Park @ Tokyo (13406878615).jpg",
+          "desc": "Barbarian @ Yoyogi Park @ Tokyo",
+          "w": 2976,
+          "h": 3968
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__5__3.jpg",
+          "file": "File:Bridge Yoyogipark.JPG",
+          "desc": "Bridge on pond in Yoyogi-park at Tokyo on holiday",
+          "w": 800,
+          "h": 450
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shibuya-brunch__5__4.jpg",
+          "file": "File:Can Am 3-wheel motorcycle leading Mario-style karts near Yoyogi Park.jpg",
+          "desc": "Can Am 3-wheel motorcycle leading Mario-style karts near Yoyogi Park ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    }
+  ]
+}

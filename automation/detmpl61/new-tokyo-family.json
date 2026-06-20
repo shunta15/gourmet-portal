@@ -1,0 +1,43 @@
+{
+  "id": "new-tokyo-family",
+  "file": "newGuideFeatures2",
+  "persona": "B",
+  "tag": "ファミリー",
+  "currentTitle": "東京ファミリー5選。子連れで楽しめる定番スポット",
+  "currentSubtitle": "上野動物園、国立科学博物館、葛西臨海公園。子どもと一日過ごせる東京",
+  "currentLede": "東京は子連れで一日過ごせる施設の選択肢が、世界の主要都市の中でも特に厚い街だ。動物園・科学博物館・水族館・大型公園・体験型施設がそれぞれ徒歩圏で繋がるエリアが複数あり、上野・葛西・有明の3エリアを軸にすれば、子どもの年齢や興味に合わせて動線を組み直しやすい。ファミリー向けの「定番」と「最近開業した新顔」を組み合わせると、リピート訪問でも飽きにくい。ここでは未就学児〜小学生連れに使いやすい5スポットを、エリアと屋内/屋外のバランスを意識して紹介する。",
+  "currentQuote": "東京の子連れスポットは、上野エリアに集中している。動物園・博物館・公園を組み合わせると一日かけても回りきれない。",
+  "currentClosing": "標準動線（上野コース）は、上野動物園（9:30〜12:00）→公園内で昼食→国立科学博物館（13:00〜16:00）→アメ横で夕食。湾岸コースは、葛西臨海公園・水族園（10:00〜13:00）→東京都水の科学館（有明、14:00〜15:30）→お台場で夕食。所要6〜8時間で1日コースが組める。「未就学児〜小学生連れの家族」「リピート訪問する地元家族」「祖父母を交えた三世代旅行」に向く。土日祝・連休のよみうりランド・上野動物園は朝イチ入園が必須で、午後到着だと主要アトラクション・パンダ舎で長時間待ちになる。雨の日は国立科学博物館・葛西臨海水族園・東京都水の科学館の屋内3施設で1日が組める。時間が足りない場合は、上野動物園（午前）と国立科学博物館（午後）の2点に絞れば1日コースとして完成度が高い。子どもの体力を考えると、午前1施設＋昼食＋午後1施設＋夕食、の2施設構成が無理がない。",
+  "spots": [
+    {
+      "name": "上野動物園",
+      "area": "上野",
+      "descHead": "1882年開園、日本最古の動物園。ジャイアントパンダ・ゴリラ・ホッキョクグマ・アムールトラ・キリンなど、「動物図鑑で見たことのある動物」がほぼ揃っている密度の高い動物園。東園と西園",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "国立科学博物館（上野）",
+      "area": "上野",
+      "descHead": "上野公園内、日本最大の科学博物館。日本館（建物自体が重要文化財）と地球館の2棟構成で、恐竜の骨格標本・宇宙の展示・ゾウやマンモスの剥製・日本列島の自然史を網羅する。ティラノサウルス",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "葛西臨海公園・水族館",
+      "area": "葛西",
+      "descHead": "東京湾に面した広大な公園で、葛西臨海水族園・大観覧車・芝生広場・渚エリアが揃う。水族園のマグロが回遊する大水槽は世界最大級で、ペンギン・サメ・東京湾の魚類を1〜2時間で見られる。公",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "よみうりランド",
+      "area": "稲城市",
+      "descHead": "東京都稲城市と神奈川県川崎市にまたがる本格的な遊園地。絶叫系のジェットコースター・子ども向けの小型ライド・夏季営業の屋外プール「WAI」が揃い、1日かけて楽しめる規模。新宿・渋谷か",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "東京都水の科学館",
+      "area": "有明",
+      "descHead": "ゆりかもめ・有明テニスの森駅から徒歩3分、東京都水道局が運営する無料の体験型科学館。水道水ができる仕組み・水循環・浄水場の役割を、模型・ゲーム・映像・体験ブースで学べる。対象は小学",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg"
+    }
+  ]
+}

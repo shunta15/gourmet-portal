@@ -1,0 +1,2217 @@
+{
+  "new-minatomirai-date": [
+    {
+      "name": "汽車道",
+      "area": "みなとみらい",
+      "imageSubject": "横浜の汽車道（旧横浜港駅の貨物線路を活かした海上の遊歩道。鉄橋・線路跡が残る板張りプロムナードと両側の水面）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg"
+    },
+    {
+      "name": "コスモクロック21 / コスモワールド",
+      "area": "みなとみらい",
+      "imageSubject": "よこはまコスモワールドの大観覧車コスモクロック21（直径100m級の時計付き観覧車、夜はカラフルにライトアップ）",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    },
+    {
+      "name": "臨港パーク",
+      "area": "みなとみらい",
+      "imageSubject": "臨港パーク（パシフィコ横浜に隣接する海沿いの芝生公園。海とベイブリッジを望む広場）",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "横浜ランドマークタワー スカイガーデン",
+      "area": "みなとみらい",
+      "imageSubject": "横浜ランドマークタワー（高さ296mの超高層ビル。69階スカイガーデン展望フロアを擁する外観全景）",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "大さん橋国際客船ターミナル",
+      "area": "中区・山下",
+      "imageSubject": "横浜港大さん橋国際客船ターミナル（クジラの背中と呼ばれる波打つ木製デッキの屋上）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+    }
+  ],
+  "new-minatomirai-rainy-date": [
+    {
+      "name": "カップヌードルミュージアム 横浜",
+      "area": "みなとみらい",
+      "imageSubject": "カップヌードルミュージアム横浜の白い外観建物（日清食品の体験型ミュージアム）",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "横浜美術館",
+      "area": "みなとみらい",
+      "imageSubject": "横浜美術館の石貼りの正面ファサード（丹下健三設計、左右対称の大階段とエントランス）",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "マークイズみなとみらい",
+      "area": "みなとみらい",
+      "imageSubject": "マークイズみなとみらいの大型ショッピングモール外観（みなとみらい駅直結の商業ビル）",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "横浜ランドマークタワー スカイガーデン",
+      "area": "みなとみらい",
+      "imageSubject": "横浜ランドマークタワー（地上70階の超高層ビル全景、スカイガーデンを擁する建物）",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "YOKOHAMA AIR CABIN",
+      "area": "みなとみらい",
+      "imageSubject": "YOKOHAMA AIR CABINのゴンドラと支柱（桜木町〜運河パークを結ぶ都市型ロープウェイ）",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    }
+  ],
+  "new-sakuragicho-night-date": [
+    {
+      "name": "汽車道（夜）",
+      "area": "みなとみらい",
+      "imageSubject": "横浜・汽車道（旧鉄道橋を活かした海上の遊歩道）の夜景。両側の街灯と水面の反射、対岸のランドマークタワーとコスモクロック21",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg/1280px-Kishamichi_Promenade_%40_Yokohama_%289052296957%29.jpg"
+    },
+    {
+      "name": "コスモクロック21（夜）",
+      "area": "みなとみらい",
+      "imageSubject": "よこはまコスモワールドの大観覧車コスモクロック21の夜のライトアップ全景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    },
+    {
+      "name": "YOKOHAMA AIR CABIN（夜）",
+      "area": "みなとみらい",
+      "imageSubject": "YOKOHAMA AIR CABIN（桜木町駅前と運河パーク駅を結ぶ都市型ロープウェイ）のゴンドラと夜景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "野毛山公園（夜景スポット）",
+      "area": "野毛",
+      "imageSubject": "野毛山公園（高台の展望広場）から見下ろすみなとみらいの夜景",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    },
+    {
+      "name": "新港ふ頭・横浜ハンマーヘッド",
+      "area": "新港",
+      "imageSubject": "横浜ハンマーヘッド（新港ふ頭客船ターミナル）と港のハンマーヘッドクレーンの外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    }
+  ],
+  "new-akarenga-date": [
+    {
+      "name": "横浜赤レンガ倉庫",
+      "area": "新港",
+      "imageSubject": "横浜赤レンガ倉庫の煉瓦造り2棟の外観（1号館・2号館）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    },
+    {
+      "name": "象の鼻パーク",
+      "area": "新港",
+      "imageSubject": "象の鼻パークの象の鼻のような曲線を描く防波堤テラスと横浜港の眺め",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Osanbashi_Pier_from_Sea.jpg/1280px-Osanbashi_Pier_from_Sea.jpg"
+    },
+    {
+      "name": "横浜ハンマーヘッド",
+      "area": "新港",
+      "imageSubject": "横浜ハンマーヘッド（新港ふ頭客船ターミナル複合施設）の建物外観とハンマーヘッドクレーン",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    }
+  ],
+  "new-osanbashi-nightview-date": [
+    {
+      "name": "大さん橋国際客船ターミナル 屋上デッキ",
+      "area": "中区・新港",
+      "imageSubject": "横浜・大さん橋国際客船ターミナルの屋上デッキ「クジラの背中」と呼ばれるうねる木製ウッドデッキと、その先に広がるみなとみらいの夜景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
+    },
+    {
+      "name": "山下公園（夜）",
+      "area": "中区・山下",
+      "imageSubject": "横浜・山下公園の海沿い遊歩道と、夜間ライトアップされた係留中の客船・氷川丸",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "港の見える丘公園",
+      "area": "山手",
+      "imageSubject": "横浜・港の見える丘公園の展望台から見下ろす横浜ベイブリッジと横浜港の夜景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    }
+  ],
+  "new-bashamichi-architecture": [
+    {
+      "name": "神奈川県立歴史博物館（旧横浜正金銀行本店）",
+      "area": "馬車道",
+      "imageSubject": "神奈川県立歴史博物館（旧横浜正金銀行本店、緑青のドームを戴く西洋古典主義の石造建築）の正面外観",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "旧横浜市庁舎（横浜市歴史的建造物）",
+      "area": "関内",
+      "imageSubject": "旧横浜市庁舎（村野藤吾設計の戦後モダニズム建築、北棟・南棟と中庭）の外観",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜第二合同庁舎（旧横浜生糸検査所）",
+      "area": "馬車道",
+      "imageSubject": "横浜第二合同庁舎（旧横浜生糸検査所、遠藤於菟設計の煉瓦建築）の煉瓦外観",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    },
+    {
+      "name": "神奈川県庁本庁舎（キングの塔）",
+      "area": "関内",
+      "imageSubject": "神奈川県庁本庁舎（横浜三塔のキングの塔、塔屋を載せた庁舎建築）の塔を含む外観",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜開港資料館（旧英国総領事館）",
+      "area": "日本大通り",
+      "imageSubject": "横浜開港資料館（旧英国総領事館の建物、中庭の玉楠の木がある赤瓦の館）の外観",
+      "imageRegion": "神奈川県横浜市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    }
+  ],
+  "new-kannai-nihondori": [
+    {
+      "name": "日本大通り",
+      "area": "関内",
+      "imageSubject": "日本大通りの幅広い並木道と沿道の神奈川県庁本庁舎（キングの塔）の景観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜市開港記念会館（ジャックの塔）",
+      "area": "関内",
+      "imageSubject": "横浜市開港記念会館（ジャックの塔）の赤レンガと白石の時計塔外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "横浜スタジアム周辺（横浜公園）",
+      "area": "関内",
+      "imageSubject": "横浜スタジアムを囲む横浜公園の広場・遊歩道（春のチューリップ花壇）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    },
+    {
+      "name": "横浜開港資料館",
+      "area": "日本大通り",
+      "imageSubject": "横浜開港資料館（旧英国総領事館）の煉瓦造り本館外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
+    },
+    {
+      "name": "馬車道商店街",
+      "area": "馬車道",
+      "imageSubject": "馬車道商店街の歴史的なメインストリートとガス灯・近代建築の街並み",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
+    }
+  ],
+  "new-yamashita-date": [
+    {
+      "name": "山下公園",
+      "area": "中区・山下",
+      "imageSubject": "山下公園の海沿い遊歩道とみなとみらい21の対岸スカイライン",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "氷川丸（日本郵船氷川丸）",
+      "area": "山下",
+      "imageSubject": "山下公園に係留された貨客船・日本郵船氷川丸の船体外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "港の見える丘公園",
+      "area": "山手",
+      "imageSubject": "港の見える丘公園の展望台から見下ろす横浜港とベイブリッジの眺望",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "山手西洋館エリア（ブラフ18番館など）",
+      "area": "山手",
+      "imageSubject": "山手西洋館ブラフ18番館の白い木造洋館の外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "マリンタワー",
+      "area": "山下",
+      "imageSubject": "横浜マリンタワー（高さ106mの塔）の全景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Parque_Yamashita_2.JPG/1280px-Parque_Yamashita_2.JPG"
+    }
+  ],
+  "new-chinatown-sightseeing": [
+    {
+      "name": "横浜中華街（街歩き）",
+      "area": "中華街",
+      "imageSubject": "横浜中華街・中華街大通りの賑わい（牌楼が立ち並ぶメインストリートと飲茶・点心店の店先）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "関帝廟（横浜中華街）",
+      "area": "中華街",
+      "imageSubject": "横浜中華街・関帝廟の極彩色の外観（関羽を祀る朱と金で装飾された廟建築の正面）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "横浜媽祖廟",
+      "area": "中華街",
+      "imageSubject": "横浜媽祖廟の朱色の楼門と本殿外観（2006年建立、中華街の航海の女神を祀る廟）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yokohama_Chinatowns_East_Gate_At_Night.jpg/1280px-Yokohama_Chinatowns_East_Gate_At_Night.jpg"
+    },
+    {
+      "name": "山下公園（食後の散歩）",
+      "area": "山下",
+      "imageSubject": "山下公園から望む横浜港とみなとみらいの眺め（海沿いの臨海公園の遊歩道と芝生）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "元町ショッピングストリート",
+      "area": "元町",
+      "imageSubject": "元町ショッピングストリートの街並み（外国人居留地由来の落ち着いた商店通り）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    }
+  ],
+  "new-motomachi-yamate": [
+    {
+      "name": "元町ショッピングストリート",
+      "area": "元町",
+      "imageSubject": "横浜・元町ショッピングストリートの石畳の商店街並み（フェニックスアーチや街灯の並ぶメインストリート）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "外国人墓地（横浜外国人墓地）",
+      "area": "山手",
+      "imageSubject": "横浜外国人墓地の斜面に並ぶ西洋式の墓碑群（山手の丘の上にある外国人墓地）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "ブラフ18番館",
+      "area": "山手",
+      "imageSubject": "ブラフ18番館の白い外壁と緑の窓枠を持つ大正期の西洋館外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "山手イタリア山庭園",
+      "area": "山手",
+      "imageSubject": "山手イタリア山庭園の幾何学式に刈り込まれた整形庭園と外交官の家（重要文化財）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
+    },
+    {
+      "name": "港の見える丘公園",
+      "area": "山手",
+      "imageSubject": "港の見える丘公園の展望台から望む横浜港とベイブリッジの眺望",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    }
+  ],
+  "new-yokohama-station-rainy": [
+    {
+      "name": "そごう横浜店",
+      "area": "横浜駅東口",
+      "imageSubject": "そごう横浜店の建物外観（横浜駅東口に直結する大型百貨店ビル）",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜ポルタ",
+      "area": "横浜駅",
+      "imageSubject": "横浜駅東口地下街「横浜ポルタ」の地下通路と店舗が並ぶ屋内コンコース",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜ジョイナス",
+      "area": "横浜駅",
+      "imageSubject": "横浜駅西口の商業施設「相鉄ジョイナス」の館内または外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜モアーズ",
+      "area": "横浜駅西口",
+      "imageSubject": "横浜駅西口直結の商業施設「横浜モアーズ」の建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜高島屋",
+      "area": "横浜駅西口",
+      "imageSubject": "横浜駅西口直結の百貨店「横浜高島屋」の建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    }
+  ],
+  "new-yokohama-station-bored": [
+    {
+      "name": "そごう美術館",
+      "area": "横浜駅東口",
+      "imageSubject": "横浜そごう（そごう横浜店）が入る横浜駅東口の大型百貨店ビルの外観。そごう美術館は同店8階に入る",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "アソビル",
+      "area": "横浜駅東口",
+      "imageSubject": "横浜駅東口の体験型エンタメ施設アソビルの建物外観",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜ポルタ（散策）",
+      "area": "横浜駅",
+      "imageSubject": "横浜駅東口の地下街・横浜ポルタの店舗が並ぶ地下通路の様子",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "CIAL横浜",
+      "area": "横浜駅",
+      "imageSubject": "横浜駅西口直結の駅ビル型商業施設CIAL横浜の外観またはフロアの様子",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    },
+    {
+      "name": "横浜ランドマークタワー展望台（スカイガーデン）",
+      "area": "みなとみらい",
+      "imageSubject": "横浜ランドマークタワー（みなとみらいの超高層ビル）の全景。69階に展望フロア「スカイガーデン」がある",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yokohama-STA_East-2023.jpg/1280px-Yokohama-STA_East-2023.jpg"
+    }
+  ],
+  "new-noge-bar-hop": [
+    {
+      "name": "都橋商店街（野毛小路）",
+      "area": "野毛",
+      "imageSubject": "都橋商店街の外観。大岡川沿いに弧を描いて連なる昭和30年代の木造2階建て長屋型飲み屋ビル群",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+    },
+    {
+      "name": "野毛大道芸エリア（野毛本通り）",
+      "area": "野毛",
+      "imageSubject": "野毛本通り（野毛の中心飲み屋街）の路地。提灯やもつ焼き・大衆酒場の看板が密集する夜の通り",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+    },
+    {
+      "name": "日ノ出町ガード下",
+      "area": "日ノ出町",
+      "imageSubject": "京急本線・日ノ出町駅の高架下に小さなバーや飲食店が並ぶガード下の一帯",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg/1280px-Seiyosha_stockroom_NOGE_storefront_Yokohama.jpg"
+    }
+  ],
+  "new-shin-yokohama-bored": [
+    {
+      "name": "新横浜ラーメン博物館",
+      "area": "新横浜",
+      "imageSubject": "新横浜ラーメン博物館の館内・昭和レトロな路地を再現したジオラマ空間（地下フロアの夕暮れ風セットと提灯）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜スケートセンター",
+      "area": "新横浜",
+      "imageSubject": "新横浜スケートセンターのアイススケートリンク（屋内の白い氷面）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜公園",
+      "area": "新横浜",
+      "imageSubject": "新横浜公園の鶴見川沿いに広がる芝生広場と遊歩道（日産スタジアムを背にした緑地）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "キュービックプラザ新横浜",
+      "area": "新横浜",
+      "imageSubject": "キュービックプラザ新横浜の外観（新横浜駅直結の高層複合ビル）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "日産スタジアム（横浜国際総合競技場）",
+      "area": "新横浜",
+      "imageSubject": "日産スタジアム（横浜国際総合競技場）の大屋根と外観全景",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    }
+  ],
+  "new-yokohama-arena-spots": [
+    {
+      "name": "新横浜ラーメン博物館",
+      "area": "新横浜",
+      "imageSubject": "新横浜ラーメン博物館の館内、昭和30年代の街並みを再現した薄暗い路地と提灯・看板のレトロな空間",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜公園・鶴見川沿い遊歩道",
+      "area": "新横浜",
+      "imageSubject": "新横浜公園と鶴見川沿いの広々とした遊歩道・芝生広場（背後に日産スタジアムが見える河川沿いの開けた風景）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "キュービックプラザ新横浜",
+      "area": "新横浜",
+      "imageSubject": "新横浜駅直結の駅ビル「キュービックプラザ新横浜」の外観（ガラス張りの高層商業施設ビル）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜スケートセンター",
+      "area": "新横浜",
+      "imageSubject": "新横浜スケートセンターの屋内アイススケートリンク（白い氷の滑走面と観客席）",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜近辺のカフェ・コワーキング",
+      "area": "新横浜",
+      "imageSubject": "新横浜駅前のカフェの店内、コーヒーカップとテーブル席のくつろいだ様子",
+      "imageRegion": "神奈川県横浜市港北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    }
+  ],
+  "new-kamakura-komachi": [
+    {
+      "name": "小町通り",
+      "area": "鎌倉駅東口",
+      "imageSubject": "鎌倉・小町通りの商店街（飲食店や和雑貨店が並ぶ歩行者で賑わうアーケード型参道商店街）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鶴岡八幡宮",
+      "area": "雪ノ下",
+      "imageSubject": "鶴岡八幡宮の朱塗りの本宮（大石段の上に建つ楼門と社殿）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鎌倉国宝館",
+      "area": "雪ノ下",
+      "imageSubject": "鎌倉の老舗和菓子店の店頭（豆菓子や鳩サブレーなど鎌倉土産が並ぶ和菓子店の店構え）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "若宮大路",
+      "area": "鎌倉駅周辺",
+      "imageSubject": "若宮大路の段葛（鶴岡八幡宮へ続く一段高い桜並木の参道）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    },
+    {
+      "name": "鎌倉幕府跡（鎌倉歴史文化交流館）",
+      "area": "御成町",
+      "imageSubject": "鎌倉駅西側・御成町の静かな路地（観光の喧騒を離れた住宅街の個人店が点在する通り）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
+    }
+  ],
+  "new-hase-yuigahama-date": [
+    {
+      "name": "高徳院（鎌倉大仏）",
+      "area": "長谷",
+      "imageSubject": "高徳院の露坐の鎌倉大仏（屋外に座す青銅の阿弥陀如来坐像、高さ約11.3m）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg"
+    },
+    {
+      "name": "長谷寺",
+      "area": "長谷",
+      "imageSubject": "長谷寺の山腹の境内と眺望散策路から見下ろす由比ヶ浜の海",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    },
+    {
+      "name": "由比ヶ浜海岸",
+      "area": "由比ヶ浜",
+      "imageSubject": "由比ヶ浜海岸の広い砂浜と相模湾（夕景・富士山が望める日もある約900mのビーチ）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+    },
+    {
+      "name": "鎌倉文学館",
+      "area": "長谷",
+      "imageSubject": "長谷の路地に並ぶ鎌倉のカフェ・洋食店の店構え",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Yuigahama_2025_June_30_various_2.jpg/1280px-Yuigahama_2025_June_30_various_2.jpg"
+    },
+    {
+      "name": "江ノ電 長谷駅周辺カフェ",
+      "area": "長谷",
+      "imageSubject": "鎌倉文学館（旧前田侯爵家鎌倉別邸を改装した洋館の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    }
+  ],
+  "new-enoshima-evening-date": [
+    {
+      "name": "江ノ島シーキャンドル（江の島展望灯台）",
+      "area": "江ノ島",
+      "imageSubject": "江の島シーキャンドル（江の島展望灯台）の塔の外観と展望台",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    },
+    {
+      "name": "稚児ヶ淵",
+      "area": "江ノ島 岩屋",
+      "imageSubject": "稚児ヶ淵の岩場と相模湾の夕景（江の島最奥部の磯）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島岩屋洞窟",
+      "area": "江ノ島 岩屋",
+      "imageSubject": "江の島岩屋洞窟（海食洞）のロウソクで照らされた洞内通路",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島弁天仲見世通り",
+      "area": "江ノ島",
+      "imageSubject": "江の島弁天仲見世通りの土産物店が並ぶ参道の街並み",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "湘南港（ヨットハーバー）",
+      "area": "江ノ島",
+      "imageSubject": "湘南港（江の島ヨットハーバー）に係留されたヨットと桟橋",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    }
+  ],
+  "new-kamakura-rainy": [
+    {
+      "name": "鎌倉国宝館",
+      "area": "雪ノ下",
+      "imageSubject": "鎌倉国宝館（鎌倉・鶴岡八幡宮境内にある校倉造風の博物館建築の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "長谷寺（雨天）",
+      "area": "長谷",
+      "imageSubject": "長谷寺（鎌倉長谷寺の本堂と境内、観音山の斜面に広がる伽藍）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    },
+    {
+      "name": "円覚寺",
+      "area": "北鎌倉",
+      "imageSubject": "円覚寺（北鎌倉・円覚寺の山門／三門の木造楼門）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "建長寺（方丈・庭園）",
+      "area": "山ノ内",
+      "imageSubject": "建長寺の方丈（龍王殿）と庭園（背後の山を借景にした池泉庭園）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "鎌倉歴史文化交流館",
+      "area": "御成町",
+      "imageSubject": "鎌倉歴史文化交流館（御成町にあるモダニズム建築の外観）",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    }
+  ],
+  "new-kawasaki-rainy-date": [
+    {
+      "name": "ラゾーナ川崎プラザ",
+      "area": "川崎駅西口",
+      "imageSubject": "ラゾーナ川崎プラザの建物外観（川崎駅西口直結の大型商業施設、曲面ガラスのファサード）",
+      "imageRegion": "神奈川県川崎市幸区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "ユナイテッド・シネマ川崎（ラゾーナ内）",
+      "area": "川崎駅西口",
+      "imageSubject": "ラゾーナ川崎プラザ内のユナイテッド・シネマ川崎（シネマコンプレックスのエントランス・スクリーン入口周辺）",
+      "imageRegion": "神奈川県川崎市幸区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "川崎チネチッタ",
+      "area": "川崎駅東口",
+      "imageSubject": "川崎チネチッタのイタリア風の街並みを模したエンタメ施設外観（ラ・チッタデッラの広場・建物）",
+      "imageRegion": "神奈川県川崎市川崎区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "川崎市藤子・F・不二雄ミュージアム",
+      "area": "登戸（川崎市多摩区）",
+      "imageSubject": "川崎市藤子・F・不二雄ミュージアムの建物外観（ドラえもんをテーマにしたミュージアム）",
+      "imageRegion": "神奈川県川崎市多摩区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "川崎市市民ミュージアム（仮移転中）",
+      "area": "川崎",
+      "imageSubject": "川崎市市民ミュージアム（川崎市の歴史・文化を展示する博物館の建物）",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    }
+  ],
+  "new-musashikosugi-family": [
+    {
+      "name": "等々力緑地",
+      "area": "武蔵小杉",
+      "imageSubject": "等々力緑地の広い芝生広場と等々力陸上競技場（川崎フロンターレのホームスタジアム）",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "ららテラス武蔵小杉",
+      "area": "武蔵小杉",
+      "imageSubject": "ららテラス武蔵小杉の商業施設外観（武蔵小杉駅東急口直結）",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "グランツリー武蔵小杉",
+      "area": "武蔵小杉",
+      "imageSubject": "グランツリー武蔵小杉の大型商業施設外観（武蔵小杉駅JR口直結）",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "中原市民館・中原図書館",
+      "area": "武蔵小杉",
+      "imageSubject": "中原市民館・中原図書館が入る川崎市中原区の公共施設の建物外観",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    },
+    {
+      "name": "丸子橋・多摩川河川敷",
+      "area": "武蔵小杉",
+      "imageSubject": "丸子橋と多摩川の河川敷（東京・神奈川の境を流れる多摩川）",
+      "imageRegion": "神奈川県川崎市中原区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+    }
+  ],
+  "new-tamaplaza-azamino": [
+    {
+      "name": "たまプラーザテラス",
+      "area": "たまプラーザ",
+      "imageSubject": "たまプラーザ駅前と直結する商業施設「たまプラーザテラス」のガーデンウォーク／駅前広場の外観",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+    },
+    {
+      "name": "こどもの国（横浜市）",
+      "area": "恩田・成瀬",
+      "imageSubject": "横浜市「こどもの国」の広い芝生広場・牧場や園内の緑地の風景",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+    },
+    {
+      "name": "横浜市こども植物園",
+      "area": "旭区（二俣川）",
+      "imageSubject": "横浜市こども植物園の温室・花壇など園内の植物景観",
+      "imageRegion": "神奈川県横浜市旭区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+    },
+    {
+      "name": "あざみ野ガーデンズ",
+      "area": "あざみ野",
+      "imageSubject": "あざみ野駅近くの商業施設「あざみ野ガーデンズ」の外観・中庭",
+      "imageRegion": "神奈川県横浜市青葉区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+    },
+    {
+      "name": "港北ニュータウン・都筑区公園群",
+      "area": "都筑区",
+      "imageSubject": "港北ニュータウン（都筑区）の遊歩道・緑道（せせらぎ緑道など）の並木と歩道",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tama-Plaza_Station_02.jpg/1280px-Tama-Plaza_Station_02.jpg"
+    }
+  ],
+  "new-hakoneyumoto": [
+    {
+      "name": "箱根湯本温泉（日帰り入浴）",
+      "area": "箱根湯本",
+      "imageSubject": "箱根湯本駅の駅舎外観（箱根登山鉄道の起点駅、山あいの三角屋根の駅舎）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "天山湯治郷",
+      "area": "箱根湯本",
+      "imageSubject": "天山湯治郷の和風の日帰り温泉施設外観・露天風呂（早川支流沿いの木造湯治場）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根湯本商店街",
+      "area": "箱根湯本",
+      "imageSubject": "箱根湯本駅前から早川沿いに続く土産物店が並ぶ商店街の通り",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根湯本美術館",
+      "area": "箱根湯本",
+      "imageSubject": "箱根湯本駅周辺の小規模美術館の建物外観",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    },
+    {
+      "name": "箱根登山電車（湯本→強羅）",
+      "area": "箱根湯本→強羅",
+      "imageSubject": "箱根登山電車の赤い車両（湯本〜強羅間を走るスイッチバックの山岳鉄道）",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
+    }
+  ],
+  "new-odawara": [
+    {
+      "name": "小田原城",
+      "area": "小田原",
+      "imageSubject": "小田原城の復興天守閣（小田原城址公園、白壁に銅瓦屋根の三重四階の天守）",
+      "imageRegion": "神奈川県小田原市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+    },
+    {
+      "name": "小田原かまぼこの里（鈴廣）",
+      "area": "風祭",
+      "imageSubject": "鈴廣かまぼこの里（風祭の鈴廣本店、蒲鉾店舗群の外観）",
+      "imageRegion": "神奈川県小田原市風祭",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+    },
+    {
+      "name": "小田原宿なりわい交流館",
+      "area": "小田原",
+      "imageSubject": "小田原宿なりわい交流館（旧網問屋を再生した出桁造りの木造町家建築）",
+      "imageRegion": "神奈川県小田原市本町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Odawara_Castle_02.jpg/1280px-Odawara_Castle_02.jpg"
+    },
+    {
+      "name": "小田原漁港（早川港）",
+      "area": "早川",
+      "imageSubject": "小田原漁港・早川港（漁船が並ぶ岸壁と相模湾の港の風景）",
+      "imageRegion": "神奈川県小田原市早川",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Odawara_Castle_02.jpg/1280px-Odawara_Castle_02.jpg"
+    },
+    {
+      "name": "小田原文学館・白秋童謡館",
+      "area": "小田原",
+      "imageSubject": "小田原文学館（旧田中光顕別邸のスパニッシュ様式の洋館建築）",
+      "imageRegion": "神奈川県小田原市南町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
+    }
+  ],
+  "new-chigasaki-beach": [
+    {
+      "name": "サザンビーチちがさき",
+      "area": "茅ヶ崎",
+      "imageSubject": "サザンビーチちがさきの白い砂浜と相模湾、沖に浮かぶ烏帽子岩を望む海岸風景",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "ヘッドランド（突堤）",
+      "area": "茅ヶ崎",
+      "imageSubject": "サザンビーチちがさき東端に突き出たヘッドランド（人工岬・約100mの突堤）の海に伸びる堤防",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "Tバー（チャーム茅ヶ崎）周辺カフェ群",
+      "area": "茅ヶ崎",
+      "imageSubject": "茅ヶ崎駅南口から海岸へ向かうサーファー文化の通り沿いの街並み（Tバー＝チャーム茅ヶ崎周辺のサーフ系カフェ街）",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "旧相模川橋脚（国指定史跡）",
+      "area": "茅ヶ崎",
+      "imageSubject": "旧相模川橋脚（国指定史跡・関東大震災で隆起した鎌倉時代の橋脚跡）の保存遺構",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    },
+    {
+      "name": "茅ヶ崎公園（里山の丘公園）",
+      "area": "茅ヶ崎",
+      "imageSubject": "茅ヶ崎公園（里山の丘公園）の芝生広場と里山の緑・遊歩道",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
+    }
+  ],
+  "new-fujisawa-bored": [
+    {
+      "name": "藤沢駅周辺ショッピング（藤沢ルミネ・サンパール広場）",
+      "area": "藤沢駅",
+      "imageSubject": "藤沢駅北口の駅前再開発エリア（ルミネ藤沢・ODAKYU湘南GATEが面するサンパール広場のデッキと駅前風景）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "鵠沼海岸（辻堂〜片瀬）",
+      "area": "鵠沼海岸",
+      "imageSubject": "鵠沼海岸の砂浜とサーファーが浮かぶ相模湾（海岸沿いに江の島を望む湘南の砂浜）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島（藤沢からのアクセス）",
+      "area": "片瀬江ノ島",
+      "imageSubject": "江の島の遠景（相模湾に浮かぶ島影と頂上の江の島シーキャンドル展望灯台）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    },
+    {
+      "name": "藤沢市民ギャラリー",
+      "area": "藤沢",
+      "imageSubject": "藤沢駅北口の商業ビルODAKYU湘南GATE（6階に藤沢市民ギャラリーが入る駅前ビルの外観）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "藤沢本町・遊行寺",
+      "area": "藤沢本町",
+      "imageSubject": "遊行寺（清浄光寺）の本堂と参道（時宗総本山の境内と長い石段の参道）",
+      "imageRegion": "神奈川県藤沢市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    }
+  ],
+  "new-yokosuka-dobuita": [
+    {
+      "name": "どぶ板通り",
+      "area": "横須賀中央",
+      "imageSubject": "横須賀どぶ板通り商店街のアーケードと、スカジャン店やアメリカン食堂が並ぶ通りの街並み",
+      "imageRegion": "神奈川県横須賀市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+    },
+    {
+      "name": "猿島（東京湾唯一の無人島）",
+      "area": "猿島",
+      "imageSubject": "猿島（東京湾の無人島）に残る明治期の旧軍要塞跡で、煉瓦造りのトンネルや砲台跡の遺構",
+      "imageRegion": "神奈川県横須賀市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+    },
+    {
+      "name": "三笠公園・戦艦三笠",
+      "area": "横須賀",
+      "imageSubject": "三笠公園に記念艦として保存・展示されている戦艦三笠（日露戦争の旗艦）の艦体",
+      "imageRegion": "神奈川県横須賀市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+    },
+    {
+      "name": "ヴェルニー公園（横須賀港ビュー）",
+      "area": "横須賀",
+      "imageSubject": "ヴェルニー公園のフランス式庭園と、対岸に横須賀港・潜水艦が見える港の眺望",
+      "imageRegion": "神奈川県横須賀市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+    },
+    {
+      "name": "横須賀美術館",
+      "area": "観音崎",
+      "imageSubject": "観音崎の高台に建つ横須賀美術館（山本理顕設計）の現代建築外観と東京湾を望むロケーション",
+      "imageRegion": "神奈川県横須賀市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
+    }
+  ],
+  "new-miura-kaigan": [
+    {
+      "name": "三浦海岸",
+      "area": "三浦海岸",
+      "imageSubject": "三浦海岸の白い砂浜と相模湾を望む海岸線（京急三浦海岸駅近くの約1kmのビーチ）",
+      "imageRegion": "神奈川県三浦市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+    },
+    {
+      "name": "城ヶ島",
+      "area": "三浦市城ヶ島",
+      "imageSubject": "城ヶ島から望む相模湾と城ヶ島灯台（三浦半島最南端の島の岩礁海岸）",
+      "imageRegion": "神奈川県三浦市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Miura_Kaigan_02.jpg/1280px-Miura_Kaigan_02.jpg"
+    },
+    {
+      "name": "三崎港・まぐろの食堂街",
+      "area": "三崎港",
+      "imageSubject": "三崎港のマグロ（三浦市三崎港の漁港と海鮮丼の食堂街）",
+      "imageRegion": "神奈川県三浦市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Miura_Kaigan_02.jpg/1280px-Miura_Kaigan_02.jpg"
+    },
+    {
+      "name": "剱崎（けんざき）灯台",
+      "area": "三浦市剱崎",
+      "imageSubject": "剱崎灯台（三浦半島南東端に建つ白い灯台、1871年初点灯）",
+      "imageRegion": "神奈川県三浦市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+    },
+    {
+      "name": "三浦海岸 河津桜まつり（1〜2月）",
+      "area": "三浦海岸",
+      "imageSubject": "三浦海岸の河津桜並木（線路沿いに咲く早咲きの河津桜と菜の花）",
+      "imageRegion": "神奈川県三浦市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
+    }
+  ],
+  "new-kohoku-nt-family": [
+    {
+      "name": "モザイクモール港北",
+      "area": "センター北",
+      "imageSubject": "モザイクモール港北の屋上に設置された大型観覧車（センター北駅前のショッピングモール屋上の赤い観覧車）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+    },
+    {
+      "name": "都筑区ふるさと公園",
+      "area": "都筑区",
+      "imageSubject": "都筑区ふるさと公園の芝生広場と園内の池・遊歩道のある里山風景",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+    },
+    {
+      "name": "大塚・歳勝土遺跡公園（弥生の丘展示館）",
+      "area": "都筑区",
+      "imageSubject": "大塚・歳勝土遺跡公園に復元された弥生時代の竪穴住居（茅葺きの復元住居群）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+    },
+    {
+      "name": "港北ニュータウン緑道（牛久保緑道ほか）",
+      "area": "港北区〜都筑区",
+      "imageSubject": "港北ニュータウン緑道の遊歩道（樹木に囲まれた歩行者専用の緑道の小径）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+    },
+    {
+      "name": "横浜市歴史博物館",
+      "area": "センター北",
+      "imageSubject": "横浜市歴史博物館の建物外観（センター北駅近くの博物館の外観）",
+      "imageRegion": "神奈川県横浜市都筑区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Around_Center_Kita_sta.jpg/1280px-Around_Center_Kita_sta.jpg"
+    }
+  ],
+  "new-yokohama-first-date": [
+    {
+      "name": "みなとみらい・ランドマークタワー〜スカイガーデン",
+      "area": "みなとみらい",
+      "imageSubject": "横浜ランドマークタワー（みなとみらいに建つ超高層ビル）の外観全景",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
+    },
+    {
+      "name": "赤レンガ倉庫",
+      "area": "みなとみらい",
+      "imageSubject": "横浜赤レンガ倉庫の煉瓦造り外観（2棟の歴史的倉庫建築）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
+    },
+    {
+      "name": "山下公園・大さん橋",
+      "area": "山下町",
+      "imageSubject": "山下公園からみなとみらいを望む臨海公園の風景",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
+    },
+    {
+      "name": "横浜中華街",
+      "area": "中華街",
+      "imageSubject": "横浜中華街の牌楼（朝陽門などの極彩色の中華門）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
+    },
+    {
+      "name": "コスモクロック21（夜景）",
+      "area": "みなとみらい",
+      "imageSubject": "夜のコスモクロック21（みなとみらいの大観覧車のライトアップ）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
+    }
+  ],
+  "new-asakusa-date": [
+    {
+      "name": "雷門・仲見世通り",
+      "area": "浅草",
+      "imageSubject": "浅草寺雷門（大提灯が下がる朱塗りの山門）から続く仲見世通りの参道と土産物店の連なり",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    },
+    {
+      "name": "浅草寺",
+      "area": "浅草",
+      "imageSubject": "浅草寺の本堂（朱塗りの大伽藍）と並び立つ五重塔",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    },
+    {
+      "name": "隅田川テラス・吾妻橋",
+      "area": "浅草",
+      "imageSubject": "隅田川テラスと吾妻橋越しに望むアサヒビール本社の金色オブジェと東京スカイツリー",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "浅草花やしき",
+      "area": "浅草",
+      "imageSubject": "浅草花やしきの園内（昭和レトロな観覧車やローラーコースターが密集する日本最古の遊園地）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    },
+    {
+      "name": "浅草ホッピー通り・馬道通り",
+      "area": "浅草",
+      "imageSubject": "浅草ホッピー通り（赤提灯と店先のテーブルが並ぶ昼から賑わう大衆酒場の通り）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    }
+  ],
+  "new-ueno-museum": [
+    {
+      "name": "東京国立博物館",
+      "area": "上野",
+      "imageSubject": "東京国立博物館本館（昭和初期の帝冠様式・瓦屋根を載せた石造りの正面ファサード）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "上野動物園",
+      "area": "上野",
+      "imageSubject": "上野動物園のジャイアントパンダ（笹を食べる姿、または園の表門）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "上野公園・花見エリア",
+      "area": "上野",
+      "imageSubject": "上野公園の桜並木（メインストリートを覆う満開のソメイヨシノのトンネル）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "不忍池・弁天堂",
+      "area": "上野",
+      "imageSubject": "不忍池と弁天堂（蓮に囲まれた池の中之島に建つ八角形の弁天堂）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "アメ横商店街",
+      "area": "上野",
+      "imageSubject": "アメ横商店街（JR高架沿いに看板と人がひしめく上野アメ横の通り）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    }
+  ],
+  "new-shinjuku-time": [
+    {
+      "name": "新宿御苑",
+      "area": "新宿",
+      "imageSubject": "新宿御苑の広大な芝生広場と並木（背景に新宿の高層ビル群が見える国民公園の風景）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "歌舞伎町・東急歌舞伎町タワー",
+      "area": "歌舞伎町",
+      "imageSubject": "東急歌舞伎町タワーの超高層ビル外観（歌舞伎町に立つガラス張りの高層複合施設）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "高島屋タイムズスクエア",
+      "area": "新宿南口",
+      "imageSubject": "新宿高島屋タイムズスクエアの大型商業ビル外観（新宿駅新南口に面した百貨店の建物）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿中央公園",
+      "area": "西新宿",
+      "imageSubject": "新宿中央公園の噴水・芝生広場と背後にそびえる西新宿の超高層ビル群",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "思い出横丁",
+      "area": "新宿西口",
+      "imageSubject": "思い出横丁の狭い路地と提灯が連なる飲み屋街（新宿駅西口ガード下の戦後闇市由来の横丁）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ],
+  "new-shibuya-harajuku": [
+    {
+      "name": "渋谷スクランブル交差点",
+      "area": "渋谷",
+      "imageSubject": "渋谷スクランブル交差点（ハチ公口前の大型横断歩道を多数の歩行者が斜めに行き交う俯瞰の実景）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "明治神宮",
+      "area": "原宿",
+      "imageSubject": "明治神宮の大鳥居（参道に立つ木造の巨大な明神鳥居と砂利の参道）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "代々木公園",
+      "area": "原宿",
+      "imageSubject": "代々木公園の芝生広場と噴水（緑の芝生に人々が憩う都市公園の風景）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "竹下通り",
+      "area": "原宿",
+      "imageSubject": "竹下通り（原宿駅前から続く狭い歩行者ショッピングストリートに人波と看板が連なる実景）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "表参道ヒルズ・表参道",
+      "area": "表参道",
+      "imageSubject": "表参道の欅並木（明治神宮前から青山へ続く広い大通りと両側のケヤキ並木、表参道ヒルズ周辺）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    }
+  ],
+  "new-skytree-area": [
+    {
+      "name": "東京スカイツリー(天望デッキ)",
+      "area": "押上",
+      "imageSubject": "東京スカイツリーの塔体全景（高さ634mの自立式電波塔、白い格子状の鉄骨構造）",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "東京ソラマチ",
+      "area": "押上",
+      "imageSubject": "東京ソラマチの建物外観（東京スカイツリー足元の大型商業施設）",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "すみだ水族館",
+      "area": "押上",
+      "imageSubject": "すみだ水族館のクラゲ水槽など屋内水族館の展示空間（東京スカイツリータウン・ソラマチ内）",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "隅田川・十間橋",
+      "area": "押上",
+      "imageSubject": "北十間川にかかる十間橋から望む東京スカイツリーと水面に映る逆さスカイツリー",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "向島・言問橋エリア",
+      "area": "向島",
+      "imageSubject": "向島百花園の和風庭園（江戸期に開かれた文人趣味の花の庭、萩のトンネルなど）",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    }
+  ],
+  "new-ginza-marunouchi": [
+    {
+      "name": "銀座六丁目・GINZA SIX",
+      "area": "銀座",
+      "imageSubject": "GINZA SIX（銀座六丁目の大型複合商業施設）の外観ファサード、または屋上庭園(GINZA SIX GARDEN)から銀座方面を望む眺め",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "皇居外苑・二重橋",
+      "area": "丸の内",
+      "imageSubject": "皇居外苑から望む二重橋（正門石橋と奥の正門鉄橋が連なる景観、背後に伏見櫓）",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "丸の内仲通り",
+      "area": "丸の内",
+      "imageSubject": "丸の内仲通りの並木道（ケヤキの街路樹が続くブランド路面店の通り、石畳の歩行者空間）",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "東京駅丸の内駅舎",
+      "area": "丸の内",
+      "imageSubject": "東京駅丸の内駅舎（辰野金吾設計の赤煉瓦ネオバロック様式駅舎、南北のドーム屋根を含む丸の内側外観）",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "銀座三越・松屋銀座",
+      "area": "銀座",
+      "imageSubject": "銀座四丁目交差点に面する銀座三越の建物外観（中央通り沿い、ライオン像のある老舗百貨店）と向かいの松屋銀座",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    }
+  ],
+  "new-roppongi-night": [
+    {
+      "name": "六本木ヒルズ展望台（東京シティビュー）",
+      "area": "六本木",
+      "imageSubject": "六本木ヒルズ森タワー（高さ238mの超高層ビル）の外観全景",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "東京タワー",
+      "area": "芝公園",
+      "imageSubject": "東京タワー（高さ333mの赤と白の電波塔）の塔体全景",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "麻布台ヒルズ",
+      "area": "麻布",
+      "imageSubject": "麻布台ヒルズの森JPタワー（高さ330mの超高層ビル）外観",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "芝公園・増上寺",
+      "area": "芝公園",
+      "imageSubject": "増上寺の三門（大きな朱塗りの山門）越しに見上げる東京タワー",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "国立新美術館",
+      "area": "六本木",
+      "imageSubject": "国立新美術館の波打つガラスカーテンウォールのファサード（黒川紀章設計）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    }
+  ],
+  "new-ikebukuro-day": [
+    {
+      "name": "サンシャイン60展望台",
+      "area": "池袋東口",
+      "imageSubject": "サンシャイン60の超高層ビル外観（地上60階建ての高層オフィスビル）",
+      "imageRegion": "東京都豊島区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+    },
+    {
+      "name": "西武百貨店池袋本店・東武百貨店",
+      "area": "池袋駅",
+      "imageSubject": "JR池袋駅東口の駅ビルと西武百貨店池袋本店の外観",
+      "imageRegion": "東京都豊島区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    },
+    {
+      "name": "池袋西口公園",
+      "area": "池袋西口",
+      "imageSubject": "池袋西口公園の円形シアター「グローバルリング」",
+      "imageRegion": "東京都豊島区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    },
+    {
+      "name": "乙女ロード",
+      "area": "池袋東口",
+      "imageSubject": "アニメイト池袋本店の外観（乙女ロードを代表するアニメグッズ大型店）",
+      "imageRegion": "東京都豊島区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+    },
+    {
+      "name": "としまえん跡・練馬区立としまえん庭の湯",
+      "area": "練馬",
+      "imageSubject": "としまえん庭の湯（としまえん跡地の日帰り温泉施設）の外観",
+      "imageRegion": "東京都練馬区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    }
+  ],
+  "new-tokyo-rainy": [
+    {
+      "name": "東京国立博物館",
+      "area": "上野",
+      "imageSubject": "東京国立博物館 本館の正面外観（上野公園内、左右対称の帝冠様式の建物と中央階段）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "teamLab Planets（豊洲）",
+      "area": "豊洲",
+      "imageSubject": "teamLab Planets TOKYO の没入型デジタルアート空間（鏡張りの床と天井に映像が広がるインスタレーション）",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "東京都庭園美術館",
+      "area": "白金台",
+      "imageSubject": "東京都庭園美術館 本館（旧朝香宮邸）のアールデコ建築外観",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    },
+    {
+      "name": "六本木ヒルズ森美術館",
+      "area": "六本木",
+      "imageSubject": "六本木ヒルズ森タワーの高層ビル外観（森美術館・東京シティビューが入る最上部）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "新宿高島屋タイムズスクエア（書籍・ショッピング）",
+      "area": "新宿南口",
+      "imageSubject": "新宿高島屋タイムズスクエア（新宿駅新南口直結の高島屋商業ビルの外観）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ],
+  "new-tokyo-family": [
+    {
+      "name": "上野動物園",
+      "area": "上野",
+      "imageSubject": "上野動物園のジャイアントパンダ（笹を食べる、または木に登るパンダの姿）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "国立科学博物館（上野）",
+      "area": "上野",
+      "imageSubject": "国立科学博物館（上野）地球館に展示されたティラノサウルスなど恐竜の全身骨格標本",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "葛西臨海公園・水族館",
+      "area": "葛西",
+      "imageSubject": "葛西臨海水族園のドーナツ型大水槽を回遊するクロマグロの群れ",
+      "imageRegion": "東京都江戸川区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+    },
+    {
+      "name": "よみうりランド",
+      "area": "稲城市",
+      "imageSubject": "よみうりランドの大型ジェットコースター「バンデット」と園内の大観覧車",
+      "imageRegion": "東京都稲城市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "東京都水の科学館",
+      "area": "有明",
+      "imageSubject": "東京都水の科学館の体験型展示（水の循環や浄水の仕組みを学ぶ館内の展示ブース）",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg"
+    }
+  ],
+  "new-tokyo-first-date": [
+    {
+      "name": "浅草・仲見世通り→浅草寺",
+      "area": "浅草",
+      "imageSubject": "浅草・仲見世通りの参道（雷門から浅草寺へ続く土産物店の連なりと赤い提灯）",
+      "imageRegion": "東京都台東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+    },
+    {
+      "name": "東京スカイツリー天望デッキ",
+      "area": "押上",
+      "imageSubject": "東京スカイツリー（高さ634mの電波塔の全景）",
+      "imageRegion": "東京都墨田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    },
+    {
+      "name": "お台場海浜公園（夜景）",
+      "area": "お台場",
+      "imageSubject": "お台場海浜公園から望むレインボーブリッジと東京湾の夕景・夜景",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Odaiba_beach_at_dusk.jpg/1280px-Odaiba_beach_at_dusk.jpg"
+    },
+    {
+      "name": "銀座ディナー・GINZA SIX",
+      "area": "銀座",
+      "imageSubject": "銀座の街並み（GINZA SIX周辺の高級複合商業ビルが並ぶ中央通り）",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "新宿（締め・バー）",
+      "area": "新宿",
+      "imageSubject": "新宿の夜の繁華街（歌舞伎町・新宿三丁目のネオンと高層ビル群）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ],
+  "new-ebisu-daikanyama": [
+    {
+      "name": "代官山T-SITE（蔦屋書店）",
+      "area": "代官山",
+      "imageSubject": "代官山T-SITE（蔦屋書店）の白いT字格子模様で覆われた低層3棟の外観",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+    },
+    {
+      "name": "恵比寿ガーデンプレイス",
+      "area": "恵比寿",
+      "imageSubject": "恵比寿ガーデンプレイスの時計塔広場とガーデンプレイスタワーを望む全景",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    },
+    {
+      "name": "目黒川沿い",
+      "area": "中目黒",
+      "imageSubject": "目黒川沿いの遊歩道と川面に張り出す桜並木（中目黒付近）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "代官山・ログロード代官山",
+      "area": "代官山",
+      "imageSubject": "ログロード代官山の旧東横線高架跡を活用した遊歩道沿いの低層木造商業施設",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Walk_in_Daikanyama_8.jpg/1280px-Walk_in_Daikanyama_8.jpg"
+    },
+    {
+      "name": "恵比寿・アトレ恵比寿（飲食）",
+      "area": "恵比寿",
+      "imageSubject": "JR恵比寿駅直結の駅ビル・アトレ恵比寿の外観",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    }
+  ],
+  "new-nakameguro-walk": [
+    {
+      "name": "目黒川桜並木",
+      "area": "中目黒",
+      "imageSubject": "中目黒の目黒川沿いに約800本のソメイヨシノが満開になり川面を覆う桜のトンネル（両岸の遊歩道と川を覆う桜並木）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒高架下",
+      "area": "中目黒",
+      "imageSubject": "東急東横線中目黒駅の高架橋下を再整備した中目黒高架下の商業区画（高架の鉄骨構造と連なる店舗）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "スタバ リザーブ ロースタリー東京",
+      "area": "中目黒",
+      "imageSubject": "スターバックス リザーブ ロースタリー東京の外観（中目黒高架下に建つ4階建てガラス張りの旗艦店）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "目黒川沿いのカフェ・ショップ",
+      "area": "中目黒",
+      "imageSubject": "目黒川両岸の遊歩道に点在する個人経営のカフェ・コーヒースタンド・セレクトショップが並ぶ川沿いの街並み",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "祐天寺・池尻大橋周辺",
+      "area": "目黒区",
+      "imageSubject": "祐天寺の山門と本堂（目黒区祐天寺の浄土宗寺院、明顕山祐天寺）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    }
+  ],
+  "new-kichijoji-day": [
+    {
+      "name": "井の頭恩賜公園",
+      "area": "吉祥寺",
+      "imageSubject": "井の頭恩賜公園の井の頭池に浮かぶスワンボート（白鳥型の足こぎボート）と池畔の木立",
+      "imageRegion": "東京都武蔵野市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "ハモニカ横丁",
+      "area": "吉祥寺北口",
+      "imageSubject": "吉祥寺ハモニカ横丁の狭い路地に飲食店が密集する夜の街並み（赤提灯や看板の灯り）",
+      "imageRegion": "東京都武蔵野市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "吉祥寺サンロード・ダイヤ街",
+      "area": "吉祥寺",
+      "imageSubject": "吉祥寺サンロード商店街のアーケード（半透明屋根の天井と両側に連なる店舗・買い物客）",
+      "imageRegion": "東京都武蔵野市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "吉祥寺ヨドバシカメラ・東急百貨店",
+      "area": "吉祥寺",
+      "imageSubject": "吉祥寺駅前の大型商業ビル外観（ヨドバシカメラ吉祥寺または東急百貨店吉祥寺店の建物）",
+      "imageRegion": "東京都武蔵野市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    },
+    {
+      "name": "成蹊大学周辺・吉祥寺カフェ",
+      "area": "吉祥寺",
+      "imageSubject": "吉祥寺・中道通り（成蹊大学方面へ伸びる個人店が並ぶ生活道路の街並み）",
+      "imageRegion": "東京都武蔵野市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg/1280px-Inokashira_Park_%40_Kichijoji_%289431564095%29.jpg"
+    }
+  ],
+  "new-harajuku-backstreet": [
+    {
+      "name": "キャットストリート",
+      "area": "原宿",
+      "imageSubject": "原宿キャットストリート（旧渋谷川遊歩道）の歩行者専用路地に低層のアパレルショップが並ぶ街並み",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "ラフォーレ原宿",
+      "area": "原宿",
+      "imageSubject": "ラフォーレ原宿の建物外観（明治通りと表参道の交差点に建つ商業施設のファサード）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "明治神宮",
+      "area": "原宿",
+      "imageSubject": "明治神宮の大鳥居（参道に立つ木造の大型鳥居）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "竹下通り",
+      "area": "原宿",
+      "imageSubject": "原宿・竹下通りの入口アーチと両側に店舗が連なる細い歩行者天国の通り",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "神宮前エリアの古着屋巡り",
+      "area": "原宿",
+      "imageSubject": "神宮前エリアの古着屋が連なる裏路地（看板を掲げた古着店が並ぶ街角）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    }
+  ],
+  "new-ginza-gallery": [
+    {
+      "name": "GINZA SIX（銀座六丁目）",
+      "area": "銀座",
+      "imageSubject": "GINZA SIX（銀座六丁目の大型複合商業施設）の中央通りに面したファサード外観",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "銀座 伊東屋（G.Itoya）",
+      "area": "銀座",
+      "imageSubject": "銀座 伊東屋（G.Itoya）銀座本店の赤いクリップ看板が付いたビル外観",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "銀座画廊街（クリエイションギャラリーG8ほか）",
+      "area": "銀座",
+      "imageSubject": "銀座八丁目の資生堂本社・資生堂ギャラリーが入る資生堂銀座ビルの外観",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "松屋銀座・銀座三越",
+      "area": "銀座",
+      "imageSubject": "銀座のあづま通り・みゆき通りなど中央通りから一本入った細い路地の街並み",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    },
+    {
+      "name": "歌舞伎座・銀座四丁目交差点",
+      "area": "銀座",
+      "imageSubject": "銀座四丁目交差点に建つ銀座三越のライオン像と建物外観",
+      "imageRegion": "東京都中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    }
+  ],
+  "new-shibuya-brunch": [
+    {
+      "name": "渋谷ストリーム（渋谷川沿い遊歩道）",
+      "area": "渋谷",
+      "imageSubject": "渋谷ストリーム（渋谷川沿いの遊歩道と稲荷橋広場、川沿いの飲食店テラスが連なる景観）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "渋谷ヒカリエ（展望フロア）",
+      "area": "渋谷",
+      "imageSubject": "渋谷ヒカリエの高層ビル外観（青山通り側から見上げたガラスファサードの全景）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "松濤・鉢山エリアのカフェ",
+      "area": "渋谷〜松濤",
+      "imageSubject": "松濤・鉢山町の閑静な住宅街の街路（渋谷駅至近とは思えない低層住宅の並ぶ通り）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "渋谷スクランブルスクエア展望台（SHIBUYA SKY）",
+      "area": "渋谷",
+      "imageSubject": "SHIBUYA SKY（渋谷スクランブルスクエア屋上展望台から見下ろすスクランブル交差点と東京の街並み）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "代々木公園でのピクニックブランチ",
+      "area": "代々木公園",
+      "imageSubject": "代々木公園の中央広場の芝生と樹木（噴水池や開けた芝生エリアの景観）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    }
+  ],
+  "new-shinjuku-park": [
+    {
+      "name": "新宿御苑（日本庭園エリア）",
+      "area": "新宿",
+      "imageSubject": "新宿御苑の日本庭園エリア（池泉回遊式の池と旧御涼亭の茶室、池畔の樹木が映る景観）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿御苑前周辺のカフェ街",
+      "area": "新宿御苑前",
+      "imageSubject": "新宿御苑前駅周辺の街並み（御苑前のカフェ・喫茶店が並ぶ路地の景観）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "KITTE丸の内屋上テラス（参考：同コンセプト）と新宿南口",
+      "area": "新宿南口",
+      "imageSubject": "新宿南口の駅前広場と高層ビル群（甲州街道沿いのサザンテラス方面の都市景観）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "新宿西口・東口の老舗デパート",
+      "area": "新宿",
+      "imageSubject": "新宿西口・東口の老舗デパート外観（駅前に並ぶ百貨店の建物と街路）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    },
+    {
+      "name": "思い出横丁（新宿西口）",
+      "area": "新宿西口",
+      "imageSubject": "新宿西口・思い出横丁の路地（赤提灯と小さな飲食店が連なる狭い横丁の夜景）",
+      "imageRegion": "東京都新宿区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ],
+  "new-roppongi-art": [
+    {
+      "name": "森美術館（六本木ヒルズ森タワー53F）",
+      "area": "六本木",
+      "imageSubject": "六本木ヒルズ森タワー（森美術館が入る超高層ビルの外観全景）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "国立新美術館（乃木坂）",
+      "area": "六本木",
+      "imageSubject": "国立新美術館の波打つガラスカーテンウォールの外観（黒川紀章設計の正面ファサード）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "21_21 DESIGN SIGHT（東京ミッドタウン）",
+      "area": "六本木",
+      "imageSubject": "21_21 DESIGN SIGHT の鉄板屋根の低層建築外観（安藤忠雄設計、東京ミッドタウン・ガーデン内）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "東京ミッドタウン庭園のパブリックアート",
+      "area": "六本木",
+      "imageSubject": "東京ミッドタウンのミッドタウン・ガーデン（芝生と植栽が広がる屋外庭園の景観）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "六本木ヒルズの屋外彫刻（ルイーズ・ブルジョワ「ママン」）",
+      "area": "六本木",
+      "imageSubject": "ルイーズ・ブルジョワの巨大蜘蛛の彫刻「ママン」（六本木ヒルズ66プラザの屋外設置）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    }
+  ],
+  "new-marunouchi-walk": [
+    {
+      "name": "東京駅丸の内駅舎（赤レンガ駅舎）",
+      "area": "丸の内",
+      "imageSubject": "東京駅丸の内駅舎の赤煉瓦外観（辰野金吾設計、南北にドーム屋根を持つネオバロック様式の駅舎正面）",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "丸の内仲通り",
+      "area": "丸の内",
+      "imageSubject": "丸の内仲通りのケヤキ並木とブランド路面店が並ぶ石畳のストリート",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "皇居外苑（皇居前広場）",
+      "area": "皇居前",
+      "imageSubject": "皇居外苑（皇居前広場）の二重橋と正門石橋の景観",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "三菱一号館美術館",
+      "area": "丸の内",
+      "imageSubject": "三菱一号館美術館の赤煉瓦外観（ジョサイア・コンドル設計の旧オフィスビルを復元した建物）",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    },
+    {
+      "name": "KITTE（旧東京中央郵便局）",
+      "area": "丸の内",
+      "imageSubject": "KITTE丸の内（旧東京中央郵便局を改修した白い外観の複合施設）の建物外観",
+      "imageRegion": "東京都千代田区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+    }
+  ],
+  "new-omotesando-brunch": [
+    {
+      "name": "表参道ヒルズ周辺のカフェ",
+      "area": "表参道",
+      "imageSubject": "表参道のケヤキ並木とハイブランド店が連なる表参道（けやき並木の歩道と街路樹の景観）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    },
+    {
+      "name": "根津美術館と庭園",
+      "area": "南青山",
+      "imageSubject": "根津美術館（隈研吾設計の本館エントランスへ続く竹垣の通路、または日本庭園の緑）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    },
+    {
+      "name": "青山通り沿いのベーカリー",
+      "area": "青山",
+      "imageSubject": "青山通り沿いのベーカリー店頭の焼きたてパンが並ぶ陳列（青山エリアのパン屋の外観・ショーケース）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    },
+    {
+      "name": "岡本太郎記念館（南青山）",
+      "area": "南青山",
+      "imageSubject": "岡本太郎記念館の中庭に立つ岡本太郎の立体作品群（元アトリエ兼自宅の庭に並ぶ彫刻）",
+      "imageRegion": "東京都港区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    },
+    {
+      "name": "代々木公園方向への路地散歩",
+      "area": "代々木八幡",
+      "imageSubject": "代々木八幡・代々木公園方向の青山裏手の住宅街の細い路地（観光客の少ない閑静な生活路地）",
+      "imageRegion": "東京都渋谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    }
+  ],
+  "new-nakameguro-morning": [
+    {
+      "name": "目黒川沿い散歩（中目黒〜池尻大橋）",
+      "area": "中目黒",
+      "imageSubject": "目黒川沿いの遊歩道（中目黒〜池尻大橋区間、川を縁取る桜並木と水辺の散歩道）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "スターバックスリザーブロースタリー東京",
+      "area": "中目黒",
+      "imageSubject": "スターバックス リザーブ ロースタリー 東京の建物外観（中目黒・目黒川沿いの大型旗艦店）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒高架下（東横線高架下）",
+      "area": "中目黒",
+      "imageSubject": "中目黒高架下（東急東横線の高架橋下を再整備した商業区画の街並み）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒〜代官山の徒歩ルート",
+      "area": "中目黒〜代官山",
+      "imageSubject": "中目黒から代官山へ抜ける閑静な住宅街の坂道・路地",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "池尻大橋〜三宿方向のカフェエリア",
+      "area": "池尻大橋",
+      "imageSubject": "池尻大橋〜三宿エリアの落ち着いた街並みとカフェの並ぶ通り",
+      "imageRegion": "東京都世田谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    }
+  ],
+  "new-jiyugaoka-patisserie": [
+    {
+      "name": "自由が丘 モンブラン（発祥の店）",
+      "area": "自由が丘",
+      "imageSubject": "自由が丘の商店街・遊歩道沿いに洋菓子店やカフェが並ぶ街並み（パティスリーが密集する駅前区画）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘スイーツフォレスト（閉業に注意）",
+      "area": "自由が丘",
+      "imageSubject": "自由が丘の商店街アーケード・通りの街並み（旧スイーツフォレスト跡地周辺の自由が丘中心街）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘駅周辺の個人パティスリー",
+      "area": "自由が丘",
+      "imageSubject": "自由が丘駅周辺の細い路地に個人経営の洋菓子店・カフェが点在する裏通りの街並み",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "自由が丘の路地散歩とカフェ",
+      "area": "自由が丘",
+      "imageSubject": "自由が丘から緑が丘・奥沢方面へ伸びる住宅街の細い路地・遊歩道（九品仏川緑道など）",
+      "imageRegion": "東京都目黒区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    },
+    {
+      "name": "熊野神社と駒場公園方向",
+      "area": "自由が丘〜駒場",
+      "imageSubject": "奥沢の熊野神社（自由が丘・奥沢の鎮守の社殿・鳥居）",
+      "imageRegion": "東京都世田谷区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    }
+  ],
+  "new-toyosu-lunch": [
+    {
+      "name": "豊洲市場 飲食棟（江戸前場外 千客万来）",
+      "area": "豊洲",
+      "imageSubject": "豊洲市場 千客万来（豊洲場外 江戸前市場）の江戸の商店街を模した木造の飲食・物販施設の外観",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "豊洲市場 見学ルート",
+      "area": "豊洲",
+      "imageSubject": "豊洲市場の水産卸売場棟の建物外観、または見学者通路から見たターレや卸売場の内部",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "チームラボ プラネッツ TOKYO（豊洲）",
+      "area": "豊洲",
+      "imageSubject": "チームラボ プラネッツ TOKYO（豊洲）の建物外観またはエントランスのサイン",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "アーバンドック ららぽーと豊洲",
+      "area": "豊洲",
+      "imageSubject": "アーバンドック ららぽーと豊洲の運河沿いの大型商業施設外観",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "豊洲ぐるり公園",
+      "area": "豊洲",
+      "imageSubject": "豊洲ぐるり公園の晴海運河沿いの遊歩道と対岸の都心高層ビル群の眺め",
+      "imageRegion": "東京都江東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    }
+  ],
+  "new-hachioji-gourmet": [
+    {
+      "name": "八王子ラーメン（八王子駅周辺）",
+      "area": "八王子",
+      "imageSubject": "八王子ラーメン（醤油スープに刻みタマネギを散らした一杯）の丼",
+      "imageRegion": "東京都八王子市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "八王子城跡（史跡）",
+      "area": "八王子",
+      "imageSubject": "八王子城跡（北条氏照の山城跡の石垣・曲輪・御主殿跡）",
+      "imageRegion": "東京都八王子市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "高尾山（八王子市内）",
+      "area": "高尾",
+      "imageSubject": "高尾山の山上から見た稜線と参道（標高599mの山並み）",
+      "imageRegion": "東京都八王子市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "八王子駅周辺の地ビール・クラフトビール",
+      "area": "八王子",
+      "imageSubject": "クラフトビール（地ビール）のグラスとビール瓶",
+      "imageRegion": "東京都八王子市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "石川宿・八王子市内の宿場町跡",
+      "area": "八王子",
+      "imageSubject": "旧甲州街道・石川宿あたりの宿場町の名残が残る街道筋の風景",
+      "imageRegion": "東京都八王子市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    }
+  ],
+  "new-kanagawa-weekend": [
+    {
+      "name": "横浜・みなとみらい（土曜午前）",
+      "area": "みなとみらい",
+      "imageSubject": "横浜ランドマークタワーを中心としたみなとみらいの高層ビル群と海沿いの水辺の景観",
+      "imageRegion": "神奈川県横浜市西区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg/1280px-Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg"
+    },
+    {
+      "name": "横浜中華街（土曜ランチ）",
+      "area": "横浜中華街",
+      "imageSubject": "横浜中華街の善隣門（朱色と金の装飾が施された牌楼／門）",
+      "imageRegion": "神奈川県横浜市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg/1280px-Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg"
+    },
+    {
+      "name": "鎌倉（土曜午後〜夕方）",
+      "area": "鎌倉",
+      "imageSubject": "鶴岡八幡宮の本宮へ続く大石段と朱塗りの社殿",
+      "imageRegion": "神奈川県鎌倉市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tsurugaoka_Hachimangu_001.jpg/1280px-Tsurugaoka_Hachimangu_001.jpg"
+    },
+    {
+      "name": "箱根湯本（日曜・温泉日帰り）",
+      "area": "箱根湯本",
+      "imageSubject": "箱根・大涌谷の白い噴煙が立ちのぼる火山性の荒涼とした谷",
+      "imageRegion": "神奈川県足柄下郡箱根町",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Owakudani_%40_Hakone_%2810621413133%29.jpg/1280px-Owakudani_%40_Hakone_%2810621413133%29.jpg"
+    },
+    {
+      "name": "湘南経由の帰路（選択肢として）",
+      "area": "湘南（茅ヶ崎・藤沢）",
+      "imageSubject": "湘南海岸（茅ヶ崎・藤沢）の砂浜と相模湾の海並み",
+      "imageRegion": "神奈川県茅ヶ崎市",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Shonan_Beach_FM.jpg/1280px-Shonan_Beach_FM.jpg"
+    }
+  ],
+  "kansai-umeda-night-date": [
+    {
+      "name": "グランフロント大阪",
+      "area": "大阪市北区・うめきた",
+      "imageSubject": "グランフロント大阪（JR大阪駅北側・うめきたに建つ南館・北館からなる大型複合商業施設のガラス張り外観）",
+      "imageRegion": "大阪府大阪市北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/131214_Grand_Front_Osaka_Japan01s5.jpg/1280px-131214_Grand_Front_Osaka_Japan01s5.jpg"
+    },
+    {
+      "name": "HEP FIVE観覧車",
+      "area": "大阪市北区・梅田",
+      "imageSubject": "HEP FIVE観覧車（HEP FIVEのビル屋上に設置された直径75m・最高到達点106mの赤い観覧車）",
+      "imageRegion": "大阪府大阪市北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/HEP_FIVE_01.jpg"
+    },
+    {
+      "name": "梅田スカイビル 空中庭園展望台",
+      "area": "大阪市北区・大淀",
+      "imageSubject": "梅田スカイビル空中庭園展望台（2棟の超高層ビルを上部で連結し屋上に円形の展望リングを持つ独特の外観）",
+      "imageRegion": "大阪府大阪市北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Umeda_Sky_Building_201807.jpg/1280px-Umeda_Sky_Building_201807.jpg"
+    },
+    {
+      "name": "大阪市中央公会堂",
+      "area": "大阪市北区・中之島",
+      "imageSubject": "大阪市中央公会堂（中之島に建つ1918年竣工のネオ・ルネサンス様式、赤煉瓦と銅板屋根の重要文化財建築）",
+      "imageRegion": "大阪府大阪市北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Osaka_City_Central_Public_Hall_20160221.JPG/1280px-Osaka_City_Central_Public_Hall_20160221.JPG"
+    },
+    {
+      "name": "中之島 水辺の夜さんぽ",
+      "area": "大阪市北区・中之島",
+      "imageSubject": "なにわ橋から望む中之島の夜景（堂島川・土佐堀川に挟まれた中之島のビル群と水面に映る灯り）",
+      "imageRegion": "大阪府大阪市北区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cityscapes_of_Nakanoshima%2C_Osaka_from_Naniwa_Bridge_20250901.jpg/1280px-Cityscapes_of_Nakanoshima%2C_Osaka_from_Naniwa_Bridge_20250901.jpg"
+    }
+  ],
+  "kansai-arashiyama-walk": [
+    {
+      "name": "渡月橋",
+      "area": "京都市右京区・嵐山",
+      "imageSubject": "渡月橋（桂川・大堰川に架かる木造の橋）と背後の嵐山の山並み",
+      "imageRegion": "京都府京都市右京区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge%2C_Kyoto%2C_2016.jpg/1280px-View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge%2C_Kyoto%2C_2016.jpg"
+    },
+    {
+      "name": "天龍寺 曹源池庭園",
+      "area": "京都市右京区・嵯峨",
+      "imageSubject": "天龍寺の曹源池庭園（嵐山・亀山を借景にした池泉回遊式庭園）",
+      "imageRegion": "京都府京都市右京区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tenryu-ji%2C_Sogenchi_Teien_%28Garden%29_-1_%28November_2008%29_-_panoramio.jpg/1280px-Tenryu-ji%2C_Sogenchi_Teien_%28Garden%29_-1_%28November_2008%29_-_panoramio.jpg"
+    },
+    {
+      "name": "野宮神社",
+      "area": "京都市右京区・嵯峨",
+      "imageSubject": "野宮神社のクヌギ樹皮を残した黒木鳥居と苔の庭",
+      "imageRegion": "京都府京都市右京区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nonomiya-jinja_%28Uky%C5%8D-ku_Kyoto%29_Shrine_hdsr_S5_03.jpg/1280px-Nonomiya-jinja_%28Uky%C5%8D-ku_Kyoto%29_Shrine_hdsr_S5_03.jpg"
+    },
+    {
+      "name": "竹林の小径",
+      "area": "京都市右京区・嵯峨",
+      "imageSubject": "嵐山の竹林の小径（両側に高い竹がトンネル状に連なる遊歩道）",
+      "imageRegion": "京都府京都市右京区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg/1280px-Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg"
+    },
+    {
+      "name": "大河内山荘庭園",
+      "area": "京都市右京区・嵯峨",
+      "imageSubject": "大河内山荘庭園の木造の門と回遊式庭園",
+      "imageRegion": "京都府京都市右京区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wooden_gate_in_Okochi_Sanso_Garden%2C_Kyoto%2C_Japan.jpg/1280px-Wooden_gate_in_Okochi_Sanso_Garden%2C_Kyoto%2C_Japan.jpg"
+    }
+  ],
+  "kansai-kobe-harborland-family": [
+    {
+      "name": "神戸アンパンマンこどもミュージアム＆モール",
+      "area": "神戸市中央区・ハーバーランド",
+      "imageSubject": "神戸アンパンマンこどもミュージアム＆モールの建物外観（ハーバーランド海沿いに建つ2階建ての施設）",
+      "imageRegion": "兵庫県神戸市中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/130720_Kobe_Anpanman_Children%27s_Museum_%26_Mall_Kobe_Japan01s3.jpg/1280px-130720_Kobe_Anpanman_Children%27s_Museum_%26_Mall_Kobe_Japan01s3.jpg"
+    },
+    {
+      "name": "神戸ハーバーランド（モザイク・大観覧車）",
+      "area": "神戸市中央区・ハーバーランド",
+      "imageSubject": "神戸ハーバーランドのモザイク屋上にある大観覧車（神戸港に面した観覧車）",
+      "imageRegion": "兵庫県神戸市中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Kobe%27s_Harborland%2C_Hyogo%2C_Japan_--_Night_View_of_Mosaic_Ferris_Wheel.jpg/1280px-Kobe%27s_Harborland%2C_Hyogo%2C_Japan_--_Night_View_of_Mosaic_Ferris_Wheel.jpg"
+    },
+    {
+      "name": "メリケンパーク・BE KOBE",
+      "area": "神戸市中央区・メリケンパーク",
+      "imageSubject": "メリケンパークの「BE KOBE」モニュメント（白いブロック文字の記念撮影スポット）",
+      "imageRegion": "兵庫県神戸市中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/BE_KOBE_20190216.jpg/1280px-BE_KOBE_20190216.jpg"
+    },
+    {
+      "name": "神戸ポートタワー",
+      "area": "神戸市中央区・メリケンパーク",
+      "imageSubject": "神戸ポートタワー（鼓のようにくびれた赤いパイプ構造の展望タワー）",
+      "imageRegion": "兵庫県神戸市中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kobe_Port_Tower_and_Maritime_Museum%2C_November_2016.jpg/1280px-Kobe_Port_Tower_and_Maritime_Museum%2C_November_2016.jpg"
+    },
+    {
+      "name": "神戸海洋博物館・カワサキワールド",
+      "area": "神戸市中央区・メリケンパーク",
+      "imageSubject": "神戸海洋博物館（白い帆をかたどった屋根が目印の博物館建物）",
+      "imageRegion": "兵庫県神戸市中央区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kobekaiyohakubutsukan2.JPG/1280px-Kobekaiyohakubutsukan2.JPG"
+    }
+  ],
+  "kansai-gion-higashiyama-date": [
+    {
+      "name": "八坂神社",
+      "area": "京都市東山区・祇園",
+      "imageSubject": "八坂神社の朱塗りの西楼門（四条通東端に立つ重層入母屋造の楼門）",
+      "imageRegion": "京都府京都市東山区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/South_Tower_Gate_of_Yasaka_Shrine_in_Kyoto%2C_20240820_1706_5167.jpg/1280px-South_Tower_Gate_of_Yasaka_Shrine_in_Kyoto%2C_20240820_1706_5167.jpg"
+    },
+    {
+      "name": "円山公園",
+      "area": "京都市東山区・祇園",
+      "imageSubject": "円山公園の池泉回遊式庭園と中央の有名なしだれ桜",
+      "imageRegion": "京都府京都市東山区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maruyama_Park_Kyoto_1905.jpg/1280px-Maruyama_Park_Kyoto_1905.jpg"
+    },
+    {
+      "name": "高台寺",
+      "area": "京都市東山区・高台寺",
+      "imageSubject": "高台寺の方丈前庭と臥龍池をのぞむ庭園の景観",
+      "imageRegion": "京都府京都市東山区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kodai-ji_Temple_%40_Kyoto_%2813310459195%29.jpg/1280px-Kodai-ji_Temple_%40_Kyoto_%2813310459195%29.jpg"
+    },
+    {
+      "name": "二年坂・産寧坂",
+      "area": "京都市東山区・清水",
+      "imageSubject": "二年坂・産寧坂の石畳の坂道沿いに京町家の店が連なる町並み",
+      "imageRegion": "京都府京都市東山区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Pedestrian_road_with_pavements_and_paper_umbrellas%2C_Higashiyama-ku%2C_Kyoto%2C_Japan%2C_early_morning.jpg/1280px-Pedestrian_road_with_pavements_and_paper_umbrellas%2C_Higashiyama-ku%2C_Kyoto%2C_Japan%2C_early_morning.jpg"
+    },
+    {
+      "name": "清水寺",
+      "area": "京都市東山区・清水",
+      "imageSubject": "清水寺の本堂「清水の舞台」（崖からせり出す懸造りの木組み舞台）",
+      "imageRegion": "京都府京都市東山区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1280px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg"
+    }
+  ],
+  "chubu-sakae-osu-date": [
+    {
+      "name": "中部電力 MIRAI TOWER",
+      "area": "名古屋市中区・栄",
+      "imageSubject": "中部電力 MIRAI TOWER（旧・名古屋テレビ塔。久屋大通公園に立つ鉄骨の電波塔）の全景",
+      "imageRegion": "愛知県名古屋市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nagoya_TV_Tower_2024-07-24.jpg/1280px-Nagoya_TV_Tower_2024-07-24.jpg"
+    },
+    {
+      "name": "オアシス21",
+      "area": "名古屋市東区・栄",
+      "imageSubject": "オアシス21の屋上「水の宇宙船」（水をたたえたガラスの大屋根の楕円形デッキ）",
+      "imageRegion": "愛知県名古屋市東区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg/1280px-Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg"
+    },
+    {
+      "name": "久屋大通公園（Hisaya-odori Park）",
+      "area": "名古屋市中区・栄",
+      "imageSubject": "久屋大通公園（MIRAI TOWERを背に芝生と並木が南北に続くリニューアル後の公園）",
+      "imageRegion": "愛知県名古屋市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Media_Hiroba_of_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_3.jpg/1280px-Media_Hiroba_of_Hisaya-odori_Park_and_Nagoya_TV_Tower_-_3.jpg"
+    },
+    {
+      "name": "大須商店街",
+      "area": "名古屋市中区・大須",
+      "imageSubject": "大須商店街（アーケードに多様な店が並ぶ門前商店街の通り）",
+      "imageRegion": "愛知県名古屋市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Frutta_di_Frutta_in_Osu_shopping_street.jpg/1280px-Frutta_di_Frutta_in_Osu_shopping_street.jpg"
+    },
+    {
+      "name": "大須観音",
+      "area": "名古屋市中区・大須",
+      "imageSubject": "大須観音（北野山真福寺宝生院。朱塗りの本堂）",
+      "imageRegion": "愛知県名古屋市中区",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg/1280px-Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg"
+    }
+  ]
+}

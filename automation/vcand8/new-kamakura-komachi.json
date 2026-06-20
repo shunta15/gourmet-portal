@@ -1,0 +1,189 @@
+{
+  "id": "new-kamakura-komachi",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "小町通り",
+      "imageSubject": "鎌倉・小町通りの商店街（飲食店や和雑貨店が並ぶ歩行者で賑わうアーケード型参道商店街）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__1__1.jpg",
+          "file": "File:Komachi Street, Kanagawa 02.jpg",
+          "desc": "Komachi Street, Kamakura City, Kanagawa Pref., Japan",
+          "w": 5910,
+          "h": 3940
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__1__2.jpg",
+          "file": "File:『鎌倉殿の13人』幟 小町通り 01.jpg",
+          "desc": "鎌倉・小町通りに掲げられた『鎌倉殿の13人』旗",
+          "w": 4000,
+          "h": 3000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__1__3.jpg",
+          "file": "File:『鎌倉殿の13人』幟 小町通り 02.jpg",
+          "desc": "鎌倉・小町通りに掲げられた『鎌倉殿の13人』旗",
+          "w": 4000,
+          "h": 3000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__1__4.jpg",
+          "file": "File:Komachi Street, Kanagawa 01.jpg",
+          "desc": "Komachi Street, Kamakura City, Kanagawa Pref., Japan",
+          "w": 5950,
+          "h": 3967
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "鶴岡八幡宮",
+      "imageSubject": "鶴岡八幡宮の朱塗りの本宮（大石段の上に建つ楼門と社殿）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__2__1.jpg",
+          "file": "File:Tsurugaoka Hachimangu 001.jpg",
+          "desc": "Tsurugaoka Hachiman Shrine in Kamakura, Japan",
+          "w": 4282,
+          "h": 2839
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__2__2.jpg",
+          "file": "File:Tsurugaoka Hachimangū-ji.jpg",
+          "desc": "An old drawing of Tsurugaoka Hachiman-gū in Kamakura, Japan, cropped",
+          "w": 1189,
+          "h": 769
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__2__3.jpg",
+          "file": "File:鶴岡八幡宮20190626-P1030317.jpg",
+          "desc": "鶴岡八幡宮",
+          "w": 1600,
+          "h": 1202
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__2__4.jpg",
+          "file": "File:Tsurugaoka-hachimangu Shrine precincts.jpg",
+          "desc": "Tsurugaoka-hachimangu Shrine precincts",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "鎌倉国宝館",
+      "imageSubject": "鎌倉の老舗和菓子店の店頭（豆菓子や鳩サブレーなど鎌倉土産が並ぶ和菓子店の店構え）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__3__1.jpg",
+          "file": "File:Kamakura Museum of National Treasures panoramic.jpg",
+          "desc": "The Kamakura Museum of National Treasures, panoramic view obtained from two images",
+          "w": 5361,
+          "h": 1797
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__3__2.jpg",
+          "file": "File:Kamakura Museum of National Treasures.jpg",
+          "desc": "Kamakura Museum of National Treasures in Kamakura, Kanagawa",
+          "w": 4212,
+          "h": 2803
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "若宮大路",
+      "imageSubject": "若宮大路の段葛（鶴岡八幡宮へ続く一段高い桜並木の参道）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__4__1.jpg",
+          "file": "File:若宮大路幕府跡.JPG",
+          "desc": "若宮大路幕府旧蹟  (神奈川県鎌倉市雪ノ下)",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__4__2.jpg",
+          "file": "File:若宮大路 三の鳥居.jpg",
+          "desc": "若宮大路 三の鳥居（2004年10月17日撮影）。撮影者s.fukasawa。ここから先（画面奥）は鶴岡八幡宮の境内となる。",
+          "w": 800,
+          "h": 600
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__4__3.jpg",
+          "file": "File:若宮大路 一の鳥居.jpg",
+          "desc": "若宮大路 一の鳥居（2004年10月17日撮影）。撮影者s.fukasawa。画面奥が鶴岡八幡宮。",
+          "w": 800,
+          "h": 600
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__4__4.jpg",
+          "file": "File:若宮大路 二の鳥居.jpg",
+          "desc": "若宮大路 二の鳥居（2004年10月17日撮影）。撮影者s.fukasawa。ここが段葛の起点で、画面奥の鶴岡八幡宮へ向かって伸びている。",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "鎌倉幕府跡（鎌倉歴史文化交流館）",
+      "imageSubject": "鎌倉駅西側・御成町の静かな路地（観光の喧騒を離れた住宅街の個人店が点在する通り）",
+      "imageRegion": "神奈川県鎌倉市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__5__1.jpg",
+          "file": "File:Kamakura Museum of History & Culture 1.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__5__2.jpg",
+          "file": "File:Kamakura Museum of History & Culture 2.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__5__3.jpg",
+          "file": "File:Kamakura Museum of History & Culture 3.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-komachi__5__4.jpg",
+          "file": "File:Kamakura Museum of History & Culture 4.jpg",
+          "desc": "鎌倉歴史文化交流館",
+          "w": 4320,
+          "h": 3240
+        }
+      ]
+    }
+  ]
+}

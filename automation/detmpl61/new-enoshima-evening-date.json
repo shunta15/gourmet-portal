@@ -1,0 +1,43 @@
+{
+  "id": "new-enoshima-evening-date",
+  "file": "newGuideFeatures",
+  "persona": "D",
+  "tag": "デート",
+  "currentTitle": "江ノ島夕暮れデート5選。サンセットと夜景が見えるスポット",
+  "currentSubtitle": "シーキャンドル、稚児ヶ淵、岩屋洞窟。湘南の島で迎える夕暮れ",
+  "currentLede": "江の島は神奈川県藤沢市の湘南海岸に浮かぶ小島で、徒歩で渡れる橋（弁天橋）で本土と繋がる。弁財天を祀る江島神社・展望灯台「シーキャンドル」・洞窟「岩屋」が島内に並び、半日かけて回れる規模。夕陽の時間帯（16〜18時）が最も美しく、デートとして組み立てやすい。ここでは江の島の夕景〜夜景を楽しむ5スポットを紹介する。",
+  "currentQuote": "江ノ島のシーキャンドルから見る夕日は、湘南で迎える夕暮れの中でも特別な景色。",
+  "currentClosing": "標準動線は、江ノ電江ノ島駅→江島神社参道→辺津宮（15:00〜15:30）→シーキャンドル展望（16:00〜17:00）→岩屋洞窟（17:00〜18:00）→片瀬海岸で夕景（18:00〜19:00）→江の島の食事処でしらす丼ディナー（19:00〜20:30）→江ノ電で藤沢経由帰京。所要約5時間、予算はシーキャンドル＋岩屋＋食事込みで1人5,000〜9,000円が目安。「夕日と富士山のロケーションが好きな2人」「徒歩で島内を一周したいアクティブな2人」「湘南のしらす丼を食べたい人」に向く。週末は岩屋洞窟が16〜17時にピーク混雑、土日は早めの動き出しが現実的。雨の日は岩屋洞窟・シーキャンドル屋内空間で完結できるが、参道の坂と階段は滑りやすいので注意。時間がない場合は、江島神社＋シーキャンドルの2点で2時間半に圧縮できる。迷ったら、夕日のピーク（16〜18時）に江の島にいるよう逆算してスケジュールを組むのが正解。江の島は半島型の小島で、本土側からの徒歩アクセスがちょうど良い距離感（弁天橋を渡って約10分）。電車（小田急片瀬江ノ島駅・江ノ電江ノ島駅）でのアクセスが便利で、自家用車での訪問は駐車場が限られるので電車推奨。夕日の時間帯（16〜18時）に合わせて到着するスケジュールが、江の島観光の質を最大化する鍵。",
+  "spots": [
+    {
+      "name": "江ノ島シーキャンドル（江の島展望灯台）",
+      "area": "江ノ島",
+      "descHead": "江の島の主な神社は辺津宮・中津宮・奥津宮の三宮からなる江島神社。島の参道を歩きながら三社を巡るのが江の島観光の基本。参道は石段の連続でやや体力を要する（エスカーで楽もできる）。参道",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    },
+    {
+      "name": "稚児ヶ淵",
+      "area": "江ノ島 岩屋",
+      "descHead": "江の島中央部にある展望灯台「江の島シーキャンドル」。60mの高さから富士山・相模湾・伊豆半島が見渡せる。夕暮れ時の眺望が特に美しく、晴れた日の日没30分前後に登るのが最も得な使い方",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島岩屋洞窟",
+      "area": "江ノ島 岩屋",
+      "descHead": "江の島の最奥部にある洞窟「岩屋」は海水が浸食した天然の洞穴。複数の洞窟が連なり、ロウソクの灯りで照らされた幻想的な空間が体験できる。営業時間9〜18時（夏季は20時まで延長期間あり",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "江ノ島弁天仲見世通り",
+      "area": "江ノ島",
+      "descHead": "片瀬海岸（江の島本土側の海岸）から見る夕暮れの富士山のシルエットは湘南を代表する絶景。夕方の時間帯（16〜18時頃）に江の島で過ごすように時間を調整するのが賢い計画。片瀬海岸西浜・",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
+    },
+    {
+      "name": "湘南港（ヨットハーバー）",
+      "area": "江ノ島",
+      "descHead": "江の島には「しらす丼」「生しらす丼」「たこせんべい」「江の島まんじゅう」などの名物がある。生しらすは水揚げがある日のみ提供（悪天候や休漁期は釜揚げのみ）。1杯1,200〜2,000",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
+    }
+  ]
+}

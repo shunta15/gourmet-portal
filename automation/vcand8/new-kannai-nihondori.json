@@ -1,0 +1,125 @@
+{
+  "id": "new-kannai-nihondori",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "日本大通り",
+      "imageSubject": "日本大通りの幅広い並木道と沿道の神奈川県庁本庁舎（キングの塔）の景観",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__1__1.jpg",
+          "file": "File:日本大通り（夜景）.jpg",
+          "desc": "イチョウが色づいている秋の日本大通りの夜景。横浜市中区日本大通り。",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "横浜市開港記念会館（ジャックの塔）",
+      "imageSubject": "横浜市開港記念会館（ジャックの塔）の赤レンガと白石の時計塔外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__2__1.jpg",
+          "file": "File:Honcho, Naka Ward, Yokohama, Kanagawa Prefecture 231-0005, Japan - panoramio (20).jpg",
+          "desc": "Honcho, Naka Ward, Yokohama, Kanagawa Prefecture 231-0005, Japan　横浜市開港記念会館（ジャックの塔）",
+          "w": 4592,
+          "h": 3448
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "横浜スタジアム周辺（横浜公園）",
+      "imageSubject": "横浜スタジアムを囲む横浜公園の広場・遊歩道（春のチューリップ花壇）",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__3__1.jpg",
+          "file": "File:Japan baseball tokyo (9170256501).jpg",
+          "desc": "this is how you reserve a place in line in Japan --   Yokohama Stadium",
+          "w": 2736,
+          "h": 3648
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__3__2.jpg",
+          "file": "File:Kiyoken ad Yokohama Stadium.jpg",
+          "desc": "横浜スタジアム外野フェンスの「崎陽軒シウマイ」広告。",
+          "w": 1675,
+          "h": 1256
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__3__3.jpg",
+          "file": "File:Like a miniature -Yokohama stadium - panoramio.jpg",
+          "desc": "Like a miniature -Yokohama stadium-",
+          "w": 912,
+          "h": 611
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__3__4.jpg",
+          "file": "File:Samurai japan 2021 jarsey.jpg",
+          "desc": "横浜スタジアムにて常設展示されている、2020年東京オリンピックの野球競技 日本代表の監督・コーチ・選手全員の直筆サイン入りユニフォーム",
+          "w": 2624,
+          "h": 2928
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "横浜開港資料館",
+      "imageSubject": "横浜開港資料館（旧英国総領事館）の煉瓦造り本館外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__4__1.jpg",
+          "file": "File:横浜開港資料館 旧館.JPG",
+          "desc": "中庭から横浜開港資料館 旧館を撮影",
+          "w": 5472,
+          "h": 3648
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__4__2.jpg",
+          "file": "File:Yokohama Archives of History02.jpg",
+          "desc": "Yokohama Archives of History",
+          "w": 800,
+          "h": 600
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__4__3.jpg",
+          "file": "File:Yokohama Archives of History 2007.jpg",
+          "desc": "Yokohama Archives of History - Yokohama City, Kanagawa, Japan",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "馬車道商店街",
+      "imageSubject": "馬車道商店街の歴史的なメインストリートとガス灯・近代建築の街並み",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kannai-nihondori__5__1.jpg",
+          "file": "File:Main street of Tochigi-machi, circa 1892.jpg",
+          "desc": "明治25年頃に撮影された栃木県下都賀郡栃木町の大通り（現・栃木県栃木市の蔵の街大通り）。原典キャプション「明治25年頃の栃木町大通り商店街／大通りの中央を流れていた川は、明治17年頃道の両脇に移されている。街道には荷馬車が往来し、ガス灯もみられる。栃木に街灯がともされたのは明治6年のことで、大通りに36基設置された。」",
+          "w": 1725,
+          "h": 1122
+        }
+      ]
+    }
+  ]
+}

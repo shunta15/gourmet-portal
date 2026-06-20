@@ -1,0 +1,43 @@
+{
+  "id": "new-kamakura-rainy",
+  "file": "newGuideFeatures",
+  "persona": "C",
+  "tag": "雨の日",
+  "currentTitle": "鎌倉雨の日5選。雨でも楽しめる屋内スポットと濡れても美しい庭",
+  "currentSubtitle": "鎌倉国宝館、建長寺方丈、円覚寺。雨がむしろ似合う鎌倉の寺社と博物館",
+  "currentLede": "鎌倉は雨の日にも楽しみ方が変わる珍しい観光地。寺院の境内が雨で深まり、苔と木々の緑が一段と美しくなる「雨の日にこそ見られる景観」がある。対象は「雨予報で鎌倉観光を諦めるか迷っている人」「混雑を避けて鎌倉を歩きたい人」「写真撮影や読書を雨の風情で楽しみたい大人」。標準は11:00集合・17:30解散の6時間30分コース、予算は拝観料＋食事込みで1人4,500〜7,500円。ここでは雨の日に強い鎌倉5スポットを紹介する。",
+  "currentQuote": "雨の鎌倉は、観光客が減り、濡れた苔と石畳が静かな禅の空気感を際立てる。",
+  "currentClosing": "標準動線: 北鎌倉駅11:00→円覚寺で雨の境内（11:00〜12:30）→東慶寺で花と苔（12:30〜13:30）→鎌倉駅へ移動→小町通りで屋内中心の食べ歩き＋カフェ休憩（14:00〜16:00）→鎌倉文学館（16:00〜17:30）。所要6時間30分、予算は拝観料＋食事込みで1人4,500〜7,500円。雨の日は観光客が大幅に減り、平日並みの落ち着きで歩ける逆メリットがある。傘・レインコート・防水ブーツ・タオルを持参すると快適。鎌倉の寺院は石段が滑りやすいので、歩きやすい滑り止め付きの靴が安全。失敗しやすいのは「滑り止めのない靴で石段で滑る」「タオル不足で観賞中の冷え」「文学館の休館日見落とし」。事前に天気と防水装備、各館の開館日を必ず確認。この記事は雨予報で鎌倉観光を迷っている人、混雑を避けたい大人、写真撮影と読書好きの2人に最適。",
+  "spots": [
+    {
+      "name": "鎌倉国宝館",
+      "area": "雪ノ下",
+      "descHead": "1283年創建、北鎌倉の禅宗寺院。鎌倉五山第二位の格式を持つ。雨の日は境内の苔が一段と緑が深まり、本堂の屋根から雨が落ちる景観が美しい。「雨の日に寺院の静謐な空気を体感したい」「禅",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "長谷寺（雨天）",
+      "area": "長谷",
+      "descHead": "1281年創建、鎌倉時代の女性の「駆け込み寺」として歴史的に有名な尼寺。梅・桜・水仙・あじさい・雪ノ下と四季の花が境内に咲き、雨に濡れた花が一段と美しい。「雨と花の組み合わせを写真",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+    },
+    {
+      "name": "円覚寺",
+      "area": "北鎌倉",
+      "descHead": "鎌倉の小町通りは一部アーケード区画があり、雨でも傘を畳めるエリアがある。食べ歩きを楽しめる場所も多く、雨を避けながら店から店へ短距離で移動できる。「雨を避けながら食べ歩きと買い物を",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "建長寺（方丈・庭園）",
+      "area": "山ノ内",
+      "descHead": "鎌倉の街には雨の日に楽しめるカフェが点在する。鎌倉文学館の隣の「ハウス・オブ・ラブズ」・小町通り奥の「カフェ・ヴィヴモン・ディモンシュ」など、雨の日のおもむきを楽しめるカフェが多い",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    },
+    {
+      "name": "鎌倉歴史文化交流館",
+      "area": "御成町",
+      "descHead": "鎌倉文学館は1985年開館、旧前田侯爵家鎌倉別邸を改装した文学博物館。雨の日に訪れると、大正期の洋館の屋根に雨が落ちる音と、館内の静謐な空気の組み合わせが文学的な雰囲気を作る。「文",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
+    }
+  ]
+}

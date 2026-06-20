@@ -1,0 +1,43 @@
+{
+  "id": "new-shin-yokohama-bored",
+  "file": "newGuideFeatures",
+  "persona": "D",
+  "tag": "街歩き",
+  "currentTitle": "新横浜で時間つぶし5選。新幹線待ち・ライブ前後に使える場所",
+  "currentSubtitle": "ラーメン博物館、スケートリンク、新横浜公園。新幹線の待ち時間にも対応できるエリア",
+  "currentLede": "新横浜は東海道新幹線・JR横浜線・横浜市営地下鉄が集まる横浜北部のターミナル。新幹線の乗換・横浜アリーナでのイベント参加・日産スタジアム観戦などで訪れる人が多いが、駅周辺で時間を潰すスポットも整っている。対象は新幹線乗換の2〜4時間待ちを有効に使いたい人、アリーナ/スタジアムのイベント前後の時間調整、地方からの遠征客。標準は14:00集合・19:00解散の5時間コース、予算は1人2,500〜5,000円。ここでは新横浜駅周辺で時間調整に使える5スポットを紹介する。",
+  "currentQuote": "新横浜はラーメン博物館を軸に、スケートリンクや公園と組み合わせれば半日楽しめる。",
+  "currentClosing": "標準動線: 新横浜駅14:00→キュービックプラザでショッピング・カフェ（14:00〜15:00）→ラーメン博物館で食べ比べ（15:00〜16:30）→新横浜公園で散歩（16:30〜17:30）→キュービックプラザ階上で夕食（17:30〜19:00）。所要5時間、予算は食事込みで1人2,500〜5,000円。イベント開催日（アリーナ・スタジアム）は周辺の混雑が激しいので、イベントなしの平日が落ち着いて回れる。雨の日はキュービックプラザ・ラーメン博物館・スケートセンターの屋内ルートで完結。失敗しやすいのは「新横浜公園・日産スタジアムへの徒歩距離（15〜20分）を読み違える」「スケートセンターの営業時間を見落とす」「イベント開催日に来てしまい飲食店が満席」。事前にイベントカレンダーと施設営業時間を公式サイトで確認。この記事は新幹線乗換時間を有効活用したい人、地方からの遠征客に向く。",
+  "spots": [
+    {
+      "name": "新横浜ラーメン博物館",
+      "area": "新横浜",
+      "descHead": "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜スケートセンター",
+      "area": "新横浜",
+      "descHead": "新横浜スケートセンターは新横浜駅から徒歩約7分、通年利用可能なアイススケート場。「子供連れで雨の日に体を動かしたい」「冬季のデートで新感覚な体験を組みたい」家族・カップルに向く。貸",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜公園",
+      "area": "新横浜",
+      "descHead": "新横浜公園は1998年整備、日産スタジアム周辺に広がる約36haの大型公園。「散歩・ランニング・サイクリングを楽しみたい」「子供と外遊びをしたい」家族に最適。鶴見川沿いの遊歩道・芝",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "キュービックプラザ新横浜",
+      "area": "新横浜",
+      "descHead": "キュービックプラザ新横浜は2008年開業、新横浜駅直結の大型商業施設。9〜10階のレストラン街・地下のデパ地下・低層階のファッション・雑貨フロアが揃い、新幹線乗換のついでに食事・買",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "日産スタジアム（横浜国際総合競技場）",
+      "area": "新横浜",
+      "descHead": "日産スタジアム（横浜国際総合競技場）は1998年開業、収容人数約72,000人の日本最大級のサッカースタジアム。「横浜F・マリノス観戦」「サッカー日本代表戦の応援」目的の人に最適。",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    }
+  ]
+}

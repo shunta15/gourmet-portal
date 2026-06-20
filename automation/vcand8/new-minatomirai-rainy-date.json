@@ -1,0 +1,205 @@
+{
+  "id": "new-minatomirai-rainy-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "カップヌードルミュージアム 横浜",
+      "imageSubject": "カップヌードルミュージアム横浜の白い外観建物（日清食品の体験型ミュージアム）",
+      "imageRegion": "神奈川県横浜市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__1__1.jpg",
+          "file": "File:横浜市カップヌードルミュージアム.jpeg",
+          "desc": "横浜市カップヌードルミュージアム",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__1__2.jpg",
+          "file": "File:Cupnoodles-Museum-Yokohama.jpg",
+          "desc": "日清食品の運営する「カップヌードルミュージアム」、横浜市中区新港2丁目。",
+          "w": 1200,
+          "h": 800
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__1__3.jpg",
+          "file": "File:Cupnoodles Museum Yokohama 2017.jpg",
+          "desc": "CUPNOODLES MUSEUM (Momofuku Ando Instant Ramen Museum) in Yokohama, 2017, front view",
+          "w": 1357,
+          "h": 1116
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__1__4.jpg",
+          "file": "File:Cupnoodles museum yokohama.jpg",
+          "desc": "カップヌードルミュージアム横浜",
+          "w": 4000,
+          "h": 3000
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "横浜美術館",
+      "imageSubject": "横浜美術館の石貼りの正面ファサード（丹下健三設計、左右対称の大階段とエントランス）",
+      "imageRegion": "神奈川県横浜市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__2__1.jpg",
+          "file": "File:Yokohama Museum of Art 2009.jpg",
+          "desc": "Yokohama Museum of Art, at Naka-ku Yokohama Japan, design by Kenzo Tange in 1989.",
+          "w": 3547,
+          "h": 2344
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__2__2.jpg",
+          "file": "File:Yokohama Museum of Art IMG 5653.jpg",
+          "desc": "横浜トリエンナーレ、横浜美術館会場",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__2__3.jpg",
+          "file": "File:Yokohama Museum of Art IMG 5692.jpg",
+          "desc": "第8回横浜トリエンナーレ開催中の横浜美術館",
+          "w": 3834,
+          "h": 2156
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__2__4.jpg",
+          "file": "File:Yokohama Museum of Art IMG 5655.jpg",
+          "desc": "横浜トリエンナーレ、横浜美術館会場",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "マークイズみなとみらい",
+      "imageSubject": "マークイズみなとみらいの大型ショッピングモール外観（みなとみらい駅直結の商業ビル）",
+      "imageRegion": "神奈川県横浜市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__3__1.jpg",
+          "file": "File:MARK IS minatomirai 5.jpg",
+          "desc": "MARK IS みなとみらいの外観（横浜美術館手前の連絡橋より）。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__3__2.jpg",
+          "file": "File:MARK IS minatomirai (night) 1.jpg",
+          "desc": "マークイズみなとみらいのライトアップ。時間帯により変化する。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__3__3.jpg",
+          "file": "File:MARK IS minatomirai (night) 1b.jpg",
+          "desc": "マークイズみなとみらいのライトアップ。時間帯により変化する。",
+          "w": 3264,
+          "h": 2448
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__3__4.jpg",
+          "file": "File:MARK IS minatomirai (the front).jpg",
+          "desc": "マークイズみなとみらいの正面外観。上部に「こもれびルーフ」。",
+          "w": 3264,
+          "h": 2448
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "横浜ランドマークタワー スカイガーデン",
+      "imageSubject": "横浜ランドマークタワー（地上70階の超高層ビル全景、スカイガーデンを擁する建物）",
+      "imageRegion": "神奈川県横浜市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__4__1.jpg",
+          "file": "File:Yokohama Kitanaka 2020 Aerial.jpg",
+          "desc": "View of Yokohama Kitanaka district from the Landmark Tower Sky Garden observation deck.",
+          "w": 3840,
+          "h": 2160
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__4__2.jpg",
+          "file": "File:Yokohama Cosmo World from Above 1.JPG",
+          "desc": "横浜ランドマークタワーのスカイガーデンから見下ろす横浜コスモワールド",
+          "w": 4512,
+          "h": 3000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__4__3.jpg",
+          "file": "File:Yokohama Stadium from Landmark Tower.JPG",
+          "desc": "横浜ランドマークタワーのスカイガーデンから眺める横浜スタジアム",
+          "w": 4512,
+          "h": 3000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__4__4.jpg",
+          "file": "File:Yokohama Cosmo World from Above 2.JPG",
+          "desc": "Yokohama Cosmo World (including Cosmo Clock 21) and the Yokohama Bay Bridge viewed from the Yokohama Landmark Tower's Sky Garden (observation deck on the 69th f",
+          "w": 4512,
+          "h": 3000
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "YOKOHAMA AIR CABIN",
+      "imageSubject": "YOKOHAMA AIR CABINのゴンドラと支柱（桜木町〜運河パークを結ぶ都市型ロープウェイ）",
+      "imageRegion": "神奈川県横浜市",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__5__1.jpg",
+          "file": "File:Unga-park station (YOKOHAMA AIR CABIN) 20210421c.jpg",
+          "desc": "「YOKOHAMA AIR CABIN」の運河パーク駅。開業前日の2021年4月21日撮影。",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__5__2.jpg",
+          "file": "File:YOKOHAMA AIR CABIN (51158521500).jpg",
+          "desc": "YOKOHAMA AIR CABINの桜木町駅乗降場。",
+          "w": 4015,
+          "h": 2677
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__5__3.jpg",
+          "file": "File:Yokohama Air Cabin 2.jpg",
+          "desc": "Yokohama Air Cabin ",
+          "w": 4032,
+          "h": 3024
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__5__4.jpg",
+          "file": "File:Yokohama Air Cabin 3.jpg",
+          "desc": "Yokohama Air Cabin ",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    }
+  ]
+}

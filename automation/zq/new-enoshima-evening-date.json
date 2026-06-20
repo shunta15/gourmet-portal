@@ -1,0 +1,23 @@
+{
+  "id": "new-enoshima-evening-date",
+  "zeros": [
+    {
+      "idx": 1,
+      "name": "江ノ島シーキャンドル（江の島展望灯台）",
+      "imageSubject": "江の島シーキャンドル（江の島展望灯台）の塔の外観と展望台",
+      "imageRegion": "神奈川県藤沢市"
+    },
+    {
+      "idx": 4,
+      "name": "江ノ島弁天仲見世通り",
+      "imageSubject": "江の島弁天仲見世通りの土産物店が並ぶ参道の街並み",
+      "imageRegion": "神奈川県藤沢市"
+    },
+    {
+      "idx": 5,
+      "name": "湘南港（ヨットハーバー）",
+      "imageSubject": "湘南港（江の島ヨットハーバー）に係留されたヨットと桟橋",
+      "imageRegion": "神奈川県藤沢市"
+    }
+  ]
+}

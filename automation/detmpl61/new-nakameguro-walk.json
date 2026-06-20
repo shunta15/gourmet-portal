@@ -1,0 +1,43 @@
+{
+  "id": "new-nakameguro-walk",
+  "file": "newGuideFeatures2",
+  "persona": "C",
+  "tag": "散歩",
+  "currentTitle": "中目黒散歩5選。目黒川沿いと桜並木",
+  "currentSubtitle": "目黒川、中目黒高架下、スタバリザーブ。春は桜、年中おしゃれ",
+  "currentLede": "中目黒は目黒川を挟んで南北にカフェ・ブティック・ギャラリーが集まる、「歩くだけで楽しい」東京のおしゃれ住宅街。渋谷から東急東横線で2駅5分という近さなのに、繁華街の喧騒からは完全に切り離された落ち着きが特徴。桜並木の3月末〜4月上旬は都内最大級の花見スポットで、川沿いの遊歩道は満開時には大変な混雑になるが、オフシーズンの静かな中目黒も十分に魅力がある。この記事では桜以外の季節でも楽しめる、午後〜夕方の散歩コース5スポットを紹介する。",
+  "currentQuote": "中目黒は目黒川を軸に歩けば歩くほど発見がある。桜の季節も、そうでない季節も、東京で最もおしゃれな散歩コース。",
+  "currentClosing": "標準動線は、中目黒駅→中目黒高架下（13:00〜14:30）→スタバリザーブ（14:30〜16:00）→目黒川沿いを上流方向へ歩く（16:00〜17:00）→祐天寺・池尻大橋エリアで夕食（18:00〜20:00）。所要4〜5時間、予算は1人2,500〜5,000円が目安。「都心で落ち着いた散歩デートを組みたい人」「商店街より個人店の発見を楽しめる人」「桜以外の中目黒を知りたい人」に向く。桜ピーク（3月末〜4月第1週）の週末は歩行困難なほどの混雑で、撮影と散歩を両立したいなら早朝6〜8時または夜21時以降の時間帯を選ぶ。雨の日は中目黒高架下とスタバリザーブで2〜3時間粘り、駅近で完結させると傘を最小限にできる。時間がない場合は、目黒川沿いを30分歩いて→スタバリザーブで1時間休む、の2点で2時間コースになる。迷ったら、まず中目黒駅で降りて目黒川を上流方向に歩き、気になった店があれば入る、というシンプルな歩き方が中目黒との上手な付き合い方。",
+  "spots": [
+    {
+      "name": "目黒川桜並木",
+      "area": "中目黒",
+      "descHead": "中目黒駅周辺から代官山・池尻大橋方向へ約3.8km続く桜並木。約800本のソメイヨシノが両岸に並び、満開時は川面に花びらが流れる桜のトンネルになる。夜のライトアップ（3月下旬〜4月",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "中目黒高架下",
+      "area": "中目黒",
+      "descHead": "東急東横線の中目黒駅高架橋下を再整備した商業施設。約700mに渡って小規模店舗が並び、夜は高架の造形が照明で浮かび上がって独特の雰囲気をつくる。スタバリザーブロースタリーの隣接区画",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "スタバ リザーブ ロースタリー東京",
+      "area": "中目黒",
+      "descHead": "中目黒高架下に2019年に開業したスタバの世界4店舗目（東京・上海・ニューヨーク・ミラノ）の旗艦店。4階建ての空間に焙煎機・スペシャルティコーヒーバー・ティバーナ・カクテルバーが分",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "目黒川沿いのカフェ・ショップ",
+      "area": "中目黒",
+      "descHead": "目黒川の両岸には、地元のロースターが運営する小さなコーヒースタンド、地方の古い民家を移築したセレクトショップ、川を眺めながら座れるベンチカフェ、花屋兼カフェなど個性的な店が点在する",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    },
+    {
+      "name": "祐天寺・池尻大橋周辺",
+      "area": "目黒区",
+      "descHead": "中目黒から目黒川を上流方向に1.5km歩くと祐天寺、さらに上流の池尻大橋まで2.5kmで到達できる。祐天寺周辺は古民家カフェ・町中華・古本屋が点在する静かな住宅地で、中目黒よりさら",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+    }
+  ]
+}

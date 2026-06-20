@@ -1,0 +1,43 @@
+{
+  "id": "new-kanagawa-weekend",
+  "file": "newGuideFeatures6",
+  "persona": "C",
+  "tag": "観光",
+  "currentTitle": "神奈川週末5選。横浜・鎌倉・箱根を週末で回る",
+  "currentSubtitle": "みなとみらい・鎌倉・箱根。神奈川を週末で満喫するための厳選ルート",
+  "currentLede": "神奈川は横浜・鎌倉・箱根・湘南・川崎と性格の異なる5エリアが、東京から電車1〜1.5時間圏内に揃う「週末旅行の選択肢が最も豊富な県」。1泊2日で2〜3エリアを組み合わせれば、港町・古都・温泉・海岸・工業都市の全く違う雰囲気を体験できる。ここでは初訪問の人が動線を組みやすい、神奈川を週末で回る5スポット組み合わせを紹介する。土曜午前スタート、日曜夕方帰京の標準1泊2日プランを軸に解説する。",
+  "currentQuote": "神奈川を週末で回るなら「欲張らない」こと。横浜・鎌倉・箱根を全部詰め込むと全部が中途半端になる。2〜3エリアに絞って一つひとつをちゃんと楽しむのが正解。",
+  "currentClosing": "標準動線（1泊2日）は、【土曜】10:00みなとみらい→12:30横浜中華街ランチ→14:00鎌倉移動→14:30〜17:30鎌倉散策→鎌倉または横浜泊。【日曜】9:00箱根湯本へ移動→10:30温泉入浴→13:00大涌谷or芦ノ湖→15:00小田原→16:00湘南経由で江の島→18:30帰京。所要約2日、予算は宿泊込みで1人25,000〜45,000円が目安。「神奈川の多様性を一度に体験したい人」「東京近郊で1泊2日旅行を組みたい人」「温泉と街と海を全部入れたい人」に向く。GW・夏休み・連休は箱根湯本〜大涌谷の道路が大渋滞、ピーク日は平日にずらすか早朝出発が現実的。雨の日は箱根の屋外スポットを諦め、ポーラ美術館＋温泉中心に再編成、または横浜・鎌倉の屋内ルートで完結させる。時間がない場合（日帰り）は、横浜中華街→鎌倉散策の2エリアに絞れば10〜18時の8時間で完結できる。迷ったら、土曜は横浜＋鎌倉、日曜は箱根日帰り、というシンプルな二日プランが神奈川週末旅行の王道。",
+  "spots": [
+    {
+      "name": "横浜・みなとみらい（土曜午前）",
+      "area": "みなとみらい",
+      "descHead": "週末初日の朝はみなとみらいで始めるのがおすすめ。東京から電車約30分、ランドマークタワー・赤レンガ倉庫・大さん橋を歩いて港の景色を一気に体験できる。「横浜の代表的な景観を半日で網羅",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg/1280px-Yokohama_Landmark_Tower_and_Minato-Mirai_waterfront_seen_from_the_boat.jpg"
+    },
+    {
+      "name": "横浜中華街（土曜ランチ）",
+      "area": "横浜中華街",
+      "descHead": "横浜中華街は週末ランチのハイライト。約600軒の中華料理店が集まる日本最大の中華街。「中華街の食べ歩きで気軽に複数店を楽しみたい」「横浜の代表的な食文化を体験したい」観光客に最適。",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg/1280px-Zenrin-mon_Gate_of_Yokohama_Chinatown_at_night%2C_Jun_2015.jpg"
+    },
+    {
+      "name": "鎌倉（土曜午後〜夕方）",
+      "area": "鎌倉",
+      "descHead": "横浜から鎌倉へはJR横須賀線で約30分。観光客が集中する朝〜昼を避け、午後14時頃から動き始めると人波が落ち着く。「古都鎌倉の寺社を半日で歩きたい」観光客に最適。北鎌倉→鎌倉のルー",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tsurugaoka_Hachimangu_001.jpg/1280px-Tsurugaoka_Hachimangu_001.jpg"
+    },
+    {
+      "name": "箱根湯本（日曜・温泉日帰り）",
+      "area": "箱根湯本",
+      "descHead": "週末2日目は箱根の温泉でリフレッシュ。鎌倉から箱根湯本へは鎌倉→横浜→小田原→箱根湯本の経路で約2時間。「温泉旅行を1日コースに組み込みたい」家族・カップルに最適。箱根湯本の日帰り",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Owakudani_%40_Hakone_%2810621413133%29.jpg/1280px-Owakudani_%40_Hakone_%2810621413133%29.jpg"
+    },
+    {
+      "name": "湘南経由の帰路（選択肢として）",
+      "area": "湘南（茅ヶ崎・藤沢）",
+      "descHead": "湘南経由の帰路は箱根から東京に戻る際、小田原から東海道線に乗ると湘南海岸（茅ヶ崎・藤沢）を車窓から眺められる選択肢。「神奈川旅行の最後に湘南の海を組み合わせたい」「江の島まで足を伸",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Shonan_Beach_FM.jpg/1280px-Shonan_Beach_FM.jpg"
+    }
+  ]
+}

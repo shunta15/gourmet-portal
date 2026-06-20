@@ -1,0 +1,43 @@
+{
+  "id": "kansai-umeda-night-date",
+  "file": "newGuideFeaturesKansai",
+  "persona": "A",
+  "tag": "デート",
+  "currentTitle": "梅田・中之島 夜景デート5選。観覧車から川沿いの夜まで",
+  "currentSubtitle": "HEP FIVE観覧車、空中庭園、中央公会堂。大阪キタの夜を昼から歩く",
+  "currentLede": "大阪駅・梅田を中心とした「キタ」は、商業施設と展望スポットが半径1km圏内に密集する、大阪でもっとも歩いて回りやすいデートエリアのひとつだ。赤い観覧車のHEP FIVE、地上約170mの梅田スカイビル空中庭園、そして少し南へ下れば中之島の水辺と歴史建築が広がる。対象は梅田で昼から夜景までつなげたいカップル、移動を電車に頼らず徒歩中心で回りたい2人。標準は14:00集合・20:30解散の6時間30分コース、予算は1人5,000〜10,000円が目安。ここではキタの昼から夜へと自然につながる5スポットを、歩く順番で紹介する。",
+  "currentQuote": "梅田の夜景は、高いところと水辺の両方を一日で味わえるのが強みだ。",
+  "currentClosing": "標準動線: 14:00 グランフロント大阪に集合し、カフェと買い物で助走（14:00〜15:30）→ HEP FIVE観覧車で梅田の街を一望（16:00〜16:30、日没前後を狙う）→ 梅田スカイビル空中庭園で夕景から夜景へ（17:00〜18:30）→ 地下1階の滝見小路で夕食（18:30〜19:30）→ 中之島へ移動して中央公会堂のライトアップと水辺の夜さんぽ（20:00〜20:30）。所要6時間30分、予算は1人5,000〜10,000円が目安。高い場所からの眺めと、地上の水辺の落ち着きを一日で対比させられるのが、このルートのいちばんの魅力だ。注意したいのは、観覧車と展望台はどちらも日没前後に人が増えること、空中庭園と中之島の水辺は屋外で風を受けやすいこと、そして店舗ごとに営業時間が違うこと。雨の日は、グランフロントと梅田スカイビル館内、HEP FIVEのゴンドラなど屋内・半屋内中心に組み替えると快適に回れる。料金・営業時間・ライトアップ時間は変更されることがあるため、訪問前に各施設の公式サイトで確認しておきたい。大阪・梅田で初デートから記念日まで、昼から夜景まで途切れず歩きたい2人に向くコースだ。",
+  "spots": [
+    {
+      "name": "グランフロント大阪",
+      "area": "大阪市北区・うめきた",
+      "descHead": "グランフロント大阪は、JR大阪駅の北側「うめきた」に広がる大型複合商業施設で、南館・北館にショップ、レストラン、カフェが集まる。大阪駅2階のデッキから歩いて数分で繋がり、雨でも濡れ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/131214_Grand_Front_Osaka_Japan01s5.jpg/1280px-131214_Grand_Front_Osaka_Japan01s5.jpg"
+    },
+    {
+      "name": "HEP FIVE観覧車",
+      "area": "大阪市北区・梅田",
+      "descHead": "HEP FIVEの屋上に乗る赤い観覧車は、最高到達点が地上106m、直径75mの梅田のランドマークだ。乗り場はビル7階で、4人乗りのゴンドラは冷暖房付き、一周は約15分。天気のよい",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/4/42/HEP_FIVE_01.jpg"
+    },
+    {
+      "name": "梅田スカイビル 空中庭園展望台",
+      "area": "大阪市北区・大淀",
+      "descHead": "梅田スカイビルは2棟の超高層ビルを上部で連結した独特の構造で、その屋上に円形の「空中庭園展望台」がある。地上約170mの屋外デッキからは、大阪の市街地と淀川、晴れた日には遠く六甲の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Umeda_Sky_Building_201807.jpg/1280px-Umeda_Sky_Building_201807.jpg"
+    },
+    {
+      "name": "大阪市中央公会堂",
+      "area": "大阪市北区・中之島",
+      "descHead": "中之島の東寄りに建つ大阪市中央公会堂は、1918年竣工のネオ・ルネサンス様式の建物で、赤煉瓦と銅板屋根の外観が国の重要文化財に指定されている。夜になると外壁がライトアップされ、川面",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Osaka_City_Central_Public_Hall_20160221.JPG/1280px-Osaka_City_Central_Public_Hall_20160221.JPG"
+    },
+    {
+      "name": "中之島 水辺の夜さんぽ",
+      "area": "大阪市北区・中之島",
+      "descHead": "中之島は堂島川と土佐堀川に挟まれた細長い中洲で、川沿いの遊歩道を歩きながら、ライトアップされた橋と歴史建築の灯りを楽しめる。なにわ橋やその周辺からは、中之島のビル群と水面に映る光が",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cityscapes_of_Nakanoshima%2C_Osaka_from_Naniwa_Bridge_20250901.jpg/1280px-Cityscapes_of_Nakanoshima%2C_Osaka_from_Naniwa_Bridge_20250901.jpg"
+    }
+  ]
+}

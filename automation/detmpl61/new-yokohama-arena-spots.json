@@ -1,0 +1,43 @@
+{
+  "id": "new-yokohama-arena-spots",
+  "file": "newGuideFeatures",
+  "persona": "B",
+  "tag": "街歩き",
+  "currentTitle": "横浜アリーナ周辺5選。ライブ前後に使えるスポット",
+  "currentSubtitle": "ラーメン博物館、スケートリンク、新横浜公園。ライブの待ち時間を快適に過ごす方法",
+  "currentLede": "横浜アリーナはコンサート・スポーツイベントの集客力で東京ドーム・武道館と並ぶ主要な大型イベント施設。新横浜駅から徒歩5分の駅近で、ライブ前後の食事・カフェ・物販を駅周辺で組み立てやすい。対象はアリーナのコンサート参加客、地方からの遠征ファン、グッズ販売の整理券狙いの早朝来場客。標準は16:30集合・23:30解散の7時間コース（ライブチケット込み）、予算は食事・グッズ込みで1人15,000〜25,000円。ここでは横浜アリーナ参加時に役立つ駅周辺5スポットを紹介する。",
+  "currentQuote": "横浜アリーナ周辺は新横浜駅から徒歩圏内に飲食・体験施設が揃い、前後の時間を使いやすい。",
+  "currentClosing": "標準動線: 新横浜駅16:30到着→キュービックプラザでディナー（16:30〜18:00）→アリーナ会場入場（18:00〜18:30）→ライブ（18:30〜21:30）→新横浜公園を経由して駅へ→カフェで余韻共有（22:00〜23:30）→新横浜駅から帰路。所要7時間、予算はライブチケット＋食事＋カフェ込みで1人15,000〜25,000円。ライブ開催日は新横浜駅・キュービックプラザのレストランが混雑するため、予約推奨。雨の日もアリーナ・駅・キュービックプラザが至近距離で繋がるため、傘の煩わしさは最小限。失敗しやすいのは「グッズ販売の整理券時間を見落とす」（朝5〜7時から並ぶ必要がある場合も）と「終演後の電車混雑を読み違える」（新横浜駅は終電帯の改札待ちが発生）。事前に公式アナウンスで整理券・グッズ販売の時間を確認、終電1本前を目安に駅に向かう。この記事はアリーナのコンサート参加客、地方からの遠征ファンに最も向く。",
+  "spots": [
+    {
+      "name": "新横浜ラーメン博物館",
+      "area": "新横浜",
+      "descHead": "新横浜ラーメン博物館は1994年開業、日本初のラーメンテーマパーク。館内には全国の名店8〜10店舗（入れ替わりあり）が出店し、ミニサイズの一杯（500〜800円）で食べ比べができる",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜公園・鶴見川沿い遊歩道",
+      "area": "新横浜",
+      "descHead": "新横浜公園と鶴見川沿いの遊歩道は約36haの大型公園区画で、横浜アリーナの東側に広がる。「ライブ前の屋外時間を確保したい」「グッズ列に並ぶ前の集合場所にしたい」目的に向く。鶴見川沿",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "キュービックプラザ新横浜",
+      "area": "新横浜",
+      "descHead": "キュービックプラザ新横浜は新横浜駅直結の大型商業施設（2008年開業）。ライブ前の食事に9〜10階のレストラン街が使いやすい。「ライブ前の17〜18時に1〜1.5時間で食事を済ませ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜スケートセンター",
+      "area": "新横浜",
+      "descHead": "新横浜スケートセンターは通年利用可能なアイススケート場。「ライブ前の時間が4〜5時間以上余った」「友人と新感覚な体験を組みたい」グループに向く。新横浜駅から徒歩7分、貸靴・滑走料込",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    },
+    {
+      "name": "新横浜近辺のカフェ・コワーキング",
+      "area": "新横浜",
+      "descHead": "新横浜駅周辺のカフェ・コワーキングスペースは、ライブ後の余韻を共有する場として使える。「ライブの感想を共有したい」「グッズ整理の時間が欲しい」グループに向く。Wi-Fi・電源完備の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shin-Yokohama_seen_from_Shinkansen.jpg/1280px-Shin-Yokohama_seen_from_Shinkansen.jpg"
+    }
+  ]
+}

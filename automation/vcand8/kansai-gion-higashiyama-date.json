@@ -1,0 +1,189 @@
+{
+  "id": "kansai-gion-higashiyama-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "八坂神社",
+      "imageSubject": "八坂神社の朱塗りの西楼門（四条通東端に立つ重層入母屋造の楼門）",
+      "imageRegion": "京都府京都市東山区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__1__1.jpg",
+          "file": "File:Honden, Yasaka-jinja, Kyoto, 20240820 1700 5154.jpg",
+          "desc": "Honden, Yasaka-jinja, Kyoto",
+          "w": 4885,
+          "h": 3003
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__1__2.jpg",
+          "file": "File:八坂神社 Yasaka (11152361236).jpg",
+          "desc": "airoplane.net/",
+          "w": 5760,
+          "h": 3840
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__1__3.jpg",
+          "file": "File:八坂神社 露天 - panoramio.jpg",
+          "desc": "八坂神社　露天",
+          "w": 3456,
+          "h": 2304
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__1__4.jpg",
+          "file": "File:Yasaka Jinja, Kanegasaku Matsudo01.jpg",
+          "desc": "八坂神社 (松戸市金ケ作)",
+          "w": 4032,
+          "h": 3024
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "円山公園",
+      "imageSubject": "円山公園の池泉回遊式庭園と中央の有名なしだれ桜",
+      "imageRegion": "京都府京都市東山区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__2__1.jpg",
+          "file": "File:Sapporo maruyama park aerial shot.jpg",
+          "desc": "円山公園を空撮（2021年）",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__2__2.jpg",
+          "file": "File:Kyoto-maruyama.jpg",
+          "desc": "円山公園",
+          "w": 2048,
+          "h": 1536
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__2__3.jpg",
+          "file": "File:Maruyama Park Kyoto 1905.jpg",
+          "desc": "Photographs of Kyoto, Japan. Maruyama Park, Kioto [sic]",
+          "w": 2400,
+          "h": 2013
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "高台寺",
+      "imageSubject": "高台寺の方丈前庭と臥龍池をのぞむ庭園の景観",
+      "imageRegion": "京都府京都市東山区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__3__1.jpg",
+          "file": "File:Kōdai-ji Kyoto HDSR IMG 1753.jpg",
+          "desc": "image montrant un komainu gardien devant un grand torii",
+          "w": 5184,
+          "h": 3456
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__3__2.jpg",
+          "file": "File:Kodai-ji (2644391163).jpg",
+          "desc": "Kodai-ji",
+          "w": 3504,
+          "h": 2336
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__3__3.jpg",
+          "file": "File:Kodai-ji Temple @ Kyoto (13310463645).jpg",
+          "desc": "Kodai-ji Temple @ Kyoto",
+          "w": 3968,
+          "h": 2976
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__3__4.jpg",
+          "file": "File:Kodai-ji Temple @ Kyoto (13310832564).jpg",
+          "desc": "Kodai-ji Temple @ Kyoto",
+          "w": 3968,
+          "h": 2976
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "二年坂・産寧坂",
+      "imageSubject": "二年坂・産寧坂の石畳の坂道沿いに京町家の店が連なる町並み",
+      "imageRegion": "京都府京都市東山区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__4__1.jpg",
+          "file": "File:A street in Kyoto (52360546390).jpg",
+          "desc": "A street in Kyoto",
+          "w": 5810,
+          "h": 4634
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__4__2.jpg",
+          "file": "File:Desolation of Ninenzaka by Covid19 (1).jpg",
+          "desc": "新型コロナウイルスによる外出自粛要請で人通りがない状態の二年坂",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__4__3.jpg",
+          "file": "File:Desolation of Ninenzaka by Covid19 (2).jpg",
+          "desc": "新型コロナウイルスによる外出自粛要請で人通りがない状態の二年坂",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__4__4.jpg",
+          "file": "File:Flowers at Gion - Nineizaka (Ninenzaka), Kyoto, Japan (48923328698).jpg",
+          "desc": "Flowers at Gion - Nineizaka (Ninenzaka), Kyoto, Japan",
+          "w": 6000,
+          "h": 4000
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "清水寺",
+      "imageSubject": "清水寺の本堂「清水の舞台」（崖からせり出す懸造りの木組み舞台）",
+      "imageRegion": "京都府京都市東山区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__5__1.jpg",
+          "file": "File:Four ladies wearing a yukata in front of the North Gate of Kiyomizu-dera temple Kyoto Japan.jpg",
+          "desc": "Four ladies wearing yukatas, in front of the North Gate (Kita So-Mon) of Kiyomizu-dera temple, Kyoto, Japan.",
+          "w": 5839,
+          "h": 3893
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__5__2.jpg",
+          "file": "File:清水寺 Kiyomizu-dera Temple.jpg",
+          "desc": "Kiyomizu-dera Temple",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/kansai-gion-higashiyama-date__5__3.jpg",
+          "file": "File:清水寺 Kiyomizu-dera Temple - panoramio.jpg",
+          "desc": "清水寺  Kiyomizu-dera Temple",
+          "w": 2816,
+          "h": 2112
+        }
+      ]
+    }
+  ]
+}

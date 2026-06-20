@@ -1,0 +1,43 @@
+{
+  "id": "new-ikebukuro-day",
+  "file": "newGuideFeatures2",
+  "persona": "D",
+  "tag": "時間つぶし",
+  "currentTitle": "池袋で一日過ごす5選。サンシャインとデパート",
+  "currentSubtitle": "サンシャイン60展望台、西武・東武百貨店、池袋西口公園。副都心の時間つぶし",
+  "currentLede": "池袋は新宿・渋谷と並ぶ副都心で、JR池袋駅を挟んで東口（西武）・西口（東武）の二大百貨店が向かい合う「日本でも珍しい構造の街」だ。サンシャインシティを軸に展望台・水族館・プラネタリウム・遊園地（ナンジャタウン）が1施設に集約され、雨の日でも1日完結できる。アニメ・漫画文化の濃さでは秋葉原と並び、女性向けオタクカルチャーの中心地「乙女ロード」も独自の魅力を持つ。ここでは初訪問の人が午前〜夜まで時間帯で使い分けやすい5スポットを紹介する。",
+  "currentQuote": "池袋は西武・東武・サンシャインで半日過ごせる副都心。アニメ文化の濃さでは秋葉原と並ぶ。",
+  "currentClosing": "標準動線は、JR池袋駅東口→サンシャイン60展望台（13:00〜14:30）→水族館・ナンジャタウン（14:30〜16:30）→乙女ロード散策（16:30〜17:30）→西武池袋本店デパ地下＋夕食（18:00〜20:00）。所要6〜7時間。「副都心で1日過ごしたい人」「雨の日に屋内で完結させたい人」「アニメ・漫画文化に触れたい人」に向く。土日のサンシャイン展望台と水族館は14〜17時がピーク混雑なので、朝イチか夕方以降の入場が快適。雨の日はサンシャインシティと西武・東武百貨店を館内通路で繋ぐと、ほぼ濡れずに1日が組める。時間が足りない場合は、サンシャイン60展望台（90分）→西武デパ地下（夕食調達30分）の2点で2時間コースになる。夜景目当てなら、サンシャイン60を日没30分前に入場し、夕景と夜景の両方を1回の入場で楽しむのが効率的。",
+  "spots": [
+    {
+      "name": "サンシャイン60展望台",
+      "area": "池袋東口",
+      "descHead": "高さ229mのサンシャイン60の最上階（59〜60F）にある展望台「SKY CIRCUS」。東京スカイツリー・東京タワー・富士山が見渡せる360度パノラマで、「触れる地球儀」「鏡の",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+    },
+    {
+      "name": "西武百貨店池袋本店・東武百貨店",
+      "area": "池袋駅",
+      "descHead": "JR池袋駅の東口に西武・西口に東武が向かい合う構造は、池袋ならではの景観。西武池袋本店は本館・別館・書籍館（リブロ）の複合構造で、デパ地下は東京でも有数の規模。東武百貨店池袋店も本",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    },
+    {
+      "name": "池袋西口公園",
+      "area": "池袋西口",
+      "descHead": "池袋駅西口直結の広場公園で、石田衣良の小説『池袋ウエストゲートパーク』の舞台。中央に円形シアター「グローバルリング」があり、無料イベント・路上ライブ・大道芸が定期開催される。周辺は",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    },
+    {
+      "name": "乙女ロード",
+      "area": "池袋東口",
+      "descHead": "池袋東口・東池袋4丁目周辺に広がる、女性向けアニメ・漫画・同人グッズの商店街。アニメイト池袋本店・らしんばん池袋・K-BOOKSなどの大型店が密集し、BL・乙女ゲーム・声優グッズの",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+    },
+    {
+      "name": "としまえん跡・練馬区立としまえん庭の湯",
+      "area": "練馬",
+      "descHead": "2020年に閉園した遊園地「としまえん」跡地の一部を活用した日帰り温泉施設「庭の湯」。天然温泉・サウナ・岩盤浴・露天風呂が揃い、池袋から西武池袋線で約10分という都心立地が魅力。「",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ikebukuro-STA_East.jpg/1280px-Ikebukuro-STA_East.jpg"
+    }
+  ]
+}

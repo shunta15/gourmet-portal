@@ -1,0 +1,43 @@
+{
+  "id": "new-hachioji-gourmet",
+  "file": "newGuideFeatures5",
+  "persona": "B",
+  "tag": "グルメ",
+  "currentTitle": "八王子グルメ5選。東京西部の食の実力を歩く",
+  "currentSubtitle": "八王子ラーメン、八王子城跡、多摩の地ビール。都心と異なる食文化圏を探索する",
+  "currentLede": "八王子は東京西部の中核都市で、JR中央線・京王線・横浜線・八高線が交差するターミナルでありながら、グルメ的な存在感は東京23区側に比べて知られていない。実は八王子ラーメン・八王子餃子・八王子の中華そば・地元産野菜を使う料亭・大学街のカジュアル食堂と、独自の食文化が層になっている街だ。高尾山ハイキングの前後の食事処として組み込むことも、八王子だけで半日散歩することもできる。ここでは初訪問でも回りやすい、八王子の5スポットを紹介する。",
+  "currentQuote": "八王子ラーメンは「なぜ玉ねぎ？」と思いながら食べると、食べ終わる頃には正解に感じてくる。都心と異なる食文化がちゃんとある街。",
+  "currentClosing": "標準動線は、JR八王子駅→八王子ラーメン店でランチ（12:00〜13:00）→西放射線ユーロード散策＋餃子（13:00〜14:30）→学生街のカフェで休憩（14:30〜15:30）→高尾山口へ電車移動→高尾山ハイキングまたは麓散歩（16:00〜18:00）。所要5〜7時間、予算は1人3,000〜6,000円が目安。「東京23区から少し離れた街の食文化を体験したい人」「高尾山と組み合わせて1日コースを組みたい人」「学生街のローカル食堂に興味がある人」に向く。土日午前の高尾山は登山ピーク、午後ハイキングまたは平日推奨。雨の日は登山を諦めて、八王子市内のラーメン＋商店街＋大学博物館の屋内ルートで完結できる。時間がない場合は、八王子駅→八王子ラーメン→西放射線ユーロードの3点で2時間半に圧縮できる。迷ったら、まず八王子ラーメンを1杯食べて、その後の動線は当日の天気で決める、というシンプルな計画が八王子の正解。",
+  "spots": [
+    {
+      "name": "八王子ラーメン（八王子駅周辺）",
+      "area": "八王子",
+      "descHead": "八王子ラーメンは「醤油ベースに刻みタマネギを乗せる」という独特のスタイルで、八王子市内に専門店が30軒以上ある。「八王子の独自ラーメン文化を体験したい」「複数店でラーメンを食べ比べ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "八王子城跡（史跡）",
+      "area": "八王子",
+      "descHead": "八王子城跡は1587年北条氏照が築城、1590年豊臣秀吉の小田原征伐で落城した戦国時代の山城。「戦国史跡を歩きたい」「ハイキングと史跡を組み合わせたい」歴史好きに向く。城跡公園とし",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "高尾山（八王子市内）",
+      "area": "高尾",
+      "descHead": "高尾山は標高599m、東京近郊で最もアクセスしやすい登山入門の山。「都心から1時間でハイキングを楽しみたい」「八王子グルメと自然を組み合わせたい」目的に最適。ケーブルカー・リフト（",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "八王子駅周辺の地ビール・クラフトビール",
+      "area": "八王子",
+      "descHead": "八王子駅周辺の地ビール・クラフトビール文化は近年急速に成長し、地元ブルワリーの直営店が複数ある。「八王子ラーメンの後に地ビールでクールダウンしたい」「クラフトビール文化を体験したい",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    },
+    {
+      "name": "石川宿・八王子市内の宿場町跡",
+      "area": "八王子",
+      "descHead": "石川宿は八王子市石川町、旧甲州街道の宿場町の名残が残るエリア。「旧甲州街道の歴史を歩きたい」「観光地化されていない宿場町跡を見たい」歴史好きに向く。現在は住宅街として再整備されてい",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修 2026-06-20）: テキスト/articleTypeを4ペルソナで多様化。スポット・画像は保持。
+// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
 
 export const NEW_GUIDE_FEATURES_4: Feature[] = [
   {
@@ -10,7 +10,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "URA-HARAJUKU",
     "title": "裏原宿で外さない古着とストリートの目利きスポット。表参道の裏を掘る",
     "sub": "キャットストリートからラフォーレ原宿、明治神宮まで。ハイブランドの表通りと、インディーズが息づく裏路地。その両方を知る人だけが手に入れる原宿の本当の顔を、選び抜いた目で案内する。",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cat_Street%2C_Ura_Harajuku_1.jpg/1280px-Cat_Street%2C_Ura_Harajuku_1.jpg"
   },
   {
     "id": "new-ginza-gallery",
@@ -19,7 +19,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "GINZA ART & SHOP",
     "title": "銀座を歩く、無料の画廊と老舗の文具店。買わずに過ごす大人の午後",
     "sub": "ハイブランドの裏に画廊が百軒。GINZA SIX、伊東屋、資生堂の企画展まで、中央通りから一本入って歩く",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg"
   },
   {
     "id": "new-shibuya-brunch",
@@ -46,7 +46,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "ROPPONGI ART",
     "title": "六本木アートトライアングル半日コース。美術館3館とパブリックアートを歩く",
     "sub": "森美術館、国立新美術館、サントリー美術館。半径800mに集まる東京の現代アートを、徒歩でつなぐ一日",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/202304011323_IMG_5605.jpg/1280px-202304011323_IMG_5605.jpg"
   },
   {
     "id": "new-marunouchi-walk",
@@ -64,7 +64,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "OMOTESANDO BRUNCH",
     "title": "表参道、ブランチを歩く朝。ケヤキ並木から青山の路地まで",
     "sub": "表参道ヒルズ周辺のカフェ、根津美術館、岡本太郎記念館。並木と裏路地を行き来する週末の半日",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Omotesando_2007_b.JPG"
   }
 ];
 
@@ -81,7 +81,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cat_Street%2C_Ura_Harajuku_1.jpg/1280px-Cat_Street%2C_Ura_Harajuku_1.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -92,7 +92,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "ストリートファッションの主軸。歩くだけで最新トレンドがわかる",
         "desc": "明治神宮前駅から徒歩5分、原宿の代名詞だった裏路地エリア。1990〜2000年代のストリートカルチャー全盛期から残る古着屋・スケーターショップ・カフェが点在する。BAPE（ベイシングエイプ）旧本店跡周辺は若手ブランドの旗艦店が入れ替わりながら更新され、毎月新しい店が増減している。ピークは土日の14〜17時、平日午後や日曜午前が比較的落ち着いて回れる時間帯。店舗1軒の滞在は10〜30分、全体で2〜3時間あれば一周できる規模感。次の動線として原宿駅・代々木公園方向、または表参道方向にどちらにも繋がる起点。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cat_Street%2C_Ura_Harajuku_1.jpg/1280px-Cat_Street%2C_Ura_Harajuku_1.jpg"
         ],
         "specs": [
           {
@@ -114,7 +114,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "インディーズブランドとカルチャーが集まるファッションの殿堂",
         "desc": "明治通り沿いから1本入った神宮前4丁目周辺は、東京の古着シーンの中心地。アメリカ古着・ヨーロッパ古着・80〜90年代のアーカイブまで、価格帯と専門性が分かれた店が10軒以上密集する。店ごとに得意な時代・国・カテゴリ（スウェット/Tシャツ/シャツ/ジーンズ等）が違い、ハンティングするなら半日かかる。古着ハンターは平日午前に到着して開店直後に新入荷を狙うのが王道。週末はファッション関係者と海外ストリート系YouTuberで混むため、ゆっくり選びたいなら平日推奨。明治神宮前駅から徒歩5〜7分の範囲に集中。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/d/d9/Laforet_Harajuku1.jpg"
         ],
         "specs": [
           {
@@ -136,7 +136,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "都心と思えない鎮守の森。ショッピング前後のリセットに最適",
         "desc": "明治神宮前駅と表参道駅の中間、キャットストリート（旧渋谷川遊歩道）周辺はスペシャルティコーヒーの小箱が並ぶ。ブルーボトルコーヒー青山・% Arabica などの全国チェーンのフラッグシップから、個人経営のロースタリーまで業態が幅広い。コーヒー1杯500〜800円程度、店内席があるところは1時間ほど休憩できる。古着ハント・カフェ・次の店、というリズムで歩くと半日が早く過ぎる。キャットストリートは細長い遊歩道型で、片側に入って戻ってくる動線が無駄が少ない。表参道駅A2出口から徒歩3分、明治神宮前駅5出口から徒歩4分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Meiji-jing%C5%AB_grand_torii_d%27entr%C3%A9e.jpg/1280px-Meiji-jing%C5%AB_grand_torii_d%27entr%C3%A9e.jpg"
         ],
         "specs": [
           {
@@ -158,7 +158,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "圧倒的な若者文化の集積。クレープと古着とコスプレが共存",
         "desc": "明治通りから表参道方向に伸びる細い遊歩道型の通り。元渋谷川を暗渠化した上にできた歩道で、低層の店舗が両側に並ぶ「歩いて楽しい」設計になっている。アディダスオリジナルス・カルバンクライン・トミーヒルフィガーなどのストリートブランド旗艦店が並び、ファッション最新トレンドの観察にも向く。週末は若い客層で混雑し、平日午前と夕方17時以降が落ち着く。原宿〜渋谷の徒歩動線としても優秀（約20分で繋がる）。渋谷スクランブル方向へ抜ける場合は、キャットストリート南端から徒歩15分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Japan_Tokyo_Takeshita_street_at_summer_-_%E6%9D%B1%E4%BA%AC%E7%AB%B9%E4%B8%8B.jpg/1280px-Japan_Tokyo_Takeshita_street_at_summer_-_%E6%9D%B1%E4%BA%AC%E7%AB%B9%E4%B8%8B.jpg"
         ],
         "specs": [
           {
@@ -217,7 +217,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -228,7 +228,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "東京最大級の高級商業施設。屋上庭園と無料アート展示が見どころ",
         "desc": "1932年竣工、東京の文化遺産級の建築。リニューアル後も外観の重厚な造形を保ち、中央通りからの景観の主役。館内の銀座メゾンエルメスフォーラム（10F）は、現代美術の企画展が年4〜5本、無料で公開される。「ハイブランドの建築と現代美術を1ヶ所で楽しみたい」2人に最適。ガラスブロックの外壁が美しく、夜のライトアップ時の外観も写真スポットとして優秀。メゾンエルメスのフォーラム展示は、銀座の中央通りに面した立地なので、ショッピング動線の中で気軽に立ち寄れる。営業時間11〜20時、企画展の入場無料（公式サイトで内容確認）。次の動線は徒歩で銀座6丁目（GINZA SIX）へ繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ginza_Six_01.jpg/1280px-Ginza_Six_01.jpg"
         ],
         "specs": [
           {
@@ -272,7 +272,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "無料ギャラリーが数十軒。現代アートを気軽に見て回れる",
         "desc": "銀座8丁目の資生堂本社ビル内、東銀座と新橋の中間に位置する画廊。1919年創業の日本最古級の現代美術ギャラリーで、企画展は無料で公開される。「ファッション・写真・グラフィックデザインの歴史」に興味がある人に最適。1Fのカフェ「ファロ」とともに、アートと食を組み合わせた1〜2時間の滞在が組める。資生堂のアートディレクション・広告美術の歴史展示が、ファッション・写真・グラフィックデザインに興味がある人には特に面白い。営業時間11〜19時、月曜休館（公式サイトで確認）。次の動線は徒歩で新橋方向へ続き、汐留・浜離宮にも繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Shiseido_ginza_building_2014-2.jpg/1280px-Shiseido_ginza_building_2014-2.jpg"
         ],
         "specs": [
           {
@@ -294,7 +294,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "老舗百貨店の地下食料品フロアが圧巻。試食と手土産の宝庫",
         "desc": "銀座6丁目交差点近くの細長い路地。中央通り（大通り）から一本入ると、画廊・小さな喫茶店・古書店・洋食屋が密集する。「観光ガイドに載らない銀座の裏面を歩きたい」散歩好きに最適。ピアスやアクセサリーの工房、戦前から続く文具店、銀座らしい小さな寿司屋など、観光ガイドに載らない店が並ぶ。あづま通りの裏側にあたるみゆき通りも同じ系譜で、銀座6〜8丁目に裏路地のネットワークが広がっている。ピーク時の中央通りの喧騒を抜けて、こちらの路地に入ると一気に空気が変わる。迷いながら歩く価値のある、銀座の隠れた裏面。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Miharakoji_street_ginza_2014.jpg/1280px-Miharakoji_street_ginza_2014.jpg"
         ],
         "specs": [
           {
@@ -316,7 +316,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "銀座のランドマーク。地下ショップへの入場は無料",
         "desc": "中央通り銀座4丁目交差点を挟んで向かい合う2大百貨店。三越のライオン像・松屋のショーウィンドウは銀座の象徴。「銀座でしか買えない手土産を調達したい」「老舗のデパ地下を体感したい」人に向く。両店のデパ地下は銀座エリアでも上位の充実度で、デート最後の手土産調達に向く。三越本館7階の三越ギャラリーは美術品の展示販売が随時、入場無料で見られる。松屋銀座本館8階のデザインギャラリー1953は1953年創設の歴史あるデザイン展示空間。営業時間10〜20時、レストランは〜22時。中央通りの歩行者天国は土日祝12〜18時（季節により変動）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ginza_Mitsukoshi_Lion_Statue_%2853028865755%29.jpg/1280px-Ginza_Mitsukoshi_Lion_Statue_%2853028865755%29.jpg"
         ],
         "specs": [
           {
@@ -386,7 +386,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "高層階からスクランブルを見下ろしながらコーヒーを",
         "desc": "渋谷駅の北西側、奥渋谷（神山町・松濤）は、渋谷の喧騒から1〜2ブロック歩いた途端に静かな住宅街になる、東京で珍しい立地。個人経営のスペシャルティコーヒーロースタリー、自家製パン中心のベーカリーカフェ、北欧家具のショールーム併設カフェなど、ローカル色の強い小箱が密集する。コーヒー1杯500〜800円、ブランチ料理は1,500〜2,500円が中心。店内が小さいので、土曜午前10〜12時は満席率が高い。平日午前または日曜の遅めの時間が現実的。Bunkamura・松濤美術館も近く、アート鑑賞と組み合わせた半日が組める。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Blue_Impulse_T-4_in_Shibuya%2C_Tokyo_018.jpg/1280px-Blue_Impulse_T-4_in_Shibuya%2C_Tokyo_018.jpg"
         ],
         "specs": [
           {
@@ -426,7 +426,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "47Fからのパノラマ。開館直後は比較的空いている",
         "desc": "渋谷駅から徒歩約8〜10分、奥渋谷の住宅街にひっそり点在する「全粒粉・天然酵母・自家製発酵」のベーカリーが4〜5軒。土曜午前9〜11時の焼きたて時間帯は地元客で行列ができる。1個300〜500円程度、店内席があるカフェ併設の店も多く、コーヒーと一緒にゆっくり食べられる。店ごとにパンの個性が違い、ハシゴしながら半日歩くのも楽しい。観光客がほぼ来ないため、店主と話しながら選ぶ時間が持てるのが奥渋谷のブランチ文化の魅力。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Shibuya_Scramble_Square_-_SHIBUYA_SKY_10.jpg/1280px-Shibuya_Scramble_Square_-_SHIBUYA_SKY_10.jpg"
         ],
         "specs": [
           {
@@ -448,7 +448,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "渋谷から徒歩15分。芝生でブランチが最高の週末",
         "desc": "渋谷宮益坂上から青山方向へ向かう通り沿いには、ニュージーランド系・オーストラリア系・北欧系のオーセンティックな朝食カフェが点在する。アボカドトースト・エッグベネディクト・アサイーボウル・グラノラなど、ヘルシー系ブランチの定番メニューが並ぶ。土日のピークは11〜13時、平日午前は仕事前の客でむしろ8〜10時が混む。1人2,500〜4,500円程度、シャンパン・モーニングカクテルを出す店も増えており、休日の贅沢ブランチとして組み込める。宮益坂を上り切ると青山1丁目に到達し、根津美術館方向にも歩ける。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/4/47/Bridge_Yoyogipark.JPG"
         ],
         "specs": [
           {
@@ -545,7 +545,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "南口の再開発エリア。高島屋タイムズスクエアが隣接",
         "desc": "御苑南西部に約2,000坪の純和風庭園。池泉回遊式の構造で、池の中央に旧御涼亭（茶室）が浮かぶ景観が美しい。桜・つつじ・紅葉と季節ごとの植栽が計算されており、写真スポットとして上位。御涼亭は外観のみ見学可能（内部は通常非公開）、池の周囲を1周する散歩道が整備されている。新宿の超高層ビル群を背景にした構図は「東京の対比」として絵になる。御苑全体の中で最も静かな区画で、ベンチに座って読書をする人も多い。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/JR_shinjuku_miraina_tower_20160102.jpg/1280px-JR_shinjuku_miraina_tower_20160102.jpg"
         ],
         "specs": [
           {
@@ -563,7 +563,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "伊勢丹・小田急・高島屋が密集する新宿の百貨店街",
         "desc": "新宿御苑前駅周辺は、御苑訪問者を迎えるカフェ・喫茶店が10軒以上集まっている。個人経営のスペシャルティコーヒー店、北欧家具のショールーム併設カフェ、街の老舗喫茶店など業態が幅広い。コーヒー1杯500〜900円、サンドイッチや朝食メニューを出す店も多い。御苑参道の通り（御苑大通り）から1本入った住宅街には、観光客がほぼ来ない小さなカフェが点在する。御苑滞在の前後30〜60分の休憩として組み込みやすく、午前9時開店の店もあるので朝活にも使える。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Odakyu_Department_store_Shinjuku_16-01.JPG/1280px-Odakyu_Department_store_Shinjuku_16-01.JPG"
         ],
         "specs": [
           {
@@ -581,7 +581,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "御苑散歩の夜の締め。戦後の屋台文化が残る路地",
         "desc": "新宿御苑から徒歩10分、四谷駅・四ツ谷三丁目駅エリアは、新宿の繁華街とは違う「江戸の旧宿場町」の歴史が残る区画。迎賓館赤坂離宮（外観のみ無料見学可、館内見学は要事前予約・公式サイト確認）の前庭園を歩くと、新宿御苑とはまた違う格の高い公園空間。四谷見附跡・荒木町の路地・尾張屋本店・しんみち通りの飲食店街など、新宿の隣でありながら独立した街として歩ける。新宿御苑からの徒歩動線で繋ぐと、半日コースを1日コースに拡張できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku-West_Omoide-Yokocho.jpg/1280px-Shinjuku-West_Omoide-Yokocho.jpg"
         ],
         "specs": [
           {
@@ -618,7 +618,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/202304011323_IMG_5605.jpg/1280px-202304011323_IMG_5605.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -629,7 +629,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "53階の現代アート。天望デッキとのセット券がお得",
         "desc": "2007年開業、黒川紀章設計の波打つガラスファサードが特徴の国立美術館。常設展を持たず、年5〜6本の大型企画展を並走させる「企画展専門館」。館内の3階ミュージアムカフェは黒川設計の特徴的な逆円錐の上にあり、内装そのものがアート作品として写真スポットになる。「美術館初心者の2人」に向く理由は、入場無料エリアだけでも30〜60分滞在できる規模を持ち、料金を払わずに建築だけ楽しめる点。営業時間10〜18時（金土は20時まで延長期間あり）、火曜休館。乃木坂駅6番出口直結、六本木駅から徒歩7分の駅近で雨天時もアクセス快適。次は徒歩7分の東京ミッドタウン・サントリー美術館へ。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/202304011323_IMG_5605.jpg/1280px-202304011323_IMG_5605.jpg"
         ],
         "specs": [
           {
@@ -651,7 +651,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "国内最大の展示スペース。黒川紀章設計の建築自体がアート",
         "desc": "東京ミッドタウン・ガレリア3階に2007年開業、隈研吾設計の和の意匠を活かした美術館。日本の伝統工芸・古美術・近代美術を中心に、年5〜6本の企画展を展開。館内の茶室「玄鳥庵」は企画展期間中の特定日に呈茶体験ができる（要事前予約）。「現代アートより伝統工芸が好き」「茶道・和の文化に興味がある」2人に最も向く。営業時間10〜18時（金土は20時まで）、火曜休館。ミッドタウン内のレストラン・カフェと組み合わせて2〜3時間の滞在が組める。六本木駅直結、ミッドタウン館内通路で東京タワー側へも繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2018_National_Art_Center%2C_Tokyo_2.jpg/1280px-2018_National_Art_Center%2C_Tokyo_2.jpg"
         ],
         "specs": [
           {
@@ -673,7 +673,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "安藤忠雄設計の地下展示空間。デザインとアートの境界を問う",
         "desc": "六本木ヒルズ森タワー53階（地上238m）、日本で最も標高の高い美術館のひとつ。入場チケットには展望施設「東京シティビュー」の入場が含まれ、現代アートの企画展を見たあとに東京の夜景を眺める贅沢な動線が成立する。「アートと夜景の両方を1回のチケットで楽しみたい」コスパ重視層に最適。閉館は基本22時（火曜は17時）と東京の美術館では珍しく夜間営業しており、仕事帰り・金土夜のデートに使える稀有な施設。六本木駅直結、屋内通路で雨天時も傘なしでアクセス可能。ミュージアムショップとカフェも夜まで営業し、観覧後の余韻を整える場として機能する。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/21_21_Design_Sight_%2816202555152%29.jpg/1280px-21_21_Design_Sight_%2816202555152%29.jpg"
         ],
         "specs": [
           {
@@ -695,7 +695,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "無料で鑑賞できる屋外アートが庭園に点在",
         "desc": "東京ミッドタウンの中庭「ミッドタウンガーデン」と隣接する檜町公園には、現代彫刻・パブリックアート作品が屋外展示されている。代表作はアニッシュ・カプーア「ピーカブー」、フロリアン・クラール「フラグメント・ナンバー5」など。「美術館に入らず無料でアートを楽しみたい」「庭園散歩とアートを組み合わせたい」目的に最適。屋外なので営業時間なし、24時間鑑賞可能（夜間ライトアップあり）。六本木駅から徒歩3分、サントリー美術館・国立新美術館とセットで歩ける動線。雨の日は鑑賞時間を短く済ませて館内に移動する。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Garden_%40_Tokyo_Midtown_%40_Roppongi_%2814086818007%29.jpg/1280px-Garden_%40_Tokyo_Midtown_%40_Roppongi_%2814086818007%29.jpg"
         ],
         "specs": [
           {
@@ -717,7 +717,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "六本木ヒルズのシンボル。高さ10mの蜘蛛の彫刻",
         "desc": "六本木ヒルズの屋外には「ルイーズ・ブルジョワ ママン（巨大蜘蛛）」をはじめとする現代彫刻が点在する。「ママン」（高さ約10m）はテートモダン・グッゲンハイム・ビルバオなど世界主要美術館にも設置される連作で、六本木ヒルズの象徴的存在。「短時間でアートと写真撮影を組み合わせたい」観光客に最適。屋外なので営業時間なし、24時間鑑賞可能（夜間ライトアップで美しい）。六本木駅直結、森美術館の入場前後に5〜10分だけ立ち寄る使い方が現実的。雨の日でも傘を差して短時間で鑑賞できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Roppongi_Hills_66_Plaza_level_2013.jpg/1280px-Roppongi_Hills_66_Plaza_level_2013.jpg"
         ],
         "specs": [
           {
@@ -783,7 +783,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "ブランドショップと並木道。週末は歩行者天国になる時間帯あり",
         "desc": "東京駅丸の内側から有楽町方向へ約1.2km続くケヤキ並木のストリート。両側に高級ブランド路面店・カフェ・レストラン・ギャラリーが並ぶ。「ケヤキ並木の景観をゆっくり楽しみたい」「土日の歩行者天国を歩きたい」散歩好きに最適。週末は車両通行止めの「アーバンテラス」が開催され、通りにテーブル席が出る。11月末〜2月のシャンパンゴールドのイルミネーションは都内屈指の規模で、夕方17時前後の点灯時間に通り全体が金色になる。ブリックスクエア・新丸ビル・KITTE などの商業施設が交差点ごとに並び、雨の日も屋内動線で繋げる。土日午前は人波が少なく、写真と散歩に向く時間帯。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Empty_street_during_the_coronavirus_pandemic_in_Marunouchi_Nakad%C5%8Dri_Street_Chiyoda_Tokyo_Japan_20200405_121643.jpg/1280px-Empty_street_during_the_coronavirus_pandemic_in_Marunouchi_Nakad%C5%8Dri_Street_Chiyoda_Tokyo_Japan_20200405_121643.jpg"
         ],
         "specs": [
           {
@@ -801,7 +801,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "松の木と砂利道が続く都心の開放空間。入場無料",
         "desc": "皇居外苑は皇居の南東側を取り囲む広大な広場。皇居前広場・二重橋・桔梗門が無料で開放されている。「皇居の正門と二重橋を撮影したい」「日本の中心地らしい景観を歩きたい」観光客に最適。二重橋は皇居の正門石橋と奥の鉄橋が連なる景観で、東京中心部とは思えない静けさが広がる。丸の内側の和田倉門・大手門から入ると皇居東御苑（江戸城本丸跡）に続き、こちらも無料で散策できる。皇居東御苑は天守台の跡・本丸跡の芝生・二の丸庭園など見どころが多く、1〜2時間かけて歩ける規模。公開日（おおむね月・金以外）は宮内庁公式サイトで事前確認。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Kokyogaien_-_Tokyo_Imperial_Palace_%282629504637%29.jpg/1280px-Kokyogaien_-_Tokyo_Imperial_Palace_%282629504637%29.jpg"
         ],
         "specs": [
           {
@@ -823,7 +823,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "19世紀末の英国コロニアル様式を復元した美術館",
         "desc": "1894年竣工（2010年復元）、ジョサイア・コンドル設計の赤煉瓦オフィスビルを再現した美術館。「近代美術・装飾美術が好きな大人」「赤煉瓦建築の内部を歩きたい」人に向く。近代美術（19世紀末〜20世紀初頭のヨーロッパ絵画・装飾美術）を中心に、年4〜5本の企画展を展開。建物そのものが文化財級の意匠で、館内を歩くだけでも価値がある。中庭の「ブリックスクエア」は無料開放、カフェ・レストランが囲む構造で休憩スポットとして優秀。営業時間10〜18時（金曜は20時まで）、月曜休館。東京駅丸の内南口から徒歩5分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mitsubishi_Ichigokan_Museum_%282023%29.jpg/1280px-Mitsubishi_Ichigokan_Museum_%282023%29.jpg"
         ],
         "specs": [
           {
@@ -845,7 +845,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "屋上テラスから東京駅を眺める無料の展望スポット",
         "desc": "KITTE丸の内は東京駅丸の内南口前、1933年竣工の旧東京中央郵便局を保存・改修した複合施設（2013年開業）。「東京駅ホームを真上から見下ろしたい」「無料の展望スペースを使いたい」観光客に最適。1〜6階に飲食・物販、最上階に展望スペース「KITTEガーデン」（無料・東京駅ホームを真上から見下ろせる）がある。館内の旧郵便局長室（4階）は無料公開され、戦前の郵便局の歴史的内装が見学できる。営業時間は店舗により異なる（おおむね10〜22時）、レストラン街は深夜まで。東京駅直結、雨の日でも傘なしでアクセスできる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/1280px-Tokyo-STA_Marunouchi-Entrance_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Kitte.jpg/1280px-Kitte.jpg"
         ],
         "specs": [
           {
@@ -882,7 +882,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/1/15/Omotesando_2007_b.JPG",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -893,7 +893,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "安藤忠雄設計の商業施設。開店前でも欅並木が楽しめる",
         "desc": "表参道ヒルズ周辺（明治神宮前駅〜表参道駅）には、ハイブランドのカフェ・パティスリー・ベーカリーが集中する。「ブランチを上質に過ごしたい」大人の2人に最適。ピエール・エルメ・サロン・ド・テや、ペニーレイン東京、ブルガリ イル・カフェなど、ホテルブランチ並みのクオリティが日常使いできる店が点在。1人2,500〜5,000円程度、土日11〜13時のブランチタイムは予約必須。表参道ヒルズ館内とその周辺で半日が組める。営業時間11〜21時（店舗による）、明治神宮前駅・表参道駅から徒歩2〜5分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/1/15/Omotesando_2007_b.JPG"
         ],
         "specs": [
           {
@@ -915,7 +915,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "隈研吾設計の建物と東洋美術。庭園の茶室でひと休み",
         "desc": "1941年開館、表参道駅から徒歩約8分の根津美術館は、東洋古美術を中心とした私立美術館（隈研吾設計）。「日本・東洋の古美術と日本庭園を組み合わせたい」「ブランチ後にゆっくり過ごしたい」大人の2人に向く。国宝7件・重要文化財87件を含む約7,400件の収蔵品で、企画展が年7〜8本開催される。館内の庭園（17,000㎡）は四季の景観が美しく、茶室・石塔が点在する。営業時間10〜17時、月曜休館（公式で確認）、入館料は変動。館内カフェ「NEZUCAFE」も庭園を眺めながら過ごせる名所。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/2018_Nezu_Museum_1.jpg/1280px-2018_Nezu_Museum_1.jpg"
         ],
         "specs": [
           {
@@ -959,7 +959,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "岡本太郎の自宅兼アトリエを公開。庭の彫刻が圧巻",
         "desc": "1954年竣工、1996年開館の岡本太郎記念館は、太郎の元アトリエ兼自宅を活用した記念館。「現代美術・岡本太郎が好き」「青山の住宅街の隠れスポットを訪れたい」人に向く。屋外の中庭には大型彫刻、館内には絵画・彫刻・家具が展示され、太郎の制作環境がそのまま残る。営業時間10〜18時、火曜休館（公式で確認）、入館料は変動。南青山6丁目の住宅街に位置し、表参道駅から徒歩約8分。1時間程度の滞在で、岡本太郎の世界観に集中的に触れられる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taro_Okamoto_Memorial_Museum_Tokyo.jpg/1280px-Taro_Okamoto_Memorial_Museum_Tokyo.jpg"
         ],
         "specs": [
           {

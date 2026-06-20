@@ -1,0 +1,43 @@
+{
+  "id": "new-tokyo-rainy",
+  "file": "newGuideFeatures2",
+  "persona": "C",
+  "tag": "雨の日",
+  "currentTitle": "東京雨の日5選。濡れずに一日楽しめる屋内スポット",
+  "currentSubtitle": "東京国立博物館、teamLab、汐留日テレプラザ。雨でも完結する東京屋内エリア",
+  "currentLede": "東京は雨の日の屋内施設の充実度で、世界の主要都市の中でも上位の街だ。国立博物館・現代美術館・没入型デジタルアート・歴史建築美術館・大型百貨店がターミナル駅から徒歩圏に散らばっており、傘を畳んだまま半日〜1日を組める。雨天時はむしろ屋外スポット中心の街より楽しめる選択肢が多く、「雨で予定が壊れた」のではなく「雨だからこの選択肢が成立する」と切り替えるのが東京流。ここでは雨の日に強い5施設を、エリアを分散させて紹介する。",
+  "currentQuote": "東京の雨の日は、屋内施設の充実度で他の都市を圧倒している。博物館とアートで一日完結できる。",
+  "currentClosing": "標準動線は、午前は上野（東京国立博物館9:30〜12:00）→昼食→午後は六本木（森美術館＋展望13:00〜15:30）→白金台（東京都庭園美術館16:00〜18:00）→新宿（高島屋＋紀伊國屋＋夕食19:00〜）。5施設を1日でハシゴすると体力が持たないので、午前2施設・午後1施設＋夕食程度に絞る方が現実的。「雨で予定が崩れた人」「現代アートと歴史建築を同日に見たい人」「夜の屋内デートを組みたい人」に向く。teamLab Planetsは事前予約必須なので、雨予報が出てから動くと当日券が取れない可能性が高い。他の4施設は当日入場可だが、土日午後の森美術館・東京国立博物館の特別展はピーク混雑になる。時間が足りない場合は、自分の興味（歴史・現代アート・建築・書店）から1施設だけ選び、2〜3時間じっくり過ごすのが満足度が高い。迷ったら、晴れの日は外に出るので、雨の日こそ普段行かない展覧会を選ぶ、と決めておくと選択が早い。",
+  "spots": [
+    {
+      "name": "東京国立博物館",
+      "area": "上野",
+      "descHead": "上野公園内、日本最大の総合博物館。本館・東洋館・平成館・法隆寺宝物館・黒田記念館の5棟が建ち並び、晴天時の上野公園は花見客で混雑するが、雨の日は来館者が減り、本館の常設展をゆっくり",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    },
+    {
+      "name": "teamLab Planets（豊洲）",
+      "area": "豊洲",
+      "descHead": "豊洲駅から徒歩10分、水に足を入れながら歩く没入型デジタルアート施設。床・壁・天井すべてが映像と鏡で構成された複数のインスタレーションを順路で歩き、1施設で40〜60分の体験になる",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+    },
+    {
+      "name": "東京都庭園美術館",
+      "area": "白金台",
+      "descHead": "1933年竣工、旧朝香宮邸を改装した美術館。建物自体がアールデコ建築の傑作で、ルネ・ラリックのシャンデリア、アンリ・ラパンの装飾、内装の意匠を建物のまま見られる。本館では年4〜5本",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
+    },
+    {
+      "name": "六本木ヒルズ森美術館",
+      "area": "六本木",
+      "descHead": "六本木ヒルズ森タワー53階の現代美術館。チケットには展望施設「東京シティビュー」の入場が含まれ、展覧会観覧の前後に屋内展望から東京の街を見下ろせる。現代アートの大型企画展を年4〜5",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    },
+    {
+      "name": "新宿高島屋タイムズスクエア（書籍・ショッピング）",
+      "area": "新宿南口",
+      "descHead": "新宿駅新南改札直結の商業ビル群。高島屋・紀伊國屋書店新宿南店・ハンズ新宿が同じビルに同居し、雨の日の総合避難先として都内屈指の規模を誇る。紀伊國屋書店新宿南店は8フロア構成、洋書・",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    }
+  ]
+}

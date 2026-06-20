@@ -1,0 +1,43 @@
+{
+  "id": "new-shibuya-harajuku",
+  "file": "newGuideFeatures2",
+  "persona": "D",
+  "tag": "デート",
+  "currentTitle": "渋谷・原宿デート5選。スクランブルから表参道まで",
+  "currentSubtitle": "渋谷スクランブル、代々木公園、表参道ヒルズ。東京のトレンド発信地を歩く",
+  "currentLede": "渋谷スクランブル交差点から原宿駅・表参道までは直線で約2km。歩いて30〜40分で、東京のポップカルチャーから高級ブランドまでが一気に通り抜けられるルートだ。渋谷駅で待ち合わせ、明治神宮で空気を切り替え、代々木公園で休んで、竹下通り・表参道を歩いて青山方向に抜ける流れは、初デートでも2人で会話が続く構成になる。週末は外国人観光客で常に混むため、開店直後の午前11時前に動き出すか、夕方17時以降にずらすのが快適。この記事では「動線で繋がる5スポット」を時系列順に紹介する。",
+  "currentQuote": "渋谷から原宿へ抜けて表参道まで歩くルートは、東京のトレンドとカルチャーを一度に体感できる。",
+  "currentClosing": "標準動線は、渋谷駅→スクランブル交差点（写真30分）→明治神宮（参拝60分）→代々木公園（休憩45分）→竹下通り（食べ歩き30分）→表参道（散歩・ショッピング60分）→青山でディナー。所要4〜5時間、予算は1人3,000〜6,000円が目安。「東京のトレンドを一日で体感したい人」「歩きながら会話を切らさないデートを組みたい人」「都心の喧騒と緑の両方を体験したい人」に向く。土日午後は竹下通り・表参道とも大混雑になるため、午前スタートか夕方以降にずらすと写真も撮りやすい。雨の日は渋谷スクランブルスクエア・原宿駅前の商業施設・表参道ヒルズの屋内通路で繋ぐと傘を最小限にできる。時間が足りない場合は、スクランブル→明治神宮→表参道の3点に絞れば2時間で完結する。イルミネーション期（11月末〜2月）は最終目的地を表参道夜景にすると満足度が最大化する。",
+  "spots": [
+    {
+      "name": "渋谷スクランブル交差点",
+      "area": "渋谷",
+      "descHead": "渋谷駅ハチ公口を出てすぐの大型交差点。信号1サイクルで歩行者2,500〜3,000人が交差する世界最大級のスクランブル。MAGNET by SHIBUYA109の屋上デッキやスクラ",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    },
+    {
+      "name": "明治神宮",
+      "area": "原宿",
+      "descHead": "原宿駅と代々木公園の間に広がる約70万㎡の鎮守の森。1920年創建の人工林だが、今はネイティブな雑木林として確立した静謐な空間が広がる。南参道→大鳥居→本殿で約15分、参拝後に御苑",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "代々木公園",
+      "area": "原宿",
+      "descHead": "明治神宮に隣接する約54haの都市公園。ピクニックエリア・サイクリングロード・野外ステージ・噴水広場と分散しており、休日は芝生にレジャーシートを敷く家族・カップル・大学生で賑わう。",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "竹下通り",
+      "area": "原宿",
+      "descHead": "原宿駅の真正面、約350mの若者向けショッピングストリート。クレープ・タピオカ・チーズハットグなど食べ歩きフードが両側に並び、ロリータファッション・古着屋・アクセサリー店が密集する",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+    },
+    {
+      "name": "表参道ヒルズ・表参道",
+      "area": "表参道",
+      "descHead": "明治神宮前駅から青山1丁目方向に約1.1km続く欅並木の大通り。両側にハイブランドの路面店・カフェ・ギャラリーが並び、表参道ヒルズ（安藤忠雄設計）が中央のランドマーク。11月末〜1",
+      "currentImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+    }
+  ]
+}

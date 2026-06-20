@@ -1,0 +1,125 @@
+{
+  "id": "new-noge-bar-hop",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "都橋商店街（野毛小路）",
+      "imageSubject": "都橋商店街の外観。大岡川沿いに弧を描いて連なる昭和30年代の木造2階建て長屋型飲み屋ビル群",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__1__1.jpg",
+          "file": "File:Miyakobashi market02.JPG",
+          "desc": "横浜市中区野毛町、都橋商店街",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__1__2.jpg",
+          "file": "File:Miyakobashi (3090555487).jpg",
+          "desc": "my favorite buildings in yokohama, a place called miyakobashi near the central city library.",
+          "w": 3008,
+          "h": 2000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__1__3.jpg",
+          "file": "File:Miyakobashi (3091393288).jpg",
+          "desc": "my favorite buildings in yokohama, a place called miyakobashi near the central city library.",
+          "w": 3008,
+          "h": 2000
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__1__4.jpg",
+          "file": "File:Miyakobashi market01.JPG",
+          "desc": "横浜市中区野毛町、大岡川沿いにある都橋商店街。奥の橋は宮川橋。",
+          "w": 4160,
+          "h": 3120
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "野毛大道芸エリア（野毛本通り）",
+      "imageSubject": "野毛本通り（野毛の中心飲み屋街）の路地。提灯やもつ焼き・大衆酒場の看板が密集する夜の通り",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__2__1.jpg",
+          "file": "File:Banri 20199421.jpg",
+          "desc": "萬里 (Banri, Chinese restaurant, Yokohama, Japan)",
+          "w": 960,
+          "h": 762
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__2__2.jpg",
+          "file": "File:Noge-street-night.JPG",
+          "desc": "noge street in the night",
+          "w": 3008,
+          "h": 2000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__2__3.jpg",
+          "file": "File:Nogecho and Hanasakicho 10.jpg",
+          "desc": "Nogecho and Hanasakicho ",
+          "w": 4080,
+          "h": 3072
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__2__4.jpg",
+          "file": "File:Nogecho and Hanasakicho 3.jpg",
+          "desc": "Nogecho and Hanasakicho ",
+          "w": 4080,
+          "h": 3072
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "日ノ出町ガード下",
+      "imageSubject": "京急本線・日ノ出町駅の高架下に小さなバーや飲食店が並ぶガード下の一帯",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__3__1.jpg",
+          "file": "File:20200531 Hinodecho station 1.jpg",
+          "desc": "日ノ出町駅名標と駅舎（中央奥）",
+          "w": 1943,
+          "h": 1457
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__3__2.jpg",
+          "file": "File:20200531 Hinodecho station 2.jpg",
+          "desc": "道路側から見た日ノ出町駅",
+          "w": 1896,
+          "h": 1423
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__3__3.jpg",
+          "file": "File:20200531 Hinodecho station 3.jpg",
+          "desc": "券売機と改札",
+          "w": 1586,
+          "h": 1190
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__3__4.jpg",
+          "file": "File:20200531 Hinodecho station 4.jpg",
+          "desc": "日ノ出町駅券売機",
+          "w": 1962,
+          "h": 1472
+        }
+      ]
+    }
+  ]
+}

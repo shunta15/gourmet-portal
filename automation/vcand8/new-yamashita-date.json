@@ -1,0 +1,197 @@
+{
+  "id": "new-yamashita-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "山下公園",
+      "imageSubject": "山下公園の海沿い遊歩道とみなとみらい21の対岸スカイライン",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__1__1.jpg",
+          "file": "File:20250103 Yamashita Park 113323.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__1__2.jpg",
+          "file": "File:20250103 Yamashita Park 114056.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__1__3.jpg",
+          "file": "File:20250103 Yamashita Park 113106.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__1__4.jpg",
+          "file": "File:20250103 Yamashita Park 114005.jpg",
+          "desc": "Park Yamashita",
+          "w": 4032,
+          "h": 2268
+        }
+      ]
+    },
+    {
+      "spot": 2,
+      "name": "氷川丸（日本郵船氷川丸）",
+      "imageSubject": "山下公園に係留された貨客船・日本郵船氷川丸の船体外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__2__1.jpg",
+          "file": "File:日本郵船 氷川丸 - panoramio.jpg",
+          "desc": "日本郵船 氷川丸",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__2__2.jpg",
+          "file": "File:日本郵船氷川丸 乗り場 - panoramio.jpg",
+          "desc": "日本郵船氷川丸 乗り場",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__2__3.jpg",
+          "file": "File:日本郵船 氷川丸 乗り場 - panoramio.jpg",
+          "desc": "日本郵船 氷川丸 乗り場",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__2__4.jpg",
+          "file": "File:日本郵船 氷川丸 - panoramio (1).jpg",
+          "desc": "日本郵船 氷川丸",
+          "w": 1920,
+          "h": 1080
+        }
+      ]
+    },
+    {
+      "spot": 3,
+      "name": "港の見える丘公園",
+      "imageSubject": "港の見える丘公園の展望台から見下ろす横浜港とベイブリッジの眺望",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__3__1.jpg",
+          "file": "File:Minato-no-Mieru Oka Koen (港の見える丘公園) engraved stone sign IMG 0492.jpg",
+          "desc": "This stone sign engraved with this writing 「港の見える丘公園」   is located at the entrance of  Minato-no-Mieru Oka Koen (Harbor View Park) (港の見える丘公園 みなとのみえるおかこうえん), a m",
+          "w": 5152,
+          "h": 3864
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__3__2.jpg",
+          "file": "File:吸蜜中のアオスジアゲハ - 港の見える丘公園に隣接するローズガーデンで撮影 Pcs34560 IMG0581.jpg",
+          "desc": "吸蜜中のアオスジアゲハ. 港の見える丘公園に隣接するローズガーデンで撮影.",
+          "w": 5472,
+          "h": 3648
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__3__3.jpg",
+          "file": "File:Harbor View Park (Yokohama) Observation deck.jpg",
+          "desc": "2017年、第33回全国都市緑化よこはまフェア開催中の港の見える丘公園。右奥は横浜ベイブリッジ。",
+          "w": 4160,
+          "h": 3120
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__3__4.jpg",
+          "file": "File:大きくなって良い色になった今夕の満月. 港の見える丘公園から撮影 Pcs34560 IMG9529.jpg",
+          "desc": "大きくなって良い色になった今夕の満月. 港の見える丘公園から撮影",
+          "w": 5472,
+          "h": 3648
+        }
+      ]
+    },
+    {
+      "spot": 4,
+      "name": "山手西洋館エリア（ブラフ18番館など）",
+      "imageSubject": "山手西洋館ブラフ18番館の白い木造洋館の外観",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__4__1.jpg",
+          "file": "File:AinoBoshizo.JPG",
+          "desc": "ja:横浜米軍機墜落事件の遺族が1985年に寄贈した「愛の母子像」（ja:山本正道作）と2006年に設置された碑文。\nja:港の見える丘公園フランス山地区にて2007年2月20日投稿者が撮影。",
+          "w": 1602,
+          "h": 2398
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__4__2.jpg",
+          "file": "File:Fountain in Harbor View Park in Yokohama.jpg",
+          "desc": "Fountain in Harbor View Park in Yokohama, Japan",
+          "w": 5184,
+          "h": 3888
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__4__3.jpg",
+          "file": "File:Fountain in Harbor View Park.jpg",
+          "desc": "Fountain between Bluff No. 111 and the British House, Harbor View Park, Yokohama, Japan",
+          "w": 3648,
+          "h": 2736
+        },
+        {
+          "index": 3,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__4__4.jpg",
+          "file": "File:French Consulate Ruins Yokohama Info Panel.jpg",
+          "desc": "Information panel and commemorative monument installed at the site of the former French Consulate in the France Hill area of Harbor View Park, Yokohama.",
+          "w": 2736,
+          "h": 1824
+        }
+      ]
+    },
+    {
+      "spot": 5,
+      "name": "マリンタワー",
+      "imageSubject": "横浜マリンタワー（高さ106mの塔）の全景",
+      "imageRegion": "神奈川県横浜市中区",
+      "candidates": [
+        {
+          "index": 0,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__5__1.jpg",
+          "file": "File:Hikawamaru and Marine tower.jpg",
+          "desc": "Hikawamaru and Marine tower, Yokohama,Japan\nTaken by Los688,2006-12-10 PD-self\n\nja:横浜・氷川丸とマリンタワー 2006年12月10日撮影",
+          "w": 1000,
+          "h": 665
+        },
+        {
+          "index": 1,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__5__2.jpg",
+          "file": "File:マリンタワー 068.jpg",
+          "desc": "マリンハウス",
+          "w": 1504,
+          "h": 1000
+        },
+        {
+          "index": 2,
+          "localPath": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__5__3.jpg",
+          "file": "File:マリンタワー 087.jpg",
+          "desc": "バードピア",
+          "w": 1504,
+          "h": 1000
+        }
+      ]
+    }
+  ]
+}
