@@ -108,7 +108,10 @@ grep 'id: "r67"' lib/data.ts
   - **街ガイド第8弾（2026-06-14）= 新規24本・全てindex対象**: `lib/newGuideFeatures8.ts` に収録。脱テンプレ強化（4ペルソナ＝モデルコース/セレクト/街歩き随筆/テーマ特化、articleType course7/ranking3/guide14、スポット数3〜6で可変、定型骨格を封印）。**画像はビジョン照合方式**: Commonsから被写体別に候補を複数DL→AIが実画像を開いて被写体・所在地を照合し一致のみ採用（取り違え・別地域を排除。「南禅寺=中国/千畳敷=青森/岡公園=群馬」等の取り違えを実検出）。正しい実画像が無いニッチ/店内スポットは誤写真を当てず記事から除去し本文整形。滋賀・和歌山・群馬の region hub を新規点灯。パイプライン: `scripts/resolve-images-v2.mjs`→vision-verify WF→`scripts/finalize-images8.mjs`→`scripts/emit-feature-file8.mjs`
   - **街ガイド第9弾24本（`lib/newGuideFeatures9.ts`）＋第10弾15本（`lib/newGuideFeatures10.ts`）= 2026-06 追加・全てindex対象**: 第8弾と同じ脱テンプレ＋画像ビジョン照合方式。世界遺産級ランドマーク中心（高野山/法隆寺/吉野/比叡山/富岡製糸場/東寺/醍醐寺/竹田城/知床/霧島 等）。第10弾は室生寺のみ正画像が3スポット揃わず保留（emit が <3spot を自動除外）。
   - **第7弾30本を脱テンプレ改修（2026-06-20）**: 旧「◯◯5選」＋「対象は/標準動線/向くコースだ」定型を 4ペルソナで全面リライト。`scripts/extract-batch7.mjs`→detemplate WF→`scripts/rebuild-batch7.mjs`（**スポット・画像・URL不変、テキストとarticleTypeのみ差替**）。
-  - **🟢 現在: index対象 街ガイド特集 = 154本**。うち **93本が脱テンプレ済み（第7〜10弾・4ペルソナ・5選タイトル0）**、**61本は旧「5選」型のまま（第1〜6弾＝NG file1/2/4/5/6＋KS＋CB。ユーザーが今回は改修対象から外した）**。残り61本を脱テンプレ化するなら `extract-batch7.mjs`/`rebuild-batch7.mjs` と同方式で各ファイルに対し実施可能。
+  - **旧61本を脱テンプレ＋画像ビジョン照合で全面改修（2026-06-20）**: 第1〜6弾＝NG file1/2/4/5/6＋KS＋CB の61本（旧「5選」型）を改修。①テキスト: 4ペルソナで全面リライト（5選タイトル0）。②画像: 旧版は1枚の汎用写真を複数スポットで使い回していた（例: みなとみらい1枚を5スポット流用）。`scripts/resolve-images-v2.mjs`→候補収集→ビジョン照合（round1厳格＋round2緩和「正しい場所/エリアなら可・別地域厳禁・兄弟と別画像」）→`scripts/merge-r1r2.mjs`→`finalize-images8.mjs`→`scripts/apply-phase2-images.mjs` で **283/299スポットを正しい個別画像に差替**。記事内画像重複: 53本→3本に削減（残3=enoshima/kohoku/那智勝浦は正画像不足で旧維持）。
+  - **🟢 現在: index対象 街ガイド特集 = 154本、全て脱テンプレ済み（4ペルソナ・5選タイトル0）＋画像ビジョン照合済み**。
+  - **⚠️ DB優先配信の罠（必読）**: 特集記事は `lib/db/features.ts` の getFeatureArticleById が **Supabase DB優先**（DBに行があれば title/title_html/subtitle/lede/hero_image はDB値がコードを上書き。ranking/画像はコード優先）。コードを直しても**DBにある記事は本番で旧表示のまま**。改修時は `scripts/update-features-db.mjs`(title等) と `scripts/update-hero-db.mjs`(hero_image) でDBもUPDATE（削除なし）し、その後 `vercel --prod` で再ビルド（静的生成がDB値を焼き込む）。
+  - **⚠️ apply時の脱テンプレ巻き戻し注意**: `apply-phase2-images.mjs` は `automation/old/*.json` を読む。ここが旧テキストだと脱テンプレが巻き戻る。`automation/redump-all.mjs`（`node --experimental-strip-types`）で**脱テンプレ済みlibを再ダンプ**してから適用すること（zshは未クォート変数を単語分割しないのでシェルループ厳禁、専用.mjsで回す）。
 
 ---
 
