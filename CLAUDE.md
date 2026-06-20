@@ -106,6 +106,9 @@ grep 'id: "r67"' lib/data.ts
   - **NOINDEX（URL有効）追加**: 残り25本はFEATURE_ARTICLESのみ収録
   - **街ガイド第7弾（2026-06-13）= 新規30本・全てindex対象**: `lib/newGuideFeatures7.ts` に収録。大阪6/京都4/神戸3/奈良2/名古屋3/静岡1/福岡4/鹿児島1/北海道3/広島2/埼玉1。region hub の 奈良・福岡・北海道・広島・鹿児島・埼玉 を新規点灯。`lib/featureRegions.ts` の MANUAL_OVERRIDES に id→region 固定済み。生成パイプライン: `scripts/resolve-commons-images.mjs`（Commons API で画像実URL解決＋200確認）→ `scripts/emit-feature-file.mjs`（TS生成）。画像は全て Wikimedia Commons
   - **街ガイド第8弾（2026-06-14）= 新規24本・全てindex対象**: `lib/newGuideFeatures8.ts` に収録。脱テンプレ強化（4ペルソナ＝モデルコース/セレクト/街歩き随筆/テーマ特化、articleType course7/ranking3/guide14、スポット数3〜6で可変、定型骨格を封印）。**画像はビジョン照合方式**: Commonsから被写体別に候補を複数DL→AIが実画像を開いて被写体・所在地を照合し一致のみ採用（取り違え・別地域を排除。「南禅寺=中国/千畳敷=青森/岡公園=群馬」等の取り違えを実検出）。正しい実画像が無いニッチ/店内スポットは誤写真を当てず記事から除去し本文整形。滋賀・和歌山・群馬の region hub を新規点灯。パイプライン: `scripts/resolve-images-v2.mjs`→vision-verify WF→`scripts/finalize-images8.mjs`→`scripts/emit-feature-file8.mjs`
+  - **街ガイド第9弾24本（`lib/newGuideFeatures9.ts`）＋第10弾15本（`lib/newGuideFeatures10.ts`）= 2026-06 追加・全てindex対象**: 第8弾と同じ脱テンプレ＋画像ビジョン照合方式。世界遺産級ランドマーク中心（高野山/法隆寺/吉野/比叡山/富岡製糸場/東寺/醍醐寺/竹田城/知床/霧島 等）。第10弾は室生寺のみ正画像が3スポット揃わず保留（emit が <3spot を自動除外）。
+  - **第7弾30本を脱テンプレ改修（2026-06-20）**: 旧「◯◯5選」＋「対象は/標準動線/向くコースだ」定型を 4ペルソナで全面リライト。`scripts/extract-batch7.mjs`→detemplate WF→`scripts/rebuild-batch7.mjs`（**スポット・画像・URL不変、テキストとarticleTypeのみ差替**）。
+  - **🟢 現在: index対象 街ガイド特集 = 154本**。うち **93本が脱テンプレ済み（第7〜10弾・4ペルソナ・5選タイトル0）**、**61本は旧「5選」型のまま（第1〜6弾＝NG file1/2/4/5/6＋KS＋CB。ユーザーが今回は改修対象から外した）**。残り61本を脱テンプレ化するなら `extract-batch7.mjs`/`rebuild-batch7.mjs` と同方式で各ファイルに対し実施可能。
 
 ---
 
