@@ -19,7 +19,7 @@ export const NEW_GUIDE_FEATURES_5: Feature[] = [
     "kicker": "JIYUGAOKA SWEETS",
     "title": "自由が丘、甘い路地を歩く。モンブラン発祥の街を、一個ずつ食べながら下っていく",
     "sub": "モンブラン発祥の街で、ショーケースを覗き、路地裏の小さな店主と言葉を交わし、緑道のベンチでひと口かじる。半径500mに甘い香りが溜まった自由が丘を、ただ気ままに歩いた随筆。",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg"
   },
   {
     "id": "new-toyosu-lunch",
@@ -109,7 +109,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "高架下を活用した飲食店・ショップが並ぶ",
         "desc": "中目黒高架下（東横線高架下）は東急東横線の中目黒駅高架橋下を再整備した商業施設。朝7時開店のベーカリー・コーヒースタンドがあり、朝散歩の途中で軽食を調達できる。「焼きたてパンを朝の散歩と組み合わせたい」目的に最適。店舗の多くは11時〜開店だが、ベーカリーとコーヒースタンドは早朝から営業している。高架の柱と照明の造形が、朝の柔らかい光の中で別の表情を見せる。中目黒駅徒歩1分で、雨の日でも高架の屋根があるため傘を最小限にできる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/202408100817_IMG_0849.jpg/1280px-202408100817_IMG_0849.jpg"
         ],
         "specs": [
           {
@@ -127,7 +127,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "中目黒から代官山T-SITEまで歩いて10分",
         "desc": "中目黒〜代官山の徒歩ルートは約1.5km・徒歩約15分、朝のカフェハシゴに最適。「朝7〜9時の閑静な高級住宅街を歩きたい」「中目黒と代官山の両方の朝を比べたい」目的に向く。ルート途中には旧山手通り沿いのカフェ・代官山T-SITE（朝7時開店）・ログロード代官山が点在する。桜の季節は両駅の桜並木が連続し、朝の散歩に1時間以上かけられる。中目黒駅から代官山駅まで歩いて20分、電車なら東横線で1駅2分。雨の日は屋根のある区画が少ないので傘必須。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Aoba-Japan_international_school.jpg/1280px-Aoba-Japan_international_school.jpg"
         ],
         "specs": [
           {
@@ -183,7 +183,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -194,7 +194,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "日本のモンブラン文化発祥の老舗。1933年創業",
         "desc": "自由が丘駅正面口から徒歩2〜5分の中心区画には、フランス菓子の老舗・新進気鋭のパティシエの店・大手チェーンの旗艦店が並ぶ。「複数のパティスリーで食べ比べしたい」「手土産候補を多めに見たい」目的に最適。1個400〜800円のケーキ、1箱2,000〜5,000円のショコラ詰め合わせなど、価格帯と方向性が違う店を5〜10分ずつ覗いて回れる距離感。ショーケース観察だけでも目の保養になり、購入は気に入った1〜2店に絞るのが現実的。土日午後は混雑して購入待ちが10〜20分発生することがあり、平日午後または週末午前が落ち着いて選べる時間帯。夕方17時前後は売切れが増えるので、お目当てがあれば早めに来店。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg"
         ],
         "specs": [
           {
@@ -216,7 +216,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "エリア内のスイーツ複合施設は変わりやすい。最新情報を確認",
         "desc": "自由が丘スイーツフォレストは2003年開業の屋内型スイーツテーマパークだったが、2023年5月に閉業した。「過去にあった有名スポットを知りたい」歴史的興味の対象として記載。現在は跡地が他の商業施設として再開発中、訪問はできない。代替として、自由が丘駅前の個人パティスリー街・路地散歩エリアを回るのが現実的。「自由が丘＝スイーツの街」というブランドを支えた施設だったため、その文脈を知って訪れると街への理解が深まる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/EL-Light_%28OLED%29_1.jpg/1280px-EL-Light_%28OLED%29_1.jpg"
         ],
         "specs": [
           {
@@ -238,7 +238,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "駅周辺に複数の独立系パティスリーが集まる",
         "desc": "自由が丘駅周辺の路地（駅正面口から徒歩5〜10分）には、観光客が少ない個人経営のパティスリーが点在する。「店主と話しながらスイーツを選びたい」「観光客の少ない店でゆっくり選びたい」目的に最適。店内席数が10席前後の小箱が多く、テイクアウト中心の店もあれば、店内で焼きたてを食べさせる店もある。1個500〜1,200円、店主が直接焼いているケースが多く、素材と季節の話を聞きながら選べる。店舗の定休日が独特だったり午前のみ営業だったりすることもあるので、事前に営業日を確認すると無駄足が減る。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jiyugaoka_Sta.%27s_LED_and_OLED_Lighting.jpg/1280px-Jiyugaoka_Sta.%27s_LED_and_OLED_Lighting.jpg"
         ],
         "specs": [
           {
@@ -256,7 +256,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "駅から1本路地に入るとカフェと住宅が混在する穏やかなエリア",
         "desc": "自由が丘の路地散歩は、自由が丘駅から放射状に伸びる細い通り（緑が丘・奥沢方向）を歩くコース。「観光地化されていない自由が丘の住宅街を歩きたい」「散歩しながら個人店を発見したい」目的に向く。古道具屋・古着屋・小さなギャラリー・隠れ家カフェが点在し、メイン通りとは違う雰囲気が広がる。九品仏川緑道（駅から南東方向に約1.6km）はベンチが整備された遊歩道で、購入したスイーツを食べるのに最適。緑道周辺は週末でも比較的落ち着いている。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/606_-_panoramio_%281%29.jpg/1280px-606_-_panoramio_%281%29.jpg"
         ],
         "specs": [
           {
@@ -274,7 +274,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "自由が丘から少し歩いた閑静な住宅地に公園と神社",
         "desc": "熊野神社と駒場公園方向は自由が丘駅から徒歩約15分、奥沢・緑が丘エリア。「自由が丘の静かな住宅街を抜けて駒場・池尻方面に歩きたい」散歩好きに向く。熊野神社は江戸期創建の地元の鎮守、駒場公園は1933年築の旧前田侯爵家邸宅（重要文化財）を含む文化施設。駒場公園の旧前田家本邸は無料で内部見学可（営業時間9〜16時、月曜休館）。自由が丘から駒場東大前駅まで徒歩約25分、東急東横線で池尻大橋に抜けるコースも組める。観光客がほぼ来ないため、平日でも週末でも落ち着いて歩ける。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg/1280px-Very_cool_shopping_street_in_jiyugaoka_%282460034101%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Torii_with_a_straw_snake_in_Okusawa_Shrine.jpg/1280px-Torii_with_a_straw_snake_in_Okusawa_Shrine.jpg"
         ],
         "specs": [
           {
@@ -371,7 +371,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "水に浸かりながら体験する没入型デジタルアート",
         "desc": "豊洲駅から徒歩10分、水に足を入れながら歩く没入型のデジタルアート施設「チームラボプラネッツ TOKYO」。床・壁・天井すべてが映像と鏡で構成された複数のインスタレーションを順路で歩き、1施設で40〜60分の体験になる。「没入型アート体験を組みたい」「写真映えするスポットに行きたい」観光客に最適。全身が映像に包まれる演出のため、雨天時の屋内娯楽として完全に「外の天気を忘れられる」強さがある。事前予約・日時指定制で、当日券はほぼ取れない。料金は公式サイトで確認。床に水を張った作品があるため、短パン・スカートでの入場が推奨される（短パン貸出あり）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Toyosu_Market_Tokyo_2.jpg/1280px-Toyosu_Market_Tokyo_2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Japan_2024-04-28_%2853891884557%29.jpg/1280px-Japan_2024-04-28_%2853891884557%29.jpg"
         ],
         "specs": [
           {
@@ -505,7 +505,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "年間登山者数世界一のアクセス抜群の山",
         "desc": "高尾山は標高599m、東京近郊で最もアクセスしやすい登山入門の山。「都心から1時間でハイキングを楽しみたい」「八王子グルメと自然を組み合わせたい」目的に最適。ケーブルカー・リフト（往復1,000円程度）でも頂上付近まで上がれ、初心者でも気軽に登れる。ミシュランガイド3つ星の観光地として国際的に認知されている。高尾山口駅から徒歩5分で麓に到着、JR八王子駅から京王線で15分の好アクセス。山頂からは富士山・関東平野が一望でき、紅葉時期は特に美しい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%28%E6%9D%B1%E4%BA%AC%E9%83%BD%29_%E9%AB%98%E5%B0%BE%E5%B1%B1%E3%81%AE%E8%A3%8F%E3%81%AB%E3%81%A6%E3%80%82%E9%AB%98%E5%B0%BE%E5%B1%B1%E3%81%AF%E3%83%9F%E3%82%B7%E3%83%A5%E3%83%A9%E3%83%B3%E3%82%AC%E3%82%A4%E3%83%89%E3%81%A7%E4%B8%89%E3%83%84%E6%98%9F%E3%81%AB%E9%81%B8%E3%81%B0%E3%82%8C%E3%81%A6%E3%81%8A%E3%82%8A%E3%80%81%E9%83%BD%E5%BF%83%E3%81%8B%E3%82%89%E8%BF%91%E3%81%84%E3%81%93%E3%81%A8%E3%82%82%E3%81%82%E3%82%8A%E7%99%BB%E5%B1%B1%E8%80%85%E6%95%B0%E3%81%AF%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%AE260%E4%B8%87%E4%BA%BA_-_panoramio.jpg/1280px-thumbnail.jpg"
         ],
         "specs": [
           {

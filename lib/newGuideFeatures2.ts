@@ -46,7 +46,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "SKYTREE AREA",
     "title": "スカイツリー押上・向島 半日さんぽコース。昼の展望から夜景まで歩く",
     "sub": "展望デッキ・ソラマチ・すみだ水族館・隅田川。押上駅起点で東東京の象徴を一日で巡る",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg/1280px-Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg"
   },
   {
     "id": "new-ginza-marunouchi",
@@ -64,7 +64,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "ROPPONGI NIGHT",
     "title": "六本木・港区、夜景を上から下から味わう半日コース",
     "sub": "六本木ヒルズの展望デッキに始まり、東京タワーの足元で締める。マジックアワーから夜更けまでの動き方",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg"
   },
   {
     "id": "new-ikebukuro-day",
@@ -73,7 +73,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "IKEBUKURO DAY",
     "title": "池袋、雨でも一日つぶせる街。屋内で完結する遊び方",
     "sub": "サンシャイン60展望台に西武・東武、池袋西口公園と乙女ロード。傘いらずで時間を溶かす副都心",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/2016-08-27_View_from_Sunshine_60.jpg/1280px-2016-08-27_View_from_Sunshine_60.jpg"
   },
   {
     "id": "new-tokyo-rainy",
@@ -91,7 +91,7 @@ export const NEW_GUIDE_FEATURES_2: Feature[] = [
     "kicker": "TOKYO FAMILY",
     "title": "東京、子連れで外さない屋内外スポット。年齢で選べる定番施設",
     "sub": "上野動物園、国立科学博物館、葛西臨海公園。子どもと一日過ごせる東京",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg/1280px-Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg"
   },
   {
     "id": "new-tokyo-first-date",
@@ -322,7 +322,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "ジャイアントパンダで有名。都内最大の動物園",
         "desc": "1882年開園、日本最古の動物園。東園と西園が地下道・モノレール跡通路でつながり、ジャイアントパンダ・ゴリラ・ホッキョクグマ・アムールトラなど代表的な動物がコンパクトに揃う。「半日で世界一周できる動物園」と呼んで差し支えない密度で、子連れだけでなく大人2人でも十分楽しめる。パンダのいる東園は午前中の混雑がピークで、整理券が必要な日がある。西園の小動物・は虫類館はゆっくり見るとそれだけで1時間。閉園は16〜17時で意外と早く、入園は閉園1時間前まで。1日かけて博物館とハシゴする場合は、午前博物館→昼食→午後動物園、の順がスタミナ的にも現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg/1280px-Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg"
         ],
         "specs": [
           {
@@ -344,7 +344,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "春は都内屈指の桜の名所。屋台も並ぶ",
         "desc": "上野公園のメインストリートには約800本のソメイヨシノが並び、東京を代表する花見スポットになる。3月最終週〜4月第1週がピークで、この期間は夜間ライトアップ・出店・大道芸が出て祭りの様相を呈する。花見以外の季節は、彫像・噴水・西郷隆盛像周辺の広場として、待ち合わせや軽く昼食を取る使い方がしやすい。公園内には不忍池・上野東照宮・清水観音堂など江戸期の史跡も点在し、文化散歩としても歩き応えがある。桜ピーク時の週末は最寄り駅から大混雑で、写真の構図に「他人の頭」が必ず入る覚悟が必要。雨天時は園内の博物館・美術館を渡り歩く「屋根の下の上野」に切り替えるのが現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92_-_panoramio_%283%29.jpg/1280px-%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92_-_panoramio_%283%29.jpg"
         ],
         "specs": [
           {
@@ -463,7 +463,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "映画・ライブ・バー。日本最大の歓楽街",
         "desc": "東口側の歌舞伎町は日本最大の歓楽街として知られるが、2023年開業の東急歌舞伎町タワーが入り口の雰囲気を一新している。ライブハウス（Zepp Shinjuku）・109シネマズプレミアム新宿・ホテル・フードホールが垂直に積み上がる構造で、夜の時間つぶしを「ビル1棟で完結」させやすい。周辺のゴールデン街・新宿二丁目はディープな飲み屋街として独自の文化が残るが、観光客向けにチャージや料金が分かりにくい店もあるので、料金表示のある店を選んで入る。深夜帯の歌舞伎町中央通りでは強引な客引きが出ることがあるので、声をかけられても付いていかず、店頭表示で判断する。終電は新宿駅各線でほぼ深夜0〜1時、終夜帯の選択肢も豊富。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tokyu_Kabukicho_Tower_1.jpg/1280px-Tokyu_Kabukicho_Tower_1.jpg"
         ],
         "specs": [
           {
@@ -716,7 +716,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約6分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg/1280px-Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -727,7 +727,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "高さ350m・450mの展望フロア。東京全景を見渡す",
         "desc": "高さ350mの天望デッキと450mの天望回廊からなる、世界第2位の電波塔の展望施設。晴天時は富士山・筑波山・関東平野の地形が一望でき、夜景はビル群の光の粒の細かさでは東京随一。入場料金は変動し、当日券と日時指定券で価格差があるため、訪問前に公式サイトで料金体系を確認する。土日祝・連休はピーク時に入場まで30〜90分待ちが発生するため、事前のWEB予約推奨。夕景〜夜景の境目（マジックアワー）に居合わせると景色が大きく変わるので、日没30分前の入場が最も得な使い方。雨天時は雲海の上に出ることもあるが、視界ゼロの日もあるので公式サイトの当日視界情報を見てから出るのが安全。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg/1280px-Tokyo_Skytree_Tembo_Deck_%2853081021166%29.jpg"
         ],
         "specs": [
           {
@@ -827,7 +827,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "隅田川沿いの静かな下町散歩",
         "desc": "スカイツリーから徒歩15分、隅田川と桜並木に挟まれた向島は、江戸〜明治の花街文化が残る静かな下町。向島百花園（江戸期の文人趣味の庭）・長命寺の桜餅・言問団子といった歴史ある和菓子屋が点在する。観光客がほぼ来ないエリアなので、スカイツリー混雑の反動で「人のいない江戸下町」を歩ける貴重な動線。言問橋は浅草と向島を結ぶ橋で、橋上から隅田川とスカイツリーが同時に視界に入る。向島百花園は入園有料（金額は公式で確認）・休園日あり。夜は街灯が少ない区画があるので、明るいうちに歩いて夕方には浅草または押上に戻る動線が現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Bamboo_%40_Mukojima-Hyakkaen_Gardens_%2812638601134%29.jpg/1280px-Bamboo_%40_Mukojima-Hyakkaen_Gardens_%2812638601134%29.jpg"
         ],
         "specs": [
           {
@@ -1018,7 +1018,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1029,7 +1029,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "253mからの東京夜景。屋外デッキが最高",
         "desc": "高さ238m・地上52階の屋内展望デッキ「東京シティビュー」と、屋外スカイデッキ。六本木駅直結のヒルズ森タワー最上部に位置する。屋外スカイデッキは追加料金で開放され、雨天・強風時は閉鎖されることがあるので公式サイトで当日確認するのが安全。日没30分前〜30分後の「マジックアワー」が最も美しく、東京タワー・スカイツリー・レインボーブリッジが同時に視界に入る。土日の19〜21時はピーク混雑。事前のWEB日時指定券購入が推奨される。森美術館のチケットに展望入場が含まれることがあり、企画展との抱き合わせで使う方法もある。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg/1280px-%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%A4%A7%E5%B1%95%E6%9C%9B%E5%8F%B0_%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC_-_panoramio_%2825%29.jpg"
         ],
         "specs": [
           {
@@ -1095,7 +1095,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東京タワー真下の寺院。ライトアップとのコラボが美しい",
         "desc": "1393年創建、徳川将軍家の菩提寺。三門越しに見上げる東京タワーの構図は、東京の昼夜どちらでも撮れる定番ショット。夜は東京タワーのライトアップを背景に、増上寺の屋根と松のシルエットが浮かぶ。境内は24時間開放で無料、夕方〜夜間に静かに歩ける。芝公園は隣接の都市公園で、東京タワー真下から塔を見上げる構図はSNS定番。浜松町駅から徒歩10分、御成門駅から徒歩5分、赤羽橋駅から徒歩7分の3駅圏で、東京タワー観賞後の動線として組みやすい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg/1280px-Rainbow_Bridge%2C_Tokyo%2C_West_view_20190419_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tokyo---2025-05-24_005.jpg/1280px-Tokyo---2025-05-24_005.jpg"
         ],
         "specs": [
           {
@@ -1158,7 +1158,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/2016-08-27_View_from_Sunshine_60.jpg/1280px-2016-08-27_View_from_Sunshine_60.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1169,7 +1169,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "地上59Fからの360度展望。池袋の高みから見下ろす",
         "desc": "高さ229mのサンシャイン60の最上階（59〜60F）にある展望台「SKY CIRCUS」。東京スカイツリー・東京タワー・富士山が見渡せる360度パノラマで、「触れる地球儀」「鏡の万華鏡」などの体験型展示が並ぶ。入場料は変動するため公式サイトで確認、夕景〜夜景の境目に合わせて入場するのが最も得な使い方。サンシャインシティ内には水族館・プラネタリウム・古代オリエント博物館・ナンジャタウンが同居し、展望台の前後を屋内で完結できる動線が組める。土日祝の14〜17時は混雑するので、開場直後か夕方以降が快適。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg/1280px-Sunshine_60_Ikebukuro_Tokyo_20070304-03.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/2016-08-27_View_from_Sunshine_60.jpg/1280px-2016-08-27_View_from_Sunshine_60.jpg"
         ],
         "specs": [
           {
@@ -1464,7 +1464,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     "date": "2026-05-14",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg/1280px-Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -1475,7 +1475,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "日本最古の動物園。パンダと子どもが大喜びする施設",
         "desc": "1882年開園、日本最古の動物園。ジャイアントパンダ・ゴリラ・ホッキョクグマ・アムールトラ・キリンなど、「動物図鑑で見たことのある動物」がほぼ揃っている密度の高い動物園。東園と西園が地下通路で繋がり、東園のパンダ→西園の小動物→不忍池の鳥類、と1〜2時間で1周できる。未就学児はパンダと象に夢中になり、小学生はモノレール跡通路や夜行性動物舎にも興味が広がる。入園料・パンダ整理券の有無は公式サイトで確認、開園直後の9:30〜11:00が比較的空いている。上野駅公園口・京成上野駅から徒歩5分、駅から園入口まで段差が少なくベビーカーでも移動しやすい動線。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg/1280px-Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg"
         ],
         "specs": [
           {
@@ -1497,7 +1497,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "恐竜・宇宙・自然科学。子どもの知的好奇心を刺激",
         "desc": "上野公園内、日本最大の科学博物館。日本館（建物自体が重要文化財）と地球館の2棟構成で、恐竜の骨格標本・宇宙の展示・ゾウやマンモスの剥製・日本列島の自然史を網羅する。ティラノサウルスやトリケラトプスの実物大骨格は小学生に絶大な人気で、地球館の自由研究コーナーは夏休み宿題の定番。全フロアで一日かけても回りきれないので、子どもの興味（恐竜・宇宙・動物）から1〜2軸に絞る方が満足度が高い。雨の日の屋内避難先としても極めて優秀で、上野動物園とハシゴすれば1日完結する。高校生以下は入館無料、一般は630円程度（特別展別途）。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Giant_panda_Chu_Chu_Specimen.jpg/1280px-Giant_panda_Chu_Chu_Specimen.jpg"
         ],
         "specs": [
           {
@@ -1808,7 +1808,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "春は桜、年中おしゃれな川沿いカフェが続く",
         "desc": "代官山〜中目黒〜池尻大橋を結ぶ目黒川は、約3.8kmの遊歩道が整備された都心の水辺。3月末〜4月第1週の桜並木は東京でも有数の名所で、満開時は川面に花びらが流れる桜のトンネルになる。桜以外の季節も、川沿いに個性的なカフェ・パティスリー・古着屋・花屋が点在し、歩きながら立ち寄り先を見つける「街歩きの面白さ」が残る稀有な区画。中目黒駅から代官山方向に20分歩くだけで、デートの「会話と発見」を確保できる。桜ピーク時の週末は大変な混雑になるため、徒歩での移動も難しい。早朝または平日推奨。雨の日は欄干に屋根がなく濡れるので、川沿いより1本内側の店舗街を歩く方が現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Road%2C_barriers%2C_ropes_preventing_pedestrians_from_walking_easily_along_the_Meguro_river.jpg/1280px-Road%2C_barriers%2C_ropes_preventing_pedestrians_from_walking_easily_along_the_Meguro_river.jpg"
         ],
         "specs": [
           {
@@ -1935,7 +1935,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東急線高架下のリノベ商業施設。夜は雰囲気がいい",
         "desc": "東急東横線の中目黒駅高架橋下を再整備した商業施設。約700mに渡って小規模店舗が並び、夜は高架の造形が照明で浮かび上がって独特の雰囲気をつくる。スタバリザーブロースタリーの隣接区画にもいくつかの飲食店が出ており、夕方17時以降の散歩ルートとして使いやすい。店舗は古着・クラフトビール・カフェ・スパイスカレーなど業態が広く、1〜2時間で複数店を回れる密度。中目黒駅徒歩1分の駅近で、雨の日でも高架の屋根があるため傘を最小限にできる。若手店主の小箱が多く、扱う商品や料理に発見がある区画。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/%E5%90%89%E3%81%9D%E3%81%B0_2017_%E5%85%A5%E5%BA%97_%E8%B8%8F%E3%81%BF%E5%8F%B0_%2832941760660%29.jpg/1280px-%E5%90%89%E3%81%9D%E3%81%B0_2017_%E5%85%A5%E5%BA%97_%E8%B8%8F%E3%81%BF%E5%8F%B0_%2832941760660%29.jpg"
         ],
         "specs": [
           {
@@ -1983,7 +1983,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "川沿いに個性的な店が点在。歩きながら発見する楽しさ",
         "desc": "目黒川の両岸には、地元のロースターが運営する小さなコーヒースタンド、地方の古い民家を移築したセレクトショップ、川を眺めながら座れるベンチカフェ、花屋兼カフェなど個性的な店が点在する。「中目黒っぽい」雰囲気を体感したいなら、Googleマップを閉じて川沿いを上流・下流方向に1〜2km歩くと、観光ガイドに載らない店に出会える。土日午後は混雑するが、店内が小さい個人経営の店は平日午後が落ち着いて入れる。中目黒駅から半径800mが射程圏で、1〜2時間でも複数店を巡れる規模感。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Walk_along_Meguro_river_near_Nakameguro_7.jpg/1280px-Walk_along_Meguro_river_near_Nakameguro_7.jpg"
         ],
         "specs": [
           {

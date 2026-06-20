@@ -28,7 +28,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "SHIBUYA BRUNCH",
     "title": "渋谷の週末ブランチ半日コース。スクランブルを外して川沿いと奥渋を歩く",
     "sub": "渋谷ストリームの川沿いから、松濤の住宅街、代々木公園の芝生まで。土曜の遅い朝をひと続きに歩く",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shibuya_Stream-2f1.jpg/1280px-Shibuya_Stream-2f1.jpg"
   },
   {
     "id": "new-shinjuku-park",
@@ -37,7 +37,7 @@ export const NEW_GUIDE_FEATURES_4: Feature[] = [
     "kicker": "SHINJUKU GARDEN",
     "title": "新宿御苑を歩く。緑の中で一駅分、息を整える半日",
     "sub": "三様式の庭園から御苑前の路地、思い出横丁まで。喧騒のすぐ隣にある静けさを拾い歩く",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg/1280px-A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg"
   },
   {
     "id": "new-roppongi-art",
@@ -180,7 +180,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "キャットストリート周辺に点在する個性派古着店を攻略",
         "desc": "表参道交差点から青山1丁目方向に伸びる欅並木の高級住宅街・ブランド街。表参道ヒルズ（安藤忠雄設計）・各国ハイブランド路面店・カフェが並ぶ。裏原宿の古着ハンティングの後、青山方面でハイブランドのウィンドウショッピングをすると価格帯のコントラストで街の構造が見えてくる。夕方17時以降は人波が減り、青山1丁目方向の根津美術館・岡本太郎記念館などの文化施設にも繋がる。11月末〜2月のシャンパンゴールドのイルミネーションは表参道全体が金色に染まる東京屈指の規模。表参道駅から青山1丁目駅まで徒歩15分の距離。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/1_Chome-18_Jing%C5%ABmae%2C_Shibuya-ku%2C_T%C5%8Dky%C5%8D-to_150-0001%2C_Japan_-_panoramio_%281%29.jpg/1280px-1_Chome-18_Jing%C5%ABmae%2C_Shibuya-ku%2C_T%C5%8Dky%C5%8D-to_150-0001%2C_Japan_-_panoramio_%281%29.jpg"
         ],
         "specs": [
           {
@@ -250,7 +250,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "120年超の老舗文具店。1フロアまるごとペンとノートの世界",
         "desc": "2017年開業、銀座最大規模の複合施設。13階建てに241店舗、地下2階のデパ地下、屋上の無料庭園、観世能楽堂、蔦屋書店銀座が同居する。「銀座の最新の文化拠点を一気に体験したい」現代派の2人に向く。蔦屋書店銀座は美術書・建築書・写真集・アートグッズが充実し、書店としての専門性が銀座エリア最高峰。屋上庭園「GINZA SIX ガーデン」は無料開放、中央通りを見下ろせる構図で写真スポットとしても優秀。館内の現代アートインスタレーション（草間彌生、塩田千春など）が定期的に入れ替わり、ショッピング動線の中でアートが見られる設計。営業時間10:30〜20:30、レストランは〜23時。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/b/bd/Itoya-1.jpg"
         ],
         "specs": [
           {
@@ -353,7 +353,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shibuya_Stream-2f1.jpg/1280px-Shibuya_Stream-2f1.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -364,7 +364,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "渋谷川の遊歩道沿いのカフェ。週末の朝は混んでいない",
         "desc": "2019年開業、渋谷駅直結の230mの超高層ビル。地下2階〜地上47階の複合施設で、最上層に展望施設「SHIBUYA SKY」、中層階にレストランフロアが入る。渋谷ストリーム・渋谷ヒカリエとともに、駅周辺の再開発の中核で、土日のブランチ時間帯はファッション関係者と海外ビジネス客で賑わう。レストランフロア（45階）からの眺望はランチでも夜景でも絵になり、特別な日のブランチに使いやすい。予約は土日午前11〜13時が最も混むため、事前WEB予約推奨。次の動線として、渋谷駅周辺の宮益坂・道玄坂どちらにも徒歩で繋がる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shibuya_Stream-2f1.jpg/1280px-Shibuya_Stream-2f1.jpg"
         ],
         "specs": [
           {
@@ -408,7 +408,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "渋谷駅から徒歩10分。閑静な高級住宅地に隠れた喫茶",
         "desc": "宮下公園（MIYASHITA PARK）は2020年リニューアル、新南口出口から徒歩3分の高架線下の複合施設。屋上のスケートパーク・ボルダリングウォール・芝生広場が無料開放され、ブランチの前後に体を動かせる珍しい立地。1〜3階に飲食店とブティック、地下に「渋谷横丁」（小さな飲食店集合体）が入る。屋上で軽く運動した後にブランチ、という流れがフィットネス世代に刺さる構成。10時〜20時の通年営業（屋上利用は規定あり、公式サイトで確認）。宮益坂側へも徒歩で繋がる動線。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nabeshima_Shoto_park_%2881056%29.jpg/1280px-Nabeshima_Shoto_park_%2881056%29.jpg"
         ],
         "specs": [
           {
@@ -490,7 +490,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg/1280px-A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -501,7 +501,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "3様式の庭園が58万㎡に広がる国民公園",
         "desc": "1949年に国民公園として開放。約58.3haの広大な敷地に約1万本の樹木が植えられ、フランス式整形庭園・イギリス式風景庭園・日本庭園・温室が並ぶ。桜の季節（3月下旬〜4月上旬）は都内有数の花見スポットで、酒類持込禁止のためゆっくり静かに花見ができる珍しい公園。入園料は変動するため公式サイトで確認、入園は閉園1時間前まで。新宿御苑前駅から大木戸門、新宿駅南口から新宿門、千駄ヶ谷駅から千駄ヶ谷門の3門で入れる。アルコール・遊具・ペット入園は禁止で、静かに楽しむ前提のルール。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg/1280px-A_path_from_the_greenhouse_in_Shinjuku_Gyoen_National_Garden_in_Shinjuku%2C_Tokyo%2C_Japan%2C_2024_May.jpg"
         ],
         "specs": [
           {
@@ -527,7 +527,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "御苑の南口周辺には個人経営カフェが集まる穴場エリア",
         "desc": "御苑内の温室は2012年リニューアル、3,000㎡の屋内空間に約2,400種類の熱帯・亜熱帯植物が展示される。バナナ・ハイビスカス・食虫植物・サガリバナ・ヒスイカズラなど、日本では珍しい植物が一年中見られる。雨の日・猛暑日・厳寒期の屋内避難先としても優秀で、ガラス越しに公園を眺めながら室温が一定の環境で2〜3時間過ごせる。温室入口前に休憩スペースがあり、軽食・ドリンクは持参可能（園内マナーに従う）。御苑全体を回る時間がない時は、温室＋日本庭園の2点に絞ると1時間半で完結する。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku-Gyoemmae-STA_Okido-mon-District-Gate.jpg/1280px-Shinjuku-Gyoemmae-STA_Okido-mon-District-Gate.jpg"
         ],
         "specs": [
           {
@@ -941,7 +941,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "表参道・青山通りには高品質なベーカリーが集中",
         "desc": "青山通り沿いには「青山アンデルセン」「ル・パン・コティディアン」「365日」など、デンマーク・北欧・フレンチ系のベーカリーが点在する。「ブランチで焼きたてパンを食べたい」「テイクアウトで根津美術館の庭園で食べたい」目的に最適。1個400〜800円、店内イートインがある店も多い。営業時間は店舗による（朝7〜8時開店の店もあり、ブランチ時間より早めに動ける）。表参道駅・外苑前駅から徒歩5〜10分の範囲。週末11〜13時は混雑、平日午前または土日朝9〜10時が落ち着く。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Aoyama_avenue_in_summer_morning%2C_seen_from_Shibuya_Stream.jpg/1280px-Aoyama_avenue_in_summer_morning%2C_seen_from_Shibuya_Stream.jpg"
         ],
         "specs": [
           {
@@ -981,7 +981,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "表参道から15分歩くと代々木公園。地元民の朝散歩コース",
         "desc": "南青山〜代々木公園方向への路地散歩は、表参道のメイン通りから1〜2ブロック入った住宅街を歩くコース。「観光客が少ない青山の本来の落ち着きを体感したい」「ファッション関係者・モデルが歩く区画を見たい」大人の2人に向く。個人経営のセレクトショップ・ギャラリー・カフェが点在し、観光地化されていない雰囲気が広がる。代々木公園まで歩くと約20〜30分、明治神宮の北参道に抜けるコースが組める。店舗の定休日が分散するため、Googleマップで事前確認推奨。雨の日は路地散歩を諦めて表参道ヒルズの屋内ルートに切り替え。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Aoyama-Omotesando-02.jpg/960px-Aoyama-Omotesando-02.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/4/47/Bridge_Yoyogipark.JPG"
         ],
         "specs": [
           {
