@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const NEW_GUIDE_FEATURES: Feature[] = [
   {
@@ -443,12 +443,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "みなとみらい雨の日デート5選",
+        "t": "みなとみらい、雨でも濡れないデート半日コース。屋内でつなぐ一日",
         "h": "/feature/new-minatomirai-rainy-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
       },
       {
-        "t": "大さん橋夜景デート3選",
+        "t": "大さん橋・山下公園・港の見える丘公園で外さない横浜夜景デート",
         "h": "/feature/new-osanbashi-nightview-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
       }
@@ -624,12 +624,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "みなとみらいデート5選",
+        "t": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
         "h": "/feature/new-minatomirai-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "横浜駅周辺雨の日デート",
+        "t": "横浜駅、雨の日は地下でつながる。傘を畳んだまま回る屋内さんぽ",
         "h": "/feature/new-yokohama-station-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -789,12 +789,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "みなとみらいデート5選",
+        "t": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
         "h": "/feature/new-minatomirai-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "赤レンガ倉庫周辺デート3選",
+        "t": "赤レンガ倉庫から始める、海との距離が変わる港デート",
         "h": "/feature/new-akarenga-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
       }
@@ -906,12 +906,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "大さん橋夜景デート3選",
+        "t": "大さん橋・山下公園・港の見える丘公園で外さない横浜夜景デート",
         "h": "/feature/new-osanbashi-nightview-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
       },
       {
-        "t": "みなとみらいデート5選",
+        "t": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
         "h": "/feature/new-minatomirai-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -1027,12 +1027,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "山下公園周辺デート5選",
+        "t": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
         "h": "/feature/new-yamashita-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
       },
       {
-        "t": "赤レンガ倉庫周辺デート3選",
+        "t": "赤レンガ倉庫から始める、海との距離が変わる港デート",
         "h": "/feature/new-akarenga-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG"
       }
@@ -1184,12 +1184,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "関内・日本大通りさんぽ5選",
+        "t": "関内・日本大通りを歩く。横浜が生まれた場所をたどるさんぽ",
         "h": "/feature/new-kannai-nihondori",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG/1280px-Kanagawa_Prefectural_Museum_of_Cultural_History_at_night.JPG"
       },
       {
-        "t": "元町・山手さんぽ5選",
+        "t": "元町から山手の坂を歩く。横浜の居留地時代をたどる午後",
         "h": "/feature/new-motomachi-yamate",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
       }
@@ -1345,12 +1345,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "馬車道レトロ建築さんぽ5選",
+        "t": "馬車道から日本大通りへ、洋館を歩く。明治・大正の石が残る関内さんぽ",
         "h": "/feature/new-bashamichi-architecture",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
       },
       {
-        "t": "横浜中華街周辺で遊ぶ5選",
+        "t": "横浜中華街から港まで、食べる以外を歩く一日。",
         "h": "/feature/new-chinatown-sightseeing",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
       }
@@ -1510,12 +1510,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "大さん橋夜景デート3選",
+        "t": "大さん橋・山下公園・港の見える丘公園で外さない横浜夜景デート",
         "h": "/feature/new-osanbashi-nightview-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Osanbashi.jpg/1280px-Osanbashi.jpg"
       },
       {
-        "t": "元町・山手さんぽ5選",
+        "t": "元町から山手の坂を歩く。横浜の居留地時代をたどる午後",
         "h": "/feature/new-motomachi-yamate",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
       }
@@ -1671,12 +1671,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "元町・山手さんぽ5選",
+        "t": "元町から山手の坂を歩く。横浜の居留地時代をたどる午後",
         "h": "/feature/new-motomachi-yamate",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MotomachiYokohama.JPG/1280px-MotomachiYokohama.JPG"
       },
       {
-        "t": "山下公園周辺デート5選",
+        "t": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
         "h": "/feature/new-yamashita-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
       }
@@ -1836,12 +1836,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "横浜中華街周辺で遊ぶ5選",
+        "t": "横浜中華街から港まで、食べる以外を歩く一日。",
         "h": "/feature/new-chinatown-sightseeing",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Yokohama_Chinatown_signage_2015.jpg/1280px-Yokohama_Chinatown_signage_2015.jpg"
       },
       {
-        "t": "山下公園周辺デート5選",
+        "t": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
         "h": "/feature/new-yamashita-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
       }
@@ -1997,12 +1997,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "みなとみらい雨の日デート5選",
+        "t": "みなとみらい、雨でも濡れないデート半日コース。屋内でつなぐ一日",
         "h": "/feature/new-minatomirai-rainy-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
       },
       {
-        "t": "川崎雨の日デート5選",
+        "t": "川崎、雨でも傘がいらない一日。ラゾーナから映画まで濡れずに歩く",
         "h": "/feature/new-kawasaki-rainy-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
       }
@@ -2158,12 +2158,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "横浜駅雨の日5選",
+        "t": "横浜駅、雨の日は地下でつながる。傘を畳んだまま回る屋内さんぽ",
         "h": "/feature/new-yokohama-station-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "みなとみらいデート5選",
+        "t": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
         "h": "/feature/new-minatomirai-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -2267,12 +2267,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "桜木町夜景デート5選",
+        "t": "桜木町、夜の港を歩くデートさんぽ。光が水に落ちる時間に",
         "h": "/feature/new-sakuragicho-night-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cosmo_Clock_21_at_night.jpg/1280px-Cosmo_Clock_21_at_night.jpg"
       },
       {
-        "t": "馬車道・歴史建築5選",
+        "t": "馬車道から日本大通りへ、洋館を歩く。明治・大正の石が残る関内さんぽ",
         "h": "/feature/new-bashamichi-architecture",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg/1280px-Kanagawa_prefectural_museum_of_cultural_history01s3200.jpg"
       }
@@ -2424,12 +2424,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "横浜アリーナ周辺5選",
+        "t": "新横浜、ライブの前後を歩く。横浜アリーナ徒歩圏のさんぽ",
         "h": "/feature/new-yokohama-arena-spots",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "横浜駅周辺で時間つぶし5選",
+        "t": "横浜駅、空いた時間を歩く。東口から西口、そして海側へ",
         "h": "/feature/new-yokohama-station-bored",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -2585,12 +2585,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "新横浜で時間つぶし5選",
+        "t": "新横浜、新幹線待ちの数時間を歩く。ライブ前後にも効く時間つぶし",
         "h": "/feature/new-shin-yokohama-bored",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "横浜駅周辺で時間つぶし5選",
+        "t": "横浜駅、空いた時間を歩く。東口から西口、そして海側へ",
         "h": "/feature/new-yokohama-station-bored",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -2746,12 +2746,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "長谷・由比ヶ浜デート5選",
+        "t": "長谷・由比ヶ浜デート半日コース。大仏から海へ、江ノ電で下る一日",
         "h": "/feature/new-hase-yuigahama-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
       },
       {
-        "t": "鎌倉雨の日5選",
+        "t": "鎌倉、雨の日を歩く。濡れた苔と屋根を打つ音をめぐる半日",
         "h": "/feature/new-kamakura-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
       }
@@ -2907,12 +2907,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "鎌倉小町通り・八幡宮5選",
+        "t": "鎌倉、小町通りから八幡宮へ歩く。参道さんぽの半日",
         "h": "/feature/new-kamakura-komachi",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
       },
       {
-        "t": "江ノ島夕暮れデート5選",
+        "t": "江ノ島、夕陽を追いかけるデート。サンセットから夜景まで",
         "h": "/feature/new-enoshima-evening-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
       }
@@ -3064,12 +3064,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "長谷・由比ヶ浜デート5選",
+        "t": "長谷・由比ヶ浜デート半日コース。大仏から海へ、江ノ電で下る一日",
         "h": "/feature/new-hase-yuigahama-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg/1280px-230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
       },
       {
-        "t": "茅ヶ崎ビーチ5選",
+        "t": "茅ヶ崎、海風をたどって歩く一日。サザンビーチから里山の丘まで",
         "h": "/feature/new-chigasaki-beach",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
       }
@@ -3225,12 +3225,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "鎌倉小町通り・八幡宮5選",
+        "t": "鎌倉、小町通りから八幡宮へ歩く。参道さんぽの半日",
         "h": "/feature/new-kamakura-komachi",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/TsurugaokaHachiman-M8867.jpg/1280px-TsurugaokaHachiman-M8867.jpg"
       },
       {
-        "t": "長谷・由比ヶ浜デート5選",
+        "t": "長谷・由比ヶ浜デート半日コース。大仏から海へ、江ノ電で下る一日",
         "h": "/feature/new-hase-yuigahama-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg"
       }
@@ -3386,12 +3386,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "横浜駅雨の日5選",
+        "t": "横浜駅、雨の日は地下でつながる。傘を畳んだまま回る屋内さんぽ",
         "h": "/feature/new-yokohama-station-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "武蔵小杉ファミリー5選",
+        "t": "武蔵小杉、子連れで丸一日。タワマン街の遊び場めぐり",
         "h": "/feature/new-musashikosugi-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
       }
@@ -3547,12 +3547,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "川崎雨の日デート5選",
+        "t": "川崎、雨でも傘がいらない一日。ラゾーナから映画まで濡れずに歩く",
         "h": "/feature/new-kawasaki-rainy-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
       },
       {
-        "t": "たまプラーザ・あざみ野5選",
+        "t": "たまプラーザからあざみ野を歩く。子どもと一日、横浜北部さんぽ",
         "h": "/feature/new-tamaplaza-azamino",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -3708,12 +3708,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "武蔵小杉ファミリー5選",
+        "t": "武蔵小杉、子連れで丸一日。タワマン街の遊び場めぐり",
         "h": "/feature/new-musashikosugi-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
       },
       {
-        "t": "港北NT・ファミリー5選",
+        "t": "港北ニュータウンで子どもと過ごす休日。センター北・南をつなぐ家族の半日",
         "h": "/feature/new-kohoku-nt-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       }
@@ -3861,12 +3861,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "小田原観光5選",
+        "t": "小田原、城と海をつなぐ城下町さんぽ。天守から漁港・文学館まで歩く",
         "h": "/feature/new-odawara",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
       },
       {
-        "t": "鎌倉雨の日5選",
+        "t": "鎌倉、雨の日を歩く。濡れた苔と屋根を打つ音をめぐる半日",
         "h": "/feature/new-kamakura-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kenchoji_Main_Complex.jpg/1280px-Kenchoji_Main_Complex.jpg"
       }
@@ -4022,12 +4022,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "箱根湯本5選",
+        "t": "箱根湯本で過ごす温泉半日。湯につかり、老舗の味を歩く",
         "h": "/feature/new-hakoneyumoto",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg/1280px-161222_Hakone-Yumoto_Station_Hakone_Japan02s3.jpg"
       },
       {
-        "t": "三浦海岸5選",
+        "t": "三浦海岸から三崎港へ、海を一日歩く半日コース。砂浜・城ヶ島・マグロまで",
         "h": "/feature/new-miura-kaigan",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
       }
@@ -4171,12 +4171,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "江ノ島夕暮れデート5選",
+        "t": "江ノ島、夕陽を追いかけるデート。サンセットから夜景まで",
         "h": "/feature/new-enoshima-evening-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
       },
       {
-        "t": "藤沢で時間つぶし5選",
+        "t": "藤沢、江ノ電の起点をぶらり歩く。湘南の玄関口で過ごす空き時間",
         "h": "/feature/new-fujisawa-bored",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Enoshima_eastside_beach_02.jpg/1280px-Enoshima_eastside_beach_02.jpg"
       }
@@ -4328,12 +4328,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "茅ヶ崎ビーチ5選",
+        "t": "茅ヶ崎、海風をたどって歩く一日。サザンビーチから里山の丘まで",
         "h": "/feature/new-chigasaki-beach",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
       },
       {
-        "t": "江ノ島夕暮れデート5選",
+        "t": "江ノ島、夕陽を追いかけるデート。サンセットから夜景まで",
         "h": "/feature/new-enoshima-evening-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg/1280px-Shonan_View_from_the_Enoshima_Sea_Candle_2024_Dec_24_various_18_16_54_096000.jpeg"
       }
@@ -4485,12 +4485,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "三浦海岸5選",
+        "t": "三浦海岸から三崎港へ、海を一日歩く半日コース。砂浜・城ヶ島・マグロまで",
         "h": "/feature/new-miura-kaigan",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Miura_Beach_01.jpg/1280px-Miura_Beach_01.jpg"
       },
       {
-        "t": "小田原観光5選",
+        "t": "小田原、城と海をつなぐ城下町さんぽ。天守から漁港・文学館まで歩く",
         "h": "/feature/new-odawara",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Odawara-jo.jpg/1280px-Odawara-jo.jpg"
       }
@@ -4642,12 +4642,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "横須賀どぶ板5選",
+        "t": "横須賀どぶ板通りから始める半日コース。米軍基地の街で日本離れした一日を歩く",
         "h": "/feature/new-yokosuka-dobuita",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dobuita_street.jpg/1280px-Dobuita_street.jpg"
       },
       {
-        "t": "茅ヶ崎ビーチ5選",
+        "t": "茅ヶ崎、海風をたどって歩く一日。サザンビーチから里山の丘まで",
         "h": "/feature/new-chigasaki-beach",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Southern_Beach_Chigasaki.jpg/1280px-Southern_Beach_Chigasaki.jpg"
       }
@@ -4803,12 +4803,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "たまプラーザ・あざみ野5選",
+        "t": "たまプラーザからあざみ野を歩く。子どもと一日、横浜北部さんぽ",
         "h": "/feature/new-tamaplaza-azamino",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "武蔵小杉ファミリー5選",
+        "t": "武蔵小杉、子連れで丸一日。タワマン街の遊び場めぐり",
         "h": "/feature/new-musashikosugi-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
       }
@@ -4956,12 +4956,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "みなとみらいデート5選",
+        "t": "みなとみらい、昼の海から夜景へ歩くデート。汽車道から大さん橋まで港をたどる",
         "h": "/feature/new-minatomirai-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Minato_Mirai_In_Blue.jpg/1280px-Minato_Mirai_In_Blue.jpg"
       },
       {
-        "t": "山下公園デート5選",
+        "t": "山下公園から山手へ、海と丘をつなぐ横浜の半日デート",
         "h": "/feature/new-yamashita-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_of_Minato_Mirai_21_from_Yamashita_Park.jpg/1280px-View_of_Minato_Mirai_21_from_Yamashita_Park.jpg"
       }

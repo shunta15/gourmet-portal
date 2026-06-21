@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const NEW_GUIDE_FEATURES_2: Feature[] = [
   {
@@ -259,12 +259,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "東京スカイツリー周辺5選",
+        "t": "スカイツリー押上・向島 半日さんぽコース。昼の展望から夜景まで歩く",
         "h": "/feature/new-skytree-area",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/1280px-Tokyo_Skytree_2023.jpg"
       },
       {
-        "t": "東京初デート5選",
+        "t": "東京、初デートの半日コース。浅草から夜景まで歩いてつなぐ",
         "h": "/feature/new-tokyo-first-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       }
@@ -404,12 +404,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "東京ファミリー5選",
+        "t": "東京、子連れで外さない屋内外スポット。年齢で選べる定番施設",
         "h": "/feature/new-tokyo-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       },
       {
-        "t": "東京雨の日5選",
+        "t": "東京、雨だからこそ屋内文化をはしごする一日。博物館とアートで濡れずに過ごす",
         "h": "/feature/new-tokyo-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       }
@@ -549,12 +549,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       },
       {
-        "t": "東京初デート5選",
+        "t": "東京、初デートの半日コース。浅草から夜景まで歩いてつなぐ",
         "h": "/feature/new-tokyo-first-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       }
@@ -690,12 +690,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "恵比寿・代官山5選",
+        "t": "恵比寿・代官山、午後から夜までのデート半日コース。坂道とおしゃれカフェをつなぐ",
         "h": "/feature/new-ebisu-daikanyama",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
       },
       {
-        "t": "中目黒散歩5選",
+        "t": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
         "h": "/feature/new-nakameguro-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       }
@@ -843,12 +843,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "浅草デート5選",
+        "t": "浅草、雷門から川辺まで歩くデートさんぽ",
         "h": "/feature/new-asakusa-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       },
       {
-        "t": "東京ファミリー5選",
+        "t": "東京、子連れで外さない屋内外スポット。年齢で選べる定番施設",
         "h": "/feature/new-tokyo-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       }
@@ -992,12 +992,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       },
       {
-        "t": "東京初デート5選",
+        "t": "東京、初デートの半日コース。浅草から夜景まで歩いてつなぐ",
         "h": "/feature/new-tokyo-first-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       }
@@ -1137,7 +1137,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "銀座・丸の内デート5選",
+        "t": "銀座から丸の内へ、二人で歩く半日",
         "h": "/feature/new-ginza-marunouchi",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
       }
@@ -1281,12 +1281,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "新宿で時間つぶし5選",
+        "t": "新宿、余った時間を歩く。三つの顔をつなぐさんぽ",
         "h": "/feature/new-shinjuku-time",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
       },
       {
-        "t": "東京雨の日5選",
+        "t": "東京、雨だからこそ屋内文化をはしごする一日。博物館とアートで濡れずに過ごす",
         "h": "/feature/new-tokyo-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       }
@@ -1438,12 +1438,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "上野公園5選",
+        "t": "上野公園、文化と自然を一日で歩く半日コース",
         "h": "/feature/new-ueno-museum",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       },
       {
-        "t": "東京ファミリー5選",
+        "t": "東京、子連れで外さない屋内外スポット。年齢で選べる定番施設",
         "h": "/feature/new-tokyo-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       }
@@ -1587,12 +1587,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "上野公園5選",
+        "t": "上野公園、文化と自然を一日で歩く半日コース",
         "h": "/feature/new-ueno-museum",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       },
       {
-        "t": "東京雨の日5選",
+        "t": "東京、雨だからこそ屋内文化をはしごする一日。博物館とアートで濡れずに過ごす",
         "h": "/feature/new-tokyo-rainy",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg/1280px-Cherry_tree_in_blossom_%40_Ueno_Park_%2813438972635%29.jpg"
       }
@@ -1728,7 +1728,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "浅草デート5選",
+        "t": "浅草、雷門から川辺まで歩くデートさんぽ",
         "h": "/feature/new-asakusa-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       }
@@ -1872,12 +1872,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "中目黒散歩5選",
+        "t": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
         "h": "/feature/new-nakameguro-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       },
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       }
@@ -2021,12 +2021,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "恵比寿・代官山5選",
+        "t": "恵比寿・代官山、午後から夜までのデート半日コース。坂道とおしゃれカフェをつなぐ",
         "h": "/feature/new-ebisu-daikanyama",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Yebisu_Garden_Place.jpg/1280px-Yebisu_Garden_Place.jpg"
       },
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       }
@@ -2162,12 +2162,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "中目黒散歩5選",
+        "t": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
         "h": "/feature/new-nakameguro-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       },
       {
-        "t": "東京初デート5選",
+        "t": "東京、初デートの半日コース。浅草から夜景まで歩いてつなぐ",
         "h": "/feature/new-tokyo-first-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Asakusa_Nakamise_2021-12_ac.jpg/1280px-Asakusa_Nakamise_2021-12_ac.jpg"
       }

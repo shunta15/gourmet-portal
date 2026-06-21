@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const NEW_GUIDE_FEATURES_4: Feature[] = [
   {
@@ -196,7 +196,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       }
@@ -332,7 +332,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "銀座・丸の内デート5選",
+        "t": "銀座から丸の内へ、二人で歩く半日",
         "h": "/feature/new-ginza-marunouchi",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
       }
@@ -464,12 +464,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "渋谷・原宿デート5選",
+        "t": "渋谷から表参道へ、半日デートの歩き方。スクランブルから欅並木まで",
         "h": "/feature/new-shibuya-harajuku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       },
       {
-        "t": "中目黒散歩5選",
+        "t": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
         "h": "/feature/new-nakameguro-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/1280px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
       }
@@ -597,7 +597,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "新宿で時間つぶし5選",
+        "t": "新宿、余った時間を歩く。三つの顔をつなぐさんぽ",
         "h": "/feature/new-shinjuku-time",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg/1280px-Shinjuku_Gyoen_National_Garden%2C_Tokyo%2C_20240822_1447_5457.jpg"
       }
@@ -733,7 +733,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "六本木・港区夜景5選",
+        "t": "六本木・港区、夜景を上から下から味わう半日コース",
         "h": "/feature/new-roppongi-night",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo_Midtown_main.jpg/1280px-Tokyo_Midtown_main.jpg"
       }
@@ -861,7 +861,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "銀座・丸の内デート5選",
+        "t": "銀座から丸の内へ、二人で歩く半日",
         "h": "/feature/new-ginza-marunouchi",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ginza_Place_20241021.jpg/1280px-Ginza_Place_20241021.jpg"
       }
@@ -993,7 +993,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "裏原宿5選",
+        "t": "裏原宿で外さない古着とストリートの目利きスポット。表参道の裏を掘る",
         "h": "/feature/new-harajuku-backstreet",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
       }

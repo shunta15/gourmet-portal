@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const NEW_GUIDE_FEATURES_5: Feature[] = [
   {
@@ -157,12 +157,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "中目黒散歩5選",
+        "t": "中目黒、目黒川を上流へ歩く。桜の季節も、そうでない季節も",
         "h": "/feature/new-nakameguro-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       },
       {
-        "t": "恵比寿・代官山5選",
+        "t": "恵比寿・代官山、午後から夜までのデート半日コース。坂道とおしゃれカフェをつなぐ",
         "h": "/feature/new-ebisu-daikanyama",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       }
@@ -290,12 +290,12 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "中目黒モーニング5選",
+        "t": "中目黒、朝の目黒川を歩く半日コース。週末の早起きで街を独り占めする",
         "h": "/feature/new-nakameguro-morning",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       },
       {
-        "t": "恵比寿・代官山5選",
+        "t": "恵比寿・代官山、午後から夜までのデート半日コース。坂道とおしゃれカフェをつなぐ",
         "h": "/feature/new-ebisu-daikanyama",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Meguro_River_cherry_blossom_2025_April.jpg/1280px-Meguro_River_cherry_blossom_2025_April.jpg"
       }

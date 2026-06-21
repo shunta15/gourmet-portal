@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成（脱テンプレ改修＋画像ビジョン照合 2026-06-20）。
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const CHUBU_FEATURES: Feature[] = [
   {
@@ -182,12 +182,12 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "梅田・中之島 夜景デート5選",
+        "t": "梅田から中之島へ、夜景をつなぐ半日デートコース",
         "h": "/feature/kansai-umeda-night-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nagoya_TV_Tower_2024-07-24.jpg/1280px-Nagoya_TV_Tower_2024-07-24.jpg"
       },
       {
-        "t": "祇園・東山デート5選",
+        "t": "祇園から清水寺へ、京都デートで外さない東山の寄りどころ",
         "h": "/feature/kansai-gion-higashiyama-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg/1280px-Oasis_21_%EF%BC%86_Nagoya_TV_Tower.jpg"
       }

@@ -1,11 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// ═══════════════════════════════════════════════════════
-// 街ガイド特集 第7弾（30本・全国エリア拡張）— 自動生成
-//   画像: Wikimedia Commons（HTTP200確認済み）／スポットは変更なし
-//   2026-06-20 脱テンプレ改修: タイトル/lede/closing/文体/articleType を
-//   4ペルソナで多様化（「5選」「対象は/標準動線/向くコースだ」の定型を撤去）
-// ═══════════════════════════════════════════════════════
+// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
 
 export const NEWGUIDE7_FEATURES: Feature[] = [
   {
@@ -453,12 +448,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       },
       {
-        "t": "天王寺・あべの 子連れ5選。ハルカスからてんしばまで",
+        "t": "天王寺・あべの、子どもと歩く一日。ハルカスの空からてんしばの芝へ",
         "h": "/feature/kansai-tennoji-abeno-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/View_of_Abeno_Harukas_and_Shitenn%C5%8D-ji_five-storied_pagoda_at_dusk%2C_January_2024_%28clone_version%29_-_9978.jpg/1280px-View_of_Abeno_Harukas_and_Shitenn%C5%8D-ji_five-storied_pagoda_at_dusk%2C_January_2024_%28clone_version%29_-_9978.jpg"
       }
@@ -639,12 +634,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "天王寺・あべの 子連れ5選。ハルカスからてんしばまで",
+        "t": "天王寺・あべの、子どもと歩く一日。ハルカスの空からてんしばの芝へ",
         "h": "/feature/kansai-tennoji-abeno-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/View_of_Abeno_Harukas_and_Shitenn%C5%8D-ji_five-storied_pagoda_at_dusk%2C_January_2024_%28clone_version%29_-_9978.jpg/1280px-View_of_Abeno_Harukas_and_Shitenn%C5%8D-ji_five-storied_pagoda_at_dusk%2C_January_2024_%28clone_version%29_-_9978.jpg"
       }
@@ -825,12 +820,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -1011,12 +1006,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -1197,12 +1192,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -1383,12 +1378,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -1569,12 +1564,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "金閣寺・きぬかけの路 観光5選。北山の名刹を巡る",
+        "t": "きぬかけの路、名刹をつなぐ一本道。金閣寺から御室の伽藍へ",
         "h": "/feature/kansai-kinkakuji-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg/1280px-Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg"
       },
       {
-        "t": "河原町・先斗町デート5選。鴨川沿いの夜を歩く",
+        "t": "河原町から先斗町へ、鴨川を歩くデート。台所の市場から夜の花街まで",
         "h": "/feature/kansai-kawaramachi-pontocho-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Wooden_and_bamboo_facades_of_dwellings_with_sudare_in_a_cobbled_street_of_Gion%2C_perspective_effect_with_vanishing_point%2C_Kyoto%2C_Japan.jpg/1280px-Wooden_and_bamboo_facades_of_dwellings_with_sudare_in_a_cobbled_street_of_Gion%2C_perspective_effect_with_vanishing_point%2C_Kyoto%2C_Japan.jpg"
       }
@@ -1755,12 +1750,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "伏見稲荷さんぽ5選。千本鳥居から稲荷山を歩く",
+        "t": "伏見稲荷を歩く。千本鳥居から稲荷山の辻へ、門前へ下りる一日",
         "h": "/feature/kansai-fushimi-inari-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg/1280px-Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg"
       },
       {
-        "t": "河原町・先斗町デート5選。鴨川沿いの夜を歩く",
+        "t": "河原町から先斗町へ、鴨川を歩くデート。台所の市場から夜の花街まで",
         "h": "/feature/kansai-kawaramachi-pontocho-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Wooden_and_bamboo_facades_of_dwellings_with_sudare_in_a_cobbled_street_of_Gion%2C_perspective_effect_with_vanishing_point%2C_Kyoto%2C_Japan.jpg/1280px-Wooden_and_bamboo_facades_of_dwellings_with_sudare_in_a_cobbled_street_of_Gion%2C_perspective_effect_with_vanishing_point%2C_Kyoto%2C_Japan.jpg"
       }
@@ -1941,12 +1936,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "伏見稲荷さんぽ5選。千本鳥居から稲荷山を歩く",
+        "t": "伏見稲荷を歩く。千本鳥居から稲荷山の辻へ、門前へ下りる一日",
         "h": "/feature/kansai-fushimi-inari-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg/1280px-Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg"
       },
       {
-        "t": "金閣寺・きぬかけの路 観光5選。北山の名刹を巡る",
+        "t": "きぬかけの路、名刹をつなぐ一本道。金閣寺から御室の伽藍へ",
         "h": "/feature/kansai-kinkakuji-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg/1280px-Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg"
       }
@@ -2127,12 +2122,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "伏見稲荷さんぽ5選。千本鳥居から稲荷山を歩く",
+        "t": "伏見稲荷を歩く。千本鳥居から稲荷山の辻へ、門前へ下りる一日",
         "h": "/feature/kansai-fushimi-inari-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg/1280px-Fushimi-Inari-Shrine-Senbon-Torii-2018-Luka-Peternel.jpg"
       },
       {
-        "t": "金閣寺・きぬかけの路 観光5選。北山の名刹を巡る",
+        "t": "きぬかけの路、名刹をつなぐ一本道。金閣寺から御室の伽藍へ",
         "h": "/feature/kansai-kinkakuji-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg/1280px-Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg"
       }
@@ -2313,12 +2308,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "三宮・南京町 食べ歩き5選。中華街と商店街をめぐる",
+        "t": "三宮から南京町、食べて歩く神戸さんぽ。商店街と中華街を抜けて",
         "h": "/feature/kansai-sannomiya-nankinmachi-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kobe_Kobe_Chinatown_3.jpg/1280px-Kobe_Kobe_Chinatown_3.jpg"
       },
       {
-        "t": "有馬温泉さんぽ5選。金の湯・銀の湯と湯本坂",
+        "t": "有馬温泉、湯けむりの坂をひと歩き。金の湯から銀の湯へ",
         "h": "/feature/kansai-arima-onsen-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kin-no-yu_Arima_Onsen_2013.jpg/1280px-Kin-no-yu_Arima_Onsen_2013.jpg"
       }
@@ -2499,12 +2494,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "北野異人館デート5選。坂の上の洋館街を歩く",
+        "t": "北野異人館、坂を上って洋館をさんぽ。風見鶏から海の見える高台へ",
         "h": "/feature/kansai-kitano-ijinkan-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg/1280px-Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg"
       },
       {
-        "t": "有馬温泉さんぽ5選。金の湯・銀の湯と湯本坂",
+        "t": "有馬温泉、湯けむりの坂をひと歩き。金の湯から銀の湯へ",
         "h": "/feature/kansai-arima-onsen-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kin-no-yu_Arima_Onsen_2013.jpg/1280px-Kin-no-yu_Arima_Onsen_2013.jpg"
       }
@@ -2685,12 +2680,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "北野異人館デート5選。坂の上の洋館街を歩く",
+        "t": "北野異人館、坂を上って洋館をさんぽ。風見鶏から海の見える高台へ",
         "h": "/feature/kansai-kitano-ijinkan-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg/1280px-Weathercock_House_Kobe_Kitano_Ijinkan_%E9%A2%A8%E8%A6%8B%E9%B6%8F%E3%81%AE%E9%A4%A8%EF%BC%88%E6%97%A7%E3%83%88%E3%83%BC%E3%83%9E%E3%82%B9%E4%BD%8F%E5%AE%85%EF%BC%89.jpg"
       },
       {
-        "t": "三宮・南京町 食べ歩き5選。中華街と商店街をめぐる",
+        "t": "三宮から南京町、食べて歩く神戸さんぽ。商店街と中華街を抜けて",
         "h": "/feature/kansai-sannomiya-nankinmachi-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kobe_Kobe_Chinatown_3.jpg/1280px-Kobe_Kobe_Chinatown_3.jpg"
       }
@@ -2871,12 +2866,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "ならまちさんぽ5選。格子の町家と古寺を歩く",
+        "t": "猿沢池からならまちを歩く。格子と古寺の路地さんぽ",
         "h": "/feature/kansai-naramachi-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bakemono_Gagoze.jpg"
       },
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       }
@@ -3057,12 +3052,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "奈良公園・東大寺 観光5選。大仏と鹿に会う半日",
+        "t": "奈良公園、大仏と鹿のあいだを歩く。駅から東の山手へ半日のさんぽ",
         "h": "/feature/kansai-nara-park-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Todaiji08s3200.jpg/1280px-Todaiji08s3200.jpg"
       },
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       }
@@ -3243,12 +3238,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "熱田神宮 観光5選。杜と庭園をめぐる名古屋南部",
+        "t": "熱田神宮から水辺へ、半日の参詣コース。杜・古墳・庭園をつないで宮の渡しまで",
         "h": "/feature/chubu-atsuta-jingu-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/1280px-Atsuta_Shrine.jpg"
       },
       {
-        "t": "名古屋港 子連れ5選。水族館と港で一日遊ぶ",
+        "t": "名古屋港、海を見せに行く子連れの一日。水族館から港の観覧車へ",
         "h": "/feature/chubu-nagoya-port-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Port_of_Nagoya_Public_Aquarium.jpg/1280px-Port_of_Nagoya_Public_Aquarium.jpg"
       }
@@ -3429,12 +3424,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "名駅さんぽ5選。高層ビルとものづくりの街を歩く",
+        "t": "名駅から則武へ、ものづくりの記憶を歩く。展望台の風から赤レンガの庭へ",
         "h": "/feature/chubu-nagoya-station-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Midland-Square-and-Nagoya-Building-1.jpg/1280px-Midland-Square-and-Nagoya-Building-1.jpg"
       },
       {
-        "t": "名古屋港 子連れ5選。水族館と港で一日遊ぶ",
+        "t": "名古屋港、海を見せに行く子連れの一日。水族館から港の観覧車へ",
         "h": "/feature/chubu-nagoya-port-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Port_of_Nagoya_Public_Aquarium.jpg/1280px-Port_of_Nagoya_Public_Aquarium.jpg"
       }
@@ -3615,12 +3610,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "名駅さんぽ5選。高層ビルとものづくりの街を歩く",
+        "t": "名駅から則武へ、ものづくりの記憶を歩く。展望台の風から赤レンガの庭へ",
         "h": "/feature/chubu-nagoya-station-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Midland-Square-and-Nagoya-Building-1.jpg/1280px-Midland-Square-and-Nagoya-Building-1.jpg"
       },
       {
-        "t": "熱田神宮 観光5選。杜と庭園をめぐる名古屋南部",
+        "t": "熱田神宮から水辺へ、半日の参詣コース。杜・古墳・庭園をつないで宮の渡しまで",
         "h": "/feature/chubu-atsuta-jingu-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/1280px-Atsuta_Shrine.jpg"
       }
@@ -3801,12 +3796,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -3987,12 +3982,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "中洲・川端 食べ歩き5選。屋台と商店街をめぐる夜",
+        "t": "中洲・川端、夕暮れから屋台までを歩く。櫛田神社の鈴から那珂川の灯りへ",
         "h": "/feature/kyushu-nakasu-kawabata-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nakasu_Yatai_Stalls_%2819979437930%29.jpg/1280px-Nakasu_Yatai_Stalls_%2819979437930%29.jpg"
       },
       {
-        "t": "大濠公園 子連れ5選。池と緑で一日過ごす福岡",
+        "t": "大濠公園で過ごす子連れ半日。池の散策から動物園へ",
         "h": "/feature/kyushu-ohori-park-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%C5%8Chori_Park_The_pergola_in_Matsushima_%C5%8Chori-k%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_20260514.jpg/1280px-%C5%8Chori_Park_The_pergola_in_Matsushima_%C5%8Chori-k%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_20260514.jpg"
       }
@@ -4173,12 +4168,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "天神さんぽ5選。地下街と公園が混ざる福岡の中心",
+        "t": "天神で立ち寄りたい、地下と緑の5か所。地下街から那珂川の芝生まで",
         "h": "/feature/kyushu-tenjin-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG/1280px-%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG"
       },
       {
-        "t": "大濠公園 子連れ5選。池と緑で一日過ごす福岡",
+        "t": "大濠公園で過ごす子連れ半日。池の散策から動物園へ",
         "h": "/feature/kyushu-ohori-park-family",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%C5%8Chori_Park_The_pergola_in_Matsushima_%C5%8Chori-k%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_20260514.jpg/1280px-%C5%8Chori_Park_The_pergola_in_Matsushima_%C5%8Chori-k%C5%8Den_Ch%C5%AB%C5%8D-ku_Fukuoka_20260514.jpg"
       }
@@ -4359,12 +4354,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "天神さんぽ5選。地下街と公園が混ざる福岡の中心",
+        "t": "天神で立ち寄りたい、地下と緑の5か所。地下街から那珂川の芝生まで",
         "h": "/feature/kyushu-tenjin-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG/1280px-%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG"
       },
       {
-        "t": "中洲・川端 食べ歩き5選。屋台と商店街をめぐる夜",
+        "t": "中洲・川端、夕暮れから屋台までを歩く。櫛田神社の鈴から那珂川の灯りへ",
         "h": "/feature/kyushu-nakasu-kawabata-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nakasu_Yatai_Stalls_%2819979437930%29.jpg/1280px-Nakasu_Yatai_Stalls_%2819979437930%29.jpg"
       }
@@ -4545,12 +4540,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "天神さんぽ5選。地下街と公園が混ざる福岡の中心",
+        "t": "天神で立ち寄りたい、地下と緑の5か所。地下街から那珂川の芝生まで",
         "h": "/feature/kyushu-tenjin-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG/1280px-%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92.JPG"
       },
       {
-        "t": "中洲・川端 食べ歩き5選。屋台と商店街をめぐる夜",
+        "t": "中洲・川端、夕暮れから屋台までを歩く。櫛田神社の鈴から那珂川の灯りへ",
         "h": "/feature/kyushu-nakasu-kawabata-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nakasu_Yatai_Stalls_%2819979437930%29.jpg/1280px-Nakasu_Yatai_Stalls_%2819979437930%29.jpg"
       }
@@ -4731,12 +4726,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
@@ -4917,12 +4912,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "すすきの夜景デート5選。展望台とネオンの街を歩く",
+        "t": "すすきの、灯りを継いで歩く夜のデート。展望台からネオン、そして山頂へ",
         "h": "/feature/hokkaido-susukino-night-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nakajima_Park_Sapporo03bs5s4272.jpg/1280px-Nakajima_Park_Sapporo03bs5s4272.jpg"
       },
       {
-        "t": "小樽運河デート5選。ガス灯と硝子の街を歩く",
+        "t": "小樽運河から堺町通りへ、ガス灯の半日デートコース",
         "h": "/feature/hokkaido-otaru-canal-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Otaru_Canal_HDR1.jpg/1280px-Otaru_Canal_HDR1.jpg"
       }
@@ -5103,12 +5098,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "札幌・大通公園さんぽ5選。時計台とレンガ庁舎を歩く",
+        "t": "札幌の中心を歩く朝さんぽ。二条市場の湯気からテレビ塔の眺めへ",
         "h": "/feature/hokkaido-sapporo-odori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Former_Hokkaido_Government_Office_Building_%28Red_Brick_Office%29.jpg/1280px-Former_Hokkaido_Government_Office_Building_%28Red_Brick_Office%29.jpg"
       },
       {
-        "t": "小樽運河デート5選。ガス灯と硝子の街を歩く",
+        "t": "小樽運河から堺町通りへ、ガス灯の半日デートコース",
         "h": "/feature/hokkaido-otaru-canal-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Otaru_Canal_HDR1.jpg/1280px-Otaru_Canal_HDR1.jpg"
       }
@@ -5289,12 +5284,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "札幌・大通公園さんぽ5選。時計台とレンガ庁舎を歩く",
+        "t": "札幌の中心を歩く朝さんぽ。二条市場の湯気からテレビ塔の眺めへ",
         "h": "/feature/hokkaido-sapporo-odori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Former_Hokkaido_Government_Office_Building_%28Red_Brick_Office%29.jpg/1280px-Former_Hokkaido_Government_Office_Building_%28Red_Brick_Office%29.jpg"
       },
       {
-        "t": "すすきの夜景デート5選。展望台とネオンの街を歩く",
+        "t": "すすきの、灯りを継いで歩く夜のデート。展望台からネオン、そして山頂へ",
         "h": "/feature/hokkaido-susukino-night-date",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nakajima_Park_Sapporo03bs5s4272.jpg/1280px-Nakajima_Park_Sapporo03bs5s4272.jpg"
       }
@@ -5475,12 +5470,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "宮島・厳島神社 観光5選。大鳥居と弥山を歩く",
+        "t": "宮島、潮と原始林を歩く。大鳥居から弥山の頂へ",
         "h": "/feature/chugoku-miyajima-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg/1280px-Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg"
       },
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       }
@@ -5661,12 +5656,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "広島・平和記念公園 観光5選。歴史と庭園、本通を歩く",
+        "t": "広島・平和記念公園、慰霊と歴史をたどる街歩き。ドームから本通へ",
         "h": "/feature/chugoku-hiroshima-peace-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Genbaku_Dome04-r.JPG/1280px-Genbaku_Dome04-r.JPG"
       },
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       }
@@ -5847,12 +5842,12 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "難波・道頓堀 食べ歩き5選。グリコサインから法善寺横丁まで",
+        "t": "難波から道頓堀へ、食い倒れを歩く。黒門市場の昼から法善寺横丁の夜まで",
         "h": "/feature/kansai-namba-dotonbori-walk",
         "img": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Neon_sign_of_Dotonbori_daytime.JPG"
       },
       {
-        "t": "新世界・通天閣 観光5選。レトロな下町を歩く半日",
+        "t": "新世界・通天閣 下町半日コース。塔の足元から路地、湯けむりへ",
         "h": "/feature/kansai-shinsekai-tsutenkaku",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tsutenkaku%2C_Osaka.jpg/1280px-Tsutenkaku%2C_Osaka.jpg"
       }
