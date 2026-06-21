@@ -287,7 +287,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
           A.subtitle,
           "編集部厳選",
           A.kicker,
-          isSinglePoint ? "5 POINTS" : "厳選五選",
+          isSinglePoint ? `${A.ranking.length} POINTS` : `厳選${A.ranking.length}スポット`,
           "2026年 春号",
         ]}
       />
