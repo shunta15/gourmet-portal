@@ -1,0 +1,25 @@
+{
+  "id": "hyogo-takarazuka-hananomichi",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "花のみち",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/452.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "宝塚大劇場",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/453.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "宝塚市立手塚治虫記念館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/454.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "宝塚神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/455.jpg"
+    }
+  ]
+}

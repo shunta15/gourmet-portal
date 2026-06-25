@@ -1,0 +1,30 @@
+{
+  "id": "kagoshima-kirishima",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "霧島神宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/720.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "高千穂峰",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/721.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "丸尾滝",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/722.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "霧島温泉郷（丸尾温泉）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/723.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "えびの高原",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/724.jpg"
+    }
+  ]
+}

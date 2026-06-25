@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEWGUIDE7_FEATURES: Feature[] = [
   {
@@ -127,7 +127,7 @@ export const NEWGUIDE7_FEATURES: Feature[] = [
     "kicker": "NARA PARK WALK",
     "title": "奈良公園、大仏と鹿のあいだを歩く。駅から東の山手へ半日のさんぽ",
     "sub": "近鉄奈良駅を出てすぐ、興福寺の五重塔が目印になる。鹿の鳴き声と参道の砂利を踏む音を連れて、東大寺・春日大社・若草山へ。世界遺産と野生の鹿が同じ地続きにある、奈良の東側を歩く話。",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Todaiji08s3200.jpg/1280px-Todaiji08s3200.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dsc02061_2_Jpg_%28154357787%29.jpeg/1280px-Dsc02061_2_Jpg_%28154357787%29.jpeg"
   },
   {
     "id": "kansai-naramachi-walk",
@@ -136,7 +136,7 @@ export const NEWGUIDE7_FEATURES: Feature[] = [
     "kicker": "NARAMACHI WALK",
     "title": "猿沢池からならまちを歩く。格子と古寺の路地さんぽ",
     "sub": "猿沢池の水面から元興寺の古瓦へ、そして格子の家・御霊神社・奈良町資料館へ。奈良公園のひと筋裏、生活の匂いが残る旧市街をゆっくりたどる一日の覚え書き。",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bakemono_Gagoze.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Five-storied_pagoda_of_the_Kofuku-Ji_Temple_and_the_Historic_Pond_called_Sarusaw-ike_%28NBY_7128%29.jpg"
   },
   {
     "id": "chubu-nagoya-station-walk",
@@ -547,7 +547,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "昼食はここで。新世界発祥といわれる串カツの総本店で味わう",
         "desc": "1929年（昭和4年）創業と伝わる串カツの老舗で、新世界に複数ある「だるま」の総本店にあたる。カウンター中心のこぢんまりした店構えながら、薄づきの衣をさっと揚げた串カツは新世界の食文化を語るうえで外せない一皿だ。卓上の共用ソースは「二度漬け禁止」が鉄の掟で、一度くぐらせたら衣に染みたソースだけで食べきるのが流儀。これは衛生を保つために生まれた新世界共通のルールで、初めてでも店の張り紙どおりにすれば戸惑わない。看板には強面の人物像が掲げられ、新世界らしい押し出しの強さも名物になっている。昼どきや休日は行列ができやすいので、時間に余裕をもって並びたい。メニューや価格は変わることがあるため、最新情報は公式サイトで確認を。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kushikatsu_Tanaka_America-Mura.jpg/1280px-Kushikatsu_Tanaka_America-Mura.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dotonbori_Street%2C_Osaka_Prefecture%3B_November_2013_%2807%29.jpg/1280px-Dotonbori_Street%2C_Osaka_Prefecture%3B_November_2013_%2807%29.jpg"
         ],
         "specs": [
           {
@@ -702,7 +702,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "昼に立ち寄る。広い芝生で子どもを放し、ここで昼食をとる",
         "desc": "天王寺駅から動物園・美術館へ向かう入口に広がる、約7,000平方メートルの芝生広場を中心としたエリア。カフェやレストラン、コンビニ、屋内外の有料あそび場「ボーネルンド プレイヴィル」などが芝生を囲み、子どもを芝生で遊ばせながら大人が交代で食事や休憩をとれる構成になっている。正面奥にあべのハルカスがそびえ、芝生に寝転ぶと高層ビルと空が同時に視界に入るのがこの場所ならではの眺めだ。動物園・美術館へそのまま歩いて入れる動線上にあり、一日コースの中継地点として使いやすい。開園は朝7時から夜まで（店舗ごとに営業時間が異なる）。各店舗の営業時間は変更される場合があるため、訪問前に公式サイトで確認してほしい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Varied_tit_at_Tenn%C5%8Dji_Park_in_Osaka%2C_January_2016.jpg/1280px-Varied_tit_at_Tenn%C5%8Dji_Park_in_Osaka%2C_January_2016.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Tenshiba_Light-Up_2025-03_1.jpg/1280px-Tenshiba_Light-Up_2025-03_1.jpg"
         ],
         "specs": [
           {
@@ -2706,7 +2706,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "date": "2026-06-13",
     "reading": "約8分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Todaiji08s3200.jpg/1280px-Todaiji08s3200.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dsc02061_2_Jpg_%28154357787%29.jpeg/1280px-Dsc02061_2_Jpg_%28154357787%29.jpeg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -2717,7 +2717,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "午前のはじめに。駅から最も近い世界遺産で奈良に入る",
         "desc": "近鉄奈良駅から最も近い世界遺産で、奈良観光の入口にちょうどよい。境内には朱色の中金堂や室町期再建の東金堂（国宝）が建ち、国宝館では阿修羅像をはじめとする天平の名仏がまとめて拝める。シンボルの五重塔は現在、明治以来約120年ぶりの保存修理に入り全体を素屋根で覆っているため当面その姿は見られないが、その分だけ仏像群と伽藍の歴史を間近に味わえるのがいまの興福寺だ。中金堂・東金堂・国宝館は個別拝観のほか共通券もある。拝観料や開門時間は変わることがあるため、訪問前に公式サイトで確認を。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/K%C5%8Dfuku-ji_HDSR_IMG_3374.jpg/1280px-K%C5%8Dfuku-ji_HDSR_IMG_3374.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dsc02061_2_Jpg_%28154357787%29.jpeg/1280px-Dsc02061_2_Jpg_%28154357787%29.jpeg"
         ],
         "specs": [
           {
@@ -2748,7 +2748,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "移動しながら出会う。参道沿いで野生の鹿とふれあう",
         "desc": "興福寺から東大寺へ歩く間そのものが、このスポットだ。芝生の広がる園内には約1,000頭以上の鹿が暮らし、参道や売店のそばで鹿せんべいをねだってくる。ここの鹿は餌付けされたペットではなく国の天然記念物に指定された野生動物で、おじぎのような仕草を見せる一方、せんべいを焦らすと噛んだり頭を突いたりすることもある。袋や地図など紙類を口に入れさせない、急に驚かせない、という距離感が楽しむコツだ。園内にゴミ箱はなく、食べ物のゴミは鹿の誤食を防ぐため必ず持ち帰りたい。入園は無料で、東大寺へ向かう動線にそのまま重なる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shika_senbei_2017.jpg/1280px-Shika_senbei_2017.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Sika_deer_in_Nara_Park%2C_November_2016.jpg/1280px-Sika_deer_in_Nara_Park%2C_November_2016.jpg"
         ],
         "specs": [
           {
@@ -2892,7 +2892,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "date": "2026-06-13",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bakemono_Gagoze.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/50/Five-storied_pagoda_of_the_Kofuku-Ji_Temple_and_the_Historic_Pond_called_Sarusaw-ike_%28NBY_7128%29.jpg",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -2934,7 +2934,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "午前から正午に拝観。日本最古の瓦が葺かれた屋根を見上げる",
         "desc": "「古都奈良の文化財」として世界遺産に登録される寺院で、ならまちはこの元興寺のかつての広大な境内に町家が広がってできた一帯だ。見どころは国宝の極楽坊本堂と禅室で、僧坊を改造した堂の屋根の一部には、飛鳥・奈良時代の丸瓦と平瓦が今も葺かれている。丸瓦も平瓦も重ね合わせる「行基葺き」の古式が間近で見られ、現存する日本最古級の瓦として知られる点が、ほかの大寺とは違うこの寺ならではの魅力だ。境内には無数の石仏・石塔を集めた浮図田もあり、秋には萩が彩る。拝観時間は夕方前に受付を終えるため、午前から正午にかけて訪れると落ち着いて見て回れる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bakemono_Gagoze.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Gangoji%2C_koudou-ato.jpg/1280px-Gangoji%2C_koudou-ato.jpg"
         ],
         "specs": [
           {
@@ -2996,7 +2996,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "午後に参拝。狛犬の足止め祈願と縁結びにふれる",
         "desc": "ならまちで古くから「ごりょうさん」と親しまれる神社で、約1200年前に創建されたと伝わる。南門両脇の狛犬の足元には、家出人の足止まりや縁結び、商売繁盛を願って赤い紐を結ぶ「狛犬の足止め祈願」の風習があり、無数の紐が結ばれた光景はこの神社ならではのものだ。境内には縁結びで知られる末社・出世稲荷神社もあり、ならまちで最も親しまれる縁結びの社として参拝者を集めてきた。格子の町家が続く路地の途中に静かに鎮座し、街歩きの動線に自然に組み込みやすい。拝観は無料で、夕方には閉まるため日のあるうちに立ち寄りたい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Goryou_jinnja_002.jpg/1280px-Goryou_jinnja_002.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20160801_Goryo-jinja.jpg/1280px-20160801_Goryo-jinja.jpg"
         ],
         "specs": [
           {
@@ -3151,7 +3151,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "駅の西側へ。季節ごとに衣装が変わる待ち合わせの目印を見る",
         "desc": "名古屋駅の太閤通口側、長くこの街の待ち合わせの目印として親しまれてきた高さ6mあまりの巨大マネキン人形だ。季節やイベントごとに大きな衣装が着せ替えられるのが特徴で、訪れるたびに装いが違う。足元にあった名鉄百貨店本店は2026年2月末で営業を終えたが、ナナちゃん人形自体は現在地に残ることが発表されており、運営は名古屋鉄道へ引き継がれ、周辺の通りと合わせて引き続き名駅のアイコンであり続ける。展望台から西の産業エリアへ歩く途中の、ちょうどよい中継点になる。衣装やイベントは時期で変わるため、最新情報は公式の告知で確認を。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/%E3%83%8A%E3%83%8A%E3%81%A1%E3%82%83%E3%82%93%E4%BA%BA%E5%BD%A2_%E5%90%8D%E9%89%84WAO_20250201_1831-2.jpg/1280px-%E3%83%8A%E3%83%8A%E3%81%A1%E3%82%83%E3%82%93%E4%BA%BA%E5%BD%A2_%E5%90%8D%E9%89%84WAO_20250201_1831-2.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/A_big_mannequin_in_Japan..jpg/1280px-A_big_mannequin_in_Japan..jpg"
         ],
         "specs": [
           {
@@ -3389,37 +3389,6 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
           }
         ],
         "transit": "地下鉄熱田神宮西駅 徒歩約10分"
-      },
-      {
-        "rank": "SPOT 05",
-        "rankNum": 5,
-        "name": "宮の渡し公園",
-        "cuisine": "公園",
-        "area": "名古屋市熱田区・内田町",
-        "purpose": "夕方に下りる。旧東海道の渡し場跡で水辺の景色を眺める",
-        "desc": "東海道五十三次のうち、宮宿（熱田）と桑名宿を海路で結んだ「七里の渡し」の船着場があった場所を整備した、堀川沿いの水辺の公園。東海道で唯一の海上ルートだったこの渡しは、伊勢へ向かう旅人が船を乗り降りした要所で、ここが熱田が宿場町として栄えた歴史の舞台であることを物語る。園内には湊を照らした常夜灯や時を告げた鐘が復元され、当時の旅情をしのばせる。神宮・古墳・庭園と内陸の歴史をたどってきた一日を、海へ開けた水辺で締めくくれるのがこのコースの妙味だ。屋根のない屋外のため、夕暮れどきは風や冷え込みに備えたい。",
-        "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%E5%AE%AE%E3%81%AE%E6%B8%A1%E3%81%97%E5%85%AC%E5%9C%92%E3%81%AE%E4%BC%8A%E5%8B%A2%E6%B9%BE%E5%8F%B0%E9%A2%A8%E3%81%AE%E8%AA%AC%E6%98%8E%E3%83%91%E3%83%8D%E3%83%AB_-_2.jpg/1280px-%E5%AE%AE%E3%81%AE%E6%B8%A1%E3%81%97%E5%85%AC%E5%9C%92%E3%81%AE%E4%BC%8A%E5%8B%A2%E6%B9%BE%E5%8F%B0%E9%A2%A8%E3%81%AE%E8%AA%AC%E6%98%8E%E3%83%91%E3%83%8D%E3%83%AB_-_2.jpg"
-        ],
-        "specs": [
-          {
-            "k": "最寄り駅",
-            "v": "地下鉄伝馬町駅 徒歩約10分"
-          },
-          {
-            "k": "料金",
-            "v": "無料"
-          },
-          {
-            "k": "雨の日",
-            "v": "✕ 屋外の水辺。傘が必要"
-          },
-          {
-            "k": "おすすめ時間",
-            "v": "夕方（夕景・常夜灯）"
-          }
-        ],
-        "transit": "地下鉄伝馬町駅 徒歩約10分"
       }
     ],
     "sideArticles": [
@@ -5786,7 +5755,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "午後に参拝。縁結びの神様と境内の風情を味わう",
         "desc": "約1500年前の創建と伝わる、川越の総鎮守。祀られる五柱の神々に二組の夫婦神が含まれることから、古くから縁結びの神様として信仰を集めてきた。境内では一日20体限定で授与される「縁結び玉」が知られ、参拝後に手にする人も多い。夏には約2000個の江戸風鈴が境内を彩る祭事「縁むすび風鈴」が開かれ、夕方の風鈴回廊のライトアップが川越の夏の風物詩になっている（開催期間は年により異なる）。一番街から北東へやや歩くため、町並みと横丁を回ったあと午後に訪れる動線が組みやすい。風鈴など季節の祭事や授与品の日程・数量は変わることがあるため、訪問前に公式サイトで確認を。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kawagoe_Hikawa_Shrine%2C_Kawagoe_City%3B_December_2019_%2810%29.jpg/1280px-Kawagoe_Hikawa_Shrine%2C_Kawagoe_City%3B_December_2019_%2810%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/2/21/HikawaJinjaKawagoe20131014.jpg"
         ],
         "specs": [
           {

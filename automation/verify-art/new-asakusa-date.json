@@ -1,0 +1,30 @@
+{
+  "id": "new-asakusa-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "雷門・仲見世通り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-asakusa-date__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "浅草寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-asakusa-date__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "隅田川テラス・吾妻橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-asakusa-date__3__4.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "浅草花やしき",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-asakusa-date__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "浅草ホッピー通り・馬道通り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-asakusa-date__5__1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osaka-sumiyoshi-taisha-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "住吉鳥居前駅（阪堺電車）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/433.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "反橋（太鼓橋）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/434.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "住吉大社 本宮・五所御前",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/435.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "住吉公園・住吉高燈籠",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/436.jpg"
+    }
+  ]
+}

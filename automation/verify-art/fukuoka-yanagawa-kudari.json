@@ -1,0 +1,30 @@
+{
+  "id": "fukuoka-yanagawa-kudari",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "柳川の掘割（どんこ舟の川下り）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/504.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "三柱神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/505.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "柳川藩主立花邸 御花",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/506.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "北原白秋生家・記念館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/507.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "沖端水天宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/508.jpg"
+    }
+  ]
+}

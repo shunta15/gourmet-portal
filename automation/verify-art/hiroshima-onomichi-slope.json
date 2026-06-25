@@ -1,0 +1,25 @@
+{
+  "id": "hiroshima-onomichi-slope",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "千光寺山ロープウェイ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/517.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "千光寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/518.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "猫の細道",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/519.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "浄土寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/520.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "kyushu-tenjin-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "天神地下街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/369.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "警固神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/370.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "新天町商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/371.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "アクロス福岡（ステップガーデン）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/372.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "天神中央公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/373.jpg"
+    }
+  ]
+}

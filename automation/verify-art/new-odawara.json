@@ -1,0 +1,30 @@
+{
+  "id": "new-odawara",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "小田原城",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-odawara__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "小田原かまぼこの里（鈴廣）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-odawara__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "小田原宿なりわい交流館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-odawara__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "小田原漁港（早川港）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-odawara__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "小田原文学館・白秋童謡館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-odawara__5__4.jpg"
+    }
+  ]
+}

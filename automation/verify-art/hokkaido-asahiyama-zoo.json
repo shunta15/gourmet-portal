@@ -1,0 +1,25 @@
+{
+  "id": "hokkaido-asahiyama-zoo",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "旭山動物園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/513.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "旭川市科学館サイパル",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/514.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "常磐公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/515.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "旭橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/516.jpg"
+    }
+  ]
+}

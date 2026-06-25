@@ -1,0 +1,30 @@
+{
+  "id": "chubu-nagoya-station-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "ミッドランドスクエア 屋外展望台 スカイプロムナード",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/349.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "JRセントラルタワーズ 15階 スカイストリート",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/350.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "ナナちゃん人形",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/351.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "ノリタケの森",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/352.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "トヨタ産業技術記念館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/353.jpg"
+    }
+  ]
+}

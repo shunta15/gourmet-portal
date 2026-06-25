@@ -1,0 +1,30 @@
+{
+  "id": "kansai-expo-park-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "太陽の塔",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/299.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "万博記念公園 自然文化園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/300.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "ニフレル（NIFREL）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/301.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "ららぽーとEXPOCITY",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/302.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "国立民族学博物館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/303.jpg"
+    }
+  ]
+}

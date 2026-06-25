@@ -1,0 +1,30 @@
+{
+  "id": "kansai-arima-onsen-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "有馬本温泉 金の湯",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/334.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "湯本坂",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/335.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "温泉寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/336.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "炭酸泉源公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/337.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "有馬温泉 銀の湯",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/338.jpg"
+    }
+  ]
+}

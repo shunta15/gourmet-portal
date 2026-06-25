@@ -1,0 +1,30 @@
+{
+  "id": "new-enoshima-evening-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "江ノ島シーキャンドル（江の島展望灯台）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-enoshima-evening-date__1__3.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "稚児ヶ淵",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/080.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "江ノ島岩屋洞窟",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/081.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "江ノ島弁天仲見世通り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-enoshima-evening-date__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "湘南港（ヨットハーバー）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-enoshima-evening-date__5__1.jpg"
+    }
+  ]
+}

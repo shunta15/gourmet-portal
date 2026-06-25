@@ -1,0 +1,30 @@
+{
+  "id": "new-nakameguro-morning",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "目黒川沿い散歩（中目黒〜池尻大橋）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "スターバックスリザーブロースタリー東京",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/250.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "中目黒高架下（東横線高架下）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "中目黒〜代官山の徒歩ルート",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__4__3.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "池尻大橋〜三宿方向のカフェエリア",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-morning__5__2.jpg"
+    }
+  ]
+}

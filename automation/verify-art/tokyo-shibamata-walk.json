@@ -1,0 +1,30 @@
+{
+  "id": "tokyo-shibamata-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "帝釈天参道（神明会）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/541.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "柴又帝釈天（題経寺）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/542.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "山本亭",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/543.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "矢切の渡し",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/544.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "葛飾柴又寅さん記念館・山田洋次ミュージアム",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/545.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "kansai-naramachi-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "猿沢池",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/344.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "元興寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/345.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "ならまち格子の家",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/346.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "御霊神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/347.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "奈良町資料館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/348.jpg"
+    }
+  ]
+}

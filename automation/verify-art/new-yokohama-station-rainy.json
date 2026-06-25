@@ -1,0 +1,30 @@
+{
+  "id": "new-yokohama-station-rainy",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "そごう横浜店",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-bored__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "横浜ポルタ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "横浜ジョイナス",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "横浜モアーズ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "横浜高島屋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-station-rainy__5__2.jpg"
+    }
+  ]
+}

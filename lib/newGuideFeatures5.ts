@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEW_GUIDE_FEATURES_5: Feature[] = [
   {
@@ -19,7 +19,7 @@ export const NEW_GUIDE_FEATURES_5: Feature[] = [
     "kicker": "JIYUGAOKA SWEETS",
     "title": "自由が丘、甘い路地を歩く。モンブラン発祥の街を、一個ずつ食べながら下っていく",
     "sub": "モンブラン発祥の街で、ショーケースを覗き、路地裏の小さな店主と言葉を交わし、緑道のベンチでひと口かじる。半径500mに甘い香りが溜まった自由が丘を、ただ気ままに歩いた随筆。",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mont_blanc_jiyugaoka_tokyo_2014.JPG/1280px-Mont_blanc_jiyugaoka_tokyo_2014.JPG"
   },
   {
     "id": "new-toyosu-lunch",
@@ -183,7 +183,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
     "date": "2026-05-15",
     "reading": "約7分",
     "author": "マチノワ編集部",
-    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mont_blanc_jiyugaoka_tokyo_2014.JPG/1280px-Mont_blanc_jiyugaoka_tokyo_2014.JPG",
     "ranking": [
       {
         "rank": "SPOT 01",
@@ -194,7 +194,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "日本のモンブラン文化発祥の老舗。1933年創業",
         "desc": "自由が丘駅正面口から徒歩2〜5分の中心区画には、フランス菓子の老舗・新進気鋭のパティシエの店・大手チェーンの旗艦店が並ぶ。「複数のパティスリーで食べ比べしたい」「手土産候補を多めに見たい」目的に最適。1個400〜800円のケーキ、1箱2,000〜5,000円のショコラ詰め合わせなど、価格帯と方向性が違う店を5〜10分ずつ覗いて回れる距離感。ショーケース観察だけでも目の保養になり、購入は気に入った1〜2店に絞るのが現実的。土日午後は混雑して購入待ちが10〜20分発生することがあり、平日午後または週末午前が落ち着いて選べる時間帯。夕方17時前後は売切れが増えるので、お目当てがあれば早めに来店。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/40000kei_Jiy%C5%ABgaoka_station_train_door.jpg/1280px-40000kei_Jiy%C5%ABgaoka_station_train_door.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Mont_blanc_jiyugaoka_tokyo_2014.JPG/1280px-Mont_blanc_jiyugaoka_tokyo_2014.JPG"
         ],
         "specs": [
           {
@@ -216,7 +216,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "エリア内のスイーツ複合施設は変わりやすい。最新情報を確認",
         "desc": "自由が丘スイーツフォレストは2003年開業の屋内型スイーツテーマパークだったが、2023年5月に閉業した。「過去にあった有名スポットを知りたい」歴史的興味の対象として記載。現在は跡地が他の商業施設として再開発中、訪問はできない。代替として、自由が丘駅前の個人パティスリー街・路地散歩エリアを回るのが現実的。「自由が丘＝スイーツの街」というブランドを支えた施設だったため、その文脈を知って訪れると街への理解が深まる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/EL-Light_%28OLED%29_1.jpg/1280px-EL-Light_%28OLED%29_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Jiyugaoka_Station_Tokyo_2026.jpg/1280px-Jiyugaoka_Station_Tokyo_2026.jpg"
         ],
         "specs": [
           {
@@ -238,7 +238,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "駅周辺に複数の独立系パティスリーが集まる",
         "desc": "自由が丘駅周辺の路地（駅正面口から徒歩5〜10分）には、観光客が少ない個人経営のパティスリーが点在する。「店主と話しながらスイーツを選びたい」「観光客の少ない店でゆっくり選びたい」目的に最適。店内席数が10席前後の小箱が多く、テイクアウト中心の店もあれば、店内で焼きたてを食べさせる店もある。1個500〜1,200円、店主が直接焼いているケースが多く、素材と季節の話を聞きながら選べる。店舗の定休日が独特だったり午前のみ営業だったりすることもあるので、事前に営業日を確認すると無駄足が減る。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jiyugaoka_Sta.%27s_LED_and_OLED_Lighting.jpg/1280px-Jiyugaoka_Sta.%27s_LED_and_OLED_Lighting.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Jiyugaoka_Station%2C_Meguro.jpg/1280px-Jiyugaoka_Station%2C_Meguro.jpg"
         ],
         "specs": [
           {
@@ -545,7 +545,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_5: Record<string, FeatureArticle> = {
         "purpose": "甲州街道の宿場町として栄えた八王子の歴史を歩く",
         "desc": "石川宿は八王子市石川町、旧甲州街道の宿場町の名残が残るエリア。「旧甲州街道の歴史を歩きたい」「観光地化されていない宿場町跡を見たい」歴史好きに向く。現在は住宅街として再整備されているが、旧宿場町の道幅・街路樹・古い住居がところどころに残る。JR八王子駅からバスで約15分、または徒歩約30分。観光案内所はないので、Googleマップで散歩コースを事前に決めて訪れるのが現実的。1〜2時間の散策で、八王子の歴史的な顔を体感できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Takao_hike_in_January.jpg/1280px-Mount_Takao_hike_in_January.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hachioji_station%2C_evening_2.jpg/1280px-Hachioji_station%2C_evening_2.jpg"
         ],
         "specs": [
           {

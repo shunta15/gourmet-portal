@@ -1,0 +1,30 @@
+{
+  "id": "hokkaido-sapporo-odori-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "二条市場",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/394.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "大通公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/395.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "札幌市時計台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/396.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "北海道庁旧本庁舎（赤れんが庁舎）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/397.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "さっぽろテレビ塔",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/398.jpg"
+    }
+  ]
+}

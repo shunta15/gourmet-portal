@@ -1,0 +1,30 @@
+{
+  "id": "new-yokosuka-dobuita",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "どぶ板通り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__1__4.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "猿島（東京湾唯一の無人島）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "三笠公園・戦艦三笠",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "ヴェルニー公園（横須賀港ビュー）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "横須賀美術館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokosuka-dobuita__5__1.jpg"
+    }
+  ]
+}

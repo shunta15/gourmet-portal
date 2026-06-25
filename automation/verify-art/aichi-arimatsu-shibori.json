@@ -1,0 +1,30 @@
+{
+  "id": "aichi-arimatsu-shibori",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "有松の古い町並み",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/484.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "有松・鳴海絞会館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/485.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "服部家住宅（井桁屋）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/486.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "有松天満社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/487.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "桶狭間古戦場公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/488.jpg"
+    }
+  ]
+}

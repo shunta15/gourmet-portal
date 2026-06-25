@@ -1,0 +1,30 @@
+{
+  "id": "new-ueno-museum",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "東京国立博物館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-rainy__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "上野動物園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__1__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "上野公園・花見エリア",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__3__3.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "不忍池・弁天堂",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__4__3.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "アメ横商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ueno-museum__5__1.jpg"
+    }
+  ]
+}

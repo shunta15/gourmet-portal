@@ -1,0 +1,30 @@
+{
+  "id": "new-toyosu-lunch",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "豊洲市場 飲食棟（江戸前場外 千客万来）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-toyosu-lunch__1__4.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "豊洲市場 見学ルート",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/260.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "チームラボ プラネッツ TOKYO（豊洲）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-toyosu-lunch__3__4.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "アーバンドック ららぽーと豊洲",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-toyosu-lunch__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "豊洲ぐるり公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-toyosu-lunch__5__1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "new-minatomirai-rainy-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "カップヌードルミュージアム 横浜",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__1__4.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "横浜美術館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "マークイズみなとみらい",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "横浜ランドマークタワー スカイガーデン",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "YOKOHAMA AIR CABIN",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-minatomirai-rainy-date__5__1.jpg"
+    }
+  ]
+}

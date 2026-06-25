@@ -1,0 +1,30 @@
+{
+  "id": "new-tokyo-first-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "浅草・仲見世通り→浅草寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "東京スカイツリー天望デッキ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/195.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "お台場海浜公園（夜景）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "銀座ディナー・GINZA SIX",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ginza-gallery__1__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "新宿（締め・バー）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-first-date__5__1.jpg"
+    }
+  ]
+}

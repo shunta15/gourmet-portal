@@ -1,0 +1,30 @@
+{
+  "id": "chubu-sakae-osu-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "中部電力 MIRAI TOWER",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/chubu-sakae-osu-date__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "オアシス21",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/chubu-sakae-osu-date__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "久屋大通公園（Hisaya-odori Park）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/chubu-sakae-osu-date__3__4.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "大須商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/chubu-sakae-osu-date__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "大須観音",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/chubu-sakae-osu-date__5__1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "new-noge-bar-hop",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "都橋商店街（野毛小路）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "野毛大道芸エリア（野毛本通り）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__2__2.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "日ノ出町ガード下",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-noge-bar-hop__3__2.jpg"
+    }
+  ]
+}

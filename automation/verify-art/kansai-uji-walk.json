@@ -1,0 +1,30 @@
+{
+  "id": "kansai-uji-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "宇治橋通り商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/319.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "平等院",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/320.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "朝霧橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/321.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "宇治上神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/322.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "宇治市源氏物語ミュージアム",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/323.jpg"
+    }
+  ]
+}

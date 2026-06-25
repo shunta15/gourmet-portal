@@ -1,0 +1,30 @@
+{
+  "id": "kyushu-kagoshima-tenmonkan",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "湯之平展望所",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/389.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "仙巌園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/390.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "城山展望台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/391.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "天文館商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/392.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "桜島フェリー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/393.jpg"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gunma-tomioka-silk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "諏訪神社（富岡）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/652.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "富岡製糸場 東置繭所",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/653.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "富岡製糸場 繰糸所",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/654.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "一之宮貫前神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/655.jpg"
+    }
+  ]
+}

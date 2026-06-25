@@ -1,0 +1,30 @@
+{
+  "id": "kansai-osaka-castle-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "JO-TERRACE OSAKA",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/289.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "極楽橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/290.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "大阪城天守閣",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/291.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "大阪城 豊國神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/292.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "西の丸庭園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/293.jpg"
+    }
+  ]
+}

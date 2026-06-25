@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEW_GUIDE_FEATURES: Feature[] = [
   {
@@ -3022,7 +3022,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "島の入口から続く参道。たこせん・しらす丼の食べ歩き",
         "desc": "片瀬海岸（江の島本土側の海岸）から見る夕暮れの富士山のシルエットは湘南を代表する絶景。夕方の時間帯（16〜18時頃）に江の島で過ごすように時間を調整するのが賢い計画。片瀬海岸西浜・東浜の両側に分かれ、両側から江の島を眺める構図が違う。片瀬江ノ島駅から徒歩すぐ、江ノ島駅からも徒歩10分。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Benzaiten_Nakamise_Street.jpg/1280px-Benzaiten_Nakamise_Street.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Enoshima_Island.jpg/1280px-Enoshima_Island.jpg"
         ],
         "specs": [
           {
@@ -3501,7 +3501,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "子連れで立ち寄れる公共施設。図書館の絵本コーナーが広い",
         "desc": "中原市民館・中原図書館は武蔵小杉駅から徒歩約5分、川崎市中原区の公共施設。「子供と一緒に本を読みたい」「無料で半日過ごしたい」家族に向く。1〜5階に図書館・市民学習室・市民ホール・キッズスペースが入る複合施設。営業時間9〜21時（図書館は施設により異なる、公式で確認）、入場無料。雨の日の屋内シェルターとしても優秀で、子連れの長時間滞在に対応する設計。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/LAZONAkawasaki_001.jpg/1280px-LAZONAkawasaki_001.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E6%9D%B1%E6%80%A5%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%83%BB%E4%B8%AD%E5%8E%9F%E5%9B%B3%E6%9B%B8%E9%A4%A8_-_panoramio.jpg/1280px-%E6%AD%A6%E8%94%B5%E5%B0%8F%E6%9D%89%E6%9D%B1%E6%80%A5%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E3%83%BB%E4%B8%AD%E5%8E%9F%E5%9B%B3%E6%9B%B8%E9%A4%A8_-_panoramio.jpg"
         ],
         "specs": [
           {

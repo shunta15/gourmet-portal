@@ -1,0 +1,30 @@
+{
+  "id": "hokkaido-susukino-night-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "JRタワー展望室T38",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/399.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "さっぽろテレビ塔 展望台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/400.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "すすきの交差点（ニッカウヰスキー大看板）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/401.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "藻岩山山頂展望台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/402.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "中島公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/403.jpg"
+    }
+  ]
+}

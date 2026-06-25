@@ -1,0 +1,30 @@
+{
+  "id": "aichi-okazaki-castle",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "岡崎城",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/697.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "龍城神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/698.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "三河武士のやかた家康館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/699.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "大樹寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/700.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "カクキュー八丁味噌（八丁味噌の郷）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/701.jpg"
+    }
+  ]
+}

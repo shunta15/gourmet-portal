@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEWGUIDE10_FEATURES: Feature[] = [
   {
@@ -245,7 +245,7 @@ export const NEWGUIDE10_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "10:00ごろ。このコースの核心。21躯の仏像が組む立体の曼荼羅の中に立つ",
         "desc": "空海が密教の教えを目に見える形で示そうと構想した堂で、堂内には大日如来を中心に如来・菩薩・明王・天部など21躯の仏像が立体曼荼羅として配置されている。平面の図像ではなく像の群れが空間に並ぶため、どこに立つかで仏どうしの関係が変わって見え、絵解きの図とはまったく違う体験になる。多くが平安時代の作で、密教彫刻の出発点を間近で確かめられるのがこの堂ならではの価値だ。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Kyoto_To-ji_Kodo_Innen_1.jpg/1280px-Kyoto_To-ji_Kodo_Innen_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/View_of_the_Five-storied_Pagoda_from_the_Lotus_Pond%2C_T%C5%8D-ji_Temple%2C_Kyoto%2C_20240821_1015_5226.jpg/1280px-View_of_the_Five-storied_Pagoda_from_the_Lotus_Pond%2C_T%C5%8D-ji_Temple%2C_Kyoto%2C_20240821_1015_5226.jpg"
         ],
         "specs": [
           {
@@ -1179,7 +1179,7 @@ export const NEWGUIDE10_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "眺めるだけでなく、湖を背に空中を滑って稜線の高さを体感する",
         "desc": "山上の森にワイヤーを渡し、滑車にぶら下がって滑空する全6コースのアトラクション。最長区間は169mに及び、眼下に琵琶湖を望みながら飛べるのが立地ならではで、テラスの「見る絶景」とは別の角度から山の高さを体に刻める。風や運行の都合で稼働状況は日々変わり、同じ山上エリアの空中アスレチック施設は時期によって休止・整備が入ることもあるため、挑戦するなら当日の運行案内を先に確認しておきたい。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Biwako_Valley_-_panoramio_%2815%29.jpg/1280px-Biwako_Valley_-_panoramio_%2815%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Biwako_Valley_-_panoramio_%2840%29.jpg/1280px-Biwako_Valley_-_panoramio_%2840%29.jpg"
         ],
         "specs": [
           {

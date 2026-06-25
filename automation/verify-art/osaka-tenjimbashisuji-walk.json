@@ -1,0 +1,20 @@
+{
+  "id": "osaka-tenjimbashisuji-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "天神橋筋商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/430.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "大阪天満宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/431.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "天満天神繁昌亭",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/432.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "new-miura-kaigan",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "三浦海岸",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-miura-kaigan__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "城ヶ島",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-miura-kaigan__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "三崎港・まぐろの食堂街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-miura-kaigan__3__3.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "剱崎（けんざき）灯台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-miura-kaigan__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "三浦海岸 河津桜まつり（1〜2月）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-miura-kaigan__5__1.jpg"
+    }
+  ]
+}

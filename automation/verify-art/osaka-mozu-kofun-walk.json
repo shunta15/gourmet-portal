@@ -1,0 +1,35 @@
+{
+  "id": "osaka-mozu-kofun-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "百舌鳥古墳群ビジターセンター",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/424.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "仁徳天皇陵古墳（大山古墳）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/425.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "大仙公園 日本庭園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/426.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "堺市博物館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/427.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "いたすけ古墳",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/428.jpg"
+    },
+    {
+      "spot": 6,
+      "name": "百舌鳥八幡宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/429.jpg"
+    }
+  ]
+}

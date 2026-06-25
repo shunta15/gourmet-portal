@@ -1,0 +1,30 @@
+{
+  "id": "kansai-kitano-ijinkan-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "風見鶏の館（旧トーマス住宅）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/324.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "萌黄の館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/325.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "北野天満神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/326.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "うろこの家＆展望ギャラリー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/327.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "スターバックス コーヒー 神戸北野異人館店（北野物語館）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/328.jpg"
+    }
+  ]
+}

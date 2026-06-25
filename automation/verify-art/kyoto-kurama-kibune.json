@@ -1,0 +1,30 @@
+{
+  "id": "kyoto-kurama-kibune",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "叡山電車（鞍馬線）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/565.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "鞍馬寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/566.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "鞍馬山（木の根道・奥の院）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/567.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "貴船神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/568.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "貴船川の川床",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/569.jpg"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEW_GUIDE_FEATURES_4: Feature[] = [
   {
@@ -180,7 +180,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_4: Record<string, FeatureArticle> = {
         "purpose": "キャットストリート周辺に点在する個性派古着店を攻略",
         "desc": "表参道交差点から青山1丁目方向に伸びる欅並木の高級住宅街・ブランド街。表参道ヒルズ（安藤忠雄設計）・各国ハイブランド路面店・カフェが並ぶ。裏原宿の古着ハンティングの後、青山方面でハイブランドのウィンドウショッピングをすると価格帯のコントラストで街の構造が見えてくる。夕方17時以降は人波が減り、青山1丁目方向の根津美術館・岡本太郎記念館などの文化施設にも繋がる。11月末〜2月のシャンパンゴールドのイルミネーションは表参道全体が金色に染まる東京屈指の規模。表参道駅から青山1丁目駅まで徒歩15分の距離。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/1_Chome-18_Jing%C5%ABmae%2C_Shibuya-ku%2C_T%C5%8Dky%C5%8D-to_150-0001%2C_Japan_-_panoramio_%281%29.jpg/1280px-1_Chome-18_Jing%C5%ABmae%2C_Shibuya-ku%2C_T%C5%8Dky%C5%8D-to_150-0001%2C_Japan_-_panoramio_%281%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Takeshita_Street.jpg/1280px-Takeshita_Street.jpg"
         ],
         "specs": [
           {

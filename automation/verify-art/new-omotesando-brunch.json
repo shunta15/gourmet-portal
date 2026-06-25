@@ -1,0 +1,30 @@
+{
+  "id": "new-omotesando-brunch",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "表参道ヒルズ周辺のカフェ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "根津美術館と庭園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "青山通り沿いのベーカリー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "岡本太郎記念館（南青山）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "代々木公園方向への路地散歩",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-omotesando-brunch__5__3.jpg"
+    }
+  ]
+}

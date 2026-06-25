@@ -1,0 +1,30 @@
+{
+  "id": "chugoku-miyajima-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "嚴島神社 大鳥居",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/414.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "嚴島神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/415.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "豊国神社（千畳閣）・五重塔",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/416.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "宮島表参道商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/417.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "弥山（宮島ロープウエー）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/418.jpg"
+    }
+  ]
+}

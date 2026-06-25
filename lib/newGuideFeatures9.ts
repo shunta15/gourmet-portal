@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEWGUIDE9_FEATURES: Feature[] = [
   {
@@ -1393,7 +1393,7 @@ export const NEWGUIDE9_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "purpose": "寺を結ぶ農の風景を歩いて味わう",
         "desc": "寺と寺のあいだを縫う農道こそ、大原のもうひとつの主役だ。背後の山に向かって石積みで段を重ねた棚田が広がり、初夏には一面が赤紫蘇の畑に染まる。大原は何百年も赤しそを育ててきた土地で、混じりけのない紫色とその香りは、しば漬けという京の食を支えてきた。里の駅や直売所には採れたての野菜やしそ加工品が並び、参道で嗅いだあの漬物の匂いの源がここにあると合点がいく。寺の静寂を味わったあとに、この畑の風が、ようやく人の暮らしの体温を運んでくる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sunset_%2815610551403%29.jpg/1280px-Sunset_%2815610551403%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ohara_2008-11-26_%283261972418%29.jpg/1280px-Ohara_2008-11-26_%283261972418%29.jpg"
         ],
         "specs": [
           {

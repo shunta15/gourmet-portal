@@ -1,0 +1,30 @@
+{
+  "id": "new-shinjuku-park",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "新宿御苑（日本庭園エリア）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shinjuku-park__1__4.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "新宿御苑前周辺のカフェ街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shinjuku-park__2__4.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "KITTE丸の内屋上テラス（参考：同コンセプト）と新宿南口",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shinjuku-park__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "新宿西口・東口の老舗デパート",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shinjuku-park__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "思い出横丁（新宿西口）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-shinjuku-park__5__1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hokkaido-shiretoko",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "知床五湖",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/715.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "オシンコシンの滝",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/716.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "知床峠",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/717.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "フレペの滝",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/718.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "ウトロ港(知床岬クルーズ)",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/719.jpg"
+    }
+  ]
+}

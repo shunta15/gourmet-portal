@@ -1,0 +1,20 @@
+{
+  "id": "new-osanbashi-nightview-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "大さん橋国際客船ターミナル 屋上デッキ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-osanbashi-nightview-date__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "山下公園（夜）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-osanbashi-nightview-date__2__2.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "港の見える丘公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-motomachi-yamate__5__3.jpg"
+    }
+  ]
+}

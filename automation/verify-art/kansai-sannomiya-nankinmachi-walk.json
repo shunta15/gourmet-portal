@@ -1,0 +1,30 @@
+{
+  "id": "kansai-sannomiya-nankinmachi-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "神戸三宮センター街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/329.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "生田神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/330.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "南京町",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/331.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "神戸元町商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/332.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "東遊園地",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/333.jpg"
+    }
+  ]
+}

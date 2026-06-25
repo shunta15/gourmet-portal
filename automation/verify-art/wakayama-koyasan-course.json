@@ -1,0 +1,30 @@
+{
+  "id": "wakayama-koyasan-course",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "大門",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/642.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "壇上伽藍 根本大塔",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/643.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "金剛峯寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/644.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "苅萱堂",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/645.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "奥之院",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/646.jpg"
+    }
+  ]
+}

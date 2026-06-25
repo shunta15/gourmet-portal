@@ -1,0 +1,30 @@
+{
+  "id": "kansai-kawaramachi-pontocho-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "錦市場",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/314.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "鴨川（鴨川納涼床）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/315.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "木屋町通",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/316.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "先斗町",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/317.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "祇園白川・巽橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/318.jpg"
+    }
+  ]
+}

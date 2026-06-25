@@ -1,0 +1,30 @@
+{
+  "id": "kansai-namba-dotonbori-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "黒門市場",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/274.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "千日前道具屋筋商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/275.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "なんばグランド花月",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/276.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "道頓堀グリコサイン・戎橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/277.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "法善寺横丁",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/278.jpg"
+    }
+  ]
+}

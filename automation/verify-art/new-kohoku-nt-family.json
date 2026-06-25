@@ -1,0 +1,30 @@
+{
+  "id": "new-kohoku-nt-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "モザイクモール港北",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "都筑区ふるさと公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "大塚・歳勝土遺跡公園（弥生の丘展示館）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "港北ニュータウン緑道（牛久保緑道ほか）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__1__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "横浜市歴史博物館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kohoku-nt-family__5__1.jpg"
+    }
+  ]
+}

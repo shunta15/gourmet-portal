@@ -1,0 +1,20 @@
+{
+  "id": "shiga-biwako-terrace",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "びわ湖バレイ ロープウェイ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/685.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "蓬莱山 山頂エリア",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/686.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "ジップラインアドベンチャー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/687.jpg"
+    }
+  ]
+}

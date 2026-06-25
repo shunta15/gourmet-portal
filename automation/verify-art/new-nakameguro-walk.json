@@ -1,0 +1,30 @@
+{
+  "id": "new-nakameguro-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "目黒川桜並木",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "中目黒高架下",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "スタバ リザーブ ロースタリー東京",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "目黒川沿いのカフェ・ショップ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "祐天寺・池尻大橋周辺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-nakameguro-walk__5__4.jpg"
+    }
+  ]
+}

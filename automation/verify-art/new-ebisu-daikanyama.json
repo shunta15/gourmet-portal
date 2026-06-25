@@ -1,0 +1,30 @@
+{
+  "id": "new-ebisu-daikanyama",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "代官山T-SITE（蔦屋書店）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ebisu-daikanyama__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "恵比寿ガーデンプレイス",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ebisu-daikanyama__2__2.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "目黒川沿い",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ebisu-daikanyama__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "代官山・ログロード代官山",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ebisu-daikanyama__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "恵比寿・アトレ恵比寿（飲食）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-ebisu-daikanyama__5__2.jpg"
+    }
+  ]
+}

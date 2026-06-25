@@ -1,0 +1,30 @@
+{
+  "id": "new-sakuragicho-night-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "汽車道（夜）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-sakuragicho-night-date__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "コスモクロック21（夜）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-first-date__5__3.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "YOKOHAMA AIR CABIN（夜）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-sakuragicho-night-date__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "野毛山公園（夜景スポット）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-sakuragicho-night-date__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "新港ふ頭・横浜ハンマーヘッド",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-akarenga-date__3__4.jpg"
+    }
+  ]
+}

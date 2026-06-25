@@ -1,0 +1,25 @@
+{
+  "id": "gunma-ikaho-stone-steps",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "伊香保温泉 石段街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/521.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "伊香保神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/522.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "伊香保ロープウェイ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/523.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "五徳山 水澤寺（水澤観音）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/524.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chubu-atami-onsen-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "來宮神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/364.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "熱海城",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/365.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "熱海銀座商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/366.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "熱海サンビーチ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/367.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "親水公園ムーンテラス",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/368.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "new-kamakura-rainy",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "鎌倉国宝館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__1__2.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "長谷寺（雨天）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__2__4.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "円覚寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/086.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "建長寺（方丈・庭園）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "鎌倉歴史文化交流館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-kamakura-rainy__5__1.jpg"
+    }
+  ]
+}

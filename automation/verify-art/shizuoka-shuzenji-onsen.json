@@ -1,0 +1,35 @@
+{
+  "id": "shizuoka-shuzenji-onsen",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "修禅寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/612.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "竹林の小径",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/613.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "独鈷の湯",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/614.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "桂川と恋の橋めぐり",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/615.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "指月殿と源頼家の墓",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/616.jpg"
+    },
+    {
+      "spot": 6,
+      "name": "修善寺虹の郷",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/617.jpg"
+    }
+  ]
+}

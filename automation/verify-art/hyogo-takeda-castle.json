@@ -1,0 +1,30 @@
+{
+  "id": "hyogo-takeda-castle",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "竹田城跡",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/674.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "立雲峡",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/675.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "竹田駅",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/676.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "表米神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/677.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "山城の郷",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/678.jpg"
+    }
+  ]
+}

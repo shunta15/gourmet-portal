@@ -1,0 +1,30 @@
+{
+  "id": "kansai-kinkakuji-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "金閣寺（鹿苑寺）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/309.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "龍安寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/310.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "仁和寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/311.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "北野天満宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/312.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "等持院",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/313.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "tokyo-tachikawa-showa",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "多摩都市モノレール 立川北駅",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/546.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "みんなの原っぱ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/547.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "こどもの森",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/548.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "渓流広場",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/549.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "日本庭園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/550.jpg"
+    }
+  ]
+}

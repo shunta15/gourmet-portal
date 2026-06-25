@@ -1,0 +1,30 @@
+{
+  "id": "nara-horyuji-course",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "藤ノ木古墳",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/586.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "法隆寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/587.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "中宮寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/588.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "法輪寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/589.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "法起寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/590.jpg"
+    }
+  ]
+}

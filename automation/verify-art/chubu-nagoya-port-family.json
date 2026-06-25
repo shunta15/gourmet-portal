@@ -1,0 +1,30 @@
+{
+  "id": "chubu-nagoya-port-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "名古屋港水族館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/359.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "JETTY",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/360.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "南極観測船ふじ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/361.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "名古屋海洋博物館・名古屋港ポートビル展望室",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/362.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "名古屋港シートレインランド",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/363.jpg"
+    }
+  ]
+}

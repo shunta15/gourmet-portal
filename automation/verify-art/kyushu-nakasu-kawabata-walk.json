@@ -1,0 +1,30 @@
+{
+  "id": "kyushu-nakasu-kawabata-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "櫛田神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/374.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "上川端商店街",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/375.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "キャナルシティ博多",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/376.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "博多リバレインモール",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/377.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "中洲屋台",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/378.jpg"
+    }
+  ]
+}

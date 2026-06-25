@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEW_GUIDE_FEATURES_2: Feature[] = [
   {
@@ -322,7 +322,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "ジャイアントパンダで有名。都内最大の動物園",
         "desc": "1882年開園、日本最古の動物園。東園と西園が地下道・モノレール跡通路でつながり、ジャイアントパンダ・ゴリラ・ホッキョクグマ・アムールトラなど代表的な動物がコンパクトに揃う。「半日で世界一周できる動物園」と呼んで差し支えない密度で、子連れだけでなく大人2人でも十分楽しめる。パンダのいる東園は午前中の混雑がピークで、整理券が必要な日がある。西園の小動物・は虫類館はゆっくり見るとそれだけで1時間。閉園は16〜17時で意外と早く、入園は閉園1時間前まで。1日かけて博物館とハシゴする場合は、午前博物館→昼食→午後動物園、の順がスタミナ的にも現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg/1280px-Ueno_zoo%2C_Tokyo%2C_Japan_%2814158176795%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Entrance_of_Ueno_Zoo.jpg/1280px-Entrance_of_Ueno_Zoo.jpg"
         ],
         "specs": [
           {
@@ -463,7 +463,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "映画・ライブ・バー。日本最大の歓楽街",
         "desc": "東口側の歌舞伎町は日本最大の歓楽街として知られるが、2023年開業の東急歌舞伎町タワーが入り口の雰囲気を一新している。ライブハウス（Zepp Shinjuku）・109シネマズプレミアム新宿・ホテル・フードホールが垂直に積み上がる構造で、夜の時間つぶしを「ビル1棟で完結」させやすい。周辺のゴールデン街・新宿二丁目はディープな飲み屋街として独自の文化が残るが、観光客向けにチャージや料金が分かりにくい店もあるので、料金表示のある店を選んで入る。深夜帯の歌舞伎町中央通りでは強引な客引きが出ることがあるので、声をかけられても付いていかず、店頭表示で判断する。終電は新宿駅各線でほぼ深夜0〜1時、終夜帯の選択肢も豊富。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tokyu_Kabukicho_Tower_1.jpg/1280px-Tokyu_Kabukicho_Tower_1.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Building_%2852802947902%29.jpg/1280px-Building_%2852802947902%29.jpg"
         ],
         "specs": [
           {
@@ -827,7 +827,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "隅田川沿いの静かな下町散歩",
         "desc": "スカイツリーから徒歩15分、隅田川と桜並木に挟まれた向島は、江戸〜明治の花街文化が残る静かな下町。向島百花園（江戸期の文人趣味の庭）・長命寺の桜餅・言問団子といった歴史ある和菓子屋が点在する。観光客がほぼ来ないエリアなので、スカイツリー混雑の反動で「人のいない江戸下町」を歩ける貴重な動線。言問橋は浅草と向島を結ぶ橋で、橋上から隅田川とスカイツリーが同時に視界に入る。向島百花園は入園有料（金額は公式で確認）・休園日あり。夜は街灯が少ない区画があるので、明るいうちに歩いて夕方には浅草または押上に戻る動線が現実的。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Bamboo_%40_Mukojima-Hyakkaen_Gardens_%2812638601134%29.jpg/1280px-Bamboo_%40_Mukojima-Hyakkaen_Gardens_%2812638601134%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sumidagawa_Bridge_of_Tobu_Skytree_Line_and_Kototoibashi_Bridge_on_Sumidagawa_River.JPG/1280px-Sumidagawa_Bridge_of_Tobu_Skytree_Line_and_Kototoibashi_Bridge_on_Sumidagawa_River.JPG"
         ],
         "specs": [
           {
@@ -1935,7 +1935,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "東急線高架下のリノベ商業施設。夜は雰囲気がいい",
         "desc": "東急東横線の中目黒駅高架橋下を再整備した商業施設。約700mに渡って小規模店舗が並び、夜は高架の造形が照明で浮かび上がって独特の雰囲気をつくる。スタバリザーブロースタリーの隣接区画にもいくつかの飲食店が出ており、夕方17時以降の散歩ルートとして使いやすい。店舗は古着・クラフトビール・カフェ・スパイスカレーなど業態が広く、1〜2時間で複数店を回れる密度。中目黒駅徒歩1分の駅近で、雨の日でも高架の屋根があるため傘を最小限にできる。若手店主の小箱が多く、扱う商品や料理に発見がある区画。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/%E5%90%89%E3%81%9D%E3%81%B0_2017_%E5%85%A5%E5%BA%97_%E8%B8%8F%E3%81%BF%E5%8F%B0_%2832941760660%29.jpg/1280px-%E5%90%89%E3%81%9D%E3%81%B0_2017_%E5%85%A5%E5%BA%97_%E8%B8%8F%E3%81%BF%E5%8F%B0_%2832941760660%29.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Walk_along_Meguro_river_near_Nakameguro_4.jpg/1280px-Walk_along_Meguro_river_near_Nakameguro_4.jpg"
         ],
         "specs": [
           {
@@ -2005,7 +2005,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_2: Record<string, FeatureArticle> = {
         "purpose": "中目黒から少し歩いた先の静かな住宅街",
         "desc": "中目黒から目黒川を上流方向に1.5km歩くと祐天寺、さらに上流の池尻大橋まで2.5kmで到達できる。祐天寺周辺は古民家カフェ・町中華・古本屋が点在する静かな住宅地で、中目黒よりさらにローカルな空気が残る。池尻大橋は若手シェフのバー・自然派ワインのビストロが集まり始めている注目エリア。中目黒の混雑を抜けた先の「次の中目黒」として、デートの後半に組み込むと差が出る。祐天寺駅・池尻大橋駅まで徒歩で歩いてから電車で帰る動線にすると、往復の電車運賃も最小化できる。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Yutenji_Hondo.jpg/1280px-Yutenji_Hondo.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Yutenji_Amidado.jpg/1280px-Yutenji_Amidado.jpg"
         ],
         "specs": [
           {

@@ -1,0 +1,35 @@
+{
+  "id": "hyogo-awaji-akashi",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "明石海峡大橋",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/679.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "道の駅あわじ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/680.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "絵島",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/681.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "兵庫県立公園 あわじ花さじき",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/682.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "道の駅福良（うずしおドームなないろ館）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/683.jpg"
+    },
+    {
+      "spot": 6,
+      "name": "うずしおクルーズ（福良港発）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/684.jpg"
+    }
+  ]
+}

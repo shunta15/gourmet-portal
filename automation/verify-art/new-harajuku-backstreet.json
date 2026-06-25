@@ -1,0 +1,30 @@
+{
+  "id": "new-harajuku-backstreet",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "キャットストリート",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "ラフォーレ原宿",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__2__2.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "明治神宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "竹下通り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__4__4.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "神宮前エリアの古着屋巡り",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-harajuku-backstreet__5__1.jpg"
+    }
+  ]
+}

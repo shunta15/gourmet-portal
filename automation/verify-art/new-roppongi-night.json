@@ -1,0 +1,30 @@
+{
+  "id": "new-roppongi-night",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "六本木ヒルズ展望台（東京シティビュー）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "東京タワー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "麻布台ヒルズ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "芝公園・増上寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__4__2.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "国立新美術館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-roppongi-night__5__1.jpg"
+    }
+  ]
+}

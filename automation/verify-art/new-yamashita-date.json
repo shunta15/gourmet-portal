@@ -1,0 +1,30 @@
+{
+  "id": "new-yamashita-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "山下公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yokohama-first-date__3__4.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "氷川丸（日本郵船氷川丸）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "港の見える丘公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-motomachi-yamate__5__3.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "山手西洋館エリア（ブラフ18番館など）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__4__3.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "マリンタワー",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-yamashita-date__5__1.jpg"
+    }
+  ]
+}

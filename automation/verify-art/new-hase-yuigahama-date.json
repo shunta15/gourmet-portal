@@ -1,0 +1,30 @@
+{
+  "id": "new-hase-yuigahama-date",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "高徳院（鎌倉大仏）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "長谷寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__2__3.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "由比ヶ浜海岸",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__3__2.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "鎌倉文学館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "江ノ電 長谷駅周辺カフェ",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-hase-yuigahama-date__5__1.jpg"
+    }
+  ]
+}

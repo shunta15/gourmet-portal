@@ -1,0 +1,30 @@
+{
+  "id": "new-tokyo-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "上野動物園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__1__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "国立科学博物館（上野）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__2__1.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "葛西臨海公園・水族館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__3__3.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "よみうりランド",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__4__3.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "東京都水の科学館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-tokyo-family__5__1.jpg"
+    }
+  ]
+}

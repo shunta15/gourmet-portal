@@ -1,0 +1,30 @@
+{
+  "id": "new-chigasaki-beach",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "サザンビーチちがさき",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chigasaki-beach__2__1.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "ヘッドランド（突堤）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chigasaki-beach__2__4.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "Tバー（チャーム茅ヶ崎）周辺カフェ群",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chigasaki-beach__3__1.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "旧相模川橋脚（国指定史跡）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chigasaki-beach__4__1.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "茅ヶ崎公園（里山の丘公園）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/imgcand/new-chigasaki-beach__5__4.jpg"
+    }
+  ]
+}

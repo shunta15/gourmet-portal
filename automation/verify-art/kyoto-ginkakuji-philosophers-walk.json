@@ -1,0 +1,30 @@
+{
+  "id": "kyoto-ginkakuji-philosophers-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "銀閣寺（慈照寺）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/437.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "哲学の道",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/438.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "法然院",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/439.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "永観堂（禅林寺）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/440.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "南禅寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/441.jpg"
+    }
+  ]
+}

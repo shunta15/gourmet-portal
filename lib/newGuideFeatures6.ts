@@ -1,6 +1,6 @@
 import type { Feature, FeatureArticle } from "./data";
 
-// 自動生成。sideArticlesのリンク表示名を現行タイトルに同期(2026-06-21)。
+// 自動生成。誤掲載25スポットの目視差替/トリム(2026-06-25)。
 
 export const NEW_GUIDE_FEATURES_6: Feature[] = [
   {
@@ -118,7 +118,7 @@ export const NEW_GUIDE_FEATURE_ARTICLES_6: Record<string, FeatureArticle> = {
         "purpose": "帰りは湘南海岸経由。江の島に寄り道も",
         "desc": "湘南経由の帰路は箱根から東京に戻る際、小田原から東海道線に乗ると湘南海岸（茅ヶ崎・藤沢）を車窓から眺められる選択肢。「神奈川旅行の最後に湘南の海を組み合わせたい」「江の島まで足を伸ばしたい」目的に最適。時間に余裕があれば藤沢で下車して江の島まで足を伸ばすこともできる（藤沢駅から江ノ電で約10分）。江の島では江島神社・シーキャンドル（展望灯台）・岩屋洞窟・しらす丼が定番。夕方の江の島から見る富士山・湘南海岸の構図は、神奈川旅行の締めとして強い。藤沢→新宿はJRで約1時間、品川→東京方向も同様の所要時間。",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Shonan_Beach_FM.jpg/1280px-Shonan_Beach_FM.jpg"
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Enoden-EN05-Shonan-kaigan-koen-station-building-20200315-113411.jpg/1280px-Enoden-EN05-Shonan-kaigan-koen-station-building-20200315-113411.jpg"
         ],
         "specs": [
           {

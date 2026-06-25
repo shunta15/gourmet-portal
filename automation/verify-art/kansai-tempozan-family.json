@@ -1,0 +1,30 @@
+{
+  "id": "kansai-tempozan-family",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "海遊館",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/294.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "天保山マーケットプレース",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/295.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "レゴランド・ディスカバリー・センター大阪",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/296.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "天保山大観覧車",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/297.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "帆船型観光船サンタマリア",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/298.jpg"
+    }
+  ]
+}

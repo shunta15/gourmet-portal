@@ -1,0 +1,30 @@
+{
+  "id": "tokyo-fukagawa-walk",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "清澄庭園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/551.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "木場公園",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/552.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "深川不動堂",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/553.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "富岡八幡宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/554.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "門前仲町（仲町通り・辰巳新道）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/555.jpg"
+    }
+  ]
+}

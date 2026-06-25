@@ -1,0 +1,30 @@
+{
+  "id": "wakayama-kimiidera-wakaura",
+  "spots": [
+    {
+      "spot": 1,
+      "name": "紀三井寺",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/688.jpg"
+    },
+    {
+      "spot": 2,
+      "name": "玉津島神社",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/689.jpg"
+    },
+    {
+      "spot": 3,
+      "name": "和歌浦天満宮",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/690.jpg"
+    },
+    {
+      "spot": 4,
+      "name": "和歌の浦（片男波）",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/691.jpg"
+    },
+    {
+      "spot": 5,
+      "name": "雑賀崎漁港",
+      "localFile": "/Users/shunta/claude/gourmet-portal/automation/verify/692.jpg"
+    }
+  ]
+}
