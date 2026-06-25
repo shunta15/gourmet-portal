@@ -53,3 +53,12 @@ next-env.d.ts
 # Supabase CLI temp
 supabase/.temp/
 automation/generated-ledger.json
+
+# 検証用ダウンロード画像(コミット不要)
+automation/verify/
+automation/fix25img/
+automation/imgcand/
+automation/imgcand2/
+automation/vcand8/
+automation/verify-art/
+automation/verify-manifest*.json
