@@ -68,6 +68,7 @@ fi
 SUCCESS=0
 ERROR=0
 SUCCESS_URLS=""
+SUCCESS_URL_LIST=""  # 検証用: URLのみ改行区切り
 ERROR_LIST=""
 
 MAX=${MAX_CANDIDATES:-10}
@@ -228,6 +229,7 @@ PROMPT_EOF
       SUCCESS=$((SUCCESS+1))
       URL=$(echo "$FINAL_LINE" | grep -oE 'https://[^ ]+' | head -1)
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
+      SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
       node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
     else
@@ -253,14 +255,50 @@ log "完了サマリ: 成功 $SUCCESS / エラー $ERROR"
 log "============================================================"
 
 # === Vercel 本番デプロイ（成功が1件以上あれば実行） ===
+# 重要: pushだけでは反映されないケースが過去に複数回発生。失敗時は最大3回リトライ、
+#       完了後は実際の本番URLを叩いて200を確認。500なら必ず通知する。
 if [ $SUCCESS -gt 0 ]; then
   log ""
   log "▼ Vercel 本番デプロイ"
-  vercel --prod --yes >> "$LOG_FILE" 2>&1 && {
-    log "✅ Vercel デプロイ完了"
-  } || {
-    log "⚠️ Vercel デプロイ失敗（git push 済みなので次の手動デプロイで反映）"
-  }
+  DEPLOY_OK=0
+  for ATTEMPT in 1 2 3; do
+    log "  デプロイ試行 $ATTEMPT/3"
+    if vercel --prod --yes >> "$LOG_FILE" 2>&1; then
+      DEPLOY_OK=1
+      log "  ✅ vercel --prod 成功"
+      break
+    fi
+    log "  ⚠️ vercel --prod 失敗 (試行 $ATTEMPT) — 30秒後リトライ"
+    sleep 30
+  done
+
+  if [ "$DEPLOY_OK" = "1" ]; then
+    # 反映確認: 生成した記事のURLが本番で200を返すか実測（最大90秒待つ）
+    VERIFY_OK=1
+    for URL in $SUCCESS_URL_LIST; do
+      [ -z "$URL" ] && continue
+      log "  反映確認: $URL"
+      for WAIT in 0 15 30 45 60 75 90; do
+        [ "$WAIT" -gt 0 ] && sleep 15
+        CODE=$(curl -s -o /dev/null -w "%{http_code}" -m 15 -A "Mozilla/5.0" "$URL")
+        [ "$CODE" = "200" ] && { log "    ✅ HTTP 200 ($CODE) — 反映OK"; break; }
+        log "    待機中: HTTP $CODE (経過 ${WAIT}s)"
+      done
+      if [ "$CODE" != "200" ]; then
+        VERIFY_OK=0
+        log "    ❌ 90秒待っても HTTP $CODE のまま — 反映失敗"
+      fi
+    done
+    if [ "$VERIFY_OK" = "1" ]; then
+      log "✅ Vercel デプロイ＋本番反映 確認済み"
+    else
+      log "❌ Vercel デプロイ完了表示だが本番未反映を検出"
+      notify "❌ マチノワ デプロイ未反映" "vercel --prod は完了したが本番URLが200を返さない。手動で vercel --prod を実行してください。"
+    fi
+  else
+    log "❌ Vercel デプロイ 3回失敗"
+    notify "❌ マチノワ デプロイ失敗" "vercel --prod が 3回失敗。手動デプロイが必要です。"
+  fi
 fi
 
 if [ $SUCCESS -gt 0 ]; then
