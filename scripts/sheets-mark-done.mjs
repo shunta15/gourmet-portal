@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// 詰めOKリスト の W/X (feature) または Y/Z (restaurant) に処理結果を書き込む
+// トスアップ元シート（本体）の W/X (feature) または Y/Z (restaurant) に処理結果を書き込む
+// 注意: 「詰めOKリスト」はトスアップ元シートのQUERYビューで、A〜V列が並び替わるとW,Xがズレる
+//       問題があったため、必ず「本体」のトスアップ元シートに書き込む（行ズレ防止）
 //
 // 使い方:
 //   ロック取得（処理開始時、空 or「処理中:」古い のみ上書き）:
@@ -104,7 +106,7 @@ try {
   // 冪等チェック: 現在のセル値を読み取る
   const cur = await sheets.spreadsheets.values.get({
     spreadsheetId: SHEET_ID,
-    range: `詰めOKリスト!${doneCol}${row}`,
+    range: `トスアップ元シート!${doneCol}${row}`,
   });
   const currentVal = (cur.data.values?.[0]?.[0] || '').toString().trim();
 
@@ -123,21 +125,21 @@ try {
   let updates;
   if (status === 'done') {
     updates = [
-      { range: `詰めOKリスト!${doneCol}${row}`, values: [['済']] },
-      { range: `詰めOKリスト!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(url)}","${escapeQuote(url)}")`]] },
+      { range: `トスアップ元シート!${doneCol}${row}`, values: [['済']] },
+      { range: `トスアップ元シート!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(url)}","${escapeQuote(url)}")`]] },
     ];
   } else if (status === 'processing') {
     updates = [
-      { range: `詰めOKリスト!${doneCol}${row}`, values: [[`処理中: ${jstNow()} JST`]] },
+      { range: `トスアップ元シート!${doneCol}${row}`, values: [[`処理中: ${jstNow()} JST`]] },
     ];
   } else if (status === 'permanent_error') {
     updates = [
-      { range: `詰めOKリスト!${doneCol}${row}`, values: [[sanitize(`永久エラー: ${reason}`)]] },
+      { range: `トスアップ元シート!${doneCol}${row}`, values: [[sanitize(`永久エラー: ${reason}`)]] },
     ];
   } else {
     // error（24h後リトライ対象。日付付与）
     updates = [
-      { range: `詰めOKリスト!${doneCol}${row}`, values: [[sanitize(`エラー: ${reason} (${jstDateOnly()})`)]] },
+      { range: `トスアップ元シート!${doneCol}${row}`, values: [[sanitize(`エラー: ${reason} (${jstDateOnly()})`)]] },
     ];
   }
 
