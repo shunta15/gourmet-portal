@@ -95,10 +95,10 @@ grep 'id: "r67"' lib/data.ts
 ```
 
 ### 現在の状態（更新すること）
-- **最終ID: r261**（洋食彩酒 アンプリュス / 京都市中京区）※r241〜r261 の21店舗は `lib/teleapo-restaurants.ts` に格納し、`...TELEAPO_RESTAURANTS` でdata.tsの末尾にスプレッド
-- **次のID: r262**（lib/teleapo-restaurants.ts に追記すればOK。data.ts本体は触らない）
+- **最終ID: r281**（アンティ / 北九州市小倉北区）※r241〜r281 の41店舗は `lib/teleapo-restaurants.ts` に格納し、`...TELEAPO_RESTAURANTS` でdata.tsの末尾にスプレッド
+- **次のID: r282**（lib/teleapo-restaurants.ts に追記すればOK。data.ts本体は触らない）
 - **挿入点: lib/teleapo-restaurants.ts の `// ↓ エージェントが自動追記 ↓` 直後**
-- **掲載店舗数: 249店舗**（data.ts 228 + teleapo-restaurants 21）（欠番: r11・r26・r29・**r71**・r98・r102・r109・r114・r119・r122・r136・r139）
+- **掲載店舗数: 269店舗**（data.ts 228 + teleapo-restaurants 41）（欠番: r11・r26・r29・**r71**・r98・r102・r109・r114・r119・r122・r136・r139）
 - **Region: 16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）
 - **特集記事数: 217本**（No.1〜No.180 既存 + NG-01〜NG-65 既存 + NG-66〜NG-102 新規37本）
   - **NG-66〜NG-102（新規37本）**: lib/newGuideFeatures4.ts〜6.ts に収録
