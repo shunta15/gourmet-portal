@@ -1,6 +1,9 @@
 // バッチ1の5店舗を teleapo-restaurants.ts に追記
 import { readFileSync, writeFileSync } from 'fs';
-const SHOPS = JSON.parse(readFileSync(process.argv[2], 'utf-8')).result?.shops || JSON.parse(readFileSync(process.argv[2], 'utf-8')).shops;
+const raw = readFileSync(process.argv[2], 'utf-8');
+// HTMLエンティティ混入を除去（agent返却時の &amp; → & 等）
+const decoded = raw.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
+const SHOPS = JSON.parse(decoded).result?.shops || JSON.parse(decoded).shops;
 
 const ph = ['/restaurants/_placeholder/feature-hero.jpg', '/restaurants/_placeholder/feature-point.jpg', '/restaurants/_placeholder/feature-og.jpg'];
 
