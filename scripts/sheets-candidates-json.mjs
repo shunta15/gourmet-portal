@@ -14,7 +14,9 @@ const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 // 注意: 「詰めOKリスト」はトスアップ元シートのQUERYビュー（並び替えで手動列がズレる）。
 // 必ず「トスアップ元シート」本体を読む。sourceRowは本体の行番号。
 const SHEET_NAME = 'トスアップ元シート';
-const MIN_SOURCE_ROW = 175;
+// row 175〜218 の62件はユーザー指示により手動でRestaurant(r241-r298)として追加済み。
+// 219行目以降の新規追加分だけ自動生成パイプラインで処理する。
+const MIN_SOURCE_ROW = 219;
 const RETRY_AFTER_HOURS = 24;
 
 function normalize(v) {

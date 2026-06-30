@@ -35,7 +35,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
 const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 const SHEET_NAME = '詰めOKリスト';
-const MIN_SOURCE_ROW = 175;
+// row 175〜218 はユーザー指示により手動でRestaurant追加済み、219以降の新規だけ処理
+const MIN_SOURCE_ROW = 219;
 const RETRY_AFTER_HOURS = 24;
 
 function normalize(v) {
