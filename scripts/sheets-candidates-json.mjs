@@ -50,6 +50,26 @@ const res = await sheets.spreadsheets.values.get({
   valueRenderOption: 'FORMATTED_VALUE',
 });
 const rows = res.data.values || [];
+// 空応答ガード: スプシAPIがQUERY再計算中で空配列を返すことがある。
+// 「トスアップ元シート」は最低でも数百行あるので、極端に少ない応答は再試行する。
+if (rows.length < 100) {
+  process.stderr.write(`⚠️  Sheets API が ${rows.length} 行しか返さなかった。3秒後にリトライ\n`);
+  await new Promise((r) => setTimeout(r, 3000));
+  const retry = await sheets.spreadsheets.values.get({
+    spreadsheetId: SHEET_ID,
+    range: `${SHEET_NAME}!A2:Z`,
+    valueRenderOption: 'FORMATTED_VALUE',
+  });
+  const retryRows = retry.data.values || [];
+  if (retryRows.length > rows.length) {
+    process.stderr.write(`✅ リトライで ${retryRows.length} 行取得\n`);
+    rows.length = 0; rows.push(...retryRows);
+  } else if (retryRows.length < 100) {
+    // 2回連続で異常に少ない → エラー終了でパイプライン側に異常を伝える
+    process.stderr.write(`❌ リトライ後も ${retryRows.length} 行。スプシ取得異常\n`);
+    process.exit(2);
+  }
+}
 const IDX = { NAME: 3, URL: 9, P: 15, U: 20, W: 22, Y: 24 };
 const led = loadLedger();
 

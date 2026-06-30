@@ -65,6 +65,21 @@ const res = await sheets.spreadsheets.values.get({
 });
 const rows = res.data.values || [];
 const IDX = { NAME: 3, URL: 9 };
+// 空応答ガード: 詰めOKリストはQUERYビューでGoogle API 再計算中の空応答を返すことがある。
+// 100行未満なら3秒待ってリトライ。それでもダメなら台帳破壊を避けて続行(警告のみ)。
+if (rows.length < 100) {
+  process.stderr.write(`⚠️  Sheets API が ${rows.length} 行しか返さなかった(QUERYビュー再計算中?)。3秒後にリトライ\n`);
+  await new Promise((r) => setTimeout(r, 3000));
+  const retry = await sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `${SHEET_NAME}!A2:Z`, valueRenderOption: 'FORMATTED_VALUE' });
+  const retryRows = retry.data.values || [];
+  if (retryRows.length > rows.length) {
+    process.stderr.write(`✅ リトライで ${retryRows.length} 行取得\n`);
+    rows.length = 0; rows.push(...retryRows);
+  } else if (retryRows.length < 100) {
+    process.stderr.write(`❌ リトライ後も ${retryRows.length} 行。台帳の破壊を避けて既存台帳を維持(再構築スキップ)\n`);
+    process.exit(0);
+  }
+}
 
 let cidRecovered = 0;
 const matchedKeys = new Set();
