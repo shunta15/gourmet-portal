@@ -35,7 +35,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
 const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 const SHEET_NAME = '詰めOKリスト';
-const MIN_SOURCE_ROW = 175;
+const MIN_SOURCE_ROW = 2;   // 新シートは全行対象
 const RETRY_AFTER_HOURS = 24;
 
 function normalize(v) {
@@ -98,7 +98,7 @@ let featDoneTotal = 0, restDoneTotal = 0;
 let featPermErrTotal = 0, restPermErrTotal = 0;
 let skippedOldRows = 0;
 
-const IDX = { NAME: 3, URL: 9, P: 15, U: 20, W: 22, X: 23, Y: 24, Z: 25 };
+const IDX = { NAME: 3, URL: 10, P: 16, U: 16, W: 22, X: 23, Y: 24, Z: 25 };  // 新構成: URL=K(10), 詰めステータス=Q(16)
 const led = loadLedger();
 
 for (let i = 0; i < rows.length; i++) {

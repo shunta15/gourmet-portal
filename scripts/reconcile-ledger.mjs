@@ -19,7 +19,7 @@ import { loadLedger, saveLedger, addEntry, cidFromUrl, nameKey, LEDGER_PATH } fr
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
-const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
+const SHEET_ID = process.env.MACHINOWA_SHEET_ID || '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 const SHEET_NAME = '詰めOKリスト';
 
 function norm(v) {
@@ -64,10 +64,10 @@ const res = await sheets.spreadsheets.values.get({
   valueRenderOption: 'FORMATTED_VALUE',
 });
 const rows = res.data.values || [];
-const IDX = { NAME: 3, URL: 9 };
+const IDX = { NAME: 3, URL: 10 };  // 新構成: URL は K列(10)
 // 空応答ガード: 詰めOKリストはQUERYビューでGoogle API 再計算中の空応答を返すことがある。
 // 100行未満なら3秒待ってリトライ。それでもダメなら台帳破壊を避けて続行(警告のみ)。
-if (rows.length < 100) {
+if (rows.length < 30) {
   process.stderr.write(`⚠️  Sheets API が ${rows.length} 行しか返さなかった(QUERYビュー再計算中?)。3秒後にリトライ\n`);
   await new Promise((r) => setTimeout(r, 3000));
   const retry = await sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `${SHEET_NAME}!A2:Z`, valueRenderOption: 'FORMATTED_VALUE' });

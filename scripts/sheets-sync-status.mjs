@@ -19,8 +19,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
 const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
 const SHEET_NAME = '詰めOKリスト';
-const MIN_SOURCE_ROW = 146;
-const IDX = { NAME: 3, URL: 9, P: 15, W: 22, X: 23 };
+const MIN_SOURCE_ROW = 2;   // 新シートは全行対象
+const IDX = { NAME: 3, URL: 10, P: 16, W: 22, X: 23 };  // 新構成: URL=K(10), 詰めステータス=Q(16)
 
 const norm = (v) => (v == null ? '' : String(v).replace(/^'+/, '').replace(/[　\s]+/g, ' ').trim());
 const escapeQuote = (s) => String(s).replace(/"/g, '""');

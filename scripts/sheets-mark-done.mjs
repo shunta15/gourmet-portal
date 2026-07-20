@@ -32,11 +32,12 @@ import { google } from 'googleapis';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { SHEET_ID, MIN_SOURCE_ROW } from './sheets-config.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
-const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
-const MIN_SOURCE_ROW = 146;
+// SHEET_ID / MIN_SOURCE_ROW は scripts/sheets-config.mjs が単一情報源
+
 
 const args = Object.fromEntries(
   process.argv.slice(2).map(a => {
