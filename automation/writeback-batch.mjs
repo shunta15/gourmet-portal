@@ -1,0 +1,68 @@
+// 生成済み記事のURLをスプシに書き戻す（本体＝行番号 / 詰めOKビュー＝顧客管理IDで照合）
+// 使い方: node automation/writeback-batch.mjs [--dry]
+//   automation/applied-urls.json（articleId,url）と候補JSON（sourceRow,id,name）を突き合わせる
+import { google } from 'googleapis';
+import { readFileSync } from 'fs';
+import { SHEET_ID, BODY_SHEET, VIEW_SHEET, IDX } from '../scripts/sheets-config.mjs';
+import { loadLedger, saveLedger, addEntry, nameKey } from '../scripts/ledger.mjs';
+
+const DRY = process.argv.includes('--dry');
+const applied = JSON.parse(readFileSync('automation/applied-urls.json', 'utf-8'));
+const cands = JSON.parse(readFileSync('automation/candidates-snapshot.json', 'utf-8')).feature;
+
+const norm = (s) => String(s || '').replace(/[\s　]/g, '').replace(/[（）()～〜~・,，、.。'"“”‘’!！?？&＆\-−–—ー]/g, '').toLowerCase();
+
+// articleId ← 店舗名 の対応を作る（articleId は店舗名から記号除去したもの）
+const pairs = [];
+for (const a of applied) {
+  const hit = cands.find((c) => norm(c.name) === norm(a.articleId) || norm(c.name).includes(norm(a.articleId)) || norm(a.articleId).includes(norm(c.name)));
+  if (!hit) { console.log(`⚠️  候補行が見つからない: ${a.articleId}`); continue; }
+  pairs.push({ ...a, sourceRow: hit.sourceRow, custId: hit.id, name: hit.name });
+}
+console.log(`対応づけ: ${pairs.length}/${applied.length}件`);
+pairs.forEach((p) => console.log(`  本体row${p.sourceRow} [${p.custId}] ${p.name} → ${p.url}`));
+if (DRY) { console.log('\n--dry のため書き込みはしません'); process.exit(0); }
+if (!pairs.length) process.exit(0);
+
+const sa = JSON.parse(readFileSync('automation/secrets/sa.json', 'utf-8'));
+const auth = new google.auth.GoogleAuth({ credentials: sa, scopes: ['https://www.googleapis.com/auth/spreadsheets'] });
+const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
+
+// 1) 本体（行番号で確実に）
+const bodyData = pairs.map((p) => ({
+  range: `${BODY_SHEET}!W${p.sourceRow}:X${p.sourceRow}`,
+  values: [['済', p.url]],
+}));
+await sheets.spreadsheets.values.batchUpdate({
+  spreadsheetId: SHEET_ID,
+  requestBody: { valueInputOption: 'USER_ENTERED', data: bodyData },
+});
+console.log(`✅ 本体 ${BODY_SHEET} に ${bodyData.length}行 書き戻し`);
+
+// 2) 詰めOKビュー（顧客管理IDで現在行を特定してから書く＝行ズレ耐性）
+const view = await sheets.spreadsheets.values.get({
+  spreadsheetId: SHEET_ID, range: `${VIEW_SHEET}!A2:A`, valueRenderOption: 'FORMATTED_VALUE',
+});
+const viewIds = (view.data.values || []).map((r) => String(r[0] || '').trim());
+const viewData = [];
+for (const p of pairs) {
+  const i = viewIds.indexOf(String(p.custId).trim());
+  if (i < 0) { console.log(`⚠️  ビューに顧客管理ID ${p.custId} が無い`); continue; }
+  const row = i + 2;
+  viewData.push({ range: `${VIEW_SHEET}!W${row}:X${row}`, values: [['済', p.url]] });
+}
+if (viewData.length) {
+  await sheets.spreadsheets.values.batchUpdate({
+    spreadsheetId: SHEET_ID,
+    requestBody: { valueInputOption: 'USER_ENTERED', data: viewData },
+  });
+  console.log(`✅ ビュー ${VIEW_SHEET} に ${viewData.length}行 書き戻し（顧客管理ID照合）`);
+}
+
+// 3) ledger 登録（重複生成防止）
+const led = loadLedger();
+for (const p of pairs) {
+  addEntry(led, { name: p.name, articleId: p.articleId, url: p.url });
+}
+saveLedger(led);
+console.log(`✅ ledger に ${pairs.length}件 登録`);
