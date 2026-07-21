@@ -32,6 +32,15 @@ pairs.forEach((p) => console.log(`  本体row${p.sourceRow} [${p.custId}] ${p.na
 if (DRY) { console.log('\n--dry のため書き込みはしません'); process.exit(0); }
 if (!pairs.length) process.exit(0);
 
+// 日本語を含むURLは Google スプレッドシートが自動リンク化しないため、必ず HYPERLINK 式で書く。
+// リンク先＝パーセントエンコード済みURL / 表示＝読みやすい生URL。
+function urlCell(raw) {
+  let encoded = raw;
+  try { const u = new URL(raw); encoded = u.origin + u.pathname + u.search + u.hash; } catch {}
+  const esc = (s) => String(s).replace(/"/g, '""');
+  return `=HYPERLINK("${esc(encoded)}","${esc(raw)}")`;
+}
+
 const sa = JSON.parse(readFileSync('automation/secrets/sa.json', 'utf-8'));
 const auth = new google.auth.GoogleAuth({ credentials: sa, scopes: ['https://www.googleapis.com/auth/spreadsheets'] });
 const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
@@ -39,7 +48,7 @@ const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 // 1) 本体（行番号で確実に）
 const bodyData = pairs.map((p) => ({
   range: `${BODY_SHEET}!W${p.sourceRow}:X${p.sourceRow}`,
-  values: [['済', p.url]],
+  values: [['済', urlCell(p.url)]],
 }));
 await sheets.spreadsheets.values.batchUpdate({
   spreadsheetId: SHEET_ID,
@@ -57,7 +66,7 @@ for (const p of pairs) {
   const i = viewIds.indexOf(String(p.custId).trim());
   if (i < 0) { console.log(`⚠️  ビューに顧客管理ID ${p.custId} が無い`); continue; }
   const row = i + 2;
-  viewData.push({ range: `${VIEW_SHEET}!W${row}:X${row}`, values: [['済', p.url]] });
+  viewData.push({ range: `${VIEW_SHEET}!W${row}:X${row}`, values: [['済', urlCell(p.url)]] });
 }
 if (viewData.length) {
   await sheets.spreadsheets.values.batchUpdate({
