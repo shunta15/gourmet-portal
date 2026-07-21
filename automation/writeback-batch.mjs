@@ -10,7 +10,15 @@ const DRY = process.argv.includes('--dry');
 const applied = JSON.parse(readFileSync('automation/applied-urls.json', 'utf-8'));
 const cands = JSON.parse(readFileSync('automation/candidates-snapshot.json', 'utf-8')).feature;
 
-const norm = (s) => String(s || '').replace(/[\s　]/g, '').replace(/[（）()～〜~・,，、.。'"“”‘’!！?？&＆\-−–—ー]/g, '').toLowerCase();
+// 照合用の正規化:
+//  1) ラテン文字のアクセントを除去（É→E）。NFD→結合記号除去→NFC で日本語の濁点は保持する
+//     （日本語の濁点は U+3099/309A で ̀-ͯ の範囲外なので壊れない）
+//  2) 文字・数字以外（記号・括弧・空白・『』・中黒・ハイフン等）をすべて除去
+const norm = (s) =>
+  String(s || '')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC')
+    .replace(/[^\p{L}\p{N}]/gu, '')
+    .toLowerCase();
 
 // articleId ← 店舗名 の対応を作る（articleId は店舗名から記号除去したもの）
 const pairs = [];
