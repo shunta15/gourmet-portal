@@ -72,7 +72,20 @@ SUCCESS_URL_LIST=""  # 検証用: URLのみ改行区切り
 ERROR_LIST=""
 
 MAX=${MAX_CANDIDATES:-10}
-PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
+# 環境変数 TARGET_ROW=N で特定行のみ処理（手動修復用、URL欠落の救出に使う）
+# ※ set -u 下では未設定参照でスクリプトが落ちるため、必ずデフォルト空で展開すること。
+#    （これが無く、定期実行が Step2 直前で毎回クラッシュしていた）
+TARGET_ROW="${TARGET_ROW:-}"
+if [ -n "$TARGET_ROW" ]; then
+  log "🎯 TARGET_ROW=$TARGET_ROW 指定 → その行のみ処理"
+  PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[] | select(.sourceRow == $TARGET_ROW)")
+  if [ -z "$PROCESS_LIST" ]; then
+    log "❌ TARGET_ROW=$TARGET_ROW が候補に含まれない（P=詰めOK & W=空 でないか、MIN_SOURCE_ROW未満）"
+    exit 1
+  fi
+else
+  PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
+fi
 
 while IFS= read -r CANDIDATE; do
   [ -z "$CANDIDATE" ] && continue
