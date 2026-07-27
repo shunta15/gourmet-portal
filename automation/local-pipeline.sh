@@ -248,13 +248,23 @@ PROMPT_EOF
     else
       ERROR=$((ERROR+1))
       ERROR_LIST="$ERROR_LIST\n  - $NAME: $FINAL_LINE"
+      # 「処理中」ロックを残すとその行が永久に候補から外れる。必ずエラー状態に落とす。
+      node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="生成未完了" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
     fi
   else
     log "  ⚠️ claude が完了マーカー出さずに終了"
     log "  claude 出力末尾:"
     tail -20 "$CLAUDE_LOG" | sed 's/^/    /' | tee -a "$LOG_FILE"
     ERROR=$((ERROR+1))
-    ERROR_LIST="$ERROR_LIST\n  - $NAME: claude 早期終了"
+    # 認証切れ(401)などで claude が即死した場合、ここを通る。
+    # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
+    REASON="claude早期終了"
+    if grep -q "401\|Invalid authentication\|Not logged in" "$CLAUDE_LOG" 2>/dev/null; then
+      REASON="claude認証エラー(要 /login)"
+      log "  🔑 claude CLI の認証切れを検出。ターミナルで /login が必要"
+    fi
+    ERROR_LIST="$ERROR_LIST\n  - $NAME: $REASON"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="$REASON" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
   fi
 
   sleep 5
