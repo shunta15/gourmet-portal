@@ -8,18 +8,35 @@
 #
 # 使い方:
 #   1) claude setup-token          ← ブラウザで認証し、長期トークンが表示される
-#   2) bash automation/setup-oauth-token.sh <表示されたトークン>
+#   2) bash automation/setup-oauth-token.sh   ← 実行後にプロンプトへ貼り付ける
+#
+# トークンは引数では受け取らない。引数にするとシェル履歴と `ps` の出力に残るため。
+# プロンプト入力なら画面にも履歴にも残らない。
 
 set -eu
 
-TOKEN="${1:-}"
-if [ -z "$TOKEN" ]; then
-  echo "使い方: bash automation/setup-oauth-token.sh <トークン>"
-  echo ""
-  echo "トークンはこれで取得します:"
-  echo "    claude setup-token"
+if [ "${1:-}" != "" ]; then
+  echo "⚠️  トークンは引数で渡さないでください（シェル履歴と ps に残ります）。"
+  echo "    引数なしで実行し、プロンプトに貼り付けてください:"
+  echo "        bash automation/setup-oauth-token.sh"
   exit 1
 fi
+
+echo "claude setup-token で表示された長期トークンを貼り付けて Enter を押してください。"
+echo "（入力内容は画面に表示されません）"
+printf "トークン: "
+IFS= read -rs TOKEN
+echo ""
+
+# 前後の空白・改行を落とす（コピペ時に紛れ込みやすい）
+TOKEN="${TOKEN#"${TOKEN%%[![:space:]]*}"}"
+TOKEN="${TOKEN%"${TOKEN##*[![:space:]]}"}"
+
+if [ -z "$TOKEN" ]; then
+  echo "❌ 何も入力されませんでした。中止します。"
+  exit 1
+fi
+echo "✅ トークンを受け取りました（${#TOKEN}文字）"
 
 LABELS="00jst 08jst 12jst 16jst 20jst"
 UID_NUM=$(id -u)
@@ -32,6 +49,9 @@ for L in $LABELS; do
   # 既存キーがあれば消してから追加（Add は既存キーに失敗するため）
   /usr/libexec/PlistBuddy -c "Delete :EnvironmentVariables:CLAUDE_CODE_OAUTH_TOKEN" "$PLIST" >/dev/null 2>&1 || true
   /usr/libexec/PlistBuddy -c "Add :EnvironmentVariables:CLAUDE_CODE_OAUTH_TOKEN string $TOKEN" "$PLIST"
+
+  # plist に平文のトークンが入るので、本人以外が読めないよう権限を締める（既定は644）
+  chmod 600 "$PLIST"
 
   launchctl bootout "gui/$UID_NUM/com.machinowa.auto.$L" >/dev/null 2>&1 || true
   launchctl bootstrap "gui/$UID_NUM" "$PLIST"
