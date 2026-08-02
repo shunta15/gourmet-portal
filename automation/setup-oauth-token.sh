@@ -8,10 +8,12 @@
 #
 # 使い方:
 #   1) claude setup-token          ← ブラウザで認証し、長期トークンが表示される
-#   2) トークンをコピーした状態で:
-#        bash automation/setup-oauth-token.sh --clipboard   ← 推奨。クリップボードから直接読む
-#      うまくいかない場合:
-#        bash automation/setup-oauth-token.sh               ← プロンプトに貼り付ける
+#   推奨: bash automation/setup-oauth-token.sh --new
+#     → スクリプトが claude setup-token を直接実行してトークンを受け取る。
+#       コピー＆ペーストが一切不要（コマンドをコピーした時点でクリップボードが
+#       上書きされてトークンが消える、という詰みを回避するため）。
+#   代替: bash automation/setup-oauth-token.sh --clipboard   ← クリップボードから読む
+#         bash automation/setup-oauth-token.sh               ← プロンプトに貼り付ける
 #   取り消す場合:
 #        bash automation/setup-oauth-token.sh --remove
 #
@@ -43,6 +45,26 @@ fi
 
 # ── トークン取得 ─────────────────────────────────────
 case "$MODE" in
+  --new)
+    # claude setup-token を自分で起動して、その出力から直接トークンを取る。
+    # 人間がトークンをコピーする工程が無いので、クリップボード事故が起きない。
+    echo "🔐 claude setup-token を起動します。ブラウザで承認してください。"
+    echo "────────────────────────────────────────────"
+    if [ -t 1 ] && [ -e /dev/tty ]; then
+      RAW=$(claude setup-token 2>&1 | tee /dev/tty)
+    else
+      RAW=$(claude setup-token 2>&1)
+      printf '%s\n' "$RAW"
+    fi
+    echo "────────────────────────────────────────────"
+    TOKEN="$RAW"
+    if ! printf '%s' "$RAW" | tr -d '[:space:]' | grep -q 'sk-ant-'; then
+      echo "❌ 出力からトークンを見つけられませんでした。"
+      echo "   画面にトークンが表示されている場合は、その行をコピーしてから"
+      echo "   もう一度このコマンドを --clipboard 付きで実行してください。"
+      exit 1
+    fi
+    ;;
   --clipboard)
     command -v pbpaste >/dev/null 2>&1 || { echo "❌ pbpaste が見つかりません"; exit 1; }
     TOKEN=$(pbpaste)
@@ -57,7 +79,8 @@ case "$MODE" in
     ;;
   *)
     echo "⚠️  トークンは引数で渡さないでください（シェル履歴と ps に残ります）。"
-    echo "    トークンをコピーした状態で、次のどちらかを実行してください:"
+    echo "    次のいずれかを実行してください:"
+    echo "        bash automation/setup-oauth-token.sh --new        ← 推奨（コピー不要）"
     echo "        bash automation/setup-oauth-token.sh --clipboard"
     echo "        bash automation/setup-oauth-token.sh"
     exit 1
