@@ -87,45 +87,67 @@ case "$MODE" in
     ;;
 esac
 
-# ── 正規化 ───────────────────────────────────────────
-# ターミナルは長いトークンを折り返して表示するため、コピーすると途中に改行が
-# 混入することがある（実際に発生）。トークン自体は空白を含まないので、
-# 空白・改行・タブを全部落としてから、トークンらしき部分だけを抜き出す。
-COMPACT=$(printf '%s' "$TOKEN" | tr -d '[:space:]')
-EXTRACTED=$(printf '%s' "$COMPACT" | grep -oE 'sk-ant-[A-Za-z0-9_-]+' | head -1 || true)
-if [ -n "$EXTRACTED" ]; then
-  TOKEN="$EXTRACTED"
-else
-  TOKEN="$COMPACT"
-fi
+# ── 候補生成 ─────────────────────────────────────────
+# 抽出を1パターンに賭けると、外れた瞬間に失敗する（実際に外して130文字の
+# 巻き込みが起きた）。切り出し方を複数用意し、後段で「実際に認証が通ったもの」
+# を採用する。取りこぼしより取りすぎのほうが安全。
+CAND_FILE=$(mktemp)
+trap 'rm -f "$CAND_FILE"' EXIT
 
-# ── 妥当性チェック ───────────────────────────────────
-# 壊れた値を書き込むと、キーチェーンの正常な認証まで上書きして全滅するので必ず弾く。
-# （実際に2文字だけ入って5ジョブ全部に書かれた事故があった）
+{
+  # (1) 行そのものがトークン（パイプ取得なら折り返しが入らないので最有力）
+  printf '%s\n' "$TOKEN" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' \
+    | grep -E '^sk-ant-[A-Za-z0-9_-]+$' || true
+  # (2) 行内から切り出し（行頭に「Token:」等が付くケース）
+  printf '%s\n' "$TOKEN" | grep -oE 'sk-ant-[A-Za-z0-9_-]+' || true
+  # (3) 空白を全除去してから切り出し（ターミナル折り返しで改行が混入したケース）
+  printf '%s' "$TOKEN" | tr -d '[:space:]' | grep -oE 'sk-ant-[A-Za-z0-9_-]+' || true
+  # (4) 何も一致しない場合の最後の手段
+  printf '%s' "$TOKEN" | tr -d '[:space:]'
+} 2>/dev/null | awk 'length($0) >= 20' | awk '!seen[$0]++' > "$CAND_FILE"
+
+CAND_COUNT=$(wc -l < "$CAND_FILE" | tr -d ' ')
+if [ "${CAND_COUNT:-0}" -eq 0 ]; then
+  echo "❌ トークンらしき文字列を取り出せませんでした。書き込みは行いません。"
+  exit 1
+fi
+echo "🔎 候補を ${CAND_COUNT}通り の切り出し方で用意しました"
+
+# ── 実際に認証が通る候補だけを採用する ────────────────
+# launchd と同じ「クリーンな環境 + その候補だけ」で claude を1回呼ぶ。
+# 通らない値は絶対に plist に書かない（壊れた値で全ジョブを潰さないため）。
+verify_token() {
+  local T="$1" OUT
+  OUT=$(echo 'Reply with exactly: TOKEN_OK' | env -i \
+    PATH="$PATH" HOME="$HOME" LANG="ja_JP.UTF-8" \
+    CLAUDE_CODE_OAUTH_TOKEN="$T" \
+    claude -p --output-format=text 2>&1 | tail -5)
+  VERIFY_MSG=$(printf '%s' "$OUT" | head -1)
+  if printf '%s' "$OUT" | grep -qiE '401|403|expired|Failed to authenticate|Not logged in|Invalid|Unauthorized'; then
+    return 1
+  fi
+  return 0
+}
+
+TOKEN=""
+N=0
+while IFS= read -r C; do
+  [ -z "$C" ] && continue
+  N=$((N + 1))
+  echo "🔍 候補 ${N}/${CAND_COUNT} を検証中（${#C}文字 / 先頭 $(printf '%.12s' "$C")… / 末尾 …$(printf '%s' "$C" | tail -c 6)）"
+  if verify_token "$C"; then
+    TOKEN="$C"
+    echo "   ✅ この候補で認証できました"
+    break
+  fi
+  echo "   ✗ 不可: $VERIFY_MSG"
+done < "$CAND_FILE"
+
 if [ -z "$TOKEN" ]; then
-  echo "❌ 何も取得できませんでした。書き込みは行いません。"
-  exit 1
-fi
-if [ "${#TOKEN}" -lt 20 ]; then
-  echo "❌ ${#TOKEN}文字しかありません。貼り付けが効いていない可能性が高いです。書き込みは行いません。"
-  echo "   もう一度トークンをコピーしてから、--clipboard で実行してください。"
-  exit 1
-fi
-echo "✅ トークンらしき文字列を取り出しました（${#TOKEN}文字 / 先頭: $(printf '%.12s' "$TOKEN")…）"
-
-# ── 実際に使えるかを検証してから書き込む ──────────────
-# launchd と同じ「クリーンな環境 + このトークンだけ」で claude を1回呼ぶ。
-# ここを通らない値は絶対に plist に書かない（壊れた値で全ジョブを潰さないため）。
-echo "🔍 このトークンで実際に認証できるか検証中です（10〜30秒ほどかかります）..."
-VERIFY_OUT=$(echo 'Reply with exactly: TOKEN_OK' | env -i \
-  PATH="$PATH" HOME="$HOME" LANG="ja_JP.UTF-8" \
-  CLAUDE_CODE_OAUTH_TOKEN="$TOKEN" \
-  claude -p --output-format=text 2>&1 | tail -5)
-
-if echo "$VERIFY_OUT" | grep -qiE '401|expired|Failed to authenticate|Not logged in|Invalid authentication|Unauthorized'; then
-  echo "❌ このトークンでは認証できませんでした。書き込みは行いません。"
-  echo "   claude の応答: $(echo "$VERIFY_OUT" | head -1)"
-  echo "   claude setup-token でトークンを取り直してから、もう一度お試しください。"
+  echo ""
+  echo "❌ どの候補でも認証できませんでした。plist には一切書き込んでいません。"
+  echo "   考えられる原因: 発行したトークンが既に無効 / 取得した出力にトークンが含まれていない"
+  echo "   claude setup-token で発行し直してから、もう一度 --new でお試しください。"
   exit 1
 fi
 echo "✅ 認証成功を確認しました。plist に書き込みます"
