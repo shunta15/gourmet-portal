@@ -64,9 +64,17 @@ case "$MODE" in
     ;;
 esac
 
-# 前後の空白・改行を落とす（コピペ時に紛れ込みやすい）
-TOKEN="${TOKEN#"${TOKEN%%[![:space:]]*}"}"
-TOKEN="${TOKEN%"${TOKEN##*[![:space:]]}"}"
+# ── 正規化 ───────────────────────────────────────────
+# ターミナルは長いトークンを折り返して表示するため、コピーすると途中に改行が
+# 混入することがある（実際に発生）。トークン自体は空白を含まないので、
+# 空白・改行・タブを全部落としてから、トークンらしき部分だけを抜き出す。
+COMPACT=$(printf '%s' "$TOKEN" | tr -d '[:space:]')
+EXTRACTED=$(printf '%s' "$COMPACT" | grep -oE 'sk-ant-[A-Za-z0-9_-]+' | head -1 || true)
+if [ -n "$EXTRACTED" ]; then
+  TOKEN="$EXTRACTED"
+else
+  TOKEN="$COMPACT"
+fi
 
 # ── 妥当性チェック ───────────────────────────────────
 # 壊れた値を書き込むと、キーチェーンの正常な認証まで上書きして全滅するので必ず弾く。
@@ -80,13 +88,24 @@ if [ "${#TOKEN}" -lt 20 ]; then
   echo "   もう一度トークンをコピーしてから、--clipboard で実行してください。"
   exit 1
 fi
-case "$TOKEN" in
-  *[[:space:]]*)
-    echo "❌ 空白や改行が含まれています。トークンだけをコピーし直してください。書き込みは行いません。"
-    exit 1
-    ;;
-esac
-echo "✅ トークンを受け取りました（${#TOKEN}文字 / 先頭: $(printf '%.8s' "$TOKEN")…）"
+echo "✅ トークンらしき文字列を取り出しました（${#TOKEN}文字 / 先頭: $(printf '%.12s' "$TOKEN")…）"
+
+# ── 実際に使えるかを検証してから書き込む ──────────────
+# launchd と同じ「クリーンな環境 + このトークンだけ」で claude を1回呼ぶ。
+# ここを通らない値は絶対に plist に書かない（壊れた値で全ジョブを潰さないため）。
+echo "🔍 このトークンで実際に認証できるか検証中です（10〜30秒ほどかかります）..."
+VERIFY_OUT=$(echo 'Reply with exactly: TOKEN_OK' | env -i \
+  PATH="$PATH" HOME="$HOME" LANG="ja_JP.UTF-8" \
+  CLAUDE_CODE_OAUTH_TOKEN="$TOKEN" \
+  claude -p --output-format=text 2>&1 | tail -5)
+
+if echo "$VERIFY_OUT" | grep -qiE '401|expired|Failed to authenticate|Not logged in|Invalid authentication|Unauthorized'; then
+  echo "❌ このトークンでは認証できませんでした。書き込みは行いません。"
+  echo "   claude の応答: $(echo "$VERIFY_OUT" | head -1)"
+  echo "   claude setup-token でトークンを取り直してから、もう一度お試しください。"
+  exit 1
+fi
+echo "✅ 認証成功を確認しました。plist に書き込みます"
 
 # ── 書き込み ─────────────────────────────────────────
 UPDATED=0
