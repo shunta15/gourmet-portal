@@ -21,10 +21,26 @@ const norm = (s) =>
     .toLowerCase();
 
 // articleId ← 店舗名 の対応を作る（articleId は店舗名から記号除去したもの）
+// 🚨 中間一致（includes）は使わない。記事ID "OWL" が "SEAFOODBOWL SHOP IN TANASHI" に
+//    誤マッチして別店舗の行に書き込む事故が起きた（2026-08-02）。前方一致のみ・4文字以上に限定し、
+//    候補が複数ある曖昧なケースは書き込まずに警告する。
+function findRow(articleId) {
+  const ak = norm(articleId);
+  const exact = cands.filter((c) => norm(c.name) === ak);
+  if (exact.length === 1) return exact[0];
+  if (exact.length > 1) return null;
+  const pre = cands.filter((c) => {
+    const ck = norm(c.name);
+    if (Math.min(ck.length, ak.length) < 4) return false;
+    return ck.startsWith(ak) || ak.startsWith(ck);
+  });
+  return pre.length === 1 ? pre[0] : null;
+}
+
 const pairs = [];
 for (const a of applied) {
-  const hit = cands.find((c) => norm(c.name) === norm(a.articleId) || norm(c.name).includes(norm(a.articleId)) || norm(a.articleId).includes(norm(c.name)));
-  if (!hit) { console.log(`⚠️  候補行が見つからない: ${a.articleId}`); continue; }
+  const hit = findRow(a.articleId);
+  if (!hit) { console.log(`⚠️  候補行が一意に決まらない（書き込みません）: ${a.articleId}`); continue; }
   pairs.push({ ...a, sourceRow: hit.sourceRow, custId: hit.id, name: hit.name });
 }
 console.log(`対応づけ: ${pairs.length}/${applied.length}件`);

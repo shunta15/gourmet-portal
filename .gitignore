@@ -62,3 +62,6 @@ automation/imgcand2/
 automation/vcand8/
 automation/verify-art/
 automation/verify-manifest*.json
+
+# 自動化のヘルスアラート（ローカル状態ファイル）
+automation/HEALTH-ALERT.md

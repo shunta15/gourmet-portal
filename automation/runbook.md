@@ -1,6 +1,41 @@
 # マチノワ記事自動生成 Runbook
 
-**最終更新: 2026-05-24（複数エージェント監査反映済）**
+**最終更新: 2026-08-02（エラー恒久対策を反映）**
+
+---
+
+## 🚨 エラー恒久対策（2026-08-02）
+
+実測: 定期実行の全エラー197件のうち **153件=claude認証切れ / 32件=ネットワーク断**。
+93%が店舗と無関係な**環境起因**だった。それらを店舗ごとの「エラー」としてスプシに書くと
+24時間クールダウンに入り、滞留が候補一覧から消えて「正常」に見えてしまう。
+
+対策として以下を導入した。
+
+| 対策 | 実体 | 効果 |
+|---|---|---|
+| 実行前ヘルスチェック | `automation/preflight.sh` | ネットワークは最大8分バックオフ待ち。認証NGならスプシを1行も触らず撤退（exit 11） |
+| 環境起因はW列に書かない | `--status=clear` (`scripts/sheets-mark-done.mjs`) | ロックだけ外して次回そのまま再挑戦。クールダウンで滞留が隠れない |
+| 環境起因なら即中断 | `local-pipeline.sh` の `ENV_FAILURE` | 残りの行も必ず同じ理由で失敗するので、無駄な連打をしない |
+| 全数照合 | `scripts/health-report.mjs` | 「候補0件」を完了の根拠にしない。詰めOK行×W/X列で毎回数える |
+| 台帳の偽エントリ検査 | `automation/ledger-audit.mjs` | 記事が実在しないのに「生成済み」になった行を自動復活 |
+| 認証切れの通知 | `automation/HEALTH-ALERT.md` + macOS通知 | 見逃してもリポジトリを開けば必ず気づく。回復時に自動削除 |
+
+### 認証切れを根絶する（1回だけ）
+
+```bash
+claude setup-token
+bash automation/setup-oauth-token.sh <表示されたトークン>
+```
+
+長期トークンが launchd の 5ジョブ全部に環境変数として渡るため、以後 401 は起きない。
+
+### ⚠️ 部分一致で店舗を照合してはいけない
+
+記事ID `OWL`（門司の居酒屋）が `SEAFOODB(OWL) SHOP IN TANASHI` に中間一致し、
+西東京市の別店舗が「生成済み」として台帳登録され、**その行は永久に記事化されなかった**。
+`scripts/reconcile-ledger.mjs` と `automation/writeback-batch.mjs` の照合は
+**前方一致のみ・4文字以上・候補が複数なら登録しない**に変更済み。中間一致（`includes`）は使わない。
 
 このドキュメントは **schedule skill（CronCreate / cowork）によるリモートエージェント** が起動時に従う手順書。
 記事の中身の書き方は [`agent-teams/decisions/machinowa-article-spec.md`](../agent-teams/decisions/machinowa-article-spec.md) を必ず参照する。

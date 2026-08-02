@@ -65,8 +65,8 @@ if (!status) {
   console.error('❌ --status=done|processing|error|permanent_error または --url=... を指定');
   process.exit(1);
 }
-if (!['done', 'processing', 'error', 'permanent_error'].includes(status)) {
-  console.error(`❌ --status は done|processing|error|permanent_error。受け取った値: ${status}`);
+if (!['done', 'processing', 'error', 'clear', 'permanent_error'].includes(status)) {
+  console.error(`❌ --status は done|processing|error|clear|permanent_error。受け取った値: ${status}`);
   process.exit(1);
 }
 if (status === 'done' && !url) {
@@ -133,6 +133,13 @@ try {
     updates = [
       { range: `トスアップ元シート!${doneCol}${row}`, values: [[`処理中: ${jstNow()} JST`]] },
     ];
+  } else if (status === 'clear') {
+    // 環境起因の失敗（認証切れ・ネットワーク断など）で使う。
+    // 店舗側に非は無いので「エラー」を書かず、ロックだけ外して次回そのまま再挑戦させる。
+    // ※ error を書くと24時間クールダウンに入り、滞留が候補一覧から見えなくなる。
+    updates = [
+      { range: `トスアップ元シート!${doneCol}${row}`, values: [['']] },
+    ];
   } else if (status === 'permanent_error') {
     updates = [
       { range: `トスアップ元シート!${doneCol}${row}`, values: [[sanitize(`永久エラー: ${reason}`)]] },
@@ -153,6 +160,8 @@ try {
     console.log(`✅ row ${row} ${type}: ${doneCol}=済, ${urlCol}=${url}`);
   } else if (status === 'processing') {
     console.log(`🔒 row ${row} ${type}: ${doneCol}=処理中ロック取得`);
+  } else if (status === 'clear') {
+    console.log(`🔓 row ${row} ${type}: ${doneCol}=空に戻した（環境起因のため次回そのまま再試行）`);
   } else if (status === 'permanent_error') {
     console.log(`⛔ row ${row} ${type}: ${doneCol}=永久エラー: ${reason}`);
   } else {

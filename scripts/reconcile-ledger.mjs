@@ -99,26 +99,46 @@ for (const { dName, jUrl } of allRows) {
   }
 }
 
-// (b) 表記揺れ吸収: 未マッチの記事IDを、D列が「記事IDで始まる/記事IDを含む」行と照合し
-//     その行のD列キーをエイリアスとして names に登録（＋cid回収）。誤マッチ防止に3文字以上限定。
+// (b) 表記揺れ吸収: 未マッチの記事IDを、D列が「記事IDで始まる（またはその逆）」行と照合し
+//     その行のD列キーをエイリアスとして names に登録（＋cid回収）。
+//
+// 🚨 2026-08-02 事故と対策:
+//   旧実装は `dk.includes(idk)` で任意の位置の部分一致を許していた。その結果、
+//   記事ID "OWL"(門司の居酒屋) が "SEAFOODB(OWL) SHOP IN TANASHI" に誤マッチし、
+//   西東京市の別店舗が「生成済み」として台帳に登録された。その行は候補抽出から
+//   永久に消え、二度と記事が作られなかった（W列にはエラーが残るだけで誰も気づけない）。
+//   偽陽性の代償（店舗が永久に生成されない）は偽陰性より遥かに高いので、
+//   ・中間一致(includes)は廃止し、前方一致のみ
+//   ・4文字未満のIDは対象外
+//   ・候補が2件以上ある曖昧なケースは登録しない
+//   の3点で締める。
 let aliasAdded = 0;
 for (const id of ids) {
   const idk = nameKey(id);
   if (matchedKeys.has(idk)) continue;
-  if (idk.length < 3) continue;
+  if (idk.length < 4) continue;
+  const hits = [];
   for (const { dName, jUrl } of allRows) {
     if (!dName) continue;
     const dk = nameKey(dName);
     if (dk === idk) continue;
-    if (dk.startsWith(idk) || dk.includes(idk)) {
-      addEntry(led, { name: dName, articleId: id, url: `https://machinowa.tokyo/feature/${id}` });
-      const cid = cidFromUrl(jUrl);
-      if (cid) addEntry(led, { cid, name: dName, articleId: id, url: `https://machinowa.tokyo/feature/${id}` });
-      matchedKeys.add(idk);
-      aliasAdded++;
-      break;
+    // 前方一致のみ（短い方が長い方の先頭と一致すること）
+    if (dk.startsWith(idk) || idk.startsWith(dk)) {
+      if (Math.min(dk.length, idk.length) < 4) continue;
+      if (!hits.some((h) => nameKey(h.dName) === dk)) hits.push({ dName, jUrl });
     }
   }
+  if (hits.length === 0) continue;
+  if (hits.length > 1) {
+    console.log(`⚠️  記事ID "${id}" が ${hits.length}行に一致して曖昧なため、エイリアス登録を見送り: ${hits.map((h) => h.dName).join(' / ')}`);
+    continue;
+  }
+  const { dName, jUrl } = hits[0];
+  addEntry(led, { name: dName, articleId: id, url: `https://machinowa.tokyo/feature/${id}` });
+  const cid = cidFromUrl(jUrl);
+  if (cid) addEntry(led, { cid, name: dName, articleId: id, url: `https://machinowa.tokyo/feature/${id}` });
+  matchedKeys.add(idk);
+  aliasAdded++;
 }
 if (aliasAdded > 0) console.log(`📚 表記揺れエイリアス: ${aliasAdded}件を追加登録`);
 

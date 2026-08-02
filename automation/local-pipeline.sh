@@ -34,12 +34,60 @@ log "============================================================"
 log "マチノワ自動化 v2 開始 (label=$HOUR_LABEL)"
 log "============================================================"
 
+ALERT_FILE="$REPO/automation/HEALTH-ALERT.md"
+
+# === Step -1: 実行前ヘルスチェック（環境が壊れていたら1行も触らずに撤退） ===
+# 過去エラー197件のうち153件=認証切れ / 32件=ネットワーク断。
+# これらを店舗ごとの「エラー」としてスプシに書くと24hクールダウンで滞留が見えなくなる。
+log ""
+log "▼ Step -1: 実行前ヘルスチェック"
+bash "$REPO/automation/preflight.sh" 2>&1 | tee -a "$LOG_FILE"
+PREFLIGHT_EXIT=${PIPESTATUS[0]}
+
+if [ "$PREFLIGHT_EXIT" = "11" ]; then
+  log "❌ claude CLI の認証が切れている。スプシには一切書かずに終了する。"
+  cat > "$ALERT_FILE" <<ALERT_EOF
+# 🚨 マチノワ自動化が止まっています
+
+**検知時刻**: $(date '+%Y-%m-%d %H:%M') JST（$HOUR_LABEL の実行）
+
+**原因**: claude CLI の認証トークンが期限切れです。
+
+**復旧手順**（ターミナルで1回だけ実行すれば以後切れません）:
+
+    claude setup-token
+
+表示された長期トークンをコピーして、続けて次を実行してください:
+
+    bash automation/setup-oauth-token.sh <コピーしたトークン>
+
+これで定期実行（00/08/12/16/20時）に長期トークンが渡り、認証切れは起きなくなります。
+
+※ このファイルは認証が回復すると自動で削除されます。
+ALERT_EOF
+  notify "🚨 マチノワ自動化 停止中" "claude認証切れ。ターミナルで claude setup-token を実行してください"
+  exit 11
+fi
+
+if [ "$PREFLIGHT_EXIT" = "10" ]; then
+  log "❌ ネットワークに到達できない。スプシには一切書かずに終了する（次回の定期実行で再挑戦）。"
+  notify "⚠️ マチノワ自動化 スキップ" "ネットワーク未到達のため今回はスキップしました"
+  exit 10
+fi
+
+# ヘルスチェックを通ったのでアラートは解除
+[ -f "$ALERT_FILE" ] && rm -f "$ALERT_FILE" && log "  ✅ 過去のヘルスアラートを解除"
+
 # === Step 0: 処理済み台帳を再構築（IMPORTRANGE 行ズレ対策の自己修復） ===
 # teleapo-features.ts（生成済みの確定記録）+ スプシの cid から台帳を作り直す。
 # 以降の候補抽出は行番号でなく cid・店名で重複判定するため、行がズレても破綻しない。
 log ""
 log "▼ Step 0: 処理済み台帳 再構築"
 node scripts/reconcile-ledger.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳再構築に失敗（既存台帳で続行）"
+
+# 台帳の偽エントリ（記事が実在しないのに「生成済み」判定される行）を除去。
+# これを放置すると、その店舗は候補一覧から永久に消えて誰も気づけない。
+node automation/ledger-audit.mjs 2>&1 | tee -a "$LOG_FILE" || log "  ⚠️ 台帳監査に失敗（続行）"
 
 # === Step 0.5: スプシ表示の再同期（行ズレで剥がれた 済/URL を貼り直す） ===
 # IMPORTRANGE で行がズレると生成済みの店から W=済/X=URL が剥がれ、
@@ -59,14 +107,23 @@ FEAT_COUNT=$(echo "$CANDIDATES_JSON" | jq -r '.feature | length')
 log "feature 未処理: $FEAT_COUNT 件"
 
 if [ "$FEAT_COUNT" -eq 0 ]; then
-  log "✅ 候補0件、終了（台帳・スプシ表示は同期済み）"
-  notify "✅ マチノワ自動化 $HOUR_LABEL" "候補0件で正常終了"
-  exit 0
+  # 「候補0件」は「全部作り終えた」の証拠にならない（クールダウン・ロック・台帳偽エントリで
+  # 隠れることがある）。必ず全数照合して、本当に未処理ゼロかを確かめる。
+  log "候補0件 — 全数照合で裏を取る"
+  if node scripts/health-report.mjs 2>&1 | tee -a "$LOG_FILE"; then
+    log "✅ 未処理0件を全数照合で確認。正常終了"
+    notify "✅ マチノワ自動化 $HOUR_LABEL" "未処理0件（全数照合で確認）"
+    exit 0
+  fi
+  log "🚨 候補は0件だが、詰めOKなのに記事が無い行が残っている（上の一覧を参照）"
+  notify "🚨 マチノワ自動化 $HOUR_LABEL" "候補0件だが未処理の店舗が残っています。ログを確認してください"
+  exit 3
 fi
 
 # === Step 2: 各候補を claude に丸投げ ===
 SUCCESS=0
 ERROR=0
+ENV_FAILURE=0
 SUCCESS_URLS=""
 SUCCESS_URL_LIST=""  # 検証用: URLのみ改行区切り
 ERROR_LIST=""
@@ -258,13 +315,18 @@ PROMPT_EOF
     ERROR=$((ERROR+1))
     # 認証切れ(401)などで claude が即死した場合、ここを通る。
     # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
-    REASON="claude早期終了"
-    if grep -q "401\|Invalid authentication\|Not logged in" "$CLAUDE_LOG" 2>/dev/null; then
-      REASON="claude認証エラー(要 /login)"
-      log "  🔑 claude CLI の認証切れを検出。ターミナルで /login が必要"
+    # 認証切れ・ネットワーク断は「この店舗の問題」ではない。
+    # エラーとして書くと24hクールダウンに入り滞留が候補一覧から消えるので、
+    # ロックだけ外して（W列を空に戻して）即座にループを抜ける。残りの行も必ず同じ理由で失敗するため。
+    if grep -qiE "401|OAuth access token has expired|Failed to authenticate|Invalid authentication|Not logged in|EADDRNOTAVAIL|getaddrinfo|ENOTFOUND" "$CLAUDE_LOG" 2>/dev/null; then
+      log "  🔑 環境起因の失敗を検出（認証切れ or ネットワーク断）。W列は書かずに中断する"
+      node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=clear >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
+      ERROR_LIST="$ERROR_LIST\n  - $NAME: 環境起因(認証/ネットワーク)のため中断"
+      ENV_FAILURE=1
+      break
     fi
-    ERROR_LIST="$ERROR_LIST\n  - $NAME: $REASON"
-    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="$REASON" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
+    ERROR_LIST="$ERROR_LIST\n  - $NAME: claude早期終了"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="claude早期終了" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
   fi
 
   sleep 5
@@ -324,11 +386,34 @@ if [ $SUCCESS -gt 0 ]; then
   fi
 fi
 
-if [ $SUCCESS -gt 0 ]; then
+if [ "$ENV_FAILURE" = "1" ]; then
+  # 実行中に認証が切れた等。スプシは汚していないので、次回そのまま再挑戦できる。
+  cat > "$ALERT_FILE" <<ALERT_EOF
+# 🚨 マチノワ自動化が途中で止まりました
+
+**検知時刻**: $(date '+%Y-%m-%d %H:%M') JST（$HOUR_LABEL の実行）
+
+**原因**: 実行中に claude の認証切れ／ネットワーク断が発生しました。
+スプレッドシートには「エラー」を書いていないので、原因が直れば次回そのまま再開されます。
+
+**認証切れの場合の復旧手順**（1回だけでOK）:
+
+    claude setup-token
+    bash automation/setup-oauth-token.sh <表示されたトークン>
+
+※ このファイルは次に正常実行できた時点で自動削除されます。
+ALERT_EOF
+  notify "🚨 マチノワ自動化 中断" "認証切れ/ネットワーク断で中断。スプシは汚していません"
+elif [ $SUCCESS -gt 0 ]; then
   notify "✅ マチノワ自動化 $HOUR_LABEL" "成功 ${SUCCESS}件 / エラー ${ERROR}件"
 else
   notify "⚠️ マチノワ自動化 $HOUR_LABEL" "全件エラー ${ERROR}件"
 fi
+
+# 最後に必ず全数照合してログに残す（「候補0件だから完了」を根拠にしないため）
+log ""
+log "▼ 最終確認: 詰めOK行の全数照合"
+node scripts/health-report.mjs 2>&1 | tee -a "$LOG_FILE" || true
 
 find "$LOG_DIR" -name "*.log" -mtime +30 -delete 2>/dev/null
 
