@@ -7,6 +7,14 @@
 // 対策: 各行の「今いる店」が台帳(cid・店名)で生成済みなら、その行の W=済 / X=URL を
 //   貼り直す。行がどこにズレても、今の位置に正しい済/URLが付く。
 //
+// 🚨 2026-08-04 事故と対策:
+//   旧実装は「詰めOKリスト」= QUERYビュー を読み、**ビューの行番号で W/X を書いていた**。
+//   ビューはQUERYなので詰めOK行が1件増えるだけで全行が下にズレるが、手動列のW/Xは
+//   その場に残る。結果、8/4に「定食屋 ふくろう」が増えた瞬間に以降の行が総ズレし、
+//   「定食屋 ふくろう」の行に「ヌーラNulla」の記事URLが表示された（＝重複記事に見える）。
+//   → 読み書きとも「トスアップ元シート」本体のみを対象にする。本体の行番号は不動。
+//   ビューの W/X には一切書かない。
+//
 // 使い方: node scripts/sheets-sync-status.mjs
 
 import { google } from 'googleapis';
@@ -14,13 +22,12 @@ import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { loadLedger, cidFromUrl, nameKey } from './ledger.mjs';
+import { SHEET_ID, BODY_SHEET, IDX, FEATURE_TRIGGER, MIN_SOURCE_ROW } from './sheets-config.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
-const SHEET_ID = '1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk';
-const SHEET_NAME = '詰めOKリスト';
-const MIN_SOURCE_ROW = 2;   // 新シートは全行対象
-const IDX = { NAME: 3, URL: 10, P: 16, W: 22, X: 23 };  // 新構成: URL=K(10), 詰めステータス=Q(16)
+// 書き込み先は本体のみ。ビュー(詰めOKリスト)には絶対に書かない。
+const SHEET_NAME = BODY_SHEET;
 
 const norm = (v) => (v == null ? '' : String(v).replace(/^'+/, '').replace(/[　\s]+/g, ' ').trim());
 const escapeQuote = (s) => String(s).replace(/"/g, '""');
@@ -60,9 +67,9 @@ for (let i = 0; i < rows.length; i++) {
   const r = rows[i] || [];
   const name = norm(r[IDX.NAME]);
   const url = norm(r[IDX.URL]);
-  const p = norm(r[IDX.P]);
+  const p = norm(r[IDX.STATUS]);
   const w = norm(r[IDX.W]);
-  if (p !== '詰めOK') continue;
+  if (p !== FEATURE_TRIGGER) continue;
   if (!name && !url) continue;
 
   const pubUrl = generatedUrl(led, url, name);
@@ -81,6 +88,9 @@ for (let i = 0; i < rows.length; i++) {
 
 if (updates.length === 0) {
   console.log('✅ 同期の必要なし（すべての生成済み店に済/URLが付いている）');
+} else if (process.argv.includes('--dry')) {
+  console.log(`[dry] ${synced}行に書き込む予定（実際には書きません）:`);
+  updates.forEach((u) => console.log(`  ${u.range} = ${String(u.values[0][0]).slice(0, 70)}`));
 } else {
   await sheets.spreadsheets.values.batchUpdate({
     spreadsheetId: SHEET_ID,
