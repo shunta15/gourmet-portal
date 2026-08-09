@@ -22,7 +22,7 @@ import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { loadLedger, cidFromUrl, nameKey } from './ledger.mjs';
-import { SHEET_ID, BODY_SHEET, IDX, FEATURE_TRIGGER, MIN_SOURCE_ROW } from './sheets-config.mjs';
+import { SHEET_ID, BODY_SHEET, VIEW_SHEET, IDX, FEATURE_TRIGGER, MIN_SOURCE_ROW } from './sheets-config.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
@@ -86,15 +86,75 @@ for (let i = 0; i < rows.length; i++) {
   synced++;
 }
 
+const DRY = process.argv.includes('--dry');
+
 if (updates.length === 0) {
-  console.log('✅ 同期の必要なし（すべての生成済み店に済/URLが付いている）');
-} else if (process.argv.includes('--dry')) {
-  console.log(`[dry] ${synced}行に書き込む予定（実際には書きません）:`);
+  console.log('✅ 本体は同期の必要なし（すべての生成済み店に済/URLが付いている）');
+} else if (DRY) {
+  console.log(`[dry] 本体 ${synced}行に書き込む予定（実際には書きません）:`);
   updates.forEach((u) => console.log(`  ${u.range} = ${String(u.values[0][0]).slice(0, 70)}`));
 } else {
   await sheets.spreadsheets.values.batchUpdate({
     spreadsheetId: SHEET_ID,
     requestBody: { valueInputOption: 'USER_ENTERED', data: updates },
   });
-  console.log(`✅ ${synced}行を再同期（生成済みの店に 済 + URL を貼り直し）`);
+  console.log(`✅ 本体 ${synced}行を再同期（生成済みの店に 済 + URL を貼り直し）`);
+}
+
+// ══════════════════════════════════════════════════════════════
+// 詰めOKリスト（QUERYビュー）の W/X を、顧客管理IDで本体から作り直す
+//
+// このビューは「詰めOKの店だけを一覧で見る」ために作られたシートなので、
+// 表示が実態と食い違っていては存在意義がない。
+// QUERY結果は詰めOKが1件増えるだけで全行が下にズレるが、手動列のW/Xは
+// その場に残るため、放置すると必ずズレる（実際に28行ズレ・176行の残骸が発生した）。
+// → 毎回、行番号ではなく顧客管理ID(A列)で本体と突き合わせて全面的に書き直す。
+//   IDが無い行は空にする（残骸の掃除）。これで何行増減しても自ズレしない。
+// ══════════════════════════════════════════════════════════════
+const bodyById = new Map();
+for (const r of rows) {
+  const id = norm(r[IDX.ID]);
+  if (id) bodyById.set(id, { w: norm(r[IDX.W]), x: norm(r[IDX.X]) });
+}
+
+const viewRes = await sheets.spreadsheets.values.get({
+  spreadsheetId: SHEET_ID,
+  range: `${VIEW_SHEET}!A1:X1000`,
+  valueRenderOption: 'FORMATTED_VALUE',
+});
+const viewRows = viewRes.data.values || [];
+
+// 1行目は見出しなので触らない。2行目以降を作り直す。
+const grid = [];
+let filled = 0, cleared = 0, changed = 0;
+for (let i = 1; i < 1000; i++) {
+  const r = viewRows[i] || [];
+  const id = norm(r[IDX.ID]);
+  const curW = norm(r[IDX.W]);
+  const curX = norm(r[IDX.X]);
+  let w = '', x = '';
+  if (id && bodyById.has(id)) {
+    const b = bodyById.get(id);
+    w = b.w;
+    // 本体のX列はHYPERLINK式なので、表示値からURLを取り出して式を組み直す
+    const m = b.x.match(/https?:\/\/\S+/);
+    if (m) x = `=HYPERLINK("${encodeURI(m[0]).replace(/"/g, '""')}","${m[0].replace(/"/g, '""')}")`;
+    if (w || x) filled++;
+  } else if (curW || curX) {
+    cleared++;
+  }
+  if (curW !== w || (curX ? 1 : 0) !== (x ? 1 : 0)) changed++;
+  grid.push([w, x]);
+}
+
+if (DRY) {
+  console.log(`[dry] ${VIEW_SHEET}: ID一致で埋める ${filled}行 / 残骸を空にする ${cleared}行 （実際には書きません）`);
+} else {
+  await sheets.spreadsheets.values.update({
+    spreadsheetId: SHEET_ID,
+    range: `${VIEW_SHEET}!W2:X1000`,
+    valueInputOption: 'USER_ENTERED',
+    requestBody: { values: grid },
+  });
+  console.log(`✅ ${VIEW_SHEET} を顧客管理IDで再構築（${filled}行に反映 / 残骸 ${cleared}行を消去）`);
 }
