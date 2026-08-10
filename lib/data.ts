@@ -31,6 +31,7 @@ import {
   NEW_GUIDE_FEATURES_6,
 } from "./newGuideFeatures6";
 import { TELEAPO_FEATURE_ARTICLES } from "./teleapo-features";
+import { TELEAPO_INDEXABLE_IDS } from "./teleapoIndexable";
 import {
   KANSAI_FEATURES,
   KANSAI_FEATURE_ARTICLES,
@@ -10648,7 +10649,16 @@ export const FEATURES: Feature[] = [
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
 
-export const FEATURE_INDEXABLE_IDS = new Set(FEATURES.map((f) => f.id));
+// テレアポ特集のうち品質基準を満たすものも検索対象にする。
+// 実績（2026-07 Search Console）: クリックは全て店名検索で、店舗ページ /restaurant/r161
+// 「深夜ラーメンB」単独で月41クリック。テレアポ特集は同じ「店名検索の受け皿」なのに
+// 全件 noindex で、最も効いている導線を自ら塞いでいた。
+// ※ FEATURES（特集一覧に並ぶ街ガイド）には加えない。一覧の性格が変わるため、
+//    あくまで検索インデックスの対象に加えるだけにする。
+export const FEATURE_INDEXABLE_IDS = new Set([
+  ...FEATURES.map((f) => f.id),
+  ...TELEAPO_INDEXABLE_IDS,
+]);
 
 const GENERATED_FEATURE_ARTICLES: Record<string, FeatureArticle> = {};
 
@@ -10668,7 +10678,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEWGUIDE8_FEATURE_ARTICLES, // 街ガイド第8弾24本（index対象）
   ...NEWGUIDE9_FEATURE_ARTICLES, // 街ガイド第9弾24本（index対象）
   ...NEWGUIDE10_FEATURE_ARTICLES, // 街ガイド第10弾15本（index対象）
-  ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（noindex）
+  ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（品質基準を満たす分のみ index。teleapoIndexable.ts 参照）
 };
 
 export const SHORT_VIDEOS: ShortVideo[] = [
