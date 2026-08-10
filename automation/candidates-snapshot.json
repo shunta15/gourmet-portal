@@ -1,10 +1,4 @@
 {"feature":[
-  {"sourceRow":102,"id":"LA000101","name":"ありがとう","addr":"神奈川県藤沢市南藤沢２−１−２","url":"https://maps.google.com/?cid=13466376725522685470"},
-  {"sourceRow":103,"id":"LA000102","name":"食事・呑み処霧笛","addr":"北海道釧路市北大通１２丁目２","url":"https://maps.google.com/?cid=1654311348144060193"},
-  {"sourceRow":108,"id":"LA000107","name":"Ocean Harvest Cocomo","addr":"神奈川県鎌倉市長谷２丁目８−８ 鎌倉コートハウス ２F","url":"https://maps.google.com/?cid=2698268847674408334"},
-  {"sourceRow":109,"id":"LA000108","name":"SEAFOODBOWL SHOP IN TANASHI","addr":"東京都西東京市南町４丁目５−２ マツヤビル 壱番館102号","url":"https://maps.google.com/?cid=12622748488284227332"},
-  {"sourceRow":116,"id":"LA000115","name":"Cafe Fuu","addr":"東京都東村山市本町１丁目２３−２７","url":"https://maps.google.com/?cid=12134948307980531694"},
-  {"sourceRow":117,"id":"LA000116","name":"宇佐美軒","addr":"神奈川県茅ヶ崎市東海岸北１丁目１−５","url":"https://maps.google.com/?cid=7683579660600967372"},
-  {"sourceRow":121,"id":"LA000120","name":"和牛焼肉たつ竹","addr":"茨城県つくば市大井１３４８−３","url":"https://maps.google.com/?cid=3241784976779994766"},
-  {"sourceRow":125,"id":"LA000124","name":"ヌーラ -Nulla-","addr":"茨城県水戸市飯富町字中割５３２８−１","url":"https://maps.google.com/?cid=3440301329335472662"}
+  {"sourceRow":144,"id":"LA000143","name":"ライブカフェ Nobody Knows","addr":"広島県呉市中通２丁目７−１","url":"https://maps.google.com/?cid=11849198917366485001"},
+  {"sourceRow":162,"id":"LA000161","name":"Better Day's","addr":"山形県山形市末広町１６−１８","url":"https://maps.google.com/?cid=7428351625743928391"}
 ],"restaurant":[]}
