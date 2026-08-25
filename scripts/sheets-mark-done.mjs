@@ -46,7 +46,9 @@ const args = Object.fromEntries(
   })
 );
 
-const { type, row, url, reason, force } = args;
+const { type, row, url, reason } = args;
+// --force は値なしでも真として扱う（従来 --force だけだと空文字=falsy で効かなかった）
+const force = 'force' in args && args.force !== 'false' && args.force !== '0';
 let { status = url ? 'done' : null } = args;
 
 if (!['feature', 'restaurant'].includes(type)) {
@@ -155,6 +157,48 @@ try {
     spreadsheetId: SHEET_ID,
     requestBody: { valueInputOption: 'USER_ENTERED', data: updates },
   });
+
+  // === 記事台帳への追記（feature のみ） ===
+  // 詰めOKリストの S/T は「自分の行のA列(顧客管理ID)」で記事台帳を引く数式。
+  // ここに載せないと新規記事がビューに出ないので、済にしたら必ず台帳も更新する。
+  if (status === 'done' && type === 'feature') {
+    try {
+      const idRes = await sheets.spreadsheets.values.get({
+        spreadsheetId: SHEET_ID,
+        range: `トスアップ元シート!A${row}:D${row}`,
+      });
+      const gid = (idRes.data.values?.[0]?.[0] || '').toString().trim();
+      const shopName = (idRes.data.values?.[0]?.[3] || '').toString().trim();
+      const articleId = decodeURIComponent((url.match(/\/feature\/(.+)$/) || [])[1] || '');
+      if (!gid || !articleId) {
+        console.log(`⚠️  記事台帳: 顧客管理ID または 記事ID が取れず未追記 (row ${row})`);
+      } else {
+        const led = await sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: '記事台帳!A:C' });
+        const rows = led.data.values || [];
+        // 顧客管理IDで完全一致検索（中間一致は使わない）
+        let hit = -1;
+        for (let i = 1; i < rows.length; i++) {
+          if ((rows[i]?.[0] || '').toString().trim() === gid) { hit = i + 1; break; }
+        }
+        if (hit > 0) {
+          await sheets.spreadsheets.values.update({
+            spreadsheetId: SHEET_ID, range: `記事台帳!A${hit}:C${hit}`,
+            valueInputOption: 'RAW', requestBody: { values: [[gid, shopName, articleId]] },
+          });
+          console.log(`📒 記事台帳 更新: ${gid} / ${shopName} → ${articleId}`);
+        } else {
+          await sheets.spreadsheets.values.append({
+            spreadsheetId: SHEET_ID, range: '記事台帳!A:C',
+            valueInputOption: 'RAW', insertDataOption: 'INSERT_ROWS',
+            requestBody: { values: [[gid, shopName, articleId]] },
+          });
+          console.log(`📒 記事台帳 追記: ${gid} / ${shopName} → ${articleId}`);
+        }
+      }
+    } catch (e) {
+      console.log(`⚠️  記事台帳の更新に失敗（記事自体は成功）: ${e.message}`);
+    }
+  }
 
   if (status === 'done') {
     console.log(`✅ row ${row} ${type}: ${doneCol}=済, ${urlCol}=${url}`);

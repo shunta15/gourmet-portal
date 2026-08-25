@@ -1,7 +1,7 @@
 {
  "sheet": "詰めOKリスト",
  "range": "W1:X1000",
- "savedAt": "2026-08-09T23:43:39.073Z",
+ "savedAt": "2026-08-17T02:41:54.016Z",
  "values": [
   [
    "特集記事_済",
@@ -26,6 +26,10 @@
   [
    "済",
    "=HYPERLINK(\"https://machinowa.tokyo/feature/%E5%82%99%E5%BE%8C%E3%83%94%E3%82%B6\",\"https://machinowa.tokyo/feature/備後ピザ\")"
+  ],
+  [
+   "済",
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E9%81%8A%E6%A5%BD\",\"https://machinowa.tokyo/feature/遊楽\")"
   ],
   [
    "済",
@@ -133,652 +137,99 @@
   ],
   [
    "済",
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E5%AE%9A%E9%A3%9F%E5%B1%8B%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%86\",\"https://machinowa.tokyo/feature/定食屋ふくろう\")"
+  ],
+  [
+   "済",
    "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%83%8C%E3%83%BC%E3%83%A9Nulla\",\"https://machinowa.tokyo/feature/ヌーラNulla\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ヌーラNulla\",\"https://machinowa.tokyo/feature/ヌーラNulla\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E8%AE%83%E5%B2%90%E3%81%86%E3%81%A9%E3%82%93%E6%98%8E%E6%9C%88\",\"https://machinowa.tokyo/feature/讃岐うどん明月\")"
   ],
   [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/炭火家本舗なんばや\",\"https://machinowa.tokyo/feature/炭火家本舗なんばや\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/シトラス\",\"https://machinowa.tokyo/feature/シトラス\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/点心厨房桃花\",\"https://machinowa.tokyo/feature/点心厨房桃花\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/PARIGOT\",\"https://machinowa.tokyo/feature/PARIGOT\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/あそび割烹賢太朗\",\"https://machinowa.tokyo/feature/あそび割烹賢太朗\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/和ダイニングしろべえ\",\"https://machinowa.tokyo/feature/和ダイニングしろべえ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/くすの樹\",\"https://machinowa.tokyo/feature/くすの樹\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/小梟シャオシャオ\",\"https://machinowa.tokyo/feature/小梟シャオシャオ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/麺屋ふくじゅ\",\"https://machinowa.tokyo/feature/麺屋ふくじゅ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/焼肉遊\",\"https://machinowa.tokyo/feature/焼肉遊\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/焼肉ホルモン牛に恋したブタ野郎\",\"https://machinowa.tokyo/feature/焼肉ホルモン牛に恋したブタ野郎\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ラーメンまるひら\",\"https://machinowa.tokyo/feature/ラーメンまるひら\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/寿司の松よし\",\"https://machinowa.tokyo/feature/寿司の松よし\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/炭火焼肉絆繁（はんはん）\",\"https://machinowa.tokyo/feature/炭火焼肉絆繁（はんはん）\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/お食事処魚の光家\",\"https://machinowa.tokyo/feature/お食事処魚の光家\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/和洋創作料理楓\",\"https://machinowa.tokyo/feature/和洋創作料理楓\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/花見うどん・ラーメン\",\"https://machinowa.tokyo/feature/花見うどん・ラーメン\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/おばんざい処のりっぺ\",\"https://machinowa.tokyo/feature/おばんざい処のりっぺ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/すすきの浪花亭｜札幌和食\",\"https://machinowa.tokyo/feature/すすきの浪花亭｜札幌和食\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI\",\"https://machinowa.tokyo/feature/【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/キッチンケン\",\"https://machinowa.tokyo/feature/キッチンケン\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/梟\",\"https://machinowa.tokyo/feature/梟\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/Ristorantet.v.b\",\"https://machinowa.tokyo/feature/Ristorantet.v.b\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/大阪福島鮨ふみ\",\"https://machinowa.tokyo/feature/大阪福島鮨ふみ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/寿司美奈吉\",\"https://machinowa.tokyo/feature/寿司美奈吉\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/麺屋工藤\",\"https://machinowa.tokyo/feature/麺屋工藤\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/おばんざいと酒の店信～shin～\",\"https://machinowa.tokyo/feature/おばんざいと酒の店信～shin～\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/梁山泊\",\"https://machinowa.tokyo/feature/梁山泊\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/自家製手作りダレが自慢の店焼肉タカ屋\",\"https://machinowa.tokyo/feature/自家製手作りダレが自慢の店焼肉タカ屋\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/炭火の華艶\",\"https://machinowa.tokyo/feature/炭火の華艶\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/麺家本倉\",\"https://machinowa.tokyo/feature/麺家本倉\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/彩りダイニング陽まわり〜himawari〜\",\"https://machinowa.tokyo/feature/彩りダイニング陽まわり〜himawari〜\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/牛かつなかざき\",\"https://machinowa.tokyo/feature/牛かつなかざき\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ピノッキオ\",\"https://machinowa.tokyo/feature/ピノッキオ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/Giselleジゼル雑貨屋&カフェ\",\"https://machinowa.tokyo/feature/Giselleジゼル雑貨屋&カフェ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/SUNABAR\",\"https://machinowa.tokyo/feature/SUNABAR\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/沖縄ラーメンいっと\",\"https://machinowa.tokyo/feature/沖縄ラーメンいっと\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/paspa!\",\"https://machinowa.tokyo/feature/paspa!\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/２代目ラーメンイエロー\",\"https://machinowa.tokyo/feature/２代目ラーメンイエロー\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/こあの助\",\"https://machinowa.tokyo/feature/こあの助\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/小料理木下\",\"https://machinowa.tokyo/feature/小料理木下\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/麺屋野条\",\"https://machinowa.tokyo/feature/麺屋野条\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/鮨寄宮たいら\",\"https://machinowa.tokyo/feature/鮨寄宮たいら\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/蕎麦処一閑人\",\"https://machinowa.tokyo/feature/蕎麦処一閑人\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/道後ハイボール酒場\",\"https://machinowa.tokyo/feature/道後ハイボール酒場\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/コミュニティスペースほぼのら\",\"https://machinowa.tokyo/feature/コミュニティスペースほぼのら\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/名代肉まぶし焼肉つむぎ\",\"https://machinowa.tokyo/feature/名代肉まぶし焼肉つむぎ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ジョージレストラン\",\"https://machinowa.tokyo/feature/ジョージレストラン\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ラーメンうずまき\",\"https://machinowa.tokyo/feature/ラーメンうずまき\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/炭焼き鳥一の屋\",\"https://machinowa.tokyo/feature/炭焼き鳥一の屋\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/信ちゃんママ\",\"https://machinowa.tokyo/feature/信ちゃんママ\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/川内珈琲bycampgear12\",\"https://machinowa.tokyo/feature/川内珈琲bycampgear12\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/sakuraya\",\"https://machinowa.tokyo/feature/sakuraya\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/お食事処親味\",\"https://machinowa.tokyo/feature/お食事処親味\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/おじゃったもん屋\",\"https://machinowa.tokyo/feature/おじゃったもん屋\")"
-  ],
-  [
-   "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/酒蔵たから屋\",\"https://machinowa.tokyo/feature/酒蔵たから屋\")"
-  ],
-  [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/一食一笑小鉄\",\"https://machinowa.tokyo/feature/一食一笑小鉄\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%90%E3%83%ABLegame\",\"https://machinowa.tokyo/feature/イタリアンバルLegame\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"[手動スキップ:詰めOKリスト row 203]\",\"[手動スキップ:詰めOKリスト row 203]\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E8%95%8E%E7%B2%8B%E5%BA%B5\",\"https://machinowa.tokyo/feature/蕎粋庵\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/野菜の酒場。クサワケセカンド"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%AB%E3%83%95%E3%82%A7NobodyKnows\",\"https://machinowa.tokyo/feature/ライブカフェNobodyKnows\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/牧志プリースト"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E7%A7%8B%E6%A1%9C\",\"https://machinowa.tokyo/feature/秋桜\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/大衆酒場げっとら"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E5%A4%AA%E5%B9%B3%E6%A5%BD%E6%9C%AC%E5%BA%97\",\"https://machinowa.tokyo/feature/太平楽本店\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/とりえもん"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/nanohana\",\"https://machinowa.tokyo/feature/nanohana\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/カフェ・トム・トム"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E3%81%A8%E3%82%93%E3%81%A6%E3%81%8D%E5%A4%A7%E7%BF%94\",\"https://machinowa.tokyo/feature/らーめんとんてき大翔\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/大幸亭"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E6%AF%98%E6%B2%99%E9%96%80%E5%AF%BF%E5%8F%B8\",\"https://machinowa.tokyo/feature/毘沙門寿司\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/CafeLABOUQUET"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E6%97%AC%E8%8F%9C%E7%BE%8E%E5%91%B3%E5%8D%97%E9%A2%A8%E4%BA%AD\",\"https://machinowa.tokyo/feature/旬菜美味南風亭\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/BlissBurgerHawaii"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/BetterDays\",\"https://machinowa.tokyo/feature/BetterDays\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/魚幸処にしかわ"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/MAKOCHANNEL\",\"https://machinowa.tokyo/feature/MAKOCHANNEL\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/レストランマキ"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E9%BA%BA%E3%82%84%E3%81%9B%E3%82%93%E5%B4%8E\",\"https://machinowa.tokyo/feature/麺やせん崎\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/ほたる翔"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/MENRIN\",\"https://machinowa.tokyo/feature/MENRIN\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/じゃがじゃが"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E5%8F%82%E9%81%93%E9%85%92%E5%A0%B4%E9%B6%8F%E5%B1%85\",\"https://machinowa.tokyo/feature/参道酒場鶏居\")"
   ],
   [
    "済",
-   "https://machinowa.tokyo/feature/麺diningだいふく"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E4%B8%AD%E8%8F%AF%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0Fukuro\",\"https://machinowa.tokyo/feature/中華ダイニングFukuro\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/日本料理吉晶(きっしょう)\",\"https://machinowa.tokyo/feature/日本料理吉晶(きっしょう)\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%83%AB%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%AD%E3%83%80%E3%83%B3\",\"https://machinowa.tokyo/feature/ルリアンロダン\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/炭焼き日本料理三ツ井\",\"https://machinowa.tokyo/feature/炭焼き日本料理三ツ井\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E6%97%AC%E8%82%B4\",\"https://machinowa.tokyo/feature/旬肴\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/和彩弥嶋川\",\"https://machinowa.tokyo/feature/和彩弥嶋川\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E9%AD%9A%E7%BE%8E%E6%9C%AC%E5%BA%97\",\"https://machinowa.tokyo/feature/魚美本店\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/vegeeggLABO\",\"https://machinowa.tokyo/feature/vegeeggLABO\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%82%89%E3%81%B1%E3%82%93\",\"https://machinowa.tokyo/feature/らぱん\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ナナンテアnananthea\",\"https://machinowa.tokyo/feature/ナナンテアnananthea\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3%E3%83%90%E3%83%ABPALLO\",\"https://machinowa.tokyo/feature/スペインバルPALLO\")"
   ],
   [
    "済",
-   "=HYPERLINK(\"https://machinowa.tokyo/feature/ナナンテアnananthea\",\"https://machinowa.tokyo/feature/ナナンテアnananthea\")"
+   "=HYPERLINK(\"https://machinowa.tokyo/feature/%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AC%E6%A0%BC%E3%82%B8%E3%83%B3%E3%82%AE%E3%82%B9%E3%82%AB%E3%83%B3%E3%81%B2%E3%81%A4%E3%81%98%E3%82%84\",\"https://machinowa.tokyo/feature/北海道本格ジンギスカンひつじや\")"
   ]
  ]
 }

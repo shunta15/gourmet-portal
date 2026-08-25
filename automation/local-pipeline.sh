@@ -95,6 +95,12 @@ node automation/ledger-audit.mjs 2>&1 | tee -a "$LOG_FILE" || log "  ⚠️ 台�
 log "▼ Step 0.5: スプシ 済/URL 再同期"
 node scripts/sheets-sync-status.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 済/URL 再同期に失敗（続行）"
 
+# === Step 0.6: 記事台帳の同期（詰めOKリストのS/T/U列の供給源） ===
+# 詰めOKリストの S(済) / T(表示用URL) / U(コピー用URL) は、各行が自分のA列(顧客管理ID)で
+# 「記事台帳」を引く数式。ここを最新化しておけば行がどう並び替わってもズレない。
+log "▼ Step 0.6: 記事台帳 同期"
+node automation/sync-article-ledger.mjs --apply >> "$LOG_FILE" 2>&1 || log "  ⚠️ 記事台帳の同期に失敗（続行）"
+
 # === Step 1: 候補抽出 ===
 log ""
 log "▼ Step 1: 候補抽出"
