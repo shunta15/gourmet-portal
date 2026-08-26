@@ -421,6 +421,9 @@ fi
 
 # 最後に必ず全数照合してログに残す（「候補0件だから完了」を根拠にしないため）
 log ""
+log "▼ 抜け検知（成果物ベース）"
+node scripts/check-gaps.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 記事の抜けを検知（上のログ参照・デスクトップ通知済み）"
+
 log "▼ 最終確認: 詰めOK行の全数照合"
 node scripts/health-report.mjs 2>&1 | tee -a "$LOG_FILE" || true
 
