@@ -303,7 +303,10 @@ PROMPT_EOF
     log "  $FINAL_LINE"
     if echo "$FINAL_LINE" | grep -q "https://"; then
       SUCCESS=$((SUCCESS+1))
-      URL=$(echo "$FINAL_LINE" | grep -oE 'https://[^ ]+' | head -1)
+      # claude の出力文からURLを正規表現で拾うと、末尾のマークダウン(**)や
+      # 句読点まで取り込んで壊れたURLになる事故が発生した(2026-08-26 かじゅある割烹頼みち)。
+      # パイプライン自身が組み立てた SAFE_NAME を正とし、出力文は成功判定にのみ使う。
+      URL="https://machinowa.tokyo/feature/$SAFE_NAME"
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
