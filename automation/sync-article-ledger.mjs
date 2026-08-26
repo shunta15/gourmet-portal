@@ -39,7 +39,8 @@ for (let i = 1; i < body.length; i++) {
   let id = cid && byCid.get(cid);
   if (id && !arts.has(id)) id = null;
   if (id) viaCid++; else { id = byName.get(norm(name)); if (id) viaName++; else none++; }
-  if (id) rows.push([gid, name, id]);
+  // D列は「数式でないただの文字列」。ここが唯一、普通のコピペで貼れるURL。
+  if (id) rows.push([gid, name, id, `https://machinowa.tokyo/feature/${encodeURIComponent(id)}`]);
 }
 console.log(`台帳に載せる行: ${rows.length} (cid一致${viaCid} / 店名完全一致${viaName} / 記事なし${none}件は載せない)`);
 
@@ -54,11 +55,12 @@ if (!exists) {
   await s.spreadsheets.batchUpdate({ spreadsheetId: SHEET_ID, requestBody: { requests: [{ addSheet: { properties: { title: LEDGER } } }] } });
   console.log(`✅ 「${LEDGER}」シートを作成`);
 }
-await s.spreadsheets.values.clear({ spreadsheetId: SHEET_ID, range: `${LEDGER}!A:C` });
+await s.spreadsheets.values.clear({ spreadsheetId: SHEET_ID, range: `${LEDGER}!A:D` });
 await s.spreadsheets.values.update({
   spreadsheetId: SHEET_ID, range: `${LEDGER}!A1`,
+  // RAW = 数式として解釈させない。D列はただの文字列として入る
   valueInputOption: 'RAW',
-  requestBody: { values: [['顧客管理ID', '店舗名', '記事ID'], ...rows] },
+  requestBody: { values: [['顧客管理ID', '店舗名', '記事ID', 'URL(コピペ用・関数なし)'], ...rows] },
 });
 console.log(`✅ ${LEDGER} に ${rows.length} 行を書き込み`);
 
