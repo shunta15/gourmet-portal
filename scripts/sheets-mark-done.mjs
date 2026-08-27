@@ -184,14 +184,14 @@ try {
           await sheets.spreadsheets.values.update({
             spreadsheetId: SHEET_ID, range: `記事台帳!A${hit}:D${hit}`,
             valueInputOption: 'RAW',
-            requestBody: { values: [[gid, shopName, articleId, `https://machinowa.tokyo/feature/${encodeURIComponent(articleId)}`]] },
+            requestBody: { values: [[gid, shopName, articleId, `https://machinowa.tokyo/feature/${articleId}`]] },
           });
           console.log(`📒 記事台帳 更新: ${gid} / ${shopName} → ${articleId}`);
         } else {
           await sheets.spreadsheets.values.append({
             spreadsheetId: SHEET_ID, range: '記事台帳!A:D',
             valueInputOption: 'RAW', insertDataOption: 'INSERT_ROWS',
-            requestBody: { values: [[gid, shopName, articleId, `https://machinowa.tokyo/feature/${encodeURIComponent(articleId)}`]] },
+            requestBody: { values: [[gid, shopName, articleId, `https://machinowa.tokyo/feature/${articleId}`]] },
           });
           console.log(`📒 記事台帳 追記: ${gid} / ${shopName} → ${articleId}`);
         }

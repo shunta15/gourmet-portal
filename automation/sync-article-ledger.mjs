@@ -40,7 +40,8 @@ for (let i = 1; i < body.length; i++) {
   if (id && !arts.has(id)) id = null;
   if (id) viaCid++; else { id = byName.get(norm(name)); if (id) viaName++; else none++; }
   // D列は「数式でないただの文字列」。ここが唯一、普通のコピペで貼れるURL。
-  if (id) rows.push([gid, name, id, `https://machinowa.tokyo/feature/${encodeURIComponent(id)}`]);
+  // 【厳守】表記は日本語のまま。パーセントエンコードしない（ユーザー指示・2026-08-28）
+  if (id) rows.push([gid, name, id, `https://machinowa.tokyo/feature/${id}`]);
 }
 console.log(`台帳に載せる行: ${rows.length} (cid一致${viaCid} / 店名完全一致${viaName} / 記事なし${none}件は載せない)`);
 
@@ -76,14 +77,6 @@ await s.spreadsheets.values.update({
   spreadsheetId: SHEET_ID, range: `詰めOKリスト!S2:T${FILL_TO}`,
   valueInputOption: 'USER_ENTERED', requestBody: { values: f },
 });
-// U列 = コピー用URL（ASCIIのみ）。日本語URLは貼付先で自動リンク化されないため必須。
-const u = [];
-for (let n = 2; n <= FILL_TO; n++) {
-  u.push([`=IF($A${n}="","",IFERROR("https://machinowa.tokyo/feature/"&ENCODEURL(VLOOKUP($A${n},'${LEDGER}'!$A:$C,3,FALSE)),""))`]);
-}
-await s.spreadsheets.values.update({
-  spreadsheetId: SHEET_ID, range: `詰めOKリスト!U1:U${FILL_TO}`,
-  valueInputOption: 'USER_ENTERED',
-  requestBody: { values: [['コピー用URL(貼付先でリンク化)'], ...u] },
-});
-console.log(`✅ 詰めOKリスト S/T/U を数式化（顧客管理IDで自動引き・U列はASCII URL）`);
+// U列(旧ASCIIコピー用)は廃止。表記は日本語で統一するため役割が無くなった。
+await s.spreadsheets.values.clear({ spreadsheetId: SHEET_ID, range: `詰めOKリスト!U1:U${FILL_TO}` });
+console.log(`✅ 詰めOKリスト S/T を数式化（顧客管理IDで自動引き）／U列は廃止`);
