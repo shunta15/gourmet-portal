@@ -102,59 +102,18 @@ if (updates.length === 0) {
 }
 
 // ══════════════════════════════════════════════════════════════
-// 詰めOKリスト（QUERYビュー）の W/X を、顧客管理IDで本体から作り直す
+// 【2026-08-27 廃止】詰めOKリスト（ビュー）の W/X 再構築処理
 //
-// このビューは「詰めOKの店だけを一覧で見る」ために作られたシートなので、
-// 表示が実態と食い違っていては存在意義がない。
-// QUERY結果は詰めOKが1件増えるだけで全行が下にズレるが、手動列のW/Xは
-// その場に残るため、放置すると必ずズレる（実際に28行ズレ・176行の残骸が発生した）。
-// → 毎回、行番号ではなく顧客管理ID(A列)で本体と突き合わせて全面的に書き直す。
-//   IDが無い行は空にする（残骸の掃除）。これで何行増減しても自ズレしない。
+// かつてビューの W/X は手動列だったため、毎回ここで作り直していた。
+// 現在ビューの表示列は S(済) / T(表示用URL) / U(コピー用URL) の3列で、
+// いずれも「自分の行の $A列(顧客管理ID)で記事台帳を引く数式」になっており、
+// 行がどう並び替わっても自動で正しくなる。人もbotも書く必要がない。
+//
+// この処理を残していたため、毎朝の実行で W/X 列が復活し、
+// 「同じ内容の列が二重に並ぶ」「片方だけズレている」状態を再生産していた
+// （2026-08-27 にユーザーが発見）。よってビューへの書き込みは完全に削除した。
+//
+// ビュー側の維持は automation/sync-article-ledger.mjs が担当する。
+// ここから先はビューに一切書き込まない。
 // ══════════════════════════════════════════════════════════════
-const bodyById = new Map();
-for (const r of rows) {
-  const id = norm(r[IDX.ID]);
-  if (id) bodyById.set(id, { w: norm(r[IDX.W]), x: norm(r[IDX.X]) });
-}
-
-const viewRes = await sheets.spreadsheets.values.get({
-  spreadsheetId: SHEET_ID,
-  range: `${VIEW_SHEET}!A1:X1000`,
-  valueRenderOption: 'FORMATTED_VALUE',
-});
-const viewRows = viewRes.data.values || [];
-
-// 1行目は見出しなので触らない。2行目以降を作り直す。
-const grid = [];
-let filled = 0, cleared = 0, changed = 0;
-for (let i = 1; i < 1000; i++) {
-  const r = viewRows[i] || [];
-  const id = norm(r[IDX.ID]);
-  const curW = norm(r[IDX.W]);
-  const curX = norm(r[IDX.X]);
-  let w = '', x = '';
-  if (id && bodyById.has(id)) {
-    const b = bodyById.get(id);
-    w = b.w;
-    // 本体のX列はHYPERLINK式なので、表示値からURLを取り出して式を組み直す
-    const m = b.x.match(/https?:\/\/\S+/);
-    if (m) x = `=HYPERLINK("${encodeURI(m[0]).replace(/"/g, '""')}","${m[0].replace(/"/g, '""')}")`;
-    if (w || x) filled++;
-  } else if (curW || curX) {
-    cleared++;
-  }
-  if (curW !== w || (curX ? 1 : 0) !== (x ? 1 : 0)) changed++;
-  grid.push([w, x]);
-}
-
-if (DRY) {
-  console.log(`[dry] ${VIEW_SHEET}: ID一致で埋める ${filled}行 / 残骸を空にする ${cleared}行 （実際には書きません）`);
-} else {
-  await sheets.spreadsheets.values.update({
-    spreadsheetId: SHEET_ID,
-    range: `${VIEW_SHEET}!W2:X1000`,
-    valueInputOption: 'USER_ENTERED',
-    requestBody: { values: grid },
-  });
-  console.log(`✅ ${VIEW_SHEET} を顧客管理IDで再構築（${filled}行に反映 / 残骸 ${cleared}行を消去）`);
-}
+console.log('ℹ️  ビュー(詰めOKリスト)への書き込みは廃止済み。S/T/U の数式が自動で追随します。');
