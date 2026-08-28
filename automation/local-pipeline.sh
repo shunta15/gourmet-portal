@@ -422,6 +422,13 @@ fi
 # 最後に必ず全数照合してログに残す（「候補0件だから完了」を根拠にしないため）
 log ""
 log "▼ 抜け検知（成果物ベース）"
+# === 記事台帳の最終同期 ＋ D列のリンク化 ===
+# 生成後に増えた行を台帳へ反映し、D列を「日本語表示＋クリックできるリンク」にする。
+# ここを通さないと D列がただの黒い文字列になり、渡した先で押せない（2026-08-28 指摘）。
+log "▼ 記事台帳の最終同期とURLリンク化"
+node automation/sync-article-ledger.mjs --apply >> "$LOG_FILE" 2>&1 || log "  ⚠️ 記事台帳の同期に失敗（続行）"
+node automation/link-ledger-urls.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ D列のリンク化に失敗（要手動: node automation/link-ledger-urls.mjs）"
+
 node scripts/check-gaps.mjs >> "$LOG_FILE" 2>&1 || log "  ⚠️ 記事の抜けを検知（上のログ参照・デスクトップ通知済み）"
 
 log "▼ 最終確認: 詰めOK行の全数照合"
