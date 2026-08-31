@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS, RESTAURANTS, type Restaurant } from "@/lib/data";
+import { mapsUrlForRestaurant } from "@/lib/maps";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
 import Footer from "./Footer";
@@ -13,9 +14,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const region = REGIONS[r.region];
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    r.name + " " + r.address
-  )}`;
+  const mapsUrl = mapsUrlForRestaurant(r);
   const related = RESTAURANTS.filter(
     (x) => x.region === r.region && x.id !== r.id
   ).slice(0, 4);
@@ -204,7 +203,7 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
             )}
             {r.address && (
               <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + " " + r.address)}`}
+                href={mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="chip"
@@ -226,16 +225,6 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
                 Googleで詳細を調べる ↗
               </a>
             )}
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="chip"
-              style={{ padding: "16px 24px", borderRadius: 0 }}
-              data-cursor="MAP"
-            >
-              Google Mapで開く
-            </a>
             {r.source && !r.rating && (
               <a
                 href={r.source.url}

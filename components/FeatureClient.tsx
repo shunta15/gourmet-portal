@@ -4,6 +4,7 @@ import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
 import { FEATURES, type FeatureArticle } from "@/lib/data";
+import { mapsUrlForRankItem } from "@/lib/maps";
 import { useParallax, useReveal } from "@/lib/hooks";
 
 function FeatureHero({ article }: { article: FeatureArticle }) {
@@ -120,6 +121,23 @@ function RankingList({ article }: { article: FeatureArticle }) {
                     店舗詳細を見る →
                   </Link>
                 )}
+
+                <a
+                  href={mapsUrlForRankItem(r)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chip"
+                  style={{
+                    display: "inline-flex",
+                    marginTop: 18,
+                    marginLeft: r.href ? 10 : 0,
+                    padding: "12px 18px",
+                    borderRadius: 0,
+                  }}
+                  data-cursor="MAP"
+                >
+                  Google マップで開く ↗
+                </a>
               </div>
               <div className="imgs">
                 {r.images.map((im, j) => (
@@ -191,6 +209,23 @@ function RankingList({ article }: { article: FeatureArticle }) {
                 店舗詳細を見る →
               </Link>
             )}
+
+            <a
+              href={mapsUrlForRankItem(r)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chip"
+              style={{
+                display: "inline-flex",
+                marginTop: 18,
+                marginLeft: r.href ? 10 : 0,
+                padding: "12px 18px",
+                borderRadius: 0,
+              }}
+              data-cursor="MAP"
+            >
+              Google マップで開く ↗
+            </a>
           </div>
           <div className="imgs">
             {r.images.map((im, j) => (
