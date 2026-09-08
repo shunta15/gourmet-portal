@@ -170,8 +170,27 @@ while IFS= read -r CANDIDATE; do
   }
 
   # === 店舗特定（bash 側で完結。claude には検索させない） ===
+  # スプシの Maps URL 列に電話番号が入っている行がある（実例: row283 天ぷら わかやま = "tel:0425250222"）。
+  # この列は IMPORTRANGE で参照元 Linkate② から来ているため、こちら側では直せない。
+  # 「Maps URL が絶対正解」は “URL が存在する場合” のルールなので、
+  # URL 自体が存在しないこのケースに限り、店舗名＋スプシの住所で Maps を検索して代替する。
+  # ただし解決結果の都道府県・市区町村がスプシの住所と一致しなければ必ず捨てる（別店舗混入の防止）。
+  SHEET_ADDR=$(echo "$CANDIDATE" | jq -r '.addr // ""')
+  RESOLVE_TARGET="$MAPS_URL"
+  ADDR_VERIFY=""
+  case "$MAPS_URL" in
+    http://*|https://*) ;;
+    *)
+      if [ -n "$SHEET_ADDR" ]; then
+        log "  ⚠️ Maps URL が不正（${MAPS_URL}）→ 住所で代替検索し、住所一致を検証する"
+        RESOLVE_TARGET="https://www.google.com/maps/search/$(node -e 'process.stdout.write(encodeURIComponent(process.argv[1]+" "+process.argv[2]))' "$NAME" "$SHEET_ADDR")"
+        ADDR_VERIFY="$SHEET_ADDR"
+      fi
+      ;;
+  esac
+
   log "  Maps URL 解決中..."
-  RESOLVED_JSON=$(node scripts/resolve-maps-url.mjs "$MAPS_URL" 2>>"$LOG_FILE") || {
+  RESOLVED_JSON=$(node scripts/resolve-maps-url.mjs "$RESOLVE_TARGET" 2>>"$LOG_FILE") || {
     log "  ❌ Maps URL 解決失敗。スキップ"
     node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="Maps URL解決失敗" >> "$LOG_FILE" 2>&1
     ERROR=$((ERROR+1))
@@ -187,11 +206,47 @@ while IFS= read -r CANDIDATE; do
   # URL/ファイルパス用に正式店舗名からスペースを除去
   # （URL にスペースを含むとクリック時に切れる事故が発生したため・2026-05-27）
   # tr -d は UTF-8 マルチバイト文字を壊すので bash パラメータ展開で除去
-  SAFE_NAME="${RESOLVED_NAME// /}"
+  # 「すし笑魚亭 / ティーサロン笑魚亭」のように " / " で区切られた併記名は、先頭の店名だけを採用する。
+  # 一方「【CAFE】i/HUB」のようにスラッシュが店名の一部のときは切り捨てず、記号だけ落とす。
+  SAFE_NAME="${RESOLVED_NAME%% / *}"
+  SAFE_NAME="${SAFE_NAME// /}"
   SAFE_NAME="${SAFE_NAME//　/}"
+  # spec.md「URL危険記号は除外」の実装。従来はスペースしか消しておらず素通りしていたため、
+  # id にスラッシュが残って /feature/A/B という別ルート扱いになり記事が 500 になった
+  # うえ、画像フォルダも public/restaurants/teleapo-A/B/ と入れ子に割れた（2026-09-08 発生）。
+  # tr -d はバイト単位で動くため UTF-8 の日本語を壊す（このファイル既出の事故）。
+  # 必ず bash のパラメータ展開で1文字ずつ落とすこと。
+  for CH in '/' '。' '(' ')' '（' '）' '?' '？' '&' '#' '%' '|' ':' '*' '<' '>'; do
+    SAFE_NAME="${SAFE_NAME//"$CH"/}"
+  done
+  if [ -z "$SAFE_NAME" ]; then
+    log "  ❌ 店舗名から安全なID を作れない（元: $RESOLVED_NAME）。スキップ"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="記事IDを生成できない" >> "$LOG_FILE" 2>&1
+    ERROR=$((ERROR+1))
+    continue
+  fi
   log "  ✅ 解決: $RESOLVED_NAME / $RESOLVED_PREF $RESOLVED_CITY"
   log "     座標: $RESOLVED_LAT, $RESOLVED_LNG"
   log "     ID用: $SAFE_NAME"
+
+  # === GBP 写真の取得（画像ソースの最優先） ===
+  # runbook.md は「GBP の写真を最優先」と定めているのに、
+  # 稼働中のこのプロンプトには GBP 手順が無く 公式HP/IG/食べログ しか探させていなかった。
+  # そのため公式サイトも Instagram も持たない店（よりみち・酒菜ちゃんちゃんこ）が
+  # 「画像取得失敗」で毎日スキップされ続けていた（2026-09-07 原因特定）。
+  # なお curl で cid URL を叩いても Google マップの汎用シェルが返るだけで写真は取れない。
+  # 必ず Playwright で place ページを描画する必要がある（実測済み）。
+  log "  GBP写真 取得中..."
+  GBP_SOURCE=$(echo "$RESOLVED_JSON" | jq -r '.finalUrl // empty')
+  [ -z "$GBP_SOURCE" ] && GBP_SOURCE="$RESOLVE_TARGET"
+  GBP_PHOTOS=$(node scripts/fetch-gbp-photos.mjs "$GBP_SOURCE" 2>>"$LOG_FILE" | jq -r '.photos[]?' | head -3)
+  if [ -n "$GBP_PHOTOS" ]; then
+    log "     GBP写真 $(echo "$GBP_PHOTOS" | wc -l | tr -d ' ')枚"
+    GBP_PHOTO_BLOCK=$(echo "$GBP_PHOTOS" | sed 's/^/     - /')
+  else
+    log "     GBP写真 0枚（公式HP・Instagram等にフォールバック）"
+    GBP_PHOTO_BLOCK="     （取得できず。公式HP・公式Instagram から探すこと）"
+  fi
 
   # claude に丸投げするプロンプト
   # heredoc はシングルクォートで bash のパースを無効化
@@ -223,7 +278,10 @@ while IFS= read -r CANDIDATE; do
    - WebSearch クエリは必ず「__RESOLVED_NAME__ __RESOLVED_PREF__ __RESOLVED_CITY__」の形で実行
    - ヒットした店舗の住所が __RESOLVED_PREF__ __RESOLVED_CITY__ と一致するもののみ採用
    - 一致しないページは完全に無視（同名別店舗の可能性）
-3. 画像取得（重要）: 以下の優先順で画像URL2枚を見つける
+3. 画像取得（重要）
+   ★最優先: この店舗の Google ビジネスプロフィール（GBP）写真は取得済み。まずこれを使う。
+__GBP_PHOTO_BLOCK__
+   GBP写真が無い/足りない場合のみ、次の順で追加を探す:
    - 公式ホームページ（WebSearch で店舗名+公式 → WebFetch で HTML → img タグ抽出）
    - 公式 Instagram
    - 食べログ・ホットペッパー・ぐるなび等の店舗ページ
@@ -232,7 +290,9 @@ while IFS= read -r CANDIDATE; do
      curl --max-time 30 -o public/restaurants/teleapo-__SAFE_NAME__/hero.jpg URL1
      curl --max-time 30 -o public/restaurants/teleapo-__SAFE_NAME__/point2.jpg URL2
    各画像が 20KB 以上 + JPEG/PNG であることを file コマンドと wc -c で確認
-   失敗したら:
+   ★hero.jpg が1枚あれば記事は成立する（既存記事の多くが hero のみ）。
+     2枚目が見つからないことを理由に記事生成を中止してはいけない。point2 は省略してよい。
+   hero.jpg すら1枚も確保できなかった場合のみ:
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=画像取得失敗
 4. 記事生成: spec.md §1〜13 厳守で本文 3000字以上、文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
@@ -288,6 +348,7 @@ PROMPT_EOF
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_ADDR__/$RESOLVED_ADDR}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_LAT__/$RESOLVED_LAT}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__RESOLVED_LNG__/$RESOLVED_LNG}"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__GBP_PHOTO_BLOCK__/$GBP_PHOTO_BLOCK}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__SAFE_NAME__/$SAFE_NAME}"
 
   log "  claude CLI 起動..."

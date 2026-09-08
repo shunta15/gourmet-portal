@@ -65,6 +65,38 @@ await s.spreadsheets.values.update({
 });
 console.log(`✅ ${LEDGER} に ${rows.length} 行を書き込み`);
 
+// D列を即座にリンク化する。
+// 【なぜここでやるか】以前は link-ledger-urls.mjs をパイプラインの最後にだけ呼んでいた。
+// そのため、この同期(Step 0.6)から記事生成が終わる最後のリンク化までの約20〜30分間、
+// D列は「リンクの無いただの文字列」のまま放置され、その最中にユーザーが見ると
+// 「URLとして機能していない」状態になっていた（2026-09-07 指摘）。
+// パイプラインが途中で落ちた場合は復旧されないままだった。
+// 書き込みの直後に必ずリンクを貼ることで、剥がれている時間をなくす。
+{
+  const sheetId = (await s.spreadsheets.get({ spreadsheetId: SHEET_ID }))
+    .data.sheets.find(x => x.properties.title === LEDGER).properties.sheetId;
+  const reqs = rows.map((r, i) => {
+    const id = (r[2] || '').trim();
+    return {
+      updateCells: {
+        range: { sheetId, startRowIndex: i + 1, endRowIndex: i + 2, startColumnIndex: 3, endColumnIndex: 4 },
+        fields: 'userEnteredValue,textFormatRuns',
+        rows: [{
+          values: [id
+            // 表示は日本語のまま／リンク先だけエンコード（表記ルール厳守）
+            ? { userEnteredValue: { stringValue: `https://machinowa.tokyo/feature/${id}` },
+                textFormatRuns: [{ startIndex: 0, format: { link: { uri: `https://machinowa.tokyo/feature/${encodeURIComponent(id)}` } } }] }
+            : { userEnteredValue: { stringValue: '' } }],
+        }],
+      },
+    };
+  });
+  for (let i = 0; i < reqs.length; i += 200) {
+    await s.spreadsheets.batchUpdate({ spreadsheetId: SHEET_ID, requestBody: { requests: reqs.slice(i, i + 200) } });
+  }
+  console.log(`✅ ${LEDGER} D列 ${reqs.length}行を即リンク化（剥がれる時間をなくす）`);
+}
+
 // 詰めOKリスト S/T を数式化（各行が自分のA列を引く＝行ズレ不能）
 const f = [];
 for (let n = 2; n <= FILL_TO; n++) {
