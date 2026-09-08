@@ -17,7 +17,10 @@ const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 const arts = new Set(Object.keys((await import('../lib/teleapo-features.ts')).TELEAPO_FEATURE_ARTICLES));
 const led = JSON.parse(readFileSync(new URL('../automation/generated-ledger.json', import.meta.url), 'utf8'));
 const byCid = new Map(Object.entries(led.cids || {}).map(([c, e]) => [c, e.articleId]));
-const norm = x => (x || '').toString().replace(/[&’'　\s・。、,.\-·『』「」（）()～~！]/g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+// スラッシュも除去する。店名「【CAFE】i/HUB」に対し記事IDは「【CAFE】i-HUB」となるが、
+// 従来は '-' だけ落として '/' を残していたため両者が一致せず、完成済みの記事を
+// 「記事なし」と誤検知していた（2026-09-08）。重複生成に直結するので必ず揃えること。
+const norm = x => (x || '').toString().replace(/[&’'　\s・。、,.\-·／\/『』「」（）()～~！]/g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 const byName = new Map([...arts].map(id => [norm(id), id]));
 for (const [k, e] of Object.entries(led.names || {})) {
   const id = e && (e.articleId || e.id);
