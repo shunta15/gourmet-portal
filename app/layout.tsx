@@ -60,7 +60,7 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600&family=Zen+Kaku+Gothic+Antique:wght@500&family=JetBrains+Mono:wght@500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Noto+Sans+JP:wght@400;500&family=Zen+Kaku+Gothic+Antique:wght@500&family=JetBrains+Mono:wght@500&display=swap"
         />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />

@@ -113,7 +113,7 @@ export default async function OG({
             style={{
               display: "flex",
               fontSize: 120,
-              fontWeight: 600,
+              fontWeight: 700,
               lineHeight: 1.05,
               letterSpacing: -2,
               marginBottom: 16,
