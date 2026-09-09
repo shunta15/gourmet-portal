@@ -42,7 +42,7 @@ export default function OG() {
           style={{
             display: "flex",
             fontSize: 124,
-            fontWeight: 600,
+            fontWeight: 700,
             letterSpacing: -2,
             lineHeight: 1,
             marginBottom: 20,
