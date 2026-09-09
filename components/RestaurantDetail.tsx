@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS } from "@/lib/regions";
 import { sized } from "@/lib/imageUrl";
@@ -26,6 +26,21 @@ export default function RestaurantDetail({ r, related, shortVideos, geo }: Resta
   useParallax(heroRef, 0.18);
   const region = REGIONS[r.region];
   const mapsUrl = mapsUrlForRestaurant(r);
+  const mapPoints = useMemo(
+    () =>
+      geo
+        ? [
+            {
+              id: r.id,
+              name: r.name,
+              lat: geo.lat,
+              lng: geo.lng,
+              sub: r.address,
+            },
+          ]
+        : [],
+    [r.id, r.name, r.address, geo?.lat, geo?.lng]
+  );
 
   const heroImages =
     r.heroImages && r.heroImages.length > 0
@@ -277,18 +292,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo }: Resta
               </h2>
             </div>
 
-            <LeafletMap
-              points={[
-                {
-                  id: r.id,
-                  name: r.name,
-                  lat: geo.lat,
-                  lng: geo.lng,
-                  sub: r.address,
-                },
-              ]}
-              height={320}
-            />
+            <LeafletMap points={mapPoints} height={320} />
 
             <div style={{ marginTop: 32, paddingTop: 32, borderTop: "1px solid var(--line)" }}>
               <div style={{ marginBottom: 16 }}>
