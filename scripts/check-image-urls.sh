@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # 全ての画像参照（外部URLとローカルパス）が 200 / 実在するかを検査する。
 # 1つでも 404 があれば exit 1。pre-commit / CI から呼ばれる。
+#
+# デフォルト: git diff --cached の新規行（追加・変更）のみをスキャン。
+#            高速化（数十URL）・Wikimedia 429対策。
+# CHECK_ALL=1 or コミット外の手動実行: lib/ 全ファイル全URLをスキャン。
+#
 # macOS の bash 3.2 でも動くように mapfile/連想配列を使わない。
 set -eo pipefail
 
@@ -16,11 +21,19 @@ fi
 fail=0
 
 # 1) 外部画像URL（拡張子付き or images.unsplash.com）の疎通確認
-# data.ts 単独ではなく lib/ 配下を全部 scan する。import 元の
-# newGuideFeatures*.ts や curatedFeatures.ts の URL も対象にする。
+# データ取得: CHECK_ALL=1 or ステージ差分なしなら全スキャン、そうでなければ差分の +行のみ。
 remote_urls=$( {
-  grep -rEho 'https?://[a-zA-Z0-9./?&=_:%~+\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
-  grep -rEho 'https://images\.unsplash\.com/photo-[a-z0-9-]+(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
+  if [[ "${CHECK_ALL:-}" == "1" ]] || git -C "$ROOT" diff --cached --quiet -- lib; then
+    # 全スキャンモード（CHECK_ALL=1 or 差分なし）
+    grep -rEho 'https?://[a-zA-Z0-9./?&=_:%~+\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
+    grep -rEho 'https://images\.unsplash\.com/photo-[a-z0-9-]+(\?[^"]*)?' "$LIB_DIR" 2>/dev/null || true
+  else
+    # 差分モード：git diff --cached の +行のみをスキャン
+    git -C "$ROOT" diff --cached -U0 -- lib 2>/dev/null | grep '^+' | grep -v '^+++' | {
+      grep -Eho 'https?://[a-zA-Z0-9./?&=_:%~+\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)(\?[^"]*)?' 2>/dev/null || true
+      grep -Eho 'https://images\.unsplash\.com/photo-[a-z0-9-]+(\?[^"]*)?' 2>/dev/null || true
+    }
+  fi
 } | sort -u )
 
 if [[ -n "$remote_urls" ]]; then

@@ -1,7 +1,12 @@
 import Link from "next/link";
-import { NEIGHBORHOODS } from "@/lib/data";
+import { sized } from "@/lib/imageUrl";
+import type { Neighborhood } from "@/lib/regions";
 
-export default function Neighborhoods() {
+interface NeighborhoodsProps {
+  neighborhoods: Neighborhood[];
+}
+
+export default function Neighborhoods({ neighborhoods }: NeighborhoodsProps) {
   return (
     <section className="hoods">
       <div
@@ -21,7 +26,9 @@ export default function Neighborhoods() {
         </div>
       </div>
       <div className="hoods-list">
-        {NEIGHBORHOODS.map((n, i) => (
+        {neighborhoods.map((n, i) => {
+          const imgUrl = sized(n.image, 640);
+          return (
           <Link
             key={i}
             href={`/search?region=${n.region}&q=${encodeURIComponent(n.name)}`}
@@ -35,12 +42,24 @@ export default function Neighborhoods() {
             <div className="desc">{n.desc}</div>
             <div className="count">{n.count}</div>
             <div className="arrow">→</div>
-            <div
-              className="preview-strip"
-              style={{ backgroundImage: `url("${n.image}")` }}
-            />
+            <div className="preview-strip" style={{ position: "relative", overflow: "hidden" }}>
+              <img
+                src={imgUrl}
+                alt={n.name}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </Link>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

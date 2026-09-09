@@ -10,7 +10,8 @@ import {
   getAllFeatureArticleIds,
   isFeatureIndexable,
 } from "@/lib/db/features";
-import type { FeatureArticle } from "@/lib/data";
+import { FEATURES } from "@/lib/data";
+import type { FeatureArticle } from "@/lib/regions";
 
 export const revalidate = 60;
 export const dynamicParams = true;
@@ -73,7 +74,7 @@ export default async function FeaturePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      <FeatureClient article={article} />
+      <FeatureClient article={article} features={FEATURES} />
     </>
   );
 }

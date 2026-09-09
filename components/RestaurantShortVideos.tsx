@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { SHORT_VIDEOS, type ShortVideo } from "@/lib/data";
+import { sized } from "@/lib/imageUrl";
+import type { ShortVideo } from "@/lib/regions";
 
 function VideoPlayer({
   video,
@@ -44,10 +45,21 @@ function VideoPlayer({
           )
         ) : (
           <div className="video-fallback">
-            <div
-              className="thumb"
-              style={{ backgroundImage: `url("${video.thumbnail}")` }}
-            />
+            <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+              <img
+                src={sized(video.thumbnail, 640)}
+                alt={video.title}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
             <div className="msg">動画は準備中です</div>
           </div>
         )}
@@ -64,13 +76,17 @@ function VideoPlayer({
   );
 }
 
+interface RestaurantShortVideosProps {
+  restaurantId: string;
+  shortVideos: ShortVideo[];
+}
+
 export default function RestaurantShortVideos({
   restaurantId,
-}: {
-  restaurantId: string;
-}) {
+  shortVideos,
+}: RestaurantShortVideosProps) {
   const [active, setActive] = useState<ShortVideo | null>(null);
-  const video = SHORT_VIDEOS.find((v) => v.restaurantId === restaurantId);
+  const video = shortVideos.find((v) => v.restaurantId === restaurantId);
 
   return (
     <section className="article">
@@ -91,10 +107,21 @@ export default function RestaurantShortVideos({
             onClick={() => setActive(video)}
             data-cursor="WATCH"
           >
-            <div
-              className="thumb"
-              style={{ backgroundImage: `url("${video.thumbnail}")` }}
-            />
+            <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+              <img
+                src={sized(video.thumbnail, 640)}
+                alt={video.title}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
             <div className="play-btn" aria-hidden>
               <svg width="28" height="28" viewBox="0 0 22 22" fill="none">
                 <path d="M7 4.5v13l11-6.5L7 4.5z" fill="currentColor" />

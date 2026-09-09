@@ -83,8 +83,9 @@ export async function GET() {
 
     return NextResponse.json(parsed);
   } catch (e: any) {
+    console.error("[ai-insights]", e);
     return NextResponse.json(
-      { error: `AI 失敗: ${e?.message}` },
+      { error: "AI処理に失敗しました" },
       { status: 500 }
     );
   }

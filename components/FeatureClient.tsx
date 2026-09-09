@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
-import { FEATURES, type FeatureArticle } from "@/lib/data";
+import type { FeatureArticle, Feature } from "@/lib/regions";
 import { mapsUrlForRankItem } from "@/lib/maps";
 import { useParallax, useReveal } from "@/lib/hooks";
 
@@ -244,10 +244,16 @@ function RankingList({ article }: { article: FeatureArticle }) {
   );
 }
 
-function FeatureTabs({ activeId }: { activeId: string }) {
+function FeatureTabs({
+  activeId,
+  features,
+}: {
+  activeId: string;
+  features: Feature[];
+}) {
   return (
     <div className="tabs">
-      {FEATURES.map((t) => (
+      {features.map((t) => (
         <Link
           key={t.id}
           href={`/feature/${t.id}`}
@@ -300,7 +306,12 @@ function SideArticles({ article }: { article: FeatureArticle }) {
   );
 }
 
-export default function FeatureClient({ article }: { article: FeatureArticle }) {
+interface FeatureClientProps {
+  article: FeatureArticle;
+  features: Feature[];
+}
+
+export default function FeatureClient({ article, features }: FeatureClientProps) {
   useReveal();
   const A = article;
   const isGuide = A.articleType === "guide";
@@ -328,7 +339,7 @@ export default function FeatureClient({ article }: { article: FeatureArticle }) 
       />
 
       <div className="feat-body">
-        <FeatureTabs activeId={A.id} />
+        <FeatureTabs activeId={A.id} features={features} />
 
         <section className="article">
           <div className="article-head reveal">

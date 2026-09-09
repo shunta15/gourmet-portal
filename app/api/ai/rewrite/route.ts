@@ -68,8 +68,9 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ text: out, usage: msg.usage });
   } catch (e: any) {
+    console.error("[ai-rewrite]", e);
     return NextResponse.json(
-      { error: `AI 呼び出し失敗: ${e?.message ?? "unknown"}` },
+      { error: "AI処理に失敗しました" },
       { status: 500 }
     );
   }

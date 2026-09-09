@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { NATIONAL } from "@/lib/data";
+import { NATIONAL } from "@/lib/regions";
 import { useParallax, useTypewriter } from "@/lib/hooks";
 
 export default function Hero() {

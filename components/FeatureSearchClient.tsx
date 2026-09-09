@@ -3,12 +3,19 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState, useEffect, type FormEvent } from "react";
 import Footer from "./Footer";
-import { FEATURES, REGIONS, type Feature, type RegionKey } from "@/lib/data";
-import { getFeatureRegions } from "@/lib/featureRegions";
+import { REGIONS, type Feature, type RegionKey } from "@/lib/regions";
 
 type FeatureWithRegions = Feature & { regions: RegionKey[] };
 
-export default function FeatureSearchClient() {
+interface FeatureSearchClientProps {
+  features: Feature[];
+  featureRegions: Record<string, string[]>;
+}
+
+export default function FeatureSearchClient({
+  features: featureList,
+  featureRegions,
+}: FeatureSearchClientProps) {
   const router = useRouter();
   const sp = useSearchParams();
 
@@ -25,11 +32,11 @@ export default function FeatureSearchClient() {
   // 各 Feature に推定 region を付与
   const features: FeatureWithRegions[] = useMemo(
     () =>
-      FEATURES.map((f) => ({
+      featureList.map((f) => ({
         ...f,
-        regions: getFeatureRegions(f.id),
+        regions: (featureRegions[f.id] || []) as RegionKey[],
       })),
-    []
+    [featureList, featureRegions]
   );
 
   // タグの集計（FEATURES.tag を使う）

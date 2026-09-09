@@ -1,22 +1,27 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
+import { REGIONS } from "@/lib/regions";
+import type { RegionKey, RestaurantCardItem } from "@/lib/regions";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 import RestaurantCard from "./RestaurantCard";
 
 type RegionFilter = RegionKey | "ALL";
 const PAGE_SIZE = 8;
 
-export default function RestaurantGrid() {
+interface RestaurantGridProps {
+  restaurants: RestaurantCardItem[];
+}
+
+export default function RestaurantGrid({ restaurants }: RestaurantGridProps) {
   const [region, setRegion] = useState<RegionFilter>("ALL");
   const [cuisine, setCuisine] = useState("ALL");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const resetVisible = () => setVisible(PAGE_SIZE);
   const regional =
     region === "ALL"
-      ? RESTAURANTS
-      : RESTAURANTS.filter((r) => r.region === region);
+      ? restaurants
+      : restaurants.filter((r) => r.region === region);
   const filtered = regional.filter((r) => {
     if (cuisine === "ALL") return true;
     const group = CUISINE_GROUPS.find((g) => g.label === cuisine);

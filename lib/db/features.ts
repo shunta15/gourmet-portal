@@ -170,6 +170,41 @@ export async function getAllFeatureArticleIds(): Promise<string[]> {
 }
 
 /**
+ * サイトマップ用に全記事 ID と updated_at を返す（DB + data.ts の union）。
+ * DB の更新日時を反映し、data.ts のレコードは updated_at なしで返す。
+ */
+export async function getAllFeatureArticleIdsWithUpdatedAt(): Promise<
+  { id: string; updatedAt?: string }[]
+> {
+  const dbMap = new Map<string, string>();
+  try {
+    const { data, error } = await db()
+      .from("feature_articles")
+      .select("id, updated_at")
+      .limit(10000);
+    if (error) throw error;
+    for (const row of data ?? []) {
+      const r = row as { id: string; updated_at: string };
+      dbMap.set(r.id, r.updated_at);
+    }
+  } catch (e) {
+    console.warn("[db] getAllFeatureArticleIdsWithUpdatedAt DB read failed:", e);
+  }
+  const result: { id: string; updatedAt?: string }[] = [];
+  // DB から取得した ID は updated_at 付き
+  for (const [id, updatedAt] of dbMap) {
+    result.push({ id, updatedAt });
+  }
+  // data.ts からのフォールバック（DB にない ID）は updated_at なし
+  for (const id of Object.keys(FEATURE_ARTICLES)) {
+    if (!dbMap.has(id)) {
+      result.push({ id });
+    }
+  }
+  return result;
+}
+
+/**
  * 記事が公開対象（indexable）か。
  * 現状は data.ts の FEATURE_INDEXABLE_IDS をそのまま使用。
  * 0002 適用後に DB の noindex 列を使うよう拡張予定。

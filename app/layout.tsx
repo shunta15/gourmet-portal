@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://machinowa.tokyo"),
   title: "マチノワ / 街の輪 — 全国飲食店ポータル",
   description:
-    "全国47都道府県の飲食店を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。",
+    '全国の街の"いいお店"を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。',
   // app/icon.tsx と app/apple-icon.tsx が自動登録されるが、
   // 確実に Google / SNS が拾うように明示しておく
   icons: {
@@ -60,8 +60,14 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600&family=Zen+Kaku+Gothic+Antique:wght@500&family=JetBrains+Mono:wght@500;600&display=swap"
         />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://tblg.k-img.com" />
+        <link rel="dns-prefetch" href="https://tblg.k-img.com" />
+        <link rel="preconnect" href="https://upload.wikimedia.org" />
+        <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

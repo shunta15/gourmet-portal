@@ -1,7 +1,10 @@
-import { getNationalStats } from "@/lib/data";
+import type { Stat } from "@/lib/regions";
 
-export default function Stats() {
-  const stats = getNationalStats();
+interface StatsProps {
+  stats: Stat[];
+}
+
+export default function Stats({ stats }: StatsProps) {
   return (
     <section className="stats">
       <div className="section-head" style={{ padding: "0 0 40px" }}>

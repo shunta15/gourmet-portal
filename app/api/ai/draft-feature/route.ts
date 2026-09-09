@@ -126,8 +126,9 @@ export async function POST(req: NextRequest) {
     }
     html = await res.text();
   } catch (e: any) {
+    console.error("[ai-draft-feature] URL fetch error:", e);
     return NextResponse.json(
-      { error: `URL 取得エラー: ${e?.message ?? "unknown"}` },
+      { error: "コンテンツ取得に失敗しました" },
       { status: 400 }
     );
   }
@@ -174,9 +175,9 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ data: toolBlock.input, usage: msg.usage });
   } catch (e: any) {
-    console.error("[ai-draft-feature]", e);
+    console.error("[ai-draft-feature] AI error:", e);
     return NextResponse.json(
-      { error: `AI 呼び出し失敗: ${e?.message ?? "unknown"}` },
+      { error: "AI処理に失敗しました" },
       { status: 500 }
     );
   }

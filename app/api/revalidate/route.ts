@@ -39,14 +39,21 @@ export async function POST(req: NextRequest) {
   }
 
   const revalidated: string[] = [];
+  const failed: string[] = [];
   for (const p of paths) {
     try {
       revalidatePath(p);
       revalidated.push(p);
     } catch (e) {
       console.warn(`revalidate failed for ${p}:`, e);
+      failed.push(p);
     }
   }
 
-  return NextResponse.json({ revalidated, count: revalidated.length });
+  // If all paths failed, return 500. Otherwise, return 200 with both lists.
+  const status = revalidated.length === 0 && failed.length > 0 ? 500 : 200;
+  return NextResponse.json(
+    { revalidated, failed, count: revalidated.length },
+    { status }
+  );
 }

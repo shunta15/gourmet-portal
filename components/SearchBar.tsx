@@ -1,19 +1,20 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
+import { REGIONS, type RegionKey } from "@/lib/regions";
 
 export default function SearchBar({
   region,
   onRegion,
+  cuisines,
 }: {
   region: RegionKey;
   onRegion: (r: RegionKey) => void;
+  cuisines: string[];
 }) {
   const router = useRouter();
   const [q, setQ] = useState("");
   const [cuisine, setCuisine] = useState("ALL");
-  const cuisines = ["ALL", ...new Set(RESTAURANTS.map((r) => r.cuisine))];
 
   const navigate = (overrideQ?: string) => {
     const params = new URLSearchParams();

@@ -141,6 +141,42 @@ export async function getAllRestaurantIds(): Promise<string[]> {
 }
 
 /**
+ * サイトマップ用に全店舗 ID と updated_at を返す（DB + data.ts の union）。
+ * DB の更新日時を反映し、data.ts のレコードは updated_at なしで返す。
+ */
+export async function getAllRestaurantIdsWithUpdatedAt(): Promise<
+  { id: string; updatedAt?: string }[]
+> {
+  const dbMap = new Map<string, string>();
+  try {
+    const { data, error } = await db()
+      .from("restaurants")
+      .select("id, updated_at")
+      .eq("published", true)
+      .limit(10000);
+    if (error) throw error;
+    for (const row of data ?? []) {
+      const r = row as { id: string; updated_at: string };
+      dbMap.set(r.id, r.updated_at);
+    }
+  } catch (e) {
+    console.warn("[db] getAllRestaurantIdsWithUpdatedAt DB read failed:", e);
+  }
+  const result: { id: string; updatedAt?: string }[] = [];
+  // DB から取得した ID は updated_at 付き
+  for (const [id, updatedAt] of dbMap) {
+    result.push({ id, updatedAt });
+  }
+  // data.ts からのフォールバック（DB にない ID）は updated_at なし
+  for (const r of RESTAURANTS) {
+    if (!dbMap.has(r.id)) {
+      result.push({ id: r.id });
+    }
+  }
+  return result;
+}
+
+/**
  * リージョン別の店舗を返す。
  */
 export async function getRestaurantsByRegion(region: RegionKey): Promise<Restaurant[]> {

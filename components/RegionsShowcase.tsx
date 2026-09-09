@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sized } from "@/lib/imageUrl";
 import { REGIONS, getRegionStats, type RegionKey } from "@/lib/data";
 
 export default function RegionsShowcase({
@@ -27,6 +28,7 @@ export default function RegionsShowcase({
       <div className="regions-grid">
         {Object.entries(REGIONS).map(([k, r], i) => {
           const s = getRegionStats(k as RegionKey);
+          const imgUrl = sized(r.heroImages[0], 640);
           return (
             <Link
               key={k}
@@ -34,10 +36,21 @@ export default function RegionsShowcase({
               className={"region-card " + (k === region ? "active" : "")}
               data-cursor="ENTER"
             >
-              <div
-                className="img"
-                style={{ backgroundImage: `url("${r.heroImages[0]}")` }}
-              />
+              <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+                <img
+                  src={imgUrl}
+                  alt={r.name}
+                  loading="lazy"
+                  decoding="async"
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
               <div className="rc-body">
                 <div className="rc-no">
                   地域 / {String(i + 1).padStart(2, "0")}

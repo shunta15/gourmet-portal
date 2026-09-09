@@ -9,6 +9,8 @@ import {
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
+export const revalidate = 3600; // 1 hour
+
 export function generateStaticParams() {
   // 記事が1本もない地域はビルドしない
   const counts = getFeatureCountsByRegion();

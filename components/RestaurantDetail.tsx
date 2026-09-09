@@ -3,21 +3,26 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
-import { REGIONS, RESTAURANTS, type Restaurant } from "@/lib/data";
+import { REGIONS } from "@/lib/regions";
+import { sized } from "@/lib/imageUrl";
+import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
 import { mapsUrlForRestaurant } from "@/lib/maps";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
 import Footer from "./Footer";
 
-export default function RestaurantDetail({ r }: { r: Restaurant }) {
+interface RestaurantDetailProps {
+  r: Restaurant;
+  related: RestaurantCardItem[];
+  shortVideos: ShortVideo[];
+}
+
+export default function RestaurantDetail({ r, related, shortVideos }: RestaurantDetailProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const region = REGIONS[r.region];
   const mapsUrl = mapsUrlForRestaurant(r);
-  const related = RESTAURANTS.filter(
-    (x) => x.region === r.region && x.id !== r.id
-  ).slice(0, 4);
 
   const heroImages =
     r.heroImages && r.heroImages.length > 0
@@ -264,22 +269,38 @@ export default function RestaurantDetail({ r }: { r: Restaurant }) {
               gap: 12,
             }}
           >
-            {r.gallery.map((img, i) => (
+            {r.gallery.map((img, i) => {
+              const imgUrl = sized(img, 1200);
+              return (
               <div
                 key={i}
                 style={{
                   aspectRatio: "4/3",
-                  backgroundImage: `url("${img}")`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  position: "relative",
+                  overflow: "hidden",
                 }}
                 data-cursor="ZOOM"
-              />
-            ))}
+              >
+                <img
+                  src={imgUrl}
+                  alt={`${r.name} ギャラリー画像 ${i + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              );
+            })}
           </div>
         </section>
 
-        <RestaurantShortVideos restaurantId={r.id} />
+        <RestaurantShortVideos restaurantId={r.id} shortVideos={shortVideos} />
 
         {related.length > 0 && (
           <section className="article" style={{ borderBottom: "none" }}>

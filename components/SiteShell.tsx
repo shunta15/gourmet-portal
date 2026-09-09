@@ -24,7 +24,11 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
       {!isAdmin && <ProgressBar />}
       {!isAdmin && <Nav />}
       {!isAdmin && <SideLabel />}
-      {children}
+      {isAdmin ? (
+        children
+      ) : (
+        <main>{children}</main>
+      )}
     </>
   );
 }

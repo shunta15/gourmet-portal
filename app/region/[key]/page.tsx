@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import RegionPage from "@/components/RegionPage";
-import { REGIONS, type RegionKey } from "@/lib/data";
+import { REGIONS, type RegionKey, toCardItem } from "@/lib/regions";
 import { getRestaurantsByRegion } from "@/lib/db/restaurants";
+import { getFeaturesByRegion } from "@/lib/featureRegions";
+import { getRegionStats } from "@/lib/data";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
@@ -47,5 +49,15 @@ export default async function Page({
   if (!KEYS.includes(key as RegionKey)) notFound();
   // DB から該当 region の店舗を取得して Client へ渡す
   const restaurants = await getRestaurantsByRegion(key as RegionKey);
-  return <RegionPage regionKey={key as RegionKey} restaurants={restaurants} />;
+  const cardItems = restaurants.map(toCardItem);
+  const features = getFeaturesByRegion(key as RegionKey);
+  const stats = getRegionStats(key as RegionKey);
+  return (
+    <RegionPage
+      regionKey={key as RegionKey}
+      restaurants={cardItems}
+      features={features}
+      stats={stats}
+    />
+  );
 }

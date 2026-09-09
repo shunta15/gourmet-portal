@@ -53,11 +53,20 @@ export async function middleware(request: NextRequest) {
   // 404 を返すと Google から「死に URL」扱いされ、関連性のあった
   // 検索流入を失う。301 で /feature に集約することで、リンクジュースを
   // 保ちつつ、ユーザーを類似コンテンツに誘導する。
-  const featureMatch = pathname.match(/^\/feature\/([a-z0-9-]+)\/?$/);
-  if (featureMatch && DELETED_FEATURE_IDS.has(featureMatch[1])) {
-    const url = request.nextUrl.clone();
-    url.pathname = "/feature";
-    return NextResponse.redirect(url, 301);
+  const featureMatch = pathname.match(/^\/feature\/([^/]+)\/?$/);
+  if (featureMatch) {
+    let decoded: string;
+    try {
+      decoded = decodeURIComponent(featureMatch[1]);
+    } catch {
+      // malformed percent encoding, skip check
+      decoded = featureMatch[1];
+    }
+    if (DELETED_FEATURE_IDS.has(decoded)) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/feature";
+      return NextResponse.redirect(url, 301);
+    }
   }
 
   // /admin/* のみ Supabase セッション更新

@@ -1,9 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { SHORT_VIDEOS, RESTAURANTS } from "@/lib/data";
+import { sized } from "@/lib/imageUrl";
+import type { ShortVideo } from "@/lib/regions";
 
-export default function ShortVideos() {
+interface ShortVideosProps {
+  shortVideos: ShortVideo[];
+}
+
+export default function ShortVideos({ shortVideos }: ShortVideosProps) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
 
@@ -42,10 +47,10 @@ export default function ShortVideos() {
       </div>
 
       <div className="shorts-carousel" ref={scrollerRef}>
-        {SHORT_VIDEOS.length > 0 ? (
-          SHORT_VIDEOS.map((v) => {
-            const r = RESTAURANTS.find((x) => x.id === v.restaurantId);
+        {shortVideos.length > 0 ? (
+          shortVideos.map((v) => {
             const href = v.url ?? `/restaurant/${v.restaurantId}`;
+            const thumbUrl = sized(v.thumbnail, 640);
             return (
               <Link
                 key={v.id}
@@ -53,10 +58,21 @@ export default function ShortVideos() {
                 className="short-card"
                 data-cursor="WATCH"
               >
-                <div
-                  className="thumb"
-                  style={{ backgroundImage: `url("${v.thumbnail}")` }}
-                />
+                <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+                  <img
+                    src={thumbUrl}
+                    alt={v.title}
+                    loading="lazy"
+                    decoding="async"
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
                 <div className="play-btn" aria-hidden>
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
                     <path

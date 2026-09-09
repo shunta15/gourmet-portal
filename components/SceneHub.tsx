@@ -1,22 +1,19 @@
 "use client";
 import Link from "next/link";
-import { useMemo } from "react";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import { useReveal } from "@/lib/hooks";
-import { RESTAURANTS } from "@/lib/data";
+import type { RestaurantCardItem } from "@/lib/regions";
 import { SCENES, type Scene } from "@/lib/scenes";
 
-export default function SceneHub({ scene }: { scene: Scene }) {
-  useReveal();
+interface SceneHubProps {
+  scene: Scene;
+  matched: RestaurantCardItem[];
+  totalCount: number;
+}
 
-  const matched = useMemo(
-    () =>
-      RESTAURANTS.filter((r) =>
-        scene.matchTags.some((t) => (r.tags || []).includes(t))
-      ),
-    [scene]
-  );
+export default function SceneHub({ scene, matched, totalCount }: SceneHubProps) {
+  useReveal();
 
   const otherScenes = SCENES.filter((s) => s.slug !== scene.slug);
   const sceneNo = SCENES.findIndex((s) => s.slug === scene.slug) + 1;
@@ -149,7 +146,7 @@ export default function SceneHub({ scene }: { scene: Scene }) {
             <strong style={{ color: "var(--ink)" }}>
               {matched.length} 軒
             </strong>{" "}
-            / {RESTAURANTS.length} 店中
+            / {totalCount} 店中
           </div>
         </section>
 

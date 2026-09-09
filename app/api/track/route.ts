@@ -31,11 +31,13 @@ export async function POST(req: NextRequest) {
       session_id: req.headers.get("x-session-id") ?? null,
     });
     if (error) {
-      // 0002 未適用なら 503 で握る
-      return NextResponse.json({ skipped: true, reason: error.message }, { status: 200 });
+      // RLS エラーは 403、それ以外は 500
+      console.error("[track] DB error:", error);
+      return NextResponse.json({ skipped: true }, { status: 403 });
     }
     return NextResponse.json({ ok: true });
   } catch (e: any) {
-    return NextResponse.json({ error: e?.message }, { status: 400 });
+    console.error("[track] exception:", e);
+    return NextResponse.json({ error: "記録に失敗しました" }, { status: 500 });
   }
 }

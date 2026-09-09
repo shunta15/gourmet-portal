@@ -1,9 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { FEATURES } from "@/lib/data";
+import { sized } from "@/lib/imageUrl";
+import type { Feature } from "@/lib/regions";
 
-export default function FeaturesCarousel() {
+interface FeaturesCarouselProps {
+  features: Feature[];
+}
+
+export default function FeaturesCarousel({ features }: FeaturesCarouselProps) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
 
@@ -47,17 +52,30 @@ export default function FeaturesCarousel() {
       </div>
 
       <div className="features-carousel" ref={scrollerRef}>
-        {FEATURES.map((f) => (
+        {features.map((f) => {
+          const imgUrl = sized(f.image, 640);
+          return (
           <Link
             key={f.id}
             href={`/feature/${f.id}`}
             className="feature-card"
             data-cursor="READ"
           >
-            <div
-              className="img"
-              style={{ backgroundImage: `url("${f.image}")` }}
-            />
+            <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+              <img
+                src={imgUrl}
+                alt={f.title}
+                loading="lazy"
+                decoding="async"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
             <div className="big-no">{f.no}</div>
             <div className="meta">
               <span className="tag">{f.tag}</span>
@@ -85,7 +103,8 @@ export default function FeaturesCarousel() {
               </span>
             </div>
           </Link>
-        ))}
+          );
+        })}
       </div>
 
       <div className="carousel-ctl">

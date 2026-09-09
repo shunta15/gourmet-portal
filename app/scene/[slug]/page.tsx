@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import SceneHub from "@/components/SceneHub";
 import { SCENES, getSceneBySlug } from "@/lib/scenes";
+import { toCardItem } from "@/lib/regions";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonld";
+import { getAllRestaurants } from "@/lib/db/restaurants";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -46,9 +48,17 @@ export default async function ScenePage({
   const s = getSceneBySlug(slug);
   if (!s) notFound();
 
+  const restaurants = await getAllRestaurants();
+  const totalCount = restaurants.length;
+
+  // Filter restaurants that match scene tags server-side
+  const matched = restaurants
+    .filter((r) => s.matchTags.some((t) => (r.tags || []).includes(t)))
+    .map(toCardItem);
+
   const breadcrumb = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
-    { name: "シーン", url: `${BASE}/scene/${s.slug}` },
+    { name: "シーン", url: `${BASE}/scene` },
     { name: s.title, url: `${BASE}/scene/${s.slug}` },
   ]);
 
@@ -58,7 +68,7 @@ export default async function ScenePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SceneHub scene={s} />
+      <SceneHub scene={s} matched={matched} totalCount={totalCount} />
     </>
   );
 }

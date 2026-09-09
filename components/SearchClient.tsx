@@ -4,10 +4,14 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState, useEffect, type FormEvent } from "react";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
-import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
+import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 
-export default function SearchClient() {
+interface SearchClientProps {
+  restaurants: SearchItem[];
+}
+
+export default function SearchClient({ restaurants }: SearchClientProps) {
   const router = useRouter();
   const sp = useSearchParams();
 
@@ -28,15 +32,15 @@ export default function SearchClient() {
   // Aggregate all unique tags for the cloud
   const allTags = useMemo(() => {
     const counts = new Map<string, number>();
-    RESTAURANTS.forEach((r) => {
+    restaurants.forEach((r) => {
       r.tags?.forEach((t) => counts.set(t, (counts.get(t) || 0) + 1));
     });
     return [...counts.entries()].sort((a, b) => b[1] - a[1]);
-  }, []);
+  }, [restaurants]);
 
   const results = useMemo(() => {
     const needle = q.trim().toLowerCase();
-    return RESTAURANTS.filter((r) => {
+    return restaurants.filter((r) => {
       if (region && r.region !== region) return false;
       if (cuisine !== "ALL") {
         const group = CUISINE_GROUPS.find((g) => g.label === cuisine);
@@ -59,7 +63,7 @@ export default function SearchClient() {
       }
       return true;
     });
-  }, [q, region, cuisine, tag]);
+  }, [q, region, cuisine, tag, restaurants]);
 
   const buildUrl = (overrides: {
     q?: string;
@@ -218,7 +222,7 @@ export default function SearchClient() {
               <em style={{ color: "var(--accent)", fontSize: 48 }}>
                 {results.length}
               </em>{" "}
-              / {RESTAURANTS.length} 店
+              / {restaurants.length} 店
             </div>
           </div>
         </div>

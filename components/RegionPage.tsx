@@ -4,30 +4,28 @@ import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
-import {
-  REGIONS,
-  RESTAURANTS,
-  FEATURES,
-  getRegionStats,
-  type RegionKey,
-  type Restaurant,
-} from "@/lib/data";
+import { sized } from "@/lib/imageUrl";
+import { REGIONS } from "@/lib/regions";
+import type { RegionKey, RestaurantCardItem, Feature, Stat } from "@/lib/regions";
 import { useParallax, useReveal } from "@/lib/hooks";
+
+interface RegionPageProps {
+  regionKey: RegionKey;
+  restaurants: RestaurantCardItem[];
+  features: Feature[];
+  stats: Stat[];
+}
 
 export default function RegionPage({
   regionKey,
-  restaurants: restaurantsProp,
-}: {
-  regionKey: RegionKey;
-  restaurants?: Restaurant[];
-}) {
+  restaurants,
+  features,
+  stats,
+}: RegionPageProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const r = REGIONS[regionKey];
-  const stats = getRegionStats(regionKey);
-  // Server から DB 経由で渡された restaurants を優先。フォールバックは data.ts
-  const restaurants = restaurantsProp ?? RESTAURANTS.filter((x) => x.region === regionKey);
 
   useEffect(() => {
     document.body.setAttribute("data-region", regionKey);
@@ -39,8 +37,25 @@ export default function RegionPage({
         <div
           className="img"
           ref={heroRef}
-          style={{ backgroundImage: `url("${r.heroImages[0]}")` }}
-        />
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            backgroundImage: `url("${r.heroImages[0]}")`,
+          }}
+        >
+          <img
+            src={sized(r.heroImages[0], 1600)}
+            alt={r.name}
+            fetchPriority="high"
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </div>
         <div className="feat-hero-inner">
           <div>
             <div className="kicker">
@@ -140,17 +155,30 @@ export default function RegionPage({
           <div className="regions-grid">
             {Object.entries(REGIONS)
               .filter(([k]) => k !== regionKey)
-              .map(([k, rr], i) => (
+              .map(([k, rr], i) => {
+                const imgUrl = sized(rr.heroImages[0], 640);
+                return (
                 <Link
                   key={k}
                   href={`/region/${k}`}
                   className="region-card"
                   data-cursor="ENTER"
                 >
-                  <div
-                    className="img"
-                    style={{ backgroundImage: `url("${rr.heroImages[0]}")` }}
-                  />
+                  <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+                    <img
+                      src={imgUrl}
+                      alt={rr.name}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
                   <div className="rc-body">
                     <div className="rc-no">
                       地域 / {String(i + 1).padStart(2, "0")}
@@ -161,7 +189,8 @@ export default function RegionPage({
                     </p>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
           </div>
         </section>
 
@@ -181,23 +210,37 @@ export default function RegionPage({
             </div>
           </div>
           <div className="side-grid">
-            {FEATURES.slice(0, 4).map((f) => (
+            {features.slice(0, 4).map((f) => {
+              const imgUrl = sized(f.image, 640);
+              return (
               <Link
                 key={f.id}
                 href={`/feature/${f.id}`}
                 className="side-card"
                 data-cursor="READ"
               >
-                <div
-                  className="img"
-                  style={{ backgroundImage: `url("${f.image}")` }}
-                />
+                <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+                  <img
+                    src={imgUrl}
+                    alt={f.title}
+                    loading="lazy"
+                    decoding="async"
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
                 <div className="info">
                   <div className="t">{f.kicker}</div>
                   <h4>{f.title}</h4>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </section>
       </div>

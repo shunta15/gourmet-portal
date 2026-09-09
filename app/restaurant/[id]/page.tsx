@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import RestaurantDetail from "@/components/RestaurantDetail";
-import { REGIONS } from "@/lib/data";
+import { REGIONS, SHORT_VIDEOS, toCardItem } from "@/lib/regions";
 import {
   getRestaurantById,
   getAllRestaurantIds,
+  getRestaurantsByRegion,
 } from "@/lib/db/restaurants";
 import {
   buildRestaurantJsonLd,
@@ -82,6 +83,13 @@ export default async function RestaurantPage({
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
 
+  // Compute related restaurants server-side (same region, not self, slice 4)
+  const regionRestaurants = await getRestaurantsByRegion(r.region);
+  const related = regionRestaurants
+    .filter((x) => x.id !== r.id)
+    .slice(0, 4)
+    .map(toCardItem);
+
   return (
     <>
       <script
@@ -92,7 +100,7 @@ export default async function RestaurantPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <RestaurantDetail r={r} />
+      <RestaurantDetail r={r} related={related} shortVideos={SHORT_VIDEOS} />
     </>
   );
 }

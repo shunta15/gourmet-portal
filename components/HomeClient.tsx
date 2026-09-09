@@ -12,14 +12,32 @@ import SceneSection from "./SceneSection";
 import Neighborhoods from "./Neighborhoods";
 import Footer from "./Footer";
 import { useReveal } from "@/lib/hooks";
-import {
-  FEATURES,
-  SHORT_VIDEOS,
-  NEIGHBORHOODS,
-  type RegionKey,
-} from "@/lib/data";
+import type {
+  RegionKey,
+  Feature,
+  ShortVideo,
+  Neighborhood,
+  RestaurantCardItem,
+  Stat,
+} from "@/lib/regions";
 
-export default function HomeClient() {
+interface HomeClientProps {
+  features: Feature[];
+  shortVideos: ShortVideo[];
+  neighborhoods: Neighborhood[];
+  restaurants: RestaurantCardItem[];
+  cuisines: string[];
+  stats: Stat[];
+}
+
+export default function HomeClient({
+  features,
+  shortVideos,
+  neighborhoods,
+  restaurants,
+  cuisines,
+  stats,
+}: HomeClientProps) {
   const [region, setRegion] = useState<RegionKey>("tokyo");
   useReveal([region]);
 
@@ -30,7 +48,7 @@ export default function HomeClient() {
   return (
     <>
       <Hero />
-      <SearchBar region={region} onRegion={setRegion} />
+      <SearchBar region={region} onRegion={setRegion} cuisines={cuisines} />
       <Marquee
         items={[
           "拉麺",
@@ -43,23 +61,23 @@ export default function HomeClient() {
           "割烹",
         ]}
       />
-      {FEATURES.length > 0 && <FeaturesCarousel />}
-      <ShortVideos />
+      {features.length > 0 && <FeaturesCarousel features={features} />}
+      <ShortVideos shortVideos={shortVideos} />
       <Marquee
         dark
         reverse
         items={[
-          "街の“いいお店”、ぜんぶここに。",
+          "街の\"いいお店\"、ぜんぶここに。",
           "編集部厳選",
           "丁寧に選ぶ一軒",
           "全国を、舌で歩く。",
         ]}
       />
-      <RestaurantGrid />
-      <Stats />
+      <RestaurantGrid restaurants={restaurants} />
+      <Stats stats={stats} />
       <SceneSection />
       <RegionsShowcase region={region} />
-      {NEIGHBORHOODS.length > 0 && <Neighborhoods />}
+      {neighborhoods.length > 0 && <Neighborhoods neighborhoods={neighborhoods} />}
       <Footer />
     </>
   );

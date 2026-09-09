@@ -44,8 +44,9 @@ export async function POST(req: NextRequest) {
     const buf = await r.arrayBuffer();
     base64 = Buffer.from(buf).toString("base64");
   } catch (e: any) {
+    console.error("[ai-image-alt] image fetch error:", e);
     return NextResponse.json(
-      { error: `画像取得失敗: ${e?.message}` },
+      { error: "画像取得に失敗しました" },
       { status: 400 }
     );
   }
@@ -82,8 +83,9 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ alt, usage: msg.usage });
   } catch (e: any) {
+    console.error("[ai-image-alt] AI error:", e);
     return NextResponse.json(
-      { error: `AI 失敗: ${e?.message}` },
+      { error: "AI処理に失敗しました" },
       { status: 500 }
     );
   }
