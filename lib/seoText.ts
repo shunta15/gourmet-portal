@@ -44,6 +44,19 @@ function stationOf(nearest: string | undefined): string | null {
   return m ? m[1] : null;
 }
 
+/**
+ * 駅名から事業者名の接頭辞を落とす（「JR垂水駅」→「垂水駅」）。
+ * 紹介文との重複判定に使うほか、タイトルの表示も短く自然になる
+ * （「地下鉄大通」→「大通」）。落とすと 1 文字以下になる場合は元のまま返す。
+ */
+function stripOperator(station: string): string {
+  const bare = station.replace(
+    /^(JR東日本|JR西日本|JR東海|JR九州|JR北海道|JR|東京メトロ|都営地下鉄|都営|地下鉄|市営地下鉄|市営|大阪メトロ|阪急|阪神|近鉄|京阪|南海|名鉄|西鉄|東急|京急|京成|小田急|西武|東武|相鉄)/,
+    ""
+  );
+  return bare.replace(/駅$/, "").length >= 2 ? bare : station;
+}
+
 /** 「… 徒歩9分」→「徒歩9分」 */
 function walkOf(nearest: string | undefined): string | null {
   const m = (nearest || "").match(/徒歩\s*約?\s*(\d+)\s*分/);
@@ -78,7 +91,7 @@ type SeoRestaurant = {
 /** 場所を表す語。最寄り駅名 > area の末尾要素 */
 function placeOf(r: SeoRestaurant): string {
   const st = stationOf(r.nearest);
-  if (st) return st.replace(/駅$/, "");
+  if (st) return stripOperator(st).replace(/駅$/, "");
   return String(r.area || "")
     .split(/[・／/]/)
     .pop()!
@@ -114,7 +127,7 @@ export function restaurantDescription(r: SeoRestaurant): string {
     hs && `営業時間${hs}`,
     cl && `定休日${cl}`,
     // 最寄り駅は本文に出ていない店舗だけ補う（同じ情報を二度書かない）
-    st && !descText.includes(st.replace(/駅$/, ""))
+    st && !descText.includes(stripOperator(st).replace(/駅$/, ""))
       ? wk
         ? `${st}${wk}`
         : st
