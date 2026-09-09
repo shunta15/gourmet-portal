@@ -11,6 +11,11 @@ import {
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
 import { GEO } from "@/lib/geo";
+import {
+  restaurantTitle,
+  restaurantDescription,
+  cuisineLabel,
+} from "@/lib/seoText";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -34,17 +39,20 @@ export async function generateMetadata({
   const r = await getRestaurantById(id);
   if (!r) return { title: "店舗が見つかりません — マチノワ" };
   const region = REGIONS[r.region];
-  const cuisineLabel = r.cuisine.split(" / ").pop() || r.cuisine;
-  const title = `${r.name} | ${r.area}の${cuisineLabel} — マチノワ`;
+  const cuisine = cuisineLabel(r.cuisine);
+  // 指名検索の意図（営業時間・定休日・場所）に応えるスニペットを生成する。
+  // 生成ルールと背景は lib/seoText.ts を参照。
+  const title = restaurantTitle(r);
+  const description = restaurantDescription(r);
   return {
     title,
-    description: r.desc,
+    description,
     alternates: {
       canonical: `/restaurant/${r.id}`,
     },
     openGraph: {
       title: r.name,
-      description: r.desc,
+      description,
       url: `${BASE}/restaurant/${r.id}`,
       images: [r.image.startsWith("http") ? r.image : `${BASE}${r.image}`],
       type: "article",
@@ -53,13 +61,13 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: r.name,
-      description: r.desc,
+      description,
       images: [r.image.startsWith("http") ? r.image : `${BASE}${r.image}`],
     },
     keywords: [
       r.name,
       r.area,
-      cuisineLabel,
+      cuisine,
       region?.name,
       "マチノワ",
       ...(r.tags || []),
