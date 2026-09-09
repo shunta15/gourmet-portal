@@ -534,7 +534,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .nav .brand{font-size:14px}
   .nav .brand small{font-size:9px}
   .nav ul{gap:14px; font-size:10px; letter-spacing:.1em}
-  .nav ul a{padding:12px 8px; min-height:44px; display:inline-flex; align-items:center}
+  .nav ul a{padding:12px 4px; min-height:44px; display:inline-flex; align-items:center; white-space:nowrap}
 
   .hero{height:80dvh; min-height:0; max-height:none}
   .hero-inner{padding-top:100px}
