@@ -39,7 +39,7 @@ export default function RegionsShowcase({
               className={"region-card " + (k === region ? "active" : "")}
               data-cursor="ENTER"
             >
-              <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+              <div className="img">
                 <img
                   src={imgUrl}
                   alt={r.name}

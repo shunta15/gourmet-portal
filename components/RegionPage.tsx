@@ -195,7 +195,7 @@ export default function RegionPage({
                   className="region-card"
                   data-cursor="ENTER"
                 >
-                  <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+                  <div className="img">
                     <img
                       src={imgUrl}
                       alt={rr.name}
@@ -250,7 +250,7 @@ export default function RegionPage({
                 className="side-card"
                 data-cursor="READ"
               >
-                <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+                <div className="img">
                   <img
                     src={imgUrl}
                     alt={f.title}

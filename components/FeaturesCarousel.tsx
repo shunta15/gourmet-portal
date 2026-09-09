@@ -61,7 +61,7 @@ export default function FeaturesCarousel({ features }: FeaturesCarouselProps) {
             className="feature-card"
             data-cursor="READ"
           >
-            <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+            <div className="img">
               <img
                 src={imgUrl}
                 alt={f.title}

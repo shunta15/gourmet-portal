@@ -10,7 +10,7 @@ export default function RestaurantCard({ r }: { r: RestaurantCardItem }) {
       className={"rest-card " + (r.shape || "")}
       data-cursor="VIEW"
     >
-      <div className="img" style={{ position: "relative", overflow: "hidden" }}>
+      <div className="img">
         <img
           src={cardImageUrl}
           alt={r.name}
