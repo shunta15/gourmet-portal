@@ -18942,8 +18942,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     quoteCite: "マチノワ編集部",
     closing: "予定がきっちり決まっていない日ほど、この店は使いやすい。十一時半から二十二時まで通しで開いているので、待ち合わせの時間を店の都合に合わせなくていい。先に押さえておくのは三つ。水曜が定休であること、料理のラストオーダーが二十一時であること、ドリンクは二十一時三十分まであること。これだけ頭に入れておけば、あとは行きたくなった時間に向かえる。昼に使うなら十一時半から十五時のランチメニューが軸になる。オムライスやハンバーグなら千円前後、Woody Lunchで1,700円、ドリンクを付けても220円足すだけだ。一人でも入りやすい価格帯で、所要は四十分から一時間を見ておけば足りる。二人で落ち着いて話したい日は、半個室が空いているかを先に確かめてから向かいたい。レンガの壁とソファのあるあの一角は席数が限られるので、狙うなら早い時間か、混み合う前の夕方が現実的だろう。夜はスキレットの焼き野菜が付くぶん一皿の満足度が上がり、予算は千円台後半から三千円弱を見ておけばいい。駐車場はないため、石橋阪大前の改札から歩くのが前提になる。訪問前に公式情報での確認を。気になることがあれば072-761-5151に一本かけてから出るのが確実だ。",
   },
-  "souvenir-スヴニール-": {
-    id: "souvenir-スヴニール-",
+  "souvenir": {
+    id: "souvenir",
     no: "",
     articleType: "guide" as const,
     kicker: "SOUVENIR NISHIO",
@@ -18954,8 +18954,8 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     date: "2026-09-10",
     reading: "",
     author: "マチノワ編集部",
-    heroImage: "/restaurants/teleapo-souvenir-スヴニール-/hero.jpg",
-    ogImage: "/restaurants/teleapo-souvenir-スヴニール-/hero.jpg",
+    heroImage: "/restaurants/teleapo-souvenir/hero.jpg",
+    ogImage: "/restaurants/teleapo-souvenir/hero.jpg",
     ranking: [
       {
         rank: "POINT 01",
@@ -18979,7 +18979,7 @@ export const TELEAPO_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         area: "西尾市",
         purpose: "他店と違う特徴、通いたくなる理由を書く",
         desc: "シェフは十年を超える鉄板焼きの経験を持っている。その経験は、一貫性を持つスタイルとして現れている。鮮魚を焼く時の温度感、野菜を炒める時の音、和牛ステーキに向き合う姿勢——それぞれが明確な意図を持って組み立てられている。新しい技法や奇抜な組み合わせを求めるのではなく、素材と火の関係を深く理解している店だと伝わる。古民家という空間も、この経験を補強している。リノベーションされているが、木の梁や土壁の一部が残されており、その歴史感の中で鉄板焼きという『現在進行形の料理』が展開していく。古さと新しさが同居する空間で、職人的な仕事が積み重ねられているのだ。西尾という地方都市で、敢えて小さな一軒に拘る選択も、この店の強みだ。大きくしない、派手にしない、ただ来てくれる人に『確かな一夜』を提供する。その誠実さが、カウンター席に座る客の信頼につながっている。一度訪れた客が『また来たい』と思う理由は、料理の美味しさもさることながら、シェフの『向き合い方』を感じるからではないだろうか。",
-        images: ["/restaurants/teleapo-souvenir-スヴニール-/point2.jpg"],
+        images: ["/restaurants/teleapo-souvenir/point2.jpg"],
         specs: [
           { k: "シェフ", v: "10年を超える鉄板焼きの経験" },
           { k: "こだわり", v: "素材と火の関係を深く理解。新しさより確かさを優先" }
