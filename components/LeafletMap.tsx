@@ -100,6 +100,10 @@ export default function LeafletMap({
             map.fitBounds(bounds, { padding: [50, 50] });
           }
 
+          // Invalidate size to ensure tiles render correctly
+          // (especially important when container was hidden or had animation)
+          map.invalidateSize();
+
           mapRef.current = map;
         }
       },

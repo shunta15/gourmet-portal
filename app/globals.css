@@ -534,6 +534,7 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .nav .brand{font-size:14px}
   .nav .brand small{font-size:9px}
   .nav ul{gap:14px; font-size:10px; letter-spacing:.1em}
+  .nav ul a{padding:12px 8px; min-height:44px; display:inline-flex; align-items:center}
 
   .hero{height:80dvh; min-height:0; max-height:none}
   .hero-inner{padding-top:100px}
@@ -1630,4 +1631,26 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   html {
     @apply font-sans;
   }
+}
+
+/* ============================================== */
+/* Leaflet map dark mode                          */
+/* ============================================== */
+.mw-map {
+  height: 320px;
+  position: relative;
+}
+
+.mw-map .leaflet-pane.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.mw-map .leaflet-control {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.mw-map .leaflet-control-zoom,
+.mw-map .leaflet-top,
+.mw-map .leaflet-bottom {
+  filter: invert(1) hue-rotate(180deg);
 }
