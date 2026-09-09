@@ -4,6 +4,7 @@ import { SCENES, getSceneBySlug } from "@/lib/scenes";
 import { toCardItem } from "@/lib/regions";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import { getAllRestaurants } from "@/lib/db/restaurants";
+import { GEO } from "@/lib/geo";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -52,9 +53,26 @@ export default async function ScenePage({
   const totalCount = restaurants.length;
 
   // Filter restaurants that match scene tags server-side
-  const matched = restaurants
-    .filter((r) => s.matchTags.some((t) => (r.tags || []).includes(t)))
-    .map(toCardItem);
+  const matchedRestaurants = restaurants.filter((r) =>
+    s.matchTags.some((t) => (r.tags || []).includes(t))
+  );
+  const matched = matchedRestaurants.map(toCardItem);
+
+  // Map points (matched restaurants with geo data)
+  const mapPoints = matchedRestaurants
+    .filter((r) => GEO[r.id])
+    .map((r) => {
+      const geo = GEO[r.id];
+      const cuisine = r.cuisine.split(" / ").pop() || r.cuisine;
+      return {
+        id: r.id,
+        name: r.name,
+        lat: geo.lat,
+        lng: geo.lng,
+        href: `/restaurant/${r.id}`,
+        sub: `${cuisine} · ${r.area}`,
+      };
+    });
 
   const breadcrumb = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
@@ -68,7 +86,7 @@ export default async function ScenePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SceneHub scene={s} matched={matched} totalCount={totalCount} />
+      <SceneHub scene={s} matched={matched} totalCount={totalCount} mapPoints={mapPoints} />
     </>
   );
 }

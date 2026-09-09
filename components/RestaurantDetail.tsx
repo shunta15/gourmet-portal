@@ -6,18 +6,21 @@ import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS } from "@/lib/regions";
 import { sized } from "@/lib/imageUrl";
 import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
+import type { GeoPoint } from "@/lib/geo";
 import { mapsUrlForRestaurant } from "@/lib/maps";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
+import LeafletMap from "./LeafletMap";
 import Footer from "./Footer";
 
 interface RestaurantDetailProps {
   r: Restaurant;
   related: RestaurantCardItem[];
   shortVideos: ShortVideo[];
+  geo?: GeoPoint | null;
 }
 
-export default function RestaurantDetail({ r, related, shortVideos }: RestaurantDetailProps) {
+export default function RestaurantDetail({ r, related, shortVideos, geo }: RestaurantDetailProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
@@ -218,6 +221,16 @@ export default function RestaurantDetail({ r, related, shortVideos }: Restaurant
                 Google マップで開く ↗
               </a>
             )}
+            {geo && (
+              <a
+                href="#map"
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="MAP"
+              >
+                地図を見る ↗
+              </a>
+            )}
             {!r.phone && !r.reservationUrl && (
               <a
                 href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
@@ -252,6 +265,63 @@ export default function RestaurantDetail({ r, related, shortVideos }: Restaurant
             </Link>
           </div>
         </section>
+
+        {geo && (
+          <section className="article" id="map">
+            <div
+              className="article-head reveal"
+              style={{ gridTemplateColumns: "1fr" }}
+            >
+              <h2>
+                場所と、<em>アクセス。</em>
+              </h2>
+            </div>
+
+            <LeafletMap
+              points={[
+                {
+                  id: r.id,
+                  name: r.name,
+                  lat: geo.lat,
+                  lng: geo.lng,
+                  sub: r.address,
+                },
+              ]}
+              height={320}
+            />
+
+            <div style={{ marginTop: 32, paddingTop: 32, borderTop: "1px solid var(--line)" }}>
+              <div style={{ marginBottom: 16 }}>
+                <b style={{ fontSize: "14px", display: "block", marginBottom: 4 }}>
+                  住所
+                </b>
+                <p style={{ margin: 0, fontSize: "14px", color: "var(--ink-soft)" }}>
+                  {r.address}
+                </p>
+              </div>
+              <div style={{ marginBottom: 16 }}>
+                <b style={{ fontSize: "14px", display: "block", marginBottom: 4 }}>
+                  アクセス
+                </b>
+                <p style={{ margin: 0, fontSize: "14px", color: "var(--ink-soft)" }}>
+                  {r.nearest}
+                </p>
+              </div>
+              {r.address && (
+                <a
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chip"
+                  style={{ padding: "12px 20px", borderRadius: 0, marginTop: 16 }}
+                  data-cursor="MAP"
+                >
+                  Google マップで開く ↗
+                </a>
+              )}
+            </div>
+          </section>
+        )}
 
         <section className="article">
           <div

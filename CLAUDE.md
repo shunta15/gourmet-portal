@@ -124,6 +124,13 @@ grep 'id: "r67"' lib/data.ts
 
 ---
 
+## クライアントバンドル規約（2026-09-10 制定・必須）
+- **`'use client'` のコンポーネント、および client component から import されるコンポーネントは `@/lib/data` / `@/lib/featureRegions` / `lib/*Features*.ts` / `lib/teleapo-*.ts` を import 禁止**（型は `import type`、軽い定数 REGIONS/NATIONAL/SHORT_VIDEOS/NEIGHBORHOODS は `@/lib/regions` から）
+- 店舗・特集のデータは server の page.tsx で取得し、`RestaurantCardItem` / `SearchItem`（`lib/regions.ts` の Pick 型）に絞って props で渡す。`getRegionStats` / `getNationalStats` / `getFeaturesByRegion` もサーバーで計算して渡す
+- 背景: `components/RegionsShowcase.tsx`（'use client' 無し）が HomeClient 経由でクライアントに入り、data.ts 全体 4.6MB がトップページに配信されていた（LCP 49秒）
+- `npm run build` の postbuild `scripts/check-client-bundle.sh` が混入と 1.5MB 超チャンクを検出して失敗させる
+- 画像は CSS background-image ではなく `<img loading="lazy">`＋`sized(url, 640)`（`lib/imageUrl.ts`）を使う
+
 ## 重要な運用ルール
 1. **店舗追加はユーザーから明示指示があった時のみ**実施。勝手に増やさない
 2. 事実情報のみを掲載（誇張・推測・虚偽禁止）

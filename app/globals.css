@@ -1436,6 +1436,113 @@ body.no-cursor input, body.no-cursor textarea{cursor:text !important}
   .course-transit-text{font-size:10px}
 }
 
+/* ─── Leaflet Map ─────────────────────────────────────────── */
+@import "leaflet/dist/leaflet.css";
+
+.mw-map {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+}
+
+/* Dark tile inversion for light tiles */
+.mw-map .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.6);
+}
+
+/* Custom marker pin styling */
+.mw-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mw-pin {
+  width: 24px;
+  height: 24px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(199, 71, 42, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.mw-marker:hover .mw-pin {
+  transform: scale(1.2);
+}
+
+/* Popup styling */
+.mw-popup {
+  padding: 12px;
+  background: var(--paper);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.mw-popup-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-family: var(--serif);
+  font-size: 15px;
+}
+
+.mw-popup-sub {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+
+.mw-popup-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 8px;
+  background: var(--accent);
+  color: white;
+  border-radius: 2px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.mw-popup-link:hover {
+  opacity: 0.85;
+}
+
+/* Leaflet attribution bar */
+.mw-map .leaflet-attribution-control {
+  background: rgba(250, 248, 243, 0.8) !important;
+  color: var(--ink-soft) !important;
+  font-size: 11px;
+}
+
+.mw-map .leaflet-attribution-control a {
+  color: var(--accent);
+}
+
+/* Leaflet controls */
+.mw-map .leaflet-control-zoom {
+  background: var(--paper) !important;
+  border: 1px solid var(--line) !important;
+}
+
+.mw-map .leaflet-control-zoom-in,
+.mw-map .leaflet-control-zoom-out {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  border-bottom: 1px solid var(--line) !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mw-map .leaflet-control-zoom-in:hover,
+.mw-map .leaflet-control-zoom-out:hover {
+  background: var(--bg-2) !important;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);

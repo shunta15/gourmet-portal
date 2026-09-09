@@ -11,7 +11,7 @@ export default function Neighborhoods({ neighborhoods }: NeighborhoodsProps) {
     <section className="hoods">
       <div
         className="section-head"
-        style={{ padding: "0 0 60px", gridTemplateColumns: "1fr 2fr 1fr" }}
+        style={{ padding: "0 0 60px" }}
       >
         <div className="no">
           <b>◎ 04</b>エリア

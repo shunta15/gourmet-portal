@@ -28,6 +28,7 @@ interface HomeClientProps {
   restaurants: RestaurantCardItem[];
   cuisines: string[];
   stats: Stat[];
+  regionStats: Record<RegionKey, Stat[]>;
 }
 
 export default function HomeClient({
@@ -37,6 +38,7 @@ export default function HomeClient({
   restaurants,
   cuisines,
   stats,
+  regionStats,
 }: HomeClientProps) {
   const [region, setRegion] = useState<RegionKey>("tokyo");
   useReveal([region]);
@@ -76,7 +78,7 @@ export default function HomeClient({
       <RestaurantGrid restaurants={restaurants} />
       <Stats stats={stats} />
       <SceneSection />
-      <RegionsShowcase region={region} />
+      <RegionsShowcase region={region} regionStats={regionStats} />
       {neighborhoods.length > 0 && <Neighborhoods neighborhoods={neighborhoods} />}
       <Footer />
     </>

@@ -1,4 +1,6 @@
 import { REGIONS, type Restaurant, type FeatureArticle } from "./data";
+import { GEO } from "./geo";
+import { mapsUrlForRestaurant } from "./maps";
 import { parseOpeningHours } from "./openingHours";
 
 const BASE = "https://machinowa.tokyo";
@@ -114,6 +116,22 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
     servesCuisine: cuisine,
     address: postalAddress,
   };
+
+  // Add geo coordinates if available
+  const geo = GEO[r.id];
+  if (geo) {
+    jsonLd.geo = {
+      "@type": "GeoCoordinates",
+      latitude: geo.lat,
+      longitude: geo.lng,
+    };
+  }
+
+  // Add maps URL
+  const mapsUrl = mapsUrlForRestaurant(r);
+  if (mapsUrl) {
+    jsonLd.hasMap = mapsUrl;
+  }
 
   // 電話番号
   const tel = normalizePhone(r.phone);

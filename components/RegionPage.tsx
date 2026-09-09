@@ -4,16 +4,27 @@ import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
+import LeafletMap from "./LeafletMap";
 import { sized } from "@/lib/imageUrl";
 import { REGIONS } from "@/lib/regions";
 import type { RegionKey, RestaurantCardItem, Feature, Stat } from "@/lib/regions";
 import { useParallax, useReveal } from "@/lib/hooks";
+
+interface MapPoint {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+  href?: string;
+  sub?: string;
+}
 
 interface RegionPageProps {
   regionKey: RegionKey;
   restaurants: RestaurantCardItem[];
   features: Feature[];
   stats: Stat[];
+  mapPoints?: MapPoint[];
 }
 
 export default function RegionPage({
@@ -21,6 +32,7 @@ export default function RegionPage({
   restaurants,
   features,
   stats,
+  mapPoints = [],
 }: RegionPageProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
@@ -138,6 +150,25 @@ export default function RegionPage({
             ))}
           </div>
         </section>
+
+        {mapPoints.length > 0 && (
+          <section className="article">
+            <div className="article-head reveal">
+              <div className="label">
+                地図で
+                <span className="big">探</span>
+              </div>
+              <div>
+                <h2>
+                  地図で、<em>見つける。</em>
+                </h2>
+                <p className="sub">{mapPoints.length}軒をピンで表示</p>
+              </div>
+            </div>
+
+            <LeafletMap points={mapPoints} height={460} />
+          </section>
+        )}
 
         <section className="article">
           <div className="article-head reveal">

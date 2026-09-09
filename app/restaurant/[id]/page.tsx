@@ -10,6 +10,7 @@ import {
   buildRestaurantJsonLd,
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
+import { GEO } from "@/lib/geo";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -100,7 +101,7 @@ export default async function RestaurantPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <RestaurantDetail r={r} related={related} shortVideos={SHORT_VIDEOS} />
+      <RestaurantDetail r={r} related={related} shortVideos={SHORT_VIDEOS} geo={GEO[r.id] ?? null} />
     </>
   );
 }

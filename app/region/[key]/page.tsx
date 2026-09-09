@@ -4,6 +4,7 @@ import { REGIONS, type RegionKey, toCardItem } from "@/lib/regions";
 import { getRestaurantsByRegion } from "@/lib/db/restaurants";
 import { getFeaturesByRegion } from "@/lib/featureRegions";
 import { getRegionStats } from "@/lib/data";
+import { GEO } from "@/lib/geo";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
@@ -52,12 +53,30 @@ export default async function Page({
   const cardItems = restaurants.map(toCardItem);
   const features = getFeaturesByRegion(key as RegionKey);
   const stats = getRegionStats(key as RegionKey);
+
+  // Map points (restaurants with geo data)
+  const mapPoints = restaurants
+    .filter((r) => GEO[r.id])
+    .map((r) => {
+      const geo = GEO[r.id];
+      const cuisine = r.cuisine.split(" / ").pop() || r.cuisine;
+      return {
+        id: r.id,
+        name: r.name,
+        lat: geo.lat,
+        lng: geo.lng,
+        href: `/restaurant/${r.id}`,
+        sub: `${cuisine} · ${r.area}`,
+      };
+    });
+
   return (
     <RegionPage
       regionKey={key as RegionKey}
       restaurants={cardItems}
       features={features}
       stats={stats}
+      mapPoints={mapPoints}
     />
   );
 }

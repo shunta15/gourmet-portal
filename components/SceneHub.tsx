@@ -2,17 +2,28 @@
 import Link from "next/link";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
+import LeafletMap from "./LeafletMap";
 import { useReveal } from "@/lib/hooks";
 import type { RestaurantCardItem } from "@/lib/regions";
 import { SCENES, type Scene } from "@/lib/scenes";
+
+interface MapPoint {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+  href?: string;
+  sub?: string;
+}
 
 interface SceneHubProps {
   scene: Scene;
   matched: RestaurantCardItem[];
   totalCount: number;
+  mapPoints?: MapPoint[];
 }
 
-export default function SceneHub({ scene, matched, totalCount }: SceneHubProps) {
+export default function SceneHub({ scene, matched, totalCount, mapPoints = [] }: SceneHubProps) {
   useReveal();
 
   const otherScenes = SCENES.filter((s) => s.slug !== scene.slug);
@@ -149,6 +160,21 @@ export default function SceneHub({ scene, matched, totalCount }: SceneHubProps) 
             / {totalCount} 店中
           </div>
         </section>
+
+        {mapPoints.length > 0 && (
+          <section className="article">
+            <div
+              className="article-head reveal"
+              style={{ gridTemplateColumns: "1fr" }}
+            >
+              <h2>
+                地図で、<em>見つける。</em>
+              </h2>
+            </div>
+
+            <LeafletMap points={mapPoints} height={460} />
+          </section>
+        )}
 
         <section className="article" style={{ borderBottom: "none" }}>
           <div

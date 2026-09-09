@@ -1,17 +1,20 @@
 import Link from "next/link";
 import { sized } from "@/lib/imageUrl";
-import { REGIONS, getRegionStats, type RegionKey } from "@/lib/data";
+import { REGIONS, type RegionKey, type Stat } from "@/lib/regions";
 
 export default function RegionsShowcase({
   region,
+  regionStats,
 }: {
   region: RegionKey;
+  /** サーバー側で getRegionStats() を計算して渡す（クライアントに data.ts を載せない） */
+  regionStats: Record<RegionKey, Stat[]>;
 }) {
   return (
     <section className="hoods" style={{ background: "var(--bg-2)" }}>
       <div
         className="section-head"
-        style={{ padding: "0 0 60px", gridTemplateColumns: "1fr 2fr 1fr" }}
+        style={{ padding: "0 0 60px" }}
       >
         <div className="no">
           <b>◎ 05</b>地域別ポータル
@@ -22,12 +25,12 @@ export default function RegionsShowcase({
           </span>
         </h2>
         <div className="lede">
-          五つの地域で、それぞれの編集部が独自の紙面を展開。クリックで潜入できます。
+          {Object.keys(REGIONS).length}の地域で、それぞれの編集部が独自の紙面を展開。クリックで潜入できます。
         </div>
       </div>
       <div className="regions-grid">
         {Object.entries(REGIONS).map(([k, r], i) => {
-          const s = getRegionStats(k as RegionKey);
+          const s = regionStats[k as RegionKey];
           const imgUrl = sized(r.heroImages[0], 640);
           return (
             <Link
