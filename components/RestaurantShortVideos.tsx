@@ -45,7 +45,7 @@ function VideoPlayer({
           )
         ) : (
           <div className="video-fallback">
-            <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+            <div className="thumb">
               <img
                 src={sized(video.thumbnail, 640)}
                 alt={video.title}
@@ -107,7 +107,7 @@ export default function RestaurantShortVideos({
             onClick={() => setActive(video)}
             data-cursor="WATCH"
           >
-            <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+            <div className="thumb">
               <img
                 src={sized(video.thumbnail, 640)}
                 alt={video.title}

@@ -58,7 +58,7 @@ export default function ShortVideos({ shortVideos }: ShortVideosProps) {
                 className="short-card"
                 data-cursor="WATCH"
               >
-                <div className="thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <div className="thumb">
                   <img
                     src={thumbUrl}
                     alt={v.title}

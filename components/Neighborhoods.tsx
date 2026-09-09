@@ -42,7 +42,7 @@ export default function Neighborhoods({ neighborhoods }: NeighborhoodsProps) {
             <div className="desc">{n.desc}</div>
             <div className="count">{n.count}</div>
             <div className="arrow">→</div>
-            <div className="preview-strip" style={{ position: "relative", overflow: "hidden" }}>
+            <div className="preview-strip">
               <img
                 src={imgUrl}
                 alt={n.name}
