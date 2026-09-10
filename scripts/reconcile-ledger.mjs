@@ -50,6 +50,25 @@ for (const id of ids) {
 }
 console.log(`📚 teleapo-features.ts の記事ID: ${ids.length}件を names に登録`);
 
+// 1b) 記事IDを ASCII 化した店舗の救済。
+// D列の店名と記事IDが違うと nameKey 照合が外れ、「未生成」と誤判定されて
+// 翌日の自動実行が重複記事を作る（2026-09-10 万福食堂カンテで実発生）。
+// automation/article-id-aliases.json に 店名→記事ID を書いて対応付ける。
+try {
+  const aliasPath = join(__dirname, '..', 'automation', 'article-id-aliases.json');
+  const { aliases = {} } = JSON.parse(readFileSync(aliasPath, 'utf-8'));
+  let aliased = 0;
+  for (const [sheetName, articleId] of Object.entries(aliases)) {
+    if (!ids.includes(articleId)) continue;      // 記事が実在しない別名は無視
+    idByKey.set(nameKey(sheetName), articleId);
+    addEntry(led, { name: sheetName, articleId, url: `https://machinowa.tokyo/feature/${articleId}` });
+    aliased++;
+  }
+  if (aliased) console.log(`🔗 記事ID別名: ${aliased}件を names に登録`);
+} catch (e) {
+  console.log(`⚠️ 記事ID別名の読み込みに失敗（続行）: ${e.message}`);
+}
+
 // 2) スプシ走査: 「現在その行にいる店(D列)が生成済み記事IDと一致」したら、その行の J列 cid を回収
 //    W/X列は IMPORTRANGE 行ズレで信用できないため使わない。D列名 ↔ 記事ID で照合する。
 const credentials = JSON.parse(readFileSync(KEY_PATH, 'utf-8'));

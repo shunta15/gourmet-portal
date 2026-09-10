@@ -1,0 +1,7 @@
+{
+  "_comment": "スプシD列の店舗名 → 実際の記事ID。記事IDを ASCII 化した店舗は D列名と記事IDが一致しなくなり、reconcile-ledger.mjs の名前照合が外れて『未生成』と誤判定され、翌日の自動実行で重複記事が作られる（2026-09-10 に万福食堂カンテで実際に発生）。記事IDを店名と違う文字列にしたら必ずここに追記する。",
+  "aliases": {
+    "万福食堂カンテ": "ManpukuShokudoKante",
+    "souvenir-スヴニール-": "souvenir"
+  }
+}
