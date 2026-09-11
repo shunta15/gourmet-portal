@@ -1,104 +1,133 @@
-# マチノワ自動化 ローカル実行セットアップ
+# マチノワ記事自動生成 ローカル実行（launchd）
 
-CCR (Anthropic クラウド routine) の sa.json JWT 認証失敗が再発する問題への対策として、
-ローカル Mac の launchd で同じパイプラインを動かす。
+## いま動いている構成（2026-09-11 時点）
 
-## 構成
+| 項目 | 内容 |
+|---|---|
+| 実行時刻 | 毎日 **08:00** と **22:00**（JST） |
+| 設定の実体 | `~/Library/LaunchAgents/com.machinowa.auto.08jst.plist` / `com.machinowa.auto.22jst.plist` |
+| 起動されるもの | `caffeinate -i automation/local-pipeline.sh <ラベル>` |
+| 1回の処理上限 | 10件（`MAX_CANDIDATES` のデフォルト） |
+| ログ | `~/Library/Logs/machinowa-auto/` |
+
+- **クラウド側の routine（machinowa-auto-10jst / 15jst / 20jst）は実行セッション0件の空振り。** 実働はこのローカル実行だけ（経緯は `申し送り.md`）。
+- **Mac が起動していない時刻の回は走らない。** `caffeinate -i` は実行中のスリープを防ぐだけで、スリープから起こしはしない。
+- 旧構成（`local-run.sh` + `local-prompt.md`、10/15/20時・1回3件）は 2026-09-11 に削除した。
+
+## ファイル構成
 
 ```
 automation/
-├── local-prompt.md          ← claude CLI に渡すプロンプト（sa.json はローカル直参照）
-├── local-run.sh             ← bash wrapper（claude CLI 起動 + macOS 通知）
-├── launchd/
-│   ├── com.machinowa.auto.10jst.plist
-│   ├── com.machinowa.auto.15jst.plist
-│   └── com.machinowa.auto.20jst.plist
-└── secrets/
-    └── sa.json              ← Google サービスアカウント鍵（既にローカルに配置済）
+├── local-pipeline.sh      本体。候補抽出 → 記事生成 → デプロイ → 全数照合までを1回で行う
+├── preflight.sh           実行前ヘルスチェック（ネットワーク・claude 認証）
+├── setup-oauth-token.sh   定期実行の plist に claude の長期トークンを配る
+├── secrets/sa.json        Google サービスアカウント鍵（.gitignore 済み）
+└── launchd/               ⚠️ 旧テンプレート（00/08/12/16/20時）。いま稼働中の設定とは一致しない
 ```
 
-## インストール（既に完了済の場合は不要）
+## 1回の実行でやること
+
+1. **Step -1 実行前ヘルスチェック**（`preflight.sh`）
+   - ネットワーク不通（終了コード10）→ スプシに何も書かずにスキップ
+   - claude 認証切れ（終了コード11）→ `automation/HEALTH-ALERT.md` を作成して停止
+2. **Step 0〜0.6 台帳とスプシの同期**（処理済み台帳の再構築、W/X列の再同期）
+3. **Step 1 候補抽出**（P列＝詰めOK かつ W列が空の行）
+4. **Step 2 候補ごとの記事生成**
+   - W列に「処理中」ロック → Maps URL 解決 → GBP 写真取得
+   - `claude -p` が記事を生成し、コミット・push・スプシへの URL 書き戻しまで行う
+   - 最終行の `COMPLETED row N URL: …` で成否を判定（失敗時はロックを外してエラーに落とす）
+5. **Vercel 本番デプロイ**（最大3回試行）→ 本番 URL の HTTP 200 を確認
+6. **抜け検知・記事台帳の最終同期・詰めOK行の全数照合**
+   - 残り未処理があれば「5分後に自己再発火」する処理があるが、launchd から起動した回ではジョブ終了と同時に待機プロセスも終了するため、**実際には再発火しない**（2026-09-11 確認）。取りこぼしは次の定期実行（08:00 / 22:00）で処理される。
+
+## 手動実行
 
 ```bash
-# 1. plist をシステム location にコピー
-cp automation/launchd/com.machinowa.auto.*.plist ~/Library/LaunchAgents/
+# 候補を上から処理（上限はデフォルト10件）
+bash automation/local-pipeline.sh manual
 
-# 2. launchd に登録
-UID_NUM=$(id -u)
-for hr in 10 15 20; do
-  launchctl bootout gui/$UID_NUM ~/Library/LaunchAgents/com.machinowa.auto.${hr}jst.plist 2>/dev/null
-  launchctl bootstrap gui/$UID_NUM ~/Library/LaunchAgents/com.machinowa.auto.${hr}jst.plist
-done
+# 特定の行だけ処理
+TARGET_ROW=323 bash automation/local-pipeline.sh manual323
 
-# 3. 登録確認
+# 件数を絞って処理
+MAX_CANDIDATES=3 bash automation/local-pipeline.sh manual3
+
+# launchd 経由で今すぐ起動
+launchctl kickstart gui/$(id -u)/com.machinowa.auto.08jst
+```
+
+> ⚠️ **実行中はリポジトリの作業ツリーを触らないこと。**
+> パイプラインは各記事のあとに `git pull --rebase` を行い、失敗すると `git reset --hard HEAD~1` で巻き戻す。
+> 未コミットの変更があると pull が失敗し、**生成中の記事ごと消える。**
+> 定期実行の時刻に手動実行を重ねるのも避ける。
+
+## 状態の確認
+
+```bash
+# 登録されているジョブ（PID が数字なら実行中）
 launchctl list | grep machinowa
-```
 
-## 動作
-
-- **10:00 / 15:00 / 20:00 JST** に launchd が `automation/local-run.sh` を起動
-- `local-run.sh` が `claude CLI` を非対話モード (`-p`) で起動
-- claude が `automation/local-prompt.md` の指示通り：
-  1. spec.md / runbook.md を読む
-  2. 詰めOKリスト row 146+ から候補抽出
-  3. 最大3件処理（GBP取得 → 画像 → 記事生成 → ビルド → push → スプシ書き戻し）
-- 完了後 macOS 通知（osascript）で結果表示
-- ログは `~/Library/Logs/machinowa-auto/` に蓄積
-
-## 重要な前提
-
-- **Mac が起動している必要がある**（スリープでも launchd は wakeup する設定可能だが今は未対応）
-- ログイン中ユーザーで動く（=ファイル権限 OK）
-- `~/.nvm/versions/node/v22.22.0/bin` の node / claude を使う
-
-## 手動実行（テスト）
-
-```bash
-# 即時実行（ログは ~/Library/Logs/machinowa-auto/<時刻>.log）
-./automation/local-run.sh manual-test
-
-# launchctl 経由で即時起動
-launchctl kickstart gui/$(id -u)/com.machinowa.auto.10jst
-```
-
-## 停止 / 再有効化
-
-```bash
-# 停止（無効化）
-launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.machinowa.auto.10jst.plist
-
-# 全部停止
-for hr in 10 15 20; do
-  launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.machinowa.auto.${hr}jst.plist
-done
-
-# 再有効化
-for hr in 10 15 20; do
-  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.machinowa.auto.${hr}jst.plist
-done
-```
-
-## CCR との関係
-
-- CCR (claude.ai routine) も並行稼働している（10:00 / 15:00 / 20:00 JST）
-- 両方が同時に動いても問題ない設計（mark-done が冪等保護あり、ロック方式で race 防止）
-- どちらかが成功すれば OK
-- CCR が sa.json JWT 認証で失敗していた場合でも、ローカルがバックアップとして動く
-
-## ログ確認
-
-```bash
-# 最新ログ
+# 最新のログ
 ls -t ~/Library/Logs/machinowa-auto/ | head -5
-tail -50 ~/Library/Logs/machinowa-auto/$(ls -t ~/Library/Logs/machinowa-auto/ | head -1)
+```
 
-# 直近 3 日分の実行履歴
-ls -lt ~/Library/Logs/machinowa-auto/ | head -10
+| ログファイル | 中身 |
+|---|---|
+| `<日時>.<ラベル>.log` | 1回の実行全体 |
+| `<日時>.row<行>.claude.log` | 記事ごとの claude の出力 |
+| `launchd-<ラベル>.stdout.log` / `.stderr.log` | launchd が拾った標準出力 |
+
+**完了の判断はログの「成功N件」ではなく成果物で行う。**
+
+```bash
+node scripts/check-gaps.mjs   # 詰めOK行 × 記事の実在を全数照合
+```
+
+## 実行時刻の追加・変更
+
+plist には claude の長期トークン・PATH・作業ディレクトリが入っているため、**既存の plist を複製して時刻とラベルだけ差し替える。** 手で新規作成するとトークンが入らず、その回だけ認証切れになる。
+
+```bash
+cd ~/Library/LaunchAgents
+python3 - <<'PY'
+import plistlib, os
+SRC, HOUR = 'com.machinowa.auto.08jst.plist', 12   # ← 追加したい時刻
+L = f'{HOUR:02d}jst'
+d = plistlib.load(open(SRC, 'rb'))
+d['Label'] = f'com.machinowa.auto.{L}'
+d['ProgramArguments'] = [a.replace('08jst', L) for a in d['ProgramArguments']]
+d['StandardOutPath'] = d['StandardOutPath'].replace('08jst', L)
+d['StandardErrorPath'] = d['StandardErrorPath'].replace('08jst', L)
+d['StartCalendarInterval'] = {'Hour': HOUR, 'Minute': 0}
+dst = f'com.machinowa.auto.{L}.plist'
+plistlib.dump(d, open(dst, 'wb')); os.chmod(dst, 0o600)
+print('作成:', dst)
+PY
+launchctl load -w ~/Library/LaunchAgents/com.machinowa.auto.12jst.plist
+```
+
+止める場合:
+
+```bash
+launchctl bootout gui/$(id -u)/com.machinowa.auto.12jst
+rm ~/Library/LaunchAgents/com.machinowa.auto.12jst.plist
+```
+
+- **実行中のジョブを bootout / unload しないこと。** 生成中の記事が途中で止まる。
+- `setup-oauth-token.sh` は `~/Library/LaunchAgents/com.machinowa.auto.<NN>jst.plist` を自動で検出するので、時刻を増やしてもトークン配布の対象から漏れない。
+
+## 認証切れのとき
+
+症状: macOS 通知「マチノワ自動化 停止中」、または `automation/HEALTH-ALERT.md` ができている。
+
+```bash
+bash automation/setup-oauth-token.sh --new   # ブラウザで承認 → 全ジョブの plist に配布
+bash automation/preflight.sh                 # 「claude CLI 認証OK」と出れば復旧
 ```
 
 ## トラブルシューティング
 
-- **launchctl bootstrap でエラー**: 既に同名 plist がロード済 → `bootout` してから `bootstrap`
-- **claude CLI not found**: PATH に nvm 配下 (`~/.nvm/versions/node/v22.22.0/bin`) が含まれていない → plist の `EnvironmentVariables` の PATH を確認
-- **sa.json 認証失敗**: `automation/secrets/sa.json` が存在するか、新規発行が必要か確認
-- **記事が生成されない**: ログ確認 → 詰めOKリスト row 146+ に候補があるか、claude CLI が完走したか
+- **記事が1本も生成されない**: `HEALTH-ALERT.md` の有無 → 最新ログ → `check-gaps.mjs` の順に確認
+- **全件エラーになる**: 認証切れかネットワーク断。`preflight.sh` を実行する
+- **特定の行だけ失敗する**: `<日時>.row<行>.claude.log` を見る（写真URLが無効、店舗特定の失敗など）
+- **生成後の品質確認**: 推測表現（「だろう」「はずだ」等）が混入することがある。確認手順は `申し送り.md`

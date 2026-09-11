@@ -61,7 +61,7 @@ if [ "$PREFLIGHT_EXIT" = "11" ]; then
 
     bash automation/setup-oauth-token.sh <コピーしたトークン>
 
-これで定期実行（00/08/12/16/20時）に長期トークンが渡り、認証切れは起きなくなります。
+これで定期実行（launchd の com.machinowa.auto.* 全ジョブ）に長期トークンが渡り、認証切れは起きなくなります。
 
 ※ このファイルは認証が回復すると自動で削除されます。
 ALERT_EOF

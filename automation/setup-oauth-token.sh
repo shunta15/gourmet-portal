@@ -21,7 +21,17 @@
 
 set -eu
 
-LABELS="00jst 08jst 12jst 16jst 20jst"
+# 対象ジョブは ~/Library/LaunchAgents から自動検出する。
+# 以前は "00jst 08jst 12jst 16jst 20jst" と決め打ちしており、
+# 2026-09-11 に 22時のジョブを追加した際、そのジョブだけトークン配布から漏れる状態になった。
+# 実行時刻を増減しても配布漏れが起きないよう、実在する plist を正とする。
+LABELS=$(ls "$HOME"/Library/LaunchAgents/com.machinowa.auto.*jst.plist 2>/dev/null \
+  | sed -E 's#.*/com\.machinowa\.auto\.([0-9]{2}jst)\.plist$#\1#' | tr '\n' ' ')
+if [ -z "${LABELS// /}" ]; then
+  echo "❌ ~/Library/LaunchAgents に com.machinowa.auto.<NN>jst.plist が見つかりません"
+  exit 1
+fi
+echo "🎯 対象ジョブ: $LABELS"
 UID_NUM=$(id -u)
 MODE="${1:-prompt}"
 
