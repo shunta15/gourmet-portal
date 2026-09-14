@@ -382,21 +382,35 @@ PROMPT_EOF
     log "  ⚠️ claude が完了マーカー出さずに終了"
     log "  claude 出力末尾:"
     tail -20 "$CLAUDE_LOG" | sed 's/^/    /' | tee -a "$LOG_FILE"
-    ERROR=$((ERROR+1))
-    # 認証切れ(401)などで claude が即死した場合、ここを通る。
+    # 完了マーカーが無くても、記事が実在すれば成功。成否はログではなく成果物で判定する。
+    # 2026-09-14 22:00 の回で、生成に成功した row 401（カフェレガーロ）が
+    # マーカーを出さずに終了 → 下の環境起因判定が claude 出力中の「row 401」の
+    # "401" を HTTP 401 と読み違え → ループごと中断し、残り10件が未処理で残った。
+    if grep -q "^  \"$SAFE_NAME\": {" lib/teleapo-features.ts 2>/dev/null; then
+      log "  ✅ 完了マーカーは無いが記事の実在を確認 — 成功として扱う"
+      SUCCESS=$((SUCCESS+1))
+      URL="https://machinowa.tokyo/feature/$SAFE_NAME"
+      SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
+      SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --articleId="$SAFE_NAME" --url="$URL" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+    # 認証切れ(HTTP 401)などで claude が即死した場合、ここを通る。
     # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
     # 認証切れ・ネットワーク断は「この店舗の問題」ではない。
     # エラーとして書くと24hクールダウンに入り滞留が候補一覧から消えるので、
     # ロックだけ外して（W列を空に戻して）即座にループを抜ける。残りの行も必ず同じ理由で失敗するため。
-    if grep -qiE "401|OAuth access token has expired|Failed to authenticate|Invalid authentication|Not logged in|EADDRNOTAVAIL|getaddrinfo|ENOTFOUND" "$CLAUDE_LOG" 2>/dev/null; then
+    # ※ 裸の "401" は行番号・価格・電話番号にも出るので必ず文脈付きで照合する（上記事故）。
+    elif grep -qiE "401 Unauthorized|HTTP 401|status(Code)?[\"': ]+401|OAuth access token has expired|Failed to authenticate|Invalid authentication|Not logged in|EADDRNOTAVAIL|getaddrinfo|ENOTFOUND" "$CLAUDE_LOG" 2>/dev/null; then
+      ERROR=$((ERROR+1))
       log "  🔑 環境起因の失敗を検出（認証切れ or ネットワーク断）。W列は書かずに中断する"
       node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=clear >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
       ERROR_LIST="$ERROR_LIST\n  - $NAME: 環境起因(認証/ネットワーク)のため中断"
       ENV_FAILURE=1
       break
+    else
+      ERROR=$((ERROR+1))
+      ERROR_LIST="$ERROR_LIST\n  - $NAME: claude早期終了"
+      node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="claude早期終了" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
     fi
-    ERROR_LIST="$ERROR_LIST\n  - $NAME: claude早期終了"
-    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="claude早期終了" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
   fi
 
   sleep 5
