@@ -88,6 +88,12 @@ const sanitize = (s) => {
   const v = String(s);
   return /^[=+\-@]/.test(v) ? `'${v}` : v;
 };
+// 記事URLの日本語部分だけをパーセントエンコードして返す（既にエンコード済みならそのまま）。
+function encodeArticleUrl(u) {
+  return String(u).replace(/\/feature\/(.+)$/, (_, id) =>
+    '/feature/' + (/%[0-9A-Fa-f]{2}/.test(id) ? id : encodeURIComponent(id)));
+}
+
 const escapeQuote = (s) => String(s).replace(/"/g, '""');
 const jstNow = () => {
   const d = new Date(Date.now() + 9 * 3600 * 1000);
@@ -129,7 +135,10 @@ try {
   if (status === 'done') {
     updates = [
       { range: `トスアップ元シート!${doneCol}${row}`, values: [['済']] },
-      { range: `トスアップ元シート!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(url)}","${escapeQuote(url)}")`]] },
+      // HYPERLINK の第1引数(リンク先)は必ずパーセントエンコードする。
+      // 日本語のまま渡すとスプレッドシートからクリックしても開けない
+      // （表示文字列は日本語のまま = feedback-url-japanese-notation）。
+      { range: `トスアップ元シート!${urlCol}${row}`, values: [[`=HYPERLINK("${escapeQuote(encodeArticleUrl(url))}","${escapeQuote(url)}")`]] },
     ];
   } else if (status === 'processing') {
     updates = [
