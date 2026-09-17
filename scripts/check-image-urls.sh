@@ -67,6 +67,14 @@ if [[ -n "$local_paths" ]]; then
     if [[ ! -f "$PUBLIC_DIR$p" ]]; then
       echo "  NG  missing  $p (expected at public$p)"
       fail=1
+    else
+      # 存在するだけでは不十分。ダウンロード失敗時のHTMLエラーページが .png/.jpg として
+      # 保存されていた事例あり（2026-09-17 r161-05.png / r189-01.png が本番で表示されず）
+      mime=$(file -b --mime-type "$PUBLIC_DIR$p")
+      if [[ "$mime" != image/* ]]; then
+        echo "  NG  not-image ($mime)  $p"
+        fail=1
+      fi
     fi
   done <<< "$local_paths"
 fi
