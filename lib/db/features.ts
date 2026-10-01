@@ -11,6 +11,7 @@ import {
   type FeatureArticle,
   type RankItem,
 } from "@/lib/data";
+import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -131,23 +132,31 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
   // どちらもない
   if (!dbArticle && !fallback) return null;
 
+  let result: FeatureArticle;
+
   // DB のみ
-  if (dbArticle && !fallback) return dbArticle;
-
+  if (dbArticle && !fallback) {
+    result = dbArticle;
+  }
   // フォールバックのみ
-  if (!dbArticle && fallback) return fallback;
-
+  else if (!dbArticle && fallback) {
+    result = fallback;
+  }
   // 両方 → DB の値を優先し、欠けている構造化情報は data.ts から補完
-  return {
-    ...fallback!,
-    ...dbArticle!,
-    // 構造化フィールドは DB に未実装なので data.ts のものを使う
-    ranking: fallback!.ranking,
-    sideArticles: fallback!.sideArticles,
-    quote: fallback!.quote,
-    closing: fallback!.closing,
-    articleType: fallback!.articleType,
-  };
+  else {
+    result = {
+      ...fallback!,
+      ...dbArticle!,
+      // 構造化フィールドは DB に未実装なので data.ts のものを使う
+      ranking: fallback!.ranking,
+      sideArticles: fallback!.sideArticles,
+      quote: fallback!.quote,
+      closing: fallback!.closing,
+      articleType: fallback!.articleType,
+    };
+  }
+
+  return sanitizeFeatureArticle(result);
 }
 
 /**

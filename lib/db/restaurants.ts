@@ -13,6 +13,7 @@
  */
 import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
+import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -53,7 +54,7 @@ type DbRestaurantRow = {
 };
 
 function rowToRestaurant(r: DbRestaurantRow): Restaurant {
-  return {
+  const restaurant = {
     id: r.id,
     name: r.name,
     cuisine: r.cuisine || "",
@@ -80,6 +81,7 @@ function rowToRestaurant(r: DbRestaurantRow): Restaurant {
     highlights: r.highlights ?? undefined,
     tags: r.tags ?? undefined,
   };
+  return sanitizeRestaurant(restaurant);
 }
 
 /**
@@ -104,12 +106,12 @@ export async function getAllRestaurants(): Promise<Restaurant[]> {
     const { published, knownIds } = splitRows((data ?? []) as DbRestaurantRow[]);
     if (published.length > 0) {
       // DB の公開行 ＋ DB に行が無いコード側の店（DB を優先。非公開行は復活させない）
-      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id))];
+      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id)).map(sanitizeRestaurant)];
     }
   } catch (e) {
     console.warn("[db] getAllRestaurants fallback to data.ts:", e);
   }
-  return RESTAURANTS;
+  return RESTAURANTS.map(sanitizeRestaurant);
 }
 
 /**
@@ -130,7 +132,7 @@ export async function getRestaurantById(id: string): Promise<Restaurant | null> 
     console.warn(`[db] getRestaurantById(${id}) fallback to data.ts:`, e);
   }
   const fallback = RESTAURANTS.find((r) => r.id === id);
-  return fallback ?? null;
+  return fallback ? sanitizeRestaurant(fallback) : null;
 }
 
 /**
@@ -208,11 +210,11 @@ export async function getRestaurantsByRegion(region: RegionKey): Promise<Restaur
       // DB の公開行 ＋ DB に行が無い、この地域のコード側の店
       return [
         ...published,
-        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)),
+        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)).map(sanitizeRestaurant),
       ];
     }
   } catch (e) {
     console.warn(`[db] getRestaurantsByRegion(${region}) fallback to data.ts:`, e);
   }
-  return RESTAURANTS.filter((r) => r.region === region);
+  return RESTAURANTS.filter((r) => r.region === region).map(sanitizeRestaurant);
 }
