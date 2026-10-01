@@ -1,0 +1,22 @@
+{
+  "name": "【CAFE】i/HUB",
+  "address": "静岡県富士宮市大宮町３１−７ 澤田ビル 1F",
+  "lat": 35.222221,
+  "lng": 138.6134191,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "09:00–18:00",
+    "火": "09:00–18:00",
+    "水": "09:00–18:00",
+    "木": "09:00–18:00",
+    "金": "09:00–18:00",
+    "土": "定休日",
+    "日": "定休日"
+  },
+  "phone": "0544-66-6880",
+  "website": "https://www.instagram.com/ihub_fujinomiya/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=6184612285112112075",
+  "fetchedAt": "2026-10-01T02:43:09.317Z"
+}

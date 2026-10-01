@@ -1,0 +1,22 @@
+{
+  "name": "ロースタリーフィト",
+  "address": "群馬県太田市大原町１５３３−２２",
+  "lat": 36.3608583,
+  "lng": 139.2771236,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "09:00–18:30",
+    "火": "09:00–18:30",
+    "水": "09:00–18:30",
+    "木": "定休日",
+    "金": "定休日",
+    "土": "09:00–18:30",
+    "日": "09:00–18:30"
+  },
+  "phone": "0277-47-6770",
+  "website": "https://www.instagram.com/roastary_fitho?igsh=MWcxZnliZ3RoM3FhOQ==&utm_source=qr",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4887679577309744033",
+  "fetchedAt": "2026-10-01T02:34:53.366Z"
+}

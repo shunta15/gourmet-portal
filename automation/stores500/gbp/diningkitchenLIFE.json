@@ -1,0 +1,22 @@
+{
+  "name": "dining kitchen LIFE",
+  "address": "埼玉県川越市連雀町１０−１",
+  "lat": 35.9195613,
+  "lng": 139.482854,
+  "category": "レストラン",
+  "hours": {
+    "月": "11:00–21:00",
+    "火": "11:00–21:00",
+    "水": "定休日",
+    "木": "11:00–21:00",
+    "金": "11:00–21:00",
+    "土": "11:00–21:00",
+    "日": "11:00–21:00"
+  },
+  "phone": "049-298-8331",
+  "website": "https://www.instagram.com/kawagoe.life?igsh=MWpydDNzazl3bmhzaA==&utm_source=qr",
+  "priceRange": "￥2,000～3,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=10118661293287571227",
+  "fetchedAt": "2026-10-01T02:59:27.524Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "麺や せん崎",
+  "address": "福島県郡山市町東１丁目１８３",
+  "lat": 37.4217195,
+  "lng": 140.3502622,
+  "category": "ラーメン屋",
+  "hours": {
+    "月": "11:00–15:00",
+    "火": "定休日",
+    "水": "11:00–15:00, 17:30–20:00",
+    "木": "11:00–15:00, 17:30–20:00",
+    "金": "11:00–15:00, 17:30–20:00",
+    "土": "11:00–15:00, 17:30–20:00",
+    "日": "11:00–15:00"
+  },
+  "phone": "090-8237-4521",
+  "website": "https://tabelog.com/fukushima/A0702/A070201/7020565/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4427838004161537438",
+  "fetchedAt": "2026-10-01T02:29:17.804Z"
+}

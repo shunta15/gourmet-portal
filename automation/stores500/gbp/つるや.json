@@ -1,0 +1,22 @@
+{
+  "name": "つるや",
+  "address": "青森県八戸市一番町１丁目１−１８",
+  "lat": 40.5078969,
+  "lng": 141.4333124,
+  "category": "居酒屋",
+  "hours": {
+    "月": "17:00–22:30",
+    "火": "17:00–22:30",
+    "水": "17:00–22:30",
+    "木": "17:00–22:30",
+    "金": "17:00–22:30",
+    "土": "17:00–22:30",
+    "日": "定休日"
+  },
+  "phone": "0178-70-1182",
+  "website": "https://www.instagram.com/tsuruya_hachinohe?igsh=MWN6NzZrOW9xdno3Ng==",
+  "priceRange": "￥3,000～4,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=7737191501162723967",
+  "fetchedAt": "2026-10-01T02:28:49.324Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "マックス食堂 酒・肴・お田",
+  "address": "兵庫県尼崎市神田中通３丁目７５−１",
+  "lat": 34.7196619,
+  "lng": 135.4134531,
+  "category": "居酒屋",
+  "hours": {
+    "月": "16:00–22:00",
+    "火": "16:00–22:00",
+    "水": "16:00–22:00",
+    "木": "16:00–22:00",
+    "金": "16:00–22:00",
+    "土": "12:00–21:00",
+    "日": "12:00–21:00"
+  },
+  "phone": "050-1792-8349",
+  "website": "https://www.instagram.com/max_food_station?igsh=MTRwajE1eWM4dWp0MQ==&utm_source=qr",
+  "priceRange": "￥3,000～4,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=15550977134631775673",
+  "fetchedAt": "2026-10-01T02:42:28.904Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "フルーツスノウ",
+  "address": "三重県桑名市北寺町４３",
+  "lat": 35.0659519,
+  "lng": 136.6923126,
+  "category": "スイーツ店",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "12:00–17:00",
+    "木": "定休日",
+    "金": "定休日",
+    "土": "定休日",
+    "日": "定休日"
+  },
+  "phone": "0594-84-7499",
+  "website": "https://www.instagram.com/fruits_snow?igsh=MXZ6cDV3YTVhMmg2cQ==",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=7085676699803122087",
+  "fetchedAt": "2026-10-01T02:49:59.274Z"
+}

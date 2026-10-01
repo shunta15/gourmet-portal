@@ -1,0 +1,22 @@
+{
+  "name": "あづまラーメン",
+  "address": "長崎県諫早市森山町杉谷１７９−３０",
+  "lat": 32.82196,
+  "lng": 130.148971,
+  "category": "ラーメン屋",
+  "hours": {
+    "月": "11:30–18:00",
+    "火": "11:30–18:00",
+    "水": "11:30–18:00",
+    "木": "11:30–18:00",
+    "金": "11:30–18:00",
+    "土": "11:30–18:00",
+    "日": "11:30–18:00"
+  },
+  "phone": "0957-36-1980",
+  "website": "https://www.instagram.com/azuma_ra_men?igsh=MTlqbG92YXN6ZHBzZQ%3D%3D&utm_source=qr",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=11176293893642314562",
+  "fetchedAt": "2026-10-01T02:35:08.891Z"
+}

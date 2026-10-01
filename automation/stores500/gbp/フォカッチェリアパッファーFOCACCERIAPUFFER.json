@@ -1,0 +1,22 @@
+{
+  "name": "フォカッチェリアパッファー FOCACCERIA PUFFER",
+  "address": "広島県尾道市向島町５５３４−２７ キャッスル向島 1階",
+  "lat": 34.3973099,
+  "lng": 133.1977946,
+  "category": "ベーカリー",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "09:00–19:00",
+    "木": "定休日",
+    "金": "定休日",
+    "土": "09:00–18:00",
+    "日": "定休日"
+  },
+  "phone": "0848-36-6574",
+  "website": "https://instagram.com/focacceria_puffer?igshid=YmMyMTA2M2Y=",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16448502277244786177",
+  "fetchedAt": "2026-10-01T02:31:28.788Z"
+}

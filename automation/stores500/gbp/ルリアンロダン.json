@@ -1,0 +1,22 @@
+{
+  "name": "Le Lien.RODAN",
+  "address": "三重県四日市市新正４丁目６−２４",
+  "lat": 34.9552862,
+  "lng": 136.6177062,
+  "category": "モダン居酒屋レストラン",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "18:00–23:00",
+    "木": "18:00–23:00",
+    "金": "18:00–23:00",
+    "土": "18:00–23:00",
+    "日": "18:00–23:00"
+  },
+  "phone": "059-357-1908",
+  "website": "https://www.yudelins.info/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": "￥3,000～4,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=15160510507489312892",
+  "fetchedAt": "2026-10-01T02:30:42.565Z"
+}

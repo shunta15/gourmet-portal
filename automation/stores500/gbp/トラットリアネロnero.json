@@ -1,0 +1,22 @@
+{
+  "name": "トラットリア ネロ nero",
+  "address": "愛知県一宮市花池４丁目５−１",
+  "lat": 35.28908,
+  "lng": 136.799645,
+  "category": "イタリア料理店",
+  "hours": {
+    "月": "11:30–15:00",
+    "火": "定休日",
+    "水": "11:30–15:00, 18:00–21:00",
+    "木": "11:30–15:00, 18:00–21:00",
+    "金": "11:30–15:00, 18:00–21:00",
+    "土": "11:30–15:00, 18:00–21:00",
+    "日": "11:30–15:00, 18:00–21:00"
+  },
+  "phone": "0586-43-5622",
+  "website": "https://nero-ichinomiya.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": "￥2,000～3,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=9603387884755180636",
+  "fetchedAt": "2026-10-01T02:21:55.252Z"
+}

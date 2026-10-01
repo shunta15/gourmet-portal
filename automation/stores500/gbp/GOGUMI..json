@@ -1,0 +1,22 @@
+{
+  "name": "GOGUMI.",
+  "address": "京都府京都市中京区堀之上町１０５ 2階",
+  "lat": 35.0075051,
+  "lng": 135.7636397,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "11:00–21:00",
+    "火": "11:00–21:00",
+    "水": "定休日",
+    "木": "11:00–21:00",
+    "金": "11:00–21:00",
+    "土": "11:00–21:00",
+    "日": "11:00–19:00"
+  },
+  "phone": "075-606-5515",
+  "website": "https://www.instagram.com/gogumi.kyoto?igsh=MTF2dHhzbDRvZm84aw==",
+  "priceRange": "￥1～1,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4366459435949012192",
+  "fetchedAt": "2026-10-01T02:42:41.957Z"
+}

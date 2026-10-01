@@ -1,0 +1,22 @@
+{
+  "name": "参道酒場 鶏居",
+  "address": "新潟県上越市中央１丁目５−１９",
+  "lat": 37.1731865,
+  "lng": 138.2426236,
+  "category": "居酒屋",
+  "hours": {
+    "月": "17:30–01:00",
+    "火": "17:30–01:00",
+    "水": "17:30–01:00",
+    "木": "17:30–01:00",
+    "金": "17:30–01:00",
+    "土": "17:30–01:00",
+    "日": "定休日"
+  },
+  "phone": "025-520-4011",
+  "website": "https://r.gnavi.co.jp/hrk2wsae0000/?utm_source=google&utm_medium=organic&utm_campaign=gbp_17263728172637261523",
+  "priceRange": "￥2,000～6,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=10509615568189648516",
+  "fetchedAt": "2026-10-01T02:30:13.743Z"
+}

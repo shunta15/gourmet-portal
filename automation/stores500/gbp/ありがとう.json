@@ -1,0 +1,22 @@
+{
+  "name": "居酒屋 ありがとう 藤沢",
+  "address": "神奈川県藤沢市南藤沢２−１−２",
+  "lat": 35.3383778,
+  "lng": 139.4888917,
+  "category": "居酒屋",
+  "hours": {
+    "月": "11:00–23:00",
+    "火": "11:00–23:00",
+    "水": "11:00–23:00",
+    "木": "11:00–23:00",
+    "金": "11:00–23:00",
+    "土": "15:00–23:00",
+    "日": "15:00–23:00"
+  },
+  "phone": "0466-27-2670",
+  "website": "https://www.hotpepper.jp/strJ004445254/?vos=evhppsg0007&pog=mt%28e%29ti%28kwd-1211781786653%29dv%28m%29cr%28780000491985%29fi%28%29gi%28185605236479%29ci%2822742162357%29lc%281009324%29ps%28%29nw%28g%29&gclsrc=aw.ds&gad_source=1&gad_campaignid=22742162357&gbraid=0AAAAADSGJMFSlHmFnN6OuTMs_dYN2OYYq",
+  "priceRange": "￥4,000～5,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=13466376725522685470",
+  "fetchedAt": "2026-10-01T02:22:36.809Z"
+}

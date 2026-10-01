@@ -1,0 +1,22 @@
+{
+  "name": "鳥ト鮪 かめ",
+  "address": "岐阜県高山市朝日町２３",
+  "lat": 36.1436585,
+  "lng": 137.2567588,
+  "category": "居酒屋",
+  "hours": {
+    "月": "17:00–00:00",
+    "火": "17:00–00:00",
+    "水": "定休日",
+    "木": "17:00–00:00",
+    "金": "17:00–00:00",
+    "土": "17:00–00:00",
+    "日": "17:00–00:00"
+  },
+  "phone": "0577-57-5875",
+  "website": "https://www.instagram.com/tori.maguro_kame?igsh=a2h4b3F1YWdiYWRj",
+  "priceRange": "￥4,000～5,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4658202055275508855",
+  "fetchedAt": "2026-10-01T02:34:14.475Z"
+}
