@@ -21,7 +21,7 @@ export const SCENE_FEATURES: Feature[] = [
     "kicker": "NAGOYA · BUSINESS DINING",
     "title": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
     "sub": "4名の個室から70名の個室まで。人数と曜日で決める会食の店",
-    "image": "/restaurants/r20/r20-image-1.jpg"
+    "image": "/restaurants/r20/r20-image-2.jpg"
   },
   {
     "id": "scene-business-osaka",
@@ -75,7 +75,7 @@ export const SCENE_FEATURES: Feature[] = [
     "kicker": "NAGOYA · PRIVATE ROOM",
     "title": "個室で食事する、名古屋と愛知県の6軒",
     "sub": "完全個室から醸造樽を改装した部屋まで、愛知県の6軒",
-    "image": "/restaurants/r20/r20-image-1.jpg"
+    "image": "/restaurants/r20/r20-image-2.jpg"
   },
   {
     "id": "scene-private-room-osaka",
@@ -114,17 +114,8 @@ export const SCENE_FEATURES: Feature[] = [
     "image": "/restaurants/teleapo-お好み焼き千富/hero.jpg"
   },
   {
-    "id": "scene-lunch-hyogo",
-    "no": "SC-12",
-    "tag": "ランチ",
-    "kicker": "HYOGO · LUNCH",
-    "title": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-    "sub": "元町、三宮、谷上、板宿、八多、加古川。昼の営業が早く終わる順の6軒",
-    "image": "/restaurants/r93/r93-01.jpg"
-  },
-  {
     "id": "scene-lunch-kyoto",
-    "no": "SC-13",
+    "no": "SC-12",
     "tag": "ランチ",
     "kicker": "KYOTO · LUNCH",
     "title": "京都のランチ、昼の営業が終わる時刻で選ぶ6軒",
@@ -133,7 +124,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-mie-伊勢市",
-    "no": "SC-14",
+    "no": "SC-13",
     "tag": "ランチ",
     "kicker": "MIE · LUNCH",
     "title": "伊勢市のランチ4軒、休みの曜日順に。小俣町・上地町・大湊町・楠部町",
@@ -142,7 +133,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-nagano",
-    "no": "SC-15",
+    "no": "SC-14",
     "tag": "ランチ",
     "kicker": "NAGANO · LUNCH",
     "title": "長野県のランチ、昼に開く曜日で選ぶ6軒",
@@ -151,7 +142,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-nagoya",
-    "no": "SC-16",
+    "no": "SC-15",
     "tag": "ランチ",
     "kicker": "NAGOYA · LUNCH",
     "title": "名古屋のランチ、東区・中区・南区・千種区・北区の6軒",
@@ -160,7 +151,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-osaka",
-    "no": "SC-17",
+    "no": "SC-16",
     "tag": "ランチ",
     "kicker": "OSAKA · LUNCH",
     "title": "大阪のランチ6軒、平日だけ・土日も開く店を曜日で分ける",
@@ -169,7 +160,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-saitama",
-    "no": "SC-18",
+    "no": "SC-17",
     "tag": "ランチ",
     "kicker": "SAITAMA · LUNCH",
     "title": "埼玉のランチ、曜日と営業時間で選ぶ6軒",
@@ -178,7 +169,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-shizuoka",
-    "no": "SC-19",
+    "no": "SC-18",
     "tag": "ランチ",
     "kicker": "SHIZUOKA · LUNCH",
     "title": "静岡県のランチ6軒　三島・富士宮・藤枝・掛川",
@@ -187,7 +178,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-tokyo-八王子市",
-    "no": "SC-20",
+    "no": "SC-19",
     "tag": "ランチ",
     "kicker": "TOKYO · LUNCH",
     "title": "八王子市のランチ、昼の開店が早い順に3軒",
@@ -196,7 +187,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-lunch-yamaguchi",
-    "no": "SC-21",
+    "no": "SC-20",
     "tag": "ランチ",
     "kicker": "YAMAGUCHI · LUNCH",
     "title": "山口県のランチ、昼の閉まる時刻で並べた下関・宇部・防府の6軒",
@@ -205,7 +196,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-late-night-hyogo",
-    "no": "SC-22",
+    "no": "SC-21",
     "tag": "深夜営業",
     "kicker": "HYOGO · LATE NIGHT",
     "title": "神戸・兵庫の深夜営業6軒、終わりは0時から翌4時",
@@ -214,7 +205,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-late-night-nagoya",
-    "no": "SC-23",
+    "no": "SC-22",
     "tag": "深夜営業",
     "kicker": "NAGOYA · LATE NIGHT",
     "title": "名古屋・愛知の深夜営業5軒。金・土は翌4:00閉店の店から、土曜だけ00:00閉店の店まで",
@@ -223,7 +214,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-late-night-osaka",
-    "no": "SC-24",
+    "no": "SC-23",
     "tag": "深夜営業",
     "kicker": "OSAKA · LATE NIGHT",
     "title": "大阪の深夜営業6軒、閉店は24時から翌1時まで",
@@ -232,7 +223,7 @@ export const SCENE_FEATURES: Feature[] = [
   },
   {
     "id": "scene-late-night-tokyo",
-    "no": "SC-25",
+    "no": "SC-24",
     "tag": "深夜営業",
     "kicker": "TOKYO · LATE NIGHT",
     "title": "東京の深夜営業、閉店0:00〜翌6:00の4軒",
@@ -254,8 +245,8 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "date": "2026-10-01",
     "reading": "約3分",
     "author": "マチノワ編集部",
-    "heroImage": "/restaurants/r20/r20-image-1.jpg",
-    "ogImage": "/restaurants/r20/r20-image-1.jpg",
+    "heroImage": "/restaurants/r20/r20-image-2.jpg",
+    "ogImage": "/restaurants/r20/r20-image-2.jpg",
     "ranking": [
       {
         "rank": "STORE 01",
@@ -266,9 +257,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "昼は1,000円台、夜は4,000円台。完全個室は最大10名",
         "desc": "予算は昼と夜で幅が違う。昼が1,000〜1,999円、夜が4,000〜4,999円。昼に使えるのは土日祝のランチ（11:30〜15:00）だけで、火〜金と祝前は18:00からの夜営業になる。席は30席。完全個室は最大10名で、テラス席もある。10名を超える人数は、完全個室には収まらない。定休日は月曜で、月曜が祝日なら休みは翌火曜にずれる。金額は変わることがあるので、席を取るときに今の料金を聞いておくと話が早い。",
         "images": [
-          "/restaurants/r20/r20-image-1.jpg",
           "/restaurants/r20/r20-image-2.jpg",
-          "/restaurants/r20/r20-image-3.jpg"
+          "/restaurants/r20/r20-image-3.jpg",
+          "/restaurants/r20/r20-image-4.jpg"
         ],
         "specs": [
           {
@@ -418,8 +409,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "江南駅から車で4〜8分の、和食・創作料理の店。席は72席で、個室は2名から70名までと人数の幅が広い。昼は火〜土の11:00〜13:45。夜は火〜木が17:00〜23:00、金・土は00:00まで、日曜は17:00〜22:00で、日曜に昼の営業はない。定休日は月曜日。",
         "images": [
           "/restaurants/teleapo-楽喰/hero.jpg",
-          "/restaurants/teleapo-楽喰/point2.jpg",
-          "/restaurants/teleapo-楽喰/point3.jpg"
+          "/restaurants/teleapo-楽喰/point2.jpg"
         ],
         "specs": [
           {
@@ -452,12 +442,12 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "接待・会食の店を探す",
         "h": "/scene/business",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "名古屋の店を探す",
         "h": "/region/nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       }
     ],
     "quote": "",
@@ -522,8 +512,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "営業は昼の11:30–14:00（木曜を除く）と夜の17:00–22:00。定休日はなし（Googleマップの営業時間による）。予算は昼が1,000円台から、夜は3,000円台まで。昼は少人数の会食、夜は社内の集まりと、時間帯で使い分けられる価格帯だ。席は24席で、カウンター8席とお座敷6席がある。守口市金下町1丁目にあり、最寄りは京阪本線の土居駅から徒歩4分、地下鉄の太子橋今市駅から徒歩6分。",
         "images": [
           "/restaurants/teleapo-創丸福/hero.jpg",
-          "/restaurants/teleapo-創丸福/point2.jpg",
-          "/restaurants/teleapo-創丸福/point3.jpg"
+          "/restaurants/teleapo-創丸福/point2.jpg"
         ],
         "specs": [
           {
@@ -647,9 +636,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "個室とVIPルームがある、車での来店が勧められている岸和田市の焼肉店",
         "desc": "無休で、営業は16:00〜23:00。昼の営業はなく、夕方から夜にかけての席になる。最寄りとして示されているのは和泉中央駅だが、店があるのは岸和田市三田町802-1。予算は3,000〜6,000円で、取引先を迎える夜の会食にも、少人数の気軽な集まりにも当てられる幅だ。",
         "images": [
-          "/restaurants/r107/r107-01.jpg",
           "/restaurants/r107/r107-02.jpg",
-          "/restaurants/r107/r107-03.jpg"
+          "/restaurants/r107/r107-03.jpg",
+          "/restaurants/r107/r107-04.jpg"
         ],
         "specs": [
           {
@@ -676,7 +665,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "静岡県の接待・会食に、個室・座敷・貸切のある4軒",
@@ -747,8 +736,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "愛野東2丁目の味匠 弐は、最寄りの愛野駅の北口から徒歩4分。総席数は36席で、席はカウンターと掘りごたつ個室に分かれる。駐車場は約10台。営業は昼と夜の2部に分かれ、昼は11:30–13:30、夜は17:30–22:00。開くのは火〜日で、休みは月曜日。",
         "images": [
           "/restaurants/teleapo-味匠弐/hero.jpg",
-          "/restaurants/teleapo-味匠弐/point2.jpg",
-          "/restaurants/teleapo-味匠弐/point3.jpg"
+          "/restaurants/teleapo-味匠弐/point2.jpg"
         ],
         "specs": [
           {
@@ -829,7 +817,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "大阪府の接待・会食、個室と貸切がある6軒",
@@ -1210,7 +1198,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "三重の宴会、座敷・個室・貸切相談で選ぶ4軒",
@@ -1456,8 +1444,8 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "date": "2026-10-01",
     "reading": "約3分",
     "author": "マチノワ編集部",
-    "heroImage": "/restaurants/r20/r20-image-1.jpg",
-    "ogImage": "/restaurants/r20/r20-image-1.jpg",
+    "heroImage": "/restaurants/r20/r20-image-2.jpg",
+    "ogImage": "/restaurants/r20/r20-image-2.jpg",
     "ranking": [
       {
         "rank": "STORE 01",
@@ -1468,9 +1456,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "高岳駅から徒歩約5分のベトナム料理",
         "desc": "席は「30席（完全個室最大10名・テラス席あり）」。住所は名古屋市東区泉3-11-29の1階。営業は火〜金・祝前が18:00〜23:00、土日祝はランチ11:30〜15:00とディナー18:00〜23:00（料理L.O. 22:00）で、昼に使えるのは土日祝だけになる。定休日は月曜（祝日の場合は翌火曜）。予算は夜が￥4,000〜￥4,999、昼が￥1,000〜￥1,999。金額は時期で動くため、今の価格は店に聞いてから決める。",
         "images": [
-          "/restaurants/r20/r20-image-1.jpg",
           "/restaurants/r20/r20-image-2.jpg",
-          "/restaurants/r20/r20-image-3.jpg"
+          "/restaurants/r20/r20-image-3.jpg",
+          "/restaurants/r20/r20-image-4.jpg"
         ],
         "specs": [
           {
@@ -1587,8 +1575,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "江南駅から車で4〜8分、江南市東野町郷前西106-1にある和食・創作料理の店。席は72席で、個室は2名〜70名対応。定休日は月曜日。営業は火〜木が11:00–13:45と17:00–23:00、金・土が11:00–13:45と17:00–00:00、日が17:00–22:00で、日曜は夜だけになる。",
         "images": [
           "/restaurants/teleapo-楽喰/hero.jpg",
-          "/restaurants/teleapo-楽喰/point2.jpg",
-          "/restaurants/teleapo-楽喰/point3.jpg"
+          "/restaurants/teleapo-楽喰/point2.jpg"
         ],
         "specs": [
           {
@@ -1615,9 +1602,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "マトン焼き肉店の個室は、醸造樽の改装",
         "desc": "席は「約100席(醸造樽の個室複数)」。個室は醸造樽を改装した部屋で、直径4m・高さ2m、最大30名。この6軒のなかで、樽の個室があるのはここだけだ。住所は蒲郡市金平町上ノ坊20、最寄りは三河鹿島駅から車で6分。営業は月・火・金〜日の11:00–15:00で、夜は営業時間に入っていない。夜に使えるかは、店に相談してからの話になる。定休日は水曜・木曜。",
         "images": [
-          "/restaurants/teleapo-山麓園/hero.jpg",
-          "/restaurants/teleapo-山麓園/point2.jpg",
-          "/restaurants/teleapo-山麓園/point3.jpg"
+          "/restaurants/teleapo-山麓園/hero.jpg"
         ],
         "specs": [
           {
@@ -1640,7 +1625,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "名古屋・愛知で宴会・大人数の集まりを組む。座敷・個室・貸切の表記がある6軒",
@@ -1650,12 +1635,12 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "個室で食事の店を探す",
         "h": "/scene/private-room",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "名古屋の店を探す",
         "h": "/region/nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       }
     ],
     "quote": "",
@@ -1885,7 +1870,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "個室で食事する、名古屋と愛知県の6軒",
         "h": "/feature/scene-private-room-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "個室で食事の店を探す",
@@ -1958,8 +1943,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "袋井市愛野東2丁目の和食店、味匠 弐は、定休日が月曜日で、ほかの日は昼11:30–13:30、夜17:30–22:00に開く。駐車場は約10台。総席数36席はカウンターと掘りごたつ個室でできていて、個室は1部屋で20〜25名程度までと書かれている。人数の多い食事で部屋の大きさを見るなら、この数字が手がかりだ。",
         "images": [
           "/restaurants/teleapo-味匠弐/hero.jpg",
-          "/restaurants/teleapo-味匠弐/point2.jpg",
-          "/restaurants/teleapo-味匠弐/point3.jpg"
+          "/restaurants/teleapo-味匠弐/point2.jpg"
         ],
         "specs": [
           {
@@ -2162,9 +2146,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "img": "/restaurants/teleapo-お好み焼き千富/hero.jpg"
       },
       {
-        "t": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-        "h": "/feature/scene-lunch-hyogo",
-        "img": "/restaurants/r93/r93-01.jpg"
+        "t": "京都のランチ、昼の営業が終わる時刻で選ぶ6軒",
+        "h": "/feature/scene-lunch-kyoto",
+        "img": "/restaurants/teleapo-わかしろ/hero.jpg"
       },
       {
         "t": "ランチの店を探す",
@@ -2206,8 +2190,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "カウンター8席のみで、個室はない。廿日市市地御前1丁目のお好み焼き店で、広島電鉄のJA広島病院前駅から徒歩4分。昼は11:00から14:00まで。定休日は月曜と火曜で、金〜日は17:00〜19:00にも開き、水・木は昼だけになる。予算は999円以下で、肉玉そばは700円から。カウンターだけなので、複数人で入る日は先に店へ尋ねておきたい。",
         "images": [
           "/restaurants/teleapo-お好み焼き千富/hero.jpg",
-          "/restaurants/teleapo-お好み焼き千富/point2.jpg",
-          "/restaurants/teleapo-お好み焼き千富/point3.jpg"
+          "/restaurants/teleapo-お好み焼き千富/point2.jpg"
         ],
         "specs": [
           {
@@ -2402,9 +2385,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "img": "/restaurants/teleapo-かじゅある割烹頼みち/hero.jpg"
       },
       {
-        "t": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-        "h": "/feature/scene-lunch-hyogo",
-        "img": "/restaurants/r93/r93-01.jpg"
+        "t": "京都のランチ、昼の営業が終わる時刻で選ぶ6軒",
+        "h": "/feature/scene-lunch-kyoto",
+        "img": "/restaurants/teleapo-わかしろ/hero.jpg"
       },
       {
         "t": "ランチの店を探す",
@@ -2421,240 +2404,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "quoteCite": "マチノワ編集部",
     "closing": "出かける日が決まっているなら、曜日から引くほうが早い。月曜の昼に開くのは無着庵とnanchiの2軒で、nanchiは月曜が祝日なら休み。火曜は千富とシップが休み、水曜はnanchiが、木曜は無着庵が休む。日曜に昼を食べるなら、定休日が日曜のハレレアとnanchiを除く4軒で、そのうちおはしとこむぎは第3日曜が休みになる。広島市の外にあるのは廿日市市の千富だけで、残る5軒は東区・安佐北区・中区・佐伯区・南区に分かれている。予算は千富の999円以下からシップの2,000〜4,000円まで幅がある。営業時間も定休日も予算の目安も、臨時の休みや改定で変わることがある。出かける日の前に、店の案内で確かめておきたい。"
   },
-  "scene-lunch-hyogo": {
-    "id": "scene-lunch-hyogo",
-    "no": "SC-12",
-    "articleType": "ranking",
-    "kicker": "HYOGO · LUNCH",
-    "title": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-    "titleHTML": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-    "subtitle": "元町、三宮、谷上、板宿、八多、加古川。昼の営業が早く終わる順の6軒",
-    "lede": "昼の営業が何時で終わるかは、店によってかなり違う。ここに並べたのは、昼にあたる時間帯が営業時間に入っている6軒で、中央区と北区が2軒ずつ、須磨区と加古川市が1軒ずつ。昼と夜で営業時間を分けている3軒は昼の部の終わりを、朝や昼から閉店まで一続きの3軒は閉店の時刻を数えた。いちばん早いのは元町の海鮮の店で13:00、いちばん遅いのは北区八多町のカフェ・和食で18:00。並びは順位ではなく、この終わりの時刻が早い順にしてある。営業時間や予算は変わることがあるので、出かける前に店へ電話で聞いておくと安心だ。",
-    "date": "2026-10-01",
-    "reading": "約3分",
-    "author": "マチノワ編集部",
-    "heroImage": "/restaurants/r93/r93-01.jpg",
-    "ogImage": "/restaurants/r93/r93-01.jpg",
-    "ranking": [
-      {
-        "rank": "STORE 01",
-        "rankNum": 1,
-        "name": "わさびと魚",
-        "cuisine": "海鮮",
-        "area": "神戸市中央区",
-        "heading": "売り切れ次第で終わる、昼は12:00からの1時間",
-        "desc": "ランチは12:00〜13:00の1時間で、売り切れ次第終了。6軒のなかで昼の枠がいちばん短く、13:00より前に終わる日もありうる。ここを狙う日は、昼の予定の最初に置いておきたい。夜は17:30〜22:30。業態は海鮮で、中央区下山手通の西田ビル1階、JR元町駅から徒歩3分。予算は¥3,000〜¥5,000。定休日は「不定休（事前確認推奨）」なので、日が決まったら先に店へ連絡を入れておく。",
-        "images": [
-          "/restaurants/r93/r93-01.jpg",
-          "/restaurants/r93/r93-02.jpg",
-          "/restaurants/r93/r93-03.jpg"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県神戸市中央区下山手通3-6-4 西田ビル 1F"
-          },
-          {
-            "k": "最寄り駅",
-            "v": "JR元町駅より徒歩3分"
-          },
-          {
-            "k": "営業時間",
-            "v": "ランチ 12:00〜13:00（売り切れ次第終了） / ディナー 17:30〜22:30"
-          },
-          {
-            "k": "予算",
-            "v": "¥3,000〜¥5,000"
-          }
-        ],
-        "href": "/restaurant/r93"
-      },
-      {
-        "rank": "STORE 02",
-        "rankNum": 2,
-        "name": "カルメン",
-        "cuisine": "スペイン料理",
-        "area": "神戸市中央区",
-        "heading": "カウンター7席を含む37席、三宮のスペイン料理",
-        "desc": "席は37席で、うち7席がカウンター。ひとりの昼ならカウンター、連れがいるなら残りの席、と分けて考えられる。スペイン料理の店で、阪急神戸三宮駅から徒歩約1分、中央区北長狭通のカルメンビル2階にある。昼は11:30〜14:00で、水〜日に開く。火曜は17:00〜22:00の夜だけ、月曜は定休日なので、この2日は昼に行けない。予算はランチ¥1,000〜1,999、ディナー¥5,000〜5,999で、昼のほうがだいぶ低い。",
-        "images": [
-          "/restaurants/r110/r110-01.jpg",
-          "/restaurants/r110/r110-02.jpg",
-          "/restaurants/r110/r110-03.jpg"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県神戸市中央区北長狭通1-7-1 カルメンビル2F"
-          },
-          {
-            "k": "最寄り駅",
-            "v": "阪急神戸三宮駅徒歩約1分"
-          },
-          {
-            "k": "営業時間",
-            "v": "火 17:00〜22:00、水〜金 11:30〜14:00 / 17:00〜22:00、土 11:30〜14:00 / 17:00〜23:00、日 11:30〜14:00 / 17:00〜22:00"
-          },
-          {
-            "k": "予算",
-            "v": "ランチ¥1,000〜1,999 / ディナー¥5,000〜5,999"
-          }
-        ],
-        "href": "/restaurant/r110"
-      },
-      {
-        "rank": "STORE 03",
-        "rankNum": 3,
-        "name": "ぎょうざ菜館 きてや",
-        "cuisine": "餃子・中華",
-        "area": "神戸市北区",
-        "heading": "餃子・中華、昼は火〜土で日曜は夜だけ",
-        "desc": "北区谷上東町のユニベール北神戸1階、北神急行の谷上駅から徒歩3分にある餃子・中華の店。昼は火〜土の11:30〜14:00、夜は17:30〜22:00。日曜はこの夜の部だけで、月曜が定休日。席はカウンター12、テーブル13の25席で、ほぼ半々の内訳になっている。予算は¥2,000〜2,999。",
-        "images": [
-          "/restaurants/r105/r105-01.jpg",
-          "/restaurants/r105/r105-02.jpg",
-          "/restaurants/r105/r105-03.jpg"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県神戸市北区谷上東町3-2 ユニベール北神戸1F"
-          },
-          {
-            "k": "最寄り駅",
-            "v": "北神急行 谷上駅徒歩3分"
-          },
-          {
-            "k": "営業時間",
-            "v": "火〜土 11:30〜14:00 / 17:30〜22:00、日 17:30〜22:00"
-          },
-          {
-            "k": "予算",
-            "v": "¥2,000〜2,999"
-          }
-        ],
-        "href": "/restaurant/r105"
-      },
-      {
-        "rank": "STORE 04",
-        "rankNum": 4,
-        "name": "ごはん屋はれいろ",
-        "cuisine": "カフェ・喫茶",
-        "area": "加古川市",
-        "heading": "朝から14:30まで、加古川市のカフェ・喫茶",
-        "desc": "閉まるのはどの日も14:30。開くのは月・水〜土が08:00、日曜は07:00で、日曜だけ1時間早い。加古川市東神吉町神吉にあるカフェ・喫茶の店で、定休日は火曜日。ランチの時間帯にあたる11:00以降は、14:30までの3時間半が使える。席はカウンター4席、テーブル14席の計18席で、席の大半はテーブルになる。",
-        "images": [
-          "/restaurants/teleapo-ごはん屋はれいろ/hero.jpg",
-          "/restaurants/teleapo-ごはん屋はれいろ/point2.jpg"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県加古川市東神吉町神吉1020"
-          },
-          {
-            "k": "営業時間",
-            "v": "月・水〜土 08:00–14:30 / 日 07:00–14:30"
-          }
-        ],
-        "href": "/restaurant/r400"
-      },
-      {
-        "rank": "STORE 05",
-        "rankNum": 5,
-        "name": "うどん処 和心鶴々",
-        "cuisine": "うどん・カフェ",
-        "area": "神戸市須磨区",
-        "heading": "土・日は16:00まで、うどん・カフェ",
-        "desc": "土・日は11:00〜16:00、月〜金・祝は11:00〜15:00（L.O.14:30）で、週末のほうが昼の枠が1時間長い。うどん・カフェの店で、須磨区前池町、板宿駅（地下鉄・山陽電車）から徒歩約3分。席は32席、カウンター10にテーブル22で、テーブルがカウンターの倍以上ある。予算は〜¥1,999。定休日は「第2・第4木曜、不定休」で、木曜に行くなら第何週かも確かめておきたい。",
-        "images": [
-          "/restaurants/r100/r100-01.jpg",
-          "/restaurants/r100/r100-02.jpg",
-          "/restaurants/r100/r100-03.jpg"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県神戸市須磨区前池町2-1-8"
-          },
-          {
-            "k": "最寄り駅",
-            "v": "板宿駅（地下鉄・山陽電車）徒歩約3分"
-          },
-          {
-            "k": "営業時間",
-            "v": "月〜金・祝 11:00〜15:00（L.O.14:30）、土・日 11:00〜16:00"
-          },
-          {
-            "k": "予算",
-            "v": "〜¥1,999"
-          }
-        ],
-        "href": "/restaurant/r100"
-      },
-      {
-        "rank": "STORE 06",
-        "rankNum": 6,
-        "name": "菜々cafe",
-        "cuisine": "カフェ・和食",
-        "area": "神戸市北区",
-        "heading": "五社駅から車で約10分、18:00まで開くカフェ・和食",
-        "desc": "休みは水曜日だけで、月・火・木〜日は11:30〜18:00（L.O. 17:00）に開く。カフェ・和食の店で、神戸市北区の八多町附物にあり、最寄りの五社駅からは車で約10分。駅から車で10分かかる分、着く時刻は17:00のL.O.から逆算して組みたい。席は40席、予算は¥2,000〜¥2,999。",
-        "images": [
-          "/restaurants/r82/r82-01.jpg",
-          "/restaurants/r82/r82-02.png",
-          "/restaurants/r82/r82-03.png"
-        ],
-        "specs": [
-          {
-            "k": "住所",
-            "v": "兵庫県神戸市北区八多町附物373"
-          },
-          {
-            "k": "最寄り駅",
-            "v": "五社駅 車で約10分"
-          },
-          {
-            "k": "営業時間",
-            "v": "月・火・木〜日 11:30〜18:00（L.O. 17:00）"
-          },
-          {
-            "k": "予算",
-            "v": "¥2,000〜¥2,999"
-          }
-        ],
-        "href": "/restaurant/r82"
-      }
-    ],
-    "sideArticles": [
-      {
-        "t": "太田市のランチ3軒、蕎麦・和食・焼肉。昼は14:00〜15:00で閉まる",
-        "h": "/feature/scene-lunch-gunma-%E5%A4%AA%E7%94%B0%E5%B8%82",
-        "img": "/restaurants/teleapo-かじゅある割烹頼みち/hero.jpg"
-      },
-      {
-        "t": "広島のランチ、昼の終わる時刻で選ぶ6軒",
-        "h": "/feature/scene-lunch-hiroshima",
-        "img": "/restaurants/teleapo-お好み焼き千富/hero.jpg"
-      },
-      {
-        "t": "ランチの店を探す",
-        "h": "/scene/lunch",
-        "img": "/restaurants/r93/r93-01.jpg"
-      },
-      {
-        "t": "神戸・兵庫の店を探す",
-        "h": "/region/hyogo",
-        "img": "/restaurants/r93/r93-01.jpg"
-      }
-    ],
-    "quote": "",
-    "quoteCite": "マチノワ編集部",
-    "closing": "昼の終わりが13:00の店と18:00の店では、同じ昼でも動き方が変わる。行く曜日と、店に着ける時刻を先に決めると、6軒から絞りやすい。14:00をすぎてから動く日は、昼の部が13:00と14:00で終わる3軒が外れ、14:30以降まで開く3軒が残る。曜日で見ると、月曜休みが2軒、火曜休みと水曜休みが1軒ずつ。不定休の2軒は、前日までに店へ問い合わせて、その日に開いているかを確かめておきたい。"
-  },
   "scene-lunch-kyoto": {
     "id": "scene-lunch-kyoto",
-    "no": "SC-13",
+    "no": "SC-12",
     "articleType": "ranking",
     "kicker": "KYOTO · LUNCH",
     "title": "京都のランチ、昼の営業が終わる時刻で選ぶ6軒",
@@ -2879,7 +2631,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-mie-伊勢市": {
     "id": "scene-lunch-mie-伊勢市",
-    "no": "SC-14",
+    "no": "SC-13",
     "articleType": "ranking",
     "kicker": "MIE · LUNCH",
     "title": "伊勢市のランチ4軒、休みの曜日順に。小俣町・上地町・大湊町・楠部町",
@@ -3037,7 +2789,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-nagano": {
     "id": "scene-lunch-nagano",
-    "no": "SC-15",
+    "no": "SC-14",
     "articleType": "ranking",
     "kicker": "NAGANO · LUNCH",
     "title": "長野県のランチ、昼に開く曜日で選ぶ6軒",
@@ -3089,8 +2841,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "専門は天ぷらで、席はカウンター16席とテーブル8席。営業は月〜土の11:00から14:00と、16:00から18:30。日曜が定休日。鼎駅から歩くと15分、バス停の名古熊中央からなら2分。予算は210円〜1,848円。",
         "images": [
           "/restaurants/teleapo-大衆天ぷら天ノ松/hero.jpg",
-          "/restaurants/teleapo-大衆天ぷら天ノ松/point2.jpg",
-          "/restaurants/teleapo-大衆天ぷら天ノ松/point3.jpg"
+          "/restaurants/teleapo-大衆天ぷら天ノ松/point2.jpg"
         ],
         "specs": [
           {
@@ -3209,8 +2960,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "ウニのタリオリーニが1,650円、ボロネーゼが1,450円。昼は11:30から14:00、夜は17:30から21:00で、昼と夜のあいだは3時間半あく。休みは月曜・火曜・木曜の3日。JR小海線の滑津駅から歩いて5分。席は30席で、カウンターの1名席とソファー席がある。",
         "images": [
           "/restaurants/teleapo-トラットリアSIN/hero.jpg",
-          "/restaurants/teleapo-トラットリアSIN/point2.png",
-          "/restaurants/teleapo-トラットリアSIN/point3.png"
+          "/restaurants/teleapo-トラットリアSIN/point2.png"
         ],
         "specs": [
           {
@@ -3261,7 +3011,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-nagoya": {
     "id": "scene-lunch-nagoya",
-    "no": "SC-16",
+    "no": "SC-15",
     "articleType": "ranking",
     "kicker": "NAGOYA · LUNCH",
     "title": "名古屋のランチ、東区・中区・南区・千種区・北区の6軒",
@@ -3415,9 +3165,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "栄駅1番出口から徒歩3〜5分、昼も営業する居酒屋",
         "desc": "ランチは月〜土の11:00〜14:00。日曜と祝日は休みで、毎月第3・第5土曜はランチも休む。土曜の昼に使うなら、その週が第3か第5にあたらないかをカレンダーで見てから決めるといい。席は38席で、カウンター席とテーブル席がある。人数や利用の形態に合わせて席を選べる構成になっている。",
         "images": [
-          "/restaurants/r31/r31-image-1.jpg",
           "/restaurants/r31/r31-image-2.jpg",
-          "/restaurants/r31/r31-image-3.jpg"
+          "/restaurants/r31/r31-image-3.jpg",
+          "/restaurants/r31/r31-image-4.jpg"
         ],
         "specs": [
           {
@@ -3477,7 +3227,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "名古屋・愛知で宴会・大人数の集まりを組む。座敷・個室・貸切の表記がある6軒",
@@ -3501,7 +3251,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-osaka": {
     "id": "scene-lunch-osaka",
-    "no": "SC-17",
+    "no": "SC-16",
     "articleType": "ranking",
     "kicker": "OSAKA · LUNCH",
     "title": "大阪のランチ6軒、平日だけ・土日も開く店を曜日で分ける",
@@ -3657,7 +3407,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "images": [
           "/restaurants/r39/r39-image-1.jpg",
           "/restaurants/r39/r39-image-2.jpg",
-          "/restaurants/r39/r39-image-3.jpg"
+          "/restaurants/r39/r39-image-4.jpg"
         ],
         "specs": [
           {
@@ -3741,7 +3491,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-saitama": {
     "id": "scene-lunch-saitama",
-    "no": "SC-18",
+    "no": "SC-17",
     "articleType": "ranking",
     "kicker": "SAITAMA · LUNCH",
     "title": "埼玉のランチ、曜日と営業時間で選ぶ6軒",
@@ -3863,8 +3613,8 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "昼は11:30から15:00、夜は17:00から20:50。ランチの予算は999円以下、夜は1,000〜1,999円。6軒のうち予算が999円以下の帯なのは、この店のランチとまいこカフェだけだ。春日部駅の東口から徒歩5分、粕壁東にある。業態は中華料理とラーメン。",
         "images": [
           "/restaurants/r104/r104-01.jpg",
-          "/restaurants/r104/r104-02.png",
-          "/restaurants/r104/r104-03.png"
+          "/restaurants/r104/r104-06.jpg",
+          "/restaurants/r104/r104-07.jpg"
         ],
         "specs": [
           {
@@ -3981,7 +3731,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-shizuoka": {
     "id": "scene-lunch-shizuoka",
-    "no": "SC-19",
+    "no": "SC-18",
     "articleType": "ranking",
     "kicker": "SHIZUOKA · LUNCH",
     "title": "静岡県のランチ6軒　三島・富士宮・藤枝・掛川",
@@ -4004,8 +3754,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "昼は11:30–14:00の2時間半。14:00から17:00のあいだは閉まり、夜は17:00から20:30まで開く。定休日なし（Googleマップの営業時間による）なので、曜日が決まっていない昼の予定にも組み込みやすい。場所は富士宮市城北町15。",
         "images": [
           "/restaurants/teleapo-本手打ちそば蕎友館/hero.jpg",
-          "/restaurants/teleapo-本手打ちそば蕎友館/point2.jpg",
-          "/restaurants/teleapo-本手打ちそば蕎友館/point3.jpg"
+          "/restaurants/teleapo-本手打ちそば蕎友館/point2.jpg"
         ],
         "specs": [
           {
@@ -4080,8 +3829,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "開くのは月曜と木〜日の週5日で、時間は11:00–14:00。火曜と水曜は、2日続けて定休日になる。6軒のなかでは開店がいちばん早い。席はカウンターとテーブルのどちらもある。住所は藤枝市岡部町殿で、車で向かうなら、駐車場を先に調べておきたい。",
         "images": [
           "/restaurants/teleapo-縁カフェ天神森/hero.jpg",
-          "/restaurants/teleapo-縁カフェ天神森/point2.jpg",
-          "/restaurants/teleapo-縁カフェ天神森/point3.jpg"
+          "/restaurants/teleapo-縁カフェ天神森/point2.jpg"
         ],
         "specs": [
           {
@@ -4184,7 +3932,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-tokyo-八王子市": {
     "id": "scene-lunch-tokyo-八王子市",
-    "no": "SC-20",
+    "no": "SC-19",
     "articleType": "ranking",
     "kicker": "TOKYO · LUNCH",
     "title": "八王子市のランチ、昼の開店が早い順に3軒",
@@ -4306,7 +4054,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-lunch-yamaguchi": {
     "id": "scene-lunch-yamaguchi",
-    "no": "SC-21",
+    "no": "SC-20",
     "articleType": "ranking",
     "kicker": "YAMAGUCHI · LUNCH",
     "title": "山口県のランチ、昼の閉まる時刻で並べた下関・宇部・防府の6軒",
@@ -4510,7 +4258,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-late-night-hyogo": {
     "id": "scene-late-night-hyogo",
-    "no": "SC-22",
+    "no": "SC-21",
     "articleType": "ranking",
     "kicker": "HYOGO · LATE NIGHT",
     "title": "神戸・兵庫の深夜営業6軒、終わりは0時から翌4時",
@@ -4565,9 +4313,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "昼と夜の二部制、夜は翌3:00まで開くイタリアン・バル",
         "desc": "ランチの営業があるのは、6軒のうちこの店だけ。予算はランチが¥4,000〜4,999、ディナーが¥8,000〜9,999で、ほぼ2倍の開きがある。昼に使うか夜に使うかで、財布の見通しが変わる。席は12席（カウンター6・テーブル6）。場所は三宮駅から徒歩3分、中山手通の第3天成ビル1階で、定休日は火曜。",
         "images": [
-          "/restaurants/r116/r116-01.jpg",
-          "/restaurants/r116/r116-02.png",
-          "/restaurants/r116/r116-03.jpg"
+          "/restaurants/r116/r116-03.jpg",
+          "/restaurants/r116/r116-04.jpg",
+          "/restaurants/r116/r116-05.jpg"
         ],
         "specs": [
           {
@@ -4724,14 +4472,14 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "sideArticles": [
       {
-        "t": "神戸・兵庫のランチ6軒、昼の営業の終わりは13:00から18:00",
-        "h": "/feature/scene-lunch-hyogo",
-        "img": "/restaurants/r93/r93-01.jpg"
-      },
-      {
         "t": "名古屋・愛知の深夜営業5軒。金・土は翌4:00閉店の店から、土曜だけ00:00閉店の店まで",
         "h": "/feature/scene-late-night-nagoya",
         "img": "/restaurants/r167/r167-01.jpg"
+      },
+      {
+        "t": "大阪の深夜営業6軒、閉店は24時から翌1時まで",
+        "h": "/feature/scene-late-night-osaka",
+        "img": "/restaurants/r15/r15-image-1.jpg"
       },
       {
         "t": "深夜営業の店を探す",
@@ -4750,7 +4498,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-late-night-nagoya": {
     "id": "scene-late-night-nagoya",
-    "no": "SC-23",
+    "no": "SC-22",
     "articleType": "ranking",
     "kicker": "NAGOYA · LATE NIGHT",
     "title": "名古屋・愛知の深夜営業5軒。金・土は翌4:00閉店の店から、土曜だけ00:00閉店の店まで",
@@ -4872,8 +4620,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "ここから2軒は名古屋市の外にある。営業は昼と夜の二部制で、火〜木が11:00〜13:45と17:00〜23:00、金・土が11:00〜13:45と17:00〜00:00、日は17:00〜22:00。日曜は昼の営業がない。席は72席で、個室は2名〜70名対応。定休日は月曜日。",
         "images": [
           "/restaurants/teleapo-楽喰/hero.jpg",
-          "/restaurants/teleapo-楽喰/point2.jpg",
-          "/restaurants/teleapo-楽喰/point3.jpg"
+          "/restaurants/teleapo-楽喰/point2.jpg"
         ],
         "specs": [
           {
@@ -4927,7 +4674,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
       {
         "t": "名古屋と愛知県内の接待・会食、個室の人数で選ぶ6軒",
         "h": "/feature/scene-business-nagoya",
-        "img": "/restaurants/r20/r20-image-1.jpg"
+        "img": "/restaurants/r20/r20-image-2.jpg"
       },
       {
         "t": "名古屋・愛知で宴会・大人数の集まりを組む。座敷・個室・貸切の表記がある6軒",
@@ -4951,7 +4698,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-late-night-osaka": {
     "id": "scene-late-night-osaka",
-    "no": "SC-24",
+    "no": "SC-23",
     "articleType": "ranking",
     "kicker": "OSAKA · LATE NIGHT",
     "title": "大阪の深夜営業6軒、閉店は24時から翌1時まで",
@@ -5191,7 +4938,7 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   },
   "scene-late-night-tokyo": {
     "id": "scene-late-night-tokyo",
-    "no": "SC-25",
+    "no": "SC-24",
     "articleType": "ranking",
     "kicker": "TOKYO · LATE NIGHT",
     "title": "東京の深夜営業、閉店0:00〜翌6:00の4軒",
@@ -5237,9 +4984,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "ビル5Fのお好み焼き。予算¥1,500〜¥2,000、蒲田駅から徒歩5分",
         "desc": "お好み焼きの店で、場所は西蒲田7丁目のSANKOビル5F。JR蒲田駅から歩いて5分、夕方の17:00に開けて翌0:00に閉める。予算は¥1,500〜¥2,000。定休日は不定休なので、日取りが決まったら営業日を先に聞いておきたい。同じ西蒲田7丁目に、この記事のもう1軒、nouaison ヌエゾンもある。",
         "images": [
-          "/restaurants/r92/r92-01.png",
-          "/restaurants/r92/r92-02.png",
-          "/restaurants/r92/r92-03.png"
+          "/restaurants/r92/r92-05.jpg",
+          "/restaurants/r92/r92-06.jpg",
+          "/restaurants/r92/r92-08.png"
         ],
         "specs": [
           {
@@ -5270,9 +5017,9 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "heading": "カウンター8とハイテーブル12の20席。金・土は翌1:00までのビストロ",
         "desc": "席は20席で、内訳はカウンターが8、ハイテーブルが12。ビストロ・フレンチの店で、JR蒲田駅西口から徒歩4分、西蒲田7丁目のSPACE KURO 1Fにある。営業は曜日で変わり、月〜木が17:00〜翌0:00、金が17:00〜翌1:00、土が12:00〜翌1:00、日・祝が12:00〜翌0:00。予算は¥5,000〜7,999で、予算が分かる3軒のなかでは上限がいちばん高い。不定休で曜日ごとに時間も違うため、日にちを決めたら店に聞いておくと安心だ。",
         "images": [
-          "/restaurants/r106/r106-01.png",
           "/restaurants/r106/r106-02.png",
-          "/restaurants/r106/r106-03.png"
+          "/restaurants/r106/r106-03.png",
+          "/restaurants/r106/r106-04.jpg"
         ],
         "specs": [
           {
@@ -5304,8 +5051,8 @@ export const SCENE_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "desc": "夕食をすませたあとに向かう時間帯の店だ。開店は夜9時で、4軒のなかではいちばん遅い。翌6:00まで開けるのは月・火・金・土・日の5日。木曜だけは翌0:00に閉まり、水曜は休む。うどん・居酒屋で、カウンター席がある。所在地は足立区西新井本町1-11-7-105、東武大師線の大師前駅から徒歩約4分。予算は¥1,500〜¥3,000。木曜は短縮営業のため、日にちが決まったら店へ問い合わせておくと間違いがない。",
         "images": [
           "/restaurants/r103/r103-01.jpg",
-          "/restaurants/r103/r103-02.jpg",
-          "/restaurants/r103/r103-03.jpg"
+          "/restaurants/r103/r103-03.jpg",
+          "/restaurants/r103/r103-04.jpg"
         ],
         "specs": [
           {
@@ -5594,25 +5341,6 @@ export const SCENE_FEATURE_META: Record<string, SceneFeatureMeta> = {
       "イタリアン",
       "洋食",
       "そば"
-    ]
-  },
-  "scene-lunch-hyogo": {
-    "scene": "lunch",
-    "area": "hyogo",
-    "areaLabel": "神戸・兵庫",
-    "storeIds": [
-      "r93",
-      "r110",
-      "r105",
-      "r400",
-      "r100",
-      "r82"
-    ],
-    "tags": [
-      "ランチ",
-      "神戸・兵庫",
-      "神戸市",
-      "昼の営業"
     ]
   },
   "scene-lunch-kyoto": {

@@ -1,11 +1,14 @@
 /**
  * Image URL sizing utility.
  * Resizes images from various hosts to specific widths.
- * No imports - pure function for use in both server and client.
+ * Imports only lib/imageBlocklist (itself import-free) - safe for server and client.
  */
+import { isBlockedImage } from "./imageBlocklist";
 
 export function sized(url: string, w: number): string {
   if (!url) return url;
+  // 検閲で表示禁止にした画像は、どの経路から来てもここで差し替える（保険）
+  if (isBlockedImage(url)) return "/restaurants/_placeholder/feature-point.jpg";
 
   // Unsplash images: set w parameter
   if (url.includes("images.unsplash.com")) {

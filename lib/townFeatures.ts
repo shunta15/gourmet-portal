@@ -10,6 +10,7 @@ import { FEATURES, FEATURE_ARTICLES, type RegionKey, type Restaurant } from "@/l
 import { getFeatureRegions } from "@/lib/featureRegions";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { isSceneFeatureId } from "@/lib/sceneFeatureLinks";
+import { isBlockedImage } from "@/lib/imageBlocklist";
 
 export type TownFeatureLink = {
   id: string;
@@ -39,7 +40,7 @@ function matchKeys(town: string, regionTowns: string[]): string[] {
 const linkOf = (id: string): TownFeatureLink | null => {
   const a = FEATURE_ARTICLES[id];
   if (!a) return null;
-  return { id, href: `/feature/${encodeURIComponent(id)}`, kicker: a.kicker, title: a.title, image: a.heroImage };
+  return { id, href: `/feature/${encodeURIComponent(id)}`, kicker: a.kicker, title: a.title, image: isBlockedImage(a.heroImage) ? "/restaurants/_placeholder/feature-hero.jpg" : a.heroImage };
 };
 
 export function getTownFeatureLinks(

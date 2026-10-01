@@ -186,6 +186,10 @@ export function sanitizeRestaurant(r: any): any {
   if ((!result.image || result.image === null) && result.heroImages && result.heroImages.length > 0) {
     result.image = result.heroImages[0];
   }
+  // heroImages も空なら gallery の先頭
+  if ((!result.image || result.image === null) && result.gallery && result.gallery.length > 0) {
+    result.image = result.gallery[0];
+  }
 
   // If both are empty, use a placeholder
   if (!result.image || result.image === null) {

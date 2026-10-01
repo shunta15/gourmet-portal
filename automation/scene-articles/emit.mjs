@@ -45,7 +45,9 @@ const T = await loadLib("towns");
 const { SCENE_FEATURE_ARTICLES: previouslyEmitted } = await loadLib("sceneFeatures");
 const tagEvidence = JSON.parse(readFileSync(path.join(ROOT, "automation/stores500/tag-evidence.json"), "utf8"));
 
-const storeById = new Map(RESTAURANTS.map((r) => [r.id, r]));
+// 検閲で表示禁止にした画像（lib/imageBlocklist.ts）は記事の画像に使わない（サイトの店ページと同じ除外をかける）
+const { sanitizeRestaurant } = await loadLib("imageBlocklist");
+const storeById = new Map(RESTAURANTS.map((r) => [r.id, sanitizeRestaurant(r)]));
 const sceneBySlug = new Map(SCENES.map((s) => [s.slug, s]));
 const sceneIndex = new Map(SCENES.map((s, i) => [s.slug, i]));
 
