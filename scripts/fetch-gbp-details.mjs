@@ -395,7 +395,8 @@ async function main() {
   const all = JSON.parse(readFileSync(mapPath, "utf8"));
   const slice = all.slice(args.offset, args.limit != null ? args.offset + args.limit : undefined);
 
-  const { browser, ctx } = await newBrowser();
+  let browser = null;
+  let ctx = null;
   const summary = { total: slice.length, fetched: 0, skippedCached: 0, failed: [], seconds: [] };
   let fetchedBefore = false;
   try {
@@ -409,6 +410,8 @@ async function main() {
       // 1件ごとに 6〜10 秒あける（実際にアクセスした直後だけ）
       if (fetchedBefore) await sleep(6000 + Math.random() * 4000);
       fetchedBefore = true;
+      // ブラウザは最初に実際に取得するときまで起動しない（全件キャッシュ済みならアクセスゼロ）
+      if (!browser) ({ browser, ctx } = await newBrowser());
 
       const t0 = Date.now();
       const page = await ctx.newPage();
@@ -431,7 +434,7 @@ async function main() {
       }
     }
   } finally {
-    await browser.close();
+    await browser?.close();
   }
   console.log(JSON.stringify(summary, null, 2));
 }
