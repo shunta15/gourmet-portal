@@ -2,6 +2,7 @@
 // Extracted from lib/data.ts to reduce bundle size
 
 import { ARTICLE_REGIONS, type ArticleRegionKey } from "./articleRegions";
+import { isBlockedImage } from "./imageBlocklist";
 
 export type Stat = { n: string; l: string };
 
@@ -159,7 +160,7 @@ export const NATIONAL = {
     "https://images.unsplash.com/photo-1752135534175-44aa59a1bb50?w=1600&q=80",
     "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80",
     "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=80",
-  ],
+  ].filter((src) => !isBlockedImage(src)),
 };
 
 
@@ -387,7 +388,13 @@ const BASE_REGIONS: Record<BaseRegionKey, Region> = {
 };
 
 /** 手書きの16地域のあとに、記事由来の都道府県（自動生成）が並ぶ */
-export const REGIONS: Record<RegionKey, Region> = { ...BASE_REGIONS, ...ARTICLE_REGIONS };
+// 検閲で表示禁止にした画像（lib/imageBlocklist.ts）は地域ヒーローからも外す
+export const REGIONS: Record<RegionKey, Region> = Object.fromEntries(
+  Object.entries({ ...BASE_REGIONS, ...ARTICLE_REGIONS }).map(([k, r]) => [
+    k,
+    r.heroImages ? { ...r, heroImages: r.heroImages.filter((src) => !isBlockedImage(src)) } : r,
+  ]),
+) as Record<RegionKey, Region>;
 
 export const NEIGHBORHOODS: Neighborhood[] = [];
 

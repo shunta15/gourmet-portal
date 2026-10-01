@@ -60,7 +60,7 @@ export default async function FeatureRegionHub({
         <div
           className="img"
           style={{
-            backgroundImage: `url("${region.heroImages[0]}")`,
+            backgroundImage: `url("${region.heroImages[0] ?? "/restaurants/_placeholder/feature-hero.jpg"}")`,
           }}
         />
         <div className="feat-hero-inner" style={{ justifyContent: "center" }}>
