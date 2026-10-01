@@ -1,0 +1,783 @@
+[
+  {
+    "region": "kyoto",
+    "town": "京都市中京区",
+    "pref": "京都府",
+    "count": 14,
+    "storeIds": [
+      "r143",
+      "r144",
+      "r146",
+      "r150",
+      "r151",
+      "r166",
+      "r171",
+      "r192",
+      "r194",
+      "r260",
+      "r261",
+      "r401",
+      "r403",
+      "r405"
+    ]
+  },
+  {
+    "region": "hyogo",
+    "town": "神戸市中央区",
+    "pref": "兵庫県",
+    "count": 12,
+    "storeIds": [
+      "r76",
+      "r93",
+      "r101",
+      "r110",
+      "r116",
+      "r118",
+      "r123",
+      "r125",
+      "r175",
+      "r177",
+      "r179",
+      "r291"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市下京区",
+    "pref": "京都府",
+    "count": 10,
+    "storeIds": [
+      "r130",
+      "r152",
+      "r153",
+      "r155",
+      "r160",
+      "r162",
+      "r172",
+      "r248",
+      "r258",
+      "r293"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市伏見区",
+    "pref": "京都府",
+    "count": 10,
+    "storeIds": [
+      "r148",
+      "r157",
+      "r158",
+      "r189",
+      "r197",
+      "r199",
+      "r201",
+      "r206",
+      "r207",
+      "r244"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市右京区",
+    "pref": "京都府",
+    "count": 8,
+    "storeIds": [
+      "r133",
+      "r142",
+      "r145",
+      "r147",
+      "r159",
+      "r203",
+      "r290",
+      "r406"
+    ]
+  },
+  {
+    "region": "hiroshima",
+    "town": "広島市中区",
+    "pref": "広島県",
+    "count": 7,
+    "storeIds": [
+      "r181",
+      "r184",
+      "r186",
+      "r191",
+      "r204",
+      "r225",
+      "r252"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市左京区",
+    "pref": "京都府",
+    "count": 7,
+    "storeIds": [
+      "r137",
+      "r149",
+      "r161",
+      "r200",
+      "r205",
+      "r208",
+      "r211"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市西京区",
+    "pref": "京都府",
+    "count": 7,
+    "storeIds": [
+      "r131",
+      "r134",
+      "r135",
+      "r164",
+      "r180",
+      "r202",
+      "r209"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市北区",
+    "pref": "大阪府",
+    "count": 7,
+    "storeIds": [
+      "r03",
+      "r24",
+      "r28",
+      "r47",
+      "r50",
+      "r66",
+      "r277"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市城東区",
+    "pref": "大阪府",
+    "count": 6,
+    "storeIds": [
+      "r05",
+      "r15",
+      "r17",
+      "r33",
+      "r38",
+      "r60"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "東大阪市",
+    "pref": "大阪府",
+    "count": 6,
+    "storeIds": [
+      "r234",
+      "r236",
+      "r238",
+      "r241",
+      "r242",
+      "r243"
+    ]
+  },
+  {
+    "region": "tokyo",
+    "town": "大田区",
+    "pref": "東京都",
+    "count": 6,
+    "storeIds": [
+      "r91",
+      "r92",
+      "r95",
+      "r106",
+      "r124",
+      "r128"
+    ]
+  },
+  {
+    "region": "fukuoka",
+    "town": "久留米市",
+    "pref": "福岡県",
+    "count": 5,
+    "storeIds": [
+      "r233",
+      "r283",
+      "r284",
+      "r285",
+      "r287"
+    ]
+  },
+  {
+    "region": "gunma",
+    "town": "太田市",
+    "pref": "群馬県",
+    "count": 5,
+    "storeIds": [
+      "r373",
+      "r378",
+      "r382",
+      "r384",
+      "r398"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市北区",
+    "pref": "京都府",
+    "count": 5,
+    "storeIds": [
+      "r165",
+      "r176",
+      "r187",
+      "r195",
+      "r198"
+    ]
+  },
+  {
+    "region": "mie",
+    "town": "伊勢市",
+    "pref": "三重県",
+    "count": 5,
+    "storeIds": [
+      "r365",
+      "r367",
+      "r387",
+      "r394",
+      "r395"
+    ]
+  },
+  {
+    "region": "mie",
+    "town": "四日市市",
+    "pref": "三重県",
+    "count": 5,
+    "storeIds": [
+      "r349",
+      "r350",
+      "r354",
+      "r357",
+      "r361"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "高槻市",
+    "pref": "大阪府",
+    "count": 5,
+    "storeIds": [
+      "r88",
+      "r249",
+      "r250",
+      "r256",
+      "r269"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市西区",
+    "pref": "大阪府",
+    "count": 5,
+    "storeIds": [
+      "r27",
+      "r39",
+      "r41",
+      "r56",
+      "r63"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市中央区",
+    "pref": "大阪府",
+    "count": 5,
+    "storeIds": [
+      "r25",
+      "r32",
+      "r35",
+      "r48",
+      "r52"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市淀川区",
+    "pref": "大阪府",
+    "count": 5,
+    "storeIds": [
+      "r34",
+      "r37",
+      "r40",
+      "r54",
+      "r65"
+    ]
+  },
+  {
+    "region": "fukui",
+    "town": "福井市",
+    "pref": "福井県",
+    "count": 4,
+    "storeIds": [
+      "r296",
+      "r333",
+      "r341",
+      "r383"
+    ]
+  },
+  {
+    "region": "hiroshima",
+    "town": "広島市南区",
+    "pref": "広島県",
+    "count": 4,
+    "storeIds": [
+      "r183",
+      "r220",
+      "r237",
+      "r257"
+    ]
+  },
+  {
+    "region": "hyogo",
+    "town": "神戸市垂水区",
+    "pref": "兵庫県",
+    "count": 4,
+    "storeIds": [
+      "r78",
+      "r83",
+      "r85",
+      "r173"
+    ]
+  },
+  {
+    "region": "hyogo",
+    "town": "神戸市灘区",
+    "pref": "兵庫県",
+    "count": 4,
+    "storeIds": [
+      "r77",
+      "r96",
+      "r113",
+      "r115"
+    ]
+  },
+  {
+    "region": "kanagawa",
+    "town": "鎌倉市",
+    "pref": "神奈川県",
+    "count": 4,
+    "storeIds": [
+      "r313",
+      "r314",
+      "r315",
+      "r324"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "西尾市",
+    "pref": "愛知県",
+    "count": 4,
+    "storeIds": [
+      "r418",
+      "r436",
+      "r454",
+      "r455"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "名古屋市中区",
+    "pref": "愛知県",
+    "count": 4,
+    "storeIds": [
+      "r12",
+      "r31",
+      "r53",
+      "r167"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "名古屋市東区",
+    "pref": "愛知県",
+    "count": 4,
+    "storeIds": [
+      "r13",
+      "r20",
+      "r36",
+      "r168"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "名古屋市北区",
+    "pref": "愛知県",
+    "count": 4,
+    "storeIds": [
+      "r45",
+      "r46",
+      "r70",
+      "r72"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "堺市堺区",
+    "pref": "大阪府",
+    "count": 4,
+    "storeIds": [
+      "r218",
+      "r219",
+      "r235",
+      "r247"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "大阪市福島区",
+    "pref": "大阪府",
+    "count": 4,
+    "storeIds": [
+      "r19",
+      "r21",
+      "r61",
+      "r62"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "池田市",
+    "pref": "大阪府",
+    "count": 4,
+    "storeIds": [
+      "r414",
+      "r417",
+      "r442",
+      "r465"
+    ]
+  },
+  {
+    "region": "saitama",
+    "town": "川越市",
+    "pref": "埼玉県",
+    "count": 4,
+    "storeIds": [
+      "r97",
+      "r443",
+      "r464",
+      "r466"
+    ]
+  },
+  {
+    "region": "shizuoka",
+    "town": "島田市",
+    "pref": "静岡県",
+    "count": 4,
+    "storeIds": [
+      "r469",
+      "r490",
+      "r491",
+      "r498"
+    ]
+  },
+  {
+    "region": "shizuoka",
+    "town": "富士宮市",
+    "pref": "静岡県",
+    "count": 4,
+    "storeIds": [
+      "r407",
+      "r408",
+      "r411",
+      "r449"
+    ]
+  },
+  {
+    "region": "tokyo",
+    "town": "八王子市",
+    "pref": "東京都",
+    "count": 4,
+    "storeIds": [
+      "r375",
+      "r379",
+      "r391",
+      "r402"
+    ]
+  },
+  {
+    "region": "yamaguchi",
+    "town": "下関市",
+    "pref": "山口県",
+    "count": 4,
+    "storeIds": [
+      "r338",
+      "r339",
+      "r345",
+      "r348"
+    ]
+  },
+  {
+    "region": "fukuoka",
+    "town": "福岡市博多区",
+    "pref": "福岡県",
+    "count": 3,
+    "storeIds": [
+      "r09",
+      "r22",
+      "r170"
+    ]
+  },
+  {
+    "region": "fukuoka",
+    "town": "北九州市小倉北区",
+    "pref": "福岡県",
+    "count": 3,
+    "storeIds": [
+      "r280",
+      "r281",
+      "r297"
+    ]
+  },
+  {
+    "region": "gifu",
+    "town": "多治見市",
+    "pref": "岐阜県",
+    "count": 3,
+    "storeIds": [
+      "r440",
+      "r441",
+      "r451"
+    ]
+  },
+  {
+    "region": "gunma",
+    "town": "前橋市",
+    "pref": "群馬県",
+    "count": 3,
+    "storeIds": [
+      "r372",
+      "r376",
+      "r388"
+    ]
+  },
+  {
+    "region": "hiroshima",
+    "town": "広島市安佐南区",
+    "pref": "広島県",
+    "count": 3,
+    "storeIds": [
+      "r182",
+      "r190",
+      "r193"
+    ]
+  },
+  {
+    "region": "hokkaido",
+    "town": "旭川市",
+    "pref": "北海道",
+    "count": 3,
+    "storeIds": [
+      "r299",
+      "r301",
+      "r304"
+    ]
+  },
+  {
+    "region": "hyogo",
+    "town": "神戸市長田区",
+    "pref": "兵庫県",
+    "count": 3,
+    "storeIds": [
+      "r94",
+      "r126",
+      "r178"
+    ]
+  },
+  {
+    "region": "hyogo",
+    "town": "神戸市北区",
+    "pref": "兵庫県",
+    "count": 3,
+    "storeIds": [
+      "r75",
+      "r82",
+      "r105"
+    ]
+  },
+  {
+    "region": "kagoshima",
+    "town": "霧島市",
+    "pref": "鹿児島県",
+    "count": 3,
+    "storeIds": [
+      "r425",
+      "r430",
+      "r448"
+    ]
+  },
+  {
+    "region": "kyoto",
+    "town": "京都市東山区",
+    "pref": "京都府",
+    "count": 3,
+    "storeIds": [
+      "r156",
+      "r163",
+      "r259"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "蒲郡市",
+    "pref": "愛知県",
+    "count": 3,
+    "storeIds": [
+      "r482",
+      "r485",
+      "r512"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "刈谷市",
+    "pref": "愛知県",
+    "count": 3,
+    "storeIds": [
+      "r410",
+      "r413",
+      "r416"
+    ]
+  },
+  {
+    "region": "nagoya",
+    "town": "名古屋市千種区",
+    "pref": "愛知県",
+    "count": 3,
+    "storeIds": [
+      "r08",
+      "r67",
+      "r68"
+    ]
+  },
+  {
+    "region": "nara",
+    "town": "奈良市",
+    "pref": "奈良県",
+    "count": 3,
+    "storeIds": [
+      "r138",
+      "r140",
+      "r141"
+    ]
+  },
+  {
+    "region": "okayama",
+    "town": "倉敷市",
+    "pref": "岡山県",
+    "count": 3,
+    "storeIds": [
+      "r332",
+      "r385",
+      "r499"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "茨木市",
+    "pref": "大阪府",
+    "count": 3,
+    "storeIds": [
+      "r262",
+      "r263",
+      "r271"
+    ]
+  },
+  {
+    "region": "osaka",
+    "town": "堺市中区",
+    "pref": "大阪府",
+    "count": 3,
+    "storeIds": [
+      "r213",
+      "r226",
+      "r240"
+    ]
+  },
+  {
+    "region": "saitama",
+    "town": "越谷市",
+    "pref": "埼玉県",
+    "count": 3,
+    "storeIds": [
+      "r458",
+      "r459",
+      "r479"
+    ]
+  },
+  {
+    "region": "saitama",
+    "town": "上尾市",
+    "pref": "埼玉県",
+    "count": 3,
+    "storeIds": [
+      "r58",
+      "r59",
+      "r381"
+    ]
+  },
+  {
+    "region": "shiga",
+    "town": "長浜市",
+    "pref": "滋賀県",
+    "count": 3,
+    "storeIds": [
+      "r223",
+      "r457",
+      "r460"
+    ]
+  },
+  {
+    "region": "shizuoka",
+    "town": "藤枝市",
+    "pref": "静岡県",
+    "count": 3,
+    "storeIds": [
+      "r415",
+      "r419",
+      "r438"
+    ]
+  },
+  {
+    "region": "tokyo",
+    "town": "杉並区",
+    "pref": "東京都",
+    "count": 3,
+    "storeIds": [
+      "r316",
+      "r317",
+      "r318"
+    ]
+  },
+  {
+    "region": "tokyo",
+    "town": "立川市",
+    "pref": "東京都",
+    "count": 3,
+    "storeIds": [
+      "r121",
+      "r127",
+      "r129"
+    ]
+  },
+  {
+    "region": "yamaguchi",
+    "town": "防府市",
+    "pref": "山口県",
+    "count": 3,
+    "storeIds": [
+      "r450",
+      "r462",
+      "r522"
+    ]
+  }
+]

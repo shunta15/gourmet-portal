@@ -110,6 +110,8 @@ grep 'id: "r67"' lib/data.ts
 - **挿入点（手で足す場合）: lib/teleapo-restaurants.ts の `// ↓ エージェントが自動追記 ↓` 直後。ID は上記のとおり ids.json の最大値 +1**
 - **掲載店舗数: 286店舗 + 記事由来の店（articleStores.ts。件数は ids.json / build-stores.mjs の出力を見る）**（data.ts 228 + teleapo-restaurants 58）（欠番: r11・r26・r29・**r71**・r98・r102・r109・r114・r119・r122・r136・r139）
 - **Region: 手書き16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）**＋ 記事由来の都道府県（`lib/articleRegions.ts`・自動生成。mie / nagano / yamaguchi / ishikawa / fukui / saga など。キー = 都道府県のローマ字）**。愛知県は全体が nagoya。住所の都道府県と region の食い違いは `automation/stores500/region-mismatch.json`（空が正常）
+- **街ページ（2026-10-01〜）**: `/region/<region>/<街>`（例 `/region/osaka/大阪市北区`）。街 = 住所から取り出した市区町村（`lib/towns.ts`。政令市は区まで・郡は落とす）。店の束ね方は `lib/db/towns.ts`、3店以上の街だけ index・sitemap（`lib/restaurantIndexable.ts` の `MIN_STORES_FOR_TOWN_INDEX`）。街の紹介文は `lib/townIntros.ts`（鍵 `<region>/<街>`・事実ごとに出典必須。別担当が記入）。対象一覧は `node automation/towns/build-towns.mjs` → `automation/towns/towns.json`
+- **利用シーン別特集（2026-10-01〜）**: `lib/sceneFeatures.ts` は自動生成（手で編集しない）。流れは `automation/scene-articles/` の SCHEMA.md / WRITING.md を参照（`build-candidates.mjs` → ライターが `out/<記事ID>.json` → `emit.mjs`）。FEATURES / FEATURE_ARTICLES / FEATURE_INDEXABLE_IDS へは `lib/data.ts` で合流済み
 - **特集記事数: 217本**（No.1〜No.180 既存 + NG-01〜NG-65 既存 + NG-66〜NG-102 新規37本）
   - **NG-66〜NG-102（新規37本）**: lib/newGuideFeatures4.ts〜6.ts に収録
   - **FEATURES（indexed）追加**: NG-66,71,75,76,77,78,79（file4）＋ NG-80,81,88,90（file5）＋ NG-102（file6）= 12本

@@ -1,0 +1,1484 @@
+{
+  "generatedFrom": "lib/data.ts RESTAURANTS",
+  "stores": 513,
+  "unparsed": [
+    {
+      "id": "r174",
+      "name": "cafe GRANO",
+      "address": "兵庫県神戸市",
+      "region": "hyogo"
+    }
+  ],
+  "prefInferred": [
+    {
+      "id": "r94",
+      "address": "神戸市長田区長楽町3-8-8",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r148",
+      "address": "京都市伏見区深草柴田屋敷町76",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r151",
+      "address": "京都市中京区",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r222",
+      "address": "広島市安佐北区可部9-25-17",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r225",
+      "address": "広島市中区小町4-16 シャイン山田ビル1F",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r227",
+      "address": "広島市佐伯区美の里2丁目1-44",
+      "note": "住所に都道府県が無いので region から補った"
+    },
+    {
+      "id": "r237",
+      "address": "広島市南区宇品西6-4-16",
+      "note": "住所に都道府県が無いので region から補った"
+    }
+  ],
+  "prefMismatch": [],
+  "suspicious": [],
+  "towns": {
+    "total": 235,
+    "indexable": 62,
+    "storesInIndexable": 285,
+    "noindex": 173
+  },
+  "designatedCityComparison": {
+    "wardLevel": {
+      "designatedCityTowns": 69,
+      "indexableTowns": 30,
+      "storesInIndexable": 164
+    },
+    "cityLevel": {
+      "towns": 179,
+      "indexableTowns": 42,
+      "largestTown": [
+        "kyoto/京都市",
+        68
+      ]
+    }
+  },
+  "all": [
+    {
+      "region": "kyoto",
+      "town": "京都市中京区",
+      "pref": "京都府",
+      "count": 14
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市中央区",
+      "pref": "兵庫県",
+      "count": 12
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市下京区",
+      "pref": "京都府",
+      "count": 10
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市伏見区",
+      "pref": "京都府",
+      "count": 10
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市右京区",
+      "pref": "京都府",
+      "count": 8
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市中区",
+      "pref": "広島県",
+      "count": 7
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市左京区",
+      "pref": "京都府",
+      "count": 7
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市西京区",
+      "pref": "京都府",
+      "count": 7
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市北区",
+      "pref": "大阪府",
+      "count": 7
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市城東区",
+      "pref": "大阪府",
+      "count": 6
+    },
+    {
+      "region": "osaka",
+      "town": "東大阪市",
+      "pref": "大阪府",
+      "count": 6
+    },
+    {
+      "region": "tokyo",
+      "town": "大田区",
+      "pref": "東京都",
+      "count": 6
+    },
+    {
+      "region": "fukuoka",
+      "town": "久留米市",
+      "pref": "福岡県",
+      "count": 5
+    },
+    {
+      "region": "gunma",
+      "town": "太田市",
+      "pref": "群馬県",
+      "count": 5
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市北区",
+      "pref": "京都府",
+      "count": 5
+    },
+    {
+      "region": "mie",
+      "town": "伊勢市",
+      "pref": "三重県",
+      "count": 5
+    },
+    {
+      "region": "mie",
+      "town": "四日市市",
+      "pref": "三重県",
+      "count": 5
+    },
+    {
+      "region": "osaka",
+      "town": "高槻市",
+      "pref": "大阪府",
+      "count": 5
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市西区",
+      "pref": "大阪府",
+      "count": 5
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市中央区",
+      "pref": "大阪府",
+      "count": 5
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市淀川区",
+      "pref": "大阪府",
+      "count": 5
+    },
+    {
+      "region": "fukui",
+      "town": "福井市",
+      "pref": "福井県",
+      "count": 4
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市南区",
+      "pref": "広島県",
+      "count": 4
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市垂水区",
+      "pref": "兵庫県",
+      "count": 4
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市灘区",
+      "pref": "兵庫県",
+      "count": 4
+    },
+    {
+      "region": "kanagawa",
+      "town": "鎌倉市",
+      "pref": "神奈川県",
+      "count": 4
+    },
+    {
+      "region": "nagoya",
+      "town": "西尾市",
+      "pref": "愛知県",
+      "count": 4
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市中区",
+      "pref": "愛知県",
+      "count": 4
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市東区",
+      "pref": "愛知県",
+      "count": 4
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市北区",
+      "pref": "愛知県",
+      "count": 4
+    },
+    {
+      "region": "osaka",
+      "town": "堺市堺区",
+      "pref": "大阪府",
+      "count": 4
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市福島区",
+      "pref": "大阪府",
+      "count": 4
+    },
+    {
+      "region": "osaka",
+      "town": "池田市",
+      "pref": "大阪府",
+      "count": 4
+    },
+    {
+      "region": "saitama",
+      "town": "川越市",
+      "pref": "埼玉県",
+      "count": 4
+    },
+    {
+      "region": "shizuoka",
+      "town": "島田市",
+      "pref": "静岡県",
+      "count": 4
+    },
+    {
+      "region": "shizuoka",
+      "town": "富士宮市",
+      "pref": "静岡県",
+      "count": 4
+    },
+    {
+      "region": "tokyo",
+      "town": "八王子市",
+      "pref": "東京都",
+      "count": 4
+    },
+    {
+      "region": "yamaguchi",
+      "town": "下関市",
+      "pref": "山口県",
+      "count": 4
+    },
+    {
+      "region": "fukuoka",
+      "town": "福岡市博多区",
+      "pref": "福岡県",
+      "count": 3
+    },
+    {
+      "region": "fukuoka",
+      "town": "北九州市小倉北区",
+      "pref": "福岡県",
+      "count": 3
+    },
+    {
+      "region": "gifu",
+      "town": "多治見市",
+      "pref": "岐阜県",
+      "count": 3
+    },
+    {
+      "region": "gunma",
+      "town": "前橋市",
+      "pref": "群馬県",
+      "count": 3
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市安佐南区",
+      "pref": "広島県",
+      "count": 3
+    },
+    {
+      "region": "hokkaido",
+      "town": "旭川市",
+      "pref": "北海道",
+      "count": 3
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市長田区",
+      "pref": "兵庫県",
+      "count": 3
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市北区",
+      "pref": "兵庫県",
+      "count": 3
+    },
+    {
+      "region": "kagoshima",
+      "town": "霧島市",
+      "pref": "鹿児島県",
+      "count": 3
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市東山区",
+      "pref": "京都府",
+      "count": 3
+    },
+    {
+      "region": "nagoya",
+      "town": "蒲郡市",
+      "pref": "愛知県",
+      "count": 3
+    },
+    {
+      "region": "nagoya",
+      "town": "刈谷市",
+      "pref": "愛知県",
+      "count": 3
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市千種区",
+      "pref": "愛知県",
+      "count": 3
+    },
+    {
+      "region": "nara",
+      "town": "奈良市",
+      "pref": "奈良県",
+      "count": 3
+    },
+    {
+      "region": "okayama",
+      "town": "倉敷市",
+      "pref": "岡山県",
+      "count": 3
+    },
+    {
+      "region": "osaka",
+      "town": "茨木市",
+      "pref": "大阪府",
+      "count": 3
+    },
+    {
+      "region": "osaka",
+      "town": "堺市中区",
+      "pref": "大阪府",
+      "count": 3
+    },
+    {
+      "region": "saitama",
+      "town": "越谷市",
+      "pref": "埼玉県",
+      "count": 3
+    },
+    {
+      "region": "saitama",
+      "town": "上尾市",
+      "pref": "埼玉県",
+      "count": 3
+    },
+    {
+      "region": "shiga",
+      "town": "長浜市",
+      "pref": "滋賀県",
+      "count": 3
+    },
+    {
+      "region": "shizuoka",
+      "town": "藤枝市",
+      "pref": "静岡県",
+      "count": 3
+    },
+    {
+      "region": "tokyo",
+      "town": "杉並区",
+      "pref": "東京都",
+      "count": 3
+    },
+    {
+      "region": "tokyo",
+      "town": "立川市",
+      "pref": "東京都",
+      "count": 3
+    },
+    {
+      "region": "yamaguchi",
+      "town": "防府市",
+      "pref": "山口県",
+      "count": 3
+    },
+    {
+      "region": "akita",
+      "town": "秋田市",
+      "pref": "秋田県",
+      "count": 2
+    },
+    {
+      "region": "fukuoka",
+      "town": "筑紫野市",
+      "pref": "福岡県",
+      "count": 2
+    },
+    {
+      "region": "fukuoka",
+      "town": "北九州市八幡東区",
+      "pref": "福岡県",
+      "count": 2
+    },
+    {
+      "region": "fukushima",
+      "town": "郡山市",
+      "pref": "福島県",
+      "count": 2
+    },
+    {
+      "region": "gifu",
+      "town": "高山市",
+      "pref": "岐阜県",
+      "count": 2
+    },
+    {
+      "region": "gunma",
+      "town": "伊勢崎市",
+      "pref": "群馬県",
+      "count": 2
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市佐伯区",
+      "pref": "広島県",
+      "count": 2
+    },
+    {
+      "region": "hiroshima",
+      "town": "東広島市",
+      "pref": "広島県",
+      "count": 2
+    },
+    {
+      "region": "hiroshima",
+      "town": "尾道市",
+      "pref": "広島県",
+      "count": 2
+    },
+    {
+      "region": "hokkaido",
+      "town": "札幌市東区",
+      "pref": "北海道",
+      "count": 2
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市須磨区",
+      "pref": "兵庫県",
+      "count": 2
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市東灘区",
+      "pref": "兵庫県",
+      "count": 2
+    },
+    {
+      "region": "hyogo",
+      "town": "尼崎市",
+      "pref": "兵庫県",
+      "count": 2
+    },
+    {
+      "region": "ibaraki",
+      "town": "つくば市",
+      "pref": "茨城県",
+      "count": 2
+    },
+    {
+      "region": "ibaraki",
+      "town": "水戸市",
+      "pref": "茨城県",
+      "count": 2
+    },
+    {
+      "region": "ibaraki",
+      "town": "筑西市",
+      "pref": "茨城県",
+      "count": 2
+    },
+    {
+      "region": "kagawa",
+      "town": "丸亀市",
+      "pref": "香川県",
+      "count": 2
+    },
+    {
+      "region": "kanagawa",
+      "town": "横浜市神奈川区",
+      "pref": "神奈川県",
+      "count": 2
+    },
+    {
+      "region": "kanagawa",
+      "town": "厚木市",
+      "pref": "神奈川県",
+      "count": 2
+    },
+    {
+      "region": "kanagawa",
+      "town": "小田原市",
+      "pref": "神奈川県",
+      "count": 2
+    },
+    {
+      "region": "kanagawa",
+      "town": "藤沢市",
+      "pref": "神奈川県",
+      "count": 2
+    },
+    {
+      "region": "kanagawa",
+      "town": "平塚市",
+      "pref": "神奈川県",
+      "count": 2
+    },
+    {
+      "region": "kochi",
+      "town": "高知市",
+      "pref": "高知県",
+      "count": 2
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市山科区",
+      "pref": "京都府",
+      "count": 2
+    },
+    {
+      "region": "kyoto",
+      "town": "京都市上京区",
+      "pref": "京都府",
+      "count": 2
+    },
+    {
+      "region": "mie",
+      "town": "桑名市",
+      "pref": "三重県",
+      "count": 2
+    },
+    {
+      "region": "miyazaki",
+      "town": "延岡市",
+      "pref": "宮崎県",
+      "count": 2
+    },
+    {
+      "region": "nagano",
+      "town": "伊那市",
+      "pref": "長野県",
+      "count": 2
+    },
+    {
+      "region": "nagano",
+      "town": "佐久市",
+      "pref": "長野県",
+      "count": 2
+    },
+    {
+      "region": "nagano",
+      "town": "長野市",
+      "pref": "長野県",
+      "count": 2
+    },
+    {
+      "region": "nagano",
+      "town": "飯田市",
+      "pref": "長野県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "安城市",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "岡崎市",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "東海市",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "日進市",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "豊川市",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市西区",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市中村区",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市南区",
+      "pref": "愛知県",
+      "count": 2
+    },
+    {
+      "region": "nara",
+      "town": "橿原市",
+      "pref": "奈良県",
+      "count": 2
+    },
+    {
+      "region": "niigata",
+      "town": "上越市",
+      "pref": "新潟県",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "岸和田市",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "寝屋川市",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市東淀川区",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市浪速区",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "八尾市",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "osaka",
+      "town": "豊中市",
+      "pref": "大阪府",
+      "count": 2
+    },
+    {
+      "region": "saitama",
+      "town": "さいたま市浦和区",
+      "pref": "埼玉県",
+      "count": 2
+    },
+    {
+      "region": "saitama",
+      "town": "深谷市",
+      "pref": "埼玉県",
+      "count": 2
+    },
+    {
+      "region": "saitama",
+      "town": "川口市",
+      "pref": "埼玉県",
+      "count": 2
+    },
+    {
+      "region": "shiga",
+      "town": "近江八幡市",
+      "pref": "滋賀県",
+      "count": 2
+    },
+    {
+      "region": "shimane",
+      "town": "松江市",
+      "pref": "島根県",
+      "count": 2
+    },
+    {
+      "region": "shizuoka",
+      "town": "伊東市",
+      "pref": "静岡県",
+      "count": 2
+    },
+    {
+      "region": "shizuoka",
+      "town": "掛川市",
+      "pref": "静岡県",
+      "count": 2
+    },
+    {
+      "region": "aomori",
+      "town": "弘前市",
+      "pref": "青森県",
+      "count": 1
+    },
+    {
+      "region": "aomori",
+      "town": "八戸市",
+      "pref": "青森県",
+      "count": 1
+    },
+    {
+      "region": "ehime",
+      "town": "今治市",
+      "pref": "愛媛県",
+      "count": 1
+    },
+    {
+      "region": "ehime",
+      "town": "新居浜市",
+      "pref": "愛媛県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "嘉麻市",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "宮若市",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "志免町",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "朝倉市",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "福岡市西区",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "福岡市中央区",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "福岡市東区",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "福岡市南区",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "福津市",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "北九州市門司区",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukuoka",
+      "town": "柳川市",
+      "pref": "福岡県",
+      "count": 1
+    },
+    {
+      "region": "fukushima",
+      "town": "福島市",
+      "pref": "福島県",
+      "count": 1
+    },
+    {
+      "region": "gifu",
+      "town": "可児市",
+      "pref": "岐阜県",
+      "count": 1
+    },
+    {
+      "region": "gifu",
+      "town": "御嵩町",
+      "pref": "岐阜県",
+      "count": 1
+    },
+    {
+      "region": "gifu",
+      "town": "中津川市",
+      "pref": "岐阜県",
+      "count": 1
+    },
+    {
+      "region": "gunma",
+      "town": "桐生市",
+      "pref": "群馬県",
+      "count": 1
+    },
+    {
+      "region": "gunma",
+      "town": "高崎市",
+      "pref": "群馬県",
+      "count": 1
+    },
+    {
+      "region": "gunma",
+      "town": "渋川市",
+      "pref": "群馬県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "呉市",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市安佐北区",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "広島市東区",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "三原市",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "廿日市市",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hiroshima",
+      "town": "福山市",
+      "pref": "広島県",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "釧路市",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "札幌市清田区",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "札幌市中央区",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "当別町",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "苫小牧市",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hokkaido",
+      "town": "北見市",
+      "pref": "北海道",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "伊丹市",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "加古川市",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "神戸市兵庫区",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "川西市",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "丹波篠山市",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "hyogo",
+      "town": "宝塚市",
+      "pref": "兵庫県",
+      "count": 1
+    },
+    {
+      "region": "ibaraki",
+      "town": "神栖市",
+      "pref": "茨城県",
+      "count": 1
+    },
+    {
+      "region": "ishikawa",
+      "town": "金沢市",
+      "pref": "石川県",
+      "count": 1
+    },
+    {
+      "region": "ishikawa",
+      "town": "小松市",
+      "pref": "石川県",
+      "count": 1
+    },
+    {
+      "region": "ishikawa",
+      "town": "白山市",
+      "pref": "石川県",
+      "count": 1
+    },
+    {
+      "region": "iwate",
+      "town": "一関市",
+      "pref": "岩手県",
+      "count": 1
+    },
+    {
+      "region": "iwate",
+      "town": "奥州市",
+      "pref": "岩手県",
+      "count": 1
+    },
+    {
+      "region": "kagawa",
+      "town": "高松市",
+      "pref": "香川県",
+      "count": 1
+    },
+    {
+      "region": "kagoshima",
+      "town": "さつま町",
+      "pref": "鹿児島県",
+      "count": 1
+    },
+    {
+      "region": "kanagawa",
+      "town": "茅ヶ崎市",
+      "pref": "神奈川県",
+      "count": 1
+    },
+    {
+      "region": "kanagawa",
+      "town": "相模原市緑区",
+      "pref": "神奈川県",
+      "count": 1
+    },
+    {
+      "region": "kyoto",
+      "town": "宇治田原町",
+      "pref": "京都府",
+      "count": 1
+    },
+    {
+      "region": "kyoto",
+      "town": "向日市",
+      "pref": "京都府",
+      "count": 1
+    },
+    {
+      "region": "kyoto",
+      "town": "長岡京市",
+      "pref": "京都府",
+      "count": 1
+    },
+    {
+      "region": "mie",
+      "town": "松阪市",
+      "pref": "三重県",
+      "count": 1
+    },
+    {
+      "region": "mie",
+      "town": "津市",
+      "pref": "三重県",
+      "count": 1
+    },
+    {
+      "region": "mie",
+      "town": "鈴鹿市",
+      "pref": "三重県",
+      "count": 1
+    },
+    {
+      "region": "nagano",
+      "town": "宮田村",
+      "pref": "長野県",
+      "count": 1
+    },
+    {
+      "region": "nagano",
+      "town": "上田市",
+      "pref": "長野県",
+      "count": 1
+    },
+    {
+      "region": "nagasaki",
+      "town": "長崎市",
+      "pref": "長崎県",
+      "count": 1
+    },
+    {
+      "region": "nagasaki",
+      "town": "諫早市",
+      "pref": "長崎県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "一宮市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "稲沢市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "江南市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "春日井市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "小牧市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "瀬戸市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "半田市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "豊田市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "北名古屋市",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nagoya",
+      "town": "名古屋市緑区",
+      "pref": "愛知県",
+      "count": 1
+    },
+    {
+      "region": "nara",
+      "town": "天理市",
+      "pref": "奈良県",
+      "count": 1
+    },
+    {
+      "region": "okinawa",
+      "town": "うるま市",
+      "pref": "沖縄県",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "堺市東区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "堺市南区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "堺市美原区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "堺市北区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "守口市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "松原市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "摂津市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市阿倍野区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市旭区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市天王寺区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "大阪市都島区",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "富田林市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "枚方市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "箕面市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "門真市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "osaka",
+      "town": "和泉市",
+      "pref": "大阪府",
+      "count": 1
+    },
+    {
+      "region": "saga",
+      "town": "佐賀市",
+      "pref": "佐賀県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "さいたま市岩槻区",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "さいたま市桜区",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "さいたま市大宮区",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "さいたま市緑区",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "熊谷市",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "志木市",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "春日部市",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "saitama",
+      "town": "所沢市",
+      "pref": "埼玉県",
+      "count": 1
+    },
+    {
+      "region": "shiga",
+      "town": "草津市",
+      "pref": "滋賀県",
+      "count": 1
+    },
+    {
+      "region": "shiga",
+      "town": "日野町",
+      "pref": "滋賀県",
+      "count": 1
+    },
+    {
+      "region": "shiga",
+      "town": "彦根市",
+      "pref": "滋賀県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "三島市",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "焼津市",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "静岡市葵区",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "袋井市",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "磐田市",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "shizuoka",
+      "town": "富士市",
+      "pref": "静岡県",
+      "count": 1
+    },
+    {
+      "region": "tochigi",
+      "town": "佐野市",
+      "pref": "栃木県",
+      "count": 1
+    },
+    {
+      "region": "tochigi",
+      "town": "栃木市",
+      "pref": "栃木県",
+      "count": 1
+    },
+    {
+      "region": "tochigi",
+      "town": "日光市",
+      "pref": "栃木県",
+      "count": 1
+    },
+    {
+      "region": "tokyo",
+      "town": "港区",
+      "pref": "東京都",
+      "count": 1
+    },
+    {
+      "region": "tokyo",
+      "town": "西東京市",
+      "pref": "東京都",
+      "count": 1
+    },
+    {
+      "region": "tokyo",
+      "town": "足立区",
+      "pref": "東京都",
+      "count": 1
+    },
+    {
+      "region": "tokyo",
+      "town": "台東区",
+      "pref": "東京都",
+      "count": 1
+    },
+    {
+      "region": "tokyo",
+      "town": "東村山市",
+      "pref": "東京都",
+      "count": 1
+    },
+    {
+      "region": "tottori",
+      "town": "米子市",
+      "pref": "鳥取県",
+      "count": 1
+    },
+    {
+      "region": "toyama",
+      "town": "富山市",
+      "pref": "富山県",
+      "count": 1
+    },
+    {
+      "region": "wakayama",
+      "town": "那智勝浦町",
+      "pref": "和歌山県",
+      "count": 1
+    },
+    {
+      "region": "yamagata",
+      "town": "山形市",
+      "pref": "山形県",
+      "count": 1
+    },
+    {
+      "region": "yamaguchi",
+      "town": "宇部市",
+      "pref": "山口県",
+      "count": 1
+    }
+  ]
+}

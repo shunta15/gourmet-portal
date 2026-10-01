@@ -10,6 +10,7 @@
  *
  * 自動推定で意図と異なる場合は MANUAL_OVERRIDES に書く。
  */
+import { SCENE_FEATURE_META } from "./sceneFeatures";
 import {
   FEATURES,
   FEATURE_ARTICLES,
@@ -478,6 +479,11 @@ const MANUAL_OVERRIDES: Record<string, RegionKey | RegionKey[]> = {
   "hokkaido-shiretoko": "hokkaido",
   "kagoshima-kirishima": "kagoshima",
 };
+
+// 利用シーン別特集（lib/sceneFeatures.ts）は area（"<region>" か "<region>/<街>"）から地域を固定する
+for (const [id, m] of Object.entries(SCENE_FEATURE_META)) {
+  MANUAL_OVERRIDES[id] = m.area.split("/")[0] as RegionKey;
+}
 
 /**
  * 記事1本のテキストを連結して返す。

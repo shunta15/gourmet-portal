@@ -6,6 +6,8 @@ import { getFeaturesByRegion } from "@/lib/featureRegions";
 import { getRegionStats } from "@/lib/data";
 import { GEO } from "@/lib/geo";
 import { isRegionHubIndexable } from "@/lib/restaurantIndexable";
+import { getTownsByRegion } from "@/lib/db/towns";
+import { isSceneFeatureId, sceneFeaturesForRegion } from "@/lib/sceneFeatureLinks";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
@@ -55,7 +57,10 @@ export default async function Page({
   // DB から該当 region の店舗を取得して Client へ渡す
   const restaurants = await getRestaurantsByRegion(key as RegionKey);
   const cardItems = restaurants.map(toCardItem);
-  const features = getFeaturesByRegion(key as RegionKey);
+  // シーン特集は専用の枠（sceneFeatures）に出すので、汎用の特集枠からは外す
+  const features = getFeaturesByRegion(key as RegionKey).filter((f) => !isSceneFeatureId(f.id));
+  const towns = await getTownsByRegion(key as RegionKey);
+  const sceneFeatures = sceneFeaturesForRegion(key);
   const stats = getRegionStats(key as RegionKey);
 
   // Map points (restaurants with geo data)
@@ -81,6 +86,8 @@ export default async function Page({
       features={features}
       stats={stats}
       mapPoints={mapPoints}
+      towns={towns.map((t) => ({ town: t.town, count: t.count, href: t.href }))}
+      sceneFeatures={sceneFeatures}
     />
   );
 }

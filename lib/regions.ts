@@ -104,6 +104,8 @@ export type RankItem = {
   time?: string;
   purpose?: string;
   transit?: string;
+  /** 項目の小見出し（利用シーン特集で店名の下に出す。任意） */
+  heading?: string;
 };
 
 export type FeatureArticle = {

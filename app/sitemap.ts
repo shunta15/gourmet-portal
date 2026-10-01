@@ -4,7 +4,8 @@ import { SCENES } from "@/lib/scenes";
 import { getFeatureCountsByRegion } from "@/lib/featureRegions";
 import { getAllRestaurantIdsWithUpdatedAt, getAllRestaurants } from "@/lib/db/restaurants";
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
-import { isRegionHubIndexable, isRestaurantIndexable } from "@/lib/restaurantIndexable";
+import { isRegionHubIndexable, isRestaurantIndexable, isTownIndexable } from "@/lib/restaurantIndexable";
+import { getAllTowns } from "@/lib/db/towns";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -60,6 +61,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     }));
 
+  // 街ページ（/region/<region>/<街>）は掲載店が3店以上の街だけ載せる（2店以下は noindex,follow でページだけ出す）
+  const towns: MetadataRoute.Sitemap = (await getAllTowns())
+    .filter((t) => isTownIndexable(t.count))
+    .map((t) => ({
+      url: `${BASE}${t.href}`,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    }));
+
   // 特集記事 ID は DB から取得し、indexable のみ含める
   // Feature ID は URL パスセグメントなので percent-encode が必要
   const featureData = await getAllFeatureArticleIdsWithUpdatedAt();
@@ -98,6 +108,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticPages,
     ...restaurants,
     ...regions,
+    ...towns,
     ...features,
     ...scenes,
     ...featureRegionHubs,

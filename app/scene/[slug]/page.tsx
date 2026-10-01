@@ -5,6 +5,7 @@ import { toCardItem } from "@/lib/regions";
 import { buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import { getAllRestaurants } from "@/lib/db/restaurants";
 import { GEO } from "@/lib/geo";
+import { sceneFeaturesForScene } from "@/lib/sceneFeatureLinks";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -86,7 +87,13 @@ export default async function ScenePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <SceneHub scene={s} matched={matched} totalCount={totalCount} mapPoints={mapPoints} />
+      <SceneHub
+        scene={s}
+        matched={matched}
+        totalCount={totalCount}
+        mapPoints={mapPoints}
+        sceneFeatures={sceneFeaturesForScene(s.slug)}
+      />
     </>
   );
 }

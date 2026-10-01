@@ -25,6 +25,10 @@ interface RegionPageProps {
   features: Feature[];
   stats: Stat[];
   mapPoints?: MapPoint[];
+  /** 街（市区町村）ごとの店数。店数の多い順。街ページ（/region/<key>/<街>）への導線 */
+  towns?: { town: string; count: number; href: string }[];
+  /** この地域のシーン特集（記事があれば） */
+  sceneFeatures?: { id: string; href: string; kicker: string; title: string; image: string; sceneName: string }[];
 }
 
 export default function RegionPage({
@@ -33,6 +37,8 @@ export default function RegionPage({
   features,
   stats,
   mapPoints = [],
+  towns = [],
+  sceneFeatures = [],
 }: RegionPageProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
@@ -150,6 +156,75 @@ export default function RegionPage({
             ))}
           </div>
         </section>
+
+        {towns.length > 0 && (
+          <section className="article">
+            <div className="article-head reveal">
+              <div className="label">
+                街から探す
+                <span className="big">街</span>
+              </div>
+              <div>
+                <h2>
+                  街から、<em>探す。</em>
+                </h2>
+                <p className="sub">
+                  掲載店のある{towns.length}の街を、店数の多い順に並べました。
+                </p>
+              </div>
+            </div>
+            <div className="hashtag-row" style={{ paddingTop: 0, borderBottom: "none" }}>
+              {towns.map((t) => (
+                <Link key={t.town} href={t.href} className="hashtag" data-cursor="ENTER">
+                  {t.town}
+                  <span className="count">{t.count}</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {sceneFeatures.length > 0 && (
+          <section className="article">
+            <div className="article-head reveal">
+              <div className="label">
+                シーン特集
+                <span className="big">選</span>
+              </div>
+              <div>
+                <h2>
+                  シーンで、<em>選ぶ。</em>
+                </h2>
+                <p className="sub">{r.name}の店を、利用シーン別にまとめた特集です。</p>
+              </div>
+            </div>
+            <div className="side-grid">
+              {sceneFeatures.map((f) => (
+                <Link key={f.id} href={f.href} className="side-card" data-cursor="READ">
+                  <div className="img">
+                    <img
+                      src={sized(f.image, 640)}
+                      alt={f.title}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div className="info">
+                    <div className="t">{f.sceneName} · {f.kicker}</div>
+                    <h4>{f.title}</h4>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {mapPoints.length > 0 && (
           <section className="article">

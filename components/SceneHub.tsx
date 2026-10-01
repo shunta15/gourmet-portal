@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import LeafletMap from "./LeafletMap";
 import { useReveal } from "@/lib/hooks";
+import { sized } from "@/lib/imageUrl";
 import type { RestaurantCardItem } from "@/lib/regions";
 import { SCENES, type Scene } from "@/lib/scenes";
 
@@ -21,9 +22,11 @@ interface SceneHubProps {
   matched: RestaurantCardItem[];
   totalCount: number;
   mapPoints?: MapPoint[];
+  /** このシーンの特集記事（地域・街ごと）。記事があれば枠を出す */
+  sceneFeatures?: { id: string; href: string; kicker: string; title: string; image: string; areaLabel: string }[];
 }
 
-export default function SceneHub({ scene, matched, totalCount, mapPoints = [] }: SceneHubProps) {
+export default function SceneHub({ scene, matched, totalCount, mapPoints = [], sceneFeatures = [] }: SceneHubProps) {
   useReveal();
 
   const otherScenes = SCENES.filter((s) => s.slug !== scene.slug);
@@ -173,6 +176,44 @@ export default function SceneHub({ scene, matched, totalCount, mapPoints = [] }:
             </div>
 
             <LeafletMap points={mapPoints} height={460} />
+          </section>
+        )}
+
+        {sceneFeatures.length > 0 && (
+          <section className="article">
+            <div
+              className="article-head reveal"
+              style={{ gridTemplateColumns: "1fr" }}
+            >
+              <h2>
+                {scene.name}の、<em>特集記事。</em>
+              </h2>
+            </div>
+            <div className="side-grid">
+              {sceneFeatures.map((f) => (
+                <Link key={f.id} href={f.href} className="side-card" data-cursor="READ">
+                  <div className="img">
+                    <img
+                      src={sized(f.image, 640)}
+                      alt={f.title}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div className="info">
+                    <div className="t">{f.areaLabel}</div>
+                    <h4>{f.title}</h4>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </section>
         )}
 

@@ -13,6 +13,7 @@ import {
 import { GEO } from "@/lib/geo";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
+import { getTownOfRestaurant } from "@/lib/db/towns";
 import {
   restaurantTitle,
   restaurantDescription,
@@ -106,6 +107,9 @@ export default async function RestaurantPage({
     .slice(0, 4)
     .map(toCardItem);
 
+  // この店がある街（市区町村）。店が2店以上ある街なら「<街>の他の店」へのリンクを出す
+  const town = await getTownOfRestaurant(r, regionRestaurants);
+
   return (
     <>
       <script
@@ -122,6 +126,7 @@ export default async function RestaurantPage({
         shortVideos={SHORT_VIDEOS}
         geo={GEO[r.id] ?? null}
         featureId={featureId}
+        town={town ? { name: town.town, href: town.href, count: town.count } : null}
       />
     </>
   );

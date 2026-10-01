@@ -20,9 +20,11 @@ interface RestaurantDetailProps {
   geo?: GeoPoint | null;
   /** 対になる特集記事の ID。あれば「この店の特集記事を読む」を出す */
   featureId?: string;
+  /** この店がある街（市区町村）。店が2店以上ある街なら「<街>の他の店」へのリンクを出す */
+  town?: { name: string; href: string; count: number } | null;
 }
 
-export default function RestaurantDetail({ r, related, shortVideos, geo, featureId }: RestaurantDetailProps) {
+export default function RestaurantDetail({ r, related, shortVideos, geo, featureId, town }: RestaurantDetailProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
@@ -280,6 +282,16 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 data-cursor="READ"
               >
                 この店の特集記事を読む →
+              </Link>
+            )}
+            {town && town.count > 1 && (
+              <Link
+                href={town.href}
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="ENTER"
+              >
+                {town.name}の他の店を見る（{town.count - 1}店）
               </Link>
             )}
             <Link

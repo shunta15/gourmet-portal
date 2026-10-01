@@ -185,6 +185,7 @@ function RankingList({ article }: { article: FeatureArticle }) {
               {r.cuisine} · {r.area}
             </div>
             <h3>{r.name}</h3>
+            {r.heading && <p className="rank-heading">{r.heading}</p>}
             <p className="desc">{r.desc}</p>
             <div className="specs">
               {r.specs.map((s, j) => (
@@ -374,11 +375,13 @@ export default function FeatureClient({ article, features, storeHref }: FeatureC
           )}
         </section>
 
-        <section className="quote-block">
-          <div className="quote-label">編集部のひとこと</div>
-          <blockquote>{A.quote}</blockquote>
-          <cite>{A.quoteCite}</cite>
-        </section>
+        {A.quote && (
+          <section className="quote-block">
+            <div className="quote-label">編集部のひとこと</div>
+            <blockquote>{A.quote}</blockquote>
+            <cite>{A.quoteCite}</cite>
+          </section>
+        )}
 
         <section className="article">
           <div className="article-head reveal">

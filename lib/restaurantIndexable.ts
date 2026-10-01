@@ -41,3 +41,14 @@ export const MIN_STORES_FOR_REGION_INDEX = 3;
 export function isRegionHubIndexable(storeCount: number): boolean {
   return storeCount >= MIN_STORES_FOR_REGION_INDEX;
 }
+
+/**
+ * 街ページ（/region/<region>/<街>）を index してよいか。地域ハブと同じ考え方で、掲載店が少なすぎる街は
+ * 薄いページなので noindex,follow にし、sitemap からも外す（ページ自体は出す。店が増えれば自動で index に戻る）。
+ * 店数は DB とコードの和集合（lib/db/towns.ts）で数える。
+ */
+export const MIN_STORES_FOR_TOWN_INDEX = 3;
+
+export function isTownIndexable(storeCount: number): boolean {
+  return storeCount >= MIN_STORES_FOR_TOWN_INDEX;
+}

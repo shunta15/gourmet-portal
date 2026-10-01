@@ -58,6 +58,7 @@ import {
 } from "./newGuideFeatures10";
 import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
 import { ARTICLE_STORES } from "./articleStores";
+import { SCENE_FEATURES, SCENE_FEATURE_ARTICLES } from "./sceneFeatures";
 
 
 import type { Stat, RegionKey, Region, Feature, Restaurant, Neighborhood, RankItem, FeatureArticle, ShortVideo } from "./regions";
@@ -10279,6 +10280,7 @@ export const FEATURES: Feature[] = [
   ...NEWGUIDE8_FEATURES,     // 街ガイド第8弾24本（脱テンプレ・画像ビジョン照合）index対象
   ...NEWGUIDE9_FEATURES,     // 街ガイド第9弾24本（有名ランドマーク・画像ビジョン照合）index対象
   ...NEWGUIDE10_FEATURES,    // 街ガイド第10弾15本（世界遺産級・画像ビジョン照合）index対象
+  ...SCENE_FEATURES,         // 利用シーン別特集（lib/sceneFeatures.ts・automation/scene-articles/emit.mjs で自動生成）index対象
 ];
 
 export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
@@ -10291,6 +10293,7 @@ export const LEGACY_FEATURES: Feature[] = GENERATED_FEATURES;
 //    あくまで検索インデックスの対象に加えるだけにする。
 export const FEATURE_INDEXABLE_IDS = new Set([
   ...FEATURES.map((f) => f.id),
+  ...SCENE_FEATURES.map((f) => f.id), // シーン特集（FEATURES に入っているので重複だが、合流の意図を明示）
   ...TELEAPO_INDEXABLE_IDS,
 ]);
 
@@ -10312,6 +10315,7 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEWGUIDE8_FEATURE_ARTICLES, // 街ガイド第8弾24本（index対象）
   ...NEWGUIDE9_FEATURE_ARTICLES, // 街ガイド第9弾24本（index対象）
   ...NEWGUIDE10_FEATURE_ARTICLES, // 街ガイド第10弾15本（index対象）
+  ...SCENE_FEATURE_ARTICLES,    // 利用シーン別特集（index対象）
   ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（品質基準を満たす分のみ index。teleapoIndexable.ts 参照）
 };
 
