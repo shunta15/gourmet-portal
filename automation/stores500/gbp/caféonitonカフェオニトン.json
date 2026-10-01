@@ -1,0 +1,22 @@
+{
+  "name": "café oniton カフェ オニトン",
+  "address": "愛知県瀬戸市效範町２丁目４８",
+  "lat": 35.2237627,
+  "lng": 137.0693182,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "08:00–15:00",
+    "木": "08:00–15:00",
+    "金": "08:00–15:00",
+    "土": "08:00–15:00",
+    "日": "08:00–15:00"
+  },
+  "phone": "080-3623-8763",
+  "website": "https://www.instagram.com/cafe_oniton?igsh=a3kyYnZ5c2duOWsy",
+  "priceRange": "￥1～1,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4563329746480005066",
+  "fetchedAt": "2026-10-01T03:13:04.601Z"
+}

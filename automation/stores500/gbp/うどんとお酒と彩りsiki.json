@@ -1,0 +1,22 @@
+{
+  "name": "うどんとお酒と彩りsiki",
+  "address": "岡山県倉敷市鶴形１丁目４−４",
+  "lat": 34.6012055,
+  "lng": 133.7703779,
+  "category": "居酒屋",
+  "hours": {
+    "月": "定休日",
+    "火": "18:00–23:00",
+    "水": "18:00–23:00",
+    "木": "18:00–23:00",
+    "金": "18:00–23:00",
+    "土": "18:00–23:00",
+    "日": "定休日"
+  },
+  "phone": "086-441-1868",
+  "website": "https://www.instagram.com/siki_kurashiki?igsh=MTVkeTM4eXo1bHhwbw==&utm_source=qr",
+  "priceRange": "￥4,000～5,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=1817401144543866301",
+  "fetchedAt": "2026-10-01T03:07:01.620Z"
+}

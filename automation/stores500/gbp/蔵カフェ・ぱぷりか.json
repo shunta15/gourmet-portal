@@ -1,0 +1,22 @@
+{
+  "name": "蔵カフェ・ぱぷりか",
+  "address": "長野県伊那市高遠町勝間３２７",
+  "lat": 35.8252865,
+  "lng": 138.0650454,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "11:00–18:00",
+    "木": "11:00–18:00",
+    "金": "11:00–18:00",
+    "土": "11:00–18:00",
+    "日": "11:00–18:00"
+  },
+  "phone": "090-1450-1654",
+  "website": "https://www.hotpepper.jp/strJ003624579/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=5001567844958268048",
+  "fetchedAt": "2026-10-01T03:11:52.691Z"
+}

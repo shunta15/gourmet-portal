@@ -1,0 +1,22 @@
+{
+  "name": "BeatoKitchen",
+  "address": "群馬県伊勢崎市宮子町１１９１−２１",
+  "lat": 36.3353611,
+  "lng": 139.1476677,
+  "category": "レストラン",
+  "hours": {
+    "月": "11:00–15:00",
+    "火": "11:00–15:00",
+    "水": "11:00–15:00",
+    "木": "11:00–15:00",
+    "金": "11:00–15:00",
+    "土": "定休日",
+    "日": "定休日"
+  },
+  "phone": "0270-75-3005",
+  "website": "https://www.instagram.com/beato_kitchen?igsh=MTlpNnEwMnV4eXgz&utm_source=qr",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16408422063264599554",
+  "fetchedAt": "2026-10-01T03:09:31.838Z"
+}

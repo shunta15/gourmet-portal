@@ -1,0 +1,22 @@
+{
+  "name": "tara cafe.",
+  "address": "愛知県蒲郡市竹谷町内山６６",
+  "lat": 34.8316603,
+  "lng": 137.2051027,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "09:00–17:00",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "10:00–18:00",
+    "金": "10:00–18:00",
+    "土": "09:00–18:00",
+    "日": "07:30–17:00"
+  },
+  "phone": "0533-63-1770",
+  "website": "https://instagram.com/tara_cafe_gamagori?igshid=OGQ5ZDc2ODk2ZA==",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=7509372445067718435",
+  "fetchedAt": "2026-10-01T03:10:14.679Z"
+}
