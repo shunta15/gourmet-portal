@@ -390,7 +390,7 @@ PROMPT_EOF
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
-      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
     else
       ERROR=$((ERROR+1))
       ERROR_LIST="$ERROR_LIST\n  - $NAME: $FINAL_LINE"
@@ -411,7 +411,7 @@ PROMPT_EOF
       URL="https://machinowa.tokyo/feature/$SAFE_NAME"
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
-      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --articleId="$SAFE_NAME" --url="$URL" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="$URL" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
     # 認証切れ(HTTP 401)などで claude が即死した場合、ここを通る。
     # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
     # 認証切れ・ネットワーク断は「この店舗の問題」ではない。

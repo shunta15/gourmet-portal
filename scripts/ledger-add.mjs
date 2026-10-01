@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 // 生成成功した記事を台帳に追記する（pipeline から呼ぶ）
 // 使い方:
-//   node scripts/ledger-add.mjs --mapsurl="<J列Maps URL>" --name="<正式店名>" --articleId="<記事ID>" --url="<公開URL>"
+//   node scripts/ledger-add.mjs --mapsurl="<J列Maps URL>" --name="<正式店名>" --sheetName="<スプシD列の店名>" --articleId="<記事ID>" --url="<公開URL>"
+// --sheetName: Maps の正式名とスプシの店名が違う店（例: スプシ「食楽彩園 咲果庄」⇔ Maps「咲果庄」）を、
+//   cid が取れないときでも台帳同期で照合できるよう、スプシ側の店名でも登録する。
 // cid は --mapsurl から自動抽出。--cid で直接渡してもよい。
 
 import { loadLedger, saveLedger, addEntry, cidFromUrl } from './ledger.mjs';
@@ -25,5 +27,7 @@ if (!cid && !name) {
 
 const led = loadLedger();
 addEntry(led, { cid, name, articleId, url });
+const sheetName = args.sheetName || '';
+if (sheetName && sheetName !== name) addEntry(led, { cid: null, name: sheetName, articleId, url });
 saveLedger(led);
-console.log(`📚 台帳に追記: cid=${cid || '-'} name="${name}" id="${articleId}"`);
+console.log(`📚 台帳に追記: cid=${cid || '-'} name="${name}"${sheetName && sheetName !== name ? ` sheetName="${sheetName}"` : ''} id="${articleId}"`);
