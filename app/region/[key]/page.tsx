@@ -5,6 +5,7 @@ import { getRestaurantsByRegion } from "@/lib/db/restaurants";
 import { getFeaturesByRegion } from "@/lib/featureRegions";
 import { getRegionStats } from "@/lib/data";
 import { GEO } from "@/lib/geo";
+import { isRegionHubIndexable } from "@/lib/restaurantIndexable";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
@@ -24,7 +25,10 @@ export async function generateMetadata({
   const { key } = await params;
   const r = REGIONS[key as RegionKey];
   if (!r) return { title: "地域が見つかりません — マチノワ" };
+  // 掲載店が少ない地域ハブは noindex（sitemap からも外す。店が増えれば自動で index に戻る）
+  const storeCount = (await getRestaurantsByRegion(key as RegionKey)).length;
   return {
+    robots: isRegionHubIndexable(storeCount) ? undefined : { index: false, follow: true },
     title: `${r.name} — ミニポータル / マチノワ`,
     description: `${r.tagline}。${r.subtitle}`,
     alternates: {

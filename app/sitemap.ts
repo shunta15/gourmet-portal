@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 import { REGIONS, type RegionKey } from "@/lib/data";
 import { SCENES } from "@/lib/scenes";
 import { getFeatureCountsByRegion } from "@/lib/featureRegions";
-import { getAllRestaurantIdsWithUpdatedAt } from "@/lib/db/restaurants";
+import { getAllRestaurantIdsWithUpdatedAt, getAllRestaurants } from "@/lib/db/restaurants";
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
-import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
+import { isRegionHubIndexable, isRestaurantIndexable } from "@/lib/restaurantIndexable";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -49,11 +49,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return entry as MetadataRoute.Sitemap[number];
     });
 
-  const regions: MetadataRoute.Sitemap = Object.keys(REGIONS).map((k) => ({
-    url: `${BASE}/region/${k}`,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  // 掲載店が少ない地域ハブは sitemap から外す（ページは残り、noindex。店が増えれば自動で戻る）
+  const regionStoreCounts: Record<string, number> = {};
+  for (const r of await getAllRestaurants()) regionStoreCounts[r.region] = (regionStoreCounts[r.region] || 0) + 1;
+  const regions: MetadataRoute.Sitemap = Object.keys(REGIONS)
+    .filter((k) => isRegionHubIndexable(regionStoreCounts[k] || 0))
+    .map((k) => ({
+      url: `${BASE}/region/${k}`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    }));
 
   // 特集記事 ID は DB から取得し、indexable のみ含める
   // Feature ID は URL パスセグメントなので percent-encode が必要

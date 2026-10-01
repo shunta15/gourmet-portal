@@ -30,3 +30,14 @@ const NOINDEX_IDS: ReadonlySet<string> = new Set(
 export function isRestaurantIndexable(id: string): boolean {
   return !NOINDEX_IDS.has(id);
 }
+
+/**
+ * 地域ハブ（/region/<key>）を index してよいか。掲載店が少なすぎるハブは薄いページなので noindex にし、
+ * sitemap からも外す（ページ自体は残す。店が増えて MIN_STORES_FOR_REGION_INDEX に達すれば自動で index に戻る）。
+ * 店数は DB とコードの和集合（getRestaurantsByRegion / getAllRestaurants）で数える。
+ */
+export const MIN_STORES_FOR_REGION_INDEX = 3;
+
+export function isRegionHubIndexable(storeCount: number): boolean {
+  return storeCount >= MIN_STORES_FOR_REGION_INDEX;
+}

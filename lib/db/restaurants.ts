@@ -5,6 +5,11 @@
  * - DB に該当 ID がない場合は lib/data.ts の RESTAURANTS にフォールバック
  *   （移行期の安全装置。data.ts を真の source-of-truth から切り離した後も
  *   旧 ID への参照を壊さないため）
+ * - 一覧系（getAllRestaurants / getRestaurantsByRegion）は「DB の公開行 ＋ DB に行が無いコード側の店」の和集合。
+ *   以前は DB が 1 行でも返すと DB だけを返しており、コードにだけある店（teleapo r241〜・記事由来 r299〜）が
+ *   トップ・地域一覧・シーン・検索から漏れていた（個別ページとサイトマップは和集合なので出ていた）。
+ *   DB に行がある店（公開・非公開を問わない）は DB を優先し、非公開行はコード側から復活させない。
+ *   ※ 非公開行を見分けるには service role キーが必要（anon だと RLS で非公開行が見えず、コード側の店として出てしまう）。
  */
 import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
@@ -78,19 +83,28 @@ function rowToRestaurant(r: DbRestaurantRow): Restaurant {
 }
 
 /**
+ * 一覧用: DB の行を「公開行」と「DB に行がある ID の集合（非公開を含む）」に分ける。
+ * DB にある店はコード側の古い値で上書きせず、非公開にした店をコード側から復活させないために使う。
+ */
+function splitRows(rows: DbRestaurantRow[]): { published: Restaurant[]; knownIds: Set<string> } {
+  return {
+    published: rows.filter((r) => r.published).map(rowToRestaurant),
+    knownIds: new Set(rows.map((r) => r.id)),
+  };
+}
+
+/**
  * 全店舗を返す（公開フラグが true のもののみ）。
  * DB から取得失敗 or 空の場合は data.ts にフォールバック。
  */
 export async function getAllRestaurants(): Promise<Restaurant[]> {
   try {
-    const { data, error } = await db()
-      .from("restaurants")
-      .select("*")
-      .eq("published", true)
-      .limit(1000);
+    const { data, error } = await db().from("restaurants").select("*").limit(1000);
     if (error) throw error;
-    if (data && data.length > 0) {
-      return data.map((row) => rowToRestaurant(row as DbRestaurantRow));
+    const { published, knownIds } = splitRows((data ?? []) as DbRestaurantRow[]);
+    if (published.length > 0) {
+      // DB の公開行 ＋ DB に行が無いコード側の店（DB を優先。非公開行は復活させない）
+      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id))];
     }
   } catch (e) {
     console.warn("[db] getAllRestaurants fallback to data.ts:", e);
@@ -181,15 +195,21 @@ export async function getAllRestaurantIdsWithUpdatedAt(): Promise<
  */
 export async function getRestaurantsByRegion(region: RegionKey): Promise<Restaurant[]> {
   try {
-    const { data, error } = await db()
-      .from("restaurants")
-      .select("*")
-      .eq("region", region)
-      .eq("published", true)
-      .limit(10000);
-    if (error) throw error;
-    if (data && data.length > 0) {
-      return data.map((row) => rowToRestaurant(row as DbRestaurantRow));
+    // この地域の DB 行 と、DB に行がある全 ID（地域をまたぐ。コード側と DB で地域が食い違う店が二重に出ないように）
+    const [regionRes, idsRes] = await Promise.all([
+      db().from("restaurants").select("*").eq("region", region).limit(1000),
+      db().from("restaurants").select("id").limit(1000),
+    ]);
+    if (regionRes.error) throw regionRes.error;
+    if (idsRes.error) throw idsRes.error;
+    const { published } = splitRows((regionRes.data ?? []) as DbRestaurantRow[]);
+    if (published.length > 0) {
+      const knownIds = new Set((idsRes.data ?? []).map((r) => (r as { id: string }).id));
+      // DB の公開行 ＋ DB に行が無い、この地域のコード側の店
+      return [
+        ...published,
+        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)),
+      ];
     }
   } catch (e) {
     console.warn(`[db] getRestaurantsByRegion(${region}) fallback to data.ts:`, e);

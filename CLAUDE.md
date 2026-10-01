@@ -105,10 +105,11 @@ grep 'id: "r67"' lib/data.ts
 
 ### 現在の状態（更新すること）
 - **最終ID: r298**（一鱗酒場 by GAKU / 札幌市中央区）※r241〜r298 の58店舗は `lib/teleapo-restaurants.ts` に格納し、`...TELEAPO_RESTAURANTS` でdata.tsの末尾にスプレッド
-- **次のID: r299**（lib/teleapo-restaurants.ts に追記すればOK。data.ts本体は触らない）
-- **挿入点: lib/teleapo-restaurants.ts の `// ↓ エージェントが自動追記 ↓` 直後**
-- **掲載店舗数: 286店舗**（data.ts 228 + teleapo-restaurants 58）（欠番: r11・r26・r29・**r71**・r98・r102・r109・r114・r119・r122・r136・r139）
-- **Region: 16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）
+- **r299〜 は記事由来の店舗（`lib/articleStores.ts`・自動生成）**。`node automation/stores500/build-stores.mjs` が GBP（`automation/stores500/gbp/*.json`）＋特集記事＋画像から生成し、`...ARTICLE_STORES` で data.ts の末尾にスプレッドされる。**手で編集しない**
+- **次のID: r299〜 は `automation/stores500/ids.json`（記事ID→店舗ID）で払い出し済み**。店舗を手で足すときは **ids.json の最大値 +1** を使う（r299 は使えない・衝突する）。記事由来の店は ids.json 経由でのみ増える（build-stores.mjs が自動採番）
+- **挿入点（手で足す場合）: lib/teleapo-restaurants.ts の `// ↓ エージェントが自動追記 ↓` 直後。ID は上記のとおり ids.json の最大値 +1**
+- **掲載店舗数: 286店舗 + 記事由来の店（articleStores.ts。件数は ids.json / build-stores.mjs の出力を見る）**（data.ts 228 + teleapo-restaurants 58）（欠番: r11・r26・r29・**r71**・r98・r102・r109・r114・r119・r122・r136・r139）
+- **Region: 手書き16種**（tokyo / osaka / nagoya / fukuoka / shizuoka / kanagawa / saitama / kyoto / nara / hyogo / hiroshima / gunma / shiga / kagoshima / **wakayama** / **hokkaido**）**＋ 記事由来の都道府県（`lib/articleRegions.ts`・自動生成。mie / nagano / yamaguchi / ishikawa / fukui / saga など。キー = 都道府県のローマ字）**。愛知県は全体が nagoya。住所の都道府県と region の食い違いは `automation/stores500/region-mismatch.json`（空が正常）
 - **特集記事数: 217本**（No.1〜No.180 既存 + NG-01〜NG-65 既存 + NG-66〜NG-102 新規37本）
   - **NG-66〜NG-102（新規37本）**: lib/newGuideFeatures4.ts〜6.ts に収録
   - **FEATURES（indexed）追加**: NG-66,71,75,76,77,78,79（file4）＋ NG-80,81,88,90（file5）＋ NG-102（file6）= 12本

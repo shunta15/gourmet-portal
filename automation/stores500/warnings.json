@@ -858,5 +858,108 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r407": {
+    "articleId": "【CAFE】i-HUB",
+    "name": "【CAFE】i/HUB",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r408": {
+    "articleId": "ままん",
+    "name": "ままん",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r409": {
+    "articleId": "すし笑魚亭",
+    "name": "すし笑魚亭 / ティーサロン笑魚亭",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r410": {
+    "articleId": "らくおーれ",
+    "name": "らくおーれ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r411": {
+    "articleId": "お食事処本山",
+    "name": "お食事処 本山",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r412": {
+    "articleId": "アトリエMOF",
+    "name": "アトリエMOF",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r413": {
+    "articleId": "イタリアンバルAvanti",
+    "name": "イタリアンバルAvanti",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r414": {
+    "articleId": "汁なし担々麺しろくま",
+    "name": "汁なし担々麺 しろくま",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r415": {
+    "articleId": "飯＆酒シュビラバ",
+    "name": "飯＆酒 シュビラバ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ（業態specsが店の説明/長い）"
+    ]
+  },
+  "r416": {
+    "articleId": "きさん",
+    "name": "きさん",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r417": {
+    "articleId": "洋食DiningWoody",
+    "name": "洋食Dining Woody",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r418": {
+    "articleId": "souvenir",
+    "name": "souvenir-スヴニール-",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r419": {
+    "articleId": "ManpukuShokudoKante",
+    "name": "万福食堂カンテ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

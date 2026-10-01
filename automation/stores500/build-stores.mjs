@@ -20,6 +20,7 @@
  *   automation/stores500/excluded.json         出力しなかった店と理由
  *   automation/stores500/tag-evidence.json     シーンタグごとの根拠
  *   automation/stores500/warnings.json         出力はしたが人の目で見たほうがよい点
+ *   automation/stores500/region-mismatch.json  既存店（r01〜r298）で住所の都道府県と region が食い違うもの（空が正常）
  *
  * 守ること（PLAN.md）: 推測で埋めない。無い値は「—」か省略。誇張しない。実在店・事実のみ。
  *
@@ -77,6 +78,8 @@ function readExistingStores() {
         name: (chunk.match(/^\s*name:\s*"([^"]*)"/m) || [])[1] || "",
         phone: (chunk.match(/^\s*phone:\s*"([^"]*)"/m) || [])[1] || "",
         cid: (chunk.match(/[?&]cid=(\d+)/) || [])[1] || "",
+        region: (chunk.match(/^\s*region:\s*"(\w+)"/m) || [])[1] || "",
+        address: (chunk.match(/^\s*address:\s*"([^"]*)"/m) || [])[1] || "",
       });
     });
   }
@@ -795,18 +798,28 @@ for (const entry of map) {
 
 stores.sort((a, b) => parseInt(a.id.slice(1), 10) - parseInt(b.id.slice(1), 10));
 
-// ------------------------------------------------------------ 地域（出力した店がある県のうち、既存16地域に入らないもの）
+// ------------------------------------------------------------ 地域（店がある県のうち、既存16地域に入らないもの）
+// 対象は、今回出力する店 + 既存の店（r01〜r298）の所在県。既存店の住所の県も数える
+// （例: teleapo の石川県・福井県・佐賀県の店が、京都・福岡の地域に紛れないように）。
+const existingMuni = (e) => {
+  const a = parseAddress(String(e.address).replace(/^〒\s*\d{3}-?\d{4}\s*/, ""));
+  return a ? { pref: a.pref, muni: a.muni } : null;
+};
+const regionMembers = (p) => [
+  ...stores.filter((s) => s.region === p.key).map((s) => ({ city: s.area.split("・")[1], photo: s.image })),
+  ...existing
+    .map((e) => ({ e, a: existingMuni(e) }))
+    .filter(({ a }) => a && a.pref === p.pref)
+    .map(({ a }) => ({ city: a.muni, photo: null })),
+];
 const regionDefs = {};
 for (const p of PREFS.filter((x) => !x.base)) {
-  const inPref = stores.filter((s) => s.region === p.key);
-  if (!inPref.length) continue;
+  const members = regionMembers(p);
+  if (!members.length) continue;
   const cityCount = new Map();
-  for (const s of inPref) {
-    const city = s.area.split("・")[1];
-    cityCount.set(city, (cityCount.get(city) || 0) + 1);
-  }
+  for (const m of members) cityCount.set(m.city, (cityCount.get(m.city) || 0) + 1);
   const cities = [...cityCount.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja")).map(([c]) => c);
-  const withPhoto = inPref.find((s) => !s.image.includes("_placeholder"));
+  const withPhoto = members.find((m) => m.photo && !m.photo.includes("_placeholder"));
   regionDefs[p.key] = {
     name: p.name,
     nameEn: p.nameEn,
@@ -816,11 +829,20 @@ for (const p of PREFS.filter((x) => !x.base)) {
       cities.length === 1 ? `${cities[0]}の店を掲載しています。` : `${cities.slice(0, 5).join("・")}などの店が並びます。`
     }営業時間・定休日・住所・地図を、店舗ごとのページで確認できます。`,
     heroImages: [
-      withPhoto ? withPhoto.image : "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85",
+      withPhoto ? withPhoto.photo : "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85",
     ],
     stats: [],
   };
 }
+const regionCounts = Object.fromEntries(
+  Object.keys(regionDefs).map((k) => [k, regionMembers(PREFS.find((p) => p.key === k)).length]),
+);
+
+// 既存の店（r01〜r298）で、住所の都道府県と region が食い違うもの（報告用。直すかどうかは人が決める）
+const regionMismatch = existing
+  .map((e) => ({ e, a: existingMuni(e) }))
+  .filter(({ e, a }) => a && PREF_BY_NAME.get(a.pref).key !== e.region)
+  .map(({ e, a }) => ({ id: e.id, name: e.name, region: e.region, addressPref: a.pref, expectedRegion: PREF_BY_NAME.get(a.pref).key }));
 
 // ------------------------------------------------------------ 出力
 const header = `// 自動生成: node automation/stores500/build-stores.mjs（手で編集しない。再実行で上書きされる）
@@ -875,7 +897,8 @@ const summary = {
   gbpPending: pending,
   output: stores.length,
   excluded: excluded.length,
-  newRegions: Object.fromEntries(Object.keys(regionDefs).map((k) => [k, stores.filter((s) => s.region === k).length])),
+  newRegions: regionCounts, // 今回の店 + 既存店（r01〜r298）の合計
+  regionMismatchExisting: regionMismatch.length,
 };
 
 if (DRY) {
@@ -891,5 +914,6 @@ if (idsDirty || !existsSync(abs("automation/stores500/ids.json")))
 writeFileSync(abs("automation/stores500/excluded.json"), JSON.stringify(excluded, null, 2) + "\n");
 writeFileSync(abs("automation/stores500/tag-evidence.json"), JSON.stringify(tagEvidence, null, 2) + "\n");
 writeFileSync(abs("automation/stores500/warnings.json"), JSON.stringify(warnings, null, 2) + "\n");
+writeFileSync(abs("automation/stores500/region-mismatch.json"), JSON.stringify(regionMismatch, null, 2) + "\n");
 
 console.log(JSON.stringify(summary, null, 2));

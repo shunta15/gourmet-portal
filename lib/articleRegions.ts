@@ -93,6 +93,17 @@ export const ARTICLE_REGIONS = {
     ],
     "stats": []
   },
+  "ishikawa": {
+    "name": "石川",
+    "nameEn": "Ishikawa",
+    "tagline": "石川の街と店",
+    "subtitle": "金沢市 ――― 掲載店を街ごとに。",
+    "intro": "マチノワで紹介している石川の飲食店を、街ごとにまとめています。金沢市の店を掲載しています。営業時間・定休日・住所・地図を、店舗ごとのページで確認できます。",
+    "heroImages": [
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85"
+    ],
+    "stats": []
+  },
   "fukui": {
     "name": "福井",
     "nameEn": "Fukui",
@@ -211,6 +222,17 @@ export const ARTICLE_REGIONS = {
     "intro": "マチノワで紹介している高知の飲食店を、街ごとにまとめています。高知市の店を掲載しています。営業時間・定休日・住所・地図を、店舗ごとのページで確認できます。",
     "heroImages": [
       "/restaurants/teleapo-BISTROJOIN/hero.jpg"
+    ],
+    "stats": []
+  },
+  "saga": {
+    "name": "佐賀",
+    "nameEn": "Saga",
+    "tagline": "佐賀の街と店",
+    "subtitle": "佐賀市 ――― 掲載店を街ごとに。",
+    "intro": "マチノワで紹介している佐賀の飲食店を、街ごとにまとめています。佐賀市の店を掲載しています。営業時間・定休日・住所・地図を、店舗ごとのページで確認できます。",
+    "heroImages": [
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85"
     ],
     "stats": []
   },

@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// ⚠️ 注意: このスクリプトは lib/geo.ts を丸ごと上書きする（data.ts + teleapo-restaurants の店だけが対象）。
+//    記事由来の店（r299〜・lib/articleStores.ts）の座標は消えるので、実行後は必ず
+//    `node automation/stores500/build-stores.mjs` を再実行して座標を戻すこと。
 // 228店舗（data.ts） + 58店舗（teleapo-restaurants）の緯度経度を自動生成
 // 無料ソースのみ: Google Maps URL のピン座標 / 国土地理院 住所検索
 // 使い方:
