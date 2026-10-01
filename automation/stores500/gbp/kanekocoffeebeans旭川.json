@@ -1,0 +1,22 @@
+{
+  "name": "kaneko coffee beans 旭川",
+  "address": "北海道旭川市東旭川町米原７１４−２",
+  "lat": 43.7460106,
+  "lng": 142.5743315,
+  "category": "レストラン",
+  "hours": {
+    "月": "10:00–21:00",
+    "火": "10:00–21:00",
+    "水": "10:00–21:00",
+    "木": "定休日",
+    "金": "10:00–21:00",
+    "土": "10:00–21:00",
+    "日": "10:00–21:00"
+  },
+  "phone": "0166-56-5123",
+  "website": "https://www.instagram.com/kaneko_coffee_asahikawa/",
+  "priceRange": "￥1,000～2,000",
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=14865578329631622992",
+  "fetchedAt": "2026-10-01T01:58:49.548Z"
+}
