@@ -293,8 +293,22 @@ async function expandHours(page) {
   }
 }
 
-/** 1件取得。page は新規ページ */
-export async function fetchGbpDetails(page, inputUrl) {
+/**
+ * Google は Maps の表示を「フル表示」と「簡易表示」にセッション単位で振り分けている（約半々・2026-10-01 実測）。
+ *   フル: タブが「概要/メニュー/クチコミ/基本情報」、1人あたり価格と価格帯ヒストグラムが出る
+ *   簡易: タブが「概要/クチコミ/基本情報」、価格帯は出ない（営業時間・住所・電話などは同じ）
+ * 同じセッション（Cookie）なら何度開いても同じ表示のまま。フル表示のしるしを返す。
+ */
+const isFullVariant = (page) =>
+  page.evaluate(
+    () =>
+      !!document.querySelector("table.rqRH4d") ||
+      !!document.querySelector('[aria-label*="あたり"]') ||
+      [...document.querySelectorAll('[role="tab"]')].some((t) => /^メニュー$/.test((t.textContent || "").trim())),
+  );
+
+/** 1件取得（内部）。page は新規ページ。{ info, full } を返す */
+async function fetchOnce(page, inputUrl) {
   let target = inputUrl;
   let kgmid = null;
 
@@ -326,6 +340,7 @@ export async function fetchGbpDetails(page, inputUrl) {
     throw new Error(`kgmid(${kgmid}) が一致しない店に着地した: ${page.url().slice(0, 100)}`);
   }
 
+  const full = await isFullVariant(page);
   const info = await extractFromPanel(page);
   if (!info.name) throw new Error("店名(h1)を取れなかった");
   if (!info.hours) {
@@ -333,7 +348,67 @@ export async function fetchGbpDetails(page, inputUrl) {
     await expandHours(page);
     info.hours = hoursFromRows(await readHoursRows(page));
   }
-  return info;
+  return { info, full };
+}
+
+/**
+ * ブラウザセッション。逐次取得専用。
+ * 簡易表示のセッションに当たったら（価格帯が出ないため）、Cookie を作り直して同じ店を取り直す。
+ * 作り直しは1回のセッション全体で最大 maxRotations 回（Google へのアクセスを増やしすぎない）。
+ */
+export class GbpSession {
+  constructor({ maxRotations = 3 } = {}) {
+    this.browser = null;
+    this.ctx = null;
+    this.full = false; // このセッションでフル表示を確認できたか
+    this.rotationsLeft = maxRotations;
+  }
+
+  async ensure() {
+    if (!this.browser) this.browser = await chromium.launch({ headless: true });
+    if (!this.ctx) {
+      this.ctx = await this.browser.newContext({ userAgent: UA, locale: "ja-JP", viewport: { width: 1280, height: 900 } });
+      // ウォームアップ: Maps のトップを1回開いて Cookie を受けておく。
+      // これをしないと、最初の1件が営業時間が当日分のみの「半端な表示」で返ってくる（2026-10-01 実測）
+      const page = await this.ctx.newPage();
+      try {
+        await page.goto("https://www.google.com/maps?hl=ja", { waitUntil: "domcontentloaded", timeout: 30_000 });
+        await page.waitForTimeout(2500);
+      } catch {
+        /* ウォームアップ失敗は致命的ではない */
+      } finally {
+        await page.close().catch(() => {});
+      }
+    }
+  }
+
+  async once(url) {
+    await this.ensure();
+    const page = await this.ctx.newPage();
+    try {
+      return await fetchOnce(page, url);
+    } finally {
+      await page.close().catch(() => {});
+    }
+  }
+
+  async fetch(url) {
+    let res = await this.once(url);
+    while (!res.full && !this.full && this.rotationsLeft > 0) {
+      this.rotationsLeft--;
+      process.stderr.write("[gbp-details] 簡易表示のセッション（価格帯が出ない）→ Cookie を作り直して再取得\n");
+      await this.ctx?.close().catch(() => {});
+      this.ctx = null;
+      await sleep(6000 + Math.random() * 4000);
+      res = await this.once(url);
+    }
+    if (res.full) this.full = true;
+    return res.info;
+  }
+
+  async close() {
+    await this.browser?.close().catch(() => {});
+  }
 }
 
 // ------------------------------------------------------------------ CLI
@@ -351,40 +426,22 @@ function parseArgs(argv) {
   return a;
 }
 
-async function newBrowser() {
-  const browser = await chromium.launch({ headless: true });
-  const ctx = await browser.newContext({ userAgent: UA, locale: "ja-JP", viewport: { width: 1280, height: 900 } });
-  // ウォームアップ: Maps のトップを1回開いて Cookie を受けておく。
-  // これをしないと、最初の1件だけ「簡易表示」（営業時間が当日分のみ・価格帯なし）で返ってくる（2026-10-01 実測）
-  const page = await ctx.newPage();
-  try {
-    await page.goto("https://www.google.com/maps?hl=ja", { waitUntil: "domcontentloaded", timeout: 30_000 });
-    await page.waitForTimeout(2500);
-  } catch {
-    /* ウォームアップ失敗は致命的ではない */
-  } finally {
-    await page.close().catch(() => {});
-  }
-  return { browser, ctx };
-}
-
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  const session = new GbpSession();
 
   if (!args.batch) {
     if (!args.url) {
       console.error("Usage: node scripts/fetch-gbp-details.mjs <maps-url> | --batch [--map map.json] [--limit N] [--offset N] [--force]");
       process.exit(2);
     }
-    const { browser, ctx } = await newBrowser();
     try {
-      const page = await ctx.newPage();
-      console.log(JSON.stringify(await fetchGbpDetails(page, args.url), null, 2));
+      console.log(JSON.stringify(await session.fetch(args.url), null, 2));
     } catch (e) {
       console.error(`[gbp-details] 失敗: ${e.message}`);
       process.exitCode = e instanceof CaptchaError ? 3 : 1;
     } finally {
-      await browser.close();
+      await session.close();
     }
     return;
   }
@@ -395,8 +452,6 @@ async function main() {
   const all = JSON.parse(readFileSync(mapPath, "utf8"));
   const slice = all.slice(args.offset, args.limit != null ? args.offset + args.limit : undefined);
 
-  let browser = null;
-  let ctx = null;
   const summary = { total: slice.length, fetched: 0, skippedCached: 0, failed: [], seconds: [] };
   let fetchedBefore = false;
   try {
@@ -407,16 +462,13 @@ async function main() {
         console.error(`[${i + 1}/${slice.length}] skip(cache) ${item.articleId}`);
         continue;
       }
-      // 1件ごとに 6〜10 秒あける（実際にアクセスした直後だけ）
+      // 1件ごとに 6〜10 秒あける（実際にアクセスした直後だけ）。ブラウザは最初に実際に取得するときまで起動しない
       if (fetchedBefore) await sleep(6000 + Math.random() * 4000);
       fetchedBefore = true;
-      // ブラウザは最初に実際に取得するときまで起動しない（全件キャッシュ済みならアクセスゼロ）
-      if (!browser) ({ browser, ctx } = await newBrowser());
 
       const t0 = Date.now();
-      const page = await ctx.newPage();
       try {
-        const info = await fetchGbpDetails(page, item.mapsUrl);
+        const info = await session.fetch(item.mapsUrl);
         writeFileSync(file, JSON.stringify(info, null, 2) + "\n");
         summary.fetched++;
         const sec = (Date.now() - t0) / 1000;
@@ -429,12 +481,10 @@ async function main() {
           console.error("CAPTCHA/確認ページを検出したため全体を停止する（回避しない）");
           break;
         }
-      } finally {
-        await page.close().catch(() => {});
       }
     }
   } finally {
-    await browser?.close();
+    await session.close();
   }
   console.log(JSON.stringify(summary, null, 2));
 }
