@@ -26,7 +26,7 @@ type Weighted = { kw: string; w: number };
  * 重複しがちな地名（元町・北区・京橋など）は同義語の組合せで
  * 文脈判定できるよう、強キーワードを各地域に最低1つは設けている。
  */
-const REGION_KEYWORDS: Record<RegionKey, Weighted[]> = {
+const REGION_KEYWORDS: Partial<Record<RegionKey, Weighted[]>> = {
   tokyo: [
     { kw: "東京", w: 2 },
     { kw: "都心", w: 1 },
@@ -509,7 +509,7 @@ function scoreRegions(text: string): Record<RegionKey, number> {
   ) as Record<RegionKey, number>;
 
   for (const region of Object.keys(REGION_KEYWORDS) as RegionKey[]) {
-    for (const { kw, w } of REGION_KEYWORDS[region]) {
+    for (const { kw, w } of REGION_KEYWORDS[region] ?? []) {
       let from = 0;
       while (true) {
         const idx = text.indexOf(kw, from);

@@ -75,6 +75,7 @@ function closedShort(closed: string | undefined): string | null {
   const s = String(closed || "")
     .replace(/[（(][^）)]*[）)]/g, "")
     .trim();
+  if (/^[—-]+$/.test(s)) return null; // 「—（訪問前に公式確認）」は未取得の印。定休日として載せない
   return s && visualWidth(s) <= 8 ? s : null;
 }
 

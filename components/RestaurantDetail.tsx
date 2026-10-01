@@ -18,9 +18,11 @@ interface RestaurantDetailProps {
   related: RestaurantCardItem[];
   shortVideos: ShortVideo[];
   geo?: GeoPoint | null;
+  /** 対になる特集記事の ID。あれば「この店の特集記事を読む」を出す */
+  featureId?: string;
 }
 
-export default function RestaurantDetail({ r, related, shortVideos, geo }: RestaurantDetailProps) {
+export default function RestaurantDetail({ r, related, shortVideos, geo, featureId }: RestaurantDetailProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
@@ -269,6 +271,16 @@ export default function RestaurantDetail({ r, related, shortVideos, geo }: Resta
               >
                 {r.source.label} ↗
               </a>
+            )}
+            {featureId && (
+              <Link
+                href={`/feature/${encodeURIComponent(featureId)}`}
+                className="chip"
+                style={{ padding: "16px 24px", borderRadius: 0 }}
+                data-cursor="READ"
+              >
+                この店の特集記事を読む →
+              </Link>
             )}
             <Link
               href={`/region/${r.region}`}

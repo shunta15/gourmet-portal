@@ -57,6 +57,7 @@ import {
   NEWGUIDE10_FEATURE_ARTICLES,
 } from "./newGuideFeatures10";
 import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
+import { ARTICLE_STORES } from "./articleStores";
 
 
 import type { Stat, RegionKey, Region, Feature, Restaurant, Neighborhood, RankItem, FeatureArticle, ShortVideo } from "./regions";
@@ -10259,6 +10260,7 @@ export const RESTAURANTS: Restaurant[] = [
     ],
   },
   ...TELEAPO_RESTAURANTS,  // テレアポ経由 店舗紹介（自動生成）
+  ...ARTICLE_STORES,       // 記事（/feature）由来の店舗ページ r299〜（node automation/stores500/build-stores.mjs で自動生成）
 ];
 
 

@@ -11,6 +11,8 @@ import {
   buildBreadcrumbJsonLd,
 } from "@/lib/jsonld";
 import { GEO } from "@/lib/geo";
+import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
+import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 import {
   restaurantTitle,
   restaurantDescription,
@@ -64,6 +66,8 @@ export async function generateMetadata({
       description,
       images: [r.image.startsWith("http") ? r.image : `${BASE}${r.image}`],
     },
+    // 記事由来の店は、実写画像・住所・営業時間がそろわなければ noindex（lib/restaurantIndexable.ts）
+    robots: isRestaurantIndexable(r.id) ? undefined : { index: false, follow: true },
     keywords: [
       r.name,
       r.area,
@@ -92,6 +96,9 @@ export default async function RestaurantPage({
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
 
+  // 対になる特集記事（DB 経由の店は featureId を持たないので、コード側の対応表でも引く）
+  const featureId = r.featureId ?? ARTICLE_STORE_FEATURE_IDS[r.id];
+
   // Compute related restaurants server-side (same region, not self, slice 4)
   const regionRestaurants = await getRestaurantsByRegion(r.region);
   const related = regionRestaurants
@@ -109,7 +116,13 @@ export default async function RestaurantPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <RestaurantDetail r={r} related={related} shortVideos={SHORT_VIDEOS} geo={GEO[r.id] ?? null} />
+      <RestaurantDetail
+        r={r}
+        related={related}
+        shortVideos={SHORT_VIDEOS}
+        geo={GEO[r.id] ?? null}
+        featureId={featureId}
+      />
     </>
   );
 }

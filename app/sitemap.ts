@@ -4,6 +4,7 @@ import { SCENES } from "@/lib/scenes";
 import { getFeatureCountsByRegion } from "@/lib/featureRegions";
 import { getAllRestaurantIdsWithUpdatedAt } from "@/lib/db/restaurants";
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
+import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -33,17 +34,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 店舗 ID は DB から取得し、updated_at がある場合は lastModified に反映
   const restaurantData = await getAllRestaurantIdsWithUpdatedAt();
-  const restaurants: MetadataRoute.Sitemap = restaurantData.map((r) => {
-    const entry: Record<string, unknown> = {
-      url: `${BASE}/restaurant/${r.id}`,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    };
-    if (r.updatedAt) {
-      entry.lastModified = new Date(r.updatedAt);
-    }
-    return entry as MetadataRoute.Sitemap[number];
-  });
+  // 記事由来の店は、実写画像・住所・営業時間がそろうものだけ載せる（店舗ページの noindex と同じ基準）
+  const restaurants: MetadataRoute.Sitemap = restaurantData
+    .filter((r) => isRestaurantIndexable(r.id))
+    .map((r) => {
+      const entry: Record<string, unknown> = {
+        url: `${BASE}/restaurant/${r.id}`,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      };
+      if (r.updatedAt) {
+        entry.lastModified = new Date(r.updatedAt);
+      }
+      return entry as MetadataRoute.Sitemap[number];
+    });
 
   const regions: MetadataRoute.Sitemap = Object.keys(REGIONS).map((k) => ({
     url: `${BASE}/region/${k}`,

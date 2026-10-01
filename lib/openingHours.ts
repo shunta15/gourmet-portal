@@ -35,7 +35,7 @@ export function parseOpeningHours(
   // Normalize full-width characters
   let normalized = hours
     .normalize("NFKC")
-    .replace(/[〜～]/g, "~")
+    .replace(/[〜～–—−]/g, "~") // 〜 ～ と、Googleマップ由来の en dash（–）も範囲記号として扱う
     .replace(/[、]/g, "/"); // comma to slash
 
   const result: Array<Record<string, unknown>> = [];

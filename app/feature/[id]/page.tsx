@@ -11,6 +11,7 @@ import {
   isFeatureIndexable,
 } from "@/lib/db/features";
 import { FEATURES } from "@/lib/data";
+import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import type { FeatureArticle } from "@/lib/regions";
 
 export const revalidate = 60;
@@ -60,6 +61,8 @@ export default async function FeaturePage({
   const articleJsonLd = buildArticleJsonLd(article);
   const breadcrumbJsonLd = buildFeatureBreadcrumbJsonLd(article);
   const itemListJsonLd = buildFeatureItemListJsonLd(article);
+  // この記事と対になる店舗ページ（記事由来の店 r299〜）。あれば「店舗情報（営業時間・地図）」を出す
+  const storeId = ARTICLE_STORE_ID_BY_FEATURE[article.id];
   return (
     <>
       <script
@@ -74,7 +77,11 @@ export default async function FeaturePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      <FeatureClient article={article} features={FEATURES} />
+      <FeatureClient
+        article={article}
+        features={FEATURES}
+        storeHref={storeId ? `/restaurant/${storeId}` : undefined}
+      />
     </>
   );
 }

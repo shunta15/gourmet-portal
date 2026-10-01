@@ -1,9 +1,12 @@
 // Light types and constants for client components
 // Extracted from lib/data.ts to reduce bundle size
 
+import { ARTICLE_REGIONS, type ArticleRegionKey } from "./articleRegions";
+
 export type Stat = { n: string; l: string };
 
-export type RegionKey =
+/** 手書きの16地域。URL（/region/<key>）と意味は変えない */
+export type BaseRegionKey =
   | "tokyo"
   | "osaka"
   | "nagoya"
@@ -20,6 +23,12 @@ export type RegionKey =
   | "kagoshima"
   | "wakayama"
   | "hokkaido";
+
+/**
+ * 地域キー = 手書きの16地域 + 記事由来の店がある都道府県（lib/articleRegions.ts・自動生成）。
+ * 新しい県は都道府県単位（例: mie=三重県）。愛知県全体は従来どおり nagoya。
+ */
+export type RegionKey = BaseRegionKey | ArticleRegionKey;
 
 export type Region = {
   name: string;
@@ -68,6 +77,8 @@ export type Restaurant = {
   tags?: string[];
   googleRating?: number;
   googleReviewCount?: number;
+  /** 対になる特集記事の ID（/feature/<featureId>）。記事由来の店（lib/articleStores.ts）だけが持つ */
+  featureId?: string;
 };
 
 export type Neighborhood = {
@@ -150,7 +161,7 @@ export const NATIONAL = {
 };
 
 
-export const REGIONS: Record<RegionKey, Region> = {
+const BASE_REGIONS: Record<BaseRegionKey, Region> = {
   tokyo: {
     name: "東京",
     nameEn: "Tokyo",
@@ -373,6 +384,8 @@ export const REGIONS: Record<RegionKey, Region> = {
   },
 };
 
+/** 手書きの16地域のあとに、記事由来の都道府県（自動生成）が並ぶ */
+export const REGIONS: Record<RegionKey, Region> = { ...BASE_REGIONS, ...ARTICLE_REGIONS };
 
 export const NEIGHBORHOODS: Neighborhood[] = [];
 

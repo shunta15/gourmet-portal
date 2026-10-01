@@ -309,9 +309,11 @@ function SideArticles({ article }: { article: FeatureArticle }) {
 interface FeatureClientProps {
   article: FeatureArticle;
   features: Feature[];
+  /** この記事と対になる店舗ページの URL（/restaurant/<id>）。あれば「店舗情報（営業時間・地図）」を出す */
+  storeHref?: string;
 }
 
-export default function FeatureClient({ article, features }: FeatureClientProps) {
+export default function FeatureClient({ article, features, storeHref }: FeatureClientProps) {
   useReveal();
   const A = article;
   const isGuide = A.articleType === "guide";
@@ -358,6 +360,18 @@ export default function FeatureClient({ article, features }: FeatureClientProps)
             </div>
           </div>
           <RankingList article={A} />
+          {storeHref && (
+            <div className="reveal" style={{ marginTop: 40 }}>
+              <Link
+                href={storeHref}
+                className="chip"
+                style={{ display: "inline-flex", padding: "14px 22px", borderRadius: 0 }}
+                data-cursor="VIEW"
+              >
+                店舗情報（営業時間・地図）→
+              </Link>
+            </div>
+          )}
         </section>
 
         <section className="quote-block">
