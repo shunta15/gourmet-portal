@@ -388,11 +388,16 @@ const BASE_REGIONS: Record<BaseRegionKey, Region> = {
 };
 
 /** 手書きの16地域のあとに、記事由来の都道府県（自動生成）が並ぶ */
-// 検閲で表示禁止にした画像（lib/imageBlocklist.ts）は地域ヒーローからも外す
+// 検閲で表示禁止にした画像（lib/imageBlocklist.ts）は地域ヒーローからも外す。
+// 全部外れた地域（例: 富山）は heroImages[0] が undefined になり src なしの <img> が出るので代替画像を入れる
+const withoutBlocked = (imgs: string[]) => {
+  const kept = imgs.filter((src) => !isBlockedImage(src));
+  return kept.length ? kept : ["/restaurants/_placeholder/feature-hero.jpg"];
+};
 export const REGIONS: Record<RegionKey, Region> = Object.fromEntries(
   Object.entries({ ...BASE_REGIONS, ...ARTICLE_REGIONS }).map(([k, r]) => [
     k,
-    r.heroImages ? { ...r, heroImages: r.heroImages.filter((src) => !isBlockedImage(src)) } : r,
+    r.heroImages ? { ...r, heroImages: withoutBlocked(r.heroImages) } : r,
   ]),
 ) as Record<RegionKey, Region>;
 
