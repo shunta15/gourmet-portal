@@ -1,5 +1,6 @@
 import "@/components/portal/portal.css";
+import PortalLayout from "@/components/portal/PortalLayout";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <PortalLayout>{children}</PortalLayout>;
 }

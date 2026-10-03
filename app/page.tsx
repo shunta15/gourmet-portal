@@ -15,12 +15,20 @@ import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { getPortalHomeData } from "@/lib/portal/home";
 import { getStationIndex } from "@/lib/stations/query";
 import { getAllVideos } from "@/lib/videos";
+import { buildMetadata } from "@/lib/seo/meta";
+import PortalFooter from "@/components/portal/PortalFooter";
 
 // 総合トップは試作。検索エンジンには載せない（公開時に外す）。
+// openGraph / twitter の共有画像は総合サイト用（/og/home）を明示指定する（lib/seo/meta.ts の buildMetadata）。
 export const metadata: Metadata = {
-  title: "マチノワ — 街の店を、業種をまたいで探す",
-  description:
-    "グルメ・ビューティー・ボディケア・ペット・おでかけ・ステイ。街の店を、業種をまたいで探せるポータル「マチノワ」。",
+  ...buildMetadata({
+    vertical: "portal",
+    title: "マチノワ — 街の店を、業種をまたいで探す",
+    description:
+      "グルメ・ビューティー・ボディケア・ペット・おでかけ・ステイ。街の店を、業種をまたいで探せるポータル「マチノワ」。",
+    path: "/",
+    count: 0,
+  }),
   alternates: { canonical: "/" },
   robots: { index: false, follow: false },
 };
@@ -141,6 +149,8 @@ export default async function Page() {
           </div>
         </div>
       </section>
+
+      <PortalFooter />
     </>
   );
 }

@@ -1,7 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
-import PortalSilk from "./PortalSilk";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import { afterLcpIdle, silkAllowed } from "./silkGate";
+
+// WebGL の絹は初期の JS に入れない。LCP の後・アイドル時に、出してよい環境だけで読み込む（silkGate.ts）
+const PortalSilk = dynamic(() => import("./PortalSilk"), { ssr: false });
 
 export interface HeroVertical {
   key: string;
@@ -34,6 +38,7 @@ const pt = (deg: number, r: number) => [CX + r * Math.cos(rad(deg)), CY + r * Ma
 /**
  * 総合トップのヒーロー。絹のシェーダ＋大見出し＋「輪」（6業種を一周でつなぐ）。
  * 輪の業種に触れると、布の上でその業種の色がふくらむ。
+ * 絹（WebGL）は LCP の後・アイドル時に始める。スマホ・低電力・動きを減らす設定では CSS のグラデーションだけ（silkGate.ts）。
  */
 export default function PortalHero({
   verticals,
@@ -47,6 +52,11 @@ export default function PortalHero({
   features: number;
 }) {
   const [focus, setFocus] = useState(-1);
+  const [silk, setSilk] = useState(false);
+  useEffect(() => {
+    if (!silkAllowed()) return;
+    return afterLcpIdle(() => setSilk(true));
+  }, []);
   const soon = verticals.filter((v) => !v.live).map((v) => v.name);
   const act = (i: number) => ({
     onMouseEnter: () => setFocus(i),
@@ -58,7 +68,7 @@ export default function PortalHero({
   return (
     <section className="mp-hero" aria-labelledby="mp-hero-title" style={focus >= 0 ? ({ ["--fc" as string]: verticals[focus].color } as React.CSSProperties) : undefined}>
       <div className="mp-silk-fallback" aria-hidden="true" />
-      <PortalSilk colors={verticals.map((v) => v.color)} focus={focus} />
+      {silk && <PortalSilk colors={verticals.map((v) => v.color)} focus={focus} />}
 
       <div className="mp-hero-meta tl" aria-hidden="true">
         <span>Machinowa — 街の輪</span>

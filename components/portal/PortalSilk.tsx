@@ -6,7 +6,9 @@ import { useEffect, useRef } from "react";
  * 美容版プロトタイプの絹を土台に、6業種の色を地の上で溶かし合わせる。
  * - カーソルに向かって布がわずかに寄る
  * - focus（0〜5）の業種に触れている間、その色が布の上でふくらむ
- * - 画面外では描画を止める／reduced-motion では1フレームだけ描く
+ * - 画面外・タブが裏のときは描画を止める（描画ループは常に1本）
+ * - 出すかどうか・いつ始めるかは呼び出し側（PortalHero＋silkGate.ts）が決める。LCP の後・アイドル時に初期化し、
+ *   スマホ・低電力・reduced-motion ではこのコンポーネント自体を読み込まない
  * - WebGL が無い環境では CSS のグラデーション（.mp-silk-fallback）がそのまま見える
  */
 const FRAG = `
@@ -145,14 +147,17 @@ export default function PortalSilk({
     };
     window.addEventListener("pointermove", onMove);
 
-    let visible = true, raf = 0, fCur = 0, fi = 0;
-    const io = new IntersectionObserver(([en]) => {
-      visible = en.isIntersecting;
-      if (visible && !reduce) raf = requestAnimationFrame(loop);
-    });
-    io.observe(cv);
+    // 描画ループは常に1本。画面外・タブが裏のあいだは止め、戻ったら再開する
+    let onScreen = true, running = false, raf = 0, fCur = 0, fi = 0;
     const t0 = performance.now();
+    const wantRun = () => onScreen && !document.hidden && !reduce;
+    const start = () => {
+      if (running || !wantRun()) return;
+      running = true;
+      raf = requestAnimationFrame(loop);
+    };
     function loop(now: number) {
+      raf = 0;
       eased.x += (mouse.x - eased.x) * 0.04;
       eased.y += (mouse.y - eased.y) * 0.04;
       const want = focusRef.current;
@@ -164,12 +169,21 @@ export default function PortalSilk({
       gl!.uniform1f(uFi, fi);
       gl!.drawArrays(gl!.TRIANGLES, 0, 3);
       cv!.dataset.ready = "1";
-      if (visible && !reduce) raf = requestAnimationFrame(loop);
+      if (wantRun()) raf = requestAnimationFrame(loop);
+      else running = false;
     }
-    raf = requestAnimationFrame(loop);
+    const io = new IntersectionObserver(([en]) => {
+      onScreen = en.isIntersecting;
+      start();
+    });
+    io.observe(cv);
+    const onVis = () => start();
+    document.addEventListener("visibilitychange", onVis);
+    start();
     return () => {
       cancelAnimationFrame(raf);
       io.disconnect();
+      document.removeEventListener("visibilitychange", onVis);
       window.removeEventListener("resize", resize);
       window.removeEventListener("pointermove", onMove);
     };

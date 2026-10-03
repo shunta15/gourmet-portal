@@ -1,0 +1,77 @@
+{
+  "_comment": "総合トップのグルメ写真の優先候補（public からのパス）。variants は automation/portal/build-images.mjs が書き出す（手で編集しない）。",
+  "preferred": [
+    "/restaurants/paofuku-interior-wide.jpg",
+    "/restaurants/teleapo-炭火鰻のこうせい/hero.jpg",
+    "/restaurants/teleapo-東華飯店/hero.jpg",
+    "/restaurants/teleapo-讃岐うどん明月/hero.jpg"
+  ],
+  "variants": {
+    "/restaurants/paofuku-interior-wide.jpg": {
+      "width": 960,
+      "height": 454,
+      "items": [
+        {
+          "w": 480,
+          "h": 227,
+          "src": "/_portal/home-046f05f2-480.webp",
+          "bytes": 17674
+        },
+        {
+          "w": 960,
+          "h": 454,
+          "src": "/_portal/home-046f05f2-960.webp",
+          "bytes": 48658
+        }
+      ]
+    },
+    "/restaurants/teleapo-炭火鰻のこうせい/hero.jpg": {
+      "width": 640,
+      "height": 491,
+      "items": [
+        {
+          "w": 480,
+          "h": 368,
+          "src": "/_portal/home-cc87839b-480.webp",
+          "bytes": 38910
+        },
+        {
+          "w": 640,
+          "h": 491,
+          "src": "/_portal/home-cc87839b-640.webp",
+          "bytes": 68052
+        }
+      ]
+    },
+    "/restaurants/teleapo-東華飯店/hero.jpg": {
+      "width": 315,
+      "height": 236,
+      "items": [
+        {
+          "w": 315,
+          "h": 236,
+          "src": "/_portal/home-f4e6c181-315.webp",
+          "bytes": 12514
+        }
+      ]
+    },
+    "/restaurants/teleapo-讃岐うどん明月/hero.jpg": {
+      "width": 800,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/home-31b06aea-480.webp",
+          "bytes": 29764
+        },
+        {
+          "w": 800,
+          "h": 600,
+          "src": "/_portal/home-31b06aea-800.webp",
+          "bytes": 59174
+        }
+      ]
+    }
+  }
+}

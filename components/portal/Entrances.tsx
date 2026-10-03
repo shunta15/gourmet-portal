@@ -3,6 +3,10 @@ import { VERTICAL_FACE } from "@/lib/portal/meta";
 import type { Vertical } from "@/lib/verticals/types";
 import type { GourmetPhoto } from "@/lib/portal/home";
 
+// 写真の表示幅の目安（srcset の選択用）。大きい1枚は左の列の幅いっぱい、小さい2枚はその半分
+const BIG_SIZES = "(max-width: 960px) 92vw, 54vw";
+const SMALL_SIZES = "(max-width: 560px) 92vw, (max-width: 960px) 46vw, 26vw";
+
 /**
  * 6業種の入口（サーバー）。
  * グルメ: 実件数と実店舗の写真。ほか5つ: 色・文字・動きだけで表現し「掲載準備中」と正直に出す。
@@ -38,7 +42,16 @@ export default function Entrances({
             {big && (
               <figure className="big">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={big.src} alt={`${big.name}（${big.area}）の写真`} loading="lazy" decoding="async" />
+                <img
+                  src={big.src}
+                  srcSet={big.srcSet}
+                  sizes={big.srcSet ? BIG_SIZES : undefined}
+                  width={big.width}
+                  height={big.height}
+                  alt={`${big.name}（${big.area}）の写真`}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <figcaption>
                   <b>{big.name}</b>
                   <span>{big.area}</span>
@@ -48,7 +61,16 @@ export default function Entrances({
             {small.slice(0, 2).map((p) => (
               <figure key={p.id} className="sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={`${p.name}（${p.area}）の写真`} loading="lazy" decoding="async" />
+                <img
+                  src={p.src}
+                  srcSet={p.srcSet}
+                  sizes={p.srcSet ? SMALL_SIZES : undefined}
+                  width={p.width}
+                  height={p.height}
+                  alt={`${p.name}（${p.area}）の写真`}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <figcaption>
                   <b>{p.name}</b>
                   <span>{p.area}</span>

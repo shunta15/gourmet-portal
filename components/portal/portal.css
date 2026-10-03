@@ -8,7 +8,7 @@
   --paper:#faf7f1;
   --ink:#15110e;
   --ink-2:#4a423a;
-  --ink-3:#766c61;
+  --ink-3:#645b51;
   --rule:rgba(21,17,14,.14);
   --c-gourmet:#C84F35;
   --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
@@ -27,7 +27,14 @@
 .mp ::selection{background:var(--ink); color:var(--ivory)}
 :where(.mp) ul, :where(.mp) ol{list-style:none}
 :where(.mp) a{color:inherit; text-decoration:none}
-.mp a:focus-visible, .mp button:focus-visible, .mp input:focus-visible{outline:2px solid var(--ink); outline-offset:3px; border-radius:2px}
+.mp a:focus-visible, .mp button:focus-visible, .mp input:focus-visible, .mp summary:focus-visible{outline:2px solid var(--ink); outline-offset:3px; border-radius:2px}
+/* 暗い面（フッター・全画面メニュー）では墨のリングが見えないので生成りにする */
+.mp-ft a:focus-visible, .mp-ft summary:focus-visible, .mp-menu a:focus-visible, .mp-menu input:focus-visible, .mp-menu button:focus-visible{outline-color:var(--ivory)}
+/* 全画面メニューの各行は overflow:hidden の li に収まっているので、リングを外に出すと切れる。内側に引く */
+.mp-menu li a:focus-visible{outline-offset:-5px; border-radius:0}
+.mp-skip{position:absolute; left:12px; top:-72px; z-index:100; padding:12px 18px; background:var(--ink); color:var(--ivory); font:500 14px/1 var(--sans); border-radius:4px; transition:top .2s}
+.mp-skip:focus{top:12px; outline:2px solid var(--ivory); outline-offset:2px}
+.mp main:focus{outline:none}
 .mp-wrap{max-width:1440px; margin:0 auto; padding-inline:var(--gut)}
 .mp .ph{display:inline-block}
 .mp-sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%); white-space:nowrap}
@@ -149,11 +156,11 @@
 .mp-ring-label.r{transform:translate(0,-50%)}
 .mp-ring-label.l{transform:translate(-100%,-50%); text-align:right}
 .mp-ring-label b{font:500 clamp(15px,1.25vw,19px)/1.2 var(--serif); letter-spacing:.02em; transition:color .4s}
-.mp-ring-label small{font:500 10px/1 var(--mono); letter-spacing:.14em; color:var(--ink-3)}
+.mp-ring-label small{font:500 10px/1 var(--mono); letter-spacing:.14em; color:var(--ink)}
 .mp-ring-label.on b{color:var(--ac)}
 .mp-ring-label.on small{color:var(--ink)}
 
-.mp-hero-lede{position:absolute; right:var(--gut); bottom:clamp(96px,14vh,132px); max-width:27em; font:400 14px/2 var(--sans); color:var(--ink-2); text-wrap:pretty}
+.mp-hero-lede{position:absolute; right:var(--gut); bottom:clamp(96px,14vh,132px); max-width:27em; font:400 14px/2 var(--sans); color:var(--ink); text-wrap:pretty}
 .mp-hero-lede b{font:500 17px/1 var(--latin); font-style:normal; color:var(--ink); letter-spacing:.02em; margin-inline:.1em}
 .mp-hero-foot{position:absolute; left:var(--gut); right:var(--gut); bottom:26px; display:flex; justify-content:space-between; align-items:center; gap:24px; border-top:1px solid var(--rule); padding-top:16px}
 .mp-cue{display:flex; align-items:center; gap:14px; font:500 10px/1 var(--mono); letter-spacing:.3em; text-transform:uppercase; flex:none}
@@ -169,7 +176,7 @@
 .mp-mf{padding-block:clamp(96px,13vw,200px) clamp(40px,6vw,88px)}
 .mp-mf-text{margin-top:36px; font:500 clamp(28px,4.8vw,80px)/1.5 var(--serif); letter-spacing:-.01em; max-width:15em; text-wrap:pretty}
 .mp-mf .w{display:inline-block; opacity:clamp(.14, calc((var(--p,1) * 1.9 - .15) * var(--n) - var(--i)), 1); transition:opacity .3s linear}
-.mp-mf .w[data-v]{color:var(--ac)}
+.mp-mf .w[data-v]{color:color-mix(in srgb, var(--ac) 70%, var(--ink))}
 
 /* ─────────── entrances ─────────── */
 .mp-ent{padding-bottom:clamp(48px,6vw,88px)}
@@ -181,8 +188,8 @@
 .mp-gm-photos .sm{aspect-ratio:4/3}
 .mp-gm-photos img{width:100%; height:100%; object-fit:cover; scale:1.1; transform:translateY(calc((var(--p,.5) - .5) * -36px)); transition:scale 1.6s var(--ease)}
 .mp-gm-photos figure:hover img{scale:1.15}
-.mp-gm-photos figcaption{position:absolute; inset:auto 0 0; padding:56px 18px 16px; display:flex; justify-content:space-between; align-items:baseline; gap:12px; color:#fff; background:linear-gradient(to top, rgba(12,9,7,.66), transparent); font:500 13px/1.4 var(--sans)}
-.mp-gm-photos figcaption span{font:500 11px/1.4 var(--mono); letter-spacing:.1em; opacity:.85; text-align:right}
+.mp-gm-photos figcaption{position:absolute; inset:auto 0 0; padding:56px 18px 16px; display:flex; justify-content:space-between; align-items:baseline; gap:12px; color:#fff; background:linear-gradient(to top, rgba(12,9,7,.84) 0, rgba(12,9,7,.8) 50%, rgba(12,9,7,0)); font:500 13px/1.4 var(--sans)}
+.mp-gm-photos figcaption span{font:500 11px/1.4 var(--mono); letter-spacing:.1em; text-align:right}
 .mp-gm-body{display:flex; flex-direction:column; justify-content:flex-start; gap:36px; padding-top:6px}
 .mp-gm-body .top, .mp-gm-body .bot{display:flex; flex-direction:column; align-items:flex-start; gap:18px}
 .mp-gm-body h3{display:flex; align-items:baseline; gap:16px; flex-wrap:wrap}
@@ -217,7 +224,7 @@
 .mp-panel-in .bot{display:flex; flex-direction:column; gap:6px; min-width:0}
 .mp-panel-in em{font:italic 400 clamp(20px,1.7vw,26px)/1 var(--latin); color:var(--ink)}
 .mp-panel-in b{font:500 clamp(24px,2.2vw,36px)/1.15 var(--serif); letter-spacing:-.01em; white-space:nowrap}
-.mp-panel-in .brand{font:500 10px/1.4 var(--mono); letter-spacing:.14em; color:var(--ink-2); text-transform:uppercase}
+.mp-panel-in .brand{font:500 10px/1.4 var(--mono); letter-spacing:.14em; color:var(--ink); text-transform:uppercase}
 .mp-panel-in .cats{font:400 13px/1.8 var(--sans); color:var(--ink); max-width:24em; max-height:0; opacity:0; overflow:hidden; transition:max-height .8s var(--ease), opacity .6s, margin .6s var(--ease)}
 .mp-panel:hover .cats, .mp-panel:focus-visible .cats{max-height:9em; opacity:1; margin-top:10px}
 @media (hover:none){
@@ -265,7 +272,7 @@
 .mp-fcard img{width:100%; height:100%; object-fit:cover; transition:transform 1.4s var(--ease)}
 .mp-fcard:hover img{transform:scale(1.05)}
 .mp-fcard .meta{display:flex; justify-content:space-between; gap:10px}
-.mp-fcard small{font:500 10.5px/1 var(--mono); letter-spacing:.16em; color:var(--c-gourmet)}
+.mp-fcard small{font:500 10.5px/1 var(--mono); letter-spacing:.16em; color:color-mix(in srgb, var(--c-gourmet) 70%, var(--ink))}
 .mp-fcard small.d{color:var(--ink-3)}
 .mp-fcard b{font:500 clamp(16px,1.35vw,20px)/1.6 var(--serif); letter-spacing:.005em; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; transition:color .3s}
 .mp-fcard:hover b{color:var(--c-gourmet)}
@@ -292,6 +299,26 @@
 .mp-ft-mark{font:500 clamp(48px,13.4vw,240px)/.9 var(--serif); letter-spacing:-.04em; margin:clamp(40px,6vw,96px) 0 34px; white-space:nowrap}
 .mp-ft-mark em{font:italic 300 .6em/1 var(--latin); color:rgba(244,239,230,.5); margin-left:.2em; letter-spacing:-.01em}
 .mp-ft-bot{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; border-top:1px solid rgba(244,239,230,.14); padding-top:20px; font:500 10px/1 var(--mono); letter-spacing:.18em; color:rgba(244,239,230,.5)}
+
+.mp-ft-nav{display:grid; grid-template-columns:minmax(0,2.5fr) minmax(0,1fr); gap:clamp(28px,4vw,64px); padding-block:clamp(36px,5vw,64px) 0}
+.mp-ft-nav h2{font:500 11px/1 var(--mono); letter-spacing:.28em; text-transform:uppercase; color:rgba(244,239,230,.66); margin-bottom:22px}
+.mp-ft-areas{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px 28px}
+.mp-ft-areas details{min-width:0; border-top:1px solid rgba(244,239,230,.16); padding-top:12px}
+.mp-ft-areas summary{position:relative; display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:0 10px; padding-right:22px; cursor:pointer; list-style:none; font:500 14px/1.5 var(--serif)}
+.mp-ft-areas summary span{white-space:nowrap}
+.mp-ft-areas summary::-webkit-details-marker{display:none}
+.mp-ft-areas summary::after{content:"+"; position:absolute; right:2px; top:.4em; width:1em; text-align:center; font:400 16px/1 var(--sans); color:rgba(244,239,230,.66); transition:transform .3s var(--ease)}
+.mp-ft-areas details[open] summary::after{transform:rotate(45deg)}
+.mp-ft-areas summary small{margin-left:auto; font:italic 400 16px/1.4 var(--latin); color:rgba(244,239,230,.66); white-space:nowrap}
+.mp-ft-areas ul{display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:12px; padding-bottom:6px; font:400 13px/1.6 var(--sans)}
+.mp-ft-areas a{transition:color .3s}
+.mp-ft-areas a:hover{color:#fff}
+.mp-ft-stn ul{display:flex; flex-direction:column; gap:10px; font:400 14px/1.5 var(--sans)}
+.mp-ft-stn li a{display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding-bottom:9px; border-bottom:1px solid rgba(244,239,230,.12); transition:color .3s}
+.mp-ft-stn li a:hover{color:#fff}
+.mp-ft-stn small{font:500 11px/1 var(--mono); letter-spacing:.08em; color:rgba(244,239,230,.66); white-space:nowrap}
+.mp-ft-stn p{margin-top:18px; font:500 13px/1.5 var(--sans)}
+.mp-ft-stn p a{border-bottom:1px solid rgba(244,239,230,.4); padding-bottom:4px}
 
 /* ─────────── breadcrumbs ─────────── */
 .mp-crumbs ol{display:flex; flex-wrap:wrap; gap:4px 10px; font:500 12.5px/1.5 var(--sans); color:var(--ink-3)}
@@ -328,7 +355,7 @@
 .mp-cat{position:relative; display:grid; grid-template-columns:44px minmax(0,1fr) auto; grid-template-areas:"n b ar" "n st ar"; align-items:baseline; column-gap:8px; row-gap:10px; padding:clamp(22px,2.4vw,34px) clamp(14px,1.6vw,22px); overflow:hidden; isolation:isolate}
 .mp-cat::before{content:""; position:absolute; inset:0; background:var(--acl); transform:scaleY(0); transform-origin:bottom; transition:transform .7s var(--ease); z-index:-1}
 .mp-cat:hover::before{transform:scaleY(1)}
-.mp-cat small{grid-area:n; font:500 10px/1 var(--mono); letter-spacing:.2em; color:var(--ac)}
+.mp-cat small{grid-area:n; font:500 10px/1 var(--mono); letter-spacing:.2em; color:color-mix(in srgb, var(--ac) 50%, var(--ink))}
 .mp-cat b{grid-area:b; font:500 clamp(20px,1.9vw,28px)/1.35 var(--serif); transition:transform .7s var(--ease)}
 .mp-cat:hover b{transform:translateX(8px)}
 .mp-cat .st{grid-area:st; font:500 11px/1 var(--mono); letter-spacing:.14em; color:var(--ink-3)}
@@ -458,6 +485,8 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-about-grid, .mp-note-grid{grid-template-columns:1fr}
   .mp-ft-top{grid-template-columns:1fr 1fr}
   .mp-ft-top .mp-ft-col:first-child{grid-column:1 / -1}
+  .mp-ft-nav{grid-template-columns:1fr}
+  .mp-ft-areas{grid-template-columns:repeat(2,minmax(0,1fr))}
   .mp-ft-mark{white-space:normal; line-height:1}
   .mp-ft-mark em{display:block; margin:.1em 0 0; font-size:.5em}
   .mp-cats{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -481,6 +510,7 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-gm-photos{grid-template-columns:1fr}
   .mp-gm-photos .sm{aspect-ratio:16/10}
   .mp-ft-top{grid-template-columns:1fr}
+  .mp-ft-areas{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion: reduce){
   .mp *{animation:none !important; transition:none !important}
@@ -655,7 +685,8 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-pop-sub{font:400 12.5px/1.6 var(--sans); color:var(--ink-2)}
 .mp-map .mp-pop-wrap a.mp-pop-link{margin-top:2px; padding-bottom:3px; border-bottom:1px solid currentColor; font:500 13px/1.4 var(--sans); color:var(--ink)}
 .mp-map .mp-pop-wrap a.mp-pop-link:hover{color:#97560f}
-.mp-map .leaflet-control-attribution{font:400 10.5px/1.6 var(--sans)}
+.mp-map .leaflet-control-attribution{font:400 10.5px/1.6 var(--sans); color:var(--ink-2)}
+.mp-map .leaflet-control-attribution a{color:#00506b}
 
 /* /map 本体（地図が最初の画面に入るよう、ページ上部を詰める） */
 .mp-mx-page .mp-pg-head{padding:clamp(88px,12vh,112px) 0 clamp(18px,2.4vw,28px)}

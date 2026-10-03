@@ -10,6 +10,7 @@ import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from '@/lib/
 import type { Place } from '@/lib/places/types';
 import { PREFECTURES, type PrefBlockName } from '@/lib/areas/prefectures';
 import { gourmetRegionKey } from '@/lib/areas/gourmet';
+import homePhotos from './homePhotos.json';
 
 export interface PrefItem {
   slug: string;
@@ -25,10 +26,17 @@ export interface PrefItem {
 
 export interface GourmetPhoto {
   src: string;
+  /** 幅違いの WebP（事前生成。automation/portal/build-images.mjs）。無いときは元画像をそのまま出す */
+  srcSet?: string;
+  width?: number;
+  height?: number;
   name: string;
   area: string;
   id: string;
 }
+
+/** 事前生成した WebP（lib/portal/homePhotos.json の variants。キーは public からのパス） */
+const PHOTO_VARIANTS = homePhotos.variants as Record<string, { width: number; height: number; items: { w: number; h: number; src: string }[] }>;
 
 export interface LatestFeature {
   id: string;
@@ -72,12 +80,7 @@ function localPhotoOk(src: string): boolean {
  * 写真が料理や店内でよく伝わる店の優先候補（画像パスで指定）。
  * 該当の画像が無くなっていれば、自動で次の候補（地域が重ならない店）に落ちる。
  */
-const PREFERRED_PHOTO_IMAGES: string[] = [
-  '/restaurants/paofuku-interior-wide.jpg',
-  '/restaurants/teleapo-炭火鰻のこうせい/hero.jpg',
-  '/restaurants/teleapo-東華飯店/hero.jpg',
-  '/restaurants/teleapo-讃岐うどん明月/hero.jpg',
-];
+const PREFERRED_PHOTO_IMAGES: string[] = homePhotos.preferred;
 
 function pickPhotos(places: Place[], n: number): GourmetPhoto[] {
   const usable = places.filter((p) => isUsableImage(p.image) && localPhotoOk(p.image!));
@@ -104,12 +107,18 @@ function pickPhotos(places: Place[], n: number): GourmetPhoto[] {
       usedRegions.add(region);
     }
   }
-  return picked.map((p) => ({
-    id: p.id,
-    name: p.name,
-    area: p.cityName || '',
-    src: sized(p.image!, 960),
-  }));
+  return picked.map((p) => {
+    const v = PHOTO_VARIANTS[p.image!];
+    const base = { id: p.id, name: p.name, area: p.cityName || '' };
+    if (!v || v.items.length === 0) return { ...base, src: sized(p.image!, 960) };
+    return {
+      ...base,
+      src: v.items[v.items.length - 1].src,
+      srcSet: v.items.map((i) => `${i.src} ${i.w}w`).join(', '),
+      width: v.width,
+      height: v.height,
+    };
+  });
 }
 
 function latestFeatures(n: number): LatestFeature[] {

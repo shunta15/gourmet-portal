@@ -23,7 +23,7 @@ export default function VideoEntry({ items, total }: { items: Video[]; total: nu
             動画の一覧を見る <span aria-hidden="true">→</span>
           </Link>
         </header>
-        <VideoTiles videos={items} eager />
+        <VideoTiles videos={items} />
       </div>
     </section>
   );

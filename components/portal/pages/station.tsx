@@ -87,9 +87,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!hit) return notFoundMetadata();
   const { pref, summary } = hit;
   const st = summary.station;
+  // 同じ駅名が別の県にもあるとき（愛野＝静岡・長崎 など）は、タイトルが他のページと重ならないよう県名を添える
+  const idx = await getStationIndex();
+  const dup = idx.all.some((s) => s.station.id !== st.id && s.station.name === st.name);
+  const prefShort = getPrefBySlug(pref)?.short ?? "";
   // 件数が 3 件未満のときはタイトルに件数を出さない（noindex の薄いページ）
   const title = fillTitle("{name}の店{count}選｜マチノワ", {
-    name: stationHeading(st),
+    name: dup && prefShort ? `${stationHeading(st)}（${prefShort}）` : stationHeading(st),
     count: isIndexable(summary.count) ? summary.count : 0,
   });
   return buildMetadata({
