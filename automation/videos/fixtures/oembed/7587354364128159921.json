@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "type": "video",
+  "title": "短縮URLの見本です（実在しない動画）",
+  "author_url": "https://www.tiktok.com/@fixture_sample_b",
+  "author_name": "フィクスチャ B",
+  "width": "100%",
+  "height": "100%",
+  "html": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@fixture_sample_b/video/7587354364128159921\" data-video-id=\"7587354364128159921\" style=\"max-width: 605px;min-width: 325px;\" > <section> <a target=\"_blank\" title=\"@fixture_sample_b\" href=\"https://www.tiktok.com/@fixture_sample_b?refer=embed\">@fixture_sample_b</a> <p>短縮URLの見本です（実在しない動画）</p> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
+  "thumbnail_width": 720,
+  "thumbnail_height": 1280,
+  "thumbnail_url": "https://example.invalid/fixture-thumbnails/7587354364128159921.jpeg",
+  "provider_url": "https://www.tiktok.com",
+  "provider_name": "TikTok"
+}

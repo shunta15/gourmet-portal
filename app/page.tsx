@@ -7,12 +7,14 @@ import Entrances from "@/components/portal/Entrances";
 import AreaBlocks from "@/components/portal/AreaBlocks";
 import FeatureStrip from "@/components/portal/FeatureStrip";
 import StationEntry from "@/components/portal/StationEntry";
+import VideoEntry from "@/components/portal/video/VideoEntry";
 import RingMark from "@/components/portal/RingMark";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { getPortalHomeData } from "@/lib/portal/home";
 import { getStationIndex } from "@/lib/stations/query";
+import { getAllVideos } from "@/lib/videos";
 
 // 総合トップは試作。検索エンジンには載せない（公開時に外す）。
 export const metadata: Metadata = {
@@ -41,6 +43,7 @@ const MANIFESTO: { t: string; k?: VerticalKey }[] = [
 export default async function Page() {
   const data = await getPortalHomeData();
   const stationIdx = await getStationIndex();
+  const videos = getAllVideos();
 
   const heroVerticals: HeroVertical[] = ORDER.map((k) => ({
     key: k,
@@ -108,6 +111,9 @@ export default async function Page() {
       </section>
 
       <StationEntry items={stationIdx.all.slice(0, 8)} stationTotal={stationIdx.all.length} storeTotal={stationIdx.totalStores} />
+
+      {/* 動画があるときだけ出す */}
+      <VideoEntry items={videos.slice(0, 6)} total={videos.length} />
 
       <FeatureStrip items={data.features} />
 

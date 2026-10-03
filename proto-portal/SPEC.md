@@ -87,3 +87,10 @@
 2. 総合トップ・/gourmet 移設・新業種トップ・共通ヘッダー（sonnet: 動きのある画面は haiku で品質が出なかった実績）
 3. ページの型（地域・種類×地域・店・特集・シーン・業種横断の街）
 4. 検証（tsc・build・JSON-LD 検査・noindex/canonical/リンク切れ・既存グルメの出力が不変であること）→ プレビュー
+
+## ショート動画（2026-10-04 試作）
+動画は今後どんどん増える前提。(a) TikTok に投稿した動画のリンク、(b) サイトに置いた動画ファイル（`public/videos/nazatu/*.mp4`、`lib/regions.ts` の SHORT_VIDEOS）の2種類。
+- **データ** `lib/videos/`: 型 `Video`（types.ts）、動画ファイルのアダプタ（file.ts。SHORT_VIDEOS 自体は変えない。likes/comments/saves と "0:30" の長さは引き継がない。長さは ffprobe の実測値）、TikTok の取り込み済み置き場 `tiktok.json`（今は空）、取得関数（index.ts: getAllVideos / getVideo / getVideosByStore / getVideosByStation / getVideosByPref）、店情報（stores.ts: 名前・所在県・最寄りの駅ページ）。**再生数・いいね等の数字は使わない・表示しない。**
+- **取り込み** `automation/videos/`: input.csv（url, storeId, memo）→ `node automation/videos/ingest.mjs`（dry-run）→ `--apply`。TikTok の oEmbed でタイトル・投稿者・サムネイル、動画 ID から uploadDate（ID >> 32 が Unix 秒。2016〜現在の範囲外なら入れない）、サムネイルは `public/videos/thumbs/` に保存。storeId が店データに無ければエラー。`--fixture` は見本の oEmbed 応答での動作確認（--apply 不可）。手順は README.md。
+- **画面**: `/videos`（動画で探す。スマホは縦スワイプの scroll-snap、PC はグリッド。`?v=業種&pref=県` で絞り込み。サーバーで描画）、`/videos/{id}`（視聴ページ）、`/videos/sitemap.xml`。ファサード（サムネイル＋再生ボタン）→ タップで TikTok は `https://www.tiktok.com/player/v1/{id}` の iframe、動画ファイルは `<video controls playsInline preload="none">`。入口: 総合トップ（動画がある時だけ）・駅ページ「この駅の周辺の動画」・`/area/{pref}` の県の動画（どちらも 0 本なら出さない）。グルメの既存ページには何も足さない。
+- **SEO**: index 判定は「VideoObject を出せる＝uploadDate がある視聴ページだけ index、他は noindex」（`isVideoIndexable`）。VideoObject（name, description, thumbnailUrl, uploadDate, embedUrl または contentUrl, 長さが分かれば duration）は uploadDate がある動画だけ。全視聴ページに BreadcrumbList。一覧 `/videos` は index 対象の動画が 3 本以上あるときだけ index（絞り込み表示は常に noindex・canonical は /videos）。sitemap は index 対象の視聴ページだけ（sitemap の `videos` 項目付き。今は空）。今は uploadDate が分かる動画が無いので、全ページ noindex・sitemap は空。robots.txt への追記は公開時。

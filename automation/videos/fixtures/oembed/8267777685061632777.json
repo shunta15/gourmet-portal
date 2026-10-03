@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "type": "video",
+  "title": "IDの時刻が未来すぎる見本（実在しない動画）",
+  "author_url": "https://www.tiktok.com/@fixture_sample_d",
+  "author_name": "フィクスチャ D",
+  "width": "100%",
+  "height": "100%",
+  "html": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@fixture_sample_d/video/8267777685061632777\" data-video-id=\"8267777685061632777\" style=\"max-width: 605px;min-width: 325px;\" > <section> <a target=\"_blank\" title=\"@fixture_sample_d\" href=\"https://www.tiktok.com/@fixture_sample_d?refer=embed\">@fixture_sample_d</a> <p>IDの時刻が未来すぎる見本（実在しない動画）</p> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
+  "thumbnail_width": 720,
+  "thumbnail_height": 1280,
+  "thumbnail_url": "https://example.invalid/fixture-thumbnails/8267777685061632777.jpeg",
+  "provider_url": "https://www.tiktok.com",
+  "provider_name": "TikTok"
+}

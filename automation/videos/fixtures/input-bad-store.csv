@@ -1,0 +1,3 @@
+url,storeId,memo
+https://www.tiktok.com/@fixture_sample_a/video/7685591432238451989,r01,これは通る
+https://www.tiktok.com/@fixture_sample_a/video/7685591432238451989,zzz999,存在しない店ID（エラーで止まる）

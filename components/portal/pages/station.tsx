@@ -33,6 +33,8 @@ import {
   type StationStore,
   type StationSummary,
 } from "@/lib/stations/query";
+import { getVideosByStation } from "@/lib/videos";
+import VideoTiles from "../video/VideoTiles";
 import { notFoundMetadata } from "./data";
 import { Block, PageFrame, accentStyle } from "./frame";
 import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
@@ -143,6 +145,8 @@ export default async function Page({ params }: Props) {
   const lines = uniqueLines(st);
   const near = nearStations(idx, st, 8);
   const prefStations = idx.byPref.get(pref)?.length ?? 0;
+  // この駅エリアの店が映っている動画。0 本なら出さない
+  const videos = getVideosByStation(st.id);
 
   // 業種ごとのブロック。店が無い業種は出さない
   const groups = Object.values(VERTICALS)
@@ -229,6 +233,17 @@ export default async function Page({ params }: Props) {
           </div>
         </Block>
       ))}
+
+      {videos.length > 0 && (
+        <Block id="mp-st-video-h" kicker="Video" title="この駅の周辺の動画">
+          <VideoTiles videos={videos} />
+          <p className="mp-note-links">
+            <Link href="/videos" prefetch={false} data-cursor="VIDEO">
+              動画で探す
+            </Link>
+          </p>
+        </Block>
+      )}
 
       {near.length > 0 && (
         <Block id="mp-st-near-h" kicker="Nearby" title="近くの駅エリア">

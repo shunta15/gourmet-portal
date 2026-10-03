@@ -47,6 +47,8 @@ export function PageFrame({
   heading,
   lead,
   count,
+  unit = "件",
+  className,
   extra,
   children,
 }: {
@@ -55,13 +57,18 @@ export function PageFrame({
   kicker: string;
   heading: string;
   lead: string;
-  count: number;
+  /** 掲載数。渡さないとき（視聴ページなど）は「掲載中」と件数の行を出さない */
+  count?: number;
+  /** 件数の単位（既定は「件」） */
+  unit?: string;
+  /** ページ固有の見た目の調整用のクラス（既定は何も足さない） */
+  className?: string;
   /** 見出しの下に足す内容（駅ページの路線など。無ければ何も出さない） */
   extra?: ReactNode;
   children: ReactNode;
 }) {
   return (
-    <div className="mp-pg" style={{ ["--ac" as string]: tone.color, ["--acl" as string]: tone.lightColor }}>
+    <div className={className ? `mp-pg ${className}` : "mp-pg"} style={{ ["--ac" as string]: tone.color, ["--acl" as string]: tone.lightColor }}>
       <PortalFonts />
       <header className="mp-pg-head">
         <span className="g" aria-hidden="true">{tone.glyph}</span>
@@ -70,10 +77,12 @@ export function PageFrame({
           <p className="mp-kicker">{kicker}</p>
           <h1 className="mp-pg-title">{heading}</h1>
           <p className="mp-pg-lead">{lead}</p>
-          <div className="mp-pg-state">
-            <p className="mp-state"><i aria-hidden="true" />{count > 0 ? "掲載中" : "掲載準備中"}</p>
-            <p className="mp-pg-count"><b>{count}</b>件</p>
-          </div>
+          {count !== undefined && (
+            <div className="mp-pg-state">
+              <p className="mp-state"><i aria-hidden="true" />{count > 0 ? "掲載中" : "掲載準備中"}</p>
+              <p className="mp-pg-count"><b>{count}</b>{unit}</p>
+            </div>
+          )}
           {extra}
         </div>
       </header>

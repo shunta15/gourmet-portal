@@ -1,0 +1,6 @@
+url,storeId,memo
+https://www.tiktok.com/@fixture_sample_a/video/7685591432238451989?_t=8abc&_r=1,r01,正規URL（追跡パラメータ付き）
+https://vm.tiktok.com/ZSfixture01/,r01|r02,短縮URL（リダイレクトを追う）。店2つ
+https://www.tiktok.com/@fixture_sample_a/video/7685591432238451989,r01,同じ動画の重複行（スキップされる）
+https://www.tiktok.com/@fixture_sample_c/video/4294967296000555555,r02,IDの時刻が範囲外（過去）
+https://www.tiktok.com/@fixture_sample_d/video/8267777685061632777,r02,IDの時刻が範囲外（未来）

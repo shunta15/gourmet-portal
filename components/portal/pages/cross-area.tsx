@@ -13,6 +13,8 @@ import { VERTICALS, NEW_VERTICAL_KEYS } from "@/lib/verticals";
 import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { getStationIndex } from "@/lib/stations/query";
+import { getVideosByPref } from "@/lib/videos";
+import VideoTiles from "../video/VideoTiles";
 import { notFoundMetadata, pick } from "./data";
 import { StationChips } from "./station-parts";
 import { Block, PageFrame, accentStyle, type Tone } from "./frame";
@@ -66,6 +68,8 @@ export default async function Page({ params }: Props) {
   const total = rows.reduce((a, r) => a + r.count, 0);
   // その県の駅エリア（店の多い順の上位）。店のある駅が無い県では出さない
   const stations = (await getStationIndex()).byPref.get(pref) ?? [];
+  // その県の店が映っている動画。0 本なら出さない
+  const videos = await getVideosByPref(pref);
 
   return (
     <PageFrame
@@ -123,6 +127,17 @@ export default async function Page({ params }: Props) {
             </Link>
             <Link href="/station" prefetch={false} data-cursor="STATION">
               全国の駅から探す
+            </Link>
+          </p>
+        </Block>
+      )}
+
+      {videos.length > 0 && (
+        <Block id="mp-xv-video-h" kicker="Video" title={`${area.short}の動画`}>
+          <VideoTiles videos={videos.slice(0, 8)} />
+          <p className="mp-note-links">
+            <Link href={`/videos?pref=${pref}`} prefetch={false} data-cursor="VIDEO">
+              {area.short}の動画をすべて見る（{videos.length}）
             </Link>
           </p>
         </Block>

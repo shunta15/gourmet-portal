@@ -488,3 +488,114 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-js .mp [data-reveal]{opacity:1; transform:none}
   .mp-menu li a{transform:none}
 }
+
+/* ─────────── 動画で探す（/videos 以下・総合トップ・駅ページ・県ページの入口） ─────────── */
+/* ファサード: 最初はサムネイルと再生ボタンだけ。タップで iframe / video に差し替わる */
+.mp-vd-media{position:relative; background:#0e0b09; overflow:hidden}
+.mp-vd-media.v{aspect-ratio:9/16}
+.mp-vd-media.h{aspect-ratio:16/9}
+.mp-vd-media > iframe, .mp-vd-media > video{position:absolute; inset:0; width:100%; height:100%; border:0; background:#0e0b09; object-fit:contain}
+.mp-vd-play{position:absolute; inset:0; display:block; width:100%; height:100%; padding:0; border:0; background:#0e0b09; color:#fff; cursor:pointer}
+.mp-vd-play img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease)}
+.mp-vd-play:hover img{transform:scale(1.03)}
+.mp-vd-play::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(14,11,9,0) 58%,rgba(14,11,9,.4) 100%); pointer-events:none}
+.mp-vd-play .ic{position:absolute; left:50%; top:50%; z-index:1; width:62px; height:62px; margin:-31px 0 0 -31px; display:grid; place-items:center; border-radius:50%; background:rgba(250,247,241,.92); color:#15110e; box-shadow:0 6px 24px rgba(14,11,9,.3); transition:transform .5s var(--ease)}
+.mp-vd-play:hover .ic{transform:scale(1.1)}
+.mp-vd-play .ic svg{margin-left:3px}
+.mp-vd-play .du{position:absolute; right:10px; bottom:10px; z-index:1; padding:5px 8px; border-radius:4px; background:rgba(14,11,9,.68); color:#fff; font:500 11px/1 var(--mono); letter-spacing:.06em}
+.mp-vd-play:focus-visible{outline:3px solid #fff; outline-offset:-6px}
+
+/* 一覧（PC はグリッド） */
+.mp-vd-feed{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr)); gap:26px 18px}
+.mp-vd-feed > li{min-width:0}
+.mp-vd-item{display:flex; flex-direction:column; height:100%; background:var(--paper); border:1px solid var(--rule); border-top:3px solid var(--ac,var(--ink)); overflow:hidden}
+.mp-vd-meta{display:flex; flex-direction:column; gap:8px; padding:14px 16px 18px; min-width:0}
+.mp-vd-tag{display:flex; align-items:center; gap:8px; font:500 10.5px/1 var(--mono); letter-spacing:.16em; color:var(--ink-3)}
+.mp-vd-tag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--ac,var(--ink-3)); flex:none}
+.mp-vd-title{font:500 15px/1.6 var(--serif); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; overflow-wrap:anywhere}
+.mp-vd-title a:hover{text-decoration:underline; text-underline-offset:3px}
+.mp-vd-store{display:flex; flex-wrap:wrap; align-items:baseline; gap:3px 10px; font:400 12.5px/1.7 var(--sans); color:var(--ink-2)}
+.mp-vd-store .nm{font-weight:500; color:var(--ink); border-bottom:1px solid var(--rule); transition:border-color .3s}
+.mp-vd-store .nm:hover{border-color:var(--ink)}
+.mp-vd-store .sub{font-size:12px; color:var(--ink-3)}
+.mp-vd-store .st{flex-basis:100%; font-size:12px; font-weight:500; color:var(--ink); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:3px}
+.mp-vd-store .st:hover{text-decoration-color:var(--ink)}
+
+/* 絞り込み */
+.mp-vd-filters{display:flex; flex-direction:column; gap:12px; margin-top:clamp(22px,3vw,34px); max-width:62em}
+.mp-vd-filters .row{display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px}
+.mp-vd-filters h2{min-width:6em; font:500 10px/1 var(--mono); letter-spacing:.22em; color:var(--ink-3)}
+.mp-vd-filters ul{display:flex; flex-wrap:wrap; gap:8px}
+.mp-vd-filters a{display:inline-flex; align-items:center; gap:8px; padding:11px 16px; border:1px solid rgba(21,17,14,.28); border-radius:99px; background:rgba(250,247,241,.6); font:500 13px/1 var(--sans); transition:background .3s, border-color .3s, color .3s}
+.mp-vd-filters a:hover{background:var(--acl); border-color:var(--ink)}
+.mp-vd-filters a small{font:500 10.5px/1 var(--mono); color:var(--ink-3)}
+.mp-vd-filters a[aria-current="true"]{background:var(--ink); border-color:var(--ink); color:var(--ivory)}
+.mp-vd-filters a[aria-current="true"] small{color:inherit; opacity:.7}
+
+/* サムネイル一覧（駅ページ・県ページ・総合トップ・視聴ページの関連動画） */
+.mp-vd-tiles{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,170px),1fr)); gap:22px 14px}
+.mp-vd-tiles > li{min-width:0}
+.mp-vd-tile{display:flex; flex-direction:column; gap:10px}
+.mp-vd-tile .img{position:relative; display:block; aspect-ratio:9/16; background:#0e0b09; overflow:hidden}
+.mp-vd-tile .img img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease)}
+.mp-vd-tile:hover .img img{transform:scale(1.04)}
+.mp-vd-tile .ic{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; display:grid; place-items:center; border-radius:50%; background:rgba(250,247,241,.92); color:#15110e; box-shadow:0 4px 16px rgba(14,11,9,.28); transition:transform .5s var(--ease)}
+.mp-vd-tile:hover .ic{transform:scale(1.1)}
+.mp-vd-tile .ic svg{margin-left:2px}
+.mp-vd-tile .du{position:absolute; right:8px; bottom:8px; padding:4px 7px; border-radius:4px; background:rgba(14,11,9,.68); color:#fff; font:500 10.5px/1 var(--mono); letter-spacing:.06em}
+.mp-vd-tile b{font:500 13.5px/1.6 var(--serif); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; overflow-wrap:anywhere}
+.mp-vd-entry .mp-vd-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}
+
+/* 視聴ページ */
+.mp-vd-watchpage .mp-pg-title{font-size:clamp(22px,3vw,40px); line-height:1.5; overflow-wrap:anywhere}
+.mp-vd-watch{display:grid; grid-template-columns:minmax(0,400px) minmax(0,1fr); gap:clamp(24px,4vw,64px); align-items:start}
+.mp-vd-player{min-width:0}
+.mp-vd-player .mp-vd-media.v{width:min(100%,calc((100svh - 140px) * .5625)); min-width:min(100%,260px)}
+.mp-vd-info{min-width:0}
+.mp-vd-shop h2{margin-top:14px; font:500 clamp(22px,2.2vw,32px)/1.45 var(--serif); overflow-wrap:anywhere}
+.mp-vd-shop h2 a{border-bottom:1px solid var(--rule); transition:border-color .3s}
+.mp-vd-shop h2 a:hover{border-color:var(--ink)}
+.mp-vd-shop .sub{margin-top:10px; font:400 13.5px/1.8 var(--sans); color:var(--ink-2)}
+.mp-vd-shop + .mp-vd-shop{margin-top:30px; padding-top:30px; border-top:1px solid var(--rule)}
+.mp-vd-nostore{font:400 14px/1.9 var(--sans); color:var(--ink-2)}
+.mp-vd-facts{display:flex; flex-wrap:wrap; gap:16px 40px; margin-top:32px; padding-top:24px; border-top:1px solid var(--rule)}
+.mp-vd-facts:first-child{margin-top:0; padding-top:0; border-top:0}
+.mp-vd-facts dt{font:500 10px/1 var(--mono); letter-spacing:.22em; color:var(--ink-3)}
+.mp-vd-facts dd{margin-top:10px; font:500 14px/1.7 var(--sans)}
+.mp-vd-facts a{border-bottom:1px solid var(--rule); transition:border-color .3s}
+.mp-vd-facts a:hover{border-color:var(--ink)}
+
+@media (max-width: 960px){
+  /* 総合トップの入口はスマホ・タブレットでは横に流す（隠れた画像を作らない） */
+  .mp-vd-entry .mp-vd-tiles{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scroll-padding-inline:var(--gut); gap:14px; margin-inline:calc(var(--gut) * -1); padding:0 var(--gut) 8px; scrollbar-width:none}
+  .mp-vd-entry .mp-vd-tiles::-webkit-scrollbar{display:none}
+  .mp-vd-entry .mp-vd-tiles > li{flex:0 0 min(38vw,200px); scroll-snap-align:start}
+  .mp-vd-watch{grid-template-columns:1fr}
+}
+@media (max-width: 760px){
+  /* スマホ: 縦スワイプで1本ずつ画面いっぱい（scroll-snap） */
+  .mp-vd-page:not(.mp-vd-watchpage) .mp-pg-head{padding-top:92px; padding-bottom:22px}
+  .mp-vd-page:not(.mp-vd-watchpage) .mp-pg-head .mp-kicker{margin-top:14px}
+  .mp-vd-page:not(.mp-vd-watchpage) .mp-pg-state{margin-top:16px}
+  .mp-vd-sec{padding-block:0}
+  .mp-vd-sec > .mp-wrap{padding-inline:0}
+  .mp-vd-feed{display:block; height:calc(100svh - 64px); overflow-y:auto; scroll-snap-type:y mandatory; background:#0e0b09; scrollbar-width:none}
+  .mp-vd-feed::-webkit-scrollbar{display:none}
+  .mp-vd-feed > li{height:100%; scroll-snap-align:start; scroll-snap-stop:always}
+  .mp-vd-item{border:0; background:#0e0b09; color:#f4efe6}
+  .mp-vd-item .mp-vd-media{flex:1 1 0; min-height:0; aspect-ratio:auto}
+  .mp-vd-item .mp-vd-meta{flex:none; gap:6px; padding:12px var(--gut) 18px}
+  .mp-vd-item .mp-vd-tag{color:rgba(244,239,230,.7)}
+  .mp-vd-item .mp-vd-title{font-size:15px; color:#f4efe6; -webkit-line-clamp:2}
+  .mp-vd-item .mp-vd-store{color:rgba(244,239,230,.82)}
+  .mp-vd-item .mp-vd-store .nm{color:#f4efe6; border-color:rgba(244,239,230,.4)}
+  .mp-vd-item .mp-vd-store .sub{color:rgba(244,239,230,.62)}
+  .mp-vd-item .mp-vd-store .st{color:#f4efe6; text-decoration-color:rgba(244,239,230,.4)}
+  .mp-vd-filters .row{gap:8px}
+  .mp-vd-filters h2{flex-basis:100%}
+}
+@media (max-width: 560px){
+  .mp-vd-tiles{grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 10px}
+  .mp-vd-entry .mp-vd-tiles{gap:12px}
+  .mp-vd-entry .mp-vd-tiles > li{flex-basis:44vw}
+}
