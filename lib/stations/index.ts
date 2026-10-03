@@ -4,8 +4,8 @@
  * 出典：国土数値情報（鉄道データ）N02-25（2025年度版）国土交通省／国土地理院
  */
 
-import stationsJson from "./stations.json";
-import storeStationsJson from "./storeStations.json";
+import stations from "./stations.json";
+import storeStations from "./storeStations.json";
 
 export type StationCluster = {
   id: string;
@@ -25,11 +25,6 @@ export type StoreStations = {
   stated?: { clusterId: string; walkMin?: number }[];
   nearby?: { clusterId: string; meters: number }[];
 };
-
-// JSON から型を推論させると、値が無いキー（walkMin など）が型から消えるので明示する
-const stations = stationsJson as unknown as Record<string, StationCluster>;
-const storeStations = storeStationsJson as unknown as Record<string, StoreStations>;
-
 
 export function getStationBySlug(pref: string, name: string): StationCluster | undefined {
   const slug = pref + "/" + name;

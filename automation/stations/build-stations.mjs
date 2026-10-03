@@ -140,6 +140,11 @@ function normalizeStationToken(token) {
     .trim();
 }
 
+// 店の案内に旧駅名で書かれていることがある改称駅（旧名 → 現名）。店から3km以内の駅にだけ当てる
+const STATION_RENAMES = {
+  河原町: "京都河原町", // 阪急 2019年改称
+};
+
 function matchStationsByTokens(stationText, stationsByGroup, storeCoords, storeRegion) {
   const tokens = tokenizeStationName(stationText);
   const candidates = [];
@@ -157,17 +162,29 @@ function matchStationsByTokens(stationText, stationsByGroup, storeCoords, storeR
     const normalized = normalizeStationToken(token);
     if (!normalized) return;
 
+    // 1) 駅名と完全一致（改称前の名前は STATION_RENAMES で今の名前に読み替える）
+    // 2) 無ければ「トークンの末尾が駅名」（例「Osaka Metro野田阪神」→「野田阪神」）で最長のもの。
+    //    逆向き（駅名の末尾がトークン）は禁止: 「白楽」→「東白楽」、「本町」→「大阪上本町」の取り違えが出た（2026-10-03）。
+    const wanted = STATION_RENAMES[normalized] || normalized;
     let bestMatch = null;
     let bestLen = 0;
 
     candidateGroups.forEach(([groupCode, group]) => {
       const groupName = group.name;
-
-      if (groupName.endsWith(normalized) && groupName.length > bestLen) {
-        bestMatch = { groupCode, groupName };
+      if (groupName === wanted && !(bestMatch && bestMatch.exact)) {
+        bestMatch = { groupCode, groupName, exact: true };
         bestLen = groupName.length;
       }
     });
+    if (!bestMatch) {
+      candidateGroups.forEach(([groupCode, group]) => {
+        const groupName = group.name;
+        if (normalized.endsWith(groupName) && groupName.length > bestLen) {
+          bestMatch = { groupCode, groupName };
+          bestLen = groupName.length;
+        }
+      });
+    }
 
     if (bestMatch) {
       if (!candidates.some(c => c.groupCode === bestMatch.groupCode)) {
@@ -297,8 +314,9 @@ async function main() {
 
     if (stationText.trim()) {
       const matches = matchStationsByTokens(stationText, stationsByGroup, storeCoords, storeRegion);
-      const walkMin = extractWalkingMinutes(stationText);
 
+      // 「徒歩N分」は駅が1つだけ書かれている時だけ、その駅の分数とする（複数駅の文で最初の分数を全駅に当てていた）
+      const walkMin = matches.length === 1 ? extractWalkingMinutes(stationText) : null;
       if (matches.length > 0) {
         matches.forEach(match => {
           stated.push({ groupCode: match.groupCode, walkMin });
