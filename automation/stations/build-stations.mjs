@@ -349,23 +349,8 @@ async function main() {
   stationsInUse.forEach(groupCode => {
     const group = stationsByGroup[groupCode];
 
-    // 駅の lat/lng から都道府県を推定
-    // 簡単な地域別判定（本当は GSI で取得すべき）
-    if (group.lat >= 42.5 && group.lat <= 45.6 && group.lng >= 139.5 && group.lng <= 148.5) {
-      group.pref = "hokkaido";
-    } else if (group.lat >= 39.5 && group.lat <= 42.0) {
-      if (group.lng >= 138.0 && group.lng <= 145.0) {
-        group.pref = "aomori"; // 簡略化
-      }
-    } else if (group.lat >= 34.0 && group.lat <= 36.0) {
-      if (group.lng >= 134.0 && group.lng <= 140.0) {
-        group.pref = "osaka"; // 簡略化
-      }
-    } else if (group.lat >= 34.5 && group.lat <= 35.5) {
-      if (group.lng >= 139.0 && group.lng <= 140.0) {
-        group.pref = "tokyo";
-      }
-    }
+    // 都道府県は assign-pref.mjs が国土地理院の逆ジオコーダで付ける（座標の範囲から推測しない）
+    group.pref = null;
 
     if (!group.pref) {
       noPrefCount++;

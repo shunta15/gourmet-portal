@@ -81,7 +81,7 @@
     ],
     "nearby": [
       {
-        "clusterId": "c0094",
+        "clusterId": "c0093",
         "meters": 165
       },
       {
@@ -225,10 +225,6 @@
       {
         "clusterId": "c0360",
         "meters": 924
-      },
-      {
-        "clusterId": "c0360",
-        "meters": 982
       }
     ]
   },
@@ -341,10 +337,6 @@
         "meters": 358
       },
       {
-        "clusterId": "c0364",
-        "meters": 511
-      },
-      {
         "clusterId": "c0361",
         "meters": 666
       }
@@ -361,10 +353,6 @@
       {
         "clusterId": "c0376",
         "meters": 373
-      },
-      {
-        "clusterId": "c0376",
-        "meters": 649
       }
     ]
   },
@@ -417,14 +405,6 @@
       {
         "clusterId": "c0411",
         "meters": 153
-      },
-      {
-        "clusterId": "c0411",
-        "meters": 204
-      },
-      {
-        "clusterId": "c0411",
-        "meters": 343
       }
     ]
   },
@@ -478,10 +458,6 @@
         "meters": 415
       },
       {
-        "clusterId": "c0360",
-        "meters": 570
-      },
-      {
         "clusterId": "c0349",
         "meters": 993
       }
@@ -515,10 +491,6 @@
       {
         "clusterId": "c0376",
         "meters": 418
-      },
-      {
-        "clusterId": "c0376",
-        "meters": 535
       }
     ]
   },
@@ -581,10 +553,6 @@
       {
         "clusterId": "c0407",
         "meters": 515
-      },
-      {
-        "clusterId": "c0407",
-        "meters": 540
       }
     ]
   },
@@ -732,7 +700,7 @@
     ],
     "nearby": [
       {
-        "clusterId": "c0420",
+        "clusterId": "c0411",
         "meters": 592
       }
     ]
@@ -748,10 +716,6 @@
       {
         "clusterId": "c0364",
         "meters": 631
-      },
-      {
-        "clusterId": "c0364",
-        "meters": 783
       },
       {
         "clusterId": "c0361",
@@ -922,10 +886,6 @@
         "meters": 738
       },
       {
-        "clusterId": "c0360",
-        "meters": 800
-      },
-      {
         "clusterId": "c0378",
         "meters": 876
       }
@@ -982,10 +942,6 @@
       {
         "clusterId": "c0407",
         "meters": 465
-      },
-      {
-        "clusterId": "c0407",
-        "meters": 468
       }
     ]
   },
@@ -1040,10 +996,6 @@
       {
         "clusterId": "c0173",
         "meters": 410
-      },
-      {
-        "clusterId": "c0173",
-        "meters": 636
       }
     ]
   },
@@ -1114,14 +1066,6 @@
       {
         "clusterId": "c0175",
         "meters": 435
-      },
-      {
-        "clusterId": "c0175",
-        "meters": 473
-      },
-      {
-        "clusterId": "c0175",
-        "meters": 607
       }
     ]
   },
@@ -1274,10 +1218,6 @@
         "meters": 127
       },
       {
-        "clusterId": "c0444",
-        "meters": 138
-      },
-      {
         "clusterId": "c0443",
         "meters": 765
       }
@@ -1391,14 +1331,6 @@
       {
         "clusterId": "c0382",
         "meters": 304
-      },
-      {
-        "clusterId": "c0382",
-        "meters": 343
-      },
-      {
-        "clusterId": "c0382",
-        "meters": 364
       }
     ]
   },
@@ -1556,14 +1488,6 @@
       {
         "clusterId": "c0374",
         "meters": 153
-      },
-      {
-        "clusterId": "c0374",
-        "meters": 202
-      },
-      {
-        "clusterId": "c0374",
-        "meters": 329
       }
     ]
   },
@@ -1584,10 +1508,6 @@
         "meters": 676
       },
       {
-        "clusterId": "c0333",
-        "meters": 825
-      },
-      {
         "clusterId": "c0348",
         "meters": 937
       }
@@ -1603,10 +1523,6 @@
       {
         "clusterId": "c0358",
         "meters": 306
-      },
-      {
-        "clusterId": "c0358",
-        "meters": 445
       }
     ]
   },
@@ -1659,10 +1575,6 @@
       {
         "clusterId": "c0374",
         "meters": 230
-      },
-      {
-        "clusterId": "c0374",
-        "meters": 298
       },
       {
         "clusterId": "c0382",
@@ -1756,14 +1668,6 @@
       {
         "clusterId": "c0102",
         "meters": 412
-      },
-      {
-        "clusterId": "c0102",
-        "meters": 508
-      },
-      {
-        "clusterId": "c0102",
-        "meters": 599
       }
     ]
   },
@@ -1790,14 +1694,6 @@
       {
         "clusterId": "c0102",
         "meters": 180
-      },
-      {
-        "clusterId": "c0102",
-        "meters": 318
-      },
-      {
-        "clusterId": "c0102",
-        "meters": 376
       }
     ]
   },
@@ -1807,10 +1703,6 @@
       {
         "clusterId": "c0238",
         "meters": 244
-      },
-      {
-        "clusterId": "c0238",
-        "meters": 526
       },
       {
         "clusterId": "c0239",
@@ -1944,10 +1836,6 @@
         "meters": 513
       },
       {
-        "clusterId": "c0239",
-        "meters": 566
-      },
-      {
         "clusterId": "c0227",
         "meters": 783
       }
@@ -1966,14 +1854,6 @@
       {
         "clusterId": "c0228",
         "meters": 706
-      },
-      {
-        "clusterId": "c0228",
-        "meters": 734
-      },
-      {
-        "clusterId": "c0228",
-        "meters": 969
       }
     ]
   },
@@ -2098,10 +1978,6 @@
         "meters": 526
       },
       {
-        "clusterId": "c0235",
-        "meters": 547
-      },
-      {
         "clusterId": "c0234",
         "meters": 641
       }
@@ -2158,10 +2034,6 @@
         "meters": 586
       },
       {
-        "clusterId": "c0223",
-        "meters": 753
-      },
-      {
         "clusterId": "c0225",
         "meters": 767
       }
@@ -2177,10 +2049,6 @@
       {
         "clusterId": "c0238",
         "meters": 587
-      },
-      {
-        "clusterId": "c0238",
-        "meters": 869
       }
     ]
   },
@@ -2205,9 +2073,6 @@
     "stated": [
       {
         "clusterId": "c0238"
-      },
-      {
-        "clusterId": "c0238"
       }
     ],
     "nearby": []
@@ -2222,10 +2087,6 @@
       {
         "clusterId": "c0235",
         "meters": 606
-      },
-      {
-        "clusterId": "c0235",
-        "meters": 626
       }
     ]
   },
@@ -2333,10 +2194,6 @@
       {
         "clusterId": "c0240",
         "meters": 632
-      },
-      {
-        "clusterId": "c0240",
-        "meters": 744
       }
     ]
   },
@@ -2356,10 +2213,6 @@
         "meters": 202
       },
       {
-        "clusterId": "c0382",
-        "meters": 240
-      },
-      {
         "clusterId": "c0386",
         "meters": 495
       }
@@ -2375,10 +2228,6 @@
       {
         "clusterId": "c0216",
         "meters": 745
-      },
-      {
-        "clusterId": "c0216",
-        "meters": 913
       }
     ]
   },
@@ -2388,10 +2237,6 @@
       {
         "clusterId": "c0367",
         "meters": 86
-      },
-      {
-        "clusterId": "c0369",
-        "meters": 369
       },
       {
         "clusterId": "c0365",
@@ -2477,14 +2322,6 @@
       {
         "clusterId": "c0493",
         "meters": 111
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 160
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 309
       }
     ]
   },
@@ -2506,10 +2343,6 @@
       {
         "clusterId": "c0494",
         "meters": 537
-      },
-      {
-        "clusterId": "c0494",
-        "meters": 773
       }
     ]
   },
@@ -2598,10 +2431,6 @@
         "meters": 248
       },
       {
-        "clusterId": "c0235",
-        "meters": 364
-      },
-      {
         "clusterId": "c0238",
         "meters": 641
       }
@@ -2679,20 +2508,12 @@
       {
         "clusterId": "c0271",
         "walkMin": 1
-      },
-      {
-        "clusterId": "c0271",
-        "walkMin": 1
       }
     ],
     "nearby": [
       {
         "clusterId": "c0270",
         "meters": 523
-      },
-      {
-        "clusterId": "c0270",
-        "meters": 600
       },
       {
         "clusterId": "c0272",
@@ -2740,14 +2561,6 @@
       {
         "clusterId": "c0493",
         "meters": 135
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 176
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 312
       }
     ]
   },
@@ -2757,10 +2570,6 @@
       {
         "clusterId": "c0271",
         "meters": 356
-      },
-      {
-        "clusterId": "c0271",
-        "meters": 474
       },
       {
         "clusterId": "c0274",
@@ -2774,10 +2583,6 @@
       {
         "clusterId": "c0271",
         "meters": 50
-      },
-      {
-        "clusterId": "c0271",
-        "meters": 183
       },
       {
         "clusterId": "c0270",
@@ -3101,14 +2906,6 @@
       {
         "clusterId": "c0007",
         "meters": 123
-      },
-      {
-        "clusterId": "c0007",
-        "meters": 123
-      },
-      {
-        "clusterId": "c0007",
-        "meters": 282
       }
     ]
   },
@@ -3122,10 +2919,6 @@
       {
         "clusterId": "c0239",
         "meters": 507
-      },
-      {
-        "clusterId": "c0239",
-        "meters": 549
       }
     ]
   },
@@ -3198,10 +2991,6 @@
       {
         "clusterId": "c0382",
         "meters": 169
-      },
-      {
-        "clusterId": "c0382",
-        "meters": 345
       },
       {
         "clusterId": "c0386",
@@ -3292,10 +3081,6 @@
       {
         "clusterId": "c0518",
         "meters": 261
-      },
-      {
-        "clusterId": "c0519",
-        "meters": 473
       }
     ]
   },
@@ -3465,10 +3250,6 @@
         "meters": 343
       },
       {
-        "clusterId": "c0240",
-        "meters": 459
-      },
-      {
         "clusterId": "c0243",
         "meters": 791
       }
@@ -3498,10 +3279,6 @@
       {
         "clusterId": "c0492",
         "meters": 593
-      },
-      {
-        "clusterId": "c0492",
-        "meters": 596
       }
     ]
   },
@@ -3511,10 +3288,6 @@
       {
         "clusterId": "c0239",
         "meters": 203
-      },
-      {
-        "clusterId": "c0239",
-        "meters": 314
       },
       {
         "clusterId": "c0245",
@@ -3567,14 +3340,6 @@
       {
         "clusterId": "c0493",
         "meters": 163
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 204
-      },
-      {
-        "clusterId": "c0493",
-        "meters": 250
       }
     ]
   },
@@ -3693,14 +3458,6 @@
       {
         "clusterId": "c0553",
         "meters": 202
-      },
-      {
-        "clusterId": "c0553",
-        "meters": 331
-      },
-      {
-        "clusterId": "c0553",
-        "meters": 350
       }
     ]
   },
@@ -3795,10 +3552,6 @@
       {
         "clusterId": "c0142",
         "meters": 872
-      },
-      {
-        "clusterId": "c0141",
-        "meters": 957
       }
     ]
   },
@@ -4033,14 +3786,6 @@
       {
         "clusterId": "c0536",
         "meters": 183
-      },
-      {
-        "clusterId": "c0536",
-        "meters": 206
-      },
-      {
-        "clusterId": "c0536",
-        "meters": 273
       }
     ]
   },
@@ -4171,10 +3916,6 @@
   },
   "r361": {
     "stated": [
-      {
-        "clusterId": "c0258",
-        "walkMin": 3
-      },
       {
         "clusterId": "c0258",
         "walkMin": 3
@@ -4458,10 +4199,6 @@
       {
         "clusterId": "c0025",
         "meters": 321
-      },
-      {
-        "clusterId": "c0024",
-        "meters": 498
       }
     ]
   },
@@ -5014,10 +4751,6 @@
       {
         "clusterId": "c0503",
         "meters": 640
-      },
-      {
-        "clusterId": "c0503",
-        "meters": 774
       }
     ]
   },
@@ -5152,10 +4885,6 @@
       {
         "clusterId": "c0293",
         "meters": 266
-      },
-      {
-        "clusterId": "c0293",
-        "meters": 293
       }
     ]
   },
@@ -5221,10 +4950,6 @@
       {
         "clusterId": "c0151",
         "meters": 440
-      },
-      {
-        "clusterId": "c0152",
-        "meters": 562
       }
     ]
   },
@@ -5232,12 +4957,8 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0309",
-        "meters": 244
-      },
-      {
         "clusterId": "c0308",
-        "meters": 577
+        "meters": 244
       }
     ]
   },
@@ -5319,10 +5040,6 @@
       {
         "clusterId": "c0448",
         "meters": 446
-      },
-      {
-        "clusterId": "c0448",
-        "meters": 531
       }
     ]
   },
@@ -5429,10 +5146,6 @@
       {
         "clusterId": "c0543",
         "meters": 128
-      },
-      {
-        "clusterId": "c0543",
-        "meters": 441
       }
     ]
   },
@@ -5532,10 +5245,6 @@
       {
         "clusterId": "c0153",
         "meters": 785
-      },
-      {
-        "clusterId": "c0153",
-        "meters": 863
       }
     ]
   },
