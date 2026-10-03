@@ -2,8 +2,6 @@
  * 総合トップ（/）用のデータ。サーバー専用（lib/data を読むのでクライアントから import しない）。
  * 数字・店名・写真はすべて実データから作る。
  */
-import fs from 'node:fs';
-import path from 'node:path';
 import { FEATURES, FEATURE_ARTICLES } from '@/lib/data';
 import { sized } from '@/lib/imageUrl';
 import { isBlockedImage } from '@/lib/imageBlocklist';
@@ -60,18 +58,14 @@ function isUsableImage(src: string | undefined | null): src is string {
   return true;
 }
 
-/** 総合トップに載せる写真の上限サイズ（ここは最適化なしの素のファイルを配るので、重いものは使わない） */
-const MAX_PHOTO_BYTES = 450_000;
 
-/** 自サイトに置いてある店の写真（/restaurants/...）が実在し、重すぎないものだけ */
+/**
+ * 自サイトに置いてある店の写真（/restaurants/...）だけ。
+ * 実行時に fs でファイルを調べると、Vercel の関数に public/ 全体（約800MB）が同梱されて
+ * 250MB 上限を超えるため使わない。重い PNG は避ける（優先候補は目視で軽いものを指定済み）。
+ */
 function localPhotoOk(src: string): boolean {
-  if (!src.startsWith('/restaurants/')) return false;
-  try {
-    const st = fs.statSync(path.join(process.cwd(), 'public', decodeURIComponent(src)));
-    return st.isFile() && st.size > 0 && st.size <= MAX_PHOTO_BYTES;
-  } catch {
-    return false;
-  }
+  return src.startsWith('/restaurants/') && !/\.png$/i.test(src);
 }
 
 /**
