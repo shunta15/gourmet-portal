@@ -1,11 +1,4 @@
-/**
- * サイトマップ
- * 外枠の段階では index 対象のページがないため空
- */
+import { verticalSitemap } from "@/components/portal/pages/sitemap";
 
-import type { MetadataRoute } from 'next';
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  // 外枠の段階では index 対象（3件以上）のデータがないため、サイトマップは空
-  return [];
-}
+export const revalidate = 3600;
+export default verticalSitemap("leisure");

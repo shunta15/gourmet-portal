@@ -6,13 +6,11 @@ import PortalHero, { type HeroVertical } from "@/components/portal/PortalHero";
 import Entrances from "@/components/portal/Entrances";
 import AreaBlocks from "@/components/portal/AreaBlocks";
 import FeatureStrip from "@/components/portal/FeatureStrip";
-import JsonLd from "@/components/portal/JsonLd";
 import RingMark from "@/components/portal/RingMark";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { getPortalHomeData } from "@/lib/portal/home";
-import { organization, website } from "@/lib/seo/jsonld";
 
 // 総合トップは試作。検索エンジンには載せない（公開時に外す）。
 export const metadata: Metadata = {
@@ -53,8 +51,6 @@ export default async function Page() {
   return (
     <>
       <PortalFonts />
-      <JsonLd data={organization()} />
-      <JsonLd data={website()} />
 
       <PortalHero verticals={heroVerticals} total={data.gourmetTotal} features={data.featureTotal} />
 

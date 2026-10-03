@@ -1,13 +1,9 @@
-/**
- * 利用シーンページ
- * 外枠の段階ではデータ0なので全て notFound()
- */
+import { scenePage } from "@/components/portal/pages/scene";
 
-import { notFound } from "next/navigation";
+const page = scenePage("stay");
 
+export const revalidate = 3600;
 export const dynamicParams = true;
-
-export default async function Page() {
-  // 外枠の段階ではデータなしなので全て 404
-  notFound();
-}
+export const generateStaticParams = page.generateStaticParams;
+export const generateMetadata = page.generateMetadata;
+export default page.Page;

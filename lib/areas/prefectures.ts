@@ -101,7 +101,8 @@ export function getPrefByName(name: string): Prefecture | null {
  * グルメ既存地域キーと都道府県の対応
  * 既存グルメの region キーが都道府県と一致しないケースを記録
  * 例: aichi（愛知県） → 'nagoya'（名古屋地域）
- * 対象外の県（region が作成されていない県）は記載しない
+ * 表に載っていても REGIONS（lib/regions.ts）に実在しない key は「まだ地域ページが無い県」。
+ * リンクを張るときは必ず lib/areas/gourmet.ts の gourmetRegionKey() を通す（/region/{key} が 404 にならないように）。
  */
 export const GOURMET_REGION_BY_PREF: Record<string, string> = {
   // グルメの基本16地域に対応する都道府県
@@ -152,4 +153,5 @@ export const GOURMET_REGION_BY_PREF: Record<string, string> = {
   kumamoto: 'kumamoto',
   oita: 'oita',
   miyazaki: 'miyazaki',
+  okinawa: 'okinawa',
 };

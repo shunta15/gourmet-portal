@@ -5,12 +5,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { FEATURES, FEATURE_ARTICLES } from '@/lib/data';
-import { REGIONS } from '@/lib/regions';
 import { sized } from '@/lib/imageUrl';
 import { isBlockedImage } from '@/lib/imageBlocklist';
 import { getPlaces } from '@/lib/places';
+import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from '@/lib/db/features';
 import type { Place } from '@/lib/places/types';
-import { PREFECTURES, GOURMET_REGION_BY_PREF, type PrefBlockName } from '@/lib/areas/prefectures';
+import { PREFECTURES, type PrefBlockName } from '@/lib/areas/prefectures';
+import { gourmetRegionKey } from '@/lib/areas/gourmet';
 
 export interface PrefItem {
   slug: string;
@@ -157,9 +158,9 @@ export async function getPortalHomeData(): Promise<PortalHomeData> {
   for (const p of places) byRegion.set(p.pref, (byRegion.get(p.pref) ?? 0) + 1);
 
   const prefs: PrefItem[] = PREFECTURES.map((p) => {
-    const key = GOURMET_REGION_BY_PREF[p.slug];
+    const key = gourmetRegionKey(p.slug);
     const count = key ? byRegion.get(key) ?? 0 : 0;
-    const hasGourmet = !!key && count > 0 && key in REGIONS;
+    const hasGourmet = !!key && count > 0;
     return {
       slug: p.slug,
       short: p.short,
@@ -174,7 +175,8 @@ export async function getPortalHomeData(): Promise<PortalHomeData> {
   return {
     gourmetTotal: places.length,
     gourmetPrefCount: prefs.filter((p) => p.hasGourmet).length,
-    featureTotal: FEATURES.length,
+    // 公開中（index 対象）の特集記事数。/sitemap.xml と同じ基準
+    featureTotal: (await getAllFeatureArticleIdsWithUpdatedAt()).filter((f) => isFeatureIndexable(f.id)).length,
     prefs,
     photos: pickPhotos(places, 3),
     features: latestFeatures(4),
