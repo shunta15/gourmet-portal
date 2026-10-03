@@ -14,7 +14,9 @@ import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { getStationIndex } from "@/lib/stations/query";
 import { getVideosByPref } from "@/lib/videos";
+import { loadMapData, subsetOfPref } from "@/lib/portal/mapData";
 import VideoTiles from "../video/VideoTiles";
+import PortalMap from "../PortalMap";
 import { notFoundMetadata, pick } from "./data";
 import { StationChips } from "./station-parts";
 import { Block, PageFrame, accentStyle, type Tone } from "./frame";
@@ -70,6 +72,9 @@ export default async function Page({ params }: Props) {
   const stations = (await getStationIndex()).byPref.get(pref) ?? [];
   // その県の店が映っている動画。0 本なら出さない
   const videos = await getVideosByPref(pref);
+  // 県の小さな地図（店のピン）。座標のある店が無い県では出さない
+  const mini = subsetOfPref(await loadMapData(), pref);
+  const colors = Object.fromEntries(ORDER.map((v) => [v.key, v.accent.color]));
 
   return (
     <PageFrame
@@ -117,6 +122,28 @@ export default async function Page({ params }: Props) {
           })}
         </ul>
       </Block>
+
+      {mini.points.length > 0 && (
+        <Block id="mp-xv-map-h" kicker="Map" title={`${area.short}の店を地図で見る`}>
+          <PortalMap
+            fit
+            lazy
+            points={mini.points}
+            colors={colors}
+            weeks={mini.weeks}
+            height="clamp(280px, 42vh, 420px)"
+            label={`${area.short}の店の地図`}
+          />
+          <p className="mp-note-links">
+            <Link href={`/map?pref=${pref}`} prefetch={false} data-cursor="MAP">
+              {area.short}を地図で見る（大きな地図で開く） <span aria-hidden="true">→</span>
+            </Link>
+          </p>
+          <p className="mp-map-note">
+            ピンは店の住所や地図の座標から求めた位置で、目安です。地図には座標のある{mini.points.length}店を出しています。
+          </p>
+        </Block>
+      )}
 
       {stations.length > 0 && (
         <Block id="mp-xv-st-h" kicker="Stations" title={`${area.short}の駅から探す`}>

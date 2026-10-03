@@ -34,7 +34,11 @@ import {
   type StationSummary,
 } from "@/lib/stations/query";
 import { getVideosByStation } from "@/lib/videos";
+import { loadMapData, subsetOf } from "@/lib/portal/mapData";
+import { packWeeks } from "@/lib/portal/openNow";
 import VideoTiles from "../video/VideoTiles";
+import PortalMap from "../PortalMap";
+import { OpenBadge, OpenBar, OpenCount, OpenScope } from "../OpenNow";
 import { notFoundMetadata } from "./data";
 import { Block, PageFrame, accentStyle } from "./frame";
 import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
@@ -125,6 +129,7 @@ function StoreCard({ s }: { s: StationStore }) {
           <b>{p.name}</b>
           {walk && <span className="walk">{walk}</span>}
           {p.cityName && <span className="area">{p.cityName}</span>}
+          <OpenBadge id={p.id} />
         </span>
       </Link>
     </li>
@@ -156,6 +161,13 @@ export default async function Page({ params }: Props) {
       nearby: summary.stores.filter((s) => s.vertical.key === v.key && s.kind === "nearby"),
     }))
     .filter((g) => g.stated.length + g.nearby.length > 0);
+
+  // 営業中かどうかは現在時刻で変わるので、判定はクライアント（components/portal/OpenNow.tsx）。ここでは営業予定の表だけ渡す
+  const weeks = packWeeks(summary.stores.map((s) => ({ id: s.place.id, hours: s.place.hours, closed: s.place.holidays })));
+  // 小さな地図（店のピン＋駅の位置）。座標の無い店は出さない
+  const mini = subsetOf(await loadMapData(), summary.stores.map((s) => s.place.id));
+  const colors = Object.fromEntries(Object.values(VERTICALS).map((v) => [v.key, v.accent.color]));
+  const stationName = st.name.endsWith("駅") ? st.name : `${st.name}駅`;
 
   const ld = stationItemList(
     `${heading}の店`,
@@ -204,35 +216,73 @@ export default async function Page({ params }: Props) {
         </dl>
       }
     >
-      {groups.map(({ v, stated, nearby }) => (
-        <Block
-          key={v.key}
-          id={`mp-st-${v.key}-h`}
-          kicker={VERTICAL_FACE[v.key].en}
-          title={`${v.name}（${stated.length + nearby.length}店）`}
-        >
-          <div className="mp-st-group" style={accentStyle(v)}>
-            {stated.length > 0 && (
-              <>
-                <div className="mp-st-sub">
-                  <h3>店の案内に最寄り駅として書かれている店</h3>
-                  <span>{stated.length}店</span>
-                </div>
-                <ul className="mp-st-cards">{stated.map((s) => <StoreCard key={s.place.id} s={s} />)}</ul>
-              </>
-            )}
-            {nearby.length > 0 && (
-              <>
-                <div className="mp-st-sub">
-                  <h3>駅から直線距離で{NEARBY_MAX_METERS}m以内の店</h3>
-                  <span>{nearby.length}店・近い順</span>
-                </div>
-                <ul className="mp-st-cards">{nearby.map((s) => <StoreCard key={s.place.id} s={s} />)}</ul>
-              </>
-            )}
+      <Block id="mp-st-map-h" kicker="Map" title={`${heading}の地図`}>
+        <PortalMap
+          fit
+          lazy
+          points={mini.points}
+          colors={colors}
+          weeks={mini.weeks}
+          station={{ name: stationName, lat: st.lat, lng: st.lng }}
+          height="clamp(280px, 42vh, 400px)"
+          label={`${heading}の店の地図`}
+        />
+        <p className="mp-note-links">
+          <Link href={`/map?station=${pref}/${st.name}`} prefetch={false} data-cursor="MAP">
+            地図で見る（大きな地図で開く） <span aria-hidden="true">→</span>
+          </Link>
+        </p>
+        <p className="mp-map-note">
+          駅の位置は駅データ、店のピンは店の住所や地図の座標から求めた位置で、どちらも目安です。
+          {summary.count - mini.points.length > 0 && `位置が取れていない${summary.count - mini.points.length}店は地図に出ていません。`}
+        </p>
+      </Block>
+
+      <OpenScope weeks={weeks}>
+        <section className="mp-pg-sec mp-obar-sec" aria-label="営業中の絞り込み">
+          <div className="mp-wrap">
+            <OpenBar ids={summary.stores.map((s) => s.place.id)} />
           </div>
-        </Block>
-      ))}
+        </section>
+        {groups.map(({ v, stated, nearby }) => (
+          <Block
+            key={v.key}
+            id={`mp-st-${v.key}-h`}
+            kicker={VERTICAL_FACE[v.key].en}
+            className="mp-og"
+            title={
+              <>
+                {v.name}（<OpenCount ids={[...stated, ...nearby].map((s) => s.place.id)} />）
+              </>
+            }
+          >
+            <div className="mp-st-group" style={accentStyle(v)}>
+              {stated.length > 0 && (
+                <div className="mp-og">
+                  <div className="mp-st-sub">
+                    <h3>店の案内に最寄り駅として書かれている店</h3>
+                    <span>
+                      <OpenCount ids={stated.map((s) => s.place.id)} />
+                    </span>
+                  </div>
+                  <ul className="mp-st-cards">{stated.map((s) => <StoreCard key={s.place.id} s={s} />)}</ul>
+                </div>
+              )}
+              {nearby.length > 0 && (
+                <div className="mp-og">
+                  <div className="mp-st-sub">
+                    <h3>駅から直線距離で{NEARBY_MAX_METERS}m以内の店</h3>
+                    <span>
+                      <OpenCount ids={nearby.map((s) => s.place.id)} />・近い順
+                    </span>
+                  </div>
+                  <ul className="mp-st-cards">{nearby.map((s) => <StoreCard key={s.place.id} s={s} />)}</ul>
+                </div>
+              )}
+            </div>
+          </Block>
+        ))}
+      </OpenScope>
 
       {videos.length > 0 && (
         <Block id="mp-st-video-h" kicker="Video" title="この駅の周辺の動画">

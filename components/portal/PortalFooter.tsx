@@ -22,6 +22,12 @@ export default function PortalFooter() {
                 </li>
               ))}
             </ul>
+            <h2 className="sub">探し方</h2>
+            <ul>
+              <li><Link href="/map" prefetch={false}>地図で探す</Link></li>
+              <li><Link href="/station" prefetch={false}>駅から探す</Link></li>
+              <li><Link href="/videos" prefetch={false}>動画で探す</Link></li>
+            </ul>
           </div>
           <div className="mp-ft-col">
             <h2>グルメを読む</h2>

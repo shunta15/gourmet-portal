@@ -285,6 +285,7 @@
 .mp-ft-top{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:clamp(28px,4vw,64px); padding-bottom:clamp(44px,6vw,80px); border-bottom:1px solid rgba(244,239,230,.14)}
 .mp-ft-col h2{font:500 11px/1 var(--mono); letter-spacing:.28em; text-transform:uppercase; color:rgba(244,239,230,.5); margin-bottom:22px}
 .mp-ft-col ul{display:flex; flex-direction:column; gap:14px; font:400 14px/1.5 var(--sans)}
+.mp-ft-col h2.sub{margin-top:clamp(28px,3vw,40px)}
 .mp-ft-col a{display:inline-flex; align-items:center; gap:10px; transition:color .3s, transform .5s var(--ease)}
 .mp-ft-col a:hover{color:#fff; transform:translateX(4px)}
 .mp-ft-col li i{width:8px; height:8px; border-radius:50%; background:var(--ac)}
@@ -598,4 +599,108 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-vd-tiles{grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 10px}
   .mp-vd-entry .mp-vd-tiles{gap:12px}
   .mp-vd-entry .mp-vd-tiles > li{flex-basis:44vw}
+}
+
+/* ─────────── 地図で探す（/map・駅ページ・県ページの小さな地図）と、今開いている店 ─────────── */
+/* 今開いている店: バッジ（店カードの中）。判定はクライアント。判定前（pending）は場所だけ取って中身は空 */
+.mp .mp-ob{display:flex; flex-wrap:wrap; align-items:center; gap:3px 7px; margin-top:2px}
+.mp .mp-ob[data-s="pending"]{min-height:22px}
+.mp .mp-ob b{display:inline-flex; align-items:center; gap:6px; padding:4px 9px; border:1px solid currentColor; border-radius:99px; font:600 11.5px/1.2 var(--sans); letter-spacing:.04em}
+.mp .mp-ob b::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor; flex:none}
+.mp .mp-ob[data-s="open"] b{color:#2f6b4f; background:rgba(47,107,79,.09)}
+.mp .mp-ob[data-s="soon"] b{color:#97560f; background:rgba(151,86,15,.09)}
+.mp .mp-ob[data-s="closed"] b{color:var(--ink-3)}
+.mp .mp-ob[data-s="unknown"] b{color:var(--ink-3); border-style:dashed; font-weight:500}
+.mp .mp-ob small{font:400 10.5px/1.5 var(--sans); letter-spacing:0; color:var(--ink-3)}
+/* 「今開いている店だけ」（?open=1）: 営業中でない店と、営業中の店が無いグループを隠す */
+.mp-open-only li:has(.mp-ob[data-s="closed"]), .mp-open-only li:has(.mp-ob[data-s="unknown"]){display:none}
+.mp-open-only .mp-og:not(:has(.mp-ob[data-s="open"], .mp-ob[data-s="soon"])){display:none}
+.mp-st-group > .mp-og:first-child > .mp-st-sub{margin-top:0}
+
+/* 切替スイッチと注意書き */
+.mp-obar{display:grid; grid-template-columns:auto minmax(0,1fr); align-items:center; gap:12px 28px; padding:16px 20px; background:var(--paper); border:1px solid var(--rule)}
+.mp-obar-switch{position:relative; display:inline-flex; align-items:center; gap:12px; cursor:pointer; user-select:none; font:500 15px/1.2 var(--sans)}
+.mp-obar-switch input{position:absolute; width:1px; height:1px; opacity:0}
+.mp-obar-switch .tr{position:relative; flex:none; width:46px; height:26px; border-radius:99px; background:rgba(21,17,14,.24); transition:background .3s}
+.mp-obar-switch .tr i{position:absolute; left:3px; top:3px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(21,17,14,.35); transition:transform .35s var(--ease)}
+.mp-obar-switch input:checked + .tr{background:#2f6b4f}
+.mp-obar-switch input:checked + .tr i{transform:translateX(20px)}
+.mp-obar-switch input:focus-visible + .tr{outline:2px solid var(--ink); outline-offset:3px}
+.mp-obar-sum{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 20px; min-height:24px; font:500 12.5px/1.6 var(--sans); color:var(--ink-2)}
+.mp-obar-sum .at{font:500 11px/1.6 var(--mono); letter-spacing:.08em; color:var(--ink-3)}
+.mp-obar-sum b{font:400 22px/1 var(--latin); font-variant-numeric:lining-nums; margin-inline:2px; color:var(--ink)}
+.mp-obar-sum small{font:400 11px/1.5 var(--sans); color:var(--ink-3)}
+.mp-obar-note{grid-column:1 / -1; font:400 12px/1.9 var(--sans); color:var(--ink-3)}
+.mp-obar-note small{margin-left:.6em; font:500 12px/1.9 var(--sans); color:var(--ink-2)}
+.mp-obar-sec{padding-block:clamp(28px,4vw,48px) 0}
+.mp-pg-sec .mp-obar{margin-bottom:clamp(18px,2.4vw,28px)}
+
+/* 地図 */
+.mp-map{position:relative; z-index:0; width:100%; border:1px solid var(--rule); background:#e9e4d8; overflow:hidden; isolation:isolate}
+.mp-map-wait{position:absolute; inset:0; z-index:1; display:none; place-items:center; background:#e9e4d8; font:500 13px/1 var(--sans); color:var(--ink-3)}
+.mp-js .mp-map-wait{display:grid} /* JS が動くときだけ「読み込み中」を出す（JS なしで出し続けない） */
+.mp-map-note{margin-top:14px; font:400 12px/1.9 var(--sans); color:var(--ink-3); max-width:46em}
+.mp-pin-wrap, .mp-cl-wrap, .mp-stpin-wrap{background:none; border:0}
+.mp-pin{display:block; width:20px; height:20px; margin:2px; border:2.5px solid #fff; border-radius:50%; background:var(--pc,#15110e); box-shadow:0 1px 6px rgba(21,17,14,.5); transition:transform .25s var(--ease)}
+.mp-pin-wrap:hover .mp-pin, .mp-pin-wrap:focus-visible .mp-pin{transform:scale(1.3)}
+.mp-cl{display:grid; place-items:center; border:3px solid rgba(255,255,255,.92); border-radius:50%; background:var(--pc,#15110e); color:#fff; font:600 13px/1 var(--mono); box-shadow:0 2px 10px rgba(21,17,14,.45); transition:transform .25s var(--ease)}
+.mp-cl-wrap:hover .mp-cl{transform:scale(1.1)}
+.mp-stpin{display:grid; place-items:center; width:30px; height:30px; border:2px solid #fff; border-radius:7px; background:var(--ink); color:#fff; font:600 14px/1 var(--serif); box-shadow:0 2px 8px rgba(21,17,14,.5)}
+.mp-map .leaflet-marker-icon:focus-visible{outline:2px solid var(--ink); outline-offset:2px; border-radius:50%}
+.mp-map .leaflet-popup-content-wrapper{border-radius:3px; background:var(--paper); color:var(--ink); box-shadow:0 8px 30px rgba(21,17,14,.28)}
+.mp-map .leaflet-popup-tip{background:var(--paper)}
+.mp-map .leaflet-popup-content{margin:14px 18px 15px; font-family:var(--sans)}
+.mp-pop{display:flex; flex-direction:column; align-items:flex-start; gap:7px}
+.mp-pop-name{font:500 16px/1.45 var(--serif)}
+.mp-pop-sub{font:400 12.5px/1.6 var(--sans); color:var(--ink-2)}
+.mp-map .mp-pop-wrap a.mp-pop-link{margin-top:2px; padding-bottom:3px; border-bottom:1px solid currentColor; font:500 13px/1.4 var(--sans); color:var(--ink)}
+.mp-map .mp-pop-wrap a.mp-pop-link:hover{color:#97560f}
+.mp-map .leaflet-control-attribution{font:400 10.5px/1.6 var(--sans)}
+
+/* /map 本体（地図が最初の画面に入るよう、ページ上部を詰める） */
+.mp-mx-page .mp-pg-head{padding:clamp(88px,12vh,112px) 0 clamp(18px,2.4vw,28px)}
+.mp-mx-page .mp-pg-head .g{font-size:min(28vw,280px)}
+.mp-mx-page .mp-pg-head .mp-kicker{margin-top:clamp(14px,2.4vh,24px)}
+.mp-mx-page .mp-pg-title{margin-top:12px; font-size:clamp(28px,3.4vw,48px)}
+.mp-mx-page .mp-pg-lead{margin-top:12px; line-height:1.9}
+.mp-mx-page .mp-pg-state{margin-top:14px}
+.mp-mx-sec{padding-block:clamp(20px,3vw,36px) clamp(48px,6vw,88px)}
+.mp-mx-bar{display:flex; flex-direction:column; gap:14px; margin-bottom:16px}
+.mp-mx-chips{display:flex; flex-wrap:wrap; gap:8px}
+.mp-mx-chip{display:inline-flex; align-items:center; gap:8px; padding:11px 16px; border:1px solid rgba(21,17,14,.3); border-radius:99px; background:transparent; color:var(--ink); font:500 13.5px/1 var(--sans); letter-spacing:.03em; cursor:pointer; transition:background .3s, border-color .3s, color .3s}
+.mp-mx-chip i{width:9px; height:9px; border-radius:50%; background:var(--ac)}
+.mp-mx-chip small{font:500 11px/1 var(--mono); letter-spacing:.08em; color:var(--ink-3)}
+.mp-mx-chip:hover{background:rgba(21,17,14,.06)}
+.mp-mx-chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--ivory)}
+.mp-mx-chip[aria-pressed="true"] small{color:rgba(244,239,230,.72)}
+.mp-mx-chip[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--ivory)}
+.mp-mx-chip[data-empty]{border-style:dashed}
+.mp-mx-chip:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.mp-mx-mapwrap{position:relative; isolation:isolate}
+.mp-mx-empty{position:absolute; left:16px; right:16px; bottom:16px; z-index:500; padding:12px 16px; background:rgba(250,247,241,.96); border:1px solid var(--rule); font:500 13.5px/1.7 var(--sans)}
+.mp-mx-empty.static{position:static; background:var(--paper)}
+.mp-mx-meta{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:14px; font:400 12px/1.9 var(--sans); color:var(--ink-3)}
+.mp-mx-meta b{font:400 20px/1 var(--latin); font-variant-numeric:lining-nums; margin-inline:2px; color:var(--ink)}
+.mp-mx-meta a{border-bottom:1px solid var(--rule); color:var(--ink-2)}
+.mp-mx-list{margin-top:clamp(32px,4vw,56px)}
+.mp-mx-group{margin-bottom:clamp(28px,3vw,44px)}
+.mp-mx-gh{display:flex; align-items:baseline; gap:14px; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--rule); font:500 clamp(18px,1.8vw,24px)/1.3 var(--serif)}
+.mp-mx-gh span{font:500 11px/1 var(--mono); letter-spacing:.14em; color:var(--ink-3)}
+.mp-mx-rows{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr)); gap:10px}
+.mp-mx-row{display:flex; flex-direction:column; gap:6px; height:100%; padding:14px 16px 16px; background:var(--paper); border:1px solid var(--rule); border-left:3px solid var(--ac,var(--ink)); transition:background .3s}
+.mp-mx-row:hover{background:var(--acl,#efe9dc)}
+.mp-mx-row b{font:500 16px/1.5 var(--serif)}
+.mp-mx-row .meta{font:400 12.5px/1.6 var(--sans); color:var(--ink-2)}
+
+@media (max-width: 760px){
+  .mp-obar{grid-template-columns:1fr; padding:14px 16px}
+  .mp-obar-note{font-size:11.5px; line-height:1.8}
+  .mp-mx-chips{flex-wrap:nowrap; overflow-x:auto; margin-inline:calc(var(--gut) * -1); padding:0 var(--gut) 4px; scrollbar-width:none}
+  .mp-mx-chips::-webkit-scrollbar{display:none}
+  .mp-mx-chips > li{flex:none}
+  .mp-mx-chip{padding:10px 13px; font-size:13px}
+  .mp-mx-page .mp-pg-head{padding-top:84px}
+  .mp-mx-page .mp-pg-lead{font-size:13.5px}
+  .mp-mx-rows{grid-template-columns:1fr}
+  .mp-map .leaflet-popup-content{margin:12px 14px 13px}
 }

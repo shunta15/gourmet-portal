@@ -9,6 +9,8 @@ import PortalFonts from "../PortalFonts";
 import Breadcrumbs, { type Crumb } from "../Breadcrumbs";
 import AreaBlocks from "../AreaBlocks";
 import JsonLd from "../JsonLd";
+import { OpenBadge, OpenBar, OpenScope } from "../OpenNow";
+import { packWeeks } from "@/lib/portal/openNow";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { itemList } from "@/lib/seo/jsonld";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
@@ -113,30 +115,49 @@ export function Listing({ v, places, emptyNote }: { v: Vertical; places: Place[]
     );
   }
   const catName = (slug: string) => v.categories.find((c) => c.slug === slug)?.name ?? "";
+  // 営業中かどうかは現在時刻で変わるので、判定はクライアント（components/portal/OpenNow.tsx）。ここでは営業予定の表だけ渡す
+  const weeks = packWeeks(places.map((p) => ({ id: p.id, hours: p.hours, closed: p.holidays })));
   return (
     <section className="mp-pg-sec" aria-labelledby="mp-pg-list-h">
       <div className="mp-wrap">
         <h2 id="mp-pg-list-h" className="mp-pg-h">掲載の店</h2>
-        <ul className="mp-pg-grid">
-          {places.map((p) => (
-            <li key={p.id}>
-              <Link href={`${v.path}/shop/${p.id}`} prefetch={false} className="mp-place">
-                <small>{catName(p.category)}</small>
-                <b>{p.name}</b>
-                <span>{p.address}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <OpenScope weeks={weeks}>
+          <OpenBar ids={places.map((p) => p.id)} />
+          <ul className="mp-pg-grid">
+            {places.map((p) => (
+              <li key={p.id}>
+                <Link href={`${v.path}/shop/${p.id}`} prefetch={false} className="mp-place">
+                  <small>{catName(p.category)}</small>
+                  <b>{p.name}</b>
+                  <span>{p.address}</span>
+                  <OpenBadge id={p.id} />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </OpenScope>
       </div>
       <JsonLd data={itemList(places, v)} />
     </section>
   );
 }
 
-export function Block({ id, kicker, title, children }: { id: string; kicker: string; title: string; children: ReactNode }) {
+export function Block({
+  id,
+  kicker,
+  title,
+  className,
+  children,
+}: {
+  id: string;
+  kicker: string;
+  title: ReactNode;
+  /** 追加のクラス（「今開いている店だけ」で、営業中の店が無いブロックを隠すときは mp-og） */
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <section className="mp-sec mp-vh-sec" aria-labelledby={id}>
+    <section className={className ? `mp-sec mp-vh-sec ${className}` : "mp-sec mp-vh-sec"} aria-labelledby={id}>
       <div className="mp-wrap">
         <header className="mp-sec-head">
           <p className="mp-kicker">{kicker}</p>
