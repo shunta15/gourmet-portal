@@ -11,21 +11,43 @@ import { getGourmetPlaces } from './gourmet';
  * 現在のデータ投入：gourmet のみ
  * 他の業種は外枠の段階では空配列
  */
-export async function getPlaces(vertical: VerticalKey): Promise<Place[]> {
+export async function getPlaces(
+  vertical: VerticalKey,
+  filters?: { pref?: string; category?: string }
+): Promise<Place[]> {
+  let places: Place[] = [];
+
   switch (vertical) {
     case 'gourmet':
-      return await getGourmetPlaces();
+      places = await getGourmetPlaces();
+      break;
     case 'beauty':
     case 'bodycare':
     case 'pet':
     case 'leisure':
     case 'stay':
       // 外枠の段階ではデータなし
-      return [];
+      places = [];
+      break;
     default:
       const _exhaustive: never = vertical;
       return _exhaustive;
   }
+
+  // フィルタを適用
+  if (!filters || Object.keys(filters).length === 0) {
+    return places;
+  }
+
+  return places.filter((p) => {
+    if (filters.pref && p.pref !== filters.pref) {
+      return false;
+    }
+    if (filters.category && p.category !== filters.category) {
+      return false;
+    }
+    return true;
+  });
 }
 
 /**
