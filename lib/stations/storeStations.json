@@ -2,13 +2,13 @@
   "r01": {
     "stated": [
       {
-        "clusterId": "c0109",
+        "clusterId": "c0124",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0107",
+        "clusterId": "c0123",
         "meters": 884
       }
     ]
@@ -16,13 +16,13 @@
   "r02": {
     "stated": [
       {
-        "clusterId": "c0119",
+        "clusterId": "c0352",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0118",
+        "clusterId": "c0180",
         "meters": 228
       }
     ]
@@ -30,17 +30,17 @@
   "r03": {
     "stated": [
       {
-        "clusterId": "c0356",
+        "clusterId": "c0048",
         "walkMin": 6
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0361",
+        "clusterId": "c0414",
         "meters": 727
       },
       {
-        "clusterId": "c0352",
+        "clusterId": "c0264",
         "meters": 956
       }
     ]
@@ -48,13 +48,13 @@
   "r04": {
     "stated": [
       {
-        "clusterId": "c0196",
+        "clusterId": "c0500",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0200",
+        "clusterId": "c0208",
         "meters": 697
       }
     ]
@@ -62,13 +62,13 @@
   "r05": {
     "stated": [
       {
-        "clusterId": "c0394",
+        "clusterId": "c0077",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0378",
+        "clusterId": "c0033",
         "meters": 912
       }
     ]
@@ -76,20 +76,20 @@
   "r06": {
     "stated": [
       {
-        "clusterId": "c0093"
+        "clusterId": "c0023"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0093",
+        "clusterId": "c0023",
         "meters": 165
       },
       {
-        "clusterId": "c0095",
+        "clusterId": "c0347",
         "meters": 680
       },
       {
-        "clusterId": "c0096",
+        "clusterId": "c0564",
         "meters": 744
       }
     ]
@@ -97,13 +97,13 @@
   "r07": {
     "stated": [
       {
-        "clusterId": "c0204",
+        "clusterId": "c0211",
         "walkMin": 7
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0205",
+        "clusterId": "c0212",
         "meters": 880
       }
     ]
@@ -111,17 +111,17 @@
   "r08": {
     "stated": [
       {
-        "clusterId": "c0180",
+        "clusterId": "c0204",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0178",
+        "clusterId": "c0059",
         "meters": 501
       },
       {
-        "clusterId": "c0181",
+        "clusterId": "c0368",
         "meters": 903
       }
     ]
@@ -129,7 +129,7 @@
   "r09": {
     "stated": [
       {
-        "clusterId": "c0537",
+        "clusterId": "c0317",
         "walkMin": 15
       }
     ],
@@ -138,12 +138,12 @@
   "r10": {
     "stated": [
       {
-        "clusterId": "c0529"
+        "clusterId": "c0311"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0527",
+        "clusterId": "c0553",
         "meters": 729
       }
     ]
@@ -151,21 +151,21 @@
   "r12": {
     "stated": [
       {
-        "clusterId": "c0183",
+        "clusterId": "c0369",
         "walkMin": 6
       },
       {
-        "clusterId": "c0177",
+        "clusterId": "c0049",
         "walkMin": 6
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0185",
+        "clusterId": "c0497",
         "meters": 671
       },
       {
-        "clusterId": "c0187",
+        "clusterId": "c0104",
         "meters": 708
       }
     ]
@@ -173,13 +173,13 @@
   "r13": {
     "stated": [
       {
-        "clusterId": "c0164",
+        "clusterId": "c0199",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0162",
+        "clusterId": "c0006",
         "meters": 842
       }
     ]
@@ -187,13 +187,13 @@
   "r14": {
     "stated": [
       {
-        "clusterId": "c0317",
+        "clusterId": "c0402",
         "walkMin": 7
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0319",
+        "clusterId": "c0593",
         "meters": 779
       }
     ]
@@ -201,12 +201,16 @@
   "r15": {
     "stated": [
       {
-        "clusterId": "c0349"
+        "clusterId": "c0263"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0360",
+        "clusterId": "c0524",
+        "meters": 261
+      },
+      {
+        "clusterId": "c0268",
         "meters": 712
       }
     ]
@@ -214,16 +218,16 @@
   "r17": {
     "stated": [
       {
-        "clusterId": "c0368"
+        "clusterId": "c0136"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0378",
+        "clusterId": "c0033",
         "meters": 835
       },
       {
-        "clusterId": "c0360",
+        "clusterId": "c0268",
         "meters": 924
       }
     ]
@@ -231,20 +235,20 @@
   "r18": {
     "stated": [
       {
-        "clusterId": "c0375"
+        "clusterId": "c0574"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0380",
+        "clusterId": "c0609",
         "meters": 293
       },
       {
-        "clusterId": "c0371",
+        "clusterId": "c0004",
         "meters": 507
       },
       {
-        "clusterId": "c0385",
+        "clusterId": "c0575",
         "meters": 898
       }
     ]
@@ -252,12 +256,16 @@
   "r19": {
     "stated": [
       {
-        "clusterId": "c0373"
+        "clusterId": "c0273"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0384",
+        "clusterId": "c0418",
+        "meters": 232
+      },
+      {
+        "clusterId": "c0274",
         "meters": 535
       }
     ]
@@ -265,16 +273,16 @@
   "r20": {
     "stated": [
       {
-        "clusterId": "c0171"
+        "clusterId": "c0202"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0176",
+        "clusterId": "c0367",
         "meters": 707
       },
       {
-        "clusterId": "c0172",
+        "clusterId": "c0126",
         "meters": 952
       }
     ]
@@ -282,16 +290,16 @@
   "r21": {
     "stated": [
       {
-        "clusterId": "c0370"
+        "clusterId": "c0032"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0381",
+        "clusterId": "c0421",
         "meters": 409
       },
       {
-        "clusterId": "c0377",
+        "clusterId": "c0420",
         "meters": 702
       }
     ]
@@ -299,7 +307,7 @@
   "r22": {
     "stated": [
       {
-        "clusterId": "c0528"
+        "clusterId": "c0003"
       }
     ],
     "nearby": []
@@ -307,20 +315,20 @@
   "r23": {
     "stated": [
       {
-        "clusterId": "c0414"
+        "clusterId": "c0140"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0426",
+        "clusterId": "c0610",
         "meters": 554
       },
       {
-        "clusterId": "c0412",
+        "clusterId": "c0139",
         "meters": 561
       },
       {
-        "clusterId": "c0425",
+        "clusterId": "c0282",
         "meters": 953
       }
     ]
@@ -328,16 +336,16 @@
   "r24": {
     "stated": [
       {
-        "clusterId": "c0356"
+        "clusterId": "c0048"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0364",
+        "clusterId": "c0270",
         "meters": 358
       },
       {
-        "clusterId": "c0361",
+        "clusterId": "c0414",
         "meters": 666
       }
     ]
@@ -345,35 +353,39 @@
   "r25": {
     "stated": [
       {
-        "clusterId": "c0379",
+        "clusterId": "c0076",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0376",
+        "clusterId": "c0109",
         "meters": 373
+      },
+      {
+        "clusterId": "c0419",
+        "meters": 649
       }
     ]
   },
   "r27": {
     "stated": [
       {
-        "clusterId": "c0390",
+        "clusterId": "c0131",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0392",
+        "clusterId": "c0035",
         "meters": 384
       },
       {
-        "clusterId": "c0377",
+        "clusterId": "c0422",
         "meters": 781
       },
       {
-        "clusterId": "c0393",
+        "clusterId": "c0110",
         "meters": 796
       }
     ]
@@ -381,20 +393,20 @@
   "r28": {
     "stated": [
       {
-        "clusterId": "c0361"
+        "clusterId": "c0414"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0356",
+        "clusterId": "c0048",
         "meters": 606
       },
       {
-        "clusterId": "c0352",
+        "clusterId": "c0264",
         "meters": 678
       },
       {
-        "clusterId": "c0362",
+        "clusterId": "c0130",
         "meters": 746
       }
     ]
@@ -403,24 +415,28 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0411",
+        "clusterId": "c0036",
         "meters": 153
+      },
+      {
+        "clusterId": "c0531",
+        "meters": 343
       }
     ]
   },
   "r31": {
     "stated": [
       {
-        "clusterId": "c0177"
+        "clusterId": "c0049"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0179",
+        "clusterId": "c0060",
         "meters": 554
       },
       {
-        "clusterId": "c0172",
+        "clusterId": "c0126",
         "meters": 580
       }
     ]
@@ -428,20 +444,20 @@
   "r32": {
     "stated": [
       {
-        "clusterId": "c0390"
+        "clusterId": "c0131"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0403",
+        "clusterId": "c0112",
         "meters": 419
       },
       {
-        "clusterId": "c0406",
+        "clusterId": "c0113",
         "meters": 486
       },
       {
-        "clusterId": "c0392",
+        "clusterId": "c0035",
         "meters": 624
       }
     ]
@@ -449,16 +465,16 @@
   "r33": {
     "stated": [
       {
-        "clusterId": "c0357"
+        "clusterId": "c0526"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0360",
+        "clusterId": "c0268",
         "meters": 415
       },
       {
-        "clusterId": "c0349",
+        "clusterId": "c0263",
         "meters": 993
       }
     ]
@@ -467,15 +483,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0324",
+        "clusterId": "c0407",
         "meters": 144
       },
       {
-        "clusterId": "c0321",
+        "clusterId": "c0405",
         "meters": 408
       },
       {
-        "clusterId": "c0329",
+        "clusterId": "c0007",
         "meters": 662
       }
     ]
@@ -483,30 +499,38 @@
   "r35": {
     "stated": [
       {
-        "clusterId": "c0377",
+        "clusterId": "c0422",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0376",
+        "clusterId": "c0109",
         "meters": 418
+      },
+      {
+        "clusterId": "c0420",
+        "meters": 455
+      },
+      {
+        "clusterId": "c0419",
+        "meters": 535
       }
     ]
   },
   "r36": {
     "stated": [
       {
-        "clusterId": "c0177"
+        "clusterId": "c0049"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0172",
+        "clusterId": "c0126",
         "meters": 209
       },
       {
-        "clusterId": "c0171",
+        "clusterId": "c0202",
         "meters": 696
       }
     ]
@@ -514,12 +538,12 @@
   "r37": {
     "stated": [
       {
-        "clusterId": "c0321"
+        "clusterId": "c0405"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0326",
+        "clusterId": "c0251",
         "meters": 141
       }
     ]
@@ -527,13 +551,17 @@
   "r38": {
     "stated": [
       {
-        "clusterId": "c0349",
+        "clusterId": "c0263",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0360",
+        "clusterId": "c0524",
+        "meters": 380
+      },
+      {
+        "clusterId": "c0268",
         "meters": 633
       }
     ]
@@ -541,17 +569,17 @@
   "r39": {
     "stated": [
       {
-        "clusterId": "c0389",
+        "clusterId": "c0044",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0405",
+        "clusterId": "c0081",
         "meters": 311
       },
       {
-        "clusterId": "c0407",
+        "clusterId": "c0530",
         "meters": 515
       }
     ]
@@ -559,7 +587,7 @@
   "r40": {
     "stated": [
       {
-        "clusterId": "c0341",
+        "clusterId": "c0031",
         "walkMin": 6
       }
     ],
@@ -568,21 +596,25 @@
   "r41": {
     "stated": [
       {
-        "clusterId": "c0402",
+        "clusterId": "c0111",
         "walkMin": 3
       },
       {
-        "clusterId": "c0403",
+        "clusterId": "c0428",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0393",
+        "clusterId": "c0110",
         "meters": 653
       },
       {
-        "clusterId": "c0408",
+        "clusterId": "c0112",
+        "meters": 718
+      },
+      {
+        "clusterId": "c0277",
         "meters": 851
       }
     ]
@@ -590,17 +622,17 @@
   "r43": {
     "stated": [
       {
-        "clusterId": "c0175",
+        "clusterId": "c0002",
         "walkMin": 8
       },
       {
-        "clusterId": "c0169",
+        "clusterId": "c0201",
         "walkMin": 8
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0174",
+        "clusterId": "c0590",
         "meters": 690
       }
     ]
@@ -608,12 +640,12 @@
   "r42": {
     "stated": [
       {
-        "clusterId": "c0078"
+        "clusterId": "c0122"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0076",
+        "clusterId": "c0168",
         "meters": 727
       }
     ]
@@ -622,7 +654,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0071",
+        "clusterId": "c0001",
         "meters": 441
       }
     ]
@@ -630,12 +662,12 @@
   "r45": {
     "stated": [
       {
-        "clusterId": "c0158"
+        "clusterId": "c0197"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0159",
+        "clusterId": "c0494",
         "meters": 931
       }
     ]
@@ -643,20 +675,20 @@
   "r46": {
     "stated": [
       {
-        "clusterId": "c0166"
+        "clusterId": "c0200"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0167",
+        "clusterId": "c0365",
         "meters": 561
       },
       {
-        "clusterId": "c0165",
+        "clusterId": "c0364",
         "meters": 576
       },
       {
-        "clusterId": "c0163",
+        "clusterId": "c0495",
         "meters": 837
       }
     ]
@@ -664,30 +696,39 @@
   "r47": {
     "stated": [
       {
-        "clusterId": "c0362",
+        "clusterId": "c0416",
         "walkMin": 1
       }
     ],
-    "nearby": []
+    "nearby": [
+      {
+        "clusterId": "c0417",
+        "meters": 242
+      },
+      {
+        "clusterId": "c0075",
+        "meters": 284
+      }
+    ]
   },
   "r48": {
     "stated": [
       {
-        "clusterId": "c0401",
+        "clusterId": "c0138",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0404",
+        "clusterId": "c0429",
         "meters": 318
       },
       {
-        "clusterId": "c0412",
+        "clusterId": "c0139",
         "meters": 804
       },
       {
-        "clusterId": "c0406",
+        "clusterId": "c0113",
         "meters": 817
       }
     ]
@@ -695,30 +736,30 @@
   "r49": {
     "stated": [
       {
-        "clusterId": "c0411"
+        "clusterId": "c0531"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0411",
-        "meters": 592
+        "clusterId": "c0036",
+        "meters": 213
       }
     ]
   },
   "r50": {
     "stated": [
       {
-        "clusterId": "c0356",
+        "clusterId": "c0048",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0364",
+        "clusterId": "c0270",
         "meters": 631
       },
       {
-        "clusterId": "c0361",
+        "clusterId": "c0414",
         "meters": 804
       }
     ]
@@ -726,13 +767,17 @@
   "r51": {
     "stated": [
       {
-        "clusterId": "c0322",
+        "clusterId": "c0520",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0318",
+        "clusterId": "c0072",
+        "meters": 108
+      },
+      {
+        "clusterId": "c0403",
         "meters": 791
       }
     ]
@@ -740,25 +785,25 @@
   "r52": {
     "stated": [
       {
-        "clusterId": "c0414",
+        "clusterId": "c0140",
         "walkMin": 5
       },
       {
-        "clusterId": "c0403",
+        "clusterId": "c0112",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0390",
+        "clusterId": "c0131",
         "meters": 465
       },
       {
-        "clusterId": "c0406",
+        "clusterId": "c0113",
         "meters": 509
       },
       {
-        "clusterId": "c0392",
+        "clusterId": "c0035",
         "meters": 592
       }
     ]
@@ -766,19 +811,19 @@
   "r53": {
     "stated": [
       {
-        "clusterId": "c0177"
+        "clusterId": "c0049"
       },
       {
-        "clusterId": "c0179"
+        "clusterId": "c0060"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0172",
+        "clusterId": "c0126",
         "meters": 580
       },
       {
-        "clusterId": "c0170",
+        "clusterId": "c0103",
         "meters": 660
       }
     ]
@@ -786,12 +831,12 @@
   "r54": {
     "stated": [
       {
-        "clusterId": "c0336"
+        "clusterId": "c0256"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0329",
+        "clusterId": "c0007",
         "meters": 798
       }
     ]
@@ -799,19 +844,19 @@
   "r55": {
     "stated": [
       {
-        "clusterId": "c0198"
+        "clusterId": "c0370"
       },
       {
-        "clusterId": "c0201"
+        "clusterId": "c0209"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0199",
+        "clusterId": "c0143",
         "meters": 887
       },
       {
-        "clusterId": "c0194",
+        "clusterId": "c0105",
         "meters": 925
       }
     ]
@@ -819,16 +864,20 @@
   "r56": {
     "stated": [
       {
-        "clusterId": "c0377"
+        "clusterId": "c0422"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0392",
+        "clusterId": "c0035",
         "meters": 580
       },
       {
-        "clusterId": "c0376",
+        "clusterId": "c0420",
+        "meters": 759
+      },
+      {
+        "clusterId": "c0109",
         "meters": 779
       }
     ]
@@ -836,13 +885,17 @@
   "r57": {
     "stated": [
       {
-        "clusterId": "c0349",
+        "clusterId": "c0524",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0344",
+        "clusterId": "c0263",
+        "meters": 338
+      },
+      {
+        "clusterId": "c0409",
         "meters": 581
       }
     ]
@@ -850,13 +903,13 @@
   "r58": {
     "stated": [
       {
-        "clusterId": "c0062",
+        "clusterId": "c0334",
         "walkMin": 9
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0064",
+        "clusterId": "c0165",
         "meters": 803
       }
     ]
@@ -864,12 +917,12 @@
   "r59": {
     "stated": [
       {
-        "clusterId": "c0062"
+        "clusterId": "c0334"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0064",
+        "clusterId": "c0165",
         "meters": 739
       }
     ]
@@ -877,16 +930,16 @@
   "r60": {
     "stated": [
       {
-        "clusterId": "c0368"
+        "clusterId": "c0136"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0360",
+        "clusterId": "c0268",
         "meters": 738
       },
       {
-        "clusterId": "c0378",
+        "clusterId": "c0033",
         "meters": 876
       }
     ]
@@ -894,17 +947,17 @@
   "r61": {
     "stated": [
       {
-        "clusterId": "c0370",
+        "clusterId": "c0032",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0381",
+        "clusterId": "c0421",
         "meters": 516
       },
       {
-        "clusterId": "c0377",
+        "clusterId": "c0420",
         "meters": 915
       }
     ]
@@ -912,17 +965,17 @@
   "r62": {
     "stated": [
       {
-        "clusterId": "c0370",
+        "clusterId": "c0032",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0381",
+        "clusterId": "c0421",
         "meters": 350
       },
       {
-        "clusterId": "c0373",
+        "clusterId": "c0273",
         "meters": 828
       }
     ]
@@ -930,17 +983,17 @@
   "r63": {
     "stated": [
       {
-        "clusterId": "c0389",
+        "clusterId": "c0044",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0405",
+        "clusterId": "c0081",
         "meters": 201
       },
       {
-        "clusterId": "c0407",
+        "clusterId": "c0530",
         "meters": 465
       }
     ]
@@ -948,7 +1001,7 @@
   "r64": {
     "stated": [
       {
-        "clusterId": "c0310",
+        "clusterId": "c0518",
         "walkMin": 2
       }
     ],
@@ -957,7 +1010,7 @@
   "r65": {
     "stated": [
       {
-        "clusterId": "c0341",
+        "clusterId": "c0031",
         "walkMin": 2
       }
     ],
@@ -966,21 +1019,21 @@
   "r66": {
     "stated": [
       {
-        "clusterId": "c0361",
+        "clusterId": "c0414",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0362",
+        "clusterId": "c0130",
         "meters": 555
       },
       {
-        "clusterId": "c0356",
+        "clusterId": "c0048",
         "meters": 717
       },
       {
-        "clusterId": "c0352",
+        "clusterId": "c0264",
         "meters": 736
       }
     ]
@@ -988,27 +1041,31 @@
   "r67": {
     "stated": [
       {
-        "clusterId": "c0178",
+        "clusterId": "c0059",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0173",
+        "clusterId": "c0058",
         "meters": 410
+      },
+      {
+        "clusterId": "c0203",
+        "meters": 636
       }
     ]
   },
   "r68": {
     "stated": [
       {
-        "clusterId": "c0182",
+        "clusterId": "c0061",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0186",
+        "clusterId": "c0498",
         "meters": 878
       }
     ]
@@ -1016,16 +1073,16 @@
   "r69": {
     "stated": [
       {
-        "clusterId": "c0175"
+        "clusterId": "c0002"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0174",
+        "clusterId": "c0590",
         "meters": 684
       },
       {
-        "clusterId": "c0184",
+        "clusterId": "c0205",
         "meters": 714
       }
     ]
@@ -1034,15 +1091,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0165",
+        "clusterId": "c0364",
         "meters": 481
       },
       {
-        "clusterId": "c0164",
+        "clusterId": "c0199",
         "meters": 603
       },
       {
-        "clusterId": "c0159",
+        "clusterId": "c0494",
         "meters": 665
       }
     ]
@@ -1050,7 +1107,7 @@
   "r72": {
     "stated": [
       {
-        "clusterId": "c0157"
+        "clusterId": "c0363"
       }
     ],
     "nearby": []
@@ -1058,13 +1115,13 @@
   "r73": {
     "stated": [
       {
-        "clusterId": "c0174",
+        "clusterId": "c0590",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0175",
+        "clusterId": "c0002",
         "meters": 435
       }
     ]
@@ -1073,11 +1130,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0082",
+        "clusterId": "c0170",
         "meters": 371
       },
       {
-        "clusterId": "c0083",
+        "clusterId": "c0488",
         "meters": 772
       }
     ]
@@ -1085,7 +1142,7 @@
   "r75": {
     "stated": [
       {
-        "clusterId": "c0295",
+        "clusterId": "c0242",
         "walkMin": 1
       }
     ],
@@ -1094,13 +1151,13 @@
   "r76": {
     "stated": [
       {
-        "clusterId": "c0374",
+        "clusterId": "c0046",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0382",
+        "clusterId": "c0606",
         "meters": 511
       }
     ]
@@ -1108,21 +1165,21 @@
   "r77": {
     "stated": [
       {
-        "clusterId": "c0350",
+        "clusterId": "c0411",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0353",
+        "clusterId": "c0413",
         "meters": 495
       },
       {
-        "clusterId": "c0343",
+        "clusterId": "c0260",
         "meters": 674
       },
       {
-        "clusterId": "c0359",
+        "clusterId": "c0267",
         "meters": 946
       }
     ]
@@ -1130,7 +1187,7 @@
   "r78": {
     "stated": [
       {
-        "clusterId": "c0435"
+        "clusterId": "c0437"
       }
     ],
     "nearby": []
@@ -1138,13 +1195,13 @@
   "r79": {
     "stated": [
       {
-        "clusterId": "c0065",
+        "clusterId": "c0335",
         "walkMin": 9
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0067",
+        "clusterId": "c0166",
         "meters": 474
       }
     ]
@@ -1152,7 +1209,7 @@
   "r80": {
     "stated": [
       {
-        "clusterId": "c0524"
+        "clusterId": "c0308"
       }
     ],
     "nearby": []
@@ -1160,12 +1217,12 @@
   "r81": {
     "stated": [
       {
-        "clusterId": "c0311"
+        "clusterId": "c0401"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0313",
+        "clusterId": "c0030",
         "meters": 379
       }
     ]
@@ -1173,7 +1230,7 @@
   "r82": {
     "stated": [
       {
-        "clusterId": "c0304"
+        "clusterId": "c0245"
       }
     ],
     "nearby": []
@@ -1181,7 +1238,7 @@
   "r83": {
     "stated": [
       {
-        "clusterId": "c0444",
+        "clusterId": "c0284",
         "walkMin": 7
       }
     ],
@@ -1195,17 +1252,21 @@
   "r84": {
     "stated": [
       {
-        "clusterId": "c0256",
+        "clusterId": "c0387",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0257",
+        "clusterId": "c0386",
+        "meters": 405
+      },
+      {
+        "clusterId": "c0069",
         "meters": 587
       },
       {
-        "clusterId": "c0255",
+        "clusterId": "c0385",
         "meters": 851
       }
     ]
@@ -1214,11 +1275,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0444",
+        "clusterId": "c0284",
         "meters": 127
       },
       {
-        "clusterId": "c0443",
+        "clusterId": "c0442",
         "meters": 765
       }
     ]
@@ -1226,13 +1287,13 @@
   "r86": {
     "stated": [
       {
-        "clusterId": "c0119",
+        "clusterId": "c0352",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0118",
+        "clusterId": "c0180",
         "meters": 114
       }
     ]
@@ -1240,13 +1301,13 @@
   "r87": {
     "stated": [
       {
-        "clusterId": "c0161",
+        "clusterId": "c0198",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0168",
+        "clusterId": "c0366",
         "meters": 714
       }
     ]
@@ -1255,11 +1316,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0285",
+        "clusterId": "c0236",
         "meters": 345
       },
       {
-        "clusterId": "c0286",
+        "clusterId": "c0393",
         "meters": 697
       }
     ]
@@ -1267,17 +1328,21 @@
   "r89": {
     "stated": [
       {
-        "clusterId": "c0436",
+        "clusterId": "c0438",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0434",
+        "clusterId": "c0439",
+        "meters": 248
+      },
+      {
+        "clusterId": "c0436",
         "meters": 644
       },
       {
-        "clusterId": "c0437",
+        "clusterId": "c0283",
         "meters": 813
       }
     ]
@@ -1286,7 +1351,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0135",
+        "clusterId": "c0188",
         "meters": 868
       }
     ]
@@ -1295,15 +1360,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 473
       },
       {
-        "clusterId": "c0111",
+        "clusterId": "c0176",
         "meters": 731
       },
       {
-        "clusterId": "c0113",
+        "clusterId": "c0125",
         "meters": 882
       }
     ]
@@ -1312,15 +1377,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 105
       },
       {
-        "clusterId": "c0111",
+        "clusterId": "c0176",
         "meters": 530
       },
       {
-        "clusterId": "c0113",
+        "clusterId": "c0125",
         "meters": 940
       }
     ]
@@ -1329,8 +1394,16 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0382",
+        "clusterId": "c0034",
         "meters": 304
+      },
+      {
+        "clusterId": "c0423",
+        "meters": 343
+      },
+      {
+        "clusterId": "c0606",
+        "meters": 364
       }
     ]
   },
@@ -1338,11 +1411,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 544
       },
       {
-        "clusterId": "c0111",
+        "clusterId": "c0176",
         "meters": 607
       }
     ]
@@ -1351,15 +1424,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0351",
+        "clusterId": "c0412",
         "meters": 715
       },
       {
-        "clusterId": "c0350",
+        "clusterId": "c0411",
         "meters": 723
       },
       {
-        "clusterId": "c0337",
+        "clusterId": "c0257",
         "meters": 926
       }
     ]
@@ -1367,7 +1440,7 @@
   "r97": {
     "stated": [
       {
-        "clusterId": "c0073",
+        "clusterId": "c0339",
         "walkMin": 7
       }
     ],
@@ -1377,7 +1450,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0077",
+        "clusterId": "c0341",
         "meters": 959
       }
     ]
@@ -1385,16 +1458,16 @@
   "r100": {
     "stated": [
       {
-        "clusterId": "c0423"
+        "clusterId": "c0085"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0429",
+        "clusterId": "c0432",
         "meters": 953
       },
       {
-        "clusterId": "c0421",
+        "clusterId": "c0084",
         "meters": 973
       }
     ]
@@ -1402,7 +1475,7 @@
   "r101": {
     "stated": [
       {
-        "clusterId": "c0374",
+        "clusterId": "c0046",
         "walkMin": 5
       }
     ],
@@ -1411,16 +1484,16 @@
   "r103": {
     "stated": [
       {
-        "clusterId": "c0085"
+        "clusterId": "c0345"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0087",
+        "clusterId": "c0171",
         "meters": 934
       },
       {
-        "clusterId": "c0086",
+        "clusterId": "c0099",
         "meters": 937
       }
     ]
@@ -1428,13 +1501,13 @@
   "r104": {
     "stated": [
       {
-        "clusterId": "c0061",
+        "clusterId": "c0486",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0063",
+        "clusterId": "c0098",
         "meters": 333
       }
     ]
@@ -1442,7 +1515,7 @@
   "r105": {
     "stated": [
       {
-        "clusterId": "c0315",
+        "clusterId": "c0071",
         "walkMin": 3
       }
     ],
@@ -1452,11 +1525,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 272
       },
       {
-        "clusterId": "c0111",
+        "clusterId": "c0176",
         "meters": 357
       }
     ]
@@ -1464,7 +1537,7 @@
   "r107": {
     "stated": [
       {
-        "clusterId": "c0485"
+        "clusterId": "c0544"
       }
     ],
     "nearby": []
@@ -1472,12 +1545,12 @@
   "r108": {
     "stated": [
       {
-        "clusterId": "c0396"
+        "clusterId": "c0079"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0400",
+        "clusterId": "c0427",
         "meters": 398
       }
     ]
@@ -1486,7 +1559,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0374",
+        "clusterId": "c0046",
         "meters": 153
       }
     ]
@@ -1494,7 +1567,7 @@
   "r111": {
     "stated": [
       {
-        "clusterId": "c0081",
+        "clusterId": "c0169",
         "walkMin": 3
       }
     ],
@@ -1504,11 +1577,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0333",
+        "clusterId": "c0522",
         "meters": 676
       },
       {
-        "clusterId": "c0348",
+        "clusterId": "c0253",
+        "meters": 825
+      },
+      {
+        "clusterId": "c0262",
         "meters": 937
       }
     ]
@@ -1517,12 +1594,16 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0359",
+        "clusterId": "c0267",
         "meters": 280
       },
       {
-        "clusterId": "c0358",
+        "clusterId": "c0266",
         "meters": 306
+      },
+      {
+        "clusterId": "c0269",
+        "meters": 445
       }
     ]
   },
@@ -1530,15 +1611,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0353",
+        "clusterId": "c0413",
         "meters": 175
       },
       {
-        "clusterId": "c0350",
+        "clusterId": "c0411",
         "meters": 344
       },
       {
-        "clusterId": "c0351",
+        "clusterId": "c0412",
         "meters": 836
       }
     ]
@@ -1546,7 +1627,7 @@
   "r116": {
     "stated": [
       {
-        "clusterId": "c0374",
+        "clusterId": "c0046",
         "walkMin": 3
       }
     ],
@@ -1556,15 +1637,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0432",
+        "clusterId": "c0595",
         "meters": 258
       },
       {
-        "clusterId": "c0431",
+        "clusterId": "c0434",
         "meters": 740
       },
       {
-        "clusterId": "c0433",
+        "clusterId": "c0435",
         "meters": 987
       }
     ]
@@ -1573,11 +1654,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0374",
+        "clusterId": "c0046",
         "meters": 230
       },
       {
-        "clusterId": "c0382",
+        "clusterId": "c0606",
         "meters": 333
       }
     ]
@@ -1586,15 +1667,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0335",
+        "clusterId": "c0255",
         "meters": 602
       },
       {
-        "clusterId": "c0331",
+        "clusterId": "c0521",
         "meters": 640
       },
       {
-        "clusterId": "c0340",
+        "clusterId": "c0259",
         "meters": 670
       }
     ]
@@ -1602,12 +1683,12 @@
   "r121": {
     "stated": [
       {
-        "clusterId": "c0102"
+        "clusterId": "c0024"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0105",
+        "clusterId": "c0566",
         "meters": 808
       }
     ]
@@ -1615,7 +1696,7 @@
   "r123": {
     "stated": [
       {
-        "clusterId": "c0374"
+        "clusterId": "c0046"
       }
     ],
     "nearby": []
@@ -1623,16 +1704,16 @@
   "r124": {
     "stated": [
       {
-        "clusterId": "c0113"
+        "clusterId": "c0125"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 477
       },
       {
-        "clusterId": "c0110",
+        "clusterId": "c0351",
         "meters": 868
       }
     ]
@@ -1640,7 +1721,7 @@
   "r125": {
     "stated": [
       {
-        "clusterId": "c0374"
+        "clusterId": "c0046"
       }
     ],
     "nearby": []
@@ -1649,15 +1730,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0427",
+        "clusterId": "c0011",
         "meters": 60
       },
       {
-        "clusterId": "c0421",
+        "clusterId": "c0084",
         "meters": 553
       },
       {
-        "clusterId": "c0430",
+        "clusterId": "c0433",
         "meters": 686
       }
     ]
@@ -1666,7 +1747,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0102",
+        "clusterId": "c0024",
         "meters": 412
       }
     ]
@@ -1675,15 +1756,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0112",
+        "clusterId": "c0025",
         "meters": 634
       },
       {
-        "clusterId": "c0114",
+        "clusterId": "c0177",
         "meters": 772
       },
       {
-        "clusterId": "c0113",
+        "clusterId": "c0125",
         "meters": 871
       }
     ]
@@ -1692,7 +1773,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0102",
+        "clusterId": "c0024",
         "meters": 180
       }
     ]
@@ -1701,11 +1782,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 244
       },
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "meters": 531
       }
     ]
@@ -1714,7 +1795,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0254",
+        "clusterId": "c0050",
         "meters": 45
       }
     ]
@@ -1722,17 +1803,17 @@
   "r132": {
     "stated": [
       {
-        "clusterId": "c0247",
+        "clusterId": "c0029",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0249",
+        "clusterId": "c0221",
         "meters": 639
       },
       {
-        "clusterId": "c0253",
+        "clusterId": "c0223",
         "meters": 794
       }
     ]
@@ -1741,15 +1822,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0237",
+        "clusterId": "c0573",
         "meters": 134
       },
       {
-        "clusterId": "c0241",
+        "clusterId": "c0066",
         "meters": 414
       },
       {
-        "clusterId": "c0229",
+        "clusterId": "c0571",
         "meters": 460
       }
     ]
@@ -1758,7 +1839,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0254",
+        "clusterId": "c0050",
         "meters": 178
       }
     ]
@@ -1767,7 +1848,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0251",
+        "clusterId": "c0222",
         "meters": 538
       }
     ]
@@ -1776,15 +1857,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0213",
+        "clusterId": "c0375",
         "meters": 107
       },
       {
-        "clusterId": "c0212",
+        "clusterId": "c0608",
         "meters": 482
       },
       {
-        "clusterId": "c0214",
+        "clusterId": "c0106",
         "meters": 890
       }
     ]
@@ -1792,7 +1873,7 @@
   "r138": {
     "stated": [
       {
-        "clusterId": "c0388"
+        "clusterId": "c0529"
       }
     ],
     "nearby": []
@@ -1800,7 +1881,7 @@
   "r140": {
     "stated": [
       {
-        "clusterId": "c0388",
+        "clusterId": "c0529",
         "walkMin": 8
       }
     ],
@@ -1809,7 +1890,7 @@
   "r142": {
     "stated": [
       {
-        "clusterId": "c0248",
+        "clusterId": "c0384",
         "walkMin": 5
       }
     ],
@@ -1818,7 +1899,7 @@
   "r143": {
     "stated": [
       {
-        "clusterId": "c0240"
+        "clusterId": "c0219"
       }
     ],
     "nearby": []
@@ -1826,17 +1907,17 @@
   "r144": {
     "stated": [
       {
-        "clusterId": "c0231",
+        "clusterId": "c0129",
         "walkMin": 6
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "meters": 513
       },
       {
-        "clusterId": "c0227",
+        "clusterId": "c0504",
         "meters": 783
       }
     ]
@@ -1844,15 +1925,15 @@
   "r145": {
     "stated": [
       {
-        "clusterId": "c0241"
+        "clusterId": "c0066"
       },
       {
-        "clusterId": "c0236"
+        "clusterId": "c0381"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0228",
+        "clusterId": "c0380",
         "meters": 706
       }
     ]
@@ -1860,21 +1941,21 @@
   "r146": {
     "stated": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "walkMin": 4
       },
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0231",
+        "clusterId": "c0129",
         "meters": 586
       },
       {
-        "clusterId": "c0230",
+        "clusterId": "c0591",
         "meters": 629
       }
     ]
@@ -1882,7 +1963,7 @@
   "r147": {
     "stated": [
       {
-        "clusterId": "c0241"
+        "clusterId": "c0066"
       }
     ],
     "nearby": []
@@ -1890,13 +1971,13 @@
   "r149": {
     "stated": [
       {
-        "clusterId": "c0213",
+        "clusterId": "c0375",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0212",
+        "clusterId": "c0608",
         "meters": 334
       }
     ]
@@ -1904,7 +1985,7 @@
   "r150": {
     "stated": [
       {
-        "clusterId": "c0221",
+        "clusterId": "c0570",
         "walkMin": 5
       }
     ],
@@ -1913,7 +1994,7 @@
   "r151": {
     "stated": [
       {
-        "clusterId": "c0238"
+        "clusterId": "c0506"
       }
     ],
     "nearby": []
@@ -1921,7 +2002,7 @@
   "r152": {
     "stated": [
       {
-        "clusterId": "c0242"
+        "clusterId": "c0507"
       }
     ],
     "nearby": []
@@ -1929,17 +2010,17 @@
   "r153": {
     "stated": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0240",
+        "clusterId": "c0219",
         "meters": 710
       },
       {
-        "clusterId": "c0231",
+        "clusterId": "c0129",
         "meters": 809
       }
     ]
@@ -1947,12 +2028,12 @@
   "r154": {
     "stated": [
       {
-        "clusterId": "c0247"
+        "clusterId": "c0029"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0244",
+        "clusterId": "c0067",
         "meters": 904
       }
     ]
@@ -1960,7 +2041,7 @@
   "r155": {
     "stated": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "walkMin": 3
       }
     ],
@@ -1969,16 +2050,16 @@
   "r156": {
     "stated": [
       {
-        "clusterId": "c0238"
+        "clusterId": "c0506"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0235",
+        "clusterId": "c0065",
         "meters": 526
       },
       {
-        "clusterId": "c0234",
+        "clusterId": "c0217",
         "meters": 641
       }
     ]
@@ -1986,21 +2067,21 @@
   "r157": {
     "stated": [
       {
-        "clusterId": "c0267",
+        "clusterId": "c0509",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0262",
+        "clusterId": "c0225",
         "meters": 138
       },
       {
-        "clusterId": "c0266",
+        "clusterId": "c0228",
         "meters": 870
       },
       {
-        "clusterId": "c0259",
+        "clusterId": "c0592",
         "meters": 914
       }
     ]
@@ -2008,16 +2089,16 @@
   "r158": {
     "stated": [
       {
-        "clusterId": "c0271"
+        "clusterId": "c0510"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0273",
+        "clusterId": "c0389",
         "meters": 635
       },
       {
-        "clusterId": "c0274",
+        "clusterId": "c0108",
         "meters": 653
       }
     ]
@@ -2025,16 +2106,20 @@
   "r159": {
     "stated": [
       {
-        "clusterId": "c0220"
+        "clusterId": "c0502"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0223",
+        "clusterId": "c0503",
         "meters": 586
       },
       {
-        "clusterId": "c0225",
+        "clusterId": "c0378",
+        "meters": 753
+      },
+      {
+        "clusterId": "c0379",
         "meters": 767
       }
     ]
@@ -2042,12 +2127,12 @@
   "r160": {
     "stated": [
       {
-        "clusterId": "c0239"
+        "clusterId": "c0218"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 587
       }
     ]
@@ -2055,16 +2140,16 @@
   "r161": {
     "stated": [
       {
-        "clusterId": "c0210"
+        "clusterId": "c0373"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0209",
+        "clusterId": "c0372",
         "meters": 489
       },
       {
-        "clusterId": "c0212",
+        "clusterId": "c0608",
         "meters": 923
       }
     ]
@@ -2072,7 +2157,7 @@
   "r162": {
     "stated": [
       {
-        "clusterId": "c0238"
+        "clusterId": "c0506"
       }
     ],
     "nearby": []
@@ -2080,12 +2165,12 @@
   "r163": {
     "stated": [
       {
-        "clusterId": "c0238"
+        "clusterId": "c0506"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0235",
+        "clusterId": "c0065",
         "meters": 606
       }
     ]
@@ -2094,7 +2179,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0254",
+        "clusterId": "c0050",
         "meters": 99
       }
     ]
@@ -2102,10 +2187,10 @@
   "r166": {
     "stated": [
       {
-        "clusterId": "c0238"
+        "clusterId": "c0506"
       },
       {
-        "clusterId": "c0231"
+        "clusterId": "c0129"
       }
     ],
     "nearby": []
@@ -2113,16 +2198,16 @@
   "r167": {
     "stated": [
       {
-        "clusterId": "c0177"
+        "clusterId": "c0049"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0183",
+        "clusterId": "c0369",
         "meters": 552
       },
       {
-        "clusterId": "c0179",
+        "clusterId": "c0060",
         "meters": 688
       }
     ]
@@ -2130,12 +2215,12 @@
   "r168": {
     "stated": [
       {
-        "clusterId": "c0164"
+        "clusterId": "c0199"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0162",
+        "clusterId": "c0006",
         "meters": 699
       }
     ]
@@ -2143,12 +2228,12 @@
   "r169": {
     "stated": [
       {
-        "clusterId": "c0323"
+        "clusterId": "c0406"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0320",
+        "clusterId": "c0404",
         "meters": 763
       }
     ]
@@ -2156,16 +2241,16 @@
   "r170": {
     "stated": [
       {
-        "clusterId": "c0528"
+        "clusterId": "c0003"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0526",
+        "clusterId": "c0310",
         "meters": 545
       },
       {
-        "clusterId": "c0557",
+        "clusterId": "c0586",
         "meters": 652
       }
     ]
@@ -2173,7 +2258,7 @@
   "r171": {
     "stated": [
       {
-        "clusterId": "c0221",
+        "clusterId": "c0570",
         "walkMin": 5
       }
     ],
@@ -2182,17 +2267,17 @@
   "r172": {
     "stated": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "walkMin": 4
       },
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0240",
+        "clusterId": "c0219",
         "meters": 632
       }
     ]
@@ -2200,7 +2285,7 @@
   "r173": {
     "stated": [
       {
-        "clusterId": "c0440"
+        "clusterId": "c0535"
       }
     ],
     "nearby": []
@@ -2209,11 +2294,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0382",
+        "clusterId": "c0034",
         "meters": 202
       },
       {
-        "clusterId": "c0386",
+        "clusterId": "c0606",
+        "meters": 240
+      },
+      {
+        "clusterId": "c0275",
         "meters": 495
       }
     ]
@@ -2221,12 +2310,12 @@
   "r176": {
     "stated": [
       {
-        "clusterId": "c0217"
+        "clusterId": "c0569"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0216",
+        "clusterId": "c0377",
         "meters": 745
       }
     ]
@@ -2235,11 +2324,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0367",
+        "clusterId": "c0527",
         "meters": 86
       },
       {
-        "clusterId": "c0365",
+        "clusterId": "c0043",
         "meters": 978
       }
     ]
@@ -2248,15 +2337,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0421",
+        "clusterId": "c0084",
         "meters": 55
       },
       {
-        "clusterId": "c0427",
+        "clusterId": "c0011",
         "meters": 511
       },
       {
-        "clusterId": "c0409",
+        "clusterId": "c0278",
         "meters": 858
       }
     ]
@@ -2264,7 +2353,7 @@
   "r179": {
     "stated": [
       {
-        "clusterId": "c0374"
+        "clusterId": "c0046"
       }
     ],
     "nearby": []
@@ -2272,21 +2361,26 @@
   "r181": {
     "stated": [
       {
-        "clusterId": "c0493",
+        "clusterId": "c0116",
         "walkMin": 5
       }
     ],
-    "nearby": []
+    "nearby": [
+      {
+        "clusterId": "c0459",
+        "meters": 467
+      }
+    ]
   },
   "r182": {
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0486",
+        "clusterId": "c0455",
         "meters": 149
       },
       {
-        "clusterId": "c0487",
+        "clusterId": "c0580",
         "meters": 880
       }
     ]
@@ -2294,24 +2388,38 @@
   "r183": {
     "stated": [
       {
-        "clusterId": "c0500"
+        "clusterId": "c0549"
       }
     ],
-    "nearby": []
+    "nearby": [
+      {
+        "clusterId": "c0582",
+        "meters": 201
+      },
+      {
+        "clusterId": "c0602",
+        "meters": 625
+      }
+    ]
   },
   "r184": {
     "stated": [
       {
-        "clusterId": "c0493",
+        "clusterId": "c0089",
         "walkMin": 4
       }
     ],
-    "nearby": []
+    "nearby": [
+      {
+        "clusterId": "c0116",
+        "meters": 256
+      }
+    ]
   },
   "r185": {
     "stated": [
       {
-        "clusterId": "c0034"
+        "clusterId": "c0051"
       }
     ],
     "nearby": []
@@ -2320,7 +2428,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0493",
+        "clusterId": "c0116",
         "meters": 111
       }
     ]
@@ -2328,7 +2436,7 @@
   "r187": {
     "stated": [
       {
-        "clusterId": "c0208"
+        "clusterId": "c0213"
       }
     ],
     "nearby": []
@@ -2336,33 +2444,37 @@
   "r188": {
     "stated": [
       {
-        "clusterId": "c0492"
+        "clusterId": "c0038"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0494",
+        "clusterId": "c0117",
         "meters": 537
+      },
+      {
+        "clusterId": "c0460",
+        "meters": 773
       }
     ]
   },
   "r189": {
     "stated": [
       {
-        "clusterId": "c0267"
+        "clusterId": "c0509"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0262",
+        "clusterId": "c0225",
         "meters": 423
       },
       {
-        "clusterId": "c0259",
+        "clusterId": "c0592",
         "meters": 710
       },
       {
-        "clusterId": "c0260",
+        "clusterId": "c0508",
         "meters": 905
       }
     ]
@@ -2370,12 +2482,12 @@
   "r190": {
     "stated": [
       {
-        "clusterId": "c0482"
+        "clusterId": "c0543"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0484",
+        "clusterId": "c0087",
         "meters": 719
       }
     ]
@@ -2383,12 +2495,16 @@
   "r191": {
     "stated": [
       {
-        "clusterId": "c0493"
+        "clusterId": "c0116"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0490",
+        "clusterId": "c0459",
+        "meters": 208
+      },
+      {
+        "clusterId": "c0545",
         "meters": 387
       }
     ]
@@ -2396,7 +2512,7 @@
   "r192": {
     "stated": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "walkMin": 6
       }
     ],
@@ -2406,15 +2522,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0480",
+        "clusterId": "c0298",
         "meters": 279
       },
       {
-        "clusterId": "c0481",
+        "clusterId": "c0453",
         "meters": 484
       },
       {
-        "clusterId": "c0479",
+        "clusterId": "c0297",
         "meters": 848
       }
     ]
@@ -2422,16 +2538,16 @@
   "r194": {
     "stated": [
       {
-        "clusterId": "c0230"
+        "clusterId": "c0591"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0235",
+        "clusterId": "c0065",
         "meters": 248
       },
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 641
       }
     ]
@@ -2439,7 +2555,7 @@
   "r195": {
     "stated": [
       {
-        "clusterId": "c0197"
+        "clusterId": "c0207"
       }
     ],
     "nearby": []
@@ -2447,12 +2563,12 @@
   "r196": {
     "stated": [
       {
-        "clusterId": "c0530"
+        "clusterId": "c0091"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0531",
+        "clusterId": "c0312",
         "meters": 944
       }
     ]
@@ -2460,16 +2576,16 @@
   "r197": {
     "stated": [
       {
-        "clusterId": "c0271"
+        "clusterId": "c0510"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0274",
+        "clusterId": "c0108",
         "meters": 641
       },
       {
-        "clusterId": "c0270",
+        "clusterId": "c0388",
         "meters": 829
       }
     ]
@@ -2477,7 +2593,7 @@
   "r198": {
     "stated": [
       {
-        "clusterId": "c0207"
+        "clusterId": "c0501"
       }
     ],
     "nearby": []
@@ -2485,12 +2601,12 @@
   "r199": {
     "stated": [
       {
-        "clusterId": "c0264"
+        "clusterId": "c0070"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0260",
+        "clusterId": "c0508",
         "meters": 745
       }
     ]
@@ -2498,7 +2614,7 @@
   "r200": {
     "stated": [
       {
-        "clusterId": "c0221"
+        "clusterId": "c0570"
       }
     ],
     "nearby": []
@@ -2506,17 +2622,17 @@
   "r201": {
     "stated": [
       {
-        "clusterId": "c0271",
+        "clusterId": "c0510",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0270",
+        "clusterId": "c0388",
         "meters": 523
       },
       {
-        "clusterId": "c0272",
+        "clusterId": "c0231",
         "meters": 637
       }
     ]
@@ -2524,12 +2640,12 @@
   "r202": {
     "stated": [
       {
-        "clusterId": "c0251"
+        "clusterId": "c0222"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0254",
+        "clusterId": "c0050",
         "meters": 996
       }
     ]
@@ -2537,20 +2653,20 @@
   "r203": {
     "stated": [
       {
-        "clusterId": "c0241"
+        "clusterId": "c0066"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0237",
+        "clusterId": "c0573",
         "meters": 454
       },
       {
-        "clusterId": "c0229",
+        "clusterId": "c0571",
         "meters": 759
       },
       {
-        "clusterId": "c0236",
+        "clusterId": "c0381",
         "meters": 817
       }
     ]
@@ -2559,7 +2675,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0493",
+        "clusterId": "c0089",
         "meters": 135
       }
     ]
@@ -2568,11 +2684,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0271",
+        "clusterId": "c0510",
         "meters": 356
       },
       {
-        "clusterId": "c0274",
+        "clusterId": "c0108",
         "meters": 641
       }
     ]
@@ -2581,11 +2697,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0271",
+        "clusterId": "c0510",
         "meters": 50
       },
       {
-        "clusterId": "c0270",
+        "clusterId": "c0388",
         "meters": 667
       }
     ]
@@ -2594,7 +2710,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0212",
+        "clusterId": "c0608",
         "meters": 970
       }
     ]
@@ -2603,7 +2719,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0254",
+        "clusterId": "c0050",
         "meters": 45
       }
     ]
@@ -2612,15 +2728,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0210",
+        "clusterId": "c0373",
         "meters": 263
       },
       {
-        "clusterId": "c0209",
+        "clusterId": "c0372",
         "meters": 517
       },
       {
-        "clusterId": "c0212",
+        "clusterId": "c0608",
         "meters": 925
       }
     ]
@@ -2628,7 +2744,7 @@
   "r212": {
     "stated": [
       {
-        "clusterId": "c0477",
+        "clusterId": "c0579",
         "walkMin": 7
       }
     ],
@@ -2637,7 +2753,7 @@
   "r213": {
     "stated": [
       {
-        "clusterId": "c0469",
+        "clusterId": "c0293",
         "walkMin": 5
       }
     ],
@@ -2646,16 +2762,16 @@
   "r214": {
     "stated": [
       {
-        "clusterId": "c0470"
+        "clusterId": "c0452"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0467",
+        "clusterId": "c0292",
         "meters": 67
       },
       {
-        "clusterId": "c0468",
+        "clusterId": "c0540",
         "meters": 926
       }
     ]
@@ -2663,7 +2779,7 @@
   "r215": {
     "stated": [
       {
-        "clusterId": "c0066"
+        "clusterId": "c0487"
       }
     ],
     "nearby": []
@@ -2671,12 +2787,12 @@
   "r216": {
     "stated": [
       {
-        "clusterId": "c0466"
+        "clusterId": "c0047"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0465",
+        "clusterId": "c0577",
         "meters": 607
       }
     ]
@@ -2684,21 +2800,21 @@
   "r218": {
     "stated": [
       {
-        "clusterId": "c0462",
+        "clusterId": "c0451",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0461",
+        "clusterId": "c0450",
         "meters": 447
       },
       {
-        "clusterId": "c0463",
+        "clusterId": "c0144",
         "meters": 658
       },
       {
-        "clusterId": "c0464",
+        "clusterId": "c0291",
         "meters": 712
       }
     ]
@@ -2707,15 +2823,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0461",
+        "clusterId": "c0450",
         "meters": 558
       },
       {
-        "clusterId": "c0462",
+        "clusterId": "c0451",
         "meters": 620
       },
       {
-        "clusterId": "c0459",
+        "clusterId": "c0289",
         "meters": 740
       }
     ]
@@ -2723,7 +2839,7 @@
   "r220": {
     "stated": [
       {
-        "clusterId": "c0499"
+        "clusterId": "c0300"
       }
     ],
     "nearby": []
@@ -2731,7 +2847,7 @@
   "r222": {
     "stated": [
       {
-        "clusterId": "c0472"
+        "clusterId": "c0578"
       }
     ],
     "nearby": []
@@ -2739,7 +2855,7 @@
   "r223": {
     "stated": [
       {
-        "clusterId": "c0121"
+        "clusterId": "c0181"
       }
     ],
     "nearby": []
@@ -2747,7 +2863,7 @@
   "r224": {
     "stated": [
       {
-        "clusterId": "c0277"
+        "clusterId": "c0512"
       }
     ],
     "nearby": []
@@ -2755,7 +2871,7 @@
   "r225": {
     "stated": [
       {
-        "clusterId": "c0493"
+        "clusterId": "c0462"
       }
     ],
     "nearby": []
@@ -2763,7 +2879,7 @@
   "r226": {
     "stated": [
       {
-        "clusterId": "c0469"
+        "clusterId": "c0293"
       }
     ],
     "nearby": []
@@ -2771,7 +2887,7 @@
   "r227": {
     "stated": [
       {
-        "clusterId": "c0501"
+        "clusterId": "c0597"
       }
     ],
     "nearby": []
@@ -2779,7 +2895,7 @@
   "r229": {
     "stated": [
       {
-        "clusterId": "c0014"
+        "clusterId": "c0477"
       }
     ],
     "nearby": []
@@ -2787,12 +2903,12 @@
   "r230": {
     "stated": [
       {
-        "clusterId": "c0521"
+        "clusterId": "c0465"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0522",
+        "clusterId": "c0307",
         "meters": 464
       }
     ]
@@ -2800,10 +2916,10 @@
   "r231": {
     "stated": [
       {
-        "clusterId": "c0310"
+        "clusterId": "c0518"
       },
       {
-        "clusterId": "c0312"
+        "clusterId": "c0248"
       }
     ],
     "nearby": []
@@ -2811,7 +2927,7 @@
   "r232": {
     "stated": [
       {
-        "clusterId": "c0523"
+        "clusterId": "c0466"
       }
     ],
     "nearby": []
@@ -2819,7 +2935,7 @@
   "r233": {
     "stated": [
       {
-        "clusterId": "c0544"
+        "clusterId": "c0320"
       }
     ],
     "nearby": []
@@ -2827,7 +2943,7 @@
   "r234": {
     "stated": [
       {
-        "clusterId": "c0398"
+        "clusterId": "c0426"
       }
     ],
     "nearby": []
@@ -2835,16 +2951,16 @@
   "r235": {
     "stated": [
       {
-        "clusterId": "c0460"
+        "clusterId": "c0290"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0458",
+        "clusterId": "c0449",
         "meters": 885
       },
       {
-        "clusterId": "c0457",
+        "clusterId": "c0448",
         "meters": 905
       }
     ]
@@ -2852,12 +2968,12 @@
   "r236": {
     "stated": [
       {
-        "clusterId": "c0419"
+        "clusterId": "c0534"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0418",
+        "clusterId": "c0533",
         "meters": 598
       }
     ]
@@ -2866,15 +2982,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0417",
+        "clusterId": "c0083",
         "meters": 554
       },
       {
-        "clusterId": "c0410",
+        "clusterId": "c0430",
         "meters": 813
       },
       {
-        "clusterId": "c0416",
+        "clusterId": "c0532",
         "meters": 998
       }
     ]
@@ -2882,7 +2998,7 @@
   "r240": {
     "stated": [
       {
-        "clusterId": "c0469"
+        "clusterId": "c0293"
       }
     ],
     "nearby": []
@@ -2890,12 +3006,12 @@
   "r297": {
     "stated": [
       {
-        "clusterId": "c0519"
+        "clusterId": "c0306"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0518",
+        "clusterId": "c0010",
         "meters": 474
       }
     ]
@@ -2904,7 +3020,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0007",
+        "clusterId": "c0015",
+        "meters": 123
+      },
+      {
+        "clusterId": "c0045",
         "meters": 123
       }
     ]
@@ -2913,11 +3033,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 324
       },
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "meters": 507
       }
     ]
@@ -2925,7 +3045,7 @@
   "r294": {
     "stated": [
       {
-        "clusterId": "c0030",
+        "clusterId": "c0154",
         "walkMin": 5
       }
     ],
@@ -2934,7 +3054,7 @@
   "r295": {
     "stated": [
       {
-        "clusterId": "c0004",
+        "clusterId": "c0147",
         "walkMin": 10
       }
     ],
@@ -2944,15 +3064,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0032",
+        "clusterId": "c0480",
         "meters": 689
       },
       {
-        "clusterId": "c0033",
+        "clusterId": "c0156",
         "meters": 870
       },
       {
-        "clusterId": "c0031",
+        "clusterId": "c0155",
         "meters": 891
       }
     ]
@@ -2960,13 +3080,13 @@
   "r287": {
     "stated": [
       {
-        "clusterId": "c0545",
+        "clusterId": "c0584",
         "walkMin": 13
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0546",
+        "clusterId": "c0321",
         "meters": 996
       }
     ]
@@ -2974,13 +3094,13 @@
   "r290": {
     "stated": [
       {
-        "clusterId": "c0224",
+        "clusterId": "c0128",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0219",
+        "clusterId": "c0215",
         "meters": 544
       }
     ]
@@ -2989,11 +3109,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0382",
+        "clusterId": "c0034",
         "meters": 169
       },
       {
-        "clusterId": "c0386",
+        "clusterId": "c0606",
+        "meters": 345
+      },
+      {
+        "clusterId": "c0275",
         "meters": 380
       }
     ]
@@ -3002,7 +3126,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0520",
+        "clusterId": "c0607",
         "meters": 950
       }
     ]
@@ -3010,12 +3134,12 @@
   "r283": {
     "stated": [
       {
-        "clusterId": "c0545"
+        "clusterId": "c0584"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0546",
+        "clusterId": "c0321",
         "meters": 595
       }
     ]
@@ -3023,7 +3147,7 @@
   "r284": {
     "stated": [
       {
-        "clusterId": "c0547"
+        "clusterId": "c0599"
       }
     ],
     "nearby": []
@@ -3031,7 +3155,7 @@
   "r285": {
     "stated": [
       {
-        "clusterId": "c0545"
+        "clusterId": "c0584"
       }
     ],
     "nearby": []
@@ -3040,7 +3164,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0346",
+        "clusterId": "c0261",
         "meters": 121
       }
     ]
@@ -3049,7 +3173,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0516",
+        "clusterId": "c0090",
         "meters": 148
       }
     ]
@@ -3057,7 +3181,7 @@
   "r278": {
     "stated": [
       {
-        "clusterId": "c0525"
+        "clusterId": "c0309"
       }
     ],
     "nearby": []
@@ -3066,7 +3190,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0539",
+        "clusterId": "c0319",
         "meters": 346
       }
     ]
@@ -3075,11 +3199,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0519",
+        "clusterId": "c0306",
         "meters": 200
       },
       {
-        "clusterId": "c0518",
+        "clusterId": "c0010",
         "meters": 261
       }
     ]
@@ -3087,16 +3211,16 @@
   "r281": {
     "stated": [
       {
-        "clusterId": "c0519"
+        "clusterId": "c0306"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0518",
+        "clusterId": "c0010",
         "meters": 551
       },
       {
-        "clusterId": "c0517",
+        "clusterId": "c0118",
         "meters": 755
       }
     ]
@@ -3104,13 +3228,13 @@
   "r272": {
     "stated": [
       {
-        "clusterId": "c0442",
+        "clusterId": "c0536",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0447",
+        "clusterId": "c0287",
         "meters": 94
       }
     ]
@@ -3118,7 +3242,7 @@
   "r273": {
     "stated": [
       {
-        "clusterId": "c0485"
+        "clusterId": "c0544"
       }
     ],
     "nearby": []
@@ -3126,7 +3250,7 @@
   "r274": {
     "stated": [
       {
-        "clusterId": "c0488"
+        "clusterId": "c0456"
       }
     ],
     "nearby": []
@@ -3134,7 +3258,7 @@
   "r275": {
     "stated": [
       {
-        "clusterId": "c0314"
+        "clusterId": "c0519"
       }
     ],
     "nearby": []
@@ -3143,7 +3267,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0516",
+        "clusterId": "c0090",
         "meters": 276
       }
     ]
@@ -3151,10 +3275,10 @@
   "r267": {
     "stated": [
       {
-        "clusterId": "c0276"
+        "clusterId": "c0390"
       },
       {
-        "clusterId": "c0275"
+        "clusterId": "c0511"
       }
     ],
     "nearby": []
@@ -3163,11 +3287,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0285",
+        "clusterId": "c0236",
         "meters": 245
       },
       {
-        "clusterId": "c0286",
+        "clusterId": "c0393",
         "meters": 330
       }
     ]
@@ -3175,7 +3299,7 @@
   "r270": {
     "stated": [
       {
-        "clusterId": "c0442"
+        "clusterId": "c0536"
       }
     ],
     "nearby": []
@@ -3184,7 +3308,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0300",
+        "clusterId": "c0244",
         "meters": 316
       }
     ]
@@ -3192,12 +3316,12 @@
   "r262": {
     "stated": [
       {
-        "clusterId": "c0298"
+        "clusterId": "c0396"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0300",
+        "clusterId": "c0244",
         "meters": 752
       }
     ]
@@ -3206,7 +3330,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0300",
+        "clusterId": "c0244",
         "meters": 186
       }
     ]
@@ -3215,11 +3339,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0275",
+        "clusterId": "c0511",
         "meters": 356
       },
       {
-        "clusterId": "c0276",
+        "clusterId": "c0390",
         "meters": 480
       }
     ]
@@ -3228,7 +3352,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0290",
+        "clusterId": "c0514",
         "meters": 172
       }
     ]
@@ -3237,7 +3361,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0307",
+        "clusterId": "c0400",
         "meters": 457
       }
     ]
@@ -3246,11 +3370,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0240",
+        "clusterId": "c0219",
         "meters": 343
       },
       {
-        "clusterId": "c0243",
+        "clusterId": "c0382",
         "meters": 791
       }
     ]
@@ -3258,13 +3382,13 @@
   "r256": {
     "stated": [
       {
-        "clusterId": "c0286",
+        "clusterId": "c0393",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0285",
+        "clusterId": "c0236",
         "meters": 411
       }
     ]
@@ -3273,11 +3397,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0494",
+        "clusterId": "c0117",
         "meters": 549
       },
       {
-        "clusterId": "c0492",
+        "clusterId": "c0038",
         "meters": 593
       }
     ]
@@ -3286,11 +3410,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "meters": 203
       },
       {
-        "clusterId": "c0245",
+        "clusterId": "c0220",
         "meters": 645
       }
     ]
@@ -3299,11 +3423,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 722
       },
       {
-        "clusterId": "c0242",
+        "clusterId": "c0507",
         "meters": 985
       }
     ]
@@ -3311,12 +3435,12 @@
   "r260": {
     "stated": [
       {
-        "clusterId": "c0226"
+        "clusterId": "c0064"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0222",
+        "clusterId": "c0216",
         "meters": 659
       }
     ]
@@ -3324,11 +3448,11 @@
   "r251": {
     "stated": [
       {
-        "clusterId": "c0283",
+        "clusterId": "c0234",
         "walkMin": 3
       },
       {
-        "clusterId": "c0288",
+        "clusterId": "c0238",
         "walkMin": 3
       }
     ],
@@ -3338,7 +3462,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0493",
+        "clusterId": "c0116",
         "meters": 163
       }
     ]
@@ -3347,7 +3471,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0082",
+        "clusterId": "c0170",
         "meters": 289
       }
     ]
@@ -3355,7 +3479,7 @@
   "r246": {
     "stated": [
       {
-        "clusterId": "c0548"
+        "clusterId": "c0558"
       }
     ],
     "nearby": []
@@ -3364,15 +3488,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0450",
+        "clusterId": "c0443",
         "meters": 206
       },
       {
-        "clusterId": "c0453",
+        "clusterId": "c0538",
         "meters": 370
       },
       {
-        "clusterId": "c0451",
+        "clusterId": "c0288",
         "meters": 428
       }
     ]
@@ -3380,13 +3504,13 @@
   "r250": {
     "stated": [
       {
-        "clusterId": "c0285",
+        "clusterId": "c0236",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0286",
+        "clusterId": "c0393",
         "meters": 509
       }
     ]
@@ -3394,7 +3518,7 @@
   "r241": {
     "stated": [
       {
-        "clusterId": "c0395",
+        "clusterId": "c0276",
         "walkMin": 3
       }
     ],
@@ -3404,15 +3528,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0417",
+        "clusterId": "c0083",
         "meters": 399
       },
       {
-        "clusterId": "c0424",
+        "clusterId": "c0431",
         "meters": 563
       },
       {
-        "clusterId": "c0416",
+        "clusterId": "c0532",
         "meters": 617
       }
     ]
@@ -3420,12 +3544,12 @@
   "r243": {
     "stated": [
       {
-        "clusterId": "c0419"
+        "clusterId": "c0534"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0399",
+        "clusterId": "c0080",
         "meters": 945
       }
     ]
@@ -3433,7 +3557,7 @@
   "r244": {
     "stated": [
       {
-        "clusterId": "c0264"
+        "clusterId": "c0070"
       }
     ],
     "nearby": []
@@ -3441,13 +3565,13 @@
   "r299": {
     "stated": [
       {
-        "clusterId": "c0002",
+        "clusterId": "c0093",
         "walkMin": 11
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0003",
+        "clusterId": "c0014",
         "meters": 532
       }
     ]
@@ -3456,8 +3580,12 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0553",
+        "clusterId": "c0324",
         "meters": 202
+      },
+      {
+        "clusterId": "c0120",
+        "meters": 331
       }
     ]
   },
@@ -3465,7 +3593,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0188",
+        "clusterId": "c0062",
         "meters": 241
       }
     ]
@@ -3473,7 +3601,7 @@
   "r305": {
     "stated": [
       {
-        "clusterId": "c0268"
+        "clusterId": "c0229"
       }
     ],
     "nearby": []
@@ -3481,7 +3609,7 @@
   "r306": {
     "stated": [
       {
-        "clusterId": "c0268"
+        "clusterId": "c0229"
       }
     ],
     "nearby": []
@@ -3489,7 +3617,7 @@
   "r307": {
     "stated": [
       {
-        "clusterId": "c0203",
+        "clusterId": "c0371",
         "walkMin": 4
       }
     ],
@@ -3498,16 +3626,16 @@
   "r308": {
     "stated": [
       {
-        "clusterId": "c0508"
+        "clusterId": "c0550"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0507",
+        "clusterId": "c0302",
         "meters": 508
       },
       {
-        "clusterId": "c0506",
+        "clusterId": "c0598",
         "meters": 918
       }
     ]
@@ -3515,7 +3643,7 @@
   "r309": {
     "stated": [
       {
-        "clusterId": "c0122"
+        "clusterId": "c0353"
       }
     ],
     "nearby": []
@@ -3523,7 +3651,7 @@
   "r310": {
     "stated": [
       {
-        "clusterId": "c0122"
+        "clusterId": "c0353"
       }
     ],
     "nearby": []
@@ -3532,7 +3660,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0147",
+        "clusterId": "c0005",
         "meters": 900
       }
     ]
@@ -3540,39 +3668,43 @@
   "r312": {
     "stated": [
       {
-        "clusterId": "c0143",
+        "clusterId": "c0492",
         "walkMin": 8
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0141",
+        "clusterId": "c0191",
         "meters": 658
       },
       {
-        "clusterId": "c0142",
+        "clusterId": "c0192",
         "meters": 872
+      },
+      {
+        "clusterId": "c0190",
+        "meters": 957
       }
     ]
   },
   "r313": {
     "stated": [
       {
-        "clusterId": "c0137",
+        "clusterId": "c0356",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0138",
+        "clusterId": "c0491",
         "meters": 223
       },
       {
-        "clusterId": "c0139",
+        "clusterId": "c0189",
         "meters": 733
       },
       {
-        "clusterId": "c0136",
+        "clusterId": "c0056",
         "meters": 806
       }
     ]
@@ -3580,12 +3712,12 @@
   "r314": {
     "stated": [
       {
-        "clusterId": "c0130"
+        "clusterId": "c0355"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0136",
+        "clusterId": "c0056",
         "meters": 382
       }
     ]
@@ -3593,21 +3725,21 @@
   "r315": {
     "stated": [
       {
-        "clusterId": "c0138",
+        "clusterId": "c0491",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0137",
+        "clusterId": "c0356",
         "meters": 94
       },
       {
-        "clusterId": "c0136",
+        "clusterId": "c0056",
         "meters": 755
       },
       {
-        "clusterId": "c0139",
+        "clusterId": "c0189",
         "meters": 793
       }
     ]
@@ -3615,13 +3747,13 @@
   "r316": {
     "stated": [
       {
-        "clusterId": "c0101",
+        "clusterId": "c0349",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0100",
+        "clusterId": "c0054",
         "meters": 274
       }
     ]
@@ -3630,15 +3762,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0099",
+        "clusterId": "c0489",
         "meters": 217
       },
       {
-        "clusterId": "c0103",
+        "clusterId": "c0565",
         "meters": 663
       },
       {
-        "clusterId": "c0098",
+        "clusterId": "c0348",
         "meters": 999
       }
     ]
@@ -3646,7 +3778,7 @@
   "r318": {
     "stated": [
       {
-        "clusterId": "c0101"
+        "clusterId": "c0349"
       }
     ],
     "nearby": []
@@ -3654,7 +3786,7 @@
   "r319": {
     "stated": [
       {
-        "clusterId": "c0144"
+        "clusterId": "c0358"
       }
     ],
     "nearby": []
@@ -3663,11 +3795,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0029",
+        "clusterId": "c0009",
         "meters": 283
       },
       {
-        "clusterId": "c0028",
+        "clusterId": "c0479",
         "meters": 606
       }
     ]
@@ -3675,16 +3807,16 @@
   "r321": {
     "stated": [
       {
-        "clusterId": "c0028"
+        "clusterId": "c0479"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0027",
+        "clusterId": "c0153",
         "meters": 527
       },
       {
-        "clusterId": "c0029",
+        "clusterId": "c0009",
         "meters": 669
       }
     ]
@@ -3692,12 +3824,12 @@
   "r322": {
     "stated": [
       {
-        "clusterId": "c0129"
+        "clusterId": "c0026"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0133",
+        "clusterId": "c0187",
         "meters": 723
       }
     ]
@@ -3706,7 +3838,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0012",
+        "clusterId": "c0148",
         "meters": 254
       }
     ]
@@ -3714,20 +3846,20 @@
   "r324": {
     "stated": [
       {
-        "clusterId": "c0139"
+        "clusterId": "c0189"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0138",
+        "clusterId": "c0491",
         "meters": 407
       },
       {
-        "clusterId": "c0137",
+        "clusterId": "c0356",
         "meters": 742
       },
       {
-        "clusterId": "c0140",
+        "clusterId": "c0357",
         "meters": 898
       }
     ]
@@ -3735,7 +3867,7 @@
   "r325": {
     "stated": [
       {
-        "clusterId": "c0092"
+        "clusterId": "c0174"
       }
     ],
     "nearby": []
@@ -3743,12 +3875,12 @@
   "r326": {
     "stated": [
       {
-        "clusterId": "c0090"
+        "clusterId": "c0041"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0091",
+        "clusterId": "c0346",
         "meters": 866
       }
     ]
@@ -3757,7 +3889,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0134",
+        "clusterId": "c0101",
         "meters": 301
       }
     ]
@@ -3765,17 +3897,17 @@
   "r333": {
     "stated": [
       {
-        "clusterId": "c0058",
+        "clusterId": "c0589",
         "walkMin": 25
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0059",
+        "clusterId": "c0484",
         "meters": 301
       },
       {
-        "clusterId": "c0057",
+        "clusterId": "c0588",
         "meters": 758
       }
     ]
@@ -3784,29 +3916,37 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0536",
+        "clusterId": "c0318",
         "meters": 183
+      },
+      {
+        "clusterId": "c0012",
+        "meters": 206
+      },
+      {
+        "clusterId": "c0468",
+        "meters": 273
       }
     ]
   },
   "r335": {
     "stated": [
       {
-        "clusterId": "c0022",
+        "clusterId": "c0095",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0023",
+        "clusterId": "c0150",
         "meters": 506
       },
       {
-        "clusterId": "c0021",
+        "clusterId": "c0327",
         "meters": 757
       },
       {
-        "clusterId": "c0020",
+        "clusterId": "c0326",
         "meters": 884
       }
     ]
@@ -3815,7 +3955,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0510",
+        "clusterId": "c0145",
         "meters": 582
       }
     ]
@@ -3824,7 +3964,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0060",
+        "clusterId": "c0485",
         "meters": 174
       }
     ]
@@ -3832,7 +3972,7 @@
   "r345": {
     "stated": [
       {
-        "clusterId": "c0514"
+        "clusterId": "c0305"
       }
     ],
     "nearby": []
@@ -3850,7 +3990,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0246",
+        "clusterId": "c0383",
         "meters": 544
       }
     ]
@@ -3859,7 +3999,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0446",
+        "clusterId": "c0286",
         "meters": 974
       }
     ]
@@ -3868,7 +4008,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0019",
+        "clusterId": "c0039",
         "meters": 343
       }
     ]
@@ -3876,7 +4016,7 @@
   "r354": {
     "stated": [
       {
-        "clusterId": "c0246",
+        "clusterId": "c0383",
         "walkMin": 10
       }
     ],
@@ -3885,13 +4025,13 @@
   "r357": {
     "stated": [
       {
-        "clusterId": "c0263",
+        "clusterId": "c0226",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0261",
+        "clusterId": "c0224",
         "meters": 794
       }
     ]
@@ -3899,7 +4039,7 @@
   "r358": {
     "stated": [
       {
-        "clusterId": "c0489",
+        "clusterId": "c0299",
         "walkMin": 5
       }
     ],
@@ -3908,7 +4048,7 @@
   "r360": {
     "stated": [
       {
-        "clusterId": "c0252",
+        "clusterId": "c0107",
         "walkMin": 10
       }
     ],
@@ -3917,7 +4057,7 @@
   "r361": {
     "stated": [
       {
-        "clusterId": "c0258",
+        "clusterId": "c0133",
         "walkMin": 3
       }
     ],
@@ -3926,7 +4066,7 @@
   "r362": {
     "stated": [
       {
-        "clusterId": "c0018",
+        "clusterId": "c0008",
         "walkMin": 5
       }
     ],
@@ -3935,7 +4075,7 @@
   "r363": {
     "stated": [
       {
-        "clusterId": "c0055"
+        "clusterId": "c0164"
       }
     ],
     "nearby": []
@@ -3943,7 +4083,7 @@
   "r365": {
     "stated": [
       {
-        "clusterId": "c0476"
+        "clusterId": "c0296"
       }
     ],
     "nearby": []
@@ -3952,7 +4092,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0013",
+        "clusterId": "c0094",
         "meters": 956
       }
     ]
@@ -3960,16 +4100,16 @@
   "r368": {
     "stated": [
       {
-        "clusterId": "c0193"
+        "clusterId": "c0568"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0189",
+        "clusterId": "c0027",
         "meters": 636
       },
       {
-        "clusterId": "c0195",
+        "clusterId": "c0499",
         "meters": 711
       }
     ]
@@ -3978,7 +4118,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0556",
+        "clusterId": "c0325",
         "meters": 972
       }
     ]
@@ -3987,7 +4127,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0055",
+        "clusterId": "c0164",
         "meters": 584
       }
     ]
@@ -3996,11 +4136,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0125",
+        "clusterId": "c0055",
         "meters": 147
       },
       {
-        "clusterId": "c0124",
+        "clusterId": "c0354",
         "meters": 868
       }
     ]
@@ -4009,7 +4149,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0044",
+        "clusterId": "c0158",
         "meters": 97
       }
     ]
@@ -4017,12 +4157,12 @@
   "r374": {
     "stated": [
       {
-        "clusterId": "c0549"
+        "clusterId": "c0585"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0550",
+        "clusterId": "c0322",
         "meters": 724
       }
     ]
@@ -4030,13 +4170,13 @@
   "r376": {
     "stated": [
       {
-        "clusterId": "c0041",
+        "clusterId": "c0482",
         "walkMin": 10
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0040",
+        "clusterId": "c0157",
         "meters": 961
       }
     ]
@@ -4044,7 +4184,7 @@
   "r378": {
     "stated": [
       {
-        "clusterId": "c0049"
+        "clusterId": "c0160"
       }
     ],
     "nearby": []
@@ -4053,7 +4193,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0135",
+        "clusterId": "c0188",
         "meters": 191
       }
     ]
@@ -4062,7 +4202,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0062",
+        "clusterId": "c0334",
         "meters": 764
       }
     ]
@@ -4070,7 +4210,7 @@
   "r382": {
     "stated": [
       {
-        "clusterId": "c0048",
+        "clusterId": "c0021",
         "walkMin": 2
       }
     ],
@@ -4080,7 +4220,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0452",
+        "clusterId": "c0444",
         "meters": 735
       }
     ]
@@ -4089,7 +4229,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0075",
+        "clusterId": "c0340",
         "meters": 384
       }
     ]
@@ -4097,7 +4237,7 @@
   "r388": {
     "stated": [
       {
-        "clusterId": "c0042"
+        "clusterId": "c0097"
       }
     ],
     "nearby": []
@@ -4106,7 +4246,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0145",
+        "clusterId": "c0057",
         "meters": 295
       }
     ]
@@ -4115,11 +4255,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0512",
+        "clusterId": "c0552",
         "meters": 589
       },
       {
-        "clusterId": "c0513",
+        "clusterId": "c0304",
         "meters": 845
       }
     ]
@@ -4127,13 +4267,13 @@
   "r391": {
     "stated": [
       {
-        "clusterId": "c0106",
+        "clusterId": "c0567",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0108",
+        "clusterId": "c0042",
         "meters": 566
       }
     ]
@@ -4141,7 +4281,7 @@
   "r392": {
     "stated": [
       {
-        "clusterId": "c0328",
+        "clusterId": "c0013",
         "walkMin": 2
       }
     ],
@@ -4150,7 +4290,7 @@
   "r393": {
     "stated": [
       {
-        "clusterId": "c0039",
+        "clusterId": "c0018",
         "walkMin": 15
       }
     ],
@@ -4159,7 +4299,7 @@
   "r394": {
     "stated": [
       {
-        "clusterId": "c0478"
+        "clusterId": "c0542"
       }
     ],
     "nearby": []
@@ -4168,7 +4308,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0019",
+        "clusterId": "c0039",
         "meters": 249
       }
     ]
@@ -4176,7 +4316,7 @@
   "r397": {
     "stated": [
       {
-        "clusterId": "c0128"
+        "clusterId": "c0185"
       }
     ],
     "nearby": []
@@ -4184,7 +4324,7 @@
   "r398": {
     "stated": [
       {
-        "clusterId": "c0049"
+        "clusterId": "c0160"
       }
     ],
     "nearby": []
@@ -4193,37 +4333,41 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0024",
+        "clusterId": "c0328",
         "meters": 239
       },
       {
-        "clusterId": "c0025",
+        "clusterId": "c0329",
         "meters": 321
+      },
+      {
+        "clusterId": "c0017",
+        "meters": 498
       }
     ]
   },
   "r401": {
     "stated": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "walkMin": 4
       },
       {
-        "clusterId": "c0231",
+        "clusterId": "c0129",
         "walkMin": 4
       },
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0240",
+        "clusterId": "c0219",
         "meters": 807
       },
       {
-        "clusterId": "c0227",
+        "clusterId": "c0504",
         "meters": 923
       }
     ]
@@ -4231,13 +4375,13 @@
   "r402": {
     "stated": [
       {
-        "clusterId": "c0106",
+        "clusterId": "c0567",
         "walkMin": 10
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0108",
+        "clusterId": "c0042",
         "meters": 619
       }
     ]
@@ -4246,15 +4390,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0222",
+        "clusterId": "c0216",
         "meters": 247
       },
       {
-        "clusterId": "c0229",
+        "clusterId": "c0571",
         "meters": 572
       },
       {
-        "clusterId": "c0237",
+        "clusterId": "c0573",
         "meters": 910
       }
     ]
@@ -4263,11 +4407,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0345",
+        "clusterId": "c0074",
         "meters": 376
       },
       {
-        "clusterId": "c0347",
+        "clusterId": "c0410",
         "meters": 823
       }
     ]
@@ -4275,20 +4419,20 @@
   "r405": {
     "stated": [
       {
-        "clusterId": "c0231"
+        "clusterId": "c0129"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0239",
+        "clusterId": "c0218",
         "meters": 517
       },
       {
-        "clusterId": "c0230",
+        "clusterId": "c0591",
         "meters": 614
       },
       {
-        "clusterId": "c0238",
+        "clusterId": "c0506",
         "meters": 621
       }
     ]
@@ -4296,7 +4440,7 @@
   "r406": {
     "stated": [
       {
-        "clusterId": "c0248"
+        "clusterId": "c0384"
       }
     ],
     "nearby": []
@@ -4304,12 +4448,12 @@
   "r407": {
     "stated": [
       {
-        "clusterId": "c0154"
+        "clusterId": "c0493"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0156",
+        "clusterId": "c0362",
         "meters": 219
       }
     ]
@@ -4317,12 +4461,12 @@
   "r408": {
     "stated": [
       {
-        "clusterId": "c0154"
+        "clusterId": "c0493"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0156",
+        "clusterId": "c0362",
         "meters": 535
       }
     ]
@@ -4330,7 +4474,7 @@
   "r410": {
     "stated": [
       {
-        "clusterId": "c0250"
+        "clusterId": "c0068"
       }
     ],
     "nearby": []
@@ -4339,7 +4483,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0313",
+        "clusterId": "c0030",
         "meters": 235
       }
     ]
@@ -4348,7 +4492,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0250",
+        "clusterId": "c0068",
         "meters": 656
       }
     ]
@@ -4357,7 +4501,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0303",
+        "clusterId": "c0134",
         "meters": 268
       }
     ]
@@ -4365,7 +4509,7 @@
   "r415": {
     "stated": [
       {
-        "clusterId": "c0287"
+        "clusterId": "c0237"
       }
     ],
     "nearby": []
@@ -4374,7 +4518,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0215",
+        "clusterId": "c0376",
         "meters": 973
       }
     ]
@@ -4383,7 +4527,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0303",
+        "clusterId": "c0134",
         "meters": 105
       }
     ]
@@ -4392,7 +4536,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0282",
+        "clusterId": "c0233",
         "meters": 590
       }
     ]
@@ -4400,7 +4544,7 @@
   "r419": {
     "stated": [
       {
-        "clusterId": "c0287"
+        "clusterId": "c0237"
       }
     ],
     "nearby": []
@@ -4408,7 +4552,7 @@
   "r421": {
     "stated": [
       {
-        "clusterId": "c0217"
+        "clusterId": "c0569"
       }
     ],
     "nearby": []
@@ -4416,7 +4560,7 @@
   "r422": {
     "stated": [
       {
-        "clusterId": "c0509",
+        "clusterId": "c0551",
         "walkMin": 5
       }
     ],
@@ -4425,7 +4569,7 @@
   "r423": {
     "stated": [
       {
-        "clusterId": "c0150"
+        "clusterId": "c0193"
       }
     ],
     "nearby": []
@@ -4433,7 +4577,7 @@
   "r424": {
     "stated": [
       {
-        "clusterId": "c0045"
+        "clusterId": "c0483"
       }
     ],
     "nearby": []
@@ -4441,12 +4585,12 @@
   "r426": {
     "stated": [
       {
-        "clusterId": "c0232"
+        "clusterId": "c0572"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0233",
+        "clusterId": "c0505",
         "meters": 684
       }
     ]
@@ -4454,7 +4598,7 @@
   "r427": {
     "stated": [
       {
-        "clusterId": "c0046"
+        "clusterId": "c0159"
       }
     ],
     "nearby": []
@@ -4462,7 +4606,7 @@
   "r428": {
     "stated": [
       {
-        "clusterId": "c0471"
+        "clusterId": "c0294"
       }
     ],
     "nearby": []
@@ -4471,7 +4615,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0355",
+        "clusterId": "c0265",
         "meters": 719
       }
     ]
@@ -4479,13 +4623,13 @@
   "r432": {
     "stated": [
       {
-        "clusterId": "c0294",
+        "clusterId": "c0241",
         "walkMin": 3
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0297",
+        "clusterId": "c0395",
         "meters": 950
       }
     ]
@@ -4493,7 +4637,7 @@
   "r433": {
     "stated": [
       {
-        "clusterId": "c0206",
+        "clusterId": "c0028",
         "walkMin": 10
       }
     ],
@@ -4502,7 +4646,7 @@
   "r434": {
     "stated": [
       {
-        "clusterId": "c0001",
+        "clusterId": "c0146",
         "walkMin": 10
       }
     ],
@@ -4512,7 +4656,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0047",
+        "clusterId": "c0020",
         "meters": 810
       }
     ]
@@ -4520,12 +4664,12 @@
   "r436": {
     "stated": [
       {
-        "clusterId": "c0282"
+        "clusterId": "c0233"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0280",
+        "clusterId": "c0392",
         "meters": 490
       }
     ]
@@ -4534,7 +4678,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0017",
+        "clusterId": "c0149",
         "meters": 351
       }
     ]
@@ -4542,17 +4686,17 @@
   "r439": {
     "stated": [
       {
-        "clusterId": "c0473",
+        "clusterId": "c0132",
         "walkMin": 8
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0475",
+        "clusterId": "c0295",
         "meters": 784
       },
       {
-        "clusterId": "c0474",
+        "clusterId": "c0541",
         "meters": 831
       }
     ]
@@ -4561,7 +4705,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0131",
+        "clusterId": "c0100",
         "meters": 383
       }
     ]
@@ -4570,7 +4714,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0131",
+        "clusterId": "c0100",
         "meters": 170
       }
     ]
@@ -4579,7 +4723,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0296",
+        "clusterId": "c0243",
         "meters": 417
       }
     ]
@@ -4587,7 +4731,7 @@
   "r443": {
     "stated": [
       {
-        "clusterId": "c0070",
+        "clusterId": "c0337",
         "walkMin": 5
       }
     ],
@@ -4596,7 +4740,7 @@
   "r444": {
     "stated": [
       {
-        "clusterId": "c0278",
+        "clusterId": "c0391",
         "walkMin": 10
       }
     ],
@@ -4606,7 +4750,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0281",
+        "clusterId": "c0232",
         "meters": 939
       }
     ]
@@ -4615,7 +4759,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0043",
+        "clusterId": "c0019",
         "meters": 841
       }
     ]
@@ -4624,7 +4768,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0511",
+        "clusterId": "c0303",
         "meters": 488
       }
     ]
@@ -4632,7 +4776,7 @@
   "r451": {
     "stated": [
       {
-        "clusterId": "c0131"
+        "clusterId": "c0100"
       }
     ],
     "nearby": []
@@ -4640,7 +4784,7 @@
   "r452": {
     "stated": [
       {
-        "clusterId": "c0284",
+        "clusterId": "c0235",
         "walkMin": 15
       }
     ],
@@ -4649,7 +4793,7 @@
   "r453": {
     "stated": [
       {
-        "clusterId": "c0211"
+        "clusterId": "c0374"
       }
     ],
     "nearby": []
@@ -4657,7 +4801,7 @@
   "r456": {
     "stated": [
       {
-        "clusterId": "c0038"
+        "clusterId": "c0052"
       }
     ],
     "nearby": []
@@ -4665,7 +4809,7 @@
   "r457": {
     "stated": [
       {
-        "clusterId": "c0127",
+        "clusterId": "c0184",
         "walkMin": 5
       }
     ],
@@ -4674,7 +4818,7 @@
   "r458": {
     "stated": [
       {
-        "clusterId": "c0074",
+        "clusterId": "c0167",
         "walkMin": 1
       }
     ],
@@ -4684,7 +4828,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0068",
+        "clusterId": "c0563",
         "meters": 229
       }
     ]
@@ -4693,7 +4837,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0127",
+        "clusterId": "c0184",
         "meters": 381
       }
     ]
@@ -4701,7 +4845,7 @@
   "r461": {
     "stated": [
       {
-        "clusterId": "c0089"
+        "clusterId": "c0173"
       }
     ],
     "nearby": []
@@ -4709,7 +4853,7 @@
   "r464": {
     "stated": [
       {
-        "clusterId": "c0073"
+        "clusterId": "c0339"
       }
     ],
     "nearby": []
@@ -4718,7 +4862,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0296",
+        "clusterId": "c0243",
         "meters": 62
       }
     ]
@@ -4727,11 +4871,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0070",
+        "clusterId": "c0337",
         "meters": 673
       },
       {
-        "clusterId": "c0069",
+        "clusterId": "c0336",
         "meters": 796
       }
     ]
@@ -4739,17 +4883,17 @@
   "r467": {
     "stated": [
       {
-        "clusterId": "c0504",
+        "clusterId": "c0603",
         "walkMin": 4
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0505",
+        "clusterId": "c0463",
         "meters": 452
       },
       {
-        "clusterId": "c0503",
+        "clusterId": "c0301",
         "meters": 640
       }
     ]
@@ -4757,13 +4901,13 @@
   "r468": {
     "stated": [
       {
-        "clusterId": "c0054",
+        "clusterId": "c0333",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0056",
+        "clusterId": "c0022",
         "meters": 628
       }
     ]
@@ -4771,7 +4915,7 @@
   "r469": {
     "stated": [
       {
-        "clusterId": "c0269",
+        "clusterId": "c0230",
         "walkMin": 1
       }
     ],
@@ -4780,13 +4924,13 @@
   "r470": {
     "stated": [
       {
-        "clusterId": "c0051",
+        "clusterId": "c0161",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0052",
+        "clusterId": "c0162",
         "meters": 906
       }
     ]
@@ -4794,7 +4938,7 @@
   "r472": {
     "stated": [
       {
-        "clusterId": "c0117",
+        "clusterId": "c0142",
         "walkMin": 15
       }
     ],
@@ -4803,17 +4947,17 @@
   "r473": {
     "stated": [
       {
-        "clusterId": "c0050",
+        "clusterId": "c0332",
         "walkMin": 6
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0052",
+        "clusterId": "c0162",
         "meters": 404
       },
       {
-        "clusterId": "c0051",
+        "clusterId": "c0161",
         "meters": 810
       }
     ]
@@ -4821,7 +4965,7 @@
   "r474": {
     "stated": [
       {
-        "clusterId": "c0123",
+        "clusterId": "c0182",
         "walkMin": 10
       }
     ],
@@ -4830,7 +4974,7 @@
   "r475": {
     "stated": [
       {
-        "clusterId": "c0132"
+        "clusterId": "c0186"
       }
     ],
     "nearby": []
@@ -4838,7 +4982,7 @@
   "r476": {
     "stated": [
       {
-        "clusterId": "c0084",
+        "clusterId": "c0344",
         "walkMin": 6
       }
     ],
@@ -4847,7 +4991,7 @@
   "r477": {
     "stated": [
       {
-        "clusterId": "c0126",
+        "clusterId": "c0183",
         "walkMin": 20
       }
     ],
@@ -4856,7 +5000,7 @@
   "r479": {
     "stated": [
       {
-        "clusterId": "c0072"
+        "clusterId": "c0338"
       }
     ],
     "nearby": []
@@ -4864,7 +5008,7 @@
   "r480": {
     "stated": [
       {
-        "clusterId": "c0015",
+        "clusterId": "c0478",
         "walkMin": 4
       }
     ],
@@ -4874,7 +5018,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0191",
+        "clusterId": "c0127",
         "meters": 218
       }
     ]
@@ -4883,7 +5027,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0293",
+        "clusterId": "c0515",
         "meters": 266
       }
     ]
@@ -4892,7 +5036,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0289",
+        "clusterId": "c0239",
         "meters": 274
       }
     ]
@@ -4900,13 +5044,13 @@
   "r484": {
     "stated": [
       {
-        "clusterId": "c0192",
+        "clusterId": "c0063",
         "walkMin": 5
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0190",
+        "clusterId": "c0206",
         "meters": 984
       }
     ]
@@ -4914,7 +5058,7 @@
   "r485": {
     "stated": [
       {
-        "clusterId": "c0301"
+        "clusterId": "c0517"
       }
     ],
     "nearby": []
@@ -4922,7 +5066,7 @@
   "r486": {
     "stated": [
       {
-        "clusterId": "c0192"
+        "clusterId": "c0063"
       }
     ],
     "nearby": []
@@ -4931,15 +5075,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0332",
+        "clusterId": "c0252",
         "meters": 206
       },
       {
-        "clusterId": "c0330",
+        "clusterId": "c0135",
         "meters": 239
       },
       {
-        "clusterId": "c0334",
+        "clusterId": "c0254",
         "meters": 425
       }
     ]
@@ -4948,7 +5092,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0151",
+        "clusterId": "c0194",
         "meters": 440
       }
     ]
@@ -4957,7 +5101,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0308",
+        "clusterId": "c0246",
         "meters": 244
       }
     ]
@@ -4965,7 +5109,7 @@
   "r491": {
     "stated": [
       {
-        "clusterId": "c0292",
+        "clusterId": "c0394",
         "walkMin": 5
       }
     ],
@@ -4975,7 +5119,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0191",
+        "clusterId": "c0127",
         "meters": 926
       }
     ]
@@ -4984,11 +5128,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0302",
+        "clusterId": "c0397",
         "meters": 608
       },
       {
-        "clusterId": "c0299",
+        "clusterId": "c0516",
         "meters": 964
       }
     ]
@@ -4997,7 +5141,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0542",
+        "clusterId": "c0556",
         "meters": 580
       }
     ]
@@ -5005,7 +5149,7 @@
   "r495": {
     "stated": [
       {
-        "clusterId": "c0483"
+        "clusterId": "c0454"
       }
     ],
     "nearby": []
@@ -5013,7 +5157,7 @@
   "r496": {
     "stated": [
       {
-        "clusterId": "c0558"
+        "clusterId": "c0474"
       }
     ],
     "nearby": []
@@ -5021,7 +5165,7 @@
   "r497": {
     "stated": [
       {
-        "clusterId": "c0202"
+        "clusterId": "c0210"
       }
     ],
     "nearby": []
@@ -5029,7 +5173,7 @@
   "r498": {
     "stated": [
       {
-        "clusterId": "c0291"
+        "clusterId": "c0240"
       }
     ],
     "nearby": []
@@ -5038,7 +5182,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0448",
+        "clusterId": "c0086",
         "meters": 446
       }
     ]
@@ -5046,7 +5190,7 @@
   "r501": {
     "stated": [
       {
-        "clusterId": "c0088",
+        "clusterId": "c0172",
         "walkMin": 1
       }
     ],
@@ -5055,7 +5199,7 @@
   "r502": {
     "stated": [
       {
-        "clusterId": "c0120"
+        "clusterId": "c0490"
       }
     ],
     "nearby": []
@@ -5063,7 +5207,7 @@
   "r503": {
     "stated": [
       {
-        "clusterId": "c0279"
+        "clusterId": "c0513"
       }
     ],
     "nearby": []
@@ -5071,17 +5215,17 @@
   "r504": {
     "stated": [
       {
-        "clusterId": "c0035",
+        "clusterId": "c0330",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0037",
+        "clusterId": "c0481",
         "meters": 775
       },
       {
-        "clusterId": "c0036",
+        "clusterId": "c0331",
         "meters": 877
       }
     ]
@@ -5089,7 +5233,7 @@
   "r505": {
     "stated": [
       {
-        "clusterId": "c0316",
+        "clusterId": "c0249",
         "walkMin": 4
       }
     ],
@@ -5098,13 +5242,13 @@
   "r506": {
     "stated": [
       {
-        "clusterId": "c0148",
+        "clusterId": "c0605",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0146",
+        "clusterId": "c0359",
         "meters": 766
       }
     ]
@@ -5113,7 +5257,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0491",
+        "clusterId": "c0037",
         "meters": 425
       }
     ]
@@ -5122,7 +5266,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0455",
+        "clusterId": "c0539",
         "meters": 91
       }
     ]
@@ -5131,11 +5275,11 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0305",
+        "clusterId": "c0398",
         "meters": 238
       },
       {
-        "clusterId": "c0306",
+        "clusterId": "c0399",
         "meters": 737
       }
     ]
@@ -5144,15 +5288,19 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0543",
+        "clusterId": "c0557",
         "meters": 128
+      },
+      {
+        "clusterId": "c0471",
+        "meters": 441
       }
     ]
   },
   "r512": {
     "stated": [
       {
-        "clusterId": "c0293"
+        "clusterId": "c0515"
       }
     ],
     "nearby": []
@@ -5160,7 +5308,7 @@
   "r514": {
     "stated": [
       {
-        "clusterId": "c0265"
+        "clusterId": "c0227"
       }
     ],
     "nearby": []
@@ -5168,12 +5316,12 @@
   "r515": {
     "stated": [
       {
-        "clusterId": "c0080"
+        "clusterId": "c0343"
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0079",
+        "clusterId": "c0342",
         "meters": 762
       }
     ]
@@ -5181,7 +5329,7 @@
   "r516": {
     "stated": [
       {
-        "clusterId": "c0053"
+        "clusterId": "c0163"
       }
     ],
     "nearby": []
@@ -5190,15 +5338,15 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0534",
+        "clusterId": "c0314",
         "meters": 428
       },
       {
-        "clusterId": "c0533",
+        "clusterId": "c0313",
         "meters": 649
       },
       {
-        "clusterId": "c0532",
+        "clusterId": "c0467",
         "meters": 651
       }
     ]
@@ -5206,17 +5354,17 @@
   "r520": {
     "stated": [
       {
-        "clusterId": "c0117",
+        "clusterId": "c0142",
         "walkMin": 1
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0115",
+        "clusterId": "c0178",
         "meters": 927
       },
       {
-        "clusterId": "c0116",
+        "clusterId": "c0179",
         "meters": 929
       }
     ]
@@ -5225,7 +5373,7 @@
     "stated": [],
     "nearby": [
       {
-        "clusterId": "c0511",
+        "clusterId": "c0303",
         "meters": 245
       }
     ]
@@ -5233,17 +5381,17 @@
   "r523": {
     "stated": [
       {
-        "clusterId": "c0149",
+        "clusterId": "c0360",
         "walkMin": 2
       }
     ],
     "nearby": [
       {
-        "clusterId": "c0155",
+        "clusterId": "c0196",
         "meters": 49
       },
       {
-        "clusterId": "c0153",
+        "clusterId": "c0361",
         "meters": 785
       }
     ]
@@ -5251,7 +5399,7 @@
   "r524": {
     "stated": [
       {
-        "clusterId": "c0515"
+        "clusterId": "c0464"
       }
     ],
     "nearby": []
@@ -5259,7 +5407,7 @@
   "r525": {
     "stated": [
       {
-        "clusterId": "c0495"
+        "clusterId": "c0461"
       }
     ],
     "nearby": []

@@ -50,27 +50,24 @@ export function getStoreIdsByStation(clusterId: string): string[] {
 }
 
 export function getStationsForStore(storeId: string): (StationCluster & { type: 'stated' | 'nearby'; walkMin?: number; meters?: number })[] {
-  const entry = storeStations[storeId as keyof typeof storeStations] as any;
+  const entry = storeStations[storeId as keyof typeof storeStations];
   if (!entry) return [];
 
   const result: any[] = [];
   if (entry.stated) {
-    entry.stated.forEach((s: any) => {
+    entry.stated.forEach(s => {
       const station = stations[s.clusterId as keyof typeof stations];
       if (station) {
-        const item: any = {
+        result.push({
           ...station,
           type: 'stated' as const,
-        };
-        if (s.walkMin !== undefined) {
-          item.walkMin = s.walkMin;
-        }
-        result.push(item);
+          walkMin: s.walkMin,
+        });
       }
     });
   }
   if (entry.nearby) {
-    entry.nearby.forEach((n: any) => {
+    entry.nearby.forEach(n => {
       const station = stations[n.clusterId as keyof typeof stations];
       if (station) {
         result.push({
@@ -89,7 +86,7 @@ export function findStationByName(name: string, pref?: string): StationCluster |
     if (st.name === name) {
       return !pref || st.pref === pref;
     }
-    if ((st.aliases as string[]).includes(name)) {
+    if (st.aliases.includes(name)) {
       return !pref || st.pref === pref;
     }
     return false;

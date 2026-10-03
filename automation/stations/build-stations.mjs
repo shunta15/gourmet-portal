@@ -185,44 +185,31 @@ function extractWalkingMinutes(stationText) {
 }
 
 function clusterStations(stationsForOutput) {
+  // 乗り換え駅をまとめる。路線数の多い駅を中心にして、その中心から 300m 以内の駅だけを同じエリアにする。
+  // 「隣の隣」まで連鎖させると、路面電車のように 300m 間隔で駅が続く所（広島の市内線など）で
+  // 市の中心部が丸ごと1エリアになってしまったため、連鎖はしない（2026-10-03）。
+  const CLUSTER_RADIUS_M = 300;
   const clusters = [];
-  const visited = new Set();
-  const stationIndex = {};
-
-  Object.entries(stationsForOutput).forEach(([id, st]) => {
-    stationIndex[id] = st;
+  const assigned = new Set();
+  const ids = Object.keys(stationsForOutput).sort((x, y) => {
+    const a = stationsForOutput[x], b = stationsForOutput[y];
+    return (b.lines?.length || 0) - (a.lines?.length || 0) || a.name.length - b.name.length || x.localeCompare(y);
   });
-
-  Object.entries(stationIndex).forEach(([stationId, station]) => {
-    if (visited.has(stationId)) return;
-
-    const cluster = [stationId];
-    visited.add(stationId);
-    const queue = [stationId];
-
-    while (queue.length > 0) {
-      const current = queue.shift();
-      const currentSt = stationIndex[current];
-
-      Object.entries(stationIndex).forEach(([otherId, otherSt]) => {
-        if (visited.has(otherId)) return;
-
-        const dist = haversineDistance(
-          currentSt.lat, currentSt.lng,
-          otherSt.lat, otherSt.lng
-        );
-
-        if (dist <= 350) {
-          visited.add(otherId);
-          cluster.push(otherId);
-          queue.push(otherId);
-        }
-      });
+  for (const seedId of ids) {
+    if (assigned.has(seedId)) continue;
+    const seed = stationsForOutput[seedId];
+    const cluster = [seedId];
+    assigned.add(seedId);
+    for (const otherId of ids) {
+      if (assigned.has(otherId)) continue;
+      const o = stationsForOutput[otherId];
+      if (haversineDistance(seed.lat, seed.lng, o.lat, o.lng) <= CLUSTER_RADIUS_M) {
+        cluster.push(otherId);
+        assigned.add(otherId);
+      }
     }
-
     clusters.push(cluster);
-  });
-
+  }
   return clusters;
 }
 
@@ -384,7 +371,7 @@ async function main() {
   });
 
   // クラスタ化
-  console.log("\n駅クラスタを構築中（350m以内を連結）...");
+  console.log("\n駅クラスタを構築中（中心駅から300m以内）...");
   const clusters = clusterStations(stationsForOutput);
   const { clustersForOutput, clusterIdMap } = buildClusterOutput(clusters, stationsForOutput, prefsByCode);
 
