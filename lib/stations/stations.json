@@ -1,0 +1,10594 @@
+{
+  "st0001": {
+    "id": "st0001",
+    "name": "北見",
+    "pref": null,
+    "lat": 43.80542,
+    "lng": 143.89814,
+    "lines": [
+      {
+        "line": "石北線",
+        "operator": "北海道旅客鉄道"
+      }
+    ],
+    "slug": "unknown/北見"
+  },
+  "st0002": {
+    "id": "st0002",
+    "name": "旭川",
+    "pref": null,
+    "lat": 43.76306,
+    "lng": 142.35802,
+    "lines": [
+      {
+        "line": "宗谷線",
+        "operator": "北海道旅客鉄道"
+      },
+      {
+        "line": "函館線",
+        "operator": "北海道旅客鉄道"
+      },
+      {
+        "line": "富良野線",
+        "operator": "北海道旅客鉄道"
+      }
+    ],
+    "slug": "unknown/旭川"
+  },
+  "st0003": {
+    "id": "st0003",
+    "name": "当別",
+    "pref": null,
+    "lat": 43.22214,
+    "lng": 141.51379,
+    "lines": [
+      {
+        "line": "札沼線",
+        "operator": "北海道旅客鉄道"
+      }
+    ],
+    "slug": "unknown/当別"
+  },
+  "st0004": {
+    "id": "st0004",
+    "name": "麻生",
+    "pref": null,
+    "lat": 43.10834,
+    "lng": 141.33848,
+    "lines": [
+      {
+        "line": "南北線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/麻生"
+  },
+  "st0005": {
+    "id": "st0005",
+    "name": "さっぽろ",
+    "pref": null,
+    "lat": 43.06605,
+    "lng": 141.35228,
+    "lines": [
+      {
+        "line": "東豊線",
+        "operator": "札幌市"
+      },
+      {
+        "line": "南北線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/さっぽろ"
+  },
+  "st0006": {
+    "id": "st0006",
+    "name": "バスセンター前",
+    "pref": null,
+    "lat": 43.06153,
+    "lng": 141.36192,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/バスセンター前"
+  },
+  "st0007": {
+    "id": "st0007",
+    "name": "大通",
+    "pref": null,
+    "lat": 43.06027,
+    "lng": 141.35324,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "札幌市"
+      },
+      {
+        "line": "東豊線",
+        "operator": "札幌市"
+      },
+      {
+        "line": "南北線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/大通"
+  },
+  "st0008": {
+    "id": "st0008",
+    "name": "西4丁目",
+    "pref": null,
+    "lat": 43.0589,
+    "lng": 141.35185,
+    "lines": [
+      {
+        "line": "1条線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      },
+      {
+        "line": "都心線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/西4丁目"
+  },
+  "st0009": {
+    "id": "st0009",
+    "name": "西11丁目",
+    "pref": null,
+    "lat": 43.05869,
+    "lng": 141.3414,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/西11丁目"
+  },
+  "st0010": {
+    "id": "st0010",
+    "name": "西8丁目",
+    "pref": null,
+    "lat": 43.05818,
+    "lng": 141.34672,
+    "lines": [
+      {
+        "line": "1条線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/西8丁目"
+  },
+  "st0011": {
+    "id": "st0011",
+    "name": "中央区役所前",
+    "pref": null,
+    "lat": 43.05752,
+    "lng": 141.34198,
+    "lines": [
+      {
+        "line": "1条線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/中央区役所前"
+  },
+  "st0012": {
+    "id": "st0012",
+    "name": "狸小路",
+    "pref": null,
+    "lat": 43.05727,
+    "lng": 141.35292,
+    "lines": [
+      {
+        "line": "都心線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/狸小路"
+  },
+  "st0013": {
+    "id": "st0013",
+    "name": "すすきの",
+    "pref": null,
+    "lat": 43.05547,
+    "lng": 141.35294,
+    "lines": [
+      {
+        "line": "山鼻線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      },
+      {
+        "line": "南北線",
+        "operator": "札幌市"
+      },
+      {
+        "line": "都心線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/すすきの"
+  },
+  "st0014": {
+    "id": "st0014",
+    "name": "資生館小学校前",
+    "pref": null,
+    "lat": 43.05512,
+    "lng": 141.34926,
+    "lines": [
+      {
+        "line": "山鼻線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/資生館小学校前"
+  },
+  "st0015": {
+    "id": "st0015",
+    "name": "豊水すすきの",
+    "pref": null,
+    "lat": 43.0541,
+    "lng": 141.35699,
+    "lines": [
+      {
+        "line": "東豊線",
+        "operator": "札幌市"
+      }
+    ],
+    "slug": "unknown/豊水すすきの"
+  },
+  "st0016": {
+    "id": "st0016",
+    "name": "東本願寺前",
+    "pref": null,
+    "lat": 43.05171,
+    "lng": 141.34936,
+    "lines": [
+      {
+        "line": "山鼻線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/東本願寺前"
+  },
+  "st0017": {
+    "id": "st0017",
+    "name": "山鼻9条",
+    "pref": null,
+    "lat": 43.04902,
+    "lng": 141.34977,
+    "lines": [
+      {
+        "line": "山鼻線",
+        "operator": "一般社団法人札幌市交通事業振興公社"
+      }
+    ],
+    "slug": "unknown/山鼻9条"
+  },
+  "st0018": {
+    "id": "st0018",
+    "name": "釧路",
+    "pref": null,
+    "lat": 42.99057,
+    "lng": 144.38204,
+    "lines": [
+      {
+        "line": "根室線",
+        "operator": "北海道旅客鉄道"
+      }
+    ],
+    "slug": "unknown/釧路"
+  },
+  "st0019": {
+    "id": "st0019",
+    "name": "苫小牧",
+    "pref": null,
+    "lat": 42.63941,
+    "lng": 141.59614,
+    "lines": [
+      {
+        "line": "室蘭線",
+        "operator": "北海道旅客鉄道"
+      },
+      {
+        "line": "日高線",
+        "operator": "北海道旅客鉄道"
+      }
+    ],
+    "slug": "unknown/苫小牧"
+  },
+  "st0020": {
+    "id": "st0020",
+    "name": "中央弘前",
+    "pref": null,
+    "lat": 40.59916,
+    "lng": 140.47229,
+    "lines": [
+      {
+        "line": "大鰐線",
+        "operator": "弘南鉄道"
+      }
+    ],
+    "slug": "unknown/中央弘前"
+  },
+  "st0021": {
+    "id": "st0021",
+    "name": "八戸",
+    "pref": null,
+    "lat": 40.50924,
+    "lng": 141.43125,
+    "lines": [
+      {
+        "line": "青い森鉄道線",
+        "operator": "青い森鉄道"
+      },
+      {
+        "line": "東北新幹線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "八戸線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/八戸"
+  },
+  "st0022": {
+    "id": "st0022",
+    "name": "水沢",
+    "pref": null,
+    "lat": 39.13923,
+    "lng": 141.14632,
+    "lines": [
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/水沢"
+  },
+  "st0023": {
+    "id": "st0023",
+    "name": "山形",
+    "pref": null,
+    "lat": 38.24845,
+    "lng": 140.32747,
+    "lines": [
+      {
+        "line": "奥羽線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/山形"
+  },
+  "st0024": {
+    "id": "st0024",
+    "name": "河原町",
+    "pref": null,
+    "lat": 38.24057,
+    "lng": 140.88782,
+    "lines": [
+      {
+        "line": "南北線",
+        "operator": "仙台市"
+      }
+    ],
+    "slug": "unknown/河原町"
+  },
+  "st0025": {
+    "id": "st0025",
+    "name": "郡山富田",
+    "pref": null,
+    "lat": 37.42058,
+    "lng": 140.36919,
+    "lines": [
+      {
+        "line": "磐越西線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/郡山富田"
+  },
+  "st0026": {
+    "id": "st0026",
+    "name": "郡山",
+    "pref": null,
+    "lat": 37.39826,
+    "lng": 140.3888,
+    "lines": [
+      {
+        "line": "東北新幹線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "磐越西線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "磐越東線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/郡山"
+  },
+  "st0027": {
+    "id": "st0027",
+    "name": "直江津",
+    "pref": null,
+    "lat": 37.17014,
+    "lng": 138.24203,
+    "lines": [
+      {
+        "line": "妙高はねうまライン",
+        "operator": "えちごトキめき鉄道"
+      },
+      {
+        "line": "信越線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "日本海ひすいライン",
+        "operator": "えちごトキめき鉄道"
+      }
+    ],
+    "slug": "unknown/直江津"
+  },
+  "st0028": {
+    "id": "st0028",
+    "name": "大谷向",
+    "pref": null,
+    "lat": 36.73228,
+    "lng": 139.69194,
+    "lines": [
+      {
+        "line": "鬼怒川線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/大谷向"
+  },
+  "st0029": {
+    "id": "st0029",
+    "name": "上今市",
+    "pref": null,
+    "lat": 36.72801,
+    "lng": 139.68086,
+    "lines": [
+      {
+        "line": "日光線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/上今市"
+  },
+  "st0030": {
+    "id": "st0030",
+    "name": "下今市",
+    "pref": null,
+    "lat": 36.7256,
+    "lng": 139.69277,
+    "lines": [
+      {
+        "line": "鬼怒川線",
+        "operator": "東武鉄道"
+      },
+      {
+        "line": "日光線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/下今市"
+  },
+  "st0031": {
+    "id": "st0031",
+    "name": "今市",
+    "pref": null,
+    "lat": 36.72038,
+    "lng": 139.68737,
+    "lines": [
+      {
+        "line": "日光線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/今市"
+  },
+  "st0032": {
+    "id": "st0032",
+    "name": "オークスカナルパークホテル富山前",
+    "pref": null,
+    "lat": 36.70367,
+    "lng": 137.2146,
+    "lines": [
+      {
+        "line": "富山港線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/オークスカナルパークホテル富山前"
+  },
+  "st0033": {
+    "id": "st0033",
+    "name": "インテック本社前",
+    "pref": null,
+    "lat": 36.70363,
+    "lng": 137.21641,
+    "lines": [
+      {
+        "line": "富山港線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/インテック本社前"
+  },
+  "st0034": {
+    "id": "st0034",
+    "name": "富山駅",
+    "pref": null,
+    "lat": 36.70175,
+    "lng": 137.213,
+    "lines": [
+      {
+        "line": "富山港線",
+        "operator": "富山地方鉄道"
+      },
+      {
+        "line": "富山駅南北接続線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/富山駅"
+  },
+  "st0035": {
+    "id": "st0035",
+    "name": "富山",
+    "pref": null,
+    "lat": 36.70161,
+    "lng": 137.21324,
+    "lines": [
+      {
+        "line": "高山線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "あいの風とやま鉄道線",
+        "operator": "あいの風とやま鉄道"
+      },
+      {
+        "line": "北陸新幹線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/富山"
+  },
+  "st0036": {
+    "id": "st0036",
+    "name": "電鉄富山",
+    "pref": null,
+    "lat": 36.70052,
+    "lng": 137.21474,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/電鉄富山"
+  },
+  "st0037": {
+    "id": "st0037",
+    "name": "電鉄富山駅・エスタ前",
+    "pref": null,
+    "lat": 36.69991,
+    "lng": 137.21407,
+    "lines": [
+      {
+        "line": "支線",
+        "operator": "富山地方鉄道"
+      },
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/電鉄富山駅・エスタ前"
+  },
+  "st0038": {
+    "id": "st0038",
+    "name": "新富町",
+    "pref": null,
+    "lat": 36.69886,
+    "lng": 137.21144,
+    "lines": [
+      {
+        "line": "支線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/新富町"
+  },
+  "st0039": {
+    "id": "st0039",
+    "name": "地鉄ビル前",
+    "pref": null,
+    "lat": 36.6986,
+    "lng": 137.21612,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/地鉄ビル前"
+  },
+  "st0040": {
+    "id": "st0040",
+    "name": "電気ビル前",
+    "pref": null,
+    "lat": 36.69746,
+    "lng": 137.21607,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/電気ビル前"
+  },
+  "st0041": {
+    "id": "st0041",
+    "name": "県庁前",
+    "pref": null,
+    "lat": 36.69558,
+    "lng": 137.20975,
+    "lines": [
+      {
+        "line": "支線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/県庁前"
+  },
+  "st0042": {
+    "id": "st0042",
+    "name": "桜橋",
+    "pref": null,
+    "lat": 36.69458,
+    "lng": 137.21594,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/桜橋"
+  },
+  "st0043": {
+    "id": "st0043",
+    "name": "丸の内",
+    "pref": null,
+    "lat": 36.6925,
+    "lng": 137.20894,
+    "lines": [
+      {
+        "line": "安野屋線",
+        "operator": "富山地方鉄道"
+      },
+      {
+        "line": "支線",
+        "operator": "富山地方鉄道"
+      },
+      {
+        "line": "富山都心線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/丸の内"
+  },
+  "st0044": {
+    "id": "st0044",
+    "name": "安野屋",
+    "pref": null,
+    "lat": 36.69249,
+    "lng": 137.20434,
+    "lines": [
+      {
+        "line": "安野屋線",
+        "operator": "富山地方鉄道"
+      },
+      {
+        "line": "呉羽線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/安野屋"
+  },
+  "st0045": {
+    "id": "st0045",
+    "name": "諏訪川原",
+    "pref": null,
+    "lat": 36.69232,
+    "lng": 137.20655,
+    "lines": [
+      {
+        "line": "安野屋線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/諏訪川原"
+  },
+  "st0046": {
+    "id": "st0046",
+    "name": "国際会議場前",
+    "pref": null,
+    "lat": 36.69162,
+    "lng": 137.21137,
+    "lines": [
+      {
+        "line": "富山都心線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/国際会議場前"
+  },
+  "st0047": {
+    "id": "st0047",
+    "name": "荒町",
+    "pref": null,
+    "lat": 36.69149,
+    "lng": 137.21578,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "富山地方鉄道"
+      }
+    ],
+    "slug": "unknown/荒町"
+  },
+  "st0048": {
+    "id": "st0048",
+    "name": "日野",
+    "pref": null,
+    "lat": 36.65594,
+    "lng": 138.2888,
+    "lines": [
+      {
+        "line": "長野線",
+        "operator": "長野電鉄"
+      }
+    ],
+    "slug": "unknown/日野"
+  },
+  "st0049": {
+    "id": "st0049",
+    "name": "権堂",
+    "pref": null,
+    "lat": 36.65325,
+    "lng": 138.19211,
+    "lines": [
+      {
+        "line": "長野線",
+        "operator": "長野電鉄"
+      }
+    ],
+    "slug": "unknown/権堂"
+  },
+  "st0050": {
+    "id": "st0050",
+    "name": "市役所前",
+    "pref": null,
+    "lat": 36.64809,
+    "lng": 138.19122,
+    "lines": [
+      {
+        "line": "長野線",
+        "operator": "長野電鉄"
+      }
+    ],
+    "slug": "unknown/市役所前"
+  },
+  "st0051": {
+    "id": "st0051",
+    "name": "長野",
+    "pref": null,
+    "lat": 36.64355,
+    "lng": 138.18886,
+    "lines": [
+      {
+        "line": "長野線",
+        "operator": "長野電鉄"
+      },
+      {
+        "line": "北しなの線",
+        "operator": "しなの鉄道"
+      },
+      {
+        "line": "北陸新幹線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "信越線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長野"
+  },
+  "st0052": {
+    "id": "st0052",
+    "name": "野町",
+    "pref": null,
+    "lat": 36.55369,
+    "lng": 136.64418,
+    "lines": [
+      {
+        "line": "石川線",
+        "operator": "北陸鉄道"
+      }
+    ],
+    "slug": "unknown/野町"
+  },
+  "st0053": {
+    "id": "st0053",
+    "name": "馬替",
+    "pref": null,
+    "lat": 36.52276,
+    "lng": 136.62051,
+    "lines": [
+      {
+        "line": "石川線",
+        "operator": "北陸鉄道"
+      }
+    ],
+    "slug": "unknown/馬替"
+  },
+  "st0054": {
+    "id": "st0054",
+    "name": "額住宅前",
+    "pref": null,
+    "lat": 36.51853,
+    "lng": 136.61885,
+    "lines": [
+      {
+        "line": "石川線",
+        "operator": "北陸鉄道"
+      }
+    ],
+    "slug": "unknown/額住宅前"
+  },
+  "st0055": {
+    "id": "st0055",
+    "name": "乙丸",
+    "pref": null,
+    "lat": 36.51185,
+    "lng": 136.61765,
+    "lines": [
+      {
+        "line": "石川線",
+        "operator": "北陸鉄道"
+      }
+    ],
+    "slug": "unknown/乙丸"
+  },
+  "st0056": {
+    "id": "st0056",
+    "name": "渋川",
+    "pref": null,
+    "lat": 36.49123,
+    "lng": 139.00879,
+    "lines": [
+      {
+        "line": "吾妻線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "上越線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/渋川"
+  },
+  "st0057": {
+    "id": "st0057",
+    "name": "丸山下",
+    "pref": null,
+    "lat": 36.41681,
+    "lng": 139.32131,
+    "lines": [
+      {
+        "line": "上毛線",
+        "operator": "上毛電気鉄道"
+      }
+    ],
+    "slug": "unknown/丸山下"
+  },
+  "st0058": {
+    "id": "st0058",
+    "name": "西桐生",
+    "pref": null,
+    "lat": 36.41409,
+    "lng": 139.33284,
+    "lines": [
+      {
+        "line": "上毛線",
+        "operator": "上毛電気鉄道"
+      }
+    ],
+    "slug": "unknown/西桐生"
+  },
+  "st0059": {
+    "id": "st0059",
+    "name": "富士山下",
+    "pref": null,
+    "lat": 36.414,
+    "lng": 139.31585,
+    "lines": [
+      {
+        "line": "上毛線",
+        "operator": "上毛電気鉄道"
+      }
+    ],
+    "slug": "unknown/富士山下"
+  },
+  "st0060": {
+    "id": "st0060",
+    "name": "小松",
+    "pref": null,
+    "lat": 36.40251,
+    "lng": 136.45302,
+    "lines": [
+      {
+        "line": "IRいしかわ鉄道線",
+        "operator": "IRいしかわ鉄道"
+      },
+      {
+        "line": "北陸新幹線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/小松"
+  },
+  "st0061": {
+    "id": "st0061",
+    "name": "上田",
+    "pref": null,
+    "lat": 36.39588,
+    "lng": 138.25025,
+    "lines": [
+      {
+        "line": "しなの鉄道線",
+        "operator": "しなの鉄道"
+      },
+      {
+        "line": "別所線",
+        "operator": "上田電鉄"
+      },
+      {
+        "line": "北陸新幹線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/上田"
+  },
+  "st0062": {
+    "id": "st0062",
+    "name": "城東",
+    "pref": null,
+    "lat": 36.39118,
+    "lng": 139.08116,
+    "lines": [
+      {
+        "line": "上毛線",
+        "operator": "上毛電気鉄道"
+      }
+    ],
+    "slug": "unknown/城東"
+  },
+  "st0063": {
+    "id": "st0063",
+    "name": "中央前橋",
+    "pref": null,
+    "lat": 36.39092,
+    "lng": 139.07537,
+    "lines": [
+      {
+        "line": "上毛線",
+        "operator": "上毛電気鉄道"
+      }
+    ],
+    "slug": "unknown/中央前橋"
+  },
+  "st0064": {
+    "id": "st0064",
+    "name": "新前橋",
+    "pref": null,
+    "lat": 36.37901,
+    "lng": 139.047,
+    "lines": [
+      {
+        "line": "上越線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "両毛線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/新前橋"
+  },
+  "st0065": {
+    "id": "st0065",
+    "name": "水戸",
+    "pref": null,
+    "lat": 36.37093,
+    "lng": 140.4772,
+    "lines": [
+      {
+        "line": "大洗鹿島線",
+        "operator": "鹿島臨海鉄道"
+      },
+      {
+        "line": "常磐線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "水郡線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/水戸"
+  },
+  "st0066": {
+    "id": "st0066",
+    "name": "駒形",
+    "pref": null,
+    "lat": 36.35411,
+    "lng": 139.13955,
+    "lines": [
+      {
+        "line": "両毛線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/駒形"
+  },
+  "st0067": {
+    "id": "st0067",
+    "name": "群馬八幡",
+    "pref": null,
+    "lat": 36.33766,
+    "lng": 138.95749,
+    "lines": [
+      {
+        "line": "信越線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/群馬八幡"
+  },
+  "st0068": {
+    "id": "st0068",
+    "name": "下館",
+    "pref": null,
+    "lat": 36.30404,
+    "lng": 139.97819,
+    "lines": [
+      {
+        "line": "常総線",
+        "operator": "関東鉄道"
+      },
+      {
+        "line": "真岡線",
+        "operator": "真岡鐵道"
+      },
+      {
+        "line": "水戸線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/下館"
+  },
+  "st0069": {
+    "id": "st0069",
+    "name": "太田",
+    "pref": null,
+    "lat": 36.29411,
+    "lng": 139.3789,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      },
+      {
+        "line": "桐生線",
+        "operator": "東武鉄道"
+      },
+      {
+        "line": "小泉線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/太田"
+  },
+  "st0070": {
+    "id": "st0070",
+    "name": "木崎",
+    "pref": null,
+    "lat": 36.27139,
+    "lng": 139.31301,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/木崎"
+  },
+  "st0071": {
+    "id": "st0071",
+    "name": "滑津",
+    "pref": null,
+    "lat": 36.23872,
+    "lng": 138.47501,
+    "lines": [
+      {
+        "line": "小海線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/滑津"
+  },
+  "st0072": {
+    "id": "st0072",
+    "name": "中込",
+    "pref": null,
+    "lat": 36.23064,
+    "lng": 138.4794,
+    "lines": [
+      {
+        "line": "小海線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/中込"
+  },
+  "st0073": {
+    "id": "st0073",
+    "name": "深谷",
+    "pref": null,
+    "lat": 36.19135,
+    "lng": 139.28134,
+    "lines": [
+      {
+        "line": "高崎線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/深谷"
+  },
+  "st0074": {
+    "id": "st0074",
+    "name": "上熊谷",
+    "pref": null,
+    "lat": 36.14308,
+    "lng": 139.38079,
+    "lines": [
+      {
+        "line": "秩父本線",
+        "operator": "秩父鉄道"
+      }
+    ],
+    "slug": "unknown/上熊谷"
+  },
+  "st0075": {
+    "id": "st0075",
+    "name": "高山",
+    "pref": null,
+    "lat": 36.14069,
+    "lng": 137.2514,
+    "lines": [
+      {
+        "line": "高山線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高山"
+  },
+  "st0076": {
+    "id": "st0076",
+    "name": "熊谷",
+    "pref": null,
+    "lat": 36.13951,
+    "lng": 139.38964,
+    "lines": [
+      {
+        "line": "秩父本線",
+        "operator": "秩父鉄道"
+      },
+      {
+        "line": "高崎線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "上越新幹線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/熊谷"
+  },
+  "st0077": {
+    "id": "st0077",
+    "name": "足羽山公園口",
+    "pref": null,
+    "lat": 36.05778,
+    "lng": 136.21506,
+    "lines": [
+      {
+        "line": "福武線",
+        "operator": "福井鉄道"
+      }
+    ],
+    "slug": "unknown/足羽山公園口"
+  },
+  "st0078": {
+    "id": "st0078",
+    "name": "商工会議所前",
+    "pref": null,
+    "lat": 36.05358,
+    "lng": 136.215,
+    "lines": [
+      {
+        "line": "福武線",
+        "operator": "福井鉄道"
+      }
+    ],
+    "slug": "unknown/商工会議所前"
+  },
+  "st0079": {
+    "id": "st0079",
+    "name": "赤十字前",
+    "pref": null,
+    "lat": 36.04872,
+    "lng": 136.21665,
+    "lines": [
+      {
+        "line": "福武線",
+        "operator": "福井鉄道"
+      }
+    ],
+    "slug": "unknown/赤十字前"
+  },
+  "st0080": {
+    "id": "st0080",
+    "name": "越前東郷",
+    "pref": null,
+    "lat": 36.01822,
+    "lng": 136.27352,
+    "lines": [
+      {
+        "line": "越美北線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/越前東郷"
+  },
+  "st0081": {
+    "id": "st0081",
+    "name": "北上尾",
+    "pref": null,
+    "lat": 35.98515,
+    "lng": 139.57758,
+    "lines": [
+      {
+        "line": "高崎線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/北上尾"
+  },
+  "st0082": {
+    "id": "st0082",
+    "name": "春日部",
+    "pref": null,
+    "lat": 35.98003,
+    "lng": 139.75259,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      },
+      {
+        "line": "野田線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/春日部"
+  },
+  "st0083": {
+    "id": "st0083",
+    "name": "上尾",
+    "pref": null,
+    "lat": 35.97302,
+    "lng": 139.58881,
+    "lines": [
+      {
+        "line": "高崎線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/上尾"
+  },
+  "st0084": {
+    "id": "st0084",
+    "name": "岩槻",
+    "pref": null,
+    "lat": 35.95025,
+    "lng": 139.69313,
+    "lines": [
+      {
+        "line": "野田線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/岩槻"
+  },
+  "st0085": {
+    "id": "st0085",
+    "name": "せんげん台",
+    "pref": null,
+    "lat": 35.93596,
+    "lng": 139.7746,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/せんげん台"
+  },
+  "st0086": {
+    "id": "st0086",
+    "name": "川越市",
+    "pref": null,
+    "lat": 35.91414,
+    "lng": 139.4771,
+    "lines": [
+      {
+        "line": "東上本線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/川越市"
+  },
+  "st0087": {
+    "id": "st0087",
+    "name": "本川越",
+    "pref": null,
+    "lat": 35.91368,
+    "lng": 139.48113,
+    "lines": [
+      {
+        "line": "新宿線",
+        "operator": "西武鉄道"
+      }
+    ],
+    "slug": "unknown/本川越"
+  },
+  "st0088": {
+    "id": "st0088",
+    "name": "大宮",
+    "pref": null,
+    "lat": 35.90653,
+    "lng": 139.62356,
+    "lines": [
+      {
+        "line": "伊奈線",
+        "operator": "埼玉新都市交通"
+      },
+      {
+        "line": "高崎線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "上越新幹線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "川越線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "東北新幹線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "野田線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/大宮"
+  },
+  "st0089": {
+    "id": "st0089",
+    "name": "上福岡",
+    "pref": null,
+    "lat": 35.87387,
+    "lng": 139.51187,
+    "lines": [
+      {
+        "line": "東上本線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/上福岡"
+  },
+  "st0090": {
+    "id": "st0090",
+    "name": "蒲生",
+    "pref": null,
+    "lat": 35.86689,
+    "lng": 139.79177,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/蒲生"
+  },
+  "st0091": {
+    "id": "st0091",
+    "name": "東浦和",
+    "pref": null,
+    "lat": 35.86406,
+    "lng": 139.70454,
+    "lines": [
+      {
+        "line": "武蔵野線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/東浦和"
+  },
+  "st0092": {
+    "id": "st0092",
+    "name": "浦和",
+    "pref": null,
+    "lat": 35.85857,
+    "lng": 139.65715,
+    "lines": [
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/浦和"
+  },
+  "st0093": {
+    "id": "st0093",
+    "name": "中浦和",
+    "pref": null,
+    "lat": 35.85392,
+    "lng": 139.6373,
+    "lines": [
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/中浦和"
+  },
+  "st0094": {
+    "id": "st0094",
+    "name": "伊那北",
+    "pref": null,
+    "lat": 35.84524,
+    "lng": 137.96435,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/伊那北"
+  },
+  "st0095": {
+    "id": "st0095",
+    "name": "伊那市",
+    "pref": null,
+    "lat": 35.83845,
+    "lng": 137.95925,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/伊那市"
+  },
+  "st0096": {
+    "id": "st0096",
+    "name": "志木",
+    "pref": null,
+    "lat": 35.82217,
+    "lng": 139.5753,
+    "lines": [
+      {
+        "line": "東上本線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/志木"
+  },
+  "st0097": {
+    "id": "st0097",
+    "name": "川口",
+    "pref": null,
+    "lat": 35.8018,
+    "lng": 139.71748,
+    "lines": [
+      {
+        "line": "東北線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/川口"
+  },
+  "st0098": {
+    "id": "st0098",
+    "name": "川口元郷",
+    "pref": null,
+    "lat": 35.79996,
+    "lng": 139.72986,
+    "lines": [
+      {
+        "line": "埼玉高速鉄道線",
+        "operator": "埼玉高速鉄道"
+      }
+    ],
+    "slug": "unknown/川口元郷"
+  },
+  "st0099": {
+    "id": "st0099",
+    "name": "東所沢",
+    "pref": null,
+    "lat": 35.79489,
+    "lng": 139.51454,
+    "lines": [
+      {
+        "line": "武蔵野線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/東所沢"
+  },
+  "st0100": {
+    "id": "st0100",
+    "name": "大師前",
+    "pref": null,
+    "lat": 35.77895,
+    "lng": 139.78166,
+    "lines": [
+      {
+        "line": "大師線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/大師前"
+  },
+  "st0101": {
+    "id": "st0101",
+    "name": "西新井",
+    "pref": null,
+    "lat": 35.77728,
+    "lng": 139.79037,
+    "lines": [
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      },
+      {
+        "line": "大師線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/西新井"
+  },
+  "st0102": {
+    "id": "st0102",
+    "name": "江北",
+    "pref": null,
+    "lat": 35.77379,
+    "lng": 139.77035,
+    "lines": [
+      {
+        "line": "日暮里・舎人ライナー",
+        "operator": "東京都"
+      }
+    ],
+    "slug": "unknown/江北"
+  },
+  "st0103": {
+    "id": "st0103",
+    "name": "宮田",
+    "pref": null,
+    "lat": 35.76727,
+    "lng": 137.93888,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/宮田"
+  },
+  "st0104": {
+    "id": "st0104",
+    "name": "椎柴",
+    "pref": null,
+    "lat": 35.76522,
+    "lng": 140.75886,
+    "lines": [
+      {
+        "line": "成田線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/椎柴"
+  },
+  "st0105": {
+    "id": "st0105",
+    "name": "東村山",
+    "pref": null,
+    "lat": 35.75997,
+    "lng": 139.46586,
+    "lines": [
+      {
+        "line": "国分寺線",
+        "operator": "西武鉄道"
+      },
+      {
+        "line": "新宿線",
+        "operator": "西武鉄道"
+      },
+      {
+        "line": "西武園線",
+        "operator": "西武鉄道"
+      }
+    ],
+    "slug": "unknown/東村山"
+  },
+  "st0106": {
+    "id": "st0106",
+    "name": "久米川",
+    "pref": null,
+    "lat": 35.74953,
+    "lng": 139.47269,
+    "lines": [
+      {
+        "line": "新宿線",
+        "operator": "西武鉄道"
+      }
+    ],
+    "slug": "unknown/久米川"
+  },
+  "st0107": {
+    "id": "st0107",
+    "name": "田無",
+    "pref": null,
+    "lat": 35.7272,
+    "lng": 139.53899,
+    "lines": [
+      {
+        "line": "新宿線",
+        "operator": "西武鉄道"
+      }
+    ],
+    "slug": "unknown/田無"
+  },
+  "st0108": {
+    "id": "st0108",
+    "name": "浅草",
+    "pref": null,
+    "lat": 35.71393,
+    "lng": 139.79246,
+    "lines": [
+      {
+        "line": "常磐新線",
+        "operator": "首都圏新都市鉄道"
+      }
+    ],
+    "slug": "unknown/浅草"
+  },
+  "st0109": {
+    "id": "st0109",
+    "name": "浅草",
+    "pref": null,
+    "lat": 35.71057,
+    "lng": 139.79756,
+    "lines": [
+      {
+        "line": "3号線銀座線",
+        "operator": "東京地下鉄"
+      },
+      {
+        "line": "1号線浅草線",
+        "operator": "東京都"
+      },
+      {
+        "line": "伊勢崎線",
+        "operator": "東武鉄道"
+      }
+    ],
+    "slug": "unknown/浅草"
+  },
+  "st0110": {
+    "id": "st0110",
+    "name": "田原町",
+    "pref": null,
+    "lat": 35.70991,
+    "lng": 139.79035,
+    "lines": [
+      {
+        "line": "3号線銀座線",
+        "operator": "東京地下鉄"
+      }
+    ],
+    "slug": "unknown/田原町"
+  },
+  "st0111": {
+    "id": "st0111",
+    "name": "本所吾妻橋",
+    "pref": null,
+    "lat": 35.70859,
+    "lng": 139.80447,
+    "lines": [
+      {
+        "line": "1号線浅草線",
+        "operator": "東京都"
+      }
+    ],
+    "slug": "unknown/本所吾妻橋"
+  },
+  "st0112": {
+    "id": "st0112",
+    "name": "蔵前",
+    "pref": null,
+    "lat": 35.70441,
+    "lng": 139.79168,
+    "lines": [
+      {
+        "line": "1号線浅草線",
+        "operator": "東京都"
+      },
+      {
+        "line": "12号線大江戸線",
+        "operator": "東京都"
+      }
+    ],
+    "slug": "unknown/蔵前"
+  },
+  "st0113": {
+    "id": "st0113",
+    "name": "高円寺",
+    "pref": null,
+    "lat": 35.70532,
+    "lng": 139.64972,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高円寺"
+  },
+  "st0114": {
+    "id": "st0114",
+    "name": "阿佐ヶ谷",
+    "pref": null,
+    "lat": 35.70489,
+    "lng": 139.63626,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/阿佐ヶ谷"
+  },
+  "st0115": {
+    "id": "st0115",
+    "name": "荻窪",
+    "pref": null,
+    "lat": 35.7043,
+    "lng": 139.62,
+    "lines": [
+      {
+        "line": "4号線丸ノ内線",
+        "operator": "東京地下鉄"
+      },
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/荻窪"
+  },
+  "st0116": {
+    "id": "st0116",
+    "name": "西荻窪",
+    "pref": null,
+    "lat": 35.7038,
+    "lng": 139.5997,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/西荻窪"
+  },
+  "st0117": {
+    "id": "st0117",
+    "name": "立川北",
+    "pref": null,
+    "lat": 35.69953,
+    "lng": 139.41267,
+    "lines": [
+      {
+        "line": "多摩都市モノレール線",
+        "operator": "多摩都市モノレール"
+      }
+    ],
+    "slug": "unknown/立川北"
+  },
+  "st0118": {
+    "id": "st0118",
+    "name": "南阿佐ヶ谷",
+    "pref": null,
+    "lat": 35.69946,
+    "lng": 139.63557,
+    "lines": [
+      {
+        "line": "4号線丸ノ内線",
+        "operator": "東京地下鉄"
+      }
+    ],
+    "slug": "unknown/南阿佐ヶ谷"
+  },
+  "st0119": {
+    "id": "st0119",
+    "name": "立川",
+    "pref": null,
+    "lat": 35.69793,
+    "lng": 139.41396,
+    "lines": [
+      {
+        "line": "青梅線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "南武線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/立川"
+  },
+  "st0120": {
+    "id": "st0120",
+    "name": "立川南",
+    "pref": null,
+    "lat": 35.69617,
+    "lng": 139.41258,
+    "lines": [
+      {
+        "line": "多摩都市モノレール線",
+        "operator": "多摩都市モノレール"
+      }
+    ],
+    "slug": "unknown/立川南"
+  },
+  "st0121": {
+    "id": "st0121",
+    "name": "西国立",
+    "pref": null,
+    "lat": 35.69379,
+    "lng": 139.4239,
+    "lines": [
+      {
+        "line": "南武線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/西国立"
+  },
+  "st0122": {
+    "id": "st0122",
+    "name": "柴崎体育館",
+    "pref": null,
+    "lat": 35.6898,
+    "lng": 139.40928,
+    "lines": [
+      {
+        "line": "多摩都市モノレール線",
+        "operator": "多摩都市モノレール"
+      }
+    ],
+    "slug": "unknown/柴崎体育館"
+  },
+  "st0123": {
+    "id": "st0123",
+    "name": "日野",
+    "pref": null,
+    "lat": 35.67868,
+    "lng": 139.3935,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/日野"
+  },
+  "st0124": {
+    "id": "st0124",
+    "name": "京王八王子",
+    "pref": null,
+    "lat": 35.65805,
+    "lng": 139.34298,
+    "lines": [
+      {
+        "line": "京王線",
+        "operator": "京王電鉄"
+      }
+    ],
+    "slug": "unknown/京王八王子"
+  },
+  "st0125": {
+    "id": "st0125",
+    "name": "麻布十番",
+    "pref": null,
+    "lat": 35.65565,
+    "lng": 139.73658,
+    "lines": [
+      {
+        "line": "7号線南北線",
+        "operator": "東京地下鉄"
+      },
+      {
+        "line": "12号線大江戸線",
+        "operator": "東京都"
+      }
+    ],
+    "slug": "unknown/麻布十番"
+  },
+  "st0126": {
+    "id": "st0126",
+    "name": "八王子",
+    "pref": null,
+    "lat": 35.65534,
+    "lng": 139.33934,
+    "lines": [
+      {
+        "line": "横浜線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "中央線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "八高線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/八王子"
+  },
+  "st0127": {
+    "id": "st0127",
+    "name": "白金高輪",
+    "pref": null,
+    "lat": 35.64315,
+    "lng": 139.73429,
+    "lines": [
+      {
+        "line": "7号線南北線",
+        "operator": "東京地下鉄"
+      },
+      {
+        "line": "6号線三田線",
+        "operator": "東京都"
+      }
+    ],
+    "slug": "unknown/白金高輪"
+  },
+  "st0128": {
+    "id": "st0128",
+    "name": "梅屋敷",
+    "pref": null,
+    "lat": 35.56678,
+    "lng": 139.72817,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "京浜急行電鉄"
+      }
+    ],
+    "slug": "unknown/梅屋敷"
+  },
+  "st0129": {
+    "id": "st0129",
+    "name": "蓮沼",
+    "pref": null,
+    "lat": 35.56396,
+    "lng": 139.7086,
+    "lines": [
+      {
+        "line": "池上線",
+        "operator": "東急電鉄"
+      }
+    ],
+    "slug": "unknown/蓮沼"
+  },
+  "st0130": {
+    "id": "st0130",
+    "name": "蒲田",
+    "pref": null,
+    "lat": 35.56197,
+    "lng": 139.7151,
+    "lines": [
+      {
+        "line": "池上線",
+        "operator": "東急電鉄"
+      },
+      {
+        "line": "東急多摩川線",
+        "operator": "東急電鉄"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/蒲田"
+  },
+  "st0131": {
+    "id": "st0131",
+    "name": "京急蒲田",
+    "pref": null,
+    "lat": 35.5617,
+    "lng": 139.72433,
+    "lines": [
+      {
+        "line": "空港線",
+        "operator": "京浜急行電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "京浜急行電鉄"
+      }
+    ],
+    "slug": "unknown/京急蒲田"
+  },
+  "st0132": {
+    "id": "st0132",
+    "name": "雑色",
+    "pref": null,
+    "lat": 35.54977,
+    "lng": 139.71504,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "京浜急行電鉄"
+      }
+    ],
+    "slug": "unknown/雑色"
+  },
+  "st0133": {
+    "id": "st0133",
+    "name": "桜町",
+    "pref": null,
+    "lat": 35.52218,
+    "lng": 137.82976,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/桜町"
+  },
+  "st0134": {
+    "id": "st0134",
+    "name": "飯田",
+    "pref": null,
+    "lat": 35.51972,
+    "lng": 137.82127,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/飯田"
+  },
+  "st0135": {
+    "id": "st0135",
+    "name": "鼎",
+    "pref": null,
+    "lat": 35.5067,
+    "lng": 137.82836,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/鼎"
+  },
+  "st0136": {
+    "id": "st0136",
+    "name": "白楽",
+    "pref": null,
+    "lat": 35.4895,
+    "lng": 139.62792,
+    "lines": [
+      {
+        "line": "東横線",
+        "operator": "東急電鉄"
+      }
+    ],
+    "slug": "unknown/白楽"
+  },
+  "st0137": {
+    "id": "st0137",
+    "name": "東白楽",
+    "pref": null,
+    "lat": 35.4834,
+    "lng": 139.62953,
+    "lines": [
+      {
+        "line": "東横線",
+        "operator": "東急電鉄"
+      }
+    ],
+    "slug": "unknown/東白楽"
+  },
+  "st0138": {
+    "id": "st0138",
+    "name": "美乃坂本",
+    "pref": null,
+    "lat": 35.47925,
+    "lng": 137.45036,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/美乃坂本"
+  },
+  "st0139": {
+    "id": "st0139",
+    "name": "高月",
+    "pref": null,
+    "lat": 35.47066,
+    "lng": 136.23765,
+    "lines": [
+      {
+        "line": "北陸線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高月"
+  },
+  "st0140": {
+    "id": "st0140",
+    "name": "本厚木",
+    "pref": null,
+    "lat": 35.43921,
+    "lng": 139.36438,
+    "lines": [
+      {
+        "line": "小田原線",
+        "operator": "小田急電鉄"
+      }
+    ],
+    "slug": "unknown/本厚木"
+  },
+  "st0141": {
+    "id": "st0141",
+    "name": "明智",
+    "pref": null,
+    "lat": 35.43335,
+    "lng": 137.08772,
+    "lines": [
+      {
+        "line": "広見線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/明智"
+  },
+  "st0142": {
+    "id": "st0142",
+    "name": "博労町",
+    "pref": null,
+    "lat": 35.43162,
+    "lng": 133.33972,
+    "lines": [
+      {
+        "line": "境線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/博労町"
+  },
+  "st0143": {
+    "id": "st0143",
+    "name": "米子",
+    "pref": null,
+    "lat": 35.42334,
+    "lng": 133.33668,
+    "lines": [
+      {
+        "line": "境線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/米子"
+  },
+  "st0144": {
+    "id": "st0144",
+    "name": "新可児",
+    "pref": null,
+    "lat": 35.42327,
+    "lng": 137.05568,
+    "lines": [
+      {
+        "line": "広見線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/新可児"
+  },
+  "st0145": {
+    "id": "st0145",
+    "name": "可児",
+    "pref": null,
+    "lat": 35.42293,
+    "lng": 137.05535,
+    "lines": [
+      {
+        "line": "太多線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/可児"
+  },
+  "st0146": {
+    "id": "st0146",
+    "name": "長浜",
+    "pref": null,
+    "lat": 35.37861,
+    "lng": 136.26499,
+    "lines": [
+      {
+        "line": "北陸線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長浜"
+  },
+  "st0147": {
+    "id": "st0147",
+    "name": "善行",
+    "pref": null,
+    "lat": 35.36259,
+    "lng": 139.47327,
+    "lines": [
+      {
+        "line": "江ノ島線",
+        "operator": "小田急電鉄"
+      }
+    ],
+    "slug": "unknown/善行"
+  },
+  "st0148": {
+    "id": "st0148",
+    "name": "藤沢",
+    "pref": null,
+    "lat": 35.33822,
+    "lng": 139.48701,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      },
+      {
+        "line": "江ノ島線",
+        "operator": "小田急電鉄"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/藤沢"
+  },
+  "st0149": {
+    "id": "st0149",
+    "name": "多治見",
+    "pref": null,
+    "lat": 35.33484,
+    "lng": 137.12029,
+    "lines": [
+      {
+        "line": "太多線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/多治見"
+  },
+  "st0150": {
+    "id": "st0150",
+    "name": "石上",
+    "pref": null,
+    "lat": 35.33246,
+    "lng": 139.48558,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      }
+    ],
+    "slug": "unknown/石上"
+  },
+  "st0151": {
+    "id": "st0151",
+    "name": "茅ヶ崎",
+    "pref": null,
+    "lat": 35.33055,
+    "lng": 139.40719,
+    "lines": [
+      {
+        "line": "相模線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/茅ヶ崎"
+  },
+  "st0152": {
+    "id": "st0152",
+    "name": "平塚",
+    "pref": null,
+    "lat": 35.32763,
+    "lng": 139.34947,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/平塚"
+  },
+  "st0153": {
+    "id": "st0153",
+    "name": "鎌倉",
+    "pref": null,
+    "lat": 35.31878,
+    "lng": 139.55026,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      },
+      {
+        "line": "横須賀線",
+        "operator": "東日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/鎌倉"
+  },
+  "st0154": {
+    "id": "st0154",
+    "name": "和田塚",
+    "pref": null,
+    "lat": 35.31374,
+    "lng": 139.54537,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      }
+    ],
+    "slug": "unknown/和田塚"
+  },
+  "st0155": {
+    "id": "st0155",
+    "name": "由比ヶ浜",
+    "pref": null,
+    "lat": 35.31288,
+    "lng": 139.54158,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      }
+    ],
+    "slug": "unknown/由比ヶ浜"
+  },
+  "st0156": {
+    "id": "st0156",
+    "name": "長谷",
+    "pref": null,
+    "lat": 35.31132,
+    "lng": 139.53626,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      }
+    ],
+    "slug": "unknown/長谷"
+  },
+  "st0157": {
+    "id": "st0157",
+    "name": "極楽寺",
+    "pref": null,
+    "lat": 35.30921,
+    "lng": 139.52853,
+    "lines": [
+      {
+        "line": "江ノ島電鉄線",
+        "operator": "江ノ島電鉄"
+      }
+    ],
+    "slug": "unknown/極楽寺"
+  },
+  "st0158": {
+    "id": "st0158",
+    "name": "塚原",
+    "pref": null,
+    "lat": 35.30135,
+    "lng": 139.12672,
+    "lines": [
+      {
+        "line": "大雄山線",
+        "operator": "伊豆箱根鉄道"
+      }
+    ],
+    "slug": "unknown/塚原"
+  },
+  "st0159": {
+    "id": "st0159",
+    "name": "岩原",
+    "pref": null,
+    "lat": 35.29883,
+    "lng": 139.12881,
+    "lines": [
+      {
+        "line": "大雄山線",
+        "operator": "伊豆箱根鉄道"
+      }
+    ],
+    "slug": "unknown/岩原"
+  },
+  "st0160": {
+    "id": "st0160",
+    "name": "富水",
+    "pref": null,
+    "lat": 35.29677,
+    "lng": 139.14516,
+    "lines": [
+      {
+        "line": "小田原線",
+        "operator": "小田急電鉄"
+      }
+    ],
+    "slug": "unknown/富水"
+  },
+  "st0161": {
+    "id": "st0161",
+    "name": "相模沼田",
+    "pref": null,
+    "lat": 35.29234,
+    "lng": 139.13391,
+    "lines": [
+      {
+        "line": "大雄山線",
+        "operator": "伊豆箱根鉄道"
+      }
+    ],
+    "slug": "unknown/相模沼田"
+  },
+  "st0162": {
+    "id": "st0162",
+    "name": "妙興寺",
+    "pref": null,
+    "lat": 35.2873,
+    "lng": 136.79822,
+    "lines": [
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/妙興寺"
+  },
+  "st0163": {
+    "id": "st0163",
+    "name": "彦根",
+    "pref": null,
+    "lat": 35.27233,
+    "lng": 136.26355,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "近江鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/彦根"
+  },
+  "st0164": {
+    "id": "st0164",
+    "name": "大山寺",
+    "pref": null,
+    "lat": 35.26331,
+    "lng": 136.87479,
+    "lines": [
+      {
+        "line": "犬山線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/大山寺"
+  },
+  "st0165": {
+    "id": "st0165",
+    "name": "小田原",
+    "pref": null,
+    "lat": 35.25629,
+    "lng": 139.15558,
+    "lines": [
+      {
+        "line": "大雄山線",
+        "operator": "伊豆箱根鉄道"
+      },
+      {
+        "line": "小田原線",
+        "operator": "小田急電鉄"
+      },
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東日本旅客鉄道"
+      },
+      {
+        "line": "鉄道線",
+        "operator": "小田急箱根"
+      }
+    ],
+    "slug": "unknown/小田原"
+  },
+  "st0166": {
+    "id": "st0166",
+    "name": "徳重・名古屋芸大",
+    "pref": null,
+    "lat": 35.25575,
+    "lng": 136.87336,
+    "lines": [
+      {
+        "line": "犬山線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/徳重・名古屋芸大"
+  },
+  "st0167": {
+    "id": "st0167",
+    "name": "勝川",
+    "pref": null,
+    "lat": 35.2299,
+    "lng": 136.95646,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/勝川"
+  },
+  "st0168": {
+    "id": "st0168",
+    "name": "勝川",
+    "pref": null,
+    "lat": 35.22803,
+    "lng": 136.95333,
+    "lines": [
+      {
+        "line": "城北線",
+        "operator": "JR東海交通事業"
+      }
+    ],
+    "slug": "unknown/勝川"
+  },
+  "st0169": {
+    "id": "st0169",
+    "name": "瀬戸市",
+    "pref": null,
+    "lat": 35.22591,
+    "lng": 137.07844,
+    "lines": [
+      {
+        "line": "愛知環状鉄道線",
+        "operator": "愛知環状鉄道"
+      }
+    ],
+    "slug": "unknown/瀬戸市"
+  },
+  "st0170": {
+    "id": "st0170",
+    "name": "新瀬戸",
+    "pref": null,
+    "lat": 35.22553,
+    "lng": 137.07769,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/新瀬戸"
+  },
+  "st0171": {
+    "id": "st0171",
+    "name": "西富士宮",
+    "pref": null,
+    "lat": 35.22545,
+    "lng": 138.60253,
+    "lines": [
+      {
+        "line": "身延線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/西富士宮"
+  },
+  "st0172": {
+    "id": "st0172",
+    "name": "水野",
+    "pref": null,
+    "lat": 35.2242,
+    "lng": 137.06942,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/水野"
+  },
+  "st0173": {
+    "id": "st0173",
+    "name": "富士宮",
+    "pref": null,
+    "lat": 35.2212,
+    "lng": 138.61548,
+    "lines": [
+      {
+        "line": "身延線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/富士宮"
+  },
+  "st0174": {
+    "id": "st0174",
+    "name": "黒川",
+    "pref": null,
+    "lat": 35.19716,
+    "lng": 136.91015,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/黒川"
+  },
+  "st0175": {
+    "id": "st0175",
+    "name": "志賀本通",
+    "pref": null,
+    "lat": 35.19628,
+    "lng": 136.92122,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/志賀本通"
+  },
+  "st0176": {
+    "id": "st0176",
+    "name": "平安通",
+    "pref": null,
+    "lat": 35.19605,
+    "lng": 136.9298,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "上飯田線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/平安通"
+  },
+  "st0177": {
+    "id": "st0177",
+    "name": "浄心",
+    "pref": null,
+    "lat": 35.19209,
+    "lng": 136.89079,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/浄心"
+  },
+  "st0178": {
+    "id": "st0178",
+    "name": "大曽根",
+    "pref": null,
+    "lat": 35.19162,
+    "lng": 136.9368,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "ガイドウェイバス志段味線",
+        "operator": "名古屋ガイドウェイバス"
+      },
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "4号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/大曽根"
+  },
+  "st0179": {
+    "id": "st0179",
+    "name": "名城公園",
+    "pref": null,
+    "lat": 35.19046,
+    "lng": 136.90477,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/名城公園"
+  },
+  "st0180": {
+    "id": "st0180",
+    "name": "森下",
+    "pref": null,
+    "lat": 35.18824,
+    "lng": 136.92929,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/森下"
+  },
+  "st0181": {
+    "id": "st0181",
+    "name": "尼ヶ坂",
+    "pref": null,
+    "lat": 35.1878,
+    "lng": 136.91918,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/尼ヶ坂"
+  },
+  "st0182": {
+    "id": "st0182",
+    "name": "清水",
+    "pref": null,
+    "lat": 35.1871,
+    "lng": 136.91394,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/清水"
+  },
+  "st0183": {
+    "id": "st0183",
+    "name": "東大手",
+    "pref": null,
+    "lat": 35.18345,
+    "lng": 136.90848,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/東大手"
+  },
+  "st0184": {
+    "id": "st0184",
+    "name": "浅間町",
+    "pref": null,
+    "lat": 35.18332,
+    "lng": 136.8902,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/浅間町"
+  },
+  "st0185": {
+    "id": "st0185",
+    "name": "名古屋城",
+    "pref": null,
+    "lat": 35.18147,
+    "lng": 136.90558,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/名古屋城"
+  },
+  "st0186": {
+    "id": "st0186",
+    "name": "亀島",
+    "pref": null,
+    "lat": 35.17755,
+    "lng": 136.87746,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/亀島"
+  },
+  "st0187": {
+    "id": "st0187",
+    "name": "丸の内",
+    "pref": null,
+    "lat": 35.17398,
+    "lng": 136.89769,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/丸の内"
+  },
+  "st0188": {
+    "id": "st0188",
+    "name": "高岳",
+    "pref": null,
+    "lat": 35.17417,
+    "lng": 136.91618,
+    "lines": [
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/高岳"
+  },
+  "st0189": {
+    "id": "st0189",
+    "name": "久屋大通",
+    "pref": null,
+    "lat": 35.17377,
+    "lng": 136.90799,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/久屋大通"
+  },
+  "st0190": {
+    "id": "st0190",
+    "name": "車道",
+    "pref": null,
+    "lat": 35.17341,
+    "lng": 136.92949,
+    "lines": [
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/車道"
+  },
+  "st0191": {
+    "id": "st0191",
+    "name": "国際センター",
+    "pref": null,
+    "lat": 35.17206,
+    "lng": 136.88898,
+    "lines": [
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/国際センター"
+  },
+  "st0192": {
+    "id": "st0192",
+    "name": "千種",
+    "pref": null,
+    "lat": 35.17079,
+    "lng": 136.93053,
+    "lines": [
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/千種"
+  },
+  "st0193": {
+    "id": "st0193",
+    "name": "名古屋",
+    "pref": null,
+    "lat": 35.17092,
+    "lng": 136.88195,
+    "lines": [
+      {
+        "line": "関西線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "中央線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "西名古屋港線",
+        "operator": "名古屋臨海高速鉄道"
+      }
+    ],
+    "slug": "unknown/名古屋"
+  },
+  "st0194": {
+    "id": "st0194",
+    "name": "新栄町",
+    "pref": null,
+    "lat": 35.17067,
+    "lng": 136.92011,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/新栄町"
+  },
+  "st0195": {
+    "id": "st0195",
+    "name": "栄町",
+    "pref": null,
+    "lat": 35.17049,
+    "lng": 136.90884,
+    "lines": [
+      {
+        "line": "瀬戸線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/栄町"
+  },
+  "st0196": {
+    "id": "st0196",
+    "name": "名鉄名古屋",
+    "pref": null,
+    "lat": 35.17044,
+    "lng": 136.88387,
+    "lines": [
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/名鉄名古屋"
+  },
+  "st0197": {
+    "id": "st0197",
+    "name": "栄",
+    "pref": null,
+    "lat": 35.16973,
+    "lng": 136.90861,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/栄"
+  },
+  "st0198": {
+    "id": "st0198",
+    "name": "今池",
+    "pref": null,
+    "lat": 35.16938,
+    "lng": 136.93754,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/今池"
+  },
+  "st0199": {
+    "id": "st0199",
+    "name": "近鉄名古屋",
+    "pref": null,
+    "lat": 35.16936,
+    "lng": 136.88375,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄名古屋"
+  },
+  "st0200": {
+    "id": "st0200",
+    "name": "伏見",
+    "pref": null,
+    "lat": 35.16912,
+    "lng": 136.89736,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/伏見"
+  },
+  "st0201": {
+    "id": "st0201",
+    "name": "池下",
+    "pref": null,
+    "lat": 35.16783,
+    "lng": 136.94603,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/池下"
+  },
+  "st0202": {
+    "id": "st0202",
+    "name": "覚王山",
+    "pref": null,
+    "lat": 35.16655,
+    "lng": 136.95251,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/覚王山"
+  },
+  "st0203": {
+    "id": "st0203",
+    "name": "本山",
+    "pref": null,
+    "lat": 35.16338,
+    "lng": 136.96375,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "4号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/本山"
+  },
+  "st0204": {
+    "id": "st0204",
+    "name": "矢場町",
+    "pref": null,
+    "lat": 35.16331,
+    "lng": 136.90873,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/矢場町"
+  },
+  "st0205": {
+    "id": "st0205",
+    "name": "ささしまライブ",
+    "pref": null,
+    "lat": 35.16201,
+    "lng": 136.88192,
+    "lines": [
+      {
+        "line": "西名古屋港線",
+        "operator": "名古屋臨海高速鉄道"
+      }
+    ],
+    "slug": "unknown/ささしまライブ"
+  },
+  "st0206": {
+    "id": "st0206",
+    "name": "大須観音",
+    "pref": null,
+    "lat": 35.16141,
+    "lng": 136.89808,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/大須観音"
+  },
+  "st0207": {
+    "id": "st0207",
+    "name": "米野",
+    "pref": null,
+    "lat": 35.16126,
+    "lng": 136.87962,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/米野"
+  },
+  "st0208": {
+    "id": "st0208",
+    "name": "東山公園",
+    "pref": null,
+    "lat": 35.16063,
+    "lng": 136.97264,
+    "lines": [
+      {
+        "line": "1号線東山線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/東山公園"
+  },
+  "st0209": {
+    "id": "st0209",
+    "name": "上前津",
+    "pref": null,
+    "lat": 35.15743,
+    "lng": 136.90665,
+    "lines": [
+      {
+        "line": "2号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/上前津"
+  },
+  "st0210": {
+    "id": "st0210",
+    "name": "富士",
+    "pref": null,
+    "lat": 35.15127,
+    "lng": 138.65185,
+    "lines": [
+      {
+        "line": "身延線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/富士"
+  },
+  "st0211": {
+    "id": "st0211",
+    "name": "三島",
+    "pref": null,
+    "lat": 35.12624,
+    "lng": 138.91031,
+    "lines": [
+      {
+        "line": "駿豆線",
+        "operator": "伊豆箱根鉄道"
+      },
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/三島"
+  },
+  "st0212": {
+    "id": "st0212",
+    "name": "平針",
+    "pref": null,
+    "lat": 35.1227,
+    "lng": 137.00722,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/平針"
+  },
+  "st0213": {
+    "id": "st0213",
+    "name": "近江八幡",
+    "pref": null,
+    "lat": 35.12238,
+    "lng": 136.10263,
+    "lines": [
+      {
+        "line": "八日市線",
+        "operator": "近江鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/近江八幡"
+  },
+  "st0214": {
+    "id": "st0214",
+    "name": "赤池",
+    "pref": null,
+    "lat": 35.12104,
+    "lng": 137.01821,
+    "lines": [
+      {
+        "line": "3号線鶴舞線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "豊田線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/赤池"
+  },
+  "st0215": {
+    "id": "st0215",
+    "name": "三島広小路",
+    "pref": null,
+    "lat": 35.11934,
+    "lng": 138.91122,
+    "lines": [
+      {
+        "line": "駿豆線",
+        "operator": "伊豆箱根鉄道"
+      }
+    ],
+    "slug": "unknown/三島広小路"
+  },
+  "st0216": {
+    "id": "st0216",
+    "name": "新瑞橋",
+    "pref": null,
+    "lat": 35.11831,
+    "lng": 136.9368,
+    "lines": [
+      {
+        "line": "4号線名城線",
+        "operator": "名古屋市"
+      },
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/新瑞橋"
+  },
+  "st0217": {
+    "id": "st0217",
+    "name": "三島田町",
+    "pref": null,
+    "lat": 35.1162,
+    "lng": 138.91856,
+    "lines": [
+      {
+        "line": "駿豆線",
+        "operator": "伊豆箱根鉄道"
+      }
+    ],
+    "slug": "unknown/三島田町"
+  },
+  "st0218": {
+    "id": "st0218",
+    "name": "豊田本町",
+    "pref": null,
+    "lat": 35.11363,
+    "lng": 136.91082,
+    "lines": [
+      {
+        "line": "常滑線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/豊田本町"
+  },
+  "st0219": {
+    "id": "st0219",
+    "name": "桜本町",
+    "pref": null,
+    "lat": 35.10931,
+    "lng": 136.93684,
+    "lines": [
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/桜本町"
+  },
+  "st0220": {
+    "id": "st0220",
+    "name": "桜",
+    "pref": null,
+    "lat": 35.10606,
+    "lng": 136.93462,
+    "lines": [
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/桜"
+  },
+  "st0221": {
+    "id": "st0221",
+    "name": "道徳",
+    "pref": null,
+    "lat": 35.1057,
+    "lng": 136.90952,
+    "lines": [
+      {
+        "line": "常滑線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/道徳"
+  },
+  "st0222": {
+    "id": "st0222",
+    "name": "鶴里",
+    "pref": null,
+    "lat": 35.10557,
+    "lng": 136.9442,
+    "lines": [
+      {
+        "line": "6号線桜通線",
+        "operator": "名古屋市"
+      }
+    ],
+    "slug": "unknown/鶴里"
+  },
+  "st0223": {
+    "id": "st0223",
+    "name": "長島",
+    "pref": null,
+    "lat": 35.09817,
+    "lng": 136.69565,
+    "lines": [
+      {
+        "line": "関西線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長島"
+  },
+  "st0224": {
+    "id": "st0224",
+    "name": "近鉄長島",
+    "pref": null,
+    "lat": 35.09763,
+    "lng": 136.69608,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄長島"
+  },
+  "st0225": {
+    "id": "st0225",
+    "name": "新豊田",
+    "pref": null,
+    "lat": 35.08788,
+    "lng": 137.15354,
+    "lines": [
+      {
+        "line": "愛知環状鉄道線",
+        "operator": "愛知環状鉄道"
+      }
+    ],
+    "slug": "unknown/新豊田"
+  },
+  "st0226": {
+    "id": "st0226",
+    "name": "豊田市",
+    "pref": null,
+    "lat": 35.08726,
+    "lng": 137.15624,
+    "lines": [
+      {
+        "line": "三河線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/豊田市"
+  },
+  "st0227": {
+    "id": "st0227",
+    "name": "鳴海",
+    "pref": null,
+    "lat": 35.07843,
+    "lng": 136.95119,
+    "lines": [
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/鳴海"
+  },
+  "st0228": {
+    "id": "st0228",
+    "name": "大高",
+    "pref": null,
+    "lat": 35.0691,
+    "lng": 136.94028,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/大高"
+  },
+  "st0229": {
+    "id": "st0229",
+    "name": "桑名",
+    "pref": null,
+    "lat": 35.06687,
+    "lng": 136.6835,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "関西線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "養老線",
+        "operator": "養老鉄道"
+      }
+    ],
+    "slug": "unknown/桑名"
+  },
+  "st0230": {
+    "id": "st0230",
+    "name": "西桑名",
+    "pref": null,
+    "lat": 35.06539,
+    "lng": 136.68379,
+    "lines": [
+      {
+        "line": "北勢線",
+        "operator": "三岐鉄道"
+      }
+    ],
+    "slug": "unknown/西桑名"
+  },
+  "st0231": {
+    "id": "st0231",
+    "name": "国際会館",
+    "pref": null,
+    "lat": 35.06289,
+    "lng": 135.78509,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/国際会館"
+  },
+  "st0232": {
+    "id": "st0232",
+    "name": "修学院",
+    "pref": null,
+    "lat": 35.05001,
+    "lng": 135.7903,
+    "lines": [
+      {
+        "line": "叡山本線",
+        "operator": "叡山電鉄"
+      }
+    ],
+    "slug": "unknown/修学院"
+  },
+  "st0233": {
+    "id": "st0233",
+    "name": "一乗寺",
+    "pref": null,
+    "lat": 35.04438,
+    "lng": 135.78752,
+    "lines": [
+      {
+        "line": "叡山本線",
+        "operator": "叡山電鉄"
+      }
+    ],
+    "slug": "unknown/一乗寺"
+  },
+  "st0234": {
+    "id": "st0234",
+    "name": "聚楽園",
+    "pref": null,
+    "lat": 35.04282,
+    "lng": 136.90306,
+    "lines": [
+      {
+        "line": "常滑線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/聚楽園"
+  },
+  "st0235": {
+    "id": "st0235",
+    "name": "茶山・京都芸術大学",
+    "pref": null,
+    "lat": 35.03839,
+    "lng": 135.78465,
+    "lines": [
+      {
+        "line": "叡山本線",
+        "operator": "叡山電鉄"
+      }
+    ],
+    "slug": "unknown/茶山・京都芸術大学"
+  },
+  "st0236": {
+    "id": "st0236",
+    "name": "元田中",
+    "pref": null,
+    "lat": 35.03502,
+    "lng": 135.78163,
+    "lines": [
+      {
+        "line": "叡山本線",
+        "operator": "叡山電鉄"
+      }
+    ],
+    "slug": "unknown/元田中"
+  },
+  "st0237": {
+    "id": "st0237",
+    "name": "出町柳",
+    "pref": null,
+    "lat": 35.03048,
+    "lng": 135.77309,
+    "lines": [
+      {
+        "line": "叡山本線",
+        "operator": "叡山電鉄"
+      },
+      {
+        "line": "鴨東線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/出町柳"
+  },
+  "st0238": {
+    "id": "st0238",
+    "name": "富士松",
+    "pref": null,
+    "lat": 35.0298,
+    "lng": 137.01644,
+    "lines": [
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/富士松"
+  },
+  "st0239": {
+    "id": "st0239",
+    "name": "龍安寺",
+    "pref": null,
+    "lat": 35.02783,
+    "lng": 135.72143,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/龍安寺"
+  },
+  "st0240": {
+    "id": "st0240",
+    "name": "等持院・立命館大学衣笠キャンパス前",
+    "pref": null,
+    "lat": 35.02783,
+    "lng": 135.72368,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/等持院・立命館大学衣笠キャンパス前"
+  },
+  "st0241": {
+    "id": "st0241",
+    "name": "北野白梅町",
+    "pref": null,
+    "lat": 35.02742,
+    "lng": 135.73081,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/北野白梅町"
+  },
+  "st0242": {
+    "id": "st0242",
+    "name": "鳴滝",
+    "pref": null,
+    "lat": 35.02353,
+    "lng": 135.7058,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/鳴滝"
+  },
+  "st0243": {
+    "id": "st0243",
+    "name": "草津",
+    "pref": null,
+    "lat": 35.02259,
+    "lng": 135.96211,
+    "lines": [
+      {
+        "line": "草津線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/草津"
+  },
+  "st0244": {
+    "id": "st0244",
+    "name": "常盤",
+    "pref": null,
+    "lat": 35.02037,
+    "lng": 135.7048,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/常盤"
+  },
+  "st0245": {
+    "id": "st0245",
+    "name": "嵯峨嵐山",
+    "pref": null,
+    "lat": 35.01878,
+    "lng": 135.68131,
+    "lines": [
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/嵯峨嵐山"
+  },
+  "st0246": {
+    "id": "st0246",
+    "name": "神宮丸太町",
+    "pref": null,
+    "lat": 35.0185,
+    "lng": 135.77224,
+    "lines": [
+      {
+        "line": "鴨東線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/神宮丸太町"
+  },
+  "st0247": {
+    "id": "st0247",
+    "name": "円町",
+    "pref": null,
+    "lat": 35.01814,
+    "lng": 135.7307,
+    "lines": [
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/円町"
+  },
+  "st0248": {
+    "id": "st0248",
+    "name": "鹿王院",
+    "pref": null,
+    "lat": 35.01704,
+    "lng": 135.68525,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/鹿王院"
+  },
+  "st0249": {
+    "id": "st0249",
+    "name": "太秦",
+    "pref": null,
+    "lat": 35.01695,
+    "lng": 135.70063,
+    "lines": [
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/太秦"
+  },
+  "st0250": {
+    "id": "st0250",
+    "name": "車折神社",
+    "pref": null,
+    "lat": 35.01676,
+    "lng": 135.68905,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/車折神社"
+  },
+  "st0251": {
+    "id": "st0251",
+    "name": "丸太町",
+    "pref": null,
+    "lat": 35.01651,
+    "lng": 135.75949,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/丸太町"
+  },
+  "st0252": {
+    "id": "st0252",
+    "name": "撮影所前",
+    "pref": null,
+    "lat": 35.01568,
+    "lng": 135.7027,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/撮影所前"
+  },
+  "st0253": {
+    "id": "st0253",
+    "name": "有栖川",
+    "pref": null,
+    "lat": 35.01519,
+    "lng": 135.69402,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/有栖川"
+  },
+  "st0254": {
+    "id": "st0254",
+    "name": "帷子ノ辻",
+    "pref": null,
+    "lat": 35.01515,
+    "lng": 135.70031,
+    "lines": [
+      {
+        "line": "北野線",
+        "operator": "京福電気鉄道"
+      },
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/帷子ノ辻"
+  },
+  "st0255": {
+    "id": "st0255",
+    "name": "日野",
+    "pref": null,
+    "lat": 35.01225,
+    "lng": 136.21946,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "近江鉄道"
+      }
+    ],
+    "slug": "unknown/日野"
+  },
+  "st0256": {
+    "id": "st0256",
+    "name": "二条",
+    "pref": null,
+    "lat": 35.01159,
+    "lng": 135.74177,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      },
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/二条"
+  },
+  "st0257": {
+    "id": "st0257",
+    "name": "二条城前",
+    "pref": null,
+    "lat": 35.01191,
+    "lng": 135.75042,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/二条城前"
+  },
+  "st0258": {
+    "id": "st0258",
+    "name": "蚕ノ社",
+    "pref": null,
+    "lat": 35.01171,
+    "lng": 135.713,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/蚕ノ社"
+  },
+  "st0259": {
+    "id": "st0259",
+    "name": "西大路御池",
+    "pref": null,
+    "lat": 35.01096,
+    "lng": 135.73062,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/西大路御池"
+  },
+  "st0260": {
+    "id": "st0260",
+    "name": "太秦天神川",
+    "pref": null,
+    "lat": 35.01094,
+    "lng": 135.71606,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/太秦天神川"
+  },
+  "st0261": {
+    "id": "st0261",
+    "name": "京都市役所前",
+    "pref": null,
+    "lat": 35.01091,
+    "lng": 135.76895,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/京都市役所前"
+  },
+  "st0262": {
+    "id": "st0262",
+    "name": "烏丸御池",
+    "pref": null,
+    "lat": 35.0105,
+    "lng": 135.75963,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      },
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/烏丸御池"
+  },
+  "st0263": {
+    "id": "st0263",
+    "name": "嵐電天神川",
+    "pref": null,
+    "lat": 35.01018,
+    "lng": 135.71482,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/嵐電天神川"
+  },
+  "st0264": {
+    "id": "st0264",
+    "name": "尾張横須賀",
+    "pref": null,
+    "lat": 35.01001,
+    "lng": 136.88555,
+    "lines": [
+      {
+        "line": "常滑線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/尾張横須賀"
+  },
+  "st0265": {
+    "id": "st0265",
+    "name": "高横須賀",
+    "pref": null,
+    "lat": 35.00965,
+    "lng": 136.89374,
+    "lines": [
+      {
+        "line": "河和線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/高横須賀"
+  },
+  "st0266": {
+    "id": "st0266",
+    "name": "東山",
+    "pref": null,
+    "lat": 35.00944,
+    "lng": 135.77982,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/東山"
+  },
+  "st0267": {
+    "id": "st0267",
+    "name": "三条京阪",
+    "pref": null,
+    "lat": 35.00922,
+    "lng": 135.77369,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/三条京阪"
+  },
+  "st0268": {
+    "id": "st0268",
+    "name": "三条",
+    "pref": null,
+    "lat": 35.00887,
+    "lng": 135.77234,
+    "lines": [
+      {
+        "line": "鴨東線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/三条"
+  },
+  "st0269": {
+    "id": "st0269",
+    "name": "山ノ内",
+    "pref": null,
+    "lat": 35.00832,
+    "lng": 135.72321,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/山ノ内"
+  },
+  "st0270": {
+    "id": "st0270",
+    "name": "西大路三条",
+    "pref": null,
+    "lat": 35.0079,
+    "lng": 135.73253,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/西大路三条"
+  },
+  "st0271": {
+    "id": "st0271",
+    "name": "京都河原町",
+    "pref": null,
+    "lat": 35.00378,
+    "lng": 135.76872,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/京都河原町"
+  },
+  "st0272": {
+    "id": "st0272",
+    "name": "烏丸",
+    "pref": null,
+    "lat": 35.0037,
+    "lng": 135.76038,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/烏丸"
+  },
+  "st0273": {
+    "id": "st0273",
+    "name": "大宮",
+    "pref": null,
+    "lat": 35.00365,
+    "lng": 135.74952,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/大宮"
+  },
+  "st0274": {
+    "id": "st0274",
+    "name": "西院",
+    "pref": null,
+    "lat": 35.00338,
+    "lng": 135.73312,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      },
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/西院"
+  },
+  "st0275": {
+    "id": "st0275",
+    "name": "祇園四条",
+    "pref": null,
+    "lat": 35.00332,
+    "lng": 135.77193,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/祇園四条"
+  },
+  "st0276": {
+    "id": "st0276",
+    "name": "四条大宮",
+    "pref": null,
+    "lat": 35.00315,
+    "lng": 135.74824,
+    "lines": [
+      {
+        "line": "嵐山本線",
+        "operator": "京福電気鉄道"
+      }
+    ],
+    "slug": "unknown/四条大宮"
+  },
+  "st0277": {
+    "id": "st0277",
+    "name": "四条",
+    "pref": null,
+    "lat": 35.00281,
+    "lng": 135.75968,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/四条"
+  },
+  "st0278": {
+    "id": "st0278",
+    "name": "清水五条",
+    "pref": null,
+    "lat": 34.99657,
+    "lng": 135.7687,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/清水五条"
+  },
+  "st0279": {
+    "id": "st0279",
+    "name": "丹波口",
+    "pref": null,
+    "lat": 34.99655,
+    "lng": 135.74227,
+    "lines": [
+      {
+        "line": "山陰線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/丹波口"
+  },
+  "st0280": {
+    "id": "st0280",
+    "name": "御陵",
+    "pref": null,
+    "lat": 34.99598,
+    "lng": 135.80189,
+    "lines": [
+      {
+        "line": "京津線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/御陵"
+  },
+  "st0281": {
+    "id": "st0281",
+    "name": "五条",
+    "pref": null,
+    "lat": 34.99522,
+    "lng": 135.75973,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/五条"
+  },
+  "st0282": {
+    "id": "st0282",
+    "name": "霞ヶ浦",
+    "pref": null,
+    "lat": 34.99343,
+    "lng": 136.63692,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/霞ヶ浦"
+  },
+  "st0283": {
+    "id": "st0283",
+    "name": "山科",
+    "pref": null,
+    "lat": 34.99218,
+    "lng": 135.81684,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      },
+      {
+        "line": "湖西線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/山科"
+  },
+  "st0284": {
+    "id": "st0284",
+    "name": "西京極",
+    "pref": null,
+    "lat": 34.99254,
+    "lng": 135.71852,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/西京極"
+  },
+  "st0285": {
+    "id": "st0285",
+    "name": "京阪山科",
+    "pref": null,
+    "lat": 34.99202,
+    "lng": 135.81696,
+    "lines": [
+      {
+        "line": "京津線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/京阪山科"
+  },
+  "st0286": {
+    "id": "st0286",
+    "name": "四宮",
+    "pref": null,
+    "lat": 34.99188,
+    "lng": 135.82397,
+    "lines": [
+      {
+        "line": "京津線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/四宮"
+  },
+  "st0287": {
+    "id": "st0287",
+    "name": "刈谷",
+    "pref": null,
+    "lat": 34.99067,
+    "lng": 137.00949,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "三河線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/刈谷"
+  },
+  "st0288": {
+    "id": "st0288",
+    "name": "上桂",
+    "pref": null,
+    "lat": 34.99003,
+    "lng": 135.69621,
+    "lines": [
+      {
+        "line": "嵐山線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/上桂"
+  },
+  "st0289": {
+    "id": "st0289",
+    "name": "新安城",
+    "pref": null,
+    "lat": 34.9869,
+    "lng": 137.08551,
+    "lines": [
+      {
+        "line": "西尾線",
+        "operator": "名古屋鉄道"
+      },
+      {
+        "line": "名古屋本線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/新安城"
+  },
+  "st0290": {
+    "id": "st0290",
+    "name": "東野",
+    "pref": null,
+    "lat": 34.9824,
+    "lng": 135.81682,
+    "lines": [
+      {
+        "line": "東西線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/東野"
+  },
+  "st0291": {
+    "id": "st0291",
+    "name": "桂",
+    "pref": null,
+    "lat": 34.97873,
+    "lng": 135.70318,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "嵐山線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/桂"
+  },
+  "st0292": {
+    "id": "st0292",
+    "name": "音羽町",
+    "pref": null,
+    "lat": 34.9784,
+    "lng": 138.39585,
+    "lines": [
+      {
+        "line": "静岡清水線",
+        "operator": "静岡鉄道"
+      }
+    ],
+    "slug": "unknown/音羽町"
+  },
+  "st0293": {
+    "id": "st0293",
+    "name": "日吉町",
+    "pref": null,
+    "lat": 34.97704,
+    "lng": 138.39117,
+    "lines": [
+      {
+        "line": "静岡清水線",
+        "operator": "静岡鉄道"
+      }
+    ],
+    "slug": "unknown/日吉町"
+  },
+  "st0294": {
+    "id": "st0294",
+    "name": "新静岡",
+    "pref": null,
+    "lat": 34.97586,
+    "lng": 138.38765,
+    "lines": [
+      {
+        "line": "静岡清水線",
+        "operator": "静岡鉄道"
+      }
+    ],
+    "slug": "unknown/新静岡"
+  },
+  "st0295": {
+    "id": "st0295",
+    "name": "静岡",
+    "pref": null,
+    "lat": 34.97176,
+    "lng": 138.3893,
+    "lines": [
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/静岡"
+  },
+  "st0296": {
+    "id": "st0296",
+    "name": "近鉄四日市",
+    "pref": null,
+    "lat": 34.96669,
+    "lng": 136.61846,
+    "lines": [
+      {
+        "line": "湯の山線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄四日市"
+  },
+  "st0297": {
+    "id": "st0297",
+    "name": "あすなろう四日市",
+    "pref": null,
+    "lat": 34.96698,
+    "lng": 136.61858,
+    "lines": [
+      {
+        "line": "内部線",
+        "operator": "四日市あすなろう鉄道"
+      }
+    ],
+    "slug": "unknown/あすなろう四日市"
+  },
+  "st0298": {
+    "id": "st0298",
+    "name": "龍谷大前深草",
+    "pref": null,
+    "lat": 34.96402,
+    "lng": 135.77014,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/龍谷大前深草"
+  },
+  "st0299": {
+    "id": "st0299",
+    "name": "くいな橋",
+    "pref": null,
+    "lat": 34.96257,
+    "lng": 135.75742,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      }
+    ],
+    "slug": "unknown/くいな橋"
+  },
+  "st0300": {
+    "id": "st0300",
+    "name": "赤堀",
+    "pref": null,
+    "lat": 34.95923,
+    "lng": 136.61044,
+    "lines": [
+      {
+        "line": "内部線",
+        "operator": "四日市あすなろう鉄道"
+      }
+    ],
+    "slug": "unknown/赤堀"
+  },
+  "st0301": {
+    "id": "st0301",
+    "name": "藤森",
+    "pref": null,
+    "lat": 34.95688,
+    "lng": 135.77022,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/藤森"
+  },
+  "st0302": {
+    "id": "st0302",
+    "name": "新正",
+    "pref": null,
+    "lat": 34.95638,
+    "lng": 136.61843,
+    "lines": [
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/新正"
+  },
+  "st0303": {
+    "id": "st0303",
+    "name": "竹田",
+    "pref": null,
+    "lat": 34.95599,
+    "lng": 135.75616,
+    "lines": [
+      {
+        "line": "烏丸線",
+        "operator": "京都市"
+      },
+      {
+        "line": "京都線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/竹田"
+  },
+  "st0304": {
+    "id": "st0304",
+    "name": "川奈",
+    "pref": null,
+    "lat": 34.95089,
+    "lng": 139.12484,
+    "lines": [
+      {
+        "line": "伊豆急行線",
+        "operator": "伊豆急行"
+      }
+    ],
+    "slug": "unknown/川奈"
+  },
+  "st0305": {
+    "id": "st0305",
+    "name": "墨染",
+    "pref": null,
+    "lat": 34.94817,
+    "lng": 135.76911,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/墨染"
+  },
+  "st0306": {
+    "id": "st0306",
+    "name": "JR藤森",
+    "pref": null,
+    "lat": 34.94799,
+    "lng": 135.77562,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR藤森"
+  },
+  "st0307": {
+    "id": "st0307",
+    "name": "伏見",
+    "pref": null,
+    "lat": 34.94602,
+    "lng": 135.76149,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/伏見"
+  },
+  "st0308": {
+    "id": "st0308",
+    "name": "六名",
+    "pref": null,
+    "lat": 34.94129,
+    "lng": 137.15189,
+    "lines": [
+      {
+        "line": "愛知環状鉄道線",
+        "operator": "愛知環状鉄道"
+      }
+    ],
+    "slug": "unknown/六名"
+  },
+  "st0309": {
+    "id": "st0309",
+    "name": "家山",
+    "pref": null,
+    "lat": 34.94008,
+    "lng": 138.07777,
+    "lines": [
+      {
+        "line": "大井川本線",
+        "operator": "大井川鐵道"
+      }
+    ],
+    "slug": "unknown/家山"
+  },
+  "st0310": {
+    "id": "st0310",
+    "name": "丹波橋",
+    "pref": null,
+    "lat": 34.93892,
+    "lng": 135.76542,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/丹波橋"
+  },
+  "st0311": {
+    "id": "st0311",
+    "name": "近鉄丹波橋",
+    "pref": null,
+    "lat": 34.93811,
+    "lng": 135.76643,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄丹波橋"
+  },
+  "st0312": {
+    "id": "st0312",
+    "name": "桃山御陵前",
+    "pref": null,
+    "lat": 34.93333,
+    "lng": 135.76555,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/桃山御陵前"
+  },
+  "st0313": {
+    "id": "st0313",
+    "name": "桃山",
+    "pref": null,
+    "lat": 34.93256,
+    "lng": 135.77193,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/桃山"
+  },
+  "st0314": {
+    "id": "st0314",
+    "name": "伏見桃山",
+    "pref": null,
+    "lat": 34.93251,
+    "lng": 135.76436,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/伏見桃山"
+  },
+  "st0315": {
+    "id": "st0315",
+    "name": "観月橋",
+    "pref": null,
+    "lat": 34.92815,
+    "lng": 135.76896,
+    "lines": [
+      {
+        "line": "宇治線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/観月橋"
+  },
+  "st0316": {
+    "id": "st0316",
+    "name": "中書島",
+    "pref": null,
+    "lat": 34.92673,
+    "lng": 135.76019,
+    "lines": [
+      {
+        "line": "宇治線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/中書島"
+  },
+  "st0317": {
+    "id": "st0317",
+    "name": "長岡天神",
+    "pref": null,
+    "lat": 34.92488,
+    "lng": 135.69246,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/長岡天神"
+  },
+  "st0318": {
+    "id": "st0318",
+    "name": "長岡京",
+    "pref": null,
+    "lat": 34.9235,
+    "lng": 135.7009,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長岡京"
+  },
+  "st0319": {
+    "id": "st0319",
+    "name": "三日市",
+    "pref": null,
+    "lat": 34.88024,
+    "lng": 136.56223,
+    "lines": [
+      {
+        "line": "鈴鹿線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/三日市"
+  },
+  "st0320": {
+    "id": "st0320",
+    "name": "伊豆高原",
+    "pref": null,
+    "lat": 34.87746,
+    "lng": 139.10818,
+    "lines": [
+      {
+        "line": "伊豆急行線",
+        "operator": "伊豆急行"
+      }
+    ],
+    "slug": "unknown/伊豆高原"
+  },
+  "st0321": {
+    "id": "st0321",
+    "name": "焼津",
+    "pref": null,
+    "lat": 34.87229,
+    "lng": 138.31848,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/焼津"
+  },
+  "st0322": {
+    "id": "st0322",
+    "name": "西尾口",
+    "pref": null,
+    "lat": 34.87074,
+    "lng": 137.0627,
+    "lines": [
+      {
+        "line": "西尾線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/西尾口"
+  },
+  "st0323": {
+    "id": "st0323",
+    "name": "長山",
+    "pref": null,
+    "lat": 34.8644,
+    "lng": 137.43135,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長山"
+  },
+  "st0324": {
+    "id": "st0324",
+    "name": "西尾",
+    "pref": null,
+    "lat": 34.86392,
+    "lng": 137.05784,
+    "lines": [
+      {
+        "line": "西尾線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/西尾"
+  },
+  "st0325": {
+    "id": "st0325",
+    "name": "樟葉",
+    "pref": null,
+    "lat": 34.86185,
+    "lng": 135.67534,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/樟葉"
+  },
+  "st0326": {
+    "id": "st0326",
+    "name": "鼓滝",
+    "pref": null,
+    "lat": 34.8547,
+    "lng": 135.41834,
+    "lines": [
+      {
+        "line": "妙見線",
+        "operator": "能勢電鉄"
+      }
+    ],
+    "slug": "unknown/鼓滝"
+  },
+  "st0327": {
+    "id": "st0327",
+    "name": "高槻",
+    "pref": null,
+    "lat": 34.85125,
+    "lng": 135.61711,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高槻"
+  },
+  "st0328": {
+    "id": "st0328",
+    "name": "高槻市",
+    "pref": null,
+    "lat": 34.84982,
+    "lng": 135.62315,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/高槻市"
+  },
+  "st0329": {
+    "id": "st0329",
+    "name": "藤枝",
+    "pref": null,
+    "lat": 34.84957,
+    "lng": 138.25287,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/藤枝"
+  },
+  "st0330": {
+    "id": "st0330",
+    "name": "箕面",
+    "pref": null,
+    "lat": 34.83428,
+    "lng": 135.46822,
+    "lines": [
+      {
+        "line": "箕面線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/箕面"
+  },
+  "st0331": {
+    "id": "st0331",
+    "name": "松井山手",
+    "pref": null,
+    "lat": 34.83319,
+    "lng": 135.72757,
+    "lines": [
+      {
+        "line": "片町線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/松井山手"
+  },
+  "st0332": {
+    "id": "st0332",
+    "name": "島田",
+    "pref": null,
+    "lat": 34.83015,
+    "lng": 138.17343,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/島田"
+  },
+  "st0333": {
+    "id": "st0333",
+    "name": "新金谷",
+    "pref": null,
+    "lat": 34.82574,
+    "lng": 138.13765,
+    "lines": [
+      {
+        "line": "大井川本線",
+        "operator": "大井川鐵道"
+      }
+    ],
+    "slug": "unknown/新金谷"
+  },
+  "st0334": {
+    "id": "st0334",
+    "name": "蒲郡競艇場前",
+    "pref": null,
+    "lat": 34.82543,
+    "lng": 137.20212,
+    "lines": [
+      {
+        "line": "蒲郡線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/蒲郡競艇場前"
+  },
+  "st0335": {
+    "id": "st0335",
+    "name": "三河塩津",
+    "pref": null,
+    "lat": 34.82543,
+    "lng": 137.2015,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/三河塩津"
+  },
+  "st0336": {
+    "id": "st0336",
+    "name": "豊川",
+    "pref": null,
+    "lat": 34.82255,
+    "lng": 137.39721,
+    "lines": [
+      {
+        "line": "飯田線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/豊川"
+  },
+  "st0337": {
+    "id": "st0337",
+    "name": "岡場",
+    "pref": null,
+    "lat": 34.82178,
+    "lng": 135.22248,
+    "lines": [
+      {
+        "line": "三田線",
+        "operator": "神戸電鉄"
+      }
+    ],
+    "slug": "unknown/岡場"
+  },
+  "st0338": {
+    "id": "st0338",
+    "name": "豊川稲荷",
+    "pref": null,
+    "lat": 34.82177,
+    "lng": 137.39596,
+    "lines": [
+      {
+        "line": "豊川線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/豊川稲荷"
+  },
+  "st0339": {
+    "id": "st0339",
+    "name": "池田",
+    "pref": null,
+    "lat": 34.8216,
+    "lng": 135.42563,
+    "lines": [
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/池田"
+  },
+  "st0340": {
+    "id": "st0340",
+    "name": "稲荷口",
+    "pref": null,
+    "lat": 34.81842,
+    "lng": 137.38774,
+    "lines": [
+      {
+        "line": "豊川線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/稲荷口"
+  },
+  "st0341": {
+    "id": "st0341",
+    "name": "茨木市",
+    "pref": null,
+    "lat": 34.8165,
+    "lng": 135.57568,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/茨木市"
+  },
+  "st0342": {
+    "id": "st0342",
+    "name": "売布神社",
+    "pref": null,
+    "lat": 34.81631,
+    "lng": 135.36185,
+    "lines": [
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/売布神社"
+  },
+  "st0343": {
+    "id": "st0343",
+    "name": "茨木",
+    "pref": null,
+    "lat": 34.81508,
+    "lng": 135.56207,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/茨木"
+  },
+  "st0344": {
+    "id": "st0344",
+    "name": "三河鹿島",
+    "pref": null,
+    "lat": 34.81331,
+    "lng": 137.1897,
+    "lines": [
+      {
+        "line": "蒲郡線",
+        "operator": "名古屋鉄道"
+      }
+    ],
+    "slug": "unknown/三河鹿島"
+  },
+  "st0345": {
+    "id": "st0345",
+    "name": "清荒神",
+    "pref": null,
+    "lat": 34.8112,
+    "lng": 135.35345,
+    "lines": [
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/清荒神"
+  },
+  "st0346": {
+    "id": "st0346",
+    "name": "石橋阪大前",
+    "pref": null,
+    "lat": 34.80817,
+    "lng": 135.44586,
+    "lines": [
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "箕面線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/石橋阪大前"
+  },
+  "st0347": {
+    "id": "st0347",
+    "name": "五社",
+    "pref": null,
+    "lat": 34.80613,
+    "lng": 135.21636,
+    "lines": [
+      {
+        "line": "三田線",
+        "operator": "神戸電鉄"
+      }
+    ],
+    "slug": "unknown/五社"
+  },
+  "st0348": {
+    "id": "st0348",
+    "name": "千里丘",
+    "pref": null,
+    "lat": 34.79144,
+    "lng": 135.55142,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/千里丘"
+  },
+  "st0349": {
+    "id": "st0349",
+    "name": "摂津市",
+    "pref": null,
+    "lat": 34.78637,
+    "lng": 135.55368,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/摂津市"
+  },
+  "st0350": {
+    "id": "st0350",
+    "name": "香里園",
+    "pref": null,
+    "lat": 34.78456,
+    "lng": 135.63094,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/香里園"
+  },
+  "st0351": {
+    "id": "st0351",
+    "name": "伊丹",
+    "pref": null,
+    "lat": 34.78061,
+    "lng": 135.42178,
+    "lines": [
+      {
+        "line": "福知山線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/伊丹"
+  },
+  "st0352": {
+    "id": "st0352",
+    "name": "伊丹",
+    "pref": null,
+    "lat": 34.77992,
+    "lng": 135.41373,
+    "lines": [
+      {
+        "line": "伊丹線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/伊丹"
+  },
+  "st0353": {
+    "id": "st0353",
+    "name": "緑地公園",
+    "pref": null,
+    "lat": 34.77482,
+    "lng": 135.49528,
+    "lines": [
+      {
+        "line": "南北線",
+        "operator": "北大阪急行電鉄"
+      }
+    ],
+    "slug": "unknown/緑地公園"
+  },
+  "st0354": {
+    "id": "st0354",
+    "name": "掛川",
+    "pref": null,
+    "lat": 34.76935,
+    "lng": 138.01503,
+    "lines": [
+      {
+        "line": "天竜浜名湖線",
+        "operator": "天竜浜名湖鉄道"
+      },
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/掛川"
+  },
+  "st0355": {
+    "id": "st0355",
+    "name": "寝屋川市",
+    "pref": null,
+    "lat": 34.764,
+    "lng": 135.62079,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/寝屋川市"
+  },
+  "st0356": {
+    "id": "st0356",
+    "name": "谷上",
+    "pref": null,
+    "lat": 34.76161,
+    "lng": 135.17129,
+    "lines": [
+      {
+        "line": "有馬線",
+        "operator": "神戸電鉄"
+      },
+      {
+        "line": "北神線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/谷上"
+  },
+  "st0357": {
+    "id": "st0357",
+    "name": "愛野",
+    "pref": null,
+    "lat": 34.75245,
+    "lng": 137.96184,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/愛野"
+  },
+  "st0358": {
+    "id": "st0358",
+    "name": "上新庄",
+    "pref": null,
+    "lat": 34.75007,
+    "lng": 135.53301,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/上新庄"
+  },
+  "st0359": {
+    "id": "st0359",
+    "name": "下新庄",
+    "pref": null,
+    "lat": 34.74642,
+    "lng": 135.5199,
+    "lines": [
+      {
+        "line": "千里線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/下新庄"
+  },
+  "st0360": {
+    "id": "st0360",
+    "name": "だいどう豊里",
+    "pref": null,
+    "lat": 34.74399,
+    "lng": 135.54447,
+    "lines": [
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/だいどう豊里"
+  },
+  "st0361": {
+    "id": "st0361",
+    "name": "大和田",
+    "pref": null,
+    "lat": 34.74293,
+    "lng": 135.60255,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/大和田"
+  },
+  "st0362": {
+    "id": "st0362",
+    "name": "東三国",
+    "pref": null,
+    "lat": 34.7411,
+    "lng": 135.4985,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/東三国"
+  },
+  "st0363": {
+    "id": "st0363",
+    "name": "JR淡路",
+    "pref": null,
+    "lat": 34.7408,
+    "lng": 135.51981,
+    "lines": [
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR淡路"
+  },
+  "st0364": {
+    "id": "st0364",
+    "name": "古川橋",
+    "pref": null,
+    "lat": 34.73987,
+    "lng": 135.59129,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/古川橋"
+  },
+  "st0365": {
+    "id": "st0365",
+    "name": "淡路",
+    "pref": null,
+    "lat": 34.73938,
+    "lng": 135.51698,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "千里線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/淡路"
+  },
+  "st0366": {
+    "id": "st0366",
+    "name": "東淀川",
+    "pref": null,
+    "lat": 34.73921,
+    "lng": 135.504,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/東淀川"
+  },
+  "st0367": {
+    "id": "st0367",
+    "name": "守口",
+    "pref": null,
+    "lat": 34.73844,
+    "lng": 135.56435,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/守口"
+  },
+  "st0368": {
+    "id": "st0368",
+    "name": "三国",
+    "pref": null,
+    "lat": 34.73748,
+    "lng": 135.48295,
+    "lines": [
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/三国"
+  },
+  "st0369": {
+    "id": "st0369",
+    "name": "守口市",
+    "pref": null,
+    "lat": 34.73524,
+    "lng": 135.56514,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/守口市"
+  },
+  "st0370": {
+    "id": "st0370",
+    "name": "津",
+    "pref": null,
+    "lat": 34.73439,
+    "lng": 136.51056,
+    "lines": [
+      {
+        "line": "伊勢線",
+        "operator": "伊勢鉄道"
+      },
+      {
+        "line": "名古屋線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "紀勢線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/津"
+  },
+  "st0371": {
+    "id": "st0371",
+    "name": "新大阪",
+    "pref": null,
+    "lat": 34.73362,
+    "lng": 135.5005,
+    "lines": [
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "東海道新幹線",
+        "operator": "東海旅客鉄道"
+      },
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/新大阪"
+  },
+  "st0372": {
+    "id": "st0372",
+    "name": "尼崎",
+    "pref": null,
+    "lat": 34.73185,
+    "lng": 135.43178,
+    "lines": [
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "福知山線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/尼崎"
+  },
+  "st0373": {
+    "id": "st0373",
+    "name": "太子橋今市",
+    "pref": null,
+    "lat": 34.73127,
+    "lng": 135.55537,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/太子橋今市"
+  },
+  "st0374": {
+    "id": "st0374",
+    "name": "甲南山手",
+    "pref": null,
+    "lat": 34.73064,
+    "lng": 135.2926,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/甲南山手"
+  },
+  "st0375": {
+    "id": "st0375",
+    "name": "土居",
+    "pref": null,
+    "lat": 34.73064,
+    "lng": 135.55978,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/土居"
+  },
+  "st0376": {
+    "id": "st0376",
+    "name": "岡本",
+    "pref": null,
+    "lat": 34.72918,
+    "lng": 135.27594,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/岡本"
+  },
+  "st0377": {
+    "id": "st0377",
+    "name": "滝井",
+    "pref": null,
+    "lat": 34.7279,
+    "lng": 135.55745,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/滝井"
+  },
+  "st0378": {
+    "id": "st0378",
+    "name": "芦屋",
+    "pref": null,
+    "lat": 34.72777,
+    "lng": 135.30355,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/芦屋"
+  },
+  "st0379": {
+    "id": "st0379",
+    "name": "摂津本山",
+    "pref": null,
+    "lat": 34.72681,
+    "lng": 135.27757,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/摂津本山"
+  },
+  "st0380": {
+    "id": "st0380",
+    "name": "西中島南方",
+    "pref": null,
+    "lat": 34.72655,
+    "lng": 135.49861,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/西中島南方"
+  },
+  "st0381": {
+    "id": "st0381",
+    "name": "南方",
+    "pref": null,
+    "lat": 34.72571,
+    "lng": 135.4993,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/南方"
+  },
+  "st0382": {
+    "id": "st0382",
+    "name": "御影",
+    "pref": null,
+    "lat": 34.72457,
+    "lng": 135.25187,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/御影"
+  },
+  "st0383": {
+    "id": "st0383",
+    "name": "千林大宮",
+    "pref": null,
+    "lat": 34.72423,
+    "lng": 135.54926,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/千林大宮"
+  },
+  "st0384": {
+    "id": "st0384",
+    "name": "千林",
+    "pref": null,
+    "lat": 34.72406,
+    "lng": 135.55482,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/千林"
+  },
+  "st0385": {
+    "id": "st0385",
+    "name": "深江",
+    "pref": null,
+    "lat": 34.72257,
+    "lng": 135.29145,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/深江"
+  },
+  "st0386": {
+    "id": "st0386",
+    "name": "十三",
+    "pref": null,
+    "lat": 34.72069,
+    "lng": 135.48231,
+    "lines": [
+      {
+        "line": "京都線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/十三"
+  },
+  "st0387": {
+    "id": "st0387",
+    "name": "住吉",
+    "pref": null,
+    "lat": 34.71958,
+    "lng": 135.26244,
+    "lines": [
+      {
+        "line": "六甲アイランド線",
+        "operator": "神戸新交通"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/住吉"
+  },
+  "st0388": {
+    "id": "st0388",
+    "name": "六甲",
+    "pref": null,
+    "lat": 34.71948,
+    "lng": 135.2337,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/六甲"
+  },
+  "st0389": {
+    "id": "st0389",
+    "name": "森小路",
+    "pref": null,
+    "lat": 34.71945,
+    "lng": 135.55168,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/森小路"
+  },
+  "st0390": {
+    "id": "st0390",
+    "name": "尼崎",
+    "pref": null,
+    "lat": 34.71851,
+    "lng": 135.41732,
+    "lines": [
+      {
+        "line": "阪神なんば線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/尼崎"
+  },
+  "st0391": {
+    "id": "st0391",
+    "name": "杭瀬",
+    "pref": null,
+    "lat": 34.71831,
+    "lng": 135.43868,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/杭瀬"
+  },
+  "st0392": {
+    "id": "st0392",
+    "name": "出屋敷",
+    "pref": null,
+    "lat": 34.71826,
+    "lng": 135.40461,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/出屋敷"
+  },
+  "st0393": {
+    "id": "st0393",
+    "name": "青木",
+    "pref": null,
+    "lat": 34.71698,
+    "lng": 135.28065,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/青木"
+  },
+  "st0394": {
+    "id": "st0394",
+    "name": "関目高殿",
+    "pref": null,
+    "lat": 34.71527,
+    "lng": 135.54565,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/関目高殿"
+  },
+  "st0395": {
+    "id": "st0395",
+    "name": "六甲道",
+    "pref": null,
+    "lat": 34.71481,
+    "lng": 135.23841,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/六甲道"
+  },
+  "st0396": {
+    "id": "st0396",
+    "name": "石屋川",
+    "pref": null,
+    "lat": 34.71332,
+    "lng": 135.24942,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/石屋川"
+  },
+  "st0397": {
+    "id": "st0397",
+    "name": "関目成育",
+    "pref": null,
+    "lat": 34.71303,
+    "lng": 135.54644,
+    "lines": [
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/関目成育"
+  },
+  "st0398": {
+    "id": "st0398",
+    "name": "関目",
+    "pref": null,
+    "lat": 34.71263,
+    "lng": 135.54699,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/関目"
+  },
+  "st0399": {
+    "id": "st0399",
+    "name": "中津",
+    "pref": null,
+    "lat": 34.71129,
+    "lng": 135.49707,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/中津"
+  },
+  "st0400": {
+    "id": "st0400",
+    "name": "新在家",
+    "pref": null,
+    "lat": 34.71061,
+    "lng": 135.24057,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/新在家"
+  },
+  "st0401": {
+    "id": "st0401",
+    "name": "王子公園",
+    "pref": null,
+    "lat": 34.71034,
+    "lng": 135.21864,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/王子公園"
+  },
+  "st0402": {
+    "id": "st0402",
+    "name": "磐田",
+    "pref": null,
+    "lat": 34.71022,
+    "lng": 137.85227,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/磐田"
+  },
+  "st0403": {
+    "id": "st0403",
+    "name": "天神橋筋六丁目",
+    "pref": null,
+    "lat": 34.71037,
+    "lng": 135.51097,
+    "lines": [
+      {
+        "line": "千里線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/天神橋筋六丁目"
+  },
+  "st0404": {
+    "id": "st0404",
+    "name": "野江内代",
+    "pref": null,
+    "lat": 34.70889,
+    "lng": 135.53792,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/野江内代"
+  },
+  "st0405": {
+    "id": "st0405",
+    "name": "摩耶",
+    "pref": null,
+    "lat": 34.70852,
+    "lng": 135.22475,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/摩耶"
+  },
+  "st0406": {
+    "id": "st0406",
+    "name": "大石",
+    "pref": null,
+    "lat": 34.70771,
+    "lng": 135.23107,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/大石"
+  },
+  "st0407": {
+    "id": "st0407",
+    "name": "野江",
+    "pref": null,
+    "lat": 34.7073,
+    "lng": 135.54334,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/野江"
+  },
+  "st0408": {
+    "id": "st0408",
+    "name": "中崎町",
+    "pref": null,
+    "lat": 34.70718,
+    "lng": 135.50556,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/中崎町"
+  },
+  "st0409": {
+    "id": "st0409",
+    "name": "JR野江",
+    "pref": null,
+    "lat": 34.70684,
+    "lng": 135.54139,
+    "lines": [
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR野江"
+  },
+  "st0410": {
+    "id": "st0410",
+    "name": "西灘",
+    "pref": null,
+    "lat": 34.70573,
+    "lng": 135.22434,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/西灘"
+  },
+  "st0411": {
+    "id": "st0411",
+    "name": "大阪梅田",
+    "pref": null,
+    "lat": 34.70558,
+    "lng": 135.49833,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "宝塚線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/大阪梅田"
+  },
+  "st0412": {
+    "id": "st0412",
+    "name": "桜ノ宮",
+    "pref": null,
+    "lat": 34.70505,
+    "lng": 135.52103,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/桜ノ宮"
+  },
+  "st0413": {
+    "id": "st0413",
+    "name": "天満",
+    "pref": null,
+    "lat": 34.70494,
+    "lng": 135.51237,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/天満"
+  },
+  "st0414": {
+    "id": "st0414",
+    "name": "新神戸",
+    "pref": null,
+    "lat": 34.70556,
+    "lng": 135.19612,
+    "lines": [
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      },
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "北神線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/新神戸"
+  },
+  "st0415": {
+    "id": "st0415",
+    "name": "岩屋",
+    "pref": null,
+    "lat": 34.7042,
+    "lng": 135.21849,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/岩屋"
+  },
+  "st0416": {
+    "id": "st0416",
+    "name": "扇町",
+    "pref": null,
+    "lat": 34.70383,
+    "lng": 135.51085,
+    "lines": [
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/扇町"
+  },
+  "st0417": {
+    "id": "st0417",
+    "name": "梅田",
+    "pref": null,
+    "lat": 34.70313,
+    "lng": 135.49768,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/梅田"
+  },
+  "st0418": {
+    "id": "st0418",
+    "name": "春日野道",
+    "pref": null,
+    "lat": 34.70307,
+    "lng": 135.20551,
+    "lines": [
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/春日野道"
+  },
+  "st0419": {
+    "id": "st0419",
+    "name": "大阪",
+    "pref": null,
+    "lat": 34.70248,
+    "lng": 135.49491,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/大阪"
+  },
+  "st0420": {
+    "id": "st0420",
+    "name": "大阪梅田",
+    "pref": null,
+    "lat": 34.7015,
+    "lng": 135.49725,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/大阪梅田"
+  },
+  "st0421": {
+    "id": "st0421",
+    "name": "蒲生四丁目",
+    "pref": null,
+    "lat": 34.70078,
+    "lng": 135.54702,
+    "lines": [
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/蒲生四丁目"
+  },
+  "st0422": {
+    "id": "st0422",
+    "name": "東梅田",
+    "pref": null,
+    "lat": 34.70056,
+    "lng": 135.49982,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/東梅田"
+  },
+  "st0423": {
+    "id": "st0423",
+    "name": "春日野道",
+    "pref": null,
+    "lat": 34.69962,
+    "lng": 135.20817,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/春日野道"
+  },
+  "st0424": {
+    "id": "st0424",
+    "name": "西梅田",
+    "pref": null,
+    "lat": 34.69944,
+    "lng": 135.49565,
+    "lines": [
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/西梅田"
+  },
+  "st0425": {
+    "id": "st0425",
+    "name": "北新地",
+    "pref": null,
+    "lat": 34.69837,
+    "lng": 135.4971,
+    "lines": [
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/北新地"
+  },
+  "st0426": {
+    "id": "st0426",
+    "name": "福島",
+    "pref": null,
+    "lat": 34.69681,
+    "lng": 135.48715,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/福島"
+  },
+  "st0427": {
+    "id": "st0427",
+    "name": "京橋",
+    "pref": null,
+    "lat": 34.69654,
+    "lng": 135.53294,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "片町線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/京橋"
+  },
+  "st0428": {
+    "id": "st0428",
+    "name": "淀川",
+    "pref": null,
+    "lat": 34.6962,
+    "lng": 135.46521,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/淀川"
+  },
+  "st0429": {
+    "id": "st0429",
+    "name": "海老江",
+    "pref": null,
+    "lat": 34.69565,
+    "lng": 135.47297,
+    "lines": [
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/海老江"
+  },
+  "st0430": {
+    "id": "st0430",
+    "name": "新福島",
+    "pref": null,
+    "lat": 34.69488,
+    "lng": 135.48556,
+    "lines": [
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/新福島"
+  },
+  "st0431": {
+    "id": "st0431",
+    "name": "三ノ宮",
+    "pref": null,
+    "lat": 34.6948,
+    "lng": 135.19504,
+    "lines": [
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/三ノ宮"
+  },
+  "st0432": {
+    "id": "st0432",
+    "name": "大阪城北詰",
+    "pref": null,
+    "lat": 34.69451,
+    "lng": 135.52536,
+    "lines": [
+      {
+        "line": "JR東西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/大阪城北詰"
+  },
+  "st0433": {
+    "id": "st0433",
+    "name": "三宮",
+    "pref": null,
+    "lat": 34.6942,
+    "lng": 135.19385,
+    "lines": [
+      {
+        "line": "ポートアイランド線",
+        "operator": "神戸新交通"
+      },
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/三宮"
+  },
+  "st0434": {
+    "id": "st0434",
+    "name": "野田",
+    "pref": null,
+    "lat": 34.6944,
+    "lng": 135.47606,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/野田"
+  },
+  "st0435": {
+    "id": "st0435",
+    "name": "大江橋",
+    "pref": null,
+    "lat": 34.69436,
+    "lng": 135.50097,
+    "lines": [
+      {
+        "line": "中之島線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/大江橋"
+  },
+  "st0436": {
+    "id": "st0436",
+    "name": "野田阪神",
+    "pref": null,
+    "lat": 34.69411,
+    "lng": 135.47487,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/野田阪神"
+  },
+  "st0437": {
+    "id": "st0437",
+    "name": "渡辺橋",
+    "pref": null,
+    "lat": 34.69405,
+    "lng": 135.49591,
+    "lines": [
+      {
+        "line": "中之島線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/渡辺橋"
+  },
+  "st0438": {
+    "id": "st0438",
+    "name": "神戸三宮",
+    "pref": null,
+    "lat": 34.69337,
+    "lng": 135.19365,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "神戸線",
+        "operator": "阪急電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/神戸三宮"
+  },
+  "st0439": {
+    "id": "st0439",
+    "name": "鴫野",
+    "pref": null,
+    "lat": 34.69289,
+    "lng": 135.54538,
+    "lines": [
+      {
+        "line": "片町線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/鴫野"
+  },
+  "st0440": {
+    "id": "st0440",
+    "name": "なにわ橋",
+    "pref": null,
+    "lat": 34.69229,
+    "lng": 135.50799,
+    "lines": [
+      {
+        "line": "中之島線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/なにわ橋"
+  },
+  "st0441": {
+    "id": "st0441",
+    "name": "淀屋橋",
+    "pref": null,
+    "lat": 34.69176,
+    "lng": 135.50207,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/淀屋橋"
+  },
+  "st0442": {
+    "id": "st0442",
+    "name": "大阪ビジネスパーク",
+    "pref": null,
+    "lat": 34.69187,
+    "lng": 135.52977,
+    "lines": [
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/大阪ビジネスパーク"
+  },
+  "st0443": {
+    "id": "st0443",
+    "name": "三宮・花時計前",
+    "pref": null,
+    "lat": 34.69181,
+    "lng": 135.19597,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/三宮・花時計前"
+  },
+  "st0444": {
+    "id": "st0444",
+    "name": "中之島",
+    "pref": null,
+    "lat": 34.6917,
+    "lng": 135.4879,
+    "lines": [
+      {
+        "line": "中之島線",
+        "operator": "京阪電気鉄道"
+      }
+    ],
+    "slug": "unknown/中之島"
+  },
+  "st0445": {
+    "id": "st0445",
+    "name": "北浜",
+    "pref": null,
+    "lat": 34.69122,
+    "lng": 135.5071,
+    "lines": [
+      {
+        "line": "京阪本線",
+        "operator": "京阪電気鉄道"
+      },
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/北浜"
+  },
+  "st0446": {
+    "id": "st0446",
+    "name": "肥後橋",
+    "pref": null,
+    "lat": 34.69122,
+    "lng": 135.49637,
+    "lines": [
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/肥後橋"
+  },
+  "st0447": {
+    "id": "st0447",
+    "name": "県庁前",
+    "pref": null,
+    "lat": 34.69099,
+    "lng": 135.18401,
+    "lines": [
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/県庁前"
+  },
+  "st0448": {
+    "id": "st0448",
+    "name": "旧居留地・大丸前",
+    "pref": null,
+    "lat": 34.68952,
+    "lng": 135.19046,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/旧居留地・大丸前"
+  },
+  "st0449": {
+    "id": "st0449",
+    "name": "貿易センター",
+    "pref": null,
+    "lat": 34.68937,
+    "lng": 135.19946,
+    "lines": [
+      {
+        "line": "ポートアイランド線",
+        "operator": "神戸新交通"
+      }
+    ],
+    "slug": "unknown/貿易センター"
+  },
+  "st0450": {
+    "id": "st0450",
+    "name": "玉川",
+    "pref": null,
+    "lat": 34.68933,
+    "lng": 135.47636,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/玉川"
+  },
+  "st0451": {
+    "id": "st0451",
+    "name": "野田",
+    "pref": null,
+    "lat": 34.68894,
+    "lng": 135.47493,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/野田"
+  },
+  "st0452": {
+    "id": "st0452",
+    "name": "元町",
+    "pref": null,
+    "lat": 34.68913,
+    "lng": 135.18708,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "本線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/元町"
+  },
+  "st0453": {
+    "id": "st0453",
+    "name": "大阪城公園",
+    "pref": null,
+    "lat": 34.68791,
+    "lng": 135.5344,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/大阪城公園"
+  },
+  "st0454": {
+    "id": "st0454",
+    "name": "花隈",
+    "pref": null,
+    "lat": 34.68647,
+    "lng": 135.18124,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/花隈"
+  },
+  "st0455": {
+    "id": "st0455",
+    "name": "みなと元町",
+    "pref": null,
+    "lat": 34.68585,
+    "lng": 135.18391,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/みなと元町"
+  },
+  "st0456": {
+    "id": "st0456",
+    "name": "大倉山",
+    "pref": null,
+    "lat": 34.6847,
+    "lng": 135.17468,
+    "lines": [
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/大倉山"
+  },
+  "st0457": {
+    "id": "st0457",
+    "name": "西元町",
+    "pref": null,
+    "lat": 34.68401,
+    "lng": 135.17967,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/西元町"
+  },
+  "st0458": {
+    "id": "st0458",
+    "name": "近鉄奈良",
+    "pref": null,
+    "lat": 34.68397,
+    "lng": 135.82786,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄奈良"
+  },
+  "st0459": {
+    "id": "st0459",
+    "name": "堺筋本町",
+    "pref": null,
+    "lat": 34.68211,
+    "lng": 135.50667,
+    "lines": [
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/堺筋本町"
+  },
+  "st0460": {
+    "id": "st0460",
+    "name": "谷町四丁目",
+    "pref": null,
+    "lat": 34.68167,
+    "lng": 135.51761,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/谷町四丁目"
+  },
+  "st0461": {
+    "id": "st0461",
+    "name": "本町",
+    "pref": null,
+    "lat": 34.68278,
+    "lng": 135.49889,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/本町"
+  },
+  "st0462": {
+    "id": "st0462",
+    "name": "阿波座",
+    "pref": null,
+    "lat": 34.6815,
+    "lng": 135.48708,
+    "lines": [
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/阿波座"
+  },
+  "st0463": {
+    "id": "st0463",
+    "name": "緑橋",
+    "pref": null,
+    "lat": 34.68111,
+    "lng": 135.54483,
+    "lines": [
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "8号線(今里筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/緑橋"
+  },
+  "st0464": {
+    "id": "st0464",
+    "name": "奈良",
+    "pref": null,
+    "lat": 34.6805,
+    "lng": 135.81885,
+    "lines": [
+      {
+        "line": "関西線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "桜井線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/奈良"
+  },
+  "st0465": {
+    "id": "st0465",
+    "name": "吉田",
+    "pref": null,
+    "lat": 34.68034,
+    "lng": 135.62452,
+    "lines": [
+      {
+        "line": "けいはんな線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/吉田"
+  },
+  "st0466": {
+    "id": "st0466",
+    "name": "高速神戸",
+    "pref": null,
+    "lat": 34.6799,
+    "lng": 135.17547,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/高速神戸"
+  },
+  "st0467": {
+    "id": "st0467",
+    "name": "湊川",
+    "pref": null,
+    "lat": 34.67928,
+    "lng": 135.16612,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "神戸電鉄"
+      },
+      {
+        "line": "有馬線",
+        "operator": "神戸電鉄"
+      }
+    ],
+    "slug": "unknown/湊川"
+  },
+  "st0468": {
+    "id": "st0468",
+    "name": "神戸",
+    "pref": null,
+    "lat": 34.67922,
+    "lng": 135.17822,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "東海道線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/神戸"
+  },
+  "st0469": {
+    "id": "st0469",
+    "name": "高井田中央",
+    "pref": null,
+    "lat": 34.67883,
+    "lng": 135.5724,
+    "lines": [
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高井田中央"
+  },
+  "st0470": {
+    "id": "st0470",
+    "name": "湊川公園",
+    "pref": null,
+    "lat": 34.67881,
+    "lng": 135.16663,
+    "lines": [
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/湊川公園"
+  },
+  "st0471": {
+    "id": "st0471",
+    "name": "長田",
+    "pref": null,
+    "lat": 34.67875,
+    "lng": 135.59196,
+    "lines": [
+      {
+        "line": "けいはんな線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/長田"
+  },
+  "st0472": {
+    "id": "st0472",
+    "name": "高井田",
+    "pref": null,
+    "lat": 34.67844,
+    "lng": 135.5722,
+    "lines": [
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/高井田"
+  },
+  "st0473": {
+    "id": "st0473",
+    "name": "ハーバーランド",
+    "pref": null,
+    "lat": 34.67808,
+    "lng": 135.17854,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/ハーバーランド"
+  },
+  "st0474": {
+    "id": "st0474",
+    "name": "新開地",
+    "pref": null,
+    "lat": 34.67651,
+    "lng": 135.16961,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪急電鉄"
+      }
+    ],
+    "slug": "unknown/新開地"
+  },
+  "st0475": {
+    "id": "st0475",
+    "name": "谷町六丁目",
+    "pref": null,
+    "lat": 34.67562,
+    "lng": 135.51754,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/谷町六丁目"
+  },
+  "st0476": {
+    "id": "st0476",
+    "name": "西長堀",
+    "pref": null,
+    "lat": 34.67482,
+    "lng": 135.48699,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/西長堀"
+  },
+  "st0477": {
+    "id": "st0477",
+    "name": "西大橋",
+    "pref": null,
+    "lat": 34.67553,
+    "lng": 135.49372,
+    "lines": [
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/西大橋"
+  },
+  "st0478": {
+    "id": "st0478",
+    "name": "松屋町",
+    "pref": null,
+    "lat": 34.67547,
+    "lng": 135.51234,
+    "lines": [
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/松屋町"
+  },
+  "st0479": {
+    "id": "st0479",
+    "name": "心斎橋",
+    "pref": null,
+    "lat": 34.67488,
+    "lng": 135.49971,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/心斎橋"
+  },
+  "st0480": {
+    "id": "st0480",
+    "name": "九条",
+    "pref": null,
+    "lat": 34.67442,
+    "lng": 135.47399,
+    "lines": [
+      {
+        "line": "4号線(中央線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "阪神なんば線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/九条"
+  },
+  "st0481": {
+    "id": "st0481",
+    "name": "長堀橋",
+    "pref": null,
+    "lat": 34.67509,
+    "lng": 135.50638,
+    "lines": [
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/長堀橋"
+  },
+  "st0482": {
+    "id": "st0482",
+    "name": "四ツ橋",
+    "pref": null,
+    "lat": 34.67394,
+    "lng": 135.49674,
+    "lines": [
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/四ツ橋"
+  },
+  "st0483": {
+    "id": "st0483",
+    "name": "ドーム前千代崎",
+    "pref": null,
+    "lat": 34.67086,
+    "lng": 135.47935,
+    "lines": [
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/ドーム前千代崎"
+  },
+  "st0484": {
+    "id": "st0484",
+    "name": "ドーム前",
+    "pref": null,
+    "lat": 34.67044,
+    "lng": 135.47867,
+    "lines": [
+      {
+        "line": "阪神なんば線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/ドーム前"
+  },
+  "st0485": {
+    "id": "st0485",
+    "name": "桜川",
+    "pref": null,
+    "lat": 34.66841,
+    "lng": 135.4865,
+    "lines": [
+      {
+        "line": "阪神なんば線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/桜川"
+  },
+  "st0486": {
+    "id": "st0486",
+    "name": "長田",
+    "pref": null,
+    "lat": 34.6684,
+    "lng": 135.1513,
+    "lines": [
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/長田"
+  },
+  "st0487": {
+    "id": "st0487",
+    "name": "桜川",
+    "pref": null,
+    "lat": 34.6683,
+    "lng": 135.4903,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/桜川"
+  },
+  "st0488": {
+    "id": "st0488",
+    "name": "新深江",
+    "pref": null,
+    "lat": 34.66818,
+    "lng": 135.55421,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/新深江"
+  },
+  "st0489": {
+    "id": "st0489",
+    "name": "汐見橋",
+    "pref": null,
+    "lat": 34.66762,
+    "lng": 135.48622,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/汐見橋"
+  },
+  "st0490": {
+    "id": "st0490",
+    "name": "難波",
+    "pref": null,
+    "lat": 34.66661,
+    "lng": 135.49894,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/難波"
+  },
+  "st0491": {
+    "id": "st0491",
+    "name": "谷町九丁目",
+    "pref": null,
+    "lat": 34.66663,
+    "lng": 135.51616,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/谷町九丁目"
+  },
+  "st0492": {
+    "id": "st0492",
+    "name": "大阪難波",
+    "pref": null,
+    "lat": 34.66706,
+    "lng": 135.49903,
+    "lines": [
+      {
+        "line": "阪神なんば線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "難波線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/大阪難波"
+  },
+  "st0493": {
+    "id": "st0493",
+    "name": "日本橋",
+    "pref": null,
+    "lat": 34.66684,
+    "lng": 135.50625,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "6号線(堺筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/日本橋"
+  },
+  "st0494": {
+    "id": "st0494",
+    "name": "高速長田",
+    "pref": null,
+    "lat": 34.66692,
+    "lng": 135.15087,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪神電気鉄道"
+      }
+    ],
+    "slug": "unknown/高速長田"
+  },
+  "st0495": {
+    "id": "st0495",
+    "name": "近鉄日本橋",
+    "pref": null,
+    "lat": 34.66683,
+    "lng": 135.50623,
+    "lines": [
+      {
+        "line": "難波線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄日本橋"
+  },
+  "st0496": {
+    "id": "st0496",
+    "name": "JR難波",
+    "pref": null,
+    "lat": 34.66637,
+    "lng": 135.49529,
+    "lines": [
+      {
+        "line": "関西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR難波"
+  },
+  "st0497": {
+    "id": "st0497",
+    "name": "大阪上本町",
+    "pref": null,
+    "lat": 34.66589,
+    "lng": 135.51999,
+    "lines": [
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "難波線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/大阪上本町"
+  },
+  "st0498": {
+    "id": "st0498",
+    "name": "大正",
+    "pref": null,
+    "lat": 34.66568,
+    "lng": 135.47938,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "7号線(長堀鶴見緑地線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/大正"
+  },
+  "st0499": {
+    "id": "st0499",
+    "name": "JR河内永和",
+    "pref": null,
+    "lat": 34.66433,
+    "lng": 135.57232,
+    "lines": [
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR河内永和"
+  },
+  "st0500": {
+    "id": "st0500",
+    "name": "河内永和",
+    "pref": null,
+    "lat": 34.66425,
+    "lng": 135.57314,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/河内永和"
+  },
+  "st0501": {
+    "id": "st0501",
+    "name": "布施",
+    "pref": null,
+    "lat": 34.66409,
+    "lng": 135.56357,
+    "lines": [
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "奈良線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/布施"
+  },
+  "st0502": {
+    "id": "st0502",
+    "name": "河内小阪",
+    "pref": null,
+    "lat": 34.66398,
+    "lng": 135.58132,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/河内小阪"
+  },
+  "st0503": {
+    "id": "st0503",
+    "name": "八戸ノ里",
+    "pref": null,
+    "lat": 34.66373,
+    "lng": 135.58942,
+    "lines": [
+      {
+        "line": "奈良線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/八戸ノ里"
+  },
+  "st0504": {
+    "id": "st0504",
+    "name": "難波",
+    "pref": null,
+    "lat": 34.66315,
+    "lng": 135.50225,
+    "lines": [
+      {
+        "line": "南海本線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/難波"
+  },
+  "st0505": {
+    "id": "st0505",
+    "name": "西代",
+    "pref": null,
+    "lat": 34.6624,
+    "lng": 135.14399,
+    "lines": [
+      {
+        "line": "神戸高速線",
+        "operator": "阪神電気鉄道"
+      },
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/西代"
+  },
+  "st0506": {
+    "id": "st0506",
+    "name": "小路",
+    "pref": null,
+    "lat": 34.66134,
+    "lng": 135.55627,
+    "lines": [
+      {
+        "line": "5号線(千日前線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/小路"
+  },
+  "st0507": {
+    "id": "st0507",
+    "name": "板宿",
+    "pref": null,
+    "lat": 34.66013,
+    "lng": 135.1338,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      },
+      {
+        "line": "西神線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/板宿"
+  },
+  "st0508": {
+    "id": "st0508",
+    "name": "JR俊徳道",
+    "pref": null,
+    "lat": 34.65854,
+    "lng": 135.57246,
+    "lines": [
+      {
+        "line": "おおさか東線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/JR俊徳道"
+  },
+  "st0509": {
+    "id": "st0509",
+    "name": "俊徳道",
+    "pref": null,
+    "lat": 34.65858,
+    "lng": 135.57162,
+    "lines": [
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/俊徳道"
+  },
+  "st0510": {
+    "id": "st0510",
+    "name": "桃谷",
+    "pref": null,
+    "lat": 34.65853,
+    "lng": 135.528,
+    "lines": [
+      {
+        "line": "大阪環状線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/桃谷"
+  },
+  "st0511": {
+    "id": "st0511",
+    "name": "四天王寺前夕陽ヶ丘",
+    "pref": null,
+    "lat": 34.65841,
+    "lng": 135.51419,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/四天王寺前夕陽ヶ丘"
+  },
+  "st0512": {
+    "id": "st0512",
+    "name": "新長田",
+    "pref": null,
+    "lat": 34.65771,
+    "lng": 135.14556,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      },
+      {
+        "line": "山手線",
+        "operator": "神戸市"
+      },
+      {
+        "line": "西神線",
+        "operator": "神戸市"
+      },
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/新長田"
+  },
+  "st0513": {
+    "id": "st0513",
+    "name": "大国町",
+    "pref": null,
+    "lat": 34.6563,
+    "lng": 135.49786,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "3号線(四つ橋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/大国町"
+  },
+  "st0514": {
+    "id": "st0514",
+    "name": "東須磨",
+    "pref": null,
+    "lat": 34.65522,
+    "lng": 135.12748,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/東須磨"
+  },
+  "st0515": {
+    "id": "st0515",
+    "name": "駒ヶ林",
+    "pref": null,
+    "lat": 34.65223,
+    "lng": 135.14949,
+    "lines": [
+      {
+        "line": "海岸線",
+        "operator": "神戸市"
+      }
+    ],
+    "slug": "unknown/駒ヶ林"
+  },
+  "st0516": {
+    "id": "st0516",
+    "name": "鷹取",
+    "pref": null,
+    "lat": 34.65173,
+    "lng": 135.13535,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/鷹取"
+  },
+  "st0517": {
+    "id": "st0517",
+    "name": "月見山",
+    "pref": null,
+    "lat": 34.65021,
+    "lng": 135.12215,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/月見山"
+  },
+  "st0518": {
+    "id": "st0518",
+    "name": "須磨海浜公園",
+    "pref": null,
+    "lat": 34.64716,
+    "lng": 135.1266,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/須磨海浜公園"
+  },
+  "st0519": {
+    "id": "st0519",
+    "name": "須磨寺",
+    "pref": null,
+    "lat": 34.64602,
+    "lng": 135.11624,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/須磨寺"
+  },
+  "st0520": {
+    "id": "st0520",
+    "name": "河堀口",
+    "pref": null,
+    "lat": 34.64103,
+    "lng": 135.52425,
+    "lines": [
+      {
+        "line": "南大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/河堀口"
+  },
+  "st0521": {
+    "id": "st0521",
+    "name": "美章園",
+    "pref": null,
+    "lat": 34.63863,
+    "lng": 135.52378,
+    "lines": [
+      {
+        "line": "阪和線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/美章園"
+  },
+  "st0522": {
+    "id": "st0522",
+    "name": "文の里",
+    "pref": null,
+    "lat": 34.63583,
+    "lng": 135.51829,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/文の里"
+  },
+  "st0523": {
+    "id": "st0523",
+    "name": "松虫",
+    "pref": null,
+    "lat": 34.63549,
+    "lng": 135.50984,
+    "lines": [
+      {
+        "line": "上町線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/松虫"
+  },
+  "st0524": {
+    "id": "st0524",
+    "name": "昭和町",
+    "pref": null,
+    "lat": 34.63298,
+    "lng": 135.51689,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/昭和町"
+  },
+  "st0525": {
+    "id": "st0525",
+    "name": "東天下茶屋",
+    "pref": null,
+    "lat": 34.63251,
+    "lng": 135.50849,
+    "lines": [
+      {
+        "line": "上町線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/東天下茶屋"
+  },
+  "st0526": {
+    "id": "st0526",
+    "name": "北田辺",
+    "pref": null,
+    "lat": 34.63203,
+    "lng": 135.52894,
+    "lines": [
+      {
+        "line": "南大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/北田辺"
+  },
+  "st0527": {
+    "id": "st0527",
+    "name": "滝の茶屋",
+    "pref": null,
+    "lat": 34.63124,
+    "lng": 135.07292,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/滝の茶屋"
+  },
+  "st0528": {
+    "id": "st0528",
+    "name": "霞ヶ丘",
+    "pref": null,
+    "lat": 34.63033,
+    "lng": 135.04272,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/霞ヶ丘"
+  },
+  "st0529": {
+    "id": "st0529",
+    "name": "近鉄八尾",
+    "pref": null,
+    "lat": 34.62983,
+    "lng": 135.60355,
+    "lines": [
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/近鉄八尾"
+  },
+  "st0530": {
+    "id": "st0530",
+    "name": "東垂水",
+    "pref": null,
+    "lat": 34.62937,
+    "lng": 135.06359,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/東垂水"
+  },
+  "st0531": {
+    "id": "st0531",
+    "name": "山陽垂水",
+    "pref": null,
+    "lat": 34.62933,
+    "lng": 135.05374,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "山陽電気鉄道"
+      }
+    ],
+    "slug": "unknown/山陽垂水"
+  },
+  "st0532": {
+    "id": "st0532",
+    "name": "垂水",
+    "pref": null,
+    "lat": 34.62909,
+    "lng": 135.05386,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/垂水"
+  },
+  "st0533": {
+    "id": "st0533",
+    "name": "田辺",
+    "pref": null,
+    "lat": 34.62864,
+    "lng": 135.52516,
+    "lines": [
+      {
+        "line": "2号線(谷町線)",
+        "operator": "大阪市高速電気軌道"
+      }
+    ],
+    "slug": "unknown/田辺"
+  },
+  "st0534": {
+    "id": "st0534",
+    "name": "六軒",
+    "pref": null,
+    "lat": 34.61763,
+    "lng": 136.50759,
+    "lines": [
+      {
+        "line": "紀勢線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/六軒"
+  },
+  "st0535": {
+    "id": "st0535",
+    "name": "八尾",
+    "pref": null,
+    "lat": 34.61726,
+    "lng": 135.59701,
+    "lines": [
+      {
+        "line": "関西線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/八尾"
+  },
+  "st0536": {
+    "id": "st0536",
+    "name": "倉敷",
+    "pref": null,
+    "lat": 34.60168,
+    "lng": 133.76554,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "伯備線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/倉敷"
+  },
+  "st0537": {
+    "id": "st0537",
+    "name": "倉敷市",
+    "pref": null,
+    "lat": 34.60058,
+    "lng": 133.76463,
+    "lines": [
+      {
+        "line": "水島本線",
+        "operator": "水島臨海鉄道"
+      }
+    ],
+    "slug": "unknown/倉敷市"
+  },
+  "st0538": {
+    "id": "st0538",
+    "name": "我孫子道",
+    "pref": null,
+    "lat": 34.60029,
+    "lng": 135.48875,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/我孫子道"
+  },
+  "st0539": {
+    "id": "st0539",
+    "name": "大和川",
+    "pref": null,
+    "lat": 34.59466,
+    "lng": 135.48675,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/大和川"
+  },
+  "st0540": {
+    "id": "st0540",
+    "name": "七道",
+    "pref": null,
+    "lat": 34.59219,
+    "lng": 135.48051,
+    "lines": [
+      {
+        "line": "南海本線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/七道"
+  },
+  "st0541": {
+    "id": "st0541",
+    "name": "球場前",
+    "pref": null,
+    "lat": 34.59119,
+    "lng": 133.74723,
+    "lines": [
+      {
+        "line": "水島本線",
+        "operator": "水島臨海鉄道"
+      }
+    ],
+    "slug": "unknown/球場前"
+  },
+  "st0542": {
+    "id": "st0542",
+    "name": "高須神社",
+    "pref": null,
+    "lat": 34.59048,
+    "lng": 135.48525,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/高須神社"
+  },
+  "st0543": {
+    "id": "st0543",
+    "name": "浅香山",
+    "pref": null,
+    "lat": 34.58943,
+    "lng": 135.491,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/浅香山"
+  },
+  "st0544": {
+    "id": "st0544",
+    "name": "綾ノ町",
+    "pref": null,
+    "lat": 34.58791,
+    "lng": 135.4832,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/綾ノ町"
+  },
+  "st0545": {
+    "id": "st0545",
+    "name": "河内天美",
+    "pref": null,
+    "lat": 34.58606,
+    "lng": 135.53544,
+    "lines": [
+      {
+        "line": "南大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/河内天美"
+  },
+  "st0546": {
+    "id": "st0546",
+    "name": "神明町",
+    "pref": null,
+    "lat": 34.58553,
+    "lng": 135.48046,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/神明町"
+  },
+  "st0547": {
+    "id": "st0547",
+    "name": "堺",
+    "pref": null,
+    "lat": 34.58171,
+    "lng": 135.46855,
+    "lines": [
+      {
+        "line": "南海本線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/堺"
+  },
+  "st0548": {
+    "id": "st0548",
+    "name": "花田口",
+    "pref": null,
+    "lat": 34.58176,
+    "lng": 135.47694,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/花田口"
+  },
+  "st0549": {
+    "id": "st0549",
+    "name": "大小路",
+    "pref": null,
+    "lat": 34.57913,
+    "lng": 135.47452,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/大小路"
+  },
+  "st0550": {
+    "id": "st0550",
+    "name": "宿院",
+    "pref": null,
+    "lat": 34.57641,
+    "lng": 135.47201,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/宿院"
+  },
+  "st0551": {
+    "id": "st0551",
+    "name": "堺東",
+    "pref": null,
+    "lat": 34.57586,
+    "lng": 135.48503,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/堺東"
+  },
+  "st0552": {
+    "id": "st0552",
+    "name": "寺地町",
+    "pref": null,
+    "lat": 34.57363,
+    "lng": 135.4694,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/寺地町"
+  },
+  "st0553": {
+    "id": "st0553",
+    "name": "御陵前",
+    "pref": null,
+    "lat": 34.57075,
+    "lng": 135.46672,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/御陵前"
+  },
+  "st0554": {
+    "id": "st0554",
+    "name": "湊",
+    "pref": null,
+    "lat": 34.57062,
+    "lng": 135.4601,
+    "lines": [
+      {
+        "line": "南海本線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/湊"
+  },
+  "st0555": {
+    "id": "st0555",
+    "name": "東湊",
+    "pref": null,
+    "lat": 34.56481,
+    "lng": 135.4627,
+    "lines": [
+      {
+        "line": "阪堺線",
+        "operator": "阪堺電気軌道"
+      }
+    ],
+    "slug": "unknown/東湊"
+  },
+  "st0556": {
+    "id": "st0556",
+    "name": "百舌鳥八幡",
+    "pref": null,
+    "lat": 34.56078,
+    "lng": 135.49833,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/百舌鳥八幡"
+  },
+  "st0557": {
+    "id": "st0557",
+    "name": "中百舌鳥",
+    "pref": null,
+    "lat": 34.55629,
+    "lng": 135.50496,
+    "lines": [
+      {
+        "line": "1号線(御堂筋線)",
+        "operator": "大阪市高速電気軌道"
+      },
+      {
+        "line": "泉北線",
+        "operator": "南海電気鉄道"
+      },
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/中百舌鳥"
+  },
+  "st0558": {
+    "id": "st0558",
+    "name": "初芝",
+    "pref": null,
+    "lat": 34.54223,
+    "lng": 135.5265,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/初芝"
+  },
+  "st0559": {
+    "id": "st0559",
+    "name": "萩原天神",
+    "pref": null,
+    "lat": 34.53708,
+    "lng": 135.53503,
+    "lines": [
+      {
+        "line": "高野線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/萩原天神"
+  },
+  "st0560": {
+    "id": "st0560",
+    "name": "深井",
+    "pref": null,
+    "lat": 34.53035,
+    "lng": 135.49755,
+    "lines": [
+      {
+        "line": "泉北線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/深井"
+  },
+  "st0561": {
+    "id": "st0561",
+    "name": "真菅",
+    "pref": null,
+    "lat": 34.51959,
+    "lng": 135.7728,
+    "lines": [
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/真菅"
+  },
+  "st0562": {
+    "id": "st0562",
+    "name": "河戸帆待川",
+    "pref": null,
+    "lat": 34.51668,
+    "lng": 132.50517,
+    "lines": [
+      {
+        "line": "可部線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/河戸帆待川"
+  },
+  "st0563": {
+    "id": "st0563",
+    "name": "大和八木",
+    "pref": null,
+    "lat": 34.51312,
+    "lng": 135.79169,
+    "lines": [
+      {
+        "line": "橿原線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "大阪線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/大和八木"
+  },
+  "st0564": {
+    "id": "st0564",
+    "name": "八木西口",
+    "pref": null,
+    "lat": 34.50967,
+    "lng": 135.79075,
+    "lines": [
+      {
+        "line": "橿原線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/八木西口"
+  },
+  "st0565": {
+    "id": "st0565",
+    "name": "畝傍",
+    "pref": null,
+    "lat": 34.50817,
+    "lng": 135.79459,
+    "lines": [
+      {
+        "line": "桜井線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/畝傍"
+  },
+  "st0566": {
+    "id": "st0566",
+    "name": "田丸",
+    "pref": null,
+    "lat": 34.48845,
+    "lng": 136.63401,
+    "lines": [
+      {
+        "line": "参宮線",
+        "operator": "東海旅客鉄道"
+      }
+    ],
+    "slug": "unknown/田丸"
+  },
+  "st0567": {
+    "id": "st0567",
+    "name": "宇治山田",
+    "pref": null,
+    "lat": 34.48831,
+    "lng": 136.71402,
+    "lines": [
+      {
+        "line": "山田線",
+        "operator": "近畿日本鉄道"
+      },
+      {
+        "line": "鳥羽線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/宇治山田"
+  },
+  "st0568": {
+    "id": "st0568",
+    "name": "上安",
+    "pref": null,
+    "lat": 34.47571,
+    "lng": 132.44501,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/上安"
+  },
+  "st0569": {
+    "id": "st0569",
+    "name": "高取",
+    "pref": null,
+    "lat": 34.47524,
+    "lng": 132.43841,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/高取"
+  },
+  "st0570": {
+    "id": "st0570",
+    "name": "長楽寺",
+    "pref": null,
+    "lat": 34.47293,
+    "lng": 132.43091,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/長楽寺"
+  },
+  "st0571": {
+    "id": "st0571",
+    "name": "毘沙門台",
+    "pref": null,
+    "lat": 34.46945,
+    "lng": 132.46287,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/毘沙門台"
+  },
+  "st0572": {
+    "id": "st0572",
+    "name": "汐ノ宮",
+    "pref": null,
+    "lat": 34.46701,
+    "lng": 135.57911,
+    "lines": [
+      {
+        "line": "長野線",
+        "operator": "近畿日本鉄道"
+      }
+    ],
+    "slug": "unknown/汐ノ宮"
+  },
+  "st0573": {
+    "id": "st0573",
+    "name": "大町",
+    "pref": null,
+    "lat": 34.46145,
+    "lng": 132.47075,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      },
+      {
+        "line": "可部線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/大町"
+  },
+  "st0574": {
+    "id": "st0574",
+    "name": "和泉中央",
+    "pref": null,
+    "lat": 34.46157,
+    "lng": 135.45672,
+    "lines": [
+      {
+        "line": "泉北線",
+        "operator": "南海電気鉄道"
+      }
+    ],
+    "slug": "unknown/和泉中央"
+  },
+  "st0575": {
+    "id": "st0575",
+    "name": "下祗園",
+    "pref": null,
+    "lat": 34.4394,
+    "lng": 132.46229,
+    "lines": [
+      {
+        "line": "可部線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/下祗園"
+  },
+  "st0576": {
+    "id": "st0576",
+    "name": "祇園新橋北",
+    "pref": null,
+    "lat": 34.4354,
+    "lng": 132.47107,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/祇園新橋北"
+  },
+  "st0577": {
+    "id": "st0577",
+    "name": "三ツ松",
+    "pref": null,
+    "lat": 34.41104,
+    "lng": 135.38342,
+    "lines": [
+      {
+        "line": "水間線",
+        "operator": "水間鉄道"
+      }
+    ],
+    "slug": "unknown/三ツ松"
+  },
+  "st0578": {
+    "id": "st0578",
+    "name": "尾道",
+    "pref": null,
+    "lat": 34.40484,
+    "lng": 133.19301,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/尾道"
+  },
+  "st0579": {
+    "id": "st0579",
+    "name": "家庭裁判所前",
+    "pref": null,
+    "lat": 34.40131,
+    "lng": 132.46587,
+    "lines": [
+      {
+        "line": "白島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/家庭裁判所前"
+  },
+  "st0580": {
+    "id": "st0580",
+    "name": "三原",
+    "pref": null,
+    "lat": 34.40067,
+    "lng": 133.08285,
+    "lines": [
+      {
+        "line": "呉線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/三原"
+  },
+  "st0581": {
+    "id": "st0581",
+    "name": "縮景園前",
+    "pref": null,
+    "lat": 34.39944,
+    "lng": 132.46531,
+    "lines": [
+      {
+        "line": "白島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/縮景園前"
+  },
+  "st0582": {
+    "id": "st0582",
+    "name": "女学院前",
+    "pref": null,
+    "lat": 34.39816,
+    "lng": 132.4649,
+    "lines": [
+      {
+        "line": "白島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/女学院前"
+  },
+  "st0583": {
+    "id": "st0583",
+    "name": "広島",
+    "pref": null,
+    "lat": 34.39757,
+    "lng": 132.47569,
+    "lines": [
+      {
+        "line": "芸備線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/広島"
+  },
+  "st0584": {
+    "id": "st0584",
+    "name": "十日市町",
+    "pref": null,
+    "lat": 34.397,
+    "lng": 132.44719,
+    "lines": [
+      {
+        "line": "横川線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/十日市町"
+  },
+  "st0585": {
+    "id": "st0585",
+    "name": "本川町",
+    "pref": null,
+    "lat": 34.39679,
+    "lng": 132.45049,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/本川町"
+  },
+  "st0586": {
+    "id": "st0586",
+    "name": "県庁前",
+    "pref": null,
+    "lat": 34.39664,
+    "lng": 132.45815,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      }
+    ],
+    "slug": "unknown/県庁前"
+  },
+  "st0587": {
+    "id": "st0587",
+    "name": "広島駅",
+    "pref": null,
+    "lat": 34.39676,
+    "lng": 132.47508,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/広島駅"
+  },
+  "st0588": {
+    "id": "st0588",
+    "name": "原爆ドーム前",
+    "pref": null,
+    "lat": 34.39608,
+    "lng": 132.45385,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/原爆ドーム前"
+  },
+  "st0589": {
+    "id": "st0589",
+    "name": "紙屋町西",
+    "pref": null,
+    "lat": 34.39532,
+    "lng": 132.45692,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/紙屋町西"
+  },
+  "st0590": {
+    "id": "st0590",
+    "name": "八丁堀",
+    "pref": null,
+    "lat": 34.3943,
+    "lng": 132.46341,
+    "lines": [
+      {
+        "line": "白島線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/八丁堀"
+  },
+  "st0591": {
+    "id": "st0591",
+    "name": "紙屋町東",
+    "pref": null,
+    "lat": 34.39498,
+    "lng": 132.45831,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/紙屋町東"
+  },
+  "st0592": {
+    "id": "st0592",
+    "name": "土橋",
+    "pref": null,
+    "lat": 34.39451,
+    "lng": 132.44634,
+    "lines": [
+      {
+        "line": "江波線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/土橋"
+  },
+  "st0593": {
+    "id": "st0593",
+    "name": "立町",
+    "pref": null,
+    "lat": 34.39432,
+    "lng": 132.46097,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/立町"
+  },
+  "st0594": {
+    "id": "st0594",
+    "name": "本通",
+    "pref": null,
+    "lat": 34.39338,
+    "lng": 132.45707,
+    "lines": [
+      {
+        "line": "広島新交通1号線",
+        "operator": "広島高速交通"
+      },
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/本通"
+  },
+  "st0595": {
+    "id": "st0595",
+    "name": "胡町",
+    "pref": null,
+    "lat": 34.3933,
+    "lng": 132.4652,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/胡町"
+  },
+  "st0596": {
+    "id": "st0596",
+    "name": "的場町",
+    "pref": null,
+    "lat": 34.39312,
+    "lng": 132.47495,
+    "lines": [
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/的場町"
+  },
+  "st0597": {
+    "id": "st0597",
+    "name": "銀山町",
+    "pref": null,
+    "lat": 34.39316,
+    "lng": 132.46723,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/銀山町"
+  },
+  "st0598": {
+    "id": "st0598",
+    "name": "稲荷町",
+    "pref": null,
+    "lat": 34.39289,
+    "lng": 132.47165,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/稲荷町"
+  },
+  "st0599": {
+    "id": "st0599",
+    "name": "袋町",
+    "pref": null,
+    "lat": 34.3911,
+    "lng": 132.4563,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/袋町"
+  },
+  "st0600": {
+    "id": "st0600",
+    "name": "段原一丁目",
+    "pref": null,
+    "lat": 34.38996,
+    "lng": 132.47361,
+    "lines": [
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/段原一丁目"
+  },
+  "st0601": {
+    "id": "st0601",
+    "name": "東広島",
+    "pref": null,
+    "lat": 34.38919,
+    "lng": 132.75946,
+    "lines": [
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/東広島"
+  },
+  "st0602": {
+    "id": "st0602",
+    "name": "中電前",
+    "pref": null,
+    "lat": 34.38914,
+    "lng": 132.45563,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/中電前"
+  },
+  "st0603": {
+    "id": "st0603",
+    "name": "比治山下",
+    "pref": null,
+    "lat": 34.38704,
+    "lng": 132.47114,
+    "lines": [
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/比治山下"
+  },
+  "st0604": {
+    "id": "st0604",
+    "name": "市役所前",
+    "pref": null,
+    "lat": 34.38577,
+    "lng": 132.45445,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/市役所前"
+  },
+  "st0605": {
+    "id": "st0605",
+    "name": "比治山橋",
+    "pref": null,
+    "lat": 34.3833,
+    "lng": 132.46887,
+    "lines": [
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/比治山橋"
+  },
+  "st0606": {
+    "id": "st0606",
+    "name": "向洋",
+    "pref": null,
+    "lat": 34.37688,
+    "lng": 132.50601,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/向洋"
+  },
+  "st0607": {
+    "id": "st0607",
+    "name": "皆実町六丁目",
+    "pref": null,
+    "lat": 34.37439,
+    "lng": 132.46441,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      },
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/皆実町六丁目"
+  },
+  "st0608": {
+    "id": "st0608",
+    "name": "広大附属学校前",
+    "pref": null,
+    "lat": 34.37156,
+    "lng": 132.4646,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/広大附属学校前"
+  },
+  "st0609": {
+    "id": "st0609",
+    "name": "県病院前",
+    "pref": null,
+    "lat": 34.3685,
+    "lng": 132.46486,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/県病院前"
+  },
+  "st0610": {
+    "id": "st0610",
+    "name": "宇品二丁目",
+    "pref": null,
+    "lat": 34.36634,
+    "lng": 132.46465,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/宇品二丁目"
+  },
+  "st0611": {
+    "id": "st0611",
+    "name": "宇品三丁目",
+    "pref": null,
+    "lat": 34.36414,
+    "lng": 132.46446,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/宇品三丁目"
+  },
+  "st0612": {
+    "id": "st0612",
+    "name": "宇品四丁目",
+    "pref": null,
+    "lat": 34.36015,
+    "lng": 132.46411,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/宇品四丁目"
+  },
+  "st0613": {
+    "id": "st0613",
+    "name": "宇品五丁目",
+    "pref": null,
+    "lat": 34.35799,
+    "lng": 132.46391,
+    "lines": [
+      {
+        "line": "宇品線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/宇品五丁目"
+  },
+  "st0614": {
+    "id": "st0614",
+    "name": "宮内串戸",
+    "pref": null,
+    "lat": 34.34877,
+    "lng": 132.32393,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/宮内串戸"
+  },
+  "st0615": {
+    "id": "st0615",
+    "name": "宮内",
+    "pref": null,
+    "lat": 34.34758,
+    "lng": 132.32524,
+    "lines": [
+      {
+        "line": "宮島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/宮内"
+  },
+  "st0616": {
+    "id": "st0616",
+    "name": "JA広島病院前",
+    "pref": null,
+    "lat": 34.34433,
+    "lng": 132.32273,
+    "lines": [
+      {
+        "line": "宮島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/JA広島病院前"
+  },
+  "st0617": {
+    "id": "st0617",
+    "name": "地御前",
+    "pref": null,
+    "lat": 34.34089,
+    "lng": 132.32005,
+    "lines": [
+      {
+        "line": "宮島線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/地御前"
+  },
+  "st0618": {
+    "id": "st0618",
+    "name": "栗林公園北口",
+    "pref": null,
+    "lat": 34.33465,
+    "lng": 134.04129,
+    "lines": [
+      {
+        "line": "高徳線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/栗林公園北口"
+  },
+  "st0619": {
+    "id": "st0619",
+    "name": "栗林",
+    "pref": null,
+    "lat": 34.33233,
+    "lng": 134.05339,
+    "lines": [
+      {
+        "line": "高徳線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/栗林"
+  },
+  "st0620": {
+    "id": "st0620",
+    "name": "栗林公園",
+    "pref": null,
+    "lat": 34.32852,
+    "lng": 134.05108,
+    "lines": [
+      {
+        "line": "琴平線",
+        "operator": "高松琴平電気鉄道"
+      }
+    ],
+    "slug": "unknown/栗林公園"
+  },
+  "st0621": {
+    "id": "st0621",
+    "name": "讃岐塩屋",
+    "pref": null,
+    "lat": 34.28506,
+    "lng": 133.77734,
+    "lines": [
+      {
+        "line": "予讃線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/讃岐塩屋"
+  },
+  "st0622": {
+    "id": "st0622",
+    "name": "呉",
+    "pref": null,
+    "lat": 34.24464,
+    "lng": 132.55756,
+    "lines": [
+      {
+        "line": "呉線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/呉"
+  },
+  "st0623": {
+    "id": "st0623",
+    "name": "防府",
+    "pref": null,
+    "lat": 34.05321,
+    "lng": 131.56901,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/防府"
+  },
+  "st0624": {
+    "id": "st0624",
+    "name": "宇部新川",
+    "pref": null,
+    "lat": 33.95861,
+    "lng": 131.24233,
+    "lines": [
+      {
+        "line": "宇部線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/宇部新川"
+  },
+  "st0625": {
+    "id": "st0625",
+    "name": "琴芝",
+    "pref": null,
+    "lat": 33.95264,
+    "lng": 131.25239,
+    "lines": [
+      {
+        "line": "宇部線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/琴芝"
+  },
+  "st0626": {
+    "id": "st0626",
+    "name": "新居浜",
+    "pref": null,
+    "lat": 33.94805,
+    "lng": 133.29476,
+    "lines": [
+      {
+        "line": "予讃線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/新居浜"
+  },
+  "st0627": {
+    "id": "st0627",
+    "name": "門司",
+    "pref": null,
+    "lat": 33.90432,
+    "lng": 130.93253,
+    "lines": [
+      {
+        "line": "山陽線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/門司"
+  },
+  "st0628": {
+    "id": "st0628",
+    "name": "西小倉",
+    "pref": null,
+    "lat": 33.88861,
+    "lng": 130.87412,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "日豊線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/西小倉"
+  },
+  "st0629": {
+    "id": "st0629",
+    "name": "小倉",
+    "pref": null,
+    "lat": 33.8868,
+    "lng": 130.88288,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "日豊線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "小倉線",
+        "operator": "北九州高速鉄道"
+      }
+    ],
+    "slug": "unknown/小倉"
+  },
+  "st0630": {
+    "id": "st0630",
+    "name": "平和通",
+    "pref": null,
+    "lat": 33.88294,
+    "lng": 130.88119,
+    "lines": [
+      {
+        "line": "小倉線",
+        "operator": "北九州高速鉄道"
+      }
+    ],
+    "slug": "unknown/平和通"
+  },
+  "st0631": {
+    "id": "st0631",
+    "name": "旦過",
+    "pref": null,
+    "lat": 33.88062,
+    "lng": 130.88019,
+    "lines": [
+      {
+        "line": "小倉線",
+        "operator": "北九州高速鉄道"
+      }
+    ],
+    "slug": "unknown/旦過"
+  },
+  "st0632": {
+    "id": "st0632",
+    "name": "枝光",
+    "pref": null,
+    "lat": 33.87919,
+    "lng": 130.81286,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/枝光"
+  },
+  "st0633": {
+    "id": "st0633",
+    "name": "スペースワールド",
+    "pref": null,
+    "lat": 33.87126,
+    "lng": 130.80619,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/スペースワールド"
+  },
+  "st0634": {
+    "id": "st0634",
+    "name": "福間",
+    "pref": null,
+    "lat": 33.76376,
+    "lng": 130.48721,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/福間"
+  },
+  "st0635": {
+    "id": "st0635",
+    "name": "下鴨生",
+    "pref": null,
+    "lat": 33.61473,
+    "lng": 130.72834,
+    "lines": [
+      {
+        "line": "後藤寺線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/下鴨生"
+  },
+  "st0636": {
+    "id": "st0636",
+    "name": "柚須",
+    "pref": null,
+    "lat": 33.61333,
+    "lng": 130.44416,
+    "lines": [
+      {
+        "line": "篠栗線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/柚須"
+  },
+  "st0637": {
+    "id": "st0637",
+    "name": "酒殿",
+    "pref": null,
+    "lat": 33.60262,
+    "lng": 130.48634,
+    "lines": [
+      {
+        "line": "香椎線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/酒殿"
+  },
+  "st0638": {
+    "id": "st0638",
+    "name": "祇園",
+    "pref": null,
+    "lat": 33.59407,
+    "lng": 130.41438,
+    "lines": [
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/祇園"
+  },
+  "st0639": {
+    "id": "st0639",
+    "name": "大濠公園",
+    "pref": null,
+    "lat": 33.58996,
+    "lng": 130.37962,
+    "lines": [
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/大濠公園"
+  },
+  "st0640": {
+    "id": "st0640",
+    "name": "博多",
+    "pref": null,
+    "lat": 33.58975,
+    "lng": 130.42055,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "山陽新幹線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "博多南線",
+        "operator": "西日本旅客鉄道"
+      },
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      },
+      {
+        "line": "九州新幹線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "3号線(七隈線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/博多"
+  },
+  "st0641": {
+    "id": "st0641",
+    "name": "赤坂",
+    "pref": null,
+    "lat": 33.58903,
+    "lng": 130.39052,
+    "lines": [
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/赤坂"
+  },
+  "st0642": {
+    "id": "st0642",
+    "name": "姪浜",
+    "pref": null,
+    "lat": 33.58358,
+    "lng": 130.32507,
+    "lines": [
+      {
+        "line": "筑肥線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/姪浜"
+  },
+  "st0643": {
+    "id": "st0643",
+    "name": "下里",
+    "pref": null,
+    "lat": 33.58212,
+    "lng": 135.9221,
+    "lines": [
+      {
+        "line": "紀勢線",
+        "operator": "西日本旅客鉄道"
+      }
+    ],
+    "slug": "unknown/下里"
+  },
+  "st0644": {
+    "id": "st0644",
+    "name": "室見",
+    "pref": null,
+    "lat": 33.58068,
+    "lng": 130.33986,
+    "lines": [
+      {
+        "line": "1号線(空港線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/室見"
+  },
+  "st0645": {
+    "id": "st0645",
+    "name": "布師田",
+    "pref": null,
+    "lat": 33.57553,
+    "lng": 133.59017,
+    "lines": [
+      {
+        "line": "土讃線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/布師田"
+  },
+  "st0646": {
+    "id": "st0646",
+    "name": "北浦",
+    "pref": null,
+    "lat": 33.57319,
+    "lng": 133.60352,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/北浦"
+  },
+  "st0647": {
+    "id": "st0647",
+    "name": "舟戸",
+    "pref": null,
+    "lat": 33.57022,
+    "lng": 133.59967,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/舟戸"
+  },
+  "st0648": {
+    "id": "st0648",
+    "name": "鹿児",
+    "pref": null,
+    "lat": 33.567,
+    "lng": 133.59711,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/鹿児"
+  },
+  "st0649": {
+    "id": "st0649",
+    "name": "高知",
+    "pref": null,
+    "lat": 33.56692,
+    "lng": 133.54326,
+    "lines": [
+      {
+        "line": "土讃線",
+        "operator": "四国旅客鉄道"
+      }
+    ],
+    "slug": "unknown/高知"
+  },
+  "st0650": {
+    "id": "st0650",
+    "name": "高宮",
+    "pref": null,
+    "lat": 33.56687,
+    "lng": 130.41501,
+    "lines": [
+      {
+        "line": "天神大牟田線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/高宮"
+  },
+  "st0651": {
+    "id": "st0651",
+    "name": "高知駅前",
+    "pref": null,
+    "lat": 33.56652,
+    "lng": 133.5437,
+    "lines": [
+      {
+        "line": "駅前線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/高知駅前"
+  },
+  "st0652": {
+    "id": "st0652",
+    "name": "田辺島通",
+    "pref": null,
+    "lat": 33.56609,
+    "lng": 133.59276,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/田辺島通"
+  },
+  "st0653": {
+    "id": "st0653",
+    "name": "高知橋",
+    "pref": null,
+    "lat": 33.56389,
+    "lng": 133.54337,
+    "lines": [
+      {
+        "line": "駅前線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/高知橋"
+  },
+  "st0654": {
+    "id": "st0654",
+    "name": "蓮池町通",
+    "pref": null,
+    "lat": 33.56212,
+    "lng": 133.54316,
+    "lines": [
+      {
+        "line": "駅前線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/蓮池町通"
+  },
+  "st0655": {
+    "id": "st0655",
+    "name": "はりまや橋",
+    "pref": null,
+    "lat": 33.55931,
+    "lng": 133.54282,
+    "lines": [
+      {
+        "line": "伊野線",
+        "operator": "とさでん交通"
+      },
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      },
+      {
+        "line": "桟橋線",
+        "operator": "とさでん交通"
+      },
+      {
+        "line": "駅前線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/はりまや橋"
+  },
+  "st0656": {
+    "id": "st0656",
+    "name": "堀詰",
+    "pref": null,
+    "lat": 33.5595,
+    "lng": 133.5394,
+    "lines": [
+      {
+        "line": "伊野線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/堀詰"
+  },
+  "st0657": {
+    "id": "st0657",
+    "name": "デンテツターミナルビル前",
+    "pref": null,
+    "lat": 33.55939,
+    "lng": 133.54406,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/デンテツターミナルビル前"
+  },
+  "st0658": {
+    "id": "st0658",
+    "name": "大橋",
+    "pref": null,
+    "lat": 33.55909,
+    "lng": 130.42681,
+    "lines": [
+      {
+        "line": "天神大牟田線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/大橋"
+  },
+  "st0659": {
+    "id": "st0659",
+    "name": "菜園場町",
+    "pref": null,
+    "lat": 33.55901,
+    "lng": 133.54857,
+    "lines": [
+      {
+        "line": "後免線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/菜園場町"
+  },
+  "st0660": {
+    "id": "st0660",
+    "name": "大橋通",
+    "pref": null,
+    "lat": 33.5589,
+    "lng": 133.53639,
+    "lines": [
+      {
+        "line": "伊野線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/大橋通"
+  },
+  "st0661": {
+    "id": "st0661",
+    "name": "高知城前",
+    "pref": null,
+    "lat": 33.55842,
+    "lng": 133.53418,
+    "lines": [
+      {
+        "line": "伊野線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/高知城前"
+  },
+  "st0662": {
+    "id": "st0662",
+    "name": "県庁前",
+    "pref": null,
+    "lat": 33.55804,
+    "lng": 133.53227,
+    "lines": [
+      {
+        "line": "伊野線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/県庁前"
+  },
+  "st0663": {
+    "id": "st0663",
+    "name": "梅の辻",
+    "pref": null,
+    "lat": 33.55413,
+    "lng": 133.5435,
+    "lines": [
+      {
+        "line": "桟橋線",
+        "operator": "とさでん交通"
+      }
+    ],
+    "slug": "unknown/梅の辻"
+  },
+  "st0664": {
+    "id": "st0664",
+    "name": "都府楼南",
+    "pref": null,
+    "lat": 33.50314,
+    "lng": 130.50673,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/都府楼南"
+  },
+  "st0665": {
+    "id": "st0665",
+    "name": "朝倉街道",
+    "pref": null,
+    "lat": 33.48403,
+    "lng": 130.5326,
+    "lines": [
+      {
+        "line": "天神大牟田線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/朝倉街道"
+  },
+  "st0666": {
+    "id": "st0666",
+    "name": "天拝山",
+    "pref": null,
+    "lat": 33.48161,
+    "lng": 130.53058,
+    "lines": [
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/天拝山"
+  },
+  "st0667": {
+    "id": "st0667",
+    "name": "北野",
+    "pref": null,
+    "lat": 33.34538,
+    "lng": 130.58277,
+    "lines": [
+      {
+        "line": "甘木線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/北野"
+  },
+  "st0668": {
+    "id": "st0668",
+    "name": "久留米",
+    "pref": null,
+    "lat": 33.3207,
+    "lng": 130.50127,
+    "lines": [
+      {
+        "line": "久大線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "鹿児島線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "九州新幹線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/久留米"
+  },
+  "st0669": {
+    "id": "st0669",
+    "name": "西鉄久留米",
+    "pref": null,
+    "lat": 33.31226,
+    "lng": 130.52105,
+    "lines": [
+      {
+        "line": "天神大牟田線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/西鉄久留米"
+  },
+  "st0670": {
+    "id": "st0670",
+    "name": "花畑",
+    "pref": null,
+    "lat": 33.30586,
+    "lng": 130.51504,
+    "lines": [
+      {
+        "line": "天神大牟田線",
+        "operator": "西日本鉄道"
+      }
+    ],
+    "slug": "unknown/花畑"
+  },
+  "st0671": {
+    "id": "st0671",
+    "name": "久留米高校前",
+    "pref": null,
+    "lat": 33.29838,
+    "lng": 130.51709,
+    "lines": [
+      {
+        "line": "久大線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/久留米高校前"
+  },
+  "st0672": {
+    "id": "st0672",
+    "name": "諫早東高校",
+    "pref": null,
+    "lat": 32.82344,
+    "lng": 130.14912,
+    "lines": [
+      {
+        "line": "島原鉄道線",
+        "operator": "島原鉄道"
+      }
+    ],
+    "slug": "unknown/諫早東高校"
+  },
+  "st0673": {
+    "id": "st0673",
+    "name": "愛野",
+    "pref": null,
+    "lat": 32.81888,
+    "lng": 130.1558,
+    "lines": [
+      {
+        "line": "島原鉄道線",
+        "operator": "島原鉄道"
+      }
+    ],
+    "slug": "unknown/愛野"
+  },
+  "st0674": {
+    "id": "st0674",
+    "name": "河原町",
+    "pref": null,
+    "lat": 32.79489,
+    "lng": 130.70085,
+    "lines": [
+      {
+        "line": "幹線",
+        "operator": "熊本市"
+      }
+    ],
+    "slug": "unknown/河原町"
+  },
+  "st0675": {
+    "id": "st0675",
+    "name": "八千代町",
+    "pref": null,
+    "lat": 32.75461,
+    "lng": 129.87042,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/八千代町"
+  },
+  "st0676": {
+    "id": "st0676",
+    "name": "長崎駅前",
+    "pref": null,
+    "lat": 32.75256,
+    "lng": 129.87182,
+    "lines": [
+      {
+        "line": "桜町支線",
+        "operator": "長崎電気軌道"
+      },
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/長崎駅前"
+  },
+  "st0677": {
+    "id": "st0677",
+    "name": "長崎",
+    "pref": null,
+    "lat": 32.75243,
+    "lng": 129.86889,
+    "lines": [
+      {
+        "line": "長崎線",
+        "operator": "九州旅客鉄道"
+      },
+      {
+        "line": "西九州新幹線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/長崎"
+  },
+  "st0678": {
+    "id": "st0678",
+    "name": "桜町",
+    "pref": null,
+    "lat": 32.75066,
+    "lng": 129.87628,
+    "lines": [
+      {
+        "line": "桜町支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/桜町"
+  },
+  "st0679": {
+    "id": "st0679",
+    "name": "市役所",
+    "pref": null,
+    "lat": 32.74928,
+    "lng": 129.88048,
+    "lines": [
+      {
+        "line": "蛍茶屋支線",
+        "operator": "長崎電気軌道"
+      },
+      {
+        "line": "桜町支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/市役所"
+  },
+  "st0680": {
+    "id": "st0680",
+    "name": "五島町",
+    "pref": null,
+    "lat": 32.74927,
+    "lng": 129.87222,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/五島町"
+  },
+  "st0681": {
+    "id": "st0681",
+    "name": "めがね橋",
+    "pref": null,
+    "lat": 32.74691,
+    "lng": 129.87835,
+    "lines": [
+      {
+        "line": "蛍茶屋支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/めがね橋"
+  },
+  "st0682": {
+    "id": "st0682",
+    "name": "大波止",
+    "pref": null,
+    "lat": 32.74564,
+    "lng": 129.87206,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/大波止"
+  },
+  "st0683": {
+    "id": "st0683",
+    "name": "浜町アーケード",
+    "pref": null,
+    "lat": 32.74466,
+    "lng": 129.87678,
+    "lines": [
+      {
+        "line": "蛍茶屋支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/浜町アーケード"
+  },
+  "st0684": {
+    "id": "st0684",
+    "name": "出島",
+    "pref": null,
+    "lat": 32.7439,
+    "lng": 129.87181,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/出島"
+  },
+  "st0685": {
+    "id": "st0685",
+    "name": "西浜町",
+    "pref": null,
+    "lat": 32.74372,
+    "lng": 129.87604,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      },
+      {
+        "line": "蛍茶屋支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/西浜町"
+  },
+  "st0686": {
+    "id": "st0686",
+    "name": "観光通",
+    "pref": null,
+    "lat": 32.74342,
+    "lng": 129.87779,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/観光通"
+  },
+  "st0687": {
+    "id": "st0687",
+    "name": "新地中華街",
+    "pref": null,
+    "lat": 32.74284,
+    "lng": 129.87494,
+    "lines": [
+      {
+        "line": "大浦支線",
+        "operator": "長崎電気軌道"
+      },
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/新地中華街"
+  },
+  "st0688": {
+    "id": "st0688",
+    "name": "思案橋",
+    "pref": null,
+    "lat": 32.74268,
+    "lng": 129.88034,
+    "lines": [
+      {
+        "line": "本線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/思案橋"
+  },
+  "st0689": {
+    "id": "st0689",
+    "name": "メディカルセンター",
+    "pref": null,
+    "lat": 32.74044,
+    "lng": 129.87249,
+    "lines": [
+      {
+        "line": "大浦支線",
+        "operator": "長崎電気軌道"
+      }
+    ],
+    "slug": "unknown/メディカルセンター"
+  },
+  "st0690": {
+    "id": "st0690",
+    "name": "延岡",
+    "pref": null,
+    "lat": 32.58996,
+    "lng": 131.67253,
+    "lines": [
+      {
+        "line": "日豊線",
+        "operator": "九州旅客鉄道"
+      }
+    ],
+    "slug": "unknown/延岡"
+  },
+  "st0691": {
+    "id": "st0691",
+    "name": "櫛田神社前",
+    "pref": null,
+    "lat": 33.59132,
+    "lng": 130.41159,
+    "lines": [
+      {
+        "line": "3号線(七隈線)",
+        "operator": "福岡市"
+      }
+    ],
+    "slug": "unknown/櫛田神社前"
+  },
+  "st0692": {
+    "id": "st0692",
+    "name": "松川町",
+    "pref": null,
+    "lat": 34.39024,
+    "lng": 132.47126,
+    "lines": [
+      {
+        "line": "皆実線",
+        "operator": "広島電鉄"
+      }
+    ],
+    "slug": "unknown/松川町"
+  }
+}
