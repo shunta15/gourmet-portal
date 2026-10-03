@@ -23,7 +23,7 @@ export const bodycare: Vertical = {
   ],
   scenes: [
     { slug: 'late-night', name: '夜遅くまで', matchTags: ['夜遅くまで営業'] },
-    { slug: 'weekday-open', name: '土日営業', matchTags: ['土日営業'] },
+    { slug: 'weekend-open', name: '土日営業', matchTags: ['土日営業'] },
     { slug: 'walkin-ok', name: '予約なしOK', matchTags: ['予約なし可', 'walk-in'] },
     { slug: 'female-staff', name: '女性スタッフ在籍', matchTags: ['女性スタッフ'] },
     { slug: 'near-station', name: '駅近', matchTags: ['駅近'] },
