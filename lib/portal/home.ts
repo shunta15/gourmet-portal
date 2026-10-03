@@ -49,7 +49,7 @@ export interface PortalHomeData {
 }
 
 /** 食べログ系の画像・検閲済み画像・プレースホルダは使わない */
-function isUsableImage(src: string | undefined | null): src is string {
+export function isUsableImage(src: string | undefined | null): src is string {
   if (!src) return false;
   const s = src.toLowerCase();
   if (s.includes('tabelog') || s.includes('k-img.com') || s.includes('tblg')) return false;

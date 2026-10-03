@@ -19,6 +19,7 @@ export function restaurantToPlace(r: Restaurant): Place {
     pref: r.region, // Restaurant の region は都道府県のローマ字（またはグルメ既存地域キー）
     cityName: r.area,
     address: r.address,
+    station: r.nearest || undefined, // 店の案内にある最寄り駅の書き方（そのまま）
     hours: r.hours,
     holidays: r.closed,
     phone: r.phone,

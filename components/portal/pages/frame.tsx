@@ -47,6 +47,7 @@ export function PageFrame({
   heading,
   lead,
   count,
+  extra,
   children,
 }: {
   tone: Tone;
@@ -55,6 +56,8 @@ export function PageFrame({
   heading: string;
   lead: string;
   count: number;
+  /** 見出しの下に足す内容（駅ページの路線など。無ければ何も出さない） */
+  extra?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -71,6 +74,7 @@ export function PageFrame({
             <p className="mp-state"><i aria-hidden="true" />{count > 0 ? "掲載中" : "掲載準備中"}</p>
             <p className="mp-pg-count"><b>{count}</b>件</p>
           </div>
+          {extra}
         </div>
       </header>
       {children}

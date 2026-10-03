@@ -12,7 +12,9 @@ import { getPlaces } from "@/lib/places";
 import { VERTICALS, NEW_VERTICAL_KEYS } from "@/lib/verticals";
 import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
+import { getStationIndex } from "@/lib/stations/query";
 import { notFoundMetadata, pick } from "./data";
+import { StationChips } from "./station-parts";
 import { Block, PageFrame, accentStyle, type Tone } from "./frame";
 
 type Props = { params: Promise<{ pref: string }> };
@@ -62,6 +64,8 @@ export default async function Page({ params }: Props) {
   if (!area) notFound();
   const rows = await rowsFor(pref);
   const total = rows.reduce((a, r) => a + r.count, 0);
+  // その県の駅エリア（店の多い順の上位）。店のある駅が無い県では出さない
+  const stations = (await getStationIndex()).byPref.get(pref) ?? [];
 
   return (
     <PageFrame
@@ -109,6 +113,20 @@ export default async function Page({ params }: Props) {
           })}
         </ul>
       </Block>
+
+      {stations.length > 0 && (
+        <Block id="mp-xv-st-h" kicker="Stations" title={`${area.short}の駅から探す`}>
+          <StationChips items={stations.slice(0, 12)} />
+          <p className="mp-note-links">
+            <Link href={`/station/${pref}`} prefetch={false} data-cursor="STATION">
+              {area.short}の駅エリア一覧（{stations.length}）
+            </Link>
+            <Link href="/station" prefetch={false} data-cursor="STATION">
+              全国の駅から探す
+            </Link>
+          </p>
+        </Block>
+      )}
 
       <Block id="mp-xv-hub-h" kicker="Entrances" title="業種の入口">
         <ul className="mp-others six">
