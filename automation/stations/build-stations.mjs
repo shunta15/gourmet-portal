@@ -614,12 +614,12 @@ export const STATIONS = stations as Record<string, StationCluster>;
 export const STORE_STATIONS = storeStations as Record<string, StoreStations>;
 `;
 
-  fs.writeFileSync(path.join(OUTPUT_DIR, "index.ts"), indexTs);
+  // lib/stations/index.ts は手で保守するコード（型の明示・駅ページ用の関数）なので上書きしない（2026-10-03）
 
   console.log("✅ 出力完了:");
   console.log("  - " + OUTPUT_DIR + "/stations.json");
   console.log("  - " + OUTPUT_DIR + "/storeStations.json");
-  console.log("  - " + OUTPUT_DIR + "/index.ts");
+
 
   fs.writeFileSync(
     path.join(__dirname, "unmatched.json"),
