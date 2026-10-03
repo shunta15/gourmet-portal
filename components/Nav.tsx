@@ -25,7 +25,7 @@ export default function Nav() {
     setToday(new Date().toLocaleDateString("ja-JP"));
   }, []);
 
-  const activeTop     = isActive(pathname, "/", true);
+  const activeTop     = isActive(pathname, "/", true) || pathname === "/gourmet"; // /gourmet は旧トップの移設先
   const activeFeature = isActive(pathname, "/feature");
   const activeRegion  = isActive(pathname, "/region");
   const activeScene   = isActive(pathname, "/scene");
