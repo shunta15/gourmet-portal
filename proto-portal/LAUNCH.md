@@ -323,8 +323,9 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
   店ページが初回から新しい部品で出ること。本番 `https://machinowa.tokyo/find` は 404 のまま。
 - ビルドログの `fetch failed` / `fallback to data.ts` が 0 であること（Supabase のタイムアウトで予備データのページが混ざる）。
 
-## 付録: 店ページの行動ボタン 3案（2026-10-04）
-- 仕様 `proto-portal/SNS-BUTTONS-BRIEF.md`。部品 `components/portal/ShopActions*.tsx`、`lib/portal/shopActions.ts`。見比べ `/proto-sns`（OFF は 404）。
-- 店ページの隅の切替「ボタン案 1/2/3」は、プレビューとローカルだけ（`previewTools`）。URL の `?sns=1|2|3` でも切り替わる。既定は案1。
-- 案を採用したら: 残り2案の部品と `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行を消す。
+## 付録: 店ページの行動ボタン 6案（2026-10-04）
+- 仕様 `proto-portal/SNS-BUTTONS-BRIEF.md`（案1 罫・案2 印・案3 箱）と `SNS-BUTTONS-BRIEF-2.md`（案4 玉・案5 駒・案6 帯。アイコンと短いラベルだけの簡潔版）。
+  部品 `components/portal/ShopActions*.tsx`（案4〜6 は `ShopActionsTama/Koma/Obi.tsx`、共通部品 `ShopActionsSlim.tsx`、CSS は `shopActionsCss2.ts`）、`lib/portal/shopActions.ts`。見比べ `/proto-sns`（OFF は 404）。
+- 店ページの隅の切替「ボタン案 1〜6」は、プレビューとローカルだけ（`previewTools`。スマホでは「案 N」に畳む）。URL の `?sns=1〜6` でも切り替わる。既定は案1。
+- 案を採用したら: 残り5案の部品と `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行を消す。
 - **未実施**: main との全ページ比較（1-A の `compare-off.mjs static / live`）。取り込み前に必ず実行する。

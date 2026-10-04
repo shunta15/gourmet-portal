@@ -40,7 +40,17 @@ a:visited .sa-visit{stroke:#0a5c3e}
 .sa-pv-b{min-width:48px;min-height:48px;border:1px solid var(--ink,#14110d);background:transparent;color:var(--ink,#14110d);font:500 15px/1 var(--mono,monospace);cursor:pointer;transition:background-color .2s ease,color .2s ease}
 .sa-pv-b[aria-pressed="true"]{background:var(--ink,#14110d);color:var(--paper,#fffdf7)}
 .sa-pv-b:focus-visible{outline:3px solid var(--accent,#c7472a);outline-offset:2px}
-@media (max-width:768px){.sa-pv{bottom:calc(env(safe-area-inset-bottom,0px) + 12px);padding:5px}.sa-pv-l{display:none}body:has(.sa-h-bar) .sa-pv{bottom:calc(env(safe-area-inset-bottom,0px) + 90px)}}
+.sa-pv-t{display:none}
+@media (max-width:768px){
+  .sa-pv{bottom:calc(env(safe-area-inset-bottom,0px) + 12px);padding:5px;max-width:calc(100vw - 24px);flex-wrap:wrap;justify-content:flex-end}
+  .sa-pv-l{display:none}
+  body:has(.sa-h-bar) .sa-pv{bottom:calc(env(safe-area-inset-bottom,0px) + 90px)}
+  /* 6 案を並べるとスマホの幅の大半を覆うので、普段は「案 N」だけに畳む。押すと 1〜6 が開く */
+  .sa-pv-t{display:block;min-width:56px;min-height:48px;padding:0 10px;border:1px solid var(--ink,#14110d);background:var(--ink,#14110d);color:var(--paper,#fffdf7);font:500 14px/1 var(--mono,monospace);letter-spacing:.06em;cursor:pointer}
+  .sa-pv-t:focus-visible{outline:3px solid var(--accent,#c7472a);outline-offset:2px}
+  .sa-pv[data-open="0"] .sa-pv-b{display:none}
+  .sa-pv[data-open="1"] .sa-pv-t{display:none}
+}
 @media (prefers-reduced-motion:reduce){
   .sa *,.sa *::before,.sa *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important}
 }

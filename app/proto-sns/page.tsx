@@ -1,7 +1,7 @@
 /**
- * 行動ボタン 3 案の見比べ（プレビュー・ローカル専用）。総合サイトの公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）。noindex。
- * 3 案を縦に並べ、それぞれ (a) 実在の店 3 店の実データ、(b) 6 種の SNS が全部そろった場合の見本（リンク先は未登録・押せない）を出す。
- * 設計: proto-portal/SNS-BUTTONS-BRIEF.md
+ * 行動ボタン 6 案の見比べ（プレビュー・ローカル専用）。総合サイトの公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）。noindex。
+ * 6 案を縦に並べ、それぞれ (a) 実在の店 3 店の実データ、(b) 6 種の SNS が全部そろった場合の見本（リンク先は未登録・押せない）を出す。
+ * 設計: proto-portal/SNS-BUTTONS-BRIEF.md（案1〜3）・SNS-BUTTONS-BRIEF-2.md（案4〜6）
  */
 import type { Metadata } from "next";
 import ShopActions, { type SaVariant } from "@/components/portal/ShopActions";
@@ -37,6 +37,9 @@ const VARIANTS: { v: SaVariant; no: string; name: string; en: string; note: stri
   { v: 1, no: "案1", name: "罫", en: "KEI", note: "上の表と同じ細い罫で区切った、幅いっぱいの行。1行が1つのボタン。" },
   { v: 2, no: "案2", name: "印", en: "IN", note: "丸い印のボタン。外周を字が回り、ポインタに少し吸い寄せられる。" },
   { v: 3, no: "案3", name: "箱", en: "HAKO", note: "大小のタイルの盤面。スマホは画面下に行動バーが付く（店ページで確認）。" },
+  { v: 4, no: "案4", name: "玉", en: "TAMA", note: "丸みのあるカプセル。hover で文字が送られ、墨が液面のように満ちる。押すと潰れる。（アイコンとラベルだけ）" },
+  { v: 5, no: "案5", name: "駒", en: "KOMA", note: "押し込める四角いキー。影の分だけ浮き、押すと影の位置まで沈む。アイコンが主役。（アイコンとラベルだけ）" },
+  { v: 6, no: "案6", name: "帯", en: "OBI", note: "一本の帯を区切ったボタン。指した区画が広がり、1 枚の墨がポインタを追って区画を滑る。（アイコンとラベルだけ）" },
 ];
 
 /** 6 種の SNS が全部そろった場合の見本。実在の店名・実在のアカウントは使わない。リンク先は未登録（押せない状態で出す） */
@@ -103,13 +106,13 @@ export default async function ProtoSnsPage() {
         <section className="article" style={{ paddingTop: 40 }}>
           <div className="article-head" style={{ gridTemplateColumns: "1fr" }}>
             <h2>
-              行動ボタン、<em>3案。</em>
+              行動ボタン、<em>6案。</em>
             </h2>
             <p className="sub">
-              店ページの「店舗、詳細。」の下のリンクの列を、SNS を含むボタンとして作り直した3案の見比べ（非公開・プレビュー専用）。
-              実際の店ページでは <code>?sns=1</code>〜<code>?sns=3</code> で切り替えられます（例:{" "}
-              <a href="/restaurant/r33?sns=3" style={{ textDecoration: "underline" }}>
-                /restaurant/r33?sns=3
+              店ページの「店舗、詳細。」の下のリンクの列を、SNS を含むボタンとして作り直した6案の見比べ（非公開・プレビュー専用）。
+              実際の店ページでは <code>?sns=1</code>〜<code>?sns=6</code> で切り替えられます（例:{" "}
+              <a href="/restaurant/r33?sns=6" style={{ textDecoration: "underline" }}>
+                /restaurant/r33?sns=6
               </a>
               ）。
             </p>

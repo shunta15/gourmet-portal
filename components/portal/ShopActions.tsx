@@ -1,18 +1,23 @@
 "use client";
 /**
  * 店ページの「行動ボタン」（予約・電話・地図・SNS・ほかの店・共有）。公開スイッチ ON のときだけ RestaurantDetail が React.lazy で読み込む。
- * 3案（variant 1=罫 / 2=印 / 3=箱）。previewTools（プレビュー・ローカルだけ）が true のときは、隅の切替で見比べられる。
- * 仕様と設計: proto-portal/SNS-BUTTONS-BRIEF.md
+ * 6案（variant 1=罫 / 2=印 / 3=箱 / 4=玉 / 5=駒 / 6=帯）。previewTools（プレビュー・ローカルだけ）が true のときは、隅の切替で見比べられる。
+ * 仕様と設計: proto-portal/SNS-BUTTONS-BRIEF.md（案1〜3）・SNS-BUTTONS-BRIEF-2.md（案4〜6）
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { buildActionModel, type ShopFacts } from "@/lib/portal/shopActions";
 import { CSS_BASE, CSS_HAKO, CSS_IN, CSS_KEI } from "./shopActionsCss";
+import { CSS_KOMA, CSS_OBI, CSS_SLIM, CSS_TAMA } from "./shopActionsCss2";
 import { prefersReducedMotion, useEnter, useShare } from "./ShopActionsParts";
 import ShopActionsKei from "./ShopActionsKei";
 import ShopActionsIn from "./ShopActionsIn";
 import ShopActionsHako from "./ShopActionsHako";
+import ShopActionsTama from "./ShopActionsTama";
+import ShopActionsKoma from "./ShopActionsKoma";
+import ShopActionsObi from "./ShopActionsObi";
 
-export type SaVariant = 1 | 2 | 3;
+export type SaVariant = 1 | 2 | 3 | 4 | 5 | 6;
+const VARIANTS: SaVariant[] = [1, 2, 3, 4, 5, 6];
 
 export interface ShopActionsProps {
   shop: ShopFacts;
@@ -23,7 +28,7 @@ export interface ShopActionsProps {
   /** 共有する絶対URL（lib/portal/share.ts の shareTarget） */
   shareUrl: string;
   shareText: string;
-  /** プレビュー・ローカルだけ true。隅に「ボタン案 1 / 2 / 3」の切替を出す */
+  /** プレビュー・ローカルだけ true。隅に「ボタン案 1〜6」の切替を出す */
   previewTools?: boolean;
   /** 見本（リンク先は未登録）。リンクにせず、押せない状態で出す */
   sample?: boolean;
@@ -34,15 +39,47 @@ export interface ShopActionsProps {
 const LS_KEY = "sa-variant";
 
 function parseVariant(v: string | null | undefined): SaVariant | null {
-  return v === "1" ? 1 : v === "2" ? 2 : v === "3" ? 3 : null;
+  const n = Number(v);
+  return v != null && /^[1-6]$/.test(v) ? (n as SaVariant) : null;
 }
 
+/** 隅の切替。スマホでは「案 N」だけの小さなボタンに畳み、押すと 1〜6 が開く（ほかのものを隠さない） */
 function Switcher({ value, onChange }: { value: SaVariant; onChange: (v: SaVariant) => void }) {
+  const [open, setOpen] = useState(false);
+  const box = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const away = (e: Event) => {
+      if (box.current && !box.current.contains(e.target as Node)) setOpen(false);
+    };
+    const esc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("pointerdown", away);
+    document.addEventListener("keydown", esc);
+    return () => {
+      document.removeEventListener("pointerdown", away);
+      document.removeEventListener("keydown", esc);
+    };
+  }, [open]);
   return (
-    <div className="sa-pv" role="group" aria-label="ボタン案の切替（プレビュー専用）">
+    <div ref={box} className="sa-pv" data-open={open ? "1" : "0"} role="group" aria-label="ボタン案の切替（プレビュー専用）">
       <span className="sa-pv-l">ボタン案</span>
-      {([1, 2, 3] as SaVariant[]).map((n) => (
-        <button key={n} type="button" className="sa-pv-b" aria-pressed={value === n} onClick={() => onChange(n)}>
+      <button type="button" className="sa-pv-t" aria-expanded={open} aria-label={`ボタン案を選ぶ（いま案${value}）`} onClick={() => setOpen(true)}>
+        案{value}
+      </button>
+      {VARIANTS.map((n) => (
+        <button
+          key={n}
+          type="button"
+          className="sa-pv-b"
+          aria-pressed={value === n}
+          aria-label={`案${n}`}
+          onClick={() => {
+            onChange(n);
+            setOpen(false);
+          }}
+        >
           {n}
         </button>
       ))}
@@ -149,10 +186,33 @@ export default function ShopActions({
           {CSS_HAKO}
         </style>
       )}
+      {cur >= 4 && (
+        <style href="sa-slim" precedence="sa-2">
+          {CSS_SLIM}
+        </style>
+      )}
+      {cur === 4 && (
+        <style href="sa-tama" precedence="sa-3">
+          {CSS_TAMA}
+        </style>
+      )}
+      {cur === 5 && (
+        <style href="sa-koma" precedence="sa-3">
+          {CSS_KOMA}
+        </style>
+      )}
+      {cur === 6 && (
+        <style href="sa-obi" precedence="sa-3">
+          {CSS_OBI}
+        </style>
+      )}
       <div ref={rootRef} className={`sa sa-v${cur}`} data-sa-variant={cur}>
         {cur === 1 && <ShopActionsKei {...common} />}
         {cur === 2 && <ShopActionsIn {...common} />}
         {cur === 3 && <ShopActionsHako {...common} />}
+        {cur === 4 && <ShopActionsTama {...common} />}
+        {cur === 5 && <ShopActionsKoma {...common} />}
+        {cur === 6 && <ShopActionsObi {...common} />}
       </div>
       {previewTools && <Switcher value={cur} onChange={choose} />}
     </>

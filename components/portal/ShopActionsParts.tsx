@@ -168,9 +168,13 @@ interface ActProps {
   style?: CSSProperties;
   children: ReactNode;
   onTap?: (el: HTMLElement) => void;
+  /** 読み上げ用の名前（案4〜6。見た目の補足を出さない代わりに、行き先の種類を入れる）。外部リンクなら「新しいタブ」の案内を足す */
+  aria?: string;
+  /** サイト共通のカーソルの「ホット」な大きい輪（行き先の字が入る）を出さない。小さなボタンでは輪がラベルやアイコンを覆うため（案4〜6） */
+  noCursor?: boolean;
 }
 
-export function Act({ a, storeId, page, sample, className, style, children, onTap }: ActProps) {
+export function Act({ a, storeId, page, sample, className, style, children, onTap, aria, noCursor }: ActProps) {
   if (sample) {
     return (
       <span className={`${className} sa-sample`} style={style} aria-disabled="true" data-sa-id={a.id}>
@@ -184,7 +188,8 @@ export function Act({ a, storeId, page, sample, className, style, children, onTa
       {...(a.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={className}
       style={style}
-      data-cursor={a.cursor}
+      aria-label={aria ? `${aria}${a.external ? "（外部サイトが新しいタブで開きます）" : ""}` : undefined}
+      data-cursor={noCursor ? undefined : a.cursor}
       data-sa-id={a.id}
       data-dir={a.href.startsWith("#") ? "down" : undefined}
       onClick={(e) => {
@@ -193,7 +198,7 @@ export function Act({ a, storeId, page, sample, className, style, children, onTa
       }}
     >
       {children}
-      {a.external && <ExtHint />}
+      {a.external && !aria && <ExtHint />}
     </a>
   );
 }
