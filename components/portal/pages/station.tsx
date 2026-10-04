@@ -44,7 +44,8 @@ import ShopPhoto from "../ShopPhoto";
 import { OpenBadge, OpenBar, OpenCount, OpenScope } from "../OpenNow";
 import { notFoundMetadata } from "./data";
 import { Block, PageFrame, ShareSection, accentStyle } from "./frame";
-import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
+import { STATION_TONE, GenreChips, StationChips, StationCredit } from "./station-parts";
+import { genreHref, getGenreIndex } from "@/lib/stations/genre";
 
 type Props = { params: Promise<{ pref: string; name: string }> };
 
@@ -62,7 +63,7 @@ async function find(params: Props["params"]): Promise<{ pref: string; summary: S
 }
 
 /** JSON-LD の画像は絶対URL。自サイトの画像（/restaurants/...）は日本語を percent-encode して絶対URLにする */
-function absImage(src: string): string {
+export function absImage(src: string): string {
   if (!src.startsWith("/")) return src;
   let path = src;
   try {
@@ -108,7 +109,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-function StoreCard({ s }: { s: StationStore }) {
+export function StoreCard({ s }: { s: StationStore }) {
   const { place: p, vertical: v } = s;
   const cat = placeCategoryName(v, p);
   const walk =
@@ -149,6 +150,8 @@ export default async function Page({ params }: Props) {
   const area = getPrefBySlug(pref);
   if (!area) notFound();
   const idx = await getStationIndex();
+  // この駅エリアで、条件を満たすジャンルのページ（店 3 店以上で、駅の店がそのジャンルだけではない）。無ければ入口は出さない
+  const genrePages = (await getGenreIndex()).byStation.get(st.id) ?? [];
 
   const heading = stationHeading(st);
   const aka = aliasText(st);
@@ -242,6 +245,19 @@ export default async function Page({ params }: Props) {
           {summary.count - mini.points.length > 0 && `位置が取れていない${summary.count - mini.points.length}店は地図に出ていません。`}
         </p>
       </Block>
+
+      {genrePages.length > 0 && (
+        <Block id="mp-st-genre-h" kicker="Genre" title={`${st.name}のジャンル別の店`}>
+          <GenreChips
+            items={genrePages.map((g) => ({
+              key: g.genre,
+              href: genreHref(pref, st.name, g.genre),
+              label: `${st.name}の${g.genre}`,
+              count: g.count,
+            }))}
+          />
+        </Block>
+      )}
 
       <OpenScope weeks={weeks}>
         <section className="mp-pg-sec mp-obar-sec" aria-label="営業中の絞り込み">

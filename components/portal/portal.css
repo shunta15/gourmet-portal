@@ -803,3 +803,6 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-share-b, .mp-sl-b{padding:0 14px}
   .mp-find-form button{padding:0 16px}
 }
+
+/* ジャンル × 駅（/station/{pref}/{駅名}/{ジャンル}）。チップのタップ領域を 48px 以上にする */
+.mp-gn .mp-pref{min-height:48px; align-items:center; padding-block:0}

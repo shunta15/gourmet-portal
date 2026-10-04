@@ -9,6 +9,7 @@
  *   /{beauty|bodycare|…}/**    → /og/v/{key}            （業種トップ・その配下は業種の色の共有画像）
  *   /area/{pref}               → /og/area/{pref}        （業種横断の街（県））
  *   /station/{pref}/{name}     → /og/station/{pref}/{name}
+ *   /station/{pref}/{name}/{genre} → /og/station/{pref}/{name}/{genre}  （ジャンル × 駅）
  *   それ以外（/station・/videos・/map など）→ /og/home
  */
 
@@ -39,6 +40,8 @@ export function ogImagePath(path: string): string {
     p = `/og/area/${seg(parts[1])}`;
   } else if (parts[0] === "station" && parts[1] && parts[2] && parts.length === 3) {
     p = `/og/station/${seg(parts[1])}/${seg(parts[2])}`;
+  } else if (parts[0] === "station" && parts[1] && parts[2] && parts[3] && parts.length === 4) {
+    p = `/og/station/${seg(parts[1])}/${seg(parts[2])}/${seg(parts[3])}`;
   }
   return `${p}?v=${OG_VERSION}`;
 }

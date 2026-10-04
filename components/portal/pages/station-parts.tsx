@@ -58,3 +58,31 @@ export function StationChips({
     </ul>
   );
 }
+
+/**
+ * ジャンルのページへのチップ（名前・店数）。駅ページの入口と、ジャンルのページの関連リンクで使う。
+ * 見た目は StationChips と同じ（.mp-pref）。タップ領域は 48px 以上（.mp-gn）。
+ */
+export function GenreChips({ items }: { items: { key: string; href: string; label: string; count: number }[] }) {
+  const max = Math.max(1, ...items.map((i) => i.count));
+  return (
+    <ul className="mp-area-list mp-gn">
+      {items.map((it) => (
+        <li key={it.key}>
+          <Link
+            href={it.href}
+            prefetch={false}
+            className="mp-pref lit"
+            style={{ ["--w" as string]: `${Math.max(8, Math.round((it.count / max) * 100))}%` }}
+            data-cursor="GENRE"
+          >
+            <span className="nm">{it.label}</span>
+            <span className="ct">
+              <b>{it.count}</b>店
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
