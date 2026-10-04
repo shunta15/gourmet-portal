@@ -299,3 +299,32 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 | `app/robots.ts`・`app/sitemap.ts` | ON のときだけ追記 |
 | `proto-portal/compare-off.mjs` | OFF が main と同一かの検査 |
 | `proto-portal/crawl.mjs` | ON の巡回検査 |
+
+---
+
+## 付録: プレビューの作り方（本番に出さない）と、2026-10-04 に起きた失敗
+
+```
+vercel pull --yes --environment=production
+cp .vercel/.env.production.local .vercel/.env.preview.local
+# ↓ これを忘れると、プレビューなのに公開スイッチが OFF でビルドされる（必須）
+sed -i '' -e 's/^VERCEL_ENV=.*/VERCEL_ENV="preview"/' -e 's/^VERCEL_TARGET_ENV=.*/VERCEL_TARGET_ENV="preview"/' .vercel/.env.preview.local
+chmod 600 .vercel/.env.*.local
+rm -rf .vercel/output && vercel build          # builds.json の "target": "preview"
+grep -c '__portal-off' .vercel/output/config.json   # 0 であること（1以上なら OFF でビルドされている）
+vercel deploy --prebuilt --archive=tgz --yes   # --prod は付けない
+rm -f .vercel/.env.preview.local .vercel/.env.production.local
+```
+
+- **失敗の記録**: 本番用に pull した env には `VERCEL_ENV="production"` が入っている。それをそのまま preview 用に写してビルドしたため、
+  公開スイッチ導入後のプレビュー（9o6pl27ju・5g1tool5w）は OFF でビルドされ、`/` はグルメのトップ、総合サイトの全ルートが 404 だった。
+  店ページだけは実行時（Vercel 上は `VERCEL_ENV=preview`）に作り直されて ON になるため、「最初の1回だけ古い表示」という紛らわしい症状になった。
+- **デプロイ後に必ず確認する**: `/` のタイトルが総合トップ（「マチノワ — 街の店を、業種をまたいで探す」）、`/gourmet` `/find` `/beauty` `/station/tokyo` が 200、
+  店ページが初回から新しい部品で出ること。本番 `https://machinowa.tokyo/find` は 404 のまま。
+- ビルドログの `fetch failed` / `fallback to data.ts` が 0 であること（Supabase のタイムアウトで予備データのページが混ざる）。
+
+## 付録: 店ページの行動ボタン 3案（2026-10-04）
+- 仕様 `proto-portal/SNS-BUTTONS-BRIEF.md`。部品 `components/portal/ShopActions*.tsx`、`lib/portal/shopActions.ts`。見比べ `/proto-sns`（OFF は 404）。
+- 店ページの隅の切替「ボタン案 1/2/3」は、プレビューとローカルだけ（`previewTools`）。URL の `?sns=1|2|3` でも切り替わる。既定は案1。
+- 案を採用したら: 残り2案の部品と `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行を消す。
+- **未実施**: main との全ページ比較（1-A の `compare-off.mjs static / live`）。取り込み前に必ず実行する。
