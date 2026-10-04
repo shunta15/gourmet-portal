@@ -5,18 +5,32 @@ import { usePathname } from "next/navigation";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
+import SearchSuggest from "./SearchSuggest";
+import { useSiteSearch } from "./useSiteSearch";
 
 const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
 
 /**
  * 総合サイト用ヘッダー。ロゴ「マチノワ」＋業種の切り替え＋検索。
- * 検索は既存の /search?q= へ素の GET フォームで渡す（JS が無くても動く）。
+ * 検索は総合サイトの /find?q= へ素の GET フォームで渡す（JS が無くても動く）。JS があるときは、入力に応じて
+ * 候補（駅・都道府県・市区町村・業種と種類・店）を出す（useSiteSearch・SearchSuggest。候補データは初回フォーカス時に取得）。
+ * グルメの既存 /search は変えない（総合サイトからは使わない）。
  */
 export default function PortalHeader() {
   const pathname = usePathname() ?? "/";
   const [menu, setMenu] = useState(false);
   const [search, setSearch] = useState(false);
   const input = useRef<HTMLInputElement>(null);
+  const toggle = useRef<HTMLButtonElement>(null);
+  const hs = useSiteSearch({
+    onNavigate: () => setSearch(false),
+    // 候補が閉じているときの Esc は、検索欄を閉じて開くボタンへ戻る
+    onEscapeWhenClosed: () => {
+      setSearch(false);
+      toggle.current?.focus();
+    },
+  });
+  const ms = useSiteSearch({ onNavigate: () => setMenu(false) });
 
   useEffect(() => {
     setMenu(false);
@@ -66,17 +80,18 @@ export default function PortalHeader() {
         </nav>
 
         <div className="mp-hd-right">
-          <form className={`mp-hd-search${search ? " open" : ""}`} action="/search" method="get" role="search">
+          <form className={`mp-hd-search${search ? " open" : ""}`} action="/find" method="get" role="search">
             <input
               ref={input}
               type="search"
               name="q"
-              placeholder="店名・エリアで探す"
-              aria-label="店名・エリアで検索"
-              autoComplete="off"
+              placeholder="駅・エリア・店名で探す"
+              aria-label="駅・エリア・店名で検索"
               tabIndex={search ? 0 : -1}
+              {...hs.inputProps}
             />
             <button
+              ref={toggle}
               type={search ? "submit" : "button"}
               className="mp-hd-sbtn"
               aria-label={search ? "検索する" : "検索を開く"}
@@ -93,6 +108,7 @@ export default function PortalHeader() {
                 <path d="M13 13l4.5 4.5" strokeLinecap="round" />
               </svg>
             </button>
+            {search && <SearchSuggest s={hs} />}
           </form>
           <button
             type="button"
@@ -123,9 +139,17 @@ export default function PortalHeader() {
             );
           })}
         </ol>
-        <form className="mp-menu-search" action="/search" method="get" role="search">
-          <input type="search" name="q" placeholder="店名・エリアで探す" aria-label="店名・エリアで検索" tabIndex={menu ? 0 : -1} />
+        <form className="mp-menu-search" action="/find" method="get" role="search">
+          <input
+            type="search"
+            name="q"
+            placeholder="駅・エリア・店名で探す"
+            aria-label="駅・エリア・店名で検索"
+            tabIndex={menu ? 0 : -1}
+            {...ms.inputProps}
+          />
           <button type="submit" tabIndex={menu ? 0 : -1}>検索</button>
+          {menu && <SearchSuggest s={ms} className="up" />}
         </form>
       </div>
     </>

@@ -8,6 +8,11 @@ import { sized } from "@/lib/imageUrl";
 import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
 import type { GeoPoint } from "@/lib/geo";
 import { mapsUrlForRestaurant } from "@/lib/maps";
+import { shareTarget } from "@/lib/portal/share";
+import { trackTap } from "@/lib/portal/track";
+import type { ShopLink } from "@/lib/portal/sns";
+import ShopLinks from "./portal/ShopLinks";
+import ShareButtons from "./portal/ShareButtons";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
 import LeafletMap from "./LeafletMap";
@@ -22,9 +27,11 @@ interface RestaurantDetailProps {
   featureId?: string;
   /** この店がある街（市区町村）。店が2店以上ある街なら「<街>の他の店」へのリンクを出す */
   town?: { name: string; href: string; count: number } | null;
+  /** 店の SNS・公式サイトのボタン（値がある項目だけ。lib/portal/shopSocial.ts） */
+  social?: ShopLink[];
 }
 
-export default function RestaurantDetail({ r, related, shortVideos, geo, featureId, town }: RestaurantDetailProps) {
+export default function RestaurantDetail({ r, related, shortVideos, geo, featureId, town, social = [] }: RestaurantDetailProps) {
   useReveal();
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
@@ -214,6 +221,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="sb-submit"
                 style={{ padding: "16px 32px" }}
                 data-cursor="BOOK"
+                onClick={() => trackTap({ storeId: r.id, kind: "reserve", page: `/restaurant/${r.id}` })}
               >
                 予約する →
               </a>
@@ -224,6 +232,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="sb-submit"
                 style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
                 data-cursor="CALL"
+                onClick={() => trackTap({ storeId: r.id, kind: "phone", page: `/restaurant/${r.id}` })}
               >
                 電話する（{r.phone}）
               </a>
@@ -236,6 +245,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="chip"
                 style={{ padding: "16px 24px", borderRadius: 0 }}
                 data-cursor="MAP"
+                onClick={() => trackTap({ storeId: r.id, kind: "map", page: `/restaurant/${r.id}` })}
               >
                 Google マップで開く ↗
               </a>
@@ -250,6 +260,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 地図を見る ↗
               </a>
             )}
+            <ShopLinks variant="gourmet" links={social} storeId={r.id} page={`/restaurant/${r.id}`} />
             {!r.phone && !r.reservationUrl && (
               <a
                 href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
@@ -303,6 +314,15 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
               {region.name}の他の店を見る
             </Link>
           </div>
+
+          <ShareButtons
+            variant="gourmet"
+            url={shareTarget(`/restaurant/${r.id}`)}
+            text={`${r.name}｜マチノワ`}
+            page={`/restaurant/${r.id}`}
+            storeId={r.id}
+            label="この店を共有"
+          />
         </section>
 
         {geo && (
@@ -343,6 +363,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                   className="chip"
                   style={{ padding: "12px 20px", borderRadius: 0, marginTop: 16 }}
                   data-cursor="MAP"
+                  onClick={() => trackTap({ storeId: r.id, kind: "map", page: `/restaurant/${r.id}` })}
                 >
                   Google マップで開く ↗
                 </a>

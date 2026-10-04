@@ -9,11 +9,13 @@ import PortalFonts from "../PortalFonts";
 import Breadcrumbs, { type Crumb } from "../Breadcrumbs";
 import AreaBlocks from "../AreaBlocks";
 import JsonLd from "../JsonLd";
+import ShareButtons from "../ShareButtons";
 import { OpenBadge, OpenBar, OpenScope } from "../OpenNow";
 import { packWeeks } from "@/lib/portal/openNow";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { itemList } from "@/lib/seo/jsonld";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
+import { shareTarget } from "@/lib/portal/share";
 import type { Place } from "@/lib/places";
 import type { Scene, Vertical } from "@/lib/verticals/types";
 import { pick } from "./data";
@@ -138,6 +140,28 @@ export function Listing({ v, places, emptyNote }: { v: Vertical; places: Place[]
         </OpenScope>
       </div>
       <JsonLd data={itemList(places, v)} />
+    </section>
+  );
+}
+
+/** ページの共有ボタン（LINE・X・Facebook・リンクをコピー）。path はこのページのパス（日本語のままでよい） */
+export function ShareSection({
+  path,
+  text,
+  label = "このページを共有",
+  storeId,
+}: {
+  path: string;
+  /** X・共有シートに渡す文言（ページ名など） */
+  text: string;
+  label?: string;
+  storeId?: string;
+}) {
+  return (
+    <section className="mp-pg-sec mp-share-sec" aria-label="共有">
+      <div className="mp-wrap">
+        <ShareButtons url={shareTarget(path)} text={text} page={path} storeId={storeId} label={label} />
+      </div>
     </section>
   );
 }

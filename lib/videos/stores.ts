@@ -8,6 +8,9 @@ import { VERTICALS } from "@/lib/verticals";
 import type { Vertical } from "@/lib/verticals/types";
 import { GOURMET_REGION_BY_PREF, getPrefBySlug } from "@/lib/areas/prefectures";
 import { getStationsForStore } from "@/lib/stations";
+import { mapsSearchUrl } from "@/lib/maps";
+import { shopLinks, type ShopLink } from "@/lib/portal/sns";
+import { placeSocial } from "@/lib/portal/shopSocial";
 import {
   NEARBY_MAX_METERS,
   getStationIndex,
@@ -32,6 +35,8 @@ export interface VideoStore {
   href: string;
   /** 最寄りの駅エリア（駅ページが実在するものだけ） */
   station: { clusterId: string; heading: string; href: string } | null;
+  /** 電話・地図・予約・公式サイト・SNS のボタン（値がある項目だけ） */
+  links: ShopLink[];
 }
 
 type Entry = { place: Place; vertical: Vertical };
@@ -110,6 +115,12 @@ export async function getVideoStores(ids: string[]): Promise<Map<string, VideoSt
       prefShort: pref ? (getPrefBySlug(pref)?.short ?? null) : null,
       href: placeHref(vertical, place),
       station: st ? { clusterId: st.id, heading: stationHeading(st), href: stationHref(st) } : null,
+      links: shopLinks({
+        phone: place.phone,
+        mapUrl: place.mapUrl ?? mapsSearchUrl(place.name, place.address),
+        reservationUrl: place.reservationUrl,
+        ...placeSocial(place),
+      }),
     });
   }
   return out;

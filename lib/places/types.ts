@@ -25,6 +25,18 @@ export interface PlaceBase {
   holidays?: string;
   phone?: string;
   url?: string;
+  /** 予約ページの URL */
+  reservationUrl?: string;
+  /** 地図のリンク（Google マップの実URLが分かる店だけ。無ければ店名＋住所の検索リンクを使う） */
+  mapUrl?: string;
+  /** 店の公式アカウント・公式サイト（任意。値がある店だけボタンが出る。値は推測で作らない） */
+  instagram?: string;
+  tiktok?: string;
+  x?: string;
+  facebook?: string;
+  /** LINE 公式アカウントの URL */
+  line?: string;
+  website?: string;
   image?: string;            // 代表画像
   images: string[];          // 画像一覧
   tags: string[];            // シーンタグ

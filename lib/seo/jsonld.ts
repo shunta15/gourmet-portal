@@ -19,7 +19,7 @@ export function organization() {
 }
 
 /**
- * Website スキーマ（SearchAction付き）
+ * Website スキーマ（SearchAction付き）。総合サイトの検索は /find?q=（グルメの既存 /search は別）
  */
 export function website() {
   return {
@@ -30,7 +30,7 @@ export function website() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://machinowa.tokyo/search?q={search_term_string}',
+        urlTemplate: 'https://machinowa.tokyo/find?q={search_term_string}',
       },
     },
   };

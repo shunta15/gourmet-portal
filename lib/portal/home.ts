@@ -11,6 +11,7 @@ import type { Place } from '@/lib/places/types';
 import { PREFECTURES, type PrefBlockName } from '@/lib/areas/prefectures';
 import { gourmetRegionKey } from '@/lib/areas/gourmet';
 import homePhotos from './homePhotos.json';
+import { isUsableImage } from './photoRules';
 
 export interface PrefItem {
   slug: string;
@@ -56,16 +57,8 @@ export interface PortalHomeData {
   features: LatestFeature[];
 }
 
-/** 食べログ系の画像・検閲済み画像・プレースホルダは使わない */
-export function isUsableImage(src: string | undefined | null): src is string {
-  if (!src) return false;
-  const s = src.toLowerCase();
-  if (s.includes('tabelog') || s.includes('k-img.com') || s.includes('tblg')) return false;
-  if (s.includes('_placeholder')) return false;
-  if (isBlockedImage(src)) return false;
-  return true;
-}
-
+/** 食べログ系の画像・検閲済み画像・プレースホルダは使わない（判定は lib/portal/photoRules.ts。生成スクリプトと共有） */
+export { isUsableImage };
 
 /**
  * 自サイトに置いてある店の写真（/restaurants/...）だけ。

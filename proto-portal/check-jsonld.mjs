@@ -4,9 +4,9 @@
  *   npm run build の後に:   node proto-portal/check-jsonld.mjs [--base http://localhost:3242]
  *
  * - ビルド出力（.next/server/app の総合サイトのページの HTML）の <script type="application/ld+json"> を全部パースする。
- *   対象: / ・ /area/** ・ /station/** ・ /videos/** ・ /map ・ 新業種（/beauty /bodycare /pet /leisure /stay）の配下。
+ *   対象: / ・ /area/** ・ /station/** ・ /videos/** ・ /map ・ /find ・ 新業種（/beauty /bodycare /pet /leisure /stay）の配下。
  *   グルメの既存ページ（/restaurant・/feature・/region など）は対象外。
- * - 動的なページ（/map・/videos など。ビルドに HTML が無い）は、--base（起動中のサーバー）があるときだけそこから取って検査する。
+ * - 動的なページ（/map・/videos・/find など。ビルドに HTML が無い）は、--base（起動中のサーバー）があるときだけそこから取って検査する。
  * - 型ごとの必須プロパティ:
  *     BreadcrumbList : itemListElement[] の position（1 から連番）・name・item（絶対URL）
  *     ItemList       : itemListElement[] の position と url または item（絶対URL）
@@ -142,7 +142,7 @@ for (const f of walk(APP)) {
 }
 const builtSet = new Set(pages.map((p) => p.url));
 const dynamicSkipped = [];
-for (const u of ["/map", "/map?pref=kyoto", "/videos", "/videos?v=gourmet"]) {
+for (const u of ["/map", "/map?pref=kyoto", "/videos", "/videos?v=gourmet", "/find", "/find?q=三宮", "/find?q=京都"]) {
   if (builtSet.has(u.split("?")[0])) continue;
   if (!BASE) {
     dynamicSkipped.push(u);

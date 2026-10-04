@@ -14,6 +14,7 @@ import { GEO } from "@/lib/geo";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 import { getTownOfRestaurant } from "@/lib/db/towns";
+import { restaurantSocialLinks } from "@/lib/portal/shopSocial";
 import {
   restaurantTitle,
   restaurantDescription,
@@ -127,6 +128,7 @@ export default async function RestaurantPage({
         geo={GEO[r.id] ?? null}
         featureId={featureId}
         town={town ? { name: town.town, href: town.href, count: town.count } : null}
+        social={restaurantSocialLinks(r)}
       />
     </>
   );

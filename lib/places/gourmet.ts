@@ -5,6 +5,7 @@
 
 import { getAllRestaurants } from '@/lib/db/restaurants';
 import type { Restaurant } from '@/lib/data';
+import { mapsUrlForRestaurant } from '@/lib/maps';
 import type { Place } from './types';
 
 /**
@@ -24,6 +25,14 @@ export function restaurantToPlace(r: Restaurant): Place {
     holidays: r.closed,
     phone: r.phone,
     url: r.reservationUrl,
+    reservationUrl: r.reservationUrl,
+    mapUrl: mapsUrlForRestaurant(r),
+    instagram: r.instagram,
+    tiktok: r.tiktok,
+    x: r.x,
+    facebook: r.facebook,
+    line: r.line,
+    website: r.website,
     image: r.image,
     images: r.gallery || [],
     tags: r.tags || [],

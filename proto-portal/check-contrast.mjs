@@ -10,6 +10,9 @@
  *  3. 文字色（透明度・親の opacity を反映）と背景のコントラスト比を計算。通常文字 4.5、大きい文字（24px 以上、または 18.66px 以上で太字700）は 3.0
  * 除外: aria-hidden の装飾、非表示、opacity 0、幅高さが 4px 未満（スクリーンリーダー専用など）、Leaflet の地図タイル
  * 幅 1440 と 390 の両方で測る。終了コードは違反があれば 1。
+ * 状態つきの検査（STATES）: 検索の候補リストを開いた状態（幅1440はヘッダーの検索、幅390は全画面メニューの検索）・候補を矢印で選んだ状態の、候補リスト（.mp-sug）だけを測る。
+ * （全画面メニュー自体の文字は対象外。メニューの番号「01」などの小さな文字は、業種色が暗い面でコントラスト不足になる既存の課題。）
+ * 共有ボタン・店のリンクのボタンは、それが載るページ（駅・県・動画）の通常の検査に含まれる。
  */
 import { chromium } from "playwright";
 import sharp from "sharp";
@@ -48,6 +51,9 @@ const PAGES = arg(
     "/videos/sv-nazatu-1",
     "/map",
     "/map?pref=kyoto",
+    "/find?q=三宮",
+    "/find?q=京都",
+    "/find?q=zzzz",
   ].join(","),
 ).split(",");
 const VIEWPORTS = [
@@ -68,7 +74,7 @@ const ratio = (a, b) => {
 const hex = ([r, g, b]) => "#" + [r, g, b].map((v) => Math.round(v).toString(16).padStart(2, "0")).join("");
 
 /** ページ内で「文字を持つ要素」を集める（ブラウザ内で実行） */
-function collect() {
+function collect(only) {
   const out = [];
   const sx = scrollX;
   const sy = scrollY;
@@ -77,6 +83,16 @@ function collect() {
     if (!m) return [0, 0, 0, 1];
     const p = m[1].split(/[ ,\/]+/).filter(Boolean).map(Number);
     return [p[0], p[1], p[2], p.length > 3 ? p[3] : 1];
+  };
+  // スクロール・overflow:hidden の入れ物から完全にはみ出していて見えない文字（候補リストの下に隠れた行など）は測らない
+  const clippedAway = (el, q) => {
+    for (let a = el.parentElement; a && a !== document.body && a !== document.documentElement; a = a.parentElement) {
+      const cs = getComputedStyle(a);
+      if (cs.overflowX === "visible" && cs.overflowY === "visible") continue;
+      const b = a.getBoundingClientRect();
+      if (q.bottom <= b.top + 1 || q.top >= b.bottom - 1 || q.right <= b.left + 1 || q.left >= b.right - 1) return true;
+    }
+    return false;
   };
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
   const seen = new Set();
@@ -87,6 +103,10 @@ function collect() {
     const texts = [...el.childNodes].filter((n) => n.nodeType === 3 && n.textContent.trim().length > 0);
     if (texts.length === 0) continue;
     if (el.closest('[aria-hidden="true"]')) continue;
+    // 読み上げ専用（画面には出ない）の文字は測らない
+    if (el.closest(".mp-sr")) continue;
+    // 状態つきの検査では、その状態で新しく出た部分だけを測る（全画面メニューの下に隠れたページの文字を拾わない）
+    if (only && !el.closest(only)) continue;
     if (el.closest(".leaflet-tile-pane, .leaflet-marker-pane .mp-cl-wrap, .leaflet-marker-pane .mp-pin-wrap")) continue;
     const cs = getComputedStyle(el);
     if (cs.display === "none" || cs.visibility === "hidden") continue;
@@ -103,7 +123,7 @@ function collect() {
     for (const n of texts) {
       const r = document.createRange();
       r.selectNodeContents(n);
-      for (const q of r.getClientRects()) if (q.width >= 4 && q.height >= 4) rects.push([q.left + sx, q.top + sy, q.width, q.height]);
+      for (const q of r.getClientRects()) if (q.width >= 4 && q.height >= 4 && !clippedAway(el, q)) rects.push([q.left + sx, q.top + sy, q.width, q.height]);
     }
     if (rects.length === 0) continue;
     // 画面外に押し出された（clip・overflow で完全に見えない）ものは除外
@@ -164,6 +184,28 @@ function judge(items, img) {
   return res;
 }
 
+/** 検索の候補リストを開いた状態にする（幅1440: ヘッダーの検索 / 幅390: 全画面メニューの検索） */
+async function openSearch(page, vp, word, arrow) {
+  const mobile = vp.width < 1000;
+  if (mobile) await page.click('button[aria-label="メニュー"]');
+  else await page.click('button[aria-label="検索を開く"]');
+  await page.waitForTimeout(1300);
+  const input = page.locator(mobile ? ".mp-menu-search input" : ".mp-hd-search input");
+  await input.click();
+  await input.type(word, { delay: 30 });
+  await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 15000 });
+  if (arrow) {
+    await input.press("ArrowDown");
+    await input.press("ArrowDown");
+  }
+  await page.waitForTimeout(400);
+}
+const STATES = [
+  { label: "検索候補（三宮）", page: "/station/kyoto/祇園四条", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "三宮", false) },
+  { label: "検索候補（きょうと・矢印で選択）", page: "/beauty", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "きょうと", true) },
+  { label: "検索候補（京都・矢印で選択）", page: "/map", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "京都", true) },
+];
+
 const browser = await chromium.launch(SILK ? { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] } : {});
 const all = [];
 let checked = 0;
@@ -171,8 +213,10 @@ for (const vp of VIEWPORTS) {
   if (SILK && vp.name !== "1440") continue;
   const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, reducedMotion: SILK ? "no-preference" : "reduce" });
   const page = await ctx.newPage();
-  for (const p of PAGES) {
-    const resp = await page.goto(BASE + encodeURI(p), { waitUntil: "load", timeout: 120000 });
+  const targets = [...PAGES.map((p) => ({ label: p, page: p })), ...(arg("pages", "") && !process.argv.includes("--states") ? [] : STATES)];
+  for (const tg of targets) {
+    const p = tg.label;
+    const resp = await page.goto(BASE + encodeURI(tg.page), { waitUntil: "load", timeout: 120000 });
     if (!resp || resp.status() !== 200) {
       console.log(`SKIP ${vp.name} ${p} -> ${resp?.status()}`);
       continue;
@@ -183,18 +227,21 @@ for (const vp of VIEWPORTS) {
       document.querySelectorAll("[data-progress]").forEach((e) => e.style.setProperty("--p", "1"));
     });
     await page.evaluate(() => document.fonts.ready);
+    if (tg.run) await tg.run(page, vp);
     if (SILK) await page.waitForSelector("canvas.mp-silk[data-ready]", { timeout: 20000 }).catch(() => console.log("  （絹が始まらなかった）"));
     await page.waitForTimeout(2500);
-    const items = await page.evaluate(collect);
+    const items = await page.evaluate(collect, tg.only ?? null);
     await page.addStyleTag({ content: "*,*::before,*::after{color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;caret-color:transparent!important}" });
     await page.waitForTimeout(300);
     // 縦に長いページは Chromium が 16384px 付近から先を白で返すので、6000px ずつ撮って縦に連結する
-    const total = await page.evaluate(() => Math.ceil(document.documentElement.scrollHeight));
+    // （状態つきの検査は、固定配置のメニュー・候補リストが画面（ビューポート）に載っている状態を撮る。
+    //   fullPage だと縦に長いページで固定配置の要素が引き伸ばされて、測った位置とずれる）
+    const total = tg.only ? vp.height : await page.evaluate(() => Math.ceil(document.documentElement.scrollHeight));
     const bufs = [];
     let width = vp.width;
     for (let y = 0; y < total; y += 6000) {
       const h = Math.min(6000, total - y);
-      const png = await page.screenshot({ fullPage: true, clip: { x: 0, y, width: vp.width, height: h } });
+      const png = tg.only ? await page.screenshot({ clip: { x: 0, y, width: vp.width, height: h } }) : await page.screenshot({ fullPage: true, clip: { x: 0, y, width: vp.width, height: h } });
       const r = await sharp(png).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
       width = r.info.width;
       bufs.push(r.data);

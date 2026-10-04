@@ -1,0 +1,7205 @@
+{
+  "_comment": "総合ページの店写真の事前生成の対応表（public からのパス → 幅違いの WebP）。automation/portal/build-images.mjs が書き出す（手で編集しない）。",
+  "variants": {
+    "/restaurants/kitsune-storefront-night.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-dcdeba8c-480.webp",
+          "bytes": 17882
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-dcdeba8c-960.webp",
+          "bytes": 43400
+        }
+      ]
+    },
+    "/restaurants/paofuku-interior-wide.jpg": {
+      "width": 960,
+      "height": 454,
+      "items": [
+        {
+          "w": 480,
+          "h": 227,
+          "src": "/_portal/shop-046f05f2-480.webp",
+          "bytes": 15680
+        },
+        {
+          "w": 960,
+          "h": 454,
+          "src": "/_portal/shop-046f05f2-960.webp",
+          "bytes": 42100
+        }
+      ]
+    },
+    "/restaurants/r04/r04-info-4.webp": {
+      "width": 960,
+      "height": 570,
+      "items": [
+        {
+          "w": 480,
+          "h": 285,
+          "src": "/_portal/shop-02bad5af-480.webp",
+          "bytes": 29214
+        },
+        {
+          "w": 960,
+          "h": 570,
+          "src": "/_portal/shop-02bad5af-960.webp",
+          "bytes": 76140
+        }
+      ]
+    },
+    "/restaurants/r05/r05-counter.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-6dc8fada-480.webp",
+          "bytes": 20680
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-6dc8fada-600.webp",
+          "bytes": 30780
+        }
+      ]
+    },
+    "/restaurants/r06/r06-hero.jpg": {
+      "width": 960,
+      "height": 624,
+      "items": [
+        {
+          "w": 480,
+          "h": 312,
+          "src": "/_portal/shop-41080dde-480.webp",
+          "bytes": 22470
+        },
+        {
+          "w": 960,
+          "h": 624,
+          "src": "/_portal/shop-41080dde-960.webp",
+          "bytes": 90614
+        }
+      ]
+    },
+    "/restaurants/r07/r07-storefront.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-9100b6ff-480.webp",
+          "bytes": 23878
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-9100b6ff-960.webp",
+          "bytes": 82470
+        }
+      ]
+    },
+    "/restaurants/r09/r09-hero.jpg": {
+      "width": 479,
+      "height": 480,
+      "items": [
+        {
+          "w": 479,
+          "h": 480,
+          "src": "/_portal/shop-58a2eac0-479.webp",
+          "bytes": 56926
+        }
+      ]
+    },
+    "/restaurants/r10/r10-hero.jpg": {
+      "width": 480,
+      "height": 360,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-9f3abc88-480.webp",
+          "bytes": 25056
+        }
+      ]
+    },
+    "/restaurants/r100/r100-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-96ca24e5-480.webp",
+          "bytes": 41906
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-96ca24e5-960.webp",
+          "bytes": 149654
+        }
+      ]
+    },
+    "/restaurants/r101/r101-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-cd09fcff-480.webp",
+          "bytes": 24972
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-cd09fcff-960.webp",
+          "bytes": 88334
+        }
+      ]
+    },
+    "/restaurants/r103/r103-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-3e491dc5-480.webp",
+          "bytes": 26240
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-3e491dc5-960.webp",
+          "bytes": 67350
+        }
+      ]
+    },
+    "/restaurants/r104/r104-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-ea5213ae-480.webp",
+          "bytes": 39868
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-ea5213ae-960.webp",
+          "bytes": 125588
+        }
+      ]
+    },
+    "/restaurants/r105/r105-01.jpg": {
+      "width": 960,
+      "height": 576,
+      "items": [
+        {
+          "w": 480,
+          "h": 288,
+          "src": "/_portal/shop-867529a6-480.webp",
+          "bytes": 23906
+        },
+        {
+          "w": 960,
+          "h": 576,
+          "src": "/_portal/shop-867529a6-960.webp",
+          "bytes": 69606
+        }
+      ]
+    },
+    "/restaurants/r106/r106-02.png": {
+      "width": 709,
+      "height": 1215,
+      "items": [
+        {
+          "w": 480,
+          "h": 823,
+          "src": "/_portal/shop-c05c9a09-480.webp",
+          "bytes": 40488
+        },
+        {
+          "w": 709,
+          "h": 1215,
+          "src": "/_portal/shop-c05c9a09-709.webp",
+          "bytes": 63640
+        }
+      ]
+    },
+    "/restaurants/r107/r107-02.jpg": {
+      "width": 960,
+      "height": 394,
+      "items": [
+        {
+          "w": 480,
+          "h": 197,
+          "src": "/_portal/shop-885d7e9a-480.webp",
+          "bytes": 8878
+        },
+        {
+          "w": 960,
+          "h": 394,
+          "src": "/_portal/shop-885d7e9a-960.webp",
+          "bytes": 30190
+        }
+      ]
+    },
+    "/restaurants/r108/r108-02.png": {
+      "width": 960,
+      "height": 440,
+      "items": [
+        {
+          "w": 480,
+          "h": 220,
+          "src": "/_portal/shop-7c978d65-480.webp",
+          "bytes": 23702
+        },
+        {
+          "w": 960,
+          "h": 440,
+          "src": "/_portal/shop-7c978d65-960.webp",
+          "bytes": 60548
+        }
+      ]
+    },
+    "/restaurants/r110/r110-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-60f5c317-480.webp",
+          "bytes": 17962
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-60f5c317-960.webp",
+          "bytes": 49330
+        }
+      ]
+    },
+    "/restaurants/r111/r111-01.jpg": {
+      "width": 960,
+      "height": 454,
+      "items": [
+        {
+          "w": 480,
+          "h": 227,
+          "src": "/_portal/shop-7d6cbffd-480.webp",
+          "bytes": 13322
+        },
+        {
+          "w": 960,
+          "h": 454,
+          "src": "/_portal/shop-7d6cbffd-960.webp",
+          "bytes": 37526
+        }
+      ]
+    },
+    "/restaurants/r112/r112-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-31b1bebb-480.webp",
+          "bytes": 21550
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-31b1bebb-960.webp",
+          "bytes": 54814
+        }
+      ]
+    },
+    "/restaurants/r113/r113-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-3cf52343-480.webp",
+          "bytes": 38358
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-3cf52343-960.webp",
+          "bytes": 154440
+        }
+      ]
+    },
+    "/restaurants/r115/r115-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-85bfa787-480.webp",
+          "bytes": 78562
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-85bfa787-960.webp",
+          "bytes": 201796
+        }
+      ]
+    },
+    "/restaurants/r116/r116-03.jpg": {
+      "width": 300,
+      "height": 400,
+      "items": [
+        {
+          "w": 300,
+          "h": 400,
+          "src": "/_portal/shop-52755a19-300.webp",
+          "bytes": 29560
+        }
+      ]
+    },
+    "/restaurants/r117/r117-01.png": {
+      "width": 600,
+      "height": 400,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-aa71801e-480.webp",
+          "bytes": 30512
+        },
+        {
+          "w": 600,
+          "h": 400,
+          "src": "/_portal/shop-aa71801e-600.webp",
+          "bytes": 41866
+        }
+      ]
+    },
+    "/restaurants/r118/r118-01.png": {
+      "width": 960,
+      "height": 504,
+      "items": [
+        {
+          "w": 480,
+          "h": 252,
+          "src": "/_portal/shop-0b88f019-480.webp",
+          "bytes": 16490
+        },
+        {
+          "w": 960,
+          "h": 504,
+          "src": "/_portal/shop-0b88f019-960.webp",
+          "bytes": 40306
+        }
+      ]
+    },
+    "/restaurants/r12/r12-hero.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-20c12dfd-480.webp",
+          "bytes": 25764
+        }
+      ]
+    },
+    "/restaurants/r120/r120-04.jpg": {
+      "width": 763,
+      "height": 543,
+      "items": [
+        {
+          "w": 480,
+          "h": 342,
+          "src": "/_portal/shop-5646f0ec-480.webp",
+          "bytes": 23124
+        },
+        {
+          "w": 763,
+          "h": 543,
+          "src": "/_portal/shop-5646f0ec-763.webp",
+          "bytes": 39708
+        }
+      ]
+    },
+    "/restaurants/r121/r121-03.jpg": {
+      "width": 960,
+      "height": 679,
+      "items": [
+        {
+          "w": 480,
+          "h": 340,
+          "src": "/_portal/shop-1ac8ec6f-480.webp",
+          "bytes": 9630
+        },
+        {
+          "w": 960,
+          "h": 679,
+          "src": "/_portal/shop-1ac8ec6f-960.webp",
+          "bytes": 25466
+        }
+      ]
+    },
+    "/restaurants/r123/r123-01.jpg": {
+      "width": 960,
+      "height": 721,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-08d8396a-480.webp",
+          "bytes": 21700
+        },
+        {
+          "w": 960,
+          "h": 721,
+          "src": "/_portal/shop-08d8396a-960.webp",
+          "bytes": 59244
+        }
+      ]
+    },
+    "/restaurants/r124/r124-01.jpg": {
+      "width": 960,
+      "height": 541,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-a2512859-480.webp",
+          "bytes": 21648
+        },
+        {
+          "w": 960,
+          "h": 541,
+          "src": "/_portal/shop-a2512859-960.webp",
+          "bytes": 64244
+        }
+      ]
+    },
+    "/restaurants/r125/r125-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-fb13e5d3-480.webp",
+          "bytes": 28824
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-fb13e5d3-960.webp",
+          "bytes": 79172
+        }
+      ]
+    },
+    "/restaurants/r126/r126-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-f03f908a-480.webp",
+          "bytes": 25278
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-f03f908a-960.webp",
+          "bytes": 75416
+        }
+      ]
+    },
+    "/restaurants/r127/r127-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-976e7210-480.webp",
+          "bytes": 34726
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-976e7210-960.webp",
+          "bytes": 122496
+        }
+      ]
+    },
+    "/restaurants/r128/r128-02.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-7af33f77-480.webp",
+          "bytes": 19572
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-7af33f77-960.webp",
+          "bytes": 57624
+        }
+      ]
+    },
+    "/restaurants/r129/r129-01.jpg": {
+      "width": 646,
+      "height": 648,
+      "items": [
+        {
+          "w": 480,
+          "h": 481,
+          "src": "/_portal/shop-f4c591f8-480.webp",
+          "bytes": 34242
+        },
+        {
+          "w": 646,
+          "h": 648,
+          "src": "/_portal/shop-f4c591f8-646.webp",
+          "bytes": 51286
+        }
+      ]
+    },
+    "/restaurants/r13/r13-image-1.jpg": {
+      "width": 480,
+      "height": 359,
+      "items": [
+        {
+          "w": 480,
+          "h": 359,
+          "src": "/_portal/shop-e2f17708-480.webp",
+          "bytes": 31912
+        }
+      ]
+    },
+    "/restaurants/r130/r130-0n6b.jpg": {
+      "width": 320,
+      "height": 320,
+      "items": [
+        {
+          "w": 320,
+          "h": 320,
+          "src": "/_portal/shop-22f9aabb-320.webp",
+          "bytes": 8844
+        }
+      ]
+    },
+    "/restaurants/r131/r131-01.jpg": {
+      "width": 960,
+      "height": 354,
+      "items": [
+        {
+          "w": 480,
+          "h": 177,
+          "src": "/_portal/shop-e26fba00-480.webp",
+          "bytes": 20046
+        },
+        {
+          "w": 960,
+          "h": 354,
+          "src": "/_portal/shop-e26fba00-960.webp",
+          "bytes": 60896
+        }
+      ]
+    },
+    "/restaurants/r132/r132-01.jpg": {
+      "width": 960,
+      "height": 706,
+      "items": [
+        {
+          "w": 480,
+          "h": 353,
+          "src": "/_portal/shop-396bf3e9-480.webp",
+          "bytes": 29126
+        },
+        {
+          "w": 960,
+          "h": 706,
+          "src": "/_portal/shop-396bf3e9-960.webp",
+          "bytes": 75888
+        }
+      ]
+    },
+    "/restaurants/r133/r133-01.jpg": {
+      "width": 960,
+      "height": 639,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-48d7f4d9-480.webp",
+          "bytes": 14962
+        },
+        {
+          "w": 960,
+          "h": 639,
+          "src": "/_portal/shop-48d7f4d9-960.webp",
+          "bytes": 38230
+        }
+      ]
+    },
+    "/restaurants/r134/r134-pg-1762484583009-4112.jpg": {
+      "width": 960,
+      "height": 563,
+      "items": [
+        {
+          "w": 480,
+          "h": 281,
+          "src": "/_portal/shop-696dd328-480.webp",
+          "bytes": 20326
+        },
+        {
+          "w": 960,
+          "h": 563,
+          "src": "/_portal/shop-696dd328-960.webp",
+          "bytes": 55320
+        }
+      ]
+    },
+    "/restaurants/r135/r135-g1.jpg": {
+      "width": 255,
+      "height": 154,
+      "items": [
+        {
+          "w": 255,
+          "h": 154,
+          "src": "/_portal/shop-dfc1847d-255.webp",
+          "bytes": 5894
+        }
+      ]
+    },
+    "/restaurants/r137/r137-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-d2d282b4-480.webp",
+          "bytes": 24246
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-d2d282b4-960.webp",
+          "bytes": 84678
+        }
+      ]
+    },
+    "/restaurants/r138/r138-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-f59a8289-480.webp",
+          "bytes": 59108
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-f59a8289-960.webp",
+          "bytes": 247000
+        }
+      ]
+    },
+    "/restaurants/r14/r14-image-1.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-3e77b48c-480.webp",
+          "bytes": 24604
+        }
+      ]
+    },
+    "/restaurants/r140/r140-01.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-e88b89e9-480.webp",
+          "bytes": 20878
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-e88b89e9-640.webp",
+          "bytes": 33004
+        }
+      ]
+    },
+    "/restaurants/r141/r141-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-4ecb51af-480.webp",
+          "bytes": 35230
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-4ecb51af-960.webp",
+          "bytes": 118522
+        }
+      ]
+    },
+    "/restaurants/r142/r142-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-0d41df59-480.webp",
+          "bytes": 30364
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-0d41df59-960.webp",
+          "bytes": 86826
+        }
+      ]
+    },
+    "/restaurants/r143/r143-gal_01.jpg": {
+      "width": 550,
+      "height": 800,
+      "items": [
+        {
+          "w": 480,
+          "h": 698,
+          "src": "/_portal/shop-17463ce3-480.webp",
+          "bytes": 86646
+        },
+        {
+          "w": 550,
+          "h": 800,
+          "src": "/_portal/shop-17463ce3-550.webp",
+          "bytes": 107220
+        }
+      ]
+    },
+    "/restaurants/r144/r144-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-8788386b-480.webp",
+          "bytes": 36504
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-8788386b-960.webp",
+          "bytes": 118038
+        }
+      ]
+    },
+    "/restaurants/r145/r145-01.jpg": {
+      "width": 599,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 481,
+          "src": "/_portal/shop-ed4ef5de-480.webp",
+          "bytes": 20552
+        },
+        {
+          "w": 599,
+          "h": 600,
+          "src": "/_portal/shop-ed4ef5de-599.webp",
+          "bytes": 30096
+        }
+      ]
+    },
+    "/restaurants/r146/r146-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-375ae9f9-480.webp",
+          "bytes": 47948
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-375ae9f9-960.webp",
+          "bytes": 155394
+        }
+      ]
+    },
+    "/restaurants/r147/r147-0n5h.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-1df3a5b8-480.webp",
+          "bytes": 26796
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-1df3a5b8-960.webp",
+          "bytes": 61512
+        }
+      ]
+    },
+    "/restaurants/r148/r148-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-1b01fa81-480.webp",
+          "bytes": 32038
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-1b01fa81-960.webp",
+          "bytes": 102116
+        }
+      ]
+    },
+    "/restaurants/r149/r149-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-46289b61-480.webp",
+          "bytes": 20338
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-46289b61-960.webp",
+          "bytes": 53456
+        }
+      ]
+    },
+    "/restaurants/r15/r15-image-1.jpg": {
+      "width": 475,
+      "height": 480,
+      "items": [
+        {
+          "w": 475,
+          "h": 480,
+          "src": "/_portal/shop-17e132d6-475.webp",
+          "bytes": 42954
+        }
+      ]
+    },
+    "/restaurants/r150/r150-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-e01d2623-480.webp",
+          "bytes": 26218
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-e01d2623-960.webp",
+          "bytes": 94548
+        }
+      ]
+    },
+    "/restaurants/r151/r151-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-0f1a2321-480.webp",
+          "bytes": 10692
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-0f1a2321-960.webp",
+          "bytes": 28624
+        }
+      ]
+    },
+    "/restaurants/r152/r152-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-b222d06a-480.webp",
+          "bytes": 28338
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-b222d06a-960.webp",
+          "bytes": 88398
+        }
+      ]
+    },
+    "/restaurants/r153/r153-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-c3a30c0e-480.webp",
+          "bytes": 10608
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-c3a30c0e-960.webp",
+          "bytes": 31146
+        }
+      ]
+    },
+    "/restaurants/r154/r154-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-badc245e-480.webp",
+          "bytes": 23326
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-badc245e-960.webp",
+          "bytes": 68348
+        }
+      ]
+    },
+    "/restaurants/r155/r155-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-bcb9bb9b-480.webp",
+          "bytes": 26068
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-bcb9bb9b-960.webp",
+          "bytes": 68252
+        }
+      ]
+    },
+    "/restaurants/r156/r156-01.jpg": {
+      "width": 960,
+      "height": 1166,
+      "items": [
+        {
+          "w": 480,
+          "h": 583,
+          "src": "/_portal/shop-2dbfb2fe-480.webp",
+          "bytes": 36302
+        },
+        {
+          "w": 960,
+          "h": 1166,
+          "src": "/_portal/shop-2dbfb2fe-960.webp",
+          "bytes": 128832
+        }
+      ]
+    },
+    "/restaurants/r157/r157-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-6cf96e99-480.webp",
+          "bytes": 47776
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-6cf96e99-960.webp",
+          "bytes": 137314
+        }
+      ]
+    },
+    "/restaurants/r158/r158-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-2289bde9-480.webp",
+          "bytes": 20132
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-2289bde9-960.webp",
+          "bytes": 55282
+        }
+      ]
+    },
+    "/restaurants/r159/r159-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-0eb0d239-480.webp",
+          "bytes": 16746
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-0eb0d239-960.webp",
+          "bytes": 51378
+        }
+      ]
+    },
+    "/restaurants/r16/r16-01.webp": {
+      "width": 860,
+      "height": 483,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-af2acd2d-480.webp",
+          "bytes": 12906
+        },
+        {
+          "w": 860,
+          "h": 483,
+          "src": "/_portal/shop-af2acd2d-860.webp",
+          "bytes": 28028
+        }
+      ]
+    },
+    "/restaurants/r160/r160-01.jpg": {
+      "width": 300,
+      "height": 300,
+      "items": [
+        {
+          "w": 300,
+          "h": 300,
+          "src": "/_portal/shop-5cc42f56-300.webp",
+          "bytes": 19148
+        }
+      ]
+    },
+    "/restaurants/r161/r161-02.png": {
+      "width": 960,
+      "height": 860,
+      "items": [
+        {
+          "w": 480,
+          "h": 430,
+          "src": "/_portal/shop-0c9052e4-480.webp",
+          "bytes": 34680
+        },
+        {
+          "w": 960,
+          "h": 860,
+          "src": "/_portal/shop-0c9052e4-960.webp",
+          "bytes": 78610
+        }
+      ]
+    },
+    "/restaurants/r162/r162-01.webp": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-cc9088e1-480.webp",
+          "bytes": 18254
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-cc9088e1-960.webp",
+          "bytes": 48394
+        }
+      ]
+    },
+    "/restaurants/r163/r163-01.jpg": {
+      "width": 960,
+      "height": 726,
+      "items": [
+        {
+          "w": 480,
+          "h": 363,
+          "src": "/_portal/shop-2a1b6275-480.webp",
+          "bytes": 24894
+        },
+        {
+          "w": 960,
+          "h": 726,
+          "src": "/_portal/shop-2a1b6275-960.webp",
+          "bytes": 83094
+        }
+      ]
+    },
+    "/restaurants/r164/r164-02.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-e329365b-480.webp",
+          "bytes": 56198
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-e329365b-960.webp",
+          "bytes": 192698
+        }
+      ]
+    },
+    "/restaurants/r165/r165-02.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-7f8f55b7-480.webp",
+          "bytes": 6740
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-7f8f55b7-960.webp",
+          "bytes": 18854
+        }
+      ]
+    },
+    "/restaurants/r166/r166-01.jpg": {
+      "width": 375,
+      "height": 300,
+      "items": [
+        {
+          "w": 375,
+          "h": 300,
+          "src": "/_portal/shop-b3578028-375.webp",
+          "bytes": 14274
+        }
+      ]
+    },
+    "/restaurants/r167/r167-01.jpg": {
+      "width": 680,
+      "height": 453,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-3fc9fef5-480.webp",
+          "bytes": 14530
+        },
+        {
+          "w": 680,
+          "h": 453,
+          "src": "/_portal/shop-3fc9fef5-680.webp",
+          "bytes": 25924
+        }
+      ]
+    },
+    "/restaurants/r168/r168-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-b709df70-480.webp",
+          "bytes": 18080
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-b709df70-960.webp",
+          "bytes": 48270
+        }
+      ]
+    },
+    "/restaurants/r169/r169-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-7a06c5f5-480.webp",
+          "bytes": 35848
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-7a06c5f5-960.webp",
+          "bytes": 127436
+        }
+      ]
+    },
+    "/restaurants/r17/r17-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-912dad28-480.webp",
+          "bytes": 43748
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-912dad28-960.webp",
+          "bytes": 150556
+        }
+      ]
+    },
+    "/restaurants/r170/r170-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-4b3ced50-480.webp",
+          "bytes": 24798
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-4b3ced50-960.webp",
+          "bytes": 79178
+        }
+      ]
+    },
+    "/restaurants/r171/r171-01.jpg": {
+      "width": 960,
+      "height": 1201,
+      "items": [
+        {
+          "w": 480,
+          "h": 600,
+          "src": "/_portal/shop-673311fd-480.webp",
+          "bytes": 39544
+        },
+        {
+          "w": 960,
+          "h": 1201,
+          "src": "/_portal/shop-673311fd-960.webp",
+          "bytes": 113362
+        }
+      ]
+    },
+    "/restaurants/r172/r172-01.jpg": {
+      "width": 960,
+      "height": 512,
+      "items": [
+        {
+          "w": 480,
+          "h": 256,
+          "src": "/_portal/shop-4f63370c-480.webp",
+          "bytes": 15130
+        },
+        {
+          "w": 960,
+          "h": 512,
+          "src": "/_portal/shop-4f63370c-960.webp",
+          "bytes": 42886
+        }
+      ]
+    },
+    "/restaurants/r173/r173-01.jpg": {
+      "width": 550,
+      "height": 550,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-9a7032bb-480.webp",
+          "bytes": 40556
+        },
+        {
+          "w": 550,
+          "h": 550,
+          "src": "/_portal/shop-9a7032bb-550.webp",
+          "bytes": 50782
+        }
+      ]
+    },
+    "/restaurants/r174/r174-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-d203009f-480.webp",
+          "bytes": 22630
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-d203009f-960.webp",
+          "bytes": 67874
+        }
+      ]
+    },
+    "/restaurants/r175/r175-01.jpg": {
+      "width": 960,
+      "height": 561,
+      "items": [
+        {
+          "w": 480,
+          "h": 281,
+          "src": "/_portal/shop-f20cee77-480.webp",
+          "bytes": 29282
+        },
+        {
+          "w": 960,
+          "h": 561,
+          "src": "/_portal/shop-f20cee77-960.webp",
+          "bytes": 94704
+        }
+      ]
+    },
+    "/restaurants/r176/r176-01.jpg": {
+      "width": 960,
+      "height": 721,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-29c258a4-480.webp",
+          "bytes": 20912
+        },
+        {
+          "w": 960,
+          "h": 721,
+          "src": "/_portal/shop-29c258a4-960.webp",
+          "bytes": 70096
+        }
+      ]
+    },
+    "/restaurants/r177/r177-01.jpg": {
+      "width": 960,
+      "height": 539,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-fc26a0d4-480.webp",
+          "bytes": 30192
+        },
+        {
+          "w": 960,
+          "h": 539,
+          "src": "/_portal/shop-fc26a0d4-960.webp",
+          "bytes": 108002
+        }
+      ]
+    },
+    "/restaurants/r178/r178-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-45a6c768-480.webp",
+          "bytes": 54846
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-45a6c768-960.webp",
+          "bytes": 194292
+        }
+      ]
+    },
+    "/restaurants/r179/r179-01.jpg": {
+      "width": 348,
+      "height": 278,
+      "items": [
+        {
+          "w": 348,
+          "h": 278,
+          "src": "/_portal/shop-61ec6c08-348.webp",
+          "bytes": 11412
+        }
+      ]
+    },
+    "/restaurants/r18/r18-image-1.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-fcf0a027-480.webp",
+          "bytes": 64976
+        }
+      ]
+    },
+    "/restaurants/r180/r180-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-fb3795c1-480.webp",
+          "bytes": 21480
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-fb3795c1-960.webp",
+          "bytes": 52386
+        }
+      ]
+    },
+    "/restaurants/r181/r181-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-abc8b4bc-480.webp",
+          "bytes": 24960
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-abc8b4bc-960.webp",
+          "bytes": 76830
+        }
+      ]
+    },
+    "/restaurants/r182/r182-01.jpg": {
+      "width": 800,
+      "height": 533,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-5bb12238-480.webp",
+          "bytes": 15314
+        },
+        {
+          "w": 800,
+          "h": 533,
+          "src": "/_portal/shop-5bb12238-800.webp",
+          "bytes": 30436
+        }
+      ]
+    },
+    "/restaurants/r183/r183-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-be0a0d20-480.webp",
+          "bytes": 35744
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-be0a0d20-960.webp",
+          "bytes": 105866
+        }
+      ]
+    },
+    "/restaurants/r184/r184-01.jpg": {
+      "width": 900,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 384,
+          "src": "/_portal/shop-4148dc87-480.webp",
+          "bytes": 11930
+        },
+        {
+          "w": 900,
+          "h": 720,
+          "src": "/_portal/shop-4148dc87-900.webp",
+          "bytes": 38478
+        }
+      ]
+    },
+    "/restaurants/r185/r185-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-4b80e0e1-480.webp",
+          "bytes": 24122
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-4b80e0e1-960.webp",
+          "bytes": 73042
+        }
+      ]
+    },
+    "/restaurants/r186/r186-01.jpg": {
+      "width": 500,
+      "height": 500,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-10e5c7bb-480.webp",
+          "bytes": 33328
+        },
+        {
+          "w": 500,
+          "h": 500,
+          "src": "/_portal/shop-10e5c7bb-500.webp",
+          "bytes": 37032
+        }
+      ]
+    },
+    "/restaurants/r187/r187-01.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-8c50c808-480.webp",
+          "bytes": 23354
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-8c50c808-600.webp",
+          "bytes": 37794
+        }
+      ]
+    },
+    "/restaurants/r188/r188-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-f8214d91-480.webp",
+          "bytes": 24282
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-f8214d91-960.webp",
+          "bytes": 80736
+        }
+      ]
+    },
+    "/restaurants/r189/r189-04.jpg": {
+      "width": 248,
+      "height": 248,
+      "items": [
+        {
+          "w": 248,
+          "h": 248,
+          "src": "/_portal/shop-23f9c2f4-248.webp",
+          "bytes": 7510
+        }
+      ]
+    },
+    "/restaurants/r19/r19-image-1.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-895d195a-480.webp",
+          "bytes": 52504
+        }
+      ]
+    },
+    "/restaurants/r190/r190-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-6fab8c44-480.webp",
+          "bytes": 21440
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-6fab8c44-960.webp",
+          "bytes": 81970
+        }
+      ]
+    },
+    "/restaurants/r191/r191-01.jpg": {
+      "width": 960,
+      "height": 538,
+      "items": [
+        {
+          "w": 480,
+          "h": 269,
+          "src": "/_portal/shop-350dfd01-480.webp",
+          "bytes": 10024
+        },
+        {
+          "w": 960,
+          "h": 538,
+          "src": "/_portal/shop-350dfd01-960.webp",
+          "bytes": 23236
+        }
+      ]
+    },
+    "/restaurants/r192/r192-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-6c2cddfc-480.webp",
+          "bytes": 13702
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-6c2cddfc-960.webp",
+          "bytes": 35882
+        }
+      ]
+    },
+    "/restaurants/r193/r193-01.jpg": {
+      "width": 960,
+      "height": 742,
+      "items": [
+        {
+          "w": 480,
+          "h": 370,
+          "src": "/_portal/shop-2b748032-480.webp",
+          "bytes": 23494
+        },
+        {
+          "w": 960,
+          "h": 742,
+          "src": "/_portal/shop-2b748032-960.webp",
+          "bytes": 66094
+        }
+      ]
+    },
+    "/restaurants/r194/r194-02.png": {
+      "width": 453,
+      "height": 315,
+      "items": [
+        {
+          "w": 453,
+          "h": 315,
+          "src": "/_portal/shop-e0a2b798-453.webp",
+          "bytes": 29166
+        }
+      ]
+    },
+    "/restaurants/r195/r195-01.jpg": {
+      "width": 960,
+      "height": 635,
+      "items": [
+        {
+          "w": 480,
+          "h": 318,
+          "src": "/_portal/shop-a7cd05b4-480.webp",
+          "bytes": 25300
+        },
+        {
+          "w": 960,
+          "h": 635,
+          "src": "/_portal/shop-a7cd05b4-960.webp",
+          "bytes": 79912
+        }
+      ]
+    },
+    "/restaurants/r196/r196-01.jpg": {
+      "width": 640,
+      "height": 962,
+      "items": [
+        {
+          "w": 480,
+          "h": 722,
+          "src": "/_portal/shop-9406e61b-480.webp",
+          "bytes": 14934
+        },
+        {
+          "w": 640,
+          "h": 962,
+          "src": "/_portal/shop-9406e61b-640.webp",
+          "bytes": 21852
+        }
+      ]
+    },
+    "/restaurants/r197/r197-01.jpg": {
+      "width": 960,
+      "height": 1440,
+      "items": [
+        {
+          "w": 480,
+          "h": 720,
+          "src": "/_portal/shop-6d2658a1-480.webp",
+          "bytes": 55126
+        },
+        {
+          "w": 960,
+          "h": 1440,
+          "src": "/_portal/shop-6d2658a1-960.webp",
+          "bytes": 164402
+        }
+      ]
+    },
+    "/restaurants/r198/r198-02.png": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-bdb39934-480.webp",
+          "bytes": 30868
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-bdb39934-960.webp",
+          "bytes": 78120
+        }
+      ]
+    },
+    "/restaurants/r199/r199-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-431476e6-480.webp",
+          "bytes": 13074
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-431476e6-960.webp",
+          "bytes": 36194
+        }
+      ]
+    },
+    "/restaurants/r20/r20-image-2.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-e6e2c47f-480.webp",
+          "bytes": 31786
+        }
+      ]
+    },
+    "/restaurants/r200/r200-01.jpg": {
+      "width": 960,
+      "height": 296,
+      "items": [
+        {
+          "w": 480,
+          "h": 148,
+          "src": "/_portal/shop-883c1eba-480.webp",
+          "bytes": 11170
+        },
+        {
+          "w": 960,
+          "h": 296,
+          "src": "/_portal/shop-883c1eba-960.webp",
+          "bytes": 34440
+        }
+      ]
+    },
+    "/restaurants/r201/r201-01.jpg": {
+      "width": 249,
+      "height": 166,
+      "items": [
+        {
+          "w": 249,
+          "h": 166,
+          "src": "/_portal/shop-a979d622-249.webp",
+          "bytes": 9394
+        }
+      ]
+    },
+    "/restaurants/r202/r202-01.jpg": {
+      "width": 335,
+      "height": 503,
+      "items": [
+        {
+          "w": 335,
+          "h": 503,
+          "src": "/_portal/shop-8a28d1a6-335.webp",
+          "bytes": 43036
+        }
+      ]
+    },
+    "/restaurants/r203/r203-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-1de7bbdb-480.webp",
+          "bytes": 20488
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-1de7bbdb-960.webp",
+          "bytes": 47934
+        }
+      ]
+    },
+    "/restaurants/r204/r204-01.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-3ad6d586-480.webp",
+          "bytes": 10724
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-3ad6d586-600.webp",
+          "bytes": 16000
+        }
+      ]
+    },
+    "/restaurants/r205/r205-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-aff2a2a6-480.webp",
+          "bytes": 38368
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-aff2a2a6-960.webp",
+          "bytes": 133504
+        }
+      ]
+    },
+    "/restaurants/r206/r206-01.jpg": {
+      "width": 500,
+      "height": 500,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-462685c9-480.webp",
+          "bytes": 34866
+        },
+        {
+          "w": 500,
+          "h": 500,
+          "src": "/_portal/shop-462685c9-500.webp",
+          "bytes": 38046
+        }
+      ]
+    },
+    "/restaurants/r207/r207-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-b1bed742-480.webp",
+          "bytes": 55432
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-b1bed742-960.webp",
+          "bytes": 202934
+        }
+      ]
+    },
+    "/restaurants/r208/r208-01.jpg": {
+      "width": 960,
+      "height": 565,
+      "items": [
+        {
+          "w": 480,
+          "h": 282,
+          "src": "/_portal/shop-ea75c8a1-480.webp",
+          "bytes": 15538
+        },
+        {
+          "w": 960,
+          "h": 565,
+          "src": "/_portal/shop-ea75c8a1-960.webp",
+          "bytes": 37482
+        }
+      ]
+    },
+    "/restaurants/r209/r209-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-e164a1cc-480.webp",
+          "bytes": 41554
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-e164a1cc-960.webp",
+          "bytes": 156586
+        }
+      ]
+    },
+    "/restaurants/r21/r21-image-1.jpg": {
+      "width": 374,
+      "height": 467,
+      "items": [
+        {
+          "w": 374,
+          "h": 467,
+          "src": "/_portal/shop-7876e729-374.webp",
+          "bytes": 9448
+        }
+      ]
+    },
+    "/restaurants/r210/r210-01.png": {
+      "width": 560,
+      "height": 560,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-a43e86eb-480.webp",
+          "bytes": 12482
+        },
+        {
+          "w": 560,
+          "h": 560,
+          "src": "/_portal/shop-a43e86eb-560.webp",
+          "bytes": 14794
+        }
+      ]
+    },
+    "/restaurants/r211/r211-01.jpg": {
+      "width": 670,
+      "height": 930,
+      "items": [
+        {
+          "w": 480,
+          "h": 666,
+          "src": "/_portal/shop-29cc7372-480.webp",
+          "bytes": 24900
+        },
+        {
+          "w": 670,
+          "h": 930,
+          "src": "/_portal/shop-29cc7372-670.webp",
+          "bytes": 41048
+        }
+      ]
+    },
+    "/restaurants/r212/r212-01.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-8c77239f-480.webp",
+          "bytes": 42810
+        }
+      ]
+    },
+    "/restaurants/r213/r213-02.jpg": {
+      "width": 480,
+      "height": 360,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-e3cd550f-480.webp",
+          "bytes": 38900
+        }
+      ]
+    },
+    "/restaurants/r214/r214-01.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-a9b177d4-480.webp",
+          "bytes": 50366
+        }
+      ]
+    },
+    "/restaurants/r215/r215-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-0f05862c-480.webp",
+          "bytes": 27506
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-0f05862c-960.webp",
+          "bytes": 85860
+        }
+      ]
+    },
+    "/restaurants/r216/r216-01.jpg": {
+      "width": 480,
+      "height": 360,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-a447ad04-480.webp",
+          "bytes": 34942
+        }
+      ]
+    },
+    "/restaurants/r217/r217-01.jpg": {
+      "width": 960,
+      "height": 1266,
+      "items": [
+        {
+          "w": 480,
+          "h": 633,
+          "src": "/_portal/shop-d9156211-480.webp",
+          "bytes": 72342
+        },
+        {
+          "w": 960,
+          "h": 1266,
+          "src": "/_portal/shop-d9156211-960.webp",
+          "bytes": 172308
+        }
+      ]
+    },
+    "/restaurants/r218/r218-01.jpg": {
+      "width": 450,
+      "height": 337,
+      "items": [
+        {
+          "w": 450,
+          "h": 337,
+          "src": "/_portal/shop-ea44de46-450.webp",
+          "bytes": 28500
+        }
+      ]
+    },
+    "/restaurants/r22/r22-image-1.jpg": {
+      "width": 960,
+      "height": 619,
+      "items": [
+        {
+          "w": 480,
+          "h": 310,
+          "src": "/_portal/shop-eb52cf54-480.webp",
+          "bytes": 17392
+        },
+        {
+          "w": 960,
+          "h": 619,
+          "src": "/_portal/shop-eb52cf54-960.webp",
+          "bytes": 49274
+        }
+      ]
+    },
+    "/restaurants/r220/r220-01.jpg": {
+      "width": 480,
+      "height": 360,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-80ac4d7d-480.webp",
+          "bytes": 28182
+        }
+      ]
+    },
+    "/restaurants/r221/r221-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-ca0e631e-480.webp",
+          "bytes": 25504
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-ca0e631e-960.webp",
+          "bytes": 71752
+        }
+      ]
+    },
+    "/restaurants/r222/r222-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-a7cec52f-480.webp",
+          "bytes": 62400
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-a7cec52f-960.webp",
+          "bytes": 194712
+        }
+      ]
+    },
+    "/restaurants/r223/r223-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-c72a0501-480.webp",
+          "bytes": 25762
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-c72a0501-960.webp",
+          "bytes": 104870
+        }
+      ]
+    },
+    "/restaurants/r225/r225-01.jpg": {
+      "width": 960,
+      "height": 1089,
+      "items": [
+        {
+          "w": 480,
+          "h": 544,
+          "src": "/_portal/shop-82cf48d9-480.webp",
+          "bytes": 45908
+        },
+        {
+          "w": 960,
+          "h": 1089,
+          "src": "/_portal/shop-82cf48d9-960.webp",
+          "bytes": 147734
+        }
+      ]
+    },
+    "/restaurants/r226/r226-01.jpg": {
+      "width": 960,
+      "height": 958,
+      "items": [
+        {
+          "w": 480,
+          "h": 479,
+          "src": "/_portal/shop-8e7ffe50-480.webp",
+          "bytes": 53224
+        },
+        {
+          "w": 960,
+          "h": 958,
+          "src": "/_portal/shop-8e7ffe50-960.webp",
+          "bytes": 167408
+        }
+      ]
+    },
+    "/restaurants/r227/r227-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-82bdfa75-480.webp",
+          "bytes": 19532
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-82bdfa75-960.webp",
+          "bytes": 51606
+        }
+      ]
+    },
+    "/restaurants/r228/r228-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-af0d9c6b-480.webp",
+          "bytes": 18222
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-af0d9c6b-960.webp",
+          "bytes": 47468
+        }
+      ]
+    },
+    "/restaurants/r229/r229-01.jpg": {
+      "width": 960,
+      "height": 1436,
+      "items": [
+        {
+          "w": 480,
+          "h": 718,
+          "src": "/_portal/shop-da378315-480.webp",
+          "bytes": 10860
+        },
+        {
+          "w": 960,
+          "h": 1436,
+          "src": "/_portal/shop-da378315-960.webp",
+          "bytes": 27140
+        }
+      ]
+    },
+    "/restaurants/r23/r23-image-1.jpg": {
+      "width": 960,
+      "height": 514,
+      "items": [
+        {
+          "w": 480,
+          "h": 257,
+          "src": "/_portal/shop-8bd84218-480.webp",
+          "bytes": 7948
+        },
+        {
+          "w": 960,
+          "h": 514,
+          "src": "/_portal/shop-8bd84218-960.webp",
+          "bytes": 17958
+        }
+      ]
+    },
+    "/restaurants/r230/r230-01.jpg": {
+      "width": 960,
+      "height": 541,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-f4d8ae35-480.webp",
+          "bytes": 25842
+        },
+        {
+          "w": 960,
+          "h": 541,
+          "src": "/_portal/shop-f4d8ae35-960.webp",
+          "bytes": 74826
+        }
+      ]
+    },
+    "/restaurants/r231/r231-01.jpg": {
+      "width": 480,
+      "height": 360,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-8230ea4c-480.webp",
+          "bytes": 36858
+        }
+      ]
+    },
+    "/restaurants/r232/r232-01.jpg": {
+      "width": 566,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 509,
+          "src": "/_portal/shop-04e263ec-480.webp",
+          "bytes": 31020
+        },
+        {
+          "w": 566,
+          "h": 600,
+          "src": "/_portal/shop-04e263ec-566.webp",
+          "bytes": 38308
+        }
+      ]
+    },
+    "/restaurants/r233/r233-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-a34efb58-480.webp",
+          "bytes": 31520
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-a34efb58-960.webp",
+          "bytes": 106682
+        }
+      ]
+    },
+    "/restaurants/r234/r234-02.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-ba4065c0-480.webp",
+          "bytes": 34744
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-ba4065c0-960.webp",
+          "bytes": 113122
+        }
+      ]
+    },
+    "/restaurants/r235/r235-01.jpg": {
+      "width": 328,
+      "height": 328,
+      "items": [
+        {
+          "w": 328,
+          "h": 328,
+          "src": "/_portal/shop-0cd1e991-328.webp",
+          "bytes": 18368
+        }
+      ]
+    },
+    "/restaurants/r236/r236-01.jpg": {
+      "width": 391,
+      "height": 480,
+      "items": [
+        {
+          "w": 391,
+          "h": 480,
+          "src": "/_portal/shop-96961a6e-391.webp",
+          "bytes": 33836
+        }
+      ]
+    },
+    "/restaurants/r237/r237-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-db41edb7-480.webp",
+          "bytes": 53136
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-db41edb7-960.webp",
+          "bytes": 222962
+        }
+      ]
+    },
+    "/restaurants/r239/r239-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-d2303671-480.webp",
+          "bytes": 40044
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-d2303671-960.webp",
+          "bytes": 122488
+        }
+      ]
+    },
+    "/restaurants/r24/r24-image-1.jpg": {
+      "width": 349,
+      "height": 480,
+      "items": [
+        {
+          "w": 349,
+          "h": 480,
+          "src": "/_portal/shop-c6e54cf7-349.webp",
+          "bytes": 16384
+        }
+      ]
+    },
+    "/restaurants/r240/r240-01.png": {
+      "width": 960,
+      "height": 862,
+      "items": [
+        {
+          "w": 480,
+          "h": 431,
+          "src": "/_portal/shop-8981fc1f-480.webp",
+          "bytes": 49008
+        },
+        {
+          "w": 960,
+          "h": 862,
+          "src": "/_portal/shop-8981fc1f-960.webp",
+          "bytes": 165276
+        }
+      ]
+    },
+    "/restaurants/r25/r25-image-1.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-a7011bbf-480.webp",
+          "bytes": 49236
+        }
+      ]
+    },
+    "/restaurants/r27/r27-image-1.jpg": {
+      "width": 400,
+      "height": 300,
+      "items": [
+        {
+          "w": 400,
+          "h": 300,
+          "src": "/_portal/shop-ac7a6313-400.webp",
+          "bytes": 17698
+        }
+      ]
+    },
+    "/restaurants/r28/r28-image-1.jpg": {
+      "width": 960,
+      "height": 641,
+      "items": [
+        {
+          "w": 480,
+          "h": 321,
+          "src": "/_portal/shop-1decf00b-480.webp",
+          "bytes": 13494
+        },
+        {
+          "w": 960,
+          "h": 641,
+          "src": "/_portal/shop-1decf00b-960.webp",
+          "bytes": 30688
+        }
+      ]
+    },
+    "/restaurants/r30/r30-image-1.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-37700e6e-480.webp",
+          "bytes": 30736
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-37700e6e-640.webp",
+          "bytes": 45128
+        }
+      ]
+    },
+    "/restaurants/r31/r31-image-2.jpg": {
+      "width": 670,
+      "height": 533,
+      "items": [
+        {
+          "w": 480,
+          "h": 382,
+          "src": "/_portal/shop-f252fb6d-480.webp",
+          "bytes": 33394
+        },
+        {
+          "w": 670,
+          "h": 533,
+          "src": "/_portal/shop-f252fb6d-670.webp",
+          "bytes": 54452
+        }
+      ]
+    },
+    "/restaurants/r32/r32-image-1.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-9d41917f-480.webp",
+          "bytes": 16144
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-9d41917f-960.webp",
+          "bytes": 47554
+        }
+      ]
+    },
+    "/restaurants/r33/r33-image-1.jpg": {
+      "width": 930,
+      "height": 820,
+      "items": [
+        {
+          "w": 480,
+          "h": 423,
+          "src": "/_portal/shop-4f5722f7-480.webp",
+          "bytes": 33288
+        },
+        {
+          "w": 930,
+          "h": 820,
+          "src": "/_portal/shop-4f5722f7-930.webp",
+          "bytes": 86878
+        }
+      ]
+    },
+    "/restaurants/r34/r34-image-1.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-f0f95047-480.webp",
+          "bytes": 22666
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-f0f95047-960.webp",
+          "bytes": 63526
+        }
+      ]
+    },
+    "/restaurants/r35/r35-image-1.png": {
+      "width": 960,
+      "height": 675,
+      "items": [
+        {
+          "w": 480,
+          "h": 337,
+          "src": "/_portal/shop-82c3acd5-480.webp",
+          "bytes": 26078
+        },
+        {
+          "w": 960,
+          "h": 675,
+          "src": "/_portal/shop-82c3acd5-960.webp",
+          "bytes": 70630
+        }
+      ]
+    },
+    "/restaurants/r36/r36-image-1.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-c372aa84-480.webp",
+          "bytes": 45200
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-c372aa84-640.webp",
+          "bytes": 66772
+        }
+      ]
+    },
+    "/restaurants/r37/r37-image-1.jpg": {
+      "width": 640,
+      "height": 446,
+      "items": [
+        {
+          "w": 480,
+          "h": 335,
+          "src": "/_portal/shop-fb2aac74-480.webp",
+          "bytes": 29998
+        },
+        {
+          "w": 640,
+          "h": 446,
+          "src": "/_portal/shop-fb2aac74-640.webp",
+          "bytes": 47972
+        }
+      ]
+    },
+    "/restaurants/r38/r38-image-1.jpg": {
+      "width": 453,
+      "height": 640,
+      "items": [
+        {
+          "w": 453,
+          "h": 640,
+          "src": "/_portal/shop-84e03eff-453.webp",
+          "bytes": 12216
+        }
+      ]
+    },
+    "/restaurants/r39/r39-image-1.jpg": {
+      "width": 609,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 504,
+          "src": "/_portal/shop-9bd89f8e-480.webp",
+          "bytes": 26958
+        },
+        {
+          "w": 609,
+          "h": 640,
+          "src": "/_portal/shop-9bd89f8e-609.webp",
+          "bytes": 42056
+        }
+      ]
+    },
+    "/restaurants/r40/r40-image-1.jpg": {
+      "width": 453,
+      "height": 640,
+      "items": [
+        {
+          "w": 453,
+          "h": 640,
+          "src": "/_portal/shop-30b05831-453.webp",
+          "bytes": 28332
+        }
+      ]
+    },
+    "/restaurants/r41/r41-image-1.jpg": {
+      "width": 400,
+      "height": 400,
+      "items": [
+        {
+          "w": 400,
+          "h": 400,
+          "src": "/_portal/shop-030565d7-400.webp",
+          "bytes": 27590
+        }
+      ]
+    },
+    "/restaurants/r42/r42-image-1.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-112e9d29-480.webp",
+          "bytes": 31206
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-112e9d29-640.webp",
+          "bytes": 47516
+        }
+      ]
+    },
+    "/restaurants/r43/r43-image-1.jpg": {
+      "width": 640,
+      "height": 594,
+      "items": [
+        {
+          "w": 480,
+          "h": 446,
+          "src": "/_portal/shop-7b58437f-480.webp",
+          "bytes": 44244
+        },
+        {
+          "w": 640,
+          "h": 594,
+          "src": "/_portal/shop-7b58437f-640.webp",
+          "bytes": 68566
+        }
+      ]
+    },
+    "/restaurants/r44/r44-image-1.jpg": {
+      "width": 640,
+      "height": 635,
+      "items": [
+        {
+          "w": 480,
+          "h": 476,
+          "src": "/_portal/shop-5b4134e8-480.webp",
+          "bytes": 32198
+        },
+        {
+          "w": 640,
+          "h": 635,
+          "src": "/_portal/shop-5b4134e8-640.webp",
+          "bytes": 48174
+        }
+      ]
+    },
+    "/restaurants/r45/r45-image-1.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-c9076acd-480.webp",
+          "bytes": 20898
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-c9076acd-640.webp",
+          "bytes": 32302
+        }
+      ]
+    },
+    "/restaurants/r46/r46-image-1.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-ad3e3637-480.webp",
+          "bytes": 31872
+        }
+      ]
+    },
+    "/restaurants/r47/r47-image-1.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-7f328967-480.webp",
+          "bytes": 27978
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-7f328967-640.webp",
+          "bytes": 39098
+        }
+      ]
+    },
+    "/restaurants/r48/r48-image-1.jpg": {
+      "width": 640,
+      "height": 359,
+      "items": [
+        {
+          "w": 480,
+          "h": 269,
+          "src": "/_portal/shop-9276ddae-480.webp",
+          "bytes": 20764
+        },
+        {
+          "w": 640,
+          "h": 359,
+          "src": "/_portal/shop-9276ddae-640.webp",
+          "bytes": 35682
+        }
+      ]
+    },
+    "/restaurants/r49/r49-image-1.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-741ec210-480.webp",
+          "bytes": 27868
+        }
+      ]
+    },
+    "/restaurants/r50/r50-image-1.jpg": {
+      "width": 640,
+      "height": 359,
+      "items": [
+        {
+          "w": 480,
+          "h": 269,
+          "src": "/_portal/shop-2fb4e443-480.webp",
+          "bytes": 16482
+        },
+        {
+          "w": 640,
+          "h": 359,
+          "src": "/_portal/shop-2fb4e443-640.webp",
+          "bytes": 24950
+        }
+      ]
+    },
+    "/restaurants/r51/r51-image-1.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-58c21b8d-480.webp",
+          "bytes": 26942
+        }
+      ]
+    },
+    "/restaurants/r52/r52-image-2.jpg": {
+      "width": 640,
+      "height": 639,
+      "items": [
+        {
+          "w": 480,
+          "h": 479,
+          "src": "/_portal/shop-55c1183c-480.webp",
+          "bytes": 21410
+        },
+        {
+          "w": 640,
+          "h": 639,
+          "src": "/_portal/shop-55c1183c-640.webp",
+          "bytes": 33552
+        }
+      ]
+    },
+    "/restaurants/r53/r53-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-ccd7e97d-480.webp",
+          "bytes": 17870
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-ccd7e97d-960.webp",
+          "bytes": 48120
+        }
+      ]
+    },
+    "/restaurants/r54/r54-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-93ee3600-480.webp",
+          "bytes": 22730
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-93ee3600-960.webp",
+          "bytes": 70874
+        }
+      ]
+    },
+    "/restaurants/r55/r55-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-8f8db805-480.webp",
+          "bytes": 41416
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-8f8db805-960.webp",
+          "bytes": 119414
+        }
+      ]
+    },
+    "/restaurants/r56/r56-mv_1.jpg": {
+      "width": 960,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 300,
+          "src": "/_portal/shop-82fabd9e-480.webp",
+          "bytes": 22586
+        },
+        {
+          "w": 960,
+          "h": 600,
+          "src": "/_portal/shop-82fabd9e-960.webp",
+          "bytes": 77218
+        }
+      ]
+    },
+    "/restaurants/r57/r57-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-3cc312bf-480.webp",
+          "bytes": 23360
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-3cc312bf-960.webp",
+          "bytes": 60364
+        }
+      ]
+    },
+    "/restaurants/r58/r58-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-5c781873-480.webp",
+          "bytes": 51862
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-5c781873-960.webp",
+          "bytes": 194420
+        }
+      ]
+    },
+    "/restaurants/r59/r59-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-29bcac3e-480.webp",
+          "bytes": 24132
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-29bcac3e-960.webp",
+          "bytes": 72904
+        }
+      ]
+    },
+    "/restaurants/r60/r60-01.jpg": {
+      "width": 780,
+      "height": 366,
+      "items": [
+        {
+          "w": 480,
+          "h": 225,
+          "src": "/_portal/shop-d410c478-480.webp",
+          "bytes": 15970
+        },
+        {
+          "w": 780,
+          "h": 366,
+          "src": "/_portal/shop-d410c478-780.webp",
+          "bytes": 28692
+        }
+      ]
+    },
+    "/restaurants/r61/r61-01.jpg": {
+      "width": 660,
+      "height": 370,
+      "items": [
+        {
+          "w": 480,
+          "h": 269,
+          "src": "/_portal/shop-92dda83b-480.webp",
+          "bytes": 23552
+        },
+        {
+          "w": 660,
+          "h": 370,
+          "src": "/_portal/shop-92dda83b-660.webp",
+          "bytes": 41624
+        }
+      ]
+    },
+    "/restaurants/r62/r62-01.jpg": {
+      "width": 960,
+      "height": 536,
+      "items": [
+        {
+          "w": 480,
+          "h": 268,
+          "src": "/_portal/shop-887f7cfb-480.webp",
+          "bytes": 11226
+        },
+        {
+          "w": 960,
+          "h": 536,
+          "src": "/_portal/shop-887f7cfb-960.webp",
+          "bytes": 27616
+        }
+      ]
+    },
+    "/restaurants/r63/r63-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-5f47c66c-480.webp",
+          "bytes": 24788
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-5f47c66c-960.webp",
+          "bytes": 83692
+        }
+      ]
+    },
+    "/restaurants/r64/r64-01.jpg": {
+      "width": 800,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-1d4522bc-480.webp",
+          "bytes": 21942
+        },
+        {
+          "w": 800,
+          "h": 600,
+          "src": "/_portal/shop-1d4522bc-800.webp",
+          "bytes": 45580
+        }
+      ]
+    },
+    "/restaurants/r65/r65-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-9a803caf-480.webp",
+          "bytes": 32300
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-9a803caf-960.webp",
+          "bytes": 88064
+        }
+      ]
+    },
+    "/restaurants/r66/r66-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-cdf0190e-480.webp",
+          "bytes": 36136
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-cdf0190e-960.webp",
+          "bytes": 106012
+        }
+      ]
+    },
+    "/restaurants/r67/r67-01.jpg": {
+      "width": 825,
+      "height": 490,
+      "items": [
+        {
+          "w": 480,
+          "h": 285,
+          "src": "/_portal/shop-c1e65a63-480.webp",
+          "bytes": 18596
+        },
+        {
+          "w": 825,
+          "h": 490,
+          "src": "/_portal/shop-c1e65a63-825.webp",
+          "bytes": 44940
+        }
+      ]
+    },
+    "/restaurants/r68/r68-motoyama1.jpg": {
+      "width": 600,
+      "height": 338,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-445e43a4-480.webp",
+          "bytes": 21184
+        },
+        {
+          "w": 600,
+          "h": 338,
+          "src": "/_portal/shop-445e43a4-600.webp",
+          "bytes": 29258
+        }
+      ]
+    },
+    "/restaurants/r69/r69-image_01.jpg": {
+      "width": 220,
+      "height": 250,
+      "items": [
+        {
+          "w": 220,
+          "h": 250,
+          "src": "/_portal/shop-78af3382-220.webp",
+          "bytes": 12018
+        }
+      ]
+    },
+    "/restaurants/r70/r70-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-185be91a-480.webp",
+          "bytes": 34958
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-185be91a-960.webp",
+          "bytes": 108374
+        }
+      ]
+    },
+    "/restaurants/r72/r72-01.jpg": {
+      "width": 960,
+      "height": 540,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-01163ce8-480.webp",
+          "bytes": 2546
+        },
+        {
+          "w": 960,
+          "h": 540,
+          "src": "/_portal/shop-01163ce8-960.webp",
+          "bytes": 13638
+        }
+      ]
+    },
+    "/restaurants/r73/r73-02.webp": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-d6e9aa68-480.webp",
+          "bytes": 30264
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-d6e9aa68-960.webp",
+          "bytes": 73672
+        }
+      ]
+    },
+    "/restaurants/r74/r74-01.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-cbdcd545-480.webp",
+          "bytes": 43160
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-cbdcd545-600.webp",
+          "bytes": 62468
+        }
+      ]
+    },
+    "/restaurants/r75/r75-01.jpg": {
+      "width": 960,
+      "height": 541,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-4850a653-480.webp",
+          "bytes": 13162
+        },
+        {
+          "w": 960,
+          "h": 541,
+          "src": "/_portal/shop-4850a653-960.webp",
+          "bytes": 35122
+        }
+      ]
+    },
+    "/restaurants/r76/r76-02.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-453fc543-480.webp",
+          "bytes": 25796
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-453fc543-640.webp",
+          "bytes": 40410
+        }
+      ]
+    },
+    "/restaurants/r77/r77-01.jpg": {
+      "width": 960,
+      "height": 1207,
+      "items": [
+        {
+          "w": 480,
+          "h": 603,
+          "src": "/_portal/shop-4b31dfab-480.webp",
+          "bytes": 50042
+        },
+        {
+          "w": 960,
+          "h": 1207,
+          "src": "/_portal/shop-4b31dfab-960.webp",
+          "bytes": 177302
+        }
+      ]
+    },
+    "/restaurants/r78/r78-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-d555d7c9-480.webp",
+          "bytes": 35322
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-d555d7c9-960.webp",
+          "bytes": 118374
+        }
+      ]
+    },
+    "/restaurants/r79/r79-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-91581d53-480.webp",
+          "bytes": 21330
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-91581d53-960.webp",
+          "bytes": 61266
+        }
+      ]
+    },
+    "/restaurants/r80/r80-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-a83cffb8-480.webp",
+          "bytes": 31446
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-a83cffb8-960.webp",
+          "bytes": 106346
+        }
+      ]
+    },
+    "/restaurants/r81/r81-01.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-d5a61a40-480.webp",
+          "bytes": 22612
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-d5a61a40-960.webp",
+          "bytes": 70050
+        }
+      ]
+    },
+    "/restaurants/r83/r83-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-46caf902-480.webp",
+          "bytes": 17628
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-46caf902-960.webp",
+          "bytes": 46696
+        }
+      ]
+    },
+    "/restaurants/r84/r84-01.jpg": {
+      "width": 960,
+      "height": 641,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-2652d443-480.webp",
+          "bytes": 20294
+        },
+        {
+          "w": 960,
+          "h": 641,
+          "src": "/_portal/shop-2652d443-960.webp",
+          "bytes": 58678
+        }
+      ]
+    },
+    "/restaurants/r85/r85-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-4cb31654-480.webp",
+          "bytes": 50756
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-4cb31654-960.webp",
+          "bytes": 188130
+        }
+      ]
+    },
+    "/restaurants/r86/r86-01.jpg": {
+      "width": 960,
+      "height": 642,
+      "items": [
+        {
+          "w": 480,
+          "h": 321,
+          "src": "/_portal/shop-691e6a8e-480.webp",
+          "bytes": 28036
+        },
+        {
+          "w": 960,
+          "h": 642,
+          "src": "/_portal/shop-691e6a8e-960.webp",
+          "bytes": 90448
+        }
+      ]
+    },
+    "/restaurants/r87/r87-01.jpg": {
+      "width": 960,
+      "height": 504,
+      "items": [
+        {
+          "w": 480,
+          "h": 252,
+          "src": "/_portal/shop-e6991d87-480.webp",
+          "bytes": 12088
+        },
+        {
+          "w": 960,
+          "h": 504,
+          "src": "/_portal/shop-e6991d87-960.webp",
+          "bytes": 29244
+        }
+      ]
+    },
+    "/restaurants/r88/r88-02.jpg": {
+      "width": 800,
+      "height": 560,
+      "items": [
+        {
+          "w": 480,
+          "h": 336,
+          "src": "/_portal/shop-f5c9b80f-480.webp",
+          "bytes": 25604
+        },
+        {
+          "w": 800,
+          "h": 560,
+          "src": "/_portal/shop-f5c9b80f-800.webp",
+          "bytes": 50064
+        }
+      ]
+    },
+    "/restaurants/r89/r89-01.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-778ef817-480.webp",
+          "bytes": 51202
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-778ef817-960.webp",
+          "bytes": 177950
+        }
+      ]
+    },
+    "/restaurants/r90/r90-01.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-560d381f-480.webp",
+          "bytes": 27452
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-560d381f-960.webp",
+          "bytes": 84912
+        }
+      ]
+    },
+    "/restaurants/r91/r91-01.jpg": {
+      "width": 960,
+      "height": 722,
+      "items": [
+        {
+          "w": 480,
+          "h": 361,
+          "src": "/_portal/shop-dfc36e2e-480.webp",
+          "bytes": 22302
+        },
+        {
+          "w": 960,
+          "h": 722,
+          "src": "/_portal/shop-dfc36e2e-960.webp",
+          "bytes": 72564
+        }
+      ]
+    },
+    "/restaurants/r92/r92-05.jpg": {
+      "width": 960,
+      "height": 639,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-25e08356-480.webp",
+          "bytes": 20296
+        },
+        {
+          "w": 960,
+          "h": 639,
+          "src": "/_portal/shop-25e08356-960.webp",
+          "bytes": 46194
+        }
+      ]
+    },
+    "/restaurants/r93/r93-01.jpg": {
+      "width": 960,
+      "height": 743,
+      "items": [
+        {
+          "w": 480,
+          "h": 372,
+          "src": "/_portal/shop-a30ad401-480.webp",
+          "bytes": 23118
+        },
+        {
+          "w": 960,
+          "h": 743,
+          "src": "/_portal/shop-a30ad401-960.webp",
+          "bytes": 64864
+        }
+      ]
+    },
+    "/restaurants/r94/r94-02.webp": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-55eeb072-480.webp",
+          "bytes": 19874
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-55eeb072-960.webp",
+          "bytes": 55922
+        }
+      ]
+    },
+    "/restaurants/r95/r95-01.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-8883668c-480.webp",
+          "bytes": 20814
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-8883668c-960.webp",
+          "bytes": 70284
+        }
+      ]
+    },
+    "/restaurants/r96/r96-01.jpg": {
+      "width": 960,
+      "height": 641,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-7aca424a-480.webp",
+          "bytes": 9210
+        },
+        {
+          "w": 960,
+          "h": 641,
+          "src": "/_portal/shop-7aca424a-960.webp",
+          "bytes": 25276
+        }
+      ]
+    },
+    "/restaurants/r97/r97-01.jpg": {
+      "width": 960,
+      "height": 1286,
+      "items": [
+        {
+          "w": 480,
+          "h": 643,
+          "src": "/_portal/shop-b9505936-480.webp",
+          "bytes": 49108
+        },
+        {
+          "w": 960,
+          "h": 1286,
+          "src": "/_portal/shop-b9505936-960.webp",
+          "bytes": 135090
+        }
+      ]
+    },
+    "/restaurants/r99/r99-01.jpg": {
+      "width": 900,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 384,
+          "src": "/_portal/shop-efcf9b40-480.webp",
+          "bytes": 38348
+        },
+        {
+          "w": 900,
+          "h": 720,
+          "src": "/_portal/shop-efcf9b40-900.webp",
+          "bytes": 105852
+        }
+      ]
+    },
+    "/restaurants/teleapo-BISTROJOIN/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-e74a18fe-480.webp",
+          "bytes": 28298
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-e74a18fe-960.webp",
+          "bytes": 85990
+        }
+      ]
+    },
+    "/restaurants/teleapo-BeatoKitchen/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-14875967-480.webp",
+          "bytes": 19306
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-14875967-960.webp",
+          "bytes": 75530
+        }
+      ]
+    },
+    "/restaurants/teleapo-BistroPaysan/hero.jpg": {
+      "width": 880,
+      "height": 590,
+      "items": [
+        {
+          "w": 480,
+          "h": 322,
+          "src": "/_portal/shop-d0259fd7-480.webp",
+          "bytes": 21000
+        },
+        {
+          "w": 880,
+          "h": 590,
+          "src": "/_portal/shop-d0259fd7-880.webp",
+          "bytes": 48798
+        }
+      ]
+    },
+    "/restaurants/teleapo-CaféBleu2/hero.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-e6919a69-480.webp",
+          "bytes": 19870
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-e6919a69-960.webp",
+          "bytes": 59006
+        }
+      ]
+    },
+    "/restaurants/teleapo-Coffee&LunchCROSSROAD/hero.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-1199d567-480.webp",
+          "bytes": 40374
+        }
+      ]
+    },
+    "/restaurants/teleapo-DolceCucinaAngeloアンジェロ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-276d523e-480.webp",
+          "bytes": 9380
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-276d523e-960.webp",
+          "bytes": 23292
+        }
+      ]
+    },
+    "/restaurants/teleapo-FUJICOFFEE（ふじ珈琲）/hero.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-87722363-480.webp",
+          "bytes": 46430
+        }
+      ]
+    },
+    "/restaurants/teleapo-GOGUMI./hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-4454a662-480.webp",
+          "bytes": 22874
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-4454a662-640.webp",
+          "bytes": 34324
+        }
+      ]
+    },
+    "/restaurants/teleapo-Kazuのちゅーぼー/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-8eaa402e-480.webp",
+          "bytes": 15010
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-8eaa402e-960.webp",
+          "bytes": 43452
+        }
+      ]
+    },
+    "/restaurants/teleapo-MAKOCHANNEL/hero.jpg": {
+      "width": 960,
+      "height": 637,
+      "items": [
+        {
+          "w": 480,
+          "h": 318,
+          "src": "/_portal/shop-e6f9703e-480.webp",
+          "bytes": 13926
+        },
+        {
+          "w": 960,
+          "h": 637,
+          "src": "/_portal/shop-e6f9703e-960.webp",
+          "bytes": 31012
+        }
+      ]
+    },
+    "/restaurants/teleapo-MENRIN/hero.jpg": {
+      "width": 960,
+      "height": 563,
+      "items": [
+        {
+          "w": 480,
+          "h": 281,
+          "src": "/_portal/shop-2146a62b-480.webp",
+          "bytes": 19098
+        },
+        {
+          "w": 960,
+          "h": 563,
+          "src": "/_portal/shop-2146a62b-960.webp",
+          "bytes": 67946
+        }
+      ]
+    },
+    "/restaurants/teleapo-ManpukuShokudoKante/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d9bac23c-480.webp",
+          "bytes": 12886
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d9bac23c-960.webp",
+          "bytes": 37758
+        }
+      ]
+    },
+    "/restaurants/teleapo-OceanHarvestCocomo/hero.jpg": {
+      "width": 960,
+      "height": 450,
+      "items": [
+        {
+          "w": 480,
+          "h": 225,
+          "src": "/_portal/shop-87c5f33f-480.webp",
+          "bytes": 9364
+        },
+        {
+          "w": 960,
+          "h": 450,
+          "src": "/_portal/shop-87c5f33f-960.webp",
+          "bytes": 23676
+        }
+      ]
+    },
+    "/restaurants/teleapo-OyatsuBoxPiyo/point2.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-61870fc7-480.webp",
+          "bytes": 22698
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-61870fc7-960.webp",
+          "bytes": 58548
+        }
+      ]
+    },
+    "/restaurants/teleapo-Plaisirプレジール/hero.jpg": {
+      "width": 690,
+      "height": 370,
+      "items": [
+        {
+          "w": 480,
+          "h": 257,
+          "src": "/_portal/shop-c84d1c2c-480.webp",
+          "bytes": 15784
+        },
+        {
+          "w": 690,
+          "h": 370,
+          "src": "/_portal/shop-c84d1c2c-690.webp",
+          "bytes": 27752
+        }
+      ]
+    },
+    "/restaurants/teleapo-RestaurantCentre/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-720c59a6-480.webp",
+          "bytes": 12510
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-720c59a6-960.webp",
+          "bytes": 29022
+        }
+      ]
+    },
+    "/restaurants/teleapo-SEAFOODBOWLSHOPINTANASHI/hero.jpg": {
+      "width": 477,
+      "height": 640,
+      "items": [
+        {
+          "w": 477,
+          "h": 640,
+          "src": "/_portal/shop-217e1fa1-477.webp",
+          "bytes": 55450
+        }
+      ]
+    },
+    "/restaurants/teleapo-SteakHouseG-Base/hero.jpg": {
+      "width": 960,
+      "height": 721,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-30bbec2c-480.webp",
+          "bytes": 27962
+        },
+        {
+          "w": 960,
+          "h": 721,
+          "src": "/_portal/shop-30bbec2c-960.webp",
+          "bytes": 82780
+        }
+      ]
+    },
+    "/restaurants/teleapo-ThePerch/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-4e9479b4-480.webp",
+          "bytes": 11136
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-4e9479b4-960.webp",
+          "bytes": 33330
+        }
+      ]
+    },
+    "/restaurants/teleapo-VegeKitchenAwajin/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-3254e8ee-480.webp",
+          "bytes": 9338
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-3254e8ee-960.webp",
+          "bytes": 28072
+        }
+      ]
+    },
+    "/restaurants/teleapo-caféonitonカフェオニトン/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-5b17afb7-480.webp",
+          "bytes": 18076
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-5b17afb7-640.webp",
+          "bytes": 29354
+        }
+      ]
+    },
+    "/restaurants/teleapo-diningkitchenLIFE/hero.jpg": {
+      "width": 368,
+      "height": 368,
+      "items": [
+        {
+          "w": 368,
+          "h": 368,
+          "src": "/_portal/shop-3cc1abb0-368.webp",
+          "bytes": 17806
+        }
+      ]
+    },
+    "/restaurants/teleapo-nanohana/hero.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-bf2101cb-480.webp",
+          "bytes": 18114
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-bf2101cb-960.webp",
+          "bytes": 48020
+        }
+      ]
+    },
+    "/restaurants/teleapo-pepo/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-a65354c5-480.webp",
+          "bytes": 12346
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-a65354c5-960.webp",
+          "bytes": 32902
+        }
+      ]
+    },
+    "/restaurants/teleapo-shokusha/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5a193a95-480.webp",
+          "bytes": 21218
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5a193a95-960.webp",
+          "bytes": 70028
+        }
+      ]
+    },
+    "/restaurants/teleapo-souvenir/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2c94afc3-480.webp",
+          "bytes": 7810
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2c94afc3-960.webp",
+          "bytes": 20778
+        }
+      ]
+    },
+    "/restaurants/teleapo-taracafe./point1.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-6a5f29f6-480.webp",
+          "bytes": 27126
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-6a5f29f6-960.webp",
+          "bytes": 73320
+        }
+      ]
+    },
+    "/restaurants/teleapo-「野菜が主役のレストラン」やさいやVegeTABLEベジテーブル/hero.jpg": {
+      "width": 604,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 477,
+          "src": "/_portal/shop-d7317b29-480.webp",
+          "bytes": 33098
+        },
+        {
+          "w": 604,
+          "h": 600,
+          "src": "/_portal/shop-d7317b29-604.webp",
+          "bytes": 42482
+        }
+      ]
+    },
+    "/restaurants/teleapo-【CAFE】i-HUB/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-59d1a48c-480.webp",
+          "bytes": 25072
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-59d1a48c-960.webp",
+          "bytes": 70550
+        }
+      ]
+    },
+    "/restaurants/teleapo-あづまラーメン/hero.jpg": {
+      "width": 450,
+      "height": 338,
+      "items": [
+        {
+          "w": 450,
+          "h": 338,
+          "src": "/_portal/shop-e3a41ffa-450.webp",
+          "bytes": 20276
+        }
+      ]
+    },
+    "/restaurants/teleapo-ありがとう/hero.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-785975d2-480.webp",
+          "bytes": 58530
+        }
+      ]
+    },
+    "/restaurants/teleapo-あるる/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-b84de463-480.webp",
+          "bytes": 11000
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-b84de463-960.webp",
+          "bytes": 30930
+        }
+      ]
+    },
+    "/restaurants/teleapo-うどんとお酒と彩りsiki/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-f41a7780-480.webp",
+          "bytes": 21776
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-f41a7780-960.webp",
+          "bytes": 69664
+        }
+      ]
+    },
+    "/restaurants/teleapo-おとうふカフェヨルヨル/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-a7441910-480.webp",
+          "bytes": 25150
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-a7441910-960.webp",
+          "bytes": 67382
+        }
+      ]
+    },
+    "/restaurants/teleapo-お好み焼き千富/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-ea8bbb66-480.webp",
+          "bytes": 16892
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-ea8bbb66-960.webp",
+          "bytes": 59804
+        }
+      ]
+    },
+    "/restaurants/teleapo-お食事処北さん家/hero.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-0dc6953e-480.webp",
+          "bytes": 16274
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-0dc6953e-960.webp",
+          "bytes": 47616
+        }
+      ]
+    },
+    "/restaurants/teleapo-お食事処本山/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-66748ba6-480.webp",
+          "bytes": 15008
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-66748ba6-960.webp",
+          "bytes": 39482
+        }
+      ]
+    },
+    "/restaurants/teleapo-かき小屋匠ちゃん/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5872b593-480.webp",
+          "bytes": 21180
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5872b593-960.webp",
+          "bytes": 58980
+        }
+      ]
+    },
+    "/restaurants/teleapo-かしら家/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-270bdd11-480.webp",
+          "bytes": 33390
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-270bdd11-600.webp",
+          "bytes": 44632
+        }
+      ]
+    },
+    "/restaurants/teleapo-かじゅある割烹頼みち/hero.jpg": {
+      "width": 960,
+      "height": 420,
+      "items": [
+        {
+          "w": 480,
+          "h": 210,
+          "src": "/_portal/shop-87286e76-480.webp",
+          "bytes": 19630
+        },
+        {
+          "w": 960,
+          "h": 420,
+          "src": "/_portal/shop-87286e76-960.webp",
+          "bytes": 67294
+        }
+      ]
+    },
+    "/restaurants/teleapo-きさん/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e0c25a29-480.webp",
+          "bytes": 20522
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e0c25a29-960.webp",
+          "bytes": 59254
+        }
+      ]
+    },
+    "/restaurants/teleapo-きまっちゃん/hero.jpg": {
+      "width": 623,
+      "height": 371,
+      "items": [
+        {
+          "w": 480,
+          "h": 286,
+          "src": "/_portal/shop-7960b16c-480.webp",
+          "bytes": 17578
+        },
+        {
+          "w": 623,
+          "h": 371,
+          "src": "/_portal/shop-7960b16c-623.webp",
+          "bytes": 25182
+        }
+      ]
+    },
+    "/restaurants/teleapo-こうしん庵/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-0767563f-480.webp",
+          "bytes": 34668
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-0767563f-640.webp",
+          "bytes": 55156
+        }
+      ]
+    },
+    "/restaurants/teleapo-ごはん処湊茶屋/hero.jpg": {
+      "width": 640,
+      "height": 426,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-21a987db-480.webp",
+          "bytes": 21402
+        },
+        {
+          "w": 640,
+          "h": 426,
+          "src": "/_portal/shop-21a987db-640.webp",
+          "bytes": 32448
+        }
+      ]
+    },
+    "/restaurants/teleapo-ごはん屋はれいろ/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-5d8cb741-480.webp",
+          "bytes": 12490
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-5d8cb741-960.webp",
+          "bytes": 28298
+        }
+      ]
+    },
+    "/restaurants/teleapo-さつま路/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-fa1ec77f-480.webp",
+          "bytes": 19906
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-fa1ec77f-960.webp",
+          "bytes": 71694
+        }
+      ]
+    },
+    "/restaurants/teleapo-しんちゃん/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-80831520-480.webp",
+          "bytes": 15196
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-80831520-960.webp",
+          "bytes": 32488
+        }
+      ]
+    },
+    "/restaurants/teleapo-すき亭吉寅/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-b7405bc7-480.webp",
+          "bytes": 21256
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-b7405bc7-960.webp",
+          "bytes": 45414
+        }
+      ]
+    },
+    "/restaurants/teleapo-すし処隆/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-0d83d673-480.webp",
+          "bytes": 18490
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-0d83d673-960.webp",
+          "bytes": 67042
+        }
+      ]
+    },
+    "/restaurants/teleapo-すし笑魚亭/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-6e67e95a-480.webp",
+          "bytes": 21608
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-6e67e95a-960.webp",
+          "bytes": 67212
+        }
+      ]
+    },
+    "/restaurants/teleapo-すみか/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-34990174-480.webp",
+          "bytes": 30672
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-34990174-960.webp",
+          "bytes": 104488
+        }
+      ]
+    },
+    "/restaurants/teleapo-すりーぴーす/hero.jpg": {
+      "width": 480,
+      "height": 477,
+      "items": [
+        {
+          "w": 480,
+          "h": 477,
+          "src": "/_portal/shop-1b158f41-480.webp",
+          "bytes": 15834
+        }
+      ]
+    },
+    "/restaurants/teleapo-つるや/hero.jpg": {
+      "width": 960,
+      "height": 991,
+      "items": [
+        {
+          "w": 480,
+          "h": 496,
+          "src": "/_portal/shop-60b7156d-480.webp",
+          "bytes": 46226
+        },
+        {
+          "w": 960,
+          "h": 991,
+          "src": "/_portal/shop-60b7156d-960.webp",
+          "bytes": 202742
+        }
+      ]
+    },
+    "/restaurants/teleapo-ぱすたRakuen/hero.jpg": {
+      "width": 960,
+      "height": 629,
+      "items": [
+        {
+          "w": 480,
+          "h": 315,
+          "src": "/_portal/shop-6baa29be-480.webp",
+          "bytes": 24526
+        },
+        {
+          "w": 960,
+          "h": 629,
+          "src": "/_portal/shop-6baa29be-960.webp",
+          "bytes": 74158
+        }
+      ]
+    },
+    "/restaurants/teleapo-ひーちゃん食堂/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-c09ce573-480.webp",
+          "bytes": 29178
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-c09ce573-960.webp",
+          "bytes": 109930
+        }
+      ]
+    },
+    "/restaurants/teleapo-ぺんぎん食堂/point2.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-5ebb70b5-480.webp",
+          "bytes": 23910
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-5ebb70b5-960.webp",
+          "bytes": 77840
+        }
+      ]
+    },
+    "/restaurants/teleapo-ままん/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-bd677ec0-480.webp",
+          "bytes": 17878
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-bd677ec0-960.webp",
+          "bytes": 51672
+        }
+      ]
+    },
+    "/restaurants/teleapo-まるこう/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-255c5f6b-480.webp",
+          "bytes": 31024
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-255c5f6b-960.webp",
+          "bytes": 91016
+        }
+      ]
+    },
+    "/restaurants/teleapo-めしどき/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2c5b82e5-480.webp",
+          "bytes": 11542
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2c5b82e5-960.webp",
+          "bytes": 23714
+        }
+      ]
+    },
+    "/restaurants/teleapo-めん食い処わ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-63276a8d-480.webp",
+          "bytes": 20802
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-63276a8d-960.webp",
+          "bytes": 59240
+        }
+      ]
+    },
+    "/restaurants/teleapo-ゆで餃子JINGJIAOZI/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-3a431916-480.webp",
+          "bytes": 9518
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-3a431916-960.webp",
+          "bytes": 25794
+        }
+      ]
+    },
+    "/restaurants/teleapo-よしむら/hero.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-2702bbd1-480.webp",
+          "bytes": 39708
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-2702bbd1-640.webp",
+          "bytes": 63154
+        }
+      ]
+    },
+    "/restaurants/teleapo-よりみち/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-c278e208-480.webp",
+          "bytes": 22664
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-c278e208-960.webp",
+          "bytes": 71394
+        }
+      ]
+    },
+    "/restaurants/teleapo-らぁめん麺楽屋上尾店つけ麺/hero.jpg": {
+      "width": 360,
+      "height": 480,
+      "items": [
+        {
+          "w": 360,
+          "h": 480,
+          "src": "/_portal/shop-8541880c-360.webp",
+          "bytes": 10166
+        }
+      ]
+    },
+    "/restaurants/teleapo-らくおーれ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e5a36f82-480.webp",
+          "bytes": 14688
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e5a36f82-960.webp",
+          "bytes": 41118
+        }
+      ]
+    },
+    "/restaurants/teleapo-らぱん/hero.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-c67b573a-480.webp",
+          "bytes": 18388
+        }
+      ]
+    },
+    "/restaurants/teleapo-らーめんとんてき大翔/hero.jpg": {
+      "width": 960,
+      "height": 1128,
+      "items": [
+        {
+          "w": 480,
+          "h": 564,
+          "src": "/_portal/shop-c6a90267-480.webp",
+          "bytes": 33718
+        },
+        {
+          "w": 960,
+          "h": 1128,
+          "src": "/_portal/shop-c6a90267-960.webp",
+          "bytes": 101646
+        }
+      ]
+    },
+    "/restaurants/teleapo-わかしろ/hero.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-10b30ff6-480.webp",
+          "bytes": 17920
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-10b30ff6-960.webp",
+          "bytes": 40480
+        }
+      ]
+    },
+    "/restaurants/teleapo-アトリエMOF/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d11d1174-480.webp",
+          "bytes": 23548
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d11d1174-960.webp",
+          "bytes": 60944
+        }
+      ]
+    },
+    "/restaurants/teleapo-イタリアンバルAvanti/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-1f4e4dd0-480.webp",
+          "bytes": 13760
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-1f4e4dd0-960.webp",
+          "bytes": 33752
+        }
+      ]
+    },
+    "/restaurants/teleapo-イタリア料理エンメ/hero.jpg": {
+      "width": 458,
+      "height": 480,
+      "items": [
+        {
+          "w": 458,
+          "h": 480,
+          "src": "/_portal/shop-cdee6bb9-458.webp",
+          "bytes": 65252
+        }
+      ]
+    },
+    "/restaurants/teleapo-ウーブリエ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-3873b3bb-480.webp",
+          "bytes": 14226
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-3873b3bb-960.webp",
+          "bytes": 52466
+        }
+      ]
+    },
+    "/restaurants/teleapo-エル・ヒラソル/hero.jpg": {
+      "width": 960,
+      "height": 563,
+      "items": [
+        {
+          "w": 480,
+          "h": 281,
+          "src": "/_portal/shop-7d48a274-480.webp",
+          "bytes": 19230
+        },
+        {
+          "w": 960,
+          "h": 563,
+          "src": "/_portal/shop-7d48a274-960.webp",
+          "bytes": 55828
+        }
+      ]
+    },
+    "/restaurants/teleapo-オステリアバールアマーノ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-8327fd99-480.webp",
+          "bytes": 21556
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-8327fd99-960.webp",
+          "bytes": 62118
+        }
+      ]
+    },
+    "/restaurants/teleapo-カフェレガーロ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-dc5b9416-480.webp",
+          "bytes": 14184
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-dc5b9416-960.webp",
+          "bytes": 36028
+        }
+      ]
+    },
+    "/restaurants/teleapo-キッチンおばた/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-dba56cd5-480.webp",
+          "bytes": 20296
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-dba56cd5-960.webp",
+          "bytes": 59822
+        }
+      ]
+    },
+    "/restaurants/teleapo-グルテンフリーREZAN/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-73962069-480.webp",
+          "bytes": 21734
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-73962069-960.webp",
+          "bytes": 68882
+        }
+      ]
+    },
+    "/restaurants/teleapo-ジッリオ・ディ・フィレンツェ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-8b91b55e-480.webp",
+          "bytes": 23562
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-8b91b55e-960.webp",
+          "bytes": 70104
+        }
+      ]
+    },
+    "/restaurants/teleapo-スペインバルPALLO/hero.jpg": {
+      "width": 480,
+      "height": 475,
+      "items": [
+        {
+          "w": 480,
+          "h": 475,
+          "src": "/_portal/shop-13e4a7b3-480.webp",
+          "bytes": 48246
+        }
+      ]
+    },
+    "/restaurants/teleapo-ソワン/hero.jpg": {
+      "width": 960,
+      "height": 629,
+      "items": [
+        {
+          "w": 480,
+          "h": 314,
+          "src": "/_portal/shop-1bbadf1f-480.webp",
+          "bytes": 8476
+        },
+        {
+          "w": 960,
+          "h": 629,
+          "src": "/_portal/shop-1bbadf1f-960.webp",
+          "bytes": 22990
+        }
+      ]
+    },
+    "/restaurants/teleapo-ダイニングチヨdiningchiyo/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e3f7b3c7-480.webp",
+          "bytes": 20518
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e3f7b3c7-960.webp",
+          "bytes": 64684
+        }
+      ]
+    },
+    "/restaurants/teleapo-チャー車ラーメン/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-b1696b1f-480.webp",
+          "bytes": 21608
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-b1696b1f-960.webp",
+          "bytes": 65216
+        }
+      ]
+    },
+    "/restaurants/teleapo-トラットリアSIN/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5bcbcbc5-480.webp",
+          "bytes": 27220
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5bcbcbc5-960.webp",
+          "bytes": 69266
+        }
+      ]
+    },
+    "/restaurants/teleapo-ヌーラNulla/hero.jpg": {
+      "width": 480,
+      "height": 476,
+      "items": [
+        {
+          "w": 480,
+          "h": 476,
+          "src": "/_portal/shop-fd3e82d2-480.webp",
+          "bytes": 32606
+        }
+      ]
+    },
+    "/restaurants/teleapo-フォカッチェリアパッファーFOCACCERIAPUFFER/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-08ca4bda-480.webp",
+          "bytes": 34276
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-08ca4bda-640.webp",
+          "bytes": 54106
+        }
+      ]
+    },
+    "/restaurants/teleapo-フルーツスノウ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-89fe0efe-480.webp",
+          "bytes": 19980
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-89fe0efe-960.webp",
+          "bytes": 62420
+        }
+      ]
+    },
+    "/restaurants/teleapo-ホルモン道楽〜煙煙大魔王〜/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-3c6fd2db-480.webp",
+          "bytes": 24004
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-3c6fd2db-960.webp",
+          "bytes": 88762
+        }
+      ]
+    },
+    "/restaurants/teleapo-マックス食堂酒・肴・お田/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-ff9872bb-480.webp",
+          "bytes": 27944
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-ff9872bb-640.webp",
+          "bytes": 44618
+        }
+      ]
+    },
+    "/restaurants/teleapo-ルリアンロダン/hero.jpg": {
+      "width": 600,
+      "height": 338,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-fe4bde09-480.webp",
+          "bytes": 18310
+        },
+        {
+          "w": 600,
+          "h": 338,
+          "src": "/_portal/shop-fe4bde09-600.webp",
+          "bytes": 27518
+        }
+      ]
+    },
+    "/restaurants/teleapo-レストラン･ブルボン/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-ecfe52bf-480.webp",
+          "bytes": 25122
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-ecfe52bf-960.webp",
+          "bytes": 99238
+        }
+      ]
+    },
+    "/restaurants/teleapo-ロースタリーフィト/hero.jpg": {
+      "width": 800,
+      "height": 450,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-0ed744fe-480.webp",
+          "bytes": 11594
+        },
+        {
+          "w": 800,
+          "h": 450,
+          "src": "/_portal/shop-0ed744fe-800.webp",
+          "bytes": 22450
+        }
+      ]
+    },
+    "/restaurants/teleapo-ロータスカフェ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-7353ae24-480.webp",
+          "bytes": 16450
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-7353ae24-960.webp",
+          "bytes": 51736
+        }
+      ]
+    },
+    "/restaurants/teleapo-中佐中店すず虫庵/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-4526057c-480.webp",
+          "bytes": 24968
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-4526057c-960.webp",
+          "bytes": 72142
+        }
+      ]
+    },
+    "/restaurants/teleapo-中華ダイニングFukuro/hero.jpg": {
+      "width": 640,
+      "height": 481,
+      "items": [
+        {
+          "w": 480,
+          "h": 361,
+          "src": "/_portal/shop-b3b796ca-480.webp",
+          "bytes": 27346
+        },
+        {
+          "w": 640,
+          "h": 481,
+          "src": "/_portal/shop-b3b796ca-640.webp",
+          "bytes": 42254
+        }
+      ]
+    },
+    "/restaurants/teleapo-串カツおーばん/hero.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-1487f8c2-480.webp",
+          "bytes": 48304
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-1487f8c2-640.webp",
+          "bytes": 68046
+        }
+      ]
+    },
+    "/restaurants/teleapo-二福亭/hero.jpg": {
+      "width": 640,
+      "height": 482,
+      "items": [
+        {
+          "w": 480,
+          "h": 362,
+          "src": "/_portal/shop-5bb23275-480.webp",
+          "bytes": 24258
+        },
+        {
+          "w": 640,
+          "h": 482,
+          "src": "/_portal/shop-5bb23275-640.webp",
+          "bytes": 39206
+        }
+      ]
+    },
+    "/restaurants/teleapo-佳筍/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-ff64453d-480.webp",
+          "bytes": 14950
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-ff64453d-960.webp",
+          "bytes": 39836
+        }
+      ]
+    },
+    "/restaurants/teleapo-個室焼肉華牛KAGYU/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-496e2779-480.webp",
+          "bytes": 23544
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-496e2779-960.webp",
+          "bytes": 72132
+        }
+      ]
+    },
+    "/restaurants/teleapo-元祖煮ぼうとうの國良/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-f7b22fbe-480.webp",
+          "bytes": 31798
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-f7b22fbe-960.webp",
+          "bytes": 110190
+        }
+      ]
+    },
+    "/restaurants/teleapo-凜喜桜変/hero.jpg": {
+      "width": 960,
+      "height": 576,
+      "items": [
+        {
+          "w": 480,
+          "h": 288,
+          "src": "/_portal/shop-f9b4fd8d-480.webp",
+          "bytes": 11432
+        },
+        {
+          "w": 960,
+          "h": 576,
+          "src": "/_portal/shop-f9b4fd8d-960.webp",
+          "bytes": 29360
+        }
+      ]
+    },
+    "/restaurants/teleapo-初味寿司本店/hero.jpg": {
+      "width": 960,
+      "height": 657,
+      "items": [
+        {
+          "w": 480,
+          "h": 329,
+          "src": "/_portal/shop-e06fff90-480.webp",
+          "bytes": 18034
+        },
+        {
+          "w": 960,
+          "h": 657,
+          "src": "/_portal/shop-e06fff90-960.webp",
+          "bytes": 50196
+        }
+      ]
+    },
+    "/restaurants/teleapo-創丸福/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-676cc211-480.webp",
+          "bytes": 14648
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-676cc211-960.webp",
+          "bytes": 46290
+        }
+      ]
+    },
+    "/restaurants/teleapo-創作イタリアン肉バルCRAFT/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2728c284-480.webp",
+          "bytes": 15332
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2728c284-960.webp",
+          "bytes": 45790
+        }
+      ]
+    },
+    "/restaurants/teleapo-創作居酒屋こばやし/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-b6c7d544-480.webp",
+          "bytes": 26256
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-b6c7d544-640.webp",
+          "bytes": 41426
+        }
+      ]
+    },
+    "/restaurants/teleapo-創作洋食フルール・ド・セル/hero.jpg": {
+      "width": 200,
+      "height": 140,
+      "items": [
+        {
+          "w": 200,
+          "h": 140,
+          "src": "/_portal/shop-4d48662f-200.webp",
+          "bytes": 5018
+        }
+      ]
+    },
+    "/restaurants/teleapo-北海道本格ジンギスカンひつじや/hero.jpg": {
+      "width": 375,
+      "height": 374,
+      "items": [
+        {
+          "w": 375,
+          "h": 374,
+          "src": "/_portal/shop-78cf490a-375.webp",
+          "bytes": 29128
+        }
+      ]
+    },
+    "/restaurants/teleapo-博多らーめんいのうえ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d6a8c731-480.webp",
+          "bytes": 16148
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d6a8c731-960.webp",
+          "bytes": 68054
+        }
+      ]
+    },
+    "/restaurants/teleapo-参道酒場鶏居/hero.jpg": {
+      "width": 960,
+      "height": 1280,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-3c2e122e-480.webp",
+          "bytes": 49374
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "src": "/_portal/shop-3c2e122e-960.webp",
+          "bytes": 123756
+        }
+      ]
+    },
+    "/restaurants/teleapo-味匠弐/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-284ea5ee-480.webp",
+          "bytes": 13178
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-284ea5ee-960.webp",
+          "bytes": 31182
+        }
+      ]
+    },
+    "/restaurants/teleapo-味感真寿美/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2f740f14-480.webp",
+          "bytes": 10228
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2f740f14-960.webp",
+          "bytes": 25986
+        }
+      ]
+    },
+    "/restaurants/teleapo-和旬席はなぶさ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-b50ffd08-480.webp",
+          "bytes": 17094
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-b50ffd08-960.webp",
+          "bytes": 43732
+        }
+      ]
+    },
+    "/restaurants/teleapo-和牛焼肉たつ竹/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-870f635a-480.webp",
+          "bytes": 26784
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-870f635a-640.webp",
+          "bytes": 44944
+        }
+      ]
+    },
+    "/restaurants/teleapo-和重/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-19282a22-480.webp",
+          "bytes": 20918
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-19282a22-960.webp",
+          "bytes": 79248
+        }
+      ]
+    },
+    "/restaurants/teleapo-咲果庄/hero.jpg": {
+      "width": 900,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-2b0bc449-480.webp",
+          "bytes": 19652
+        },
+        {
+          "w": 900,
+          "h": 600,
+          "src": "/_portal/shop-2b0bc449-900.webp",
+          "bytes": 49440
+        }
+      ]
+    },
+    "/restaurants/teleapo-喜作/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e1aac241-480.webp",
+          "bytes": 7264
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e1aac241-960.webp",
+          "bytes": 15464
+        }
+      ]
+    },
+    "/restaurants/teleapo-喜重軒/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-f5ad9999-480.webp",
+          "bytes": 19250
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-f5ad9999-960.webp",
+          "bytes": 61652
+        }
+      ]
+    },
+    "/restaurants/teleapo-四季七彩こころ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-bd04d9ad-480.webp",
+          "bytes": 16242
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-bd04d9ad-960.webp",
+          "bytes": 49570
+        }
+      ]
+    },
+    "/restaurants/teleapo-多幸/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-9b25396a-480.webp",
+          "bytes": 14658
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-9b25396a-960.webp",
+          "bytes": 43994
+        }
+      ]
+    },
+    "/restaurants/teleapo-大衆天ぷら天ノ松/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-25554472-480.webp",
+          "bytes": 23056
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-25554472-960.webp",
+          "bytes": 79420
+        }
+      ]
+    },
+    "/restaurants/teleapo-太平楽本店/hero.jpg": {
+      "width": 470,
+      "height": 480,
+      "items": [
+        {
+          "w": 470,
+          "h": 480,
+          "src": "/_portal/shop-2f9ceabf-470.webp",
+          "bytes": 31114
+        }
+      ]
+    },
+    "/restaurants/teleapo-太鼓判亭本店/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-703e3c79-480.webp",
+          "bytes": 23956
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-703e3c79-960.webp",
+          "bytes": 75294
+        }
+      ]
+    },
+    "/restaurants/teleapo-宇佐美軒/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-5777fde6-480.webp",
+          "bytes": 48426
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-5777fde6-600.webp",
+          "bytes": 70276
+        }
+      ]
+    },
+    "/restaurants/teleapo-定食屋ふくろう/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-43747c1e-480.webp",
+          "bytes": 21434
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-43747c1e-640.webp",
+          "bytes": 31144
+        }
+      ]
+    },
+    "/restaurants/teleapo-宝光亭/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-67e4d55a-480.webp",
+          "bytes": 31774
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-67e4d55a-960.webp",
+          "bytes": 99802
+        }
+      ]
+    },
+    "/restaurants/teleapo-宴友夜えんゆうや/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-f61bb901-480.webp",
+          "bytes": 22286
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-f61bb901-960.webp",
+          "bytes": 82880
+        }
+      ]
+    },
+    "/restaurants/teleapo-富寿し/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-abb30d98-480.webp",
+          "bytes": 12416
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-abb30d98-960.webp",
+          "bytes": 38046
+        }
+      ]
+    },
+    "/restaurants/teleapo-寿し処大鳥居/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-419908d6-480.webp",
+          "bytes": 20038
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-419908d6-960.webp",
+          "bytes": 58318
+        }
+      ]
+    },
+    "/restaurants/teleapo-寿司割烹粋里/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-b48e620b-480.webp",
+          "bytes": 15100
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-b48e620b-960.webp",
+          "bytes": 42978
+        }
+      ]
+    },
+    "/restaurants/teleapo-寿園カフェ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e42e1713-480.webp",
+          "bytes": 19882
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e42e1713-960.webp",
+          "bytes": 57830
+        }
+      ]
+    },
+    "/restaurants/teleapo-山麓園/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-296ecd3a-480.webp",
+          "bytes": 17726
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-296ecd3a-960.webp",
+          "bytes": 55394
+        }
+      ]
+    },
+    "/restaurants/teleapo-幌馬車樹樹/hero.jpg": {
+      "width": 800,
+      "height": 534,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-68ef7a7f-480.webp",
+          "bytes": 29792
+        },
+        {
+          "w": 800,
+          "h": 534,
+          "src": "/_portal/shop-68ef7a7f-800.webp",
+          "bytes": 74138
+        }
+      ]
+    },
+    "/restaurants/teleapo-延喜/hero.jpg": {
+      "width": 960,
+      "height": 539,
+      "items": [
+        {
+          "w": 480,
+          "h": 270,
+          "src": "/_portal/shop-bad8dfa9-480.webp",
+          "bytes": 27510
+        },
+        {
+          "w": 960,
+          "h": 539,
+          "src": "/_portal/shop-bad8dfa9-960.webp",
+          "bytes": 74368
+        }
+      ]
+    },
+    "/restaurants/teleapo-彩菜酒席日野/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d4a4401c-480.webp",
+          "bytes": 24338
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d4a4401c-960.webp",
+          "bytes": 77082
+        }
+      ]
+    },
+    "/restaurants/teleapo-心晴/hero.jpg": {
+      "width": 960,
+      "height": 563,
+      "items": [
+        {
+          "w": 480,
+          "h": 281,
+          "src": "/_portal/shop-3d77f59a-480.webp",
+          "bytes": 19846
+        },
+        {
+          "w": 960,
+          "h": 563,
+          "src": "/_portal/shop-3d77f59a-960.webp",
+          "bytes": 51016
+        }
+      ]
+    },
+    "/restaurants/teleapo-懐仙/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-320c3202-480.webp",
+          "bytes": 12690
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-320c3202-960.webp",
+          "bytes": 49138
+        }
+      ]
+    },
+    "/restaurants/teleapo-手延べ饂飩粉縒/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5241cfd1-480.webp",
+          "bytes": 21778
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5241cfd1-960.webp",
+          "bytes": 70002
+        }
+      ]
+    },
+    "/restaurants/teleapo-手打ちそば処麺歩めんぽ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-e73f9c6d-480.webp",
+          "bytes": 17350
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-e73f9c6d-960.webp",
+          "bytes": 48194
+        }
+      ]
+    },
+    "/restaurants/teleapo-日本料理利喜笑店八王子/hero.jpg": {
+      "width": 800,
+      "height": 534,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-a9e99111-480.webp",
+          "bytes": 22426
+        },
+        {
+          "w": 800,
+          "h": 534,
+          "src": "/_portal/shop-a9e99111-800.webp",
+          "bytes": 47778
+        }
+      ]
+    },
+    "/restaurants/teleapo-旬肴/hero.jpg": {
+      "width": 482,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 637,
+          "src": "/_portal/shop-eb964e65-480.webp",
+          "bytes": 27616
+        },
+        {
+          "w": 482,
+          "h": 640,
+          "src": "/_portal/shop-eb964e65-482.webp",
+          "bytes": 29098
+        }
+      ]
+    },
+    "/restaurants/teleapo-旬菜笑食屋裕-ひろ-/hero.jpg": {
+      "width": 960,
+      "height": 960,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-be653ca6-480.webp",
+          "bytes": 30792
+        },
+        {
+          "w": 960,
+          "h": 960,
+          "src": "/_portal/shop-be653ca6-960.webp",
+          "bytes": 97444
+        }
+      ]
+    },
+    "/restaurants/teleapo-旬菜美味南風亭/hero.jpg": {
+      "width": 640,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-8543e76c-480.webp",
+          "bytes": 31758
+        },
+        {
+          "w": 640,
+          "h": 640,
+          "src": "/_portal/shop-8543e76c-640.webp",
+          "bytes": 49312
+        }
+      ]
+    },
+    "/restaurants/teleapo-本手打ちそば蕎友館/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-fadf1513-480.webp",
+          "bytes": 20706
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-fadf1513-960.webp",
+          "bytes": 73734
+        }
+      ]
+    },
+    "/restaurants/teleapo-東華飯店/hero.jpg": {
+      "width": 315,
+      "height": 236,
+      "items": [
+        {
+          "w": 315,
+          "h": 236,
+          "src": "/_portal/shop-f4e6c181-315.webp",
+          "bytes": 10848
+        }
+      ]
+    },
+    "/restaurants/teleapo-松寿司本店/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-7de98d6c-480.webp",
+          "bytes": 19060
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-7de98d6c-960.webp",
+          "bytes": 56386
+        }
+      ]
+    },
+    "/restaurants/teleapo-楽喰/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-953eeae4-480.webp",
+          "bytes": 17534
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-953eeae4-960.webp",
+          "bytes": 47098
+        }
+      ]
+    },
+    "/restaurants/teleapo-樂食中華孝（KOU)/hero.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-b95fec66-480.webp",
+          "bytes": 50704
+        }
+      ]
+    },
+    "/restaurants/teleapo-欧風料理小川亭/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-562388fb-480.webp",
+          "bytes": 6136
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-562388fb-960.webp",
+          "bytes": 13820
+        }
+      ]
+    },
+    "/restaurants/teleapo-毘沙門寿司/hero.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-83c8ae65-480.webp",
+          "bytes": 31038
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-83c8ae65-960.webp",
+          "bytes": 90988
+        }
+      ]
+    },
+    "/restaurants/teleapo-汁なし担々麺しろくま/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d1bf388a-480.webp",
+          "bytes": 14762
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d1bf388a-960.webp",
+          "bytes": 41868
+        }
+      ]
+    },
+    "/restaurants/teleapo-沖縄料理ピーター/hero.jpg": {
+      "width": 960,
+      "height": 958,
+      "items": [
+        {
+          "w": 480,
+          "h": 479,
+          "src": "/_portal/shop-6bea4591-480.webp",
+          "bytes": 57600
+        },
+        {
+          "w": 960,
+          "h": 958,
+          "src": "/_portal/shop-6bea4591-960.webp",
+          "bytes": 161834
+        }
+      ]
+    },
+    "/restaurants/teleapo-洋めしBARアーバックル/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-0a697439-480.webp",
+          "bytes": 19818
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-0a697439-960.webp",
+          "bytes": 60110
+        }
+      ]
+    },
+    "/restaurants/teleapo-洋食DiningWoody/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-87c18b96-480.webp",
+          "bytes": 22906
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-87c18b96-600.webp",
+          "bytes": 29710
+        }
+      ]
+    },
+    "/restaurants/teleapo-浜せい/hero.jpg": {
+      "width": 600,
+      "height": 450,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-21728f20-480.webp",
+          "bytes": 18738
+        },
+        {
+          "w": 600,
+          "h": 450,
+          "src": "/_portal/shop-21728f20-600.webp",
+          "bytes": 25782
+        }
+      ]
+    },
+    "/restaurants/teleapo-海カフェプルメリア/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5d56a609-480.webp",
+          "bytes": 24396
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5d56a609-960.webp",
+          "bytes": 87896
+        }
+      ]
+    },
+    "/restaurants/teleapo-海鮮割烹食堂樹八/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-bd70564d-480.webp",
+          "bytes": 17240
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-bd70564d-600.webp",
+          "bytes": 27290
+        }
+      ]
+    },
+    "/restaurants/teleapo-淡路屋/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-a95af998-480.webp",
+          "bytes": 18654
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-a95af998-960.webp",
+          "bytes": 48796
+        }
+      ]
+    },
+    "/restaurants/teleapo-火と時/hero.jpg": {
+      "width": 768,
+      "height": 1024,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-247ff2bc-480.webp",
+          "bytes": 26094
+        },
+        {
+          "w": 768,
+          "h": 1024,
+          "src": "/_portal/shop-247ff2bc-768.webp",
+          "bytes": 45820
+        }
+      ]
+    },
+    "/restaurants/teleapo-炉ばたやき山波月/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-d4f21fb4-480.webp",
+          "bytes": 24148
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-d4f21fb4-600.webp",
+          "bytes": 33118
+        }
+      ]
+    },
+    "/restaurants/teleapo-炭火鰻のこうせい/hero.jpg": {
+      "width": 640,
+      "height": 491,
+      "items": [
+        {
+          "w": 480,
+          "h": 368,
+          "src": "/_portal/shop-cc87839b-480.webp",
+          "bytes": 34652
+        },
+        {
+          "w": 640,
+          "h": 491,
+          "src": "/_portal/shop-cc87839b-640.webp",
+          "bytes": 60626
+        }
+      ]
+    },
+    "/restaurants/teleapo-焼肉87ハナ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-22de0fb1-480.webp",
+          "bytes": 22398
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-22de0fb1-960.webp",
+          "bytes": 52508
+        }
+      ]
+    },
+    "/restaurants/teleapo-焼肉いち/hero.jpg": {
+      "width": 480,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 640,
+          "src": "/_portal/shop-3b613a81-480.webp",
+          "bytes": 83538
+        }
+      ]
+    },
+    "/restaurants/teleapo-焼肉とジンギスカンカルニチン堂/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-30eb2376-480.webp",
+          "bytes": 41252
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-30eb2376-600.webp",
+          "bytes": 59710
+        }
+      ]
+    },
+    "/restaurants/teleapo-焼肉真壁/hero.jpg": {
+      "width": 640,
+      "height": 455,
+      "items": [
+        {
+          "w": 480,
+          "h": 341,
+          "src": "/_portal/shop-11097e9a-480.webp",
+          "bytes": 38910
+        },
+        {
+          "w": 640,
+          "h": 455,
+          "src": "/_portal/shop-11097e9a-640.webp",
+          "bytes": 63492
+        }
+      ]
+    },
+    "/restaurants/teleapo-焼鶏ラーメンあらや/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2840c438-480.webp",
+          "bytes": 19532
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2840c438-960.webp",
+          "bytes": 58616
+        }
+      ]
+    },
+    "/restaurants/teleapo-百饅馬力/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-dd5d5d1f-480.webp",
+          "bytes": 21352
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-dd5d5d1f-960.webp",
+          "bytes": 81440
+        }
+      ]
+    },
+    "/restaurants/teleapo-神宮茶処あじゃり/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-ae950ea4-480.webp",
+          "bytes": 26904
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-ae950ea4-960.webp",
+          "bytes": 85194
+        }
+      ]
+    },
+    "/restaurants/teleapo-秋桜/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-003fa9d3-480.webp",
+          "bytes": 35406
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-003fa9d3-960.webp",
+          "bytes": 121428
+        }
+      ]
+    },
+    "/restaurants/teleapo-竹千庵/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-434f209c-480.webp",
+          "bytes": 9268
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-434f209c-960.webp",
+          "bytes": 31238
+        }
+      ]
+    },
+    "/restaurants/teleapo-笑酒楽/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-128e14db-480.webp",
+          "bytes": 17840
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-128e14db-960.webp",
+          "bytes": 76922
+        }
+      ]
+    },
+    "/restaurants/teleapo-米粉の天丼さんかつ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-bfe65208-480.webp",
+          "bytes": 19334
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-bfe65208-960.webp",
+          "bytes": 66602
+        }
+      ]
+    },
+    "/restaurants/teleapo-紅梅庵/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-9567cda0-480.webp",
+          "bytes": 21656
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-9567cda0-960.webp",
+          "bytes": 72256
+        }
+      ]
+    },
+    "/restaurants/teleapo-縁カフェ天神森/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-be87ce01-480.webp",
+          "bytes": 18100
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-be87ce01-960.webp",
+          "bytes": 64106
+        }
+      ]
+    },
+    "/restaurants/teleapo-肉のまるたか/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d7237775-480.webp",
+          "bytes": 26964
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d7237775-960.webp",
+          "bytes": 78940
+        }
+      ]
+    },
+    "/restaurants/teleapo-茶寮一丈/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-2a92bcdb-480.webp",
+          "bytes": 13088
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-2a92bcdb-960.webp",
+          "bytes": 46822
+        }
+      ]
+    },
+    "/restaurants/teleapo-蒲生第一酒場/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-a4cdccc0-480.webp",
+          "bytes": 13518
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-a4cdccc0-960.webp",
+          "bytes": 29688
+        }
+      ]
+    },
+    "/restaurants/teleapo-蔵カフェ・ぱぷりか/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-1fbce3dc-480.webp",
+          "bytes": 16180
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-1fbce3dc-960.webp",
+          "bytes": 52764
+        }
+      ]
+    },
+    "/restaurants/teleapo-蕎亭う月/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-5358c760-480.webp",
+          "bytes": 24608
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-5358c760-960.webp",
+          "bytes": 65084
+        }
+      ]
+    },
+    "/restaurants/teleapo-蕎粋庵/hero.jpg": {
+      "width": 720,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-2fc5bf9a-480.webp",
+          "bytes": 29308
+        },
+        {
+          "w": 720,
+          "h": 720,
+          "src": "/_portal/shop-2fc5bf9a-720.webp",
+          "bytes": 46946
+        }
+      ]
+    },
+    "/restaurants/teleapo-薪窯ピザドーノ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-d8b55d83-480.webp",
+          "bytes": 36472
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-d8b55d83-960.webp",
+          "bytes": 132424
+        }
+      ]
+    },
+    "/restaurants/teleapo-讃岐うどん明月/hero.jpg": {
+      "width": 800,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-31b06aea-480.webp",
+          "bytes": 26244
+        },
+        {
+          "w": 800,
+          "h": 600,
+          "src": "/_portal/shop-31b06aea-800.webp",
+          "bytes": 52486
+        }
+      ]
+    },
+    "/restaurants/teleapo-赤れんが/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-dd0251aa-480.webp",
+          "bytes": 14726
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-dd0251aa-960.webp",
+          "bytes": 45492
+        }
+      ]
+    },
+    "/restaurants/teleapo-遊楽/hero.jpg": {
+      "width": 640,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-fc235373-480.webp",
+          "bytes": 10270
+        },
+        {
+          "w": 640,
+          "h": 480,
+          "src": "/_portal/shop-fc235373-640.webp",
+          "bytes": 15458
+        }
+      ]
+    },
+    "/restaurants/teleapo-遊民八王子/hero.jpg": {
+      "width": 927,
+      "height": 461,
+      "items": [
+        {
+          "w": 480,
+          "h": 239,
+          "src": "/_portal/shop-82c9a158-480.webp",
+          "bytes": 12288
+        },
+        {
+          "w": 927,
+          "h": 461,
+          "src": "/_portal/shop-82c9a158-927.webp",
+          "bytes": 38510
+        }
+      ]
+    },
+    "/restaurants/teleapo-酒菜ちゃんちゃんこ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-6e22a732-480.webp",
+          "bytes": 13542
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-6e22a732-960.webp",
+          "bytes": 34364
+        }
+      ]
+    },
+    "/restaurants/teleapo-野菜と魚を楽しむ店華－hana/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-896eeb63-480.webp",
+          "bytes": 13854
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-896eeb63-960.webp",
+          "bytes": 38366
+        }
+      ]
+    },
+    "/restaurants/teleapo-鉄板和牛ステーキきらり/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-109be47b-480.webp",
+          "bytes": 25524
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-109be47b-960.webp",
+          "bytes": 95220
+        }
+      ]
+    },
+    "/restaurants/teleapo-雑貨と喫茶と宿題カフェ木下商店/hero.jpg": {
+      "width": 280,
+      "height": 280,
+      "items": [
+        {
+          "w": 280,
+          "h": 280,
+          "src": "/_portal/shop-0ab71184-280.webp",
+          "bytes": 22526
+        }
+      ]
+    },
+    "/restaurants/teleapo-飛騨あっぽ/hero.jpg": {
+      "width": 512,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 600,
+          "src": "/_portal/shop-02257d0f-480.webp",
+          "bytes": 40694
+        },
+        {
+          "w": 512,
+          "h": 640,
+          "src": "/_portal/shop-02257d0f-512.webp",
+          "bytes": 45846
+        }
+      ]
+    },
+    "/restaurants/teleapo-食事呑み処霧笛/hero.jpg": {
+      "width": 480,
+      "height": 480,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-342d9df3-480.webp",
+          "bytes": 22482
+        }
+      ]
+    },
+    "/restaurants/teleapo-食道楽いわたに家/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-f4b41d5e-480.webp",
+          "bytes": 15070
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-f4b41d5e-960.webp",
+          "bytes": 45438
+        }
+      ]
+    },
+    "/restaurants/teleapo-飯＆酒シュビラバ/hero.jpg": {
+      "width": 960,
+      "height": 549,
+      "items": [
+        {
+          "w": 480,
+          "h": 274,
+          "src": "/_portal/shop-c4670b35-480.webp",
+          "bytes": 15094
+        },
+        {
+          "w": 960,
+          "h": 549,
+          "src": "/_portal/shop-c4670b35-960.webp",
+          "bytes": 38246
+        }
+      ]
+    },
+    "/restaurants/teleapo-魚美本店/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-16c43c64-480.webp",
+          "bytes": 53878
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-16c43c64-960.webp",
+          "bytes": 161832
+        }
+      ]
+    },
+    "/restaurants/teleapo-鮨若丸/hero.jpg": {
+      "width": 296,
+      "height": 640,
+      "items": [
+        {
+          "w": 296,
+          "h": 640,
+          "src": "/_portal/shop-51c23b47-296.webp",
+          "bytes": 26026
+        }
+      ]
+    },
+    "/restaurants/teleapo-鳥ト鮪かめ/hero.jpg": {
+      "width": 960,
+      "height": 641,
+      "items": [
+        {
+          "w": 480,
+          "h": 321,
+          "src": "/_portal/shop-1a8f4139-480.webp",
+          "bytes": 15616
+        },
+        {
+          "w": 960,
+          "h": 641,
+          "src": "/_portal/shop-1a8f4139-960.webp",
+          "bytes": 42438
+        }
+      ]
+    },
+    "/restaurants/teleapo-麺やせん崎/hero.jpg": {
+      "width": 960,
+      "height": 720,
+      "items": [
+        {
+          "w": 480,
+          "h": 360,
+          "src": "/_portal/shop-2f29bc4c-480.webp",
+          "bytes": 16692
+        },
+        {
+          "w": 960,
+          "h": 720,
+          "src": "/_portal/shop-2f29bc4c-960.webp",
+          "bytes": 45426
+        }
+      ]
+    },
+    "/restaurants/teleapo-麺酒房風神/hero.jpg": {
+      "width": 600,
+      "height": 600,
+      "items": [
+        {
+          "w": 480,
+          "h": 480,
+          "src": "/_portal/shop-6394fee5-480.webp",
+          "bytes": 24172
+        },
+        {
+          "w": 600,
+          "h": 600,
+          "src": "/_portal/shop-6394fee5-600.webp",
+          "bytes": 33936
+        }
+      ]
+    },
+    "/restaurants/teleapo-黒壁亭/hero.jpg": {
+      "width": 960,
+      "height": 640,
+      "items": [
+        {
+          "w": 480,
+          "h": 320,
+          "src": "/_portal/shop-fcbff2ea-480.webp",
+          "bytes": 19832
+        },
+        {
+          "w": 960,
+          "h": 640,
+          "src": "/_portal/shop-fcbff2ea-960.webp",
+          "bytes": 61958
+        }
+      ]
+    },
+    "/restaurants/yakitori-shimaya-3.jpg": {
+      "width": 960,
+      "height": 625,
+      "items": [
+        {
+          "w": 480,
+          "h": 312,
+          "src": "/_portal/shop-c0c4b23f-480.webp",
+          "bytes": 16876
+        },
+        {
+          "w": 960,
+          "h": 625,
+          "src": "/_portal/shop-c0c4b23f-960.webp",
+          "bytes": 55888
+        }
+      ]
+    }
+  }
+}

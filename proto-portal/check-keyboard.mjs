@@ -11,6 +11,9 @@
  *  4. /station/kyoto/祇園四条: 「今開いている店だけ」の切替に Tab で届き、Space で切り替わる（URL に ?open=1）
  *  5. フッターの <summary>（地方ブロック）に Tab で届き、Enter で開閉する
  *  6. 総合サイトの主なページで <img> の alt 属性が全部ある（空 alt は装飾として許可。ただし単独のリンクの中の画像は不可）
+ *  7. 検索の combobox（幅1440）: Tab で「検索を開く」→ Enter で開く → 入力 → 候補（role=listbox/option・aria-expanded・aria-controls）
+ *     → ↓で選ぶ（aria-activedescendant・選択行のリング）→ Esc で候補を閉じる → もう一度 Esc で検索欄を閉じてボタンへ戻る → ↓ と Enter で移動
+ *  8. 共有ボタン（駅ページ）: Tab で4つのコントロールに順に届き、それぞれリングが見える。コピーは Enter で動き、状況が role=status に出る
  * フォーカスリングの検査: :focus-visible の outline が付いていて、リングの色と周りの背景のコントラストが 3:1 以上（スクリーンショットから実測）。
  * 違反があれば終了コード 1。
  */
@@ -240,12 +243,101 @@ console.log("5. フッターの地方ブロック（summary）");
   await ctx2.close();
 }
 
+// ───── 7. 検索の combobox ─────
+console.log("7. 検索の combobox（幅1440）");
+{
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "reduce" });
+  const page = await ctx.newPage();
+  await page.goto(BASE + encodeURI("/station/kyoto/祇園四条"), { waitUntil: "load" });
+  await page.waitForTimeout(1500);
+  const n = await tabUntil(page, () => document.activeElement?.getAttribute("aria-label") === "検索を開く", 20);
+  if (n < 0) ng("検索を開くボタンに Tab で届かない");
+  else {
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(900);
+    const onInput = await page.evaluate(() => document.activeElement?.matches?.(".mp-hd-search input"));
+    onInput ? ok("Enter で検索欄が開き、入力欄にフォーカスが移る") : ng("検索を開いても入力欄にフォーカスが移らない");
+    const ri = await ringOf(page);
+    ri?.ring && ri.contrast >= 3 ? ok(`検索の入力欄のフォーカスリング（${ri.contrast.toFixed(1)}）`) : ng(`検索の入力欄のフォーカスリングが見えない（${ri?.contrast?.toFixed(2)}）`);
+    await page.keyboard.type("三宮", { delay: 40 });
+    await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 15000 }).catch(() => {});
+    const roles = await page.evaluate(() => {
+      const i = document.activeElement;
+      const lb = document.getElementById(i.getAttribute("aria-controls") || "");
+      return { role: i.getAttribute("role"), exp: i.getAttribute("aria-expanded"), ac: i.getAttribute("aria-autocomplete"), lb: lb?.getAttribute("role"), opts: lb ? [...lb.querySelectorAll('[role="option"]')].length : 0 };
+    });
+    roles.role === "combobox" && roles.exp === "true" && roles.lb === "listbox" && roles.opts >= 2 ? ok(`role=combobox・aria-expanded=true・aria-controls → listbox（候補 ${roles.opts}）`) : ng(`combobox の ARIA が不完全（${JSON.stringify(roles)}）`);
+    await page.keyboard.press("ArrowDown");
+    const sel = await page.evaluate(() => {
+      const i = document.activeElement;
+      const id = i.getAttribute("aria-activedescendant");
+      const o = id ? document.getElementById(id) : null;
+      if (!o) return null;
+      const cs = getComputedStyle(o);
+      const bg = getComputedStyle(o.parentElement).backgroundColor;
+      return { selected: o.getAttribute("aria-selected"), os: cs.outlineStyle, ow: parseFloat(cs.outlineWidth) || 0, oc: cs.outlineColor, bg };
+    });
+    if (!sel || sel.selected !== "true") ng("↓ で aria-activedescendant の候補が選択状態にならない");
+    else {
+      const rgb = (c) => c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number);
+      const c = ratio(rgb(sel.oc), rgb(sel.bg));
+      sel.os !== "none" && sel.ow >= 2 && c >= 3 ? ok(`↓ で候補が選択され、選択行にリング ${sel.ow}px（コントラスト ${c.toFixed(1)}）`) : ng(`選択行のリングが見えない（${JSON.stringify(sel)} / ${c.toFixed(2)}）`);
+    }
+    await page.keyboard.press("Escape");
+    await page.waitForTimeout(200);
+    const closed = await page.evaluate(() => ({ lb: !!document.querySelector('[role="listbox"]'), onInput: !!document.activeElement?.matches?.(".mp-hd-search input"), exp: document.activeElement?.getAttribute("aria-expanded") }));
+    !closed.lb && closed.onInput && closed.exp === "false" ? ok("Esc で候補が閉じる（フォーカスは入力欄のまま・aria-expanded=false）") : ng(`Esc で候補が閉じない（${JSON.stringify(closed)}）`);
+    await page.keyboard.press("Escape");
+    await page.waitForTimeout(500);
+    const back = await page.evaluate(() => ({ btn: document.activeElement?.getAttribute("aria-label"), open: document.querySelector(".mp-hd-search")?.classList.contains("open") }));
+    back.btn === "検索を開く" && !back.open ? ok("もう一度 Esc で検索欄が閉じ、フォーカスが「検索を開く」に戻る") : ng(`Esc で検索欄が閉じない（${JSON.stringify(back)}）`);
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(700);
+    // （type="search" は Esc で入力が消えるので、打ち直す）
+    await page.keyboard.type("三宮", { delay: 40 });
+    await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 15000 }).catch(() => {});
+    await page.keyboard.press("ArrowDown");
+    await page.waitForTimeout(200);
+    await Promise.all([page.waitForURL(/\/station\/hyogo\//, { timeout: 15000 }).catch(() => {}), page.keyboard.press("Enter")]);
+    decodeURIComponent(page.url()).includes("/station/hyogo/神戸三宮") ? ok("↓ と Enter で候補の駅ページへ移動する") : ng(`Enter で移動しない（${decodeURIComponent(page.url())}）`);
+  }
+  await ctx.close();
+}
+
+// ───── 8. 共有ボタン ─────
+console.log("8. 共有ボタン（駅ページ）");
+{
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "reduce", permissions: ["clipboard-read", "clipboard-write"] });
+  const page = await ctx.newPage();
+  await page.goto(BASE + encodeURI("/station/kyoto/祇園四条"), { waitUntil: "load" });
+  await page.waitForTimeout(1500);
+  const first = await tabUntil(page, () => !!document.activeElement?.closest?.("[data-share]"), 120);
+  if (first < 0) ng("共有ボタンに Tab で届かない");
+  else {
+    const kinds = [];
+    for (let i = 0; i < 4; i++) {
+      const r = await ringOf(page);
+      const k = await page.evaluate(() => document.activeElement?.getAttribute("data-share-kind"));
+      kinds.push(k);
+      r?.ring && r.contrast >= 3 ? ok(`共有「${r.name}」にリング（${r.contrast.toFixed(1)}）`) : ng(`共有「${r?.name}」のフォーカスリングが見えない（${r?.contrast?.toFixed(2)}）`);
+      if (i < 3) await page.keyboard.press("Tab");
+    }
+    kinds.join(",") === "line,x,facebook,copy" ? ok("Tab の順番は LINE → X → Facebook → リンクをコピー") : ng(`共有ボタンの Tab の順番が違う（${kinds.join(",")}）`);
+    await page.keyboard.press("Enter");
+    await page.waitForTimeout(400);
+    const msg = await page.evaluate(() => document.querySelector("[data-share] [role=status]")?.textContent || "");
+    const clip = await page.evaluate(() => navigator.clipboard.readText()).catch(() => "");
+    /コピーしました/.test(msg) && clip.startsWith("https://machinowa.tokyo/station/kyoto/") ? ok("コピーは Enter で動き、role=status に「コピーしました」が出る") : ng(`コピーが動かない（${msg} / ${clip}）`);
+  }
+  await ctx.close();
+}
+
 // ───── 6. 画像の alt ─────
 console.log("6. 画像の alt");
 {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await ctx.newPage();
-  const pages = ["/", "/beauty", "/area/tokyo", "/station", "/station/kyoto", "/station/kyoto/祇園四条", "/station/hyogo/神戸三宮", "/videos", "/videos/sv-nazatu-1", "/map", "/map?pref=kyoto"];
+  const pages = ["/", "/beauty", "/area/tokyo", "/station", "/station/kyoto", "/station/kyoto/祇園四条", "/station/hyogo/神戸三宮", "/videos", "/videos/sv-nazatu-1", "/map", "/map?pref=kyoto", "/find?q=三宮", "/find?q=京都"];
   let imgs = 0;
   for (const u of pages) {
     await page.goto(BASE + encodeURI(u), { waitUntil: "load" });

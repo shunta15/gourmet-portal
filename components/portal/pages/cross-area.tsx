@@ -19,7 +19,7 @@ import VideoTiles from "../video/VideoTiles";
 import PortalMap from "../PortalMap";
 import { notFoundMetadata, pick } from "./data";
 import { StationChips } from "./station-parts";
-import { Block, PageFrame, accentStyle, type Tone } from "./frame";
+import { Block, PageFrame, ShareSection, accentStyle, type Tone } from "./frame";
 
 type Props = { params: Promise<{ pref: string }> };
 
@@ -183,6 +183,8 @@ export default async function Page({ params }: Props) {
           ))}
         </ul>
       </Block>
+
+      <ShareSection path={`/area/${pref}`} text={`${area.short}の店を業種から探す｜マチノワ`} label="この街のページを共有" />
     </PageFrame>
   );
 }

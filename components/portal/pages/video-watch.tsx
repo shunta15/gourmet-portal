@@ -23,12 +23,13 @@ import {
   videoDescription,
 } from "@/lib/videos/display";
 import { safeDecode } from "@/lib/stations/query";
+import ShopLinks from "@/components/portal/ShopLinks";
 import VideoFacade from "@/components/portal/video/VideoFacade";
 import VideoTiles from "@/components/portal/video/VideoTiles";
 import { toFacade } from "@/components/portal/video/facade";
 import { videoTone } from "@/components/portal/video/VideoCard";
 import { notFoundMetadata } from "./data";
-import { Block, PageFrame, type Tone } from "./frame";
+import { Block, PageFrame, ShareSection, type Tone } from "./frame";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -127,6 +128,7 @@ export default async function Page({ params }: Props) {
                     </Link>
                   )}
                 </p>
+                <ShopLinks links={s.links} storeId={s.id} page={`/videos/${video.id}`} />
               </div>
             ))}
             {stores.length === 0 && <p className="mp-vd-nostore">映っている店の情報は、まだ登録されていません。</p>}
@@ -157,6 +159,13 @@ export default async function Page({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <ShareSection
+        path={`/videos/${video.id}`}
+        text={`${shortTitle(video, 40)}｜マチノワ`}
+        label="この動画を共有"
+        storeId={store?.id}
+      />
 
       {sameStore.length > 0 && store && (
         <Block id="mp-vd-store-h" kicker="Same shop" title={`${store.name}の他の動画`}>

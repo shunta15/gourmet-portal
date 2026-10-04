@@ -72,6 +72,13 @@ export type Restaurant = {
   reservationUrl?: string;
   phone?: string;
   instagram?: string;
+  /** 店の公式アカウント・公式サイト（任意。値がある店だけ総合サイト・店ページにボタンが出る。値は推測で作らない） */
+  tiktok?: string;
+  x?: string;
+  facebook?: string;
+  /** LINE 公式アカウントの URL */
+  line?: string;
+  website?: string;
   source?: { label: string; url: string };
   body?: string[];
   highlights?: string[];

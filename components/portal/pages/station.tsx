@@ -12,6 +12,7 @@ import { getPrefBySlug } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { isUsableImage } from "@/lib/portal/home";
+import { shopPhoto } from "@/lib/portal/photos";
 import { sized } from "@/lib/imageUrl";
 import { isBlockedImage } from "@/lib/imageBlocklist";
 import { buildMetadata } from "@/lib/seo/meta";
@@ -38,9 +39,10 @@ import { loadMapData, subsetOf } from "@/lib/portal/mapData";
 import { packWeeks } from "@/lib/portal/openNow";
 import VideoTiles from "../video/VideoTiles";
 import PortalMap from "../PortalMap";
+import ShopPhoto from "../ShopPhoto";
 import { OpenBadge, OpenBar, OpenCount, OpenScope } from "../OpenNow";
 import { notFoundMetadata } from "./data";
-import { Block, PageFrame, accentStyle } from "./frame";
+import { Block, PageFrame, ShareSection, accentStyle } from "./frame";
 import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
 
 type Props = { params: Promise<{ pref: string; name: string }> };
@@ -107,7 +109,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function StoreCard({ s }: { s: StationStore }) {
   const { place: p, vertical: v } = s;
-  const img = p.image && isUsableImage(p.image) && !isBlockedImage(p.image) ? sized(p.image, 480) : null;
   const cat = placeCategoryName(v, p);
   const walk =
     s.kind === "stated"
@@ -121,9 +122,8 @@ function StoreCard({ s }: { s: StationStore }) {
     <li>
       <Link href={placeHref(v, p)} prefetch={false} className="mp-st-card" data-cursor={VERTICAL_FACE[v.key].en.toUpperCase()}>
         <span className="img">
-          {img ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={img} alt={`${p.name}の写真`} loading="lazy" decoding="async" width={480} height={360} />
+          {shopPhoto(p.image) ? (
+            <ShopPhoto image={p.image} alt={`${p.name}の写真`} sizes="(max-width: 700px) 46vw, 280px" />
           ) : (
             <span className="g" aria-hidden="true">{VERTICAL_FACE[v.key].glyph}</span>
           )}
@@ -325,6 +325,7 @@ export default async function Page({ params }: Props) {
         </ul>
       </Block>
 
+      <ShareSection path={`/station/${pref}/${st.name}`} text={`${heading}の店｜マチノワ`} label="この駅のページを共有" />
       <StationCredit />
       <JsonLd data={ld} />
     </PageFrame>
