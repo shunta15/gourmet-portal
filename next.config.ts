@@ -23,6 +23,7 @@ const PORTAL_OFF_SOURCES = [
   "/station/:path*",
   "/map/:path*",
   "/find/:path*",
+  "/photos/:path*",
   "/og/:path*",
   "/videos",
   "/videos/:id",

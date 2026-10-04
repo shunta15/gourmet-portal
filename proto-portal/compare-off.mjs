@@ -313,6 +313,9 @@ const PORTAL_404 = [
   "/videos/sv-nazatu-1",
   "/find",
   "/find?q=三宮",
+  "/photos",
+  "/photos?genre=ramen&pref=kyoto",
+  "/photos/sitemap.xml",
   "/search-index.json",
   "/_portal/home-046f05f2-480.webp", // 事前生成した写真（public/_portal。OFF では 404）
   "/og/home",

@@ -2,6 +2,9 @@ import HomeClient from "@/components/HomeClient";
 import { SHORT_VIDEOS, NEIGHBORHOODS, REGIONS, toCardItem, type RegionKey, type Stat } from "@/lib/regions";
 import { FEATURES, getNationalStats, getRegionStats } from "@/lib/data";
 import { getAllRestaurants } from "@/lib/db/restaurants";
+import { isPortalLive } from "@/lib/portal/launch";
+import { buildWall, entrancePhotos } from "@/lib/portal/photoWall";
+import PhotosEntrance from "@/components/portal/PhotosEntrance";
 
 /**
  * グルメのトップの中身（旧 `/` の page.tsx をそのまま移したもの。サーバーコンポーネント）。
@@ -19,6 +22,13 @@ export default async function GourmetHome() {
     (Object.keys(REGIONS) as RegionKey[]).map((k) => [k, getRegionStats(k)])
   ) as Record<RegionKey, Stat[]>;
 
+  // 総合サイトの入口（公開スイッチ ON のときだけ。OFF のときは undefined で、出力は従来と同じ）
+  let portalEntrances: React.ReactNode;
+  if (isPortalLive()) {
+    const wall = buildWall(restaurants);
+    portalEntrances = <PhotosEntrance photos={entrancePhotos(wall, 6)} total={wall.items.length} />;
+  }
+
   return (
     <HomeClient
       features={FEATURES}
@@ -28,6 +38,7 @@ export default async function GourmetHome() {
       cuisines={cuisines}
       stats={stats}
       regionStats={regionStats}
+      portalEntrances={portalEntrances}
     />
   );
 }

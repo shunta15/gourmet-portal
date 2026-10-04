@@ -54,6 +54,8 @@ const PAGES = arg(
     "/find?q=三宮",
     "/find?q=京都",
     "/find?q=zzzz",
+    "/photos",
+    "/photos?genre=ramen&pref=kyoto",
   ].join(","),
 ).split(",");
 const VIEWPORTS = [

@@ -11,7 +11,7 @@
 |---|---|---|
 | `/` | 今のグルメのトップ（metadata・canonical・JSON-LD も同一） | 総合トップ（index） |
 | `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`） |
-| 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
+| 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/photos`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
 | `robots.txt` | 今と同一 | 総合サイトのサイトマップ 7 本を追記 |
 | `/sitemap.xml` | 今と同一 | `/gourmet` が増える |
 | グルメ店ページの SNS・共有ボタン・計測 | 出ない | 出る |
