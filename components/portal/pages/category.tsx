@@ -2,6 +2,7 @@
  * 種類ページ（全国）の共通部品。/{v}/{category}
  * 各業種の app/{v}/[category]/page.tsx は categoryPage(key) の結果をそのまま出すだけ。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getCategory, getVertical } from "@/lib/verticals";
@@ -15,9 +16,9 @@ type Props = { params: Promise<{ category: string }> };
 
 export function categoryPage(key: PortalVertical) {
   return {
-    generateStaticParams() {
+    generateStaticParams: liveStaticParams(() => {
       return getVertical(key).categories.map((c) => ({ category: c.slug }));
-    },
+    }),
 
     async generateMetadata({ params }: Props): Promise<Metadata> {
       const { category } = await params;

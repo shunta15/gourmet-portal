@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { isIndexable } from "@/lib/seo/gate";
 import { SITE_URL, absUrl } from "@/lib/seo/util";
+import { assertPortalLive } from "@/lib/portal/launch";
 import { getAllVideos } from "@/lib/videos";
 import { getVideoStores } from "@/lib/videos/stores";
 import { displayTitle, isVideoIndexable, tiktokPlayerUrl, videoDescription } from "@/lib/videos/display";
@@ -13,6 +14,7 @@ export const revalidate = 3600;
  * 今は投稿日が分かる動画が無いので空。既存の /sitemap.xml は変えない。
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  assertPortalLive(); // 公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）
   const videos = getAllVideos().filter(isVideoIndexable);
   const out: MetadataRoute.Sitemap = [];
   if (isIndexable(videos.length)) out.push({ url: `${SITE_URL}/videos` });

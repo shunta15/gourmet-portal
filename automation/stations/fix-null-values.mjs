@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const ROOT_DIR = "/Users/shunta/claude/gp-portal";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT_DIR = path.resolve(__dirname, "../.."); // リポジトリのルート（worktree でも main でも動くよう、スクリプトの位置から求める）
 const OUTPUT_DIR = path.join(ROOT_DIR, "lib/stations");
 const storeStationsFile = path.join(OUTPUT_DIR, "storeStations.json");
 

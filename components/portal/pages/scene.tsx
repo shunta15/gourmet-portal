@@ -3,6 +3,7 @@
  * 各業種の app/{v}/scene/[slug]/page.tsx は scenePage(key) の結果をそのまま出すだけ。
  * 店は scene.matchTags にタグ一致したものだけ（事実の根拠があるタグだけが付く前提）。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getVertical } from "@/lib/verticals";
@@ -20,9 +21,9 @@ function findScene(v: Vertical, slug: string): Scene | null {
 
 export function scenePage(key: PortalVertical) {
   return {
-    generateStaticParams() {
+    generateStaticParams: liveStaticParams(() => {
       return getVertical(key).scenes.map((s) => ({ slug: s.slug }));
-    },
+    }),
 
     async generateMetadata({ params }: Props): Promise<Metadata> {
       const { slug } = await params;

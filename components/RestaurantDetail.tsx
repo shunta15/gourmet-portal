@@ -1,22 +1,24 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS } from "@/lib/regions";
 import { sized } from "@/lib/imageUrl";
 import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
 import type { GeoPoint } from "@/lib/geo";
 import { mapsUrlForRestaurant } from "@/lib/maps";
-import { shareTarget } from "@/lib/portal/share";
-import { trackTap } from "@/lib/portal/track";
 import type { ShopLink } from "@/lib/portal/sns";
-import ShopLinks from "./portal/ShopLinks";
-import ShareButtons from "./portal/ShareButtons";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
 import LeafletMap from "./LeafletMap";
 import Footer from "./Footer";
+
+// 総合サイトの公開スイッチ（lib/portal/launch.ts）が OFF のあいだは描画しない部品。
+// 静的に import すると、描画しなくても JS がグルメの全店ページに混ざるので、React.lazy でクライアント側で分割する
+// （Next.js は、サーバー側の動的 import や next/dynamic でも、入口から辿れるクライアント部品の JS を描画の有無に関わらず読み込ませる）。
+const ShopLinks = lazy(() => import("./portal/ShopLinks"));
+const ShareButtons = lazy(() => import("./portal/ShareButtons"));
 
 interface RestaurantDetailProps {
   r: Restaurant;
@@ -27,12 +29,37 @@ interface RestaurantDetailProps {
   featureId?: string;
   /** この店がある街（市区町村）。店が2店以上ある街なら「<街>の他の店」へのリンクを出す */
   town?: { name: string; href: string; count: number } | null;
-  /** 店の SNS・公式サイトのボタン（値がある項目だけ。lib/portal/shopSocial.ts） */
+  /**
+   * 総合サイトの公開スイッチ（lib/portal/launch.ts）が ON のときだけ true（サーバー app/restaurant/[id]/page.tsx が渡す）。
+   * false（本番の既定。未指定も同じ）なら、SNS・共有ボタンも送客の計測も出さない＝従来の HTML・従来の JS のまま。
+   */
+  portalLive?: boolean;
+  /** 店の SNS・公式サイトのボタン（値がある項目だけ。lib/portal/shopSocial.ts）。portalLive のときだけ使う */
   social?: ShopLink[];
+  /** 共有する URL（そのページの正規 URL。lib/portal/share.ts の shareTarget）。portalLive のときだけ使う */
+  shareUrl?: string;
 }
 
-export default function RestaurantDetail({ r, related, shortVideos, geo, featureId, town, social = [] }: RestaurantDetailProps) {
+export default function RestaurantDetail({
+  r,
+  related,
+  shortVideos,
+  geo,
+  featureId,
+  town,
+  portalLive = false,
+  social = [],
+  shareUrl = "",
+}: RestaurantDetailProps) {
   useReveal();
+  // 送客の計測（lib/portal/track.ts）。OFF では何も送らず、track.ts も読み込まない。
+  // ON のときは表示後に先読みして、タップの時点でモジュールが手元にあるようにする（遷移で送信が間に合わなくなるのを避ける）
+  useEffect(() => {
+    if (portalLive) void import("@/lib/portal/track");
+  }, [portalLive]);
+  const tap = (kind: "phone" | "map" | "reserve") => {
+    if (portalLive) void import("@/lib/portal/track").then((m) => m.trackTap({ storeId: r.id, kind, page: `/restaurant/${r.id}` }));
+  };
   const heroRef = useRef<HTMLDivElement>(null);
   useParallax(heroRef, 0.18);
   const region = REGIONS[r.region];
@@ -221,7 +248,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="sb-submit"
                 style={{ padding: "16px 32px" }}
                 data-cursor="BOOK"
-                onClick={() => trackTap({ storeId: r.id, kind: "reserve", page: `/restaurant/${r.id}` })}
+                onClick={() => tap("reserve")}
               >
                 予約する →
               </a>
@@ -232,7 +259,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="sb-submit"
                 style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
                 data-cursor="CALL"
-                onClick={() => trackTap({ storeId: r.id, kind: "phone", page: `/restaurant/${r.id}` })}
+                onClick={() => tap("phone")}
               >
                 電話する（{r.phone}）
               </a>
@@ -245,7 +272,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 className="chip"
                 style={{ padding: "16px 24px", borderRadius: 0 }}
                 data-cursor="MAP"
-                onClick={() => trackTap({ storeId: r.id, kind: "map", page: `/restaurant/${r.id}` })}
+                onClick={() => tap("map")}
               >
                 Google マップで開く ↗
               </a>
@@ -260,7 +287,11 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                 地図を見る ↗
               </a>
             )}
-            <ShopLinks variant="gourmet" links={social} storeId={r.id} page={`/restaurant/${r.id}`} />
+            {portalLive && (
+              <Suspense fallback={null}>
+                <ShopLinks variant="gourmet" links={social} storeId={r.id} page={`/restaurant/${r.id}`} />
+              </Suspense>
+            )}
             {!r.phone && !r.reservationUrl && (
               <a
                 href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
@@ -315,14 +346,18 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
             </Link>
           </div>
 
-          <ShareButtons
-            variant="gourmet"
-            url={shareTarget(`/restaurant/${r.id}`)}
-            text={`${r.name}｜マチノワ`}
-            page={`/restaurant/${r.id}`}
-            storeId={r.id}
-            label="この店を共有"
-          />
+          {portalLive && (
+            <Suspense fallback={null}>
+              <ShareButtons
+                variant="gourmet"
+                url={shareUrl}
+                text={`${r.name}｜マチノワ`}
+                page={`/restaurant/${r.id}`}
+                storeId={r.id}
+                label="この店を共有"
+              />
+            </Suspense>
+          )}
         </section>
 
         {geo && (
@@ -363,7 +398,7 @@ export default function RestaurantDetail({ r, related, shortVideos, geo, feature
                   className="chip"
                   style={{ padding: "12px 20px", borderRadius: 0, marginTop: 16 }}
                   data-cursor="MAP"
-                  onClick={() => trackTap({ storeId: r.id, kind: "map", page: `/restaurant/${r.id}` })}
+                  onClick={() => tap("map")}
                 >
                   Google マップで開く ↗
                 </a>

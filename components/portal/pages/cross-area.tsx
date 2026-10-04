@@ -3,6 +3,7 @@
  * グルメは既存の /region/{key}（lib/areas/gourmet.ts の対応表で引く）。新業種は /{v}/area/{pref}。
  * 件数は実データだけ。0 のときは「掲載準備中」を出し、リンクは張らない。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -43,9 +44,9 @@ async function rowsFor(pref: string) {
   );
 }
 
-export function generateStaticParams() {
+export const generateStaticParams = liveStaticParams(() => {
   return PREFECTURES.map((p) => ({ pref: p.slug }));
-}
+});
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pref } = await params;

@@ -4,6 +4,7 @@
  * JSON-LD は BreadcrumbList（パンくず）と、投稿日が分かる動画だけ VideoObject。
  * 投稿日が無い動画（動画ファイルなど）は VideoObject を出さず noindex。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -35,9 +36,9 @@ type Props = { params: Promise<{ id: string }> };
 
 const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "動" };
 
-export function generateStaticParams() {
+export const generateStaticParams = liveStaticParams(() => {
   return getAllVideos().map((v) => ({ id: v.id }));
-}
+});
 
 async function find(params: Props["params"]): Promise<{ video: Video; stores: VideoStore[] } | null> {
   const { id } = await params;

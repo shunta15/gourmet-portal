@@ -14,7 +14,9 @@ import { GEO } from "@/lib/geo";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 import { getTownOfRestaurant } from "@/lib/db/towns";
+import { isPortalLive } from "@/lib/portal/launch";
 import { restaurantSocialLinks } from "@/lib/portal/shopSocial";
+import { shareTarget } from "@/lib/portal/share";
 import {
   restaurantTitle,
   restaurantDescription,
@@ -111,6 +113,9 @@ export default async function RestaurantPage({
   // この店がある街（市区町村）。店が2店以上ある街なら「<街>の他の店」へのリンクを出す
   const town = await getTownOfRestaurant(r, regionRestaurants);
 
+  // SNS・共有ボタン・送客の計測は総合サイトの公開スイッチ（lib/portal/launch.ts）が ON のときだけ。OFF では旧 HTML・旧 JS と同一
+  const live = isPortalLive();
+
   return (
     <>
       <script
@@ -128,7 +133,9 @@ export default async function RestaurantPage({
         geo={GEO[r.id] ?? null}
         featureId={featureId}
         town={town ? { name: town.town, href: town.href, count: town.count } : null}
-        social={restaurantSocialLinks(r)}
+        portalLive={live}
+        social={live ? restaurantSocialLinks(r) : []}
+        shareUrl={live ? shareTarget(`/restaurant/${r.id}`) : ""}
       />
     </>
   );

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { isIndexable } from "@/lib/seo/gate";
 import { SITE_URL } from "@/lib/seo/util";
+import { assertPortalLive } from "@/lib/portal/launch";
 import { getStationIndex } from "@/lib/stations/query";
 
 export const revalidate = 3600;
@@ -11,6 +12,7 @@ export const revalidate = 3600;
  * 日本語の駅名は URL のパスセグメントなので percent-encode する（既存 app/sitemap.ts の特集と同じ）。
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  assertPortalLive(); // 公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）
   const idx = await getStationIndex();
   const paths: string[] = [];
   if (isIndexable(idx.totalStores)) paths.push("/station");

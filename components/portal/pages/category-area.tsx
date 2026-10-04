@@ -2,6 +2,7 @@
  * 種類×地域ページ（県）の共通部品。/{v}/{category}/{pref}
  * 各業種の app/{v}/[category]/[pref]/page.tsx は categoryAreaPage(key) の結果をそのまま出すだけ。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
@@ -16,9 +17,9 @@ type Props = { params: Promise<{ category: string; pref: string }> };
 
 export function categoryAreaPage(key: PortalVertical) {
   return {
-    generateStaticParams() {
+    generateStaticParams: liveStaticParams(() => {
       return getVertical(key).categories.flatMap((c) => PREFECTURES.map((p) => ({ category: c.slug, pref: p.slug })));
-    },
+    }),
 
     async generateMetadata({ params }: Props): Promise<Metadata> {
       const { category, pref } = await params;

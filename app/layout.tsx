@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteShell from "@/components/SiteShell";
+import PortalShell from "@/components/portal/PortalShell";
 import { buildOrganizationJsonLd, buildWebSiteJsonLd } from "@/lib/jsonld";
 import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { isPortalLive } from "@/lib/portal/launch";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -49,6 +51,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // 総合サイトの公開スイッチ（lib/portal/launch.ts）。OFF のあいだは従来の SiteShell だけを描画する
+  const Shell = isPortalLive() ? PortalShell : SiteShell;
   return (
     <html lang="ja" data-region="tokyo" className={cn("font-sans", geist.variable)}>
       <head>
@@ -77,14 +81,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(buildWebSiteJsonLd()),
+            __html: JSON.stringify(buildWebSiteJsonLd(isPortalLive() ? "/find" : "/search")),
           }}
         />
       </head>
       <body>
-        <SiteShell>
-          {children}
-        </SiteShell>
+        <Shell>{children}</Shell>
         <Analytics />
       </body>
     </html>

@@ -7,10 +7,12 @@ import type { MetadataRoute } from "next";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
+import { assertPortalLive } from "@/lib/portal/launch";
 import { loadVertical, pick, type PortalVertical } from "./data";
 
 export function verticalSitemap(key: PortalVertical) {
   return async function sitemap(): Promise<MetadataRoute.Sitemap> {
+    assertPortalLive(); // 公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）
     const { v, all } = await loadVertical(key);
     const paths: string[] = [];
     const add = (path: string, count: number) => {

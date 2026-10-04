@@ -2,6 +2,7 @@
  * 県の駅エリア一覧。/station/{pref}
  * 店のある駅エリアを件数の多い順に並べる。店のある駅が無い県は 404。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,10 +15,10 @@ import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
 
 type Props = { params: Promise<{ pref: string }> };
 
-export async function generateStaticParams() {
+export const generateStaticParams = liveStaticParams(async () => {
   const idx = await getStationIndex();
   return [...idx.byPref.keys()].map((pref) => ({ pref }));
-}
+});
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pref = safeDecode((await params).pref);

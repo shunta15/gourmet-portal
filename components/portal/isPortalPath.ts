@@ -1,6 +1,7 @@
 /**
  * 総合サイト用のヘッダー・フッターを出すパスかどうか。
- * - /（総合トップ）
+ * - /（総合トップ）と /portal-home（総合トップの実体ルート。公開スイッチ ON のとき `/` は next.config.ts の rewrites でここに来る。
+ *   プリレンダー済みの HTML は /portal-home のパスで作られるので、サーバー側の判定にも含める）
  * - /area/**（業種横断の街）
  * - /station/**（駅から探す。業種横断）
  * - /videos/**（動画で探す。業種横断）
@@ -13,7 +14,7 @@ const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/leisure', '/stay']
 
 export function isPortalPath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;
-  if (pathname === '/') return true;
+  if (pathname === '/' || pathname === '/portal-home') return true;
   if (pathname === '/area' || pathname.startsWith('/area/')) return true;
   if (pathname === '/station' || pathname.startsWith('/station/')) return true;
   if (pathname === '/videos' || pathname.startsWith('/videos/')) return true;

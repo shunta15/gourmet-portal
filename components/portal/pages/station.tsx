@@ -4,6 +4,7 @@
  * 「駅から直線距離 800m 以内の店（nearby、近い順）」。
  * 徒歩分数は店の案内文から取れたものだけ。距離から分数を作らない（lib/stations/walk.ts）。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -47,10 +48,10 @@ import { STATION_TONE, StationChips, StationCredit } from "./station-parts";
 
 type Props = { params: Promise<{ pref: string; name: string }> };
 
-export async function generateStaticParams() {
+export const generateStaticParams = liveStaticParams(async () => {
   const idx = await getStationIndex();
   return idx.all.map((s) => ({ pref: s.station.pref!, name: s.station.name }));
-}
+});
 
 async function find(params: Props["params"]): Promise<{ pref: string; summary: StationSummary } | null> {
   const p = await params;

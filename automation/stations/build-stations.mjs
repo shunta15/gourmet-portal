@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SCRATCHPAD = "/private/tmp/claude-501/-Users-shunta-claude/666109d7-a009-4dee-943a-cbc6676e581c/scratchpad/stations";
 const STATION_DATA = path.join(SCRATCHPAD, "N02-25_GML/UTF-8/N02-25_Station.geojson");
-const ROOT_DIR = "/Users/shunta/claude/gp-portal";
+const ROOT_DIR = path.resolve(__dirname, "../.."); // リポジトリのルート（worktree でも main でも動くよう、スクリプトの位置から求める）
 const OUTPUT_DIR = path.join(ROOT_DIR, "lib/stations");
 const GEO_FILE = path.join(ROOT_DIR, "lib/geo.ts");
 const PREF_FILE = path.join(ROOT_DIR, "lib/areas/prefectures.ts");

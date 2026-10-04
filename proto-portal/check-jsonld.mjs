@@ -6,6 +6,7 @@
  * - ビルド出力（.next/server/app の総合サイトのページの HTML）の <script type="application/ld+json"> を全部パースする。
  *   対象: / ・ /area/** ・ /station/** ・ /videos/** ・ /map ・ /find ・ 新業種（/beauty /bodycare /pet /leisure /stay）の配下。
  *   グルメの既存ページ（/restaurant・/feature・/region など）は対象外。
+ *   公開スイッチ ON のビルドを検査する（OFF のビルドの `/` はグルメのトップで、総合サイトの検査の対象外）。
  * - 動的なページ（/map・/videos・/find など。ビルドに HTML が無い）は、--base（起動中のサーバー）があるときだけそこから取って検査する。
  * - 型ごとの必須プロパティ:
  *     BreadcrumbList : itemListElement[] の position（1 から連番）・name・item（絶対URL）
@@ -127,8 +128,23 @@ if (!fs.existsSync(APP)) {
   console.error("ビルド出力（.next/server/app）が無い。先に npm run build を実行してください。");
   process.exit(2);
 }
+/** その HTML の .meta の status が 200（または .meta が無い）か。next start で 404 を踏むと 404 の HTML がキャッシュされるので除く用 */
+function is200(f) {
+  try {
+    const meta = JSON.parse(fs.readFileSync(f.replace(/\.html$/, ".meta"), "utf8"));
+    return !(meta.status && meta.status !== 200);
+  } catch {
+    return true;
+  }
+}
+// 公開スイッチ ON のとき、総合トップの実体は /portal-home（`/` は next.config.ts の rewrites で来る）。
+// そのとき index.html はグルメのトップ（`/` として出ない）なので検査しない。OFF のときは portal-home.html が 404 なので index.html がグルメのトップ。
+const portalHomeFile = path.join(APP, "portal-home.html");
+const portalLive = fs.existsSync(portalHomeFile) && is200(portalHomeFile);
 for (const f of walk(APP)) {
-  const u = urlPathOf(f);
+  let u = urlPathOf(f);
+  if (u === "/portal-home") u = "/";
+  else if (u === "/" && portalLive) continue;
   const first = u.split("/")[1];
   if (u !== "/" && !PORTAL_FIRST.has(first)) continue;
   // next start で 404 を踏むと .next に 404 の HTML がキャッシュされる。ビルドの成果物ではないので除く（.meta の status が 200 でないもの）

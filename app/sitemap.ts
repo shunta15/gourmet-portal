@@ -6,6 +6,7 @@ import { getAllRestaurantIdsWithUpdatedAt, getAllRestaurants } from "@/lib/db/re
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
 import { isRegionHubIndexable, isRestaurantIndexable, isTownIndexable } from "@/lib/restaurantIndexable";
 import { getAllTowns } from "@/lib/db/towns";
+import { isPortalLive } from "@/lib/portal/launch";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -31,6 +32,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    // /gourmet（旧トップの移設先）は公開スイッチ ON のときだけ存在する。OFF では 404 なので載せない（出力は従来と同一）
+    ...(isPortalLive() ? [{ url: `${BASE}/gourmet`, changeFrequency: "daily" as const, priority: 0.9 }] : []),
   ];
 
   // 店舗 ID は DB から取得し、updated_at がある場合は lastModified に反映

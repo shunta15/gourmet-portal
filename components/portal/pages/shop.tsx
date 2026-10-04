@@ -8,6 +8,7 @@
  * 構造化データは lib/seo/jsonld.ts の localBusiness（schema.org の型は種類の schemaType）。
  * index の判定は他の新業種ページと同じ gate（業種の掲載が 3 件以上）。
  */
+import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -85,9 +86,9 @@ export function shopPage(key: PortalVertical) {
   }
 
   return {
-    async generateStaticParams() {
+    generateStaticParams: liveStaticParams(async () => {
       return (await getPlaces(key)).map((p) => ({ id: p.id }));
-    },
+    }),
 
     async generateMetadata({ params }: Props): Promise<Metadata> {
       const hit = await find(params);
