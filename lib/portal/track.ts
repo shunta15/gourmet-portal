@@ -6,6 +6,7 @@
  *   - storeId: 店 ID。店に紐づかないタップ（駅ページ・県ページの共有など）は空文字
  *   - kind:    phone | map | reserve | website | instagram | tiktok | x | facebook | line
  *              | share-line | share-x | share-facebook | share-copy | share-native
+ *              | save | unsave | list-import（候補リスト。店 ID は save/unsave のときだけ。/list の共有ボタンは share-* を page=/list で送る）
  *   - page:    タップしたページのパス（クエリ・ハッシュなし。例 /restaurant/r01、/station/kyoto/祇園四条）
  * Vercel の Web Analytics が無効なとき・広告ブロックのときは window.va が無く、何も送られない（エラーにもならない）。
  * 送信の失敗でリンクの動作を止めない（try/catch）。
@@ -28,7 +29,10 @@ export type TapKind =
   | "share-x"
   | "share-facebook"
   | "share-copy"
-  | "share-native";
+  | "share-native"
+  | "save"
+  | "unsave"
+  | "list-import";
 
 export interface TapPayload {
   storeId: string;

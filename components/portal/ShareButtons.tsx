@@ -27,6 +27,8 @@ interface Props {
   variant?: "portal" | "gourmet";
   /** 見出し（既定は「このページを共有」） */
   label?: string;
+  /** 出す SNS（既定は LINE・X・Facebook の 3 つ。リンクのコピーと「共有」は常に出す） */
+  networks?: ReadonlyArray<"line" | "x" | "facebook">;
 }
 
 const G: Record<string, CSSProperties> = {
@@ -77,7 +79,8 @@ function Sr({ g, children }: { g: boolean; children: string }) {
   return g ? <span style={SR_STYLE}>{children}</span> : <span className="mp-sr">{children}</span>;
 }
 
-export default function ShareButtons({ url, text, page, storeId, variant = "portal", label = "このページを共有" }: Props) {
+export default function ShareButtons({ url, text, page, storeId, variant = "portal", label = "このページを共有", networks }: Props) {
+  const show = (n: "line" | "x" | "facebook") => !networks || networks.includes(n);
   const gourmet = variant === "gourmet";
   const id = useId();
   const [native, setNative] = useState(false);
@@ -156,17 +159,23 @@ export default function ShareButtons({ url, text, page, storeId, variant = "port
           </button>
         ) : (
           <>
-            <a href={urls.line} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-line")} data-cursor="SHARE" data-share-kind="line">
-              <Icon name="line" />
-              LINE<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
-            </a>
-            <a href={urls.x} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-x")} data-cursor="SHARE" data-share-kind="x">
-              <Icon name="x" />X<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
-            </a>
-            <a href={urls.facebook} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-facebook")} data-cursor="SHARE" data-share-kind="facebook">
-              <Icon name="facebook" />
-              Facebook<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
-            </a>
+            {show("line") && (
+              <a href={urls.line} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-line")} data-cursor="SHARE" data-share-kind="line">
+                <Icon name="line" />
+                LINE<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
+              </a>
+            )}
+            {show("x") && (
+              <a href={urls.x} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-x")} data-cursor="SHARE" data-share-kind="x">
+                <Icon name="x" />X<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
+              </a>
+            )}
+            {show("facebook") && (
+              <a href={urls.facebook} {...ext} className={cls("mp-share-b")} style={sty(G.btn)} onClick={() => tap("share-facebook")} data-cursor="SHARE" data-share-kind="facebook">
+                <Icon name="facebook" />
+                Facebook<Sr g={gourmet}>で共有（外部サイトが新しいタブで開きます）</Sr>
+              </a>
+            )}
             <button type="button" className={cls("mp-share-b")} style={sty(G.btn)} onClick={copy} data-cursor="SHARE" data-share-kind="copy">
               <Icon name="copy" />
               リンクをコピー

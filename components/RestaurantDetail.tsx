@@ -19,6 +19,8 @@ import Footer from "./Footer";
 // 静的に import すると、描画しなくても JS がグルメの全店ページに混ざるので、React.lazy でクライアント側で分割する
 // （Next.js は、サーバー側の動的 import や next/dynamic でも、入口から辿れるクライアント部品の JS を描画の有無に関わらず読み込ませる）。
 const ShopActions = lazy(() => import("./portal/ShopActions"));
+// 候補リストの保存ボタン（店名の下）。同じく portalLive のときだけ。仕組みは lib/portal/savedList.ts
+const SaveButton = lazy(() => import("./portal/SaveButton"));
 
 interface RestaurantDetailProps {
   r: Restaurant;
@@ -156,6 +158,14 @@ export default function RestaurantDetail({
           >
             {r.name}
           </h1>
+          {portalLive && (
+            // 候補リストの保存ボタン。ボタンの高さを先に確保して、読み込み後に店名がずれないようにする
+            <div style={{ position: "relative", zIndex: 2, display: "flex", justifyContent: "center", minHeight: 48, marginTop: -20 }}>
+              <Suspense fallback={null}>
+                <SaveButton id={r.id} name={r.name} variant="hero" page={`/restaurant/${r.id}`} />
+              </Suspense>
+            </div>
+          )}
         </div>
       </section>
 

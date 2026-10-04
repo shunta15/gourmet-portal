@@ -1,8 +1,13 @@
 "use client";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import { Suspense, lazy } from "react";
 import Cursor from "../Cursor";
 import SiteShell from "../SiteShell";
 import { isPortalPath } from "./isPortalPath";
+
+// 画面の隅の「候補リスト ◯店」（保存が 1 店以上のときだけ出る）。ここは OFF でもモジュールが読み込まれるので、
+// 静的に import せず React.lazy で分ける（描画されるのは公開スイッチ ON のときだけ＝OFF では JS が読まれない。RestaurantDetail の ShopActions と同じ作法）。
+const ListEntry = lazy(() => import("./ListEntry"));
 
 /**
  * 総合サイトの公開スイッチ（lib/portal/launch.ts）が ON のときだけ、ルートレイアウト（app/layout.tsx）が
@@ -29,9 +34,19 @@ export default function PortalShell({ children }: { children: React.ReactNode })
       <>
         <Cursor />
         {children}
+        <Suspense fallback={null}>
+          <ListEntry />
+        </Suspense>
       </>
     );
   }
 
-  return <SiteShell>{children}</SiteShell>;
+  return (
+    <>
+      <SiteShell>{children}</SiteShell>
+      <Suspense fallback={null}>
+        <ListEntry />
+      </Suspense>
+    </>
+  );
 }

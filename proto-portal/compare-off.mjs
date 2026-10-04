@@ -313,6 +313,9 @@ const PORTAL_404 = [
   "/videos/sv-nazatu-1",
   "/find",
   "/find?q=三宮",
+  "/list", // 候補リスト
+  "/list?ids=r33,r16",
+  "/list-data/r33", // 候補リストが店ごとに取る JSON
   "/search-index.json",
   "/_portal/home-046f05f2-480.webp", // 事前生成した写真（public/_portal。OFF では 404）
   "/og/home",
