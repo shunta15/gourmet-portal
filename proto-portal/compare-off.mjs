@@ -288,6 +288,7 @@ const GOURMET = [
 ];
 const PORTAL_404 = [
   "/gourmet",
+  "/proto-sns", // 行動ボタンの見比べ（試作・非公開）
   "/beauty",
   "/beauty/hair",
   "/beauty/hair/tokyo",

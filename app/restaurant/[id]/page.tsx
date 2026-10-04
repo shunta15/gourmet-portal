@@ -136,6 +136,8 @@ export default async function RestaurantPage({
         portalLive={live}
         social={live ? restaurantSocialLinks(r) : []}
         shareUrl={live ? shareTarget(`/restaurant/${r.id}`) : ""}
+        // OFF のときは prop ごと渡さない（RSC のペイロードも従来と同じにするため）。ON のときだけ、プレビュー・ローカルで 3 案の切替を出す
+        {...(live && (process.env.VERCEL_ENV === "preview" || process.env.NODE_ENV !== "production") ? { previewTools: true } : {})}
       />
     </>
   );

@@ -28,6 +28,7 @@ const PORTAL_OFF_SOURCES = [
   "/videos/:id",
   "/search-index.json",
   "/_portal/:path*",
+  "/proto-sns", // 行動ボタンの見比べ（試作・非公開）
 ];
 
 const nextConfig: NextConfig = {

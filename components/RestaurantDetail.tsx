@@ -9,6 +9,7 @@ import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
 import type { GeoPoint } from "@/lib/geo";
 import { mapsUrlForRestaurant } from "@/lib/maps";
 import type { ShopLink } from "@/lib/portal/sns";
+import type { ShopFacts } from "@/lib/portal/shopActions";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantShortVideos from "./RestaurantShortVideos";
 import LeafletMap from "./LeafletMap";
@@ -17,8 +18,7 @@ import Footer from "./Footer";
 // 総合サイトの公開スイッチ（lib/portal/launch.ts）が OFF のあいだは描画しない部品。
 // 静的に import すると、描画しなくても JS がグルメの全店ページに混ざるので、React.lazy でクライアント側で分割する
 // （Next.js は、サーバー側の動的 import や next/dynamic でも、入口から辿れるクライアント部品の JS を描画の有無に関わらず読み込ませる）。
-const ShopLinks = lazy(() => import("./portal/ShopLinks"));
-const ShareButtons = lazy(() => import("./portal/ShareButtons"));
+const ShopActions = lazy(() => import("./portal/ShopActions"));
 
 interface RestaurantDetailProps {
   r: Restaurant;
@@ -38,6 +38,8 @@ interface RestaurantDetailProps {
   social?: ShopLink[];
   /** 共有する URL（そのページの正規 URL。lib/portal/share.ts の shareTarget）。portalLive のときだけ使う */
   shareUrl?: string;
+  /** プレビュー・ローカルだけ true。行動ボタンの 3 案を見比べる切替を出す（サーバーが渡す。portalLive のときだけ使う） */
+  previewTools?: boolean;
 }
 
 export default function RestaurantDetail({
@@ -50,6 +52,7 @@ export default function RestaurantDetail({
   portalLive = false,
   social = [],
   shareUrl = "",
+  previewTools = false,
 }: RestaurantDetailProps) {
   useReveal();
   // 送客の計測（lib/portal/track.ts）。OFF では何も送らず、track.ts も読み込まない。
@@ -64,6 +67,29 @@ export default function RestaurantDetail({
   useParallax(heroRef, 0.18);
   const region = REGIONS[r.region];
   const mapsUrl = mapsUrlForRestaurant(r);
+  // 行動ボタン（portalLive のときだけ使う）に渡す、店の事実
+  const shopFacts = useMemo<ShopFacts | null>(
+    () =>
+      portalLive
+        ? {
+            name: r.name,
+            phone: r.phone,
+            reservationUrl: r.reservationUrl,
+            address: r.address,
+            area: r.area,
+            mapsUrl,
+            geo: geo ? { lat: geo.lat, lng: geo.lng } : null,
+            social,
+            hasRating: !!r.rating,
+            source: r.source ?? null,
+            featureId,
+            town: town ?? null,
+            region: { name: region.name, href: `/region/${r.region}` },
+          }
+        : null,
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [portalLive, r, mapsUrl, geo?.lat, geo?.lng, social, featureId, town, region]
+  );
   const mapPoints = useMemo(
     () =>
       geo
@@ -239,124 +265,119 @@ export default function RestaurantDetail({
             </div>
           </div>
 
-          <div className="detail-actions">
-            {r.reservationUrl && (
-              <a
-                href={r.reservationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="sb-submit"
-                style={{ padding: "16px 32px" }}
-                data-cursor="BOOK"
-                onClick={() => tap("reserve")}
-              >
-                予約する →
-              </a>
-            )}
-            {r.phone && (
-              <a
-                href={`tel:${r.phone.replace(/[^\d+]/g, "")}`}
-                className="sb-submit"
-                style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
-                data-cursor="CALL"
-                onClick={() => tap("phone")}
-              >
-                電話する（{r.phone}）
-              </a>
-            )}
-            {r.address && (
-              <a
-                href={mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="chip"
-                style={{ padding: "16px 24px", borderRadius: 0 }}
-                data-cursor="MAP"
-                onClick={() => tap("map")}
-              >
-                Google マップで開く ↗
-              </a>
-            )}
-            {geo && (
-              <a
-                href="#map"
-                className="chip"
-                style={{ padding: "16px 24px", borderRadius: 0 }}
-                data-cursor="MAP"
-              >
-                地図を見る ↗
-              </a>
-            )}
-            {portalLive && (
-              <Suspense fallback={null}>
-                <ShopLinks variant="gourmet" links={social} storeId={r.id} page={`/restaurant/${r.id}`} />
-              </Suspense>
-            )}
-            {!r.phone && !r.reservationUrl && (
-              <a
-                href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="chip"
-                style={{ padding: "16px 24px", borderRadius: 0 }}
-                data-cursor="LINK"
-              >
-                Googleで詳細を調べる ↗
-              </a>
-            )}
-            {r.source && !r.rating && (
-              <a
-                href={r.source.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="chip"
-                style={{ padding: "16px 24px", borderRadius: 0 }}
-                data-cursor="LINK"
-              >
-                {r.source.label} ↗
-              </a>
-            )}
-            {featureId && (
+          {portalLive && shopFacts ? (
+            <Suspense fallback={null}>
+              <ShopActions
+                shop={shopFacts}
+                storeId={r.id}
+                page={`/restaurant/${r.id}`}
+                shareUrl={shareUrl}
+                shareText={`${r.name}｜マチノワ`}
+                previewTools={previewTools}
+              />
+            </Suspense>
+          ) : (
+            <div className="detail-actions">
+              {r.reservationUrl && (
+                <a
+                  href={r.reservationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sb-submit"
+                  style={{ padding: "16px 32px" }}
+                  data-cursor="BOOK"
+                  onClick={() => tap("reserve")}
+                >
+                  予約する →
+                </a>
+              )}
+              {r.phone && (
+                <a
+                  href={`tel:${r.phone.replace(/[^\d+]/g, "")}`}
+                  className="sb-submit"
+                  style={{ padding: "16px 32px", background: "transparent", border: "1px solid currentColor" }}
+                  data-cursor="CALL"
+                  onClick={() => tap("phone")}
+                >
+                  電話する（{r.phone}）
+                </a>
+              )}
+              {r.address && (
+                <a
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="MAP"
+                  onClick={() => tap("map")}
+                >
+                  Google マップで開く ↗
+                </a>
+              )}
+              {geo && (
+                <a
+                  href="#map"
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="MAP"
+                >
+                  地図を見る ↗
+                </a>
+              )}
+              {!r.phone && !r.reservationUrl && (
+                <a
+                  href={`https://www.google.com/search?q=${encodeURIComponent(r.name + " " + r.area + " 予約 営業時間")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="LINK"
+                >
+                  Googleで詳細を調べる ↗
+                </a>
+              )}
+              {r.source && !r.rating && (
+                <a
+                  href={r.source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="LINK"
+                >
+                  {r.source.label} ↗
+                </a>
+              )}
+              {featureId && (
+                <Link
+                  href={`/feature/${encodeURIComponent(featureId)}`}
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="READ"
+                >
+                  この店の特集記事を読む →
+                </Link>
+              )}
+              {town && town.count > 1 && (
+                <Link
+                  href={town.href}
+                  className="chip"
+                  style={{ padding: "16px 24px", borderRadius: 0 }}
+                  data-cursor="ENTER"
+                >
+                  {town.name}の他の店を見る（{town.count - 1}店）
+                </Link>
+              )}
               <Link
-                href={`/feature/${encodeURIComponent(featureId)}`}
-                className="chip"
-                style={{ padding: "16px 24px", borderRadius: 0 }}
-                data-cursor="READ"
-              >
-                この店の特集記事を読む →
-              </Link>
-            )}
-            {town && town.count > 1 && (
-              <Link
-                href={town.href}
+                href={`/region/${r.region}`}
                 className="chip"
                 style={{ padding: "16px 24px", borderRadius: 0 }}
                 data-cursor="ENTER"
               >
-                {town.name}の他の店を見る（{town.count - 1}店）
+                {region.name}の他の店を見る
               </Link>
-            )}
-            <Link
-              href={`/region/${r.region}`}
-              className="chip"
-              style={{ padding: "16px 24px", borderRadius: 0 }}
-              data-cursor="ENTER"
-            >
-              {region.name}の他の店を見る
-            </Link>
-          </div>
-
-          {portalLive && (
-            <Suspense fallback={null}>
-              <ShareButtons
-                variant="gourmet"
-                url={shareUrl}
-                text={`${r.name}｜マチノワ`}
-                page={`/restaurant/${r.id}`}
-                storeId={r.id}
-                label="この店を共有"
-              />
-            </Suspense>
+            </div>
           )}
         </section>
 
