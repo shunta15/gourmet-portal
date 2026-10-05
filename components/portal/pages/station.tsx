@@ -41,6 +41,7 @@ import { packWeeks } from "@/lib/portal/openNow";
 import VideoTiles from "../video/VideoTiles";
 import PortalMap from "../PortalMap";
 import ShopPhoto from "../ShopPhoto";
+import SaveButton from "../SaveButton";
 import { OpenBadge, OpenBar, OpenCount, OpenScope } from "../OpenNow";
 import { notFoundMetadata } from "./data";
 import { Block, PageFrame, ShareSection, accentStyle } from "./frame";
@@ -121,7 +122,7 @@ export function StoreCard({ s }: { s: StationStore }) {
         ? `駅から約${roundMeters(s.meters)}m（直線距離）`
         : null;
   return (
-    <li>
+    <li className="sv-host">
       <Link href={placeHref(v, p)} prefetch={false} className="mp-st-card" data-cursor={VERTICAL_FACE[v.key].en.toUpperCase()}>
         <span className="img">
           {shopPhoto(p.image) ? (
@@ -138,6 +139,7 @@ export function StoreCard({ s }: { s: StationStore }) {
           <OpenBadge id={p.id} />
         </span>
       </Link>
+      <SaveButton id={p.id} name={p.name} variant="card" />
     </li>
   );
 }

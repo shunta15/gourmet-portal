@@ -23,6 +23,8 @@ const PORTAL_OFF_SOURCES = [
   "/station/:path*",
   "/map/:path*",
   "/find/:path*",
+  "/list", // 候補リスト（店を保存して URL で共有）
+  "/list-data/:path*", // 候補リストが店ごとに取る JSON
   "/og/:path*",
   "/videos",
   "/videos/:id",

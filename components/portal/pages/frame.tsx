@@ -10,6 +10,7 @@ import Breadcrumbs, { type Crumb } from "../Breadcrumbs";
 import AreaBlocks from "../AreaBlocks";
 import JsonLd from "../JsonLd";
 import ShareButtons from "../ShareButtons";
+import SaveButton from "../SaveButton";
 import { OpenBadge, OpenBar, OpenScope } from "../OpenNow";
 import { packWeeks } from "@/lib/portal/openNow";
 import { PREFECTURES } from "@/lib/areas/prefectures";
@@ -127,13 +128,14 @@ export function Listing({ v, places, emptyNote }: { v: Vertical; places: Place[]
           <OpenBar ids={places.map((p) => p.id)} />
           <ul className="mp-pg-grid">
             {places.map((p) => (
-              <li key={p.id}>
+              <li key={p.id} className="sv-host">
                 <Link href={`${v.path}/shop/${p.id}`} prefetch={false} className="mp-place">
                   <small>{catName(p.category)}</small>
                   <b>{p.name}</b>
                   <span>{p.address}</span>
                   <OpenBadge id={p.id} />
                 </Link>
+                <SaveButton id={p.id} name={p.name} variant="card" />
               </li>
             ))}
           </ul>
