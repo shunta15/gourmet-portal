@@ -17,6 +17,7 @@ import { useCallback, useEffect, useId, useMemo, useRef, useState, useSyncExtern
 import type { SearchItem } from "@/lib/regions";
 import { sized } from "@/lib/imageUrl";
 import {
+  BOOL_FACETS,
   BUDGET_BANDS,
   FACET_BY_ID,
   FACET_DEFS,
@@ -33,6 +34,7 @@ import {
 } from "@/lib/portal/facetDefs";
 import { isOpenState } from "@/lib/portal/openNow";
 import { statusOf, useNowMs } from "./OpenNow";
+import SaveButton from "./SaveButton";
 import { CSS_SEARCH_FACETS } from "./searchFacetsCss";
 
 interface Props {
@@ -81,40 +83,53 @@ function writeSelection(sel: FacetSelection) {
 
 /* ───────────── 店カード ───────────── */
 
-const MAX_TAGS = 6;
+/** 店カードの札 1 枚。on = 選んでいる条件（先頭に並べ、見分けがつく見た目にする） */
+interface CardTag {
+  label: string;
+  on: boolean;
+}
+/** 1 枚のカードに出す札の最大数 */
+const MAX_TAGS = 4;
 
-function FacetCard({ r, tags }: { r: SearchItem; tags: string[] }) {
-  const shown = tags.slice(0, MAX_TAGS);
-  const more = tags.length - shown.length;
+/**
+ * 店カード。カード全体が店ページへのリンク（.fc-card-link を全面に重ねる）で、右上に「候補に入れる」（SaveButton）を重ねる。
+ * リンクの中にボタンを入れない（入れ子の操作要素は押し分けられない）ため、ルートは div にして、リンクとボタンを兄弟にしてある。
+ */
+function FacetCard({ r, tags, total }: { r: SearchItem; tags: CardTag[]; total: number }) {
   return (
-    <Link href={`/restaurant/${r.id}`} className={"rest-card fc-card " + (r.shape || "")} data-cursor="VIEW">
-      <div className="img">
-        <img
-          src={sized(r.image, 640)}
-          alt={r.name}
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-        />
-      </div>
-      <div className="meta">
-        <span>
-          #{r.id.replace(/^r/, "").padStart(2, "0")} · {r.area}
-        </span>
-      </div>
-      <div className="body">
-        <div className="cuisine">{r.cuisine}</div>
-        <h4>{r.name}</h4>
-        {shown.length > 0 && (
-          <ul className="fc-tags" aria-label="当てはまった条件">
-            {shown.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-            {more > 0 && <li>ほか{more}件</li>}
-          </ul>
-        )}
-      </div>
-    </Link>
+    <div className={"rest-card fc-card " + (r.shape || "")}>
+      <Link href={`/restaurant/${r.id}`} className="fc-card-link" data-cursor="VIEW">
+        <div className="img">
+          <img
+            src={sized(r.image, 640)}
+            alt={r.name}
+            loading="lazy"
+            decoding="async"
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        </div>
+        <div className="meta">
+          <span>
+            #{r.id.replace(/^r/, "").padStart(2, "0")} · {r.area}
+          </span>
+        </div>
+        <div className="body">
+          <div className="cuisine">{r.cuisine}</div>
+          <h4>{r.name}</h4>
+          {tags.length > 0 && (
+            <ul className="fc-tags" aria-label={total > tags.length ? `この店に当てはまる条件（${total}件のうち${tags.length}件）` : "この店に当てはまる条件"}>
+              {tags.map((t) => (
+                <li key={t.label} data-on={t.on ? "1" : undefined}>
+                  {t.on && <span className="fc-vh">選んだ条件: </span>}
+                  {t.label}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </Link>
+      <SaveButton id={r.id} name={r.name} variant="card" page="/search" />
+    </div>
   );
 }
 
@@ -130,6 +145,7 @@ export default function SearchFacets({ base, facets, sp, render }: Props) {
   /* 店ごとの判定（予算の帯・判定ビット・いま営業中） */
   const wantOpen = sel.ids.includes("open");
   const boolIds = sel.ids.filter((i): i is BoolFacetId => i !== "open");
+  const boolShown = useMemo(() => facets.shown.filter((i): i is BoolFacetId => i !== "open"), [facets]);
   const shops = useMemo(
     () =>
       base.map((r) => {
@@ -139,6 +155,14 @@ export default function SearchFacets({ base, facets, sp, render }: Props) {
       }),
     [base, facets, now],
   );
+  const shopById = useMemo(() => new Map(shops.map((s) => [s.r.id, s])), [shops]);
+  // 条件ごとの「当てはまる店の数」（全店）。少ない条件ほど、その店を特徴づけるので、札では先に出す
+  const rarity = useMemo(() => {
+    const n: Record<string, number> = {};
+    for (const id of BOOL_FACETS) n[id] = 0;
+    for (const [, mask] of Object.values(facets.rows)) BOOL_FACETS.forEach((id) => hasBit(mask, id) && n[id]++);
+    return n;
+  }, [facets]);
   const view = useMemo(() => {
     const facetOk = shops.map((s) => boolIds.every((f) => hasBit(s.mask, f)) && (!wantOpen || s.open));
     const list: SearchItem[] = [];
@@ -249,10 +273,30 @@ export default function SearchFacets({ base, facets, sp, render }: Props) {
   /* 画面に出すもの */
   const nSel = sel.ids.length + (sel.band === null ? 0 : 1);
   const active = nSel > 0;
+  // 選んでいる条件の札（結果の店はすべて当てはまる）。件数の行（summary）に出す
   const tags = useMemo(
     () => [...(sel.band === null ? [] : [`予算 ${BUDGET_BANDS[sel.band].label}`]), ...sel.ids.map((id) => FACET_BY_ID[id].badge)],
     [sel],
   );
+  /**
+   * 店ごとの札: その店に当てはまる条件（最大 MAX_TAGS）。選んでいる条件を先頭に、続けて選んでいない条件
+   * （予算の帯 → 当てはまる店が少ない条件の順 → いま営業中）。画面に出している条件（facets.shown）だけ。
+   * 設備・特徴の札は「〜の記載あり」（FACET_DEFS の badge）。
+   */
+  const tagsOf = (id: string): { tags: CardTag[]; total: number } => {
+    const s = shopById.get(id);
+    if (!s) return { tags: [], total: 0 };
+    const all: CardTag[] = [];
+    if (sel.band !== null) all.push({ label: `予算 ${BUDGET_BANDS[sel.band].label}`, on: true });
+    for (const sid of sel.ids) all.push({ label: FACET_BY_ID[sid].badge, on: true });
+    if (sel.band === null && s.band >= 0 && facets.shownBands.includes(s.band)) all.push({ label: `予算 ${BUDGET_BANDS[s.band].label}`, on: false });
+    const rest = boolShown
+      .filter((fid) => !sel.ids.includes(fid) && hasBit(s.mask, fid))
+      .sort((a, b) => rarity[a] - rarity[b] || BOOL_FACETS.indexOf(a) - BOOL_FACETS.indexOf(b));
+    for (const fid of rest) all.push({ label: FACET_BY_ID[fid].badge, on: false });
+    if (s.open && !sel.ids.includes("open") && facets.shown.includes("open")) all.push({ label: FACET_BY_ID.open.badge, on: false });
+    return { tags: all.slice(0, MAX_TAGS), total: all.length };
+  };
 
   const chip = (key: string, label: string, n: number, on: boolean, onClick: () => void) => {
     const zero = n === 0 && !on;
@@ -388,7 +432,10 @@ export default function SearchFacets({ base, facets, sp, render }: Props) {
       </p>
     ) : null,
     summary: active ? <>{tags.join(" / ")} / </> : null,
-    renderCard: (r) => <FacetCard key={r.id} r={r} tags={tags} />,
+    renderCard: (r) => {
+      const t = tagsOf(r.id);
+      return <FacetCard key={r.id} r={r} tags={t.tags} total={t.total} />;
+    },
   };
 
   return <>{render(view.list, ext)}</>;

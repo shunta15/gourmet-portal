@@ -334,7 +334,7 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 ## 付録: こだわり条件で絞る（2026-10-05・試作）
 - 仕様 `proto-portal/FILTERS-BRIEF.md`、数えた結果と検査の記録 `proto-portal/FILTERS-COVERAGE.md`。公開スイッチ ON のときだけ。OFF の `/search`・`/`（グルメのトップ）は出力が変わらない（検査済み）。
 - **どこに何があるか**: `/search` に「こだわり条件」のパネル（予算の帯・営業時間・駅徒歩・予約リンク・席数・設備・特徴・いま営業中）。URL は `?budget=3000&f=late,walk5`（既存の `q` `region` `cuisine` `tag` と併用。canonical `/search`・noindex のまま）。
-  グルメのトップ `/gourmet`（ON）の「さがす」の下に入口「こだわり条件」→ `/search`。
+  グルメのトップ `/gourmet`（ON）に入口「こだわり条件」→ `/search`。写真から探す（`/photos`）の入口と同じスロット（`HomeClient` の `portalEntrances`）に並べて出す（統合後。下の「4機能の統合」参照）。
   - 判定: `lib/portal/facetParse.ts`（文字列 → 条件）・`facetRow.ts`（店1軒ぶん）・`facetDefs.ts`（条件の定義・URL）・`facets.ts`（サーバーで表を作り、出す条件を基準で決める）。
   - 画面: `components/portal/SearchFacets.tsx`（React.lazy。`components/SearchClient.tsx` が ON のときだけ読み込む）・`searchFacetsCss.ts`（CSS は `.fc-`。`<style href precedence>` で出す。`app/globals.css` は変えていない）・`FacetEntrance.tsx`（グルメのトップの入口）。
   - クライアントへ渡すのは、店ID＋判定ビットの小さな表（約 60KB。全店分）だけ。文字列の解析はサーバー側。
@@ -343,3 +343,11 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **数え直し方**: `node --env-file=.env.local proto-portal/count-facets.mjs --md 出力.md [--detail]`（全店・条件ごとの 判定できた店／はい／不明、元の文字列の例、設備・特徴の無作為30件の検査表）。
   判定の単体テストは `node proto-portal/test-facets.mjs`。データが増えたら、数え直して基準を確かめ、設備・特徴は拾い方（`facetParse.ts` の `RULES`・`NEG`・`HEDGE`）を変えたら検査をやり直してから `VERIFIED_FEATURES` に足す。
 - 設備・特徴の文章は tags・desc・body。highlights（特集記事の見出し）は店ページに出ない文なので使わない（使うと店ページで確かめられない「記載あり」が出る）。
+
+## 付録: 4機能の統合（2026-10-05・試作。こだわり条件・ジャンル×駅・候補リスト・写真から探す）
+- 4つのブランチ（`proto/feat-genre`・`proto/feat-list`・`proto/feat-photos` と、こだわり条件）を `proto/portal` に統合した。OFF のグルメは main と同一（1-A の `compare-off.mjs` static / live とも `PROBLEMS 0`）。
+- **入口のスロットは1つ**: グルメのトップ `/gourmet`（ON）に出す総合サイトの入口（「こだわり条件でさがす」「写真から探す」）は、`components/portal/pages/gourmet-home.tsx` が1つの `portalEntrances`（ReactNode）にまとめて `HomeClient` に渡す。OFF の `/` には prop ごと渡さない。入口を増やすときもスロットは増やさず、この ReactNode に足す。
+- **候補リスト（`/list`）は、表示できない店を自動で外さない**: 店のデータ（`/list-data/{ID}`）は作成時に静的に作るので、プレビューの作成後に載った店は 404 になる。これを保存から消すと、保存したのに消えて見える。自分のリストでは「この店はいま表示できません」の行で残し、手で「外す」だけできる。共有URLの表示では、表示できない店は並べず、件数だけ知らせる。
+- **保存ボタン（「候補に入れる」）の置き場所**: 店ページ・駅／ジャンル×駅／都道府県／業種ページの店カード・`/search` の結果カード（こだわり条件つき。カード全体のリンクの隅に重ねる）・`/photos` の大きな表示（`<dialog>` の中）・`/list` の共有リスト。
+- **`/search` の結果カードの札**: 各店に当てはまる条件を最大4つ。選んでいる条件を先頭に（生成りのベタ＋左に朱の線）、続けて予算の帯・当てはまる店が少ない条件の順・いま営業中。設備・特徴は必ず「〜の記載あり」。
+- **`crawl.mjs` の「SNS・共有ボタン」の検査**は、店ページの行動ボタン `ShopActions`（6案。どの案でも `role="group" aria-label="この店を共有"` と、行の `data-sa-id`）に合わせてある。旧部品（`ShopLinks`・`ShareButtons` の `data-shop-link`）は店ページには出ない（総合サイトのページの共有は今も `ShareButtons`）。

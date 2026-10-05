@@ -94,6 +94,14 @@ html.mp-ph-lock{overflow:hidden; scrollbar-gutter:stable; background:#0e0b08}
 .mp-ph-go svg{transition:transform .45s var(--ease)}
 .mp-ph-go:hover{background:var(--c-gourmet); color:#fff}
 .mp-ph-go:hover svg{transform:translateX(4px)}
+/* 「候補に入れる」（SaveButton の inline）。PC のパネルは暗い面なので、生成りの輪郭にする。モバイル（生成りのパネル）は SaveButton 既定の墨のまま */
+.mp-ph-save{margin-top:14px}
+@media (min-width:900px){
+  .mp-ph-info .sv-b.sv-inline{border-color:rgba(244,239,230,.55); color:#f4efe6; --sv-chk:#0e0b08}
+  .mp-ph-info .sv-inline[aria-pressed="true"]{background:#f4efe6; border-color:#f4efe6; color:#b83f25; --sv-chk:#f4efe6}
+  .mp-ph-info .sv-inline:hover{background:#f4efe6; border-color:#f4efe6; color:#15110e; --sv-chk:#f4efe6}
+  .mp-ph-info .sv-inline[aria-pressed="true"]:hover{color:#8f2f1a}
+}
 .mp-ph-nav{display:flex; align-items:center; gap:10px; margin-top:clamp(22px,4vh,36px)}
 .mp-ph-nav button{display:grid; place-items:center; width:52px; height:52px; border:1px solid rgba(244,239,230,.42); border-radius:50%; background:transparent; color:#f4efe6; transition:background .35s, color .35s, border-color .35s, transform .45s var(--ease)}
 .mp-ph-nav button:hover:not(:disabled){background:#f4efe6; color:#15110e; border-color:#f4efe6}
@@ -106,7 +114,7 @@ html.mp-ph-lock{overflow:hidden; scrollbar-gutter:stable; background:#0e0b08}
 
 /* ─────────── モバイル: 写真は上、情報は下から出るパネル ─────────── */
 @media (max-width:899px){
-  .mp-ph-dlg{--ph-maxh:calc(100dvh - 340px)}
+  .mp-ph-dlg{--ph-maxh:calc(100dvh - 400px)}
   .mp-ph-stage{grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1fr) auto; gap:0; padding:0; align-items:stretch}
   .mp-ph-fig{height:auto; padding:max(18px,env(safe-area-inset-top)) 14px 14px}
   .mp-ph-info{display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; column-gap:10px; padding:10px 20px calc(18px + env(safe-area-inset-bottom)); background:var(--ivory); color:var(--ink); border-radius:22px 22px 0 0; box-shadow:0 -24px 64px rgba(0,0,0,.4)}
@@ -123,6 +131,8 @@ html.mp-ph-lock{overflow:hidden; scrollbar-gutter:stable; background:#0e0b08}
   .mp-ph-go{grid-column:1; grid-row:6; margin-top:16px; width:100%; background:var(--ink); color:var(--ivory)}
   .mp-ph-go:hover{background:var(--c-gourmet); color:#fff}
   .mp-ph-nav{grid-column:2; grid-row:6; margin-top:16px; gap:8px}
+  .mp-ph-save{grid-column:1 / -1; grid-row:7; margin-top:10px}
+  .mp-ph-save .sv-inline{width:100%}
   .mp-ph-nav button{width:48px; height:48px; border-color:rgba(21,17,14,.4); color:var(--ink)}
   .mp-ph-nav button:hover:not(:disabled){background:var(--ink); color:var(--ivory); border-color:var(--ink)}
   .mp-ph-hint{display:none}

@@ -13,7 +13,7 @@
 const argv = process.argv.slice(2);
 const argi = argv.indexOf('--base');
 const B = (argi >= 0 ? argv[argi + 1] : 'http://localhost:3242').replace(/\/$/, '');
-const ok200=['/','/gourmet','/beauty','/beauty/area/tokyo','/beauty/hair','/beauty/hair/tokyo','/bodycare/seitai/osaka','/pet','/pet/trimming','/leisure/onsen/kanagawa','/stay/area/hokkaido','/stay/ryokan','/bodycare/scene/weekend-open','/beauty/scene/late-night','/area/tokyo','/area/aichi','/area/okinawa','/beauty/sitemap.xml','/station','/station/kyoto','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/station/tokyo/蒲田','/station/niigata/直江津','/station/sitemap.xml','/videos','/videos/sv-nazatu-1','/videos/sv-nazatu-review','/videos/sitemap.xml','/map','/map?pref=kyoto','/station/kyoto/祇園四条?open=1','/find?q=三宮','/find?q=京都','/find','/find?q=zzzz','/photos','/photos/sitemap.xml'];
+const ok200=['/','/gourmet','/beauty','/beauty/area/tokyo','/beauty/hair','/beauty/hair/tokyo','/bodycare/seitai/osaka','/pet','/pet/trimming','/leisure/onsen/kanagawa','/stay/area/hokkaido','/stay/ryokan','/bodycare/scene/weekend-open','/beauty/scene/late-night','/area/tokyo','/area/aichi','/area/okinawa','/beauty/sitemap.xml','/station','/station/kyoto','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/station/tokyo/蒲田','/station/niigata/直江津','/station/sitemap.xml','/videos','/videos/sv-nazatu-1','/videos/sv-nazatu-review','/videos/sitemap.xml','/map','/map?pref=kyoto','/station/kyoto/祇園四条?open=1','/find?q=三宮','/find?q=京都','/find','/find?q=zzzz','/photos','/photos/sitemap.xml','/list','/station/kyoto/烏丸/和食・割烹'];
 const exp404=['/beauty/area/xxx','/beauty/nosuch','/beauty/shop/abc','/beauty/hair/tokyo/nosuchcity','/area/nosuch','/station/tokyo/存在しない駅','/station/nosuch','/station/nosuch/駅','/videos/nosuch'];
 const seen=new Map();const get=async u=>{if(seen.has(u))return seen.get(u);const r=await fetch(B+encodeURI(u),{redirect:'manual'});const t=r.status===200&&!u.endsWith('.xml')?await r.text():'';const v={s:r.status,t};seen.set(u,v);return v};
 const bad=[];
@@ -37,7 +37,7 @@ for(const u of ok200){const r=await get(u);if(r.s!==200){bad.push(`expected200 $
 let n=0;for(const l of links){const r=await get(l);n++;if(r.s>=400)bad.push(`link ${r.s} ${l}`)}
 console.log('links checked',n);
 // ───── SEO・品質の仕上げ（2026-10-04）: 総合ページの title/description 重複・見出し・パンくず一致・共有画像 ─────
-const isPortalUrl=u=>{const p=u.split('?')[0];const f=p.split('/')[1];return p==='/'||['area','station','videos','map','find','photos','beauty','bodycare','pet','leisure','stay'].includes(f)};
+const isPortalUrl=u=>{const p=u.split('?')[0];const f=p.split('/')[1];return p==='/'||['area','station','videos','map','find','photos','list','beauty','bodycare','pet','leisure','stay'].includes(f)};
 const portal=[...seen.entries()].filter(([u,v])=>v.s===200&&v.t&&isPortalUrl(u)&&!u.endsWith('.xml'));
 console.log('portal pages (html):',portal.length);
 const byCanon=new Map();
@@ -109,23 +109,42 @@ console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCan
 // ───── SNS・共有ボタン・サイト内検索（2026-10-04） ─────
 {
   const decC = (x) => { try { return decodeURIComponent(x) } catch { return x } };
+  // 共有ボタン: 店ページは ShopActions（行動ボタン6案。どの案でも role="group" aria-label="この店を共有" の中に LINE・X・Facebook のリンクとコピーのボタン）、
+  // それ以外のページは ShareButtons（data-share）。店の SNS・公式サイトは ShopActions の行（data-sa-id="instagram" など。値がある項目だけ）
   const snsPages = ['/restaurant/r21','/restaurant/r204','/restaurant/r23','/restaurant/r01','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/area/tokyo','/videos/sv-nazatu-1'];
+  const kindOfShareHref = (href) => /^https:\/\/social-plugins\.line\.me\//.test(href) ? 'line' : /^https:\/\/twitter\.com\/intent\/tweet/.test(href) ? 'x' : /^https:\/\/www\.facebook\.com\/sharer\//.test(href) ? 'facebook' : null;
+  // 開き <div> の対応する閉じ </div> までを切り出す（入れ子を数える）
+  const divBlock = (h, openIdx) => {
+    const re = /<(\/?)div\b[^>]*>/g; re.lastIndex = openIdx;
+    let depth = 0, m;
+    while ((m = re.exec(h))) { depth += m[1] ? -1 : 1; if (depth === 0) return h.slice(openIdx, re.lastIndex) }
+    return null;
+  };
   let shareChecked = 0, snsChecked = 0, extChecked = 0;
   for (const u of snsPages) {
     const r = await get(u); if (r.s !== 200) { bad.push(`sns page ${u} -> ${r.s}`); continue }
     const h = r.t;
     const canon = decodeURI((h.match(/<link rel="canonical" href="([^"]+)"/) || [])[1] || '');
-    const group = h.match(/<div[^>]*data-share=""[^>]*>[\s\S]*?<\/div>\s*(?:<input[^>]*>)?\s*<p[^>]*role="status"/);
-    const anchors = [...h.matchAll(/<a [^>]*data-share-kind="([a-z]+)"[^>]*>/g)].map(m => ({ k: m[1], tag: m[0] }));
-    const copyBtn = /<button[^>]*data-share-kind="copy"/.test(h);
-    if (!group) { bad.push(`share group missing ${u}`); continue }
+    let anchors, copyBtn;
+    if (u.startsWith('/restaurant/')) {
+      const gi = h.search(/<div[^>]*role="group"[^>]*aria-label="この店を共有"[^>]*>/);
+      const group = gi >= 0 ? divBlock(h, gi) : null;
+      if (!group) { bad.push(`share group missing ${u}`); continue }
+      anchors = [...group.matchAll(/<a [^>]*href="([^"]+)"[^>]*>/g)].map(m => ({ k: kindOfShareHref(m[1].replace(/&amp;/g, '&')), tag: m[0] }));
+      copyBtn = [...group.matchAll(/<button[^>]*>([\s\S]*?)<\/button>/g)].some(m => /コピー/.test(m[1]));
+    } else {
+      const group = h.match(/<div[^>]*data-share=""[^>]*>[\s\S]*?<\/div>\s*(?:<input[^>]*>)?\s*<p[^>]*role="status"/);
+      anchors = [...h.matchAll(/<a [^>]*data-share-kind="([a-z]+)"[^>]*>/g)].map(m => ({ k: m[1], tag: m[0] }));
+      copyBtn = /<button[^>]*data-share-kind="copy"/.test(h);
+      if (!group) { bad.push(`share group missing ${u}`); continue }
+    }
     if (anchors.map(a => a.k).join() !== 'line,x,facebook' || !copyBtn) bad.push(`share controls ${u}: ${anchors.map(a => a.k)} copy=${copyBtn}`);
     for (const a of anchors) {
       const href = (a.tag.match(/href="([^"]+)"/) || [])[1]?.replace(/&amp;/g, '&');
       const target = /target="_blank"/.test(a.tag), rel = (a.tag.match(/rel="([^"]+)"/) || [])[1] || '';
       if (!target || !/noopener/.test(rel) || !/noreferrer/.test(rel)) bad.push(`share link rel/target ${u} ${a.k}`);
       const pat = { line: /^https:\/\/social-plugins\.line\.me\/lineit\/share\?url=([^&]+)$/, x: /^https:\/\/twitter\.com\/intent\/tweet\?url=([^&]+)&text=([^&]+)$/, facebook: /^https:\/\/www\.facebook\.com\/sharer\/sharer\.php\?u=([^&]+)$/ }[a.k];
-      const m = href && href.match(pat);
+      const m = href && pat && href.match(pat);
       if (!m) { bad.push(`share href format ${u} ${a.k}: ${href}`); continue }
       const shared = decC(m[1]);
       if (!/^https:\/\/machinowa\.tokyo\/[\x21-\x7e]*$/.test(shared)) bad.push(`share url not absolute/ASCII-encoded ${u} ${a.k}: ${shared}`);
@@ -135,24 +154,26 @@ console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCan
       shareChecked++;
     }
   }
-  // 店の SNS ボタン（グルメ店ページ）: 値がある店だけ・URL・rel/target
+  // 店の SNS ボタン（グルメ店ページの行動ボタン。data-sa-id が SNS・公式サイトの種類のもの）: 値がある店だけ・URL・rel/target
+  const SOCIAL_IDS = new Set(['instagram', 'x', 'tiktok', 'facebook', 'line', 'website']);
   const expectSns = { '/restaurant/r21': { instagram: 'https://www.instagram.com/tuki.to.sakura/' }, '/restaurant/r204': { instagram: 'https://www.instagram.com/mugentei_yakiniku/' }, '/restaurant/r23': { x: 'https://x.com/sweetscafe719' }, '/restaurant/r01': {} };
   for (const [u, want] of Object.entries(expectSns)) {
     const h = (await get(u)).t;
     const got = {};
-    for (const m of h.matchAll(/<a [^>]*data-shop-link="([a-z]+)"[^>]*>/g)) {
+    for (const m of h.matchAll(/<a [^>]*data-sa-id="([a-z]+)"[^>]*>/g)) {
+      if (!SOCIAL_IDS.has(m[1])) continue; // 電話・地図・予約などの行は対象外
       const href = (m[0].match(/href="([^"]+)"/) || [])[1];
       got[m[1]] = href;
       if (!/target="_blank"/.test(m[0]) || !/rel="noopener noreferrer"/.test(m[0])) bad.push(`sns link rel/target ${u} ${m[1]}`);
       snsChecked++;
     }
     if (JSON.stringify(got) !== JSON.stringify(want)) bad.push(`sns buttons ${u}: got ${JSON.stringify(got)} want ${JSON.stringify(want)}`);
-    if (/data-shop-link="(tiktok|facebook|line|website)"/.test(h)) bad.push(`unexpected sns kind ${u}`);
+    if (/data-sa-id="(tiktok|facebook|line|website)"/.test(h)) bad.push(`unexpected sns kind ${u}`);
   }
   // 外部リンク（http で始まる href）で別タブを開くものは rel に noopener noreferrer
   for (const [u, v] of seen) {
     if (v.s !== 200 || !v.t || u.endsWith('.xml')) continue;
-    const f = u.split('?')[0].split('/')[1]; if (!(u === '/' || ['area','station','videos','map','find','photos','beauty','bodycare','pet','leisure','stay','restaurant'].includes(f))) continue;
+    const f = u.split('?')[0].split('/')[1]; if (!(u === '/' || ['area','station','videos','map','find','photos','list','beauty','bodycare','pet','leisure','stay','restaurant'].includes(f))) continue;
     for (const m of v.t.matchAll(/<a [^>]*href="(https?:\/\/[^"]+)"[^>]*>/g)) {
       if (!/target="_blank"/.test(m[0])) continue;
       if (!/rel="[^"]*noopener[^"]*noreferrer[^"]*"|rel="[^"]*noreferrer[^"]*noopener[^"]*"/.test(m[0])) bad.push(`external _blank link without rel ${u}: ${m[1].slice(0, 60)}`);

@@ -5,7 +5,10 @@
  * 2 つの見え方:
  *  - 自分のリスト（/list）: localStorage に保存した店。1 店ずつ外す・全部外す（確認つき）・上へ／下へ・共有。
  *  - 共有されたリスト（/list?ids=r33,r16,…）: URL の店 ID だけから作る、読むだけの表示。
- *    「自分の候補に全部入れる」「1 店ずつ入れる」ができる。存在しない ID は黙って除く。50 店を超える分は切る。
+ *    「自分の候補に全部入れる」「1 店ずつ入れる」ができる。表示できない店（存在しない ID など）は並べず、件数だけ知らせる。50 店を超える分は切る。
+ *
+ * 表示できない店（/list-data/{ID} が 404）は、自分のリストでは自動で外さない。「この店はいま表示できません」の行で残し、手で「外す」だけできる
+ * （プレビューの作成後に載った店を保存しても、リストから消えないように。店のデータは作成時に静的に作るので、後から増えた店は 404 になる）。
  *
  * 店のデータは、リストに入っている店の分だけ /list-data/{ID}（店ごとの小さな静的 JSON。lib/portal/listData.ts）を取る。
  * 全店のデータはクライアントに渡さない。営業中かどうかは、営業予定が読み取れた店だけ、現在時刻で判定する（components/portal/OpenNow）。
@@ -157,6 +160,57 @@ function RowSkeleton() {
   );
 }
 
+/** 店のデータが取れなかった行（404＝いま表示できない／通信の失敗）。自分のリストでは、手で外せる */
+function UnavailableRow({
+  no,
+  id,
+  kind,
+  first,
+  last,
+  onMove,
+  onRemove,
+}: {
+  no: number;
+  id: string;
+  kind: "gone" | "error";
+  first: boolean;
+  last: boolean;
+  onMove: (id: string, dir: -1 | 1) => void;
+  onRemove: (id: string, label: string) => void;
+}) {
+  const label = `店番号 ${id}`;
+  return (
+    <li className="sv-row sv-gone" data-sv-row={id} data-sv-gone={kind}>
+      <span className="sv-no" aria-hidden="true">
+        {String(no).padStart(2, "0")}
+      </span>
+      <span className="sv-ph" aria-hidden="true">
+        <span className="g">−</span>
+      </span>
+      <div className="sv-body">
+        <small>{label}</small>
+        <span className="sv-nm sv-nm-off">{kind === "gone" ? "この店はいま表示できません" : "この店のデータを読み込めませんでした"}</span>
+        <span className="sv-ar">
+          {kind === "gone"
+            ? "このサイトに、まだ載っていない（または、もう載っていない）店です。リストには残してあります。"
+            : "通信を確かめて、あとでもう一度お試しください。リストには残してあります。"}
+        </span>
+      </div>
+      <div className="sv-ctl" role="group" aria-label={`${label}の操作`}>
+        <button type="button" className="sv-mv" disabled={first} aria-label={`${label}を上へ`} data-sv-act={`up:${id}`} onClick={() => onMove(id, -1)}>
+          <Chevron dir="up" />
+        </button>
+        <button type="button" className="sv-mv" disabled={last} aria-label={`${label}を下へ`} data-sv-act={`down:${id}`} onClick={() => onMove(id, 1)}>
+          <Chevron dir="down" />
+        </button>
+        <button type="button" className="sv-rm" aria-label={`${label}を候補から外す`} data-sv-act={`rm:${id}`} onClick={() => onRemove(id, label)}>
+          外す
+        </button>
+      </div>
+    </li>
+  );
+}
+
 interface RowProps {
   no: number;
   shop: ListShop;
@@ -164,7 +218,7 @@ interface RowProps {
   first: boolean;
   last: boolean;
   onMove: (id: string, dir: -1 | 1) => void;
-  onRemove: (shop: ListShop) => void;
+  onRemove: (id: string, label: string) => void;
 }
 
 function Row({ no, shop, mine, first, last, onMove, onRemove }: RowProps) {
@@ -207,7 +261,7 @@ function Row({ no, shop, mine, first, last, onMove, onRemove }: RowProps) {
           <button type="button" className="sv-mv" disabled={last} aria-label={`${shop.name}を下へ`} data-sv-act={`down:${shop.id}`} onClick={() => onMove(shop.id, 1)}>
             <Chevron dir="down" />
           </button>
-          <button type="button" className="sv-rm" aria-label={`${shop.name}を候補から外す`} data-sv-act={`rm:${shop.id}`} onClick={() => onRemove(shop)}>
+          <button type="button" className="sv-rm" aria-label={`${shop.name}を候補から外す`} data-sv-act={`rm:${shop.id}`} onClick={() => onRemove(shop.id, shop.name)}>
             外す
           </button>
         </div>
@@ -244,12 +298,8 @@ export default function ListView() {
   const failed = states.filter((x) => x.e?.s === "error").length;
   const settled = loading === 0;
 
-  // 自分のリストにある店が、サイトから無くなっていたら（404 を確かめたものだけ）、保存からも外す
-  useEffect(() => {
-    if (isShared) return;
-    for (const x of states) if (x.e?.s === "gone") removeSaved(x.id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isShared, ids.join(","), settled]);
+  // 表示できない店（404）を、保存から自動で外すことはしない（手で「外す」だけ）。行は UnavailableRow で残す。
+  const gone = states.filter((x) => x.e?.s === "gone").length;
 
   // 営業中の判定に使う、営業予定の表（営業予定が読み取れた店だけ）
   const weeks = useMemo<WeekTableProp>(() => {
@@ -308,12 +358,12 @@ export default function ListView() {
     focus.current = { kind: "move", id, dir };
     moveSaved(id, dir);
   };
-  const onRemove = (shop: ListShop) => {
-    const index = mine.indexOf(shop.id);
+  const onRemove = (id: string, label: string) => {
+    const index = mine.indexOf(id);
     focus.current = { kind: "removed", index };
-    removeSaved(shop.id);
-    say({ text: `「${shop.name}」を候補から外しました（残り${Math.max(0, mine.length - 1)}店）。`, undo: { id: shop.id, index } });
-    trackTap({ storeId: shop.id, kind: "unsave", page: "/list" });
+    removeSaved(id);
+    say({ text: `「${label}」を候補から外しました（残り${Math.max(0, mine.length - 1)}店）。`, undo: { id, index } });
+    trackTap({ storeId: id, kind: "unsave", page: "/list" });
   };
   const onUndo = (u: { id: string; index: number }) => {
     insertSaved(u.id, u.index);
@@ -351,7 +401,8 @@ export default function ListView() {
 
   const persistent = usePersistent();
   const shownCount = okShops.length;
-  const empty = settled && shownCount === 0 && failed === 0;
+  // 自分のリスト: 保存が 0 店のとき。共有リスト: 表示できる店が 0 店のとき（形の合わない ID だけ・全部が表示できない、を含む）
+  const empty = isShared ? settled && shownCount === 0 && failed === 0 : ids.length === 0;
 
   return (
     <div ref={root} data-sv-mode={isShared ? "shared" : "mine"}>
@@ -366,7 +417,7 @@ export default function ListView() {
         <div>
           <h2 className="sv-h" id="sv-h" tabIndex={-1}>
             {isShared ? "共有されたリスト" : "自分のリスト"}
-            <small>{settled ? `${shownCount}店` : "読み込み中"}</small>
+            <small>{settled ? `${isShared ? shownCount : ids.length}店` : "読み込み中"}</small>
           </h2>
           {isShared ? (
             <p className="sv-sub">
@@ -464,26 +515,53 @@ export default function ListView() {
         </p>
       )}
 
-      {ids.length > 0 && (
+      {isShared && gone > 0 && shownCount > 0 && settled && (
+        <p className="sv-sub" data-sv-gone-note="">
+          リンクには、いま表示できない店が{gone}店含まれていました（並べていません）。
+        </p>
+      )}
+      {!isShared && gone > 0 && settled && (
+        <p className="sv-sub" data-sv-gone-note="">
+          いま表示できない店が{gone}店あります。リストには残してあるので、要らなければ「外す」を押してください。
+        </p>
+      )}
+
+      {ids.length > 0 && !(empty && isShared) && (
         <OpenScope weeks={weeks}>
           <ol className="sv-list" aria-label={isShared ? "共有された店" : "候補の店"}>
-            {states.map((x, i) => {
-              if (x.e === null) return <RowSkeleton key={x.id} />;
-              if (x.e.s !== "ok") return null;
-              const pos = states.slice(0, i).filter((y) => y.e?.s === "ok").length;
-              return (
-                <Row
-                  key={x.id}
-                  no={pos + 1}
-                  shop={x.e.shop}
-                  mine={!isShared}
-                  first={pos === 0}
-                  last={pos === okShops.length - 1}
-                  onMove={onMove}
-                  onRemove={onRemove}
-                />
-              );
-            })}
+            {(() => {
+              // 共有リストでは、表示できない店は並べない。自分のリストでは、並び（保存した順）のとおり全部を並べる
+              const rows = states.filter((x) => (isShared ? x.e === null || x.e.s === "ok" : true));
+              return rows.map((x, i) => {
+                if (x.e === null) return <RowSkeleton key={x.id} />;
+                if (x.e.s === "ok") {
+                  return (
+                    <Row
+                      key={x.id}
+                      no={i + 1}
+                      shop={x.e.shop}
+                      mine={!isShared}
+                      first={i === 0}
+                      last={i === rows.length - 1}
+                      onMove={onMove}
+                      onRemove={onRemove}
+                    />
+                  );
+                }
+                return (
+                  <UnavailableRow
+                    key={x.id}
+                    no={i + 1}
+                    id={x.id}
+                    kind={x.e.s}
+                    first={i === 0}
+                    last={i === rows.length - 1}
+                    onMove={onMove}
+                    onRemove={onRemove}
+                  />
+                );
+              });
+            })()}
           </ol>
         </OpenScope>
       )}

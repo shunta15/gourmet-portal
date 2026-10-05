@@ -10,6 +10,8 @@ import { wallImg, type WallItem } from "@/lib/portal/photoWallShared";
 
 const CSS = String.raw`
 .ph-ent{padding:0 40px 120px}
+/* 「こだわり条件」の入口（帯）の直後に並ぶとき（/gourmet の portalEntrances）は、帯との間をあける */
+.fc-entrance + .ph-ent{padding-top:clamp(56px,7vw,96px)}
 .ph-ent .section-head{padding:0 0 48px}
 .ph-ent-wall{display:grid; grid-template-columns:1.35fr 1fr 1fr 1fr 1.15fr; grid-template-rows:1fr 1fr; gap:8px; height:clamp(300px,34vw,500px); margin:0; padding:0; list-style:none}
 .ph-ent-wall li{position:relative; overflow:hidden; background:linear-gradient(135deg,#e6dece,#ddd3c0)}
@@ -30,6 +32,7 @@ const CSS = String.raw`
 .ph-ent-btn:focus-visible{outline:3px solid var(--ink); outline-offset:3px}
 @media (max-width:900px){
   .ph-ent{padding:0 20px 80px}
+  .fc-entrance + .ph-ent{padding-top:48px}
   .ph-ent .section-head{padding-bottom:32px}
   .ph-ent-wall{grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,minmax(0,1fr)); height:clamp(380px,100vw,560px); gap:6px}
   .ph-ent-wall li:nth-child(1){grid-column:1 / 3; grid-row:1}

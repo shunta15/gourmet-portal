@@ -12,6 +12,8 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { bigImg, type WallFacet, type WallItem } from "@/lib/portal/photoWallShared";
+import { useIsSaved } from "@/lib/portal/savedList";
+import SaveButton from "../SaveButton";
 
 const EASE = "cubic-bezier(.19,1,.22,1)";
 const EASE_IO = "cubic-bezier(.76,0,.24,1)";
@@ -321,6 +323,24 @@ export default function PhotoViewer({ items, prefs, openId, getTile, onNavigate,
 
   const total = items.length;
   const it = view?.it;
+
+  // 「候補に入れる」を押した結果の読み上げ。<dialog>（showModal）の外は操作できず読み上げられないので、画面隅の案内（ListEntry）とは別に、中にも置く
+  const saved = useIsSaved(it?.id ?? "");
+  const [saveMsg, setSaveMsg] = useState("");
+  const savedRef = useRef<{ id: string | undefined; saved: boolean }>({ id: undefined, saved: false });
+  useEffect(() => {
+    const p = savedRef.current;
+    if (p.id !== it?.id) {
+      // 別の写真に替わった。最初の状態を覚えるだけ（案内は出さない）
+      savedRef.current = { id: it?.id, saved };
+      setSaveMsg("");
+      return;
+    }
+    if (p.saved !== saved) {
+      savedRef.current = { id: it?.id, saved };
+      setSaveMsg(saved ? "候補に入れました" : "候補から外しました");
+    }
+  }, [it?.id, saved]);
   const pref = it && it.p >= 0 ? prefs[it.p]?.label : "";
   const where = [pref, it?.a].filter(Boolean).join("・");
   const no = view ? `${String(view.idx + 1).padStart(String(total).length, "0")}` : "";
@@ -369,6 +389,9 @@ export default function PhotoViewer({ items, prefs, openId, getTile, onNavigate,
               <span>店のページへ</span>
               <Arrow dir="ne" />
             </Link>
+            <div className="mp-ph-save">
+              <SaveButton id={it.id} name={it.n} variant="inline" page="/photos" />
+            </div>
             <div className="mp-ph-nav">
               <button type="button" onClick={() => go(-1)} aria-label="前の写真" disabled={total < 2}>
                 <Arrow dir="l" />
@@ -383,6 +406,9 @@ export default function PhotoViewer({ items, prefs, openId, getTile, onNavigate,
       )}
       <p className="mp-sr" role="status" aria-live="polite">
         {it ? `${it.n}、${view!.idx + 1}枚目、全${total}枚` : ""}
+      </p>
+      <p className="mp-sr" role="status" aria-live="polite" data-ph-save-msg="">
+        {saveMsg}
       </p>
     </dialog>
   );

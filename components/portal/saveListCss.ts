@@ -124,6 +124,10 @@ export const CSS_PAGE = `
 .sv-rm{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border:1px solid rgba(21,17,14,.28);border-radius:999px;background:transparent;color:var(--ink);font:500 13.5px/1 var(--sans);letter-spacing:.05em;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s}
 @media (hover:hover){.sv-rm:hover{background:var(--sv-red);border-color:var(--sv-red);color:#fff}}
 .sv-rm:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+/* 店のデータが取れなかった行（この店はいま表示できません）。写真の枠は破線、店名の位置には案内の文 */
+.sv-gone .sv-ph{background:rgba(21,17,14,.04);outline:1px dashed rgba(21,17,14,.3);outline-offset:-1px}
+.sv-gone .sv-ph .g{inset:0;right:auto;top:auto;display:grid;place-items:center;font:500 28px/1 var(--mono);color:rgba(21,17,14,.45)}
+.sv-nm-off{color:var(--ink-2)}
 .sv-row[data-new="1"]{animation:sv-in .6s var(--sv-ease)}
 @keyframes sv-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .sv-url{display:block;width:100%;max-width:640px;margin-top:12px;padding:12px 14px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink-2);font:400 12.5px/1.5 var(--mono);text-overflow:ellipsis}

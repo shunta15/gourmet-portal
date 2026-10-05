@@ -50,10 +50,15 @@ export const CSS_SEARCH_FACETS = String.raw`
 .fc-card .meta,.fc-card .cuisine{text-shadow:0 1px 3px rgba(20,17,13,.8)}
 .fc-card .cuisine{opacity:.92}
 .fc-card h4{text-shadow:0 1px 4px rgba(20,17,13,.6)}
+/* カード全面のリンク（z-index は付けない: 付けると写真が下のグラデーションより上に出る）。右上は「候補に入れる」のボタンの場所 */
+.fc-card-link{position:absolute;inset:0;display:block;color:inherit}
+.fc-card-link:focus-visible{outline:3px solid #fffdf7;outline-offset:-6px}
+.fc-card .meta{padding-right:52px}
 
-/* 結果の店に添える札（店カードの下、墨のグラデーションの上） */
+/* 結果の店に添える札（店カードの下、墨のグラデーションの上）。選んだ条件は生成りのベタ＋左に朱の線で、先頭に並べる */
 .fc-tags{list-style:none;display:flex;flex-wrap:wrap;gap:4px;margin:10px 0 0;padding:0}
 .fc-tags li{padding:3px 7px;border:1px solid rgba(255,253,247,.55);background:rgba(20,17,13,.78);color:#fffdf7;font:500 11px/1.3 var(--body,sans-serif)}
+.fc-tags li[data-on="1"]{border-color:#fffdf7;background:#fffdf7;color:#14110d;box-shadow:inset 3px 0 0 var(--accent,#c7472a);padding-left:10px;font-weight:700}
 
 @media (max-width:767px){
   .fc{margin:0 0 20px}

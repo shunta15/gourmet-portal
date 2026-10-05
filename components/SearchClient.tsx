@@ -114,8 +114,10 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
     router.push(buildUrl({ tag: "" }));
   };
 
-  // 画面の組み立て。list は表示する店。ext（こだわり条件。ON のときだけ）が無ければ、従来どおりの画面
-  const view = (list: SearchItem[], ext?: FacetExt) => (
+  // 画面の組み立て。list は表示する店。ext（こだわり条件。ON のときだけ）が無ければ、従来どおりの画面。
+  // pending（ON のときだけ。こだわり条件の部品を読み込んでいる間）は、見出しだけ。入力欄・結果は出さない
+  // （従来の画面を先に出すと、読み込みが終わって画面が入れ替わったとき、入力中の欄が作り直されてフォーカスとキャレットを失い、続きの入力が消える）
+  const view = (list: SearchItem[], ext?: FacetExt, pending = false) => (
     <div className="feat-page">
       <section style={{ padding: "140px 40px 40px", background: "var(--bg-2)" }}>
         <div style={{ maxWidth: 1600, margin: "0 auto" }}>
@@ -139,6 +141,16 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
             食べたいお店を、<em style={{ color: "var(--accent)" }}>見つける。</em>
           </h1>
 
+          {pending ? (
+            <p
+              role="status"
+              aria-busy="true"
+              style={{ margin: 0, padding: "40px 0", font: "500 11px/1 var(--mono)", letterSpacing: ".25em", color: "var(--ink-soft)" }}
+            >
+              条件を読み込んでいます…
+            </p>
+          ) : (
+            <>
           <form
             className="search-bar"
             onSubmit={onSubmit}
@@ -248,9 +260,13 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
               / {restaurants.length} 店
             </div>
           </div>
+            </>
+          )}
         </div>
       </section>
 
+      {!pending && (
+        <>
       <section style={{ padding: "60px 40px 120px" }}>
         {ext?.notice}
         {list.length > 0 ? (
@@ -319,13 +335,15 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
       )}
 
       <Footer />
+        </>
+      )}
     </div>
   );
 
   if (!facets) return view(results);
-  // 読み込みが終わるまでは、条件の無い従来どおりの画面を出しておく
+  // 読み込みが終わるまでは、見出しだけを出す（入力欄を持たない。画面の入れ替わりで入力中の文字・フォーカスを失わないため）
   return (
-    <Suspense fallback={view(results)}>
+    <Suspense fallback={view(results, undefined, true)}>
       <SearchFacets base={results} facets={facets} sp={sp} render={view} />
     </Suspense>
   );
