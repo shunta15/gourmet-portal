@@ -317,6 +317,9 @@ const PORTAL_404 = [
   "/list", // 候補リスト
   "/list?ids=r33,r16",
   "/list-data/r33", // 候補リストが店ごとに取る JSON
+  "/photos",
+  "/photos?genre=ramen&pref=kyoto",
+  "/photos/sitemap.xml",
   "/search-index.json",
   "/_portal/home-046f05f2-480.webp", // 事前生成した写真（public/_portal。OFF では 404）
   "/og/home",

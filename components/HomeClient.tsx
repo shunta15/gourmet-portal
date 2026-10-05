@@ -29,8 +29,11 @@ interface HomeClientProps {
   cuisines: string[];
   stats: Stat[];
   regionStats: Record<RegionKey, Stat[]>;
-  /** さがすの下に差し込むもの（公開スイッチ ON の /gourmet だけが渡す。OFF では prop ごと渡されない） */
-  afterSearch?: ReactNode;
+  /**
+   * 総合サイトの入口（「こだわり条件でさがす」「写真から探す」）。公開スイッチ ON の /gourmet だけが、サーバー側の GourmetHome から渡す。
+   * OFF の `/` では prop ごと渡されず、何も出ない（出力は従来と同じ）。入口が増えてもスロットは増やさず、渡す側の1つの ReactNode にまとめる。
+   */
+  portalEntrances?: ReactNode;
 }
 
 export default function HomeClient({
@@ -41,7 +44,7 @@ export default function HomeClient({
   cuisines,
   stats,
   regionStats,
-  afterSearch,
+  portalEntrances,
 }: HomeClientProps) {
   const [region, setRegion] = useState<RegionKey>("tokyo");
   useReveal([region]);
@@ -54,7 +57,6 @@ export default function HomeClient({
     <>
       <Hero />
       <SearchBar region={region} onRegion={setRegion} cuisines={cuisines} />
-      {afterSearch}
       <Marquee
         items={[
           "拉麺",
@@ -82,6 +84,7 @@ export default function HomeClient({
       <RestaurantGrid restaurants={restaurants} />
       <Stats stats={stats} />
       <SceneSection />
+      {portalEntrances}
       <RegionsShowcase region={region} regionStats={regionStats} />
       {neighborhoods.length > 0 && <Neighborhoods neighborhoods={neighborhoods} />}
       <Footer />

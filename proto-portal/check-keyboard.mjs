@@ -337,7 +337,7 @@ console.log("6. 画像の alt");
 {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await ctx.newPage();
-  const pages = ["/", "/beauty", "/area/tokyo", "/station", "/station/kyoto", "/station/kyoto/祇園四条", "/station/hyogo/神戸三宮", "/videos", "/videos/sv-nazatu-1", "/map", "/map?pref=kyoto", "/find?q=三宮", "/find?q=京都"];
+  const pages = ["/", "/beauty", "/area/tokyo", "/station", "/station/kyoto", "/station/kyoto/祇園四条", "/station/hyogo/神戸三宮", "/videos", "/videos/sv-nazatu-1", "/map", "/map?pref=kyoto", "/find?q=三宮", "/find?q=京都", "/photos"];
   let imgs = 0;
   for (const u of pages) {
     await page.goto(BASE + encodeURI(u), { waitUntil: "load" });
