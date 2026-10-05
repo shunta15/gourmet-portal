@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Hero from "./Hero";
 import SearchBar from "./SearchBar";
 import Marquee from "./Marquee";
@@ -29,6 +29,8 @@ interface HomeClientProps {
   cuisines: string[];
   stats: Stat[];
   regionStats: Record<RegionKey, Stat[]>;
+  /** さがすの下に差し込むもの（公開スイッチ ON の /gourmet だけが渡す。OFF では prop ごと渡されない） */
+  afterSearch?: ReactNode;
 }
 
 export default function HomeClient({
@@ -39,6 +41,7 @@ export default function HomeClient({
   cuisines,
   stats,
   regionStats,
+  afterSearch,
 }: HomeClientProps) {
   const [region, setRegion] = useState<RegionKey>("tokyo");
   useReveal([region]);
@@ -51,6 +54,7 @@ export default function HomeClient({
     <>
       <Hero />
       <SearchBar region={region} onRegion={setRegion} cuisines={cuisines} />
+      {afterSearch}
       <Marquee
         items={[
           "拉麺",

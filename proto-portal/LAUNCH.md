@@ -329,3 +329,16 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - 店ページの隅の切替「ボタン案 1〜6」は、プレビューとローカルだけ（`previewTools`。スマホでは「案 N」に畳む）。URL の `?sns=1〜6` でも切り替わる。既定は案1。
 - 案を採用したら: 残り5案の部品と `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行を消す。
 - **未実施**: main との全ページ比較（1-A の `compare-off.mjs static / live`）。取り込み前に必ず実行する。
+
+## 付録: こだわり条件で絞る（2026-10-05・試作）
+- 仕様 `proto-portal/FILTERS-BRIEF.md`、数えた結果と検査の記録 `proto-portal/FILTERS-COVERAGE.md`。公開スイッチ ON のときだけ。OFF の `/search`・`/`（グルメのトップ）は出力が変わらない（検査済み）。
+- **どこに何があるか**: `/search` に「こだわり条件」のパネル（予算の帯・営業時間・駅徒歩・予約リンク・席数・設備・特徴・いま営業中）。URL は `?budget=3000&f=late,walk5`（既存の `q` `region` `cuisine` `tag` と併用。canonical `/search`・noindex のまま）。
+  グルメのトップ `/gourmet`（ON）の「さがす」の下に入口「こだわり条件」→ `/search`。
+  - 判定: `lib/portal/facetParse.ts`（文字列 → 条件）・`facetRow.ts`（店1軒ぶん）・`facetDefs.ts`（条件の定義・URL）・`facets.ts`（サーバーで表を作り、出す条件を基準で決める）。
+  - 画面: `components/portal/SearchFacets.tsx`（React.lazy。`components/SearchClient.tsx` が ON のときだけ読み込む）・`searchFacetsCss.ts`（CSS は `.fc-`。`<style href precedence>` で出す。`app/globals.css` は変えていない）・`FacetEntrance.tsx`（グルメのトップの入口）。
+  - クライアントへ渡すのは、店ID＋判定ビットの小さな表（約 60KB。全店分）だけ。文字列の解析はサーバー側。
+- **出す条件の基準**（`lib/portal/facets.ts` が毎回数えて決める）: 予算・営業時間帯・駅徒歩・予約・席数は「判定できた店 100 以上かつはい 10 以上」。設備・特徴は「記載あり 10 以上」かつ、無作為 30 件の検査（誤り 0）を通して `VERIFIED_FEATURES` に入れたもの。
+  判定は「はい」と「不明」が基本（設備・特徴に「いいえ」は無い）。店の案内に書かれていないことは条件に含めない。星・点数・口コミ数は使わない・出さない。
+- **数え直し方**: `node --env-file=.env.local proto-portal/count-facets.mjs --md 出力.md [--detail]`（全店・条件ごとの 判定できた店／はい／不明、元の文字列の例、設備・特徴の無作為30件の検査表）。
+  判定の単体テストは `node proto-portal/test-facets.mjs`。データが増えたら、数え直して基準を確かめ、設備・特徴は拾い方（`facetParse.ts` の `RULES`・`NEG`・`HEDGE`）を変えたら検査をやり直してから `VERIFIED_FEATURES` に足す。
+- 設備・特徴の文章は tags・desc・body。highlights（特集記事の見出し）は店ページに出ない文なので使わない（使うと店ページで確かめられない「記載あり」が出る）。

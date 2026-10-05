@@ -1,17 +1,24 @@
 "use client";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useState, useEffect, type FormEvent } from "react";
+import { Suspense, lazy, useMemo, useState, useEffect, type FormEvent } from "react";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
+import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
+
+// 「こだわり条件で絞る」は公開スイッチ ON のときだけ（page.tsx が facets を渡す）。React.lazy で分けて、OFF のときは読み込まない
+// （静的に import すると、描画しなくても JS が /search に混ざる。店ページの ShopActions と同じ作法）
+const SearchFacets = lazy(() => import("./portal/SearchFacets"));
 
 interface SearchClientProps {
   restaurants: SearchItem[];
+  /** 公開スイッチ ON のときだけ渡される（こだわり条件の判定の表）。OFF では prop ごと渡されない */
+  facets?: FacetPayload;
 }
 
-export default function SearchClient({ restaurants }: SearchClientProps) {
+export default function SearchClient({ restaurants, facets }: SearchClientProps) {
   const router = useRouter();
   const sp = useSearchParams();
 
@@ -20,12 +27,17 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
   const [cuisine, setCuisine] = useState<string>("ALL");
   const [tag, setTag] = useState<string>("");
 
+  // こだわり条件（?budget= ?f=）だけが変わったときは、入力途中のキーワードなどを戻さない
+  const spQ = sp.get("q") || "";
+  const spRegion = sp.get("region") || "";
+  const spCuisine = sp.get("cuisine") || "ALL";
+  const spTag = sp.get("tag") || "";
   useEffect(() => {
-    setQ(sp.get("q") || "");
-    setRegion(sp.get("region") || "");
-    setCuisine(sp.get("cuisine") || "ALL");
-    setTag(sp.get("tag") || "");
-  }, [sp]);
+    setQ(spQ);
+    setRegion(spRegion);
+    setCuisine(spCuisine);
+    setTag(spTag);
+  }, [spQ, spRegion, spCuisine, spTag]);
 
   // cuisines は CUISINE_GROUPS に統合済み
 
@@ -82,6 +94,13 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
     if (next.region) params.set("region", next.region);
     if (next.cuisine && next.cuisine !== "ALL") params.set("cuisine", next.cuisine);
     if (next.tag) params.set("tag", next.tag);
+    // こだわり条件（ON のときだけ）は、キーワードや地域を変えても保つ
+    if (facets) {
+      const budget = sp.get("budget");
+      const f = sp.get("f");
+      if (budget) params.set("budget", budget);
+      if (f) params.set("f", f);
+    }
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };
 
@@ -95,7 +114,8 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
     router.push(buildUrl({ tag: "" }));
   };
 
-  return (
+  // 画面の組み立て。list は表示する店。ext（こだわり条件。ON のときだけ）が無ければ、従来どおりの画面
+  const view = (list: SearchItem[], ext?: FacetExt) => (
     <div className="feat-page">
       <section style={{ padding: "140px 40px 40px", background: "var(--bg-2)" }}>
         <div style={{ maxWidth: 1600, margin: "0 auto" }}>
@@ -189,6 +209,8 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
             </div>
           )}
 
+          {ext?.panel}
+
           <div
             style={{
               display: "flex",
@@ -211,7 +233,8 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
               {region && <>{REGIONS[region as RegionKey]?.name} / </>}
               {cuisine !== "ALL" && <>{cuisine} / </>}
               {tag && <>#{tag} / </>}
-              {!q && !region && cuisine === "ALL" && !tag && "全件表示"}
+              {ext?.summary}
+              {!q && !region && cuisine === "ALL" && !tag && !ext?.active && "全件表示"}
             </div>
             <div
               style={{
@@ -220,7 +243,7 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
               }}
             >
               <em style={{ color: "var(--accent)", fontSize: 48 }}>
-                {results.length}
+                {list.length}
               </em>{" "}
               / {restaurants.length} 店
             </div>
@@ -229,11 +252,10 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
       </section>
 
       <section style={{ padding: "60px 40px 120px" }}>
-        {results.length > 0 ? (
+        {ext?.notice}
+        {list.length > 0 ? (
           <div className="rest-grid">
-            {results.map((r) => (
-              <RestaurantCard key={r.id} r={r} />
-            ))}
+            {list.map((r) => (ext ? ext.renderCard(r) : <RestaurantCard key={r.id} r={r} />))}
           </div>
         ) : (
           <div
@@ -298,5 +320,13 @@ export default function SearchClient({ restaurants }: SearchClientProps) {
 
       <Footer />
     </div>
+  );
+
+  if (!facets) return view(results);
+  // 読み込みが終わるまでは、条件の無い従来どおりの画面を出しておく
+  return (
+    <Suspense fallback={view(results)}>
+      <SearchFacets base={results} facets={facets} sp={sp} render={view} />
+    </Suspense>
   );
 }

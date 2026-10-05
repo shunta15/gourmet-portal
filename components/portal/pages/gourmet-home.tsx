@@ -2,6 +2,8 @@ import HomeClient from "@/components/HomeClient";
 import { SHORT_VIDEOS, NEIGHBORHOODS, REGIONS, toCardItem, type RegionKey, type Stat } from "@/lib/regions";
 import { FEATURES, getNationalStats, getRegionStats } from "@/lib/data";
 import { getAllRestaurants } from "@/lib/db/restaurants";
+import { isPortalLive } from "@/lib/portal/launch";
+import FacetEntrance from "../FacetEntrance";
 
 /**
  * グルメのトップの中身（旧 `/` の page.tsx をそのまま移したもの。サーバーコンポーネント）。
@@ -28,6 +30,8 @@ export default async function GourmetHome() {
       cuisines={cuisines}
       stats={stats}
       regionStats={regionStats}
+      // 「こだわり条件でさがす」の入口。ON のとき（= /gourmet）だけ。OFF の `/` には prop ごと渡さない
+      {...(isPortalLive() ? { afterSearch: <FacetEntrance /> } : {})}
     />
   );
 }
