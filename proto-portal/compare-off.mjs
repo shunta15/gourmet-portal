@@ -307,6 +307,7 @@ const PORTAL_404 = [
   "/station/kyoto",
   "/station/kyoto/祇園四条",
   "/station/nosuch/駅",
+  "/station/kyoto/烏丸/和食・割烹", // ジャンル × 駅（OFF では 404）
   "/map",
   "/map?pref=kyoto",
   "/videos",
@@ -319,6 +320,7 @@ const PORTAL_404 = [
   "/og/v/beauty",
   "/og/area/tokyo",
   "/og/station/kyoto/祇園四条",
+  "/og/station/kyoto/烏丸/和食・割烹",
   "/beauty/sitemap.xml",
   "/bodycare/sitemap.xml",
   "/pet/sitemap.xml",
