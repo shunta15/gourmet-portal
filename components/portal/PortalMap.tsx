@@ -60,6 +60,11 @@ interface Props {
   height: number | string;
   label: string;
   className?: string;
+  /**
+   * 背景の地図。省略（"pale"）は国土地理院の淡色地図。"blank" は国土地理院の白地図（道路・地形なし。タイルはズーム5〜14。
+   * それより拡大したときはタイルを引き伸ばす）。/map だけが "blank" を指定する
+   */
+  basemap?: "pale" | "blank";
 }
 
 /** 日本全体（南西端は八重山、北東端は北海道東部）。画面の大きさに合わせて収める */
@@ -71,6 +76,11 @@ const JAPAN_BOUNDS: [[number, number], [number, number]] = [
 const CLUSTER_MAX_ZOOM = 13;
 const CELL_PX = 56;
 const TILE_URL = "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png";
+/** 白地図の提供ズームは 5〜14（地理院タイル一覧）。14 を超える拡大は引き伸ばし、16 まで */
+const BLANK_TILE_URL = "https://cyberjapandata.gsi.go.jp/xyz/blank/{z}/{x}/{y}.png";
+const BLANK_MIN_ZOOM = 5;
+const BLANK_NATIVE_MAX_ZOOM = 14;
+const BLANK_MAX_ZOOM = 16;
 const TILE_ATTRIBUTION =
   '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener noreferrer">地理院タイル</a>';
 const INK = "#15110e";
@@ -91,7 +101,7 @@ const BADGE_LABEL: Record<string, string> = {
   unknown: "営業時間不明",
 };
 
-export default function PortalMap({ points, colors, weeks, station, view, fit, lazy, height, label, className }: Props) {
+export default function PortalMap({ points, colors, weeks, station, view, fit, lazy, height, label, className, basemap }: Props) {
   const elRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMapType | null>(null);
   const layerRef = useRef<LayerGroup | null>(null);
@@ -118,9 +128,9 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
   useEffect(() => {
     live.current = { visible, colors, weeks };
   });
-  const initial = useRef({ view, fit, station, points });
+  const initial = useRef({ view, fit, station, points, basemap });
   useEffect(() => {
-    initial.current = { view, fit, station, points };
+    initial.current = { view, fit, station, points, basemap };
   });
 
   /* ── map を作る（1 回だけ。deps は空） ── */
@@ -136,16 +146,26 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
         const L = (await import("leaflet")) as typeof import("leaflet");
         // leaflet.css は app/globals.css で読み込み済み
         if (cancelled || !elRef.current) return;
-        const { view: v, fit: f, station: st, points: pts } = initial.current;
+        const { view: v, fit: f, station: st, points: pts, basemap: bm } = initial.current;
+        const blank = bm === "blank";
         const map = L.map(elRef.current, {
           zoomControl: true,
-          minZoom: 4,
-          maxZoom: 18,
+          minZoom: blank ? BLANK_MIN_ZOOM : 4,
+          maxZoom: blank ? BLANK_MAX_ZOOM : 18,
           scrollWheelZoom: !f, // 小さな地図は、ページのスクロールを妨げないようホイールでは拡大しない
           dragging: !(f && L.Browser.mobile), // 小さな地図は、スマホでは 1 本指のドラッグでページをスクロールさせる
           worldCopyJump: false,
         });
-        L.tileLayer(TILE_URL, { attribution: TILE_ATTRIBUTION, maxZoom: 18, maxNativeZoom: 18 }).addTo(map);
+        if (blank) {
+          L.tileLayer(BLANK_TILE_URL, {
+            attribution: TILE_ATTRIBUTION,
+            minZoom: BLANK_MIN_ZOOM,
+            maxZoom: BLANK_MAX_ZOOM,
+            maxNativeZoom: BLANK_NATIVE_MAX_ZOOM,
+          }).addTo(map);
+        } else {
+          L.tileLayer(TILE_URL, { attribution: TILE_ATTRIBUTION, maxZoom: 18, maxNativeZoom: 18 }).addTo(map);
+        }
 
         if (f) {
           const all: LatLngTuple[] = pts.map((p) => [p.lat, p.lng]);
@@ -172,9 +192,12 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
             title: `${st.name}`,
             zIndexOffset: 1000,
           })
-            .bindPopup(`<div class="mp-pop"><b class="mp-pop-name">${esc(st.name)}</b><span class="mp-pop-sub">駅の位置（駅データによる）</span></div>`, {
-              className: "mp-pop-wrap",
-            })
+            .bindPopup(
+              `<div class="mp-pop"><b class="mp-pop-name">${esc(st.name)}</b><span class="mp-pop-sub">駅の位置（駅データによる）</span></div>`,
+              {
+                className: "mp-pop-wrap",
+              },
+            )
             .addTo(map);
         }
 
@@ -267,7 +290,10 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
                 r.state !== "unknown" ? "<small>（店の案内の営業時間による）</small>" : ""
               }</span>`
             : "";
-          const sub = [p.category, p.stationName].filter((x): x is string => !!x).map(esc).join("・");
+          const sub = [p.category, p.stationName]
+            .filter((x): x is string => !!x)
+            .map(esc)
+            .join("・");
           return (
             `<div class="mp-pop">` +
             `<b class="mp-pop-name">${esc(p.name)}</b>` +

@@ -1,18 +1,21 @@
 /**
  * 地図で探す。/map
  * 全業種の店をピンで表示する（業種の色＝lib/verticals の accent。いまは実データのある業種だけピンが出る）。
- * ?station={pref}/{name} … その駅の位置に合わせる。?pref={pref} … その県に合わせる。どちらも一覧はその範囲の店。
+ * 段: 日本地図（地方を選ぶ）→ ?r={地方} … その地方の県が店数つきで並ぶ → ?p={県} … 店の一覧とピンの地図（白地図）。
+ * ?station={pref}/{name} … その駅の位置に合わせる。?pref={pref} は ?p の別名（以前の指定）。一覧はその範囲の店。
+ * 優先順位は station > 県（p・pref）> 地方（r）。変な値は無視して次へ。店が 0 の県は、その地方の段に戻す。
  * 試作の地図ページなので、件数ゲートと関係なく常に noindex（canonical は /map）。
  * データはサーバーで最小限（id, name, lat, lng, vertical, category, stationName, href＋県）に絞って、クライアントの地図へ渡す。
  */
 import type { Metadata } from "next";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
+import { getRegionBySlug, regionOfPref } from "@/lib/portal/mapRegions";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { buildMetadata } from "@/lib/seo/meta";
 import { loadMapData, type MapPoint } from "@/lib/portal/mapData";
 import { getStationIndex, safeDecode, stationHeading } from "@/lib/stations/query";
-import MapExplorer, { type Focus, type VerticalChip } from "../MapExplorer";
+import MapExplorer, { type Focus, type Stage, type VerticalChip } from "../MapExplorer";
 import { PageFrame, type Tone } from "./frame";
 import { StationCredit } from "./station-parts";
 
@@ -58,8 +61,11 @@ export default async function Page({ searchParams }: Props) {
 
   // 範囲の指定（駅が優先。変な値は無視して全国）
   const stationParam = first(sp.station);
-  const prefParam = first(sp.pref);
+  const prefParam = first(sp.p) ?? first(sp.pref);
+  const regionParam = first(sp.r);
   let focus: Focus = {};
+  let stage: Stage = "japan";
+  let regionSlug: string | undefined;
   let station: { name: string; heading: string } | null = null;
   // ページ上部に出す件数（範囲を指定したときは、その範囲の、地図に出せる店の数）
   let count = data.points.length;
@@ -71,6 +77,7 @@ export default async function Page({ searchParams }: Props) {
       const ids = hit.stores.map((s) => s.place.id);
       const idSet = new Set(ids);
       count = data.points.filter((p) => idSet.has(p.id)).length;
+      stage = "station";
       focus = {
         label: stationHeading(st),
         ids,
@@ -82,12 +89,24 @@ export default async function Page({ searchParams }: Props) {
     const area = getPrefBySlug(prefParam);
     if (area) {
       const inPref = data.points.filter((p) => p.pref === area.slug);
-      count = inPref.length;
-      focus = {
-        label: area.short,
-        pref: area.slug,
-        view: inPref.length > 0 ? { bounds: boundsOf(inPref) } : undefined,
-      };
+      regionSlug = regionOfPref(area.slug)?.slug;
+      if (inPref.length > 0) {
+        stage = "pref";
+        count = inPref.length;
+        focus = { label: area.short, pref: area.slug, view: { bounds: boundsOf(inPref) } };
+      } else {
+        // 店が 0 の県は、その地方の段に戻す（そこでは押せない表示）
+        stage = "region";
+        count = data.points.filter((p) => regionOfPref(p.pref)?.slug === regionSlug).length;
+      }
+    }
+  }
+  if (stage === "japan" && regionParam) {
+    const reg = getRegionBySlug(regionParam);
+    if (reg) {
+      stage = "region";
+      regionSlug = reg.slug;
+      count = data.points.filter((p) => regionOfPref(p.pref)?.slug === reg.slug).length;
     }
   }
 
@@ -96,8 +115,14 @@ export default async function Page({ searchParams }: Props) {
   const prefs = PREFECTURES.filter((p) => present.has(p.slug)).map((p) => ({ slug: p.slug, short: p.short }));
 
   const live = verticals.filter((v) => v.count > 0).map((v) => v.name);
+  const where =
+    stage === "japan"
+      ? "日本地図から地方を選び、県、店の順に絞り込めます。"
+      : stage === "region"
+        ? `${getRegionBySlug(regionSlug)?.label ?? ""}の県を選ぶと、店の一覧と地図が出ます。`
+        : `${focus.label ?? ""}の店を、一覧と地図で探せます。業種の色のピンで表示します。`;
   const lead =
-    `${focus.label ? `${focus.label}の店を` : "全国の店を"}地図から探せます。業種の色のピンで表示し、業種のチップで絞り込めます。` +
+    `${where}業種のチップで絞り込めます。` +
     (live.length < verticals.length ? `いまは${live.join("・")}の店を表示しています（ほかの業種は掲載準備中）。` : "");
 
   return (
@@ -117,6 +142,8 @@ export default async function Page({ searchParams }: Props) {
       <section className="mp-pg-sec mp-mx-sec" aria-label="地図と店の一覧">
         <div className="mp-wrap">
           <MapExplorer
+            stage={stage}
+            region={regionSlug}
             points={data.points}
             weeks={data.weeks}
             verticals={verticals}

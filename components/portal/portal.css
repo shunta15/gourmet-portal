@@ -722,6 +722,46 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-mx-row:hover{background:var(--acl,#efe9dc)}
 .mp-mx-row b{font:500 16px/1.5 var(--serif)}
 .mp-mx-row .meta{font:400 12.5px/1.6 var(--sans); color:var(--ink-2)}
+.mp-mx-mapwrap .leaflet-container{background:var(--paper)}
+/* 地方 → 県の選択: デフォルメ日本地図・地方リスト・県カード・階層 */
+.mp-jm{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:clamp(24px,3vw,48px); align-items:start}
+.mp-jm-fig{margin:0}
+.mp-jm-svg{display:block; width:100%; height:auto; max-width:680px}
+.mp-jm-cap{margin-top:10px; font:400 12px/1.8 var(--sans); color:var(--ink-3)}
+.mp-jm-reg{cursor:pointer; outline:none}
+.mp-jm-reg[data-off]{cursor:default}
+.mp-jm-cell{fill:var(--rc); stroke:var(--ink); stroke-opacity:.2; stroke-width:1}
+.mp-jm-reg[data-off] .mp-jm-cell{fill:#e9e4da}
+a.mp-jm-reg:hover .mp-jm-cell{filter:brightness(.92)}
+a.mp-jm-reg:focus-visible{outline:3px solid var(--ink); outline-offset:2px}
+a.mp-jm-reg:focus-visible .mp-jm-cell{stroke-opacity:1; stroke-width:3}
+.mp-jm-t,.mp-jm-n{fill:var(--ink); paint-order:stroke; stroke:var(--paper); stroke-width:4px; stroke-linejoin:round; pointer-events:none}
+.mp-jm-t{font:600 21px/1 var(--serif)}
+.mp-jm-n{font:500 17px/1 var(--mono); letter-spacing:.04em}
+.mp-rl{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr)); gap:14px 18px; margin:0; padding:0; list-style:none}
+.mp-rl-reg{border-top:3px solid var(--rc); padding-top:4px}
+.mp-rl-h{font:500 17px/1.3 var(--serif)}
+.mp-rl-h a,.mp-rl-h span{display:flex; align-items:baseline; justify-content:space-between; gap:8px; min-height:44px; padding:12px 0 8px}
+.mp-rl-h span[data-off]{color:var(--ink-3)}
+.mp-rl-n{font:500 12px/1 var(--mono); letter-spacing:.06em; color:var(--ink-3); white-space:nowrap}
+.mp-rl-prefs{display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none}
+.mp-pl{display:inline-flex; align-items:center; justify-content:space-between; gap:8px; min-height:44px; padding:0 12px; border:1px solid var(--rule); background:var(--paper); font:500 14px/1.2 var(--sans); color:var(--ink)}
+.mp-pl .mp-pl-n{font:500 11.5px/1 var(--mono); letter-spacing:.04em; color:var(--ink-3); white-space:nowrap}
+a.mp-pl:hover{border-color:var(--ink)}
+a.mp-pl:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.mp-pl[data-off]{border-style:dashed; background:transparent; color:var(--ink-3)}
+.mp-pl-big{display:flex; width:100%; min-height:88px; padding:14px 18px; border-left:4px solid var(--rc); font:500 18px/1.3 var(--serif)}
+.mp-pl-big[data-off]{border-left-style:dashed}
+.mp-pl-big .mp-pl-n{font-size:13px}
+.mp-pc{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr)); gap:10px; margin:0; padding:0; list-style:none}
+.mp-pc > li{display:flex}
+.mp-sn ol{display:flex; flex-wrap:wrap; align-items:center; gap:2px; margin:0 0 12px; padding:0; list-style:none; font:500 14px/1.4 var(--sans)}
+.mp-sn li + li::before{content:"\203A"; margin-right:2px; color:var(--ink-3)}
+.mp-sn a{display:inline-flex; align-items:center; min-height:44px; padding:0 10px; border-bottom:1px solid var(--rule); color:var(--ink-2)}
+.mp-sn a:hover{border-bottom-color:var(--ink)}
+.mp-sn a:focus-visible{outline:2px solid var(--ink); outline-offset:2px}
+.mp-sn [aria-current]{display:inline-flex; align-items:center; min-height:44px; padding:0 10px; font-weight:600}
+@media (prefers-reduced-motion:no-preference){.mp-jm-cell{transition:filter .2s}}
 
 @media (max-width: 760px){
   .mp-obar{grid-template-columns:1fr; padding:14px 16px}
@@ -733,6 +773,10 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-mx-page .mp-pg-head{padding-top:84px}
   .mp-mx-page .mp-pg-lead{font-size:13.5px}
   .mp-mx-rows{grid-template-columns:1fr}
+  .mp-jm{grid-template-columns:1fr}
+  .mp-rl{grid-template-columns:1fr}
+  .mp-pc{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mp-pl-big{min-height:72px; padding:12px 14px; font-size:16px}
   .mp-map .leaflet-popup-content{margin:12px 14px 13px}
 }
 
