@@ -26,6 +26,7 @@ const PORTAL_OFF_SOURCES = [
   "/list", // 候補リスト（店を保存して URL で共有）
   "/list-data/:path*", // 候補リストが店ごとに取る JSON
   "/photos/:path*",
+  "/omakase/:path*", // おまかせ提案（4つの質問で店を出す）
   "/og/:path*",
   "/videos",
   "/videos/:id",

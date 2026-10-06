@@ -320,6 +320,8 @@ const PORTAL_404 = [
   "/photos",
   "/photos?genre=ramen&pref=kyoto",
   "/photos/sitemap.xml",
+  "/omakase", // おまかせ提案
+  "/omakase?r=kanto&who=solo&b=3000&m=men",
   "/search-index.json",
   "/_portal/home-046f05f2-480.webp", // 事前生成した写真（public/_portal。OFF では 404）
   "/og/home",

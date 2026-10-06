@@ -6,6 +6,7 @@ import { isPortalLive } from "@/lib/portal/launch";
 import { buildWall, entrancePhotos } from "@/lib/portal/photoWall";
 import PhotosEntrance from "@/components/portal/PhotosEntrance";
 import FacetEntrance from "../FacetEntrance";
+import OmakaseEntrance from "../OmakaseEntrance";
 
 /**
  * グルメのトップの中身（旧 `/` の page.tsx をそのまま移したもの。サーバーコンポーネント）。
@@ -24,12 +25,13 @@ export default async function GourmetHome() {
   ) as Record<RegionKey, Stat[]>;
 
   // 総合サイトの入口（公開スイッチ ON のときだけ。OFF のときは undefined で、出力は従来と同じ）。
-  // 「こだわり条件でさがす」と「写真から探す」を、HomeClient の1つのスロット（portalEntrances）にまとめて渡す。
+  // 「おまかせ提案」「こだわり条件でさがす」「写真から探す」を、HomeClient の1つのスロット（portalEntrances）にまとめて渡す。
   let portalEntrances: React.ReactNode;
   if (isPortalLive()) {
     const wall = buildWall(restaurants);
     portalEntrances = (
       <>
+        <OmakaseEntrance total={restaurants.length} />
         <FacetEntrance />
         <PhotosEntrance photos={entrancePhotos(wall, 6)} total={wall.items.length} />
       </>
