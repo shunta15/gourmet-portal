@@ -402,9 +402,10 @@ export default function PortalMap({
           html: `<span class="mp-pin${order ? " mp-pin-in" : ""}" style="--pc:${esc(colorOf(p.vertical))}${
             order ? `;--i:${Math.min(order.get(p.id) ?? 0, 70)}` : ""
           }"></span>`,
-          iconSize: plain ? [32, 32] : [24, 24],
-          iconAnchor: plain ? [16, 16] : [12, 12],
-          popupAnchor: plain ? [0, -14] : [0, -12],
+          // 県の段（plain）は、点の見た目は小さいまま、押せる範囲を 44px にする
+          iconSize: plain ? [44, 44] : [24, 24],
+          iconAnchor: plain ? [22, 22] : [12, 12],
+          popupAnchor: plain ? [0, -16] : [0, -12],
         }),
         title: p.name,
         riseOnHover: true,

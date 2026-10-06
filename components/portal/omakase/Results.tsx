@@ -146,6 +146,8 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
   const cardsVisible = curtain === "lift" || curtain === "off" || (curtain === "drop" && revealedOnce);
   const n = Math.min(3, Math.max(1, shown.length));
   const few = total < 3;
+  // 写真の無い店のカードは低く収まる（スマホで「食」だけの大きな余白にしない）。暖簾の下に取っておく高さもその分だけ減らす
+  const noPhoto = list.filter(({ shop }) => !shop.photo).length;
   const condText = (() => {
     const bits: string[] = [];
     if (st.region !== null && st.region !== "all") bits.push("場所");
@@ -156,7 +158,7 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
   })();
 
   return (
-    <div className="om-res" data-curtain={curtain} data-n={shown.length === 0 ? 0 : n}>
+    <div className="om-res" data-curtain={curtain} data-n={shown.length === 0 ? 0 : n} style={{ ["--np" as string]: noPhoto }}>
       <div className="om-res-head">
         <div className="om-res-txt">
           <h2 className="om-res-title" id="om-res-title" tabIndex={-1}>
@@ -205,6 +207,7 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
                 <li
                   key={id}
                   className="om-card"
+                  data-nophoto={shop.photo ? undefined : "1"}
                   style={{ ["--i" as string]: i }}
                   onPointerEnter={() => onHot?.(id)}
                   onPointerLeave={() => onHot?.(null)}

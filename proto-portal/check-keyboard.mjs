@@ -243,6 +243,15 @@ console.log("5. フッターの地方ブロック（summary）");
   await ctx2.close();
 }
 
+/**
+ * 候補データ（/search-index.json）の取得が終わって、候補が出るまで待つ。
+ * 取得中は「すべての結果を見る」の1行（option 1つ）だけが出る。それを「候補が出た」と見ると、
+ * マシンが重いときに option が 1 つのまま ARIA を調べて「不完全」と誤判定する（2026-10-06 に実際に起きた。取得を3秒遅らせると再現する）。
+ */
+async function waitForSuggestions(page) {
+  await page.waitForFunction(() => document.querySelectorAll('[role="listbox"] [role="option"]').length >= 2, null, { timeout: 15000 }).catch(() => {});
+}
+
 // ───── 7. 検索の combobox ─────
 console.log("7. 検索の combobox（幅1440）");
 {
@@ -260,7 +269,7 @@ console.log("7. 検索の combobox（幅1440）");
     const ri = await ringOf(page);
     ri?.ring && ri.contrast >= 3 ? ok(`検索の入力欄のフォーカスリング（${ri.contrast.toFixed(1)}）`) : ng(`検索の入力欄のフォーカスリングが見えない（${ri?.contrast?.toFixed(2)}）`);
     await page.keyboard.type("三宮", { delay: 40 });
-    await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 15000 }).catch(() => {});
+    await waitForSuggestions(page);
     const roles = await page.evaluate(() => {
       const i = document.activeElement;
       const lb = document.getElementById(i.getAttribute("aria-controls") || "");
@@ -295,7 +304,7 @@ console.log("7. 検索の combobox（幅1440）");
     await page.waitForTimeout(700);
     // （type="search" は Esc で入力が消えるので、打ち直す）
     await page.keyboard.type("三宮", { delay: 40 });
-    await page.waitForSelector('[role="listbox"] [role="option"]', { timeout: 15000 }).catch(() => {});
+    await waitForSuggestions(page);
     await page.keyboard.press("ArrowDown");
     await page.waitForTimeout(200);
     await Promise.all([page.waitForURL(/\/station\/hyogo\//, { timeout: 15000 }).catch(() => {}), page.keyboard.press("Enter")]);

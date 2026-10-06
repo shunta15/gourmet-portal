@@ -109,7 +109,7 @@ function collect(only) {
     if (texts.length === 0) continue;
     if (el.closest('[aria-hidden="true"]')) continue;
     // 読み上げ専用（画面には出ない）の文字は測らない
-    if (el.closest(".mp-sr")) continue;
+    if (el.closest(".mp-sr, .om-sr")) continue;
     // 状態つきの検査では、その状態で新しく出た部分だけを測る（全画面メニューの下に隠れたページの文字を拾わない）
     if (only && !el.closest(only)) continue;
     if (el.closest(".leaflet-tile-pane, .leaflet-marker-pane .mp-cl-wrap, .leaflet-marker-pane .mp-pin-wrap")) continue;

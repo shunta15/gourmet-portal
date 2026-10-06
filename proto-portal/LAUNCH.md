@@ -3,7 +3,7 @@
 総合サイト（`/` 総合トップ・新業種・`/area`・`/station`・`/map`・`/videos`・`/find` ほか）を本番に出すための手順。
 **マージ（main への取り込み）と公開（本番で見えるようにすること）は別の作業**。この手順書もそう分けてある。
 
-- マージしても、**公開スイッチが OFF のあいだは本番が今のグルメサイトのまま変わらない**（HTML・CSS は同一、JS は gzip で平均 +0.4KB・最大 +0.6KB）。
+- マージしても、**公開スイッチが OFF のあいだは本番が今のグルメサイトのまま変わらない**（HTML・CSS は同一、JS は gzip で平均 +0.6KB・最大 +0.86KB。2026-10-06 の 3機能取り込み後の実測）。
 - 公開は、Vercel の環境変数 `PORTAL_LAUNCHED=1`（Production）を入れて再デプロイするだけ。戻すのは環境変数を消して再デプロイ。
 - 仕組みの詳細は `proto-portal/SPEC.md` 末尾の「公開スイッチ」、コードは `lib/portal/launch.ts`。
 
@@ -75,7 +75,7 @@ rm -rf .next && env -u PORTAL_LAUNCHED -u VERCEL_ENV npm run build
    - 「stylesheet だけ違う管理画面 4 ページ」も違反ではない。Tailwind はリポジトリの全ソースを走査するので、新しいファイルの語（`ring`・`static` など）で `/admin`・`/owner` の CSS に数百バイトが増える。公開ページの CSS は同一。
    - `.body`（robots.txt・sitemap.xml・アイコン・共有画像）は全てバイト一致。
    - 「ブランチにだけある html/.body」は総合サイトのルートで、全て 404 であること（`beauty.html` など。配信されない）。
-   - JS: gzip 後の合計の差が 1 ページあたり最大 2KB 以内（実測は最大 +0.6KB・平均 +0.4KB。ルートレイアウトの `PortalShell` と店ページの `React.lazy` の分）。
+   - JS: gzip 後の合計の差が 1 ページあたり最大 2KB 以内（実測は最大 +0.86KB・平均 +0.6KB。ルートレイアウトの `PortalShell` と店ページの `React.lazy` の分。2026-10-06: 店ページ +855B・特集ページ +350〜508B（`FeatureClient` の `React.lazy`）・地域/シーン +340B 前後）。
 
 2. **起動したサーバーの応答の比較**（動的なページ・404 の中身。本番の URL でも使える）:
 
@@ -88,7 +88,7 @@ rm -rf .next && env -u PORTAL_LAUNCHED -u VERCEL_ENV npm run build
    node proto-portal/compare-off.mjs live --base http://localhost:3242 --against /tmp/main-snapshot.json
    ```
 
-   合格: `一致 66 / 差あり 0`、`PROBLEMS 0`。グルメの既存ページと、OFF では 404 のはずの総合サイトの URL（`/gourmet`・`/beauty`・`/map`・`/videos`・`/find`・`/og/**`・`/search-index.json`・各 sitemap・`/_portal/**` ほか）の、ステータス・title・meta・JSON-LD・body が main と一致する。
+   合格: `差あり 0`、`PROBLEMS 0`（一致の件数は URL の一覧の長さ。2026-10-06 は 77）。グルメの既存ページと、OFF では 404 のはずの総合サイトの URL（`/gourmet`・`/beauty`・`/map`・`/videos`・`/find`・`/og/**`・`/search-index.json`・各 sitemap・`/_portal/**` ほか）の、ステータス・title・meta・JSON-LD・body が main と一致する。
    一覧は `compare-off.mjs` の `GOURMET` / `PORTAL_404`。
 
 3. **片付け**（必ず）: サーバーを止めてから

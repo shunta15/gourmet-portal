@@ -296,7 +296,10 @@
   .om-card-cat{padding-right:0}
   .om-card-go{position:static; order:9; align-self:flex-end; margin-top:10px}
   .om-nr-s b{font-size:clamp(52px,17vw,84px)}
-  .om-cards-wrap{min-height:calc(var(--n,3) * 380px)}
+  .om-cards-wrap{min-height:calc(var(--n,3) * 380px - var(--np,0) * 190px); transition:min-height .35s var(--ease)}
+  /* 写真の無い店は、番号と保存ボタンが収まる低い帯にする（「食」の字は帯の中の飾り） */
+  .om-card[data-nophoto] .om-card-ph{aspect-ratio:auto; height:72px}
+  .om-card[data-nophoto] .om-card-glyph{font-size:44px}
   .om-how-in{grid-template-columns:minmax(0,1fr)}
   .om-page::before{top:30vh; font-size:90vw}
 }
@@ -307,6 +310,7 @@
 @media (prefers-reduced-motion:reduce){
   .om-q, .om-r, .om-prefs, .om-ink{animation:none}
   .om-nr{display:none}
+  .om-cards-wrap{transition:none}
   .om-cards{visibility:visible!important}
   .om-res .om-card{animation:none!important}
   .om-seal[data-on="1"]{animation:none; opacity:1; transform:rotate(-8deg)}
