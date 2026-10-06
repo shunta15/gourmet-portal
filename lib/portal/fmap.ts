@@ -200,6 +200,26 @@ export function fit(
   };
 }
 
+/**
+ * 図の高さ（px）。点の外接矩形の縦横比に合わせ、店が少ないほど低く抑える（2〜3 軒で大きな図に点が散って間延びしないように）。
+ * 余白は layoutFmap と同じ。
+ */
+export function frameHeight(pts: readonly { lat: number; lng: number }[], w: number): number {
+  const mobile = w < 560;
+  const pad = mobile ? { l: 46, r: 46, t: 84, b: 58 } : { l: 92, r: 92, t: 86, b: 62 };
+  const lat0 = pts.reduce((s, p) => s + p.lat, 0) / pts.length;
+  const kx = 111320 * Math.cos(rad(lat0));
+  const xs = pts.map((p) => p.lng * kx);
+  const ys = pts.map((p) => p.lat * 110574);
+  const bw = Math.max(Math.max(...xs) - Math.min(...xs), 600);
+  const bh = Math.max(Math.max(...ys) - Math.min(...ys), 600);
+  const aw = Math.max(40, w - pad.l - pad.r);
+  const want = (aw * bh) / bw + pad.t + pad.b;
+  const n = pts.length;
+  const cap = n <= 3 ? (mobile ? 330 : 320) : n === 4 ? (mobile ? 400 : 380) : mobile ? 440 : 430;
+  return Math.round(Math.min(cap, Math.max(300, want)));
+}
+
 const NICE = [50, 100, 200, 250, 500, 1000, 2000, 2500, 5000, 10000, 20000, 25000, 50000, 100000];
 
 /** 格子の一目の長さ（m）。1 目が minPx 以上になる、いちばん短い切りのよい長さ */

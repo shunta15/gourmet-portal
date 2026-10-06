@@ -16,7 +16,7 @@ import SaveButton from "./SaveButton";
 import { addManySaved, announce, getList, useSavedList } from "@/lib/portal/savedList";
 import { trackTap } from "@/lib/portal/track";
 import { sized } from "@/lib/imageUrl";
-import { fmtDist, fmtStraight, orderFrom, textW, type FmapData } from "@/lib/portal/fmap";
+import { fmtDist, fmtStraight, frameHeight, orderFrom, textW, type FmapData } from "@/lib/portal/fmap";
 import { DISC_R, layoutFmap, type LayoutOut } from "@/lib/portal/fmapLayout";
 import { CSS } from "./featureMapCss";
 
@@ -99,14 +99,14 @@ export default function FeatureMap({ data }: { data: FmapData }) {
     const measure = () => {
       const w = Math.round(el.clientWidth);
       if (!w) return;
-      const h = w >= 640 ? Math.round(Math.min(430, Math.max(360, w * 0.54))) : Math.round(Math.min(440, Math.max(330, w * 1.02)));
+      const h = frameHeight(stops, w);
       setSize((s) => (s.w === w && s.h === h && s.ready ? s : { w, h, ready: true }));
     };
     measure();
     const ro = new ResizeObserver(measure);
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [stops]);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -662,7 +662,7 @@ export default function FeatureMap({ data }: { data: FmapData }) {
           </div>
           <p className="fm-note">
             点か一覧の店を選ぶと札が出て、「ここから出発にする」で順番が引き直されます。位置は店の座標（緯度・経度）から計算した相対位置で、<b>実際の地図ではありません</b>。北が上、格子のひと目は約{L.unitLabel}。
-            {stations.length > 0 && "四角の印は、各店の案内に最寄り駅として書かれている駅です。"}
+            {L.stations.length > 0 && "四角の印は、各店の案内に最寄り駅として書かれている駅です。"}
           </p>
           <p className="fm-sr" aria-live="polite">
             {said}

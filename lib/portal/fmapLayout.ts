@@ -108,6 +108,37 @@ function dodge(pts: { x: number; y: number }[], minD: number, maxMove: number): 
 }
 
 
+type Seg = { x1: number; y1: number; x2: number; y2: number };
+
+/** 線分が、箱（pad だけふくらませる）に触れるか（Liang–Barsky） */
+function segHitsBox(s: Seg, b: Box, pad: number): boolean {
+  const xmin = b.x - pad;
+  const xmax = b.x + b.w + pad;
+  const ymin = b.y - pad;
+  const ymax = b.y + b.h + pad;
+  let t0 = 0;
+  let t1 = 1;
+  const dx = s.x2 - s.x1;
+  const dy = s.y2 - s.y1;
+  const ps = [-dx, dx, -dy, dy];
+  const qs = [s.x1 - xmin, xmax - s.x1, s.y1 - ymin, ymax - s.y1];
+  for (let i = 0; i < 4; i++) {
+    if (ps[i] === 0) {
+      if (qs[i] < 0) return false;
+    } else {
+      const t = qs[i] / ps[i];
+      if (ps[i] < 0) {
+        if (t > t1) return false;
+        if (t > t0) t0 = t;
+      } else {
+        if (t < t0) return false;
+        if (t < t1) t1 = t;
+      }
+    }
+  }
+  return true;
+}
+
 /** 円が、ボタン・札・北の印・縮尺と重ならないよう、いちばん近い辺の外へ押し出す（本当の位置から最大 maxMove px） */
 function avoid(
   pts: { x: number; y: number }[],
@@ -174,7 +205,7 @@ export function layoutFmap(args: {
   const north = { x: w - 30, y: 26 };
   const scale = { x: 20, y: h - 28 };
   const keepOut: Box[] = [
-    { x: north.x - 22, y: 8, w: 44, h: 58 },
+    { x: north.x - 22, y: 8, w: 44, h: 72 },
     { x: 8, y: 8, w: mobile ? 168 : 178, h: 56 },
     { x: w - (mobile ? 58 : 66), y: h - (mobile ? 112 : 128), w: mobile ? 52 : 58, h: mobile ? 106 : 122 },
   ];
@@ -182,7 +213,7 @@ export function layoutFmap(args: {
   let moved = origin.map((q) => ({ ...q }));
   for (let it = 0; it < 4; it++) {
     moved = dodge(moved, DISC_R * 2 + 4, DISC_R * 3);
-    avoid(moved, origin, keepOut, DISC_R, DISC_R * 3);
+    avoid(moved, origin, keepOut, DISC_R, DISC_R * 5);
   }
   const disc: LayoutOut["disc"] = {};
   ids.forEach((id, i) => (disc[id] = moved[i]));
@@ -196,59 +227,96 @@ export function layoutFmap(args: {
   for (let y = h / 2 - Math.floor(h / 2 / stepPx) * stepPx; y < h; y += stepPx) gridY.push(y);
 
 
-  // 文字の置き場所。先に置いたものが優先
+  // 順路の線（hop は前の店から次の店へ。wide は出発の店から各店へ）と、円を本当の位置につなぐ細い線。文字はこれにかけない
+  const segs: Seg[] = [];
+  for (let k = 1; k < ids.length; k++) {
+    const a = anchor[mode === "hop" ? ids[k - 1] : ids[0]];
+    const b2 = anchor[ids[k]];
+    segs.push({ x1: a.x, y1: a.y, x2: b2.x, y2: b2.y });
+  }
+  for (const id of ids) {
+    const a = anchor[id];
+    const d = disc[id];
+    if (Math.hypot(a.x - d.x, a.y - d.y) > 3) segs.push({ x1: a.x, y1: a.y, x2: d.x, y2: d.y });
+  }
+
+  // 文字の置き場所。先に置いたものが優先。文字の箱は、ほかの箱・円・順路の線・矢印にかけない
   const taken: Box[] = [];
   const inside = (b: Box) => b.x >= 8 && b.y >= 8 && b.x + b.w <= w - 8 && b.y + b.h <= h - 8;
-  const free = (b: Box) => inside(b) && !taken.some((t) => hit(t, b));
+  const free = (b: Box) => inside(b) && !taken.some((t) => hit(t, b)) && !segs.some((sg) => segHitsBox(sg, b, 2));
   for (const k of keepOut) taken.push({ ...k, h: k.h + (k.x === 8 ? 10 : 0) });
-  taken.push({ x: scale.x - 6, y: scale.y - 22, w: Math.max(stepPx, 40) + 90, h: 40 });
+  taken.push({ x: scale.x - 6, y: scale.y - 22, w: Math.max(stepPx, 40) + 140, h: 40 });
   for (const id of ids) taken.push({ x: disc[id].x - DISC_R - 3, y: disc[id].y - DISC_R - 3, w: DISC_R * 2 + 6, h: DISC_R * 2 + 6 });
-  // 出発の円に添える「出発」の旗（上。ほかの点・ボタンにかかるときは下）
+  // 順路の矢印（hop。線の真ん中）
+  if (mode === "hop") {
+    for (const sg of segs.slice(0, Math.max(0, ids.length - 1))) {
+      if (Math.hypot(sg.x2 - sg.x1, sg.y2 - sg.y1) > 46) taken.push({ x: (sg.x1 + sg.x2) / 2 - 8, y: (sg.y1 + sg.y2) / 2 - 8, w: 16, h: 16 });
+    }
+  }
+
+  // 駅の印。店の円・ボタン・札の下になるものは出さない（円に隠れた印は、見えないのに在るように見えるため）
+  const stationPts = stations
+    .map((st) => ({ st, ...proj.xy(st.lat, st.lng) }))
+    .filter((q) => q.x > 14 && q.x < w - 14 && q.y > 14 && q.y < h - 14)
+    .filter((q) => {
+      const mark: Box = { x: q.x - 5, y: q.y - 5, w: 10, h: 10 };
+      if (ids.some((id) => Math.hypot(disc[id].x - q.x, disc[id].y - q.y) < DISC_R + 7)) return false;
+      return !keepOut.some((k) => hit(k, mark, 4));
+    });
+  for (const q of stationPts) taken.push({ x: q.x - 6, y: q.y - 6, w: 12, h: 12 });
+
+  // 出発の円に添える「出発」の旗（上・下・左・右のうち、ほかにかからないところ。無ければ出さない）
   const startId = ids[0];
   let flag: { x: number; y: number } | null = null;
   if (startId) {
     const d = disc[startId];
-    const up: Box = { x: d.x - 19, y: d.y - DISC_R - 28, w: 38, h: 20 };
-    const down: Box = { x: d.x - 19, y: d.y + DISC_R + 8, w: 38, h: 20 };
-    // 自分の円は taken に入っているので、旗の箱が自分の円に触れない位置（上・下とも円の外）で判定する
-    const others = taken.filter((t) => !(t.x === d.x - DISC_R - 3 && t.y === d.y - DISC_R - 3));
-    const fits = (b: Box) => inside(b) && !others.some((t) => hit(t, b));
-    const pick = fits(up) ? up : fits(down) ? down : null;
+    const ownBox = { x: d.x - DISC_R - 3, y: d.y - DISC_R - 3 };
+    const others = taken.filter((t) => !(t.x === ownBox.x && t.y === ownBox.y));
+    const cands: Box[] = [
+      { x: d.x - 19, y: d.y - DISC_R - 28, w: 38, h: 20 },
+      { x: d.x - 19, y: d.y + DISC_R + 8, w: 38, h: 20 },
+      { x: d.x + DISC_R + 6, y: d.y - 10, w: 38, h: 20 },
+      { x: d.x - DISC_R - 6 - 38, y: d.y - 10, w: 38, h: 20 },
+    ];
+    const pick = cands.find((b) => inside(b) && !others.some((t) => hit(t, b)) && !segs.some((sg) => segHitsBox(sg, b, 2)));
     if (pick) {
       taken.push(pick);
-      flag = { x: d.x, y: pick.y + 1.5 };
+      flag = { x: pick.x + 19, y: pick.y + 1.5 };
     }
   }
 
-  // 駅の印（先に場所だけ取る）
-  const stationPts = stations
-    .map((st) => ({ st, ...proj.xy(st.lat, st.lng) }))
-    .filter((q) => q.x > 14 && q.x < w - 14 && q.y > 14 && q.y < h - 14);
-  for (const q of stationPts) taken.push({ x: q.x - 6, y: q.y - 6, w: 12, h: 12 });
-
-  // 店名
+  // 店名。置けなければ名前を短くして探し、それでも置けなければ出さない（店名は一覧と札に必ずある）
   const label: LayoutOut["label"] = {};
   for (const s of order.stops) {
     const d = disc[s.id];
-    const text = clip(s.name, nameMax);
     const full = s.name;
-    const tw = textW(text, fs) + 4;
-    const th = fs * 1.35;
-    const off = DISC_R + 10;
-    const cands: { box: Box; pos: LabelPos }[] = [
-      { box: { x: d.x + off, y: d.y - th / 2, w: tw, h: th }, pos: { x: d.x + off + 2, y: d.y + fs * 0.35, anchor: "start", text, full } },
-      { box: { x: d.x - off - tw, y: d.y - th / 2, w: tw, h: th }, pos: { x: d.x - off - 2, y: d.y + fs * 0.35, anchor: "end", text, full } },
-      { box: { x: d.x - tw / 2, y: d.y - off - th + 2, w: tw, h: th }, pos: { x: d.x, y: d.y - off - 2, anchor: "middle", text, full } },
-      { box: { x: d.x - tw / 2, y: d.y + off - 2, w: tw, h: th }, pos: { x: d.x, y: d.y + off + fs * 0.9, anchor: "middle", text, full } },
-      { box: { x: d.x + off - 4, y: d.y - off - th + 4, w: tw, h: th }, pos: { x: d.x + off - 2, y: d.y - off + 1, anchor: "start", text, full } },
-      { box: { x: d.x - off + 4 - tw, y: d.y - off - th + 4, w: tw, h: th }, pos: { x: d.x - off + 2, y: d.y - off + 1, anchor: "end", text, full } },
-      { box: { x: d.x + off - 4, y: d.y + off - 4, w: tw, h: th }, pos: { x: d.x + off - 2, y: d.y + off + fs * 0.8, anchor: "start", text, full } },
-      { box: { x: d.x - off + 4 - tw, y: d.y + off - 4, w: tw, h: th }, pos: { x: d.x - off + 2, y: d.y + off + fs * 0.8, anchor: "end", text, full } },
-    ];
-    const ok = cands.find((c) => free(c.box));
-    if (ok) {
-      taken.push(ok.box);
-      const p = ok.pos;
+    const th = fs * 1.55;
+    let placed: { box: Box; pos: LabelPos } | null = null;
+    const lens = Array.from(new Set([nameMax, 7, 5].filter((n) => n <= nameMax)));
+    search: for (const len of lens) {
+      const text = clip(s.name, len);
+      const tw = textW(text, fs) + 6;
+      for (const off of [DISC_R + 10, DISC_R + 20]) {
+        const cands: { box: Box; pos: LabelPos }[] = [
+          { box: { x: d.x + off, y: d.y - th / 2, w: tw, h: th }, pos: { x: d.x + off + 3, y: d.y + fs * 0.35, anchor: "start", text, full } },
+          { box: { x: d.x - off - tw, y: d.y - th / 2, w: tw, h: th }, pos: { x: d.x - off - 3, y: d.y + fs * 0.35, anchor: "end", text, full } },
+          { box: { x: d.x - tw / 2, y: d.y - off - th + 2, w: tw, h: th }, pos: { x: d.x, y: d.y - off - 2, anchor: "middle", text, full } },
+          { box: { x: d.x - tw / 2, y: d.y + off - 2, w: tw, h: th }, pos: { x: d.x, y: d.y + off + fs * 0.9, anchor: "middle", text, full } },
+          { box: { x: d.x + off - 4, y: d.y - off - th + 4, w: tw, h: th }, pos: { x: d.x + off - 1, y: d.y - off + 1, anchor: "start", text, full } },
+          { box: { x: d.x - off + 4 - tw, y: d.y - off - th + 4, w: tw, h: th }, pos: { x: d.x - off + 1, y: d.y - off + 1, anchor: "end", text, full } },
+          { box: { x: d.x + off - 4, y: d.y + off - 4, w: tw, h: th }, pos: { x: d.x + off - 1, y: d.y + off + fs * 0.8, anchor: "start", text, full } },
+          { box: { x: d.x - off + 4 - tw, y: d.y + off - 4, w: tw, h: th }, pos: { x: d.x - off + 1, y: d.y + off + fs * 0.8, anchor: "end", text, full } },
+        ];
+        const ok = cands.find((c) => free(c.box));
+        if (ok) {
+          placed = ok;
+          break search;
+        }
+      }
+    }
+    if (placed) {
+      taken.push(placed.box);
+      const p = placed.pos;
       // 選んだとき・指を載せたときに出す全文は、図の端からはみ出さない長さまで
       const avail = p.anchor === "start" ? w - 10 - p.x : p.anchor === "end" ? p.x - 10 : 2 * Math.min(p.x - 10, w - 10 - p.x);
       p.full = fitFull(s.name, fs, avail);
@@ -273,7 +341,7 @@ export function layoutFmap(args: {
       const nx = -(b.y - a.y) / (px || 1);
       const ny = (b.x - a.x) / (px || 1);
       // 文字の箱が線にかからないよう、線の法線方向に、箱の半分の張り出しぶん離す
-      const off = Math.abs(nx) * (tw / 2) + Math.abs(ny) * 9 + 8;
+      const off = Math.abs(nx) * (tw / 2) + Math.abs(ny) * 9 + 12;
       outer: for (const extra of [0, 8]) {
         for (const sgn of [1, -1]) {
           const cx = mx + nx * (off + extra) * sgn;
@@ -319,14 +387,17 @@ export function layoutFmap(args: {
   // 駅の名前
   const stOut: LayoutOut["stations"] = stationPts.map((q) => {
     const text = q.st.name;
-    const tw = textW(text, 12) + 4;
-    const th = 16;
-    const cands: { box: Box; pos: LabelPos }[] = [
-      { box: { x: q.x + 9, y: q.y - th / 2, w: tw, h: th }, pos: { x: q.x + 11, y: q.y + 4, anchor: "start", text } },
-      { box: { x: q.x - 9 - tw, y: q.y - th / 2, w: tw, h: th }, pos: { x: q.x - 11, y: q.y + 4, anchor: "end", text } },
-      { box: { x: q.x - tw / 2, y: q.y + 8, w: tw, h: th }, pos: { x: q.x, y: q.y + 21, anchor: "middle", text } },
-      { box: { x: q.x - tw / 2, y: q.y - 8 - th, w: tw, h: th }, pos: { x: q.x, y: q.y - 12, anchor: "middle", text } },
-    ];
+    const tw = textW(text, 12) + 6;
+    const th = 18;
+    const cands: { box: Box; pos: LabelPos }[] = [];
+    for (const g of [9, 17]) {
+      cands.push(
+        { box: { x: q.x + g, y: q.y - th / 2, w: tw, h: th }, pos: { x: q.x + g + 2, y: q.y + 4, anchor: "start", text } },
+        { box: { x: q.x - g - tw, y: q.y - th / 2, w: tw, h: th }, pos: { x: q.x - g - 2, y: q.y + 4, anchor: "end", text } },
+        { box: { x: q.x - tw / 2, y: q.y + g - 1, w: tw, h: th }, pos: { x: q.x, y: q.y + g + 12, anchor: "middle", text } },
+        { box: { x: q.x - tw / 2, y: q.y - g + 1 - th, w: tw, h: th }, pos: { x: q.x, y: q.y - g - 3, anchor: "middle", text } },
+      );
+    }
     const ok = cands.find((c) => free(c.box));
     if (ok) taken.push(ok.box);
     return { name: q.st.name, x: q.x, y: q.y, label: ok ? ok.pos : null };
