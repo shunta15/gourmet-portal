@@ -13,6 +13,7 @@ import {
 import { FEATURES } from "@/lib/data";
 import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import type { FeatureArticle } from "@/lib/regions";
+import { isPortalLive } from "@/lib/portal/launch";
 
 export const revalidate = 60;
 export const dynamicParams = true;
@@ -63,6 +64,9 @@ export default async function FeaturePage({
   const itemListJsonLd = buildFeatureItemListJsonLd(article);
   // この記事と対になる店舗ページ（記事由来の店 r299〜）。あれば「店舗情報（営業時間・地図）」を出す
   const storeId = ARTICLE_STORE_ID_BY_FEATURE[article.id];
+  // 「店を地図でまとめて見る」は総合サイトの公開スイッチ（lib/portal/launch.ts）が ON で、座標のある店が 2 軒以上あるときだけ。
+  // OFF では何も読み込まず、FeatureClient にも渡さない（HTML・RSC のペイロードは従来と同一）
+  const fmap = isPortalLive() ? await (await import("@/lib/portal/fmapData")).buildFmap(article) : null;
   return (
     <>
       <script
@@ -81,6 +85,7 @@ export default async function FeaturePage({
         article={article}
         features={FEATURES}
         storeHref={storeId ? `/restaurant/${storeId}` : undefined}
+        {...(fmap ? { fmap } : {})}
       />
     </>
   );

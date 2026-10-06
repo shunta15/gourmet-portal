@@ -1,11 +1,15 @@
 "use client";
-import { useRef, useState } from "react";
+import { Suspense, lazy, useRef, useState } from "react";
 import Link from "next/link";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
 import type { FeatureArticle, Feature } from "@/lib/regions";
 import { mapsUrlForRankItem } from "@/lib/maps";
 import { useParallax, useReveal } from "@/lib/hooks";
+import type { FmapData } from "@/lib/portal/fmap";
+
+// 「店を地図でまとめて見る」（公開スイッチ ON のときだけ fmap が渡る）。静的に import すると、描画しなくても JS が全特集ページに混ざるので React.lazy で分割する
+const FeatureMap = lazy(() => import("./portal/FeatureMap"));
 
 function FeatureHero({ article }: { article: FeatureArticle }) {
   const imgRef = useRef<HTMLDivElement>(null);
@@ -312,9 +316,11 @@ interface FeatureClientProps {
   features: Feature[];
   /** この記事と対になる店舗ページの URL（/restaurant/<id>）。あれば「店舗情報（営業時間・地図）」を出す */
   storeHref?: string;
+  /** 店を地図でまとめて見る区画のデータ（公開スイッチ ON で、座標のある店が 2 軒以上の記事だけ。lib/portal/fmapData.ts） */
+  fmap?: FmapData;
 }
 
-export default function FeatureClient({ article, features, storeHref }: FeatureClientProps) {
+export default function FeatureClient({ article, features, storeHref, fmap }: FeatureClientProps) {
   useReveal();
   const A = article;
   const isGuide = A.articleType === "guide";
@@ -360,6 +366,11 @@ export default function FeatureClient({ article, features, storeHref }: FeatureC
               </p>
             </div>
           </div>
+          {fmap && (
+            <Suspense fallback={null}>
+              <FeatureMap data={fmap} />
+            </Suspense>
+          )}
           <RankingList article={A} />
           {storeHref && (
             <div className="reveal" style={{ marginTop: 40 }}>
