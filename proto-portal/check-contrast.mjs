@@ -56,6 +56,9 @@ const PAGES = arg(
     "/find?q=zzzz",
     "/photos",
     "/photos?genre=ramen&pref=kyoto",
+    "/omakase",
+    "/omakase?r=kinki&who=solo&b=3000",
+    "/omakase?r=kinki&who=solo&b=3000&m=any&s=t1",
   ].join(","),
 ).split(",");
 const VIEWPORTS = [

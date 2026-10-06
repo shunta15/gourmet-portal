@@ -21,7 +21,6 @@ import {
   OMAKASE_REGIONS,
   PAGE_SIZE,
   REGION_OF_PREF,
-  PREF_INDEX,
   STEPS,
   STEP_NUMERAL,
   STEP_TITLE,
@@ -58,6 +57,56 @@ function newSeed(): string {
   return Math.random().toString(36).slice(2, 6);
 }
 
+/** 2 つの答えのうち、その質問の答えが同じか */
+function isSame(step: StepId, a: OState, b: OState): boolean {
+  switch (step) {
+    case "where":
+      return a.region === b.region && a.pref === b.pref;
+    case "who":
+      return a.who === b.who;
+    case "budget":
+      return a.band === b.band;
+    case "mood":
+      return a.mood === b.mood;
+  }
+}
+
+/**
+ * 選んだ言葉を、選択肢の文字の位置からお品書きの行（右端）へ飛ばす（Web Animations API。動きを減らす設定・行が画面の外のときは飛ばさない）。
+ * 飛んだ先で、本物の答えが墨で書き込まれる（OmakaseApp の .om-ink）。
+ */
+function flyToBoard(from: HTMLElement | null, idx: number, text: string | null) {
+  if (!from || !text || idx < 0) return;
+  const slot = document.querySelectorAll<HTMLElement>(".om-line-a")[idx];
+  if (!slot) return;
+  const label = from.querySelector<HTMLElement>("b, .om-pref-t") ?? from;
+  const a = label.getBoundingClientRect();
+  const b = slot.getBoundingClientRect();
+  if (b.bottom < 0 || b.top > window.innerHeight || b.width === 0) return;
+  const el = document.createElement("span");
+  el.className = "om-fly";
+  el.textContent = text;
+  el.setAttribute("aria-hidden", "true");
+  el.style.left = a.left + "px";
+  el.style.top = a.top + "px";
+  document.body.appendChild(el);
+  const w = el.getBoundingClientRect().width || 1;
+  const endScale = 0.9;
+  const dx = b.right - w * endScale - a.left;
+  const dy = b.top + (b.height - a.height) / 2 - a.top;
+  const anim = el.animate(
+    [
+      { transform: "translate(0,0) scale(1)", opacity: 1, color: "#f4efe6" },
+      { transform: `translate(${dx * 0.55}px,${dy * 0.55 - 14}px) scale(1.06)`, opacity: 1, color: "#8a3a22", offset: 0.55 },
+      { transform: `translate(${dx}px,${dy}px) scale(${endScale})`, opacity: 0.0, color: "#15110e" },
+    ],
+    { duration: 640, easing: "cubic-bezier(.5,0,.2,1)", fill: "forwards" },
+  );
+  anim.onfinish = () => el.remove();
+  anim.oncancel = () => el.remove();
+  window.setTimeout(() => el.remove(), 1200);
+}
+
 /* ───────────────────────── 選択肢 1 つ ───────────────────────── */
 
 interface OptProps {
@@ -70,7 +119,7 @@ interface OptProps {
   any?: boolean;
   expanded?: boolean;
   controls?: string;
-  onPick: () => void;
+  onPick: (el: HTMLElement) => void;
   onPreview: (on: boolean) => void;
 }
 
@@ -90,8 +139,8 @@ function Opt({ label, note, count, selected, picked, dim, any, expanded, control
       aria-disabled={zero ? true : undefined}
       aria-label={`${label}（${count}店）${note ? "。" + note : ""}`}
       data-cursor={zero ? undefined : "選ぶ"}
-      onClick={() => {
-        if (!zero) onPick();
+      onClick={(e) => {
+        if (!zero) onPick(e.currentTarget);
       }}
       onPointerEnter={() => !zero && onPreview(true)}
       onPointerLeave={() => onPreview(false)}
@@ -154,28 +203,37 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
   const [pickedKey, setPickedKey] = useState<string | null>(null);
   const lock = useRef(false);
   const timer = useRef<number | null>(null);
+  const timer2 = useRef<number | null>(null);
   useEffect(
     () => () => {
       if (timer.current) window.clearTimeout(timer.current);
+      if (timer2.current) window.clearTimeout(timer2.current);
     },
     [],
   );
+  const [leaving, setLeaving] = useState(false);
   const answer = useCallback(
-    (key: string, patch: Partial<OState>) => {
+    (key: string, patch: Partial<OState>, from?: HTMLElement | null) => {
       if (lock.current) return;
       lock.current = true;
       setPickedKey(key);
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const next = { ...st, ...patch };
+      // 選んだ言葉が、選択肢からお品書きの行へ飛んで、墨で書き込まれる
+      if (!reduce) flyToBoard(from ?? null, STEPS.findIndex((s) => !isSame(s, st, next)), answerText(next, STEPS[Math.max(0, STEPS.findIndex((s) => !isSame(s, st, next)))]));
       const commit = () => {
-        const next = { ...st, ...patch };
         const nextOpen = firstOpenStep(next);
         go(next, { edit: null, seed: nextOpen === -1 ? seed || newSeed() : seed, page: 0 });
         lock.current = false;
         setPickedKey(null);
+        setLeaving(false);
         setPreview(null);
       };
       if (reduce) commit();
-      else timer.current = window.setTimeout(commit, PICK_MS);
+      else {
+        timer.current = window.setTimeout(() => setLeaving(true), PICK_MS - 190);
+        timer2.current = window.setTimeout(commit, PICK_MS);
+      }
     },
     [go, seed, st],
   );
@@ -197,6 +255,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
     if (phase !== "result") setRevealed(false);
   }, [phase]);
   const picks = phase === "result" && revealed ? pickIds : [];
+  const [hot, setHot] = useState<string | null>(null);
 
   /* 次に出す店を先に取っておく */
   useEffect(() => {
@@ -209,11 +268,10 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
   useEffect(() => {
     const key = phase === "result" ? 99 : openStep;
     if (prevOpen.current !== null && prevOpen.current !== key) {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       window.setTimeout(() => {
         const el = key === 99 ? document.getElementById("om-res-title") : headRef.current;
         el?.focus({ preventScroll: true });
-        if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+        if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ block: "start", behavior: "auto" });
       }, 60);
     }
     prevOpen.current = key;
@@ -257,37 +315,38 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
           {OMAKASE_REGIONS.map((r) => {
             const n = counts.where.region[r.slug] ?? 0;
             const open = detail === r.slug;
-            const selected = cur.region === r.slug;
+            const selected = cur.region === r.slug && cur.pref === null;
             const panelId = `om-prefs-${r.slug}`;
+            const key = `r:${r.slug}:`;
             return (
               <div key={r.slug} className="om-reg" data-open={open ? "1" : undefined}>
-                <Opt
-                  label={r.label}
-                  note={`${prefsOfRegion(r.slug).length}${r.slug === "hokkaido" ? "道" : "都府県"}`}
-                  count={n}
-                  selected={selected}
-                  picked={pickedKey === `r:${r.slug}`}
-                  dim={pickedKey !== null && pickedKey !== `r:${r.slug}`}
-                  expanded={open}
-                  controls={panelId}
-                  onPick={() => setDetail(open ? null : r.slug)}
-                  onPreview={(on) => previewFor(on ? { region: r.slug, pref: null } : null)}
-                />
+                <div className="om-reg-row">
+                  <Opt
+                    label={r.label}
+                    note={`${r.label}ぜんぶ（${prefsOfRegion(r.slug).length}${r.slug === "hokkaido" ? "道" : "都府県"}）`}
+                    count={n}
+                    selected={selected}
+                    picked={pickedKey === key}
+                    dim={pickedKey !== null && pickedKey !== key}
+                    onPick={(el) => answer(key, { region: r.slug, pref: null }, el)}
+                    onPreview={(on) => previewFor(on ? { region: r.slug, pref: null } : null)}
+                  />
+                  <button
+                    type="button"
+                    className="om-reg-more"
+                    aria-expanded={open}
+                    aria-controls={panelId}
+                    aria-label={`${r.label}の県から選ぶ`}
+                    data-zero={n === 0 ? "1" : undefined}
+                    onClick={() => n > 0 && setDetail(open ? null : r.slug)}
+                    data-cursor={n === 0 ? undefined : "県"}
+                  >
+                    <span>県から</span>
+                    <i aria-hidden="true" />
+                  </button>
+                </div>
                 {open && (
                   <div className="om-prefs" id={panelId} role="group" aria-label={`${r.label}の県`}>
-                    <button
-                      type="button"
-                      className="om-pref om-pref-all"
-                      data-picked={pickedKey === `r:${r.slug}:` ? "1" : undefined}
-                      onClick={() => answer(`r:${r.slug}:`, { region: r.slug, pref: null })}
-                      onPointerEnter={() => previewFor({ region: r.slug, pref: null })}
-                      onPointerLeave={() => previewFor(null)}
-                      onFocus={() => previewFor({ region: r.slug, pref: null })}
-                      onBlur={() => previewFor(null)}
-                      data-cursor="選ぶ"
-                    >
-                      {r.label}ぜんぶ <i>{n}</i>店
-                    </button>
                     {prefsOfRegion(r.slug).map((pi) => {
                       const p = OMAKASE_PREFS[pi];
                       const pn = prefCounts[p.slug] ?? 0;
@@ -301,8 +360,8 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
                           data-picked={pickedKey === `r:${r.slug}:${p.slug}` ? "1" : undefined}
                           aria-disabled={zero ? true : undefined}
                           aria-label={`${p.name}（${pn}店）`}
-                          onClick={() => {
-                            if (!zero) answer(`r:${r.slug}:${p.slug}`, { region: r.slug, pref: p.slug });
+                          onClick={(e) => {
+                            if (!zero) answer(`r:${r.slug}:${p.slug}`, { region: r.slug, pref: p.slug }, e.currentTarget);
                           }}
                           onPointerEnter={() => !zero && previewFor({ region: r.slug, pref: p.slug })}
                           onPointerLeave={() => previewFor(null)}
@@ -310,7 +369,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
                           onBlur={() => previewFor(null)}
                           data-cursor={zero ? undefined : "選ぶ"}
                         >
-                          {p.short} <i>{pn}</i>
+                          <span className="om-pref-t">{p.short}</span> <i>{pn}</i>
                         </button>
                       );
                     })}
@@ -327,7 +386,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
             picked={pickedKey === "r:all"}
             dim={pickedKey !== null && pickedKey !== "r:all"}
             any
-            onPick={() => answer("r:all", { region: "all", pref: null })}
+            onPick={(el) => answer("r:all", { region: "all", pref: null }, el)}
             onPreview={(on) => previewFor(on ? { region: "all", pref: null } : null)}
           />
         </div>
@@ -345,7 +404,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
               selected={cur.who === w.id}
               picked={pickedKey === `w:${w.id}`}
               dim={pickedKey !== null && pickedKey !== `w:${w.id}`}
-              onPick={() => answer(`w:${w.id}`, { who: w.id })}
+              onPick={(el) => answer(`w:${w.id}`, { who: w.id }, el)}
               onPreview={(on) => previewFor(on ? { who: w.id } : null)}
             />
           ))}
@@ -357,7 +416,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
             picked={pickedKey === "w:any"}
             dim={pickedKey !== null && pickedKey !== "w:any"}
             any
-            onPick={() => answer("w:any", { who: "any" })}
+            onPick={(el) => answer("w:any", { who: "any" }, el)}
             onPreview={(on) => previewFor(on ? { who: "any" } : null)}
           />
         </div>
@@ -374,7 +433,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
               selected={cur.band === b}
               picked={pickedKey === `b:${b}`}
               dim={pickedKey !== null && pickedKey !== `b:${b}`}
-              onPick={() => answer(`b:${b}`, { band: b })}
+              onPick={(el) => answer(`b:${b}`, { band: b }, el)}
               onPreview={(on) => previewFor(on ? { band: b } : null)}
             />
           ))}
@@ -386,7 +445,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
             picked={pickedKey === "b:any"}
             dim={pickedKey !== null && pickedKey !== "b:any"}
             any
-            onPick={() => answer("b:any", { band: "any" })}
+            onPick={(el) => answer("b:any", { band: "any" }, el)}
             onPreview={(on) => previewFor(on ? { band: "any" } : null)}
           />
         </div>
@@ -403,7 +462,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
             selected={cur.mood === m.id}
             picked={pickedKey === `m:${m.id}`}
             dim={pickedKey !== null && pickedKey !== `m:${m.id}`}
-            onPick={() => answer(`m:${m.id}`, { mood: m.id })}
+            onPick={(el) => answer(`m:${m.id}`, { mood: m.id }, el)}
             onPreview={(on) => previewFor(on ? { mood: m.id } : null)}
           />
         ))}
@@ -415,7 +474,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
           picked={pickedKey === "m:any"}
           dim={pickedKey !== null && pickedKey !== "m:any"}
           any
-          onPick={() => answer("m:any", { mood: "any" })}
+          onPick={(el) => answer("m:any", { mood: "any" }, el)}
           onPreview={(on) => previewFor(on ? { mood: "any" } : null)}
         />
       </div>
@@ -423,9 +482,9 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
   };
 
   const QUESTION: Record<StepId, { title: React.ReactNode; sub: string }> = {
-    where: { title: <>どこで、<em>食べますか。</em></>, sub: "店の県と地方で絞ります。地方を開くと、県も選べます。" },
-    who: { title: <>誰と、<em>行きますか。</em></>, sub: "店の設備の記載と、店ページに出ているタグに結び付けています。どれか1つでも書いてある店が出ます。" },
-    budget: { title: <>予算は、<em>どのくらい。</em></>, sub: "店の案内にある予算の上限による帯です。予算が書かれていない店は、予算を選ぶと出ません。" },
+    where: { title: <>どこで、<em>食べますか。</em></>, sub: "店の県と地方で絞ります。地方を押すとその地方ぜんぶ、「県から」で県まで選べます。" },
+    who: { title: <>誰と、<em>行きますか。</em></>, sub: "店の設備の記載と、店ページのタグに結び付けています。どれか1つが書いてある店が出ます。" },
+    budget: { title: <>予算は、<em>どのくらい。</em></>, sub: "店の案内にある予算の上限による帯です。予算が書かれていない店は、選ぶと出ません。" },
     mood: { title: <>いまの気分は、<em>どれ。</em></>, sub: "店の業態の表記に結び付けています。選択肢の下に、結び付けた店の種類を書きました。" },
   };
 
@@ -457,6 +516,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
                     data-state={state}
                     aria-current={state === "open" ? "step" : undefined}
                     aria-disabled={can ? undefined : true}
+                    tabIndex={can ? undefined : -1}
                     aria-label={text ? `${STEP_TITLE[s]}：${text}。変更する` : `${STEP_TITLE[s]}：未回答`}
                     onClick={() => can && state !== "open" && goStep(i)}
                     data-cursor={can && state !== "open" ? "変える" : undefined}
@@ -472,7 +532,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
           </ol>
 
           <div className="om-sieve">
-            <Pool order={order} alive={aliveSet} preview={preview} picks={picks} />
+            <Pool order={order} alive={aliveSet} preview={preview} picks={picks} hot={phase === "result" ? hot : null} />
             <p className="om-count">
               <CountRoll value={total} />
               <span className="om-count-u">店</span>
@@ -494,7 +554,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
       {/* 右: 質問 / 結果 */}
       <section className="om-main" aria-label={phase === "ask" ? "質問" : "結果"}>
         {phase === "ask" ? (
-          <div className="om-q" key={`${step}-${openStep}`} data-step={openStep}>
+          <div className="om-q" key={`${step}-${openStep}`} data-step={openStep} data-leaving={leaving ? "1" : undefined}>
             <div className="om-mini">
               <p className="om-mini-c" aria-hidden="true">
                 <span>いまの条件に合う店</span>
@@ -535,8 +595,8 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
                   変えずに結果へ戻る <i aria-hidden="true">→</i>
                 </button>
               ) : showSkip ? (
-                <button type="button" className="om-skip" onClick={skipRest}>
-                  残りは問わずに、いま合う{total}店を見る <i aria-hidden="true">→</i>
+                <button type="button" className="om-skip" data-few={total <= 6 ? "1" : undefined} onClick={skipRest}>
+                  {total <= 6 ? `ここまでで${total}店。このまま見る` : `残りは問わずに、いま合う${total}店を見る`} <i aria-hidden="true">→</i>
                 </button>
               ) : null}
             </div>
@@ -554,6 +614,7 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
               relax={relax}
               onRelax={(r: Relax) => go(r.next, { edit: null, seed, page: 0 })}
               onReveal={setRevealed}
+              onHot={setHot}
             />
             <div className="om-r-actions">
               {total > 0 && (

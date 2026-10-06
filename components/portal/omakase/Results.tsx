@@ -53,9 +53,11 @@ interface Props {
   onRelax: (r: Relax) => void;
   /** 動きの区切りを親に知らせる（印を押す・ふるいの点を動かす用） */
   onReveal?: (revealed: boolean) => void;
+  /** カードを指している店（ふるいの点を大きく見せる用） */
+  onHot?: (id: string | null) => void;
 }
 
-export default function Results({ ids, rowById, st, total, page, pages, onMore, relax, onRelax, onReveal }: Props) {
+export default function Results({ ids, rowById, st, total, page, pages, onMore, relax, onRelax, onReveal, onHot }: Props) {
   const [shown, setShown] = useState<string[]>(ids);
   const [curtain, setCurtain] = useState<Curtain>("drop");
   const [revealedOnce, setRevealedOnce] = useState(false);
@@ -154,7 +156,7 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
   })();
 
   return (
-    <div className="om-res" data-curtain={curtain} data-n={n}>
+    <div className="om-res" data-curtain={curtain} data-n={shown.length === 0 ? 0 : n}>
       <div className="om-res-head">
         <div className="om-res-txt">
           <h2 className="om-res-title" id="om-res-title" tabIndex={-1}>
@@ -178,7 +180,9 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
           <p className="om-res-sub">
             {total === 0
               ? "いまの答えを全部満たす店は、掲載店にありません。下のどれかをゆるめると店が出ます。"
-              : `${condText}から、順不同で選びました。評価や人気は使っていません。`}
+              : total <= 3
+                ? `${condText}を、すべて出しています。評価や人気は使っていません。`
+                : `${condText}から、順不同で選びました。評価や人気は使っていません。`}
           </p>
         </div>
         {total > 0 && pages > 1 && (
@@ -198,7 +202,15 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
               const row = rowById.get(id);
               const why = reasonsOf(shop, row, st);
               return (
-                <li key={id} className="om-card" style={{ ["--i" as string]: i }}>
+                <li
+                  key={id}
+                  className="om-card"
+                  style={{ ["--i" as string]: i }}
+                  onPointerEnter={() => onHot?.(id)}
+                  onPointerLeave={() => onHot?.(null)}
+                  onFocus={() => onHot?.(id)}
+                  onBlur={() => onHot?.(null)}
+                >
                   <div className="om-card-ph sv-host">
                     {shop.photo ? (
                       // eslint-disable-next-line @next/next/no-img-element

@@ -13,7 +13,7 @@
 const argv = process.argv.slice(2);
 const argi = argv.indexOf('--base');
 const B = (argi >= 0 ? argv[argi + 1] : 'http://localhost:3242').replace(/\/$/, '');
-const ok200=['/','/gourmet','/beauty','/beauty/area/tokyo','/beauty/hair','/beauty/hair/tokyo','/bodycare/seitai/osaka','/pet','/pet/trimming','/leisure/onsen/kanagawa','/stay/area/hokkaido','/stay/ryokan','/bodycare/scene/weekend-open','/beauty/scene/late-night','/area/tokyo','/area/aichi','/area/okinawa','/beauty/sitemap.xml','/station','/station/kyoto','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/station/tokyo/蒲田','/station/niigata/直江津','/station/sitemap.xml','/videos','/videos/sv-nazatu-1','/videos/sv-nazatu-review','/videos/sitemap.xml','/map','/map?pref=kyoto','/station/kyoto/祇園四条?open=1','/find?q=三宮','/find?q=京都','/find','/find?q=zzzz','/photos','/photos/sitemap.xml','/list','/station/kyoto/烏丸/和食・割烹'];
+const ok200=['/','/gourmet','/beauty','/beauty/area/tokyo','/beauty/hair','/beauty/hair/tokyo','/bodycare/seitai/osaka','/pet','/pet/trimming','/leisure/onsen/kanagawa','/stay/area/hokkaido','/stay/ryokan','/bodycare/scene/weekend-open','/beauty/scene/late-night','/area/tokyo','/area/aichi','/area/okinawa','/beauty/sitemap.xml','/station','/station/kyoto','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/station/tokyo/蒲田','/station/niigata/直江津','/station/sitemap.xml','/videos','/videos/sv-nazatu-1','/videos/sv-nazatu-review','/videos/sitemap.xml','/map','/map?pref=kyoto','/station/kyoto/祇園四条?open=1','/find?q=三宮','/find?q=京都','/find','/find?q=zzzz','/photos','/photos/sitemap.xml','/omakase','/omakase?r=kinki&who=solo&b=3000&m=men','/list','/station/kyoto/烏丸/和食・割烹'];
 const exp404=['/beauty/area/xxx','/beauty/nosuch','/beauty/shop/abc','/beauty/hair/tokyo/nosuchcity','/area/nosuch','/station/tokyo/存在しない駅','/station/nosuch','/station/nosuch/駅','/videos/nosuch'];
 const seen=new Map();const get=async u=>{if(seen.has(u))return seen.get(u);const r=await fetch(B+encodeURI(u),{redirect:'manual'});const t=r.status===200&&!u.endsWith('.xml')?await r.text():'';const v={s:r.status,t};seen.set(u,v);return v};
 const bad=[];
@@ -27,6 +27,7 @@ for(const u of ok200){const r=await get(u);if(r.s!==200){bad.push(`expected200 $
  else if(u.startsWith('/videos')){const hasVO=lds.some(l=>/"@type":"VideoObject"/.test(l));const sm=(await get('/videos/sitemap.xml')).s===200?await (await fetch(B+'/videos/sitemap.xml')).text():'';const inSm=sm.includes('https://machinowa.tokyo'+u+'</loc>');
    const wantIndex=u==='/videos'?inSm:hasVO;if(wantIndex===/noindex/.test(robots||''))bad.push(`videos robots mismatch ${u} hasVideoObject=${hasVO} inSitemap=${inSm} (${robots})`);if(hasVO!==inSm&&u!=='/videos')bad.push(`videos VideoObject/sitemap mismatch ${u}`);console.log('   videos: VideoObject',hasVO,'inSitemap',inSm,'expect',wantIndex?'index':'noindex')}
  else if(u==='/photos'){const sm=await (await fetch(B+'/photos/sitemap.xml')).text();const inSm=sm.includes('https://machinowa.tokyo/photos</loc>');if(inSm===/noindex/.test(robots||''))bad.push(`photos robots mismatch inSitemap=${inSm} (${robots})`);console.log('   photos inSitemap',inSm,'expect',inSm?'index':'noindex')}
+ else if(u.startsWith('/omakase')){const stated=u.includes('?');if(stated===!/noindex/.test(robots||''))bad.push(`omakase robots mismatch ${u} (${robots}) 答えの無い /omakase だけ index`);console.log('   omakase',stated?'答えあり → noindex':'答えなし → index')}
  else if(isNew&&!/noindex/.test(robots||''))bad.push(`not noindex ${u} (${robots})`);
  else if(!isNew&&/noindex/.test(robots||''))bad.push(`should be index ${u} (${robots})`);
  const expCanon='https://machinowa.tokyo'+(u==='/'?'':u.split('?')[0]);if(canon&&decodeURI(canon)!==expCanon&&!(u==='/'&&canon==='https://machinowa.tokyo'))bad.push(`canonical ${u} -> ${canon}`);if(!canon)bad.push(`no canonical ${u}`);
@@ -173,7 +174,7 @@ console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCan
   // 外部リンク（http で始まる href）で別タブを開くものは rel に noopener noreferrer
   for (const [u, v] of seen) {
     if (v.s !== 200 || !v.t || u.endsWith('.xml')) continue;
-    const f = u.split('?')[0].split('/')[1]; if (!(u === '/' || ['area','station','videos','map','find','photos','list','beauty','bodycare','pet','leisure','stay','restaurant'].includes(f))) continue;
+    const f = u.split('?')[0].split('/')[1]; if (!(u === '/' || ['area','station','videos','map','find','photos','omakase','list','beauty','bodycare','pet','leisure','stay','restaurant'].includes(f))) continue;
     for (const m of v.t.matchAll(/<a [^>]*href="(https?:\/\/[^"]+)"[^>]*>/g)) {
       if (!/target="_blank"/.test(m[0])) continue;
       if (!/rel="[^"]*noopener[^"]*noreferrer[^"]*"|rel="[^"]*noreferrer[^"]*noopener[^"]*"/.test(m[0])) bad.push(`external _blank link without rel ${u}: ${m[1].slice(0, 60)}`);

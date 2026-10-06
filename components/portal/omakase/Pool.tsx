@@ -22,6 +22,8 @@ export interface PoolProps {
   preview: ReadonlySet<string> | null;
   /** 結果に出している店（先頭から 壱・弐・参） */
   picks: readonly string[];
+  /** 結果のカードを指しているとき、その店（点を大きく見せる） */
+  hot?: string | null;
 }
 
 interface Dots {
@@ -48,16 +50,16 @@ function hash01(i: number): number {
   return (h >>> 0) / 4294967296;
 }
 
-export default function Pool({ order, alive, preview, picks }: PoolProps) {
+export default function Pool({ order, alive, preview, picks, hot = null }: PoolProps) {
   const wrap = useRef<HTMLDivElement>(null);
   const cv = useRef<HTMLCanvasElement>(null);
-  const props = useRef({ order, alive, preview, picks });
+  const props = useRef({ order, alive, preview, picks, hot });
   const api = useRef<{ retarget: () => void } | null>(null);
 
   useEffect(() => {
-    props.current = { order, alive, preview, picks };
+    props.current = { order, alive, preview, picks, hot };
     api.current?.retarget();
-  }, [order, alive, preview, picks]);
+  }, [order, alive, preview, picks, hot]);
 
   useEffect(() => {
     const el = wrap.current!;
@@ -114,7 +116,7 @@ export default function Pool({ order, alive, preview, picks }: PoolProps) {
     };
 
     const retarget = () => {
-      const { order: ord, alive: al, preview: pv, picks: pk } = props.current;
+      const { order: ord, alive: al, preview: pv, picks: pk, hot: ht } = props.current;
       const now = performance.now();
       for (let i = 0; i < N; i++) {
         const id = ord[i];
@@ -137,14 +139,14 @@ export default function Pool({ order, alive, preview, picks }: PoolProps) {
             D.ringT[i] = 0;
             break;
           case 1:
-            D.rt[i] = base * 0.34;
-            D.at[i] = 0.95;
+            D.rt[i] = base * 0.3;
+            D.at[i] = 0.88;
             D.ct[i] = 0;
             D.ringT[i] = 0;
             break;
           case 2:
-            D.rt[i] = base * 0.27;
-            D.at[i] = 0.42;
+            D.rt[i] = base * 0.24;
+            D.at[i] = 0.4;
             D.ct[i] = 0;
             D.ringT[i] = 0;
             break;
@@ -154,11 +156,13 @@ export default function Pool({ order, alive, preview, picks }: PoolProps) {
             D.ct[i] = 1;
             D.ringT[i] = 0;
             break;
-          default:
-            D.rt[i] = base * 0.56;
+          default: {
+            const h = ht === id;
+            D.rt[i] = base * (h ? 0.8 : 0.56);
             D.at[i] = 1;
             D.ct[i] = 1;
-            D.ringT[i] = 1;
+            D.ringT[i] = h ? 2 : 1;
+          }
         }
         if (reduce) {
           D.r[i] = D.rt[i];

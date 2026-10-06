@@ -11,7 +11,7 @@
 |---|---|---|
 | `/` | 今のグルメのトップ（metadata・canonical・JSON-LD も同一） | 総合トップ（index） |
 | `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`） |
-| 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/list`・`/list-data/**`・`/photos`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
+| 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/list`・`/list-data/**`・`/photos`・`/omakase`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
 | `robots.txt` | 今と同一 | 総合サイトのサイトマップ 7 本を追記 |
 | `/sitemap.xml` | 今と同一 | `/gourmet` が増える |
 | グルメ店ページの SNS・共有ボタン・計測 | 出ない | 出る |
@@ -351,3 +351,14 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **保存ボタン（「候補に入れる」）の置き場所**: 店ページ・駅／ジャンル×駅／都道府県／業種ページの店カード・`/search` の結果カード（こだわり条件つき。カード全体のリンクの隅に重ねる）・`/photos` の大きな表示（`<dialog>` の中）・`/list` の共有リスト。
 - **`/search` の結果カードの札**: 各店に当てはまる条件を最大4つ。選んでいる条件を先頭に（生成りのベタ＋左に朱の線）、続けて予算の帯・当てはまる店が少ない条件の順・いま営業中。設備・特徴は必ず「〜の記載あり」。
 - **`crawl.mjs` の「SNS・共有ボタン」の検査**は、店ページの行動ボタン `ShopActions`（6案。どの案でも `role="group" aria-label="この店を共有"` と、行の `data-sa-id`）に合わせてある。旧部品（`ShopLinks`・`ShareButtons` の `data-shop-link`）は店ページには出ない（総合サイトのページの共有は今も `ShareButtons`）。
+
+## 付録: おまかせ提案 /omakase（2026-10-06・試作）
+- 仕様・結び付けの表・数えた結果 `proto-portal/OMAKASE-COVERAGE.md`。4 つの質問（どこで／誰と／予算／気分）に答えると、条件に合う店を 3 軒ほど出す（公開スイッチ ON のときだけ。OFF は `/omakase` が 404）。
+- **どこに何があるか**: ルート `app/omakase/`（layout は `PortalLayout`・`omakase.css`）→ `components/portal/pages/omakase.tsx`（metadata・noindex の決め方）→ `components/portal/omakase/`（`OmakaseApp` 本体・`Results` 暖簾と結果・`Pool` 点のふるい・`CountRoll`・`useShops`）。
+  判定は `lib/portal/omakaseDefs.ts`（質問・結び付け・URL）・`omakaseRows.ts`（店 1 軒ぶんの表。`/search` も同じ関数）・`omakase.ts`（サーバー。こだわり条件の `buildFacetPayload` から作る）。
+  入口は `/gourmet` の `OmakaseEntrance.tsx`（`gourmet-home.tsx` の `portalEntrances`。こだわり条件・写真から探すと同じスロット）。`/search`（ON）は `?r= ?p= ?who= ?b= ?m=` があれば、その答えに合う店に先に絞る（`SearchFacets.tsx`）。
+- **公開スイッチまわり**: `assertPortalLive()`（layout と page）・`next.config.ts` の `PORTAL_OFF_SOURCES`（`/omakase/:path*`）・`compare-off.mjs` の `PORTAL_404`・`components/portal/isPortalPath.ts`・この表。サイトマップには載せない。
+- **SEO**: 答えのある URL は `noindex, follow`（canonical `/omakase`）。答えの無い `/omakase` だけ、掲載店 3 店以上で index。`crawl.mjs` にこの判定の検査を足した（`/omakase` は index、答えつきは noindex）。
+- **データの前提**: 結果の店は `/list-data/{店ID}`（候補リストと同じ静的 JSON）から 3 軒ぶんだけ取る。全店データはクライアントに渡さない（店ID＋判定の小さな表 約 11KB。gzip で約 3KB）。
+- **数え直し・テスト**: `node --env-file=.env.local proto-portal/count-omakase.mjs`、`node proto-portal/test-omakase.mjs`。
+

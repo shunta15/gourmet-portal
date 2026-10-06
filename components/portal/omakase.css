@@ -37,7 +37,6 @@
 @keyframes omWrite{from{clip-path:inset(-6px 100% -6px 0); opacity:.15; filter:blur(2px); transform:translateX(-4px)} to{clip-path:inset(-6px 0 -6px 0); opacity:1; filter:none; transform:none}}
 .om-line[data-state="todo"]{cursor:default}
 .om-line[data-state="todo"] .om-line-t, .om-line[data-state="todo"] .om-line-no{color:var(--ink-3)}
-.om-line[data-state="todo"] .om-line-t{opacity:.8}
 .om-line[data-state="open"]{background:linear-gradient(90deg,rgba(200,79,53,.10),rgba(200,79,53,0) 80%)}
 .om-line[data-state="open"]::before{content:""; position:absolute; left:-1px; top:-1px; bottom:-1px; width:3px; background:var(--om-shu)}
 .om-line[data-state="open"] .om-line-no{color:var(--om-red)}
@@ -65,7 +64,11 @@
 /* ─────────────────── 右: 質問 ─────────────────── */
 .om-main{min-width:0; position:relative}
 .om-q{position:relative; animation:omQIn .8s var(--ease) both}
-@keyframes omQIn{from{opacity:0; transform:translateY(24px)}}
+@keyframes omQIn{from{opacity:0}}
+.om-q[data-leaving="1"]{animation:omQOut .2s ease-in both}
+@keyframes omQOut{to{opacity:0; transform:translateY(-12px)}}
+/* 選んだ言葉が、お品書きの行へ飛ぶ（body の直下に作るので、書体は直接書く） */
+.om-fly{position:fixed; z-index:200; pointer-events:none; white-space:nowrap; transform-origin:0 0; font:600 clamp(20px,1.9vw,26px)/1.35 "Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif; letter-spacing:.07em; will-change:transform,opacity}
 .om-mini{margin-bottom:clamp(18px,2.4vw,32px)}
 .om-mini-c{display:none}
 .om-prog{display:grid; grid-template-columns:repeat(4,1fr); gap:6px}
@@ -79,27 +82,30 @@
 .om-q-no{font:600 clamp(84px,9vw,150px)/.92 var(--om-serif); color:transparent; -webkit-text-stroke:1px rgba(21,17,14,.5); pointer-events:none; user-select:none; margin-top:-6px}
 .om-q-title{scroll-margin-top:110px; position:relative; z-index:1; font:500 clamp(30px,3.7vw,54px)/1.3 var(--om-serif); letter-spacing:.02em; outline:none; word-break:auto-phrase; text-wrap:balance}
 .om-q-title em{font-style:normal; color:var(--om-red)}
-.om-q-sub{position:relative; z-index:1; margin-top:12px; max-width:36em; font:400 14px/1.9 var(--sans); color:var(--ink-2); text-wrap:pretty}
+.om-q-sub{position:relative; z-index:1; margin-top:12px; max-width:31em; font:400 14px/1.9 var(--sans); color:var(--ink-2); text-wrap:pretty}
 
 /* 選択肢。押すと墨で塗りつぶされ、ほかは薄くなってから、次の質問へ */
 .om-opts{position:relative; z-index:1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(20px,2.4vw,36px); margin-top:clamp(20px,2.6vw,34px); border-top:1px solid var(--ink)}
 .om-opts-where{grid-template-columns:minmax(0,1fr)}
 .om-opt{position:relative; display:flex; align-items:center; justify-content:space-between; gap:14px; width:100%; min-height:72px; padding:12px 10px 12px 6px; border:0; border-bottom:1px solid var(--rule); background:none; color:var(--ink); text-align:left; cursor:pointer; isolation:isolate; overflow:hidden; transition:opacity .45s, color .35s}
-.om-opt::before{content:""; position:absolute; inset:0; z-index:-1; background:rgba(200,79,53,.13); transform:scaleX(0); transform-origin:left; transition:transform .6s var(--ease)}
+/* 墨がにじむように、左から縁をぼかして広がる（@property が使えない環境では、すぐ切り替わるだけ） */
+@property --om-p{syntax:"<percentage>"; inherits:false; initial-value:0%}
+.om-opt{--om-p:0%}
+.om-opt::before{content:""; position:absolute; inset:0; z-index:-1; background:rgba(200,79,53,.13); -webkit-mask-image:linear-gradient(90deg,#000 calc(var(--om-p) - 18%),transparent var(--om-p)); mask-image:linear-gradient(90deg,#000 calc(var(--om-p) - 18%),transparent var(--om-p)); transition:--om-p .75s var(--ease)}
 .om-opt-l{display:flex; flex-direction:column; gap:3px; min-width:0}
 .om-opt-l b{font:600 clamp(20px,1.9vw,26px)/1.35 var(--om-serif); letter-spacing:.07em; transition:transform .5s var(--ease)}
 .om-opt-l small{font:400 12.5px/1.65 var(--sans); color:var(--ink-3); transition:color .35s}
 .om-opt-c{flex:none; display:inline-flex; align-items:baseline; gap:2px; font:500 12px/1 var(--mono); color:var(--ink-3); letter-spacing:.04em; transition:color .35s}
 .om-opt-c i{font:400 clamp(26px,2.4vw,34px)/1 var(--latin); font-style:normal; font-variant-numeric:lining-nums; color:var(--ink); letter-spacing:0; margin-right:3px; transition:color .35s}
 @media (hover:hover){
-  .om-opt:not([data-zero]):hover::before{transform:scaleX(1)}
+  .om-opt:not([data-zero]):hover::before{--om-p:118%}
   .om-opt:not([data-zero]):hover .om-opt-l b{transform:translateX(8px)}
 }
 .om-opt:focus-visible{outline-offset:-3px}
-.om-opt:not([data-zero]):focus-visible::before{transform:scaleX(1)}
+.om-opt:not([data-zero]):focus-visible::before{--om-p:118%}
 .om-opt[aria-pressed="true"] .om-opt-l b::after{content:"　選択中"; font:500 11px/1 var(--mono); letter-spacing:.12em; color:var(--om-red); vertical-align:middle}
 .om-opt[data-picked="1"]{color:var(--ivory)}
-.om-opt[data-picked="1"]::before{background:var(--ink); transform:scaleX(1); transition:transform .5s var(--ease-io)}
+.om-opt[data-picked="1"]::before{background:var(--ink); --om-p:118%; transition-duration:.5s; transition-timing-function:var(--ease-io)}
 .om-opt[data-picked="1"] .om-opt-l small, .om-opt[data-picked="1"] .om-opt-c, .om-opt[data-picked="1"] .om-opt-c i{color:rgba(244,239,230,.88)}
 .om-opt[data-picked="1"] .om-opt-l b{transform:translateX(10px)}
 .om-opt[data-dim="1"]{opacity:.28}
@@ -108,16 +114,19 @@
 .om-opt[data-zero="1"] .om-opt-c i{color:var(--ink-3); font-size:22px}
 .om-opt[data-any="1"]{grid-column:1 / -1; min-height:60px; border-bottom-style:dashed; border-bottom-color:rgba(21,17,14,.34)}
 .om-opt[data-any="1"] .om-opt-l b{font-size:clamp(17px,1.5vw,20px); font-weight:500}
-/* 地方の行: 県を開く印 */
-.om-opt[aria-expanded] .om-opt-c::after{content:""; width:9px; height:9px; margin:0 4px 3px 12px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg); transition:transform .45s var(--ease)}
-.om-opt[aria-expanded="true"] .om-opt-c::after{transform:rotate(-135deg) translate(-2px,-2px)}
-.om-opt[aria-expanded="true"]{border-bottom-color:transparent}
-.om-opt[aria-expanded="true"]::before{transform:scaleX(1); background:rgba(200,79,53,.09)}
+/* 地方の行: 行そのものが「その地方ぜんぶ」。右の「県から」で県を開く */
 .om-reg{border-bottom:1px solid var(--rule)}
-.om-reg > .om-opt{border-bottom:0}
+.om-reg-row{display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:stretch}
+.om-reg-row > .om-opt{border-bottom:0}
+.om-reg-more{display:inline-flex; align-items:center; gap:10px; min-height:72px; padding:0 16px 0 18px; border:0; border-left:1px solid var(--rule); background:none; color:var(--ink-2); font:500 12.5px/1 var(--sans); letter-spacing:.08em; cursor:pointer; transition:background-color .3s, color .3s}
+.om-reg-more i{width:8px; height:8px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg) translate(-1px,-1px); transition:transform .45s var(--ease)}
+.om-reg-more[aria-expanded="true"] i{transform:rotate(-135deg) translate(-1px,-1px)}
+@media (hover:hover){.om-reg-more:not([data-zero]):hover{background:rgba(21,17,14,.06); color:var(--ink)}}
+.om-reg-more[data-zero="1"]{opacity:.4; cursor:not-allowed}
 .om-reg[data-open="1"]{background:rgba(200,79,53,.06)}
 .om-prefs{display:flex; flex-wrap:wrap; gap:8px; padding:4px 10px 20px 6px; animation:omPrefs .5s var(--ease) both}
 @keyframes omPrefs{from{opacity:0; transform:translateY(-8px)}}
+.om-pref-t{pointer-events:none}
 .om-pref{display:inline-flex; align-items:center; gap:6px; min-height:48px; padding:0 18px; border:1px solid rgba(21,17,14,.45); border-radius:99px; background:var(--om-paper); color:var(--ink); font:500 14.5px/1 var(--sans); letter-spacing:.04em; cursor:pointer; transition:background-color .3s, color .3s, border-color .3s, transform .3s var(--ease)}
 .om-pref i{font:400 20px/1 var(--latin); font-style:normal; font-variant-numeric:lining-nums}
 @media (hover:hover){.om-pref:not([data-zero]):hover{background:var(--ink); border-color:var(--ink); color:var(--ivory); transform:translateY(-2px)}}
@@ -132,17 +141,20 @@
 .om-back:hover i{transform:translateX(-4px)}
 .om-skip{font-weight:600; text-decoration:underline; text-underline-offset:6px; text-decoration-color:rgba(21,17,14,.4)}
 .om-skip:hover{text-decoration-color:var(--om-red); color:var(--om-red)}
+.om-skip[data-few="1"]{min-height:52px; padding:0 22px; border-radius:99px; background:var(--ink); color:var(--ivory); text-decoration:none}
+.om-skip[data-few="1"]:hover{background:var(--om-red); color:#fff}
 .om-skip:hover i{transform:translateX(4px)}
 
 /* ─────────────────── 右: 結果 ─────────────────── */
 .om-r{animation:omQIn .8s var(--ease) both}
 .om-res-head{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:18px 32px}
 .om-res-txt{flex:1 1 26em; min-width:0; max-width:40em}
-.om-res-title{scroll-margin-top:96px; font:500 clamp(26px,2.9vw,42px)/1.3 var(--om-serif); letter-spacing:.02em; outline:none}
+.om-res-title{scroll-margin-top:96px; font:500 clamp(26px,2.6vw,38px)/1.35 var(--om-serif); letter-spacing:.02em; outline:none}
 .om-res-title > span, .om-res-title > em{display:inline-block}
 .om-res-title em{font-style:normal; color:var(--om-red)}
 .om-res-sub{margin-top:12px; font:400 14px/1.9 var(--sans); color:var(--ink-2); text-wrap:pretty}
 .om-cards-wrap{position:relative; margin-top:clamp(18px,2.2vw,28px); min-height:calc(var(--n,3) * 170px + (var(--n,3) - 1) * 14px)}
+.om-res[data-n="0"] .om-cards-wrap{min-height:0; margin-top:0}
 .om-res[data-n="1"]{--n:1} .om-res[data-n="2"]{--n:2} .om-res[data-n="3"]{--n:3}
 .om-cards{display:grid; gap:14px; margin:0; padding:0; list-style:none; visibility:hidden}
 .om-cards[data-visible="1"]{visibility:visible}
@@ -156,6 +168,7 @@
 .om-card-body{position:relative; display:flex; flex-direction:column; padding:clamp(14px,1.4vw,18px) clamp(16px,1.8vw,24px) clamp(12px,1.2vw,16px)}
 .om-card-cat{display:flex; flex-wrap:wrap; gap:3px 12px; font:500 11.5px/1.6 var(--mono); letter-spacing:.05em; color:var(--ink-3)}
 .om-card-name{margin-top:4px; font:600 clamp(19px,1.8vw,24px)/1.4 var(--om-serif); letter-spacing:.03em; overflow-wrap:anywhere}
+.om-card-name a{display:block; padding:9px 0; margin:-9px 0}
 .om-card-name a::after{content:""; position:absolute; inset:0; z-index:1}
 .om-card-name a:focus-visible{outline:none}
 .om-card:has(.om-card-name a:focus-visible){outline:3px solid var(--ink); outline-offset:3px}
@@ -193,7 +206,6 @@
 .om-res[data-curtain="lift"] .om-card{animation:omRise 1.05s var(--ease) both; animation-delay:calc(var(--i) * 130ms + 260ms)}
 @keyframes omRise{from{opacity:0; transform:translateY(30px)}}
 
-.om-res-foot{display:flex; flex-wrap:wrap; gap:12px 20px; align-items:center; margin-top:22px}
 .om-more{display:inline-flex; align-items:center; gap:22px; min-height:56px; padding:0 28px; border:1px solid var(--ink); border-radius:999px; background:var(--ink); color:var(--ivory); font:600 15px/1 var(--sans); letter-spacing:.06em; cursor:pointer; transition:background-color .4s, border-color .4s, transform .3s var(--ease)}
 .om-more small{font:500 11px/1 var(--mono); letter-spacing:.1em; opacity:.8}
 @media (hover:hover){.om-more:not(:disabled):hover{background:var(--om-red); border-color:var(--om-red)}}
@@ -207,7 +219,7 @@
 .om-relax button{display:inline-flex; align-items:center; gap:14px; min-height:48px; padding:0 18px; border:1px solid var(--ink); border-radius:99px; background:transparent; color:var(--ink); font:500 14px/1.3 var(--sans); cursor:pointer; transition:background-color .3s, color .3s}
 .om-relax button b{font:500 12px/1 var(--mono); letter-spacing:.06em}
 @media (hover:hover){.om-relax button:not(:disabled):hover{background:var(--ink); color:var(--ivory)}}
-.om-relax button:disabled{opacity:.45; cursor:default; border-style:dashed}
+.om-relax button:disabled{opacity:.62; cursor:default; border-style:dashed}
 
 .om-r-actions{display:flex; flex-wrap:wrap; align-items:center; gap:4px 28px; margin-top:26px; padding-top:18px; border-top:1px solid var(--rule)}
 .om-r-all{display:inline-flex; align-items:center; gap:10px; min-height:48px; font:600 15px/1.4 var(--sans); letter-spacing:.04em; text-decoration:underline; text-underline-offset:7px; text-decoration-color:rgba(21,17,14,.4)}
@@ -225,38 +237,64 @@
 .om-how li{position:relative; padding-left:1.4em}
 .om-how li::before{content:"◎"; position:absolute; left:0; color:var(--om-red)}
 
+/* ─────────────────── 登場の動き（動きを減らす設定では止める） ─────────────────── */
+@media (prefers-reduced-motion:no-preference){
+  .om-board-card > .om-kicker, .om-board-card > .om-h1, .om-board-card > .om-lead, .om-lines li, .om-sieve{animation:omBoot .9s var(--ease) both}
+  .om-board-card > .om-kicker{animation-delay:.05s}
+  .om-board-card > .om-h1{animation-name:omTitle; animation-duration:1.2s; animation-delay:.12s}
+  .om-board-card > .om-lead{animation-delay:.3s}
+  .om-lines li:nth-child(1){animation-delay:.36s} .om-lines li:nth-child(2){animation-delay:.44s} .om-lines li:nth-child(3){animation-delay:.52s} .om-lines li:nth-child(4){animation-delay:.6s}
+  .om-sieve{animation-delay:.7s}
+  .om-q-no{animation:omNo 1.1s var(--ease) .25s both}
+  .om-opts > *{animation:omBoot .7s var(--ease) both; animation-delay:calc(var(--i, 0) * 48ms + 160ms)}
+}
+.om-opts > :nth-child(1){--i:0} .om-opts > :nth-child(2){--i:1} .om-opts > :nth-child(3){--i:2} .om-opts > :nth-child(4){--i:3} .om-opts > :nth-child(5){--i:4} .om-opts > :nth-child(6){--i:5}
+.om-opts > :nth-child(7){--i:6} .om-opts > :nth-child(8){--i:7} .om-opts > :nth-child(9){--i:8} .om-opts > :nth-child(10){--i:9} .om-opts > :nth-child(11){--i:10} .om-opts > :nth-child(12){--i:11}
+@keyframes omBoot{from{opacity:0; transform:translateY(14px)}}
+@keyframes omTitle{from{opacity:0; clip-path:inset(0 100% 0 0); transform:translateX(-10px)} to{opacity:1; clip-path:inset(0 0 0 0)}}
+@keyframes omNo{from{opacity:0; transform:translateY(24px) scale(.94)}}
+/* 紙の質感（ごく薄い粒。操作の邪魔をしない） */
+.om-page::after{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.5; mix-blend-mode:multiply; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .3  0 0 0 0 .25  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+/* 暖簾の布の紋（細い輪） */
+.om-nr-s b{position:relative}
+.om-nr-s b::before{content:""; position:absolute; left:50%; top:50%; width:1.55em; height:1.55em; transform:translate(-50%,-50%); border:1px solid rgba(244,239,230,.22); border-radius:50%; z-index:-1}
+
 /* ─────────────────── モバイル・動きを減らす設定 ─────────────────── */
 @media (max-width:899px){
-  .om{grid-template-columns:minmax(0,1fr); gap:22px; padding-top:10px}
+  .om{grid-template-columns:minmax(0,1fr); gap:20px; padding-top:8px}
   .om-board{position:static}
-  .om-board-card{padding:18px 16px 14px}
+  .om-board-card{padding:14px 14px 12px}
   .om-board-card::before{inset:4px}
-  .om-h1{margin-top:10px; font-size:30px}
-  .om-lead{display:none}
-  .om-lines{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); margin-top:14px}
-  .om-line{grid-template-columns:minmax(0,1fr); row-gap:3px; align-content:start; min-height:68px; padding:10px 6px 10px 8px; border-bottom:1px solid var(--rule); border-right:1px solid var(--rule)}
-  .om-line:last-child{border-right:0}
+  .om-kicker, .om-lead{display:none}
+  .om-h1{margin-top:0; font-size:25px}
+  .om-lines{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); margin-top:10px}
+  .om-line{grid-template-columns:minmax(0,1fr); row-gap:2px; align-content:start; min-height:60px; padding:8px 4px 8px 8px; border-bottom:1px solid var(--rule); border-right:1px solid var(--rule)}
   .om-lines li:last-child .om-line{border-right:0}
-  .om-line-no{font-size:13px}
-  .om-line-t{font-size:14px; letter-spacing:.08em}
+  .om-line-no{font-size:12.5px}
+  .om-line-t{font-size:13.5px; letter-spacing:.06em}
   .om-line-lead{display:none}
-  .om-line-a{text-align:left; font-size:14.5px; min-height:1.4em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .om-line-a{text-align:left; font-size:14px; min-height:1.4em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
   .om-line[data-state="open"]::before{left:0; right:0; top:auto; bottom:-1px; width:auto; height:3px}
-  .om-pool{height:76px}
-  .om-roll{font-size:46px}
-  .om-count{margin-top:8px; padding-top:8px}
-  .om-count-t{font-size:11.5px}
-  .om-seal{width:44px; height:44px; font-size:24px; right:16px; top:16px}
+  .om-sieve{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; align-items:center; margin-top:10px}
+  .om-pool{height:62px}
+  .om-count{margin-top:0; padding-top:0; border-top:0; gap:4px}
+  .om-count{display:none}
+  .om-sieve{grid-template-columns:minmax(0,1fr)}
+  .om-seal{width:40px; height:40px; font-size:22px; right:14px; top:12px}
   .om-q-no{font-size:76px}
-  .om-mini{position:sticky; top:58px; z-index:20; margin:0 calc(var(--gut) * -1) 18px; padding:8px var(--gut) 10px; background:rgba(244,239,230,.92); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); box-shadow:0 1px 0 var(--rule)}
+  .om-q-title{scroll-margin-top:124px}
+  .om-mini{position:sticky; top:58px; z-index:20; margin:0 calc(var(--gut) * -1) 16px; padding:8px var(--gut) 10px; background:rgba(244,239,230,.92); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); box-shadow:0 1px 0 var(--rule)}
   .om-mini-c{display:flex; align-items:baseline; gap:6px; margin-bottom:7px; font:400 12px/1 var(--sans); color:var(--ink-3)}
   .om-mini-c .om-roll{font-size:28px; color:var(--ink); margin-left:auto}
   .om-mini-c > span:last-child{font:600 14px/1 var(--om-serif); color:var(--ink)}
   .om-opts{grid-template-columns:minmax(0,1fr)}
   .om-opt{min-height:64px}
+  .om-reg-more{min-height:64px; padding:0 12px 0 14px}
   .om-card{grid-template-columns:minmax(0,1fr)}
   .om-more{width:100%; justify-content:space-between}
   .om-card-ph{min-height:0; aspect-ratio:4 / 3}
+  .om-card-cat{padding-right:0}
+  .om-card-go{position:static; order:9; align-self:flex-end; margin-top:10px}
   .om-nr-s b{font-size:clamp(52px,17vw,84px)}
   .om-cards-wrap{min-height:calc(var(--n,3) * 380px)}
   .om-how-in{grid-template-columns:minmax(0,1fr)}

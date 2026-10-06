@@ -30,7 +30,7 @@ const arg = (k, d) => {
 const BASE = arg("base", "");
 const SITE = "https://machinowa.tokyo";
 
-const PORTAL_FIRST = new Set(["area", "station", "videos", "map", "photos", "beauty", "bodycare", "pet", "leisure", "stay"]);
+const PORTAL_FIRST = new Set(["area", "station", "videos", "map", "photos", "omakase", "beauty", "bodycare", "pet", "leisure", "stay"]);
 const LOCAL_BUSINESS = new Set([
   "LocalBusiness", "Restaurant", "HairSalon", "NailSalon", "BeautySalon", "DaySpa", "HealthAndBeautyBusiness",
   "VeterinaryCare", "PetStore", "Museum", "AmusementPark", "Park", "TouristAttraction", "Hotel", "Hostel",
@@ -158,7 +158,7 @@ for (const f of walk(APP)) {
 }
 const builtSet = new Set(pages.map((p) => p.url));
 const dynamicSkipped = [];
-for (const u of ["/map", "/map?pref=kyoto", "/videos", "/videos?v=gourmet", "/find", "/find?q=三宮", "/find?q=京都", "/photos", "/photos?genre=ramen&pref=kyoto"]) {
+for (const u of ["/map", "/map?pref=kyoto", "/videos", "/videos?v=gourmet", "/find", "/find?q=三宮", "/find?q=京都", "/photos", "/photos?genre=ramen&pref=kyoto", "/omakase", "/omakase?r=kinki&who=solo&b=3000&m=men&s=t1"]) {
   if (builtSet.has(u.split("?")[0])) continue;
   if (!BASE) {
     dynamicSkipped.push(u);
