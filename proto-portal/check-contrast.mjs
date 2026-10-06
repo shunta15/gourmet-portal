@@ -25,12 +25,12 @@ const arg = (k, d) => {
 const BASE = arg("base", "http://localhost:3242");
 const OUT = arg("out", "");
 const VERBOSE = process.argv.includes("--verbose");
-// --silk: 総合トップの WebGL の絹を実際に動かした状態で測る（幅1440のみ。ヘッドレスなのでソフトウェア描画）。
-// 既定は「動きを減らす」設定で測る（絹は出ず、CSS のグラデーションだけ）。
-const SILK = process.argv.includes("--silk");
+// --motion: 総合トップの「輪」を、動きを減らさない設定で測る（幅1440・390）。6つの業種を正面に回して、そのたびに .hub の中の文字を測る。
+// 既定は「動きを減らす」設定で測る（総合トップは輪を出さず、業種の一覧になる）。
+const MOTION = process.argv.includes("--motion");
 const PAGES = arg(
   "pages",
-  [
+  MOTION ? "/" : [
     "/",
     "/beauty",
     "/bodycare",
@@ -61,6 +61,16 @@ const PAGES = arg(
     "/omakase?r=kinki&who=solo&b=3000&m=any&s=t1",
   ].join(","),
 ).split(",");
+/** 総合トップの輪: 1番目（グルメ）は通常の検査。2〜6番目は、矢印キーで正面に回してから .hub の中だけを測る */
+const HUB_STATES = [1, 2, 3, 4, 5].map((i) => ({
+  label: `輪 ${i + 1}番目`,
+  page: "/",
+  only: ".hub",
+  run: async (pg) => {
+    for (let k = 0; k < i; k++) await pg.keyboard.press("ArrowRight");
+    await pg.waitForTimeout(1800);
+  },
+}));
 const VIEWPORTS = [
   { name: "1440", width: 1440, height: 900 },
   { name: "390", width: 390, height: 844 },
@@ -211,14 +221,13 @@ const STATES = [
   { label: "検索候補（京都・矢印で選択）", page: "/map", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "京都", true) },
 ];
 
-const browser = await chromium.launch(SILK ? { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] } : {});
+const browser = await chromium.launch();
 const all = [];
 let checked = 0;
 for (const vp of VIEWPORTS) {
-  if (SILK && vp.name !== "1440") continue;
-  const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, reducedMotion: SILK ? "no-preference" : "reduce" });
+  const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, reducedMotion: MOTION ? "no-preference" : "reduce" });
   const page = await ctx.newPage();
-  const targets = [...PAGES.map((p) => ({ label: p, page: p })), ...(arg("pages", "") && !process.argv.includes("--states") ? [] : STATES)];
+  const targets = [...PAGES.map((p) => ({ label: p, page: p })), ...(MOTION ? HUB_STATES : arg("pages", "") && !process.argv.includes("--states") ? [] : STATES)];
   for (const tg of targets) {
     const p = tg.label;
     const resp = await page.goto(BASE + encodeURI(tg.page), { waitUntil: "load", timeout: 120000 });
@@ -233,7 +242,6 @@ for (const vp of VIEWPORTS) {
     });
     await page.evaluate(() => document.fonts.ready);
     if (tg.run) await tg.run(page, vp);
-    if (SILK) await page.waitForSelector("canvas.mp-silk[data-ready]", { timeout: 20000 }).catch(() => console.log("  （絹が始まらなかった）"));
     await page.waitForTimeout(2500);
     const items = await page.evaluate(collect, tg.only ?? null);
     await page.addStyleTag({ content: "*,*::before,*::after{color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;caret-color:transparent!important}" });

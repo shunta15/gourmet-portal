@@ -1,0 +1,239 @@
+/* ════════════════════════════════════════════════════════════
+   総合トップ「輪」（試作）— 回して選ぶ、1画面の入口
+   .mp 配下の .hub-* に閉じ込める。portal.css（変数・フッター）と一緒に、app/portal-home/layout.tsx だけから読み込む。
+   地は生成りの紙と墨。業種の色は「輪の円盤」「正面の印」「小さな点」にだけ使う。
+   動きを減らす設定では輪を出さず、業種の一覧にする（末尾）。
+   ════════════════════════════════════════════════════════════ */
+@property --sp{syntax:"<angle>"; inherits:false; initial-value:0deg}
+
+.hub{
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .08 0 0 0 0 .06 0 0 0 .34 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* 輪の色は、いまの業種(a)と次の業種(b)を m（0〜1）で混ぜる。m は輪が回るたびに JS が毎フレーム書く */
+  --ac:color-mix(in oklab, var(--a) calc((1 - var(--m)) * 100%), var(--b) calc(var(--m) * 100%));
+  --acl:color-mix(in oklab, var(--al) calc((1 - var(--m)) * 100%), var(--bl) calc(var(--m) * 100%));
+  --sd:clamp(66px, 5.6vw, 88px);              /* 印（いちばん小さいとき）の直径 */
+  --fk:1.7;                                   /* 正面の印の倍率 */
+  --dh:clamp(300px, 47svh, 600px);            /* 円盤エリアの高さ */
+  --top:calc(var(--sd) * var(--fk) / 2 + 14px); /* 輪の縁の頂点の、円盤エリアの上端からの距離 */
+  position:relative; isolation:isolate; overflow:clip;
+  display:flex; flex-direction:column;
+  height:100svh; min-height:660px;
+  color:var(--ink);
+  background:var(--ivory);
+  background:color-mix(in oklab, var(--ivory) 78%, var(--acl) 22%);
+  touch-action:pan-y;
+  -webkit-user-select:none; user-select:none;
+}
+.hub::before{content:""; position:absolute; inset:0; z-index:0; pointer-events:none; background-image:var(--grain); background-size:240px; opacity:.34; mix-blend-mode:multiply}
+
+/* ───── 上の帯：ロゴ・一言・さがす ───── */
+.hub-bar{position:relative; z-index:20; display:flex; align-items:center; justify-content:space-between; gap:16px; flex:none; padding:22px var(--gut) 0}
+.hub-h1{position:absolute; left:50%; top:calc(22px + 24px); transform:translate(-50%,-50%); font:500 14px/1.6 var(--serif); letter-spacing:.18em; color:var(--ink-2); white-space:nowrap}
+.hub-find{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 20px 0 16px; border:1px solid rgba(21,17,14,.4); border-radius:999px; background:rgba(250,247,241,.62); font:500 13px/1 var(--sans); letter-spacing:.08em; transition:background .4s var(--ease), color .4s var(--ease), border-color .4s var(--ease)}
+.hub-find small{font:500 10px/1 var(--mono); letter-spacing:.14em; color:var(--ink-3); border-left:1px solid var(--rule); padding-left:12px; transition:color .4s}
+.hub-find:hover{background:var(--ink); color:var(--ivory); border-color:var(--ink)}
+.hub-find:hover small{color:rgba(244,239,230,.72); border-color:rgba(244,239,230,.3)}
+
+/* ───── 中央：正面の業種の名前（特大）と、事実・入口 ───── */
+.hub-main{position:relative; z-index:10; flex:1 1 0; min-height:0; display:flex; flex-direction:column; justify-content:center; padding:0 var(--gut); transform:translate3d(calc(var(--px, 0) * -7px), calc(var(--py, 0) * -4px), 0); transition:transform 1.1s var(--ease)}
+.hub-panels{display:grid}
+.hub-panel{position:relative; grid-area:1 / 1; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; text-align:center; opacity:0; visibility:hidden; pointer-events:none}
+.hub-panel[data-vis]{visibility:visible}
+.hub-panel[data-on]{opacity:1; pointer-events:auto}
+.hub-kick{display:flex; align-items:center; justify-content:center; gap:14px; font:500 11px/1 var(--mono); letter-spacing:.26em; color:var(--ink-2)}
+.hub-kick::before{content:""; width:9px; height:9px; border-radius:50%; background:var(--ac); flex:none}
+.hub-kick .no i{font-style:normal; color:var(--ink-3)}
+.hub-kick em{font:italic 400 24px/1 var(--latin); letter-spacing:.01em; color:var(--ink)}
+
+.hub-name{font-family:var(--serif); font-weight:700; font-size:min(27svh, calc(88vw / var(--n))); line-height:.94; letter-spacing:-.045em; white-space:nowrap; margin:.05em 0 .06em}
+.hub-name .ln{display:inline-block; vertical-align:top; overflow:hidden; padding:.07em .09em .12em; margin:-.07em -.09em -.12em}
+.hub-name .chs{display:inline-block}
+.hub-name .ch{display:inline-block; transition:color .5s var(--ease) calc(var(--ci) * 50ms); transform:translate3d(calc(var(--sw, 0) * (var(--ci) + 1) * 1px), 0, 0) skewX(calc(var(--sk, 0) * 1deg)); animation:hubUp 1.5s var(--ease) backwards; animation-delay:calc(.22s + var(--ci) * 75ms)}
+.hub.is-ready .hub-name .ln{overflow:visible}
+.hub-panel[data-on] .hub-name[data-cursor]:hover .ch{color:color-mix(in oklab, var(--ac) 76%, var(--ink))}
+@keyframes hubUp{from{transform:translate3d(0,112%,0)}}
+
+.hub-meta{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px 24px; margin-top:clamp(10px, 2.2svh, 24px); max-width:min(100%, 1100px)}
+.hub-meta .mp-state{background:rgba(250,247,241,.7)}
+.hub-facts{display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; gap:4px 26px; font:500 14px/1.5 var(--sans); color:var(--ink-2)}
+.hub-facts b{font:400 28px/1 var(--latin); color:var(--ink); margin:0 3px; font-variant-numeric:lining-nums; letter-spacing:0}
+.hub-facts small{font:400 11.5px/1.5 var(--sans); color:var(--ink-3); margin-left:8px}
+.hub-open{transition:opacity .6s}
+.hub-open:not([data-on]){opacity:0}
+.hub-cats{font:400 14px/1.8 var(--sans); color:var(--ink-2); max-width:36em; text-wrap:balance}
+.hub-cats span{display:inline-block; white-space:nowrap}
+.hub-go{display:inline-flex; align-items:center; gap:14px; min-height:48px; padding:0 22px 0 26px; background:var(--ink); color:var(--ivory); border-radius:999px; font:500 14px/1 var(--sans); white-space:nowrap; letter-spacing:.08em; box-shadow:inset 0 0 0 1.5px var(--ink); transition:background .45s var(--ease), color .45s var(--ease)}
+.hub-go span{display:inline-block; transition:transform .5s var(--ease)}
+.hub-go:hover{background:transparent; color:var(--ink)}
+.hub-go:hover span{transform:translateX(5px)}
+.hub-panel:not([data-on]) .hub-go{pointer-events:none}
+
+/* ───── 下：輪（円盤＋目盛り＋6つの印）。縁の頂点が正面 ───── */
+.hub-dial{position:relative; z-index:5; flex:none; height:var(--dh); container-type:size}
+.hub-wheel{position:absolute; inset:0; --R:min(39cqw, 125cqh); animation:hubRise 1.8s var(--ease) backwards}
+@keyframes hubRise{from{transform:translate3d(0, 34%, 0)}}
+.hub-disc{position:absolute; left:50%; top:var(--top); width:calc(var(--R) * 2); aspect-ratio:1; transform:translateX(-50%); border-radius:50%; background:var(--ac); box-shadow:0 0 0 1.5px rgba(21,17,14,.88)}
+.hub-disc{overflow:hidden}
+.hub-disc .mk{position:absolute; left:50%; top:calc(var(--R) * .4); font:700 calc(var(--R) * .66)/1 var(--serif); color:rgba(21,17,14,.1); transform:translate(-50%,-50%); opacity:0; white-space:nowrap; pointer-events:none; -webkit-user-select:none; user-select:none}
+.hub-disc .mk[data-vis]{opacity:1}
+.hub-disc::after{content:""; position:absolute; inset:0; border-radius:50%; background-image:var(--grain); background-size:240px; opacity:.5; mix-blend-mode:multiply; pointer-events:none}
+
+.hub-decor{position:absolute; left:50%; top:var(--top); width:calc(var(--R) * 2); height:calc(var(--R) * 2); margin-left:calc(var(--R) * -1); overflow:visible; pointer-events:none; color:rgba(21,17,14,.5)}
+.hub-decor svg{position:absolute; inset:0; width:100%; height:100%; overflow:visible}
+.hub-decor circle, .hub-decor line{vector-effect:non-scaling-stroke}
+.hub-decor .out{fill:none; stroke:rgba(21,17,14,.4); stroke-width:1.2; stroke-dasharray:2 7}
+.hub-decor .in{fill:none; stroke:currentColor; stroke-width:1; opacity:.55}
+.hub-decor .tk line{stroke:currentColor; stroke-width:1.1}
+.hub-decor .tk line.mj{stroke-width:2.2; stroke:rgba(21,17,14,.72)}
+.hub-decor .sp line{stroke:currentColor; stroke-width:1; opacity:.6}
+.hub-decor .sp circle{fill:rgba(21,17,14,.6)}
+.hub-decor .tx text{font:500 26px/1 var(--mono); letter-spacing:.2em; fill:rgba(21,17,14,.62)}
+.hub-rot{animation:hubRotIn 2s cubic-bezier(.16,1,.3,1) backwards}
+@keyframes hubRotIn{from{transform:rotate(-58deg)}}
+/* 回っている間だけ、層に分けて GPU に任せる（止まったら外す＝止まった絵は細い線までくっきり描き直される） */
+.hub.is-spinning .hub-rot, .hub.is-spinning .hub-seal, .hub.is-spinning .hub-panel{will-change:transform}
+
+/* 印（6つ。回転は --ang と --k を JS が毎フレーム書く） */
+.hub-seal{position:absolute; left:50%; top:calc(var(--top) + var(--R)); width:var(--sd); height:var(--sd); margin:calc(var(--sd) / -2) 0 0 calc(var(--sd) / -2); z-index:2;
+  transform:rotate(calc(var(--ang) + var(--sp, 0deg))) translateY(calc(var(--R) * -1)) rotate(calc(var(--ang) * -1 - var(--sp, 0deg) + var(--tilt, 0deg))) scale(var(--k));
+  animation:hubSpin 2s cubic-bezier(.16,1,.3,1) backwards}
+@keyframes hubSpin{from{--sp:-58deg}}
+.hub-seal .face{position:relative; display:grid; place-items:center; width:100%; height:100%; border-radius:50%; background:var(--paper); box-shadow:0 0 0 1px rgba(21,17,14,.62), inset 0 0 0 4px var(--paper), inset 0 0 0 6.5px var(--c), 0 14px 26px -10px rgba(21,17,14,.5); transition:transform .55s var(--ease)}
+.hub-seal .face b{font:700 calc(var(--sd) * .46)/1 var(--serif); color:var(--ink); transform:translateY(-.02em)}
+.hub-seal .face::after{content:""; position:absolute; inset:-3px; border-radius:50%; border:2px solid var(--c); opacity:0; pointer-events:none}
+.hub-seal:hover .face{transform:scale(1.08)}
+.hub-seal:active .face{transform:scale(.94)}
+.hub-seal.pop .face{animation:hubPop .6s var(--ease)}
+.hub-seal.pop .face::after{animation:hubRing .9s var(--ease)}
+@keyframes hubPop{0%{transform:scale(1)} 32%{transform:scale(1.13)} 100%{transform:scale(1)}}
+@keyframes hubRing{0%{transform:scale(1); opacity:.95} 100%{transform:scale(1.75); opacity:0}}
+.hub-seal .lab{position:absolute; left:50%; top:50%; transform:translate(calc(-50% + sin(var(--ang)) * (52% + var(--sd) * .5 + 12px)), calc(-50% - cos(var(--ang)) * (var(--sd) * .5 + 24px))); white-space:nowrap; font:500 14px/1 var(--serif); letter-spacing:.08em; color:var(--ink); opacity:calc(1 - var(--f) * 1.8); pointer-events:none}
+/* 準備中の印は、輪の上では薄く。縁は破線 */
+.hub-seal:not(.enter) .face{opacity:.55; background:rgba(250,247,241,.7); box-shadow:inset 0 0 0 2px var(--paper), inset 0 0 0 3.5px var(--c), 0 6px 14px -8px rgba(21,17,14,.35)}
+.hub-seal:not(.enter) .lab{color:var(--ink-2); opacity:calc(.74 - var(--f) * 1.8)}
+.hub-seal:not(.enter) .face b{color:var(--ink-2)}
+.nudge{animation:hubNudge .5s var(--ease)}
+@keyframes hubNudge{0%,100%{translate:0} 18%{translate:-12px} 40%{translate:9px} 62%{translate:-5px} 82%{translate:2px}}
+
+/* 左右の矢印ボタン・正面の操作領域 */
+.hub-nav{position:absolute; top:var(--top); z-index:6; width:48px; height:48px; display:grid; place-items:center; border-radius:50%; background:var(--paper); border:1px solid rgba(21,17,14,.55); color:var(--ink); transform:translate(-50%,-50%); transition:background .35s var(--ease), color .35s var(--ease), transform .5s var(--ease)}
+.hub-nav.prev{left:calc(50% - (var(--sd) * var(--fk) / 2 + 46px))}
+.hub-nav.next{left:calc(50% + (var(--sd) * var(--fk) / 2 + 46px))}
+.hub-nav:hover{background:var(--ink); color:var(--paper)}
+.hub-nav.prev:hover{transform:translate(-50%,-50%) translateX(-3px)}
+.hub-nav.next:hover{transform:translate(-50%,-50%) translateX(3px)}
+.hub-front{position:absolute; left:50%; top:var(--top); z-index:7; width:calc(var(--sd) * var(--fk) + 8px); height:calc(var(--sd) * var(--fk) + 8px); transform:translate(-50%,-50%); border-radius:50%}
+.hub-front[data-cursor]::after{content:""; position:absolute; inset:2px; border-radius:50%; border:1.5px solid var(--ink); opacity:0; pointer-events:none; animation:hubPulse 2.8s ease-out 2.6s 3}
+@keyframes hubPulse{0%{transform:scale(.96); opacity:.55} 100%{transform:scale(1.42); opacity:0}}
+.hub .hub-front:focus-visible{outline:3px solid var(--ink); outline-offset:3px}
+
+/* ───── 隅の一覧（輪を使わない人のためのリンクの一覧）と、フッターへの案内 ───── */
+.hub-index{position:absolute; left:var(--gut); bottom:max(20px, calc(var(--dh) - 250px)); z-index:15; width:176px}
+.hub-index ul{display:flex; flex-direction:column}
+.hub-index li a, .hub-index li button{display:flex; align-items:center; gap:10px; width:100%; min-height:30px; padding:4px 0; font:500 13px/1.2 var(--sans); letter-spacing:.06em; color:var(--ink-3); text-align:left; transition:color .3s, transform .5s var(--ease)}
+.hub-index li i{width:8px; height:8px; border-radius:50%; flex:none; transition:transform .5s var(--ease)}
+.hub-index li .no{font:500 10px/1 var(--mono); letter-spacing:.12em; width:1.7em}
+.hub-index li small{margin-left:auto; font:500 10px/1 var(--mono); letter-spacing:.1em}
+.hub-index li[data-on] a, .hub-index li[data-on] button{color:var(--ink)}
+.hub-index li[data-on] i{transform:scale(1.7)}
+.hub-index li a:hover, .hub-index li button:hover{color:var(--ink); transform:translateX(-3px)}
+.hub-cue{display:flex; align-items:center; justify-content:space-between; gap:8px; width:100%; margin-top:12px; padding-top:12px; border-top:1px solid var(--rule); font:500 11px/1 var(--mono); letter-spacing:.14em; color:var(--ink-2); min-height:34px; transition:color .3s}
+.hub-cue svg{animation:hubBob 2.2s var(--ease-io) 4}
+@keyframes hubBob{50%{transform:translateY(3px)}}
+.hub-cue:hover{color:var(--ink)}
+
+/* 使い方の一言（縦書き）。最初に触るまで */
+.hub-hint{position:absolute; right:calc(var(--gut) + 6px); bottom:max(26px, calc(var(--dh) - 244px)); z-index:15; writing-mode:vertical-rl; display:flex; align-items:center; gap:14px; font:500 12px/1 var(--serif); letter-spacing:.34em; color:var(--ink-2); pointer-events:none; transition:opacity .8s}
+.hub-hint::before{content:""; width:1px; height:64px; background:currentColor; opacity:.5}
+.hub.is-touched .hub-hint{opacity:0}
+
+/* 低い PC の画面（〜800px）では、一覧を詰めて、フッターへの案内は出さない（印の名札と重なるため） */
+@media (min-width:1101px) and (max-height:800px){
+  .hub-index li a, .hub-index li button{min-height:26px; padding-block:2px}
+  .hub-index{bottom:max(20px, calc(var(--dh) - 182px))}
+  .hub-cue{display:none}
+}
+
+/* 画面を満たして入る */
+.hub-wipe{position:fixed; inset:0; z-index:90; background:var(--ac); clip-path:circle(0px at var(--wx, 50%) var(--wy, 70%)); pointer-events:none}
+.hub.is-leaving .hub-wipe{clip-path:circle(150vmax at var(--wx) var(--wy)); transition:clip-path .88s cubic-bezier(.66,0,.2,1); pointer-events:auto}
+.hub.is-leaving .hub-main, .hub.is-leaving .hub-bar, .hub.is-leaving .hub-index{opacity:0; transition:opacity .4s}
+
+/* ───── スマホ：輪は画面の下半分に大きく。親指で回す ───── */
+@media (max-width:1100px){
+  .hub-hint{display:none}
+}
+@media (max-width:760px){
+  .hub{--sd:62px; --dh:clamp(300px, 44svh, 520px); min-height:640px}
+  .hub-bar{flex-wrap:wrap; row-gap:6px; padding-top:16px}
+  .hub-h1{position:static; transform:none; order:3; flex-basis:100%; font-size:12.5px; letter-spacing:.1em; white-space:normal; line-height:1.5}
+  .hub-find{padding:0 18px 0 14px}
+  .hub-find small{display:none}
+  .hub-main{justify-content:center}
+  .hub-name{font-size:min(14svh, 29vw); letter-spacing:-.04em}
+  .hub-panel[data-lines="2"] .hub-name{font-size:min(12.4svh, 26vw)}
+  .hub-name{display:flex; flex-direction:column; justify-content:center; min-height:calc(2 * .94em)}
+  .hub-name .ln{display:block; overflow:hidden}
+    .hub-kick em{font-size:21px}
+  .hub-meta{display:grid; grid-template-columns:auto auto; grid-template-areas:"st go" "fa fa"; justify-content:center; align-items:center; gap:10px 14px; margin-top:10px; width:100%}
+  .hub-meta .mp-state{grid-area:st; justify-self:end}
+  .hub-meta .hub-go{grid-area:go; justify-self:start}
+  .hub-meta .hub-facts, .hub-meta .hub-cats{grid-area:fa; justify-self:center}
+  .hub-meta.no-go{grid-template-columns:auto; grid-template-areas:"st" "fa"}
+  .hub-meta.no-go .mp-state{justify-self:center}
+  .hub-facts{gap:2px 16px; font-size:13px}
+  .hub-facts b{font-size:24px}
+  .hub-facts small{display:block; margin:2px 0 0}
+  .hub-cats{font-size:12.5px; line-height:1.7}
+  .hub-wheel{--R:min(51cqw, 125cqh)}
+  .hub-seal .lab{display:none}
+  .hub-decor .tx{display:none}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hub{--dh:clamp(250px, 41svh, 520px)}
+  .hub-name{font-size:min(11.6svh, 24vw)}
+  .hub-panel[data-lines="2"] .hub-name{font-size:min(11.6svh, 24vw)}
+  .hub-kick em{display:none}
+  .hub-cats{display:none}
+  .hub-bar{padding-top:12px}
+}
+/* 一覧は画面には出さない（読み上げ・キーボード用）。フォーカスが入ると、下に出す。タブレット幅以下はスマホと同じ */
+@media (max-width:1100px){
+  .hub-h1{display:none}
+  .hub-index{right:auto; left:0; bottom:0; width:1px; height:1px; overflow:hidden; clip-path:inset(50%)}
+  .hub-index:focus-within{clip-path:none; overflow:visible; width:auto; height:auto; left:12px; right:12px; bottom:12px; padding:8px 14px; background:var(--paper); border:1px solid var(--ink); border-radius:14px}
+  .hub-index:focus-within li a, .hub-index:focus-within li button{min-height:48px}
+  .hub-index .hub-cue{display:none}
+}
+@media (min-width:761px) and (max-width:1100px){
+  .hub-find small{display:none}
+}
+@media (max-width:760px){
+  .hub-h1{display:block}
+}
+
+/* ───── 動きを減らす設定・スクリプトなしの読み取り：輪は出さず、業種の一覧にする ───── */
+@media (prefers-reduced-motion: reduce){
+  .hub{height:auto; min-height:0; display:block; overflow:visible; background:var(--ivory); touch-action:auto; -webkit-user-select:auto; user-select:auto}
+  .hub::before{display:none}
+  .hub-bar{padding-bottom:6px}
+  .hub-main{display:block; max-width:1080px; margin:0 auto; padding:clamp(20px,4vw,48px) var(--gut) clamp(48px,7vw,96px)}
+  .hub-panels{display:block}
+  .hub-panel{position:relative; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); grid-template-areas:"kick kick" "name meta"; align-items:center; gap:10px 36px; text-align:left; padding:clamp(26px,3.6vw,44px) 0; border-top:1px solid var(--rule); opacity:1 !important; visibility:visible !important; transform:none !important; pointer-events:auto; will-change:auto}
+  .hub-panel:last-child{border-bottom:1px solid var(--rule)}
+  .hub-panel::before{content:""; position:absolute; left:0; top:-1px; width:64px; height:3px; background:var(--ac)}
+  .hub-kick{grid-area:kick; justify-content:flex-start}
+  .hub-name{grid-area:name; font-size:clamp(44px, 5.6vw, 76px) !important; margin:0}
+  .hub-name .ln{display:inline !important; overflow:visible !important; padding:0; margin:0}
+  .hub-name .ch{animation:none; transform:none}
+  .hub-meta{grid-area:meta; align-items:flex-start; justify-content:flex-start}
+  .hub-facts{justify-content:flex-start}
+  .hub-go{margin-top:2px}
+  .hub-dial, .hub-index, .hub-wipe, .hub-cue, .hub-hint{display:none}
+  .hub-find:hover{transition:none}
+}
+@media (prefers-reduced-motion: reduce) and (max-width:760px){
+  .hub-panel{grid-template-columns:minmax(0,1fr); grid-template-areas:"kick" "name" "meta"; gap:12px}
+  .hub-name{font-size:clamp(48px, 17vw, 84px) !important}
+  .hub-name .ln{display:inline !important}
+}

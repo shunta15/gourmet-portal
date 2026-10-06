@@ -42,10 +42,11 @@ ON になる条件は `PORTAL_LAUNCHED` が `"1"`、または `VERCEL_ENV` が `
 | 10 | 営業時間の判定 | `node proto-portal/test-openNow.mjs` | `0 failed` |
 | 11 | 写真の生成物 | `node automation/portal/build-images.mjs --check` | `OK 生成物は最新`（※ 1-B 参照）|
 | 12 | キーボード操作（任意）| `node proto-portal/check-keyboard.mjs --base http://localhost:3242` | `違反: 0` |
-| 13 | コントラスト（任意）| `node proto-portal/check-contrast.mjs --base http://localhost:3242` | 違反 0 |
+| 13 | コントラスト（任意）| `node proto-portal/check-contrast.mjs --base http://localhost:3242`（総合トップの輪は `--motion` を付けて、6業種を正面に回しながら別に測る）| 違反 0 |
 | 14 | 表示速度（任意）| `node proto-portal/measure-speed.mjs` | LCP・CLS・TBT が前回から悪化していない |
 | 15 | 関数に public/ が入っていない | `find .next/server/app -name '*.nft.json' -print0 \| xargs -0 grep -l 'public/'` | **何も出ない**（ビルドは 4 のあと）|
 | 16 | 日本語 URL | 下の 1-C | 20 回とも 200 |
+| 17 | 総合トップ（輪）の動作 | `node proto-portal/check-hub.mjs --base http://localhost:3242` | `違反: 0`（輪を回す・業種の扱い・動きを減らす設定・横スクロール 0・コンソールエラー 0）|
 
 （`crawl.mjs` は約 30 秒・1,800 リンクと共有画像 80 枚を取る。本番に向けて打つときは空いている時間に）
 
@@ -286,7 +287,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 - **`/` は rewrites で総合トップに差し替わる**ので、ON のとき `app/page.tsx`（グルメのトップ）はビルドされるが配信されない。グルメのトップは `/gourmet`。
 - **IndexNow の cron（`/api/cron/ping-search`）は `/sitemap.xml` の URL だけ通知する**。総合サイトのサイトマップ（駅など）は通知されない（Search Console の送信で足りる）。
 - **駅と店の対応・写真の生成物は自動では増えない**（1-B）。
-- **新業種は掲載 0 件**。総合トップから「掲載準備中」の 5 業種のページへリンクがある（noindex）。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
+- **新業種は掲載 0 件**。総合トップ（輪）からは、ビューティー・ボディケアの 2 業種だけ「ページを見る」でページへ入れる（noindex）。ペット・おでかけ・ステイは輪の上で薄く見せ、正面に来ても「掲載準備中」と出すだけでリンクにしない（フッターの業種の一覧には 6 業種ともリンクが残る）。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
 
 ## 付録: ファイル
 
@@ -295,7 +296,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 | `lib/portal/launch.ts`・`launchEnv.ts` | 公開スイッチの判定（`isPortalLive()`、`assertPortalLive()`、`liveStaticParams()`）|
 | `next.config.ts` | OFF: 総合サイトの URL を 404 に書き換え。ON: `/` → `/portal-home`、`/portal-home` → `/` の 307 |
 | `app/page.tsx`・`components/portal/pages/gourmet-home.tsx` | グルメのトップ（OFF の `/`、ON の `/gourmet` と共通）|
-| `app/portal-home/**`・`components/portal/pages/home.tsx` | 総合トップ（ON の `/`）|
+| `app/portal-home/**`・`components/portal/pages/home.tsx`・`components/portal/hub/**`・`lib/portal/hub.ts` | 総合トップ（ON の `/`。輪を回して選ぶ 1 画面）|
 | `components/portal/PortalShell.tsx`・`PortalLayout.tsx` | ON のシェル／総合サイトのヘッダー・フッター |
 | `app/robots.ts`・`app/sitemap.ts` | ON のときだけ追記 |
 | `proto-portal/compare-off.mjs` | OFF が main と同一かの検査 |
@@ -362,3 +363,12 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **データの前提**: 結果の店は `/list-data/{店ID}`（候補リストと同じ静的 JSON）から 3 軒ぶんだけ取る。全店データはクライアントに渡さない（店ID＋判定の小さな表 約 11KB。gzip で約 3KB）。
 - **数え直し・テスト**: `node --env-file=.env.local proto-portal/count-omakase.mjs`、`node proto-portal/test-omakase.mjs`。
 
+
+## 付録: 総合トップ「輪」— 回して選ぶ、1 画面の入口（2026-10-06・試作）
+- 仕様 `proto-portal/HUB-BRIEF.md`。公開スイッチ ON の `/` だけ（OFF の `/` はグルメのトップのまま。出力は変わらない）。以前の総合トップ（ヒーロー・考え方・6つの入口・エリア・駅・動画・新着の特集・マチノワについて）は外した（部品のファイルは残してある）。
+- **どこに何があるか**: `app/portal-home/layout.tsx`（`PortalLayout hub`＝共通ヘッダーを出さず、`#mp-footer` の中にフッター）→ `components/portal/pages/home.tsx` → `components/portal/hub/HubStage.tsx`（クライアント。輪のエンジンと画面）・`hub.css`（`.hub-*`）。データは `lib/portal/hub.ts`（掲載店数・公開中の特集の本数・「いま営業中」を数えるための営業予定の表）。
+- **動き**: 輪の位置 `pos`（1 = 1 業種）を、ドラッグ・スワイプ（横）・ホイール（輪の上で、ページが先頭のときだけ）・矢印キー・左右のボタン・印のクリックが動かす。離すと慣性（速さ × 0.19 秒ぶん先）をいちばん近い業種に丸め、バネ（k=94・c=14.8）で止まる。描画は毎フレーム CSS 変数と transform だけを書く（React は再描画しない・止まったらループも止まる）。色は `color-mix` で 2 つの業種の間を `--m` で混ぜる。
+- **業種の扱い**: グルメは掲載中（実数を出す）。ビューティー・ボディケアは「掲載準備中」でページへ入れる。ペット・おでかけ・ステイはリンクにしない（`HubItem.enter`）。「掲載準備中」は業種ごとに 1 回（各業種の表示の中）。一覧（`.hub-index`）の準備中の表示は「準備中」。
+- **「いま営業中」**: 営業時間が確かに読み取れた店だけ（`packWeeks` が `null` にしなかった店）を、現在時刻（日本時間・ブラウザ）で数える。営業中＝営業中＋まもなく閉店。不定休などで営業時間内でも言い切れない店は数に入らない。分母（営業時間が確かな店）は時刻によらず一定。
+- **動きを減らす設定（`prefers-reduced-motion`）・スクリプトなし**: 輪は出さず、6 業種の一覧（CSS が切り替える。エンジンは動かさない）。
+- **検査**: `node proto-portal/check-hub.mjs`、`check-keyboard.mjs`（`/` の Tab の順番を輪の構成に合わせた）、`check-contrast.mjs --motion`。
