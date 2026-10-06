@@ -1,0 +1,262 @@
+/* ════════════════════════════════════════════════════════════
+   「地図で探す」（/map）専用。pages/map.tsx から読み込む（portal.css の後）。
+   デフォルメ日本地図の枠（.mp-fr）・段ごとの一覧・ピンの地図（背景なし）の見た目。
+   色と書体は portal.css の変数（生成りの紙・墨・朱・明朝・細い罫）。
+   動きは 3 つだけ: カメラが寄る（日本 → 地方 → 県）、店数の濃淡の変化、最初のタイルの置かれ方。
+   prefers-reduced-motion: reduce では、すべて止める（状態は即座に切り替わる）。
+   ════════════════════════════════════════════════════════════ */
+.mp-mx-page{--vm:#b5412a; --fa:calc(428 / 468)}
+
+/* ───────── 全体の割り付け ───────── */
+.mp-mx-sec{padding-block:clamp(74px,9vh,92px) clamp(40px,5vw,72px)}
+.mp-mx{display:grid; grid-template-columns:1fr; grid-template-areas:"head" "top" "obar" "frame" "body"; row-gap:14px}
+.mp-mx-head{grid-area:head}
+.mp-mx-top{grid-area:top; min-width:0}
+.mp-mx-obar{grid-area:obar}
+.mp-mx-frame{grid-area:frame; min-width:0}
+.mp-mx-body{grid-area:body; min-width:0}
+
+.mp-mx-head{display:flex; flex-wrap:wrap; align-items:baseline; column-gap:18px}
+.mp-mx-head > .mp-crumbs, .mp-mx-head > .mp-kicker, .mp-mx-lead{flex:0 0 100%}
+.mp-mx-title{flex:1 1 auto; margin-top:14px; font:500 clamp(30px,3.6vw,52px)/1.15 var(--serif); letter-spacing:-.02em}
+.mp-mx-lead{max-width:34em; margin-top:10px; font:400 13.5px/1.9 var(--sans); color:var(--ink-2); text-wrap:pretty}
+.mp-mx-state{order:3; display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-top:14px; margin-left:auto}
+.mp-mx-lead{order:4}
+.mp-mx-count{font:500 14px/1 var(--serif)}
+.mp-mx-count b{margin-right:3px; font:400 clamp(30px,3vw,42px)/1 var(--latin); font-variant-numeric:lining-nums}
+.mp-mx-page .mp-crumbs a{display:inline-flex; align-items:center; min-height:44px; padding-inline:2px}
+.mp-mx-page .mp-crumbs [aria-current]{display:inline-flex; align-items:center; min-height:44px}
+
+@media (min-width:1000px){
+  .mp-mx{grid-template-columns:minmax(340px,430px) minmax(0,1fr); grid-template-areas:"head frame" "top frame" "obar frame" "body frame"; grid-template-rows:auto auto auto 1fr; column-gap:clamp(32px,4.4vw,72px); row-gap:16px; align-items:start}
+  .mp-mx-frame{position:sticky; top:80px; align-self:start; justify-self:center; width:min(100%,max(440px,calc((100svh - 104px) * var(--fa))))}
+}
+@media (max-width:999px){
+  .mp-mx{row-gap:10px}
+  .mp-mx-frame{margin-inline:calc(var(--gut) * -1)}
+  .mp-mx-head{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; column-gap:16px}
+  .mp-mx-head .mp-crumbs{flex:0 0 100%}
+  .mp-mx-head .mp-kicker{display:none}
+  .mp-mx-title{margin-top:0; font-size:30px}
+  .mp-mx-state{margin-top:0}
+  /* 説明文は読み上げ用に残し、画面では隠す（日本地図を最初の画面に入れる） */
+  .mp-mx-lead{position:absolute; width:1px; height:1px; margin:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
+}
+
+/* ───────── 業種チップ ───────── */
+.mp-mx-page .mp-mx-chips{display:flex; flex-wrap:wrap; gap:8px}
+.mp-mx-page .mp-mx-chip{display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 16px; border:1px solid rgba(21,17,14,.3); border-radius:99px; background:transparent; color:var(--ink); font:500 13.5px/1 var(--sans); letter-spacing:.03em; cursor:pointer; transition:background .3s, border-color .3s, color .3s}
+.mp-mx-page .mp-mx-chip i{width:9px; height:9px; border-radius:50%; background:var(--ac)}
+.mp-mx-page .mp-mx-chip small{font:500 11px/1 var(--mono); letter-spacing:.08em; color:var(--ink-3)}
+.mp-mx-page .mp-mx-chip:hover{background:rgba(21,17,14,.06)}
+.mp-mx-page .mp-mx-chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--ivory)}
+.mp-mx-page .mp-mx-chip[aria-pressed="true"] small{color:rgba(244,239,230,.72)}
+.mp-mx-page .mp-mx-chip[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--ivory)}
+.mp-mx-page .mp-mx-chip[data-empty]{border-style:dashed}
+@media (max-width:999px){
+  .mp-mx-page .mp-mx-chips{flex-wrap:nowrap; overflow-x:auto; margin-inline:calc(var(--gut) * -1); padding:2px var(--gut) 4px; scrollbar-width:none}
+  .mp-mx-page .mp-mx-chips::-webkit-scrollbar{display:none}
+  .mp-mx-page .mp-mx-chips > li{flex:none}
+  .mp-mx-page .mp-mx-chip{padding:0 14px; font-size:13px}
+}
+
+/* 営業中の切替（OpenBar）を、この画面では 1 行に詰める。注記は一覧の末尾（.mp-mx-foot）に同じ文を出す */
+.mp-mx-obar .mp-obar{grid-template-columns:1fr; gap:0 18px; padding:4px 14px 8px; background:transparent}
+.mp-mx-obar .mp-obar-note{display:none}
+.mp-mx-obar .mp-obar-switch{min-height:44px}
+.mp-mx-obar .mp-obar-sum{min-height:0; font-size:12px; gap:2px 14px}
+.mp-mx-obar .mp-obar-sum b{font-size:20px}
+@media (max-width:999px){
+  .mp-mx-obar .mp-obar{grid-template-columns:auto minmax(0,1fr); padding:0 14px}
+  .mp-mx-obar .mp-obar-sum .at, .mp-mx-obar .mp-obar-sum small, .mp-mx-obar .mp-obar-sum > span:nth-child(n+3){display:none}
+}
+
+/* ───────── 日本地図の枠 ───────── */
+.mp-fr{position:relative; width:100%; aspect-ratio:var(--fa); container-type:inline-size; background:var(--tint,var(--paper)); transition:background .7s ease; border:1px solid var(--ink); box-shadow:inset 0 0 0 5px var(--paper), inset 0 0 0 6px var(--rule); overflow:hidden; isolation:isolate; user-select:none; -webkit-user-select:none}
+.mp-fr::after{content:""; position:absolute; inset:0; z-index:7; pointer-events:none; box-shadow:inset 0 0 0 5px var(--paper), inset 0 0 0 6px var(--rule)}
+.mp-fr-station{user-select:auto; -webkit-user-select:auto}
+@media (max-width:999px){.mp-fr{border-inline:0; box-shadow:inset 0 0 0 5px var(--paper), inset 0 0 0 6px var(--rule)}}
+.mp-fr-wm{position:absolute; right:2cqw; bottom:-4cqw; z-index:1; margin:0; font-family:var(--serif); font-weight:600; line-height:1; letter-spacing:-.02em; white-space:nowrap; color:var(--ink); opacity:.05; pointer-events:none; user-select:none}
+@media (prefers-reduced-motion:no-preference){.mp-fr-wm{animation:mpWm 1s var(--ease) .35s backwards}}
+@keyframes mpWm{from{opacity:0; transform:translateY(14px)}to{opacity:.05; transform:none}}
+.mp-fr-svg{position:absolute; inset:0; width:100%; height:100%; display:block; overflow:hidden}
+.mp-fr-grid line{stroke:var(--ink); stroke-opacity:.07; stroke-width:1px; vector-effect:non-scaling-stroke; transition:opacity .6s}
+.mp-fr[data-stage="region"] .mp-fr-grid{opacity:.35}
+.mp-fr[data-stage="pref"] .mp-fr-grid{opacity:0}
+
+.mp-cam{transform-origin:0 0; transition:transform .95s var(--ease-io)}
+.mp-reg{transition:opacity .7s ease, transform .5s var(--ease), filter .5s ease}
+.mp-reg[data-dim]{opacity:.1}
+.mp-reg[data-hl]{transform:translateY(-3px); filter:drop-shadow(0 7px 5px rgba(21,17,14,.22))}
+.mp-tile{stroke:none; transition:fill .6s ease, opacity .5s ease; transform-box:fill-box; transform-origin:50% 0}
+.mp-tile[data-off]{fill:url(#mp-hatch); stroke:var(--ink); stroke-opacity:.3; stroke-width:1px; stroke-dasharray:3 3; vector-effect:non-scaling-stroke}
+.mp-reg-line{fill:none; stroke:var(--ink); stroke-width:1.7px; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; transition:opacity .5s ease}
+.mp-fr[data-stage="pref"] .mp-tile:not([data-sel]), .mp-fr[data-stage="pref"] .mp-reg-line{opacity:0}
+.mp-fr[data-stage="pref"] .mp-tile[data-sel]{opacity:0; transition:opacity .7s ease .85s, fill .6s ease}
+
+/* 地図に直接書く文字 */
+.mp-lab-j, .mp-lab-r{opacity:0; pointer-events:none; transition:opacity .2s ease}
+.mp-lab-j[data-show], .mp-lab-r[data-show]{opacity:1; transition:opacity .5s ease .55s}
+.mp-lab-t, .mp-lab-c{fill:var(--ink); paint-order:stroke; stroke:var(--paper); stroke-width:3px; stroke-linejoin:round}
+.mp-lab-t{font:600 15.5px/1 var(--serif); letter-spacing:.04em}
+.mp-lab-c{font:500 12px/1 var(--mono); letter-spacing:.04em}
+.mp-pt{font:600 20px/1 var(--serif); fill:var(--tc); letter-spacing:.04em}
+.mp-pn{font:500 14px/1 var(--mono); fill:var(--tc); letter-spacing:.04em}
+.mp-ph{font:600 11.5px/1 var(--serif); fill:var(--tc); pointer-events:none; animation:mpFade .25s ease both}
+@keyframes mpFade{from{opacity:0}to{opacity:1}}
+
+/* 押せる範囲と、ホバー・フォーカスの輪 */
+.mp-hit{cursor:pointer; outline:none}
+.mp-hit-r{fill:transparent}
+.mp-fr-ring{fill:none; stroke:var(--ink); stroke-width:3px; stroke-linejoin:round; vector-effect:non-scaling-stroke; opacity:0; pointer-events:none; transition:opacity .2s ease}
+.mp-fr-ring-bg{stroke:var(--paper); stroke-width:7px}
+.mp-hit:focus-visible .mp-fr-ring{opacity:1}
+@media (hover:hover){.mp-hit:hover .mp-fr-ring{opacity:1}}
+.mp-hit-pref:focus-visible .mp-fr-ring-bg, .mp-hit-region:focus-visible .mp-fr-ring-bg{opacity:.85}
+@media (hover:hover){.mp-hit-pref:hover .mp-fr-ring-bg, .mp-hit-region:hover .mp-fr-ring-bg{opacity:.85}}
+
+/* 海の名前（地図らしさを出すだけの飾り。日本の段だけ） */
+.mp-sea{opacity:0; pointer-events:none; transition:opacity .25s ease}
+.mp-sea[data-show]{opacity:1; transition:opacity .5s ease .6s}
+.mp-sea-t{font:500 13px/1 var(--serif); letter-spacing:.7em; fill:var(--ink-3); opacity:.85}
+
+/* 枠の上の部品 */
+.mp-fr-ui{position:absolute; inset:0; z-index:6; pointer-events:none; font-family:var(--sans)}
+.mp-fr-plate{position:absolute; left:20px; top:16px; max-width:calc(100% - 150px); animation:mpPlate .7s var(--ease) both}
+.mp-fr-k{margin:0; font:500 10.5px/1.4 var(--mono); letter-spacing:.22em; color:var(--ink-3)}
+.mp-fr-t{margin:2px 0 0; font:500 clamp(24px,2.3vw,34px)/1.2 var(--serif); letter-spacing:.02em; color:var(--ink); text-shadow:0 0 6px var(--paper), 0 0 6px var(--paper)}
+.mp-fr[data-stage="pref"] .mp-fr-k{color:var(--ink-2)}
+.mp-fr-s{margin:3px 0 0; font:400 12px/1.5 var(--sans); color:var(--ink-2); text-shadow:0 0 6px var(--paper), 0 0 6px var(--paper)}
+@keyframes mpPlate{from{opacity:0; transform:translateY(10px)}to{opacity:1; transform:none}}
+.mp-fr-back{position:absolute; right:14px; top:14px; display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 18px 0 14px; border-radius:99px; background:var(--ink); color:var(--ivory); font:500 13px/1 var(--sans); letter-spacing:.04em; pointer-events:auto; transition:background .3s}
+.mp-fr-back:hover{background:var(--vm)}
+.mp-fr-back:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.mp-fr-legend{position:absolute; left:14px; top:88px; display:flex; align-items:center; gap:7px; margin:0; padding:6px 10px; background:rgba(250,247,241,.92); border:1px solid var(--rule); font:500 11px/1 var(--sans); color:var(--ink-2)}
+.mp-fr-lg-bar{width:64px; height:9px; border:1px solid var(--rule)}
+.mp-fr-lg-e{display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
+.mp-fr-lg-off{width:14px; height:9px; margin-left:4px; border:1px dashed rgba(21,17,14,.45); background:repeating-linear-gradient(135deg, rgba(21,17,14,.2) 0 1px, transparent 1px 4px)}
+.mp-fr-note{position:absolute; right:14px; left:auto; bottom:12px; margin:0; font:400 11.5px/1.6 var(--sans); color:var(--ink-3); text-align:right; white-space:nowrap}
+.mp-fr-station .mp-fr-note{position:absolute; left:14px; right:auto; bottom:14px; padding:4px 8px; background:rgba(250,247,241,.9); text-align:left; max-width:22em}
+@media (max-width:999px){
+  .mp-fr-plate{left:16px; top:12px}
+  .mp-fr-legend{left:10px; top:82px}
+  .mp-fr-note{right:10px; bottom:10px; font-size:11px}
+}
+
+/* ───────── 地方・県のリスト（地図を使わない人向け。地図と同じ内容） ───────── */
+.mp-st{margin-top:clamp(8px,1.6vw,18px); padding-top:14px; border-top:1px solid var(--ink)}
+.mp-st-k{font:500 10.5px/1.4 var(--mono); letter-spacing:.2em; color:var(--ink-3)}
+.mp-st-h{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-top:8px; font:500 clamp(24px,2.4vw,34px)/1.25 var(--serif); letter-spacing:-.01em}
+.mp-st-h:focus{outline:none}
+.mp-st-n{flex:none; font:500 14px/1 var(--serif)}
+.mp-st-n b{margin-right:3px; font:400 clamp(30px,3vw,42px)/1 var(--latin); font-variant-numeric:lining-nums}
+
+.mp-rl{display:flex; flex-direction:column; margin:14px 0 0; padding:0}
+.mp-rl-reg{padding:6px 0 16px; border-bottom:1px solid var(--rule); transition:background .3s}
+.mp-rl-h{font:500 19px/1.3 var(--serif)}
+.mp-rl-h a, .mp-rl-h span{display:flex; align-items:baseline; justify-content:space-between; gap:8px; min-height:48px; padding:12px 0 6px}
+.mp-rl-h span[data-off]{color:var(--ink-3)}
+.mp-rl-h a:hover .mp-rl-nm{border-bottom-color:var(--ink)}
+.mp-rl-nm{border-bottom:1px solid transparent; transition:border-color .3s}
+.mp-rl-n{font:500 12px/1 var(--serif); color:var(--ink-3); white-space:nowrap}
+.mp-rl-n b{margin-right:2px; font:400 24px/1 var(--latin); font-variant-numeric:lining-nums; color:var(--ink)}
+.mp-rl-bar, .mp-pr-bar{display:block; height:3px; margin:0 0 10px; background:linear-gradient(90deg, var(--vm) var(--w), var(--rule) var(--w))}
+.mp-rl-reg[data-hl] .mp-rl-bar{height:5px; margin-bottom:8px}
+.mp-rl-prefs{display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0}
+.mp-pl{display:inline-flex; align-items:center; justify-content:space-between; gap:8px; min-height:44px; padding:0 12px; border:1px solid var(--rule); background:var(--paper); font:500 14px/1.2 var(--sans); color:var(--ink); transition:border-color .3s, background .3s}
+.mp-pl .mp-pl-n{font:500 11.5px/1 var(--mono); letter-spacing:.04em; color:var(--ink-3); white-space:nowrap}
+a.mp-pl:hover{border-color:var(--ink); background:#fff}
+.mp-pl[data-off]{border-style:dashed; background:transparent; color:var(--ink-3)}
+
+.mp-pr{display:flex; flex-direction:column; margin:14px 0 0; padding:0; border-top:1px solid var(--ink)}
+.mp-pr-a{display:grid; grid-template-columns:minmax(5.5em,auto) minmax(0,1fr) auto; align-items:center; gap:14px; min-height:56px; padding:6px 4px; border-bottom:1px solid var(--rule); font:500 17px/1.3 var(--serif); transition:background .3s}
+a.mp-pr-a:hover{background:rgba(21,17,14,.05)}
+.mp-pr-a[data-off]{color:var(--ink-3)}
+.mp-pr-a[data-off] .mp-pr-bar{background:repeating-linear-gradient(90deg, var(--rule) 0 3px, transparent 3px 7px)}
+.mp-pr-bar{margin:0}
+.mp-pr-n{font:500 12px/1 var(--serif); color:var(--ink-3); white-space:nowrap}
+.mp-pr-n b{margin-right:2px; font:400 24px/1 var(--latin); font-variant-numeric:lining-nums; color:var(--ink)}
+.mp-pr-a[data-off] .mp-pr-n b{color:var(--ink-3)}
+
+.mp-sn ol{display:flex; flex-wrap:wrap; align-items:center; gap:2px; margin:0; padding:0; font:500 14px/1.4 var(--sans)}
+.mp-sn li + li::before{content:"\203A"; margin-right:2px; color:var(--ink-3)}
+.mp-sn a{display:inline-flex; align-items:center; min-height:44px; padding:0 10px; color:var(--ink-2); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:5px}
+.mp-sn a:hover{text-decoration-color:var(--ink)}
+.mp-sn [aria-current]{display:inline-flex; align-items:center; min-height:44px; padding:0 10px; font-weight:600}
+
+/* 「まもなく閉店」の文字色を、淡い茶の下地でも 4.5:1 になるよう少し濃くする（この画面だけ） */
+.mp-mx-page .mp .mp-ob[data-s="soon"] b, .mp-mx-page .mp-ob[data-s="soon"] b{color:#7f4a0b}
+
+/* ───────── 店の一覧・注記 ───────── */
+.mp-mx-empty{position:absolute; left:16px; right:16px; bottom:16px; z-index:500; padding:12px 16px; background:rgba(250,247,241,.96); border:1px solid var(--rule); font:500 13.5px/1.7 var(--sans)}
+.mp-mx-empty.static{position:static; margin-top:14px; background:var(--paper)}
+.mp-mx-meta{display:flex; flex-wrap:wrap; gap:4px 18px; margin-top:16px; font:400 12px/1.9 var(--sans); color:var(--ink-3)}
+.mp-mx-meta b{margin-inline:2px; font:400 20px/1 var(--latin); font-variant-numeric:lining-nums; color:var(--ink)}
+.mp-mx-meta a{display:inline-flex; align-items:center; min-height:44px; border-bottom:1px solid var(--rule); color:var(--ink-2)}
+.mp-mx-foot{margin-top:22px; padding-top:14px; border-top:1px solid var(--rule); font:400 12px/1.9 var(--sans); color:var(--ink-3)}
+.mp-mx-foot b{margin-left:.6em; font-weight:500; color:var(--ink-2)}
+.mp-mx-list{margin-top:14px}
+.mp-mx-rows{display:flex; flex-direction:column; margin:0; padding:0; border-top:1px solid var(--ink)}
+.mp-mx-row{display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"n b" "m b"; align-items:center; column-gap:12px; row-gap:2px; min-height:64px; padding:10px 10px 10px 12px; border-bottom:1px solid var(--rule); border-left:3px solid var(--ac,var(--ink)); transition:background .3s}
+.mp-mx-row:hover{background:rgba(21,17,14,.035)}
+.mp-mx-row b{grid-area:n; font:500 16px/1.5 var(--serif); overflow-wrap:anywhere}
+.mp-mx-row .meta{grid-area:m; font:400 12.5px/1.6 var(--sans); color:var(--ink-2)}
+.mp-mx-row .mp-ob{grid-area:b}
+@media (max-width:560px){
+  .mp-mx-row{grid-template-columns:minmax(0,1fr); grid-template-areas:"n" "m" "b"; row-gap:4px; padding-block:12px}
+  .mp-mx-row .mp-ob{justify-self:start}
+}
+
+/* ───────── 県の段のピンの地図（地図タイルなし） ───────── */
+.mp-fr .mp-fit{display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:3px; min-height:44px; margin:0 0 8px 14px; padding:6px 16px; border:1px solid var(--ink); background:var(--paper); color:var(--ink); font:500 13px/1.2 var(--sans); letter-spacing:.04em; cursor:pointer; transition:background .3s, color .3s}
+.mp-fr .mp-fit small{font:400 11px/1.3 var(--sans); color:var(--ink-2)}
+.mp-fr .mp-fit:hover{background:var(--ink); color:var(--ivory)}
+.mp-fr .mp-fit:hover small{color:rgba(244,239,230,.8)}
+.mp-fr .mp-fit:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.mp-map-plain[data-z="s"] .mp-pin{width:12px; height:12px; border-width:2px}
+.mp-map-plain[data-z="m"] .mp-pin{width:16px; height:16px; border-width:2.5px}
+.mp-map-plain .mp-pin-wrap{display:grid; place-items:center}
+.mp-map-plain .mp-pin{margin:0}
+.mp-map.mp-map-fill{position:absolute; inset:0; width:auto; height:auto; border:0}
+.mp-fr .mp-map-plain{background:transparent; z-index:2; opacity:0; transition:opacity .55s ease .3s}
+.mp-fr .mp-map-plain[data-ready="1"]{opacity:1}
+.mp-fr .mp-map-plain .mp-map-wait{display:none}
+.mp-fr .mp-map-plain .leaflet-container{background:transparent}
+.mp-fr .leaflet-bar{border:1px solid var(--ink); box-shadow:none; border-radius:0}
+.mp-fr .leaflet-bar a{display:grid; place-items:center; width:44px; height:44px; line-height:1; font:400 22px/1 var(--sans); background:var(--paper); color:var(--ink); border-bottom:1px solid var(--rule)}
+.mp-fr .leaflet-bar a:hover{background:var(--ink); color:var(--ivory)}
+.mp-fr .leaflet-bar a.leaflet-disabled{background:var(--paper); color:var(--ink-3); opacity:.6}
+.mp-fr .leaflet-bar a:focus-visible{outline:2px solid var(--ink); outline-offset:-4px}
+.mp-fr .leaflet-bottom.leaflet-right .leaflet-control{margin-bottom:12px; margin-right:12px}
+.mp-fr .leaflet-bottom.leaflet-left .leaflet-control{margin-bottom:14px; margin-left:16px}
+.mp-fr .leaflet-control-scale-line{padding:2px 6px; background:rgba(250,247,241,.9); border:1px solid var(--ink); border-top:0; color:var(--ink-2); font:500 10.5px/1.4 var(--mono)}
+.mp-fr .leaflet-control-attribution{background:rgba(250,247,241,.85)}
+
+.mp-stl-wrap{background:none; border:0; pointer-events:none}
+.mp-stl{display:inline-flex; align-items:center; gap:5px; transform:translate(-4px,-50%); white-space:nowrap; font:600 12.5px/1 var(--serif); letter-spacing:.04em; color:var(--ink-2); text-shadow:0 0 3px var(--paper), 0 0 3px var(--paper), 0 0 5px var(--paper)}
+.mp-stl[data-s="l"]{transform:translate(calc(-100% + 4px),-50%); flex-direction:row-reverse}
+.mp-stl[data-s="t"]{transform:translate(-50%,calc(-100% + 4px)); flex-direction:column-reverse; gap:3px}
+.mp-stl[data-s="b"]{transform:translate(-50%,-4px); flex-direction:column; gap:3px}
+.mp-stl i{display:block; flex:none; width:8px; height:8px; border:1.5px solid var(--ink-2); border-radius:50%; background:var(--paper)}
+.mp-dring-wrap{background:none; border:0; pointer-events:none}
+.mp-dring-l{display:block; transform:translate(-50%,-135%); white-space:nowrap; font:500 10.5px/1 var(--mono); letter-spacing:.08em; color:var(--ink-2); text-shadow:0 0 3px var(--paper), 0 0 3px var(--paper)}
+.mp-hl-wrap{background:none; border:0; pointer-events:none}
+.mp-hl{display:block; width:44px; height:44px; border:2px solid var(--ink); border-radius:50%; box-shadow:0 0 0 4px rgba(250,247,241,.9)}
+
+@media (prefers-reduced-motion:no-preference){
+  .mp-tile{animation:mpTile .7s var(--ease) backwards; animation-delay:calc(var(--d, 0) * 34ms)}
+  @keyframes mpTile{from{opacity:0; transform:translateY(-12px) scale(.92)}to{opacity:1; transform:none}}
+  .mp-pin-in{animation:mpPinIn .5s var(--ease) backwards; animation-delay:calc(var(--i, 0) * 16ms + .6s)}
+  @keyframes mpPinIn{from{opacity:0; transform:scale(.2)}to{opacity:1; transform:scale(1)}}
+  .mp-hl{animation:mpHl 1.4s ease-out infinite}
+  @keyframes mpHl{0%{transform:scale(.5); opacity:1}100%{transform:scale(1.15); opacity:0}}
+}
+@media (prefers-reduced-motion:reduce){
+  .mp-cam, .mp-reg, .mp-tile, .mp-reg-line, .mp-lab-j, .mp-lab-r, .mp-fr-ring, .mp-fr-grid{transition:none}
+  .mp-fr .mp-map-plain{transition:none}
+  .mp-ph{animation:none}
+  .mp-fr-plate{animation:none}
+}
+@media (hover:none){
+  .mp-reg[data-hl]{transform:none; filter:none}
+}

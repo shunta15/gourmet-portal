@@ -15,6 +15,7 @@ import { prefOfGourmetRegion } from "@/lib/areas/gourmet";
 import { STATIONS, STORE_STATIONS } from "@/lib/stations";
 import { placeCategoryName, placeHref } from "@/lib/stations/query";
 import { packWeeks, type Week } from "./openNow";
+import type { StationLabel } from "./mapRegions";
 
 export interface MapPoint {
   id: string;
@@ -46,6 +47,8 @@ export interface MapDataset {
   missing: number;
   /** 業種ごとの、地図に出せる店の数 */
   byVertical: Record<VerticalKey, number>;
+  /** 県 slug → その県の店が最寄り駅として書いている駅（名前・位置・書いている店の数）。県の地図の注記に使う */
+  stationsByPref: Record<string, StationLabel[]>;
 }
 
 /** 駅名の表記（「駅」で終わっていなければ付ける） */
@@ -64,6 +67,7 @@ async function build(): Promise<MapDataset> {
   const hours: { id: string; hours?: string; closed?: string }[] = [];
   const byVertical = Object.fromEntries(Object.keys(VERTICALS).map((k) => [k, 0])) as Record<VerticalKey, number>;
   const seen = new Set<string>();
+  const stationAcc = new Map<string, { name: string; lat: number; lng: number; n: Record<string, number> }>();
   let total = 0;
   let missing = 0;
 
@@ -79,6 +83,15 @@ async function build(): Promise<MapDataset> {
       }
       const stated = STORE_STATIONS[p.id]?.stated?.[0];
       const st = stated ? STATIONS[stated.clusterId] : undefined;
+      const pref = (v.key === "gourmet" ? prefOfGourmetRegion(p.pref) : p.pref) ?? "";
+      if (st && stated) {
+        let acc = stationAcc.get(stated.clusterId);
+        if (!acc) {
+          acc = { name: stationLabel(st.name), lat: st.lat, lng: st.lng, n: {} };
+          stationAcc.set(stated.clusterId, acc);
+        }
+        acc.n[pref] = (acc.n[pref] ?? 0) + 1;
+      }
       points.push({
         id: p.id,
         name: p.name,
@@ -88,13 +101,20 @@ async function build(): Promise<MapDataset> {
         category: placeCategoryName(v, p),
         ...(st ? { stationName: stationLabel(st.name) } : {}),
         href: placeHref(v, p),
-        pref: (v.key === "gourmet" ? prefOfGourmetRegion(p.pref) : p.pref) ?? "",
+        pref,
       });
       hours.push({ id: p.id, hours: p.hours, closed: p.holidays });
       byVertical[v.key]++;
     }
   }
-  return { points, weeks: packWeeks(hours), total, missing, byVertical };
+  const stationsByPref: Record<string, StationLabel[]> = {};
+  stationAcc.forEach((acc) => {
+    for (const [pref, n] of Object.entries(acc.n)) {
+      if (!pref) continue;
+      (stationsByPref[pref] ??= []).push({ name: acc.name, lat: acc.lat, lng: acc.lng, n });
+    }
+  });
+  return { points, weeks: packWeeks(hours), total, missing, byVertical, stationsByPref };
 }
 
 // ビルド中は大量のページが同じ集計を使うので、短い時間だけ使い回す（ISR の再生成では取り直す）

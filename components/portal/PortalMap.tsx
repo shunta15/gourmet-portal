@@ -17,13 +17,20 @@
  *  ズームが低い（既定 13 以下）あいだは、画面上で近い店を 1 つの丸（件数つき）にまとめる（素の Leaflet でできる範囲の格子まとめ）。
  *  丸を押すとその店が収まるまでズームする。ズームが十分高いと 1 店ずつのピン。ピンは DOM ではなく divIcon（数百〜千程度まで）。
  *
+ * ── 背景が「plain」のとき（/map の県の段） ──
+ *  地図タイルを使わない。紙色の地に、経緯線（点線）・駅名の注記・店の点だけを描く（実際の地図らしさを出さない）。
+ *  点線の経緯線と駅名は draw() の中で、ピンと同じ範囲（表示範囲の周り）だけ描き直す。
+ *  駅名は、ズームごとの画面上の位置（地図の投影座標）で重なりを避けて選ぶ（店の数が多い駅を優先）。パンしても組み合わせは変わらない。
+ *  highlightId の店には、リストと対応づけるための輪（ハロー）を重ねる（クラスタ化されていても位置に出る）。
+ *
  * ── 営業中の判定 ──
  *  ポップアップは開くたびに現在時刻（日本時間）で判定し直す（bindPopup に関数を渡す）。
  *  「今開いている店だけ」（?open=1）のときは、営業中・まもなく閉店の店のピンだけ出す。
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { LatLngBounds, LatLngBoundsExpression, LatLngTuple, Map as LeafletMapType, LayerGroup } from "leaflet";
+import type { LatLngBounds, LatLngBoundsExpression, LatLngTuple, Map as LeafletMapType, LayerGroup, Marker } from "leaflet";
 import { isOpenState } from "@/lib/portal/openNow";
+import type { StationLabel } from "@/lib/portal/mapRegions";
 import { statusOf, useNowMs, useOpenOnly, type WeekTableProp } from "./OpenNow";
 
 export interface PinPoint {
@@ -64,7 +71,19 @@ interface Props {
    * 背景の地図。省略（"pale"）は国土地理院の淡色地図。"blank" は国土地理院の白地図（道路・地形なし。タイルはズーム5〜14。
    * それより拡大したときはタイルを引き伸ばす）。/map だけが "blank" を指定する
    */
-  basemap?: "pale" | "blank";
+  basemap?: "pale" | "blank" | "plain";
+  /** true なら、親の大きさいっぱいに広げる（height は使わない）。親は position が static 以外で大きさを持つこと */
+  fill?: boolean;
+  /** plain: 駅名の注記 */
+  stations?: StationLabel[];
+  /** plain: この ID の店に輪を重ねる（リストとの対応） */
+  highlightId?: string | null;
+  /** plain: 点の範囲の周りだけ動けるようにする */
+  limit?: boolean;
+  /** plain: 最初に点を北から順に現す */
+  intro?: boolean;
+  /** plain: 駅の位置のまわりに、この距離（メートル）の輪を描く（徒歩の目安） */
+  rings?: { m: number; label: string }[];
 }
 
 /** 日本全体（南西端は八重山、北東端は北海道東部）。画面の大きさに合わせて収める */
@@ -84,6 +103,19 @@ const BLANK_MAX_ZOOM = 16;
 const TILE_ATTRIBUTION =
   '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener noreferrer">地理院タイル</a>';
 const INK = "#15110e";
+/** plain の背景（タイルなし）で使える拡大の範囲 */
+const PLAIN_MIN_ZOOM = 5;
+const PLAIN_MAX_ZOOM = 17;
+/** 経緯線の間隔の候補（度） */
+const GRAT_STEPS = [0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2];
+const GRAT_PX = 150;
+const MAX_LABELS = 28;
+/** plain では、これより低いズームで近い店をまとめる（点の分布を見せたいので、既定より低くまとめない） */
+const PLAIN_CLUSTER_MAX_ZOOM = 10;
+const PLAIN_CELL_PX = 44;
+/** plain の初期表示: 店が多い県は、中心に近い店の 90% が収まる範囲に合わせる（離れた数店で全体が小さくならないように） */
+const CORE_MIN_POINTS = 12;
+const CORE_KEEP = 0.9;
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -101,10 +133,34 @@ const BADGE_LABEL: Record<string, string> = {
   unknown: "営業時間不明",
 };
 
-export default function PortalMap({ points, colors, weeks, station, view, fit, lazy, height, label, className, basemap }: Props) {
+export default function PortalMap({
+  points,
+  colors,
+  weeks,
+  station,
+  view,
+  fit,
+  lazy,
+  height,
+  label,
+  className,
+  basemap,
+  fill,
+  stations,
+  highlightId,
+  limit,
+  intro,
+  rings,
+}: Props) {
   const elRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMapType | null>(null);
   const layerRef = useRef<LayerGroup | null>(null);
+  /** plain: 経緯線・駅名・輪の層と、リストとの対応の輪 */
+  const gratRef = useRef<LayerGroup | null>(null);
+  const labelRef = useRef<LayerGroup | null>(null);
+  const haloRef = useRef<Marker | null>(null);
+  /** plain: 最初の描き直しだけ点を順に現す */
+  const introRef = useRef(false);
   /** 前回ピンを描いた範囲（表示範囲＋1画面分の余白）。この外へ出たら描き直す */
   const renderedRef = useRef<LatLngBounds | null>(null);
   const leafletRef = useRef<typeof import("leaflet") | null>(null);
@@ -124,13 +180,13 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
   const signature = useMemo(() => visible.map((p) => p.id).join(","), [visible]);
 
   // 描き直しが読む最新の値。effect の deps を増やさないために ref 経由で渡す（この effect は毎回の描画後・描き直しより前に走る）
-  const live = useRef({ visible, colors, weeks });
+  const live = useRef({ visible, colors, weeks, stations });
   useEffect(() => {
-    live.current = { visible, colors, weeks };
+    live.current = { visible, colors, weeks, stations };
   });
-  const initial = useRef({ view, fit, station, points, basemap });
+  const initial = useRef({ view, fit, station, points, basemap, limit, intro, rings });
   useEffect(() => {
-    initial.current = { view, fit, station, points, basemap };
+    initial.current = { view, fit, station, points, basemap, limit, intro, rings };
   });
 
   /* ── map を作る（1 回だけ。deps は空） ── */
@@ -146,17 +202,22 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
         const L = (await import("leaflet")) as typeof import("leaflet");
         // leaflet.css は app/globals.css で読み込み済み
         if (cancelled || !elRef.current) return;
-        const { view: v, fit: f, station: st, points: pts, basemap: bm } = initial.current;
+        const { view: v, fit: f, station: st, points: pts, basemap: bm, limit: lim, intro: itr, rings: rg } = initial.current;
         const blank = bm === "blank";
+        const plain = bm === "plain";
         const map = L.map(elRef.current, {
-          zoomControl: true,
-          minZoom: blank ? BLANK_MIN_ZOOM : 4,
-          maxZoom: blank ? BLANK_MAX_ZOOM : 18,
+          zoomControl: !plain,
+          minZoom: plain ? PLAIN_MIN_ZOOM : blank ? BLANK_MIN_ZOOM : 4,
+          maxZoom: plain ? PLAIN_MAX_ZOOM : blank ? BLANK_MAX_ZOOM : 18,
           scrollWheelZoom: !f, // 小さな地図は、ページのスクロールを妨げないようホイールでは拡大しない
           dragging: !(f && L.Browser.mobile), // 小さな地図は、スマホでは 1 本指のドラッグでページをスクロールさせる
           worldCopyJump: false,
         });
-        if (blank) {
+        if (plain) {
+          // 地図タイルは使わない（紙色の地に、点・駅名・経緯線だけを描く）
+          L.control.scale({ position: "bottomleft", imperial: false, maxWidth: 96 }).addTo(map);
+          L.control.zoom({ position: "bottomright", zoomInTitle: "拡大", zoomOutTitle: "縮小" }).addTo(map);
+        } else if (blank) {
           L.tileLayer(BLANK_TILE_URL, {
             attribution: TILE_ATTRIBUTION,
             minZoom: BLANK_MIN_ZOOM,
@@ -174,7 +235,38 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
           else if (all.length > 1) map.fitBounds(all as LatLngBoundsExpression, { padding: [28, 28], maxZoom: 17 });
           else map.fitBounds(JAPAN_BOUNDS, { padding: [8, 8] });
         } else if (v?.bounds) {
-          map.fitBounds(v.bounds as LatLngBoundsExpression, { padding: [32, 32], maxZoom: 15 });
+          if (plain) {
+            const full = v.bounds as Bounds2;
+            const fo = { paddingTopLeft: [56, 96] as [number, number], paddingBottomRight: [56, 72] as [number, number], maxZoom: 13 };
+            const core = coreBounds(pts);
+            map.fitBounds((core ?? full) as LatLngBoundsExpression, fo);
+            const coreZoom = map.getZoom();
+            const fullZoom = map.getBoundsZoom(L.latLngBounds(full), false, L.point(112, 168));
+            if (lim) {
+              // 点の範囲の周りだけ動ける（何もない紙の上で迷わないように）
+              map.setMaxBounds(L.latLngBounds(full).pad(1.2));
+              map.setMinZoom(Math.max(PLAIN_MIN_ZOOM, Math.min(coreZoom, fullZoom) - 1));
+            }
+            // 「全体を見る」: 表示の外にある店の数も出す
+            const ctl = new L.Control({ position: "bottomleft" });
+            ctl.onAdd = () => {
+              const btn = L.DomUtil.create("button", "mp-fit") as HTMLButtonElement;
+              btn.type = "button";
+              L.DomEvent.disableClickPropagation(btn);
+              L.DomEvent.on(btn, "click", () => map.fitBounds(L.latLngBounds(full), fo));
+              const update = () => {
+                const b = map.getBounds();
+                const out = live.current.visible.filter((p) => !b.contains([p.lat, p.lng])).length;
+                btn.innerHTML = `全体を見る${out > 0 ? `<small>表示の外に ${out}店</small>` : ""}`;
+              };
+              map.on("moveend zoomend", update);
+              queueMicrotask(update);
+              return btn;
+            };
+            ctl.addTo(map);
+          } else {
+            map.fitBounds(v.bounds as LatLngBoundsExpression, { padding: [32, 32], maxZoom: 15 });
+          }
         } else if (v?.center) {
           map.setView(v.center, v.zoom ?? 15);
         } else {
@@ -201,6 +293,23 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
             .addTo(map);
         }
 
+        if (plain) {
+          gratRef.current = L.layerGroup().addTo(map);
+          labelRef.current = L.layerGroup().addTo(map);
+          introRef.current = !!itr;
+          if (st && rg) {
+            // 駅からの距離の輪（徒歩の目安。80m ＝ 徒歩 1 分の換算）。タップを受けない
+            for (const ring of rg) {
+              L.circle([st.lat, st.lng], { radius: ring.m, weight: 1, color: INK, opacity: 0.42, fill: false, dashArray: "2 5", interactive: false }).addTo(map);
+              const north = L.latLng(st.lat, st.lng).toBounds(ring.m * 2).getNorth();
+              L.marker([north, st.lng], {
+                interactive: false,
+                keyboard: false,
+                icon: L.divIcon({ className: "mp-dring-wrap", html: `<span class="mp-dring-l">${esc(ring.label)}</span>`, iconSize: [0, 0] }),
+              }).addTo(map);
+            }
+          }
+        }
         layerRef.current = L.layerGroup().addTo(map);
         leafletRef.current = L;
         mapRef.current = map;
@@ -246,6 +355,9 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
         mapRef.current = null;
       }
       layerRef.current = null;
+      gratRef.current = null;
+      labelRef.current = null;
+      haloRef.current = null;
       leafletRef.current = null;
       renderedRef.current = null;
       setReady(false);
@@ -260,12 +372,26 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
     const map = mapRef.current;
     const layer = layerRef.current;
     if (!L || !map || !layer) return;
-    const { visible: all, colors: cols, weeks: wk } = live.current;
+    const { visible: all, colors: cols, weeks: wk, stations: stl } = live.current;
     layer.clearLayers();
     const z = map.getZoom();
     // 表示範囲の周り（1画面分の余白）に入る店だけを描く
     const area = map.getBounds().pad(1);
     renderedRef.current = area;
+    const plain = initial.current.basemap === "plain";
+    if (plain) {
+      drawGraticule(L, map, area, gratRef.current);
+    }
+    // 点・まとめの丸の画面上の場所（ズームごとの投影座標）。駅名を置くとき、これに重ならない場所を選ぶ
+    const obstacles: Box[] = [];
+    const addObstacle = (lat: number, lng: number, half: number) => {
+      const q = map.project([lat, lng], z);
+      obstacles.push({ x0: q.x - half, y0: q.y - half, x1: q.x + half, y1: q.y + half });
+    };
+    // 最初の 1 回だけ、点を北から順に現す（拡大・移動のたびには動かさない）
+    const intro = introRef.current;
+    introRef.current = false;
+    const order = intro ? new Map([...all].sort((a, b) => b.lat - a.lat).map((p, i) => [p.id, i])) : null;
     const pts = all.filter((p) => area.contains([p.lat, p.lng]));
     const colorOf = (v: string) => cols[v] ?? INK;
 
@@ -273,10 +399,12 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
       const m = L.marker([p.lat, p.lng], {
         icon: L.divIcon({
           className: "mp-pin-wrap",
-          html: `<span class="mp-pin" style="--pc:${esc(colorOf(p.vertical))}"></span>`,
-          iconSize: [24, 24],
-          iconAnchor: [12, 12],
-          popupAnchor: [0, -12],
+          html: `<span class="mp-pin${order ? " mp-pin-in" : ""}" style="--pc:${esc(colorOf(p.vertical))}${
+            order ? `;--i:${Math.min(order.get(p.id) ?? 0, 70)}` : ""
+          }"></span>`,
+          iconSize: plain ? [32, 32] : [24, 24],
+          iconAnchor: plain ? [16, 16] : [12, 12],
+          popupAnchor: plain ? [0, -14] : [0, -12],
         }),
         title: p.name,
         riseOnHover: true,
@@ -306,17 +434,22 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
         { className: "mp-pop-wrap", maxWidth: 260 },
       );
       layer.addLayer(m);
+      if (plain) addObstacle(p.lat, p.lng, 8);
     };
 
-    if (z > CLUSTER_MAX_ZOOM) {
+    const clusterMax = plain ? PLAIN_CLUSTER_MAX_ZOOM : CLUSTER_MAX_ZOOM;
+    const cellPx = plain ? PLAIN_CELL_PX : CELL_PX;
+    if (plain && elRef.current) elRef.current.dataset.z = z <= 11 ? "s" : z <= 13 ? "m" : "l";
+    if (z > clusterMax) {
       pts.forEach(pin);
+      if (plain) drawStationLabels(L, map, area, labelRef.current, stl ?? [], obstacles);
       return;
     }
     // 近い店をまとめる（ズームごとの画面上の格子。パンしても同じ組み合わせ）
     const cells = new Map<string, PinPoint[]>();
     for (const p of pts) {
       const xy = map.project([p.lat, p.lng], z);
-      const key = `${Math.floor(xy.x / CELL_PX)}:${Math.floor(xy.y / CELL_PX)}`;
+      const key = `${Math.floor(xy.x / cellPx)}:${Math.floor(xy.y / cellPx)}`;
       const list = cells.get(key);
       if (list) list.push(p);
       else cells.set(key, [p]);
@@ -345,7 +478,9 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
         map.fitBounds(L.latLngBounds(members.map((p) => [p.lat, p.lng] as LatLngTuple)), { padding: [48, 48], maxZoom: 17 });
       });
       layer.addLayer(m);
+      if (plain) addObstacle(lat, lng, size / 2 + 2);
     });
+    if (plain) drawStationLabels(L, map, area, labelRef.current, stl ?? [], obstacles);
   }
 
   useEffect(() => {
@@ -354,11 +489,31 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, signature]);
 
+  /* ── リストと対応づける輪（plain） ── */
+  useEffect(() => {
+    const L = leafletRef.current;
+    const map = mapRef.current;
+    if (!ready || !L || !map || basemap !== "plain") return;
+    haloRef.current?.remove();
+    haloRef.current = null;
+    if (!highlightId) return;
+    const p = live.current.visible.find((x) => x.id === highlightId);
+    if (!p) return;
+    haloRef.current = L.marker([p.lat, p.lng], {
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: 3000,
+      icon: L.divIcon({ className: "mp-hl-wrap", html: `<span class="mp-hl"></span>`, iconSize: [44, 44], iconAnchor: [22, 22] }),
+    }).addTo(map);
+    // 輪が画面の外なら、中心へ寄せる（拡大はしない）
+    if (!map.getBounds().contains([p.lat, p.lng])) map.panTo([p.lat, p.lng]);
+  }, [ready, highlightId, basemap]);
+
   return (
     <div
       ref={elRef}
-      className={className ? `mp-map ${className}` : "mp-map"}
-      style={{ height: typeof height === "number" ? `${height}px` : height }}
+      className={["mp-map", fill ? "mp-map-fill" : "", basemap === "plain" ? "mp-map-plain" : "", className ?? ""].filter(Boolean).join(" ")}
+      style={fill ? undefined : { height: typeof height === "number" ? `${height}px` : height }}
       role="region"
       aria-label={label}
       data-ready={ready ? "1" : "0"}
@@ -367,4 +522,115 @@ export default function PortalMap({ points, colors, weeks, station, view, fit, l
       {!ready && <div className="mp-map-wait">地図を読み込み中…</div>}
     </div>
   );
+}
+
+/* ───────────── plain 用: 初期表示の範囲・経緯線・駅名 ───────────── */
+
+type Bounds2 = [[number, number], [number, number]];
+interface Box {
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+}
+
+/** 点が多いとき、中心（緯度経度それぞれの中央値）に近い 90% の店が収まる範囲。少ないとき・外れが無いときは null */
+function coreBounds(pts: PinPoint[]): Bounds2 | null {
+  if (pts.length < CORE_MIN_POINTS) return null;
+  const med = (a: number[]) => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
+  const mlat = med(pts.map((p) => p.lat));
+  const mlng = med(pts.map((p) => p.lng));
+  const kx = Math.cos((mlat * Math.PI) / 180);
+  const dist = (p: PinPoint) => Math.hypot((p.lat - mlat) * 111, (p.lng - mlng) * 111 * kx);
+  const kept = [...pts].sort((a, b) => dist(a) - dist(b)).slice(0, Math.ceil(pts.length * CORE_KEEP));
+  const lats = kept.map((p) => p.lat);
+  const lngs = kept.map((p) => p.lng);
+  return [
+    [Math.min(...lats), Math.min(...lngs)],
+    [Math.max(...lats), Math.max(...lngs)],
+  ];
+}
+
+/** 画面上で GRAT_PX ほど空く、きりのよい間隔（度） */
+function gratStep(zoom: number): number {
+  const pxPerDeg = (256 * 2 ** zoom) / 360;
+  const want = GRAT_PX / pxPerDeg;
+  return GRAT_STEPS.find((s) => s >= want) ?? GRAT_STEPS[GRAT_STEPS.length - 1];
+}
+
+function drawGraticule(L: typeof import("leaflet"), map: LeafletMapType, area: LatLngBounds, layer: LayerGroup | null) {
+  if (!layer) return;
+  layer.clearLayers();
+  const step = gratStep(map.getZoom());
+  const south = Math.floor(area.getSouth() / step) * step;
+  const north = Math.ceil(area.getNorth() / step) * step;
+  const west = Math.floor(area.getWest() / step) * step;
+  const east = Math.ceil(area.getEast() / step) * step;
+  const style = { weight: 1, color: INK, opacity: 0.22, dashArray: "1 7", lineCap: "round" as const, interactive: false };
+  let n = 0;
+  for (let lat = south; lat <= north + 1e-9 && n < 60; lat += step, n++) {
+    L.polyline(
+      [
+        [lat, west],
+        [lat, east],
+      ],
+      style,
+    ).addTo(layer);
+  }
+  for (let lng = west; lng <= east + 1e-9 && n < 120; lng += step, n++) {
+    L.polyline(
+      [
+        [south, lng],
+        [north, lng],
+      ],
+      style,
+    ).addTo(layer);
+  }
+}
+
+/**
+ * 駅名の注記。店の数が多い駅から、点・まとめの丸・ほかの駅名に重ならない側（右・左・上・下の順）に置く。
+ * どちらにも置けない駅名は、そのズームでは出さない（拡大すると出る）。
+ */
+function drawStationLabels(
+  L: typeof import("leaflet"),
+  map: LeafletMapType,
+  area: LatLngBounds,
+  layer: LayerGroup | null,
+  stations: StationLabel[],
+  obstacles: Box[],
+) {
+  if (!layer) return;
+  layer.clearLayers();
+  const z = map.getZoom();
+  const taken: Box[] = [...obstacles];
+  const hit = (b: Box) => taken.some((t) => b.x0 < t.x1 && b.x1 > t.x0 && b.y0 < t.y1 && b.y1 > t.y0);
+  const sorted = stations
+    .filter((s) => area.contains([s.lat, s.lng]))
+    .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "ja"));
+  let placed = 0;
+  for (const s of sorted) {
+    if (placed >= MAX_LABELS) break;
+    const name = s.name.endsWith("駅") ? s.name.slice(0, -1) : s.name;
+    const p = map.project([s.lat, s.lng], z);
+    const nw = name.length * 13; // 文字の幅の見積もり（1 文字 13px）
+    // 点（輪）は駅の位置。文字は右・左・上・下のうち、点・まとめの丸・ほかの駅名に重ならない最初の側に置く
+    const cand: [string, Box][] = [
+      ["r", { x0: p.x + 6, y0: p.y - 8, x1: p.x + 6 + nw, y1: p.y + 8 }],
+      ["l", { x0: p.x - 6 - nw, y0: p.y - 8, x1: p.x - 6, y1: p.y + 8 }],
+      ["t", { x0: p.x - nw / 2, y0: p.y - 22, x1: p.x + nw / 2, y1: p.y - 6 }],
+      ["b", { x0: p.x - nw / 2, y0: p.y + 6, x1: p.x + nw / 2, y1: p.y + 22 }],
+    ];
+    const pick = cand.find(([, b]) => !hit(b));
+    if (!pick) continue;
+    const side = pick[0];
+    taken.push({ x0: pick[1].x0 - 3, y0: pick[1].y0 - 2, x1: pick[1].x1 + 3, y1: pick[1].y1 + 2 });
+    placed++;
+    L.marker([s.lat, s.lng], {
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: -500,
+      icon: L.divIcon({ className: "mp-stl-wrap", html: `<span class="mp-stl" data-s="${side}"><i></i>${esc(name)}</span>`, iconSize: [0, 0] }),
+    }).addTo(layer);
+  }
 }

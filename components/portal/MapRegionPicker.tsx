@@ -1,156 +1,98 @@
 "use client";
 /**
- * /map の「地方 → 県」の選択部品: デフォルメ日本地図（SVG）・地方ごとのリスト・県のカード・階層のパンくず。
- * 店数は親（MapExplorer）が実データ（業種チップで絞った後の店）から数えて渡す。ここでは数を作らない。
- * 0 店の地方・県はリンクにしない（押せない表示）。選んだ状態は URL（?r=地方 / ?p=県）に残る＝戻るで前の段へ戻る。
- * 「今開いている店だけ」（?open=1）は、リンクを辿っても保たれるよう href に引き継ぐ。
+ * /map の「地方 → 県」を文字で選ぶ部品（地図を使わない人向け・キーボードと読み上げ用。日本地図と同じ内容）。
+ *  RegionList … 地方ごとの見出し（店数と、地方どうしの比較の細い棒）と、県のリンク（0 店は押せない表示）
+ *  PrefRows   … 地方を選んだあとの、県の行（店数と、その地方の中での比較の細い棒）
+ *  StageNav   … 階層（日本 › 地方 › 県）
+ * 店数は親（MapExplorer）が実データ（業種チップ・営業中で絞った後の店）から数えて渡す。ここでは数を作らない。
+ * 0 店の地方・県はリンクにしない。リンクを辿っても「今開いている店だけ」（?open=1）が保たれるよう href に引き継ぐ。
+ * リンクを押すと、サーバーの応答を待たずに地図のカメラが動く（go）。ホバー・フォーカスした地方は地図でも持ち上がる（setHl）。
  */
 import Link from "next/link";
-import type { CSSProperties } from "react";
-import { CELLS, MAP_GRID, MAP_REGIONS, type MapRegion } from "@/lib/portal/mapRegions";
-import { OpenCount, useOpenOnly } from "./OpenNow";
+import type { CSSProperties, MouseEvent } from "react";
+import { MAP_REGIONS, type MapRegion } from "@/lib/portal/mapRegions";
+import { mapHref, type Target } from "./MapStage";
 
-/** 県 slug → その県の（絞り込み後の）店 ID */
-export type PrefIds = Record<string, string[]>;
+export { mapHref };
 
-export function mapHref(q: { r?: string; p?: string }, open: boolean): string {
-  const s = new URLSearchParams();
-  if (q.r) s.set("r", q.r);
-  if (q.p) s.set("p", q.p);
-  if (open) s.set("open", "1");
-  const qs = s.toString();
-  return qs ? `/map?${qs}` : "/map";
+interface Common {
+  open: boolean;
+  /** 県 slug → 表示している店数（営業中だけのときはその数） */
+  counts: Record<string, number>;
+  /** 県 slug → その県の（業種で絞った）店の数。0 なら押せない */
+  total: Record<string, number>;
+  go: (t: Target, e: MouseEvent) => void;
+  setHl: (slug: string | null) => void;
 }
 
-export function regionIds(r: MapRegion, prefIds: PrefIds): string[] {
-  return r.prefs.flatMap((p) => prefIds[p.slug] ?? []);
-}
-
-const CELL = 44;
-const GAP = 2; // マスの間の線の太さ（SVG の単位）
-
-/* ───────────── デフォルメ日本地図 ───────────── */
-
-export function JapanMap({ prefIds }: { prefIds: PrefIds }) {
-  const open = useOpenOnly();
-  const W = MAP_GRID.cols * CELL;
-  const H = MAP_GRID.rows * CELL;
-  return (
-    <svg className="mp-jm-svg" viewBox={`0 0 ${W} ${H}`} role="group" aria-label="デフォルメした日本地図。地方を選びます" focusable="false">
-      {MAP_REGIONS.map((r) => {
-        const cells = r.prefs.flatMap((p) => {
-          const c = CELLS[p.slug];
-          return c ? [{ slug: p.slug, c }] : [];
-        });
-        const ids = regionIds(r, prefIds);
-        // 文字を置く位置: マスの中心の平均
-        let sx = 0;
-        let sy = 0;
-        for (const { c } of cells) {
-          sx += c[0] + (c[2] ?? 1) / 2;
-          sy += c[1] + (c[3] ?? 1) / 2;
-        }
-        const cx = (sx / cells.length) * CELL;
-        const cy = (sy / cells.length) * CELL;
-        const body = (
-          <>
-            {cells.map(({ slug, c }) => (
-              <rect
-                key={slug}
-                className="mp-jm-cell"
-                data-pref={slug}
-                x={c[0] * CELL + GAP / 2}
-                y={c[1] * CELL + GAP / 2}
-                width={(c[2] ?? 1) * CELL - GAP}
-                height={(c[3] ?? 1) * CELL - GAP}
-                rx={4}
-              />
-            ))}
-            <text className="mp-jm-t" x={cx} y={cy - 3} textAnchor="middle" aria-hidden="true">
-              {r.block}
-            </text>
-            <text className="mp-jm-n" x={cx} y={cy + 19} textAnchor="middle" aria-hidden="true">
-              <OpenCount ids={ids} />
-            </text>
-          </>
-        );
-        const style = { ["--rc" as string]: r.fill } as CSSProperties;
-        return ids.length > 0 ? (
-          <Link
-            key={r.slug}
-            href={mapHref({ r: r.slug }, open)}
-            prefetch={false}
-            className="mp-jm-reg"
-            data-region={r.slug}
-            aria-label={`${r.label} ${ids.length}店`}
-            style={style}
-          >
-            {body}
-          </Link>
-        ) : (
-          <g
-            key={r.slug}
-            className="mp-jm-reg"
-            data-off="1"
-            data-region={r.slug}
-            role="img"
-            aria-label={`${r.label} 0店（掲載なし）`}
-            style={style}
-          >
-            {body}
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
+const sumOf = (r: MapRegion, m: Record<string, number>) => r.prefs.reduce((a, p) => a + (m[p.slug] ?? 0), 0);
 
 /* ───────────── 県へのリンク（0 店は押せない） ───────────── */
 
-function PrefLink({ slug, label, ids, open, big }: { slug: string; label: string; ids: string[]; open: boolean; big?: boolean }) {
+function PrefLink({ slug, regionSlug, label, name, n, enabled, open, go, setHl }: { slug: string; regionSlug: string; label: string; name: string; n: number; enabled: boolean } & Pick<Common, "open" | "go" | "setHl">) {
   const body = (
     <>
       <span className="mp-pl-name">{label}</span>
-      <span className="mp-pl-n">
-        {" "}
-        <OpenCount ids={ids} />
-      </span>
+      <span className="mp-pl-n">{n}店</span>
     </>
   );
-  const cls = big ? "mp-pl mp-pl-big" : "mp-pl";
-  return ids.length > 0 ? (
-    <Link href={mapHref({ p: slug }, open)} prefetch={false} className={cls} data-pref={slug}>
+  return enabled ? (
+    <Link
+      href={mapHref({ p: slug }, open)}
+      prefetch={false}
+      className="mp-pl"
+      data-pref={slug}
+      aria-label={`${name} ${n}店`}
+      onClick={(e) => go({ stage: "pref", region: regionSlug, pref: slug }, e)}
+      onPointerEnter={() => setHl(regionSlug)}
+      onPointerLeave={() => setHl(null)}
+    >
       {body}
     </Link>
   ) : (
-    <span className={cls} data-off="1" data-pref={slug} aria-disabled="true">
+    <span className="mp-pl" data-off="1" data-pref={slug} aria-disabled="true">
       {body}
     </span>
   );
 }
 
-/* ───────────── 地方 → 県のリスト（地図を使わない人向け・同じ内容） ───────────── */
+/* ───────────── 地方 → 県のリスト（日本の段） ───────────── */
 
-export function RegionList({ prefIds }: { prefIds: PrefIds }) {
-  const open = useOpenOnly();
+export function RegionList({ counts, total, hl, open, go, setHl }: Common & { hl: string | null }) {
+  const maxRegion = Math.max(1, ...MAP_REGIONS.map((r) => sumOf(r, counts)));
   return (
     <ul className="mp-rl" aria-label="地方から選ぶ（日本地図と同じ内容）">
       {MAP_REGIONS.map((r) => {
-        const ids = regionIds(r, prefIds);
+        const n = sumOf(r, counts);
+        const linkable = sumOf(r, total) > 0;
+        const direct = r.prefs.length === 1;
         const head = (
           <>
-            {r.label}
+            <span className="mp-rl-nm">{r.label}</span>
             <span className="mp-rl-n">
-              {" "}
-              <OpenCount ids={ids} />
+              <b>{n}</b>店
             </span>
           </>
         );
         return (
-          <li key={r.slug} className="mp-rl-reg" data-region={r.slug} style={{ ["--rc" as string]: r.fill } as CSSProperties}>
+          <li
+            key={r.slug}
+            className="mp-rl-reg"
+            data-region={r.slug}
+            data-hl={hl === r.slug ? "1" : undefined}
+            style={{ ["--w" as string]: `${Math.round((n / maxRegion) * 100)}%` } as CSSProperties}
+            onPointerEnter={() => setHl(r.slug)}
+            onPointerLeave={() => setHl(null)}
+          >
             <h2 className="mp-rl-h">
-              {ids.length > 0 ? (
-                <Link href={mapHref({ r: r.slug }, open)} prefetch={false}>
+              {linkable ? (
+                <Link
+                  href={direct ? mapHref({ p: r.prefs[0].slug }, open) : mapHref({ r: r.slug }, open)}
+                  prefetch={false}
+                  onClick={(e) => go(direct ? { stage: "pref", region: r.slug, pref: r.prefs[0].slug } : { stage: "region", region: r.slug }, e)}
+                  onFocus={() => setHl(r.slug)}
+                  onBlur={() => setHl(null)}
+                >
                   {head}
                 </Link>
               ) : (
@@ -159,13 +101,26 @@ export function RegionList({ prefIds }: { prefIds: PrefIds }) {
                 </span>
               )}
             </h2>
-            <ul className="mp-rl-prefs">
-              {r.prefs.map((p) => (
-                <li key={p.slug}>
-                  <PrefLink slug={p.slug} label={p.short} ids={prefIds[p.slug] ?? []} open={open} />
-                </li>
-              ))}
-            </ul>
+            <i className="mp-rl-bar" aria-hidden="true" />
+            {!direct && (
+              <ul className="mp-rl-prefs">
+                {r.prefs.map((p) => (
+                  <li key={p.slug}>
+                    <PrefLink
+                      slug={p.slug}
+                      regionSlug={r.slug}
+                      label={p.short}
+                      name={p.name}
+                      n={counts[p.slug] ?? 0}
+                      enabled={(total[p.slug] ?? 0) > 0}
+                      open={open}
+                      go={go}
+                      setHl={setHl}
+                    />
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         );
       })}
@@ -173,37 +128,65 @@ export function RegionList({ prefIds }: { prefIds: PrefIds }) {
   );
 }
 
-/* ───────────── 地方を選んだあと: 県のカード ───────────── */
+/* ───────────── 地方を選んだあと: 県の行 ───────────── */
 
-export function PrefCards({ region, prefIds }: { region: MapRegion; prefIds: PrefIds }) {
-  const open = useOpenOnly();
+export function PrefRows({ region, counts, total, open, go, setHl }: Common & { region: MapRegion }) {
+  const max = Math.max(1, ...region.prefs.map((p) => counts[p.slug] ?? 0));
   return (
-    <ul className="mp-pc" aria-label={`${region.label}の県`} style={{ ["--rc" as string]: region.fill } as CSSProperties}>
-      {region.prefs.map((p) => (
-        <li key={p.slug}>
-          <PrefLink slug={p.slug} label={p.name} ids={prefIds[p.slug] ?? []} open={open} big />
-        </li>
-      ))}
-    </ul>
+    <ol className="mp-pr" aria-label={`${region.label}の県`}>
+      {region.prefs.map((p) => {
+        const n = counts[p.slug] ?? 0;
+        const enabled = (total[p.slug] ?? 0) > 0;
+        const body = (
+          <>
+            <span className="mp-pr-nm">{p.name}</span>
+            <i className="mp-pr-bar" aria-hidden="true" style={{ ["--w" as string]: `${Math.round((n / max) * 100)}%` } as CSSProperties} />
+            <span className="mp-pr-n">
+              <b>{n}</b>店
+            </span>
+          </>
+        );
+        return (
+          <li key={p.slug}>
+            {enabled ? (
+              <Link
+                href={mapHref({ p: p.slug }, open)}
+                prefetch={false}
+                className="mp-pr-a"
+                data-pref={p.slug}
+                onClick={(e) => go({ stage: "pref", region: region.slug, pref: p.slug }, e)}
+                onPointerEnter={() => setHl(region.slug)}
+                onPointerLeave={() => setHl(null)}
+              >
+                {body}
+              </Link>
+            ) : (
+              <span className="mp-pr-a" data-off="1" data-pref={p.slug} aria-disabled="true">
+                {body}
+              </span>
+            )}
+          </li>
+        );
+      })}
+    </ol>
   );
 }
 
 /* ───────────── 階層（日本 › 地方 › 県） ───────────── */
 
-export function StageNav({ region, prefName }: { region?: MapRegion; prefName?: string }) {
-  const open = useOpenOnly();
+export function StageNav({ region, prefName, open, go }: { region?: MapRegion; prefName?: string; open: boolean; go: Common["go"] }) {
   return (
     <nav className="mp-sn" aria-label="地方と県の階層">
       <ol>
         <li>
-          <Link href={mapHref({}, open)} prefetch={false}>
+          <Link href={mapHref({}, open)} prefetch={false} onClick={(e) => go({ stage: "japan" }, e)}>
             日本
           </Link>
         </li>
         {region && (
           <li>
             {prefName ? (
-              <Link href={mapHref({ r: region.slug }, open)} prefetch={false}>
+              <Link href={mapHref({ r: region.slug }, open)} prefetch={false} onClick={(e) => go({ stage: "region", region: region.slug }, e)}>
                 {region.label}
               </Link>
             ) : (

@@ -1,11 +1,13 @@
 /**
  * 地図で探す。/map
- * 全業種の店をピンで表示する（業種の色＝lib/verticals の accent。いまは実データのある業種だけピンが出る）。
- * 段: 日本地図（地方を選ぶ）→ ?r={地方} … その地方の県が店数つきで並ぶ → ?p={県} … 店の一覧とピンの地図（白地図）。
+ * 全業種の店を、デフォルメした日本地図（タイルグリッド）→ 地方 → 県の点の図、と絞り込んで探す（業種の色＝lib/verticals の accent。
+ * いまは実データのある業種だけ点が出る）。県の段の図は地図タイルを使わず、店の座標と駅名だけで描く（実際の地図らしさを出さない）。
+ * 段: 日本地図（地方を選ぶ）→ ?r={地方} … その地方の県が店数つきで並ぶ → ?p={県} … 店の一覧と点の図。
  * ?station={pref}/{name} … その駅の位置に合わせる。?pref={pref} は ?p の別名（以前の指定）。一覧はその範囲の店。
  * 優先順位は station > 県（p・pref）> 地方（r）。変な値は無視して次へ。店が 0 の県は、その地方の段に戻す。
  * 試作の地図ページなので、件数ゲートと関係なく常に noindex（canonical は /map）。
  * データはサーバーで最小限（id, name, lat, lng, vertical, category, stationName, href＋県）に絞って、クライアントの地図へ渡す。
+ * 見出しはこのページ専用（PageFrame の背の高い見出しは使わない。日本地図が最初の画面に収まるように、PC では左の列に収める）。
  */
 import type { Metadata } from "next";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
@@ -13,13 +15,13 @@ import { getRegionBySlug, regionOfPref } from "@/lib/portal/mapRegions";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { buildMetadata } from "@/lib/seo/meta";
-import { loadMapData, type MapPoint } from "@/lib/portal/mapData";
+import { loadMapData } from "@/lib/portal/mapData";
 import { getStationIndex, safeDecode, stationHeading } from "@/lib/stations/query";
 import MapExplorer, { type Focus, type Stage, type VerticalChip } from "../MapExplorer";
-import { PageFrame, type Tone } from "./frame";
+import PortalFonts from "../PortalFonts";
+import Breadcrumbs from "../Breadcrumbs";
 import { StationCredit } from "./station-parts";
-
-const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "地" };
+import "../map.css";
 
 type SP = Record<string, string | string[] | undefined>;
 type Props = { searchParams: Promise<SP> };
@@ -35,16 +37,6 @@ export async function generateMetadata(): Promise<Metadata> {
     // 試作の地図ページ。件数に関わらず index にしない（count 0 → noindex）。公開時に判断する
     count: 0,
   });
-}
-
-/** 点の範囲（南西・北東） */
-function boundsOf(points: MapPoint[]): [[number, number], [number, number]] {
-  const lats = points.map((p) => p.lat);
-  const lngs = points.map((p) => p.lng);
-  return [
-    [Math.min(...lats), Math.min(...lngs)],
-    [Math.max(...lats), Math.max(...lngs)],
-  ];
 }
 
 export default async function Page({ searchParams }: Props) {
@@ -93,7 +85,7 @@ export default async function Page({ searchParams }: Props) {
       if (inPref.length > 0) {
         stage = "pref";
         count = inPref.length;
-        focus = { label: area.short, pref: area.slug, view: { bounds: boundsOf(inPref) } };
+        focus = { label: area.short, pref: area.slug };
       } else {
         // 店が 0 の県は、その地方の段に戻す（そこでは押せない表示）
         stage = "region";
@@ -115,33 +107,41 @@ export default async function Page({ searchParams }: Props) {
   const prefs = PREFECTURES.filter((p) => present.has(p.slug)).map((p) => ({ slug: p.slug, short: p.short }));
 
   const live = verticals.filter((v) => v.count > 0).map((v) => v.name);
-  const where =
-    stage === "japan"
-      ? "日本地図から地方を選び、県、店の順に絞り込めます。"
-      : stage === "region"
-        ? `${getRegionBySlug(regionSlug)?.label ?? ""}の県を選ぶと、店の一覧と地図が出ます。`
-        : `${focus.label ?? ""}の店を、一覧と地図で探せます。業種の色のピンで表示します。`;
   const lead =
-    `${where}業種のチップで絞り込めます。` +
+    "日本地図から地方を選び、県、店の順に絞り込めます。" +
     (live.length < verticals.length ? `いまは${live.join("・")}の店を表示しています（ほかの業種は掲載準備中）。` : "");
 
+  const head = (
+    <>
+      <PortalFonts />
+      <Breadcrumbs
+        items={[
+          { name: "マチノワ", href: "/" },
+          { name: "地図で探す", href: "/map" },
+        ]}
+      />
+      <p className="mp-kicker">Machinowa — Map</p>
+      <h1 className="mp-mx-title">地図で探す</h1>
+      <p className="mp-mx-lead">{lead}</p>
+      <div className="mp-mx-state">
+        <p className="mp-state">
+          <i aria-hidden="true" />
+          {count > 0 ? "掲載中" : "掲載準備中"}
+        </p>
+        <p className="mp-mx-count">
+          <b>{count}</b>
+          {station ? "店（この駅）" : "店"}
+        </p>
+      </div>
+    </>
+  );
+
   return (
-    <PageFrame
-      className="mp-mx-page"
-      tone={TONE}
-      crumbs={[
-        { name: "マチノワ", href: "/" },
-        { name: "地図で探す", href: "/map" },
-      ]}
-      kicker="Machinowa — Map"
-      heading="地図で探す"
-      lead={lead}
-      count={count}
-      unit="店"
-    >
-      <section className="mp-pg-sec mp-mx-sec" aria-label="地図と店の一覧">
+    <div className="mp-pg mp-mx-page" style={{ ["--ac" as string]: "#15110e", ["--acl" as string]: "#e7dfd0" }}>
+      <section className="mp-mx-sec" aria-label="地図と店の一覧">
         <div className="mp-wrap">
           <MapExplorer
+            head={head}
             stage={stage}
             region={regionSlug}
             points={data.points}
@@ -150,10 +150,11 @@ export default async function Page({ searchParams }: Props) {
             prefs={prefs}
             focus={focus}
             missing={data.missing}
+            stations={data.stationsByPref}
           />
         </div>
       </section>
       {station && <StationCredit />}
-    </PageFrame>
+    </div>
   );
 }
