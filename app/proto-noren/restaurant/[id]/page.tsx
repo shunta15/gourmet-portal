@@ -107,7 +107,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       />
 
       {/* 紹介 */}
-      <section className="vS-intro" aria-label="紹介">
+      <section className={`vS-intro${cutCands.length > 0 ? "" : " no-kj"}`} aria-label="紹介">
         {cutCands.length > 0 && <KanjiCut kanji={kanji} cands={cutCands} />}
         <div className="vS-intro-b vN-rv" style={{ ["--d" as string]: 1 }}>
           {r.desc && <p className="vS-lede">{r.desc}</p>}
@@ -129,7 +129,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       {/* 本文 */}
       {r.body && r.body.length > 0 && (
         <section className="vS-body vN-paper" aria-labelledby="vS-h-body">
-          <div className="vS-body-in">
+          <div className={`vS-body-in${sidePhoto ? "" : " no-ph"}`}>
             {sidePhoto && (
               <div className="vS-body-ph vN-rv">
                 <figure>

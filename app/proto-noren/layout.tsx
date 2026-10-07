@@ -13,7 +13,9 @@ export const metadata: Metadata = { robots: { index: false, follow: false } };
 const NOSCRIPT_CSS =
   ".vN .vN-rv{opacity:1!important;transform:none!important}" +
   ".vS-hero{--open:1!important;--ex:1!important}" +
-  ".vS-door{opacity:1!important}.vS-cover,.vS-cue,.vS-cloth,.vS-lan{display:none!important}";
+  ".vS-door{opacity:1!important}.vS-cover,.vS-cue,.vS-cloth,.vS-lan{display:none!important}" +
+  ".vN-hd{background:rgba(15,12,10,.94)!important}" +
+  ".vF-cap{clip-path:none!important}.vF-roller{display:none!important}.vF-stamp{opacity:.8!important;transform:rotate(-6deg)!important}";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   assertPreviewOrLocal();

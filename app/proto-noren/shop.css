@@ -87,6 +87,8 @@
 
 /* ---------- 紹介（漢字の切り抜き・一言・タグ） ---------- */
 .vS-intro{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,6vw,110px);align-items:center;max-width:1500px;margin:0 auto;padding:clamp(80px,13vh,150px) var(--gx) clamp(70px,11vh,130px)}
+.vS-intro.no-kj{grid-template-columns:minmax(0,1fr)}
+.vS-intro.no-kj .vS-intro-b{max-width:46em;margin:0 auto}
 .vS-kj{--kj:min(40vw,620px);position:relative;width:var(--kj);height:var(--kj);justify-self:center;filter:drop-shadow(0 0 70px rgba(200,54,29,.2))}
 .vS-kj span{position:absolute;inset:0;display:grid;place-items:center;font:400 calc(var(--kj) * .98)/1 var(--f-brush);user-select:none}
 .vS-kj-line{color:rgba(239,230,214,.05);-webkit-text-stroke:1px rgba(239,230,214,.26)}
@@ -109,6 +111,7 @@
 /* ---------- 本文（生成りの紙） ---------- */
 .vS-body{padding:clamp(88px,13vh,160px) var(--gx) clamp(80px,12vh,150px)}
 .vS-body-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,4.4fr) minmax(0,7fr) auto;gap:clamp(28px,4.4vw,80px);align-items:start}
+.vS-body-in.no-ph{grid-template-columns:minmax(0,7fr) auto;justify-content:center}
 .vS-body-ph{position:sticky;top:calc(var(--hd) + 24px);display:grid;gap:12px}
 .vS-body-ph figure{position:relative;aspect-ratio:3/4;background:#d9ccb4;box-shadow:0 1px 0 rgba(60,40,20,.10),0 26px 40px -22px rgba(60,40,20,.55);padding:10px;background-color:var(--paper-hi)}
 .vS-body-ph figure>img{width:100%;height:100%;object-fit:cover;filter:sepia(.16) saturate(.92) contrast(1.03)}
@@ -268,7 +271,7 @@
   .vS-cue-e{display:none}
   .vS-intro{grid-template-columns:1fr;gap:34px;padding-top:72px}
   .vS-kj{--kj:min(86vw,420px)}
-  .vS-body-in{grid-template-columns:1fr;gap:30px}
+  .vS-body-in,.vS-body-in.no-ph{grid-template-columns:1fr;gap:30px}
   .vS-body-h{order:-1;flex-direction:row;align-items:flex-start}
   .vS-body-h .vN-tate{writing-mode:horizontal-tb;font-size:clamp(30px,8.4vw,42px);letter-spacing:.06em}
   .vS-body-h .vN-tate em{display:inline-block}
