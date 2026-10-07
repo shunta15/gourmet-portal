@@ -16,7 +16,6 @@ import { VERTICAL_FACE } from "@/lib/portal/meta";
 const IVORY = "#f4efe6";
 const INK = "#15110e";
 const INK2 = "#4a423a";
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
 
 /** 画像のレスポンス。URL に ?v= を付けているので、CDN には長く持たせる */
 export function renderOg(el: ReactElement): ImageResponse {
@@ -70,80 +69,76 @@ function Chip({ color, label, note, small }: { color: string; label: string; not
   );
 }
 
-/** 6業種の輪（総合トップ・ヒーローの輪と同じ幾何） */
-function Ring({ size }: { size: number }) {
+/** 総合トップの絵の色（にぎわいの輪 sometsuke「白磁と藍」の地・藍・金。components/portal/hubs/nigiwai/themes.css と同じ値） */
+const PORCELAIN = "#f6f3ec";
+const PORCELAIN_L = "#fbf9f4";
+const INDIGO = "#18265a";
+const GOLD = "#b08d4a";
+const GOLD_D = "#6a501e";
+
+/** 金の細い輪。大きな輪の上に小さな輪（店の写真の丸）を 12 並べた、にぎわいの輪の図案（写真は入れない） */
+function GoldRing({ size }: { size: number }) {
   const C = 200;
   const R = 150;
-  const rad = (d: number) => (d * Math.PI) / 180;
-  const pt = (d: number, r: number) => [C + r * Math.cos(rad(d)), C + r * Math.sin(rad(d))] as const;
+  const n = 12;
   return (
     <div style={{ display: "flex", position: "relative", width: size, height: size }}>
       <svg width={size} height={size} viewBox="0 0 400 400" style={{ position: "absolute", left: 0, top: 0 }}>
-        <circle cx={C} cy={C} r={R + 34} fill="none" stroke="rgba(21,17,14,0.2)" strokeWidth="1.5" strokeDasharray="3 7" />
-        <circle cx={C} cy={C} r={R - 34} fill="none" stroke="rgba(21,17,14,0.12)" strokeWidth="1.5" />
-        {ORDER.map((k, i) => {
-          const mid = -90 + i * 60;
-          const [x0, y0] = pt(mid - 26, R);
-          const [x1, y1] = pt(mid + 26, R);
+        <circle cx={C} cy={C} r={R} fill="none" stroke={GOLD} strokeWidth="1.5" />
+        <circle cx={C} cy={C} r={R - 46} fill="none" stroke={GOLD} strokeWidth="1" strokeOpacity="0.55" />
+        {Array.from({ length: n }, (_, i) => {
+          const a = ((-90 + (360 / n) * i) * Math.PI) / 180;
+          const big = i % 3 === 0;
           return (
-            <path
-              key={k}
-              d={`M ${x0.toFixed(2)} ${y0.toFixed(2)} A ${R} ${R} 0 0 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`}
-              fill="none"
-              stroke={VERTICALS[k].accent.color}
-              strokeWidth="11"
-              strokeLinecap="round"
+            <circle
+              key={i}
+              cx={(C + R * Math.cos(a)).toFixed(2)}
+              cy={(C + R * Math.sin(a)).toFixed(2)}
+              r={big ? 24 : 17}
+              fill={i % 3 === 0 ? INDIGO : PORCELAIN_L}
+              stroke={GOLD}
+              strokeWidth={big ? 3 : 2}
             />
           );
         })}
-        {ORDER.map((k, i) => {
-          const [x, y] = pt(-90 + i * 60, R);
-          return <circle key={k} cx={x} cy={y} r="6" fill="#faf7f1" stroke={VERTICALS[k].accent.color} strokeWidth="3" />;
-        })}
+        <circle cx={C} cy={C} r="7" fill={GOLD} />
       </svg>
-      <div style={{ display: "flex", position: "absolute", left: 0, top: 0, width: size, height: size, alignItems: "center", justifyContent: "center", fontSize: size * 0.3, color: INK }}>
-        輪
-      </div>
     </div>
   );
 }
 
-/** 総合トップ */
+/** 総合トップ。キャッチコピーそのまま（言葉は proto-portal/hub-concepts/COPY-FINAL.md）。白磁の地・藍の文字・金の細い輪 */
 export function HomeCard(): ReactElement {
-  const g = (rgb: string, at: string) => `radial-gradient(circle at ${at}, rgba(${rgb},0.34), rgba(244,239,230,0) 52%)`;
+  const line = { display: "flex", fontSize: 92, lineHeight: 1.3, letterSpacing: 2, color: INDIGO } as const;
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        position: "relative",
         width: "100%",
         height: "100%",
         padding: "52px 72px 48px",
-        color: INK,
-        backgroundImage: [
-          g("200,79,53", "10% 18%"),
-          g("232,84,125", "78% 8%"),
-          g("62,155,220", "96% 70%"),
-          g("229,164,71", "44% 104%"),
-          g("127,168,150", "66% 52%"),
-          "linear-gradient(160deg, #f6f1e8, #efe6dc)",
-        ].join(","),
+        color: INDIGO,
+        backgroundImage: `radial-gradient(circle at 80% 50%, ${PORCELAIN_L}, rgba(246,243,236,0) 62%), linear-gradient(160deg, ${PORCELAIN_L}, ${PORCELAIN})`,
       }}
     >
-      <Brand right="machinowa.tokyo" />
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: 54, color: INK }}>街の店を、</div>
-          <div style={{ display: "flex", fontSize: 196, lineHeight: 1.05, letterSpacing: -6, color: INK }}>マチノワ</div>
-          <div style={{ display: "flex", fontSize: 50, color: INK }}>業種をまたいで探す。</div>
-        </div>
-        <Ring size={330} />
+      <div style={{ display: "flex", position: "absolute", right: 26, top: 115, opacity: 0.95 }}>
+        <GoldRing size={400} />
       </div>
-      <div style={{ display: "flex", gap: 10, width: "100%" }}>
-        {ORDER.map((k) => (
-          <Chip key={k} small color={VERTICALS[k].accent.color} label={VERTICALS[k].name} />
-        ))}
+      <div style={{ display: "flex", alignItems: "baseline", gap: 18 }}>
+        <div style={{ display: "flex", fontSize: 34, letterSpacing: 8, color: INDIGO }}>マチノワ</div>
+        <div style={{ display: "flex", fontSize: 20, letterSpacing: 7, color: GOLD_D }}>MACHINOWA</div>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={line}>街と店、店と人。</div>
+        <div style={line}>つながる輪を、</div>
+        <div style={line}>マチノワから。</div>
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 18, width: "100%" }}>
+        <div style={{ display: "flex", width: 56, height: 2, background: GOLD }} />
+        <div style={{ display: "flex", fontSize: 22, letterSpacing: 4, color: GOLD_D }}>machinowa.tokyo</div>
       </div>
     </div>
   );

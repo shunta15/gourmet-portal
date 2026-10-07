@@ -8,9 +8,10 @@ import { buildMetadata } from "@/lib/seo/meta";
 export const metadata: Metadata = {
   ...buildMetadata({
     vertical: "portal",
-    title: "マチノワ — 街の店を、業種をまたいで探す",
+    // 言葉は proto-portal/hub-concepts/COPY-FINAL.md（キャッチコピーそのまま。前後に足さない）。description はコンセプトの第 2・第 3 段落を、改行を取ってつないだもの
+    title: "街と店、店と人。つながる輪を、マチノワから。",
     description:
-      "グルメ・ビューティー・ボディケア・ペット・おでかけ・ステイ。街の店を、業種をまたいで探せるポータル「マチノワ」。",
+      "ひとつの店との出会いが、次の出会いにつながり、その小さな輪が、街へと広がっていく。マチノワは、店と人をつなぎ、街の魅力を広げていく地域ポータルサイトです。",
     path: "/",
     count: 0,
   }),

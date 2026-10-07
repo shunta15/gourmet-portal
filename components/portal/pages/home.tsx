@@ -1,20 +1,12 @@
-import PortalFonts from "@/components/portal/PortalFonts";
-import HubStage from "@/components/portal/hub/HubStage";
-import { getHubData } from "@/lib/portal/hub";
+import NigiwaiPage from "@/components/portal/hubs/nigiwai/NigiwaiPage";
 
 /**
  * 総合トップの中身（サーバーコンポーネント）。app/portal-home/page.tsx が出す（公開スイッチ ON のとき `/` として出る）。
- * 業種への入口だけの 1 画面（輪を回して選ぶ）。下にあるのはフッターだけ。
- * フッターと CSS（portal.css・hub.css）は app/portal-home/layout.tsx（PortalLayout）が付ける。
- * 以前の総合トップにあった区画（考え方・6つの入口・エリア・駅・動画・新着の特集・マチノワについて）は外した
- * （部品のファイルは残してある。グルメ側や他のページで使っているものは変えていない）。
+ * 「にぎわいの輪」。配色は 2 色（sometsuke 白磁と藍・akagane 濃紺と銅）を、開くたびにランダムで出す（抽選は NigiwaiPage の script と RandomTheme）。
+ * theme は「スクリプトなしのときの色」。ページ自体は、どちらの色でも同じ HTML（静的に配信できる）。
+ * 言葉は proto-portal/hub-concepts/COPY-FINAL.md。フッターと CSS（portal.css）は app/portal-home/layout.tsx（PortalLayout）が付ける。
+ * 色を固定して見るルート（/proto-hub/nigiwai/<色>）は、プレビューとローカルだけ（app/proto-hub）。
  */
-export default async function PortalHome() {
-  const data = await getHubData();
-  return (
-    <>
-      <PortalFonts />
-      <HubStage items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} open={data.open} />
-    </>
-  );
+export default function PortalHome() {
+  return <NigiwaiPage theme="sometsuke" random />;
 }
