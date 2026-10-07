@@ -13,28 +13,33 @@ const P4 = [
   ["そんな場所を", "目指します。"],
 ];
 
+import MitsuwaReveal from "./MitsuwaReveal";
+
 export default function MitsuwaStatement() {
   return (
     <section className="mws">
       <div className="mws-in">
-        <p className="mws-p1">
+        <p className="mws-p1" data-rv>
           {P1.map((t, i) => (
             <span className="ph" key={i}>
               {t}
             </span>
           ))}
         </p>
-        <p className="mws-p2">
-          <span className="ph">
-            {P2_HEAD}「<span className="mws-w" data-w="0">ひと</span>」「<span className="mws-w" data-w="1">みせ</span>」「<span className="mws-w" data-w="2">まち</span>」
-          </span>
+        <p className="mws-p2" data-rv>
+          <span className="ph">{P2_HEAD}</span>
+          {["ひと", "みせ", "まち"].map((w, i) => (
+            <span className="ph" key={w}>
+              「<span className="mws-w" data-w={i}>{w}</span>」
+            </span>
+          ))}
           {P2_TAIL.map((t, i) => (
             <span className="ph" key={i}>
               {t}
             </span>
           ))}
         </p>
-        <p className="mws-p3">
+        <p className="mws-p3" data-rv>
           {P3.map((l, i) => (
             <span className="ln" key={i}>
               <i aria-hidden="true" data-w={i} />
@@ -42,12 +47,12 @@ export default function MitsuwaStatement() {
             </span>
           ))}
         </p>
-        <span className="mws-deco" aria-hidden="true">
+        <span className="mws-deco" aria-hidden="true" data-rv>
           <i data-w="0" />
           <i data-w="1" />
           <i data-w="2" />
         </span>
-        <p className="mws-p4">
+        <p className="mws-p4" data-rv>
           {P4.map((l, i) => (
             <span className="ln" key={i}>
               {l.map((t, j) => (
@@ -59,6 +64,7 @@ export default function MitsuwaStatement() {
           ))}
         </p>
       </div>
+      <MitsuwaReveal />
     </section>
   );
 }

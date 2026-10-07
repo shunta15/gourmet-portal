@@ -2,7 +2,7 @@
    総合トップ案「三つの輪 MITSUWA」（コンセプト 2・試作）
    接頭辞 .mw-（最初の画面）／ .mws-（下のブロック）。
    世界: あざやかな黄の地・黒の極太ゴシック・白と朱をほんの少し。主役は文字でできた 3 つの立体の輪（CSS 3D）。
-   輪の単位 u … 外側の輪の半径の 1/100（PC 1440×900 で約 3.9px）。輪の大きさも字の大きさも u で決まる。
+   輪の単位 u … 外側の輪の半径の 1/100（PC 1440×900 で約 4px）。輪の大きさも字の大きさも u で決まる。
    ════════════════════════════════════════════════════════════ */
 .mw, .mws{
   --yl:#FFD400; --yl2:#FFE65C; --yl3:#F2C000;
@@ -16,16 +16,23 @@
 body:has(.mw){cursor:auto}
 body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 .mw a, .mw button, .mws a{cursor:pointer}
+.mw-sr{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
 
 /* ───────────────────────── 最初の画面 ───────────────────────── */
 .mw{
-  --u:clamp(1.7px, min(.265vw, .418vh), 5px);
-  --cx:55.5%; --cy:44%;
   position:relative; isolation:isolate; overflow:clip;
-  height:100svh; min-height:640px;
+  display:flex; flex-direction:column;
+  height:100svh; min-height:620px;
   color:var(--bk); font-family:var(--body);
-  background:radial-gradient(120% 95% at 50% 40%, var(--yl2) 0%, var(--yl) 46%, var(--yl3) 100%);
+  background:radial-gradient(120% 95% at 56% 40%, var(--yl2) 0%, var(--yl) 46%, var(--yl3) 100%);
   touch-action:pan-y; -webkit-user-select:none; user-select:none;
+}
+/* 輪と見出しの舞台。上の帯の下から、下の札の上まで（札の高さは中身で変わるので、残りをそのまま使う＝見出しと札が重ならない）。
+   単位 u は、舞台の幅と高さの小さい方から決める（コンテナクエリの cqw・cqh） */
+.mw-stage{
+  --u:clamp(1.5px, min(.29cqw, calc(100cqh / 181)), 5px);
+  --cx:63%; --cy:48.8%;
+  position:relative; flex:1 1 0; min-height:0; container-type:size;
 }
 .mw-probe{position:absolute; left:0; top:0; width:calc(var(--u) * 100); height:0; visibility:hidden; pointer-events:none}
 
@@ -45,9 +52,9 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
   --sw:calc(var(--R) * var(--u) * .13108);   /* 板の幅 = 2R·tan(3.75°) */
   --h:calc(var(--H) * var(--u));
 }
-.mw-ring[data-r="0"]{--band:#14110A; --ink:var(--yl);  --edge:var(--yl);  --bandb:#C99F00; --inkb:#A98600}
-.mw-ring[data-r="1"]{--band:var(--wh); --ink:var(--bk); --edge:var(--bk); --bandb:#FFF0A6; --inkb:#E5CB5C}
-.mw-ring[data-r="2"]{--band:var(--rd); --ink:var(--wh); --edge:var(--wh); --bandb:#F28A66; --inkb:#D95B38}
+.mw-ring[data-r="0"]{--band:#14110A; --ink:var(--yl);  --edge:var(--yl);  --bandb:#C99F00; --inkb:#A98600; --shc:#fff}
+.mw-ring[data-r="1"]{--band:var(--wh); --ink:var(--bk); --edge:var(--bk); --bandb:#FFF0A6; --inkb:#E5CB5C; --shc:#4a3300}
+.mw-ring[data-r="2"]{--band:var(--rd); --ink:var(--wh); --edge:var(--wh); --bandb:#F28A66; --inkb:#D95B38; --shc:#4d0d00}
 
 .mw-seg{
   position:absolute; left:0; top:0; display:block;
@@ -63,7 +70,10 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
   -webkit-backface-visibility:hidden; backface-visibility:hidden;
   box-shadow:inset 0 calc(var(--u) * 1.3) 0 var(--edge), inset 0 calc(var(--u) * -1.3) 0 var(--edge);
 }
-.mw-f::after{content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg, rgba(255,255,255,.13), rgba(255,255,255,0) 42%, rgba(0,0,0,.12))}
+/* 面の上下の艶（上が少し明るく、下が少し沈む。向きによらない固定の陰） */
+.mw-f::after{content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%, rgba(0,0,0,.10))}
+/* 板ごとの陰（手前が明るく、縁と奥が沈む）。濃さは JS が板の向きから決める（opacity だけを書く） */
+.mw-sh{position:absolute; inset:0; display:block; background:var(--shc); opacity:0; pointer-events:none; will-change:opacity}
 /* 奥にあるとき見える面（裏）。薄い色で、字は鏡文字 */
 .mw-b{
   background:var(--bandb); color:var(--inkb);
@@ -74,22 +84,31 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 .mw-strip{
   position:absolute; top:0; left:calc(var(--i) * var(--sw) * -1 + 1px);
   width:calc(48 * var(--sw)); height:100%;
-  font:400 calc(var(--fs) * var(--u)) / var(--h) var(--disp);
+  font:400 calc(var(--u) * var(--fs)) / var(--h) var(--disp);
   letter-spacing:calc(48 * var(--sw) / var(--slots) - var(--fs) * var(--u));
   white-space:nowrap; text-align:left;
 }
 
-/* 見出し。左に 3 文字ずつ積む。普通の 2D の層で、PC は輪の「後ろ」（右の輪の端が見出しの前を横切る）、スマホは輪の「前」（読めることを優先）。
-   3D の中に入れない（輪の板の面と交わると、見出しの一部が切れて描かれるため）。入るときは JS が .mw-hwrap を拡大する */
-.mw-hwrap{position:absolute; inset:0; z-index:0; pointer-events:none; transform-origin:var(--cx) var(--cy)}
+/* 輪の足もとの影（浮いて見えるように。輪の真下に、ごく薄く） */
+.mw-stage::after{content:""; position:absolute; z-index:0; left:var(--cx); bottom:calc(100cqh - var(--cy) - var(--u) * 100); width:calc(var(--u) * 200); height:calc(var(--u) * 17); transform:translateX(-50%); border-radius:50%; background:radial-gradient(closest-side, rgba(120,78,0,.30), rgba(120,78,0,.12) 55%, rgba(120,78,0,0)); pointer-events:none}
+
+/* つかんで回せることの目印（矢印だけ。最初につかんだら消える） */
+.mw-hint{position:absolute; z-index:3; left:calc(var(--cx) + var(--u) * 122); top:var(--cy); width:calc(var(--u) * 15); height:calc(var(--u) * 15); min-width:52px; min-height:52px; margin:calc(var(--u) * -7.5) 0 0 calc(var(--u) * -7.5); display:grid; place-items:center; border:4px solid var(--bk); border-radius:50%; color:var(--bk); pointer-events:none; transition:opacity .5s}
+.mw-hint svg{animation:mwHint 2.4s ease-in-out infinite}
+@keyframes mwHint{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.28)}}
+.mw.is-touched .mw-hint{opacity:0}
+
+/* 見出し。左に 3 文字ずつ積む。輪より手前の 2D の層（どの瞬間も輪に隠れない。輪の上では黄のふちが字を浮かせる）。
+   3D の中には入れない（輪の板の面と交わると、見出しの一部が切れて描かれるため）。入るときは JS が .mw-hwrap を拡大する */
+.mw-hwrap{position:absolute; inset:0; z-index:2; pointer-events:none; transform-origin:var(--cx) var(--cy)}
 .mw-h1{
-  --hf:44; --hy:-6;
-  position:absolute; left:var(--g); top:calc(var(--cy) + var(--u) * var(--hy)); margin:0;
+  --hf:44;
+  position:absolute; left:var(--g); top:54%; margin:0;
   transform:translateY(-50%);
   text-align:left; white-space:nowrap;
   font:400 calc(var(--u) * var(--hf)) / .93 var(--disp); letter-spacing:0;
   color:var(--bk);
-  -webkit-text-stroke:calc(var(--u) * 2.4) var(--yl); paint-order:stroke fill;
+  -webkit-text-stroke:calc(var(--u) * 3) var(--yl); paint-order:stroke fill;
 }
 .mw-h1 .seg{display:block}
 .mw-h1 .l2{font-size:calc(var(--u) * var(--hf) / 2); margin-top:.16em; line-height:1}
@@ -98,30 +117,43 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 
 /* 上の帯：ロゴ・さがす */
 .mw-bar{position:absolute; z-index:5; left:0; right:0; top:0; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:22px var(--g) 0}
-.mw-logo{display:flex; align-items:baseline; gap:10px; color:var(--bk); text-decoration:none}
+.mw-logo{display:flex; align-items:center; gap:10px; min-height:44px; color:var(--bk); text-decoration:none}
 .mw-logo .ja{font:400 clamp(24px, 2.2vw, 30px)/1 var(--disp); letter-spacing:.02em}
 .mw-logo .en{font:900 12px/1 var(--body); letter-spacing:.2em; text-transform:uppercase}
-.mw-find{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 22px 0 18px; border:4px solid var(--bk); border-radius:99px; color:var(--bk); text-decoration:none; font:900 17px/1 var(--body); letter-spacing:.06em; background:transparent; transition:background .2s, color .2s, transform .2s}
+.mw-find{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 22px 0 18px; border:4px solid var(--bk); border-radius:99px; color:var(--bk); text-decoration:none; font:900 17px/1 var(--body); letter-spacing:.06em; background:transparent; transition:background .2s, color .2s}
 .mw-find:hover{background:var(--bk); color:var(--yl)}
 .mw a:focus-visible{outline:4px solid var(--bk); outline-offset:4px; border-radius:22px}
 .mw-logo:focus-visible{border-radius:6px}
 .mw-find:focus-visible{border-radius:99px}
 
-/* 下：リード・業種の札 6 つ */
-.mw-foot{position:absolute; z-index:5; left:var(--g); right:var(--g); bottom:clamp(14px, 2.6vh, 28px); display:flex; flex-direction:column; gap:clamp(12px, 2vh, 20px)}
+/* 下：リード・業種の札 */
+.mw-foot{position:relative; z-index:5; flex:none; padding:0 var(--g) clamp(14px, 2.6vh, 26px); display:flex; flex-direction:column; gap:clamp(10px, 1.6vh, 16px)}
 .mw-lead{max-width:23em; font:900 clamp(13.5px, 1.05vw, 16px)/1.75 var(--body); letter-spacing:.03em; margin:0; word-break:auto-phrase; text-wrap:balance}
 
-.mw-tags{display:grid; grid-template-columns:2.7fr repeat(5, 1fr); gap:10px; margin:0; padding:0; list-style:none}
+/* 札の並び（PC）: 左にグルメ（掲載中）。右は「準備中」の 5 つを 1 本の見出し線で括る。
+   入れる 2 つ（ビューティー・ボディケア）は太枠の札、入れない 3 つ（ペット・おでかけ・ステイ）は低い破線の札 */
+.mw-tags{display:grid; grid-template-columns:2.6fr repeat(5, 1fr); grid-template-rows:auto 1fr; gap:9px 10px; margin:0; padding:0; list-style:none}
 .mw-li{min-width:0; display:flex}
+.mw-li[data-k="gourmet"]{grid-column:1; grid-row:1 / 3}
+.mw-grp{grid-column:2 / -1; grid-row:1; display:flex; align-items:center; gap:10px; font:900 13px/1 var(--body); letter-spacing:.12em; color:var(--bk); min-width:0}
+.mw-grp i{flex:none; width:12px; height:12px; border-radius:50%; border:3px solid var(--bk)}
+.mw-grp span{flex:none}
+.mw-grp::after{content:""; flex:1; height:4px; border-radius:2px; background:var(--bk)}
+.mw-li[data-k="beauty"]{grid-column:2; grid-row:2}
+.mw-li[data-k="bodycare"]{grid-column:3; grid-row:2}
+.mw-li[data-k="pet"]{grid-column:4; grid-row:2; align-self:end}
+.mw-li[data-k="leisure"]{grid-column:5; grid-row:2; align-self:end}
+.mw-li[data-k="stay"]{grid-column:6; grid-row:2; align-self:end}
+
 .mw-tag{
   position:relative; flex:1; min-width:0; display:flex; flex-direction:column; justify-content:space-between; gap:6px;
-  min-height:clamp(88px, 12.4vh, 112px); padding:14px 16px 13px; border-radius:22px; text-decoration:none;
-  color:var(--bk); transition:transform .28s cubic-bezier(.2,1.3,.3,1), background .2s, color .2s, box-shadow .2s;
+  min-height:clamp(84px, 11.4vh, 108px); padding:13px 16px 12px; border-radius:22px; text-decoration:none;
+  color:var(--bk); transition:transform .28s cubic-bezier(.2,1.3,.3,1), background .2s, color .2s;
 }
 .mw-t-head{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
 .mw-t-head .nm{font:400 clamp(16px, 1.5vw, 22px)/1.05 var(--disp); letter-spacing:.01em; white-space:nowrap}
-.mw-t-head .en{font:900 10px/1 var(--body); letter-spacing:.16em; text-transform:uppercase; opacity:.7}
-.mw-t-state{display:inline-flex; align-items:center; gap:7px; font:900 12.5px/1.2 var(--body); letter-spacing:.08em}
+.mw-t-head .en{font:900 12px/1 var(--body); letter-spacing:.14em; text-transform:uppercase; opacity:.75}
+.mw-t-state{display:inline-flex; align-items:center; gap:7px; font:900 13px/1.2 var(--body); letter-spacing:.08em}
 .mw-t-state i{width:9px; height:9px; border-radius:50%; border:2px solid currentColor; flex:none}
 .mw-t-go{display:flex; align-items:center; justify-content:space-between; font:900 13px/1.2 var(--body); letter-spacing:.06em}
 .mw-t-go .ar{font-size:17px; transition:transform .25s}
@@ -137,20 +169,22 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 @keyframes mwBlink{0%,100%{opacity:1}50%{opacity:.35}}
 .mw-t-figs .f{display:inline-flex; align-items:baseline; gap:3px; flex-wrap:wrap; max-width:100%}
 .mw-t-figs b{font:400 clamp(22px, 2.1vw, 31px)/1 var(--disp); letter-spacing:.01em; color:var(--yl)}
-.mw-t-figs em{font:900 12.5px/1.2 var(--body); font-style:normal; letter-spacing:.05em; color:var(--wh)}
-.mw-t-figs small{flex-basis:100%; font:700 11.5px/1.35 var(--body); letter-spacing:.03em; color:rgba(255,253,244,.8); margin-top:3px}
+.mw-t-figs em{font:900 13px/1.2 var(--body); font-style:normal; letter-spacing:.05em; color:var(--wh)}
+.mw-t-figs small{flex-basis:100%; font:700 13px/1.35 var(--body); letter-spacing:.02em; color:rgba(255,253,244,.84); margin-top:3px}
 .mw-t-figs .is-open b{transition:opacity .4s}
 .mw-t-figs .is-open:not([data-on]) b{opacity:.35}
-.mw-tag.is-live:hover{background:var(--rd); color:var(--wh); transform:translateY(-5px) rotate(-.4deg)}
+.mw-t-figs .is-open:not([data-on]) small{visibility:hidden}
+.mw-tag.is-live:hover{background:#C92E10; color:var(--wh); transform:translateY(-5px) rotate(-.4deg)}
 .mw-tag.is-live:hover .mw-t-figs b{color:var(--wh)}
 .mw-tag.is-live:hover .mw-t-state i{background:var(--wh)}
 
-/* 掲載準備中・入れる（ビューティー・ボディケア）: 黒い太枠 */
+/* 準備中・入れる（ビューティー・ボディケア）: 黒い太枠 */
 .mw-tag.is-ready{border:4px solid var(--bk); padding:11px 13px 10px; background:transparent}
 .mw-tag.is-ready:hover{background:var(--bk); color:var(--yl); transform:translateY(-5px) rotate(.4deg)}
 
-/* 掲載準備中・入れない（ペット・おでかけ・ステイ）: 黒の破線の枠・字は薄く・リンクにしない */
-.mw-tag.is-wait{border:3px dashed rgba(20,17,10,.62); padding:11px 13px 10px; color:rgba(20,17,10,.62); cursor:default}
+/* 準備中・入れない（ペット・おでかけ・ステイ）: 低い破線の札・字は薄く・リンクにしない */
+.mw-tag.is-wait{border:3px dashed rgba(20,17,10,.72); padding:0 13px; min-height:clamp(46px, 6.6vh, 58px); color:rgba(20,17,10,.72); cursor:default; justify-content:center; border-radius:18px}
+.mw-tag.is-wait .mw-t-head{justify-content:flex-start}
 .mw-tag.is-wait.nudge{animation:mwNudge .5s ease}
 @keyframes mwNudge{0%,100%{transform:none}20%{transform:translateX(-6px) rotate(-1deg)}45%{transform:translateX(6px) rotate(1deg)}70%{transform:translateX(-3px)}}
 
@@ -162,31 +196,39 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 
 /* ───────────────────────── スマホ ───────────────────────── */
 @media (max-width:760px){
-  .mw{--u:clamp(1.6px, .56vw, 2.6px); --cx:50%; --cy:27%; min-height:700px}
-  /* 3 文字ずつ 3 段に積む。輪の上半分の下へ重ね、輪より手前に出して読めるようにする */
-  .mw-hwrap{z-index:2}
-  .mw-h1{--hf:45; --hy:58; left:50%; transform:translate(-50%, -50%); text-align:center}
+  .mw{min-height:600px}
+  .mw-stage{--u:clamp(1.4px, min(.55cqw, calc(100cqh / 190)), 2.7px); --cx:50%; --cy:41%}
+  /* 3 文字ずつ 3 段に積む。輪より手前なので、輪がどこを通っても読める */
+  /* 舞台の下に寄せて置く（舞台が低い画面でも、下の札・リードに重ならない） */
+  .mw-h1{--hf:44; left:50%; top:auto; bottom:2.5cqh; transform:translateX(-50%); text-align:center; -webkit-text-stroke-width:calc(var(--u) * 4)}
+  .mw-stage::after{display:none}
+  .mw-hint{left:50%; top:calc(var(--u) * 12); width:44px; height:44px; min-width:44px; min-height:44px; margin:0 0 0 -22px; border-width:3px}
+  .mw-hint svg{width:26px; height:13px}
   .mw-bar{padding-top:14px}
   .mw-logo .en{display:none}
   .mw-find{min-height:44px; padding:0 18px 0 14px; font-size:15px}
-  .mw-foot{gap:10px; bottom:12px}
-  .mw-lead{max-width:none; font-size:13px; line-height:1.65}
-  .mw-tags{grid-template-columns:repeat(6, 1fr); gap:8px}
-  .mw-li[data-k="gourmet"]{grid-column:1 / -1}
-  .mw-li[data-k="beauty"], .mw-li[data-k="bodycare"]{grid-column:span 3}
-  .mw-li[data-k="pet"], .mw-li[data-k="leisure"], .mw-li[data-k="stay"]{grid-column:span 2}
+  .mw-foot{gap:9px; padding-bottom:12px}
+  .mw-lead{max-width:none; font-size:13px; line-height:1.6}
+  .mw-tags{grid-template-columns:repeat(6, 1fr); grid-template-rows:none; gap:8px}
+  .mw-li[data-k="gourmet"]{grid-column:1 / -1; grid-row:auto}
+  .mw-grp{grid-column:1 / -1; grid-row:auto; margin-top:2px}
+  .mw-li[data-k="beauty"]{grid-column:1 / span 3; grid-row:auto}
+  .mw-li[data-k="bodycare"]{grid-column:4 / span 3; grid-row:auto}
+  .mw-li[data-k="pet"], .mw-li[data-k="leisure"], .mw-li[data-k="stay"]{grid-column:span 2; grid-row:auto; align-self:stretch}
   .mw-tag{min-height:60px; border-radius:16px}
-  .mw-tag.is-live{min-height:96px; padding:11px 14px 10px; column-gap:14px}
+  /* グルメ: 1 段目に 名前・状態・入る、2 段目に数字 */
+  .mw-tag.is-live{min-height:0; padding:11px 14px 11px; column-gap:10px; row-gap:7px; grid-template-columns:auto 1fr auto; grid-template-rows:auto auto; align-items:center}
+  .mw-tag.is-live .mw-t-head{grid-column:1; grid-row:1}
   .mw-tag.is-live .mw-t-head .en{display:none}
-  .mw-tag.is-live .mw-t-figs{gap:4px 12px}
-  .mw-t-figs b{font-size:25px}
-  .mw-tag.is-wait{padding:8px 10px; gap:4px; min-height:56px}
-  .mw-tag.is-wait .mw-t-head .nm{font-size:15px}
-  .mw-tag.is-wait .mw-t-state{font-size:11.5px; letter-spacing:.02em}
-  .mw-tag.is-ready{padding:9px 11px; min-height:64px; display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; row-gap:5px}
+  .mw-tag.is-live .mw-t-state{grid-column:2; grid-row:1; align-self:center}
+  .mw-tag.is-live .mw-t-go{grid-column:3; grid-row:1; gap:8px}
+  .mw-tag.is-live .mw-t-figs{grid-column:1 / -1; grid-row:2; gap:2px 14px}
+  .mw-t-figs b{font-size:24px}
+  .mw-tag.is-wait{padding:0 10px; min-height:46px; border-radius:14px}
+  .mw-tag.is-wait .mw-t-head .nm{font-size:14.5px}
+  .mw-tag.is-ready{padding:9px 11px; min-height:60px; display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; row-gap:2px}
   .mw-tag.is-ready .mw-t-head{grid-column:1 / -1}
-  .mw-tag.is-ready .mw-t-state{grid-column:1}
-  .mw-tag.is-ready .mw-t-go{grid-column:2}
+  .mw-tag.is-ready .mw-t-go{grid-column:2; grid-row:2}
   /* 押す所の言葉は読み上げ用に残し、見た目は矢印だけ */
   .mw-tag.is-ready .mw-t-go .t{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
 }
@@ -194,45 +236,57 @@ body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
 /* ───────────────────────── 下のブロック ───────────────────────── */
 .mws{
   position:relative; overflow:clip; background:var(--yl); color:var(--bk); font-family:var(--body);
-  padding:clamp(72px, 10vw, 150px) var(--g) clamp(84px, 11vw, 170px);
+  padding:clamp(100px, 14vw, 230px) var(--g) clamp(100px, 13vw, 210px);
 }
-.mws-in{position:relative; max-width:1360px; margin:0 auto; display:grid; grid-template-columns:repeat(12, minmax(0,1fr)); column-gap:clamp(12px, 2vw, 28px); row-gap:clamp(40px, 5.4vw, 84px)}
+.mws-in{position:relative; max-width:1400px; margin:0 auto; display:grid; grid-template-columns:repeat(12, minmax(0,1fr)); column-gap:clamp(12px, 2vw, 28px); row-gap:clamp(64px, 9vw, 150px)}
 .mws p{margin:0; text-wrap:balance}
 .mws .ph{display:inline-block}
-.mws-p1{grid-column:1 / -1; font:400 clamp(30px, 6.1vw, 100px)/1.22 var(--disp); letter-spacing:-.01em}
-.mws-p2{grid-column:1 / span 8; font:900 clamp(20px, 2.55vw, 40px)/1.9 var(--body); letter-spacing:.02em}
-.mws-w{position:relative; display:inline-block; padding:0 .3em; margin:0 .08em; line-height:1.15; white-space:nowrap}
-.mws-w::before{content:""; position:absolute; inset:-.14em -.04em; border:.13em solid var(--bk); border-radius:50%}
+
+.mws-p1{grid-column:1 / -1; font:400 clamp(34px, 7.7vw, 132px)/1.16 var(--disp); letter-spacing:-.012em}
+.mws-p2{grid-column:1 / span 8; font:900 clamp(21px, 2.7vw, 44px)/1.9 var(--body); letter-spacing:.02em; align-self:center; text-wrap:wrap}
+.mws-w{position:relative; display:inline-block; padding:0 .34em; margin:0 .1em; line-height:1.15; white-space:nowrap}
+.mws-w::before{content:""; position:absolute; inset:-.16em -.04em; border:.14em solid var(--bk); border-radius:50%}
 .mws-w[data-w="1"]::before{border-color:var(--wh)}
 .mws-w[data-w="2"]::before{border-color:var(--rd)}
-.mws-p3{grid-column:4 / -1; font:900 clamp(18px, 2.2vw, 34px)/1.5 var(--body); display:flex; flex-direction:column; gap:.7em}
-.mws-p3 .ln{display:flex; align-items:center; gap:.7em}
-.mws-p3 i{flex:none; width:1.1em; height:1.1em; border-radius:50%; border:.3em solid var(--bk)}
+
+/* 3 つの輪の飾り（絡み合った 3 つの太い輪。ゆっくり回る） */
+.mws-deco{grid-column:9 / -1; grid-row:2; position:relative; aspect-ratio:1; width:100%; max-width:440px; justify-self:end; pointer-events:none; animation:mwSpin 46s linear infinite}
+.mws-deco i{position:absolute; width:64%; aspect-ratio:1; border-radius:50%; border:clamp(14px, 2.1vw, 30px) solid var(--bk)}
+.mws-deco i[data-w="0"]{left:0; top:2%}
+.mws-deco i[data-w="1"]{right:0; top:2%; border-color:var(--wh)}
+.mws-deco i[data-w="2"]{left:18%; bottom:0; border-color:var(--rd)}
+@keyframes mwSpin{to{transform:rotate(360deg)}}
+
+.mws-p3{grid-column:1 / -1; font:900 clamp(20px, 3.1vw, 50px)/1.4 var(--body); display:flex; flex-direction:column; border-bottom:clamp(4px, .5vw, 7px) solid var(--bk)}
+.mws-p3 .ln{display:flex; align-items:center; gap:.62em; padding:.62em 0; border-top:clamp(4px, .5vw, 7px) solid var(--bk)}
+.mws-p3 i{flex:none; width:1.25em; height:1.25em; border-radius:50%; border:.34em solid var(--bk)}
 .mws-p3 i[data-w="1"]{border-color:var(--wh)}
 .mws-p3 i[data-w="2"]{border-color:var(--rd)}
 .mws-p3 .tx{text-wrap:pretty}
-.mws-p4{grid-column:1 / -1; font:400 clamp(24px, 4.2vw, 68px)/1.3 var(--disp); background:var(--bk); color:var(--yl); border-radius:clamp(22px, 3vw, 44px); padding:clamp(28px, 4.4vw, 68px) clamp(24px, 4.2vw, 68px)}
-.mws-p4 .ln{display:block}
+
+.mws-p4{position:relative; overflow:hidden; grid-column:1 / -1; font:400 clamp(26px, 5.7vw, 96px)/1.28 var(--disp); background:var(--bk); color:var(--yl); border-radius:clamp(24px, 3.4vw, 56px); padding:clamp(40px, 6vw, 108px) clamp(26px, 5vw, 96px)}
+.mws-p4 .ln{display:block; position:relative; z-index:1}
 .mws-p4 .ln + .ln{color:var(--wh)}
-/* 3 つの輪の飾り（絡み合った 3 つの太い輪。右上の余白に） */
-.mws-deco{position:absolute; right:calc(var(--g) * -.2); top:clamp(200px, 21vw, 300px); width:clamp(150px, 24vw, 340px); aspect-ratio:1; pointer-events:none}
-.mws-deco i{position:absolute; width:62%; aspect-ratio:1; border-radius:50%; border:clamp(10px, 1.6vw, 22px) solid var(--bk)}
-.mws-deco i[data-w="0"]{left:0; top:0}
-.mws-deco i[data-w="1"]{right:0; top:0; border-color:var(--wh)}
-.mws-deco i[data-w="2"]{left:19%; bottom:0; border-color:var(--rd)}
+.mws-p4::after{content:""; position:absolute; right:-9%; bottom:-38%; width:min(46vw, 620px); aspect-ratio:1; border-radius:50%; border:clamp(18px, 3vw, 44px) solid var(--rd); opacity:.34; pointer-events:none}
+
+/* 入る（スクロールで現れる）。JS が動いたときだけ隠した状態から始める */
+.mws[data-js] [data-rv]{transition:opacity .8s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.9,.2,1)}
+.mws[data-js] [data-rv]:not([data-in]){opacity:0; transform:translateY(46px)}
 
 @media (max-width:900px){
-  .mws-p2{grid-column:1 / -1}
-  .mws-p3{grid-column:1 / -1}
-  .mws-deco{display:none}
+  .mws-in{grid-template-columns:minmax(0,1fr)}
+  .mws-p1, .mws-p2, .mws-p3, .mws-p4{grid-column:1}
+  .mws-deco{grid-column:1; grid-row:auto; width:min(74vw, 340px); justify-self:center}
 }
 
 /* ───────────────────────── 動きを減らす設定 ───────────────────────── */
 @media (prefers-reduced-motion:reduce){
   .mw-intro{animation:none}
   .mw-h1 .ch{animation:none}
-  .mw-tag, .mw-t-go span, .mw-bar, .mw-foot{transition:none}
+  .mw-tag, .mw-t-go .ar, .mw-bar, .mw-foot{transition:none}
   .mw-tag.is-live .mw-t-state i{animation:none}
   .mw-tag.is-wait.nudge{animation:none}
   .mw-persp{cursor:default}
+  .mw-hint{display:none}
+  .mws-deco{animation:none}
 }

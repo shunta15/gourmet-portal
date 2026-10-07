@@ -47,6 +47,11 @@ const RINGS: RingDef[] = [
   { id: "machi", text: "まち・".repeat(4), slots: 12, R: 66, H: 34, fs: 29, roll: -62, tilt: -28, speed: 14, mult: 1.3 },
 ];
 const SEGS = 48;
+/** 陰の濃さの上限。黒の帯（0）は白を重ねて手前を明るく、白・朱の帯は暗い色を重ねて縁と奥を沈める */
+const SHADE_MAX = [0.05, 0.32, 0.36];
+/** 板 k の角度 k×7.5° の sin/cos（陰の計算を軽くする） */
+const SEG_SIN = Array.from({ length: SEGS }, (_, k) => Math.sin((k * 7.5 * Math.PI) / 180));
+const SEG_COS = Array.from({ length: SEGS }, (_, k) => Math.cos((k * 7.5 * Math.PI) / 180));
 
 /** 1 つの輪に重なったとき（3 段）。半径をそろえ、軸の方向に積む */
 const MERGE_R = RINGS[1].R;
@@ -88,6 +93,7 @@ function Ring({ r, index }: { r: RingDef; index: number }) {
             <i className="mw-seg" key={i} style={{ ["--i" as string]: i } as CSSProperties}>
               <b className="mw-f">
                 <span className="mw-strip">{r.text}</span>
+                <em className="mw-sh" />
               </b>
               <b className="mw-b">
                 <span className="mw-strip">{r.text}</span>
@@ -131,8 +137,9 @@ export default function MitsuwaHub({
       });
       if (!stop) setOpenNow({ open: o, known: k });
     };
-    const ric = (window as unknown as { requestIdleCallback?: (f: () => void) => number }).requestIdleCallback;
-    const h = ric ? ric(() => void calc()) : window.setTimeout(() => void calc(), 400);
+    const ric = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+    // 輪が動き続けて空きが出なくても 1.2 秒以内には数える（timeout）
+    const h = ric ? ric(() => void calc(), { timeout: 1200 }) : window.setTimeout(() => void calc(), 400);
     const iv = window.setInterval(() => void calc(), 60_000);
     return () => {
       stop = true;
@@ -153,13 +160,27 @@ export default function MitsuwaHub({
     const probe = root.querySelector<HTMLElement>(".mw-probe");
     const wraps = Array.from(root.querySelectorAll<HTMLElement>(".mw-ring"));
     const spins = Array.from(root.querySelectorAll<HTMLElement>(".mw-spin"));
+    // 陰（板ごとの重ね色の濃さ）。輪ごとに SEGS 枚。値が変わったときだけ書く
+    const shades = wraps.map((w) => Array.from(w.querySelectorAll<HTMLElement>(".mw-sh")));
+    const shadeLast = RINGS.map(() => new Float32Array(SEGS).fill(-1));
     if (!scene || !ringsEl || !h1 || !hwrap || !veil || !probe || wraps.length !== RINGS.length) return;
 
+    const persp = root.querySelector<HTMLElement>(".mw-persp");
+    const stageEl = root.querySelector<HTMLElement>(".mw-stage");
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     let reduce = mq.matches;
     let u = 3.9;
+    // 入るとき、輪の穴が画面の真ん中に来るように、舞台ごと動かす距離（px）
+    let dx = 0;
+    let dy = 0;
     const measure = () => {
       u = (probe.getBoundingClientRect().width || 390) / 100;
+      if (!stageEl) return;
+      const cs = getComputedStyle(stageEl);
+      const cx = (parseFloat(cs.getPropertyValue("--cx")) / 100) * stageEl.clientWidth;
+      const cy = (parseFloat(cs.getPropertyValue("--cy")) / 100) * stageEl.clientHeight;
+      dx = root.clientWidth / 2 - cx;
+      dy = root.clientHeight * 0.46 - cy;
     };
 
     /* 状態（React には載せない） */
@@ -186,8 +207,45 @@ export default function MitsuwaHub({
     let visible = true;
     const timers: number[] = [];
 
-    const render = () => {
+    /* 陰: 板の「向き」から、手前が明るく・縁と奥が沈むように、板ごとの重ね色の濃さを決める（光は左上の手前から） */
+    const shade = (i: number, rollDeg: number, tiltDeg: number) => {
+      const rr = (rollDeg * Math.PI) / 180;
+      const tt = (tiltDeg * Math.PI) / 180;
+      const cr = Math.cos(rr);
+      const sr = Math.sin(rr);
+      const ct = Math.cos(tt);
+      const st = Math.sin(tt);
+      const els = shades[i];
+      const last = shadeLast[i];
+      const a0 = (S.angle[i] * Math.PI) / 180;
+      const sa = Math.sin(a0);
+      const ca = Math.cos(a0);
+      for (let k = 0; k < SEGS; k++) {
+        const sn = sa * SEG_COS[k] + ca * SEG_SIN[k];
+        const cs = ca * SEG_COS[k] - sa * SEG_SIN[k];
+        const y1 = -cs * st;
+        const z2 = cs * ct;
+        let o = 0;
+        if (z2 > 0.02) {
+          const x2 = sn * cr - y1 * sr;
+          const y2 = sn * sr + y1 * cr;
+          const dot = x2 * -0.34 + y2 * -0.5 + z2 * 0.8;
+          const lit = clamp01(0.5 + 0.5 * dot);
+          o = i === 0 ? SHADE_MAX[0] * lit * lit * lit : SHADE_MAX[i] * clamp01(0.62 * (1 - lit) + 0.38 * (1 - z2) * (1 - z2) * 2);
+        }
+        o = Math.round(o * 500) / 500;
+        if (o !== last[k]) {
+          last[k] = o;
+          els[k].style.opacity = String(o);
+        }
+      }
+    };
+
+    let frameNo = 0;
+    const render = (force = false) => {
       const m = S.m;
+      // 陰はゆるやかに変わるので、1 フレームおきに書く（初回・サイズ変更・動きを減らす設定の切替は必ず書く）
+      const doShade = force || (frameNo++ & 1) === 0;
       const e = smooth(S.d);
       const tiltM = MERGE_TILT + (-90 - MERGE_TILT) * smooth(S.d / 0.82);
       for (let i = 0; i < RINGS.length; i++) {
@@ -200,10 +258,12 @@ export default function MitsuwaHub({
         const off = lerp(0, MERGE_OFF[i] * u, m);
         wraps[i].style.transform = `rotateZ(${roll.toFixed(2)}deg) rotateX(${tilt.toFixed(2)}deg) translateY(${off.toFixed(1)}px) scale(${sc.toFixed(4)})`;
         spins[i].style.transform = `rotateY(${S.angle[i].toFixed(2)}deg)`;
+        if (doShade) shade(i, roll, tilt);
       }
       const bob = reduce ? 0 : Math.sin(S.t * 0.7) * 0.9 * u;
-      ringsEl.style.transform = `translateY(${bob.toFixed(1)}px) rotateX(${S.pitch.toFixed(2)}deg) rotateY(${S.yaw.toFixed(2)}deg)`;
+      ringsEl.style.transform = `translateY(${(bob - 12 * u * Math.min(1.1, m)).toFixed(1)}px) rotateX(${S.pitch.toFixed(2)}deg) rotateY(${S.yaw.toFixed(2)}deg) scale(${(1 + 0.05 * Math.min(1.15, m)).toFixed(4)})`;
       scene.style.transform = S.d > 0 ? `translateZ(${(DIVE_Z * u * e * e).toFixed(1)}px)` : "";
+      if (persp) persp.style.transform = S.d > 0 ? `translate(${(dx * e).toFixed(1)}px, ${(dy * e).toFixed(1)}px)` : "";
       h1.style.opacity = S.d > 0 ? String(1 - clamp01((S.d - 0.3) / 0.35)) : "";
       hwrap.style.transform = S.d > 0 ? `scale(${(1 + 1.3 * e * e).toFixed(3)})` : "";
       veil.style.opacity = S.d > 0 ? String(smooth((S.d - 0.74) / 0.26)) : "0";
@@ -232,7 +292,7 @@ export default function MitsuwaHub({
       let rem = dt;
       while (rem > 0) {
         const h = Math.min(rem, 1 / 120);
-        const acc = 150 * (S.mt - S.m) - 17 * S.mv;
+        const acc = 210 * (S.mt - S.m) - 20 * S.mv;
         S.mv += acc * h;
         S.m += S.mv * h;
         rem -= h;
@@ -262,7 +322,7 @@ export default function MitsuwaHub({
       pulseT = window.setTimeout(() => {
         if (!leavingNow) S.mt = 0;
         kick();
-      }, 720);
+      }, 950);
       kick();
     };
     /* 入る: 重なって、輪の穴へ飛び込む */
@@ -318,6 +378,7 @@ export default function MitsuwaHub({
         drag.on = true;
         S.dragging = true;
         S.extra = 0;
+        root.classList.add("is-touched");
         drag.last = e.clientX;
         try {
           root.setPointerCapture(e.pointerId);
@@ -360,6 +421,18 @@ export default function MitsuwaHub({
     root.addEventListener("pointercancel", onUp);
     root.addEventListener("pointerleave", onLeave);
 
+    /* ── スクロール: ページを動かした勢いで、輪が少し回る（画面にあるあいだだけ） ── */
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const d = y - lastY;
+      lastY = y;
+      if (reduce || leavingNow || !visible || Math.abs(d) < 2) return;
+      S.extra = Math.max(-420, Math.min(420, S.extra + d * 0.35));
+      kick();
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+
     /* ── 矢印キー（入力欄の中は除く） ── */
     const onKey = (e: globalThis.KeyboardEvent) => {
       if (reduce || leavingNow || e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
@@ -369,6 +442,7 @@ export default function MitsuwaHub({
       const r = root.getBoundingClientRect();
       if (r.bottom < window.innerHeight * 0.5 || r.top > window.innerHeight * 0.5) return;
       S.extra = Math.max(-520, Math.min(520, S.extra + (e.key === "ArrowRight" ? 150 : -150)));
+      root.classList.add("is-touched");
       kick();
     };
     window.addEventListener("keydown", onKey);
@@ -382,7 +456,7 @@ export default function MitsuwaHub({
         S.extra = 0;
         S.yaw = S.pitch = 0;
         S.t = 0;
-        render();
+        render(true);
       } else kick();
     };
     mq.addEventListener("change", onReduce);
@@ -413,18 +487,18 @@ export default function MitsuwaHub({
       S.d = 0;
       S.mt = 0;
       setLeaving(false);
-      render();
+      render(true);
       kick();
     };
     window.addEventListener("pageshow", onShow);
 
     const ro = new ResizeObserver(() => {
       measure();
-      render();
+      render(true);
     });
     ro.observe(probe);
     measure();
-    render();
+    render(true);
     kick();
 
     return () => {
@@ -437,6 +511,7 @@ export default function MitsuwaHub({
       root.removeEventListener("pointercancel", onUp);
       root.removeEventListener("pointerleave", onLeave);
       window.removeEventListener("keydown", onKey);
+      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("pageshow", onShow);
       document.removeEventListener("visibilitychange", onVis);
       mq.removeEventListener("change", onReduce);
@@ -453,34 +528,129 @@ export default function MitsuwaHub({
     api.current.go(it.path);
   };
 
+  const live = items.filter((it) => it.live);
+  const rest = items.filter((it) => !it.live);
+
+  const renderTag = (it: HubItem) => {
+    const cls = `mw-tag ${it.live ? "is-live" : it.enter ? "is-ready" : "is-wait"}`;
+    const head = (
+      <span className="mw-t-head">
+        <span className="nm">{it.name}</span>
+        {it.live && (
+          <span className="en" aria-hidden="true">
+            {it.en}
+          </span>
+        )}
+      </span>
+    );
+    if (it.enter) {
+      return (
+        <li key={it.key} className="mw-li" data-k={it.key}>
+          <Link
+            href={it.path}
+            prefetch={false}
+            className={cls}
+            onClick={onGo(it)}
+            onPointerEnter={(e) => {
+              if (e.pointerType === "mouse") {
+                api.current.pulse();
+                router.prefetch(it.path);
+              }
+            }}
+            onFocus={(e) => {
+              if (e.currentTarget.matches(":focus-visible")) api.current.pulse();
+            }}
+          >
+            {head}
+            {it.live ? (
+              <span className="mw-t-state">
+                <i aria-hidden="true" />
+                掲載中
+              </span>
+            ) : (
+              <span className="mw-sr">掲載準備中</span>
+            )}
+            {it.live && (
+              <span className="mw-t-figs">
+                <span className="f">
+                  <b>{fmt(gourmetTotal)}</b>
+                  <em>店</em>
+                </span>
+                <span className="f">
+                  <em>特集</em>
+                  <b>{fmt(featureTotal)}</b>
+                  <em>本</em>
+                </span>
+                <span className="f is-open" data-on={openNow ? "" : undefined}>
+                  <em>いま営業中</em>
+                  <b>{openNow ? fmt(openNow.open) : "–"}</b>
+                  <em>軒</em>
+                  <small>営業時間が確かな{openNow ? fmt(openNow.known) : "–"}店のうち</small>
+                </span>
+              </span>
+            )}
+            <span className="mw-t-go">
+              <span className="t">{it.live ? `${it.name}に入る` : "ページを見る"}</span>
+              <span className="ar" aria-hidden="true">
+                →
+              </span>
+            </span>
+          </Link>
+        </li>
+      );
+    }
+    return (
+      <li key={it.key} className="mw-li" data-k={it.key}>
+        <div
+          className={cls}
+          onPointerEnter={(e) => e.pointerType === "mouse" && api.current.pulse()}
+          onClick={(e) => {
+            api.current.pulse();
+            api.current.nudge(e.currentTarget);
+          }}
+        >
+          {head}
+          <span className="mw-sr">掲載準備中</span>
+        </div>
+      </li>
+    );
+  };
+
   return (
     <section ref={rootRef} className={`mw${leaving ? " is-leaving" : ""}`} aria-labelledby="mw-h1">
-      <div className="mw-hwrap">
-          <h1 id="mw-h1" className="mw-h1">
-          {HEADLINE_SEGS.map((seg, si) => {
-            const base = HEADLINE_SEGS.slice(0, si).join("").length;
-            return (
-              <span key={si} className={`seg${si === HEADLINE_SEGS.length - 1 ? " l2" : ""}`}>
-                {Array.from(seg).map((c, ci) => (
-                  <span key={ci} className="ch" style={{ ["--ci" as string]: base + ci } as CSSProperties}>
-                    {c}
-                  </span>
-                ))}
-              </span>
-            );
-          })}
-        </h1>
-      </div>
-      <div className="mw-persp">
-        <div className="mw-scene">
-          <div className="mw-rings" aria-hidden="true">
-            {RINGS.map((r, i) => (
-              <Ring key={r.id} r={r} index={i} />
-            ))}
+      <div className="mw-stage">
+        <div className="mw-hwrap">
+            <h1 id="mw-h1" className="mw-h1">
+            {HEADLINE_SEGS.map((seg, si) => {
+              const base = HEADLINE_SEGS.slice(0, si).join("").length;
+              return (
+                <span key={si} className={`seg${si === HEADLINE_SEGS.length - 1 ? " l2" : ""}`}>
+                  {Array.from(seg).map((c, ci) => (
+                    <span key={ci} className="ch" style={{ ["--ci" as string]: base + ci } as CSSProperties}>
+                      {c}
+                    </span>
+                  ))}
+                </span>
+              );
+            })}
+          </h1>
+        </div>
+        <span className="mw-hint" aria-hidden="true">
+          <svg viewBox="0 0 48 24" width="36" height="18" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M14 5 4 12l10 7M34 5l10 7-10 7" />
+          </svg>
+        </span>
+        <div className="mw-persp">
+          <div className="mw-scene">
+            <div className="mw-rings" aria-hidden="true">
+              {RINGS.map((r, i) => (
+                <Ring key={r.id} r={r} index={i} />
+              ))}
+            </div>
           </div>
         </div>
+        <span className="mw-probe" aria-hidden="true" />
       </div>
-      <span className="mw-probe" aria-hidden="true" />
 
       <header className="mw-bar" data-nodrag>
         <Link href="/" className="mw-logo" aria-label="マチノワ" aria-current="page">
@@ -499,89 +669,13 @@ export default function MitsuwaHub({
       <div className="mw-foot">
         <p className="mw-lead">{LEAD}</p>
         <ul className="mw-tags" data-nodrag>
-          {items.map((it) => {
-            const cls = `mw-tag ${it.live ? "is-live" : it.enter ? "is-ready" : "is-wait"}`;
-            const head = (
-              <span className="mw-t-head">
-                <span className="nm">{it.name}</span>
-                {it.live && (
-                  <span className="en" aria-hidden="true">
-                    {it.en}
-                  </span>
-                )}
-              </span>
-            );
-            const state = (
-              <span className="mw-t-state">
-                <i aria-hidden="true" />
-                {it.live ? "掲載中" : "掲載準備中"}
-              </span>
-            );
-            if (it.enter) {
-              return (
-                <li key={it.key} className={`mw-li ${it.live ? "is-live" : ""}`} data-k={it.key}>
-                  <Link
-                    href={it.path}
-                    prefetch={false}
-                    className={cls}
-                    onClick={onGo(it)}
-                    onPointerEnter={(e) => {
-                      if (e.pointerType === "mouse") {
-                        api.current.pulse();
-                        router.prefetch(it.path);
-                      }
-                    }}
-                    onFocus={(e) => {
-                      if (e.currentTarget.matches(":focus-visible")) api.current.pulse();
-                    }}
-                  >
-                    {head}
-                    {state}
-                    {it.live && (
-                      <span className="mw-t-figs">
-                        <span className="f">
-                          <b>{fmt(gourmetTotal)}</b>
-                          <em>店</em>
-                        </span>
-                        <span className="f">
-                          <em>特集</em>
-                          <b>{fmt(featureTotal)}</b>
-                          <em>本</em>
-                        </span>
-                        <span className="f is-open" data-on={openNow ? "" : undefined}>
-                          <em>いま営業中</em>
-                          <b>{openNow ? fmt(openNow.open) : "000"}</b>
-                          <em>軒</em>
-                          <small>営業時間が確かな{openNow ? fmt(openNow.known) : "000"}店のうち</small>
-                        </span>
-                      </span>
-                    )}
-                    <span className="mw-t-go">
-                      <span className="t">{it.live ? `${it.name}に入る` : "ページを見る"}</span>
-                      <span className="ar" aria-hidden="true">
-                        →
-                      </span>
-                    </span>
-                  </Link>
-                </li>
-              );
-            }
-            return (
-              <li key={it.key} className="mw-li" data-k={it.key}>
-                <div
-                  className={cls}
-                  onPointerEnter={(e) => e.pointerType === "mouse" && api.current.pulse()}
-                  onClick={(e) => {
-                    api.current.pulse();
-                    api.current.nudge(e.currentTarget);
-                  }}
-                >
-                  {head}
-                  {state}
-                </div>
-              </li>
-            );
-          })}
+          {live.map((it) => renderTag(it))}
+          {/* 準備中の 5 つをひとまとめに括る見出し（「掲載準備中」は、ここに 1 回だけ。各札には読み上げ用に残す） */}
+          <li className="mw-grp" aria-hidden="true">
+            <i />
+            <span>掲載準備中</span>
+          </li>
+          {rest.map((it) => renderTag(it))}
         </ul>
       </div>
       <div className="mw-veil" aria-hidden="true" />
