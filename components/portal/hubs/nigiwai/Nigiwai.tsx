@@ -340,8 +340,9 @@ export default function Nigiwai({
         <i />
       </div>
 
-      {/* 料理の写真の輪（飾り。回る・つかめる） */}
-      <div className="ng-ring" ref={ringRef} aria-hidden="true" style={{ ["--vc" as string]: cur.color } as CSSProperties}>
+      {/* 料理の写真の輪（飾り。回る・つかめる）。画面の上下の端では、写真がやわらかく朱に溶ける（半端な切れ目を見せない） */}
+      <div className="ng-ringwrap" aria-hidden="true">
+      <div className="ng-ring" ref={ringRef} style={{ ["--vc" as string]: cur.color } as CSSProperties}>
         {dishes.map((d, i) => {
           const p = photos[i];
           return (
@@ -353,13 +354,14 @@ export default function Nigiwai({
               <span className="ng-photo">
                 {p && (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={p.src} srcSet={p.srcSet} sizes="(max-width: 760px) 40vw, 17vw" alt="" draggable={false} decoding="async" loading="eager" fetchPriority={i < 6 ? "high" : "auto"} />
+                  <img src={p.src} srcSet={p.srcSet} sizes="(max-width: 760px) 30vw, 15vw" alt="" draggable={false} style={{ objectPosition: p.pos }} decoding="async" loading="eager" fetchPriority={i < 6 ? "high" : "auto"} />
                 )}
               </span>
               <span className="ng-void" />
             </span>
           );
         })}
+      </div>
       </div>
 
       <header className="ng-bar" data-nodrag>
@@ -381,7 +383,10 @@ export default function Nigiwai({
           <h1 id="ng-h1" className="ng-h1">
             {HEAD.map((t, i) => (
               <span className="ln" key={i} style={{ ["--li" as string]: i } as CSSProperties}>
-                <span className="tx">{t}</span>
+                <span className="tx">
+                  {t.slice(0, -1)}
+                  <i className="mk">{t.slice(-1)}</i>
+                </span>
               </span>
             ))}
           </h1>
@@ -432,10 +437,6 @@ export default function Nigiwai({
           </ul>
 
           <div className="ng-info" key={cur.key}>
-            <p className="ng-state">
-              <i aria-hidden="true" />
-              {cur.live ? "掲載中" : "掲載準備中"}
-            </p>
             {cur.key === "gourmet" && (
               <p className="ng-facts">
                 <span>
@@ -450,21 +451,27 @@ export default function Nigiwai({
                 </span>
               </p>
             )}
-            {cur.enter && (
-              <Link
-                href={cur.path}
-                prefetch={false}
-                className="ng-go"
-                onClick={(e) => {
-                  if (suppressClick.current || !plain(e)) return;
-                  e.preventDefault();
-                  goRef.current(sel, e.currentTarget);
-                }}
-              >
-                {cur.live ? `${cur.name}に入る` : "ページを見る"}
-                <span aria-hidden="true">→</span>
-              </Link>
-            )}
+            <div className="ng-act">
+              <p className="ng-state">
+                <i aria-hidden="true" />
+                {cur.live ? "掲載中" : "掲載準備中"}
+              </p>
+              {cur.enter && (
+                <Link
+                  href={cur.path}
+                  prefetch={false}
+                  className="ng-go"
+                  onClick={(e) => {
+                    if (suppressClick.current || !plain(e)) return;
+                    e.preventDefault();
+                    goRef.current(sel, e.currentTarget);
+                  }}
+                >
+                  {cur.live ? `${cur.name}に入る` : "ページを見る"}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>
