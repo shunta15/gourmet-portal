@@ -13,8 +13,26 @@
   --out: cubic-bezier(0.16, 0.9, 0.22, 1);
   --gut: clamp(20px, 4vw, 64px);
   --H: max(100svh, 660px); /* 最初の画面の高さ */
+  --cy: calc(var(--H) / 2 + 10px); /* 輪の中心の高さ（スマホは下で上書き） */
+  /* 最初の画面の地。.ng と、.ngp の先頭（下の ::before）が同じ地を持つ */
+  --ng-hero-bg:
+    radial-gradient(62% 54% at 50% var(--cy), var(--ng-glow, transparent), transparent 74%),
+    linear-gradient(to bottom, transparent 84%, var(--ng-bg-d) 100%),
+    radial-gradient(120% 95% at 50% 52%, var(--ng-bg-l) 0%, var(--ng-bg) 52%, var(--ng-bg-d) 100%);
   font-family: var(--font);
   position: relative;
+}
+/* 色が決まった（スクリプトが data-theme を書いた）あと、最初の画面の中身（.ng）がまだ文書に届いていない瞬間にも、
+   その色の地を出す（共通の枠の生成りの地が、暗い色のときに一瞬見えないように）。.ng が届けば、その下に隠れる */
+.ngp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--H);
+  pointer-events: none;
+  background: var(--ng-hero-bg);
 }
 
 /* 自分の画面のあいだだけ、サイト共通の丸いカーソルを消して、つかめる手にする */
@@ -34,17 +52,13 @@ body:has(.ng) .cursor-ring {
   --R: min(38vw, calc(var(--H) * 0.52)); /* 輪の半径（写真の中心の軌道） */
   --dk: 0.376; /* 写真の直径 ÷ R（JS ではなくサーバーが決めた値で上書き） */
   --d: calc(var(--R) * var(--dk));
-  --cy: calc(var(--H) / 2 + 10px);
   --gut: clamp(20px, 4vw, 64px);
   position: relative;
   isolation: isolate;
   overflow: clip;
   height: var(--H);
   color: var(--ng-ink2);
-  background:
-    radial-gradient(62% 54% at 50% var(--cy), var(--ng-glow, transparent), transparent 74%),
-    linear-gradient(to bottom, transparent 84%, var(--ng-bg-d) 100%),
-    radial-gradient(120% 95% at 50% 52%, var(--ng-bg-l) 0%, var(--ng-bg) 52%, var(--ng-bg-d) 100%);
+  background: var(--ng-hero-bg);
   -webkit-user-select: none;
   user-select: none;
   touch-action: pan-y;
@@ -703,12 +717,12 @@ body:has(.ng) .cursor-ring {
     --H: max(100svh, 760px); /* 背の低い端末では、少し縦に長くして、重ならないようにする */
     --mt: calc(180px + (100vw - 2 * var(--gut)) * 0.3053); /* 輪の上端: 見出し・リードの下 */
     --mb: calc(var(--H) - 140px - env(safe-area-inset-bottom, 0px)); /* 輪の下端: ボタンの上 */
+    --cy: calc((var(--mt) + var(--mb)) / 2); /* 輪の中心の高さ */
   }
   .ng {
     --Dout: min(calc(100vw * 0.92), calc(var(--mb) - var(--mt))); /* 輪の外側の直径（幅の 9 割ほど） */
     --d: calc(var(--Dout) * 0.1848); /* 写真 1 枚（幅の 17% ほど） */
     --R: calc((var(--Dout) - var(--d)) / 2);
-    --cy: calc((var(--mt) + var(--mb)) / 2);
   }
   .ng-dish {
     --a: var(--am);

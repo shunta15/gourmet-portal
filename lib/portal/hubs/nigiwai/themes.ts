@@ -31,5 +31,11 @@ export const isThemeKey = (s: string): s is ThemeKey => (THEME_KEYS as string[])
 
 export const themeLabel = (k: ThemeKey) => THEMES.find((t) => t.key === k)?.label ?? k;
 
-/** 色の URL。朱は、いまのまま `/proto-hub/nigiwai` */
-export const themePath = (k: ThemeKey) => (k === "shu" ? "/proto-hub/nigiwai" : `/proto-hub/nigiwai/${k}`);
+/**
+ * 採用された 2 色（総合トップ）。名前なしのルート `/proto-hub/nigiwai` は、開くたびにこの 2 色のどちらかを半々で出す
+ * （components/portal/hubs/nigiwai/RandomTheme.tsx と NigiwaiPage の抽選スクリプト）。スクリプトなしのときは先頭の sometsuke。
+ */
+export const RANDOM_KEYS = ["sometsuke", "akagane"] as const satisfies readonly ThemeKey[];
+
+/** 色の URL。名前なしのルートは抽選なので、朱（いままでの色）も `/proto-hub/nigiwai/shu` で開く */
+export const themePath = (k: ThemeKey) => `/proto-hub/nigiwai/${k}`;
