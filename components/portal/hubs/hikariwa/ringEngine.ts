@@ -1,17 +1,19 @@
 /**
  * 光の輪（HIKARIWA）の描画エンジン（クライアント専用・React 非依存）。
  *
- * 輪は 6 つの弧。弧ごとに業種の色で光る。奥行き（遠近）をもち、傾いている。
- * 輪の「面」の上には、街の灯（小さな点）が散らばっていて、輪の上で出会いが起きるたびに、
- * 面を波が広がり、通りすぎた灯がともる（輪が街全体へ広がる）。
+ * 輪は 6 つの弧がつながった、1 つの大きな光の輪。弧ごとに業種の色で光り、強さ（太さ・明るさ）に差を付ける。
+ * 輪の面の上には、街の灯（小さな点）が散らばっていて、輪の上で出会いが起きるたびに、面を波が広がり、通りすぎた灯がともる。
+ * 輪の中（名前・数字・押す所を置く所）には、線も灯も出ない（CSS のマスクで抜く）。
  *
- * 描き方は Canvas 2D（加算合成）。にじみは、小さな解像度に描いたものを拡大して重ねる（1/4・1/8・1/16 の三段）。
- * 毎フレーム React の state は書かない。位置は ref と CSS 変数・transform・opacity だけに書く。
+ * 描き方は Canvas 2D（加算合成）。にじみは、小さな解像度に描いたものを、別の canvas として CSS で拡大して足す
+ * （1/4・1/8・1/16 の三段。大きな canvas に何度も重ね描きしない）。
+ * 毎フレーム React の state は書かない。位置は CSS 変数・transform・opacity だけに書く。
  *
  * 位置 pos は「弧いくつぶん」の小数（1 = 60°）。指で動かしている間は指に付き、離すと慣性＋バネで近い弧に止まる。
  * 画面に出ていないとき・タブが裏のときは、ループを止める。
  */
 import type { RGB } from "@/lib/portal/hubs/hikariwa/colors";
+import { WHITE, makeBlob, makeSprite, mix, rgba, rng } from "./glowKit";
 
 export type ArcKind = "live" | "quiet" | "faint";
 
@@ -23,7 +25,9 @@ export interface EngineItem {
 export interface EngineOpts {
   root: HTMLElement;
   canvas: HTMLCanvasElement;
-  /** 輪の置き場（この箱の中に輪が収まる）。CSS が決める */
+  /** にじみの層（小さい解像度。CSS で拡大して加算する）。1/4・1/8・1/16 の順 */
+  glow: [HTMLCanvasElement, HTMLCanvasElement, HTMLCanvasElement];
+  /** 輪の置き場（この箱の中に、輪と名前が収まる）。CSS が決める */
   stage: HTMLElement;
   items: EngineItem[];
   /** 輪のまわりに置く名前（li）。ring モードのときだけ位置を書く */
@@ -42,16 +46,22 @@ export interface Engine {
   dragged: () => boolean;
   freeze: () => void;
   thaw: () => void;
-  /** i 番目の名前の画面上の位置（入る光の出どころ） */
-  anchor: (i: number) => { x: number; y: number };
+  /** 入る光の出どころ（輪の正面の点の、画面上の位置） */
+  anchor: () => { x: number; y: number };
+  /** 入るとき: 正面の弧から、波と光を強く出す */
+  flare: () => void;
 }
 
 const N = 6;
 const TAU = Math.PI * 2;
 const DEG = Math.PI / 180;
-const ARC_HALF = 26.4 * DEG;
+/** 弧の半分の角度。弧と弧のあいだは 4°（つながった輪に見えるように、すき間は小さく） */
+const ARC_HALF = 28 * DEG;
 const SEG = 36;
 const CH = 3; // 1 チャンク = 3 区間
+/** 輪を起こす角度（面と画面のなす角。90° で真正面）。楕円ではなく輪に見える角度 */
+const TILT0 = 67;
+const DCAM = 3.6;
 const mod = (n: number) => ((n % N) + N) % N;
 const rel = (d: number) => {
   const m = mod(d);
@@ -65,62 +75,17 @@ const sstep = (a: number, b: number, x: number) => {
 const easeOutQuart = (t: number) => 1 - Math.pow(1 - clamp(t), 4);
 const easeOutCubic = (t: number) => 1 - Math.pow(1 - clamp(t), 3);
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+/** 角度の差（0〜π） */
+const angDist = (a: number) => {
+  let d = a % TAU;
+  if (d > Math.PI) d -= TAU;
+  else if (d < -Math.PI) d += TAU;
+  return Math.abs(d);
+};
 
 /** バネ（1 = 1 弧）。1 つぶんの移動で、ほんの少し行き過ぎて戻る */
 const SPRING_K = 94;
 const SPRING_C = 14.8;
-
-/* ───────────── 乱数（毎回同じ配置にする） ───────────── */
-function rng(seed: number) {
-  let s = seed >>> 0;
-  return () => {
-    s = (s + 0x6d2b79f5) >>> 0;
-    let t = s;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-const mix = (a: RGB, b: RGB, t: number): RGB => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
-const WHITE: RGB = [255, 250, 244];
-const rgba = (c: RGB, a: number) => `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${a < 0 ? 0 : a > 1 ? 1 : a.toFixed(3)})`;
-
-/** にじむ光の点の絵（中心が白く、色が外へ溶ける） */
-function makeSprite(rgb: RGB, size = 64): HTMLCanvasElement {
-  const c = document.createElement("canvas");
-  c.width = c.height = size;
-  const g = c.getContext("2d")!;
-  const h = size / 2;
-  const grd = g.createRadialGradient(h, h, 0, h, h, h);
-  const hot = mix(rgb, WHITE, 0.88);
-  const mid = mix(rgb, WHITE, 0.45);
-  grd.addColorStop(0, rgba(hot, 1));
-  grd.addColorStop(0.14, rgba(hot, 0.9));
-  grd.addColorStop(0.3, rgba(mid, 0.5));
-  grd.addColorStop(0.58, rgba(rgb, 0.16));
-  grd.addColorStop(1, rgba(rgb, 0));
-  g.fillStyle = grd;
-  g.fillRect(0, 0, size, size);
-  return c;
-}
-
-/** 色だけの、やわらかい光のかたまり（にじみ用。中心に白を足さない） */
-function makeBlob(rgb: RGB, size = 64): HTMLCanvasElement {
-  const c = document.createElement("canvas");
-  c.width = c.height = size;
-  const g = c.getContext("2d")!;
-  const h = size / 2;
-  const grd = g.createRadialGradient(h, h, 0, h, h, h);
-  grd.addColorStop(0, rgba(rgb, 1));
-  grd.addColorStop(0.25, rgba(rgb, 0.55));
-  grd.addColorStop(0.55, rgba(rgb, 0.16));
-  grd.addColorStop(0.8, rgba(rgb, 0.03));
-  grd.addColorStop(1, rgba(rgb, 0));
-  g.fillStyle = grd;
-  g.fillRect(0, 0, size, size);
-  return c;
-}
 
 interface Ripple {
   x: number;
@@ -139,11 +104,8 @@ export function createRingEngine(o: EngineOpts): Engine {
   const mqWide = window.matchMedia("(min-width: 900px)");
   const coarse = window.matchMedia("(pointer: coarse)").matches;
 
-  /* ── 小さい解像度の層（にじみ） ── */
-  const mk = () => document.createElement("canvas");
-  const g1c = mk(); // 1/4
-  const g2c = mk(); // 1/8
-  const g3c = mk(); // 1/16
+  /* ── にじみの層（小さい解像度） ── */
+  const [g1c, g2c, g3c] = o.glow;
   const g1 = g1c.getContext("2d")!;
   const g2 = g2c.getContext("2d")!;
   const g3 = g3c.getContext("2d")!;
@@ -151,22 +113,35 @@ export function createRingEngine(o: EngineOpts): Engine {
   const sprites = items.map((it) => makeSprite(it.rgb));
   const blobs = items.map((it) => makeBlob(it.rgb));
   const spriteWarm = makeSprite([255, 226, 190]);
-  const spriteCool = makeSprite([190, 214, 255]);
   const cores = items.map((it) => mix(it.rgb, WHITE, 0.62));
 
   /* ── 画面の寸法 ── */
   let W = 800;
   let H = 600;
   let dpr = 1;
-  let cx = 0;
+  let cx = 0; // 輪の中心（面の原点）の画面位置
   let cy = 0;
   let R = 300;
   let uS = 1; // 輪の大きさに合わせた、線と光の太さの倍率
   let qScale = 1;
   let dotFrac = 1;
-
+  /** 線と灯を出さない所（見出し・リード）。root からの位置 */
+  let excl: [number, number, number, number][] = [];
+  const inExcl = (X: number, Y: number) => {
+    for (let k = 0; k < excl.length; k++) {
+      const e = excl[k];
+      if (X > e[0] && X < e[2] && Y > e[1] && Y < e[3]) return true;
+    }
+    return false;
+  };
   const labW: number[] = labels.map(() => 120);
   const labH: number[] = labels.map(() => 50);
+  // 輪の上端・下端（R を 1 とした、面の原点からの距離）
+  const sT0 = Math.sin(TILT0 * DEG);
+  const cT0 = Math.cos(TILT0 * DEG);
+  const yFront = (sT0 * DCAM) / (DCAM - cT0);
+  const yBack = (sT0 * DCAM) / (DCAM + cT0);
+
   const measure = () => {
     labels.forEach((el, i) => {
       if (el.offsetWidth) {
@@ -175,7 +150,14 @@ export function createRingEngine(o: EngineOpts): Engine {
       }
     });
     const rr = root.getBoundingClientRect();
+    excl = Array.from(root.querySelectorAll<HTMLElement>("[data-excl]")).map((el) => {
+      const b = el.getBoundingClientRect();
+      return [b.left - rr.left - 14, b.top - rr.top - 10, b.right - rr.left + 14, b.bottom - rr.top + 10] as [number, number, number, number];
+    });
     const sr = stage.getBoundingClientRect();
+    const cs = getComputedStyle(stage);
+    const padX = parseFloat(cs.getPropertyValue("--hk-padx")) || 0;
+    const padT = parseFloat(cs.getPropertyValue("--hk-padt")) || 0;
     W = Math.max(1, rr.width);
     H = Math.max(1, rr.height);
     dpr = Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(3.4e6 / (W * H))) * qScale;
@@ -188,11 +170,20 @@ export function createRingEngine(o: EngineOpts): Engine {
     g2c.height = Math.ceil(H / 8);
     g3c.width = Math.ceil(W / 16);
     g3c.height = Math.ceil(H / 16);
-    R = Math.min(sr.width / 2, sr.height / 1.6);
-    if (W < 700) R *= 0.93; // 狭い画面では、輪が画面の縁に触れないように
-    uS = clamp(R / 400, 0.55, 1.15);
-    cx = sr.left - rr.left + sr.width / 2;
-    cy = sr.top - rr.top + sr.height / 2 - 0.15 * R;
+    // 輪（と、そのまわりの名前）が、置き場の中に収まる大きさ
+    R = Math.min((sr.width / 2 - padX) / 0.99, (sr.height - padT) / (yFront + yBack));
+    if (W < 700) R *= 0.95;
+    uS = clamp(R / 380, 0.55, 1.15);
+    const scx = sr.left - rr.left + sr.width / 2;
+    const scy = sr.top - rr.top + sr.height / 2 + padT / 2;
+    cx = scx;
+    cy = scy - ((yFront - yBack) / 2) * R;
+    // 輪の中（文字を置く所）から、線と灯を抜く
+    const wide = W >= 700;
+    root.style.setProperty("--hk-mx", `${scx.toFixed(0)}px`);
+    root.style.setProperty("--hk-my", `${scy.toFixed(0)}px`);
+    root.style.setProperty("--hk-hx", `${(R * (wide ? 1.02 : 0.92)).toFixed(0)}px`);
+    root.style.setProperty("--hk-hy", `${(R * (wide ? 0.74 : 0.5)).toFixed(0)}px`);
   };
 
   /* ── 状態 ── */
@@ -211,8 +202,8 @@ export function createRingEngine(o: EngineOpts): Engine {
   let visible = true;
   let destroyed = false;
   let ringMode = mqWide.matches;
-  const ambient: RGB = [...items[0].rgb] as RGB;
   let lastAmb = "";
+  let flareT = -1;
 
   // ポインタ（視差）
   let tpx = 0;
@@ -227,7 +218,7 @@ export function createRingEngine(o: EngineOpts): Engine {
 
   /* ── 街の灯 ── */
   const r1 = rng(20261007);
-  const NDOT = coarse || window.innerWidth < 700 ? 280 : 560;
+  const NDOT = coarse || window.innerWidth < 700 ? 300 : 560;
   const dX = new Float32Array(NDOT);
   const dZ = new Float32Array(NDOT);
   const dSize = new Float32Array(NDOT);
@@ -237,19 +228,20 @@ export function createRingEngine(o: EngineOpts): Engine {
   const dRev = new Float32Array(NDOT);
   const dTone = new Uint8Array(NDOT);
   for (let k = 0; k < NDOT; k++) {
-    const rr = 1.95 * Math.sqrt(r1());
+    // 輪の外の面にだけ散らす（輪の中は静かに）
+    const rr = 1.04 + 1.0 * Math.sqrt(r1());
     const th = r1() * TAU;
     dX[k] = rr * Math.cos(th); // R を 1 とした単位
     dZ[k] = rr * Math.sin(th);
-    dSize[k] = 0.9 + r1() * 1.7;
-    dBase[k] = 0.08 + Math.pow(r1(), 1.8) * 0.36;
+    dSize[k] = 0.9 + r1() * 1.6;
+    dBase[k] = 0.08 + Math.pow(r1(), 1.8) * 0.34;
     dSpd[k] = 0.4 + r1() * 1.6;
     dPh[k] = r1() * TAU;
-    dRev[k] = 0.6 + rr * 0.75 + r1() * 0.5;
-    dTone[k] = r1() < 0.78 ? 0 : 1;
+    dRev[k] = 0.6 + (rr - 1) * 0.9 + r1() * 0.5;
+    dTone[k] = r1() < 0.8 ? 0 : 1;
   }
 
-  /* ── 輪の上を流れる光の点（グルメの弧） ── */
+  /* ── 輪の上を流れる光の点（グルメの弧）。3 つと 3 つが反対向き ── */
   interface Mote {
     a: number; // 弧の中での角度（ラジアン、-ARC_HALF〜+ARC_HALF）
     dir: number;
@@ -257,26 +249,25 @@ export function createRingEngine(o: EngineOpts): Engine {
   }
   const r2 = rng(77);
   const motes: Mote[] = [];
-  for (let k = 0; k < 8; k++) {
-    const dir = k % 2 === 0 ? 1 : -1;
+  for (let k = 0; k < 6; k++) {
     motes.push({
-      a: -ARC_HALF + ((k + 0.5) / 8) * 2 * ARC_HALF + (r2() - 0.5) * 0.12,
-      dir,
-      v: (8 + r2() * 8) * DEG,
+      a: -ARC_HALF + ((k + 0.5) / 6) * 2 * ARC_HALF + (r2() - 0.5) * 0.1,
+      dir: k % 2 === 0 ? 1 : -1,
+      v: (7 + r2() * 7) * DEG,
     });
   }
   const pts = new Float32Array((SEG + 1) * 4); // 弧の点: x,y,s,d
   const pl = new Float32Array((SEG + 1) * 2); // 弧の点（輪の面）: x,z
-  const prevD = new Float32Array(16).fill(NaN); // 反対向きの 2 つの点の、角度の差（前のコマ）
+  const prevD = new Float32Array(9).fill(NaN); // 反対向きの 2 つの点の、角度の差（前のコマ）
   const ripples: Ripple[] = [];
   const flashes: { x: number; z: number; age: number }[] = [];
   let ripCool = 0;
 
-  const spawnRipple = (x: number, z: number, max = 1.08, T = 3.9, a = 1, c = 0) => {
-    if (ripples.length >= 8) ripples.shift();
+  const spawnRipple = (x: number, z: number, max = 0.95, T = 4.2, a = 1, c = 0) => {
+    if (ripples.length >= 4) ripples.shift();
     ripples.push({ x, z, age: 0, T, max, a, c });
     flashes.push({ x, z, age: 0 });
-    if (flashes.length > 10) flashes.shift();
+    if (flashes.length > 6) flashes.shift();
   };
 
   /* ── 射影 ── */
@@ -287,14 +278,13 @@ export function createRingEngine(o: EngineOpts): Engine {
   let sRo = 0;
   let cRo = 1;
   let zoom = 1;
-  let Dcam = 3.2;
   const P = { x: 0, y: 0, s: 1, d: 0 };
   /** 輪の面の点（R を 1 とした単位）→ 画面 */
   const proj = (x: number, z: number) => {
     const x1 = x * cB + z * sB;
     const z1 = -x * sB + z * cB;
     const dep = z1 * cT;
-    const s = Dcam / (Dcam - dep);
+    const s = DCAM / (DCAM - dep);
     const X = x1 * s * R;
     const Y = z1 * sT * s * R;
     P.x = cx + (X * cRo - Y * sRo) * zoom;
@@ -303,7 +293,7 @@ export function createRingEngine(o: EngineOpts): Engine {
     P.d = dep;
   };
 
-  const swayDeg = () => (mqReduce.matches ? 0 : Math.sin(tsec * 0.33) * 1.5);
+  const swayDeg = () => (mqReduce.matches ? 0 : Math.sin(tsec * 0.33) * 2);
   const rippleLight = (x: number, z: number) => {
     let lit = 0;
     for (let r = 0; r < ripples.length; r++) {
@@ -317,6 +307,7 @@ export function createRingEngine(o: EngineOpts): Engine {
     }
     return lit;
   };
+  const depthF = (d: number) => 0.62 + 0.38 * clamp(0.5 + d * 0.9, 0, 1);
 
   /* ── 1 コマ ── */
   const draw = () => {
@@ -324,14 +315,16 @@ export function createRingEngine(o: EngineOpts): Engine {
     const ip = introOn ? clamp(tsec / 2.7) : 1;
     const ie = easeOutQuart(ip);
     const ign = sstep(0.05, 1.7, tsec);
-    const tiltBase = lerp(63, 49, easeOutCubic(ip));
+    const tiltBase = lerp(80, TILT0, easeOutCubic(ip));
     const sway = swayDeg();
-    const tiltDeg = tiltBase - py * 5.5 + (reduce ? 0 : Math.sin(tsec * 0.21 + 1) * 1.3);
-    const yawDeg = px * 13 + (reduce ? 0 : Math.sin(tsec * 0.27) * 4.5) + clamp(vel / 3, -1, 1) * 7;
-    zoom = lerp(1.14, 1, ie);
+    const tiltDeg = tiltBase - py * 4 + (reduce ? 0 : Math.sin(tsec * 0.21 + 1) * 1);
+    const yawDeg = px * 8 + (reduce ? 0 : Math.sin(tsec * 0.27) * 3) + clamp(vel / 3, -1, 1) * 5;
+    const fl = flareT >= 0 ? easeOutCubic(flareT / 0.7) : 0;
+    // 入るときは、輪が手前へひろがって、その中をくぐる
+    zoom = lerp(1.12, 1, ie) * (1 + fl * 0.7);
     const tr = tiltDeg * DEG;
     const yw = yawDeg * DEG;
-    const ro = -6.5 * DEG + px * 1.2 * DEG;
+    const ro = -2.5 * DEG + px * 0.8 * DEG;
     sT = Math.sin(tr);
     cT = Math.cos(tr);
     sB = Math.sin(yw);
@@ -349,12 +342,9 @@ export function createRingEngine(o: EngineOpts): Engine {
     ctx.lineJoin = "round";
     g1.lineJoin = "round";
     ctx.lineCap = "butt";
-    g1.lineCap = "butt";
 
-    /* 街の灯 */
+    /* 街の灯（輪の外の面） */
     {
-      const mxs = mouseX;
-      const mys = mouseY;
       const nd = Math.floor(NDOT * dotFrac);
       for (let k = 0; k < nd; k++) {
         const x = dX[k];
@@ -363,87 +353,48 @@ export function createRingEngine(o: EngineOpts): Engine {
         const X = P.x;
         const Y = P.y;
         if (X < -30 || X > W + 30 || Y < -30 || Y > H + 30) continue;
+        if (excl.length && inExcl(X, Y)) continue;
         const u = clamp((tsec - dRev[k]) / 1.1);
         if (u <= 0) continue;
         const tw = 0.72 + 0.28 * Math.sin(tsec * dSpd[k] + dPh[k]);
-        const df = 0.4 + 0.6 * clamp(0.5 + P.d * 0.7, 0, 1);
-        let a = dBase[k] * tw * u * df;
+        let a = dBase[k] * 1.7 * tw * u * depthF(P.d);
         const lit = ripples.length ? rippleLight(x, z) : 0;
         let near = 0;
         if (mouseOn > 0.01) {
-          const dd = Math.hypot(X - mxs, Y - mys);
-          if (dd < 170) near = (1 - dd / 170) * (1 - dd / 170) * mouseOn;
+          const dd = Math.hypot(X - mouseX, Y - mouseY);
+          if (dd < 160) near = (1 - dd / 160) * (1 - dd / 160) * mouseOn;
         }
-        const sz = dSize[k] * P.s * uS * (1.05 + lit * 1.9 + near * 1.3);
-        a = Math.min(1, a + near * 0.5);
+        const sz = dSize[k] * P.s * uS * (1 + lit * 2.4 + near * 1.2);
+        a = Math.min(1, a + near * 0.45);
         ctx.globalAlpha = a;
-        ctx.drawImage(dTone[k] ? spriteCool : spriteWarm, X - sz * 2.2, Y - sz * 2.2, sz * 4.4, sz * 4.4);
-        if (lit > 0.03) {
-          const sz2 = (2.6 + lit * 4) * P.s * uS;
-          ctx.globalAlpha = Math.min(1, lit * 0.7) * u;
+        ctx.drawImage(spriteWarm, X - sz * 2.2, Y - sz * 2.2, sz * 4.4, sz * 4.4);
+        if (lit > 0.04) {
+          const sz2 = (2.8 + lit * 4.6) * P.s * uS;
+          ctx.globalAlpha = Math.min(1, lit * 0.9) * u;
           ctx.drawImage(sprites[0], X - sz2, Y - sz2, sz2 * 2, sz2 * 2);
-          if (lit > 0.25) {
-            g1.globalAlpha = Math.min(0.7, lit * 0.5);
-            g1.drawImage(sprites[0], X - sz2 * 3, Y - sz2 * 3, sz2 * 6, sz2 * 6);
-          }
         }
       }
       ctx.globalAlpha = 1;
-      g1.globalAlpha = 1;
     }
 
-    /* 輪の面の、ごく淡い円（輪全体をひとつに見せる）と、まわりを回る光の筋 */
-    const orbit = (rad: number, a: number, wd: number) => {
-      const M = 96;
-      ctx.lineWidth = wd;
-      ctx.strokeStyle = `rgba(190,208,255,${a})`;
+    /* 輪をひとつに見せる、ごく細い円（弧のすき間もつなぐ） */
+    {
+      const M = 120;
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = `rgba(206,220,255,${(0.2 * ign).toFixed(3)})`;
       ctx.beginPath();
       for (let k = 0; k <= M; k++) {
         const ph = (k / M) * TAU;
-        proj(Math.sin(ph) * rad, -Math.cos(ph) * rad);
+        proj(Math.sin(ph), -Math.cos(ph));
         if (k === 0) ctx.moveTo(P.x, P.y);
         else ctx.lineTo(P.x, P.y);
       }
       ctx.stroke();
-    };
-    orbit(1, 0.17 * ign, 1);
-    orbit(1.34, 0.045 * ign, 1);
-    orbit(1.72, 0.03 * ign, 1);
-    const comet = (rad: number, speed: number, ph0: number, len: number, a: number) => {
-      const head = ph0 + tsec * speed * DEG;
-      const n = 14;
-      for (let k = 0; k < n; k++) {
-        const f0 = k / n;
-        const f1 = (k + 1) / n;
-        const p0 = head - f0 * len * DEG * Math.sign(speed);
-        const p1 = head - f1 * len * DEG * Math.sign(speed);
-        proj(Math.sin(p0) * rad, -Math.cos(p0) * rad);
-        const x0 = P.x;
-        const y0 = P.y;
-        const s0 = P.s;
-        proj(Math.sin(p1) * rad, -Math.cos(p1) * rad);
-        ctx.strokeStyle = `rgba(214,228,255,${((1 - f0) * (1 - f0) * a * ign).toFixed(3)})`;
-        ctx.lineWidth = 1.6 * s0 * (1 - f0 * 0.5);
-        ctx.beginPath();
-        ctx.moveTo(x0, y0);
-        ctx.lineTo(P.x, P.y);
-        ctx.stroke();
-      }
-      const p = head;
-      proj(Math.sin(p) * rad, -Math.cos(p) * rad);
-      const sz = 7 * P.s;
-      ctx.globalAlpha = Math.min(1, a * 2 * ign);
-      ctx.drawImage(spriteCool, P.x - sz, P.y - sz, sz * 2, sz * 2);
-      ctx.globalAlpha = 1;
-    };
-    if (!reduce) {
-      comet(1.34, 7, 0.6, 34, 0.42);
-      comet(1.34, 7, 0.6 + Math.PI, 26, 0.3);
-      comet(1.72, -4.6, 2.1, 40, 0.34);
     }
 
     /* 弧 */
     const step = (2 * ARC_HALF) / SEG;
+    const glintPh = tsec * 0.3; // 輪をひと回りする光の筋（輪全体がひとつであることを見せる）
     for (let i = 0; i < N; i++) {
       const it = items[i];
       const rf = rel(i - pos);
@@ -463,31 +414,10 @@ export function createRingEngine(o: EngineOpts): Engine {
       }
       const rgb = it.rgb;
       const core = cores[i];
-      if (it.kind === "faint") {
-        // ごく淡い点線の光
-        const am = (0.34 + 0.5 * w) * ign;
-        for (let k = 0; k <= SEG; k += 3) {
-          const df = 0.5 + 0.5 * clamp(0.5 + pts[k * 4 + 3] * 0.65, 0, 1);
-          const tw = 0.8 + 0.2 * Math.sin(tsec * 1.1 + k * 0.7 + i);
-          const lit = ripples.length ? rippleLight(pl[k * 2], pl[k * 2 + 1]) : 0;
-          const s = pts[k * 4 + 2];
-          const sz = (3.6 + 1.6 * w + lit * 3) * s;
-          ctx.globalAlpha = Math.min(1, (am * df * tw + lit * 0.6) * 0.9);
-          ctx.drawImage(sprites[i], pts[k * 4] - sz, pts[k * 4 + 1] - sz, sz * 2, sz * 2);
-        }
-        ctx.globalAlpha = 1;
-        g1.globalAlpha = (0.2 + 0.4 * w) * ign;
-        for (let k = 0; k <= SEG; k += 6) {
-          const s = pts[k * 4 + 2];
-          const sz = 12 * s;
-          g1.drawImage(sprites[i], pts[k * 4] - sz, pts[k * 4 + 1] - sz, sz * 2, sz * 2);
-        }
-        g1.globalAlpha = 1;
-        continue;
-      }
-      const live = it.kind === "live";
-      const baseW = live ? 4.7 : 1.35;
-      const kindA = live ? 0.9 + 0.22 * w : 0.62 + 0.5 * w;
+      const kind = it.kind;
+      const live = kind === "live";
+      const baseW = live ? 5.2 : kind === "quiet" ? 3.3 : 2.4;
+      const kindA = live ? 0.95 + 0.2 * w : kind === "quiet" ? 0.9 + 0.35 * w : 0.7 + 0.4 * w;
       const nCh = SEG / CH;
       for (let c = 0; c < nCh; c++) {
         const k0 = c * CH;
@@ -495,29 +425,68 @@ export function createRingEngine(o: EngineOpts): Engine {
         const km = k0 + CH / 2;
         const dm = (pts[k0 * 4 + 3] + pts[k1 * 4 + 3]) * 0.5;
         const sm = (pts[k0 * 4 + 2] + pts[k1 * 4 + 2]) * 0.5;
-        const df = 0.5 + 0.5 * clamp(0.5 + dm * 0.65, 0, 1);
+        const df = depthF(dm);
         const fr = (c + 0.5) / nCh;
-        const taper = live ? 0.78 + 0.22 * Math.sin(fr * Math.PI) : 0.3 + 0.7 * Math.pow(Math.sin(fr * Math.PI), 0.8);
+        const taper = live ? 0.8 + 0.2 * Math.sin(fr * Math.PI) : 0.55 + 0.45 * Math.pow(Math.sin(fr * Math.PI), 0.7);
         const lit = ripples.length ? rippleLight(pl[Math.round(km) * 2], pl[Math.round(km) * 2 + 1]) : 0;
-        const breathe = live ? 1 : 0.88 + 0.12 * Math.sin(tsec * 0.9 + i * 1.7 + fr * 3);
-        const A = clamp(kindA * df * taper * breathe * ign + lit * 0.45, 0, 1.25);
-        const wm = (1 + 0.4 * w) * (0.55 + 0.45 * ign) * (1 + lit * 0.18);
+        // ひと回りする光の筋
+        const phm = phc - ARC_HALF + km * step;
+        let dg = angDist(phm - glintPh);
+        let gl = Math.exp(-(dg / 0.2) * (dg / 0.2));
+        dg = angDist(phm - glintPh - Math.PI);
+        gl += 0.5 * Math.exp(-(dg / 0.16) * (dg / 0.16));
+        if (live) gl *= 0.35;
+        const breathe = live ? 1 : 0.9 + 0.1 * Math.sin(tsec * 0.9 + i * 1.7 + fr * 3);
+        // カーソルが近づくと、その弧がこたえて明るくなる
+        let nearA = 0;
+        if (mouseOn > 0.01) {
+          const dxm = (pts[k0 * 4] + pts[k1 * 4]) * 0.5 - mouseX;
+          const dym = (pts[k0 * 4 + 1] + pts[k1 * 4 + 1]) * 0.5 - mouseY;
+          const dd = Math.hypot(dxm, dym);
+          if (dd < 150) nearA = (1 - dd / 150) * (1 - dd / 150) * mouseOn;
+        }
+        const A = clamp(kindA * df * taper * breathe * ign + lit * 0.4 + gl * 0.5 + nearA * 0.4, 0, 1.3);
+        const wm = (1 + 0.4 * w) * (0.55 + 0.45 * ign) * (1 + lit * 0.15 + gl * 0.3 + nearA * 0.3) * (1 + fl * 0.5);
         const bw = baseW * sm * wm * uS;
         const x0 = pts[k0 * 4];
         const y0 = pts[k0 * 4 + 1];
-        ctx.beginPath();
-        ctx.moveTo(x0, y0);
-        for (let k = k0 + 1; k <= k1; k++) ctx.lineTo(pts[k * 4], pts[k * 4 + 1]);
-        ctx.lineWidth = bw * 1.9;
-        ctx.strokeStyle = rgba(rgb, Math.min(1, A * 0.55));
-        ctx.stroke();
-        ctx.lineWidth = bw * 0.66;
-        ctx.strokeStyle = rgba(core, Math.min(1, A * 0.97));
-        ctx.stroke();
+        if (kind !== "faint") {
+          ctx.beginPath();
+          ctx.moveTo(x0, y0);
+          for (let k = k0 + 1; k <= k1; k++) ctx.lineTo(pts[k * 4], pts[k * 4 + 1]);
+          ctx.lineWidth = bw * 1.9;
+          ctx.strokeStyle = rgba(rgb, Math.min(1, A * 0.55));
+          ctx.stroke();
+          ctx.lineWidth = bw * 0.66;
+          ctx.strokeStyle = rgba(core, Math.min(1, A * 0.97));
+          ctx.stroke();
+        } else {
+          // ごく淡い点線: 細い線と、並んだ光の点
+          ctx.beginPath();
+          ctx.moveTo(x0, y0);
+          for (let k = k0 + 1; k <= k1; k++) ctx.lineTo(pts[k * 4], pts[k * 4 + 1]);
+          ctx.lineWidth = Math.max(1.2, bw * 0.55);
+          ctx.strokeStyle = rgba(rgb, Math.min(1, A * 0.5));
+          ctx.stroke();
+          const kk = k0 + 1;
+          const sz = (4.2 + 1.5 * w + gl * 1.6) * pts[kk * 4 + 2] * uS * (1 + fl * 0.4);
+          ctx.globalAlpha = Math.min(1, A * 0.95);
+          ctx.drawImage(sprites[i], pts[kk * 4] - sz, pts[kk * 4 + 1] - sz, sz * 2, sz * 2);
+          ctx.globalAlpha = 1;
+        }
         // にじみ（やわらかい光を、弧に沿って並べる）
+        // 輪の内側の縁を、弧の色でほんのり照らす
+        {
+          const ph2 = phc - ARC_HALF + km * step;
+          proj(Math.sin(ph2) * 0.9, -Math.cos(ph2) * 0.9);
+          const rr2 = (kind === "live" ? 0.26 : 0.2) * R * P.s;
+          g1.globalAlpha = Math.min(1, A * (kind === "live" ? 0.15 : kind === "quiet" ? 0.15 : 0.1));
+          g1.drawImage(blobs[i], P.x - rr2, P.y - rr2, rr2 * 2, rr2 * 2);
+        }
+        const stamp = kind === "live" ? 0.1 : kind === "quiet" ? 0.062 : 0.045;
         for (let k = k0; k < k1; k++) {
-          const sr = (live ? 0.085 : 0.038) * R * pts[k * 4 + 2] * wm;
-          g1.globalAlpha = Math.min(1, A * (live ? 0.2 : 0.17));
+          const sr = stamp * R * pts[k * 4 + 2] * wm;
+          g1.globalAlpha = Math.min(1, A * (kind === "live" ? 0.19 : kind === "quiet" ? 0.24 : 0.17));
           g1.drawImage(blobs[i], pts[k * 4] - sr, pts[k * 4 + 1] - sr, sr * 2, sr * 2);
         }
       }
@@ -525,9 +494,8 @@ export function createRingEngine(o: EngineOpts): Engine {
       // 弧の両端
       for (const k of [0, SEG]) {
         const s = pts[k * 4 + 2];
-        const df = 0.5 + 0.5 * clamp(0.5 + pts[k * 4 + 3] * 0.65, 0, 1);
-        const sz = (live ? 9 : 5) * s * uS * (1 + 0.3 * w);
-        ctx.globalAlpha = Math.min(1, (live ? 0.9 : 0.62) * df * ign * (0.6 + 0.4 * w + 0.2));
+        const sz = (live ? 8 : kind === "quiet" ? 5 : 3.4) * s * uS * (1 + 0.3 * w);
+        ctx.globalAlpha = Math.min(1, (live ? 0.9 : kind === "quiet" ? 0.7 : 0.5) * depthF(pts[k * 4 + 3]) * ign * (0.7 + 0.3 * w));
         ctx.drawImage(sprites[i], pts[k * 4] - sz, pts[k * 4 + 1] - sz, sz * 2, sz * 2);
       }
       ctx.globalAlpha = 1;
@@ -537,21 +505,20 @@ export function createRingEngine(o: EngineOpts): Engine {
     {
       const ph = Math.PI + (0 - pos) * (Math.PI / 3) + swayDeg() * DEG;
       const w0 = sstep(0, 1, 1 - Math.abs(rel(0 - pos)));
-      proj(Math.sin(ph) * 0.9, -Math.cos(ph) * 0.9);
+      proj(Math.sin(ph) * 1.05, -Math.cos(ph) * 1.05);
       const sr = 0.62 * R * P.s;
-      g1.globalAlpha = (0.16 + 0.16 * w0) * ign;
+      g1.globalAlpha = (0.15 + 0.15 * w0 + fl * 0.3) * ign;
       g1.drawImage(blobs[0], P.x - sr, P.y - sr * 0.62, sr * 2, sr * 1.24);
       g1.globalAlpha = 1;
     }
 
-    /* 出会いの光（グルメの弧を流れる点）と、ひろがる輪 */
+    /* 出会いの光（グルメの弧を流れる点） */
     {
       const phc = Math.PI + (0 - pos) * (Math.PI / 3) + sway * DEG;
       const arcOn = ign > 0.5;
       for (let m = 0; m < motes.length; m++) {
         const mo = motes[m];
         const al = arcOn ? sstep(0, 0.1, 1 - Math.abs(mo.a) / ARC_HALF) : 0;
-        // 尾
         for (let tl = 6; tl >= 0; tl--) {
           const a2 = mo.a - mo.dir * tl * 0.02;
           const ph = phc + a2;
@@ -561,7 +528,7 @@ export function createRingEngine(o: EngineOpts): Engine {
           ctx.globalAlpha = al * f * f * 0.62;
           ctx.drawImage(sprites[0], P.x - sz, P.y - sz, sz * 2, sz * 2);
           if (tl === 0) {
-            g1.globalAlpha = al * 0.55;
+            g1.globalAlpha = al * 0.5;
             g1.drawImage(sprites[0], P.x - sz * 3.2, P.y - sz * 3.2, sz * 6.4, sz * 6.4);
           }
         }
@@ -570,48 +537,56 @@ export function createRingEngine(o: EngineOpts): Engine {
       g1.globalAlpha = 1;
     }
 
+    /* ひろがる輪（出会いから生まれる。主役の輪を邪魔しない細さと濃さ） */
     for (let r = 0; r < ripples.length; r++) {
       const rp = ripples[r];
       const u = rp.age / rp.T;
       const rho = rp.max * (1 - Math.pow(1 - u, 2.2));
-      const al = Math.pow(1 - u, 1.7) * clamp(u / 0.05) * 0.8 * rp.a;
+      const al = Math.pow(1 - u, 1.6) * clamp(u / 0.05) * 0.85 * rp.a;
       const M = 72;
       const rgb = items[rp.c].rgb;
+      const lw = 1.3 * Math.max(0.85, uS);
       let sSum = 0;
+      let nS = 0;
+      let pen = false;
       ctx.beginPath();
       g1.beginPath();
       for (let k = 0; k <= M; k++) {
         const ph = (k / M) * TAU;
         proj(rp.x + Math.cos(ph) * rho, rp.z + Math.sin(ph) * rho);
+        if (excl.length && inExcl(P.x, P.y)) {
+          pen = false;
+          continue;
+        }
         sSum += P.s;
-        if (k === 0) {
+        nS++;
+        if (!pen) {
           ctx.moveTo(P.x, P.y);
           g1.moveTo(P.x, P.y);
+          pen = true;
         } else {
           ctx.lineTo(P.x, P.y);
           g1.lineTo(P.x, P.y);
         }
       }
-      const sa = sSum / (M + 1);
+      const sa = nS ? sSum / nS : 1;
       g1.lineWidth = 12 * sa * uS;
-      g1.strokeStyle = rgba(rgb, al * 0.3);
+      g1.strokeStyle = rgba(rgb, al * 0.32);
       g1.stroke();
-      ctx.lineWidth = 3.6 * sa * uS;
-      ctx.strokeStyle = rgba(rgb, al * 0.1);
-      ctx.stroke();
-      ctx.lineWidth = 1.15 * sa * Math.max(0.8, uS);
-      ctx.strokeStyle = rgba(mix(rgb, WHITE, 0.55), al * 0.66);
+      ctx.lineWidth = lw * sa;
+      ctx.strokeStyle = rgba(mix(rgb, WHITE, 0.5), al * 0.6);
       ctx.stroke();
     }
     for (let f = 0; f < flashes.length; f++) {
-      const fl = flashes[f];
-      const u = fl.age / 0.7;
+      const fl2 = flashes[f];
+      const u = fl2.age / 0.7;
       if (u >= 1) continue;
-      proj(fl.x, fl.z);
-      const sz = (7 + 24 * easeOutCubic(u)) * P.s * uS;
-      ctx.globalAlpha = (1 - u) * (1 - u) * 0.8;
+      proj(fl2.x, fl2.z);
+      if (excl.length && inExcl(P.x, P.y)) continue;
+      const sz = (6 + 20 * easeOutCubic(u)) * P.s * uS;
+      ctx.globalAlpha = (1 - u) * (1 - u) * 0.7;
       ctx.drawImage(sprites[0], P.x - sz, P.y - sz, sz * 2, sz * 2);
-      g1.globalAlpha = (1 - u) * 0.6;
+      g1.globalAlpha = (1 - u) * 0.5;
       g1.drawImage(sprites[0], P.x - sz * 2, P.y - sz * 2, sz * 4, sz * 4);
     }
     ctx.globalAlpha = 1;
@@ -619,34 +594,26 @@ export function createRingEngine(o: EngineOpts): Engine {
 
     /* ポインタの光 */
     if (mouseOn > 0.01 && !reduce) {
-      const sz = 150;
-      ctx.globalAlpha = 0.1 * mouseOn;
+      const sz = 140;
+      ctx.globalAlpha = 0.09 * mouseOn;
       ctx.drawImage(spriteWarm, mouseX - sz, mouseY - sz, sz * 2, sz * 2);
       ctx.globalAlpha = 1;
     }
+    ctx.globalCompositeOperation = "source-over";
 
-    /* にじみ（小さい層を重ねて、拡大して足す） */
+    /* にじみ（小さい層を重ねる。拡大して足すのは CSS） */
     g2.setTransform(1, 0, 0, 1, 0, 0);
     g2.globalCompositeOperation = "copy";
     g2.drawImage(g1c, 0, 0, g2c.width, g2c.height);
     g3.setTransform(1, 0, 0, 1, 0, 0);
     g3.globalCompositeOperation = "copy";
     g3.drawImage(g2c, 0, 0, g3c.width, g3c.height);
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.imageSmoothingEnabled = true;
-    ctx.imageSmoothingQuality = "high";
-    ctx.globalCompositeOperation = "lighter";
-    ctx.globalAlpha = 0.62;
-    ctx.drawImage(g1c, 0, 0, canvas.width, canvas.height);
-    ctx.globalAlpha = 0.5;
-    ctx.drawImage(g2c, 0, 0, canvas.width, canvas.height);
-    ctx.globalAlpha = 0.4;
-    ctx.drawImage(g3c, 0, 0, canvas.width, canvas.height);
-    ctx.globalAlpha = 1;
-    ctx.globalCompositeOperation = "source-over";
+    const bloom = 1 + fl * 1.2;
+    root.style.setProperty("--hk-bloom", bloom.toFixed(3));
   };
 
   /* ── 名前・光の色を DOM に書く（毎コマ。transform / opacity / CSS 変数のみ） ── */
+  const labIn = () => (introOn ? sstep(1.7, 2.6, tsec) : 1);
   const writeDom = () => {
     // 地の光の色（いまの弧と次の弧を混ぜる）
     const base = Math.floor(pos);
@@ -654,52 +621,50 @@ export function createRingEngine(o: EngineOpts): Engine {
     const ca = items[mod(base)].rgb;
     const cb = items[mod(base + 1)].rgb;
     const m = sstep(0.1, 0.9, frac);
-    const amb = `${(lerp(ca[0], cb[0], m)) | 0},${(lerp(ca[1], cb[1], m)) | 0},${(lerp(ca[2], cb[2], m)) | 0}`;
+    const amb = `${lerp(ca[0], cb[0], m) | 0},${lerp(ca[1], cb[1], m) | 0},${lerp(ca[2], cb[2], m) | 0}`;
     if (amb !== lastAmb) {
       lastAmb = amb;
       root.style.setProperty("--hk-rgb", amb);
     }
-    root.style.setProperty("--hk-spin", clamp(Math.abs(vel) / 4).toFixed(3));
-    if (!ringMode) return;
-    const sway = swayDeg();
-    for (let i = 0; i < N; i++) {
-      const el = labels[i];
-      if (!el) continue;
-      const rf = rel(i - pos);
-      const ph = Math.PI + rf * (Math.PI / 3) + sway * DEG;
-      const zc = -Math.cos(ph);
-      // 手前・横は輪の外へ、奥は輪の内へ。通りぬけるあいだは薄くする
-      const rad = lerp(0.66, 1.17, sstep(-0.62, -0.18, zc));
-      const cross = sstep(0, 1, Math.abs(rad - 1) / 0.1);
-      proj(Math.sin(ph) * rad, zc * rad);
-      const kx = clamp((P.x - cx) / (R * 0.5), -1, 1);
-      const ky = clamp((P.y - cy) / (R * 0.4), -1, 1);
-      // 画面の外に出ないように、はみ出す分だけ内へ寄せる
-      const lw = labW[i] * 0.95;
-      const lx0 = P.x + (-0.5 + 0.5 * kx) * lw; // 左端
-      let X = P.x;
-      if (lx0 + lw > W - 14) X -= lx0 + lw - (W - 14);
-      else if (lx0 < 14) X += 14 - lx0;
-      let Y = P.y;
-      const ly0 = Y + (-0.5 + 0.5 * ky) * labH[i];
-      if (ly0 + labH[i] > H - 10) Y -= ly0 + labH[i] - (H - 10);
-      const dep = clamp(0.5 + P.d * 0.65, 0, 1);
-      const k = 0.88 + 0.16 * dep;
-      const fr = sstep(0, 1, 1 - Math.abs(rf));
-      el.style.opacity = (cross * (0.5 + 0.5 * dep) * labIn() * (0.78 + 0.22 * fr)).toFixed(3);
-      el.style.transform = `translate3d(${X.toFixed(1)}px,${Y.toFixed(1)}px,0) scale(${k.toFixed(3)}) translate(${(-50 + 50 * kx).toFixed(1)}%,${(-50 + 50 * ky).toFixed(1)}%)`;
-      el.style.zIndex = String(10 + Math.round(dep * 10));
-      el.dataset.vis = cross > 0.2 ? "1" : "0";
-      const side = kx < -0.28 ? "l" : kx > 0.28 ? "r" : "c";
-      if (el.dataset.side !== side) el.dataset.side = side;
+    if (ringMode) {
+      const sway = swayDeg();
+      for (let i = 0; i < N; i++) {
+        const el = labels[i];
+        if (!el) continue;
+        const rf = rel(i - pos);
+        const ph = Math.PI + rf * (Math.PI / 3) + sway * DEG;
+        const zc = -Math.cos(ph);
+        // どの名前も、弧のすぐ外側（同じ決まり）。正面の弧の名前は、輪の中に大きく出るので隠す
+        const rad = 1.13;
+        proj(Math.sin(ph) * rad, zc * rad);
+        const kx = clamp((P.x - cx) / (R * 0.5), -1, 1);
+        const ky = clamp((P.y - cy) / (R * 0.4), -1, 1);
+        const dep = clamp(0.5 + P.d * 0.9, 0, 1);
+        const lw = labW[i] * 0.98;
+        const lx0 = P.x + (-0.5 + 0.5 * kx) * lw;
+        let X = P.x;
+        if (lx0 + lw > W - 14) X -= lx0 + lw - (W - 14);
+        else if (lx0 < 14) X += 14 - lx0;
+        let Y = P.y;
+        const ly0 = Y + (-0.5 + 0.5 * ky) * labH[i];
+        if (ly0 + labH[i] > H - 10) Y -= ly0 + labH[i] - (H - 10);
+        const vis = sstep(0.12, 0.8, Math.abs(rf));
+        el.style.opacity = (vis * labIn() * (0.88 + 0.12 * dep)).toFixed(3);
+        el.style.transform = `translate3d(${X.toFixed(1)}px,${Y.toFixed(1)}px,0) translate(${(-50 + 50 * kx).toFixed(1)}%,${(-50 + 50 * ky).toFixed(1)}%)`;
+        el.style.zIndex = String(10 + Math.round(dep * 10));
+        el.dataset.vis = vis > 0.3 ? "1" : "0";
+        const side = kx < -0.28 ? "l" : kx > 0.28 ? "r" : "c";
+        if (el.dataset.side !== side) el.dataset.side = side;
+      }
     }
     const fi = mod(Math.round(pos));
     if (fi !== front && (!introOn || interacted)) {
       front = fi;
+      // 正面に来た弧から、小さな輪が広がる
+      spawnRipple(0, 1, 0.8, 3, 0.9, fi);
       o.onFront(fi, interacted);
     }
   };
-  const labIn = () => (introOn ? sstep(1.7, 2.6, tsec) : 1);
 
   /* ── ループ ── */
   const chooseTarget = (from: number) => {
@@ -709,14 +674,35 @@ export function createRingEngine(o: EngineOpts): Engine {
     return Math.max(from - 4, Math.min(from + 4, tg));
   };
 
+  let introPulse = false;
+  let nudged = false;
+  let readyFired = false;
+  /* ── 重い端末では、描く量を減らす（フレーム間隔が長いままのとき） ── */
+  const perf = ((window as unknown as { __hkPerf?: { js: number; dt: number; q: number; frames: number } }).__hkPerf = { js: 0, dt: 16, q: 0, frames: 0 });
+  let slow = 0;
+  const adapt = (dt: number) => {
+    if (tsec < 3.2 || (window as unknown as { __hkNoAdapt?: boolean }).__hkNoAdapt) return;
+    slow = dt > 0.03 ? slow + 1 : Math.max(0, slow - 2);
+    if (slow > 50 && perf.q < 2) {
+      perf.q++;
+      slow = 0;
+      dotFrac = perf.q === 1 ? 0.55 : 0.3;
+      if (perf.q === 2) {
+        qScale = 0.75;
+        measure();
+      }
+    }
+  };
+
   const tick = (now: number) => {
     raf = 0;
     if (destroyed) return;
     const dt = Math.min(0.05, Math.max(0.001, (now - last) / 1000));
     last = now;
     tsec += dt;
-
+    perf.frames++;
     const ign = sstep(0.05, 1.7, tsec);
+    if (flareT >= 0) flareT += dt;
     // しばらく触られなければ、輪を少しだけ揺らして、回せることを知らせる
     if (!nudged && tsec > 5 && !interacted && !introOn) {
       nudged = true;
@@ -734,9 +720,9 @@ export function createRingEngine(o: EngineOpts): Engine {
         const t0 = easeOutQuart(tsec / 2.7);
         pos = -3.2 * (1 - t0);
         target = 0;
-        if (tsec > 2.25 && ripples.length === 0 && !introPulse) {
+        if (tsec > 2.25 && !introPulse) {
           introPulse = true;
-          spawnRipple(0, 1, 1.5, 4.6, 1, 0);
+          spawnRipple(0, 1, 1.1, 4.6, 1, 0);
         }
       }
     } else if (!dragging) {
@@ -780,25 +766,25 @@ export function createRingEngine(o: EngineOpts): Engine {
         wrapped = true;
       }
       if (wrapped) {
-        mo.v = (8 + Math.random() * 8) * DEG;
-        for (let k = 0; k < 4; k++) prevD[m % 2 === 0 ? (m >> 1) * 4 + k : k * 4 + (m >> 1)] = NaN;
+        mo.v = (7 + Math.random() * 7) * DEG;
+        for (let k = 0; k < 3; k++) prevD[m % 2 === 0 ? (m >> 1) * 3 + k : k * 3 + (m >> 1)] = NaN;
       }
     }
-    // 出会い: 反対向きの 2 つの点がすれ違った所に、輪が生まれる
+    // 出会い: 反対向きの 2 つの点がすれ違った所に、輪が生まれる（間をあけて、少なく）
     if (ign > 0.5 || !introOn) {
       const phc = Math.PI + (0 - pos) * (Math.PI / 3) + swayDeg() * DEG;
-      for (let a = 0; a < 4; a++) {
-        for (let b = 0; b < 4; b++) {
+      for (let a = 0; a < 3; a++) {
+        for (let b = 0; b < 3; b++) {
           const A = motes[a * 2];
           const B = motes[b * 2 + 1];
           const diff = A.a - B.a;
-          const p = prevD[a * 4 + b];
+          const p = prevD[a * 3 + b];
           if (p < 0 && diff >= 0 && ripCool <= 0 && Math.abs(A.a) < ARC_HALF * 0.8 && Math.abs(B.a) < ARC_HALF * 0.8) {
             const ph = phc + (A.a + B.a) / 2;
             spawnRipple(Math.sin(ph), -Math.cos(ph));
-            ripCool = 0.32;
+            ripCool = 1.25;
           }
-          prevD[a * 4 + b] = diff;
+          prevD[a * 3 + b] = diff;
         }
       }
     }
@@ -819,25 +805,6 @@ export function createRingEngine(o: EngineOpts): Engine {
     }
     schedule();
   };
-  let introPulse = false;
-  /* ── 重い端末では、描く量を減らす（フレーム間隔が長いままのとき） ── */
-  const perf = ((window as unknown as { __hkPerf?: { js: number; dt: number; q: number } }).__hkPerf = { js: 0, dt: 16, q: 0 });
-  let slow = 0;
-  const adapt = (dt: number) => {
-    if (tsec < 3.2 || (window as unknown as { __hkNoAdapt?: boolean }).__hkNoAdapt) return;
-    slow = dt > 0.03 ? slow + 1 : Math.max(0, slow - 2);
-    if (slow > 50 && perf.q < 2) {
-      perf.q++;
-      slow = 0;
-      dotFrac = perf.q === 1 ? 0.55 : 0.3;
-      if (perf.q === 2) {
-        qScale = 0.75;
-        measure();
-      }
-    }
-  };
-  let nudged = false;
-  let readyFired = false;
 
   const active = () => visible && !document.hidden && !destroyed;
   const schedule = () => {
@@ -855,7 +822,7 @@ export function createRingEngine(o: EngineOpts): Engine {
     interacted = true;
     root.classList.add("is-touched");
   };
-  const step = (d: number) => {
+  const step2 = (d: number) => {
     if (frozen) return;
     touch();
     target = Math.round(target) + d;
@@ -953,7 +920,7 @@ export function createRingEngine(o: EngineOpts): Engine {
     const r = root.getBoundingClientRect();
     if (r.bottom < window.innerHeight * 0.5 || r.top > window.innerHeight * 0.5) return;
     e.preventDefault();
-    step(e.key === "ArrowRight" ? 1 : -1);
+    step2(e.key === "ArrowRight" ? 1 : -1);
   };
   root.addEventListener("pointerdown", onDown);
   root.addEventListener("pointermove", onMove);
@@ -975,13 +942,19 @@ export function createRingEngine(o: EngineOpts): Engine {
   });
   ro.observe(root);
   ro.observe(stage);
+  const resetLabels = () => labels.forEach((el) => {
+    el.style.opacity = "";
+    el.style.transform = "";
+    el.style.zIndex = "";
+  });
   const onWide = () => {
     ringMode = mqWide.matches;
     root.dataset.ring = ringMode ? "1" : "0";
-    if (!ringMode) labels.forEach((el) => { el.style.opacity = ""; el.style.transform = ""; el.style.zIndex = ""; });
+    if (!ringMode) resetLabels();
+    measure();
   };
   mqWide.addEventListener("change", onWide);
-  onWide();
+  root.dataset.ring = ringMode ? "1" : "0";
 
   measure();
   resume();
@@ -1001,9 +974,10 @@ export function createRingEngine(o: EngineOpts): Engine {
       io.disconnect();
       ro.disconnect();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      labels.forEach((el) => { el.style.opacity = ""; el.style.transform = ""; el.style.zIndex = ""; });
+      [g1, g2, g3].forEach((g) => g.clearRect(0, 0, 4096, 4096));
+      resetLabels();
     },
-    step,
+    step: step2,
     goTo,
     front: () => mod(Math.round(target)),
     nudge,
@@ -1013,16 +987,18 @@ export function createRingEngine(o: EngineOpts): Engine {
     },
     thaw: () => {
       frozen = false;
+      flareT = -1;
       resume();
     },
-    anchor: (i: number) => {
-      const el = labels[i];
-      if (el && ringMode) {
-        const r = el.getBoundingClientRect();
-        const rr = root.getBoundingClientRect();
-        return { x: r.left - rr.left + r.width / 2, y: r.top - rr.top + r.height / 2 };
-      }
-      return { x: cx, y: cy + R * 0.9 };
+    anchor: () => {
+      proj(0, 1);
+      return { x: P.x, y: P.y };
+    },
+    flare: () => {
+      flareT = 0;
+      const ph = Math.PI + (front - pos) * (Math.PI / 3);
+      spawnRipple(Math.sin(ph), -Math.cos(ph), 1.2, 1.4, 1, front);
+      resume();
     },
   };
 }

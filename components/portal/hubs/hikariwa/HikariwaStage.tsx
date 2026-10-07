@@ -37,6 +37,7 @@ export default function HikariwaStage({
   const router = useRouter();
   const rootRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const glowRefs = useRef<(HTMLCanvasElement | null)[]>([]);
   const stageRef = useRef<HTMLDivElement>(null);
   const labsRef = useRef<HTMLUListElement>(null);
   const engineRef = useRef<Engine | null>(null);
@@ -83,7 +84,8 @@ export default function HikariwaStage({
     const canvas = canvasRef.current;
     const stage = stageRef.current;
     const ul = labsRef.current;
-    if (!root || !canvas || !stage || !ul) return;
+    const [g0, g1, g2] = glowRefs.current;
+    if (!root || !canvas || !stage || !ul || !g0 || !g1 || !g2) return;
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     const engItems: EngineItem[] = items.map((it, i) => ({ rgb: glowRgb(it.color), kind: it.live ? "live" : it.enter ? "quiet" : "faint" }));
     const start = () => {
@@ -96,6 +98,7 @@ export default function HikariwaStage({
         engineRef.current = createRingEngine({
           root,
           canvas,
+          glow: [g0, g1, g2],
           stage,
           items: engItems,
           labels: Array.from(ul.children) as HTMLElement[],
@@ -162,12 +165,13 @@ export default function HikariwaStage({
         router.push(it.path);
         return;
       }
-      const a = eng.anchor(i);
+      const a = eng.anchor();
       root.style.setProperty("--wx", `${a.x.toFixed(0)}px`);
       root.style.setProperty("--wy", `${a.y.toFixed(0)}px`);
       eng.freeze();
+      eng.flare();
       setLeaving(true);
-      timer.current = window.setTimeout(() => router.push(it.path), 760);
+      timer.current = window.setTimeout(() => router.push(it.path), 900);
     },
     [items, router],
   );
@@ -226,7 +230,12 @@ export default function HikariwaStage({
       }}
     >
       <div className="hk-bg" aria-hidden="true" />
-      <canvas ref={canvasRef} className="hk-cv" aria-hidden="true" />
+      <div className="hk-fx" aria-hidden="true">
+        <canvas ref={canvasRef} className="hk-cv" />
+        {[0, 1, 2].map((k) => (
+          <canvas key={k} ref={(el) => void (glowRefs.current[k] = el)} className="hk-g" data-k={k} />
+        ))}
+      </div>
 
       <header className="hk-bar" data-nodrag>
         <Link href="/" className="hk-logo" aria-label="マチノワ" aria-current="page">
@@ -243,11 +252,19 @@ export default function HikariwaStage({
       </header>
 
       <div className="hk-copy">
-        <h1 id="hk-h1" className="hk-h1" aria-label={HEADLINE}>
+        <h1 id="hk-h1" className="hk-h1" aria-label={HEADLINE} data-excl>
           {HEADLINE_LINES.map((ln, i) => (
             <span className="ln" key={i} aria-hidden="true">
               <span className="in" style={{ ["--d" as string]: `${0.5 + i * 0.16}s` } as CSSProperties}>
-                {ln}
+                {ln.includes("輪") ? (
+                  <>
+                    {ln.slice(0, ln.indexOf("輪"))}
+                    <span className="wa">輪</span>
+                    {ln.slice(ln.indexOf("輪") + 1)}
+                  </>
+                ) : (
+                  ln
+                )}
               </span>
             </span>
           ))}
@@ -319,7 +336,8 @@ export default function HikariwaStage({
         </div>
       </div>
 
-      <p className="hk-lead">{LEAD}</p>
+      <div className="hk-foot">
+      <p className="hk-lead" data-excl>{LEAD}</p>
 
       <nav className="hk-labs" aria-label="業種の入口" data-nodrag>
         <ul ref={labsRef}>
@@ -371,6 +389,7 @@ export default function HikariwaStage({
           })}
         </ul>
       </nav>
+      </div>
 
       <p className="mp-sr" role="status" aria-live="polite">
         {status}

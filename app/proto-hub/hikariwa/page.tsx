@@ -17,7 +17,7 @@ export default async function Page() {
     <>
       <HikariwaFonts />
       <HikariwaStage items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} open={data.open} />
-      <Statement />
+      <Statement items={data.items} />
     </>
   );
 }
