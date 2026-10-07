@@ -1,3 +1,5 @@
+> 不採用の案を含む過去の資料。決定は COPY-FINAL.md。
+
 # コンセプト 3 の案: にぎわいの輪 NIGIWAI
 
 - ルート `/proto-hub/nigiwai`、接頭辞 `.ng-`、言葉は `COPY.md` の **コンセプト 3**

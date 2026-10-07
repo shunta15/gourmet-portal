@@ -1,3 +1,5 @@
+> 不採用の案を含む過去の資料。決定は COPY-FINAL.md。
+
 # コンセプト 1 の案: 光の輪 HIKARIWA
 
 - ルート `/proto-hub/hikariwa`、接頭辞 `.hk-`、言葉は `COPY.md` の **コンセプト 1**

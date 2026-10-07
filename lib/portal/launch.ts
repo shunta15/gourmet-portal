@@ -32,6 +32,20 @@ export function assertPortalLive(): void {
 }
 
 /**
+ * プレビュー（Vercel の VERCEL_ENV=preview）またはローカル開発（NODE_ENV が production でない）か。
+ * 店ページの「ボタン案 1〜6」の切替（previewTools。app/restaurant/[id]/page.tsx）と同じ判定。公開スイッチ ON の本番（VERCEL_ENV=production）は false。
+ * ローカルの `next build` → `next start` は NODE_ENV=production なので false（`next dev` では true）。ビルド時（静的ページ）またはリクエスト時にサーバーで評価する。
+ */
+export function isPreviewOrLocal(): boolean {
+  return process.env.VERCEL_ENV === "preview" || process.env.NODE_ENV !== "production";
+}
+
+/** プレビュー・ローカル専用のルート（試作の見比べ）から呼ぶ。公開スイッチが OFF、または本番なら 404。 */
+export function assertPreviewOrLocal(): void {
+  if (!isPortalLive() || !isPreviewOrLocal()) notFound();
+}
+
+/**
  * generateStaticParams を包む。OFF のあいだは空にして、404 になるページを大量にビルドしない
  * （dynamicParams は true のままなので、該当 URL は実行時に 404 になる）。
  */

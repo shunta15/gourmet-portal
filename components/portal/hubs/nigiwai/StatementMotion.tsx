@@ -24,6 +24,29 @@ export default function StatementMotion() {
       { threshold: 0.2, rootMargin: "0px 0px -6% 0px" },
     );
     els.forEach((el) => io.observe(el));
+
+    // 場面 3「輪が広がる」: 場面が画面を通るあいだ、進み具合 --p（0〜1）を書く。CSS が、小さな輪から、皿が増えて輪が外へ広がる絵にする。
+    // 動きを減らす設定では書かない（CSS の既定の 1＝広がりきった姿のまま）
+    const a3 = document.querySelector<HTMLElement>(".ng-st .act.a3");
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let raf = 0;
+    const upd = () => {
+      raf = 0;
+      if (!a3 || mq.matches) return;
+      const r = a3.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const t = (vh - r.top) / (vh + r.height); // 0: 下から入り始め → 1: 上へ出きる
+      const p = Math.min(1, Math.max(0, (t - 0.16) / 0.42));
+      a3.style.setProperty("--p", p.toFixed(3));
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(upd);
+    };
+    if (a3) {
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll);
+      upd();
+    }
     const vis = new IntersectionObserver(
       (es) => {
         for (const e of es) (e.target as HTMLElement).dataset.vis = e.isIntersecting ? "1" : "0";
@@ -34,6 +57,9 @@ export default function StatementMotion() {
     return () => {
       io.disconnect();
       vis.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(raf);
     };
   }, []);
   return null;

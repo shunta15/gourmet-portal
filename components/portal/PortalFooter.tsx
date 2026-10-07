@@ -107,7 +107,6 @@ export default async function PortalFooter() {
         </p>
         <div className="mp-ft-bot">
           <span>© マチノワ</span>
-          <span>Prototype · 非公開</span>
         </div>
       </div>
     </footer>

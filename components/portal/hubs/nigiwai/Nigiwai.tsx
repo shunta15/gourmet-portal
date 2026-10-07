@@ -8,7 +8,7 @@ import type { DishPhoto } from "@/lib/portal/hubs/nigiwai/photos";
 import { HEAD, LEAD } from "./copy";
 
 /**
- * 総合トップ 案「にぎわいの輪」— 朱の地に、料理の写真の輪（クライアント）。
+ * 総合トップ「にぎわいの輪」— 地の色に、料理の写真の輪（クライアント）。
  *
  * 輪は 16 枚の丸い写真（皿）を大きな円周に並べたもの。ゆっくり回り、つかんで回せる（円の中心まわりの角度で動かす。離すと慣性で、元の回転に戻る）。
  * 写真は輪が回っても、いつも上を向いたまま（回るのは位置だけ）。写真に置いた指・カーソルで、その 1 枚が少し大きくなる。
@@ -23,6 +23,8 @@ const AUTO = 2.4; // ふだんの回転（度/秒。1周 150 秒）
 const TAU = 1.35; // 慣性が元の回転に戻る時定数（秒）
 const SCALES = [1, 0.86, 1.06, 0.92, 1.1, 0.88, 1, 0.94, 1.08, 0.86, 1.02, 0.92, 1.1, 0.9, 1.04, 0.88];
 const GAP = 0.075; // 隣どうしの隙間（写真の直径に対する比）
+/** 別のページへ入って「戻る」で帰ってきたとき（同じ文書の中。部品は作り直される）、輪の角度を引き継ぐ */
+let savedAng = 0;
 const fmt = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 /** 写真の置き場所。大きさに比例した弧を割り当てて、隙間をそろえる（決まった値なのでサーバーとクライアントで同じ） */
@@ -72,6 +74,8 @@ export default function Nigiwai({
   // 押し始めたときに選ばれていた業種（タッチでは、押した瞬間のフォーカスで選択が変わってから click が来るので、click では使えない）
   const downSel = useRef<number | null>(null);
   const selRef = useRef(0);
+  // 入るあいだ（輪が広がって地の色が満ちるあいだ）は、輪の回転の描き直しを止める
+  const stopRef = useRef(false);
   const suppressClick = useRef(false);
   const goRef = useRef<(i: number, from?: HTMLElement | null) => void>(() => {});
 
@@ -117,7 +121,9 @@ export default function Nigiwai({
     if (!root || !ring) return;
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     let reduce = mq.matches;
-    let ang = 0;
+    // 戻る・進むで帰ってきたとき（.ngp の data-skip）は、導入を省いて、すぐ完成の姿にする。輪の角度も引き継ぐ
+    const skip = root.closest(".ngp")?.hasAttribute("data-skip") ?? false;
+    let ang = savedAng; // 戻る・進む・リンクで帰ってきたとき、輪は前の角度から続ける（描画のときの --rot も同じ値）
     let vel = AUTO;
     let dragging = false;
     let raf = 0;
@@ -126,7 +132,7 @@ export default function Nigiwai({
     const timers: number[] = [];
 
     const write = () => ring.style.setProperty("--rot", `${(ang % 360).toFixed(3)}deg`);
-    const running = () => !reduce && visible && !document.hidden;
+    const running = () => !reduce && visible && !document.hidden && !stopRef.current;
 
     const tick = (now: number) => {
       raf = 0;
@@ -254,6 +260,7 @@ export default function Nigiwai({
     /* ── 入る動きのあと、ブラウザの「戻る」で戻ってきたとき ── */
     const onShow = (e: PageTransitionEvent) => {
       if (e.persisted) {
+        stopRef.current = false;
         setLeaving(false);
         root.classList.remove("is-leaving");
         kick();
@@ -261,8 +268,9 @@ export default function Nigiwai({
     };
     window.addEventListener("pageshow", onShow);
 
-    // 写真（と書体）が読み込めてから、入る動きを始める。遅くても 1.8 秒で始める
-    const imgs = Array.from(ring.querySelectorAll("img"));
+    // 書体と、最初の写真 6 枚が読み込めてから、入る動きを始める（読み込み前に始めると、空の丸が飛んでくる）。遅くても 0.6 秒で始める
+    // 戻る・進むで帰ってきたとき（skip）は、導入なし
+    const imgs = Array.from(ring.querySelectorAll("img")).slice(0, 6);
     const loaded = imgs.map((im) => (im.complete ? Promise.resolve() : new Promise<void>((res) => {
       im.addEventListener("load", () => res(), { once: true });
       im.addEventListener("error", () => res(), { once: true });
@@ -273,13 +281,17 @@ export default function Nigiwai({
       if (started) return;
       started = true;
       root.classList.add("is-go");
-      timers.push(window.setTimeout(() => root.classList.add("is-ready"), 3100));
+      timers.push(window.setTimeout(() => root.classList.add("is-ready"), skip ? 0 : 1900));
     };
-    timers.push(window.setTimeout(start, 1800));
-    void Promise.all([...loaded, fonts]).then(() => requestAnimationFrame(start));
+    if (skip) start();
+    else {
+      timers.push(window.setTimeout(start, 600));
+      void Promise.all([...loaded, fonts]).then(() => requestAnimationFrame(start));
+    }
     kick();
 
     return () => {
+      savedAng = ang;
       cancelAnimationFrame(raf);
       timers.forEach((t) => window.clearTimeout(t));
       root.removeEventListener("pointerdown", onDown);
@@ -294,7 +306,7 @@ export default function Nigiwai({
     };
   }, []);
 
-  /* ───────────── 入る（輪が広がり、朱が画面を満たす） ───────────── */
+  /* ───────────── 入る（輪が広がり、地の色が画面を満たす） ───────────── */
   const go = useCallback(
     (i: number, from?: HTMLElement | null) => {
       const it = items[i];
@@ -310,6 +322,7 @@ export default function Nigiwai({
       root.style.setProperty("--wx", `${(r.left + r.width / 2 - rr.left).toFixed(0)}px`);
       root.style.setProperty("--wy", `${(r.top + r.height / 2 - rr.top).toFixed(0)}px`);
       void root.offsetWidth; // 満ちる円の中心を、押した位置に確定させてから始める（中心がすべって見えないように）
+      stopRef.current = true;
       root.classList.add("is-leaving");
       setLeaving(true);
       window.setTimeout(() => router.push(it.path), 780);
@@ -374,9 +387,9 @@ export default function Nigiwai({
         <i />
       </div>
 
-      {/* 料理の写真の輪（飾り。回る・つかめる）。画面の上下の端では、写真がやわらかく朱に溶ける（半端な切れ目を見せない） */}
+      {/* 料理の写真の輪（飾り。回る・つかめる）。画面の上下の端では、写真がやわらかく地の色に溶ける（半端な切れ目を見せない） */}
       <div className="ng-ringwrap" aria-hidden="true">
-      <div className="ng-ring" ref={ringRef} style={{ ["--vc" as string]: cur.color } as CSSProperties}>
+      <div className="ng-ring" ref={ringRef} style={{ ["--vc" as string]: cur.color, ["--rot" as string]: `${(savedAng % 360).toFixed(3)}deg` } as CSSProperties}>
         {dishes.map((d, i) => {
           const p = photos[i];
           return (
@@ -480,20 +493,20 @@ export default function Nigiwai({
           </ul>
 
           <div className="ng-info" key={cur.key}>
-            {cur.key === "gourmet" && (
-              <p className="ng-facts">
-                <span>
-                  <b>{fmt(gourmetTotal)}</b>店
-                </span>
-                <span>
-                  特集<b>{fmt(featureTotal)}</b>本
-                </span>
-                <span className="ng-open" data-on={openNow ? "" : undefined}>
-                  いま営業中<b>{openNow ? fmt(openNow.open) : "0"}</b>軒
-                  <small>営業時間が確かな{openNow ? fmt(openNow.known) : "0"}店のうち</small>
-                </span>
-              </p>
-            )}
+            {/* 数字は、どの業種を選んでいても場所を取る（見出し・入口の位置が動かないように）。グルメ以外では見えず、読み上げもしない */}
+            <p className="ng-facts" {...(cur.key !== "gourmet" ? { "aria-hidden": true, "data-off": "" } : {})}>
+              <span>
+                <b>{fmt(gourmetTotal)}</b>店
+              </span>
+              <span>
+                特集<b>{fmt(featureTotal)}</b>本
+              </span>
+              {/* 営業中の数字は、現在時刻で数え終わるまで、読み上げない（スクリプトなしでは、CSS が行ごと出さない） */}
+              <span className="ng-open" data-on={openNow ? "" : undefined} aria-hidden={openNow ? undefined : true}>
+                いま営業中<b>{openNow ? fmt(openNow.open) : "0"}</b>軒
+                <small>営業時間が確かな{openNow ? fmt(openNow.known) : "0"}店のうち</small>
+              </span>
+            </p>
             <div className="ng-act">
               <p className="ng-state">
                 <i aria-hidden="true" />

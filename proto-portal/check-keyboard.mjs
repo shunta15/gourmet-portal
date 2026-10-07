@@ -2,11 +2,11 @@
  * 総合サイトのキーボード操作・フォーカスの見え方・画像の alt を Playwright で検査する。
  *
  *   npx next start -p 3242   # 本番ビルドを起動してから
- *   node proto-portal/check-keyboard.mjs [--base http://localhost:3242]
+ *   node proto-portal/check-keyboard.mjs [--base http://localhost:3242] [--home]   （--home: 総合トップ（1・2・2b）だけ）
  *
  * 検査:
- *  1. / （幅1440・輪）: Tab の順番が「本文へ移動」→ロゴ→さがす→正面の入口→輪（slider）→業種の一覧6つ。各要素にフォーカスリングが見える。一覧にフォーカスすると輪が回る
- *  2. / （幅390・輪）: 同じ順番。一覧は画面の外に置いてあり、フォーカスが入ると画面に出る。2b. 動きを減らす設定: 輪は出ず、業種の一覧（入口のリンク3つ）
+ *  1. / （幅1440・にぎわいの輪・2 色とも）: Tab の順番が「本文へ移動」→ロゴ→さがす→業種の入口 6 つ。各要素にフォーカスリングが見える。入口にフォーカスすると、その業種が選ばれる
+ *  2. / （幅390・2 色とも）: 同じ順番。入口が画面に出る大きさ。2b. 動きを減らす設定: 同じ順番で、輪は回らない
  *  3. /map: Tab で業種チップに届き、Space で aria-pressed が切り替わる。「今開いている店だけ」の切替に Tab で届き、Space で切り替わる
  *  4. /station/kyoto/祇園四条: 「今開いている店だけ」の切替に Tab で届き、Space で切り替わる（URL に ?open=1）
  *  5. フッターの <summary>（地方ブロック）に Tab で届き、Enter で開閉する
@@ -83,6 +83,8 @@ async function ringOf(page) {
 }
 
 const browser = await chromium.launch();
+/** --home: 総合トップ（1・2・2b）だけを検査して終わる（総合トップを直したあとの確認用） */
+const ONLY_HOME = process.argv.includes("--home");
 
 async function tabUntil(page, pred, max = 80) {
   for (let i = 1; i <= max; i++) {
@@ -93,87 +95,92 @@ async function tabUntil(page, pred, max = 80) {
   return -1;
 }
 
-// ───── 1. 総合トップ（輪）: Tab の順番とフォーカスリング ─────
-// 2026-10-06 から総合トップは「輪を回して選ぶ 1 画面」。共通ヘッダー（業種6つ・検索・ハンバーガー）は出さない。
-// Tab の順番: 本文へ移動 → ロゴ → さがす → 正面の業種の入口 → 輪（slider）→ 業種の一覧（グルメ・ビューティー・ボディケアはリンク、ほかの3つはボタン）。
-// 一覧の項目にフォーカスが来ると、輪がその業種まで回る（aria-valuenow が変わる）。
-console.log("1. / 幅1440（輪）: Tab で");
-{
-  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
-  const page = await ctx.newPage();
-  await page.goto(BASE + "/", { waitUntil: "load" });
-  await page.waitForTimeout(2600);
-  const want = ["本文へ移動", "マチノワ", "さがす", "グルメに入る", "業種を選ぶ輪", "01グルメ", "02ビューティー", "03ボディケア", "ペット（準備中）", "おでかけ（準備中）", "ステイ（準備中）"];
-  let i = 0;
-  for (const w of want) {
+// ───── 1・2・2b. 総合トップ（にぎわいの輪）: Tab の順番とフォーカスリング ─────
+// 総合トップは「にぎわいの輪」（2 色ランダム）。共通ヘッダーは出さない（画面の中に、ロゴと「さがす」がある）。
+// Tab の順番: 本文へ移動 → ロゴ → さがす → 業種の入口 6 つ（グルメ・ビューティー・ボディケアはリンク、ほかの 3 つはボタン）。
+// 入口にフォーカスが来ると、その業種が選ばれる（.ng の data-sel が変わる）。選んだものが入れる業種なら、入口の列のあとに「入る」のリンクが出る。
+// 色は 2 色とも見る（履歴の項目に色を先に入れて固定する。ページの抽選スクリプトがそれを読む）。
+const HOME_WANT = [
+  ["本文へ移動", null],
+  ["マチノワ", null],
+  ["さがす", null],
+  ["グルメに入る", "gourmet"],
+  ["ビューティー（準備中）", "beauty"],
+  ["ボディケア（準備中）", "bodycare"],
+  ["ペット（準備中）", "pet"],
+  ["おでかけ（準備中）", "leisure"],
+  ["ステイ（準備中）", "stay"],
+];
+const pinTheme = (page, t) => page.addInitScript((x) => { try { history.replaceState({ ngTheme: x }, ""); } catch (e) {} }, t);
+async function homeTabOrder(page, label, mobile) {
+  // `next dev` の丸い開発用の表示（nextjs-portal。左下で業種の入口に重なる）は、リングの測定に混ざるので隠す（`next start` には無い）
+  await page.addStyleTag({ content: "nextjs-portal{display:none!important}" });
+  for (const [w, key] of HOME_WANT) {
     await page.keyboard.press("Tab");
     await page.waitForTimeout(650);
     const r = await ringOf(page);
     if (!r) {
-      ng(`Tab でフォーカスが無い（期待: ${w}）`);
+      ng(`${label}: Tab でフォーカスが無い（期待: ${w}）`);
       continue;
     }
-    if (!r.name.includes(w)) ng(`Tab の順番: 「${w}」のはずが「${r.name}」`);
-    else if (!r.ring) ng(`「${w}」にフォーカスリングが無い`);
-    else if (r.contrast < 3) ng(`「${w}」のフォーカスリングのコントラスト ${r.contrast.toFixed(2)} < 3`);
-    else ok(`「${w}」 リング ${r.ow}px ${r.os} コントラスト ${r.contrast.toFixed(1)}`);
-    if (i >= 5) {
-      const v = await page.evaluate(() => document.querySelector(".hub-front")?.getAttribute("aria-valuenow"));
-      Number(v) === i - 4 ? ok(`  一覧の ${i - 4} 番目にフォーカス → 輪が ${v} 番目まで回る`) : ng(`  一覧の ${i - 4} 番目にフォーカスしたのに輪が ${v} 番目`);
+    if (!r.name.includes(w)) ng(`${label}: Tab の順番: 「${w}」のはずが「${r.name}」`);
+    else if (!r.ring) ng(`${label}: 「${w}」にフォーカスリングが無い`);
+    else if (r.contrast < 3) ng(`${label}: 「${w}」のフォーカスリングのコントラスト ${r.contrast.toFixed(2)} < 3`);
+    else ok(`${label}: 「${w}」 リング ${r.ow}px ${r.os} コントラスト ${r.contrast.toFixed(1)}`);
+    if (key) {
+      const sel = await page.evaluate(() => document.querySelector(".ng")?.dataset.sel);
+      sel === key ? ok(`  フォーカス → 「${w}」が選ばれる（data-sel=${sel}）`) : ng(`${label}: 「${w}」にフォーカスしたのに選ばれたのは ${sel}`);
     }
-    i++;
-  }
-  await ctx.close();
-}
-
-// ───── 2. 総合トップ（輪）: スマホ幅 ─────
-console.log("2. / 幅390（輪）: Tab で（一覧は画面の外にあり、フォーカスが入ると出る）");
-{
-  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
-  const page = await ctx.newPage();
-  await page.goto(BASE + "/", { waitUntil: "load" });
-  await page.waitForTimeout(2600);
-  const want = ["本文へ移動", "マチノワ", "さがす", "グルメに入る", "業種を選ぶ輪", "01グルメ", "02ビューティー", "03ボディケア", "ペット（準備中）", "おでかけ（準備中）", "ステイ（準備中）"];
-  for (const w of want) {
-    await page.keyboard.press("Tab");
-    await page.waitForTimeout(650);
-    const r = await ringOf(page);
-    if (!r) ng(`Tab でフォーカスが無い（期待: ${w}）`);
-    else if (!r.name.includes(w)) ng(`Tab の順番: 「${w}」のはずが「${r.name}」`);
-    else if (!r.ring || r.contrast < 3) ng(`「${w}」のフォーカスリングが見えない（${r.contrast.toFixed(2)}）`);
-    else {
-      // 一覧の項目は、フォーカスが入ると画面の中に出る（幅・高さが 1px のまま隠れていない）
+    if (mobile && key) {
       const box = await page.evaluate(() => {
         const e = document.activeElement.getBoundingClientRect();
         return { w: e.width, h: e.height, inView: e.top >= 0 && e.bottom <= innerHeight };
       });
-      if (/^0\d/.test(w) || /準備中/.test(w)) box.w >= 40 && box.h >= 40 && box.inView ? ok(`「${w}」 リング ${r.contrast.toFixed(1)}・画面に出る ${Math.round(box.w)}×${Math.round(box.h)}`) : ng(`一覧の「${w}」が画面に出ない・小さい（${Math.round(box.w)}×${Math.round(box.h)}）`);
-      else ok(`「${w}」 リング コントラスト ${r.contrast.toFixed(1)}`);
+      box.w >= 40 && box.h >= 40 && box.inView ? ok(`  画面に出る ${Math.round(box.w)}×${Math.round(box.h)}`) : ng(`${label}: 「${w}」が画面に出ない・小さい（${Math.round(box.w)}×${Math.round(box.h)}）`);
     }
   }
-  await ctx.close();
 }
 
-// ───── 2b. 総合トップ（動きを減らす設定）: 輪は出さず一覧 ─────
-console.log("2b. / 動きを減らす設定: 業種の一覧");
+for (const theme of ["sometsuke", "akagane"]) {
+  console.log(`1. / 幅1440（にぎわいの輪・${theme}）: Tab で`);
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+    const page = await ctx.newPage();
+    await pinTheme(page, theme);
+    await page.goto(BASE + "/", { waitUntil: "load" });
+    await page.waitForTimeout(2600);
+    const t = await page.evaluate(() => document.querySelector(".ngp")?.dataset.theme);
+    t === theme ? ok(`色 ${t}`) : ng(`色を固定できていない（${t}）`);
+    await homeTabOrder(page, `PC ${theme}`, false);
+    await ctx.close();
+  }
+  console.log(`2. / 幅390（にぎわいの輪・${theme}）: Tab で`);
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+    const page = await ctx.newPage();
+    await pinTheme(page, theme);
+    await page.goto(BASE + "/", { waitUntil: "load" });
+    await page.waitForTimeout(2600);
+    await homeTabOrder(page, `スマホ ${theme}`, true);
+    await ctx.close();
+  }
+}
+console.log("2b. / 動きを減らす設定: Tab の順番は同じ・輪は回らない");
 {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "reduce" });
   const page = await ctx.newPage();
   await page.goto(BASE + "/", { waitUntil: "load" });
   await page.waitForTimeout(1500);
-  const want = ["本文へ移動", "マチノワ", "さがす", "グルメに入る", "ページを見る", "ページを見る"];
-  for (const w of want) {
-    await page.keyboard.press("Tab");
-    await page.waitForTimeout(80);
-    const r = await ringOf(page);
-    if (!r) ng(`Tab でフォーカスが無い（期待: ${w}）`);
-    else if (!r.name.includes(w)) ng(`Tab の順番: 「${w}」のはずが「${r.name}」`);
-    else if (!r.ring || r.contrast < 3) ng(`「${w}」のフォーカスリングが見えない（${r.contrast.toFixed(2)}）`);
-    else ok(`「${w}」 リング コントラスト ${r.contrast.toFixed(1)}`);
-  }
-  const dial = await page.evaluate(() => getComputedStyle(document.querySelector(".hub-dial")).display);
-  dial === "none" ? ok("輪（.hub-dial）は出ない") : ng(`動きを減らす設定なのに輪が出ている（display=${dial}）`);
+  await homeTabOrder(page, "動きを減らす", false);
+  const rot = await page.evaluate(() => (document.querySelector(".ng-ring")?.style.getPropertyValue("--rot") || "0").trim());
+  parseFloat(rot) === 0 ? ok("輪は回らない（--rot が 0）") : ng(`動きを減らす設定なのに輪が回っている（--rot=${rot}）`);
   await ctx.close();
+}
+
+if (ONLY_HOME) {
+  await browser.close();
+  console.log(`\n違反: ${bad.length}`);
+  process.exit(bad.length ? 1 : 0);
 }
 
 // ───── 3. 地図のチップ・切替 ─────

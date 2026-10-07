@@ -25,8 +25,9 @@ const arg = (k, d) => {
 const BASE = arg("base", "http://localhost:3242");
 const OUT = arg("out", "");
 const VERBOSE = process.argv.includes("--verbose");
-// --motion: 総合トップの「輪」を、動きを減らさない設定で測る（幅1440・390）。6つの業種を正面に回して、そのたびに .hub の中の文字を測る。
-// 既定は「動きを減らす」設定で測る（総合トップは輪を出さず、業種の一覧になる）。
+// --motion: 総合トップ「にぎわいの輪」の最初の画面を、動きを減らさない設定で測る（幅1440・390 × 2 色）。6つの業種を順に選んで（入口にフォーカス）、そのたびに .ng の中の文字を測る。
+// 既定は「動きを減らす」設定で測る（`/` は 2 色それぞれ、ページ全体。下のブロックの言葉も含む）。
+// 総合トップの色は、抽選で変わるので固定して測る（cookie __ngpin を、init script が履歴の項目の色に写す。ページの抽選スクリプトがそれを読む）。
 const MOTION = process.argv.includes("--motion");
 const PAGES = arg(
   "pages",
@@ -61,16 +62,23 @@ const PAGES = arg(
     "/omakase?r=kinki&who=solo&b=3000&m=any&s=t1",
   ].join(","),
 ).split(",");
-/** 総合トップの輪: 1番目（グルメ）は通常の検査。2〜6番目は、矢印キーで正面に回してから .hub の中だけを測る */
-const HUB_STATES = [1, 2, 3, 4, 5].map((i) => ({
-  label: `輪 ${i + 1}番目`,
-  page: "/",
-  only: ".hub",
-  run: async (pg) => {
-    for (let k = 0; k < i; k++) await pg.keyboard.press("ArrowRight");
-    await pg.waitForTimeout(1800);
-  },
-}));
+/** 総合トップ（にぎわいの輪）の 2 色 */
+const HOME_THEMES = ["sometsuke", "akagane"];
+/** `/` は 2 色それぞれを測る（色を固定する） */
+const pageTargets = (list) => list.flatMap((p) => (p === "/" ? HOME_THEMES.map((t) => ({ label: `/ ${t}`, page: "/", theme: t })) : [{ label: p, page: p }]));
+/** 総合トップの最初の画面: 6 つの業種を順に選んで（入口にフォーカス）、.ng の中だけを測る。2 色とも */
+const HUB_STATES = HOME_THEMES.flatMap((t) =>
+  [0, 1, 2, 3, 4, 5].map((i) => ({
+    label: `輪 ${i + 1}番目 ${t}`,
+    page: "/",
+    theme: t,
+    only: ".ng",
+    run: async (pg) => {
+      await pg.evaluate((k) => document.querySelectorAll(".ng-btns li > *")[k].focus(), i);
+      await pg.waitForTimeout(1800);
+    },
+  })),
+);
 const VIEWPORTS = [
   { name: "1440", width: 1440, height: 900 },
   { name: "390", width: 390, height: 844 },
@@ -227,9 +235,17 @@ let checked = 0;
 for (const vp of VIEWPORTS) {
   const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, deviceScaleFactor: 1, reducedMotion: MOTION ? "no-preference" : "reduce" });
   const page = await ctx.newPage();
-  const targets = [...PAGES.map((p) => ({ label: p, page: p })), ...(MOTION ? HUB_STATES : arg("pages", "") && !process.argv.includes("--states") ? [] : STATES)];
+  await ctx.addInitScript(() => {
+    try {
+      const m = document.cookie.match(/(?:^|; )__ngpin=(\w+)/);
+      if (m) history.replaceState({ ngTheme: m[1] }, "");
+    } catch (e) {}
+  });
+  const targets = [...(MOTION ? [] : pageTargets(PAGES)), ...(MOTION ? HUB_STATES : arg("pages", "") && !process.argv.includes("--states") ? [] : STATES)];
   for (const tg of targets) {
     const p = tg.label;
+    await ctx.clearCookies();
+    if (tg.theme) await ctx.addCookies([{ name: "__ngpin", value: tg.theme, url: BASE }]);
     const resp = await page.goto(BASE + encodeURI(tg.page), { waitUntil: "load", timeout: 120000 });
     if (!resp || resp.status() !== 200) {
       console.log(`SKIP ${vp.name} ${p} -> ${resp?.status()}`);

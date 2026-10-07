@@ -33,7 +33,7 @@ const PORTAL_OFF_SOURCES = [
   "/search-index.json",
   "/_portal/:path*",
   "/proto-sns", // 行動ボタンの見比べ（試作・非公開）
-  "/proto-hub/:path*", // 総合トップ 5案の見比べ（試作・非公開）
+  "/proto-hub/:path*", // 総合トップ「にぎわいの輪」の色を固定して見るルート（プレビュー・ローカル専用。本番は ON でも 404）
 ];
 
 const nextConfig: NextConfig = {
