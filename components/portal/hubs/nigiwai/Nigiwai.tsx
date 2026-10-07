@@ -8,7 +8,7 @@ import type { DishPhoto } from "@/lib/portal/hubs/nigiwai/photos";
 import { HEAD, LEAD } from "./copy";
 
 /**
- * 総合トップ 案「にぎわいの輪」— 朱の地に、料理の写真の輪（クライアント）。
+ * 総合トップ「にぎわいの輪」— 地の色に、料理の写真の輪（クライアント）。
  *
  * 輪は 16 枚の丸い写真（皿）を大きな円周に並べたもの。ゆっくり回り、つかんで回せる（円の中心まわりの角度で動かす。離すと慣性で、元の回転に戻る）。
  * 写真は輪が回っても、いつも上を向いたまま（回るのは位置だけ）。写真に置いた指・カーソルで、その 1 枚が少し大きくなる。
@@ -294,7 +294,7 @@ export default function Nigiwai({
     };
   }, []);
 
-  /* ───────────── 入る（輪が広がり、朱が画面を満たす） ───────────── */
+  /* ───────────── 入る（輪が広がり、地の色が画面を満たす） ───────────── */
   const go = useCallback(
     (i: number, from?: HTMLElement | null) => {
       const it = items[i];
@@ -374,7 +374,7 @@ export default function Nigiwai({
         <i />
       </div>
 
-      {/* 料理の写真の輪（飾り。回る・つかめる）。画面の上下の端では、写真がやわらかく朱に溶ける（半端な切れ目を見せない） */}
+      {/* 料理の写真の輪（飾り。回る・つかめる）。画面の上下の端では、写真がやわらかく地の色に溶ける（半端な切れ目を見せない） */}
       <div className="ng-ringwrap" aria-hidden="true">
       <div className="ng-ring" ref={ringRef} style={{ ["--vc" as string]: cur.color } as CSSProperties}>
         {dishes.map((d, i) => {

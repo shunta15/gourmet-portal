@@ -289,7 +289,7 @@ const GOURMET = [
 const PORTAL_404 = [
   "/gourmet",
   "/proto-sns", // 行動ボタンの見比べ（試作・非公開）
-  "/proto-hub/hamon", // 総合トップ 5案の見比べ（試作・非公開）
+  "/proto-hub/nigiwai", // 総合トップ「にぎわいの輪」の色を固定して見るルート（試作・非公開。プレビュー・ローカル専用）
   "/beauty",
   "/beauty/hair",
   "/beauty/hair/tokyo",

@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════════════════
    総合トップ 案「にぎわいの輪 NIGIWAI」（試作・コンセプト 3）
-   朱の地に、料理の写真の輪。接頭辞は .ng- 。.mp（portal.css）の配下で使う。
-   色は朱・生成りの白・写真だけ。書体は Zen Maru Gothic（丸みのある太いゴシック）。
+   地の色に、料理の写真の輪。接頭辞は .ng- 。.mp（portal.css）の配下で使う。
+   色の組は themes.css（sometsuke 白磁と藍・akagane 濃紺と銅）。書体は Zen Maru Gothic（丸みのある太いゴシック）。
    動かすのは transform / scale / opacity と --rot（角度）だけ。動きを減らす設定では、回さず・集まらず・静かに出す（末尾）。
    ════════════════════════════════════════════════════════════ */
 
@@ -135,7 +135,7 @@ body:has(.ng) .cursor-ring {
   inset: 0;
   z-index: 5;
   pointer-events: none;
-  /* 下の端の 52px は地の濃い色で塗り切る（色見本の行の下地にもなる） */
+  /* 下の端の 52px は地の濃い色で塗り切る */
   background: linear-gradient(to bottom, var(--ng-bg-d) 0, transparent var(--fade), transparent calc(100% - var(--fade)), var(--ng-bg-d) calc(100% - 52px));
 }
 .ng-ring {
@@ -680,7 +680,7 @@ body:has(.ng) .cursor-ring {
   white-space: nowrap;
 }
 
-/* ───── 入る: 輪が広がり、朱が画面を満たす ───── */
+/* ───── 入る: 輪が広がり、地の色が画面を満たす ───── */
 .ng-wipe {
   position: absolute;
   inset: 0;
@@ -1298,78 +1298,10 @@ body:has(.ng) .cursor-ring {
   }
 }
 
-/* ═══════════ 色の見比べ（小さな丸い色見本を横に並べる。見比べ用の部品） ═══════════ */
-/* どの幅でも同じ場所: 最初の画面の下端の中央（PC は輪の下の端、スマホは 6 つのボタンの下） */
-.ng-sw {
-  position: absolute;
-  left: 50%;
-  top: calc(var(--H) - 56px - env(safe-area-inset-bottom, 0px));
-  z-index: 12;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-.ng-sw ul {
-  display: flex;
-  width: max-content;
-  padding: 0 5px;
-  border-radius: 28px;
-  background: rgba(20, 16, 12, 0.32);
-  list-style: none;
-}
-.ng-swi {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  pointer-events: auto;
-}
-.ng-swi i {
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--ng-bg);
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 3px rgba(0, 0, 0, 0.4);
-  transition: scale 0.4s var(--spring);
-}
-.ng-swi b {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--ng-fill);
-}
-.ng-swi:hover i {
-  scale: 1.15;
-}
-.ng-swi[aria-current] i {
-  scale: 1.3;
-  box-shadow:
-    0 0 0 3px #ffffff,
-    0 0 0 6px rgba(0, 0, 0, 0.55);
-}
-.ng-swi:focus-visible {
-  outline: 3px solid #ffffff;
-  outline-offset: -4px;
-  border-radius: 50%;
-}
-.ng.is-leaving ~ .ng-sw {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .ng-swi i {
-    transition: none;
-  }
-}
-
 /* ═══════════ 共通フッター（枠が付ける部品）の色を、この案の配色に合わせる ═══════════
    フッターは枠（PortalLayout・PortalFooter）の部品なので、配置・文言・リンクは変えない。この案の画面が出ているあいだだけ、
    body:has(.ngp) で範囲を限って、色（背景・文字・線）だけを上書きする。枠は .ngp の外にあるので、色の値は body に持たせる。
-   --ngf-* を持たない配色（shu など）は、フォールバックで元の色（生成りの文字・墨の地）のまま。
+   --ngf-* を持たない配色は、フォールバックで元の色（生成りの文字・墨の地）のまま（今の 2 色は両方持つ）。
    文字は、地に対して 4.5:1 以上（半透明の生成りを重ねた元の色は、藍の地では 4.5 を割るので、混ぜた色を直に書く）。 */
 body:has(.ngp[data-theme="sometsuke"]) {
   --ngf-bg: #18265a;

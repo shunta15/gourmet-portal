@@ -1,3 +1,5 @@
+> 不採用の案を含む過去の資料。決定は COPY-FINAL.md。
+
 # コンセプト 2 の案: 三つの輪 MITSUWA
 
 - ルート `/proto-hub/mitsuwa`、接頭辞 `.mw-`、言葉は `COPY.md` の **コンセプト 2**

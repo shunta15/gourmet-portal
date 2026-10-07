@@ -4,7 +4,6 @@ import Nigiwai from "./Nigiwai";
 import NigiwaiFonts from "./NigiwaiFonts";
 import Statement from "./Statement";
 import RandomTheme from "./RandomTheme";
-import ThemeSwatch from "./ThemeSwatch";
 import { getHubData } from "@/lib/portal/hub";
 import { getNigiwaiPhotos } from "@/lib/portal/hubs/nigiwai/photos";
 import { RANDOM_KEYS, type ThemeKey } from "@/lib/portal/hubs/nigiwai/themes";
@@ -32,11 +31,11 @@ const PICK_HTML =
   `<script>(${PICK_FN})(document.currentScript.closest('.ngp'))</script>`;
 
 /**
- * 案「にぎわいの輪」の 1 ページぶん（サーバー）。色の組（theme）だけが違う。
- * .ngp[data-theme] を最初から付けて描くので、朱が一瞬見えてから変わることはない。
- *  - 固定の色: theme をそのまま出す。色見本つき（見比べ用）。
- *  - random: 総合トップの姿。色見本は出さない。theme は「スクリプトなしのときの色」で、実際の色は開くたびに抽選される（上の PICK_FN と RandomTheme）。
+ * 「にぎわいの輪」の 1 ページぶん（サーバー）。総合トップ `/`（components/portal/pages/home.tsx）が出すもの。色の組（theme）だけが違う。
+ * .ngp[data-theme] を最初から付けて描くので、別の色が一瞬見えてから変わることはない。
+ *  - random: 総合トップの姿。theme は「スクリプトなしのときの色」で、実際の色は開くたびに抽選される（上の PICK_FN と RandomTheme）。
  *    ページ自体は、どの色でも同じ HTML なので、静的に配信できる（リクエストごとの描画にしない）。
+ *  - 固定の色: theme をそのまま出す（プレビュー・ローカル専用の /proto-hub/nigiwai/<色>）。
  */
 export default async function NigiwaiPage({ theme, random = false }: { theme: ThemeKey; random?: boolean }) {
   const [data, photos] = await Promise.all([getHubData(), getNigiwaiPhotos()]);
@@ -50,7 +49,6 @@ export default async function NigiwaiPage({ theme, random = false }: { theme: Th
       )}
       <NigiwaiFonts />
       <Nigiwai items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} open={data.open} photos={photos.ring} />
-      {!random && <ThemeSwatch current={theme} />}
       <Statement ring={photos.ring} side={photos.side} />
     </div>
   );
