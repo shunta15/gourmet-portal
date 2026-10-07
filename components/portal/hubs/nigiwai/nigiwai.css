@@ -42,6 +42,7 @@ body:has(.ng) .cursor-ring {
   height: var(--H);
   color: var(--ng-ink2);
   background:
+    radial-gradient(62% 54% at 50% var(--cy), var(--ng-glow, transparent), transparent 74%),
     linear-gradient(to bottom, transparent 84%, var(--ng-bg-d) 100%),
     radial-gradient(120% 95% at 50% 52%, var(--ng-bg-l) 0%, var(--ng-bg) 52%, var(--ng-bg-d) 100%);
   -webkit-user-select: none;
@@ -80,7 +81,7 @@ body:has(.ng) .cursor-ring {
   width: calc(var(--R) * 2);
   height: calc(var(--R) * 2);
   border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(26% * var(--ng-la)), transparent);
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(26% * var(--ng-la)), transparent);
   animation: ngRipple 9s linear infinite;
   will-change: transform, opacity;
 }
@@ -142,7 +143,7 @@ body:has(.ng) .cursor-ring {
   height: calc(var(--R) * 2);
   box-sizing: border-box;
   border-radius: 50%;
-  border: 2px solid color-mix(in srgb, var(--ng-ink) calc(42% * var(--ng-la)), transparent);
+  border: 2px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(42% * var(--ng-la)), transparent);
 }
 .ng-ring::after {
   content: "";
@@ -153,7 +154,7 @@ body:has(.ng) .cursor-ring {
   height: calc(var(--R) * 1.36);
   box-sizing: border-box;
   border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(20% * var(--ng-la)), transparent);
 }
 /* 皿 1 枚。位置は --a（置き場所）と --rot（輪の回転）。回っても、写真はいつも上を向く */
 .ng-dish {
@@ -194,8 +195,15 @@ body:has(.ng) .cursor-ring {
     opacity 0.5s ease calc(var(--i) * 28ms);
 }
 .ng-photo {
+  /* 金属の縁（--ng-metal が 1 の色の組だけ）。写真は元の大きさのまま、縁が外へ張り出す。既定は 0（縁なし）で、見た目は変わらない */
+  --bw: calc(var(--d) * 0.03 * var(--ng-metal, 0));
+  inset: calc(var(--bw) * -1);
   overflow: hidden;
-  background: var(--ng-ph);
+  border: var(--bw) solid transparent;
+  background-color: var(--ng-ph);
+  background-image: var(--ng-rim-grad, none);
+  background-origin: border-box;
+  background-clip: border-box;
   box-shadow:
     0 0 0 calc(var(--d) * 0.03) var(--ng-rim),
     0 0 0 calc(var(--d) * 0.03 + 1.5px) var(--ng-edge),
@@ -218,7 +226,7 @@ body:has(.ng) .cursor-ring {
 .ng-void {
   opacity: 0;
   scale: 0.55;
-  background: var(--vc, transparent);
+  background: color-mix(in srgb, var(--vc, transparent) var(--ng-vc-pct, 100%), var(--ng-bg));
   transition:
     scale 0.6s var(--spring) calc(var(--i) * 28ms),
     opacity 0.45s ease calc(var(--i) * 28ms),
@@ -245,7 +253,7 @@ body:has(.ng) .cursor-ring {
   opacity: 1;
   scale: 1;
   background: transparent;
-  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ng-ink) 78%, transparent);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ng-off-line, var(--ng-ink)) 78%, transparent);
 }
 .ng-dish:hover .ng-void {
   scale: 1.1;
@@ -301,7 +309,7 @@ body:has(.ng) .cursor-ring {
   gap: 10px;
   min-height: 48px;
   padding: 0 22px 0 18px;
-  border: 2px solid var(--ng-ink);
+  border: 2px solid var(--ng-btn-line, var(--ng-ink));
   border-radius: 999px;
   color: var(--ng-ink2);
   font: 700 14px/1 var(--font);
@@ -313,7 +321,7 @@ body:has(.ng) .cursor-ring {
   animation: ngFade 0.9s ease 0.35s backwards;
 }
 .ng-find:hover {
-  background: var(--ng-fill);
+  background: var(--ng-fill-bg, var(--ng-fill));
   color: var(--ng-on-fill);
   transform: scale(1.05);
 }
@@ -434,15 +442,15 @@ body:has(.ng) .cursor-ring {
   }
 }
 .ng-b.live {
-  background: var(--ng-fill);
+  background: var(--ng-fill-bg, var(--ng-fill));
   color: var(--ng-on-fill);
 }
 .ng-b.prep {
-  box-shadow: inset 0 0 0 2.5px var(--ng-ink);
+  box-shadow: inset 0 0 0 2.5px var(--ng-btn-line, var(--ng-ink));
   color: var(--ng-ink2);
 }
 .ng-b.off {
-  border: 2.5px dashed color-mix(in srgb, var(--ng-ink2) 88%, transparent);
+  border: 2.5px dashed color-mix(in srgb, var(--ng-btn-line, var(--ng-ink2)) 88%, transparent);
   color: var(--ng-ink2);
 }
 .ng-b::after {
@@ -450,7 +458,7 @@ body:has(.ng) .cursor-ring {
   position: absolute;
   inset: -7px;
   border-radius: 50%;
-  border: 2px solid var(--ng-ink);
+  border: 2px solid var(--ng-btn-line, var(--ng-ink));
   opacity: 0;
   transform: scale(0.86);
   transition:
@@ -555,7 +563,7 @@ body:has(.ng) .cursor-ring {
   font: 900 clamp(27px, calc(var(--R) * 0.078), 40px) / 1 var(--font);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;
-  color: var(--ng-ink);
+  color: var(--ng-num, var(--ng-ink));
   text-shadow: 0 0.05em 0 color-mix(in srgb, var(--ng-tshade) 28%, transparent);
 }
 .ng-open {
@@ -582,7 +590,7 @@ body:has(.ng) .cursor-ring {
   align-items: center;
   gap: 9px;
   padding: 9px 15px 9px 13px;
-  border: 2px solid currentColor;
+  border: 2px solid var(--ng-btn-line, currentColor);
   border-radius: 999px;
   color: var(--ng-ink2);
   font: 700 13px/1 var(--font);
@@ -613,7 +621,7 @@ body:has(.ng) .cursor-ring {
   min-height: 52px;
   padding: 0 26px 0 30px;
   border-radius: 999px;
-  background: var(--ng-fill);
+  background: var(--ng-fill-bg, var(--ng-fill));
   color: var(--ng-on-fill);
   font: 900 16px/1 var(--font);
   letter-spacing: 0.08em;
@@ -869,14 +877,14 @@ body:has(.ng) .cursor-ring {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(20% * var(--ng-la)), transparent);
 }
 .ng-st-ring i:nth-child(2) {
   inset: 12%;
 }
 .ng-st-ring i:nth-child(3) {
   inset: 26%;
-  border-color: color-mix(in srgb, var(--ng-ink) calc(28% * var(--ng-la)), transparent);
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(28% * var(--ng-la)), transparent);
 }
 .ng-st-in {
   position: relative;
@@ -957,11 +965,16 @@ body:has(.ng) .cursor-ring {
   order: 2;
 }
 .ng-voice .dish .ph {
+  --bw: calc(clamp(4px, 0.5vw, 8px) * var(--ng-metal, 0));
   position: absolute;
-  inset: 0;
+  inset: calc(var(--bw) * -1);
   border-radius: 50%;
   overflow: hidden;
-  background: var(--ng-ph);
+  border: var(--bw) solid transparent;
+  background-color: var(--ng-ph);
+  background-image: var(--ng-rim-grad, none);
+  background-origin: border-box;
+  background-clip: border-box;
   box-shadow:
     0 0 0 clamp(4px, 0.5vw, 8px) var(--ng-rim),
     0 0 0 calc(clamp(4px, 0.5vw, 8px) + 1.5px) var(--ng-edge),
@@ -977,11 +990,11 @@ body:has(.ng) .cursor-ring {
   position: absolute;
   inset: -12%;
   border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(40% * var(--ng-la)), transparent);
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(40% * var(--ng-la)), transparent);
 }
 .ng-voice .dish .rg + .rg {
   inset: -26%;
-  border-color: color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(20% * var(--ng-la)), transparent);
 }
 .ng-st-p4 {
   word-break: auto-phrase;
