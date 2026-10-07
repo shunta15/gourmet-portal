@@ -13,7 +13,7 @@
 | `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`） |
 | `/proto-hub/**`（総合トップの色を固定して見るルート） | 404 | プレビュー（`VERCEL_ENV=preview`）とローカルの `next dev` だけ。**公開スイッチ ON の本番でも 404** |
 | 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/list`・`/list-data/**`・`/photos`・`/omakase`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
-| `robots.txt` | 今と同一 | 総合サイトのサイトマップ 7 本を追記 |
+| `robots.txt` | 今と同一 | 総合サイトのサイトマップ 8 本を追記 |
 | `/sitemap.xml` | 今と同一 | `/gourmet` が増える |
 | グルメ店ページの SNS・共有ボタン・計測 | 出ない | 出る |
 | グルメ店ページの「候補に入れる」ボタンと、画面隅の「候補リスト ◯店」 | 出ない | 出る（保存先はブラウザの localStorage。`/list` で一覧・共有） |
@@ -236,7 +236,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
   curl -s https://machinowa.tokyo/ | grep -o '<title>[^<]*</title>\|name="description" content="[^"]*"\|property="og:[a-z:]*" content="[^"]*"\|name="twitter:[a-z:]*" content="[^"]*"'
   ```
 - `/gourmet` の title が「グルメの店をエリア・特集・シーンから探す｜マチノワグルメ」、canonical が `https://machinowa.tokyo/gourmet`。
-- `robots.txt` の `Sitemap:` が 8 行（`/sitemap.xml`・`/station/sitemap.xml`・業種 5 本・`/videos/sitemap.xml`）。`Disallow` は従来どおり（`/admin/` `/api/` `/agent-teams/`）。
+- `robots.txt` の `Sitemap:` が 9 行（`/sitemap.xml`・`/station/sitemap.xml`・業種 5 本・`/videos/sitemap.xml`・`/photos/sitemap.xml`）。`Disallow` は従来どおり（`/admin/` `/api/` `/agent-teams/`）。
 - 新業種（`/beauty` など）は掲載 0 件なので **noindex**（件数ゲート。3 件以上で index になる）。`/area/**`・`/map`・`/find`・`/videos` も noindex のまま。駅ページは店 3 件以上のものだけ index。
 - 共有画像: `https://machinowa.tokyo/og/home?v=2` が 200 で画像（白磁の地・藍の文字・金の細い輪。キャッチコピーそのまま。`lib/seo/og.ts` の `OG_VERSION` が 2）。X・LINE のカードデバッガーで `/` と `/station/kyoto/祇園四条` を確かめる。
 - 日本語 URL を 20 回ずつ（1-C のコマンドの `localhost:3242` を `machinowa.tokyo` に）。
@@ -248,6 +248,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 1. **サイトマップを送信**（「サイトマップ」→ URL を入力 → 送信）:
    - `https://machinowa.tokyo/station/sitemap.xml`（駅エリア。index 対象のページが入っている）
    - `https://machinowa.tokyo/videos/sitemap.xml`（今は空。動画に投稿日が付くと入る）
+   - `https://machinowa.tokyo/photos/sitemap.xml`（`/photos` の 1 ページだけ。写真が 3 枚以上あるときに載る）
    - 既存の `https://machinowa.tokyo/sitemap.xml` は送信済みのはず。再取得させる（`/gourmet` が増えた）。
    - 新業種のサイトマップ（`/beauty/sitemap.xml` など 5 本）は今は空（掲載 0 件）。**掲載ができて index 対象が出てから**送る。
 2. **URL 検査 →「インデックス登録をリクエスト」**する対象（index のページだけ。noindex のページには要らない）:
@@ -339,7 +340,7 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **どこに何があるか**: `components/portal/ShopActions.tsx`（入口。`RestaurantDetail` が `React.lazy` で読む。CSS を `<style href precedence>` で出す）→ `ShopActionsTama.tsx`（ボタンの並び・脇役リンク・共有）・`ShopActionsParts.tsx`（自作アイコン・リンク 1 つ分 `Act`・共有の動き `useShare`・現れ方 `useEnter`）・`shopActionsCss.ts`（CSS。`.sa-` 接頭辞）。店の事実 → ボタンの一覧に直す純関数は `lib/portal/shopActions.ts`（値がある項目だけ。補足の @アカウント名・電話番号・住所・座標は出さない）。仕様は `proto-portal/SNS-BUTTONS-BRIEF-2.md`（案4〜6）。
 - **整理したもの（2026-10-07）**: 残り 5 案の部品（罫・印・箱・駒・帯）と、見比べページ `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行、店ページの隅の切替「ボタン案 1〜6」（`previewTools`）と URL の `?sns=` での切替、`.sa-pv`・`.sa-h-bar` の CSS（`saveListCss.ts` の逃げ）を消した。`/proto-sns` は ON でも OFF でも、ルートが無いので標準の 404。`SNS-BUTTONS-BRIEF.md`（案1〜3）と `SNS-BUTTONS-BRIEF-2.md` は、決める前の設計の記録として残してある（`SNS-BUTTONS-BRIEF.md` の案は採用されていない）。
 - **整理のとき確かめたこと**: 整理の前後で、店ページ 5 軒（`r21`・`r06`・`r23`・`r01`・`r299`）×（PC 1280・スマホ 375）の `.sa` の HTML（属性の並びを除く）・各ボタンの位置と大きさが、すべて一致した。スマホ（幅 768px 以下）の上の余白 40px は、これまで案1 の CSS が先に読まれて効いていたものを `.sa` に書き写したもの（見た目はこれまでの案4 のまま）。
-- **未実施**: main との全ページ比較（1-A の `compare-off.mjs static / live`）。取り込み前に必ず実行する。
+- **main との全ページ比較（1-A）**: 2026-10-08 に、main（8adce61）を取り込んだあとで実行し、`compare-off.mjs static`（html 1365 ページ差 0・JS は 1 ページあたり最大 +854B・平均 +603B）と `live`（77 件一致）の両方が `PROBLEMS 0`。公開の直前（2-2 の取り込みのあと）に、もう一度やり直す。
 
 ## 付録: こだわり条件で絞る（2026-10-05・試作）
 - 仕様 `proto-portal/FILTERS-BRIEF.md`、数えた結果と検査の記録 `proto-portal/FILTERS-COVERAGE.md`。公開スイッチ ON のときだけ。OFF の `/search`・`/`（グルメのトップ）は出力が変わらない（検査済み）。

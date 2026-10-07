@@ -144,7 +144,8 @@ console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCan
       const group = gi >= 0 ? divBlock(h, gi) : null;
       if (!group) { bad.push(`share group missing ${u}`); continue }
       anchors = [...group.matchAll(/<a [^>]*href="([^"]+)"[^>]*>/g)].map(m => ({ k: kindOfShareHref(m[1].replace(/&amp;/g, '&')), tag: m[0] }));
-      copyBtn = [...group.matchAll(/<button[^>]*>([\s\S]*?)<\/button>/g)].some(m => /コピー/.test(m[1]));
+      // 玉のボタンは、ラベルが 1 字ずつ <span> に分かれる（aria-hidden）ので、読み上げの名前（aria-label）か、タグを除いた文字で見る
+      copyBtn = [...group.matchAll(/<button([^>]*)>([\s\S]*?)<\/button>/g)].some(m => /aria-label="[^"]*コピー/.test(m[1]) || /コピー/.test(m[2].replace(/<[^>]*>/g, '')));
     } else {
       const group = h.match(/<div[^>]*data-share=""[^>]*>[\s\S]*?<\/div>\s*(?:<input[^>]*>)?\s*<p[^>]*role="status"/);
       anchors = [...h.matchAll(/<a [^>]*data-share-kind="([a-z]+)"[^>]*>/g)].map(m => ({ k: m[1], tag: m[0] }));
