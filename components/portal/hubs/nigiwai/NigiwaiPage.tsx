@@ -16,9 +16,9 @@ import { RANDOM_KEYS, type ThemeKey } from "@/lib/portal/hubs/nigiwai/themes";
  *  - 無ければ、2 色を半々で抽選して、履歴の項目に覚える。
  * 同じ処理を 2 か所から呼ぶ（先に動いたほうが決め、あとのほうは何もしない）。<img> を先に、<script> をあとに置く（<script> が止められると、解析もそこで止まるため）。
  *  1. <script>: 読み込み中の stylesheet が無ければ、HTML の解析がそこに届いた瞬間に動く（最初の描画より必ず前）。
- *  2. <img src="data:," onerror>: <script> は、head の stylesheet（遅い回線では外部の Google Fonts）が終わるまで動けない。
+ *  2. <img src="（1×1 の透明な GIF）" onload>: <script> は、head の stylesheet（遅い回線では外部の Google Fonts）が終わるまで動けない。
  *     そして、遅い端末では「stylesheet が終わった直後の最初の描画」が <script> より先に来ることがある（CPU 4 倍遅延で 6 回中 4 回、
- *     既定の色の根が 1 コマ描かれた）。<img> の error は、stylesheet を待たずに解析の直後に動くので、<script> が待たされている間に色を決める。
+ *     既定の色の根が 1 コマ描かれた）。<img> の load は、stylesheet を待たずに解析の直後に動くので（実測。壊れた画像にしないよう、読み込める 1×1 の GIF にした）、<script> が待たされている間に色を決める。
  *     （<svg onload> は文書の読み込みが終わるまで動かないので使えない。実測）
  * どちらも <div dangerouslySetInnerHTML> の中に置く（<script> 要素を React に作らせると、ブラウザの中での移動のとき、
  * React が「script は動かない」と console.error を出すため）。ブラウザの中での移動（<Link>・戻る）のときは、この処理は動かず（readyState が loading でない）、
@@ -28,7 +28,7 @@ import { RANDOM_KEYS, type ThemeKey } from "@/lib/portal/hubs/nigiwai/themes";
 const PICK_FN = `function(r){try{if(!r||document.readyState!=='loading'||r.getAttribute('data-ng-boot'))return;var K=${JSON.stringify([...RANDOM_KEYS]).replace(/"/g, "'")},h=history,st=h.state,t=st&&st.ngTheme,n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];if(n&&n.type==='reload')t=null;if(K.indexOf(t)<0)t=K[Math.random()<.5?0:1];try{h.replaceState(Object.assign({},st,{ngTheme:t}),'')}catch(e){}r.setAttribute('data-theme',t);r.setAttribute('data-ng-boot','1')}catch(e){}}`;
 const attr = (c: string) => c.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const PICK_HTML =
-  `<img alt="" width="0" height="0" src="data:," onerror="(${attr(PICK_FN)})(this.closest('.ngp'))">` +
+  `<img alt="" width="1" height="1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="(${attr(PICK_FN)})(this.closest('.ngp'))">` +
   `<script>(${PICK_FN})(document.currentScript.closest('.ngp'))</script>`;
 
 /**
@@ -51,7 +51,7 @@ export default async function NigiwaiPage({ theme, random = false }: { theme: Th
       <NigiwaiFonts />
       <Nigiwai items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} open={data.open} photos={photos.ring} />
       {!random && <ThemeSwatch current={theme} />}
-      <Statement side={photos.side} />
+      <Statement ring={photos.ring} side={photos.side} />
     </div>
   );
 }

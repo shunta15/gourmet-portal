@@ -366,7 +366,7 @@ body:has(.ng) .cursor-ring {
   align-items: center;
 }
 .ng-h1 {
-  font: 900 calc(var(--R) * 0.124) / 1.16 var(--font);
+  font: 900 calc(var(--R) * 0.114) / 1.15 var(--font);
   font-feature-settings: "palt" 1;
   letter-spacing: -0.015em;
   color: var(--ng-ink);
@@ -466,6 +466,11 @@ body:has(.ng) .cursor-ring {
 .ng-b.off {
   border: 2.5px dashed color-mix(in srgb, var(--ng-btn-line, var(--ng-ink2)) 88%, transparent);
   color: var(--ng-ink2);
+}
+/* 準備中・入れない印の中は、地とほぼ同じ色で塗る（背後を通る細い輪の線が、文字に重なって読みにくくならないように） */
+.ng-b.prep,
+.ng-b.off {
+  background-color: color-mix(in srgb, color-mix(in srgb, var(--ng-bg-l) 55%, var(--ng-bg)) 90%, transparent);
 }
 .ng-b::after {
   content: "";
@@ -711,11 +716,36 @@ body:has(.ng) .cursor-ring {
   }
 }
 
+/* 背の低い画面（1280×720 など）: 輪の半径が高さで決まるので、輪の中の表示を詰めて、回る写真に近づかないようにする */
+@media (min-width: 761px) and (max-height: 820px) {
+  .ng-h1 {
+    font-size: calc(var(--R) * 0.11);
+  }
+  .ng-lead {
+    margin-top: calc(var(--R) * 0.026);
+    line-height: 1.75;
+  }
+  .ng-sel {
+    margin-top: calc(var(--R) * 0.036);
+  }
+  .ng-info {
+    margin-top: calc(var(--R) * 0.04);
+    gap: calc(var(--R) * 0.024);
+  }
+  .ng-facts b {
+    font-size: clamp(24px, calc(var(--R) * 0.07), 40px);
+  }
+  .ng-go {
+    min-height: 46px;
+  }
+}
+
 /* ═══════════ スマホ：輪の全体が画面の中に見える。見出し・リードは輪の上、数字と入口は輪の真ん中、6 つのボタンは輪の下（親指の位置） ═══════════ */
 @media (max-width: 760px) {
   .ngp {
-    --H: max(100svh, 760px); /* 背の低い端末では、少し縦に長くして、重ならないようにする */
-    --mt: calc(180px + (100vw - 2 * var(--gut)) * 0.3053); /* 輪の上端: 見出し・リードの下 */
+    --H: max(100svh, 800px); /* 背の低い端末では、少し縦に長くして、重ならないようにする（輪の真ん中の表示が、回る写真に重ならない大きさを保つ） */
+    --h1f: calc((100vw - 2 * var(--gut)) / 8.4); /* 見出しの大きさ（8 文字の行が幅の 9 割ほど） */
+    --mt: calc(76px + var(--h1f) * 3.48 + 14px + 80px + 22px); /* 輪の上端: 見出し（3 行）・リード（3 行）の下 */
     --mb: calc(var(--H) - 140px - env(safe-area-inset-bottom, 0px)); /* 輪の下端: ボタンの上 */
     --cy: calc((var(--mt) + var(--mb)) / 2); /* 輪の中心の高さ */
   }
@@ -762,7 +792,8 @@ body:has(.ng) .cursor-ring {
     padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 66px);
   }
   .ng-h1 {
-    font-size: calc((100vw - 2 * var(--gut)) / 11.4);
+    font-size: var(--h1f);
+    letter-spacing: -0.02em;
   }
   .ng-lead {
     margin-top: 14px;
@@ -786,10 +817,10 @@ body:has(.ng) .cursor-ring {
     position: absolute;
     left: 50%;
     top: var(--cy);
-    translate: -50% -50%;
+    translate: -50% calc(-50% - 5px); /* 下の入口（幅のある丸い印）が、回る写真に近づかないよう、少し上げる */
     width: calc(var(--Dout) * 0.6);
     margin: 0;
-    gap: 7px;
+    gap: 6px;
     min-height: 0;
   }
   .ng-act {
@@ -817,10 +848,10 @@ body:has(.ng) .cursor-ring {
   .ng-go {
     order: 2;
     min-height: 44px;
-    padding: 0 16px 0 20px;
+    padding: 0 14px 0 18px;
     gap: 8px;
     font-size: 14px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -859,12 +890,14 @@ body:has(.ng) .cursor-ring {
   }
 }
 
-/* ═══════════ 下のブロック（本文の全文） ═══════════ */
+/* ═══════════ 下のブロック（本文の全文）═══════════
+   主役は第 1 段落の 3 行（3 つの場面）: 店と出会う（1 枚）→ 人とつながる（3 枚が線でつながる）→ 輪が広がる（輪になって回る）。
+   第 2 段落は静かに、第 3 段落（結び）は輪に囲まれて大きく。場面の絵は、最初の画面の輪と同じ部品（写真の縁・細い輪の線・波紋）。 */
 .ng-st {
   position: relative;
   isolation: isolate;
-  overflow: clip;
-  padding: clamp(100px, 13vw, 200px) clamp(20px, 4.5vw, 72px) clamp(120px, 14vw, 220px);
+  overflow-x: clip; /* 縦は出す（結びの円が、下のフッターへ少し掛かる） */
+  padding: clamp(84px, 9vw, 140px) clamp(20px, 4.5vw, 72px) clamp(150px, 15vw, 240px);
   background: var(--ng-bg-d);
   color: var(--ng-ink);
 }
@@ -878,108 +911,86 @@ body:has(.ng) .cursor-ring {
   background-size: 220px;
   opacity: var(--ng-grain-a); /* 乗算（mix-blend-mode）は、画面いっぱいの合成が毎フレーム重いので使わない */
 }
-.ng-st-ring {
-  position: absolute;
-  right: -24vw;
-  top: -8vw;
-  width: min(74vw, 1040px);
-  aspect-ratio: 1;
-  z-index: 0;
-  pointer-events: none;
-}
-.ng-st-ring i {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(20% * var(--ng-la)), transparent);
-}
-.ng-st-ring i:nth-child(2) {
-  inset: 12%;
-}
-.ng-st-ring i:nth-child(3) {
-  inset: 26%;
-  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(28% * var(--ng-la)), transparent);
-}
 .ng-st-in {
   position: relative;
   z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  row-gap: clamp(48px, 7vw, 110px);
-}
-.ng-st-lead {
-  display: grid;
-  row-gap: clamp(26px, 3.4vw, 48px);
-}
-.ng-st-p1 {
-  word-break: auto-phrase;
-  font: 700 clamp(20px, 2.35vw, 34px) / 1.95 var(--font);
-  white-space: pre-line;
-  text-wrap: pretty;
-  color: var(--ng-ink);
-}
-.ng-st-p2 {
-  word-break: auto-phrase;
-  max-width: 36em;
-  margin-left: auto;
-  font: 500 clamp(15px, 1.5vw, 20px) / 2.1 var(--font);
-  letter-spacing: 0.03em;
-  color: var(--ng-ink2);
-  text-wrap: pretty;
+  row-gap: clamp(72px, 8vw, 140px);
 }
 
-/* 2 つの声: 画面の主役。大きな文字の横に、料理の丸い写真（輪が広がる飾りつき） */
-.ng-st-p3 {
+/* ── 第 1 段落: 3 つの場面 ── */
+.ng-st-p1 {
   display: grid;
-  row-gap: clamp(64px, 10vw, 170px);
-  margin: clamp(20px, 3vw, 56px) 0;
+  row-gap: clamp(40px, 4.4vw, 76px);
   font-weight: 900;
   font-feature-settings: "palt" 1;
-  letter-spacing: -0.015em;
-  white-space: pre-line;
+  letter-spacing: -0.02em;
   color: var(--ng-ink);
 }
-.ng-voice {
+.act {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   align-items: center;
-  gap: clamp(20px, 3.4vw, 64px);
+  column-gap: clamp(24px, 4vw, 72px);
 }
-.ng-voice.r {
-  justify-content: flex-end;
+.act.a2 {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
 }
-.ng-voice .t {
-  display: block;
-  flex: 0 0 auto;
-  font-size: clamp(40px, 8.3vw, 120px);
-  line-height: 1.2;
-  text-shadow: 0 0.035em 0 color-mix(in srgb, var(--ng-tshade) 30%, transparent);
+.act.a2 .scene {
+  grid-column: 1;
+  grid-row: 1;
 }
-.ng-voice .ln {
-  display: block;
-  white-space: nowrap;
-}
-.ng-voice.r .t {
+.act.a2 .ln {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
   text-align: right;
 }
-.ng-voice .q {
-  display: inline-block;
-  font-size: 1.05em;
-  color: var(--ng-accent);
-  opacity: 0.85;
+.act .ln {
+  display: block;
+  overflow: hidden;
+  padding: 0.06em 0.12em 0.14em;
+  margin: -0.06em -0.12em -0.14em;
+  font-size: clamp(46px, 7.2vw, 112px);
+  line-height: 1.16;
+  white-space: nowrap;
+  color: var(--ng-ink);
+  text-shadow: 0 0.035em 0 color-mix(in srgb, var(--ng-tshade) 30%, transparent);
 }
-.ng-voice .dish {
+.act .ln .tx {
+  display: block;
+}
+.act .mk {
+  font-style: normal;
+  color: var(--ng-accent);
+}
+
+/* 場面の舞台（正方形）。写真は、舞台の中の % で置く */
+.scene {
+  --sw: min(100%, 540px);
+  --rw: clamp(3px, 0.42vw, 6px);
   position: relative;
-  flex: none;
-  width: clamp(150px, 22vw, 330px);
+  justify-self: center;
+  width: var(--sw);
   aspect-ratio: 1;
 }
-.ng-voice.l .dish {
-  order: 2;
+.act.a3 .scene {
+  --sw: min(124%, 660px);
+  justify-self: end;
+  margin-right: -4%;
 }
-.ng-voice .dish .ph {
-  --bw: calc(clamp(4px, 0.5vw, 8px) * var(--ng-metal, 0));
+.pic {
+  position: absolute;
+  left: calc(var(--x) - var(--s) / 2);
+  top: calc(var(--y) - var(--s) / 2);
+  width: var(--s);
+  aspect-ratio: 1;
+}
+.pic .ph {
+  --bw: calc(var(--rw) * var(--ng-metal, 0));
   position: absolute;
   inset: calc(var(--bw) * -1);
   border-radius: 50%;
@@ -990,115 +1001,300 @@ body:has(.ng) .cursor-ring {
   background-origin: border-box;
   background-clip: border-box;
   box-shadow:
-    0 0 0 clamp(4px, 0.5vw, 8px) var(--ng-rim),
-    0 0 0 calc(clamp(4px, 0.5vw, 8px) + 1.5px) var(--ng-edge),
-    0 30px 50px -22px color-mix(in srgb, var(--ng-shade) 72%, transparent);
+    0 0 0 var(--rw) var(--ng-rim),
+    0 0 0 calc(var(--rw) + 1.5px) var(--ng-edge),
+    0 calc(var(--sw) * 0.06) calc(var(--sw) * 0.1) calc(var(--sw) * -0.035) color-mix(in srgb, var(--ng-shade) 62%, transparent);
 }
-.ng-voice .dish img {
+.pic img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.ng-voice .dish .rg {
+/* 細い輪の線（最初の画面の輪・波紋と同じ線） */
+.orb,
+.rp {
   position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(44% * var(--ng-la)), transparent);
+  pointer-events: none;
+}
+.orb.o0 {
+  inset: 14%;
+  border-width: 2px;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(60% * var(--ng-la)), transparent);
+}
+.orb.o1 {
+  inset: -2%;
+}
+.orb.o2 {
   inset: -12%;
-  border-radius: 50%;
-  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(40% * var(--ng-la)), transparent);
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(24% * var(--ng-la)), transparent);
 }
-.ng-voice .dish .rg + .rg {
-  inset: -26%;
-  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(20% * var(--ng-la)), transparent);
+.orb.o3 {
+  inset: 13%;
+  border-width: 2px;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(58% * var(--ng-la)), transparent);
 }
-.ng-st-p4 {
-  word-break: auto-phrase;
-  max-width: 48em;
-  font: 700 clamp(18px, 2vw, 27px) / 2 var(--font);
+.orb.o4 {
+  inset: 31%;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(34% * var(--ng-la)), transparent);
+}
+.rp {
+  inset: 13%;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(40% * var(--ng-la)), transparent);
+  animation: ngStRp 9s linear infinite;
+}
+.rp:nth-of-type(2) {
+  animation-delay: -3s;
+}
+.rp:nth-of-type(3) {
+  animation-delay: -6s;
+}
+@keyframes ngStRp {
+  0% {
+    scale: 0.8;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    scale: 1.7;
+    opacity: 0;
+  }
+}
+/* つながりの線（場面 2）。写真の下から出て、写真どうしをつなぐ */
+.net {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(78% * var(--ng-la)), transparent);
+  stroke-width: 0.7px;
+  stroke-linecap: round;
+}
+.net path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+/* 場面 3 の輪: ゆっくり回る。写真は回っても、いつも上を向く */
+.spin {
+  position: absolute;
+  inset: 0;
+  animation: ngStSpin 170s linear infinite;
+}
+.spin .pic {
+  animation: ngStBack 170s linear infinite;
+}
+@keyframes ngStSpin {
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes ngStBack {
+  to {
+    rotate: -360deg;
+  }
+}
+[data-vis="0"] .spin,
+[data-vis="0"] .spin .pic,
+[data-vis="0"] .rp {
+  animation-play-state: paused;
+}
+
+/* ── 第 2 段落・第 3 段落 ── */
+.ng-st-p2 {
+  justify-self: center;
+  max-width: 31em;
+  text-align: center;
+  font: 700 clamp(18px, 2.3vw, 34px) / 2.1 var(--font);
+  letter-spacing: 0.03em;
   white-space: pre-line;
-  color: var(--ng-ink);
-  text-wrap: pretty;
+  word-break: auto-phrase;
+  text-wrap: balance;
+  color: var(--ng-ink2);
 }
-.ng-st-p4::after {
-  content: "";
-  display: block;
-  width: clamp(48px, 5.4vw, 72px);
+.ng-st-end {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: clamp(40px, 6vw, 96px) 0;
+}
+.ng-st-end .halo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(92vw, 880px);
   aspect-ratio: 1;
-  margin-top: clamp(32px, 4vw, 56px);
-  border: 3px solid var(--ng-accent);
+  translate: -50% -50%;
+  pointer-events: none;
+}
+.ng-st-end .halo i {
+  position: absolute;
+  inset: 0;
   border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(26% * var(--ng-la)), transparent);
+}
+.ng-st-end .halo i:nth-child(2) {
+  inset: 11%;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(40% * var(--ng-la)), transparent);
+}
+.ng-st-end .halo i:nth-child(3) {
+  inset: 22%;
+  border-width: 2px;
+  border-color: color-mix(in srgb, var(--ng-line-c, var(--ng-ink)) calc(56% * var(--ng-la)), transparent);
+}
+.ng-st-p3 {
+  position: relative;
+  max-width: min(100%, 24.5em);
+  text-align: center;
+  font: 900 clamp(24px, 3.1vw, 46px) / 1.75 var(--font);
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.01em;
+  white-space: pre-line;
+  word-break: auto-phrase;
+  text-wrap: balance;
+  color: var(--ng-ink);
+  text-shadow: 0 0.035em 0 color-mix(in srgb, var(--ng-tshade) 30%, transparent);
+}
+/* 下のブロックの底（フッターとの継ぎ目）に、輪を 1 つ。半分がブロックに、半分がフッターに掛かる */
+.ng-st-seam {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+  width: clamp(72px, 7.5vw, 112px);
+  aspect-ratio: 1;
+  translate: -50% 50%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: clamp(3px, 0.32vw, 4px) solid var(--ng-line-c, var(--ng-accent));
+  background: var(--ng-bg-d);
+  pointer-events: none;
 }
 
 /* 登場（スクリプトが動き、動きを減らす設定でないときだけ。出ている状態が、はじめの状態） */
 @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
-  .ng-st [data-rv]:not(.in) {
+  .act:not(.in) .ln .tx {
+    transform: translateY(112%);
+  }
+  .act .ln .tx {
+    transition: transform 1.25s var(--out);
+  }
+  .act:not(.in) .pic .ph {
+    scale: 0.3;
+    rotate: -70deg;
     opacity: 0;
-    transform: translateY(44px);
   }
-  .ng-st [data-rv] {
+  .act .pic .ph {
     transition:
-      opacity 0.9s ease,
-      transform 1.2s var(--out);
+      scale 1.2s var(--spring) calc(0.4s + var(--k) * 0.11s),
+      rotate 1.5s var(--out) calc(0.4s + var(--k) * 0.11s),
+      opacity 0.5s ease calc(0.4s + var(--k) * 0.11s);
   }
-  .ng-st .ng-voice[data-rv]:not(.in) .dish {
-    scale: 0.5;
-    rotate: -50deg;
-  }
-  .ng-st .ng-voice[data-rv] .dish {
-    transition:
-      scale 1.3s var(--spring) 0.15s,
-      rotate 1.5s var(--out) 0.15s;
-  }
-  .ng-st .ng-voice[data-rv]:not(.in) .dish .rg {
+  .act:not(.in) .orb {
     scale: 0.55;
     opacity: 0;
   }
-  .ng-st .ng-voice[data-rv] .dish .rg {
+  .act .orb {
     transition:
-      scale 1.6s var(--out) 0.45s,
-      opacity 1s ease 0.45s;
+      scale 1.7s var(--out) 0.6s,
+      opacity 1s ease 0.6s;
+  }
+  .act:not(.in) .net path {
+    stroke-dashoffset: 1;
+  }
+  .act .net path {
+    transition: stroke-dashoffset 1.5s var(--out) calc(1.1s + var(--j) * 0.3s);
+  }
+  .act:not(.in) .rp {
+    opacity: 0;
+    animation-play-state: paused;
+  }
+  .ng-st-p2[data-rv]:not(.in),
+  .ng-st-p3[data-rv]:not(.in) {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  .ng-st-p2[data-rv],
+  .ng-st-p3[data-rv] {
+    transition:
+      opacity 1s ease,
+      transform 1.3s var(--out);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spin,
+  .spin .pic,
+  .rp {
+    animation: none;
+  }
+  .rp {
+    opacity: 0.7;
+  }
+  .rp:nth-of-type(2) {
+    scale: 1.25;
+    opacity: 0.5;
+  }
+  .rp:nth-of-type(3) {
+    scale: 1.55;
+    opacity: 0.3;
   }
 }
 
 @media (max-width: 760px) {
-  .ng-st-p1,
-  .ng-st-p2,
-  .ng-st-p4 {
-    text-wrap: balance;
+  .ng-st {
+    padding-top: 84px;
+  }
+  .ng-st-in {
+    row-gap: 96px;
+  }
+  .ng-st-p1 {
+    row-gap: 72px;
+  }
+  .act,
+  .act.a2 {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 22px;
+    justify-items: start;
+  }
+  .act.a2 .scene,
+  .act.a2 .ln {
+    grid-column: 1;
+  }
+  .act.a2 .scene {
+    grid-row: 2;
+  }
+  .act.a2 .ln {
+    grid-row: 1;
+    justify-self: end;
+  }
+  .act .ln {
+    font-size: clamp(38px, 12.6vw, 66px);
+  }
+  .scene,
+  .act.a3 .scene {
+    --sw: min(84vw, 360px);
+    justify-self: center;
+    margin-right: 0;
+  }
+  .act.a3 .scene {
+    --sw: min(96vw, 400px);
   }
   .ng-st-p2 {
-    margin-left: 0;
+    font-size: 17px;
+    line-height: 2.1;
+    letter-spacing: 0.02em;
   }
   .ng-st-p3 {
-    row-gap: clamp(48px, 14vw, 80px);
+    font-size: clamp(22px, 6.2vw, 30px);
+    line-height: 1.8;
   }
-  .ng-voice {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
-  .ng-voice.r {
-    align-items: flex-end;
-  }
-  .ng-voice .t {
-    font-size: clamp(34px, 12.2vw, 58px);
-  }
-  .ng-voice .dish,
-  .ng-voice.l .dish {
-    order: 2;
-    width: clamp(120px, 40vw, 190px);
-    margin-top: -6px;
-  }
-  .ng-voice.l .dish {
-    align-self: flex-end;
-    margin-right: 4vw;
-  }
-  .ng-voice.r .dish {
-    order: 0;
-    align-self: flex-start;
-    margin: 0 0 -4px 4vw;
-  }
-  .ng-voice.r {
-    flex-direction: column;
+  .ng-st-end .halo {
+    width: 118vw;
   }
 }
 
@@ -1168,4 +1364,54 @@ body:has(.ng) .cursor-ring {
   .ng-swi i {
     transition: none;
   }
+}
+
+/* ═══════════ 共通フッター（枠が付ける部品）の色を、この案の配色に合わせる ═══════════
+   フッターは枠（PortalLayout・PortalFooter）の部品なので、配置・文言・リンクは変えない。この案の画面が出ているあいだだけ、
+   body:has(.ngp) で範囲を限って、色（背景・文字・線）だけを上書きする。枠は .ngp の外にあるので、色の値は body に持たせる。
+   --ngf-* を持たない配色（shu など）は、フォールバックで元の色（生成りの文字・墨の地）のまま。
+   文字は、地に対して 4.5:1 以上（半透明の生成りを重ねた元の色は、藍の地では 4.5 を割るので、混ぜた色を直に書く）。 */
+body:has(.ngp[data-theme="sometsuke"]) {
+  --ngf-bg: #18265a;
+  --ngf-ink: #f6f3ec;
+  --ngf-soft: #c9d0e6;
+  --ngf-line: rgba(246, 243, 236, 0.2);
+  --ngf-focus: #ecd9a4;
+}
+body:has(.ngp[data-theme="akagane"]) {
+  --ngf-bg: #050a18;
+  --ngf-ink: #eef0f4;
+  --ngf-soft: #b9c1d6;
+  --ngf-line: rgba(238, 240, 244, 0.18);
+  --ngf-focus: #eeaa84;
+}
+body:has(.ngp) .mp-ft {
+  background: var(--ngf-bg, var(--ink));
+  color: var(--ngf-ink, var(--ivory));
+}
+body:has(.ngp) .mp-ft-top {
+  border-bottom-color: var(--ngf-line, rgba(244, 239, 230, 0.14));
+}
+body:has(.ngp) .mp-ft-col h2,
+body:has(.ngp) .mp-ft-nav h2,
+body:has(.ngp) .mp-ft-mark em,
+body:has(.ngp) .mp-ft-bot,
+body:has(.ngp) .mp-ft-areas summary small,
+body:has(.ngp) .mp-ft-areas summary::after,
+body:has(.ngp) .mp-ft-stn small {
+  color: var(--ngf-soft, rgba(244, 239, 230, 0.66));
+}
+body:has(.ngp) .mp-ft-bot,
+body:has(.ngp) .mp-ft-areas details {
+  border-top-color: var(--ngf-line, rgba(244, 239, 230, 0.16));
+}
+body:has(.ngp) .mp-ft-stn li a {
+  border-bottom-color: var(--ngf-line, rgba(244, 239, 230, 0.12));
+}
+body:has(.ngp) .mp-ft-stn p a {
+  border-bottom-color: var(--ngf-soft, rgba(244, 239, 230, 0.4));
+}
+body:has(.ngp) .mp-ft a:focus-visible,
+body:has(.ngp) .mp-ft summary:focus-visible {
+  outline-color: var(--ngf-focus, var(--ivory));
 }
