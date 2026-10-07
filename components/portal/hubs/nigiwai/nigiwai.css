@@ -1,0 +1,899 @@
+/* ════════════════════════════════════════════════════════════
+   総合トップ 案「にぎわいの輪 NIGIWAI」（試作・コンセプト 3）
+   朱の地に、料理の写真の輪。接頭辞は .ng- 。.mp（portal.css）の配下で使う。
+   色は朱・生成りの白・写真だけ。書体は Zen Maru Gothic（丸みのある太いゴシック）。
+   動かすのは transform / scale / opacity と --rot（角度）だけ。動きを減らす設定では、回さず・集まらず・静かに出す（末尾）。
+   ════════════════════════════════════════════════════════════ */
+
+.ng,
+.ng-st {
+  --vm: #d23a24; /* 朱（文字 白 #fffbf5 との比 4.6:1） */
+  --vm-l: #d83f28;
+  --vm-d: #b82e19;
+  --vm-dd: #a22714;
+  --cream: #fff4e6;
+  --white: #fffbf5;
+  --deep: #8e210f; /* 生成りの面の上の文字 */
+  --font: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  --spring: cubic-bezier(0.34, 1.45, 0.5, 1);
+  --out: cubic-bezier(0.16, 0.9, 0.22, 1);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .04 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  font-family: var(--font);
+}
+
+/* 自分の画面のあいだだけ、サイト共通の丸いカーソルを消して、つかめる手にする */
+body:has(.ng) {
+  cursor: auto;
+}
+body:has(.ng) .cursor-dot,
+body:has(.ng) .cursor-ring {
+  display: none;
+}
+.ng a,
+.ng button {
+  cursor: pointer;
+}
+
+.ng {
+  --H: max(100svh, 660px);
+  --R: min(38vw, calc(var(--H) * 0.52)); /* 輪の半径（写真の中心の軌道） */
+  --dk: 0.376; /* 写真の直径 ÷ R（JS ではなくサーバーが決めた値で上書き） */
+  --d: calc(var(--R) * var(--dk));
+  --cy: calc(var(--H) / 2 + 10px);
+  --gut: clamp(20px, 4vw, 64px);
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  height: var(--H);
+  color: var(--white);
+  background: radial-gradient(120% 95% at 50% 52%, var(--vm-l) 0%, var(--vm) 52%, var(--vm-d) 100%);
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: grab;
+}
+.ng.is-drag {
+  cursor: grabbing;
+}
+.ng::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+  background-size: 220px;
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+}
+
+/* ───── 波紋（にぎわいが広がる。細い円がゆっくり外へ） ───── */
+.ng-ripples {
+  position: absolute;
+  left: 50%;
+  top: var(--cy);
+  width: 0;
+  height: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.ng-ripples i {
+  position: absolute;
+  left: calc(var(--R) * -1);
+  top: calc(var(--R) * -1);
+  width: calc(var(--R) * 2);
+  height: calc(var(--R) * 2);
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 244, 230, 0.26);
+  animation: ngRipple 9s linear infinite;
+  will-change: transform, opacity;
+}
+.ng-ripples i:nth-child(2) {
+  animation-delay: -3s;
+}
+.ng-ripples i:nth-child(3) {
+  animation-delay: -6s;
+}
+@keyframes ngRipple {
+  0% {
+    transform: scale(0.52);
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+/* ───── 料理の写真の輪 ───── */
+.ng-ring {
+  --rot: 0deg;
+  position: absolute;
+  left: 50%;
+  top: var(--cy);
+  width: 0;
+  height: 0;
+  z-index: 3;
+  transition: scale 0.8s cubic-bezier(0.5, 0, 0.75, 0.4);
+}
+/* 軌道（輪の線。写真のすきまから見える） */
+.ng-ring::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--R) * -1);
+  top: calc(var(--R) * -1);
+  width: calc(var(--R) * 2);
+  height: calc(var(--R) * 2);
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 244, 230, 0.42);
+}
+.ng-ring::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--R) * -0.68);
+  top: calc(var(--R) * -0.68);
+  width: calc(var(--R) * 1.36);
+  height: calc(var(--R) * 1.36);
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 244, 230, 0.2);
+}
+/* 皿 1 枚。位置は --a（置き場所）と --rot（輪の回転）。回っても、写真はいつも上を向く */
+.ng-dish {
+  --ds: calc(var(--d) * var(--s));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--ds);
+  height: var(--ds);
+  margin: calc(var(--ds) / -2) 0 0 calc(var(--ds) / -2);
+  transform: rotate(calc(var(--a) + var(--rot))) translateY(calc(var(--R) * -1)) rotate(calc((var(--a) + var(--rot)) * -1));
+  will-change: transform;
+  pointer-events: none;
+  animation: ngGather 1.7s var(--out) calc(0.15s + var(--i) * 0.06s) backwards;
+}
+/* 人が集まる: 輪の外から、くるりと回りながら集まってきて輪になる */
+@keyframes ngGather {
+  from {
+    translate: calc(sin(var(--a)) * var(--R) * 1.35) calc(cos(var(--a)) * var(--R) * -1.35);
+    rotate: -85deg;
+    scale: 0.22;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+.ng-photo,
+.ng-void {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: auto;
+  transition:
+    scale 0.6s var(--spring),
+    opacity 0.5s ease calc(var(--i) * 28ms);
+}
+.ng-photo {
+  overflow: hidden;
+  background: #f3c9a0;
+  box-shadow:
+    0 0 0 calc(var(--d) * 0.03) var(--cream),
+    0 calc(var(--d) * 0.1) calc(var(--d) * 0.22) calc(var(--d) * -0.06) rgba(86, 10, 0, 0.6);
+}
+.ng-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+}
+.ng-dish:hover {
+  z-index: 2;
+}
+.ng-dish:hover .ng-photo {
+  scale: 1.2;
+}
+/* 掲載準備中の業種を選んだとき: 写真は消え、空の丸が並ぶ */
+.ng-void {
+  opacity: 0;
+  scale: 0.55;
+  background: var(--vc, transparent);
+  transition:
+    scale 0.6s var(--spring) calc(var(--i) * 28ms),
+    opacity 0.45s ease calc(var(--i) * 28ms),
+    background-color 0.45s ease;
+}
+.ng[data-kind="prep"] .ng-photo,
+.ng[data-kind="off"] .ng-photo {
+  opacity: 0;
+  scale: 0.55;
+  visibility: hidden;
+  transition:
+    scale 0.45s ease,
+    opacity 0.3s ease,
+    visibility 0s 0.45s;
+}
+.ng[data-kind="prep"] .ng-void {
+  opacity: 1;
+  scale: 1;
+  box-shadow: 0 0 0 calc(var(--d) * 0.03) var(--cream);
+}
+.ng[data-kind="off"] .ng-void {
+  opacity: 1;
+  scale: 1;
+  background: transparent;
+  box-shadow: inset 0 0 0 2px rgba(255, 244, 230, 0.78);
+}
+.ng-dish:hover .ng-void {
+  scale: 1.1;
+}
+.ng[data-kind="live"] .ng-void {
+  visibility: hidden;
+  transition: scale 0.3s ease, opacity 0.25s ease, visibility 0s 0.3s;
+}
+
+/* ───── 上の帯：ロゴ・さがす ───── */
+.ng-bar {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px var(--gut) 0;
+  pointer-events: none;
+}
+.ng-bar > * {
+  pointer-events: auto;
+}
+.ng-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--cream);
+  animation: ngFade 0.9s ease 0.2s backwards;
+}
+.ng-logo b {
+  font: 900 24px/1 var(--font);
+  letter-spacing: 0.03em;
+}
+.ng-logo small {
+  font: 700 11px/1 var(--font);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+.ng-find {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px 0 18px;
+  border: 2px solid var(--cream);
+  border-radius: 999px;
+  color: var(--white);
+  font: 700 14px/1 var(--font);
+  letter-spacing: 0.1em;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.4s var(--spring);
+  animation: ngFade 0.9s ease 0.35s backwards;
+}
+.ng-find:hover {
+  background: var(--cream);
+  color: var(--deep);
+  transform: scale(1.05);
+}
+@keyframes ngFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+/* ───── 輪の中：見出し・リード・業種の入口 ───── */
+.ng-core {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  top: var(--cy);
+  transform: translate(-50%, -50%);
+  width: calc(var(--R) * 1.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+}
+.ng-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ng-h1 {
+  font: 900 calc(var(--R) * 0.124) / 1.16 var(--font);
+  font-feature-settings: "palt" 1;
+  letter-spacing: -0.015em;
+  color: var(--cream);
+  text-shadow: 0 0.04em 0 rgba(112, 18, 4, 0.3);
+}
+.ng-h1 .ln {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.06em 0.12em 0.1em;
+  margin: -0.06em -0.12em -0.1em;
+}
+.ng-h1 .tx {
+  display: block;
+  animation: ngRise 1.2s var(--out) calc(0.55s + var(--li) * 0.15s) backwards;
+}
+@keyframes ngRise {
+  from {
+    transform: translateY(112%);
+  }
+}
+.ng.is-ready .ng-h1 .ln {
+  overflow: visible;
+}
+.ng-lead {
+  margin-top: calc(var(--R) * 0.034);
+  max-width: calc(var(--R) * 1.2);
+  font: 500 clamp(12.5px, calc(var(--R) * 0.03), 15px) / 1.85 var(--font);
+  letter-spacing: 0.03em;
+  white-space: pre-line;
+  color: var(--white);
+  text-wrap: balance;
+  animation: ngUp 1s var(--out) 1.3s backwards;
+}
+@keyframes ngUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+.ng-sel {
+  margin-top: calc(var(--R) * 0.048);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ng-btns {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--R) * 0.026);
+  pointer-events: none;
+}
+.ng-btns li {
+  pointer-events: none;
+}
+.ng-b {
+  --b: calc(var(--R) * 0.172);
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: var(--b);
+  height: var(--b);
+  box-sizing: border-box;
+  border-radius: 50%;
+  font: 900 clamp(12px, calc(var(--b) * 0.19), 16px) / 1.2 var(--font);
+  letter-spacing: 0.02em;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition:
+    transform 0.55s var(--spring),
+    background-color 0.3s ease,
+    color 0.3s ease;
+  animation: ngPop 0.9s var(--spring) calc(1.55s + var(--i) * 0.065s) backwards;
+}
+@keyframes ngPop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.ng-b.live {
+  background: var(--cream);
+  color: var(--deep);
+}
+.ng-b.prep {
+  box-shadow: inset 0 0 0 2.5px var(--cream);
+  color: var(--white);
+}
+.ng-b.off {
+  border: 2.5px dashed rgba(255, 251, 245, 0.88);
+  color: var(--white);
+}
+.ng-b::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  border: 2px solid var(--cream);
+  opacity: 0;
+  transform: scale(0.86);
+  transition:
+    opacity 0.3s ease,
+    transform 0.5s var(--spring);
+  pointer-events: none;
+}
+.ng-b.on {
+  transform: scale(1.1);
+}
+.ng-b.on::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.ng-b:hover:not(.on) {
+  transform: scale(1.07);
+}
+.ng-b.live:hover {
+  background: #fff;
+}
+.ng-b.prep:hover,
+.ng-b.off:hover {
+  background-color: rgba(255, 244, 230, 0.16);
+}
+.ng-b:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 8px;
+}
+.ng-b .l {
+  display: block;
+}
+.ng-b.shake.s0 {
+  animation: ngShake0 0.5s ease;
+}
+.ng-b.shake.s1 {
+  animation: ngShake1 0.5s ease;
+}
+@keyframes ngShake0 {
+  0%,
+  100% {
+    translate: 0;
+  }
+  20% {
+    translate: -7px;
+  }
+  45% {
+    translate: 6px;
+  }
+  70% {
+    translate: -3px;
+  }
+}
+@keyframes ngShake1 {
+  0%,
+  100% {
+    translate: 0;
+  }
+  20% {
+    translate: -7px;
+  }
+  45% {
+    translate: 6px;
+  }
+  70% {
+    translate: -3px;
+  }
+}
+
+.ng-info {
+  margin-top: calc(var(--R) * 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 16px;
+  min-height: calc(var(--R) * 0.17);
+  animation: ngInfo 0.5s var(--out);
+}
+@keyframes ngInfo {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+/* 最初の登場のときだけ、ボタンのあとに出す（選び直したときは、すぐ） */
+.ng:not(.is-ready) .ng-info {
+  animation-duration: 0.8s;
+  animation-delay: 2.15s;
+  animation-fill-mode: backwards;
+}
+.ng-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px 7px 11px;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  color: var(--white);
+  font: 700 12px/1 var(--font);
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+.ng-state i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  flex: none;
+}
+.ng[data-kind="live"] .ng-state i {
+  background: currentColor;
+  animation: ngBlink 2s ease-in-out infinite;
+}
+@keyframes ngBlink {
+  50% {
+    opacity: 0.35;
+  }
+}
+.ng-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2px 18px;
+  font: 700 13px/1.55 var(--font);
+  color: var(--white);
+}
+.ng-facts b {
+  margin: 0 2px;
+  font: 900 clamp(18px, calc(var(--R) * 0.047), 24px) / 1 var(--font);
+  font-variant-numeric: tabular-nums;
+  color: var(--cream);
+}
+.ng-open {
+  transition: opacity 0.6s ease;
+}
+.ng-open:not([data-on]) {
+  opacity: 0;
+}
+.ng-open small {
+  margin-left: 8px;
+  font: 500 12px/1.5 var(--font);
+  letter-spacing: 0.02em;
+}
+.ng-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 46px;
+  padding: 0 22px 0 26px;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--deep);
+  font: 900 14px/1 var(--font);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition:
+    transform 0.45s var(--spring),
+    background-color 0.3s ease;
+}
+.ng-go span {
+  display: inline-block;
+  transition: transform 0.45s var(--spring);
+}
+.ng-go:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+.ng-go:hover span {
+  transform: translateX(5px);
+}
+.ng-go:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+.ng-find:focus-visible,
+.ng-logo:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+
+.ng-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ───── 入る: 輪が広がり、朱が画面を満たす ───── */
+.ng-wipe {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  background: var(--vm-dd);
+  clip-path: circle(0px at var(--wx, 50%) var(--wy, 50%));
+  pointer-events: none;
+}
+.ng.is-leaving {
+  pointer-events: none;
+}
+.ng.is-leaving .ng-ring {
+  scale: 2.5;
+}
+.ng.is-leaving .ng-core,
+.ng.is-leaving .ng-bar {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.ng.is-leaving .ng-wipe {
+  clip-path: circle(150vmax at var(--wx, 50%) var(--wy, 50%));
+  transition: clip-path 0.78s cubic-bezier(0.62, 0, 0.3, 1);
+}
+
+/* 写真が読み込めてから、入る動きを始める（読み込み前に始めると、空の丸が飛んでくる）。スクリプトが動くときだけ止めておく */
+@media (scripting: enabled) {
+  .ng:not(.is-go) .ng-dish,
+  .ng:not(.is-go) .ng-h1 .tx,
+  .ng:not(.is-go) .ng-lead,
+  .ng:not(.is-go) .ng-b,
+  .ng:not(.is-go) .ng-info {
+    animation-play-state: paused;
+  }
+}
+
+/* ═══════════ スマホ：輪は画面より大きく、下半分に半分だけ。見出しは上、ボタンは親指の位置 ═══════════ */
+@media (max-width: 760px) {
+  .ng {
+    --H: max(100svh, 640px);
+    --R: min(122vw, calc(var(--H) * 0.55));
+    --cy: calc(var(--H) + 24px);
+  }
+  .ng-bar {
+    padding-top: 14px;
+  }
+  .ng-logo b {
+    font-size: 21px;
+  }
+  .ng-core {
+    inset: 0;
+    left: 0;
+    top: 0;
+    width: auto;
+    transform: none;
+    padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 24px);
+  }
+  .ng-h1 {
+    font-size: calc((100vw - 2 * var(--gut)) / 11.4);
+  }
+  .ng-lead {
+    margin-top: 14px;
+    max-width: 24em;
+    font-size: 14px;
+  }
+  .ng-sel {
+    margin-top: auto;
+    width: 100%;
+  }
+  .ng-btns {
+    gap: 6px;
+  }
+  .ng-b {
+    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 62px);
+    font-size: 12px;
+  }
+  .ng-info {
+    order: -1;
+    margin: 0 0 18px;
+    min-height: 0;
+    gap: 8px 12px;
+  }
+  .ng-facts {
+    gap: 0 14px;
+  }
+  .ng-facts b {
+    font-size: 19px;
+  }
+  .ng-go {
+    min-height: 48px;
+  }
+}
+
+/* ═══════════ 動きを減らす設定: 回さず、集まらず、静かに出す ═══════════ */
+@media (prefers-reduced-motion: reduce) {
+  .ng *,
+  .ng *::before,
+  .ng *::after {
+    animation: none !important;
+    transition-duration: 0.01s !important;
+    transition-delay: 0s !important;
+  }
+  .ng-ripples i {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .ng-ripples i:nth-child(2) {
+    transform: scale(1.45);
+    opacity: 0.6;
+  }
+  .ng-ripples i:nth-child(3) {
+    transform: scale(1.85);
+    opacity: 0.35;
+  }
+  .ng-dish:hover .ng-photo,
+  .ng-dish:hover .ng-void,
+  .ng-b.on,
+  .ng-b:hover:not(.on),
+  .ng-go:hover,
+  .ng-find:hover {
+    transform: none;
+    scale: 1;
+  }
+  .ng.is-leaving .ng-wipe {
+    transition: none;
+  }
+}
+
+/* ═══════════ 下のブロック（本文の全文） ═══════════ */
+.ng-st {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  padding: clamp(96px, 13vw, 190px) clamp(20px, 5vw, 80px) clamp(110px, 14vw, 210px);
+  background: var(--vm-d);
+  color: var(--cream);
+}
+.ng-st::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+  background-size: 220px;
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
+.ng-st-ring {
+  position: absolute;
+  right: -22vw;
+  top: -6vw;
+  width: min(70vw, 980px);
+  aspect-ratio: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+.ng-st-ring i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 244, 230, 0.2);
+}
+.ng-st-ring i:nth-child(2) {
+  inset: 12%;
+}
+.ng-st-ring i:nth-child(3) {
+  inset: 26%;
+  border-color: rgba(255, 244, 230, 0.28);
+}
+.ng-st-in {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: clamp(44px, 6.5vw, 96px);
+}
+.ng-st-p1 {
+  max-width: 36em;
+  font: 700 clamp(20px, 2.3vw, 31px) / 1.95 var(--font);
+  white-space: pre-line;
+  text-wrap: pretty;
+  color: var(--cream);
+}
+.ng-st-p2 {
+  max-width: 36em;
+  margin-left: auto;
+  font: 500 clamp(15px, 1.5vw, 20px) / 2.1 var(--font);
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-wrap: pretty;
+}
+.ng-st-p3 {
+  display: grid;
+  row-gap: clamp(28px, 4.5vw, 64px);
+  padding: clamp(12px, 3vw, 40px) 0;
+  font: 900 clamp(26px, 4.2vw, 62px) / 1.35 var(--font);
+  font-feature-settings: "palt" 1;
+  letter-spacing: -0.01em;
+  white-space: pre-line;
+  color: var(--cream);
+}
+.ng-voice {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3.4vw, 56px);
+}
+.ng-voice.r {
+  justify-content: flex-end;
+}
+.ng-voice .t {
+  display: block;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-shadow: 0 0.035em 0 rgba(112, 18, 4, 0.28);
+}
+.ng-voice.r .t {
+  text-align: right;
+}
+.ng-voice .q {
+  display: inline-block;
+  font-size: 1.16em;
+  line-height: 0.5;
+  opacity: 0.78;
+}
+.ng-voice .dish {
+  flex: none;
+  position: relative;
+  width: clamp(84px, 13.5vw, 200px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f3c9a0;
+  box-shadow:
+    0 0 0 clamp(3px, 0.45vw, 7px) var(--cream),
+    0 22px 40px -18px rgba(70, 8, 0, 0.7);
+}
+.ng-voice.l .dish {
+  order: 2;
+}
+.ng-voice .dish img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ng-st-p4::after {
+  content: "";
+  display: block;
+  width: clamp(44px, 5vw, 64px);
+  aspect-ratio: 1;
+  margin-top: clamp(32px, 4vw, 56px);
+  border: 3px solid var(--cream);
+  border-radius: 50%;
+}
+.ng-st-p4 {
+  max-width: 38em;
+  font: 700 clamp(18px, 2vw, 27px) / 2 var(--font);
+  white-space: pre-line;
+  color: var(--cream);
+  text-wrap: pretty;
+}
+
+@media (max-width: 760px) {
+  .ng-st-p1,
+  .ng-st-p2,
+  .ng-st-p4 {
+    text-wrap: balance;
+  }
+  .ng-st-p2 {
+    margin-left: 0;
+  }
+  .ng-st-p3 {
+    font-size: clamp(25px, 7.4vw, 40px);
+  }
+  .ng-voice {
+    gap: 14px;
+  }
+  .ng-voice .dish {
+    width: clamp(72px, 24vw, 110px);
+  }
+}
