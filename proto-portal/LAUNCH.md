@@ -9,8 +9,9 @@
 
 | | OFF（本番の既定） | ON（`PORTAL_LAUNCHED=1`、または Vercel のプレビュー） |
 |---|---|---|
-| `/` | 今のグルメのトップ（metadata・canonical・JSON-LD も同一） | 総合トップ（index） |
+| `/` | 今のグルメのトップ（metadata・canonical・JSON-LD も同一） | 総合トップ「にぎわいの輪」（index。配色は 2 色（白磁と藍／濃紺と銅）を開くたびにランダム。title は「街と店、店と人。つながる輪を、マチノワから。」） |
 | `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`） |
+| `/proto-hub/**`（総合トップの色を固定して見るルート） | 404 | プレビュー（`VERCEL_ENV=preview`）とローカルの `next dev` だけ。**公開スイッチ ON の本番でも 404** |
 | 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/list`・`/list-data/**`・`/photos`・`/omakase`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
 | `robots.txt` | 今と同一 | 総合サイトのサイトマップ 7 本を追記 |
 | `/sitemap.xml` | 今と同一 | `/gourmet` が増える |
@@ -41,12 +42,12 @@ ON になる条件は `PORTAL_LAUNCHED` が `"1"`、または `VERCEL_ENV` が `
 | 9 | 駅データ | `node automation/stations/check.mjs` | `QA検査完了`、「0が正常」の項目が 0、slug 衝突 0、pref null 0 |
 | 10 | 営業時間の判定 | `node proto-portal/test-openNow.mjs` | `0 failed` |
 | 11 | 写真の生成物 | `node automation/portal/build-images.mjs --check` | `OK 生成物は最新`（※ 1-B 参照）|
-| 12 | キーボード操作（任意）| `node proto-portal/check-keyboard.mjs --base http://localhost:3242` | `違反: 0` |
-| 13 | コントラスト（任意）| `node proto-portal/check-contrast.mjs --base http://localhost:3242`（総合トップの輪は `--motion` を付けて、6業種を正面に回しながら別に測る）| 違反 0 |
+| 12 | キーボード操作（任意）| `node proto-portal/check-keyboard.mjs --base http://localhost:3242`（総合トップは 2 色・PC とスマホ幅・動きを減らす設定で Tab の順番を見る）| `違反: 0` |
+| 13 | コントラスト（任意）| `node proto-portal/check-contrast.mjs --base http://localhost:3242`（総合トップは `/` を 2 色それぞれ測る。最初の画面は `--motion`（動きを減らさない設定で、6 業種を順に選びながら 2 色とも）を付けて別に測る）| 違反 0 |
 | 14 | 表示速度（任意）| `node proto-portal/measure-speed.mjs` | LCP・CLS・TBT が前回から悪化していない |
 | 15 | 関数に public/ が入っていない | `find .next/server/app -name '*.nft.json' -print0 \| xargs -0 grep -l 'public/'` | **何も出ない**（ビルドは 4 のあと）|
 | 16 | 日本語 URL | 下の 1-C | 20 回とも 200 |
-| 17 | 総合トップ（輪）の動作 | `node proto-portal/check-hub.mjs --base http://localhost:3242` | `違反: 0`（輪を回す・業種の扱い・動きを減らす設定・横スクロール 0・コンソールエラー 0）|
+| 17 | 総合トップ（にぎわいの輪）の動作 | `node proto-portal/check-hub.mjs --base http://localhost:3242` | `違反: 0`（title・言葉が COPY-FINAL.md と一致／2 色が出てちらつかない／業種の扱い／数字／輪を回す／動きを減らす設定／スクリプトなし／横スクロール 0・コンソールエラー 0・壊れた画像 0）|
 
 （`crawl.mjs` は約 30 秒・1,800 リンクと共有画像 80 枚を取る。本番に向けて打つときは空いている時間に）
 
@@ -230,11 +231,14 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 ```
 
 見るもの:
-- `/` の title が「マチノワ — 街の店を、業種をまたいで探す」、robots が `index, follow`、canonical が `https://machinowa.tokyo`。
+- `/` の title が「街と店、店と人。つながる輪を、マチノワから。」（前後に何も付かない。`og:title`・`twitter:title` も同じ）、robots が `index, follow`、canonical が `https://machinowa.tokyo`、`description` が「ひとつの店との出会いが、…地域ポータルサイトです。」（`og:description`・`twitter:description` も同じ）。
+  ```
+  curl -s https://machinowa.tokyo/ | grep -o '<title>[^<]*</title>\|name="description" content="[^"]*"\|property="og:[a-z:]*" content="[^"]*"\|name="twitter:[a-z:]*" content="[^"]*"'
+  ```
 - `/gourmet` の title が「グルメの店をエリア・特集・シーンから探す｜マチノワグルメ」、canonical が `https://machinowa.tokyo/gourmet`。
 - `robots.txt` の `Sitemap:` が 8 行（`/sitemap.xml`・`/station/sitemap.xml`・業種 5 本・`/videos/sitemap.xml`）。`Disallow` は従来どおり（`/admin/` `/api/` `/agent-teams/`）。
 - 新業種（`/beauty` など）は掲載 0 件なので **noindex**（件数ゲート。3 件以上で index になる）。`/area/**`・`/map`・`/find`・`/videos` も noindex のまま。駅ページは店 3 件以上のものだけ index。
-- 共有画像: `https://machinowa.tokyo/og/home` が 200 で画像。X・LINE のカードデバッガーで `/` と `/station/kyoto/祇園四条` を確かめる。
+- 共有画像: `https://machinowa.tokyo/og/home?v=2` が 200 で画像（白磁の地・藍の文字・金の細い輪。キャッチコピーそのまま。`lib/seo/og.ts` の `OG_VERSION` が 2）。X・LINE のカードデバッガーで `/` と `/station/kyoto/祇園四条` を確かめる。
 - 日本語 URL を 20 回ずつ（1-C のコマンドの `localhost:3242` を `machinowa.tokyo` に）。
 
 目で見る（スマホ幅 375 と PC 1280）: `/`・`/beauty`・`/area/tokyo`・`/station/kyoto/祇園四条`・`/map`・`/videos`・`/find?q=三宮`・グルメの店ページ（`/restaurant/r21` の SNS・共有ボタン）・グルメのトップ `/gourmet`。
@@ -287,7 +291,10 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 - **`/` は rewrites で総合トップに差し替わる**ので、ON のとき `app/page.tsx`（グルメのトップ）はビルドされるが配信されない。グルメのトップは `/gourmet`。
 - **IndexNow の cron（`/api/cron/ping-search`）は `/sitemap.xml` の URL だけ通知する**。総合サイトのサイトマップ（駅など）は通知されない（Search Console の送信で足りる）。
 - **駅と店の対応・写真の生成物は自動では増えない**（1-B）。
-- **新業種は掲載 0 件**。総合トップ（輪）からは、ビューティー・ボディケアの 2 業種だけ「ページを見る」でページへ入れる（noindex）。ペット・おでかけ・ステイは輪の上で薄く見せ、正面に来ても「掲載準備中」と出すだけでリンクにしない（フッターの業種の一覧には 6 業種ともリンクが残る）。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
+- **新業種は掲載 0 件**。総合トップ（にぎわいの輪）では、グルメだけが「掲載中」（実数を出す）。ビューティー・ボディケアは「掲載準備中」で、「ページを見る」でページへ入れる（noindex）。ペット・おでかけ・ステイは「掲載準備中」と出るだけで、リンクにしない（`<button>`。押しても移動しない）。フッターの業種の一覧には 6 業種ともリンクが残る。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
+- **総合トップは「にぎわいの輪」（2 色ランダム）**: 配色は sometsuke（白磁と藍）・akagane（濃紺と銅）の 2 色で、開くたびにランダム（半々）。ページ自体はどちらの色でも同じ HTML（静的に配信される）。言葉は `proto-portal/hub-concepts/COPY-FINAL.md`（発注者の決定）で、`components/portal/hubs/nigiwai/copy.ts` に一字一句写してある。言葉を変えるときは、COPY-FINAL.md・`copy.ts`・`app/portal-home/page.tsx` の title/description・共有画像 `HomeCard`（`components/portal/og/cards.tsx`）を揃え、`check-hub.mjs` で突き合わせる。title はキャッチコピーそのまま（`buildMetadata` は接尾辞を足さない。ルートの `app/layout.tsx` の title は文字列で、template ではない）。
+- **色を固定して見るルートは、プレビューとローカルだけ**: `/proto-hub/nigiwai`（`/` と同じもの）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。判定は `lib/portal/launch.ts` の `isPreviewOrLocal()`（`VERCEL_ENV=preview` または `NODE_ENV!=="production"`。店ページの「ボタン案」の切替 `previewTools` と同じ）で、`app/proto-hub/layout.tsx` が 404 にする。**本番（`VERCEL_ENV=production`）は公開スイッチ ON でも 404**。ローカルでも `next build` → `next start`（`NODE_ENV=production`）では開けない（`next dev` では開ける）。`next.config.ts` の `PORTAL_OFF_SOURCES` の `/proto-hub/:path*`・`isPortalPath.ts`・`compare-off.mjs` の `PORTAL_404`（`/proto-hub/nigiwai`）は、OFF の 404 のために残してある。
+- **総合トップの検査を自動化するときの注意**: 色は `Math.random` の差し替えで固定しない（値が固定されると、ページの React のイベントが動かなくなる。2026-10-07 に確認）。ページの抽選スクリプトが読む `history.state.ngTheme` を、ページのスクリプトより先に `addInitScript` で入れて固定する（`check-hub.mjs`・`check-keyboard.mjs`・`check-contrast.mjs` はそうしている）。
 
 ## 付録: ファイル
 
@@ -296,7 +303,9 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 | `lib/portal/launch.ts`・`launchEnv.ts` | 公開スイッチの判定（`isPortalLive()`、`assertPortalLive()`、`liveStaticParams()`）|
 | `next.config.ts` | OFF: 総合サイトの URL を 404 に書き換え。ON: `/` → `/portal-home`、`/portal-home` → `/` の 307 |
 | `app/page.tsx`・`components/portal/pages/gourmet-home.tsx` | グルメのトップ（OFF の `/`、ON の `/gourmet` と共通）|
-| `app/portal-home/**`・`components/portal/pages/home.tsx`・`components/portal/hub/**`・`lib/portal/hub.ts` | 総合トップ（ON の `/`。輪を回して選ぶ 1 画面）|
+| `app/portal-home/**`・`components/portal/pages/home.tsx`・`components/portal/hubs/nigiwai/**`・`lib/portal/hubs/nigiwai/**`・`lib/portal/hub.ts` | 総合トップ「にぎわいの輪」（ON の `/`）|
+| `app/proto-hub/**`・`lib/portal/launch.ts`（`isPreviewOrLocal`）| 色を固定して見るルート（プレビュー・ローカルだけ）|
+| `components/portal/og/cards.tsx`（`HomeCard`）・`lib/seo/og.ts`（`OG_VERSION`）| `/og/home`（総合トップの共有画像）|
 | `components/portal/PortalShell.tsx`・`PortalLayout.tsx` | ON のシェル／総合サイトのヘッダー・フッター |
 | `app/robots.ts`・`app/sitemap.ts` | ON のときだけ追記 |
 | `proto-portal/compare-off.mjs` | OFF が main と同一かの検査 |
@@ -321,7 +330,7 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **失敗の記録**: 本番用に pull した env には `VERCEL_ENV="production"` が入っている。それをそのまま preview 用に写してビルドしたため、
   公開スイッチ導入後のプレビュー（9o6pl27ju・5g1tool5w）は OFF でビルドされ、`/` はグルメのトップ、総合サイトの全ルートが 404 だった。
   店ページだけは実行時（Vercel 上は `VERCEL_ENV=preview`）に作り直されて ON になるため、「最初の1回だけ古い表示」という紛らわしい症状になった。
-- **デプロイ後に必ず確認する**: `/` のタイトルが総合トップ（「マチノワ — 街の店を、業種をまたいで探す」）、`/gourmet` `/find` `/beauty` `/station/tokyo` が 200、
+- **デプロイ後に必ず確認する**: `/` のタイトルが総合トップ（「街と店、店と人。つながる輪を、マチノワから。」）、`/gourmet` `/find` `/beauty` `/station/tokyo` が 200、
   店ページが初回から新しい部品で出ること。本番 `https://machinowa.tokyo/find` は 404 のまま。
 - ビルドログの `fetch failed` / `fallback to data.ts` が 0 であること（Supabase のタイムアウトで予備データのページが混ざる）。
 
@@ -364,11 +373,15 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **数え直し・テスト**: `node --env-file=.env.local proto-portal/count-omakase.mjs`、`node proto-portal/test-omakase.mjs`。
 
 
-## 付録: 総合トップ「輪」— 回して選ぶ、1 画面の入口（2026-10-06・試作）
-- 仕様 `proto-portal/HUB-BRIEF.md`。公開スイッチ ON の `/` だけ（OFF の `/` はグルメのトップのまま。出力は変わらない）。以前の総合トップ（ヒーロー・考え方・6つの入口・エリア・駅・動画・新着の特集・マチノワについて）は外した（部品のファイルは残してある）。
-- **どこに何があるか**: `app/portal-home/layout.tsx`（`PortalLayout hub`＝共通ヘッダーを出さず、`#mp-footer` の中にフッター）→ `components/portal/pages/home.tsx` → `components/portal/hub/HubStage.tsx`（クライアント。輪のエンジンと画面）・`hub.css`（`.hub-*`）。データは `lib/portal/hub.ts`（掲載店数・公開中の特集の本数・「いま営業中」を数えるための営業予定の表）。
-- **動き**: 輪の位置 `pos`（1 = 1 業種）を、ドラッグ・スワイプ（横）・ホイール（輪の上で、ページが先頭のときだけ）・矢印キー・左右のボタン・印のクリックが動かす。離すと慣性（速さ × 0.19 秒ぶん先）をいちばん近い業種に丸め、バネ（k=94・c=14.8）で止まる。描画は毎フレーム CSS 変数と transform だけを書く（React は再描画しない・止まったらループも止まる）。色は `color-mix` で 2 つの業種の間を `--m` で混ぜる。
-- **業種の扱い**: グルメは掲載中（実数を出す）。ビューティー・ボディケアは「掲載準備中」でページへ入れる。ペット・おでかけ・ステイはリンクにしない（`HubItem.enter`）。「掲載準備中」は業種ごとに 1 回（各業種の表示の中）。一覧（`.hub-index`）の準備中の表示は「準備中」。
-- **「いま営業中」**: 営業時間が確かに読み取れた店だけ（`packWeeks` が `null` にしなかった店）を、現在時刻（日本時間・ブラウザ）で数える。営業中＝営業中＋まもなく閉店。不定休などで営業時間内でも言い切れない店は数に入らない。分母（営業時間が確かな店）は時刻によらず一定。
-- **動きを減らす設定（`prefers-reduced-motion`）・スクリプトなし**: 輪は出さず、6 業種の一覧（CSS が切り替える。エンジンは動かさない）。
-- **検査**: `node proto-portal/check-hub.mjs`、`check-keyboard.mjs`（`/` の Tab の順番を輪の構成に合わせた）、`check-contrast.mjs --motion`。
+## 付録: 総合トップ「にぎわいの輪」— 2 色ランダム（2026-10-07・試作から差し替え）
+- 公開スイッチ ON の `/` だけ（OFF の `/` はグルメのトップのまま。出力は変わらない）。発注者が決めた言葉は `proto-portal/hub-concepts/COPY-FINAL.md`。過去の案・設計書（`COPY.md`・`hikariwa.md`・`mitsuwa.md`・`hamon.md`・`nigiwai.md`・`HUB4-BRIEF.md`）は不採用の案を含む資料で、決定ではない（`HUB-BRIEF.md` は、差し替える前の古い「輪」の仕様）。
+- **どこに何があるか**: `app/portal-home/layout.tsx`（`PortalLayout hub`＝共通ヘッダーを出さず、`#mp-footer` の中にフッター）・`page.tsx`（metadata）→ `components/portal/pages/home.tsx`（`<NigiwaiPage theme="sometsuke" random />`）→ `components/portal/hubs/nigiwai/`（`NigiwaiPage.tsx` サーバー・`Nigiwai.tsx` 最初の画面（クライアント）・`Statement.tsx` 下のブロック・`RandomTheme.tsx` 色の抽選・`copy.ts` 言葉・`nigiwai.css`・`themes.css` 色の値）。データは `lib/portal/hub.ts`（掲載店数・公開中の特集の本数・「いま営業中」を数えるための営業予定の表）と `lib/portal/hubs/nigiwai/photos.ts`（輪の写真）。
+- **言葉**: h1＝キャッチコピー（「街と店、店と人。」「つながる輪を、」「マチノワから。」の 3 行に組む。textContent はキャッチコピーと同じ）、リード＝第 1 段落の 3 行、下のブロック＝第 1 段落（3 つの場面）・第 2 段落・第 3 段落（結び）。title＝キャッチコピー、description＝コンセプトの第 2・第 3 段落を改行を取ってつないだもの。共有画像 `/og/home`＝キャッチコピー（白磁の地・藍の文字・金の細い輪）。`Organization`・`WebSite` の JSON-LD（ルートレイアウト）に description は無い。
+- **配色（2 色）**: sometsuke（白磁と藍）・akagane（濃紺と銅）。値は `themes.css` だけ。抽選は、最初の描画より前に動く短い処理（`NigiwaiPage` の `<script>` と `<img onload>`）が、履歴の項目に覚えた色（`history.state.ngTheme`）を使い、無ければ半々で決めて覚える。ブラウザの戻る・進むは同じ色。再読み込みは引き直す。ブラウザの中の移動（`<Link>`）は `RandomTheme` が決める。スクリプトなしは sometsuke。共通フッターの色は `nigiwai.css` の `body:has(.ngp[data-theme=…])` で輪の色に合わせる（`/` でも効く）。
+- **動き**: 料理の写真の輪（PC 16 枚・スマホ 13 枚）がゆっくり回る（2.4°/秒）。つかんで回せる（マウスのドラッグ・指の横スワイプ。離すと慣性で元の回転に戻る）。矢印キー（← →）でも回る。6 つの丸いボタン（業種）を選ぶと輪の様子が変わる（グルメ＝写真の輪／ビューティー・ボディケア＝その業種の色の空の丸／ペット・おでかけ・ステイ＝線だけの空の丸）。マウスは乗せて選び、押すと入る。タッチは 1 回目で選び、選んでいるものをもう 1 回押すと入る。キーボードはフォーカスで選び、Enter で入る。入るときは輪が広がって地の色が画面を満たしてから移動する（約 0.8 秒）。
+- **業種の扱い**: 「掲載準備中」と「掲載中」は、選んでいる業種のぶんだけ出る。行き先は 6 業種の表のとおり（グルメ＝`/gourmet`・ビューティー＝`/beauty`・ボディケア＝`/bodycare`・ほかの 3 つはリンクなし）。「さがす」は `/find`（1 つだけ）。
+- **「いま営業中」**: 営業時間が確かに読み取れた店だけ（`packWeeks` が `null` にしなかった店）を、現在時刻（日本時間・ブラウザ）で数える。営業中＝営業中＋まもなく閉店。不定休などで営業時間内でも言い切れない店は数に入らない。分母（営業時間が確かな店）は時刻によらず一定。表示は「掲載店 N 店・特集 M 本・いま営業中 K 軒（営業時間が確かな L 店のうち）」。
+- **動きを減らす設定（`prefers-reduced-motion`）・スクリプトなし**: 輪は回さない（動きを減らす設定では、時間・矢印キー・ドラッグのどれでも回らない）。集まる演出もなく、言葉は、はじめから全部見える。入るときは演出なしで移動する。スクリプトなしでは色は sometsuke、入れる 3 業種・「さがす」はリンクで届く。
+- **色を固定して見る（プレビュー・ローカルだけ）**: `/proto-hub/nigiwai`（`/` と同じ）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。色見本は無い。本番では公開スイッチ ON でも 404（6 の「色を固定して見るルートは、プレビューとローカルだけ」）。
+- **フォーカスの輪**: 入口・ロゴ・「さがす」・「入る」の輪は `nigiwai.css` で `--ng-focus`（sometsuke は藍、akagane は銅）。portal.css の `.mp a:focus-visible`（墨色の輪。特異度 0,2,1）に負けないよう `.ngp` を付けて書いてある（2026-10-07 に直した。以前は akagane で輪が墨色になり、濃紺の地でコントラスト約 1.1 で見えなかった）。「本文へ移動」の輪は、akagane のときだけ銅にしてある（`body:has(.ngp[data-theme="akagane"]) .mp-skip:focus-visible`）。
+- **検査**: `node proto-portal/check-hub.mjs --base …`（事前チェック 17。`/` だけを見る。`--no-footer` でスクリプトなしのリンク検査からフッターを除く＝`next dev` で遅いとき）、`check-keyboard.mjs`（`/` の Tab の順番を 2 色・PC・スマホ・動きを減らす設定で）、`check-contrast.mjs --motion`（最初の画面を 6 業種 × 2 色 × 2 幅で）。

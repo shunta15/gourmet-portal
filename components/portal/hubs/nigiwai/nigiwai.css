@@ -502,7 +502,9 @@ body:has(.ng) .cursor-ring {
 .ng-b.off:hover {
   background-color: color-mix(in srgb, var(--ng-ink) 14%, transparent);
 }
-.ng-b:focus-visible {
+/* フォーカスの輪: portal.css の `.mp a:focus-visible`（墨色の輪。特異度 0,2,1）より強くする（.ngp を付けて 0,3,0）。
+   これが無いと、輪の色が --ng-focus にならず、濃紺の地（akagane）で墨色の輪が見えない（コントラスト 1.1） */
+.ngp .ng-b:focus-visible {
   outline: 3px solid var(--ng-focus);
   outline-offset: 8px;
 }
@@ -661,12 +663,12 @@ body:has(.ng) .cursor-ring {
 .ng-go:hover span {
   transform: translateX(5px);
 }
-.ng-go:focus-visible {
+.ngp .ng-go:focus-visible {
   outline: 3px solid var(--ng-focus);
   outline-offset: 4px;
 }
-.ng-find:focus-visible,
-.ng-logo:focus-visible {
+.ngp .ng-find:focus-visible,
+.ngp .ng-logo:focus-visible {
   outline: 3px solid var(--ng-focus);
   outline-offset: 4px;
 }
@@ -1316,6 +1318,10 @@ body:has(.ngp[data-theme="akagane"]) {
   --ngf-soft: #b9c1d6;
   --ngf-line: rgba(238, 240, 244, 0.18);
   --ngf-focus: #eeaa84;
+}
+/* 「本文へ移動」（枠の部品）の輪。濃紺の地（akagane）では、portal.css の墨色の輪が見えないので、銅の色にする（明るい地は、元の墨色のまま見える） */
+body:has(.ngp[data-theme="akagane"]) .mp-skip:focus-visible {
+  outline-color: #e8a37c;
 }
 body:has(.ngp) .mp-ft {
   background: var(--ngf-bg, var(--ink));
