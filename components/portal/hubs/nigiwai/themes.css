@@ -12,6 +12,13 @@
    --ng-tshade             : 文字の影（明るい地では透明）
    --ng-accent             : 印（句点・かぎかっこ・掲載中の点・結びの円）。ink と同じなら変化なし
    --ng-ph                 : 写真が読み込まれるまでの下地
+   --ng-glow               : （任意）輪の真ん中のほのかな明かり。無ければ無し
+   --ng-line-c             : （任意）輪の細い線・下のブロックの輪の線の色。無ければ ink
+   --ng-btn-line / --ng-off-line : （任意）6 つのボタンの線・選んだ印の輪／線だけの空の丸の色。無ければ ink
+   --ng-fill-bg            : （任意）押す所の塗り（金属のつや）。無ければ --ng-fill
+   --ng-num                : （任意）数字の色。無ければ ink
+   --ng-metal / --ng-rim-grad : （任意）写真の縁を金属にする（1 と、円錐のグラデーション）。無ければ縁は --ng-rim の単色
+   --ng-vc-pct             : （任意）準備中の業種の「色の空の丸」を、地の色にどれだけ寄せるか（100% で業種の色そのまま。世界のある配色では少し落ち着かせる）
    --ng-la                 : 細い線の濃さの倍率（明るい地では少し弱く）
    --ng-grain / --ng-grain-a : 紙のざらつき
    ════════════════════════════════════════════════════════════ */
@@ -156,6 +163,167 @@
   --ng-accent: #b92d19;
   --ng-ph: #f0d9bf;
   --ng-la: 0.7;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* ═════ 世界のある配色（5 つ）。地・文字・差し色・写真の縁・線・押す所・影までを 1 つの世界として組む。
+   差し色は細く効かせ、影には地の色味を入れる。金属の縁は円錐のグラデーション（光が当たる向きは、写真が回っても動かない） ═════ */
+
+/* urushi（漆黒と金）: 料亭・鉄板焼きの夜 */
+.ngp[data-theme="urushi"],
+.ng-swi[data-theme="urushi"] {
+  --ng-bg: #12100e;
+  --ng-bg-l: #1c1814;
+  --ng-bg-d: #0b0a08;
+  --ng-bg-dd: #050403;
+  --ng-ink: #f3ead8;
+  --ng-ink2: #f3ead8;
+  --ng-fill: #c8a35a;
+  --ng-fill-bg: linear-gradient(180deg, #dcbc78 0%, #c8a35a 55%, #a9853f 100%);
+  --ng-on-fill: #17120a;
+  --ng-fill-h: #e2c680;
+  --ng-focus: #e6cc8c;
+  --ng-rim: transparent;
+  --ng-edge: transparent;
+  --ng-vline: #c8a35a;
+  --ng-metal: 1;
+  --ng-rim-grad: conic-gradient(from 215deg, #8a6a2c, #e8d19a 12%, #c8a35a 27%, #7c5d24 45%, #d8bb78 62%, #f0dca8 74%, #a98538 88%, #8a6a2c);
+  --ng-line-c: #c8a35a;
+  --ng-btn-line: #c8a35a;
+  --ng-off-line: #c8a35a;
+  --ng-shade: #080503;
+  --ng-tshade: #000000;
+  --ng-accent: #c8a35a;
+  --ng-ph: #3a2f20;
+  --ng-glow: rgba(200, 163, 90, 0.1);
+  --ng-vc-pct: 66%;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* bordeaux（ボルドーとシャンパン金）: ワインバー・ビストロ。赤でも暗く深く */
+.ngp[data-theme="bordeaux"],
+.ng-swi[data-theme="bordeaux"] {
+  --ng-bg: #4a0f1f;
+  --ng-bg-l: #561428;
+  --ng-bg-d: #35091a;
+  --ng-bg-dd: #24050f;
+  --ng-ink: #f6ead9;
+  --ng-ink2: #f6ead9;
+  --ng-fill: #e0c592;
+  --ng-fill-bg: linear-gradient(180deg, #eed8a8 0%, #e0c592 55%, #c9a768 100%);
+  --ng-on-fill: #3a0c18;
+  --ng-fill-h: #f2dfb8;
+  --ng-focus: #f0dba8;
+  --ng-rim: transparent;
+  --ng-edge: transparent;
+  --ng-vline: #e0c592;
+  --ng-metal: 1;
+  --ng-rim-grad: conic-gradient(from 200deg, #b89458, #f1e0b8 14%, #d9bb82 30%, #a98446 48%, #e8d3a6 64%, #f7ebcc 76%, #c3a066 90%, #b89458);
+  --ng-line-c: #e0c592;
+  --ng-btn-line: #e0c592;
+  --ng-off-line: #e0c592;
+  --ng-shade: #1a0208;
+  --ng-tshade: #1a0208;
+  --ng-accent: #e0c592;
+  --ng-ph: #5c2433;
+  --ng-glow: rgba(224, 197, 146, 0.08);
+  --ng-vc-pct: 68%;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* shinchu（深緑と真鍮）: クラシックホテル・老舗の喫茶 */
+.ngp[data-theme="shinchu"],
+.ng-swi[data-theme="shinchu"] {
+  --ng-bg: #0e3a2d;
+  --ng-bg-l: #124636;
+  --ng-bg-d: #08281f;
+  --ng-bg-dd: #041b15;
+  --ng-ink: #f2ead6;
+  --ng-ink2: #f2ead6;
+  --ng-fill: #c6a74f;
+  --ng-fill-bg: linear-gradient(180deg, #d8c070 0%, #c6a74f 55%, #a68a3a 100%);
+  --ng-on-fill: #082219;
+  --ng-fill-h: #dcc680;
+  --ng-focus: #e4cc80;
+  --ng-rim: transparent;
+  --ng-edge: transparent;
+  --ng-vline: #c6a74f;
+  --ng-metal: 1;
+  --ng-rim-grad: conic-gradient(from 215deg, #6f5a22, #d6bf74 12%, #c2a54f 28%, #5f4c1b 46%, #c9ae5c 62%, #e6d28c 75%, #8f7530 88%, #6f5a22);
+  --ng-line-c: #c6a74f;
+  --ng-btn-line: #c6a74f;
+  --ng-off-line: #c6a74f;
+  --ng-shade: #02140e;
+  --ng-tshade: #02140e;
+  --ng-accent: #c6a74f;
+  --ng-ph: #1e4a3b;
+  --ng-glow: rgba(198, 167, 79, 0.09);
+  --ng-vc-pct: 68%;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* sometsuke（白磁と藍）: 白い器・割烹。明るい高級感。線と縁は金、押す所は藍の塗りに白磁の字 */
+.ngp[data-theme="sometsuke"],
+.ng-swi[data-theme="sometsuke"] {
+  --ng-bg: #f6f3ec;
+  --ng-bg-l: #fbf9f4;
+  --ng-bg-d: #ebe5d7;
+  --ng-bg-dd: #18265a;
+  --ng-ink: #18265a;
+  --ng-ink2: #18265a;
+  --ng-fill: #18265a;
+  --ng-fill-bg: linear-gradient(180deg, #26357a 0%, #18265a 60%, #121d48 100%);
+  --ng-on-fill: #f6f3ec;
+  --ng-fill-h: #26357a;
+  --ng-focus: #18265a;
+  --ng-rim: transparent;
+  --ng-edge: transparent;
+  --ng-vline: #7c5f26;
+  --ng-metal: 1;
+  --ng-rim-grad: conic-gradient(from 215deg, #9a7a38, #e6d09a 12%, #b08d4a 28%, #8a6a2e 46%, #d2b672 62%, #efe0b4 76%, #a98538 90%, #9a7a38);
+  --ng-line-c: #b08d4a;
+  --ng-shade: #2a3566;
+  --ng-tshade: transparent;
+  --ng-accent: #7c5f26;
+  --ng-ph: #e7e0d0;
+  --ng-la: 0.85;
+  --ng-vc-pct: 78%;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.22;
+}
+
+/* akagane（濃紺と銅）: 夜の街・バー */
+.ngp[data-theme="akagane"],
+.ng-swi[data-theme="akagane"] {
+  --ng-bg: #0d1730;
+  --ng-bg-l: #132042;
+  --ng-bg-d: #080f22;
+  --ng-bg-dd: #050a18;
+  --ng-ink: #eef0f4;
+  --ng-ink2: #eef0f4;
+  --ng-fill: #c97b4f;
+  --ng-fill-bg: linear-gradient(180deg, #dc9066 0%, #c97b4f 55%, #b46a40 100%);
+  --ng-on-fill: #120904;
+  --ng-fill-h: #e3996f;
+  --ng-focus: #e8a37c;
+  --ng-rim: transparent;
+  --ng-edge: transparent;
+  --ng-vline: #c97b4f;
+  --ng-metal: 1;
+  --ng-rim-grad: conic-gradient(from 205deg, #7d4326, #e0a07a 12%, #c97b4f 28%, #6f3a20 46%, #d58d63 62%, #efb592 75%, #a8602f 88%, #7d4326);
+  --ng-line-c: #c97b4f;
+  --ng-btn-line: #c97b4f;
+  --ng-off-line: #c97b4f;
+  --ng-shade: #02050f;
+  --ng-tshade: #02050f;
+  --ng-accent: #c97b4f;
+  --ng-ph: #26304f;
+  --ng-glow: rgba(201, 123, 79, 0.08);
+  --ng-vc-pct: 66%;
   --ng-grain: var(--ng-grain-n);
   --ng-grain-a: 0.3;
 }
