@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from "react";
 import type { HubItem } from "@/lib/portal/hub";
 import type { Week } from "@/lib/portal/openNow";
+import { themeRings, type ThemeKey } from "@/lib/portal/hubs/mitsuwa/themes";
 
 /**
  * 総合トップ案「三つの輪 MITSUWA」（コンセプト 2）— 最初の画面（クライアント）。
@@ -47,8 +48,6 @@ const RINGS: RingDef[] = [
   { id: "machi", text: "まち・".repeat(4), slots: 12, R: 66, H: 34, fs: 29, roll: -62, tilt: -28, speed: 14, mult: 1.3 },
 ];
 const SEGS = 48;
-/** 陰の濃さの上限。黒の帯（0）は白を重ねて手前を明るく、白・朱の帯は暗い色を重ねて縁と奥を沈める */
-const SHADE_MAX = [0.05, 0.32, 0.36];
 /** 板 k の角度 k×7.5° の sin/cos（陰の計算を軽くする） */
 const SEG_SIN = Array.from({ length: SEGS }, (_, k) => Math.sin((k * 7.5 * Math.PI) / 180));
 const SEG_COS = Array.from({ length: SEGS }, (_, k) => Math.cos((k * 7.5 * Math.PI) / 180));
@@ -107,11 +106,17 @@ function Ring({ r, index }: { r: RingDef; index: number }) {
 }
 
 export default function MitsuwaHub({
+  theme,
+  swatch,
   items,
   gourmetTotal,
   featureTotal,
   open,
 }: {
+  /** 色（themes.ts）。輪の陰の付け方（明るくする／暗くする）を、色ごとに決める */
+  theme: ThemeKey;
+  /** 色見本（サーバーで作ったものを受け取る） */
+  swatch: ReactNode;
   items: HubItem[];
   gourmetTotal: number;
   featureTotal: number;
@@ -163,6 +168,8 @@ export default function MitsuwaHub({
     // 陰（板ごとの重ね色の濃さ）。輪ごとに SEGS 枚。値が変わったときだけ書く
     const shades = wraps.map((w) => Array.from(w.querySelectorAll<HTMLElement>(".mw-sh")));
     const shadeLast = RINGS.map(() => new Float32Array(SEGS).fill(-1));
+    // 陰の付け方は色ごと（暗い帯は明るく、明るい帯は暗く。濃さの上限も）
+    const ringColors = themeRings(theme);
     if (!scene || !ringsEl || !h1 || !hwrap || !veil || !probe || wraps.length !== RINGS.length) return;
 
     const persp = root.querySelector<HTMLElement>(".mw-persp");
@@ -231,7 +238,8 @@ export default function MitsuwaHub({
           const y2 = sn * sr + y1 * cr;
           const dot = x2 * -0.34 + y2 * -0.5 + z2 * 0.8;
           const lit = clamp01(0.5 + 0.5 * dot);
-          o = i === 0 ? SHADE_MAX[0] * lit * lit * lit : SHADE_MAX[i] * clamp01(0.62 * (1 - lit) + 0.38 * (1 - z2) * (1 - z2) * 2);
+          const rc = ringColors[i];
+          o = rc.lighten ? rc.max * lit * lit * lit : rc.max * clamp01(0.62 * (1 - lit) + 0.38 * (1 - z2) * (1 - z2) * 2);
         }
         o = Math.round(o * 500) / 500;
         if (o !== last[k]) {
@@ -518,7 +526,7 @@ export default function MitsuwaHub({
       io.disconnect();
       ro.disconnect();
     };
-  }, [router]);
+  }, [router, theme]);
 
   /* ───────────── リンクの扱い（修飾キー付き・中クリックはブラウザに任せる） ───────────── */
   const plain = (e: MouseEvent) => e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
@@ -667,7 +675,10 @@ export default function MitsuwaHub({
       </header>
 
       <div className="mw-foot">
-        <p className="mw-lead">{LEAD}</p>
+        <div className="mw-row">
+          <p className="mw-lead">{LEAD}</p>
+          {swatch}
+        </div>
         <ul className="mw-tags" data-nodrag>
           {live.map((it) => renderTag(it))}
           {/* 準備中の 5 つをひとまとめに括る見出し（「掲載準備中」は、ここに 1 回だけ。各札には読み上げ用に残す） */}
