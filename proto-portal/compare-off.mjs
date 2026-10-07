@@ -289,6 +289,7 @@ const GOURMET = [
 const PORTAL_404 = [
   "/gourmet",
   "/proto-sns", // 行動ボタンの見比べ（試作・非公開）
+  "/proto-hub/chochin", // 総合トップ 5案の見比べ（試作・非公開）
   "/beauty",
   "/beauty/hair",
   "/beauty/hair/tokyo",
