@@ -7,6 +7,7 @@
    --ng-fill / --ng-on-fill / --ng-fill-h : 押す所の塗り／その上の文字／乗せたときの塗り
    --ng-focus              : フォーカスの輪
    --ng-rim / --ng-shade   : 写真の縁／写真の影（地から写真を浮かせる）
+   --ng-edge               : 写真の外側の細い輪郭線（明るい地では、地より一段濃い色。暗い地では透明）
    --ng-vline              : 準備中の業種の「色の空の丸」を地から切り出す縁（暗い地では生成り、明るい地では墨）
    --ng-tshade             : 文字の影（明るい地では透明）
    --ng-accent             : 印（句点・かぎかっこ・掲載中の点・結びの円）。ink と同じなら変化なし
@@ -20,10 +21,10 @@
   --ng-grain-n: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .16 0 0 0 0 .1 0 0 0 0 .05 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
   /* shu（朱。いまの色） */
-  --ng-bg: #d23a24;
-  --ng-bg-l: #d83f28;
-  --ng-bg-d: #b82e19;
-  --ng-bg-dd: #a22714;
+  --ng-bg: #cd3822;
+  --ng-bg-l: #cd3822;
+  --ng-bg-d: #b02c18;
+  --ng-bg-dd: #9c2512;
   --ng-ink: #fff4e6;
   --ng-ink2: #fffbf5;
   --ng-fill: #fff4e6;
@@ -32,6 +33,7 @@
   --ng-focus: #fffbf5;
   --ng-rim: #fff4e6;
   --ng-vline: #fff4e6;
+  --ng-edge: transparent;
   --ng-shade: #560a00;
   --ng-tshade: #701204;
   --ng-accent: #fff4e6;
@@ -123,6 +125,7 @@
   --ng-focus: #2b1b0e;
   --ng-rim: #fffaee;
   --ng-vline: #2b1b0e;
+  --ng-edge: rgba(92, 58, 6, 0.55);
   --ng-shade: #5a3a00;
   --ng-tshade: transparent;
   --ng-accent: #2b1b0e;
@@ -147,6 +150,7 @@
   --ng-focus: #1e1712;
   --ng-rim: #ffffff;
   --ng-vline: #1e1712;
+  --ng-edge: rgba(98, 68, 36, 0.5);
   --ng-shade: #6b4a2a;
   --ng-tshade: transparent;
   --ng-accent: #b92d19;
