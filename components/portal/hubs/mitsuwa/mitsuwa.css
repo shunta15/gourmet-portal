@@ -1,0 +1,238 @@
+/* ════════════════════════════════════════════════════════════
+   総合トップ案「三つの輪 MITSUWA」（コンセプト 2・試作）
+   接頭辞 .mw-（最初の画面）／ .mws-（下のブロック）。
+   世界: あざやかな黄の地・黒の極太ゴシック・白と朱をほんの少し。主役は文字でできた 3 つの立体の輪（CSS 3D）。
+   輪の単位 u … 外側の輪の半径の 1/100（PC 1440×900 で約 3.9px）。輪の大きさも字の大きさも u で決まる。
+   ════════════════════════════════════════════════════════════ */
+.mw, .mws{
+  --yl:#FFD400; --yl2:#FFE65C; --yl3:#F2C000;
+  --bk:#14110A; --wh:#FFFDF4; --rd:#EA3A1B;
+  --disp:"Dela Gothic One","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+  --g:clamp(16px, 2.6vw, 44px);
+}
+
+/* サイト共通の丸いカーソルは、この画面のあいだだけ消す（普通の矢印・手に戻す） */
+body:has(.mw){cursor:auto}
+body:has(.mw) .cursor-dot, body:has(.mw) .cursor-ring{display:none}
+.mw a, .mw button, .mws a{cursor:pointer}
+
+/* ───────────────────────── 最初の画面 ───────────────────────── */
+.mw{
+  --u:clamp(1.7px, min(.265vw, .418vh), 5px);
+  --cx:55.5%; --cy:44%;
+  position:relative; isolation:isolate; overflow:clip;
+  height:100svh; min-height:640px;
+  color:var(--bk); font-family:var(--body);
+  background:radial-gradient(120% 95% at 50% 40%, var(--yl2) 0%, var(--yl) 46%, var(--yl3) 100%);
+  touch-action:pan-y; -webkit-user-select:none; user-select:none;
+}
+.mw-probe{position:absolute; left:0; top:0; width:calc(var(--u) * 100); height:0; visibility:hidden; pointer-events:none}
+
+/* 3D の舞台。perspective は輪の中心に合わせる */
+.mw-persp{position:absolute; inset:0; z-index:1; perspective:calc(var(--u) * 420); perspective-origin:var(--cx) var(--cy); cursor:grab}
+.mw.is-drag .mw-persp{cursor:grabbing}
+.mw-scene{position:absolute; inset:0; transform-style:preserve-3d}
+.mw-rings{position:absolute; left:var(--cx); top:var(--cy); width:0; height:0; transform-style:preserve-3d}
+
+/* 輪 1 本 = 入る演出の層(.mw-intro) > 軸の向きの層(.mw-ring) > 回る層(.mw-spin) > 板 48 枚(.mw-seg) */
+.mw-intro, .mw-ring, .mw-spin{position:absolute; left:0; top:0; width:0; height:0; transform-style:preserve-3d}
+.mw-intro{animation:mwIn 1.7s cubic-bezier(.16,1.12,.3,1) var(--delay) both}
+@keyframes mwIn{from{transform:rotateX(74deg) rotateY(var(--from)) scale(.03)} to{transform:none}}
+/* JS が動くまでの形（JS は毎フレーム transform を直接書く） */
+.mw-ring{transform:rotateZ(calc(var(--roll) * 1deg)) rotateX(calc(var(--tilt) * 1deg))}
+.mw-ring{
+  --sw:calc(var(--R) * var(--u) * .13108);   /* 板の幅 = 2R·tan(3.75°) */
+  --h:calc(var(--H) * var(--u));
+}
+.mw-ring[data-r="0"]{--band:#14110A; --ink:var(--yl);  --edge:var(--yl);  --bandb:#C99F00; --inkb:#A98600}
+.mw-ring[data-r="1"]{--band:var(--wh); --ink:var(--bk); --edge:var(--bk); --bandb:#FFF0A6; --inkb:#E5CB5C}
+.mw-ring[data-r="2"]{--band:var(--rd); --ink:var(--wh); --edge:var(--wh); --bandb:#F28A66; --inkb:#D95B38}
+
+.mw-seg{
+  position:absolute; left:0; top:0; display:block;
+  width:calc(var(--sw) + 2px); height:var(--h);
+  margin:calc(var(--h) / -2) 0 0 calc(var(--sw) / -2 - 1px);
+  transform:rotateY(calc(var(--i) * 7.5deg)) translateZ(calc(var(--R) * var(--u)));
+  transform-style:preserve-3d;
+}
+.mw-f, .mw-b{position:absolute; inset:0; display:block; overflow:hidden}
+/* 手前に向いた面（表）。奥にあるとき（裏から見るとき）は描かない */
+.mw-f{
+  background:var(--band); color:var(--ink);
+  -webkit-backface-visibility:hidden; backface-visibility:hidden;
+  box-shadow:inset 0 calc(var(--u) * 1.3) 0 var(--edge), inset 0 calc(var(--u) * -1.3) 0 var(--edge);
+}
+.mw-f::after{content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg, rgba(255,255,255,.13), rgba(255,255,255,0) 42%, rgba(0,0,0,.12))}
+/* 奥にあるとき見える面（裏）。薄い色で、字は鏡文字 */
+.mw-b{
+  background:var(--bandb); color:var(--inkb);
+  transform:translateZ(-1px);
+  box-shadow:inset 0 calc(var(--u) * 1.3) 0 var(--inkb), inset 0 calc(var(--u) * -1.3) 0 var(--inkb);
+}
+/* 字の帯（円周ぶんの長さ）。板ごとに左へずらして、円筒に巻いたように見せる */
+.mw-strip{
+  position:absolute; top:0; left:calc(var(--i) * var(--sw) * -1 + 1px);
+  width:calc(48 * var(--sw)); height:100%;
+  font:400 calc(var(--fs) * var(--u)) / var(--h) var(--disp);
+  letter-spacing:calc(48 * var(--sw) / var(--slots) - var(--fs) * var(--u));
+  white-space:nowrap; text-align:left;
+}
+
+/* 見出し。左に 3 文字ずつ積む。普通の 2D の層で、PC は輪の「後ろ」（右の輪の端が見出しの前を横切る）、スマホは輪の「前」（読めることを優先）。
+   3D の中に入れない（輪の板の面と交わると、見出しの一部が切れて描かれるため）。入るときは JS が .mw-hwrap を拡大する */
+.mw-hwrap{position:absolute; inset:0; z-index:0; pointer-events:none; transform-origin:var(--cx) var(--cy)}
+.mw-h1{
+  --hf:44; --hy:-6;
+  position:absolute; left:var(--g); top:calc(var(--cy) + var(--u) * var(--hy)); margin:0;
+  transform:translateY(-50%);
+  text-align:left; white-space:nowrap;
+  font:400 calc(var(--u) * var(--hf)) / .93 var(--disp); letter-spacing:0;
+  color:var(--bk);
+  -webkit-text-stroke:calc(var(--u) * 2.4) var(--yl); paint-order:stroke fill;
+}
+.mw-h1 .seg{display:block}
+.mw-h1 .l2{font-size:calc(var(--u) * var(--hf) / 2); margin-top:.16em; line-height:1}
+.mw-h1 .ch{display:inline-block; animation:mwCh 1s cubic-bezier(.2,1.15,.3,1) calc(.75s + var(--ci) * 55ms) both}
+@keyframes mwCh{from{transform:translateY(60%) rotate(9deg) scale(.6); opacity:0}}
+
+/* 上の帯：ロゴ・さがす */
+.mw-bar{position:absolute; z-index:5; left:0; right:0; top:0; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:22px var(--g) 0}
+.mw-logo{display:flex; align-items:baseline; gap:10px; color:var(--bk); text-decoration:none}
+.mw-logo .ja{font:400 clamp(24px, 2.2vw, 30px)/1 var(--disp); letter-spacing:.02em}
+.mw-logo .en{font:900 12px/1 var(--body); letter-spacing:.2em; text-transform:uppercase}
+.mw-find{display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:0 22px 0 18px; border:4px solid var(--bk); border-radius:99px; color:var(--bk); text-decoration:none; font:900 17px/1 var(--body); letter-spacing:.06em; background:transparent; transition:background .2s, color .2s, transform .2s}
+.mw-find:hover{background:var(--bk); color:var(--yl)}
+.mw a:focus-visible{outline:4px solid var(--bk); outline-offset:4px; border-radius:22px}
+.mw-logo:focus-visible{border-radius:6px}
+.mw-find:focus-visible{border-radius:99px}
+
+/* 下：リード・業種の札 6 つ */
+.mw-foot{position:absolute; z-index:5; left:var(--g); right:var(--g); bottom:clamp(14px, 2.6vh, 28px); display:flex; flex-direction:column; gap:clamp(12px, 2vh, 20px)}
+.mw-lead{max-width:23em; font:900 clamp(13.5px, 1.05vw, 16px)/1.75 var(--body); letter-spacing:.03em; margin:0; word-break:auto-phrase; text-wrap:balance}
+
+.mw-tags{display:grid; grid-template-columns:2.7fr repeat(5, 1fr); gap:10px; margin:0; padding:0; list-style:none}
+.mw-li{min-width:0; display:flex}
+.mw-tag{
+  position:relative; flex:1; min-width:0; display:flex; flex-direction:column; justify-content:space-between; gap:6px;
+  min-height:clamp(88px, 12.4vh, 112px); padding:14px 16px 13px; border-radius:22px; text-decoration:none;
+  color:var(--bk); transition:transform .28s cubic-bezier(.2,1.3,.3,1), background .2s, color .2s, box-shadow .2s;
+}
+.mw-t-head{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
+.mw-t-head .nm{font:400 clamp(16px, 1.5vw, 22px)/1.05 var(--disp); letter-spacing:.01em; white-space:nowrap}
+.mw-t-head .en{font:900 10px/1 var(--body); letter-spacing:.16em; text-transform:uppercase; opacity:.7}
+.mw-t-state{display:inline-flex; align-items:center; gap:7px; font:900 12.5px/1.2 var(--body); letter-spacing:.08em}
+.mw-t-state i{width:9px; height:9px; border-radius:50%; border:2px solid currentColor; flex:none}
+.mw-t-go{display:flex; align-items:center; justify-content:space-between; font:900 13px/1.2 var(--body); letter-spacing:.06em}
+.mw-t-go .ar{font-size:17px; transition:transform .25s}
+.mw-tag:hover .mw-t-go .ar{transform:translateX(5px)}
+
+/* 掲載中（グルメ）: 黒ベタに黄の字・数字 */
+.mw-tag.is-live{background:var(--bk); color:var(--yl); display:grid; grid-template-columns:auto minmax(0,1fr); grid-template-rows:auto 1fr auto; column-gap:clamp(14px, 1.8vw, 28px); align-content:stretch}
+.mw-tag.is-live .mw-t-head{grid-column:1; grid-row:1}
+.mw-tag.is-live .mw-t-state{grid-column:1; grid-row:2; align-self:center}
+.mw-tag.is-live .mw-t-state i{background:var(--yl); animation:mwBlink 2s ease-in-out infinite}
+.mw-tag.is-live .mw-t-figs{grid-column:2; grid-row:1 / span 3; display:flex; align-items:center; align-content:center; gap:6px clamp(12px, 1.4vw, 22px); flex-wrap:wrap}
+.mw-tag.is-live .mw-t-go{grid-column:1; grid-row:3; gap:12px}
+@keyframes mwBlink{0%,100%{opacity:1}50%{opacity:.35}}
+.mw-t-figs .f{display:inline-flex; align-items:baseline; gap:3px; flex-wrap:wrap; max-width:100%}
+.mw-t-figs b{font:400 clamp(22px, 2.1vw, 31px)/1 var(--disp); letter-spacing:.01em; color:var(--yl)}
+.mw-t-figs em{font:900 12.5px/1.2 var(--body); font-style:normal; letter-spacing:.05em; color:var(--wh)}
+.mw-t-figs small{flex-basis:100%; font:700 11.5px/1.35 var(--body); letter-spacing:.03em; color:rgba(255,253,244,.8); margin-top:3px}
+.mw-t-figs .is-open b{transition:opacity .4s}
+.mw-t-figs .is-open:not([data-on]) b{opacity:.35}
+.mw-tag.is-live:hover{background:var(--rd); color:var(--wh); transform:translateY(-5px) rotate(-.4deg)}
+.mw-tag.is-live:hover .mw-t-figs b{color:var(--wh)}
+.mw-tag.is-live:hover .mw-t-state i{background:var(--wh)}
+
+/* 掲載準備中・入れる（ビューティー・ボディケア）: 黒い太枠 */
+.mw-tag.is-ready{border:4px solid var(--bk); padding:11px 13px 10px; background:transparent}
+.mw-tag.is-ready:hover{background:var(--bk); color:var(--yl); transform:translateY(-5px) rotate(.4deg)}
+
+/* 掲載準備中・入れない（ペット・おでかけ・ステイ）: 黒の破線の枠・字は薄く・リンクにしない */
+.mw-tag.is-wait{border:3px dashed rgba(20,17,10,.62); padding:11px 13px 10px; color:rgba(20,17,10,.62); cursor:default}
+.mw-tag.is-wait.nudge{animation:mwNudge .5s ease}
+@keyframes mwNudge{0%,100%{transform:none}20%{transform:translateX(-6px) rotate(-1deg)}45%{transform:translateX(6px) rotate(1deg)}70%{transform:translateX(-3px)}}
+
+/* 入る動き: 画面の部品は消えていく */
+.mw-bar, .mw-foot{transition:opacity .35s ease, transform .5s ease}
+.mw.is-leaving .mw-bar{opacity:0; transform:translateY(-14px); pointer-events:none}
+.mw.is-leaving .mw-foot{opacity:0; transform:translateY(18px); pointer-events:none}
+.mw-veil{position:absolute; inset:0; z-index:9; background:var(--bk); opacity:0; pointer-events:none}
+
+/* ───────────────────────── スマホ ───────────────────────── */
+@media (max-width:760px){
+  .mw{--u:clamp(1.6px, .56vw, 2.6px); --cx:50%; --cy:27%; min-height:700px}
+  /* 3 文字ずつ 3 段に積む。輪の上半分の下へ重ね、輪より手前に出して読めるようにする */
+  .mw-hwrap{z-index:2}
+  .mw-h1{--hf:45; --hy:58; left:50%; transform:translate(-50%, -50%); text-align:center}
+  .mw-bar{padding-top:14px}
+  .mw-logo .en{display:none}
+  .mw-find{min-height:44px; padding:0 18px 0 14px; font-size:15px}
+  .mw-foot{gap:10px; bottom:12px}
+  .mw-lead{max-width:none; font-size:13px; line-height:1.65}
+  .mw-tags{grid-template-columns:repeat(6, 1fr); gap:8px}
+  .mw-li[data-k="gourmet"]{grid-column:1 / -1}
+  .mw-li[data-k="beauty"], .mw-li[data-k="bodycare"]{grid-column:span 3}
+  .mw-li[data-k="pet"], .mw-li[data-k="leisure"], .mw-li[data-k="stay"]{grid-column:span 2}
+  .mw-tag{min-height:60px; border-radius:16px}
+  .mw-tag.is-live{min-height:96px; padding:11px 14px 10px; column-gap:14px}
+  .mw-tag.is-live .mw-t-head .en{display:none}
+  .mw-tag.is-live .mw-t-figs{gap:4px 12px}
+  .mw-t-figs b{font-size:25px}
+  .mw-tag.is-wait{padding:8px 10px; gap:4px; min-height:56px}
+  .mw-tag.is-wait .mw-t-head .nm{font-size:15px}
+  .mw-tag.is-wait .mw-t-state{font-size:11.5px; letter-spacing:.02em}
+  .mw-tag.is-ready{padding:9px 11px; min-height:64px; display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; row-gap:5px}
+  .mw-tag.is-ready .mw-t-head{grid-column:1 / -1}
+  .mw-tag.is-ready .mw-t-state{grid-column:1}
+  .mw-tag.is-ready .mw-t-go{grid-column:2}
+  /* 押す所の言葉は読み上げ用に残し、見た目は矢印だけ */
+  .mw-tag.is-ready .mw-t-go .t{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
+}
+
+/* ───────────────────────── 下のブロック ───────────────────────── */
+.mws{
+  position:relative; overflow:clip; background:var(--yl); color:var(--bk); font-family:var(--body);
+  padding:clamp(72px, 10vw, 150px) var(--g) clamp(84px, 11vw, 170px);
+}
+.mws-in{position:relative; max-width:1360px; margin:0 auto; display:grid; grid-template-columns:repeat(12, minmax(0,1fr)); column-gap:clamp(12px, 2vw, 28px); row-gap:clamp(40px, 5.4vw, 84px)}
+.mws p{margin:0; text-wrap:balance}
+.mws .ph{display:inline-block}
+.mws-p1{grid-column:1 / -1; font:400 clamp(30px, 6.1vw, 100px)/1.22 var(--disp); letter-spacing:-.01em}
+.mws-p2{grid-column:1 / span 8; font:900 clamp(20px, 2.55vw, 40px)/1.9 var(--body); letter-spacing:.02em}
+.mws-w{position:relative; display:inline-block; padding:0 .3em; margin:0 .08em; line-height:1.15; white-space:nowrap}
+.mws-w::before{content:""; position:absolute; inset:-.14em -.04em; border:.13em solid var(--bk); border-radius:50%}
+.mws-w[data-w="1"]::before{border-color:var(--wh)}
+.mws-w[data-w="2"]::before{border-color:var(--rd)}
+.mws-p3{grid-column:4 / -1; font:900 clamp(18px, 2.2vw, 34px)/1.5 var(--body); display:flex; flex-direction:column; gap:.7em}
+.mws-p3 .ln{display:flex; align-items:center; gap:.7em}
+.mws-p3 i{flex:none; width:1.1em; height:1.1em; border-radius:50%; border:.3em solid var(--bk)}
+.mws-p3 i[data-w="1"]{border-color:var(--wh)}
+.mws-p3 i[data-w="2"]{border-color:var(--rd)}
+.mws-p3 .tx{text-wrap:pretty}
+.mws-p4{grid-column:1 / -1; font:400 clamp(24px, 4.2vw, 68px)/1.3 var(--disp); background:var(--bk); color:var(--yl); border-radius:clamp(22px, 3vw, 44px); padding:clamp(28px, 4.4vw, 68px) clamp(24px, 4.2vw, 68px)}
+.mws-p4 .ln{display:block}
+.mws-p4 .ln + .ln{color:var(--wh)}
+/* 3 つの輪の飾り（絡み合った 3 つの太い輪。右上の余白に） */
+.mws-deco{position:absolute; right:calc(var(--g) * -.2); top:clamp(200px, 21vw, 300px); width:clamp(150px, 24vw, 340px); aspect-ratio:1; pointer-events:none}
+.mws-deco i{position:absolute; width:62%; aspect-ratio:1; border-radius:50%; border:clamp(10px, 1.6vw, 22px) solid var(--bk)}
+.mws-deco i[data-w="0"]{left:0; top:0}
+.mws-deco i[data-w="1"]{right:0; top:0; border-color:var(--wh)}
+.mws-deco i[data-w="2"]{left:19%; bottom:0; border-color:var(--rd)}
+
+@media (max-width:900px){
+  .mws-p2{grid-column:1 / -1}
+  .mws-p3{grid-column:1 / -1}
+  .mws-deco{display:none}
+}
+
+/* ───────────────────────── 動きを減らす設定 ───────────────────────── */
+@media (prefers-reduced-motion:reduce){
+  .mw-intro{animation:none}
+  .mw-h1 .ch{animation:none}
+  .mw-tag, .mw-t-go span, .mw-bar, .mw-foot{transition:none}
+  .mw-tag.is-live .mw-t-state i{animation:none}
+  .mw-tag.is-wait.nudge{animation:none}
+  .mw-persp{cursor:default}
+}
