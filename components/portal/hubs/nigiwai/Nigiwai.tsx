@@ -26,17 +26,30 @@ const GAP = 0.075; // 隣どうしの隙間（写真の直径に対する比）
 const fmt = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 /** 写真の置き場所。大きさに比例した弧を割り当てて、隙間をそろえる（決まった値なのでサーバーとクライアントで同じ） */
-function layout(n: number) {
-  const s = Array.from({ length: n }, (_, i) => SCALES[i % SCALES.length]);
-  const tot = s.reduce((a, b) => a + b + GAP, 0);
+function arcs(scales: number[]) {
+  const tot = scales.reduce((a, b) => a + b + GAP, 0);
   let acc = 0;
-  const dishes = s.map((v) => {
+  const out = scales.map((v) => {
     const w = ((v + GAP) / tot) * 360;
     const a = acc + w / 2;
     acc += w;
     return { a: Number(a.toFixed(3)), s: v };
   });
-  return { dishes, dk: Number(((2 * Math.PI) / tot).toFixed(4)) };
+  return { out, dk: Number(((2 * Math.PI) / tot).toFixed(4)) };
+}
+
+/** スマホの輪は 13 枚（輪の全体が画面に入る大きさにするため）。使わない写真の番号（輪の 16 枚のうち） */
+const SKIP_M = new Set([8, 9, 14]);
+const SCALES_M = [1, 0.9, 1.04, 0.94, 1.06, 0.9, 1, 0.96, 1.04, 0.9, 1, 0.94, 1.06];
+
+function layout(n: number) {
+  const pc = arcs(Array.from({ length: n }, (_, i) => SCALES[i % SCALES.length]));
+  const keep = Array.from({ length: n }, (_, i) => i).filter((i) => !SKIP_M.has(i));
+  const mo = arcs(keep.map((_, k) => SCALES_M[k % SCALES_M.length]));
+  const m = new Map<number, { a: number; s: number }>();
+  keep.forEach((i, k) => m.set(i, mo.out[k]));
+  const dishes = pc.out.map((d, i) => ({ a: d.a, s: d.s, m: m.get(i) ?? null }));
+  return { dishes, dk: pc.dk };
 }
 
 export default function Nigiwai({
@@ -56,6 +69,9 @@ export default function Nigiwai({
   const rootRef = useRef<HTMLElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
   const lastType = useRef<string>("mouse");
+  // 押し始めたときに選ばれていた業種（タッチでは、押した瞬間のフォーカスで選択が変わってから click が来るので、click では使えない）
+  const downSel = useRef<number | null>(null);
+  const selRef = useRef(0);
   const suppressClick = useRef(false);
   const goRef = useRef<(i: number, from?: HTMLElement | null) => void>(() => {});
 
@@ -66,6 +82,7 @@ export default function Nigiwai({
   const [openNow, setOpenNow] = useState<{ open: number; known: number } | null>(null);
 
   const { dishes, dk } = layout(photos.length || 16);
+  selRef.current = sel;
   const cur = items[sel];
   const kind = cur.live ? "live" : cur.enter ? "prep" : "off";
 
@@ -196,6 +213,19 @@ export default function Nigiwai({
     root.addEventListener("pointerup", onUp);
     root.addEventListener("pointercancel", onUp);
 
+    /* ── 矢印キー（左右）で、輪を回す。入力欄の中・修飾キー付きは除く。最初の画面が見えているときだけ ── */
+    const onKey = (e: globalThis.KeyboardEvent) => {
+      if (reduce || e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      const el = e.target as HTMLElement | null;
+      if (el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName))) return;
+      const r = root.getBoundingClientRect();
+      if (r.bottom < window.innerHeight * 0.4 || r.top > window.innerHeight * 0.6) return;
+      vel = Math.max(-420, Math.min(420, vel + (e.key === "ArrowRight" ? 90 : -90)));
+      kick();
+    };
+    window.addEventListener("keydown", onKey);
+
     /* ── 画面の外・タブが裏のときは止める ── */
     const io = new IntersectionObserver(
       (es) => {
@@ -258,6 +288,7 @@ export default function Nigiwai({
       root.removeEventListener("pointercancel", onUp);
       io.disconnect();
       document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("keydown", onKey);
       window.removeEventListener("pageshow", onShow);
       mq.removeEventListener("change", onReduce);
     };
@@ -278,6 +309,7 @@ export default function Nigiwai({
       const rr = root.getBoundingClientRect();
       root.style.setProperty("--wx", `${(r.left + r.width / 2 - rr.left).toFixed(0)}px`);
       root.style.setProperty("--wy", `${(r.top + r.height / 2 - rr.top).toFixed(0)}px`);
+      void root.offsetWidth; // 満ちる円の中心を、押した位置に確定させてから始める（中心がすべって見えないように）
       root.classList.add("is-leaving");
       setLeaving(true);
       window.setTimeout(() => router.push(it.path), 780);
@@ -304,18 +336,20 @@ export default function Nigiwai({
       e.preventDefault();
       return;
     }
+    const was = downSel.current ?? selRef.current;
+    downSel.current = null;
     const it = items[i];
     const touch = lastType.current === "touch" || lastType.current === "pen";
     const keyboard = e.detail === 0;
     if (!it.enter) {
       e.preventDefault();
       select(i);
-      if (sel === i) setShake((n) => n + 1);
+      if (was === i) setShake((n) => n + 1);
       return;
     }
     if (!plain(e)) return;
     e.preventDefault();
-    if (touch && !keyboard && sel !== i) {
+    if (touch && !keyboard && was !== i) {
       select(i);
       return;
     }
@@ -348,8 +382,16 @@ export default function Nigiwai({
           return (
             <span
               key={i}
-              className="ng-dish"
-              style={{ ["--a" as string]: `${d.a}deg`, ["--s" as string]: d.s, ["--i" as string]: i } as CSSProperties}
+              className={`ng-dish${d.m ? "" : " nm"}`}
+              style={
+                {
+                  ["--ap" as string]: `${d.a}deg`,
+                  ["--sp" as string]: d.s,
+                  ["--am" as string]: `${d.m ? d.m.a : 0}deg`,
+                  ["--sm" as string]: d.m ? d.m.s : 1,
+                  ["--i" as string]: i,
+                } as CSSProperties
+              }
             >
               <span className="ng-photo">
                 {p && (
@@ -416,6 +458,7 @@ export default function Nigiwai({
                 onFocus: () => select(i),
                 onPointerDown: (e: React.PointerEvent) => {
                   lastType.current = e.pointerType;
+                  downSel.current = selRef.current;
                 },
                 onClick: onBtn(i),
                 style: { ["--i" as string]: i, ["--vc" as string]: it.color } as CSSProperties,

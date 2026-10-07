@@ -12,6 +12,7 @@
   --spring: cubic-bezier(0.34, 1.45, 0.5, 1);
   --out: cubic-bezier(0.16, 0.9, 0.22, 1);
   --gut: clamp(20px, 4vw, 64px);
+  --H: max(100svh, 660px); /* 最初の画面の高さ */
   font-family: var(--font);
   position: relative;
 }
@@ -30,7 +31,6 @@ body:has(.ng) .cursor-ring {
 }
 
 .ng {
-  --H: max(100svh, 660px);
   --R: min(38vw, calc(var(--H) * 0.52)); /* 輪の半径（写真の中心の軌道） */
   --dk: 0.376; /* 写真の直径 ÷ R（JS ではなくサーバーが決めた値で上書き） */
   --d: calc(var(--R) * var(--dk));
@@ -60,8 +60,7 @@ body:has(.ng) .cursor-ring {
   pointer-events: none;
   background-image: var(--ng-grain);
   background-size: 220px;
-  opacity: var(--ng-grain-a);
-  mix-blend-mode: multiply;
+  opacity: var(--ng-grain-a); /* 乗算（mix-blend-mode）は、画面いっぱいの合成が毎フレーム重いので使わない */
 }
 
 /* ───── 波紋（にぎわいが広がる。細い円がゆっくり外へ） ───── */
@@ -106,15 +105,23 @@ body:has(.ng) .cursor-ring {
 }
 
 /* ───── 料理の写真の輪 ───── */
-/* 画面の上下の端では、写真がやわらかく朱に溶ける（写真が半端に切れて見えないように） */
+/* 画面の上下の端では、写真が「地の色へ沈む」（地の濃い色で塗りつぶす帯。写真を透かして白っぽくかすませない）。
+   下の端は、下のブロックの地と同じ色になるので、つなぎ目も出ない */
 .ng-ringwrap {
-  --fade: clamp(56px, 10svh, 100px);
+  --fade: clamp(64px, 10svh, 100px);
   position: absolute;
   inset: 0;
   z-index: 3;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
+}
+.ng-ringwrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  /* 下の端の 52px は地の濃い色で塗り切る（色見本の行の下地にもなる） */
+  background: linear-gradient(to bottom, var(--ng-bg-d) 0, transparent var(--fade), transparent calc(100% - var(--fade)), var(--ng-bg-d) calc(100% - 52px));
 }
 .ng-ring {
   --rot: 0deg;
@@ -150,6 +157,8 @@ body:has(.ng) .cursor-ring {
 }
 /* 皿 1 枚。位置は --a（置き場所）と --rot（輪の回転）。回っても、写真はいつも上を向く */
 .ng-dish {
+  --a: var(--ap);
+  --s: var(--sp);
   --ds: calc(var(--d) * var(--s));
   position: absolute;
   left: 0;
@@ -189,6 +198,7 @@ body:has(.ng) .cursor-ring {
   background: var(--ng-ph);
   box-shadow:
     0 0 0 calc(var(--d) * 0.03) var(--ng-rim),
+    0 0 0 calc(var(--d) * 0.03 + 1.5px) var(--ng-edge),
     0 calc(var(--d) * 0.1) calc(var(--d) * 0.22) calc(var(--d) * -0.06) color-mix(in srgb, var(--ng-shade) 60%, transparent);
 }
 .ng-photo img {
@@ -227,7 +237,9 @@ body:has(.ng) .cursor-ring {
 .ng[data-kind="prep"] .ng-void {
   opacity: 1;
   scale: 1;
-  box-shadow: 0 0 0 calc(var(--d) * 0.03) var(--ng-vline);
+  box-shadow:
+    0 0 0 calc(var(--d) * 0.03) var(--ng-vline),
+    0 0 0 calc(var(--d) * 0.03 + 1.5px) var(--ng-edge);
 }
 .ng[data-kind="off"] .ng-void {
   opacity: 1;
@@ -268,13 +280,18 @@ body:has(.ng) .cursor-ring {
   color: var(--ng-ink);
   animation: ngFade 0.9s ease 0.2s backwards;
 }
+.ng-logo,
+.ng-find {
+  white-space: nowrap;
+  flex: none;
+}
 .ng-logo b {
   font: 900 24px/1 var(--font);
   letter-spacing: 0.03em;
 }
 .ng-logo small {
-  font: 700 11px/1 var(--font);
-  letter-spacing: 0.22em;
+  font: 700 12px/1 var(--font);
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.92;
 }
@@ -363,6 +380,7 @@ body:has(.ng) .cursor-ring {
   letter-spacing: 0.03em;
   white-space: pre-line;
   color: var(--ng-ink2);
+  word-break: auto-phrase;
   text-wrap: balance;
   animation: ngUp 1s var(--out) 1.3s backwards;
 }
@@ -671,28 +689,47 @@ body:has(.ng) .cursor-ring {
   }
 }
 
-/* ═══════════ スマホ：輪は画面より大きく、下半分に半分だけ。見出しは上、ボタンは親指の位置 ═══════════ */
+/* ═══════════ スマホ：輪の全体が画面の中に見える。見出し・リードは輪の上、数字と入口は輪の真ん中、6 つのボタンは輪の下（親指の位置） ═══════════ */
 @media (max-width: 760px) {
   .ngp {
-    /* 見出し・リードの下に、輪の頂点を置く。背の高いスマホでは、色見本の行ぶんだけ下げる */
-    --ltop: calc(202px + (100vw - 2 * var(--gut)) * 0.305 + var(--sw-gap, 0px));
+    --H: max(100svh, 760px); /* 背の低い端末では、少し縦に長くして、重ならないようにする */
+    --mt: calc(180px + (100vw - 2 * var(--gut)) * 0.3053); /* 輪の上端: 見出し・リードの下 */
+    --mb: calc(var(--H) - 140px - env(safe-area-inset-bottom, 0px)); /* 輪の下端: ボタンの上 */
   }
   .ng {
-    --H: max(100svh, 640px);
-    --R: min(66vw, calc(var(--H) * 0.31)); /* 弧に沿って 5 枚以上が見える大きさ */
-    --cy: calc(var(--ltop) + var(--R) * 1.188);
+    --Dout: min(calc(100vw * 0.92), calc(var(--mb) - var(--mt))); /* 輪の外側の直径（幅の 9 割ほど） */
+    --d: calc(var(--Dout) * 0.1848); /* 写真 1 枚（幅の 17% ほど） */
+    --R: calc((var(--Dout) - var(--d)) / 2);
+    --cy: calc((var(--mt) + var(--mb)) / 2);
   }
-  /* 輪の下半分は朱に溶けて、親指の位置の数字・ボタンに場所をあける */
-  .ng-ringwrap {
-    --fade: 0px;
-    -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--cy) - var(--R) * 0.3), transparent calc(var(--cy) + var(--R) * 0.34));
-    mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--cy) - var(--R) * 0.3), transparent calc(var(--cy) + var(--R) * 0.34));
+  .ng-dish {
+    --a: var(--am);
+    --s: var(--sm);
+  }
+  .ng-dish.nm {
+    display: none;
+  }
+  .ng-ripples {
+    opacity: 0.6;
+  }
+  .ng-ringwrap::after {
+    display: none;
   }
   .ng-bar {
     padding-top: 14px;
   }
+  .ng-logo {
+    gap: 7px;
+  }
   .ng-logo b {
     font-size: 21px;
+  }
+  .ng-logo small {
+    letter-spacing: 0.1em;
+  }
+  .ng-find {
+    gap: 8px;
+    padding: 0 16px 0 14px;
   }
   .ng-core {
     inset: 0;
@@ -700,7 +737,7 @@ body:has(.ng) .cursor-ring {
     top: 0;
     width: auto;
     transform: none;
-    padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 26px);
+    padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 66px);
   }
   .ng-h1 {
     font-size: calc((100vw - 2 * var(--gut)) / 11.4);
@@ -712,54 +749,56 @@ body:has(.ng) .cursor-ring {
     letter-spacing: 0.015em;
   }
   .ng-sel {
-    margin-top: auto;
-    width: 100%;
+    display: contents;
   }
   .ng-btns {
+    margin-top: auto;
     gap: 6px;
   }
   .ng-b {
     --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 62px);
     font-size: 12px;
   }
+  /* 輪の真ん中: 状態・数字・入口 */
   .ng-info {
-    order: -1;
-    margin: 0 0 22px;
-    gap: 14px;
+    position: absolute;
+    left: 50%;
+    top: var(--cy);
+    translate: -50% -50%;
+    width: calc(var(--Dout) * 0.6);
+    margin: 0;
+    gap: 7px;
+    min-height: 0;
   }
-  .ng-facts {
-    gap: 4px 20px;
-  }
-  .ng-open small {
-    margin-top: 4px;
-  }
-}
-@media (max-width: 760px) and (min-height: 780px) {
-  .ngp {
-    --sw-gap: 50px;
-  }
-}
-/* 背の低いスマホ（360×640 など）: 数字・ボタンを少し詰めて、輪の写真と重ならないようにする */
-@media (max-width: 760px) and (max-height: 700px) {
-  .ng {
-    --R: min(60vw, calc(var(--H) * 0.27));
-  }
-  .ng-facts b {
-    font-size: 24px;
-  }
-  .ng-info {
-    gap: 10px;
-    margin-bottom: 16px;
-  }
-  .ng-go {
-    min-height: 48px;
-    font-size: 15px;
+  .ng-act {
+    display: contents;
   }
   .ng-state {
-    padding: 8px 13px 8px 11px;
+    order: -1;
+    padding: 6px 12px 6px 10px;
+    font-size: 12px;
+    border-width: 1.5px;
   }
-  .ng-b {
-    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 52px);
+  .ng-facts {
+    gap: 0 12px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .ng-facts b {
+    margin: 0 2px 0 3px;
+    font-size: clamp(19px, calc(var(--Dout) * 0.062), 26px);
+  }
+  .ng-open small {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .ng-go {
+    order: 2;
+    min-height: 44px;
+    padding: 0 16px 0 20px;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -815,8 +854,7 @@ body:has(.ng) .cursor-ring {
   pointer-events: none;
   background-image: var(--ng-grain);
   background-size: 220px;
-  opacity: var(--ng-grain-a);
-  mix-blend-mode: multiply;
+  opacity: var(--ng-grain-a); /* 乗算（mix-blend-mode）は、画面いっぱいの合成が毎フレーム重いので使わない */
 }
 .ng-st-ring {
   position: absolute;
@@ -853,12 +891,14 @@ body:has(.ng) .cursor-ring {
   row-gap: clamp(26px, 3.4vw, 48px);
 }
 .ng-st-p1 {
+  word-break: auto-phrase;
   font: 700 clamp(20px, 2.35vw, 34px) / 1.95 var(--font);
   white-space: pre-line;
   text-wrap: pretty;
   color: var(--ng-ink);
 }
 .ng-st-p2 {
+  word-break: auto-phrase;
   max-width: 36em;
   margin-left: auto;
   font: 500 clamp(15px, 1.5vw, 20px) / 2.1 var(--font);
@@ -924,6 +964,7 @@ body:has(.ng) .cursor-ring {
   background: var(--ng-ph);
   box-shadow:
     0 0 0 clamp(4px, 0.5vw, 8px) var(--ng-rim),
+    0 0 0 calc(clamp(4px, 0.5vw, 8px) + 1.5px) var(--ng-edge),
     0 30px 50px -22px color-mix(in srgb, var(--ng-shade) 72%, transparent);
 }
 .ng-voice .dish img {
@@ -943,6 +984,7 @@ body:has(.ng) .cursor-ring {
   border-color: color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
 }
 .ng-st-p4 {
+  word-break: auto-phrase;
   max-width: 48em;
   font: 700 clamp(18px, 2vw, 27px) / 2 var(--font);
   white-space: pre-line;
@@ -1011,7 +1053,7 @@ body:has(.ng) .cursor-ring {
     align-items: flex-end;
   }
   .ng-voice .t {
-    font-size: clamp(34px, 11.4vw, 56px);
+    font-size: clamp(34px, 12.2vw, 58px);
   }
   .ng-voice .dish,
   .ng-voice.l .dish {
@@ -1034,12 +1076,13 @@ body:has(.ng) .cursor-ring {
 }
 
 /* ═══════════ 色の見比べ（小さな丸い色見本を横に並べる。見比べ用の部品） ═══════════ */
-/* PC: 最初の画面の左下のすみ。スマホ: 見出し・リードと輪のあいだ */
+/* どの幅でも同じ場所: 最初の画面の下端の中央（PC は輪の下の端、スマホは 6 つのボタンの下） */
 .ng-sw {
   position: absolute;
-  left: clamp(10px, 1.2vw, 18px);
-  top: calc(max(100svh, 660px) - 62px);
+  left: 50%;
+  top: calc(var(--H) - 56px - env(safe-area-inset-bottom, 0px));
   z-index: 12;
+  transform: translateX(-50%);
   pointer-events: none;
 }
 .ng-sw ul {
@@ -1093,13 +1136,6 @@ body:has(.ng) .cursor-ring {
 .ng.is-leaving ~ .ng-sw {
   opacity: 0;
   transition: opacity 0.3s ease;
-}
-@media (max-width: 760px) {
-  .ng-sw {
-    left: 50%;
-    top: calc(var(--ltop) - var(--sw-gap, 0px) - 24px);
-    transform: translateX(-50%);
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .ng-swi i {
