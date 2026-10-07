@@ -10,6 +10,16 @@ export type ClothState = {
   gust: number; // 0..1 風の強さ
   mouse: number; // -1..1
   lamp: number; // 0..1 灯りの強さ
+  /** 横にずらす量（css px）。布を横に送るとき（特集記事の巻頭）。省略は 0 */
+  scroll?: number;
+  /** 手を触れている布の番号（0 から）と、その強さ 0..1。省略は無し */
+  hover?: number;
+  hoverAmt?: number;
+  /** 押された布の番号と、持ち上がり量 0..1（裾が竿へ上がる）。省略は無し */
+  sel?: number;
+  selAmt?: number;
+  /** 掛かる動き 0..1（上から順に垂れ下がる）。省略は 1（掛かりきった状態） */
+  intro?: number;
 };
 
 export type ClothLayout = {
@@ -21,6 +31,8 @@ export type ClothLayout = {
   gap: number; // css px
   /** 左右の余白（css px）。布をこの内側の「戸口」にだけ掛ける。省略は 0（画面いっぱい） */
   margin?: number;
+  /** 布 1 枚の幅（css px）。指定すると、枚数に関わらずこの幅（横にはみ出す分は scroll で送る）。省略は画面幅を枚数で割る */
+  panelW?: number;
 };
 
 export type Cloth = {
@@ -29,6 +41,8 @@ export type Cloth = {
   setChars: (chars: string[], family: string, aspect?: number) => void;
   /** 店の屋号用。布1枚ごとに 1〜2 個の字（欧文の語は横組み）を縦に並べる。番号は付けない */
   setPanels: (panels: string[][], family: string, aspect?: number) => void;
+  /** 特集記事の巻頭用。布 1 枚ごとに、上に漢数字、その下に店名（縦書き。長ければ 2〜4 列に割る）、下に印 */
+  setNames: (items: { num: string; name: string }[], family: string, aspect?: number) => void;
   destroy: () => void;
 };
 
@@ -41,6 +55,7 @@ const FS = `
 precision highp float;
 uniform vec2 uRes;
 uniform float uTime, uOpen, uGust, uLamp, uMouse, uN, uScale;
+uniform float uPw, uScroll, uSel, uSelAmt, uHover, uHoverAmt, uIntro;
 uniform vec4 uLayout; // margin, gap, rodY, hemY (device px)
 uniform sampler2D uAtlas;
 
@@ -61,7 +76,7 @@ void main(){
   float margin = uLayout.x, gap = uLayout.y, rodY = uLayout.z, hemY = uLayout.w;
   float H = hemY - rodY;
   float n = uN;
-  float pw = (W - 2.0 * margin - (n - 1.0) * gap) / n;
+  float pw = uPw > 0.0 ? uPw : (W - 2.0 * margin - (n - 1.0) * gap) / n;
   float mid = (n - 1.0) * 0.5;
   vec4 col = vec4(0.0);
 
@@ -70,7 +85,7 @@ void main(){
   float back = exp(-glowR * glowR * 6.5);
   vec3 lightCol = mix(vec3(1.0, 0.82, 0.58), SHU, 0.5);
 
-  for (int k = 0; k < 5; k++) {
+  for (int k = 0; k < 16; k++) {
     if (float(k) >= n) break;
     float idx = (mod(float(k), 2.0) < 0.5) ? floor(float(k) * 0.5) : (n - 1.0 - floor(float(k) * 0.5));
     float ci = idx - mid;
@@ -85,7 +100,7 @@ void main(){
     float e = smoothstep(d, d + 0.60, uOpen);
     float ey = clamp(e + 0.20 * sin(e * 3.14159) * q, 0.0, 1.0);
 
-    float x0 = margin + idx * (pw + gap);
+    float x0 = margin + idx * (pw + gap) - uScroll;
     float wg = pw * 0.34;
     float rk = mid - ac; // 外側ほど小さい
     float stepG = wg * 0.72;
@@ -110,9 +125,21 @@ void main(){
     xl += dx - bil * 0.5;
     xr += dx + bil * 0.5;
 
+    // 布から遠く離れた所は、この布の計算を飛ばす（枚数が多くても重くしない。影は 60px 先ではほぼ消える）
+    float dOut0 = max(xl - frag.x, frag.x - xr);
+    if (dOut0 > 60.0 * s) continue;
+
     // 中央の布は、手で持ち上げるように裾が上がる
     float hem = hemY - H * 0.055 * e;
     if (center) hem = rodY + H * (1.0 - 0.94 * smoothstep(0.0, 0.72, uOpen));
+    // 押された布は裾が竿へ上がる。触れている布は少し持ち上がる。掛かる動きは上から順に垂れ下がる
+    float isSel = step(abs(idx - uSel), 0.5) * step(0.001, uSelAmt);
+    hem = mix(hem, rodY + H * (1.0 - 0.9 * uSelAmt), isSel);
+    float isHov = step(abs(idx - uHover), 0.5);
+    hem -= H * 0.05 * uHoverAmt * isHov;
+    float di = clamp(uIntro * (1.0 + uN * 0.11) - idx * 0.11, 0.0, 1.0);
+    di = di * di * (3.0 - 2.0 * di);
+    hem = rodY + (hem - rodY) * max(di, 0.001);
 
     float wpx = xr - xl;
     float u = (frag.x - xl) / wpx;
@@ -141,8 +168,9 @@ void main(){
 
     // 中央の布は横ひだ（持ち上がって畳まれる）
     float hf = 0.0;
-    if (center) {
-      float ce = smoothstep(0.0, 0.72, uOpen);
+    if (center || isSel > 0.5) {
+      float ce = center ? smoothstep(0.0, 0.72, uOpen) : 0.0;
+      ce = max(ce, isSel * uSelAmt);
       hf = sin(v * 22.0 + 1.3) * 0.5 * ce;
       hh += hf; sl += cos(v * 22.0) * 0.6 * ce;
     }
@@ -165,6 +193,7 @@ void main(){
     vec3 hi = vec3(0.255, 0.215, 0.19);
     vec3 base = dye + (hi - dye) * (L * L * 1.05);
     base *= wvv;
+    base *= 1.0 + 0.2 * uHoverAmt * isHov;
 
     // 字と印（アトラス：R=字, G=印）
     vec2 au = vec2((idx + clamp(u + sl * 0.004, 0.0, 1.0)) / n, clamp(v, 0.0, 1.0));
@@ -223,6 +252,86 @@ function compile(gl: WebGLRenderingContext, type: number, src: string) {
   return sh;
 }
 
+/** 縦書きの 1 字ぶん（回して描く字は、縦書きでは横向きになる長音・波ダッシュなどと、欧文・数字の語） */
+type VTok = { t: string; rot: boolean; em: number };
+
+function vTokens(g: CanvasRenderingContext2D, text: string): VTok[] {
+  const out: VTok[] = [];
+  const re = /[A-Za-z0-9&'.]+|[\s\S]/gu;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    const t = m[0];
+    if (/^[\s・･·\-–—_/／|｜,，.。、!！?？♪★☆&＆「」『』"“”'’（）()]$/.test(t)) continue;
+    if (/^[A-Za-z0-9&'.]+$/.test(t)) out.push({ t, rot: true, em: Math.max(0.6, t.length * 0.56) });
+    else if (/^[ー〜～―]$/.test(t)) out.push({ t, rot: true, em: 1 });
+    else out.push({ t, rot: false, em: 1 });
+  }
+  void g;
+  return out;
+}
+
+/**
+ * 区画 (x, y, w, h) に、縦書きで店名を入れる。列数（1〜4）ごとに「字数を列へ均等に割った」並びを作り、
+ * 区画に収まる最大の字の大きさになる列数を選ぶ。右の列から左へ。
+ */
+function drawVertical(g: CanvasRenderingContext2D, text: string, family: string, x: number, y: number, w: number, h: number, maxSize: number) {
+  const toks = vTokens(g, text);
+  if (toks.length === 0) return;
+  const GAP = 1.06; // 字送り（字の大きさの倍率）
+  const COLW = 1.3; // 列の幅（字の大きさの倍率）
+  const total = toks.reduce((a, t) => a + t.em, 0);
+  const longest = Math.max(...toks.map((t) => t.em));
+  let best: { size: number; columns: VTok[][] } | null = null;
+  for (let cols = 1; cols <= 4; cols++) {
+    const cap = Math.max(Math.ceil(total / cols - 1e-9), longest);
+    const columns: VTok[][] = [[]];
+    let used = 0;
+    for (const t of toks) {
+      if (used + t.em > cap + 1e-9 && columns[columns.length - 1].length > 0) {
+        columns.push([]);
+        used = 0;
+      }
+      columns[columns.length - 1].push(t);
+      used += t.em;
+    }
+    const maxCol = Math.max(...columns.map((c) => c.reduce((a, t) => a + t.em, 0)));
+    const size = Math.min(maxSize, h / (maxCol * GAP), w / (columns.length * COLW));
+    if (!best || size > best.size + 0.5) best = { size, columns };
+  }
+  const { size: raw, columns } = best!;
+  const size = Math.max(12, raw);
+  g.fillStyle = "#f00";
+  g.font = `${Math.round(size)}px ${family}`;
+  const colW = size * COLW;
+  const totalW = columns.length * colW;
+  const right = x + w / 2 + totalW / 2;
+  columns.forEach((col, ci) => {
+    const cx = right - colW * (ci + 0.5);
+    let cy = y;
+    for (const t of col) {
+      const len = t.em * size * GAP;
+      if (t.rot) {
+        g.save();
+        g.translate(cx, cy + len / 2);
+        g.rotate(Math.PI / 2);
+        let sz = size * (/^[A-Za-z0-9&'.]+$/.test(t.t) ? 0.92 : 1);
+        g.font = `${Math.round(sz)}px ${family}`;
+        const mw = g.measureText(t.t).width;
+        if (mw > len * 1.05) {
+          sz = (sz * len * 1.05) / mw;
+          g.font = `${Math.round(sz)}px ${family}`;
+        }
+        g.fillText(t.t, 0, 0);
+        g.restore();
+        g.font = `${Math.round(size)}px ${family}`;
+      } else {
+        g.fillText(t.t, cx, cy + len / 2);
+      }
+      cy += len;
+    }
+  });
+}
+
 const NUM: Record<string, string> = { 麺: "一", 鮨: "二", 肉: "三", 酒: "四", 蕎: "五" };
 
 export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
@@ -250,7 +359,8 @@ export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
 
   const U = (n: string) => gl.getUniformLocation(prog, n);
   const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"),
-    uMouse = U("uMouse"), uN = U("uN"), uScale = U("uScale"), uLayout = U("uLayout"), uAtlas = U("uAtlas");
+    uMouse = U("uMouse"), uN = U("uN"), uScale = U("uScale"), uLayout = U("uLayout"), uAtlas = U("uAtlas"),
+    uPw = U("uPw"), uScroll = U("uScroll"), uSel = U("uSel"), uSelAmt = U("uSelAmt"), uHover = U("uHover"), uHoverAmt = U("uHoverAmt"), uIntro = U("uIntro");
 
   const tex = gl.createTexture();
   gl.activeTexture(gl.TEXTURE0);
@@ -345,6 +455,47 @@ export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, c);
   };
 
+  const setNames = (items: { num: string; name: string }[], family: string, aspect = 3) => {
+    n = Math.max(1, Math.min(16, items.length));
+    const cw = Math.max(128, Math.min(384, Math.floor(4096 / n)));
+    const ch = Math.round(cw * Math.min(6.2, Math.max(1.4, aspect)));
+    const c = document.createElement("canvas");
+    c.width = cw * n;
+    c.height = ch;
+    const g = c.getContext("2d")!;
+    g.fillStyle = "#000";
+    g.fillRect(0, 0, c.width, c.height);
+    g.textAlign = "center";
+    g.textBaseline = "middle";
+    for (let i = 0; i < n; i++) {
+      const cx = i * cw + cw / 2;
+      const it = items[i];
+      // 漢数字（上）。2 字以上（十一など）は縦に重ねる
+      const nums = Array.from(it.num);
+      const nzH = ch * 0.105;
+      const nsz = Math.min(cw * 0.3, (nzH / nums.length) * 0.95);
+      g.fillStyle = "#f00";
+      g.font = `${Math.round(nsz)}px ${family}`;
+      nums.forEach((t, j) => g.fillText(t, cx, ch * 0.062 + (nzH / nums.length) * (j + 0.5)));
+      // 店名（縦書き）
+      drawVertical(g, it.name, family, i * cw + cw * 0.07, ch * 0.185, cw * 0.86, ch * 0.57, cw * 0.4);
+      // 印（朱）：円の中に「輪」を白抜き
+      const rr = Math.min(cw * 0.125, ch * 0.06);
+      g.fillStyle = "#0f0";
+      g.beginPath();
+      g.arc(cx, ch * 0.865, rr, 0, Math.PI * 2);
+      g.fill();
+      g.fillStyle = "#000";
+      g.font = `${Math.round(rr * 1.36)}px ${family}`;
+      g.fillText("輪", cx, ch * 0.868);
+    }
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, 0);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 0);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, c);
+  };
+
   const resize = (l: ClothLayout) => {
     layout = l;
     const w = Math.round(l.cssW * l.dpr), h = Math.round(l.cssH * l.dpr);
@@ -368,6 +519,13 @@ export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
     gl.uniform1f(uN, n);
     gl.uniform1f(uScale, l.dpr);
     gl.uniform4f(uLayout, (l.margin ?? 0) * l.dpr, l.gap * l.dpr, l.rodY * l.dpr, l.hemY * l.dpr);
+    gl.uniform1f(uPw, (l.panelW ?? 0) * l.dpr);
+    gl.uniform1f(uScroll, (s.scroll ?? 0) * l.dpr);
+    gl.uniform1f(uSel, s.sel ?? -1);
+    gl.uniform1f(uSelAmt, s.selAmt ?? 0);
+    gl.uniform1f(uHover, s.hover ?? -1);
+    gl.uniform1f(uHoverAmt, s.hoverAmt ?? 0);
+    gl.uniform1f(uIntro, s.intro ?? 1);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
 
@@ -382,5 +540,5 @@ export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
     }, 0);
   };
 
-  return { render, resize, setChars, setPanels, destroy };
+  return { render, resize, setChars, setPanels, setNames, destroy };
 }

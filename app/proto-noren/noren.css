@@ -147,8 +147,15 @@
   .vN-ft-noren a{height:104px}
 }
 @media (max-width:420px){
-  .vN-nav .ja{font-size:12.5px;letter-spacing:.14em}
-  .vN-nav a{padding:0 7px}
+  .vN-logo .ja{font-size:17px;letter-spacing:.12em;white-space:nowrap}
+  .vN-nav .ja{font-size:12.5px;letter-spacing:.1em;padding-left:.1em;white-space:nowrap}
+  .vN-nav a{padding:0 6px}
+}
+@media (max-width:370px){
+  .vN-hd{padding-left:14px;padding-right:8px}
+  .vN-logo .ja{font-size:15px;letter-spacing:.06em}
+  .vN-nav .ja{font-size:12px;letter-spacing:.04em}
+  .vN-nav a{padding:0 4px}
 }
 
 @media (prefers-reduced-motion:reduce){

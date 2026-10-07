@@ -22,14 +22,14 @@ export function nameCore(name: string): string {
 const LATIN_RUN = /[A-Za-z0-9&'.]+/y;
 
 /** 字に分ける。欧文・数字の連なりは 1 つの語（横組み）として扱う。記号・長音の前後の「・」などは落とす */
-export function nameTokens(core: string): string[] {
+export function nameTokens(core: string, maxLatin = 12): string[] {
   const out: string[] = [];
   let i = 0;
   while (i < core.length) {
     LATIN_RUN.lastIndex = i;
     const m = LATIN_RUN.exec(core);
     if (m) {
-      out.push(m[0].slice(0, 12));
+      out.push(m[0].slice(0, maxLatin));
       i += m[0].length;
       continue;
     }

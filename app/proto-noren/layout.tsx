@@ -15,7 +15,9 @@ const NOSCRIPT_CSS =
   ".vS-hero{--open:1!important;--ex:1!important}" +
   ".vS-door{opacity:1!important}.vS-cover,.vS-cue,.vS-cloth,.vS-lan{display:none!important}" +
   ".vN-hd{background:rgba(15,12,10,.94)!important}" +
-  ".vF-cap{clip-path:none!important}.vF-roller{display:none!important}.vF-stamp{opacity:.8!important;transform:rotate(-6deg)!important}";
+  ".vF-stamp{opacity:.8!important;transform:rotate(-6deg)!important}" +
+  ".vF-nr-fb{opacity:1!important}.vF-rodline{opacity:1!important}.vF-cloth,.vF-idx,.vF-prog{display:none!important}" +
+  ".vH-door{--lift:1!important;--ex:1!important}";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   assertPreviewOrLocal();
