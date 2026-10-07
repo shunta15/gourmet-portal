@@ -1,70 +1,127 @@
 import type { CSSProperties } from "react";
 import type { DishPhoto } from "@/lib/portal/hubs/nigiwai/photos";
-import { P1, P2, P4, VOICE1, VOICE2 } from "./copy";
+import { P1_LINES, P2, P3 } from "./copy";
 import StatementMotion from "./StatementMotion";
 
 /**
- * 下のブロック。コンセプト 3 の本文の全文を、朱の地に生成りの白で組む（サーバー）。
- * 2 つの声（本文の第 3 段落）は画面の主役の大きさで、料理の写真（丸）のそばに置く。写真は飾り（alt なし）。
- * 画面に入ると、声が立ち上がり、写真が回りながら集まる（StatementMotion。動きを減らす設定では、はじめから出ている）。
+ * 下のブロック。コンセプトの本文の全文（COPY-FINAL.md）を、最初の画面と同じ世界で組む（サーバー）。
+ *
+ * 主役は第 1 段落の 3 行。「店と出会う → 人とつながる → 輪が広がる」を、3 つの場面にして、絵でも順に分かるようにする。
+ *   1 店と出会う。 … 1 枚の写真（店の窓が写る 1 皿）を、細い輪が囲む。
+ *   2 人とつながる。… 写真が 3 枚になり、細い線でつながって、小さな輪になる。
+ *   3 輪が広がる。 … 写真が輪になって回り、輪が外へ広がっていく（最初の画面の輪と同じ姿）。
+ * 第 2 段落は、場面のあとに静かに置く。第 3 段落（結び）は、輪に囲まれて、はっきり読める大きさで置く。
+ * 写真は飾り（alt なし・読み上げの外）。言葉は COPY-FINAL.md のとおり。1 文字も足さない（番号・飾りの語を付けない）。
+ * 第 1 段落の textContent は「3 行 + 改行（\n）」で、COPY-FINAL.md の段落と同じになる（場面の絵は文字を持たない）。
+ * 画面に入ると、場面が順に立ち上がる（StatementMotion。動きを減らす設定・スクリプトなしでは、はじめから出ている）。
  */
 
-const Voice = ({ text, side, photo, n, at }: { text: string; side: "l" | "r"; photo?: DishPhoto; n: number; at: number }) => {
-  const q = (t: string) => <span className="q">{t}</span>;
-  const inner = text.slice(1, -1);
-  return (
-    <span className={`ng-voice v${n} ${side}`} data-rv="">
-      {photo && (
-        <span className="dish" aria-hidden="true">
-          <i className="rg" />
-          <i className="rg" />
-          <span className="ph">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photo.src} srcSet={photo.srcSet} sizes="(max-width: 760px) 44vw, 24vw" alt="" loading="lazy" decoding="async" draggable={false} style={{ objectPosition: photo.pos }} />
-          </span>
-        </span>
-      )}
-      <span className="t">
-        <span className="ln">
-          {q(text[0])}
-          {inner.slice(0, at)}
-        </span>
-        <span className="ln">
-          {inner.slice(at)}
-          {q(text[text.length - 1])}
-        </span>
+const SIZES = "(max-width: 760px) 44vw, 24vw";
+
+const Pic = ({ p, x, y, s, k }: { p?: DishPhoto; x: number; y: number; s: number; k: number }) =>
+  p ? (
+    <span className="pic" style={{ ["--x" as string]: `${x}%`, ["--y" as string]: `${y}%`, ["--s" as string]: `${s}%`, ["--k" as string]: k } as CSSProperties}>
+      <span className="ph">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={p.src} srcSet={p.srcSet} sizes={SIZES} alt="" loading="lazy" decoding="async" draggable={false} style={{ objectPosition: p.pos }} />
       </span>
     </span>
-  );
-};
+  ) : null;
 
-export default function Statement({ side }: { side: DishPhoto[] }) {
+/** 句点は、最初の画面の見出しと同じ差し色にする（textContent は変わらない） */
+const Line = ({ text }: { text: string }) => (
+  <span className="ln">
+    <span className="tx">
+      {text.slice(0, -1)}
+      <i className="mk">{text.slice(-1)}</i>
+    </span>
+  </span>
+);
+
+/** 円周上の点（中心 50,50。角度は上から時計まわり）。決まった値なので、サーバーとクライアントで同じ */
+const around = (n: number, r: number, off = 0) =>
+  Array.from({ length: n }, (_, i) => {
+    const a = ((off + (360 / n) * i) * Math.PI) / 180;
+    return { x: Number((50 + r * Math.sin(a)).toFixed(2)), y: Number((50 - r * Math.cos(a)).toFixed(2)) };
+  });
+
+/** 場面 3 の輪（10 枚）の大きさ（直径の %）。隣どうしで少しずつ違える */
+const RING_S = [24, 19, 22.5, 20, 25, 19.5, 23, 20, 24, 19.5];
+
+export default function Statement({ ring, side }: { ring: DishPhoto[]; side: DishPhoto[] }) {
+  const all = [...ring, ...side];
+  // 場面に使う写真（コンタクトシートで 1 枚ずつ見て選んだ）。0〜15 は輪の 16 枚、16・17 は店の窓が写る洋食と卓上のだし巻き玉子
+  const ph = (i: number) => all[i];
+  const crab = ph(16); // 場面 1 の 1 枚（店の窓が写る）。場面 2・3 にも出る（同じ 1 皿が、つながり、輪の一枚になる）
+  const trio = [crab, ph(3), ph(5)]; // 場面 2: 1 枚目は場面 1 と同じ
+  const ringOrder = [16, 3, 6, 0, 5, 10, 13, 2, 11, 9]; // 場面 3 の輪（時計まわり）。場面 2 の 3 枚（16・3・5）が、輪の中にもいる
+  const pts = around(ringOrder.length, 37, 0);
+
   return (
     <section className="ng-st" aria-label="マチノワについて">
       <StatementMotion />
-      <div className="ng-st-ring" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-      </div>
       <div className="ng-st-in">
-        <div className="ng-st-lead">
-          <p className="ng-st-p1" data-rv="">
-            {P1}
-          </p>
-          <p className="ng-st-p2" data-rv="">
-            {P2}
+        <p className="ng-st-p1">
+          {/* 場面 1: 店と出会う */}
+          <span className="act a1" data-rv="">
+            <Line text={P1_LINES[0]} />
+            <span className="scene" aria-hidden="true">
+              <i className="orb o1" />
+              <i className="orb o2" />
+              <i className="orb o0" />
+              <Pic p={crab} x={50} y={50} s={60} k={0} />
+            </span>
+          </span>
+          {"\n"}
+          {/* 場面 2: 人とつながる */}
+          <span className="act a2" data-rv="">
+            <Line text={P1_LINES[1]} />
+            <span className="scene" aria-hidden="true">
+              <svg className="net" viewBox="0 0 100 100" focusable="false">
+                <path pathLength="1" style={{ ["--j" as string]: 0 } as CSSProperties} d="M18.8 73 A36 36 0 0 1 50 19" />
+                <path pathLength="1" style={{ ["--j" as string]: 1 } as CSSProperties} d="M50 19 A36 36 0 0 1 81.2 73" />
+                <path pathLength="1" style={{ ["--j" as string]: 2 } as CSSProperties} d="M81.2 73 A36 36 0 0 1 18.8 73" />
+              </svg>
+              <Pic p={trio[0]} x={18.8} y={73} s={29} k={0} />
+              <Pic p={trio[1]} x={50} y={19} s={33} k={1} />
+              <Pic p={trio[2]} x={81.2} y={73} s={26} k={2} />
+            </span>
+          </span>
+          {"\n"}
+          {/* 場面 3: 輪が広がる */}
+          <span className="act a3" data-rv="" data-live="">
+            <Line text={P1_LINES[2]} />
+            <span className="scene" aria-hidden="true">
+              <i className="rp" />
+              <i className="rp" />
+              <i className="rp" />
+              <i className="orb o3" />
+              <i className="orb o4" />
+              <span className="spin">
+                {ringOrder.map((n, i) => (
+                  <Pic key={n} p={ph(n)} x={pts[i].x} y={pts[i].y} s={RING_S[i]} k={i} />
+                ))}
+              </span>
+            </span>
+          </span>
+        </p>
+
+        <p className="ng-st-p2" data-rv="">
+          {P2}
+        </p>
+
+        <div className="ng-st-end">
+          <span className="halo" aria-hidden="true">
+            <i />
+            <i />
+            <i />
+          </span>
+          <p className="ng-st-p3" data-rv="">
+            {P3}
           </p>
         </div>
-        <p className="ng-st-p3" style={{ ["--n" as string]: 2 } as CSSProperties}>
-          <Voice text={VOICE1} side="l" photo={side[0]} n={1} at={6} />
-          {"\n"}
-          <Voice text={VOICE2} side="r" photo={side[1]} n={2} at={5} />
-        </p>
-        <p className="ng-st-p4" data-rv="">
-          {P4}
-        </p>
       </div>
+      <i className="ng-st-seam" aria-hidden="true" />
     </section>
   );
 }
