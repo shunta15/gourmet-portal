@@ -40,8 +40,6 @@ interface RestaurantDetailProps {
   social?: ShopLink[];
   /** 共有する URL（そのページの正規 URL。lib/portal/share.ts の shareTarget）。portalLive のときだけ使う */
   shareUrl?: string;
-  /** プレビュー・ローカルだけ true。行動ボタンの 3 案を見比べる切替を出す（サーバーが渡す。portalLive のときだけ使う） */
-  previewTools?: boolean;
 }
 
 export default function RestaurantDetail({
@@ -54,7 +52,6 @@ export default function RestaurantDetail({
   portalLive = false,
   social = [],
   shareUrl = "",
-  previewTools = false,
 }: RestaurantDetailProps) {
   useReveal();
   // 送客の計測（lib/portal/track.ts）。OFF では何も送らず、track.ts も読み込まない。
@@ -283,7 +280,6 @@ export default function RestaurantDetail({
                 page={`/restaurant/${r.id}`}
                 shareUrl={shareUrl}
                 shareText={`${r.name}｜マチノワ`}
-                previewTools={previewTools}
               />
             </Suspense>
           ) : (

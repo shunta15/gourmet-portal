@@ -59,17 +59,11 @@ export const CSS_BASE = `
 @keyframes sv-bump{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
 .sv-fab:focus-visible{outline:3px solid var(--sv-red);outline-offset:3px}
 @media (hover:hover){.sv-fab:hover{background:var(--sv-ink);color:var(--sv-paper)} .sv-fab:hover b{background:var(--sv-paper);color:var(--sv-ink)}}
-/* 店ページ案3のスマホ下の固定バー（.sa-h-bar）が出ている間は、その上に逃げる。ボタン案の切替が開いている間は隠す */
-@media (max-width:768px){
-  body:has(.sa-h-bar[data-show="1"]) .sv-fab{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
-  body:has(.sa-pv[data-open="1"]) .sv-fab{visibility:hidden}
-}
 
 /* 保存した・外した・満杯のお知らせ（読み上げも兼ねる） */
 .sv-toast{position:fixed;left:12px;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:90;width:max-content;max-width:min(520px,calc(100vw - 100px));transform:translateY(8px);padding:12px 16px;background:var(--sv-ink);color:var(--sv-paper);font:500 13.5px/1.7 var(--sv-sans);letter-spacing:.04em;text-wrap:balance;word-break:auto-phrase;opacity:0;pointer-events:none;transition:opacity .3s,transform .4s var(--sv-ease),bottom .5s var(--sv-ease)}
 .sv-toast[data-on="1"]{opacity:1;transform:none}
 .sv-toast:empty{padding:0}
-@media (max-width:768px){body:has(.sa-h-bar[data-show="1"]) .sv-toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}}
 @media (prefers-reduced-motion:reduce){
   .sv-b,.sv-card .sv-disc,.sv-host .sv-b.sv-card,.sv-hero,.sv-inline,.sv-fab,.sv-fab b,.sv-toast{transition:none}
   .sv-b[data-pop="1"] .sv-ic,.sv-fab b[data-bump="1"]{animation:none}

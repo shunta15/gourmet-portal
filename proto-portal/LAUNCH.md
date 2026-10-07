@@ -293,7 +293,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 - **駅と店の対応・写真の生成物は自動では増えない**（1-B）。
 - **新業種は掲載 0 件**。総合トップ（にぎわいの輪）では、グルメだけが「掲載中」（実数を出す）。ビューティー・ボディケアは「掲載準備中」で、「ページを見る」でページへ入れる（noindex）。ペット・おでかけ・ステイは「掲載準備中」と出るだけで、リンクにしない（`<button>`。押しても移動しない）。フッターの業種の一覧には 6 業種ともリンクが残る。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
 - **総合トップは「にぎわいの輪」（2 色ランダム）**: 配色は sometsuke（白磁と藍）・akagane（濃紺と銅）の 2 色で、開くたびにランダム（半々）。ページ自体はどちらの色でも同じ HTML（静的に配信される）。言葉は `proto-portal/hub-concepts/COPY-FINAL.md`（発注者の決定）で、`components/portal/hubs/nigiwai/copy.ts` に一字一句写してある。言葉を変えるときは、COPY-FINAL.md・`copy.ts`・`app/portal-home/page.tsx` の title/description・共有画像 `HomeCard`（`components/portal/og/cards.tsx`）を揃え、`check-hub.mjs` で突き合わせる。title はキャッチコピーそのまま（`buildMetadata` は接尾辞を足さない。ルートの `app/layout.tsx` の title は文字列で、template ではない）。
-- **色を固定して見るルートは、プレビューとローカルだけ**: `/proto-hub/nigiwai`（`/` と同じもの）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。判定は `lib/portal/launch.ts` の `isPreviewOrLocal()`（`VERCEL_ENV=preview` または `NODE_ENV!=="production"`。店ページの「ボタン案」の切替 `previewTools` と同じ）で、`app/proto-hub/layout.tsx` が 404 にする。**本番（`VERCEL_ENV=production`）は公開スイッチ ON でも 404**。ローカルでも `next build` → `next start`（`NODE_ENV=production`）では開けない（`next dev` では開ける）。`next.config.ts` の `PORTAL_OFF_SOURCES` の `/proto-hub/:path*`・`isPortalPath.ts`・`compare-off.mjs` の `PORTAL_404`（`/proto-hub/nigiwai`）は、OFF の 404 のために残してある。
+- **色を固定して見るルートは、プレビューとローカルだけ**: `/proto-hub/nigiwai`（`/` と同じもの）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。判定は `lib/portal/launch.ts` の `isPreviewOrLocal()`（`VERCEL_ENV=preview` または `NODE_ENV!=="production"`）で、`app/proto-hub/layout.tsx` が 404 にする。**本番（`VERCEL_ENV=production`）は公開スイッチ ON でも 404**。ローカルでも `next build` → `next start`（`NODE_ENV=production`）では開けない（`next dev` では開ける）。`next.config.ts` の `PORTAL_OFF_SOURCES` の `/proto-hub/:path*`・`isPortalPath.ts`・`compare-off.mjs` の `PORTAL_404`（`/proto-hub/nigiwai`）は、OFF の 404 のために残してある。
 - **総合トップの検査を自動化するときの注意**: 色は `Math.random` の差し替えで固定しない（値が固定されると、ページの React のイベントが動かなくなる。2026-10-07 に確認）。ページの抽選スクリプトが読む `history.state.ngTheme` を、ページのスクリプトより先に `addInitScript` で入れて固定する（`check-hub.mjs`・`check-keyboard.mjs`・`check-contrast.mjs` はそうしている）。
 
 ## 付録: ファイル
@@ -334,11 +334,11 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
   店ページが初回から新しい部品で出ること。本番 `https://machinowa.tokyo/find` は 404 のまま。
 - ビルドログの `fetch failed` / `fallback to data.ts` が 0 であること（Supabase のタイムアウトで予備データのページが混ざる）。
 
-## 付録: 店ページの行動ボタン 6案（2026-10-04）
-- 仕様 `proto-portal/SNS-BUTTONS-BRIEF.md`（案1 罫・案2 印・案3 箱）と `SNS-BUTTONS-BRIEF-2.md`（案4 玉・案5 駒・案6 帯。アイコンと短いラベルだけの簡潔版）。
-  部品 `components/portal/ShopActions*.tsx`（案4〜6 は `ShopActionsTama/Koma/Obi.tsx`、共通部品 `ShopActionsSlim.tsx`、CSS は `shopActionsCss2.ts`）、`lib/portal/shopActions.ts`。見比べ `/proto-sns`（OFF は 404）。
-- 店ページの隅の切替「ボタン案 1〜6」は、プレビューとローカルだけ（`previewTools`。スマホでは「案 N」に畳む）。URL の `?sns=1〜6` でも切り替わる。既定は案1。
-- 案を採用したら: 残り5案の部品と `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行を消す。
+## 付録: 店ページの行動ボタン「玉」（2026-10-07 に 6 案から 1 案に決定）
+- 公開スイッチ ON のときだけ。店ページ（`/restaurant/[id]`）の予約・電話・地図・SNS・街と地域の他の店・共有を、丸みのあるカプセル型のボタン（「玉」。左の丸にアイコン、右に短いラベル。主役の予約または電話だけ朱）で出す。発注者が 6 案（罫・印・箱・玉・駒・帯）の見比べから案4「玉」を選んだ。
+- **どこに何があるか**: `components/portal/ShopActions.tsx`（入口。`RestaurantDetail` が `React.lazy` で読む。CSS を `<style href precedence>` で出す）→ `ShopActionsTama.tsx`（ボタンの並び・脇役リンク・共有）・`ShopActionsParts.tsx`（自作アイコン・リンク 1 つ分 `Act`・共有の動き `useShare`・現れ方 `useEnter`）・`shopActionsCss.ts`（CSS。`.sa-` 接頭辞）。店の事実 → ボタンの一覧に直す純関数は `lib/portal/shopActions.ts`（値がある項目だけ。補足の @アカウント名・電話番号・住所・座標は出さない）。仕様は `proto-portal/SNS-BUTTONS-BRIEF-2.md`（案4〜6）。
+- **整理したもの（2026-10-07）**: 残り 5 案の部品（罫・印・箱・駒・帯）と、見比べページ `app/proto-sns`、`next.config.ts` の `/proto-sns` の行、`compare-off.mjs` の同じ行、店ページの隅の切替「ボタン案 1〜6」（`previewTools`）と URL の `?sns=` での切替、`.sa-pv`・`.sa-h-bar` の CSS（`saveListCss.ts` の逃げ）を消した。`/proto-sns` は ON でも OFF でも、ルートが無いので標準の 404。`SNS-BUTTONS-BRIEF.md`（案1〜3）と `SNS-BUTTONS-BRIEF-2.md` は、決める前の設計の記録として残してある（`SNS-BUTTONS-BRIEF.md` の案は採用されていない）。
+- **整理のとき確かめたこと**: 整理の前後で、店ページ 5 軒（`r21`・`r06`・`r23`・`r01`・`r299`）×（PC 1280・スマホ 375）の `.sa` の HTML（属性の並びを除く）・各ボタンの位置と大きさが、すべて一致した。スマホ（幅 768px 以下）の上の余白 40px は、これまで案1 の CSS が先に読まれて効いていたものを `.sa` に書き写したもの（見た目はこれまでの案4 のまま）。
 - **未実施**: main との全ページ比較（1-A の `compare-off.mjs static / live`）。取り込み前に必ず実行する。
 
 ## 付録: こだわり条件で絞る（2026-10-05・試作）
@@ -360,7 +360,7 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **候補リスト（`/list`）は、表示できない店を自動で外さない**: 店のデータ（`/list-data/{ID}`）は作成時に静的に作るので、プレビューの作成後に載った店は 404 になる。これを保存から消すと、保存したのに消えて見える。自分のリストでは「この店はいま表示できません」の行で残し、手で「外す」だけできる。共有URLの表示では、表示できない店は並べず、件数だけ知らせる。
 - **保存ボタン（「候補に入れる」）の置き場所**: 店ページ・駅／ジャンル×駅／都道府県／業種ページの店カード・`/search` の結果カード（こだわり条件つき。カード全体のリンクの隅に重ねる）・`/photos` の大きな表示（`<dialog>` の中）・`/list` の共有リスト。
 - **`/search` の結果カードの札**: 各店に当てはまる条件を最大4つ。選んでいる条件を先頭に（生成りのベタ＋左に朱の線）、続けて予算の帯・当てはまる店が少ない条件の順・いま営業中。設備・特徴は必ず「〜の記載あり」。
-- **`crawl.mjs` の「SNS・共有ボタン」の検査**は、店ページの行動ボタン `ShopActions`（6案。どの案でも `role="group" aria-label="この店を共有"` と、行の `data-sa-id`）に合わせてある。旧部品（`ShopLinks`・`ShareButtons` の `data-shop-link`）は店ページには出ない（総合サイトのページの共有は今も `ShareButtons`）。
+- **`crawl.mjs` の「SNS・共有ボタン」の検査**は、店ページの行動ボタン `ShopActions`（`role="group" aria-label="この店を共有"` と、行の `data-sa-id`）に合わせてある。旧部品（`ShopLinks`・`ShareButtons` の `data-shop-link`）は店ページには出ない（総合サイトのページの共有は今も `ShareButtons`）。
 
 ## 付録: おまかせ提案 /omakase（2026-10-06・試作）
 - 仕様・結び付けの表・数えた結果 `proto-portal/OMAKASE-COVERAGE.md`。4 つの質問（どこで／誰と／予算／気分）に答えると、条件に合う店を 3 軒ほど出す（公開スイッチ ON のときだけ。OFF は `/omakase` が 404）。

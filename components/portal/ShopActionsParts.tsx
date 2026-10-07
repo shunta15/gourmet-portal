@@ -1,9 +1,9 @@
 "use client";
 /**
- * 行動ボタン（ShopActions）の3案で共有する部品: 自作アイコン・リンク1つ分（Act）・共有の動き・現れ方。
+ * 行動ボタン（ShopActions）の部品: 自作アイコン・リンク1つ分（Act）・共有の動き・現れ方。
  * 総合サイトの公開スイッチが ON のときだけ、RestaurantDetail の React.lazy から読み込まれる。
  */
-import { useCallback, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { shareUrls } from "@/lib/portal/share";
 import { trackTap, type TapKind } from "@/lib/portal/track";
 import type { IconKey, PrimaryAction } from "@/lib/portal/shopActions";
@@ -88,25 +88,12 @@ const ICONS: Record<IconKey, ReactNode> = {
       <path d="M13.8 10.2a3.6 3.6 0 0 0-5 0l-3.1 3.1a3.6 3.6 0 0 0 5 5l1.1-1.1" />
     </>
   ),
-  copy: (
-    <>
-      <path d="M10.2 13.8a3.6 3.6 0 0 0 5 0l3.1-3.1a3.6 3.6 0 0 0-5-5l-1.1 1.1" />
-      <path d="M13.8 10.2a3.6 3.6 0 0 0-5 0l-3.1 3.1a3.6 3.6 0 0 0 5 5l1.1-1.1" />
-    </>
-  ),
   check: <path d="m5 12.5 4.5 4.5L19 7.5" />,
-  search: (
-    <>
-      <circle cx="10.5" cy="10.5" r="6.2" />
-      <path d="m15.2 15.2 5 5" />
-    </>
-  ),
 };
 
-export function SaIcon({ name, size = 24, className }: { name: IconKey; size?: number; className?: string }) {
+export function SaIcon({ name, size = 24 }: { name: IconKey; size?: number }) {
   return (
     <svg
-      className={className}
       viewBox="0 0 24 24"
       width={size}
       height={size}
@@ -123,11 +110,10 @@ export function SaIcon({ name, size = 24, className }: { name: IconKey; size?: n
   );
 }
 
-/** 矢印（→）。回したり重ねて滑らせたりするのは CSS 側 */
-export function SaArrow({ className }: { className?: string }) {
+/** 矢印（→）。向きを変えるのは CSS 側 */
+export function SaArrow() {
   return (
     <svg
-      className={className}
       viewBox="0 0 24 24"
       width="24"
       height="24"
@@ -144,61 +130,36 @@ export function SaArrow({ className }: { className?: string }) {
   );
 }
 
-/** 訪問済みの印（:visited でも変えられる stroke だけで出し分ける。リンクを開いたことがあるときだけ色が付く） */
-export function SaVisit() {
-  return (
-    <svg className="sa-visit" viewBox="0 0 24 24" width="14" height="14" fill="none" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-      <path d="m5 12.5 4.5 4.5L19 7.5" />
-    </svg>
-  );
-}
-
 export function ExtHint() {
   return <span className="sa-vh">（外部サイトが新しいタブで開きます）</span>;
 }
 
-/* ---------- リンク1つ分。見本（sample）のときはリンクにせず、押せない状態にする ---------- */
+/* ---------- リンク1つ分 ---------- */
 
 interface ActProps {
   a: PrimaryAction;
   storeId: string;
   page: string;
-  sample?: boolean;
   className: string;
-  style?: CSSProperties;
   children: ReactNode;
-  onTap?: (el: HTMLElement) => void;
-  /** 読み上げ用の名前（案4〜6。見た目の補足を出さない代わりに、行き先の種類を入れる）。外部リンクなら「新しいタブ」の案内を足す */
-  aria?: string;
-  /** サイト共通のカーソルの「ホット」な大きい輪（行き先の字が入る）を出さない。小さなボタンでは輪がラベルやアイコンを覆うため（案4〜6） */
-  noCursor?: boolean;
+  /** 読み上げ用の名前（見た目の補足を出さない代わりに、行き先の種類を入れる）。外部リンクなら「新しいタブ」の案内を足す */
+  aria: string;
 }
 
-export function Act({ a, storeId, page, sample, className, style, children, onTap, aria, noCursor }: ActProps) {
-  if (sample) {
-    return (
-      <span className={`${className} sa-sample`} style={style} aria-disabled="true" data-sa-id={a.id}>
-        {children}
-      </span>
-    );
-  }
+export function Act({ a, storeId, page, className, children, aria }: ActProps) {
   return (
     <a
       href={a.href}
       {...(a.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={className}
-      style={style}
-      aria-label={aria ? `${aria}${a.external ? "（外部サイトが新しいタブで開きます）" : ""}` : undefined}
-      data-cursor={noCursor ? undefined : a.cursor}
+      aria-label={`${aria}${a.external ? "（外部サイトが新しいタブで開きます）" : ""}`}
       data-sa-id={a.id}
       data-dir={a.href.startsWith("#") ? "down" : undefined}
-      onClick={(e) => {
+      onClick={() => {
         if (a.tap) trackTap({ storeId, kind: a.tap, page });
-        onTap?.(e.currentTarget);
       }}
     >
       {children}
-      {a.external && !aria && <ExtHint />}
     </a>
   );
 }
@@ -213,7 +174,7 @@ export interface ShareItem {
   tap: TapKind;
 }
 
-export function useShare({ url, text, storeId, page, sample }: { url: string; text: string; storeId: string; page: string; sample?: boolean }) {
+export function useShare({ url, text, storeId, page }: { url: string; text: string; storeId: string; page: string }) {
   const [copied, setCopied] = useState(false);
   const [msg, setMsg] = useState("");
   const [manual, setManual] = useState(false);
@@ -244,7 +205,6 @@ export function useShare({ url, text, storeId, page, sample }: { url: string; te
   const tap = useCallback((kind: TapKind) => trackTap({ storeId, kind, page }), [storeId, page]);
 
   const copy = useCallback(async () => {
-    if (sample) return;
     tap("share-copy");
     if (timer.current) clearTimeout(timer.current);
     try {
@@ -260,7 +220,7 @@ export function useShare({ url, text, storeId, page, sample }: { url: string; te
       setManual(true);
       setMsg("コピーできませんでした。表示したURLを選択しました。コピーしてお使いください。");
     }
-  }, [sample, tap, url]);
+  }, [tap, url]);
 
   return { items, tap, copy, copied, msg, manual, input, url };
 }
@@ -303,7 +263,7 @@ export function prefersReducedMotion(): boolean {
  * root に data-enter="pre"（隠す）→ 見えたら "in"（現れる）を付ける。値は DOM にだけ書く（再描画しない）。
  * すでに画面に見えているときは隠さずにそのまま出す（ちらつかせない）。
  */
-export function useEnter(deps: unknown[]) {
+export function useEnter() {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
@@ -331,7 +291,6 @@ export function useEnter(deps: unknown[]) {
       io.disconnect();
       window.clearTimeout(fb);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps);
+  }, []);
   return ref;
 }

@@ -122,7 +122,7 @@ console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCan
 // ───── SNS・共有ボタン・サイト内検索（2026-10-04） ─────
 {
   const decC = (x) => { try { return decodeURIComponent(x) } catch { return x } };
-  // 共有ボタン: 店ページは ShopActions（行動ボタン6案。どの案でも role="group" aria-label="この店を共有" の中に LINE・X・Facebook のリンクとコピーのボタン）、
+  // 共有ボタン: 店ページは ShopActions（行動ボタン「玉」。role="group" aria-label="この店を共有" の中に LINE・X・Facebook のリンクとコピーのボタン）、
   // それ以外のページは ShareButtons（data-share）。店の SNS・公式サイトは ShopActions の行（data-sa-id="instagram" など。値がある項目だけ）
   const snsPages = ['/restaurant/r21','/restaurant/r204','/restaurant/r23','/restaurant/r01','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/area/tokyo','/videos/sv-nazatu-1'];
   const kindOfShareHref = (href) => /^https:\/\/social-plugins\.line\.me\//.test(href) ? 'line' : /^https:\/\/twitter\.com\/intent\/tweet/.test(href) ? 'x' : /^https:\/\/www\.facebook\.com\/sharer\//.test(href) ? 'facebook' : null;

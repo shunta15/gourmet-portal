@@ -33,7 +33,7 @@ export function assertPortalLive(): void {
 
 /**
  * プレビュー（Vercel の VERCEL_ENV=preview）またはローカル開発（NODE_ENV が production でない）か。
- * 店ページの「ボタン案 1〜6」の切替（previewTools。app/restaurant/[id]/page.tsx）と同じ判定。公開スイッチ ON の本番（VERCEL_ENV=production）は false。
+ * 色を固定して見るルート（app/proto-hub/layout.tsx）の判定。公開スイッチ ON の本番（VERCEL_ENV=production）は false。
  * ローカルの `next build` → `next start` は NODE_ENV=production なので false（`next dev` では true）。ビルド時（静的ページ）またはリクエスト時にサーバーで評価する。
  */
 export function isPreviewOrLocal(): boolean {
