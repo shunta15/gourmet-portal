@@ -16,10 +16,11 @@ import { HAMON_H1, HAMON_LEAD } from "./copy";
  *   輪 : さらに外へ、太さと濃さに差のある青い輪が、画面の外へ出ていく（外へ行くほど間隔は広く、線は細く薄く）
  * 数秒ごとに真ん中の店が替わり、しずくが落ちたように輪が外へ広がる。画面のどこを押しても、そこから輪が広がる。
  * 入るときは、押した所から輪が広がって、青が画面を満たす。
+ * 店は、前・次・止めるのボタン、左右の矢印キー、横のスワイプでも替えられる。
  *
  * 描画: 外側の輪は Canvas 2D（rAF は画面に見えていて、タブが前のときだけ回す。React の state は店が替わるときと選んだときだけ書く）。
  *   写真・街の輪・見出しは CSS の transform / opacity / clip-path。
- *   動きを減らす設定・スクリプトなしでは、同じ輪を静的な SVG で見せる（店は 1 軒目のまま。業種の入口は同じところへ届く）。
+ *   動きを減らす設定・スクリプトなしでは、同じ輪を静的な SVG で見せる（店は自動では替わらない。前・次のボタンでは替えられる）。
  */
 
 const fmt = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -32,8 +33,10 @@ const RA = [0.95, 0.84, 0.68, 0.52, 0.39, 0.29, 0.21, 0.15, 0.1];
 /** 街の輪（青い帯）の外の縁（R 比）。写真の縁は 1、白い隙間は 1.06 まで */
 const BAND = 1.42;
 const COB = "31,69,230";
-/** 店が替わる間隔（ms） */
-const INTERVAL = 5600;
+/** 店が替わる間隔（ms）。店名と街を読み切れる長さ */
+const INTERVAL = 7200;
+/** 最初の入れ替えまで */
+const FIRST = 5600;
 
 /* ───────────── 街の輪の文字（輪に沿って、街の名前をくり返す） ───────────── */
 function TownText({ label, out }: { label: string; out?: boolean }) {
@@ -67,8 +70,17 @@ function StaticRings() {
   );
 }
 
+const Chev = ({ dir }: { dir: 1 | -1 }) => (
+  <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+    <path d={dir > 0 ? "M7.5 4.5 13 10l-5.5 5.5" : "M12.5 4.5 7 10l5.5 5.5"} />
+  </svg>
+);
+
 type Api = {
   enter: (path: string, x: number, y: number) => void;
+  step: (d: number) => void;
+  toggle: () => void;
+  pulse: (x: number, y: number) => void;
 };
 
 export default function HamonHub({
@@ -91,18 +103,19 @@ export default function HamonHub({
 
   const [st, setSt] = useState<{ cur: number; prev: number }>({ cur: 0, prev: -1 });
   const [sel, setSel] = useState(0);
+  const [playing, setPlaying] = useState(true);
   const [leaving, setLeaving] = useState(false);
   const [live, setLive] = useState("");
   const [openNow, setOpenNow] = useState<{ open: number; known: number } | null>(null);
 
-  const api = useRef<Api>({ enter: () => {} });
+  const api = useRef<Api>({ enter: () => {}, step: () => {}, toggle: () => {}, pulse: () => {} });
   const downSel = useRef<number | null>(null);
   const selRef = useRef(0);
   selRef.current = sel;
 
   const n = shops.length;
 
-  /* ───────────── いま営業中の数（営業時間が確かな店だけ。現在時刻はブラウザで当てる） ───────────── */
+  /* ───────────── いま営業中の数（営業時間が確かな店だけ。現在時刻はブラウザで当てる。数え終わるまで、その項目は隠す） ───────────── */
   useEffect(() => {
     let stop = false;
     const calc = async () => {
@@ -116,8 +129,8 @@ export default function HamonHub({
       });
       if (!stop) setOpenNow({ open: o, known: k });
     };
-    const ric = (window as unknown as { requestIdleCallback?: (f: () => void) => number }).requestIdleCallback;
-    const h = ric ? ric(() => void calc()) : window.setTimeout(() => void calc(), 400);
+    const ric = (window as unknown as { requestIdleCallback?: (f: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+    const h = ric ? ric(() => void calc(), { timeout: 600 }) : window.setTimeout(() => void calc(), 400);
     const iv = window.setInterval(() => void calc(), 60_000);
     return () => {
       stop = true;
@@ -136,6 +149,7 @@ export default function HamonHub({
     if (!ctx) return;
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     let reduce = mq.matches;
+    if (reduce) setPlaying(false);
 
     let W = 0;
     let H = 0;
@@ -143,22 +157,26 @@ export default function HamonHub({
     let cx = 0;
     let cy = 0;
     let R = 100;
+    let headBottom = 0;
     let raf = 0;
     let running = false;
     let inView = true;
-    let paused = false;
+    let paused = false; // 店の写真・名前に触れている間
     let pausedAt = 0;
+    let userPaused = reduce; // ボタンで止めた（動きを減らす設定では、最初から自動では替えない）
     let leavingNow = false;
     let px = 0;
     let py = 0;
     let tx = 0;
     let ty = 0;
     const timers: number[] = [];
-    const clicks: { x: number; y: number; t: number }[] = [];
+    const clicks: { x: number; y: number; t: number; m: number }[] = [];
+    const trails: { x: number; y: number; t: number }[] = [];
+    let lastTrail = { x: -999, y: -999, t: 0 };
 
     const t0 = performance.now();
-    let kickT = (t0 - 0) / 1000; // 最後に店が替わった時刻（秒）。最初は読み込み時
-    let span = 4300; // 最初の入れ替えだけ少し早める
+    let kickT = t0 / 1000; // 最後に店が替わった時刻（秒）。最初は読み込み時
+    let span = FIRST - 700; // 最初の入れ替えだけ少し早める
     let cycleStart = t0 + 700; // 登場の演出が落ち着いてから数え始める
     let curIdx = 0;
 
@@ -173,17 +191,22 @@ export default function HamonHub({
       cx = s.left - r.left + s.width / 2;
       cy = s.top - r.top + s.height / 2;
       R = s.width / 2 / BAND;
+      const h1 = root.querySelector<HTMLElement>(".hm-h1");
+      headBottom = h1 ? h1.getBoundingClientRect().bottom - r.top : 0;
+      // スマホでは、見出しの上の輪をうすくする（CSS の mask が読む）
+      root.style.setProperty("--hb", `${headBottom.toFixed(0)}px`);
     };
 
-    const advance = (now: number) => {
-      const next = (curIdx + 1) % n;
+    const advance = (now: number, dir: number) => {
+      const next = (curIdx + dir + n) % n;
       const prevIdx = curIdx;
       curIdx = next;
       kickT = now / 1000;
       cycleStart = now;
       span = INTERVAL;
       // 次の写真を先に読み込んでおく（替わる瞬間にコマを落とさない）
-      const after = root.querySelectorAll<HTMLImageElement>(".hm-slide img")[(next + 1) % n];
+      const imgs = root.querySelectorAll<HTMLImageElement>(".hm-slide img");
+      const after = imgs[(next + dir + n) % n];
       if (after && !after.complete) after.loading = "eager";
       setSt({ cur: next, prev: prevIdx });
     };
@@ -197,15 +220,6 @@ export default function HamonHub({
       ctx.clearRect(0, 0, W, H);
       px += (tx - px) * 0.06;
       py += (ty - py) * 0.06;
-
-      // 水のにじみ（中心から外へ、うすい青）
-      const gr = ctx.createRadialGradient(cx, cy, R * BAND, cx, cy, R * 3.9);
-      gr.addColorStop(0, `rgba(${COB},0.11)`);
-      gr.addColorStop(1, `rgba(${COB},0)`);
-      ctx.fillStyle = gr;
-      ctx.beginPath();
-      ctx.arc(cx, cy, R * 3.9, 0, Math.PI * 2);
-      ctx.fill();
 
       const rings: { r: number; w: number; a: number; ox: number; oy: number }[] = [];
       for (let i = 0; i < RK.length; i++) {
@@ -263,18 +277,6 @@ export default function HamonHub({
         }
       }
 
-      // 見出しのある左側は、輪をうすくして文字を読みやすくする（右へ行くほど、もとの濃さ）
-      ctx.globalCompositeOperation = "destination-out";
-      const mk = ctx.createLinearGradient(0, 0, Math.min(W * 0.66, cx), 0);
-      mk.addColorStop(0, "rgba(0,0,0,0.62)");
-      mk.addColorStop(0.62, "rgba(0,0,0,0.5)");
-      mk.addColorStop(1, "rgba(0,0,0,0)");
-      if (W >= 800) {
-        ctx.fillStyle = mk;
-        ctx.fillRect(0, 0, Math.min(W * 0.66, cx), H);
-      }
-      ctx.globalCompositeOperation = "source-over";
-
       // 押した所から広がる輪
       for (let i = clicks.length - 1; i >= 0; i--) {
         const c = clicks[i];
@@ -283,7 +285,7 @@ export default function HamonHub({
           clicks.splice(i, 1);
           continue;
         }
-        const max = Math.max(280, Math.min(Math.max(W, H) * 0.5, 620));
+        const max = Math.max(280, Math.min(Math.max(W, H) * 0.5, 620)) * c.m;
         for (let k = 0; k < 3; k++) {
           const p = clamp01((age - k * 0.13) / 1.7);
           if (p <= 0) continue;
@@ -296,8 +298,24 @@ export default function HamonHub({
         }
       }
 
-      // 次の店までの時間（街の輪の外を、細い線が 1 周する）
-      {
+      // マウスの通った跡に、小さな輪（指で水に触れたように）
+      for (let i = trails.length - 1; i >= 0; i--) {
+        const c = trails[i];
+        const p = (t - c.t) / 1.4;
+        if (p >= 1) {
+          trails.splice(i, 1);
+          continue;
+        }
+        const e = 1 - Math.pow(1 - p, 3);
+        ctx.strokeStyle = `rgba(${COB},${(0.3 * Math.pow(1 - p, 1.6)).toFixed(3)})`;
+        ctx.lineWidth = 0.6 + 1.4 * (1 - p);
+        ctx.beginPath();
+        ctx.arc(c.x, c.y, 4 + 110 * e, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      // 次の店までの時間（街の輪の外を、細い線が 1 周する。ボタンで止めたら出さない）
+      if (!userPaused) {
         const ar = R * BAND + 9;
         const p = clamp01(((paused ? pausedAt : now) - cycleStart) / span);
         ctx.strokeStyle = `rgba(${COB},0.14)`;
@@ -320,7 +338,7 @@ export default function HamonHub({
     const loop = (now: number) => {
       raf = 0;
       if (!running) return;
-      if (!paused && !leavingNow && now - cycleStart >= span) advance(now);
+      if (!userPaused && !paused && !leavingNow && now - cycleStart >= span) advance(now, 1);
       draw(now);
       raf = requestAnimationFrame(loop);
     };
@@ -363,24 +381,23 @@ export default function HamonHub({
     document.addEventListener("visibilitychange", onVis);
     const onReduce = () => {
       reduce = mq.matches;
+      if (reduce) {
+        userPaused = true;
+        setPlaying(false);
+      }
       sync();
     };
     mq.addEventListener("change", onReduce);
 
-    const ro = new ResizeObserver(() => {
-      measure();
-      if (!running && !reduce) {
-        /* 止まっているときは、次に動くときに測り直す */
-      }
-    });
+    const ro = new ResizeObserver(() => measure());
     ro.observe(root);
     ro.observe(stage);
 
     // 押した所から輪が広がる
-    const addClick = (x: number, y: number) => {
+    const addClick = (x: number, y: number, m = 1) => {
       if (reduce) return;
       const r = root.getBoundingClientRect();
-      clicks.push({ x: x - r.left, y: y - r.top, t: performance.now() / 1000 });
+      clicks.push({ x: x - r.left, y: y - r.top, t: performance.now() / 1000, m });
       if (clicks.length > 6) clicks.shift();
     };
     const onDown = (e: PointerEvent) => {
@@ -393,6 +410,12 @@ export default function HamonHub({
       const r = root.getBoundingClientRect();
       tx = ((e.clientX - r.left) / r.width) * 2 - 1;
       ty = ((e.clientY - r.top) / r.height) * 2 - 1;
+      const now = performance.now();
+      if (now - lastTrail.t > 120 && Math.hypot(e.clientX - lastTrail.x, e.clientY - lastTrail.y) > 64 && !(e.target as Element | null)?.closest?.("a, button")) {
+        lastTrail = { x: e.clientX, y: e.clientY, t: now };
+        trails.push({ x: e.clientX - r.left, y: e.clientY - r.top, t: now / 1000 });
+        if (trails.length > 9) trails.shift();
+      }
     };
     root.addEventListener("pointermove", onMove);
 
@@ -424,6 +447,56 @@ export default function HamonHub({
     stage.addEventListener("focusin", onFocusIn);
     stage.addEventListener("focusout", onFocusOut);
 
+    // 店を前へ・次へ。矢印キーと、横のスワイプ（指・ペン）でも
+    const step = (d: number) => {
+      if (leavingNow) return;
+      advance(performance.now(), d);
+      const s = shops[curIdx];
+      if (s) setLive(`${s.name}、${s.pref}${s.town}`);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      e.preventDefault();
+      step(e.key === "ArrowRight" ? 1 : -1);
+    };
+    stage.addEventListener("keydown", onKey);
+    let sw: { x: number; y: number; id: number } | null = null;
+    let swallow = false;
+    const onSwDown = (e: PointerEvent) => {
+      if (e.pointerType === "mouse") return;
+      sw = { x: e.clientX, y: e.clientY, id: e.pointerId };
+    };
+    const onSwUp = (e: PointerEvent) => {
+      if (!sw || e.pointerId !== sw.id) return;
+      const dx = e.clientX - sw.x;
+      const dy = e.clientY - sw.y;
+      sw = null;
+      if (Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy) * 1.6) {
+        swallow = true;
+        window.setTimeout(() => (swallow = false), 0);
+        step(dx < 0 ? 1 : -1);
+      }
+    };
+    const onSwClick = (e: Event) => {
+      if (swallow) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    };
+    stage.addEventListener("pointerdown", onSwDown);
+    stage.addEventListener("pointerup", onSwUp);
+    stage.addEventListener("click", onSwClick, true);
+
+    const toggle = () => {
+      userPaused = !userPaused;
+      if (!userPaused) {
+        cycleStart = performance.now();
+        span = INTERVAL;
+      }
+      setPlaying(!userPaused);
+    };
+
     // 入る: 押した所から輪が広がって、青が画面を満たす
     api.current = {
       enter: (path, x, y) => {
@@ -439,6 +512,9 @@ export default function HamonHub({
         setLeaving(true);
         timers.push(window.setTimeout(() => router.push(path), 700));
       },
+      step,
+      toggle,
+      pulse: (x, y) => addClick(x, y, 0.3),
     };
 
     const onShow = (e: PageTransitionEvent) => {
@@ -467,9 +543,13 @@ export default function HamonHub({
       stage.removeEventListener("pointerleave", onLeave);
       stage.removeEventListener("focusin", onFocusIn);
       stage.removeEventListener("focusout", onFocusOut);
+      stage.removeEventListener("keydown", onKey);
+      stage.removeEventListener("pointerdown", onSwDown);
+      stage.removeEventListener("pointerup", onSwUp);
+      stage.removeEventListener("click", onSwClick, true);
       window.removeEventListener("pageshow", onShow);
     };
-  }, [n, router]);
+  }, [n, router, shops]);
 
   // 選んでいる業種の入口を先に読んでおく
   useEffect(() => {
@@ -485,10 +565,11 @@ export default function HamonHub({
   };
   const choose = useCallback(
     (i: number) => {
-      if (selRef.current === i) return;
+      if (selRef.current === i) return false;
       setSel(i);
       const it = items[i];
       setLive(`${it.name}。${it.live ? "掲載中" : it.enter ? "掲載準備中。ページへ入れます" : "掲載準備中"}`);
+      return true;
     },
     [items],
   );
@@ -509,14 +590,20 @@ export default function HamonHub({
     }
     // マウス・タッチ: 選んでいない業種は、まず選ぶ（状態と数字が出る）。選んでいたら入る。キーボード: そのまま入る
     if (was !== null && was !== i) {
-      choose(i);
+      if (choose(i)) {
+        const [x, y] = centerOf(e.currentTarget.querySelector(".dc") ?? e.currentTarget);
+        api.current.pulse(x, y);
+      }
       return;
     }
     const [x, y] = centerOf(e.currentTarget);
     api.current.enter(items[i].path, x, y);
   };
-  const onDoorHover = (i: number) => (e: RPointerEvent) => {
-    if (e.pointerType === "mouse") choose(i);
+  const onDoorHover = (i: number) => (e: RPointerEvent<HTMLElement>) => {
+    if (e.pointerType === "mouse" && choose(i)) {
+      const [x, y] = centerOf(e.currentTarget.querySelector(".dc") ?? e.currentTarget);
+      api.current.pulse(x, y);
+    }
   };
 
   const shop = shops[st.cur];
@@ -524,7 +611,7 @@ export default function HamonHub({
   const label = shop ? `${shop.pref}${shop.town}` : "";
 
   return (
-    <section ref={rootRef} className={`hm${leaving ? " is-leaving" : ""}`} aria-labelledby="hm-h1" style={{ ["--n" as string]: n } as CSSProperties}>
+    <section ref={rootRef} className={`hm${leaving ? " is-leaving" : ""}`} aria-labelledby="hm-h1">
       <canvas ref={canvasRef} className="hm-cv" aria-hidden="true" />
       <noscript>
         <style>{".hm-static{opacity:1!important}"}</style>
@@ -543,48 +630,6 @@ export default function HamonHub({
           <span>さがす</span>
         </Link>
       </header>
-
-      {/* ───── 主役: 店（写真）→ 街（青い輪）→ 輪（画面の外まで） ───── */}
-      <div className="hm-stage" ref={stageRef}>
-        <StaticRings />
-        <div className="hm-band" aria-hidden="true" />
-        <div className="hm-spin" aria-hidden="true">
-          {st.prev >= 0 && shops[st.prev] && <TownText key={`o${st.prev}`} label={`${shops[st.prev].pref}${shops[st.prev].town}`} out />}
-          {shop && <TownText key={`i${st.cur}`} label={label} />}
-        </div>
-        <div className="hm-gap" aria-hidden="true" />
-        <div className="hm-photo">
-          {shops.map((s, i) => (
-            <span key={s.id} className={`hm-slide${i === st.cur ? " cur" : i === st.prev ? " prev" : ""}`} aria-hidden={i === st.cur ? undefined : true}>
-              <img
-                src={s.src}
-                srcSet={s.srcSet}
-                sizes="(min-width: 800px) 430px, 78vw"
-                alt={i === st.cur ? `${s.name}（${s.pref}${s.town}）` : ""}
-                width={800}
-                height={800}
-                decoding="async"
-                loading={i === 0 ? "eager" : "lazy"}
-                fetchPriority={i === 0 ? "high" : undefined}
-                draggable={false}
-                style={{ ["--z" as string]: s.z, objectPosition: `${s.x}% ${s.y}%` } as CSSProperties}
-              />
-            </span>
-          ))}
-          <Link href={shopHref} prefetch={false} className="hm-photolink" tabIndex={-1} aria-hidden="true" />
-        </div>
-        {shop && (
-          <Link href={shopHref} prefetch={false} className="hm-tag">
-            <span className="hm-tag-in" key={st.cur}>
-              <span className="k">掲載店から</span>
-              <span className="nm">{shop.name}</span>
-              <span className="go">
-                店のページへ<i aria-hidden="true">→</i>
-              </span>
-            </span>
-          </Link>
-        )}
-      </div>
 
       {/* ───── 左: 見出し・リード・業種の入口 ───── */}
       <div className="hm-left">
@@ -623,7 +668,7 @@ export default function HamonHub({
                     <span>
                       特集<b>{featureTotal}</b>本
                     </span>
-                    <span className="op" data-on={openNow ? "" : undefined}>
+                    <span className="op" data-on={openNow ? "" : undefined} aria-hidden={openNow ? undefined : true}>
                       いま営業中<b>{openNow ? fmt(openNow.open) : "000"}</b>軒<small>営業時間が確かな{openNow ? fmt(openNow.known) : "000"}店のうち</small>
                     </span>
                   </p>
@@ -645,9 +690,7 @@ export default function HamonHub({
                 const kind = it.live ? "live" : it.enter ? "go" : "soon";
                 const body = (
                   <>
-                    <span className="dc" aria-hidden="true">
-                      <em>{it.en}</em>
-                    </span>
+                    <span className="dc" aria-hidden="true" />
                     <span className="nm">
                       {it.lines.map((ln, li) => (
                         <span key={li}>{ln}</span>
@@ -692,6 +735,76 @@ export default function HamonHub({
         </div>
       </div>
 
+      {/* ───── 主役: 店（写真）→ 街（青い輪）→ 輪（画面の外まで） ───── */}
+      <div className="hm-stage" ref={stageRef} role="group" aria-roledescription="スライド" aria-label="掲載店">
+        <div className="hm-glow" aria-hidden="true" />
+        <StaticRings />
+        <div className="hm-band" aria-hidden="true" />
+        <div className="hm-spin" aria-hidden="true">
+          {st.prev >= 0 && shops[st.prev] && <TownText key={`o${st.prev}`} label={`${shops[st.prev].pref}${shops[st.prev].town}`} out />}
+          {shop && <TownText key={`i${st.cur}`} label={label} />}
+        </div>
+        <div className="hm-gap" aria-hidden="true" />
+        <div className="hm-photo">
+          {shops.map((s, i) => (
+            <span key={s.id} className={`hm-slide${i === st.cur ? " cur" : i === st.prev ? " prev" : ""}`} aria-hidden={i === st.cur ? undefined : true}>
+              <img
+                src={s.src}
+                srcSet={s.srcSet}
+                sizes="(min-width: 800px) 430px, 78vw"
+                alt={i === st.cur ? `${s.name}（${s.pref}${s.town}）` : ""}
+                width={800}
+                height={800}
+                decoding="async"
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : undefined}
+                draggable={false}
+                style={{ ["--z" as string]: s.z, objectPosition: `${s.x}% ${s.y}%` } as CSSProperties}
+              />
+            </span>
+          ))}
+          <Link href={shopHref} prefetch={false} className="hm-photolink" tabIndex={-1} aria-hidden="true" />
+        </div>
+        <div className="hm-side">
+          {shop && (
+            <Link href={shopHref} prefetch={false} className="hm-tag" aria-label={`${shop.name}（${shop.pref}${shop.town}）の店のページへ`}>
+              <span className="hm-tag-in" key={st.cur}>
+                <span className="k">掲載店から</span>
+                <span className="nm">{shop.name}</span>
+                <span className="go">
+                  店のページへ<i aria-hidden="true">→</i>
+                </span>
+              </span>
+            </Link>
+          )}
+          <div className="hm-ctl">
+            <button type="button" className="pv" title="前の店" aria-label="前の店" onClick={() => api.current.step(-1)}>
+              <Chev dir={-1} />
+            </button>
+            <button type="button" className="tg" title={playing ? "自動で替わるのを止める" : "自動で替える"} aria-label={playing ? "自動で替わるのを止める" : "自動で替える"} aria-pressed={!playing} onClick={() => api.current.toggle()}>
+              {playing ? (
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="currentColor">
+                  <rect x="4.5" y="3.5" width="3.8" height="13" rx="1.2" />
+                  <rect x="11.7" y="3.5" width="3.8" height="13" rx="1.2" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="currentColor">
+                  <path d="M6 3.6v12.8a.8.8 0 0 0 1.2.7l10-6.4a.8.8 0 0 0 0-1.4l-10-6.4A.8.8 0 0 0 6 3.6Z" />
+                </svg>
+              )}
+            </button>
+            <button type="button" className="nx" title="次の店" aria-label="次の店" onClick={() => api.current.step(1)}>
+              <Chev dir={1} />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a className="hm-cue" href="#hm-statement" aria-label="下の本文へ">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M10 3.5v13M4.5 11 10 16.5 15.5 11" />
+        </svg>
+      </a>
       <p className="mp-sr" role="status" aria-live="polite">
         {live}
       </p>
