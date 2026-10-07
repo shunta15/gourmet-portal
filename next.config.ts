@@ -33,6 +33,7 @@ const PORTAL_OFF_SOURCES = [
   "/search-index.json",
   "/_portal/:path*",
   "/proto-hub/:path*", // 総合トップ「にぎわいの輪」の色を固定して見るルート（プレビュー・ローカル専用。本番は ON でも 404）
+  "/proto-noren/:path*", // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用。本番は ON でも 404）
 ];
 
 const nextConfig: NextConfig = {

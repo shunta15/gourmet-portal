@@ -289,6 +289,7 @@ const GOURMET = [
 const PORTAL_404 = [
   "/gourmet",
   "/proto-hub/nigiwai", // 総合トップ「にぎわいの輪」の色を固定して見るルート（試作・非公開。プレビュー・ローカル専用）
+  "/proto-noren", // グルメの暖簾デザインの見本（試作・非公開。プレビュー・ローカル専用）
   "/beauty",
   "/beauty/hair",
   "/beauty/hair/tokyo",
