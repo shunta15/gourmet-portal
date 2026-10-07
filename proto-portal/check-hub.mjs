@@ -204,13 +204,35 @@ for (const vp of [
       })(),
       sr: document.querySelector(".ng-sr")?.textContent.trim() ?? "",
       deadLinks: [...document.querySelectorAll(".ng a")].map((a) => a.getAttribute("href")).filter((h) => /^\/(pet|leisure|stay)(\/|$)/.test(h || "")),
-      facts: !!document.querySelector(".ng-facts"),
+      facts: !!document.querySelector(".ng-facts:not([data-off])"),
     }));
     if (i === 0) check(s.state === "掲載中" && s.go === "/gourmet" && s.goText === "グルメに入る" && s.facts, "グルメ: 掲載中・「グルメに入る」→ /gourmet・数字あり", `グルメ: ${JSON.stringify(s)}`);
     else if (i < 3) check(s.state === "掲載準備中" && s.go === HREFS[i] && s.goText === "ページを見る" && !s.facts, `${NAMES[i]}: 掲載準備中・「ページを見る」→ ${HREFS[i]}`, `${NAMES[i]}: ${JSON.stringify(s)}`);
     else check(s.state === "掲載準備中" && s.go === null && s.deadLinks.length === 0, `${NAMES[i]}: 掲載準備中と出るだけ。リンク無し`, `${NAMES[i]}: ${JSON.stringify(s)}`);
     if (i > 0) check(s.prep === 1, `${NAMES[i]}: 「掲載準備中」は画面に 1 回`, `${NAMES[i]}: 「掲載準備中」が ${s.prep} 回`);
     if (i > 0) check(s.sr.startsWith(NAMES[i]) && s.sr.includes("掲載準備中"), `${NAMES[i]}: 選ぶと読み上げ（role=status）が「${s.sr}」`, `${NAMES[i]}: 読み上げが合わない: ${JSON.stringify(s.sr)}`);
+  }
+  // どの業種を選んでも、見出し・リード・6 つの入口の位置が動かない（.ng の上端からの距離。1px も）
+  {
+    const rows = [];
+    for (let i = 0; i < 6; i++) {
+      await page.evaluate((k) => document.querySelectorAll(".ng-btns li > *")[k].focus(), i);
+      await page.waitForTimeout(500);
+      rows.push(await page.evaluate(() => {
+        const n0 = document.querySelector(".ng").getBoundingClientRect();
+        const r = (sel) => { const b = document.querySelector(sel).getBoundingClientRect(); return [b.top - n0.top, b.left - n0.left, b.height]; };
+        return { h1: r(".ng-h1"), lead: r(".ng-lead"), btns: r(".ng-btns") };
+      }));
+    }
+    const dev = (k) => Math.max(...rows.flatMap((r) => r[k].map((v, j) => Math.abs(v - rows[0][k][j]))));
+    const d = { h1: dev("h1"), lead: dev("lead"), btns: dev("btns") };
+    check(d.h1 < 0.5 && d.lead < 0.5 && d.btns < 0.5, `6 業種を順に選んでも、見出し・リード・入口の位置が動かない（最大のずれ ${Math.max(d.h1, d.lead, d.btns).toFixed(2)}px）`, `業種を選ぶと位置が動く（見出し ${d.h1.toFixed(1)}px・リード ${d.lead.toFixed(1)}px・入口 ${d.btns.toFixed(1)}px）`);
+    await page.evaluate(() => document.querySelectorAll(".ng-btns li > *")[0].focus());
+    await page.waitForTimeout(400);
+  }
+  if (!vp.mobile) {
+    const lf = await page.evaluate(() => parseFloat(getComputedStyle(document.querySelector(".ng-lead")).fontSize));
+    check(lf >= 18, `リードの大きさ ${lf.toFixed(1)}px（18px 以上）`, `リードが小さい: ${lf.toFixed(1)}px`);
   }
   // ペット・おでかけ・ステイを押しても移動しない
   for (const i of [3, 4, 5]) {
@@ -346,6 +368,7 @@ console.log("\n== B 色（PC）==");
 console.log("\n== B 入る → 戻るで同じ色 ==");
 {
   const diff = [];
+  const skipBad = [];
   for (let i = 0; i < 6; i++) {
     const ctx = await browser.newContext(PC);
     const { page } = await openHome(ctx, { rec: true });
@@ -356,13 +379,30 @@ console.log("\n== B 入る → 戻るで同じ色 ==");
     const onGourmet = new URL(page.url()).pathname === "/gourmet";
     await page.goBack({ waitUntil: "load" }).catch(() => {});
     await page.waitForSelector(".ngp", { timeout: 15000 }).catch(() => {});
-    await page.waitForTimeout(600);
+    // 戻ったとき、導入（見出しがせり上がる・入口が弾ける）を省いて、すぐ完成の姿になる（戻ってから 0.25 秒後に見る）
+    await page.waitForTimeout(250);
+    const back = await page.evaluate(() => {
+      const ng = document.querySelector(".ng");
+      const mat = (e) => new DOMMatrix(getComputedStyle(e).transform);
+      const tx = document.querySelector(".ng-h1 .tx");
+      const ln = document.querySelector(".ng-h1 .ln");
+      return {
+        skip: document.querySelector(".ngp")?.hasAttribute("data-skip"),
+        btns: [...document.querySelectorAll(".ng-b")].every((b) => +getComputedStyle(b).opacity > 0.99 && mat(b).a > 0.95),
+        h1: tx && ln ? Math.abs(mat(tx).f) < 1 : false, // 見出しの 1 行目が、せり上がりの最中ではなく、元の位置にある
+        info: +getComputedStyle(document.querySelector(".ng-info")).opacity > 0.99,
+        ready: !!ng,
+      };
+    });
+    await page.waitForTimeout(350);
     const t1 = await page.evaluate(() => document.querySelector(".ngp")?.getAttribute("data-theme"));
     if (!onGourmet) diff.push(`${i}: /gourmet へ移動しない（${page.url()}）`);
     else if (t0 !== t1) diff.push(`${i}: ${t0} → ${t1}`);
+    else if (!back.skip || !back.btns || !back.h1 || !back.info) skipBad.push(`${i}: ${JSON.stringify(back)}`);
     await ctx.close();
   }
   check(diff.length === 0, "グルメに入って戻ると、同じ色（6 回）", `色が変わった/入れなかった: ${diff.join(" / ")}`);
+  check(skipBad.length === 0, "戻ったとき、導入を省いて、0.25 秒後にはもう完成の姿（見出し・入口・数字）", `戻ったあとも導入が再生されている: ${skipBad.join(" / ")}`);
 }
 
 /* ═══════════ F 動きを減らす設定 ═══════════ */
@@ -435,6 +475,27 @@ console.log("\n== G スクリプトなし ==");
   check(failed.length === 0, `スクリプトなしで、全部の行き先に届く（${n} 本${NO_FOOTER ? "・フッターを除く" : "・フッター含む"}）`, `届かない: ${failed.slice(0, 8).join(", ")}`);
   await ctx.close();
 }
+/* ═══════════ 小さい画面: 6 業種の帯と「グルメに入る」が最初の画面の中に入る ═══════════ */
+console.log("\n== 小さい画面（360×640・375×667・412×732・360×740・390×844 × 2 色）==");
+{
+  const out = [];
+  for (const [w, h] of [[360, 640], [375, 667], [412, 732], [360, 740], [390, 844]]) {
+    for (const rv of [0.1, 0.9]) {
+      const ctx = await browser.newContext({ viewport: { width: w, height: h }, isMobile: true, hasTouch: true });
+      const { page } = await openHome(ctx, { rv });
+      await page.waitForTimeout(1800);
+      const m = await page.evaluate(() => {
+        const b = document.querySelector(".ng-btns").getBoundingClientRect();
+        const g = document.querySelector(".ng-go").getBoundingClientRect();
+        return { vh: innerHeight, btnsBottom: b.bottom, btnsTop: b.top, goBottom: g.bottom, goTop: g.top };
+      });
+      if (m.btnsBottom > m.vh || m.goBottom > m.vh || m.btnsTop < 0 || m.goTop < 0) out.push(`${w}×${h} ${rv < 0.5 ? "sometsuke" : "akagane"}: 帯 ${Math.round(m.btnsTop)}〜${Math.round(m.btnsBottom)}・入る ${Math.round(m.goBottom)}（画面の高さ ${m.vh}）`);
+      await ctx.close();
+    }
+  }
+  check(out.length === 0, "どの小さい画面でも、6 業種の帯と「グルメに入る」が最初の画面の中に入る", `画面の外: ${out.join(" / ")}`);
+}
+
 /* ═══════════ H 横スクロール（4 幅 × 2 色） ═══════════ */
 console.log("\n== H 横スクロール 0（1440・1280・390・360 × 2 色）==");
 {

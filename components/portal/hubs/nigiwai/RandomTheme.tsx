@@ -32,6 +32,8 @@ export default function RandomTheme() {
       return;
     }
     const saved = (window.history.state as { ngTheme?: string } | null)?.ngTheme;
+    // 戻る・進むで帰ってきた（前に覚えた色が残っている）ときは、導入を省く。リンクで来たときは新しい履歴の項目なので、導入を見せる
+    if ((RANDOM_KEYS as readonly string[]).includes(saved ?? "")) root.setAttribute("data-skip", "");
     const t = (RANDOM_KEYS as readonly string[]).includes(saved ?? "") ? (saved as string) : RANDOM_KEYS[Math.random() < 0.5 ? 0 : 1];
     root.setAttribute("data-theme", t);
     keep(t);

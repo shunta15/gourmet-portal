@@ -113,6 +113,8 @@ const HOME_WANT = [
 ];
 const pinTheme = (page, t) => page.addInitScript((x) => { try { history.replaceState({ ngTheme: x }, ""); } catch (e) {} }, t);
 async function homeTabOrder(page, label, mobile) {
+  // `next dev` の丸い開発用の表示（nextjs-portal。左下で業種の入口に重なる）は、リングの測定に混ざるので隠す（`next start` には無い）
+  await page.addStyleTag({ content: "nextjs-portal{display:none!important}" });
   for (const [w, key] of HOME_WANT) {
     await page.keyboard.press("Tab");
     await page.waitForTimeout(650);

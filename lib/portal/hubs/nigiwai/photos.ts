@@ -72,8 +72,8 @@ export interface DishPhoto {
   pos: string;
 }
 
-const toDish = (it: WallItem): DishPhoto => {
-  const ws = it.ws.filter((w) => w <= 800);
+const toDish = (it: WallItem, max = 800): DishPhoto => {
+  const ws = it.ws.filter((w) => w <= max);
   const use = ws.length ? ws : [it.ws[0]];
   return { src: photoSrc(it.h, use[use.length - 1]), srcSet: use.map((w) => `${photoSrc(it.h, w)} ${w}w`).join(", "), r: it.r, pos: FOCUS[it.id] ?? "50% 50%" };
 };
@@ -81,6 +81,7 @@ const toDish = (it: WallItem): DishPhoto => {
 export async function getNigiwaiPhotos(): Promise<{ ring: DishPhoto[]; side: DishPhoto[] }> {
   const wall = await loadWall();
   const by = new Map(wall.items.map((x) => [x.id, x]));
-  const pick = (ids: readonly string[]) => ids.map((id) => by.get(id)).filter((x): x is WallItem => !!x).map(toDish);
-  return { ring: pick(RING_IDS), side: pick(SIDE_IDS) };
+  const pick = (ids: readonly string[], max = 800) => ids.map((id) => by.get(id)).filter((x): x is WallItem => !!x).map((x) => toDish(x, max));
+  // 場面 1 の大きい写真（最大 340px 径。2 倍の画面で 680px）は、1200 まで読ませる
+  return { ring: pick(RING_IDS), side: pick(SIDE_IDS, 1200) };
 }

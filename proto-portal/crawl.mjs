@@ -10,6 +10,18 @@
  * - 最後に `PROBLEMS N` を出す。N が 0 なら合格。1 以上なら終了コード 1。
  * - 公開スイッチ OFF のビルドの検査は compare-off.mjs（main との比較）。この巡回は ON 専用。
  */
+// `next dev` はキャッシュの書き出し中などに接続を切ることがある（ECONNRESET）。本番ビルド（next start）では起きないので、通信だけ数回やり直す
+const fetch0 = globalThis.fetch;
+globalThis.fetch = async (...a) => {
+  for (let i = 0; ; i++) {
+    try {
+      return await fetch0(...a);
+    } catch (e) {
+      if (i >= 3) throw e;
+      await new Promise((r) => setTimeout(r, 1500 * (i + 1)));
+    }
+  }
+};
 const argv = process.argv.slice(2);
 const argi = argv.indexOf('--base');
 const B = (argi >= 0 ? argv[argi + 1] : 'http://localhost:3242').replace(/\/$/, '');

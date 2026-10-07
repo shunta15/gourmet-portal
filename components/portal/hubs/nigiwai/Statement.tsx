@@ -18,9 +18,20 @@ import StatementMotion from "./StatementMotion";
 
 const SIZES = "(max-width: 760px) 44vw, 24vw";
 
-const Pic = ({ p, x, y, s, k }: { p?: DishPhoto; x: number; y: number; s: number; k: number }) =>
+const Pic = ({ p, x, y, s, k, sizes = SIZES }: { p?: DishPhoto; x: number; y: number; s: number; k: number; sizes?: string }) =>
   p ? (
     <span className="pic" style={{ ["--x" as string]: `${x}%`, ["--y" as string]: `${y}%`, ["--s" as string]: `${s}%`, ["--k" as string]: k } as CSSProperties}>
+      <span className="ph">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={p.src} srcSet={p.srcSet} sizes={sizes} alt="" loading="lazy" decoding="async" draggable={false} style={{ objectPosition: p.pos }} />
+      </span>
+    </span>
+  ) : null;
+
+/** 場面 3 の皿。位置は「輪の上の角度（ang）」と「輪の半径（CSS の --rr。スクロールで大きくなる）」で決まる。o は現れる順（0 から。小さい番号から先に出る） */
+const OrbitPic = ({ p, ang, s, k, o }: { p?: DishPhoto; ang: number; s: number; k: number; o: number }) =>
+  p ? (
+    <span className="pic op" style={{ ["--ang" as string]: `${ang}deg`, ["--s" as string]: `${s}%`, ["--k" as string]: k, ["--o" as string]: o } as CSSProperties}>
       <span className="ph">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={p.src} srcSet={p.srcSet} sizes={SIZES} alt="" loading="lazy" decoding="async" draggable={false} style={{ objectPosition: p.pos }} />
@@ -38,15 +49,10 @@ const Line = ({ text }: { text: string }) => (
   </span>
 );
 
-/** 円周上の点（中心 50,50。角度は上から時計まわり）。決まった値なので、サーバーとクライアントで同じ */
-const around = (n: number, r: number, off = 0) =>
-  Array.from({ length: n }, (_, i) => {
-    const a = ((off + (360 / n) * i) * Math.PI) / 180;
-    return { x: Number((50 + r * Math.sin(a)).toFixed(2)), y: Number((50 - r * Math.cos(a)).toFixed(2)) };
-  });
-
 /** 場面 3 の輪（10 枚）の大きさ（直径の %）。隣どうしで少しずつ違える */
 const RING_S = [24, 19, 22.5, 20, 25, 19.5, 23, 20, 24, 19.5];
+/** 場面 3 の皿が現れる順（輪の位置ごと）。場面 2 の 3 枚（0・3・6 番目の位置。120° ずつ離れている）が先に出て、小さな輪から、皿が増えて輪が外へ広がる */
+const RING_O = [0, 3, 4, 1, 5, 6, 2, 7, 8, 9];
 
 export default function Statement({ ring, side }: { ring: DishPhoto[]; side: DishPhoto[] }) {
   const all = [...ring, ...side];
@@ -54,8 +60,7 @@ export default function Statement({ ring, side }: { ring: DishPhoto[]; side: Dis
   const ph = (i: number) => all[i];
   const crab = ph(16); // 場面 1 の 1 枚（店の窓が写る）。場面 2・3 にも出る（同じ 1 皿が、つながり、輪の一枚になる）
   const trio = [crab, ph(3), ph(5)]; // 場面 2: 1 枚目は場面 1 と同じ
-  const ringOrder = [16, 3, 6, 0, 5, 10, 13, 2, 11, 9]; // 場面 3 の輪（時計まわり）。場面 2 の 3 枚（16・3・5）が、輪の中にもいる
-  const pts = around(ringOrder.length, 37, 0);
+  const ringOrder = [16, 6, 0, 3, 10, 13, 5, 2, 11, 9]; // 場面 3 の輪（時計まわり）。場面 2 の 3 枚（16・3・5）が、120° ずつ離れた位置（0・3・6 番目）にいて、最初の小さな輪をつくる
 
   return (
     <section className="ng-st" aria-label="マチノワについて">
@@ -69,7 +74,7 @@ export default function Statement({ ring, side }: { ring: DishPhoto[]; side: Dis
               <i className="orb o1" />
               <i className="orb o2" />
               <i className="orb o0" />
-              <Pic p={crab} x={50} y={50} s={60} k={0} />
+              <Pic p={crab} x={50} y={50} s={60} k={0} sizes="(max-width: 760px) 58vw, 340px" />
             </span>
           </span>
           {"\n"}
@@ -99,7 +104,7 @@ export default function Statement({ ring, side }: { ring: DishPhoto[]; side: Dis
               <i className="orb o4" />
               <span className="spin">
                 {ringOrder.map((n, i) => (
-                  <Pic key={n} p={ph(n)} x={pts[i].x} y={pts[i].y} s={RING_S[i]} k={i} />
+                  <OrbitPic key={n} p={ph(n)} ang={(360 / ringOrder.length) * i} s={RING_S[i]} k={i} o={RING_O[i]} />
                 ))}
               </span>
             </span>

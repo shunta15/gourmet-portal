@@ -40,7 +40,7 @@
   --ng-fill-bg: linear-gradient(180deg, #26357a 0%, #18265a 60%, #121d48 100%);
   --ng-on-fill: #f6f3ec;
   --ng-fill-h: #26357a;
-  --ng-focus: #18265a;
+  --ng-focus: #6a501e;
   --ng-rim: transparent;
   --ng-edge: transparent;
   --ng-vline: #7c5f26;
@@ -52,7 +52,7 @@
   --ng-accent: #6a501e;
   --ng-ph: #e7e0d0;
   --ng-la: 0.85;
-  --ng-vc-pct: 78%;
+  --ng-vc-pct: 26%;
   --ng-grain: var(--ng-grain-n);
   --ng-grain-a: 0.22;
 }
@@ -83,7 +83,7 @@
   --ng-accent: #d98d62;
   --ng-ph: #26304f;
   --ng-glow: rgba(201, 123, 79, 0.08);
-  --ng-vc-pct: 66%;
+  --ng-vc-pct: 56%;
   --ng-grain: var(--ng-grain-n);
   --ng-grain-a: 0.3;
 }
