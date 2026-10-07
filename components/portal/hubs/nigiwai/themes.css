@@ -1,0 +1,157 @@
+/* ════════════════════════════════════════════════════════════
+   「にぎわいの輪」の色の組（7 つ）。色を直に書くのは、このファイルだけ。
+   nigiwai.css は、ここで決めた --ng-* だけを使う。.ngp[data-theme] が切り替える（サーバーが最初から付けるので、朱が一瞬見えてから変わることはない）。
+
+   --ng-bg / -l / -d / -dd : 地／最初の画面の中心（明るい側）／縁・下のブロックの地／入るときに満ちる色
+   --ng-ink / --ng-ink2    : 見出し・数字・線の色／小さい文字の色
+   --ng-fill / --ng-on-fill / --ng-fill-h : 押す所の塗り／その上の文字／乗せたときの塗り
+   --ng-focus              : フォーカスの輪
+   --ng-rim / --ng-shade   : 写真の縁／写真の影（地から写真を浮かせる）
+   --ng-vline              : 準備中の業種の「色の空の丸」を地から切り出す縁（暗い地では生成り、明るい地では墨）
+   --ng-tshade             : 文字の影（明るい地では透明）
+   --ng-accent             : 印（句点・かぎかっこ・掲載中の点・結びの円）。ink と同じなら変化なし
+   --ng-ph                 : 写真が読み込まれるまでの下地
+   --ng-la                 : 細い線の濃さの倍率（明るい地では少し弱く）
+   --ng-grain / --ng-grain-a : 紙のざらつき
+   ════════════════════════════════════════════════════════════ */
+.ngp,
+.ng-swi {
+  --ng-grain-r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .04 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --ng-grain-n: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .16 0 0 0 0 .1 0 0 0 0 .05 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* shu（朱。いまの色） */
+  --ng-bg: #d23a24;
+  --ng-bg-l: #d83f28;
+  --ng-bg-d: #b82e19;
+  --ng-bg-dd: #a22714;
+  --ng-ink: #fff4e6;
+  --ng-ink2: #fffbf5;
+  --ng-fill: #fff4e6;
+  --ng-on-fill: #8e210f;
+  --ng-fill-h: #ffffff;
+  --ng-focus: #fffbf5;
+  --ng-rim: #fff4e6;
+  --ng-vline: #fff4e6;
+  --ng-shade: #560a00;
+  --ng-tshade: #701204;
+  --ng-accent: #fff4e6;
+  --ng-ph: #f3c9a0;
+  --ng-la: 1;
+  --ng-grain: var(--ng-grain-r);
+  --ng-grain-a: 0.21;
+}
+
+/* shu は、上の基本の値そのもの（.ngp と .ng-swi の既定）。 */
+
+/* midori（深い緑）: 落ち着いて、料理の暖色がいちばん映える */
+.ngp[data-theme="midori"],
+.ng-swi[data-theme="midori"] {
+  --ng-bg: #1f4d3b;
+  --ng-bg-l: #265a45;
+  --ng-bg-d: #163a2c;
+  --ng-bg-dd: #0f2c21;
+  --ng-on-fill: #12382a;
+  --ng-shade: #03140d;
+  --ng-tshade: #03140d;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* kon（紺）: 夜の落ち着き */
+.ngp[data-theme="kon"],
+.ng-swi[data-theme="kon"] {
+  --ng-bg: #17274a;
+  --ng-bg-l: #1e3262;
+  --ng-bg-d: #101c37;
+  --ng-bg-dd: #0b1429;
+  --ng-on-fill: #101f40;
+  --ng-shade: #040a1a;
+  --ng-tshade: #040a1a;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}
+
+/* sumi（墨に近い黒茶）: 写真が主役。印に朱を少し */
+.ngp[data-theme="sumi"],
+.ng-swi[data-theme="sumi"] {
+  --ng-bg: #1b1714;
+  --ng-bg-l: #26201b;
+  --ng-bg-d: #141110;
+  --ng-bg-dd: #0d0a09;
+  --ng-fill: #c8341e;
+  --ng-on-fill: #fffbf5;
+  --ng-fill-h: #cf3720;
+  --ng-shade: #000000;
+  --ng-tshade: #000000;
+  --ng-accent: #f0583c;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.34;
+}
+
+/* terra（やわらかいテラコッタ）: 暖かさを残して、刺激だけ落とす。見出しも小さい字も白に近い色で、4.5:1 を守る */
+.ngp[data-theme="terra"],
+.ng-swi[data-theme="terra"] {
+  --ng-bg: #ad573d;
+  --ng-bg-l: #b05a40;
+  --ng-bg-d: #924530;
+  --ng-bg-dd: #7b3a28;
+  --ng-ink: #fffbf5;
+  --ng-ink2: #ffffff;
+  --ng-fill: #fff4e6;
+  --ng-on-fill: #6b2b1a;
+  --ng-fill-h: #ffffff;
+  --ng-rim: #fff4e6;
+  --ng-accent: #fffbf5;
+  --ng-shade: #3d1408;
+  --ng-tshade: #4d1a0c;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.28;
+}
+
+/* karashi（からし色）: 明るく楽しい。文字は墨 */
+.ngp[data-theme="karashi"],
+.ng-swi[data-theme="karashi"] {
+  --ng-bg: #e3ae3c;
+  --ng-bg-l: #ebb945;
+  --ng-bg-d: #cf9a2b;
+  --ng-bg-dd: #b8841c;
+  --ng-ink: #2b1b0e;
+  --ng-ink2: #2b1b0e;
+  --ng-fill: #2b1b0e;
+  --ng-on-fill: #fff4e6;
+  --ng-fill-h: #43301b;
+  --ng-focus: #2b1b0e;
+  --ng-rim: #fffaee;
+  --ng-vline: #2b1b0e;
+  --ng-shade: #5a3a00;
+  --ng-tshade: transparent;
+  --ng-accent: #2b1b0e;
+  --ng-ph: #f3c9a0;
+  --ng-la: 0.75;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.22;
+}
+
+/* kinari（明るい生成り）: いちばん目にやさしい。押す所と印に朱 */
+.ngp[data-theme="kinari"],
+.ng-swi[data-theme="kinari"] {
+  --ng-bg: #f6efe0;
+  --ng-bg-l: #faf4e8;
+  --ng-bg-d: #ede3cc;
+  --ng-bg-dd: #e3d6bb;
+  --ng-ink: #1e1712;
+  --ng-ink2: #1e1712;
+  --ng-fill: #c8341e;
+  --ng-on-fill: #fffbf5;
+  --ng-fill-h: #b52c18;
+  --ng-focus: #1e1712;
+  --ng-rim: #ffffff;
+  --ng-vline: #1e1712;
+  --ng-shade: #6b4a2a;
+  --ng-tshade: transparent;
+  --ng-accent: #b92d19;
+  --ng-ph: #f0d9bf;
+  --ng-la: 0.7;
+  --ng-grain: var(--ng-grain-n);
+  --ng-grain-a: 0.3;
+}

@@ -5,20 +5,15 @@
    動かすのは transform / scale / opacity と --rot（角度）だけ。動きを減らす設定では、回さず・集まらず・静かに出す（末尾）。
    ════════════════════════════════════════════════════════════ */
 
-.ng,
-.ng-st {
-  --vm: #d23a24; /* 朱（文字 白 #fffbf5 との比 4.6:1） */
-  --vm-l: #d83f28;
-  --vm-d: #b82e19;
-  --vm-dd: #a22714;
-  --cream: #fff4e6;
-  --white: #fffbf5;
-  --deep: #8e210f; /* 生成りの面の上の文字 */
+/* 色は、すべて --ng-* の変数（themes.css が色の組を決める。ここには色を直に書かない）。
+   .ngp が、最初の画面（.ng）と下のブロック（.ng-st）を包み、data-theme で色の組が変わる。 */
+.ngp {
   --font: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   --spring: cubic-bezier(0.34, 1.45, 0.5, 1);
   --out: cubic-bezier(0.16, 0.9, 0.22, 1);
-  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .04 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --gut: clamp(20px, 4vw, 64px);
   font-family: var(--font);
+  position: relative;
 }
 
 /* 自分の画面のあいだだけ、サイト共通の丸いカーソルを消して、つかめる手にする */
@@ -45,8 +40,10 @@ body:has(.ng) .cursor-ring {
   isolation: isolate;
   overflow: clip;
   height: var(--H);
-  color: var(--white);
-  background: radial-gradient(120% 95% at 50% 52%, var(--vm-l) 0%, var(--vm) 52%, var(--vm-d) 100%);
+  color: var(--ng-ink2);
+  background:
+    linear-gradient(to bottom, transparent 84%, var(--ng-bg-d) 100%),
+    radial-gradient(120% 95% at 50% 52%, var(--ng-bg-l) 0%, var(--ng-bg) 52%, var(--ng-bg-d) 100%);
   -webkit-user-select: none;
   user-select: none;
   touch-action: pan-y;
@@ -61,9 +58,9 @@ body:has(.ng) .cursor-ring {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: var(--grain);
+  background-image: var(--ng-grain);
   background-size: 220px;
-  opacity: 0.22;
+  opacity: var(--ng-grain-a);
   mix-blend-mode: multiply;
 }
 
@@ -84,7 +81,7 @@ body:has(.ng) .cursor-ring {
   width: calc(var(--R) * 2);
   height: calc(var(--R) * 2);
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 244, 230, 0.26);
+  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(26% * var(--ng-la)), transparent);
   animation: ngRipple 9s linear infinite;
   will-change: transform, opacity;
 }
@@ -109,6 +106,16 @@ body:has(.ng) .cursor-ring {
 }
 
 /* ───── 料理の写真の輪 ───── */
+/* 画面の上下の端では、写真がやわらかく朱に溶ける（写真が半端に切れて見えないように） */
+.ng-ringwrap {
+  --fade: clamp(56px, 10svh, 100px);
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
+}
 .ng-ring {
   --rot: 0deg;
   position: absolute;
@@ -116,7 +123,6 @@ body:has(.ng) .cursor-ring {
   top: var(--cy);
   width: 0;
   height: 0;
-  z-index: 3;
   transition: scale 0.8s cubic-bezier(0.5, 0, 0.75, 0.4);
 }
 /* 軌道（輪の線。写真のすきまから見える） */
@@ -129,7 +135,7 @@ body:has(.ng) .cursor-ring {
   height: calc(var(--R) * 2);
   box-sizing: border-box;
   border-radius: 50%;
-  border: 2px solid rgba(255, 244, 230, 0.42);
+  border: 2px solid color-mix(in srgb, var(--ng-ink) calc(42% * var(--ng-la)), transparent);
 }
 .ng-ring::after {
   content: "";
@@ -140,7 +146,7 @@ body:has(.ng) .cursor-ring {
   height: calc(var(--R) * 1.36);
   box-sizing: border-box;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 244, 230, 0.2);
+  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
 }
 /* 皿 1 枚。位置は --a（置き場所）と --rot（輪の回転）。回っても、写真はいつも上を向く */
 .ng-dish {
@@ -180,10 +186,10 @@ body:has(.ng) .cursor-ring {
 }
 .ng-photo {
   overflow: hidden;
-  background: #f3c9a0;
+  background: var(--ng-ph);
   box-shadow:
-    0 0 0 calc(var(--d) * 0.03) var(--cream),
-    0 calc(var(--d) * 0.1) calc(var(--d) * 0.22) calc(var(--d) * -0.06) rgba(86, 10, 0, 0.6);
+    0 0 0 calc(var(--d) * 0.03) var(--ng-rim),
+    0 calc(var(--d) * 0.1) calc(var(--d) * 0.22) calc(var(--d) * -0.06) color-mix(in srgb, var(--ng-shade) 60%, transparent);
 }
 .ng-photo img {
   display: block;
@@ -221,13 +227,13 @@ body:has(.ng) .cursor-ring {
 .ng[data-kind="prep"] .ng-void {
   opacity: 1;
   scale: 1;
-  box-shadow: 0 0 0 calc(var(--d) * 0.03) var(--cream);
+  box-shadow: 0 0 0 calc(var(--d) * 0.03) var(--ng-vline);
 }
 .ng[data-kind="off"] .ng-void {
   opacity: 1;
   scale: 1;
   background: transparent;
-  box-shadow: inset 0 0 0 2px rgba(255, 244, 230, 0.78);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ng-ink) 78%, transparent);
 }
 .ng-dish:hover .ng-void {
   scale: 1.1;
@@ -259,7 +265,7 @@ body:has(.ng) .cursor-ring {
   align-items: baseline;
   gap: 10px;
   min-height: 44px;
-  color: var(--cream);
+  color: var(--ng-ink);
   animation: ngFade 0.9s ease 0.2s backwards;
 }
 .ng-logo b {
@@ -278,9 +284,9 @@ body:has(.ng) .cursor-ring {
   gap: 10px;
   min-height: 48px;
   padding: 0 22px 0 18px;
-  border: 2px solid var(--cream);
+  border: 2px solid var(--ng-ink);
   border-radius: 999px;
-  color: var(--white);
+  color: var(--ng-ink2);
   font: 700 14px/1 var(--font);
   letter-spacing: 0.1em;
   transition:
@@ -290,8 +296,8 @@ body:has(.ng) .cursor-ring {
   animation: ngFade 0.9s ease 0.35s backwards;
 }
 .ng-find:hover {
-  background: var(--cream);
-  color: var(--deep);
+  background: var(--ng-fill);
+  color: var(--ng-on-fill);
   transform: scale(1.05);
 }
 @keyframes ngFade {
@@ -324,8 +330,12 @@ body:has(.ng) .cursor-ring {
   font: 900 calc(var(--R) * 0.124) / 1.16 var(--font);
   font-feature-settings: "palt" 1;
   letter-spacing: -0.015em;
-  color: var(--cream);
-  text-shadow: 0 0.04em 0 rgba(112, 18, 4, 0.3);
+  color: var(--ng-ink);
+  text-shadow: 0 0.04em 0 color-mix(in srgb, var(--ng-tshade) 30%, transparent);
+}
+.ng-h1 .mk {
+  font-style: normal;
+  color: var(--ng-accent);
 }
 .ng-h1 .ln {
   display: block;
@@ -352,7 +362,7 @@ body:has(.ng) .cursor-ring {
   font: 500 clamp(12.5px, calc(var(--R) * 0.03), 15px) / 1.85 var(--font);
   letter-spacing: 0.03em;
   white-space: pre-line;
-  color: var(--white);
+  color: var(--ng-ink2);
   text-wrap: balance;
   animation: ngUp 1s var(--out) 1.3s backwards;
 }
@@ -406,23 +416,23 @@ body:has(.ng) .cursor-ring {
   }
 }
 .ng-b.live {
-  background: var(--cream);
-  color: var(--deep);
+  background: var(--ng-fill);
+  color: var(--ng-on-fill);
 }
 .ng-b.prep {
-  box-shadow: inset 0 0 0 2.5px var(--cream);
-  color: var(--white);
+  box-shadow: inset 0 0 0 2.5px var(--ng-ink);
+  color: var(--ng-ink2);
 }
 .ng-b.off {
-  border: 2.5px dashed rgba(255, 251, 245, 0.88);
-  color: var(--white);
+  border: 2.5px dashed color-mix(in srgb, var(--ng-ink2) 88%, transparent);
+  color: var(--ng-ink2);
 }
 .ng-b::after {
   content: "";
   position: absolute;
   inset: -7px;
   border-radius: 50%;
-  border: 2px solid var(--cream);
+  border: 2px solid var(--ng-ink);
   opacity: 0;
   transform: scale(0.86);
   transition:
@@ -441,14 +451,14 @@ body:has(.ng) .cursor-ring {
   transform: scale(1.07);
 }
 .ng-b.live:hover {
-  background: #fff;
+  background: var(--ng-fill-h);
 }
 .ng-b.prep:hover,
 .ng-b.off:hover {
-  background-color: rgba(255, 244, 230, 0.16);
+  background-color: color-mix(in srgb, var(--ng-ink) 14%, transparent);
 }
 .ng-b:focus-visible {
-  outline: 3px solid var(--white);
+  outline: 3px solid var(--ng-focus);
   outline-offset: 8px;
 }
 .ng-b .l {
@@ -492,13 +502,11 @@ body:has(.ng) .cursor-ring {
 }
 
 .ng-info {
-  margin-top: calc(var(--R) * 0.06);
+  margin-top: calc(var(--R) * 0.056);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px 16px;
-  min-height: calc(var(--R) * 0.17);
+  gap: calc(var(--R) * 0.036);
   animation: ngInfo 0.5s var(--out);
 }
 @keyframes ngInfo {
@@ -513,48 +521,24 @@ body:has(.ng) .cursor-ring {
   animation-delay: 2.15s;
   animation-fill-mode: backwards;
 }
-.ng-state {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 13px 7px 11px;
-  border: 1.5px solid currentColor;
-  border-radius: 999px;
-  color: var(--white);
-  font: 700 12px/1 var(--font);
-  letter-spacing: 0.12em;
-  white-space: nowrap;
-}
-.ng-state i {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 1.5px solid currentColor;
-  flex: none;
-}
-.ng[data-kind="live"] .ng-state i {
-  background: currentColor;
-  animation: ngBlink 2s ease-in-out infinite;
-}
-@keyframes ngBlink {
-  50% {
-    opacity: 0.35;
-  }
-}
+/* 数字は見せ場: 大きく、ゆったり */
 .ng-facts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  gap: 2px 18px;
-  font: 700 13px/1.55 var(--font);
-  color: var(--white);
+  gap: 6px calc(var(--R) * 0.062);
+  font: 700 clamp(14px, calc(var(--R) * 0.033), 17px) / 1.5 var(--font);
+  letter-spacing: 0.02em;
+  color: var(--ng-ink2);
 }
 .ng-facts b {
-  margin: 0 2px;
-  font: 900 clamp(18px, calc(var(--R) * 0.047), 24px) / 1 var(--font);
+  margin: 0 3px 0 4px;
+  font: 900 clamp(27px, calc(var(--R) * 0.078), 40px) / 1 var(--font);
   font-variant-numeric: tabular-nums;
-  color: var(--cream);
+  letter-spacing: -0.01em;
+  color: var(--ng-ink);
+  text-shadow: 0 0.05em 0 color-mix(in srgb, var(--ng-tshade) 28%, transparent);
 }
 .ng-open {
   transition: opacity 0.6s ease;
@@ -563,20 +547,57 @@ body:has(.ng) .cursor-ring {
   opacity: 0;
 }
 .ng-open small {
-  margin-left: 8px;
-  font: 500 12px/1.5 var(--font);
-  letter-spacing: 0.02em;
+  display: block;
+  margin-top: 6px;
+  font: 500 clamp(12.5px, calc(var(--R) * 0.028), 14px) / 1.4 var(--font);
+  letter-spacing: 0.03em;
+}
+.ng-act {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px calc(var(--R) * 0.04);
+}
+.ng-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 15px 9px 13px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  color: var(--ng-ink2);
+  font: 700 13px/1 var(--font);
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+.ng-state i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  flex: none;
+}
+.ng[data-kind="live"] .ng-state i {
+  background: var(--ng-accent);
+  border-color: var(--ng-accent);
+  animation: ngBlink 2s ease-in-out infinite;
+}
+@keyframes ngBlink {
+  50% {
+    opacity: 0.35;
+  }
 }
 .ng-go {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  min-height: 46px;
-  padding: 0 22px 0 26px;
+  gap: 16px;
+  min-height: 52px;
+  padding: 0 26px 0 30px;
   border-radius: 999px;
-  background: var(--cream);
-  color: var(--deep);
-  font: 900 14px/1 var(--font);
+  background: var(--ng-fill);
+  color: var(--ng-on-fill);
+  font: 900 16px/1 var(--font);
   letter-spacing: 0.08em;
   white-space: nowrap;
   pointer-events: auto;
@@ -589,19 +610,19 @@ body:has(.ng) .cursor-ring {
   transition: transform 0.45s var(--spring);
 }
 .ng-go:hover {
-  background: #fff;
+  background: var(--ng-fill-h);
   transform: scale(1.05);
 }
 .ng-go:hover span {
   transform: translateX(5px);
 }
 .ng-go:focus-visible {
-  outline: 3px solid var(--white);
+  outline: 3px solid var(--ng-focus);
   outline-offset: 4px;
 }
 .ng-find:focus-visible,
 .ng-logo:focus-visible {
-  outline: 3px solid var(--white);
+  outline: 3px solid var(--ng-focus);
   outline-offset: 4px;
 }
 
@@ -619,7 +640,7 @@ body:has(.ng) .cursor-ring {
   position: absolute;
   inset: 0;
   z-index: 30;
-  background: var(--vm-dd);
+  background: var(--ng-bg-dd);
   clip-path: circle(0px at var(--wx, 50%) var(--wy, 50%));
   pointer-events: none;
 }
@@ -652,10 +673,20 @@ body:has(.ng) .cursor-ring {
 
 /* ═══════════ スマホ：輪は画面より大きく、下半分に半分だけ。見出しは上、ボタンは親指の位置 ═══════════ */
 @media (max-width: 760px) {
+  .ngp {
+    /* 見出し・リードの下に、輪の頂点を置く。背の高いスマホでは、色見本の行ぶんだけ下げる */
+    --ltop: calc(202px + (100vw - 2 * var(--gut)) * 0.305 + var(--sw-gap, 0px));
+  }
   .ng {
     --H: max(100svh, 640px);
-    --R: min(122vw, calc(var(--H) * 0.55));
-    --cy: calc(var(--H) + 24px);
+    --R: min(66vw, calc(var(--H) * 0.31)); /* 弧に沿って 5 枚以上が見える大きさ */
+    --cy: calc(var(--ltop) + var(--R) * 1.188);
+  }
+  /* 輪の下半分は朱に溶けて、親指の位置の数字・ボタンに場所をあける */
+  .ng-ringwrap {
+    --fade: 0px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--cy) - var(--R) * 0.3), transparent calc(var(--cy) + var(--R) * 0.34));
+    mask-image: linear-gradient(to bottom, #000 0, #000 calc(var(--cy) - var(--R) * 0.3), transparent calc(var(--cy) + var(--R) * 0.34));
   }
   .ng-bar {
     padding-top: 14px;
@@ -669,7 +700,7 @@ body:has(.ng) .cursor-ring {
     top: 0;
     width: auto;
     transform: none;
-    padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 24px);
+    padding: 76px var(--gut) calc(env(safe-area-inset-bottom, 0px) + 26px);
   }
   .ng-h1 {
     font-size: calc((100vw - 2 * var(--gut)) / 11.4);
@@ -677,7 +708,8 @@ body:has(.ng) .cursor-ring {
   .ng-lead {
     margin-top: 14px;
     max-width: 24em;
-    font-size: 14px;
+    font-size: clamp(13px, 3.7vw, 14px);
+    letter-spacing: 0.015em;
   }
   .ng-sel {
     margin-top: auto;
@@ -692,18 +724,42 @@ body:has(.ng) .cursor-ring {
   }
   .ng-info {
     order: -1;
-    margin: 0 0 18px;
-    min-height: 0;
-    gap: 8px 12px;
+    margin: 0 0 22px;
+    gap: 14px;
   }
   .ng-facts {
-    gap: 0 14px;
+    gap: 4px 20px;
+  }
+  .ng-open small {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 760px) and (min-height: 780px) {
+  .ngp {
+    --sw-gap: 50px;
+  }
+}
+/* 背の低いスマホ（360×640 など）: 数字・ボタンを少し詰めて、輪の写真と重ならないようにする */
+@media (max-width: 760px) and (max-height: 700px) {
+  .ng {
+    --R: min(60vw, calc(var(--H) * 0.27));
   }
   .ng-facts b {
-    font-size: 19px;
+    font-size: 24px;
+  }
+  .ng-info {
+    gap: 10px;
+    margin-bottom: 16px;
   }
   .ng-go {
     min-height: 48px;
+    font-size: 15px;
+  }
+  .ng-state {
+    padding: 8px 13px 8px 11px;
+  }
+  .ng-b {
+    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 52px);
   }
 }
 
@@ -747,9 +803,9 @@ body:has(.ng) .cursor-ring {
   position: relative;
   isolation: isolate;
   overflow: clip;
-  padding: clamp(96px, 13vw, 190px) clamp(20px, 5vw, 80px) clamp(110px, 14vw, 210px);
-  background: var(--vm-d);
-  color: var(--cream);
+  padding: clamp(100px, 13vw, 200px) clamp(20px, 4.5vw, 72px) clamp(120px, 14vw, 220px);
+  background: var(--ng-bg-d);
+  color: var(--ng-ink);
 }
 .ng-st::before {
   content: "";
@@ -757,16 +813,16 @@ body:has(.ng) .cursor-ring {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: var(--grain);
+  background-image: var(--ng-grain);
   background-size: 220px;
-  opacity: 0.2;
+  opacity: var(--ng-grain-a);
   mix-blend-mode: multiply;
 }
 .ng-st-ring {
   position: absolute;
-  right: -22vw;
-  top: -6vw;
-  width: min(70vw, 980px);
+  right: -24vw;
+  top: -8vw;
+  width: min(74vw, 1040px);
   aspect-ratio: 1;
   z-index: 0;
   pointer-events: none;
@@ -775,85 +831,100 @@ body:has(.ng) .cursor-ring {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 244, 230, 0.2);
+  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
 }
 .ng-st-ring i:nth-child(2) {
   inset: 12%;
 }
 .ng-st-ring i:nth-child(3) {
   inset: 26%;
-  border-color: rgba(255, 244, 230, 0.28);
+  border-color: color-mix(in srgb, var(--ng-ink) calc(28% * var(--ng-la)), transparent);
 }
 .ng-st-in {
   position: relative;
   z-index: 1;
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  row-gap: clamp(44px, 6.5vw, 96px);
+  row-gap: clamp(48px, 7vw, 110px);
+}
+.ng-st-lead {
+  display: grid;
+  row-gap: clamp(26px, 3.4vw, 48px);
 }
 .ng-st-p1 {
-  max-width: 36em;
-  font: 700 clamp(20px, 2.3vw, 31px) / 1.95 var(--font);
+  font: 700 clamp(20px, 2.35vw, 34px) / 1.95 var(--font);
   white-space: pre-line;
   text-wrap: pretty;
-  color: var(--cream);
+  color: var(--ng-ink);
 }
 .ng-st-p2 {
   max-width: 36em;
   margin-left: auto;
   font: 500 clamp(15px, 1.5vw, 20px) / 2.1 var(--font);
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: var(--ng-ink2);
   text-wrap: pretty;
 }
+
+/* 2 つの声: 画面の主役。大きな文字の横に、料理の丸い写真（輪が広がる飾りつき） */
 .ng-st-p3 {
   display: grid;
-  row-gap: clamp(28px, 4.5vw, 64px);
-  padding: clamp(12px, 3vw, 40px) 0;
-  font: 900 clamp(26px, 4.2vw, 62px) / 1.35 var(--font);
+  row-gap: clamp(64px, 10vw, 170px);
+  margin: clamp(20px, 3vw, 56px) 0;
+  font-weight: 900;
   font-feature-settings: "palt" 1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   white-space: pre-line;
-  color: var(--cream);
+  color: var(--ng-ink);
 }
 .ng-voice {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: clamp(16px, 3.4vw, 56px);
+  gap: clamp(20px, 3.4vw, 64px);
 }
 .ng-voice.r {
   justify-content: flex-end;
 }
 .ng-voice .t {
   display: block;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
-  text-shadow: 0 0.035em 0 rgba(112, 18, 4, 0.28);
+  flex: 0 0 auto;
+  font-size: clamp(40px, 8.3vw, 120px);
+  line-height: 1.2;
+  text-shadow: 0 0.035em 0 color-mix(in srgb, var(--ng-tshade) 30%, transparent);
+}
+.ng-voice .ln {
+  display: block;
+  white-space: nowrap;
 }
 .ng-voice.r .t {
   text-align: right;
 }
 .ng-voice .q {
   display: inline-block;
-  font-size: 1.16em;
-  line-height: 0.5;
-  opacity: 0.78;
+  font-size: 1.05em;
+  color: var(--ng-accent);
+  opacity: 0.85;
 }
 .ng-voice .dish {
-  flex: none;
   position: relative;
-  width: clamp(84px, 13.5vw, 200px);
+  flex: none;
+  width: clamp(150px, 22vw, 330px);
   aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #f3c9a0;
-  box-shadow:
-    0 0 0 clamp(3px, 0.45vw, 7px) var(--cream),
-    0 22px 40px -18px rgba(70, 8, 0, 0.7);
 }
 .ng-voice.l .dish {
   order: 2;
+}
+.ng-voice .dish .ph {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--ng-ph);
+  box-shadow:
+    0 0 0 clamp(4px, 0.5vw, 8px) var(--ng-rim),
+    0 30px 50px -22px color-mix(in srgb, var(--ng-shade) 72%, transparent);
 }
 .ng-voice .dish img {
   display: block;
@@ -861,21 +932,62 @@ body:has(.ng) .cursor-ring {
   height: 100%;
   object-fit: cover;
 }
+.ng-voice .dish .rg {
+  position: absolute;
+  inset: -12%;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--ng-ink) calc(40% * var(--ng-la)), transparent);
+}
+.ng-voice .dish .rg + .rg {
+  inset: -26%;
+  border-color: color-mix(in srgb, var(--ng-ink) calc(20% * var(--ng-la)), transparent);
+}
+.ng-st-p4 {
+  max-width: 48em;
+  font: 700 clamp(18px, 2vw, 27px) / 2 var(--font);
+  white-space: pre-line;
+  color: var(--ng-ink);
+  text-wrap: pretty;
+}
 .ng-st-p4::after {
   content: "";
   display: block;
-  width: clamp(44px, 5vw, 64px);
+  width: clamp(48px, 5.4vw, 72px);
   aspect-ratio: 1;
   margin-top: clamp(32px, 4vw, 56px);
-  border: 3px solid var(--cream);
+  border: 3px solid var(--ng-accent);
   border-radius: 50%;
 }
-.ng-st-p4 {
-  max-width: 38em;
-  font: 700 clamp(18px, 2vw, 27px) / 2 var(--font);
-  white-space: pre-line;
-  color: var(--cream);
-  text-wrap: pretty;
+
+/* 登場（スクリプトが動き、動きを減らす設定でないときだけ。出ている状態が、はじめの状態） */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .ng-st [data-rv]:not(.in) {
+    opacity: 0;
+    transform: translateY(44px);
+  }
+  .ng-st [data-rv] {
+    transition:
+      opacity 0.9s ease,
+      transform 1.2s var(--out);
+  }
+  .ng-st .ng-voice[data-rv]:not(.in) .dish {
+    scale: 0.5;
+    rotate: -50deg;
+  }
+  .ng-st .ng-voice[data-rv] .dish {
+    transition:
+      scale 1.3s var(--spring) 0.15s,
+      rotate 1.5s var(--out) 0.15s;
+  }
+  .ng-st .ng-voice[data-rv]:not(.in) .dish .rg {
+    scale: 0.55;
+    opacity: 0;
+  }
+  .ng-st .ng-voice[data-rv] .dish .rg {
+    transition:
+      scale 1.6s var(--out) 0.45s,
+      opacity 1s ease 0.45s;
+  }
 }
 
 @media (max-width: 760px) {
@@ -888,12 +1000,109 @@ body:has(.ng) .cursor-ring {
     margin-left: 0;
   }
   .ng-st-p3 {
-    font-size: clamp(25px, 7.4vw, 40px);
+    row-gap: clamp(48px, 14vw, 80px);
   }
   .ng-voice {
-    gap: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
   }
-  .ng-voice .dish {
-    width: clamp(72px, 24vw, 110px);
+  .ng-voice.r {
+    align-items: flex-end;
+  }
+  .ng-voice .t {
+    font-size: clamp(34px, 11.4vw, 56px);
+  }
+  .ng-voice .dish,
+  .ng-voice.l .dish {
+    order: 2;
+    width: clamp(120px, 40vw, 190px);
+    margin-top: -6px;
+  }
+  .ng-voice.l .dish {
+    align-self: flex-end;
+    margin-right: 4vw;
+  }
+  .ng-voice.r .dish {
+    order: 0;
+    align-self: flex-start;
+    margin: 0 0 -4px 4vw;
+  }
+  .ng-voice.r {
+    flex-direction: column;
+  }
+}
+
+/* ═══════════ 色の見比べ（小さな丸い色見本を横に並べる。見比べ用の部品） ═══════════ */
+/* PC: 最初の画面の左下のすみ。スマホ: 見出し・リードと輪のあいだ */
+.ng-sw {
+  position: absolute;
+  left: clamp(10px, 1.2vw, 18px);
+  top: calc(max(100svh, 660px) - 62px);
+  z-index: 12;
+  pointer-events: none;
+}
+.ng-sw ul {
+  display: flex;
+  width: max-content;
+  padding: 0 5px;
+  border-radius: 28px;
+  background: rgba(20, 16, 12, 0.32);
+  list-style: none;
+}
+.ng-swi {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  pointer-events: auto;
+}
+.ng-swi i {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ng-bg);
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 3px rgba(0, 0, 0, 0.4);
+  transition: scale 0.4s var(--spring);
+}
+.ng-swi b {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ng-fill);
+}
+.ng-swi:hover i {
+  scale: 1.15;
+}
+.ng-swi[aria-current] i {
+  scale: 1.3;
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 6px rgba(0, 0, 0, 0.55);
+}
+.ng-swi:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: -4px;
+  border-radius: 50%;
+}
+.ng.is-leaving ~ .ng-sw {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+@media (max-width: 760px) {
+  .ng-sw {
+    left: 50%;
+    top: calc(var(--ltop) - var(--sw-gap, 0px) - 24px);
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ng-swi i {
+    transition: none;
   }
 }
