@@ -478,7 +478,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       const wp = ease(clamp((p - 0.07) / 0.45));
       const target = -0.15 + wp * 1.4;
       if (target > pwx + 0.0005) {
-        for (let x = pwx * Fw; x < target * Fw; x += 11 * s) palm(x);
+        for (let x = pwx * Fw; x < target * Fw; x += 24 * s) palm(x);
         palm(target * Fw);
       } else if (target < pwx - 0.0005) {
         const sx = Math.max(0, Math.floor(target * Fw));

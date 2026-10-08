@@ -555,3 +555,10 @@
 body:has(.k-root) { cursor: auto; }
 body:has(.k-root) a, body:has(.k-root) button { cursor: pointer; }
 body:has(.k-root) .cursor-dot, body:has(.k-root) .cursor-ring { display: none !important; }
+
+/* 重い所を軽く: 動く層は自分の層にして、電球などの静かな層を毎コマ描き直さない */
+.k-bulbs { will-change: transform; transform: translateZ(0); }
+.k-dim { will-change: opacity; }
+.k-deep { will-change: opacity; }
+.k-sheen { will-change: transform; transform: translateZ(0); }
+.k-head, .k-mark, .k-menu { will-change: transform; }
