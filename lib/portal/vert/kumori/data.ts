@@ -65,3 +65,9 @@ export const KUMORI_LIP_PATHS: string[] = [
 ];
 
 export const KUMORI_PHOTO_BY = "Giorgio Trovato"; // 最初の画面の映り込み（v2-salon-02）
+
+/** エリア・利用シーンの曇りガラスの奥の雰囲気写真（photos2.json の v2-light-02 / v2-light-01。approved: true）。ほかでは使わない */
+export const KUMORI_AREA_PHOTO = { photo: "https://images.unsplash.com/photo-1574197635162-68e4b468e4e9", pos: "50% 36%", by: "Jonathan Borba" };
+export const KUMORI_SCENE_PHOTO = { photo: "https://images.unsplash.com/photo-1764867256379-3877b9cb5832", pos: "50% 62%", by: "Efe Kekikciler" };
+/** 地方ごとの 1 行の列数(幅いっぱいに広げる) */
+export const KUMORI_AREA_COLS: Record<string, number> = { 北海道: 1, 東北: 6, 関東: 7, 中部: 5, 近畿: 7, 中国: 5, 四国: 4, 九州沖縄: 8 };

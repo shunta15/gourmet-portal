@@ -44,9 +44,9 @@
 }
 .k-sec {
   position: relative;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: clamp(64px, 9vw, 120px) clamp(20px, 4vw, 48px) 0;
+  padding: clamp(56px, 8vw, 104px) var(--gut, clamp(20px, 4vw, 64px)) 0;
 }
 .k-head2 {
   margin-bottom: clamp(28px, 4vw, 52px);
@@ -248,7 +248,12 @@
 .k-pane:hover { transform: translateY(-3px); }
 .k-pane { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
 
-/* ---- 大きな曇りガラス(エリア・シーン) ---- */
+/* ---- 大きな曇りガラス(エリア・シーン)。奥に雰囲気の写真、乗せたところが丸く拭かれる ---- */
+@property --ar {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
 .k-big {
   position: relative;
   padding: 18px;
@@ -257,18 +262,52 @@
   box-shadow: 0 22px 44px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
   isolation: isolate;
 }
-.k-big::before {
+.k-areaglass {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #3b2416;
+  box-shadow: inset 0 0 0 1px rgba(40, 32, 28, 0.5), inset 0 0 34px 6px rgba(16, 9, 5, 0.5);
+  isolation: isolate;
+  --ar: 0px;
+  transition: --ar 4.5s cubic-bezier(0.3, 0, 0.8, 1);
+}
+.k-areaglass:has(.k-pref:is(:hover, :focus-visible), .k-scene:is(:hover, :focus-visible)) {
+  --ar: 92px;
+  transition: --ar 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.k-areaphoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.2) saturate(1.3) brightness(1.12) contrast(1.06);
+}
+.kb-fog.kb-fog-area {
+  --r: 0%;
+  transition: none;
+  -webkit-mask-image: radial-gradient(circle at var(--ax, 50%) var(--ay, 50%), transparent calc(var(--ar) - 6px), #000 var(--ar));
+  mask-image: radial-gradient(circle at var(--ax, 50%) var(--ay, 50%), transparent calc(var(--ar) - 6px), #000 var(--ar));
+}
+/* 拭いた円のふちに残る、曇りの盛り上がり(細い明るい線) */
+.k-areaglass::after {
   content: "";
   position: absolute;
-  inset: 8px;
-  border-radius: 8px;
-  z-index: -1;
-  background: var(--beads), var(--streaks), var(--fogimg2) 0 0 / 520px 520px, var(--fogimg) 0 0 / 420px 420px,
-    radial-gradient(60% 50% at 20% 10%, rgba(255, 214, 150, 0.45), transparent 70%), var(--fogbase), #3b2416;
-  box-shadow: inset 0 0 0 1px rgba(40, 32, 28, 0.5), inset 0 0 34px 6px rgba(16, 9, 5, 0.5);
+  z-index: 3;
+  left: var(--ax, 50%);
+  top: var(--ay, 50%);
+  width: calc(var(--ar) * 2);
+  height: calc(var(--ar) * 2);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 14px 2px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.3);
+  pointer-events: none;
 }
 .k-bulbrow {
   position: absolute;
+  z-index: 3;
   left: 22px;
   right: 22px;
   top: 6px;
@@ -276,60 +315,59 @@
   background: radial-gradient(circle, #fffdf2 0 2.5px, #ffe2a0 3.5px 5px, rgba(255, 190, 100, 0.4) 8px, transparent 11px) 0 50% / 46px 22px repeat-x;
   pointer-events: none;
 }
-.k-areas {
-  padding: 40px clamp(20px, 3vw, 44px) 28px;
+.k-areain {
+  position: relative;
+  z-index: 2;
+  padding: 44px clamp(20px, 3vw, 48px) 26px;
 }
 .k-region-row {
   display: grid;
-  grid-template-columns: minmax(150px, 220px) 1fr;
-  gap: 8px 28px;
-  align-items: start;
-  padding: 14px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  grid-template-columns: 250px 1fr;
+  gap: 6px 24px;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
 }
 .k-region-row:first-of-type { border-top: 0; }
-/* 指で書いた字(曇りを拭いて抜いた太い線。まわりに曇りの縁) */
-.k-region,
-.k-g {
-  position: relative;
+/* 地方名: 最初の画面の題字と同じ「曇りを指で抜いた字」(字の中に奥が透け、縁に曇りの細い明るい線) */
+.k-region {
   margin: 0;
-  font-family: var(--k-kuren), "Zen Kurenaido", cursive;
   font-weight: 400;
   line-height: 1.1;
-  color: #4a2a14;
-  -webkit-text-stroke: 3.5px #4a2a14;
-  paint-order: stroke fill;
-  letter-spacing: 0.04em;
-  isolation: isolate;
 }
-.k-region {
-  font-size: 44px;
-}
-.k-region span {
+.k-rg {
+  position: relative;
   display: block;
-  font-size: inherit;
+  font-family: var(--k-kuren), "Zen Kurenaido", cursive;
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
-.k-region::before,
-.k-g::before {
-  content: attr(data-t);
+.k-rg-rim {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
-  -webkit-text-stroke: 12px rgba(252, 253, 254, 0.95);
   color: transparent;
-  font-size: inherit;
-  white-space: nowrap;
-  letter-spacing: inherit;
+  -webkit-text-stroke: 8px rgba(252, 253, 254, 0.95);
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
+}
+.k-rg-in {
+  position: relative;
+  color: transparent;
+  background: linear-gradient(170deg, #ebbd84 0%, #b9824c 50%, #7d4b27 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 5px transparent;
 }
 .k-region small {
   display: block;
-  margin-top: 14px;
+  margin-top: 6px;
   font-family: var(--k-mincho), serif;
   font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0.2em;
-  color: var(--ink2);
-  -webkit-text-stroke: 0;
+  color: #33272a;
 }
 .k-prefs {
   list-style: none;
@@ -337,89 +375,83 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 6px;
+  gap: 4px 6px;
+}
+.k-prefs li {
+  display: flex;
+  flex: 1 1 calc(100% / var(--c, 6) - 6px);
+  min-width: 96px;
 }
 .k-pref {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex: 1;
   align-items: center;
-  gap: 6px;
-  min-height: 44px;
-  padding: 0 16px;
-  font-size: 18px;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 0 12px;
+  font-size: 21px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--ink);
-  text-shadow: 0 0 10px rgba(238, 243, 245, 0.96), 0 0 3px rgba(238, 243, 245, 0.96);
-  isolation: isolate;
-  transition: color 0.3s 0.2s, text-shadow 0.3s 0.2s;
+  text-shadow: 0 0 10px rgba(246, 242, 234, 0.9), 0 0 3px rgba(246, 242, 234, 0.9);
+  border-radius: 8px;
+  transition: letter-spacing 0.4s;
 }
 .k-pref em {
   font-style: normal;
   font-size: 12px;
-  color: var(--ink2);
-}
-.k-pref::before {
-  content: "";
-  position: absolute;
-  inset: 3px -2px;
-  z-index: -1;
-  border-radius: 999px;
-  background: radial-gradient(ellipse at 40% 35%, #ffdca4 0%, #d79b5a 52%, #7d4a26 100%);
-  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.85), inset 0 0 10px rgba(60, 28, 12, 0.55);
-  transform: scale(0.15);
-  opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.3s;
+  color: #33272a;
 }
 .k-pref:hover,
 .k-pref:focus-visible {
-  color: var(--cream);
-  text-shadow: 0 1px 8px rgba(10, 4, 2, 0.9);
-}
-.k-pref:hover em,
-.k-pref:focus-visible em {
-  color: #f1e2cc;
-}
-.k-pref:hover::before,
-.k-pref:focus-visible::before {
-  transform: scale(1);
-  opacity: 1;
+  letter-spacing: 0.14em;
 }
 
-/* ---- 3 シーン(口紅で書いた線) ---- */
-.k-scenes {
-  padding: 40px clamp(20px, 3vw, 44px) 28px;
+/* ---- 3 シーン(口紅で書いた印と名前を、大きく、不ぞろいに) ---- */
+.k-sceneglass {
+  min-height: 460px;
 }
-.k-scenes ul {
+.k-scenelist {
+  position: relative;
+  z-index: 2;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 46px clamp(24px, 4vw, 64px) 96px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px 24px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px 0;
+  align-items: center;
 }
+.k-sc0 { grid-column: 1 / span 5; transform: rotate(-2deg); }
+.k-sc1 { grid-column: 6 / span 4; margin-top: 30px; transform: rotate(1.6deg); }
+.k-sc2 { grid-column: 10 / span 3; transform: rotate(-1deg); }
+.k-sc3 { grid-column: 2 / span 4; grid-row: 2; transform: rotate(1.2deg); }
+.k-sc4 { grid-column: 6 / span 3; grid-row: 2; margin-top: -14px; transform: rotate(-1.8deg); }
+.k-sc5 { grid-column: 9 / span 4; grid-row: 2; transform: rotate(2deg); }
 .k-scene {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 84px;
-  padding: 0 18px;
+  min-height: 124px;
+  padding: 0 22px;
   color: var(--ink);
   isolation: isolate;
 }
 .k-scene-t {
   position: relative;
   z-index: 1;
-  font-size: 27px;
+  font-size: clamp(30px, 3.5vw, 50px);
   font-weight: 800;
   letter-spacing: 0.08em;
-  text-shadow: 0 0 12px rgba(238, 243, 245, 0.96), 0 0 4px rgba(238, 243, 245, 0.96);
+  text-shadow: 0 0 12px rgba(246, 242, 234, 0.95), 0 0 4px rgba(246, 242, 234, 0.95);
 }
 .k-lip {
   position: absolute;
   left: 0;
-  top: 54%;
+  top: 56%;
   width: 100%;
   height: 40%;
   z-index: 0;
@@ -438,8 +470,8 @@
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
 }
-.k-lip-b { stroke: #a8132d; stroke-width: 9px; }
-.k-lip-g { stroke: #e0405e; stroke-width: 2.4px; opacity: 0.8; transform: translate(0, -2px); }
+.k-lip-b { stroke: #a8132d; stroke-width: 13px; }
+.k-lip-g { stroke: #e0405e; stroke-width: 3px; opacity: 0.8; transform: translate(0, -3px); }
 .k-scene:hover .k-lip path,
 .k-scene:focus-visible .k-lip path {
   animation: k-draw 0.8s cubic-bezier(0.3, 0.6, 0.2, 1);
@@ -448,6 +480,22 @@
   from { stroke-dashoffset: 1; }
   to { stroke-dashoffset: 0; }
 }
+/* 口紅(書いた道具) */
+.k-lipstick {
+  position: absolute;
+  z-index: 3;
+  right: 4%;
+  bottom: 22px;
+  width: 250px;
+  height: 46px;
+  transform: rotate(-13deg);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+.k-lipstick i { position: absolute; display: block; }
+.lp-tube { left: 0; top: 7px; width: 140px; height: 32px; border-radius: 5px; background: linear-gradient(180deg, #4a3d40, #17100f 46%, #2b2224); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+.lp-band { left: 138px; top: 3px; width: 18px; height: 40px; border-radius: 3px; background: linear-gradient(180deg, #f8e6b0, #b88a3a 55%, #7d5a1f); }
+.lp-bullet { left: 154px; top: 10px; width: 84px; height: 26px; background: linear-gradient(180deg, #ee4a66, #a8132d 68%, #7a0c20); clip-path: polygon(0 0, 74% 0, 100% 58%, 100% 100%, 0 100%); border-radius: 0 0 4px 0; }
 
 /* ---- 4 紙のカード(鏡の縁にはさむ) ---- */
 .k-sec-card {
@@ -539,12 +587,13 @@
 /* ---- 5 ほかの入口(小さな丸い手鏡) ---- */
 .k-others {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1120px;
   display: flex;
   flex-wrap: wrap;
   gap: 36px clamp(24px, 4vw, 56px);
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .k-minilink {
   display: flex;
@@ -558,8 +607,8 @@
   color: var(--cream);
 }
 .k-minilink .k-mini {
-  width: 132px;
-  height: 132px;
+  width: 160px;
+  height: 160px;
   aspect-ratio: 1;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -596,13 +645,21 @@
 }
 
 .k-credit2 {
-  max-width: 1240px;
-  margin: clamp(64px, 8vw, 100px) auto 0;
-  padding: 0 clamp(20px, 4vw, 48px);
+  max-width: 1440px;
+  margin: clamp(56px, 7vw, 88px) auto 0;
+  padding: 18px var(--gut, clamp(20px, 4vw, 64px)) 0;
   font-size: 12px;
   letter-spacing: 0.12em;
   line-height: 1.8;
-  color: rgba(255, 244, 228, 0.82);
+  text-align: center;
+  color: rgba(255, 244, 228, 0.92);
+}
+.k-credit2::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto 18px;
+  background: linear-gradient(90deg, transparent, rgba(255, 244, 228, 0.3), transparent);
 }
 
 /* フッターの色を合わせる(あたたかい濃い色) */
@@ -613,7 +670,6 @@
 /* ---- スマホ(別に設計) ---- */
 @media (max-width: 900px) {
   .k-panes { grid-template-columns: repeat(2, 1fr); }
-  .k-scenes ul { grid-template-columns: repeat(2, 1fr); }
   .k-region-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
@@ -625,12 +681,21 @@
 
   .kb-name { font-size: 24px; }
   .kb-num { font-size: 44px; }
-  .k-scenes ul { grid-template-columns: 1fr; gap: 8px; }
-  .k-scene { min-height: 64px; }
-  .k-scene-t { font-size: 24px; }
-  .k-region { font-size: 38px; }
-  .k-areas, .k-scenes { padding: 34px 14px 22px; }
-  .k-pref { padding: 0 13px; font-size: 17px; }
+  .k-scenelist { grid-template-columns: 1fr; gap: 6px; padding: 40px 18px 100px; }
+  .k-sc0, .k-sc1, .k-sc2, .k-sc3, .k-sc4, .k-sc5 { grid-column: 1; grid-row: auto; margin-top: 0; }
+  .k-sc1, .k-sc3, .k-sc5 { margin-left: 8%; }
+  .k-sc0, .k-sc2, .k-sc4 { margin-right: 8%; }
+  .k-scene { min-height: 84px; }
+  .k-scene-t { font-size: 30px; }
+  .k-rg { font-size: 36px; }
+  .k-areain { padding: 40px 12px 18px; }
+  .k-prefs li { flex: 1 1 calc(50% - 6px); min-width: 0; }
+  .k-pref { padding: 0 8px; font-size: 18px; min-height: 48px; }
+  .k-lipstick { width: 190px; right: 2%; bottom: 14px; }
+  .lp-tube { width: 104px; }
+  .lp-band { left: 102px; }
+  .lp-bullet { left: 118px; width: 66px; }
+  .k-minilink .k-mini { width: 132px; height: 132px; }
   .k-card { transform: rotate(-1deg); padding-top: 40px; }
   .k-others { gap: 30px 22px; justify-content: space-between; }
   .k-others li { width: calc(50% - 14px); }
@@ -639,7 +704,8 @@
 
 /* 動きを減らす設定: 曇りは晴れた状態(文字は読める色に) */
 @media (prefers-reduced-motion: reduce) {
-  .kb-fog { opacity: 0; transition: none; }
+  .kb-fog:not(.kb-fog-area) { opacity: 0; transition: none; }
+  .k-areaglass { transition: none; }
   .k-shade { opacity: 1; transition: none; }
   .k-pane .k-txt { color: var(--cream); text-shadow: 0 1px 14px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.7); transition: none; }
   .k-pane .kb-slug, .k-pane .k-st { color: #f1e2cc; }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "./below.css";
 import KumoriFx from "./KumoriFx";
-import { KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY } from "@/lib/portal/vert/kumori/data";
+import { KUMORI_AREA_COLS, KUMORI_AREA_PHOTO, KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY, KUMORI_SCENE_PHOTO } from "@/lib/portal/vert/kumori/data";
 
 export type BelowCategory = { slug: string; name: string; href: string; count: number };
 export type BelowArea = { slug: string; short: string; block: string; href: string; count: number };
@@ -87,30 +87,40 @@ export default function KumoriBelow(p: BelowProps) {
           <p className="k-lead2">都道府県を地方ごとに並べています。掲載が追加されると、ここに件数が出ます。</p>
         </header>
         <div className="k-big k-areas">
-          <i className="k-bulbrow" aria-hidden="true" />
-          {p.blocks.map((b) => {
-            const list = p.areas.filter((a) => a.block === b.key);
-            if (list.length === 0) return null;
-            const total = list.reduce((s, a) => s + a.count, 0);
-            return (
-              <section className="k-region-row" key={b.key} aria-label={b.label}>
-                <h3 className="k-region" data-t={b.label}>
-                  <span>{b.label}</span>
-                  <small>{b.en}{total > 0 ? ` ${total}件` : ""}</small>
-                </h3>
-                <ul className="k-prefs">
-                  {list.map((a) => (
-                    <li key={a.slug}>
-                      <Link href={a.href} prefetch={false} className="k-pref">
-                        <span>{a.short}</span>
-                        {a.count > 0 && <em>{a.count}件</em>}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            );
-          })}
+          <div className="k-areaglass" data-fogpane>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="k-areaphoto" src={img(KUMORI_AREA_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_AREA_PHOTO.photo, 900)} 900w, ${img(KUMORI_AREA_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_AREA_PHOTO.pos }} />
+            <i className="kb-fog kb-fog-area" aria-hidden="true" />
+            <i className="k-bulbrow" aria-hidden="true" />
+            <div className="k-areain">
+              {p.blocks.map((b) => {
+                const list = p.areas.filter((a) => a.block === b.key);
+                if (list.length === 0) return null;
+                const total = list.reduce((s, a) => s + a.count, 0);
+                return (
+                  <section className="k-region-row" key={b.key} aria-label={b.label}>
+                    <h3 className="k-region">
+                      <span className="k-rg" data-t={b.label}>
+                        <span className="k-rg-rim" aria-hidden="true">{b.label}</span>
+                        <span className="k-rg-in">{b.label}</span>
+                      </span>
+                      <small>{b.en}{total > 0 ? ` ${total}件` : ""}</small>
+                    </h3>
+                    <ul className="k-prefs" style={{ ["--c" as string]: KUMORI_AREA_COLS[b.key] ?? 6 }}>
+                      {list.map((a) => (
+                        <li key={a.slug}>
+                          <Link href={a.href} prefetch={false} className="k-pref">
+                            <span>{a.short}</span>
+                            {a.count > 0 && <em>{a.count}件</em>}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -121,20 +131,30 @@ export default function KumoriBelow(p: BelowProps) {
           <h2 id="k-scene-h">利用シーンから探す</h2>
         </header>
         <div className="k-big k-scenes">
-          <i className="k-bulbrow" aria-hidden="true" />
-          <ul>
-            {p.scenes.map((s, i) => (
-              <li key={s.slug}>
-                <Link href={s.href} prefetch={false} className="k-scene">
-                  <svg className={`k-lip${i === 1 || i === 5 ? " k-ring" : ""}`} viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
-                    <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-b" />
-                    <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-g" />
-                  </svg>
-                  <span className="k-scene-t">{s.name}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="k-areaglass k-sceneglass" data-fogpane>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="k-areaphoto" src={img(KUMORI_SCENE_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_SCENE_PHOTO.photo, 900)} 900w, ${img(KUMORI_SCENE_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_SCENE_PHOTO.pos }} />
+            <i className="kb-fog kb-fog-area" aria-hidden="true" />
+            <i className="k-bulbrow" aria-hidden="true" />
+            <ul className="k-scenelist">
+              {p.scenes.map((s, i) => (
+                <li key={s.slug} className={`k-sc${i}`}>
+                  <Link href={s.href} prefetch={false} className="k-scene">
+                    <svg className={`k-lip${i === 1 || i === 5 ? " k-ring" : ""}`} viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
+                      <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-b" />
+                      <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-g" />
+                    </svg>
+                    <span className="k-scene-t">{s.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <span className="k-lipstick" aria-hidden="true">
+              <i className="lp-tube" />
+              <i className="lp-band" />
+              <i className="lp-bullet" />
+            </span>
+          </div>
         </div>
       </section>
 
@@ -202,7 +222,7 @@ export default function KumoriBelow(p: BelowProps) {
       </section>
 
       <p className="k-credit2">
-        Photo: Unsplash — {KUMORI_PANES.map((x) => x.by).concat(KUMORI_PHOTO_BY).filter((v, i, a) => a.indexOf(v) === i).join("、")}
+        Photo: Unsplash — {KUMORI_PANES.map((x) => x.by).concat(KUMORI_AREA_PHOTO.by, KUMORI_SCENE_PHOTO.by, KUMORI_PHOTO_BY).filter((v, i, a) => a.indexOf(v) === i).join("、")}
       </p>
     </div>
   );

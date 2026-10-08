@@ -200,12 +200,14 @@ export default function KumoriHero({ entries, lead }: Props) {
       t.globalCompositeOperation = "screen";
       for (const b of bulbPts) {
         const x = b.x * s, y = b.y * s;
-        const hg = t.createRadialGradient(x, y, 0, x, y, 62 * s);
-        hg.addColorStop(0, "rgba(255,228,170,.95)");
-        hg.addColorStop(0.22, "rgba(255,210,140,.62)");
+        const hr = 92 * s;
+        const hg = t.createRadialGradient(x, y, 0, x, y, hr);
+        hg.addColorStop(0, "rgba(255,236,190,1)");
+        hg.addColorStop(0.16, "rgba(255,222,160,.85)");
+        hg.addColorStop(0.4, "rgba(255,204,130,.42)");
         hg.addColorStop(1, "rgba(255,190,110,0)");
         t.fillStyle = hg;
-        t.fillRect(x - 62 * s, y - 62 * s, 124 * s, 124 * s);
+        t.fillRect(x - hr, y - hr, hr * 2, hr * 2);
       }
       t.globalCompositeOperation = "source-over";
       void short;
@@ -464,6 +466,13 @@ export default function KumoriHero({ entries, lead }: Props) {
     }
 
     /* ---------- スクロール ---------- */
+    const lastVar = new Map<string, string>();
+    const setVar = (k: string, v: number) => {
+      const sv = v.toFixed(3);
+      if (lastVar.get(k) === sv) return;
+      lastVar.set(k, sv);
+      stage.style.setProperty(k, sv);
+    };
     function applyProgress(p: number) {
       progress = p;
       const wp = ease(clamp((p - 0.07) / 0.45));
@@ -478,11 +487,11 @@ export default function KumoriHero({ entries, lead }: Props) {
         if (p <= 0.04) clearText();
       }
       pwx = target;
-      stage.style.setProperty("--kf", String(1 - smooth(0.46, 0.64, p)));
-      stage.style.setProperty("--kd", String(smooth(0.62, 0.84, p)));
-      stage.style.setProperty("--kdim", String(0.14 + 0.5 * smooth(0.62, 0.86, p)));
-      stage.style.setProperty("--kh", String(1 - smooth(0.0, 0.05, p)));
-      stage.style.setProperty("--kback", String(smooth(0.03, 0.12, p)));
+      setVar("--kf", 1 - smooth(0.46, 0.64, p));
+      setVar("--kd", smooth(0.62, 0.84, p));
+      setVar("--kdim", 0.14 + 0.5 * smooth(0.62, 0.86, p));
+      setVar("--kh", 1 - smooth(0.0, 0.05, p));
+      setVar("--kback", smooth(0.03, 0.12, p));
       const gone = target - 0.04;
       for (const e of entryEls) e.el.classList.toggle("is-gone", e.cx < gone);
     }
@@ -610,17 +619,10 @@ export default function KumoriHero({ entries, lead }: Props) {
       seedDrops();
       lastScrollY = -1;
       if (reduced) {
-        // 止めた最初の画面：水滴の筋だけ描いておく
-        for (const d of drops) {
-          fctx.globalCompositeOperation = "destination-out";
-          fctx.strokeStyle = "rgba(0,0,0,.9)";
-          fctx.lineWidth = d.r * 1.3;
-          fctx.lineCap = "round";
-          fctx.beginPath();
-          fctx.moveTo(d.x, d.y);
-          fctx.lineTo(d.x, d.y + d.max * 0.6);
-          fctx.stroke();
-          fctx.globalCompositeOperation = "source-over";
+        // 止めた最初の画面：流れ跡の線は出さず、中央が少し拭かれた状態(自動のひと拭きの跡)にする
+        for (let k = 0; k <= 24; k++) {
+          const tt = k / 24;
+          stamp((0.12 + 0.5 * tt) * Fw, (0.78 - 0.08 * tt + 0.03 * Math.sin(tt * 7)) * Fh, (0.12 + 0.5 * (tt - 0.04)) * Fw, (0.78 - 0.08 * (tt - 0.04)) * Fh, 60 * s);
         }
         clearText();
       } else {

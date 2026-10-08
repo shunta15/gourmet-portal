@@ -83,15 +83,15 @@
 }
 .k-bulb {
   position: absolute;
-  width: 17px;
-  height: 17px;
-  margin: -8px 0 0 -8px;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 34%, #fffef6 0 24%, #ffe9b4 52%, #f4b862 100%);
-  box-shadow: 0 0 9px 3px rgba(255, 220, 150, 0.9), 0 0 30px 9px rgba(255, 190, 100, 0.5);
+  background: radial-gradient(circle at 38% 34%, #ffffff 0 26%, #fff0c2 52%, #f7c06c 100%);
+  box-shadow: 0 0 16px 6px rgba(255, 226, 160, 0.98), 0 0 52px 20px rgba(255, 190, 100, 0.62), 0 0 110px 36px rgba(255, 170, 80, 0.3);
 }
 .k-bulb.k-side {
-  margin: -8px -8px 0 -8px;
+  margin: -14px -14px 0 -14px;
 }
 .k-bokeh {
   position: absolute;
@@ -448,8 +448,8 @@
     --k-bulb-y: 15px;
     --k-bulb-x: 13px;
   }
-  .k-bulb { width: 12px; height: 12px; margin: -6px 0 0 -6px; box-shadow: 0 0 7px 2px rgba(255, 220, 150, 0.9), 0 0 20px 6px rgba(255, 190, 100, 0.45); }
-  .k-bulb.k-side { margin: -6px -6px 0 -6px; }
+  .k-bulb { width: 20px; height: 20px; margin: -10px 0 0 -10px; box-shadow: 0 0 11px 4px rgba(255, 226, 160, 0.98), 0 0 36px 13px rgba(255, 190, 100, 0.6), 0 0 70px 24px rgba(255, 170, 80, 0.28); }
+  .k-bulb.k-side { margin: -10px -10px 0 -10px; }
   .k-bulb.k-alt { display: none; }
   .k-photo-wrap { transform: none; }
   .k-bevel {
@@ -550,3 +550,8 @@
   86% { opacity: 1; transform: scale(1); }
   100% { left: 62%; top: 70%; opacity: 0; transform: scale(1.05); }
 }
+
+/* この画面では、サイト共通の丸いカーソル(字に重なる)を出さず、ふつうのカーソルにする */
+body:has(.k-root) { cursor: auto; }
+body:has(.k-root) a, body:has(.k-root) button { cursor: pointer; }
+body:has(.k-root) .cursor-dot, body:has(.k-root) .cursor-ring { display: none !important; }

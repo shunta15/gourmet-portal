@@ -23,6 +23,21 @@ export default function KumoriFx() {
       p.addEventListener("pointerenter", move);
       p.addEventListener("pointermove", move);
     });
+    // エリア・利用シーン: 乗せた(フォーカスした)県・シーンのまわりの曇りを、丸く拭く
+    const cleanups: Array<() => void> = [];
+    root.querySelectorAll<HTMLElement>("[data-fogpane]").forEach((g) => {
+      g.querySelectorAll<HTMLElement>(".k-pref, .k-scene").forEach((it) => {
+        const at = () => {
+          const gr = g.getBoundingClientRect();
+          const r = it.getBoundingClientRect();
+          g.style.setProperty("--ax", `${(r.left + r.width / 2 - gr.left).toFixed(0)}px`);
+          g.style.setProperty("--ay", `${(r.top + r.height / 2 - gr.top).toFixed(0)}px`);
+        };
+        it.addEventListener("pointerenter", at);
+        it.addEventListener("focus", at);
+        cleanups.push(() => { it.removeEventListener("pointerenter", at); it.removeEventListener("focus", at); });
+      });
+    });
     let io: IntersectionObserver | undefined;
     if (window.matchMedia("(hover: none)").matches) {
       io = new IntersectionObserver(
@@ -32,6 +47,7 @@ export default function KumoriFx() {
       panes.forEach((p) => io!.observe(p));
     }
     return () => {
+      cleanups.forEach((c) => c());
       io?.disconnect();
       panes.forEach((p) => {
         p.removeEventListener("pointerenter", move);
