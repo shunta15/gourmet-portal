@@ -23,10 +23,10 @@ export type BelowProps = {
 const img = (url: string, w: number) => `${url}?auto=format&fit=crop&w=${w}&q=75`;
 
 /** 動きを減らす設定・スクリプトなし: 曇りを晴れた状態にして、文字を読める色に切り替える */
-const CLEAR_CSS = `.k-below .k-fog{opacity:0!important}.k-below .k-shade{opacity:1!important}.k-below .k-pane .k-txt{color:#fff6ea!important;text-shadow:0 1px 14px rgba(10,4,2,.9),0 0 3px rgba(10,4,2,.7)!important}.k-below .k-pane .k-slug,.k-below .k-pane .k-st{color:#f1e2cc!important}`;
+const CLEAR_CSS = `.k-below .kb-fog{opacity:0!important}.k-below .k-shade{opacity:1!important}.k-below .k-pane .k-txt{color:#fff6ea!important;text-shadow:0 1px 14px rgba(10,4,2,.9),0 0 3px rgba(10,4,2,.7)!important}.k-below .k-pane .kb-slug,.k-below .k-pane .k-st{color:#f1e2cc!important}.k-below .k-pane .kb-num{color:#ff93a6!important;-webkit-text-stroke:.8px #5a0a18!important;text-shadow:0 1px 10px rgba(10,4,2,.95),0 0 3px rgba(10,4,2,.8)!important}`;
 
 function Fog() {
-  return <i className="k-fog" aria-hidden="true" />;
+  return <i className="kb-fog" aria-hidden="true" />;
 }
 
 export default function KumoriBelow(p: BelowProps) {
@@ -66,9 +66,9 @@ export default function KumoriBelow(p: BelowProps) {
                     <i className="k-shade" aria-hidden="true" />
                     <Fog />
                     <span className="k-stack">
-                      <span className="k-num" aria-hidden="true">0{i + 1}</span>
-                      <b className="k-txt k-name">{c.name}</b>
-                      <small className="k-txt k-slug">{c.slug}</small>
+                      <span className="kb-num" aria-hidden="true">0{i + 1}</span>
+                      <b className="k-txt kb-name">{c.name}</b>
+                      <small className="k-txt kb-slug">{c.slug}</small>
                       <span className="k-txt k-st">{c.count > 0 ? `${c.count}件` : "掲載準備中"}</span>
                     </span>
                   </span>
@@ -126,7 +126,7 @@ export default function KumoriBelow(p: BelowProps) {
             {p.scenes.map((s, i) => (
               <li key={s.slug}>
                 <Link href={s.href} prefetch={false} className="k-scene">
-                  <svg className="k-lip" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
+                  <svg className={`k-lip${i === 1 || i === 5 ? " k-ring" : ""}`} viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
                     <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-b" />
                     <path d={KUMORI_LIP_PATHS[i % KUMORI_LIP_PATHS.length]} pathLength="1" className="k-lip-g" />
                   </svg>

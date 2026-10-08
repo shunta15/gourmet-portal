@@ -123,11 +123,11 @@
 .k-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(20, 10, 5, 0.05) 30%, rgba(20, 10, 5, 0.82) 100%);
+  background: linear-gradient(180deg, rgba(20, 10, 5, 0.08) 12%, rgba(20, 10, 5, 0.7) 48%, rgba(20, 10, 5, 0.92) 100%);
   opacity: 0;
   transition: opacity 0.7s 0.3s;
 }
-.k-fog {
+.kb-fog {
   position: absolute;
   inset: 0;
   --r: 0%;
@@ -136,7 +136,7 @@
   mask-image: radial-gradient(circle at var(--wx, 50%) var(--wy, 52%), transparent calc(var(--r) - 5%), #000 var(--r));
   transition: --r 6s cubic-bezier(0.3, 0, 0.8, 1);
 }
-[data-wipe]:is(:hover, :focus-visible, .is-in) .k-fog {
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-fog {
   --r: 175%;
   transition: --r 1.15s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
@@ -156,7 +156,7 @@
   gap: 4px;
   padding: 0 10%;
 }
-.k-num {
+.kb-num {
   font-family: var(--k-kuren), "Zen Kurenaido", cursive;
   font-size: 50px;
   line-height: 1;
@@ -171,13 +171,13 @@
   text-shadow: 0 0 12px rgba(238, 243, 245, 0.96), 0 0 5px rgba(238, 243, 245, 0.96), 0 0 2px rgba(238, 243, 245, 0.96);
   transition: color 0.5s 0.45s, text-shadow 0.5s 0.45s;
 }
-.k-name {
+.kb-name {
   font-size: 26px;
   font-weight: 800;
   letter-spacing: 0.06em;
   line-height: 1.25;
 }
-.k-slug {
+.kb-slug {
   font-size: 13px;
   letter-spacing: 0.14em;
   color: var(--ink2);
@@ -191,7 +191,13 @@
   color: var(--cream);
   text-shadow: 0 1px 14px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.7);
 }
-[data-wipe]:is(:hover, :focus-visible, .is-in) .k-slug,
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-num {
+  color: #ff93a6;
+  -webkit-text-stroke: 0.8px #5a0a18;
+  text-shadow: 0 1px 10px rgba(10, 4, 2, 0.95), 0 0 3px rgba(10, 4, 2, 0.8);
+  transition: color 0.5s 0.45s;
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-slug,
 [data-wipe]:is(:hover, :focus-visible, .is-in) .k-st {
   color: #f1e2cc;
 }
@@ -236,6 +242,7 @@
 }
 .k-pane > .k-glass2 { border-radius: inherit; }
 .k-pane:focus-visible { outline-offset: 6px; }
+.k-big :where(a):focus-visible { outline-color: #4a2a14; }
 .k-arch .k-stack, .k-round .k-stack, .k-oval .k-stack, .k-hand .k-stack { bottom: 17%; }
 .k-pane:hover { transform: translateY(-3px); }
 .k-pane { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
@@ -410,12 +417,17 @@
 }
 .k-lip {
   position: absolute;
-  inset: 6px 0;
+  left: 0;
+  top: 54%;
   width: 100%;
-  height: calc(100% - 12px);
+  height: 40%;
   z-index: 0;
   overflow: visible;
   filter: url(#k-wax);
+}
+.k-lip.k-ring {
+  top: 6px;
+  height: calc(100% - 12px);
 }
 .k-lip path {
   fill: none;
@@ -610,8 +622,8 @@
   .k-p1, .k-p3, .k-p5 { margin: 0 auto 0 0; }
   .k-p2, .k-p4, .k-p6 { margin: 0 0 0 auto; }
 
-  .k-name { font-size: 24px; }
-  .k-num { font-size: 44px; }
+  .kb-name { font-size: 24px; }
+  .kb-num { font-size: 44px; }
   .k-scenes ul { grid-template-columns: 1fr; gap: 8px; }
   .k-scene { min-height: 64px; }
   .k-scene-t { font-size: 24px; }
@@ -620,15 +632,17 @@
   .k-pref { padding: 0 13px; font-size: 17px; }
   .k-card { transform: rotate(-1deg); padding-top: 40px; }
   .k-others { gap: 30px 22px; justify-content: space-between; }
-  .k-minilink { min-width: 0; width: calc(50% - 16px); }
+  .k-others li { width: calc(50% - 14px); }
+  .k-minilink { min-width: 0; width: 100%; }
 }
 
 /* 動きを減らす設定: 曇りは晴れた状態(文字は読める色に) */
 @media (prefers-reduced-motion: reduce) {
-  .k-fog { opacity: 0; transition: none; }
+  .kb-fog { opacity: 0; transition: none; }
   .k-shade { opacity: 1; transition: none; }
   .k-pane .k-txt { color: var(--cream); text-shadow: 0 1px 14px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.7); transition: none; }
-  .k-pane .k-slug, .k-pane .k-st { color: #f1e2cc; }
+  .k-pane .kb-slug, .k-pane .k-st { color: #f1e2cc; }
+  .k-pane .kb-num { color: #ff93a6; -webkit-text-stroke: 0.8px #5a0a18; text-shadow: 0 1px 10px rgba(10, 4, 2, 0.95), 0 0 3px rgba(10, 4, 2, 0.8); }
   .k-pane, .k-pref::before { transition: none; }
   .k-pane:hover { transform: none; }
   .k-lip path { animation: none !important; }

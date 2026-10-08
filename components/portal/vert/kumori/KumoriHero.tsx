@@ -547,6 +547,7 @@ export default function KumoriHero({ entries, lead }: Props) {
           fctx.fill();
           fctx.globalCompositeOperation = "source-over";
         }
+        if (intro && !(img.complete && img.naturalWidth) && now < intro.t0 + 6000) intro.t0 = Math.max(intro.t0, now + 300);
         if (intro) {
           const t = clamp((now - intro.t0) / 1500);
           const e = t * t * (3 - 2 * t);
@@ -767,6 +768,7 @@ export default function KumoriHero({ entries, lead }: Props) {
             <canvas ref={fogRef} className="k-fog" aria-hidden="true" />
             <canvas ref={dropRef} className="k-drops" aria-hidden="true" />
             <div className="k-sheen" aria-hidden="true" />
+            <i className="k-finger" aria-hidden="true" />
 
             <header className="k-head">
               <Link href="/" className="k-logo">
