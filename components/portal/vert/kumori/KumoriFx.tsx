@@ -41,7 +41,16 @@ export default function KumoriFx() {
     let io: IntersectionObserver | undefined;
     if (window.matchMedia("(hover: none)").matches) {
       io = new IntersectionObserver(
-        (es) => es.forEach((en) => en.target.classList.toggle("is-in", en.isIntersecting)),
+        (es) =>
+          es.forEach((en) => {
+            const el = en.target as HTMLElement;
+            if (en.isIntersecting) {
+              // 曇った状態から、角のほうからひと拭きで晴れる
+              el.style.setProperty("--wx", "12%");
+              el.style.setProperty("--wy", "20%");
+              requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-in")));
+            } else el.classList.remove("is-in");
+          }),
         { rootMargin: "-26% 0px -26% 0px" },
       );
       panes.forEach((p) => io!.observe(p));

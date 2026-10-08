@@ -31,7 +31,7 @@
   color: inherit;
   text-decoration: none;
 }
-.k-below a:focus-visible {
+.k-below :where(a):focus-visible {
   outline: 3px solid #ffe3b0;
   outline-offset: 4px;
   border-radius: 6px;
@@ -673,9 +673,9 @@
   color: #fff2dc;
   -webkit-text-stroke: 3.5px #fff2dc;
   filter: drop-shadow(0 1px 6px rgba(10, 4, 2, 0.85));
-  transition: color 0.4s 0.4s, -webkit-text-stroke-color 0.4s 0.4s;
+  transition: color 0.3s 0.12s, -webkit-text-stroke-color 0.3s 0.12s;
 }
-.k-minilink:is(:hover, :focus-visible, .is-in) .k-g::before { -webkit-text-stroke-color: rgba(20, 10, 6, 0.55); transition: -webkit-text-stroke-color 0.4s 0.4s; }
+.k-minilink:is(:hover, :focus-visible, .is-in) .k-g::before { -webkit-text-stroke-color: rgba(20, 10, 6, 0.55); transition: -webkit-text-stroke-color 0.3s 0.12s; }
 .k-g::before {
   left: 50%;
   top: 50%;
@@ -753,4 +753,191 @@
   .k-pane, .k-pref::before { transition: none; }
   .k-pane:hover { transform: none; }
   .k-lip path { animation: none !important; }
+}
+
+/* ================= 2 エリア: 曇った鏡に、指で描いた日本地図(タイル地図) ================= */
+.k-mapglass {
+  --cell: min(76px, calc((100vw - 2 * var(--gut, 57px) - 160px) / 12));
+}
+.k-mapin {
+  display: flex;
+  justify-content: center;
+  padding: 54px 18px 34px;
+}
+.k-map {
+  position: relative;
+  width: calc(var(--cell) * 12);
+  height: calc(var(--cell) * 11);
+  isolation: isolate;
+  --oy: calc(var(--cell) * 1.8);
+}
+.k-maplead {
+  position: absolute;
+  left: 0;
+  top: calc(var(--cell) * 0.1);
+  width: calc(var(--cell) * 6.6);
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.95;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  text-shadow: 0 0 10px rgba(246, 242, 234, 0.95), 0 0 3px rgba(246, 242, 234, 0.95);
+}
+.k-mapline {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  overflow: visible;
+  pointer-events: none;
+  filter: url(#k-wax);
+}
+.k-mapline path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.82);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.k-tiles { list-style: none; margin: 0; padding: 0; }
+.k-maplabel {
+  position: absolute;
+  left: calc(var(--l, 0) * var(--cell));
+  top: calc(var(--t, 0) * var(--cell));
+  width: calc(var(--w, 2) * var(--cell));
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.1;
+  pointer-events: none;
+}
+.k-maplabel .k-rg {
+  font-size: clamp(20px, calc(var(--cell) * 0.37), 30px);
+  -webkit-text-stroke-width: 3px;
+  opacity: 0.6;
+}
+.k-maplabel small { display: block; margin-top: 2px; font-family: var(--k-mincho), serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #4a3b3e; }
+.k-tile {
+  position: absolute;
+  left: calc(var(--col) * var(--cell));
+  top: calc(var(--row) * var(--cell));
+  width: var(--cell);
+  height: var(--cell);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #26160d;
+  font-size: clamp(14px, calc(var(--cell) * 0.235), 19px);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 9px rgba(255, 248, 238, 0.95), 0 0 3px rgba(255, 248, 238, 0.95);
+  white-space: nowrap;
+}
+.k-tile em { font-style: normal; font-size: 12px; font-weight: 700; }
+/* 指先でひと押しして曇りを抜いた、丸い小さな跡(奥が少し見える) */
+.k-tile::before,
+.k-tile::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  z-index: -2;
+  pointer-events: none;
+  transition: transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.5s, background 0.5s, filter 0.6s;
+}
+.k-tile::before {
+  background-image: var(--ph);
+  background-size: calc(var(--cell) * 12) auto;
+  background-position: calc(var(--col) * var(--cell) * -1 - 5px) calc(var(--row) * var(--cell) * -1 - 5px - var(--oy, 0px));
+  filter: brightness(1.6) contrast(0.88) saturate(1.1);
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.78), inset 0 0 12px rgba(255, 255, 255, 0.45);
+}
+.k-tile::after {
+  background: rgba(246, 238, 226, 0.58);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.5);
+}
+/* 乗せた県の跡が大きく拭かれて、奥が明るく見える。字は暗いまま読める */
+.k-tile:is(:hover, :focus-visible)::before,
+.k-tile:is(:hover, :focus-visible)::after {
+  z-index: -1;
+  transform: scale(1.95);
+}
+.k-tile:is(:hover, :focus-visible)::before { filter: brightness(1.38) saturate(1.2) contrast(1.1); }
+.k-tile:is(:hover, :focus-visible)::after {
+  background: radial-gradient(circle, rgba(255, 244, 224, 0.32), rgba(255, 228, 184, 0.06) 70%, rgba(255, 228, 184, 0));
+  box-shadow: none;
+}
+.k-tile:focus-visible {
+  outline: 3px solid #7a2a1c;
+  outline-offset: -3px;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 5px rgba(255, 246, 234, 0.9);
+}
+/* 同じ地方のほかの県の跡も、うっすら晴れる */
+.k-map:has(.k-tile[data-r="0"]:is(:hover, :focus-visible)) .k-tile[data-r="0"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="1"]:is(:hover, :focus-visible)) .k-tile[data-r="1"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="2"]:is(:hover, :focus-visible)) .k-tile[data-r="2"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="3"]:is(:hover, :focus-visible)) .k-tile[data-r="3"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="4"]:is(:hover, :focus-visible)) .k-tile[data-r="4"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="5"]:is(:hover, :focus-visible)) .k-tile[data-r="5"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="6"]:is(:hover, :focus-visible)) .k-tile[data-r="6"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="7"]:is(:hover, :focus-visible)) .k-tile[data-r="7"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+
+@media (max-width: 899px) {
+  .k-mapin { display: block; padding: 46px 14px 22px; }
+  .k-map { width: auto; height: auto; --oy: 0px; }
+  .k-maplead { position: static; width: auto; margin: 0 0 12px; }
+  .k-mapline { display: none; }
+  .k-maplabel { position: static; width: auto; margin: 20px 0 8px; text-align: left !important; }
+  .k-maplabel .k-rg { font-size: 28px; }
+  .k-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .k-tile { position: relative; left: auto; top: auto; width: auto; height: auto; min-height: 58px; font-size: 18px; }
+  .k-tile::before, .k-tile::after { inset: 3px; }
+  .k-tile::before { background-size: cover; background-position: center; }
+  .k-tile:is(:hover, :focus-visible)::before, .k-tile:is(:hover, :focus-visible)::after { transform: scale(1.14); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .k-tile::after { opacity: 0; }
+  .k-tile::before, .k-tile::after { transition: none; }
+  .k-minilink .k-g { color: #fff2dc; -webkit-text-stroke-color: #fff2dc; }
+  .k-minilink .k-g::before { -webkit-text-stroke-color: rgba(20, 10, 6, 0.55); }
+}
+
+/* ================= ほかの入口: 大きな手鏡(灯りの映り込み) ================= */
+.k-room2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(118deg, transparent 32%, rgba(255, 240, 215, 0.24) 41%, rgba(255, 240, 215, 0.05) 52%, transparent 60%);
+}
+@media (min-width: 601px) {
+  #other { padding-top: 52px; }
+  .k-others { gap: 18px clamp(14px, 2vw, 32px); max-width: 1320px; justify-content: space-between; }
+  .k-others li:nth-child(1) { --ms: min(226px, 15vw); margin-top: 6px; }
+  .k-others li:nth-child(2) { --ms: min(262px, 17.4vw); margin-top: 26px; }
+  .k-others li:nth-child(3) { --ms: min(210px, 14vw); margin-top: 0; }
+  .k-others li:nth-child(4) { --ms: min(250px, 16.6vw); margin-top: 30px; }
+  .k-others li:nth-child(5) { --ms: min(234px, 15.6vw); margin-top: 10px; }
+  .k-minilink .k-mini::after { width: calc(var(--ms, 160px) * 0.1); height: calc(var(--ms, 160px) * 0.26); }
+  .k-minilink b { margin-top: calc(var(--ms, 160px) * 0.2); }
+  .k-g { font-size: calc(var(--ms, 160px) * 0.42); }
+  .k-credit2 { margin-top: 40px; }
+}
+
+/* ================= 小さな直し ================= */
+.k-note { word-break: auto-phrase; text-wrap: pretty; line-break: strict; }
+.k-big :where(a):focus-visible {
+  outline-color: #7a2a1c;
+  box-shadow: inset 0 0 0 5px rgba(255, 246, 234, 0.92);
+}
+.k-pane:focus-visible {
+  outline: 3px solid #ffe3b0;
+  outline-offset: 5px;
+  box-shadow: inset 0 0 0 4px #8e1228, 0 18px 34px rgba(0, 0, 0, 0.55);
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-txt { transition: color 0.3s 0.1s, text-shadow 0.3s 0.1s; }
+@media (hover: none) {
+  [data-wipe]:is(.is-in) .kb-fog { transition: --r 2.4s cubic-bezier(0.3, 0.5, 0.3, 1); }
 }

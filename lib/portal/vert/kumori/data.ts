@@ -71,3 +71,45 @@ export const KUMORI_AREA_PHOTO = { photo: "https://images.unsplash.com/photo-157
 export const KUMORI_SCENE_PHOTO = { photo: "https://images.unsplash.com/photo-1764867256379-3877b9cb5832", pos: "50% 62%", by: "Efe Kekikciler" };
 /** 地方ごとの 1 行の列数(幅いっぱいに広げる) */
 export const KUMORI_AREA_COLS: Record<string, number> = { 北海道: 1, 東北: 6, 関東: 7, 中部: 5, 近畿: 7, 中国: 5, 四国: 4, 九州沖縄: 8 };
+
+/**
+ * エリアのタイル地図(12 列 × 11 行)。1 県 = 1 升目。北海道が右上、沖縄が左下。
+ * 升目の位置は地理に沿って決めた: 東(右)へ行くほど col が増え、南(下)へ行くほど row が増える。
+ * 隣り合う県は、なるべく隣の升目に来るようにした(本州は北東から南西へ斜めに流れ、四国・九州は海を挟んだ位置に置く)。
+ */
+export const KUMORI_TILES: Record<string, [number, number]> = {
+  hokkaido: [11, 0],
+  aomori: [10, 1],
+  akita: [9, 2], iwate: [10, 2],
+  yamagata: [9, 3], miyagi: [10, 3],
+  niigata: [8, 4], fukushima: [9, 4],
+  gunma: [8, 5], tochigi: [9, 5], ibaraki: [10, 5],
+  nagano: [8, 6], saitama: [9, 6], chiba: [10, 6],
+  yamanashi: [8, 7], tokyo: [9, 7],
+  shizuoka: [8, 8], kanagawa: [9, 8],
+  toyama: [7, 5], ishikawa: [6, 5],
+  gifu: [7, 6], fukui: [6, 6],
+  aichi: [7, 7], shiga: [6, 7],
+  mie: [7, 8], nara: [6, 8],
+  kyoto: [5, 6], hyogo: [4, 6],
+  osaka: [5, 7], wakayama: [5, 8],
+  tottori: [3, 6], shimane: [2, 6],
+  okayama: [4, 7], hiroshima: [3, 7], yamaguchi: [2, 7],
+  kagawa: [4, 8], ehime: [3, 8], kochi: [4, 9], tokushima: [5, 9],
+  fukuoka: [1, 7], saga: [0, 7],
+  kumamoto: [1, 8], nagasaki: [0, 8], oita: [2, 8],
+  kagoshima: [1, 9], miyazaki: [2, 9],
+  okinawa: [0, 10],
+};
+
+/** 地方名(指で書いた字)を置く位置: 升目の単位(left, top, width)と、そろえ */
+export const KUMORI_REGION_LABELS: Record<string, { l: number; t: number; w: number; a: "left" | "right" }> = {
+  北海道: { l: 8, t: 0.3, w: 2.8, a: "right" },
+  東北: { l: 6.2, t: 2.2, w: 2.6, a: "right" },
+  関東: { l: 10.15, t: 7.1, w: 1.85, a: "left" },
+  中部: { l: 4.8, t: 3.6, w: 3, a: "right" },
+  近畿: { l: 6.15, t: 9.15, w: 2, a: "left" },
+  中国: { l: 2, t: 5.1, w: 2.4, a: "left" },
+  四国: { l: 4.1, t: 10.05, w: 2, a: "left" },
+  九州沖縄: { l: 0, t: 5.95, w: 2, a: "left" },
+};

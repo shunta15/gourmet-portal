@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "./below.css";
 import KumoriFx from "./KumoriFx";
-import { KUMORI_AREA_COLS, KUMORI_AREA_PHOTO, KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY, KUMORI_SCENE_PHOTO } from "@/lib/portal/vert/kumori/data";
+import { KUMORI_AREA_PHOTO, KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY, KUMORI_REGION_LABELS, KUMORI_SCENE_PHOTO, KUMORI_TILES } from "@/lib/portal/vert/kumori/data";
 
 export type BelowCategory = { slug: string; name: string; href: string; count: number };
 export type BelowArea = { slug: string; short: string; block: string; href: string; count: number };
@@ -23,7 +23,7 @@ export type BelowProps = {
 const img = (url: string, w: number) => `${url}?auto=format&fit=crop&w=${w}&q=75`;
 
 /** 動きを減らす設定・スクリプトなし: 曇りを晴れた状態にして、文字を読める色に切り替える */
-const CLEAR_CSS = `.k-below .kb-fog{opacity:0!important}.k-below .k-shade{opacity:1!important}.k-below .k-pane .k-txt{color:#fff6ea!important;text-shadow:0 1px 14px rgba(10,4,2,.9),0 0 3px rgba(10,4,2,.7)!important}.k-below .k-pane .kb-slug,.k-below .k-pane .k-st{color:#f1e2cc!important}.k-below .k-pane .kb-num{color:#ff93a6!important;-webkit-text-stroke:.8px #5a0a18!important;text-shadow:0 1px 10px rgba(10,4,2,.95),0 0 3px rgba(10,4,2,.8)!important}`;
+const CLEAR_CSS = `.k-below .k-tile::after{opacity:0!important}.k-below .k-minilink .k-g{color:#fff2dc!important;-webkit-text-stroke-color:#fff2dc!important}.k-below .kb-fog{opacity:0!important}.k-below .k-shade{opacity:1!important}.k-below .k-pane .k-txt{color:#fff6ea!important;text-shadow:0 1px 14px rgba(10,4,2,.9),0 0 3px rgba(10,4,2,.7)!important}.k-below .k-pane .kb-slug,.k-below .k-pane .k-st{color:#f1e2cc!important}.k-below .k-pane .kb-num{color:#ff93a6!important;-webkit-text-stroke:.8px #5a0a18!important;text-shadow:0 1px 10px rgba(10,4,2,.95),0 0 3px rgba(10,4,2,.8)!important}`;
 
 function Fog() {
   return <i className="kb-fog" aria-hidden="true" />;
@@ -79,44 +79,73 @@ export default function KumoriBelow(p: BelowProps) {
         </ul>
       </section>
 
-      {/* 2 エリアから探す */}
+      {/* 2 エリアから探す: 曇った鏡に、指で描いた日本地図(タイル地図)。読み上げ・Tab の順は地方ごと(北海道→沖縄) */}
       <section id="area" className="k-sec" aria-labelledby="k-area-h">
         <header className="k-head2">
           <p className="k-kick"><span>02</span> Area</p>
           <h2 id="k-area-h">エリアから探す</h2>
-          <p className="k-lead2">都道府県を地方ごとに並べています。掲載が追加されると、ここに件数が出ます。</p>
         </header>
         <div className="k-big k-areas">
-          <div className="k-areaglass" data-fogpane>
+          <div className="k-areaglass k-mapglass">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="k-areaphoto" src={img(KUMORI_AREA_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_AREA_PHOTO.photo, 900)} 900w, ${img(KUMORI_AREA_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_AREA_PHOTO.pos }} />
             <i className="k-areaglow" aria-hidden="true" />
             <i className="kb-fog kb-fog-area" aria-hidden="true" />
             <i className="k-bulbrow" aria-hidden="true" />
-            <div className="k-areain">
-              {p.blocks.map((b) => {
-                const list = p.areas.filter((a) => a.block === b.key);
-                if (list.length === 0) return null;
-                const total = list.reduce((s, a) => s + a.count, 0);
-                return (
-                  <section className="k-region-row" key={b.key} aria-label={b.label}>
-                    <h3 className="k-region">
-                      <span className="k-rg">{b.label}</span>
-                      <small>{b.en}{total > 0 ? ` ${total}件` : ""}</small>
-                    </h3>
-                    <ul className="k-prefs" style={{ ["--c" as string]: KUMORI_AREA_COLS[b.key] ?? 6 }}>
-                      {list.map((a) => (
-                        <li key={a.slug}>
-                          <Link href={a.href} prefetch={false} className="k-pref">
-                            <span>{a.short}</span>
-                            {a.count > 0 && <em>{a.count}件</em>}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </section>
-                );
-              })}
+            <div className="k-areain k-mapin">
+              <div className="k-map" style={{ ["--ph" as string]: `url(${img(KUMORI_AREA_PHOTO.photo, 1400)})` }}>
+                <p className="k-maplead">都道府県を地方ごとに並べています。掲載が追加されると、ここに件数が出ます。</p>
+                <svg className="k-mapline" viewBox="0 0 12 11" preserveAspectRatio="none" aria-hidden="true">
+                  {p.blocks.map((b) => {
+                    const cells = p.areas.filter((a) => a.block === b.key).map((a) => KUMORI_TILES[a.slug]).filter(Boolean);
+                    const has = (c: number, r: number) => cells.some((x) => x[0] === c && x[1] === r);
+                    let d = "";
+                    for (const [c, r] of cells) {
+                      if (!has(c, r - 1)) d += `M${c} ${r + 0.05}L${c + 1} ${r + 0.05}`;
+                      if (!has(c, r + 1)) d += `M${c} ${r + 0.95}L${c + 1} ${r + 0.95}`;
+                      if (!has(c - 1, r)) d += `M${c + 0.05} ${r}L${c + 0.05} ${r + 1}`;
+                      if (!has(c + 1, r)) d += `M${c + 0.95} ${r}L${c + 0.95} ${r + 1}`;
+                    }
+                    return <path key={b.key} d={d} />;
+                  })}
+                </svg>
+                {p.blocks.map((b, bi) => {
+                  const list = p.areas.filter((a) => a.block === b.key);
+                  if (list.length === 0) return null;
+                  const total = list.reduce((s, a) => s + a.count, 0);
+                  const lb = KUMORI_REGION_LABELS[b.key];
+                  return (
+                    <section className="k-reg" key={b.key} aria-label={b.label}>
+                      <h3
+                        className="k-maplabel"
+                        style={lb ? { ["--l" as string]: lb.l, ["--t" as string]: lb.t, ["--w" as string]: lb.w, textAlign: lb.a } : undefined}
+                      >
+                        <span className="k-rg">{b.label}</span>
+                        <small>{b.en}{total > 0 ? ` ${total}件` : ""}</small>
+                      </h3>
+                      <ul className="k-tiles">
+                        {list.map((a) => {
+                          const pos = KUMORI_TILES[a.slug] ?? [0, 0];
+                          return (
+                            <li key={a.slug}>
+                              <Link
+                                href={a.href}
+                                prefetch={false}
+                                className="k-tile"
+                                data-r={bi}
+                                style={{ ["--col" as string]: pos[0], ["--row" as string]: pos[1] }}
+                              >
+                                <span>{a.short}</span>
+                                {a.count > 0 && <em>{a.count}件</em>}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </section>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

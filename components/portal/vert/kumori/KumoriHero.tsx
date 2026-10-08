@@ -219,10 +219,10 @@ export default function KumoriHero({ entries, lead }: Props) {
       const m = tmask.getContext("2d")!;
       m.clearRect(0, 0, Fw, Fh);
       const mobile = W < 700;
-      const lines = mobile ? ["マチノワ", "ビュー", "ティー"] : ["マチノワ", "ビューティー"];
+      const lines = ["マチノワ", "ビューティー"];
       const shortH = H < 700;
-      const fs = mobile ? Math.min(W * 0.2, 92, H * 0.108) : Math.min(W * 0.094, H * 0.19);
-      const x0 = mobile ? W * 0.07 : W * 0.06;
+      const x0 = mobile ? W * 0.05 : W * 0.06;
+      const fs = mobile ? Math.min((W - 2 * x0) / 6.25, 92, H * 0.108) : Math.min(W * 0.094, H * 0.19);
       const y0 = mobile ? (shortH ? 60 : 78) : H * 0.17;
       const lh = fs * (mobile ? 1.06 : 1.1);
       const lw = fs * 0.082 * s;
@@ -285,7 +285,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       stage.style.setProperty("--k-bx", `${Math.round(x0)}px`);
       const menuTop = bottom + (mobile ? (shortH ? 38 : 50) : 58);
       stage.style.setProperty("--k-menu-top", `${Math.round(menuTop)}px`);
-      const rowH = Math.max(44, Math.min(62, Math.floor((H - menuTop - (shortH ? 18 : 74)) / 6)));
+      const rowH = Math.max(44, Math.min(70, Math.floor((H - menuTop - (shortH ? 18 : 74)) / 6)));
       stage.style.setProperty("--k-row", `${rowH}px`);
       inkH = Math.min(Fh, Math.ceil(bottom * s) + 12);
       inkW = Fw;
