@@ -76,6 +76,13 @@ export default function KumoriHero({ entries, lead }: Props) {
     let hover: { x: number; y: number; r: number; tr: number } | null = null;
     let lastPt: { x: number; y: number } | null = null;
     let travel = 0;
+    let inkData: Uint8ClampedArray | null = null;
+    let inkW = 0;
+    let inkH = 0;
+    let bulbPts: { x: number; y: number }[] = [];
+    let press: { x: number; y: number; r: number } | null = null;
+    let hoverT = 0;
+    let lastWipe = 0;
     let intro: { t0: number; px: number; py: number } | null = null;
     let brandLines: { y: number; x0: number; x1: number }[] = [];
     let entryEls: { el: HTMLElement; cx: number }[] = [];
@@ -128,9 +135,9 @@ export default function KumoriHero({ entries, lead }: Props) {
       t.globalCompositeOperation = "source-over";
       // 曇り(上が濃く、下が薄い)
       const g = t.createLinearGradient(0, 0, 0, Fh);
-      g.addColorStop(0, "rgba(226,230,232,.92)");
-      g.addColorStop(0.45, "rgba(214,219,221,.78)");
-      g.addColorStop(1, "rgba(204,206,206,.58)");
+      g.addColorStop(0, "rgba(238,233,226,.93)");
+      g.addColorStop(0.45, "rgba(238,226,208,.8)");
+      g.addColorStop(1, "rgba(240,218,186,.6)");
       t.fillStyle = g;
       t.fillRect(0, 0, Fw, Fh);
       // むら
@@ -144,7 +151,7 @@ export default function KumoriHero({ entries, lead }: Props) {
         t.fillRect(x - r, y - r, r * 2, r * 2);
       }
       // 細かい粒
-      for (let i = 0; i < 7000; i++) {
+      for (let i = 0; i < Math.round((W * H) / 150); i++) {
         const x = rnd() * Fw, y = rnd() * Fh;
         t.fillStyle = rnd() > 0.5 ? `rgba(255,255,255,${0.03 + rnd() * 0.09})` : `rgba(110,122,128,${0.03 + rnd() * 0.07})`;
         t.fillRect(x, y, 1.2 * s + rnd(), 1.2 * s + rnd());
@@ -161,12 +168,12 @@ export default function KumoriHero({ entries, lead }: Props) {
         t.stroke();
       }
       // 水滴の粒
-      const beads = Math.round((Fw * Fh) / 300);
+      const beads = Math.round((W * H) / 560);
       for (let i = 0; i < beads; i++) {
         const x = rnd() * Fw;
         const y = Math.pow(rnd(), 1.35) * Fh;
         const big = rnd() > 0.965;
-        const r = (big ? 2.8 + rnd() * 3.6 : 0.7 + Math.pow(rnd(), 3) * 2.1) * Math.max(s, 0.8) * 1.3;
+        const r = (big ? 4.2 + rnd() * 3.8 : 1.0 + Math.pow(rnd(), 3) * 3.4) * s;
         if (big) {
           const bg = t.createRadialGradient(x, y + r * 0.35, 0, x, y, r);
           bg.addColorStop(0, "rgba(255,206,140,.75)");
@@ -189,6 +196,18 @@ export default function KumoriHero({ entries, lead }: Props) {
           t.fill();
         }
       }
+      // 鏡のまわりの電球が、曇りににじむ(曇りが灯りを散らす)
+      t.globalCompositeOperation = "screen";
+      for (const b of bulbPts) {
+        const x = b.x * s, y = b.y * s;
+        const hg = t.createRadialGradient(x, y, 0, x, y, 62 * s);
+        hg.addColorStop(0, "rgba(255,228,170,.95)");
+        hg.addColorStop(0.22, "rgba(255,210,140,.62)");
+        hg.addColorStop(1, "rgba(255,190,110,0)");
+        t.fillStyle = hg;
+        t.fillRect(x - 62 * s, y - 62 * s, 124 * s, 124 * s);
+      }
+      t.globalCompositeOperation = "source-over";
       void short;
     }
 
@@ -199,29 +218,43 @@ export default function KumoriHero({ entries, lead }: Props) {
       m.clearRect(0, 0, Fw, Fh);
       const mobile = W < 700;
       const lines = mobile ? ["マチノワ", "ビュー", "ティー"] : ["マチノワ", "ビューティー"];
-      const fs = mobile ? Math.min(W * 0.215, 92) : Math.min(W * 0.094, H * 0.19);
-      const x0 = mobile ? W * 0.075 : W * 0.06;
-      const y0 = mobile ? 78 : H * 0.17;
-      const lh = fs * 1.1;
-      m.font = `800 ${fs * s}px ${fontFamily}`;
+      const shortH = H < 700;
+      const fs = mobile ? Math.min(W * 0.2, 92, H * 0.108) : Math.min(W * 0.094, H * 0.19);
+      const x0 = mobile ? W * 0.07 : W * 0.06;
+      const y0 = mobile ? (shortH ? 60 : 78) : H * 0.17;
+      const lh = fs * (mobile ? 1.06 : 1.1);
+      const lw = fs * 0.082 * s;
+      m.font = `400 ${fs * s}px ${fontFamily}`;
       m.textBaseline = "alphabetic";
       m.lineJoin = "round";
       m.lineCap = "round";
       m.fillStyle = "#000";
       m.strokeStyle = "#000";
       m.shadowColor = "#000";
-      m.shadowBlur = 5 * s;
+      m.shadowBlur = 2.2 * s;
       brandLines = [];
       lines.forEach((ln, i) => {
         const base = (y0 + i * lh + fs * 0.88) * s;
         const x = x0 * s;
-        m.lineWidth = fs * 0.02 * s;
+        m.lineWidth = lw;
         m.strokeText(ln, x, base);
         m.fillText(ln, x, base);
-        m.strokeText(ln, x + 1.2 * s, base + 0.8 * s);
+        m.lineWidth = lw * 0.62;
+        m.strokeText(ln, x + 1.8 * s, base + 1.4 * s);
         const w = m.measureText(ln).width;
         brandLines.push({ y: base, x0: x, x1: x + w });
       });
+      // 指の腹のむら・書き終わりのかすれ(細かく削る)
+      m.shadowBlur = 0;
+      m.globalCompositeOperation = "destination-out";
+      const bx1 = Math.max(...brandLines.map((l) => l.x1));
+      for (let i = 0; i < 420; i++) {
+        m.fillStyle = `rgba(0,0,0,${0.3 + rnd() * 0.6})`;
+        m.beginPath();
+        m.arc(x0 * s + rnd() * (bx1 - x0 * s), y0 * s + rnd() * lines.length * lh * s, (0.5 + rnd() * 1.5) * s, 0, Math.PI * 2);
+        m.fill();
+      }
+      m.globalCompositeOperation = "source-over";
       // 縁にたまる曇りの盛り上がり(明るい輪郭)
       trim.width = Fw;
       trim.height = Fh;
@@ -232,14 +265,14 @@ export default function KumoriHero({ entries, lead }: Props) {
       rc.shadowColor = "rgba(255,255,255,.6)";
       rc.shadowBlur = 3 * s;
       lines.forEach((ln, i) => {
-        rc.lineWidth = fs * 0.02 * s + 4.5 * s;
+        rc.lineWidth = lw + 4 * s;
         rc.strokeText(ln, x0 * s, (y0 + i * lh + fs * 0.88) * s);
       });
       rc.shadowBlur = 0;
       rc.globalCompositeOperation = "destination-out";
       lines.forEach((ln, i) => {
         rc.fillStyle = "#000";
-        rc.lineWidth = fs * 0.02 * s + 0.4 * s;
+        rc.lineWidth = lw + 0.4 * s;
         rc.strokeStyle = "#000";
         rc.strokeText(ln, x0 * s, (y0 + i * lh + fs * 0.88) * s);
         rc.fillText(ln, x0 * s, (y0 + i * lh + fs * 0.88) * s);
@@ -248,7 +281,23 @@ export default function KumoriHero({ entries, lead }: Props) {
       stage.style.setProperty("--k-bb", `${Math.round(bottom)}px`);
       stage.style.setProperty("--k-bt", `${Math.round(y0)}px`);
       stage.style.setProperty("--k-bx", `${Math.round(x0)}px`);
-      stage.style.setProperty("--k-menu-top", `${Math.round(bottom + 58)}px`);
+      const menuTop = bottom + (mobile ? (shortH ? 38 : 50) : 58);
+      stage.style.setProperty("--k-menu-top", `${Math.round(menuTop)}px`);
+      const rowH = Math.max(44, Math.min(62, Math.floor((H - menuTop - (shortH ? 18 : 74)) / 6)));
+      stage.style.setProperty("--k-row", `${rowH}px`);
+      inkH = Math.min(Fh, Math.ceil(bottom * s) + 12);
+      inkW = Fw;
+      inkData = m.getImageData(0, 0, inkW, inkH).data;
+    }
+
+    /** 字の線の、いちばん下の点(水滴の出どころ) */
+    function lowestInk(x: number, yTop: number, yBot: number): number | null {
+      if (!inkData) return null;
+      const xi = Math.max(0, Math.min(inkW - 1, Math.round(x)));
+      for (let y = Math.min(inkH - 1, Math.round(yBot)); y >= Math.round(yTop); y--) {
+        if (inkData[(y * inkW + xi) * 4 + 3] > 150) return y;
+      }
+      return null;
     }
 
     function clearText() {
@@ -271,16 +320,23 @@ export default function KumoriHero({ entries, lead }: Props) {
       let x: number, y: number;
       if (at) { x = at.x; y = at.y; }
       else if (fromText && brandLines.length) {
-        const ln = brandLines[Math.floor(rr() * brandLines.length)];
-        x = ln.x0 + (ln.x1 - ln.x0) * (0.05 + rr() * 0.92);
-        y = ln.y - 4 * s;
+        let found = false;
+        x = 0;
+        y = 0;
+        for (let k = 0; k < 30 && !found; k++) {
+          const ln = brandLines[Math.floor(rr() * brandLines.length)];
+          const lx = ln.x0 + (ln.x1 - ln.x0) * (0.04 + rr() * 0.94);
+          const ly = lowestInk(lx, ln.y - 90 * s, ln.y + 20 * s);
+          if (ly !== null) { x = lx; y = ly - 2 * s; found = true; }
+        }
+        if (!found) { x = rr() * Fw; y = rr() * Fh * 0.3; fromText = false; }
       } else { x = rr() * Fw; y = rr() * Fh * 0.35; }
-      return { x, y, r: (2.6 + rr() * 2.4) * s, v: (16 + rr() * 30) * s, dist: 0, max: (80 + rr() * 200) * s, wait, f: 0.6 + rr() * 1.4, ph: rr() * 6, text: fromText };
+      return { x, y, r: (2.6 + rr() * 2.4) * s, v: (16 + rr() * 30) * s, dist: 0, max: (fromText ? 150 + rr() * 150 : 80 + rr() * 200) * s, wait, f: 0.6 + rr() * 1.4, ph: rr() * 6, text: fromText };
     }
 
     function seedDrops() {
       drops = [];
-      for (let i = 0; i < 9; i++) drops.push(newDrop(true, i * 0.5 + rr() * 1.4));
+      for (let i = 0; i < 3; i++) drops.push(newDrop(true, 0.6 + i * 1.3 + rr() * 1.2));
       for (let i = 0; i < 4; i++) drops.push(newDrop(false, rr() * 6));
     }
 
@@ -327,10 +383,11 @@ export default function KumoriHero({ entries, lead }: Props) {
 
     /* ---------- 拭く ---------- */
     function stamp(x: number, y: number, px: number, py: number, r: number, a = 1) {
+      lastWipe = performance.now();
       fctx.globalCompositeOperation = "destination-out";
       const g = fctx.createRadialGradient(x, y, r * 0.1, x, y, r);
       g.addColorStop(0, `rgba(0,0,0,${a})`);
-      g.addColorStop(0.58, `rgba(0,0,0,${a * 0.86})`);
+      g.addColorStop(0.8, `rgba(0,0,0,${a * 0.97})`);
       g.addColorStop(1, "rgba(0,0,0,0)");
       fctx.fillStyle = g;
       fctx.beginPath();
@@ -374,6 +431,7 @@ export default function KumoriHero({ entries, lead }: Props) {
     }
 
     function palm(x: number) {
+      lastWipe = performance.now();
       const rx = 128 * s;
       const ry = Fh * 0.64;
       const yc = Fh * (0.5 + 0.09 * Math.sin((x / Fw) * 5.4 + 0.8));
@@ -383,7 +441,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       fctx.scale(1, ry / rx);
       const g = fctx.createRadialGradient(0, 0, 0, 0, 0, rx);
       g.addColorStop(0, "rgba(0,0,0,1)");
-      g.addColorStop(0.55, "rgba(0,0,0,.96)");
+      g.addColorStop(0.78, "rgba(0,0,0,.98)");
       g.addColorStop(1, "rgba(0,0,0,0)");
       fctx.fillStyle = g;
       fctx.beginPath();
@@ -422,7 +480,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       pwx = target;
       stage.style.setProperty("--kf", String(1 - smooth(0.46, 0.64, p)));
       stage.style.setProperty("--kd", String(smooth(0.62, 0.84, p)));
-      stage.style.setProperty("--kdim", String(0.55 * (1 - smooth(0.25, 0.75, p))));
+      stage.style.setProperty("--kdim", String(0.14 + 0.5 * smooth(0.62, 0.86, p)));
       stage.style.setProperty("--kh", String(1 - smooth(0.0, 0.05, p)));
       const gone = target - 0.04;
       for (const e of entryEls) e.el.classList.toggle("is-gone", e.cx < gone);
@@ -446,14 +504,23 @@ export default function KumoriHero({ entries, lead }: Props) {
       frame++;
       readScroll();
       if (progress < 0.5) {
-        if (frame % 8 === 0) {
+        if (frame % 12 === 0) {
           fctx.globalCompositeOperation = "source-over";
-          fctx.globalAlpha = 0.03;
+          fctx.globalAlpha = 0.055;
           fctx.drawImage(tex, 0, 0);
           fctx.globalAlpha = 1;
           if (progress <= 0.04) clearText();
         }
-        if (hover) {
+        // しばらく触れていないときは、残った薄い跡もならして、全体をむらなく曇り直す
+        if (frame % 50 === 0 && now - lastWipe > 5000 && !press && !(hover && hoverT < 1.1)) {
+          fctx.globalCompositeOperation = "source-over";
+          fctx.globalAlpha = 0.22;
+          fctx.drawImage(tex, 0, 0);
+          fctx.globalAlpha = 1;
+          if (progress <= 0.04) clearText();
+        }
+        if (hover && hoverT < 1.1) {
+          hoverT += dt;
           hover.r += (hover.tr - hover.r) * Math.min(1, dt * 9);
           const r = hover.r;
           fctx.globalCompositeOperation = "destination-out";
@@ -464,6 +531,19 @@ export default function KumoriHero({ entries, lead }: Props) {
           fctx.fillStyle = g;
           fctx.beginPath();
           fctx.arc(hover.x, hover.y, r, 0, Math.PI * 2);
+          fctx.fill();
+          fctx.globalCompositeOperation = "source-over";
+        }
+        if (press) {
+          press.r += (78 * s - press.r) * Math.min(1, dt * 7);
+          fctx.globalCompositeOperation = "destination-out";
+          const pg = fctx.createRadialGradient(press.x, press.y, press.r * 0.2, press.x, press.y, press.r);
+          pg.addColorStop(0, "rgba(0,0,0,.5)");
+          pg.addColorStop(0.82, "rgba(0,0,0,.4)");
+          pg.addColorStop(1, "rgba(0,0,0,0)");
+          fctx.fillStyle = pg;
+          fctx.beginPath();
+          fctx.arc(press.x, press.y, press.r, 0, Math.PI * 2);
           fctx.fill();
           fctx.globalCompositeOperation = "source-over";
         }
@@ -506,7 +586,11 @@ export default function KumoriHero({ entries, lead }: Props) {
       img.style.objectPosition = `${crop.px * 100}% ${crop.py * 100}%`;
       img.style.transformOrigin = `${crop.ox * 100}% ${crop.oy * 100}%`;
       img.style.transform = `scale(${crop.z})`;
-      s = Math.min(1, 1000 / W);
+      s = Math.min(2, window.devicePixelRatio || 1);
+      bulbPts = Array.from(glass.querySelectorAll<HTMLElement>(".k-bulb"))
+        .map((el) => el.getBoundingClientRect())
+        .filter((b) => b.width > 0)
+        .map((b) => ({ x: b.left + b.width / 2 - r.left, y: b.top + b.height / 2 - r.top }));
       Fw = Math.max(2, Math.round(W * s));
       Fh = Math.max(2, Math.round(H * s));
       fogC.width = dropC.width = Fw;
@@ -553,6 +637,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       if (e.pointerType !== "mouse" && e.buttons === 0 && e.pointerType !== "touch" && e.pointerType !== "pen") return;
       const p = toLocal(e);
       wipeTo(p.x, p.y, e.pointerType !== "mouse");
+      if (press) { press.x = p.x * s; press.y = p.y * s; }
     };
     const onLeave = () => { lastPt = null; };
     const onDown = (e: PointerEvent) => {
@@ -560,17 +645,22 @@ export default function KumoriHero({ entries, lead }: Props) {
       lastPt = null;
       const p = toLocal(e);
       wipeTo(p.x, p.y, e.pointerType !== "mouse");
+      if (e.pointerType !== "mouse") press = { x: p.x * s, y: p.y * s, r: 30 * s };
     };
+    const onUp = () => { press = null; lastPt = null; };
     glass.addEventListener("pointermove", onMove);
     glass.addEventListener("pointerdown", onDown);
     glass.addEventListener("pointerleave", onLeave);
+    glass.addEventListener("pointerup", onUp);
+    glass.addEventListener("pointercancel", onUp);
 
     const enter = (ev: Event) => {
       if (reduced) return;
       const el = ev.currentTarget as HTMLElement;
       const gb = glass.getBoundingClientRect();
       const b = el.getBoundingClientRect();
-      hover = { x: (b.left + b.width / 2 - gb.left) * s, y: (b.top + b.height / 2 - gb.top) * s, r: 8 * s, tr: Math.max(b.width, b.height) * 0.46 * s };
+      hoverT = 0;
+      hover = { x: (b.left + Math.min(b.width * 0.42, 150) - gb.left) * s, y: (b.top + b.height / 2 - gb.top) * s, r: 8 * s, tr: Math.min(b.height * 0.72, 54) * s };
     };
     const leave = () => { hover = null; };
     const links = Array.from(stage.querySelectorAll<HTMLElement>(".k-entry"));
@@ -599,7 +689,7 @@ export default function KumoriHero({ entries, lead }: Props) {
     const h1 = h1Ref.current;
     if (h1) fontFamily = getComputedStyle(h1).fontFamily || fontFamily;
     const fontReady = Promise.race([
-      document.fonts.load(`800 120px ${fontFamily}`, "マチノワビューティー").catch(() => null),
+      document.fonts.load(`400 120px ${fontFamily}`, "マチノワビューティー").catch(() => null),
       new Promise((res) => setTimeout(res, 2500)),
     ]);
     const imgReady = new Promise<void>((res) => {
@@ -624,6 +714,8 @@ export default function KumoriHero({ entries, lead }: Props) {
       glass.removeEventListener("pointermove", onMove);
       glass.removeEventListener("pointerdown", onDown);
       glass.removeEventListener("pointerleave", onLeave);
+      glass.removeEventListener("pointerup", onUp);
+      glass.removeEventListener("pointercancel", onUp);
       links.forEach((l) => {
         l.removeEventListener("pointerenter", enter);
         l.removeEventListener("focus", enter);
@@ -643,6 +735,7 @@ export default function KumoriHero({ entries, lead }: Props) {
         <div className="k-stage" ref={stageRef}>
           <div className="k-glass" ref={glassRef}>
             <div className="k-room" aria-hidden="true">
+              <div className="k-photo-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 ref={imgRef}
@@ -653,12 +746,24 @@ export default function KumoriHero({ entries, lead }: Props) {
                 alt={KUMORI_PHOTO.alt}
                 decoding="async"
               />
+              </div>
               <div className="k-warm" />
               {KUMORI_BOKEH.map((b, i) => (
                 <i key={i} className="k-bokeh" style={{ left: `${b.x * 100}%`, top: `${b.y * 100}%`, width: `${b.r * 150}vmax`, height: `${b.r * 150}vmax`, opacity: b.a * 1.2 }} />
               ))}
             </div>
             <div className="k-dim" aria-hidden="true" />
+            <div className="k-bulbs" aria-hidden="true">
+              {Array.from({ length: 11 }).map((_, i) => (
+                <i key={`t${i}`} className={`k-bulb${i % 2 ? " k-alt" : ""}`} style={{ left: `${6 + i * 8.8}%`, top: "var(--k-bulb-y)" }} />
+              ))}
+              {Array.from({ length: 6 }).map((_, i) => (
+                <i key={`l${i}`} className="k-bulb k-side" style={{ left: "var(--k-bulb-x)", top: `${18 + i * 14.5}%` }} />
+              ))}
+              {Array.from({ length: 6 }).map((_, i) => (
+                <i key={`r${i}`} className="k-bulb k-side" style={{ right: "var(--k-bulb-x)", top: `${18 + i * 14.5}%` }} />
+              ))}
+            </div>
             <canvas ref={fogRef} className="k-fog" aria-hidden="true" />
             <canvas ref={dropRef} className="k-drops" aria-hidden="true" />
             <div className="k-sheen" aria-hidden="true" />
@@ -687,7 +792,7 @@ export default function KumoriHero({ entries, lead }: Props) {
                     <Link href={e.href} className="k-entry">
                       <span className="k-num" aria-hidden="true">{e.num}</span>
                       <span className="k-name">{e.name}</span>
-                      <span className="k-slug">/beauty/{e.slug}</span>
+                      <span className="k-slug">{e.slug}</span>
                     </Link>
                   </li>
                 ))}
@@ -710,6 +815,8 @@ export default function KumoriHero({ entries, lead }: Props) {
       </div>
 
       <section className="k-after" aria-label="掲載準備中">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="k-after-photo" src={src(1600)} alt="" loading="lazy" decoding="async" />
         <div className="k-after-in">
           <DeepCopy lead={lead} />
         </div>
