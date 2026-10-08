@@ -941,3 +941,77 @@
 @media (hover: none) {
   [data-wipe]:is(.is-in) .kb-fog { transition: --r 2.4s cubic-bezier(0.3, 0.5, 0.3, 1); }
 }
+
+/* ================= 4 回目の直し ================= */
+/* 1. エリアの丸い跡: 全県そろった明るい色(奥の写真の明るい窓辺だけが、少しずつ位置を変えて見える) */
+.k-tile { color: #120a05; --lift: 0.38; }
+.k-tile::before {
+  background-image: linear-gradient(rgba(255, 244, 226, var(--lift)), rgba(255, 244, 226, var(--lift))), var(--ph);
+  background-size: 100% 100%, cover;
+  background-position: 0 0, center;
+  filter: brightness(1.12) saturate(1.05);
+}
+.k-tile::after { background: rgba(250, 243, 232, 0.5); }
+@media (min-width: 900px) {
+  .k-tile::before {
+    background-size: 100% 100%, calc(var(--cell) * 3.4) auto;
+    background-position: 0 0, calc(var(--cell) * (var(--bx) * -0.42 - 1) - 5px) calc(var(--cell) * (var(--by) * -0.5 - 0.6) - 5px);
+  }
+}
+.k-tile:is(:hover, :focus-visible) { --lift: 0.04; }
+.k-tile:is(:hover, :focus-visible)::before { filter: brightness(1.28) saturate(1.2) contrast(1.06); }
+.k-tile:is(:hover, :focus-visible)::after {
+  background: radial-gradient(circle, rgba(255, 246, 228, 0.16), rgba(255, 232, 192, 0.04) 70%, rgba(255, 232, 192, 0));
+}
+.k-tile:is(:hover, :focus-visible)::before,
+.k-tile:is(:hover, :focus-visible)::after { transform: scale(2.5); }
+@media (max-width: 899px) {
+  .k-tile:is(:hover, :focus-visible)::before, .k-tile:is(:hover, :focus-visible)::after { transform: scale(1.14); }
+}
+.k-tile span { text-shadow: 0 0 2px #fffaf0, 0 0 2px #fffaf0, 0 0 5px #fffaf0, 0 0 10px rgba(255, 250, 240, 0.98), 0 0 18px rgba(255, 250, 240, 0.9); }
+
+/* 2. 暗い地の Tab の枠: 生成りの 3px の外枠 */
+.k-below :where(a):focus-visible { outline: 3px solid #fff6ea; outline-offset: 5px; }
+.k-minilink:focus-visible { outline: 3px solid #fff6ea; outline-offset: 8px; border-radius: 12px; }
+.k-head a:focus-visible { outline: 3px solid #fff6ea; outline-offset: 3px; box-shadow: 0 0 0 6px rgba(122, 42, 28, 0.95); border-radius: 6px; }
+
+/* 3. 利用シーン: 乗せると、言葉のまわりの曇りがやわらかく拭かれる。言葉・印を大きく、口紅も大きく */
+.k-sceneglass:has(.k-scene:is(:hover, :focus-visible)) { --ar: 130px; transition: --ar 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.k-sceneglass::after { display: block; }
+.k-sceneglass { min-height: 540px; }
+.k-scenelist { padding: 60px clamp(24px, 4vw, 72px) 150px; gap: 26px 0; }
+.k-scene { min-height: 150px; padding: 0 28px; }
+.k-scene-t { font-size: clamp(32px, 4.1vw, 62px); }
+.k-lip-b { stroke-width: 15px; }
+.k-lipstick { transform: rotate(-12deg) scale(1.3); transform-origin: 100% 100%; bottom: 30px; right: 3.5%; }
+@media (max-width: 899px) {
+  .k-sceneglass { min-height: 0; }
+  .k-scenelist { padding: 44px 18px 118px; gap: 6px; }
+  .k-scene { min-height: 88px; }
+  .k-scene-t { font-size: 32px; }
+  .k-lipstick { transform: rotate(-12deg); }
+}
+
+/* 4. 紙のカード: 中央に、少し広く */
+.k-edge { width: min(1100px, 100%); margin-inline: auto; }
+.k-card { width: min(980px, 94%); padding: 52px clamp(28px, 5vw, 72px) 38px; }
+.k-note { font-size: 19px; }
+.k-note-sub { font-size: 16px; }
+.k-clip-l { left: 14%; }
+.k-clip-r { right: 14%; }
+
+/* 5. 種類: 字の色の切り替えを先に(影の膜はそのあとを追う) */
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-txt { transition: color 0.12s 0s, text-shadow 0.12s 0s; }
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-num { transition: color 0.12s 0s; }
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-shade { transition: opacity 0.3s 0s; }
+
+/* Tab の枠: 暗い地=生成りの 3px の外枠。明るいガラス・紙の上=濃い赤茶 */
+.k-below a:focus-visible { outline: 3px solid #fff6ea; outline-offset: 5px; }
+.k-below a.k-minilink:focus-visible { outline-offset: 8px; border-radius: 12px; }
+.k-below .k-big a:focus-visible,
+.k-below a.k-tile:focus-visible { outline: 3px solid #7a2a1c; outline-offset: -3px; }
+.k-below .k-card a:focus-visible { outline-color: #8e1228; outline-offset: 3px; }
+
+/* 利用シーンの言葉は折らない */
+.k-scene-t { white-space: nowrap; font-size: clamp(30px, 3.7vw, 54px); }
+.k-scene { padding: 0 22px; }

@@ -133,7 +133,7 @@ export default function KumoriBelow(p: BelowProps) {
                                 prefetch={false}
                                 className="k-tile"
                                 data-r={bi}
-                                style={{ ["--col" as string]: pos[0], ["--row" as string]: pos[1] }}
+                                style={{ ["--col" as string]: pos[0], ["--row" as string]: pos[1], ["--bx" as string]: (pos[0] * 7 + pos[1] * 3) % 4, ["--by" as string]: (pos[0] * 5 + pos[1] * 2) % 4 }}
                               >
                                 <span>{a.short}</span>
                                 {a.count > 0 && <em>{a.count}件</em>}
@@ -161,6 +161,7 @@ export default function KumoriBelow(p: BelowProps) {
           <div className="k-areaglass k-sceneglass" data-fogpane>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="k-areaphoto" src={img(KUMORI_SCENE_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_SCENE_PHOTO.photo, 900)} 900w, ${img(KUMORI_SCENE_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_SCENE_PHOTO.pos }} />
+            <i className="k-areaglow" aria-hidden="true" />
             <i className="kb-fog kb-fog-area" aria-hidden="true" />
             <i className="k-bulbrow" aria-hidden="true" />
             <ul className="k-scenelist">
