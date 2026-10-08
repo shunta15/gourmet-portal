@@ -54,8 +54,8 @@ export default function KumoriBelow(p: BelowProps) {
                     {ph && (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={img(ph.photo, 900)}
-                        srcSet={`${img(ph.photo, 600)} 600w, ${img(ph.photo, 1000)} 1000w`}
+                        src={img(ph.photo, 1100)}
+                        srcSet={`${img(ph.photo, 760)} 760w, ${img(ph.photo, 1100)} 1100w, ${img(ph.photo, 1500)} 1500w`}
                         sizes="(max-width: 700px) 80vw, 380px"
                         alt=""
                         loading="lazy"
@@ -90,6 +90,7 @@ export default function KumoriBelow(p: BelowProps) {
           <div className="k-areaglass" data-fogpane>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="k-areaphoto" src={img(KUMORI_AREA_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_AREA_PHOTO.photo, 900)} 900w, ${img(KUMORI_AREA_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_AREA_PHOTO.pos }} />
+            <i className="k-areaglow" aria-hidden="true" />
             <i className="kb-fog kb-fog-area" aria-hidden="true" />
             <i className="k-bulbrow" aria-hidden="true" />
             <div className="k-areain">
@@ -100,10 +101,7 @@ export default function KumoriBelow(p: BelowProps) {
                 return (
                   <section className="k-region-row" key={b.key} aria-label={b.label}>
                     <h3 className="k-region">
-                      <span className="k-rg" data-t={b.label}>
-                        <span className="k-rg-rim" aria-hidden="true">{b.label}</span>
-                        <span className="k-rg-in">{b.label}</span>
-                      </span>
+                      <span className="k-rg">{b.label}</span>
                       <small>{b.en}{total > 0 ? ` ${total}件` : ""}</small>
                     </h3>
                     <ul className="k-prefs" style={{ ["--c" as string]: KUMORI_AREA_COLS[b.key] ?? 6 }}>
