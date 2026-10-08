@@ -320,7 +320,8 @@
   z-index: -1;
   inset: -2px -18px -2px 58px;
   border-radius: 44px;
-  background: radial-gradient(ellipse at 38% 50%, rgba(246, 240, 230, 0.78), rgba(246, 240, 230, 0.5) 55%, rgba(246, 240, 230, 0) 82%);
+  background: radial-gradient(ellipse at 38% 50%, rgba(246, 240, 230, 0.8), rgba(246, 240, 230, 0.46) 50%, rgba(246, 240, 230, 0) 72%);
+  opacity: var(--kback, 0);
   pointer-events: none;
 }
 .k-entry:hover .k-name,

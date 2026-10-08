@@ -482,6 +482,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       stage.style.setProperty("--kd", String(smooth(0.62, 0.84, p)));
       stage.style.setProperty("--kdim", String(0.14 + 0.5 * smooth(0.62, 0.86, p)));
       stage.style.setProperty("--kh", String(1 - smooth(0.0, 0.05, p)));
+      stage.style.setProperty("--kback", String(smooth(0.03, 0.12, p)));
       const gone = target - 0.04;
       for (const e of entryEls) e.el.classList.toggle("is-gone", e.cx < gone);
     }
