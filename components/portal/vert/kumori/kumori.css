@@ -422,6 +422,14 @@
   color: var(--cream);
   text-shadow: 0 2px 30px rgba(10, 4, 2, 0.9), 0 0 4px rgba(10, 4, 2, 0.6);
 }
+/* 英字の大見出し（Beauty in Town）。どの幅でも 1 行に収まる大きさ（幅 ≒ 字の大きさ × 7.9。枠は 44vw／スマホは 82vw） */
+.k-deep-h.en {
+  font-size: clamp(34px, 4.6vw, 72px);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
 .k-deep-lead {
   margin: 0;
   font-size: clamp(16px, 1.3vw, 19px);
@@ -504,6 +512,7 @@
   .k-deep { padding: 0 9vw 13svh; background: linear-gradient(180deg, rgba(22, 11, 6, 0.1) 0%, rgba(22, 11, 6, 0.78) 40%, rgba(22, 11, 6, 0.96) 100%); justify-content: flex-end; }
   .k-deep > * { max-width: none; }
   .k-deep-h { font-size: 38px; }
+  .k-deep-h.en { font-size: min(34px, 9.4vw); }
   .k-deep-lead { font-size: 16px; line-height: 1.9; }
   .k-credit { right: 18px; bottom: 12px; }
 }

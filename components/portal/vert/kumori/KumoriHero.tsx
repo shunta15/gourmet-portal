@@ -31,8 +31,12 @@ type Drop = { x: number; y: number; r: number; v: number; dist: number; max: num
 function DeepCopy({ lead, total }: { lead: string; total: number }) {
   return (
     <>
-      <p className="k-deep-eye">MACHINOWA Beauty</p>
-      <h2 className="k-deep-h">{total > 0 ? "街のサロン案内" : "掲載準備中です"}</h2>
+      <p className="k-deep-eye">MACHINOWA</p>
+      {total > 0 ? (
+        <h2 className="k-deep-h en" lang="en">Beauty in Town</h2>
+      ) : (
+        <h2 className="k-deep-h">掲載準備中です</h2>
+      )}
       <p className="k-deep-lead">{lead}</p>
     </>
   );
@@ -826,7 +830,7 @@ export default function KumoriHero({ entries, lead, total }: Props) {
         </div>
       </div>
 
-      <section className="k-after" aria-label={total > 0 ? "街のサロン案内" : "掲載準備中"}>
+      <section className="k-after" aria-label={total > 0 ? "マチノワ ビューティーの案内" : "掲載準備中"}>
         {KUMORI_PHOTOS && (
           // eslint-disable-next-line @next/next/no-img-element
           <img className="k-after-photo" src={src(1600)} alt="" loading="lazy" decoding="async" />
