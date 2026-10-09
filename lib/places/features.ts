@@ -37,9 +37,8 @@ export interface PlaceFeature {
 
 /**
  * 新業種の特集（/{beauty,bodycare}/feature/{id}・店ページの「特集記事を読む」）を出すか。
- * 今回の公開は対象外（false）。false のあいだは特集のデータを空として扱う入口がここの 1 か所だけで、
+ * 2026-10-09 の公開②から true（監査済みの 9 本だけ。features-{beauty,bodycare}.json に入っている分）。false にすると特集のデータを空として扱う入口がここの 1 か所だけで、
  * 特集ページは 404、店ページのリンクは出ず、サイトマップにも載らない（getGeneratedFeatures が空を返すため。ほかの関数もここ経由）。
- * 出すときは true にする。
  */
 export const VERTICAL_FEATURES_ENABLED = true;
 
