@@ -1,0 +1,92 @@
+{
+  "key": "bodycare-59",
+  "headline": "守口市大宮通にある整骨院。ガレージ1台分あり",
+  "lede": "大阪府守口市大宮通4丁目にある整骨院です。Google マップの業種の表示は「接骨院」です。公式サイトには、住所と電話番号、予約方法、受付時間の表が載っています。",
+  "sections": [
+    {
+      "heading": "予約と受付時間",
+      "body": "予約は電話と、整骨院ヒラシタの予約アプリの2つの方法が案内されています。受付時間は、月曜から金曜が午前9:00〜12:30と午後15:00〜19:00(午後は予約優先)、土曜が午前9:00〜14:00(12:00から予約優先)で、日曜と祝日は休みです。ガレージが1台分あります。2026年4月1日に、整骨院の上の階に児童発達支援などを行う別事業の「はれる」が開所しています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "大阪府守口市大宮通4-13-3にある",
+      "source": "https://seikotsuinhirashita.com/",
+      "quote": "大阪府守口市大宮通4-13-3",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ガレージが1台ある",
+      "source": "https://seikotsuinhirashita.com/",
+      "quote": "☆ガレージ1台有り",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話予約と予約アプリ",
+      "source": "https://seikotsuinhirashita.com/",
+      "quote": "電話予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約アプリがある",
+      "source": "https://seikotsuinhirashita.com/",
+      "quote": "整骨院ヒラシタ 予約アプリ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月〜金は午前9:00〜12:30、午後15:00〜19:00(午後は予約優先)",
+      "source": "https://seikotsuinhirashita.com/wp-content/uploads/2024/01/image.png",
+      "quote": "月～金 午前 9:00～12:30",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土曜は午前9:00〜14:00(12:00から予約優先)",
+      "source": "https://seikotsuinhirashita.com/wp-content/uploads/2024/01/image.png",
+      "quote": "土曜日 午前 9:00～14:00（12:00～予約優先）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "日曜・祝日は休み(表で斜線)",
+      "source": "https://seikotsuinhirashita.com/wp-content/uploads/2024/01/image.png",
+      "quote": "日・祝",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2026年4月1日に整骨院の上に「はれる」がオープンした",
+      "source": "https://seikotsuinhirashita.com/",
+      "quote": "2026年4月1日に整骨院の上に「はれる」がOPENしました！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "「はれる」は児童発達支援・放課後等デイサービス",
+      "source": "https://seikotsuinhirashita.com/%e3%81%af%e3%82%8c%e3%82%8b/",
+      "quote": "児童発達支援・放課後等デイサービス",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの業種の表示は接骨院",
+      "source": "https://maps.google.com/?cid=15448326962344332668",
+      "quote": "業種 接骨院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも日曜は定休日",
+      "source": "https://maps.google.com/?cid=15448326962344332668",
+      "quote": "営業時間 日 定休日",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://seikotsuinhirashita.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15448326962344332668"
+    }
+  ],
+  "notes": "公式サイトはトップ・「はれる」紹介・お知らせのみで、メニュー・料金・施術内容の記載なし。事実は住所・ガレージ・予約・受付時間(画像を目で読んだ)・「はれる」開所。受付時間はGoogle マップと一致(月〜金9:00-12:30/15:00-19:00、土9:00-14:00、日休)。tagsは該当なし(夜遅く:19時閉店、土日営業:日曜休み)。"
+}

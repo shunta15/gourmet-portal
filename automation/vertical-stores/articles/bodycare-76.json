@@ -1,0 +1,88 @@
+{
+  "key": "bodycare-76",
+  "headline": "新柏駅から徒歩5分の、ドライヘッドスパの店",
+  "lede": "千葉県柏市豊住にある、ヘッドスパとコミュニケーションスペースを掲げる店です。新柏駅から徒歩5分と、公式サイトは案内しています。ドライヘッドスパを15分から受けられるコースがあります。",
+  "sections": [
+    {
+      "heading": "予約と、店の取り組み",
+      "body": "予約は、予約サイトのreservaのページから取る形です。公式サイトは、施術のほかに、交流会の開催、イベントの企画、美容や健康についての勉強会の開催などを企画していると案内しています。メニューは、ドライヘッドスパの15分コースと30分コースの2つです。電話番号はGoogle マップに080-1243-1106と登録されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ドライヘッドスパ15分コース",
+      "minutes": 15
+    },
+    {
+      "name": "ドライヘッドスパ30分コース",
+      "minutes": 30
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "千葉県柏市豊住1丁目4-16にある",
+      "source": "https://maps.google.com/?cid=18001695760302925919",
+      "quote": "住所 千葉県柏市豊住１丁目４−１６",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "「ヘッドスパ＆コミュニケーションスペース」を掲げている",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/",
+      "quote": "おとなの帰宅部というヘッドスパ＆コミュニケーションスペース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新柏駅から徒歩5分と案内している",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/",
+      "quote": "新柏徒歩5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術メニューにドライヘッドスパ15分コースがある",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/page9",
+      "quote": "ドライヘッドスパ15分コース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術メニューにドライヘッドスパ30分コースがある",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/page9",
+      "quote": "ドライヘッドスパ30分コース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は予約サイトreservaのページ",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/",
+      "quote": "https://reserva.be/otona1106",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交流会・イベント企画・勉強会の開催などを企画している",
+      "source": "https://www4.hp-ez.com/hp/otonanokitakubu/page8",
+      "quote": "交流会の開催 イベント企画 美容健康の意識向上の勉強会の開催",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップに登録された電話番号は080-1243-1106",
+      "source": "https://maps.google.com/?cid=18001695760302925919",
+      "quote": "電話 080-1243-1106",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www4.hp-ez.com/hp/otonanokitakubu/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=18001695760302925919"
+    }
+  ],
+  "notes": "公式サイト(hp-ezの無料ホームページ)。メニューのページは名前2つのみ(内容・料金は画像のため読めず不使用)。コンセプト・トップの頭痛・不眠・薄毛・たるみ等の効き目と、店主の経歴・プロフィールは不使用。営業時間はサイト・Google マップとも記載なし。住所は公式サイトに無くGoogle マップの登録。"
+}

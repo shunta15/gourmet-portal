@@ -1,0 +1,117 @@
+{
+  "key": "bodycare-55",
+  "headline": "南浦和駅東口から歩く、ベッド3台の小さな整体院",
+  "lede": "さいたま市南区南浦和にある整体院です。ホットペッパービューティーでは「整体・カイロ」に分類されています。南浦和駅の東口を出て線路沿いに歩いた石井ビルの1階にあり、目印としてダイエーが挙げられています。",
+  "sections": [
+    {
+      "heading": "予約・設備・休み",
+      "body": "予約はホットペッパービューティー上で、空席の確認とネット予約ができます。設備はベッド3台、施術者は1人の小さなサロンです。支払いはVisa・Mastercard・American Expressのカードに対応し、駐車場については近隣のコインパーキングの利用が案内されています。定休日は木曜(祝日は不定休)で、営業時間は9:30〜23:00です。Google マップでは土曜と日曜も営業日になっています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 10
+    },
+    {
+      "tag": "土日営業",
+      "factIndex": 12
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "埼玉県さいたま市南区南浦和3-33-15 石井ビル1階にある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "埼玉県さいたま市南区南浦和３-33-15 石井ビル１F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ホットペッパービューティーで「整体・カイロ」に分類されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "整体・カイロ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "南浦和駅東口を出て右側、線路沿いを5分",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "南浦和駅東口を出て右側、線路沿いを東京、蕨方面にまっすぐ５分向かって下さい",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "目印としてダイエーの近くと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "目印といたしましては、ダイエーの近く",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ホットペッパービューティー上で空席確認と予約ができる",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "空席確認・予約する",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はベッド3台、施術者は1人",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "総数3(ベッド3)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術者は1人",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "総数1人(施術者（リラク）1人)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはVisa・Mastercard・American Expressに対応",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "Visa／Mastercard／American Express",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は近隣のコインパーキングの利用が案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "近隣のコインパーキングをご利用下さい",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は木曜・祝日は不定休",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "木曜・祝日は不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:30〜23:00",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+      "quote": "9:30～23:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは月・火・水・金に9:30〜23:00の営業、木曜は定休日",
+      "source": "https://maps.google.com/?cid=14997721803454033251",
+      "quote": "営業時間 木 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは土曜も日曜も9:30〜23:00の営業",
+      "source": "https://maps.google.com/?cid=14997721803454033251",
+      "quote": "営業時間 土 09:30–23:00 営業時間 日 09:30–23:00",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000295426/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14997721803454033251"
+    }
+  ],
+  "notes": "gbpのwebsiteはホットペッパービューティーの店ページ。事実のみ使用(口コミ・評価・クーポン・料金・「人気」等の宣伝文は不使用)。メニュー名はクーポンの題に「根本改善」「解消」等が含まれるため載せない。駅近は「南浦和駅東口を出て…5分」とこだわり条件「駅から徒歩5分以内」。院長の名前は不使用。"
+}
