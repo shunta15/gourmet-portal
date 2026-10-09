@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "./below.css";
 import KumoriFx from "./KumoriFx";
-import { KUMORI_AREA_PHOTO, KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY, KUMORI_REGION_LABELS, KUMORI_SCENE_PHOTO, KUMORI_TILES } from "@/lib/portal/vert/kumori/data";
+import { KUMORI_AREA_PHOTO, KUMORI_LIP_PATHS, KUMORI_PANES, KUMORI_PHOTO_BY, KUMORI_PHOTOS, KUMORI_REGION_LABELS, KUMORI_SCENE_PHOTO, KUMORI_TILES } from "@/lib/portal/vert/kumori/data";
 
 export type BelowCategory = { slug: string; name: string; href: string; count: number };
 export type BelowArea = { slug: string; short: string; block: string; href: string; count: number };
@@ -19,6 +19,9 @@ export type BelowProps = {
   others: BelowOther[];
   hasPolicy: boolean;
 };
+
+/** 写真を出さない設定のとき、エリアのタイルの丸い跡（--ph）に敷く色面（写真のときの明るい窓辺の色） */
+const NO_PHOTO_BG = "linear-gradient(150deg, #f6e2c0 0%, #e8c18f 55%, #f3d8aa 100%)";
 
 const img = (url: string, w: number) => `${url}?auto=format&fit=crop&w=${w}&q=75`;
 
@@ -51,7 +54,9 @@ export default function KumoriBelow(p: BelowProps) {
               <li key={c.slug} className={`k-p${i + 1}`}>
                 <Link href={c.href} prefetch={false} className={`k-pane k-${ph?.shape ?? "round"}`} data-wipe>
                   <span className="k-glass2">
-                    {ph && (
+                    {/* 写真を出さない設定（KUMORI_PHOTOS = false）のときは、ほかの入口の手鏡と同じ色面の絵 */}
+                    {!KUMORI_PHOTOS && <i className="k-room2" aria-hidden="true" />}
+                    {KUMORI_PHOTOS && ph && (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={img(ph.photo, 1100)}
@@ -87,13 +92,15 @@ export default function KumoriBelow(p: BelowProps) {
         </header>
         <div className="k-big k-areas">
           <div className="k-areaglass k-mapglass">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="k-areaphoto" src={img(KUMORI_AREA_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_AREA_PHOTO.photo, 900)} 900w, ${img(KUMORI_AREA_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_AREA_PHOTO.pos }} />
+            {KUMORI_PHOTOS && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="k-areaphoto" src={img(KUMORI_AREA_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_AREA_PHOTO.photo, 900)} 900w, ${img(KUMORI_AREA_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_AREA_PHOTO.pos }} />
+            )}
             <i className="k-areaglow" aria-hidden="true" />
             <i className="kb-fog kb-fog-area" aria-hidden="true" />
             <i className="k-bulbrow" aria-hidden="true" />
             <div className="k-areain k-mapin">
-              <div className="k-map" style={{ ["--ph" as string]: `url(${img(KUMORI_AREA_PHOTO.photo, 1400)})` }}>
+              <div className="k-map" style={{ ["--ph" as string]: KUMORI_PHOTOS ? `url(${img(KUMORI_AREA_PHOTO.photo, 1400)})` : NO_PHOTO_BG }}>
                 <p className="k-maplead">都道府県を地方ごとに並べています。掲載が追加されると、ここに件数が出ます。</p>
                 <svg className="k-mapline" viewBox="0 0 12 11" preserveAspectRatio="none" aria-hidden="true">
                   {p.blocks.map((b) => {
@@ -159,8 +166,10 @@ export default function KumoriBelow(p: BelowProps) {
         </header>
         <div className="k-big k-scenes">
           <div className="k-areaglass k-sceneglass" data-fogpane>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="k-areaphoto" src={img(KUMORI_SCENE_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_SCENE_PHOTO.photo, 900)} 900w, ${img(KUMORI_SCENE_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_SCENE_PHOTO.pos }} />
+            {KUMORI_PHOTOS && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="k-areaphoto" src={img(KUMORI_SCENE_PHOTO.photo, 1800)} srcSet={`${img(KUMORI_SCENE_PHOTO.photo, 900)} 900w, ${img(KUMORI_SCENE_PHOTO.photo, 1800)} 1800w`} sizes="100vw" alt="" loading="lazy" decoding="async" style={{ objectPosition: KUMORI_SCENE_PHOTO.pos }} />
+            )}
             <i className="k-areaglow" aria-hidden="true" />
             <i className="kb-fog kb-fog-area" aria-hidden="true" />
             <i className="k-bulbrow" aria-hidden="true" />
@@ -249,9 +258,11 @@ export default function KumoriBelow(p: BelowProps) {
         </ul>
       </section>
 
-      <p className="k-credit2">
-        Photo: Unsplash — {KUMORI_PANES.map((x) => x.by).concat(KUMORI_AREA_PHOTO.by, KUMORI_SCENE_PHOTO.by, KUMORI_PHOTO_BY).filter((v, i, a) => a.indexOf(v) === i).join("、")}
-      </p>
+      {KUMORI_PHOTOS && (
+        <p className="k-credit2">
+          Photo: Unsplash — {KUMORI_PANES.map((x) => x.by).concat(KUMORI_AREA_PHOTO.by, KUMORI_SCENE_PHOTO.by, KUMORI_PHOTO_BY).filter((v, i, a) => a.indexOf(v) === i).join("、")}
+        </p>
+      )}
     </div>
   );
 }

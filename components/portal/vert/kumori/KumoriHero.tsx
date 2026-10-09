@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import "./kumori.css";
-import { KUMORI_BOKEH, KUMORI_PHOTO, photoUrl, type KumoriEntry } from "@/lib/portal/vert/kumori/data";
+import { KUMORI_BOKEH, KUMORI_PHOTO, KUMORI_PHOTOS, photoUrl, type KumoriEntry } from "@/lib/portal/vert/kumori/data";
 
-type Props = { entries: KumoriEntry[]; lead: string };
+/** total: 今の掲載件数（countPlaces の実数）。0 のときは「掲載準備中」、1 以上のときは今の /beauty（VerticalHub）の件数 1 以上の言葉 */
+type Props = { entries: KumoriEntry[]; lead: string; total: number };
 
 const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 const smooth = (a: number, b: number, v: number) => {
@@ -27,17 +28,18 @@ function rng(seed: number) {
 
 type Drop = { x: number; y: number; r: number; v: number; dist: number; max: number; wait: number; f: number; ph: number; text: boolean };
 
-function DeepCopy({ lead }: { lead: string }) {
+function DeepCopy({ lead, total }: { lead: string; total: number }) {
   return (
     <>
       <p className="k-deep-eye">MACHINOWA Beauty</p>
-      <h2 className="k-deep-h">掲載準備中です</h2>
+      <h2 className="k-deep-h">{total > 0 ? "掲載状況" : "掲載準備中です"}</h2>
+      {total > 0 && <p className="k-deep-lead">{`現在の掲載は ${total} 件です。`}</p>}
       <p className="k-deep-lead">{lead}</p>
     </>
   );
 }
 
-export default function KumoriHero({ entries, lead }: Props) {
+export default function KumoriHero({ entries, lead, total }: Props) {
   const trackRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const glassRef = useRef<HTMLDivElement>(null);
@@ -52,7 +54,7 @@ export default function KumoriHero({ entries, lead }: Props) {
     const glass = glassRef.current!;
     const fogC = fogRef.current!;
     const dropC = dropRef.current!;
-    const img = imgRef.current!;
+    const img = imgRef.current; // 写真を出さない設定（KUMORI_PHOTOS = false）のときは null
     const fctx = fogC.getContext("2d")!;
     const dctx = dropC.getContext("2d")!;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -100,7 +102,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       bg0.addColorStop(1, "#5c3a24");
       t.fillStyle = bg0;
       t.fillRect(0, 0, Fw, Fh);
-      if (img.complete && img.naturalWidth) {
+      if (img && img.complete && img.naturalWidth) {
         const sm = document.createElement("canvas");
         sm.width = 36;
         sm.height = Math.max(8, Math.round((36 * Fh) / Fw));
@@ -557,7 +559,7 @@ export default function KumoriHero({ entries, lead }: Props) {
           fctx.fill();
           fctx.globalCompositeOperation = "source-over";
         }
-        if (intro && !(img.complete && img.naturalWidth) && now < intro.t0 + 6000) intro.t0 = Math.max(intro.t0, now + 300);
+        if (intro && img && !(img.complete && img.naturalWidth) && now < intro.t0 + 6000) intro.t0 = Math.max(intro.t0, now + 300);
         if (intro) {
           const t = clamp((now - intro.t0) / 1500);
           const e = t * t * (3 - 2 * t);
@@ -594,9 +596,11 @@ export default function KumoriHero({ entries, lead }: Props) {
       W = r.width;
       H = r.height;
       crop = W < 700 ? { z: 1.12, ox: 0.3, oy: 0.5, px: 0.34, py: 0.55 } : { z: 1.55, ox: 0.04, oy: 0.5, px: 0.5, py: 0.55 };
-      img.style.objectPosition = `${crop.px * 100}% ${crop.py * 100}%`;
-      img.style.transformOrigin = `${crop.ox * 100}% ${crop.oy * 100}%`;
-      img.style.transform = `scale(${crop.z})`;
+      if (img) {
+        img.style.objectPosition = `${crop.px * 100}% ${crop.py * 100}%`;
+        img.style.transformOrigin = `${crop.ox * 100}% ${crop.oy * 100}%`;
+        img.style.transform = `scale(${crop.z})`;
+      }
       s = Math.min(2, window.devicePixelRatio || 1);
       bulbPts = Array.from(glass.querySelectorAll<HTMLElement>(".k-bulb"))
         .map((el) => el.getBoundingClientRect())
@@ -697,7 +701,7 @@ export default function KumoriHero({ entries, lead }: Props) {
       new Promise((res) => setTimeout(res, 2500)),
     ]);
     const imgReady = new Promise<void>((res) => {
-      if (img.complete) res();
+      if (!img || img.complete) res();
       else { img.addEventListener("load", () => res(), { once: true }); img.addEventListener("error", () => res(), { once: true }); setTimeout(res, 2500); }
     });
     Promise.all([fontReady, imgReady]).then(() => {
@@ -739,18 +743,22 @@ export default function KumoriHero({ entries, lead }: Props) {
         <div className="k-stage" ref={stageRef}>
           <div className="k-glass" ref={glassRef}>
             <div className="k-room" aria-hidden="true">
-              <div className="k-photo-wrap">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                ref={imgRef}
-                className="k-photo"
-                src={src(2200)}
-                srcSet={`${src(1100)} 1100w, ${src(2200)} 2200w`}
-                sizes="100vw"
-                alt={KUMORI_PHOTO.alt}
-                decoding="async"
-              />
-              </div>
+              {KUMORI_PHOTOS && (
+                <div className="k-photo-wrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    ref={imgRef}
+                    className="k-photo"
+                    src={src(2200)}
+                    srcSet={`${src(1100)} 1100w, ${src(2200)} 2200w`}
+                    sizes="100vw"
+                    alt={KUMORI_PHOTO.alt}
+                    decoding="async"
+                  />
+                </div>
+              )}
+              {/* 写真を出さない設定（KUMORI_PHOTOS = false）のときの、拭いたところに見える明るい店内の色面 */}
+              {!KUMORI_PHOTOS && <div className="k-room-plain" />}
               <div className="k-warm" />
               {KUMORI_BOKEH.map((b, i) => (
                 <i key={i} className="k-bokeh" style={{ left: `${b.x * 100}%`, top: `${b.y * 100}%`, width: `${b.r * 150}vmax`, height: `${b.r * 150}vmax`, opacity: b.a * 1.2 }} />
@@ -787,7 +795,7 @@ export default function KumoriHero({ entries, lead }: Props) {
             </h1>
             <p className="k-mark">
               <span className="k-eyebrow">MACHINOWA</span>
-              <span className="k-soon">掲載準備中</span>
+              <span className="k-soon">{total > 0 ? "掲載中" : "掲載準備中"}</span>
             </p>
 
             <nav className="k-menu" aria-label="種類">
@@ -811,19 +819,21 @@ export default function KumoriHero({ entries, lead }: Props) {
             </div>
 
             <div className="k-deep">
-              <DeepCopy lead={lead} />
+              <DeepCopy lead={lead} total={total} />
             </div>
-            <p className="k-credit">Photo: Unsplash</p>
+            {KUMORI_PHOTOS && <p className="k-credit">Photo: Unsplash</p>}
           </div>
           <div className="k-bevel" aria-hidden="true" />
         </div>
       </div>
 
-      <section className="k-after" aria-label="掲載準備中">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="k-after-photo" src={src(1600)} alt="" loading="lazy" decoding="async" />
+      <section className="k-after" aria-label={total > 0 ? "掲載状況" : "掲載準備中"}>
+        {KUMORI_PHOTOS && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="k-after-photo" src={src(1600)} alt="" loading="lazy" decoding="async" />
+        )}
         <div className="k-after-in">
-          <DeepCopy lead={lead} />
+          <DeepCopy lead={lead} total={total} />
         </div>
       </section>
       <svg width="0" height="0" aria-hidden="true" style={{ position: "absolute" }}>
