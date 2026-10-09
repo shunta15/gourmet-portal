@@ -1,0 +1,45 @@
+{
+ "featureId": "麺やせん崎",
+ "dir": "fs-85cd6ce733",
+ "storeName": "麺や せん崎",
+ "mapsUrl": "https://maps.google.com/?cid=4427838004161537438",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E3%82%84+%E3%81%9B%E3%82%93%E5%B4%8E/@37.4217195,140.3502622,17z/data=!3m1!4b1!4m6!3m5!1s0x60206d0023f910bf:0x3d72d7348105e59e!8m2!3d37.4217195!4d140.3502622!16s%2Fg%2F11yydjpbq_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺や せん崎",
+  "address": "〒963-8046 福島県郡山市町東１丁目１８３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-85cd6ce733/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIHl_7oSh2Lc-J7OXwzsJXLxbz65RUCBMVwwwUTKO6ttm6BSl_k8ks2sw7HZOPSCuvymrHVaFqWt6VFHhXBvv9pDax-2Fh6zCr-t565xNGnhtvyDZ9nD626uY0vX2vL4EgCzEnafl5tNXb=s1200",
+   "what": "ラーメンとサイドメニュー",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-85cd6ce733/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QFnRQg3GygEQBE7QiUPHJ5JbHMwTr5d-vE0e9WE1xa5djkiyXso0SfvMbkbeIJ8lI1XHaV87Y7XOXGVxixhAWFgKq0nvKP_pCRFXbuDjBQQUvq9ultn59oReh_CA_QzAPKMEzllzGV7S7O=s1200",
+   "what": "カウンターのある明るい店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-85cd6ce733/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVagI--xW_3bhFD1owKzS_bzmdE-2neXh5Byc0ZtGcrvW6q2jG4T5jZrmXZ0vyw5dHVakLtajyqfEMP5JIhMGIWbquJmfLho69rJwXC-0jvdIbsBsJRqjO0DUlMptWJlMpElvRYSmUg51N=s1200",
+   "what": "ラーメンとつけ汁",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、ポイント5は料理の写真。"
+}

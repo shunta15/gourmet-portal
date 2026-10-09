@@ -1,0 +1,45 @@
+{
+ "featureId": "参道酒場鶏居",
+ "dir": "fs-727e08f6d7",
+ "storeName": "参道酒場 鶏居",
+ "mapsUrl": "https://maps.google.com/?cid=10509615568189648516",
+ "placeUrl": "https://www.google.com/maps/place/%E5%8F%82%E9%81%93%E9%85%92%E5%A0%B4+%E9%B6%8F%E5%B1%85/@37.1731865,138.2426236,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff6799450c7c00b:0x91d9a7ad4bdbee84!8m2!3d37.1731865!4d138.2426236!16s%2Fg%2F11qg2_lpb3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "参道酒場 鶏居",
+  "address": "新潟県上越市中央１丁目５−１９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-727e08f6d7/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVLm4akvzRkbUEDzW4rNyhD2x6uxBr_9CovCGJgIWNxqy7tXltyjNd_vIW__izYBvW8F-7oJ5dTQbvVh7RjJlvPe4MYaRvZppnKcudNgYugkf8GmTndwLorxmrJ0MzAbbGfB3snw=s1200",
+   "what": "串焼きと刺身の盛り合わせ",
+   "width": 900,
+   "height": 837,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-727e08f6d7/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qcmq8idznG7eJtTIaFvtjrdmOBN_3rXE8S9xcuMV6Oa66LkIQcwFYmxivwJsf704XG8sx8_2SXbfgumZpr_Tgx0WL39Y-cYvFt2nPfkxg-60SovDtIBKiaGextuORP-MRfwrjn=s1200",
+   "what": "カウンターと座席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-727e08f6d7/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-HmekDCH9bHKoyjGxQuPv_eVBhOlsGi1IK10OGaybJqdnf3E8fcZP5EcoKwRlw_f1ZjrrJjciFV4YbrwNTk-Y_omd-jzc1KUQprS0okEMzRYP4orL3z9nFCErTjd0GeR7KBBv=s1200",
+   "what": "店の外観と入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

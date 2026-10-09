@@ -1,0 +1,55 @@
+{
+ "featureId": "吉左右きっそう",
+ "dir": "fs-16692b13ab",
+ "storeName": "吉左右きっそう",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%90%89%E5%B7%A6%E5%8F%B3%E3%81%8D%E3%81%A3%E3%81%9D%E3%81%86%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%A4%A7%E5%BA%9C%E5%B8%82%E6%B1%9F%E7%AB%AF%E7%94%BA4-20",
+ "placeUrl": "https://www.google.com/maps/place/%E5%90%89%E5%B7%A6%E5%8F%B3+%E3%81%8D%E3%81%A3%E3%81%9D%E3%81%86/@35.0130336,136.9527927,17z/data=!3m1!4b1!4m6!3m5!1s0x6004829d145d192d:0x683128c8e1a33dda!8m2!3d35.0130336!4d136.9527927!16s%2Fg%2F1vr1wl0d?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "吉左右 きっそう",
+  "address": "愛知県大府市江端町４丁目２０",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-16692b13ab/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6SiUfg9XmoEzTTj4dv2BpPl8Hv5rtAQRaIGLSGx5P5J-R_vFAuQqyBuv7_4uUNopqdUgCu7-q6GHYkS-a_cs9lwTy8pbOZ2bSmOGDCGThg1V9QlEJa-Ub3FGFN8_r94x-shpgOp4oBnew=s1200",
+   "what": "豚骨ラーメン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-16692b13ab/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RI6n1TdbbvvH_iALb_rEITMyR6IBQVHwFr57aRbXbiEEQx0fMFmjslRzwN_MsdzylRTjvsrmUEGpOqnYJAK8jUpJMHz5c_1Rd82reyPyoFST5vY3Jt2pPK9tz4nNwWFNzWjh2J=s1200",
+   "what": "まぜそばとご飯",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-16692b13ab/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3ObOaACmy0tOyZ_voTJhkPs3Ru9kqcHzLXxgVjrRm6MOIj7J_cGnII_o8wtCqFTpwHNwAEurzc8ANzJeeGCK4_Mr4RleYeLfTAZ44bUVWvjfkohfIRo5VXm2raS6No1a4jkFm4w=s1200",
+   "what": "ボックス席が並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-16692b13ab/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T9MwCCiGOdOci96WR1G8N_8Baob0Qk0S5c17mw9akP1vNr3WOcn1Zr0hbAJAMgX2pqITlp9eD0fKvcoEMQqpainSI4bBcHFoj_CjBA8wSEVnycO-9JyLINLUuRVRI3kxwAjl0_UrNqJGI=s1200",
+   "what": "看板と自販機のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

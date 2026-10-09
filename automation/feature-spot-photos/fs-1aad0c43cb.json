@@ -1,0 +1,65 @@
+{
+ "featureId": "太鼓判亭本店",
+ "dir": "fs-1aad0c43cb",
+ "storeName": "太鼓判亭本店",
+ "mapsUrl": "https://maps.google.com/?cid=8375501174659184681",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%AA%E9%BC%93%E5%88%A4%E4%BA%AD%E6%9C%AC%E5%BA%97/@36.331793,140.0268066,17z/data=!3m1!4b1!4m6!3m5!1s0x6021ffd0677b0f71:0x743bc1f16b6d7829!8m2!3d36.331793!4d140.0268066!16s%2Fg%2F1v5fr__x?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "太鼓判亭本店",
+  "address": "茨城県筑西市門井１４１３−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-1aad0c43cb/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPG2n59NNn9_XQVeZg7sJHQ1sGI4OnziTXk19RZmo_MDSOlkk1falnlpwukeiZEI6PytngG8ZR_2HL5pzR5AQW-_UdEW43PE0K5DmWc3JlVFkX7357Enr4ql4VDRkVQ72kjXi8E2vyhd8=s1200",
+   "what": "麺料理の一皿",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-1aad0c43cb/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZnS9ZQg43Kayqq5pI7jwmZoChWOY8YZ3t_X57ukAu9AXNYJcFR5tCGtm5NPnRxTuHxayNgh3jMR2DU3PNzzIu9gJZ2NV15bWd1hdU9gFRE8TWOeZ4oeEt0Gn74vVBCtGuTensNcP7lp8z=s1200",
+   "what": "麻婆豆腐の定食",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1aad0c43cb/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RhfxeDuT_8UCjCeFA14HtFQW6k4H3-oQojK3-HlzkOI0jTOBDaR1fZZjD2DMVsnvS6Bdp6IWrL9A-VSfqp_G64kgquQAXMQeOS7agLr_AhH9uMnvcgCDn70woeAPi3SW0i5kpY8lDypZTO=s1200",
+   "what": "田んぼ脇に立つ店の外観",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1aad0c43cb/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2W9zdF1k9yieNUobR2S5tnEIZtx_ovQtJAfuz32xOPsQhQoVA9MabFygu4QlmrknqabPWZ5Xp-CTJxXh1tr4QJ9ISEuLew-Lm82gBFrdxpIC84bUhm0Zs-QHoRAEDwEPMPAV8n9b9-cuK=s1200",
+   "what": "営業中の黒板が出た入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1aad0c43cb/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTx_pIwuc_BG-pT4GzyqVD6eyDsoRiXeh9ZreUettCv-K0OY_6DTE8RkaMw71C99VM3WgOR5YRWNk0Xb2PwbW6cMgpY-gT2qKJLvXI7yRCWFzl6QY_BYphW6FnHiouCqy5KXU6ApECBRcr=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "CafeDiningオレンジ",
+ "dir": "fs-bde338bfc5",
+ "storeName": "CafeDiningオレンジ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CafeDining%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+ "placeUrl": "https://www.google.com/maps/place/Cafe+Dining+%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8/@35.6098799,140.1101955,17z/data=!3m1!4b1!4m6!3m5!1s0x602284afc6ec8325:0x774af98c2e2c52af!8m2!3d35.6098799!4d140.1101955!16s%2Fg%2F1v2kxkcv?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Cafe Dining オレンジ",
+  "address": "千葉県千葉市中央区登戸１丁目１３−２２ シティ５ビル １F",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-bde338bfc5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiGoCzofcZAIVhY-cwnqe2jv-Yh-wVm2sB8RhkY0EUclnq1gAWmU20VMDbKsvd19dklEXPANIwQntcCj4oMwHTAn0UANWU7YO2xACKPj_sk6nr0VG6iNPS0eD9Tr4zHH820g0l=s1200",
+   "what": "フルーツのケーキ",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-bde338bfc5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUxY2WdTQ2xS8PRKVbbF4UL9dJXC0kZzLEWpxuYj6a8qaTgJ4LfxXNARfQ32SldvnyiQwlaXhC_V4Isol5EsBK8TTLFRKZ69uq4ANpGZ9wvoQhoajkk1J4cot7HHCc5stoI06D=s1200",
+   "what": "テーブル席が広がる店内",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-bde338bfc5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sq3-qrBmI0bmRp8dH7KlRlstrAkfuqfRzZwzdB9KzDRCNd8plINT35s2mNkUMHr_3-kSaAUs9G-eBcDYDuP-s_cLS5EykVR3XjIpL5zLehLNrLg2mkR9kMDlkYBWYZNBl76th6=s1200",
+   "what": "ORANGEの看板の店先",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

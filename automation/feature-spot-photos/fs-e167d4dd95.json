@@ -1,0 +1,45 @@
+{
+ "featureId": "手延べ饂飩粉縒",
+ "dir": "fs-e167d4dd95",
+ "storeName": "手延べ饂飩 粉縒",
+ "mapsUrl": "https://maps.google.com/?cid=4438042015730321668",
+ "placeUrl": "https://www.google.com/maps/place/%E6%89%8B%E5%BB%B6%E3%81%B9%E9%A5%82%E9%A3%A9+%E7%B2%89%E7%B8%92/@35.7945961,139.5182367,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e7e582684e65:0x3d9717b315dd4904!8m2!3d35.7945961!4d139.5182367!16s%2Fg%2F11c5h2gxw4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "手延べ饂飩 粉縒",
+  "address": "〒359-0022 埼玉県所沢市本郷１１２５−１０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e167d4dd95/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNAVyFkFAiSABbo_PyAjLVY8WxxmZPamcPndgpHduIJE2fTFSoMRh06U5FJ8yL-AQjeizCTFnfwKkMgsedovUB4jWCQmdmgg5GK1yw93Uw9Qdpye2hCJDvAACwut2lvklEgoVna2o4tLRU=s1200",
+   "what": "天ぷらとざるうどん",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e167d4dd95/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8OeO-fAO9eGGQnpDWdNzGUR8wzhJQ2l9cfYxQFQOWCon4jAjVDkoYyzmr-FeNINnqxBSL44pLoYN60dQYx7UDro-YUIuZ_LJTGvYP4A8-GrlOAPly6kiHU_JlUbsRJIzC6zTr=s1200",
+   "what": "親子丼とうどんの定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e167d4dd95/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STeafA9ifmHdzHSAEt1V_IuWwWamzNcNKaKn61dDI5dV47tH_oPzZxi6bgrbExbZaojpa-WYxbeKFJSK0v45x11BLHli5nEmjCeYKhGyOMFFNtq1l9MOVrl7ZjxJFYfODWP7KaHwb4INtQ=s1200",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "slot4: 店内の写真が無く、料理の写真で代用(外観2枚は構図がほぼ同じなので1枚のみ使用)"
+}

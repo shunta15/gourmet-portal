@@ -1,0 +1,45 @@
+{
+ "storeId": "r242",
+ "dir": "shop-r242",
+ "storeName": "卓上七輪 炭火焼肉福ちゃん",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8D%93%E4%B8%8A%E4%B8%83%E8%BC%AA%20%E7%82%AD%E7%81%AB%E7%84%BC%E8%82%89%E7%A6%8F%E3%81%A1%E3%82%83%E3%82%93%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E8%8D%92%E5%B7%9D1-14-1",
+ "placeUrl": "https://www.google.com/maps/place/%E5%8D%93%E4%B8%8A%E4%B8%83%E8%BC%AA+%E7%82%AD%E7%81%AB%E7%84%BC%E8%82%89%E7%A6%8F%E3%81%A1%E3%82%83%E3%82%93/@34.6614125,135.5665714,17z/data=!3m1!4b1!4m6!3m5!1s0x6000df04967fe44d:0x26ee318b69bba37e!8m2!3d34.6614125!4d135.5665714!16s%2Fg%2F11mz9pkbwg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "卓上七輪 炭火焼肉福ちゃん",
+  "address": "大阪府東大阪市荒川１丁目１４−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r242/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sgz9GVV2dhuS49QmfgHexXi4A_8rrvj49foL07mtoWrlJA5KJHQWJNZ5vzVyDKxU2CLHoS-5itMG5JvYasQAIOZBy_qM6ZqSpxtvjy7EY-7LzhqtfZuqtO-utMsYtAsMYoH5mAGwXoljPr=s1600",
+   "what": "福ちゃんの看板の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r242/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYIPUctjN0CnaxfvmCq9PQZnCdNQjz72Z9Mvx0Q8gdOAtoClPxZn0_mqAQhtwdFg4x-ZaBj4qR9kI42AeNKmWQBrymXHKdtKr4_q_wer7_XD4jbeLsEmfGTjm2zErYRd0kpx-CL6BnoiAc=s1200",
+   "what": "鉄板のステーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r242/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q651qb2IenZLmBu9D9Lc8rZE2Lrcnqan_HEA4BX7-8h_q8ie31AUlqg12rg9c4J6Uy3E2vd6NTCJUElWxFMVYnojTvjC5Sb4MCMZUYxyG0LqKXN7tUJipgFjv34TsBA8fa800Kteg8dUY=s1200",
+   "what": "タンの盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

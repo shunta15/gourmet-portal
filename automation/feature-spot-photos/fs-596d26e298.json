@@ -1,0 +1,45 @@
+{
+ "featureId": "薪窯ピザドーノ",
+ "dir": "fs-596d26e298",
+ "storeName": "薪窯ピザ ドーノ",
+ "mapsUrl": "https://maps.google.com/?cid=7872848472088888824",
+ "placeUrl": "https://www.google.com/maps/place/%E8%96%AA%E7%AA%AF%E3%83%94%E3%82%B6+%E3%83%89%E3%83%BC%E3%83%8E/@34.963733,135.128231,17z/data=!3m1!4b1!4m6!3m5!1s0x60006ca5ef78285f:0x6d41f9f92555c5f8!8m2!3d34.963733!4d135.128231!16s%2Fg%2F12qh60tk0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "薪窯ピザ ドーノ",
+  "address": "〒669-2143 兵庫県丹波篠山市今田町釜屋６２９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-596d26e298/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFj3Pa7D6cLpsEoIBweV9E7pBxt24QHsefl4tx467RjoDXd9W4EsRsjPrXXNTI9UgKNTNFoImlkg1KQO4M4D4ZfMysuYmW8yFAdExWa6FvriMFaGzQYX0XYg4v1uDfmkaVZTsd=s1200",
+   "what": "山並みを望むテラス席",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-596d26e298/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4siRHLUhCfoNutVWPnUMYSy8dCyWDm5R07Ah5yjrkMkq8_F5iExFfHGGrIeW7uBq5300honnMJLQn-mjhOgTQXCdNMDuezzDMm600_NBn3CnAGA-xynavRc0eVDeQvl9RBUd0lHgsp2hT=s1200",
+   "what": "薪窯で焼いたピザ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-596d26e298/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXG6bK3uG6Snonbp5SIkqSq2ymS9TfyB9QpM6hVxiUVZmDBR8ud6HNcMaYY-NEX_hpoW6RmWQnIiIfVGyAmazxm4ap_Oky5aDDNVXgp8bpbFhaFgHs3ECCFE8nOlwGNbk-WIoG=s1200",
+   "what": "窓から山が見える席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、slot5は景色の見える席の写真で代用"
+}

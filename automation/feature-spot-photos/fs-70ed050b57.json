@@ -1,0 +1,45 @@
+{
+ "featureId": "ピノッキオ",
+ "dir": "fs-70ed050b57",
+ "storeName": "ピノッキオ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%94%E3%83%8E%E3%83%83%E3%82%AD%E3%82%AA%20%E7%86%8A%E6%9C%AC%E5%B8%82%E5%8D%97%E5%8C%BA%E8%96%84%E5%A0%B41-15-23",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%94%E3%83%8E%E3%83%83%E3%82%AD%E3%82%AA/@32.7662892,130.6773172,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f4d837a9212b:0x5d81eab826664ac8!8m2!3d32.7662892!4d130.6773172!16s%2Fg%2F1td6_s76?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ピノッキオ",
+  "address": "熊本県熊本市南区薄場１丁目１５−２３",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-70ed050b57/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0Rs72i9biwqpxinlB-EtVJyxjj71GcXP-rEhWFG8tXFVFj-oOCaGrFzAtvljrX6jDRhmVUvUVVpJjm48YOn8h6EEqz5fDht8UyUl2sSbjzF-awxMSyZ_j_6jJz5FQ4ZhvAYW2jUdE9yi9=s1200",
+   "what": "トマトソースのパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-70ed050b57/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjKRvyIb1njZbhBohuUTr_e4mjHGwCM_le_2fdrPXVWFksxQ_tshT0y6akQNmeuPxSFa8VhvXe9uqHFRMy8T6rvfKwb0-fF6Fvs8TPyyCwksQX-E7U5jBVzRALtK5Jrn4c37W6-T0xOqkl=s1200",
+   "what": "カウンターと椅子の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-70ed050b57/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QfcORKro-982X19f16vCYlynDanrjGzfjoejYaHvxFBjJs0SfzfjkElPJAvamPh9pA5flrg3HPhhhvn-FsJKJZGROpcai6f215VqQzHArgf1Gubo-wMB5SI8FqyRYilXy5QSZa=s1200",
+   "what": "入口と看板の外観",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

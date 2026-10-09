@@ -1,0 +1,75 @@
+{
+ "featureId": "近江牛日本料理ひょうたんや",
+ "dir": "fs-65136b3a1c",
+ "storeName": "近江牛 日本料理 ひょうたんや",
+ "mapsUrl": "https://maps.google.com/?cid=3793017664853145418",
+ "placeUrl": "https://www.google.com/maps/place/%E8%BF%91%E6%B1%9F%E7%89%9B+%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86+%E3%81%B2%E3%82%87%E3%81%86%E3%81%9F%E3%82%93%E3%82%84/@35.1235533,136.1007174,17z/data=!3m1!4b1!4m6!3m5!1s0x60017bcec1fd1117:0x34a381784c5a774a!8m2!3d35.1235533!4d136.1007174!16s%2Fg%2F1tgh2x6_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "近江牛 日本料理 ひょうたんや",
+  "address": "〒523-0891 滋賀県近江八幡市鷹飼町５６０−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-65136b3a1c/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SvS0D6ykpT7xHqd1iuOottP-kh1M3DpVNY8R91EUP5OJf8ju1fMSuR43q9IGYFNkvgSbV1g9UMxTfbqV_694lT38c0067qqqr1uDs3ULYqqWOjlSWO5eQ8_HP6ppzYZTu7PnPXgSCTlut8=s1600",
+   "what": "座敷で囲む近江牛の鍋",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-65136b3a1c/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIyoc6ICqPMvzvG6f42n0SIwjDeV-RxKji9JwICeG6Cou-Xo6I8zfBdq3rli5s2BMJ_HfjMMU4UJdZi15gtc2FZ4A3O87W7ATPM_8Ig-w-KkjBfUjQEPigxTH4YHEeWCZ5u-tI=s1200",
+   "what": "彩りの懐石料理",
+   "width": 900,
+   "height": 720,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-65136b3a1c/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwwSRpMZYBc7WCIrKFWVGCC58ZW-kOR6jlhuwyq1wZd8BUF-lop_vopvVFd-QkeSrxIZ-Co1bFMNk0EbrNwC3dGkHwqaQW9WufV7JypiVVjlZ5luAMLuAsg5osAHojS-qBeoTfi2vHA9qJ=s1200",
+   "what": "近江牛の握り",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-65136b3a1c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7YvKcIKyPoC-eWiKpXGztfZ9UDqImGDmdnopO1rzNrLAbKIinqESIs_c25tf2tPYy27-fyM9EIcrNGAPA04Hs0YEg3G0AFxG5HvEM4-axncLCClflsbgwvayreWzCuFLkrXfBqZbDUSvL=s1200",
+   "what": "近江牛のしゃぶしゃぶ",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-65136b3a1c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHRBN69IemHa6QFTv1Mh_cEu86lwtAnkQ0_bKmc9JFn2vNAO99-xMEN2f4ZatZWVbX1JiwNR90geCIKblolkCWekbtVe63aef3S4rCxD3Vm5p09aHgjhWjpU8FX89VGaYZD3M3u1V-5_8L=s1200",
+   "what": "金屏風の個室",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-65136b3a1c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8wIg-LAUD-sAbbtrWkzInHgO3Ou5eJ74iM5G9VShXfbuGQxPEzROllB6lvJ949hFOg0oGjopNXLn5HXtFV2A7Zme6YKAD4YmrQw_quGHroqqwoJuP0itsxIh-JDRDZWAyJrfpaLUEbLc=s1200",
+   "what": "お膳の席の様子",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、slot5はお膳の席の写真で代用"
+}

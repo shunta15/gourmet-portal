@@ -1,0 +1,55 @@
+{
+ "featureId": "とんかつ林",
+ "dir": "fs-680638da97",
+ "storeName": "とんかつ林",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4%E6%9E%97%20%E5%8D%83%E8%91%89%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4+%E6%9E%97/@35.5805067,140.1250852,17z/data=!3m1!4b1!4m6!3m5!1s0x60229b00094b248f:0xcc1c402b3cedc1ae!8m2!3d35.5805067!4d140.1250852!16s%2Fg%2F11v_5cb4jr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "とんかつ 林",
+  "address": "千葉県千葉市中央区川崎町５７−５ ベイフロント蘇我",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-680638da97/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpU8zdc7lR_r1MWPFgiNQFWOKx3wk5LZT4ARiQel2Ruq5TP2iRGuZfbWyPCwrOxtxrk_qvFMMvBS_ceMFnHN2BJRgBa4cW6BIp0tb_ZwWSzLY9y-T2pMh9WAzFwtgosTnuLngW73UMGtfR=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-680638da97/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rc4WOz5arUx27xrN45x5V8mZDdT4-kcn5S2dXAmTrpsxLdA6G9GNKFrbLmhtGS1e8Ivv2JbaM2nyr7GOO29F34aDkyk1UMl-TzK90h5_hSQPrb3jhuBeS48hp6agQMAPj7mulr=s1200",
+   "what": "とんかつ定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-680638da97/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q572JLSLbrLAQ2ApVHwSoEcDGTLQEep0rAp-FZocMF4ZlRDkknqMU9c3lLqT5N6Knjebs4Oac5GJLWuSqwgHx2B9QiU2fTcKYoBrX2BFax_Oc86ToMPYGfjbhyv9n-WCSetTyL=s1200",
+   "what": "テーブル席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-680638da97/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfmPq9eUhd3lufModSW_CVtjPFo5NxJU80hHfd4U3rrRPpurwvC18JhOaZSiq4fakb34D8e1X2FB3tHXPN9Qqrf_df0MC0CUSP-DNg5YpCPV_lm2M77xfHA5Ax-8_9u8C3ja7hosS_M7M=s1200",
+   "what": "木の壁の入口の通路",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "オーナー提供の写真はメニュー表ばかりで使わず"
+}

@@ -1,0 +1,55 @@
+{
+ "featureId": "天ぷらわかやま立川本店",
+ "dir": "fs-6cec202b2b",
+ "storeName": "天ぷらわかやま立川本店",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E3%81%B7%E3%82%89%E3%82%8F%E3%81%8B%E3%82%84%E3%81%BE%E7%AB%8B%E5%B7%9D%E6%9C%AC%E5%BA%97%20%E7%AB%8B%E5%B7%9D%E5%B8%82%E6%9B%99%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%A9%E3%81%B7%E3%82%89+%E3%82%8F%E3%81%8B%E3%82%84%E3%81%BE+%E7%AB%8B%E5%B7%9D%E6%9C%AC%E5%BA%97/@35.6985163,139.4168112,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e164d8772f7b:0x66c645dc8267c636!8m2!3d35.6985163!4d139.4168112!16s%2Fg%2F1thffgl9?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "天ぷら わかやま 立川本店",
+  "address": "東京都立川市曙町２丁目２２−２３ 3F",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-6cec202b2b/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TG_Zo3QEKSRWqBTZ7de14OSPT5OgKrSzbd2Ix6inZsdPfiAeJdN-jEResbCfVWf6nSFe_SD3Y2G65WcuzdaZDg3hNSJI6NqItkh7IZKF5jv6IGGhzcxlbkb4JnMGSXHTyeTjXRJfZvx63s=s1200",
+   "what": "ふぐ刺しの盛り付け",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6cec202b2b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ss29LQTXIb0n7xKU2WmwG9Hsa_NgasKQ488km7EmCw1w_5hZ5o7HXowAXIFdKfMIFVwDo9UCbzL-_38tz0sA-YefGA_HTwkrppGze0SjIUVyn3kkTRYKkAgax3Coo1NgOuhVldOg=s1200",
+   "what": "塩と出汁を添えた膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6cec202b2b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sy9I4MZPIUv-wsbpalWYQBSfTNvd3bBZHZVyH6245SPI8ZjqUDsLmKrkz-yvjjZoJO17oFBO0JqkCTzOFcJ0BrvT4W7-yZ_6iR8d_S5RVP8eMMe0g44StRuuLdDqZpOYbNlfIgwg=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6cec202b2b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8S1MHKSTZbdPTML4z6-uRE0nvlvTZAIs7WydiwQ9cVKAuftmzv_kPss-doPDz5bcOOldbSJjXuARRYb64vRbdY288HknZFiCwQGN5oQPuj2LV1yTZY20TcIhXwOnUe1FQB8wWmoxynaO4=s1200",
+   "what": "暖簾と看板のある入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "検索URLで単一の店ページに着き、店名(空白をそろえて)完全一致、住所は立川市曙町で一致。"
+}

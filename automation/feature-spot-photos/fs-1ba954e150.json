@@ -1,0 +1,45 @@
+{
+ "featureId": "鉄板和牛ステーキきらり",
+ "dir": "fs-1ba954e150",
+ "storeName": "鉄板和牛ステーキきらり",
+ "mapsUrl": "https://maps.google.com/?cid=9358904554923477819",
+ "placeUrl": "https://www.google.com/maps/place/%E9%89%84%E6%9D%BF%E5%92%8C%E7%89%9B%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%81%8D%E3%82%89%E3%82%8A/@35.781767,140.7712511,17z/data=!3m1!4b1!4m6!3m5!1s0x60231975d598c6df:0x81e1821b6affcb3b!8m2!3d35.781767!4d140.7712511!16s%2Fg%2F11pc9hnjxm?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "鉄板和牛ステーキきらり",
+  "address": "〒314-0341 茨城県神栖市矢田部７７９３−１０３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1ba954e150/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdX_apXEIevOt_Bk-jERXGIRqCJjwymgaOYvSVC3B7SetjQeeyHoO_uNPt-SOH3eImzen1pv2UJuDJKhA9LBx7VeO8_jmGHNBSJX25EFgT9vtX9g6HKZuETgpmlpggjwdR9EIY_Q=s1200",
+   "what": "ステーキのセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1ba954e150/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQUAb1z50bm4LrYFDrrAQRIf5lsVUQQsYW-u1bHFLiq6tm9nmULj-ts0rPz_3I3tZdCYK8dBk6hDm17UJsQQAAx210SSNCPQV38jCYEmFn5bhluBbDQ9Vu-ODqcS85SYeyg5eg=s1200",
+   "what": "鉄板カウンターの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1ba954e150/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFQw0H3FZXAC2bE0IGKyPD_LNkSOPcL1ZMVv7jPt3-6C5qwQMvnkcn0Wasp4i1GHR0TDo7ri4Yg-h14hb11qDjm8_d2Y8mSo2TJBaOIAggQSxbZtjcK3fKQixEHAOeVuyn8mvhDz-qaDcF=s1200",
+   "what": "ステーキのプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

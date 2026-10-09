@@ -1,0 +1,45 @@
+{
+ "storeId": "r294",
+ "dir": "shop-r294",
+ "storeName": "PARIGOT（パリゴ）",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=PARIGOT%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E7%89%87%E7%94%BA2-31-27%20%E9%A7%92%E4%BA%95%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/PARIGOT/@36.5607745,136.6496963,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff83480818c447b:0xec309f396a68222d!8m2!3d36.5607745!4d136.6496963!16s%2Fg%2F11c329fjwr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "PARIGOT",
+  "address": "石川県金沢市片町２丁目３１−２７ 駒井ビル 1F",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r294/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9M0A6N_hBgxowxKfvKM0fd3wTHqTdBWqzf8T2cCP8J1oFj0Dehkc3COpvImfbMTSlTT6HggCPPOoD6_dL2Xdrd1mLgvMxCE3UjZpxQn97jGVLTyUEcj6rrAtA0QkGZb1DbtbyOA=s1600",
+   "what": "チェック柄のテーブルの店内",
+   "width": 1400,
+   "height": 785,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r294/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNhs-bfWxFFR4VCYA-oPMQ5atnFPlPDXganXFv16lGgykYxpn_uV7__9wLYkBhL_IhKFMn1CTDgf9grkASPVDfy8BhV_uyJgmoafZqP19CP34R0TtH9K_e7JXYRXGDeaEVmyBp=s1200",
+   "what": "赤い扉の店の外観",
+   "width": 900,
+   "height": 721,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r294/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2bWyJKquQ5AVZmvAcS2tpwiYMlujj1VPX0NIwDQZ8tsf8ZO-R0_zeXH4Nwg_xBjXPXpmK4NzveJi2Z8vBzy_0QDoYue5pXhvGp8a_vdw5WuAs7O-uTlb7t7fEzeAL4_a_zNh8=s1200",
+   "what": "魚料理のソース添え",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "記録の名前は「PARIGOT（パリゴ）」、Google マップは「PARIGOT」(記録の名前にまるごと含まれる)。"
+}

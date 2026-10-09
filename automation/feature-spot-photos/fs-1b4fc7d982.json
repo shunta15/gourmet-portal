@@ -1,0 +1,45 @@
+{
+ "featureId": "kanekocoffeebeans旭川",
+ "dir": "fs-1b4fc7d982",
+ "storeName": "kaneko coffee beans 旭川",
+ "mapsUrl": "https://maps.google.com/?cid=14865578329631622992",
+ "placeUrl": "https://www.google.com/maps/place/kaneko+coffee+beans+%E6%97%AD%E5%B7%9D/@43.7460106,142.5743315,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0cdf3781a1ff15:0xce4d24bac6700750!8m2!3d43.7460106!4d142.5743315!16s%2Fg%2F11svdfw0pr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "kaneko coffee beans 旭川",
+  "address": "〒078-1273 北海道旭川市東旭川町米原７１４−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1b4fc7d982/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TlgcBUfKJ1ixpxV22R6UQeU8aPJSvRMdDghADguDd6G16SFgUyBDABty8g2QgODsd0uIBIWnA5M-Y6r71v7Lx4attO_hOSEWu-KssVDNuwZNyyOmLfC8-ybln9e3gVqbEs2AD_mN1-zCyY=s1200",
+   "what": "カレープレート",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1b4fc7d982/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RwFkyE5wfj4RwEMO0Tyh9j6A5yC7Hdfx-75xg18O7oDv0NMMACzZKEAowm8qK1uIxGSkxJ7jWDxiEgzunJ4Dv7oEmbko_1l1NAyGBXR2xzrpFDoYhzgkEIanhmcglIWofeqS-qv-jcYhmK=s1200",
+   "what": "古い荷車が置かれた店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1b4fc7d982/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sz6X24XqvW3s6WghWqnngAPoQ1cMxpVZjelYtYqROrSi1MHHiJTtl9F6w7ZaTzDufSqMcONYdLbT04lvMLRIYffEL1fKgBeoJAzOqVYwsO1KxO4BsysXkiJZVpuJ76bLROQiKISmwHgbs3=s1200",
+   "what": "窓辺の席と外の緑",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

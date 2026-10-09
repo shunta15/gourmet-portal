@@ -1,0 +1,35 @@
+{
+ "featureId": "洋めしBARアーバックル",
+ "dir": "fs-5d720405e0",
+ "storeName": "洋めし&BAR アーバックル",
+ "mapsUrl": "https://maps.google.com/?cid=18316672159691934691",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B4%8B%E3%82%81%E3%81%97%26BAR+%E3%82%A2%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%83%AB/@35.8393964,137.9599266,17z/data=!3m1!4b1!4m6!3m5!1s0x601cf1a84106f9ab:0xfe31e44889b98be3!8m2!3d35.8393964!4d137.9599266!16s%2Fg%2F1thgh326?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "洋めし&BAR アーバックル",
+  "address": "〒396-0025 長野県伊那市荒井３４４６−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5d720405e0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-XqObP5wKDgMrbHMXoFpzrAPmvNku5yBriFhCk51ZWyj1WMjB9xKFY8MpSf7zGmPbpfs68vEeZldOcsJDfBkJJFt_515vCzAxIAHwtNxgEVtpJBxQ34d6yf9zkN2A-AgQGWwl=s1200",
+   "what": "卓上に並ぶ料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5d720405e0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QB6HfppW39fc442LEqG6poI6Lg3XO4_cLJD5IvM6oeLTU6iKSeWH8pkqnqaIcWz0jlzJgigEceLSNPiiJpxYrJpOrsknCagMYxkk4yT6HANjg3TCZHXKfBhjhvRxkS7zPsMiU=s1200",
+   "what": "路地沿いの店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4は卓上の写真で代用"
+}

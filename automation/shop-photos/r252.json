@@ -1,0 +1,45 @@
+{
+ "storeId": "r252",
+ "dir": "shop-r252",
+ "storeName": "本格炭火焼肉えがお",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E6%A0%BC%E7%82%AD%E7%81%AB%E7%84%BC%E8%82%89%E3%81%88%E3%81%8C%E3%81%8A%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA%E5%A0%80%E5%B7%9D%E7%94%BA5-1%20%E5%A4%A7%E5%86%85%E3%83%93%E3%83%AB5F",
+ "placeUrl": "https://www.google.com/maps/place/%E6%9C%AC%E6%A0%BC%E7%82%AD%E7%81%AB%E7%84%BC%E8%82%89%E3%81%88%E3%81%8C%E3%81%8A/@34.3928653,132.4630396,17z/data=!3m1!4b1!4m6!3m5!1s0x355aa3ef8ab97b75:0x8d09a63451d14b92!8m2!3d34.3928653!4d132.4630396!16s%2Fg%2F11l_73vzw1?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "本格炭火焼肉えがお",
+  "address": "広島県広島市中区堀川町５−１ 大内ビル 5F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r252/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TruTAy1wY8iQ-BxPJqcpy-2M0x3JiSjn89bsXsQPLU-YqFpb7f7UvKN4KtRIZ2zDr4QSOIklINrdreHNmVf3IHYbB4MM-Pr0RHI20ZPvEtvUZ8uRt1Mx9ccL0poz2hyOHMEQ6LDPxyDcKv=s1600",
+   "what": "炭火焼肉の上質な肉",
+   "width": 1400,
+   "height": 787,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r252/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q37pa0ry-b4kjvl1KkEEsBkE8EAcuZm0-YkSBf3Zcuh-B_K8z18c-zUJzR4ou3_s7AvuGuXokYjBz1eDaF06UoT6PW3IZgTETUuOoeZAtS9GddJ4aZKTqTXWJPHJ7UVwZL_MXF77eKm0J0=s1200",
+   "what": "看板の出た夜の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r252/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzMPCLLxX1oJ9xWPJOoLZPH5TFUpY040uPQIDRFju-xhV3Tvl05jN41TugL_OzQnc__k6hqA7Bpk7M7W-eCbopKdUvIfg1AmZZ3-uckbVJfYlsKmxNSkl6iCmiwBAq12PIjTi8HvWV0m5s=s1200",
+   "what": "網の上で焼ける肉",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

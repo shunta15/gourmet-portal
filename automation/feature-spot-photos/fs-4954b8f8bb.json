@@ -1,0 +1,45 @@
+{
+ "featureId": "RESTAURANT風味庭",
+ "dir": "fs-4954b8f8bb",
+ "storeName": "RESTAURANT風味庭",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=RESTAURANT%E9%A2%A8%E5%91%B3%E5%BA%AD%20%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%B9%E6%9C%AC",
+ "placeUrl": "https://www.google.com/maps/place/RESTAURANT%E9%A2%A8%E5%91%B3%E5%BA%AD/@35.7892158,139.9012371,17z/data=!3m1!4b1!4m6!3m5!1s0x601885a6a6d245d3:0x5a47aba15044c9bd!8m2!3d35.7892158!4d139.9012371!16s%2Fg%2F11vpzd5ymx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "RESTAURANT風味庭",
+  "address": "千葉県松戸市根本１３５−１ TSビル 1階",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4954b8f8bb/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7A9dAUD0Ex8SYQ2mBBCCVt5CMWHagfYY5aeauME34l298KEzZWLliJUMNi5iS4lkaEzAINxvwEaLX3UnzZcWG09-iWx-pEwVT0MoGdpd-c6mEkeTNoAUILNmgEZG_rUD6XoXhpg=s1200",
+   "what": "ソースを添えた肉料理",
+   "width": 900,
+   "height": 862,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4954b8f8bb/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrX3GlcGIt9gUWCqzJoMosHREGLTMHto6epfeFduogjhm_C-KJyVmQ49jIPdgCT1TFR-4flKBn9t1iagdXbN4lwkwsml203TZzaD_9LSv7rB6umSloKXRpbgbRNrz82Z_j1Y5w=s1200",
+   "what": "ワインが並ぶ棚",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4954b8f8bb/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SgCFZqtSjl6Hi71nDzj82i3ANR2f8mpNsQo6c9OELrwePVbTS70eE-7FzTKHO10qPXmORatmruQPXtbSzsXy17i0EtAwZEoLP8TJRV2hsJEZKnI1r7BFVETNlud4783Nc4vzp5eg=s1200",
+   "what": "紺の日よけの店の外観",
+   "width": 900,
+   "height": 609,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

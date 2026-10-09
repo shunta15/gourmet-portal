@@ -1,0 +1,45 @@
+{
+ "featureId": "焼鶏ラーメンあらや",
+ "dir": "fs-eec82c057c",
+ "storeName": "焼鶏ラーメンあらや",
+ "mapsUrl": "https://maps.google.com/?cid=12742095607677370680",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E9%B6%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%82%E3%82%89%E3%82%84/@35.2267009,136.9593094,17z/data=!3m1!4b1!4m6!3m5!1s0x60037100508cb94d:0xb0d50471d5acc138!8m2!3d35.2267009!4d136.9593094!16s%2Fg%2F11ldxn67tj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼鶏ラーメンあらや",
+  "address": "〒486-0926 愛知県春日井市小野町２丁目１８６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-eec82c057c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QA3nV2PgVdQY1mXl4_jwnkwIHZ3HyhIxG_lZhtCljzdWbXwi-Q9_gq8CZZ_ItCjB2Dc0ZpKbn-PGL-q2mU9lDbi2VTT_dBaDz8ODzvUOgG0pFnyyqZoqsS6Lx2qdvuVfvlqC8OqMnEN9fj=s1200",
+   "what": "チャーシューと味玉のラーメン",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-eec82c057c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4IPFy7CsstuqrH_cr9kiemPvct9Myh9biAr2oBulVIlO3ICsMyzm1nEtHOAI_NWKcQFpwjE-4T6s8tzmukRoCyQpIC3Qkuu3CHoRNKpPQntL1ExGXMMVLx3E2nFJWyKNe6fUd7AkXcNm6=s1200",
+   "what": "カウンターの調味料",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-eec82c057c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLXEuahe4O3cghcgI27KlBx3e0L-uGXOUHDwNp8i4u3ZmxXGrBDKGyQaAaff89DUJha0PsfspEodSM4vyc7huCANqzRqCMFXvFIX7sJfbyRR_wJscTMD9IgvH0WoBYL7UKXR6Y1cZU8W6e=s1200",
+   "what": "駐車場側から見た店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4は卓上の写真で代用"
+}

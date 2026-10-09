@@ -1,0 +1,45 @@
+{
+ "featureId": "割烹松きち",
+ "dir": "fs-fe854958d2",
+ "storeName": "割烹松きち",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%89%B2%E7%83%B9%E6%9D%BE%E3%81%8D%E3%81%A1%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E8%88%9E%E9%B6%B4%E5%B8%82%E6%B5%9C150",
+ "placeUrl": "https://www.google.com/maps/place/%E5%89%B2%E7%83%B9+%E6%9D%BE%E3%81%8D%E3%81%A1/@35.476016,135.3956634,17z/data=!3m1!4b1!4m6!3m5!1s0x5fff88452e0752e9:0x17c86f3d4efabd80!8m2!3d35.476016!4d135.3956634!16s%2Fg%2F1tf2xnq4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "割烹 松きち",
+  "address": "京都府舞鶴市浜１５０",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-fe854958d2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qh4zUX3FBPIH1dqtGZlwQ94sk9V4O4nsLr7CwEvw5dvWWe_-KmbeuA6NLnBCnqlR8J7ExAePOuvgjBN3E3kkzYj2XEX450soloqZM_vOGH_fPoOzegbCzlp3lwW0EqBH_XIS2PnOYwQx2J=s1200",
+   "what": "うなぎ丼の御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-fe854958d2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOgE0oDpAH2KpGbF0Lmzm04dPh7EwpIU8dEUOgUidKT9CB0YsDGrsi3hVwlyTFPxG1POhj1ezKEMQW78wlVmvougCfWRp-Hqx-KV1DL3d6p0FxrsTc7DmgXUVR0Y8u2FGH7hxk=s1200",
+   "what": "木のカウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-fe854958d2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUsVuVMsGQ_h6v54Dg6-IK5Rg4suhwSgZ91tHIt2T2u2P2pOffmjXkIjxFYddAv43KsTKJIjl55cbZU07SX67fkIoH0ZB2qInMEpgB8cnrS1jfNnhfnJ55aSiRtNXfkV9CxMFb3NjC2Z2P=s1200",
+   "what": "桃色ののれんの入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

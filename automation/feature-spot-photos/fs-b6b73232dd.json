@@ -1,0 +1,45 @@
+{
+ "featureId": "BetterDays",
+ "dir": "fs-b6b73232dd",
+ "storeName": "Better Day's",
+ "mapsUrl": "https://maps.google.com/?cid=7428351625743928391",
+ "placeUrl": "https://www.google.com/maps/place/Better+Day's/@38.2381107,140.3235791,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8bb56d8fae3eeb:0x6716ce724f298c47!8m2!3d38.2381107!4d140.3235791!16s%2Fg%2F11zggr2zsb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Better Day's",
+  "address": "〒990-2494 山形県山形市末広町１６−１８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b6b73232dd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TDckPqQUVcN_0KH9BlTYNbuMoZrVWriAvvKIQnAUlryAKsxLTVt9aIEVwhsny8pTQjVwwirT1LHiPHNfCKpHAB42wpnM87VEfPv9yQcbpjfKjA8srkQY1aUvOPmekz70ZNO1ROL8EmzTRB=s1200",
+   "what": "かき氷",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b6b73232dd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcbGjxLA_1r6eSDJtDXtmrL8Ks6dtSRNKitTcc8hHNePTkdO8rxBTLzWNtWe7udWnNQQgB7FcHk21kpWUdCQsRfdLDC9uKlkb7Js9u_02nMecKeEyFBuYYcbOX1nN9gR__xtfew2mBjw6G=s1200",
+   "what": "テーブル席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b6b73232dd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SehkIPh9seg-ZrwvyZEcRMZM78GIaibpmQHAD3K-I33uLcHosYXv_0UxRPhzVf0m3W2ZWtT7pyoES4GyE1TuB2ze6qwC4r-QEom-mb1CcKgUV5fh4XA4nvlULJjP5DKFcaMEfx7qzlV8yP=s1200",
+   "what": "電球の下がる天井と窓",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、ポイント5は店内の雰囲気の写真。"
+}

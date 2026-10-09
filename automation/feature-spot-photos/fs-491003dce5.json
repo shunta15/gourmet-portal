@@ -1,0 +1,55 @@
+{
+ "featureId": "めしどき",
+ "dir": "fs-491003dce5",
+ "storeName": "めしどき",
+ "mapsUrl": "https://maps.google.com/?cid=7027909901598080140",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%81%E3%81%97%E3%81%A9%E3%81%8D/@34.4764982,135.5756101,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d671bf462f5d:0x618826d1ee343c8c!8m2!3d34.4764982!4d135.5756101!16s%2Fg%2F1tmxff6d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "めしどき",
+  "address": "〒584-0062 大阪府富田林市須賀１３８−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-491003dce5/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNMA_4Z44Q4V-uZnCM3tVk_WL54eGN8DLMasCzacnP4NVPC2v22uT-Ue56WWKFNpYYECD4MC5RGmrZP2vQBxxNjCWclZ04feFbu0ds02je6_ZonC9Id-REtUDtuiAxGASZr3xJ-Fs1Xj0C=s1200",
+   "what": "定食のお盆",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-491003dce5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sh2BikCrXNv8N_beX732TnOCIcWP3teG_srEGYkPFWxX4vUY3rXeUDLMNneXD803s9vXmbOuiLXu7_fJcBlyy9uLuEpAzSOgJmyrcXNklEthP5tQK_SsNO1WOm6VDzuUi-A4l7hYFgyd0=s1200",
+   "what": "揚げ物と肉の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-491003dce5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcIJRqeQJgyOhHwp2JrOu4t4FBP8ys_OGmz-SAS_9jVViKV4K5XBMvp9ehrII3EVQyzdisTmy0D-qeefd_xs3ul6ALIUOjFABAbBjU0w3lBolxpW8V5V08hP1NnkYAlX_5_2kCaNstp-hl=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-491003dce5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S__cSti2ikhxv8RuV7eUEVz3h7CxOebjXbB0l8b-yatyTw2knL1ZVrsWW7dGCd8aRW9N7rZ0Y5pedmAO6lhXK5mTVg3S1tLKiahXFwbCiyW2Z3RqjC3dsoTAs-cmQltL_Yg6YaBqyhGe8=s1200",
+   "what": "店の入口と幟",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "オーナー提供のうち2枚は画面キャプチャ・1枚は低解像度のため不使用"
+}

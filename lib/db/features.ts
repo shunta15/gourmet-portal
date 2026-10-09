@@ -12,6 +12,7 @@ import {
   type RankItem,
 } from "@/lib/data";
 import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
+import { applyFeatureSpotPhotos } from "@/lib/featureSpotPhotos";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -156,7 +157,9 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
     };
   }
 
-  return sanitizeFeatureArticle(result);
+  // 表示禁止の画像を除いたあと、写真の無いポイント・使えない一番上の写真にだけ、集めた写真を当てはめる
+  // （lib/featureSpotPhotos.ts。まとめた lib/featureSpotPhotos.generated.json が無ければ何もしない）。DB の値を重ねたあとの最後
+  return applyFeatureSpotPhotos(sanitizeFeatureArticle(result));
 }
 
 /**

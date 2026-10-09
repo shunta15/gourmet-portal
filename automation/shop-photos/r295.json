@@ -1,0 +1,45 @@
+{
+ "storeId": "r295",
+ "dir": "shop-r295",
+ "storeName": "打鐘(ジャン)",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%89%93%E9%90%98%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%9D%B1%E5%8C%BA%E5%8C%9742%E6%9D%A1%E6%9D%B12%E4%B8%81%E7%9B%AE3-1",
+ "placeUrl": "https://www.google.com/maps/place/%E6%89%93%E9%90%98(%E3%82%B8%E3%83%A3%E3%83%B3)/@43.1103793,141.3479991,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b2943af582e07:0xc331561420a20b9c!8m2!3d43.1103793!4d141.3479991!16s%2Fg%2F11ghl9b9js?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "打鐘(ジャン)",
+  "address": "北海道札幌市東区北４２条東２丁目３−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r295/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RzldetN8wpJMh0ldPOIozJmrMJknq4Dk0CEsgPeZa1MQc-zM-NPbG-n7mypOWhwvtIPp7YPQqhP34AlF0GYl8ZqBloDhmPm-eGgX2728bNzsGiy88YE6YTExPHwnRMqYMBlzEbb6SGB5s=s1600",
+   "what": "看板のある店の外観",
+   "width": 1400,
+   "height": 933,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r295/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIdSzY5RIuqHHgLyFGQyoD_UmCnP6lO_BU2Z1ZbqlnTUo7QiSJ3246t_Ks7nnxVQnaKaUjrS3OdaDspvt0sPr_HxaM6QyAYRO-QAtp6oZXqBWaKX6kNp0G0WrAwptQhbuqH7I=s1200",
+   "what": "換気ダクトのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r295/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScSiCk4H8FbQhAAOyGs5_KK69YNtBFHxU8T5sxBNKbNvdNsoKaYWSOyBBBoEvH3rKbWby7Pl9lHsEemOAKMrywCL8Ou0bWCw4223pqrAjtYPAHpsmqYQF_rhl1gN9ev5AT8L0=s1200",
+   "what": "網で焼くホルモン",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

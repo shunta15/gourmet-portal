@@ -1,0 +1,45 @@
+{
+ "featureId": "汁なし担々麺しろくま",
+ "dir": "fs-4b52e1754f",
+ "storeName": "汁なし担々麺 しろくま",
+ "mapsUrl": "https://maps.google.com/?cid=14016708405278906747",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B1%81%E3%81%AA%E3%81%97%E6%8B%85%E3%80%85%E9%BA%BA+%E3%81%97%E3%82%8D%E3%81%8F%E3%81%BE/@34.805767,135.4456173,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f19da9300e1d:0xc2855a07e8e1997b!8m2!3d34.805767!4d135.4456173!16s%2Fg%2F11gzpkrvp0?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "汁なし担々麺 しろくま",
+  "address": "大阪府池田市石橋１丁目１６−１８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4b52e1754f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QqFp3GLuEK2pt9dafyvuCE_OcpfXJR8qtkvJQtfkKZSigM6o29Z-if8VHY6XBsJBeV_-0_7k-WE7mWYlnIgVAfLLbH-1PXUMF8vSa_T0nhhgVBfGxb6cU9jGNyCSKPbronwHoSAQ=s1200",
+   "what": "汁ありの担々麺",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4b52e1754f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qb4Hc-Ntks9iIkLwhWZARIt0LCnelHDWQ9riZ6KxaDh7tsAhWddnUnHHuH0TL6Rnw_RMIi0kNAhDVWufiDOWiiFKXyqrJxb7tEopKuFPLQoumXu_lYkMfkus2hZbZNABLHysA=s1200",
+   "what": "厨房の見えるカウンター席",
+   "width": 900,
+   "height": 598,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4b52e1754f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8-9eelfuwijdGCEQaB-IJiXS5bOcrS5vAa3Sje5wJUId5lnm_M7XbAi6bPkmPqKKSsJUdWWfqqd1Ua8qy01uy6fOSbLk_8_MlGwgiA-P8kbYzR67vf8s_ZxxmKYbjj2M3ZqE=s1200",
+   "what": "暖簾と幟のある店の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

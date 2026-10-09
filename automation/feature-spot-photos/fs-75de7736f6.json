@@ -1,0 +1,45 @@
+{
+ "featureId": "Plaisirプレジール",
+ "dir": "fs-75de7736f6",
+ "storeName": "Plaisir プレジール",
+ "mapsUrl": "https://maps.google.com/?cid=8628733697358539274",
+ "placeUrl": "https://www.google.com/maps/place/Plaisir+%E3%83%97%E3%83%AC%E3%82%B8%E3%83%BC%E3%83%AB/@36.31519,139.623681,17z/data=!3m1!4b1!4m6!3m5!1s0x601f399a14f656c9:0x77bf6b94ac7faa0a!8m2!3d36.31519!4d139.623681!16s%2Fg%2F12hmdkfb2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Plaisir プレジール",
+  "address": "栃木県佐野市黒袴町６１２−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-75de7736f6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2E8mpjJURs18U0m4wGrwnoLOiFmQE2wIEl3c7GtR4-1rnqXsPLTKNLHGHIc2Z5Dg9zf6_OaT9-lD3h8mioPgNtFUFBiBoJrca43Rg-_scKeEmIJHos9NmCB_nJx2pKj-XuAY232pVPgVp=s1200",
+   "what": "洋食の皿が並ぶ食卓",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-75de7736f6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRASTKz8QWuDUIs-wIAV-HQpfpSIF7wtFJTv8_5JAO5gAqFs81kp9ruHHR7GzwOYz43nDFVbY-1ocMy1l64Wx6KPzdQrQLZLdi1xuGRQ46PSVJoP_7iXiwq0y8fROFt-vtn6H9eLHbMnc=s1200",
+   "what": "畳と椅子席の店内",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-75de7736f6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmxIAp0FkyulpOJEOjJ7aI1M_IPflq2CORtyrCehTH6mvLkYf9MwcJuQ4fe9MujDu7e1ncYHBbBmg3QAKis45Yydes4kadPTNP55TTBexzMZcJ5UkAHmEuXZlVq3YaRvn-AC4V8kal-x0=s1200",
+   "what": "古民家風の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

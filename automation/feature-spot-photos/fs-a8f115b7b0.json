@@ -1,0 +1,65 @@
+{
+ "featureId": "ぺんぎん食堂",
+ "dir": "fs-a8f115b7b0",
+ "storeName": "ぺんぎん食堂 煮込みと惣菜の店",
+ "mapsUrl": "https://maps.google.com/?cid=4249009997559810413",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BA%E3%82%93%E3%81%8E%E3%82%93%E9%A3%9F%E5%A0%82+%E7%85%AE%E8%BE%BC%E3%81%BF%E3%81%A8%E6%83%A3%E8%8F%9C%E3%81%AE%E5%BA%97/@36.6983693,137.2088215,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff7916c42c46003:0x3af784149fa2c96d!8m2!3d36.6983693!4d137.2088215!16s%2Fg%2F11fd44msmq?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ぺんぎん食堂 煮込みと惣菜の店",
+  "address": "富山県富山市安田町１−１０ 2F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-a8f115b7b0/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGc_zh0p_yZvno0a7Bv9nirwTg2F79SWEqrLR-Puv2JO7HlS9zaht8I1wu9ZUKufO1GMsBKiApsTP7z1jBfdQk1PSxzgzOjOYJqGLgkHYtr2cR4KNO6X5IWsHs_GjEDrDTu4E=s1200",
+   "what": "青い暖簾の店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-a8f115b7b0/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RzBe-RDImsXx3R_2a28toCDwMJC9rllfFlNSd-jDgK4Y4BDUqkTYofSJ_D0uu5w_q3sqIML7MlT0bwndQF15HfvlqCoQhnqrsNu1DupEaywM2KPfT0THjBuTq7Ky2IGNpwLGu2AhMXNHL2=s1200",
+   "what": "煮込みの小鉢",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a8f115b7b0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkSXv4La_KSnOrWnYuvfm-Fi_Tosqe12hL6zbvaBJS0MjpsfoG846_QQu8mqd-JIyyhDAkJugXE9EIfAFOUpCsyKnc839G-sNYJqKsrHAuPlOz5txjAc8RBY6ngUezIjROUtTyW=s1200",
+   "what": "並んだ日本酒の瓶",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a8f115b7b0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_3rR2v02RFjM-PbeZOHWoCAJVB6oy5pYSYU5Wz6Ko4349fru_jV0jMQMe-GcuHnmu3cX9l1WwFy2LkORGAAszlu-69bqpKEkwmuMaQVPjxDL5p7t-KVTU70rCsu1IxCBGErV0C4lPR7Q=s1200",
+   "what": "カウンター席とドリンク",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a8f115b7b0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkhxmgU-oVQRRBvOQq2Q75bqtPnEPSS974gxu3Ernn3S8Gwzd69DNb8LlxS03P-IXQM9hSFqcNHq-kK4Qf0yxiNx8YW3AB97YH6iZ7_u1ifFXHTA0IbSP99bS_FySsjNIpuXPXAaQ=s1200",
+   "what": "オードブルのカップ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

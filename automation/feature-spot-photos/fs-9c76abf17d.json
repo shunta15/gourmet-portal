@@ -1,0 +1,45 @@
+{
+ "featureId": "寿園カフェ",
+ "dir": "fs-9c76abf17d",
+ "storeName": "寿園カフェ",
+ "mapsUrl": "https://maps.google.com/?cid=13792141552930954746",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AF%BF%E5%9C%92%E3%82%AB%E3%83%95%E3%82%A7/@34.9400272,138.0771492,17z/data=!3m1!4b1!4m6!3m5!1s0x601b0074387e7419:0xbf6787ab225a9dfa!8m2!3d34.9400272!4d138.0771492!16s%2Fg%2F11bx1s_r2s?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "寿園カフェ",
+  "address": "〒428-0104 静岡県島田市川根町家山４１５３−７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9c76abf17d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcXVoRALMvY-zIkVbFv4gCv-leFpjE_-_O1cW3INuHJYwI1_N612gwzOyQOwGmbc0ic7A4sQc8NqK-_NxQPe3A30VtwZqLkMVOQkxKZLEaYXFgVqER4ehcnBQt1b36Kl0zbWm0s_HAIHrl=s1200",
+   "what": "かき氷",
+   "width": 900,
+   "height": 673,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9c76abf17d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TImg5im8ezeuZMMyHJzruwlC8PTZAKusFA-OEJCRddyP5E_CFwct_lZ8gzVZhht6opzSH0zZKhdoY0lONs628ZeGrqhvDA9tZsa-bN0jDUQzQ-Co50M2aUPG1VH6VOrl7clB7pfaqJgC02=s1200",
+   "what": "コンテナ風の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9c76abf17d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TbyNXjlfoPAfS2QdMKUOLx_d0DupHySqybQp3zBOq_IOIfsJVrQNgq7W-Dutg9vD6LjUF_hAwXZ8fN4LkMbSpGR37jLldq4pr3PetN31ETSuSp6HisZVXjMA5J9FebUea1jApQ=s1200",
+   "what": "窓のある店内",
+   "width": 900,
+   "height": 597,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "抹茶プリンの写真が無いため、かき氷の写真を当てた"
+}

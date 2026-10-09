@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉とジンギスカンカルニチン堂",
+ "dir": "fs-142778d42c",
+ "storeName": "焼肉とジンギスカン カルニチン堂",
+ "mapsUrl": "https://maps.google.com/?cid=11733805207225871990",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89%E3%81%A8%E3%82%B8%E3%83%B3%E3%82%AE%E3%82%B9%E3%82%AB%E3%83%B3+%E3%82%AB%E3%83%AB%E3%83%8B%E3%83%81%E3%83%B3%E5%A0%82/@35.8672126,139.7028031,17z/data=!3m1!4b1!4m6!3m5!1s0x601895ba36e75c27:0xa2d6d9aae853ae76!8m2!3d35.8672126!4d139.7028031!16s%2Fg%2F11sx2fln06?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉とジンギスカン カルニチン堂",
+  "address": "埼玉県さいたま市緑区東浦和４丁目８−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-142778d42c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcSFADFmXKfuvSwwYFKr7wwnN1S675Xzl7pNuFPINGGy7KUaH1fqnf1qJbtOFd3T6wJYkVrB15vviH9lgH-W1utSEFsXvCbRwjbE1nwQkJScPPovipOiKhmVuUXG8CvwN0f6c6Qlx5-DuY=s1200",
+   "what": "火鍋と焼肉の卓",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-142778d42c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rra5BCxT2J7LjrFd7FDxshJquZjkPyoiXFbUIoJwqC7RFZbTYpjAyJQBrS-zBpakETGg16LNnwnOT42A8wCPDqNaym1q7Ba8NwPKM1GZ1imhJbshba5210JJJtGSp0vEkW4iw=s1200",
+   "what": "料理が並ぶコースの卓",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-142778d42c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qxb8oQFw8eJmeDHGpwED4nf15eIRUWfhzcWru9mK5BnPsXvfIk7GFxod3osIfNl5dzJ1SUQ8ZivLCccxyCis_d4BxAcMyjy-M8Qg1gQdqzv-LIbw6-i3Q-efjUVIwf_LwgawG8KTp734U=s1200",
+   "what": "看板の並ぶ店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

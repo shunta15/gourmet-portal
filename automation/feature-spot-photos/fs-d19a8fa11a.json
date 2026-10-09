@@ -1,0 +1,45 @@
+{
+ "featureId": "あそび割烹賢太朗",
+ "dir": "fs-d19a8fa11a",
+ "storeName": "あそび割烹 賢太朗",
+ "mapsUrl": "https://maps.app.goo.gl/1x2cUALcMzXAz1s39",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%9D%E3%81%B3%E5%89%B2%E7%83%B9+%E8%B3%A2%E5%A4%AA%E6%9C%97/@33.8825376,130.8827424,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bf4dfcde7b9d:0x6a373404cc3f5fa3!8m2!3d33.8825376!4d130.8827424!16s%2Fg%2F1tzlwr80?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "あそび割烹 賢太朗",
+  "address": "〒802-0005 福岡県北九州市小倉北区堺町１丁目５−２２",
+  "how": "short"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d19a8fa11a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QVZx-8r_6Aeg1x7ljGmb3c656sRMF8qNPGy2Hs85PJt781MPpor_513DgCYKW4Tbv3JC4uxISXqk6p8tzJ8nT1EhPOBPAbwAK7CFd1qGafJh6b4OwOkCrcezJKNd7L-n4SddHEHyfLsuhE=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d19a8fa11a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdDS7JVrxg6x5XYzfuY7Z-EzP-lIz4jokhas7UVwZrL21boF0KlJsS3Ih6gj91S9QGwrGWVuZDM662uhnK-bks2zfyCK3h-31S3An_2Hr2y2xOvVcKaYFBJkos38ohOf04Id3uTA=s1200",
+   "what": "カウンターと刺身の冷蔵ケース",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d19a8fa11a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2jAIJcIcvs3lwiuINLl4W5IODwqTln8D1NciT91lJvXFaYnlfLkxptjaBvlDQh-lvfouEiSka99QNFIb5eIz9q66FFenAEhokZTs_wRE7dpfTKuK_4aUM8bu3CEjmRvGO4dWs0dDAHtU=s1200",
+   "what": "座敷の個室席",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "住所は堺町1丁目5番まで一致(記録は5-1、マップは5-22)。外観の写真が無いのでアクセス・立地には座敷の写真を当てた"
+}

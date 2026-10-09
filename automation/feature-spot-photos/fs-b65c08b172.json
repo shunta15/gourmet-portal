@@ -1,0 +1,45 @@
+{
+ "featureId": "キッチンケン",
+ "dir": "fs-b65c08b172",
+ "storeName": "キッチンケン",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%B1%E3%83%B3%20%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E8%8D%89%E7%89%9F%E7%94%B0%E4%BA%8C%E4%B8%81%E7%9B%AE%EF%BC%88%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E8%AD%B7%E5%9B%BD%E7%A5%9E%E7%A4%BE%E3%81%AE%E8%BF%91%E3%81%8F%EF%BC%89",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%82%B1%E3%83%B3/@31.6039967,130.5383645,17z/data=!3m1!4b1!4m6!3m5!1s0x353e5df1632a776d:0xd4b3647dff6df571!8m2!3d31.6039967!4d130.5383645!16s%2Fg%2F1tnsppfm?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "キッチンケン",
+  "address": "〒890-0014 鹿児島県鹿児島市草牟田２丁目１２−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b65c08b172/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8STCOBZE85zHNUygM2zFeuoBvbbh9yg8AY6m9pvUqEBH2evDIrmCh8JTn0T24BISlBP_EB-PEecqPVczBAblLIVtGSmeRD_zUJNtHoeMdht3o6_dZ1KaLpmK9SEtB31HziBNE3vfFog7Y=s1200",
+   "what": "カツカレー",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b65c08b172/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt0GdqQa5XTDn3DVSBS72ueuPgq8pxGmT_s1QNw__ZeCnrsGggbvvfzExFQzMmpnJ2_FTakRG6Xs-Jb-lHFfxDhvZZvsoGFWdvA3J-2alc11ur0ll7BRTgKBpOnvEDJib-Ik3p=s1200",
+   "what": "ダーツのある店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b65c08b172/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sx6LkC6CGLeXsv8y7i0Lsxi0NcJ59P61wx6fPWt3z-g2oRv0IlZVfbACNcheMCOlNCnBPYUs2CZ6RrnP9YioORuCK6WukI_NBh9PkuvNnQS0I-Fyt8h0rSGqq8A2ShXtBH73vE=s1200",
+   "what": "レンガ調の店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

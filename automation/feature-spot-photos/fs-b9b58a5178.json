@@ -1,0 +1,45 @@
+{
+ "featureId": "牛かつなかざき",
+ "dir": "fs-b9b58a5178",
+ "storeName": "牛かつなかざき",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%8B%E3%81%A4%E3%81%AA%E3%81%8B%E3%81%96%E3%81%8D%20%E5%AE%AE%E5%B4%8E%E5%B8%82%E6%A9%98%E9%80%9A%E6%9D%B13-7-11",
+ "placeUrl": "https://www.google.com/maps/place/%E7%89%9B%E3%81%8B%E3%81%A4+%E3%81%AA%E3%81%8B%E3%81%96%E3%81%8D/@31.9150535,131.4246396,17z/data=!3m1!4b1!4m6!3m5!1s0x3538b7578c17e61b:0x6eee9bbd856e4077!8m2!3d31.9150535!4d131.4246396!16s%2Fg%2F11j8_ng_5r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "牛かつ なかざき",
+  "address": "宮崎県宮崎市橘通東３丁目７−１１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b9b58a5178/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rg6ojar-R8O1eDK9A2MdBEOoVeaLZ3YBwkt3V2akZU6CbCITXSuW-cA5ePgrsiboIHV8ZfCk2sDQo41JFpm8yh2WyqbtssIBiQvxNSTa5gNrZzad79F_AIvVDjliY9vFyCHfrOQylm1Xqn=s1200",
+   "what": "宮崎牛の牛かつとキャベツ",
+   "width": 900,
+   "height": 708,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b9b58a5178/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBui3qR_pNdg3dlel_Cp5rri7UGUPsrFXfUM1dj9Rh0oq4hdUcpcLL-uN-Wbk_bzAXYs9_-OregcYNv1iX0AWw-APSRzirFauaygs8oO9xFGu_SJe0AStD_q0JNiwriIfgQqt0=s1200",
+   "what": "テーブル席が並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b9b58a5178/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFW7gpaf7PaLvgDhjr3xOQDhjaQBz-X0cYNaNUHVgXrf6NVZ5Vb8PVxwlGrDCNbd-yfC6nn7VrNC7R5Iu5XPNX1dBPWeIcFeOFqxz3bdx4rQuxr3AG_KUrq-lS2_eH3ZZbsmHo1-9heLXL=s1200",
+   "what": "木目の外観と看板",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

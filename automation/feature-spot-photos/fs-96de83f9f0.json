@@ -1,0 +1,35 @@
+{
+ "featureId": "ガルーダ",
+ "dir": "fs-96de83f9f0",
+ "storeName": "ガルーダ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80%20%E5%A4%A7%E5%9E%A3%E5%B8%82%E9%B6%B4%E8%A6%8B%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80/@35.3614019,136.6348413,17z/data=!3m1!4b1!4m6!3m5!1s0x6003b19e8d6b16af:0xf95c2609d0368aa7!8m2!3d35.3614019!4d136.6348413!16s%2Fg%2F1xtf1ht3?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ガルーダ",
+  "address": "岐阜県大垣市鶴見町２０７−１ ブルーム ２０７−２",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-96de83f9f0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWGzCxBirNQ6-r0hweJvp1Sk3xRkfcRC264TSoqpk86ENv-pJ_J78OSzUA9RI2RQkazPUjyqJQc0zNiWERASflWANu-3tTGAqxiJefVu-vti4676JLQU3mnNgcUN2UeiPPRRkX8Q=s1200",
+   "what": "階段と座敷のある古民家の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-96de83f9f0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QednHCqarNuSC0PHCQW1zPzuuiX2PJGLQBNtoYzcCdL3jlw1mUnSZxnl1WCDf_ePzw58DGIJoEd-PrBWXEuy4Xv1xt1KuPDO8bD83S5qSrFqcAx0_tSlBcjkHYU9Aw_cVJJqslDQ=s1200",
+   "what": "重厚な木の扉の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

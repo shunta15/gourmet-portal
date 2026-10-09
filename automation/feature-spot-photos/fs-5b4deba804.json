@@ -1,0 +1,45 @@
+{
+ "featureId": "鮨若丸",
+ "dir": "fs-5b4deba804",
+ "storeName": "鮨若丸",
+ "mapsUrl": "https://maps.google.com/?cid=14422299325531564872",
+ "placeUrl": "https://www.google.com/maps/place/%E9%AE%A8%E8%8B%A5%E4%B8%B8/@33.9651528,133.2777683,17z/data=!3m1!4b1!4m6!3m5!1s0x3551cecf693d26d3:0xc8264cd2eeaa2b48!8m2!3d33.9651528!4d133.2777683!16s%2Fg%2F1tj6rn9t?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "鮨若丸",
+  "address": "愛媛県新居浜市若水町１丁目９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5b4deba804/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVc9GkdNk2Vmj5YHE5l7rc0v_UkcUg95qK21uC6gkPm2imoxm24Mfa-KILAxh6CJQ23Glt2czUcN9hSNmzN5xVAdwhFmElyKIHeggkeu2uhgad-ZVTjGlkD85Of2BOUo7uZtzaPA=s1200",
+   "what": "握り寿司の盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5b4deba804/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBbsmEXJn4OCn94HNm8J9wtqVf1Aqg8BqEUBH0VW4Bg2S1wnmwpZlntGtvrHZ_JHcZfpYTBnCj-wEZhBGuYjJsTyPrRJxZ-hk99kRjJbiR0xmwGo9hE38qBN3jK9RHZ-Jv5a2nlGxi7AI=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5b4deba804/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rgyh1uGSBwxsaw9MCGsVpGU_R1XnUTGMJHT183CozxcniApAYk3tMqoRtCqgi634mfu3ORCX3dBWn0fQtR26JpnW6p2Rlr9XHCl6Zl2weKFdbtCNrG2cQHFsioXXfLfrXdBmVA2n6q6LfK=s1200",
+   "what": "のれんと木の看板の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無いため、スロット4は料理の写真"
+}

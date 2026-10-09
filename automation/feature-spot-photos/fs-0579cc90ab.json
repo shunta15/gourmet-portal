@@ -1,0 +1,45 @@
+{
+ "featureId": "わかしろ",
+ "dir": "fs-0579cc90ab",
+ "storeName": "わかしろ",
+ "mapsUrl": "https://maps.google.com/?cid=2839982476868780854",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%8F%E3%81%8B%E3%81%97%E3%82%8D/@35.0062282,135.7578009,17z/data=!3m1!4b1!4m6!3m5!1s0x6001089b30e08e79:0x2769a5040e190336!8m2!3d35.0062282!4d135.7578009!16s%2Fg%2F11clzqsll9?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "わかしろ",
+  "address": "京都府京都市中京区姥柳町２１１ １F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0579cc90ab/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-nfPDqwLsrDe2hJr8VsIrIJHVWOliAtmFvWTC1g3Zvy3WHObBSIRghQGzNtgnrDJeEOm6HvLuBIYRgk-7sVzn5OM0AJ1--d9w3Ix6jQ_ZiM2mGbQz6mtdInhKIjsTbqv4UYN-a6L02EY4=s1200",
+   "what": "まぐろ丼とお吸い物の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0579cc90ab/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QRb7ibNXSpRLjhMJJyGvpgAJPeItXc-oyfsf3Mb6I3dTTRrPtawhLsrnW1L4S1xMzqm_8h9AYhYDUTFUanDDxrzWmcAw0DyFXO4AE1uohrNW3EgVCnAQH4epVMwGMDvSGeB-zoFw=s1200",
+   "what": "日本酒の並ぶカウンターの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0579cc90ab/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZ3iCQOXVNm5DlxwWeeE1AWcI2DaHYFGE0vg5lZsepzNJrqF5sz2PF-Fko4zNgFQGJoYEt87-xtOS61hlBP0S9jPcf0lDBliqrVq1GAeE62XMYJR5Rl7iMzhw-1lZ2TG7TkAdV=s1200",
+   "what": "暖簾の掛かる通り沿いの外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

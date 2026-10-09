@@ -1,0 +1,65 @@
+{
+ "featureId": "蒲生第一酒場",
+ "dir": "fs-7f5ced0160",
+ "storeName": "蒲生第一酒場",
+ "mapsUrl": "https://maps.google.com/?cid=13295117811841766819",
+ "placeUrl": "https://www.google.com/maps/place/%E8%92%B2%E7%94%9F%E7%AC%AC%E4%B8%80%E9%85%92%E5%A0%B4/@35.8664629,139.7925254,17z/data=!3m1!4b1!4m6!3m5!1s0x60189788bacd3d79:0xb881bf3595cc15a3!8m2!3d35.8664629!4d139.7925254!16s%2Fg%2F11ntx6jtpq?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "蒲生第一酒場",
+  "address": "〒343-0836 埼玉県越谷市蒲生寿町１７−１ 藤波ビル 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-7f5ced0160/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Te-eVSQvoKgcAUFYFAmOWq9AW0mqDW01gJ43TqCVlHJfelfoa4rlDXACf6VPCtqlj0AHtRzqYQ8OZkWzbBLJgqs-4NKTkSOeST7gHwI9pSecDXYB922wYxgHrHE8wZGjvfs2ptHvBzj8Jo=s1200",
+   "what": "焼き鳥の盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-7f5ced0160/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJCZRH-1frghUxrUlw-ZFhbDAzr1hJtCtw8rENi8NMuqpho93cGhW87HLQOUSSFOF0GWqS3iKo5fw8N267IyiLuCdmmzG1p4EmKDXCRb9lm6_SXxJTozXMt9pevSzK-UdUUpb4VN_oYW4X=s1200",
+   "what": "もつ煮込み",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7f5ced0160/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qc0YqUUYa05DkhrQGJZZ6a5tu2VJ4WoIOOZdew0XFUgOJaaqYNBggGRqHnrs1VuHkFMrM1L8xyA6nCvAGDFZPja1BSDusKV4BPe26RYhFX9b8SvpDPUREvaK3G9D8c7KJVh46sG7bxSdE=s1200",
+   "what": "昭和風のビールの看板",
+   "width": 900,
+   "height": 686,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7f5ced0160/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGacHdjPK5lA2Dq0cVffzZeZWhuStvjgBDWCTlxRP8QlO_pO8wWbO--gjndM7U_3_fTihRFIiTLUKlfAhTyzMgCtlB4ICRIScqiu83gy5pWnhasOT54DGRtP1KcXhqGyg3WMOLuNFgLY0=s1200",
+   "what": "看板のある店の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7f5ced0160/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ShgWbEpn1ANdCLCRxl6daPOQfLeG8e0O10HE0Dvf6NoKTimGoKHEGjGt5MSuiXBHCjJ6UF0lUBB3-a2Dg5Rbpbftt59OddzwpEHuV_dBHT1n2Br4Ke6WwR4jWAWlV38L5DlbMrfRJh6-a4=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,65 @@
+{
+ "featureId": "OyatsuBoxPiyo",
+ "dir": "fs-c888fe83e8",
+ "storeName": "OyatsuBoxPiyo",
+ "mapsUrl": "https://maps.google.com/?cid=17355508591148607619",
+ "placeUrl": "https://www.google.com/maps/place/OyatsuBoxPiyo/@34.8343721,138.1767104,17z/data=!3m1!4b1!4m6!3m5!1s0x601a510019199685:0xf0db271c37a72883!8m2!3d34.8343721!4d138.1767104!16s%2Fg%2F11vz216w_j?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "OyatsuBoxPiyo",
+  "address": "〒427-0027 静岡県島田市幸町１５−１０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-c888fe83e8/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsSgem27NN8mLTeUryIL23hKdQyFwjzEbTs3RXHKvZUolSVWEeoL__oPQagkOIH5puGRi3sbdb6CyH0IQmCqf-nO9RuNAJOGb9iFNzkgRn3WcCeXmP1c4kAdsX5f1B_-IgC77d=s1600",
+   "what": "容器入りのデザートの陳列",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-c888fe83e8/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SboW06CxBNIdfRnzwt6-GEbJ9GHdQidwZM4quDwiBQm6wLQgKDTBvQmG-5KOc-6CtGrkhZLmQ6TONWFUW-fuGHWwZO6WAFLX7A1Mq1mCp-49e1qnwUmpgnSuGT2yKQzG_zCsPA=s1200",
+   "what": "プリンとソース",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c888fe83e8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QX3sVi2BrPeue28pSNbtwUrCcJrkBKLi1dbItRcqEz0epAPoGD1ga7EWBLy4UUBuu0ftstL2WCy8qnVgza2asagjTOR-YYQ_SARk0HH8kXrWD2GQXQyufUxG8Wn6lkfe4zFo30=s1200",
+   "what": "丼とみそ汁のランチ",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c888fe83e8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QygqJPU9lhUzRWDU94pvEGH429fyrcBspjio3Ry_T2C3uAEpANtP6rAU9qRtmcJXUkfeQZwCrtNsON4GCQc6boEgKX-46-108uzACHCdRn7pHT-7-HAh7yzhulV1DVRv5Cx156=s1200",
+   "what": "板張りの店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c888fe83e8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFBcFf8v3aN4m9qtHu6B29SXMsfiCtJnf43t3l1Xx-wd83JwpsH-Xh0uqGzCCU75nNlWRdKpvtL3Q8GMvQImFxWzXZABcJG7OPYO6n3WxwwvYQLPjBEuvSM3u23tONVdOxLMKpXQ=s1200",
+   "what": "コーヒー",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、slot5はコーヒーの写真で代用。hero は横長がこの1枚のみ(商品の陳列で店内全体ではない)。"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "中華ダイニングFukuro",
+ "dir": "fs-2393b643e3",
+ "storeName": "中華ダイニング Fukuro",
+ "mapsUrl": "https://maps.google.com/?cid=13466179349386764737",
+ "placeUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0+Fukuro/@34.9951561,136.6309236,17z/data=!3m1!4b1!4m6!3m5!1s0x60038ff344f7b2a1:0xbae17ac579e621c1!8m2!3d34.9951561!4d136.6309236!16s%2Fg%2F11rz2sx14f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "中華ダイニング Fukuro",
+  "address": "三重県四日市市別名４丁目１−１０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2393b643e3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QReDT0PCgTm9x-jXSmUJHj5xyCw3y-wHRS_8hpQuuCW-InQWdQRTvJXx3x4QfJ5EJT1fDkco_ksdwVNRaMLJ-qps_3X7jmbLcs_x2xjTKdEBv2aZD2RJ4zxj0AtKRKDm5Ij8Wt=s1200",
+   "what": "醤油ラーメン",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2393b643e3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QScUU0WX17tgWZWJFAebB0umOTj9xBbPmXODtjsLtaALfPxGEte2UKHBNIZxI8vTOPcaBAh_npaDXxrM3wIpR_eFECEto2GDdSHeKCX9EyPbfbFqxXkRbH7DX2-f4jOXNlsK6tsg=s1200",
+   "what": "チャーシュー丼",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2393b643e3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RL8telLUgOfyU2sfZL0Yn-6KW7VXpk8Obm59y-5WbgsJA5ykMy6x0MtcoNQNfNj_nGfV6-l7pgv5G4fywSs2sWovdy4qhSfNNCEsfbiWh9xx3jwsRzI3KuspyxQlbwo4Xsxw_2XQ=s1200",
+   "what": "黒壁の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真がなく、料理の写真(チャーシュー丼)で代用"
+}

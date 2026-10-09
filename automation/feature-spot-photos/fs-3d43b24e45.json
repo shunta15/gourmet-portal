@@ -1,0 +1,45 @@
+{
+ "featureId": "信ちゃんママ",
+ "dir": "fs-3d43b24e45",
+ "storeName": "信ちゃんママ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BF%A1%E3%81%A1%E3%82%83%E3%82%93%E3%83%9E%E3%83%9E%20%E5%8C%97%E9%83%B7%E4%B8%89%E6%9D%A1",
+ "placeUrl": "https://www.google.com/maps/place/%E4%BF%A1%E3%81%A1%E3%82%83%E3%82%93%E3%83%9E%E3%83%9E/@43.0614504,141.4103075,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b2b5681f25359:0x39f2e6078e86ff0e!8m2!3d43.0614504!4d141.4103075!16s%2Fg%2F11h11tq7lg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "信ちゃんママ",
+  "address": "北海道札幌市白石区北郷３条２丁目１３−２７ トータクビル 2階",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3d43b24e45/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSpCjLYW5ZdzuFKptuDcP8BjiU2oifZpdVbd6ADwSQz9z7JAAtxXLchoAq9rcnQzohtu_t3T4rAmO0eD9k9k8hM-HXH03vQuKia9Vi3_6LRL7qPjk-ywVQSeJCRbEyN5vcstuRhgyVRGGt=s1200",
+   "what": "豚肉の鉄板焼き定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3d43b24e45/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLYDKFbJg6-_VBggngDEKmjy_21uXYx4qVOwKysL-8zKdtgD_bYNufJELYMycBEz1bGk6wsOLNeYw53aWUmwAJ0Qqmg59SLZncg3YL8TTwJ6tMBbjUWbNNSqotQWrHHuU4xba9rTPs18_I=s1200",
+   "what": "テーブルに並ぶ揚げ物定食",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3d43b24e45/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7vJRWW4S0AnuV6PSpOKh-UxUw1BiZCbaP4eRbt5eEyMJ_y0zQDRpXiNKhPGS-lWo-xLTTpsTlCY7UDrUBPSv8y9KYNINWZYZ1jnGdx2fXP3_ibhenH0qDq7DUT_CQEaKsZR54lLbOTcCv=s1200",
+   "what": "看板の並ぶ建物の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の料理写真で代用。検索結果の住所は北郷3条2丁目(記録のareaは北郷三条の表記)で、漢数字の表記差のみと判断"
+}

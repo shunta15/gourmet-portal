@@ -1,0 +1,45 @@
+{
+ "storeId": "r266",
+ "dir": "shop-r266",
+ "storeName": "お食事処 政巳",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%20%E6%94%BF%E5%B7%B3%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%AF%9D%E5%B1%8B%E5%B7%9D%E5%B8%82%E9%A6%99%E9%87%8C%E5%8C%97%E4%B9%8B%E7%94%BA17-2",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6+%E6%94%BF%E5%B7%B3/@34.788557,135.629782,17z/data=!3m1!4b1!4m6!3m5!1s0x60011dcfedd21e53:0x8c7670eb45c1d04c!8m2!3d34.788557!4d135.629782!16s%2Fg%2F1v75rtlv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "お食事処 政巳",
+  "address": "大阪府寝屋川市香里北之町１７−２",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r266/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNd2dUFIVDM1IN06h9-X4sMwlutz5BZzZgYVTxYIMZuSwqBQbZ2pS0-3UP49kT1AmH4cJE2n-7ALwiI4Lz_IHXssindY0emWB6cUkkcuTVq2S5jaX8GA7rXHLiwsx159alNfayOXMCzms=s1600",
+   "what": "ハンバーグの定食",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r266/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TFl1c25piBBHpvy0YBCu-I5bYHaiSbklmPOsLF9Z7lhiCsROJwAT9nkMl36jKk-sHJE9viEPIgTffDJKCZfkjjx00nROhAxIFXclxwzwEy6r794S3kAiCQUe9OPpffE7wI4JdKaxUR5NNQ=s1200",
+   "what": "入口の看板のある外観",
+   "width": 719,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r266/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sz3v7G46S0wSNDuhIHYXUV-VBOI7ppUSrCzOi9Jq8f9JHuUW5HV2WZsGxeDox4K32az6VhzWvnDABllsh2z8x5vEN4lKtk8zC3eodL5zfk4FXYKCE6suGj1-BqiePZ6I6ONfS5PIv3uD-F=s1200",
+   "what": "座敷のある店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

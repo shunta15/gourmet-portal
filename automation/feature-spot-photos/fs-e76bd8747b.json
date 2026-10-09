@@ -1,0 +1,45 @@
+{
+ "featureId": "欧風料理小川亭",
+ "dir": "fs-e76bd8747b",
+ "storeName": "欧風料理 小川亭",
+ "mapsUrl": "https://maps.google.com/?cid=11101051294778281752",
+ "placeUrl": "https://www.google.com/maps/place/%E6%AC%A7%E9%A2%A8%E6%96%99%E7%90%86+%E5%B0%8F%E5%B7%9D%E4%BA%AD/@36.4169338,139.3236937,17z/data=!3m1!4b1!4m6!3m5!1s0x601ee3aadc18fdd9:0x9a0edb5632a64f18!8m2!3d36.4169338!4d139.3236937!16s%2Fg%2F1vtqw5mp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "欧風料理 小川亭",
+  "address": "〒376-0042 群馬県桐生市堤町２丁目９−９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e76bd8747b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtUKXs3Cnafd5ZhZz5_RpEPHVf8iXWSCB2DRaVACSoSbdYKNijAL6Jfyfmc4-vF7he4MSBK8lxl7xkuPMq0p2lj6XKgzSsidcN6AdVd9bubuNxj2oR3ar91NDQsbEwHdtZ3Og7SQ=s1200",
+   "what": "洋食の煮込み料理",
+   "width": 900,
+   "height": 836,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e76bd8747b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RW1P6smQQyUI-AIhwDXvXuoDyUiQ4n_XHzlH7WtIRAKBXwfioIGAnsvUqv03jUlZCJi2BPHrOq8vI67CQMWP-JGW47LJdJ6pz9TYPKfuXKR31Nwv61zyy_myqf-MJXgVsFGQOf=s1200",
+   "what": "テーブルが並ぶ店内",
+   "width": 900,
+   "height": 879,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e76bd8747b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQBQqk0jpvQUdgdUK_j3RDnkPRmJS-OgQkmQPB1nYdnq3jlW_CH7mkm30JpgI4nGNwTyRMI0WIJq0Zk7Llnz4Ls1zN2LNIcUcRVCCOWKTWcOtmFas3NeKA06zOs_7Uw4b16ILU=s1200",
+   "what": "窓辺の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、slot5は窓辺の写真で代用"
+}

@@ -1,0 +1,55 @@
+{
+ "featureId": "グルテンフリーREZAN",
+ "dir": "fs-c36126ece0",
+ "storeName": "グルテンフリー REZAN",
+ "mapsUrl": "https://maps.google.com/?cid=13443886338396932461",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B0%E3%83%AB%E3%83%86%E3%83%B3%E3%83%95%E3%83%AA%E3%83%BC+REZAN/@34.8776057,136.5645147,17z/data=!3m1!4b1!4m6!3m5!1s0x60038b3a9b451903:0xba92476560e0496d!8m2!3d34.8776057!4d136.5645147!16s%2Fg%2F11lvyjbtp4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "グルテンフリー REZAN",
+  "address": "〒513-0809 三重県鈴鹿市西条７丁目８８ ライブタウンパレス 1B",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-c36126ece0/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjNyKqNeRjB3o_WZjVx2935ks-bLPsNXP3014aM1Hk0f5rmv0sShmSdZ1CfFLuXFm345EID5hMp7PO3bnxgFpk6JKldSHs_9jyuRyhBrc8nPb5g6N0919zWSIaEo-ExKEYgLo2EbsgYVkt=s1200",
+   "what": "ランチプレート",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c36126ece0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_yaoT7Do0ZXlQCO8YLwPQNB0JQmEDSMz3HfZQiYJpv3Z_Uj3YoG-q5cahlqNglw2Gl0-96l8RWKb7Nh_biS96pdOxtOemUui8rOJ6q_YQ8bNwusD1LSJItrWyW5p5JPMgKq9Dzd2_lTg=s1200",
+   "what": "タルトのスイーツ",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c36126ece0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TstbsY_LYE2pr-Bi1SDB7Iu3-8xBuTub-FqUUekTOcgwrLcArzjRwtxWyWxyJ61sNm_VuTT3PsIBKE6BLnl1AYimMibOM-XzYW-RffTN-OCUTUN3y5k5MufDL4EcGmI-pZHDyK=s1200",
+   "what": "カウンター席の店内",
+   "width": 506,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c36126ece0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RO2CqQzt08hmVLEwiTl9gQoaNUfLFFv6WWcerjn3n0B0R_sNkvAZoZAtoj-e6otIMzol2VxOVA4znAi6s8xJiUAUHi-u0YZNpnpNnNX4p821tBARSsAKiE_ptjYXpmsSY8fy2SY2LFP8tT=s1200",
+   "what": "ガラス戸の店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

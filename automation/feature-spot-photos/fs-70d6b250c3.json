@@ -1,0 +1,45 @@
+{
+ "featureId": "麺屋工藤",
+ "dir": "fs-70d6b250c3",
+ "storeName": "麺屋工藤",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B%E5%B7%A5%E8%97%A4%20%E8%97%A4%E4%BA%95%E5%AF%BA%E5%B8%82%E9%87%8E%E4%B8%AD",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%B1%8B+%E5%B7%A5%E8%97%A4/@34.560734,135.5991026,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d91633a40ebb:0xf5b4bfddcd06592a!8m2!3d34.560734!4d135.5991026!16s%2Fg%2F11s7gdgygz?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺屋 工藤",
+  "address": "〒583-0014 大阪府藤井寺市野中５丁目４−２５",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-70d6b250c3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S_hSjNZ5jKFmwy0wxS410n3Gb7TgGHaBWPPhz6wzjVvkEzjVEd0pRhjJxc69e8iG3ooKHdIW-DpTuZKtGqcvh-q81a-Y5LMk7cxc2qiTcKw2CUTuXE-iBBtXM72q3e4IWExv3d85OBLhw=s1200",
+   "what": "ラーメンと唐揚げ・ご飯",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-70d6b250c3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkPhzcHBABe2Hoi_mRqQA4GWj8BU3T6-TnhjviGx_AztIyYjnB_nopAhcdLZdAckqLfOR6_gK-h5xcHF3H1wVbTHFyHiLCTqheyVeeXh96fXXXpFHm_WX6VKsl8vtInhQIJyS_=s1200",
+   "what": "テーブル席の明るい店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-70d6b250c3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfVf9lv5TVONESUuUnYUjdHEbEWDAq0yObQu-33r0kLH6aMP4NlS0x7q3ZYDhSZprYYnZqWfRSGu7uxO_kGALqL6nVWg0WpAUIQXoqKBKxjgkJPukfsN8Z3HPgilFhogO3ZDay=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店名はマップ上「麺屋 工藤」(空白をそろえると一致)"
+}

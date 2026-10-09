@@ -1,0 +1,45 @@
+{
+ "storeId": "r92",
+ "dir": "shop-r92",
+ "storeName": "お好み焼き としちゃん",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%E3%81%8D%20%E3%81%A8%E3%81%97%E3%81%A1%E3%82%83%E3%82%93%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E8%A5%BF%E8%92%B2%E7%94%B07-67-14%20SANKO%E3%83%93%E3%83%AB5F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%E3%81%8D+%E3%81%A8%E3%81%97%E3%81%A1%E3%82%83%E3%82%93/@35.5619718,139.7140551,17z/data=!3m1!4b1!4m6!3m5!1s0x601861f0e4a8277d:0x7b2283ca758a18cb!8m2!3d35.5619718!4d139.7140551!16s%2Fg%2F11vb9knll2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "お好み焼き としちゃん",
+  "address": "東京都大田区西蒲田７丁目６７−１４ ＳＡＮＫＯビル 5F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r92/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QeJmrHMoFUF2Yi2UKzThzzAcReRvzl1CZi5SpjvUuagUHJ6WqQRDXIs3czSh7GFzMbt6p2v32WP4JxxRvRY-2vlsqGjEOhBI3gcpTuKV4wm9pLDOfODHSXLox8YQhLiZ0kl_7nlg=s1600",
+   "what": "店内の鉄板カウンター席",
+   "width": 1400,
+   "height": 921,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r92/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmhxuhrB8iZbq1HHfPytMfbbjCdlKD8gfIS9YDCPuoMSKdzcH8r9RAMT2jvC-2GbNeyK95J-PfdJzO_pmC1L0uKobIFISwoFjqKKUGWQwar-Uc7pbJlmBqnkJvKyl_wItXEnge=s1200",
+   "what": "お好み焼き",
+   "width": 900,
+   "height": 591,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r92/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RI7UB3t2V__OPW1yxfaBcphEU_FwB2BhbauGCEfsTnGXtThd84HftkcgwQIdJlvSfKz-FlJ7gLcRho02dxfsuFXGFUv-FvB73cV6tTVgEg7AF-W7h1cNO6eGEPqVz0BbeUeYhsyg=s1200",
+   "what": "肉と卵黄の丼",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

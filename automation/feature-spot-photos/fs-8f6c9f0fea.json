@@ -1,0 +1,45 @@
+{
+ "featureId": "フォカッチェリアパッファーFOCACCERIAPUFFER",
+ "dir": "fs-8f6c9f0fea",
+ "storeName": "フォカッチェリアパッファー FOCACCERIA PUFFER",
+ "mapsUrl": "https://maps.google.com/?cid=16448502277244786177",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%95%E3%82%A9%E3%82%AB%E3%83%83%E3%83%81%E3%82%A7%E3%83%AA%E3%82%A2%E3%83%91%E3%83%83%E3%83%95%E3%82%A1%E3%83%BC+FOCACCERIA+PUFFER/@34.3973099,133.1977946,17z/data=!3m1!4b1!4m6!3m5!1s0x355101838bff328f:0xe444d1ac5a611601!8m2!3d34.3973099!4d133.1977946!16s%2Fg%2F11trltl7nr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "フォカッチェリアパッファー FOCACCERIA PUFFER",
+  "address": "広島県尾道市向島町５５３４−２７ キャッスル向島 1階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8f6c9f0fea/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPpE2aam-aPEdK_FXM3QX243T5Fd36h3D5WPXnXiEmwqb8DaSKpE5gNwctlAlHYl-eMjfVIgn22QIm3yLX6tFCIF-8bfLeFw8ZqeYbBaq9ixWBNn36X3Luj-mHKJb6O9kYHFcSdj-ms40=s1200",
+   "what": "焼き上がったフォカッチャ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8f6c9f0fea/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMU9ZVeAU-q377_IFpAbv_VAJQrByXlwniudCeqc_hppccHGoJLXM0ErvSKVUSQYDvI0qJpb8jjUyXMZr6rT0OwBLZGvrHYS_Y6YRkKdvHU5CIB5x-B8RKLBvgUoCKA1a2473d=s1200",
+   "what": "桜と店の外観",
+   "width": 900,
+   "height": 507,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8f6c9f0fea/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-e2JTNPM558DDcP6bsrDkkITU2_zpe-kFovr5JdAWxTrsf8MTIW0duebnVrNx06grJviBvE8BzePDS-LN7FzgZlWb_X-y3hkMHAZnCZN5CcG8LjElGJ61j1taHaBbF2W4VxbztoduPjun=s1200",
+   "what": "フォカッチャのサンド",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

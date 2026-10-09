@@ -1,0 +1,46 @@
+{
+ "storeId": "r277",
+ "dir": "shop-r277",
+ "storeName": "OWL(営業時間状況で変わります)",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=OWL%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%A7%92%E7%94%B0%E7%94%BA5-1%20%E6%A2%85%E7%94%B0%E6%A5%BD%E5%A4%A9%E5%9C%B0%E3%83%93%E3%83%AB%20B1",
+ "placeUrl": "https://www.google.com/maps/place/OWL+OSAKA/@34.7038568,135.5004948,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e693759cd8eb:0x47ad13d117084c60!8m2!3d34.7038568!4d135.5004948!16s%2Fg%2F1hg4_gwd9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "OWL OSAKA",
+  "address": "大阪府大阪市北区角田町５−１ 梅田楽天地ビル B1",
+  "how": "address+name-contains"
+ },
+ "images": [],
+ "note": "【発注者の判断で写真なし 2026-10-09】Google マップの店名は「OWL OSAKA」(ナイトクラブ)。記録の名前の「(営業時間状況で変わります)」を除くと「OWL」で、Google の名前にまるごと含まれる。住所(梅田楽天地ビル B1)は一致。記録側の業態は未確認。 店のデータ(名前は門司の店の Google マップ名と同じ・中身は大阪のナイトクラブ)に取り違えの疑いがあるため、オーナーの確認まで写真を付けない。",
+ "rejected": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r277/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ra_x8haT86gjOWC7uKB6IOHsgbA3DRT_LaQi8yXsjmh9rpG0oIWtJjeS1tDKaiq4V5MDP_rQC5-nF3PG9pHhsuWKa20a9Y8HFBIoALJWe88lH7mTzSdbVUl0J2JEu5SNNB1w6Adw=s1600",
+   "what": "OWLの看板がある入口",
+   "width": 1600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r277/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TkFD-yO-HUYcu6j24AdfBLYEmszjyUN6Y72d22_R-rcgdib0CdwydAAlk-OOa58eEuxc0QC038iDOMcGq6yDLbvzPZV4r-K9eEJd7jiU0OCz9gS-HyEyPwmlMrkU7E8P5aJhX_Dw=s1200",
+   "what": "光るバーカウンター",
+   "width": 1200,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r277/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh9pnd0LhjqkgUkqxU_i3rCpZ0ZGfNGpptvWDIOLrwiAvkJpvS5pbCYfYp1ndRPvyeTCTAeowU8ReHAdOaesboeMk5pt-dfUAWJAk0nmkRqah_HjB2217T0xmt0sFDe0MiLWXV=s1200",
+   "what": "ソファ席のある店内",
+   "width": 1200,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ]
+}

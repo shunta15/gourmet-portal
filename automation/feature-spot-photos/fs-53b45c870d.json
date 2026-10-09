@@ -1,0 +1,35 @@
+{
+ "featureId": "Kazuのちゅーぼー",
+ "dir": "fs-53b45c870d",
+ "storeName": "Kazuのちゅーぼー",
+ "mapsUrl": "https://maps.google.com/?cid=7656286202834601541",
+ "placeUrl": "https://www.google.com/maps/place/Kazu%E3%81%AE%E3%81%A1%E3%82%85%E3%83%BC%E3%81%BC%E3%83%BC/@34.7815182,135.4155559,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f113723b2877:0x6a4097bc9aae4645!8m2!3d34.7815182!4d135.4155559!16s%2Fg%2F11tsmkqvt8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Kazuのちゅーぼー",
+  "address": "〒664-0851 兵庫県伊丹市中央２丁目７−１３ ファミリーマンション 1階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-53b45c870d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tn9H67nCPz20cX_lMsBkgOvgdOA8vDoNnE_MZrUH0Dssf7p3DKGV9_OCqDrjhYzqhb74AC05LPN28N9n35JwsntDVvhKuIyfSEpmRV0VHPIHf-4oFHmYL5A09fXuq0_LtMrkEohvUIER4=s1200",
+   "what": "木のテーブル席とパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-53b45c870d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVCA4PFzdfBybDj5-oYPN36eRxltj09YXSgVqnfrbnLzj7l7DFRcrU4ZupDZiraM77bN-q5kXqiAETOZ8ddbyvDZTb7b0mVJKfFmfic7TT7tEFobs-wshTxEQN_5h-_1Wt5la7=s1200",
+   "what": "店の入口と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4はテーブル席の写真で代用"
+}

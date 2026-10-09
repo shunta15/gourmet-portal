@@ -1,0 +1,45 @@
+{
+ "featureId": "BISTROJOIN",
+ "dir": "fs-5b10db9671",
+ "storeName": "BISTRO JOIN",
+ "mapsUrl": "https://maps.google.com/?cid=14464335156635660722",
+ "placeUrl": "https://www.google.com/maps/place/BISTRO+JOIN/@33.560419,133.5410372,17z/data=!3m1!4b1!4m6!3m5!1s0x354e190001b6bc25:0xc8bba4308b7671b2!8m2!3d33.560419!4d133.5410372!16s%2Fg%2F11y26s09p2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "BISTRO JOIN",
+  "address": "高知県高知市帯屋町１丁目７−１９ 中島ビル 1階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5b10db9671/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQq4NumGOxoidk5Rw-agCbwTw4l90W3sXJjOb0n43CvLu9EL1Jvib9dLYaOc6Eb0w2Gyh6a79ekKG_-xrxKCMAUOgs_3aFhbSduQdrpFUWion6uNSR7H4ySbHS6NT-QJzJPJBYJDMaCoSi=s1200",
+   "what": "とんかつの定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5b10db9671/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBSGlFouNoAJVNqHLW0yWDf0ULNm9F9eRw9aammmJ1dGUgOPcBHTOiCwHsBIeG4K0BRwV-nwebEWAeGQu0wZ0g_JJ6nf3QatUp0XYNDMVYQKpD9zMLDjnp73geJcrkwu-SfVwPT-Y-Sz38=s1200",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5b10db9671/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sl7Gb9WDYj8N6xC0papQAm6VDwANgP39d4GUDv7MVG0ipX3hXKroWq57ZZ4kK3ZDsXWaXc71p0L0ePPT_K-b4ywS56b0yDJngKso8HtiXwwJNoYLOlPlWNgJLc3x1GkP5Oxh4mFeqslpA=s1200",
+   "what": "JOINの看板の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

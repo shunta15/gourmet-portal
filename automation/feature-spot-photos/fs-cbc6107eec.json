@@ -1,0 +1,45 @@
+{
+ "featureId": "旬肴",
+ "dir": "fs-cbc6107eec",
+ "storeName": "旬肴",
+ "mapsUrl": "https://maps.google.com/?cid=11665202111495246881",
+ "placeUrl": "https://www.google.com/maps/place/%E6%97%AC%E8%82%B4/@32.67774,131.784399,17z/data=!3m1!4b1!4m6!3m5!1s0x3546fc972068cb17:0xa1e31f83f8cf9421!8m2!3d32.67774!4d131.784399!16s%2Fg%2F1td6kg64?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "旬肴",
+  "address": "宮崎県延岡市熊野江町２５３２−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-cbc6107eec/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMoBLEAZ4F6GPD3Dtv0WINPmkVu-3KQdXLTWltGmquR3uf9kZ7l32wSVe4Myim5dOHYyktMHbryQWaJoWorsZuqBW-ZU1-5UIg0nSqmJR5uOtW-5XDkpxSvHYNSq0e5yYBz7KO_kmArDNd=s1200",
+   "what": "刺身と煮物の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-cbc6107eec/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYKGy1A6THcS3GIJ6OtXCp2TC0SiYcCHf1IyVo_hZUeyhkagncwBTy3xn_ap-HSINOnVrDG2GjE1jtGW6bOFzH0n46EJSWoeo83qlYzAvVsPikaaI8tWssKzQ2ej9fhKktKuJ1oKc81tfM=s1200",
+   "what": "座敷とテーブルの店内",
+   "width": 720,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-cbc6107eec/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWFUSbv_8oRJb7bqviZeSN60RuBbg_unQ6ikCLS8BM2kf08vq9i6t5O_VCbLHpkNF_dh7Hmu6VtsEFCd15d27o7zKUvmx_RV8XOTr4Q7QqA0L-JVBS5DGE6lKeF-l9mThzFvt3eOZERUCZ=s1200",
+   "what": "店の外観と駐車場",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

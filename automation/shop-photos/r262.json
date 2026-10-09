@@ -1,0 +1,45 @@
+{
+ "storeId": "r262",
+ "dir": "shop-r262",
+ "storeName": "NO COFFEE NO WORKEE",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=NO%20COFFEE%20NO%20WORKEE%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%8C%A8%E6%9C%A8%E5%B8%82%E5%A4%A7%E6%89%8B%E7%94%BA9-21%20%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/NO+COFFEE+NO+WORKEE/@34.8166788,135.5700746,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e35fb065a5a5:0x11fe09d4c0654f6d!8m2!3d34.8166788!4d135.5700746!16s%2Fg%2F11kwqbc2tt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "NO COFFEE NO WORKEE",
+  "address": "大阪府茨木市大手町９−２１ マリンビル １階",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r262/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoTVi5Nw63iNCgBEXVkCaSijEVNN9iiGODqBp2bu0pngzdlxyyF4ibO-HVM_JHd9Ce9RjSG7QD7LbMVRIJ0Q0RSa2JYheIEk1clEKNKtAGuD3LPsIDYAoqAbNJbLOeHqFEVtMnDA=s1600",
+   "what": "カウンターのある店内",
+   "width": 1400,
+   "height": 932,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r262/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tco0Rm4xXSl09R8MI0Cqmqz3VLZMfbedxp01tGy3bo89vzT6eR6qbRbRRcHa63a5Qt5yZUMXTWK43j5NPncERbjvYXUJIBPCoRECo-GsMwINzLKCw-Lq89znzCRJViMq5makDv=s1200",
+   "what": "グリルしたサンドイッチ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r262/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbAgxs-KcCXCUUhRr0rzF0Mco1t1NABXgOQrRqq6fBFIGcHfvHVMR7h9XRKSDFg_PRtjZPCEm6cUkaAhN_W_zTEno8m59JqsNWrb6G2uc_9VtqJ_heWNFAc261PRePzgVnJKcm-g=s1200",
+   "what": "テイクアウト看板の入口",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

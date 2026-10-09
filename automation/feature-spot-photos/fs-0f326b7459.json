@@ -1,0 +1,55 @@
+{
+ "featureId": "スペインバルPALLO",
+ "dir": "fs-0f326b7459",
+ "storeName": "スペインバルPALLO",
+ "mapsUrl": "https://maps.google.com/?cid=13871239598203734808",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3%E3%83%90%E3%83%ABPALLO/@34.9667835,136.616971,17z/data=!3m1!4b1!4m6!3m5!1s0x60038f7ccde3709d:0xc0808aebed440b18!8m2!3d34.9667835!4d136.616971!16s%2Fg%2F11xs9njd2k?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "スペインバルPALLO",
+  "address": "三重県四日市市安島１丁目２−４ 石田ビル 2階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-0f326b7459/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1HULy6yygtLZ_ii7v22LtoC2yLVpGqEHWh9vVBMmAAWgx0Rt-b0fvlYqxYseGJEcLqM_kihJoVhFfUEgxcpGielCjreDR_l8i0lw5BJbVWY6UTdFPh-SHdvmHO9GSOe2M3QyaqMCIEMX_=s1200",
+   "what": "赤ワインのグラス",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0f326b7459/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TloVCZTPyo750agP1Vqi8EZhSocWD3ZHjRsjZkXb3JuN_C53jQy3FQc_4CbX05N0kbNzq6iRBRE129TKX3WJo9dnfCXlCLQTXzNwMAUiKcxLaJTxu-D8BSjtu0LZLYcWnuMCaJZmGr7Ejm=s1200",
+   "what": "テーブル席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0f326b7459/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOCcwV3k58E0OLZmjEV7G2o-7qrepwEwpfYF41UZzraLGQ2U9yJBL8FuxQTcV2O6m_ILzD3eO2IQ053eGSW8K3CpUUNOc2jRiZnJf00hsLR7bbiQFrz7sACXmLmdXgsxfLwd0r2SZQOmae=s1200",
+   "what": "エビのアヒージョ",
+   "width": 900,
+   "height": 774,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0f326b7459/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEH1BFb3__mMxBQZqAGrq7lc3sae82F09Fi00H4MckP6T_sEYXSkqSPq3ReI9IMXSU1kdJ_Eq_-s3lS_2fEuvC7b2iOaN0C0XgPhfbajo0HxZpMJsEYdoQ97c73uLQjn44AcZm3sd5nKkN=s1200",
+   "what": "ビル入口と花輪",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

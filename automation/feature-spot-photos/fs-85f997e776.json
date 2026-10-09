@@ -1,0 +1,45 @@
+{
+ "featureId": "ひーちゃん食堂",
+ "dir": "fs-85f997e776",
+ "storeName": "ひーちゃん食堂",
+ "mapsUrl": "https://maps.google.com/?cid=16726932899846861398",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%B2%E3%83%BC%E3%81%A1%E3%82%83%E3%82%93%E9%A3%9F%E5%A0%82/@33.5730372,133.5965273,17z/data=!3m1!4b1!4m6!3m5!1s0x354e1d81de041811:0xe82200d96d2ab256!8m2!3d33.5730372!4d133.5965273!16s%2Fg%2F11r174yd29?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ひーちゃん食堂",
+  "address": "〒781-5103 高知県高知市大津乙１０１４−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-85f997e776/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q23yDNpXoSdpEvMMnIXW_8oJsiF_YWyga00DcgcPnDJyUwgw4xHzSd91aBJAHM46C_xfGiED-qtemLEkdTwIs79pOMzg71zirsFUH4dcjpyve3NEa91cds7Ruo7h9VChauX7RM=s1200",
+   "what": "カツ丼",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-85f997e776/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUFDOvyRmoiQcLFjqawETFb9_X_f_9ySFlAQ4tAZI8UmvewGE314-0zKQnStDiyHnYnRmSgTyaluK9WiKkPJ6E7Ec9s70RvDKsu5Ely3bYRI57r3AS5hkHRur0Fwzx5lRXPx8GRw=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-85f997e776/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRJaN7wUjcoZT7w28CvNROT3ul50ujNJhz1EDzpQoQVyWGJkaioEc7DvNtk2we3iGGUjDCog2dWsNIlFblCUdpee1GBEl1tLVJ-Xs6UkCxKfkEq6JjPhCUkU875yj2qpWFsDI=s1200",
+   "what": "食堂の看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "他ブランド(鶏笑など)の看板が主役の写真は不使用"
+}

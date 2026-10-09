@@ -1,0 +1,45 @@
+{
+ "storeId": "r245",
+ "dir": "shop-r245",
+ "storeName": "ウッドスタイルカフェ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A6%E3%83%83%E3%83%89%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%AB%E3%83%95%E3%82%A7%20%E4%BD%90%E8%B3%80%E7%9C%8C%E4%BD%90%E8%B3%80%E5%B8%82%E8%AB%B8%E5%AF%8C%E7%94%BA%E5%A4%A7%E5%AD%97%E5%BE%B3%E5%AF%8C71-1",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A6%E3%83%83%E3%83%89%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%AB%E3%83%95%E3%82%A7/@33.2207103,130.3665265,17z/data=!3m1!4b1!4m6!3m5!1s0x3541b45c1f74999b:0xc96f597f1bcda257!8m2!3d33.2207103!4d130.3665265!16s%2Fg%2F1tdk7vrr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ウッドスタイルカフェ",
+  "address": "佐賀県佐賀市諸富町大字徳富７１−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r245/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1p-O-9ftclKZlWQRL5DE84-B2CqGpjHT2Xvd4gY0PyIGYm_HEoFHCjA3JzeWcgIPAxyG0Lp-dFjo_i-vkgV6zo0CKQcwom37OZ4sY7T4Fun_rCUKKZOLTai29uEFoeDvyIvsmH8AlxCpm=s1600",
+   "what": "看板のある木造の店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r245/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RJ8ZjVXA4Gw9gQlB6Q_9yzI_RE5NAH_Kwj21VvXwCjIv2Cj4Y8-pGjKSAAO86fLBYe2qnRcUPEmOjdfscB07IpjE4DPZ16NawNeJF1PN0blOjWePzXb_lWm3d8RBm8-CXQ9gOgBGgZHAMG=s1200",
+   "what": "木の梁と席が並ぶ広い店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r245/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4X_joOUR5CCN_mIquHLuSkLnxJEynHY6e249q-jUv_WO3BkV7K515w1kOqTnyqE1dFtMVwbdhKMkU6sznah1ImuKRRth-Vo7-zR_0PHMtrpbVwUx2VGhuf2ZeK8fQYN70e2No4BCFcGjv=s1200",
+   "what": "卵をのせた石窯ピザ",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

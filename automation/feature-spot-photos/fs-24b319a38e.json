@@ -1,0 +1,14 @@
+{
+  "featureId": "縁カフェ天神森",
+  "dir": "fs-24b319a38e",
+  "storeName": "縁カフェ 天神森",
+  "mapsUrl": "https://maps.google.com/?cid=3184665757239420428",
+  "placeUrl": "https://www.google.com/maps/place/%E7%B8%81%E3%82%AB%E3%83%95%E3%82%A7+%E5%A4%A9%E7%A5%9E%E6%A3%AE/@34.9489755,138.2531461,17z/data=!3m1!4b1!4m6!3m5!1s0x601a4d9cd80f1523:0x2c3234a2149b260c!8m2!3d34.9489755!4d138.2531461!16s%2Fg%2F11gcqwhs3_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "縁カフェ 天神森",
+    "address": "〒421-1115 静岡県藤枝市岡部町新舟",
+    "how": "cid"
+  },
+  "images": [],
+  "note": "店を確かめられない: Googleマップの店名は「縁カフェ 天神森」(一致)だが、住所が「静岡県藤枝市岡部町新舟」で、記録の住所「静岡県藤枝市岡部町殿」と町名が一致しない。ルールどおり写真なし"
+}

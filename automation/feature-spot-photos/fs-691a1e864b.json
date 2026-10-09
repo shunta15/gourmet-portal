@@ -1,0 +1,45 @@
+{
+ "featureId": "caféonitonカフェオニトン",
+ "dir": "fs-691a1e864b",
+ "storeName": "café oniton カフェ オニトン",
+ "mapsUrl": "https://maps.google.com/?cid=4563329746480005066",
+ "placeUrl": "https://www.google.com/maps/place/caf%C3%A9+oniton+%E3%82%AB%E3%83%95%E3%82%A7+%E3%82%AA%E3%83%8B%E3%83%88%E3%83%B3/@35.2237627,137.0693182,17z/data=!3m1!4b1!4m6!3m5!1s0x6003690050647435:0x3f54343a13e9ffca!8m2!3d35.2237627!4d137.0693182!16s%2Fg%2F11x7kdj5kr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "café oniton カフェ オニトン",
+  "address": "愛知県瀬戸市效範町２丁目４８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-691a1e864b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RpZY7JVfsofVLvT44GMlCgFm106fSbgm1Cur2BvEFZLnvEfqw0A2qRza66jqrEN3YTSQMpxxxHan9ncuwhoGrgGheK5i37sBng7VBXgwqK2UvyffCBPW57vp4aaso0ZPKsLFK5B1gfl_pl=s1200",
+   "what": "おにぎりと味噌汁とコーヒー",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-691a1e864b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJEJu3hGPbqdaR-wb-bch7bm1QlBtNPws17G1dS0lgCH3cl_Auf9PkK34aMFELcX2hQvGBvNMG05ppx2zSmDl5yhAbiioCkgx-qPCR-pLbTl9AZsO9q_SiFDQxB7s2sMFWOyWGmBs7LvGw=s1200",
+   "what": "木のテーブル席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-691a1e864b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ToH5kjE4dZ3c2kct2n7B3jeEaD2rOHnteV4IqxQSs4wo_qp3dPtEA3U4orq_CwXEw-3ISTR0gHeUzJ9KCYwA-cFy0ox2DAaoS0_cVreWE4Vk1TO7ZCJwWpzt0nKDY8vIUBPhWtJ_d7_dQm=s1200",
+   "what": "入口と店先の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

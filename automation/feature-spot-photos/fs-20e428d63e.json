@@ -1,0 +1,45 @@
+{
+ "featureId": "遊民八王子",
+ "dir": "fs-20e428d63e",
+ "storeName": "遊民 八王子",
+ "mapsUrl": "https://maps.google.com/?cid=7383349444622123719",
+ "placeUrl": "https://www.google.com/maps/place/%E9%81%8A%E6%B0%91+%E5%85%AB%E7%8E%8B%E5%AD%90/@35.6788264,139.2983157,17z/data=!3m1!4b1!4m6!3m5!1s0x60191ed8c3cb5ed5:0x6676ed33834782c7!8m2!3d35.6788264!4d139.2983157!16s%2Fg%2F1hc5pmk50?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "遊民 八王子",
+  "address": "東京都八王子市四谷町６６５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-20e428d63e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tpz4USGp_1yTFi6O7JRDh3_FMfBQMNPagzmeszoqiYMjkgocmr76rDPVezcL0ovszhPPJoncG1BQyai57hAPT3q-Ug4N77tBkToRsQzAg8NaffHyRd9Qjtbuub9-Jf3tXFbGOk=s1200",
+   "what": "刺身などの盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-20e428d63e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYUe_O5tFmSbEgDicRs0NnFsffEbsQtiSQnSDUc3v2lbnh-zsHHaoR5s2GK_LwcDsqDwU3bb2qSnaX6F1S_Xp6aTPrhn3obYSDvP223KsiAH1xjM9xcePgT_tU_0u_FtIqt1Lr=s1200",
+   "what": "招き猫のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-20e428d63e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3iT-OpxEHkY4LqixaX9JI0dEYBMGO82YiVdQ3wnyYBcKivrt4VEAYhZNQLXl4OtJE5zFBViOOMZY-Mse8gAozSrthliomYd7YnW8oVIQRMTYaJZGIFa8ckr49utgO8Oxhyks=s1200",
+   "what": "居酒屋の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p3(鍋・飲み放題)に合う鍋の写真がなく、料理の写真で代用"
+}

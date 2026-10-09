@@ -1,0 +1,55 @@
+{
+ "featureId": "あるる",
+ "dir": "fs-8c4dcd9762",
+ "storeName": "あるる",
+ "mapsUrl": "https://maps.google.com/?cid=6613786936894585033",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%82%8B%E3%82%8B/@34.8573542,137.425684,17z/data=!3m1!4b1!4m6!3m5!1s0x6004cc9e698d1fc5:0x5bc8e42d81b878c9!8m2!3d34.8573542!4d137.425684!16s%2Fg%2F1tgcx_x7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "あるる",
+  "address": "〒441-1231 愛知県豊川市一宮町上新切５１４−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-8c4dcd9762/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkakM-JnvXMwRsgiLKwD5DO_xl3OUmwARu2QqCdidE8prFS8jjLBULcH7CJnJl97gUj2xL7njzJoaUZx2uZ4MQ7mPKgEvksmnk8nMJwDPjzeT7ExyVDCDpKQAnrrjMXgYbWA2BdxhKTxUU=s1200",
+   "what": "白い壁の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8c4dcd9762/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TY6IPf8K03RVeI61zV-DkXnWLAS3o51Or7VrqpC4EbA2XT4ZvsMauPgA2xlYgU4qXoTcNoYiqXR3738COjR1f6VHiGbIZf0EewLH6dVx-ObgU3HgM1EKyJmentEu6PWowIp_4tbQ=s1200",
+   "what": "アーチのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8c4dcd9762/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R60pJN6RUfKROO53VdgIOplH0DsAG7Q2jwWQnnlHGNmurO7Paqe6NydJ0ba7JBkAy3nN3mMUJzLNNgyvTLaTV7hPuHrNiFf1TxotKTsiTZnZdHR6yH9RmpN7MpLgyFrgSiRTU=s1200",
+   "what": "赤いテーブルのある席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8c4dcd9762/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPLLKvODi3yzD6-ZGVTELtPFfqzRNh_5Gp5pF_D9f5TbSxkYzvuT4xaXXsw4lNH-eWtYfMr-mv0_6meJj6GV-iBsAaj1S7wNmi4g4nz0IoHSrvEvl9_-rrp_t7BQHXVOjtk1ZQO_b-Hm7N=s1200",
+   "what": "牛肉のグリル",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

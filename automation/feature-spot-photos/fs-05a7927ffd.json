@@ -1,0 +1,45 @@
+{
+ "featureId": "お食事処北さん家",
+ "dir": "fs-05a7927ffd",
+ "storeName": "お食事処北さん家",
+ "mapsUrl": "https://maps.google.com/?cid=12285696179799261366",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E5%8C%97%E3%81%95%E3%82%93%E5%AE%B6/@39.745117,140.131282,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8fe7b571602513:0xaa7f8f95474f00b6!8m2!3d39.745117!4d140.131282!16s%2Fg%2F11njwsy43k?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "お食事処北さん家",
+  "address": "秋田県秋田市添川字地の内１７５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-05a7927ffd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHa50jtvMKw2DktyTn6x4y0Wgn3KYr-JkIfoF2PafWS9WjowXoRM1vR9dqBK24N3EWMhduqIA9xVwk5705F2qdglzHD0NoQ2oCugC-HKKC7IPkeGwRc_3-cqATjm3vcHD2CvEf3dEt2Coc=s1200",
+   "what": "営業中ののぼりと店先",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-05a7927ffd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpwryrSjLVURkWH9upjyn_nLSZDK5lACuZaBGpyM7igi-zmKCIS-0j-E5ZQxf9aoA8VxTln3Go7weRGcMtm9btUDSQ1Sxyi9FDEiyw5FFLHdVSmW3w6IHs2acQpg4YMFbvsRDb3o8LI-T4=s1200",
+   "what": "小上がりの座敷",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-05a7927ffd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMAzzF7QJ656mCGb-8x6u2OPjAj_6w8fmEdgPqLBbyJjXyqny86GqA8le1nNkvDDopS2s7ROc1ZutgasTR6HICvAmkLD-ax5MOdIqXMhTKuhCIwcqYRZ2UtMbIBLLNZt_Dw7aeisxm174=s1200",
+   "what": "駐車場のある店の外観",
+   "width": 677,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

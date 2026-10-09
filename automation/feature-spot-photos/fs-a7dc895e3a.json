@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉真壁",
+ "dir": "fs-a7dc895e3a",
+ "storeName": "焼肉 真壁",
+ "mapsUrl": "https://maps.google.com/?cid=15906643930395251685",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E7%9C%9F%E5%A3%81/@36.2988226,139.2596473,17z/data=!3m1!4b1!4m6!3m5!1s0x601ee732064c4857:0xdcbfc060afd513e5!8m2!3d36.2988226!4d139.2596473!16s%2Fg%2F11fcv9rl10?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉 真壁",
+  "address": "群馬県太田市新田花香塚町４００−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a7dc895e3a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S21aIr0PunwAgJiBv93TuK998lay1T46sMdvad6tolbyOAezw3vTlRS75Ixxl36joNYq9Ma8fxh95czOaWp8SWEh_zHhvobM1sdA42QY_Ax0NfrvL_jDiUqQ-1YyhJMFX13SuInhMZe4gf=s1200",
+   "what": "焼肉の定食",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a7dc895e3a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5ter7W5bq5chabPQhwoKNP32z-Dr6Xut1DMjqtnfdWyhuBOyDcVSiysoKSvwyV7NL6-AffOzJjXhBArb4yGmlwz9aoTNRuBM9HPvql9C39rHplxdn49KqLD2cAOiNb74ZpucwM7LLsZo=s1200",
+   "what": "瓦屋根の一軒家の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a7dc895e3a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QC9Q29M6mJQutKWgO4of-ylQn1LwJO0s9JzhR0TCCZ5ddFBg9GWHlzXfq8prHtwwWVLZdySKuDdOk-tzv1yfGFNx0oaTS7jiEY6TEMsUDRAX5dGsVKLLvZXWqjeSAwrn5BMAHJHOLIxA8=s1200",
+   "what": "網で焼く肉",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真がなく、p4は外観、p5(アクセス・立地)は料理の写真で代用"
+}

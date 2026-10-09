@@ -1,0 +1,45 @@
+{
+ "featureId": "忍者喫茶小田原道michi",
+ "dir": "fs-f667465132",
+ "storeName": "忍者喫茶小田原『道-michi-』",
+ "mapsUrl": "https://maps.google.com/?cid=3856228506945778921",
+ "placeUrl": "https://www.google.com/maps/place/%E5%BF%8D%E8%80%85%E5%96%AB%E8%8C%B6%E5%B0%8F%E7%94%B0%E5%8E%9F%E3%80%8E%E9%81%93-michi-%E3%80%8F/@35.2494018,139.1607929,17z/data=!3m1!4b1!4m6!3m5!1s0x6019a5a92a8eac87:0x35841365593cf4e9!8m2!3d35.2494018!4d139.1607929!16s%2Fg%2F11nk84mpn7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "忍者喫茶小田原『道-michi-』",
+  "address": "〒250-0012 神奈川県小田原市本町２丁目１１−１７ 本町2丁目ビル 2階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f667465132/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCIzYgojyA-yvslYYtJVE9KGpFuiVzzu9RAW6om1degQGEGGDG-fDJLoTgm5xrEHKpenOicqWr9Ratbc_REr52KGVo7lYWw1TR_eHiXxwJTXM2keViAWEMZIQNFRja7VUNowMXS2Kn5ht6=s1200",
+   "what": "忍者姿のスタッフによる演目",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f667465132/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfzQJDA6xSI1uyPMgGmw9QZKsW9_WS8l-nSLjc77FU9tyS5tPtGfgkH3z-qu5w4dDMT6fAbxH3-BINmitSoZPMUaBZW2b2-oS33qhlpH9x-uDbUy3xvNS1h8hkDAcKEo7kgO8di5-_CkY=s1200",
+   "what": "ソファ席のある客席",
+   "width": 900,
+   "height": 596,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f667465132/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4AbyhgKeZgnyW8FycGt_wUryZWW88BUlCkeVfSVeradUfFG-NrCeu0kPnIelOm6RnJrh-cqK5ZgnetlmZPwwDFVsREOL5pXbtn5VgvF6L129OKPCeJ_1gyoclicUo7mZcqvy-c76huCE4=s1200",
+   "what": "木の引き戸の入口",
+   "width": 596,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

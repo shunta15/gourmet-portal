@@ -1,0 +1,45 @@
+{
+ "featureId": "魚幸処にしかわ",
+ "dir": "fs-00140e178a",
+ "storeName": "魚幸処にしかわ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%B9%B8%E5%87%A6%E3%81%AB%E3%81%97%E3%81%8B%E3%82%8F%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E9%96%80%E6%88%B8%E8%8D%98",
+ "placeUrl": "https://www.google.com/maps/place/%E9%AD%9A%E5%B9%B8%E5%87%A6+%E3%81%AB%E3%81%97%E3%81%8B%E3%82%8F/@34.7576424,135.3576571,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f3004158d167:0x58e31fb375379674!8m2!3d34.7576424!4d135.3576571!16s%2Fg%2F11w2c7tx__?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "魚幸処 にしかわ",
+  "address": "〒662-0825 兵庫県西宮市門戸荘１５−３",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-00140e178a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgYn-Xhe9I0xBy3dvO56n729j3UtjTnKiTuBsekjH-1zzPcmRvFT-EXkExqqKn5tl5GXUrUmdmw8IFP6au6OQAFHfOFSWcoZ0BjpIVpzzllinDaKJH9H-z_zUJ_5tnIA5MCDy8ulj1NwU",
+   "what": "刺身の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-00140e178a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TiUOrNAb0w3PkatXK9se495PUcwS7U1uZZDH1mb_yD545XecRc1OGITz4yGlG1rbpRECpCYxxx2b3Jk5n7e13YwZ305B0A_RcAkzVcNDbVQEsOKnBGTaU86W0cgPb22cxWNCynpg",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-00140e178a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TkNgOWZ63nPSMLfbqaQXTol7rIsVmpQJlT5-nT1FSHdjQVMjmQ1WUH1IsrzVC4-T8bSSjMLQtN-Q3GlLjvYb-T4Tvl1EyTzVAxtu782odLeOlkD3SJFx3pCm7NuQQAVAEGkan5LARjWr7J",
+   "what": "店先の外観と看板",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,65 @@
+{
+ "featureId": "オステリアバールアマーノ",
+ "dir": "fs-d71bbf04f6",
+ "storeName": "オステリア バール ア マーノ",
+ "mapsUrl": "https://maps.google.com/?cid=6548305155618294933",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%82%B9%E3%83%86%E3%83%AA%E3%82%A2+%E3%83%90%E3%83%BC%E3%83%AB+%E3%82%A2+%E3%83%9E%E3%83%BC%E3%83%8E/@34.8243091,137.3952813,17z/data=!3m1!4b1!4m6!3m5!1s0x6004cd0a26699267:0x5ae040d8397ccc95!8m2!3d34.8243091!4d137.3952813!16s%2Fg%2F11fq8srgdx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "オステリア バール ア マーノ",
+  "address": "〒442-0037 愛知県豊川市門前町４５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-d71bbf04f6/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCAuhuk1WBzgdtqyr3ox7VngMU05EjFQ1_y2Tjq6tmNA6U3Cafa8SNiW7Ghpnzw8qWv1j5LiUgO7UhXfM8ZVF7OfdNKqs7ooX6Fxc7Su933WAaAqEJsqeR_1NkUG7-01GYykw14g=s1200",
+   "what": "牛肉のグリル皿",
+   "width": 900,
+   "height": 598,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-d71bbf04f6/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWHTs67RedtNasggSUtrRNx2biXGKV_ncY0KGjEw0uDK5oMC-0ChLFUCphvvmj98eC-HdgTP1sL19b7axA-XFzPF_BO5nbjBkqv3yFPtRlUxgemgHH_glsIP_IC5B2UugTOQhn=s1200",
+   "what": "長テーブルの店内",
+   "width": 900,
+   "height": 840,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d71bbf04f6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tx7wg_mijUZaBd3wCJ4xLR2oRiNEO10o359tluKaE0dLD0P1Yzo8e78SZZe7ozZNVnviMvcZ9dDXhS32_ofKONHo5yOWCqwFpyIZNyHMFkh9H83qdCdg3Jf2zniVIxHpLUqNG4tQ=s1200",
+   "what": "渡り蟹のパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d71bbf04f6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxpxsFbAAHv0pFYKSKdi7cj4h9uLHWQQWMJ-BmsogIvLZoWzw1ioo6FitA4aAG7EbyoFnc3lJa5d8y1ormZdT-mFpaUfkBHWogN4Cv7Potui9ERBnC8N5BDUYM87aBCGTWIss=s1200",
+   "what": "夜の外観と看板",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d71bbf04f6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4Gxl3QoIoslTDu6tHU_Z2lD7sbfjgKtfY8_SfNlp591PVpGY2gVcXVMoa7DJuI004RI8zY9HqIEfBipjX4e1EpdcCmAfHfWs1OS3iuXHFN_bnFoTW7-rjGYWKqWQAeYPSjrliEn4vmKc=s1200",
+   "what": "通りに面した角の外観",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

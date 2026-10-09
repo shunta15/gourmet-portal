@@ -1,0 +1,45 @@
+{
+ "storeId": "r287",
+ "dir": "shop-r287",
+ "storeName": "和イタリアン架月 katsuki 久留米",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E6%9E%B6%E6%9C%88%20katsuki%20%E4%B9%85%E7%95%99%E7%B1%B3%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E5%85%AD%E3%83%84%E9%96%80%E7%94%BA2-72%20%E3%82%AA%E3%83%BC%E3%83%8F%E3%82%B7%E3%83%93%E3%83%AB%201F",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E6%9E%B6%E6%9C%88+katsuki/@33.3141629,130.5110025,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a4ff33daa223:0xcebc73fe690289d2!8m2!3d33.3141629!4d130.5110025!16s%2Fg%2F11b77cmqn3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和イタリアン架月 katsuki",
+  "address": "福岡県久留米市六ツ門町２−７２ オーハシビル １Ｆ",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r287/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMA3QnFD15ZPlt0JOu_wfUNo-9uSLKVLcZdNhoVcrtnYt_dV-85RRoGDUWMZzyAQ2I94vFboUxzq5KOrqYnz7nfCyMBrJjs_1yEn3qAez6l8qOln6yOSeKeuQaJQpsc0DuyGxCrEsOTRbq=s1600",
+   "what": "看板のある店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r287/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q50HMXzhZ_8gxARPiwrTtE3TpLLL148UJHzwMZ1lNWnXvGGqTh0CbNi2yrP9Mxs-Hz5TJzK9ZcR7OUzSOc-fep64HjDQN7U4n0JtJq7hDt8_YRE9pBSjAoiOzoCVuicUQ3_0NndA09eqQ=s1200",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 673,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r287/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoV_ikMdLXoQqIsw7JpNHDUR3bkp42_uIEsDGAScKtBU7TF9Ru8s62OVOBg4kh-eqzZxYMCnkm741ctyA3pYtuUwB5qHN6Va3eszypa4SwKuJ2arwH1npQUONxNQGE_0lF7OLvJ5opEwi-=s1200",
+   "what": "エビのアヒージョ",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "記録の名前「和イタリアン架月 katsuki 久留米」に、Google マップの「和イタリアン架月 katsuki」がまるごと含まれる。"
+}

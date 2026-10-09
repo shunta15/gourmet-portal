@@ -1,0 +1,45 @@
+{
+ "featureId": "楽喰",
+ "dir": "fs-3cb9b3608e",
+ "storeName": "楽喰",
+ "mapsUrl": "https://maps.google.com/?cid=1879529295451135256",
+ "placeUrl": "https://www.google.com/maps/place/%E6%A5%BD%E5%96%B0/@35.3324466,136.851599,17z/data=!3m1!4b1!4m6!3m5!1s0x6003098921f63a43:0x1a156defa04e1d18!8m2!3d35.3324466!4d136.851599!16s%2Fg%2F1trpl3lq?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "楽喰",
+  "address": "〒483-8423 愛知県江南市東野町郷前西１０６−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3cb9b3608e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8oSOTBiXEXY4JNs2X6YOaamtpoocF7zwcJB-NLy-t8vJAFTbo3w1NNuQT2lqYpcHtH7YnMIERcmdSLxOrVeClfK6-TJxMyH1l0ig6nnLuds_Nvt76qwn1zqEEtA98OF3Irck=s1200",
+   "what": "コース料理の盛り合わせ",
+   "width": 900,
+   "height": 735,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3cb9b3608e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q68JoJ60gKzPfU8CazIzRYFBHZKWngzzlT3Y264jgxSnfsYQqDYAsZ1ZPqBOHcbQ4RAbz1X-tfeoLlQgAlwvDVaXNUV_XPzXew4y9Hj4-bDBHIXJYT_kcl4nHHLQr4auzgxc_8kA=s1200",
+   "what": "座敷の個室風の店内",
+   "width": 900,
+   "height": 720,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3cb9b3608e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3OUwzoOrymrfmLIsb_ve28l33pubo6IHMop1TrtVw2F87iXzZhbFpJctra7NBEMf4oC7S7mWYQTNE1LzvlQ8oDhGx3lsAJ9x5wARQZH-TuUlH8UYm6AWnTn5E5gB9fdaWN6W4yWGyGudS=s1200",
+   "what": "夜の店舗の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

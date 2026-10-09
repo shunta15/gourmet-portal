@@ -1,0 +1,45 @@
+{
+ "featureId": "宇佐美軒",
+ "dir": "fs-a2254374dc",
+ "storeName": "宇佐美軒",
+ "mapsUrl": "https://maps.google.com/?cid=7683579660600967372",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AE%87%E4%BD%90%E7%BE%8E%E8%BB%92/@35.327864,139.4076067,17z/data=!3m1!4b1!4m6!3m5!1s0x6018530031147a61:0x6aa18efdf18980cc!8m2!3d35.327864!4d139.4076067!16s%2Fg%2F11w_pb6pn8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "宇佐美軒",
+  "address": "〒253-0053 神奈川県茅ヶ崎市東海岸北１丁目１−５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a2254374dc/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rs2WgVjwRAgfjVHAyqTS7uC9eeNIzoTkWEgN8f0X1BNGSEZcz24JdABPXKsGwcQ2s2i9CM3azCEEZ6_e5dH3o2J70YJAOFhJGZh_L1JCb2z-1Bl2GIc7wKrMjJJc_e4CRCCfLB-UxjkV0=s1200",
+   "what": "天ぷらとそば",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a2254374dc/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TTR7gmde2gXoG5OjX1muBqziIXyWK-8mOEnH6NObMsu2deIHSpAAj0_JBpjpoui6dE2r_lQKTkVydcu7cZK9WvOEexIPhpmDv6bme9aKHQ-F1xMEeoRtUrXxwpIcnDf4F_n-t8oU7tsSus=s1200",
+   "what": "カウンター席から見える寿司の舟盛り",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a2254374dc/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QArPTGtKe9nwxKXrbZywzsGRQcR0X0FkJaaCD8HtQ9tvYMAOz4xfhwz5O3gfyvwqYN7Zcf4e7D-SET5Cx5aZDA_9Ea8CJ6woKEhJc7oDWfjfLB_UlXnc430Pz1o8u92ZKA6ga3=s1200",
+   "what": "通り沿いの店の外観",
+   "width": 900,
+   "height": 677,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、ポイント4はカウンター席から撮った料理の写真。"
+}

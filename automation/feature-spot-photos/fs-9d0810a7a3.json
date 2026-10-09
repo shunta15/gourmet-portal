@@ -1,0 +1,55 @@
+{
+ "featureId": "宴友夜えんゆうや",
+ "dir": "fs-9d0810a7a3",
+ "storeName": "宴友夜(えんゆうや)",
+ "mapsUrl": "https://maps.google.com/?cid=333071487251957162",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AE%B4%E5%8F%8B%E5%A4%9C(%E3%81%88%E3%82%93%E3%82%86%E3%81%86%E3%82%84)/@34.823231,137.203286,17z/data=!3m1!4b1!4m6!3m5!1s0x6004c0ba678ce4ab:0x49f4ec0c276c5aa!8m2!3d34.823231!4d137.203286!16s%2Fg%2F1v7tlb3n?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "宴友夜(えんゆうや)",
+  "address": "〒443-0046 愛知県蒲郡市竹谷町油井浜１５−１５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-9d0810a7a3/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TU3cJjfLtLw7Hs8GTKXsKKCfqFxui1PeCrA5UO6V8Gd2N_lWMHUYXzOiu3eTo6cf2skNxBGlihgPaMuBVJQ52ZWGqObXYhbo1eO0rIAu2-PmdvJk5Eo7u7IurjPF2vhKW7SU6Hn8TOl5a3=s1200",
+   "what": "チャーシュー麺",
+   "width": 883,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9d0810a7a3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3khQuSsI12aUcJ8psE0DikHXuawSVy3eVD9g51bdakbKiekpKzWrqHrpXvCbupUvUTUzXLSsgZV9R6jhWtA7fbjfCpN1HESM5LqcGGcjTzKJT-Z487CSOZhFinNi3KfYsd39YSwppKOrF=s1200",
+   "what": "揚げ物の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9d0810a7a3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMlL-Gy4EfOurYLoNVvKLoWnXu2FxjRloj8CfPj-Zi9IZTz5vAOtILlbGAuRMNWwu_PlFUwy1diVPtYgzsum9sJuGf9Bat8VMSdNTC0RqpaFIUzHWOEd19HaLtUVMV3p01LTk9TxvFKlLn=s1200",
+   "what": "ボックス席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9d0810a7a3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RZQRLGZNlQQrX7tECZUGBHyrctYoYDvvUzs39YN6pMGJpuV7N3W_rdO84XyaM3Uxb31CPa-2s8qacYz7dB4zvED4eEjR4eoyrtQVMDBwPijmI49SutcCQ7NLSAjkgU2lP4-ASEVjOE2zdC=s1200",
+   "what": "赤い建物の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

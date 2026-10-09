@@ -1,0 +1,65 @@
+{
+ "featureId": "すし処隆",
+ "dir": "fs-54165a8363",
+ "storeName": "すし処 隆",
+ "mapsUrl": "https://maps.google.com/?cid=4296682166008331980",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%97%E5%87%A6+%E9%9A%86/@34.5187481,135.7809832,17z/data=!3m1!4b1!4m6!3m5!1s0x600132faa39abc9b:0x3ba0e1aa49aebecc!8m2!3d34.5187481!4d135.7809832!16s%2Fg%2F1tjpqdlm?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すし処 隆",
+  "address": "〒634-0843 奈良県橿原市北妙法寺町５７９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-54165a8363/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOSESf0fgnkkvUrJ526N1vKTQZl6rBRMDCdzPylZP7yqM8s5Del4srFihLWHKUePFIdYoc01LN4lUetR6uVUz4YmLWBQV9UaXbDZoMlebjQ1uc6bqy-rcUMg1qQ3Hu1XYHHQKfpxRK7pA=s1200",
+   "what": "握り寿司の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-54165a8363/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SS6WiIIb-bnzQp-1D7p6MaUfXpwxvSV0P5RnTu0mfNFK05Wez1ev8AM3_7OkVbvNbBDOM-185yuQgabNXN1HugOShN4r5PN46Ta9yF3GI-h6fEIYCmpa3Pis42o61SwtXMZyA5=s1200",
+   "what": "蕎麦と寿司のセット",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-54165a8363/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ra6Io4EE-iPgfRZnAA7h4tJ7Vxbl6xdqVx4CK4LBRXolvW0QM3Zk5QA79bpT0_ECxedhvgbtKbUHGAPIkjw0xpPIxT61Cz1JZnqh8FunT1osewccsJSSl7K_HYfaEtloYUGubbTTdvsS_q=s1200",
+   "what": "穴子の巻き物",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-54165a8363/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMGXw-u0TI0IRDqXrr54gRMDCOHEQ2Jk236uKPKOxJ4_7cyn91uaiuwaE-dXigTzcENU9ux9Ae6LDSNtdyBLIVDcogMGXEYTHa1xYEgJZZLMOtX3rpdPr2tGJ7_d7bjTJ2Rq8mBA=s1200",
+   "what": "カウンターと座敷のある店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-54165a8363/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rtq5z-Ki5LL_n2TnjxXCj_vi-Z-ravz214AGrKytRR9kWJxlMIoujL0g5Q46cqVyZii2UAeuNxuBr4byJaVSU1r_ndg3UtW5XK-ajUvUkdj1Ck-WSxCZ4bG8dmzqU6k_aLefs=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

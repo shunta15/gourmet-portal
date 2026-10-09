@@ -1,0 +1,45 @@
+{
+ "featureId": "四季七彩こころ",
+ "dir": "fs-e1a9d0ef9c",
+ "storeName": "四季七彩こころ",
+ "mapsUrl": "https://maps.google.com/?cid=11751792833945965738",
+ "placeUrl": "https://www.google.com/maps/place/%E5%9B%9B%E5%AD%A3%E4%B8%83%E5%BD%A9%E3%81%93%E3%81%93%E3%82%8D/@35.4917623,137.4541115,17z/data=!3m1!4b1!4m6!3m5!1s0x601cb52f1695c2e7:0xa316c1519d5494aa!8m2!3d35.4917623!4d137.4541115!16s%2Fg%2F1tghd6gr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "四季七彩こころ",
+  "address": "〒509-9131 岐阜県中津川市千旦林２５２０−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e1a9d0ef9c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBm9IFshtumT3g3UOlO1WxmhpF4tuqFsqan4GuT6wxoI2nrvc-tAwqRu9Zwvt_G_PHxUTMDM32aR_7s4N-2QMZV0kuyif9LzhADX4XY3dFnPnc46qZnLHhEvXkIEAiPi0RTPyWISrQ9Hiq=s1200",
+   "what": "彩りの御膳",
+   "width": 678,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e1a9d0ef9c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVbQO5zPqh-RDxYAFuy5c47_03fTP33yBDFhA-VUR8FL_M3enkTUdpwJB3wgIB8AAfllh8b8xe_WrP9v44lHrcErYdHlNditOJoC5WujlWZWeDt8tdaGe3EgRorm4EReIvBCryoYmeEoka=s1200",
+   "what": "暖簾のかかった入口",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e1a9d0ef9c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SC3dEH5SKQnIAai0Rb6vhvqZgJa1qJs72vnzV0aobJfT5yRIbieUGXBvN-48TCeveh8NwHdx42iOr1vXqtCi9g2Wu_oc25b4xByHe236rTYSyWptwoXIJKJIL2noyxaNQWTSDB=s1200",
+   "what": "瓦屋根の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、slot4は入口の写真で代用"
+}

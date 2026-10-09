@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉87ハナ",
+ "dir": "fs-fecc37a9d8",
+ "storeName": "焼肉87 （ハナ）",
+ "mapsUrl": "https://maps.google.com/?cid=1404289424220164169",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%8987+%EF%BC%88%E3%83%8F%E3%83%8A%EF%BC%89/@35.9066173,139.8030172,17z/data=!3m1!4b1!4m6!3m5!1s0x6018971a2f222f81:0x137d09ca847b1049!8m2!3d35.9066173!4d139.8030172!16s%2Fg%2F11tckn7bbg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉87 （ハナ）",
+  "address": "〒343-0015 埼玉県越谷市花田４丁目19−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-fecc37a9d8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sd174W9AnLsqJkwdK8EDXtW0m66VBc4UerzUFW1NCG_ZgSo0anuqAYACUuyzHf_wZRnork4JjdBrmEJ_U-OFqJP5y-UU4N5pSzUUjNnfEBrON1YLeHHsb-RStvK4BDLi5qLQI=s1200",
+   "what": "焼肉用の牛肉",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-fecc37a9d8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAd6T6GmK4C9DXCsIPIAIWj-BS0LgnAs647BHv9r9DXuDrI2NiKq5DTgYU-SS5xN2SoismCr8-tCKbwSvUgC-fDy6xHZmKi4ZocxVi4Ykwuak22dq2u2O9x2TU33SAQ9LXnVIe=s1200",
+   "what": "座敷席の店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-fecc37a9d8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzVKzK8fK3cG6D-XUYhaIgGzDkQTD1uz4yIQn5G-8TjsAQK7JgwINB0xr41d1Xz7JPG3obF9cQVOGyo6sdNXiaxn2x_TN26kYn5iV_Yk9el2NV7dUVvPSJdSIZwk-Na5LIQWuSiQ=s1200",
+   "what": "店の入口の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

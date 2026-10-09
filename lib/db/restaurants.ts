@@ -14,6 +14,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
 import { sanitizeRestaurant } from "@/lib/imageBlocklist";
+import { applyShopPhotos } from "@/lib/shopPhotos";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -53,6 +54,13 @@ type DbRestaurantRow = {
   published: boolean;
 };
 
+/**
+ * 店を返す前の仕上げ: 表示禁止の画像を除き（sanitizeRestaurant）、そのあと、使える写真が 1 枚も無い店にだけ
+ * 集めた写真を当てはめる（lib/shopPhotos.ts。lib/shopPhotos.generated.json が `{}` なら何もしない）。
+ * map(finish) のように 1 引数で呼ぶ（2 番目以降の引数は受けない）。
+ */
+const finish = (r: Restaurant): Restaurant => applyShopPhotos(sanitizeRestaurant(r));
+
 function rowToRestaurant(r: DbRestaurantRow): Restaurant {
   const restaurant = {
     id: r.id,
@@ -81,7 +89,7 @@ function rowToRestaurant(r: DbRestaurantRow): Restaurant {
     highlights: r.highlights ?? undefined,
     tags: r.tags ?? undefined,
   };
-  return sanitizeRestaurant(restaurant);
+  return finish(restaurant as Restaurant);
 }
 
 /**
@@ -106,12 +114,12 @@ export async function getAllRestaurants(): Promise<Restaurant[]> {
     const { published, knownIds } = splitRows((data ?? []) as DbRestaurantRow[]);
     if (published.length > 0) {
       // DB の公開行 ＋ DB に行が無いコード側の店（DB を優先。非公開行は復活させない）
-      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id)).map(sanitizeRestaurant)];
+      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id)).map(finish)];
     }
   } catch (e) {
     console.warn("[db] getAllRestaurants fallback to data.ts:", e);
   }
-  return RESTAURANTS.map(sanitizeRestaurant);
+  return RESTAURANTS.map(finish);
 }
 
 /**
@@ -132,7 +140,7 @@ export async function getRestaurantById(id: string): Promise<Restaurant | null> 
     console.warn(`[db] getRestaurantById(${id}) fallback to data.ts:`, e);
   }
   const fallback = RESTAURANTS.find((r) => r.id === id);
-  return fallback ? sanitizeRestaurant(fallback) : null;
+  return fallback ? finish(fallback) : null;
 }
 
 /**
@@ -210,11 +218,11 @@ export async function getRestaurantsByRegion(region: RegionKey): Promise<Restaur
       // DB の公開行 ＋ DB に行が無い、この地域のコード側の店
       return [
         ...published,
-        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)).map(sanitizeRestaurant),
+        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)).map(finish),
       ];
     }
   } catch (e) {
     console.warn(`[db] getRestaurantsByRegion(${region}) fallback to data.ts:`, e);
   }
-  return RESTAURANTS.filter((r) => r.region === region).map(sanitizeRestaurant);
+  return RESTAURANTS.filter((r) => r.region === region).map(finish);
 }

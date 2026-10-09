@@ -1,0 +1,65 @@
+{
+ "featureId": "炭火の華艶",
+ "dir": "fs-9b96d47bc5",
+ "storeName": "炭火の華艶",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E7%81%AB%E3%81%AE%E8%8F%AF%E8%89%B6%20%E6%96%B0%E6%BD%9F%E5%B8%82%E6%B1%9F%E5%8D%97%E5%8C%BA%E6%9B%99%E7%94%BA1-8-44",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%81%AB%E3%81%AE%E8%8F%AF%E8%89%B6/@37.8615985,139.1222444,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff4cef0db999cc1:0xa5b50b66a66955ce!8m2!3d37.8615985!4d139.1222444!16s%2Fg%2F11bbxn9rrf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭火の華艶",
+  "address": "新潟県新潟市江南区曙町１丁目８−４４",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-9b96d47bc5/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNHhEnCrzxP0ULmO3XszurC-Df3gLBnQqRidnV13nG3DQ4T-TpWAzW2oY-NxWgVIEl3vRU6b9I-IfHACc2BLCy2FlXJaLLMVgmy1AeQllVqHY9U3ad-iFaqG06uEHQcY2wDkrLlJScnMv_=s1200",
+   "what": "焼き鳥の盛り合わせ定食",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-9b96d47bc5/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rlph6AdFszU1n1blx2zpt9E8PIFqRGVB3qHIC8v_rW_FSFeUtuCFr_yDlda3dTlMakbWlpdUTUvmzaTUQaoDN1phnA7B7EJfb7Fd8GK0_5RXogiaf-SlhWq4FDNXGUWfcVbunW82UzLEXs=s1200",
+   "what": "炭火で焼いた串二本",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9b96d47bc5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcEMXanXQsSBaJCsJ8lVNNd4n8SnTtbzQl5oJRJpsvAC3mDWh3bjC3hKn5eQCqSeEY29rvZswAj-1H7JHkm7HhE10Rb0PlOOjbQmocL_gwuNyhtazjjOMMPiIfp5QXZldYuQ5HSQhpTQw=s1200",
+   "what": "串焼きの一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9b96d47bc5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQtAjr_9b4UPyM8y6vW7LZBu6Js3AI4Rd4tCqsGhx5QcGIqGzeuD68qEOppzAZXuZFws7tmoFpPKiG2EzX5JMtM8dUyonjQhK6ylw_9FVHmKrxC1E8hiDh6UvadCeNUR6xvQG08lshZXk=s1200",
+   "what": "カウンター越しの厨房",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9b96d47bc5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMID5uWHa24_VXYAem1i2THknVQ1WdD_h6lnsKA4GgKjYFViBp4tkVZ5e_zek-MhCXeGOKBB17SfxMs4shfcr15t0z6ayzM8lN6T70W9_k0_fxKtOu2SCxxbzHHobH49e1N831OQ=s1200",
+   "what": "黒い建物の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "オーナー提供の7枚は文字だけのメニュー表・貼り紙のため不使用。外観(p5)はコンビニの看板が写り込むが建物が主役と判断して使用"
+}

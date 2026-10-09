@@ -1,0 +1,45 @@
+{
+ "featureId": "エル・ヒラソル",
+ "dir": "fs-8dfd2ebab3",
+ "storeName": "エル・ヒラソル",
+ "mapsUrl": "https://maps.google.com/?cid=10506090719683959055",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A8%E3%83%AB%E3%83%BB%E3%83%92%E3%83%A9%E3%82%BD%E3%83%AB/@36.2901994,139.2434049,17z/data=!3m1!4b1!4m6!3m5!1s0x601ee79df972fb59:0x91cd21d88cca590f!8m2!3d36.2901994!4d139.2434049!16s%2Fg%2F1v75r_gd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "エル・ヒラソル",
+  "address": "群馬県伊勢崎市境木島６９１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8dfd2ebab3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tu970m25Hs7rKd3ClX6cpCM3RMpD8cCeArprywGOvLRn22Sc2u8CG-QSMJ-CF5mLYntcSsp1DUnU4ZGXAX7B5gIHTB_NxokXKJSH2KqgR-eVeM7U1YgUQcEr8qwu5f0TTDFprCeVf_e3uV=s1200",
+   "what": "チーズ入りトマトパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8dfd2ebab3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbkKwY-h6tFSgg8R27hBJJ8ZaXqCGcQJKZmiNDqRWaeS8cprrdCyFDdExOlu_SHeFURsOHOfuBQ0RN3VtyBgD6wNp2GG8aS9jDx6uu5LlOW4gxi1U_rc5tRNbqWaJbJ1z-0Wagww=s1200",
+   "what": "明るい窓際の店内席",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8dfd2ebab3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUDICV8vfiEVZPP9VLGVbCQ3Z8oWbeYAlWzCA93zcRy_E0yciJ7tDNfPMKPXyrgk4J7S0M7hgzzDrWqg0fCnG0nQpVcKTB8eXXM2GvQhkgaMMh8cMeOUD5ZKXOObRbyygK4a0=s1200",
+   "what": "煉瓦の玄関の一軒家外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

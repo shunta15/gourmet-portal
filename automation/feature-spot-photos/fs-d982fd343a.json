@@ -1,0 +1,45 @@
+{
+ "featureId": "コミュニティスペースほぼのら",
+ "dir": "fs-d982fd343a",
+ "storeName": "コミュニティスペースほぼのら",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%BB%E3%81%BC%E3%81%AE%E3%82%89%20%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E5%8D%97%E5%8C%BA%E9%B9%BF%E6%89%8B%E8%A2%8B7-3-2%EF%BC%88%E9%A7%90%E8%BB%8A%E5%A0%B4%E3%81%82%E3%82%8A%EF%BC%89",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%BB%E3%81%BC%E3%81%AE%E3%82%89/@35.847509,139.6361865,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ea716d1b446b:0x2d08c9a16cae8b16!8m2!3d35.847509!4d139.6361865!16s%2Fg%2F1tdz4w37?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "コミュニティスペースほぼのら",
+  "address": "埼玉県さいたま市南区鹿手袋７丁目３−２",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d982fd343a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWaYE7kuHilKebFvvhr8112SVjb6nDsPSo9sifQkWp9IG10yNuAzJKzQmheE4K1JxCGbF5g8z2Dkscks6w7DXmY_aS9EE5oeEIbl_k1NyH5cxRtuOrCeJMbtdYVi6eXD8G3ZQg=s1200",
+   "what": "紅茶と焼き菓子",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d982fd343a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBwbJvrXqUPdEA13brkMICOrmD9dOCV4b1b3__QXfY-mOFJHML60Ymdd5M9-ht7np-h8TF2bpzcjNBm2b329wuOO0gh2sxqZzmSmpkYwwws7234hpdM9InEVcLwQItaMYXHOaNXocprQc=s1200",
+   "what": "大きな窓と木のテーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d982fd343a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCOVvWu20yNkl8peDUJsgbRpxw52uj47BaKEVdscj2anbgxG_EQuwvidk-nE4IcFPZ8mg9NB3GG9T_Wbm8IgN0MgUqqeEFEv_deDVZ5WelVr5_PRJMh0GOxnDL4dMFiFrJp73fPiZ4B_c=s1200",
+   "what": "入口の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

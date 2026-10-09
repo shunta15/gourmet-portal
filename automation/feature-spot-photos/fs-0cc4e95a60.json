@@ -1,0 +1,45 @@
+{
+ "featureId": "shokusha",
+ "dir": "fs-0cc4e95a60",
+ "storeName": "shokusha",
+ "mapsUrl": "https://maps.google.com/?cid=16011325095750324162",
+ "placeUrl": "https://www.google.com/maps/place/shokusha/@35.3337274,137.1215762,17z/data=!3m1!4b1!4m6!3m5!1s0x60036a66827060db:0xde33a757cb7ecfc2!8m2!3d35.3337274!4d137.1215762!16s%2Fg%2F1tdm3n8w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "shokusha",
+  "address": "〒507-0033 岐阜県多治見市本町１丁目８２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0cc4e95a60/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCkSq7drWqFHQhikIXD4wSwJbXvFRY-AABkzGPp8Y0ffAMZaGd8yTpNeKnSDrSkduI4t1wZH-vyo9yzyg7A1Yuk28LJiEEnf7GBRyiq67CbyC0uOa9dGtPryrIB_hUzumnh0jS=s1200",
+   "what": "カウンターとバックバー",
+   "width": 900,
+   "height": 478,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0cc4e95a60/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbO-uoMcWX6EJ8o3veAHm75AcxWI33Me6_DiDoKgfBLCeRs4jaPsaKZSqqMfkcHTJ0ZFWeJq6gg9RVWtuSTqW-c9bd1RWS8bhh4dMSNKUEuaCARbd7S-kCFQsO6N6CmNZ56WUCl11W8mZy=s1200",
+   "what": "定食の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0cc4e95a60/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZILiQV4Cp4nIGP9SJbr-RJbn6zkHKn36qMJH2gXh-t-L6zOzbKXDfroYCqzYrrEb5hS3WWTfZLBkGntTnKzBMc2Jep1KscNyUE3rY6FK5DpYdcRIIsyNAlpKT6A-jBx3Km04Pm3I85Hvo=s1200",
+   "what": "通り沿いの店の外観",
+   "width": 900,
+   "height": 717,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

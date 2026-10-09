@@ -11,6 +11,7 @@ import { getFeatureRegions } from "@/lib/featureRegions";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { isSceneFeatureId } from "@/lib/sceneFeatureLinks";
 import { isBlockedImage } from "@/lib/imageBlocklist";
+import { featureHeroImage } from "@/lib/featureSpotPhotos";
 
 export type TownFeatureLink = {
   id: string;
@@ -40,7 +41,9 @@ function matchKeys(town: string, regionTowns: string[]): string[] {
 const linkOf = (id: string): TownFeatureLink | null => {
   const a = FEATURE_ARTICLES[id];
   if (!a) return null;
-  return { id, href: `/feature/${encodeURIComponent(id)}`, kicker: a.kicker, title: a.title, image: isBlockedImage(a.heroImage) ? "/restaurants/_placeholder/feature-hero.jpg" : a.heroImage };
+  // 一番上の写真が使えない特集だけ、集めた写真（lib/featureSpotPhotos.ts）に替える。ほかは今のまま
+  const hero = featureHeroImage(a);
+  return { id, href: `/feature/${encodeURIComponent(id)}`, kicker: a.kicker, title: a.title, image: isBlockedImage(hero) ? "/restaurants/_placeholder/feature-hero.jpg" : hero };
 };
 
 export function getTownFeatureLinks(

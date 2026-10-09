@@ -1,0 +1,75 @@
+{
+ "featureId": "貝焼酒場樹",
+ "dir": "fs-f54a37cfbf",
+ "storeName": "貝焼酒場 樹",
+ "mapsUrl": "https://maps.google.com/?cid=9586454871923200823",
+ "placeUrl": "https://www.google.com/maps/place/%E8%B2%9D%E7%84%BC%E9%85%92%E5%A0%B4+%E6%A8%B9/@40.60168,140.4713109,17z/data=!3m1!4b1!4m6!3m5!1s0x5f9b01a9c7fa027b:0x8509edea304b9337!8m2!3d40.60168!4d140.4713109!16s%2Fg%2F11k_c3382y?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "貝焼酒場 樹",
+  "address": "〒036-8193 青森県弘前市新鍛冶町４−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-f54a37cfbf/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R22L1GASKbXzgdZtVhMue0LoAGT1BhhN56pT9N-l8VaQIazqMphA5xkBFWlOCYdB4iEzdZ5LQUYKx3EYhDdMAxDJopBeXKpNH3Kn9rPtnPDqJH-dEZrQafRFQghUs4KmiLsoDao14lndJk=s1600",
+   "what": "網で焼く貝類",
+   "width": 1400,
+   "height": 787,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-f54a37cfbf/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tx1GzbU2sAPbuGHVtJTb5LNkERuAFZD-i6EH-b5o_jY9QJFkNck-zBdAL6wpTbrwOwsFFoqgJuA1Wod51kO1TQdFhJ_SbmBw6jQfXcOAMUs_Afoh-Og_AhM1oDfN2c_yGsyp13=s1200",
+   "what": "活貝を並べた水槽",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-f54a37cfbf/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROUdh8J6IYrRLyBBdD974OmMgZaVMohDKpxhewefW3wznqPxiYaeK036BkKb40JLpXd27g_BhdD9urzrc9ogXBJrGxCe8GBItCZRY1KR0yrRj0Fgu9qDD2VnR6X0G9EhOR1RSqUQ=s1200",
+   "what": "ホタテの浜焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f54a37cfbf/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rnke5P-4tFiIDjq_hOQjRtha2Ei_nrXlmrNsLLmE2w3JU05tBXz_Qo2qj_3iJ2Gvawz7r00_sApBjuS7XJysjGs0ATJ055kLzmoLZ7NYKONJTcMGi-wspdt6jb5iRK7tn5FnKSNRIFZair=s1200",
+   "what": "焼き牡蠣",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f54a37cfbf/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKYGGaE6s9yjtbOkUei0vD8XcVHhdhCJl7Nq09Mai0M6f9Vde7QUX5gXM-lsyL7vHSGb00RYZlw-tOAoCSGD3WWFulQKXHQv-dgBhgHif4P2D2RhfIDZ02VPrtqcq59cMj16ZdK-vwsak=s1200",
+   "what": "貝を並べたショーケース",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f54a37cfbf/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TvjiJM_iHylF_ENJ5T6g6E0s9hodnzs9nJGoWwtOaR9_o3VC1BtY0nSZH-8aSFW8bXfk_wIvUfP6Te5s48W2Sx7u8Ek46jud2-YnbvDiqY3ST0DsVSF2060YiKoYMI28YwUt5sfg9_Cm0-=s1200",
+   "what": "提灯のある店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4は貝のショーケースで代用"
+}

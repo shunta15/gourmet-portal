@@ -1,0 +1,45 @@
+{
+ "featureId": "paspa!",
+ "dir": "fs-c4cefb485c",
+ "storeName": "paspa!",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=paspa!%20%E9%82%A3%E8%A6%87%E5%B8%82%E6%9D%B1%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/paspa!/@26.211519,127.6739086,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56916a9fbbceb:0xe3e802f5a8205f5d!8m2!3d26.211519!4d127.6739086!16s%2Fg%2F11v_2q5s19?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "paspa!",
+  "address": "沖縄県那覇市東町１１−１２ 清洲第２ビル 1階",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c4cefb485c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R8xK35ak5tpM-09L7qCc27K79n_p5Hm7zKYEAqKg3fGYQBmvgkB1bNdD6FsDtMJdUhv-D04ABAud-gJyyMSIub7ImqdFIeuPoq4SxTBEf2xIZrSHgll-lO9BWg-OstIQ2fIDzNcRSoRiU=s1200",
+   "what": "トマトと野菜の冷製パスタ",
+   "width": 900,
+   "height": 601,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c4cefb485c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrEQvJLVACUDqklSZ1JQXJ8eTlXrfQbCrcBJZwiNnybNBQxaCpJLyACBc3KBXwVgzZTcH-IQma9k5Dp3VZT5-Jt9HQFwGorrlRpKjTOU2QBa602JKxGEfk-2r8oguMVyCbj4bsfl8Sy44R=s1200",
+   "what": "テーブルに置かれたパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c4cefb485c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Si23Fvwoj8zH5sLUkPPK1b4PW-Hbjr2GMiGhLAW2TYvo1zfqQ29mL28sGNVzDT3CI_3etZ5LZggfIdYMG6Wa2JHGJON0q_681LDV5V8WF-NJZGfzJrI7kKbxQZIQwpTIo3dHFPoTHdUoEB=s1200",
+   "what": "緑に囲まれた入口と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の料理写真で代用"
+}

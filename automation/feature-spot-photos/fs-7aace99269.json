@@ -1,0 +1,45 @@
+{
+ "featureId": "火と時",
+ "dir": "fs-7aace99269",
+ "storeName": "火と時",
+ "mapsUrl": "https://maps.google.com/?cid=17951974094515843735",
+ "placeUrl": "https://www.google.com/maps/place/%E7%81%AB%E3%81%A8%E6%99%82/@35.388743,132.9887231,17z/data=!3m1!4b1!4m6!3m5!1s0x35571700135ea039:0xf922395348a1b297!8m2!3d35.388743!4d132.9887231!16s%2Fg%2F11xg87_s7z?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "火と時",
+  "address": "島根県松江市玉湯町大谷２９９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7aace99269/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tl7Ut_JVQ9GYf84S9vjRa0gw9N5Ap46kswqSAfzjFZL03IfDod3awPzMnx9n_tLIZKokUCVrV-GgJ9ShjYnW0TBjGPl8A20Pqu6_YPz6n3rLMdq8KpqU3XFHcwwLXkSGkg98e_BtVmTZw=s1200",
+   "what": "前菜の盛り合わせプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7aace99269/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGLaYNXWo--w8ZDKoe-7d3gVeAfuDcERs--YCqHCgZZSHnGufldf0sKko2cA3sSwZuaxJZUgiZkMXqrY9VG74j7WDQSa_oPxMelXwoYW9CvgUFChV1_7DsMIGVT0OF1WBomT8pkZIKmOil=s1200",
+   "what": "木の扉と植栽の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7aace99269/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVnQweJg4FSwKllTaTauoIPcPnjk5X-sY4St8diQfjafY7ozWUnfqpaMX5dcEg4kENHUm-JZGpSrGNJE3JcVUA-YnPx72LM8tMv3P0OnTElCzcDasnuLtmsVWTAD5CBWNazB77pxk8V0TM=s1200",
+   "what": "校舎だった建物の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真がなく、入口の写真で代用"
+}

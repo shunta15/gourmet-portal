@@ -1,0 +1,45 @@
+{
+ "featureId": "浜せい",
+ "dir": "fs-e6840e8ae3",
+ "storeName": "浜せい",
+ "mapsUrl": "https://maps.google.com/?cid=8576080637839084971",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B5%9C%E3%81%9B%E3%81%84/@36.4012215,138.254232,17z/data=!3m1!4b1!4m6!3m5!1s0x601dbd5f6704127b:0x77045be6ef810dab!8m2!3d36.4012215!4d138.254232!16s%2Fg%2F11g0m4fj0s?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "浜せい",
+  "address": "長野県上田市中央３丁目９−１０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e6840e8ae3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QifqM3VoeX2C9Db3Sf4QYSDdRfRCExxcxEgO1BYeOmXJK044uhCYUIppq1SJBa5JVCGMkv_zqt63-t7ugwX63lfeNUsGkGKu37NeghOhOBLNshKZcmaWBLqNIWi_lEG1VA-AXN=s1200",
+   "what": "うな重",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e6840e8ae3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QFlwJf47qCm0iMUjrTJcNzT0fHrJ0Ep-3EyeseCc2Ofi_NrLe6FfxYEepJ_Oy1viym4zoOk7bQ1ihlFNb2fpMe7MRWvpO0yX7GySYdM_lPvAngh5jlH_4KKBRrKAf__uz6OS0s4A=s1200",
+   "what": "カウンター席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e6840e8ae3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSYnBT1Vb8S6CJJTQiWy4hosDOkfZvbn9tiJvn3jlK3uUW7_AgauebXVARN_izSfgxMooMWc16INMFM5PPVWHLx6uvADwM_e68xbi0i4msYHhplftpzxZz7-w6VZS69wjuXFWv=s1200",
+   "what": "テーブル席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

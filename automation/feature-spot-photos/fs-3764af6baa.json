@@ -1,0 +1,45 @@
+{
+ "featureId": "かしら家",
+ "dir": "fs-3764af6baa",
+ "storeName": "かしら家",
+ "mapsUrl": "https://maps.google.com/?cid=14804871180732675083",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8B%E3%81%97%E3%82%89%E5%AE%B6/@36.3873896,139.0439724,17z/data=!3m1!4b1!4m6!3m5!1s0x601ef35fbc7bdb5f:0xcd7577e638fd340b!8m2!3d36.3873896!4d139.0439724!16s%2Fg%2F11sckc75k9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "かしら家",
+  "address": "群馬県前橋市元総社町１丁目3−１１ 102",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3764af6baa/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Se_ERLCvE4s1o-rxaPMjh6TfmTtLzh_ss8w3rMYYqt9-GBENLEkKwVG0IX9nj-0oMiF4XNjhOSuBi0wF1MPSAd3OWI25yq1YYP1E1uzDUb1A1ETkBmupn2jnCcBbJtdCZuVVG7YVMsU7MJ=s1200",
+   "what": "焼き上げた串",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3764af6baa/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwsyV_BV0qcH1Kl39MG0dQU7JZxegBjLBdaJQcV9WOlcv2jZZ8VHyklK7-h_AQEKSCL36kQP15r9xN_h5k4I9FGbTCftJHOAYCh0lLiUEjDQ05ZVIYmh9duH9F8SmQIsNH4aDo9Q=s1200",
+   "what": "カウンターと厨房",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3764af6baa/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QqQlFwKSbOUwMQULG6yKD2nl9kVej9jQnujSZhJMooL-OGidrNo5Aks690Rlav9xDZybGw9NKz_vqxgUOyNiG5Fg3pknXSsKY8y3Tx7niW4VUqa6U3njOaZMCefyQlMk__tsc_Gg=s1200",
+   "what": "道路沿いの店の外観",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "紅谷食堂",
+ "dir": "fs-36d39a8d0c",
+ "storeName": "紅谷食堂",
+ "mapsUrl": "https://maps.google.com/?cid=14230597108417676280",
+ "placeUrl": "https://www.google.com/maps/place/%E7%B4%85%E8%B0%B7%E9%A3%9F%E5%A0%82/@35.2966341,139.1355476,17z/data=!3m1!4b1!4m6!3m5!1s0x6019a6bbc6b2d223:0xc57d3cac54efc3f8!8m2!3d35.2966341!4d139.1355476!16s%2Fg%2F1tfrb74v?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "紅谷食堂",
+  "address": "〒250-0856 神奈川県小田原市新屋２３３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-36d39a8d0c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJruf1r6-jUe56h94tWOepb_FGSOUPgx21WhKdZn5MgBCtCRTo5buOy-rSCjDaoffXDu2v-41w1Pjg8hTmVZurmttHOn_V3iYhLnNqR3lVWBsKnabgNRRA7k_jOGJC6BfSDFTHsNL6Bf2l=s1200",
+   "what": "ラーメン",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-36d39a8d0c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SI0VoiJO6yA2qrAJCTiL_Damf9qUFoJsZ3MxQaUYJtfRwlJ_yPDAxTsSG_PehFf1Qn3Lr5wGJ9nxQhnX9SR0rodVkaP8rrgsjMMXoeai6K8I4O-vEKtKgY6iEWNG4sud0eEr8kZhjwUdD6=s1200",
+   "what": "座敷席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-36d39a8d0c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2nM79YgcJ8tTxPH8Ef_dc9AJVMEa3uAPgv7b7g2AcApJ8cxx4DHW5lFwfn3xe0eMD8JWOg_GG6wLD3sr-YU1gHP7AA4UPxN-lju3ZTmZ4gMXUPxnG2W5M1R4pEdMrBZn4Yz2JKTXKGPg=s1200",
+   "what": "店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

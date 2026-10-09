@@ -1,0 +1,55 @@
+{
+ "featureId": "米粉の天丼さんかつ",
+ "dir": "fs-8c0ecf7217",
+ "storeName": "米粉の天丼 さんかつ",
+ "mapsUrl": "https://maps.google.com/?cid=2573236686094727005",
+ "placeUrl": "https://www.google.com/maps/place/%E7%B1%B3%E7%B2%89%E3%81%AE%E5%A4%A9%E4%B8%BC+%E3%81%95%E3%82%93%E3%81%8B%E3%81%A4/@36.1898952,139.3009196,17z/data=!3m1!4b1!4m6!3m5!1s0x601ed9071ae4bf8b:0x23b5f921e5adf75d!8m2!3d36.1898952!4d139.3009196!16s%2Fg%2F11jr89wqvt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "米粉の天丼 さんかつ",
+  "address": "〒366-0033 埼玉県深谷市国済寺６１６−４１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-8c0ecf7217/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9St9VGZE9yLgYmzQg2XHUOI8AzLIvMjDhSQXLcFbnZt0LrGIxKkThO_iCm3CvXvs_dYsQKDUj6zrsncVxJukW7D0y539zFN3Ky0G8kLH5LJAXnZPzChAprtzRzPzdSOw2iRUuly8w=s1200",
+   "what": "揚げたての天ぷら",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8c0ecf7217/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJPMQO2k0m-NIEICvqCSPlcQ0VeFv8r-paZe-9ikVVvsc5Rht1He5d6jzZ8Eh6Gx0nffeoRC3La6p1fV9jMM9h8iaPvzS21nZ0AjDPHU7fQADAFsUb96kfkVNoTWPpF_GPjNTI=s1200",
+   "what": "米粉の天丼",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8c0ecf7217/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TbbU4ReN7HWj_C_XTEwQAEYCBbNlVUUm24UPfHguiTwqKNuTFkGJsMQhV8FXsbsrpRnzdKGHusnP1KFsx0zj1FAYrOi-oo7EihAjnlQ63OvaLVYgU0lkhUxywXQIvVUe5LiWLw9w=s1200",
+   "what": "天丼のお弁当",
+   "width": 900,
+   "height": 673,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8c0ecf7217/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STEqkoxl1kVULBxQvWvT5A_ptWqhzZC7_vGsxJrNWxvrhfZpg37j9Ehrl7VGe3LRFsp5IKcC_VZKrZqYmEWs0e0jQrAQBkyzcAoOAMYEa7uXwUitCldHnUcxKDO7xAI2LC3JL0owb4xWQk=s1200",
+   "what": "住宅街の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

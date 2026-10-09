@@ -1,0 +1,45 @@
+{
+ "storeId": "r275",
+ "dir": "shop-r275",
+ "storeName": "炭や。よつ葉",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E3%82%84%E3%80%82%E3%82%88%E3%81%A4%E8%91%89%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%AF%9D%E5%B1%8B%E5%B7%9D%E5%B8%82%E6%97%A9%E5%AD%90%E7%94%BA18-1%20%E5%A5%A5%E5%B7%9D%E3%83%93%E3%83%AB2%E9%9A%8E",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E3%82%84%E3%80%82%E3%82%88%E3%81%A4%E8%91%89/@34.7629,135.6209412,17z/data=!3m1!4b1!4m6!3m5!1s0x60011f00585d33b9:0x33a44a6e3486bda6!8m2!3d34.7629!4d135.6209412!16s%2Fg%2F11w5bdv72x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭や。よつ葉",
+  "address": "大阪府寝屋川市早子町１８−１ 奥川ビル 2階",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r275/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R14w-6108JKm1od7eht63FrfJYLFP-wAHcPLYxplJSlVHmK8dLl8l67eYy3eWW6WpvrqtPDVS_jbnVWV-jMXh3Dw_UpRkFWrT96CyjYtlMfmTA7mvS6RKdcgyvETR6hkMGAFzDb5eOb0Te=s1600",
+   "what": "のれんのある店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r275/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri11vTseoJL1EzGtNwKedGItvxvFowra8rsgnf5152QT8J130RyMdz2b18qxlXXvNJdAzQywCOGzM78N0Xks-PuNhQSBFyVVqGxa4Dq0B2T2GQSHihttQL1sskAgs7QgavzwO-19GF22JF=s1200",
+   "what": "炭火焼きの鶏",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r275/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyZv4c4Z8MjGOhoY2hG-3o5ev5SGx19dhDDNKaUqE8cVD_KT8xme5wBGsK-eVYtlzZ3vAtt--WTSWZ6_r54SskGvzLQ746imgHgZMrEkVhSkhthMiD3j6q4CndORop4r-vokpXcE5aCExi=s1200",
+   "what": "親子丼の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

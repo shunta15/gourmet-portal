@@ -1,0 +1,35 @@
+{
+ "featureId": "アラモード",
+ "dir": "fs-8005b89caf",
+ "storeName": "アラモード",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%A9%E3%83%A2%E3%83%BC%E3%83%89%20%E6%B2%96%E7%B8%84%E7%9C%8C%E3%81%86%E3%82%8B%E3%81%BE%E5%B8%82%E7%9F%B3%E5%B7%9D442-1",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%A9%E3%83%A2%E3%83%BC%E3%83%89/@26.4235454,127.8248821,17z/data=!3m1!4b1!4m6!3m5!1s0x34e50ff5e331d493:0x95f6d3b9bab08c38!8m2!3d26.4235454!4d127.8248821!16s%2Fg%2F1tmbswhk?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "アラモード",
+  "address": "沖縄県うるま市石川４４２−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8005b89caf/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7RQom2Hnohpnoxdx2yRWSNwAtZx2I8OUTYgGoPhtXj54SnjRzfiJvtAPcYdtekhHV5BEdDZ_4KURsV-HHgFHgdauI45anmnPWrp4SpuyXWbHa4VnmpETPp-ncu0XBppz2o7b9=s1200",
+   "what": "テーブルが並ぶイートイン席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8005b89caf/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S192XQKz83r5v0jCK0OvGnKqXyEC2V-bsvOOmuRYgJsGXDL7T7as4tAU_9lAZx71orN39fmoayGt_Nti7wc8mNc9Dgc2oPUoS8S8LBIYeChVkDMogpBxdX0hb4RKEEeHVSVWkC3PmE9A7L=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

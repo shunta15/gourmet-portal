@@ -1,0 +1,55 @@
+{
+ "featureId": "ManpukuShokudoKante",
+ "dir": "fs-218c8fbfd4",
+ "storeName": "万福食堂カンテ",
+ "mapsUrl": "https://maps.google.com/?cid=7521001346537420573",
+ "placeUrl": "https://www.google.com/maps/place/%E4%B8%87%E7%A6%8F%E9%A3%9F%E5%A0%82%E3%82%AB%E3%83%B3%E3%83%86/@34.8468231,138.2537703,17z/data=!3m1!4b1!4m6!3m5!1s0x601a4f005d545e0b:0x685ff6e06f98f71d!8m2!3d34.8468231!4d138.2537703!16s%2Fg%2F11zkc7rrky?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "万福食堂カンテ",
+  "address": "静岡県藤枝市前島２丁目１−５ 村田ビル 1F西",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-218c8fbfd4/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWj74bKLk8DAeqBq_yAP6igmT0A9snHZQsIojquExUMKOe04AQsmICkfTkf2nfbGVbggTryHdhXSV5lLuT4395J-EUYrvpSJt5B4oxLhA5FLiTwLY2KS-ZTMtrBRuCDJKZEzkftliyX6EU=s1200",
+   "what": "ベンチ席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-218c8fbfd4/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeCY75cwLDB2eLTyHvKcIX19j439m3vcUxQr4F4SzSe90iZ-mJJkyB3msPLhRswcDlfjJDI09-MrAdaz6cjT7_VFGJzKcGwK1k-hcA1rauKckAk1FFgy_FW0_T2pzLD_LLEhbWyOskyHS9=s1200",
+   "what": "ランチの定食プレート",
+   "width": 900,
+   "height": 674,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-218c8fbfd4/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBBLm3u-lCJ4PDZ4zl7JdRc-bvItQs6mh0NDEozL-y-Unz79Y-oRLqwmyGCBieSWkayj1AdR0Pm3hwpujuSveMTcKpTxB3E5mWoGEpGQq9F64HuJKi_7J7H-2M7CSpE9ZdP2lyDcdM5yU6=s1200",
+   "what": "ビールと料理が並ぶ夜のテーブル",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-218c8fbfd4/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QmJcwGhx0e1W2QLbLFJ6JHyqMXmCw6bEeFEBmyNVVTvqbwTtaLiMHva4fi2Lp1GXxVXfmjc_eJtTn7goIk-gLI0uOv6bu5TCUQ3626J2-lJyO2gUVzEr3pS1ve2zVz3ipiaRh-20tZ9J0=s1200",
+   "what": "ロゴ看板のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

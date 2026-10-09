@@ -1,0 +1,14 @@
+{
+  "featureId": "イタリアンバルLegame",
+  "dir": "fs-21b5335d05",
+  "storeName": "イタリアンバルLegame",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%90%E3%83%ABLegame%20%E5%80%89%E6%95%B7%E5%B8%82%E9%98%BF%E7%9F%A5",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%90%E3%83%AB+Legame/@34.5990959,133.7669026,17z/data=!3m1!4b1!4m6!3m5!1s0x355157394eac3f19:0x9ae5c891822fdbcd!8m2!3d34.5990959!4d133.7669026!16s%2Fg%2F11xkl8xycj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "イタリアンバル Legame",
+    "address": "〒710-0055 岡山県倉敷市阿知３丁目１３−１ あちてらす倉敷南館 1F",
+    "how": "search(店名の完全一致+住所)"
+  },
+  "images": [],
+  "note": "写真なし(臨時休業の表示): 検索で着いた店のページ(Google マップの店名「イタリアンバル Legame」、倉敷市阿知3丁目13-1)に「臨時休業」と出ていたため、写真は集めていない。ポイント 3・4・5 は写真なし。"
+}

@@ -1,0 +1,65 @@
+{
+ "featureId": "すし笑魚亭",
+ "dir": "fs-19fc0706ce",
+ "storeName": "すし笑魚亭 / ティーサロン笑魚亭",
+ "mapsUrl": "https://maps.google.com/?cid=3546309453128318408",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%97%E7%AC%91%E9%AD%9A%E4%BA%AD+%2F+%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%E7%AC%91%E9%AD%9A%E4%BA%AD/@34.8955232,136.909643,17z/data=!3m1!4b1!4m6!3m5!1s0x6004842f71a45287:0x313705a89152bdc8!8m2!3d34.8955232!4d136.909643!16s%2Fg%2F1tf28msd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すし笑魚亭 / ティーサロン笑魚亭",
+  "address": "〒475-0927 愛知県半田市北二ツ坂町３丁目１１−９ ポジティヴ",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-19fc0706ce/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQfk7YB0wcRk-PXF1XooH7AzboD2GXhsDRCshKlxt4JaruADaEAORPKcH65F2NAhwWa4v6vGLz9-FJeWb8eo1SeHWetSDQ2KZ6jSh4ItVyPwyFB6l46UmcCVFs9spCPCVCyGJMPeUW2cQ=s1200",
+   "what": "握り寿司の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-19fc0706ce/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TsQgly7v7IuLauqUGqGzmLso7RxRwdFheU4So2EfZh8V5T5tO_Be9Oz-QWZBTR73UFPFRmMUmQ0wHH3ONCzAbFdWsz1O5LvDlXizZpJ0A95DN_EjFlbGplQNE1sNOayadw-JOSYw=s1200",
+   "what": "牡蠣の一皿",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-19fc0706ce/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjDPd0keyTj86DCQknqm-VDSZsH9hzday8kEL1Rzxc9upjgssuogciunZRH6mcQ2u-3Ij8T2YWT281NjjkZCCBTLi1WF2wLYgkX_99w7l-nUN7YI32TAEZ27RNaAKGWvz-ILW3=s1200",
+   "what": "海鮮ちらし丼",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-19fc0706ce/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3ZgZyX_3GO3GcralHQaWEc5ABG89iDilT1RWflELp864khQsVoLZ1JPo9ml0jynrmAqP7gJX_xErow0Q8FQrq-sZbWeQX2a9ifXQJ98mdGROaB768fcAbpjPLMSMFy8UjTBa5=s1200",
+   "what": "カウンターとネタケース",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-19fc0706ce/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRyn_eslhu8dhXpxZQhvAOdujzBtFpJqApfBduGHvpjQpZqW4GyVQqTiQMsxi35VZSSRI3aq2kH6jB6On7Z4bkEsIOx-kAd0aq_6smARRugyO8hZ1472i0uHvq00Qwy0fKscsD=s1200",
+   "what": "炙り手まり寿司の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が見つからず、ポイント5は料理の写真(合う種類が無いため)。"
+}

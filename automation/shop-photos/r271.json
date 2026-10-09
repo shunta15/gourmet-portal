@@ -1,0 +1,45 @@
+{
+ "storeId": "r271",
+ "dir": "shop-r271",
+ "storeName": "酒処とっ鶏",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%85%92%E5%87%A6%E3%81%A8%E3%81%A3%E9%B6%8F%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%8C%A8%E6%9C%A8%E5%B8%82%E8%A5%BF%E9%A7%85%E5%89%8D%E7%94%BA10%20%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%8F%E3%82%A4%E3%83%84101",
+ "placeUrl": "https://www.google.com/maps/place/%E9%85%92%E5%87%A6%E3%81%A8%E3%81%A3%E9%B6%8F/@34.8165047,135.5592114,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e34187fbc1d5:0x2517aff32c4325ba!8m2!3d34.8165047!4d135.5592114!16s%2Fg%2F11k3q4v0cd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "酒処とっ鶏",
+  "address": "大阪府茨木市西駅前町１０−１０１ 1F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r271/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8E5aeCPIVqdbBlLCE-a4xoSPk8qRsezzxBrw4wpZugYKr72ZxAlF2rzSVdwa1XrYH0aPEKswqeVRZYOqFxXDz3CjeTR_0rOm_KlMAVMbyry3BdJ_2Cb_jNHDpoN9h5IF5659fCPrNMsrs=s1600",
+   "what": "炭火の焼き鳥の串",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r271/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rw85vsJ-kA2un8qZUHBGviyJ_pEGH3w-pzIPKIvUlo-OsnK3PDhGxmpeaqlEFyMUg2tqLTxn4Uwe8kgPjebV484Ud_mHaSb3GldHYYca3qrZrAzbAqM4XsZbOt9ckYEcVwUk5x=s1200",
+   "what": "看板の並ぶ店の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r271/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_fE6G3qUGK6yG1cw6LgMOSF3zH48wnvfP9B-8so75Ldpyfmg7ZP6fV40gG5nO3W-1YHxVUnfxVWtcFPNOCULx0gnGFKpTvP2YBEr302RvolxhOWfC3zo2Tz4idovPAuhtWyUbefdMweHZ=s1200",
+   "what": "壁に飾りのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "Google マップの住所は「大阪府茨木市西駅前町１０−１０１ 1F」で、記録は「西駅前町10 グランドハイツ101」。番地10は一致し、あとの101は部屋番号の書き方のちがいとみなして通した。"
+}

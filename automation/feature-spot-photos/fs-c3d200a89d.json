@@ -1,0 +1,45 @@
+{
+ "featureId": "GOGUMI.",
+ "dir": "fs-c3d200a89d",
+ "storeName": "GOGUMI.",
+ "mapsUrl": "https://maps.google.com/?cid=4366459435949012192",
+ "placeUrl": "https://www.google.com/maps/place/GOGUMI./@35.0075051,135.7636397,17z/data=!3m1!4b1!4m6!3m5!1s0x6001097950dd8b8f:0x3c98c7b8f5e4b4e0!8m2!3d35.0075051!4d135.7636397!16s%2Fg%2F11nq1m76wb?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "GOGUMI.",
+  "address": "京都府京都市中京区堀之上町１０５ 2階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c3d200a89d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBdky_J4eaHFHZpN6qPDwuBLLyo0ZhBvDjgnq1q1TzIWXVbVm0mfXjPStBnabZwdjJiGOtx8ehQPEVpxE0jidNdyOzkaSzHzUAdx7SGr7pZcaIdX3awiKBeqPOs_oJ2gJNA95lVwFbnK5H=s1200",
+   "what": "コンクリートの壁の広い店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c3d200a89d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TpuWPiOv6gP2Cum3PqQBsc55-UOoXTUGIdk8sssNgA7XyGdy-UMIQkdWY3vjEyoyc-8W4Z5m0hhcaTYtfMzWwEnTlv8w-ZoHnS0HzuX5xs5cGbwSgY61mBAKfHoNsv8S18aEMRifDrQIU=s1200",
+   "what": "ドリンクと甘味",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c3d200a89d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnGUSHPTcLGLw2Rclgguk8XaGmSAMQHZGPf5ZPLvC_MEX8AE_G2Y6RaLxRKXlNbDyP8vrzYKfBGnaEorcNgHqSdL2IxY8aed-cAq6p-VjVW8UrhHNXRB532nposGxVlwJBNCpGwQplvUlf=s1200",
+   "what": "木枠の扉の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

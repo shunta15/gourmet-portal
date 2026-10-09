@@ -1,0 +1,45 @@
+{
+ "featureId": "飛騨あっぽ",
+ "dir": "fs-016d184aa8",
+ "storeName": "飛騨あっぽ",
+ "mapsUrl": "https://maps.google.com/?cid=16781572886831884304",
+ "placeUrl": "https://www.google.com/maps/place/%E9%A3%9B%E9%A8%A8%E3%81%82%E3%81%A3%E3%81%BD/@36.143009,137.258869,17z/data=!3m1!4b1!4m6!3m5!1s0x6002badb985f5605:0xe8e41fa0c3f0e810!8m2!3d36.143009!4d137.258869!16s%2Fg%2F11b5pm1v4s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "飛騨あっぽ",
+  "address": "岐阜県高山市上三之町５２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-016d184aa8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtyXQgS0_BawEHqr5SWVmyhS2WozEyc22dHB0lDXA9v6uDLbo2X3nz6-KLTpl0DOKElRDdKi-6lgfPSHyi3YynQaEuPr4I7ZVjmL2zQJ-USrUmE6mQC3ltYOe1gJPe2mvEUaXv=s1200",
+   "what": "中華そば",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-016d184aa8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0sPtzH7XFNAUqE8djpNL3HvLoAVTng6YfoTimDUl98wdvZmsZ2qmhnzgg1fZPOJsm1riZjnMeIp6DIkhOXfP5E8v9gTMWpIK7SlZr1R1Nu1nHSXN9dvE31HI715vkHAdlBEx_dVkp1Ko=s1200",
+   "what": "串焼き",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-016d184aa8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tjjwt6unW3C3LWf9hPQsGaCSfxfesjds3BwyRy5cZ5UFrcriQA36jbQpQoOfSboZDYz03si3tVMRQ6H8ysLOBa1MClDEak-0L7VX7Cu3gbBNpwE7yPwxJnrzRMlsDpDTNgBzPLSYVcLas=s1200",
+   "what": "飛騨牛の手巻き",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観写真は大きな「別館 まるや」の看板が主役のため使わず。p4(店内・空間)・p5(アクセス・立地)に合う写真がなく、料理の写真で代用"
+}

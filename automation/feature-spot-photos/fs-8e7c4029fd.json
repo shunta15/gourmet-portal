@@ -1,0 +1,45 @@
+{
+ "featureId": "CAFEDEFLEUR",
+ "dir": "fs-8e7c4029fd",
+ "storeName": "CAFÉ DE FLEUR カフェ・ドゥ・フルール",
+ "mapsUrl": "https://maps.google.com/?cid=16265412332177274340",
+ "placeUrl": "https://www.google.com/maps/place/CAF%C3%89+DE+FLEUR+%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%89%E3%82%A5%E3%83%BB%E3%83%95%E3%83%AB%E3%83%BC%E3%83%AB/@35.3217464,139.5523791,17z/data=!3m1!4b1!4m6!3m5!1s0x601845c1221493e5:0xe1ba5a5698af35e4!8m2!3d35.3217464!4d139.5523791!16s%2Fg%2F12qg_9m1_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "CAFÉ DE FLEUR カフェ・ドゥ・フルール",
+  "address": "〒248-0006 神奈川県鎌倉市小町２丁目７−３０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8e7c4029fd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSQdgEpsxOrajZONCW3K4ZFEEDeeGxb3RcslR65xLIwHwDAtnFdaWFcCJAXtxzbmJEdZ78dUV2G-JvpvelpviQw4C3YJPX-7wUqLywOwFhnffRTrjTAg0Kux6kpIUTbPEVZxAmer9lhvPs=s1200",
+   "what": "パフェ",
+   "width": 900,
+   "height": 674,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8e7c4029fd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnayR21-u2y9J0W2yb_juB8ZpLLFSAfjNRwHR92tVfBIsif1IUUjsSv1GrBvV4F7X5dMZaMcikKhqk0qmF2jAB1wHzHQjbRCRJh5zFnlUqMgzPzNQXXT_nUg9mDxRoCb_SkqetCA=s1200",
+   "what": "テーブル席が並ぶ店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8e7c4029fd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri8PCNn8Cm0Gu5xHL15JrMawkWNPK8BmWoaPkEZfk3kKJglSPXL6SrD3iTBGduGzWSyYZAzXIyPcKWZgx5TX0hrwqDyUARpZVrp8q44zqwV9VwVDm6WQ-RTKp4Sh7QAdfBygrwCstLUNI=s1200",
+   "what": "日よけのある店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

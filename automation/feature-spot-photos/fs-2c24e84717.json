@@ -1,0 +1,65 @@
+{
+ "featureId": "味感真寿美",
+ "dir": "fs-2c24e84717",
+ "storeName": "味感 真寿美",
+ "mapsUrl": "https://maps.google.com/?cid=9852904218382959583",
+ "placeUrl": "https://www.google.com/maps/place/%E5%91%B3%E6%84%9F+%E7%9C%9F%E5%AF%BF%E7%BE%8E/@34.279296,133.780161,17z/data=!3m1!4b1!4m6!3m5!1s0x355162976a9574d5:0x88bc8c2f06aa03df!8m2!3d34.279296!4d133.780161!16s%2Fg%2F1xcbmfn_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "味感 真寿美",
+  "address": "〒763-0051 香川県丸亀市今津町５６６−５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-2c24e84717/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SD6_PoXjHCM2ZPDjWbrdJmWPbLRXvywl2uJT_erlvdXXC0HhEB1N7SYl52SgwVOrEvJu9W95kG7-cEskWZIOJZfZMel5op2flXfHTS9r3Y8ctFt4lQuigfFfcuI4d-BqZYU0csdQ=s1200",
+   "what": "骨付き鶏の焼き物",
+   "width": 900,
+   "height": 596,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-2c24e84717/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHNF1xaGBX-_cdju10Qgd6k2vD9zXRs7NRIV2UgP9SXYAGcdOuTn9fscFMoYEcm3LABzAlWm685WVu8LR80thc5yhuZqOriIalt_lNLXloPUiNirnXHWwCzUeJ2EGElyW8HtvwCA=s1200",
+   "what": "小鉢の並ぶ御膳",
+   "width": 900,
+   "height": 596,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2c24e84717/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sg5IJSW8L_RvdvpuQriX51YRe9JVZhQXW9DgJJSWbgsgoBOpXUxUnQlhmy7ZgTFB56MTXkw28hIr21cq2SpDhlJpiZPE0VdzHgtCejr1ClBmndS3hZXjbKs2BGgdYT9ba_91gN1w=s1200",
+   "what": "座敷席",
+   "width": 900,
+   "height": 596,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2c24e84717/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyHAXaotyNJLiTdOlErf-WTPfYOZ6sedbhDO_ImxoHX0libyvPpKLphdpWJIP-4JV60gw01cJnx17FP3RimLCzgOl8wX2o85izF2z8qx4Hw2JwbyinXwpH8HOvePyrMNMzTmb3=s1200",
+   "what": "駐車場のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2c24e84717/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVIbRdD8z6DYJB2TgNN00JF4GIx-t_gTeSOrxOSE--sKsidzHp9QFt6SJt9xbHae19EvaX3J0I8lB0g_OZGV82Q5_GPgcS0H--XtNXKYlAPK8u5tGXYXQS8paHDQ9NdMkyncK04M0l3h28=s1200",
+   "what": "刺身と天ぷらの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

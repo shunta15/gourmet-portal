@@ -1,0 +1,65 @@
+{
+ "featureId": "taracafe.",
+ "dir": "fs-aacb85b601",
+ "storeName": "tara cafe.",
+ "mapsUrl": "https://maps.google.com/?cid=7509372445067718435",
+ "placeUrl": "https://www.google.com/maps/place/tara+cafe./@34.8316603,137.2051027,17z/data=!3m1!4b1!4m6!3m5!1s0x6004c1e432fbd95d:0x6836a673d25e2f23!8m2!3d34.8316603!4d137.2051027!16s%2Fg%2F11v61m_jxl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "tara cafe.",
+  "address": "〒443-0046 愛知県蒲郡市竹谷町内山６６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-aacb85b601/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Se4ufZUaXzukVsjSapCO4o2nwz3ocnf8hKaK5QCrxdv9_lyHDpyXHWDLUc2_wFkuxC_bdz0EZ9OGJ2_44PBYtHj_GAYAteuoDF3JiMZ2M5CfcjpPrF3wYXekiD2j6Tt53ofw_RqloNspKK=s1600",
+   "what": "丸太小屋風の建物とトレーラー",
+   "width": 1400,
+   "height": 1051,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-aacb85b601/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLB_98nKD27EnmfQIIn9fLqNuCAGbzsL4KqR9XRHJbhloNerVGtfaKBscPan27sM0ZTehRaWXfJbS1cQfHoVZfhg4Et1KtpjhP75SK39879pDkvd0q3xB7Ygz8NT2NlUlT4-2wR6NDB0xZ=s1200",
+   "what": "バスを改装した店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-aacb85b601/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TmxdhEBXFGe9hTUvhxSNBq_MKKCWVQYv0HVB1yhlmMsoJ1INKYSDC3Vh8J4IzkoSZSqGjjwnjlGm0VYABcMQLLtKbOUpq1jY9CaMQRnRY1c8MJdIfDb_SzFpIl6T_-WEZs6SXxxEAm9ewF=s1200",
+   "what": "チーズケーキとコーヒー",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-aacb85b601/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0XpIiSoC17qKS-J0_e8mBpMAJuIcgGvS4tecxK_dum2-EVruhQ_LfOs894zli-1ZpIwLqGODNZVv1_JUu5yowxXmSPZB2ddB_WeV1yxMAOfPfhYFxWJY-RKUcSP4fa9DYu47t7jFwC1TV=s1200",
+   "what": "屋根のあるテラス席",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-aacb85b601/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBTsdzqLRTzr-dHdNiq5Nv7pXb3n_ax27Q1FzkGDTm5TOku1gl4AoZbLww44rhp3zKFLdd8YfFv8FOVsQGHYXANGpNdXbuoeYXXQK27CLda2itnzkyVa_Btx2i37P12zHVGRP3MVh9Lbtn=s1200",
+   "what": "丘の上へ続く階段",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

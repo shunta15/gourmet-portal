@@ -1,0 +1,45 @@
+{
+ "featureId": "かじゅある割烹頼みち",
+ "dir": "fs-b4a251d226",
+ "storeName": "かじゅある割烹 頼みち",
+ "mapsUrl": "https://maps.google.com/?cid=14497864887408328291",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8B%E3%81%98%E3%82%85%E3%81%82%E3%82%8B%E5%89%B2%E7%83%B9+%E9%A0%BC%E3%81%BF%E3%81%A1/@36.296152,139.3607854,17z/data=!3m1!4b1!4m6!3m5!1s0x601edf867b23457b:0xc932c34d5794fe63!8m2!3d36.296152!4d139.3607854!16s%2Fg%2F11cs1spdtz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "かじゅある割烹 頼みち",
+  "address": "群馬県太田市西本町４０−１３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b4a251d226/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TbrTIux7EuwqdeMGC-CgQptdTMTc66cJWnqV47_f8Yzkp6geNWjiO6ADGCGhNwhU0AwJTYtYEciahPXBGW9G-mMbjh9FWk9LQVxK19-Njxu_F0r7wiB9d7CDUK7QiOt4gsQrRdmAVJ7d8A=s1200",
+   "what": "日本酒が並ぶ冷蔵庫",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b4a251d226/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyuF0XFCpKAPMpqJHm66I2PvY8bX-8plexddnVoVGOdg4zsUYBjQDi_oNvA5UpZmffyap8b9OsqARPq9unN3EEJJqXOW3PzhzA4vmWqTzJ4Ix1_mKdoRhvshQLBO-yoELM9EOu=s1200",
+   "what": "座敷の個室",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b4a251d226/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPCF8ZSyQb45cnEoW6t8LP9cj6joxm8RvL8teBO1Ue6srG9_a21wF10F9JH6l7y74vOcn8nkknDom5j_nPzU4I9u707Un9JtgYi-7PK11fHpuRkAbjOOi3nfMS56B86TLBPYo=s1200",
+   "what": "和風の店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "storeId": "r269",
+ "dir": "shop-r269",
+ "storeName": "くしや鳥時々",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%97%E3%82%84%E9%B3%A5%E6%99%82%E3%80%85%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E6%A7%BB%E5%B8%82%E9%AB%98%E6%A7%BB%E7%94%BA12-2%20%E8%B0%B7%E5%8F%A3%E3%83%93%E3%83%AB%201%E9%9A%8E%E5%A5%A5",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8F%E3%81%97%E3%82%84%E9%B3%A5%E6%99%82%E3%80%85/@34.8504262,135.6196016,17z/data=!3m1!4b1!4m6!3m5!1s0x600103e3bc5393d7:0x37e4019b6689954d!8m2!3d34.8504262!4d135.6196016!16s%2Fg%2F11r3gycjrf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "くしや鳥時々",
+  "address": "大阪府高槻市高槻町１２−２ 谷口ビル 1F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r269/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuTBRP3TYVHcqVZ--6tVwsKEVim2iVb9eNkq6y73dlaxmPT__NXyRjgiXtH1dXM1du_PXx0mGQujOsCJikHDU_fIWKBfJrBpfyMfIqDecNKw3T7KXu5qGfTrBPFqjTIz4IVGvjAg=s1600",
+   "what": "オレンジの庇の店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r269/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxaUDvuFswS0otxJjqbnzSH_AfdSsezD06qvYJxztogg9IboGdCQ9hsIHK-fEkImfovzEJIRgXz0tbL9gG4anzfX_1v4-AEuoUBY2L_Qg5sjB2s8drLGPwQKjPBKef3SucAyY7fLHak1M=s1200",
+   "what": "焼き鳥の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r269/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TqBIjiNdZxuwzgAnuUNZZilREwUPdoR7oV-7qdnBipGeGWvgdUcxhIfy5XfoDo7AOVXTw76xqy_u7XP4bSXEnotw4QzrjqTQkcTEtg9xs5p-KK0RZAONcKsXkEmu79pPejTjXrI9_wnh6K=s1200",
+   "what": "カウンターのある店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

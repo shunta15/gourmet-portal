@@ -1,0 +1,55 @@
+{
+ "featureId": "ままん",
+ "dir": "fs-7df86e73ca",
+ "storeName": "ままん",
+ "mapsUrl": "https://maps.google.com/?cid=2941700256415563480",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BE%E3%81%BE%E3%82%93/@35.2249647,138.6118163,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd16f719b9ad5:0x28d304cc23533ed8!8m2!3d35.2249647!4d138.6118163!16s%2Fg%2F119v1z479?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ままん",
+  "address": "静岡県富士宮市大宮町５−１７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-7df86e73ca/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWj8IlFZAFZdqz6B5SysdxWzeDJN7TF53rMRXGwN1HDFQS39SID_cy_krnL1OGfq7Od-IUm_ICWHvGzyL_acH7S5sYny_H0J7DRd1jdMpbsbjtw24FuudP9Irk6I8dduTABi2S=s1200",
+   "what": "燻製の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7df86e73ca/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6jFzFZy5irLcWpDcTreGQcMte729M5Swb1EJ6xhCx-TdsSyn7rvykRKlvzybsY_4mB8xdGSLwHtOoZWnN5JJ_WyvgjbyfvsX6AhyxGbyyCNktiCsTVuU4jzLgGBuAGId3606-MqzIxYus=s1200",
+   "what": "オムライス",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7df86e73ca/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMGWGrSzSLdw8DezetlnRlHA7NDH-mmj8wdgDBjmexUW7r1hQjoBlxGaN7iTjtK2zBk2oi37OdAIZrQOrFMRlHmrOPDsAXj_9XNI-BcaAf0eSlowftc-yFprOGvYhTRrpWnmug=s1200",
+   "what": "テーブル席のある店内",
+   "width": 507,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7df86e73ca/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QS1DqR08yn4GmzmAi4WOkM7IAI1GC9ni1jIDx1LSgGnuccFGjAYNcDz3gSGRWoI-DeJFeena9M4Fwmd5cR0hARPj-XJAehiFRiYceYh6oNB_KHnOaHCVph4dzoGUqxhC4GA3Y=s1200",
+   "what": "赤い庇の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

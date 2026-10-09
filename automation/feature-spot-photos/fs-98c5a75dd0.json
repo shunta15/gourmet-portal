@@ -1,0 +1,45 @@
+{
+ "featureId": "飯＆酒シュビラバ",
+ "dir": "fs-98c5a75dd0",
+ "storeName": "飯＆酒 シュビラバ",
+ "mapsUrl": "https://maps.google.com/?cid=16165481149543668337",
+ "placeUrl": "https://www.google.com/maps/place/%E9%A3%AF%EF%BC%86%E9%85%92+%E3%82%B7%E3%83%A5%E3%83%93%E3%83%A9%E3%83%90/@34.849587,138.2485792,17z/data=!3m1!4b1!4m6!3m5!1s0x601a4fdc11c53219:0xe057537505d2da71!8m2!3d34.849587!4d138.2485792!16s%2Fg%2F11zx93v0z5?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "飯＆酒 シュビラバ",
+  "address": "静岡県藤枝市駅前３丁目１３−１ テナント北島 A号",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-98c5a75dd0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQw1O7U7_MnKy6TkeUORjvKudiIg4NnvAJ0P3C4-4HXPdIkG6qOJGcUXPoBOYgQU1ZRcbV63aJAxs-y4U_KE8CbwFZQZ9sTGdi8FNufw6mZD82ac7_fDHzdfOkGV_qs2FDbc1RkxyiudPw=s1200",
+   "what": "瓶ビールと料理の並ぶテーブル",
+   "width": 600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-98c5a75dd0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgMZoOtO9_L1SMV_4olzEMA5F9vYM2goI6LB_l5U2tDiSO_F9KtbyIEJ9K4C-Aag_afHNTJmQatvDx5eAmbXs7hG1MplUshXOYH4sMeKMd6J_ta4x1INOp4PKyrcbNekArnY91d2XKz6Lv=s1200",
+   "what": "スツールの並ぶカウンター席",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-98c5a75dd0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1DuAARfK5z-BNgNmq4YSHN-ntH71Acq2cFk8z6iXT0lZFydTomOZTcl_eh5bP5BXof2H76tA9XQaTkeYJ5Gn2WPNQm8zZE3Ki68bhpRrXWUMbNbWblXNuH21KKb5xRldwvQhajnvcwd7h=s1200",
+   "what": "黒板の看板がある入口",
+   "width": 600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

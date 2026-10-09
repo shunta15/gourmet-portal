@@ -1,0 +1,45 @@
+{
+ "featureId": "延喜",
+ "dir": "fs-ae2d92fa98",
+ "storeName": "延喜",
+ "mapsUrl": "https://maps.google.com/?cid=17947847129531660510",
+ "placeUrl": "https://www.google.com/maps/place/%E5%BB%B6%E5%96%9C/@35.8681917,139.6124367,17z/data=!3m1!4b1!4m6!3m5!1s0x6018c1d5788d4bdf:0xf9138fdf5ebfb8de!8m2!3d35.8681917!4d139.6124367!16s%2Fg%2F11jfyd_2rp?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "延喜",
+  "address": "埼玉県さいたま市桜区上大久保５７６−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ae2d92fa98/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qe0K2Wm0L26o3poGzYP3Rj1g13VYawdXfY59HD6uOqXzxIdr1URN770LoytmInLp12Er9bN8S8rKO8naZ0jFosfoJXjSc_6imIsYBRsYtKj6i0rkVUh2lIF9WAPBTfaHxBznO0=s1200",
+   "what": "煮込みうどん",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ae2d92fa98/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QicWvChWuZuAhKHvhqgr-aCC9PndiGuA_kzj6ni9-6K_xj6ka7lOXFpFcX5RrdUEvAjevbYBmjJXEU96jH1yVVE_D7S0rwwlCKQqOMDthWRawxZAP2ncHhQdskpjB58jjNz41Kwgb-lQ0=s1200",
+   "what": "カウンター席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ae2d92fa98/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkMHcBebQV4MxXgyeWGF0p9Ad-YsuRcEvR9nRboa1vKTHmEPCaM6nNY2Z1AnN1T-A4y7LYk6Jj5hywTq1IN_MDRDemTrnb8-Slp-NjqaPgRXAFwPO3RSNvN0AzLTyxYecmZdb3v_nH62J4=s1200",
+   "what": "店の外観と入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "かき小屋匠ちゃん",
+ "dir": "fs-6801ba1797",
+ "storeName": "かき小屋 匠ちゃん",
+ "mapsUrl": "https://maps.google.com/?cid=5245997930623989536",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8B%E3%81%8D%E5%B0%8F%E5%B1%8B+%E5%8C%A0%E3%81%A1%E3%82%83%E3%82%93/@31.7223081,130.791741,17z/data=!3m1!4b1!4m6!3m5!1s0x353efb51607858c5:0x48cd8752cb46f720!8m2!3d31.7223081!4d130.791741!16s%2Fg%2F11b7010yvr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "かき小屋 匠ちゃん",
+  "address": "〒899-4314 鹿児島県霧島市国分川内５１３−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6801ba1797/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKBEi3R9iMNWgQyadABNo-frssb-OQY5MUiMRKzkcaqHQIk0FPoXBnexu7QmI3okSGKsaYunGf3jj9O4qvLWGnZIPrd_DJ-YmpmI9SpcZbqzAnYMkJHysCZ1ndVTJveUjqGbtXLpgm5aty=s1200",
+   "what": "網の上の牡蠣と貝",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6801ba1797/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBKw8ZbKISkUQKW-N6OY7Q4oYl0ayuSZ5PFKK61_witWRVJeK9ngbbolNSg21J0R_SGDBp3bl4k6YNRpqpoAF6UfOdNL1GcNMSfq5xjXAGA_7KGQ9tPCxwG7JLv4GScBFu3kbB2A=s1200",
+   "what": "ベンチ席の広い店内",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6801ba1797/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SgMcBDbsZpdaunu5zAMyaqpKPH1ucGNwv1GHIcJYB32PHvT0jvwFnxYdS6TuGPknZXb7iLQNl4NmDZjiVBbbQUQ8s_h988qR3vGbG4fyAPi42kN8ZM5G7d9jMUH-hf7A2b0R9j=s1200",
+   "what": "青空の下の店の外観",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

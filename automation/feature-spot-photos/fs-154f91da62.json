@@ -1,0 +1,45 @@
+{
+ "featureId": "MENRIN",
+ "dir": "fs-154f91da62",
+ "storeName": "MENRIN",
+ "mapsUrl": "https://maps.google.com/?cid=16301713847031387109",
+ "placeUrl": "https://www.google.com/maps/place/MENRIN/@34.6227621,136.5162109,17z/data=!3m1!4b1!4m6!3m5!1s0x60046d6acffed385:0xe23b525faa5f53e5!8m2!3d34.6227621!4d136.5162109!16s%2Fg%2F11x0r7hr0n?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "MENRIN",
+  "address": "〒515-2115 三重県松阪市中道町５３０−４ こむぎむら9号地",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-154f91da62/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rn5X4zy8DJ80gmKCkZ3SeV1CrWbCUhjocfpS7mpv_2PJZpUBV4MwCVyccOjFDbduZrbfMLjKT93dINae0dSpT76PrR9f6EsbbW-O4-7ttwZ15p2bmedPXEDLpXb9sXgVxzN23h_nBo1fQt=s1200",
+   "what": "ラーメンとご飯ものの盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-154f91da62/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROK1wdKD-f3tKGNxISpGKK0tF376i5xb3iTC_q0cWae2KWxPCwKs_WaXECFrLJedkmssSDbBBo02Ekjr2idEfo2UiaH2d9X_RWyjJcB5MD9-vj_e0fal-SStCHw5da6G2Q8vVFimkxhLjS=s1200",
+   "what": "カウンター席のある明るい店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-154f91da62/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4cK_zjLZSZjPDWUhttMyD51RSFOM3Y4Obl31O9XQ-WZV0Or3XP4wE_m1HFSHioKKtS1mxq2Mli5gif4d5JK_79UCG1U4Vzp8V6uUCKrE2AJKA0zrbpDUOjMYUMcXDWPWdkyj_sqhWTO34=s1200",
+   "what": "駐車場に面した店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

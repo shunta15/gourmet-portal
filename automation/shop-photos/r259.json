@@ -1,0 +1,45 @@
+{
+ "storeId": "r259",
+ "dir": "shop-r259",
+ "storeName": "京料理うえの",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E6%96%99%E7%90%86%E3%81%86%E3%81%88%E3%81%AE%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E4%B8%8A%E5%BC%81%E5%A4%A9%E7%94%BA427-2",
+ "placeUrl": "https://www.google.com/maps/place/%E4%BA%AC%E6%96%99%E7%90%86%E3%81%86%E3%81%88%E3%81%AE/@34.99994,135.7786948,17z/data=!3m1!4b1!4m6!3m5!1s0x60010905b99ccec9:0x217f53080592c653!8m2!3d34.99994!4d135.7786948!16s%2Fg%2F11jmxts__m?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "京料理うえの",
+  "address": "京都府京都市東山区上弁天町４２７−２",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r259/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-eEc2ZrLPDSJL90EWxzEluRK8TiVKUMpmEKwYIdtZxcVuRFaVXOrTF-y6UqpRUWHbiOx-GxA4edK7Y1b3L0921YVby9GS_neIjCDOm247n5jTcMySO3p2Hzoc3oxQ-iDAFjArGTbmhYo=s1600",
+   "what": "のれんのかかる店の外観",
+   "width": 1400,
+   "height": 787,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r259/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyG_kSpIh2p-D4DhtVLnytPTZVXt8W3ovgucOYNXLnXL7lYQEeZphx_LwGJricIY1a8guzeFNWDgNWMvhdYgjiC6l6EBhvaL957RT7bfk-b2IsqgtMNSHr4hkXuvc8cbuCe7NB=s1200",
+   "what": "彩りの前菜の皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r259/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rqj8w2geY8Il0RnkZthFnq6XNcu9LhLoXypyX9YvFrqs6YWrkPDftyzO24iO7SiMfhnq7EFGEkb7MfiUGeh_KI7BT-4L2oVgXQGIi8ih24PdMPgi5rV8AzgrBuW3KUuduvh1a5=s1200",
+   "what": "座敷の個室",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

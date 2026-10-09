@@ -1,0 +1,45 @@
+{
+ "featureId": "味匠弐",
+ "dir": "fs-c3b706bcdf",
+ "storeName": "味匠 弐",
+ "mapsUrl": "https://maps.google.com/?cid=9125758856749032016",
+ "placeUrl": "https://www.google.com/maps/place/%E5%91%B3%E5%8C%A0+%E5%BC%90/@34.7534953,137.9626586,17z/data=!3m1!4b1!4m6!3m5!1s0x601afa57c82b5c41:0x7ea535547266a250!8m2!3d34.7534953!4d137.9626586!16s%2Fg%2F1tf31gcd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "味匠 弐",
+  "address": "〒437-0039 静岡県袋井市愛野東２丁目９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c3b706bcdf/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNBCOKS9JEMtj2FWpmeC7nY9oxupeJ4vvH6bp1KgrnHTw5HkNnjv6UM4iU2a_0-_xPNbvDEQ4mek3-MbU_PAyh6x63DcWd5zO2JuoNjIeJVP1XMOVzqaOWCY498dMttm7bQrgc=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c3b706bcdf/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2MKht7QaN29LVYrkTkarp0HkwqLnDTEvdHx_P3MqzhkYJoveung_ofGxj7vODjHwi-w_QqQIc7QBNXx0csaOsL1BRD8Q1ZUgtbCLk2OQtHFP8zCXM5xX9dFzmx1kKv2eUl8-4EA=s1200",
+   "what": "寿司とお椀の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c3b706bcdf/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_ZO3We2r5fdFp6Hs_vV4rILtfS60JIz15ZnEoRKcP6Hw__kFra9qO4PeqwtfA--XvUs--7zGyj-RLYSyjHODdQsfs6GZWr3q9rTaVyq0M155ediKcNV6mx7bDELm_cLMscx2hEQ=s1200",
+   "what": "夜の店の入口",
+   "width": 900,
+   "height": 507,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、slot4はテーブルの料理写真で代用"
+}

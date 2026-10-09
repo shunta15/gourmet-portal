@@ -1,0 +1,45 @@
+{
+ "featureId": "ライブカフェNobodyKnows",
+ "dir": "fs-97c31a4942",
+ "storeName": "ライブカフェ Nobody Knows",
+ "mapsUrl": "https://maps.google.com/?cid=11849198917366485001",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%AB%E3%83%95%E3%82%A7+Nobody+Knows/@34.2440253,132.5638473,17z/data=!3m1!4b1!4m6!3m5!1s0x35500927a9018e67:0xa470cfa2b6929009!8m2!3d34.2440253!4d132.5638473!16s%2Fg%2F11mzkjgfph?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ライブカフェ Nobody Knows",
+  "address": "〒737-0046 広島県呉市中通２丁目７−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-97c31a4942/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPx97rjHOl76UHyb33STID7LY6fY86u6PLoVdygux13fODCChjY-XNi3QQFwqk7hJiq9WmtOHd9EsalAs8YNGfXndylLADd7kO5vem-MyUpJSD9gRcUiTNmz27sJEUkPdnsUuFAvdREpgi=s1200",
+   "what": "トーストとみそ汁のセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-97c31a4942/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFrhXUQ2cT3iZtA3F_JOUNTkN0Bxe5rAES7BNVpJ2gXgjntiLTV6-AAg4ZGu19tcLV7r9K5VzXbPuoE3hHwqyE9EWLbCB9HFVDsmpvAeqEJssgERv7es1iDsP6q0ZKbRNxtzxVdLdEIf-m=s1200",
+   "what": "楽器とスピーカーのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-97c31a4942/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBphaHVZNz6p7u7gBkgcTLYHt0L_SYT1YfjJJ3X2LWaqaCg6yO9xnNOOLRkAk2GuLhJqdTtfxZDEFA1G78l9WNrtf05xibo64OPRwjE9vtyWCdHdU_AjbLjHG3UlnnktbIAzfj7oNg9TU=s1200",
+   "what": "店のロゴの看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

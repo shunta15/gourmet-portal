@@ -1,0 +1,45 @@
+{
+ "featureId": "魚美本店",
+ "dir": "fs-d566e566ee",
+ "storeName": "魚美 本店",
+ "mapsUrl": "https://maps.google.com/?cid=14792410913266309814",
+ "placeUrl": "https://www.google.com/maps/place/%E9%AD%9A%E7%BE%8E+%E6%9C%AC%E5%BA%97/@34.9218208,137.0477361,17z/data=!3m1!4b1!4m6!3m5!1s0x60049a1013457ff3:0xcd49335a20d99ab6!8m2!3d34.9218208!4d137.0477361!16s%2Fg%2F1td2tvp0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "魚美 本店",
+  "address": "愛知県安城市和泉町宮前７８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d566e566ee/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuNGzJhv4U1wyLzUqaiyeEJUqvVtFVic9IdKHV4xISsRAD-MnavWeHj4D-aWRYfYfvs49gMV5VFWGpegexA2iuhz_Y4AGp0l_ye_wVVoQJrsQXcE6xUgBC65F5w5dAOTIwU5Ihzbjcuqrn=s1200",
+   "what": "パック入りの手作り惣菜",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d566e566ee/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RAopGr6Bbj-apvED4KmlIBRuwIeehybj6_J7hWp_0Am7QLeJ8f_v6zMhVhDJiRBoFbU-9PlJhBxo2qLcyFWtGBm5tfv8xbZ0k9xFSx7GQXF-jWtOMhwUTKDT-4AXOH7Il0B4TYxBbLR8AI=s1200",
+   "what": "鮮魚の刺身パック",
+   "width": 763,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d566e566ee/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwksUzyy2TM6hHtTKU48cpa-3ywvhmNhjyTL9J9WcXqxnzyj_DP71EJnjC7iysVDA6pC1Co_KA7Y96UO69hu51nUf3Vi05sHvw3F22MlgKlgpyNu8-KKDMZIg3KpCf7gm9498=s1200",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

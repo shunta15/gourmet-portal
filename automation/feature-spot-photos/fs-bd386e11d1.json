@@ -1,0 +1,45 @@
+{
+ "featureId": "おとうふカフェヨルヨル",
+ "dir": "fs-bd386e11d1",
+ "storeName": "おとうふカフェ ヨルヨル",
+ "mapsUrl": "https://maps.google.com/?cid=16825315550373859572",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E3%81%A8%E3%81%86%E3%81%B5%E3%82%AB%E3%83%95%E3%82%A7+%E3%83%A8%E3%83%AB%E3%83%A8%E3%83%AB/@35.4244719,133.3358595,17z/data=!3m1!4b1!4m6!3m5!1s0x3556f71320c14d23:0xe97f875945e3d0f4!8m2!3d35.4244719!4d133.3358595!16s%2Fg%2F11yf7ydk0y?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "おとうふカフェ ヨルヨル",
+  "address": "鳥取県米子市明治町１０５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-bd386e11d1/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TikXPezMa-AXbWzpTBthlBXKo9e0ElIgizJunsmoaiTJbanbBrC1lwze_JLBRkMEDzUaY4fH951t9s4mJZkwVO6z1iU55t5CqJft4DZ5OmeEHFttwaWc0_ip2-LLwkFQZ0TH6vNcRjVcCP=s1200",
+   "what": "湯葉と小鉢のおとうふ御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-bd386e11d1/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TR69Q1SFomhFK8MtLcTpSid1yc1IMOuC7JnyJj_4qdjzY2WffcA7NDgVlZWTJZJj2LmRQhJkUVmmywGPPXalDaf521VxdXbgZwJtzhNf8RRY4e0m5e3cZDjnSL8MX4-9T5KPxITGcC7XU=s1200",
+   "what": "黄色い椅子の見える席",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-bd386e11d1/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R8hYaMjJlkNlKbnyLJrDY-wtorZ_j0Dnh7T-MJoylw7lj59hHLM8NMTnh05QRuyqFZ4fkfKx3D4Lcicv97nq9XScVM_hVdxmkjBriMOaAR-1P1-DWa-46N43ssxBkUmLIj7svcihPJ7R8x=s1200",
+   "what": "ヨルヨルの看板の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真が少なく、椅子が見える席の写真で代用"
+}

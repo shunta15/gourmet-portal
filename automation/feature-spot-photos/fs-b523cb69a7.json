@@ -1,0 +1,65 @@
+{
+ "featureId": "寿し処大鳥居",
+ "dir": "fs-b523cb69a7",
+ "storeName": "寿し処大鳥居",
+ "mapsUrl": "https://maps.google.com/?cid=427117269955759755",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AF%BF%E3%81%97%E5%87%A6%E5%A4%A7%E9%B3%A5%E5%B1%85/@31.8536453,130.869665,17z/data=!3m1!4b1!4m6!3m5!1s0x353f1bf99a1fd527:0x5ed6ce4e125ce8b!8m2!3d31.8536453!4d130.869665!16s%2Fg%2F1tpn0b4p?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "寿し処大鳥居",
+  "address": "鹿児島県霧島市霧島田口２４５９−９５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-b523cb69a7/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TEO7AiF99yEbEx8_QHjeyuvvaRKOB4s3z3Eu4gWr5Zc7W_4lLhLzoa3ow_mlXJePO4pM2_o8Ic41Zflh6X2qqKRmFeeDoLJNChG-TVGQqcytGDRCV_OqOVKXxLtQM30a9YJtfsUxv10Ho=s1200",
+   "what": "寿司ののった御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-b523cb69a7/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNLTaFB0wbks5-jSknuzUdqEjSeGWvEUt3xhq1UZu3KBfBFJOwJwrSosu8vkl8Qt8C-J7GaZ--bnjkfBUxPDIjbTcz1PkgyReR4gLqC1ai-SfycHHrzrJLdiiQgyelR3rGVdOO=s1200",
+   "what": "黒豚カツの一皿",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b523cb69a7/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrS-O6KkYlofyg263oXmKzB29l7DAkBBeohsfkCxziiqwxITB7MQMqvp-OEA5plnq8aFXPDaDhyvXtZDwzdPmGC1iffTHNk_96skWyO8MdfEoSoQ2ep0sa-FnaH0cyjw0jO3S-=s1200",
+   "what": "とんかつ定食",
+   "width": 900,
+   "height": 674,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b523cb69a7/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T0VRLM2NdWOA33qIA3M8_tjoZDcVMCiICdUvLApBgnlHwhSrQmAm9tmcGBAMQyixTd54ZAD5cp7DI327V0Ju7XIjU7w9de9KFjJSE96xZRWHgBezNcqdIcuVo9qrCu9pYn5MPm=s1200",
+   "what": "カウンターと座布団席の店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b523cb69a7/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-YewGSJDnjBeZcU5b-NEyz6VHWK6V_TkF-t-vRQHax6jpdEZHqy4aPFtboZ8MOz1y3Yp_Mab5HO-zXsipjd5GqjRSIrQp2Fg3URO_QbkM2qK53_1vLTfg9m5O3yH0a2HjKsf2QW3PuTLq=s1200",
+   "what": "駐車場のある店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

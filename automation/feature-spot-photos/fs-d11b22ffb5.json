@@ -1,0 +1,45 @@
+{
+ "featureId": "はまや",
+ "dir": "fs-d11b22ffb5",
+ "storeName": "はまや",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%BE%E3%82%84%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%96%B0%E7%99%BA%E7%94%B0%E5%B8%82%E8%A5%BF%E5%9C%92%E7%94%BA2%E4%B8%81%E7%9B%AE4-3",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%AF%E3%81%BE%E3%82%84/@37.952693,139.316233,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8b31689d9fcedd:0x1eda79fb8a8778df!8m2!3d37.952693!4d139.316233!16s%2Fg%2F1vvyxxc6?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "はまや",
+  "address": "新潟県新発田市西園町２丁目４−３",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d11b22ffb5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPPEQBuYb2GmGB5SnJjx64cgl31DQ-55YAhfYNV_LKRq6B8imrpS_BwItCG2I8VrlaqHOgwQDSGPd5v5DopWaRCC13LvvUqXnJmrrNt95PSNHxxDwrHVgEgnzP2_5rAF1fo3-5HA=s1200",
+   "what": "木の葉に盛った会席料理",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d11b22ffb5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSCKfDqI4-JnMZO_4gt4jy_40OYvyprS-XwsVwWoJj-N3ArTwFQzKn-tbHRz0k0ExPJWe_ptKZY4hDsJIyXchJ2sLWyqQH2zrulbNwbHGhqn93J6f4-zzZoorRDJhTce_zWYZb=s1200",
+   "what": "飾り棚のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d11b22ffb5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QL9q9n9RR5_vJFcMiAbjarOEDFk2DLTnly1U4zByurX3uVwXH-iGrCwYEqkIL-2TFgCiPzDGiJplTxQVhIwYi04KIQQNaYCXSTfkCRc0tRP80P9YpNIbsgYn445KMAovvP6TdO7w=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無いため、スロット5は料理の写真"
+}

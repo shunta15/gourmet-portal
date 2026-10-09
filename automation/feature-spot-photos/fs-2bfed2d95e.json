@@ -1,0 +1,45 @@
+{
+ "featureId": "麺屋野条",
+ "dir": "fs-2bfed2d95e",
+ "storeName": "麺屋野条",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B%E9%87%8E%E6%9D%A1%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E9%96%80%E6%88%B8%E8%8D%98",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%B1%8B%E9%87%8E%E6%9D%A1/@34.7582743,135.3578331,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f3e744ac927b:0x9bc233fadd559a1c!8m2!3d34.7582743!4d135.3578331!16s%2Fg%2F11z1vsj0m5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺屋野条",
+  "address": "兵庫県西宮市門戸荘１７−４８−１０１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2bfed2d95e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SUvlOEAevbQOhW3B1__TgRcFBWjhVMFJHsN40MV1siJF-0YpgSwGytjI3UxcVXpVOByjeeBaieP-1yihHcGUbZj0-yXTjRFJ4raUHGOy0RNN-JLkcPdcA3jPOekvOUxcuu8mqmzTtIobY=s1200",
+   "what": "チャーシューと味玉のラーメン",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2bfed2d95e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qfse2DoEo90lwtcgN41JchIJxvyQzZvvxwQ7qGidxXP9rz7omoUHS7XAkdmv08bhvs0tiFZbbYGu4XBQwFfiiUaF4qWk5O4Iw6XasI_Wz4xyLcl8zqevV3XD-2Xon6FFCO8MOg9suU_0zZ=s1200",
+   "what": "カウンターとテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2bfed2d95e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1speZ9Q4wInWD9OoM4-TrbIT8O-T2rt8uHbsOtvoDOxqnLOCJKEamY6ttLOkth8YvIF62ogYJllttTG-EdP8roApgswibRZU1qUUy2V9fIJFzNoOAJy8InHDwx_YR_yZZHJ9nHZQHE-ar=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

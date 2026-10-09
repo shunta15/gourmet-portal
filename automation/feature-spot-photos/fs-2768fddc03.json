@@ -1,0 +1,45 @@
+{
+ "featureId": "炭焼き日本料理三ツ井",
+ "dir": "fs-2768fddc03",
+ "storeName": "炭焼き日本料理三ツ井",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E7%84%BC%E3%81%8D%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86%E4%B8%89%E3%83%84%E4%BA%95%20%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E6%9F%B3%E7%94%BA1-1-6%20%E6%9F%B3%E7%94%BA116%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%84%BC%E3%81%8D%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86%E4%B8%89%E3%83%84%E4%BA%95/@34.6600914,133.9200073,17z/data=!3m1!4b1!4m6!3m5!1s0x3554075f79f3d03f:0xb389280d8dc34a3d!8m2!3d34.6600914!4d133.9200073!16s%2Fg%2F11wttrpqxx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭焼き日本料理三ツ井",
+  "address": "〒700-0904 岡山県岡山市北区柳町１丁目１−６ 116ビル １F",
+  "how": "search"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2768fddc03/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SflcvT2au0pyYsZ7f36gudMsIrRWWU8uid5VhOmqycnOT_AR6ovWuYE9aVPVmplFXB4KF77ffcnITKQrjeO_qwuC7Qe9gUoshnWFE6npXTHYHteRKsu7vVKRkKqh3Y3y1lKILZHlsItVlO=s1200",
+   "what": "会席料理の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2768fddc03/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxFXQXs4ZHeLXq2L2dlEcjy0kiIIyXwKZA1ReRL2xqe9ckVew6WcvtN6GHddIGaIOLthXCPf6QD4MdAFkldLpi8ohM_CrqUklbVSz2WgzcFW7LRu0RLqaxZ1-WvCfwAgOzZpael0syaZA=s1200",
+   "what": "白木のカウンター席",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2768fddc03/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReZQvFclAaoI9laaEpmAXfAKlpMRtjWHfamuraepLYdCOZe1LW0IwhPz8QpdsN_qD2CAA8zqCbV_KqtwcWQq-MEs__ZYI5JeRCRcoscIMdiz37NPYjyIgBLJwFeTx3LfKciQyue2ECVxSB=s1200",
+   "what": "焼き物の一皿",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、ポイント5は料理の写真。"
+}

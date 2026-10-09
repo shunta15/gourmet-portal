@@ -1,0 +1,45 @@
+{
+ "featureId": "炉ばたやき山波月",
+ "dir": "fs-e2d4f37f62",
+ "storeName": "炉ばたやき山波月",
+ "mapsUrl": "https://maps.google.com/?cid=6939793330677653980",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%89%E3%81%B0%E3%81%9F%E3%82%84%E3%81%8D%E5%B1%B1%E6%B3%A2%E6%9C%88/@34.73271,136.511198,17z/data=!3m1!4b1!4m6!3m5!1s0x60040cb69f9449df:0x604f194401aaa1dc!8m2!3d34.73271!4d136.511198!16s%2Fg%2F1tdkglhh?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炉ばたやき山波月",
+  "address": "三重県津市羽所町３５１ エイトビル 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e2d4f37f62/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT8otSc2R5eXrxBSJbsIg1UyBYkpv2nV8x_K3285wanAXONH348oveIvjGzSNj-MNqZD_xZlJpINctFODVQQoACTE5qTYf7J4m4UXb27Zs_uR7q44sLH6jDIEQZMdM-5bYX9vwJHYdFAM=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 871,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e2d4f37f62/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbvtB1VSMrp7ODrLuohZbp9donWXwuTfEqMG-DqyYc2sAi4VHd5exvbMp3Twnx45ZU23QzgzZHCrNuq0HmqSLjMs3iecdQa72k6oA1qX9BI6i-qKFEqQKfZMaHKKC4buPHnUnU=s1200",
+   "what": "カウンター席と酒の並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e2d4f37f62/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QenO1WyjVLsdaOR2gZTAj6IBxwNnANEdRxZKBqmfNRuuwVdKUX6kC8uCn1yaloIfvo2WIuoKabsiQpt31XQdhPQDgGg1ueS1TaaSIdMTY9CPeAnL01-Im5dljKxBXciwrSR4vDAPDfz2_1=s1200",
+   "what": "提灯の下がる店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

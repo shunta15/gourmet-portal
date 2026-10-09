@@ -1,0 +1,45 @@
+{
+ "featureId": "VegeKitchenAwajin",
+ "dir": "fs-4c4e66de78",
+ "storeName": "Vege Kitchen Awajin",
+ "mapsUrl": "https://maps.google.com/?cid=10341564008581964002",
+ "placeUrl": "https://www.google.com/maps/place/Vege+Kitchen+Awajin/@34.7916712,135.5488339,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e316a004b595:0x8f849dac817e20e2!8m2!3d34.7916712!4d135.5488339!16s%2Fg%2F11c2008t__?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Vege Kitchen Awajin",
+  "address": "〒5650001 大阪府摂津市千里丘１丁目１２−３１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4c4e66de78/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ss9S6_JtgYX3ZqEn4VGMhGQ-Fil6QXZU3yILohdF5XpO3QLZbyyCk7NlBBpmLvGmXNxSHeTKVsZ-t59bWIm_HfsSL37ZDS98c1Oo6lyRCjd5yoYaDGzTUV94XH7l1vnHUaVQp8PDqOc7U=s1200",
+   "what": "海老と野菜の温前菜",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4c4e66de78/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sv3FiJ1Pm4Ma0yEa068VttqGbQBdz_6AH_v0fdHTiMfS2kg28MYOSj--HxE8LQk2PI8EewaxYX8uvaWiWEb-mELmcnLqR6k_1VXXm9Hy6mGASEvzvL2Qm0YRkY99eJBPzh6F-SG2Iug7a4=s1200",
+   "what": "木のテーブルが並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4c4e66de78/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmY9MOKLFm_aR0xZFy33CpxIsw_ZvUiBvdG4Dn_UQy4LK7qPwTXCaKoLyi8q1WyWX5eHonSbayYYjDm2ZCGjG-pdENnIj8-HbK8jlv7ezyuo2TzTCns7TOwcAI-42-Mu-4yv1EfuaKoLT7=s1200",
+   "what": "夜の店の入口",
+   "width": 600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

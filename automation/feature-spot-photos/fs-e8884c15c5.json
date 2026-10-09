@@ -1,0 +1,45 @@
+{
+ "featureId": "チャー車ラーメン",
+ "dir": "fs-e8884c15c5",
+ "storeName": "チャー（車）ラーメン",
+ "mapsUrl": "https://maps.google.com/?cid=9449964815952812254",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%81%E3%83%A3%E3%83%BC%EF%BC%88%E8%BB%8A%EF%BC%89%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/@35.4385732,137.0815816,17z/data=!3m1!4b1!4m6!3m5!1s0x60031699e85b5865:0x832504ee9ace98de!8m2!3d35.4385732!4d137.0815816!16s%2Fg%2F1w96gnmd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "チャー（車）ラーメン",
+  "address": "〒505-0125 岐阜県可児郡御嵩町伏見８２５−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e8884c15c5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q6PJHIxEA9HLNbHbIMm_NJ-m8SYV6REpNsLUQsR84uAWxSenQSD0ZJ1Jie2f9dWTpeeW4jWusCTDCt1cQuu1aTv5G-_X5CsXF93m9seWvre9ozxgO5CcY93sEpUGHD4xETlArR6HVWYLJO=s1200",
+   "what": "一品料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e8884c15c5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJneKf8r2MNvMmZcN_3LSV0saG3LXu_xfv5TEMZbuCjFdPtupYS7NGYwnXnW42tYqJ0aPasjLexQLXfv-Zsir2aGau_WDMraWdbyWk-6zuVGGORuTQOZV402YttJ7kv6nQpfK-uy67YLTM=s1200",
+   "what": "座敷とテーブル席の店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e8884c15c5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBSKUeDzPip8hEcRqTJF70-g06NUfolPJOjP56jbS3IvXYtVxOrpYnNsi-ZKLqkE6l0kNONdDk5N2OC0K-BYsjc4qpa7DY1WzGWkoW-Dd9XZ4dYrmPIMogV81yCnTnvvZFv6Rk9-c6qHeI=s1200",
+   "what": "夜の店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

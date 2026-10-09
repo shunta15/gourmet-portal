@@ -1,0 +1,65 @@
+{
+ "featureId": "DolceCucinaAngeloアンジェロ",
+ "dir": "fs-ce8234a625",
+ "storeName": "Dolce&Cucina Angelo（アンジェロ）",
+ "mapsUrl": "https://maps.google.com/?cid=11992403922491753402",
+ "placeUrl": "https://www.google.com/maps/place/Dolce%26Cucina+Angelo%EF%BC%88%E3%82%A2%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AD%EF%BC%89/@34.8664369,137.0638754,17z/data=!3m1!4b1!4m6!3m5!1s0x600496c99ae6f48f:0xa66d93d43b1f43ba!8m2!3d34.8664369!4d137.0638754!16s%2Fg%2F1tfct4y_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Dolce&Cucina Angelo（アンジェロ）",
+  "address": "〒445-0073 愛知県西尾市寄住町若宮２１−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-ce8234a625/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYHAnGbrYpCxDNyN4vSqYvDwrFJVPY6ZhJPEXNDQeaPXXBqd3FuQGzGwWUI-7OwyL2hMv09MToOy-NrsrEDdyoT2QCsLZ_MNn_JATHcUQALRCzW3QhC1YQBWBUNouLaanHKyV1Q7Nu-HKE=s1200",
+   "what": "パスタの皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-ce8234a625/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5XFENarwTOhjNUz25f6o48q3iXsOkx-UoVl9XY_cPPsF9AZiDMppm-6TS5vPjKn9Meqkl-4U92B_PBqw69aP8yK220dKz9zHuc_iV31vMjeOdmrRVebzpmOi8DaVpJ5L50RQIWI5QYfM=s1200",
+   "what": "ピザ",
+   "width": 900,
+   "height": 813,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ce8234a625/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rzs3dlfriRZIum5gorAxhLk5rE9_dtyzYD8SI1XmZ4_IsV1k__1yCFFxQeu_0jQeBQ1g_mkNJx_8ovlquqqMPT5bLoMY9AB4XlypI7CQcDLnblrZMPSHCOOTANmfrd7TRPaGau=s1200",
+   "what": "さくらんぼのパフェ",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ce8234a625/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STlp9xENOgsf-OrSgf6AktRTRCiEXHzKeej-6N8oGybTlxJZZ4EmOOQLrfbPs8RYpiOIrm27_3-lzQDJ-wCdSotrniaUACGOwalLvtOALbJL3GzW2voL8kOpQABeCkgKYWZOOl=s1200",
+   "what": "観葉植物のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ce8234a625/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QdgfHNMyJnBvSK9M6blNDIP7W442NKU8ip5BLXqpzVG_U81AKEuXP9jPumUT90vj2AvxDPhOeYyiHonY6Gj-3Zn789Y-ssDvjtK6EZv6npbMS-EGFl_msxcs9Fqt14ENyFD6YE=s1200",
+   "what": "オレンジ色の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

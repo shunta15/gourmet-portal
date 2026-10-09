@@ -1,0 +1,45 @@
+{
+ "storeId": "r270",
+ "dir": "shop-r270",
+ "storeName": "手打ち蕎麦 にし田",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E6%89%93%E3%81%A1%E8%95%8E%E9%BA%A6%20%E3%81%AB%E3%81%97%E7%94%B0%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%85%AB%E5%B0%BE%E5%B8%82%E6%9C%AC%E7%94%BA5-1-11",
+ "placeUrl": "https://www.google.com/maps/place/%E6%89%8B%E6%89%93%E3%81%A1%E8%95%8E%E9%BA%A6+%E3%81%AB%E3%81%97%E7%94%B0/@34.6281271,135.5988501,17z/data=!3m1!4b1!4m6!3m5!1s0x6000df5650645895:0x85d12cd60c3c93d9!8m2!3d34.6281271!4d135.5988501!16s%2Fg%2F1tgcrrvr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "手打ち蕎麦 にし田",
+  "address": "大阪府八尾市本町５丁目１−１１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r270/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSfdH6mson6Ln0xdeR7Bj_8MXXgnOsZZLCajQF8iIwveohhvmxz1QmfpHhWnKYZSeuSER1SPKGUzTc7UoI9NBFuQlDWn7shrrop4uKFWjIVMREElWYj7DXlG-EWzDPoiVhIvdWMw0G3P6E=s1600",
+   "what": "そばと天ぷらのセット",
+   "width": 1400,
+   "height": 1049,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r270/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6YbDL4v0mAEnyV9-1yrDqu-K-CB8TLuCwAKBqO2Sa-w9P5fOd7CZFCJZmEWJ6uRe8MMm1y7o87rs3djGP-zie48L4-7SPAxGIa-92s2zThHRsirdCz7RmA4Qp92GvVJTYfMAg_mq1XEkg=s1200",
+   "what": "のれんのある店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r270/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qp--XYIPe5lNHn-8WUmAaN88L7vnGZwj3BTLQaOohKxrGXb12tNNucJKCR654HF7cqfaqankFWK5Am9ZFha9LeaCugu1M6nuTKmEU604mZmz6pKNiy8Crd3A7n4kt_6o0HC9UpMG_DNdJv=s1200",
+   "what": "明るい店内のテーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

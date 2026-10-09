@@ -1,0 +1,45 @@
+{
+ "storeId": "r244",
+ "dir": "shop-r244",
+ "storeName": "炭火海鮮酒家 楽厘 京都南インター竹田店",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E7%81%AB%E6%B5%B7%E9%AE%AE%E9%85%92%E5%AE%B6%20%E6%A5%BD%E5%8E%98%20%E4%BA%AC%E9%83%BD%E5%8D%97%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E7%AB%B9%E7%94%B0%E5%BA%97%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA%E4%B8%AD%E5%B3%B6%E4%B8%AD%E9%81%93%E7%94%BA110",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%81%AB%E6%B5%B7%E9%AE%AE%E9%85%92%E5%AE%B6+%E6%A5%BD%E5%8E%98+%E4%BA%AC%E9%83%BD%E5%8D%97%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E7%AB%B9%E7%94%B0%E5%BA%97/@34.9465349,135.7464961,17z/data=!3m1!4b1!4m6!3m5!1s0x60010585c3e3eacf:0x3eb58a5cb364e25e!8m2!3d34.9465349!4d135.7464961!16s%2Fg%2F1th8704x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭火海鮮酒家 楽厘 京都南インター竹田店",
+  "address": "京都府京都市伏見区中島中道町１１０",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r244/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBz_yugfn1kscUzd1t8bQ1wmT9zWW4hl69eoGgir1HTRahjFI25bh6yRg5Kq811aYMzjsk-RvJSBibiJl7PYYqfktMwDVAg2preAfdvCk1k4Y--QfX4ysKpz1AjVG7yScPh9CCfdC10T9Z=s1600",
+   "what": "青い皿の刺身の盛り合わせ",
+   "width": 1400,
+   "height": 933,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r244/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwCKNPUUqHuxIbSad18JbVYVMV9NKHRb35SIY0sF_Y8fmvbcAqDtFLLN-iVqzGumaMHL3Vsnr-6D3cktpFdC2oB_JAoBBLseDO_f8ys7WIh1mQWMyq97FzX-SdhlrIaFRHNLh4eAwHrExY=s1200",
+   "what": "楽屋の看板のある外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r244/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tb6UO42OQeAWqvO_E4BRd1VPPvypjYEDRDQQLfy4A8a050SLu5Shw30Mp73JiuPdKIloTUzI7OCmK4TZrGIMMvaq4c3xI0SzbXg7zhOjwpwqyRSxTG8kFf_3VRjnMzWkJ5YBaIAX3qejrQ=s1200",
+   "what": "うなぎの釜めし",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

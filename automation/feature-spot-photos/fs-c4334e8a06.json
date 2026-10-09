@@ -1,0 +1,65 @@
+{
+ "featureId": "すみか",
+ "dir": "fs-c4334e8a06",
+ "storeName": "すみか",
+ "mapsUrl": "https://maps.google.com/?cid=15315313065518336937",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%BF%E3%81%8B/@35.0486592,136.9104913,17z/data=!3m1!4b1!4m6!3m5!1s0x60037d65eece188f:0xd48aec16ce1e8ba9!8m2!3d35.0486592!4d136.9104913!16s%2Fg%2F11j005zh0l?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すみか",
+  "address": "〒476-0002 愛知県東海市名和町吹付１−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-c4334e8a06/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QsFa2jaUrUjLdwN70kmftw2zBDyViKUP1VatgPH4qtVNS-acDfoFFTUkPywW-Ebx2CM59xsT0rzJYK9i9B8Fwp0WbhMkRxOnpLajLgSOCfnPVHbxEYkd7uEhcqABQeaXQ62IDd=s1200",
+   "what": "ドレッシング瓶とサラダ付きのプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-c4334e8a06/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RyhdNmUtRidEm8x65ikAkpCJCB-su9_Kng3J1InMqAiNTejAd1tX54D0DwSP3Uqeh3rdTkwhCvCU40q0HQqKr9zpfC5BFviiczEwAe5GomX-Gbw_I2gDFU9TBsQbFNPagV8cZnwPVjEs0=s1200",
+   "what": "野菜のランチプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c4334e8a06/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpcTH8OmxsIaIudPPLExWBxw24WlD3GTL38_-JcRUIadp67o88BcVrLMLzMLFFetUoZcgs5y0c8E2OOK5EkaPoVOUCtTBGNcWBtsD0JFahVqdtgIBbU63uMclaeB06NpXYLZjEZQ=s1200",
+   "what": "テラス席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c4334e8a06/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sjyvd49K-47FOvpAb5QbdhTgRN4Svurf9K1Mt0z_d4uitlyEhJmobUs3-IZINRT4JVzCPZkMuVwH6K5DvUF0-7asV9IXv37zgmzbpNvXvp4MwE7C2bZfkxB8MWd62CoBH3IEm2=s1200",
+   "what": "明るい店内の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c4334e8a06/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCHses1eNFrnZiftshfvOzBOwh-JoyXg-NeNvyzg7ldfhhJdTBfQILOli-zJRFyvNKaIZ8Ykdnh_bWpzfLKM2kgK75D1zGZwBUwhhsb5yUQEP3XcqAsDRjbU9bccbQPtWTn3GlJAh9nQNT=s1200",
+   "what": "レンガ調の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

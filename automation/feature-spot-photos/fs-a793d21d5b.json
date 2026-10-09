@@ -1,0 +1,55 @@
+{
+ "featureId": "中佐中店すず虫庵",
+ "dir": "fs-a793d21d5b",
+ "storeName": "中佐中店すず虫庵",
+ "mapsUrl": "https://maps.google.com/?cid=11061240732127504265",
+ "placeUrl": "https://www.google.com/maps/place/%E4%B8%AD%E4%BD%90%E4%B8%AD%E5%BA%97%E3%81%99%E3%81%9A%E8%99%AB%E5%BA%B5/@36.4071351,136.4358418,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8510bafa4bd7f:0x99816bd7458aa789!8m2!3d36.4071351!4d136.4358418!16s%2Fg%2F1tlnd93r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "中佐中店すず虫庵",
+  "address": "〒923-0941 石川県小松市城南町１２０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-a793d21d5b/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tb9EMymUDDZO5agzlZ0N00Q5sEmJm-olbQ5uX0016OHLehyzojBy5P8H4VxlzlGdkElBdGKAINX9ACOE-4D2O9ULCrfisT7Mg26SJwQtMCmh6Xky7BPc9K2iylurNDUY61JYw=s1200",
+   "what": "そばの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a793d21d5b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXQRIqZQlC98f7UJ6-2GBJdgLA7X53nx6nIPJbdyGjatFoitFKQ_1zRNIUQ9GJ3-TAxWR_rHwxF9sVd5Ewt4G1ujEhwqAeSlvNt86z2Xb_IUWLzQrHlHIA6PQOrrUXkwYIRA7Q2kYu5ao=s1200",
+   "what": "卓上コンロの鍋",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a793d21d5b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TN1OwtaRtPWbrxxfDeBtsO-h5og6VCg66p1In_JpTJCTOeFHJewokhECMcEdeBOM-TZPmmNtaVDUzWexPKzKsihyV-y1HmmGLIoENE3k9i7nSYcVcB_dOAFwjj-RJezNF5KGhtcFOYRa2U=s1200",
+   "what": "うな重とうどん",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a793d21d5b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1zXJTyAaBovjMw7GoSfbn-jQc4qGxJ6REg7C0bxYfp_l8NQ3Yrr0g-v1_7jkXiZTasWe2PRFwjNAvYhXfHWA9lXwZaJh6AE1KAnE0X7s4F9aGiHEf-7klALZ2YAYeUaTM4TYy0mc3bAXx=s1200",
+   "what": "駐車場のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot3・4は卓上の料理写真で代用"
+}

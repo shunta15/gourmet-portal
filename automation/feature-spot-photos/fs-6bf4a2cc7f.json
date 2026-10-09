@@ -1,0 +1,45 @@
+{
+ "featureId": "遊楽",
+ "dir": "fs-6bf4a2cc7f",
+ "storeName": "遊楽",
+ "mapsUrl": "https://maps.google.com/?cid=8210463121334753613",
+ "placeUrl": "https://www.google.com/maps/place/%E9%81%8A%E6%A5%BD/@35.1525112,138.6496808,17z/data=!3m1!4b1!4m6!3m5!1s0x601a2b4e0dd0afa1:0x71f16cb53c9a594d!8m2!3d35.1525112!4d138.6496808!16s%2Fg%2F1tfpzx8s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "遊楽",
+  "address": "〒416-0915 静岡県富士市富士町８−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6bf4a2cc7f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QB1xJ09-nte2fIOA--wVx4Rmj7G6-wmf83xHRNfKsbvtWCF7ik8yg89mf_T8MHCoALj4-CaNb4P8MTZbsQGsl-3sA6JBNWZk4Hmkrz4T0aSidcIt3nMzlJj3TRrpgbiiO0kbYT",
+   "what": "座敷の席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6bf4a2cc7f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-C9_ZDUSaGkheCYCL7F8tDc4iJ_keuJaKEL-w0bd-Am5_JTtXoNYFcTxOlXtqiH1DBLPti-hJFQx7YSul49TJ9HMMCRS71sgKiRh1cRv5H8NcM7K4UNn8HUoRqobRmVcDTTa3LsLwlLY",
+   "what": "焼き鳥の盛り合わせ",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6bf4a2cc7f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rgl6rI4QjefPOn-3yazrxrV0O8HNK1WU7EgMVxTMaZMxVVI7DBYPJc5EEXhS35moFWC7Th4WeZMQfgvpoXtkwE7e_NW-XyMeUByeprU2VO6uCjbZz5rqJPS0NXWzWVbSrig00eAi7bBMw",
+   "what": "日本酒の瓶が並ぶ棚",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無いため、ポイント5は店内の酒の棚の写真を当てた。"
+}

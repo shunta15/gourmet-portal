@@ -1,0 +1,45 @@
+{
+ "storeId": "r257",
+ "dir": "shop-r257",
+ "storeName": "cafe BAELU",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=cafe%20BAELU%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E5%8D%97%E5%8C%BA%E6%9D%B1%E8%8D%92%E7%A5%9E%E7%94%BA1-7%20%E6%A0%83%E6%9C%A8%E5%B1%8B%E3%83%93%E3%83%AB1%E9%9A%8E",
+ "placeUrl": "https://www.google.com/maps/place/cafe+BAELU/@34.394246,132.4807818,17z/data=!3m1!4b1!4m6!3m5!1s0x355a9f2172970d85:0x91c1305e57ef4d57!8m2!3d34.394246!4d132.4807818!16s%2Fg%2F11j8t2sjrc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "cafe BAELU",
+  "address": "広島県広島市南区東荒神町１−７ 栃木屋ビル",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r257/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TDssdDP2yRSvIriRgmZHMuX-3fbTjRQ7K5ndHUBzqXLBeydLQgUmOy0cwSS-Gye-BEsTCtrqKv8z0GMJemHvnNE1qIhLBUFGADwL8IUbj6fm4Vg5kZ3wv42XUmUwdEOGgeIJDj=s1600",
+   "what": "厨房の見えるカウンター席",
+   "width": 1400,
+   "height": 786,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r257/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Si4tCHAX7nxQbZdBwDLam2akrkA4qTlZjLK2ZU3RJVLIFa2xa7RJgr3q26xjW9v5eTmJKjAA7piXeZmx07QgaQdZ3JoM-QzX1rvGWJQPVrglXjubJUJFouHGpxYvIOlBAaQauYEHvSB26t=s1200",
+   "what": "ランチプレート",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r257/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SplluVaz-my1BFYGokn6f7p0aQdDZHMzqdoRcb3zT7gK2IXiAE1xKifStHcKy1AajGevsUfa3w13S21iVZMMSFCBepmuj8g6kOurvVJ_EdpX3UvH-E9OSTt1DxLG880FH5vqc9gJxzHkT-=s1200",
+   "what": "卵黄をのせたパスタ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "おばんざい処のりっぺ",
+ "dir": "fs-b1ab0b4fb5",
+ "storeName": "おばんざい処のりっぺ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E5%87%A6%E3%81%AE%E3%82%8A%E3%81%A3%E3%81%BA%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%9D%B1%E5%8C%BA%E5%8C%9711%E6%9D%A1%E6%9D%B113-1-8",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E5%87%A6+%E3%81%AE%E3%82%8A%E3%81%A3%E3%81%BA/@43.0773618,141.3732609,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b294000ad4f31:0xc12755ba12c361e8!8m2!3d43.0773618!4d141.3732609!16s%2Fg%2F1tfxggx0?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "おばんざい処 のりっぺ",
+  "address": "〒065-0011 北海道札幌市東区北１１条東１３丁目１−８",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b1ab0b4fb5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4M6APn2jr4RmtwfcpLZ51SPVkFpBgBiBk_uuR823Bjzx7xFJ6w6uHz_rH18xmeqZQ0GL5jNtbb2leJ2uK9GDKHVrY9p9dFzuyJ8x4Q8CrtUWi1hLJsnnOQGt8LmynZDr7Emdp-MjujnLT=s1200",
+   "what": "定食の盛り合わせ",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b1ab0b4fb5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLb93IgDUYoe4Mzqp-WZzEWcb4A3na1uKSuo_hf5aCaC78_qo8O509M-O39JZmzfM0gD9NVSI6iJNLH7AJSK6E3gOBKtZ_0aEVytkHY-R7S-lbdQ-gDRKiFPHTrERQ9UEZbnfD=s1200",
+   "what": "カウンター席が続く店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b1ab0b4fb5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8vb34hMmE5hIp_aLkxjj86J_3zn4vNQ4vMxy86fmfFnVCo_Ne6H2of4N782pMhyMrUgsxoO4WFr3aeOZDdyQctaGm7l5kKRTaXt0h60_CuJdapFKOYP4j2FsjI7wfT6kzjR13ftAcUnzF=s1200",
+   "what": "ちょうちんのかかる入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

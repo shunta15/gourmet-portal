@@ -1,0 +1,45 @@
+{
+ "featureId": "クッチーナウッチーノ",
+ "dir": "fs-4ab1cb7510",
+ "storeName": "クッチーナ ウッチーノ Cucina Ucchi～no",
+ "mapsUrl": "https://maps.google.com/?cid=13946076595606485688",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AF%E3%83%83%E3%83%81%E3%83%BC%E3%83%8A+%E3%82%A6%E3%83%83%E3%83%81%E3%83%BC%E3%83%8E+Cucina+Ucchi%EF%BD%9Eno/@32.746471,129.8739749,17z/data=!3m1!4b1!4m6!3m5!1s0x3515533e87ebeecf:0xc18a6ac633837ab8!8m2!3d32.746471!4d129.8739749!16s%2Fg%2F11c80d7hb6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "クッチーナ ウッチーノ Cucina Ucchi～no",
+  "address": "〒850-0034 長崎県長崎市樺島町９−１５ 三央ビル 樺島Ⅱ1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4ab1cb7510/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2n7LJqfQJU2xnkUyTvN3vWfd4nrzY40UYsIhy4gz8U36SyMLaNK4oCMN2oR_xEuc9Vk2i6tdiBKdzNFl3qb9yE5ivBFY3rUJLN7LLL36A-ACBFoehR-Q0CYzE9jYBJj-KrZuD=s1200",
+   "what": "前菜の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4ab1cb7510/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RAzeeJdxqoZg8GyMOUOYxJUBtK3L04SZNTubkf29qSAvg_C_vRHizQUgWCF0p3gHPglUS8vGcaTf7bbLY3f9mfkjqDxwhdB9xNpuc1ebqmcNQA8VVSUIH9Jl-oCHLpEHgalN9O=s1200",
+   "what": "テーブルとバーカウンターの店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4ab1cb7510/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPOBwjbGZK3qKrHC_mRFc1xY9gx_2_Jm9dQ3Eg3mhtn9NAcW6YRZGyAudaiOtNudzHVGhS4yCFH2ZCvonUVKt51Y-iN8lDXXW6pMnXIvi4YKbXcRh23hlQvFoy2dHfYf5n5JqUGkyDz_Dx=s1200",
+   "what": "カウンターと厨房まわり",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "storeId": "r258",
+ "dir": "shop-r258",
+ "storeName": "海鮮ときどきブタ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%B7%E9%AE%AE%E3%81%A8%E3%81%8D%E3%81%A9%E3%81%8D%E3%83%96%E3%82%BF%20%E3%80%92600-8413%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E5%A4%A7%E6%94%BF%E6%89%80%E7%94%BA680-1%20%E7%AC%AC%E5%85%AB%E9%95%B7%E8%B0%B7%E3%83%93%E3%83%AB%20%E5%9C%B0%E4%B8%8B%E4%B8%80%E9%9A%8E",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B5%B7%E9%AE%AE%E3%81%A8%E3%81%8D%E3%81%A9%E3%81%8D%E3%83%96%E3%82%BF/@35.0010076,135.7593177,17z/data=!3m1!4b1!4m6!3m5!1s0x60010954e8c27d69:0x98f2906c4a9f1bec!8m2!3d35.0010076!4d135.7593177!16s%2Fg%2F11j8rhwd4x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "海鮮ときどきブタ",
+  "address": "京都府京都市下京区烏丸通仏光寺下ル 大政所町６８０−１ 第八長谷ビル 地下一階",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r258/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNM5f-XCY39i1n88Kv6FuQSgX7uk6b2tOgwI_UVjN81-bWmtsatCFb7k84N4TVxziVZZK9Zc687IOMqDm9N8ColnJ24HQSetzzx6HwaKtMKdfvNTm6lnFhZjbiJGzGu1Jo9m-PZjTHh9c=s1600",
+   "what": "いくらをのせた海鮮丼",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r258/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qi7XqOxGQ5jWzEUYNXFhGDwOKiT_MCXdoYM8k4nvwq8Q3c0AyvLENBrswEzX-5ph6Hj4Xve5LZ_JsgqNylRc3EIjC11e36sXkoYsJwsWk23x27HzQzERL19Z97eXxqyuX4MdrK=s1200",
+   "what": "ポスターの並ぶ入口",
+   "width": 830,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r258/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJrhPZJmPAXAoTP2kh-5u8wPDcMgciqjyUunkxDR5cN6RsMUYq6rOpIDfikaA2AieNuV9t0_xE_vvJ23b9Y1ZOoaLTGQtQ9iOp8ttKo3DWlPlbU6dgO0ATE79-49XbY-NgCiGEb9dLkmI=s1200",
+   "what": "サーモンといくらの丼",
+   "width": 900,
+   "height": 876,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "住所の読み方に判断あり: Google マップの住所は「京都府京都市下京区烏丸通仏光寺下ル 大政所町６８０−１ 第八長谷ビル 地下一階」で、記録(下京区大政所町680-1 第八長谷ビル 地下一階)の町名・番地・建物名・階と同じ。町名の前に京都の通り名(烏丸通仏光寺下ル)が入っているだけとみなして通した。"
+}

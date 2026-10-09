@@ -1,0 +1,55 @@
+{
+ "featureId": "洋食レストランキッチンいのうえ",
+ "dir": "fs-5fed8af7f2",
+ "storeName": "洋食レストランキッチンいのうえ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B4%8B%E9%A3%9F%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%81%84%E3%81%AE%E3%81%86%E3%81%88%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E8%96%A9%E6%91%A9%E9%83%A1%E3%81%95%E3%81%A4%E3%81%BE%E7%94%BA%E8%88%B9%E6%9C%A8",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B4%8B%E9%A3%9F%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%81%84%E3%81%AE%E3%81%86%E3%81%88/@31.8932649,130.4526965,17z/data=!3m1!4b1!4m6!3m5!1s0x353e4d9f6c4766b7:0xd5d93b7180526a27!8m2!3d31.8932649!4d130.4526965!16s%2Fg%2F1tj1_95n?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "洋食レストランキッチンいのうえ",
+  "address": "鹿児島県薩摩郡さつま町船木５５−８",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-5fed8af7f2/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_UFU9vl-_RIO-rJS5qCTfRo9MF9PXadAA2CKVyy2CmtDgUxSe-k9j5B7cbb5fU9TYe_RfotQguMnaq4rO3NInCzDgjIomYy-dFY_mS8Y7y6NRKtnQ2lso6Xc5iDMF03tI4nA_6DQ48qfl=s1200",
+   "what": "煮込み料理の鍋",
+   "width": 686,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5fed8af7f2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Smg2aa9MUjPC21ztgltIFGgNQiQINHhqXtrlh-tIf4Z0j4_AFiC08OlaA9vdjw8QDuJZnTnDR58CkFSpBOl4vIav65Eun1vdXAMVtRecW_1FlYdftZaPKCyfl4-3vTTZLMOnVopDzhfTA=s1200",
+   "what": "パスタとサラダのセット",
+   "width": 900,
+   "height": 646,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5fed8af7f2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNgEWeIUi8sxPIu0NQoJK1cjOEQHPU22ARAuWdyUwiBsRCHxakRX2aXOHA7Dzdq0w2N_Ik1iRwouLahP95zodfRDKdbUuVN5Y1BWEYR41gfb70OynnUEXDZreYTDgklxUvVQmnTzFEn7XX=s1200",
+   "what": "緑の壁と入口のドア",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5fed8af7f2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qka4GBuN8fH76bpHWx6DaCT3nO2QSmvHVWckdvtLSOuyQzXaZrTxKamENeru60oLO7KcSjo66QTPF7nPReTgnvwv5kvwi73GcvOx4hvlqhSV_kyfzaRWdR4-xzb_sho6Eu55g4IUUE8Co=s1200",
+   "what": "緑の屋根の一軒家外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無いため、スロット4は入口の写真"
+}

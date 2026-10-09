@@ -1,0 +1,45 @@
+{
+ "storeId": "r251",
+ "dir": "shop-r251",
+ "storeName": "和創屋 兆",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E5%89%B5%E5%B1%8B%20%E5%85%86%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9E%9A%E6%96%B9%E5%B8%82%E6%9D%B1%E8%88%B9%E6%A9%8B1-78",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E5%89%B5%E5%B1%8B+%E5%85%86/@34.8514712,135.6849535,17z/data=!3m1!4b1!4m6!3m5!1s0x60011b6596b556e9:0x4cc2f0c987674c57!8m2!3d34.8514712!4d135.6849535!16s%2Fg%2F1tcwwmqb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和創屋 兆",
+  "address": "大阪府枚方市東船橋１丁目７８",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r251/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TkW5Fuh0XG53PaBWIlqYm-RhP4e0GXZsUxDX_9XNAn8AMUuwzsT4AaP_UIaVEGmGY5ttfCloJwDyDCpo2j6VYjYyQd_tz4msWEDRQItMzj1nc2n09S9fPkfPQWOYbAZUcw6Z-Qjg=s1600",
+   "what": "格子の入口の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r251/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeJSdJ6DLUQW08L3TPEkHkWgiME-0I_wKf0GLB0dY1_pIHAmf2wZeL26XDXYQ7C5iD_XPqK9LzqMJI488r5a2XPhCys3JZf6QymGn5vol1sz3ue1waKq5LD4s0FuadeAwCezShvUx_5BUj=s1200",
+   "what": "盛り付けの美しい前菜",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r251/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4i-32ZsIW4QrTS_vBsYeeoDB9ajFIpQQo9fGq2UjNIfVTw2os6wkZuKRt0fIgPc9EjmH7KSDfEcqsFrfhFXMwGel-dngtlM67QCTKChJ4ayNb71wpSXfkTlWmCwSom5UaeZM=s1200",
+   "what": "掘りごたつの個室",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

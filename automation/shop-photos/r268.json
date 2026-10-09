@@ -1,0 +1,45 @@
+{
+ "storeId": "r268",
+ "dir": "shop-r268",
+ "storeName": "新立麺館",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%AB%8B%E9%BA%BA%E9%A4%A8%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E7%B6%B4%E5%96%9C%E9%83%A1%E5%AE%87%E6%B2%BB%E7%94%B0%E5%8E%9F%E7%94%BA%E7%AB%8B%E5%B7%9D67-1",
+ "placeUrl": "https://www.google.com/maps/place/%E6%96%B0%E7%AB%8B%E9%BA%BA%E9%A4%A8/@34.8536356,135.8633309,17z/data=!3m1!4b1!4m6!3m5!1s0x6001158f39642471:0x1b3a924e23062997!8m2!3d34.8536356!4d135.8633309!16s%2Fg%2F11nmcj5zgt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "新立麺館",
+  "address": "京都府綴喜郡宇治田原町立川６７−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r268/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtEGsU7Of3CEiS2B1RNR7nQRzrK0mozTkXywv2j7h0GtqmV00VQ9MDT1iYwqolWMFJClTLnQkLsCqS4hQlLMH8QymfPT3lW8NiMcvZY7nhZzZkSNAPtZM6hfcRlW-ggQq3cUVwC6ZxedIy=s1600",
+   "what": "黄色い看板の店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r268/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta4CKZX_bbLPS9oYFQjExEqsJ8CMAenycWJiikWTGqqi35M2HeagZ2-ZoLjMF2BqL3lfl9F3GSjQYEk_wthgL_kHouLYnF2WdpgHtcFHU_z4hJ4d3aCf9PsxHDdpvxJHBoRutVswYmt68=s1200",
+   "what": "ラーメンと餃子",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r268/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rw-6DEQ9yZ6a5joYox08e_JMjLCmsTf-CTd-E8BAwTT5rZAJ9e1cdB12bszmZt47BTnAcSlLJEkPGJ8QncGFp211ORKWSNDqYWDHx_gAbMauWzo-dfEP0nGE9_z53zGt6EECsRCWIM6B8=s1200",
+   "what": "チャーハン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

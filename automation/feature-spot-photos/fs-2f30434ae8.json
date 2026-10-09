@@ -1,0 +1,45 @@
+{
+ "featureId": "トラットリアSIN",
+ "dir": "fs-2f30434ae8",
+ "storeName": "トラットリア SIN",
+ "mapsUrl": "https://maps.google.com/?cid=5289357163669192270",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%88%E3%83%A9%E3%83%83%E3%83%88%E3%83%AA%E3%82%A2+SIN/@36.2386821,138.4777323,17z/data=!3m1!4b1!4m6!3m5!1s0x601c34a80bf68175:0x49679250eeab7e4e!8m2!3d36.2386821!4d138.4777323!16s%2Fg%2F1tkb55cc?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "トラットリア SIN",
+  "address": "〒385-0051 長野県佐久市中込２４７１−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2f30434ae8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcF5qoQjLLuMBKIu4m2ZLZ7MAyghl9j-3hTr8PI7cbsYBGU_92ru6BWIGy3tbxp5By4YtliV6YhyeIqw8X0V41KNDIVt2Oiq-pCfurm9uZkjle5R8jqZHbPR9dDeeF-77C0KYu=s1200",
+   "what": "ピザと料理の盛り合わせ",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2f30434ae8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rdl-WZjIBRSHt5JviPYDflZMvdtF9rIWR51ZLgizCVjqU2pMEx77TMp9mr_Lc-RfyvLm7X0xqXF6Pi-imN68hWFAcvD2H8V-De4E954mTDFjWu8tAETZh5umQqIjodriXgy6K4=s1200",
+   "what": "皿が飾られた店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2f30434ae8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RG4Vffp25yzLGl-AGauVT0_8vH2HM9VzhkIMzhOBrlDAHLdGVt9DVQR8HOgkknvycE0B4X_4_F1nVzcq_Ua99puRj0msvoa64GtP2EMAKfrLw5wr26UvAkqaNFE3gpNvivF6h7wQ=s1200",
+   "what": "厨房の窓と吊るしたサラミ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無いため、店内の写真を当てた"
+}

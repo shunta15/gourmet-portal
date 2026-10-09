@@ -1,0 +1,45 @@
+{
+ "featureId": "東華飯店",
+ "dir": "fs-b040d4fa2a",
+ "storeName": "東華飯店",
+ "mapsUrl": "https://maps.google.com/?cid=16527859669454527878",
+ "placeUrl": "https://www.google.com/maps/place/%E6%9D%B1%E8%8F%AF%E9%A3%AF%E5%BA%97/@35.6594619,139.3430248,17z/data=!3m1!4b1!4m6!3m5!1s0x60191dde5270c9df:0xe55ec0cd0f579d86!8m2!3d35.6594619!4d139.3430248!16s%2Fg%2F1v3_2r0b?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "東華飯店",
+  "address": "東京都八王子市明神町４丁目２−７ 秀和第１八王子レジデンス 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b040d4fa2a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRVeXixppm84BKYTBEDHd1R2UWl_5Jg4Pe3POUBofsQjUrVYyzbkEqyYHoj8cRThTKHnvTIp-0wXn_-ULv7FG1TehRFEOKqxxQ1pHetS77sCym_cRmDIVU6wNkkmRwN0h0nKT4Y7IqsGrR=s1200",
+   "what": "チャーハン",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b040d4fa2a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R70uKzYlRUyyt9ak81_rgE7viXyDookHqblgm6pJUpLmkYsswIK_OrvIz7ySE6VENaa04fP8ixTmgtF5QXBZTyOXiXjvPpMiSFWVoHEMgm4c4WpCeAhJxJY83aoEy0GX7rb-NJ=s1200",
+   "what": "テーブル席が並ぶ広い店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b040d4fa2a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdHlZFOW7xq7Kc5t7uo95So65u3YLLpB9toBfiglgovE58zD-YmkSmAKFj150m4RVfruqHHxIdeIfoXt8sirtjCPKYqAh10h9h_gsUU46M72YC6Tpp3sDmrKi266rI7y0wWjQDyRBXKnGE=s1200",
+   "what": "赤い看板の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

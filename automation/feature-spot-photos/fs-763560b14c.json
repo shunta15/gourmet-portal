@@ -1,0 +1,45 @@
+{
+ "featureId": "filmcafebar",
+ "dir": "fs-763560b14c",
+ "storeName": "film cafe&bar",
+ "mapsUrl": "https://maps.google.com/?cid=5751507635181030952",
+ "placeUrl": "https://www.google.com/maps/place/film+cafe%26bar/@35.4379508,139.3646318,17z/data=!3m1!4b1!4m6!3m5!1s0x6019ab0049da946f:0x4fd175b8ade98e28!8m2!3d35.4379508!4d139.3646318!16s%2Fg%2F11ys3wthqr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "film cafe&bar",
+  "address": "〒243-0014 神奈川県厚木市旭町１丁目２９−１３ PLUME 2F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-763560b14c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxnIWpyJykW6NAp1Gk0GDkvIBXr3h975hehziYdHmTabAdKhmudubpSL7CoajFUu2zx2LoxrD1wNeBQi4qZlW7zL_i1VLGLJCbs3dcKu9Z_TrffN1imiOvy3XmtExB1xXc-fiB6eu6cMo=s1200",
+   "what": "ワンプレートとドリンク",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-763560b14c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWgFOOtTOngEPxUyCo-ZkHw2y7tXzdIMBNjwEQQrl1eUmtaUAohjKtlf6FDMRJRJU0_rIsNYHYmIPuxdkLrwLFGmPpI54PngIinkMBRHkNc8CanEYLY2EC8VsnBsEiZh72pzUlk120N-Q=s1200",
+   "what": "ソファ席とバーカウンターの店内",
+   "width": 636,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-763560b14c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sj9ka4G59MY53A-ZAdomlePoCxO7qBNBmdQzWIyylR0SC2AglTCQ-RLLTKdazpoOO8XIbqnK_dAHFcaAtzKRb8waKUmqt67xHnAjxk2akpU5MVd5xciBP9SGyGCew_3kKlPIwWlq9fGlc4=s1200",
+   "what": "アーチのあるビルの外観",
+   "width": 615,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

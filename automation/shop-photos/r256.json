@@ -1,0 +1,45 @@
+{
+ "storeId": "r256",
+ "dir": "shop-r256",
+ "storeName": "らーめん桜坂",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E6%A1%9C%E5%9D%82%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E6%A7%BB%E5%B8%82%E9%AB%98%E6%A7%BB%E7%94%BA20-3%20%E5%92%8C%E7%94%B0%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E6%A1%9C%E5%9D%82/@34.8487137,135.6203944,17z/data=!3m1!4b1!4m6!3m5!1s0x600102ca6c6b90b3:0x46e3a5501a67a3d5!8m2!3d34.8487137!4d135.6203944!16s%2Fg%2F1vr1wjfp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "らーめん桜坂",
+  "address": "大阪府高槻市高槻町２０−３ 和田ビル",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r256/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUpUyBaxsnLjpGYBXSaBUcWCTGJ7L_Xdn9vmJzn0q6y5isW7j0gvNOh4CMFWE89G-cA0ube0BQGN8OVhCmAxMfiVUa-UjXLsPnZ2E9tGlYa9EGZrIpi1wMawvBm8zugP1jQyE8J63mpyJ9=s1600",
+   "what": "桜坂の看板がある外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r256/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFEjvi41FqBUUeyqcdIrAtD09zOSoavNXvnBukTxAVSrbePbydwhdSYJdeCZQX8y-I2Ym87lrkPZx4JkFBror-abVDY2tIZPgr-fA9A2LM8astGctYNZ4AEMcFAny8lqBer3MByT9nX18=s1200",
+   "what": "チャーシューのラーメン",
+   "width": 900,
+   "height": 598,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r256/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RDb-IJE_UnEnEPumbRSd8C6IT2dG0kjF0fhIGGxzMliS5uGUURSC2BHInwAZd2bPPv0EXbwHofjqXrCdXgUf72jOMtEzQVg2lV5xQ8H5d7p6HkwT_ukqbTJSS6qKvkunNzIxJLDBZkQTU=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

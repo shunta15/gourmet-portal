@@ -1,0 +1,55 @@
+{
+ "featureId": "ごはん処湊茶屋",
+ "dir": "fs-672e0a7fee",
+ "storeName": "ごはん処 湊茶屋",
+ "mapsUrl": "https://maps.google.com/?cid=8732475673094880470",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%94%E3%81%AF%E3%82%93%E5%87%A6+%E6%B9%8A%E8%8C%B6%E5%B1%8B/@34.5244797,136.7346922,17z/data=!3m1!4b1!4m6!3m5!1s0x60045b004722aa75:0x792ffc5ba88f7cd6!8m2!3d34.5244797!4d136.7346922!16s%2Fg%2F11xgsspshl?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ごはん処 湊茶屋",
+  "address": "三重県伊勢市大湊町１３４７−６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-672e0a7fee/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrApXfL2XqA4feMpMj5zx_AuAxDRdB8UZEf-wLUYJS4_mNy9Wj9_9ZaAHyT3SRUnsPNE1ZaTy13zBme0SFouM9pbPX4Cj6laGgCW21TlywsMrFARttbw3LAsikLJilT9hIkO8Bzmxmq-Cr=s1200",
+   "what": "カレーうどん",
+   "width": 857,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-672e0a7fee/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBwwpAU5I-q8JTp-eTB3N5qrcN34tQ8Mp1HHgXKOX8_mlEB-xw7FmuNBkH3H4flnHdLvf8NQ61-gTJHC2GLX78nawPyH6QioU4qm8y4ZHySNinNEQ6z1p-DQk9pf63wnBUqPEX78KOc46P=s1200",
+   "what": "うどんとどんぶりのセット",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-672e0a7fee/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdU4wA7LzjFCpdQNZd879IJYy12yoOM7tdvu7itdHxP-jV9MTXua9UH43yEq8VCs-Q2jx4dAdLrt2zmJoIvnlEwUSdDzjhkSBJkg7t3sIyglrTiKjVs91BsstAXN9ZlBmKPUQmJnX6uwN5=s1200",
+   "what": "木の外壁の店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-672e0a7fee/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyppZxb0Qslc9sZhWCvTeXBVNT8jpZfby7i9nPGhwiEIlz7YQ9IMXVW7Jjh0d5VCF4Cj5TCbBuJDdvSjc5khH3lXPlx618XfTbNbZvYGBkvGZ7lsl978dC03daVQFmaLoh0MeFkz4WSFSs=s1200",
+   "what": "梁の見えるテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

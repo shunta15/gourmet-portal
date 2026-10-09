@@ -1,0 +1,65 @@
+{
+ "featureId": "創作イタリアン肉バルCRAFT",
+ "dir": "fs-d3d538f04e",
+ "storeName": "創作イタリアン肉バル CRAFT",
+ "mapsUrl": "https://maps.google.com/?cid=9273979014773231358",
+ "placeUrl": "https://www.google.com/maps/place/%E5%89%B5%E4%BD%9C%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E8%82%89%E3%83%90%E3%83%AB+CRAFT/@35.9369753,139.776807,17z/data=!3m1!4b1!4m6!3m5!1s0x6018bd006f341209:0x80b3cac73dfc4efe!8m2!3d35.9369753!4d139.776807!16s%2Fg%2F11ybd38xxh?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "創作イタリアン肉バル CRAFT",
+  "address": "〒343-0042 埼玉県越谷市千間台東１丁目7−２６ ララせんげん台2",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-d3d538f04e/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmCvyCnI8oV4J8NMOwm8dhv2iKSqTteKLUGwxDI6glua403gMb7RwAp94fswWyS7-9UKUvMlrDTVWIloHzycmhirUQhBDbjFarliDynqpx2NLhexPStUk8_HP083AFt_fJFSCClQHVNic=s1200",
+   "what": "肉料理の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-d3d538f04e/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNVlKzrp09D6GCN1XsoVU83TtNB8GHbDavWytYQftYefHF-cCPG-M7vYEKBDl94l_1JQne1A4RyS5rBU2fkCo5CbDZBntII-FpuIl6daYLqqSl8vDJ_goa2RGKe5HEGxARmuxb4W0g1oSO=s1200",
+   "what": "ステーキとフライドポテト",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d3d538f04e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QqqbN296LQejcn5w-aqn_aof2XPe3ZN25hhgrueeGSKFWIbzeMmWYlR4PcLYxVPRcTJPEv4meDeX379VxeWtvRrFJi-XbGaY5SwVDE5yKzr2fU_TkTI53KAnYdc_m3zkPxfVLH-ym8w8AZ=s1200",
+   "what": "ボトルが並ぶバーカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d3d538f04e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sbr6nCafhRty2yDsT467tmh-D88gyP3sKcDrqwU0vLo99wRjBlMtm7cDkB4qobVXqkC6-jcKd0vHfOLngdpOvQf6t9rNgplz1B5jL52qx9BeWKSZKpYN324XdIo3AEKDODac3JwALiQW0=s1200",
+   "what": "席の並ぶ店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d3d538f04e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwDP6F5WTG74RWvETjphJ6eiS5kbD38Rlan3mGKdfPmJG3d1BBoCtZazxAFoVwm5KGhIe8ezlr02SKq2uZOMxoPKhW2Yi0b2J1-W4Ups5Dxx1dxSw2JaxQXYXWW-muQYsIPmA7FIJxZkme=s1200",
+   "what": "ピザ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

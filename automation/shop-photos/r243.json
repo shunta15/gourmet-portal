@@ -1,0 +1,45 @@
+{
+ "storeId": "r243",
+ "dir": "shop-r243",
+ "storeName": "キングスポート",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E6%96%B0%E5%AE%B62-1-41",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88/@34.6705995,135.5946761,17z/data=!3m1!4b1!4m6!3m5!1s0x6000df8c418b096d:0x8eb628ac7498983e!8m2!3d34.6705995!4d135.5946761!16s%2Fg%2F1tdkgjdy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "キングスポート",
+  "address": "大阪府東大阪市新家２丁目１−４１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r243/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QC4HzLuwnMVRXnE9YjaNkvcLLXfEtdgopUFjhsajD3ljQy7cYIj1TfVRC0ScFwuRa1fA1sA-irCkoyazqKNn64f5iEl0pEEgmeFU0KwmOfx7nFOSfS6w1ew0sjV_9lNG3FcPtpVb8v0Oeq=s1600",
+   "what": "山盛りキャベツの揚げ物の皿",
+   "width": 1400,
+   "height": 1051,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r243/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QvmLLnrJrQJHeXglDnwq8HP4b5JRHbIEDCICDX681Yi_sOuLL3sn0ZGtWIc4pf8jWe67k5Txs5liAqmkzy7GQn1_5hBXSaKz-_JI6Wuv7nBOcaXfm7w_k7kVvws5Y9VbqQmmX4D7IqAolP=s1200",
+   "what": "店名の看板のある建物の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r243/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIoo-mPShdZXLoAxITz7Vv8FmbBWyzRHsmC35Cn6CiXOg3fokwwnmSIp9Y5yr7Ve3srzgjJ7mvndLQiQL8rM0_KmN73PjoaPIAiB6XoewIwqypkqlYpXbXOc44lCjJ9blWG3vCI5troa4N=s1200",
+   "what": "明るいテーブル席の店内",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

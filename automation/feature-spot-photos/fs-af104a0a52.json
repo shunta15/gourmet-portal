@@ -1,0 +1,45 @@
+{
+ "featureId": "百饅馬力",
+ "dir": "fs-af104a0a52",
+ "storeName": "百饅馬力",
+ "mapsUrl": "https://maps.google.com/?cid=2560018624880311655",
+ "placeUrl": "https://www.google.com/maps/place/%E7%99%BE%E9%A5%85%E9%A6%AC%E5%8A%9B/@35.1154422,136.1082663,17z/data=!3m1!4b1!4m6!3m5!1s0x60017bbb8e3b6ed5:0x23870360325ffd67!8m2!3d35.1154422!4d136.1082663!16s%2Fg%2F1td4k0j5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "百饅馬力",
+  "address": "〒523-0015 滋賀県近江八幡市上田町１２５３−２０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-af104a0a52/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcijefRIm90PsQc9MCfZDRwqc6KvUvUBg0ietefw9TYi3dn_HcxtHugo6kQiH081FJGShqHpgkQArjYmx4r4K90AqelatRt4RehbkyFSK98V7NQwh2ZSa8fDOhUQSYlIfFEK2Lgqi54WMu=s1200",
+   "what": "味玉チャーシュー麺",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-af104a0a52/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLRe8LNZFAKHOCuazvr5QxaYaIWZYZjMxm7HUZdtZCHYxsvqPBJHc6FQWc437spi3jgpI6EwdbELEbYdOesitrDYd30SdvQhzm2GleXLk2xcKn2IdRLMAiYyfqE5aL9Y4FKsaUD5cS2Q5a=s1200",
+   "what": "ガラス戸の入口と看板",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-af104a0a52/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RZYB1z2nNyT1vH6QC00M3N7isx-zr2HzUgjvMNKxAgq8udHK9RvxeXxUPhZ1eClxAc2KWuXcTvm08EnrCKhTEsAz6_1Jamp9OmRlLKe13wAADMZyMB27SI3Hgh3TKEHjv86j9G=s1200",
+   "what": "駐車場側の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、slot4は入口の写真で代用"
+}

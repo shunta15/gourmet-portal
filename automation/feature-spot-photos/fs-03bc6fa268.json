@@ -1,0 +1,45 @@
+{
+ "featureId": "咲果庄",
+ "dir": "fs-03bc6fa268",
+ "storeName": "咲果庄",
+ "mapsUrl": "https://maps.google.com/?cid=3652493272964457454",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%B2%E6%9E%9C%E5%BA%84/@34.0510942,131.56829,17z/data=!3m1!4b1!4m6!3m5!1s0x3544928e587e87a1:0x32b04347af8ce3ee!8m2!3d34.0510942!4d131.56829!16s%2Fg%2F1vd3sl4w?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "咲果庄",
+  "address": "山口県防府市中央町５−２５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-03bc6fa268/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRsEnRsO4098XoA8PEDh_pa4wb-C6XR3JdHbBQecXc2zo2oEahyYdy3LVjMPg_sIHGwGgoa-1L1M2NkOxhuGP_vm7L3xnJyqySy0lXT3C4yga5Azt01QTI1sZkB56fkoEjSU1InJKIj9k=s1200",
+   "what": "会席料理の盛り合わせ",
+   "width": 900,
+   "height": 598,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-03bc6fa268/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPZcfjlwMj3ZoYzmHLDvBP1_CkIDeIntI6OtrgW_F3h0ZhWnnl4Uo3uoW5TzmSFFo6FTJh4s4e6k1SJMLQGTL_f1bJl__0aJUNlhlq2cWGXXMjKO-EvAZXWBrIRvDux17oHnSkN29BEbGz=s1200",
+   "what": "テーブル席が並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-03bc6fa268/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGv07LrPXMVwYXCU8YG2083r562mpk18Q3IWj3jn35XtYUH_u8lnrSgYDn2DWmcmICnJwtDHzKkxLHgcHj8UIWUk2wJW0AnqngdHcUZqCZLymD13iZFH5DuAR6pgV44grsMyJHjnzcTl3l=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 540,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

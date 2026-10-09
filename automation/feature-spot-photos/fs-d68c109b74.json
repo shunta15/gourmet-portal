@@ -1,0 +1,45 @@
+{
+ "featureId": "創作居酒屋こばやし",
+ "dir": "fs-d68c109b74",
+ "storeName": "創作居酒屋こばやし",
+ "mapsUrl": "https://maps.google.com/?cid=7253966392239905521",
+ "placeUrl": "https://www.google.com/maps/place/%E5%89%B5%E4%BD%9C%E5%B1%85%E9%85%92%E5%B1%8B%E3%81%93%E3%81%B0%E3%82%84%E3%81%97/@34.9887726,135.7167532,17z/data=!3m1!4b1!4m6!3m5!1s0x600106570a548875:0x64ab44002614daf1!8m2!3d34.9887726!4d135.7167532!16s%2Fg%2F11c1rfq8h2?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "創作居酒屋こばやし",
+  "address": "京都府京都市右京区西京極徳大寺団子田町３８−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d68c109b74/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1_aZ7R5ZSKXRXYVQZ5Z8Yw2o83TXixeDnJ4eZBgm5NcwZc90KKxNJj25u70zJOkEe_plm_QKFlE4dqaG7y3ImZ_aqF8LR9872G0jgEl6WfEczfxQZK_mdUuXkhsxlrCKna12K=s1200",
+   "what": "ごはんと小鉢の昼の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d68c109b74/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qa8XHmjb2PUZXTEg0Jf3Qk4V3w0SGmWTt7CQ0mLe0-muvP0qedxrKPS29NAFi8PB0H08IRuD6mK0yGajXKStr9D8APXa0E8i8rgc3Y10as8OP-quo03lb-e5uxdT0pe5Uq50MpZg=s1200",
+   "what": "日本酒の瓶が並ぶカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d68c109b74/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzoBy3R5AaoYmYSosOBTmKaL1hHfeaw2Xox97_qUoAI7hdHfEpJZPh4Fa27Kn87VM9chNK16RZfwEAl8hjdKf2g79XCkdV-F9K0T2pyLrJ-XqrHN1s-hwLL7lnhF2US6KemuLOcMzvrfZ-=s1200",
+   "what": "暖簾のかかる店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "うどんとお酒と彩りsiki",
+ "dir": "fs-a99c4b6b77",
+ "storeName": "うどんとお酒と彩りsiki",
+ "mapsUrl": "https://maps.google.com/?cid=1817401144543866301",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%86%E3%81%A9%E3%82%93%E3%81%A8%E3%81%8A%E9%85%92%E3%81%A8%E5%BD%A9%E3%82%8Asiki/@34.6012055,133.7703779,17z/data=!3m1!4b1!4m6!3m5!1s0x35515640f4ec1a75:0x1938b4b642ecedbd!8m2!3d34.6012055!4d133.7703779!16s%2Fg%2F11c3v11pd2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "うどんとお酒と彩りsiki",
+  "address": "〒710-0056 岡山県倉敷市鶴形１丁目４−４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a99c4b6b77/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R84WOE1O1txXhxtuAwqzuRWRIpItGJwQ4sbfjt_VteeeuiOwUa1HrvlbmOS8gXxFB9Ja8viBKIK-1LQ6nPflj6cjjKqJ66jXnGAQ4XYNrICYfmdnm4FSVweI-HbCuWctSFWdRdZWChmYqW=s1200",
+   "what": "鰹節をのせたうどん",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a99c4b6b77/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QDH5JQ_vI_aMCzQNWuXt_nDhorQ4ZO3ztF1tQS32QLgTcdVSGrpJqRuYZ0Cfcg0YcFHSLulC-BOwNl5FbBWDBXT0zrulXJBO7tA1wHaesd5mQ2rnjc_qOQvKz-ZdkV2JGSriiCqACwdVk=s1200",
+   "what": "木のカウンターのうどん",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a99c4b6b77/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZrz4GT4ENy9-2NUBDDh4sZ84CDB4Qh-vBz7o-N1WWx1Hp4gZ26iX_YeQvjCXjAOjJYZgDHcAZR6kYTiaJHrSI2SH7p5jizBQFBFYI239sBnnTVJsCzgV92cF45QwK2_cq_l3uuVi2j1s=s1200",
+   "what": "藍染の暖簾のある入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4はカウンターの料理写真で代用。ほかの店名(ふじ心)の看板が写る1枚は不使用"
+}

@@ -1,0 +1,65 @@
+{
+ "featureId": "竹千庵",
+ "dir": "fs-28b0dabc82",
+ "storeName": "竹千庵",
+ "mapsUrl": "https://maps.google.com/?cid=16585605218119695176",
+ "placeUrl": "https://www.google.com/maps/place/%E7%AB%B9%E5%8D%83%E5%BA%B5/@38.9361123,141.1291162,17z/data=!3m1!4b1!4m6!3m5!1s0x5f88d0772c78a64b:0xe62be81252e3bb48!8m2!3d38.9361123!4d141.1291162!16s%2Fg%2F1tm29h2j?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "竹千庵",
+  "address": "〒021-0021 岩手県一関市中央町２丁目２−２３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-28b0dabc82/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUWFf9FvoUk_kRd4XQmEDvrB286ezLYZ1VIASUzrKncYcc8hVSHNqpnF7QDQelGFDJLJqzr69xCS60RGIuNn8uy3H3xGxYRzmlTUzN1d7VIIwiBvoperJcNomm5arHSmTurJXZlBRY_egh=s1200",
+   "what": "看板のある店の入口",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-28b0dabc82/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxyCaObxf0rKlFdiE5KCPFFff8_pa8eDDsNNg6L1cKqchjGN34OT6AjQYiE2UWlDhew0OEePkMjgCKsesp_yqGysJD_xLO_erjL9xg9RFSn0s0yPp2yzVdOeqj_Fn5zfb4gBw8=s1200",
+   "what": "提灯のある店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-28b0dabc82/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S38tC-lgf7XfT37uBRaMvfNGdcm21SS6AMzJpYDnROJuken8tuXCSfLfBk0aGWjS-QC_3JOX6yhAX161xNzwcKvH7ROxP99jFKxnZLZs0Sd_WHxuHi4gCmvV-kWft8Vyt7Nh0EpQ=s1200",
+   "what": "広い店内の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-28b0dabc82/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbAvp_-IwYn85lK8nAMKvwuilJ2fnk3G0D8AZSqO0ZZPDvgNCuIA8Mitn-YhfWlGmO4W_RPRxX9uGQYw0OyEQnKQTNsQRr0LfKFjTH_Uyj9-Fw4MFgRkwKfNY1aLaMryEBvaww_Hj38HI=s1200",
+   "what": "カツ丼と蕎麦のセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-28b0dabc82/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCEgYOM80Xg_qm3dLSYWRDnQINX07VjdV0ZIisf9kkHVyNpckZQLpJ4hWFTqlMZVq6IdlWzUW-CldOkDp6rjJowIdxh9xT3-zDPGF956GLEOxZsXDW0xgUU2EES6lmh2WeJoc5ow=s1200",
+   "what": "わかめ蕎麦",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

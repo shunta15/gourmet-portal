@@ -1,0 +1,55 @@
+{
+ "featureId": "FUJICOFFEE（ふじ珈琲）",
+ "dir": "fs-cab2a76799",
+ "storeName": "FUJI COFFEE（ふじ珈琲）",
+ "mapsUrl": "https://maps.google.com/?cid=12831261639030973078",
+ "placeUrl": "https://www.google.com/maps/place/FUJI+COFFEE%EF%BC%88%E3%81%B5%E3%81%98%E7%8F%88%E7%90%B2%EF%BC%89/@33.9572557,130.9440661,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bdb1ebc408b3:0xb211cc7a4e89a296!8m2!3d33.9572557!4d130.9440661!16s%2Fg%2F11lm2d10d3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "FUJI COFFEE（ふじ珈琲）",
+  "address": "山口県下関市中之町１−１４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-cab2a76799/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJNtLHDvcJNeQ3dRofBfV_zX7lmkhT7J0KwNYOj_XiTIlsaMTd498eC6_tJnU9os6bNfLFEvy9Z4c7kc3bSk5SEzQSBDskkXObcE22fKnbWNh0RdOBKKSeF-le_CxemHYuVU67vg=s1200",
+   "what": "豆が並ぶ陳列棚",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-cab2a76799/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQPJ5Q9MmJbnobdFDm8SNukovojwBbxvvgEWCflo0CaLZUlQwTxg6l-1xfLl00dgGLPuMCNGps0Od1QN75gDKnbPnoUkLGj66aSBb_h_gF9NckDy2vTalYe23mAmbKZiEWh7lC=s1200",
+   "what": "焙煎機の中のコーヒー豆",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-cab2a76799/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBIsHdbE0B-YzWA-EMzoiTvnzAnsxt4WtrI_4hznC-lioPyVVXsVwjsqa5fZhGihfZTP3SCUw0sL-nx7_eUrjW3_aRzg_IeUP6VjuTXAyQNKvsM6Yd2-xxjEEPBI6gJEOKDD2-bw=s1200",
+   "what": "白いカウンターの店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-cab2a76799/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHmdjhY2GlGYDVVXIzmF1Dq9tzEzaVB35MrP8DXUJlrRr8UwCa9S8jNJkQBNNbymxhMnnT8NrILcEEwq-cHBaF85wgcmsB9AMIb88bdRfz5ZV8iNaD7B7ymeH_NQo7VzXXLgR0=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

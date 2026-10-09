@@ -1,0 +1,55 @@
+{
+ "featureId": "野菜と魚を楽しむ店華－hana",
+ "dir": "fs-4bfb3e9d3a",
+ "storeName": "野菜と魚を楽しむ店 華－hana",
+ "mapsUrl": "https://maps.google.com/?cid=4151749625909962222",
+ "placeUrl": "https://www.google.com/maps/place/%E9%87%8E%E8%8F%9C%E3%81%A8%E9%AD%9A%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E5%BA%97+%E8%8F%AF%EF%BC%8Dhana/@34.5148636,135.7972635,17z/data=!3m1!4b1!4m6!3m5!1s0x60013322f6450081:0x399dfa49b0b965ee!8m2!3d34.5148636!4d135.7972635!16s%2Fg%2F11bzr7_b45?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "野菜と魚を楽しむ店 華－hana",
+  "address": "〒634-0006 奈良県橿原市新賀町２７１−１ 豊國ビル 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-4bfb3e9d3a/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHejv3DUYPlWQkUHs5stQshI8Litgr6dnd1ahDZx_ZzUUVk21zsDQgasxYxRMn0S3KnZasOjmfu30o7BdouwGLxgtnL0IGv7M4f_a-qg1YLXNY96kKEe7I0hwTfc7I5CkBiDeVtw=s1200",
+   "what": "ホタテのトマトパスタ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4bfb3e9d3a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEhty_R2gyfjpE57HF-yLRnf1PoeQFZ2gs7RzBeTET11rn2t3DTFqFwiPK2OLslZYNIbMf7jRz3Hw3HPvV4Lq9cUY79na2H5HNHqKE4hJ0HmAp75nFYiVTxL4PFXZv3r-18jAS0Q=s1200",
+   "what": "ランチの御膳",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4bfb3e9d3a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SK4CDxZv65QhMzYuQcRxdUu5epAJh9nqRA8HzPFJwayWMQeN0T2Ez9NQlNlcqajunhXqpiOmXFchHE31B25KCBDe_1zocR460_lGNKgKsOl5ISuLFjC4X5SKZxu6rXz1IxxAsmNw=s1200",
+   "what": "カウンターとテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4bfb3e9d3a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8fJnE9hpWWFBlZxUhGbPy4-XJZzOi82hmPzQryvuLNYbXi_jGVOT-tmiknOD1Ic8fBWi7m1OxG2wHBldvuBW_3oGFPrLYDaw26S4YspAMGk6guwIqI2HN3xu-TVUC5BYNI32XQw=s1200",
+   "what": "入口と看板",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "ゆで餃子JINGJIAOZI",
+ "dir": "fs-6b783efbef",
+ "storeName": "ゆで餃子 JING JIAOZI",
+ "mapsUrl": "https://maps.google.com/?cid=1515119922348971649",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%86%E3%81%A7%E9%A4%83%E5%AD%90+JING+JIAOZI/@26.3838454,127.8426062,17z/data=!3m1!4b1!4m6!3m5!1s0x34e50f43f5668009:0x1506c98abbba5681!8m2!3d26.3838454!4d127.8426062!16s%2Fg%2F11z7qp9z67?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ゆで餃子 JING JIAOZI",
+  "address": "〒904-2203 沖縄県うるま市川崎７７１−３ 川崎貸店舗 1階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6b783efbef/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SU_p32ebBxNTajLYKwDEvWdosXvbPtuqv_0RjEqGn-h_BUk2oIrdfiF9_-vTnhPtkWEIFhPkVGqHdg01bR7YTJFHhVBgVOcVVPwqtv-JOA3-jT56fpNpBf3vUuwQRdlWRdfjdfF8Rro1b4=s1200",
+   "what": "餃子の定食",
+   "width": 900,
+   "height": 668,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6b783efbef/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_EihJqIbf3VUyb9KG0YrlEDni-7eeB5T2WJ10LRjFfxod6Pxw5VsLchK9yR8yxUJ51jf3XTNtYnjZW4ogjvXGR_CMise-oPL2pEZ7wc4tqkSazlszlZoSKiPpI17SklN4oDBlV87Pr-YB=s1200",
+   "what": "ボトルを飾った店内の壁",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6b783efbef/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rrnu-wTk-Q0kKYFyzSFEXgzdtdBe55Zo32TkWz6yYah4yHvwQCoGZJQNEJ8YqMWeOp9JYcGBW77DK5Yst3xuoTpmhuywPuHoH-lImcO2lA75jh4P0stXCDJWc1R-4daFKA3JxMMADE7awz=s1200",
+   "what": "道路沿いの店の外観",
+   "width": 900,
+   "height": 814,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,55 @@
+{
+ "featureId": "【CAFE】i-HUB",
+ "dir": "fs-87cf903d9e",
+ "storeName": "【CAFE】i/HUB",
+ "mapsUrl": "https://maps.google.com/?cid=6184612285112112075",
+ "placeUrl": "https://www.google.com/maps/place/%E3%80%90CAFE%E3%80%91i%2FHUB/@35.222221,138.6134191,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd135c5cb53bd:0x55d4281b179fd3cb!8m2!3d35.222221!4d138.6134191!16s%2Fg%2F11ntcfhgc0?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "【CAFE】i/HUB",
+  "address": "静岡県富士宮市大宮町３１−７ 澤田ビル 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-87cf903d9e/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyPh44941ZoiJRHZJ4mFHunhODBhI5C9wIddgYZ19oPNod8isiQBb76FdaZHImKzf9NFDoBMJ6zxicDH7gjIdq9rzISNjShf7-zKEBwsH4i4NbZU_VDBCspwRXDm12xpU1z5-JkbQB2y5u=s1200",
+   "what": "黒板とカウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-87cf903d9e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SA7vELpJPpdEyP2WnDpHhMM81e74ze8qW6pZ6W29y5P_k9CgJ0V6EwS0VO1SjTzcHXvDvyujuhXPf6u95baAna6eAbK7xZyH6EMVSqeoQ0o8TXvRgwzy9w2X5roDKRpEw8gcYRYab4Gp_e=s1200",
+   "what": "窓際の作業向きカウンター席",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-87cf903d9e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjNjGBJYFgHmUYDyLnYCPQ9FeKaXqvbUIVu23wdfwI5wqUvikCBu312Nd-zP4QkJTyeKzIuMB0aeUcipn55ecZpaFKqAK4dS4NwXRn6NJu7YoornXBv6oPwsVu1_INyo5zM8UxORuaeaA=s1200",
+   "what": "ソファ席とテーブル席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-87cf903d9e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4QlQEG86d9tE2Dk8FF6GWWxcodMKhj30gHgZ1v_7HkSQ9ncDFnSwxZSTUSCui7ADFM7--yLNl5-p6-J_wrHd8S3ipxd9J8FgCoF5-rT8dA4c7g2pgyvQDp9MGzKJLxVL98Jh4EovgsmBT=s1200",
+   "what": "テラス席のある店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

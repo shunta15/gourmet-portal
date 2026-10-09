@@ -10,8 +10,7 @@ import type { Feature, FeatureArticle } from "@/lib/regions";
 import type { FmapData } from "@/lib/portal/fmap";
 import { mapsUrlForRankItem } from "@/lib/maps";
 import { sized } from "@/lib/imageUrl";
-import { isBlockedImage } from "@/lib/imageBlocklist";
-import { isUnusableImage } from "@/lib/portal/noren/shop";
+import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
 import { bandNameSize, bandPlan, clothName, colsOf, emOf, kanjiNo, photoSpans, plainLen, splitRank, titleSize } from "@/lib/portal/noren/feature";
 
@@ -19,7 +18,8 @@ import { bandNameSize, bandPlan, clothName, colsOf, emOf, kanjiNo, photoSpans, p
 // （/feature/<id> が next.config.ts の rewrites でここに来る）が共通で使う。データの取り方・メタ情報・構造化データは呼び出し側のページ。
 // ここは「今の /feature/[id]（components/FeatureClient.tsx）と同じ中身を、暖簾の組みで出す」ところだけ。
 // 組み方は「暖簾の並ぶ横丁を、はしごする」: 載っている店・場所の数だけ暖簾が掛かる巻頭 → 店ごとに暖簾をくぐって、中の品書きを読む。
-const usable = (u: string) => !isUnusableImage(u) && !isBlockedImage(u);
+// 「使える写真」の判定は lib/portal/noren/usableImage.ts の 1 つの関数（写真の無いポイントに写真を当てる lib/featureSpotPhotos.ts と共有）
+const usable = isUsableFeatureImage;
 
 export type FeaturePageProps = {
   article: FeatureArticle;

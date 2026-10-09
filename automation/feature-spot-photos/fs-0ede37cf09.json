@@ -1,0 +1,45 @@
+{
+ "featureId": "創丸福",
+ "dir": "fs-0ede37cf09",
+ "storeName": "創 丸福",
+ "mapsUrl": "https://maps.google.com/?cid=304079967394170187",
+ "placeUrl": "https://www.google.com/maps/place/%E5%89%B5+%E4%B8%B8%E7%A6%8F/@34.7316973,135.557939,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e1185f06fe2d:0x4384f1e87d7854b!8m2!3d34.7316973!4d135.557939!16s%2Fg%2F11s8kwd20h?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "創 丸福",
+  "address": "〒570-0079 大阪府守口市金下町１丁目４ 4番地5",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0ede37cf09/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGkSJPXyY7TKTpX_DvSLv60mKjNgEBLWqBVxZWYWZDuYuslg9Kpq8gRfZieClZ24OiR3NEVwhU_GJPvJw-uSI0LZkq6Keey2Vl78z7xsfMZD_apDWpEh_mhb62UVB8qUOaJY5RWPPMsDYb=s1200",
+   "what": "刺身と小鉢の定食",
+   "width": 838,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0ede37cf09/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBYlw4S6LudPofIT-2m4tf6f_vZFdpX6qfIMa3sWGfQPZTVbLR54zvr4qJxpmjaf37RxWJEPp8_NaBASm2nJsGokFNQuhmmwUZoj2s6J557Ygdg7r-6J8P_EJ2JIdLhkpT67U3S_tBsxLW=s1200",
+   "what": "カウンターの酒瓶と料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0ede37cf09/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPjRCuywXAjWH6prs0C9VjRLRwtFwez0WRdfhynS5y39azxDTeXAoNMzyArVccpcUToVKKr1bjuVUvctC0veYoGuGHB_pPPvoGh9_Eg4aP4aVyhEFbQYl3gVTDYpaWK6rgq6uA=s1200",
+   "what": "木の看板のある外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4はカウンターの写真で代用"
+}

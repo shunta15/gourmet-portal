@@ -1,0 +1,45 @@
+{
+ "featureId": "リストランテドラマティコ",
+ "dir": "fs-b94e3e3eb0",
+ "storeName": "リストランテ ドラマティコ",
+ "mapsUrl": "https://maps.google.com/?cid=1563726359372563286",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%86+%E3%83%89%E3%83%A9%E3%83%9E%E3%83%86%E3%82%A3%E3%82%B3/@35.7025562,139.6178666,17z/data=!3m1!4b1!4m6!3m5!1s0x6018edf9b10bdc9f:0x15b378d6c0510356!8m2!3d35.7025562!4d139.6178666!16s%2Fg%2F11c58ny2hk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "リストランテ ドラマティコ",
+  "address": "〒167-0051 東京都杉並区荻窪５丁目１２−１６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b94e3e3eb0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RV3AbaTs43r8QE2cNwMEgV-oJ-GQjcGXqBmJGDre6OkXaZVt7hql9xeAwDVUARFVw3EC92LD-0Aut8NfjObk90JdZBZy3KbbSE77T165YdJYS7XjhmR8WsPtcK_Z2S_h1u9KwCfmVu28g=s1200",
+   "what": "パスタの一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b94e3e3eb0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QFjFWHrTnm1rHcQ1vq85I30OrV6jzLBhdCDJWa6NRwvubb3Fgchh-mVyr7_xmcrt1KVMOlYqinbvGfSl2eIYo9BXMhs-d8DK9FW6Q6rfef690sNN11NsgP3BFq80uC5tP_3qb4-fS4DeU7=s1200",
+   "what": "カウンター席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b94e3e3eb0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5I4OfKyMUzAHvnZg4H9qop9WfnaHxFKy3Hq4DE4rWMhzRlK8uoK9eEF6c0-TXHD5jyqVCHvKwCw-kJgMSLNWH5TwoFRmvidBytTz71XoRdUlE4cLe1lzTg8EHpym5Vw_2KseEd7WEyHk=s1200",
+   "what": "路地に出た看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

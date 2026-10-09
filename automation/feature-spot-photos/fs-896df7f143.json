@@ -1,0 +1,65 @@
+{
+ "featureId": "おじゃったもん屋",
+ "dir": "fs-896df7f143",
+ "storeName": "おじゃったもん屋",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%98%E3%82%83%E3%81%A3%E3%81%9F%E3%82%82%E3%82%93%E5%B1%8B%20%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E5%8D%83%E6%97%A5%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E3%81%98%E3%82%83%E3%81%A3%E3%81%9F%E3%82%82%E3%82%93%E5%B1%8B/@31.5901783,130.5547393,17z/data=!3m1!4b1!4m6!3m5!1s0x353e610079f29d4d:0x772fb24213692231!8m2!3d31.5901783!4d130.5547393!16s%2Fg%2F11xyph42mv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "おじゃったもん屋",
+  "address": "鹿児島県鹿児島市千日町１ センテラス2階",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-896df7f143/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIrvMAnU5ZaQtiRhlePwq6c1TZBE-q0nfavLHeI6PkltwJF97w3MIzyX2fmsVGWhu6P22uaYVSLiHQn43YflJHip833XnKTkpztVu4S_V2w8--LWVSwvl_rF88-nLscoFecEn0i2K5mtA=s1200",
+   "what": "牛のっけ丼と手まり寿司",
+   "width": 1400,
+   "height": 787,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-896df7f143/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTR73EI-sJ8_iE__MFBDgEJSOW036sagdTSQep2DT76NyoI6ENZ0ll9VJ_W3pwgT3ZLDnLKt3c7HCW9NK8rPR1l_woKtbcEdSQoQrEKgxgqFy5eYIH788JMagZe9lY1UZpJJmUPdBdJa5L=s1200",
+   "what": "炙り牛のにぎり",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-896df7f143/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_Kf5p-I71C5FruYdmrvuDDblMMZ8seUQcKcf6m6JuYLQoH9O_51XynpWGfl7_Sse_8_Fi51zBLGjeCQ8n2mYxrT8rJIZkY1QZ1kfo31GoXGg_DKkuq5fZ8puukll3Z8b5Jw67QQQRSno=s1200",
+   "what": "うどんとかき揚げ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-896df7f143/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6rmrhndSDwTRqxR5OvEExfQ1fUHR1-BcCO6L9a6lbnxUoQN0aHVMxBp6wdMh0Dqrraw1uvuKmFJ72WQdHcRBcYt-RwwhIQI31AF3olBvgjZnxH09K2EfE5c8vJLe_WPYiNOXwl9WN5um-=s1200",
+   "what": "店名の看板とおでん",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-896df7f143/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnY-4BQ077q1LgyJRpVDF5bImJJEdJ4mZN8r0Lm7Un8kyMtu4fCJmYtlyvsZCzxUH49VV3_iV4HHy7cg6XGvqDfSTkDnD6l0BE3wYjVI3woWGYXyYf8Qxs7e967xC3ImS_m4mdRTRN7nWC=s1200",
+   "what": "のれんと幟の店先",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真は店先と同じ構図のものしか無く、p4は店名の看板が写るおでんの写真で代用"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "らぁめん麺楽屋上尾店つけ麺",
+ "dir": "fs-e5373aa4a2",
+ "storeName": "らぁめん麺楽屋上尾店 つけ麺",
+ "mapsUrl": "https://maps.google.com/?cid=8581559382218702071",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%89%E3%81%81%E3%82%81%E3%82%93%E9%BA%BA%E6%A5%BD%E5%B1%8B%E4%B8%8A%E5%B0%BE%E5%BA%97+%E3%81%A4%E3%81%91%E9%BA%BA/@35.9826933,139.5696486,17z/data=!3m1!4b1!4m6!3m5!1s0x6018cf77f1584343:0x7717d2ca8410fcf7!8m2!3d35.9826933!4d139.5696486!16s%2Fg%2F1vyk2jj5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "らぁめん麺楽屋上尾店 つけ麺",
+  "address": "埼玉県上尾市中妻２丁目１３−２３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e5373aa4a2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbiHsRvwbioSnEQFW137iAKB5kLVuEQLPHh2OLy0-fuYCjiCmjIgPJive2lmDSovBj6vuaIR07j5q58WrDxoiXrW8-KXq6NOUB7uOeAtEt523Eo893ywa4CTHI5X-0I89jyl2bagZAi8Tr=s1200",
+   "what": "つけ麺",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e5373aa4a2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEx5OHT-k8rDheryUjrL7aEBG1kElN_6Deq-8j5QDZwQwUWAPslnhAGohv1cydfUEWuV1oGWrt1p4oLp2J89pjTOUbDppB6PPaT3FkncVkwrJ_GyLftX7Kwc39xHFoXq1gO4ftjv7JCrtK=s1200",
+   "what": "カウンターと座席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e5373aa4a2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qn0C6gcv6OrmvhGjhjpF4w-I7Ep9b1nvRUsYswZ56O2zae_oGqpKXQqwv82N96PXPzRWnvdLXSDAG1lJ8Y5mtxYlzf2kQR267Kuwa3p5hziHtCiXSGoADo_94reHyEw2a0IS4xY7LxHUHo=s1200",
+   "what": "のれんのある店の外観",
+   "width": 900,
+   "height": 678,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "文字入りの宣伝用画像は使わず"
+}
