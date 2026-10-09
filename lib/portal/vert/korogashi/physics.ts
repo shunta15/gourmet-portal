@@ -70,7 +70,9 @@ const R_POLE = 0.5;
 /** 眠っている物を起こす、ぶつかる物の速さ */
 const WAKE_SPEED = 0.45;
 /** 山が落ち着くまでに、ポールが(あたり・転がりで)回る量。実測(同じ手順で必ず同じになる)。帯の字が、落ち着いたときにカメラ側を向くよう、置くときに引いておく */
-const SETTLE_DELTA = [-0.007, 0.031, -0.055, -0.36, 0.066, 1.007];
+const SETTLE_DELTA = [0.015, -0.004, -0.027, 0.003, -0.003, -0.026];
+/** 落ち着いた山で、帯の字がカメラの向きを向く角度(スタートのカメラの仰角・向きから) */
+const FACE_A = -0.93;
 const VARIETY = [0.05, -0.06, 0.04, -0.03, 0.06, -0.04];
 
 function mk(kind: BodyKind, id: number, z: number, y: number, r: number, o: Partial<Body> = {}): Body {
@@ -138,7 +140,7 @@ export function wakeAll(w: World) {
 }
 
 /** 開いた瞬間: 山が上から 1 本ずつ降りてくる(下の段から、3-2-1)。ポールの番号 0〜5 */
-export function createWorld(): World {
+export function createWorld(spawnBase = 2.8, spawnStep = 1.05): World {
   const bodies: Body[] = [];
   // 山の置き場所(目標)。下の段 3 本(わずかに隙間)、中段 2 本、上 1 本
   const s = 1.045;
@@ -156,11 +158,11 @@ export function createWorld(): World {
   order.forEach((slot, k) => {
     const id = slot; // 描画の番号 = 山の位置の番号(紙の帯は番号順に 1〜6)
     const [sz, sy] = slots[slot];
-    const b = mk("pole", id, sz + jit[k], 5.2 + k * 1.75, R_POLE);
+    const b = mk("pole", id, sz + jit[k], spawnBase + k * spawnStep, R_POLE);
     b.vy = -1.5;
     b.w = 0;
     // 帯の字がカメラ側(手前上)を向くように、すこしだけばらして置く
-    b.a = -1.07 - SETTLE_DELTA[id] + VARIETY[id];
+    b.a = FACE_A - SETTLE_DELTA[id] + VARIETY[id];
     void sy;
     bodies.push(b);
   });
@@ -573,5 +575,15 @@ export function rollOut(w: World, id: number, speed: number): boolean {
   b.leave = true;
   b.vz = Math.abs(speed);
   b.w = -b.vz / b.r;
+  return true;
+}
+
+/** ポインターのはじき: 玉・棒を、画面の上下(奥行き z)の向きへ軽く押す */
+export function pushToy(w: World, id: number, dvz: number): boolean {
+  const b = w.bodies[id];
+  if (!b || b.gone || b.grabbed || b.kind === "pole") return false;
+  wake(b);
+  b.vz += dvz;
+  if (b.kind !== "bamboo") b.w = -b.vz / b.r;
   return true;
 }

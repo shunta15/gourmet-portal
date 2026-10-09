@@ -89,7 +89,7 @@ export function camAt(s: number, aspect: number, mobile: boolean, drift: { x: nu
       sy: lerp(a.sy, b.sy, e),
     };
   }
-  const a: CamParams = { tx: 0.0, ty: 1.0, tz: 0.0, yaw: 0.6, el: 0.42, dist: 15.5, fovDeg: 22, sx: 0.34, sy: 0.04 };
+  const a: CamParams = { tx: 0.0, ty: 1.05, tz: 0.0, yaw: 0.6, el: 0.55, dist: 14.2, fovDeg: 22, sx: 0.27, sy: 0.04 };
   const b: CamParams = { tx: 0.0, ty: 0.3, tz: 0.35, yaw: 0.16, el: 0.9, dist: 17.0, fovDeg: 22, sx: 0.2, sy: 0.0 };
   void aspect;
   return {

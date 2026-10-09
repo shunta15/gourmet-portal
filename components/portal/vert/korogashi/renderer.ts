@@ -75,8 +75,8 @@ float dPole(vec3 p, vec4 a, vec4 b){
   float rr = length(q.yz);
   float db = max(rr - a.w - 0.03, abs(q.x) - b.y - 0.03);
   if (db > 0.4) return db * 0.95;
-  float band = smoothstep(BW + 0.012, BW, abs(q.x));
-  float R = a.w + 0.011 * band;
+  float band = smoothstep(BW + 0.035, BW - 0.005, abs(q.x));
+  float R = a.w + 0.007 * band;
   float c = 0.05;
   return rc(vec2(rr - (R - c), abs(q.x) - (b.y - c)), c);
 }
@@ -96,10 +96,31 @@ float dBamboo(vec3 p, vec4 a, vec4 b){
   float rr = length(q.yz);
   float db = max(rr - a.w - 0.05, abs(q.x) - b.y - 0.03);
   if (db > 0.3) return db * 0.95;
-  float node = exp(-pow((q.x + 0.6) * 11.0, 2.0)) + exp(-pow((q.x - 0.5) * 11.0, 2.0));
+  float node = exp(-pow((q.x + 0.62) * 11.0, 2.0)) + 0.8 * exp(-pow((q.x - 0.43) * 15.0, 2.0));
   float R = a.w + 0.018 * node;
   float d = rc(vec2(rr - (R - 0.03), abs(q.x) - (b.y - 0.03)), 0.03);
   return max(d, -q.y - 0.0);
+}
+
+// 畳んだタオルの山(手前の右。物理には入らない飾り)
+const vec3 TW_C = vec3(3.6, 0.0, 1.75);
+float dTowel(vec3 p){
+  vec3 q = p - TW_C;
+  float bd = length(q - vec3(0.0, 0.3, 0.0)) - 1.15;
+  if (bd > 0.3) return bd;
+  float d = 1e5;
+  for (int i = 0; i < 4; i++){
+    float fi = float(i);
+    float ang = 0.16 * sin(fi * 2.3 + 1.0);
+    float c = cos(ang), s2 = sin(ang);
+    vec3 r = q - vec3(0.05 * sin(fi * 1.7), 0.075 + fi * 0.15, 0.04 * cos(fi * 2.1));
+    r = vec3(c * r.x - s2 * r.z, r.y, s2 * r.x + c * r.z);
+    vec3 hb = vec3(0.52 - 0.02 * fi, 0.066, 0.36 + 0.015 * sin(fi * 3.0));
+    vec3 dd = abs(r) - (hb - 0.045);
+    float b = length(max(dd, 0.0)) + min(max(dd.x, max(dd.y, dd.z)), 0.0) - 0.045;
+    d = min(d, b);
+  }
+  return d;
 }
 
 float map(vec3 p){
@@ -108,13 +129,14 @@ float map(vec3 p){
   for (int i = 6; i < 9; i++){ float s = length(p - vec3(uB[i].x, uA[i].y, uA[i].x)) - uA[i].w; if (s < d){ d = s; id = float(i); } }
   { float s = dStick(p, uA[9], uB[9]); if (s < d){ d = s; id = 9.0; } }
   { float s = dBamboo(p, uA[10], uB[10]); if (s < d){ d = s; id = 10.0; } }
+  { float s = dTowel(p); if (s < d){ d = s; id = 11.0; } }
   gId = id;
   return d;
 }
 
 bool boxHit(vec3 ro, vec3 rd, float pad, out float tn, out float tf){
   vec3 bmin = vec3(-3.15 - pad, -0.1, uBox.x - pad);
-  vec3 bmax = vec3(3.15 + pad, uBox.z + pad, uBox.y + pad);
+  vec3 bmax = vec3(4.3 + pad, max(uBox.z, 0.8) + pad, max(uBox.y, 2.3) + pad);
   vec3 inv = 1.0 / (rd + vec3(1e-7));
   vec3 t0 = (bmin - ro) * inv; vec3 t1 = (bmax - ro) * inv;
   vec3 a = min(t0, t1), b = max(t0, t1);
@@ -134,7 +156,8 @@ float winMask(vec3 p){
   float t = (p.x + 9.0) / max(0.05, -LDIR.x);
   if (t < 0.0) return 1.0;
   float hy = p.y + LDIR.y * t;
-  float hz = p.z + LDIR.z * t;
+  float hz = p.z + LDIR.z * t + 1.9 * sin(uTime * 0.2513);
+  hy += 1.0 * sin(uTime * 0.2513 + 1.3);
   float s = 0.3 + 0.045 * t;
   float inside = smoothstep(2.5 - s, 2.5 + s, hy) * (1.0 - smoothstep(26.0 - s, 26.0 + s, hy)) * smoothstep(-8.0 - s, -8.0 + s, hz) * (1.0 - smoothstep(20.0 - s, 20.0 + s, hz));
   float barH = 1.0 - smoothstep(0.2, 0.2 + s, abs(hy - 5.6));
@@ -161,7 +184,7 @@ float softShadow0(vec3 ro, vec3 rd, float tmax){
 }
 float softShadow(vec3 ro, vec3 rd, float tmax){ return softShadow0(ro, rd, tmax) * winMask(ro); }
 float calcAO(vec3 p, vec3 n){
-  vec3 bmin = vec3(-3.15, -0.1, uBox.x); vec3 bmax = vec3(3.15, uBox.z, uBox.y);
+  vec3 bmin = vec3(-3.15, -0.1, uBox.x); vec3 bmax = vec3(4.3, max(uBox.z, 0.8), max(uBox.y, 2.3));
   if (length(max(max(bmin - p, p - bmax), vec3(0.0))) > 0.75) return 1.0;
   float occ = 0.0; float sca = 1.0;
   for (int i = 0; i < 5; i++){
@@ -203,7 +226,7 @@ vec3 lighting(vec3 p, vec3 n, vec3 rd, vec3 alb, float spec, float shin, float w
   vec3 sky = mix(vec3(0.34, 0.28, 0.22), vec3(0.56, 0.62, 0.72), up) * 0.40;
   float wallf = clamp(0.5 + 0.5 * n.z, 0.0, 1.0);
   sky += vec3(0.30, 0.30, 0.30) * wallf * 0.25;
-  vec3 col = alb * (key + sky * ao);
+  vec3 col = alb * (key + sky * mix(0.4, 1.0, ao) + vec3(0.045, 0.040, 0.035));
   vec3 h = normalize(LDIR - rd);
   float sp = pow(max(dot(n, h), 0.0), shin) * spec * sh * (0.4 + 0.6 * dif);
   col += vec3(1.0, 0.95, 0.88) * sp * 2.0;
@@ -231,10 +254,14 @@ vec3 floorCol(vec3 p, vec3 rd, float t){
   // 導管(細い濃い筋)
   c *= 1.0 - 0.10 * smoothstep(0.62, 0.9, n3(vec3(p.x * 90.0, p.z * 3.0, id)));
   // 板のすき間・木口
-  float gap = smoothstep(0.495, 0.5, abs(xl));
+  // 板の継ぎ目: 実線の細い溝(遠くでも切れない幅に)
+  float gw = max(0.003, fw * 1.4);
+  float gap = smoothstep(0.5 - gw / bw, 0.5 - gw / bw * 0.3, abs(xl));
   float zl = fract((p.z + bi * 3.7) / 4.6);
-  float gapZ = smoothstep(0.004, 0.0, min(zl, 1.0 - zl) * 4.6 - 0.002);
-  c *= 1.0 - 0.55 * max(gap, gapZ);
+  float gapZ = smoothstep(gw, gw * 0.3, min(zl, 1.0 - zl) * 4.6);
+  float groove = max(gap, gapZ);
+  c *= 1.0 - 0.27 * groove;
+  c += vec3(0.05, 0.04, 0.03) * smoothstep(gw * 2.4, gw, abs(min(zl, 1.0 - zl) * 4.6 - gw * 2.0)) * 0.4;
   return c;
 }
 
@@ -276,6 +303,23 @@ vec3 shadePole(vec3 p, vec3 n, vec3 rd, float id, float t){
   float pores = smoothstep(0.6, 0.72, n3(vec3(lp.y, lp.z, lp.x * 0.0) * 40.0 + 5.0));
   vec3 cutc = mix(pc, vec3(0.88, 0.85, 0.78), 0.28) * (0.96 - 0.08 * pores + 0.05 * n3(vec3(lp.yz * 120.0, 2.0)));
   alb = mix(alb, cutc, capness);
+  // 端の断面に貼った丸い札(番号)
+  if (n.x > 0.6){
+    vec2 cuv0 = vec2(-lp.z, lp.y);
+    float rr = length(cuv0);
+    // 落ち着いた山で、番号が上向きに読めるよう、帯の向き(約 0.93rad)ぶん回しておく
+    vec2 cuv = vec2(cuv0.x * 0.598 - cuv0.y * 0.801, cuv0.x * 0.801 + cuv0.y * 0.598);
+    float Rs = 0.3;
+    if (rr < Rs + 0.02){
+      vec2 tuv = cuv / (2.0 * Rs) + 0.5;
+      float colI = mod(id, 4.0); float rowI = floor(id / 4.0);
+      vec3 tx = texture2D(uAtlas, vec2((colI + tuv.x) / 4.0, 0.5 - (rowI + 1.0 - tuv.y) * 0.25)).rgb;
+      vec3 paper = vec3(0.72, 0.69, 0.62) * (0.96 + 0.06 * n3(lp * 60.0));
+      paper = mix(paper, pc * 0.8, tx.g);
+      paper = mix(paper, vec3(0.05, 0.05, 0.055), tx.r);
+      alb = mix(alb, paper, smoothstep(Rs + 0.012, Rs - 0.004, rr));
+    }
+  }
   float spec = 0.07; float shin = 10.0; float wrap = 0.35;
   if (inBand > 0.5){
     float R = a.w;
@@ -289,7 +333,7 @@ vec3 shadePole(vec3 p, vec3 n, vec3 rd, float id, float t){
     paper *= 0.96 + 0.06 * fib;
     if (u > 0.0 && u < 1.0 && v > 0.0 && v < 1.0){
       float col = mod(id, 2.0); float row = floor(id / 2.0);
-      vec3 tx = texture2D(uAtlas, vec2((col + u) / 2.0, (row + v) / 3.0)).rgb;
+      vec3 tx = texture2D(uAtlas, vec2((col + u) / 2.0, 1.0 - (3.0 - row - v) * 0.1665)).rgb;
       paper = mix(paper, pc * 0.78, tx.g);
       paper = mix(paper, vec3(0.05, 0.05, 0.055), tx.r);
     }
@@ -304,7 +348,7 @@ vec3 shadePole(vec3 p, vec3 n, vec3 rd, float id, float t){
     spec = 0.16; shin = 22.0; wrap = 0.2;
   }
   float ao = calcAO(p, n);
-  float sh = softShadow(p + n * 0.012, LDIR, 9.0);
+  float sh = softShadow(p + n * 0.022, LDIR, 9.0);
   vec3 col = lighting(p, nn, rd, alb, spec, shin, wrap, ao, sh);
   // ホバー: 紙がほのかに明るく
   col += alb * b.z * 0.18 * inBand;
@@ -316,24 +360,23 @@ vec3 shadeBall(vec3 p, vec3 n, vec3 rd, float id, float t){
   for (int i = 6; i < 9; i++){ if (float(i) == id){ a = uA[i]; b = uB[i]; } }
   vec3 q = p - vec3(b.x, a.y, a.x);
   vec3 lp = toLocal(q, a.z);
-  float fw = t * 0.0011;
-  vec3 base = id < 6.5 ? vec3(0.60, 0.33, 0.24) : (id < 7.5 ? vec3(0.50, 0.57, 0.46) : vec3(0.66, 0.58, 0.42));
-  float e = 0.004;
-  float h0 = n3(lp * 70.0) * 0.6 + n3(lp * 160.0) * 0.4 * smoothstep(1.2, 3.0, 0.0062 / fw);
-  float hx = n3((lp + vec3(e,0,0)) * 70.0) * 0.6 + n3((lp + vec3(e,0,0)) * 160.0) * 0.4 * smoothstep(1.2, 3.0, 0.0062 / fw);
-  float hy = n3((lp + vec3(0,e,0)) * 70.0) * 0.6 + n3((lp + vec3(0,e,0)) * 160.0) * 0.4 * smoothstep(1.2, 3.0, 0.0062 / fw);
-  float hz = n3((lp + vec3(0,0,e)) * 70.0) * 0.6 + n3((lp + vec3(0,0,e)) * 160.0) * 0.4 * smoothstep(1.2, 3.0, 0.0062 / fw);
-  vec3 g = toWorld(vec3(hx - h0, hy - h0, hz - h0) / e, a.z);
-  g -= n * dot(g, n);
-  vec3 nn = normalize(n - g * 0.05);
-  vec3 alb = base * (0.84 + 0.30 * h0);
-  // 成形の継ぎ目(球を一周する細い溝)
   vec3 ul = normalize(lp);
-  float seam = smoothstep(0.03, 0.0, abs(dot(ul, normalize(vec3(0.35, 0.55, 0.76)))));
-  alb *= 1.0 - 0.45 * seam;
   float ao = calcAO(p, n);
-  float sh = softShadow(p + n * 0.01, LDIR, 9.0);
-  return lighting(p, nn, rd, alb, 0.05, 8.0, 0.4, ao, sh) + alb * b.z * 0.1;
+  float sh = softShadow(p + n * 0.012, LDIR, 9.0);
+  if (id > 6.5 && id < 7.5){
+    // 木の玉(ブナ): 年輪の細い縞と、つや消しの塗り
+    float ring = sin((lp.x * 5.0 + n3(lp * 3.0) * 1.6) * 24.0) * 0.5 + 0.5;
+    float g2 = n3(lp * vec3(8.0, 90.0, 90.0));
+    vec3 alb = mix(vec3(0.66, 0.47, 0.27), vec3(0.50, 0.33, 0.17), smoothstep(0.25, 0.8, ring * 0.7 + g2 * 0.3)) * (0.9 + 0.15 * g2);
+    return lighting(p, n, rd, alb, 0.22, 26.0, 0.3, ao, sh) + alb * b.z * 0.1;
+  }
+  // ゴムの玉: なめらか。ごく細かい肌と、成形の継ぎ目の細い線だけ
+  vec3 base = id < 6.5 ? vec3(0.50, 0.30, 0.22) : vec3(0.44, 0.50, 0.42);
+  float fine = n3(lp * 180.0);
+  vec3 alb = base * (0.95 + 0.07 * fine);
+  float seam = smoothstep(0.012, 0.0, abs(dot(ul, normalize(vec3(0.35, 0.55, 0.76)))));
+  alb *= 1.0 - 0.38 * seam;
+  return lighting(p, n, rd, alb, 0.12, 14.0, 0.4, ao, sh) + alb * b.z * 0.1;
 }
 
 vec3 shadeStick(vec3 p, vec3 n, vec3 rd, float t){
@@ -355,32 +398,51 @@ vec3 shadeStick(vec3 p, vec3 n, vec3 rd, float t){
   return lighting(p, n, rd, alb, 0.2, 24.0, 0.25, ao, sh);
 }
 
+vec3 shadeTowel(vec3 p, vec3 n, vec3 rd, float t){
+  vec3 q = p - TW_C;
+  float layer = clamp(floor(q.y / 0.15), 0.0, 3.0);
+  vec3 tone = layer < 0.5 ? vec3(0.80, 0.78, 0.71) : (layer < 1.5 ? vec3(0.58, 0.66, 0.60) : (layer < 2.5 ? vec3(0.84, 0.82, 0.76) : vec3(0.70, 0.71, 0.70)));
+  // 織りの細かい凹凸と、側面の折り目の縞
+  float terry = n3(p * 150.0);
+  float fold = 0.5 + 0.5 * sin(q.y * 70.0 + n3(p * 4.0) * 3.0);
+  vec3 alb = tone * (0.90 + 0.14 * terry) * (1.0 - 0.07 * fold * (1.0 - abs(n.y)));
+  // 端の織り込みの縞(縦の細い線)
+  alb *= 1.0 - 0.1 * smoothstep(0.7, 0.9, n3(vec3(q.x * 34.0, q.y * 2.0, q.z * 34.0)));
+  float ao = calcAO(p, n);
+  float sh = softShadow(p + n * 0.012, LDIR, 9.0);
+  return lighting(p, n, rd, alb, 0.0, 6.0, 0.55, ao, sh);
+}
+
 vec3 shadeBamboo(vec3 p, vec3 n, vec3 rd, float t){
   vec4 a = uA[10]; vec4 b = uB[10];
   vec3 q = vec3(p.x - b.x, p.y - a.y, p.z - a.x);
-  // 繊維: 軸(x)に沿って長く伸びた細い筋、太いむら、節
-  float f1 = n3(vec3(q.x * 0.8, q.y * 150.0, q.z * 150.0));
-  float f2 = n3(vec3(q.x * 3.2, q.y * 64.0, q.z * 64.0));
-  float f3 = n3(vec3(q.x * 0.3, q.y * 14.0, q.z * 14.0));
-  vec3 green = vec3(0.13, 0.20, 0.05);
-  vec3 straw = vec3(0.36, 0.34, 0.12);
-  vec3 alb = mix(green, straw, smoothstep(0.32, 0.78, f3));
-  alb *= 0.74 + 0.5 * f1;
-  alb *= 1.0 - 0.28 * smoothstep(0.66, 0.9, f2);
-  float nodeD = min(abs(q.x + 0.6), abs(q.x - 0.5));
-  alb = mix(alb, vec3(0.46, 0.42, 0.17), smoothstep(0.075, 0.0, nodeD) * 0.65);
-  alb *= 1.0 - 0.5 * smoothstep(0.02, 0.0, abs(nodeD - 0.085));
-  // 乾いて入った縦の割れ
   float ang = atan(q.y, q.z);
-  float crack = smoothstep(0.016, 0.0, abs(ang - 0.95 - 0.12 * sin(q.x * 3.0))) * smoothstep(0.35, 0.6, f2);
-  alb *= 1.0 - 0.6 * crack;
+  // 繊維: 軸(x)に沿って長く伸びた細い筋。むらは角度ごとに不規則な幅の帯
+  float f1 = n3(vec3(q.x * 0.7, q.y * 130.0, q.z * 130.0));
+  float f2 = n3(vec3(q.x * 2.6, q.y * 58.0, q.z * 58.0));
+  float st1 = n3(vec3(ang * 7.0, q.x * 0.30, 2.0));
+  float st2 = n3(vec3(ang * 23.0 + 1.7, q.x * 0.8, 5.0));
+  vec3 green = vec3(0.17, 0.21, 0.09);
+  vec3 straw = vec3(0.37, 0.32, 0.17);
+  vec3 alb = mix(green, straw, smoothstep(0.28, 0.78, st1 * 0.65 + st2 * 0.35));
+  alb *= 0.80 + 0.38 * f1;
+  alb *= 1.0 - 0.22 * smoothstep(0.66, 0.9, f2);
+  // 節: 間隔も太さも不ぞろい。盛り上がりと、すぐ脇の暗い線
+  float d1 = abs(q.x + 0.62);
+  float d2 = abs(q.x - 0.43);
+  float nodeD = min(d1, d2 * 0.8);
+  alb = mix(alb, vec3(0.42, 0.37, 0.19), smoothstep(0.075, 0.0, nodeD) * 0.55);
+  alb *= 1.0 - 0.42 * smoothstep(0.02, 0.0, abs(nodeD - 0.085));
+  // 乾いて入った縦の割れ
+  float crack = smoothstep(0.014, 0.0, abs(ang - 0.95 - 0.12 * sin(q.x * 3.0))) * smoothstep(0.35, 0.6, f2);
+  alb *= 1.0 - 0.55 * crack;
   // 切り口(髄と繊維の淡い色)
   float cap = smoothstep(0.55, 0.85, abs(n.x));
-  vec3 cut = vec3(0.58, 0.50, 0.30) * (0.78 + 0.34 * n3(vec3(q.y * 100.0, q.z * 100.0, 1.0)));
+  vec3 cut = vec3(0.55, 0.48, 0.30) * (0.78 + 0.34 * n3(vec3(q.y * 100.0, q.z * 100.0, 1.0)));
   alb = mix(alb, cut, cap);
   float ao = calcAO(p, n);
   float sh = softShadow(p + n * 0.01, LDIR, 9.0);
-  return lighting(p, n, rd, alb * 0.9, 0.11, 13.0, 0.3, ao, sh);
+  return lighting(p, n, rd, alb * 0.9, 0.1, 12.0, 0.3, ao, sh);
 }
 
 void main(){
@@ -417,7 +479,8 @@ void main(){
     if (id < 5.5) col = shadePole(p, n, rd, id, t);
     else if (id < 8.5) col = shadeBall(p, n, rd, id, t);
     else if (id < 9.5) col = shadeStick(p, n, rd, t);
-    else col = shadeBamboo(p, n, rd, t);
+    else if (id < 10.5) col = shadeBamboo(p, n, rd, t);
+    else col = shadeTowel(p, n, rd, t);
   } else {
     vec3 p = ro + rd * tE;
     if (tE > 5e4){
@@ -463,7 +526,20 @@ void main(){
   vec2 uv = gl_FragCoord.xy / uRes;
   vec4 c0 = texture2D(uTex, uv);
   float rad = max(0.0, cocOf(c0.a) - 0.04) * uBlur;
-  if (rad < 0.7){ gl_FragColor = vec4(c0.rgb, 1.0); return; }
+  if (rad < 0.7){
+    vec2 px = 1.0 / uRes;
+    vec3 cN = texture2D(uTex, uv + vec2(0.0, px.y)).rgb;
+    vec3 cS = texture2D(uTex, uv - vec2(0.0, px.y)).rgb;
+    vec3 cE = texture2D(uTex, uv + vec2(px.x, 0.0)).rgb;
+    vec3 cW = texture2D(uTex, uv - vec2(px.x, 0.0)).rgb;
+    vec3 lw = vec3(0.299, 0.587, 0.114);
+    float l0 = dot(c0.rgb, lw);
+    float ct = max(max(abs(dot(cN, lw) - l0), abs(dot(cS, lw) - l0)), max(abs(dot(cE, lw) - l0), abs(dot(cW, lw) - l0)));
+    float k = smoothstep(0.05, 0.22, ct) * 0.62;
+    vec3 avg = (c0.rgb * 2.0 + cN + cS + cE + cW) / 6.0;
+    gl_FragColor = vec4(mix(c0.rgb, avg, k), 1.0);
+    return;
+  }
   vec3 sum = c0.rgb; float wsum = 1.0;
   for (int i = 0; i < 24; i++){
     float r = sqrt((float(i) + 0.5) / 24.0) * rad;

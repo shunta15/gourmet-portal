@@ -11,22 +11,15 @@
 .kz a{color:inherit;text-decoration:none}
 .kz a:focus-visible{outline:2px solid var(--sumi);outline-offset:3px;border-radius:2px;box-shadow:0 0 0 5px rgba(247,244,236,.85)}
 .kz-hero{position:relative;height:360svh;--p:0;--copy:1;--kh:0}
-.kz-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#e7e3da}
-.kz-cv{position:absolute;inset:0;width:100%;height:100%;z-index:2;opacity:0;transition:opacity .7s ease;touch-action:pan-y;-webkit-tap-highlight-color:transparent;display:block}
+.kz-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:linear-gradient(180deg,#e4dfd4 0%,#dcd3bf 38%,#d3bf96 100%)}
+.kz-cv{position:absolute;inset:0;width:100%;height:100%;z-index:2;opacity:0;transition:opacity .35s ease;touch-action:pan-y;-webkit-tap-highlight-color:transparent;display:block}
 .kz-hero[data-mode="gl"] .kz-cv{opacity:1}
 .kz-vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(ellipse 90% 80% at 55% 48%,rgba(30,22,12,0) 60%,rgba(30,22,12,.10) 100%)}
 
-/* 静かな絵(最初の WebGL のコマが出るまでと、WebGL が使えないとき)。CSS の円柱 6 本の山 */
-.kz-fb{position:absolute;inset:0;z-index:1;transition:opacity .8s ease .5s,visibility 0s 1.4s}
-.kz-hero[data-mode="gl"] .kz-fb{opacity:0;visibility:hidden}
-.kz-fb-wall{position:absolute;inset:0 0 34% 0;background:linear-gradient(180deg,#f2efe8,#e9e5dc)}
-.kz-fb-floor{position:absolute;inset:66% 0 0 0;background:repeating-linear-gradient(90deg,#c9a877 0,#c9a877 56px,#bf9d6c 56px,#bf9d6c 58px),#c9a877;box-shadow:inset 0 14px 18px -10px rgba(60,40,20,.35)}
-.kz-fb-pile{position:absolute;left:56%;top:46%;width:34vw;max-width:520px;height:24vw;max-height:360px;transform:translateX(-30%)}
-.kz-fb-pile b{position:absolute;width:26%;height:30%;border-radius:999px;box-shadow:0 8px 12px -6px rgba(40,28,14,.5);
-  left:calc(var(--i) * 0px);bottom:0}
-.kz-fb-pile b:nth-child(1){left:2%;bottom:0}.kz-fb-pile b:nth-child(2){left:36%;bottom:0}.kz-fb-pile b:nth-child(3){left:70%;bottom:0}
-.kz-fb-pile b:nth-child(4){left:19%;bottom:32%}.kz-fb-pile b:nth-child(5){left:53%;bottom:32%}.kz-fb-pile b:nth-child(6){left:36%;bottom:64%}
-
+/* 静止画: WebGL が使えないときだけ出す(自分のページの 3D を書き出した写真)。読み込み中は、床の色だけ。3D の最初のコマが出たら、ふわっと出る */
+.kz-fb{position:absolute;inset:0;z-index:1;display:block;opacity:0;visibility:hidden;transition:opacity .6s ease}
+.kz-fb img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.kz-hero[data-mode="css"] .kz-fb{opacity:1;visibility:visible}
 /* ヘッダー */
 .kz-head{position:absolute;left:0;right:0;top:0;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:clamp(14px,2.4vh,26px) var(--gut)}
 .kz-logo{font:800 17px/1 var(--min);letter-spacing:.08em;color:var(--sumi);min-height:44px;display:inline-flex;align-items:center;gap:.5em}
@@ -37,7 +30,10 @@
 /* h1・リード */
 .kz-copy{position:absolute;z-index:5;left:var(--gut);top:clamp(86px,17svh,170px);width:min(31vw,430px);pointer-events:none;opacity:var(--copy);transform:translateY(calc((1 - var(--copy)) * -14px))}
 .kz-eyebrow{font:500 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
-.kz-h1{margin:0;font:800 clamp(34px,3.5vw,58px)/1.16 var(--min);letter-spacing:.03em;color:var(--sumi)}
+.kz-h1{margin:0;font:800 clamp(28px,2.7vw,44px)/1.18 var(--min);letter-spacing:.03em;color:var(--sumi)}
+.kz-cue-a b{font-weight:500}
+.kz-coarse{display:none}
+@media (pointer:coarse){.kz-fine{display:none}.kz-coarse{display:inline}}
 .kz-h1a,.kz-h1b{display:block}
 .kz-lead{margin:18px 0 0;font:400 14.5px/1.95 var(--sans);color:var(--ink2);max-width:25em}
 .kz-hero:not([data-mode="gl"]) .kz-copy{pointer-events:auto}
@@ -103,7 +99,8 @@
 /* スマホ */
 @media (max-width:699px){
   .kz-copy{left:var(--gut);right:var(--gut);width:auto;top:66px}
-  .kz-h1{font-size:34px}
+  .kz-h1{font-size:clamp(26px,8.2vw,34px)}
+  .kz-h1a,.kz-h1b{white-space:nowrap}
   .kz-h1a,.kz-h1b{display:inline}
   .kz-lead{font-size:14px;line-height:1.8;margin-top:12px;max-width:none}
   .kz-eyebrow{margin-bottom:10px}
