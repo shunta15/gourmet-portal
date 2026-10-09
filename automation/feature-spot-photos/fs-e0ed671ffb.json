@@ -3,10 +3,55 @@
   "dir": "fs-e0ed671ffb",
   "storeName": "あそび心",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%9D%E3%81%B3%E5%BF%83%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E4%BC%8A%E6%9D%B1%E5%B8%82%E5%A4%A7%E5%AE%A4%E9%AB%98%E5%8E%9F",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店名は一致するが、住所の町名が記録(伊東市大室高原)と不一致(富戸)。店を確かめられないため写真なし。(マップで着いた店: あそび心 / 静岡県伊東市富戸１３１７−４１４４)",
+  "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%9D%E3%81%B3%E5%BF%83/@34.902215,139.10943,17z/data=!3m1!4b1!4m6!3m5!1s0x6019dcb3ccdb7a0b:0x3a739be296d2b8da!8m2!3d34.902215!4d139.10943!16s%2Fg%2F1tfv0lp6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "あそび心",
+    "address": "〒413-0231 静岡県伊東市富戸１３１７−４１４４",
+    "how": "deep-verified"
+  },
+  "images": [
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-e0ed671ffb/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdEcxVln9NhlzFy-CClx0WNJURNlJbXdTxVO7M87OHWRzjqKHAa_i4s0vR9mBdCy7PtJwGnJ-g4HWXyoZF8-teZDeVtPCWNvIt6iFrr9qP8ifw2pWIpV6c4c8EgKCc_aOEJ1I0_2-NDyE",
+      "what": "棚に飾り物が並ぶ窓際の席",
+      "width": 600,
+      "height": 800,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-e0ed671ffb/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIkfC9i2Ms71zrad3xbpmvmi_XijF644rrZZoXAvBFKNhmGseagWDuB-QzKKBCbwACOwLfKuqkAKFhguBKu54FVgyYPWKoTqSzXJk6C7kzhEMdvtOwwQkK_7ibZDQu8RnjhzArWA",
+      "what": "サラダとスープ付きの洋食セット",
+      "width": 800,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-e0ed671ffb/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzvjcsGTIoNaPCy9AKqCZpTht6LT3hJV-3QOlzhu3o8sGMAuZgiqir55Y_CssMTtAVM9IhzmPC6Osb4VmuB9PXA_tKzAfmBjNClG89nOAYBNb25uCA5R_pf1q4uR7shvSDh73M",
+      "what": "梁のある広い店内の席",
+      "width": 720,
+      "height": 540,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-e0ed671ffb/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1JjHYQ3nuYXiy_hJhMh12KcUAtdtrZ-XR2Oj8-LSeExruak9W7oO85qdmfEBq9nKo0ONNIaP_DnTxDeVlj5AMH-Yp6u13cDOrJDXr2ez59Pn1wu1WjalnrcJBNeSMDD-msg72PQ",
+      "what": "窓の外に緑が見える店内",
+      "width": 800,
+      "height": 449,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店名は一致するが、住所の町名が記録(伊東市大室高原)と不一致(富戸)。店を確かめられないため写真なし。(マップで着いた店: あそび心 / 静岡県伊東市富戸１３１７−４１４４) / 発注者が手がかりを読んで同じ店と判断(2026-10-09): 電話番号が記事と Google マップで一致。記事の「大室高原」は地区の呼び名で、Google の「富戸」と同じ場所を指す",
   "verify": {
     "status": "不一致",
     "signals": [
