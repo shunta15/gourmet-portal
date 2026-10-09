@@ -31,7 +31,8 @@ function fs(name: string): number {
   return 0.56;
 }
 
-export default function Chapter({ c, index, total }: { c: ChapterProp; index: number; total: number }) {
+/** shopBase: 店ページの行き先の手前（見本は "/proto-noren/restaurant"、本番の /gourmet は "/restaurant"）。`${shopBase}/${id}` */
+export default function Chapter({ c, index, total, shopBase }: { c: ChapterProp; index: number; total: number; shopBase: string }) {
   const sec = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
   const hover = useRef<number | null>(null);
@@ -116,7 +117,7 @@ export default function Chapter({ c, index, total }: { c: ChapterProp; index: nu
           {c.shops.map((s, i) => (
             <Link
               key={s.id}
-              href={`/proto-noren/restaurant/${s.id}`}
+              href={`${shopBase}/${s.id}`}
               role="listitem"
               className="vN-col"
               data-on={i === active ? "1" : "0"}
@@ -140,7 +141,7 @@ export default function Chapter({ c, index, total }: { c: ChapterProp; index: nu
             掲載 <b>{c.count}</b> 軒
             <small>{c.note}</small>
           </p>
-          <Link href={`/proto-noren/restaurant/${cur.id}`} className="vN-ch-cur" data-cursor="VIEW" key={cur.id}>
+          <Link href={`${shopBase}/${cur.id}`} className="vN-ch-cur" data-cursor="VIEW" key={cur.id}>
             <span className="vN-ch-cur-k">{cur.regionName}{cur.area && cur.area !== cur.regionName ? ` · ${cur.area}` : ""}</span>
             <span className="vN-ch-cur-n">{cur.name}</span>
             <span className="vN-ch-cur-c">{cur.cuisine}{cur.station ? ` / ${cur.station}` : ""}</span>
