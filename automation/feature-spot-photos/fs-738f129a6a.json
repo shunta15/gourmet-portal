@@ -1,45 +1,53 @@
 {
- "featureId": "沖縄ラーメンいっと",
- "dir": "fs-738f129a6a",
- "storeName": "沖縄ラーメンいっと",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B2%96%E7%B8%84%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%84%E3%81%A3%E3%81%A8%20%E9%82%A3%E8%A6%87%E5%B8%82%E4%B9%85%E8%8C%82%E5%9C%B0",
- "placeUrl": "https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3+%E3%81%84%E3%81%A3%E3%81%A8/@26.2170854,127.6821318,17z/data=!3m1!4b1!4m6!3m5!1s0x34e569fe2cd54c3b:0xbfccb5b282d15d03!8m2!3d26.2170854!4d127.6821318!16s%2Fg%2F11xnlml9qr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "沖縄ラーメン いっと",
-  "address": "沖縄県那覇市久茂地３丁目２５−１２",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-738f129a6a/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qji0PxnxJ9tbp9lAs6OPNqr29-4cBWkUix12w6ewGLsv8MW97CKpHSrAwPqmdEiX9kb05sTfQgnxrBA7Gz4v2s5lLVwuRqFMEmPk0lOinbyCWew7U_ChfLFriyErtOl0OBoPpEW6m-yP1c=s1200",
-   "what": "チャーシューと味玉のラーメン",
-   "width": 900,
-   "height": 747,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "沖縄ラーメンいっと",
+  "dir": "fs-738f129a6a",
+  "storeName": "沖縄ラーメンいっと",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B2%96%E7%B8%84%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%84%E3%81%A3%E3%81%A8%20%E9%82%A3%E8%A6%87%E5%B8%82%E4%B9%85%E8%8C%82%E5%9C%B0",
+  "placeUrl": "https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3+%E3%81%84%E3%81%A3%E3%81%A8/@26.2170854,127.6821318,17z/data=!3m1!4b1!4m6!3m5!1s0x34e569fe2cd54c3b:0xbfccb5b282d15d03!8m2!3d26.2170854!4d127.6821318!16s%2Fg%2F11xnlml9qr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "沖縄ラーメン いっと",
+    "address": "沖縄県那覇市久茂地３丁目２５−１２",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-738f129a6a/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtbOWyFkgXTDN0LcPJ91eFR9ueQurw4VscSKG5MPn9pyNSJ4CAEI7Y6rRPNnAVKT7FS22x9MN9-4y9ex9l1W0-v759YBHzOslxGNiFwkGYR7VCjeR9iHmyBNyTaMhxUeOM7fGpvRlamC9i=s1200",
-   "what": "夜のカウンター席",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-738f129a6a/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-NOSPOOZ1VbwMwDl2weKOv8AVw9LwuOUBfOAFz4y2jtqHj_x_n-7OpSYHStaYAZ_r24ygW9IHkADy1ALjYydbKysb2Ssi16oReiKrEbOAdEflCJDdfaHqFKdsYGKpIRmZ_Zt1PDmQRUCM=s1200",
-   "what": "灯りのともる看板",
-   "width": 755,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-738f129a6a/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qji0PxnxJ9tbp9lAs6OPNqr29-4cBWkUix12w6ewGLsv8MW97CKpHSrAwPqmdEiX9kb05sTfQgnxrBA7Gz4v2s5lLVwuRqFMEmPk0lOinbyCWew7U_ChfLFriyErtOl0OBoPpEW6m-yP1c=s1200",
+      "what": "チャーシューと味玉のラーメン",
+      "width": 900,
+      "height": 747,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-738f129a6a/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtbOWyFkgXTDN0LcPJ91eFR9ueQurw4VscSKG5MPn9pyNSJ4CAEI7Y6rRPNnAVKT7FS22x9MN9-4y9ex9l1W0-v759YBHzOslxGNiFwkGYR7VCjeR9iHmyBNyTaMhxUeOM7fGpvRlamC9i=s1200",
+      "what": "夜のカウンター席",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-738f129a6a/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-NOSPOOZ1VbwMwDl2weKOv8AVw9LwuOUBfOAFz4y2jtqHj_x_n-7OpSYHStaYAZ_r24ygW9IHkADy1ALjYydbKysb2Ssi16oReiKrEbOAdEflCJDdfaHqFKdsYGKpIRmZ_Zt1PDmQRUCM=s1200",
+      "what": "灯りのともる看板",
+      "width": 755,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「沖縄ラーメンいっと」= Google「沖縄ラーメン いっと」(完全一致)/町名 那覇市久茂地(Google「久茂地3丁目25-12」)/ラーメン屋",
+      "(g) 記事『自家製麺(湿度・気温を見て調整)』= 公式サイト itto-if.com『製造する日の湿度や気温に注意しながら丁寧に仕上げた麺』/ 記事『夜20:00以降の深夜帯』= Google『営業開始: 20:00』"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

@@ -1,45 +1,54 @@
 {
- "featureId": "中華そば店一しな",
- "dir": "fs-50288e6d4c",
- "storeName": "中華そば店一しな",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0%E5%BA%97%E4%B8%80%E3%81%97%E3%81%AA%20%E5%A4%A7%E4%BB%99%E5%B8%82%E6%88%B8%E8%92%94",
- "placeUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0%E5%BA%97+%E4%B8%80%E3%81%97%E3%81%AA/@39.4500651,140.5062439,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8fa1059b3ed839:0x929876672fb455ce!8m2!3d39.4500651!4d140.5062439!16s%2Fg%2F1tf4dw5b?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "中華そば店 一しな",
-  "address": "秋田県大仙市戸蒔谷地中１５−３",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-50288e6d4c/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIiHPSdcfsmnMA6ZujhKM5ZWftkcNYd0MAHJapiVLyB7jAPuKs666ENCO30Ou84iAAISZ_TcD6cHNgEwF6SpiKnVyKVloUrWwvxEu04ISnGXlAj979OsfmzqdBVoaLVdIU0sR4zg=s1200",
-   "what": "チャーシュー載せの醤油ラーメン",
-   "width": 900,
-   "height": 507,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "中華そば店一しな",
+  "dir": "fs-50288e6d4c",
+  "storeName": "中華そば店一しな",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0%E5%BA%97%E4%B8%80%E3%81%97%E3%81%AA%20%E5%A4%A7%E4%BB%99%E5%B8%82%E6%88%B8%E8%92%94",
+  "placeUrl": "https://www.google.com/maps/place/%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0%E5%BA%97+%E4%B8%80%E3%81%97%E3%81%AA/@39.4500651,140.5062439,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8fa1059b3ed839:0x929876672fb455ce!8m2!3d39.4500651!4d140.5062439!16s%2Fg%2F1tf4dw5b?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "中華そば店 一しな",
+    "address": "秋田県大仙市戸蒔谷地中１５−３",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-50288e6d4c/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RufYCE1ZMpPukVi84uc5zWCd6QcztJB6ytFvg2soPBQpQRdcU2-2Nucr4dQv19B58k_GRwvQa8XfnNRzc9Bpl1fLIWkixaAFIxCcahWTLuNYEk9FDbOCXxzhAAdJgX67vD5Pg6jw=s1200",
-   "what": "テーブルとカウンターの明るい店内",
-   "width": 900,
-   "height": 599,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-50288e6d4c/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8yuzi_eQClYLb_z_OrcMiMTjN5Dfqq61k6oseD84pi_7j9hAoln9msoyzXGO0MSsgumDq46VgFEopRhSypgmpvdLJWZYHrI9dXijzoEHG6JcDoh2_LUN0Wu566T2teckR4sjG=s1200",
-   "what": "黒い梁の平屋の店の外観",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-50288e6d4c/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIiHPSdcfsmnMA6ZujhKM5ZWftkcNYd0MAHJapiVLyB7jAPuKs666ENCO30Ou84iAAISZ_TcD6cHNgEwF6SpiKnVyKVloUrWwvxEu04ISnGXlAj979OsfmzqdBVoaLVdIU0sR4zg=s1200",
+      "what": "チャーシュー載せの醤油ラーメン",
+      "width": 900,
+      "height": 507,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-50288e6d4c/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RufYCE1ZMpPukVi84uc5zWCd6QcztJB6ytFvg2soPBQpQRdcU2-2Nucr4dQv19B58k_GRwvQa8XfnNRzc9Bpl1fLIWkixaAFIxCcahWTLuNYEk9FDbOCXxzhAAdJgX67vD5Pg6jw=s1200",
+      "what": "テーブルとカウンターの明るい店内",
+      "width": 900,
+      "height": 599,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-50288e6d4c/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8yuzi_eQClYLb_z_OrcMiMTjN5Dfqq61k6oseD84pi_7j9hAoln9msoyzXGO0MSsgumDq46VgFEopRhSypgmpvdLJWZYHrI9dXijzoEHG6JcDoh2_LUN0Wu566T2teckR4sjG=s1200",
+      "what": "黒い梁の平屋の店の外観",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d) 公式サイト chukasobatenichishina.com: 『秋田県大仙市戸蒔字谷地中15番3』= Google「戸蒔谷地中15-3」/TEL 0187-62-8877 = Google",
+      "(g) 記事「11:00〜14:00(昼のみ)・火曜定休・JR大曲駅から徒歩2分」= 公式『11:00〜14:00・火曜日・JR大曲駅より徒歩2分』",
+      "(f) 店名「中華そば店一しな」(完全一致)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

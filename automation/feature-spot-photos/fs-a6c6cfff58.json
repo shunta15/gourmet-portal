@@ -3,8 +3,53 @@
   "dir": "fs-a6c6cfff58",
   "storeName": "ふじ",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%B5%E3%81%98%20%E8%A5%BF%E6%9D%A1%E5%B8%82",
-  "placeUrl": "https://www.google.com/maps/place/%E3%81%B5%E3%81%98/@33.8954847,133.1671986,17z/data=!3m1!4b1!4m6!3m5!1s0x35502cc835b03987:0xd6bfc89915c4e756!8m2!3d33.8954847!4d133.1671986!16s%2Fg%2F1tgq4g7l?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "店を確かめられず写真なし。記録に address が無く area は西条市のみ。名前は「ふじ」で完全一致だが、Google マップの検索で着いた店は 愛媛県西条市安知生697(和食店)で、記事本文は西条市楢木とあり町名が食い違うため"
+  "placeUrl": "https://maps.google.com/?cid=15474307404489090902",
+  "matched": {
+    "name": "ふじ",
+    "address": "〒793-0051 愛媛県西条市安知生６９７",
+    "category": "和食店",
+    "how": "phone+name(D2深い照合)"
+  },
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-a6c6cfff58/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1iigr9DmoGzqbosyML8cmXwzUaDb0muDqR49K8g00FPfACwdYLuZuUAlGqNoaBmC9uHzQ_5XBIyqECFjOlBubvQEFwGp8mCtS4GjuVsV5p_V_ZBVfdMDuttBLQ_UtuzWM39e3sXIIbjHP",
+      "what": "座敷とテーブル席のある店内",
+      "width": 900,
+      "height": 507,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-a6c6cfff58/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_XvPkDouggWdPdqG7BvElxwbkZL569tncClY4lkxK1Pw86mAG0bgYZEkW-D5MTLnnBBl2rmJ9uTJFKxHYEpXpCHvYHyQ45OTONczIsu02aoY7jAH9JrbedJjOLdLlq8NtvwMZELx8HA7c",
+      "what": "大きな窓のある店内",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-a6c6cfff58/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXoSXtC-3ULeeS84OlR0iHyBCOVhL6OymOkHmh-zyny8FmZTXdX0guvriTSYDrDfAIfpPmVzkfL9P0t6TarB5yvswj784_Kd_p49pxJx07ogYuY9YPvh4tjAHI93v2feKdYb8_36rCSgOK",
+      "what": "駐車場から見た店の外観",
+      "width": 820,
+      "height": 584,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "D2(2026-10-09・深い照合)で確定して写真を付けた。根拠は verify を参照。(以前の記録: 店を確かめられず写真なし。記録に address が無く area は西条市のみ。名前は「ふじ」で完全一致だが、Google マップの検索で着いた店は 愛媛県西条市安知生697(和食店)で、記事本文は西条市楢木とあり町名が食い違うため)",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「0897-56-9068」= Google「0897-56-9068」",
+      "(f) 店名「ふじ」(完全一致)/町名 記事「西条市」= Google「西条市安知生697」/業種 食堂・定食(Google『和食店』)",
+      "(g・参考) 記事「月〜土10:00〜」= Google「営業開始: 10:00(土)」"
+    ],
+    "checkedAt": "2026-10-09"
+  }
 }

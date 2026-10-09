@@ -1,45 +1,53 @@
 {
- "featureId": "麺場よしき",
- "dir": "fs-8f297834fb",
- "storeName": "麺場よしき",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%A0%B4%E3%82%88%E3%81%97%E3%81%8D%20%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%A4%AA%E7%94%B0%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%A0%B4%E3%82%88%E3%81%97%E3%81%8D/@35.4993664,137.5050488,17z/data=!3m1!4b1!4m6!3m5!1s0x601cb5880326b9e5:0x97308f93953963d0!8m2!3d35.4993664!4d137.5050488!16s%2Fg%2F11tch2bqqq?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "麺場よしき",
-  "address": "岐阜県中津川市太田町２丁目６−３４",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-8f297834fb/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFf-fK3n2MgiXw_fl_fgIWsZg2qGwbDwTWfnZutSEij74czSibpCK2XL9wShVpSHuLcO7yMC_F_hc80O282t_PP_GKEOmpp0cp8U7UcpSrr25fECmKKOaaZ4-ll6Rth84r3iOrRUh12une=s1200",
-   "what": "ラーメンとチャーハン",
-   "width": 900,
-   "height": 678,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "麺場よしき",
+  "dir": "fs-8f297834fb",
+  "storeName": "麺場よしき",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%A0%B4%E3%82%88%E3%81%97%E3%81%8D%20%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%A4%AA%E7%94%B0%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%A0%B4%E3%82%88%E3%81%97%E3%81%8D/@35.4993664,137.5050488,17z/data=!3m1!4b1!4m6!3m5!1s0x601cb5880326b9e5:0x97308f93953963d0!8m2!3d35.4993664!4d137.5050488!16s%2Fg%2F11tch2bqqq?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "麺場よしき",
+    "address": "岐阜県中津川市太田町２丁目６−３４",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-8f297834fb/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJYk-RUAuAix9GCr8IqxUxnUknjmxTsONM8R0qi41mFkpArfMe8AjPISFEk5ehgT8dnx35-JyUGtpOuqblpfNyGlp7AqZiOuubEXsFtF7t2vkqm-p__O9HhFEf6wznQCq1ye19=s1200",
-   "what": "店内の入口まわり",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-8f297834fb/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-YAIqBjpxLWbIM62ZJTfZ6MruWZRsAUVu_41F8f6MRH5eNEJiYq0fHUFvfQgwcdJqm7krnN4vxtYBSi_pHoFTGq_kgfSBDWsU-VxQ1rxLjV_IcuLQkOHzdZ1qPyUrWDFnCxGbI7ee8akQ=s1200",
-   "what": "大きな看板の外観",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-8f297834fb/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFf-fK3n2MgiXw_fl_fgIWsZg2qGwbDwTWfnZutSEij74czSibpCK2XL9wShVpSHuLcO7yMC_F_hc80O282t_PP_GKEOmpp0cp8U7UcpSrr25fECmKKOaaZ4-ll6Rth84r3iOrRUh12une=s1200",
+      "what": "ラーメンとチャーハン",
+      "width": 900,
+      "height": 678,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-8f297834fb/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJYk-RUAuAix9GCr8IqxUxnUknjmxTsONM8R0qi41mFkpArfMe8AjPISFEk5ehgT8dnx35-JyUGtpOuqblpfNyGlp7AqZiOuubEXsFtF7t2vkqm-p__O9HhFEf6wznQCq1ye19=s1200",
+      "what": "店内の入口まわり",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-8f297834fb/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-YAIqBjpxLWbIM62ZJTfZ6MruWZRsAUVu_41F8f6MRH5eNEJiYq0fHUFvfQgwcdJqm7krnN4vxtYBSi_pHoFTGq_kgfSBDWsU-VxQ1rxLjV_IcuLQkOHzdZ1qPyUrWDFnCxGbI7ee8akQ=s1200",
+      "what": "大きな看板の外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(e) 建物名: 記事『中津川グリーンビルの1階』= マップ検索『中津川グリーンビル 太田町』の住所『中津川市太田町2丁目6-34 中津川グリーンビル』= Googleの店の住所『太田町2丁目6-34』",
+      "(f) 店名「麺場よしき」(完全一致)/町名 中津川市太田町/ラーメン屋"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

@@ -1,45 +1,53 @@
 {
- "featureId": "タヌキ寿司",
- "dir": "fs-ce714a1265",
- "storeName": "タヌキ寿司",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%83%8C%E3%82%AD%E5%AF%BF%E5%8F%B8%20%E6%95%A6%E8%B3%80%E5%B8%82%E6%B4%A5%E5%86%85%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%82%BF%E3%83%8C%E3%82%AD%E5%AF%BF%E5%8F%B8/@35.65165,136.069108,17z/data=!3m1!4b1!4m6!3m5!1s0x6001fad91a16dcb1:0xce9a030ecde913ab!8m2!3d35.65165!4d136.069108!16s%2Fg%2F1tmy4zq4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "タヌキ寿司",
-  "address": "福井県敦賀市津内町１丁目８−１５",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-ce714a1265/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4sSrYXtRZxcWSZA9VpGKm8S1KJSaylmf4lgPVXRiT6hccR5D9njbemZecyWfc-qDpLHyp8E8uHb-RBhNXie1pHdtimXFy4WOfDqAaSyruWIgUI7E5kZIsyUwQjGSaKQbB85VJsqKOLpk8=s1200",
-   "what": "握り寿司の盛り合わせ",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "タヌキ寿司",
+  "dir": "fs-ce714a1265",
+  "storeName": "タヌキ寿司",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%83%8C%E3%82%AD%E5%AF%BF%E5%8F%B8%20%E6%95%A6%E8%B3%80%E5%B8%82%E6%B4%A5%E5%86%85%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%BF%E3%83%8C%E3%82%AD%E5%AF%BF%E5%8F%B8/@35.65165,136.069108,17z/data=!3m1!4b1!4m6!3m5!1s0x6001fad91a16dcb1:0xce9a030ecde913ab!8m2!3d35.65165!4d136.069108!16s%2Fg%2F1tmy4zq4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "タヌキ寿司",
+    "address": "福井県敦賀市津内町１丁目８−１５",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-ce714a1265/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Snas_cmVzi0R8kFG3T5w4qewdefZuuI-byLghWw9EAVS3rYCLW_3p2LgZG4jYEbV82DCnPaZBJLvd6rtrkvksDqZ6JyDewjrTLdUxaBt8Ib2mJGhmPrzpGckoxR-HGsJqISRXU7w=s1200",
-   "what": "ネタケースとカウンター席",
-   "width": 900,
-   "height": 505,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-ce714a1265/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeF0xx8Apk7YacVSskMsha_9DhZIrQydkYjWkWJrwso7w3lzQMoaZ-oRCN9IYAa7FXQloyjxrG2hcPu97skBGOUL5Tjo9sb2s6ElJiXLLSmz3a2w7FEvxF7w_NKRIRZdjPMNJ6PJYKnB4=s1200",
-   "what": "タヌキ寿司の看板の外観",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-ce714a1265/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4sSrYXtRZxcWSZA9VpGKm8S1KJSaylmf4lgPVXRiT6hccR5D9njbemZecyWfc-qDpLHyp8E8uHb-RBhNXie1pHdtimXFy4WOfDqAaSyruWIgUI7E5kZIsyUwQjGSaKQbB85VJsqKOLpk8=s1200",
+      "what": "握り寿司の盛り合わせ",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-ce714a1265/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Snas_cmVzi0R8kFG3T5w4qewdefZuuI-byLghWw9EAVS3rYCLW_3p2LgZG4jYEbV82DCnPaZBJLvd6rtrkvksDqZ6JyDewjrTLdUxaBt8Ib2mJGhmPrzpGckoxR-HGsJqISRXU7w=s1200",
+      "what": "ネタケースとカウンター席",
+      "width": 900,
+      "height": 505,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-ce714a1265/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeF0xx8Apk7YacVSskMsha_9DhZIrQydkYjWkWJrwso7w3lzQMoaZ-oRCN9IYAa7FXQloyjxrG2hcPu97skBGOUL5Tjo9sb2s6ElJiXLLSmz3a2w7FEvxF7w_NKRIRZdjPMNJ6PJYKnB4=s1200",
+      "what": "タヌキ寿司の看板の外観",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(b) 住所: 記事「福井県敦賀市津内町1丁目8-15」= Google「敦賀市津内町1丁目8-15」",
+      "(f) 店名「タヌキ寿司」(完全一致)/寿司店"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

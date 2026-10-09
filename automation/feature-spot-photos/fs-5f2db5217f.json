@@ -1,45 +1,54 @@
 {
- "featureId": "こあの助",
- "dir": "fs-5f2db5217f",
- "storeName": "こあの助",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%81%82%E3%81%AE%E5%8A%A9%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%81%93%E3%81%82%E3%81%AE%E5%8A%A9/@35.0291432,135.7791114,17z/data=!3m1!4b1!4m6!3m5!1s0x600108598c0ff291:0x9919a1eb4677323d!8m2!3d35.0291432!4d135.7791114!16s%2Fg%2F1th7y7gy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "こあの助",
-  "address": "京都府京都市左京区田中門前町２８−１４ 吹上ビル 2F",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-5f2db5217f/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTaLtdPbX4SN3WGfawr9XP5HW-3sDoHCXT3X2chJq0LvYKBh34UqnYULYXEF6JS4agzr9gavPoAfshCipU0NmOSvD9D-Z2o7SgEk5YFD6YVhJ4xIscCvxofKNJkRsy5R0VDYP_WswPu34=s1200",
-   "what": "ガパオライスと海老",
-   "width": 870,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "こあの助",
+  "dir": "fs-5f2db5217f",
+  "storeName": "こあの助",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%81%82%E3%81%AE%E5%8A%A9%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%81%93%E3%81%82%E3%81%AE%E5%8A%A9/@35.0291432,135.7791114,17z/data=!3m1!4b1!4m6!3m5!1s0x600108598c0ff291:0x9919a1eb4677323d!8m2!3d35.0291432!4d135.7791114!16s%2Fg%2F1th7y7gy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "こあの助",
+    "address": "京都府京都市左京区田中門前町２８−１４ 吹上ビル 2F",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-5f2db5217f/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2kUY6O4n00fUefp0B-fzXV8wm4qx1tP8KJnROwCgrzZ-_Rshrm41WxL2bjakLvZzXe_nvNuZAWadbQeRYSvorRThEasMbWX4sSsz5TeVPiuz_FpgZfIR7raIRBc-Bgb7pn38Q5g=s1200",
-   "what": "グリーンカレーとライス",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-5f2db5217f/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWjKZAAHnq4Q14dJDndxmTgIUUsQdYvCDRPDbrzciSsn83QB-WjSQBZVLe9ZmzNlG1qK4KLcjiUUYJLGsGTMUoLt6tDkJBKWCA8QUlnBX9es_opbXR2OwuOCuPWUdWAKRgCyqB8g=s1200",
-   "what": "タイ式アイスミルクティー",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-5f2db5217f/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTaLtdPbX4SN3WGfawr9XP5HW-3sDoHCXT3X2chJq0LvYKBh34UqnYULYXEF6JS4agzr9gavPoAfshCipU0NmOSvD9D-Z2o7SgEk5YFD6YVhJ4xIscCvxofKNJkRsy5R0VDYP_WswPu34=s1200",
+      "what": "ガパオライスと海老",
+      "width": 870,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-5f2db5217f/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2kUY6O4n00fUefp0B-fzXV8wm4qx1tP8KJnROwCgrzZ-_Rshrm41WxL2bjakLvZzXe_nvNuZAWadbQeRYSvorRThEasMbWX4sSsz5TeVPiuz_FpgZfIR7raIRBc-Bgb7pn38Q5g=s1200",
+      "what": "グリーンカレーとライス",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-5f2db5217f/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWjKZAAHnq4Q14dJDndxmTgIUUsQdYvCDRPDbrzciSsn83QB-WjSQBZVLe9ZmzNlG1qK4KLcjiUUYJLGsGTMUoLt6tDkJBKWCA8QUlnBX9es_opbXR2OwuOCuPWUdWAKRgCyqB8g=s1200",
+      "what": "タイ式アイスミルクティー",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店内・外観の写真が無く(外観は階下の吉野家の看板が主役のため不使用)、p4・p5は料理・飲み物の写真で代用",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(e) 建物名と階: 記事「吹上ビルの二階」=Google「田中門前町28-14 吹上ビル 2F」=公式(koanosuke.kyoto/access)「吹上ビル 2F」",
+      "(d) 公式サイト: 電話 075-702-2611=Google、「百万遍の北西角」=記事の「百万遍・京大近く」、土曜定休・11:30〜14:00/17:30〜22:00",
+      "(f) 店名一致、業種 アジア系無国籍料理(タイカレー)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "店内・外観の写真が無く(外観は階下の吉野家の看板が主役のため不使用)、p4・p5は料理・飲み物の写真で代用"
 }

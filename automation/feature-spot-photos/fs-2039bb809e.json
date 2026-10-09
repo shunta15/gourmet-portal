@@ -1,47 +1,59 @@
 {
- "featureId": "和洋創作料理楓",
- "dir": "fs-2039bb809e",
- "storeName": "和洋創作料理楓",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E6%B4%8B%E5%89%B5%E4%BD%9C%E6%96%99%E7%90%86%E6%A5%93%20%E9%BB%92%E5%B4%8E%E9%A7%85%E5%91%A8%E8%BE%BA",
- "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E6%B4%8B%E5%89%B5%E4%BD%9C%E6%96%99%E7%90%86+%E6%A5%93/@33.8645686,130.7692839,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c8e8f47b4ff9:0xf154db33bf2d5d52!8m2!3d33.8645686!4d130.7692839!16s%2Fg%2F11g9lj73yt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "和洋創作料理 楓",
-  "address": "〒806-0021 福岡県北九州市八幡西区熊手１丁目１−４４ 阿部ビル 1F",
-  "category": "創作料理店",
-  "how": "area+name-exact"
- },
- "images": [],
- "note": "R1(2回め)。area は駅名「黒崎駅周辺」で町名なし。Google の住所は八幡西区熊手1丁目1-44(記事は黒崎一丁目と書いている)。Google マップ上の座標で「黒崎駅」から直線約350m=矛盾なしと判断(住所欄・最寄り駅の表示そのものには駅名は出ていない)。業種は創作料理店。写真に外観・席は無く、ポイント3は鍋と刺身の膳の写真(営業の話題に合う種類が無いため)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-2039bb809e/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ST3CkrmlxluydE-43HyOhy8NxlpqboHjoS9fpOhQJAsnE-PNqnUYdNXCrEGVtjsm-plnbMhskRBptQwrH1m4z1L2LyoVebBJjfL6BZD_ZPYei1wHj9XQk6e19erO3JE4ETWK-Szg",
-   "what": "卓上の鍋と刺身の膳",
-   "width": 900,
-   "height": 506,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "和洋創作料理楓",
+  "dir": "fs-2039bb809e",
+  "storeName": "和洋創作料理楓",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E6%B4%8B%E5%89%B5%E4%BD%9C%E6%96%99%E7%90%86%E6%A5%93%20%E9%BB%92%E5%B4%8E%E9%A7%85%E5%91%A8%E8%BE%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E6%B4%8B%E5%89%B5%E4%BD%9C%E6%96%99%E7%90%86+%E6%A5%93/@33.8645686,130.7692839,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c8e8f47b4ff9:0xf154db33bf2d5d52!8m2!3d33.8645686!4d130.7692839!16s%2Fg%2F11g9lj73yt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "和洋創作料理 楓",
+    "address": "〒806-0021 福岡県北九州市八幡西区熊手１丁目１−４４ 阿部ビル 1F",
+    "category": "創作料理店",
+    "how": "area+name-exact"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-2039bb809e/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S55T-IzgRGdoGMvJsaecKhXZTBKFPtEYfLjLT5sONKPaDPki2ZjqU8TQIuTjgT-w1HqsKglahIEMLRYsIhQ5t46bsR122dE9i13gaSTLjy0d7YaJcH9nzb2jtzkx1LvdxiFps2Mw",
-   "what": "絵が飾られた長テーブルの席",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-2039bb809e/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4fIdGTuS3TJZM_ng_TF3EzPMil2uhWkqSvtDV8_WgBuWS2gj93rU1yB69KVFLFXpPhX3hKiV8xzMKRr5hByZuRh6emUUS5qzvlPm9wCVrF0mAPHsgom2044qfpaMOraEkAe7nww",
-   "what": "楓の看板と入口",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [],
+  "note": "R1(2回め)。area は駅名「黒崎駅周辺」で町名なし。Google の住所は八幡西区熊手1丁目1-44(記事は黒崎一丁目と書いている)。Google マップ上の座標で「黒崎駅」から直線約350m=矛盾なしと判断(住所欄・最寄り駅の表示そのものには駅名は出ていない)。業種は創作料理店。写真に外観・席は無く、ポイント3は鍋と刺身の膳の写真(営業の話題に合う種類が無いため)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+  "pendingImages": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-2039bb809e/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ST3CkrmlxluydE-43HyOhy8NxlpqboHjoS9fpOhQJAsnE-PNqnUYdNXCrEGVtjsm-plnbMhskRBptQwrH1m4z1L2LyoVebBJjfL6BZD_ZPYei1wHj9XQk6e19erO3JE4ETWK-Szg",
+      "what": "卓上の鍋と刺身の膳",
+      "width": 900,
+      "height": 506,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-2039bb809e/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S55T-IzgRGdoGMvJsaecKhXZTBKFPtEYfLjLT5sONKPaDPki2ZjqU8TQIuTjgT-w1HqsKglahIEMLRYsIhQ5t46bsR122dE9i13gaSTLjy0d7YaJcH9nzb2jtzkx1LvdxiFps2Mw",
+      "what": "絵が飾られた長テーブルの席",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-2039bb809e/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4fIdGTuS3TJZM_ng_TF3EzPMil2uhWkqSvtDV8_WgBuWS2gj93rU1yB69KVFLFXpPhX3hKiV8xzMKRr5hByZuRh6emUUS5qzvlPm9wCVrF0mAPHsgom2044qfpaMOraEkAe7nww",
+      "what": "楓の看板と入口",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "verify": {
+    "status": "不一致",
+    "signals": [
+      "(参考) 店名「和洋創作料理 楓」=記事の店名、業種 創作料理店=記事の和洋創作料理・居酒屋。ただし町名が合わないため(f)は成立しない",
+      "(参考) 座標は黒崎駅から約350m(前担当R1の計測)で、記事の「JR黒崎駅から徒歩圏」とは矛盾しない"
+    ],
+    "checkedAt": "2026-10-09",
+    "conflicts": [
+      "町名: 記事「北九州市八幡西区黒崎一丁目」(スペック欄・エリア欄とも)/ Google「八幡西区熊手1丁目1-44 阿部ビル 1F」",
+      "記事に電話・番地・建物名が無く、Googleのウェブサイト欄は apps.apple.com のアプリで公式サイトが無い=裏づけの手がかりが0"
+    ]
   }
- ]
 }

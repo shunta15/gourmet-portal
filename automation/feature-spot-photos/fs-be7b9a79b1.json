@@ -1,45 +1,53 @@
 {
- "featureId": "梁山泊",
- "dir": "fs-be7b9a79b1",
- "storeName": "梁山泊",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A2%81%E5%B1%B1%E6%B3%8A%20%E5%A5%88%E8%89%AF%E5%B8%82",
- "placeUrl": "https://www.google.com/maps/place/%E6%A2%81%E5%B1%B1%E6%B3%8A/@34.679567,135.825548,17z/data=!3m1!4b1!4m6!3m5!1s0x60013a264d275c1b:0x9028883a0ea747ef!8m2!3d34.679567!4d135.825548!16s%2Fg%2F1tgw4ymg?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "梁山泊",
-  "address": "〒630-8345 奈良県奈良市西城戸町１３",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-be7b9a79b1/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXwBtcQtnnLAl5_wfx6Qswd3GEJ_JGGidSecLqucaal8NneJBUBkyAfoqTyvZhc1H4sG1FbGymmGAdO5gBzYqlXn0na0SQAKbGo3jC40kM9q285XdMX0ZBmuiqKSmH72h-QPXjpCWUtRE1=s1200",
-   "what": "岩塩の上で焼く肉と酒",
-   "width": 900,
-   "height": 816,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "梁山泊",
+  "dir": "fs-be7b9a79b1",
+  "storeName": "梁山泊",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A2%81%E5%B1%B1%E6%B3%8A%20%E5%A5%88%E8%89%AF%E5%B8%82",
+  "placeUrl": "https://www.google.com/maps/place/%E6%A2%81%E5%B1%B1%E6%B3%8A/@34.679567,135.825548,17z/data=!3m1!4b1!4m6!3m5!1s0x60013a264d275c1b:0x9028883a0ea747ef!8m2!3d34.679567!4d135.825548!16s%2Fg%2F1tgw4ymg?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "梁山泊",
+    "address": "〒630-8345 奈良県奈良市西城戸町１３",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-be7b9a79b1/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBKlx2a5wBH9v5SU8QTcH0DgEkUbzVeXbpmQmCOY5Mc6Qnyyu5UzBDNPZzGJRXlh7vKVTcPgnMyO7Qkwf06lEyAaksEOmAGU9HT63YxdlrN6HOBWul3FH4SWzXp-MsO9Y4ck7XAKtWB7I3=s1200",
-   "what": "座敷とカウンターの店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-be7b9a79b1/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnZkNuTzUrg2ikve86-txs6LcY8_8k5NisBH0q66XLxyca8I0EHxzDN6I1wZhuTbLa2tphS_MY1xJG7jWflHY3gi9yS9kbbcjwGlZ7gzQ29ZNqNk67U3HrJCfqwvGDu62q2zfQbup-WDSS=s1200",
-   "what": "夜の店の入口",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-be7b9a79b1/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXwBtcQtnnLAl5_wfx6Qswd3GEJ_JGGidSecLqucaal8NneJBUBkyAfoqTyvZhc1H4sG1FbGymmGAdO5gBzYqlXn0na0SQAKbGo3jC40kM9q285XdMX0ZBmuiqKSmH72h-QPXjpCWUtRE1=s1200",
+      "what": "岩塩の上で焼く肉と酒",
+      "width": 900,
+      "height": 816,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-be7b9a79b1/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBKlx2a5wBH9v5SU8QTcH0DgEkUbzVeXbpmQmCOY5Mc6Qnyyu5UzBDNPZzGJRXlh7vKVTcPgnMyO7Qkwf06lEyAaksEOmAGU9HT63YxdlrN6HOBWul3FH4SWzXp-MsO9Y4ck7XAKtWB7I3=s1200",
+      "what": "座敷とカウンターの店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-be7b9a79b1/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnZkNuTzUrg2ikve86-txs6LcY8_8k5NisBH0q66XLxyca8I0EHxzDN6I1wZhuTbLa2tphS_MY1xJG7jWflHY3gi9yS9kbbcjwGlZ7gzQ29ZNqNk67U3HrJCfqwvGDu62q2zfQbup-WDSS=s1200",
+      "what": "夜の店の入口",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "area が奈良市のみ(町名なし)。マップの住所は奈良市西城戸町13で、店名「梁山泊」が完全一致、写真の内容も記事(座敷・炉端・岩塩焼)と合う",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「梁山泊」(完全一致)/町名 奈良市(Google「奈良市西城戸町13」)/会席・懐石料理店",
+      "(g) 記事『名物のどぐろ塩焼き・ヤマトポーク岩塩焼き』『掘りごたつ・25〜50名貸切』『JR奈良駅 徒歩10分』= ぐるなび(Googleのウェブサイト欄のリンク)の記載と一致、住所『奈良市西城戸町13』= Google"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "area が奈良市のみ(町名なし)。マップの住所は奈良市西城戸町13で、店名「梁山泊」が完全一致、写真の内容も記事(座敷・炉端・岩塩焼)と合う"
 }

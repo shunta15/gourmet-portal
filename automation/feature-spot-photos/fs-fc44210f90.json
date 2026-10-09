@@ -1,45 +1,53 @@
 {
- "featureId": "お食事処親味",
- "dir": "fs-fc44210f90",
- "storeName": "お食事処親味",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E8%A6%AA%E5%91%B3%20%E5%90%B9%E7%94%B0%E5%B8%82%E5%86%85%E6%9C%AC%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E8%A6%AA%E5%91%B3/@34.7577883,135.5206092,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e4797e66987b:0x35df72198fe273b9!8m2!3d34.7577883!4d135.5206092!16s%2Fg%2F1tdkrpln?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "お食事処親味",
-  "address": "大阪府吹田市内本町１丁目１０−１１ 旭ファイブ 1F",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-fc44210f90/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT1MyLHDal5PLFK_n4JgC8aMTxT8UrRbhLKfJaPcucpzKSfsi2r_4tkoUnKCueknyDQ_5UP7CgcZP3xJ2s2bmJU3OQlu1LJM6s_RbFeHPK7_nTQmYKXEfpJGx09nt8og45DHlgFKLMZnzd=s1200",
-   "what": "海老天の天丼とお吸い物",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "お食事処親味",
+  "dir": "fs-fc44210f90",
+  "storeName": "お食事処親味",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E8%A6%AA%E5%91%B3%20%E5%90%B9%E7%94%B0%E5%B8%82%E5%86%85%E6%9C%AC%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E8%A6%AA%E5%91%B3/@34.7577883,135.5206092,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e4797e66987b:0x35df72198fe273b9!8m2!3d34.7577883!4d135.5206092!16s%2Fg%2F1tdkrpln?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "お食事処親味",
+    "address": "大阪府吹田市内本町１丁目１０−１１ 旭ファイブ 1F",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-fc44210f90/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVNVbJ0plw-ReOxexKt4NkM1ZtArXvrQzDyGqmskKTwZQb_JybF5KDsAEE0OtHGp47zFY_t5WySNr56GdJzHr-nMLKJ742sYzHwxCsoFCtL2b9dwKUM_Dq6-09DxmS5BiYihvGPtLvQNKz=s1200",
-   "what": "テーブル席の並ぶ店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-fc44210f90/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4bHr_IrozwX4OEDz3LQL2bb1RqEvZ7-XJUtGtj7_2L-drTPZbpQy5pjDl4NObnWH3qlvYWgJfrOGu3i-yyuJWdSYMjG5om_bdYME7wHdxC8Bg_OgKgvAqctS-CiRHkYSbJOuWVTLHBAA=s1200",
-   "what": "そば処の看板が灯る外観",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-fc44210f90/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT1MyLHDal5PLFK_n4JgC8aMTxT8UrRbhLKfJaPcucpzKSfsi2r_4tkoUnKCueknyDQ_5UP7CgcZP3xJ2s2bmJU3OQlu1LJM6s_RbFeHPK7_nTQmYKXEfpJGx09nt8og45DHlgFKLMZnzd=s1200",
+      "what": "海老天の天丼とお吸い物",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-fc44210f90/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVNVbJ0plw-ReOxexKt4NkM1ZtArXvrQzDyGqmskKTwZQb_JybF5KDsAEE0OtHGp47zFY_t5WySNr56GdJzHr-nMLKJ742sYzHwxCsoFCtL2b9dwKUM_Dq6-09DxmS5BiYihvGPtLvQNKz=s1200",
+      "what": "テーブル席の並ぶ店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-fc44210f90/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4bHr_IrozwX4OEDz3LQL2bb1RqEvZ7-XJUtGtj7_2L-drTPZbpQy5pjDl4NObnWH3qlvYWgJfrOGu3i-yyuJWdSYMjG5om_bdYME7wHdxC8Bg_OgKgvAqctS-CiRHkYSbJOuWVTLHBAA=s1200",
+      "what": "そば処の看板が灯る外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d)+(g) 公式サイト(osyokujidokoro-shinmi.com): 住所「吹田市内本町1-10-11 旭ファイブ1F」・TEL 06-6319-0829=Google、「阪急吹田駅より徒歩5分」=記事の「阪急吹田駅 徒歩約5分」",
+      "(f) 店名・町名 内本町・業種 蕎麦店"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

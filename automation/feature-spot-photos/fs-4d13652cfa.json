@@ -1,45 +1,54 @@
 {
- "featureId": "Diningcafeプティポワ",
- "dir": "fs-4d13652cfa",
- "storeName": "Diningcafeプティポワ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Diningcafe%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D%E3%83%AF%20%E8%8D%89%E5%8A%A0%E5%B8%82%E9%AB%98%E7%A0%82",
- "placeUrl": "https://www.google.com/maps/place/Diningcafe+%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D%E3%83%AF/@35.8262053,139.8040861,17z/data=!3m1!4b1!4m6!3m5!1s0x60189123cfe165d3:0xb9e0e7d6f4f6ae0a!8m2!3d35.8262053!4d139.8040861!16s%2Fg%2F11j90x5gbp?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "Diningcafe プティポワ",
-  "address": "埼玉県草加市高砂１丁目５−１７ 2F",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-4d13652cfa/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpmFgiHQkzVkdE_PXWw_wRC7X_pMEQvBZv2NH9ESC3QPz3aD-icwj6Lja0cRt-dyiIsu9Dlo6PwelXx0GMO5UlEegzPteD4OmnH8m5sMVZ6bBiX--qEllgRQ-saK2k_p5fJvq3oA=s1200",
-   "what": "デミグラスのオムライス",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "Diningcafeプティポワ",
+  "dir": "fs-4d13652cfa",
+  "storeName": "Diningcafeプティポワ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Diningcafe%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D%E3%83%AF%20%E8%8D%89%E5%8A%A0%E5%B8%82%E9%AB%98%E7%A0%82",
+  "placeUrl": "https://www.google.com/maps/place/Diningcafe+%E3%83%97%E3%83%86%E3%82%A3%E3%83%9D%E3%83%AF/@35.8262053,139.8040861,17z/data=!3m1!4b1!4m6!3m5!1s0x60189123cfe165d3:0xb9e0e7d6f4f6ae0a!8m2!3d35.8262053!4d139.8040861!16s%2Fg%2F11j90x5gbp?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "Diningcafe プティポワ",
+    "address": "埼玉県草加市高砂１丁目５−１７ 2F",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-4d13652cfa/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWfCEIYOUvDnrvFb0oZGP2nDmeUsPGGDDxH1AIase427kvNaQQbV3YyuhyGESv98r1wYK1tHj_URhcgoqx1B4DpIhtsjCeW-xU5Q9flaThGo88Bt2cRX02EuNfqYGJKPrQBOE=s1200",
-   "what": "ローストビーフ丼",
-   "width": 900,
-   "height": 507,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-4d13652cfa/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRhPkraDt1NIevOSYBb6Tz_RLY_6hcmlXSBosaZGtdfpzhtizNXRgkRqyI-lIrk7MZ9oBAQxKbpcWmKLzZaLPJxd4UYhV0rnpTEJRrG11Jcq5uITP-SXAVu2_9aZ5JPClMHRa0CwlZEgWL=s1200",
-   "what": "青空の下のビル外観",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-4d13652cfa/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpmFgiHQkzVkdE_PXWw_wRC7X_pMEQvBZv2NH9ESC3QPz3aD-icwj6Lja0cRt-dyiIsu9Dlo6PwelXx0GMO5UlEegzPteD4OmnH8m5sMVZ6bBiX--qEllgRQ-saK2k_p5fJvq3oA=s1200",
+      "what": "デミグラスのオムライス",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-4d13652cfa/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWfCEIYOUvDnrvFb0oZGP2nDmeUsPGGDDxH1AIase427kvNaQQbV3YyuhyGESv98r1wYK1tHj_URhcgoqx1B4DpIhtsjCeW-xU5Q9flaThGo88Bt2cRX02EuNfqYGJKPrQBOE=s1200",
+      "what": "ローストビーフ丼",
+      "width": 900,
+      "height": 507,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-4d13652cfa/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRhPkraDt1NIevOSYBb6Tz_RLY_6hcmlXSBosaZGtdfpzhtizNXRgkRqyI-lIrk7MZ9oBAQxKbpcWmKLzZaLPJxd4UYhV0rnpTEJRrG11Jcq5uITP-SXAVu2_9aZ5JPClMHRa0CwlZEgWL=s1200",
+      "what": "青空の下のビル外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店内の写真が無いため、スロット4は料理の写真",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「048-951-0131」= Google = 公式 petits-pois.owst.jp",
+      "(e) 階: 記事『高砂のビル2階』= Google「草加市高砂1丁目5-17 2F」",
+      "(g) 記事の看板『大麦牛のローストビーフシリーズ』= 公式サイトの『おすすめ: 大麦牛のローストビーフ』"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "店内の写真が無いため、スロット4は料理の写真"
 }

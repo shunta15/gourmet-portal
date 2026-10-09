@@ -1,47 +1,60 @@
 {
- "featureId": "牧志プリースト",
- "dir": "fs-9cb3f9c6b5",
- "storeName": "牧志プリースト",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%89%A7%E5%BF%97%E3%83%97%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%88%20%E9%82%A3%E8%A6%87%E5%B8%82%E7%89%A7%E5%BF%97",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%A8%E6%B4%8B%E9%A3%9F+%E7%89%A7%E5%BF%97%E3%83%97%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%88/@26.2195002,127.6878119,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56933136241f1:0xbcaf1b81d42265ed!8m2!3d26.2195002!4d127.6878119!16s%2Fg%2F11k50mjpfn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "ワインと洋食 牧志プリースト",
-  "address": "〒900-0013 沖縄県那覇市牧志２丁目２１−１ 小湾共同住宅",
-  "category": "イタリア料理店",
-  "how": "area+name-contains"
- },
- "images": [],
- "note": "R1(2回め)。Google の店名は「ワインと洋食 牧志プリースト」で、記録「牧志プリースト」を含む。住所は那覇市牧志2丁目21-1 小湾共同住宅で area と一致。業種はイタリア料理店(記事は手作りイタリアン)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-9cb3f9c6b5/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_ZyV0oB7Qxxmpp04ZSDlL7d4QuXpWRLSEBeVNf7uJ0qnZhO8H-U2Cr_PrYB_Pajt6LE9V_nKCRCRTaM5BDSHCfN5NNkUnXCHAmJGf8PST9zZomk5NKNqj0TDngKqQ31hmOUhK9LjTi8Cb",
-   "what": "パスタやスペアリブの皿",
-   "width": 900,
-   "height": 506,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "牧志プリースト",
+  "dir": "fs-9cb3f9c6b5",
+  "storeName": "牧志プリースト",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%89%A7%E5%BF%97%E3%83%97%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%88%20%E9%82%A3%E8%A6%87%E5%B8%82%E7%89%A7%E5%BF%97",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%AF%E3%82%A4%E3%83%B3%E3%81%A8%E6%B4%8B%E9%A3%9F+%E7%89%A7%E5%BF%97%E3%83%97%E3%83%AA%E3%83%BC%E3%82%B9%E3%83%88/@26.2195002,127.6878119,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56933136241f1:0xbcaf1b81d42265ed!8m2!3d26.2195002!4d127.6878119!16s%2Fg%2F11k50mjpfn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "ワインと洋食 牧志プリースト",
+    "address": "〒900-0013 沖縄県那覇市牧志２丁目２１−１ 小湾共同住宅",
+    "category": "イタリア料理店",
+    "how": "area+name-contains"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-9cb3f9c6b5/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-hGLKO91Y-CVgacaaLDQJjtc0c4Sjdjo-_zsU7ylRfaVkXOmgs2ESYnTcwIrmWNJORqiZdGswfjNGcLPCx7YN8dY24rTYdeA6pzXp2j1R99-n9wIR5M9DDM4Z-WKrkEZCqxrZ1HgRDtTI",
-   "what": "ワイングラスと店内のカウンター",
-   "width": 506,
-   "height": 900,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-9cb3f9c6b5/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-1Q4Jio65rtJzrJreJJR5ROsNQTn6X5V6v6KNF-G0yHagH0zHMOIg4ZDppqe4rqnsfLsLswC_nkx8V_bLZPhu6zF1kCslnjEShdt2qluNr9pgf3M7X2ealMF-3G4OInOYlS7Zbd5sitc",
-   "what": "緑越しの店先",
-   "width": 900,
-   "height": 599,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [],
+  "note": "R1(2回め)。Google の店名は「ワインと洋食 牧志プリースト」で、記録「牧志プリースト」を含む。住所は那覇市牧志2丁目21-1 小湾共同住宅で area と一致。業種はイタリア料理店(記事は手作りイタリアン)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+  "pendingImages": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-9cb3f9c6b5/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_ZyV0oB7Qxxmpp04ZSDlL7d4QuXpWRLSEBeVNf7uJ0qnZhO8H-U2Cr_PrYB_Pajt6LE9V_nKCRCRTaM5BDSHCfN5NNkUnXCHAmJGf8PST9zZomk5NKNqj0TDngKqQ31hmOUhK9LjTi8Cb",
+      "what": "パスタやスペアリブの皿",
+      "width": 900,
+      "height": 506,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-9cb3f9c6b5/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-hGLKO91Y-CVgacaaLDQJjtc0c4Sjdjo-_zsU7ylRfaVkXOmgs2ESYnTcwIrmWNJORqiZdGswfjNGcLPCx7YN8dY24rTYdeA6pzXp2j1R99-n9wIR5M9DDM4Z-WKrkEZCqxrZ1HgRDtTI",
+      "what": "ワイングラスと店内のカウンター",
+      "width": 506,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-9cb3f9c6b5/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-1Q4Jio65rtJzrJreJJR5ROsNQTn6X5V6v6KNF-G0yHagH0zHMOIg4ZDppqe4rqnsfLsLswC_nkx8V_bLZPhu6zF1kCslnjEShdt2qluNr9pgf3M7X2ealMF-3G4OInOYlS7Zbd5sitc",
+      "what": "緑越しの店先",
+      "width": 900,
+      "height": 599,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "verify": {
+    "status": "不明",
+    "signals": [
+      "(g)の1点: 記事「夕方〜翌1時」=Google「毎日17:00〜1:00」",
+      "(参考) 記事「那覇市牧志の二丁目」=Google「牧志2丁目21-1 小湾共同住宅」(町名は合うが番地は記事に無い)、業種 イタリア料理店=記事の手作りパスタ・ピザ"
+    ],
+    "checkedAt": "2026-10-09",
+    "missing": [
+      "店名が完全一致でない(Google「ワインと洋食 牧志プリースト」)ため(f)が成立しない",
+      "公式Instagram(@maxi_priest_okinawa)はログイン無しでは読めず(d)が取れない",
+      "記事に番地・電話・建物名が無い"
+    ]
   }
- ]
 }

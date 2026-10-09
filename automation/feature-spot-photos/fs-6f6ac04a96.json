@@ -1,45 +1,54 @@
 {
- "featureId": "麺diningだいふく",
- "dir": "fs-6f6ac04a96",
- "storeName": "麺diningだいふく",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BAdining%E3%81%A0%E3%81%84%E3%81%B5%E3%81%8F%20%E5%A7%AB%E8%B7%AF%E5%B8%82%E8%BE%BB%E4%BA%95",
- "placeUrl": "https://www.google.com/maps/place/%E9%BA%BAdining%E3%81%A0%E3%81%84%E3%81%B5%E3%81%8F/@34.8487345,134.6709345,17z/data=!3m1!4b1!4m6!3m5!1s0x3554e02f36985b73:0xac63e6f0f0de0162!8m2!3d34.8487345!4d134.6709345!16s%2Fg%2F11bwny9cz7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "麺diningだいふく",
-  "address": "〒670-0083 兵庫県姫路市辻井１丁目１２−２８",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-6f6ac04a96/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tc0UEBuRMxY2I9rYGZtwd-y_HxHynOuF4ETmxLjJm_wp90SGY6f32HOLWLJx830hNYFVifEN5yIw5QjTn-lwdogWIw64EAKhtDT-qAQMFRRdJLCTbnA8uhMSgQyTEsM9TfJF3RtYIBUR8K",
-   "what": "辛い麺と揚げ物のセット",
-   "width": 900,
-   "height": 900,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "麺diningだいふく",
+  "dir": "fs-6f6ac04a96",
+  "storeName": "麺diningだいふく",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BAdining%E3%81%A0%E3%81%84%E3%81%B5%E3%81%8F%20%E5%A7%AB%E8%B7%AF%E5%B8%82%E8%BE%BB%E4%BA%95",
+  "placeUrl": "https://www.google.com/maps/place/%E9%BA%BAdining%E3%81%A0%E3%81%84%E3%81%B5%E3%81%8F/@34.8487345,134.6709345,17z/data=!3m1!4b1!4m6!3m5!1s0x3554e02f36985b73:0xac63e6f0f0de0162!8m2!3d34.8487345!4d134.6709345!16s%2Fg%2F11bwny9cz7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "麺diningだいふく",
+    "address": "〒670-0083 兵庫県姫路市辻井１丁目１２−２８",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-6f6ac04a96/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReukXFExpG1JUT0Lg33dA-HE548_bnKcrtrXQE8yt-nvIe07EXj26F5DH4AnxSw1upmkgfm_N8iRTG2fmnuyJ3fVaH1HY8cKYSXkDQW8o3mfQrXzkM6TYATYudJ3Wv-gGKSUtm8jXXhCih",
-   "what": "豚骨ラーメン",
-   "width": 900,
-   "height": 670,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-6f6ac04a96/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sqd-vmkfcd6EBPc-iVJq75cUcLprcXoS61hvH2O6M0gIocJL9WrL0HcmC1FJyX8GkTasL0EJJMgtwr9zoCcPthSVxP9PSaOAojrLQM8zxwc28vZrWFHTLCx4ArnaRS_DyGBGtjMONlNgc",
-   "what": "店の外観",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-6f6ac04a96/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tc0UEBuRMxY2I9rYGZtwd-y_HxHynOuF4ETmxLjJm_wp90SGY6f32HOLWLJx830hNYFVifEN5yIw5QjTn-lwdogWIw64EAKhtDT-qAQMFRRdJLCTbnA8uhMSgQyTEsM9TfJF3RtYIBUR8K",
+      "what": "辛い麺と揚げ物のセット",
+      "width": 900,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-6f6ac04a96/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReukXFExpG1JUT0Lg33dA-HE548_bnKcrtrXQE8yt-nvIe07EXj26F5DH4AnxSw1upmkgfm_N8iRTG2fmnuyJ3fVaH1HY8cKYSXkDQW8o3mfQrXzkM6TYATYudJ3Wv-gGKSUtm8jXXhCih",
+      "what": "豚骨ラーメン",
+      "width": 900,
+      "height": 670,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-6f6ac04a96/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sqd-vmkfcd6EBPc-iVJq75cUcLprcXoS61hvH2O6M0gIocJL9WrL0HcmC1FJyX8GkTasL0EJJMgtwr9zoCcPthSVxP9PSaOAojrLQM8zxwc28vZrWFHTLCx4ArnaRS_DyGBGtjMONlNgc",
+      "what": "店の外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店内の写真が無いため、ポイント4は料理の写真を当てた。",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d) 公式サイト himeji-daifuku.com: 住所『姫路市辻井1丁目12-28』・電話 079-269-9199 = Google/記事『姫路市辻井・バイパス沿い』",
+      "(g) 記事『昼11:30〜/夜18:00〜』= 公式『昼11:30〜15:00・夜18:00〜23:00』/ Googleオーナー投稿の店名・住所・電話が公式と同じ",
+      "(f) 店名「麺diningだいふく」(完全一致)/ラーメン屋"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "店内の写真が無いため、ポイント4は料理の写真を当てた。"
 }

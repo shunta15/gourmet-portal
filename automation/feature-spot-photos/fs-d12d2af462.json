@@ -1,45 +1,53 @@
 {
- "featureId": "フランス料理の総菜食堂パ・マル",
- "dir": "fs-d12d2af462",
- "storeName": "フランス料理の総菜食堂パ・マル",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E6%96%99%E7%90%86%E3%81%AE%E7%B7%8F%E8%8F%9C%E9%A3%9F%E5%A0%82%E3%83%91%E3%83%BB%E3%83%9E%E3%83%AB%20%E5%B8%82%E5%B7%9D%E5%B8%82%E5%8D%97%E5%A4%A7%E9%87%8E",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E6%96%99%E7%90%86%E3%81%AE%E7%B7%8F%E8%8F%9C%E9%A3%9F%E5%A0%82+%E3%83%91%E3%83%BB%E3%83%9E%E3%83%AB/@35.7459493,139.9564371,17z/data=!3m1!4b1!4m6!3m5!1s0x60188130a07e8a87:0x49c2a36f3705885f!8m2!3d35.7459493!4d139.9564371!16s%2Fg%2F11trxf3f0z?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "フランス料理の総菜食堂 パ・マル",
-  "address": "〒272-0804 千葉県市川市南大野３丁目１−１５ カーサ・オオノ",
-  "how": "search"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-d12d2af462/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TP6bwYn5FxOo3FZ904P5S-zAMOIwQ-APLofYVPfFY1dqnmZUkXFJShIEJpasa9WfrTd6KQ509srw1Zxg7IsyT8yDT1aOKDoTZN_neE_yI8__dXd0y0VD4jsCYz4HycHwdST_U4zeMVUMK7=s1200",
-   "what": "肉料理とパンのプレート",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "フランス料理の総菜食堂パ・マル",
+  "dir": "fs-d12d2af462",
+  "storeName": "フランス料理の総菜食堂パ・マル",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E6%96%99%E7%90%86%E3%81%AE%E7%B7%8F%E8%8F%9C%E9%A3%9F%E5%A0%82%E3%83%91%E3%83%BB%E3%83%9E%E3%83%AB%20%E5%B8%82%E5%B7%9D%E5%B8%82%E5%8D%97%E5%A4%A7%E9%87%8E",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E6%96%99%E7%90%86%E3%81%AE%E7%B7%8F%E8%8F%9C%E9%A3%9F%E5%A0%82+%E3%83%91%E3%83%BB%E3%83%9E%E3%83%AB/@35.7459493,139.9564371,17z/data=!3m1!4b1!4m6!3m5!1s0x60188130a07e8a87:0x49c2a36f3705885f!8m2!3d35.7459493!4d139.9564371!16s%2Fg%2F11trxf3f0z?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "フランス料理の総菜食堂 パ・マル",
+    "address": "〒272-0804 千葉県市川市南大野３丁目１−１５ カーサ・オオノ",
+    "how": "search"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-d12d2af462/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0j20w02KvOAgPwkD6uIMyDi2ZQRFYKp1vztG-pWszkiYGkrCvYYFJVlH_7ktI7LIs2XewVpd2VfDKNdWE1TYsV1jjINc9x1f-vve-U1uLKdAwLJdqEWaUzP6FKBewlsGBi0AP=s1200",
-   "what": "ショーケース越しに見える厨房",
-   "width": 900,
-   "height": 675,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-d12d2af462/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Stk8-IusvEnNlmbaG_-SDl7dlRqnTee81OObeHlgz9lc6scE_uywVuX7nlx2uTQucUYZOCsHcR90qxDaP708hkQaoluxlQQCpYrPW2ssrlsnzciv3UVDy9Dw_XDZYbgZDbj3Y1YA=s1200",
-   "what": "鶏のロゴの看板",
-   "width": 720,
-   "height": 900,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-d12d2af462/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TP6bwYn5FxOo3FZ904P5S-zAMOIwQ-APLofYVPfFY1dqnmZUkXFJShIEJpasa9WfrTd6KQ509srw1Zxg7IsyT8yDT1aOKDoTZN_neE_yI8__dXd0y0VD4jsCYz4HycHwdST_U4zeMVUMK7=s1200",
+      "what": "肉料理とパンのプレート",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-d12d2af462/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0j20w02KvOAgPwkD6uIMyDi2ZQRFYKp1vztG-pWszkiYGkrCvYYFJVlH_7ktI7LIs2XewVpd2VfDKNdWE1TYsV1jjINc9x1f-vve-U1uLKdAwLJdqEWaUzP6FKBewlsGBi0AP=s1200",
+      "what": "ショーケース越しに見える厨房",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-d12d2af462/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Stk8-IusvEnNlmbaG_-SDl7dlRqnTee81OObeHlgz9lc6scE_uywVuX7nlx2uTQucUYZOCsHcR90qxDaP708hkQaoluxlQQCpYrPW2ssrlsnzciv3UVDy9Dw_XDZYbgZDbj3Y1YA=s1200",
+      "what": "鶏のロゴの看板",
+      "width": 720,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「047-701-7581」=Google「047-701-7581」",
+      "(f) 町名: 記事「市川市南大野3丁目」=Google「南大野3丁目1-15 カーサ・オオノ」、店名一致、業種 総菜屋"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

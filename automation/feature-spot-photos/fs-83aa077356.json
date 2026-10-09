@@ -1,47 +1,55 @@
 {
- "featureId": "名代肉まぶし焼肉つむぎ",
- "dir": "fs-83aa077356",
- "storeName": "名代肉まぶし焼肉つむぎ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E4%BB%A3%E8%82%89%E3%81%BE%E3%81%B6%E3%81%97%E7%84%BC%E8%82%89%E3%81%A4%E3%82%80%E3%81%8E%20%E6%9D%BE%E5%B1%B1%E5%B8%82%E9%AB%98%E4%BA%95%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E3%81%A4%E3%82%80%E3%81%8E/@33.7985734,132.813481,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe93185e1f2c1:0xd1e22fef49e37426!8m2!3d33.7985734!4d132.813481!16s%2Fg%2F11npxlzgy7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "焼肉 つむぎ",
-  "address": "〒791-1111 愛媛県松山市高井町７２９−１",
-  "category": "焼肉店",
-  "how": "area+name-contains"
- },
- "images": [],
- "note": "R1(2回め)。Google の店名は「焼肉 つむぎ」で、記録「名代肉まぶし焼肉つむぎ」に含まれる(記録側の「名代肉まぶし」は Google の店名に無い)。住所は松山市高井町729-1で area と一致。外観の写真が無く、ポイント5は櫃まぶし風の膳の写真。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-83aa077356/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCzj7mtVCZ1VZ_Dq7wchN2H5MJLMoP0-__DrEyFYzTQkVi7eiWYsPV2334jzoKiwtZUCnm5s1pBszp8rlhH8lRm_gW3erEUkUeuMaDGf4xzluPWEVypvozo1d0o7I0-8Mf1Mv286Fl3jFL",
-   "what": "昼のコースの御膳",
-   "width": 900,
-   "height": 600,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "名代肉まぶし焼肉つむぎ",
+  "dir": "fs-83aa077356",
+  "storeName": "名代肉まぶし焼肉つむぎ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E4%BB%A3%E8%82%89%E3%81%BE%E3%81%B6%E3%81%97%E7%84%BC%E8%82%89%E3%81%A4%E3%82%80%E3%81%8E%20%E6%9D%BE%E5%B1%B1%E5%B8%82%E9%AB%98%E4%BA%95%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E3%81%A4%E3%82%80%E3%81%8E/@33.7985734,132.813481,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe93185e1f2c1:0xd1e22fef49e37426!8m2!3d33.7985734!4d132.813481!16s%2Fg%2F11npxlzgy7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "焼肉 つむぎ",
+    "address": "〒791-1111 愛媛県松山市高井町７２９−１",
+    "category": "焼肉店",
+    "how": "area+name-contains"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-83aa077356/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnRa9z-wQUQjJpZYdosYsG91dtci5e4mOlB8LpryMuelvJBUq5g_A-1m0RLZgnaCXi9xTZSAGwHAWYTAlYvp9z96YzYdewrPSPl7O235KMcwnnysxMDS3I8RgWUAjMBAwOiYQiVY3_1T1p",
-   "what": "窓辺のテーブル席",
-   "width": 675,
-   "height": 900,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-83aa077356/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFEN16-aMwTI6fjno_WHUocZVeLI4w2osnLCga85dOGkQ5dbiZoZJ1dst2eB7xOaGKjJNUib88f96qmmF0AWVhRk7hffMvKB3WChsHy64ys91KVXSY1l-63N1w15J_UmAKCIlmIjSDGkP1",
-   "what": "櫃まぶし風の膳",
-   "width": 900,
-   "height": 600,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [],
+  "note": "R1(2回め)。Google の店名は「焼肉 つむぎ」で、記録「名代肉まぶし焼肉つむぎ」に含まれる(記録側の「名代肉まぶし」は Google の店名に無い)。住所は松山市高井町729-1で area と一致。外観の写真が無く、ポイント5は櫃まぶし風の膳の写真。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+  "pendingImages": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-83aa077356/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCzj7mtVCZ1VZ_Dq7wchN2H5MJLMoP0-__DrEyFYzTQkVi7eiWYsPV2334jzoKiwtZUCnm5s1pBszp8rlhH8lRm_gW3erEUkUeuMaDGf4xzluPWEVypvozo1d0o7I0-8Mf1Mv286Fl3jFL",
+      "what": "昼のコースの御膳",
+      "width": 900,
+      "height": 600,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-83aa077356/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnRa9z-wQUQjJpZYdosYsG91dtci5e4mOlB8LpryMuelvJBUq5g_A-1m0RLZgnaCXi9xTZSAGwHAWYTAlYvp9z96YzYdewrPSPl7O235KMcwnnysxMDS3I8RgWUAjMBAwOiYQiVY3_1T1p",
+      "what": "窓辺のテーブル席",
+      "width": 675,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-83aa077356/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFEN16-aMwTI6fjno_WHUocZVeLI4w2osnLCga85dOGkQ5dbiZoZJ1dst2eB7xOaGKjJNUib88f96qmmF0AWVhRk7hffMvKB3WChsHy64ys91KVXSY1l-63N1w15J_UmAKCIlmIjSDGkP1",
+      "what": "櫃まぶし風の膳",
+      "width": 900,
+      "height": 600,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "verify": {
+    "status": "不明",
+    "signals": [
+      "(b・部分) 記事「松山市高井町」= Google「松山市高井町729-1」(番地は記事に無し)",
+      "(g・参考) ホットペッパー(Googleの予約リンク先・公式サイトではない)の『店名にもなっている看板メニュー肉まぶしはランチ限定』『掘りごたつ・カウンター』『駐車場15台』『鷹ノ子駅から徒歩約29分(車利用が中心)』が記事と合う"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ]
 }

@@ -1,47 +1,59 @@
 {
- "featureId": "炭やよつ葉",
- "dir": "fs-54863fbbff",
- "storeName": "炭やよつ葉",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E3%82%84%E3%82%88%E3%81%A4%E8%91%89%20%E5%AF%9D%E5%B1%8B%E5%B7%9D%E5%B8%82",
- "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E3%82%84%E3%80%82%E3%82%88%E3%81%A4%E8%91%89/@34.7629,135.6209412,17z/data=!3m1!4b1!4m6!3m5!1s0x60011f00585d33b9:0x33a44a6e3486bda6!8m2!3d34.7629!4d135.6209412!16s%2Fg%2F11w5bdv72x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "炭や。よつ葉",
-  "address": "〒572-0837 大阪府寝屋川市早子町１８−１ 奥川ビル 2階",
-  "category": "居酒屋",
-  "how": "area+name-exact"
- },
- "images": [],
- "note": "R1(2回め)。Google の店名「炭や。よつ葉」は、記号「。」をそろえれば記録「炭やよつ葉」と完全一致。area は市のみ(寝屋川市)で町名が無く、Google の住所に寝屋川市が入り矛盾なしと解釈。記事は「奥川ビルの2階・寝屋川市駅から徒歩3分」と書いており、Google の住所(早子町18-1 奥川ビル 2階)と合う。店内・酒の写真が無く、ポイント3は親子丼の御膳、ポイント4は炭火焼の皿の写真。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-54863fbbff/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1A36zEKYty4M8NlLSp_s2_2E0r7MxMKlwYa1KNKYklr9hbuFq4EKStegn_gGrUr_w0KPtPXKM8gWeX2AxbcikwRUyW0wj-_0cGR-92XgpZMx2WAg7iSvZ9MLAN8D7Kv2ncEBPVOdbzmnl",
-   "what": "親子丼の御膳",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "炭やよつ葉",
+  "dir": "fs-54863fbbff",
+  "storeName": "炭やよつ葉",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E3%82%84%E3%82%88%E3%81%A4%E8%91%89%20%E5%AF%9D%E5%B1%8B%E5%B7%9D%E5%B8%82",
+  "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E3%82%84%E3%80%82%E3%82%88%E3%81%A4%E8%91%89/@34.7629,135.6209412,17z/data=!3m1!4b1!4m6!3m5!1s0x60011f00585d33b9:0x33a44a6e3486bda6!8m2!3d34.7629!4d135.6209412!16s%2Fg%2F11w5bdv72x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "炭や。よつ葉",
+    "address": "〒572-0837 大阪府寝屋川市早子町１８−１ 奥川ビル 2階",
+    "category": "居酒屋",
+    "how": "area+name-exact"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-54863fbbff/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfQWMutrQROMic_U7j5h2w2Oyv_uQhd0QIpIP0yzD9d3VSYb2ehCQf5ThqcUtlPt8Boqr-s7gxHlxkpW1ZnnGdMg276hVFjwAswyWQOYr-ZNnrV_eS5or8Jj25vAdJpvRcydbb",
-   "what": "炭火焼の一皿",
-   "width": 900,
-   "height": 900,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-54863fbbff/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R14w-6108JKm1od7eht63FrfJYLFP-wAHcPLYxplJSlVHmK8dLl8l67eYy3eWW6WpvrqtPDVS_jbnVWV-jMXh3Dw_UpRkFWrT96CyjYtlMfmTA7mvS6RKdcgyvETR6hkMGAFzDb5eOb0Te",
-   "what": "のれんのかかる店先",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [],
+  "note": "R1(2回め)。Google の店名「炭や。よつ葉」は、記号「。」をそろえれば記録「炭やよつ葉」と完全一致。area は市のみ(寝屋川市)で町名が無く、Google の住所に寝屋川市が入り矛盾なしと解釈。記事は「奥川ビルの2階・寝屋川市駅から徒歩3分」と書いており、Google の住所(早子町18-1 奥川ビル 2階)と合う。店内・酒の写真が無く、ポイント3は親子丼の御膳、ポイント4は炭火焼の皿の写真。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+  "pendingImages": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-54863fbbff/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1A36zEKYty4M8NlLSp_s2_2E0r7MxMKlwYa1KNKYklr9hbuFq4EKStegn_gGrUr_w0KPtPXKM8gWeX2AxbcikwRUyW0wj-_0cGR-92XgpZMx2WAg7iSvZ9MLAN8D7Kv2ncEBPVOdbzmnl",
+      "what": "親子丼の御膳",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-54863fbbff/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfQWMutrQROMic_U7j5h2w2Oyv_uQhd0QIpIP0yzD9d3VSYb2ehCQf5ThqcUtlPt8Boqr-s7gxHlxkpW1ZnnGdMg276hVFjwAswyWQOYr-ZNnrV_eS5or8Jj25vAdJpvRcydbb",
+      "what": "炭火焼の一皿",
+      "width": 900,
+      "height": 900,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-54863fbbff/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R14w-6108JKm1od7eht63FrfJYLFP-wAHcPLYxplJSlVHmK8dLl8l67eYy3eWW6WpvrqtPDVS_jbnVWV-jMXh3Dw_UpRkFWrT96CyjYtlMfmTA7mvS6RKdcgyvETR6hkMGAFzDb5eOb0Te",
+      "what": "のれんのかかる店先",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "verify": {
+    "status": "不明",
+    "signals": [
+      "(e) 建物名と階: 記事「奥川ビルの2階」=Google「早子町18-1 奥川ビル 2階」",
+      "(参考) 店名は記事の題名「炭や。よつ葉」=Google「炭や。よつ葉」、業種 居酒屋=記事の炭火焼居酒屋。ただし記事のエリアが「寝屋川市」のみで町名が無く(f)は成立しない"
+    ],
+    "checkedAt": "2026-10-09",
+    "missing": [
+      "公式サイト sumiyayotsuba.owst.jp(Googleのウェブサイト欄)が404で読めず、(d)が取れない",
+      "記事に番地・電話が無く(a)(b)が取れない。(e)のみ1つ"
+    ]
   }
- ]
 }

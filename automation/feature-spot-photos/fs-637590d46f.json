@@ -1,45 +1,53 @@
 {
- "featureId": "小梟シャオシャオ",
- "dir": "fs-637590d46f",
- "storeName": "小梟シャオシャオ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E6%A2%9F%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%9C%AC%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E5%B0%8F%E6%A2%9F+%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA/@34.9863803,135.7699628,17z/data=!3m1!4b1!4m6!3m5!1s0x600109f97ea695a1:0x95ee5c6da6ef8c0d!8m2!3d34.9863803!4d135.7699628!16s%2Fg%2F11s93lcnys?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "小梟 シャオシャオ",
-  "address": "〒605-0981 京都府京都市東山区本町８丁目８９−１",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-637590d46f/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TczwT3MrAm-h1qcFROMnisq9fTGmCp9gMW15JejKou65xohVoj0x4uqIqxDA3VXS5FkjIeKOjXGeg-NePHjXizpAS6tqbkED_sSeKekpJNSybJYgiITDVGHhMnt_JuECjx0iOd=s1200",
-   "what": "ランチの盛り合わせプレート",
-   "width": 600,
-   "height": 900,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "小梟シャオシャオ",
+  "dir": "fs-637590d46f",
+  "storeName": "小梟シャオシャオ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E6%A2%9F%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%9C%AC%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E5%B0%8F%E6%A2%9F+%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA/@34.9863803,135.7699628,17z/data=!3m1!4b1!4m6!3m5!1s0x600109f97ea695a1:0x95ee5c6da6ef8c0d!8m2!3d34.9863803!4d135.7699628!16s%2Fg%2F11s93lcnys?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "小梟 シャオシャオ",
+    "address": "〒605-0981 京都府京都市東山区本町８丁目８９−１",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-637590d46f/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxrviaFxW96BOlU9-6IOuiocLlVrhDd1ElvTKl9RUt2EHbZVrvRMp3Lr0DIAMrFUK1ydcKelsVr_9LZMdRxfWT8I4KZJjpwUsoE2x8f8T5CaZpI-qZIGfZ-nLjGS9eR_5vCxlLTshCs8Ih=s1200",
-   "what": "白いカウンターと赤い椅子",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-637590d46f/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJfIIxviU9HJ7nZf1UmuPyBPi1TZjHkOtv-VBGnB3q-xfN-Xgb21gRpy3gh8weLW-l6x8hz2iR7OLI4cDSxPGHR23bHUv1BmzP75qR4s7wKrMtOjVKvHSemNl2GLPsyn8WUBN8yVLPgc0d=s1200",
-   "what": "梟の看板がある入口",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-637590d46f/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TczwT3MrAm-h1qcFROMnisq9fTGmCp9gMW15JejKou65xohVoj0x4uqIqxDA3VXS5FkjIeKOjXGeg-NePHjXizpAS6tqbkED_sSeKekpJNSybJYgiITDVGHhMnt_JuECjx0iOd=s1200",
+      "what": "ランチの盛り合わせプレート",
+      "width": 600,
+      "height": 900,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-637590d46f/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxrviaFxW96BOlU9-6IOuiocLlVrhDd1ElvTKl9RUt2EHbZVrvRMp3Lr0DIAMrFUK1ydcKelsVr_9LZMdRxfWT8I4KZJjpwUsoE2x8f8T5CaZpI-qZIGfZ-nLjGS9eR_5vCxlLTshCs8Ih=s1200",
+      "what": "白いカウンターと赤い椅子",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-637590d46f/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJfIIxviU9HJ7nZf1UmuPyBPi1TZjHkOtv-VBGnB3q-xfN-Xgb21gRpy3gh8weLW-l6x8hz2iR7OLI4cDSxPGHR23bHUv1BmzP75qR4s7wKrMtOjVKvHSemNl2GLPsyn8WUBN8yVLPgc0d=s1200",
+      "what": "梟の看板がある入口",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「075-746-4583」=Google「075-746-4583」",
+      "(f) 町名: 記事「京都市東山区本町8丁目」=Google「本町8丁目89-1」、店名一致、業種 広東料理店(広東式焼味)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

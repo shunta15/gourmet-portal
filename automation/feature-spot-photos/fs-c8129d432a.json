@@ -1,45 +1,53 @@
 {
- "featureId": "マルカツ小樽水産",
- "dir": "fs-c8129d432a",
- "storeName": "マルカツ小樽水産",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%84%E5%B0%8F%E6%A8%BD%E6%B0%B4%E7%94%A3%20%E5%B0%8F%E6%A8%BD%E5%B8%82%E8%8A%B1%E5%9C%92",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%84%E5%B0%8F%E6%A8%BD%E6%B0%B4%E7%94%A3/@43.1914912,140.9998931,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0ae057258e1a4b:0xbba22f8ba9e0e296!8m2!3d43.1914912!4d140.9998931!16s%2Fg%2F11f106cf34?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "マルカツ小樽水産",
-  "address": "北海道小樽市花園１丁目１１−１０",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-c8129d432a/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzEk01n5EoLQ9KbHHarTzxNnqemfF5T1aeHx-JMQ2TYwiR8pWL3-4jLDkVuM1kRNOn__dpmyuqfoLZqrHG02gHWaNZLjTLSmCG_k7t-xZwJTsP7LbfLPdZKOjXR7ioZsyVpO53=s1200",
-   "what": "網焼きの牡蠣とホタテ",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "マルカツ小樽水産",
+  "dir": "fs-c8129d432a",
+  "storeName": "マルカツ小樽水産",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%84%E5%B0%8F%E6%A8%BD%E6%B0%B4%E7%94%A3%20%E5%B0%8F%E6%A8%BD%E5%B8%82%E8%8A%B1%E5%9C%92",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%84%E5%B0%8F%E6%A8%BD%E6%B0%B4%E7%94%A3/@43.1914912,140.9998931,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0ae057258e1a4b:0xbba22f8ba9e0e296!8m2!3d43.1914912!4d140.9998931!16s%2Fg%2F11f106cf34?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "マルカツ小樽水産",
+    "address": "北海道小樽市花園１丁目１１−１０",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-c8129d432a/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw0IgAwwH7SuVz8UgmIXZteykNU18VhBuwVWr7ejDuDSFPxYesG7FQsy26DrM3E71ZWHLrRpZltaxMYzcG3VI7JRwPyOZH6I4DsZE9TDZM6BzpCsOZZT9m46z_3Rd-O94dy0mLsA=s1200",
-   "what": "畳の個室とテーブル",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-c8129d432a/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3uuh36cyvZMivwW-rqzv1YwlBU9JrVuCArF4ykVsTUntHJsEOinLlyReQHOrfiG5aKQiads1hSSMLYPGOGimc3aCwKX0cE3F7b6w6v0Af96PR35sJWxmFQRb83PZPQb53tzo=s1200",
-   "what": "のれんと木札の店の入口",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-c8129d432a/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzEk01n5EoLQ9KbHHarTzxNnqemfF5T1aeHx-JMQ2TYwiR8pWL3-4jLDkVuM1kRNOn__dpmyuqfoLZqrHG02gHWaNZLjTLSmCG_k7t-xZwJTsP7LbfLPdZKOjXR7ioZsyVpO53=s1200",
+      "what": "網焼きの牡蠣とホタテ",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-c8129d432a/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw0IgAwwH7SuVz8UgmIXZteykNU18VhBuwVWr7ejDuDSFPxYesG7FQsy26DrM3E71ZWHLrRpZltaxMYzcG3VI7JRwPyOZH6I4DsZE9TDZM6BzpCsOZZT9m46z_3Rd-O94dy0mLsA=s1200",
+      "what": "畳の個室とテーブル",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-c8129d432a/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3uuh36cyvZMivwW-rqzv1YwlBU9JrVuCArF4ykVsTUntHJsEOinLlyReQHOrfiG5aKQiads1hSSMLYPGOGimc3aCwKX0cE3F7b6w6v0Af96PR35sJWxmFQRb83PZPQb53tzo=s1200",
+      "what": "のれんと木札の店の入口",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「マルカツ小樽水産」=Google、町名 記事「小樽市花園」=Google「花園1丁目11-10」、業種 居酒屋",
+      "(d)+(g) Googleのウェブサイト欄(まいぷれ小樽): 住所「花園1-11-10」・電話 0134-61-7227=Google / 「日曜定休」「刺身・炉端焼き」「個室」=記事"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

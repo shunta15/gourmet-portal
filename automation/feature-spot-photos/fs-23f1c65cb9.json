@@ -1,45 +1,53 @@
 {
- "featureId": "大阪福島鮨ふみ",
- "dir": "fs-23f1c65cb9",
- "storeName": "大阪福島鮨ふみ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E7%A6%8F%E5%B3%B6%E9%AE%A8%E3%81%B5%E3%81%BF%20%E5%A4%A7%E9%98%AA%E5%B8%82%E7%A6%8F%E5%B3%B6%E5%8C%BA%E7%A6%8F%E5%B3%B6",
- "placeUrl": "https://www.google.com/maps/place/%E5%A4%A7%E9%98%AA%E7%A6%8F%E5%B3%B6+%E9%AE%A8%E3%81%B5%E3%81%BF/@34.6977,135.485481,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e661a446b519:0xb0196c62f06b18c6!8m2!3d34.6977!4d135.485481!16s%2Fg%2F11bwtmmr13?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "大阪福島 鮨ふみ",
-  "address": "〒553-0003 大阪府大阪市福島区福島７丁目７−２４ スリーエスビル 1F",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-23f1c65cb9/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QN6df8R5D9fzkaq1dvgNy5jyzUsEvpIPQT1jagTJ8abhJSEMcbPVFH2SByaPFVrVvaniIL6eS2XZMbeXFu_mhn7FoqC1QsngfuCao43obufKA_KsHn50pQydbh2bBrvRfkw70yMpRmRNyb=s1200",
-   "what": "握りの盛り合わせ",
-   "width": 900,
-   "height": 596,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "大阪福島鮨ふみ",
+  "dir": "fs-23f1c65cb9",
+  "storeName": "大阪福島鮨ふみ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E7%A6%8F%E5%B3%B6%E9%AE%A8%E3%81%B5%E3%81%BF%20%E5%A4%A7%E9%98%AA%E5%B8%82%E7%A6%8F%E5%B3%B6%E5%8C%BA%E7%A6%8F%E5%B3%B6",
+  "placeUrl": "https://www.google.com/maps/place/%E5%A4%A7%E9%98%AA%E7%A6%8F%E5%B3%B6+%E9%AE%A8%E3%81%B5%E3%81%BF/@34.6977,135.485481,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e661a446b519:0xb0196c62f06b18c6!8m2!3d34.6977!4d135.485481!16s%2Fg%2F11bwtmmr13?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "大阪福島 鮨ふみ",
+    "address": "〒553-0003 大阪府大阪市福島区福島７丁目７−２４ スリーエスビル 1F",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-23f1c65cb9/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qp_NqgzQIElfvUxNeW8EAGnxZn1eFO7esbc-QyGSuF8eJ8f3IYnTdX1nJN7LU2BR9GZClk5jA6yjgG_UGWk01tC5WuAR9W_8DqYRe1EtiEWmVaxLcW4E9QhDCQm9Qjkj2ZeUdtTser70qW=s1200",
-   "what": "カウンター越しの雲丹の軍艦",
-   "width": 678,
-   "height": 900,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-23f1c65cb9/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTmEDIccv78GBpnIvzHjeF0a2oJ6WYweDVZ2cdQpgcQSRLHcEt7GqQig83R0Kzi09o97x0-lpbY-nsn2-6iAvOZ4G3Pqb_BaXa69Aj0wb7P8xIqtyanstmiY7hqhvJEPUGJQ-J=s1200",
-   "what": "夜の店の外観",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-23f1c65cb9/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QN6df8R5D9fzkaq1dvgNy5jyzUsEvpIPQT1jagTJ8abhJSEMcbPVFH2SByaPFVrVvaniIL6eS2XZMbeXFu_mhn7FoqC1QsngfuCao43obufKA_KsHn50pQydbh2bBrvRfkw70yMpRmRNyb=s1200",
+      "what": "握りの盛り合わせ",
+      "width": 900,
+      "height": 596,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-23f1c65cb9/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qp_NqgzQIElfvUxNeW8EAGnxZn1eFO7esbc-QyGSuF8eJ8f3IYnTdX1nJN7LU2BR9GZClk5jA6yjgG_UGWk01tC5WuAR9W_8DqYRe1EtiEWmVaxLcW4E9QhDCQm9Qjkj2ZeUdtTser70qW=s1200",
+      "what": "カウンター越しの雲丹の軍艦",
+      "width": 678,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-23f1c65cb9/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTmEDIccv78GBpnIvzHjeF0a2oJ6WYweDVZ2cdQpgcQSRLHcEt7GqQig83R0Kzi09o97x0-lpbY-nsn2-6iAvOZ4G3Pqb_BaXa69Aj0wb7P8xIqtyanstmiY7hqhvJEPUGJQ-J=s1200",
+      "what": "夜の店の外観",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店名はマップ上「大阪福島 鮨ふみ」(空白をそろえると一致)。店内の写真が無いので、spot 4 にはカウンターが写る料理の写真を当てた",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「06-6345-4423」=Google「06-6345-4423」",
+      "(b)+(e) 住所: 記事「福島区福島7-7-24 スリーエスビル1F」=Google「福島7丁目7-24 スリーエスビル 1F」"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "店名はマップ上「大阪福島 鮨ふみ」(空白をそろえると一致)。店内の写真が無いので、spot 4 にはカウンターが写る料理の写真を当てた"
 }

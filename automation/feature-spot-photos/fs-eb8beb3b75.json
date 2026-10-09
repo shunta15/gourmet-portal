@@ -1,45 +1,53 @@
 {
- "featureId": "２代目ラーメンイエロー",
- "dir": "fs-eb8beb3b75",
- "storeName": "２代目ラーメンイエロー",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EF%BC%92%E4%BB%A3%E7%9B%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%20%E6%96%B0%E6%BD%9F%E5%B8%82%E8%A5%BF%E5%8C%BA%E5%A4%A7%E9%87%8E",
- "placeUrl": "https://www.google.com/maps/place/%EF%BC%92%E4%BB%A3%E7%9B%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC/@37.865118,138.9526057,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff4c73a067dbc35:0xb0eb25b767260ba5!8m2!3d37.865118!4d138.9526057!16s%2Fg%2F11z4gjwjlk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "２代目ラーメンイエロー",
-  "address": "新潟県新潟市西区大野186ｰ1",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-eb8beb3b75/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QsEECaRHLfRo1vT8R74CITfeybHlvdZVnCPfMBuZzeKNrfIyJz61lb3MZWlTahgHHxJ78fF50h5hNrZ9erCeYhuRM6ne0xM2MrVWG5WFnmtP6Pld790cjv_eqvAXTy-Bxi_W_BYgnspDXO=s1200",
-   "what": "卵とメンマ入りのまぜそば",
-   "width": 900,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "２代目ラーメンイエロー",
+  "dir": "fs-eb8beb3b75",
+  "storeName": "２代目ラーメンイエロー",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EF%BC%92%E4%BB%A3%E7%9B%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%20%E6%96%B0%E6%BD%9F%E5%B8%82%E8%A5%BF%E5%8C%BA%E5%A4%A7%E9%87%8E",
+  "placeUrl": "https://www.google.com/maps/place/%EF%BC%92%E4%BB%A3%E7%9B%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC/@37.865118,138.9526057,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff4c73a067dbc35:0xb0eb25b767260ba5!8m2!3d37.865118!4d138.9526057!16s%2Fg%2F11z4gjwjlk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "２代目ラーメンイエロー",
+    "address": "新潟県新潟市西区大野186ｰ1",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-eb8beb3b75/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxBdf6Wm_1wklpp3yopdmd4ZAB-Vbs0rFkrJHHSIjP_0rCG0ebUQv2RjoE36JhSlGGRJWGvvkzvKEMoB-CBHQSKY43ceYTmhf5yTQ_40FVOel3iIrHKGDJY64ZBxbxCOLtrLGZsPw8EVM=s1200",
-   "what": "カウンターの黄色いコップ",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-eb8beb3b75/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-N0D2nOMcc6JaBAoUoaZzlPtEvfrf2Rqg4eE0WUbkHN6EiVPFgQSr3N6zZlrYEuTtF4wZTo-3uiVr3W8O5CaIsGCjYR53OoG4FY7srQyWDlFeN7V90ZXLn8pchioG7mLHG0PdwEZ3FXc=s1200",
-   "what": "黄色い店の外観",
-   "width": 732,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-eb8beb3b75/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QsEECaRHLfRo1vT8R74CITfeybHlvdZVnCPfMBuZzeKNrfIyJz61lb3MZWlTahgHHxJ78fF50h5hNrZ9erCeYhuRM6ne0xM2MrVWG5WFnmtP6Pld790cjv_eqvAXTy-Bxi_W_BYgnspDXO=s1200",
+      "what": "卵とメンマ入りのまぜそば",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-eb8beb3b75/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxBdf6Wm_1wklpp3yopdmd4ZAB-Vbs0rFkrJHHSIjP_0rCG0ebUQv2RjoE36JhSlGGRJWGvvkzvKEMoB-CBHQSKY43ceYTmhf5yTQ_40FVOel3iIrHKGDJY64ZBxbxCOLtrLGZsPw8EVM=s1200",
+      "what": "カウンターの黄色いコップ",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-eb8beb3b75/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-N0D2nOMcc6JaBAoUoaZzlPtEvfrf2Rqg4eE0WUbkHN6EiVPFgQSr3N6zZlrYEuTtF4wZTo-3uiVr3W8O5CaIsGCjYR53OoG4FY7srQyWDlFeN7V90ZXLn8pchioG7mLHG0PdwEZ3FXc=s1200",
+      "what": "黄色い店の外観",
+      "width": 732,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d)+(g) 公式Instagram(@nidaime.yellowtensyu=Googleのウェブサイト欄): 「〒950-2037 新潟市西区大野186-1」=Google / 「定休日 火曜日+α」「夜18:00〜」=記事の「火休」「夜18:00〜21:00」",
+      "(f) 店名「２代目ラーメンイエロー」=Google、町名 新潟市西区大野・業種 ラーメン屋"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

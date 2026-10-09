@@ -1,47 +1,57 @@
 {
- "featureId": "vegeeggLABO",
- "dir": "fs-6177c0cab1",
- "storeName": "vegeeggLABO",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=vegeeggLABO%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82",
- "placeUrl": "https://www.google.com/maps/place/vege+egg+LABO./@34.8108188,134.6402776,15z/data=!4m10!1m2!2m1!1zdmVnZWVnZ0xBQk8g5YW15bqr55yM5aer6Lev5biC!3m6!1s0x3554e1a6b193f445:0xf10b0456148cd1fd!8m2!3d34.8108188!4d134.658302!15sCh52ZWdlZWdnTEFCTyDlhbXluqvnnIzlp6vot6_luIJaIyIhdmVnZWVnZ2xhYm8g5YW15bqrIOecjCDlp6vot68g5biCkgEKc2FsYWRfc2hvcJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOVU0yUjVkV0pSRUFF4AEA-gEECAAQIg!16s%2Fg%2F11nn13nn6c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "vege egg LABO.",
-  "address": "〒672-8090 兵庫県姫路市飾磨区今在家北１丁目79",
-  "category": "サラダ ショップ",
-  "how": "area+name-exact"
- },
- "images": [],
- "note": "R1(2回め)。検索結果は一覧(4件)で、店名が完全一致するのは vege egg LABO. の1件のみ。記録の area は「兵庫県姫路市」のみで町名が無く、Google の住所(姫路市飾磨区今在家北1丁目79)に姫路市が入り矛盾なしと解釈(町名・駅での裏づけは無い)。業種はサラダショップ(記事は野菜と卵のキッチン)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-6177c0cab1/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYApo_5xcs_aZHiHCzyFAFZZ1mtv3hEDfugzhYPucYRaYwcAniwTGgNOxFMjzYmdQe4pwWzrhHGC5XgDBsgsOi_HKg_-HCBY1XDrEaKNVjB8F5lC0JSwt_fB3oRffi-4mybKJ9",
-   "what": "明るい店内のテーブル席",
-   "width": 900,
-   "height": 611,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "vegeeggLABO",
+  "dir": "fs-6177c0cab1",
+  "storeName": "vegeeggLABO",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=vegeeggLABO%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82",
+  "placeUrl": "https://www.google.com/maps/place/vege+egg+LABO./@34.8108188,134.6402776,15z/data=!4m10!1m2!2m1!1zdmVnZWVnZ0xBQk8g5YW15bqr55yM5aer6Lev5biC!3m6!1s0x3554e1a6b193f445:0xf10b0456148cd1fd!8m2!3d34.8108188!4d134.658302!15sCh52ZWdlZWdnTEFCTyDlhbXluqvnnIzlp6vot6_luIJaIyIhdmVnZWVnZ2xhYm8g5YW15bqrIOecjCDlp6vot68g5biCkgEKc2FsYWRfc2hvcJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOVU0yUjVkV0pSRUFF4AEA-gEECAAQIg!16s%2Fg%2F11nn13nn6c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "vege egg LABO.",
+    "address": "〒672-8090 兵庫県姫路市飾磨区今在家北１丁目79",
+    "category": "サラダ ショップ",
+    "how": "area+name-exact"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-6177c0cab1/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RiIrVByozqz8qDMr_LMTh97vH5bEHtcCrkzzei1rZSQHP1pt2-mBgL1GNCs1nbbcnT1tw834GzwuzB8w4ZOnFRqCLXYKUSoFFuE0x-KIca1AUKdFx0oxF4IHj-O0nwcrEGg0x80Mn4uKd2",
-   "what": "サラダとローストのプレート",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-6177c0cab1/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkfeMYoPBXanCgivaXHZFn-xRw-Ljx8A3t4u_223q56bb0aKaBZDjpNnAB2N5pNHf_nBq_I311vgTqipvVW037QlOJF6d-j01uSWfUOi2PZQa7NEtohZIzVDhT-z0zRa1v5epQ9GjezsI",
-   "what": "木の受付台のある店内",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [],
+  "note": "R1(2回め)。検索結果は一覧(4件)で、店名が完全一致するのは vege egg LABO. の1件のみ。記録の area は「兵庫県姫路市」のみで町名が無く、Google の住所(姫路市飾磨区今在家北1丁目79)に姫路市が入り矛盾なしと解釈(町名・駅での裏づけは無い)。業種はサラダショップ(記事は野菜と卵のキッチン)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+  "pendingImages": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-6177c0cab1/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYApo_5xcs_aZHiHCzyFAFZZ1mtv3hEDfugzhYPucYRaYwcAniwTGgNOxFMjzYmdQe4pwWzrhHGC5XgDBsgsOi_HKg_-HCBY1XDrEaKNVjB8F5lC0JSwt_fB3oRffi-4mybKJ9",
+      "what": "明るい店内のテーブル席",
+      "width": 900,
+      "height": 611,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-6177c0cab1/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RiIrVByozqz8qDMr_LMTh97vH5bEHtcCrkzzei1rZSQHP1pt2-mBgL1GNCs1nbbcnT1tw834GzwuzB8w4ZOnFRqCLXYKUSoFFuE0x-KIca1AUKdFx0oxF4IHj-O0nwcrEGg0x80Mn4uKd2",
+      "what": "サラダとローストのプレート",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-6177c0cab1/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkfeMYoPBXanCgivaXHZFn-xRw-Ljx8A3t4u_223q56bb0aKaBZDjpNnAB2N5pNHf_nBq_I311vgTqipvVW037QlOJF6d-j01uSWfUOi2PZQa7NEtohZIzVDhT-z0zRa1v5epQ9GjezsI",
+      "what": "木の受付台のある店内",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "verify": {
+    "status": "不明",
+    "signals": [
+      "(d) 公式SNS: 記事が名前を挙げたInstagram @vegeegg_labo(=Googleのウェブサイト欄と同じ)のプロフィールに「姫路市飾磨区今在家北1-79 / TEL 079-255-3987」とあり、Googleの住所・電話と一致。記事の店名・姫路市・野菜と卵(プロフィール「旬のおやさい＆平飼いたまご」)とも矛盾しない"
+    ],
+    "checkedAt": "2026-10-09",
+    "missing": [
+      "記事に町名・番地・電話が無く、(f)の町名一致も(a)(b)も取れない=手がかり1つだけ"
+    ]
   }
- ]
 }

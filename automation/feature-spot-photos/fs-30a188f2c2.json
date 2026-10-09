@@ -1,45 +1,54 @@
 {
- "featureId": "一食一笑小鉄",
- "dir": "fs-30a188f2c2",
- "storeName": "一食一笑小鉄",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E9%A3%9F%E4%B8%80%E7%AC%91%E5%B0%8F%E9%89%84%20%E5%90%B9%E7%94%B0%E5%B8%82%E6%98%AD%E5%92%8C%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E4%B8%80%E9%A3%9F%E4%B8%80%E7%AC%91%E5%B0%8F%E9%89%84/@34.762513,135.5284592,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e375d436c36d:0x69b011af0d9cd4a5!8m2!3d34.762513!4d135.5284592!16s%2Fg%2F11tmr3sv0g?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "一食一笑小鉄",
-  "address": "大阪府吹田市昭和町１４−２３",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-30a188f2c2/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJ2ModgYp3bKFMdPpE4TbnQHSiEhwpf2g-RNpOwSfGItum5O9RAomshzSV7SfgVDWN1k7kwCav0yxigXBJ1Q5WOHcK5ECDb0VpRPhvnx5SDowni61qRu7grQCui7zZuSqLHvOf=s1200",
-   "what": "釜飯と小鉢の定食",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "一食一笑小鉄",
+  "dir": "fs-30a188f2c2",
+  "storeName": "一食一笑小鉄",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E9%A3%9F%E4%B8%80%E7%AC%91%E5%B0%8F%E9%89%84%20%E5%90%B9%E7%94%B0%E5%B8%82%E6%98%AD%E5%92%8C%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E4%B8%80%E9%A3%9F%E4%B8%80%E7%AC%91%E5%B0%8F%E9%89%84/@34.762513,135.5284592,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e375d436c36d:0x69b011af0d9cd4a5!8m2!3d34.762513!4d135.5284592!16s%2Fg%2F11tmr3sv0g?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "一食一笑小鉄",
+    "address": "大阪府吹田市昭和町１４−２３",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-30a188f2c2/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnuEh5ARgPJP0t00I80vfZkaii1GkNwcDrEhgI9EhJ4pW4SNo1YHjyb48MYbHcvLxSZSs6u-1SQl9peBFM9rZxztcxv1NDJyrmk0B6y8z0mnGPUIEQmbWEdHTzNbvx8ZdbCsA=s1200",
-   "what": "カウンターの出汁巻き卵",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-30a188f2c2/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLSTb8wfsbFvmLib0EDYHx2xJW0SKcaokWFkfsiOoX8Dq0L-9UofgIuvxXSgvzN22Jwog-K9rqSQ0B9G58d2DvHnl8oasaIxLS70iqacyXZ3Vo_LsktyDt60LLIazleEozONoiYw=s1200",
-   "what": "通りに面した外観",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-30a188f2c2/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJ2ModgYp3bKFMdPpE4TbnQHSiEhwpf2g-RNpOwSfGItum5O9RAomshzSV7SfgVDWN1k7kwCav0yxigXBJ1Q5WOHcK5ECDb0VpRPhvnx5SDowni61qRu7grQCui7zZuSqLHvOf=s1200",
+      "what": "釜飯と小鉢の定食",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-30a188f2c2/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnuEh5ARgPJP0t00I80vfZkaii1GkNwcDrEhgI9EhJ4pW4SNo1YHjyb48MYbHcvLxSZSs6u-1SQl9peBFM9rZxztcxv1NDJyrmk0B6y8z0mnGPUIEQmbWEdHTzNbvx8ZdbCsA=s1200",
+      "what": "カウンターの出汁巻き卵",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-30a188f2c2/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLSTb8wfsbFvmLib0EDYHx2xJW0SKcaokWFkfsiOoX8Dq0L-9UofgIuvxXSgvzN22Jwog-K9rqSQ0B9G58d2DvHnl8oasaIxLS70iqacyXZ3Vo_LsktyDt60LLIazleEozONoiYw=s1200",
+      "what": "通りに面した外観",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店内の写真が無く、p4はカウンター上の料理写真で代用",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(b) 住所: 記事「昭和町14-23」= Google「吹田市昭和町14-23」",
+      "(f) 店名「一食一笑小鉄」(完全一致)/吹田市昭和町/居酒屋",
+      "(g・参考) 記事『JR吹田駅から徒歩7分』と、Google位置が吹田市昭和町"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "店内の写真が無く、p4はカウンター上の料理写真で代用"
 }

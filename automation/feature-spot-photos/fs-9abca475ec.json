@@ -1,55 +1,63 @@
 {
- "featureId": "リトルシェフにんにく",
- "dir": "fs-9abca475ec",
- "storeName": "リトルシェフにんにく",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%83%88%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%95%E3%81%AB%E3%82%93%E3%81%AB%E3%81%8F%20%E5%8D%83%E8%91%89%E5%B8%82%E7%BE%8E%E6%B5%9C%E5%8C%BA%E9%AB%98%E6%B4%B2",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%AA%E3%83%88%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%95%E3%81%AB%E3%82%93%E3%81%AB%E3%81%8F/@35.6284504,140.074252,17z/data=!3m1!4b1!4m6!3m5!1s0x602283a6bf382099:0xe85077868bd9c851!8m2!3d35.6284504!4d140.074252!16s%2Fg%2F1tdcx69c?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "リトルシェフにんにく",
-  "address": "千葉県千葉市美浜区高洲３丁目１４−１ 102号",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 2,
-   "path": "/restaurants/fs/fs-9abca475ec/p2.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtOoooYXuBC9RjyyQOBsYJdCWFIK5kJDN-dKedSoAw4mIrtocNobuUgFTesEnADQsmi26aUu5iaHsobX9DmIEG1ctBd9xUBhC6SfRMXc5nEOmbuy39xs3ZJdA5e2Mvw0hoDlrweoMKHif9=s1200",
-   "what": "海老のクリームパスタ",
-   "width": 900,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "リトルシェフにんにく",
+  "dir": "fs-9abca475ec",
+  "storeName": "リトルシェフにんにく",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%83%88%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%95%E3%81%AB%E3%82%93%E3%81%AB%E3%81%8F%20%E5%8D%83%E8%91%89%E5%B8%82%E7%BE%8E%E6%B5%9C%E5%8C%BA%E9%AB%98%E6%B4%B2",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%AA%E3%83%88%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%95%E3%81%AB%E3%82%93%E3%81%AB%E3%81%8F/@35.6284504,140.074252,17z/data=!3m1!4b1!4m6!3m5!1s0x602283a6bf382099:0xe85077868bd9c851!8m2!3d35.6284504!4d140.074252!16s%2Fg%2F1tdcx69c?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "リトルシェフにんにく",
+    "address": "千葉県千葉市美浜区高洲３丁目１４−１ 102号",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-9abca475ec/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SiOkW1AoAuD7llt-CDZRLjH-F7mEv_5Cqn4JRKehpx9uw26k_ZVORr-GuoAUqW6Vy8wagakJapOZoWi9vnik8u9tKMhQQFqNqPF7DUk8iBwkaFIu05hRm1AFpwgBRX3r6-rqI=s1200",
-   "what": "にんにく丸ごとのチキン",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-9abca475ec/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbXgr0ae6Y_jIPluOLG4S6zFJruEm4R27w0oUGRN4qjOmLfghB7WhoObh3f-cCc0ftlM_arvcpl1Th4qGC13t1UXWlU2rTnWUz4zRVW5t3GtMA50oq2N6HM5sTicJXXlUEqK-rD3gE2ST9=s1200",
-   "what": "テーブル席が並ぶ店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-9abca475ec/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Srt6ZlvfhZ1CpqGfYJDy41fnRo6k4dy1YVWoDDdarFa94Si_apqDzW-Mu38xAzTMU3p2BU3hGqwSSZU8DlcTlpunEbEwmYPBx0q902_zLsAr_BP0S4Bto9jOGBLYOmRVTGANIJVw=s1200",
-   "what": "木のドアと外席の店先",
-   "width": 900,
-   "height": 506,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-9abca475ec/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtOoooYXuBC9RjyyQOBsYJdCWFIK5kJDN-dKedSoAw4mIrtocNobuUgFTesEnADQsmi26aUu5iaHsobX9DmIEG1ctBd9xUBhC6SfRMXc5nEOmbuy39xs3ZJdA5e2Mvw0hoDlrweoMKHif9=s1200",
+      "what": "海老のクリームパスタ",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-9abca475ec/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SiOkW1AoAuD7llt-CDZRLjH-F7mEv_5Cqn4JRKehpx9uw26k_ZVORr-GuoAUqW6Vy8wagakJapOZoWi9vnik8u9tKMhQQFqNqPF7DUk8iBwkaFIu05hRm1AFpwgBRX3r6-rqI=s1200",
+      "what": "にんにく丸ごとのチキン",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-9abca475ec/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbXgr0ae6Y_jIPluOLG4S6zFJruEm4R27w0oUGRN4qjOmLfghB7WhoObh3f-cCc0ftlM_arvcpl1Th4qGC13t1UXWlU2rTnWUz4zRVW5t3GtMA50oq2N6HM5sTicJXXlUEqK-rD3gE2ST9=s1200",
+      "what": "テーブル席が並ぶ店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-9abca475ec/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Srt6ZlvfhZ1CpqGfYJDy41fnRo6k4dy1YVWoDDdarFa94Si_apqDzW-Mu38xAzTMU3p2BU3hGqwSSZU8DlcTlpunEbEwmYPBx0q902_zLsAr_BP0S4Bto9jOGBLYOmRVTGANIJVw=s1200",
+      "what": "木のドアと外席の店先",
+      "width": 900,
+      "height": 506,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「リトルシェフにんにく」=Google、町名 記事「千葉市美浜区高洲」=Google「高洲3丁目14-1」",
+      "(g) 記事「稲毛海岸駅 徒歩2分」: 稲毛海岸駅から店の座標まで約123m / 「マリンピア向かい」: イオンマリンピアSC本館(高洲3丁目13-1)まで約127m=整合(座標の距離による照合)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

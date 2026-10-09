@@ -3,12 +3,53 @@
   "dir": "fs-24b319a38e",
   "storeName": "縁カフェ 天神森",
   "mapsUrl": "https://maps.google.com/?cid=3184665757239420428",
-  "placeUrl": "https://www.google.com/maps/place/%E7%B8%81%E3%82%AB%E3%83%95%E3%82%A7+%E5%A4%A9%E7%A5%9E%E6%A3%AE/@34.9489755,138.2531461,17z/data=!3m1!4b1!4m6!3m5!1s0x601a4d9cd80f1523:0x2c3234a2149b260c!8m2!3d34.9489755!4d138.2531461!16s%2Fg%2F11gcqwhs3_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "placeUrl": "https://maps.google.com/?cid=3184665757239420428",
   "matched": {
     "name": "縁カフェ 天神森",
     "address": "〒421-1115 静岡県藤枝市岡部町新舟",
-    "how": "cid"
+    "how": "cid",
+    "category": "カフェ・喫茶"
   },
-  "images": [],
-  "note": "店を確かめられない: Googleマップの店名は「縁カフェ 天神森」(一致)だが、住所が「静岡県藤枝市岡部町新舟」で、記録の住所「静岡県藤枝市岡部町殿」と町名が一致しない。ルールどおり写真なし"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-24b319a38e/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rni_7mjLIHSApc3Z9nd7KZbC8HBvOl3SmpyVZYnEjlfTzBUf3ZYhPITbv-RfKUiSmw99BRHFsCH5yqBfYN4qCMG-qMOxyOizwCWDSITdv62qgQJEFU3iLPuGscXZGIKXgmHWNYXi0Vk7x_",
+      "what": "ランチの膳(小鉢と汁物)",
+      "width": 900,
+      "height": 676,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-24b319a38e/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SAegya2beBeSJHEWF_7bJGA-qeE8fYN7ES3e1IpFIgvnrNrz6kKhf-BnqFx8HDISk3cxRsxIg6X5Vap3hZ0HnhW7Vx8ogAL0zvSSGYxX-7ymDJcRSrhh9CRCtakFAk8Z5rfRcUemIC6DpI",
+      "what": "テーブル席のある店内",
+      "width": 900,
+      "height": 676,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-24b319a38e/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sjj__ohK_kae_9sAhiZ0K-K0HrnYF1mOPmeGJlj8Vouvi9noDvQkrbiE8aODHTgcHz60aPK-mMsjxsN2A6v4I5ygNdwqdkJ1_ueDF27PF_qH7y7hRrdT6n3G9JumZX1uvyHsL0lD0_J4Fg",
+      "what": "暖簾のかかる店の外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "D2(2026-10-09・深い照合)で確定して写真を付けた。根拠は verify を参照。(以前の記録: 店を確かめられない: Googleマップの店名は「縁カフェ 天神森」(一致)だが、住所が「静岡県藤枝市岡部町新舟」で、記録の住所「静岡県藤枝市岡部町殿」と町名が一致しない。ルールどおり写真なし)",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(c) cid: 元の記録(automation/stores500/map.json の記事『縁カフェ天神森』のオーナー側マップURL cid=3184665757239420428)= 開いた店のページの cid(3184665757239420428)",
+      "(f) 店名「縁カフェ 天神森」(完全一致)/町名 記事「岡部町・藤枝市」= Google「藤枝市岡部町」/業種 カフェ・喫茶",
+      "注: 元の記録(stores500/gbp)の住所「藤枝市岡部町殿」とGoogle現表示「藤枝市岡部町新舟」は文字が違うが、cid・座標(34.9489755,138.2531461)・電話(054-668-1022)は同じで、どちらも藤枝市岡部町。Google側の住所表記の更新と判断"
+    ],
+    "checkedAt": "2026-10-09"
+  }
 }

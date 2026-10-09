@@ -1,55 +1,63 @@
 {
- "featureId": "個室居酒屋LOCCA",
- "dir": "fs-7943bbfa1c",
- "storeName": "個室居酒屋LOCCA",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8BLOCCA%20%E9%83%BD%E5%9F%8E%E5%B8%82%E7%89%9F%E7%94%B0%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8BLOCCA/@31.728254,131.0623072,17z/data=!3m1!4b1!4m6!3m5!1s0x353f27e24319e429:0x470de0df341bc56c!8m2!3d31.728254!4d131.0623072!16s%2Fg%2F11wmhcrsc9?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "個室居酒屋LOCCA",
-  "address": "宮崎県都城市牟田町２９−１４",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 2,
-   "path": "/restaurants/fs/fs-7943bbfa1c/p2.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhCtdOlwQhrZP0N3qh5eYo0OTDBFoFHVprJGKTBWFfswsY8b812jNlMXKCwqWkHUeUvvVo2FKGtNUXZJVBkkxgnElTMPA13g2b6BfsPFY8uHQs9WF0cjaORX0LWi1MyhtfUVs=s1200",
-   "what": "掘りごたつの個室",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "個室居酒屋LOCCA",
+  "dir": "fs-7943bbfa1c",
+  "storeName": "個室居酒屋LOCCA",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8BLOCCA%20%E9%83%BD%E5%9F%8E%E5%B8%82%E7%89%9F%E7%94%B0%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8BLOCCA/@31.728254,131.0623072,17z/data=!3m1!4b1!4m6!3m5!1s0x353f27e24319e429:0x470de0df341bc56c!8m2!3d31.728254!4d131.0623072!16s%2Fg%2F11wmhcrsc9?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "個室居酒屋LOCCA",
+    "address": "宮崎県都城市牟田町２９−１４",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-7943bbfa1c/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbHKbLYFuDvm-77fCNgsT8tPFfPTw9h1ysLzRQWaRnwLTzNLZaJ9d7eQCiqmGw_V6RnSEicr12umIbgC_bPQzmNplzz49_OTcVGw-SrjL0E0gQvsTgIeVJtHQJazrGXyZMr481=s1200",
-   "what": "刺身の盛り合わせ",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-7943bbfa1c/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TK8KOU0J8skH38LxFx2u-eV4u7TlrNQkGpB78mnQGFRJbMtqwEYG81ZLqAt4NbDLBiJvGomnrGkmlDgfxnNP-cfpHb7_z9ivh70KNqKUxvcH7GK-wY1d7PtqvlJtAeWiypmtxY=s1200",
-   "what": "料理が並ぶカウンター席",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-7943bbfa1c/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sta1fU1GjfIEdoPABx-v_vjMJh60CzoAGIWE4M0DKrjc9ULfFiBTgH7kmNTN5INRAhsd627B-PNMIILHNs_v2RaYj5U9UNytdWzZ0FgmmAUlMSnTWzgDVby-mmQnyw_hhBdJ1pduOEL5AT=s1200",
-   "what": "焼き鳥の盛り合わせ",
-   "width": 900,
-   "height": 678,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-7943bbfa1c/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhCtdOlwQhrZP0N3qh5eYo0OTDBFoFHVprJGKTBWFfswsY8b812jNlMXKCwqWkHUeUvvVo2FKGtNUXZJVBkkxgnElTMPA13g2b6BfsPFY8uHQs9WF0cjaORX0LWi1MyhtfUVs=s1200",
+      "what": "掘りごたつの個室",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-7943bbfa1c/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbHKbLYFuDvm-77fCNgsT8tPFfPTw9h1ysLzRQWaRnwLTzNLZaJ9d7eQCiqmGw_V6RnSEicr12umIbgC_bPQzmNplzz49_OTcVGw-SrjL0E0gQvsTgIeVJtHQJazrGXyZMr481=s1200",
+      "what": "刺身の盛り合わせ",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-7943bbfa1c/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TK8KOU0J8skH38LxFx2u-eV4u7TlrNQkGpB78mnQGFRJbMtqwEYG81ZLqAt4NbDLBiJvGomnrGkmlDgfxnNP-cfpHb7_z9ivh70KNqKUxvcH7GK-wY1d7PtqvlJtAeWiypmtxY=s1200",
+      "what": "料理が並ぶカウンター席",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-7943bbfa1c/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sta1fU1GjfIEdoPABx-v_vjMJh60CzoAGIWE4M0DKrjc9ULfFiBTgH7kmNTN5INRAhsd627B-PNMIILHNs_v2RaYj5U9UNytdWzZ0FgmmAUlMSnTWzgDVby-mmQnyw_hhBdJ1pduOEL5AT=s1200",
+      "what": "焼き鳥の盛り合わせ",
+      "width": 900,
+      "height": 678,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "外観の写真が無いため、スロット5は料理の写真。個室の写真は同じ部屋の別角度のため1枚だけ使用",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「個室居酒屋LOCCA」=Google、町名 記事「都城市牟田町」=Google「牟田町29-14」、業種 居酒屋",
+      "(g) 営業「18:00から」「定休日 日曜日」(記事)=Google「月〜土 18:00〜23:30・日曜 定休日」"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "外観の写真が無いため、スロット5は料理の写真。個室の写真は同じ部屋の別角度のため1枚だけ使用"
 }

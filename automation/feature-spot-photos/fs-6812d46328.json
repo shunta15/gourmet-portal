@@ -1,47 +1,55 @@
 {
- "featureId": "ヤマビコホルモン焼肉大阪豊中",
- "dir": "fs-6812d46328",
- "storeName": "ヤマビコホルモン焼肉大阪豊中",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%93%E3%82%B3%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E7%84%BC%E8%82%89%E5%A4%A7%E9%98%AA%E8%B1%8A%E4%B8%AD%20%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9B%BD%E6%A0%B9%E5%8D%97%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%A4%E3%83%9E%E3%83%93%E3%82%B3%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3/@34.7685222,135.463827,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e50d84d74aa9:0x437c827f6081eab0!8m2!3d34.7685222!4d135.463827!16s%2Fg%2F11j0zr5zn_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "ヤマビコホルモン",
-  "address": "〒561-0804 大阪府豊中市曽根南町２丁目５−５５",
-  "category": "焼肉店",
-  "how": "area+name-contains"
- },
- "images": [],
- "note": "R1(2回め)。Google の店名は「ヤマビコホルモン」で、記録「ヤマビコホルモン焼肉大阪豊中」に含まれる(記録側の「焼肉大阪豊中」は Google の店名に無い)。住所は豊中市曽根南町2丁目5-55で area と一致。360°画像1枚は不使用。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
- "pendingImages": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-6812d46328/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RppLwjATvRZD0du6ARz_4fewKOk_n-6pqUbIS9aHRQwFuuWQjPZQWeg4a-lDOCwBqgOGgunude_KpqUxoVHUTnUbP2kuqDs6eCff5E98AKW7g7gq3oFORSe7QUy_vAECHUMhQe1UMRltbF",
-   "what": "もつ鍋",
-   "width": 900,
-   "height": 594,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "ヤマビコホルモン焼肉大阪豊中",
+  "dir": "fs-6812d46328",
+  "storeName": "ヤマビコホルモン焼肉大阪豊中",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%83%9E%E3%83%93%E3%82%B3%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E7%84%BC%E8%82%89%E5%A4%A7%E9%98%AA%E8%B1%8A%E4%B8%AD%20%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9B%BD%E6%A0%B9%E5%8D%97%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%A4%E3%83%9E%E3%83%93%E3%82%B3%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3/@34.7685222,135.463827,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e50d84d74aa9:0x437c827f6081eab0!8m2!3d34.7685222!4d135.463827!16s%2Fg%2F11j0zr5zn_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "ヤマビコホルモン",
+    "address": "〒561-0804 大阪府豊中市曽根南町２丁目５−５５",
+    "category": "焼肉店",
+    "how": "area+name-contains"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-6812d46328/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfsubmkZzNJyfUPUybOOd14VwlZ_C6WrjIr5U6zeOh9beSovEV_vLvXph6I7Hoho_cBHmyhRrTRZZRsOsWheEzMaWugBgqLUnS2WN5xYL2r9PDy7gWokDIFQjSQwZID3tDZKJD",
-   "what": "カウンターのある店内",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-6812d46328/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7N3sSxt4bz3Bbb8KyWEqVhAOk1ZaOW5lgx9FNXeNcIX6TQ_gSSwgxW-mbHZdqmMLkxOebmd9Ygcrexf5L4lX3b35H4VhmesgdOO3AHZaLVxdasSFIdeV3GFLqic78cKKD06MOIw",
-   "what": "夕暮れの店先",
-   "width": 675,
-   "height": 900,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-6812d46328/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RppLwjATvRZD0du6ARz_4fewKOk_n-6pqUbIS9aHRQwFuuWQjPZQWeg4a-lDOCwBqgOGgunude_KpqUxoVHUTnUbP2kuqDs6eCff5E98AKW7g7gq3oFORSe7QUy_vAECHUMhQe1UMRltbF",
+      "what": "もつ鍋",
+      "width": 900,
+      "height": 594,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-6812d46328/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfsubmkZzNJyfUPUybOOd14VwlZ_C6WrjIr5U6zeOh9beSovEV_vLvXph6I7Hoho_cBHmyhRrTRZZRsOsWheEzMaWugBgqLUnS2WN5xYL2r9PDy7gWokDIFQjSQwZID3tDZKJD",
+      "what": "カウンターのある店内",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-6812d46328/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7N3sSxt4bz3Bbb8KyWEqVhAOk1ZaOW5lgx9FNXeNcIX6TQ_gSSwgxW-mbHZdqmMLkxOebmd9Ygcrexf5L4lX3b35H4VhmesgdOO3AHZaLVxdasSFIdeV3GFLqic78cKKD06MOIw",
+      "what": "夕暮れの店先",
+      "width": 675,
+      "height": 900,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "R1(2回め)。Google の店名は「ヤマビコホルモン」で、記録「ヤマビコホルモン焼肉大阪豊中」に含まれる(記録側の「焼肉大阪豊中」は Google の店名に無い)。住所は豊中市曽根南町2丁目5-55で area と一致。360°画像1枚は不使用。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】 【保留解除 2026-10-09 D1: 公式サイト・Google マップの別々の手がかり2つ以上が一致(verify 参照)】",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d) 公式サイト yamabikohorumon.com(Googleのウェブサイト欄): 住所「豊中市曽根南町2-5-55」・電話 080-5366-6799 =Google「曽根南町2丁目5-55」「080-5366-6799」。記事の「豊中市曽根南町」とも合う",
+      "(g) 記事の席数「約21席」=公式「全21席」/ 定休「月曜」=公式「毎週月曜日」/ 営業「17時頃〜」=公式「17:00〜」/ 最寄り「阪急曽根駅 徒歩約7分」=公式「曽根駅 徒歩7分」(4点一致)",
+      "(f) 店名「ヤマビコホルモン」(記事本文)=Google「ヤマビコホルモン」、町名 曽根南町 一致、業種 焼肉店(ホルモン専門)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ]
 }

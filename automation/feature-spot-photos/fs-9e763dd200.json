@@ -1,45 +1,53 @@
 {
- "featureId": "お料理茶寮きぶん",
- "dir": "fs-9e763dd200",
- "storeName": "お料理茶寮きぶん",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E6%96%99%E7%90%86%E8%8C%B6%E5%AF%AE%E3%81%8D%E3%81%B6%E3%82%93%20%E5%A4%A7%E6%9D%91%E5%B8%82%E6%9D%B1%E4%B8%89%E5%9F%8E%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E6%96%99%E7%90%86%E8%8C%B6%E5%AF%AE+%E3%81%8D%E3%81%B6%E3%82%93/@32.9119506,129.9598818,17z/data=!3m1!4b1!4m6!3m5!1s0x356aa7a28f114147:0x828c9eeabb19e68b!8m2!3d32.9119506!4d129.9598818!16s%2Fg%2F1v9l8n89?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "お料理茶寮 きぶん",
-  "address": "長崎県大村市東三城町２１",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-9e763dd200/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NP4FiRg9ZkTPjroka4SlA0EjK7BO0XbJz46Q1dMiMT-VjVQGvWTsknRkgP5DSQZ3cxdQLPu-HZh9f8mJIit_ROWOXpA6Fju4EojzcdRJoqavo4hkPu1kv8m5ynfRvqb1rju6O-PPPcp1=s1200",
-   "what": "鯛のあら煮の御膳",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "お料理茶寮きぶん",
+  "dir": "fs-9e763dd200",
+  "storeName": "お料理茶寮きぶん",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E6%96%99%E7%90%86%E8%8C%B6%E5%AF%AE%E3%81%8D%E3%81%B6%E3%82%93%20%E5%A4%A7%E6%9D%91%E5%B8%82%E6%9D%B1%E4%B8%89%E5%9F%8E%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E6%96%99%E7%90%86%E8%8C%B6%E5%AF%AE+%E3%81%8D%E3%81%B6%E3%82%93/@32.9119506,129.9598818,17z/data=!3m1!4b1!4m6!3m5!1s0x356aa7a28f114147:0x828c9eeabb19e68b!8m2!3d32.9119506!4d129.9598818!16s%2Fg%2F1v9l8n89?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "お料理茶寮 きぶん",
+    "address": "長崎県大村市東三城町２１",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-9e763dd200/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjbV8ln2W6QhJLQ9vj3GEcKEoBAJPN7KWiMcRN85s8Rm4gh9j83x-St-nw45_Xe6JEOru30zi0-PQNvjUYniaXq6ycI7OsPsU6u-Y_pYtcY0xQAdcIssd4hBgjXyg3m7TtPWn3KqJQT5fK=s1200",
-   "what": "畳の座敷の宴会席",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-9e763dd200/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdmDdbXNmLN7QhRoZsal3gd8C29IUSVM7e_dtoIPrmf18DDWMq3sRSw3ojt8gKBhNDg2zwYGs-t7mR-Pqlb0SHF9o4KYwZOvzjqDqApqBqbZDpPXbb1ci8tUSgjh5OLbllKHnAzQ=s1200",
-   "what": "カウンターと板場",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-9e763dd200/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NP4FiRg9ZkTPjroka4SlA0EjK7BO0XbJz46Q1dMiMT-VjVQGvWTsknRkgP5DSQZ3cxdQLPu-HZh9f8mJIit_ROWOXpA6Fju4EojzcdRJoqavo4hkPu1kv8m5ynfRvqb1rju6O-PPPcp1=s1200",
+      "what": "鯛のあら煮の御膳",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-9e763dd200/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjbV8ln2W6QhJLQ9vj3GEcKEoBAJPN7KWiMcRN85s8Rm4gh9j83x-St-nw45_Xe6JEOru30zi0-PQNvjUYniaXq6ycI7OsPsU6u-Y_pYtcY0xQAdcIssd4hBgjXyg3m7TtPWn3KqJQT5fK=s1200",
+      "what": "畳の座敷の宴会席",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-9e763dd200/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdmDdbXNmLN7QhRoZsal3gd8C29IUSVM7e_dtoIPrmf18DDWMq3sRSw3ojt8gKBhNDg2zwYGs-t7mR-Pqlb0SHF9o4KYwZOvzjqDqApqBqbZDpPXbb1ci8tUSgjh5OLbllKHnAzQ=s1200",
+      "what": "カウンターと板場",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "外観の写真が夜の暗い1枚のみで使わず、スロット5は店内の写真",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「お料理茶寮きぶん」= Google「お料理茶寮 きぶん」(完全一致)/町名 大村市東三城町/会席・懐石料理店",
+      "(g) 記事『大村駅から徒歩約3分』= Google位置から大村駅まで直線約255m(徒歩約3〜4分)/ 記事『宴会・仕出し・慶事法事』= Googleオーナー投稿『おせち・オードブル予約受付』/ 記事『夜は水・金』= Google『営業開始: 17:00』"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "外観の写真が夜の暗い1枚のみで使わず、スロット5は店内の写真"
 }

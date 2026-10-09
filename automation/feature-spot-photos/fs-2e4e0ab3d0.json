@@ -1,45 +1,53 @@
 {
- "featureId": "鮨寄宮たいら",
- "dir": "fs-2e4e0ab3d0",
- "storeName": "鮨寄宮たいら",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%AE%A8%E5%AF%84%E5%AE%AE%E3%81%9F%E3%81%84%E3%82%89%20%E9%82%A3%E8%A6%87%E5%B8%82%E5%AF%84%E5%AE%AE",
- "placeUrl": "https://www.google.com/maps/place/%E9%AE%A8%E5%AF%84%E5%AE%AE%E3%81%9F%E3%81%84%E3%82%89/@26.2083151,127.6988822,17z/data=!3m1!4b1!4m6!3m5!1s0x34e5696bdac0b1af:0x8d779be6a14b027b!8m2!3d26.2083151!4d127.6988822!16s%2Fg%2F11m_ftm_3t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "鮨寄宮たいら",
-  "address": "沖縄県那覇市寄宮２丁目３４−２３",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-2e4e0ab3d0/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvgzgBP9tFEfgiCo0_2SzuYgv1P61uHN3Mf4kri7QptrPaZL96rN4VSYRBulCXQ_NaY2YemkyQqUKpT5PX7lZKnLnMCRXIz9yACmYqWLaNk7YzeTSZs03t4aqP1TQznfxqZP_iP6eEzV4=s1200",
-   "what": "赤身のにぎり",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "鮨寄宮たいら",
+  "dir": "fs-2e4e0ab3d0",
+  "storeName": "鮨寄宮たいら",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%AE%A8%E5%AF%84%E5%AE%AE%E3%81%9F%E3%81%84%E3%82%89%20%E9%82%A3%E8%A6%87%E5%B8%82%E5%AF%84%E5%AE%AE",
+  "placeUrl": "https://www.google.com/maps/place/%E9%AE%A8%E5%AF%84%E5%AE%AE%E3%81%9F%E3%81%84%E3%82%89/@26.2083151,127.6988822,17z/data=!3m1!4b1!4m6!3m5!1s0x34e5696bdac0b1af:0x8d779be6a14b027b!8m2!3d26.2083151!4d127.6988822!16s%2Fg%2F11m_ftm_3t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "鮨寄宮たいら",
+    "address": "沖縄県那覇市寄宮２丁目３４−２３",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-2e4e0ab3d0/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeMcDvBron5xF5Cbc53YM4vxCVhK6THwi2_oPH9uA-Nyr8YKT-8OzS_PSwZoyOT--Xw4wpaFwshGXGsW-gRSibJ8ihZR0ZhCvd1x_oGw1e-JJtnU0vN5YKujjvqiHdHgmAmBnS=s1200",
-   "what": "白木のカウンターと店内",
-   "width": 900,
-   "height": 507,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-2e4e0ab3d0/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOlHSO3bm1IGV8pOPqJuHMLll9qA83cmZg3bRfDI7mJLrVtW7A17UqP6Q1wPhvUkdsZlk-aOisW8txcIjp5OzkmDkbcj0SophlmNXu3m2hqhGdzdJKEFXxTmC8_w0_pGVTlVyecuHa-a-E=s1200",
-   "what": "カウンターから見た店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-2e4e0ab3d0/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvgzgBP9tFEfgiCo0_2SzuYgv1P61uHN3Mf4kri7QptrPaZL96rN4VSYRBulCXQ_NaY2YemkyQqUKpT5PX7lZKnLnMCRXIz9yACmYqWLaNk7YzeTSZs03t4aqP1TQznfxqZP_iP6eEzV4=s1200",
+      "what": "赤身のにぎり",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-2e4e0ab3d0/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeMcDvBron5xF5Cbc53YM4vxCVhK6THwi2_oPH9uA-Nyr8YKT-8OzS_PSwZoyOT--Xw4wpaFwshGXGsW-gRSibJ8ihZR0ZhCvd1x_oGw1e-JJtnU0vN5YKujjvqiHdHgmAmBnS=s1200",
+      "what": "白木のカウンターと店内",
+      "width": 900,
+      "height": 507,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-2e4e0ab3d0/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOlHSO3bm1IGV8pOPqJuHMLll9qA83cmZg3bRfDI7mJLrVtW7A17UqP6Q1wPhvUkdsZlk-aOisW8txcIjp5OzkmDkbcj0SophlmNXu3m2hqhGdzdJKEFXxTmC8_w0_pGVTlVyecuHa-a-E=s1200",
+      "what": "カウンターから見た店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "外観の写真が無く、p5は店内の別角度の写真で代用",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「鮨寄宮たいら」=Google、町名 記事「那覇市寄宮2丁目」=Google「寄宮2丁目34-23」、業種 寿司店",
+      "(g) 公式Instagram(@sushi_taira_naha=Googleのウェブサイト欄): 「席数5席・前日までの完全予約制・駐車場有り・ディナー19時」=記事の「カウンター5席・完全予約制・駐車場共同」、Googleの営業19:00〜22:00とも一致"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "外観の写真が無く、p5は店内の別角度の写真で代用"
 }
