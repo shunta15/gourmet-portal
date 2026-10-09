@@ -1,0 +1,114 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 18,
+  "sheet": {
+    "name": "医療連携小顔＆美肌サロン　VIVACE（旧：Ｖｉｖａｃｅ 中洲店）",
+    "address": "福岡県福岡市博多区中洲３丁目５－１０　３Ｆ",
+    "url": "https://www.google.com/search?q=%E5%8C%BB%E7%99%82%E9%80%A3%E6%90%BA%E5%B0%8F%E9%A1%94%EF%BC%86%E7%BE%8E%E8%82%8C%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%80VIVACE%EF%BC%88%E6%97%A7%EF%BC%9A%EF%BC%B6%EF%BD%89%EF%BD%96%EF%BD%81%EF%BD%83%EF%BD%85%20%E4%B8%AD%E6%B4%B2%E5%BA%97%EF%BC%89%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B2%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%8D%EF%BC%91%EF%BC%90%E3%80%80%EF%BC%93%EF%BC%A6",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "医療連携小顔＆美肌サロン　VIVACE（旧：Ｖｉｖａｃｅ 中洲店） 福岡県福岡市博多区中洲３丁目５－１０　３Ｆ",
+    "医療連携小顔＆美肌サロン　VIVACE（旧：Ｖｉｖａｃｅ 中洲店） 福岡県福岡市",
+    "旧：Ｖｉｖａｃｅ 中洲店 福岡県福岡市"
+  ],
+  "candidates": [
+    {
+      "name": "VIVACE",
+      "address": "福岡県福岡市博多区博多駅南６丁目２−１１",
+      "url": "https://www.google.com/maps/place/VIVACE/@33.5781899,130.4338563,17z/data=!3m1!4b1!4m6!3m5!1s0x3541911efe4dd333:0x3f368aafb032bc8a!8m2!3d33.5781899!4d130.4338563!16s%2Fg%2F11m7582lw7",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市博多区中洲 / マップ:福岡県福岡市博多区博多駅南）",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    },
+    {
+      "name": "VIVACE",
+      "address": "福岡県福岡市博多区博多駅南６丁目２−１１",
+      "url": "https://www.google.com/maps/place/VIVACE/data=!4m7!3m6!1s0x3541911efe4dd333:0x3f368aafb032bc8a!8m2!3d33.5781899!4d130.4338563!16s%2Fg%2F11m7582lw7!19sChIJM9NN_h6RQTURirwysK-KNj8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市博多区中洲 / マップ:福岡県福岡市博多区博多駅南）",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    },
+    {
+      "name": "小顔サロン アゴラ",
+      "address": "福岡県福岡市博多区中洲中島町３−１５ ウェルリバービュー天神 1202号室",
+      "url": "https://www.google.com/maps/place/%E5%B0%8F%E9%A1%94%E3%82%B5%E3%83%AD%E3%83%B3+%E3%82%A2%E3%82%B4%E3%83%A9/data=!4m7!3m6!1s0x35419184b2949951:0xb5c0563f118429f6!8m2!3d33.5951471!4d130.4020755!16s%2Fg%2F1vb99vcc!19sChIJUZmUsoSRQTUR9imEET9WwLU",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市博多区中洲 / マップ:福岡県福岡市博多区中洲中島町）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "美顔整骨 CREFA",
+      "address": "福岡県福岡市博多区下川端町３−１ 博多リバレインモール B1F",
+      "url": "https://www.google.com/maps/place/%E7%BE%8E%E9%A1%94%E6%95%B4%E9%AA%A8+CREFA/data=!4m7!3m6!1s0x3541916ad3956069:0x62f94fa950cff19f!8m2!3d33.5950741!4d130.405819!16s%2Fg%2F11pfl8t82x!19sChIJaWCV02qRQTURn_HPUKlP-WI",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市博多区中洲 / マップ:福岡県福岡市博多区下川端町）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "CoCoセルメディカルクリニック",
+      "address": "福岡県福岡市博多区上川端町４−２２１ 佐藤ビル 2F （上 川端商店街内",
+      "url": "https://www.google.com/maps/place/CoCo%E3%82%BB%E3%83%AB%E3%83%A1%E3%83%87%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/data=!4m7!3m6!1s0x3541910337c2edcb:0x8b70d816a48a74bd!8m2!3d33.5928768!4d130.4094646!16s%2Fg%2F11vpt7677z!19sChIJy-3CNwORQTURvXSKpBbYcIs",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市博多区中洲 / マップ:福岡県福岡市博多区上川端町）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "CUEVUS（クエヴァス）",
+      "address": "福岡県福岡市博多区中洲２丁目５−１３ B1F",
+      "url": "https://www.google.com/maps/place/CUEVUS%EF%BC%88%E3%82%AF%E3%82%A8%E3%83%B4%E3%82%A1%E3%82%B9%EF%BC%89/data=!4m7!3m6!1s0x354191ba62cc1147:0x6eb2caa07c1e1bcb!8m2!3d33.5920541!4d130.4074815!16s%2Fg%2F11p5zhqzn6!19sChIJRxHMYrqRQTURyxsefKDKsm4",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:3-5-10 / マップ:2-5-13）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "中洲 人 妻 ソープ CELEB FACE NAKASU",
+      "address": "福岡県福岡市博多区中洲１丁目８−１１",
+      "url": "https://www.google.com/maps/place/%E4%B8%AD%E6%B4%B2+%E4%BA%BA+%E5%A6%BB+%E3%82%BD%E3%83%BC%E3%83%97+CELEB+FACE+NAKASU/data=!4m7!3m6!1s0x354191a7c2edf701:0x6a7643af1bf9f9ce!8m2!3d33.5901553!4d130.4089004!16s%2Fg%2F11sxd47w94!19sChIJAfftwqeRQTURzvn5G69Ddmo",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:3-5-10 / マップ:1-8-11）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "Salon de 中洲",
+      "address": "福岡県福岡市博多区中洲２丁目１−１１ プレイスポットしんばしビル本館 4F",
+      "url": "https://www.google.com/maps/place/Salon+de+%E4%B8%AD%E6%B4%B2/data=!4m7!3m6!1s0x3541913e717143e1:0x2ad172fbd2f4ee66!8m2!3d33.591693!4d130.4093971!16s%2Fg%2F11kptf1rxb!19sChIJ4UNxcT6RQTURZu700vty0So",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:3-5-10 / マップ:2-1-11）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "中洲キャバクラ クラブアリシア【CLUB ARICIA】",
+      "address": "福岡県福岡市博多区中洲２丁目３−１７ 第７ラインビル 4階2号室",
+      "url": "https://www.google.com/maps/place/%E4%B8%AD%E6%B4%B2%E3%82%AD%E3%83%A3%E3%83%90%E3%82%AF%E3%83%A9+%E3%82%AF%E3%83%A9%E3%83%96%E3%82%A2%E3%83%AA%E3%82%B7%E3%82%A2%E3%80%90CLUB+ARICIA%E3%80%91/data=!4m7!3m6!1s0x35419141aaabb589:0x2ee7729627c05f45!8m2!3d33.5913481!4d130.407791!16s%2Fg%2F11vpq57whx!19sChIJibWrqkGRQTURRV_AJ5Zy5y4",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:3-5-10 / マップ:2-3-17）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": null,
+  "verdict": "見つからない",
+  "verdictReason": "住所が合う店が見つからなかった（候補9件を確認: VIVACE／福岡県福岡市博多区博多駅南６丁目２−１１ | VIVACE／福岡県福岡市博多区博多駅南６丁目２−１１ | 小顔サロン アゴラ／福岡県福岡市博多区中洲中島町３−１５ ウェルリバービュー天神 1202号室 | 美顔整骨 CREFA／福岡県福岡市博多区下川端町３−１ 博多リバレインモール B1F | CoCoセルメディカルクリニック／福岡県福岡市博多区上川端町４−２２１ 佐藤ビル 2F （上 川端商店街内 | CUEVUS（クエヴァス）／福岡県福岡市博多区中洲２丁目５−１３ B1F | 中洲 人 妻 ソープ CELEB FACE NAKASU／福岡県福岡市博多区中洲１丁目８−１１ | Salon de 中洲／福岡県福岡市博多区中洲２丁目１−１１ プレイスポットしんばしビル本館 4F | 中洲キャバクラ クラブアリシア【CLUB ARICIA】／福岡県福岡市博多区中洲２丁目３−１７ 第７ラインビル 4階2号室）",
+  "addressCompare": null,
+  "nameRelation": null,
+  "place": null,
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:07:46.730Z",
+  "seconds": 47.9
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 117,
+  "sheet": {
+    "name": "つかだ接骨院水沢院",
+    "address": "岩手県奥州市水沢土器田７９−２",
+    "url": "https://share.google/gKfmyN9ac1nNfxxHV",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e88d928ee76a2e23&rlz=1C1OZZY_jaJP1180JP1180&sxsrf=AE3TifMbJPeuJGxgSR9UrRRAmbcaM21hSA:1761705335189&kgmid=/g/11c2kbmr9l&q=%E3%81%A4%E3%81%8B%E3%81%A0%E6%8E%A5%E9%AA%A8%E9%99%A2%E6%B0%B4%E6%B2%A2%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=fdfbc757f52575af&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c2kbmr9l",
+  "queries": [
+    "つかだ接骨院水沢院"
+  ],
+  "candidates": [
+    {
+      "name": "つかだ接骨院水沢院",
+      "address": "岩手県奥州市水沢土器田７９−２",
+      "url": "https://www.google.com/maps/place/%E3%81%A4%E3%81%8B%E3%81%A0%E6%8E%A5%E9%AA%A8%E9%99%A2%E6%B0%B4%E6%B2%A2%E9%99%A2/@39.1441077,141.1291177,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8f4a0edb0c295d:0xb95af770602b4b86!8m2!3d39.1441077!4d141.1291177!16s%2Fg%2F11c2kbmr9l",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%A4%E3%81%8B%E3%81%A0%E6%8E%A5%E9%AA%A8%E9%99%A2%E6%B0%B4%E6%B2%A2%E9%99%A2/@39.1441077,141.1291177,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8f4a0edb0c295d:0xb95af770602b4b86!8m2!3d39.1441077!4d141.1291177!16s%2Fg%2F11c2kbmr9l?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "岩手県奥州市水沢土器田７９−２",
+    "place": "岩手県奥州市水沢土器田７９−２",
+    "sheetNorm": "岩手県奥州市水沢土器田79-2",
+    "placeNorm": "岩手県奥州市水沢土器田79-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "つかだ接骨院水沢院",
+    "address": "岩手県奥州市水沢土器田７９−２",
+    "category": "接骨院",
+    "lat": 39.1441077,
+    "lng": 141.1291177,
+    "gbpUrl": "https://maps.google.com/?cid=13356259706942475142",
+    "phone": "0197-22-2220",
+    "website": "https://www.honetsugitsukapon.com/",
+    "hours": {
+      "月": "08:30–12:30, 15:00–19:00",
+      "火": "08:30–12:30, 15:00–19:00",
+      "水": "08:30–12:30, 15:00–19:00",
+      "木": "08:30–12:30, 15:00–19:00",
+      "金": "08:30–12:30, 15:00–19:00",
+      "土": "08:30–12:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:51:06.339Z",
+  "seconds": 5.9
+}

@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 7,
+  "sheet": {
+    "name": "OTA飯田橋整体院",
+    "address": "東京都千代田区富士見２丁目２−９ 201",
+    "url": "https://www.google.com/maps/place/OTA%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%95%B4%E4%BD%93%E9%99%A2/@35.6994528,139.7452175,17z/data=!4m15!1m8!3m7!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!2zT1RB6aOv55Sw5qmL5pW05L2T6Zmi!8m2!3d35.6994142!4d139.7452535!10e5!16s%2Fg%2F11h10bzq4q!3m5!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!8m2!3d35.6994142!4d139.7452535!16s%2Fg%2F11h10bzq4q?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "OTA整体院",
+      "address": "東京都千代田区富士見２丁目２−９ 201",
+      "url": "https://www.google.com/maps/place/OTA%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%95%B4%E4%BD%93%E9%99%A2/@35.6994528,139.7452175,17z/data=!4m15!1m8!3m7!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!2zT1RB6aOv55Sw5qmL5pW05L2T6Zmi!8m2!3d35.6994142!4d139.7452535!10e5!16s%2Fg%2F11h10bzq4q!3m5!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!8m2!3d35.6994142!4d139.7452535!16s%2Fg%2F11h10bzq4q",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/OTA%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%95%B4%E4%BD%93%E9%99%A2/@35.6994528,139.7452175,17z/data=!4m15!1m8!3m7!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!2zT1RB6aOv55Sw5qmL5pW05L2T6Zmi!8m2!3d35.6994142!4d139.7452535!10e5!16s%2Fg%2F11h10bzq4q!3m5!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!8m2!3d35.6994142!4d139.7452535!16s%2Fg%2F11h10bzq4q?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「OTA飯田橋整体院」とマップ「OTA整体院」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "東京都千代田区富士見２丁目２−９ 201",
+    "place": "東京都千代田区富士見２丁目２−９ 201",
+    "sheetNorm": "東京都千代田区富士見2-2-9201",
+    "placeNorm": "東京都千代田区富士見2-2-9201",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "OTA整体院",
+    "address": "東京都千代田区富士見２丁目２−９ 201",
+    "category": "整体",
+    "lat": 35.6994142,
+    "lng": 139.7452535,
+    "gbpUrl": "https://maps.google.com/?cid=18417635335450926890",
+    "phone": "070-1570-6329",
+    "website": "https://ota-seitaiin.com/",
+    "hours": {
+      "月": "11:00–22:00",
+      "火": "10:30–22:00",
+      "水": "10:30–22:00",
+      "木": "10:30–22:00",
+      "金": "10:30–22:00",
+      "土": "10:30–22:00",
+      "日": "11:00–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://ota-seitaiin.com/reservation/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:04:47.253Z",
+  "seconds": 2.5,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "OTA飯田橋整体院",
+    "mapName": "OTA整体院"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 111,
+  "sheet": {
+    "name": "Luce［接骨&鍼灸院］",
+    "address": "岡山県岡山市北区奉還町２丁目１９－１８",
+    "url": "https://www.lucesekkotsuin-shinkyuin.com/",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "official",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Luce［接骨&鍼灸院］ 岡山県岡山市北区奉還町２丁目１９－１８"
+  ],
+  "candidates": [
+    {
+      "name": "Luce鍼灸院",
+      "address": "岡山県岡山市北区奉還町２丁目１９−１８",
+      "url": "https://www.google.com/maps/place/Luce%E9%8D%BC%E7%81%B8%E9%99%A2/@34.6699904,133.917515,17z/data=!3m1!4b1!4m6!3m5!1s0x355407d51c9ec84b:0x5ca330a7ab4295fa!8m2!3d34.6699904!4d133.917515!16s%2Fg%2F11s343x5sg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Luce%E9%8D%BC%E7%81%B8%E9%99%A2/@34.6699904,133.917515,17z/data=!3m1!4b1!4m6!3m5!1s0x355407d51c9ec84b:0x5ca330a7ab4295fa!8m2!3d34.6699904!4d133.917515!16s%2Fg%2F11s343x5sg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "岡山県岡山市北区奉還町２丁目１９－１８",
+    "place": "岡山県岡山市北区奉還町２丁目１９−１８",
+    "sheetNorm": "岡山県岡山市北区奉還町2-19-18",
+    "placeNorm": "岡山県岡山市北区奉還町2-19-18",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "Luce鍼灸院",
+    "address": "岡山県岡山市北区奉還町２丁目１９−１８",
+    "category": "鍼灸院",
+    "lat": 34.6699904,
+    "lng": 133.917515,
+    "gbpUrl": "https://maps.google.com/?cid=6675232569384146426",
+    "phone": "080-1106-1518",
+    "website": "https://www.lucesekkotsuin-shinkyuin.com/",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://luce0503.v4.pos-s.net/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🏃‍♂️✨岡山マラソン2026に出場される皆さまへ！✨🏃‍♀️ いよいよ岡山マラソンの季節がやってきました！🎽 Luce鍼灸院の場所で 📅11月7日（土） 📅11月8日（日） この2日間はケアステーションしております！ 本番でしっかり力を出し切るためには、事前のコンディション調整も大切です💪 当院では、ランナーの皆さまのコンディションに合わせて、 👐 鍼灸 👐 整体 ⚡ メディセル 🎗️ テーピング 🧘 ストレッチ などを組み合わせ、身体の状態に合わせたケアを行っています✨ 本番前でのコンデションケアだけでなくて、走り終わった後のアフターケアもしております😊42.195キロ頑張りぬいた身体をいたわってしっかり休める時間を作ってください！ 「本番前に身体を整えておきたい」 「少しでも良いコンディションで走りたい」 「脚の張りが気になる」 そんな方は、ぜひお気軽にご相談ください😊 岡山マラソンに出場される皆さま、 最高のコンディションで当日を迎えられるよう応援しています！📣✨"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:50:11.005Z",
+  "seconds": 5.5
+}

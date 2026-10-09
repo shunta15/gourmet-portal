@@ -1,0 +1,54 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 23,
+  "sheet": {
+    "name": "太田ネイルサロンcolore'【コロレ】",
+    "address": "群馬県太田市飯田町５８３",
+    "url": "https://share.google/ah1dLsWqwa2xRPACn",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=c40527183a0e8a87&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11kpyfkld2&q=%E5%A4%AA%E7%94%B0%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3colore%27%E3%80%90%E3%82%B3%E3%83%AD%E3%83%AC%E3%80%91&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=a809c31046fcf712&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11kpyfkld2",
+  "queries": [
+    "太田ネイルサロンcolore'【コロレ】"
+  ],
+  "candidates": [
+    {
+      "name": "colore' nail / eyelash BEAUTY SALON",
+      "address": "群馬県太田市飯田町７４１−５ 貸店舗",
+      "url": "https://www.google.com/maps/place/colore'+nail+%2F+eyelash+BEAUTY+SALON/@36.286375,139.3810686,17z/data=!3m1!4b1!4m6!3m5!1s0x601f21ccb910fcf1:0x39a17c042be6a9cb!8m2!3d36.286375!4d139.3810686!16s%2Fg%2F11kpyfkld2",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:583 / マップ:741-5）",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/colore'+nail+%2F+eyelash+BEAUTY+SALON/@36.286375,139.3810686,17z/data=!3m1!4b1!4m6!3m5!1s0x601f21ccb910fcf1:0x39a17c042be6a9cb!8m2!3d36.286375!4d139.3810686!16s%2Fg%2F11kpyfkld2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "番地がちがう（シート:583 / マップ:741-5）（シート:群馬県太田市飯田町５８３ / マップ:群馬県太田市飯田町７４１−５ 貸店舗）／店名: シート「太田ネイルサロンcolore'【コロレ】」マップ「colore' nail / eyelash BEAUTY SALON」(different)",
+  "addressCompare": {
+    "sheet": "群馬県太田市飯田町５８３",
+    "place": "群馬県太田市飯田町７４１−５ 貸店舗",
+    "sheetNorm": "群馬県太田市飯田町583",
+    "placeNorm": "群馬県太田市飯田町741-5貸店舗",
+    "level": "none",
+    "detail": "番地がちがう（シート:583 / マップ:741-5）"
+  },
+  "nameRelation": "different",
+  "place": null,
+  "landedPlace": {
+    "name": "colore' nail / eyelash BEAUTY SALON",
+    "address": "群馬県太田市飯田町７４１−５ 貸店舗",
+    "category": "ネイルサロン",
+    "lat": 36.286375,
+    "lng": 139.3810686,
+    "gbpUrl": "https://maps.google.com/?cid=4152736688770558411"
+  },
+  "fetchedAt": "2026-10-09T01:08:45.342Z",
+  "seconds": 7.1
+}

@@ -1,0 +1,80 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 93,
+  "sheet": {
+    "name": "beauty magic恵比寿/広尾 【小顔矯正・姿勢矯正・美容整体】",
+    "address": "東京都渋谷区広尾２－２－１６　ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ　４０１",
+    "url": "https://beauty.hotpepper.jp/kr/slnH000339203/?cstt=637",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "beauty magic恵比寿/広尾 【小顔矯正・姿勢矯正・美容整体】 東京都渋谷区広尾２－２－１６　ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ　４０１"
+  ],
+  "candidates": [
+    {
+      "name": "美容整体・姿勢矯正・小顔矯正 ビューティーマジック 恵比寿【プライベートサロン】",
+      "address": "東京都渋谷区広尾２丁目２−１６ ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ 401",
+      "url": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E6%95%B4%E4%BD%93%E3%83%BB%E5%A7%BF%E5%8B%A2%E7%9F%AF%E6%AD%A3%E3%83%BB%E5%B0%8F%E9%A1%94%E7%9F%AF%E6%AD%A3+%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF+%E6%81%B5%E6%AF%94%E5%AF%BF%E3%80%90%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%91/@35.6512537,139.7132668,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b6989175afd:0x110ff39dfee7998d!8m2!3d35.6512537!4d139.7132668!16s%2Fg%2F11b7glxf76",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E6%95%B4%E4%BD%93%E3%83%BB%E5%A7%BF%E5%8B%A2%E7%9F%AF%E6%AD%A3%E3%83%BB%E5%B0%8F%E9%A1%94%E7%9F%AF%E6%AD%A3+%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF+%E6%81%B5%E6%AF%94%E5%AF%BF%E3%80%90%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%91/@35.6512537,139.7132668,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b6989175afd:0x110ff39dfee7998d!8m2!3d35.6512537!4d139.7132668!16s%2Fg%2F11b7glxf76?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「beauty magic恵比寿/広尾 【小顔矯正・姿勢矯正・美容整体】」とマップ「美容整体・姿勢矯正・小顔矯正 ビューティーマジック 恵比寿【プライベートサロン】」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "東京都渋谷区広尾２－２－１６　ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ　４０１",
+    "place": "東京都渋谷区広尾２丁目２−１６ ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ 401",
+    "sheetNorm": "東京都渋谷区広尾2-2-16BLANVOAGEHIROO401",
+    "placeNorm": "東京都渋谷区広尾2-2-16BLANVOAGEHIROO401",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "美容整体・姿勢矯正・小顔矯正 ビューティーマジック 恵比寿【プライベートサロン】",
+    "address": "東京都渋谷区広尾２丁目２−１６ ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ 401",
+    "category": "指圧・マッサージ",
+    "lat": 35.6512537,
+    "lng": 139.7132668,
+    "gbpUrl": "https://maps.google.com/?cid=1229469083207440781",
+    "phone": "03-3797-1175",
+    "website": "http://beautymagic.jp/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "定休日",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–19:00",
+      "日": "11:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://rwg.kanzashi.com/l/41V100cf7kIK/kirei?merchant_id=kirei-1051895"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ビューティーマジックでは、体の歪みを整えることで、美しさと健康の両方をサポートする美容矯正を行っています。 「顔の左右差が気になる」「脚のラインを整えたい」「肩こりや腰の重さがなかなか改善しない」などのお悩みは、骨格バランスの乱れが関係していることがあります。表面的なケアだけでなく、全身のつながりを見ながら根本から整えていくことを大切にしています。 女性専用のプライベートサロンだからこそ、一人ひとりのお悩みやライフスタイルに寄り添った施術をご提供。恵比寿で美容矯正サロンをお探しの方は、ぜひ一度ご自身の体の状態を見直してみませんか。 皆さまのご来店を心よりお待ちしております。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:05:15.811Z",
+  "seconds": 5.9,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "beauty magic恵比寿/広尾 【小顔矯正・姿勢矯正・美容整体】",
+    "mapName": "美容整体・姿勢矯正・小顔矯正 ビューティーマジック 恵比寿【プライベートサロン】"
+  }
+}

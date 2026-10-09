@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 89,
+  "sheet": {
+    "name": "uyo SHORT HAIR SALON（ウヨ ショートヘアサロン）",
+    "address": "静岡県浜松市中央区原島町２６６ 1F 南",
+    "url": "https://share.google/lUz4bfkP4PunIHUu4",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4acce884baa46368&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11r9fhqnr0&q=uyo+SHORT+HAIR+SALON%EF%BC%88%E3%82%A6%E3%83%A8+%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=20cd61c2e2e610e2&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11r9fhqnr0",
+  "queries": [
+    "uyo SHORT HAIR SALON（ウヨ ショートヘアサロン）"
+  ],
+  "candidates": [
+    {
+      "name": "uyo SHORT HAIR SALON（ウヨ ショートヘアサロン）",
+      "address": "静岡県浜松市中央区原島町２６６ １Ｆ南",
+      "url": "https://www.google.com/maps/place/uyo+SHORT+HAIR+SALON%EF%BC%88%E3%82%A6%E3%83%A8+%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%89/@34.7314701,137.7710049,17z/data=!3m1!4b1!4m6!3m5!1s0x601ae1210421c8b7:0x5db4fa6ba0def457!8m2!3d34.7314701!4d137.7710049!16s%2Fg%2F11r9fhqnr0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/uyo+SHORT+HAIR+SALON%EF%BC%88%E3%82%A6%E3%83%A8+%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%89/@34.7314701,137.7710049,17z/data=!3m1!4b1!4m6!3m5!1s0x601ae1210421c8b7:0x5db4fa6ba0def457!8m2!3d34.7314701!4d137.7710049!16s%2Fg%2F11r9fhqnr0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県浜松市中央区原島町２６６ 1F 南",
+    "place": "静岡県浜松市中央区原島町２６６ １Ｆ南",
+    "sheetNorm": "静岡県浜松市中央区原島町2661F南",
+    "placeNorm": "静岡県浜松市中央区原島町2661F南",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "uyo SHORT HAIR SALON（ウヨ ショートヘアサロン）",
+    "address": "静岡県浜松市中央区原島町２６６ １Ｆ南",
+    "category": "美容院",
+    "lat": 34.7314701,
+    "lng": 137.7710049,
+    "gbpUrl": "https://maps.google.com/?cid=6752297081502626903",
+    "phone": "053-571-7769",
+    "website": "http://uyo-shorthair.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:22:18.923Z",
+  "seconds": 6.3
+}

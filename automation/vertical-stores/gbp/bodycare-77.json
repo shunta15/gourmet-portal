@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 77,
+  "sheet": {
+    "name": "整骨院　専",
+    "address": "群馬県太田市由良町５９−３",
+    "url": "https://share.google/tSAW7di5TeNcLpp0w",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=85ebb85b758beda9&sxsrf=AE3TifPOZGl6WidCd1Mc49FixAFuj5SmHg:1760593855255&kgmid=/g/11c1m_8__n&q=%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%B0%88&shndl=30&shem=dlvs3,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=0c0f6afb07c3466b&utm_source=dlvs3,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c1m_8__n",
+  "queries": [
+    "整骨院 專"
+  ],
+  "candidates": [
+    {
+      "name": "整骨院 專",
+      "address": "群馬県太田市由良町５９−３",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%B0%88/@36.2875678,139.3519778,17z/data=!3m1!4b1!4m6!3m5!1s0x601edf9db2d315f1:0x5a1fc111af678c90!8m2!3d36.2875678!4d139.3519778!16s%2Fg%2F11c1m_8__n",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%B0%88/@36.2875678,139.3519778,17z/data=!3m1!4b1!4m6!3m5!1s0x601edf9db2d315f1:0x5a1fc111af678c90!8m2!3d36.2875678!4d139.3519778!16s%2Fg%2F11c1m_8__n?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「整骨院　専」とマップ「整骨院 專」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "群馬県太田市由良町５９−３",
+    "place": "群馬県太田市由良町５９−３",
+    "sheetNorm": "群馬県太田市由良町59-3",
+    "placeNorm": "群馬県太田市由良町59-3",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "整骨院 專",
+    "address": "群馬県太田市由良町５９−３",
+    "category": "接骨院",
+    "lat": 36.2875678,
+    "lng": 139.3519778,
+    "gbpUrl": "https://maps.google.com/?cid=6494121469392948368",
+    "phone": "0276-55-0104",
+    "website": "https://seikotsuin-sen.com/",
+    "hours": {
+      "月": "09:00–12:30, 15:00–19:30",
+      "火": "09:00–12:30, 15:00–19:30",
+      "水": "09:00–12:30, 15:00–19:30",
+      "木": "09:00–12:30, 15:00–19:30",
+      "金": "09:00–12:30, 15:00–19:30",
+      "土": "09:00–13:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "骨盤矯正で体の土台からバランスを整えます 日常のデスクワークや立ち仕事、姿勢のクセなどにより、骨盤や背骨に負担がかかっている方は少なくありません。骨盤の傾きや歪みは、腰痛や肩こりだけでなく、全身の不調を引き起こす要因となります。 太田市由良町の当院では、手技による丁寧な骨盤矯正を行っています。表面的な痛みを一時的に和らげるだけでなく、体の土台である骨盤や足元のバランスを整えることで、痛みが再発しにくい体づくりをサポートいたします。 また、スポーツに励む学生の怪我予防や復帰支援、産後の骨盤ケアなど、幅広い世代のお悩みに対応しております。体の硬さや歪みが気になる方、正しい姿勢を維持したい方は、ぜひご相談ください。 群馬県太田市の当院では、交通事故治療および交通事故によるムチウチのケアに注力しています。事故の強い衝撃によって傷ついた筋肉や関節に対して、早期の適切な施術を行うことが回復への大切な鍵となります。 当院では、患者様のお体の状態に合わせた無理のない施術を行い、事故前の健康な状態へ戻れるよう一貫してサポートいたします。自賠責保険を適用した施術のご相談や、手続き面でのお悩みについても丁寧に対応いたします。 当院では落ち着いた環境をご用意し、施術についてもしっかりとご説明した上で進めてまいります。太田市周辺で整体や骨盤矯正をご検討中の方は、お気軽にお問い合わせください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:04:57.162Z",
+  "seconds": 6.3,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "整骨院　専",
+    "mapName": "整骨院 專"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 61,
+  "sheet": {
+    "name": "田原接骨院",
+    "address": "神奈川県横須賀市野比１丁目３９−２",
+    "url": "https://share.google/wyXReBV2F60wpYXfh",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fe1d53302ad225f0&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifMgbIweHcw-8LDA1Qhbs_lieUrV3Q:1760077293646&kgmid=/g/1tgcrvfg&q=%E7%94%B0%E5%8E%9F%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=af39b5acbb081504&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tgcrvfg",
+  "queries": [
+    "田原接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "田原接骨院",
+      "address": "神奈川県横須賀市野比１丁目３９−２",
+      "url": "https://www.google.com/maps/place/%E7%94%B0%E5%8E%9F%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.2168288,139.6883714,17z/data=!3m1!4b1!4m6!3m5!1s0x60183e0174826e4b:0xb6a12a9407f35232!8m2!3d35.2168288!4d139.6883714!16s%2Fg%2F1tgcrvfg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%94%B0%E5%8E%9F%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.2168288,139.6883714,17z/data=!3m1!4b1!4m6!3m5!1s0x60183e0174826e4b:0xb6a12a9407f35232!8m2!3d35.2168288!4d139.6883714!16s%2Fg%2F1tgcrvfg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県横須賀市野比１丁目３９−２",
+    "place": "神奈川県横須賀市野比１丁目３９−２",
+    "sheetNorm": "神奈川県横須賀市野比1-39-2",
+    "placeNorm": "神奈川県横須賀市野比1-39-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "田原接骨院",
+    "address": "神奈川県横須賀市野比１丁目３９−２",
+    "category": "接骨院",
+    "lat": 35.2168288,
+    "lng": 139.6883714,
+    "gbpUrl": "https://maps.google.com/?cid=13159846401430213170",
+    "phone": "046-848-8666",
+    "website": null,
+    "hours": {
+      "月": "08:30–12:00, 15:30–19:00",
+      "火": "08:30–12:00, 15:30–19:00",
+      "水": "08:30–12:00, 15:30–19:00",
+      "木": "08:30–12:00, 15:30–19:00",
+      "金": "08:30–12:00, 15:30–19:00",
+      "土": "08:30–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:41:25.128Z",
+  "seconds": 6
+}

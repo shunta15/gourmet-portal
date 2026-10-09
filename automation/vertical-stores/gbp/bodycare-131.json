@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 131,
+  "sheet": {
+    "name": "鍼灸整骨院ごんげん山",
+    "address": "栃木県栃木市神田町５",
+    "url": "https://share.google/kAuDxO01ip43MSsp4",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=f1b1fe1a0ad9e49d&rlz=1CAHFDH_enJP1182&sxsrf=AE3TifOjkKBPs_Ydf3Wr1H_CorhYoKaEfg:1761809151409&kgmid=/g/11h7cngm53&q=%E3%81%94%E3%82%93%E3%81%92%E3%82%93%E5%B1%B1%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5a2a87296fb0e0c9&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11h7cngm53",
+  "queries": [
+    "ごんげん山治療院"
+  ],
+  "candidates": [
+    {
+      "name": "ごんげん山治療院",
+      "address": "栃木県栃木市神田町５−５",
+      "url": "https://www.google.com/maps/place/%E3%81%94%E3%82%93%E3%81%92%E3%82%93%E5%B1%B1%E6%B2%BB%E7%99%82%E9%99%A2/@36.3806285,139.7431088,17z/data=!3m1!4b1!4m6!3m5!1s0x601f471bf8531d81:0x43e91d3e49c505cf!8m2!3d36.3806285!4d139.7431088!16s%2Fg%2F11h7cngm53",
+      "addressLevel": "near",
+      "addressDetail": "番地一致（丁目なしの番地に枝番の差: シート5 / マップ5-5）",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%94%E3%82%93%E3%81%92%E3%82%93%E5%B1%B1%E6%B2%BB%E7%99%82%E9%99%A2/@36.3806285,139.7431088,17z/data=!3m1!4b1!4m6!3m5!1s0x601f471bf8531d81:0x43e91d3e49c505cf!8m2!3d36.3806285!4d139.7431088!16s%2Fg%2F11h7cngm53?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（番地一致（丁目なしの番地に枝番の差: シート5 / マップ5-5））／店名: シート「鍼灸整骨院ごんげん山」とマップ「ごんげん山治療院」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "栃木県栃木市神田町５",
+    "place": "栃木県栃木市神田町５−５",
+    "sheetNorm": "栃木県栃木市神田町5",
+    "placeNorm": "栃木県栃木市神田町5-5",
+    "level": "near",
+    "detail": "番地一致（丁目なしの番地に枝番の差: シート5 / マップ5-5）"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "ごんげん山治療院",
+    "address": "栃木県栃木市神田町５−５",
+    "category": "接骨院",
+    "lat": 36.3806285,
+    "lng": 139.7431088,
+    "gbpUrl": "https://maps.google.com/?cid=4893474623477581263",
+    "phone": "0282-25-0900",
+    "website": "http://www.shinkyu-gongenyama.com/",
+    "hours": {
+      "月": "08:30–12:00, 14:30–18:00",
+      "火": "08:30–12:00, 14:30–18:00",
+      "水": "08:30–12:00, 14:30–18:00",
+      "木": "08:30–12:00, 14:30–18:00",
+      "金": "08:30–12:00, 14:30–18:00",
+      "土": "08:30–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:04:39.664Z",
+  "seconds": 6.3,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "鍼灸整骨院ごんげん山",
+    "mapName": "ごんげん山治療院"
+  }
+}

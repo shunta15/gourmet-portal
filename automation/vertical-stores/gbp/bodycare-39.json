@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 39,
+  "sheet": {
+    "name": "ひろ整骨院",
+    "address": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=bf7843588f50460d&hl=ja&sxsrf=AE3TifNVh2VjifRTyErMWpsT_XaAHiSx8Q:1759223351525&kgmid=/g/11f6nfmtx4&q=%E3%81%B2%E3%82%8D%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=2dc51beab5f82608&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11f6nfmtx4",
+  "queries": [
+    "ひろ整骨院 山梨県甲斐市長塚１６４−１ マルマンビル 101"
+  ],
+  "candidates": [
+    {
+      "name": "ひろ整骨院",
+      "address": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+      "url": "https://www.google.com/maps/place/%E3%81%B2%E3%82%8D%E6%95%B4%E9%AA%A8%E9%99%A2/@35.6751965,138.5335685,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf7cb851227ad:0xdd3e63abd7064dfb!8m2!3d35.6751965!4d138.5335685!16s%2Fg%2F11f6nfmtx4",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%B2%E3%82%8D%E6%95%B4%E9%AA%A8%E9%99%A2/@35.6751965,138.5335685,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf7cb851227ad:0xdd3e63abd7064dfb!8m2!3d35.6751965!4d138.5335685!16s%2Fg%2F11f6nfmtx4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+    "place": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+    "sheetNorm": "山梨県甲斐市長塚164-1マルマンビル101",
+    "placeNorm": "山梨県甲斐市長塚164-1マルマンビル101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ひろ整骨院",
+    "address": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+    "category": "接骨院",
+    "lat": 35.6751965,
+    "lng": 138.5335685,
+    "gbpUrl": "https://maps.google.com/?cid=15942289320636206587",
+    "phone": "055-244-3639",
+    "website": "https://xn--y9jucv07tt51bjqe.com/",
+    "hours": {
+      "月": "08:00–11:30, 15:00–20:30",
+      "火": "08:00–11:30, 15:00–20:30",
+      "水": "08:00–11:30, 15:00–20:30",
+      "木": "08:00–11:30, 15:00–20:30",
+      "金": "08:00–11:30, 15:00–20:30",
+      "土": "08:00–12:00",
+      "日": "08:00–12:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ひろ整骨院では、お気軽にご利用いただける酸素カプセルをご用意しています。 酸素カプセルは、スポーツ後のコンディショニングやリフレッシュを目的として利用される方が多く、学生から社会人まで幅広くご利用いただいています。 こんな方におすすめです。 ✅ スポーツ後のコンディショニング ✅ 勉強や仕事で疲れがたまっている ✅ リフレッシュしたい ✅ 部活を頑張る学生さん 💰 料金 ・一般：1時間 700円 ・学生：1時間 500円 初めての方もお気軽にご利用ください。 📍ひろ整骨院（甲斐市） お気軽にお問い合わせ・ご予約ください😊 #甲斐市 #酸素カプセル #疲労回復 #スポーツ #部活 #コンディショニング #ひろ整骨院\n2026/08/15"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:36:49.918Z",
+  "seconds": 6
+}

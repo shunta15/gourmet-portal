@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 69,
+  "sheet": {
+    "name": "HAIR SALON re:verb",
+    "address": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+    "url": "https://share.google/BLPGyNFSiRDmcOu6y",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=415e83c541284ed9&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11kc8kp2hr&q=HAIR+SALON+re:verb&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=8179872bb68bafa0&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11kc8kp2hr",
+  "queries": [
+    "HAIR SALON re:verb"
+  ],
+  "candidates": [
+    {
+      "name": "HAIR SALON re:verb",
+      "address": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+      "url": "https://www.google.com/maps/place/HAIR+SALON+re:verb/data=!4m7!3m6!1s0x6003a9fd82b4c775:0xd199ab5b8e7b0d3b!8m2!3d35.4168891!4d136.7602618!16s%2Fg%2F11kc8kp2hr!19sChIJdce0gv2pA2AROw17jlurmdE",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/HAIR+SALON+re:verb/data=!4m7!3m6!1s0x6003a9fd82b4c775:0xd199ab5b8e7b0d3b!8m2!3d35.4168891!4d136.7602618!16s%2Fg%2F11kc8kp2hr!19sChIJdce0gv2pA2AROw17jlurmdE?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+    "place": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+    "sheetNorm": "岐阜県岐阜市神田町6-3エムテック神田町ビル1F奥",
+    "placeNorm": "岐阜県岐阜市神田町6-3エムテック神田町ビル1F奥",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "HAIR SALON re:verb",
+    "address": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+    "category": "美容院",
+    "lat": 35.4168891,
+    "lng": 136.7602618,
+    "gbpUrl": "https://maps.google.com/?cid=15103291235084471611",
+    "phone": "058-338-2050",
+    "website": "https://beauty.hotpepper.jp/slnH000427597/",
+    "hours": {
+      "月": "09:00–23:00",
+      "火": "定休日",
+      "水": "09:00–23:00",
+      "木": "09:00–23:00",
+      "金": "09:00–23:00",
+      "土": "09:00–23:00",
+      "日": "09:00–23:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "black×purple カッコいい組み合わせです💜🖤 ブラックも落としやすいオフブラックで作りました‼︎ ブリーチ１回〜２回 抜け具合に個人差があります！ 岐阜で可愛いカラーはモモヨカラーにお任せください♡ /担当stylistモモヨ🍑 @momoyo_reverb 投稿をご覧頂きありがとうございます🙇‍♀️ 画像は参考としてお使い下さい！ カラー大好き美容師でございます🌈🌈💓 カラー全般お任せ下さい！！ ワンカラーから特殊カラーまで様々なカラー施術を行っております🙋‍♀️ カウンセリング〜お仕上げスタイリングまで 丁寧に1人1人に寄り添った施術を心がけております！ 質問相談などもお気軽にお申し付け下さい！ 沢山お話ししながら一緒にヘアスタイルを 造っていきましょう💕 【ハイトーンを維持したい方へ】 ハイトーンを維持しながら長さも維持したい そんな方にはリタッチをオススメします！ 1ヶ月半〜2ヶ月までにブリーチのリタッチを していく方法が1番明るくなり、最小限のダメージで抑えられます！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:18:00.851Z",
+  "seconds": 7.1
+}

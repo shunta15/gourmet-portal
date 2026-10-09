@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 88,
+  "sheet": {
+    "name": "MY FAIR LADY",
+    "address": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+    "url": "https://share.google/AGAZJsUQWyw3lrdNO",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4acce884baa46368&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifNTKLLBAmPsD_YEhUnwtqL4795lUg:1761127491543&kgmid=/g/11m5vjtytx&q=Nail%E3%83%BB%E6%AF%9B%E7%A9%B4%E3%81%AB%E7%89%B9%E5%8C%96%E3%81%97%E3%81%9F%E3%82%B5%E3%83%AD%E3%83%B3MY+FAIR+LADY&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e1b9f9eb782fd5f8&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11m5vjtytx",
+  "queries": [
+    "Nail・毛穴に特化したサロンMY FAIR LADY"
+  ],
+  "candidates": [
+    {
+      "name": "MY FAIR LADY",
+      "address": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+      "url": "https://www.google.com/maps/place/MY+FAIR+LADY/data=!4m7!3m6!1s0x60011f71a86ce1ef:0x8712f7f713ff3580!8m2!3d34.7654277!4d135.611543!16s%2Fg%2F11m5vjtytx!19sChIJ7-FsqHEfAWARgDX_E_f3Eoc",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/MY+FAIR+LADY/data=!4m7!3m6!1s0x60011f71a86ce1ef:0x8712f7f713ff3580!8m2!3d34.7654277!4d135.611543!16s%2Fg%2F11m5vjtytx!19sChIJ7-FsqHEfAWARgDX_E_f3Eoc?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+    "place": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+    "sheetNorm": "大阪府寝屋川市長栄寺町6-16あしびビル204室",
+    "placeNorm": "大阪府寝屋川市長栄寺町6-16あしびビル204室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "MY FAIR LADY",
+    "address": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+    "category": "エステティック サロン",
+    "lat": 34.7654277,
+    "lng": 135.611543,
+    "gbpUrl": "https://maps.google.com/?cid=9733114385265538432",
+    "phone": null,
+    "website": "https://beauty.hotpepper.jp/kr/slnH000710062/?vos=cpahpbprosmaf131118005",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【毛穴ケアを習慣にすることで得られる肌の変化とは】 毛穴ケアは一度だけではなく、継続することで変化を感じやすくなります。 日々の積み重ねが、美しい肌づくりにつながっていきます。 毛穴の黒ずみやざらつきは、少しずつ蓄積されていくものです💭 だからこそ定期的に整えることで、トラブルを防ぐことができます。 当サロンでは、お肌に負担をかけない毛穴ケアを大切にしております✨ 無理に取り除くのではなく、整えることで自然な美しさへ導きます。 続けることで、触れたくなるようなやわらかい肌へと変わっていきます😊 寝屋川市で毛穴ケアや毛穴改善をお考えの方は「MY FAIR LADY」へぜひお越しください🌸\n2026/09/28"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:22:08.121Z",
+  "seconds": 4.7
+}

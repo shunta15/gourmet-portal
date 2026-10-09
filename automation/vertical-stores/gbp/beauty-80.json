@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 80,
+  "sheet": {
+    "name": "サクラチャン ビューティ＆スパ",
+    "address": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+    "url": "https://share.google/AXjPo6j50k7s5UQrQ",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "フェイシャル"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=825d6cf8198b9510&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifON-D-_enVYlcsR2AnoriFXZhlw7g:1760956492134&kgmid=/g/11rvcw_8g6&q=%E3%83%8B%E3%82%AD%E3%83%93%E3%82%B1%E3%82%A2/%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%A3%E3%83%B3%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%EF%BC%86%E3%82%B9%E3%83%91(%E5%B0%8F%E9%A1%94%E3%82%B3%E3%83%AB%E3%82%AE/%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A8%E3%82%B9%E3%83%86)&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7edeb34f0097e2c5&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rvcw_8g6",
+  "queries": [
+    "ニキビケア/リラクゼーションサクラチャンビューティ＆スパ(小顔コルギ/フェイシャルエステ)"
+  ],
+  "candidates": [
+    {
+      "name": "サクラチャンビューティ＆スパ",
+      "address": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+      "url": "https://www.google.com/maps/place/%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%A3%E3%83%B3%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%EF%BC%86%E3%82%B9%E3%83%91/@35.6979246,139.7025006,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d8b428b0521:0x6b5be55fd68af9c1!8m2!3d35.6979246!4d139.7025006!16s%2Fg%2F11rvcw_8g6",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%A3%E3%83%B3%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%EF%BC%86%E3%82%B9%E3%83%91/@35.6979246,139.7025006,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d8b428b0521:0x6b5be55fd68af9c1!8m2!3d35.6979246!4d139.7025006!16s%2Fg%2F11rvcw_8g6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+    "place": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+    "sheetNorm": "東京都新宿区歌舞伎町2-41-12泉ビル201",
+    "placeNorm": "東京都新宿区歌舞伎町2-41-12泉ビル201",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "サクラチャンビューティ＆スパ",
+    "address": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+    "category": "エステティック サロン",
+    "lat": 35.6979246,
+    "lng": 139.7025006,
+    "gbpUrl": "https://maps.google.com/?cid=7736028984723044801",
+    "phone": "080-3007-6889",
+    "website": "http://hipocket.co.jp/sakura/facial.html",
+    "hours": {
+      "月": "11:00–22:30",
+      "火": "11:00–22:30",
+      "水": "11:00–22:30",
+      "木": "11:00–22:30",
+      "金": "11:00–22:30",
+      "土": "11:00–22:30",
+      "日": "11:00–22:30"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/c753dab26d037924dbcd2c29f043a3eb?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:20:21.627Z",
+  "seconds": 6.1
+}

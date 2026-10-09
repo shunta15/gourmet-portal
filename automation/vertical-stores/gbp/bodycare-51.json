@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 51,
+  "sheet": {
+    "name": "きよみず焼団地整骨院",
+    "address": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+    "url": "https://share.google/c1mCEtd62fkoavN40",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=5b739ae8a2b36bde&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPGpfMLhE4lTP2dFYinlrNeJ6dkjA:1759909242153&kgmid=/g/11b6ljygt1&q=%E3%81%8D%E3%82%88%E3%81%BF%E3%81%9A%E7%84%BC%E5%9B%A3%E5%9C%B0%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=79a2eac6a88e922c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b6ljygt1",
+  "queries": [
+    "きよみず焼団地整骨院・整体院"
+  ],
+  "candidates": [
+    {
+      "name": "きよみず焼団地整骨院・整体院",
+      "address": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+      "url": "https://www.google.com/maps/place/%E3%81%8D%E3%82%88%E3%81%BF%E3%81%9A%E7%84%BC%E5%9B%A3%E5%9C%B0%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@34.9784931,135.7954673,17z/data=!3m1!4b1!4m6!3m5!1s0x60010ee7456fbb7b:0xbce1c9e0b51703bb!8m2!3d34.9784931!4d135.7954673!16s%2Fg%2F11b6ljygt1",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%8D%E3%82%88%E3%81%BF%E3%81%9A%E7%84%BC%E5%9B%A3%E5%9C%B0%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@34.9784931,135.7954673,17z/data=!3m1!4b1!4m6!3m5!1s0x60010ee7456fbb7b:0xbce1c9e0b51703bb!8m2!3d34.9784931!4d135.7954673!16s%2Fg%2F11b6ljygt1?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+    "place": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+    "sheetNorm": "京都府京都市山科区川田岡ノ西1-7レオ松本1F",
+    "placeNorm": "京都府京都市山科区川田岡ノ西1-7レオ松本1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "きよみず焼団地整骨院・整体院",
+    "address": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+    "category": "整体",
+    "lat": 34.9784931,
+    "lng": 135.7954673,
+    "gbpUrl": "https://maps.google.com/?cid=13610381515838391227",
+    "phone": "075-591-1022",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000824961/",
+    "hours": {
+      "月": "定休日",
+      "火": "08:30–12:30, 15:30–22:00",
+      "水": "08:30–12:30, 15:30–22:00",
+      "木": "08:30–12:30, 15:30–22:00",
+      "金": "08:30–12:30, 15:30–22:00",
+      "土": "08:30–12:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "本日開催した「着る・履くセルフケア無料体験会」では、ご参加いただいた皆さまに喜んでいただけました。ご参加ありがとうございました。 次回は10月10日（土）8:30〜12:30に開催します。お一人約30分、予約優先制です。ご予約枠は埋まりつつありますが、まだ若干空きがございます。参加をご希望の方はお早めにお問い合わせください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:39:30.746Z",
+  "seconds": 6.1
+}

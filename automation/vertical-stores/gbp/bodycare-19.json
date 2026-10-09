@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 19,
+  "sheet": {
+    "name": "なかやま整骨院",
+    "address": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+    "url": "https://share.google/yaN8BOQcGkTXRV0qS",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=db6ebf9c27b16f02&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifMfC-uPPwYmXIydhrB9qTL7Jze_3g:1758184822001&kgmid=/g/119wjb1dh&q=%E3%81%AA%E3%81%8B%E3%82%84%E3%81%BE%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=f92b7465fde41da1&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/119wjb1dh",
+  "queries": [
+    "なかやま整骨院",
+    "なかやま整骨院 大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル"
+  ],
+  "candidates": [
+    {
+      "name": "なかやま整骨院",
+      "address": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+      "url": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%82%84%E3%81%BE%E6%95%B4%E9%AA%A8%E9%99%A2/@34.6542807,135.5628345,17z/data=!3m1!4b1!4m6!3m5!1s0x6000de4caced0b81:0x9e5b4d31b43c0e32!8m2!3d34.6542807!4d135.5628345!16s%2Fg%2F119wjb1dh",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%82%84%E3%81%BE%E6%95%B4%E9%AA%A8%E9%99%A2/@34.6542807,135.5628345,17z/data=!3m1!4b1!4m6!3m5!1s0x6000de4caced0b81:0x9e5b4d31b43c0e32!8m2!3d34.6542807!4d135.5628345!16s%2Fg%2F119wjb1dh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+    "place": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+    "sheetNorm": "大阪府東大阪市岸田堂西2-1-10永井ビル",
+    "placeNorm": "大阪府東大阪市岸田堂西2-1-10永井ビル",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "なかやま整骨院",
+    "address": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+    "category": "スポーツ整形外科",
+    "lat": 34.6542807,
+    "lng": 135.5628345,
+    "gbpUrl": "https://maps.google.com/?cid=11410798956745854514",
+    "phone": "06-6730-6665",
+    "website": "http://nakayama-seikotsuin-kishidadou.com/",
+    "hours": {
+      "月": "09:00–11:30, 16:00–21:00",
+      "火": "09:00–11:30, 16:00–21:00",
+      "水": "09:00–11:30, 16:00–21:00",
+      "木": "09:00–11:30, 16:00–21:00",
+      "金": "09:00–11:30, 16:00–21:00",
+      "土": "09:00–11:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:32:56.404Z",
+  "seconds": 11.7
+}

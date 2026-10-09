@@ -1,0 +1,72 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 69,
+  "sheet": {
+    "name": "1room整体院",
+    "address": "東京都板橋区成増１丁目２３ー１９ クロスロード a室",
+    "url": "https://www.google.com/maps/place/1room%E6%95%B4%E4%BD%93%E9%99%A2/@35.774965,139.6308225,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed595fac1fa9:0x83051202d8eecbe0!8m2!3d35.774965!4d139.6308225!16s%2Fg%2F11js23wkjz?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "1room整体院",
+      "address": "東京都板橋区成増１丁目２３−１９ クロスロード a室",
+      "url": "https://www.google.com/maps/place/1room%E6%95%B4%E4%BD%93%E9%99%A2/@35.774965,139.6308225,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed595fac1fa9:0x83051202d8eecbe0!8m2!3d35.774965!4d139.6308225!16s%2Fg%2F11js23wkjz",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/1room%E6%95%B4%E4%BD%93%E9%99%A2/@35.774965,139.6308225,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed595fac1fa9:0x83051202d8eecbe0!8m2!3d35.774965!4d139.6308225!16s%2Fg%2F11js23wkjz?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都板橋区成増１丁目２３ー１９ クロスロード a室",
+    "place": "東京都板橋区成増１丁目２３−１９ クロスロード a室",
+    "sheetNorm": "東京都板橋区成増1-23-19クロスロードa室",
+    "placeNorm": "東京都板橋区成増1-23-19クロスロードa室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "1room整体院",
+    "address": "東京都板橋区成増１丁目２３−１９ クロスロード a室",
+    "category": "整体",
+    "lat": 35.774965,
+    "lng": 139.6308225,
+    "gbpUrl": "https://maps.google.com/?cid=9440971997290875872",
+    "phone": "03-4500-7251",
+    "website": "https://1roomseitaiin.jp/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–16:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://mitsuraku.jp/pm/online/index/a6f7d2/eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMrM0MbVQsq4FXDD1JQun"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【1room整体院は20％還元対象店です！】 🎉 しょうれん いたPayまつり開催中！ 期間中、1room整体院で「いたばしPay」をご利用いただくと 最大20％ポイント還元✨ たとえば… 50,000円ご利用 → 10,000ポイント還元！ いつもの15％還元よりさらにお得な、今回だけのキャンペーンです👏 📅期間：2026年10月1日〜10月31日 🎁付与上限：お一人様10,000ポイント 👥板橋区民以外の方もご利用いただけます！ ⚠️今回のキャンペーンは、予算上限に達し次第、10月31日を待たずに終了する場合があります。 ご利用予定の方は、ぜひお早めに！ 1room整体院 成増／腰痛改善・足から身体を整える整体院"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:42:45.955Z",
+  "seconds": 7.9
+}

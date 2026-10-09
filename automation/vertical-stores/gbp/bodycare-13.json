@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 13,
+  "sheet": {
+    "name": "千代延整体院",
+    "address": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6b3628cd647e4563&hl=ja&kgmid=/g/12hny_l82&q=%E5%8D%83%E4%BB%A3%E5%BB%B6%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b77b07c9d904f68c&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/12hny_l82",
+  "queries": [
+    "千代延整体院 広島県広島市西区横川新町１５−２９ パイオニアハイツ"
+  ],
+  "candidates": [
+    {
+      "name": "千代延整体院",
+      "address": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+      "url": "https://www.google.com/maps/place/%E5%8D%83%E4%BB%A3%E5%BB%B6%E6%95%B4%E4%BD%93%E9%99%A2/@34.407662,132.445701,17z/data=!3m1!4b1!4m6!3m5!1s0x355a989c5413dcf3:0xb212794ae90de687!8m2!3d34.407662!4d132.445701!16s%2Fg%2F12hny_l82",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8D%83%E4%BB%A3%E5%BB%B6%E6%95%B4%E4%BD%93%E9%99%A2/@34.407662,132.445701,17z/data=!3m1!4b1!4m6!3m5!1s0x355a989c5413dcf3:0xb212794ae90de687!8m2!3d34.407662!4d132.445701!16s%2Fg%2F12hny_l82?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+    "place": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+    "sheetNorm": "広島県広島市西区横川新町15-29パイオニアハイツ",
+    "placeNorm": "広島県広島市西区横川新町15-29パイオニアハイツ",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "千代延整体院",
+    "address": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+    "category": "整体",
+    "lat": 34.407662,
+    "lng": 132.445701,
+    "gbpUrl": "https://maps.google.com/?cid=12831451650976507527",
+    "phone": "090-9500-8962",
+    "website": "http://www.chiyonobu-seitaiin.jp/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:31:42.991Z",
+  "seconds": 5.5
+}

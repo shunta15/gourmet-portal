@@ -1,0 +1,54 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 15,
+  "sheet": {
+    "name": "オリーブの木 接骨院",
+    "address": "静岡県浜松市中央区泉３丁目９－４３",
+    "url": "https://share.google/Ud6KZNEkoj8lYWNa3",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=7a510ced277f03b5&rlz=1C1TMBY_jaJP1161JP1169&sxsrf=AE3TifPscg_8s6z36Cd1Y9xvcRxP6tGOCw:1758086103419&kgmid=/g/11gbfg7s25&q=%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%81%AE%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=3b172a48ad606262&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11gbfg7s25",
+  "queries": [
+    "オリーブの木接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "オリーブの木接骨院",
+      "address": "埼玉県川越市的場１２２７−２",
+      "url": "https://www.google.com/maps/place/%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%81%AE%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6018d9e312688401:0xd9131b1e9f8a6bc!8m2!3d35.9151774!4d139.4345516!16s%2Fg%2F11gbfg7s25!19sChIJAYRoEuPZGGARvKb46bExkQ0",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:静岡県浜松市中央区泉 / マップ:埼玉県川越市的場）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%81%AE%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6018d9e312688401:0xd9131b1e9f8a6bc!8m2!3d35.9151774!4d139.4345516!16s%2Fg%2F11gbfg7s25!19sChIJAYRoEuPZGGARvKb46bExkQ0?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:静岡県浜松市中央区泉 / マップ:埼玉県川越市的場）（シート:静岡県浜松市中央区泉３丁目９－４３ / マップ:埼玉県川越市的場１２２７−２）／店名: シート「オリーブの木 接骨院」マップ「オリーブの木接骨院」(exact)",
+  "addressCompare": {
+    "sheet": "静岡県浜松市中央区泉３丁目９－４３",
+    "place": "埼玉県川越市的場１２２７−２",
+    "sheetNorm": "静岡県浜松市中央区泉3-9-43",
+    "placeNorm": "埼玉県川越市的場1227-2",
+    "level": "none",
+    "detail": "町名までがちがう（シート:静岡県浜松市中央区泉 / マップ:埼玉県川越市的場）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "オリーブの木接骨院",
+    "address": "埼玉県川越市的場１２２７−２",
+    "category": "接骨院",
+    "lat": 35.9151774,
+    "lng": 139.4345516,
+    "gbpUrl": "https://maps.google.com/?cid=977617234320467644"
+  },
+  "fetchedAt": "2026-10-09T01:32:04.542Z",
+  "seconds": 5.7
+}

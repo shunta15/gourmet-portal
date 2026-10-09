@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 33,
+  "sheet": {
+    "name": "garden misato(ガーデン ミサト)",
+    "address": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eeb513acb5fda04c&hl=ja&kgmid=/g/11w8qc5c37&q=garden+misato(%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E3%83%9F%E3%82%B5%E3%83%88)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b23350d85be46128&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11w8qc5c37",
+  "queries": [
+    "garden misato(ガーデン ミサト) 埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001"
+  ],
+  "candidates": [
+    {
+      "name": "garden misato(ガーデン ミサト)",
+      "address": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+      "url": "https://www.google.com/maps/place/garden+misato(%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E3%83%9F%E3%82%B5%E3%83%88)/@35.8213394,139.8763083,17z/data=!3m1!4b1!4m6!3m5!1s0x60188500179c4bdb:0xd23aca83c8bebad1!8m2!3d35.8213394!4d139.8763083!16s%2Fg%2F11w8qc5c37",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/garden+misato(%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E3%83%9F%E3%82%B5%E3%83%88)/@35.8213394,139.8763083,17z/data=!3m1!4b1!4m6!3m5!1s0x60188500179c4bdb:0xd23aca83c8bebad1!8m2!3d35.8213394!4d139.8763083!16s%2Fg%2F11w8qc5c37?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+    "place": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+    "sheetNorm": "埼玉県三郷市中央1-17-9タチェット三郷中央001",
+    "placeNorm": "埼玉県三郷市中央1-17-9タチェット三郷中央001",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "garden misato(ガーデン ミサト)",
+    "address": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+    "category": "美容院",
+    "lat": 35.8213394,
+    "lng": 139.8763083,
+    "gbpUrl": "https://maps.google.com/?cid=15148642963971554001",
+    "phone": "048-959-9330",
+    "website": "https://beauty.hotpepper.jp/slnH000722879/?cstt=1&wak=BPSC200405_s_link_salontop&photo1=B212020430&photo2=B212020464",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s5000059030/?scid=we_bty_glam_shoptop"
+      },
+      {
+        "label": "予約",
+        "url": "https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000722879&wak=BPCO100001_s_top_reserve_button"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【三郷中央】夏こそ人気の透明感ある暗髪 夏は明るめカラーを楽しむ方が増える季節ですが、この時期は「紫外線で色が抜けるのが早い」「パサついて見える」「明るくなりすぎた」というご相談もとても増えます。 そんな方にgarden misatoがおすすめしたいのが、寒色系でつくる透明感のある暗髪です。 暗髪というと黒髪をイメージされる方も多いですが、ただ暗くするだけでは重たく見えてしまうこともあります。 寒色をベースに落ち着かせることで、光に当たると透明感を感じられる柔らかい印象に。大人っぽさもありながら、夏らしい軽やかさも楽しめます。 さらに夏は紫外線やエアコンの影響で髪の水分が失われやすい季節です。 そんな季節だからこそおすすめなのが、エアンス質感再整カラー。 カラーと同時に髪へ潤いを補給しながら施術できるので、ツヤ感のある仕上がりと手触りの良さを実感していただけます。 白髪が気になる方も、しっかりカバーしながら透明感のある寒色カラーを楽しめるので、「白髪染めだから暗くなる」と諦める必要はありません。 夏の終わりに向けて、ダメージをケアしながら落ち着いた透明感カラーへイメージチェンジしてみませんか？ 三郷中央で美容室をお探しの方や、ツヤ感のある白髪染めを楽しみたい方は、ぜひgarden misatoへご相談ください。 おすすめクーポンは 「白髪にも圧倒的潤いとツヤ感を！カット＋エアンス質"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:10:27.431Z",
+  "seconds": 5.9
+}

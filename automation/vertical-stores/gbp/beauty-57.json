@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 57,
+  "sheet": {
+    "name": "Quincy Nail&Eyelash【クインシー】",
+    "address": "東京都東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+    "url": "https://share.google/DtuoL4PjPcGqycQtq",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=27e57b1e925aecdc&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPxONQYqKQbaKf6oAwH6HLgXtN4xQ:1760059987333&kgmid=/g/11w3td16_d&q=Quincy+Nail%26Eyelash%E3%80%90%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%BC%E3%80%91&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4482c7282c72c3ec&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11w3td16_d",
+  "queries": [
+    "Quincy Nail&Eyelash【クインシー】"
+  ],
+  "candidates": [
+    {
+      "name": "Quincy Nail&Eyelash【クインシー】",
+      "address": "東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+      "url": "https://www.google.com/maps/place/Quincy+Nail%26Eyelash%E3%80%90%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%BC%E3%80%91/@35.734313,139.7116619,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d07012b3bf3:0x3d4c0a42855676dd!8m2!3d35.734313!4d139.7116619!16s%2Fg%2F11w3td16_d",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Quincy+Nail%26Eyelash%E3%80%90%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%BC%E3%80%91/@35.734313,139.7116619,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d07012b3bf3:0x3d4c0a42855676dd!8m2!3d35.734313!4d139.7116619!16s%2Fg%2F11w3td16_d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+    "place": "東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+    "sheetNorm": "東京都豊島区池袋1-2-6ベルメゾン池袋203",
+    "placeNorm": "東京都豊島区池袋1-2-6ベルメゾン池袋203",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Quincy Nail&Eyelash【クインシー】",
+    "address": "東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+    "category": "ネイルサロン",
+    "lat": 35.734313,
+    "lng": 139.7116619,
+    "gbpUrl": "https://maps.google.com/?cid=4416916615364769501",
+    "phone": "080-4145-1984",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://nailbook.jp/nail-salon/34646/?from_rwg=1"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:01:30.771Z",
+  "seconds": 5.8
+}

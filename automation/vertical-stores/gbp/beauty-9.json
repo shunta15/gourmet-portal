@@ -1,0 +1,76 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 9,
+  "sheet": {
+    "name": "Private salon And．",
+    "address": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+    "url": "https://share.google/4Uz7hngep0b15t0Il",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=8fb985a9e177f272&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPbDn0BrfYiO2ptOYc_TVPmXjZcYA:1758011827467&kgmid=/g/11ybwjkr7x&q=Nail+salon+And%EF%BC%8E&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=904445cbdc7109d5&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ybwjkr7x",
+  "queries": [
+    "Nail salon And．",
+    "Private salon And． 東京都練馬区上石神井４丁目２−２０ 田中ビル 2階"
+  ],
+  "candidates": [
+    {
+      "name": "Nail salon And．",
+      "address": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+      "url": "https://www.google.com/maps/place/Nail+salon+And%EF%BC%8E/data=!4m7!3m6!1s0x6018ef4e4cb92041:0xa9bc166c6e68d4c5!8m2!3d35.727429!4d139.591347!16s%2Fg%2F11ybwjkr7x!19sChIJQSC5TE7vGGARxdRobmwWvKk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Nail+salon+And%EF%BC%8E/data=!4m7!3m6!1s0x6018ef4e4cb92041:0xa9bc166c6e68d4c5!8m2!3d35.727429!4d139.591347!16s%2Fg%2F11ybwjkr7x!19sChIJQSC5TE7vGGARxdRobmwWvKk?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「Private salon And．」とマップ「Nail salon And．」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+    "place": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+    "sheetNorm": "東京都練馬区上石神井4-2-20田中ビル2階",
+    "placeNorm": "東京都練馬区上石神井4-2-20田中ビル2階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "Nail salon And．",
+    "address": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+    "category": "ネイルサロン",
+    "lat": 35.727429,
+    "lng": 139.591347,
+    "gbpUrl": "https://maps.google.com/?cid=12230675342996067525",
+    "phone": "070-3113-9954",
+    "website": "https://lin.ee/5Bl3cWhY",
+    "hours": {
+      "月": "09:00–21:30",
+      "火": "09:00–21:30",
+      "水": "09:00–21:30",
+      "木": "09:00–21:30",
+      "金": "09:00–21:30",
+      "土": "09:00–21:30",
+      "日": "09:00–21:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:03:49.326Z",
+  "seconds": 12,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "Private salon And．",
+    "mapName": "Nail salon And．"
+  }
+}

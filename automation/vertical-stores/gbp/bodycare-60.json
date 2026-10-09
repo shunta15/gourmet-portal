@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 60,
+  "sheet": {
+    "name": "あおば接骨院",
+    "address": "福井県越前市村国３丁目19－１３ あおば接骨院",
+    "url": "https://share.google/y6hcAjsvbqDWnImV0",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=44ea4fb9ad3aef3e&biw=2094&bih=1011&sxsrf=AE3TifM-l_Xans3MKMInzUub2D3em-4HzQ:1760074398078&kgmid=/g/1tfl01qg&q=%E3%81%82%E3%81%8A%E3%81%B0%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=00d3a58a627634a3&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tfl01qg",
+  "queries": [
+    "あおば接骨院",
+    "あおば接骨院 福井県越前市村国３丁目19－１３ あおば接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "あおば接骨院",
+      "address": "福井県越前市村国３丁目19−１３ あおば接骨院",
+      "url": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%B0%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.909532,136.179327,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8ac28f4c3f41b:0x98ad52fec945563!8m2!3d35.909532!4d136.179327!16s%2Fg%2F1tfl01qg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%B0%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.909532,136.179327,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8ac28f4c3f41b:0x98ad52fec945563!8m2!3d35.909532!4d136.179327!16s%2Fg%2F1tfl01qg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福井県越前市村国３丁目19－１３ あおば接骨院",
+    "place": "福井県越前市村国３丁目19−１３ あおば接骨院",
+    "sheetNorm": "福井県越前市村国3-19-13あおば接骨院",
+    "placeNorm": "福井県越前市村国3-19-13あおば接骨院",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "あおば接骨院",
+    "address": "福井県越前市村国３丁目19−１３ あおば接骨院",
+    "category": "接骨院",
+    "lat": 35.909532,
+    "lng": 136.179327,
+    "gbpUrl": "https://maps.google.com/?cid=687596294936745315",
+    "phone": "0778-23-3013",
+    "website": "https://yurashi.net/lab/fukuiechizen/",
+    "hours": {
+      "月": "09:00–11:30, 15:00–19:00",
+      "火": "09:00–11:30, 15:00–19:00",
+      "水": "定休日",
+      "木": "09:00–11:30, 15:00–19:00",
+      "金": "09:00–11:30, 15:00–19:00",
+      "土": "09:00–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "昨日今日と陸上競技のアスリートサポート 3校 7名 自己新記録、優勝、入賞、北信越決定おめでとう㊗️🎈㊗️🎊\n2026/05/31"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:41:15.775Z",
+  "seconds": 11.4
+}

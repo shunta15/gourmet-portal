@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 74,
+  "sheet": {
+    "name": "沖縄メンズ脱毛ENJIN【全身脱毛9900円/ヒゲ/VIO込み】",
+    "address": "沖縄県浦添市大平１丁目３２−６ 101",
+    "url": "https://www.google.co.jp/search?hl=ja&q=%E6%B2%96%E7%B8%84%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9BENJIN%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E5%A4%A7%E5%B9%B3%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%92%EF%BC%8D%EF%BC%96%20101&lr=lang_ja",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "沖縄メンズ脱毛ENJIN【全身脱毛9900円/ヒゲ/VIO込み】 沖縄県浦添市大平１丁目３２−６ 101"
+  ],
+  "candidates": [
+    {
+      "name": "沖縄メンズ脱毛ENJIN",
+      "address": "沖縄県浦添市大平１丁目３２−６ 101",
+      "url": "https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9BENJIN/@26.2468969,127.7122896,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56b425153b919:0x1bd22f440ccb593d!8m2!3d26.2468969!4d127.7122896!16s%2Fg%2F11k4txf4fd",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9BENJIN/@26.2468969,127.7122896,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56b425153b919:0x1bd22f440ccb593d!8m2!3d26.2468969!4d127.7122896!16s%2Fg%2F11k4txf4fd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "沖縄県浦添市大平１丁目３２−６ 101",
+    "place": "沖縄県浦添市大平１丁目３２−６ 101",
+    "sheetNorm": "沖縄県浦添市大平1-32-6101",
+    "placeNorm": "沖縄県浦添市大平1-32-6101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "沖縄メンズ脱毛ENJIN",
+    "address": "沖縄県浦添市大平１丁目３２−６ 101",
+    "category": "脱毛サービス",
+    "lat": 26.2468969,
+    "lng": 127.7122896,
+    "gbpUrl": "https://maps.google.com/?cid=2004716753452226877",
+    "phone": "050-3171-7878",
+    "website": "https://enjin.okinawa/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:18:59.734Z",
+  "seconds": 6
+}

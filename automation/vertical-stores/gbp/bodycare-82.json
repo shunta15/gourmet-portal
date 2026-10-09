@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 82,
+  "sheet": {
+    "name": "夢道整骨院・夢道鍼灸整骨院",
+    "address": "京都府京田辺市興戸久保6－１ Mプラザビル 2F",
+    "url": "https://share.google/bJ5R0h3eiqECOVrX0",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=6ae5a1e5a9c3ad18&biw=2077&bih=1008&sxsrf=AE3TifOS42RcrVzrx6wigbgRFgRQ7h8tRg:1760674864394&kgmid=/g/11h1dq047v&q=%E5%A4%A2%E9%81%93%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E5%A4%A2%E9%81%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=fa2deaacb6f2d1aa&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11h1dq047v",
+  "queries": [
+    "夢道整骨院・夢道鍼灸整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "夢道整骨院・夢道鍼灸整骨院",
+      "address": "京都府京田辺市興戸久保6−１ Mプラザビル 2F",
+      "url": "https://www.google.com/maps/place/%E5%A4%A2%E9%81%93%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E5%A4%A2%E9%81%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.8062533,135.7773065,17z/data=!3m1!4b1!4m6!3m5!1s0x600117a69b8a544f:0x4cfaa87ba285d58c!8m2!3d34.8062533!4d135.7773065!16s%2Fg%2F11h1dq047v",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%A4%A2%E9%81%93%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E5%A4%A2%E9%81%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.8062533,135.7773065,17z/data=!3m1!4b1!4m6!3m5!1s0x600117a69b8a544f:0x4cfaa87ba285d58c!8m2!3d34.8062533!4d135.7773065!16s%2Fg%2F11h1dq047v?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "京都府京田辺市興戸久保6－１ Mプラザビル 2F",
+    "place": "京都府京田辺市興戸久保6−１ Mプラザビル 2F",
+    "sheetNorm": "京都府京田辺市興戸久保6-1Mプラザビル2F",
+    "placeNorm": "京都府京田辺市興戸久保6-1Mプラザビル2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "夢道整骨院・夢道鍼灸整骨院",
+    "address": "京都府京田辺市興戸久保6−１ Mプラザビル 2F",
+    "category": "接骨院",
+    "lat": 34.8062533,
+    "lng": 135.7773065,
+    "gbpUrl": "https://maps.google.com/?cid=5546931140021310860",
+    "phone": "0774-63-0303",
+    "website": "https://s-yamaguchi-clinic.com/",
+    "hours": {
+      "月": "09:00–13:00, 15:00–20:00",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "09:00–13:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "本当に全部捨てるしかないと思っていたのに Instagramみて手伝いにきてくれて もらっていいですか？ ってどんどん持って行ってくれた 素敵な時間でした。。。\n2026/09/07"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:45:00.419Z",
+  "seconds": 6
+}

@@ -1,0 +1,54 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 121,
+  "sheet": {
+    "name": "オースマイル整骨院",
+    "address": "千葉県松戸市松戸２０５０",
+    "url": "https://share.google/9sOQSBnD67OvA9KKp",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=de39b42295ba4a4a&sxsrf=AE3TifPdb4fAmy7kTKxwFcS3E_RFAqUyag:1761784972402&kgmid=/g/11c1s3kfw7&q=%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=2fcf4341d0340d11&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c1s3kfw7",
+  "queries": [
+    "オースマイル整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "オースマイルコンディショニング",
+      "address": "千葉県松戸市根本14−１ 津田ビル 601",
+      "url": "https://www.google.com/maps/place/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%8B%E3%83%B3%E3%82%B0/@35.7877313,139.9006371,17z/data=!3m1!4b1!4m6!3m5!1s0x601884e286faa723:0x55f5dabcfedcc0a8!8m2!3d35.7877313!4d139.9006371!16s%2Fg%2F11c1s3kfw7",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:千葉県松戸市松戸 / マップ:千葉県松戸市根本）",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%8B%E3%83%B3%E3%82%B0/@35.7877313,139.9006371,17z/data=!3m1!4b1!4m6!3m5!1s0x601884e286faa723:0x55f5dabcfedcc0a8!8m2!3d35.7877313!4d139.9006371!16s%2Fg%2F11c1s3kfw7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:千葉県松戸市松戸 / マップ:千葉県松戸市根本）（シート:千葉県松戸市松戸２０５０ / マップ:千葉県松戸市根本14−１ 津田ビル 601）／店名: シート「オースマイル整骨院」マップ「オースマイルコンディショニング」(different)",
+  "addressCompare": {
+    "sheet": "千葉県松戸市松戸２０５０",
+    "place": "千葉県松戸市根本14−１ 津田ビル 601",
+    "sheetNorm": "千葉県松戸市松戸2050",
+    "placeNorm": "千葉県松戸市根本14-1津田ビル601",
+    "level": "none",
+    "detail": "町名までがちがう（シート:千葉県松戸市松戸 / マップ:千葉県松戸市根本）"
+  },
+  "nameRelation": "different",
+  "place": null,
+  "landedPlace": {
+    "name": "オースマイルコンディショニング",
+    "address": "千葉県松戸市根本14−１ 津田ビル 601",
+    "category": "整体",
+    "lat": 35.7877313,
+    "lng": 139.9006371,
+    "gbpUrl": "https://maps.google.com/?cid=6194097367782572200"
+  },
+  "fetchedAt": "2026-10-09T01:51:50.991Z",
+  "seconds": 5.9
+}

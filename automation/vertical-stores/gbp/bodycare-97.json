@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 97,
+  "sheet": {
+    "name": "整骨院 かふう",
+    "address": "沖縄県沖縄市越来２丁目３−３",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3112218073a0b46b&hl=ja&sxsrf=AE3TifOqNdlzHKfNKuYcAdwTBlBIC7uqVQ:1761188061011&kgmid=/g/1thv_xp2&q=%E6%95%B4%E9%AA%A8%E9%99%A2+%E3%81%8B%E3%81%B5%E3%81%86&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=8ef53612f24f16fa&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1thv_xp2",
+  "queries": [
+    "整骨院 かふう 沖縄県沖縄市越来２丁目３−３"
+  ],
+  "candidates": [
+    {
+      "name": "整骨院 かふう",
+      "address": "沖縄県沖縄市越来２丁目３−３",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E9%AA%A8%E9%99%A2+%E3%81%8B%E3%81%B5%E3%81%86/@26.343632,127.812857,17z/data=!3m1!4b1!4m6!3m5!1s0x34e50dfe98216e49:0x837de6ce45057e49!8m2!3d26.343632!4d127.812857!16s%2Fg%2F1thv_xp2",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E9%AA%A8%E9%99%A2+%E3%81%8B%E3%81%B5%E3%81%86/@26.343632,127.812857,17z/data=!3m1!4b1!4m6!3m5!1s0x34e50dfe98216e49:0x837de6ce45057e49!8m2!3d26.343632!4d127.812857!16s%2Fg%2F1thv_xp2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "沖縄県沖縄市越来２丁目３−３",
+    "place": "沖縄県沖縄市越来２丁目３−３",
+    "sheetNorm": "沖縄県沖縄市越来2-3-3",
+    "placeNorm": "沖縄県沖縄市越来2-3-3",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整骨院 かふう",
+    "address": "沖縄県沖縄市越来２丁目３−３",
+    "category": "接骨院",
+    "lat": 26.343632,
+    "lng": 127.812857,
+    "gbpUrl": "https://maps.google.com/?cid=9474982964653030985",
+    "phone": "090-6867-0343",
+    "website": "https://www.seikotsuin-kafu.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは、「整骨院 かふう」です。 当院の施術者は、捻挫や骨折、靱帯損傷、アキレス腱断裂といった数々のケガを自身でも経験してきました。 そのため、ケガを負った時の痛みや不安、そして回復までの道のりを深く理解しています。 患者様一人ひとりの気持ちに寄り添い、心を込めた施術を心がけていますので、どうぞ安心してお任せください。 あなたの健康を全力でサポートいたします！ 沖縄市で交通事故治療などをご希望の方は、「整骨院 かふう」へぜひ一度ご相談ください。ご来院をお待ちしております。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:47:47.554Z",
+  "seconds": 5.8
+}

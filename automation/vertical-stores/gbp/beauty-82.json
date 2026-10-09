@@ -1,0 +1,62 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 82,
+  "sheet": {
+    "name": "温活リラクゼーションサロンLUNASOL",
+    "address": "神奈川県川崎市川崎区浜町４",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8dfd45bbc5676ef5&hl=ja&sxsrf=AE3TifOuuupNQyagVsRd98Za63X18tI_5g:1761015878440&kgmid=/g/11q3cx6w2h&q=%E6%B8%A9%E6%B4%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3LUNASOL&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=50b35874771ee882&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11q3cx6w2h",
+  "queries": [
+    "温活リラクゼーションサロンLUNASOL 神奈川県川崎市川崎区浜町４"
+  ],
+  "candidates": [
+    {
+      "name": "LUNASOL《温活リラクゼーションサロン》",
+      "address": "神奈川県川崎市川崎区浜町４丁目５−４",
+      "url": "https://www.google.com/maps/place/LUNASOL%E3%80%8A%E6%B8%A9%E6%B4%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%8B/@35.5152271,139.7225144,17z/data=!3m1!4b1!4m6!3m5!1s0x6e62eaebbcc193d9:0x90409372108ff3b!8m2!3d35.5152271!4d139.7225144!16s%2Fg%2F11q3cx6w2h",
+      "addressLevel": "near",
+      "addressDetail": "番地一致（丁目なしの番地に枝番の差: シート4 / マップ4-5-4）",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/LUNASOL%E3%80%8A%E6%B8%A9%E6%B4%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%8B/@35.5152271,139.7225144,17z/data=!3m1!4b1!4m6!3m5!1s0x6e62eaebbcc193d9:0x90409372108ff3b!8m2!3d35.5152271!4d139.7225144!16s%2Fg%2F11q3cx6w2h?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（番地一致（丁目なしの番地に枝番の差: シート4 / マップ4-5-4））／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "神奈川県川崎市川崎区浜町４",
+    "place": "神奈川県川崎市川崎区浜町４丁目５−４",
+    "sheetNorm": "神奈川県川崎市川崎区浜町4",
+    "placeNorm": "神奈川県川崎市川崎区浜町4-5-4",
+    "level": "near",
+    "detail": "番地一致（丁目なしの番地に枝番の差: シート4 / マップ4-5-4）"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "LUNASOL《温活リラクゼーションサロン》",
+    "address": "神奈川県川崎市川崎区浜町４丁目５−４",
+    "category": "エステティック サロン",
+    "lat": 35.5152271,
+    "lng": 139.7225144,
+    "gbpUrl": "https://maps.google.com/?cid=649654378630283067",
+    "phone": "070-8970-7018",
+    "website": "https://lunasol.hp.peraichi.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:20:47.366Z",
+  "seconds": 10,
+  "hoursRetried": false
+}

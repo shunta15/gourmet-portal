@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 72,
+  "sheet": {
+    "name": "TONE",
+    "address": "宮城県仙台市青葉区中央２－６－３３　第６藤榮駅前ビル８Ｆ",
+    "url": "https://beauty.hotpepper.jp/slnH000650976/?cstt=196",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "TONE 宮城県仙台市青葉区中央２－６－３３　第６藤榮駅前ビル８Ｆ"
+  ],
+  "candidates": [
+    {
+      "name": "TONE 仙台店",
+      "address": "宮城県仙台市青葉区中央２丁目６−３３ 第6藤榮駅前ビル 8Ｆ",
+      "url": "https://www.google.com/maps/place/TONE+%E4%BB%99%E5%8F%B0%E5%BA%97/@38.2621611,140.8782534,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a290a08a11c6d:0x72fda51a09a4a8b9!8m2!3d38.2621611!4d140.8782534!16s%2Fg%2F11v090rgw0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/TONE+%E4%BB%99%E5%8F%B0%E5%BA%97/@38.2621611,140.8782534,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a290a08a11c6d:0x72fda51a09a4a8b9!8m2!3d38.2621611!4d140.8782534!16s%2Fg%2F11v090rgw0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "宮城県仙台市青葉区中央２－６－３３　第６藤榮駅前ビル８Ｆ",
+    "place": "宮城県仙台市青葉区中央２丁目６−３３ 第6藤榮駅前ビル 8Ｆ",
+    "sheetNorm": "宮城県仙台市青葉区中央2-6-33第6藤榮駅前ビル8F",
+    "placeNorm": "宮城県仙台市青葉区中央2-6-33第6藤榮駅前ビル8F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "TONE 仙台店",
+    "address": "宮城県仙台市青葉区中央２丁目６−３３ 第6藤榮駅前ビル 8Ｆ",
+    "category": "美容院",
+    "lat": 38.2621611,
+    "lng": 140.8782534,
+    "gbpUrl": "https://maps.google.com/?cid=8285960420681099449",
+    "phone": "022-304-0773",
+    "website": null,
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "09:00–19:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/0053eaf7b186f7f9c27a8393b570d4cd?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://progress-tone.com/contact/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【ケアブリーチ 美容室 仙台】初めてのケアブリーチ体験！初心者におすすめの実践ガイド #ケアブリーチ初めて #ケアブリーチ #初めて ケアブリーチを初めて試す方に向けた、安心して取り組むためのガイドです。本記事では、ケアブリーチの基本から、自分で実施する方法、そして失敗を防ぐためのポイントを詳しく紹介します。質問に基づいた実体験や専門家のアドバイスを交えて、ケアブリーチ初挑戦の不安を解消します。また、よくある疑問や具体的な対策についても解説し、満足のいくヘアスタイルを手に入れる手助けをいたします。ケアブリーチがもたらす美しい髪を一緒に楽しみましょう。 #ヘアカラー #髪ケア #ブリーチ初心者 #美容院 #ヘアスタイル 宮城県仙台市青葉区で美容室をお探しなら仙台駅西口から徒歩5分のTONE 仙台店へお越しください。 デザインカラーと艶髪スタイルで人気のスタッフが集結して新店OPEN!ミルクティーやグレージュのみならず、ハイトーン、ハイライトなどどんなカラーでもご相談ください。髪質改善メニューもご用意しており、カット・カラー・縮毛矯正など、髪をケアしながらワンランク上のヘアスタイルへと導きます。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:18:32.920Z",
+  "seconds": 6
+}

@@ -1,0 +1,82 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 125,
+  "sheet": {
+    "name": "サンパーク整体 浦和店",
+    "address": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+    "url": "https://share.google/py0d8QY4echQ82aLs",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=0c9d9d2c0958ac4e&rlz=1C1VDKB_jaJP1176JP1176&cs=1&output=search&kgmid=/g/1q6659pxk&q=%E3%82%B5%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E6%95%B4%E4%BD%93+%E6%B5%A6%E5%92%8C%E5%BA%97&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7936fbb9262592a8&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1q6659pxk",
+  "queries": [
+    "サンパーク整体 浦和店"
+  ],
+  "candidates": [
+    {
+      "name": "サンパーク整体 浦和店",
+      "address": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+      "url": "https://www.google.com/maps/place/%E3%82%B5%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E6%95%B4%E4%BD%93+%E6%B5%A6%E5%92%8C%E5%BA%97/@35.8598217,139.6584261,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ea830f0b5935:0xf6c217d489e09598!8m2!3d35.8598217!4d139.6584261!16s%2Fg%2F1q6659pxk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B5%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E6%95%B4%E4%BD%93+%E6%B5%A6%E5%92%8C%E5%BA%97/@35.8598217,139.6584261,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ea830f0b5935:0xf6c217d489e09598!8m2!3d35.8598217!4d139.6584261!16s%2Fg%2F1q6659pxk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+    "place": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+    "sheetNorm": "埼玉県さいたま市浦和区東仲町12-9パーレンス303",
+    "placeNorm": "埼玉県さいたま市浦和区東仲町12-9パーレンス303",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "サンパーク整体 浦和店",
+    "address": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+    "category": "整体",
+    "lat": 35.8598217,
+    "lng": 139.6584261,
+    "gbpUrl": "https://maps.google.com/?cid=17780800480425842072",
+    "phone": "048-711-6686",
+    "website": "https://sunpark-urawa.instatry.jp/",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "定休日",
+      "木": "11:00–21:00",
+      "金": "11:00–21:00",
+      "土": "11:00–21:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://t14uvf-google.b-merit.jp/t14uvF/web/login"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://www.peakmanager.com/online/index/f8e8p1"
+      },
+      {
+        "label": "予約",
+        "url": "https://t14uvf.b-merit.jp/t14uvF/web/login"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🌻『子供のパフォーマンス向上』に効果的なコース🌻 子供のうちに自律神経やホルモンバランスを整えておくと集中力が上がり勉強やスポーツなどのパフォーマンス向上にも繋がります。起立性調節障害にも効果アリです。 また不妊傾向の方、不妊治療をされてる方は自律神経やホルモンバランスを改善することで身体やメンタルをストレスから解放し妊娠しやすい状態にしていきます。 ◾中学生以下コース 30分…3500円 (内容) 全身調整、頭蓋骨調整、負担にならない程度のマッサージ (効果) 自律神経やホルモンバランスの改善、睡眠の質の向上、姿勢の改善、起立性調節障害、勉強やスポーツのパフォーマンス向上 ◾高校生コース 50分…5200円 (内容) 全身調整、マッサージ、頭蓋骨調整 (効果) 自律神経やホルモンバランスの改善、睡眠の質の向上、起立性調節障害、勉強やスポーツのパフォーマンス向上 ◾不妊改善妊活コース 50分…8000円 (内容) 全身調整、マッサージ、頭蓋骨調整 (効果) 不妊体質の改善、自律神経やホルモンバランスの改善、睡眠の質の向上、姿勢の改善など。\n2026/09/01\n予約"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:52:33.552Z",
+  "seconds": 8.3
+}

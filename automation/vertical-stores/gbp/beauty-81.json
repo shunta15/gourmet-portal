@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 81,
+  "sheet": {
+    "name": "マーメイド",
+    "address": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2a6fa6d95aad8520&hl=ja&sxsrf=AE3TifNg4wLZWgv9hmA3cPlICj9ltQjhXA:1761009210505&kgmid=/g/11y3yjw_tj&q=%E3%83%9E%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=070549e234919380&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11y3yjw_tj",
+  "queries": [
+    "マーメイド 千葉県大網白里市大網５０５−６ 光ビル D号室"
+  ],
+  "candidates": [
+    {
+      "name": "脱毛サロンマーメイド",
+      "address": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+      "url": "https://www.google.com/maps/place/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%9E%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89/@35.5256275,140.3289274,17z/data=!3m1!4b1!4m6!3m5!1s0x6022bf007a641b33:0xe6577db7f0d529e6!8m2!3d35.5256275!4d140.3289274!16s%2Fg%2F11y3yjw_tj",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%9E%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89/@35.5256275,140.3289274,17z/data=!3m1!4b1!4m6!3m5!1s0x6022bf007a641b33:0xe6577db7f0d529e6!8m2!3d35.5256275!4d140.3289274!16s%2Fg%2F11y3yjw_tj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+    "place": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+    "sheetNorm": "千葉県大網白里市大網505-6光ビルD号室",
+    "placeNorm": "千葉県大網白里市大網505-6光ビルD号室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "脱毛サロンマーメイド",
+    "address": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+    "category": "エステティック サロン",
+    "lat": 35.5256275,
+    "lng": 140.3289274,
+    "gbpUrl": "https://maps.google.com/?cid=16597873180670241254",
+    "phone": "080-1229-1139",
+    "website": "https://datumousalon-mermaid.my.canva.site/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–20:00",
+      "日": "09:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.peakmanager.com/online/index/v7q2w5?booking_source=googlemap"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:20:33.434Z",
+  "seconds": 6.1
+}

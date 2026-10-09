@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 108,
+  "sheet": {
+    "name": "かくた療術院",
+    "address": "北海道札幌市清田区平岡２条２丁目４－１７",
+    "url": "https://share.google/EmvmHAQOvCacexZB1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3aa6d84c464b4bf8&sxsrf=AE3TifPf52aNTyegjh6eQ7jjvxlcHSTNFw:1761611289288&kgmid=/g/11yc82nr9r&q=%E3%81%8B%E3%81%8F%E3%81%9F%E7%99%82%E8%A1%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=162390631f81a914&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11yc82nr9r",
+  "queries": [
+    "かくた療術院"
+  ],
+  "candidates": [
+    {
+      "name": "かくた療術院",
+      "address": "北海道札幌市清田区平岡２条２丁目４−１７",
+      "url": "https://www.google.com/maps/place/%E3%81%8B%E3%81%8F%E3%81%9F%E7%99%82%E8%A1%93%E9%99%A2/data=!4m7!3m6!1s0x5f74d5dca41a1cf5:0x469c9d58a385cb58!8m2!3d42.9996625!4d141.4494395!16s%2Fg%2F11yc82nr9r!19sChIJ9RwapNzVdF8RWMuFo1idnEY",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%8B%E3%81%8F%E3%81%9F%E7%99%82%E8%A1%93%E9%99%A2/data=!4m7!3m6!1s0x5f74d5dca41a1cf5:0x469c9d58a385cb58!8m2!3d42.9996625!4d141.4494395!16s%2Fg%2F11yc82nr9r!19sChIJ9RwapNzVdF8RWMuFo1idnEY?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道札幌市清田区平岡２条２丁目４－１７",
+    "place": "北海道札幌市清田区平岡２条２丁目４−１７",
+    "sheetNorm": "北海道札幌市清田区平岡2条2-4-17",
+    "placeNorm": "北海道札幌市清田区平岡2条2-4-17",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "かくた療術院",
+    "address": "北海道札幌市清田区平岡２条２丁目４−１７",
+    "category": "整体",
+    "lat": 42.9996625,
+    "lng": 141.4494395,
+    "gbpUrl": "https://maps.google.com/?cid=5088114683047955288",
+    "phone": "011-302-4141",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000418910/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000418910"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:49:39.135Z",
+  "seconds": 4.6
+}

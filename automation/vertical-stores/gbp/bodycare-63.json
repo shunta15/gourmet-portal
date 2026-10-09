@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 63,
+  "sheet": {
+    "name": "ベルツリー接骨院",
+    "address": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+    "url": "https://share.google/AnaLECVSvst6X6cGU",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a4e4c8467348108b&rlz=1C1CHBF_enJP1148JP1148&sxsrf=AE3TifMv2UHhR4j9EmB8JbenPbbYrB0pEA:1760404087435&kgmid=/g/11ghfq1hq5&q=%E3%83%99%E3%83%AB%E3%83%84%E3%83%AA%E3%83%BC%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=883a50e3cd2e2ddd&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ghfq1hq5",
+  "queries": [
+    "ベルツリー接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "ベルツリー接骨院",
+      "address": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+      "url": "https://www.google.com/maps/place/%E3%83%99%E3%83%AB%E3%83%84%E3%83%AA%E3%83%BC%E6%8E%A5%E9%AA%A8%E9%99%A2/@36.1951841,140.2745159,17z/data=!3m1!4b1!4m6!3m5!1s0x60221778096c1547:0x35437a433147c1b1!8m2!3d36.1951841!4d140.2745159!16s%2Fg%2F11ghfq1hq5",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%99%E3%83%AB%E3%83%84%E3%83%AA%E3%83%BC%E6%8E%A5%E9%AA%A8%E9%99%A2/@36.1951841,140.2745159,17z/data=!3m1!4b1!4m6!3m5!1s0x60221778096c1547:0x35437a433147c1b1!8m2!3d36.1951841!4d140.2745159!16s%2Fg%2F11ghfq1hq5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+    "place": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+    "sheetNorm": "茨城県石岡市府中3-8-2キクタレジデンス101",
+    "placeNorm": "茨城県石岡市府中3-8-2キクタレジデンス101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ベルツリー接骨院",
+    "address": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+    "category": "接骨院",
+    "lat": 36.1951841,
+    "lng": 140.2745159,
+    "gbpUrl": "https://maps.google.com/?cid=3838045736457978289",
+    "phone": "0299-57-2237",
+    "website": "http://belltreesekotsu.com/",
+    "hours": {
+      "月": "09:30–13:15, 15:00–22:00",
+      "火": "09:30–13:15, 15:00–22:00",
+      "水": "定休日",
+      "木": "09:30–13:15, 15:00–22:00",
+      "金": "09:30–13:15, 15:00–22:00",
+      "土": "09:00–12:00, 13:00–17:00",
+      "日": "09:00–12:00, 13:00–17:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_75906458/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "石岡市のお祭りの為9月19、20、21日は休診とさせていただきます。 よろしくお願いいたします。\n2026/09/19"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:41:46.936Z",
+  "seconds": 5.8
+}

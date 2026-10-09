@@ -1,0 +1,67 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 36,
+  "sheet": {
+    "name": "イノセント",
+    "address": "愛媛県今治市高市甲１８９?１",
+    "url": "https://www.google.com/maps?cid=9624639505900983226",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "イノセント",
+      "address": "愛媛県今治市高市甲１８９−１",
+      "url": "https://www.google.com/maps/place/%E3%82%A4%E3%83%8E%E3%82%BB%E3%83%B3%E3%83%88/@34.0274031,133.007097,17z/data=!3m1!4b1!4m6!3m5!1s0x35503ab081940b7d:0x859196a3186b53ba!8m2!3d34.0274031!4d133.007097!16s%2Fg%2F11btrqr1w_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A4%E3%83%8E%E3%82%BB%E3%83%B3%E3%83%88/@34.0274031,133.007097,17z/data=!3m1!4b1!4m6!3m5!1s0x35503ab081940b7d:0x859196a3186b53ba!8m2!3d34.0274031!4d133.007097!16s%2Fg%2F11btrqr1w_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛媛県今治市高市甲１８９?１",
+    "place": "愛媛県今治市高市甲１８９−１",
+    "sheetNorm": "愛媛県今治市高市甲189-1",
+    "placeNorm": "愛媛県今治市高市甲189-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "イノセント",
+    "address": "愛媛県今治市高市甲１８９−１",
+    "category": "美容院",
+    "lat": 34.0274031,
+    "lng": 133.007097,
+    "gbpUrl": "https://maps.google.com/?cid=9624639505900983226",
+    "phone": "0898-55-8311",
+    "website": null,
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:11:02.594Z",
+  "seconds": 5.5
+}

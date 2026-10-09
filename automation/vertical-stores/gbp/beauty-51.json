@@ -1,0 +1,105 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 51,
+  "sheet": {
+    "name": "hair salon chic.縮毛矯正/髪質改善/エクステ/ブリーチカラー/パーマ/ボブ",
+    "address": "福岡県福岡市中央区天神２－１３－１８天神ホワイトビル２F",
+    "url": "https://share.google/UogUQJpfmOc03yLuo",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?kgmid=/g/11lcq1wdzp&hl=ja-JP&q=hair+salon+chic+/%E3%83%98%E3%82%A2%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%E3%82%B7%E3%83%83%E3%82%AF&shndl=30&shem=lcuae,shrtsdl&source=sh/x/loc/osrp/m5/1&kgs=a4640c79d916bd02&utm_source=lcuae,shrtsdl,sh/x/loc/osrp/m5/1",
+  "kgmidHint": "/g/11lcq1wdzp",
+  "queries": [
+    "hair salon chic /ヘアーサロンシック",
+    "hair salon chic.縮毛矯正/髪質改善/エクステ/ブリーチカラー/パーマ/ボブ 福岡県福岡市中央区天神２－１３－１８天神ホワイトビル２F",
+    "hair salon chic.縮毛矯正/髪質改善/エクステ/ブリーチカラー/パーマ/ボブ 福岡県福岡市"
+  ],
+  "candidates": [
+    {
+      "name": "SiCK",
+      "address": "福岡県福岡市中央区今泉１丁目１４−２０ 5F (Eagle7",
+      "url": "https://www.google.com/maps/place/SiCK/data=!4m7!3m6!1s0x3541918517ff97cf:0xbe79d192fae5b048!8m2!3d33.5865262!4d130.3993697!16s%2Fg%2F11c5686g0h!19sChIJz5f_F4WRQTURSLDl-pLReb4",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県福岡市中央区今泉）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "ChicHAIR",
+      "address": "福岡県福岡市南区玉川町５−８ グレース高宮 1F",
+      "url": "https://www.google.com/maps/place/ChicHAIR/data=!4m7!3m6!1s0x354191093908f331:0x5f8d9fa332795e08!8m2!3d33.5677421!4d130.4174886!16s%2Fg%2F1vknm41k!19sChIJMfMIOQmRQTURCF55MqOfjV8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県福岡市南区玉川町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "thisis",
+      "address": "福岡県福岡市中央区今泉１丁目１９−４ アーバンフォレスト天神 1F",
+      "url": "https://www.google.com/maps/place/thisis/data=!4m7!3m6!1s0x3541912a34d79a37:0x79efc874d03a678b!8m2!3d33.5858211!4d130.3976669!16s%2Fg%2F11yx7_wvjt!19sChIJN5rXNCqRQTURi2c60HTI73k",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県福岡市中央区今泉）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "メンズ縮毛矯正サロンEXCIA【川崎店】曲がる縮毛矯正・メンズ髪質改善",
+      "address": "神奈川県川崎市川崎区東田町１０−１４ 雨宮ビル ２F",
+      "url": "https://www.google.com/maps/place/%E3%83%A1%E3%83%B3%E3%82%BA%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%E3%82%B5%E3%83%AD%E3%83%B3EXCIA%E3%80%90%E5%B7%9D%E5%B4%8E%E5%BA%97%E3%80%91%E6%9B%B2%E3%81%8C%E3%82%8B%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%E3%83%BB%E3%83%A1%E3%83%B3%E3%82%BA%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84/data=!4m7!3m6!1s0x601861a8f89454ff:0x5519b9680d13eed5!8m2!3d35.5286383!4d139.703034!16s%2Fg%2F11yz62p6qx!19sChIJ_1SU-KhhGGAR1e4TDWi5GVU",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:神奈川県川崎市川崎区東田町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "ChicHAIR",
+      "address": "福岡県福岡市南区玉川町５−８ グレース高宮 1F",
+      "url": "https://www.google.com/maps/place/ChicHAIR/data=!4m7!3m6!1s0x354191093908f331:0x5f8d9fa332795e08!8m2!3d33.5677421!4d130.4174886!16s%2Fg%2F1vknm41k!19sChIJMfMIOQmRQTURCF55MqOfjV8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県福岡市南区玉川町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "SiCK",
+      "address": "福岡県福岡市中央区今泉１丁目１４−２０ 5F (Eagle7",
+      "url": "https://www.google.com/maps/place/SiCK/data=!4m7!3m6!1s0x3541918517ff97cf:0xbe79d192fae5b048!8m2!3d33.5865262!4d130.3993697!16s%2Fg%2F11c5686g0h!19sChIJz5f_F4WRQTURSLDl-pLReb4",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県福岡市中央区今泉）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "メンズ縮毛矯正サロンEXCIA【川崎店】曲がる縮毛矯正・メンズ髪質改善",
+      "address": "神奈川県川崎市川崎区東田町１０−１４ 雨宮ビル ２F",
+      "url": "https://www.google.com/maps/place/%E3%83%A1%E3%83%B3%E3%82%BA%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%E3%82%B5%E3%83%AD%E3%83%B3EXCIA%E3%80%90%E5%B7%9D%E5%B4%8E%E5%BA%97%E3%80%91%E6%9B%B2%E3%81%8C%E3%82%8B%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%E3%83%BB%E3%83%A1%E3%83%B3%E3%82%BA%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84/data=!4m7!3m6!1s0x601861a8f89454ff:0x5519b9680d13eed5!8m2!3d35.5286383!4d139.703034!16s%2Fg%2F11yz62p6qx!19sChIJ_1SU-KhhGGAR1e4TDWi5GVU",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:神奈川県川崎市川崎区東田町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "美容室シーク ヘアー大野城",
+      "address": "福岡県大野城市筒井３丁目１６−１ パシフィックビル",
+      "url": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E5%AE%A4%E3%82%B7%E3%83%BC%E3%82%AF+%E3%83%98%E3%82%A2%E3%83%BC%E5%A4%A7%E9%87%8E%E5%9F%8E/data=!4m7!3m6!1s0x35419a7a879000e3:0xd004a27a4dd9618!8m2!3d33.5383362!4d130.4797065!16s%2Fg%2F11h5jvtk8p!19sChIJ4wCQh3qaQTURGJbdpCdKAA0",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:福岡県福岡市中央区天神 / マップ:福岡県大野城市筒井）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    }
+  ],
+  "finalUrl": null,
+  "verdict": "見つからない",
+  "verdictReason": "住所が合う店が見つからなかった（候補8件を確認: SiCK／福岡県福岡市中央区今泉１丁目１４−２０ 5F (Eagle7 | ChicHAIR／福岡県福岡市南区玉川町５−８ グレース高宮 1F | thisis／福岡県福岡市中央区今泉１丁目１９−４ アーバンフォレスト天神 1F | メンズ縮毛矯正サロンEXCIA【川崎店】曲がる縮毛矯正・メンズ髪質改善／神奈川県川崎市川崎区東田町１０−１４ 雨宮ビル ２F | ChicHAIR／福岡県福岡市南区玉川町５−８ グレース高宮 1F | SiCK／福岡県福岡市中央区今泉１丁目１４−２０ 5F (Eagle7 | メンズ縮毛矯正サロンEXCIA【川崎店】曲がる縮毛矯正・メンズ髪質改善／神奈川県川崎市川崎区東田町１０−１４ 雨宮ビル ２F | 美容室シーク ヘアー大野城／福岡県大野城市筒井３丁目１６−１ パシフィックビル）",
+  "addressCompare": null,
+  "nameRelation": null,
+  "place": null,
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:14:24.218Z",
+  "seconds": 42.1
+}

@@ -19,6 +19,9 @@
  *   node automation/vertical-stores/resolve.mjs --tab ボディケア --rows 2,5,8-10 --limit 5
  *   node automation/vertical-stores/resolve.mjs --list automation/vertical-stores/trial30.json
  *   --force を付けると保存済みの行も取り直す（既定: 保存済みは飛ばす。ただし「エラー」「止められた」の行はやり直す）
+  --accept beauty-100,bodycare-106  発注者が確認して「同じ店」と決めた行のキー。住所が一致（exact か near）していれば、
+      店名がちがっても判定を「一致」にして place を保存する（acceptedByOwnerCheck: true と、元の判定・シートの店名・マップの店名を JSON に残す）。
+      住所が一致しない行・閉業の表示がある行は、この引数でも一致にしない
  *
  * 判定（verdict）:
  *   一致 / 住所は一致で店名がちがう / 住所が粗く確認不十分 / 不一致 / 見つからない / 閉業の表示あり / 止められた / エラー
@@ -43,6 +46,9 @@ const UA =
 const RETRY_VERDICTS = new Set(["エラー", "止められた"]);
 const ROW_DEADLINE_MS = 150_000;
 const MAX_CANDIDATES = 4;
+/** --accept で渡された行キー（例 "beauty-100"）。発注者が確認して同じ店と決めた行 */
+const ACCEPT = new Set();
+const ACCEPT_APPLIED = new Set();
 
 class BlockedError extends Error {}
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -72,10 +78,31 @@ function kanjiNum(s) {
   return null;
 }
 
-/** 全角半角・空白・ハイフン類・丁目/番/号/の・漢数字・郵便番号 をならす */
+const PREFS = [
+  "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+  "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県",
+  "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県", "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
+  "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
+];
+/** 先頭が「東京都東京都」のように同じ都道府県名のくりかえしになっているシートの入力ミスだけを直す */
+const PREF_DUP_RE = new RegExp(`^(${PREFS.join("|")})\\1`);
+/**
+ * 異体字（同じ字の書き分け）の対。左 → 右 にそろえる。住所を比べるときだけ使う。
+ * よくある対に限る。似た字でも別の字（例: 川/河、和/倭 など）は入れない。
+ */
+const VARIANT_PAIRS = {
+  曾: "曽", 髙: "高", 﨑: "崎", 嵜: "崎", 澤: "沢", 邊: "辺", 邉: "辺", 齋: "斎", 齊: "斉", 櫻: "桜", 國: "国", 條: "条",
+  濱: "浜", 濵: "浜", 廣: "広", 龍: "竜", 瀧: "滝", 嶋: "島", 𠮷: "吉",
+};
+const VARIANT_RE = new RegExp(`[${Object.keys(VARIANT_PAIRS).join("")}]`, "gu");
+const KANJI = "\\u3400-\\u9fff々〆";
+
+/** 全角半角・空白・ハイフン類・丁目/番/号/の・漢数字・郵便番号・都道府県の重複・異体字 をならす */
 export function normAddr(raw) {
-  let s = (raw || "").normalize("NFKC");
+  // 半角と全角の数字がすき間なく並んでいる（例「9１」）のは、区切りが抜けた書き方（9-1）として扱う。NFKC の前にやる
+  let s = (raw || "").replace(/(?<=[0-9])(?=[０-９])|(?<=[０-９])(?=[0-9])/g, "-").normalize("NFKC");
   s = s.replace(/^日本[、,]?\s*/, "").replace(/^〒?\s*\d{3}-?\d{4}\s*/, "");
+  s = s.replace(PREF_DUP_RE, "$1");
   // 丁目・番・号・ハイフンのまわりの空白は取る（「1丁目 855番地」→「1丁目855番地」）。数字どうしの空白は区切りとして残す（「9-24 206」の 206 は部屋番号）
   s = s.replace(/(?<=丁目|番地|番|号|-)\s+(?=\d)/g, "").replace(/(?<=\d)\s+(?=丁目|番地|番|号|-)/g, "");
   s = s.replace(/([一二三四五六七八九十〇]+)(?=丁目|番地|番|号)/g, (m, k) => {
@@ -89,6 +116,10 @@ export function normAddr(raw) {
   s = s.replace(/(?<=\d)番(?=\d)/g, "-").replace(/(?<=\d)番(?!地)/g, "");
   s = s.replace(/(?<=\d)号/g, "");
   s = s.replace(/大字/g, "").replace(/[ヶヵケ]/g, "ケ").replace(/\s+/g, " ").trim();
+  // 異体字: 曽/曾 髙/高 など。ヶ/ケ/が と ノ/之/の は、漢字にはさまれているときだけ同じ字にする（「市が尾」「坂ノ上」）
+  s = s.replace(VARIANT_RE, (c) => VARIANT_PAIRS[c]);
+  s = s.replace(new RegExp(`(?<=[${KANJI}])が(?=[${KANJI}])`, "g"), "ケ");
+  s = s.replace(new RegExp(`(?<=[${KANJI}])[之の](?=[${KANJI}])`, "g"), "ノ");
   return s;
 }
 function addrParts(raw) {
@@ -97,34 +128,67 @@ function addrParts(raw) {
   return { norm: s.replace(/ /g, ""), head: (m ? m[1] : s).replace(/ /g, ""), nums: m ? m[2].split("-").map(Number) : [] };
 }
 
+// 政令指定都市（区の名前が住所に入る市）。区の抜けを許すのはこの20市だけ
+const DESIGNATED_CITIES = [
+  "札幌市", "仙台市", "さいたま市", "千葉市", "横浜市", "川崎市", "相模原市", "新潟市", "静岡市", "浜松市",
+  "名古屋市", "京都市", "大阪市", "堺市", "神戸市", "岡山市", "広島市", "北九州市", "福岡市", "熊本市",
+];
+const WARD_RE = new RegExp(`^((?:${PREFS.join("|")})?(?:${DESIGNATED_CITIES.join("|")}))[^区\\d]{1,4}区(?=.)`);
+/** 政令市の head から区の名前を取り除いた形（区が入っていない head は null） */
+const withoutWard = (head) => (WARD_RE.test(head) ? head.replace(WARD_RE, "$1") : null);
+/** 町名の「ノ」（漢字にはさまれたもの）を取った形。「坂ノ上」と「坂上」を同じとみるため */
+const dropNo = (head) => head.replace(new RegExp(`(?<=[${KANJI}])ノ(?=[${KANJI}])`, "g"), "");
+
 /**
  * 住所の比べ方（決めた基準）:
- *   正規化後を「町名まで(head)」と「番地の数字列(nums)」に分け、
+ *   正規化(normAddr)後を「町名まで(head)」と「番地の数字列(nums)」に分け、
  *   exact  = head 完全一致 かつ nums 完全一致
  *   near   = head 完全一致 かつ nums の一方が他方の先頭一致で、短い方が2個以上（建物名・部屋番号などの末尾差）
+ *            または、head が次のどちらかの許容でだけちがい、nums が完全一致（許容を使ったら exact にはせず near どまり）
+ *              ・町名の「ノ」の有無（坂ノ上 / 坂上）
+ *              ・政令市で、片方にだけ区の名前がある（横浜市荏田東 / 横浜市都筑区荏田東。市+町名+番地が同じで区だけ無いとき）
  *   coarse = シートの住所に番地が無い／1個（○丁目のみ）で、町名まで一致 → 確認不十分
  *   none   = それ以外（町名がちがう・番地がちがう）
+ * 正規化の中でならすもの: 全角半角・ハイフン類・丁目/番/号・漢数字・「東京都東京都」の二重・異体字（曽/曾 ヶ/ケ/が ノ/之/の 髙/高 など）
  */
 export function compareAddr(sheetAddr, placeAddr) {
   const a = addrParts(sheetAddr);
   const b = addrParts(placeAddr);
   const base = { sheetNorm: a.norm, placeNorm: b.norm };
   if (!b.norm) return { ...base, level: "unknown", detail: "マップ側に住所が出ていない" };
+  let tolerance = null; // head が許容でだけちがうとき、その説明
   if (a.head !== b.head) {
-    if (a.nums.length === 0 && a.head.length >= 5 && b.head.startsWith(a.head))
-      return { ...base, level: "coarse", detail: "シートの住所に番地なし（市区町村まで一致）" };
-    return { ...base, level: "none", detail: `町名までがちがう（シート:${a.head} / マップ:${b.head}）` };
+    const sameNums = a.nums.length > 0 && a.nums.join("-") === b.nums.join("-");
+    const aw = withoutWard(a.head);
+    const bw = withoutWard(b.head);
+    if (dropNo(a.head) === dropNo(b.head)) tolerance = "町名の「ノ」の有無だけがちがう";
+    else if (sameNums && bw !== null && aw === null && bw === a.head) tolerance = "マップ側にだけ区の名前がある（政令市）";
+    else if (sameNums && aw !== null && bw === null && aw === b.head) tolerance = "シート側にだけ区の名前がある（政令市）";
+    if (!tolerance) {
+      if (a.nums.length === 0 && a.head.length >= 5 && b.head.startsWith(a.head))
+        return { ...base, level: "coarse", detail: "シートの住所に番地なし（市区町村まで一致）" };
+      return { ...base, level: "none", detail: `町名までがちがう（シート:${a.head} / マップ:${b.head}）` };
+    }
   }
-  if (a.nums.length === 0) return { ...base, level: "coarse", detail: "シートの住所に番地なし（町名まで一致）" };
+  const r = compareNums(a, b, sheetAddr, placeAddr);
+  if (tolerance) {
+    const detail = `${r.detail}／${tolerance}（シート:${a.head} / マップ:${b.head}）`;
+    return { ...base, level: r.level === "exact" ? "near" : r.level, detail };
+  }
+  return { ...base, ...r };
+}
+/** head が同じ（許容を含む）ときの番地の比べ方 */
+function compareNums(a, b, sheetAddr, placeAddr) {
+  if (a.nums.length === 0) return { level: "coarse", detail: "シートの住所に番地なし（町名まで一致）" };
   const [sh, lg] = a.nums.length <= b.nums.length ? [a.nums, b.nums] : [b.nums, a.nums];
-  if (!sh.every((n, i) => n === lg[i])) return { ...base, level: "none", detail: `番地がちがう（シート:${a.nums.join("-")} / マップ:${b.nums.join("-")}）` };
-  if (a.nums.length === b.nums.length) return { ...base, level: "exact", detail: "町名・番地とも一致" };
-  if (sh.length >= 2) return { ...base, level: "near", detail: `番地一致（末尾の差: シート${a.nums.join("-")} / マップ${b.nums.join("-")}）` };
+  if (!sh.every((n, i) => n === lg[i])) return { level: "none", detail: `番地がちがう（シート:${a.nums.join("-")} / マップ:${b.nums.join("-")}）` };
+  if (a.nums.length === b.nums.length) return { level: "exact", detail: "町名・番地とも一致" };
+  if (sh.length >= 2) return { level: "near", detail: `番地一致（末尾の差: シート${a.nums.join("-")} / マップ${b.nums.join("-")}）` };
   // 短い側が「○○町374」のように丁目を持たない1個だけの番地なら、長い側の「374-1」は枝番・部屋番号の差とみなす
   const shorterRaw = (a.nums.length <= b.nums.length ? sheetAddr : placeAddr) || "";
   if (!/[\d一二三四五六七八九十]\s*丁目/.test(shorterRaw.normalize("NFKC")))
-    return { ...base, level: "near", detail: `番地一致（丁目なしの番地に枝番の差: シート${a.nums.join("-")} / マップ${b.nums.join("-")}）` };
-  return { ...base, level: "coarse", detail: `シート側が${a.nums.join("-")}までで番地まで確認できない（マップ:${b.nums.join("-")}）` };
+    return { level: "near", detail: `番地一致（丁目なしの番地に枝番の差: シート${a.nums.join("-")} / マップ${b.nums.join("-")}）` };
+  return { level: "coarse", detail: `シート側が${a.nums.join("-")}までで番地まで確認できない（マップ:${b.nums.join("-")}）` };
 }
 
 const stripSym = (s) => s.replace(/[^\p{L}\p{N}]/gu, "");
@@ -622,6 +686,13 @@ async function processRow(ctx, tab, r) {
         if (full.closedSignal) {
           rec.verdict = "閉業の表示あり";
           rec.verdictReason = `住所は一致（${cmp.detail}）だが、画面に「${full.statusSignals.join(" / ")}」の表示`;
+        } else if (rel === "different" && ACCEPT.has(`${TAB_EN[tab]}-${r.row}`)) {
+          // 発注者が確認して同じ店と決めた行。住所が一致（exact/near）している場合だけここに来る
+          rec.verdict = "一致";
+          rec.verdictReason = `住所一致（${cmp.detail}）／店名: シート「${r.name}」とマップ「${light.name}」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）`;
+          rec.acceptedByOwnerCheck = true;
+          rec.acceptedFrom = { verdict: "住所は一致で店名がちがう", sheetName: r.name, mapName: light.name };
+          ACCEPT_APPLIED.add(`${TAB_EN[tab]}-${r.row}`);
         } else if (rel === "different") {
           rec.verdict = "住所は一致で店名がちがう";
           rec.verdictReason = `住所一致（${cmp.detail}）。シート「${r.name}」とマップ「${light.name}」で店名が合わない（改称・同じ建物の別店・シートの表記ゆれのいずれか未確認）`;
@@ -674,7 +745,7 @@ function parseRows(s) {
   return set;
 }
 function parseArgs(argv) {
-  const a = { tab: null, rows: null, limit: null, list: null, force: false };
+  const a = { tab: null, rows: null, limit: null, list: null, force: false, accept: [] };
   for (let i = 0; i < argv.length; i++) {
     const t = argv[i];
     if (t === "--tab") a.tab = argv[++i];
@@ -682,6 +753,12 @@ function parseArgs(argv) {
     else if (t === "--limit") a.limit = Number(argv[++i]);
     else if (t === "--list") a.list = argv[++i];
     else if (t === "--force") a.force = true;
+    else if (t === "--accept") {
+      for (const k of (argv[++i] || "").split(",").map((x) => x.trim()).filter(Boolean)) {
+        if (!/^(beauty|bodycare|pet|lodging)-\d+$/.test(k)) throw new Error(`--accept のキーが読めない: ${k}（例 beauty-100）`);
+        a.accept.push(k);
+      }
+    }
   }
   return a;
 }
@@ -689,6 +766,7 @@ const tabName = (t) => (TAB_EN[t] ? t : Object.keys(TAB_EN).find((k) => TAB_EN[k
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  for (const k of args.accept) ACCEPT.add(k);
   const sheet = JSON.parse(readFileSync(path.join(HERE, "sheet.json"), "utf8"));
   let tasks = [];
   if (args.list) {
@@ -731,7 +809,7 @@ async function main() {
     await w.close().catch(() => {});
   }
 
-  const summary = { total: tasks.length, done: 0, byVerdict: {}, seconds: [], stoppedBy: null };
+  const summary = { total: tasks.length, done: 0, byVerdict: {}, seconds: [], stoppedBy: null, acceptedApplied: [], acceptListedButNotApplied: [] };
   try {
     for (const [i, { tab, r }] of tasks.entries()) {
       if (i > 0) await sleep(3000 + Math.random() * 3000);
@@ -761,6 +839,8 @@ async function main() {
   } finally {
     await browser.close().catch(() => {});
   }
+  summary.acceptedApplied = [...ACCEPT_APPLIED];
+  summary.acceptListedButNotApplied = [...ACCEPT].filter((k) => !ACCEPT_APPLIED.has(k));
   console.log(JSON.stringify(summary, null, 2));
 }
 

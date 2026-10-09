@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 126,
+  "sheet": {
+    "name": "南さがえ接骨院",
+    "address": "山形県寒河江市島島東７６－１",
+    "url": "https://share.google/qykZIOOtFoqBJDBOu",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=0b1bbd70689b2a31&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifPH3iSd1LSRcEygQKMAaetWL_zbpA:1761800169595&kgmid=/g/11txdvfqgn&q=%E5%8D%97%E3%81%95%E3%81%8C%E3%81%88%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=c377b716da8fee1c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11txdvfqgn",
+  "queries": [
+    "南さがえ接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "南さがえ接骨院",
+      "address": "山形県寒河江市島島東７６−１",
+      "url": "https://www.google.com/maps/place/%E5%8D%97%E3%81%95%E3%81%8C%E3%81%88%E6%8E%A5%E9%AA%A8%E9%99%A2/@38.3572237,140.277781,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8bc7af7f32bec7:0x4655b4504048f67a!8m2!3d38.3572237!4d140.277781!16s%2Fg%2F11txdvfqgn",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8D%97%E3%81%95%E3%81%8C%E3%81%88%E6%8E%A5%E9%AA%A8%E9%99%A2/@38.3572237,140.277781,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8bc7af7f32bec7:0x4655b4504048f67a!8m2!3d38.3572237!4d140.277781!16s%2Fg%2F11txdvfqgn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "山形県寒河江市島島東７６－１",
+    "place": "山形県寒河江市島島東７６−１",
+    "sheetNorm": "山形県寒河江市島島東76-1",
+    "placeNorm": "山形県寒河江市島島東76-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "南さがえ接骨院",
+    "address": "山形県寒河江市島島東７６−１",
+    "category": "接骨院",
+    "lat": 38.3572237,
+    "lng": 140.277781,
+    "gbpUrl": "https://maps.google.com/?cid=5068155212444268154",
+    "phone": "0237-78-3101",
+    "website": "https://minamisagae-sekkotuinn.com/",
+    "hours": {
+      "月": "09:00–12:00, 14:30–19:30",
+      "火": "定休日",
+      "水": "09:00–12:00, 14:30–19:30",
+      "木": "09:00–12:00, 14:30–19:30",
+      "金": "09:00–12:00, 14:30–19:30",
+      "土": "09:00–12:00, 14:30–19:30",
+      "日": "09:00–12:00, 14:30–19:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "交通事故による身体への衝撃は大きく、事故直後には気にならなかった症状が、時間が経ってから現れることもあります。 特に首まわりは事故の衝撃を受けやすく、日常生活の中で動かしづらさや違和感を感じる場合があります。 南さがえ接骨院では、交通事故後のお身体の状態を丁寧に確認し、一人ひとりの状態に合わせた施術をご提案しています。 交通事故後のお身体のことでお困りの方、どこに相談したらよいか分からない方も、お気軽にご相談ください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:52:44.811Z",
+  "seconds": 5.9
+}

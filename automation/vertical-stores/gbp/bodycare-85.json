@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 85,
+  "sheet": {
+    "name": "しおかわ鍼灸接骨治療院",
+    "address": "大阪府大阪市旭区大宮２丁目２６−１６",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&sxsrf=AE3TifNNv7AqUJnRePS3aB8_H-YAWMSJFw:1761108295898&kgmid=/g/1tf57s2t&q=%E3%81%97%E3%81%8A%E3%81%8B%E3%82%8F%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=36529c70c5a0689e&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1tf57s2t",
+  "queries": [
+    "しおかわ鍼灸接骨治療院 大阪府大阪市旭区大宮２丁目２６−１６"
+  ],
+  "candidates": [
+    {
+      "name": "しおかわ鍼灸接骨治療院",
+      "address": "大阪府大阪市旭区大宮２丁目２６−１６",
+      "url": "https://www.google.com/maps/place/%E3%81%97%E3%81%8A%E3%81%8B%E3%82%8F%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E6%B2%BB%E7%99%82%E9%99%A2/@34.7241018,135.5486539,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e16b5644b9b5:0x3c34adfed5ffef8d!8m2!3d34.7241018!4d135.5486539!16s%2Fg%2F1tf57s2t",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%97%E3%81%8A%E3%81%8B%E3%82%8F%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E6%B2%BB%E7%99%82%E9%99%A2/@34.7241018,135.5486539,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e16b5644b9b5:0x3c34adfed5ffef8d!8m2!3d34.7241018!4d135.5486539!16s%2Fg%2F1tf57s2t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市旭区大宮２丁目２６−１６",
+    "place": "大阪府大阪市旭区大宮２丁目２６−１６",
+    "sheetNorm": "大阪府大阪市旭区大宮2-26-16",
+    "placeNorm": "大阪府大阪市旭区大宮2-26-16",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "しおかわ鍼灸接骨治療院",
+    "address": "大阪府大阪市旭区大宮２丁目２６−１６",
+    "category": "整体",
+    "lat": 34.7241018,
+    "lng": 135.5486539,
+    "gbpUrl": "https://maps.google.com/?cid=4338283651088248717",
+    "phone": "06-6955-3731",
+    "website": "https://honekun.com/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://reservia.jp/shop/reserve/6631?from_app=rwgredirect"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://liff.line.me/2000942011-5mdYLVOb?shop_id=6631"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "9/26（土）当院の開院25周年記念『ライブパーティ』を梅田のライブハウスにて開催いたしました。 当院の患者さんのコンテンポラリーダンサー谷森雄次さんによるダンスパフォーマンスやジャンケン大会 私は、司会、ミルクボーイ風漫才、そして患者さんで集まって結成したバンドでドラムを叩かせて頂き、２曲だけ歌も歌わせて頂きました！ ご来場いただいたみなさん、お手伝いして頂いたみなさん、応援してくださったみなさん、 そして、これまで当院をご利用いただいたみなさん本当にありがとうございました！ ３０周年パーティも開催できるようにがんばります！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:45:35.053Z",
+  "seconds": 5.5
+}

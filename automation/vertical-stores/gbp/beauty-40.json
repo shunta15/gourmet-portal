@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 40,
+  "sheet": {
+    "name": "j'aime la presence",
+    "address": "東京都世田谷区駒沢２丁目４０−２",
+    "url": "https://share.google/uzVhh2CwsbPkL46vg",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=64c82b2b08ea075f&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifO4sh8_EEZaVpbPCIl1IEDmEfOXxg:1759478524429&kgmid=/g/12xqv6skw&q=j%27aime+la+presence&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=286fe28a58e1ae40&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/12xqv6skw",
+  "queries": [
+    "j'aime la presence"
+  ],
+  "candidates": [
+    {
+      "name": "j'aime la presence",
+      "address": "東京都世田谷区駒沢２丁目４０−２",
+      "url": "https://www.google.com/maps/place/j'aime+la+presence/@35.6368404,139.6555585,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f48401943c3b:0x8b3a6c37b7e3ff30!8m2!3d35.6368404!4d139.6555585!16s%2Fg%2F12xqv6skw",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/j'aime+la+presence/@35.6368404,139.6555585,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f48401943c3b:0x8b3a6c37b7e3ff30!8m2!3d35.6368404!4d139.6555585!16s%2Fg%2F12xqv6skw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都世田谷区駒沢２丁目４０−２",
+    "place": "東京都世田谷区駒沢２丁目４０−２",
+    "sheetNorm": "東京都世田谷区駒沢2-40-2",
+    "placeNorm": "東京都世田谷区駒沢2-40-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "j'aime la presence",
+    "address": "東京都世田谷区駒沢２丁目４０−２",
+    "category": "美容院",
+    "lat": 35.6368404,
+    "lng": 139.6555585,
+    "gbpUrl": "https://maps.google.com/?cid=10032450106485374768",
+    "phone": "03-5481-3377",
+    "website": null,
+    "hours": {
+      "月": "11:00–20:30",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "11:00–20:30",
+      "金": "11:00–20:30",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000253656"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:11:54.362Z",
+  "seconds": 6.5
+}

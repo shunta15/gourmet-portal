@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 122,
+  "sheet": {
+    "name": "南さくら整骨院",
+    "address": "千葉県佐倉市大崎台１丁目１７－１２",
+    "url": "https://share.google/B3tIhuulXEvKuUbX9",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=de39b42295ba4a4a&sxsrf=AE3TifO9r68X-ZoZEia8dhpj6pRTcDZ4_A:1761789286215&kgmid=/g/1td0gml3&q=%E5%8D%97%E3%81%95%E3%81%8F%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=782259f02c6a3392&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1td0gml3",
+  "queries": [
+    "南さくら整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "南さくら整骨院",
+      "address": "千葉県佐倉市大崎台１丁目１７−１２",
+      "url": "https://www.google.com/maps/place/%E5%8D%97%E3%81%95%E3%81%8F%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2/@35.707869,140.224339,17z/data=!3m1!4b1!4m6!3m5!1s0x60228f275838d2bb:0xb4ebd8d02b1f4519!8m2!3d35.707869!4d140.224339!16s%2Fg%2F1td0gml3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8D%97%E3%81%95%E3%81%8F%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2/@35.707869,140.224339,17z/data=!3m1!4b1!4m6!3m5!1s0x60228f275838d2bb:0xb4ebd8d02b1f4519!8m2!3d35.707869!4d140.224339!16s%2Fg%2F1td0gml3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県佐倉市大崎台１丁目１７－１２",
+    "place": "千葉県佐倉市大崎台１丁目１７−１２",
+    "sheetNorm": "千葉県佐倉市大崎台1-17-12",
+    "placeNorm": "千葉県佐倉市大崎台1-17-12",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "南さくら整骨院",
+    "address": "千葉県佐倉市大崎台１丁目１７−１２",
+    "category": "鍼灸院",
+    "lat": 35.707869,
+    "lng": 140.224339,
+    "gbpUrl": "https://maps.google.com/?cid=13036751934942299417",
+    "phone": "043-312-5150",
+    "website": "https://www.minamisakura.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–11:30, 13:00–21:00",
+      "水": "09:00–11:30",
+      "木": "09:00–11:30, 13:00–21:00",
+      "金": "09:00–11:30, 13:00–21:00",
+      "土": "09:00–11:30, 13:00–21:00",
+      "日": "09:00–11:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:52:01.095Z",
+  "seconds": 5.9
+}

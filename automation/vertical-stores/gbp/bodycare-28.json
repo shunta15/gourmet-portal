@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 28,
+  "sheet": {
+    "name": "Supreme Ace",
+    "address": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+    "url": "https://share.google/ijcRgnOetUAiQLZLz",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=148cca40eee112c3&sxsrf=AE3TifO2CsAi8MOP-MILlvtNn5DAfhh2qQ:1758851950259&kgmid=/g/11lf6cwh2_&q=%E7%BE%8E%E5%AE%B9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%95%B4%E4%BD%93Supreme+Ace&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=230fb5bfb38e0c31&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11lf6cwh2_",
+  "queries": [
+    "美容スポーツ整体Supreme Ace"
+  ],
+  "candidates": [
+    {
+      "name": "美容スポーツ整体Supreme Ace",
+      "address": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+      "url": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%95%B4%E4%BD%93Supreme+Ace/@35.8146504,139.5553497,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e907fc729e89:0x52d5c009d8b9a105!8m2!3d35.8146504!4d139.5553497!16s%2Fg%2F11lf6cwh2_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%95%B4%E4%BD%93Supreme+Ace/@35.8146504,139.5553497,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e907fc729e89:0x52d5c009d8b9a105!8m2!3d35.8146504!4d139.5553497!16s%2Fg%2F11lf6cwh2_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+    "place": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+    "sheetNorm": "埼玉県新座市大和田5-8-2志木パストラル1一階",
+    "placeNorm": "埼玉県新座市大和田5-8-2志木パストラル1一階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "美容スポーツ整体Supreme Ace",
+    "address": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+    "category": "整体",
+    "lat": 35.8146504,
+    "lng": 139.5553497,
+    "gbpUrl": "https://maps.google.com/?cid=5968888029672743173",
+    "phone": "080-4964-4649",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000709523/",
+    "hours": {
+      "月": "09:00–21:00",
+      "火": "09:00–21:00",
+      "水": "09:00–21:00",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "09:00–21:00",
+      "日": "09:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:34:37.668Z",
+  "seconds": 6.5
+}

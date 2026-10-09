@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 19,
+  "sheet": {
+    "name": "リミナーリ",
+    "address": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+    "url": "https://share.google/7VFFJpK5e0K9OsbHL",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=f8faf40590554dcf&rlz=1C1QABZ_jaJP873JP873&sxsrf=AE3TifMXTgW8kPae--Xie9pvI9jN6qmHpQ:1758335130030&kgmid=/g/11gj0t7t99&q=%E3%83%AA%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AA&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e1141d52ab4ab296&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11gj0t7t99",
+  "queries": [
+    "リミナーリ"
+  ],
+  "candidates": [
+    {
+      "name": "リミナーリ",
+      "address": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+      "url": "https://www.google.com/maps/place/%E3%83%AA%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AA/@35.6200099,139.6983054,17z/data=!3m1!4b1!4m6!3m5!1s0x60188be413a946db:0xb2ae81df14591edb!8m2!3d35.6200099!4d139.6983054!16s%2Fg%2F11gj0t7t99",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%AA%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AA/@35.6200099,139.6983054,17z/data=!3m1!4b1!4m6!3m5!1s0x60188be413a946db:0xb2ae81df14591edb!8m2!3d35.6200099!4d139.6983054!16s%2Fg%2F11gj0t7t99?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+    "place": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+    "sheetNorm": "東京都目黒区目黒本町5-27-14ハイムミカワ101",
+    "placeNorm": "東京都目黒区目黒本町5-27-14ハイムミカワ101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "リミナーリ",
+    "address": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+    "category": "エステティック サロン",
+    "lat": 35.6200099,
+    "lng": 139.6983054,
+    "gbpUrl": "https://maps.google.com/?cid=12875371179817901787",
+    "phone": "03-6876-6915",
+    "website": "https://rimina-ri.com/",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "定休日",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは。武蔵小山のエステサロン「リミナーリ」です。 【リンパドレナージュ＆フェイシャル】 ボディとフェイシャル大満足のコース 背面中心の背面リンパドレナージュと脚の両面、背中、両腕、デコルテ（胸部）、ヘッド（頭部）全身リンパを流す全身リンパドレナージュ、疲れた身体をほぐして、更に最後にはフェイシャルが付く、まさに贅沢の極み大満足のコースです。フェイシャルは通常のフェイシャルコースと同様のケアをさせて頂きますので、一度で二度美味しい、まさに一石二鳥のメニューです。 武蔵小山でのエステとリンパマッサージなら、「リミナーリ」にお任せください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:07:58.076Z",
+  "seconds": 5.8
+}

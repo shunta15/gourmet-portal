@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 11,
+  "sheet": {
+    "name": "アスプリール",
+    "address": "〒703-8221 岡山県岡山市中区長岡９８−１２ プラザハウス東岡山 102",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d03e2024ca5b9e89&hl=ja&sxsrf=AE3TifN_69iM7Zay4Tz3EorAFmJd3jnTjg:1758078404344&kgmid=/g/11ggr6m64h&q=%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3(%E3%82%A2%E3%82%B9%E3%83%97%E3%83%AA%E3%83%BC%E3%83%AB)&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ff81ff7a91d4f3fd&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11ggr6m64h",
+  "queries": [
+    "アスプリール 岡山県岡山市中区長岡９８−１２ プラザハウス東岡山 102"
+  ],
+  "candidates": [
+    {
+      "name": "アスプリール",
+      "address": "岡山県岡山市中区長岡98−１２ プラザハウス東岡山 102",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%82%B9%E3%83%97%E3%83%AA%E3%83%BC%E3%83%AB/@34.6828491,133.9886699,17z/data=!3m1!4b1!4m6!3m5!1s0x35540eddac0bb649:0x2dfcf8b68d73b9e5!8m2!3d34.6828491!4d133.9886699!16s%2Fg%2F11ggr6m64h",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%82%B9%E3%83%97%E3%83%AA%E3%83%BC%E3%83%AB/@34.6828491,133.9886699,17z/data=!3m1!4b1!4m6!3m5!1s0x35540eddac0bb649:0x2dfcf8b68d73b9e5!8m2!3d34.6828491!4d133.9886699!16s%2Fg%2F11ggr6m64h?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒703-8221 岡山県岡山市中区長岡９８−１２ プラザハウス東岡山 102",
+    "place": "岡山県岡山市中区長岡98−１２ プラザハウス東岡山 102",
+    "sheetNorm": "岡山県岡山市中区長岡98-12プラザハウス東岡山102",
+    "placeNorm": "岡山県岡山市中区長岡98-12プラザハウス東岡山102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "アスプリール",
+    "address": "岡山県岡山市中区長岡98−１２ プラザハウス東岡山 102",
+    "category": "指圧・マッサージ",
+    "lat": 34.6828491,
+    "lng": 133.9886699,
+    "gbpUrl": "https://maps.google.com/?cid=3313796888778750437",
+    "phone": "086-238-9766",
+    "website": "https://assouplir.studio.site/",
+    "hours": {
+      "月": "12:00–21:00",
+      "火": "定休日",
+      "水": "12:00–21:00",
+      "木": "12:00–21:00",
+      "金": "12:00–21:00",
+      "土": "12:00–21:00",
+      "日": "12:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000620643"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは💫 「リラクゼーションサロン(アスプリール)」です。 当サロンでは、ツボ診断を行っております。 ツボ診断では、今の悪いところや状態が分かります。 よもぎ蒸しが終わった後の老廃物のツボ診断を行っているサロンはあまり多くありません。ぜひお試しください！ 東岡山駅から徒歩4分♪ 岡山市でよもぎ蒸し、マッサージ、もみほぐしなら「リラクゼーションサロン(アスプリール)」にお越しください！ ネット予約で希望の時間が取れない時は、電話で問い合わせ頂くと予約が取れる場合がありますのでお問い合わせ下さい。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:06:04.172Z",
+  "seconds": 5.5
+}

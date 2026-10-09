@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 100,
+  "sheet": {
+    "name": "いるか整骨院・鍼灸院",
+    "address": "神奈川県海老名市国分寺台２丁目４−９",
+    "url": "https://share.google/Ut9Jc1QKZ46BKHFEN",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=dd688c13b322be04&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPRbQR--BfFnDIaCFOFsJlZe9KyCQ:1761183844135&kgmid=/g/1tsjdm6c&q=%E3%81%84%E3%82%8B%E3%81%8B%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=0d50223c51792dcc&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tsjdm6c",
+  "queries": [
+    "いるか整骨院・鍼灸院",
+    "いるか整骨院・鍼灸院 神奈川県海老名市国分寺台２丁目４−９"
+  ],
+  "candidates": [
+    {
+      "name": "いるか整骨院・鍼灸院",
+      "address": "神奈川県海老名市国分寺台２丁目４−９",
+      "url": "https://www.google.com/maps/place/%E3%81%84%E3%82%8B%E3%81%8B%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2/@35.4404608,139.4042833,17z/data=!3m1!4b1!4m6!3m5!1s0x6018550842427991:0xa81165d9c03777d5!8m2!3d35.4404608!4d139.4042833!16s%2Fg%2F1tsjdm6c",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%84%E3%82%8B%E3%81%8B%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2/@35.4404608,139.4042833,17z/data=!3m1!4b1!4m6!3m5!1s0x6018550842427991:0xa81165d9c03777d5!8m2!3d35.4404608!4d139.4042833!16s%2Fg%2F1tsjdm6c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県海老名市国分寺台２丁目４−９",
+    "place": "神奈川県海老名市国分寺台２丁目４−９",
+    "sheetNorm": "神奈川県海老名市国分寺台2-4-9",
+    "placeNorm": "神奈川県海老名市国分寺台2-4-9",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "いるか整骨院・鍼灸院",
+    "address": "神奈川県海老名市国分寺台２丁目４−９",
+    "category": "接骨院",
+    "lat": 35.4404608,
+    "lng": 139.4042833,
+    "gbpUrl": "https://maps.google.com/?cid=12110572858883143637",
+    "phone": "046-233-9914",
+    "website": "https://iruka-ss.com/",
+    "hours": {
+      "月": "09:00–12:00, 14:30–20:00",
+      "火": "定休日",
+      "水": "09:00–12:00, 14:30–20:00",
+      "木": "09:00–12:00, 14:30–20:00",
+      "金": "09:00–12:00, 14:30–20:00",
+      "土": "09:00–12:00, 14:30–17:30",
+      "日": "09:00–12:00, 14:30–17:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "2026　GW 5/3～5/6までお休みとなります。\n2026/04/26"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:48:26.007Z",
+  "seconds": 10.8
+}

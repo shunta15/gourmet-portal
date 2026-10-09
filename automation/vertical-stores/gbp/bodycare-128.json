@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 128,
+  "sheet": {
+    "name": "アルファ接骨院",
+    "address": "愛媛県松山市柳井町２丁目１９－５ やないハイツ 1階",
+    "url": "https://share.google/G1CyuQkgiSpBpV7u4",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=de39b42295ba4a4a&rlz=1C1TMBY_jaJP1161JP1169&biw=960&bih=918&sxsrf=AE3TifOhbwcTDwtQsD0LemFQ7cDgKyiAwQ:1761803384268&kgmid=/g/1v0lhksj&q=%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=eb6193d210c45a94&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1v0lhksj",
+  "queries": [
+    "アルファ接骨院",
+    "アルファ接骨院 愛媛県松山市柳井町２丁目１９－５ やないハイツ 1階"
+  ],
+  "candidates": [
+    {
+      "name": "アルファ接骨院",
+      "address": "愛媛県松山市柳井町２丁目１９−５ やないハイツ 1階",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E6%8E%A5%E9%AA%A8%E9%99%A2/@33.834389,132.768245,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe5f37b988cdd:0x501dbca3af266079!8m2!3d33.834389!4d132.768245!16s%2Fg%2F1v0lhksj",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E6%8E%A5%E9%AA%A8%E9%99%A2/@33.834389,132.768245,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe5f37b988cdd:0x501dbca3af266079!8m2!3d33.834389!4d132.768245!16s%2Fg%2F1v0lhksj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛媛県松山市柳井町２丁目１９－５ やないハイツ 1階",
+    "place": "愛媛県松山市柳井町２丁目１９−５ やないハイツ 1階",
+    "sheetNorm": "愛媛県松山市柳井町2-19-5やないハイツ1階",
+    "placeNorm": "愛媛県松山市柳井町2-19-5やないハイツ1階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "アルファ接骨院",
+    "address": "愛媛県松山市柳井町２丁目１９−５ やないハイツ 1階",
+    "category": "接骨院",
+    "lat": 33.834389,
+    "lng": 132.768245,
+    "gbpUrl": "https://maps.google.com/?cid=5772977708563062905",
+    "phone": "089-935-7055",
+    "website": "https://www.alpha20191001.com/",
+    "hours": {
+      "月": "09:00–13:00, 15:00–20:00",
+      "火": "09:00–13:00, 15:00–20:00",
+      "水": "09:00–13:00, 15:00–20:00",
+      "木": "09:00–13:00, 15:00–20:00",
+      "金": "09:00–13:00, 15:00–20:00",
+      "土": "09:00–13:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_3877483/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:53:07.691Z",
+  "seconds": 10.1
+}

@@ -1,0 +1,72 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 35,
+  "sheet": {
+    "name": "Esthetic By Angelina",
+    "address": "愛媛県新居浜市",
+    "url": "https://www.google.com/maps?cid=12980991262368674231",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "cid",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "Beauty Salon Angelina",
+      "address": "愛媛県新居浜市庄内町３丁目１−１５１",
+      "url": "https://www.google.com/maps/place/Beauty+Salon+Angelina/@33.9538484,133.2901815,17z/data=!3m1!4b1!4m6!3m5!1s0x3551cf3b4f05fc3d:0xb425bec6e1ef31b7!8m2!3d33.9538484!4d133.2901815!16s%2Fg%2F11kc67z8pl",
+      "addressLevel": "coarse",
+      "addressDetail": "シートの住所に番地なし（市区町村まで一致）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Beauty+Salon+Angelina/@33.9538484,133.2901815,17z/data=!3m1!4b1!4m6!3m5!1s0x3551cf3b4f05fc3d:0xb425bec6e1ef31b7!8m2!3d33.9538484!4d133.2901815!16s%2Fg%2F11kc67z8pl?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "住所が粗く確認不十分",
+  "verdictReason": "シートの住所に番地なし（市区町村まで一致）／店名: different",
+  "addressCompare": {
+    "sheet": "愛媛県新居浜市",
+    "place": "愛媛県新居浜市庄内町３丁目１−１５１",
+    "sheetNorm": "愛媛県新居浜市",
+    "placeNorm": "愛媛県新居浜市庄内町3-1-151",
+    "level": "coarse",
+    "detail": "シートの住所に番地なし（市区町村まで一致）"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "Beauty Salon Angelina",
+    "address": "愛媛県新居浜市庄内町３丁目１−１５１",
+    "category": "エステティック サロン",
+    "lat": 33.9538484,
+    "lng": 133.2901815,
+    "gbpUrl": "https://maps.google.com/?cid=12980991262368674231",
+    "phone": "090-1575-8223",
+    "website": "http://esthetic-angelina.com/",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–19:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://estheticbyangelina.pos-s.net/reserve/?shop_cd=1"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:10:53.052Z",
+  "seconds": 5.5
+}

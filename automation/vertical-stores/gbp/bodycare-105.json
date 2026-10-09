@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 105,
+  "sheet": {
+    "name": "足のケアセンター船橋",
+    "address": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+    "url": "https://share.google/WyXIraKL8QfVG2HYZ",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=b36809973b46a30f&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifNAKShivf0XVkHq5xEDq747uj_Avw:1761289792951&kgmid=/g/11tcss5ql7&q=%E8%B6%B3%E3%81%AE%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E8%88%B9%E6%A9%8B&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=ef89c02855477297&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11tcss5ql7",
+  "queries": [
+    "足のケアセンター船橋"
+  ],
+  "candidates": [
+    {
+      "name": "足のケアセンター船橋",
+      "address": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+      "url": "https://www.google.com/maps/place/%E8%B6%B3%E3%81%AE%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E8%88%B9%E6%A9%8B/@35.7076888,139.9601755,17z/data=!3m1!4b1!4m6!3m5!1s0x60188115f1aa1ba3:0xca7acd7dfb591c92!8m2!3d35.7076888!4d139.9601755!16s%2Fg%2F11tcss5ql7",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%B6%B3%E3%81%AE%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E8%88%B9%E6%A9%8B/@35.7076888,139.9601755,17z/data=!3m1!4b1!4m6!3m5!1s0x60188115f1aa1ba3:0xca7acd7dfb591c92!8m2!3d35.7076888!4d139.9601755!16s%2Fg%2F11tcss5ql7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+    "place": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+    "sheetNorm": "千葉県船橋市西船4-29-13ルネスgen301",
+    "placeNorm": "千葉県船橋市西船4-29-13ルネスgen301",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "足のケアセンター船橋",
+    "address": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+    "category": "整体",
+    "lat": 35.7076888,
+    "lng": 139.9601755,
+    "gbpUrl": "https://maps.google.com/?cid=14590199883791670418",
+    "phone": "047-401-2534",
+    "website": "https://ashinokea.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://ashinokea.com/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "診療はいつも通り行っております！\n2026/09/08"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:49:17.653Z",
+  "seconds": 5.9
+}

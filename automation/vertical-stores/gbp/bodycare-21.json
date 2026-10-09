@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 21,
+  "sheet": {
+    "name": "十間坂接骨院",
+    "address": "神奈川県茅ヶ崎市十間坂２丁目２－３３ ビル",
+    "url": "https://share.google/bA2IvLqn31zxcdbZc",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4cfc1c89add46c61&rlz=1C1TMBY_jaJP1161JP1169&biw=917&bih=918&sxsrf=AE3TifN-epytm1twA2EMSq6y6oJuQG6tPg:1758256208759&kgmid=/g/11byvcwbbk&q=%E5%8D%81%E9%96%93%E5%9D%82%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=230c89d21a56ae69&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11byvcwbbk",
+  "queries": [
+    "十間坂接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "十間坂接骨院",
+      "address": "神奈川県茅ヶ崎市十間坂２丁目２−３３ ビル",
+      "url": "https://www.google.com/maps/place/%E5%8D%81%E9%96%93%E5%9D%82%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3294618,139.3964384,17z/data=!3m1!4b1!4m6!3m5!1s0x6018528e17815555:0x1d13c8c98357eeca!8m2!3d35.3294618!4d139.3964384!16s%2Fg%2F11byvcwbbk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8D%81%E9%96%93%E5%9D%82%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3294618,139.3964384,17z/data=!3m1!4b1!4m6!3m5!1s0x6018528e17815555:0x1d13c8c98357eeca!8m2!3d35.3294618!4d139.3964384!16s%2Fg%2F11byvcwbbk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県茅ヶ崎市十間坂２丁目２－３３ ビル",
+    "place": "神奈川県茅ヶ崎市十間坂２丁目２−３３ ビル",
+    "sheetNorm": "神奈川県茅ケ崎市十間坂2-2-33ビル",
+    "placeNorm": "神奈川県茅ケ崎市十間坂2-2-33ビル",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "十間坂接骨院",
+    "address": "神奈川県茅ヶ崎市十間坂２丁目２−３３ ビル",
+    "category": "接骨院",
+    "lat": 35.3294618,
+    "lng": 139.3964384,
+    "gbpUrl": "https://maps.google.com/?cid=2095239019474972362",
+    "phone": "0467-84-9003",
+    "website": "http://jikenzaka.web.fc2.com/",
+    "hours": {
+      "月": "09:00–13:00, 15:00–20:00",
+      "火": "09:00–13:00, 15:00–20:00",
+      "水": "09:00–13:00, 15:00–20:00",
+      "木": "09:00–13:00, 15:00–20:00",
+      "金": "09:00–13:00, 15:00–20:00",
+      "土": "09:00–13:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:33:18.473Z",
+  "seconds": 6.5
+}

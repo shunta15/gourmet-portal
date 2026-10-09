@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 56,
+  "sheet": {
+    "name": "Lamazi",
+    "address": "千葉県成田市 本町 662-1 第３印東マンション402",
+    "url": "https://share.google/YJYjltoRaaL0YjupD",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3a0b49d3d851aeaf&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifMKfSRG09tIaxj68NG8ETApuehcUQ:1760005164124&kgmid=/g/11f3x4_swt&q=Lamazi%E6%88%90%E7%94%B0&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=b8d2c870a5a94b2c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11f3x4_swt",
+  "queries": [
+    "Lamazi成田"
+  ],
+  "candidates": [
+    {
+      "name": "まつげ眉毛肌改善サロンLamazi成田",
+      "address": "千葉県成田市 本町 662-1 第３印東マンション402",
+      "url": "https://www.google.com/maps/place/%E3%81%BE%E3%81%A4%E3%81%92%E7%9C%89%E6%AF%9B%E8%82%8C%E6%94%B9%E5%96%84%E3%82%B5%E3%83%AD%E3%83%B3Lamazi%E6%88%90%E7%94%B0/@35.781893,140.317175,17z/data=!3m1!4b1!4m6!3m5!1s0x60228b0e2012e245:0x37c76a8f9b35441d!8m2!3d35.781893!4d140.317175!16s%2Fg%2F11f3x4_swt",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%BE%E3%81%A4%E3%81%92%E7%9C%89%E6%AF%9B%E8%82%8C%E6%94%B9%E5%96%84%E3%82%B5%E3%83%AD%E3%83%B3Lamazi%E6%88%90%E7%94%B0/@35.781893,140.317175,17z/data=!3m1!4b1!4m6!3m5!1s0x60228b0e2012e245:0x37c76a8f9b35441d!8m2!3d35.781893!4d140.317175!16s%2Fg%2F11f3x4_swt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "千葉県成田市 本町 662-1 第３印東マンション402",
+    "place": "千葉県成田市 本町 662-1 第３印東マンション402",
+    "sheetNorm": "千葉県成田市本町662-1第3印東マンション402",
+    "placeNorm": "千葉県成田市本町662-1第3印東マンション402",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "まつげ眉毛肌改善サロンLamazi成田",
+    "address": "千葉県成田市 本町 662-1 第３印東マンション402",
+    "category": "まつげサロン",
+    "lat": 35.781893,
+    "lng": 140.317175,
+    "gbpUrl": "https://maps.google.com/?cid=4019298357468283933",
+    "phone": "0476-76-9200",
+    "website": "http://herb.chu.jp/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:15:32.402Z",
+  "seconds": 5.6
+}

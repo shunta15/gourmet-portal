@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 43,
+  "sheet": {
+    "name": "まんぼう接骨院",
+    "address": "広島県尾道市因島中庄町３８３８−１",
+    "url": "https://share.google/57EbRwaZ6AF5d6qVB",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifN_L0zrL31XZ5qrwZrBbM20YlOpjQ:1759367788102&kgmid=/g/11grbnxz51&q=%E3%81%BE%E3%82%93%E3%81%BC%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dfe10c6be2135520&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11grbnxz51",
+  "queries": [
+    "まんぼう接骨院",
+    "まんぼう接骨院 広島県尾道市因島中庄町３８３８−１"
+  ],
+  "candidates": [
+    {
+      "name": "まんぼう接骨院",
+      "address": "広島県尾道市因島中庄町３８３８−１",
+      "url": "https://www.google.com/maps/place/%E3%81%BE%E3%82%93%E3%81%BC%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2/@34.3344315,133.1624689,17z/data=!3m1!4b1!4m6!3m5!1s0x35505561c3298cb9:0x53db85c9fe29e680!8m2!3d34.3344315!4d133.1624689!16s%2Fg%2F11grbnxz51",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%BE%E3%82%93%E3%81%BC%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2/@34.3344315,133.1624689,17z/data=!3m1!4b1!4m6!3m5!1s0x35505561c3298cb9:0x53db85c9fe29e680!8m2!3d34.3344315!4d133.1624689!16s%2Fg%2F11grbnxz51?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "広島県尾道市因島中庄町３８３８−１",
+    "place": "広島県尾道市因島中庄町３８３８−１",
+    "sheetNorm": "広島県尾道市因島中庄町3838-1",
+    "placeNorm": "広島県尾道市因島中庄町3838-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "まんぼう接骨院",
+    "address": "広島県尾道市因島中庄町３８３８−１",
+    "category": "接骨院",
+    "lat": 34.3344315,
+    "lng": 133.1624689,
+    "gbpUrl": "https://maps.google.com/?cid=6042570427646731904",
+    "phone": "050-1203-6675",
+    "website": "https://kakio-manbou-sekkotuin.jimdofree.com/%E3%81%8A%E3%81%AE%E3%81%BF%E3%81%A1-%E3%81%BE%E3%82%93%E3%81%BC%E3%81%86/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "定休日",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–20:00",
+      "日": "09:00–12:00, 13:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「抱っこ、意外と腰にきますよね。 子どもは軽くても、抱き上げる角度や回数が積み重なると地味に効いてきます。 因島でこの発信をしてるのは私たちだけ。10年、この島の子育て世代のカラダを見てきました。 抱っこがしんどい日、ありませんか?コメントで教えてください。 周りにも抱っこ疲れの人がいたら、送ってあげてください🐈」 尾道市因島にあるまんぼう接骨院は、器具などを使わないオールハンドのもみほぐしや髪の毛より細い鍼を使用して行う鍼治療など様々なメニューをご用意しており、肩こりや腰痛・肘・膝の関節の痛みなどお客様のお悩みの症状を改善する施術を行なっている接骨院です。 広島県にある当院は、他の人の視線を気にすることなく施術を受けることができるので、整体院や整骨院などをお探しの際は是非ご利用下さい。\n2026/09/08"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:37:25.177Z",
+  "seconds": 10.8
+}

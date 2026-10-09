@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 84,
+  "sheet": {
+    "name": "すがまた接骨院",
+    "address": "神奈川県平塚市万田１丁目３０－７",
+    "url": "https://share.google/T5s0dEEPReqBO3DMY",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3aa3359d46e30aa6&sxsrf=AE3TifM_DRkg1MbLeCGYbgWEnTzu7r0e6A:1761023505093&kgmid=/g/1tj335lk&q=%E3%81%99%E3%81%8C%E3%81%BE%E3%81%9F%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dd587fdd199c9bf4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tj335lk",
+  "queries": [
+    "すがまた接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "すがまた接骨院",
+      "address": "神奈川県平塚市万田１丁目３０−７",
+      "url": "https://www.google.com/maps/place/%E3%81%99%E3%81%8C%E3%81%BE%E3%81%9F%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3309262,139.3077221,17z/data=!3m1!4b1!4m6!3m5!1s0x6019ac46ce6c73ad:0x684d492263c0003f!8m2!3d35.3309262!4d139.3077221!16s%2Fg%2F1tj335lk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%8C%E3%81%BE%E3%81%9F%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3309262,139.3077221,17z/data=!3m1!4b1!4m6!3m5!1s0x6019ac46ce6c73ad:0x684d492263c0003f!8m2!3d35.3309262!4d139.3077221!16s%2Fg%2F1tj335lk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県平塚市万田１丁目３０－７",
+    "place": "神奈川県平塚市万田１丁目３０−７",
+    "sheetNorm": "神奈川県平塚市万田1-30-7",
+    "placeNorm": "神奈川県平塚市万田1-30-7",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "すがまた接骨院",
+    "address": "神奈川県平塚市万田１丁目３０−７",
+    "category": "接骨院",
+    "lat": 35.3309262,
+    "lng": 139.3077221,
+    "gbpUrl": "https://maps.google.com/?cid=7515743765202468927",
+    "phone": "0463-36-1880",
+    "website": "https://www.sugamata-s.com/",
+    "hours": {
+      "月": "08:00–11:00, 14:00–19:00, 20:30–22:00",
+      "火": "08:00–11:00, 14:00–19:00, 20:30–22:00",
+      "水": "08:00–11:00, 14:00–19:00, 20:30–22:00",
+      "木": "08:00–11:00, 14:00–19:00, 20:30–22:00",
+      "金": "08:00–11:00, 14:00–19:00, 20:30–22:00",
+      "土": "08:00–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:45:26.463Z",
+  "seconds": 6
+}

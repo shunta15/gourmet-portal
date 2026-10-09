@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 4,
+  "sheet": {
+    "name": "なごみ整骨院",
+    "address": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+    "url": "https://www.google.com/search?q=%E3%81%AA%E3%81%94%E3%81%BF%E6%95%B4%E9%AA%A8%E9%99%A2%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%89%8B%E7%A8%B2%E5%8C%BA%E6%98%9F%E7%BD%AE%EF%BC%92%E6%9D%A1%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%97%EF%BC%8D%EF%BC%91%EF%BC%90%20%E3%83%A1%E3%82%BE%E3%83%B3%E3%83%BBSt%201F",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "なごみ整骨院 北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F"
+  ],
+  "candidates": [
+    {
+      "name": "なごみ整骨院",
+      "address": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+      "url": "https://www.google.com/maps/place/%E3%81%AA%E3%81%94%E3%81%BF%E6%95%B4%E9%AA%A8%E9%99%A2/@43.1360531,141.2095229,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b27166c85d967:0x75a0310dfdb53621!8m2!3d43.1360531!4d141.2095229!16s%2Fg%2F11f34xj1_t",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AA%E3%81%94%E3%81%BF%E6%95%B4%E9%AA%A8%E9%99%A2/@43.1360531,141.2095229,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b27166c85d967:0x75a0310dfdb53621!8m2!3d43.1360531!4d141.2095229!16s%2Fg%2F11f34xj1_t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+    "place": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+    "sheetNorm": "北海道札幌市手稲区星置2条3-7-10メゾン・St1F",
+    "placeNorm": "北海道札幌市手稲区星置2条3-7-10メゾン・St1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "なごみ整骨院",
+    "address": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+    "category": "整体",
+    "lat": 43.1360531,
+    "lng": 141.2095229,
+    "gbpUrl": "https://maps.google.com/?cid=8475828434872120865",
+    "phone": "011-624-6912",
+    "website": "https://www.icrlab.net/clinic/detail/id=229",
+    "hours": {
+      "月": "08:30–19:30",
+      "火": "08:30–19:30",
+      "水": "08:30–19:30",
+      "木": "08:30–19:30",
+      "金": "08:30–19:30",
+      "土": "08:30–19:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://www.instagram.com/nagomi.therapy/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:30:22.054Z",
+  "seconds": 5.9
+}

@@ -1,0 +1,54 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 67,
+  "sheet": {
+    "name": "salon sifa【サロンシファ】",
+    "address": "宮城県仙台市青葉区国分町１－６－３　古拙ビル４Ｆ",
+    "url": "https://share.google/Ev1zmvKnhCelATClS",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=b1ea5600979d51fe&rlz=1C1JCYX_jaJP1069JP1078&kgmid=/g/11pkljh0wz&q=salon+sifa(%E3%82%B5%E3%83%AD%E3%83%B3+%E3%82%B7%E3%83%95%E3%82%A1)&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=01ff2e82b926c6c4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11pkljh0wz",
+  "queries": [
+    "salon sifa(サロン シファ)"
+  ],
+  "candidates": [
+    {
+      "name": "salon sifa(サロン シファ)",
+      "address": "宮城県仙台市宮城野区榴ケ岡105−１０ 503号",
+      "url": "https://www.google.com/maps/place/salon+sifa(%E3%82%B5%E3%83%AD%E3%83%B3+%E3%82%B7%E3%83%95%E3%82%A1)/@38.2602584,140.8922712,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a293df55e232f:0xe4bb0e3d11eb1dd1!8m2!3d38.2602584!4d140.8922712!16s%2Fg%2F11pkljh0wz",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:宮城県仙台市青葉区国分町 / マップ:宮城県仙台市宮城野区榴ケ岡）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/salon+sifa(%E3%82%B5%E3%83%AD%E3%83%B3+%E3%82%B7%E3%83%95%E3%82%A1)/@38.2602584,140.8922712,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a293df55e232f:0xe4bb0e3d11eb1dd1!8m2!3d38.2602584!4d140.8922712!16s%2Fg%2F11pkljh0wz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:宮城県仙台市青葉区国分町 / マップ:宮城県仙台市宮城野区榴ケ岡）（シート:宮城県仙台市青葉区国分町１－６－３　古拙ビル４Ｆ / マップ:宮城県仙台市宮城野区榴ケ岡105−１０ 503号）／店名: シート「salon sifa【サロンシファ】」マップ「salon sifa(サロン シファ)」(exact)",
+  "addressCompare": {
+    "sheet": "宮城県仙台市青葉区国分町１－６－３　古拙ビル４Ｆ",
+    "place": "宮城県仙台市宮城野区榴ケ岡105−１０ 503号",
+    "sheetNorm": "宮城県仙台市青葉区国分町1-6-3古拙ビル4F",
+    "placeNorm": "宮城県仙台市宮城野区榴ケ岡105-10503",
+    "level": "none",
+    "detail": "町名までがちがう（シート:宮城県仙台市青葉区国分町 / マップ:宮城県仙台市宮城野区榴ケ岡）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "salon sifa(サロン シファ)",
+    "address": "宮城県仙台市宮城野区榴ケ岡105−１０ 503号",
+    "category": "エステティック サロン",
+    "lat": 38.2602584,
+    "lng": 140.8922712,
+    "gbpUrl": "https://maps.google.com/?cid=16481782916748877265"
+  },
+  "fetchedAt": "2026-10-09T01:17:33.680Z",
+  "seconds": 5.9
+}

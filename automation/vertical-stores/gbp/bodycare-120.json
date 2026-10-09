@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 120,
+  "sheet": {
+    "name": "Body Work Shop",
+    "address": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=fb293ac4e671f160&hl=ja&sxsrf=AE3TifPy7ZeRwyqsRWS_1S-32TLjanNHuA:1761723889025&kgmid=/g/11kqfmy8xp&q=Body+Work+Shop&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=671fa4ccafc67360&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11kqfmy8xp",
+  "queries": [
+    "Body Work Shop 埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821"
+  ],
+  "candidates": [
+    {
+      "name": "Body Work Shop",
+      "address": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+      "url": "https://www.google.com/maps/place/Body+Work+Shop/@35.9096562,139.6194301,17z/data=!3m1!4b1!4m6!3m5!1s0x6018c16f40d21f87:0x5b75b95d5359430!8m2!3d35.9096562!4d139.6194301!16s%2Fg%2F11kqfmy8xp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Body+Work+Shop/@35.9096562,139.6194301,17z/data=!3m1!4b1!4m6!3m5!1s0x6018c16f40d21f87:0x5b75b95d5359430!8m2!3d35.9096562!4d139.6194301!16s%2Fg%2F11kqfmy8xp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+    "place": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+    "sheetNorm": "埼玉県さいたま市大宮区桜木町2-544コンフォートマンション桜木町821",
+    "placeNorm": "埼玉県さいたま市大宮区桜木町2-544コンフォートマンション桜木町821",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Body Work Shop",
+    "address": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+    "category": "整体",
+    "lat": 35.9096562,
+    "lng": 139.6194301,
+    "gbpUrl": "https://maps.google.com/?cid=411898590013002800",
+    "phone": "080-9993-2036",
+    "website": "https://bodyworkshop.jp/",
+    "hours": {
+      "月": "14:00–20:00",
+      "火": "定休日",
+      "水": "14:00–20:00",
+      "木": "14:00–20:00",
+      "金": "14:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_48061881/reserve/"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://outlook.office365.com/owa/calendar/BodyWorkShop@bodyworkshop.jp/bookings/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "スポーツの日の営業について 皆さんこんにちは！ 通わない整体サロンBodyWorkShopの高杉です！ 今月12日㈪はスポーツの日ですね！ 当院は12日スポーツの日も通常通り営業いたします。 祝日は比較的ご予約が込み合いますので、ご連絡はお早めにお願いいたします！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:51:40.996Z",
+  "seconds": 8.4
+}

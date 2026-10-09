@@ -1,0 +1,67 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 56,
+  "sheet": {
+    "name": "すわの森はり灸接骨院",
+    "address": "東京都新宿区高田馬場１丁目１０−２３",
+    "url": "https://www.google.com/maps?cid=862132061922976405",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "すわの森はり灸接骨院",
+      "address": "東京都新宿区高田馬場１丁目１０−２３",
+      "url": "https://www.google.com/maps/place/%E3%81%99%E3%82%8F%E3%81%AE%E6%A3%AE%E3%81%AF%E3%82%8A%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.7098613,139.7070978,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d3c900a60bf:0xbf6e88ae464e295!8m2!3d35.7098613!4d139.7070978!16s%2Fg%2F11bv_dg47j",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%99%E3%82%8F%E3%81%AE%E6%A3%AE%E3%81%AF%E3%82%8A%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.7098613,139.7070978,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d3c900a60bf:0xbf6e88ae464e295!8m2!3d35.7098613!4d139.7070978!16s%2Fg%2F11bv_dg47j?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都新宿区高田馬場１丁目１０−２３",
+    "place": "東京都新宿区高田馬場１丁目１０−２３",
+    "sheetNorm": "東京都新宿区高田馬場1-10-23",
+    "placeNorm": "東京都新宿区高田馬場1-10-23",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "すわの森はり灸接骨院",
+    "address": "東京都新宿区高田馬場１丁目１０−２３",
+    "category": "鍼灸院",
+    "lat": 35.7098613,
+    "lng": 139.7070978,
+    "gbpUrl": "https://maps.google.com/?cid=862132061922976405",
+    "phone": "03-6302-1737",
+    "website": null,
+    "hours": {
+      "月": "定休日",
+      "火": "08:30–12:30, 15:00–19:00",
+      "水": "定休日",
+      "木": "08:30–12:30, 15:00–19:00",
+      "金": "08:30–12:30, 15:00–19:00",
+      "土": "08:30–13:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:40:31.939Z",
+  "seconds": 5.6
+}

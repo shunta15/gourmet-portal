@@ -1,0 +1,80 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 77,
+  "sheet": {
+    "name": "脱毛サロンEmbellir-アンベリール-",
+    "address": "〒419-0124 静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+    "url": "https://share.google/L4gMUeY0cJvv7XIUf",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?client=safari&sca_esv=125bfe73879b54c9&rls=en&sxsrf=AE3TifN1-ubSiyVpgxmOhxRHpYU4xYsJtA:1760938445524&kgmid=/g/11ryljn9t5&q=%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%A5%EF%BD%8D%EF%BD%82%EF%BD%85%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%92&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=6c72a725c71591ca&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ryljn9t5",
+  "queries": [
+    "トータルビューティーサロンＥｍｂｅｌｌｉｒ"
+  ],
+  "candidates": [
+    {
+      "name": "トータルビューティーサロンＥｍｂｅｌｌｉｒ",
+      "address": "静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+      "url": "https://www.google.com/maps/place/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%A5%EF%BD%8D%EF%BD%82%EF%BD%85%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%92/data=!4m7!3m6!1s0x601991e670c20757:0xa1b4d356ef65ab3a!8m2!3d35.0786718!4d138.9329986!16s%2Fg%2F11ryljn9t5!19sChIJVwfCcOaRGWAROqtl71bTtKE",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%EF%BC%A5%EF%BD%8D%EF%BD%82%EF%BD%85%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%92/data=!4m7!3m6!1s0x601991e670c20757:0xa1b4d356ef65ab3a!8m2!3d35.0786718!4d138.9329986!16s%2Fg%2F11ryljn9t5!19sChIJVwfCcOaRGWAROqtl71bTtKE?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「脱毛サロンEmbellir-アンベリール-」とマップ「トータルビューティーサロンＥｍｂｅｌｌｉｒ」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "〒419-0124 静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+    "place": "静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+    "sheetNorm": "静岡県田方郡函南町塚本185-1シャルマンコーポ塚本102",
+    "placeNorm": "静岡県田方郡函南町塚本185-1シャルマンコーポ塚本102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "トータルビューティーサロンＥｍｂｅｌｌｉｒ",
+    "address": "静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+    "category": "脱毛サービス",
+    "lat": 35.0786718,
+    "lng": 138.9329986,
+    "gbpUrl": "https://maps.google.com/?cid=11652170506251381562",
+    "phone": "055-900-8141",
+    "website": "https://www.embellir-salon.net/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://stekina.com/profile/C6NH-72XM?stype=lp"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【クチコミは「ステキナ」で検索！】 実際にご来店された村上未咲さまからのクチコミ ありがとうございます😊 またよろしくお願いいたします🙇‍♀️\n2026/10/02"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:03:33.778Z",
+  "seconds": 4.3,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "脱毛サロンEmbellir-アンベリール-",
+    "mapName": "トータルビューティーサロンＥｍｂｅｌｌｉｒ"
+  }
+}

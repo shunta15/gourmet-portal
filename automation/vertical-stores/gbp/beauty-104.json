@@ -1,0 +1,67 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 104,
+  "sheet": {
+    "name": "髪 騎士 【ヘアー デザイン ナイト】",
+    "address": "東京都新宿区西早稲田３-２０-６　スパイラルビル１F",
+    "url": "https://maps.app.goo.gl/Fpnm1D8n6UcK9deF8",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E9%AB%AA+%E9%A8%8E%E5%A3%AB/@35.6924042,139.7002721,12z/data=!3m1!5s0x60188d32d6307449:0x3759a46c61da961!4m7!3m6!1s0x60188d17df5b138d:0xb2bdcee94864deae!8m2!3d35.711395!4d139.711595!15sCjHpq6og6aiO5aOrIOOAkOODmOOCouODvCDjg4fjgrbjgqTjg7Mg44OK44Kk44OI44CRWi0iK-mrqiDpqI7lo6sg44OY44Ki44O8IOODh-OCtuOCpOODsyDjg4rjgqTjg4iSAQtiYXJiZXJfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VONU0xQXpNeTFCUlJBQuABAPoBBAgUECU!16s%2Fg%2F1tf608lt?entry=tts&g_ep=EgoyMDI1MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=a41b8b3c-3621-4b02-b387-30aee62f373e",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "髪 騎士 hair design knight",
+      "address": "東京都新宿区西早稲田３丁目２０−６ スパイラル ビル 1F",
+      "url": "https://www.google.com/maps/place/%E9%AB%AA+%E9%A8%8E%E5%A3%AB/@35.6924042,139.7002721,12z/data=!3m1!5s0x60188d32d6307449:0x3759a46c61da961!4m7!3m6!1s0x60188d17df5b138d:0xb2bdcee94864deae!8m2!3d35.711395!4d139.711595!15sCjHpq6og6aiO5aOrIOOAkOODmOOCouODvCDjg4fjgrbjgqTjg7Mg44OK44Kk44OI44CRWi0iK-mrqiDpqI7lo6sg44OY44Ki44O8IOODh-OCtuOCpOODsyDjg4rjgqTjg4iSAQtiYXJiZXJfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VONU0xQXpNeTFCUlJBQuABAPoBBAgUECU!16s%2Fg%2F1tf608lt",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%AB%AA+%E9%A8%8E%E5%A3%AB/@35.6924042,139.7002721,12z/data=!3m1!5s0x60188d32d6307449:0x3759a46c61da961!4m7!3m6!1s0x60188d17df5b138d:0xb2bdcee94864deae!8m2!3d35.711395!4d139.711595!15sCjHpq6og6aiO5aOrIOOAkOODmOOCouODvCDjg4fjgrbjgqTjg7Mg44OK44Kk44OI44CRWi0iK-mrqiDpqI7lo6sg44OY44Ki44O8IOODh-OCtuOCpOODsyDjg4rjgqTjg4iSAQtiYXJiZXJfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VONU0xQXpNeTFCUlJBQuABAPoBBAgUECU!16s%2Fg%2F1tf608lt?entry=tts&g_ep=EgoyMDI1MTAyMC4wIPu8ASoASAFQAw%3D%3D&skid=a41b8b3c-3621-4b02-b387-30aee62f373e",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都新宿区西早稲田３-２０-６　スパイラルビル１F",
+    "place": "東京都新宿区西早稲田３丁目２０−６ スパイラル ビル 1F",
+    "sheetNorm": "東京都新宿区西早稲田3-20-6スパイラルビル1F",
+    "placeNorm": "東京都新宿区西早稲田3-20-6スパイラルビル1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "髪 騎士 hair design knight",
+    "address": "東京都新宿区西早稲田３丁目２０−６ スパイラル ビル 1F",
+    "category": "理容店",
+    "lat": 35.711395,
+    "lng": 139.711595,
+    "gbpUrl": "https://maps.google.com/?cid=12879678010686758574",
+    "phone": "03-5272-2303",
+    "website": "https://www.knight-hair.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=2167714792833362673",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "10:30–20:00",
+      "木": "10:30–20:00",
+      "金": "10:30–20:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:25:11.973Z",
+  "seconds": 3.5
+}

@@ -1,0 +1,63 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 118,
+  "sheet": {
+    "name": "アロマサンドリーズ",
+    "address": "鹿児島県熊毛郡屋久島町原８４９−５",
+    "url": "https://share.google/5hYMGkBXqKYmSg6QR",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a9b651f2ccff5662&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11s9_vmw65&q=%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%B5%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%82%BA&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=2fdbf6760355bfb5&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11s9_vmw65",
+  "queries": [
+    "アロマサンドリーズ"
+  ],
+  "candidates": [
+    {
+      "name": "アロマサンドリーズ",
+      "address": "鹿児島県熊毛郡屋久島町原８４９−５",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%B5%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%82%BA/@30.2490454,130.5831372,17z/data=!3m1!4b1!4m6!3m5!1s0x353d27920dc8eb89:0xdaea937f664a23df!8m2!3d30.2490454!4d130.5831372!16s%2Fg%2F11s9_vmw65",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%B5%E3%83%B3%E3%83%89%E3%83%AA%E3%83%BC%E3%82%BA/@30.2490454,130.5831372,17z/data=!3m1!4b1!4m6!3m5!1s0x353d27920dc8eb89:0xdaea937f664a23df!8m2!3d30.2490454!4d130.5831372!16s%2Fg%2F11s9_vmw65?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "閉業の表示あり",
+  "verdictReason": "住所は一致（町名・番地とも一致）だが、画面に「閉業」の表示",
+  "addressCompare": {
+    "sheet": "鹿児島県熊毛郡屋久島町原８４９−５",
+    "place": "鹿児島県熊毛郡屋久島町原８４９−５",
+    "sheetNorm": "鹿児島県熊毛郡屋久島町原849-5",
+    "placeNorm": "鹿児島県熊毛郡屋久島町原849-5",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "アロマサンドリーズ",
+    "address": "鹿児島県熊毛郡屋久島町原８４９−５",
+    "category": null,
+    "lat": 30.2490454,
+    "lng": 130.5831372,
+    "gbpUrl": "https://maps.google.com/?cid=15774582820204848095",
+    "phone": null,
+    "website": "http://aroma-sundries.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [
+      "閉業"
+    ],
+    "closedSignal": true,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:27:56.139Z",
+  "seconds": 12
+}

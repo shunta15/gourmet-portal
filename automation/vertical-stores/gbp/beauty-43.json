@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 43,
+  "sheet": {
+    "name": "obtenir【オプトゥニール】",
+    "address": "愛知県名古屋市天白区塩釜口１丁目　８５５番地　K-ROSS ROAD　２F",
+    "url": "https://beauty.hotpepper.jp/slnH000138801/?cstt=673",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "obtenir【オプトゥニール】 愛知県名古屋市天白区塩釜口１丁目　８５５番地　K-ROSS ROAD　２F"
+  ],
+  "candidates": [
+    {
+      "name": "obtenir",
+      "address": "愛知県名古屋市天白区塩釜口１丁目８５５ K-ROSS ROAD 2F",
+      "url": "https://www.google.com/maps/place/obtenir/@35.132468,136.977771,17z/data=!3m1!4b1!4m6!3m5!1s0x60037b2a6476682d:0xcfd3081ff8aa234e!8m2!3d35.132468!4d136.977771!16s%2Fg%2F11b7715rsx",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/obtenir/@35.132468,136.977771,17z/data=!3m1!4b1!4m6!3m5!1s0x60037b2a6476682d:0xcfd3081ff8aa234e!8m2!3d35.132468!4d136.977771!16s%2Fg%2F11b7715rsx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市天白区塩釜口１丁目　８５５番地　K-ROSS ROAD　２F",
+    "place": "愛知県名古屋市天白区塩釜口１丁目８５５ K-ROSS ROAD 2F",
+    "sheetNorm": "愛知県名古屋市天白区塩釜口1-855K-ROSSROAD2F",
+    "placeNorm": "愛知県名古屋市天白区塩釜口1-855K-ROSSROAD2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "obtenir",
+    "address": "愛知県名古屋市天白区塩釜口１丁目８５５ K-ROSS ROAD 2F",
+    "category": "美容院",
+    "lat": 35.132468,
+    "lng": 136.977771,
+    "gbpUrl": "https://maps.google.com/?cid=14975322119345939278",
+    "phone": "052-861-0130",
+    "website": "https://www.obtenir21.com/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "定休日",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://beauty.hotpepper.jp/slnH000138801/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【50代からの髪型選び】 「短くしたいけど、老けて見えるのは嫌」 そんな方におすすめしたいのが、顔まわりと襟足のバランスを考えた大人ショートです。 長さを短くするだけではなく、トップのボリュームや顔まわりの動きをつくることで、自然ですっきりした印象に。 obtenirでは、髪質や骨格を見ながら、一人ひとりに似合うスタイルをご提案します。 今の髪型がしっくりこなくなってきた方も、ぜひ一度ご相談ください。 #50代ショート #大人ショート #エフィラージュカット #小顔ヘア #大人女性ヘア #天白区美容室 #obtenir"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:12:37.441Z",
+  "seconds": 8.2
+}

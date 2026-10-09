@@ -1,0 +1,67 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 6,
+  "sheet": {
+    "name": "福岡中央整体",
+    "address": "福岡県福岡市中央区草香江２丁目８−３ 草香江スカイハイツ 201",
+    "url": "https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%AD%E5%A4%AE%E6%95%B4%E4%BD%93/@33.5798895,130.3744294,17z/data=!3m1!5s0x354193c8bbceaccf:0x63c978d545e87ffb!4m15!1m8!3m7!1s0x354193cf618f2415:0x420afc70e5ae310c!2z56aP5bKh5Lit5aSu5pW05L2T!8m2!3d33.5799931!4d130.3743752!10e5!16s%2Fg%2F1tqyc8gf!3m5!1s0x354193cf618f2415:0x420afc70e5ae310c!8m2!3d33.5799931!4d130.3743752!16s%2Fg%2F1tqyc8gf?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "福岡中央整体",
+      "address": "福岡県福岡市中央区草香江２丁目８−３ 201",
+      "url": "https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%AD%E5%A4%AE%E6%95%B4%E4%BD%93/@33.5798895,130.3744294,17z/data=!3m1!5s0x354193c8bbceaccf:0x63c978d545e87ffb!4m15!1m8!3m7!1s0x354193cf618f2415:0x420afc70e5ae310c!2z56aP5bKh5Lit5aSu5pW05L2T!8m2!3d33.5799931!4d130.3743752!10e5!16s%2Fg%2F1tqyc8gf!3m5!1s0x354193cf618f2415:0x420afc70e5ae310c!8m2!3d33.5799931!4d130.3743752!16s%2Fg%2F1tqyc8gf",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%AD%E5%A4%AE%E6%95%B4%E4%BD%93/@33.5798895,130.3744294,17z/data=!3m1!5s0x354193c8bbceaccf:0x63c978d545e87ffb!4m15!1m8!3m7!1s0x354193cf618f2415:0x420afc70e5ae310c!2z56aP5bKh5Lit5aSu5pW05L2T!8m2!3d33.5799931!4d130.3743752!10e5!16s%2Fg%2F1tqyc8gf!3m5!1s0x354193cf618f2415:0x420afc70e5ae310c!8m2!3d33.5799931!4d130.3743752!16s%2Fg%2F1tqyc8gf?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県福岡市中央区草香江２丁目８−３ 草香江スカイハイツ 201",
+    "place": "福岡県福岡市中央区草香江２丁目８−３ 201",
+    "sheetNorm": "福岡県福岡市中央区草香江2-8-3草香江スカイハイツ201",
+    "placeNorm": "福岡県福岡市中央区草香江2-8-3201",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "福岡中央整体",
+    "address": "福岡県福岡市中央区草香江２丁目８−３ 201",
+    "category": "整体",
+    "lat": 33.5799931,
+    "lng": 130.3743752,
+    "gbpUrl": "https://maps.google.com/?cid=4758893518090285324",
+    "phone": "092-771-8255",
+    "website": "http://www.fc-seitai.com/",
+    "hours": {
+      "月": "10:00–14:00",
+      "火": "10:00–20:00",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–14:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:30:42.205Z",
+  "seconds": 3.6
+}

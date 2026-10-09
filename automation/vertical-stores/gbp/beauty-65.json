@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 65,
+  "sheet": {
+    "name": "青山美容室",
+    "address": "宮城県登米市東和町米谷元町１５２",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d1b4d337ee6528a3&hl=ja&sxsrf=AE3TifO7zorEHKbHym-4B0zC-Hyafk6MXw:1760521361217&kgmid=/g/11fk3wcgjy&q=%E9%9D%92%E5%B1%B1%E7%BE%8E%E5%AE%B9%E5%AE%A4&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=006bd2ba17944c31&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11fk3wcgjy",
+  "queries": [
+    "青山美容室 宮城県登米市東和町米谷元町１５２"
+  ],
+  "candidates": [
+    {
+      "name": "青山美容室",
+      "address": "宮城県登米市東和町米谷元町１５２",
+      "url": "https://www.google.com/maps/place/%E9%9D%92%E5%B1%B1%E7%BE%8E%E5%AE%B9%E5%AE%A4/@38.708734,141.2889641,17z/data=!3m1!4b1!4m6!3m5!1s0x5f88e3dd2c5d1f4d:0xd3cd92488f7809de!8m2!3d38.708734!4d141.2889641!16s%2Fg%2F11fk3wcgjy",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%9D%92%E5%B1%B1%E7%BE%8E%E5%AE%B9%E5%AE%A4/@38.708734,141.2889641,17z/data=!3m1!4b1!4m6!3m5!1s0x5f88e3dd2c5d1f4d:0xd3cd92488f7809de!8m2!3d38.708734!4d141.2889641!16s%2Fg%2F11fk3wcgjy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "宮城県登米市東和町米谷元町１５２",
+    "place": "宮城県登米市東和町米谷元町１５２",
+    "sheetNorm": "宮城県登米市東和町米谷元町152",
+    "placeNorm": "宮城県登米市東和町米谷元町152",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "青山美容室",
+    "address": "宮城県登米市東和町米谷元町１５２",
+    "category": "美容院",
+    "lat": 38.708734,
+    "lng": 141.2889641,
+    "gbpUrl": "https://maps.google.com/?cid=15262015552570788318",
+    "phone": "0220-23-8947",
+    "website": "https://www.instagram.com/aoyamabiyoushitu1111/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:17:05.703Z",
+  "seconds": 5.4
+}

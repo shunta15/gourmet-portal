@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 122,
+  "sheet": {
+    "name": "Ｂｅｌｉｎｄａ【ベリンダ】",
+    "address": "大阪府大阪市中央区上汐１－３－１０ベルツ上汐3F",
+    "url": "https://www.google.com/search?q=%EF%BC%A2%EF%BD%85%EF%BD%8C%EF%BD%89%EF%BD%8E%EF%BD%84%EF%BD%81%E3%80%90%E3%83%99%E3%83%AA%E3%83%B3%E3%83%80%E3%80%91%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E6%B1%90%EF%BC%91%EF%BC%8D%EF%BC%93%EF%BC%8D%EF%BC%91%EF%BC%90%E3%83%99%E3%83%AB%E3%83%84%E4%B8%8A%E6%B1%903F",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Ｂｅｌｉｎｄａ【ベリンダ】 大阪府大阪市中央区上汐１－３－１０ベルツ上汐3F"
+  ],
+  "candidates": [
+    {
+      "name": "プライベートヘアサロン Belinda～ベリンダ～ 上本町/谷町九丁目",
+      "address": "大阪府大阪市中央区上汐１丁目３−１０ ベルツ上汐 3F",
+      "url": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3+Belinda%EF%BD%9E%E3%83%99%E3%83%AA%E3%83%B3%E3%83%80%EF%BD%9E+%E4%B8%8A%E6%9C%AC%E7%94%BA%2F%E8%B0%B7%E7%94%BA%E4%B9%9D%E4%B8%81%E7%9B%AE/@34.6694925,135.5178136,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e7dc5b1b7d73:0x93315ecb83bfae68!8m2!3d34.6694925!4d135.5178136!16s%2Fg%2F11ftmkk7c_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3+Belinda%EF%BD%9E%E3%83%99%E3%83%AA%E3%83%B3%E3%83%80%EF%BD%9E+%E4%B8%8A%E6%9C%AC%E7%94%BA%2F%E8%B0%B7%E7%94%BA%E4%B9%9D%E4%B8%81%E7%9B%AE/@34.6694925,135.5178136,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e7dc5b1b7d73:0x93315ecb83bfae68!8m2!3d34.6694925!4d135.5178136!16s%2Fg%2F11ftmkk7c_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市中央区上汐１－３－１０ベルツ上汐3F",
+    "place": "大阪府大阪市中央区上汐１丁目３−１０ ベルツ上汐 3F",
+    "sheetNorm": "大阪府大阪市中央区上汐1-3-10ベルツ上汐3F",
+    "placeNorm": "大阪府大阪市中央区上汐1-3-10ベルツ上汐3F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "プライベートヘアサロン Belinda～ベリンダ～ 上本町/谷町九丁目",
+    "address": "大阪府大阪市中央区上汐１丁目３−１０ ベルツ上汐 3F",
+    "category": "美容院",
+    "lat": 34.6694925,
+    "lng": 135.5178136,
+    "gbpUrl": "https://maps.google.com/?cid=10606362825615978088",
+    "phone": "06-6777-5558",
+    "website": "https://beauty.hotpepper.jp/slnH000479853/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "09:00–20:00",
+      "日": "09:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "プライベートヘアサロン Belinda～ベリンダ～ 上本町/谷町九丁目 女性スタイリストのみ在籍 【全席個室】こだわりの店内 ―whiteベースの上質空間で周りを気にせず綺麗に ―大阪では、珍しい完全オーガニック《rollandカラー》と《villalodola》を取り扱っているのもベリンダのこだわりの秘訣！ 本物のオーガニックを求める『オトナ女子』必見サロン！ 「Belinda （ベリンダ）」とはイタリア語で『可愛く輝く』という意味があります。関わる全ての方が年齢、性別も関係なく可愛く輝く場所でありたいと願い名付けました。 髪型はもちろん美髪、ヘアケアを大切に。 5年後10年後も可愛く輝くため、ヘルシー&ビューティを提供します。 【男性のお客様はご紹介のみとさせて頂きます】\n2026/06/01"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:28:36.898Z",
+  "seconds": 5.8
+}

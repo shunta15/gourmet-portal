@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 126,
+  "sheet": {
+    "name": "XIN-FU hair",
+    "address": "岐阜県本巣郡北方町曲路３丁目４３",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eb5b4f820ac811f1&hl=ja&sxsrf=AE3TifPr6qt9wrcl1tLLrlFLUJhWPrdCWg:1761645457696&kgmid=/g/11ggndtc9s&q=XIN-FU+hair&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=1d4260b5c4c1a6d8&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11ggndtc9s",
+  "queries": [
+    "XIN-FU hair 岐阜県本巣郡北方町曲路３丁目４３"
+  ],
+  "candidates": [
+    {
+      "name": "XIN-FU hair",
+      "address": "岐阜県本巣郡北方町曲路３丁目４３",
+      "url": "https://www.google.com/maps/place/XIN-FU+hair/@35.4308702,136.6957332,17z/data=!3m1!4b1!4m6!3m5!1s0x6003ada4958323a5:0x10215c62b9f5981c!8m2!3d35.4308702!4d136.6957332!16s%2Fg%2F11ggndtc9s",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/XIN-FU+hair/@35.4308702,136.6957332,17z/data=!3m1!4b1!4m6!3m5!1s0x6003ada4958323a5:0x10215c62b9f5981c!8m2!3d35.4308702!4d136.6957332!16s%2Fg%2F11ggndtc9s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "岐阜県本巣郡北方町曲路３丁目４３",
+    "place": "岐阜県本巣郡北方町曲路３丁目４３",
+    "sheetNorm": "岐阜県本巣郡北方町曲路3-43",
+    "placeNorm": "岐阜県本巣郡北方町曲路3-43",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "XIN-FU hair",
+    "address": "岐阜県本巣郡北方町曲路３丁目４３",
+    "category": "美容院",
+    "lat": 35.4308702,
+    "lng": 136.6957332,
+    "gbpUrl": "https://maps.google.com/?cid=1162311757934729244",
+    "phone": "058-323-2028",
+    "website": "https://line.me/ti/p/58xy0gVWKR",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ヘッドスパ半額キャンペーン\n10月8日～10月9日"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:29:18.272Z",
+  "seconds": 8.3
+}

@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 53,
+  "sheet": {
+    "name": "しもとり接骨院",
+    "address": "新潟県上越市大豆１丁目６－３６",
+    "url": "https://share.google/9ESHFhOEeyuyanAnf",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fa0d648ec49d7a9f&sxsrf=AE3TifOVX-rffAUA7FepWwc5pdjClMvdng:1759973056609&kgmid=/g/1tfmhntr&q=%E3%81%97%E3%82%82%E3%81%A8%E3%82%8A%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=aa964b3b30ac7349&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tfmhntr",
+  "queries": [
+    "しもとり接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "しもとり接骨院",
+      "address": "新潟県上越市大豆１丁目６−３６",
+      "url": "https://www.google.com/maps/place/%E3%81%97%E3%82%82%E3%81%A8%E3%82%8A%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x5ff679d47a1e66b3:0xc4a236b39bab62d9!8m2!3d37.1506804!4d138.2250062!16s%2Fg%2F1tfmhntr!19sChIJs2YeetR59l8R2WKrm7M2osQ",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%97%E3%82%82%E3%81%A8%E3%82%8A%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x5ff679d47a1e66b3:0xc4a236b39bab62d9!8m2!3d37.1506804!4d138.2250062!16s%2Fg%2F1tfmhntr!19sChIJs2YeetR59l8R2WKrm7M2osQ?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "新潟県上越市大豆１丁目６－３６",
+    "place": "新潟県上越市大豆１丁目６−３６",
+    "sheetNorm": "新潟県上越市大豆1-6-36",
+    "placeNorm": "新潟県上越市大豆1-6-36",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "しもとり接骨院",
+    "address": "新潟県上越市大豆１丁目６−３６",
+    "category": "接骨院",
+    "lat": 37.1506804,
+    "lng": 138.2250062,
+    "gbpUrl": "https://maps.google.com/?cid=14168947522699748057",
+    "phone": "025-522-5220",
+    "website": "https://shimotorisekkotuin.studio.site/",
+    "hours": {
+      "月": "08:00–12:30, 14:30–19:30",
+      "火": "08:00–12:30, 14:30–19:30",
+      "水": "08:00–12:30, 14:30–19:30",
+      "木": "08:00–12:30, 14:30–19:30",
+      "金": "08:00–12:30, 14:30–19:30",
+      "土": "08:00–12:30, 14:30–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_1655125/reserve/"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://rsv.ekiten.jp/shop_1655125/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは！ 「冷え性や浮腫でお悩みの方はいませんか？」新潟県上越市にあるしもとり接骨院では、根本から体を整えることで、痛みのない日常をサポートしています。冬の寒さや日常の中で感じる冷えや浮腫、それらの症状は見えないところで体に負担をかけています。私たちの特別な「神経伝達調整治療」により、血流を改善し、体液の流れを整え、心身をリフレッシュさせましょう。 整体施術による効果的な体のメンテナンスで、冷え性や浮腫の抱える悩みを解決していきます。また、心地よい施術空間の中で、リラックスしながら施術を受けられるので、初めての方でも安心です。 ぜひ今週中にご予約をいただき、今まで感じたことのない体の軽さを実感してください。お待ちしております！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:39:57.828Z",
+  "seconds": 4.9
+}

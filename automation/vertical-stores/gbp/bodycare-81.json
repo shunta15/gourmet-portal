@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 81,
+  "sheet": {
+    "name": "LAGUNANIGUEL",
+    "address": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+    "url": "https://share.google/e5XE2QOo9OOcaXRmt",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=415e83c541284ed9&sxsrf=AE3TifO55ZD1qmjdHJ9gMQm7E86s6Ejq0A:1760667523263&kgmid=/g/11jfsf6vq3&q=%E3%82%A6%E3%82%A7%E3%83%AB%E3%83%8D%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3+LAGUNANIGUEL%EF%BC%88%E3%83%A9%E3%82%B0%E3%83%8A%E3%83%8B%E3%82%B2%E3%83%AB%EF%BC%89&shndl=30&shem=dlvs3,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dcb9f286629d167f&utm_source=dlvs3,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11jfsf6vq3",
+  "queries": [
+    "ウェルネスサロン LAGUNANIGUEL（ラグナニゲル）"
+  ],
+  "candidates": [
+    {
+      "name": "ウェルネスサロン LAGUNA NIGUEL（ラグナニゲル）",
+      "address": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+      "url": "https://www.google.com/maps/place/%E3%82%A6%E3%82%A7%E3%83%AB%E3%83%8D%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3+LAGUNA+NIGUEL%EF%BC%88%E3%83%A9%E3%82%B0%E3%83%8A%E3%83%8B%E3%82%B2%E3%83%AB%EF%BC%89/data=!4m7!3m6!1s0x60008fef124533e5:0x9bd98bebf2c7f2f5!8m2!3d34.6916389!4d135.1878224!16s%2Fg%2F11jfsf6vq3!19sChIJ5TNFEu-PAGAR9fLH8uuL2Zs",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A6%E3%82%A7%E3%83%AB%E3%83%8D%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3+LAGUNA+NIGUEL%EF%BC%88%E3%83%A9%E3%82%B0%E3%83%8A%E3%83%8B%E3%82%B2%E3%83%AB%EF%BC%89/data=!4m7!3m6!1s0x60008fef124533e5:0x9bd98bebf2c7f2f5!8m2!3d34.6916389!4d135.1878224!16s%2Fg%2F11jfsf6vq3!19sChIJ5TNFEu-PAGAR9fLH8uuL2Zs?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+    "place": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+    "sheetNorm": "兵庫県神戸市中央区北長狭通3-7-71F・B1Fナカニシビル",
+    "placeNorm": "兵庫県神戸市中央区北長狭通3-7-71F・B1Fナカニシビル",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ウェルネスサロン LAGUNA NIGUEL（ラグナニゲル）",
+    "address": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+    "category": "エステティック サロン",
+    "lat": 34.6916389,
+    "lng": 135.1878224,
+    "gbpUrl": "https://maps.google.com/?cid=11230160991331807989",
+    "phone": "078-599-9609",
+    "website": "https://lagunaniguel.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ゴルフコンディショニング ゴルフパフォーマンス ゴルフスイング 腰痛改善 柔軟性アップ 生涯ゴルフ NABOSO 伊藤超短波 リアラインコア ※時差投稿 📷 INSTAGRAM @lagunaniguelkobe ⁡ 🏃‍♂️GYM& CURE&MAINTENANCE💆‍♀️ @laguna_nakka ⁡ 🧖🏻‍♀️ SPA @laguna_atsumi @laguna__spa ⁡ ⛳GOLF&ATHLETE @winners_lab__0901 𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠𓇠 𖤣𖥧𖥣𖡡𖥧𖤣神戸初 ウェルネスサロン𖤣𖥧𖥣𖡡𖥧𖤣 【 LAGUNA NIGUEL KOBE 】 〒650-0012 兵庫県神戸市中央区北長狭通3-7-7中西ビル１階/地下１階 ⁡ OPEN 10:00〜20:00 CLOSE MONDAY,SUNDAY TEL MAIL lagunniguel@outlook.jp URL 兵庫県神戸市中央区でウェルネスサロンなら、JR神戸線・阪神 元町駅東口から徒歩2分のLAGUNA NIGUEL(ラグナニゲル)へお越しください。 美と健康を同時に追求できる、スパ・ジム・整体の3つのエリアを複合した神戸初のウェルネスサロンです。SPA（スパ）エリアでは痩身エステ、脱毛、フェイシャルエステ、オイルトリートメン"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:44:50.579Z",
+  "seconds": 7
+}

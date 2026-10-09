@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 37,
+  "sheet": {
+    "name": "たはら鍼灸接骨院",
+    "address": "福島県福島市渡利岩崎町６３−１",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=89fc9c58379db198&hl=ja&sxsrf=AE3TifPkIBrN36Y_oHVzFHO3lNz9Lmajqg:1759138221631&kgmid=/g/11m6m3bsqy&q=%E3%81%9F%E3%81%AF%E3%82%89%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=f5d8fb1d788c81d8&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11m6m3bsqy",
+  "queries": [
+    "たはら鍼灸接骨院 福島県福島市渡利岩崎町６３−１"
+  ],
+  "candidates": [
+    {
+      "name": "たはら鍼灸接骨院",
+      "address": "福島県福島市渡利岩崎町６３−１",
+      "url": "https://www.google.com/maps/place/%E3%81%9F%E3%81%AF%E3%82%89%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@37.7505694,140.4819074,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a85bba89090dd:0xb84509c5b0c96e86!8m2!3d37.7505694!4d140.4819074!16s%2Fg%2F11m6m3bsqy",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%9F%E3%81%AF%E3%82%89%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@37.7505694,140.4819074,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a85bba89090dd:0xb84509c5b0c96e86!8m2!3d37.7505694!4d140.4819074!16s%2Fg%2F11m6m3bsqy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福島県福島市渡利岩崎町６３−１",
+    "place": "福島県福島市渡利岩崎町６３−１",
+    "sheetNorm": "福島県福島市渡利岩崎町63-1",
+    "placeNorm": "福島県福島市渡利岩崎町63-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "たはら鍼灸接骨院",
+    "address": "福島県福島市渡利岩崎町６３−１",
+    "category": "接骨院",
+    "lat": 37.7505694,
+    "lng": 140.4819074,
+    "gbpUrl": "https://maps.google.com/?cid=13278029821050973830",
+    "phone": "024-573-6962",
+    "website": "https://www.gurutto-fukushima.com/detail/2044/index.html",
+    "hours": {
+      "月": "09:00–12:00, 15:00–20:00",
+      "火": "09:00–12:00, 15:00–20:00",
+      "水": "09:00–12:00, 15:00–20:00",
+      "木": "09:00–12:00, 15:00–20:00",
+      "金": "09:00–12:00, 15:00–20:00",
+      "土": "09:00–12:00, 14:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:35:48.881Z",
+  "seconds": 5.5
+}

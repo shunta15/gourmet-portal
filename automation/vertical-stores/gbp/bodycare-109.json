@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 109,
+  "sheet": {
+    "name": "けんじ整骨院",
+    "address": "神奈川県川崎市中原区下小田中２丁目４－２６",
+    "url": "https://share.google/D3qeRQthE3rZGKTeT",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3c78addd28f7a980&rlz=1C1TMBY_jaJP1161JP1169&sxsrf=AE3TifNOYDuKsoj3QhyvAVXAuvAcx5K4OQ:1761616501921&kgmid=/g/11g8vq8cnm&q=%E3%81%91%E3%82%93%E3%81%98%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4fcd6fe7bd68dc7c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11g8vq8cnm",
+  "queries": [
+    "けんじ整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "けんじ整骨院",
+      "address": "神奈川県川崎市中原区下小田中２丁目４−２６",
+      "url": "https://www.google.com/maps/place/%E3%81%91%E3%82%93%E3%81%98%E6%95%B4%E9%AA%A8%E9%99%A2/@35.5798908,139.6408938,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f598108cefa3:0x262a1e93cb38151c!8m2!3d35.5798908!4d139.6408938!16s%2Fg%2F11g8vq8cnm",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%91%E3%82%93%E3%81%98%E6%95%B4%E9%AA%A8%E9%99%A2/@35.5798908,139.6408938,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f598108cefa3:0x262a1e93cb38151c!8m2!3d35.5798908!4d139.6408938!16s%2Fg%2F11g8vq8cnm?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県川崎市中原区下小田中２丁目４－２６",
+    "place": "神奈川県川崎市中原区下小田中２丁目４−２６",
+    "sheetNorm": "神奈川県川崎市中原区下小田中2-4-26",
+    "placeNorm": "神奈川県川崎市中原区下小田中2-4-26",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "けんじ整骨院",
+    "address": "神奈川県川崎市中原区下小田中２丁目４−２６",
+    "category": "接骨院",
+    "lat": 35.5798908,
+    "lng": 139.6408938,
+    "gbpUrl": "https://maps.google.com/?cid=2750044142581585180",
+    "phone": "044-387-2622",
+    "website": "http://www.kenjiseikotuin.com/",
+    "hours": {
+      "月": "09:00–19:30",
+      "火": "09:00–19:30",
+      "水": "09:00–19:30",
+      "木": "定休日",
+      "金": "09:00–19:30",
+      "土": "09:00–16:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:49:48.064Z",
+  "seconds": 5.8
+}

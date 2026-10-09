@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 5,
+  "sheet": {
+    "name": "ESPERANZA NAIL エスペランサネイル",
+    "address": "東京都足立区本木南町１３−１",
+    "url": "https://share.google/80iJfJRjdD5mcJ3ER",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=71dabbe3f75c4242&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifMPqeOijF0WMfI83IaDlO0sRvZnHQ:1757643978787&kgmid=/g/11w3zd0r89&q=ESPERANZA+NAIL+%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%8D%E3%82%A4%E3%83%AB&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5cd9fe8dd1c5a1ae&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11w3zd0r89",
+  "queries": [
+    "ESPERANZA NAIL エスペランサネイル"
+  ],
+  "candidates": [
+    {
+      "name": "エスペランサネイル",
+      "address": "東京都足立区本木南町１３−１",
+      "url": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%8D%E3%82%A4%E3%83%AB/@35.7620527,139.7835674,17z/data=!3m1!4b1!4m6!3m5!1s0x60188fe5dce4be9f:0x50feadf9033adcb3!8m2!3d35.7620527!4d139.7835674!16s%2Fg%2F11w3zd0r89",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%8D%E3%82%A4%E3%83%AB/@35.7620527,139.7835674,17z/data=!3m1!4b1!4m6!3m5!1s0x60188fe5dce4be9f:0x50feadf9033adcb3!8m2!3d35.7620527!4d139.7835674!16s%2Fg%2F11w3zd0r89?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都足立区本木南町１３−１",
+    "place": "東京都足立区本木南町１３−１",
+    "sheetNorm": "東京都足立区本木南町13-1",
+    "placeNorm": "東京都足立区本木南町13-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "エスペランサネイル",
+    "address": "東京都足立区本木南町１３−１",
+    "category": "ネイルサロン",
+    "lat": 35.7620527,
+    "lng": 139.7835674,
+    "gbpUrl": "https://maps.google.com/?cid=5836293452131392691",
+    "phone": "070-5553-3501",
+    "website": "https://esperanzanail.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:04:49.924Z",
+  "seconds": 8.9
+}

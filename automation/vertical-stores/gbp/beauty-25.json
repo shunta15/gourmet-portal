@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 25,
+  "sheet": {
+    "name": "Ada beauty place",
+    "address": "埼玉県入間市仏子１４９５−４３",
+    "url": "https://share.google/oqzpre0GGJJNwoAxT",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9f3016a5a8de59d9&rlz=1C1QABZ_jaJP873JP873&sxsrf=AE3TifNDhw2xFsUEapWuCOfg9xWt1NWNSg:1758789456536&kgmid=/g/1w0j469s&q=Ada+beauty+place&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7a3f8aebbe54247a&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1w0j469s",
+  "queries": [
+    "Ada beauty place"
+  ],
+  "candidates": [
+    {
+      "name": "Ada beauty place",
+      "address": "埼玉県入間市仏子１４９５−４３",
+      "url": "https://www.google.com/maps/place/Ada+beauty+place/@35.8395206,139.357766,17z/data=!3m1!4b1!4m6!3m5!1s0x6018d8c657aea61b:0x90c98da7b249e83c!8m2!3d35.8395206!4d139.357766!16s%2Fg%2F1w0j469s",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Ada+beauty+place/@35.8395206,139.357766,17z/data=!3m1!4b1!4m6!3m5!1s0x6018d8c657aea61b:0x90c98da7b249e83c!8m2!3d35.8395206!4d139.357766!16s%2Fg%2F1w0j469s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県入間市仏子１４９５−４３",
+    "place": "埼玉県入間市仏子１４９５−４３",
+    "sheetNorm": "埼玉県入間市仏子1495-43",
+    "placeNorm": "埼玉県入間市仏子1495-43",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Ada beauty place",
+    "address": "埼玉県入間市仏子１４９５−４３",
+    "category": "エステティック サロン",
+    "lat": 35.8395206,
+    "lng": 139.357766,
+    "gbpUrl": "https://maps.google.com/?cid=10433025763170707516",
+    "phone": "04-2932-5860",
+    "website": "https://ada-b-p.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "11:00–17:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://ada-beauty.stores.jp/reserve/adabeautyplace/booking_pages"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【入間市】 Ada beauty place 乾燥が深まる前の秋から、自分の肌をいたわる美容時間を始めてみませんか？🍁 夏の紫外線や冷房を経て、秋になると 「肌が乾燥しやすくなった」 「ツヤやハリが物足りなく感じる」 「フェイスラインの印象が気になる」 と感じる方もいらっしゃいます。 Ada beauty placeでは、肌質改善を意識したフェイシャルケアや、リフトアップ・アンチエイジングを意識した美容ケア、ワックス脱毛などについてご相談いただけます🌿 秋は空気が少しずつ乾燥し始めるため、冬になる前にスキンケアを見直すのにもおすすめの季節です。 たるみが気になる方も、短期間で大きな変化を求めるのではなく、保湿や日々のスキンケア、生活習慣とあわせながら、自分に合ったケアを続けていくことが大切です。 ワックス脱毛も、肌を見せる夏だけのケアではありません。 秋冬のうちから定期的にお手入れを続けたい方や、ムダ毛の自己処理を見直したい方にも選択肢のひとつです。 入間市で肌質改善、リフトアップを意識したケア、アンチエイジング、たるみケア、ワックス脱毛ができるエステサロンをお探しの方は、Ada beauty placeへ。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:09:06.893Z",
+  "seconds": 5.9
+}

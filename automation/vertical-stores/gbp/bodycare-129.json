@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 129,
+  "sheet": {
+    "name": "西川接骨院 西川気功整体",
+    "address": "愛知県名古屋市港区寛政町２丁目１７",
+    "url": "https://share.google/JV3iwr9YywRTDCowD",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=de39b42295ba4a4a&rlz=1C1TMBY_jaJP1161JP1169&biw=960&bih=918&sxsrf=AE3TifMHmnFsnm3YfpUnVvXdRjbG9xoCkg:1761806834229&kgmid=/g/1wk4c_9s&q=%E8%A5%BF%E5%B7%9D%E6%8E%A5%E9%AA%A8%E9%99%A2+%E8%A5%BF%E5%B7%9D%E6%B0%97%E5%8A%9F%E6%95%B4%E4%BD%93&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=bbd146a7c21abb90&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1wk4c_9s",
+  "queries": [
+    "西川接骨院 西川気功整体"
+  ],
+  "candidates": [
+    {
+      "name": "西川接骨院 西川気功整体",
+      "address": "愛知県名古屋市港区寛政町２丁目１７",
+      "url": "https://www.google.com/maps/place/%E8%A5%BF%E5%B7%9D%E6%8E%A5%E9%AA%A8%E9%99%A2+%E8%A5%BF%E5%B7%9D%E6%B0%97%E5%8A%9F%E6%95%B4%E4%BD%93/@35.107081,136.863075,17z/data=!3m1!4b1!4m6!3m5!1s0x6003783323908973:0x701b7001121593c9!8m2!3d35.107081!4d136.863075!16s%2Fg%2F1wk4c_9s",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%A5%BF%E5%B7%9D%E6%8E%A5%E9%AA%A8%E9%99%A2+%E8%A5%BF%E5%B7%9D%E6%B0%97%E5%8A%9F%E6%95%B4%E4%BD%93/@35.107081,136.863075,17z/data=!3m1!4b1!4m6!3m5!1s0x6003783323908973:0x701b7001121593c9!8m2!3d35.107081!4d136.863075!16s%2Fg%2F1wk4c_9s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市港区寛政町２丁目１７",
+    "place": "愛知県名古屋市港区寛政町２丁目１７",
+    "sheetNorm": "愛知県名古屋市港区寛政町2-17",
+    "placeNorm": "愛知県名古屋市港区寛政町2-17",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "西川接骨院 西川気功整体",
+    "address": "愛知県名古屋市港区寛政町２丁目１７",
+    "category": "接骨院",
+    "lat": 35.107081,
+    "lng": 136.863075,
+    "gbpUrl": "https://maps.google.com/?cid=8078173506519798729",
+    "phone": "052-652-1649",
+    "website": "https://jp.ilb.net/000004565",
+    "hours": {
+      "月": "09:00–11:00, 16:30–18:00",
+      "火": "09:00–11:00, 16:30–18:00",
+      "水": "定休日",
+      "木": "09:00–11:00, 16:30–18:00",
+      "金": "09:00–11:00, 16:30–18:00",
+      "土": "09:00–11:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_2912115/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:53:17.845Z",
+  "seconds": 6.9
+}

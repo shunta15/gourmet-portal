@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 68,
+  "sheet": {
+    "name": "あおぞら整骨院・鍼灸院",
+    "address": "静岡県三島市松本３９０−１８",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4219280beb2b4f19&hl=ja&sxsrf=AE3TifMfVIikUITmP2ucD866su3A0e-0dw:1760490393130&kgmid=/g/12llffktn&q=%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=05f84a58e6462b9c&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/12llffktn",
+  "queries": [
+    "あおぞら整骨院・鍼灸院 静岡県三島市松本３９０−１８"
+  ],
+  "candidates": [
+    {
+      "name": "あおぞら整骨院・鍼灸院",
+      "address": "静岡県三島市松本３９０−１８",
+      "url": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2/@35.096456,138.914941,17z/data=!3m1!4b1!4m6!3m5!1s0x601990597bb3d3e5:0xa9efdc35553c6d2e!8m2!3d35.096456!4d138.914941!16s%2Fg%2F12llffktn",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2/@35.096456,138.914941,17z/data=!3m1!4b1!4m6!3m5!1s0x601990597bb3d3e5:0xa9efdc35553c6d2e!8m2!3d35.096456!4d138.914941!16s%2Fg%2F12llffktn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県三島市松本３９０−１８",
+    "place": "静岡県三島市松本３９０−１８",
+    "sheetNorm": "静岡県三島市松本390-18",
+    "placeNorm": "静岡県三島市松本390-18",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "あおぞら整骨院・鍼灸院",
+    "address": "静岡県三島市松本３９０−１８",
+    "category": "接骨院",
+    "lat": 35.096456,
+    "lng": 138.914941,
+    "gbpUrl": "https://maps.google.com/?cid=12245248033465068846",
+    "phone": "055-941-7762",
+    "website": "http://www.aozora-1.net/",
+    "hours": {
+      "月": "08:00–19:00",
+      "火": "定休日",
+      "水": "08:00–19:00",
+      "木": "08:00–19:00",
+      "金": "08:00–19:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:42:33.380Z",
+  "seconds": 6.1
+}

@@ -5,15 +5,18 @@
  *   タブ別 × 判定別の件数 / URLの種類 × 判定の件数 / 一致以外の行の一覧 /
  *   「一致」でも店名が完全一致でない行 / 読めた項目の埋まり具合 / 1件あたりの秒数
  *
- * 使い方: node automation/vertical-stores/report.mjs [--list automation/vertical-stores/trial30.json]
+ * 使い方: node automation/vertical-stores/report.mjs [--list automation/vertical-stores/trial30.json] [--range beauty:2-129,bodycare:2-133] [--dir <gbp のフォルダ>]
  *   --list を付けると、その一覧に載っている行だけを数える
+ *   --range を付けると、タブ（beauty/bodycare/pet/lodging）ごとの行の範囲に入る行だけを数える（例 beauty:2-129,bodycare:2-133）。書かなかったタブは数えない
+ *   --dir を付けると、別のフォルダの gbp/*.json を数える（取り直す前の控えとの比較用）
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const GBP = path.join(HERE, "gbp");
+const di = process.argv.indexOf("--dir");
+const GBP = di >= 0 ? path.resolve(process.argv[di + 1]) : path.join(HERE, "gbp");
 const TAB_EN = { ビューティ: "beauty", ボディケア: "bodycare", ペット: "pet", 宿泊施設: "lodging" };
 const VERDICTS = ["一致", "住所は一致で店名がちがう", "住所が粗く確認不十分", "不一致", "見つからない", "閉業の表示あり", "止められた", "エラー"];
 
@@ -22,11 +25,24 @@ let only = null;
 if (li >= 0) {
   only = new Set(JSON.parse(readFileSync(path.resolve(process.argv[li + 1]), "utf8")).map((x) => `${TAB_EN[x.tab]}-${x.row}`));
 }
+// --range beauty:2-129,bodycare:2-133 → [{tabEn:"beauty", a:2, b:129}, …]
+const ri = process.argv.indexOf("--range");
+let ranges = null;
+if (ri >= 0) {
+  ranges = [];
+  for (const part of process.argv[ri + 1].split(",")) {
+    const m = part.trim().match(/^(beauty|bodycare|pet|lodging):(\d+)(?:-(\d+))?$/);
+    if (!m) throw new Error(`--range の書き方が読めない: ${part}（例 beauty:2-129,bodycare:2-133）`);
+    ranges.push({ tabEn: m[1], a: Number(m[2]), b: Number(m[3] || m[2]) });
+  }
+}
+const inRange = (r) => !ranges || ranges.some((x) => x.tabEn === r.tabEn && r.row >= x.a && r.row <= x.b);
 const recs = existsSync(GBP)
   ? readdirSync(GBP)
       .filter((f) => f.endsWith(".json"))
       .filter((f) => !only || only.has(f.replace(/\.json$/, "")))
       .map((f) => JSON.parse(readFileSync(path.join(GBP, f), "utf8")))
+      .filter(inRange)
   : [];
 recs.sort((a, b) => (a.tabEn > b.tabEn ? 1 : a.tabEn < b.tabEn ? -1 : a.row - b.row));
 console.log(`保存済み: ${recs.length} 件\n`);
@@ -59,7 +75,8 @@ for (const r of non) {
 console.log("\n## 「一致」だが店名が完全一致でない行（住所が決め手。目視用）");
 const soft = recs.filter((r) => r.verdict === "一致" && r.nameRelation !== "exact");
 if (!soft.length) console.log("なし");
-for (const r of soft) console.log(`- ${r.tabEn}-${r.row} シート「${r.sheet.name}」 / マップ「${r.place?.name}」 (${r.nameRelation})`);
+for (const r of soft) console.log(`- ${r.tabEn}-${r.row} シート「${r.sheet.name}」 / マップ「${r.place?.name}」 (${r.nameRelation})${r.acceptedByOwnerCheck ? " ※発注者が確認して受け入れ（--accept）" : ""}`);
+console.log(`\n「一致」のうち、発注者が確認して受け入れた行（acceptedByOwnerCheck）: ${recs.filter((r) => r.verdict === "一致" && r.acceptedByOwnerCheck).length} 件`);
 
 const good = recs.filter((r) => r.place);
 console.log(`\n## 読めた項目の埋まり具合（店の特定ができた ${good.length} 件のうち）`);

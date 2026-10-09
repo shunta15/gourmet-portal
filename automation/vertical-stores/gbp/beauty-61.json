@@ -1,0 +1,75 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 61,
+  "sheet": {
+    "name": "boat(シェリムボート) 富山市 縮毛矯正 美容院",
+    "address": "富山県富山市秋吉１５３−１４",
+    "url": "https://share.google/ejyBtWhznHtYVtW7v",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e7eb012a39ff2160&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/1tq4qylm&q=cherim+boat(%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%A0%E3%83%9C%E3%83%BC%E3%83%88)+%E5%AF%8C%E5%B1%B1%E5%B8%82+%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3+%E7%BE%8E%E5%AE%B9%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5e7dcb1093b2ac06&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tq4qylm",
+  "queries": [
+    "cherim boat(シェリムボート) 富山市 縮毛矯正 美容院"
+  ],
+  "candidates": [
+    {
+      "name": "cherimboat - シェリムボート -",
+      "address": "富山県富山市秋吉１５３−１４",
+      "url": "https://www.google.com/maps/place/cherimboat+-+%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%A0%E3%83%9C%E3%83%BC%E3%83%88+-/@36.680026,137.248283,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff790f1aa73a227:0x3b7752587dc14336!8m2!3d36.680026!4d137.248283!16s%2Fg%2F1tq4qylm",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/cherimboat+-+%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%A0%E3%83%9C%E3%83%BC%E3%83%88+-/@36.680026,137.248283,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff790f1aa73a227:0x3b7752587dc14336!8m2!3d36.680026!4d137.248283!16s%2Fg%2F1tq4qylm?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「boat(シェリムボート) 富山市 縮毛矯正 美容院」とマップ「cherimboat - シェリムボート -」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "富山県富山市秋吉１５３−１４",
+    "place": "富山県富山市秋吉１５３−１４",
+    "sheetNorm": "富山県富山市秋吉153-14",
+    "placeNorm": "富山県富山市秋吉153-14",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "cherimboat - シェリムボート -",
+    "address": "富山県富山市秋吉１５３−１４",
+    "category": "美容院",
+    "lat": 36.680026,
+    "lng": 137.248283,
+    "gbpUrl": "https://maps.google.com/?cid=4284984110486733622",
+    "phone": "076-422-0525",
+    "website": "https://beauty.hotpepper.jp/slnH000295418/",
+    "hours": {
+      "月": "09:30–20:00",
+      "火": "09:30–20:00",
+      "水": "09:30–20:00",
+      "木": "09:30–20:00",
+      "金": "09:30–20:00",
+      "土": "09:30–20:00",
+      "日": "09:30–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:03:24.556Z",
+  "seconds": 5.6,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "boat(シェリムボート) 富山市 縮毛矯正 美容院",
+    "mapName": "cherimboat - シェリムボート -"
+  }
+}

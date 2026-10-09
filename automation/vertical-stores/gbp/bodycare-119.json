@@ -1,0 +1,54 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 119,
+  "sheet": {
+    "name": "Core Stage",
+    "address": "宮城県柴田郡柴田町船岡中央２丁目４－９ セレッソバーリオ 101",
+    "url": "https://share.google/luo98GRUkGp9gOGdJ",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e88d928ee76a2e23&rlz=1C1TMBY_jaJP1161JP1169&sxsrf=AE3TifOZTXSA6kg6INiwRFLc1mREDqXS5w:1761706212232&kgmid=/g/11x8_p52q3&q=Core+Stage&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=b8d9189424e57ad4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11x8_p52q3",
+  "queries": [
+    "Core Stage"
+  ],
+  "candidates": [
+    {
+      "name": "Core Stage",
+      "address": "宮城県亘理郡亘理町逢隈中泉東３−４",
+      "url": "https://www.google.com/maps/place/Core+Stage/data=!4m7!3m6!1s0x5f8a3f3e7e1daadf:0x89163bfdd29afb3a!8m2!3d38.0851906!4d140.8756223!16s%2Fg%2F11x8_p52q3!19sChIJ36odfj4_il8ROvua0v07Fok",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:宮城県柴田郡柴田町船岡中央 / マップ:宮城県亘理郡亘理町逢隈中泉東）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Core+Stage/data=!4m7!3m6!1s0x5f8a3f3e7e1daadf:0x89163bfdd29afb3a!8m2!3d38.0851906!4d140.8756223!16s%2Fg%2F11x8_p52q3!19sChIJ36odfj4_il8ROvua0v07Fok?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:宮城県柴田郡柴田町船岡中央 / マップ:宮城県亘理郡亘理町逢隈中泉東）（シート:宮城県柴田郡柴田町船岡中央２丁目４－９ セレッソバーリオ 101 / マップ:宮城県亘理郡亘理町逢隈中泉東３−４）／店名: シート「Core Stage」マップ「Core Stage」(exact)",
+  "addressCompare": {
+    "sheet": "宮城県柴田郡柴田町船岡中央２丁目４－９ セレッソバーリオ 101",
+    "place": "宮城県亘理郡亘理町逢隈中泉東３−４",
+    "sheetNorm": "宮城県柴田郡柴田町船岡中央2-4-9セレッソバーリオ101",
+    "placeNorm": "宮城県亘理郡亘理町逢隈中泉東3-4",
+    "level": "none",
+    "detail": "町名までがちがう（シート:宮城県柴田郡柴田町船岡中央 / マップ:宮城県亘理郡亘理町逢隈中泉東）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "Core Stage",
+    "address": "宮城県亘理郡亘理町逢隈中泉東３−４",
+    "category": "整体",
+    "lat": 38.0851906,
+    "lng": 140.8756223,
+    "gbpUrl": "https://maps.google.com/?cid=9878148794029898554"
+  },
+  "fetchedAt": "2026-10-09T01:51:28.050Z",
+  "seconds": 4.6
+}

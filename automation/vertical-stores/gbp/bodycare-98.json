@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 98,
+  "sheet": {
+    "name": "ぼんのくぼ 無痛整体院",
+    "address": "〒514-0811 三重県津市阿漕町津興１７１−２",
+    "url": "https://share.google/58pOrQTBDp1bdGD35",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?client=safari&sca_esv=415e83c541284ed9&rls=en&sxsrf=AE3TifNYQKb6m6yHdMJyuAsey1hc1NPlvw:1760597698011&kgmid=/g/11ggm_g3kj&q=%E3%81%BC%E3%82%93%E3%81%AE%E3%81%8F%E3%81%BC+%E7%84%A1%E7%97%9B%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=1922f04da5cdf41e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ggm_g3kj",
+  "queries": [
+    "ぼんのくぼ 無痛整体院"
+  ],
+  "candidates": [
+    {
+      "name": "ぼんのくぼ 無痛整体院",
+      "address": "三重県津市阿漕町津興１７１−２",
+      "url": "https://www.google.com/maps/place/%E3%81%BC%E3%82%93%E3%81%AE%E3%81%8F%E3%81%BC+%E7%84%A1%E7%97%9B%E6%95%B4%E4%BD%93%E9%99%A2/@34.7002161,136.5195884,17z/data=!3m1!4b1!4m6!3m5!1s0x600472cbb96c0ac9:0x53c1bd8b1b520514!8m2!3d34.7002161!4d136.5195884!16s%2Fg%2F11ggm_g3kj",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%BC%E3%82%93%E3%81%AE%E3%81%8F%E3%81%BC+%E7%84%A1%E7%97%9B%E6%95%B4%E4%BD%93%E9%99%A2/@34.7002161,136.5195884,17z/data=!3m1!4b1!4m6!3m5!1s0x600472cbb96c0ac9:0x53c1bd8b1b520514!8m2!3d34.7002161!4d136.5195884!16s%2Fg%2F11ggm_g3kj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒514-0811 三重県津市阿漕町津興１７１−２",
+    "place": "三重県津市阿漕町津興１７１−２",
+    "sheetNorm": "三重県津市阿漕町津興171-2",
+    "placeNorm": "三重県津市阿漕町津興171-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ぼんのくぼ 無痛整体院",
+    "address": "三重県津市阿漕町津興１７１−２",
+    "category": "整体",
+    "lat": 34.7002161,
+    "lng": 136.5195884,
+    "gbpUrl": "https://maps.google.com/?cid=6035313380809639188",
+    "phone": "059-213-9035",
+    "website": "https://www.bonnokubo.com/?utm_source=Google&utm_medium=maps",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–12:00, 15:00–19:00",
+      "水": "09:00–12:00, 15:00–19:00",
+      "木": "09:00–12:00, 15:00–19:00",
+      "金": "09:00–12:00, 15:00–19:00",
+      "土": "09:00–14:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://line.me/R/ti/p/@704azzjj"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "津市にお住まいの方で、身体の歪みから肩こりや腰のつらさ、頭痛など、さまざまな不調に悩まれていました。 お身体の状態を確認すると、日常生活での姿勢や身体の使い方のクセによって、全身のバランスが崩れている状態でした。 そこで、高齢のため無理に身体を動かしたり強く揉んだりするのではなく、身体の状態に合わせてやさしく整えていきました。 施術を重ねるにつれて、少しずつ身体のバランスが整い、「以前より身体が楽になった」「不調を気にすることが減った」と感じられるように。 長く続いていた不調も、身体全体のバランスを整えることで、日常生活をより快適に過ごせるようになっていきました。 このようなことでお困りの方は津市の整体ぼんのくぼにご相談ください\n2026/09/06"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:47:59.299Z",
+  "seconds": 6.1
+}

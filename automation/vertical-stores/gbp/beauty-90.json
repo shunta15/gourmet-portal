@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 90,
+  "sheet": {
+    "name": "エンゼル美容室",
+    "address": "埼玉県北葛飾郡松伏町松伏４７５１",
+    "url": "https://share.google/ImxPHclIQuxTAbsIr",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=c0c5f8a9bbcfecc7&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifO7P7Vc2dlOC_4OO2CdHH7201_6fQ:1759471451571&kgmid=/g/1tdbqwt1&q=%E3%82%A8%E3%83%B3%E3%82%BC%E3%83%AB%E7%BE%8E%E5%AE%B9%E5%AE%A4+/%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84/%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3/%E3%82%AB%E3%83%A9%E3%83%BC&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=3f91e9a503f6c169&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tdbqwt1",
+  "queries": [
+    "エンゼル美容室 /髪質改善/縮毛矯正/カラー"
+  ],
+  "candidates": [
+    {
+      "name": "エンゼル美容室 /髪質改善/縮毛矯正/カラー https://beauty.hotpepper.jp/doc/sp/",
+      "address": "埼玉県北葛飾郡松伏町松伏４７５１",
+      "url": "https://www.google.com/maps/place/%E3%82%A8%E3%83%B3%E3%82%BC%E3%83%AB%E7%BE%8E%E5%AE%B9%E5%AE%A4+%2F%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84%2F%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%2F%E3%82%AB%E3%83%A9%E3%83%BC+https:%2F%2Fbeauty.hotpepper.jp%2Fdoc%2Fsp%2F/@35.9316959,139.8205984,17z/data=!3m1!4b1!4m6!3m5!1s0x6018bd7c6935a901:0x5584c6d586d1961a!8m2!3d35.9316959!4d139.8205984!16s%2Fg%2F1tdbqwt1",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A8%E3%83%B3%E3%82%BC%E3%83%AB%E7%BE%8E%E5%AE%B9%E5%AE%A4+%2F%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84%2F%E7%B8%AE%E6%AF%9B%E7%9F%AF%E6%AD%A3%2F%E3%82%AB%E3%83%A9%E3%83%BC+https:%2F%2Fbeauty.hotpepper.jp%2Fdoc%2Fsp%2F/@35.9316959,139.8205984,17z/data=!3m1!4b1!4m6!3m5!1s0x6018bd7c6935a901:0x5584c6d586d1961a!8m2!3d35.9316959!4d139.8205984!16s%2Fg%2F1tdbqwt1?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "埼玉県北葛飾郡松伏町松伏４７５１",
+    "place": "埼玉県北葛飾郡松伏町松伏４７５１",
+    "sheetNorm": "埼玉県北葛飾郡松伏町松伏4751",
+    "placeNorm": "埼玉県北葛飾郡松伏町松伏4751",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "エンゼル美容室 /髪質改善/縮毛矯正/カラー https://beauty.hotpepper.jp/doc/sp/",
+    "address": "埼玉県北葛飾郡松伏町松伏４７５１",
+    "category": "美容院",
+    "lat": 35.9316959,
+    "lng": 139.8205984,
+    "gbpUrl": "https://maps.google.com/?cid=6162268810541897242",
+    "phone": "048-991-3870",
+    "website": "https://enzerubiyousitu.com/%20%20%20%20%20%20https://beauty.hotpepper.jp/doc/sp/",
+    "hours": {
+      "月": "07:00–22:00",
+      "火": "07:00–22:00",
+      "水": "07:00–22:00",
+      "木": "07:00–22:00",
+      "金": "07:00–23:00",
+      "土": "07:00–21:00",
+      "日": "07:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "華やかで上品なヘアセット 🌸 結婚式やお呼ばれ、特別な日のヘアセットにおすすめのスタイルです✨ 編み込みとまとめ髪を組み合わせ、後ろ姿も可愛く華やかに仕上げました。 エンゼル美容室では、イベントや結婚式などのお出かけに合わせたヘアセットも承っております♪ @enzeruhair　　　インスタグラム #ヘアセット #結婚式ヘア #お呼ばれヘア #編み込みアレンジ #松伏町 #エンゼル美容室 エンゼル美容室 https://beauty.hotpepper.jp/slnH000367934/?vos=cpahpbprosmaf131118002 ★ホットペッパービューティーのアプリダウンロードはこちら↓ https://beauty.hotpepper.jp/doc/sp/ ホットペッパービューティー https://beauty.hotpepper.jp/ 似合うスタイルを一緒に見つけませんか？✨ 「髪型を変えたいけど、どんなスタイルが似合うかわからない」 そんな方もお気軽にご相談ください😊 エンゼル美容室では、お客様の髪質やクセ、普段のお手入れのしやすさなどを考えながら、一人ひとりに似合うヘアスタイルをご提案しています。 カット後のまとまりや、ご自宅でのお手入れのしやすさも大切にしています✂️ 松伏町・越谷・春日部周辺で美容室をお探しの方は、ぜひエンゼル美容室へ。 「ちょっと雰"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:22:29.618Z",
+  "seconds": 6.5
+}

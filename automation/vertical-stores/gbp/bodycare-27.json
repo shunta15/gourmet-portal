@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 27,
+  "sheet": {
+    "name": "らく整骨院",
+    "address": "長崎県諫早市高来町峰４６８−８",
+    "url": "https://share.google/nb8qpTMxf0QyTIbIj",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=044a3262e10bcb9e&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifOcKkSedJ3IGTdFzuAZ2BG3RSIwCw:1758707029232&kgmid=/g/11vwvcmdll&q=%E3%82%89%E3%81%8F%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=ad500242e9408be1&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vwvcmdll",
+  "queries": [
+    "らく整骨院",
+    "らく整骨院 長崎県諫早市高来町峰４６８−８"
+  ],
+  "candidates": [
+    {
+      "name": "らく整骨院",
+      "address": "長崎県諫早市高来町峰４６８−８",
+      "url": "https://www.google.com/maps/place/%E3%82%89%E3%81%8F%E6%95%B4%E9%AA%A8%E9%99%A2/@32.8890135,130.1138741,17z/data=!3m1!4b1!4m6!3m5!1s0x35401b6cdf46cd37:0x6d735e65b4f602fe!8m2!3d32.8890135!4d130.1138741!16s%2Fg%2F11vwvcmdll",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%89%E3%81%8F%E6%95%B4%E9%AA%A8%E9%99%A2/@32.8890135,130.1138741,17z/data=!3m1!4b1!4m6!3m5!1s0x35401b6cdf46cd37:0x6d735e65b4f602fe!8m2!3d32.8890135!4d130.1138741!16s%2Fg%2F11vwvcmdll?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "長崎県諫早市高来町峰４６８−８",
+    "place": "長崎県諫早市高来町峰４６８−８",
+    "sheetNorm": "長崎県諫早市高来町峰468-8",
+    "placeNorm": "長崎県諫早市高来町峰468-8",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "らく整骨院",
+    "address": "長崎県諫早市高来町峰４６８−８",
+    "category": "接骨院",
+    "lat": 32.8890135,
+    "lng": 130.1138741,
+    "gbpUrl": "https://maps.google.com/?cid=7886751163376599806",
+    "phone": "0957-34-8566",
+    "website": "https://raku-seikotsuin.top/",
+    "hours": {
+      "月": "08:30–21:00",
+      "火": "08:30–21:00",
+      "水": "08:30–21:00",
+      "木": "08:30–21:00",
+      "金": "08:30–21:00",
+      "土": "08:30–21:00",
+      "日": "08:30–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "『秋の爽やかな風を感じながら、心も体も軽やかに整えましょう』 初秋の穏やかな夜、皆様のお身体は元気ですか？ 長崎県諫早市の【らく整骨院】です。 慢性的な肩こりや腰痛に悩んでいませんか？気持ちの良い季節は、運動や外出の機会も増える時期。体の不調を整えることで、毎日をもっと楽しむ準備をしましょう。ここでは、当院のサービスをいくつかご紹介します。 - オーダーメイド施術で、根本からの改善を目指します - ヘッドスパで心地よいリラックスを体験できます - 交通事故後の施術にも対応し、あなたの回復をサポートします 私たちの整骨院では、丁寧なヒアリングを通じて、患者さん一人ひとりの状態を的確に把握し、最適な施術を提供します。仕事帰りにも通いやすい夜21時まで営業しているので、ぜひお立ち寄りください。任せて安心、幅広いメニューをご用意しています。 この秋、心も体もリフレッシュして、素敵な日々をお過ごしください。お待ちしています！ #諫早市整骨院 #らく整骨院 #肩こり解消 #腰痛改善 #交通事故治療 #オーダーメイド施術 #健康保険対応 #諫早市ヘッドスパ #スポーツ障害対応 #初秋の健康"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:34:27.959Z",
+  "seconds": 9.9
+}

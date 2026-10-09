@@ -1,0 +1,62 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 92,
+  "sheet": {
+    "name": "笛木鍼灸治療院",
+    "address": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+    "url": "https://share.google/SPvdpuAKc6MdRXCgR",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fbaa7d3b9c35fdd6&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPi91LeVGOXLaOats_ZpMQ6GgW1cA:1761036357417&kgmid=/g/11mtgvl4n_&q=%E7%AC%9B%E6%9C%A8%E9%8D%BC%E7%81%B8%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7c3cc77db8913c33&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11mtgvl4n_",
+  "queries": [
+    "笛木鍼灸治療院"
+  ],
+  "candidates": [
+    {
+      "name": "笛木鍼灸治療院",
+      "address": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+      "url": "https://www.google.com/maps/place/%E7%AC%9B%E6%9C%A8%E9%8D%BC%E7%81%B8%E6%B2%BB%E7%99%82%E9%99%A2/data=!4m7!3m6!1s0x602297cced015d55:0x7c92efd1ab3008d3!8m2!3d35.5385244!4d140.2381459!16s%2Fg%2F11mtgvl4n_!19sChIJVV0B7cyXImAR0wgwq9Hvknw",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%AC%9B%E6%9C%A8%E9%8D%BC%E7%81%B8%E6%B2%BB%E7%99%82%E9%99%A2/data=!4m7!3m6!1s0x602297cced015d55:0x7c92efd1ab3008d3!8m2!3d35.5385244!4d140.2381459!16s%2Fg%2F11mtgvl4n_!19sChIJVV0B7cyXImAR0wgwq9Hvknw?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+    "place": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+    "sheetNorm": "千葉県千葉市緑区越智町1701-104はなみずき台1街区13ブロック-4",
+    "placeNorm": "千葉県千葉市緑区越智町1701-104はなみずき台1街区13ブロック-4",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "笛木鍼灸治療院",
+    "address": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+    "category": "鍼灸院",
+    "lat": 35.5385244,
+    "lng": 140.2381459,
+    "gbpUrl": "https://maps.google.com/?cid=8976500691102075091",
+    "phone": "043-294-8965",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:46:52.186Z",
+  "seconds": 9.2,
+  "hoursRetried": false
+}

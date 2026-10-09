@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 34,
+  "sheet": {
+    "name": "大場はりきゅう接骨院",
+    "address": "愛知県日進市岩崎町南高上 149番地 2F 出原ビル",
+    "url": "https://share.google/j1RIWMRjZnzeSYoS4",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=82d77d3f03667643&sxsrf=AE3TifPGSzt4LyVibEI5b-lbQqWxB2JPqw:1759106539951&kgmid=/g/11qh1xsx8b&q=%E5%A4%A7%E5%A0%B4%E3%81%AF%E3%82%8A%E3%81%8D%E3%82%85%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=98579420e88e0989&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11qh1xsx8b",
+  "queries": [
+    "大場はりきゅう接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "大場はりきゅう接骨院",
+      "address": "愛知県日進市岩崎町南高上 149番地 出原 ビル 2F",
+      "url": "https://www.google.com/maps/place/%E5%A4%A7%E5%A0%B4%E3%81%AF%E3%82%8A%E3%81%8D%E3%82%85%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.1353853,137.0259051,17z/data=!3m1!4b1!4m6!3m5!1s0x600365462d2c0c97:0x8b512056064892b!8m2!3d35.1353853!4d137.0259051!16s%2Fg%2F11qh1xsx8b",
+      "addressLevel": "near",
+      "addressDetail": "番地一致（丁目なしの番地に枝番の差: シート149-2 / マップ149）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%A0%B4%E3%81%AF%E3%82%8A%E3%81%8D%E3%82%85%E3%81%86%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.1353853,137.0259051,17z/data=!3m1!4b1!4m6!3m5!1s0x600365462d2c0c97:0x8b512056064892b!8m2!3d35.1353853!4d137.0259051!16s%2Fg%2F11qh1xsx8b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（番地一致（丁目なしの番地に枝番の差: シート149-2 / マップ149））／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県日進市岩崎町南高上 149番地 2F 出原ビル",
+    "place": "愛知県日進市岩崎町南高上 149番地 出原 ビル 2F",
+    "sheetNorm": "愛知県日進市岩崎町南高上149-2F出原ビル",
+    "placeNorm": "愛知県日進市岩崎町南高上149出原ビル2F",
+    "level": "near",
+    "detail": "番地一致（丁目なしの番地に枝番の差: シート149-2 / マップ149）"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "大場はりきゅう接骨院",
+    "address": "愛知県日進市岩崎町南高上 149番地 出原 ビル 2F",
+    "category": "整体",
+    "lat": 35.1353853,
+    "lng": 137.0259051,
+    "gbpUrl": "https://maps.google.com/?cid=627427537389390123",
+    "phone": "0561-69-3264",
+    "website": "https://oba-sekkotsu.net/",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "定休日",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–15:00",
+      "日": "09:00–15:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "幹細胞+頭皮環境+自律神経 10ヶ月でかなり満足されていました。 副作用のない育毛整体。 抜け毛、薄毛、頭頂部や分け目が気になる方は 当院で自分の髪を育ててみませんか？\n2026/09/19"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:35:21.461Z",
+  "seconds": 8.3
+}

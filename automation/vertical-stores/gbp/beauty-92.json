@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 92,
+  "sheet": {
+    "name": "claire.nail",
+    "address": "埼玉県さいたま市見沼区大和田町１丁目１７１５－９",
+    "url": "https://www.google.co.jp/search?hl=ja&q=claire.nail%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E8%A6%8B%E6%B2%BC%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%B0%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%97%EF%BC%91%EF%BC%95%EF%BC%8D%EF%BC%99&lr=lang_ja",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "claire.nail 埼玉県さいたま市見沼区大和田町１丁目１７１５－９"
+  ],
+  "candidates": [
+    {
+      "name": "claire.nail〜パーマネントジュエリー〜",
+      "address": "埼玉県さいたま市見沼区大和田町１丁目１７１５−９ 2E",
+      "url": "https://www.google.com/maps/place/claire.nail%E3%80%9C%E3%83%91%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%B3%E3%83%88%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E3%80%9C/@35.9296315,139.6540771,17z/data=!3m1!4b1!4m6!3m5!1s0x6018c16ba1549d5d:0x23107322514a3343!8m2!3d35.9296315!4d139.6540771!16s%2Fg%2F11x64ry631",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/claire.nail%E3%80%9C%E3%83%91%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%B3%E3%83%88%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E3%80%9C/@35.9296315,139.6540771,17z/data=!3m1!4b1!4m6!3m5!1s0x6018c16ba1549d5d:0x23107322514a3343!8m2!3d35.9296315!4d139.6540771!16s%2Fg%2F11x64ry631?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "埼玉県さいたま市見沼区大和田町１丁目１７１５－９",
+    "place": "埼玉県さいたま市見沼区大和田町１丁目１７１５−９ 2E",
+    "sheetNorm": "埼玉県さいたま市見沼区大和田町1-1715-9",
+    "placeNorm": "埼玉県さいたま市見沼区大和田町1-1715-92E",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "claire.nail〜パーマネントジュエリー〜",
+    "address": "埼玉県さいたま市見沼区大和田町１丁目１７１５−９ 2E",
+    "category": "ネイルサロン",
+    "lat": 35.9296315,
+    "lng": 139.6540771,
+    "gbpUrl": "https://maps.google.com/?cid=2526645982184747843",
+    "phone": "080-7795-9382",
+    "website": "https://claire2025.com/",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "11:00–21:00",
+      "木": "11:00–21:00",
+      "金": "11:00–21:00",
+      "土": "11:00–21:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000750644"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "* ⁡ ✼••┈┈┈┈┈┈┈┈┈┈┈┈••✼ . 派手すぎるネイルは苦手だけど、 手元はやわらかく綺麗に見せたい方へ。 紫陽花のような淡いカラーをまとった、 透明感たっぷりの上品ネイルです。 ナチュラルなのに、ふと手元を見るたび少し気分が上がる。 そんなやさしい雰囲気がお好きな方にもおすすめです。 ご新規様のご予約はDMまたはLINEから承っております。 . ✼••┈┈┈┈┈┈┈┈┈┈┈┈••✼ 見沼区のプライベートネイルサロンclaire.nailは、埼玉県さいたま市にあるネイルサロン。ジェルアレルギー対応の国産パフェジェルを使用し、お肌が弱い方でも安心。大和田駅から徒歩6分で通いやすく、200色以上のカラーから選べます。巻き爪ケアやパーマネントジュエリーも提供。スピーディな施術でママさんにぴったりのサロンです。見沼区でネイルをするならclaire.nailへ。\n2026/06/20"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:22:54.470Z",
+  "seconds": 8.4
+}

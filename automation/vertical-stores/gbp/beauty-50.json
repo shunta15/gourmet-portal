@@ -1,0 +1,76 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 50,
+  "sheet": {
+    "name": "メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス",
+    "address": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+    "url": "https://share.google/NdEACJrMwHxt9GJUn",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9d1da833d90f763d&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11cs23f28b&q=%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B5%E3%83%AD%E3%83%B3+%E7%94%B7%E6%80%A7%E5%B0%82%E9%96%80(%E7%BE%8E%E5%AE%B9%E5%AE%A4.%E8%84%B1%E6%AF%9B%EF%BC%89+THREE+BRANCHES+%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%B9&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=08ecc4fa82449a3e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11cs23f28b",
+  "queries": [
+    "メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス",
+    "メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス 大阪府和泉市富秋町８ ２－８－９ １Ｆ"
+  ],
+  "candidates": [
+    {
+      "name": "スカルプインク 南大阪│男性美容室│THREEBRANCHES",
+      "address": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+      "url": "https://www.google.com/maps/place/%E3%82%B9%E3%82%AB%E3%83%AB%E3%83%97%E3%82%A4%E3%83%B3%E3%82%AF+%E5%8D%97%E5%A4%A7%E9%98%AA%E2%94%82%E7%94%B7%E6%80%A7%E7%BE%8E%E5%AE%B9%E5%AE%A4%E2%94%82THREEBRANCHES/data=!4m7!3m6!1s0x6000c521bdaebc5f:0xb5d343d257acf56e!8m2!3d34.5070253!4d135.4325784!16s%2Fg%2F11cs23f28b!19sChIJX7yuvSHFAGARbvWsV9JD07U",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B9%E3%82%AB%E3%83%AB%E3%83%97%E3%82%A4%E3%83%B3%E3%82%AF+%E5%8D%97%E5%A4%A7%E9%98%AA%E2%94%82%E7%94%B7%E6%80%A7%E7%BE%8E%E5%AE%B9%E5%AE%A4%E2%94%82THREEBRANCHES/data=!4m7!3m6!1s0x6000c521bdaebc5f:0xb5d343d257acf56e!8m2!3d34.5070253!4d135.4325784!16s%2Fg%2F11cs23f28b!19sChIJX7yuvSHFAGARbvWsV9JD07U?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス」とマップ「スカルプインク 南大阪│男性美容室│THREEBRANCHES」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+    "place": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+    "sheetNorm": "大阪府和泉市富秋町82-8-91F",
+    "placeNorm": "大阪府和泉市富秋町82-8-91F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "スカルプインク 南大阪│男性美容室│THREEBRANCHES",
+    "address": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+    "category": "美容院",
+    "lat": 34.5070253,
+    "lng": 135.4325784,
+    "gbpUrl": "https://maps.google.com/?cid=13101890311644050798",
+    "phone": "0725-46-3334",
+    "website": "http://threebranches34.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "16:00–22:00",
+      "水": "16:00–22:00",
+      "木": "16:00–22:00",
+      "金": "16:00–22:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "その薄毛、まずは“スカルプインク®“が自分に合うのか、から試しませんか？ 当店では、皆様に安心して試していただけますように。初回施術で定着適性を見極め、万が一合わない場合は半額返金保証いたします。 無理に続けさせることはありません。結果に自信があるから、この仕組みです。 👉まずは“あなたに合うか”を確認してください。 【初回適正診断保証（半額返金）】 初回施術後、頭皮状態や色素の定着を確認し、当店基準で継続が難しいと判断した場合、初回施術費用の半額を返金いたします。 ※以下の場合は対象外 ・当店が継続可能と判断した場合 ・お客様都合による中断など ・デザインの好みによる不満など ・アフターケア未実施など ────────────────────── ⬇️症例はコチラへ⬇️ @threebranches_oosaka_scalp_ink 髪が薄くなると、見た目だけでなく気分まで沈みがち。 でも、もう一人で悩まなくて大丈夫です。 前髪・つむじ・分け目。 どこから見られても怖くない自然な仕上がりへ。 スカルプインク®は極小ドットで濃さを再現する “最もバレにくい”頭皮タトゥー技術。 ・痛みほぼなし／麻酔不要 ・色落ちしにくい専用インク ・即日変化を実感／男女対応 産後脱毛・円形脱毛・傷跡にも対応。 ⁡ ────────────────────── ※美容師歴20数年の認定アーティストが"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:03:14.699Z",
+  "seconds": 9.5,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス",
+    "mapName": "スカルプインク 南大阪│男性美容室│THREEBRANCHES"
+  }
+}

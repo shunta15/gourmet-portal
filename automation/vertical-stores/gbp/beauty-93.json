@@ -1,0 +1,75 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 93,
+  "sheet": {
+    "name": "CHANT（チャント）",
+    "address": "三重県名張市夏見１４１０−１",
+    "url": "https://share.google/hVGeys1PU66u3UzKp",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4acce884baa46368&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/1vc81rwc&q=CHANT%EF%BC%88%E3%83%81%E3%83%A3%E3%83%B3%E3%83%88%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dc13d873847ccf35&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1vc81rwc",
+  "queries": [
+    "CHANT（チャント）",
+    "CHANT（チャント） 三重県名張市夏見１４１０−１"
+  ],
+  "candidates": [
+    {
+      "name": "CHANT（チャント）",
+      "address": "三重県名張市夏見１４１０−１",
+      "url": "https://www.google.com/maps/place/CHANT%EF%BC%88%E3%83%81%E3%83%A3%E3%83%B3%E3%83%88%EF%BC%89/@34.609319,136.109496,17z/data=!3m1!4b1!4m6!3m5!1s0x6006acf3c29dbe09:0x568af2261800b0fb!8m2!3d34.609319!4d136.109496!16s%2Fg%2F1vc81rwc",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/CHANT%EF%BC%88%E3%83%81%E3%83%A3%E3%83%B3%E3%83%88%EF%BC%89/@34.609319,136.109496,17z/data=!3m1!4b1!4m6!3m5!1s0x6006acf3c29dbe09:0x568af2261800b0fb!8m2!3d34.609319!4d136.109496!16s%2Fg%2F1vc81rwc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "三重県名張市夏見１４１０−１",
+    "place": "三重県名張市夏見１４１０−１",
+    "sheetNorm": "三重県名張市夏見1410-1",
+    "placeNorm": "三重県名張市夏見1410-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "CHANT（チャント）",
+    "address": "三重県名張市夏見１４１０−１",
+    "category": "美容院",
+    "lat": 34.609319,
+    "lng": 136.109496,
+    "gbpUrl": "https://maps.google.com/?cid=6236062879473250555",
+    "phone": "0595-62-0530",
+    "website": "http://chant-m.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s5010015921/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:23:09.382Z",
+  "seconds": 10.1
+}

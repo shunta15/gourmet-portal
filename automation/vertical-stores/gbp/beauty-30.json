@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 30,
+  "sheet": {
+    "name": "TSUKURU",
+    "address": "愛知県名古屋市名東区香流２丁目１０１６",
+    "url": "https://www.google.com/search?q=TSUKURU愛知県名古屋市名東区香流２丁目１０１６",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "TSUKURU 愛知県名古屋市名東区香流２丁目１０１６"
+  ],
+  "candidates": [
+    {
+      "name": "Hair Salon TSUKURU 美容室 名古屋名東区",
+      "address": "愛知県名古屋市名東区香流２丁目１０１６ ウエーブ・クレスト",
+      "url": "https://www.google.com/maps/place/Hair+Salon+TSUKURU+%E7%BE%8E%E5%AE%B9%E5%AE%A4+%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%90%8D%E6%9D%B1%E5%8C%BA/@35.186451,136.993993,17z/data=!3m1!4b1!4m6!3m5!1s0x60036fee6af29347:0x71bb15268714b6a1!8m2!3d35.186451!4d136.993993!16s%2Fg%2F11f53hc4h9",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Hair+Salon+TSUKURU+%E7%BE%8E%E5%AE%B9%E5%AE%A4+%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%90%8D%E6%9D%B1%E5%8C%BA/@35.186451,136.993993,17z/data=!3m1!4b1!4m6!3m5!1s0x60036fee6af29347:0x71bb15268714b6a1!8m2!3d35.186451!4d136.993993!16s%2Fg%2F11f53hc4h9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市名東区香流２丁目１０１６",
+    "place": "愛知県名古屋市名東区香流２丁目１０１６ ウエーブ・クレスト",
+    "sheetNorm": "愛知県名古屋市名東区香流2-1016",
+    "placeNorm": "愛知県名古屋市名東区香流2-1016ウエーブ・クレスト",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "Hair Salon TSUKURU 美容室 名古屋名東区",
+    "address": "愛知県名古屋市名東区香流２丁目１０１６ ウエーブ・クレスト",
+    "category": "美容院",
+    "lat": 35.186451,
+    "lng": 136.993993,
+    "gbpUrl": "https://maps.google.com/?cid=8195167202149971617",
+    "phone": "052-772-0139",
+    "website": "https://www.tsukuru215.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:30–19:30",
+      "水": "09:30–19:30",
+      "木": "09:30–19:30",
+      "金": "09:30–19:30",
+      "土": "09:30–19:30",
+      "日": "09:30–19:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "髪質改善まとまるツヤ髪ショート毛流れ暖色ブラウンアッシュ小顔 リピート率高！当店にお任せいただければどんなヘアスタイルも実現可能♪『自分史上最高のスタイル』ならお任せください！悩みを解消して理想のヘアスタイルに◎\n2026/09/24\n今すぐ電話する"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:10:08.159Z",
+  "seconds": 5.4
+}

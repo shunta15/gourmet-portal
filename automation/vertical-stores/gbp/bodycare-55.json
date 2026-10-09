@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 55,
+  "sheet": {
+    "name": "やたがい整体院",
+    "address": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+    "url": "https://share.google/1U0Iu0yqF4Sut3KwW",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=44ea4fb9ad3aef3e&sxsrf=AE3TifNujTOkFdNm4-imwucmOFnZLp5t4Q:1760054579476&kgmid=/g/11b5pl07gg&q=%E3%82%84%E3%81%9F%E3%81%8C%E3%81%84%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e0c5d30d6233f636&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b5pl07gg",
+  "queries": [
+    "やたがい整体院"
+  ],
+  "candidates": [
+    {
+      "name": "やたがい整体院",
+      "address": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+      "url": "https://www.google.com/maps/place/%E3%82%84%E3%81%9F%E3%81%8C%E3%81%84%E6%95%B4%E4%BD%93%E9%99%A2/@35.8450805,139.6723702,17z/data=!3m1!4b1!4m6!3m5!1s0x6018eac013e23693:0xd0229c84d7022d63!8m2!3d35.8450805!4d139.6723702!16s%2Fg%2F11b5pl07gg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%84%E3%81%9F%E3%81%8C%E3%81%84%E6%95%B4%E4%BD%93%E9%99%A2/@35.8450805,139.6723702,17z/data=!3m1!4b1!4m6!3m5!1s0x6018eac013e23693:0xd0229c84d7022d63!8m2!3d35.8450805!4d139.6723702!16s%2Fg%2F11b5pl07gg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+    "place": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+    "sheetNorm": "埼玉県さいたま市南区南浦和3-33-15",
+    "placeNorm": "埼玉県さいたま市南区南浦和3-33-15",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "やたがい整体院",
+    "address": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+    "category": "整体",
+    "lat": 35.8450805,
+    "lng": 139.6723702,
+    "gbpUrl": "https://maps.google.com/?cid=14997721803454033251",
+    "phone": "048-882-3915",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000295426/",
+    "hours": {
+      "月": "09:30–23:00",
+      "火": "09:30–23:00",
+      "水": "09:30–23:00",
+      "木": "定休日",
+      "金": "09:30–23:00",
+      "土": "09:30–23:00",
+      "日": "09:30–23:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:40:22.217Z",
+  "seconds": 6.7
+}

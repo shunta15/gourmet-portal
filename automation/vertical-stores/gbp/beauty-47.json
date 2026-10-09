@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 47,
+  "sheet": {
+    "name": "Ｄｏｏｒ’ｓ【ドアーズ】",
+    "address": "愛知県名古屋市中区栄２-10-3　清水ビル２Ｆ",
+    "url": "https://beauty.hotpepper.jp/slnH000374033/?cstt=480",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Ｄｏｏｒ’ｓ【ドアーズ】 愛知県名古屋市中区栄２-10-3　清水ビル２Ｆ"
+  ],
+  "candidates": [
+    {
+      "name": "ドアーズ",
+      "address": "愛知県名古屋市中区栄２丁目１０−３ 清水ビル 2F",
+      "url": "https://www.google.com/maps/place/%E3%83%89%E3%82%A2%E3%83%BC%E3%82%BA/@35.1660595,136.8982961,17z/data=!3m1!4b1!4m6!3m5!1s0x60037744e5dd2191:0x55b5674485f09674!8m2!3d35.1660595!4d136.8982961!16s%2Fg%2F11h0bbtbkq",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%89%E3%82%A2%E3%83%BC%E3%82%BA/@35.1660595,136.8982961,17z/data=!3m1!4b1!4m6!3m5!1s0x60037744e5dd2191:0x55b5674485f09674!8m2!3d35.1660595!4d136.8982961!16s%2Fg%2F11h0bbtbkq?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市中区栄２-10-3　清水ビル２Ｆ",
+    "place": "愛知県名古屋市中区栄２丁目１０−３ 清水ビル 2F",
+    "sheetNorm": "愛知県名古屋市中区栄2-10-3清水ビル2F",
+    "placeNorm": "愛知県名古屋市中区栄2-10-3清水ビル2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ドアーズ",
+    "address": "愛知県名古屋市中区栄２丁目１０−３ 清水ビル 2F",
+    "category": "美容院",
+    "lat": 35.1660595,
+    "lng": 136.8982961,
+    "gbpUrl": "https://maps.google.com/?cid=6175956008011077236",
+    "phone": "052-223-2550",
+    "website": "https://hairbook.jp/salons/5720/?utm_source=google&utm_medium=mybusiness&utm_campaign=website",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "11:00–21:00",
+      "木": "11:00–21:00",
+      "金": "11:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://hairbook.jp/salons/5720/?utm_source=google&utm_medium=mybusiness&utm_campaign=reserve"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:12:59.169Z",
+  "seconds": 5.5
+}

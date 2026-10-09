@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 53,
+  "sheet": {
+    "name": "DEAN 名駅店【ディーン】",
+    "address": "愛知県名古屋市中村区名駅南４丁目1－7　 カーサプラスアルファ名駅南1F",
+    "url": "https://beauty.hotpepper.jp/slnH000503243/",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "DEAN 名駅店【ディーン】 愛知県名古屋市中村区名駅南４丁目1－7　 カーサプラスアルファ名駅南1F"
+  ],
+  "candidates": [
+    {
+      "name": "DEAN ISLA【ディーンアイラ】（旧：DEAN名駅店）",
+      "address": "愛知県名古屋市中村区名駅南４丁目１−７ カーサプラスアルファ名駅南 1F",
+      "url": "https://www.google.com/maps/place/DEAN+ISLA%E3%80%90%E3%83%87%E3%82%A3%E3%83%BC%E3%83%B3%E3%82%A2%E3%82%A4%E3%83%A9%E3%80%91%EF%BC%88%E6%97%A7%EF%BC%9ADEAN%E5%90%8D%E9%A7%85%E5%BA%97%EF%BC%89/@35.1638018,136.8873246,17z/data=!3m1!4b1!4m6!3m5!1s0x600377568bc48649:0xb66025348b04a21b!8m2!3d35.1638018!4d136.8873246!16s%2Fg%2F11lgkk6rwj",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/DEAN+ISLA%E3%80%90%E3%83%87%E3%82%A3%E3%83%BC%E3%83%B3%E3%82%A2%E3%82%A4%E3%83%A9%E3%80%91%EF%BC%88%E6%97%A7%EF%BC%9ADEAN%E5%90%8D%E9%A7%85%E5%BA%97%EF%BC%89/@35.1638018,136.8873246,17z/data=!3m1!4b1!4m6!3m5!1s0x600377568bc48649:0xb66025348b04a21b!8m2!3d35.1638018!4d136.8873246!16s%2Fg%2F11lgkk6rwj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市中村区名駅南４丁目1－7　 カーサプラスアルファ名駅南1F",
+    "place": "愛知県名古屋市中村区名駅南４丁目１−７ カーサプラスアルファ名駅南 1F",
+    "sheetNorm": "愛知県名古屋市中村区名駅南4-1-7カーサプラスアルファ名駅南1F",
+    "placeNorm": "愛知県名古屋市中村区名駅南4-1-7カーサプラスアルファ名駅南1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "DEAN ISLA【ディーンアイラ】（旧：DEAN名駅店）",
+    "address": "愛知県名古屋市中村区名駅南４丁目１−７ カーサプラスアルファ名駅南 1F",
+    "category": "美容院",
+    "lat": 35.1638018,
+    "lng": 136.8873246,
+    "gbpUrl": "https://maps.google.com/?cid=13141544620267971099",
+    "phone": "052-526-8861",
+    "website": "https://hairbook.jp/salons/42280/",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://rwg.kanzashi.com/l/4I318b6xiT/hair?merchant_id=hair-6326"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://hairbook.jp/salons/42280/?utm_source=google&utm_medium=mybusiness&utm_campaign=reserve"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "当日予約OK!! 海外風ハイライトカラーの紹介です！ 【ハイライトカラーとは】 影と光を混ぜることにより外国人のような立体感と抜け感が出るカラーになります！お客様のお好みで光の量を増やして、全体的に明るくすることもできますし、影の量を増やして、全体的に落ち着いた雰囲気にすることも◎ DEAN ISLA 〈住所〉 愛知県名古屋中村区名駅南4丁目1-7 casa+α 名駅南 1F 〈名駅ナナちゃん人形より徒歩7分〉 〈営業時間〉 火曜日～金曜日 11時～20時（カット最終受付 19時） 土曜日～日曜日10～19時（カット最終受付 18時） 〈定休日 〉 月曜日 ・簡単動きの出るレイヤーカット得意* ・髪に優しいケアブリーチを扱っている* ・上品な印象のハイライトカラーが人気* ・海外風な優しいパーマが得意 ・ダメージを感じさせないカラーが綺麗に染められる* ・特別に厳選されたトリートメントを扱っている♪ ・エクステがすぐに付けられる◎ 【海外風レイヤー/ハッシュカット/ハイライトカラー/ケアブリーチ/インナーカラー/スパイラルパーマ／髪質改善トリートメント/ダブルカラー/ハイトーン/シールエクステ/エクステ/人気/学割U24】\n2026/08/27"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:14:44.522Z",
+  "seconds": 6
+}

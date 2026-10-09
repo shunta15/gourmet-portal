@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 8,
+  "sheet": {
+    "name": "sayaPadoma",
+    "address": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+    "url": "https://share.google/nTwa3ei62Gs974RD5",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=1cd912c63e8479c3&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifMAZtzqWqcJlqcH3RoPGHwwesKfHg:1757672576322&kgmid=/g/11gwm944c_&q=sayaPadoma/%E3%82%B5%E3%83%A4%E3%83%91%E3%83%89%E3%83%9E&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=71164545838ba064&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11gwm944c_",
+  "queries": [
+    "sayaPadoma/サヤパドマ"
+  ],
+  "candidates": [
+    {
+      "name": "sayaPadoma/サヤパドマ",
+      "address": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+      "url": "https://www.google.com/maps/place/sayaPadoma%2F%E3%82%B5%E3%83%A4%E3%83%91%E3%83%89%E3%83%9E/@35.3358695,139.4453851,17z/data=!3m1!4b1!4m6!3m5!1s0x60184dd54b466137:0x339b981284c486fa!8m2!3d35.3358695!4d139.4453851!16s%2Fg%2F11gwm944c_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/sayaPadoma%2F%E3%82%B5%E3%83%A4%E3%83%91%E3%83%89%E3%83%9E/@35.3358695,139.4453851,17z/data=!3m1!4b1!4m6!3m5!1s0x60184dd54b466137:0x339b981284c486fa!8m2!3d35.3358695!4d139.4453851!16s%2Fg%2F11gwm944c_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+    "place": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+    "sheetNorm": "神奈川県藤沢市辻堂2-6-11ヴィラ辻堂104",
+    "placeNorm": "神奈川県藤沢市辻堂2-6-11ヴィラ辻堂104",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "sayaPadoma/サヤパドマ",
+    "address": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+    "category": "エステティック サロン",
+    "lat": 35.3358695,
+    "lng": 139.4453851,
+    "gbpUrl": "https://maps.google.com/?cid=3718733122628781818",
+    "phone": "0466-77-5848",
+    "website": "https://www.saya-padoma.com/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "定休日",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://mitsuraku.jp/pm/online/index/y6z7s5"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "楽天ペイのお支払いについて ご覧いただきありがとうございます。当サロンでは楽天ペイの取り扱いをしないことになりました。 ご迷惑をお掛けするかもしれませんがご理解をよろしくお願いいたします。\n2026/09/07"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:05:26.380Z",
+  "seconds": 8.2
+}

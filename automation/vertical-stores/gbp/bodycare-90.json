@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 90,
+  "sheet": {
+    "name": "芯支堂匠整骨院",
+    "address": "千葉県市川市市川南１丁目２－３ 椎名ビル 102",
+    "url": "https://share.google/DeMzv8vKCtTgHGt1k",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3aa3359d46e30aa6&sxsrf=AE3TifMWyNwt0pRvsWvXGFi16jrcKNQySQ:1761019410031&kgmid=/g/11f1jxhc5b&q=%E8%8A%AF%E6%94%AF%E5%A0%82%E5%8C%A0%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=185c64425b638bed&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11f1jxhc5b",
+  "queries": [
+    "芯支堂匠整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "芯支堂匠整骨院",
+      "address": "千葉県市川市市川南１丁目２−３ 102",
+      "url": "https://www.google.com/maps/place/%E8%8A%AF%E6%94%AF%E5%A0%82%E5%8C%A0%E6%95%B4%E9%AA%A8%E9%99%A2/@35.7272927,139.9087726,17z/data=!3m1!4b1!4m6!3m5!1s0x60188693ac795143:0xdff6a8e69eab7815!8m2!3d35.7272927!4d139.9087726!16s%2Fg%2F11f1jxhc5b",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%8A%AF%E6%94%AF%E5%A0%82%E5%8C%A0%E6%95%B4%E9%AA%A8%E9%99%A2/@35.7272927,139.9087726,17z/data=!3m1!4b1!4m6!3m5!1s0x60188693ac795143:0xdff6a8e69eab7815!8m2!3d35.7272927!4d139.9087726!16s%2Fg%2F11f1jxhc5b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県市川市市川南１丁目２－３ 椎名ビル 102",
+    "place": "千葉県市川市市川南１丁目２−３ 102",
+    "sheetNorm": "千葉県市川市市川南1-2-3椎名ビル102",
+    "placeNorm": "千葉県市川市市川南1-2-3102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "芯支堂匠整骨院",
+    "address": "千葉県市川市市川南１丁目２−３ 102",
+    "category": "接骨院",
+    "lat": 35.7272927,
+    "lng": 139.9087726,
+    "gbpUrl": "https://maps.google.com/?cid=16138272023186733077",
+    "phone": "047-315-7336",
+    "website": "https://shinshidou.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–12:00, 14:00–19:00",
+      "水": "09:00–12:00, 14:00–19:00",
+      "木": "09:00–12:00, 14:00–17:00",
+      "金": "定休日",
+      "土": "09:00–12:00, 13:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:46:30.027Z",
+  "seconds": 6
+}

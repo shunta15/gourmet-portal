@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 63,
+  "sheet": {
+    "name": "Polku hair&rento(ポルクヘアアンドレント)",
+    "address": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=04a013b6530774b2&hl=ja&sxsrf=AE3TifPXBxK1k9dukGaxPwqGH2489rz9CQ:1760497324094&kgmid=/g/11sb5vhvs3&q=Polku+hair%26rento(%E3%83%9D%E3%83%AB%E3%82%AF%E3%83%98%E3%82%A2%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AC%E3%83%B3%E3%83%88)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e64d0cc7fc7931b6&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11sb5vhvs3",
+  "queries": [
+    "Polku hair&rento(ポルクヘアアンドレント) 静岡県浜松市中央区葵東２丁目２４−３９ 1F"
+  ],
+  "candidates": [
+    {
+      "name": "Polku hair&rento(ポルクヘアアンドレント)",
+      "address": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+      "url": "https://www.google.com/maps/place/Polku+hair%26rento(%E3%83%9D%E3%83%AB%E3%82%AF%E3%83%98%E3%82%A2%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AC%E3%83%B3%E3%83%88)/@34.758459,137.7213629,17z/data=!3m1!4b1!4m6!3m5!1s0x601adf2ffed76705:0x27ce647b60a6abeb!8m2!3d34.758459!4d137.7213629!16s%2Fg%2F11sb5vhvs3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Polku+hair%26rento(%E3%83%9D%E3%83%AB%E3%82%AF%E3%83%98%E3%82%A2%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AC%E3%83%B3%E3%83%88)/@34.758459,137.7213629,17z/data=!3m1!4b1!4m6!3m5!1s0x601adf2ffed76705:0x27ce647b60a6abeb!8m2!3d34.758459!4d137.7213629!16s%2Fg%2F11sb5vhvs3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+    "place": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+    "sheetNorm": "静岡県浜松市中央区葵東2-24-391F",
+    "placeNorm": "静岡県浜松市中央区葵東2-24-391F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Polku hair&rento(ポルクヘアアンドレント)",
+    "address": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+    "category": "美容院",
+    "lat": 34.758459,
+    "lng": 137.7213629,
+    "gbpUrl": "https://maps.google.com/?cid=2868340493746875371",
+    "phone": "053-488-6517",
+    "website": "https://polkuhair-rento.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "10:00–20:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://polku.v4.pos-s.net/reserve/?shop_cd=1"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "📢 2026年8月営業日のお知らせ ✂️🌿 いつも Polku hair & rento をご利用いただきありがとうございます😊 2026年8月の営業日をご案内いたします。 【定休日】 📅 毎週月曜日 （8/3・10・17・24・31） 📅 第2火曜日 （8/11・山の日） ご来店をご予定のお客様は、カレンダーをご確認のうえ、お早めのご予約がおすすめです✨ 8月も皆さまのご来店をスタッフ一同、心よりお待ちしております🌿✂️ 『公式ホームページ』 ▶︎https://www.polkuhair-rento.com/ 『Instagram』 ▶︎https://www.instagram.com/polku_ham/ 『Web予約』 ▶︎https://polku.v4.pos-s.net/reserve/ 『公式LINE』 ▶︎https://page.line.me/231nenbo ⌚️営業時間⇒9:00〜19:00 ※金曜のみ⇒10:00〜20:00 🗓️定休日⇒月曜/第2火曜 🌐予約⇒Web予約/電話/公式LINE 📍住所⇒静岡県浜松市中央区葵東2丁目24−39 1F\n2026/07/30\n今すぐ電話する"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:16:46.511Z",
+  "seconds": 6
+}

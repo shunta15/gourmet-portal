@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 70,
+  "sheet": {
+    "name": "La Felice ～脱毛とハーブ蒸しのサロン～",
+    "address": "大阪府枚方市楠葉野田１丁目 29-16-102",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=a38228b0d963ca0b&hl=ja&sxsrf=AE3TifNZAr_h85luKoWMGlSVpwZsvVbqtQ:1760664791807&kgmid=/g/11t27b0hz9&q=La+Felice+%EF%BD%9E%E8%84%B1%E6%AF%9B%E3%81%A8%E3%83%8F%E3%83%BC%E3%83%96%E8%92%B8%E3%81%97%E3%81%AE%E3%82%B5%E3%83%AD%E3%83%B3%EF%BD%9E&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3bca2f4f1f6ff034&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11t27b0hz9",
+  "queries": [
+    "La Felice ～脱毛とハーブ蒸しのサロン～ 大阪府枚方市楠葉野田１丁目 29-16-102"
+  ],
+  "candidates": [
+    {
+      "name": "La Felice ～脱毛とハーブ蒸しのサロン～",
+      "address": "大阪府枚方市楠葉野田１丁目２９ 29-16-102",
+      "url": "https://www.google.com/maps/place/La+Felice+%EF%BD%9E%E8%84%B1%E6%AF%9B%E3%81%A8%E3%83%8F%E3%83%BC%E3%83%96%E8%92%B8%E3%81%97%E3%81%AE%E3%82%B5%E3%83%AD%E3%83%B3%EF%BD%9E/@34.8663225,135.6817829,17z/data=!3m1!4b1!4m6!3m5!1s0x60011b68eba993bd:0xa928b83fe51677ce!8m2!3d34.8663225!4d135.6817829!16s%2Fg%2F11t27b0hz9",
+      "addressLevel": "near",
+      "addressDetail": "番地一致（末尾の差: シート1-29-16-102 / マップ1-29）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/La+Felice+%EF%BD%9E%E8%84%B1%E6%AF%9B%E3%81%A8%E3%83%8F%E3%83%BC%E3%83%96%E8%92%B8%E3%81%97%E3%81%AE%E3%82%B5%E3%83%AD%E3%83%B3%EF%BD%9E/@34.8663225,135.6817829,17z/data=!3m1!4b1!4m6!3m5!1s0x60011b68eba993bd:0xa928b83fe51677ce!8m2!3d34.8663225!4d135.6817829!16s%2Fg%2F11t27b0hz9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（番地一致（末尾の差: シート1-29-16-102 / マップ1-29））／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府枚方市楠葉野田１丁目 29-16-102",
+    "place": "大阪府枚方市楠葉野田１丁目２９ 29-16-102",
+    "sheetNorm": "大阪府枚方市楠葉野田1-29-16-102",
+    "placeNorm": "大阪府枚方市楠葉野田1-2929-16-102",
+    "level": "near",
+    "detail": "番地一致（末尾の差: シート1-29-16-102 / マップ1-29）"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "La Felice ～脱毛とハーブ蒸しのサロン～",
+    "address": "大阪府枚方市楠葉野田１丁目２９ 29-16-102",
+    "category": "エステティック サロン",
+    "lat": 34.8663225,
+    "lng": 135.6817829,
+    "gbpUrl": "https://maps.google.com/?cid=12189194976044152782",
+    "phone": "072-807-8703",
+    "website": "https://lafelice.jp/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://lafelice.jp/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🍂秋こそ、夏の肌疲れをリセット✨ 10月の美肌ケアはBBL光フェイシャルがおすすめ♪ こんにちは♪ 枚方市くずはのトータルビューティーサロン **La Felice（ラ・フェリーチェ）**です🌿 10月に入り、少しずつ秋らしい空気になってきましたね🍂 夏の強い紫外線や汗、皮脂などで負担がかかったお肌は、秋になると ✔️ なんとなくくすんで見える ✔️ 肌のハリが気になる ✔️ シミ・そばかすが気になる ✔️ お肌の調子が安定しない ✔️ 乾燥しやすくなってきた など、夏の肌疲れを感じやすくなります💦 そんな今の時期におすすめなのが、 「BBL光フェイシャル」✨ BBLとは「ブロード・バンド・ライト」のことで、 お肌のお悩みに合わせて光を使ってケアしていく人気のフェイシャルメニューです💎 夏のダメージをそのままにせず、 秋からしっかりお肌を整えて、これからの乾燥シーズンに備えませんか？😊 💎ハイドロジェリーマスク付き♪ BBL光フェイシャル 通常 ¥12,300 ▶︎ 初回お試し ¥6,500✨ 施術後はハイドロジェリーマスクでお肌をやさしくケア♪ さらに現在、秋のキャンペーンも実施中🎃🍂 【BBL光フェイシャルコースご契約の方】には プレストパウダー（5,000円相当）をプレゼント🎁 お肌は季節によって状態も変わります。 La Feliceでは、お一人おひとりの"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:18:10.458Z",
+  "seconds": 5.8
+}
