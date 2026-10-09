@@ -2,6 +2,46 @@
   "_note": "種類・都道府県・cid を決められず除外した店（gbp の「一致」の全店を点検した結果）。推測で振り分けない。build-places.mjs が毎回作り直す。",
   "items": [
     {
+      "key": "beauty-99",
+      "vertical": "beauty",
+      "name": "Sweet",
+      "sheetName": "Sweet",
+      "address": "大阪府高石市綾園１丁目１−２１",
+      "reason": "シートの詳細は「ネイル・マツエク」だが、Google マップの業種表示「エステティック サロン」に ネイル／まつ／アイラッシュ／眉 が無く、決められない"
+    },
+    {
+      "key": "bodycare-19",
+      "vertical": "bodycare",
+      "name": "なかやま整骨院",
+      "sheetName": "なかやま整骨院",
+      "address": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+      "reason": "Google マップの業種表示「スポーツ整形外科」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない"
+    },
+    {
+      "key": "bodycare-30",
+      "vertical": "bodycare",
+      "name": "Personal Kick Studio N",
+      "sheetName": "Personal Kick Studio N",
+      "address": "東京都千代田区麹町３丁目3番地8 麹町プリンス通りビル 6F&7F",
+      "reason": "Google マップの業種表示「キックボクシング教室」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない"
+    },
+    {
+      "key": "bodycare-44",
+      "vertical": "bodycare",
+      "name": "niini CELLULAM",
+      "sheetName": "niini CELLULAM",
+      "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+      "reason": "Google マップの業種表示「エステティック サロン」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない"
+    },
+    {
+      "key": "bodycare-62",
+      "vertical": "bodycare",
+      "name": "白光治療院",
+      "sheetName": "白光治療院",
+      "address": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+      "reason": "Google マップの業種表示「クリニック・医院・診療所」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない"
+    },
+    {
       "key": "bodycare-116",
       "vertical": "bodycare",
       "name": "リラクゼーションサロン・さくら",

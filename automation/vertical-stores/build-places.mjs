@@ -6,7 +6,7 @@
  * サイトが読む店データ lib/places/generated/{beauty,bodycare}.json を作る。型は lib/places/types.ts の Place。
  * 出力は自動生成。手で編集しない（直すなら gbp / articles / このスクリプトを直して作り直す）。
  *
- * 既定: pilot.json にあるキーの店で、記事（articles/<キー>.json）がある店だけを出す。
+ * 既定: pilot.json にあるキーの店と、特集記事（features/<キー>.json）がある店のうち、紹介記事（articles/<キー>.json）か特集記事がある店だけを出す。
  * --all : 「一致」の全店を出す（記事が無い店は基本情報だけのページになる）。
  * --rows : 対象の行の範囲を絞る（例: --rows beauty:2-129,bodycare:2-133。オーナーが指定した範囲）。
  *          書き方は <beauty|bodycare>:<開始行>-<終了行>（1 行だけなら <業種>:<行>）。範囲の外の店は、出さない・ID も払い出さない・
@@ -49,6 +49,8 @@ const DRY = flag("dry");
 const GBP_DIR = path.join(HERE, "gbp");
 const PILOT_FILE = opt("pilot", path.join(HERE, "pilot.json"));
 const ARTICLES_DIR = opt("articles", path.join(HERE, "articles"));
+// 特集記事（features/<キー>.json）がある店は、紹介記事が無くても店ページを出す（特集ページと相互リンクするため）
+const FEATURES_DIR = opt("features", path.join(HERE, "features"));
 const IDS_FILE = opt("ids", path.join(HERE, "ids.json"));
 const OUT_DIR = opt("out", path.join(REPO, "lib/places/generated"));
 const UNMAPPED_FILE = opt("unmapped", path.join(HERE, "unmapped.json"));
@@ -433,7 +435,10 @@ if (ALL) {
     console.error(`pilot.json がありません: ${PILOT_FILE}`);
     process.exit(1);
   }
-  wanted = readJson(PILOT_FILE).filter((k) => {
+  const featureKeys = existsSync(FEATURES_DIR)
+    ? readdirSync(FEATURES_DIR).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5))
+    : [];
+  wanted = [...new Set([...readJson(PILOT_FILE), ...featureKeys])].filter((k) => {
     if (!gbp.has(k)) {
       warn(k, outOfRows.has(k) ? "pilot.json にあるが、--rows の範囲の外なので出さない" : "pilot.json にあるが、gbp に「一致」の店として無い");
       return false;
@@ -453,8 +458,9 @@ for (const key of wanted) {
   const r = resolved.get(key);
   const articleFile = path.join(ARTICLES_DIR, `${key}.json`);
   const hasArticle = existsSync(articleFile);
-  if (!ALL && !hasArticle) {
-    warn(key, "記事がまだ無いので出しません（既定は記事がある店だけ）");
+  const hasFeature = existsSync(path.join(FEATURES_DIR, `${key}.json`));
+  if (!ALL && !hasArticle && !hasFeature) {
+    warn(key, "記事がまだ無いので出しません（既定は紹介記事か特集記事がある店だけ）");
     continue;
   }
   const v = VERTICALS[r.vertical];
