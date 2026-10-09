@@ -10,7 +10,7 @@
   position:absolute;inset:-3%;background-size:cover;background-position:50% 42%;
   transform:scale(calc(1.02 + var(--prog) * .18));
   /* 奥の写真は、見出しが主役になるよう、暗めに・わずかにぼかす（動かす値は --prog の拡大だけ。明るさは固定） */
-  filter:blur(2.2px) brightness(calc(.40 + var(--lamp) * .05)) saturate(.80) sepia(.24);
+  filter:blur(2.2px) brightness(calc(.36 + var(--open) * .14 + var(--lamp) * .05)) saturate(.84) sepia(.22);
   will-change:transform;
 }
 .vR-shade{position:absolute;inset:0;background:
@@ -19,16 +19,19 @@
   linear-gradient(180deg,rgba(15,12,10,.75) 0%,rgba(15,12,10,0) 22%,rgba(15,12,10,0) 48%,rgba(15,12,10,.88) 82%,rgba(15,12,10,.98) 100%)}
 .vR-glow{position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none;
   background:radial-gradient(ellipse 38% 58% at 50% 60%,rgba(240,196,140,calc(.06 + var(--lamp) * .12)),rgba(200,54,29,calc(.03 + var(--lamp) * .04)) 55%,transparent 75%)}
-/* 見出しの後ろの暗がり（暖簾が上がりきってから、写真を落として字を主役にする。下のページのこげ茶へ溶ける） */
-.vR-hlshade{position:absolute;left:50%;top:60%;width:min(52vw,720px);height:96%;transform:translate(-50%,-50%);pointer-events:none;
-  background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(12,9,7,.80) 0%,rgba(12,9,7,.62) 42%,rgba(12,9,7,0) 100%);
-  opacity:clamp(0,calc((var(--open) - .62) * 5),1)}
-/* 見出し：暖簾が上がりきってから出る。位置は、上がった帯の下・垂れ幕の込み入った所を避けて少し下げる */
-.vR-hero .vN-headline{top:61.5%;z-index:2}
-.vR-hero .vN-h1{font-size:clamp(50px,11.6vh,132px);text-shadow:0 2px 26px rgba(0,0,0,.78),0 0 3px rgba(0,0,0,.45)}
-.vR-hero .vN-ch{--rv:clamp(0,calc((var(--open) - .74 - var(--i) * .028) * 9),1)}
-.vR-hero .vN-lead{opacity:clamp(0,calc((var(--open) - .90) * 9),1);text-shadow:0 0 16px rgba(0,0,0,.95),0 0 4px rgba(0,0,0,.9)}
-.vR-hero .vN-meta{opacity:clamp(0,calc((var(--open) - .86) * 8),1)}
+/* 提灯（WebGL の canvas。写真と布のあいだ。暖簾が上がると見える。本番と同じ「奥の左右の上」）。WebGL が使えないときは本番の CSS の提灯（.vN-hero-lan） */
+.vR-lan{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:clamp(0,calc((var(--open) - .28) * 3.5),1)}
+.vR-hero .vN-hero-lan{top:var(--lan-top,300px)}
+.vR-hero .vN-hero-lan--l{left:calc(50% - var(--lan-off,30vw))}
+.vR-hero .vN-hero-lan--r{left:calc(50% + var(--lan-off,30vw))}
+/* 見出しの後ろの暗がり（暖簾が開いて見出しが出はじめるのに合わせて、写真を落として字を主役にする。下のページのこげ茶へ溶ける） */
+.vR-hlshade{position:absolute;left:50%;top:53%;width:min(52vw,720px);height:96%;transform:translate(-50%,-50%);pointer-events:none;
+  background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(12,9,7,.78) 0%,rgba(12,9,7,.58) 42%,rgba(12,9,7,0) 100%);
+  opacity:clamp(0,calc((var(--open) - .30) * 4),1)}
+/* 見出し・副題・左下の表記の位置・出る順番・大きさは、本番（top.css の .vN-headline / .vN-h1 / .vN-ch / .vN-lead / .vN-meta）と同じ。読みやすさのため、影だけ少し強くする */
+.vR-hero .vN-headline{z-index:2}
+.vR-hero .vN-h1{text-shadow:0 2px 26px rgba(0,0,0,.78),0 0 3px rgba(0,0,0,.45)}
+.vR-hero .vN-lead{text-shadow:0 0 16px rgba(0,0,0,.95),0 0 4px rgba(0,0,0,.9)}
 .vR-hero .vN-meta{z-index:4}
 
 .vR-cloth{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0;transition:opacity .8s}
@@ -63,7 +66,9 @@
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='w'><feTurbulence type='fractalNoise' baseFrequency='.9 .5' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .45 -.12'/></filter><rect width='100%25' height='100%25' filter='url(%23w)'/></svg>"),
     #17233a}
 .vR-hero[data-dye="kon"] .vR-fb-p{background-color:#0d1524}
-.vR-hero[data-dye="cha"] .vR-fb-p{background-color:#2c1c10}
+.vR-hero[data-dye="sumi"] .vR-fb-p{background-color:#1c1714}
+.vR-hero[data-dye="kakishibu"] .vR-fb-p{background-color:#3a2012}
+.vR-hero[data-dye="enji"] .vR-fb-p{background-color:#3a1018}
 .vR-fb-p::before{content:"";position:absolute;left:0;top:calc(var(--yb) - var(--rod));bottom:0;width:3px;background:#07090d}
 .vR-fb-p:first-of-type::before{display:none}
 .vR-fb-p::after{content:"";position:absolute;left:0;right:0;bottom:30px;height:1px;background:rgba(255,255,255,.12);box-shadow:0 3px 0 rgba(0,0,0,.25)}
@@ -75,3 +80,6 @@
 .vN-clock-note,.vN-ch-count small,.vN-nb-c,.vN-tan-tag{font-size:12px}
 .vN-col-st{font-size:clamp(12px,.95vw,14px)}
 @media (max-width:640px){.vN-ch-cur-go{font-size:12px}.vN-lan{font-size:12px}}
+
+/* スマホ: 画面の左下に見本の操作盤が出るので、「暖簾を上げる」の手がかりは少し上へ（開くとすぐ消える） */
+@media (max-width:640px){.vR-hero .vN-cue{bottom:56px}}

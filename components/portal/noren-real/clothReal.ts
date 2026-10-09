@@ -10,7 +10,23 @@
  * 隙間・開いた後の空間は alpha 0 で、後ろの DOM（店の写真）がそのまま見える。
  */
 
-export type DyeKind = "ai" | "kon" | "cha";
+/** 布の色 5 種類（藍・濃紺・墨・柿渋・臙脂）。"cha" は柿渋の別名（以前の URL 用） */
+export type DyeKind = "ai" | "kon" | "sumi" | "kakishibu" | "enji";
+export const DYE_LIST: { key: DyeKind; label: string; swatch: string }[] = [
+  { key: "ai", label: "藍", swatch: "#1d2c48" },
+  { key: "kon", label: "濃紺", swatch: "#0e1626" },
+  { key: "sumi", label: "墨", swatch: "#241d19" },
+  { key: "kakishibu", label: "柿渋", swatch: "#6b3a22" },
+  { key: "enji", label: "臙脂", swatch: "#5e1a26" },
+];
+/** 色を切り替える口。window に CustomEvent(DYE_EVENT, { detail: DyeKind }) を送ると、読み込み直しなしで布の色が替わる（見本の操作盤用） */
+export const DYE_EVENT = "noren-real:dye";
+/** ?dye= の文字列を色に直す（"cha" は柿渋）。合わなければ null */
+export function parseDye(q: string | null | undefined): DyeKind | null {
+  if (!q) return null;
+  if (q === "cha" || q === "kaki") return "kakishibu";
+  return DYE_LIST.some((d) => d.key === q) ? (q as DyeKind) : null;
+}
 
 export type RealState = {
   time: number;
@@ -113,38 +129,73 @@ float swing(float k, float qy){
   float lull = 0.5 + 0.5 * sin(uTime * 0.31 + 1.0) * sin(uTime * 0.17 + k * 0.45 + 2.0);
   float amp = (3.0 + 14.0 * uGust) * (0.62 + 0.9 * lull) * uS;
   float hv = (abs(uPt.z - k) < 0.5) ? uPt.w : 0.0;
-  return (amp * wv + uMouse * 4.5 * uS + hv * 5.0 * uS * sin(uTime * 2.1 + k)) * pow(qy, 1.4);
+  return (amp * wv + uMouse * 14.0 * uS + hv * 5.0 * uS * sin(uTime * 2.1 + k)) * pow(qy, 1.4);
 }
 
-// l, r: 布のある範囲（両端の垂れは画面の外まで伸ばす）／ ln, rn: 垂れの本来の左右（ひだ・字の位置の基準）
-void panelEdges(float k, float y, float qy, out float l, out float r, out float ln, out float rn){
+// 開いたときの垂れの横の範囲（本番と同じ：中央は 46% に細り、左右は端へ 34% 幅に寄って重なる）
+void targetX(float k, out float xtl, out float xtr){
+  float pw0 = uRes.x / uN;
+  float mid = (uN - 1.0) * 0.5;
+  float ac = abs(k - mid);
+  float wg = pw0 * 0.34;
+  float stepG = wg * 0.72;
+  float rk = mid - ac;
+  if (ac < 0.01) { float wc = pw0 * 0.46; xtl = k * pw0 + (pw0 - wc) * 0.5; xtr = xtl + wc; }
+  else if (k < mid) { xtl = -pw0 * 0.16 + rk * stepG; xtr = xtl + wg; }
+  else { xtr = uRes.x + pw0 * 0.16 - rk * stepG; xtl = xtr - wg; }
+}
+
+// 垂れ k が開く量 0..1（本番と同じ：中央に近い垂れから順に）
+float eOf(float k){
+  float mid = (uN - 1.0) * 0.5;
+  float d = abs(k - mid) * 0.075;
+  return smoothstep(d, d + 0.60, uOpen);
+}
+
+// l, r: 布のある範囲（両端の垂れは閉じている間、画面の外まで伸ばす）／ ln, rn: 垂れの本来の左右（ひだ・字の位置の基準）
+// q: 竿から裾まで 0..1（下側が先に動く＝手で押し分ける）／ qy: 帯の下から裾まで 0..1
+void panelEdges(float k, float y, float q, float qy, out float l, out float r, out float ln, out float rn, out float ey, out float e){
   float pw0 = uRes.x / uN;
   float sw = swing(k, qy);
   float en = (vn(vec2(y / (7.0 * uS), k * 3.0)) - 0.5) * 1.1 * uS;
   float en2 = (vn(vec2(y / (7.0 * uS), k * 3.0 + 9.0)) - 0.5) * 1.1 * uS;
-  ln = (k < 0.5) ? sw + en : k * pw0 + slitH(qy, k) + sw + en;
-  rn = (k > uN - 1.5) ? uRes.x + sw + en2 : (k + 1.0) * pw0 - slitH(qy, k + 1.0) + sw + en2;
-  l = (k < 0.5) ? -300.0 * uS : ln;
-  r = (k > uN - 1.5) ? uRes.x + 300.0 * uS : rn;
+  float ln0 = (k < 0.5) ? 0.0 : k * pw0 + slitH(qy, k);
+  float rn0 = (k > uN - 1.5) ? uRes.x : (k + 1.0) * pw0 - slitH(qy, k + 1.0);
+  e = eOf(k);
+  ey = clamp(e + 0.20 * sin(e * PI) * q, 0.0, 1.0);
+  float xtl, xtr;
+  targetX(k, xtl, xtr);
+  ln = mix(ln0, xtl, ey) + sw + en;
+  rn = mix(rn0, xtr, ey) + sw + en2;
+  float ext = 300.0 * uS * (1.0 - ey);
+  l = (k < 0.5) ? ln - ext : ln;
+  r = (k > uN - 1.5) ? rn + ext : rn;
 }
 
-// 垂れ k が上がっている量 0..1（スクロールは中央の垂れから、押されたものは押した垂れから）
+// 垂れ k が上がっている量 0..1（中央の垂れはスクロールで本番どおり持ち上がる。押されたものは押した垂れから）
 float liftOf(float k){
   float mid = (uN - 1.0) * 0.5;
-  float dk = abs(k - mid) * 0.10;
-  float e = smoothstep(dk, dk + 0.55, uOpen);
+  float c = (abs(k - mid) < 0.01) ? smoothstep(0.0, 0.72, uOpen) : 0.0;
   float sel = (abs(uSel.x - k) < 0.5) ? uSel.y : 0.0;
-  return max(e, sel);
+  return max(c, sel);
 }
 
-float hemOf(float k, float u, float yb, float sw){
+float hemOf(float k, float u, float e, float sw){
+  float rodY = uLay.x, hemY = uLay.y;
+  float H = hemY - rodY;
+  float isC = (abs(k - (uN - 1.0) * 0.5) < 0.01) ? 1.0 : 0.0;
   float hv = (abs(uPt.z - k) < 0.5) ? uPt.w : 0.0;
-  float lift = liftOf(k);
-  float h = yb + (uLay.y - yb) * (1.0 - 0.88 * lift);
+  float selA = (abs(uSel.x - k) < 0.5) ? uSel.y : 0.0;
+  float c = isC * smoothstep(0.0, 0.72, uOpen);
+  // 本番と同じ：左右の垂れは裾がわずかに上がるだけ、中央の垂れは手で持ち上げるように裾が竿の近くまで上がる
+  float h = hemY - H * 0.055 * e;
+  h = mix(h, rodY + H * (1.0 - 0.94 * c), isC);
+  h = mix(h, rodY + H * (1.0 - 0.90 * selA), step(0.001, selA));
+  float lift = max(c, selA);
   h -= hv * 15.0 * uS * (1.0 - lift);
   h += (sin(u * TAU * 1.35 + k * 2.1 + uTime * 0.35) * 3.4 + sin(u * TAU * 3.1 + k * 5.0 - uTime * 0.23) * 1.3) * uS * (1.0 - lift * 0.85);
   h -= abs(sw) * 0.10;
-  return h;
+  return max(h, rodY + 8.0 * uS);
 }
 
 float aa(float d){ return clamp(d / (1.3 * uS) + 0.5, 0.0, 1.0); }
@@ -161,33 +212,36 @@ void main(){
 
   vec4 outc = vec4(0.0);
   if (y < loopTop - 2.0 * s) { gl_FragColor = outc; return; }
+  float lpp = (pw0 / s > 150.0) ? 3.0 : 1.0;
 
-  // ---------- どの垂れか ----------
-  float k, l, r, ln, rn, hem, cov;
+  // ---------- どの垂れか（本番と同じ並び：外側の垂れから先に置き、中に近い垂れが手前に重なる）----------
+  float k = 0.0, l = 0.0, r = 0.0, ln = 0.0, rn = pw0, hem = hemY, cov = 0.0, ey = 0.0, e = 0.0;
+  float winK = -1.0;
   float shadowD = 1e5;
-  if (y <= yb) {
-    k = clamp(floor(x / pw0), 0.0, n - 1.0);
-    l = k * pw0; r = l + pw0; ln = l; rn = r; hem = hemY; cov = 1.0;
-  } else {
-    float qy = clamp((y - yb) / (hemY - yb), 0.0, 1.0);
-    float k0 = clamp(floor(x / pw0), 0.0, n - 1.0);
-    float fx = x / pw0 - k0;
-    float ka = clamp(fx < 0.5 ? k0 - 1.0 : k0, 0.0, n - 1.0);
-    float kb = clamp(fx < 0.5 ? k0 : k0 + 1.0, 0.0, n - 1.0);
-    float la, ra, lb, rb, lna, rna, lnb, rnb;
-    panelEdges(ka, y, qy, la, ra, lna, rna);
-    panelEdges(kb, y, qy, lb, rb, lnb, rnb);
-    float ua = (x - lna) / (rna - lna), ub = (x - lnb) / (rnb - lnb);
-    float ha = hemOf(ka, ua, yb, swing(ka, qy));
-    float hb = hemOf(kb, ub, yb, swing(kb, qy));
+  float sWin = 0.0;
+  float qq = clamp((y - rodY) / (hemY - rodY), 0.0, 1.0);
+  float qyB = clamp((y - yb) / (hemY - yb), 0.0, 1.0);
+  for (int zi = 0; zi < 5; zi++) {
+    if (float(zi) >= n) break;
+    float kk = (mod(float(zi), 2.0) < 0.5) ? floor(float(zi) * 0.5) : (n - 1.0 - floor(float(zi) * 0.5));
+    float xtl, xtr;
+    targetX(kk, xtl, xtr);
+    float lo = min(kk * pw0, xtl) - 70.0 * s, hi = max((kk + 1.0) * pw0, xtr) + 70.0 * s;
+    if (x < lo || x > hi) continue;
+    float la, ra, lna, rna, eya, ea;
+    panelEdges(kk, y, qq, qyB, la, ra, lna, rna, eya, ea);
+    float ua = (x - lna) / (rna - lna);
+    float ha = hemOf(kk, ua, ea, swing(kk, qyB));
     float ca = aa(x - la) * aa(ra - x) * aa(ha - y);
-    float cb = aa(x - lb) * aa(rb - x) * aa(hb - y);
     float oa = max(max(la - x, x - ra), y - ha);
-    float ob = max(max(lb - x, x - rb), y - hb);
-    shadowD = min(oa, ob);
-    if (ca >= cb) { k = ka; l = la; r = ra; ln = lna; rn = rna; hem = ha; cov = ca; } else { k = kb; l = lb; r = rb; ln = lnb; rn = rnb; hem = hb; cov = cb; }
-    cov = max(cov, aa(yb - y));
+    shadowD = min(shadowD, oa);
+    if (ca > 0.5 || (ca > 0.02 && winK < 0.0)) {
+      winK = kk; k = kk; l = la; r = ra; ln = lna; rn = rna; hem = ha; cov = ca; ey = eya; e = ea; sWin = 0.0;
+    } else {
+      sWin = max(sWin, 0.55 * exp(-max(oa, 0.0) / (13.0 * s)));
+    }
   }
+  if (winK < 0.0) k = clamp(floor(x / pw0), 0.0, n - 1.0);
 
   float u = (x - ln) / (rn - ln);
   float panelPw = (rn - ln) / s;
@@ -200,16 +254,18 @@ void main(){
   // ---------- 面の傾き ----------
   // 大きなひだ（垂れごとに位相が違う。帯の中ではつながる）
   float pb = smoothstep(yb - 10.0 * s, yb + 70.0 * s, y);
-  float foldA = panelPw * 0.19 * amp * (1.0 + 0.5 * uGust);
+  float fq = mix(1.0, 2.2, ey);
+  float sqz = clamp((rn - ln) / pw0, 0.3, 1.0);
+  float foldA = panelPw * 0.19 * amp * (1.0 + 0.5 * uGust) / sqrt(fq) * (1.0 - 0.6 * lk);
   float f1p = mix(0.0, hash(vec2(k + 1.0, 2.0)) * TAU, pb);
   float f2p = mix(1.7, hash(vec2(k + 1.0, 3.0)) * TAU + 1.0, pb);
   float f3p = mix(3.4, hash(vec2(k + 1.0, 4.0)) * TAU + 2.0, pb);
   float wob = sin(yq * 3.0 + k * 1.9 + uTime * 0.21);
-  float ph1 = TAU * 1.15 * u + f1p + 0.5 * wob;
-  float ph2 = TAU * 2.35 * u + f2p + 0.5 * sin(yq * 4.1 + k * 0.7 + uTime * 0.31);
-  float ph3 = TAU * 4.3 * u + f3p + 0.5 * sin(yq * 5.3 + k * 2.7 + uTime * 0.17);
+  float ph1 = TAU * 1.15 * fq * u + f1p + 0.5 * wob;
+  float ph2 = TAU * 2.35 * fq * u + f2p + 0.5 * sin(yq * 4.1 + k * 0.7 + uTime * 0.31);
+  float ph3 = TAU * 4.3 * fq * u + f3p + 0.5 * sin(yq * 5.3 + k * 2.7 + uTime * 0.17);
   float fh = sin(ph1) + 0.42 * sin(ph2) + 0.10 * sin(ph3);
-  float fs = cos(ph1) * TAU * 1.15 + 0.42 * cos(ph2) * TAU * 2.35 + 0.10 * cos(ph3) * TAU * 4.3;
+  float fs = (cos(ph1) * TAU * 1.15 + 0.42 * cos(ph2) * TAU * 2.35 + 0.10 * cos(ph3) * TAU * 4.3) * fq;
   float gx = foldA * fs / panelPw;
   float Hn = foldA * fh;
 
@@ -237,7 +293,6 @@ void main(){
   Hn += crA * (r1 * 0.46 + r2 * 0.34 + r3 * 0.13) - crA * 0.5;
 
   // 乳から広がる縦のしぼり（竿の近く）
-  float lpp = (pw0 / s > 150.0) ? 3.0 : 1.0;
   float dgap = pw0 / lpp / s;
   float gt = exp(-(y - rodY) / (170.0 * s));
   float gph = TAU * mC.x / dgap;
@@ -267,11 +322,11 @@ void main(){
   Hn -= 26.0 * hv * G;
 
   // 上がった垂れは、裾が畳まれて横ひだになる
-  float vv = clamp((y - yb) / max(hem - yb, 1.0), 0.0, 1.0);
+  float vv = clamp((y - rodY) / max(hem - rodY, 1.0), 0.0, 1.0);
   float plA = lk * (0.30 + 0.70 * vv) * 1.15;
   float plPh = TAU * 3.0 * vv + k * 1.3;
   float plSlope = plA * 0.9 * cos(plPh);
-  Hn -= plA * 0.9 * (max(hem - yb, 1.0) / s) / (TAU * 3.0) * sin(plPh);
+  Hn -= plA * 0.9 * (max(hem - rodY, 1.0) / s) / (TAU * 3.0) * sin(plPh);
   float edL = (x - ln) / s, edR = (rn - x) / s;
   float curl = 0.42 * (exp(-max(edL, 0.0) / 20.0) - exp(-max(edR, 0.0) / 20.0)) * smoothstep(0.0, 0.25, yq) * (1.0 - lk);
   vec2 g = vec2(gx + gxg + gc.x + gb.x + curl + cvSlope, gc.y + gb.y + plSlope + crSlope);
@@ -279,7 +334,7 @@ void main(){
 
   // ---------- 糸 ----------
   float p = 1.8;
-  float fadeW = smoothstep(2.0, 5.0, p * s);
+  float fadeW = smoothstep(2.0, 5.0, p * s * sqz);
   vec2 jo = vec2(0.0);
   vec2 mT = mC + (vec2(vn(mC / vec2(7.0, 11.0)), vn(mC / vec2(7.0, 11.0) + 5.0)) - 0.5) * vec2(2.4, 2.8);
   float h0 = weaveH(mT, p);
@@ -291,7 +346,7 @@ void main(){
   float rowr = hash(vec2(8.1, th.y));
   float lenW = vn(vec2(th.x * 1.7, mC.y / 28.0));
   float lenF = vn(vec2(mC.x / 60.0 + 4.0, th.y * 1.3));
-  float slubK = mix(0.38, 1.0, fadeW);
+  float slubK = mix(0.38, 1.0, fadeW) * mix(0.25, 1.0, smoothstep(0.5, 0.9, sqz));
   float slub = ((colr * 0.55 + lenW * 0.45 - 0.5) * 0.42 + (rowr * 0.40 + lenF * 0.60 - 0.5) * 0.18) * slubK;
   float nep = step(0.9988, hash(floor(mC / 1.1) + 3.3));
 
@@ -311,7 +366,7 @@ void main(){
   float narrow = (pw0 / s < 150.0) ? 1.0 : 0.0;
   float Sg = mix(0.90, 0.95, narrow) * pw0 / s;
   float jk = mix(1.0, 0.40, narrow);
-  vec2 cl = vec2((u - 0.5) * panelPw, (y - gyc) / s);
+  vec2 cl = vec2((u - 0.5) * pw0 / s, (y - gyc) / s);
   vec2 qd = (floor(cl / p) + 0.5) * p;
   vec2 clj = mix(cl, qd, 0.14 * jk) + (vec2(vn(mC * 0.55), vn(mC * 0.55 + 7.0)) - 0.5) * 0.8 * jk;
   vec2 auv = vec2((k + 0.5 + clj.x / Sg) / n, 0.5 + clj.y / Sg);
@@ -388,34 +443,34 @@ void main(){
   col *= 0.86 + 0.14 * smoothstep(0.0, 3.0, dH);
   col += vec3(1.0, 0.70, 0.40) * 0.12 * uLamp * exp(-max(dH, 0.0) / 2.6) * (1.0 - lk) * below;
   // 切れ目の止め縫い
-  float si = floor(x / pw0 + 0.5);
-  float sx = abs(x - si * pw0) / s;
-  float tack = step(sx, 5.0) * step(1.0, si) * step(si, n - 1.0) * step(abs((y - yb) / s - 1.5), 5.5);
+  float sx = dE;
+  float tack = step(sx, 5.0) * ((x - ln < rn - x) ? step(0.5, k) : step(k, n - 1.5)) * step(abs((y - yb) / s - 1.5), 5.5);
   col *= 1.0 - 0.38 * tack * step(0.5, fract(x / (1.7 * s) + 0.25)) * (1.0 - lk);
   // 竿の影（竿の下の布）
   col *= 1.0 - 0.72 * exp(-max(y - (rodY + rodR), 0.0) / (21.0 * s)) * step(rodY, y);
 
+  col *= 1.0 - sWin * step(rodY, y) * 0.9;
   // 布の色
   vec3 clothCol = col;
   vec4 c = vec4(clothCol * cov, cov);
-  if (y > yb) {
+  if (y > rodY) {
     float sh = (0.62 + 0.25 * lk) * exp(-max(shadowD, 0.0) / ((10.0 + 12.0 * lk) * s)) * (1.0 - cov);
     c = c + vec4(0.0, 0.0, 0.0, sh) * (1.0 - c.a);
   }
 
   // ---------- 竿と乳 ----------
   float t = (y - rodY) / rodR;
-  float dgPx = pw0 / lpp / 1.0 * 1.0;
-  float lj = floor(x / dgPx);
-  // 乳は 1 つずつ、位置・幅・長さがわずかに違う（手で縫った物）
-  float ldx = x - (lj + 0.5) * dgPx - (hash(vec2(lj, 3.1)) - 0.5) * 7.0 * s;
+  float lj0 = clamp(floor(u * lpp), 0.0, lpp - 1.0);
+  float lj = lj0 + k * 3.0;
+  // 乳は 1 つずつ、位置・幅・長さがわずかに違う（手で縫った物）。垂れと一緒に竿の上を寄る
+  float ldx = x - (ln + (lj0 + 0.5) / lpp * (rn - ln)) - (hash(vec2(lj, 3.1)) - 0.5) * 7.0 * s;
   float lw = (7.9 + 1.5 * hash(vec2(lj, 7.7))) * s;
   float nx = clamp(ldx / lw, -1.0, 1.0);
   float rr = 5.5 * s;
   float lwy = lw - rr + sqrt(max(0.0, rr * rr - pow(max(0.0, loopTop + rr - y), 2.0)));
   float inLoopX = aa(lwy - abs(ldx));
   float loopBot = rodY + rodR + (10.0 + 6.0 * hash(vec2(lj, 11.3))) * s;
-  float inLoop = inLoopX * aa(y - loopTop) * aa(loopBot - y);
+  float inLoop = inLoopX * aa(y - loopTop) * aa(loopBot - y) * step(0.0, winK) * step(0.0, u) * step(u, 1.0);
   // 乳の見え方（筒状の陰影・上へ折り返す所・下の縫い止め）
   float lsh = 0.40 + 0.60 * sqrt(max(0.0, 1.0 - nx * nx));
   float topTurn = smoothstep(loopTop, loopTop + 7.0 * s, y);
@@ -471,8 +526,12 @@ const DYES: Record<DyeKind, { dye: number[]; hi: number[]; ink: number[]; tint: 
   ai: { dye: [0.046, 0.075, 0.130], hi: [0.105, 0.150, 0.235], ink: [0.87, 0.85, 0.80], tint: [0.0, 0.02, 0.05], grade: [0.92, 1.0, 1.06] },
   // 濃紺（ほぼ墨に近い紺）
   kon: { dye: [0.026, 0.038, 0.066], hi: [0.050, 0.068, 0.108], ink: [0.86, 0.84, 0.79], tint: [0.0, 0.01, 0.03], grade: [0.86, 0.9, 1.10] },
-  // 柿渋・茶（暗い茶）
-  cha: { dye: [0.105, 0.070, 0.052], hi: [0.185, 0.130, 0.098], ink: [0.88, 0.84, 0.76], tint: [0.05, 0.02, 0.0], grade: [0.84, 0.9, 1.06] },
+  // 墨（本番の墨茶に近い、わずかに温かい黒）
+  sumi: { dye: [0.040, 0.034, 0.030], hi: [0.085, 0.070, 0.058], ink: [0.88, 0.85, 0.78], tint: [0.04, 0.02, 0.0], grade: [0.82, 0.9, 1.06] },
+  // 柿渋（赤みのある深い茶）
+  kakishibu: { dye: [0.072, 0.034, 0.019], hi: [0.128, 0.064, 0.038], ink: [0.90, 0.85, 0.74], tint: [0.03, 0.01, 0.0], grade: [0.78, 0.96, 1.08] },
+  // 臙脂（深いえんじ）
+  enji: { dye: [0.066, 0.011, 0.019], hi: [0.118, 0.022, 0.036], ink: [0.90, 0.86, 0.79], tint: [0.025, 0.0, 0.005], grade: [0.78, 0.94, 1.08] },
 };
 
 export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {

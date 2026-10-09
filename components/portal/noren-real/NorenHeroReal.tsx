@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { createClothReal, type ClothReal, type DyeKind } from "./clothReal";
+import { createClothReal, DYE_EVENT, parseDye, type ClothReal, type DyeKind } from "./clothReal";
+import { createLanternReal, type LanternReal } from "./lanternReal";
+import Lantern from "../noren/Lantern";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
 export type RealChapter = { key: string; kanji: string; ja: string; en: string };
@@ -33,18 +35,21 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - 5 つの垂れは、それぞれ、その種類の章（#ch-xxx）への行き先（<a>）。乗せると垂れが押されてたわみ、押すと垂れが上がって章へ移る。
  * - スクロールで、布が上がって奥（店の写真と、h1）へ入る。
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
- * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|cha（布の色。本藍・濃紺・茶）、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
+ * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
 export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai" }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
+  const lanCv = useRef<HTMLCanvasElement>(null);
   const doors = useRef<HTMLElement>(null);
   const hoverRef = useRef(-1);
   const selRef = useRef(-1);
   const selTimer = useRef(0);
   const [mode, setMode] = useState<"init" | "gl" | "css">("init");
   const [dye, setDye] = useState<DyeKind>(defaultDye);
+  // 提灯: WebGL で描けないときは、本番の CSS の提灯を代わりに出す
+  const [lanCss, setLanCss] = useState(false);
 
   useEffect(() => {
     const w = wrap.current!;
@@ -53,8 +58,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const root = w.closest(".vN") as HTMLElement;
     const qs = new URLSearchParams(location.search);
-    const dq = qs.get("dye");
-    const dyeQ: DyeKind = dq === "cha" || dq === "kon" || dq === "ai" ? dq : defaultDye;
+    const dyeQ: DyeKind = parseDye(qs.get("dye")) ?? defaultDye;
     const wq = parseFloat(qs.get("wrinkle") ?? "");
     const wrinkleQ = Number.isFinite(wq) ? wq : 0.2;
     setDye(dyeQ);
@@ -62,6 +66,10 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const dprQ = parseFloat(qs.get("dpr") ?? "");
 
     let cloth: ClothReal | null = null;
+    let lans: LanternReal | null = null;
+    let lastLan = 0;
+    let lanDirty = true;
+    let lanLayout: { cssW: number; cssH: number; dpr: number; lans: { cx: number; top: number; F: number }[]; pivotY: number } | null = null;
     let raf = 0;
     let alive = true;
     let inView = true;
@@ -101,6 +109,16 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       const want = Number.isFinite(dprQ) && dprQ > 0 ? dprQ : Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(3.4e6 / Math.max(1, cssW * cssH)));
       const dpr = Math.max(0.5, want * quality);
       cloth?.resize({ cssW, cssH, dpr, rodY, hemY, rodR, bandH });
+      // 提灯: 本番と同じ「奥の左右の上」（上から 76px・中心から 30vw）。紐は舞台の上から垂れ、竿の後ろを通る。
+      const F = cssW <= 640 ? 12 : Math.min(22, Math.max(12, cssW * 0.0155));
+      const lanTop = Math.round(rodY + rodR + 16);
+      const off = cssW * 0.30;
+      const ldpr = Math.max(0.75, Math.min(want, 1.75) * quality);
+      lanLayout = { cssW, cssH, dpr: ldpr, lans: [{ cx: cssW / 2 - off, top: lanTop, F }, { cx: cssW / 2 + off, top: lanTop, F }], pivotY: lanTop - Math.min(cssH * 0.4, 360) };
+      lans?.resize(lanLayout);
+      lanDirty = true;
+      st.style.setProperty("--lan-top", `${lanTop}px`);
+      st.style.setProperty("--lan-off", `${(off / cssW * 100).toFixed(1)}vw`);
       st.style.setProperty("--yb", `${(rodY + bandH).toFixed(1)}px`);
       st.style.setProperty("--hem", `${hemY.toFixed(1)}px`);
       st.style.setProperty("--rod", `${rodY}px`);
@@ -138,7 +156,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       if (Math.abs(target - open) < 0.0005) open = target;
       mouse += (mouseT - mouse) * 0.05;
       const t = (now - t0) / 1000;
-      gust = reduce ? 0.1 : 0.12 + 0.70 * Math.exp(-t / 2.2) + vel * 0.9 + Math.abs(open - prev) * 6;
+      gust = reduce ? 0.1 : 0.12 + 0.95 * Math.exp(-t / 2.4) + vel * 0.9 + Math.abs(open - prev) * 6;
       const os = open.toFixed(4);
       if (os !== lastOpen) {
         lastOpen = os;
@@ -148,11 +166,18 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       }
       if (now - lampAt > 1000) {
         lampAt = now;
-        lamp = parseFloat(getComputedStyle(root).getPropertyValue("--lamp")) || 0.5;
+        const lv = parseFloat(getComputedStyle(root).getPropertyValue("--lamp")) || 0.5;
+        if (Math.abs(lv - lamp) > 0.001) lanDirty = true;
+        lamp = lv;
         dirty = true;
       }
       const r = w.getBoundingClientRect();
       inView = r.bottom > -50 && r.top < window.innerHeight + 50;
+      if (inView && lans && open > 0.2 && (reduce ? lanDirty : now - lastLan > 30)) {
+        lastLan = now;
+        lanDirty = false;
+        lans.render({ time: reduce ? 3.0 : t, lamp });
+      }
       if (!inView || !cloth) return;
       // 触れている・押している・動いている間は毎コマ、それ以外は 40 コマ/秒
       const hv = hoverRef.current;
@@ -185,7 +210,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       cloth.render({
         time: reduce ? 3.0 : t,
         open,
-        gust: Math.min(1.3, gust),
+        gust: Math.min(1.4, gust),
         mouse: reduce ? 0 : mouse,
         lamp,
         px,
@@ -226,10 +251,17 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     (async () => {
       cloth = createClothReal(cv);
       if (!cloth) setMode("css");
+      const lcv = lanCv.current;
+      lans = lcv ? createLanternReal(lcv) : null;
+      if (!lans) setLanCss(true);
       const fam = getComputedStyle(w).getPropertyValue(fontVar(fontQ)).trim();
       if (fam) family = fam;
+      const brush = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || '"Yuji Boku", serif';
       try {
-        await document.fonts.load(`400 100px ${family}`, chapters.map((c) => c.kanji).join(""));
+        await Promise.all([
+          document.fonts.load(`400 100px ${family}`, chapters.map((c) => c.kanji).join("")),
+          document.fonts.load(`400 100px ${brush}`, "灯酒"),
+        ]);
         await document.fonts.ready;
       } catch {}
       if (!alive) return;
@@ -238,12 +270,22 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
         cloth.setWrinkle(wrinkleQ);
         cloth.setGlyphs(chapters.map((c) => c.kanji), family);
       }
+      lans?.setGlyphs(["灯", "酒"], brush);
       layout();
       if (cloth) setMode("gl");
       t0 = performance.now();
       raf = requestAnimationFrame(frame);
     })();
 
+    const onDye = (e: Event) => {
+      const k = parseDye(String((e as CustomEvent).detail ?? ""));
+      if (!k) return;
+      cloth?.setDye(k);
+      setDye(k);
+      dirty = true;
+      lastDraw = 0;
+    };
+    window.addEventListener(DYE_EVENT, onDye);
     window.addEventListener("resize", onResize);
     window.addEventListener("pointermove", onMove, { passive: true });
     dEl?.addEventListener("pointerover", onEnter);
@@ -257,6 +299,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       cancelAnimationFrame(raf);
       ro.disconnect();
       window.clearTimeout(selTimer.current);
+      window.removeEventListener(DYE_EVENT, onDye);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("pointermove", onMove);
       dEl?.removeEventListener("pointerover", onEnter);
@@ -264,6 +307,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       dEl?.removeEventListener("pointerleave", onLeave);
       dEl?.removeEventListener("focusout", onLeave);
       cloth?.destroy();
+      lans?.destroy();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -301,6 +345,14 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           <div className="vR-photo" style={{ backgroundImage: `url(${photo})` }} />
           <div className="vR-shade" />
           <div className="vR-glow" />
+          {lanCss ? (
+            <>
+              <Lantern className="vN-hero-lan vN-hero-lan--l" />
+              <Lantern className="vN-hero-lan vN-hero-lan--r" mark="酒" />
+            </>
+          ) : (
+            <canvas ref={lanCv} className="vR-lan" aria-hidden="true" />
+          )}
           <div className="vR-hlshade" aria-hidden="true" />
           <div className="vN-headline">
             <h1 className="vN-h1" aria-label="暖簾を、くぐる。">
