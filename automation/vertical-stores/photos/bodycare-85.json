@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-85",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-85/s1.jpg",
+      "imageUrl": "https://honekun.com/wp/wp-content/uploads/2025/02/vis__05.jpg",
+      "pageUrl": "https://honekun.com/",
+      "what": "施術室の室内(ベッドとレンガ壁)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-85/s2.jpg",
+      "imageUrl": "https://honekun.com/wp/wp-content/uploads/2025/02/vis__01.jpg",
+      "pageUrl": "https://honekun.com/",
+      "what": "院長が来院者の姿勢を確認する様子",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-85/s3.jpg",
+      "imageUrl": "https://honekun.com/wp/wp-content/uploads/2025/02/vis__03.jpg",
+      "pageUrl": "https://honekun.com/",
+      "what": "院長がカルテを手に説明する様子",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}

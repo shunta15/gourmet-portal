@@ -1,0 +1,86 @@
+{
+  "key": "bodycare-47",
+  "headline": "無料の駐車場7台がある、行橋市泉中央の整骨院",
+  "lede": "正面に無料の駐車場が7台分ある、福岡県行橋市泉中央1丁目の整骨院です。受付は予約優先制で、当日の予約も可能と案内されています。LINEからも問い合わせと予約ができます。",
+  "sections": [
+    {
+      "heading": "受付時間と案内ページ",
+      "body": "受付は月曜から金曜が9:00〜20:00、土曜が9:00〜15:00で、日曜と祝日は休診です。Googleマップの営業時間の表示とも一致しています。公式サイトには、女性向けの施術と交通事故後の施術の案内ページがあります。Instagramなどの公式SNSのリンクも載っています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "福岡県行橋市泉中央1-11-24-102にある",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/about.php",
+      "quote": "福岡県行橋市泉中央1-11-24-102",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "受付は月〜金が9:00-20:00、土曜が9:00-15:00",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/",
+      "quote": "月～金9:00～20:00 / 土9:00～15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "日曜と祝日は休診",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/about.php",
+      "quote": "日/祝/休診",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約優先制で、当日予約も可能",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/about.php",
+      "quote": "予約優先制 (※当日予約可能)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は無料で、整骨院の正面に7台分ある",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/about.php",
+      "quote": "あり（無料）※整骨院の正面7台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEから問い合わせ・予約ができる",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/",
+      "quote": "LINEからお問合せ・予約可能です！！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性向けの施術の案内ページがある",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/",
+      "quote": "女性向け",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故後の施術の案内ページがある",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/",
+      "quote": "交通事故治療",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は0930-23-5253",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/about.php",
+      "quote": "0930-23-5253",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトにInstagramとFacebookへのリンクがある",
+      "source": "https://www.nakagawa-osteopathic-clinic.com/",
+      "quote": "https://www.instagram.com/nakagawaseikotsuin/",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.nakagawa-osteopathic-clinic.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5988772818844713849"
+    }
+  ],
+  "notes": "公式サイトは症状名(生理痛・PMSなど)、『90%以上が改善・消失』の数字、治療・矯正・デトックスの語、認定・療法の名前で占められている。それらは書かず、場所・受付時間・予約・駐車場・案内ページの有無だけで短くした。メニュー名(産後骨盤矯正・不妊・生理トラブル・女性ホルモンバランス療法・AKA療法など)は載せていない。営業時間は公式サイトとGoogleマップ(月〜金9:00-20:00、土9:00-15:00、日定休)が一致。20時閉店のためタグは付けていない。 【監査 lite-audit-1】公式サイトの電話0930-23-5253・住所は全ページで gbp と一致を確認。「接骨院」と「整骨院」が同じ文に混在していたため、公式の名乗りの「整骨院」に統一。書き出しを変更。"
+}

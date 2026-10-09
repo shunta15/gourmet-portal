@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-87",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-87/s1.jpg",
+      "imageUrl": "https://kenei-chiryouin.com/wp-content/themes/05702/img/access/access_01.jpg",
+      "pageUrl": "https://kenei-chiryouin.com/access/",
+      "what": "院の外観の看板",
+      "width": 540,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-87/s2.jpg",
+      "imageUrl": "https://kenei-chiryouin.com/wp-content/themes/05702/img/access/access_06.jpg",
+      "pageUrl": "https://kenei-chiryouin.com/access/",
+      "what": "施術室のベッド",
+      "width": 540,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-87/s3.jpg",
+      "imageUrl": "https://kenei-chiryouin.com/wp-content/themes/05702/img/about/about_01.jpg",
+      "pageUrl": "https://kenei-chiryouin.com/about/",
+      "what": "施術の様子",
+      "width": 640,
+      "height": 400
+    }
+  ],
+  "note": ""
+}

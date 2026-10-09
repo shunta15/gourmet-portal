@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-69",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-69/s1.jpg",
+      "imageUrl": "https://1roomseitaiin.jp/mwp/wp-content/uploads/2022/06/48A0990.webp",
+      "pageUrl": "https://1roomseitaiin.jp/",
+      "what": "白い壁の施術室と施術ベッド",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-69/s2.jpg",
+      "imageUrl": "https://1roomseitaiin.jp/mwp/wp-content/uploads/2022/06/48A0953.webp",
+      "pageUrl": "https://1roomseitaiin.jp/",
+      "what": "建物の入口(外観)",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "path": "/_portal/vshops/bodycare-69/s3.jpg",
+      "imageUrl": "https://1roomseitaiin.jp/mwp/wp-content/uploads/2022/06/48A1178.webp",
+      "pageUrl": "https://1roomseitaiin.jp/",
+      "what": "脚の施術をする様子",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}

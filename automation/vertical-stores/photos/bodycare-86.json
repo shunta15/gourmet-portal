@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-86",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-86/s1.jpg",
+      "imageUrl": "https://jump-seitai.jp/images/convert/jump-seitaijp/20240523200030.jpg/image.webp",
+      "pageUrl": "https://jump-seitai.jp/",
+      "what": "院内の受付と施術スペース",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-86/s2.jpg",
+      "imageUrl": "https://jump-seitai.jp/images/convert/jump-seitaijp/20240510152225.jpg/image.webp",
+      "pageUrl": "https://jump-seitai.jp/",
+      "what": "院の外観と看板",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,112 @@
+{
+  "key": "beauty-9",
+  "headline": "上石神井駅北口から徒歩1分。朝9時から夜9時半までのネイルサロン",
+  "lede": "西武新宿線の上石神井駅の北口から1分と案内されている、練馬区上石神井のネイルサロンです。営業は9時から21時30分までで、予約はLINEや電話でも受け付けています。",
+  "sections": [
+    {
+      "heading": "席と通いやすさ",
+      "body": "施術の席はハンド用が3席、リクライニングチェアが1席の計4席です。パラジェルとフィルインに対応すると案内しています。ジェルネイルができない人向けに、ネイルチップオーダーのメニューもあります。駐車場はなく、店の脇に無料の駐輪スペースがあります。支払いは現金、クレジットカード、QR、交通系に対応しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ハンドネイル"
+    },
+    {
+      "name": "ネイルチップオーダー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 2
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「ネイルサロン」",
+      "source": "https://maps.google.com/?cid=12230675342996067525",
+      "quote": "ネイルサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "上石神井駅北口から1分",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "上石神井駅北口１分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜21:30(LINE ページと Google マップも毎日9:00–21:30)",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "【9:00～21:30】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はハンド3席・リクライニングチェア1席",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "総数4(ハンド3／リクライニングチェア1)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パラジェル・フィルインに対応と案内している",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "パラジェル、フィルイン対応可能！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにネイルチップオーダーがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "【ネイルチップオーダー】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにハンドネイルがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "【ハンドネイル】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、店舗脇に無料の駐輪スペースがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "店舗脇に駐輪スペースのみ有り(無料)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はLINEや電話でも受け付けている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "LINEか電話予約でハンドフット同時施術も可能です！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金・QR・交通系に対応",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000707713/",
+      "quote": "現金、QR、交通系◎",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は東京都練馬区上石神井4-2-20 田中ビル2階",
+      "source": "https://page.line.me/362ekfwk",
+      "quote": "東京都 練馬区上石神井 4-2-20 田中ビル2階",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "LINE公式アカウント(Google マップに登録された店のページ)",
+      "url": "https://page.line.me/362ekfwk"
+    },
+    {
+      "label": "ホットペッパービューティー(LINE ページからリンクされた店のページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000707713/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12230675342996067525"
+    }
+  ],
+  "notes": "Google マップの website は LINE の短縮リンク(lin.ee)で、リンク先は店の LINE 公式アカウントのプロフィール。そこからリンクされたホットペッパービューティーの店ページ(住所・電話が gbp と一致)を併せて使った。営業時間は LINE・HP・Google マップが毎日9:00-21:30で一致。HP は「定休日: 不定休」と「年中無休」が併記されているため定休日は書かなかった。キャンセル料・時間外料金・クーポン・口コミは使っていない。 【監査 lite-audit-5】タグ「子連れ可」と本文の「お子さま同伴」を外した(ホットペッパーの条件欄だけが根拠のため)。予約の書き方を「LINEか電話で受け付け」→「LINEや電話でも受け付け」に(HP には即時予約=ネット予約もある)。店の取り違え: LINE ページの電話070-3113-9954・住所が gbp と一致、HP は LINE ページからのリンク先。"
+}

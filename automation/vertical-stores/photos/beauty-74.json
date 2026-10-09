@@ -1,0 +1,29 @@
+{
+  "key": "beauty-74",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-74/s1.jpg",
+      "imageUrl": "https://enjin.okinawa/wp-content/themes/enjin/img/top/img_mv.webp",
+      "pageUrl": "https://enjin.okinawa/",
+      "what": "脱毛器とベッドの施術室",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-74/s2.jpg",
+      "imageUrl": "https://enjin.okinawa/wp-content/themes/enjin/img/top/img_about04.jpg",
+      "pageUrl": "https://enjin.okinawa/",
+      "what": "カウンセリングの机",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-74/s3.jpg",
+      "imageUrl": "https://enjin.okinawa/wp-content/themes/enjin/img/top/img_about01.jpg",
+      "pageUrl": "https://enjin.okinawa/",
+      "what": "脱毛器での施術の様子",
+      "width": 1200,
+      "height": 800
+    }
+  ]
+}

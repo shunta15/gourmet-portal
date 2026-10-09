@@ -1,0 +1,119 @@
+{
+  "key": "beauty-17",
+  "headline": "横須賀市根岸町のヘアサロン。定休日は水曜、カット最終受付は18時",
+  "lede": "agu_hairsalon(アグーヘアサロン)は、横須賀市根岸町の渡辺ビル2階にあるヘアサロンです。京浜急行の北久里浜駅から徒歩5分と案内されています。営業は10時から19時までで、定休日は水曜日です。",
+  "sections": [
+    {
+      "heading": "席数と受付時間",
+      "body": "セット面は3席、スタイリストは2人で、完全予約制です。カットの最終受付は18時で、カラーとパーマの最終受付は要相談とされています。水曜のほかに臨時休業日があるとの記載もあります。先代が40年前から営業していた店を居抜きで引き継ぎ、内装はほぼそのままだと記されています。駐車場はなく、近隣にコインパーキングがあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=3794766852228851090",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "京浜急行北久里浜駅徒歩5分",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "京浜急行　北久里浜駅徒歩5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00(Google マップも10:00–19:00)",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "10：00～19：00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週水曜日(Google マップも水曜が定休日)",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "毎週水曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は3席",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "セット面3席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは2人",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "スタイリスト2人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット最終受付は18時、カラー・パーマ最終受付は要相談",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "カット最終受付18：00　カラー・パーマ最終受付要相談",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、近隣にコインパーキングがある",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "なし。近隣にコインパーキングあり。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "先代が40年前から営業していた店を居抜きで引き継いだ(店の記載)",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "先代の方が40年前から営業されていたお店を居抜きで引き継がせていただいてます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は神奈川県横須賀市根岸町1-7-20 渡辺ビル2階",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "神奈川県横須賀市根岸町１－７－２０　渡辺ビル２Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "カット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "水曜の定休日のほかに臨時休業日がある",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "水曜定休日以外で臨時休業日あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "内装はほぼそのまま",
+      "source": "https://beauty.hotpepper.jp/slnH000706929/",
+      "quote": "内装はほぼそのままですのでレトロな作りになってます",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000706929/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3794766852228851090"
+    }
+  ],
+  "notes": "営業時間・定休日は HP と Google マップが一致(10:00-19:00、水曜定休)。HP の「水曜定休日以外で臨時休業日あり」は本文に書いた。「髪質改善縮毛矯正」「お悩み改善」「口コミ4.98」・指名限定のクーポン・スタイリストの名前は使っていない。「先代から居抜きで引き継いだ」は店の自己申告に近いが事実の記述なので言い切りに近い形で書いた(確認してほしい点)。 【監査 lite-audit-5】見出し「2階の小さなサロン」は主観なので変えた。「約40年前」の「約」は quote に無いので外した。書き出しを他のヘアサロンと変えた。"
+}

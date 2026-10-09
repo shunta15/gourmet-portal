@@ -1,0 +1,22 @@
+{
+  "key": "beauty-99",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-99/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/680648_486c58fa7b1e4364a2abd3eee2b6edac~mv2.jpg",
+      "pageUrl": "https://www.sweet-vipok.com/",
+      "what": "肩と背中の施術の様子",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-99/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/680648_0c5995db7e4f44c1b11ddb685e08db94~mv2.jpg",
+      "pageUrl": "https://www.sweet-vipok.com/",
+      "what": "美顔機でのフェイシャル",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "note": ""
+}

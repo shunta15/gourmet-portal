@@ -1,0 +1,30 @@
+{
+  "key": "beauty-93",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-93/s1.jpg",
+      "imageUrl": "https://chant-m.com/wp-content/uploads/slide01.jpg",
+      "pageUrl": "http://chant-m.com/",
+      "what": "店の外観(スライダーから切出)",
+      "width": 630,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/beauty-93/s2.jpg",
+      "imageUrl": "https://chant-m.com/wp-content/uploads/slide02.jpg",
+      "pageUrl": "http://chant-m.com/",
+      "what": "店内のセット椅子(切出)",
+      "width": 630,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/beauty-93/s3.jpg",
+      "imageUrl": "https://chant-m.com/wp-content/uploads/slide03.jpg",
+      "pageUrl": "http://chant-m.com/",
+      "what": "シャンプー台(切出)",
+      "width": 630,
+      "height": 600
+    }
+  ],
+  "note": ""
+}

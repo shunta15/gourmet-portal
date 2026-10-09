@@ -1,0 +1,116 @@
+{
+  "key": "beauty-98",
+  "headline": "新宿駅南口近くの、ヘアセットとメイクを扱う美容院",
+  "lede": "新宿4丁目の冨美ビルにある美容院で、新宿駅南口から徒歩3分ほど、新宿三丁目駅の出口からも歩いてすぐです。店はヘアセットとメイクの専門店だと自ら説明しています。ネットの予約に対応し、支払いは現金のみです。",
+  "sections": [
+    {
+      "heading": "席数と店のきまり",
+      "body": "道順は、新宿駅南口改札を出て甲州街道をバスタ新宿の方へ渡るところから始まります。セット面は6席で、スタイリストは3人です。定休日は不定休で、駐車場はありません。土日のヘアセットは待ち時間を含めて60分前後を見込むよう案内があり、当日のキャンセルは全額の請求になると書かれています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ヘアセット"
+    },
+    {
+      "name": "メイク"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=9209132912062171965",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新宿区新宿4丁目1-19の冨美ビルにある",
+      "source": "https://maps.google.com/?cid=9209132912062171965",
+      "quote": "東京都新宿区新宿４丁目１−１９ 冨美ビル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新宿駅南口から徒歩3分、新宿三丁目駅から徒歩10秒と案内",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "新宿駅南口から徒歩3分/東京メトロ新宿3丁目から徒歩10秒",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店はヘアセットとメイクの専門店だと説明している",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "ヘアセットとメイクの専門店だからできるクオリティと価格",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は6席",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "セット面6席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは3人",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "スタイリスト3人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "現金のみ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はない",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "なし/ヘアセット/メイク/新宿ヘアセット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "即時予約に対応している",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "ポイント利用OK、即時予約OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日キャンセルは全額請求",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "当日キャンセルは全額ご請求となります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道順は新宿駅南口改札を出て甲州街道をバスタ新宿の方へ渡る",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "新宿駅南口改札を出て大きな道路(甲州街道)をバスタ新宿の方へ渡って",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土日のヘアセットは待ち時間を含め60分前後",
+      "source": "https://beauty.hotpepper.jp/slnH000587354/",
+      "quote": "土日のヘアセットは待ち時間含め60分前後みて頂いております",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000587354/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9209132912062171965"
+    }
+  ],
+  "notes": "営業時間は食い違うため本文に書いていない: ホットペッパーは「土・日・祝7:00〜17:00／平日9:00〜18:00」、Google マップは月曜が7:00〜17:00(火〜金は9:00〜18:00)。料金・クーポン・口コミ・評価は使っていない。メイクは「豊富なメイクメニュー」の記載のみで個別名は載せていない。"
+}

@@ -1,0 +1,117 @@
+{
+  "key": "beauty-47",
+  "headline": "名古屋・伏見駅から徒歩2分の、年中無休の美容室",
+  "lede": "地下鉄の伏見駅5番出口から近い、名古屋市中区栄2丁目の美容室です。清水ビルの2階にあり、平日と土曜は21時まで営業しています。ショートヘアを得意とすることをうたい、席は4席です。",
+  "sections": [
+    {
+      "heading": "営業日と設備",
+      "body": "営業時間は平日が11時から21時、土曜が10時から21時、日曜と祝日が10時から19時で、年中無休と案内されています。スタイリスト3人とアシスタント1人の体制です。専用の駐車場はなく、近隣の有料駐車場を使う案内です。店内は禁煙で、掲載ページでは、お子さま同伴可とも案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "似合わせカット"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 4
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=6175956008011077236",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "名古屋市中区栄2丁目10-3の清水ビル2階にある",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "愛知県名古屋市栄２丁目１０−３清水ビル2F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "伏見駅から徒歩2分",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "伏見駅より徒歩2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "伏見駅5番出口を出てまっすぐ進む道順が案内されている",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "伏見駅5番出口を出てまっすぐ歩き",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は平日11〜21時、土曜10〜21時、日曜・祝日10〜19時(Google マップの曜日別の時間と一致)",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "平日11:00～21:00 土曜10:00～21:00 日祝10:00～19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は年中無休",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "定休日 年中無休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "席数は4席",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "席数 4席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト3人とアシスタント1人",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "スタイリスト3人 / アシスタント1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、近隣の有料駐車場を使う",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "なし。近隣有料Pをご利用下さい。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴可",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "お子さま同伴可 禁煙",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店内は禁煙",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "お子さま同伴可 禁煙",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートヘアを得意とすることをうたっている",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "再現性の高いお手入れ簡単ショートが得意です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "似合わせカットのメニューがある",
+      "source": "https://hairbook.jp/salons/5720/",
+      "quote": "似合わせカット＋3step TR",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ヘアブック(店が Google マップに載せているページ)",
+      "url": "https://hairbook.jp/salons/5720/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6175956008011077236"
+    }
+  ],
+  "notes": "公式サイトの代わりに、place.website のヘアブックの店ページを使った(STORE-LITE 規則3)。受賞・順位・人気・クーポンは使っていない。営業時間は Google マップと一致。 [監査 lite-audit-2] 子連れ可タグを外した(根拠が掲載ページの設備欄の表示だけ)。ショート得意の fact は quote を「得意です」の文に差し替えた。"
+}

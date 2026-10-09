@@ -1,0 +1,131 @@
+{
+  "key": "beauty-33",
+  "headline": "三郷市中央のヘアサロン。毎日9時から18時、定休日なし",
+  "lede": "garden misato(ガーデン ミサト)は、埼玉県三郷市中央にあるヘアサロンです。つくばエクスプレスの三郷中央駅から徒歩5分と案内されています。営業は9時から18時までで、定休日はありません。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は5席で、スタイリスト7人とアシスタント2人の体制です。完全予約制で、支払いは完全キャッシュレスと記載されています。タブレットによる雑誌の提供、Wi-Fi、充電器が備えられ、駐車場はありません。銀座・表参道を中心に14店舗を展開するGARDENのサロンであるとうたっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "ヘッドスパ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=15148642963971554001",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "つくばエクスプレス三郷中央駅徒歩5分",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "つくばエクスプレス　三郷中央駅　徒歩５分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜18:00(Google マップも毎日9:00–18:00)",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "9:00～18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日はない",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "定休日\tなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は5席",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト7人・アシスタント2人",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "スタイリスト7人／アシスタント2人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは完全キャッシュレス",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "☆完全キャッシュレスになります☆",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "タブレットによる雑誌の提供・Wi-Fi・充電器",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "■タブレットによる雑誌の個別提供■wifi完備■充電器完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はない",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "駐車場\tなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "銀座・表参道中心に14店舗展開するGARDENのサロンとうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "銀座・表参道中心に14店舗展開するGARDENのプライベートサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "カット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカラーがある",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "カット＋リタッチカラー＋頭皮ケア",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "ヘッドスパ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は埼玉県三郷市中央1-17-9 タチェット三郷中央001",
+      "source": "https://beauty.hotpepper.jp/slnH000722879/",
+      "quote": "埼玉県三郷市中央１－１７－９ タチェット三郷中央００１",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000722879/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15148642963971554001"
+    }
+  ],
+  "notes": "営業時間・定休日は HP と Google マップが一致(毎日9:00-18:00)。「GARDEN 14店舗」「プライベートサロン」は店の自己申告なので「うたう」の形にした。「10日間の技術保証」・料金・口コミ・スタイリストの名前・「髪質改善」「お悩み解消カット」は使っていない。メニュー名は HP のクーポンのカテゴリ名(カット/グレイカラー/ヘッドスパ)から。 【監査 lite-audit-5】メニュー名「グレイカラー」は「〜が得意なサロン」の自己申告ラベルだけが根拠だったため「カラー」(クーポンのカテゴリ名)に変えた。書き出しを他のヘアサロンと変えた。"
+}

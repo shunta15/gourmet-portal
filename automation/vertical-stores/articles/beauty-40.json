@@ -1,0 +1,134 @@
+{
+  "key": "beauty-40",
+  "headline": "駒沢大学駅から徒歩8分。完全予約制のヘアサロン",
+  "lede": "東京都世田谷区駒沢にある「j'aime la presence(ジェム ラ プレゼンス)」は、田園都市線の駒沢大学駅から徒歩8分のヘアサロンです。EMハイツ駒沢の1階にあり、完全予約制です。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は5席、スタイリストは3人です。当日の予約も可能と案内されています。駐車場はありません。支払いはクレジットカードの各ブランドに対応していますが、カードには利用できる金額の条件があります。ホットペッパービューティーのページは、シャンプーやトリートメントなどの薬剤にこだわり、ハーブティーを出すと案内しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "パーマ"
+    },
+    {
+      "name": "ヘッドスパ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "当日予約可",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=10032450106485374768",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "田園都市線・駒沢大学駅徒歩8分",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "田園都市線『駒沢大学』駅徒歩８分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日の予約も可能",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "当日のご予約も可能です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は5席",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは3人",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "スタイリスト3人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はない",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "駐車場\tなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カードの利用に金額の条件がある",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "☆カードのご利用は",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプー・トリートメントなどの薬剤にこだわりを持つと案内",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "シャンプー・トリートメントなど全ての薬剤にもこだわりを持って提供しています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は東京都世田谷区駒沢2-40-2 EMハイツ駒沢1F",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "東京都世田谷区駒沢２-40-2　EMハイツ駒沢１F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "身も心も温まるハーブティーを出すと案内",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "身も心も温まるハーブティーで内側からキレイに☆",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "カット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカラーがある",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "カラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにパーマがある",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "パーマ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/slnH000253656/",
+      "quote": "ヘッドスパ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップの予約リンクの店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000253656/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10032450106485374768"
+    }
+  ],
+  "notes": "gbp に website が無いため、Google マップの予約リンク(storeId=H000253656)と同じ店のホットペッパービューティーのページを使った。住所・番地・店名が gbp と一致、電話は HP に非表示だが web 検索の結果と gbp が 03-5481-3377 で一致。営業時間・定休日が食い違うため本文に書いていない: HP は毎週火曜・第1/3水曜・第2/4月曜が定休、Google マップは月曜と水曜の扱いが違う(水曜は毎週定休、月曜は営業)。「髪質改善」「頭皮改善」「育毛」「口コミ平均」・オーナーの名前・クーポンは使っていない。メニュー名は HP のクーポン名・カテゴリから。「ヘッドスパ」は『maak spa』のカテゴリ名として載っているもの。 【監査 lite-audit-5】【店の特定の確認】HP(slnH000253656)の構造化データ(JSON-LD)に telephone=03-5481-3377・address=東京都世田谷区駒沢2-40-2 EMハイツ駒沢1F・名称「ジェムラプレゼンス(j'aime la presence)」があり、gbp(03-5481-3377・駒沢2丁目40-2)と一致。Google マップの予約リンクも同じ storeId。「東急」は出どころに無いので外した。タグ「当日予約可」は店主の自由記述(当日のご予約も可能です)が根拠で、条件欄ではない。"
+}

@@ -1,0 +1,119 @@
+{
+  "key": "beauty-59",
+  "headline": "柏市豊四季にある、駐車場4台の美容室",
+  "lede": "千葉県柏市豊四季の美容室で、縮毛矯正、白髪染め、ハイライトなどの名前が案内文に並んでいます。席はセット面が7席、スタイリスト3人とアシスタント1人の体制で、完全予約制です。",
+  "sections": [
+    {
+      "heading": "駅からの道と営業日",
+      "body": "アーバンパークラインの豊四季駅北口改札を出てまっすぐ進み、最初の信号を渡って100メートルほど先にあります。営業時間は平日が9時から17時30分、土日祝が9時から18時で、定休日は火曜日です。駐車場は4台分あり、支払いはカードと各種キャッシュレス決済が使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "縮毛矯正"
+    },
+    {
+      "name": "白髪染め"
+    },
+    {
+      "name": "ハイライト"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=11408289121740325689",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "柏市豊四季197-1にある",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "千葉県柏市豊四季197-1 101",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "豊四季駅北口改札を出てまっすぐ進み、最初の信号を渡って100メートルほど先",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "豊四季駅北口改札を出て頂き、真っすぐ歩いて1つ目の信号を渡りましたらその先100メートル程",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄り駅から徒歩3分以内と案内されている",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "最寄り駅から徒歩3分以内にある",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は平日9時〜17時30分、土日祝9時〜18時(Google マップと一致)",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "【平日】9時～17時30分（カット最終受付16時30分）・【土曜、日曜日・祝日】9時～18時",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は火曜日(Google マップと一致)",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "定休日 火曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面7席",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "セット面7席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト3人／アシスタント1人",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "スタイリスト3人／アシスタント1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は4台",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "4台【柏/流山おおたかの森/豊四季/流山】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカードと各種キャッシュレス決済が使える",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "Paypay,ID,QuicPay,交通系,各種キャッシュレス決済可能",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正・白髪染め・ハイライトの名前が案内文に並んでいる",
+      "source": "https://beauty.hotpepper.jp/slnH000560736/",
+      "quote": "縮毛矯正/白髪染め/ハイライト",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000560736/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11408289121740325689"
+    }
+  ],
+  "notes": "Google マップの名称は「アッセンブル ビューティーアンドスパ」、掲載ページの名称は「アッセンブル(ASSEMBLE)」。住所(豊四季197-1)と電話(04-7161-2467)が一致するため同じ店と判断した。営業時間・定休日は Google マップと一致。「髪質改善」を含む語は使っていない。 [監査 lite-audit-2] 子連れ可タグを外した(根拠が掲載ページのこだわり条件の表示だけ)。"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-122",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-122/s1.jpg",
+      "imageUrl": "https://www.minamisakura.jp/manasys/wp-content/uploads/img-01.jpg",
+      "pageUrl": "https://www.minamisakura.jp/",
+      "what": "院内の施術ベッドと機器",
+      "width": 532,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-122/s2.jpg",
+      "imageUrl": "https://www.minamisakura.jp/manasys/wp-content/uploads/adress-img.jpg",
+      "pageUrl": "https://www.minamisakura.jp/",
+      "what": "店の外観と看板",
+      "width": 532,
+      "height": 300
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-128",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-128/s1.jpg",
+      "imageUrl": "https://www.alpha20191001.com/wp-content/uploads/image1.jpg",
+      "pageUrl": "https://www.alpha20191001.com/",
+      "what": "店の外観(看板と入口)",
+      "width": 1200,
+      "height": 480
+    },
+    {
+      "path": "/_portal/vshops/bodycare-128/s2.jpg",
+      "imageUrl": "https://www.alpha20191001.com/wp-content/uploads/image3.jpg",
+      "pageUrl": "https://www.alpha20191001.com/",
+      "what": "ベッドが並ぶ施術室",
+      "width": 1200,
+      "height": 480
+    }
+  ],
+  "note": ""
+}

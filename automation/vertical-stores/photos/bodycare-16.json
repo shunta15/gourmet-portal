@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-16",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-16/s1.jpg",
+      "imageUrl": "http://doi-sekkotuin.com/_img/ja/article/1322/image/_/",
+      "pageUrl": "http://doi-sekkotuin.com/",
+      "what": "土肥接骨院の入口",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/bodycare-16/s2.jpg",
+      "imageUrl": "http://doi-sekkotuin.com/_img/ja/article/1337/image/_/",
+      "pageUrl": "http://doi-sekkotuin.com/",
+      "what": "受付と院内の機器",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/bodycare-16/s3.jpg",
+      "imageUrl": "http://doi-sekkotuin.com/_img/ja/article/1333/image/_/",
+      "pageUrl": "http://doi-sekkotuin.com/",
+      "what": "待合室のベンチと観葉植物",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "note": ""
+}

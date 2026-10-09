@@ -1,0 +1,29 @@
+{
+  "key": "beauty-46",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-46/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ed5d2b_379c63815ac146ab8abf951fb7171aa8~mv2.jpeg",
+      "pageUrl": "https://www.familiar-obihiro.com/home-1",
+      "what": "ソファでのカウンセリング風景",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-46/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ed5d2b_51743bf4f65e4bafb36bba3bce1b89a4~mv2.jpeg",
+      "pageUrl": "https://www.familiar-obihiro.com/home-1",
+      "what": "光脱毛機器での施術の様子",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-46/s3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ed5d2b_d26981f8305a459fb4eff14d4da0f9d6~mv2.jpeg",
+      "pageUrl": "https://www.familiar-obihiro.com/home-1",
+      "what": "フェイスの光脱毛施術",
+      "width": 871,
+      "height": 580
+    }
+  ]
+}

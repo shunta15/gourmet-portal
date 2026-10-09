@@ -1,0 +1,21 @@
+{
+  "key": "beauty-21",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-21/s1.jpg",
+      "imageUrl": "http://www.koritoru-kanno.com/image/DSC_0008.JPG",
+      "pageUrl": "http://www.koritoru-kanno.com/salon.html",
+      "what": "サロン内の飾り棚",
+      "width": 670,
+      "height": 450
+    },
+    {
+      "path": "/_portal/vshops/beauty-21/s2.jpg",
+      "imageUrl": "http://www.koritoru-kanno.com/image/DSC09349.JPG",
+      "pageUrl": "http://www.koritoru-kanno.com/salon.html",
+      "what": "施術ベッドとタオル",
+      "width": 678,
+      "height": 500
+    }
+  ]
+}

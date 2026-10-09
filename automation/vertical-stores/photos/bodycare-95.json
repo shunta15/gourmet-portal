@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-95",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-95/s1.jpg",
+      "imageUrl": "https://xfyojqydkqqjsepkpgpg.supabase.co/storage/v1/object/public/photos/hero/1788006087068_5ziimm.jpg",
+      "pageUrl": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "what": "施術室で説明するスタッフ",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "path": "/_portal/vshops/bodycare-95/s2.jpg",
+      "imageUrl": "https://xfyojqydkqqjsepkpgpg.supabase.co/storage/v1/object/public/photos/menu/1783941750533_3idr83.jpg",
+      "pageUrl": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "what": "背中の施術の様子",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/bodycare-95/s3.jpg",
+      "imageUrl": "https://xfyojqydkqqjsepkpgpg.supabase.co/storage/v1/object/public/photos/menu/1783941761821_jkme3i.jpg",
+      "pageUrl": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "what": "機器を使う施術の様子",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,29 @@
+{
+  "key": "beauty-7",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-7/s1.jpg",
+      "imageUrl": "https://aquabell-hairstudio.com/images/convert/aquabell-hairstudiocom/20250210171456.jpg/image.webp",
+      "pageUrl": "https://aquabell-hairstudio.com/",
+      "what": "入口と店名看板の外観",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-7/s2.jpg",
+      "imageUrl": "https://aquabell-hairstudio.com/images/convert/aquabell-hairstudiocom/20250210171513.jpg/image.webp",
+      "pageUrl": "https://aquabell-hairstudio.com/",
+      "what": "施術ベッドのある部屋",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-7/s3.jpg",
+      "imageUrl": "https://aquabell-hairstudio.com/images/convert/aquabell-hairstudiocom/20250124140727.jpg/image.webp",
+      "pageUrl": "https://aquabell-hairstudio.com/",
+      "what": "シャンデリアのある店内",
+      "width": 1200,
+      "height": 900
+    }
+  ]
+}

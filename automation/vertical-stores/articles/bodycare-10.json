@@ -1,0 +1,157 @@
+{
+  "key": "bodycare-10",
+  "headline": "名古屋市北区鳩岡にある、駐車場を備えた接骨院",
+  "lede": "柔道整復師の免許を持つスタッフが施術を行うと案内している、愛知県名古屋市北区鳩岡2丁目の接骨院です。駐車場があり、近くのバス停からは180メートルと案内されています。予約は電話とLINEで受け付けています。",
+  "sections": [
+    {
+      "heading": "自費のコースと保険",
+      "body": "自費のメニューには、部位ごとのボディコース、全身のボディコース、全身ストレッチコース、脊柱・骨盤矯正、フットケアコース、JOYトレなどがあります。土日祝日の自費の施術は事前予約で受け付けています。保険を使う施術コースも案内されていますが、適用の範囲は店に確かめる必要があります。出張施術にも対応しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "部位ボディコース",
+      "minutes": 20
+    },
+    {
+      "name": "全身ボディコース",
+      "minutes": 60
+    },
+    {
+      "name": "全身スペシャルボディコース",
+      "minutes": 120
+    },
+    {
+      "name": "全身ストレッチコース"
+    },
+    {
+      "name": "脊柱・骨盤矯正",
+      "minutes": 30
+    },
+    {
+      "name": "フットケアコース"
+    },
+    {
+      "name": "アイヘッド コース"
+    },
+    {
+      "name": "JOYトレ"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "愛知県名古屋市北区鳩岡2-19-16にある",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "愛知県名古屋市北区鳩岡2-19-16",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場がある(台数は公式サイト内で表記が分かれるため本文には書かない)",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "お車でお越しいただけるよう駐車場完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄りのバス停から180メートル",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "最寄りのバス停から180メートルのロケーション",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "国家資格の柔道整復師の免許を持つスタッフが施術を行うと案内している",
+      "source": "https://yamato-seikotsuin.com/",
+      "quote": "国家資格である柔道整復師の免許を持つスタッフが整体、施術（マッサージ）を行います",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話とLINEで予約できる",
+      "source": "https://yamato-seikotsuin.com/",
+      "quote": "LINE予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土日祝日の自費の施術は事前予約で対応する",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "土日祝日も事前予約にて自費の施術に対応いたします",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険適用の施術コースがあると案内している(適用の範囲は店に確かめる必要がある)",
+      "source": "https://yamato-seikotsuin.com/",
+      "quote": "保険適用の施術コースを豊富にご用意",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "出張施術にも対応している",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "出張施術、出張マッサージ可",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払い方法はJCB、VISA、アメックス、マスターカード、各種Pay決済",
+      "source": "https://yamato-seikotsuin.com/access/",
+      "quote": "JCB、VISA、アメックス、マスターカード 各種Pay決済対応",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "部位ボディコースは20分",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "部位ボディコース【20分】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身ボディコースは60分",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "全身ボディコース 【60分】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身スペシャルボディコースは120分",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "全身スペシャルボディコース 【120分】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身ストレッチコースがある",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "全身ストレッチコース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "脊柱・骨盤矯正は約30分",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "脊柱・骨盤矯正 約30分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フットケアコースがある",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "フットケアコース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アイヘッド コースがある",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "アイヘッド コース",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JOYトレを導入している",
+      "source": "https://yamato-seikotsuin.com/own_expense_menu/",
+      "quote": "JOYトレ導入しました",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://yamato-seikotsuin.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10505493206539276966"
+    }
+  ],
+  "notes": "Googleマップの名前は『大和治療院』、公式サイトの題名は『大和整骨院』(整骨院概要の表記は『大和治療院』)。発注者が同じ店と確認済みの行。電話052-938-3477は一致。営業時間は、Googleマップ(毎日9:00-21:00、日曜は-20:30)と公式サイト(概要は9:00-21:00・火曜休、自費メニューのページは月〜土9:00-20:30・日祝9:00-20:00・火曜休診)で食い違うため本文に書かず、タグも付けていない。駐車場の台数は、アクセスのページの文は15台、設備欄は1台と食い違うため書かなかった。メニュー名のうち『小顔矯正』『保険延長治療』は決まりにより載せていない。料金は載せていない。種類は接骨院(sekkotsu)とした: 公式サイトが接骨院を名乗り、柔道整復師のスタッフが在籍すると案内している。 【監査 lite-audit-1】種類(接骨院)の根拠を、公式サイトの自称(「名古屋の接骨院として…大和整骨院」・柔道整復師)で補強。医院・クリニックの名乗りは無い。本文は問題なし。"
+}

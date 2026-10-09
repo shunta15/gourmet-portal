@@ -1,0 +1,137 @@
+{
+  "key": "beauty-100",
+  "headline": "西新宿7丁目にある、夜10時まで営業の美容院",
+  "lede": "西新宿7丁目のビル2階にある美容院です。新宿西口駅、西武新宿駅、大久保駅から徒歩6分、JR新宿駅から徒歩9分と案内されています。営業は毎日夜10時までで、予約は完全予約制です。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "道順は、新宿大ガード西の交差点から小滝橋通りを道なりに進むと案内されています。セット面は5席、スタイリストは5人です。掲載ページの条件欄には「個室あり」「半個室あり」の記載があり、禁煙で、ドリンクのサービスもあります。女性スタッフが多いとも載っています。支払いはクレジットカードで、駐車場はありません。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "トリートメント"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=3860700915004218809",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新宿区西新宿7丁目7-28の2階にある(ビル名は掲載ページと Google マップで表記が異なるため本文に書かない)",
+      "source": "https://maps.google.com/?cid=3860700915004218809",
+      "quote": "東京都新宿区西新宿７丁目７−２８ 山本ビル 2Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新宿駅西口、西武新宿駅、大久保駅から徒歩6分前後と案内(新宿駅は9分)",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "JR新宿駅徒歩9分/新宿西口駅徒歩６分/西武新宿駅徒歩６分/大久保駅徒歩６分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は10:00〜22:00(カット最終受付21:00)",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "10:00～22:00（カット最終受付21:00）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日10:00–22:00",
+      "source": "https://maps.google.com/?cid=3860700915004218809",
+      "quote": "\"月\": \"10:00–22:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日はなし",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "定休日\tなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は5席",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "条件欄に個室あり・半個室ありと載っている",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "個室あり／半個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは5人",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "スタイリスト5人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "禁煙、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "禁煙／ドリンクサービスあり／個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性スタッフが多い",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "女性スタッフが多い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカード各種",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "Visa／Mastercard／JCB／American Express／Diners Club",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はない",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "駐車場\tなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカット、カラー、トリートメントがある",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "カットカラートリートメントその他",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道順は新宿大ガード西の交差点から小滝橋通りを道なりに",
+      "source": "https://beauty.hotpepper.jp/slnH000682248/",
+      "quote": "小滝橋通りを道なりに進んで",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000682248/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3860700915004218809"
+    }
+  ],
+  "notes": "営業時間・定休日は公式とGoogle マップが一致。駅徒歩は9分/6分の併記のため「駅近」は付けていない。店名の「髪質改善専門店」とオージュア関連の記載、全席個室をうたう記載は、効き目・自己申告の語にあたるため載せていない(個室は条件欄の記載のみ)。料金・口コミ・クーポンは使っていない。 【監査 lite-audit-3】「個室あり」タグを外した(条件欄だけが根拠。本文は「掲載ページの条件欄には〜の記載」の形)。駅は「新宿西口駅」(都営大江戸線)を「新宿駅西口」と書いていたため、分数つきの表記に直した。ビル名は掲載ページが「第一山本ビル」、Google マップが「山本ビル」と食い違うため本文から外した。"
+}

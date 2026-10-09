@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-102",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-102/s1.jpg",
+      "imageUrl": "https://ushio.seitai-in.jp/lp/images/flow-01.jpg",
+      "pageUrl": "https://ushio.seitai-in.jp/lp/koshi/",
+      "what": "施術者が施術する様子",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-102/s2.jpg",
+      "imageUrl": "https://ushio.seitai-in.jp/lp/images/flow-02.jpg",
+      "pageUrl": "https://ushio.seitai-in.jp/lp/koshi/",
+      "what": "施術室で施術する様子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

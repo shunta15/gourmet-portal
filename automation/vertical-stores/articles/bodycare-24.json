@@ -1,0 +1,108 @@
+{
+  "key": "bodycare-24",
+  "headline": "上田市上丸子の、整骨と鍼灸、カイロプラクティックの院",
+  "lede": "地域ポータルの店舗ページには、整骨、鍼、灸、カイロプラクティック、美容鍼のメニューが載っている、長野県上田市上丸子の鍼灸整骨院です。コンセプトには「明るく楽しく元気良く！」を掲げています。",
+  "sections": [
+    {
+      "heading": "保険と休診日",
+      "body": "整骨について、地域ポータルの店舗ページは各種の保険を扱うと案内していますが、適用の範囲は店に確かめる必要があります。Googleマップでは日曜が定休日と表示されています。休診日や院長不在の日は、月ごとのお知らせとして掲載されています。電話番号は0268-71-7396です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "整骨"
+    },
+    {
+      "name": "鍼"
+    },
+    {
+      "name": "灸"
+    },
+    {
+      "name": "カイロプラクティック"
+    },
+    {
+      "name": "美容鍼"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "長野県上田市上丸子1663にある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/access.html",
+      "quote": "長野県上田市上丸子1663",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "治療院の種類として整骨、鍼灸、カイロプラクティック、カッピング、美容鍼などを案内している",
+      "source": "https://www.hi-yorokonde.com/detail/1854/index.html",
+      "quote": "鍼灸治療・カイロプラクティック・カッピング療法・美容鍼等",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに整骨がある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "骨折、脱臼、捻挫、打撲、肉離れ等の治療",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに鍼がある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "電気鍼、トリガーポイント治療",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに灸がある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "上質もぐさを使用",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "整骨について各種保険を扱うと案内している(適用の範囲は店に確かめる必要がある)",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "各種保険適応しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "コンセプトは「明るく楽しく元気良く！」",
+      "source": "https://www.hi-yorokonde.com/detail/1854/index.html",
+      "quote": "「明るく楽しく元気良く！」がコンセプト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "10月分の休診日と院長不在の日のお知らせが載っている",
+      "source": "https://www.hi-yorokonde.com/detail/1854/access.html",
+      "quote": "また、10月は院長不在の日があります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "9月分の休診日のお知らせも載っている",
+      "source": "https://www.hi-yorokonde.com/detail/1854/index.html",
+      "quote": "9月の休診のお知らせ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップでは日曜が定休日",
+      "source": "https://maps.google.com/?cid=3987178130500640625",
+      "quote": "定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は0268-71-7396",
+      "source": "https://www.hi-yorokonde.com/detail/1854/access.html",
+      "quote": "TEL：0268-71-7396",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "掲載ページ(地域ポータル「はい!よろこんで」・Googleマップに載っている公式のリンク先)",
+      "url": "https://www.hi-yorokonde.com/detail/1854/index.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3987178130500640625"
+    }
+  ],
+  "notes": "place.websiteは地域ポータル『はい!よろこんで』の店舗ページ(店自前のサイトではない)。使ったのは事実だけ。営業時間は公式側に記載が無く、Googleマップ(月〜金9:00-20:00・土9:00-15:00・日定休)のみのため、時間は書かず、日曜定休だけ『Googleマップでは』と断って書いた。料金表(保険の自己負担別の料金・鍼の本数別の料金・灸の料金)、『治療』『療法』『温熱効果』などの語、美容鍼の説明、10月の個別の休診日・院長不在の日は書かなかった。『カッピング療法』は名前に『療法』を含むため載せていない。 【監査 lite-audit-1】ポータルのページは事実(メニューの種類・保険の案内・休診の掲示)だけを使っていることを確認。書き出しを変更。"
+}

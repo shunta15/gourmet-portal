@@ -1,0 +1,140 @@
+{
+  "key": "beauty-96",
+  "headline": "渋谷・円山町の、メンズ向けのメニューを並べる美容院",
+  "lede": "道玄坂を上った先、交番の裏にあるビルの美容院です。神泉駅から徒歩2分、JR渋谷駅から徒歩7分と案内されています。メンズのカットやパーマのメニューがあり、店はメンズ似合わせに特化したサロンとうたっています。",
+  "sections": [
+    {
+      "heading": "営業日と設備",
+      "body": "営業は毎日11時から22時で、最終受付は21時です。12月31日から1月4日は休みと案内されています。セット面は6席、スタイリストは3人とアシスタントが1人です。完全予約制で、向かいにコインパーキングがあります。お子さま同伴ができ、ドリンクのサービスもあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "メンズカット"
+    },
+    {
+      "name": "メンズパーマ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 3
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 9
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=3261067820293358582",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "渋谷区円山町7-5のGP Dogenzaka 3Fにある",
+      "source": "https://maps.google.com/?cid=3261067820293358582",
+      "quote": "東京都渋谷区円山町７−５ GP Dogenzaka 3F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "神泉駅から徒歩2分、JR渋谷駅から徒歩7分と案内",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "【JR渋谷駅】徒歩７分/【神泉駅】徒歩2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は11:00〜22:00、最終受付は21:00",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "11:00～22:00 ※最終受付時間　21:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日11:00–22:00",
+      "source": "https://maps.google.com/?cid=3261067820293358582",
+      "quote": "\"月\": \"11:00–22:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は12/31〜1/04",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "12/31～1/04",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにメンズカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "ツイストスパイラルパーマ/波巻きパーマ/シャドウ/メンズカット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズ似合わせ特化とうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "メンズ似合わせ特化",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は6席、スタイリスト3人、アシスタント1人",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "スタイリスト3人／アシスタント1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "お子さま同伴OK／分煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "向かいにコインパーキングがある",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "当サロン向かいにコインパーキング有",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は6席",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "セット面6席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにメンズパーマがある",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "メンズ/パーマ/メンズパーマ/ニュアンスパーマ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道玄坂を上り、道玄坂交番の裏のビル",
+      "source": "https://beauty.hotpepper.jp/slnH000742925/",
+      "quote": "道玄坂を上る→道玄坂交番の裏にあるビル",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000742925/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3261067820293358582"
+    }
+  ],
+  "notes": "営業時間は一致(毎日11:00〜22:00)。定休日は12/31〜1/4のみで、Google マップは通常曜日の休みを示さず矛盾しない。駅徒歩は神泉駅2分とJR渋谷駅7分の併記。料金・クーポン・口コミは使っていない。設備の「分煙」は載せていない。 【監査 lite-audit-3】lede の「メニューが中心で」は出どころ以上の言い方のため「メニューがあり」に改めた。 【監査 lite-audit-3】menus から「メンズカラー」(検索用キーワード欄にしか無い)と「眉毛カット」(期間限定クーポンの中にしか無い)を外し、対応する facts も外した。"
+}

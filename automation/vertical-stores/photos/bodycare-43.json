@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-43",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-43/s1.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/none/path/s278f08460e874033/image/i3ca69a53c4b6c4c9/version/1776497009/image.jpg",
+      "pageUrl": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "what": "店の外観(看板と入口)",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "path": "/_portal/vshops/bodycare-43/s2.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/none/path/s278f08460e874033/image/i090cf0d56d1b7dd1/version/1776497009/image.jpg",
+      "pageUrl": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "what": "待合室のソファと本棚",
+      "width": 696,
+      "height": 706
+    }
+  ],
+  "note": ""
+}

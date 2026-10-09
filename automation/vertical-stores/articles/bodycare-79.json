@@ -1,0 +1,119 @@
+{
+  "key": "bodycare-79",
+  "headline": "北山田駅から徒歩2分、ベッド1台の整体院",
+  "lede": "横浜市営地下鉄グリーンラインの北山田駅、1番出口から徒歩2分の整体院で、所在地は横浜市都筑区北山田です。施術は、骨格調整、筋肉のもみほぐし、フットケア、リンパドレナージュの中から、その人の状態を見て組み立てると、EPARKの掲載では案内されています。",
+  "sections": [
+    {
+      "heading": "予約と設備",
+      "body": "予約は電話か、EPARKリラク＆エステのネット予約で取ります。定休日は月曜日で、Google マップでも同じです。営業時間は、掲載ページの中で終わりの時刻の表記が分かれるため、来店前に店へ確かめる必要があります。設備はベッドが1台で、駐車場はなく、近隣にコインパーキングがあります。クレジットカードと、交通系IC・PayPayなどのキャッシュレス決済が使え、子ども同伴もできます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    },
+    {
+      "tag": "土日営業",
+      "factIndex": 12
+    }
+  ],
+  "facts": [
+    {
+      "claim": "神奈川県横浜市都筑区北山田2-2-12 ヨネビル港北1階にある",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "神奈川県横浜市都筑区北山田2-2-12 ヨネビル港北1F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "グリーンラインの北山田駅、出口1から徒歩2分",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "グリーンライン 北山田駅 駅出口1より徒歩2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "骨格調整・筋肉のもみほぐし・フットケア・リンパドレナージュから組み立てると案内している",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "骨格調整・筋肉のもみほぐし・フットケア・リンパドレナージュ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約電話番号は045-900-9033",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "予約専用電話番号 045-900-9033",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00(最終受付18:00)",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "10:00～19:00 / 最終受付18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は月曜日",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "月曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも月曜日は定休日、火曜は10:00–19:00",
+      "source": "https://maps.google.com/?cid=11983620692436055783",
+      "quote": "営業時間 月 定休日 営業時間 火 10:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はベッド1台",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "ベッド 1",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、近隣にコインパーキングがある",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "無(近隣にコインパーキング有)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレジットカードが使える",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "VISA / MasterCard / JCB / AmericanExpress / DinersClub / その他",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通系IC・PayPay・d払い・iD・QUICPayが使える",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "交通系IC / PayPay / d払い / iD / QUICPay",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子様同伴OK",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "お子様同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは土曜も日曜も10:00–19:00の営業日",
+      "source": "https://maps.google.com/?cid=11983620692436055783",
+      "quote": "営業時間 土 10:00–19:00 営業時間 日 10:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "掲載ページの別の箇所に「20時まで営業」の表記があり、営業時間の表(19:00・最終受付18:00)と食い違う",
+      "source": "https://mitsuraku.jp/salon/78078/",
+      "quote": "北山田駅から徒歩2分の立地で20時まで営業!",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPARKリラク＆エステ(Google マップに登録された店のページ)",
+      "url": "https://mitsuraku.jp/salon/78078/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11983620692436055783"
+    }
+  ],
+  "notes": "gbpのwebsiteはEPARKリラク＆エステの店ページ。事実のみ使用。メニュー名は「新規限定 人気No.1」「通常料金◯◯円」等を含むクーポン題のため載せず、本文で施術の組み合わせを書いた。小顔矯正は載せない。口コミ・評価・空席・オーナー名・料金・クーポンは不使用。 [lite-audit-4] 掲載ページの中で営業時間が食い違う(表は10:00-19:00・最終受付18:00、紹介文は20時まで)ため、時刻を本文から外した。土日営業は曜日(月曜だけ定休)で判断。"
+}

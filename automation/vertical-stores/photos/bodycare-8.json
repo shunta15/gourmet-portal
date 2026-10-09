@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-8",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-8/s1.jpg",
+      "imageUrl": "https://shibuyasekkotuinn.jp/images/convert/shibuyasekkotuinnjp/20240229033131.jpg/image.webp",
+      "pageUrl": "https://shibuyasekkotuinn.jp/",
+      "what": "施術室のベッドと椅子",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "path": "/_portal/vshops/bodycare-8/s2.jpg",
+      "imageUrl": "https://shibuyasekkotuinn.jp/images/convert/shibuyasekkotuinnjp/20240229033117.jpg/image.webp",
+      "pageUrl": "https://shibuyasekkotuinn.jp/",
+      "what": "店の外観と看板",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "path": "/_portal/vshops/bodycare-8/s3.jpg",
+      "imageUrl": "https://shibuyasekkotuinn.jp/images/convert/shibuyasekkotuinnjp/20240229033126.jpg/image.webp",
+      "pageUrl": "https://shibuyasekkotuinn.jp/",
+      "what": "受付と院内の様子",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "note": ""
+}

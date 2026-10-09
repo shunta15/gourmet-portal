@@ -1,0 +1,29 @@
+{
+  "key": "beauty-31",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-31/s1.jpg",
+      "imageUrl": "http://luka-hairdesign.com/wp-content/themes/luka-hairdesign.com/images/main_img_01.jpg",
+      "pageUrl": "http://luka-hairdesign.com/",
+      "what": "鏡とセット椅子のある店内",
+      "width": 1040,
+      "height": 552
+    },
+    {
+      "path": "/_portal/vshops/beauty-31/s2.jpg",
+      "imageUrl": "http://luka-hairdesign.com/wp-content/themes/luka-hairdesign.com/images/main_img_02.jpg",
+      "pageUrl": "http://luka-hairdesign.com/",
+      "what": "緑のオーニングの店の外観",
+      "width": 1040,
+      "height": 552
+    },
+    {
+      "path": "/_portal/vshops/beauty-31/s3.jpg",
+      "imageUrl": "http://luka-hairdesign.com/wp-content/themes/luka-hairdesign.com/images/main_img_05.jpg",
+      "pageUrl": "http://luka-hairdesign.com/",
+      "what": "シャンプー台のある店内",
+      "width": 1040,
+      "height": 552
+    }
+  ]
+}

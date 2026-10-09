@@ -1,0 +1,80 @@
+{
+  "key": "bodycare-19",
+  "headline": "スポーツのけがを扱うとうたう、東大阪市岸田堂西の整骨院",
+  "lede": "「スポーツ外傷(ケガ)専門」とうたう整骨院で、場所は大阪府東大阪市岸田堂西2丁目です。国家資格の柔道整復師を持つスタッフが担当すると案内されています。日曜と祝日が定休日で、向かいに駐車スペースがあります。",
+  "sections": [
+    {
+      "heading": "時間外の相談と予約",
+      "body": "営業時間外や休日に急なけがをした場合は、相談を受け付けていると案内されています。予約は電話で受け付けています。所在地は大阪府東大阪市岸田堂西2-1-10で、定休日の日曜はGoogleマップの表示とも一致しています。電話は06-6730-6665です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "大阪府東大阪市岸田堂西2-1-10にある",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/access",
+      "quote": "大阪府東大阪市岸田堂西2-1-10",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "向かいに駐車スペースがある",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/access",
+      "quote": "向かいに駐車スペース有り",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は日曜と祝日",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/access",
+      "quote": "定休日 日・祝",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "「スポーツ外傷(ケガ)専門」とうたっている",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/",
+      "quote": "スポーツ外傷（ケガ）専門",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "国家資格(柔道整復師)を持つスタッフが担当すると案内している",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/",
+      "quote": "国家資格（柔道整復師）を持ったスタッフが",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "時間外や休日の急なけがは相談を受け付ける",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/guide",
+      "quote": "診療時間外や休日などで、急なケガをした場合は、ご相談ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップでは日曜が定休日",
+      "source": "https://maps.google.com/?cid=11410798956745854514",
+      "quote": "定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は06-6730-6665",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/access",
+      "quote": "06-6730-6665",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話で受け付ける",
+      "source": "http://nakayama-seikotsuin-kishidadou.com/access",
+      "quote": "お電話にてご予約ください",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://nakayama-seikotsuin-kishidadou.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11410798956745854514"
+    }
+  ],
+  "notes": "営業時間は、公式サイトの表では水曜午後が休みだが、Googleマップは水曜16:00-21:00も営業と表示しており食い違うため、本文に時間を書かずタグも付けていない。定休日(日・祝)は両方で一致(Googleマップは日曜のみ表示)。Googleマップの業種は『スポーツ整形外科』だが、公式サイトは整骨院を名乗り柔道整復師のスタッフが担当と案内しているため、種類は整骨院(sekkotsu)とした(病院・医院ではない)。公式サイトの『診察』『治療機器』『医学的根拠』『診断』などの語、機器の効果の説明、院長の経歴・実績(プロ選手の帯同など)・人の名前は書かなかった。電話06-6730-6665は一致。 【監査 lite-audit-1】「楽トレ」(効き目を思わせる語を含む名前と説明)と、エコー・ギプス固定(医療機器・医療処置を思わせる)の文を削除。「公式サイトの施術案内には」はページ名のため「公式サイトには」に。"
+}

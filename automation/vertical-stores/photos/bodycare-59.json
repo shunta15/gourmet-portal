@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-59",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-59/s1.jpg",
+      "imageUrl": "https://seikotsuinhirashita.com/wp-content/uploads/2024/01/801dec246a08bab672d3df5c0024b572-scaled.jpg",
+      "pageUrl": "https://seikotsuinhirashita.com/",
+      "what": "受付と待合のスペース",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-59/s2.jpg",
+      "imageUrl": "https://seikotsuinhirashita.com/wp-content/uploads/2024/01/fe540042df166655ff101eedeef87b44-scaled.jpg",
+      "pageUrl": "https://seikotsuinhirashita.com/",
+      "what": "カーテンで仕切る施術室",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-42",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-42/s1.jpg",
+      "imageUrl": "https://www.mibuoomiyaseikothuin.com/60001938/wp-content/uploads/2014/12/DSC_2415.jpg",
+      "pageUrl": "https://www.mibuoomiyaseikothuin.com/information",
+      "what": "施術ベッドのある個室",
+      "width": 640,
+      "height": 425
+    },
+    {
+      "path": "/_portal/vshops/bodycare-42/s2.jpg",
+      "imageUrl": "https://www.mibuoomiyaseikothuin.com/60001938/wp-content/uploads/2014/12/DSC_2416.jpg",
+      "pageUrl": "https://www.mibuoomiyaseikothuin.com/information",
+      "what": "治療機器のある個室",
+      "width": 640,
+      "height": 425
+    },
+    {
+      "path": "/_portal/vshops/bodycare-42/s3.jpg",
+      "imageUrl": "https://www.mibuoomiyaseikothuin.com/60001938/wp-content/uploads/2014/12/DSC_2395.jpg",
+      "pageUrl": "https://www.mibuoomiyaseikothuin.com/information",
+      "what": "機器とモニターのある部屋",
+      "width": 640,
+      "height": 425
+    }
+  ],
+  "note": ""
+}

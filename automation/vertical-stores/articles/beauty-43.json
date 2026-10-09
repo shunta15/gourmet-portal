@@ -1,0 +1,138 @@
+{
+  "key": "beauty-43",
+  "headline": "名古屋市天白区塩釜口、火曜休みで駐車場3台のヘアサロン",
+  "lede": "愛知県名古屋市天白区塩釜口にある「obtenir(オプトゥニール)」は、公式サイトで「hair design」と名乗るヘアサロンです。営業は10時から19時まで、定休日は火曜日です。",
+  "sections": [
+    {
+      "heading": "メニューと設備",
+      "body": "メニューは、Cut、Color、Perm、Treatment、HeadSPAのほか、着付けとメイクの項目があり、着付けは要予約です。予約優先と案内されていて、駐車場は3台分あります。住所はK-ROSS ROADの2階で、連絡先としてメールアドレスと電話番号が載っています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "Cut"
+    },
+    {
+      "name": "Color"
+    },
+    {
+      "name": "Perm"
+    },
+    {
+      "name": "Treatment"
+    },
+    {
+      "name": "HeadSPA"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=14975322119345939278",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトは「hair design」と名乗る",
+      "source": "https://www.obtenir21.com/",
+      "quote": "hair design",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00(Google マップも10:00–19:00)",
+      "source": "https://www.obtenir21.com/access-cw7k",
+      "quote": "OPEN 1 0 : 0 0 ~ 1 9 : 0 0",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は火曜日(Google マップも火曜が定休日)",
+      "source": "https://www.obtenir21.com/access-cw7k",
+      "quote": "CLOSE 火曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約優先と案内されている。駐車場は3台",
+      "source": "https://www.obtenir21.com/access-cw7k",
+      "quote": "予約優先 🅿️ ３台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにHeadSPAがある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "HeadSPA",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにCutがある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "Cut",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにColorがある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "Color",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにPermがある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "Perm",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにTreatmentがある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "Treatment",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにメイクの項目がある",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "Make",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの住所はK-ROSS ROADの2階",
+      "source": "https://maps.google.com/?cid=14975322119345939278",
+      "quote": "K-ROSS ROAD 2F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに着付けがあり要予約",
+      "source": "https://www.obtenir21.com/menu-c11w8",
+      "quote": "着付け 要予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は愛知県名古屋市天白区塩釜口1丁目855",
+      "source": "https://www.obtenir21.com/access-cw7k",
+      "quote": "愛知県名古屋市天白区塩釜口１丁目８５５",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "連絡先としてメールアドレスが載っている",
+      "source": "https://www.obtenir21.com/",
+      "quote": "obtenir21@gmail.com",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は052-861-0130",
+      "source": "https://www.obtenir21.com/",
+      "quote": "052- 861- 0130",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.obtenir21.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14975322119345939278"
+    }
+  ],
+  "notes": "(確認してほしい点)前の担当は、メニューのページが2つあり(menu-c11w8 と menu-c46c)同じ項目の金額が食い違うため金額を載せられないとして見送っていた。今回は金額を一切書かない方針なので、メニュー名と、住所・営業日・駐車場・予約優先の事実だけで書いた。メニュー名は公式の表記(英語)のまま。2ページの項目の並びと金額は食い違うが、メニューの種類(Cut・Color・Perm・Treatment・HeadSPA・着付け・メイク)は同じ。営業時間・定休日は公式と Google マップが一致。「学割」の表記は割引のため載せていない。「K-ROSS ROAD 2F」はスプレッドシート/gbp の住所から(公式は塩釜口1丁目855まで)。 【監査 lite-audit-5】メニューの項目名(Cut・Color・Perm・Treatment・HeadSPA・Make・着付け要予約)は、食い違う2つのメニューページ(menu-c11w8 と menu-c46c)の両方に同じ名前である。fact の出どころ URL「/menu」「/access」は存在せず(404)、実在する menu-c11w8 と access-cw7k に直した。「予約優先」は駐車場の表示と同じ行にあり、駐車場だけに掛かるのか店全体なのか読み取れないため、本文では切り離して書いた。"
+}

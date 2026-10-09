@@ -1,0 +1,29 @@
+{
+  "key": "bodycare-40",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-40/s1.jpg",
+      "imageUrl": "https://tokushima.kashiwagura-seikotsuin.com/wp-content/uploads/2019/11/DSC_9160-min-e1628969819826.jpg",
+      "pageUrl": "https://tokushima.kashiwagura-seikotsuin.com/",
+      "what": "院内のカウンセリングの様子",
+      "width": 899,
+      "height": 359
+    },
+    {
+      "path": "/_portal/vshops/bodycare-40/s2.jpg",
+      "imageUrl": "https://tokushima.kashiwagura-seikotsuin.com/wp-content/uploads/2017/04/DSC_8571-min-e1628962544338.jpg",
+      "pageUrl": "https://tokushima.kashiwagura-seikotsuin.com/",
+      "what": "足の計測をする様子",
+      "width": 899,
+      "height": 359
+    },
+    {
+      "path": "/_portal/vshops/bodycare-40/s3.jpg",
+      "imageUrl": "https://tokushima.kashiwagura-seikotsuin.com/wp-content/uploads/2017/04/DSC_8640-min-e1628962626607.jpg",
+      "pageUrl": "https://tokushima.kashiwagura-seikotsuin.com/",
+      "what": "施術室での説明の様子",
+      "width": 899,
+      "height": 359
+    }
+  ]
+}

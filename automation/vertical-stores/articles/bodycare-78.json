@@ -1,0 +1,99 @@
+{
+  "key": "bodycare-78",
+  "headline": "三原市宮浦の整体院。電話とLINEで問い合わせできる",
+  "lede": "広島県三原市宮浦3丁目の整体院です。問い合わせは電話のほか、LINEでも受け付けていて、LINEは24時間受け付けるものの返事が遅れることがあると公式サイトは案内しています。Google マップの業種の表示は「整体」です。",
+  "sections": [
+    {
+      "heading": "メニューと営業時間",
+      "body": "メニューには、「関節トレーニング整体」と「セイタイプラス」があります。公式サイトによると、セイタイプラスは基本のコースで、初診の方にはこちらのコースが案内されています。営業時間は10:00〜20:00で、Google マップでは土曜と日曜も同じ時間の営業日になっています。定休日は不定休と案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "関節トレーニング整体"
+    },
+    {
+      "name": "セイタイプラス"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "広島県三原市宮浦3丁目29-24にある",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "広島県三原市宮浦３丁目２９−２４",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は0848-64-0625",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "0848-64-0625",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEで問い合わせができる",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "LINEでのお問い合わせもありますのでこちらをご利用ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEは24時間受け付けているが、返事が遅れることがある",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "LINEですと２４時間受け付けています（お返事が遅れることがあります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに関節トレーニング整体がある",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "関節トレーニング整体",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにセイタイプラスがある(基本のコース)",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "オガワセイタイの基本のコースとなります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初診の方にはセイタイプラスが案内されている",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "初診の方はこちらのコースをお選び下さい",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜20:00",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "10:00~20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://ogawa-seitai.studio.site/",
+      "quote": "不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは土曜も日曜も10:00〜20:00",
+      "source": "https://maps.google.com/?cid=1339945423246314629",
+      "quote": "営業時間 土 10:00–20:00 営業時間 日 10:00–20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの業種の表示は整体",
+      "source": "https://maps.google.com/?cid=1339945423246314629",
+      "quote": "業種 整体",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://ogawa-seitai.studio.site/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1339945423246314629"
+    }
+  ],
+  "notes": "STUDIOのサイトをPlaywrightで描画して文字を取得。本文の大半は症状・手術・注射・効き目・院長の経歴で、不使用。「噛みしめ＋整体」はメニュー名に症状を思わせる語があるため載せない。院長の名前は不使用。定休日「不定休」とGoogle マップの毎日営業は矛盾しないが、土日営業のタグは付けない。"
+}

@@ -1,0 +1,90 @@
+{
+  "key": "beauty-45",
+  "headline": "宮崎市船塚にある、ボディ・フェイシャル・脱毛のエステ",
+  "lede": "ボディ、フェイシャル、脱毛の3つの区分でメニューを並べる、宮崎市船塚のエステティックサロンです。ビルの2階にある本店のほかに日南店もあり、予約は電話とWEBで受け付けています。",
+  "sections": [
+    {
+      "heading": "メニューと営業日",
+      "body": "ボディの区分にはハイパーナイフ、フェイシャルの区分にはエンビロン、脱毛の区分には全身脱毛が載っています。本店はソリッドグリーンの2階にあり、営業時間は10時から17時、定休日は日曜と祝日です。予約は電話のほか、WEB予約とカウンセリング予約の窓口があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ハイパーナイフ"
+    },
+    {
+      "name": "エンビロン"
+    },
+    {
+      "name": "全身脱毛"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=15187179428573011513",
+      "quote": "\"category\": \"エステティック サロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "本店は宮崎市船塚2丁目6-2 ソリッドグリーン2Fにある",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "宮崎市船塚2丁目6-2 ソリッドグリーン2F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "本店の営業時間は10時から17時",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "営業時間 10:00〜17:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "本店の定休日は日曜と祝日",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "定休日 日・祝",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "本店のほかに日南店がある",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "Mahalo+（マハロプラス）日南店",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディの区分にハイパーナイフがある",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "ボディメニュー ハイパーナイフ HYPER KNIFE",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フェイシャルの区分にエンビロンがある",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "フェイシャルメニュー エンビロン ENVIRON",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "脱毛の区分に全身脱毛がある",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "脱毛メニュー 全身脱毛 WHOLE-BODY EPILATION",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話、WEB予約、カウンセリング予約の窓口で受け付けている",
+      "source": "http://www.mahalo-plus.com/index.html",
+      "quote": "お電話でのご予約 【定休日】日・祝 WEBご予約 無料カウンセリング予約",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://mahalo-plus.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15187179428573011513"
+    }
+  ],
+  "notes": "公式サイトの中心は痩身・脱毛・医療提携の案内のため、効き目・医療提携・キャンペーンには触れず、区分名とメニュー名・場所・営業日・予約方法だけで書いた。営業時間(10〜17時・日曜休み)は Google マップと一致。小顔の語が入るメニュー名(小顔ハイパーナイフ)は載せていない。 [監査 lite-audit-2] 「ハイパーシェイプ」は痩身を思わせるため載せない側に直した。「無料カウンセリング予約」の「無料」は条件が分からないため本文から外した。"
+}

@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-17",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-17/s1.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/be0cc105-713b-4c6b-b632-6cf86321d273/img/14906a90-f532-013e-ca28-0a58a9feac02/P2161726.jpg",
+      "pageUrl": "https://bodyevo2022.com/",
+      "what": "ベッド上の脚の施術(手元のみ)",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-17/s2.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/be0cc105-713b-4c6b-b632-6cf86321d273/img/b5cbb8a0-f534-013e-ca79-0a58a9feac02/P2161714.jpg",
+      "pageUrl": "https://bodyevo2022.com/",
+      "what": "タオルの上の施術の手元",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-17/s3.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/be0cc105-713b-4c6b-b632-6cf86321d273/img/7c68fd80-f534-013e-ca6d-0a58a9feac02/IMG_1254.jpg",
+      "pageUrl": "https://bodyevo2022.com/",
+      "what": "足元の施術(顔なし)",
+      "width": 833,
+      "height": 614
+    }
+  ],
+  "note": ""
+}

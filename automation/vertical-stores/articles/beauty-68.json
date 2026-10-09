@@ -1,0 +1,109 @@
+{
+  "key": "beauty-68",
+  "headline": "仙台市青葉区本町にある、2席の小さな美容室",
+  "lede": "完全予約制で、セット面が2席の小さな美容室です。仙台市青葉区本町2丁目の結城ビル2階にあり、スタイリストは2人、営業は9時から20時（最終受付18時30分）です。",
+  "sections": [
+    {
+      "heading": "広瀬通駅からの道",
+      "body": "広瀬通駅の東2番出口を出て、セブンイレブンの交差点を左に曲がり、道なりに進むと、右前方に錦町公園が見えます。その左側にある白いビルの2階です。駐車場は最寄りのコインパーキングを使います。支払いはカードのほかPayPay、QUICPay、Apple Payなどが使えます。定休日は不定休です。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=18078920156287174705",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "仙台市青葉区本町2丁目12-1の結城ビル2階にある",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "宮城県仙台市青葉区本町２丁目１２-１ 結城ビル２F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面2席",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "セット面2席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト2人",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "スタイリスト2人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "来店は完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "ご来店は完全予約制にしております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜20:00(最終受付18:30)、Google マップと一致",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "9:00～20:00（最終受付18:30 )",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "定休日 不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "広瀬通駅東2番出口を出てセブンイレブンの交差点を左に曲がる",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "広瀬通駅東2番出口を出てセブンイレブンさんの交差点を左に曲がります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道なりに進むと右側前方に錦町公園が見え、その左側にある白いビルの2階",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "右側前方に錦町公園が見えてきます。そちらの左側にある白いビルの2階になります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は最寄りにコインパーキング",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "最寄りにコインパーキング",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカード、PayPay、QUICPay、Apple Payなどが使える",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "paypay/QUICPay/Apple Pay/Alipay/aupay",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄り駅から徒歩3分以内と案内されている",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "最寄り駅から徒歩3分以内にある",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000680839/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000680839/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=18078920156287174705"
+    }
+  ],
+  "notes": "営業時間は Google マップ(毎日9〜20時)と一致。定休日は掲載ページが不定休、Google マップは毎日営業の表示で、不定休と案内されている旨だけ書いた。メニュー名は定型のキーワードのみで menus は空。「髪質改善」「頭浸浴」「韓国」などの語は使っていない。 [監査 lite-audit-2] 子連れ可タグを外した(根拠が掲載ページのこだわり条件の表示だけ)。駅近は地下鉄広瀬通駅の徒歩5分以内の表示(最寄り駅3分以内・広瀬通駅5分)があるため残した。"
+}

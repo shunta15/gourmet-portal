@@ -1,0 +1,85 @@
+{
+  "key": "beauty-10",
+  "headline": "沼津駅から徒歩7分。公式サイトはフェイシャルエステとリラクゼーションを掲げる",
+  "lede": "静岡県沼津市新宿町にある「Beauty Salon SONATA」です。公式サイトは、フェイシャルエステとリラクゼーションの二つを掲げています。営業は月曜から土曜の9時30分から23時30分までで、日曜は定休日です。",
+  "sections": [
+    {
+      "heading": "アクセスと連絡先",
+      "body": "東海道線の沼津駅から徒歩7分と案内されています。富士急シティバスの「高島町」バス停からは徒歩2分です。駐車場はなく、近くのコインパーキングか公共交通機関を使う案内です。公式サイトには、LINEの友だち追加とInstagramへのリンクがあり、Google マップにはオンライン予約のリンクも載っています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「エステティック サロン」",
+      "source": "https://maps.google.com/?cid=16812091425450003306",
+      "quote": "エステティック サロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトはフェイシャルエステとリラクゼーションを掲げる",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "-フェイシャルエステ-リラクゼーション",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は月〜土・祝の9:30〜23:30(Google マップも月〜土が9:30–23:30)",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "月～土・祝 9：30～23：30",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "日曜は定休日(6/28(日)を「定休日特別営業」とした告知がある)",
+      "source": "https://beautysalonsonata.amebaownd.com/pages/8427012/news",
+      "quote": "定休日🌹特別営業",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東海道線沼津駅徒歩7分、富士急シティバス「高島町」徒歩2分",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "東海道線沼津駅徒歩7分、富士急シティバス「高島町」徒歩2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、最寄りのコインパーキングか公共交通機関の利用を案内",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "駐車場はございません、最寄りのコインパーキング又は公共交通機関をご利用ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は静岡県沼津市新宿町19-4",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "静岡県沼津市新宿町19-4",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトにLINE友だち追加のリンクがある",
+      "source": "https://beautysalonsonata.amebaownd.com/",
+      "quote": "LINE Add Friend",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップにオンライン予約のリンクがある",
+      "source": "https://maps.google.com/?cid=16812091425450003306",
+      "quote": "オンラインで予約",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://beautysalonsonata.amebaownd.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16812091425450003306"
+    }
+  ],
+  "notes": "公式サイトはトップ・ブログ(DIARY)だけで、メニューは画像の可能性があり文字で取れなかったため menus は 0 個。以前の担当は「書ける事実が12個に満たない」で見送っていたが、今回の基準(事実4つ以上)で書いた。日曜の定休日は、DIARY の「【6/28(日)】定休日特別営業」(日曜が定休日であることの記述)と Google マップ(日 定休日)から。「祝」は公式の表記(月〜土・祝)だが Google マップの祝日の扱いは未確認のため本文では触れていない。日曜以外の時刻は公式と一致。スタッフの名前、「美肌を叶える」などの表現は使っていない。 【監査 lite-audit-5】見出しを「公式サイトがフェイシャルエステとリラクゼーションを掲げる」の形に(店の自己申告)。fact の出どころ URL「/news」は存在せず(404)、実際の DIARY ページ(/pages/8427012/news)に直した。店の特定: 住所(沼津市新宿町19-4)・電話(090-8359-1734)が公式サイトと gbp で一致。"
+}

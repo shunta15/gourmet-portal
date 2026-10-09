@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-117",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-117/s1.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-soto.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "水沢院の外観",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-117/s2.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-naka4.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "待合室のソファと本棚",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-117/s3.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-naka5.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "カーテンで仕切る施術室",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}

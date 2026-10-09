@@ -1,0 +1,134 @@
+{
+  "key": "bodycare-116",
+  "headline": "布施駅から徒歩3分の、もみほぐしを扱うリラクゼーションサロン",
+  "lede": "もみほぐしのほか、リンパドレナージュやアロマオイルトリートメント、足つぼなどのメニューを扱うリラクゼーションサロンで、所在は大阪府東大阪市足代のタカビル2階です。",
+  "sections": [
+    {
+      "heading": "場所・設備・予約",
+      "body": "近鉄奈良線・大阪線の布施駅の東南出口から徒歩3分と案内されています。ベッドは2台で、完全個室が1室あると案内されています。駐車場はなく、近隣にコインパーキングがあります。支払いはVISA、MasterCard、JCBのクレジットカードに対応しています。定休日は木曜で、祝日は曜日に合わせた営業です。予約は電話のほか、予約サイトのEPARKリラク＆エステからも受け付けています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "もみほぐし"
+    },
+    {
+      "name": "リンパドレナージュ"
+    },
+    {
+      "name": "アロマオイルトリートメント"
+    },
+    {
+      "name": "足つぼマッサージ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "大阪府東大阪市足代3-6-2のタカビル2階にある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "大阪府東大阪市足代3-6-2 タカビル2F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "近鉄奈良線の布施駅東南出口から徒歩3分と案内されている(近鉄大阪線の布施駅も同じ表記)",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "近鉄奈良線 布施駅 東南出口より徒歩3分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リンパドレナージュのメニューがある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "リンパマッサージ・リンパドレナージュ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマオイルトリートメントのメニューがある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "「アロマオイルトリートメント」もあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "もみほぐしのメニューがある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "もみほぐし 60分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "足つぼマッサージのメニューがある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "足つぼマッサージ（足裏・フットケア）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ベッドは2台",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "ベッド2",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全個室が1室あると案内されている",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "完全個室1",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、近隣にコインパーキングがある",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "無(近隣コインパーキング有)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "VISA・MasterCard・JCBのクレジットカードが使える",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "VISA / MasterCard / JCB",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は木曜(Googleマップも木曜が定休日)",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "木曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "祝日は曜日に合わせて営業する",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "※ 祝日は曜日に合わせて営業",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話(06-4309-8963)で受け付ける",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "予約 06-4309-8963",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約サイトから空席確認・予約ができる",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "空席確認・予約にすすむ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店は自らリラクゼーションサロンとして掲載している",
+      "source": "https://mitsuraku.jp/salon/91266/",
+      "quote": "リラクゼーションサロン・さくら （リラクゼーションサロン サクラ）",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPARKリラク＆エステの店舗ページ(Googleマップに登録されたウェブサイト)",
+      "url": "https://mitsuraku.jp/salon/91266/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17783602748516925943"
+    }
+  ],
+  "notes": "種類は relaxation(category-overrides に記録)。営業時間は本文に書いていない: 予約サイトは10:00〜23:30(最終受付22:30、オイル施術の最終受付17:30)、Googleマップは10:00〜21:30で食い違うため。時間にもとづくタグ(夜遅くまで営業)も付けていない。定休日の木曜は両方で一致。書かなかったこと: 料金・初回限定の割引・口コミ・評価・スタッフの名前・「人気」などの宣伝文・むくみや冷えに触れるメニュー見出し。「完全個室」は店の自己申告なので「案内されています」の形。Googleマップの業種表示は「リフレクソロジスト」。 【監査 lite-audit-1】書き出しを変更。ほかは問題なし。"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "beauty-11",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-11/s1.jpg",
+      "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW28XNZqv/s-2400x1657_v-frms_webp_731dfacc-2860-4f6a-b135-fcd8e8aa3dca.webp",
+      "pageUrl": "https://assouplir.studio.site/",
+      "what": "ケープ姿で過ごす個室内",
+      "width": 1200,
+      "height": 828
+    },
+    {
+      "path": "/_portal/vshops/beauty-11/s2.jpg",
+      "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW28XNZqv/s-1479x1109_v-fms_webp_ef2673ee-f30d-43c8-94be-71932981b1c3.webp",
+      "pageUrl": "https://assouplir.studio.site/",
+      "what": "揉みほぐしの施術の様子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

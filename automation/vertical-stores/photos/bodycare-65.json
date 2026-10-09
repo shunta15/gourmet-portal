@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-65",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-65/s1.jpg",
+      "imageUrl": "https://honetsugi-urawa.com/wp-content/uploads/2026/07/tennai1.webp",
+      "pageUrl": "https://honetsugi-urawa.com/",
+      "what": "施術室の全体",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-65/s2.jpg",
+      "imageUrl": "https://honetsugi-urawa.com/wp-content/uploads/2026/07/tennai2-800x600.webp",
+      "pageUrl": "https://honetsugi-urawa.com/",
+      "what": "施術室のベッド",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "path": "/_portal/vshops/bodycare-65/s3.jpg",
+      "imageUrl": "https://honetsugi-urawa.com/wp-content/uploads/2026/07/tennai5-1024x682.webp",
+      "pageUrl": "https://honetsugi-urawa.com/",
+      "what": "ベッドと機器",
+      "width": 1024,
+      "height": 682
+    }
+  ],
+  "note": ""
+}

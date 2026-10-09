@@ -1,0 +1,117 @@
+{
+  "key": "beauty-61",
+  "headline": "富山市秋吉にある、駐車場10台の美容室",
+  "lede": "セット面が7席で、駐車場が10台分ある、富山県富山市秋吉の美容室です。完全予約制で、掲載ページの案内ではキッズスペースがあり、お子さまの同伴にも対応しています。",
+  "sections": [
+    {
+      "heading": "バスでの行き方と営業日",
+      "body": "JR富山駅南口から地鉄バスに約20分乗って天正寺で降り、徒歩約8分と案内されています。営業時間は9時30分から20時（カット最終受付18時）で、定休日は不定休です。インナーカラーやハイライト、ヘッドスパ、縮毛矯正といった施術の名前が、案内文に並んでいます。支払いはカードとPayPayなどが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "インナーカラー"
+    },
+    {
+      "name": "ハイライト"
+    },
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "縮毛矯正"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=4284984110486733622",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "富山市秋吉153-14にある",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "富山県富山市秋吉１５３－１４",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR富山駅南口から地鉄バスで約20分、天正寺で降りて徒歩約8分",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "「天正寺」停留所にて下車。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "徒歩約8分",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "(徒歩約８分)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:30〜20:00(カット最終受付18:00)、Google マップと一致",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "9:30～20:00（カット最終受付18:00）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "定休日 不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面7席",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "セット面7席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は10台",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "駐車場 10台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズスペースがあり、お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "キッズスペースあり／お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカードとPayPayなどが使える",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "ペイペイ/楽天ペイ/auペイ/ｄ払い/",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドスパ・縮毛矯正・ハイライトの名前が案内文に並んでいる",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "縮毛矯正/ヘッドスパ/白髪ぼかし/トリートメント/ハイライト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "インナーカラーの名前が案内文に並んでいる",
+      "source": "https://beauty.hotpepper.jp/slnH000295418/",
+      "quote": "インナーカラー/ダブルカラー",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000295418/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4284984110486733622"
+    }
+  ],
+  "notes": "営業時間・曜日は Google マップ(毎日9:30〜20:00)と一致。「夜遅くまで営業」は閉店20時のため付けていない。掲載ページには別の自前サイト(cherimboat.jp)の記載があるが、今回は読んでいない。個室・半個室の表示は本文に使っていない。徒歩分数はバス停からの分数のため「駅近」は付けていない。メニュー名は掲載ページのキーワード欄から名前だけ拾った(髪質改善の語は載せていない)。 [監査 lite-audit-2] 子連れ可タグを外した(根拠が掲載ページのこだわり条件の表示だけ)。メニュー名の fact は、quote に髪質改善を含まない形へ差し替え、ハイライトの根拠を足した。"
+}

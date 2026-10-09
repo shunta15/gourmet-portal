@@ -1,0 +1,29 @@
+{
+  "key": "beauty-79",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-79/s1.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s85d229cf6866e9cf/image/ica8a1d485b704e68/version/1701864999/image.jpg",
+      "pageUrl": "https://naturis-yokohama.jimdofree.com/",
+      "what": "待合スペース",
+      "width": 1200,
+      "height": 886
+    },
+    {
+      "path": "/_portal/vshops/beauty-79/s2.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s85d229cf6866e9cf/image/i7cddb17b02f323cc/version/1701864999/image.jpg",
+      "pageUrl": "https://naturis-yokohama.jimdofree.com/",
+      "what": "脱毛器とベッドの施術室",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-79/s3.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/none/path/s85d229cf6866e9cf/image/id686ffd39ecf2abd/version/1701864999/image.png",
+      "pageUrl": "https://naturis-yokohama.jimdofree.com/",
+      "what": "施術中のスタッフ",
+      "width": 908,
+      "height": 604
+    }
+  ]
+}

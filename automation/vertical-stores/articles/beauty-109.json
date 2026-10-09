@@ -1,0 +1,93 @@
+{
+  "key": "beauty-109",
+  "headline": "富士市伝法の、まつ毛と眉も扱うエステサロン",
+  "lede": "静岡県富士市伝法にあるエステティックサロンです。公式サイトのメニューには、フェイシャルのほか、まつ毛パーマ、まつ毛エクステ、ブロウラミネーションの名前が並んでいます。",
+  "sections": [
+    {
+      "heading": "予約と問い合わせ",
+      "body": "予約は公式サイトの「簡単ネット予約」から、問い合わせはLINEで受け付けているとしています。まつ毛と眉のメニューについて、公式サイトは美容所登録済みで、美容師免許を取得していると案内しています。フェイシャルは化粧品を使ったオールハンドの手入れとうたっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "フェイシャル"
+    },
+    {
+      "name": "まつ毛パーマ"
+    },
+    {
+      "name": "まつ毛エクステ"
+    },
+    {
+      "name": "ブロウラミネーション"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種はエステティックサロン",
+      "source": "https://maps.google.com/?cid=5211131084940045150",
+      "quote": "\"category\": \"エステティック サロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "静岡県富士市伝法20-7にある",
+      "source": "https://maps.google.com/?cid=5211131084940045150",
+      "quote": "静岡県富士市伝法２０−７",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "まつ毛パーマ、まつ毛エクステ、ブロウラミネーション、ハリウッドブロウリフトのメニューがある",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "まつ毛パーマ まつ毛エクステ ブロウラミネーション ハリウッドブロウリフト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューのカテゴリにまつ毛&眉・スカルプがある",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "まつ毛&眉・スカルプ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "簡単ネット予約の案内がある",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "簡単ネット予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "問い合わせはLINEで受け付ける",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "お問い合わせもLINEで受け付けています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "まつ毛と眉のメニューは美容所登録済み、美容師免許取得と案内",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "美容所登録済み 美容師免許取得",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フェイシャルはDr.PUR BEAUTEの化粧品を使いオールハンドとうたう",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "Dr.PUR　BEAUTEの化粧品を使い、オールハンドで",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店名表記はトータル ビューティーサロン アイリス エステ",
+      "source": "https://irisesutesalon.wixsite.com/esute",
+      "quote": "トータル ビューティーサロン アイリス エステ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://irisesutesalon.wixsite.com/esute"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5211131084940045150"
+    }
+  ],
+  "notes": "営業時間は公式サイトに記載が無く、Google マップは水曜が10:30–17:00、ほかの曜日が10:30–22:00のため書いていない。痩身・矯正・リンパ・小顔・脱毛など効き目や体型の変化にあたるメニューは載せていない。ハリウッドブロウリフトはメニュー名に載せていない(判断が要る語のため安全側)。 【監査 lite-audit-3】「ブライダル」は、公式サイトでは体のお悩み・「全身美BODY」の説明つきのコースのため、安全側で本文・menus・factsから外した。残りは場所・予約・まつ毛と眉のメニュー名・美容所登録の案内。"
+}

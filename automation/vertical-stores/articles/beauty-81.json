@@ -1,0 +1,99 @@
+{
+  "key": "beauty-81",
+  "headline": "大網白里市にある、脱毛とマッサージのサロン",
+  "lede": "千葉県大網白里市大網の光ビルにある、脱毛サロンです。公式サイトには脱毛のほか、アロマオイルとロミロミのマッサージ、光フェイシャルのメニューがあります。駐車場は1台分あります。",
+  "sections": [
+    {
+      "heading": "予約と営業日",
+      "body": "予約の電話番号は公式サイトに載っていて、Google マップにはオンライン予約のリンクも載っています。Google マップでは月曜が定休日と表示されています。公式サイトのSNSはインスタグラムで、アカウントは公式サイトに掲載されています。所在地は2階のD号室と表記されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "脱毛"
+    },
+    {
+      "name": "アロマオイル"
+    },
+    {
+      "name": "ロミロミ"
+    },
+    {
+      "name": "光フェイシャル"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種はエステティックサロン",
+      "source": "https://maps.google.com/?cid=16597873180670241254",
+      "quote": "\"category\": \"エステティック サロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "千葉県大網白里市大網505-6の光ビルにある",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "千葉県大網白里市大網505-6　光ビル２階D",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場1台完備",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "駐車場１台完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約の電話番号は080-1229-1139",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "080-1229-1139",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップにオンライン予約のリンクがある",
+      "source": "https://maps.google.com/?cid=16597873180670241254",
+      "quote": "https://www.peakmanager.com/online/index/v7q2w5",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは月曜が定休日",
+      "source": "https://maps.google.com/?cid=16597873180670241254",
+      "quote": "\"月\": \"定休日\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマオイルマッサージがメニューにある",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "アロマオイルマッサージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ロミロミマッサージがメニューにある",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "ロミロミマッサージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルのメニューがある",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "光フェイシャル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "インスタグラムのアカウントがある",
+      "source": "https://datumousalon-mermaid.my.canva.site/",
+      "quote": "Instagram/@datumousalon_mermaid",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://datumousalon-mermaid.my.canva.site/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16597873180670241254"
+    }
+  ],
+  "notes": "公式サイトは Canva 製で Playwright で本文を取得した。営業時間は公式に記載が無く、Google マップは火〜日9:00–20:00(月曜休み)のため曜日だけ書いた。「光バストケア」は料金表の項目名として存在(quote は光フェイシャルで確認)。歯のホワイトニング、毛周期に関する記載、料金は使っていない。 【監査 lite-audit-3】「光バストケア」は体の変化にあたりうるため本文・menus・factsから外した。マッサージの quote から「効果」を含む文を外し、メニュー名だけの quote に分けた。"
+}

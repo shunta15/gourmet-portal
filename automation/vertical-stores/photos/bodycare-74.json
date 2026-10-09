@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-74",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-74/s1.jpg",
+      "imageUrl": "https://yosimune.org/wp-content/uploads/2026/05/2024.06.14_0007-1024x682.jpg",
+      "pageUrl": "http://yosimune.org/",
+      "what": "施術室のベッド",
+      "width": 1024,
+      "height": 682
+    },
+    {
+      "path": "/_portal/vshops/bodycare-74/s2.jpg",
+      "imageUrl": "https://yosimune.org/wp-content/uploads/2026/05/2024.06.14_0031-1536x1024.jpg",
+      "pageUrl": "http://yosimune.org/",
+      "what": "窓際のカウンター",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-74/s3.jpg",
+      "imageUrl": "https://yosimune.org/wp-content/uploads/2026/05/2024.06.14_0047-1024x682.jpg",
+      "pageUrl": "http://yosimune.org/",
+      "what": "施術の手元",
+      "width": 1024,
+      "height": 682
+    }
+  ],
+  "note": ""
+}

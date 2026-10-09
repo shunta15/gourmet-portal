@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-64",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-64/s1.jpg",
+      "imageUrl": "https://aoiseikotsuin-kokubuchuo.com/wp-content/uploads/2025/09/naikan_7.jpg",
+      "pageUrl": "https://aoiseikotsuin-kokubuchuo.com/",
+      "what": "施術室のベッド",
+      "width": 1200,
+      "height": 1098
+    },
+    {
+      "path": "/_portal/vshops/bodycare-64/s2.jpg",
+      "imageUrl": "https://aoiseikotsuin-kokubuchuo.com/wp-content/uploads/2025/08/gaikan_5-サイズ変更済み-810x455-1-650x430.jpeg",
+      "pageUrl": "https://aoiseikotsuin-kokubuchuo.com/",
+      "what": "店のあるビルの外観",
+      "width": 650,
+      "height": 430
+    }
+  ],
+  "note": ""
+}

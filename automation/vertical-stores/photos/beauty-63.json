@@ -1,0 +1,29 @@
+{
+  "key": "beauty-63",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-63/s1.jpg",
+      "imageUrl": "https://www.polkuhair-rento.com/img/about-img-2.jpg",
+      "pageUrl": "https://www.polkuhair-rento.com/about.html",
+      "what": "鏡とチェアのあるセット面",
+      "width": 1200,
+      "height": 1080
+    },
+    {
+      "path": "/_portal/vshops/beauty-63/s2.jpg",
+      "imageUrl": "https://www.polkuhair-rento.com/img/top-img-1.jpg",
+      "pageUrl": "https://polkuhair-rento.com/",
+      "what": "椅子とテーブルのある店内",
+      "width": 850,
+      "height": 650
+    },
+    {
+      "path": "/_portal/vshops/beauty-63/s3.jpg",
+      "imageUrl": "https://www.polkuhair-rento.com/img/about-img-3.jpg",
+      "pageUrl": "https://www.polkuhair-rento.com/about.html",
+      "what": "シャンプー台のあるスペース",
+      "width": 1000,
+      "height": 800
+    }
+  ]
+}

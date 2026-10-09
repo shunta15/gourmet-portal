@@ -1,0 +1,30 @@
+{
+  "key": "beauty-45",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-45/s1.jpg",
+      "imageUrl": "https://mahalo-plus.com/images/salon/salon-img01.jpg",
+      "pageUrl": "https://mahalo-plus.com/salon.html",
+      "what": "店内の待合とカウンター",
+      "width": 960,
+      "height": 560
+    },
+    {
+      "path": "/_portal/vshops/beauty-45/s2.jpg",
+      "imageUrl": "https://mahalo-plus.com/images/salon/salon-img03.jpg",
+      "pageUrl": "https://mahalo-plus.com/salon.html",
+      "what": "施術室のベッドと機器",
+      "width": 960,
+      "height": 560
+    },
+    {
+      "path": "/_portal/vshops/beauty-45/s3.jpg",
+      "imageUrl": "https://mahalo-plus.com/images/salon/salon-img05.jpg",
+      "pageUrl": "https://mahalo-plus.com/salon.html",
+      "what": "建物の外観",
+      "width": 960,
+      "height": 560
+    }
+  ],
+  "note": ""
+}

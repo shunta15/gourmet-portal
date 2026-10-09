@@ -1,0 +1,104 @@
+{
+  "key": "beauty-123",
+  "headline": "鹿児島市田上の、少人数制をうたうヘアサロン",
+  "lede": "「少人数制のプライベートサロン」とうたう、鹿児島県鹿児島市田上3丁目の美容院です。コンセプトには「美のパートナー」を掲げています。公式サイトには予約のボタンと電話番号が載っています。",
+  "sections": [
+    {
+      "heading": "カットと縮毛矯正",
+      "body": "公式サイトが特徴として挙げているのは、ショートカット、縮毛矯正・ストレート、メンズ向けのカットの3つです。メンズのカットは男性スタイリストが担当すると案内されています。縮毛矯正については、ダメージに合わせた酸性縮毛矯正をうたっています。予約のボタンは、ホットペッパービューティーのページにつながっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ショートカット"
+    },
+    {
+      "name": "縮毛矯正・ストレート"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "鹿児島県鹿児島市田上3丁目4-10にある",
+      "source": "https://maps.google.com/?cid=3216535059300386197",
+      "quote": "鹿児島県鹿児島市田上３丁目４−１０",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの業種は美容院",
+      "source": "https://maps.google.com/?cid=3216535059300386197",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "少人数制のプライベートサロンとうたっている",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "少人数制プライベートサロンです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "コンセプトは「美のパートナー」",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "コンセプトは『美のパートナー』",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートカットを特徴に挙げている",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "一番似合うショートカットに！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのお客様向けの案内がある",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "メンズのお客様向け！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正・ストレートも受け付けている",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "縮毛矯正・ストレートもお任せ！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ダメージに合わせた酸性縮毛矯正をうたっている",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "ダメージに合わせた酸性縮毛矯正",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトに予約のボタンがある(リンク先はホットペッパービューティー)",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "ご予約はこちら",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号が公式サイトに載っている(099-807-2934)",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "099-807-2934",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのカットは、カットが得意な男性スタイリストが担当する",
+      "source": "https://hairsalon-nendo.com/",
+      "quote": "カットが得意な男性スタイリストが担当！",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://hairsalon-nendo.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3216535059300386197"
+    }
+  ],
+  "notes": "公式サイトは1ページのみ(STUDIO系)。営業時間・メニュー表・料金は載っていない。Googleマップの営業時間は毎日9:30-19:00だが、公式に時間の記載が無いため本文には書かず、タグも付けていない。予約ボタンのリンク先はホットペッパービューティー(beauty.hotpepper.jp/slnH000376922/)。スタッフの名前・経歴・採用情報は書いていない。メンズ歓迎は『メンズのお客様向け』の案内による。 【監査 lite-audit-1】「男性スタイリストが担当」の根拠 quote が足りなかったため、別の fact に分けて quote を足した。"
+}

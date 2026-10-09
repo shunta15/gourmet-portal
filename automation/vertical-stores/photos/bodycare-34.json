@@ -1,0 +1,29 @@
+{
+  "key": "bodycare-34",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-34/s1.jpg",
+      "imageUrl": "https://oba-sekkotsu.net/common/upload_data/oba-sekkotsunet/image/20210914104748.jpg.webp",
+      "pageUrl": "https://oba-sekkotsu.net/",
+      "what": "施術室のベッド",
+      "width": 1200,
+      "height": 871
+    },
+    {
+      "path": "/_portal/vshops/bodycare-34/s2.jpg",
+      "imageUrl": "https://oba-sekkotsu.net/common/upload_data/oba-sekkotsunet/image/20210818234722.jpg.webp",
+      "pageUrl": "https://oba-sekkotsu.net/",
+      "what": "建物の外観",
+      "width": 1200,
+      "height": 825
+    },
+    {
+      "path": "/_portal/vshops/bodycare-34/s3.jpg",
+      "imageUrl": "https://oba-sekkotsu.net/common/upload_data/oba-sekkotsunet/image/20260207153156.jpg.webp",
+      "pageUrl": "https://oba-sekkotsu.net/",
+      "what": "施術の様子",
+      "width": 1200,
+      "height": 800
+    }
+  ]
+}

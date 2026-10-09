@@ -1,0 +1,104 @@
+{
+  "key": "bodycare-60",
+  "headline": "越前市村国の接骨院。北府駅から徒歩11分、駐車場あり",
+  "lede": "北府駅から徒歩11分と案内されている、福井県越前市村国3丁目の接骨院です。駐車場があります。院長の資格として、柔道整復師が示されています。Google マップの業種の表示も「接骨院」です。",
+  "sections": [
+    {
+      "heading": "営業日と行き方",
+      "body": "予約制で、Webまたは電話で受け付けています。月・火・木・金曜日は9:00〜11:30と15:00〜19:00に営業し、水曜日、日曜日、祝祭日が休みです。土曜日は午前のみの営業ですが、時間の表記が掲載ページとGoogle マップで異なるため、店に確かめる必要があります。支払いは現金のみです。車では、県立武生高校から東へ1分、北陸自動車道の武生ICから5分と案内されています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "福井県越前市村国3丁目19-13にある",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "福井県越前市村国3丁目19-13",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "北府駅から徒歩11分",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "北府駅 徒歩11分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "駐車場あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "院長の資格として柔道整復師が示されている",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "柔道整復師",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約制で、Webまたは電話で受け付けている",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "当院は予約制となっております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月・火・木・金曜日は9:00〜11:30と15:00〜19:00",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "月・火・木・金曜日 9:00〜11:30 / 15:00〜19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも月・火・木・金は09:00–11:30と15:00–19:00",
+      "source": "https://maps.google.com/?cid=687596294936745315",
+      "quote": "営業時間 月 09:00–11:30, 15:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "水曜日・日曜日・祝祭日が休み",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "お休み 水曜日 日曜日・祝祭日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "現金のみとなります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "県立武生高校より東へ車で1分",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "県立武生高校より東へ車で 1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "北陸自動車道の武生ICより車で5分",
+      "source": "https://yurashi.net/lab/fukuiechizen/",
+      "quote": "北陸自動車道 武生ICより車で 5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの業種の表示は接骨院",
+      "source": "https://maps.google.com/?cid=687596294936745315",
+      "quote": "業種 接骨院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも水曜・日曜は定休日",
+      "source": "https://maps.google.com/?cid=687596294936745315",
+      "quote": "営業時間 水 定休日",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "施術院紹介ページ(Google マップに登録されたページ)",
+      "url": "https://yurashi.net/lab/fukuiechizen/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=687596294936745315"
+    }
+  ],
+  "notes": "gbpのwebsiteは運営会社(ゆらしインターナショナル)の施術院紹介ページ。住所は一致(越前市村国3丁目19-13)、電話はページ050-1861-3451とgbp 0778-23-3013で異なるため、電話番号は本文に書かない。土曜はページ8:00〜11:30、gbp 9:00〜12:00で食い違うため時間を書かない。技術名(ゆらし療法)・症例・動画・論文・医療連携・口コミ・料金・ビフォーアフターは不使用。院長の名前は不使用。 [lite-audit-4] 同じ店か確認: 店名(あおば接骨院)・住所(越前市村国3丁目19-13)が gbp と一致。電話だけ異なる(ページ050-1861-3451/gbp 0778-23-3013)が、ページの電話は予約専用の番号に見え、本文に電話を書いていないため掲載可と判断。"
+}

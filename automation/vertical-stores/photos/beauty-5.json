@@ -1,0 +1,22 @@
+{
+  "key": "beauty-5",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-5/s1.jpg",
+      "imageUrl": "https://esperanzanail.com/wp-content/uploads/2025/12/batch_aakimage-3.avif",
+      "pageUrl": "https://esperanzanail.com/concept/",
+      "what": "サロンの席と店内",
+      "width": 500,
+      "height": 350
+    },
+    {
+      "path": "/_portal/vshops/beauty-5/s2.jpg",
+      "imageUrl": "https://esperanzanail.com/wp-content/uploads/2025/12/batch_aakスクリーンショット-2025-12-19-18.25.44.avif",
+      "pageUrl": "https://esperanzanail.com/concept/",
+      "what": "ジェルのカラー見本",
+      "width": 500,
+      "height": 350
+    }
+  ],
+  "note": ""
+}

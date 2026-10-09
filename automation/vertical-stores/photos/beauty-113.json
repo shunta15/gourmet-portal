@@ -1,0 +1,29 @@
+{
+  "key": "beauty-113",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-113/s1.jpg",
+      "imageUrl": "https://ateliernino-shimokitazawa.com/wp-content/uploads/2024/10/20241008_001-1024x683.jpg",
+      "pageUrl": "https://ateliernino-shimokitazawa.com/about-us/",
+      "what": "セット面が並ぶ店内",
+      "width": 1024,
+      "height": 683
+    },
+    {
+      "path": "/_portal/vshops/beauty-113/s2.jpg",
+      "imageUrl": "https://ateliernino-shimokitazawa.com/wp-content/uploads/2024/10/20241008_009-1024x683.jpg",
+      "pageUrl": "https://ateliernino-shimokitazawa.com/about-us/",
+      "what": "待合のソファ席",
+      "width": 1024,
+      "height": 683
+    },
+    {
+      "path": "/_portal/vshops/beauty-113/s3.jpg",
+      "imageUrl": "https://ateliernino-shimokitazawa.com/wp-content/uploads/2024/10/20241008_018-1024x683.jpg",
+      "pageUrl": "https://ateliernino-shimokitazawa.com/about-us/",
+      "what": "青い扉の個室席",
+      "width": 1024,
+      "height": 683
+    }
+  ]
+}

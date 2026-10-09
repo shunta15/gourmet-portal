@@ -1,0 +1,143 @@
+{
+  "key": "beauty-3",
+  "headline": "苅田町のリラクゼーションサロン。営業は毎日夜0時まで",
+  "lede": "Google マップで「指圧・マッサージ」と表示される、福岡県京都郡苅田町のサロンです。営業は10時から24時までで、最終受付は23時ごろ。定休日はなく、店の前には無料の駐車場が6台分あります。",
+  "sections": [
+    {
+      "heading": "メニューと設備",
+      "body": "もみほぐし、全身オイルケア、ドライヘッドスパ、足つぼトリートメント、よもぎ蒸しなどのメニューがあります。女性と男性のセラピストがともに在籍していて、施術者が男性になる場合があるという断り書きもあります。半個室2と完全個室3を備えると案内され、苅田駅からは車で5分です。支払いはクレジットカードのほか、QR決済や交通系電子マネーが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "もみほぐし"
+    },
+    {
+      "name": "全身オイルケア"
+    },
+    {
+      "name": "ドライヘッドスパ"
+    },
+    {
+      "name": "足つぼトリートメント"
+    },
+    {
+      "name": "よもぎ蒸し"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「指圧・マッサージ」",
+      "source": "https://maps.google.com/?cid=8981792447537063555",
+      "quote": "指圧・マッサージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は10時から24時まで、最終受付は23時ごろ(よもぎ蒸しは22時30分ごろ)。Google マップも毎日10:00–00:00",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "10：00～24：00（最終受付23：00頃　※よもぎ蒸しは22：30頃）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日はなく、年中無休",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "年中無休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店舗前に無料駐車場が6台分ある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "店舗前に無料駐車場6台完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備は半個室2・完全個室3(総数5)と案内している",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "総数5(半個室2／完全個室3)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性セラピスト・男性セラピストがともに在籍",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "女性セラピスト、男性セラピストともに在籍",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術者が男性となる場合がある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "このサロンの施術者は男性となる場合があります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにドライヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "ドライヘッドスパ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに全身オイルケアがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "全身オイルケア",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに足つぼトリートメントがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "足つぼトリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにもみほぐしがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "もみほぐし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューによもぎ蒸しがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "よもぎ蒸し",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "苅田駅から車で5分",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "苅田駅から車で5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "QR決済と交通系電子マネーに対応",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "『PayPayなど各種QR決済』　『各種交通系電子マネー』",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は福岡県京都郡苅田町殿川町1-32 SKビル 101",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "福岡県京都郡苅田町殿川町1-32 SKビル 101",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレジットカード(Visa・Mastercard・JCBなど)に対応",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000401537/",
+      "quote": "Visa／Mastercard／JCB／American Express",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000401537/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8981792447537063555"
+    }
+  ],
+  "notes": "Google マップの website は同店のホットペッパービューティーのクーポンページ。そのトップを出どころにした。営業時間は HP(10:00-24:00、定休日なし)と Google マップ(毎日10:00-00:00)が一致。ビル名は HP が「SKビル 101」、スプレッドシート側が「白川ビル」だが、番地(殿川町1-32)と1階は gbp と一致。料金・クーポン・口コミ・評価・「むくみ解消」などの語は使っていない。HPの「完全個室」は店の自己申告なので「案内」の形にした。 【監査 lite-audit-5】支払いの fact の quote が QR 決済だけだったため、クレジットカードの行と交通系の行を分けて quote を取り直した(保存ページに該当あり)。店の取り違え: 番地・1階・店名が gbp と一致、HP の電話は非表示だが Google マップの website がこの HP。タグ「夜遅くまで営業」は24時閉店(Google マップも毎日10:00–00:00)で基準を満たす。"
+}

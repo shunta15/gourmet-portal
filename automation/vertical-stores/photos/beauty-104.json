@@ -1,0 +1,30 @@
+{
+  "key": "beauty-104",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-104/s1.jpg",
+      "imageUrl": "https://www.knight-hair.com/wp-content/uploads/2024/03/0025_1500px.png",
+      "pageUrl": "https://www.knight-hair.com/",
+      "what": "店内の全景",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "path": "/_portal/vshops/beauty-104/s2.jpg",
+      "imageUrl": "https://www.knight-hair.com/wp-content/uploads/2024/03/0156_1500px.png",
+      "pageUrl": "https://www.knight-hair.com/",
+      "what": "セット椅子と観葉植物",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "path": "/_portal/vshops/beauty-104/s3.jpg",
+      "imageUrl": "https://www.knight-hair.com/wp-content/img/back-img_0430.png",
+      "pageUrl": "https://www.knight-hair.com/",
+      "what": "入口ガラスのロゴとOPEN",
+      "width": 1000,
+      "height": 667
+    }
+  ],
+  "note": ""
+}

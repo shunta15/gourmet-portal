@@ -1,0 +1,105 @@
+{
+  "key": "beauty-56",
+  "headline": "成田市本町にある、まつ毛パーマとエクステのサロン",
+  "lede": "まつ毛パーマのラッシュリフト、まつ毛エクステ、眉毛のメニューがある、成田市本町のまつげサロンです。第3印東マンションの402号にあり、予約の相談はサイトの窓口から受け付けています。",
+  "sections": [
+    {
+      "heading": "メニューの種類",
+      "body": "ラッシュリフトには上、下、上下セットの区分があります。エクステはフラットラッシュとパーフェクトラッシュの2種類で、つけ放題（2時間以内）のコースも載っています。眉毛はアイブロウのページにまとまっています。電話は0476-76-9200です。Googleマップでは毎日営業と表示されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ラッシュリフト"
+    },
+    {
+      "name": "フラットラッシュ"
+    },
+    {
+      "name": "パーフェクトラッシュ"
+    },
+    {
+      "name": "つけ放題（2時間以内）"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=4019298357468283933",
+      "quote": "\"category\": \"まつげサロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "成田市本町662-1の第3印東マンション402にある",
+      "source": "http://herb.chu.jp/",
+      "quote": "千葉県成田市本町662-1 第3印東マンション402",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は0476-76-9200",
+      "source": "http://herb.chu.jp/",
+      "quote": "TEL : 0476-76-9200",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ラッシュリフトに上・下・上下セットの区分がある",
+      "source": "https://herb.chu.jp/eyelash/",
+      "quote": "ラッシュリフト上",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "上下セットの区分がある",
+      "source": "https://herb.chu.jp/eyelash/",
+      "quote": "ラッシュリフト 上下セット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステにフラットラッシュがある",
+      "source": "https://herb.chu.jp/lash-extensions/",
+      "quote": "フラットラッシュの 料金・メニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステにパーフェクトラッシュがある",
+      "source": "https://herb.chu.jp/lash-extensions/",
+      "quote": "パーフェクトラッシュの 料金・メニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "つけ放題（2時間以内）のコースがある",
+      "source": "https://herb.chu.jp/lash-extensions/",
+      "quote": "つけ放題（2時間以内）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "眉毛(アイブロウ)のページがある",
+      "source": "https://herb.chu.jp/eyelash/",
+      "quote": "アイラッシュリフト アイブロウ スキン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ご予約相談・お問い合わせの窓口がある",
+      "source": "http://herb.chu.jp/",
+      "quote": "ご予約相談 お問い合わせ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは月曜から日曜まで営業の表示",
+      "source": "https://maps.google.com/?cid=4019298357468283933",
+      "quote": "\"日\": \"10:00–18:00\"",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://herb.chu.jp/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4019298357468283933"
+    }
+  ],
+  "notes": "営業時間は公式サイトに載っておらず、出どころが Google マップだけのため曜日のみ書いた。ハーブピーリング・タトゥー(アートメイク)・アイストレッチ・ダブルアイリフトなど、効き目や医療に近い項目と、料金は載せていない。"
+}

@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-75",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-75/s1.jpg",
+      "imageUrl": "https://hokuriku-seikotsu.jp/wp-content/uploads/elementor/thumbs/3s-qvcod32uo5jwi04h1u0a4kel76vzir3hlm90e1eqao.jpg",
+      "pageUrl": "https://hokuriku-seikotsu.jp/accsess/",
+      "what": "入口の外観",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-75/s2.jpg",
+      "imageUrl": "https://hokuriku-seikotsu.jp/wp-content/uploads/elementor/thumbs/2s-qvcod4yj1tmh581qqutj9jxidympy5ay9vjzclbxy8.jpg",
+      "pageUrl": "https://hokuriku-seikotsu.jp/accsess/",
+      "what": "施術室のベッド2台",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-75/s3.jpg",
+      "imageUrl": "https://hokuriku-seikotsu.jp/wp-content/uploads/elementor/thumbs/1s-qvcod7s1mbqc41xnae1ez17w648tl8m5a9ifsf7rfk.jpg",
+      "pageUrl": "https://hokuriku-seikotsu.jp/accsess/",
+      "what": "カーテンで区切る施術室",
+      "width": 600,
+      "height": 400
+    }
+  ],
+  "note": ""
+}

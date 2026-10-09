@@ -1,0 +1,21 @@
+{
+  "key": "bodycare-26",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-26/s1.jpg",
+      "imageUrl": "https://sasaki-mimi.com/common/upload_data/sasaki-mimicom/image/20220609141739.jpg",
+      "pageUrl": "https://sasaki-mimi.com/",
+      "what": "院長による首の施術の様子",
+      "width": 650,
+      "height": 680
+    },
+    {
+      "path": "/_portal/vshops/bodycare-26/s2.jpg",
+      "imageUrl": "https://sasaki-mimi.com/common/upload_data/sasaki-mimicom/image/20220704123023.jpg",
+      "pageUrl": "https://sasaki-mimi.com/",
+      "what": "脊柱模型を使う院長",
+      "width": 1200,
+      "height": 833
+    }
+  ]
+}

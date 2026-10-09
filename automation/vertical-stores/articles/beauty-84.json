@@ -1,0 +1,145 @@
+{
+  "key": "beauty-84",
+  "headline": "新宿・歌舞伎町の、ダブルカラーとブリーチを並べる美容院",
+  "lede": "歌舞伎町1丁目のプレーンシティ新宿ビル4階にある美容院です。JR新宿駅東口から徒歩3分で、ホットペッパーの店名表記には、ダブルカラー、ブリーチ、デザインカラーが並んでいます。営業は毎日、朝9時から夜11時までです。",
+  "sections": [
+    {
+      "heading": "席数と道順",
+      "body": "セット面は12席で、スタイリストは17人です。道順は、歌舞伎町のドンキホーテからゴジラロードに入り、左手のカラオケ店の手前にあるビルの4階と案内されています。お子さま同伴ができ、禁煙で、ドリンクのサービスもあります。支払いはクレジットカードと交通系電子マネーで、駐車場はありません。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ダブルカラー"
+    },
+    {
+      "name": "ブリーチ"
+    },
+    {
+      "name": "ケアブリーチ"
+    },
+    {
+      "name": "ハイライト"
+    },
+    {
+      "name": "インナーカラー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 3
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 8
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=16187995588973872435",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新宿区歌舞伎町1丁目17-11のプレーンシティ新宿ビル4階にある",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "東京都新宿区歌舞伎町１－１７－１１　プレーンシティ新宿ビル４Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR新宿駅東口から徒歩3分",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "JR新宿駅東口徒歩3分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は9時〜23時、年中無休",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "9時～23時",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日9:00–23:00",
+      "source": "https://maps.google.com/?cid=16187995588973872435",
+      "quote": "\"月\": \"09:00–23:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "年中無休",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "年中無休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店名の表記にダブルカラー、ブリーチ、デザインカラーが並ぶ",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "ダブルカラー/ブリーチ/デザインカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにブリーチ、ケアブリーチ、ダブルカラーがある",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "ブリーチ/ケアブリーチ/ダブルカラー/ブリーチ&ダブルカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK、禁煙、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "お子さま同伴OK／禁煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "インナーカラー、ハイライトがメニューにある",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "インナーカラー/ハイライト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は12席",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "セット面12席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは17人",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "スタイリスト17人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道順はドンキホーテからゴジラロードに入る",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "歌舞伎町のドンキホーテからゴジラロード（旧名セントラルロード）に入り",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカードと交通系電子マネー",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "Visa／Mastercard／JCB／American Express／Diners Club／交通系電子マネー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はない",
+      "source": "https://beauty.hotpepper.jp/slnH000145984/",
+      "quote": "駐車場\tなし",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000145984/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16187995588973872435"
+    }
+  ],
+  "notes": "Google マップに website が無く、店の公式サイト・公式SNSは検索で見つからなかった。ホットペッパーの店のページ(住所がGoogle マップと一致: 歌舞伎町1-17-11 プレーンシティ新宿ビル4F)を出どころにした。これは「Google マップに載っているサイト」ではないため、使ってよいか確認してほしい(第2回コミットに分けた)。営業時間は一致(毎日9:00〜23:00、年中無休)。料金・クーポン・受賞歴・口コミは使っていない。髪質改善ストレート等は載せていない。 【監査 lite-audit-3】ホットペッパーのページの店名表記(ＴＯＭＣＡＴ【トムキャット】)と住所(歌舞伎町1-17-11 プレーンシティ新宿ビル4F)が、gbp の JSON(TOMCAT・歌舞伎町1丁目17-11 SHINJUKU Plain City 4F・シート名 ＴＯＭＣＡＴ【トムキャット】)と、番地・建物・階まで一致することを確認。営業時間も Google マップ(毎日9:00-23:00)と一致。電話はページ上で非表示のため突き合わせていない。"
+}

@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-66",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-66/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/446742_84f82bcc58d44e25a2f7fddb6a39dfa8~mv2.jpg",
+      "pageUrl": "https://www.onkyu.life/onkyuinfo",
+      "what": "施術室の赤いベッド",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-66/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/446742_f60c48d1d01b492cb4b8847385bf600d~mv2.jpg",
+      "pageUrl": "https://www.onkyu.life/onkyuinfo",
+      "what": "店の表札",
+      "width": 1200,
+      "height": 867
+    },
+    {
+      "path": "/_portal/vshops/bodycare-66/s3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/446742_ed1c0014e12c4e4aba4e834f2312c587~mv2.jpg",
+      "pageUrl": "https://www.onkyu.life/onkyuinfo",
+      "what": "鍼の施術の手元",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,129 @@
+{
+  "key": "beauty-120",
+  "headline": "玉造駅から徒歩2分、個室をうたう美容院",
+  "lede": "JR玉造駅と地下鉄玉造駅のどちらからも徒歩2分の、玉造1丁目のビル5階にある美容院です。店は全席を個室とうたい、キッズスペースもあります。定休日は毎週月曜日と案内されています。",
+  "sections": [
+    {
+      "heading": "場所と設備",
+      "body": "長堀通り沿いで、TSUTAYAの隣のビルの5階です。1階が珈琲館で、隣の階段からエレベーターで上がります。セット面は5席、スタイリストは3人とアシスタントが1人です。禁煙で、ドリンクのサービスがあり、駐車場は近隣のコインパーキングを使います。支払いはクレジットカードとPayPayです。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "パーマ"
+    },
+    {
+      "name": "トリートメント"
+    },
+    {
+      "name": "ヘッドスパ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ可",
+      "factIndex": 7
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=2400611962910507231",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR玉造駅2分・地下鉄玉造駅2分と案内",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "JR玉造駅2分 地下鉄玉造駅2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全席個室とうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "【全席個室】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "玉造1丁目5-6のグランドヒル玉造5階にある",
+      "source": "https://maps.google.com/?cid=2400611962910507231",
+      "quote": "大阪府大阪市中央区玉造１丁目５−６ グランドヒル玉造 5F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長堀通り沿いのTSUTAYAの隣のビル、1階が珈琲館",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "長堀通り沿いTSUTAYA様の隣のビル、1階が珈琲館様",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週月曜日",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "毎週月曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも月曜が定休日",
+      "source": "https://maps.google.com/?cid=2400611962910507231",
+      "quote": "\"月\": \"定休日\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズスペースあり、お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "キッズスペースあり／お子さま同伴OK／禁煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は5席",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト3人、アシスタント1人",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "スタイリスト3人／アシスタント1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は近隣のコインパーキング",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "近隣のコインパーキングをご利用ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカードとPayPay",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "UnionPay（銀聯）／Discover／PayPay",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューのカテゴリにカット、カラー、パーマ、トリートメント、ヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/slnH000452889/",
+      "quote": "カットカラーパーマ縮毛矯正トリートメントヘッドスパ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000452889/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2400611962910507231"
+    }
+  ],
+  "notes": "営業時間は火〜金がホットペッパー20:30、Google マップ21:00と食い違うため時刻は書かず、夜遅くのタグも付けていない。定休日は月曜で一致するが、条件欄には「年中無休」の表記もあり、ページ内で食い違う(定休日欄とGoogle マップを優先して書いた)。縮毛矯正はメニュー名に載せていない。料金・クーポンは使っていない。 【監査 lite-audit-3】「個室あり」タグは、店の「全席個室」という自己申告だけが根拠のため外した(headline・lede は「うたう」の形で残す)。"
+}

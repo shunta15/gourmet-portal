@@ -1,0 +1,127 @@
+{
+  "key": "bodycare-58",
+  "headline": "東新宿駅から徒歩1分、キッズスペースのある接骨院",
+  "lede": "EPARK接骨・鍼灸で、接骨院・整骨院と整体のジャンルに掲載されている新宿区大久保の施設です。東新宿駅から徒歩1分と案内されていて、国家資格として柔道整復師が掲載されています。",
+  "sections": [
+    {
+      "heading": "営業日と設備",
+      "body": "ネット予約はEPARK接骨・鍼灸で24時間受け付けています。月・火・木・金曜日は10:00〜15:00と16:00〜20:00に営業し、土曜日はGoogle マップで10:00〜15:00の表記です。定休日は水曜・日曜・祝日。支払いはクレジットカードと電子マネーに対応し、キッズスペース、バリアフリー、更衣室、空気清浄機が設備として挙げられています。保険を扱うと案内されていますが、適用の範囲は店に確かめる必要があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "東京都新宿区大久保1-3-22 ヴァン・ヴェール新宿105号室にある",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "東京都新宿区大久保1-3-22ヴァン・ヴェール新宿105号室",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "副都心線の東新宿駅B1出口から徒歩1分",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "東新宿駅 B1出口 徒歩 1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術ジャンルは接骨院・整骨院と整体",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "接骨院・整骨院 整体",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "国家資格として柔道整復師が掲載されている",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "柔道整復師",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ネット予約は24時間受付",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "24時間受付中",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は水曜・日曜・祝日",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "★定休日：水曜・日曜・祝日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月・火・木・金は10:00〜15:00と16:00〜20:00の営業(EPARKの表)",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "10:00～15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは月・火・木・金は10:00–15:00と16:00–20:00の営業",
+      "source": "https://maps.google.com/?cid=17812756798521967357",
+      "quote": "営業時間 月 10:00–15:00, 16:00–20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは土曜は10:00〜15:00",
+      "source": "https://maps.google.com/?cid=17812756798521967357",
+      "quote": "営業時間 土 10:00–15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレジットカードが使える",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "クレジットカード利用可能",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電子マネー(iD・QUICPay・交通系電子マネー)が使える",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "電子マネー利用可能 (iD , QUICPay , 交通系電子マネー)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズスペースがある",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "キッズスペースあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "バリアフリーと案内されている",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "バリアフリー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "更衣室がある",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "更衣室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "空気清浄機がある",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "空気清浄機あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険適用可と掲載されている",
+      "source": "https://karadarefre.jp/facility/57134673/",
+      "quote": "保険適用可",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EPARK接骨・鍼灸(Google マップに登録された店のページ)",
+      "url": "https://karadarefre.jp/facility/57134673/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17812756798521967357"
+    }
+  ],
+  "notes": "gbpのwebsiteはEPARK接骨・鍼灸の店ページ(店の公式サイトではない)。事実のみ使用。メニュー名は「改善コース」等で載せない。初回限定料金・クーポン・口コミ・評価・「人気」は不使用。営業時間はEPARKとGoogle マップで一致(土曜はEPARKの表の列が読み取れないためGoogle マップ表記と明記)。保険は「適用の範囲は店に確かめる」の形。院長の名前・経歴は不使用。「当院は…短期間で高い効果」等の自己申告は不使用。 [lite-audit-4] EPARKの営業時間の表は月火木金土の10:00-15:00と月火木金の16:00-20:00でGoogle マップと一致を確認。保険の書き方は決まり8の形で問題なし。"
+}

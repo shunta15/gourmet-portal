@@ -1,0 +1,116 @@
+{
+  "key": "bodycare-73",
+  "headline": "中台ゴルフセンター内にある、ゴルフ指導もある整体の店",
+  "lede": "中台ゴルフセンターの中に入る整体の店で、所在地は東京都板橋区相生町です。メニューには、全身調整整体、部分調整整体、加圧トレーニングのほか、ゴルフ指導を組み合わせたものがあります。",
+  "sections": [
+    {
+      "heading": "予約と来店のしかた",
+      "body": "予約は、予約システムのページから取る形です。定休日は月・火・金曜日で、水・木・土・日曜日が営業日です。営業時間は、予約システムのページとGoogle マップで表記が異なるため、来店前に店へ確かめる必要があります。貸し出しの着替えはなく、施術ができる程度の軽装で来店するよう案内されています。オープンフロアにマットや簡単な運動器具を備えていると案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身調整整体",
+      "minutes": 60
+    },
+    {
+      "name": "部分調整整体",
+      "minutes": 30
+    },
+    {
+      "name": "加圧トレーニング",
+      "minutes": 30
+    }
+  ],
+  "tags": [
+    {
+      "tag": "土日営業",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "東京都板橋区相生町19 中台ゴルフセンター内にある",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "東京都板橋区相生町１９ 中台ゴルフセンター 内",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は月・火・金",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "定休日:月、火、金",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも月・火・金は定休日",
+      "source": "https://maps.google.com/?cid=2814469383763800234",
+      "quote": "営業時間 月 定休日 営業時間 火 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは土曜も日曜も営業日(10:30–19:00)",
+      "source": "https://maps.google.com/?cid=2814469383763800234",
+      "quote": "営業時間 土 10:30–19:00 営業時間 日 10:30–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "貸し出しの着替えはなく、軽装で来店するよう案内している",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "※現状貸し出し着替えのご用意がないため、施術ができる程度の軽装でご来店ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オープンフロアにマットや簡単な運動器具を備えていると案内している",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "オープンフロアにマットや簡単な運動器具なども取り揃えており",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに全身調整整体(60分)がある",
+      "source": "https://online.peakmanager.com/ja/d0l7j1/menus",
+      "quote": "全身調整整体",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに部分調整整体(30分)がある",
+      "source": "https://online.peakmanager.com/ja/d0l7j1/menus",
+      "quote": "部分調整整体",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに加圧トレーニング(30分)がある",
+      "source": "https://online.peakmanager.com/ja/d0l7j1/menus",
+      "quote": "加圧トレーニング 30分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ゴルフ指導を組み合わせたメニューがあり、A級プロゴルファー指導をうたう",
+      "source": "https://online.peakmanager.com/ja/d0l7j1/menus",
+      "quote": "A級プロゴルファー指導",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約システムのページで予約を取る形",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は090-2565-3697",
+      "source": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT",
+      "quote": "090-2565-3697",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "予約システムの店ページ(Google マップに登録されたページ)",
+      "url": "https://online.peakmanager.com/en/d0l7j1/home?tag=eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMTQ0NDdQsq4FXDD0rwuT"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2814469383763800234"
+    }
+  ],
+  "notes": "gbpのwebsiteは予約システム(PeakManager)の店ページで、事実のみ使用。営業時間はページ「10:30〜21:00/予約最終受付20:00」とGoogle マップ「10:30–19:00(水木土日)」で食い違うため時間は書かず、夜遅くのタグも付けない。定休日(月火金)は両方一致。メニュー名のうち「【慢性痛】解消」「【肩こり】解消」「【腰痛】解消」「下半身の重さ」「人気NO.1」を含む名前部分と、クーポン・料金・口コミ誘導は不使用(基本名のみ)。「タウトニング」「アスリート注目技術」等の自己申告は不使用。 [lite-audit-4] 土日営業のタグは曜日で判断(予約システムのページは定休日が月・火・金、Google マップも月・火・金が定休日で一致)。閉店時刻はページ21:00とGoogle マップ19:00で食い違うため時間は書かず夜のタグも付けない。"
+}

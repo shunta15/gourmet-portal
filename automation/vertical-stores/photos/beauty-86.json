@@ -1,0 +1,30 @@
+{
+  "key": "beauty-86",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-86/s1.jpg",
+      "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/brqEmNy3q4/s-2400x1160_v-frms_webp_2c05229d-29e0-41c3-ae14-b22ada893287_middle.webp",
+      "pageUrl": "https://erika-biyou.studio.site/",
+      "what": "セット椅子と鏡のある店内",
+      "width": 1200,
+      "height": 579
+    },
+    {
+      "path": "/_portal/vshops/beauty-86/s2.jpg",
+      "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/brqEmNy3q4/s-2400x1160_v-frms_webp_058ce1a0-fb78-405f-b5cd-4f788c34db8a_middle.webp",
+      "pageUrl": "https://erika-biyou.studio.site/",
+      "what": "棚のある店内",
+      "width": 1200,
+      "height": 579
+    },
+    {
+      "path": "/_portal/vshops/beauty-86/s3.jpg",
+      "imageUrl": "https://storage.googleapis.com/studio-design-asset-files/projects/brqEmNy3q4/s-2400x1160_v-frms_webp_344ae165-c83e-44ba-bdbc-1059fcaf572b_middle.webp",
+      "pageUrl": "https://erika-biyou.studio.site/",
+      "what": "鏡と観葉植物の店内",
+      "width": 1200,
+      "height": 579
+    }
+  ],
+  "note": ""
+}

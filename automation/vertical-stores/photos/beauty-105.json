@@ -1,0 +1,22 @@
+{
+  "key": "beauty-105",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-105/s1.jpg",
+      "imageUrl": "https://designlab-chic.com/_img/ja/cms/6232/image/_/",
+      "pageUrl": "https://designlab-chic.com/",
+      "what": "店の外観",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-105/s2.jpg",
+      "imageUrl": "https://designlab-chic.com/_img/ja/cms/5970/bg_image/768_500_2_/",
+      "pageUrl": "https://designlab-chic.com/",
+      "what": "鏡とセット椅子",
+      "width": 768,
+      "height": 500
+    }
+  ],
+  "note": ""
+}

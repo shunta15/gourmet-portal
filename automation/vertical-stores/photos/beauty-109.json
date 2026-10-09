@@ -1,0 +1,22 @@
+{
+  "key": "beauty-109",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-109/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/9e386b_0bb53ef8949c442eacfcb1ce5908cc50~mv2.jpg",
+      "pageUrl": "https://irisesutesalon.wixsite.com/esute/story",
+      "what": "スタッフの背中の施術",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "path": "/_portal/vshops/beauty-109/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/9e386b_c50abb507f6647d78e9d0554419ec95c.jpg",
+      "pageUrl": "https://irisesutesalon.wixsite.com/esute",
+      "what": "脚のマッサージの様子",
+      "width": 768,
+      "height": 1024
+    }
+  ],
+  "note": ""
+}

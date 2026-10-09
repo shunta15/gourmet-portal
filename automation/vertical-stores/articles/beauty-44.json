@@ -1,0 +1,129 @@
+{
+  "key": "beauty-44",
+  "headline": "甲斐市玉川にある、駐車場のある美容室",
+  "lede": "カットやカラー、デジタルパーマ、縮毛矯正をメニューに挙げる、山梨県甲斐市玉川の美容室です。ヘアセットや着付けにも対応し、席はセット面が5席です。予約の窓口はホットペッパービューティーのページにあります。",
+  "sections": [
+    {
+      "heading": "場所と設備",
+      "body": "最寄りは竜王駅で、徒歩30分と案内されています。駐車場があり、店内は禁煙です。ドリンクサービスがあります。掲載ページでは、お子さま同伴OKとも案内されています。支払いは店頭でカードが使えます。営業時間は店の案内とGoogleマップで細部の表記が異なるため、来店前に確かめる必要があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "デザインカット"
+    },
+    {
+      "name": "デザインカラー"
+    },
+    {
+      "name": "デジタルパーマ"
+    },
+    {
+      "name": "縮毛矯正"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=589549277904657040",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "山梨県甲斐市玉川36－1にある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "山梨県甲斐市玉川36－1",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄りは竜王駅で、徒歩30分",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "竜王駅から徒歩30分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "席はセット面が5席",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "駐車場あり／ロング料金なし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店頭でのカード支払いができる",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "店頭でのカード支払いOK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴に対応している",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ドリンクサービスがある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店内は禁煙",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "禁煙",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘアセットと着付けに対応している",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "ヘアセット／着付け",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デザインカットのメニューがある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "デザインカット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デザインカラーのメニューがある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "デザインカラーが得意なサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デジタルパーマのメニューがある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "デジタルパーマが得意なサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正のメニューがある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "縮毛矯正・ストレートが得意なサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約の窓口はホットペッパービューティーのページにある",
+      "source": "https://beauty.hotpepper.jp/slnH000335534/",
+      "quote": "空席確認・予約する",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000335534/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=589549277904657040"
+    }
+  ],
+  "notes": "営業時間: ホットペッパーは 10:00〜20:00、Google マップは月〜金 10:00〜19:30・土日 10:00〜20:00 で食い違うため時刻は書かない。定休日は「毎週祝日月曜日 平日月曜日は営業」と読みにくい表記のため書かない。メニュー名は「得意なサロン」の見出しとクーポン名から名前だけ拾った(料金は書かない)。 [監査 lite-audit-2] 子連れ可タグを外した(根拠が掲載ページのこだわり条件の表示だけ)。本文は「掲載ページでは〜と案内」の形に。"
+}

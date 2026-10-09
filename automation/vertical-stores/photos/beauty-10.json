@@ -1,0 +1,30 @@
+{
+  "key": "beauty-10",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-10/s1.jpg",
+      "imageUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/2635640/91faf1ef991d4c99bf79bfda2f27cda3_f1f984249b4c368d1a8b6ef3bb06cf4e.jpg",
+      "pageUrl": "https://beautysalonsonata.amebaownd.com/",
+      "what": "施術室のベッドとシャンデリア",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-10/s2.jpg",
+      "imageUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/2635640/0a132327e86f27c887a4a246e470e664_81d62a682490698dea66f1c2f489d540.jpg",
+      "pageUrl": "https://beautysalonsonata.amebaownd.com/",
+      "what": "花柄の壁紙とベンチの店内",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-10/s3.jpg",
+      "imageUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/2635640/2dfc8fbd2ac85d5f492c4050060665b5_39e6a36847fefce14e301c29eba40ba0.jpg",
+      "pageUrl": "https://beautysalonsonata.amebaownd.com/",
+      "what": "フェイシャル施術の様子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

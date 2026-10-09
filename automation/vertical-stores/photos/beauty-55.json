@@ -1,0 +1,21 @@
+{
+  "key": "beauty-55",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-55/s1.jpg",
+      "imageUrl": "https://thema.tokyo/wp-content/uploads/sites/11/2016/05/mv011.jpg",
+      "pageUrl": "https://thema.tokyo/",
+      "what": "セット椅子が並ぶ店内",
+      "width": 1200,
+      "height": 510
+    },
+    {
+      "path": "/_portal/vshops/beauty-55/s2.jpg",
+      "imageUrl": "https://thema.tokyo/wp-content/uploads/sites/11/2016/03/img_top011.png",
+      "pageUrl": "https://thema.tokyo/",
+      "what": "店名ロゴと椅子のある店内",
+      "width": 510,
+      "height": 359
+    }
+  ]
+}

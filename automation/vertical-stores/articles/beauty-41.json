@@ -1,0 +1,86 @@
+{
+  "key": "beauty-41",
+  "headline": "紀の川市下井阪のヘアサロン。セット面4席、駐車場5台",
+  "lede": "和歌山線の下井阪駅から徒歩10分にある、和歌山県紀の川市下井阪のヘアサロン「3-HEART'S(スリーハーツ)」です。約15坪の2階建てで、1階はセット面、2階は完全予約制のプライベートナイターサロンと案内されています。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は4席で、スタイリストは1人、アシスタントは2人です。駐車場は5台分あり、支払いはVisa、Mastercard、JCB、PayPay、地域商品券に対応します。住所は紀の川市下井阪104です。携帯のナビなどで調べると移転前の場所に案内される場合があるため、注意が呼びかけられています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=12546642383506657630",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "下井阪駅から徒歩10分",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "和歌山線　下井阪駅徒歩10分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "約15坪の2階建てサロン",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "約15坪の個室・半個室の２階建てサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "1階はセット面、2階は完全予約制のプライベートナイターサロン",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "１階はワンストップ型のセット面で、２階は完全予約制のプライベートナイターサロンになっております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は4席",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "セット面4席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト1人・アシスタント2人",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "スタイリスト1人／アシスタント2人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は5台",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "駐車場\t5台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ナビでは移転前の場所に誘導される場合がある",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "移転前の場所(オーストリート内)に誘導される可能性がありますのでご注意ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は和歌山県紀の川市下井阪104",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "和歌山県紀の川市下井阪１０４",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはVisa・Mastercard・JCB・PayPay・地域商品券",
+      "source": "https://beauty.hotpepper.jp/slnH000439731/",
+      "quote": "Visa／Mastercard／JCB／Pay Pay 　地域商品券",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000439731/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12546642383506657630"
+    }
+  ],
+  "notes": "(確認してほしい点)営業時間・定休日が食い違うため本文に書いていない: HP は毎週月曜・第1水曜・第3日曜が定休で10:00-20:00、Google マップは月曜のみ定休で他の曜日は10:00-20:00。HP に「移転前の場所(オーストリート内)」とあり、Google マップの住所(下井阪104)は HP の現住所と一致するので移転後の位置と判断した。「パーソナル印象診断」「頭皮・髪質改善」「Aujua」・口コミ・クーポンは使っていない。 【監査 lite-audit-5】タグ「個室あり」「子連れ可」と、本文の個室・半個室・お子さま同伴の記述を外した(条件欄だけが根拠のため)。lede の「ナイター営業」は時間の話に読めるため、店の言い方「プライベートナイターサロン」に戻した。"
+}

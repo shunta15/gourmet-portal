@@ -1,0 +1,29 @@
+{
+  "key": "bodycare-33",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-33/s1.jpg",
+      "imageUrl": "https://kanade.info/wp-content/uploads/naikan-1-1.jpg",
+      "pageUrl": "https://kanade.info/",
+      "what": "施術室のベッド",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-33/s2.jpg",
+      "imageUrl": "https://kanade.info/wp-content/uploads/IMG_7959.jpg",
+      "pageUrl": "https://kanade.info/",
+      "what": "店舗の外観",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-33/s3.jpg",
+      "imageUrl": "https://kanade.info/wp-content/uploads/sejyutsu-2.jpg",
+      "pageUrl": "https://kanade.info/",
+      "what": "施術室での施術の様子",
+      "width": 1200,
+      "height": 900
+    }
+  ]
+}

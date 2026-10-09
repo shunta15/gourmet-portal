@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-70",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-70/s1.jpg",
+      "imageUrl": "https://www.kashiwagi-seitaiin.com/wp-content/uploads/2024/12/1731328618901.jpg",
+      "pageUrl": "https://www.kashiwagi-seitaiin.com/",
+      "what": "施術室で首を整える院長",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-70/s2.jpg",
+      "imageUrl": "https://www.kashiwagi-seitaiin.com/wp-content/uploads/2025/03/1731328618911.jpg",
+      "pageUrl": "https://www.kashiwagi-seitaiin.com/",
+      "what": "背中の施術の様子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}
