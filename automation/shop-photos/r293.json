@@ -1,0 +1,45 @@
+{
+ "storeId": "r293",
+ "dir": "shop-r293",
+ "storeName": "SIESTA",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SIESTA%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E9%BA%A9%E5%B1%8B%E7%94%BA%E9%80%9A%E7%B6%BE%E5%B0%8F%E8%B7%AF%E4%B8%8B%E3%82%8B%E4%BF%B5%E5%B1%8B%E7%94%BA309-1",
+ "placeUrl": "https://www.google.com/maps/place/SIESTA/@35.0022852,135.7656704,17z/data=!3m1!4b1!4m6!3m5!1s0x6001097fd140571f:0x355825ddabd7a858!8m2!3d35.0022852!4d135.7656704!16s%2Fg%2F11wc12nt7b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "SIESTA",
+  "address": "京都府京都市下京区麩屋町通綾小路下る俵屋町３０９−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r293/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZZgqiKb2hpWfJ-EYTLFP0ZtKy_mZOpd6tHmoRoQuNpJhmr7d0DYtr43QKIL2PoH9dxs3muWPtRT6w6edHuj3x0DVDkSoXxXno7PElA2X8pn_TqYOXPqb12gVezu7tTf_Qj98jyJNeWvBf=s1600",
+   "what": "ブリトーのトレー",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r293/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RERFp7n1dMRuB7P-AKo3b6O8-cwCIGLMIjxFPaz1e5hf9iO_oopejc9KlVCRtj1NkXhGi3mcMUG08jxHFbA9AT7VMCRfM4TBly82CuuDFXxLeDZcWdF6UZJ4IOMOCmMiwR9aKXa_SzLmmm=s1200",
+   "what": "町家風の店の外観",
+   "width": 720,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r293/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qmx_cNy8MPJtrYGO6t4g7ezYXNzhaxG1TFxkNMqgWzSBvWaYGWg_GCPB7YMDgOltsCbaLnONEOrqaDnByDeVHDY-TI_6Vc-snQ_dw0JppsEWel4JyQ2QlLQmkozIXbLJf0_FS58Q=s1200",
+   "what": "明るい店内の席",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

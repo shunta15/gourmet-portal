@@ -1,0 +1,45 @@
+{
+ "storeId": "r279",
+ "dir": "shop-r279",
+ "storeName": "和食たかもと",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E9%A3%9F%E3%81%9F%E3%81%8B%E3%82%82%E3%81%A8%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%97%E5%8C%BA%E5%A4%A7%E6%A9%8B2-13-9",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E9%A3%9F%E3%81%9F%E3%81%8B%E3%82%82%E3%81%A8/@33.5564454,130.4287903,17z/data=!3m1!4b1!4m6!3m5!1s0x3541911d1e3f6477:0x110c63cae72dd300!8m2!3d33.5564454!4d130.4287903!16s%2Fg%2F1q64f405d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和食たかもと",
+  "address": "福岡県福岡市南区大橋２丁目１３−９",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r279/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXQevEbxzOpOxeKlkeDCCPdFtg1-KExZxKRe0kD7cELPivgmUDBX-6gcrb5QtLAKyuzUzMe8ijGtPLp4McGfVxL1d_qJjMznaumDqPIo9tOuWNVfjsRqNfSI_BIrEqmzDGPkud-vuRJwFR=s1600",
+   "what": "木格子の店の外観",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r279/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QdsWpGExcU0Su0xVogyEGuZCLcLafkCQV-ESpPToK6ODO5WifWbVSLQMpqDf-hbP41besr6-Cj8KqNLlkBCUX6Bb3TJibUEB2xMdrlNS4dkax3lRMJ_-loEpn9y5lJF5F78S_1=s1200",
+   "what": "牛肉の丼とお椀",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r279/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBYf0lFQHZAfhh3Zf9_upHnVHEjUTeLTkjddkBT7hvGHiU5M830ZwDjgw6GNvkGCaBGFH2vw3rgcz5DEKIVpqyX2QpAbOyG3qKFCYE-0boMFL7vLaInVc5sjiLiaIREvmiGoGN_MOIU1T-=s1200",
+   "what": "カウンター席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

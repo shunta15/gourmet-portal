@@ -1,0 +1,45 @@
+{
+ "storeId": "r253",
+ "dir": "shop-r253",
+ "storeName": "焼肉 だるま",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%20%E3%81%A0%E3%82%8B%E3%81%BE%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E6%A0%84%E7%94%BA3-2-21%20%E3%82%AD%E3%83%A3%E3%83%8B%E3%82%AA%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B32F",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E3%81%A0%E3%82%8B%E3%81%BE/@35.8044364,139.7171673,17z/data=!3m1!4b1!4m6!3m5!1s0x601893259b1df90b:0xf00b5c8d10703359!8m2!3d35.8044364!4d139.7171673!16s%2Fg%2F11v425qn73?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉 だるま",
+  "address": "埼玉県川口市栄町３丁目２−２１ キャニオンマンション 2F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r253/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcCRxTqiqQeuwWhJ_iqFR9PHJI3OLzDkVUiKFYZy_datvCn7zqk6DcNZSb8EgcP20uRn36G6bwmsiOJ3VLPv-R1s95WUTYGWQVRgCNSQMN7GodfMLsBzVrbwpBEIUy6o2vysHMw_oiZJg=s1600",
+   "what": "だるまの看板のある入口",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r253/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVBb8YE_LxiWzirNhfJSwURgvqWLScZNZ03ZpANTV8qIbXwjJIMzrDZY0n7lORdrXOsaB4KBtrASxNuc3R-bJAm6QuuDTbkBVt-ygKkFAJuErvFJZHSdEo1hyIE8o7XevGi59YjVj3ku4=s1200",
+   "what": "網焼きの牛タン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r253/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RlyPz-H6J-5pr-gZn6JmXU_UiRwhh3ZYWjQUIz7dvcnTwzuL1qaqNzJiIYbzfgcZFaYivlyBgGygo7mSKObarnzhJds15NReecWqNV0sNMcX9xV_B1P_VjtR_Tp1dJ8pjjeh8YonpqgppK=s1200",
+   "what": "たれ焼きの肉の皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

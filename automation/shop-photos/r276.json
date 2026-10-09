@@ -1,0 +1,45 @@
+{
+ "storeId": "r276",
+ "dir": "shop-r276",
+ "storeName": "もぐもぐ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%82%E3%81%90%E3%82%82%E3%81%90%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E9%AB%98%E7%94%B01%E4%B8%81%E7%9B%AE8-7",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%82%E3%81%90%E3%82%82%E3%81%90/@33.902595,130.93468,17z/data=!3m1!4b1!4m6!3m5!1s0x3543be46b62cb43d:0xed8ae6bd73b031cb!8m2!3d33.902595!4d130.93468!16s%2Fg%2F11cs5n1_9r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "もぐもぐ",
+  "address": "福岡県北九州市門司区高田１丁目８−７",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r276/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T68uZ0pF6lgMXeMfny0FlATU3y46FcLMtpOU8ufh4jjF4H_-bcFsvUKJYUxZCjjo87Pf7dfkObag5yBo2mRDx1ogFFNxBDPeri-7VsSuvlvNQ0NYXbVceoUSmJQQPKaYo4DgRi=s1600",
+   "what": "日本酒が並ぶカウンター",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r276/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtPi7vPsuAg5AfQbCZPYCVry59l_CUJmKd7tNSPVu7DxIQB986cWKCrXMGPtnw7cmFz9JZLy8QkcFJtQRrQUUYUFS8HzBOC8c4qR3jzb6AXEImn1WKmb8guNX24_QYQHfVzuvb=s1200",
+   "what": "店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r276/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1cRi-30UdMouge0pBLDvjsWbWCcHN8y80OT-_206fja8ZnOHRlmWXu_1B8JozHxLObrtDXvTlw1Za2UvWh2auZ_XHsW462yaDxOl-KpQBS3lAS-rrGHJOltM1lHYDfeDxCyA=s1200",
+   "what": "うなぎの蒲焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

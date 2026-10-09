@@ -1,0 +1,45 @@
+{
+ "storeId": "r281",
+ "dir": "shop-r281",
+ "storeName": "アンティ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%B3%E3%83%86%E3%82%A3%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%B0%8F%E5%80%89%E5%8C%97%E5%8C%BA%E8%88%B9%E5%A0%B4%E7%94%BA6-2%20%E3%82%AC%E3%83%83%E3%82%B7%E3%83%A5%E3%83%93%E3%83%AB2F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%B3%E3%83%86%E3%82%A3/@33.8832301,130.8784591,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bf52affa3f57:0xaffe95f68a32340e!8m2!3d33.8832301!4d130.8784591!16s%2Fg%2F1tdc7lb5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "アンティ",
+  "address": "福岡県北九州市小倉北区船場町６−２ ガッシュビル 2F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r281/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZt3UzD-3jFDahv_rlK3LHovC4pFpXIR0FPDSX7QqVNZ_k6RY_5yA_PQb1kl17pYLxzRsWvUbqxuGFi7QP2WEDetKRb5JV7BjNRJutzn_-2KnycjEB9Eu4QjDUaOxjp1ARvCPLSS8HmmLQ=s1600",
+   "what": "ティーポット看板のある店内",
+   "width": 1400,
+   "height": 1054,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r281/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qb-glZna5LJK3b3tpBW07yTDknDrU6fypLW06ehu8u67pyzBhE94JF2wxDMMea3wZuGskjGIzYIk0fd3v5PVT0nZVsiuvGflRQYecToiEjKwJ4SMP0767abO2f5RnwrvdQ_UtI=s1200",
+   "what": "ビルの外観",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r281/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SKARUnGw5yMARPuSGeYzx40YQI8E_wkggWPEFjSltogxxmcwSvFwQkbOR4tIXLR2NJ4OEi54iPadSclnjWzzzF_zrZwQk7-jIziRBMw2R6sse0cZCDqz1-jswrPQDeXePBc6pI2w=s1200",
+   "what": "アフタヌーンティー",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

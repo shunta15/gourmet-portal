@@ -1,0 +1,45 @@
+{
+ "storeId": "r291",
+ "dir": "shop-r291",
+ "storeName": "本格江戸前鮨ザギンでシースー南京町",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E6%A0%BC%E6%B1%9F%E6%88%B8%E5%89%8D%E9%AE%A8%E3%82%B6%E3%82%AE%E3%83%B3%E3%81%A7%E3%82%B7%E3%83%BC%E3%82%B9%E3%83%BC%E5%8D%97%E4%BA%AC%E7%94%BA%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%84%E7%94%BA%E9%80%9A2-5-5",
+ "placeUrl": "https://www.google.com/maps/place/%E6%9C%AC%E6%A0%BC%E6%B1%9F%E6%88%B8%E5%89%8D%E9%AE%A8%E3%82%B6%E3%82%AE%E3%83%B3%E3%81%A7%E3%82%B7%E3%83%BC%E3%82%B9%E3%83%BC%E5%8D%97%E4%BA%AC%E7%94%BA/data=!4m7!3m6!1s0x60008fa25c12569f:0x3181a6f1dcf2c065!8m2!3d34.687638!4d135.1874582!16s%2Fg%2F11w9bvszk8!19sChIJn1YSXKKPAGARZcDy3PGmgTE?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1&hl=ja",
+ "matched": {
+  "name": "本格江戸前鮨ザギンでシースー南京町",
+  "address": "兵庫県神戸市中央区栄町通２丁目５−５",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r291/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXiCcEfC-Q86s-qMh46eqLLZPxq1hiyoWXF5UYo_0WP9ydTgy-mcXE_eq3-mL4noecgPJQZeovcPsYVchJLHF1DD-v996wj4GVJUIb62aPEckpp1iLIrozBNxd7GCyxKtXcYwAEw=s1600",
+   "what": "寿司スタンドの外観",
+   "width": 1400,
+   "height": 787,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r291/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHyczOH7WQg3fO1B4wZIBiqM45L8d1eXFO-hWP6li0BSrUQ5YWKww3eI1tqkJOCnRzDtPtsZvpo84MM60zi8esYeKQW9AFCNjRu1dR80YLAYGy7wedxbOmWhxobmt28XYimJ-AEQ=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r291/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMMWUqMLG0539E-6k_2gAAhqJZ-WOr0i0BABCKpAl9bAUgmbpdQdugQrHWmDOFrQCDeQ4Prq_AYai0HNWNCgIUXZAUeefkxAb9RR3f-SGoaDuPg2q2mcbrC0unqKHw9JQTaDL4C9_J8M8M=s1200",
+   "what": "炙り寿司",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

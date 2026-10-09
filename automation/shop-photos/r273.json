@@ -1,0 +1,45 @@
+{
+ "storeId": "r273",
+ "dir": "shop-r273",
+ "storeName": "イタリアンベースカフェ ドマーニ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%99%E3%83%BC%E3%82%B9%E3%82%AB%E3%83%95%E3%82%A7%20%E3%83%89%E3%83%9E%E3%83%BC%E3%83%8B%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%92%8C%E6%B3%89%E5%B8%82%E3%81%AE%E3%81%9E%E3%81%BF%E9%87%8E3%E4%B8%81%E7%9B%AE11-4",
+ "placeUrl": "https://www.google.com/maps/place/ITALIAN+BASE+CAFE+Domani(%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%99%E3%83%BC%E3%82%B9%E3%82%AB%E3%83%95%E3%82%A7+%E3%83%89%E3%83%9E%E3%83%BC%E3%83%8B)/@34.4524518,135.4575129,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d1a24a267db5:0xc57759ab61805e10!8m2!3d34.4524518!4d135.4575129!16s%2Fg%2F11txxw2474?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ITALIAN BASE CAFE Domani(イタリアンベースカフェ ドマーニ)",
+  "address": "大阪府和泉市のぞみ野３丁目１１−４ 101号",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r273/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKA_5JK1XwmApnwrFfPcBD0gP8N6a39o7dhRit_Gqz1YYZUD_AEvGAa_auIygnUeIXmFAu7NLqnpC33fuqgG16xViY1uNFjC7JpXcpVccSTPXGBbusOnVtLQ6t1fM6jJShUPpD=s1600",
+   "what": "カウンターのある明るい店内",
+   "width": 1400,
+   "height": 933,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r273/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRHsZndiHJ_J4DYrdi3DyFd2-MHxUKPITCCssDx6xb8IRjwlqXI-z8N-8uYuuCcf_OzcT80t1jkFew9LEFztIi2ORdlFJ_T9Oc3P0qM9tdcWhEzsHxUlPOuSJv_i422uZV2GOsliHfE84m=s1200",
+   "what": "彩りのランチプレート",
+   "width": 883,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r273/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScHeIAZKmYxj88BMExBnUOPeCvsgkpDHQHgU4vfbSTJcXWf6Ld-ohEmlIsbhGbJ2_83ecaf1iXARkIBHyGQCtr0QDVvV1jt9OTUjCoNCM1_LvSdrcbihftvMFSkudNkqnlT8ctiVUtxxyY=s1200",
+   "what": "窓辺のテーブル席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "Google マップの店名は「ITALIAN BASE CAFE Domani(イタリアンベースカフェ ドマーニ)」で、記録の名前をまるごと含む。"
+}

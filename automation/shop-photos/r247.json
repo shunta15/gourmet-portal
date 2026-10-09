@@ -1,0 +1,45 @@
+{
+ "storeId": "r247",
+ "dir": "shop-r247",
+ "storeName": "オドルヨウニ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AA%E3%83%89%E3%83%AB%E3%83%A8%E3%82%A6%E3%83%8B%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A0%BA%E5%B8%82%E5%A0%BA%E5%8C%BA%E4%B8%A6%E6%9D%BE%E7%94%BA20-1%20%E5%B8%82%E5%96%B6%E6%9D%B12%E6%A3%9F%201F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%83%89%E3%83%AB%E3%83%A8%E3%82%A6%E3%83%8B/@34.5937964,135.4848286,17z/data=!3m1!4b1!4m6!3m5!1s0x6000dde810863e71:0xba9b891448f59c53!8m2!3d34.5937964!4d135.4848286!16s%2Fg%2F11ll2sndt6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "オドルヨウニ",
+  "address": "大阪府堺市堺区並松町２０−１",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r247/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QdQ3DRu9xLh_vgEBWtXlmZHBipd6Uds8d0q7Iyhx3tXnUlmFGCQxld2W0fbao-KVlrP848d7I14USCaiaxT3ar00W8u_uyMBaKa_AcnbAXXXNTpgJXBSKDWWr498dR6sWOtWloBKuhN1gM=s1600",
+   "what": "焼き菓子とパイの盛り合わせ",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r247/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T95cqtfdnBhag5zc7vn5gA3Kt3CNRhE0KJ0Uib768G6Zj3_fCZ7tH_7MLJuNtBodmhyf6EQyvQPNurhuqTJOQERYx6e1lFus98fyzELHQhUwJymsxcdBPKgnbLg9itbu_D4liBK5yo2fk4=s1200",
+   "what": "緑の庇のある店の外観",
+   "width": 900,
+   "height": 674,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r247/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrV6-W-V-7TsxGrq3GXxa1GfOjpjUrqpuxzIzdcJUc0QNYlWEvc9jk1OobitQPM5u7g5NWLRjKtti20TGZ5kXcHp5CxjdFBdUFMVSQ-nEMJjT0iBcI6q923MdTOFgg677KT0c7=s1200",
+   "what": "焼き菓子のショーケース",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

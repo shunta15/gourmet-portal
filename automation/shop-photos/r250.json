@@ -1,0 +1,45 @@
+{
+ "storeId": "r250",
+ "dir": "shop-r250",
+ "storeName": "あまえんぼう グリーンプラザ店",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%BE%E3%81%88%E3%82%93%E3%81%BC%E3%81%86%20%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%97%E3%83%A9%E3%82%B6%E5%BA%97%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E6%A7%BB%E5%B8%82%E7%B4%BA%E5%B1%8B%E7%94%BA3-1%20%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%97%E3%83%A9%E3%82%B63%E5%8F%B7%E9%A4%A8B1",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%BE%E3%81%88%E3%82%93%E3%81%BC%E3%81%86+%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%97%E3%83%A9%E3%82%B6%E5%BA%97/data=!4m7!3m6!1s0x600102b653bbb167:0xb89482ec52a58cfe!8m2!3d34.8506812!4d135.6176145!16s%2Fg%2F1tr7cpzy!19sChIJZ7G7U7YCAWAR_oylUuyClLg?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1&hl=ja",
+ "matched": {
+  "name": "あまえんぼう グリーンプラザ店",
+  "address": "大阪府高槻市紺屋町３−１ グリーンプラザ B１ JR高槻駅直結",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r250/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7NKHbkUdsRKZAXHJjLspQyTMktk0Ov4iCml53fz9uERBy2cTJHAidreR_G7nQXeySyF2ubotufyDPu8yyOAAwywRQAjnUqrx-Nq99uqKBvV8xPrFmALFAPDPG1e5BhLXy47St=s1600",
+   "what": "テーブル席の並ぶ明るい店内",
+   "width": 1400,
+   "height": 932,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r250/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAhWv6IVnsyleFzvEf3oWXMpmNxDnp6ZtE4VDzUo_vTPm6jQXOGcFtXsJsDrUxj6jrv0lemZMR2J_ecxQSusM8psWxbuhe-Z9MHOy8SJAygmhSL3gnLU0F1gsL0ehkWw4Nr24=s1200",
+   "what": "鉄板料理と一品料理の盛り合わせ",
+   "width": 900,
+   "height": 504,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r250/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBZveTQOZxAlSopC4VwX-Q51A04ZZWZOjXg1D21PR6FyLdrIf-_ZcUJRf1JkxJxUYowWWzaZmX3fr0oEr33EcDDVY4JDYifdmsHi0hD8xhcAXMDVJSs9UtgLk9RHqJZnXq0DwOxg=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 504,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "検索結果は一覧で出た。一覧のうち名前が通る2件(「あまえんぼう グリーンプラザ店」と「あまえんぼう」)を開き、住所が番地まで一致するのは前者だけ(後者は高槻市城北町1丁目4-39で別の店)なので、前者を使った。"
+}

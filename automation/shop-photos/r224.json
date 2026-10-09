@@ -1,0 +1,45 @@
+{
+ "storeId": "r224",
+ "dir": "shop-r224",
+ "storeName": "汽ノ舎",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B1%BD%E3%83%8E%E8%88%8E%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%9D%B1%E7%89%9F%E5%A9%81%E9%83%A1%E9%82%A3%E6%99%BA%E5%8B%9D%E6%B5%A6%E7%94%BA%E4%B8%8B%E9%87%8C",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B1%BD%E3%83%8E%E8%88%8E/@33.5788241,135.9215166,17z/data=!3m1!4b1!4m6!3m5!1s0x60061705f26c2973:0xe2dd2aa5f179e79!8m2!3d33.5788241!4d135.9215166!16s%2Fg%2F11sdm8y8cn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "汽ノ舎",
+  "address": "和歌山県東牟婁郡那智勝浦町下里２７２７−７",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r224/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT00IiUJYNzR072npkQWAePHSUbZLcYRUZimLOrA3gsrGnreumLKUhJOcmQN4hgsG2tqbNNLV6G8gK1Lh6oDNiwa3Wvas_PIm-pGfWgDWapNKERkzchDq2gvJClZlEUM_kuknlI-CeCfc=s1600",
+   "what": "海辺の店の外観",
+   "width": 1400,
+   "height": 932,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r224/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4JuYotB3I8slGHkUDq7ZXKFUp_zG4BqWOvaWu0YcOwIV36mRXPlri-AvtcKYtN031fMyjYOXn8U8mjo2VrrD9EnzUkvDrCOOsKo9Uped6x-SbJxwPybL1VZVaQhj8tykPpVeO8bko4AXF=s1200",
+   "what": "長テーブルのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r224/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SggdJmHh2AgtKEXNqe25dibuafzcvxx9BDBgyucayTf-05re8_EcNCgi7SarM6LQsmgrZaUiBWN5m51Ii5EMq8Dcdwj2pZdedeyiHjcIyrmhSdifaYdOpnB0nJwUK9PVpgCirteiK8hOr6=s1200",
+   "what": "トーストの朝食プレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "記録の住所に番地が無い(町名まで)ため、店名の完全一致だけで通した。Google マップの住所は番地つきで同じ町名。"
+}

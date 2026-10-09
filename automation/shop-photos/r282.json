@@ -1,0 +1,45 @@
+{
+ "storeId": "r282",
+ "dir": "shop-r282",
+ "storeName": "料亭松助",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%96%99%E4%BA%AD%E6%9D%BE%E5%8A%A9%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%85%AB%E5%B9%A1%E6%9D%B1%E5%8C%BA%E4%B8%AD%E5%A4%AE3-1-19",
+ "placeUrl": "https://www.google.com/maps/place/%E6%96%99%E4%BA%AD%E6%9D%BE%E5%8A%A9/@33.86447,130.8124366,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c7cb5bf3c3e7:0xd47add3d8175d961!8m2!3d33.86447!4d130.8124366!16s%2Fg%2F1tgnzlq8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "料亭松助",
+  "address": "福岡県北九州市八幡東区中央３丁目１−１９",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r282/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8nZz9ZGglHk3WgUE4S8yY1xvOns-MhyRPrc-5uhrS4czoiVGn3zc55z-TsvDUv3OkyrbukslwNtuoBX8CHCdFWLZuwILZJq6aqp6V3TREzA5VgdZ8lA64KzkRvyhM2FccUWY=s1600",
+   "what": "彩りの前菜の盛り合わせ",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r282/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWgUuMzab_wuAhYcxbJYOFJZSJcJ41jZvma2VkckmmSGcTNMRLpdPcA_d_bD5gZCW0rtaJ5DMWQRGS37ZHqkuMPeyKxd4hJukjFPz-gSJJtoFot9s1R8AWVLSiqYiO8H7IYmDY=s1200",
+   "what": "ふぐ刺しの大皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r282/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5_R-36NSmqewAD1OAzv3OgaW96ckH3rTDtBmDJiKawckdTUqwITugiyXF8RjyQUIXH_RxVqhyjVE-UlsBn99AtP49yz-meJzuEVrh1s90zGFDRrHgoXo2Z4aBvzZfUdLPiHIrTw=s1200",
+   "what": "土瓶蒸しとお膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "storeId": "r246",
+ "dir": "shop-r246",
+ "storeName": "カサナヤ沖端",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%82%B5%E3%83%8A%E3%83%A4%E6%B2%96%E7%AB%AF%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E6%9F%B3%E5%B7%9D%E5%B8%82%E6%B2%96%E7%AB%AF%E7%94%BA34",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%82%B5%E3%83%8A%E3%83%A4%E6%B2%96%E7%AB%AF/@33.1584245,130.3950184,17z/data=!3m1!4b1!4m6!3m5!1s0x35404d0047a5fffb:0x8f9edebb6add5dfc!8m2!3d33.1584245!4d130.3950184!16s%2Fg%2F11wxqgxrqy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "カサナヤ沖端",
+  "address": "福岡県柳川市沖端町３４",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r246/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7Szi0icmfLqwGHMBDmtwcYUZB8-uDOuqi1IktgT6QEN7ANjn5yqAvDZWAZnrfAUg71xYjoQ2OQEhqNVqW0uN7XsosMDZuVBqY3-DouaHOfhjx3Kl34iEtayT_oM55kupFJJSNxQIkqdQ=s1600",
+   "what": "店名の看板のある外観",
+   "width": 1400,
+   "height": 1049,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r246/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qac81Qyg_zfsKbEtVZwHIkIyO7IQL5saOlMxjMxMIgWYrOanjG87iVOD_g3Fq5wmK8tSHpVEVCVhxTHfqoSYyFbrUoT8H_anffaQ27_DQuY395GfSwxZJg-OXD-xhk0VxQl4hg=s1200",
+   "what": "川辺で持つ焼き菓子",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r246/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyOAQ76IgsH5JC9mjbPA93TmpV5G-SXlpBFQrP7Ul_ucc5dGGRY3Bgj_i7QCJf0wWSqq5ZGc5LxXwQG76mzroX8ep9kmzepgtrzMS7SE7catn_tuU5w8TArgvVeFnePFuqln6N1o6SNYIX=s1200",
+   "what": "抹茶のドリンク",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

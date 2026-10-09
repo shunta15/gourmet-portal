@@ -1,0 +1,45 @@
+{
+ "storeId": "r254",
+ "dir": "shop-r254",
+ "storeName": "Dog🐾café & Bar mint (ドッグカフェ&バー ミント)",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dog%F0%9F%90%BEcaf%C3%A9%20%26%20Bar%20mint%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A0%BA%E5%B8%82%E7%BE%8E%E5%8E%9F%E5%8C%BA%E9%9D%92%E5%8D%97%E5%8F%B02-5-7",
+ "placeUrl": "https://www.google.com/maps/place/Dog%F0%9F%90%BEcaf%C3%A9+%26+Bar+mint+(%E3%83%89%E3%83%83%E3%82%B0%E3%82%AB%E3%83%95%E3%82%A7%26%E3%83%90%E3%83%BC+%E3%83%9F%E3%83%B3%E3%83%88)/@34.5138402,135.5695934,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d750d588d8ff:0xc25084d58f4a96b0!8m2!3d34.5138402!4d135.5695934!16s%2Fg%2F11gy56tg2j?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Dog🐾café & Bar mint (ドッグカフェ&バー ミント)",
+  "address": "大阪府堺市美原区青南台２丁目５−７",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r254/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QI1eTSyOZ1ItK4tvsYbkQ2AU4qExkSvPSoUwQIOKQQFHlPQh4k5U43T-cJZsqmRRZzqN8QAFZeGC3vnv3kHeGedUI6FD2VjTHwrn0mXF_nAIG5BKYvfRVZm50zPbeeJGLGxYIl=s1600",
+   "what": "犬が並ぶ撮影コーナー",
+   "width": 1400,
+   "height": 789,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r254/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qvw2_1fYv6BLthdH54nn4CNjfgeXR_rN6N1TOqbBVU-gK2W_J7uIvbK2ivg74R_SKPzA_D2qofSxz1zzKocbEcqFshZLVy7mctNM7lgTpkytlHf_YPh1R6j4l6LsPA_mtEFvSM=s1200",
+   "what": "ツリーのある明るい店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r254/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfSfgx4Bi_4jPNsAXI1koY8t7wCsVrZ0khWBp9KOaPAd2KipbX0ad67JyAJQf5xK-59XBZBlTQIJeaOgllGxlHt6Wm0ijLv1P069Q9cR3xcIZToB78EghVZ61hglJgCkUaNeMV=s1200",
+   "what": "風船と犬の撮影コーナー",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

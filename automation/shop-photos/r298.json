@@ -1,0 +1,45 @@
+{
+ "storeId": "r298",
+ "dir": "shop-r298",
+ "storeName": "一鱗酒場 by GAKU",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E9%B1%97%E9%85%92%E5%A0%B4%20by%20GAKU%20%E3%80%92060-0062%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%972%E6%9D%A1%E8%A5%BF4%E4%B8%81%E7%9B%AE12-5%20%E4%B9%99%E4%BA%95%E3%83%93%E3%83%AB2F",
+ "placeUrl": "https://www.google.com/maps/place/%E4%B8%80%E9%B1%97%E9%85%92%E5%A0%B4+by+GAKU/@43.0578078,141.3515939,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b29366a2cf243:0xd97b8d2ead321b!8m2!3d43.0578078!4d141.3515939!16s%2Fg%2F11j2zx_lhw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "一鱗酒場 by GAKU",
+  "address": "北海道札幌市中央区南２条西４丁目12−５ 乙井ビル 2F",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r298/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcblKHekeSENS3xR2Eck9XF54jx_8U6Q9tMM9cBxF2bkfmfjhc91NIqMkHxHnvvJGq_1iR7DCaeXMg9H1jCc48ScbOXtL1s_6i5WymnKGlnJU42jmIr70nAkRWZOt3rcVjC57y=s1600",
+   "what": "カウンターのある店内",
+   "width": 1400,
+   "height": 787,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r298/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rrzd0RhexWeSUZU8voCzqMFnLZ894D0P137YpoUvDhFU4rSqdeZjaACYDNqhPr_A7_6foNtjeeIauYzB3teP0XdR310dqMvWx9-b9tAaOCkXzt2kBZ7--6hl-7zDaUiJ4R7M5k=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r298/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBlQdRmC1W2WbZHEY8eyzGVWochNCuKAySIwZhnB1WKjXtLuuTnDAxVbV9nDlkho0kAlSA_KJwjPJXihG4vzAp7ne-R9vubjYDkublQ6Nqn5W-Vjba_7o58pNWLksLUYrOv1Oq1lmm_bU=s1200",
+   "what": "炭火で焼く魚",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

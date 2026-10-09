@@ -1,0 +1,45 @@
+{
+ "storeId": "r278",
+ "dir": "shop-r278",
+ "storeName": "サンシャイン",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%B3%9F%E5%B1%8B%E9%83%A1%E5%BF%97%E5%85%8D%E7%94%BA%E5%BF%97%E5%85%8D%E4%B8%AD%E5%A4%AE4-9-39",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3/@33.5888143,130.4793589,17z/data=!3m1!4b1!4m6!3m5!1s0x35418553cdc19719:0xb872c5699fe3a9ba!8m2!3d33.5888143!4d130.4793589!16s%2Fg%2F1ttp81zy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "サンシャイン",
+  "address": "福岡県糟屋郡志免町志免中央４丁目９−３９",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r278/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXXifW1Arfsjy4BMJS9Hg-XtG6OOvump4cyV_JxfDq50E_8wEBWr9dh1ya7xTTBgXRypS1QB-XPYoQh7UGizfjHN9mMvR0kN-1U5dCmF9I4nApY_whkOHx5uI1eYxqXj65C47ljA=s1600",
+   "what": "柱のある明るい店内",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r278/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QM3k4gKSXNyyStylnm6Zsf_--fYM2-hW9pdAuc3eTDZyEd5OU2P4GkBGY-skbn6iYmM9RlZUXOxNNV5SQNsOLX8qu2FmKSufifA-QG2QjLRtFt_u1Y4eo34z5IEKODlogXeSBxdQ=s1200",
+   "what": "赤い扉の店の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r278/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuqIPX4WZ2uUatXmxLTYHwlJYTwaBBlqZbzkmSU39rN6dmmLO6LRMC7YuYYI8xOOf8L4A5zwvyf5NzniurzIjZVXlmX5dLJdj7STMuiEFHNqpYbcGDNkX-Tx_FMkqklg-8zCuX=s1200",
+   "what": "料理の盛り合わせ",
+   "width": 900,
+   "height": 570,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

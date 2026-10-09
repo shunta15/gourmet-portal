@@ -1,0 +1,45 @@
+{
+ "storeId": "r267",
+ "dir": "shop-r267",
+ "storeName": "焼肉牛ノ家｜京都長岡京",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%E7%89%9B%E3%83%8E%E5%AE%B6%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E9%95%B7%E5%B2%A1%E4%BA%AC%E5%B8%82%E7%A5%9E%E8%B6%B31%E4%B8%81%E7%9B%AE8-12",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E7%89%9B%E3%83%8E%E5%AE%B6%EF%BD%9C%E4%BA%AC%E9%83%BD%E9%95%B7%E5%B2%A1%E4%BA%AC/@34.9238891,135.7003836,17z/data=!3m1!4b1!4m6!3m5!1s0x600105e7a5733977:0xc148f0a832c7f525!8m2!3d34.9238891!4d135.7003836!16s%2Fg%2F11rc90s6z5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉 牛ノ家｜京都長岡京",
+  "address": "京都府長岡京市神足１丁目８−１２",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r267/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfCkyIqiSw40kb7f0SLcjTcCmFl5StVRIyZtFlWKmeEhI9PeBv5-W9tNPAmuhAk3KMdUOp6TH_Y9YeB27fAUI3TUQAa25-6Zyutfe35a7RtFThHZI9Fzx8YFxvIl6jLyDWjvCuBEkkG-0=s1600",
+   "what": "ユッケ丼の定食",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r267/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUVBYCbJiIY6KBbDOyx8p0WG7ZX-60ysDiTPSbSsDg1vvTfWTrNhIFerTt-vBvjJVQCeqnKy-fiTpfS4iY_SJl73YDj0bN-9AxvotgxbiBHlrrJ_Uki34YJdsyEpiRlrtJgGktn_pgCpYz=s1200",
+   "what": "夕暮れの店の外観",
+   "width": 678,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r267/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QU2fV0KiTFfl3saAuvrS3_2sqEEWTVjTy_FRC1Uv8WsYdvHN4kbv5Fi_wj-zQhyU2mrNEWwnxRsaVsQbM3XbrkeuFnHEyCllBxtyy-Q3vAtf4ZiO4HKPWUFu32drfOh45p7EwR50rnTHui=s1200",
+   "what": "カウンターのある店内",
+   "width": 678,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

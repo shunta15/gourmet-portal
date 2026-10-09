@@ -1,0 +1,45 @@
+{
+ "storeId": "r249",
+ "dir": "shop-r249",
+ "storeName": "ワインバル Ebisu",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%83%B3%E3%83%90%E3%83%AB%20Ebisu%20%E3%80%92569-0071%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E6%A7%BB%E5%B8%82%E5%9F%8E%E5%8C%97%E7%94%BA2-14-9%20%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%A2%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AF%E3%82%A4%E3%83%B3%E3%83%90%E3%83%AB+Ebisu/@34.8485666,135.6225797,17z/data=!3m1!4b1!4m6!3m5!1s0x600102cb08aa9899:0xff0825d9a90e3eef!8m2!3d34.8485666!4d135.6225797!16s%2Fg%2F11c3t_4zdh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ワインバル Ebisu",
+  "address": "大阪府高槻市城北町２丁目１４−９ ルカーモビル 一階",
+  "how": "address+name-exact"
+ },
+ "images": [
+  {
+   "slot": "h1",
+   "path": "/restaurants/fs/shop-r249/h1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMON3orMZTDvKoqEFrFXBmdqh2ttmex-RxhL-NbTGPhym89X9TICcI_nuL2utk178ar8qhewFFo5V4yAinFavEF2NTNFju9LcuUamghyifpMK_DuWsHVzezAjDnqgDJ9Bd5OLGug=s1600",
+   "what": "カウンターのある店内",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h2",
+   "path": "/restaurants/fs/shop-r249/h2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCGrz1lraJYmkk_QcrUuMUhFlSxCRj4A5IjExVk90V2X9JZ19m9gDso_BThwTbyU8w0jEri53FkNNg7Z3sd4ws6u7WE3nxyp3sdER_2bC8O-FdNJyl6Em4sv4mJIxJVeqpCdA=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 720,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "h3",
+   "path": "/restaurants/fs/shop-r249/h3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tgfvu5BfQHAdhsCLJfTTp1o-KRn47LK-wx16o2iv7A_O5yuAeYSstqZ6Y7_TxjgMta5teGOphqmLGKnMG9HI1Z91uoUu_FLMdhuKtlG3DWesuaJystuNqAjrEwqw5SdDt50DKLGg=s1200",
+   "what": "ステーキとフライドポテト",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}
