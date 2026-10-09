@@ -3,8 +3,8 @@
   "dir": "fs-d23debf36a",
   "storeName": "銀しゃも鶏焼肉玄",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E3%81%97%E3%82%83%E3%82%82%E9%B6%8F%E7%84%BC%E8%82%89%E7%8E%84%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E4%BA%8C%E5%8F%88%E7%94%BA",
-  "placeUrl": null,
+  "placeUrl": "https://www.google.com/maps/place/%E9%8A%80%E3%81%97%E3%82%83%E3%82%82%E9%B6%8F%E7%84%BC%E8%82%89%E3%81%A8%E9%B6%8F%E6%96%99%E7%90%86+%E7%8E%84/@33.2124563,131.5959203,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a300061b0bd7:0x80c23a374c11c419!8m2!3d33.2124563!4d131.5959203!16s%2Fg%2F11yqt0hk02?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
   "matched": null,
   "images": [],
-  "note": "写真なし(店を確かめられない): 検索で1店のページに着いたが、Googleマップの店名が「銀しゃも鶏焼肉と鶏料理 玄」で、記録の「銀しゃも鶏焼肉玄」と完全一致でない(住所は大分市二又町3丁目で町名は一致)。ルール②を満たさないため写真なし。"
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「銀しゃも鶏焼肉と鶏料理 玄」・住所は〒870-0887 大分県大分市二又町3丁目2-29・業種は鶏料理店(町名は area と一致)。記録の名前「銀しゃも鶏焼肉玄」は、Google の名前に(間に「と鶏料理」があり)含まれず、Google の名前も記録に含まれない。"
 }

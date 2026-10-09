@@ -4,7 +4,42 @@
   "storeName": "菜々cafe",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8F%9C%E3%80%85cafe%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E5%8C%97%E5%8C%BA%E5%85%AB%E5%A4%9A%E7%94%BA%E9%99%84%E7%89%A9373",
   "placeUrl": "https://www.google.com/maps/place/%E8%8F%9C%E3%80%85%E3%82%AB%E3%83%95%E3%82%A7+%E7%A5%9E%E6%88%B8%E5%B8%82%E5%8C%97%E5%8C%BA/@34.8201104,135.1945523,17z/data=!3m1!4b1!4m6!3m5!1s0x60006251b0085b97:0xc7757883f6a9eaf6!8m2!3d34.8201104!4d135.1945523!16s%2Fg%2F11b7q292xd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし(店名が完全一致でも、まるごと含むでもない)。住所は番地まで一致(兵庫県神戸市北区八多町附物373)。記録「菜々cafe」と Google「菜々カフェ 神戸市北区」は cafe/カフェの表記ちがいで、同じ店の可能性は高いが、決まりでは通せない。 [Google マップ側: 店名「菜々カフェ 神戸市北区」/ 住所「兵庫県神戸市北区八多町附物３７３」]"
+  "matched": {
+    "name": "菜々カフェ 神戸市北区",
+    "address": "兵庫県神戸市北区八多町附物３７３",
+    "how": "address+name-contains"
+  },
+  "images": [
+    {
+      "slot": "h1",
+      "path": "/restaurants/fs/shop-r82/h1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sassn19iDoSm4h3jy-bKdITawuz_Wj_gW3H8NY9qioifqF55opXRdQHB29OdbZFaaBNU3FZmw8-kLJBNx1gXrPs7TrYP0fT-jkqR_u4XR_VXAhL8YaTeNG53oy53tch971JJhPhQ=s1400",
+      "what": "赤い外壁の店の外観",
+      "width": 1232,
+      "height": 924,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h2",
+      "path": "/restaurants/fs/shop-r82/h2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNZwDdF_Bj7XrUn2yBRCBvuv_zfWX34TbhiXYrAWwCUl9T_VlDQ_eN4BkpGx1H2_NuXdY8O3V8CUaS9vvrcDu4_mBu3f0OvSZnNcWzOEf_lLnkrGuA617GwqGA-kQ8ojW6XRjf=s900",
+      "what": "薪ストーブのある店内",
+      "width": 675,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h3",
+      "path": "/restaurants/fs/shop-r82/h3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcZ6Vkx-Fqu-_oBgp1vtU4aRsZq-WuKTplkAjC07Xas1HYq_rlslR-ouE2MgahOifrEk2sieTodINRRwQIJ2oVTPa5tlLlwlRLFOp3PCBTCdHfKouxCxSPzH-WwZ84BjBE6z5-A0ZKRoPS=s900",
+      "what": "お皿に盛った日替わりの膳",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "発注者が確認して通した(2026-10-09)。記録「菜々cafe」と Google「菜々カフェ 神戸市北区」の名前のちがいを、発注者が同じ店とみなした。 Google マップの住所「兵庫県神戸市北区八多町附物３７３」が記録の住所と番地まで一致することを確かめた。"
 }

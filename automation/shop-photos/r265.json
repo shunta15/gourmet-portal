@@ -4,7 +4,42 @@
   "storeName": "和心（なごみ）",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E5%BF%83%20%E5%A5%88%E8%89%AF%E7%9C%8C%E5%A4%A9%E7%90%86%E5%B8%82%E7%94%B0%E9%83%A8%E7%94%BA528-2",
   "placeUrl": "https://www.google.com/maps/place/%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E5%92%8C%E5%BF%83/@34.6028994,135.8319971,17z/data=!3m1!4b1!4m6!3m5!1s0x600136b5f3f29d17:0x6182ebc19fd2bc80!8m2!3d34.6028994!4d135.8319971!16s%2Fg%2F1tdgk4_d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし(店名が通らない)。Google マップの店名「ダイニングキッチン和心」、住所「奈良県天理市田部町５２８」(記録は528-2。番地528は一致)。記録の「和心（なごみ）」から説明を除くと「和心」(2文字)で、2文字以下は完全一致だけ通す決まりのため通さなかった。"
+  "matched": {
+    "name": "ダイニングキッチン和心",
+    "address": "奈良県天理市田部町５２８",
+    "how": "address+name-contains"
+  },
+  "images": [
+    {
+      "slot": "h1",
+      "path": "/restaurants/fs/shop-r265/h1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqepB0ofxqRZgszJYJUAPQyLrFq-HStInTU9EM-U23EpKNnss8k45hVOE0lxzNZaX0iMyshPK3xz88GQqPhwAJHSn9wwsBJKUyYtaaTsZLc2UG3kjLsgxiaeRW3C0n4wILhhvmbpX5gAce=s1400",
+      "what": "昼の店の外観",
+      "width": 1260,
+      "height": 945,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h2",
+      "path": "/restaurants/fs/shop-r265/h2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAOlIbgWo3-dzt_RK4sc82U8mUJDoV0pFehxTeGo099F9XpJRDG1rvl0IOzvoZ43O3HTfhYGtGX42HGqq5D4UFfDeoXLn7PrZPBmEGlSWHuFgoERVwkno8BRHoozgvejeopeKhPah9YA=s900",
+      "what": "刺身の盛り合わせ",
+      "width": 900,
+      "height": 826,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h3",
+      "path": "/restaurants/fs/shop-r265/h3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tkjn0t3S_Hx9k6OF8DxuT8DrDhPa2FeFa61wSezca3osguAc3_low2LEnEK26_wGkCU5GPpCsjWkRCFyu8LInpEifZsa7JFWjfGPDFa8Dszo7gyg3Gs0iF8bs5-pzd3gfcCEcDnGBQIH3J=s900",
+      "what": "鶏の唐揚げ",
+      "width": 781,
+      "height": 810,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "発注者が確認して通した(2026-10-09)。Google マップの店名「ダイニングキッチン和心」、住所「奈良県天理市田部町５２８」(記録は528-2。番地528は一致)。記録の「和心（なごみ）」は2文字の決まりでは通らないが、番地一致を理由に例外として通した。"
 }

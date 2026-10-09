@@ -1,10 +1,46 @@
 {
-  "featureId": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
-  "dir": "fs-f62f306590",
-  "storeName": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%80%90%E3%83%A9%E3%83%B3%E3%83%81%E3%80%91%E5%9C%9F%E9%8D%8B%E3%81%94%E9%A3%AFAOI%E3%80%90%E9%87%91%E5%9C%9F%E7%A5%9D%E5%89%8D%E3%81%AE%E5%A4%9C%E3%80%91BistroAOI%20%E7%86%8A%E6%9C%AC%E5%B8%82%E6%9D%B1%E5%8C%BA%E9%95%B7%E5%B6%BA%E8%A5%BF1-6-106%EF%BC%88%E3%82%B7%E3%83%A5%E3%83%AD%E3%82%A2%E3%83%A2%E3%83%BC%E3%83%AB%E9%95%B7%E5%B6%BA%E3%81%8B%E3%82%89%E5%BE%92%E6%AD%A9%E7%B4%843%E5%88%86%EF%BC%89",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店を確かめられない: マップの店名は「土鍋ご飯 AOI」で、記録の店名「【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI」と完全一致ではない(住所は長嶺西1丁目6-106で一致)。ルールどおり写真なし(マップで着いた店: 土鍋ご飯 AOI / 〒861-8037 熊本県熊本市東区長嶺西１丁目６−１０６ レジデンス井島)"
+ "featureId": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
+ "dir": "fs-f62f306590",
+ "storeName": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%80%90%E3%83%A9%E3%83%B3%E3%83%81%E3%80%91%E5%9C%9F%E9%8D%8B%E3%81%94%E9%A3%AFAOI%E3%80%90%E9%87%91%E5%9C%9F%E7%A5%9D%E5%89%8D%E3%81%AE%E5%A4%9C%E3%80%91BistroAOI%20%E7%86%8A%E6%9C%AC%E5%B8%82%E6%9D%B1%E5%8C%BA%E9%95%B7%E5%B6%BA%E8%A5%BF1-6-106%EF%BC%88%E3%82%B7%E3%83%A5%E3%83%AD%E3%82%A2%E3%83%A2%E3%83%BC%E3%83%AB%E9%95%B7%E5%B6%BA%E3%81%8B%E3%82%89%E5%BE%92%E6%AD%A9%E7%B4%843%E5%88%86%EF%BC%89",
+ "placeUrl": "https://www.google.com/maps/place/%E5%9C%9F%E9%8D%8B%E3%81%94%E9%A3%AF+AOI/@32.8111964,130.7642684,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f1001967cdc3:0x518c1722876b0780!8m2!3d32.8111964!4d130.7642684!16s%2Fg%2F11mcxy9nbc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "土鍋ご飯 AOI",
+  "address": "〒861-8037 熊本県熊本市東区長嶺西１丁目６−１０６ レジデンス井島",
+  "category": "レストラン",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f62f306590/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgTACQEzzn923_LwxbRsO1eNg2sNRPELnaInRb63rgdPUoxuinh2Gi5OwbnFjeNbisg1WNYW84SXV2YDmyoemIpCaIi_llA72a3zZMdy21mNlEauzQZlok7Nxb7o7SIGPRlsZCxcgYg3M",
+   "what": "ワンプレートの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f62f306590/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVK6DLJXewwGZBKpc_sGP6w3H6Hd2yEEH-DhQALNPqIPZRxz8TyJhM1xCSxB-jr3Rc9140R0YOJ26BHRiNhq_aEGFtV4c4AEjK2Q1D2Z_o-izhpUZ-73FoKogCebYbt6ITE3PPf_q-TLg",
+   "what": "海老天の御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f62f306590/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qj7disyUTp50xCFlnMU3hOHMDvfRvwL8InRMjZAGH65LPtK-4aS2PIHFFCtvYnfya3Mb9VK3we6tTQCvz1V2XTM0RAwl24tJgD46rY5AUsIcrPHXoVZAZVKWRQZDAjcpZ-LOpP3NH6ZGW1",
+   "what": "駐車場側から見た店先",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "R1(2回め)。記録の名前から【ランチ】【金土祝前の夜】の説明を除くと「土鍋ご飯AOIBistroAOI」で、Google の「土鍋ご飯 AOI」を含む。住所は長嶺西1丁目6-106で番地まで一致((い)の基準。Google には建物名「レジデンス井島」が付く)。店内の写真が無く、ポイント4は海老天の御膳の写真。 【発注者が店名・住所・業種を見て採用 2026-10-09】"
 }

@@ -1,10 +1,47 @@
 {
-  "featureId": "CafeLABOUQUET",
-  "dir": "fs-5ca042da18",
-  "storeName": "CafeLABOUQUET",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CafeLABOUQUET%20%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E5%B3%B0%E3%83%BB%E8%8A%B1%E3%81%AE%E6%9D%9C%E6%95%B7%E5%9C%B0%E5%86%85",
-  "placeUrl": "https://www.google.com/maps/search/CafeLABOUQUET+%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E5%B3%B0%E3%83%BB%E8%8A%B1%E3%81%AE%E6%9D%9C%E6%95%B7%E5%9C%B0%E5%86%85/@36.5516273,139.9101827,17z/data=!3m1!4b1?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし(店を確かめられない): 検索の結果が候補の一覧のままで、1つの店のページに着かなかったため。ポイント 3・4・5 は写真なし。"
+ "featureId": "CafeLABOUQUET",
+ "dir": "fs-5ca042da18",
+ "storeName": "CafeLABOUQUET",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CafeLABOUQUET%20%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E5%B3%B0%E3%83%BB%E8%8A%B1%E3%81%AE%E6%9D%9C%E6%95%B7%E5%9C%B0%E5%86%85",
+ "placeUrl": "https://www.google.com/maps/place/Cafe+LA+BOUQUET/@36.5515373,139.9057085,17z/data=!4m10!1m2!2m1!1zQ2FmZUxBQk9VUVVFVCDlrofpg73lrq7luILls7Djg7voirHjga7mnZzmlbflnLDlhoU!3m6!1s0x601f672ce5e1a277:0x22a3877edea250c9!8m2!3d36.5515373!4d139.9102146!15sCjJDYWZlTEFCT1VRVUVUIOWuh-mDveWuruW4guWzsOODu-iKseOBruadnOaVt-WcsOWGhSIDiAEBWjgiNmNhZmVsYWJvdXF1ZXQg5a6H6YO95a6uIOW4giDls7Ag6IqxIOOBriDmnZwg5pW35ZywIOWGhZIBFGZhc3RfZm9vZF9yZXN0YXVyYW504AEA!16s%2Fg%2F11sfkpg0l3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Cafe LA BOUQUET",
+  "address": "〒321-0942 栃木県宇都宮市峰１丁目１３−１７",
+  "category": "ファースト フード店",
+  "how": "area+name-exact"
+ },
+ "images": [],
+ "note": "R1(2回め)。検索結果は一覧(2件: 麺道花の杜・Cafe LA BOUQUET)で、店名が完全一致するのは Cafe LA BOUQUET の1件のみ。住所は宇都宮市峰1丁目13-17(一覧の「麺道花の杜」と同じ住所=記事の「麺道花の杜の敷地内」と合う)。Google の業種はファーストフード店(記事はテイクアウトカフェ)。記録 address は「宇都宮市峰・花の杜敷地内」で番地が無いため(ろ)で判定。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+ "pendingImages": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5ca042da18/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SzuiQVWyV9Jyti8UTLfk5iBtGWgRiqBt0VY8xgPJhovdzrDo_McTdXdFogWmPnJKG42qsRkpxaijWGQJeoqrgJ0XqlKCDbJLNr38TbGSvPnlDBhvt0BGlmtzoI0xSy84FENrWG_GsFUyTm",
+   "what": "ソフトクリーム",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5ca042da18/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S46IGp0hvq8Z6b1v_CHvMYhymyl4KnVE5Jh5pp6jQhvAmjbM3OSekeNt-znkif2frBHjtC8YokhRFnDc_9reH0Ew5TO1agNavsDLGFNKnKBuoRwpZShXAt4dkhBhPcrM4QXiviOhR8SR1H",
+   "what": "緑の茂るテラス席",
+   "width": 506,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5ca042da18/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZe4fXYGAhMgZ1eFW0ZEaLmMoPyFkAEWFE08aFi-JsfBiVPWDlIQKjlCtLXv8_velyzWjqrhb18fs61brLxSotPPcZ9SAHPx5gOYcsRRjR47ohJkS4F0hrfhjbdh8vkiH0rm_6",
+   "what": "夜の店先の外観",
+   "width": 678,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ]
 }

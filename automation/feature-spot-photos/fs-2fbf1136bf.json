@@ -1,10 +1,47 @@
 {
-  "featureId": "とりえもん",
-  "dir": "fs-2fbf1136bf",
-  "storeName": "とりえもん",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%8A%E3%81%88%E3%82%82%E3%82%93%20%E5%AE%AE%E5%B4%8E%E5%B8%82",
-  "placeUrl": "https://www.google.com/maps/place/%E5%AE%AE%E5%B4%8E%E5%9C%B0%E9%B6%8F+%E9%83%B7%E5%9C%9F%E6%96%99%E7%90%86+%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8B+%E3%81%A8%E3%82%8A%E3%81%88%E3%82%82%E3%82%93/@31.9142296,131.4216927,17z/data=!3m1!4b1!4m6!3m5!1s0x3538b76b29a985cd:0xee31f1d3e0875fdc!8m2!3d31.9142296!4d131.4216927!16s%2Fg%2F11g6bjxbg2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし・店を確かめられない: 店名が完全一致しない(Google: 宮崎地鶏 郷土料理 個室居酒屋 とりえもん)"
+ "featureId": "とりえもん",
+ "dir": "fs-2fbf1136bf",
+ "storeName": "とりえもん",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%8A%E3%81%88%E3%82%82%E3%82%93%20%E5%AE%AE%E5%B4%8E%E5%B8%82",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AE%AE%E5%B4%8E%E5%9C%B0%E9%B6%8F+%E9%83%B7%E5%9C%9F%E6%96%99%E7%90%86+%E5%80%8B%E5%AE%A4%E5%B1%85%E9%85%92%E5%B1%8B+%E3%81%A8%E3%82%8A%E3%81%88%E3%82%82%E3%82%93/@31.9142296,131.4216927,17z/data=!3m1!4b1!4m6!3m5!1s0x3538b76b29a985cd:0xee31f1d3e0875fdc!8m2!3d31.9142296!4d131.4216927!16s%2Fg%2F11g6bjxbg2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "宮崎地鶏 郷土料理 個室居酒屋 とりえもん",
+  "address": "〒880-0001 宮崎県宮崎市橘通西３丁目５−４ 高山 ビル 1F",
+  "category": "居酒屋",
+  "how": "area+name-contains"
+ },
+ "images": [],
+ "note": "R1(2回め)。Google の店名は「宮崎地鶏 郷土料理 個室居酒屋 とりえもん」(記録「とりえもん」を含む)。area は市のみ(宮崎市)で町名が無く、Google の住所に宮崎市が入り矛盾なしと解釈。記事は「橘通西三丁目の高山ビル」と書いており、Google の住所(橘通西3丁目5-4 高山ビル 1F)と合う。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+ "pendingImages": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2fbf1136bf/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SoJoZKJP_qBRmIeorqxmarIHLRzXgOFAGAvgzCxrhb0eZKd8dTg8XyhGqg-vV55mOkHHv85JbR0HRrLGeI5N0xDG7xAQx0x9BYau412n6Wp5ISCMgcRUv1gmc9eTsMKfOSi2MO",
+   "what": "チキン南蛮",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2fbf1136bf/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_GVCsq80steQ0gTKb1KPdlArEohgtQ2_NlWyZS7CMl0pEytL3eklqnJnH8FGByOJNZpjZfMQvK0pko1RvqpbvrhyihGwTr9gv53dAtRo-JJnlvqnYCg4qhgnlrFpmt1s0unZ3dA3UyYQq",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 405,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2fbf1136bf/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SI29PtdLdEiZG2HdMwFvfD8QdI9D-Y6dDMwndnnuthhlJ4HxkDBGErq7P9nIB4467k5Z32H96MkGNFzy_7ZtVRTxQRw82-UP6S4LTr5tWS1CM3DtgL9wy_RW6yTdfiiClpxVnHJ6hReT8",
+   "what": "夜の店の外観と通り",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ]
 }
