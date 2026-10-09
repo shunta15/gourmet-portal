@@ -1,0 +1,254 @@
+{
+  "key": "bodycare-107",
+  "headline": "宇都宮市関堀町の整骨・整体院。完全予約制で貸切個室をうたう",
+  "lede": "栃木県宇都宮市関堀町981にある整骨・整体院です。完全予約制で、完全貸切の個室で施術を受けられると公式サイトは案内しています。駐車場は8台分で、午後は21時まで受け付けています。",
+  "sections": [
+    {
+      "heading": "場所と営業日",
+      "body": "宇都宮市関堀町981にあり、最寄りの宇都宮駅からはバスで20分ほどです。駐車場は8台分あります。受付は9:00〜12:00と14:00〜21:00で、定休日は不定休です。月ごとのお休みの日付は、公式サイトのお知らせに載っています。支払いは現金、クレジット、PayPayが使えます。"
+    },
+    {
+      "heading": "予約と来院の流れ",
+      "body": "予約は完全予約制で、小さな子どもも一緒に来られます。予約はWeb予約か、電話(028-650-4680)です。来院したら、受付でカウンセリング票を書き、カウンセリングと検査を受けてから施術に入り、そのあとに今後のアドバイスや施術プランの提案があります。"
+    },
+    {
+      "heading": "施術の種類と時間",
+      "body": "整体、手技療法、筋膜リリース、ファシアケア、骨盤矯正、姿勢矯正、内臓調整、頭蓋骨調整、産後骨盤矯正の9種類があり、いずれも約30分の枠です。その30分には、カウンセリングや検査、動作確認、説明も含まれ、施術だけの時間ではありません。初検時のみ1時間です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "初検料",
+      "price": "3,300円(税込)",
+      "minutes": 60
+    },
+    {
+      "name": "整体",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "筋膜リリース",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "ファシアケア",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "骨盤矯正",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "姿勢矯正",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "内臓調整",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "産後骨盤矯正",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 4
+    }
+  ],
+  "facts": [
+    {
+      "claim": "栃木県宇都宮市関堀町981にある",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "住所 ： 〒321-0975 栃木県宇都宮市関堀町981",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄りの宇都宮駅からバスで20分ほど",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "最寄 ： 宇都宮駅よりバスで20分ほど",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は8台",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "駐車場 ： ８台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "受付時間の午前は9:00〜12:00",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "09:00〜12:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "受付時間の午後は14:00〜21:00",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "14:00〜21:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://bonesetter-yawaragi.com/introduce/map/",
+      "quote": "定休日：不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月ごとのお休みの日付をお知らせで案内している",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "26.10月のお休みについて",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "当院は、完全予約制となっております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全貸切個室の空間で施術を受けると案内している",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "完全貸切個室の空間で施術を受けていただきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制なので、小さな子どもも一緒に来られる",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "完全予約制なので、小さなお子さまもご一緒にいらしていただけます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はWeb予約と電話",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "Web予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は028-650-4680",
+      "source": "https://bonesetter-yawaragi.com/",
+      "quote": "028-650-4680",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "来院したら受付でカウンセリング票に記入する",
+      "source": "https://bonesetter-yawaragi.com/introduce/flow/",
+      "quote": "まず受付でカウンセリング票にご記入いただきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カウンセリング票をもとに、カウンセリングと検査がある",
+      "source": "https://bonesetter-yawaragi.com/introduce/flow/",
+      "quote": "ご記入頂いたカウンセリング票を元に、更に詳しく",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術のあとに、今後のアドバイスや施術プランの提案がある",
+      "source": "https://bonesetter-yawaragi.com/introduce/flow/",
+      "quote": "今後の再発防止のアドバイスや施術プランなどをご提案いたします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初検料は初検時のみ1時間で3,300円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "初検時のみ1時間 3,300円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "整体は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "整体 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "手技療法は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "手技療法 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "筋膜リリースは約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "筋膜リリース 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ファシアケアは約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "ファシアケア 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "骨盤矯正は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "骨盤矯正 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "姿勢矯正は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "姿勢矯正 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "内臓調整は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "内臓調整 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "頭蓋骨調整は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "頭蓋骨調整 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "産後骨盤矯正は約30分で7,700円(税込)",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "産後骨盤矯正 約30分 7,700円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2回目以降の一枠約30分には、施術・カウンセリング・検査・動作確認・説明・指導・相談が含まれ、施術のみの時間ではない",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "※施術のみの時間ではありません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金とクレジット、PayPay",
+      "source": "https://bonesetter-yawaragi.com/introduce/price/",
+      "quote": "現金とクレジットPayPayがご利用できます。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://bonesetter-yawaragi.com/"
+    },
+    {
+      "label": "料金のご案内",
+      "url": "https://bonesetter-yawaragi.com/introduce/price/"
+    },
+    {
+      "label": "施術の流れ",
+      "url": "https://bonesetter-yawaragi.com/introduce/flow/"
+    },
+    {
+      "label": "アクセスマップ",
+      "url": "https://bonesetter-yawaragi.com/introduce/map/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12815375363227165420"
+    }
+  ],
+  "notes": "営業時間: 公式の表は月〜日がすべて●(9:00-12:00、14:00-21:00、定休日は不定休)で、Googleマップは月・木・土が定休日、火水金日が9-12/14-21。月ごとの休みが不定休で、公式のお知らせの10月の休みは木・土・水・月・日・火が混ざる。曜日の指定をしないで時間帯と不定休だけ書いた。夜遅くまで営業のタグは午後の受付が21時まで(公式・Googleマップ一致)。土日営業のタグは付けない(Googleマップで土曜が定休日、公式は不定休)。メニューは9種類あるが menus は最大8のため、手技療法・頭蓋骨調整(いずれも7,700円)は本文のみ。保険の記載は取得した4ページに無く、本文にも書いていない。トップは症状名・効き目・「ウソのように楽になった」等の文が大半で全て書いていない。院長挨拶・スタッフ・コロナ対策のページは未取得。"
+}

@@ -1,0 +1,195 @@
+{
+  "key": "bodycare-112",
+  "headline": "札幌市東区の鍼灸整骨院。新道東駅から徒歩2分、駐車場5台",
+  "lede": "北海道札幌市東区北35条東15丁目1-17にある鍼灸整骨院です。地下鉄東豊線の新道東駅から徒歩2分と案内され、駐車場は5台分あります。電話とLINEで予約を受け付けています。",
+  "sections": [
+    {
+      "heading": "行き方と送迎",
+      "body": "札幌市東区北35条東15丁目1-17のオーシャンビル1階にあり、地下鉄東豊線の新道東駅の1番出口左横です。駐車場は5台分です。東区管内で70歳以上の人、または70歳未満で歩行が難しい人は、無料の送迎があると案内されています。往診にも対応し、札幌市内ならどこでも伺うと書かれています。"
+    },
+    {
+      "heading": "受付と予約",
+      "body": "Googleマップの営業時間は、月曜から金曜が9:00〜19:00、土曜が9:00〜15:00で、日曜が定休日です。交通事故の患者は午後11時30分まで随時受け付け、他院からの転院も受け付けています。予約は電話のほか、LINEでも受け付けています。急患や新患も随時受け付けています。"
+    },
+    {
+      "heading": "保険と料金",
+      "body": "各種健康保険、労災、生活保護、自賠責保険を取り扱うと案内されていて、保険証を持参します。骨折と脱臼は、初回の応急処置のあと継続するには医師の同意が必要です。適用の範囲は店に確かめる必要があります。保険外の全身マッサージもあります。院内の機器として、牽引、EMS、ホットパックなどが紹介されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "マッサージ（30分）全身",
+      "price": "2,500円",
+      "minutes": 30
+    },
+    {
+      "name": "マッサージ（60分）全身",
+      "price": "4,500円",
+      "minutes": 60
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "北海道札幌市東区の新道東駅から徒歩2分の鍼灸整骨院と案内している",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "北海道札幌市東区の新道東駅から徒歩2分の鍼灸整骨院【黎明総合院】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "札幌市東区北35条東15丁目1-17 オーシャンビル1階にある",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "〒007-0835 札幌市東区北35条東15丁目1-17 オーシャンビル１Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "地下鉄東豊線新道東駅1番出口の左横",
+      "source": "http://reimeisougouin.sakura.ne.jp/access.html",
+      "quote": "・地下鉄東豊線「新道東駅」１番出口左横",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は5台分",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "駐車場 ５台分あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東区管内で70歳以上、または70歳未満で歩行困難な患者は無料送迎がある",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "東区管内で70歳以上の患者様又は70歳未満で歩行困難な患者様、無料送迎致します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "往診にも対応し、札幌市内ならどこでも伺う",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "札幌市内であればどこでもお伺いします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故の患者は午後11時30分まで随時受付",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "※交通事故の患者様、午後11時30分迄、随時受付中",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "他院からの転院OK",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "他院からの転院OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話予約をすれば、来院後に診察に入る",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "電話予約を頂ければ、当院に来院した後、診察および治療に入らせていただきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "急患・新患は随時受け付ける",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "尚、急患・新患は随時受け付けしておりますのでお気軽にお電話下さい。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEで予約を受け付けている",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "LINEで予約受付中",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月・火は9:00〜19:00(Googleマップ)",
+      "source": "https://maps.google.com/?cid=1791823068367038909",
+      "quote": "月: 09:00–19:00 火: 09:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "水・木・金は9:00〜19:00(Googleマップ)",
+      "source": "https://maps.google.com/?cid=1791823068367038909",
+      "quote": "水: 09:00–19:00 木: 09:00–19:00 金: 09:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土曜は9:00〜15:00(Googleマップ)",
+      "source": "https://maps.google.com/?cid=1791823068367038909",
+      "quote": "土: 09:00–15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "日曜は定休日(Googleマップ)",
+      "source": "https://maps.google.com/?cid=1791823068367038909",
+      "quote": "日: 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "各種健康保険、労災・生活保護、自動車損害賠償保険(交通事故)などを取り扱う",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "各種健康保険 労災・生活保護 自動車損害賠償保険（交通事故）など取扱い致します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "健康保険の場合は保険証を持参する",
+      "source": "http://reimeisougouin.sakura.ne.jp/",
+      "quote": "保険証をお持ちください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "骨折・脱臼は初回応急処置の後、継続するには医師の同意が必要",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "（但し、骨折・脱臼は初回応急処置の後、継続して治療するには医師の同意が必要です）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険外の指圧・マッサージ科で、全身マッサージ30分は2,500円",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "マッサージ（30分）全身 2,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険外の指圧・マッサージ科で、全身マッサージ60分は4,500円",
+      "source": "http://reimeisougouin.sakura.ne.jp/seikotsu.html",
+      "quote": "マッサージ（60分）全身 4,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "院内の機器として牽引療法を紹介している",
+      "source": "http://reimeisougouin.sakura.ne.jp/flow.html",
+      "quote": "牽引療法",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "院内の機器としてEMSを紹介している",
+      "source": "http://reimeisougouin.sakura.ne.jp/flow.html",
+      "quote": "EMS",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "院内の機器としてホットパックを紹介している",
+      "source": "http://reimeisougouin.sakura.ne.jp/flow.html",
+      "quote": "ホットパック",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://reimeisougouin.sakura.ne.jp/"
+    },
+    {
+      "label": "交通アクセス",
+      "url": "http://reimeisougouin.sakura.ne.jp/access.html"
+    },
+    {
+      "label": "治療機器の紹介",
+      "url": "http://reimeisougouin.sakura.ne.jp/flow.html"
+    },
+    {
+      "label": "整骨科・鍼灸科",
+      "url": "http://reimeisougouin.sakura.ne.jp/seikotsu.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1791823068367038909"
+    }
+  ],
+  "notes": "公式サイトは「画期的」「難病」「癌疾患」「完治」など効き目・医療の主張と症状名の列挙が大半で、全て書いていない(院長の経歴・北海道新聞の取材記事・症状別の鍼の説明・各機器の効能の文も同様)。書いたのは立地・送迎・往診・受付・予約・保険の取り扱い・マッサージ料金・機器名のみ。営業時間: 公式サイトでは受付時間が画像で文字として取得できなかったため、Googleマップの値(月〜金9-19、土9-15、日休)を gbp として本文に明記した。公式のテキストは「交通事故の患者さんは午後11:30まで受付」とあり、通常の閉店時刻(19時)と並べて書いた。夜遅くまで営業のタグは、通常の営業が19時閉店のため付けない(交通事故の患者のみ23:30)。メニューのうち保険を使った施術料金(初診料・鍼灸の保険料金・1〜3割負担の表)は、判断を避ける決まり8に従い書かず。保険は「各種健康保険など取扱い」と書かれ、骨折・脱臼の同意の条件のみ明記されているため、その条件と「範囲は店に確かめる」の形にした。「保険外の指圧・マッサージ科施術料金 1,000円」は何の料金か不明で書かず。機器の名前に「治療器」を含むもの(遠赤外線治療器・マイクロ波治療器・超音波治療器)は本文から除き、牽引・EMS・ホットパックのみ。院長の資格の表記は「柔整師、鍼灸師、整体師」と略称で、資格の名前そのものでないため書かなかった。"
+}

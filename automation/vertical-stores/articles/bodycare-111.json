@@ -1,0 +1,185 @@
+{
+  "key": "bodycare-111",
+  "headline": "岡山市北区奉還町の鍼灸院。国家資格3種の施術者をうたう",
+  "lede": "岡山市北区奉還町2-19-18にある鍼灸院です。整体のほか、足のケアや美容鍼灸のコースがあり、月額制のトレーニングも載っています。企業向けに出張のボディケアも用意しています。",
+  "sections": [
+    {
+      "heading": "コースと施術者",
+      "body": "ボディケア(整体)は30分と60分から選べ、次回予約をした人には値引きがあります。鍼灸を希望する場合は追加料金がかかり、オイルで足先から膝下までほぐすフットケアコースや、美容鍼灸もあります。公式サイトは、理学療法士・鍼灸師・柔道整復師の国家資格を持つ施術者が担当し、運動や食事、生活習慣の指導も行うと案内しています。"
+    },
+    {
+      "heading": "予約のしかた",
+      "body": "予約は電話、メール、Instagramのメッセージで受け付けています。電話は営業時間内の受付で、施術中は出られないことがあり、その場合は折り返しの連絡です。予約をした人は、営業時間外や水曜日、日曜日も受け付けると書かれています。公式サイトには、月額制トレーニングや、メタトロン・Sky10の測定、毛髪ミネラル検査のコースも載っています。"
+    },
+    {
+      "heading": "場所と保険、法人向け",
+      "body": "住所は岡山市北区奉還町2-19-18で、駐車場は近隣のコインパーキングを使います。保険は各種を取り扱うと案内されていますが、どこまで使えるかは店に確かめる必要があります。企業向けには、法人契約を目指していて、出張でのボディケア(整体)などを用意していると書かれています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ボディケア【整体】30分",
+      "price": "3,000円",
+      "minutes": 30
+    },
+    {
+      "name": "ボディケア【整体】60分",
+      "price": "5,500円",
+      "minutes": 60
+    },
+    {
+      "name": "フットケアコース"
+    },
+    {
+      "name": "美容鍼灸 初回",
+      "price": "5,500円"
+    },
+    {
+      "name": "美容鍼灸 2回目以降 30分",
+      "price": "4,000円",
+      "minutes": 30
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "岡山市北区奉還町2-19-18にある",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "岡山市北区奉還町2-19-18",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は近隣のコインパーキングを使う",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "駐車場は近隣のコインパーキングをご利用ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は営業時間内に受け付け、施術中で出られないときは折り返す",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "施術中など、電話に出られない場合は、折り返しお電話を差し上げます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間内は電話で予約を受け付ける",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "営業時間内は、電話での受付をお受けしています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メールでも予約できる",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "②メールでのご予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Instagramのメッセージでも予約できる",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "③Instagramメッセージからのご予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約の人は時間外も受け付ける",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "予約の方は時間外も受け付けます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約の人は水曜日・日曜日も受け付ける",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "予約の方は水曜日・日曜日も受け付けます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディケア[整体]の30分は3,000円",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "30分 ¥3000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディケア[整体]の60分は5,500円",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "60分 ¥5500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "次回予約をした人は値引きがある",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "※次回予約をしたお客様は、それぞれお値引きいたします",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "鍼灸を希望する場合は追加料金がかかる",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "※鍼灸治療を希望の方は、＋¥1,000~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フットケアコースは、オイルで足先から膝下までほぐす",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "オイルで足先から膝下までほぐします",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "理学療法士・鍼灸師・柔道整復師という国家資格を持つ施術者が担当すると案内している",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "理学療法士・鍼灸師・柔道整復師という国家資格を有した施術者が",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術のほか運動・食事指導・生活習慣指導を行うと案内している",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "運動・食事指導・生活習慣指導といったトータルアプローチを行っていきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "各種保険を取り扱うと案内している",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア",
+      "quote": "各種保険取り扱い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美容鍼灸は初回5,500円",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/美容鍼灸",
+      "quote": "初回 ¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美容鍼灸の2回目以降は30分4,000円",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/美容鍼灸",
+      "quote": "2回目以降 30分 ￥4,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "コースに月額制トレーニング、メタトロン・Sky10 測定、毛髪ミネラル検査がある",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "月額制トレーニングコース ②メタトロン、Sky10 測定 ③毛髪ミネラル検査",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "法人契約を目指し、出張でのボディケア(整体)などを用意している",
+      "source": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "quote": "出張でのボディケア（整体）",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.lucesekkotsuin-shinkyuin.com/"
+    },
+    {
+      "label": "ボディケア",
+      "url": "https://www.lucesekkotsuin-shinkyuin.com/ボディケア"
+    },
+    {
+      "label": "美容鍼灸",
+      "url": "https://www.lucesekkotsuin-shinkyuin.com/美容鍼灸"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6675232569384146426"
+    }
+  ],
+  "notes": "営業時間: 公式は「10:00〜19:00、定休日 水曜午後・日曜(予約の方は時間外・水曜・日曜も受付)」、Googleマップは毎日10:00〜21:00で食い違うため本文に時間を書かず、「予約をした人は時間外・水曜・日曜も受け付ける」という公式の一文のみ。夜遅くまで営業・土日営業のタグは、この食い違いのため付けない。書かなかったこと: 「このような方にオススメ」の症状の並び、効き目の文、ファスティングのコース(名前が減量を思わせるため)、お客様の声、美容鍼灸のビフォーアフター写真・効果の文・お灸の効果の文、スタッフの名前、医療機関への紹介の文。保険は「各種保険取り扱い」としか書かれておらず、条件の記載が無いため、判断を避けて「適用の範囲は店に確かめる」の形に。鍼灸の追加料金は公式の表記が「＋¥1,000~」だが本文には金額を書いていない。"
+}

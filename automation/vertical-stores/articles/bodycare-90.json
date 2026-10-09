@@ -1,0 +1,236 @@
+{
+  "key": "bodycare-90",
+  "headline": "市川駅南口から徒歩3分、完全予約制の整骨院",
+  "lede": "千葉県市川市市川南1-2-3にある整骨院です。JR総武線市川駅の南口から徒歩3分で、「ゆうゆうロード」沿いにあります。施術は完全予約制で、予約は電話・LINE・問い合わせフォームのいずれかです。",
+  "sections": [
+    {
+      "heading": "駅からの行き方と駐車場",
+      "body": "JR総武線の市川駅は南口から徒歩3分、シャポー東口からだと2分です。京成線の市川真間駅からは徒歩7分で、「ゆうゆうロード」沿いにあります。専用の駐車場はなく、商店街と提携するタイムズの駐車場を使います。その駐車場を使って施術を受けた人には割引券が渡されますが、無料にはなりません。"
+    },
+    {
+      "heading": "初めて行くとき",
+      "body": "初回は検査と説明に重きを置き、所要時間は約60分、2回目以降は30分からです。持ち物は特に要らず、動きやすい服装がすすめられています。健康保険は使えないと明記されています。料金表には交通事故(自賠責)の項目があり、窓口負担なしと書かれています。子どもや高齢者も、年齢や体力に合わせて対応すると案内されています。"
+    },
+    {
+      "heading": "予約と休診日",
+      "body": "施術はすべて完全予約制で、電話・LINE・問い合わせフォームのいずれかで申し込みます。既存の患者の予約を優先する方針で、告知なしに新規の受付を一時的に止めたり、完全紹介制に移ったりする場合があると断り書きがあります。診療日の表では金曜と日曜が休みで、表の見出しには不定休と添えられています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "初診＋初回検査料",
+      "price": "11,000円＋3,300円(税込)"
+    },
+    {
+      "name": "初診＋初回検査料（院長）",
+      "price": "13,200円＋3,300円(税込)"
+    },
+    {
+      "name": "施術料 30分",
+      "price": "5,500円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "施術料 30分（院長施術）",
+      "price": "7,700円(税込)",
+      "minutes": 30
+    },
+    {
+      "name": "施術料 60分",
+      "price": "9,900円(税込)",
+      "minutes": 60
+    },
+    {
+      "name": "施術料 60分（院長施術）",
+      "price": "13,200円(税込)",
+      "minutes": 60
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "千葉県市川市市川南1-2-3 椎名ビル102にある",
+      "source": "https://shinshidou.jp/",
+      "quote": "〒272-0033 千葉県市川市市川南1-2-3 椎名ビル102",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR総武線市川駅の南口から徒歩3分(シャポー東口からは2分)",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "JR総武線市川駅 南口より徒歩３分（シャポー東口より徒歩2分）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "京成線の市川真間駅から徒歩7分",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "京成線 市川真間駅より徒歩７分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "「ゆうゆうロード」沿いにある",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "「ゆうゆうロード」沿い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "専用駐車場はなく、ゆうゆうロード商店街と提携するタイムズの駐車場を使う",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "タイムズ市川南ゆうゆうロード商店街と提携をしております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "提携駐車場を使って施術を受けた人には割引券を渡す",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "そちらの駐車場を使用して当院の施術を受けて頂いた方には割引券をお渡しいたしますので",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場の割引は無料ではない",
+      "source": "https://shinshidou.jp/service/access/",
+      "quote": "（※申し訳ございませんが、無料ではありません）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術はすべて完全予約制。予約は電話・LINE・問い合わせフォームのいずれか",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "当院の施術はすべて完全予約制になります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約の方法は電話、LINE、問い合わせフォーム",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "電話、LINE、問い合わせフォームのいずれかでご予約ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回は施術だけでなく、検査・説明を重視する",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "初回は「施術」だけでなく、検査・説明を重視して行います。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回の所要時間は約60分、2回目以降は30分から、所要時間は約60分。2回目以降は30分から",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "所要時間：初回約60分（2回目以降30分～）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回の持ち物は特に必要ない",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "持ち物：特に必要ありません",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "服装は動きやすいものがよいと案内している",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "服装：動きやすい服装がおすすめです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "健康保険は使用できない",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "※健康保険は使用できません",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故(自賠責)は窓口負担なし",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "交通事故（自賠責） 窓口負担なし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "料金は全て税込",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "料金一覧（全て税込です）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初診+初回検査料は11,000円+3,300円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "初診＋初回検査料 11,000＋3,300",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初診+初回検査料(院長)は13,200円+3,300円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "初診＋初回検査料（院長） 13,200+3,300",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "30分は5,500円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "30分 5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "30分(院長施術)は7,700円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "30分（院長施術） 7,700",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "60分は9,900円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "60分 9,900",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "60分(院長施術)は13,200円",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "60分（院長施術） 13,200",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "出張料の記載がある(上記料金に5,500円〜と交通費別。船橋市・市川市の場合)",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "※出張料は上記＋5,500〜交通費別途（船橋市、市川市の場合。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "既存の患者の予約を優先する。告知なしに完全紹介制に移行する場合や、新規の受付を一時的に行わない場合がある",
+      "source": "https://shinshidou.jp/service/price/",
+      "quote": "当院はご縁ある方に真摯に向かい合う為、既存の患者様の予約を優先します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "無理な通院指導や回数券の押し売りは行わないと案内している",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "※無理な通院指導や回数券の押し売りは行いません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "子どもや高齢者も、年齢や体力に合わせて対応すると案内している",
+      "source": "https://shinshidou.jp/service/forguest/",
+      "quote": "Q. 子どもや高齢者でも大丈夫ですか？ A. はい。年齢や体力に合わせて対応します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "休診日や出張中は留守電につながる",
+      "source": "https://shinshidou.jp/",
+      "quote": "休診日や出張中は留守電に繋がります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "金曜と日曜は診療時間の表で休み(表の見出しは「時間(不定休)」)",
+      "source": "https://shinshidou.jp/",
+      "quote": "時間（不定休）",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://shinshidou.jp/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16138272023186733077"
+    }
+  ],
+  "notes": "営業日・時間は本文に書いていない: 公式サイトの表(時間(不定休)。9-12は月〜木と土が丸・金日が休、14-19は月〜木が丸・土は13:00-17:00・日休)と、Googleマップ(月定休、火水9-12/14-19、木9-12/14-17、土9-12/13-17、金日休)で月曜と木曜の扱いが食い違う。金・日が休みの点だけ両者一致なので本文はそこだけ。タグ: 駅近(市川駅南口徒歩3分)のみ。土日営業は日曜休みのため付けず、夜遅くも閉店19時のため付けず。書かなかったこと: 手技療法・栄養指導・トレーニングのページ(上限4ページのため未取得)、学会発表・講演・施術者の実績、「国家資格を持つ施術者」(資格名の記載なし)、お悩みチェックの文言、患者様の声。facts内の「料金は全て税込」「駐車場の割引は無料ではない」は同じ引用の重複を避けるための補助行。"
+}
