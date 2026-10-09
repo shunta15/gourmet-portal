@@ -1,5 +1,15 @@
 {
   "key": "beauty-41",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-41/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rlhmt68olRBvW9k-hq9c4-c7QPohMjlon0XmRDs7rQnVuodtuqAO7pRqWfwI789IXguL7S4mihm7aThTsZCaJqKMdm4UmOyOUKk-ZkXDp6vedzJ3VVBfxliLnyu7Ux5kWtVGmrU2FTNhWI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12546642383506657630",
+      "what": "店名の入った壁と花",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い。Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-36",
-  "images": [],
-  "note": "Googleマップにサイト記載なし。記事の出典もホットペッパーのみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-36/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNr8rAmhGISklNA7-KueeToj6XAZ7eHdKnLszCRGQ4EestqH48qNzL05yX51kAbIDUjuSN2MJ0Q-zsfn4S4exLhtNiyNt_jeWfy2qmu_4VHyBPqs95moSN8PgO4TGaQYS2d20u3g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9624639505900983226",
+      "what": "窓際に席が並ぶ店内",
+      "width": 887,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップにサイト記載なし。記事の出典もホットペッパーのみで、自前の公式サイトが無い。Google マップの写真"
 }
