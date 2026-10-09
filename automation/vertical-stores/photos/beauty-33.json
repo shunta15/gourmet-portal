@@ -1,5 +1,15 @@
 {
   "key": "beauty-33",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-33/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIcRVvaXw1jibuyUZHegcRInZs7h-WrheC2hV6RVl4QFjNNMyZWxj-mLH3hTmFHU8X1mC0SLcEriML69v4i-mySO3wzv1ZDp7wS28NCEsPAI1XzdVyd3YrSCnsq3b1CCrw9j9fCXCnzJg=w203-h135-k-no",
+      "pageUrl": "https://maps.google.com/?cid=15148642963971554001",
+      "what": "白い壁と植栽のある店の外観",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }
