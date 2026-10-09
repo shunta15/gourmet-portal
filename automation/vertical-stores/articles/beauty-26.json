@@ -107,12 +107,6 @@
       "checkedAt": "2026-10-09"
     },
     {
-      "claim": "V.O.S サロンケアは1回¥25,300、3回セット¥66,000",
-      "source": "https://e-recherche.jp/menu",
-      "quote": "1回 ￥25,300 おすすめ3回セット ￥66,000",
-      "checkedAt": "2026-10-09"
-    },
-    {
       "claim": "泡のせコース1回は¥4,500(1カ月以内の再来店は¥4,200)",
       "source": "https://e-recherche.jp/menu",
       "quote": "泡のせコース1回（※1カ月以内の再来店は￥4,200） ￥4,500",
@@ -200,6 +194,18 @@
       "claim": "セルフホワイトニングにチケット(4回・8回・12回)がある",
       "source": "https://e-recherche.jp/menu",
       "quote": "4回チケット ￥18,920",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "V.O.S サロンケアは1回¥25,300",
+      "source": "https://e-recherche.jp/menu",
+      "quote": "1回 ￥25,300",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "V.O.S サロンケアは3回セット¥66,000",
+      "source": "https://e-recherche.jp/menu",
+      "quote": "3回セット ￥66,000",
       "checkedAt": "2026-10-09"
     }
   ],
