@@ -1,0 +1,236 @@
+{
+  "key": "beauty-79",
+  "headline": "関内駅から徒歩3分。鍼灸院内で営業する脱毛サロン",
+  "lede": "横浜・関内駅から徒歩3分、鍼灸院の中にある脱毛サロンです。営業は火曜・木曜・土曜の11時から20時で、来店ごとに支払う都度払いです。予約は24時間、インターネットから受け付けています。",
+  "sections": [
+    {
+      "heading": "パーツの選び方",
+      "body": "パーツ分けの基本は、1パーツ15分が目安のセレクト脱毛と、脇・V・I・O・口周り・うなじから選ぶプチセレクト脱毛です。45分の枠でやれる範囲をどこでも行う「45分やりたい放題」もあり、ヒゲとVIOの組み合わせなどが例に挙がっています。全身はVIOとヒゲを含めて120分で、男性と女性で料金が分かれます。メニューにない場合も相談できます。"
+    },
+    {
+      "heading": "施術の前の決まり",
+      "body": "施術前の自己処理は必須で、カミソリなら2日前、シェーバーなら前日に済ませる決まりです。背中など手の届かない場所は店が行いますが、必要以上の剃り残しがあるとシェービング代がかかります。保湿も求められています。照射のあたり漏れがあったときは、2週間前後で再照射するとサロンの基準として案内されています。"
+    },
+    {
+      "heading": "関内の店と予約",
+      "body": "住所は横浜市中区常磐町1-2-1のサンネットビル2階A-1で、ソルエマーレ鍼灸院の中です。営業日は火曜・木曜・土曜で、11時から20時までです。予約は24時間インターネットからでき、LINE公式アカウントもあります。公式サイトは、施術を完全個室で行うと案内しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身脱毛VIO髭込み",
+      "price": "男性¥23,000-／女性¥19,800-",
+      "minutes": 120
+    },
+    {
+      "name": "45分やりたい放題",
+      "price": "¥8,800-",
+      "minutes": 45
+    },
+    {
+      "name": "セレクト脱毛 １パーツ",
+      "price": "¥4,200-"
+    },
+    {
+      "name": "プチセレクト脱毛 １パーツ",
+      "price": "¥2,500-"
+    },
+    {
+      "name": "ひざ下＆ひざ上（指・甲込み）",
+      "price": "¥7,900-",
+      "minutes": 45
+    },
+    {
+      "name": "ひじ下＆ひじ上（指・甲込み）",
+      "price": "¥7,400-",
+      "minutes": 45
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "横浜市中区常磐町1-2-1 サンネットビル2階A-1、ソルエマーレ鍼灸院内にある",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "横浜市中区常磐町１−２−１ サンネットビル２階A-1 （ソルエマーレ鍼灸院内）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "関内駅から徒歩3分",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "関内駅から徒歩3分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業日は火曜・木曜・土曜、営業時間は11:00〜20:00",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "営業日 火曜・木曜・土曜 営業時間11:00~20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "24時間インターネット予約ができる",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "24時間インターネット予約できます！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE公式アカウントがある",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "LINE公式アカウントはじめました！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "来たい時に受けられる都度払い",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "来たい時にササっ!と受けれる都度払い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "細かなパーツ分けやローン契約はないと案内",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "細かなパーツ分けや、ローン契約など一切ありません！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全個室と案内",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "完全個室で安心の衛生面",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "鍼灸院の片隅で営業している",
+      "source": "https://naturis-yokohama.jimdofree.com/",
+      "quote": "鍼灸院の片隅で営業しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛VIO髭込みは男性23,000円・女性19,800円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "全身脱毛VIO髭込み 男性¥23,000- 女性¥19,800-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛VIO髭込みの所要時間は120分",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "所要時間120分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "45分やりたい放題は8,800円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "45分やりたい放題 ¥8,800-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "45分の時間内でやれる範囲はどこでも行う",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "時間内でやれる範囲はどこでも行います。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "例として、VIOとヒゲ、うなじ・背中・脇が挙げられている",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "例 VIOと髭 うなじ・背中・脇 など",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セレクト脱毛は1パーツ4,200円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "セレクト脱毛 １パーツ ¥4,200-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プチセレクト脱毛は1パーツ2,500円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "プチセレクト脱毛 １パーツ ¥2,500-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プチセレクト脱毛の部位は脇・V・I・O・口周り・うなじ",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "「脇」「V」「I」「O」「口周り」「うなじ」",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "1パーツ15分が目安",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "１パーツ１５分目安",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ひざ下＆ひざ上(指・甲込み)は7,900円、ひじ下＆ひじ上(指・甲込み)は7,400円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "ひざ下＆ひざ上（指・甲込み） ¥7,900-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ひじ下＆ひじ上(指・甲込み)は7,400円",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "ひじ下＆ひじ上（指・甲込み） ¥7,400-",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ひざ・ひじのセットの所要時間は45分",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "所要時間45分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "自己処理が必須で、カミソリは2日前、シェーバーは前日",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "自己処理の際にカミソリの場合は2日前、シェーバーの場合は前日にお願いしております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "手の届かない場所は店が行うが、剃り残しが必要以上にあるとシェービング代がかかる",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "必要以上に剃り残しがある場合シェービング代として ￥3,000頂戴いたします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保湿をお願いしている",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "徹底した保湿をお願いします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当て漏れがあった際は2週間前後で再照射(サロン基準)",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "当て漏れがあった際は２週間前後で再照射いたします。 （サロン基準による）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにない場合も相談できる",
+      "source": "https://naturis-yokohama.jimdofree.com/menu/",
+      "quote": "メニューにない場合でもお気軽にご相談ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業日は火・木・土の11:00–20:00",
+      "source": "https://maps.google.com/?cid=9343551145104884814",
+      "quote": "火 11:00–20:00 水 定休日 木 11:00–20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの住所",
+      "source": "https://maps.google.com/?cid=9343551145104884814",
+      "quote": "神奈川県横浜市中区常盤町１丁目2−１ サンネット関内ビル 2階Aー１",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://naturis-yokohama.jimdofree.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9343551145104884814"
+    }
+  ],
+  "notes": "営業日・時間は公式サイトと Google マップで一致(火・木・土 11:00〜20:00)。住所は公式サイトが「常磐町１−２−１ サンネットビル２階A-1」、Google マップが「常盤町１丁目2−１ サンネット関内ビル 2階Aー１」で表記が違う(常磐/常盤、ビル名)が、番地・階・部屋番号は同じと判断した(店名・電話番号も一致)。公式サイトの『全部で７部位』は、メニューに10部位の選択やパーツの組があることと合わないため書いていない。書かなかったこと: 『最新の脱毛機で医療脱毛と同等の効果』『痛みを感じない』などの宣伝文、料金が安い理由の説明、お客様の声、『人気NO.1』の表記、介護脱毛、ヒト幹細胞フェイシャルの説明、スタッフの名前と経歴、シェービング代の金額(本文は料金を書かない決まりのため)。価格の税の表記は公式サイトに無く、『¥8,800-』の表記のまま載せた。ソルエマーレ鍼灸院の施術内容は読んでいない。"
+}

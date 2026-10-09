@@ -1,0 +1,253 @@
+{
+  "key": "beauty-89",
+  "headline": "浜松市原島町の、ショートヘア専門の美容室",
+  "lede": "静岡県浜松市の原島町にある、ショートヘア専門の美容室です。公式サイトは、肩につかない長さをショートヘアと定義しています。店内はコンクリートと白を基調とした小型サロンで、予約は電話かHOTPEPPER Beautyで受け付けています。",
+  "sections": [
+    {
+      "heading": "メニューの並び",
+      "body": "メニューはカット、カラー、パーマ、縮毛矯正、トリートメントなどです。カラーにはリタッチ、ブリーチ、ケアブリーチ、ポイントカラーがあり、パーマにもケアパーマとポイントパーマがあります。前髪カット、眉カット、ヘッドスパ、シャンプーブローのみ、も項目に並びます。縮毛矯正のほかに、ポイントストレートの項目もあります。"
+    },
+    {
+      "heading": "手入れと肌の相談",
+      "body": "朝のお手入れがどれくらいできるかを聞いたうえでスタイルを提案し、家での手入れの仕方も伝えると案内されています。カラーは、肌が弱い人も相談できます。話を聞いたうえで対応を決め、頭皮にカラー剤をなるべくつけないように塗る、肌に優しいカラー剤を使う、マニキュアを使うといった方法が挙げられています。"
+    },
+    {
+      "heading": "場所と営業時間",
+      "body": "住所は浜松市原島町266の1F南です。営業は9時から18時で、最終受付はカットとカラー、カットとパーマが16時、カットのみが17時です。駐車場は2台分あります。少人数で営む店のため、予約はネットが勧められていて、電話やLINEからも受け付けています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット(SB込)",
+      "price": "5500yen"
+    },
+    {
+      "name": "前髪カット",
+      "price": "1100yen"
+    },
+    {
+      "name": "カラー",
+      "price": "6600yen"
+    },
+    {
+      "name": "リタッチカラー",
+      "price": "5500yen"
+    },
+    {
+      "name": "ケアブリーチ",
+      "price": "7700yen"
+    },
+    {
+      "name": "パーマ",
+      "price": "6600yen"
+    },
+    {
+      "name": "縮毛矯正",
+      "price": "16500yen"
+    },
+    {
+      "name": "ヘッドスパ",
+      "price": "1100yen"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "浜松市原島町266 1F南にある",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "静岡県浜松市東区原島町266 1F南",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートヘア専門のサロン",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ショートヘア専門のサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートヘアの定義は肩につかない長さ",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "uyoは「肩につかない長さ」を",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店内はコンクリートと白を基調としたシンプルな空間",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "店内は、コンクリートと白を基調としたシンプルな空間。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "小型サロン",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "小型サロンなので、お客様だけの落ち着いたお時間を、",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜18:00",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "［OPEN］ 9:00〜18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最終受付はカット＆カラー・カット＆パーマが16:00",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "最終受付時間（カット＆カラー／カット＆パーマ）｜16:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最終受付はカットのみが17:00",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "最終受付時間（カットのみ）｜17:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は2台分",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "駐車場は2台分ご用意しております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話・HOTPEPPER Beauty、LINEからも受け付ける",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "電話やLINEからも ご予約承ります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "少人数のサロンのため、ネット予約を勧めている",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "少人数のサロンなので、なるべくネットでのご予約をオススメしておりますが、",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット(SB込)は5,500円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "カット(SB込) 5500yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "前髪カット・眉カットは各1,100円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "前髪カット 1100yen 眉カット 1100yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラー6,600円、リタッチカラー5,500円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "カラー 6600yen リタッチカラー 5500yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ブリーチ6,600円、ケアブリーチ7,700円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ブリーチ 6600yen ケアブリーチ 7700yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーマ6,600円、ケアパーマ7,700円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "パーマ 6600yen ケアパーマ 7700yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正は16,500円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "縮毛矯正 16500yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ポイントストレートは3,300円〜",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ポイントストレート 3300yen〜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "トリートメント2,200円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "トリートメント 2200yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドスパ1,100円、シャンプーブロー(施術時)1,100円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ヘッドスパ 1100yen シャンプーブロー（施術時） 1100yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "肌が弱い人のカラーは相談でき、対応を決める",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "肌が弱いのですがカラーできますか？",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "対応として、頭皮になるべくカラー剤をつけないように塗る",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "頭皮になるべくカラー剤をつけないように塗ったり、",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "対応として、肌に優しいカラー剤を使う、マニキュアを使う",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "肌に優しいカラー剤を使用したり、マニキュアを使うなども対応としてできます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ポイントカラーは2,200円〜",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ポイントカラー 2200yen〜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ポイントパーマは3,300円〜",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "ポイントパーマ 3300yen〜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプーブローのみは3,300円",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "シャンプーブローのみ 3300yen",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話・HOTPEPPER Beautyで受け付ける",
+      "source": "https://uyo-shorthair.com/info/",
+      "quote": "お電話・HOTPEPPER Beautyにて承っております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お客様がどれくらい朝のお手入れができるかを聞いてスタイルを提案する",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "お客様がどれくらい、朝のお手入れができるかをお聞きしてスタイルも提案させていただきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "自宅でのお手入れの仕方も伝える",
+      "source": "https://uyo-shorthair.com/",
+      "quote": "おうちでのお手入れの仕方もお伝えさせていただきますね。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は火〜土9:00–18:00、月日は定休日",
+      "source": "https://maps.google.com/?cid=6752297081502626903",
+      "quote": "月 定休日 火 09:00–18:00 水 09:00–18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの住所",
+      "source": "https://maps.google.com/?cid=6752297081502626903",
+      "quote": "静岡県浜松市中央区原島町２６６ １Ｆ南",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://uyo-shorthair.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6752297081502626903"
+    }
+  ],
+  "notes": "料金は公式サイトで税の表記が見当たらず、「5500yen」の形で載っているため、menus はそのままの表記にした。 営業時間は公式サイトも Google マップも9:00〜18:00で一致。定休日は食い違う(公式: 毎週月・火曜、Google マップ: 月・日が定休日で火曜は営業)ため本文に書いていない。住所は公式サイトが「浜松市東区原島町」、Google マップが「浜松市中央区原島町」(行政区の改編による表記の差と思われるが未確認)で、番地は同じ。本文は Google マップに合わせず『浜松市原島町』と区を省いた。書かなかったこと: 『凛と美しく』などの宣伝的な文、初回割引(条件が不明)、カット料金が5,500円である理由の説明、スタッフの名前・経歴。ショートパーマが似合うかのQ&A(『合います』)は効き目ではないが断定のため載せていない。『最終受付』の時刻は公式サイトのみの情報。タグ: 夜遅くは18時閉店、個室・駅近・メンズ・子連れの記載はなく、付けていない。『縮毛矯正』はメニュー名として載せた(効き目を表す語ではなく施術の名称と判断。ほかの『矯正』を含む名前の扱いと揃えること)。"
+}
