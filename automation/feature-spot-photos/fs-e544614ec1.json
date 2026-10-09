@@ -1,0 +1,27 @@
+{
+ "featureId": "hokkaido-noboribetsu-onsen",
+ "dir": "fs-e544614ec1",
+ "storeName": "大湯沼川天然足湯",
+ "mapsUrl": null,
+ "placeUrl": null,
+ "matched": null,
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e544614ec1/p3.jpg",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/NoboribetsuOnsen-Ashiyu.JPG",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:NoboribetsuOnsen-Ashiyu.JPG",
+   "what": "大湯沼近くの白濁した足湯の流れ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Wikimedia Commons",
+   "author": "XT",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+   "commonsFile": "File:NoboribetsuOnsen-Ashiyu.JPG",
+   "taken": "2008-04-01"
+  }
+ ],
+ "note": "Commons の説明に「登別温泉、地獄谷から北の大湯沼付近にある足湯」とある。表示禁止リストの画像(2019年撮影・同じ足湯)と見比べて、白濁した流れ・茶色の看板・上の木道が同じ場所であることを確かめた(禁止の画像は人が多く写るため。選んだのは人の写らない2008年の写真)。2008年撮影のため、丸太の腰かけなど設備の細部は今と違う可能性がある。"
+}

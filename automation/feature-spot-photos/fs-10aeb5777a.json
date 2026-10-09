@@ -1,0 +1,27 @@
+{
+ "featureId": "kansai-expo-park-family",
+ "dir": "fs-10aeb5777a",
+ "storeName": "ららぽーとEXPOCITY",
+ "mapsUrl": null,
+ "placeUrl": null,
+ "matched": null,
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-10aeb5777a/p4.jpg",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Expocity.JPG",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Expocity.JPG",
+   "what": "EXPOCITYの建物と広場",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Wikimedia Commons",
+   "author": "小倉商事",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "commonsFile": "File:Expocity.JPG",
+   "taken": "2016-02-04"
+  }
+ ],
+ "note": "建物の看板に「EXPOCITY LaLaport」と読める。映画館(109シネマズ・IMAX)の看板も写る。人は小さく写る程度。Commons に「ららぽーとEXPOCITY」の建物そのものの写真が少なく、ほかは観覧車・ニフレルだけだった(それらは商業施設ではないので不採用)。表示禁止リストの画像(BsGravity のイベント写真)は選んでいない。"
+}

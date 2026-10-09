@@ -1,0 +1,55 @@
+{
+ "featureId": "feature-kinosha-nachikatsuura",
+ "dir": "fs-a72b2b43c9",
+ "storeName": "汽ノ舎",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B1%BD%E3%83%8E%E8%88%8E%20%E9%82%A3%E6%99%BA%E5%8B%9D%E6%B5%A6%E7%94%BA%E4%B8%8B%E9%87%8C",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B1%BD%E3%83%8E%E8%88%8E/@33.5788241,135.9215166,17z/data=!3m1!4b1!4m6!3m5!1s0x60061705f26c2973:0xe2dd2aa5f179e79!8m2!3d33.5788241!4d135.9215166!16s%2Fg%2F11sdm8y8cn?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "汽ノ舎",
+  "address": "〒649-5142 和歌山県東牟婁郡那智勝浦町下里２７２７−７",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-a72b2b43c9/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT00IiUJYNzR072npkQWAePHSUbZLcYRUZimLOrA3gsrGnreumLKUhJOcmQN4hgsG2tqbNNLV6G8gK1Lh6oDNiwa3Wvas_PIm-pGfWgDWapNKERkzchDq2gvJClZlEUM_kuknlI-CeCfc",
+   "what": "赤レンガの2階建ての外観と入口の階段",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-a72b2b43c9/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StT8VtkimAl1LYjktcR3MmyYlLWAbNfZqgXRN3WoZW38h54WzghPMJZBAH_Cf5CDuCKaf81qKkBw6VSP2t8Et0tK74cOm42jJejhgkPK_DiFSGy1wGij9zsdFwwk2aeMDrMqUxNQ",
+   "what": "長いテーブルと川を望む窓の館内",
+   "width": 900,
+   "height": 668,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a72b2b43c9/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrIXGImj1TSGhTu3_Zf-Wrzk42SDbS4Um38EySRZPD6P97CTN83xKaefq-O3XsNLIKeiuEzEf5ptuAxp8wt0rysGiokBvorjceoqF-ZtLXoE7khSY8x6Ne23P_Fw7BM2eBpuOZCQuPxlYQ",
+   "what": "カレーライスとサラダ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a72b2b43c9/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QsimjMUNmKuCffdTcxcY9QSG_1d0RVNT5mTmobsOb8DrwPUdCDeeEqo9ZBRyRhMChhQUtkZT2uDsiepKfPisfyP0Fi8ckUyDSdWwQiJC4XdVFbNdSjJpMFSFvfr37BHUfL_yPEGw",
+   "what": "入口前のテラスと水辺の眺め",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "inventory の mapsClue は各ポイントの見出しを検索語にしていて使えないため、「汽ノ舎 那智勝浦町下里」で検索し直し、1件の店のページに着いた(店名「汽ノ舎」が完全一致・住所が那智勝浦町下里)。POINT 01=外観、02=館内(長テーブルと窓の外の川と橋)、03=料理(オーナー提供のカレー)、04=入口前のテラスから水辺を望む写真。POINT 04(SIBO 監修のセレクトショップ・2F ギャラリー)の売り場・展示そのものの写真は、Google マップの写真(オーナー提供32枚+ほか)の中に見当たらなかったので、見出しの「海の眺め」に当たる写真を当てた(本と木のおもちゃの棚の写真はあったが、ショップの売り場と確かめられず不採用)。記事の本文は「コンクリートの2階建て」だが、写真の外観は赤レンガ張り(要確認)。公式サイト kinosha.jp は読んでいない。星・口コミは読んでいない。"
+}
