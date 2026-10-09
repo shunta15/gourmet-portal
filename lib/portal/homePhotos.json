@@ -15,13 +15,13 @@
           "w": 480,
           "h": 227,
           "src": "/_portal/home-046f05f2-480.webp",
-          "bytes": 17674
+          "bytes": 17340
         },
         {
           "w": 960,
           "h": 454,
           "src": "/_portal/home-046f05f2-960.webp",
-          "bytes": 48658
+          "bytes": 46256
         }
       ]
     },
@@ -33,13 +33,13 @@
           "w": 480,
           "h": 368,
           "src": "/_portal/home-cc87839b-480.webp",
-          "bytes": 38910
+          "bytes": 37290
         },
         {
           "w": 640,
           "h": 491,
           "src": "/_portal/home-cc87839b-640.webp",
-          "bytes": 68052
+          "bytes": 55786
         }
       ]
     },
@@ -51,7 +51,7 @@
           "w": 315,
           "h": 236,
           "src": "/_portal/home-f4e6c181-315.webp",
-          "bytes": 12514
+          "bytes": 10552
         }
       ]
     },
