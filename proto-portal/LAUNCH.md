@@ -10,7 +10,7 @@
 | | OFF（本番の既定） | ON（`PORTAL_LAUNCHED=1`、または Vercel のプレビュー） |
 |---|---|---|
 | `/` | 今のグルメのトップ（metadata・canonical・JSON-LD も同一） | 総合トップ「にぎわいの輪」（index。配色は 2 色（白磁と藍／濃紺と銅）を開くたびにランダム。title は「街と店、店と人。つながる輪を、マチノワから。」） |
-| `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`） |
+| `/gourmet` | 404 | グルメのトップ（canonical は `/gourmet`）。**デザインは暖簾**（2026-10-09 の発注者の決定。見本 `/proto-noren` のトップと同じ画面で、店・特集の行き先だけ本物のページ。店ページ・特集記事ページは今のグルメのまま。末尾「グルメのトップ（暖簾）」）|
 | `/proto-hub/**`（総合トップの色を固定して見るルート） | 404 | プレビュー（`VERCEL_ENV=preview`）とローカルの `next dev` だけ。**公開スイッチ ON の本番でも 404** |
 | 総合サイトの全 URL（新業種・`/area`・`/station`・`/map`・`/videos`・`/find`・`/list`・`/list-data/**`・`/photos`・`/omakase`・`/og/**`・`/search-index.json`・各 `sitemap.xml`・`/_portal/**`） | 404（`/zzz` と同じ標準の 404） | 試作どおり |
 | `robots.txt` | 今と同一 | 総合サイトのサイトマップ 8 本を追記 |
@@ -305,7 +305,8 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 |---|---|
 | `lib/portal/launch.ts`・`launchEnv.ts` | 公開スイッチの判定（`isPortalLive()`、`assertPortalLive()`、`liveStaticParams()`）|
 | `next.config.ts` | OFF: 総合サイトの URL を 404 に書き換え。ON: `/` → `/portal-home`、`/portal-home` → `/` の 307 |
-| `app/page.tsx`・`components/portal/pages/gourmet-home.tsx` | グルメのトップ（OFF の `/`、ON の `/gourmet` と共通）|
+| `app/page.tsx`・`components/portal/pages/gourmet-home.tsx` | グルメのトップ（OFF の `/` だけ。ON の `/gourmet` は暖簾に替わった）|
+| `app/gourmet/{layout,page}.tsx`・`components/portal/pages/gourmet-noren-home.tsx`・`components/portal/noren/NorenFrame.tsx` | ON の `/gourmet`（暖簾のトップ。見本 `app/proto-noren/{layout,page}.tsx` と同じ部品を使い回す）|
 | `app/portal-home/**`・`components/portal/pages/home.tsx`・`components/portal/hubs/nigiwai/**`・`lib/portal/hubs/nigiwai/**`・`lib/portal/hub.ts` | 総合トップ「にぎわいの輪」（ON の `/`）|
 | `app/proto-hub/**`・`lib/portal/launch.ts`（`isPreviewOrLocal`）| 色を固定して見るルート（プレビュー・ローカルだけ）|
 | `components/portal/og/cards.tsx`（`HomeCard`）・`lib/seo/og.ts`（`OG_VERSION`）| `/og/home`（総合トップの共有画像）|
@@ -393,3 +394,11 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **色を固定して見る（プレビュー・ローカルだけ）**: `/proto-hub/nigiwai`（`/` と同じ）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。色見本は無い。本番では公開スイッチ ON でも 404（6 の「色を固定して見るルートは、プレビューとローカルだけ」）。
 - **フォーカスの輪**: 入口・ロゴ・「さがす」・「入る」の輪は `nigiwai.css` で `--ng-focus`（sometsuke は金褐色 #6a501e、akagane は銅 #e8a37c）。丸い部品の輪は丸い（portal.css の `.mp a:focus-visible` が角を 2px に戻すので、`.ngp` 付きの規則で `border-radius` を指定している）。portal.css の `.mp a:focus-visible`（墨色の輪。特異度 0,2,1）に負けないよう `.ngp` を付けて書いてある（2026-10-07 に直した。以前は akagane で輪が墨色になり、濃紺の地でコントラスト約 1.1 で見えなかった）。「本文へ移動」の輪は、akagane のときだけ銅にしてある（`body:has(.ngp[data-theme="akagane"]) .mp-skip:focus-visible`）。
 - **検査**: `node proto-portal/check-hub.mjs --base …`（事前チェック 17。`/` だけを見る。`--no-footer` でスクリプトなしのリンク検査からフッターを除く＝`next dev` で遅いとき）、`check-keyboard.mjs`（`/` の Tab の順番を 2 色・PC・スマホ・動きを減らす設定で）、`check-contrast.mjs --motion`（最初の画面を 6 業種 × 2 色 × 2 幅で）。
+
+## 付録: グルメのトップ（暖簾）（2026-10-09）
+- 発注者の決定「グルメのトップは『暖簾』のデザインにする」。公開スイッチ ON のとき `/gourmet` が暖簾のトップになる。OFF は今までどおり（`/` は旧グルメのトップ、`/gourmet` は 404）。店ページ（`/restaurant/**`）・特集記事ページ（`/feature/**`）・地域・シーン・検索は今のグルメのまま（暖簾にしていない）。
+- **仕組み**: 枠（紙・提灯・ヘッダー・フッター・`<main>`）は `components/portal/noren/NorenFrame.tsx`（`noren.css`・`fonts.ts` もここ）、トップの中身は `components/portal/pages/gourmet-noren-home.tsx`。見本 `/proto-noren`（`app/proto-noren/{layout,page}.tsx`）と本番 `/gourmet`（`app/gourmet/{layout,page}.tsx`）が同じ部品を使う。違いは行き先だけ（`lib/portal/noren/nav.ts` の `SAMPLE_LINKS`＝見本の店・特集、`LIVE_LINKS`＝`/restaurant/<id>`・`/feature/<id>`・ロゴとフッターの「トップ」は `/gourmet`）。
+- **シェル**: `components/portal/isPortalPath.ts` が `/gourmet`（ちょうどそのパスだけ）を総合サイト扱いにするので、`PortalShell` は `SiteShell`（グルメの共通ヘッダー）を出さず、暖簾の枠だけになる。`PortalShell` が読む `isPortalPath` に 1 行増えるだけで（gzip 後の JS の差は未実測。ビルドの検査で確認）、暖簾の部品は OFF のグルメのページの入口から辿れない（ルートレイアウト・`SiteShell`・グルメの店ページは暖簾の部品を import していない）。
+- **メタ情報**: title・description・canonical（`/gourmet`）・OGP・構造化データ（ルートレイアウトの Organization・WebSite）は、暖簾に替える前の `/gourmet` と同じ。見本の `noindex` は `app/proto-noren/layout.tsx` だけにあり、`/gourmet` には無い。
+- **入口**: 暖簾のトップに無かった行き先は、フッターのナビゲーションの末尾に足した（`FOOT_NAV_LIVE_EXTRA`。`/gourmet` のフッターだけ。見本には足さない）: おまかせ提案（`/omakase`）・写真から探す（`/photos`）・ショート動画（`/nazatu`。noindex の動画ページ）・総合トップ（`/`）。旧トップの「おまかせ／こだわり条件／写真から探す」の入口区画（`gourmet-home.tsx` の `portalEntrances`）は暖簾のトップには無い（こだわり条件は `/search` の中）。`gourmet-home.tsx` の ON 側の分岐は、`/gourmet` では使われなくなった（OFF の `/` は ON 分岐に入らない。消すかは別判断）。
+

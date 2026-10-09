@@ -10,8 +10,9 @@
  * - /list（候補リスト。店を保存して、URL で共有する。業種横断）
  * - /photos（写真から探す。業種横断）
  * - /omakase（おまかせ提案。4つの質問で店を出す）
+ * - /gourmet（グルメのトップ。公開スイッチ ON のとき暖簾のデザイン。枠は app/gourmet/layout.tsx。ちょうど /gourmet だけで、配下は無い）
  * - 新業種（/beauty /bodycare /pet /leisure /stay）とその配下
- * グルメ（/gourmet を含む既存の全ルート）は false。
+ * グルメの既存の全ルート（/restaurant・/feature・/region・/scene・/search など）は false（従来の SiteShell）。
  */
 const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/leisure', '/stay'];
 
@@ -26,6 +27,7 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (pathname === '/list') return true;
   if (pathname === '/photos') return true;
   if (pathname === '/omakase') return true;
+  if (pathname === '/gourmet') return true; // グルメのトップ（ON のとき暖簾の枠。グルメの共通ヘッダー（SiteShell）は出さない）
   if (pathname === '/proto-hub' || pathname.startsWith('/proto-hub/')) return true; // 総合トップ「にぎわいの輪」の色を固定して見るルート（プレビュー・ローカル専用）
   if (pathname === '/proto-noren' || pathname.startsWith('/proto-noren/')) return true; // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用）。グルメの共通ヘッダーは出さない
   return NEW_VERTICAL_PATHS.some((p) => pathname === p || pathname.startsWith(p + '/'));

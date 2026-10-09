@@ -15,7 +15,8 @@ export type FlagProp = {
  * エリアののぼり。幅と長さは掲載数に比例し、布越しに各エリアの実在店の写真が透ける。
  * 風（＝スクロールの速さ）とホバーで揺れる。
  */
-export default function Nobori({ flags, total }: { flags: FlagProp[]; total: number }) {
+/** shopBase: 店ページの行き先の手前（見本は "/proto-noren/restaurant"、本番の /gourmet は "/restaurant"） */
+export default function Nobori({ flags, total, shopBase }: { flags: FlagProp[]; total: number; shopBase: string }) {
   const ul = useRef<HTMLUListElement>(null);
   const [cur, setCur] = useState(0);
   const hov = useRef(-1);
@@ -92,7 +93,7 @@ export default function Nobori({ flags, total }: { flags: FlagProp[]; total: num
           <small>/ 全 {total} 軒</small>
         </span>
         {c.shop && (
-          <Link href={`/proto-noren/restaurant/${c.shop.id}`} data-cursor="VIEW" className="vN-nb-cap-s">
+          <Link href={`${shopBase}/${c.shop.id}`} data-cursor="VIEW" className="vN-nb-cap-s">
             布に透ける写真：{c.shop.name}
             {c.shop.station ? `（${c.shop.station}）` : ""}
             <span aria-hidden="true"> →</span>
