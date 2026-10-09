@@ -1,0 +1,22 @@
+{
+  "key": "beauty-43",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-43/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/71a163_703314d2d78241c9a55c1606555e42f6.jpg",
+      "pageUrl": "https://www.obtenir21.com/",
+      "what": "セット椅子が並ぶ店内",
+      "width": 1200,
+      "height": 803
+    },
+    {
+      "path": "/_portal/vshops/beauty-43/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/71a163_2eeaab28634344ea9281f9b935951fa3.jpg",
+      "pageUrl": "https://www.obtenir21.com/",
+      "what": "夜の店の外観",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}

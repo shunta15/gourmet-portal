@@ -1,0 +1,30 @@
+{
+  "key": "beauty-27",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-27/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/8ec154_4a25f063e8034da8be4159ebd9fdcfd2~mv2.jpg",
+      "pageUrl": "https://www.no511.com/",
+      "what": "大理石調の壁の施術室",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-27/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/8ec154_7ae8e2398d8d47c7bb95cdfd838e71d2~mv2.jpg",
+      "pageUrl": "https://www.no511.com/",
+      "what": "待合スペースと受付台",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-27/s3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/8ec154_9087372ae44e48e0a545e1f3dd43e59f~mv2.jpg",
+      "pageUrl": "https://www.no511.com/",
+      "what": "水色の壁紙の施術室",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}
