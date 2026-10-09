@@ -13,10 +13,12 @@ export const NOREN_SHOP_REWRITE = true;
 
 /**
  * 特集記事ページ（/feature/<id>）を暖簾にする。app/gourmet/feature/[id] は合流済みで、書き換え・復号（decodeRewrittenId）・検査は true で通っている。
- * 公開②（2026-10-09）は false で出す（特集 536 本のうち 359 本が写真の無いスポットで「店名だけの暗い布」になるため。写真がそろってから公開③で true）。
- * false のあいだは、/feature/<id> は今のグルメの特集ページのまま（書き換えも、枠の出し分けも、リダイレクトも効かない）。
+ * 公開②（2026-10-09）は false で出した（特集 536 本のうち 359 本が写真の無いスポットで「店名だけの暗い布」になるため）。
+ * 公開③（2026-10-09）で true: 写真の無いポイントに Google マップのその店の写真を当てた（lib/featureSpotPhotos.ts）ので。
+ * true のあいだ、/gourmet/feature/<id>（内部のパス）は /feature/<id> へ恒久リダイレクトされ、/feature/<id> が暖簾の特集ページで出る。
+ * 元に戻すなら false（/feature/<id> は今のグルメの特集ページ、/gourmet/feature/<id> は 404）。
  */
-export const NOREN_FEATURE_REWRITE = false;
+export const NOREN_FEATURE_REWRITE = true;
 
 /**
  * 書き換え（rewrites）を通ってきた動的ルートの `params.id` を、元の ID に戻す。
