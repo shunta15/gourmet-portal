@@ -1,0 +1,174 @@
+{
+  "key": "bodycare-48",
+  "headline": "長岡京市開田にある、予約不要をうたう夫婦で営む接骨院",
+  "lede": "京都府長岡京市開田にある接骨院です。公式サイトは、予約は不要で、思い立ったら直接来院できると案内しています。夫婦の二人で施術にあたり、待合室にはキッズスペースがあります。",
+  "sections": [
+    {
+      "heading": "予約と来院",
+      "body": "予約は要らず、受付は施術時間の終了30分前までです。初診の人に限り、時間外や土日祝の施術にも可能な範囲で対応するとされ、土曜の午後、日曜、祝日はLINEで事前に予約した人のための枠です。動けないときには、自宅や職場への往診も受け付けています。問い合わせ用のLINEがあり、電話は施術中などで出られない場合があります。ベビーカーのまま院内に入れます。"
+    },
+    {
+      "heading": "料金のしくみと保険",
+      "body": "支払いは都度払いで、回数券はないとうたっています。保険は、症状によっては適用外になる場合があると断り書きがあり、適用されるか分からないときは施術前に相談するよう書かれています。自賠責保険が適用される交通事故や、労災保険が適用される仕事中・通勤途中のけがの場合は、窓口での自己負担はないとされています。"
+    },
+    {
+      "heading": "設備と鍼灸",
+      "body": "複合高周波EMSの機器SIXPAD MEDICAL Proを導入したと案内されています。鍼灸の施術は、女性専用の完全個室で行うとうたっています。スタッフには柔道整復師と鍼灸師がいます。駐車場は院の前に車2台分と自転車用のスペースがあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "SIXPAD MEDICAL Pro（最新EMSトレーニング）",
+      "price": "1回 2200円"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約なし可",
+      "factIndex": 2
+    },
+    {
+      "tag": "女性スタッフ",
+      "factIndex": 19
+    }
+  ],
+  "facts": [
+    {
+      "claim": "京都府長岡京市開田3丁目10-31にある",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "京都府長岡京市開田３丁目１０−３１",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "車2台と自転車を院前に停められる",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "車２台と自転車は院前に駐車いただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約不要をうたい、思い立ったら直接来院できる",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "思い立ったら直接お越しください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "夫婦の二人で施術に向き合っている",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "私たち夫婦二人で施術に向き合っている",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "待合室にキッズスペースがある",
+      "source": "https://nakano-sekkothuin.com/about-us/",
+      "quote": "待合室にはキッズスペースも完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ベビーカーのまま院内に入れる",
+      "source": "https://nakano-sekkothuin.com/about-us/",
+      "quote": "ベビーカーのまま院内に入れますし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初診に限り、時間外や土日祝も可能な範囲で対応する",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "初診の方に限り、時間外や土日祝も可能な限り緊急対応します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土曜午後・日曜・祝日は、LINEで事前予約した人の施術枠",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "事前予約（LINE）をいただいた方のみの施術枠として稼働しております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "受付時間は施術時間終了の30分前まで",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "＊受付時間は施術時間終了の３０分前までとなります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "自宅や職場、出先への往診を受け付ける",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "ご自宅や職場、出先への往診を承っております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "都度払いで回数券はないとうたう",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "都度払い・回数券一切なし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "症状によっては健康保険が適用とならない場合がある",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "症状によっては、健康保険が適用とならない場合がございます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険適用か不明な場合は施術前に相談するよう案内",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "ご自身の症状が保険適用となるかご不明な場合は、施術前に必ずご相談ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故(自賠責保険適用)や労災の場合、窓口での自己負担は0円",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "患者様の窓口での自己負担金は「0円」です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故のむちうち等は自賠責保険適用、仕事中・通勤途中のケガは労災保険適用",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "または仕事中・通勤途中のケガ（労災保険適用）の場合",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SIXPAD MEDICAL Proを導入した",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "最新の複合高周波EMS機器「SIXPAD MEDICAL Pro」を導入しました",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SIXPAD MEDICAL Proは1回2200円",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "1回 2200円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は施術中などで出られない場合がある",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "状況によりお電話に出るまで時間がかかる、または出られない場合がございます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "問い合わせ用のLINEがある",
+      "source": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+      "quote": "なかの接骨院ではお問い合わせ用としてLINEを用意しています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "鍼灸施術は女性専用の完全個室とうたう",
+      "source": "https://nakano-sekkothuin.com/about-us/",
+      "quote": "鍼灸施術は「女性専用の完全個室」をご用意。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "柔道整復師と鍼灸師がいる",
+      "source": "https://nakano-sekkothuin.com/about-us/",
+      "quote": "柔道整復師（第44865号）鍼灸師",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://nakano-sekkothuin.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15785509538226131319"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない: 公式の診療時間表は 月〜土の9–12時○・月〜金の16–20時○(土曜午後と日曜は△=LINE予約のみ)だが、Google マップは月曜が定休日で、日曜も定休日、土曜は9:00–12:00のみ。月曜の扱いが食い違う。予約不要は公式がタイトルとトップで強くうたう一方、時間外はLINE予約制のため、本文では『初診に限り』などの条件も書いた。ベッドの台数はトップ(4台)と別の箇所(5台)で食い違うため、台数も『3人同時でも約20分』も書いていない。開院年数もトップ・当院についてのページで『18年』と『19年の実績』と食い違うため書かなかった。『女性スタッフ』タグは、鍼灸は女性専用の完全個室、鍼灸師が女性として紹介されている点による(スタッフ個人の名前は書いていない)。書かなかったこと: 『治りたい』『本気で応える』『結果にこだわる』『効く痛み』などのうたい文句、『高額な回数券の売りつけは絶対にしません』『不透明な高額自費の請求はしません』『部位転がし』『100%クリーン』『ホワイト』という他院を意識した表現、症状別ガイドの症状名の一覧、SIXPADの効き目の説明、鍼灸治療(全身調整)の料金(メニュー名に『治療』を含むため)、健康保険の窓口料金表(3割・2割・1割の初回・2回目以降。保険の適用が広く使えるように読める恐れがあるため)、『完全提携の整形外科』『医療・法務との強固な連携』、メディア掲載、院長と鍼灸師の氏名・免許番号・経歴、YouTube動画。保険は『症状によっては適用外になる場合がある』という公式の断り書きの形で書き、自賠責・労災は条件ごと(自賠責保険が適用される交通事故、労災保険が適用される仕事中・通勤途中のけが)とした。ページ数は トップ・当院について・紹介動画のページ(取得したが引用せず)・交通事故のページ(取得したが引用せず)の4ページ(料金・診療時間・アクセスはトップに載っていた)。トップのURLは Google マップ経由のパラメーター付きのものを使った。"
+}
