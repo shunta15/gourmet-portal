@@ -10,6 +10,9 @@ import { isPortalLive } from "@/lib/portal/launch";
 
 const BASE = "https://machinowa.tokyo";
 
+/** 総合トップ・特集のトップ・グルメのトップを最後に大きく変えた日時（2026-10-09: 総合サイトの公開と、特集のトップの暖簾化）。 */
+const ENTRANCE_UPDATED = new Date("2026-10-09T18:13:00+09:00");
+
 /**
  * 動的サイトマップ
  *
@@ -25,15 +28,19 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
+  // 公開スイッチ ON のときだけ、トップ・特集のトップ・グルメのトップに更新日を付ける（OFF の出力は従来と同一）。
+  // 検索エンジンに「このページは変わった」と伝えるための日付。これらのページの題・デザインを大きく変えたら、ENTRANCE_UPDATED を手で直す。
+  const entranceUpdated = isPortalLive() ? { lastModified: ENTRANCE_UPDATED } : {};
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE, changeFrequency: "daily", priority: 1.0 },
+    { url: BASE, changeFrequency: "daily", priority: 1.0, ...entranceUpdated },
     {
       url: `${BASE}/feature`,
       changeFrequency: "weekly",
       priority: 0.7,
+      ...entranceUpdated,
     },
     // /gourmet（旧トップの移設先）は公開スイッチ ON のときだけ存在する。OFF では 404 なので載せない（出力は従来と同一）
-    ...(isPortalLive() ? [{ url: `${BASE}/gourmet`, changeFrequency: "daily" as const, priority: 0.9 }] : []),
+    ...(isPortalLive() ? [{ url: `${BASE}/gourmet`, changeFrequency: "daily" as const, priority: 0.9, ...entranceUpdated }] : []),
   ];
 
   // 店舗 ID は DB から取得し、updated_at がある場合は lastModified に反映
