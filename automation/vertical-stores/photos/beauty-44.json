@@ -1,5 +1,15 @@
 {
   "key": "beauty-44",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-44/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sw1DEHbnL0egg8fDhyS6svJPunWEbxHPcWDZGqmpcjrljOXV3RgOnM509v2_b2Pjhmli3j1ku98V4I5APVBGIxTM0aWGXPT9AWDO8qIb9FS70arfkhhXqG6FATiEnl0-mrHpJD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=589549277904657040",
+      "what": "鏡と椅子のあるサロン内",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)。Google マップの写真"
 }

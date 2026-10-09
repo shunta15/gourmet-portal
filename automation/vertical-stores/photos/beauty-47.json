@@ -1,5 +1,15 @@
 {
   "key": "beauty-47",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がヘアブックのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-47/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TtHWKYaK8egrLhaNpkhiU9pXJ5bls0A3sb4a4kw1fS5YIe5XcFRAfcxBqCAS9GxV4ThKpXsSO-Oo5ZQ9RtdP5ugZ7AvQLjewE7k0xXIrBSCrR20l1zvoR-Z0jg8-NqjLqewVCv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6175956008011077236",
+      "what": "ボブのヘアスタイルの後ろ姿",
+      "width": 750,
+      "height": 750,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がヘアブックのみ)。Google マップの写真"
 }

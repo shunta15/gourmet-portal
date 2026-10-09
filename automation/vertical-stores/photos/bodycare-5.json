@@ -1,5 +1,15 @@
 {
   "key": "bodycare-5",
-  "images": [],
-  "note": "公式サイトの写真は素材写真に見えるもの(針・クリップボード・汎用の施術室)のみ。実店舗の写真と確認できず不使用"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-5/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmB8cQvnMi7Xa515jZ7zu1TD6K16IILYxeSsOtSswrpH3mytpVXSmlVz9ud2zK3INFUtHycUMOctPek0fRS9lCdWoRXLB2Fl-dkJ2JaIgiFgOKfqsvKUowpxz1uzJpxZjMZlK7HAA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11489178463892341232",
+      "what": "ビル1階の店の外観",
+      "width": 1020,
+      "height": 765,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの写真は素材写真に見えるもの(針・クリップボード・汎用の施術室)のみ。実店舗の写真と確認できず不使用。Google マップの写真"
 }

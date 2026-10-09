@@ -1,5 +1,15 @@
 {
   "key": "bodycare-23",
-  "images": [],
-  "note": "もみらく整体院の公式サイトの画像は素材写真・文字入りの図ばかり(上限8枚で該当なし)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-23/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tg16CdKMm5Ld5zDYDjonHydzM-qu8acVZaLZoXK0YT0TJaBEKFtaEtUJ_Uh_sWa-93l05A-MlhPPt1UwvxP3FmH6XJxF299Ks8eYMLVr_6-A1Gs-6aZ82-8ZkCGiDYSlXQpQtIle0iRKEp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3903006779886816719",
+      "what": "施術台のある院内",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "もみらく整体院の公式サイトの画像は素材写真・文字入りの図ばかり(上限8枚で該当なし)。Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-38",
-  "images": [],
-  "note": "公式サイトの画像は文字入りの見出し画像・地図・500px未満のものだけで、店の写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-38/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHqX9WSYyHGEqIsQgU3QvsnB5VZB85WkNH8J2sni8qcW9KKzZu2DNuKp4u583mQbOLjTtli2zKRsc2QOqs9SbZAVT9NueYWBwPUH8dlfk5HelDLvRLEWsSJsZp5J5goJ3E8Fzj=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12184453434516807105",
+      "what": "サロン内のセット面とカーテン",
+      "width": 960,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像は文字入りの見出し画像・地図・500px未満のものだけで、店の写真なし。Google マップの写真"
 }
