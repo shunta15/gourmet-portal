@@ -5,7 +5,7 @@
   "sections": [
     {
       "heading": "席と支払い",
-      "body": "スタッフはスタイリスト2人とアシスタント1人です。支払いはVisa、Mastercard、JCB、American Expressなどのカードのほか、現金、PayPay、交通系が使えます。ドリンクサービスがあり、4席以下の小型サロンとして案内されています。営業時間はGoogleマップの表示とも一致します。"
+      "body": "場所は居酒屋「たら福」の隣と案内されています。スタッフはスタイリスト2人とアシスタント1人です。支払いはVisa、Mastercard、JCB、American Expressなどのカードのほか、現金、PayPay、交通系が使えます。ドリンクサービスがあります。"
     }
   ],
   "menus": [],
@@ -54,9 +54,9 @@
       "checkedAt": "2026-10-09"
     },
     {
-      "claim": "支払いはカード、現金、PayPay、交通系が使える",
+      "claim": "Visa・Mastercard・JCB・American Expressなどのカードが使える",
       "source": "https://beauty.hotpepper.jp/slnH000683665/",
-      "quote": "現金、PayPay、交通系",
+      "quote": "Visa／Mastercard／JCB／American Express",
       "checkedAt": "2026-10-09"
     },
     {
@@ -66,9 +66,15 @@
       "checkedAt": "2026-10-09"
     },
     {
-      "claim": "4席以下の小型サロン",
+      "claim": "現金、PayPay、交通系の支払いができる",
       "source": "https://beauty.hotpepper.jp/slnH000683665/",
-      "quote": "4席以下の小型サロン",
+      "quote": "現金、PayPay、交通系",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "居酒屋「たら福」の隣にある",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "居酒屋「たら福」さんの隣になります。",
       "checkedAt": "2026-10-09"
     }
   ],
@@ -82,5 +88,5 @@
       "url": "https://maps.google.com/?cid=245201558187846171"
     }
   ],
-  "notes": "営業日は Google マップ(月曜休み・火〜日10〜20時)と一致。第一火曜日・第三日曜日の休みは Google マップの週間表示には出ない。メニュー名はページに無いため menus は空。メンズ向けの表示はどの店にも出る定型のため使っていない。"
+  "notes": "営業日は Google マップ(月曜休み・火〜日10〜20時)と一致。第一火曜日・第三日曜日の休みは Google マップの週間表示には出ない。メニュー名はページに無いため menus は空。メンズ向けの表示はどの店にも出る定型のため使っていない。 [監査 lite-audit-2] 「営業時間はGoogleマップの表示とも一致」の文を外した(第一火曜・第三日曜の休みは Google マップに出ず、言い切れないため)。「4席以下の小型サロン」は掲載サイトの条件の表示で席数と重複するため外した。"
 }
