@@ -422,6 +422,9 @@
   color: rgba(255, 244, 228, 0.94);
   text-shadow: 0 1px 18px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.6);
 }
+.k-deep-lead + .k-deep-lead {
+  margin-top: 10px;
+}
 .k-credit {
   position: absolute;
   z-index: 6;

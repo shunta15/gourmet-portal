@@ -225,7 +225,7 @@ async function openSearch(page, vp, word, arrow) {
 }
 const STATES = [
   { label: "検索候補（三宮）", page: "/station/kyoto/祇園四条", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "三宮", false) },
-  { label: "検索候補（きょうと・矢印で選択）", page: "/beauty", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "きょうと", true) },
+  { label: "検索候補（きょうと・矢印で選択）", page: "/beauty/hair", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "きょうと", true) },
   { label: "検索候補（京都・矢印で選択）", page: "/map", only: ".mp-sug", run: (pg, vp) => openSearch(pg, vp, "京都", true) },
 ];
 

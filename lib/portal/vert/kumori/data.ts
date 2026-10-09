@@ -10,8 +10,19 @@ export const KUMORI_ENTRIES: KumoriEntry[] = beauty.categories.map((c, i) => ({
   num: String(i + 1).padStart(2, "0"),
 }));
 
-export const KUMORI_LEAD =
-  "美容室・ヘアサロン、ネイル、まつげ・眉、エステ、脱毛、ヘッドスパの店を、エリア・種類・利用シーンから探せる入口です。";
+/** 最初の画面のリード。今の /beauty（components/portal/VerticalHub.tsx）と同じ文を、種類の名前から作る */
+export const KUMORI_LEAD = `${beauty.categories.map((c) => c.name).join("、")}の店を、エリア・種類・利用シーンから探せる入口です。`;
+
+/**
+ * 写真素材（Unsplash）を出すか、出さないか。**ここ 1 か所**で切り替える（既定 true。オーナーの返事待ち）。
+ * false のとき: 次の写真がすべて出ず、写真の代わりに色面・絵だけで成り立つ（空の枠・壊れた画像・クレジット行は出ない）。
+ *   1. 最初の画面の鏡の奥の店内写真（KumoriHero の .k-photo。KUMORI_PHOTO）と、動きを減らす設定のときの奥の場面の写真（.k-after-photo）
+ *   2. 種類 6 つのガラスの奥の写真（KumoriBelow の KUMORI_PANES）
+ *   3. エリアの地図の奥の写真と、タイルの丸い跡に見える同じ写真（KUMORI_AREA_PHOTO、--ph）
+ *   4. 利用シーンのガラスの奥の写真（KUMORI_SCENE_PHOTO）
+ *   5. 「Photo: Unsplash」のクレジット（最初の画面の隅と、下の撮影者の行）
+ */
+export const KUMORI_PHOTOS = true;
 
 /** 映り込みの写真（photos2.json の v2-salon-02。approved: true。丸い鏡ごしの椅子と窓） */
 export const KUMORI_PHOTO = {
