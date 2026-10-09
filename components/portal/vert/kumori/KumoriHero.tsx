@@ -757,6 +757,8 @@ export default function KumoriHero({ entries, lead, total }: Props) {
                   />
                 </div>
               )}
+              {/* 写真を出さない設定（KUMORI_PHOTOS = false）のときの、拭いたところに見える明るい店内の色面 */}
+              {!KUMORI_PHOTOS && <div className="k-room-plain" />}
               <div className="k-warm" />
               {KUMORI_BOKEH.map((b, i) => (
                 <i key={i} className="k-bokeh" style={{ left: `${b.x * 100}%`, top: `${b.y * 100}%`, width: `${b.r * 150}vmax`, height: `${b.r * 150}vmax`, opacity: b.a * 1.2 }} />

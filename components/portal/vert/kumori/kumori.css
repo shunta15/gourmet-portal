@@ -68,6 +68,14 @@
   transform: translate3d(calc(var(--kd) * 15%), 0, 0);
   will-change: transform;
 }
+.k-room-plain {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(62% 72% at 64% 46%, rgba(255, 240, 206, 0.95), rgba(255, 222, 168, 0.6) 48%, rgba(236, 186, 120, 0) 100%),
+    radial-gradient(40% 50% at 12% 78%, rgba(255, 226, 176, 0.55), rgba(255, 226, 176, 0) 100%),
+    linear-gradient(180deg, #ecc895 0%, #f4dcae 48%, #d9aa72 100%);
+}
 .k-warm {
   position: absolute;
   inset: 0;
