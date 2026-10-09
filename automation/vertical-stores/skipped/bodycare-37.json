@@ -1,0 +1,4 @@
+{
+  "key": "bodycare-37",
+  "reason": "place.website は地域ポータル『ぐるっと福島』の店舗ページで、店の自前のサイトではない(別の会社のサイト)。ページ内の『公式サイト』のリンク先は https://taharaharikyu.com だが、gbp の website ではないため取得していない。"
+}
