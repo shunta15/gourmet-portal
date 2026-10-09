@@ -1,10 +1,66 @@
 {
-  "featureId": "OWL",
-  "dir": "fs-2399ee0c3b",
-  "storeName": "OWL",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=OWL%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E6%9F%B3%E7%94%BA2-2-23",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "写真なし(店を確かめられない): 検索で1店のページに着いたが、Googleマップの店名が「OWL(営業時間状況で変わります)」で、記録の「OWL」と完全一致でない(住所は福岡県北九州市門司区柳町2丁目2-23で記録と一致)。ルール②(名前の完全一致)を満たさないため写真なし。"
+ "featureId": "OWL",
+ "dir": "fs-2399ee0c3b",
+ "storeName": "OWL",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=OWL%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E6%9F%B3%E7%94%BA2-2-23",
+ "placeUrl": "https://www.google.com/maps/place/OWL(%E5%96%B6%E6%A5%AD%E6%99%82%E9%96%93%E7%8A%B6%E6%B3%81%E3%81%A7%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%99)/@33.9035574,130.9338406,17z/data=!3m1!4b1!4m6!3m5!1s0x3543be4153c32eb9:0xceb77fa630df43b6!8m2!3d33.9035574!4d130.9338406!16s%2Fg%2F11c1wt3t64?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "OWL(営業時間状況で変わります)",
+  "address": "〒800-0025 福岡県北九州市門司区柳町２丁目２−２３",
+  "category": "居酒屋",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-2399ee0c3b/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2jeLkdHdlTOsmjq0rcFFaPUhQ0hifLE1DULwYLdoZiCfDSkvfRv5_AEwYO3jYgvoPKB3sgOI428qDogral8-B5pfgG3DWyzsseXxJhv9HYninhfMf0Fk3juS9xk8-i63wWCB3",
+   "what": "SPORTS BAR OWLの看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-2399ee0c3b/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrScm1XTsOMFGTIz1RTJiOzQnQ5fvcudvM1fcSmYkznfyNJl2DijnUWq-AopssOO6Fd-0VqxXNhRNlZst3vfKW2Pp8qsNIAtxFO8_GbsYZDVxS7EyjVXqKR7qsOoNzy1ev9ERzY4VFLJQw",
+   "what": "もつ鍋",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2399ee0c3b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SKGea_oJ9S9PqoxnvyzJ4yNj4eQKp36iHZPG894jTIM2OroG5qqakyX81uZZwi_Cj6bljsaC4Aeve10Mf-ZklUs-zSuT9Cj-nb2JI-SDeDKuLEqqJw7XIatEdOQmsyU8dA6dWmKg",
+   "what": "ユニフォームが飾られた席",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2399ee0c3b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYM1q-tuhI0ZLek82OZMIpQoL_ZVysopVgsungXYyXU69Euo8lWIcB2DrF-5oRujXXfYJheQ7LXx8cmEiBWYbLmCcYD6aX184MIQlo-uet9mE3ZYc4rs3AJy5TuprHw6NKVP0owg",
+   "what": "灯りのともるテーブル",
+   "width": 896,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2399ee0c3b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyRaIf_YntV0bbcuW09WL18QqmmV-kmL4vIPmaIiGC2Zxt7OVoKOiIY54lN22cajv7JzbMUtCWj7UM98G2r-18xnsBgD6QQAkt5HXLEizyY2xPhLAuA10b9X6LYTW8kY_EuRFY",
+   "what": "テレビのある店内の席",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "R1(2回め)。Google の店名は「OWL(営業時間状況で変わります)」で、記録の「OWL」(3文字)を含む。住所は柳町2丁目2-23で番地まで一致((い)の基準)。 【発注者が店名・住所・業種を見て採用 2026-10-09】"
 }

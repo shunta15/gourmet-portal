@@ -4,7 +4,42 @@
   "storeName": "久留米 和洋/創作酒場 晩餐-Bansun-",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B9%85%E7%95%99%E7%B1%B3%20%E5%92%8C%E6%B4%8B%2F%E5%89%B5%E4%BD%9C%E9%85%92%E5%A0%B4%20%E6%99%A9%E9%A4%90-Bansun-%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E5%A4%A9%E7%A5%9E%E7%94%BA152-4%20%E3%83%88%E3%83%9F%E3%82%BF%E3%83%A4%E3%83%93%E3%83%AB1F",
   "placeUrl": "https://www.google.com/maps/place/%E4%B9%85%E7%95%99%E7%B1%B3%E5%B1%85%E9%85%92%E5%B1%8B+%E5%92%8C%E6%B4%8B%2F%E5%89%B5%E4%BD%9C%E9%85%92%E5%A0%B4+%E6%99%A9%E9%A4%90-Bansun-/@33.3100264,130.5192568,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a571fd6a6261:0xe4500a4cc23f13c6!8m2!3d33.3100264!4d130.5192568!16s%2Fg%2F11wjpgnm74?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし(店名が完全一致でも、まるごと含むでもない)。住所は番地まで一致(久留米市天神町152-4)。記録「久留米 和洋/創作酒場 晩餐-Bansun-」と Google「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」は「居酒屋」が入っているかどうかの差で、同じ店の可能性は高いが、決まりでは通せない。 [Google マップ側: 店名「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」/ 住所「福岡県久留米市天神町１５２−４ 第6 富太 屋ビル101」]"
+  "matched": {
+    "name": "久留米居酒屋 和洋/創作酒場 晩餐-Bansun-",
+    "address": "福岡県久留米市天神町１５２−４ 第6 富太 屋ビル101",
+    "how": "address+name-contains"
+  },
+  "images": [
+    {
+      "slot": "h1",
+      "path": "/restaurants/fs/shop-r283/h1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkCQVtwEQJPOSxsCBjJAhvQRqDWZcSmGTPJOXDfoPoh3Xp7Sh7YG17lpcV4LeE1fMOPi9_6-e06aL9LiC9Nh1wpFIr3ozFvH6bLvLEaqjcvyC9vlGJ2TBYHxrmaaVFQK_zpdvHaSygRvnt=s1400",
+      "what": "カウンター席のある店内",
+      "width": 1400,
+      "height": 931,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h2",
+      "path": "/restaurants/fs/shop-r283/h2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SvlSiMDP12-9SlferRUd5udP2-kXh5PvTaXyXHm2Y1XzW9te5oTqoN2YL0Xkbs8DKFvSkZ0CFKiNVtExRR3d21sDSFfXK7LfbKvqmmEIOeeaEyTNEWmIeLKznTLZTizyU8EI0uOS0K3vwm=s900",
+      "what": "お造りの盛り合わせ",
+      "width": 702,
+      "height": 700,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h3",
+      "path": "/restaurants/fs/shop-r283/h3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SI4tXeR2BtPt-exIYgj8_K_ZJwZBjdMEJBuoirIZP-m2FjjJvuF8GmeCUzuAd4bSozAHCyYcZd_boZxNEMwpws8RBnEFGapw6HRbMiQzltsxtRnWncGPPkXAWZ_7nKKrfOmBVOjcIqIc--=s900",
+      "what": "テーブル席の店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "発注者が確認して通した(2026-10-09)。記録「久留米 和洋/創作酒場 晩餐-Bansun-」と Google「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」の名前のちがいを、発注者が同じ店とみなした。 Google マップの住所「福岡県久留米市天神町１５２−４ 第6 富太 屋ビル101」が記録の住所と番地まで一致することを確かめた。"
 }

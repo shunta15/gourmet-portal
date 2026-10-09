@@ -1,10 +1,47 @@
 {
-  "featureId": "蕎麦処一閑人",
-  "dir": "fs-aa3fef569d",
-  "storeName": "蕎麦処一閑人",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%87%A6%E4%B8%80%E9%96%91%E4%BA%BA%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E5%AE%AE%E3%83%8E%E9%99%A3%E7%94%BA%E4%BA%94%E9%83%8E%E4%B8%B8",
-  "placeUrl": "https://www.google.com/maps/place/%E8%95%8E%E9%BA%A6%E5%87%A6+%E4%B8%80%E9%96%91%E4%BA%BA/@33.3361118,130.5447276,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a3f84922e525:0x8e1420bba6847195!8m2!3d33.3361118!4d130.5447276!16s%2Fg%2F1ttytjhl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし・店を確かめられない: 住所が一致しない(Google: 〒839-0802 福岡県久留米市宮ノ陣町１５７７−７)"
+ "featureId": "蕎麦処一閑人",
+ "dir": "fs-aa3fef569d",
+ "storeName": "蕎麦処一閑人",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%95%8E%E9%BA%A6%E5%87%A6%E4%B8%80%E9%96%91%E4%BA%BA%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E5%AE%AE%E3%83%8E%E9%99%A3%E7%94%BA%E4%BA%94%E9%83%8E%E4%B8%B8",
+ "placeUrl": "https://www.google.com/maps/place/%E8%95%8E%E9%BA%A6%E5%87%A6+%E4%B8%80%E9%96%91%E4%BA%BA/@33.3361118,130.5447276,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a3f84922e525:0x8e1420bba6847195!8m2!3d33.3361118!4d130.5447276!16s%2Fg%2F1ttytjhl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "蕎麦処 一閑人",
+  "address": "〒839-0802 福岡県久留米市宮ノ陣町１５７７−７",
+  "category": "蕎麦店",
+  "how": "area+name-exact"
+ },
+ "images": [],
+ "note": "R1(2回め)。area は「久留米市宮ノ陣町五郎丸」。Google の住所は「久留米市宮ノ陣町1577-7」で町名(宮ノ陣町)は一致するが、「五郎丸」は Google の住所に入っていない(小字と解釈)。記事の「学校前駅から徒歩数分」は確かめていない。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+ "pendingImages": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-aa3fef569d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rz9jj05-J9B2tn8zP64P5qXmYmQs87kPkoTJC9j9_ETI8qa0hJ7hshkR7WsSvMmsNNhx3TgnMAzBC0HtryjuRi67kCpTAa_XREIWMNG5Zh5vDAH4_3fSh0bAd0C32B5pRGr6fbnOB1Yg0",
+   "what": "せいろ蕎麦と天ぷら",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-aa3fef569d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QT2KIcRCM_adthZ9RZNF8NEK2uxdo4yP4IH4-tH7hKgoxY55GtKhem5gB-qzFmONdWRWZ4pUaMju95JzQeuDhSOYbsFgKkFDDigj6V6n6Du4geYRppTWVkCckhpxeUqMtlAQCk",
+   "what": "庭を望む窓辺の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-aa3fef569d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TazH8LNNBgmoMX0N9StYOAhAUx_GAFrB0OpEL5wQnalJ8bpI2wMQM-1FmB3hhyAkkKegYRb32Mz1816iZhXI3W2qjnkbWweyl7YDZ-Qb3SImELv6q4-ypv3GPKWzU4u8cI-Q7sD2t7Mu0M",
+   "what": "蕎麦の看板のある外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ]
 }

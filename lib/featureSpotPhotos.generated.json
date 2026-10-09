@@ -159,6 +159,15 @@
       "5": "/restaurants/fs/fs-218c8fbfd4/p5.jpg"
     }
   },
+  "OWL": {
+    "spots": {
+      "1": "/restaurants/fs/fs-2399ee0c3b/p1.jpg",
+      "2": "/restaurants/fs/fs-2399ee0c3b/p2.jpg",
+      "3": "/restaurants/fs/fs-2399ee0c3b/p3.jpg",
+      "4": "/restaurants/fs/fs-2399ee0c3b/p4.jpg",
+      "5": "/restaurants/fs/fs-2399ee0c3b/p5.jpg"
+    }
+  },
   "OceanHarvestCocomo": {
     "spots": {
       "3": "/restaurants/fs/fs-1ba8951d52/p3.jpg",
@@ -367,6 +376,13 @@
       "5": "/restaurants/fs/fs-87cf903d9e/p5.jpg"
     }
   },
+  "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI": {
+    "spots": {
+      "3": "/restaurants/fs/fs-f62f306590/p3.jpg",
+      "4": "/restaurants/fs/fs-f62f306590/p4.jpg",
+      "5": "/restaurants/fs/fs-f62f306590/p5.jpg"
+    }
+  },
   "あそび割烹賢太朗": {
     "spots": {
       "3": "/restaurants/fs/fs-d19a8fa11a/p3.jpg",
@@ -523,6 +539,13 @@
       "3": "/restaurants/fs/fs-537c533dc5/p3.jpg",
       "4": "/restaurants/fs/fs-537c533dc5/p4.jpg",
       "5": "/restaurants/fs/fs-537c533dc5/p5.jpg"
+    }
+  },
+  "くすの樹": {
+    "spots": {
+      "3": "/restaurants/fs/fs-cd8eddd78a/p3.jpg",
+      "4": "/restaurants/fs/fs-cd8eddd78a/p4.jpg",
+      "5": "/restaurants/fs/fs-cd8eddd78a/p5.jpg"
     }
   },
   "こあの助": {

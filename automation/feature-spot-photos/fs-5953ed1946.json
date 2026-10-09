@@ -3,8 +3,8 @@
   "dir": "fs-5953ed1946",
   "storeName": "梟",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%A2%9F%20%E7%86%8A%E6%9C%AC%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%8A%B1%E7%95%91%E7%94%BA",
-  "placeUrl": null,
+  "placeUrl": "https://www.google.com/maps/place/%E6%A2%9F/@32.8017074,130.7069663,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f40d0e0c30d3:0xb8833f10fea5038c!8m2!3d32.8017074!4d130.7069663!16s%2Fg%2F11bwhb2tlw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
   "matched": null,
   "images": [],
-  "note": "店を確かめられない(迷ったので写真なし): 店名「梟」の完全一致+熊本市中央区花畑町で形式上は一致するが、マップは「RS-5ビル 3階A」、記事は「ビルの2階」「つくね・チーズダッカルビ」で、マップの写真は刺身が中心(別の店の可能性を排除できない)(マップで着いた店: 梟 / 〒860-0806 熊本県熊本市中央区花畑町１１−２９ RS−5ビル ３階A)"
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「梟」・住所は〒860-0806 熊本県熊本市中央区花畑町11-29 RS-5ビル 3階A・業種は居酒屋。名前(1文字)と町名は一致するが、Google は3階・記事は「ビルの2階」で階がちがい、1回めのメモ(写真が刺身中心で記事の品書きと合わない)の理由が残る。"
 }

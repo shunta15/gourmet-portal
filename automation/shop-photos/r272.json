@@ -4,7 +4,42 @@
   "storeName": "八尾駅前珈琲",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%B0%BE%E9%A7%85%E5%89%8D%E7%8F%88%E7%90%B2%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%85%AB%E5%B0%BE%E5%B8%82%E5%AE%89%E4%B8%AD%E7%94%BA3-7-6%20%E6%B8%85%E6%B0%B4%E6%9C%AC%E5%BA%97%E3%83%93%E3%83%AB1F",
   "placeUrl": "https://www.google.com/maps/place/%E5%85%AB%E5%B0%BE%E9%A7%85%E5%89%8D%E7%8F%88%E7%90%B2/@34.618095,135.5968865,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d8ab948231c9:0x5d2b23c3e7838838!8m2!3d34.618095!4d135.5968865!16s%2Fg%2F1tpbbvqm?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "写真なし(住所の確認が決まりどおりにできない)。Google マップの住所は「大阪府八尾市７ 八尾市安中町３丁目７−６ 清水ビル1F」と、先頭に余計な「八尾市７」が付いた崩れた表記で、そのままでは記録の住所と並びが合わない(安中町3丁目7-6 の部分は記録と同じ。店名は完全一致)。同じ店の可能性は非常に高い。 [Google マップ側: 店名「八尾駅前珈琲」/ 住所「大阪府八尾市７ 八尾市安中町３丁目７−６ 清水ビル1F」]"
+  "matched": {
+    "name": "八尾駅前珈琲",
+    "address": "大阪府八尾市７ 八尾市安中町３丁目７−６ 清水ビル1F",
+    "how": "address+name-exact"
+  },
+  "images": [
+    {
+      "slot": "h1",
+      "path": "/restaurants/fs/shop-r272/h1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLFw-iTJh_G7y5p4h4pUexw1lJMrrNJwsat276Do527tzBCNtxLKS9R3VE6-oITqVdGUIcHCI2MbCizn8-4uOfEorcOyRvwMRpf3zryABdZNpCRJzPiHK_LTTy_rfwSxMIoj9EsPH8VsZd=s1400",
+      "what": "赤い看板の店の外観",
+      "width": 1232,
+      "height": 924,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h2",
+      "path": "/restaurants/fs/shop-r272/h2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4-WEXsLzCpNGa4C6QxU7whG7rfxLVEwOaVn1ikS_3KogxbjbbSgVQTpgrmqpnabM075SXVzOQUmODJa0mhl_6v9odcABqTjCDHvlKC3F9aq7Ewmzx74GQEVuv-hbkVxztiyiozA=s900",
+      "what": "カウンターとテーブルの店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "h3",
+      "path": "/restaurants/fs/shop-r272/h3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SianAO0z3nbLEQr8CylYvPKaFQjhxA6fYALMiSQioahAAMQMQILM3hH2XRTx-68fYjLPgoRrZS1fIOK-KLjZXTkafxWHcz_-cE2lf09LTIOwpluWn1NzE1X8kNHfuniKfdBoWM=s900",
+      "what": "コーヒーとスパゲッティ",
+      "width": 900,
+      "height": 676,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "発注者が確認して通した(2026-10-09)。店名は完全一致。 Google マップの住所は「大阪府八尾市７ 八尾市安中町３丁目７−６ 清水ビル1F」で、頭の「八尾市７」を表示の崩れとみなし、残りの「安中町3丁目7-6」が記録の住所と番地まで一致することを確かめた。"
 }

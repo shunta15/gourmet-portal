@@ -119,6 +119,16 @@
     "/restaurants/fs/shop-r262/h2.jpg",
     "/restaurants/fs/shop-r262/h3.jpg"
   ],
+  "r263": [
+    "/restaurants/fs/shop-r263/h1.jpg",
+    "/restaurants/fs/shop-r263/h2.jpg",
+    "/restaurants/fs/shop-r263/h3.jpg"
+  ],
+  "r265": [
+    "/restaurants/fs/shop-r265/h1.jpg",
+    "/restaurants/fs/shop-r265/h2.jpg",
+    "/restaurants/fs/shop-r265/h3.jpg"
+  ],
   "r266": [
     "/restaurants/fs/shop-r266/h1.jpg",
     "/restaurants/fs/shop-r266/h2.jpg",
@@ -148,6 +158,11 @@
     "/restaurants/fs/shop-r271/h1.jpg",
     "/restaurants/fs/shop-r271/h2.jpg",
     "/restaurants/fs/shop-r271/h3.jpg"
+  ],
+  "r272": [
+    "/restaurants/fs/shop-r272/h1.jpg",
+    "/restaurants/fs/shop-r272/h2.jpg",
+    "/restaurants/fs/shop-r272/h3.jpg"
   ],
   "r273": [
     "/restaurants/fs/shop-r273/h1.jpg",
@@ -193,6 +208,11 @@
     "/restaurants/fs/shop-r282/h1.jpg",
     "/restaurants/fs/shop-r282/h2.jpg",
     "/restaurants/fs/shop-r282/h3.jpg"
+  ],
+  "r283": [
+    "/restaurants/fs/shop-r283/h1.jpg",
+    "/restaurants/fs/shop-r283/h2.jpg",
+    "/restaurants/fs/shop-r283/h3.jpg"
   ],
   "r284": [
     "/restaurants/fs/fs-31ceb9d487/hero.jpg",
@@ -428,5 +448,10 @@
     "/restaurants/fs/fs-65136b3a1c/p2.jpg",
     "/restaurants/fs/fs-65136b3a1c/p3.jpg",
     "/restaurants/fs/fs-65136b3a1c/p4.jpg"
+  ],
+  "r82": [
+    "/restaurants/fs/shop-r82/h1.jpg",
+    "/restaurants/fs/shop-r82/h2.jpg",
+    "/restaurants/fs/shop-r82/h3.jpg"
   ]
 }

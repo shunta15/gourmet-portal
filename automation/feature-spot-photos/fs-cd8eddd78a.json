@@ -1,10 +1,46 @@
 {
-  "featureId": "くすの樹",
-  "dir": "fs-cd8eddd78a",
-  "storeName": "くすの樹",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%99%E3%81%AE%E6%A8%B9%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A6%E8%94%B5%E7%94%BA12-1%20AD%E3%83%93%E3%83%AB2%E9%9A%8E",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店を確かめられない: マップの店名は「四季彩菜 くすの樹」で、記録の店名「くすの樹」と完全一致ではない(住所は武蔵町12-1 ADビル2階で一致)。ルールどおり写真なし(マップで着いた店: 四季彩菜 くすの樹 / 〒920-0855 石川県金沢市武蔵町１２−１ ＡＤビル 2階)"
+ "featureId": "くすの樹",
+ "dir": "fs-cd8eddd78a",
+ "storeName": "くすの樹",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%99%E3%81%AE%E6%A8%B9%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A6%E8%94%B5%E7%94%BA12-1%20AD%E3%83%93%E3%83%AB2%E9%9A%8E",
+ "placeUrl": "https://www.google.com/maps/place/%E5%9B%9B%E5%AD%A3%E5%BD%A9%E8%8F%9C+%E3%81%8F%E3%81%99%E3%81%AE%E6%A8%B9/@36.571497,136.6543541,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8337018dc7b49:0xeed7e412b2637163!8m2!3d36.571497!4d136.6543541!16s%2Fg%2F1jglxd9hb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "四季彩菜 くすの樹",
+  "address": "〒920-0855 石川県金沢市武蔵町１２−１ ＡＤビル 2階",
+  "category": "和食店",
+  "how": "address+name-contains"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-cd8eddd78a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tdzu5TP--yD6tLbi25ljiXbfqBAIrX-VCMMJL4wF86zcn-vmsTyvexSwexRiWV2TRoos1bHq8VajI0FuGKaDMkADj2Dt5rPXPys0_e_YXaJ5p8rQAyML7rmQ_tT5TV6khy7ZUQv7Nhgtw",
+   "what": "季節の盛り合わせ膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-cd8eddd78a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sil-y0DDngCYFnR_gkhRR30Ww7vw77YLSQrm6RfjxmlwTf53VUFPs9SGmaTkelM_-d-BhShnUDEyPG8Ftfjc2yKZr47Htu_II-Lju6FWYfV4lgnLubDZHmbv_iwrhDPB36Gdqoow",
+   "what": "カウンター席と酒棚",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-cd8eddd78a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZ4wdigP8ezLah92PJ06NCnF8NMsHUrueN5tEZnmhlaS7_3euDuge2DO5-wqfo5Jw4EGLqgVG_E7GYkMeuTybRJrgTLufvoj3YdVF3qoDplOEZeAmOscPubmL6CDzuFI-Jn_qA",
+   "what": "カウンターの並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "R1(2回め)。Google の店名は「四季彩菜 くすの樹」で、記録「くすの樹」を含む。住所は武蔵町12-1 ADビル 2階で番地・階まで一致((い)の基準)。外観の写真が無く、ポイント5は店内入口付近の写真。 【発注者が店名・住所・業種を見て採用 2026-10-09】"
 }

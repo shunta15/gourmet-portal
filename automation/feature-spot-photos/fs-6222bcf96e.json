@@ -1,10 +1,47 @@
 {
-  "featureId": "寿司美奈吉",
-  "dir": "fs-6222bcf96e",
-  "storeName": "寿司美奈吉",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AF%BF%E5%8F%B8%E7%BE%8E%E5%A5%88%E5%90%89%20%E9%96%80%E7%9C%9F%E5%B8%82%E3%83%BB%E5%A4%A7%E5%92%8C%E7%94%B0",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店を確かめられない(迷ったので写真なし): 店名はマップ「寿司 美奈吉」と空白をそろえると一致するが、記録の area は「門真市・大和田」で、マップの住所は門真市野里町39-3(町名が一致しない。記事は大和田駅徒歩8分と書いている)(マップで着いた店: 寿司 美奈吉 / 〒571-0079 大阪府門真市野里町３９−３)"
+ "featureId": "寿司美奈吉",
+ "dir": "fs-6222bcf96e",
+ "storeName": "寿司美奈吉",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AF%BF%E5%8F%B8%E7%BE%8E%E5%A5%88%E5%90%89%20%E9%96%80%E7%9C%9F%E5%B8%82%E3%83%BB%E5%A4%A7%E5%92%8C%E7%94%B0",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AF%BF%E5%8F%B8+%E7%BE%8E%E5%A5%88%E5%90%89/@34.738891,135.6029296,17z/data=!3m1!4b1!4m6!3m5!1s0x60011e28619f3fef:0xc8fb1d0a4d3aa93f!8m2!3d34.738891!4d135.6029296!16s%2Fg%2F1tfh4kk5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "寿司 美奈吉",
+  "address": "〒571-0079 大阪府門真市野里町３９−３",
+  "category": "寿司店",
+  "how": "area+name-exact"
+ },
+ "images": [],
+ "note": "R1(2回め)。area は「門真市・大和田」(駅名・通称)。Google の住所は野里町39-3で大和田は入っていないが、Google マップ上の座標で「大和田駅」から直線約440m(記事は徒歩8分)=矛盾なしと判断(住所欄・最寄り駅の表示そのものには駅名は出ていない)。 【保留 2026-10-09: 番地までの住所で確かめられていないので、別の手がかり(電話・公式サイト・建物名)で裏づけが取れるまで写真を出さない(オーナー指示「間違いがないように」)】",
+ "pendingImages": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6222bcf96e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2tLCiiBefzkaV9VZ2OEKIxMTx7eeiRwTTnKY_O3aMm5_54NBagWEOZoBK4mEAioprA5u2NdNCgaR3XLgbA5j_AzIFLC82NrhSG9N11UyzM3BC43y-vOWqRmtHyhbxHLP1kE4z",
+   "what": "飾り巻き寿司",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6222bcf96e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QI2DDv-pzINIHSbtLioJq9e2gzRgrxX-ijpXTEj-3Yu7Ying8CMGQKbPgcxrvJjqNNXHC_atS4zmYTxMpCWGPbl8LBtYefR1DXL2qxgWbtF1JeFkVYAuCEjcR9JzT46cRahrwqsw",
+   "what": "座敷の長い宴席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6222bcf96e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYrSvr11Ws0QJv073hWdAF7yASy-JgnrGi4Q4QEisnaHRGxKG2DW3Gyu0jMYWH957Anr_6-XKa4zHm-rbMMZyFklBhAGLQOmighdi1WHUd1f2Mimkk_PUNXPupqR9SgTOGd0zxd7WoXLlG",
+   "what": "赤い外壁の店先",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ]
 }
