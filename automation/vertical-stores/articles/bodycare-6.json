@@ -1,0 +1,249 @@
+{
+  "key": "bodycare-6",
+  "headline": "草香江の、手技のみをうたう完全予約制の整体院",
+  "lede": "福岡市中央区草香江にある整体院です。公式サイトは、道具を使わず手技のみで行い、揉みほぐしやマッサージはしないと案内しています。地下鉄七隈線の六本松駅から徒歩5分で、完全予約制です。",
+  "sections": [
+    {
+      "heading": "施術の進め方",
+      "body": "公式サイトは、道具を使わず手技のみで行うと案内し、揉みほぐしやマッサージ、骨を鳴らす矯正はしないとしています。軸にするのはアプライドキネシオロジーという筋反射のシステムで、リラクゼーション目的ではないとも明記されています。初回は45〜60分、2回目以降は約15分です。持ち物はタオルと清潔な靴下で、更衣室もあります。"
+    },
+    {
+      "heading": "予約と支払い",
+      "body": "完全予約制で、LINEか電話で受け付けています。混み合うため、希望日の数日前から1週間前の予約を案内しています。営業時間に間に合わない場合も、事前に予約すれば希望の時間に施術すると案内されています。保険診療は行わず、健康保険証は使えません。支払いは現金で、予約の5〜10分前の来院が求められています。"
+    },
+    {
+      "heading": "場所と休み",
+      "body": "住所は福岡市中央区草香江2-8-3 草香江スカイハイツ201。地下鉄七隈線の六本松駅から徒歩5分です。駐車場は保育園の真横にあり、使用中なら近隣のコインパーキングを使います。定休日は水曜と木曜で、土曜・日曜・祝日も営業しますが、セミナーなどで臨時に休むことがあります。院内は禁煙です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "整体 初回",
+      "price": "9,000円(税込)"
+    },
+    {
+      "name": "整体 2回目以降",
+      "price": "7,000円(税込)",
+      "minutes": 15
+    },
+    {
+      "name": "初回特別価格(毎月先着5名様限定)",
+      "price": "3,980円(税込)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "土日営業",
+      "factIndex": 5
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "福岡県福岡市中央区草香江2-8-3 草香江スカイハイツ201にある",
+      "source": "https://www.fc-seitai.com/access/",
+      "quote": "福岡県福岡市中央区草香江2-8-3 草香江スカイハイツ201",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "地下鉄七隈線の六本松駅から徒歩5分",
+      "source": "https://www.fc-seitai.com/access/",
+      "quote": "地下鉄（七隈線）六本松駅より徒歩5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は保育園(クレシュ六本松)の真横にある",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "駐車場はクレシュ六本松という保育園の真横にあります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場が使用中の場合は近隣のコインパーキングを使い、料金は利用者負担",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "近隣の有料駐車場、コインパーキングをご利用ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車料金は利用者負担",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "有料駐車代はお客様負担になります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は水曜と木曜で、土曜・日曜・祝日・祭日は営業",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "定休日 ： 水曜、木曜日（土曜・日曜・祝日・祭日は営業！）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "研修会やセミナー等で休むことがある",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "研修会やセミナー等で休みを頂く場合がございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制で、LINEか電話で予約する",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "完全予約制ですので、LINEまたは電話092-771-8255でご予約ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約が混み合っていて、数日前〜1週間前の予約を案内している",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "希望日より数日前~1週間前のご予約をおすすめしております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間に間に合わない人も、事前に予約すれば希望の時間に施術する",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "事前にご予約して頂ければご希望の時に施術させて頂きます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回の整体料金は9,000円(税込)",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "初回 9,000円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2回目以降の整体料金は7,000円(税込)",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "2回目以降 7,000円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "毎月先着5名限定の初回特別価格が3,980円(税込)",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "≪毎月先着5名様限定≫",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回特別価格は3,980円(税込)",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "初回特別価格5,020円割引で3,980円(税込)となります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回の時間は45分〜60分",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "初回の時間は45分～60分です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2回目以降の時間は約15分",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "2回目以降の時間は約15分です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険診療は行わず、健康保険証は使えない",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "保険診療は致しませんので",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "お支払いは、現金でお願い致します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道具は使わず、手技のみで行うと案内している",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "道具は使わず、手技のみで",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "筋肉の揉みほぐしやマッサージは行わない",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "筋肉の揉みほぐしやマッサージは行いません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "骨をボキッと矯正することは行わない",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "骨をボキッと 矯正することも行っておりません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リラクゼーション目的の整体ではないと案内している",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "当院はリラクゼーション目的の整体ではありません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アプライドキネシオロジー(AK)という筋反射のシステムを整体の軸にするとうたう",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "アプライドキネシオロジー（ＡＫ）というアメリカの整体法・筋反射のシステムを整体の軸にして",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "持ち物はタオル(頭の下に敷く普通のサイズ)",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "頭の下に敷くためのものですので、普通のサイズで結構です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "服装は動きやすいやわらかい素材のパンツスタイル",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "やわらかい素材のパンツスタイルでお願いします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "更衣室がある",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "更衣室をご用意しておりますので、ご利用ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "清潔な靴下に履き替える",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "施術前に履き替えるか、新しい靴下に履き替えてから来てください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約時間の5分前〜10分前に来院する",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "予約時間の5分前～10分前にご来院ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "遅れそうなときやキャンセルは早急に連絡する",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "遅れそうなときやキャンセルの場合、わかった時点で、早急に連絡してください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "院内は禁煙",
+      "source": "https://www.fc-seitai.com/information/",
+      "quote": "院内は禁煙です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "子供連れで来院できる。物の破損や施術の支障には親が注意する",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "ただし、器物の破損や施術の支障等には親御さんが注意してあげて下さいね。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "家族は待合室で待てる",
+      "source": "https://www.fc-seitai.com/faq/",
+      "quote": "家族の方は待合室で本や雑誌を読んで待ってもらうことが可能です。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.fc-seitai.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4758893518090285324"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない: 公式は「10:00〜20:00、定休日は水・木(土日祝は営業)」だが、Googleマップは月・日が10:00〜14:00、火・金・土が10:00〜20:00(水・木は定休日)で食い違う。定休日(水・木)と土日営業は両方で一致するため書いた。タグ「土日営業」は公式の案内とGoogleマップ(土・日とも営業)による。「駅近」は六本松駅から徒歩5分による。「夜遅くまで営業」は20時閉店のため付けない。書かなかったこと: 首こり・頚椎ヘルニア・腰痛・坐骨神経痛など症状を軸にしたトップと各症状ページ、適応症例の一覧、お客様の声・症例報告・のべ50,000人などの実績、自然治癒力・自律神経の調整・「根本改善」などの効き目の説明、院長の氏名・経歴、妊婦・小学生〜高齢者に関するFAQ、施術後の反応の説明、「東京や大阪のセミナーに毎月参加」「最先端」「全く負担がない」などの自己評価。公式サイトは症状・効き目の記述が大半で、それを除いて書いた(事実は30件ほど)。ビル1階の「WASHハウス」の記載は意味が確認できず省いた。初回特別価格は「毎月先着5名様限定」の条件つき(初回の9,000円から5,020円割引)で、menusに条件を付した。2回目以降の約15分は公式の表記。駐車場の「3番」は番号だけで台数・料金の記載が無いため書いていない。"
+}
