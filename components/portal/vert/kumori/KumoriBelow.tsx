@@ -196,17 +196,17 @@ export default function KumoriBelow(p: BelowProps) {
       </section>
 
       {/* 4 掲載準備中の説明(見出しとリードは奥の場面にある。ここでは重ねない) */}
-      <section className="k-sec k-sec-card" aria-label="掲載状況">
+      <section className="k-sec k-sec-card" aria-label="掲載について">
         <div className="k-edge" aria-hidden="true" />
         <div className="k-card">
           <i className="k-clip k-clip-l" aria-hidden="true" />
           <i className="k-clip k-clip-r" aria-hidden="true" />
           <p className="k-kick k-kick-ink">Information</p>
-          <p className="k-note">
-            {p.total > 0
-              ? `現在の掲載は ${p.total} 件です。`
-              : `${p.verticalName}の掲載は、まだありません（現在 0 件）。掲載できる店が確認でき次第、ここに並びます。`}
-          </p>
+          {p.total === 0 && (
+            <p className="k-note">
+              {`${p.verticalName}の掲載は、まだありません（現在 0 件）。掲載できる店が確認でき次第、ここに並びます。`}
+            </p>
+          )}
           {p.hasPolicy && (
             <p className="k-note k-note-sub">
               掲載方針：効果・効能をうたう表現は使わず、確認できた事実（メニュー・営業時間・設備など）だけを載せます。

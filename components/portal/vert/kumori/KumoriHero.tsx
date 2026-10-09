@@ -32,8 +32,7 @@ function DeepCopy({ lead, total }: { lead: string; total: number }) {
   return (
     <>
       <p className="k-deep-eye">MACHINOWA Beauty</p>
-      <h2 className="k-deep-h">{total > 0 ? "掲載状況" : "掲載準備中です"}</h2>
-      {total > 0 && <p className="k-deep-lead">{`現在の掲載は ${total} 件です。`}</p>}
+      <h2 className="k-deep-h">{total > 0 ? "街のサロン案内" : "掲載準備中です"}</h2>
       <p className="k-deep-lead">{lead}</p>
     </>
   );
@@ -795,7 +794,7 @@ export default function KumoriHero({ entries, lead, total }: Props) {
             </h1>
             <p className="k-mark">
               <span className="k-eyebrow">MACHINOWA</span>
-              <span className="k-soon">{total > 0 ? "掲載中" : "掲載準備中"}</span>
+              {total === 0 && <span className="k-soon">掲載準備中</span>}
             </p>
 
             <nav className="k-menu" aria-label="種類">
@@ -827,7 +826,7 @@ export default function KumoriHero({ entries, lead, total }: Props) {
         </div>
       </div>
 
-      <section className="k-after" aria-label={total > 0 ? "掲載状況" : "掲載準備中"}>
+      <section className="k-after" aria-label={total > 0 ? "街のサロン案内" : "掲載準備中"}>
         {KUMORI_PHOTOS && (
           // eslint-disable-next-line @next/next/no-img-element
           <img className="k-after-photo" src={src(1600)} alt="" loading="lazy" decoding="async" />
