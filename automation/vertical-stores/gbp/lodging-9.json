@@ -1,0 +1,59 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 9,
+  "sheet": {
+    "name": "よしおかや",
+    "address": "福井県三方上中郡若狭町食見１５−１０",
+    "url": "https://maps.app.goo.gl/XZXPHG2wFJ4X4Fjz9",
+    "type": "宿泊施設",
+    "d1": "民宿",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E3%82%88%E3%81%97%E3%81%8A%E3%81%8B%E3%82%84/@35.5646942,135.842739,645m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6001dc6bef2acad5:0x424fe9a30fc6a51!5m2!4m1!1i2!8m2!3d35.5646942!4d135.842739!16s%2Fg%2F1v44dwr_?entry=tts&g_ep=EgoyMDI1MTIwOC4wIPu8ASoASAFQAw%3D%3D&skid=63113143-0ec1-4099-9873-7556de89f8ce",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "MINSHUKUよしおかや",
+      "address": "福井県三方上中郡若狭町食見１５−１０",
+      "url": "https://www.google.com/maps/place/%E3%82%88%E3%81%97%E3%81%8A%E3%81%8B%E3%82%84/@35.5646942,135.842739,645m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6001dc6bef2acad5:0x424fe9a30fc6a51!5m2!4m1!1i2!8m2!3d35.5646942!4d135.842739!16s%2Fg%2F1v44dwr_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%88%E3%81%97%E3%81%8A%E3%81%8B%E3%82%84/@35.5646942,135.842739,645m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6001dc6bef2acad5:0x424fe9a30fc6a51!5m2!4m1!1i2!8m2!3d35.5646942!4d135.842739!16s%2Fg%2F1v44dwr_?entry=tts&g_ep=EgoyMDI1MTIwOC4wIPu8ASoASAFQAw%3D%3D&skid=63113143-0ec1-4099-9873-7556de89f8ce",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "福井県三方上中郡若狭町食見１５−１０",
+    "place": "福井県三方上中郡若狭町食見１５−１０",
+    "sheetNorm": "福井県三方上中郡若狭町食見15-10",
+    "placeNorm": "福井県三方上中郡若狭町食見15-10",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "MINSHUKUよしおかや",
+    "address": "福井県三方上中郡若狭町食見１５−１０",
+    "category": null,
+    "lat": 35.5646942,
+    "lng": 135.842739,
+    "gbpUrl": "https://maps.google.com/?cid=298643413513562705",
+    "phone": "0770-46-1786",
+    "website": "http://m-yoshiokaya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「いいとこ、掘りだくさん。キャンペーン」のご案内 6月12日～7月12日の期間にご宿泊いただいたお客様に 福井県内のお店でご利用いただける 一人あたり5,000円分の電子クーポンをプレゼントさせていただきます。 ※宿泊金額を割引きするクーポンではありません。 ※予算上限に達し次第、終了となりますのでぜひお早めにご利用ください。 ーーー 【期間中の予約状況】 ◆ 若狭を編む、シェフズコース宿泊プラン ◇ 舟盛などの民宿料理 ◎ どちらでも可 ✕ 空室なし 6/12（金）◎ 6/13（土）◆ 6/14（日）◎ 6/15（月）◎ 6/16（火）✕ 6/17（水）✕ 6/18（木）✕ 6/19（金）✕ 6/20（土）◇ 6/21（日）◇ 6/22（月）◇ 6/23（火）◎ 6/24（水）◆ 6/25（木）◎ 6/26（金）◎ 6/27（土）◆ 6/28（日）◆ 6/29（月）◆ 6/30（火）✕ 7/1（水）◇ 7/2（木）◇ 7/3（金）◇ 7/4（土）✕ 7/5（日）◇ 7/6（月）◇ 7/7（火）◇ 7/8（水）✕ 7/9（木）◇ 7/10（金）◎ 7/11（土）✕ 7/12（日）◎ ※最新の予約情報は予約サイトよりご確認ください。 ーーー 詳細・ご予約はプロフィールリンクから。 #若狭 #MINSHUKUよしおかや #福井に泊まろう #いいとこ掘りだくさん #旅行\n2026/06/"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:00:37.180Z",
+  "seconds": 5
+}

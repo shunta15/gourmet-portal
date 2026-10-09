@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 46,
+  "sheet": {
+    "name": "FamiliaR（ファミリア）",
+    "address": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=cee9d4942178ca18&hl=ja&kgmid=/g/11rk022ct6&q=FamiliaR%EF%BC%88%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%82%A2%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ff2c684959a50771&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11rk022ct6",
+  "queries": [
+    "FamiliaR（ファミリア） 北海道帯広市西９条南１５丁目2 SmartⅡ 103号室"
+  ],
+  "candidates": [
+    {
+      "name": "FamiliaR（ファミリア）",
+      "address": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+      "url": "https://www.google.com/maps/place/FamiliaR%EF%BC%88%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%82%A2%EF%BC%89/@42.9144629,143.1920653,17z/data=!3m1!4b1!4m6!3m5!1s0x5f739953f54bb905:0xea5181e129add5d1!8m2!3d42.9144629!4d143.1920653!16s%2Fg%2F11rk022ct6",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/FamiliaR%EF%BC%88%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%82%A2%EF%BC%89/@42.9144629,143.1920653,17z/data=!3m1!4b1!4m6!3m5!1s0x5f739953f54bb905:0xea5181e129add5d1!8m2!3d42.9144629!4d143.1920653!16s%2Fg%2F11rk022ct6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+    "place": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+    "sheetNorm": "北海道帯広市西9条南15-2SmartII103室",
+    "placeNorm": "北海道帯広市西9条南15-2SmartII103室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "FamiliaR（ファミリア）",
+    "address": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+    "category": "脱毛サービス",
+    "lat": 42.9144629,
+    "lng": 143.1920653,
+    "gbpUrl": "https://maps.google.com/?cid=16884419282055583185",
+    "phone": "070-2302-1289",
+    "website": "https://www.familiar-obihiro.com/",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:58:20.799Z",
+  "seconds": 5.5
+}

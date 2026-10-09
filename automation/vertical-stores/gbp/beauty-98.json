@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 98,
+  "sheet": {
+    "name": "新宿コットンヘアセット・ヘアエクステ",
+    "address": "東京都新宿区新宿４丁目１番１９号　冨美ビル　(フミビル)　１F",
+    "url": "https://beauty.hotpepper.jp/slnH000587354/?cstt=160",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "新宿コットンヘアセット・ヘアエクステ 東京都新宿区新宿４丁目１番１９号　冨美ビル　(フミビル)　１F"
+  ],
+  "candidates": [
+    {
+      "name": "新宿コットン·ヘアセット·ヘアエクステ専門店",
+      "address": "東京都新宿区新宿４丁目１−１９ 冨美ビル(フミビル 1階",
+      "url": "https://www.google.com/maps/place/%E6%96%B0%E5%AE%BF%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3%C2%B7%E3%83%98%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%C2%B7%E3%83%98%E3%82%A2%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E5%B0%82%E9%96%80%E5%BA%97/data=!4m7!3m6!1s0x60188d38d255219b:0x7fcd699768d30b3d!8m2!3d35.6886493!4d139.702828!16s%2Fg%2F11sy1d055k!19sChIJmyFV0jiNGGARPQvTaJdpzX8",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%96%B0%E5%AE%BF%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3%C2%B7%E3%83%98%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%C2%B7%E3%83%98%E3%82%A2%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E5%B0%82%E9%96%80%E5%BA%97/data=!4m7!3m6!1s0x60188d38d255219b:0x7fcd699768d30b3d!8m2!3d35.6886493!4d139.702828!16s%2Fg%2F11sy1d055k!19sChIJmyFV0jiNGGARPQvTaJdpzX8?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都新宿区新宿４丁目１番１９号　冨美ビル　(フミビル)　１F",
+    "place": "東京都新宿区新宿４丁目１−１９ 冨美ビル(フミビル 1階",
+    "sheetNorm": "東京都新宿区新宿4-1-19冨美ビル(フミビル)1F",
+    "placeNorm": "東京都新宿区新宿4-1-19冨美ビル(フミビル1階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "新宿コットン·ヘアセット·ヘアエクステ専門店",
+    "address": "東京都新宿区新宿４丁目１−１９ 冨美ビル(フミビル 1階",
+    "category": "美容院",
+    "lat": 35.6886493,
+    "lng": 139.702828,
+    "gbpUrl": "https://maps.google.com/?cid=9209132912062171965",
+    "phone": "03-6457-7310",
+    "website": "https://beauty.hotpepper.jp/slnH000587354/",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:01:15.908Z",
+  "seconds": 4.1
+}

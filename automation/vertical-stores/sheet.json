@@ -1,0 +1,6004 @@
+{
+ "ビューティ": [
+  {
+   "row": 2,
+   "name": "BAGUS HAIR",
+   "address": "福岡県福岡市西区姪の浜１丁目２２−３",
+   "url": "https://www.google.com/maps?cid=12525733046906313665",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 3,
+   "name": "Salon Refino",
+   "address": "福岡県京都郡苅田町殿川町１−３２ 白川ビル １階",
+   "url": "https://www.google.com/search?q=Salon%20Refino%EF%BC%88%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%20%E3%83%AC%E3%83%95%E3%82%A3%E3%83%BC%E3%83%8E%EF%BC%89%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%BA%AC%E9%83%BD%E9%83%A1%E8%8B%85%E7%94%B0%E7%94%BA%E6%AE%BF%E5%B7%9D%E7%94%BA%EF%BC%91%EF%BC%8D%EF%BC%93%EF%BC%92%20%E7%99%BD%E5%B7%9D%E3%83%93%E3%83%AB%20%EF%BC%91%E9%9A%8E",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 4,
+   "name": "美容室 ヴィップ クリエイティブ ヘアー インターナショナル 元麻布",
+   "address": "東京都港区元麻布２丁目１−２１ ＹＳビル ２Ｆ",
+   "url": "https://www.google.com/maps?cid=14326829657280848927",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 5,
+   "name": "ESPERANZA NAIL エスペランサネイル",
+   "address": "東京都足立区本木南町１３−１",
+   "url": "https://share.google/80iJfJRjdD5mcJ3ER",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 6,
+   "name": "ディメンションサロン kOKo",
+   "address": "東京都中野区江古田3丁目2-7",
+   "url": "https://share.google/SakvXuW5bgEomnfvG",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 7,
+   "name": "aquabell-",
+   "address": "鹿児島県鹿児島市上之園町26-7 トーカンマンション上之園１F‐B",
+   "url": "https://maps.app.goo.gl/J1jii8sm6pPivdH5A",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 8,
+   "name": "sayaPadoma",
+   "address": "神奈川県藤沢市辻堂２丁目６−１１ ヴィラ辻堂 104",
+   "url": "https://share.google/nTwa3ei62Gs974RD5",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 9,
+   "name": "Private salon And．",
+   "address": "東京都練馬区上石神井４丁目２−２０ 田中ビル 2階",
+   "url": "https://share.google/4Uz7hngep0b15t0Il",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 10,
+   "name": "Beauty Salon SONATA",
+   "address": "〒410-0048 静岡県沼津市新宿町１９−４",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3dd5e06a00554f5a&hl=ja&sxsrf=AE3TifO-31fW7YOftV0iuRnvTPhthvAClQ:1758073386217&kgmid=/g/11tg8p3gtk&q=Beauty+Salon+SONATA&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ae5b1ce6579c3a60&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 11,
+   "name": "アスプリール",
+   "address": "〒703-8221 岡山県岡山市中区長岡９８−１２ プラザハウス東岡山 102",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d03e2024ca5b9e89&hl=ja&sxsrf=AE3TifN_69iM7Zay4Tz3EorAFmJd3jnTjg:1758078404344&kgmid=/g/11ggr6m64h&q=%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3(%E3%82%A2%E3%82%B9%E3%83%97%E3%83%AA%E3%83%BC%E3%83%AB)&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ff81ff7a91d4f3fd&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 12,
+   "name": "AK Esthetics",
+   "address": "熊本県熊本市中央区新市街１２−２１ 須美ビル",
+   "url": "https://share.google/jFVNZxazA19jpIkJb",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 13,
+   "name": "エステルームかれん(ﾊｰﾌﾞﾋﾟｰﾘﾝｸﾞ専門ｻﾛﾝ)",
+   "address": "福岡県柳川市三橋町吉開７４６−７",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6534821db4ca833b&hl=ja&sxsrf=AE3TifOc9j0hD6sJNrwmen5vvIdnxHIbsw:1758096330081&kgmid=/g/1tf3lptt&q=%E3%82%A8%E3%82%B9%E3%83%86%E3%83%AB%E3%83%BC%E3%83%A0%E3%81%8B%E3%82%8C%E3%82%93(%EF%BE%8A%EF%BD%B0%EF%BE%8C%EF%BE%9E%EF%BE%8B%EF%BE%9F%EF%BD%B0%EF%BE%98%EF%BE%9D%EF%BD%B8%EF%BE%9E%E5%B0%82%E9%96%80%EF%BD%BB%EF%BE%9B%EF%BE%9D)&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ba13998c86ebc7dd&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 14,
+   "name": "ヒーリングミディアム理梨香",
+   "address": "東京都杉並区方南２丁目",
+   "url": "https://www.google.com/maps?cid=10923857165608610753",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 15,
+   "name": "valo Hair Design（ヴァロ）",
+   "address": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+   "url": "https://www.google.com/maps/place/valo+Hair+Design%EF%BC%88%E3%83%B4%E3%82%A1%E3%83%AD%EF%BC%89/@33.5805391,130.3496496,17z/data=!3m1!4b1!4m6!3m5!1s0x35419bd6f3b405fd:0x8fee90915ca396d8!8m2!3d33.5805391!4d130.3496496!16s%2Fg%2F1tdm1j2d?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 16,
+   "name": "アップネイル",
+   "address": "愛知県名古屋市中区丸の内２丁目１７−４ ミワ第一ビル 902号",
+   "url": "https://share.google/AAq8yKNgqiOwVtXrE",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 17,
+   "name": "agu_hairsalon",
+   "address": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+   "url": "https://share.google/zXk5xmmnCPCh2IcM7",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 18,
+   "name": "医療連携小顔＆美肌サロン　VIVACE（旧：Ｖｉｖａｃｅ 中洲店）",
+   "address": "福岡県福岡市博多区中洲３丁目５－１０　３Ｆ",
+   "url": "https://www.google.com/search?q=%E5%8C%BB%E7%99%82%E9%80%A3%E6%90%BA%E5%B0%8F%E9%A1%94%EF%BC%86%E7%BE%8E%E8%82%8C%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%80VIVACE%EF%BC%88%E6%97%A7%EF%BC%9A%EF%BC%B6%EF%BD%89%EF%BD%96%EF%BD%81%EF%BD%83%EF%BD%85%20%E4%B8%AD%E6%B4%B2%E5%BA%97%EF%BC%89%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B2%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%8D%EF%BC%91%EF%BC%90%E3%80%80%EF%BC%93%EF%BC%A6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 19,
+   "name": "リミナーリ",
+   "address": "東京都目黒区目黒本町５丁目２７−１４ ハイムミカワ 101",
+   "url": "https://share.google/7VFFJpK5e0K9OsbHL",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 20,
+   "name": "クライオサロン",
+   "address": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+   "url": "https://share.google/TRkkuz2lfPHQSI8gV",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 21,
+   "name": "整体・リラクゼーションKanno",
+   "address": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+   "url": "https://share.google/ppK89CIClF07tUZdw",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 22,
+   "name": "ドライヘッドスパ＆フェイシャルサロンsera【小顔コルギ/マツヤニホットセラピー】",
+   "address": "岐阜県本巣市政田2532-1",
+   "url": "https://share.google/Kk8n9VtPOYdUWyrAP",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 23,
+   "name": "太田ネイルサロンcolore'【コロレ】",
+   "address": "群馬県太田市飯田町５８３",
+   "url": "https://share.google/ah1dLsWqwa2xRPACn",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 24,
+   "name": "アーニストリィ",
+   "address": "福岡県福岡市中央区大名１丁目３−３２ ラ・コルテ大名 502",
+   "url": "https://share.google/r5j1UPHDEPlJRipT9",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 25,
+   "name": "Ada beauty place",
+   "address": "埼玉県入間市仏子１４９５−４３",
+   "url": "https://share.google/oqzpre0GGJJNwoAxT",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 26,
+   "name": "recherche",
+   "address": "静岡県富士宮市山本４６４−５",
+   "url": "https://share.google/UUZH8qCYdWyUlRLlQ",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 27,
+   "name": "No.511",
+   "address": "群馬県伊勢崎市安堀町No−511 1883-5",
+   "url": "https://share.google/9QmlOM97Qlo7ztqky",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 28,
+   "name": "美容室こかげ",
+   "address": "愛知県名古屋市西区上名古屋１－６－２８",
+   "url": "https://www.google.com/search?q=美容室こかげ愛知県名古屋市西区上名古屋１－６－２８",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 29,
+   "name": "ムーチャ スエルテ",
+   "address": "愛知県岡崎市伊賀町３丁目２５",
+   "url": "https://share.google/3FGGzbDNuXNjLGNWW",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 30,
+   "name": "TSUKURU",
+   "address": "愛知県名古屋市名東区香流２丁目１０１６",
+   "url": "https://www.google.com/search?q=TSUKURU愛知県名古屋市名東区香流２丁目１０１６",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 31,
+   "name": "美容室 Luka-hair design -ルカ",
+   "address": "神奈川県川崎市多摩区菅１丁目５−２９ Ｌｕｋａ ｈａｉｒ ｄｅｓｉｇｎ",
+   "url": "https://share.google/VZjdC0lKiPLExrEkC",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 32,
+   "name": "salon de Viel サロン・ド・ヴィエル",
+   "address": "香川県高松市番町１丁目９?２",
+   "url": "https://www.google.com/maps?cid=5431908884536558321",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 33,
+   "name": "garden misato(ガーデン ミサト)",
+   "address": "埼玉県三郷市中央１丁目17−９ タチェット三郷中央 001",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eeb513acb5fda04c&hl=ja&kgmid=/g/11w8qc5c37&q=garden+misato(%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E3%83%9F%E3%82%B5%E3%83%88)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b23350d85be46128&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 34,
+   "name": "Hair lounge SEA SAW",
+   "address": "神奈川県茅ヶ崎市東海岸北１丁目７−１４ フィル・パーク茅ヶ崎南1F",
+   "url": "https://share.google/sL22LuzvwwAupSWne",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 35,
+   "name": "Esthetic By Angelina",
+   "address": "愛媛県新居浜市",
+   "url": "https://www.google.com/maps?cid=12980991262368674231",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 36,
+   "name": "イノセント",
+   "address": "愛媛県今治市高市甲１８９?１",
+   "url": "https://www.google.com/maps?cid=9624639505900983226",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 37,
+   "name": "美容室 魔法使い",
+   "address": "神奈川県平塚市明石町２４−９",
+   "url": "https://share.google/f8qigxAqPZk7x19Ec",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 38,
+   "name": "Hair room Ricco",
+   "address": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+   "url": "https://share.google/4n91zDVHc87AEqU0k",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 39,
+   "name": "エステ Angel",
+   "address": "福岡県北九州市門司区上本町２−３５",
+   "url": "https://share.google/b5bqp8WTwsAm8VM7f",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 40,
+   "name": "j'aime la presence",
+   "address": "東京都世田谷区駒沢２丁目４０−２",
+   "url": "https://share.google/uzVhh2CwsbPkL46vg",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 41,
+   "name": "3-HEART'S(スリーハーツ)",
+   "address": "和歌山県紀の川市下井阪１０４",
+   "url": "https://share.google/I6ul2G0X89AHH7dxN",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 42,
+   "name": "✨エステサロン ピュアティ✨",
+   "address": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+   "url": "https://share.google/wrkMprJnUGuDzvoLp",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 43,
+   "name": "obtenir【オプトゥニール】",
+   "address": "愛知県名古屋市天白区塩釜口１丁目　８５５番地　K-ROSS ROAD　２F",
+   "url": "https://beauty.hotpepper.jp/slnH000138801/?cstt=673",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 44,
+   "name": "hair room Sherie",
+   "address": "山梨県甲斐市玉川３６−１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4f5104ed2b7290e9&hl=ja&sxsrf=AE3TifPJW3DPwLOfYgvYvbGuBwmftenDjg:1759805322790&kgmid=/g/11clgy3m2k&q=hair+room+Sherie&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=f18ac92898ac40e5&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 45,
+   "name": "Mahalo+",
+   "address": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+   "url": "https://share.google/904unrxYP7M6lP9Xh",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 46,
+   "name": "FamiliaR（ファミリア）",
+   "address": "北海道帯広市西９条南１５丁目2 SmartⅡ 103号室",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=cee9d4942178ca18&hl=ja&kgmid=/g/11rk022ct6&q=FamiliaR%EF%BC%88%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%82%A2%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ff2c684959a50771&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 47,
+   "name": "Ｄｏｏｒ’ｓ【ドアーズ】",
+   "address": "愛知県名古屋市中区栄２-10-3　清水ビル２Ｆ",
+   "url": "https://beauty.hotpepper.jp/slnH000374033/?cstt=480",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 48,
+   "name": "Gazebo【ガゼボ】",
+   "address": "愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ",
+   "url": "https://www.google.com/search?q=Gazebo【ガゼボ】愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 49,
+   "name": "メンズサロンLead",
+   "address": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=bb4d93514f3ace56&hl=ja&sxsrf=AE3TifO7ro5sQLCM02VFXjnFQSWviC3puQ:1759891838008&kgmid=/g/11rvf_k0rs&q=%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B5%E3%83%AD%E3%83%B3Lead&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=cf7090d8cadc785a&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 50,
+   "name": "メンズサロン 男性専門(美容室.脱毛） THREE BRANCHES スリーブランチス",
+   "address": "大阪府和泉市富秋町８ ２－８－９ １Ｆ",
+   "url": "https://share.google/NdEACJrMwHxt9GJUn",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 51,
+   "name": "hair salon chic.縮毛矯正/髪質改善/エクステ/ブリーチカラー/パーマ/ボブ",
+   "address": "福岡県福岡市中央区天神２－１３－１８天神ホワイトビル２F",
+   "url": "https://share.google/UogUQJpfmOc03yLuo",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 52,
+   "name": "BLANDA",
+   "address": "宮崎県宮崎市清武町今泉甲３６７９−７",
+   "url": "https://share.google/HFdJywp8n4P9iA58O",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 53,
+   "name": "DEAN 名駅店【ディーン】",
+   "address": "愛知県名古屋市中村区名駅南４丁目1－7　 カーサプラスアルファ名駅南1F",
+   "url": "https://beauty.hotpepper.jp/slnH000503243/",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 54,
+   "name": "Bijou",
+   "address": "長野県長野市篠ノ井布施五明４２５−２ 105",
+   "url": "https://share.google/Ux7JUvnuUSNYOyJFy",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 55,
+   "name": "thema",
+   "address": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+   "url": "https://share.google/qAsV89cpcMOX1rM5p",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 56,
+   "name": "Lamazi",
+   "address": "千葉県成田市 本町 662-1 第３印東マンション402",
+   "url": "https://share.google/YJYjltoRaaL0YjupD",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 57,
+   "name": "Quincy Nail&Eyelash【クインシー】",
+   "address": "東京都東京都豊島区池袋１丁目２−６ ベルメゾン池袋 203号",
+   "url": "https://share.google/DtuoL4PjPcGqycQtq",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 58,
+   "name": "予防美容サロン Be Lab",
+   "address": "福岡県久留米市諏訪野町１８２２−８",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=27e57b1e925aecdc&hl=ja&sxsrf=AE3TifM0EbjwO4kzgNVrGrxRTKhF22R3Qg:1760062969107&kgmid=/g/11bychc8gc&q=%E4%BA%88%E9%98%B2%E7%BE%8E%E5%AE%B9%E3%82%B5%E3%83%AD%E3%83%B3+Be+Lab&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=f19591c0a4bd4f9e&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 59,
+   "name": "アッセンブル ビューティーアンドスパ",
+   "address": "千葉県柏市豊四季１９７−１",
+   "url": "https://share.google/AOi6otK5GTcd30gB6",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 60,
+   "name": "u'i room",
+   "address": "東京都足立区西綾瀬２丁目２３−３４",
+   "url": "https://share.google/aXhzofX1F806NEd24",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 61,
+   "name": "boat(シェリムボート) 富山市 縮毛矯正 美容院",
+   "address": "富山県富山市秋吉１５３−１４",
+   "url": "https://share.google/ejyBtWhznHtYVtW7v",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 62,
+   "name": "BABE HAIR【ベイブヘアー】",
+   "address": "福岡県福岡市城南区西片江１丁目１―４６",
+   "url": "https://share.google/uBleBVUuIpUU2lYQK",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 63,
+   "name": "Polku hair&rento(ポルクヘアアンドレント)",
+   "address": "静岡県浜松市中央区葵東２丁目２４−３９ 1F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=04a013b6530774b2&hl=ja&sxsrf=AE3TifPXBxK1k9dukGaxPwqGH2489rz9CQ:1760497324094&kgmid=/g/11sb5vhvs3&q=Polku+hair%26rento(%E3%83%9D%E3%83%AB%E3%82%AF%E3%83%98%E3%82%A2%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AC%E3%83%B3%E3%83%88)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e64d0cc7fc7931b6&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 64,
+   "name": "ClearTimes(クリアタイムズ)",
+   "address": "大阪府大阪市天王寺区天王寺区上本町９丁目２−７ 夕陽丘セントポリア 1F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=04a013b6530774b2&hl=ja&kgmid=/g/1tf7xlyy&q=ClearTimes(%E3%82%AF%E3%83%AA%E3%82%A2%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%BA)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=52f97fed41c7f64b&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 65,
+   "name": "青山美容室",
+   "address": "宮城県登米市東和町米谷元町１５２",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d1b4d337ee6528a3&hl=ja&sxsrf=AE3TifO7zorEHKbHym-4B0zC-Hyafk6MXw:1760521361217&kgmid=/g/11fk3wcgjy&q=%E9%9D%92%E5%B1%B1%E7%BE%8E%E5%AE%B9%E5%AE%A4&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=006bd2ba17944c31&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 66,
+   "name": "Yoh-【ヨー】",
+   "address": "宮城県仙台市宮城野区榴岡４丁目４番１６号TOFUBLDG.KINU３F",
+   "url": "https://share.google/gTBGCCwv9m74oMTDf",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 67,
+   "name": "salon sifa【サロンシファ】",
+   "address": "宮城県仙台市青葉区国分町１－６－３　古拙ビル４Ｆ",
+   "url": "https://share.google/Ev1zmvKnhCelATClS",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 68,
+   "name": "En,【エン】",
+   "address": "宮城県仙台市青葉区本町２丁目１２-１ 結城ビル２F",
+   "url": "https://share.google/rSnpL49Mt3MMCEKB1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 69,
+   "name": "HAIR SALON re:verb",
+   "address": "岐阜県岐阜市神田町６丁目３ エムテック神田町ビル 1F奥",
+   "url": "https://share.google/BLPGyNFSiRDmcOu6y",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 70,
+   "name": "La Felice ～脱毛とハーブ蒸しのサロン～",
+   "address": "大阪府枚方市楠葉野田１丁目 29-16-102",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=a38228b0d963ca0b&hl=ja&sxsrf=AE3TifNZAr_h85luKoWMGlSVpwZsvVbqtQ:1760664791807&kgmid=/g/11t27b0hz9&q=La+Felice+%EF%BD%9E%E8%84%B1%E6%AF%9B%E3%81%A8%E3%83%8F%E3%83%BC%E3%83%96%E8%92%B8%E3%81%97%E3%81%AE%E3%82%B5%E3%83%AD%E3%83%B3%EF%BD%9E&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3bca2f4f1f6ff034&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 71,
+   "name": "愛音I.onTherapyHealing",
+   "address": "北海道函館市元町２１−１８",
+   "url": "https://share.google/ps1B8ppxgRG4PTsa7",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 72,
+   "name": "TONE",
+   "address": "宮城県仙台市青葉区中央２－６－３３　第６藤榮駅前ビル８Ｆ",
+   "url": "https://beauty.hotpepper.jp/slnH000650976/?cstt=196",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 73,
+   "name": "フラワーエッセンスMaryやさしいママの手",
+   "address": "沖縄県宮古島市平良下里７１２−６",
+   "url": "https://share.google/9Nw3Je72Wx0t6Fot5",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 74,
+   "name": "沖縄メンズ脱毛ENJIN【全身脱毛9900円/ヒゲ/VIO込み】",
+   "address": "沖縄県浦添市大平１丁目３２−６ 101",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E6%B2%96%E7%B8%84%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9BENJIN%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E5%A4%A7%E5%B9%B3%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%92%EF%BC%8D%EF%BC%96%20101&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 75,
+   "name": "B・BLOOM ➖良心価格のトータルビューティサロン➖",
+   "address": "熊本県熊本市南区田迎６丁目５−３６",
+   "url": "https://maps.app.goo.gl/oMLtogEv6uhr8rRK8",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 76,
+   "name": "シロヘナサロン微睡",
+   "address": "大阪府枚方市津田元町２丁目６３−４",
+   "url": "https://share.google/SY3TRTn1rsb1u2FIp",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 77,
+   "name": "脱毛サロンEmbellir-アンベリール-",
+   "address": "〒419-0124 静岡県田方郡函南町塚本１８５−１ シャルマンコーポ 塚本 102",
+   "url": "https://share.google/L4gMUeY0cJvv7XIUf",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 78,
+   "name": "Mimi",
+   "address": "兵庫県神戸市長田区松野通１丁目１１−１３−２ INSTABASE 202",
+   "url": "https://share.google/0qMdcwfiHtHh8tVbc",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 79,
+   "name": "脱毛サロン ナチュリス",
+   "address": "〒231-0014 神奈川県横浜市中区常盤町１丁目2−１ サンネット関内ビル 2階Aー１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sa=X&sca_esv=b1f7e2cc7f09216f&hl=ja&biw=742&bih=869&kgmid=/g/11tt62qq_7&q=%E8%84%B1%E6%AF%9B%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%8A%E3%83%81%E3%83%A5%E3%83%AA%E3%82%B9&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=4fcaad02b85962e2&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 80,
+   "name": "サクラチャン ビューティ＆スパ",
+   "address": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+   "url": "https://share.google/AXjPo6j50k7s5UQrQ",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 81,
+   "name": "マーメイド",
+   "address": "千葉県大網白里市大網５０５−６ 光ビル D号室",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2a6fa6d95aad8520&hl=ja&sxsrf=AE3TifNg4wLZWgv9hmA3cPlICj9ltQjhXA:1761009210505&kgmid=/g/11y3yjw_tj&q=%E3%83%9E%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=070549e234919380&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 82,
+   "name": "温活リラクゼーションサロンLUNASOL",
+   "address": "神奈川県川崎市川崎区浜町４",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8dfd45bbc5676ef5&hl=ja&sxsrf=AE3TifOuuupNQyagVsRd98Za63X18tI_5g:1761015878440&kgmid=/g/11q3cx6w2h&q=%E6%B8%A9%E6%B4%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3LUNASOL&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=50b35874771ee882&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 83,
+   "name": "髪工房沙羅",
+   "address": "埼玉県新座市新座２丁目１７−７ 三軒店舗 C",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&sxsrf=AE3TifMYjWtpu0Ldiep8L4QDigTg6yYo0A:1761121493435&kgmid=/g/11p5_t37kz&q=%E9%AB%AA%E5%B7%A5%E6%88%BF%E6%B2%99%E7%BE%85&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=08c02723ae00eec1&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 84,
+   "name": "ＴＯＭＣＡＴ　【トムキャット】",
+   "address": "東京都新宿区歌舞伎町１－１７－１１　プレーンシティ新宿ビル４Ｆ",
+   "url": "https://share.google/1lXt9nDSNUcR0ByaO",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 85,
+   "name": "ATLANTICA",
+   "address": "東京都国立市中１丁目１６−７５ ピースボート 102",
+   "url": "https://share.google/tHVyIDLeidmA4Zqob",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 86,
+   "name": "エリカ美容室",
+   "address": "滋賀県守山市浮気町３７０",
+   "url": "https://share.google/YwZ9fZ0wBjsskEam2",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 87,
+   "name": "Tresor eternel",
+   "address": "茨城県神栖市深芝南３丁目1−９",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8fe6cc88df9a283f&hl=ja&sxsrf=AE3TifOoE8eZwaFlomn8TLZpPaDpdmLQDg:1761271741525&kgmid=/g/11bv1p2zpb&q=Tresor+eternel&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=fa9743b2a1fbcc0a&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 88,
+   "name": "MY FAIR LADY",
+   "address": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+   "url": "https://share.google/AGAZJsUQWyw3lrdNO",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 89,
+   "name": "uyo SHORT HAIR SALON（ウヨ ショートヘアサロン）",
+   "address": "静岡県浜松市中央区原島町２６６ 1F 南",
+   "url": "https://share.google/lUz4bfkP4PunIHUu4",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 90,
+   "name": "エンゼル美容室",
+   "address": "埼玉県北葛飾郡松伏町松伏４７５１",
+   "url": "https://share.google/ImxPHclIQuxTAbsIr",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 91,
+   "name": "プラスはあと",
+   "address": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+   "url": "https://share.google/XLXRFpLzRTIn1aoAM",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 92,
+   "name": "claire.nail",
+   "address": "埼玉県さいたま市見沼区大和田町１丁目１７１５－９",
+   "url": "https://www.google.co.jp/search?hl=ja&q=claire.nail%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E8%A6%8B%E6%B2%BC%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%B0%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%97%EF%BC%91%EF%BC%95%EF%BC%8D%EF%BC%99&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 93,
+   "name": "CHANT（チャント）",
+   "address": "三重県名張市夏見１４１０−１",
+   "url": "https://share.google/hVGeys1PU66u3UzKp",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 94,
+   "name": "INTRO . by Fi-Ne 渋谷【イントロ　バイ　フィーネ　シブヤ】",
+   "address": "東京都渋谷区宇田川町37-16　レジディア101",
+   "url": "https://share.google/pitK7i4hFcKoCFHOf",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 95,
+   "name": "melting",
+   "address": "愛知県安城市新田町新定８−３ 1F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&sxsrf=AE3TifMlzUwhaotSPOXo5ZBxVZze_CyQzg:1761124044428&kgmid=/g/11sk3h7htf&q=melting&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=0c31d4e0cd11591c&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 96,
+   "name": "BOND TOKYO 渋谷",
+   "address": "東京都渋谷区円山町７－５ GP Dogenzaka ３Ｆ",
+   "url": "https://share.google/rBFAECOGzqwYhcGw4",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 97,
+   "name": "エステティック&脱毛サロン SPOT福岡薬院駅前 ビューティスタジオ",
+   "address": "福岡県福岡市中央区白金１丁目２１−１３ クレッセント薬院 602号室",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9B%20%E3%82%B5%E3%83%AD%E3%83%B3SPOT%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E7%99%BD%E9%87%91%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%91%EF%BC%8D%EF%BC%91%EF%BC%93%20%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E8%96%AC%E9%99%A2%20602%E5%8F%B7%E5%AE%A4&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 98,
+   "name": "新宿コットンヘアセット・ヘアエクステ",
+   "address": "東京都新宿区新宿４丁目１番１９号　冨美ビル　(フミビル)　１F",
+   "url": "https://beauty.hotpepper.jp/slnH000587354/?cstt=160",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 99,
+   "name": "Sweet",
+   "address": "大阪府高石市綾園１丁目１−２１",
+   "url": "https://www.google.co.jp/search?hl=ja&q=Sweet%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E7%9F%B3%E5%B8%82%E7%B6%BE%E5%9C%92%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%8D%EF%BC%92%EF%BC%91&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 100,
+   "name": "髪質改善　waTatori  ～私のトリートメント～",
+   "address": "東京都新宿区西新宿７-7-28　第一山本ビル2F",
+   "url": "https://share.google/nVihFLhMpxB1lq2K1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 101,
+   "name": "脱毛Salon B（ﾋﾞｼｮｯﾌﾟ）",
+   "address": "島根県松江市東朝日町１５８－８ 三和ビル 2階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&kgmid=/g/11s_x3_4t_&q=%E8%84%B1%E6%AF%9BSalon+B%EF%BC%88%EF%BE%8B%EF%BE%9E%EF%BD%BC%EF%BD%AE%EF%BD%AF%EF%BE%8C%EF%BE%9F%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=7c7176089b6ae194&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 102,
+   "name": "リフレッシュサロン彩喜香～サキカ～",
+   "address": "愛知県名古屋市中区大須２丁目２−９ SK大須ビル 1F",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E3%83%AA%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B5%E3%83%AD%E3%83%B3%E5%BD%A9%E5%96%9C%E9%A6%99%EF%BD%9E%E3%82%B5%E3%82%AD%E3%82%AB%EF%BD%9E%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%8C%BA%E5%A4%A7%E9%A0%88%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%8D%EF%BC%99%20SK%E5%A4%A7%E9%A0%88%E3%83%93%E3%83%AB%201F&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 103,
+   "name": "Re:lienリリアン 脱毛／よもぎ蒸し／水素／ハーブピーリング／骨盤彫刻術／頚椎リヴァイブ／ムートンホイップスパ",
+   "address": "長崎県大村市水主町２丁目５８６−１ レジデンス岡本 1階",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E3%82%A8%E3%82%B9%E3%83%86%E4%BB%A5%E4%B8%8A%E6%B2%BB%E7%99%82%E6%9C%AA%E6%BA%80Re:lien%E3%83%AA%E3%83%AA%E3%82%A2%E3%83%B3%20%E8%84%B1%E6%AF%9B%EF%BC%8F%E3%82%88%E3%82%82%E3%81%8E%E8%92%B8%E3%81%97%EF%BC%8F%E6%B0%B4%E7%B4%A0%EF%BC%8F%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%EF%BC%8F%E9%AA%A8%E7%9B%A4%E5%BD%AB%E5%88%BB%E8%A1%93%EF%BC%8F%E9%A0%9A%E6%A4%8E%E3%83%AA%E3%83%B4%E3%82%A1%E3%82%A4%E3%83%96%EF%BC%8F%E3%83%A0%E3%83%BC%E3%83%88%E3%83%B3%E3%83%9B%E3%82%A4%E3%83%83%E3%83%97%E3%82%B9%E3%83%91%20%E9%95%B7%E5%B4%8E%E7%9C%8C%E5%A4%A7%E6%9D%91%E5%B8%82%E6%B0%B4%E4%B8%BB%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%98%EF%BC%96%EF%BC%8D%EF%BC%91%20%E3%83%AC%E3%82%B8%E3%83%87%E3%83%B3%E3%82%B9%E5%B2%A1%E6%9C%AC%201%E9%9A%8E&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 104,
+   "name": "髪 騎士 【ヘアー デザイン ナイト】",
+   "address": "東京都新宿区西早稲田３-２０-６　スパイラルビル１F",
+   "url": "https://maps.app.goo.gl/Fpnm1D8n6UcK9deF8",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 105,
+   "name": "Design Lab Chic",
+   "address": "千葉県君津市北子安６丁目６−１９",
+   "url": "https://share.google/qcDQHlbUTOy4lMaRD",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 106,
+   "name": "CHAINON",
+   "address": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+   "url": "https://share.google/kyVtVx0S0X3wMuALk",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 107,
+   "name": "ROOM3K (ルームスリーケイ)",
+   "address": "香川県高松市福岡町３丁目６−２０",
+   "url": "https://share.google/DTGP9r9RJ9YKktL90",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 108,
+   "name": "Vell",
+   "address": "新潟県南魚沼市塩沢６０",
+   "url": "https://share.google/DoW1HvmdW2fkHthu1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 109,
+   "name": "Ｉｒｉｓ",
+   "address": "静岡県富士市伝法２０−７",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%EF%BC%A9%EF%BD%92%EF%BD%89%EF%BD%93%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%B8%82%E4%BC%9D%E6%B3%95%EF%BC%92%EF%BC%90%EF%BC%8D%EF%BC%97&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 110,
+   "name": "ベルチャーム(Belle Charm)",
+   "address": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+   "url": "https://share.google/eRrX74Le1T3IhFQ6f",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 111,
+   "name": "ハーブピーリング専門店LIME 高崎 by Anela",
+   "address": "〒370-0063 群馬県高崎市飯玉町５０ パナシアマンション 301",
+   "url": "https://share.google/rKU2W9TIioCUY5LCX",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 112,
+   "name": "カウンセリングルームnatuiro",
+   "address": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E8%80%B3%E3%81%A4%E3%81%BC%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88natuiro%20%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%B1%B1%E9%99%BD%E5%B0%8F%E9%87%8E%E7%94%B0%E5%B8%82%E6%96%B0%E7%94%9F%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%94%EF%BC%8D%EF%BC%91%EF%BC%91%20%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%8F%E3%82%A4%E3%83%84%20102%E5%8F%B7%E5%AE%A4&lr=lang_ja&lqi=CnPogLPjgaTjgbzjg4DjgqTjgqjjg4Pjg4huYXR1aXJvIOWxseWPo-ecjOWxsemZveWwj-mHjueUsOW4guaWsOeUn--8keS4geebru-8lO-8je-8ke-8kSDjgrnjgqvjgqTjg4_jgqTjg4QgMTAy5Y-35a6kWngiduiAsyDjgaTjgbwg44OA44Kk44Ko44OD44OIIG5hdHVpcm8g5bGx5Y-jIOecjCDlsbHpmb0g5bCP6YeO55SwIOW4giDmlrDnlJ8gMSDkuIHnm64gNCAxMSDjgrnjgqvjgqQg44OP44Kk44OEIDEwMiDlj7flrqSSARN3ZWlnaHRfbG9zc19zZXJ2aWNl#rlimm=4569890107259408315",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 113,
+   "name": "atelier NINO 下北沢",
+   "address": "東京都世田谷区代沢５丁目３３−５ グラシア下北沢 1F",
+   "url": "https://share.google/4Hbz6R0gsAMRAnPKJ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 114,
+   "name": "レフティ スマイル",
+   "address": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E3%83%AC%E3%83%95%E3%83%86%E3%82%A3%20%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E7%93%9C%E7%A0%B4%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%8D%EF%BC%96%EF%BC%94%EF%BC%8D%EF%BC%92%EF%BC%90%EF%BC%93&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 115,
+   "name": "i-SPA代官山",
+   "address": "東京都渋谷区恵比寿西２－２０－８  パーフェクトルーム６１１",
+   "url": "https://maps.app.goo.gl/NNTsdXzS7TL9AoGt7",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 116,
+   "name": "LAVEL 渋谷　髪質改善 レイヤーカット",
+   "address": "東京都渋谷区円山町５-３　MIEUX渋谷ビル４F",
+   "url": "https://share.google/jGR5PXtd0v9oTRmyH",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 117,
+   "name": "【アロマリンパケアと脱毛】Osa Spa（旧：OsaSpa）",
+   "address": "大阪府大阪市北区曽根崎２丁目１―１２ 国道ビル７０３号室",
+   "url": "https://share.google/qZ1Q8t445oLwPaSIH",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 118,
+   "name": "アロマサンドリーズ",
+   "address": "鹿児島県熊毛郡屋久島町原８４９−５",
+   "url": "https://share.google/5hYMGkBXqKYmSg6QR",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 119,
+   "name": "Sakurasaku EYELASH SALON",
+   "address": "静岡県富士宮市万野原新田４０００−２１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=a9b651f2ccff5662&hl=ja&sxsrf=AE3TifNKz41amFI5HbpttczAir4dmZJpEg:1761624714469&kgmid=/g/11hbpyvgd4&q=Sakurasaku+EYELASH+SALON&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e3d2e420c812157c&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 120,
+   "name": "adhoc hair design　【アドック　ヘア　デザイン】",
+   "address": "大阪府大阪市中央区玉造１丁目 5-6 グランドヒル玉造 5階",
+   "url": "https://www.google.com/search?q=adhoc%20hair%20design%E3%80%80%E3%80%90%E3%82%A2%E3%83%89%E3%83%83%E3%82%AF%E3%80%80%E3%83%98%E3%82%A2%E3%80%80%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%80%91%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E7%8E%89%E9%80%A0%EF%BC%91%E4%B8%81%E7%9B%AE%205-6%20%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%92%E3%83%AB%E7%8E%89%E9%80%A0%205%E9%9A%8E",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 121,
+   "name": "PS　BEAUTY",
+   "address": "大阪府大阪市北区神山町８－２２梅電ビル３F",
+   "url": "https://share.google/dIi1UgwwfuxvHaS2v",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 122,
+   "name": "Ｂｅｌｉｎｄａ【ベリンダ】",
+   "address": "大阪府大阪市中央区上汐１－３－１０ベルツ上汐3F",
+   "url": "https://www.google.com/search?q=%EF%BC%A2%EF%BD%85%EF%BD%8C%EF%BD%89%EF%BD%8E%EF%BD%84%EF%BD%81%E3%80%90%E3%83%99%E3%83%AA%E3%83%B3%E3%83%80%E3%80%91%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E6%B1%90%EF%BC%91%EF%BC%8D%EF%BC%93%EF%BC%8D%EF%BC%91%EF%BC%90%E3%83%99%E3%83%AB%E3%83%84%E4%B8%8A%E6%B1%903F",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 123,
+   "name": "hair salon nendo",
+   "address": "鹿児島県鹿児島市田上３丁目４−１０",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6d9773df8986f1e8&hl=ja&sxsrf=AE3TifOwmskWP-TTGn40ieJNGrCPQ5gSPg:1761629791041&kgmid=/g/11dxb36bs9&q=hair+salon+nendo&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=34f0db05f630a440&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 124,
+   "name": "wall",
+   "address": "東京都目黒区中央町１-12-9　1F",
+   "url": "https://www.google.com/search?q=wall東京都目黒区中央町１-12-9　1F",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 125,
+   "name": "理容チョッキンズPLUS",
+   "address": "兵庫県姫路市網干区坂上382-13",
+   "url": "https://share.google/PfetqDptR0nWvX4Kd",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 126,
+   "name": "XIN-FU hair",
+   "address": "岐阜県本巣郡北方町曲路３丁目４３",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eb5b4f820ac811f1&hl=ja&sxsrf=AE3TifPr6qt9wrcl1tLLrlFLUJhWPrdCWg:1761645457696&kgmid=/g/11ggndtc9s&q=XIN-FU+hair&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=1d4260b5c4c1a6d8&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 127,
+   "name": "hair salon NAVY",
+   "address": "三重県伊賀市上野恵美須町１５７６ 1階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=fe33c2d79fc146ed&hl=ja&kgmid=/g/11h71tcfv6&q=hair+salon+NAVY&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=be3c2895933b2151&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 128,
+   "name": "くつろぎ処癒家",
+   "address": "〒906-0008 沖縄県宮古島市平良荷川取２８４−４",
+   "url": "https://kuturogi-yuuka.com/",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 129,
+   "name": "美容室Bigote",
+   "address": "東京都目黒区下目黒３丁目１９－１１ メゾンｆ１Ｆ",
+   "url": "https://share.google/txP7xjPloeXLzZClj",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 130,
+   "name": "BeautySpaceキリーク",
+   "address": "山梨県中巨摩郡昭和町河西１２３４−１０",
+   "url": "https://maps.app.goo.gl/cDtTp17F3vENebFS6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 131,
+   "name": "Baroque hair（バロック ヘア）",
+   "address": "東京都目黒区青葉台１丁目１９−７ ＭＳビル 2Ｆ",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=e88d928ee76a2e23&hl=ja&kgmid=/g/1tdkxqkd&q=Baroque+hair%EF%BC%88%E3%83%90%E3%83%AD%E3%83%83%E3%82%AF+%E3%83%98%E3%82%A2%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=a849fd91e77242a0&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 132,
+   "name": "Hair Salon Kawai",
+   "address": "千葉県市川市市川南３丁目８－１５",
+   "url": "https://share.google/gao8bnzQCswKhpr4a",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 133,
+   "name": "MIN NANO//POLICY【ミンナノポリシー】",
+   "address": "東京都目黒区鷹番２－５－２３",
+   "url": "https://share.google/bAG3GpfoqcjesUZEL",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 134,
+   "name": "からだと心を癒し本来の体に導くMen's Salon【金活堂】",
+   "address": "鹿児島県奄美市名瀬大熊町37−８ マリナーズ51 301号室",
+   "url": "https://www.amami-kinkatsudo.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=7755945242957427961",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 135,
+   "name": "La・Verite【ラ・ヴェリーテ】パーソナルカラー・骨格診断/顔タイプ診断・メイク",
+   "address": "大阪府大阪市北区堂島２－１－３３",
+   "url": "https://share.google/HShlBVzz4LKUdop8G",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 136,
+   "name": "Lu soi-ルソワ-",
+   "address": "広島県広島市中区袋町５−７ 栗林ビル ５０１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=117495dd1a9b1450&hl=ja&sxsrf=AE3TifPf_vRQXkunbrD1qE0LABOtXhRZSw:1761728766244&kgmid=/g/11hyqcslp5&q=Lu+soi-%E3%83%AB%E3%82%BD%E3%83%AF-&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=31af5824290a27ff&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 137,
+   "name": "脱毛 ヘッドスパ 痩身サロン ちゅら肌沖縄",
+   "address": "沖縄県沖縄市知花２丁目９−２ 1階",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E8%84%B1%E6%AF%9B%20%E3%83%98%E3%83%83%E3%83%89%E3%82%B9%E3%83%91%20%E7%97%A9%E8%BA%AB%E3%82%B5%E3%83%AD%E3%83%B3%20%E3%81%A1%E3%82%85%E3%82%89%E8%82%8C%E6%B2%96%E7%B8%84%20%E6%B2%96%E7%B8%84%E7%9C%8C&lr=lang_ja&lqi=CkPohLHmr5sg44OY44OD44OJ44K544ORIOeXqei6q-OCteODreODsyDjgaHjgoXjgonogozmspbnuIQg5rKW57iE55yMSLK95fCSvYCACFpnEAAQARACEAMQBBAFGAAYARgCGAMYBBgFGAYYBxgIIkfohLHmr5sg44OY44OD44OJ44K544ORIOeXqei6qyDjgrXjg63jg7Mg44Gh44KF44KJIOiCjCDmspbnuIQg5rKW57iEIOecjJIBFGhhaXJfcmVtb3ZhbF9zZXJ2aWNlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJmY2pWcFJrRjNFQUX6AQQIQBAf#rlimm=9273079506960044786&scso=_g9sCaZOAIvG_0-kP2PiX4AU_34:1287",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 138,
+   "name": "three. Nakanoshima【スリー ナカノシマ 】",
+   "address": "大阪府大阪市中央区北浜２丁目１－２１　つねなりビル２Ｆ",
+   "url": "https://share.google/4wkOdsNfDqtfRed4p",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 139,
+   "name": "Morphome【モルフォム】",
+   "address": "大阪府大阪市北区神山町９-２４ ジューム神山２０６",
+   "url": "https://share.google/cx3IIeML0UGwXqgXT",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 140,
+   "name": "men's　la gemme【メンズ　ラ ジェム】",
+   "address": "大阪府大阪市北区鶴野町３－１７ ファーストＮビル　７０３",
+   "url": "https://share.google/mpI7MyGDY3IxN8mjZ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 141,
+   "name": "nito.【ニト】",
+   "address": "大阪府大阪市北区中崎西１－１１－４",
+   "url": "https://share.google/U4GKZdPZrZZy2RxEN",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 142,
+   "name": "カラーもできるエクステ NEOBOX 心斎橋 難波【ネオボックス】",
+   "address": "大阪府大阪市中央区西心斎橋２－１０－１５　心斎橋ロジック　３Ｆ",
+   "url": "https://share.google/HQfX4haBQShVSD9XG",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 143,
+   "name": "ドライヘッドスパ専門サロン　835.room 《極上ヘッドスパ/眼精疲労》",
+   "address": "大阪府大阪市北区天神橋６－３－２２　マンション満蔵２０２",
+   "url": "https://beauty.hotpepper.jp/kr/slnH000685919/?cstt=617",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 144,
+   "name": "ビューティー＆ヘルシーサロンこすもす",
+   "address": "山梨県中巨摩郡昭和町押越９１７",
+   "url": "https://share.google/qf73fVWKmZ67EMCnJ",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 145,
+   "name": "hair&spa cocoro 目黒",
+   "address": "東京都目黒区目黒３-8-10パラスト目黒3丁目104号",
+   "url": "https://share.google/zD60fEpj4BplYgYrr",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 146,
+   "name": "女性の癒し場 たかはし",
+   "address": "香川県三豊市豊中町岡本1654-2",
+   "url": "https://maps.app.goo.gl/ic92noR9N9cCkF6JA",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 147,
+   "name": "パーソナルカラー診断・顔タイプ・骨格診断・メイクレッスン　アトラクティ",
+   "address": "大阪府大阪市中央区東心斎橋１―８―１１アルグラッドザ・タワー８０５",
+   "url": "https://beauty.hotpepper.jp/kr/slnH000707045/?cstt=877",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 148,
+   "name": "美容室ALMA ( アルマ)",
+   "address": "滋賀県大津市際川４丁目１４−２０",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2b402440a197c26d&hl=ja&sxsrf=AE3TifPmxUG03sVMR6XM2SJR5DDvk_Na_g:1761887670616&kgmid=/g/11b6gpq6_l&q=%E7%BE%8E%E5%AE%B9%E5%AE%A4ALMA+(+%E3%82%A2%E3%83%AB%E3%83%9E)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=8501772f1f33a24b&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 149,
+   "name": "【パーソナルカラー診断・骨格診断】スタイリングLabサロンドブルーム自由が丘",
+   "address": "東京都目黒区自由が丘１－２６－８　キクモトビル３０６",
+   "url": "https://share.google/eGyT5Jg4eg8FcTmxf",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 150,
+   "name": "Men's Salon DUDELAB（ヘア）【デュードラボ】",
+   "address": "大阪府大阪市中央区南本町１－３－１４　ＨＰ本町ビル３Ｆ",
+   "url": "https://share.google/oCkHFmzVKZbtY8Aa0",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 151,
+   "name": "フェイシャルケアヒロ",
+   "address": "神奈川県鎌倉市極楽寺１丁目３−１",
+   "url": "https://share.google/NjolNW3eJAxxArGrp",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 152,
+   "name": "Beauty MIWA",
+   "address": "静岡県浜松市浜名区根堅２２−１",
+   "url": "https://share.google/ZdlFLajxrW8NjRP8g",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 153,
+   "name": "ブルームーンヘア",
+   "address": "北海道恵庭市黄金北３丁目８−５",
+   "url": "https://share.google/8H5WGavKRg62yrTec",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 154,
+   "name": "Kesalan hair",
+   "address": "京都府京都市西京区上桂森上町２０−１２ ルミネ上桂 １F",
+   "url": "https://share.google/HbW3YccBLmPfbyxk8",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 155,
+   "name": "sugar",
+   "address": "広島県広島市東区愛宕町８−４０",
+   "url": "https://share.google/9goKXUOBVOJhSEiru",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 156,
+   "name": "シュエッチュール",
+   "address": "兵庫県揖保郡太子町鵤４５５−２",
+   "url": "https://share.google/AbFXjbuGWy2C0iVl8",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 157,
+   "name": "hairsalonMu",
+   "address": "愛知県海部郡大治町馬島大道西１３",
+   "url": "https://share.google/gnuyZr9YSuNvxFuzZ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 158,
+   "name": "エスティメート",
+   "address": "北海道小樽市若松２丁目７−２０",
+   "url": "https://share.google/5nzNXLPw9y7S9m42l",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 159,
+   "name": "salon TAKAO",
+   "address": "東京都新宿区荒木町１１－６７　FLレジデンス都心首府３０２・４０１",
+   "url": "https://share.google/DzZPFWS2l9fP6Qtvt",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 160,
+   "name": "nail&eye APUU  新宿【アピュ】",
+   "address": "東京都新宿区西新宿７―１６―１　コンシェルジュ石原４０１",
+   "url": "https://share.google/Yxbf3ixwVue6ot5CO",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 161,
+   "name": "OALY【アイブロウ/メンズ眉毛/眉毛/眉毛パーマ/まゆげ/WAX脱毛】",
+   "address": "東京都新宿区西新宿６‐２‐３アイランドアネックス６０２",
+   "url": "https://share.google/0l9RhnHHCUq5wNm8v",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 162,
+   "name": "S salon EYELASH&NAIL【長さ出し/パラジェル/まつげパーマ】【10/1 OPEN】",
+   "address": "東京都新宿区大久保２－１－１０ニュースター大久保１１０２号室",
+   "url": "https://share.google/nKKluam9gCVREFjYW",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 163,
+   "name": "The Salon Sheep",
+   "address": "北海道北見市栄町１丁目１−４",
+   "url": "https://share.google/Y5oTMuARNpbt0cTUk",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 164,
+   "name": "K studio NY",
+   "address": "大阪府大阪市北区鶴野町4-11　朝日プラザ梅田1508号",
+   "url": "https://share.google/HWbJ5sKKtClGQ83Oy",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 165,
+   "name": "Amora ～ピラティス＆ビューティサロン～",
+   "address": "大阪府大阪市中央区南船場３丁目６－２５　ＩＢＣ心斎橋ｅａｓｔ７Ｆ　８０６号室",
+   "url": "https://beauty.hotpepper.jp/kr/slnH000756972/?cstt=913",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 166,
+   "name": "【医療提携】毛穴改善　Esthetic salon Purune",
+   "address": "大阪府大阪市中央区久太郎町２丁目４－１８",
+   "url": "https://share.google/wfPBBea9b79Sp8e1X",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 167,
+   "name": "espaco Eyelash＆Eyebrow",
+   "address": "〒627-0004 京都府京丹後市峰山町荒山８３２−５",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eb0ee29535a5550a&hl=ja&kgmid=/g/1trqh22p&q=espaco+Eyelash%EF%BC%86Eyebrow&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=9e520c8cf9c9b2d4&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 168,
+   "name": "美容室kasumisou",
+   "address": "東京都国立市西２丁目３０−２７",
+   "url": "https://share.google/erivuzj6G9aWPGwku",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 169,
+   "name": "ESSENZA 大阪梅田 レイヤーカット ハイライト(旧:ESSENZA梅田デザインカラー髪質改善)",
+   "address": "大阪府大阪市北区曽根崎新地２-２-１６ 関電不動産西梅田ビル１F",
+   "url": "https://share.google/PDbQ7oYgaVS8TnSBd",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 170,
+   "name": "リラクゼーション海里",
+   "address": "千葉県鴨川市貝渚309-1",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=eb0ee29535a5550a&hl=ja&sxsrf=AE3TifPQpJ95ZOozSCu3VN9LjHonEFYIgw:1762332414678&kgmid=/g/11mn7kfg_0&q=%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%B5%B7%E9%87%8C&shndl=30&shem=dlvsc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=a5b4d931307a8f90&utm_source=dlvsc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 171,
+   "name": "コモレビ（ko.mo.re.bi Hair make garden）",
+   "address": "千葉県船橋市宮本６丁目１４−１０ ミリアビタNo.15",
+   "url": "https://share.google/x5tkPCRcE6WDybI3j",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 172,
+   "name": "SHERRY BEAUTY SALON",
+   "address": "大阪府寝屋川市香里南之町３０－２５ ディアコート秋 3B",
+   "url": "https://www.google.co.jp/search?hl=ja&q=SHERRY%20BEAUTY%20SALON%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%AF%9D%E5%B1%8B%E5%B7%9D%E5%B8%82%E9%A6%99%E9%87%8C%E5%8D%97%E4%B9%8B%E7%94%BA%EF%BC%93%EF%BC%90%EF%BC%8D%EF%BC%92%EF%BC%95%20%E3%83%87%E3%82%A3%E3%82%A2%E3%82%B3%E3%83%BC%E3%83%88%E7%A7%8B%203B&lr=lang_ja#ebo=0",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 173,
+   "name": "美と学びAngela",
+   "address": "奈良県香芝市瓦口２１３４−９０２",
+   "url": "https://share.google/jWm2vK7dBBPUdTNaQ",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 174,
+   "name": "ビューティーＴＡＫＩＯ",
+   "address": "東京都あきる野市秋川１丁目１−１０",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=7996920a3193b21b&hl=ja&sxsrf=AE3TifPavYGG8owB_iPkszzFjYdwtYZeJQ:1762395354959&kgmid=/g/1tdn8qp0&q=%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%EF%BC%B4%EF%BC%A1%EF%BC%AB%EF%BC%A9%EF%BC%AF&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=a9f86c95f973d224&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 175,
+   "name": "LUCCI Hair salon (ルッチ)",
+   "address": "京都府京都市上京区岡松町２７０ わびすけビル 2F （地下鉄今出川駅4番出口北",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=7996920a3193b21b&hl=ja&sxsrf=AE3TifPg6TrCnOgYA1y9luwx3I5YkLCzHA:1762398036933&kgmid=/g/11sh09pd53&q=LUCCI+Hair+salon+(%E3%83%AB%E3%83%83%E3%83%81)&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=bce776c96d17e689&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 176,
+   "name": "Link hair（リンクヘア）",
+   "address": "北海道北見市山下町３丁目２−１８ はるみ A1階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=7996920a3193b21b&hl=ja&sxsrf=AE3TifNIgd4Qeul9LIv7yvDXxhsNRfXARA:1762402772239&kgmid=/g/1pp2wx7rz&q=Link+hair%EF%BC%88%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%98%E3%82%A2%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ada105eb15b8bd71&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 177,
+   "name": "kaoku beauty salon　【カオクビューティーサロン】",
+   "address": "東京都中野区中野２－４－３ アパートメントリバー１０１",
+   "url": "https://share.google/waP1wiMtfVsPYMEhP",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 178,
+   "name": "hair GLADROOM",
+   "address": "北海道札幌市中央区南１条西２丁目４−１ 第5藤井ビル 5階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=dded0198d961bc80&hl=ja&sxsrf=AE3TifMSnI-GPG_V0RO8OK930QUPR5JJsg:1762416827529&kgmid=/g/1tp_65hn&q=hair+GLADROOM&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=60833f764bb07ba6&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 179,
+   "name": "GARN",
+   "address": "茨城県水戸市高田町１８８",
+   "url": "https://share.google/7GfPlcPYQ6rNRXDsE",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 180,
+   "name": "ビューティセラピーサロン F♡act",
+   "address": "京都府京都市山科区小野荘司町１−１７",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=0ce76fe6310e19b4&hl=ja&kgmid=/g/11s0q29snl&q=%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%82%BB%E3%83%A9%E3%83%94%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3+F%E2%99%A1act&shndl=30&shem=damc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=490ae7b831128493&utm_source=damc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 181,
+   "name": "enn.",
+   "address": "宮崎県宮崎市橘通東１丁目４−１６ リヴィエールトピカピュア 101",
+   "url": "https://share.google/bMrgjOyGiDYFHQM8J",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 182,
+   "name": "Charme.Hair salon",
+   "address": "神奈川県平塚市河内３５２−１",
+   "url": "https://share.google/F2uG9EfoMmp9O1W71",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 183,
+   "name": "Corte de pero",
+   "address": "秋田県秋田市横森１丁目１１−２",
+   "url": "https://www.google.com/search?q=Cortedepero%E3%80%80%E7%A7%8B%E7%94%B0&sca_esv=0ce76fe6310e19b4&rlz=1C1VDKB_jaJP1185JP1186&sxsrf=AE3TifP8Yw67Bt3ZA6Qcsb8hB7IMrCYIUA%3A1762491323096&ei=u3sNaZWyBc7l2roP9v7oqQc&ved=0ahUKEwjV--3pn9-QAxXOslYBHXY_OnUQ4dUDCBE&uact=5&oq=Cortedepero%E3%80%80%E7%A7%8B%E7%94%B0&gs_lp=Egxnd3Mtd2l6LXNlcnAiFENvcnRlZGVwZXJv44CA56eL55SwMggQABiABBiiBDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBTIFEAAY7wVI6xRQAFjvEHAAeAGQAQCYAacBoAGkB6oBAzAuOLgBA8gBAPgBAvgBAZgCCKACyQfCAgUQIRigAZgDAJIHAzAuOKAHxgyyBwMwLji4B8kHwgcFMC41LjPIBxY&sclient=gws-wiz-serp",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 184,
+   "name": "TOTAL BEAUTY SALON PLUMY",
+   "address": "神奈川県横浜市西区岡野１丁目１２−１４ 石川ビル 4階",
+   "url": "https://share.google/h7Pv58pNYTp1o7zVd",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 185,
+   "name": "アイブロウサロンcejas kim./セハス　キム【美眉・美肌】",
+   "address": "東京都中野区中野３-37-1ワタナベビル2F",
+   "url": "https://share.google/UUhXDDKRf10hYIETe",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 186,
+   "name": "ラディウス（ＲＡＤＩＵＳ）",
+   "address": "神奈川県横浜市南区六ツ川１丁目２３９",
+   "url": "https://share.google/R4yRI3yMYr8ND6qY1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 187,
+   "name": "YUZA grow HAIR ブリーチ/縮毛矯正/髪質改善トリートメント【ユーザ グロウ ヘア】",
+   "address": "北海道札幌市中央区南２条西１丁目７-２１丁目ビル７F",
+   "url": "https://share.google/ava41OM0ETiso2M4D",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 188,
+   "name": "サロンドGu",
+   "address": "秋田県秋田市広面谷地沖１−３",
+   "url": "https://www.google.com/search?q=%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%89Gu%E3%80%80%E7%A7%8B%E7%94%B0&sca_esv=6b4d902e84856ab1&rlz=1C1VDKB_jaJP1185JP1186&sxsrf=AE3TifNmYVxQw7Y-R_v9MwhiySUbCVV35g%3A1762503268147&ei=ZKoNafzWCI6p2roPzvWbmAo&ved=0ahUKEwj8mNqpzN-QAxWOlFYBHc76BqMQ4dUDCBE&uact=5&oq=%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%89Gu%E3%80%80%E7%A7%8B%E7%94%B0&gs_lp=Egxnd3Mtd2l6LXNlcnAiF-OCteODreODs-ODiUd144CA56eL55SwMgQQIxgnMgYQABgIGB4yCBAAGKIEGIkFMgUQABjvBTIIEAAYgAQYogQyCBAAGIAEGKIESPYYUIkDWIQWcAF4AZABAJgBpgGgAYYGqgEDMy40uAEDyAEA-AEBmAIIoAKqBsICBxAjGLADGCfCAgoQABiwAxjWBBhHwgIFEAAYgATCAgQQABgewgIGEAAYBBgewgIIEAAYBBgIGB6YAwCIBgGQBgWSBwMxLjegB7UUsgcDMC43uAemBsIHBTAuNC40yAcZ&sclient=gws-wiz-serp",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 189,
+   "name": "LuNail",
+   "address": "東京都杉並区荻窪４丁目２１−１２ 開成キャニオンビル 405",
+   "url": "https://share.google/X0vqQYYSXV2ebisSC",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 190,
+   "name": "HAIR OF ROOTS",
+   "address": "千葉県柏市泉町６−６０ ケンユウビル 102",
+   "url": "https://share.google/2RS4Fm0TgDIbeaJPc",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 191,
+   "name": "EARTH 大分下郡店",
+   "address": "大分県大分市下郡３１３６−６ アクロスガーデン B棟",
+   "url": "https://share.google/G4yskuP2bIuAaNLhM",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 192,
+   "name": "ラブリーズ",
+   "address": "東京都目黒区碑文谷2-6-15 パークステージ碑文谷207",
+   "url": "https://share.google/TZYhopP1CBWymYui7",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 193,
+   "name": "リラクゼーションサロンLuna",
+   "address": "千葉県成田市花崎町733-3 浪漫ヴィレッジF号棟",
+   "url": "https://maps.app.goo.gl/shPHbXnJuR8BNfkk9",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 194,
+   "name": "HIRAMORIE.T.S",
+   "address": "東京都豊島区東池袋1-33-3池袋シティハイツ401",
+   "url": "https://maps.app.goo.gl/HoX3YJNSj4C2VhkF9",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 195,
+   "name": "癒足空間Sola",
+   "address": "埼玉県春日部市粕壁東１丁目１９−１４ ホワイトストーンハイツ 303",
+   "url": "https://share.google/zBxtt3ytNiaJsWim4",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 196,
+   "name": "I'll b hair",
+   "address": "東京都世田谷区代沢２丁目３０−１９ Power House 110号室",
+   "url": "https://share.google/lVnX0WeSS8pNGLshj",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 197,
+   "name": "Luakolu −ルアコル−",
+   "address": "和歌山県岩出市金屋２４６−８",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=5fd60c16aeab8c88&hl=ja&kgmid=/g/11kk12wbs8&q=Luakolu+%E2%88%92%E3%83%AB%E3%82%A2%E3%82%B3%E3%83%AB%E2%88%92&shndl=30&shem=damc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=1026fe0f3fef7714&utm_source=damc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 198,
+   "name": "hair place next 【ヘアープレイスネクスト】",
+   "address": "北海道札幌市手稲本町２条４丁目４−３５ エーアイビル",
+   "url": "https://share.google/ua11PKE2ApKxatbgP",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 199,
+   "name": "l'iris【リリス】",
+   "address": "北海道札幌市中央区南１条西１丁目マナー白鳥６０９",
+   "url": "https://share.google/ThzJW7GiKUi4pHb0W",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 200,
+   "name": "ACHFILO 髪質改善 シールエクステ インナーカラーエクステ 前髪エクステ開発サロン",
+   "address": "東京都渋谷区渋谷１－２２－３ルアン渋谷1F",
+   "url": "https://share.google/LrAg0dANi0nv3rwhU",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 201,
+   "name": "ペッツ",
+   "address": "秋田県秋田市仁井田蕗見町１０−７４",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2286498253ea9ec4&hl=ja&sxsrf=AE3TifPx7l2YlU7YKdvTzXYKHbF4Kd46Qw:1762911865268&kgmid=/g/1tcyx7m3&q=%E3%83%9A%E3%83%83%E3%83%84&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=2823fa962832a7b0&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 202,
+   "name": "クリスタルビューティ　渋谷【ララピール/韓国肌管理/高密度超音波/痩身】",
+   "address": "東京都渋谷区渋谷１－９－４トーカン渋谷キャステール５０１",
+   "url": "https://share.google/3MmlEd1ggzBlrrAxU",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 203,
+   "name": "静岡 マッサージ&メンズ脱毛 Embrace",
+   "address": "静岡県静岡市駿河区中田１丁目５−３０ ビューティ ２０２",
+   "url": "https://maps.app.goo.gl/CyZSxA4hN1e1HBsj6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 204,
+   "name": "Glimpse(グリンプス)中津店",
+   "address": "大分県中津市万田６０９−１",
+   "url": "https://share.google/ca1LKkVB1Ev69z8e5",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 205,
+   "name": "HAIR DESIGNERS CREW dolphin　【ヘアーデザイナーズクルードルフィン】",
+   "address": "北海道札幌市中央区北１条西２３丁目１－１５　勇崎ＢＬＤ２Ｆ",
+   "url": "https://share.google/InIUkMMrfNcUWlzk9",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 206,
+   "name": "ヘアーサロンミリオン･メンズヘアーサロンミリオン",
+   "address": "秋田県秋田市旭南１丁目６−２２",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2286498253ea9ec4&hl=ja&sxsrf=AE3TifNyPNtINQc_9fyUqrjnKfUNqfE_jw:1762923883315&kgmid=/g/1tgp0mnw&q=%E3%83%98%E3%82%A2%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3%EF%BD%A5%E3%83%A1%E3%83%B3%E3%82%BA%E3%83%98%E3%82%A2%E3%83%BC%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%9F%E3%83%AA%E3%82%AA%E3%83%B3&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=0a9fa984c430d09e&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 207,
+   "name": "Growthの森",
+   "address": "栃木県宇都宮市岩曽町９７６−１６",
+   "url": "https://share.google/jYkf5S25OZBOT2v8p",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 208,
+   "name": "hair gallery Rupi",
+   "address": "北海道札幌市西区発寒１２条３丁目４－１３ アズミビル１Ｆ",
+   "url": "https://share.google/Kx5JI9gLNm5a3HWT2",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 209,
+   "name": "Private Salon Allure",
+   "address": "東京都新宿区新宿５丁目１５−６ 新宿光陽ビル ３０１号室",
+   "url": "https://share.google/Jji6xd45NJekP1mnL",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 210,
+   "name": "alpha 【アルファ】",
+   "address": "北海道札幌市東区北１５条東７丁目1-30フロンティア157　1F",
+   "url": "https://share.google/flcdYsrE2q8faWNSr",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 211,
+   "name": "OSHAREKAN【オシャレカン】",
+   "address": "北海道札幌市中央区北３条西２８‐２‐１　サンビルB２",
+   "url": "https://share.google/jnSKKkMtfo4D6wPbA",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 212,
+   "name": "Bells hair",
+   "address": "愛知県豊田市泉町２丁目８−７",
+   "url": "https://share.google/8ibhm1Y13NUzvYXkA",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 213,
+   "name": "aroma hair",
+   "address": "広島県東広島市西条町寺家西条町寺家７３９７−１",
+   "url": "https://share.google/p3avP3GR6cDQYLQNZ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 214,
+   "name": "CERRONE　【セロン】",
+   "address": "東京都目黒区中町２-44-13千葉ビル1Ｆ",
+   "url": "https://share.google/26oGqOuz39axl6qEd",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 215,
+   "name": "H3+ Luce (エイチスリープラス ルーチェ)",
+   "address": "北海道北見市とん田西町２１８−１７ とん田グリーンビル 2階",
+   "url": "https://share.google/Dq3oSz8OL98mdVYyj",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 216,
+   "name": "美容室ヴァンヴェール",
+   "address": "鹿児島県鹿児島市東千石町１−２４ セイワ文化ビル1F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=b1a2f407046ddbac&hl=ja&sxsrf=AE3TifNp23wBsYN8KluHGnKsMKlOH8xryA:1763004014106&kgmid=/g/1thxykfn&q=%E7%BE%8E%E5%AE%B9%E5%AE%A4%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%B4%E3%82%A7%E3%83%BC%E3%83%AB&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=247e34f8f10929d4&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 217,
+   "name": "K",
+   "address": "東京都渋谷区渋谷２-9-10キングビル5F",
+   "url": "https://share.google/TlYxpKpKQMUUI4V1A",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 218,
+   "name": "Re;clear",
+   "address": "滋賀県愛知郡愛荘町島川２９４−２ カンパーニュ 204",
+   "url": "https://share.google/3UEjwMmckSJee9jVm",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 219,
+   "name": "髪芝居",
+   "address": "宮崎県宮崎市神宮西２丁目２丁目２６８ 楠田ビル",
+   "url": "https://www.google.co.jp/search?hl=ja&q=0985-22-0477&lr=lang_ja",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 220,
+   "name": "サロンマミ",
+   "address": "静岡県富士市錦町１丁目１６－３１　メルヘン２１　３０２号室",
+   "url": "https://share.google/PujzUNuFKSiOaJIOL",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 221,
+   "name": "骨美整 salon 【コルミチョンサロン】",
+   "address": "東京都渋谷区代官山町１３－８　キャッスルマンション代官山４０３",
+   "url": "https://share.google/d7cR2lKL3F12ThzCT",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 222,
+   "name": "GOAT 原宿【ゴート】",
+   "address": "東京都渋谷区神宮前１－１０－３４　原宿コーポ別館　１F 右奥１１１",
+   "url": "https://share.google/djUclHK3dXnQMWIog",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 223,
+   "name": "CUT CLUB 髪切虫",
+   "address": "北海道札幌市東区東苗穂７条３丁目７-５",
+   "url": "https://maps.app.goo.gl/iFUBAD4u4NZ6uRC9A",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 224,
+   "name": "Lesherima 渋谷 マッフルラップ(フラットラッシュ)専門　【レシェリマ】",
+   "address": "東京都渋谷区渋谷1-8-6宮益坂STビル703",
+   "url": "https://share.google/Vzr6z93hkUipAznYg",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 225,
+   "name": "タイ古式整体サロンMOTIF",
+   "address": "東京都世田谷区若林１－８－８デンス河野５０３",
+   "url": "https://share.google/bBDi87tOviJqFPEs3",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 226,
+   "name": "DOLPHIN　salon",
+   "address": "東京都世田谷区桜新町１-29-1　松屋ビル2階",
+   "url": "https://share.google/9JeoQ983WeXeIPVmO",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 227,
+   "name": "marie hair",
+   "address": "兵庫県神戸市灘区深田町１丁目３−１０−１ ティーガーデン六甲道1F",
+   "url": "https://share.google/lZXyskpHAj3rXkkXQ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 228,
+   "name": "R・K Beauty～",
+   "address": "兵庫県姫路市東雲町６丁目１−２ マジェスティコート東雲町 1Ｆ",
+   "url": "https://share.google/ft3qht3jLARoT22Hb",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 229,
+   "name": "FIRST",
+   "address": "山梨県甲府市大里町５２５７",
+   "url": "https://share.google/JcaDKNeunDHNkqRwD",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 230,
+   "name": "アイブロウ Rain 都城とほく店",
+   "address": "宮崎県都城市都北町６３９９−２",
+   "url": "https://share.google/tkGMZUbvj2lvM5BZx",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 231,
+   "name": "ridomi",
+   "address": "愛知県名古屋市瑞穂区瑞穂通８丁目１５ 文明堂ビル 2F",
+   "url": "https://share.google/eW9VF84jV3URk7DaC",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 232,
+   "name": "Rea",
+   "address": "大阪府大阪市天王寺区大道２丁目９−８",
+   "url": "https://maps.app.goo.gl/Yc7fuUK8pQYBiqSV6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 233,
+   "name": "LWH nail & facial salon",
+   "address": "神奈川県川崎市中原区新城５丁目１０−９ ２",
+   "url": "https://share.google/Kovgzy2XwhbDhzlsd",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 234,
+   "name": "SALON BB",
+   "address": "愛知県名古屋市天白区福池２丁目３９３ MORICO TERRACE 1F",
+   "url": "https://share.google/ejT5AYvGkQkkPCKNX",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 235,
+   "name": "nail salon coreTH",
+   "address": "静岡県静岡市駿河区聖一色７１−６",
+   "url": "https://share.google/wwdx3B7CEi68jlszv",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 236,
+   "name": "サロン・ド・ボーテ・ラーンジュ",
+   "address": "岐阜県岐阜市北一色５丁目３−２３",
+   "url": "https://www.google.co.jp/search?hl=ja&q=058-247-1256&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 237,
+   "name": "【パーソナルカラー診断・骨格診断・顔タイプ診断】 studio SISU",
+   "address": "東京都渋谷区本町１丁目５−７ エスペランサ初台 408",
+   "url": "https://share.google/DoHqerY3hAlls9xIR",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 238,
+   "name": "ATサロン",
+   "address": "東京都大田区東馬込１－３０－８　グランドゥール２０２",
+   "url": "https://share.google/tTPWgyg6t1cTaMCNl",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 239,
+   "name": "【日本ハーブピーリング協会認定サロン】cerisierBEAUTE（スリジエボーテ）原宿",
+   "address": "東京都渋谷区神宮前１-17-5 原宿シュロス402",
+   "url": "https://share.google/KHu9TrSDx7KgzwTqv",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 240,
+   "name": "nail studio 0108",
+   "address": "宮崎県都城市大王町４−４",
+   "url": "https://share.google/Vlpcj0jckJdNVEfhP",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 241,
+   "name": "ポリッシュ",
+   "address": "熊本県宇土市松山町１６２６−１",
+   "url": "https://share.google/is7yAgRvhj3p3kGQz",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 242,
+   "name": "VIEW TOKYO",
+   "address": "東京都渋谷区渋谷１－２３－２５　wave　shibuya　１Ｆ・２Ｆ",
+   "url": "https://share.google/NUEvqMWiyHS30LNgm",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 243,
+   "name": "SERENO",
+   "address": "愛知県春日井市玉野台１丁目19−５",
+   "url": "https://share.google/OPXmzDebuDFX2o9fz",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 244,
+   "name": "CRATIS松本店",
+   "address": "長野県松本市梓川梓５４５１−２",
+   "url": "https://share.google/SCqsOFhybvNtGBk8C",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 245,
+   "name": "メンズ脱毛サロン Alonso 恵比寿",
+   "address": "東京都渋谷区東３-25-3ライオンズプラザ恵比寿609号室",
+   "url": "https://share.google/dHhz5lPXvkhKR3KVo",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 246,
+   "name": "Ali'i MEN'S SALON【アーリーメンズサロン】",
+   "address": "東京都渋谷区神宮前４-１５-１３ FROM RED 1A",
+   "url": "https://share.google/W1LFJtXzTqlbhXBOh",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 247,
+   "name": "小顔矯正/ララピール/ローマピンク【小顔&ドライヘッドスパCELIA】",
+   "address": "東京都渋谷区神宮前３－６－５　ヴィラッジオ神宮前Ｆ号室",
+   "url": "https://share.google/xUpYq4oj69aKc8YCP",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 248,
+   "name": "Beautysalon Moa【ビューティサロン モア】",
+   "address": "宮崎県日向市日知屋古田町１１４",
+   "url": "https://share.google/sGvRNFSG7SmT7F0Kg",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 249,
+   "name": "トータルビューティーサロンマジョリカ",
+   "address": "北海道釧路市昭和中央４丁目１８−１ イオンモール釧路昭和店 1F",
+   "url": "https://share.google/feuW9qAPqaBz8KTu3",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 250,
+   "name": "HairProduceSala",
+   "address": "岐阜県岐阜市住田町２丁目２１ よしのビル 1F",
+   "url": "https://www.google.co.jp/search?hl=ja&q=050-5486-1888&lr=lang_ja",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 251,
+   "name": "フェイシャル　痩身　脱毛　total beauty&WITH",
+   "address": "東京都世田谷区玉川３－２０－１０メリス玉川４０３",
+   "url": "https://share.google/604tEkjxV1OCWi54r",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 252,
+   "name": "TOKYO PARTNERS",
+   "address": "東京都世田谷区桜新町２－７－１　Ｋ・ＨＯＵＳＥ　１Ｆ",
+   "url": "https://share.google/FGPnEAduknlMTaFVq",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 253,
+   "name": "スタジオ マール",
+   "address": "群馬県藤岡市中栗須１７−１",
+   "url": "https://share.google/C9iu1CipJBf86fy7X",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 254,
+   "name": "本と南風",
+   "address": "北海道札幌市白石区南郷通１１北１―８　テナントB",
+   "url": "https://share.google/XKGjoKLUAuF97XbcK",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 255,
+   "name": "本格痩身&肌質改善サロン Eluna（エルナ）",
+   "address": "大分県大分市荏隈町１丁目４−３ ハイツSUGA201",
+   "url": "https://share.google/VU0pXk12H2Tp2b320",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 256,
+   "name": "理容クドー",
+   "address": "大阪府東大阪市西堤楠町３丁目９−１９",
+   "url": "https://share.google/p1ksBvv5hLHaWlrzo",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 257,
+   "name": "Andare",
+   "address": "愛知県名古屋市東区東区徳川１丁目１０−７−３０３",
+   "url": "https://maps.app.goo.gl/rj2JJqBwr4zyWehZ6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 258,
+   "name": "mimosa",
+   "address": "愛知県尾張旭市西大道町前田３７１７ VIVRE２１ビル ２階",
+   "url": "https://maps.app.goo.gl/umCxySArz4u8xyaG7",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 259,
+   "name": "完全個室プライベートサロン blanc美容室",
+   "address": "大阪府箕面市箕面６丁目２−１８",
+   "url": "https://share.google/UFzVhaNlxovHsFoaR",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 260,
+   "name": "BLIK　三軒茶屋【ブリキ】",
+   "address": "東京都世田谷区三軒茶屋２－３４－１２",
+   "url": "https://share.google/NQYJ3CmaxxKFRf0e0",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 261,
+   "name": "Hair FELIZ　【フェリス】",
+   "address": "東京都世田谷区松原５－４－１２　ヤリタビル１０２",
+   "url": "https://share.google/zqcuvlBy4umG3BRWt",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 262,
+   "name": "CBDリラクゼーション ロミロミ アロマ サロン～Ohana～",
+   "address": "大阪府大阪市北区鶴野町４−１１ 朝日プラザ梅田 13階1313号室",
+   "url": "https://share.google/uqGJOTdLdHvignY8b",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 263,
+   "name": "Ripple【リプル】",
+   "address": "東京都板橋区板橋１‐２７‐６　サンパレス２F",
+   "url": "https://share.google/C737KMqVnHUeRcUH5",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 264,
+   "name": "SOLFA　下赤塚",
+   "address": "東京都板橋区赤塚２-２-９-２F",
+   "url": "https://share.google/40Je60rUFa0HFuW5W",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 265,
+   "name": "PRIME",
+   "address": "岐阜県岐阜市今川町２丁目２２ 青木ビル 1階",
+   "url": "https://www.google.co.jp/search?hl=ja&q=050-1261-5163&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 266,
+   "name": "リブカラー(Lib color)",
+   "address": "東京都世田谷区祖師谷４－１－２２　葉栄ビル２Ｆ",
+   "url": "https://share.google/Rgskgwlmo0LZH8Fza",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 267,
+   "name": "TRESS 表参道【トレス】",
+   "address": "東京都渋谷区神宮前４－１４－６－１０１",
+   "url": "https://share.google/w1uFubwHQuKWxQQh7",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 268,
+   "name": "美容室笑夢",
+   "address": "長崎県雲仙市愛野町乙４１３−１",
+   "url": "https://share.google/NqoIiWTUGifJ2OvEI",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 269,
+   "name": "メンズ眉毛/メンズアイブロウ/メンズまつ毛パーマ　ceri表参道/明治神宮前",
+   "address": "東京都渋谷区神宮前３－３６－１７ 神宮前３丁目SYビル１F",
+   "url": "https://share.google/f5GswPExAo5wC7gjz",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 270,
+   "name": "Rhythm prema",
+   "address": "高知県高知市はりまや町１丁目１－２１ リズムビル",
+   "url": "https://share.google/CAnEJbq7NY5mqkFOX",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 271,
+   "name": "リンパリラクゼーション ネトピー",
+   "address": "北海道帯広市東１２条南６-1-3 TOWN7 B-2",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=73b20ffd545e0371&hl=ja&sxsrf=AE3TifMm_zUJQyOtTHBViFrLvHTXvlal2A:1763628901040&kgmid=/g/11f1267l4_&q=Netopy(%E6%96%B0HBL%E5%85%AC%E8%AA%8D%E3%82%B5%E3%83%AD%E3%83%B3/%E5%B0%8F%E9%A1%94%E3%82%B3%E3%83%AB%E3%82%AE%E7%9F%AF%E6%AD%A3/%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%AF%E3%83%83%E3%82%AF%E3%82%B9)&shndl=30&shem=dacl,damc,dimg2,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=8ea6dfb2046cd139&utm_source=dacl,damc,dimg2,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 272,
+   "name": "宮崎市美容室 Logi Hair",
+   "address": "宮崎県宮崎市橘通東３丁目７−２",
+   "url": "https://share.google/PW7fEiMQP9Z0De71C",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 273,
+   "name": "veretta.〜neyagawa〜《ベレッタ ネヤガワ》",
+   "address": "大阪府寝屋川市八坂町１５−２２ 共豊ビル 2F",
+   "url": "https://share.google/70Mmkf7QZXgEC6I3k",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 274,
+   "name": "TOTAL BEAUTY SALON belle",
+   "address": "茨城県龍ケ崎市白羽３丁目１１−１８",
+   "url": "https://share.google/O3xrfROvN8J4zqsgu",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 275,
+   "name": "Kafbet",
+   "address": "長崎県諫早市西栄田町１１９２−５",
+   "url": "https://share.google/Ykg6UuMnlYKUCNAqx",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 276,
+   "name": "hair salon Re?",
+   "address": "神奈川県横浜市青葉区榎が丘２６－２７ T.Tビルディング 2F",
+   "url": "https://share.google/1NCE5bUjU1Dv9Alz7",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 277,
+   "name": "BARBERSHOP FREESTYLE 舞木店",
+   "address": "愛知県岡崎市舞木町松下8",
+   "url": "https://share.google/tj6XhukUN1z9DcZgH",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 278,
+   "name": "le soleil",
+   "address": "奈良県橿原市新賀町325-3 MdC110号室",
+   "url": "https://maps.app.goo.gl/EpbqwqvK7j63w2Tv5",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 279,
+   "name": "パラゴン ヘアー",
+   "address": "大阪府三島郡島本町広瀬４丁目２３−９",
+   "url": "https://share.google/vehDbmAo7zslomFyB",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 280,
+   "name": "hair salon lavie",
+   "address": "埼玉県春日部市上蛭田１５０－３",
+   "url": "https://share.google/EXFEvFtu8RrUgJ9I7",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 281,
+   "name": "hair+min air",
+   "address": "宮崎県 hair+min air えびの市向江682",
+   "url": "https://share.google/vdzxWG8Z1V96WAdkw",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 282,
+   "name": "ラブリー",
+   "address": "鹿児島県奄美市名瀬末広町１７－１０",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=9d19827db9edfb9f&hl=ja&sxsrf=AE3TifOPgXDUBiatelZl1cfOpkcTvXjIng:1764038956037&kgmid=/g/1txy01sw&q=%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC&shndl=30&shem=damc,dimg2,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3ff7e45ef5545c5d&utm_source=damc,dimg2,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 283,
+   "name": "隠れ家サロンN",
+   "address": "東京都目黒区上目黒２丁目４６−５",
+   "url": "https://share.google/QFoVQiHYmJAWZTGJq",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 284,
+   "name": "アンベリール ゆかり サロン",
+   "address": "長野県伊那市境１０４６－２",
+   "url": "https://maps.app.goo.gl/HsAYmVKwECn4fRmi9?g_st=ipc",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 285,
+   "name": "エイジングケアサロン VIECE ビィーチェ",
+   "address": "広島県広島市中区紙屋町１丁目４−６ アウルスタイル紙屋町 4F",
+   "url": "https://maps.app.goo.gl/zYX6tXHxP3y4xMJo8",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 286,
+   "name": "メンズ脱毛 RISING【ライジング】菊陽光の森",
+   "address": "熊本県菊池郡菊陽町津久礼２１７９－３",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=9a662cfbafe167d5&hl=ja&sxsrf=AE3TifMeeK6XGn7yWFqL4_jobv96R2Dp8w:1764050390887&kgmid=/g/11w3f2ch8j&q=%E3%83%A1%E3%83%B3%E3%82%BA%E8%84%B1%E6%AF%9B+RISING%E3%80%90%E3%83%A9%E3%82%A4%E3%82%B8%E3%83%B3%E3%82%B0%E3%80%91%E8%8F%8A%E9%99%BD%E5%85%89%E3%81%AE%E6%A3%AE&shndl=30&shem=damc,dimg2,ptotplc,shrtn&source=sh/x/loc/act/m1/2&kgs=b2d45e166a86d49b&utm_source=damc,dimg2,ptotplc,shrtn,sh/x/loc/act/m1/2",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 287,
+   "name": "Cloud",
+   "address": "茨城県守谷市大柏１００８－２７ フローラーリア １０１",
+   "url": "https://share.google/0NfJCjg2au9QXJiT6",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 288,
+   "name": "訪問美容SAKURA",
+   "address": "広島県三原市西町１丁目１－９",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=43c455ccb544f936&hl=ja&sxsrf=AE3TifNWPvgePODPLmV1pBG38XoVa7zUrg:1764064882821&kgmid=/g/11sk4n4p76&q=%E8%A8%AA%E5%95%8F%E7%BE%8E%E5%AE%B9SAKURA&shndl=30&shem=damc,dimg2,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=7192fbd29e1a0537&utm_source=damc,dimg2,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 289,
+   "name": "Ｒｅｖｅ",
+   "address": "熊本県熊本市中央区琴平２丁目９−７３",
+   "url": "https://share.google/TawqIR4rymWFKWeuG",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 290,
+   "name": "VIXUS the bay",
+   "address": "長崎県長崎市元船町９−１０",
+   "url": "https://share.google/3fO51U3rNYG3GbHDv",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 291,
+   "name": "【育毛・発毛・肌改善・脱毛】に特化したプライベートサロンK9PLUS/プロセルセラピーズ和歌山",
+   "address": "和歌山県和歌山市島橋東ノ丁１２−２１",
+   "url": "https://share.google/L6eXebdNfAAXy26R6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 292,
+   "name": "トータルビューティーCQ",
+   "address": "神奈川県横浜市都筑区池辺町４３６",
+   "url": "https://share.google/MVQC73HkKqKRa5idV",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 293,
+   "name": "ウイングハーツ",
+   "address": "茨城県石岡市鹿の子１丁目１８−３４",
+   "url": "https://share.google/FEjoHwp2D36rRpMyd",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 294,
+   "name": "古民家サロンATELIER蓮華",
+   "address": "大分県大分市浜町東4組",
+   "url": "https://share.google/jBeYRwpxgJRTRN0pe",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 295,
+   "name": "モイスティーヌアップル荒尾サロン",
+   "address": "熊本県荒尾市 下井手１６１６－６７－２Ｆ",
+   "url": "https://share.google/NcelJRS4S1D7W6VL6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 296,
+   "name": "全室完全個室髪質改善 BLENDブレンド(byGYARIRU )",
+   "address": "長崎県西彼杵郡時津町浜田郷８２２−３",
+   "url": "https://share.google/LhEpJH0VMS0g0SMq1",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 297,
+   "name": "Salon Prima 太秦天神川店",
+   "address": "京都府京都市右京区太秦森ケ東町３０−２ GARAGE39CAFE 2Fテナントスペース内",
+   "url": "https://share.google/5KFnvb3WFApCZjh6w",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 298,
+   "name": "Lupinus【ルピナス】",
+   "address": "熊本市東区東野３丁目３−１ レジデンス園 201",
+   "url": "https://share.google/J2SIlufWLmHK3oTJF",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 299,
+   "name": "メディカルサロンステーリア",
+   "address": "大阪府高槻市高槻町６−１１ ガルリ高槻 1F EST",
+   "url": "https://share.google/2Yh4Q2trmQprIGIbW",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 300,
+   "name": "エステティックサロンWa・mingu",
+   "address": "茨城県つくば市二の宮２丁目",
+   "url": "https://share.google/DUoS9XlMxrjpDuDDj",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 301,
+   "name": "いろ髪工房",
+   "address": "愛知県名古屋市緑区桶狭間上の山９０５",
+   "url": "https://share.google/nYQy7pJJOjhGVU7zV",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 302,
+   "name": "N plus",
+   "address": "大分県大分市森１２３４",
+   "url": "https://share.google/KBknL2b4cMsKRTz4s",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 303,
+   "name": "あろはす柏",
+   "address": "千葉県柏市明原４丁目１１−１ リライアンス 101",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=b3be0526dc1b5248&hl=ja&sxsrf=AE3TifPW7MN5WzUe2fTI8ED1NEOzxXCx5Q:1764392190720&kgmid=/g/11q4d0g79s&q=%E3%81%82%E3%82%8D%E3%81%AF%E3%81%99%E6%9F%8F&shndl=30&shem=damc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3fed0764666029a5&utm_source=damc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 304,
+   "name": "cerisierBEAUTÉ",
+   "address": "東京都渋谷区神宮前１丁目１７−５ 原宿シュロス城西ビル 402",
+   "url": "https://share.google/8zGFM1O7ktLrFnwmi",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 305,
+   "name": "骨美人",
+   "address": "宮崎県宮崎市清水１丁目５−１３",
+   "url": "https://share.google/1GlXCs6LC5idzyFRs",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 306,
+   "name": "WhiteBeautyLab〜ホワイトビューティーラボ〜",
+   "address": "兵庫県明石市大明石町２丁目２−３",
+   "url": "https://share.google/JvhJm4QZyJ2pDQOXZ",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 307,
+   "name": "脱毛さろん　ゆでたまご。",
+   "address": "鹿児島県鹿屋市川西町4305-3",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=02577cfd3aace2eb&hl=ja&kgmid=/g/11vq49__kd&q=%E7%BE%8E%E3%82%B5%E3%83%AD%E3%83%B3+%E3%82%86%E3%81%A7%E3%81%9F%E3%81%BE%E3%81%94%E3%80%82%E3%83%BC%E9%B9%BF%E5%B1%8B%E5%B8%82/%E7%BE%8E%E8%82%8C%E5%B0%82%E9%96%80%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BC&shndl=30&shem=damc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=5bde66882e0ff681&utm_source=damc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 308,
+   "name": "【女性のためのボディメイクトレーニング/美姿勢】ヴァリアシオン",
+   "address": "埼玉県さいたま市中央区上落合３-1-1 3F",
+   "url": "https://www.google.com/search?q=%E3%80%90%E5%A5%B3%E6%80%A7%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%82%A4%E3%82%AF%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0/%E7%BE%8E%E5%A7%BF%E5%8B%A2%E3%80%91%E3%83%B4%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%B7%E3%82%AA%E3%83%B3%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E8%90%BD%E5%90%88%EF%BC%93-1-1%203F",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 309,
+   "name": "StarLily fiore",
+   "address": "東京都世田谷区若林２丁目２−５",
+   "url": "https://share.google/hEJHiu5OeWoosT549",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 310,
+   "name": "Schon-シェーン-",
+   "address": "大分県大分市片島５７１ 302",
+   "url": "https://share.google/mFXneqcgsyC28GNgl",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 311,
+   "name": "タイ古式マッサージ専門店 Aromdee",
+   "address": "大分県大分市今津留１丁目２−７ ボン長田 206",
+   "url": "https://share.google/qYKytqUEQVkOiQXxK",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 312,
+   "name": "ドライヘッドスパ専門店 ころん",
+   "address": "宮崎県宮崎市橘通東１丁目６−１ マリベールエスポワール 203号室",
+   "url": "https://share.google/nH4TGDuWdIukOYr1A",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 313,
+   "name": "hairs TEPPEN",
+   "address": "兵庫県高砂市米田町米田２７８−１",
+   "url": "https://share.google/hI6KQGhuWfoMpO50I",
+   "type": "理・美容院",
+   "d1": "理容室",
+   "d2": ""
+  },
+  {
+   "row": 314,
+   "name": "Hair&Aesthetic　美容室　アフロス",
+   "address": "東京都板橋区常盤台２‐１５‐１０",
+   "url": "https://share.google/TiohgaeF1D4HKDXY9",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 315,
+   "name": "ほぐしのたゆらぎ 改善と癒しの穏和グループ",
+   "address": "宮崎県宮崎市吉村町平塚甲１８２０−３",
+   "url": "https://share.google/pdPfHsS6FX8lUSuia",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 316,
+   "name": "リラクゼーションサロンGokai",
+   "address": "大阪府吹田市津雲台２丁目２−２ C34",
+   "url": "https://share.google/OSIGt02TzXYmwu782",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 317,
+   "name": "Rea",
+   "address": "大阪府大阪市天王寺区大道２丁目９−８",
+   "url": "https://share.google/kzUM4p6xkmuzsGnN5",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 318,
+   "name": "Medical beauty salon èclat",
+   "address": "三重県津市東丸之内４−１０ 津松菱 ３F",
+   "url": "https://share.google/IQ8tVvXtuc3wX1R4u",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 319,
+   "name": "joyeux hair design 姫路",
+   "address": "兵庫県姫路市三左衛門堀東の町１３５",
+   "url": "https://share.google/KdL8wLtX5ryzvNK3l",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 320,
+   "name": "トアボーテ 【フランスエステ＆スウェディッシュマッサージ】",
+   "address": "兵庫県神戸市中央区下山手通３丁目１−１５ シェンビル 702",
+   "url": "https://share.google/PcpR8rf1fnkjaLsJK",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 321,
+   "name": "Loufreasy hair & life【ラフリジーヘアーアンドライフ】",
+   "address": "東京都渋谷区代々木１－５４－１　YS.Iビル４F",
+   "url": "https://share.google/uC1JLwN72BGdKeMDx",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 322,
+   "name": "ACE MEN'S SALON",
+   "address": "長崎県佐世保市常盤町３−９ ダイセイ常盤 1F",
+   "url": "https://share.google/ONhJnrTwuAI5SPJfZ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 323,
+   "name": "Embellir〜アンベリール〜",
+   "address": "熊本県菊池郡菊陽町",
+   "url": "https://share.google/VLKqoWgh8Er02C10F",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 324,
+   "name": "nail salon ilusionada【ネイルサロン イルショナーダ】",
+   "address": "沖縄県中頭郡読谷村渡慶次",
+   "url": "https://www.google.co.jp/search?hl=ja&q=nail%20salon%20ilusionada%E3%80%90%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%80%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%BC%E3%83%80%E3%80%91%20%E6%B2%96%E7%B8%84%E7%9C%8C&lr=lang_ja",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 325,
+   "name": "Lani BEAUTY（ラニ ビューティー）",
+   "address": "福島県いわき市平倉前 117-1 クリーンビル2-102号室",
+   "url": "https://share.google/4q4XSYZ83t79rg4sT",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 326,
+   "name": "Hair Dco",
+   "address": "沖縄県沖縄市松本１丁目１１−２ レジデンス美里 1階テナント",
+   "url": "https://share.google/dpqmm6RXPUoPf2zHS",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 327,
+   "name": "ヘアセット&フォト Studio Color【ヘアセット&フォト スタジオカラー】",
+   "address": "東京都立川市錦町２-1-26 Nビルディング401",
+   "url": "https://share.google/N1RDT3UuEmPHaEZkz",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 328,
+   "name": "BODY CONDITIONING Luke",
+   "address": "福島県相馬市中村字泉町６−４２ CSビル 2階北側",
+   "url": "https://share.google/qZ8UffP5umSuUg7B8",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 329,
+   "name": "ComfOrtable body & mental care salon",
+   "address": "岐阜県大垣市中曽根町１ 尾関ビル",
+   "url": "https://share.google/AHlcdouYUDlOGLQp2",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 330,
+   "name": "ヨハネスハート",
+   "address": "静岡県熱海市伊豆山５７７",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E3%83%A8%E3%83%8F%E3%83%8D%E3%82%B9%E3%83%8F%E3%83%BC%E3%83%88%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%86%B1%E6%B5%B7%E5%B8%82%E4%BC%8A%E8%B1%86%E5%B1%B1%EF%BC%95%EF%BC%97%EF%BC%97&lr=lang_ja#ebo=0",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 331,
+   "name": "ダーナ·ヘアーアンドメイクアップ",
+   "address": "長崎県佐世保市中里町１３８",
+   "url": "https://share.google/Ik5s1XCkLMMGEFdZt",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 332,
+   "name": "佐世保市 hair room Socio.",
+   "address": "長崎県佐世保市川下町３７４ カラー 縮毛矯正 パーマ",
+   "url": "https://share.google/7C6vFEtzzU0cTF0nj",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 333,
+   "name": "黄土よもぎ蒸し＆ハーブピーリング専門サロン Raffelia",
+   "address": "神奈川県横浜市南区弘明寺町126番地",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=0690ac81dbc3848e&hl=ja&kgmid=/g/11c554fl5y&q=%E9%BB%84%E5%9C%9F%E3%82%88%E3%82%82%E3%81%8E%E8%92%B8%E3%81%97%EF%BC%86%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B0%82%E9%96%80%E3%82%B5%E3%83%AD%E3%83%B3+Raffelia&shndl=30&shem=bdsle,damc,lcuae,ptotplc,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=a5ada7b2f96ea007&utm_source=bdsle,damc,lcuae,ptotplc,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 334,
+   "name": "ボディケア 雅",
+   "address": "静岡市葵区呉服町２丁目５−２３ ４０１号 4階",
+   "url": "https://share.google/MIkv4vTT7hfl496fP",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 335,
+   "name": "メディカルアロマサロン Le Muguet",
+   "address": "滋賀県守山市今宿２丁目１０−２１",
+   "url": "https://maps.app.goo.gl/7FSFAPmaRfUcrdcX7",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 336,
+   "name": "美髪専門 サロンド ペペ",
+   "address": "長崎県佐世保市大野町７７−３１",
+   "url": "https://share.google/zowBS5a3WY068EJrJ",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 337,
+   "name": "アルファタッチ",
+   "address": "静岡県浜松市中央区中央１丁目１７−２２",
+   "url": "https://share.google/U7Sb9MWwwPCZIXz3k",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 338,
+   "name": "エクステ＆ヘアセットサロン ミザリー",
+   "address": "大分県大分市都町２丁目３－６東洋会館４F",
+   "url": "https://share.google/eWTNj3PyCAHr81gNm",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 339,
+   "name": "SOWAT Thai Massage【ソーワット　タイマッサージ】",
+   "address": "東京都新宿区新宿５丁目８−２３ Aspガーデン新宿 701",
+   "url": "https://share.google/fopzY5CoJMNXZ7brI",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 340,
+   "name": "アーク・ヘアー（Ａｒｃｈａｉｒ）",
+   "address": "長崎県長崎市万屋町３−２２",
+   "url": "https://share.google/pWWiR0Nr0zwFuDBFX",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 341,
+   "name": "脱毛 エステサロン PEAK",
+   "address": "神奈川県平塚市明石町１２−２１ Simsビル 4b",
+   "url": "https://share.google/nek3VJnPU3jRhlOMr",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 342,
+   "name": "Salon Laule'a 太閤通店",
+   "address": "愛知県名古屋市中村区太閤通６丁目１ ツヅキビル 4D",
+   "url": "https://share.google/2b3SOKovGyOYJFbvg",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 343,
+   "name": "Nailsalon Cherish",
+   "address": "東京都新宿区新宿３丁目８−８ 平田ビル 4F",
+   "url": "https://share.google/0ySOxomRCi6juR3Hk",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 344,
+   "name": "腸ラボ日本橋",
+   "address": "東京都中央区日本橋蛎殻町１丁目２９",
+   "url": "https://share.google/03WebwfsBIznyXuoz",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 345,
+   "name": "脂肪冷却専門サロンLiberty",
+   "address": "東京都町田市つくし野２丁目9−４",
+   "url": "https://share.google/9PGWUDdi0rfog4ZWe",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 346,
+   "name": "CHARME【シャルム】",
+   "address": "福岡県久留米市津福本町１６１８−３",
+   "url": "https://share.google/n3yXiWgvJlUiYx3Yl",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 347,
+   "name": "【都度通い専門】脱毛 エステサロン Salon de An サロンド アン",
+   "address": "新潟県南魚沼市東泉田６３６−１１",
+   "url": "https://maps.app.goo.gl/YybZUbrzdcxvS6cm6",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "脱毛サロン"
+  },
+  {
+   "row": 348,
+   "name": "肩こり頭痛専門 肩甲骨はがしリンパケアサロン relum〜りるむ",
+   "address": "宮崎県宮崎市原町３−１４",
+   "url": "https://share.google/npax8fGGN072J9sVz",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 349,
+   "name": "ストレッチ＆ボディケア Re mind 駒込六義園前店【リマインド】 マッサージ/ヘッドスパ/エステ/アロマ/フット",
+   "address": "東京都文京区本駒込６丁目１５−２ 101 マッサージ",
+   "url": "https://share.google/0ax2moLm3eX1jS0X3",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 350,
+   "name": "カラダ元気×オハダ綺麗 Pillea ピレア",
+   "address": "静岡県静岡市葵区七間町１−６ トンボヤビル ２F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3b5cf2041e18d574&hl=ja&sxsrf=AE3TifM_3bGXJhOlbSrqXIQIlRn48Gtd_g:1766483810244&kgmid=/g/11mkb4xbw1&q=%E3%82%AB%E3%83%A9%E3%83%80%E5%85%83%E6%B0%97%C3%97%E3%82%AA%E3%83%8F%E3%83%80%E7%B6%BA%E9%BA%97+Pillea+%E3%83%94%E3%83%AC%E3%82%A2&shndl=30&shem=ptotplc,shrtn&source=sh/x/loc/uni/m1/1&kgs=ff73c3a67b0319f3&utm_source=ptotplc,shrtn,sh/x/loc/uni/m1/1",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 351,
+   "name": "vitamin-A | 美容室",
+   "address": "東京都新宿区新宿２丁目１３−３ 1F",
+   "url": "https://share.google/qhFHQG2KrMBiDIu40",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 352,
+   "name": "ヘアクリック髪美人",
+   "address": "鹿児島県日置市伊集院町郡１丁目１０４ パピヨン １０３号",
+   "url": "https://share.google/NU49hprpdbvWSzCDU",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 353,
+   "name": "SHINA STYLE",
+   "address": "福岡県北九州市門司区大里本町１丁目３−１２",
+   "url": "https://share.google/DdFKlZwNqNw75kjZ2",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 354,
+   "name": "リアンジェぺぺ",
+   "address": "奈良県橿原市地黄町２７６−１",
+   "url": "https://share.google/2J9wAnX7ve3Q94ivk",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 355,
+   "name": "くつろぎ空間 多羅",
+   "address": "長野県木曽郡木曽町開田高原西野",
+   "url": "https://share.google/6V9d3pcvC2OLMw3kj",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "フェイシャル"
+  },
+  {
+   "row": 356,
+   "name": "Nail's pixie ～REVI room～（ネイルズピクシー ルヴィルーム）",
+   "address": "岡山県岡山市南区西市８５８−１ リバティー 1階",
+   "url": "https://share.google/ygMCPxTgEHAh8MZo0",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "ネイル・マツエク"
+  },
+  {
+   "row": 357,
+   "name": "ドライヘッドスパサロンHALU",
+   "address": "宮城県仙台市太白区八木山弥生町２３−３０ カーサEden Beni",
+   "url": "https://share.google/dbHHe6xNWMN2IQHfx",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 358,
+   "name": "プロの極上もみほぐし＆脱毛専門店　Freedom",
+   "address": "富山県富山市婦中町速星８９−１ Ａ・ｗａｓｈ 婦中ベース Ａ３－２",
+   "url": "https://share.google/GHP7exbfz0V05XdFt",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 359,
+   "name": "Melo mellow",
+   "address": "福島県福島市御山中川原８０−２",
+   "url": "https://share.google/XELys456pBbISYrme",
+   "type": "理・美容院",
+   "d1": "美容室",
+   "d2": ""
+  },
+  {
+   "row": 360,
+   "name": "health & beauty Mia",
+   "address": "兵庫県明石市沢野南町１丁目2−４ アメニティーハウス 103",
+   "url": "https://share.google/TAj3zr6u2uOtWwtTn",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  },
+  {
+   "row": 361,
+   "name": "サロン プリーヴィ ドゥブルヴェ 茨城守谷店 エステ 美容整体",
+   "address": "茨城県守谷市百合ケ丘３丁目２８０２−２５",
+   "url": "https://share.google/bGf7rczY2FyiPiEgf",
+   "type": "美容サロン（ネイル・エステ）",
+   "d1": "",
+   "d2": "エステサロン"
+  }
+ ],
+ "ボディケア": [
+  {
+   "row": 2,
+   "name": "ももの花整骨院 伊達院",
+   "address": "福島県伊達市坂ノ上9－１ 1階",
+   "url": "https://share.google/0DYLkjXnFSaxlBusH",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 3,
+   "name": "おおさわ整骨院",
+   "address": "大阪府大阪市都島区友渕町２丁目１２－２１ 高倉グリーンマンション",
+   "url": "https://www.google.com/search?q=%E3%81%8A%E3%81%8A%E3%81%95%E3%82%8F%E6%95%B4%E9%AA%A8%E9%99%A2%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E9%83%BD%E5%B3%B6%E5%8C%BA%E5%8F%8B%E6%B8%95%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%92%EF%BC%8D%EF%BC%92%EF%BC%91%20%E9%AB%98%E5%80%89%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 4,
+   "name": "なごみ整骨院",
+   "address": "北海道札幌市手稲区星置２条３丁目７−１０ メゾン・St 1F",
+   "url": "https://www.google.com/search?q=%E3%81%AA%E3%81%94%E3%81%BF%E6%95%B4%E9%AA%A8%E9%99%A2%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%89%8B%E7%A8%B2%E5%8C%BA%E6%98%9F%E7%BD%AE%EF%BC%92%E6%9D%A1%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%97%EF%BC%8D%EF%BC%91%EF%BC%90%20%E3%83%A1%E3%82%BE%E3%83%B3%E3%83%BBSt%201F",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 5,
+   "name": "スカイブルー鍼灸接骨院",
+   "address": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+   "url": "https://share.google/e6TcWLRutaD1VJgaW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 6,
+   "name": "福岡中央整体",
+   "address": "福岡県福岡市中央区草香江２丁目８−３ 草香江スカイハイツ 201",
+   "url": "https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%AD%E5%A4%AE%E6%95%B4%E4%BD%93/@33.5798895,130.3744294,17z/data=!3m1!5s0x354193c8bbceaccf:0x63c978d545e87ffb!4m15!1m8!3m7!1s0x354193cf618f2415:0x420afc70e5ae310c!2z56aP5bKh5Lit5aSu5pW05L2T!8m2!3d33.5799931!4d130.3743752!10e5!16s%2Fg%2F1tqyc8gf!3m5!1s0x354193cf618f2415:0x420afc70e5ae310c!8m2!3d33.5799931!4d130.3743752!16s%2Fg%2F1tqyc8gf?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 7,
+   "name": "OTA飯田橋整体院",
+   "address": "東京都千代田区富士見２丁目２−９ 201",
+   "url": "https://www.google.com/maps/place/OTA%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%95%B4%E4%BD%93%E9%99%A2/@35.6994528,139.7452175,17z/data=!4m15!1m8!3m7!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!2zT1RB6aOv55Sw5qmL5pW05L2T6Zmi!8m2!3d35.6994142!4d139.7452535!10e5!16s%2Fg%2F11h10bzq4q!3m5!1s0x60188d302cd3d323:0xff9895c1bc3c1f2a!8m2!3d35.6994142!4d139.7452535!16s%2Fg%2F11h10bzq4q?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 8,
+   "name": "しぶや整骨院",
+   "address": "愛知県豊田市渋谷町３丁目３９−５",
+   "url": "https://share.google/ODbrW7suKCy2wfohW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 9,
+   "name": "きよしヶ丘整骨院",
+   "address": "千葉県松戸市小金きよしケ丘３丁目４−２２ メゾン北小金 202",
+   "url": "https://www.google.com/search?q=%E3%81%8D%E3%82%88%E3%81%97%E3%83%B6%E4%B8%98%E6%95%B4%E4%BD%93%E9%99%A2%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E5%B0%8F%E9%87%91%E3%81%8D%E3%82%88%E3%81%97%E3%82%B1%E4%B8%98%EF%BC%93-%EF%BC%94-%EF%BC%92%EF%BC%92%20%E3%83%A1%E3%82%BE%E3%83%B3%E5%8C%97%E5%B0%8F%E9%87%91",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 10,
+   "name": "大和整骨院",
+   "address": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+   "url": "https://share.google/sM08f1i8ndBHcyrDj",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 11,
+   "name": "ふたば治療院 鍼灸・整体",
+   "address": "愛知県 弥富市鍋田町 稲山393番地84",
+   "url": "https://maps.app.goo.gl/bZz7X6k2eZWqbJoC6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 12,
+   "name": "ボディーケアフルヤ",
+   "address": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=97ae6d3e0a80ce36&hl=ja&sxsrf=AE3TifOVxX3rFXBDTpzpvWgmTOg5igWcag:1757733121679&kgmid=/g/1th5cmfy&q=%E3%83%9C%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B1%E3%82%A2%E3%83%95%E3%83%AB%E3%83%A4&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e453e1238c5e9110&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 13,
+   "name": "千代延整体院",
+   "address": "広島県広島市西区横川新町１５−２９ パイオニアハイツ",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6b3628cd647e4563&hl=ja&kgmid=/g/12hny_l82&q=%E5%8D%83%E4%BB%A3%E5%BB%B6%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b77b07c9d904f68c&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 14,
+   "name": "RE:BODY接骨院",
+   "address": "神奈川県相模原市緑区下九沢２０３０−３",
+   "url": "https://share.google/I6wicjJ23QY1lxDhU",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 15,
+   "name": "オリーブの木 接骨院",
+   "address": "静岡県浜松市中央区泉３丁目９－４３",
+   "url": "https://share.google/Ud6KZNEkoj8lYWNa3",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 16,
+   "name": "土肥接骨院",
+   "address": "東京都江戸川区新堀１丁目３１−９",
+   "url": "https://share.google/wgziqXtJ32IvydcSA",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 17,
+   "name": "ボディメンテナンスサロン BODY EVO",
+   "address": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=046dc2c9c0fa6748&hl=ja&sxsrf=AE3TifM4gOvAr5eS_RmchOAUSZckQbUpNA:1758160428269&kgmid=/g/11t9n7q_w2&q=%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3+BODY+EVO&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=73b75d474d565786&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 18,
+   "name": "四ツ池Reborn整骨院",
+   "address": "静岡県浜松市中央区幸５丁目２−１０",
+   "url": "https://share.google/tuscGnWyT0cz4AJhi",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 19,
+   "name": "なかやま整骨院",
+   "address": "大阪府東大阪市岸田堂西２丁目１−１０ 永井ビル",
+   "url": "https://share.google/yaN8BOQcGkTXRV0qS",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 20,
+   "name": "おがわ針灸院",
+   "address": "埼玉県川越市的場北2-24-11",
+   "url": "https://share.google/L7NJRKkDu6HDtHQ9c",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 21,
+   "name": "十間坂接骨院",
+   "address": "神奈川県茅ヶ崎市十間坂２丁目２－３３ ビル",
+   "url": "https://share.google/bA2IvLqn31zxcdbZc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 22,
+   "name": "みさお接骨院",
+   "address": "神奈川県茅ヶ崎市矢畑３９６－１",
+   "url": "https://share.google/K2kTTUMqFn9TbZwrw",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 23,
+   "name": "もみらく整体院",
+   "address": "東京都板橋区赤塚２丁目９−６",
+   "url": "https://share.google/hTbyZcPs8Djmzri5L",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 24,
+   "name": "のりちゃん鍼灸整骨院",
+   "address": "長野県上田市上丸子１６６３",
+   "url": "https://share.google/IdA1alynTCUpy4pzH",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 25,
+   "name": "吉原氣療院",
+   "address": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=ccc88b753bb383cd&hl=ja&sxsrf=AE3TifONgqgwrl9ENIzORIca--TeIv_Vzw:1758523410982&kgmid=/g/11b7l42353&q=%E5%90%89%E5%8E%9F%E6%B0%A3%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=7c6c2097e1d88389&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 26,
+   "name": "佐々木接骨院",
+   "address": "福島県郡山市並木２丁目１３−１４",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=7cb9f156b4b884f6&hl=ja&sxsrf=AE3TifM7mvhqgmFqTl05AmJFc_UKltKtbQ:1758686985718&kgmid=/g/1wtbt_6w&q=%E4%BD%90%E3%80%85%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=21fb3148b97213ca&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 27,
+   "name": "らく整骨院",
+   "address": "長崎県諫早市高来町峰４６８−８",
+   "url": "https://share.google/nb8qpTMxf0QyTIbIj",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 28,
+   "name": "Supreme Ace",
+   "address": "埼玉県新座市大和田５丁目８−２ 志木パストラル1 一階",
+   "url": "https://share.google/ijcRgnOetUAiQLZLz",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 29,
+   "name": "心と骨盤調律処 ままの和",
+   "address": "東京都中野区野方６丁目６−７ 1F",
+   "url": "https://share.google/Pe2YiNNefqXHoaopc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 30,
+   "name": "Personal Kick Studio N",
+   "address": "東京都千代田区麹町３丁目3番地8 麹町プリンス通りビル 6F&7F",
+   "url": "https://share.google/PrNYlVUnux183gJQf",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 31,
+   "name": "そうしゅん整骨院",
+   "address": "岡山県岡山市南区下中野１４０１−８",
+   "url": "https://share.google/BOCdwOGVceLAywCfc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 32,
+   "name": "Conditioning Gym AU-GO",
+   "address": "熊本県熊本市中央区桜町２−３６ 錦桜町ビル 1F",
+   "url": "https://share.google/CnUTfZsaYJrfj76Lc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 33,
+   "name": "Kanade",
+   "address": "新潟県長岡市荻野１丁目６－８",
+   "url": "https://www.google.com/search?q=Kanade%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E9%95%B7%E5%B2%A1%E5%B8%82%E8%8D%BB%E9%87%8E%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%96%EF%BC%8D%EF%BC%98",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 34,
+   "name": "大場はりきゅう接骨院",
+   "address": "愛知県日進市岩崎町南高上 149番地 2F 出原ビル",
+   "url": "https://share.google/j1RIWMRjZnzeSYoS4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 35,
+   "name": "中京接骨院",
+   "address": "愛知県西尾市一色町味浜江向１３",
+   "url": "https://share.google/21K8OaMGIoDHU0i7h",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 36,
+   "name": "ZEROLE鍼灸整体院",
+   "address": "愛媛県松山市石風呂町５０−１",
+   "url": "https://share.google/fIB7r7Oum7FNGYF2D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 37,
+   "name": "たはら鍼灸接骨院",
+   "address": "福島県福島市渡利岩崎町６３−１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=89fc9c58379db198&hl=ja&sxsrf=AE3TifPkIBrN36Y_oHVzFHO3lNz9Lmajqg:1759138221631&kgmid=/g/11m6m3bsqy&q=%E3%81%9F%E3%81%AF%E3%82%89%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=f5d8fb1d788c81d8&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 38,
+   "name": "げんき接骨院",
+   "address": "京都府亀岡市篠町馬堀駅前１丁目３－３ マナ・コート",
+   "url": "https://share.google/wpuJqEBYjMtFZoced",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 39,
+   "name": "ひろ整骨院",
+   "address": "山梨県甲斐市長塚１６４−１ マルマンビル 101",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=bf7843588f50460d&hl=ja&sxsrf=AE3TifNVh2VjifRTyErMWpsT_XaAHiSx8Q:1759223351525&kgmid=/g/11f6nfmtx4&q=%E3%81%B2%E3%82%8D%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=2dc51beab5f82608&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 40,
+   "name": "整足院 徳島店（外反母趾・足の痛み専門）",
+   "address": "徳島県徳島市西須賀町東開４１−４",
+   "url": "https://www.google.com/maps/place/%E6%95%B4%E8%B6%B3%E9%99%A2+%E5%BE%B3%E5%B3%B6%E5%BA%97%EF%BC%88%E5%A4%96%E5%8F%8D%E6%AF%8D%E8%B6%BE%E3%83%BB%E8%B6%B3%E3%81%AE%E7%97%9B%E3%81%BF%E5%B0%82%E9%96%80%EF%BC%89/@34.0321459,134.5476782,17z/data=!3m1!4b1!4m6!3m5!1s0x35530d1a7af2e09f:0xb0176fc3d511d327!8m2!3d34.0321459!4d134.5476782!16s%2Fg%2F11lf953r71?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 41,
+   "name": "大住鍼灸整骨院",
+   "address": "徳島県徳島市佐古三番町１６−８",
+   "url": "https://www.google.com/maps/place/%E5%A4%A7%E4%BD%8F%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.0808406,134.5364412,17z/data=!3m1!4b1!4m6!3m5!1s0x355372968443048f:0xe21d5b28d760d011!8m2!3d34.0808406!4d134.5364412!16s%2Fg%2F1tgh5cw2?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 42,
+   "name": "みぶ大宮整骨院",
+   "address": "京都府京都市中京区壬生坊城町６６－５",
+   "url": "https://share.google/gWAMUBwuugxbcTHG1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 43,
+   "name": "まんぼう接骨院",
+   "address": "広島県尾道市因島中庄町３８３８−１",
+   "url": "https://share.google/57EbRwaZ6AF5d6qVB",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 44,
+   "name": "niini CELLULAM",
+   "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+   "url": "https://share.google/tYrd8p8MkAOXe6ZO2",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 45,
+   "name": "伏見パーソナルジム　SHION",
+   "address": "愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+   "url": "https://www.google.com/search?q=伏見パーソナルジム　SHION愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 46,
+   "name": "はりねずみ治療院",
+   "address": "愛知県名古屋市昭和区田面町１丁目 22番",
+   "url": "https://share.google/ZqXTNEIv3by8aAoSU",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 47,
+   "name": "なかがわ整骨院",
+   "address": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+   "url": "https://share.google/fdqe0jFBsEP0FmFnm",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 48,
+   "name": "なかの接骨院",
+   "address": "京都府長岡京市開田３丁目１０－３１",
+   "url": "https://share.google/ptEZl650AHXqEXDg7",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 49,
+   "name": "ときわ台駅前整骨院",
+   "address": "東京都板橋区南常盤台１丁目１６−１３ 高野ビル 1階",
+   "url": "https://share.google/6b7PJkQSsxmEK51um",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 50,
+   "name": "NTA専門整体院",
+   "address": "千葉県袖ケ浦市蔵波２４５−５ 今井接骨院 ２階",
+   "url": "https://share.google/5qSRJ2iPlsRbl1Usy",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 51,
+   "name": "きよみず焼団地整骨院",
+   "address": "京都府京都市山科区川田岡ノ西１−７ レオ松本 １F",
+   "url": "https://share.google/c1mCEtd62fkoavN40",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 52,
+   "name": "二葉鍼灸療院",
+   "address": "愛知県名古屋市港区港楽３丁目２−７",
+   "url": "https://share.google/FamBnyasgWJTK8rcj",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 53,
+   "name": "しもとり接骨院",
+   "address": "新潟県上越市大豆１丁目６－３６",
+   "url": "https://share.google/9ESHFhOEeyuyanAnf",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 54,
+   "name": "キュアハウス鍼灸治療院",
+   "address": "東京都中央区日本橋兜町１６−２ MICビル 4階",
+   "url": "https://share.google/OW6hxJ287wOM1Et3t",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 55,
+   "name": "やたがい整体院",
+   "address": "埼玉県さいたま市南区南浦和３丁目３３−１５",
+   "url": "https://share.google/1U0Iu0yqF4Sut3KwW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 56,
+   "name": "すわの森はり灸接骨院",
+   "address": "東京都新宿区高田馬場１丁目１０−２３",
+   "url": "https://www.google.com/maps?cid=862132061922976405",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 57,
+   "name": "オレンジ整骨院",
+   "address": "佐賀県三養基郡基山町宮浦４８７－７",
+   "url": "https://share.google/GhWv0RoV49d1l71RO",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 58,
+   "name": "東新宿ソフィア整骨院",
+   "address": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+   "url": "https://www.google.com/maps?cid=17812756798521967357",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 59,
+   "name": "整骨院ヒラシタ",
+   "address": "大阪府守口市大宮通４丁目１３－３",
+   "url": "https://share.google/Nt8NkndoPOnKYbVAB",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 60,
+   "name": "あおば接骨院",
+   "address": "福井県越前市村国３丁目19－１３ あおば接骨院",
+   "url": "https://share.google/y6hcAjsvbqDWnImV0",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 61,
+   "name": "田原接骨院",
+   "address": "神奈川県横須賀市野比１丁目３９−２",
+   "url": "https://share.google/wyXReBV2F60wpYXfh",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 62,
+   "name": "白光治療院",
+   "address": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+   "url": "https://share.google/P5xkqPAhsoBqA0ps5",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 63,
+   "name": "ベルツリー接骨院",
+   "address": "茨城県石岡市府中３丁目８−２ キクタレジデンス１０１",
+   "url": "https://share.google/AnaLECVSvst6X6cGU",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 64,
+   "name": "あおい整骨院 国分中央院",
+   "address": "〒899-4332 鹿児島県霧島市国分中央１丁目９−２２ 101",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8dfd45bbc5676ef5&hl=ja&sxsrf=AE3TifNj7lFGBqjBPXa7-l2FSEaTCXpJJw:1761018670215&kgmid=/g/11vb_8zc4t&q=%E3%81%82%E3%81%8A%E3%81%84%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%9B%BD%E5%88%86%E4%B8%AD%E5%A4%AE%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=df67f9709dd1a6f5&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 65,
+   "name": "HONETSUGI 浦和",
+   "address": "埼玉県さいたま市浦和区仲町１丁目３－４ 3F",
+   "url": "https://share.google/zX2RxK8ujrmBts3d5",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 66,
+   "name": "温活めぐり鍼灸サロン",
+   "address": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション ５０１",
+   "url": "https://share.google/tugKDQCmLS9d0CmTl",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 67,
+   "name": "栄整骨院",
+   "address": "千葉県佐倉市栄町５−２",
+   "url": "https://share.google/YtLGsvT38udoK4hEP",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 68,
+   "name": "あおぞら整骨院・鍼灸院",
+   "address": "静岡県三島市松本３９０−１８",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4219280beb2b4f19&hl=ja&sxsrf=AE3TifMfVIikUITmP2ucD866su3A0e-0dw:1760490393130&kgmid=/g/12llffktn&q=%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E9%8D%BC%E7%81%B8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=05f84a58e6462b9c&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 69,
+   "name": "1room整体院",
+   "address": "東京都板橋区成増１丁目２３ー１９ クロスロード a室",
+   "url": "https://www.google.com/maps/place/1room%E6%95%B4%E4%BD%93%E9%99%A2/@35.774965,139.6308225,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed595fac1fa9:0x83051202d8eecbe0!8m2!3d35.774965!4d139.6308225!16s%2Fg%2F11js23wkjz?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 70,
+   "name": "本厚木かしわぎ整体院",
+   "address": "神奈川県厚木市中町１丁目７－１８ 亀屋ビル 101",
+   "url": "https://share.google/JsFE2xeLAuMZ7L8Mb",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 71,
+   "name": "Style Lab整骨院・整体院",
+   "address": "東京都葛飾区青戸３丁目２３ー１０ オークレスト青砥 1階",
+   "url": "https://www.google.com/maps/place/Style+Lab%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@35.7458945,139.8518068,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f4a8549edfb:0x1086c0ae31c5d23d!8m2!3d35.7458945!4d139.8518068!16s%2Fg%2F11l77q0djd?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 72,
+   "name": "訪問整体・ユアタイム",
+   "address": "茨城県古河市常盤町１０−２３",
+   "url": "https://share.google/AH2vStvo6JCmStBr7",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 73,
+   "name": "宮原ゴルフ&ウェルネス",
+   "address": "東京都板橋区相生町１９ 中台ゴルフセンター 内",
+   "url": "https://share.google/HdmSA4Jdp08ojm9XG",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 74,
+   "name": "吉宗指圧治療院",
+   "address": "東京都千代田区神田佐久間町１丁目１６−５０２",
+   "url": "https://share.google/H263ChrmKdsvz1YNK",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 75,
+   "name": "北陸整骨院",
+   "address": "大阪府大阪市旭区千林２丁目１０－３２ 丸吉ハイツ 1F",
+   "url": "https://share.google/3MoB2RNDxRqUa38XS",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 76,
+   "name": "おとなの帰宅部",
+   "address": "千葉県柏市豊住１丁目４−１６",
+   "url": "https://share.google/xbV4TFheXROaARu7r",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 77,
+   "name": "整骨院　専",
+   "address": "群馬県太田市由良町５９−３",
+   "url": "https://share.google/tSAW7di5TeNcLpp0w",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 78,
+   "name": "オガワセイタイ",
+   "address": "広島県三原市宮浦３丁目２９−２４",
+   "url": "https://share.google/cJ9Q8Z2HkeWWF7YJO",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 79,
+   "name": "R整体院",
+   "address": "神奈川県横浜市都筑区北山田２丁目２−１２ ヨネビル港北 1階",
+   "url": "https://share.google/HyY9UD4OnMPOwFC8c",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 80,
+   "name": "山﨑接骨院",
+   "address": "神奈川県小田原市酒匂５丁目２−３０",
+   "url": "https://share.google/Ju4lIHRIcKO9gpHYs",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 81,
+   "name": "LAGUNANIGUEL",
+   "address": "兵庫県神戸市中央区北長狭通３丁目７−７ 1F・B1F ナカニシビル",
+   "url": "https://share.google/e5XE2QOo9OOcaXRmt",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 82,
+   "name": "夢道整骨院・夢道鍼灸整骨院",
+   "address": "京都府京田辺市興戸久保6－１ Mプラザビル 2F",
+   "url": "https://share.google/bJ5R0h3eiqECOVrX0",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 83,
+   "name": "膝診る東京2021",
+   "address": "東京都目黒区平町１丁目２６−１７ 個室サロンGOLD 地下1階",
+   "url": "https://share.google/P3WkzB37ghvpwbXI4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 84,
+   "name": "すがまた接骨院",
+   "address": "神奈川県平塚市万田１丁目３０－７",
+   "url": "https://share.google/T5s0dEEPReqBO3DMY",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 85,
+   "name": "しおかわ鍼灸接骨治療院",
+   "address": "大阪府大阪市旭区大宮２丁目２６−１６",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&sxsrf=AE3TifNNv7AqUJnRePS3aB8_H-YAWMSJFw:1761108295898&kgmid=/g/1tf57s2t&q=%E3%81%97%E3%81%8A%E3%81%8B%E3%82%8F%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=36529c70c5a0689e&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 86,
+   "name": "JUMP整体院",
+   "address": "宮崎県宮崎市佐土原町下田島１２０９２－５ 1F",
+   "url": "https://share.google/Hebzj9pJRdp48p7yn",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 87,
+   "name": "LAKSHMI (ラクシュミー) けんえい治療院",
+   "address": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル",
+   "url": "https://share.google/Zg61VfImBYoJtBSeV",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 88,
+   "name": "鍼灸・接骨院 白澤堂HAKUTAKUDOU",
+   "address": "京都府京都市東山区七軒町１７－１",
+   "url": "https://share.google/iPgiVBvL1K54lCGZw",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 89,
+   "name": "アルエ骨盤整体サロン",
+   "address": "山梨県富士吉田市下吉田２丁目２７－１５",
+   "url": "https://share.google/9525x14YQxVGnVMB9",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 90,
+   "name": "芯支堂匠整骨院",
+   "address": "千葉県市川市市川南１丁目２－３ 椎名ビル 102",
+   "url": "https://share.google/DeMzv8vKCtTgHGt1k",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 91,
+   "name": "total body care oasis 日暮里/谷中銀座店",
+   "address": "東京都荒川区西日暮里３丁目１０ー４ 2F",
+   "url": "https://www.google.com/maps/place/total+body+care+oasis+%E6%97%A5%E6%9A%AE%E9%87%8C%2F%E8%B0%B7%E4%B8%AD%E9%8A%80%E5%BA%A7%E5%BA%97/@35.7277322,139.7677338,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d807d547ff5:0x7d80483ee89e1d6e!8m2!3d35.7277322!4d139.7677338!16s%2Fg%2F11wy0d2gs5?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 92,
+   "name": "笛木鍼灸治療院",
+   "address": "千葉県千葉市緑区越智町１７０１−１０４ はなみずき台１街区１３ブロック－４",
+   "url": "https://share.google/SPvdpuAKc6MdRXCgR",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 93,
+   "name": "beauty magic恵比寿/広尾 【小顔矯正・姿勢矯正・美容整体】",
+   "address": "東京都渋谷区広尾２－２－１６　ＢＬＡＮＶＯＡＧＥ ＨＩＲＯＯ　４０１",
+   "url": "https://beauty.hotpepper.jp/kr/slnH000339203/?cstt=637",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 94,
+   "name": "米ぬか100%酵素風呂 梅",
+   "address": "神奈川県川崎市幸区南幸町２丁目５４ 南幸第２ＫＳマンション 102",
+   "url": "https://share.google/efZ6WN38kJJ8kZ30F",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 95,
+   "name": "めばえ整骨院",
+   "address": "北海道札幌市手稲区新発寒７条３丁目１－１１",
+   "url": "https://share.google/xrU5bNUehgYF463OL",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 96,
+   "name": "all age整骨院",
+   "address": "鹿児島県霧島市隼人町住吉１８２３－４",
+   "url": "https://share.google/oy5NWvBZFMMBfBeXb",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 97,
+   "name": "整骨院 かふう",
+   "address": "沖縄県沖縄市越来２丁目３−３",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3112218073a0b46b&hl=ja&sxsrf=AE3TifOqNdlzHKfNKuYcAdwTBlBIC7uqVQ:1761188061011&kgmid=/g/1thv_xp2&q=%E6%95%B4%E9%AA%A8%E9%99%A2+%E3%81%8B%E3%81%B5%E3%81%86&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=8ef53612f24f16fa&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 98,
+   "name": "ぼんのくぼ 無痛整体院",
+   "address": "〒514-0811 三重県津市阿漕町津興１７１−２",
+   "url": "https://share.google/58pOrQTBDp1bdGD35",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 99,
+   "name": "Ｗｉｎｇ施術院",
+   "address": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+   "url": "https://share.google/fOzJBKu5yg2LaXUkg",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 100,
+   "name": "いるか整骨院・鍼灸院",
+   "address": "神奈川県海老名市国分寺台２丁目４−９",
+   "url": "https://share.google/Ut9Jc1QKZ46BKHFEN",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 101,
+   "name": "癒し処 和庵 気功整体",
+   "address": "東京都清瀬市野塩４丁目９３－２３",
+   "url": "https://share.google/e6YgIJp7phig2VFTf",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 102,
+   "name": "整体院 潮 USHIO",
+   "address": "長野県塩尻市広丘野村１５４０－１",
+   "url": "https://share.google/36w7jbx08Sq3Wf7Pg",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 103,
+   "name": "やまもと針灸整骨院",
+   "address": "熊本県熊本市北区徳王１丁目７−１５ ＣＡＬＭ徳王 106",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=25498c63d407204d&hl=ja&sxsrf=AE3TifOlxtw7i8jvVXUcxUH4pkJXNL6Gvw:1761281195620&kgmid=/g/11x1th296w&q=%E3%82%84%E3%81%BE%E3%82%82%E3%81%A8%E9%87%9D%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=2aaf74e9f82d31a9&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 104,
+   "name": "友接骨院 墨田区",
+   "address": "東京都墨田区立花５丁目２８−１ 103",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=25498c63d407204d&hl=ja&sxsrf=AE3TifOYy1mUEEY9FJ32tuJhMxdLUHofyg:1761281540298&kgmid=/g/1v44qd6s&q=%E5%8F%8B%E6%8E%A5%E9%AA%A8%E9%99%A2+%E5%A2%A8%E7%94%B0%E5%8C%BA&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=c43a924bd484c41b&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 105,
+   "name": "足のケアセンター船橋",
+   "address": "千葉県船橋市西船４丁目２９−１３ ルネスgen301",
+   "url": "https://share.google/WyXIraKL8QfVG2HYZ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 106,
+   "name": "【美容鍼×小顔矯正】KADOMORI カドモリ 恵比寿代官山",
+   "address": "東京都渋谷区恵比寿西２－20－15　solstice代官山2F&B1",
+   "url": "https://beauty.hotpepper.jp/kr/slnH000478876/?cstt=1392",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 107,
+   "name": "宇都宮市やわらぎ整骨・整体院",
+   "address": "栃木県宇都宮市関堀町９８１",
+   "url": "https://share.google/TEEu2si3YwdwwnFaK",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 108,
+   "name": "かくた療術院",
+   "address": "北海道札幌市清田区平岡２条２丁目４－１７",
+   "url": "https://share.google/EmvmHAQOvCacexZB1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 109,
+   "name": "けんじ整骨院",
+   "address": "神奈川県川崎市中原区下小田中２丁目４－２６",
+   "url": "https://share.google/D3qeRQthE3rZGKTeT",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 110,
+   "name": "自然治癒大阪ソフト整体院",
+   "address": "大阪府箕面市箕面５丁目２−２８",
+   "url": "https://share.google/IaSlOmD6yZ1WvBTsr",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 111,
+   "name": "Luce［接骨&鍼灸院］",
+   "address": "岡山県岡山市北区奉還町２丁目１９－１８",
+   "url": "https://www.lucesekkotsuin-shinkyuin.com/",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 112,
+   "name": "黎明総合院",
+   "address": "北海道札幌市東区北３５条東１５丁目１－１７",
+   "url": "https://share.google/9KfiBc4vfR4k3N3hC",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 113,
+   "name": "藤沢協和整骨院・整体院",
+   "address": "神奈川県藤沢市南藤沢２０－２ 第一興産 22号館）5階",
+   "url": "https://share.google/0i4HlhTFu4w2PbL0i",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 114,
+   "name": "整体 もみほぐし ＆ パーソナル トレーニング Lino",
+   "address": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6d9773df8986f1e8&hl=ja&sxsrf=AE3TifMkUN7Z8ST3oCId8kI0LBG8onuV5Q:1761630308259&kgmid=/g/11xdpxq7kx&q=%E6%95%B4%E4%BD%93+%E3%82%82%E3%81%BF%E3%81%BB%E3%81%90%E3%81%97+%EF%BC%86+%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB+%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+Lino&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=19a276be69c7a180&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 115,
+   "name": "FORM整骨院",
+   "address": "千葉県東金市東金３７８－７",
+   "url": "https://share.google/B2KenQYcLWflfgix7",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 116,
+   "name": "リラクゼーションサロン・さくら",
+   "address": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+   "url": "https://share.google/ODX2lVh55WmmLNVgj",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 117,
+   "name": "つかだ接骨院水沢院",
+   "address": "岩手県奥州市水沢土器田７９−２",
+   "url": "https://share.google/gKfmyN9ac1nNfxxHV",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 118,
+   "name": "もみ屋　八",
+   "address": "高知県四万十市古津賀１３１０－２",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sa=X&sca_esv=e88d928ee76a2e23&hl=ja&biw=890&bih=664&sxsrf=AE3TifMFmhWTUY4A386nRnmvVtBfdATtXQ:1761704645214&kgmid=/g/11fqy27mzf&q=%E3%82%82%E3%81%BF%E5%B1%8B+%E5%85%AB&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b2ce13d5b48f95d4&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 119,
+   "name": "Core Stage",
+   "address": "宮城県柴田郡柴田町船岡中央２丁目４－９ セレッソバーリオ 101",
+   "url": "https://share.google/luo98GRUkGp9gOGdJ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 120,
+   "name": "Body Work Shop",
+   "address": "埼玉県さいたま市大宮区桜木町２丁目５４４ コンフォートマンション桜木町 821",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=fb293ac4e671f160&hl=ja&sxsrf=AE3TifPy7ZeRwyqsRWS_1S-32TLjanNHuA:1761723889025&kgmid=/g/11kqfmy8xp&q=Body+Work+Shop&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=671fa4ccafc67360&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 121,
+   "name": "オースマイル整骨院",
+   "address": "千葉県松戸市松戸２０５０",
+   "url": "https://share.google/9sOQSBnD67OvA9KKp",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 122,
+   "name": "南さくら整骨院",
+   "address": "千葉県佐倉市大崎台１丁目１７－１２",
+   "url": "https://share.google/B3tIhuulXEvKuUbX9",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 123,
+   "name": "あきくに整骨院 美容整体院",
+   "address": "大分県大分市王子南町３−１０ REGINA 102号",
+   "url": "https://share.google/nrXf0enOmbtcfrW43",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 124,
+   "name": "女性専門整体院airacu",
+   "address": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+   "url": "https://share.google/Z0v1jgEZ89LtjPRz6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 125,
+   "name": "サンパーク整体 浦和店",
+   "address": "埼玉県さいたま市浦和区東仲町１２−９ パーレンス 303",
+   "url": "https://share.google/py0d8QY4echQ82aLs",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 126,
+   "name": "南さがえ接骨院",
+   "address": "山形県寒河江市島島東７６－１",
+   "url": "https://share.google/qykZIOOtFoqBJDBOu",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 127,
+   "name": "Nexfit for personal",
+   "address": "神奈川県横浜市荏田東４丁目８－３ バースシティ港北センタ 南202B",
+   "url": "https://share.google/vmruMFysK5b1ijqUy",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 128,
+   "name": "アルファ接骨院",
+   "address": "愛媛県松山市柳井町２丁目１９－５ やないハイツ 1階",
+   "url": "https://share.google/G1CyuQkgiSpBpV7u4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 129,
+   "name": "西川接骨院 西川気功整体",
+   "address": "愛知県名古屋市港区寛政町２丁目１７",
+   "url": "https://share.google/JV3iwr9YywRTDCowD",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 130,
+   "name": "瑞穂いとう接骨院",
+   "address": "岐阜県瑞穂市馬場上光町２丁目１１",
+   "url": "https://share.google/JBjA5jNkk6818HJma",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 131,
+   "name": "鍼灸整骨院ごんげん山",
+   "address": "栃木県栃木市神田町５",
+   "url": "https://share.google/kAuDxO01ip43MSsp4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 132,
+   "name": "Rejoice鍼灸整骨院",
+   "address": "大阪府大阪市城東区関目３丁目１５－３",
+   "url": "https://share.google/48KTysl9np7KpZlLS",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 133,
+   "name": "墨東メディカル整体院",
+   "address": "東京都墨田区亀沢３丁目１２－１ 菅民ビル 401",
+   "url": "https://share.google/oKBiy7YRzS5tjJUNw",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 134,
+   "name": "クマモト整骨院",
+   "address": "熊本県熊本市中央区中央街1-1 14sunKビル 2F",
+   "url": "https://share.google/K1FKJnA0rHCbfzFNY",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 135,
+   "name": "石川健康院",
+   "address": "愛知県西尾市会生町53‐2",
+   "url": "https://share.google/K8bxdeenFOj9lMYTW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 136,
+   "name": "顔の整体・美容鍼灸サロンwill",
+   "address": "大阪府大阪市旭区太子橋１丁目４−２２ エムズコート太子橋 1F",
+   "url": "https://share.google/2FWusSFFtMuTbO9ik",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 137,
+   "name": "Wing整体院",
+   "address": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2b402440a197c26d&hl=ja&sxsrf=AE3TifPpPgnPz5CVnHM4_AXsZK1n098pkQ:1761889104442&kgmid=/g/1tj2bzmf&q=Wing%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=dais,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=949d1351073a35b3&utm_source=dais,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 138,
+   "name": "大垣整骨院TRAINER ROOM(トレーナールーム）",
+   "address": "岐阜県大垣市東前３丁目48番地1",
+   "url": "https://share.google/WDc6AxDTiwciTdMI8",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 139,
+   "name": "大城カイロプラクティック",
+   "address": "沖縄県那覇市安里１丁目８－１５",
+   "url": "https://share.google/X6B5oCzgik7Lsn0GJ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 140,
+   "name": "淡路島鍼灸 高尾鍼灸院",
+   "address": "兵庫県洲本市上内膳１２９ 淡路島高尾鍼灸院",
+   "url": "https://share.google/euZJIZJ6oAtT3GPql",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 141,
+   "name": "ミツ船橋整骨院",
+   "address": "千葉県船橋市本町３丁目２７−２０",
+   "url": "https://share.google/WWBFkAf3LlHUFgSK6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 142,
+   "name": "菊入整体",
+   "address": "東京都墨田区立花１丁目４−５",
+   "url": "https://share.google/pAiQYNzwCIjmFpVEn",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 143,
+   "name": "もみTan",
+   "address": "埼玉県川越市鯨井新田１６−１６",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3a8be7ffcaaa7a05&hl=ja&sxsrf=AE3TifOtJnxdX-wKikTscALvAsXzv1HcRQ:1762236800131&kgmid=/g/1jkvnks09&q=%E3%82%82%E3%81%BFTan&shndl=30&shem=epsdc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=9a6ec5d23396a4b9&utm_source=epsdc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 144,
+   "name": "小川カイロプラクティック",
+   "address": "神奈川県相模原市南区相模大野７丁目６−５ 大栄駅前マンション 101",
+   "url": "https://share.google/Vp5NkTjngzFDbyTUW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 145,
+   "name": "青葉台しあわせ鍼灸整骨院",
+   "address": "神奈川県横浜市青葉区青葉台２丁目２−１ 村田ビル ２F",
+   "url": "https://share.google/2pHJUIYRQmPQLHxny",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 146,
+   "name": "ゆたか山口鍼灸治療院",
+   "address": "京都府京都市中京区下本能寺前町５１５ ギャラリーカトビル 503",
+   "url": "https://share.google/BOJMEgGNrmtiKGwAX",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 147,
+   "name": "横須賀鍼灸 紬の芽",
+   "address": "神奈川県横須賀市久里浜１丁目５−１１ ケーユービル 500",
+   "url": "https://share.google/zEnrDx2A76qipCvn5",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 148,
+   "name": "鍼灸治療院養源堂　西小山院　はり・きゅう・指圧マッサージ",
+   "address": "東京都目黒区原町１‐１１‐８　１F",
+   "url": "https://share.google/MAT6enFPjnbuDpJUi",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 149,
+   "name": "レッツゴー整骨院あきる野市整骨院",
+   "address": "東京都あきる野市五日市２１３−６",
+   "url": "https://share.google/WmdzAXZC59HCrp19v",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 150,
+   "name": "Haru整骨院",
+   "address": "東京都昭島市郷地町１丁目６−１９ 石田ビル 1階",
+   "url": "https://share.google/IfqqlFCig1uhWFUnT",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 151,
+   "name": "ココロとからだバランスセンター",
+   "address": "群馬県藤岡市上大塚１７５９−７",
+   "url": "https://share.google/uNUar5YF54SthItso",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 152,
+   "name": "４時間整体　Balance Care 【ヨジカンセイタイ バランス ケア】",
+   "address": "北海道札幌市中央区北４条西２７丁目１－１０　ハイデンス赤坂　２０２号室",
+   "url": "https://share.google/2DLuqJ7aPWiunnXVU",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 153,
+   "name": "ほぐし専門店give",
+   "address": "福岡県北九州市小倉南区志井公園１−１",
+   "url": "https://share.google/CJWxpmOPImTK54MCZ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 154,
+   "name": "整体院〜結喜〜",
+   "address": "福岡県田川市伊加利８０８−２",
+   "url": "https://share.google/C5cVSzDxILgmNsQws",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 155,
+   "name": "VIVA骨盤整体院　恵比寿院　【ビバセイタイイン】",
+   "address": "東京都渋谷区東３－２５－４－１０２",
+   "url": "https://share.google/M7k22oIJ4283OKYoG",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 156,
+   "name": "まつむら治療院",
+   "address": "神奈川県横浜市旭区中白根２丁目３５−５",
+   "url": "https://share.google/Pu67YgVepPhmqi7Kq",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 157,
+   "name": "関口貴弘鍼灸整骨院",
+   "address": "北海道札幌市豊平区福住２条１丁目５−１ 福住ＮＢコート",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=c019091b52478373&hl=ja&sxsrf=AE3TifOCLvf6Xh5y9nrTKMk-mFTWZhJDYw:1762846440529&kgmid=/g/1tggnfsf&q=%E9%96%A2%E5%8F%A3%E8%B2%B4%E5%BC%98%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=47920840a65e5a96&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 158,
+   "name": "ほねつぎ極癒",
+   "address": "愛知県江南市般若町宮山２９−１",
+   "url": "https://share.google/8J8cpiMf0IUIQ7EqQ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 159,
+   "name": "いろは鍼灸整骨院",
+   "address": "千葉県松戸市中和倉４６−１",
+   "url": "https://share.google/xinzW0qgXoFqqAFB7",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 160,
+   "name": "ボディケアサロンBocce",
+   "address": "福岡県直方市下境２５８５−５",
+   "url": "https://www.google.com/search?q=%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce&sca_esv=2286498253ea9ec4&rlz=1C1VDKB_jaJP1185JP1186&sxsrf=AE3TifPaikhNZYIP84k75g5VHWuHnmI6Mg%3A1762928609697&ei=4ScUaeWlKsm3vr0P--qU6Qw&ved=0ahUKEwilmq7s_OuQAxXJm68BHXs1Jc0Q4dUDCBE&uact=5&oq=%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce&gs_lp=Egxnd3Mtd2l6LXNlcnAiHeODnOODh-OCo-OCseOCouOCteODreODs0JvY2NlSKoFUABYAHAAeACQAQCYAXCgAXCqAQMwLjG4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBzOyBwC4BwDCBwDIBwA&sclient=gws-wiz-serp",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 161,
+   "name": "友カイロプラクティックセンター",
+   "address": "神奈川県横浜市中区野毛町２丁目１０１−１ ネオキャッスル野毛401",
+   "url": "https://share.google/9uiwNmy7bG7mwQ19N",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 162,
+   "name": "つつじが丘接骨院",
+   "address": "兵庫県三田市つつじが丘南３丁目１−１２",
+   "url": "https://share.google/doFMGxrFtZQQjhvGU",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 163,
+   "name": "ふじわら鍼灸院",
+   "address": "兵庫県加西市北条町北条９０４−３",
+   "url": "https://share.google/rfgj46gZzlARGPyWm",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 164,
+   "name": "はなまる整骨院",
+   "address": "福岡県嘉穂郡桂川町豆田５１７−２",
+   "url": "https://www.google.co.jp/search?hl=ja&q=0948-65-5277&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 165,
+   "name": "秋田旭南TCC整骨院/秋田旭南トータルケアセンター",
+   "address": "秋田県秋田市旭南３丁目２−６０",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=178e2c54028f2967&hl=ja&sxsrf=AE3TifOYxPdB1ShYpIbSBQ8M2chosJqP6g:1763082494198&kgmid=/g/11fct7cgy1&q=%E7%A7%8B%E7%94%B0%E6%97%AD%E5%8D%97%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%82%B1%E3%82%A2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b1a279bf84e84ba7&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 166,
+   "name": "下北南整骨院",
+   "address": "東京都世田谷区代沢５－２９－１７",
+   "url": "https://share.google/1H4QDL5GdytDFU68x",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 167,
+   "name": "三原接骨院",
+   "address": "兵庫県南あわじ市八木養宜上９２１−１",
+   "url": "https://share.google/U54k6hPezzM88Ku5k",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 168,
+   "name": "mynch まいんち アロマスポーツ整体",
+   "address": "兵庫県神戸市中央区元町通１丁目１４−１３ BEARE元町駅前ビル 5C",
+   "url": "https://share.google/Rz2JM6sn0UazOqsrj",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 169,
+   "name": "ボディケアcomfort リラクゼーション",
+   "address": "愛知県北名古屋市九之坪下葭田１３２ コーポ イエローハウス 1号室",
+   "url": "https://share.google/RlyDccrTkHzcFmE7g",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 170,
+   "name": "アームズ鍼灸整骨院",
+   "address": "山口県山陽小野田市埴生２０１９−１０",
+   "url": "http://google.co.jp/search?hl=ja&q=080-1931-4869&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 171,
+   "name": "アシスト整骨院",
+   "address": "埼玉県入間市下藤沢５丁目20−１８ 木下ビル 1F",
+   "url": "https://share.google/qJxRWQWvJeQTjQxlE",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 172,
+   "name": "カイロプラクティック ゆうな施術院",
+   "address": "宮城県仙台市泉区南光台南２丁目１−３",
+   "url": "https://share.google/6jFIhn6hdRKKzbTuk",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 173,
+   "name": "さがみはら駅前 西尾接骨院",
+   "address": "神奈川県相模原市中央区相模原５丁目１−２",
+   "url": "https://share.google/vhsChngpsc9sCqFdM",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 174,
+   "name": "やまもと整骨院",
+   "address": "兵庫県神戸市灘区岩屋北町 7-1-31-1F",
+   "url": "https://maps.app.goo.gl/GfSPcKaDDAd4LidH7",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 175,
+   "name": "はりきゅう整骨院MOIKIYA",
+   "address": "大阪府大阪市東淀川区淡路５丁目１１−２６ Ｒｅｎａｉｓｓａｎｃｅ 1F",
+   "url": "https://share.google/4LFcWwQl8NiZWapjM",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 176,
+   "name": "よこやま整骨院",
+   "address": "宮崎県日南市春日町６−２",
+   "url": "https://share.google/Zt4zWBZXdQGmc8724",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 177,
+   "name": "BIASボディメンテナンス整体",
+   "address": "埼玉県所沢市東住吉７−１５ グランデール 101",
+   "url": "https://share.google/cFw6HDFhfUSa1NfQV",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 178,
+   "name": "大坂整骨院 仙台 泉区 富谷 交通事故 整体",
+   "address": "宮城県仙台市泉区泉区大沢１丁目5－１ イオンタウン仙台泉大沢 ２F",
+   "url": "https://share.google/kgmaF1yVIuXZDTOBV",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 179,
+   "name": "つつみ鍼灸整骨院",
+   "address": "福島県郡山市堤３丁目156番地",
+   "url": "https://share.google/Y2HSpVpWMGyOpYeNd",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 180,
+   "name": "佐野カイロプラクティックオフィス",
+   "address": "長野県下伊那郡高森町山吹４６６０−２",
+   "url": "https://share.google/ScgQmfqEMDbGMdsLm",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 181,
+   "name": "仙台泉整体ラボ",
+   "address": "宮城県仙台市泉区八乙女中央３丁目２−３０ リバーサイドヒル 及川503",
+   "url": "https://share.google/PZ7XwyTsCoJsIAHx6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 182,
+   "name": "RISEBOX(ほまれ接骨院)",
+   "address": "愛知県大府市中央町１丁目２００ 1F",
+   "url": "https://www.google.co.jp/search?hl=ja&q=0562-85-2782&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 183,
+   "name": "からだ工房",
+   "address": "神奈川県横浜市中区常盤町１丁目１ 宮下ビル ３Ｆ",
+   "url": "https://share.google/9rvvoHfO84FKBNHc6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 184,
+   "name": "大和田筋整復院",
+   "address": "東京都墨田区横川５丁目１０−１ プリメール柳島 109",
+   "url": "https://share.google/QlzmsHFy8IwycycQM",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 185,
+   "name": "鹿児島美容鍼灸サロンCalla",
+   "address": "鹿児島県霧島市国分野口西１９−２８ ハヅキハイツ A棟",
+   "url": "https://share.google/UMCOFZMA2qVA9BXPF",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 186,
+   "name": "別府HMR おおむら鍼灸接骨院",
+   "address": "大分県別府市弓ケ浜町１−２６ 弓ヶ浜コーポ １F",
+   "url": "https://share.google/FUlmB9zROS36nQ6bp",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 187,
+   "name": "整体治療院みやび 山科本院",
+   "address": "京都府京都市山科区竹鼻堂ノ前町４６−４ 山科オフィスセゾン 1F",
+   "url": "https://www.google.co.jp/search?hl=ja&q=075-595-3318&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 188,
+   "name": "しんそう岡山駅前",
+   "address": "岡山県岡山市北区駅前町２丁目７−１１ ＹＳビル",
+   "url": "https://share.google/FZuptqaJw8WPcL3ob",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 189,
+   "name": "さくらsport整体院 楠店",
+   "address": "愛知県名古屋市北区楠３丁目１１０ コーポ桂第２ 104室",
+   "url": "https://share.google/kLHDKel8ggzOZ62Pg",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 190,
+   "name": "WILD BODY",
+   "address": "徳島県板野郡藍住町徳命元村１４０−１",
+   "url": "https://share.google/9zwSxsJInyTX4a80N",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 191,
+   "name": "上之町整骨院はり灸院",
+   "address": "滋賀県東近江市八日市緑町１３−２０",
+   "url": "https://share.google/GYTgZ7BMQiecxm5dB",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 192,
+   "name": "アクアバランス大阪",
+   "address": "大阪府大阪市中央区道修町３丁目３−２ 富永ビル ２階",
+   "url": "https://share.google/YDe6JLcjQvVyXclGI",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 193,
+   "name": "はせがわ鍼灸整骨院",
+   "address": "京都府京都市右京区太秦西蜂岡町９−９０",
+   "url": "https://share.google/Al9HRzoyGftByK2Oq",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 194,
+   "name": "アスクカイロプラクティック",
+   "address": "奈良県奈良市登美ヶ丘４丁目２−５",
+   "url": "https://share.google/nNrCs0C3Duo1vLTQE",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 195,
+   "name": "セリオ鍼灸整骨院",
+   "address": "大阪府枚方市上島東町２０−１２ 電話番号： 072-800-1444",
+   "url": "https://share.google/lWfYkftuYPYE1q5iq",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 196,
+   "name": "本気の整体",
+   "address": "東京都町田市森野１丁目９−１８ まるかビル 2階",
+   "url": "https://www.google.com/search?q=0428518424&oq=0428518424&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDk4NmowajE1qAIIsAIB8QWhn7JYz_HolPEFoZ-yWM_x6JQ&sourceid=chrome&ie=UTF-8",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 197,
+   "name": "下井草整体院",
+   "address": "東京都杉並区井草１丁目２−１",
+   "url": "https://share.google/Qy3u7I2OvQvC5PmzL",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 198,
+   "name": "リラクゼーションサロンフォレスト",
+   "address": "大阪府大阪市生野区新今里４丁目１３−２１",
+   "url": "https://share.google/MzT692BqhZX3FeZG4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 199,
+   "name": "梅田鍼灸治療院・整骨院",
+   "address": "大阪府大阪市北区天神橋２丁目北1番11号 ステップイン南森町 2F ビル",
+   "url": "https://www.google.co.jp/search?hl=ja&q=06-6881-0302&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 200,
+   "name": "とだ鍼灸整骨院",
+   "address": "兵庫県西宮市松原町３−５",
+   "url": "https://www.google.co.jp/search?hl=ja&q=0798-22-9010&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 201,
+   "name": "エブリデイ接骨院・整体院",
+   "address": "埼玉県上尾市緑丘３丁目３−１１ プリンセス棟 2階",
+   "url": "https://share.google/yuhluDv1S95JgavLs",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 202,
+   "name": "幸治鍼灸整骨院",
+   "address": "大阪府吹田市岸部南１丁目５−２１",
+   "url": "https://share.google/b7D4yysAHcBe4xTlz",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 203,
+   "name": "Relaxation Salon Pilates Studio Labo",
+   "address": "長野県埴科郡坂城町上平４７１−２",
+   "url": "https://share.google/tbyzPXwCPizjXXRsc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 204,
+   "name": "ほぐし整体 和み",
+   "address": "東京都調布市国領町４丁目３５−２ マンション国領 C－１７",
+   "url": "https://www.google.co.jp/search?hl=ja&q=042-444-6515&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 205,
+   "name": "からだ回復センター 千葉",
+   "address": "千葉県千葉市緑区おゆみ野有吉１２−１２",
+   "url": "https://www.google.co.jp/search?hl=ja&q=043-309-7183&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 206,
+   "name": "三河カイロプラクティック院",
+   "address": "愛知県西尾市平坂町地領分1−１４",
+   "url": "https://share.google/xi0CCqPPbAuusnNec",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 207,
+   "name": "こひつじ整骨院",
+   "address": "大阪府岸和田市藤井町１丁目１７−１８ 日興パール・ビル 102号",
+   "url": "https://share.google/wz5ZlsDJa6gHbSKnq",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 208,
+   "name": "だいご接骨院",
+   "address": "京都府京都市伏見区醍醐構口町２５−８",
+   "url": "https://share.google/yixJWtDG1jtUsAqUs",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 209,
+   "name": "自在な整骨院はりきゅう院",
+   "address": "大分県佐伯市鶴岡町３丁目３−１",
+   "url": "https://share.google/qCJqBZz4a1ZEAlxN5",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 210,
+   "name": "北尾鍼灸整骨院",
+   "address": "京都府京都市中京区西ノ京式部町５０",
+   "url": "https://share.google/OgRZ9Efxt64mqZB6h",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 211,
+   "name": "Hide整骨院・整体院",
+   "address": "福岡県東区土井１丁目１５−７ １０１",
+   "url": "https://share.google/LNlksFOBD3NKcxDWw",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 212,
+   "name": "日野身体改善センター",
+   "address": "東京都日野市栄町１丁目２−１ 七和ビル 104号",
+   "url": "https://www.google.co.jp/search?hl=ja&q=042-514-8237&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 213,
+   "name": "中央鍼灸接骨院",
+   "address": "愛知県名古屋市北区長喜町４丁目20−２",
+   "url": "https://www.google.co.jp/search?hl=ja&q=052-912-2711&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 214,
+   "name": "ひまわり整体院",
+   "address": "石川県能美市徳久町４２番地",
+   "url": "https://www.google.co.jp/search?hl=ja&q=0761-51-2456&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 215,
+   "name": "清水鍼灸整骨院",
+   "address": "大阪府大阪市福島区鷺洲２丁目１４−２１",
+   "url": "https://www.google.co.jp/search?hl=ja&q=06-7504-8340&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 216,
+   "name": "心と体のほぐし屋さん リラックスガーデンs",
+   "address": "埼玉県草加市八幡町１３１８−２ アルファータウン浅井 1B",
+   "url": "https://share.google/gb0HMT0JIYPnmNwoi",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 217,
+   "name": "Buatip タイ マッサージ",
+   "address": "栃木県佐野市浅沼町４６８−２",
+   "url": "https://share.google/stET950bsd3J9e0WJ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 218,
+   "name": "暖 自然療法",
+   "address": "静岡県島田市中溝町１５３８−２０",
+   "url": "https://share.google/YgVXSXxhUXEL3ztw4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 219,
+   "name": "快明整体院",
+   "address": "長野県下伊那郡豊丘村神稲9310番地7",
+   "url": "https://share.google/mIAgM93Ct2IMMzFby",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 220,
+   "name": "からだコンディショニングふくおか整骨院",
+   "address": "福岡県福岡市早良区有田４丁目３７−２６",
+   "url": "https://share.google/iDpmSDrdqm5tfqAM0",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 221,
+   "name": "きずな鍼灸整骨院 北区武蔵ヶ丘院",
+   "address": "熊本県熊本市北区武蔵ケ丘１丁目２−３８",
+   "url": "https://share.google/WnqK0K7GudwxV9J2Q",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 222,
+   "name": "取手東整骨院",
+   "address": "茨城県取手市青柳７２０－２",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E5%8F%96%E6%89%8B%E6%9D%B1%E6%95%B4%E9%AA%A8%E9%99%A2%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E5%8F%96%E6%89%8B%E5%B8%82%E9%9D%92%E6%9F%B3%EF%BC%97%EF%BC%92%EF%BC%90%EF%BC%8D%EF%BC%92&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 223,
+   "name": "いるま整骨院",
+   "address": "埼玉県入間市豊岡１丁目３−２５ 半田ビル 1F",
+   "url": "https://share.google/KB02RNRSBP2naa04i",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 224,
+   "name": "REX整骨院 新札幌店",
+   "address": "北海道札幌市厚別区厚別中央３条４丁目２２−２５",
+   "url": "https://share.google/sXajMUhctLZdfTNp2",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 225,
+   "name": "コンディショニング＆スポーツにし整骨院",
+   "address": "大阪府枚方市津田西町２丁目１６−１２",
+   "url": "https://share.google/EtSAMRk6Pgl2eYCif",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 226,
+   "name": "ひまわり整体",
+   "address": "愛知県名古屋市南区鳴浜町７丁目４",
+   "url": "https://www.google.co.jp/search?hl=ja&q=052-846-9810&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 227,
+   "name": "癒夢",
+   "address": "兵庫県神戸市須磨区稲葉町６丁目２－１７",
+   "url": "https://share.google/VvrjxHXZzTbVNy9mQ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 228,
+   "name": "メディカルカイログリーン",
+   "address": "北海道札幌市手稲区星置１条３丁目３-６Ｗｉｎｇ１階",
+   "url": "https://share.google/98HvEas1f4pvNLeXV",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 229,
+   "name": "経路とリンパマッサージの館　楽〜RAKU〜",
+   "address": "鹿児島県鹿児島市真砂本町51-1 ニシムタスカイマーケット鴨池店内",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=39fb4ce6952c9081&hl=ja&kgmid=/g/11k64mqtx_&q=%E7%B5%8C%E7%B5%A1%E3%81%A8%E3%83%AA%E3%83%B3%E3%83%91%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E3%81%AE%E9%A4%A8+%E6%A5%BD%EF%BD%9ERAKU%EF%BD%9E&shndl=30&shem=damc,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e1f4df284ff69928&utm_source=damc,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 230,
+   "name": "楽間整体院",
+   "address": "愛知県大岩町北田６０−５",
+   "url": "https://share.google/IkI6HV8olA9YdgXlh",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 231,
+   "name": "カイロハウス キュア",
+   "address": "滋賀県彦根市芹川町５２０−１５ セントラルスプリング 101",
+   "url": "https://share.google/LDIdtbfNFfzWLZXF3",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 232,
+   "name": "いしおか整骨院",
+   "address": "埼玉県入間郡毛呂山町前久保南４丁目３３−１８",
+   "url": "https://share.google/kUfnSvYth7i0cg5Ku",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 233,
+   "name": "ボディケア&ストレッチ　健康志向",
+   "address": "埼玉県さいたま市大宮区桜木町４－３９",
+   "url": "https://share.google/E00fz4avPkd7B5FQ2",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 234,
+   "name": "赤ちゃんと産前産後ママ専門サロンBelleSante【ベルサンテ】",
+   "address": "埼玉県さいたま市大宮区大成町３－５４４－２",
+   "url": "https://www.google.com/search?q=%E8%B5%A4%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E7%94%A3%E5%89%8D%E7%94%A3%E5%BE%8C%E3%83%9E%E3%83%9E%E5%B0%82%E9%96%80%E3%82%B5%E3%83%AD%E3%83%B3BelleSante%E3%80%90%E3%83%99%E3%83%AB%E3%82%B5%E3%83%B3%E3%83%86%E3%80%91%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E5%A4%A7%E5%AE%AE%E5%8C%BA%E5%A4%A7%E6%88%90%E7%94%BA%EF%BC%93%EF%BC%8D%EF%BC%95%EF%BC%94%EF%BC%94%EF%BC%8D%EF%BC%92",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 235,
+   "name": "ほぐし処くらうど",
+   "address": "福岡県宮若市本城１１１９ いきいき本城Ⅱ o",
+   "url": "https://share.google/hLMZ3zr9qp8nLzuL5",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 236,
+   "name": "ファースト接骨院　八事日赤駅南院",
+   "address": "愛知県名古屋市昭和区山手通４丁目１２－４　鶴田ビル１F",
+   "url": "https://share.google/8Gmb4p5Yf4cbmlOTu",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 237,
+   "name": "整体サロン バランスワン(Balance One)",
+   "address": "大分県佐伯市稲垣３００−１ キャッスルハイムコスモス 102",
+   "url": "https://share.google/KjEcVtIx68hdZUPFb",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 238,
+   "name": "ラクーレ 疲労解消サロン",
+   "address": "兵庫県西脇市下戸田４８−２",
+   "url": "https://share.google/kLzQimP4slDroUycW",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 239,
+   "name": "学芸大学 ユキカタ鍼灸整骨院(腰痛/肩こり)",
+   "address": "東京都目黒区鷹番３丁目１３－５ シャンボール学芸大学 １０１ 腰痛 整体 肩こり 骨盤矯正",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E5%AD%A6%E8%8A%B8%E5%A4%A7%E5%AD%A6%20%E3%83%A6%E3%82%AD%E3%82%AB%E3%82%BF%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2(%E8%85%B0%E7%97%9B/%E8%82%A9%E3%81%93%E3%82%8A)%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%B7%B9%E7%95%AA%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%93%EF%BC%8D%EF%BC%95%20%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%AB%E5%AD%A6%E8%8A%B8%E5%A4%A7%E5%AD%A6%20%EF%BC%91%EF%BC%90%EF%BC%91%20%E8%85%B0%E7%97%9B%20%E6%95%B4%E4%BD%93%20%E8%82%A9%E3%81%93%E3%82%8A%20%E9%AA%A8%E7%9B%A4%E7%9F%AF%E6%AD%A3&lr=lang_ja#ebo=0",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 240,
+   "name": "REBORN整骨院",
+   "address": "宮崎県宮崎市恒久４丁目13−５",
+   "url": "https://share.google/CZZbupgdKDv7lIomk",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 241,
+   "name": "くらがね堂 操体法",
+   "address": "岐阜県岐阜市東興町８ ドミールＹＡＳＩＲＯ－２",
+   "url": "https://share.google/BzHPCdnMls1a9fhVZ",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 242,
+   "name": "北海道セラピストアカデミー直営 整体&酸素BOXサロンSora Sera～ソラセラ～",
+   "address": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+   "url": "https://share.google/zo7T8pIqzkoMEIOiy",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 243,
+   "name": "はり・きゅう・マッサージ しずく整骨院",
+   "address": "東京都練馬区豊玉北５丁目２３?１５ 竹内ビル 1F",
+   "url": "https://share.google/0FT88KxQo2AEFl3Pc",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 244,
+   "name": "青空指圧治療院",
+   "address": "福岡県福岡市南区鶴田１丁目９−１ ９番１号",
+   "url": "https://share.google/T1OAXV5QT3vNFoisS",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 245,
+   "name": "柔道整復 創健堂",
+   "address": "京都府京都市上京区西五辻北町４５７",
+   "url": "https://share.google/xl6RUx2q2UDzJK7ka",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 246,
+   "name": "よこやま鍼灸整骨院",
+   "address": "大阪府堺市中区深井中町１４０２−２７",
+   "url": "https://share.google/qz3cF4bVd0y4cfURG",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 247,
+   "name": "桶川トータルサポート接骨院",
+   "address": "埼玉県桶川市坂田９６２−５",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E6%A1%B6%E5%B7%9DTS%E6%8E%A5%E9%AA%A8%E9%99%A2%20%E5%9F%BC%E7%8E%89%E7%9C%8C&lr=lang_ja",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 248,
+   "name": "成宮鍼灸整骨院 & total beauty salon",
+   "address": "滋賀県彦根市肥田町３２３",
+   "url": "https://share.google/IJtDK9yOtysDAP2EH",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 249,
+   "name": "鍼灸サロン 悠雲",
+   "address": "福岡県福岡市博多区店屋町６−１ 松下館 ２０２",
+   "url": "https://share.google/EswkFbaNnk7GUsqZq",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 250,
+   "name": "しのろ駅前治療院",
+   "address": "北海道札幌市北区篠路３条６丁目４−３１ 1F",
+   "url": "https://share.google/8p6w1NigwvfGSnr7i",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 251,
+   "name": "コダマカイロプラクティックセンター",
+   "address": "東京都世田谷区三軒茶屋２丁目２０−１７ シティハイツ 105",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3a13fb846d550d34&hl=ja&kgmid=/g/11h4g8z73h&q=%E3%82%B3%E3%83%80%E3%83%9E%E3%82%AB%E3%82%A4%E3%83%AD%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=4eaa59d0f8528941&utm_source=damc,lcuae,ptotplc,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 252,
+   "name": "整体サロンS'ta（エスタ）",
+   "address": "東京都 江東区亀戸3-60-15プレイスM　102",
+   "url": "https://share.google/7ljsyYmDCSZkpE6b4",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 253,
+   "name": "重心道柔整鍼灸指圧院",
+   "address": "奈良県生駒郡三郷町勢野東４丁目１－３７",
+   "url": "https://www.google.co.jp/search?hl=ja&q=%E9%87%8D%E5%BF%83%E9%81%93%E6%9F%94%E6%95%B4%E9%8D%BC%E7%81%B8%E6%8C%87%E5%9C%A7%E9%99%A2%20%E5%A5%88%E8%89%AF%E7%9C%8C%E7%94%9F%E9%A7%92%E9%83%A1%E4%B8%89%E9%83%B7%E7%94%BA%E5%8B%A2%E9%87%8E%E6%9D%B1%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%8D%EF%BC%93%EF%BC%97&lr=lang_ja#ebo=0",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 254,
+   "name": "マッサージサロン CLEAR",
+   "address": "広島県広島市中区上八丁堀７−２０ 庁舎前ビル304",
+   "url": "https://share.google/TQG5jVbdvBi3Ibsc6",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 255,
+   "name": "悠和接骨院・鍼灸院",
+   "address": "神奈川県横浜市都筑区大丸４－７　ルミエール１０２",
+   "url": "https://share.google/hhwZi3YBqxWQYXKSw",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 256,
+   "name": "かわもと整体院",
+   "address": "大分県中津市中央町２丁目６−３４",
+   "url": "https://share.google/IqMoLHqqDLEtSfNox",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 257,
+   "name": "木場整骨院",
+   "address": "東京都江東区東陽３丁目２０−８",
+   "url": "https://share.google/3Og4G3ePNPKMV1oCa",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 258,
+   "name": "だいじょうぶ回復院",
+   "address": "神奈川県川崎市幸区幸町３丁目11−２ 1FF",
+   "url": "https://share.google/kQYl9R3g60QMHt8rE",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 259,
+   "name": "整体八彩−YAIRO",
+   "address": "福岡県福岡市東区千早５丁目１３−１６",
+   "url": "https://share.google/jTJoyJ1jh12oznBpm",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 260,
+   "name": "中央谷町鍼灸整骨院",
+   "address": "大阪府大阪市中央区内本町１丁目４?１０ ライオンズマンション東本町第２ 101",
+   "url": "https://share.google/rasjz0qR9GmbEl4oz",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 261,
+   "name": "整体院EIGHT",
+   "address": "福島県郡山市桑野１丁目１５−３ ＭＹ第一ビル 5階",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=04c18b188c04e8df&hl=ja&sxsrf=ANbL-n6lnnkzGhpGq2MSjG6kO3qH_iBCAg:1769395049489&kgmid=/g/11j2l4hfxf&q=%E6%95%B4%E4%BD%93%E9%99%A2EIGHT&shem=bdsle,epsd1,ptotple,shrtn&shndl=30&source=sh/x/loc/uni/m1/1&kgs=f49a48ce93ee8fd1&utm_source=bdsle,epsd1,ptotple,shrtn,sh/x/loc/uni/m1/1",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  },
+  {
+   "row": 262,
+   "name": "あたぎはりきゅう堂",
+   "address": "山形県山形市桜田西４丁目１４−７",
+   "url": "https://share.google/8YQzcoYOs37VpNF92",
+   "type": "整骨・整体・鍼灸",
+   "d1": "",
+   "d2": ""
+  }
+ ],
+ "ペット": [
+  {
+   "row": 2,
+   "name": "ミント",
+   "address": "〒505-0041 岐阜県美濃加茂市太田町４３６７",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2f32eac133bcd00b&hl=ja&sxsrf=AE3TifNJMQGh-WVmLqsB7antNQ6C1176Fw:1758168392241&kgmid=/g/1thxk_23&q=%E3%83%9F%E3%83%B3%E3%83%88&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=87cd03f7a62e81e9&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 3,
+   "name": "Graceful Dog【サロン＆ホテル・駒沢】",
+   "address": "東京都世田谷区駒沢３丁目２−５ ノーブル駒沢 １F",
+   "url": "https://share.google/AHuaOyh2iyd4rgZ1F",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 4,
+   "name": "Cafe Maera",
+   "address": "栃木県鹿沼市日吉町８４６",
+   "url": "https://share.google/toKAqQH4kijYUMB8y",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 5,
+   "name": "ひまわり動物病院",
+   "address": "〒960-8253 福島県福島市泉川原前８５−１",
+   "url": "https://www.google.co.jp/search?hl=ja&q=024-555-0366&lr=lang_ja",
+   "type": "ペット",
+   "d1": "動物病院",
+   "d2": ""
+  },
+  {
+   "row": 6,
+   "name": "ドッグサロンCheer",
+   "address": "埼玉県さいたま市西区内野本郷１１０２−８",
+   "url": "https://share.google/5kGRvnZIcohbWP6F1",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 7,
+   "name": "ネザーランドドワーフ専門店うさんぽ&うさカフェ",
+   "address": "福井県福井市和田東２丁目２２２３",
+   "url": "https://maps.app.goo.gl/iLz6gUPfHq2f8KWf8",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 8,
+   "name": "333 DogCare",
+   "address": "埼玉県坂戸市西坂戸３丁目１２−１",
+   "url": "https://share.google/yedvL8d6RnLgONPbm",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 9,
+   "name": "オズキャット",
+   "address": "〒819-0012 福岡県福岡市西区能古１１８２−１",
+   "url": "https://share.google/ReTLeo3tYiviOqt5z",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 10,
+   "name": "Wanvoice",
+   "address": "岐阜県加茂郡八百津町八百津３７０１−１",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=fbaa7d3b9c35fdd6&hl=ja&sxsrf=AE3TifNUX21oCi0w_KW9JM8rjyQO01c17w:1761036264310&kgmid=/g/11r9t9q78l&q=Wanvoice&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3ac8633893487638&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "ペット",
+   "d1": "ペット訓練所",
+   "d2": ""
+  },
+  {
+   "row": 11,
+   "name": "アッシュブロンドプードル",
+   "address": "東京都渋谷区神宮前２丁目９−１１ シオバラ外苑ビル シオバラ外苑前1階",
+   "url": "https://share.google/tK1uksWy7pjYUcIQw",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 12,
+   "name": "チラズランド",
+   "address": "埼玉県川越市連雀町10−３",
+   "url": "https://share.google/eUyglz3thY5KoHmFB",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 13,
+   "name": "Anifaペットカフェ",
+   "address": "大阪府大阪市北区中崎西１丁目１１−２",
+   "url": "https://share.google/A1qNZieMBrz6LjtEN",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 14,
+   "name": "犬の保育園Pee-Ka-Boo 玉造店",
+   "address": "大阪府大阪市東成区中道３丁目８−２１ ぺピイ・ハッピープレイス 玉造 1F",
+   "url": "https://share.google/bYyfMasSUTEV4owgx",
+   "type": "ペット",
+   "d1": "ペットホテル",
+   "d2": ""
+  },
+  {
+   "row": 15,
+   "name": "プラムケンネル",
+   "address": "兵庫県神戸市西区神出町南５７４ 266",
+   "url": "https://share.google/8dxeQRFEEfOHxNYXf",
+   "type": "ペット",
+   "d1": "ペット訓練所",
+   "d2": ""
+  },
+  {
+   "row": 16,
+   "name": "函館エキゾアシス爬虫類専門ペットショップ",
+   "address": "北海道函館市美原４丁目３０−１９",
+   "url": "https://share.google/PfNlBAHDjohQpUXbs",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 17,
+   "name": "犬の保育園LaughingDogs alpha",
+   "address": "福岡県北九州市戸畑区境川２丁目４−１０",
+   "url": "https://share.google/rlw01FRjjMS6OZ1lm",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 18,
+   "name": "LaughingDogs",
+   "address": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+   "url": "https://share.google/6xEeMIlnmqoAOVzP3",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 19,
+   "name": "トータルドッグサロン・パーティー",
+   "address": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+   "url": "https://share.google/GFZvE2rDdSO39PJFU",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 20,
+   "name": "Dog Salon Meira",
+   "address": "愛知県一宮市島村江向８３−１",
+   "url": "https://share.google/3LeTMRP4J8BMdd838",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 21,
+   "name": "SHELLFISH dogservice",
+   "address": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=753d27767aefc527&hl=ja&kgmid=/g/11c2q89zm8&q=SHELLFISH+dogservice&shndl=30&shem=bdsle,damc,lcuae,ptotplc,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=21b2d704fd6ddcb1&utm_source=bdsle,damc,lcuae,ptotplc,uaasie,shrtn,sh/x/loc/uni/m1/1",
+   "type": "ペット",
+   "d1": "ペット訓練所",
+   "d2": ""
+  },
+  {
+   "row": 22,
+   "name": "わんこのお宿・幼稚園・さろん” るぴこむ”",
+   "address": "京都府京都市中京区松下町１３０",
+   "url": "https://share.google/P00faBn17k2u2hSC3",
+   "type": "ペット",
+   "d1": "ペットホテル",
+   "d2": ""
+  },
+  {
+   "row": 23,
+   "name": "オオトカゲ生体展示館MonitorParkNeo",
+   "address": "神奈川県相模原市南区麻溝台７丁目１４−１ グランディールS 1階",
+   "url": "https://share.google/M1TXevyeGnS8vHAUy",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 24,
+   "name": "ペットシッターかわい",
+   "address": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=c0761affebde73b0&hl=ja&sxsrf=AE3TifOdT8Eo_-3smK1LuXjjEB7z2VoNzA:1766567894304&kgmid=/g/1hd_mxllm&q=%E3%83%9A%E3%83%83%E3%83%88%E3%82%B7%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8B%E3%82%8F%E3%81%84&shndl=30&shem=ptotplc,shrtn&source=sh/x/loc/uni/m1/1&kgs=1e3e46c8e790694c&utm_source=ptotplc,shrtn,sh/x/loc/uni/m1/1",
+   "type": "ペット",
+   "d1": "ペットホテル",
+   "d2": ""
+  },
+  {
+   "row": 25,
+   "name": "ドッグハウスキャンディー",
+   "address": "北海道札幌市南区澄川３条２丁目４−１２",
+   "url": "https://share.google/ZxlgLWiBfLQiX4wqT",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 26,
+   "name": "ブギ・ドギー BOOGIE DOGGY",
+   "address": "愛知県西尾市吉良町下横須賀荒子６３−１",
+   "url": "https://share.google/4qkva39KdSyoHbWvs",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 27,
+   "name": "ドッグヘアーサロン to do",
+   "address": "長野県上田市中之条３２３−８",
+   "url": "https://share.google/qaHPpC1ptdplGTkKB",
+   "type": "ペット",
+   "d1": "ペット(トリミング)サロン",
+   "d2": ""
+  },
+  {
+   "row": 28,
+   "name": "古民家ドッグカフェおかげさんで",
+   "address": "京都府南丹市日吉町四ツ谷西畑２０",
+   "url": "https://share.google/Mn8AyUvnx98JfzmOP",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 29,
+   "name": "猫・夢空間 気ままなみーこ",
+   "address": "和歌山県和歌山市湊１丁目４−２６",
+   "url": "https://share.google/xM0pbFaGkbanp9RNC",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 30,
+   "name": "ドッグスキャンセラピー ペロボニート",
+   "address": "東京都渋谷区富ケ谷１丁目５０−１０",
+   "url": "https://share.google/F62dq1NfwlZDjxUxY",
+   "type": "ペット",
+   "d1": "動物カフェ",
+   "d2": ""
+  },
+  {
+   "row": 31,
+   "name": "株式会社MISAKO犬舎【ブリーダー・子犬販売】",
+   "address": "茨城県石岡市東成井７−８３",
+   "url": "https://share.google/jMalR8Vy1JaEelEhK",
+   "type": "ペット",
+   "d1": "ペットショップ",
+   "d2": ""
+  },
+  {
+   "row": 32,
+   "name": "CROWNDOG",
+   "address": "東京都足立区小台２丁目１０−１８",
+   "url": "https://share.google/SiZOWdgle7OJtgTgV",
+   "type": "ペット",
+   "d1": "ペットホテル",
+   "d2": ""
+  },
+  {
+   "row": 33,
+   "name": "三ッ池動物病院",
+   "address": "神奈川県横浜市鶴見区上末吉１丁目１７−９",
+   "url": "https://share.google/eMSEzABmFymVdHPbn",
+   "type": "ペット",
+   "d1": "動物病院",
+   "d2": ""
+  }
+ ],
+ "宿泊施設": [
+  {
+   "row": 2,
+   "name": "長井小学校跡地キャンプ場",
+   "address": "栃木県矢板市長井１２４８",
+   "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d02a222cc2498b7b&hl=ja&sxsrf=AE3TifNtw_l-M5VLt8YMHQNzwTTHoPpXJQ:1755666619091&kgmid=/g/11ks2nds5z&q=%E9%95%B7%E4%BA%95%E5%B0%8F%E5%AD%A6%E6%A0%A1%E8%B7%A1%E5%9C%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4&shndl=30&shem=lcuae,lsptbl1,uaasie&source=sh/x/loc/uni/m1/1&kgs=176828dfa12b41d5&utm_source=lcuae,lsptbl1,uaasie,sh/x/loc/uni/m1/1",
+   "type": "宿泊施設",
+   "d1": "ゲストハウス・貸別荘",
+   "d2": ""
+  },
+  {
+   "row": 3,
+   "name": "海彩テラス熱海別邸",
+   "address": "〒413-0103 静岡県熱海市網代６２７−８６１",
+   "url": "https://share.google/xEz4EUCyDrXKNGiqJ",
+   "type": "宿泊施設",
+   "d1": "ホテル",
+   "d2": ""
+  },
+  {
+   "row": 4,
+   "name": "MAGONDO",
+   "address": "〒922-0554 石川県加賀市橋立町ム２",
+   "url": "https://www.google.co.jp/search?hl=ja&q=MAGONDO%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E5%8A%A0%E8%B3%80%E5%B8%82&lr=lang_ja",
+   "type": "宿泊施設",
+   "d1": "ホテル",
+   "d2": ""
+  },
+  {
+   "row": 5,
+   "name": "富士見の丘オートキャンプ場",
+   "address": "静岡県富士市大淵１２９７",
+   "url": "https://www.google.com/search?q=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A%E5%A0%B4&rlz=1C1ONGR_jaJP1183JP1183&oq=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A%E5%A0%B4&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQABiDARixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzM0N2owajmoAgawAgHxBYR4PR5uiCox&sourceid=chrome&ie=UTF-8",
+   "type": "宿泊施設",
+   "d1": "ゲストハウス・貸別荘",
+   "d2": ""
+  },
+  {
+   "row": 6,
+   "name": "ウルベビレッジ",
+   "address": "群馬県吾妻郡嬬恋村大前２２６３",
+   "url": "https://maps.app.goo.gl/NaAWdMDZ7PjeTpZz6",
+   "type": "宿泊施設",
+   "d1": "ホテル",
+   "d2": ""
+  },
+  {
+   "row": 7,
+   "name": "民宿水分村",
+   "address": "大分県玖珠郡九重町野上３７３５−２",
+   "url": "https://www.google.com/search?q=%E6%B0%91%E5%AE%BF%E6%B0%B4%E5%88%86%E6%9D%91+%E5%A4%A7%E5%88%86%E7%9C%8C%E7%8E%96%E7%8F%A0%E9%83%A1%E4%B9%9D%E9%87%8D%E7%94%BA%E9%87%8E%E4%B8%8A3735-2&rlz=1C1TMBY_jaJP997JP997&oq=%E6%B0%91%E5%AE%BF%E6%B0%B4%E5%88%86%E6%9D%91%E3%80%80%E5%A4%A7%E5%88%86%E7%9C%8C%E7%8E%96%E7%8F%A0%E9%83%A1%E4%B9%9D%E9%87%8D%E7%94%BA%E9%87%8E%E4%B8%8A3735-2&aqs=chrome..69i57j0i751l4.4244j0j7&sourceid=chrome&ie=UTF-8",
+   "type": "宿泊施設",
+   "d1": "民宿",
+   "d2": ""
+  },
+  {
+   "row": 8,
+   "name": "山のホテル大瀧",
+   "address": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+   "url": "https://www.google.com/search?q=0269-85-4000&rlz=1C1TMBY_jaJP997JP997&oq=0269-85-4000&aqs=chrome.0.69i59j69i60.402j0j7&sourceid=chrome&ie=UTF-8",
+   "type": "宿泊施設",
+   "d1": "ホテル",
+   "d2": ""
+  },
+  {
+   "row": 9,
+   "name": "よしおかや",
+   "address": "福井県三方上中郡若狭町食見１５−１０",
+   "url": "https://maps.app.goo.gl/XZXPHG2wFJ4X4Fjz9",
+   "type": "宿泊施設",
+   "d1": "民宿",
+   "d2": ""
+  },
+  {
+   "row": 10,
+   "name": "キャンプ番長ASAHIBASE",
+   "address": "千葉県旭市上永井１２５５",
+   "url": "https://share.google/Z9RvdSuva5kKdDl27",
+   "type": "宿泊施設",
+   "d1": "ゲストハウス・貸別荘",
+   "d2": ""
+  },
+  {
+   "row": 11,
+   "name": "Grow garden toriyama",
+   "address": "東京都東大和市蔵敷１丁目３９１",
+   "url": "https://share.google/lfLNBAd7rP2LNGL1H",
+   "type": "宿泊施設",
+   "d1": "ゲストハウス・貸別荘",
+   "d2": ""
+  },
+  {
+   "row": 12,
+   "name": "Wonderful Gardenオートキャンプ場／RVパークワンダフルガーデン柏",
+   "address": "千葉県柏市布施７３６",
+   "url": "https://www.google.co.jp/search?kgmid=/g/11y2m21ws8&hl=ja-JP&q=Wonderful+Garden%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%EF%BC%8FRV%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AF%E3%83%B3%E3%83%80%E3%83%95%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E6%9F%8F&shndl=17&source=sh/x/kp/osrp/m5/1&kgs=0dac1de5808520eb&shem=shrtn&utm_source=shrtn,sh/x/kp/osrp/m5/1",
+   "type": "宿泊施設",
+   "d1": "民宿",
+   "d2": ""
+  },
+  {
+   "row": 13,
+   "name": "Dog-cottage 西野納屋",
+   "address": "千葉県山武郡九十九里町西野１８５０",
+   "url": "https://www.google.com/search?q=Dog-cottage%E8%A5%BF%E9%87%8E%E7%B4%8D%E5%B1%8B+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B1%B1%E6%AD%A6%E9%83%A1%E4%B9%9D%E5%8D%81%E4%B9%9D%E9%87%8C%E7%94%BA%E8%A5%BF%E9%87%8E1850&rlz=1C1TMBY_jaJP997JP997&oq=&aqs=chrome.1.69i57j69i59j0i751j0i512i546j0i751l2.856j0j7&sourceid=chrome&ie=UTF-8",
+   "type": "宿泊施設",
+   "d1": "ゲストハウス・貸別荘",
+   "d2": ""
+  },
+  {
+   "row": 14,
+   "name": "滝の湯旅館",
+   "address": "福島県須賀川市滝赤土６３",
+   "url": "https://maps.app.goo.gl/xqA7RrteAUuTeLfL7",
+   "type": "宿泊施設",
+   "d1": "旅館",
+   "d2": ""
+  }
+ ]
+}

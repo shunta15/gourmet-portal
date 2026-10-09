@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 101,
+  "sheet": {
+    "name": "脱毛Salon B（ﾋﾞｼｮｯﾌﾟ）",
+    "address": "島根県松江市東朝日町１５８－８ 三和ビル 2階",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4acce884baa46368&hl=ja&kgmid=/g/11s_x3_4t_&q=%E8%84%B1%E6%AF%9BSalon+B%EF%BC%88%EF%BE%8B%EF%BE%9E%EF%BD%BC%EF%BD%AE%EF%BD%AF%EF%BE%8C%EF%BE%9F%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=7c7176089b6ae194&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11s_x3_4t_",
+  "queries": [
+    "脱毛Salon B（ﾋﾞｼｮｯﾌﾟ） 島根県松江市東朝日町１５８－８ 三和ビル 2階"
+  ],
+  "candidates": [
+    {
+      "name": "脱毛Salon B（ﾋﾞｼｮｯﾌﾟ）＆スカルプインクB+Plus",
+      "address": "島根県松江市東朝日町１５８−８ 三和ビル 2階",
+      "url": "https://www.google.com/maps/place/%E8%84%B1%E6%AF%9BSalon+B%EF%BC%88%EF%BE%8B%EF%BE%9E%EF%BD%BC%EF%BD%AE%EF%BD%AF%EF%BE%8C%EF%BE%9F%EF%BC%89%EF%BC%86%E3%82%B9%E3%82%AB%E3%83%AB%E3%83%97%E3%82%A4%E3%83%B3%E3%82%AFB%2BPlus/@35.4621932,133.0734205,17z/data=!3m1!4b1!4m6!3m5!1s0x355705ddda7a11fb:0x46c7d32a5822a493!8m2!3d35.4621932!4d133.0734205!16s%2Fg%2F11s_x3_4t_",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%84%B1%E6%AF%9BSalon+B%EF%BC%88%EF%BE%8B%EF%BE%9E%EF%BD%BC%EF%BD%AE%EF%BD%AF%EF%BE%8C%EF%BE%9F%EF%BC%89%EF%BC%86%E3%82%B9%E3%82%AB%E3%83%AB%E3%83%97%E3%82%A4%E3%83%B3%E3%82%AFB%2BPlus/@35.4621932,133.0734205,17z/data=!3m1!4b1!4m6!3m5!1s0x355705ddda7a11fb:0x46c7d32a5822a493!8m2!3d35.4621932!4d133.0734205!16s%2Fg%2F11s_x3_4t_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "島根県松江市東朝日町１５８－８ 三和ビル 2階",
+    "place": "島根県松江市東朝日町１５８−８ 三和ビル 2階",
+    "sheetNorm": "島根県松江市東朝日町158-8三和ビル2階",
+    "placeNorm": "島根県松江市東朝日町158-8三和ビル2階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "脱毛Salon B（ﾋﾞｼｮｯﾌﾟ）＆スカルプインクB+Plus",
+    "address": "島根県松江市東朝日町１５８−８ 三和ビル 2階",
+    "category": "脱毛サービス",
+    "lat": 35.4621932,
+    "lng": 133.0734205,
+    "gbpUrl": "https://maps.google.com/?cid=5100277281841128595",
+    "phone": "080-5830-7985",
+    "website": "https://salon-bishop.com/?fbclid=PAZXh0bgNhZW0CMTEAAaYg1yb51rkjtxVKxKn2UIspA3otq7zmUJe21e8M-zhoAkHDDkBd7_rZfcQ_aem_q8RadrCYBwoiEz6IJBiJdg",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–16:00",
+      "金": "10:00–03:00",
+      "土": "10:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://brilliant7985.pos-s.net/reserve/?shop_cd=1"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ご覧いただきありがとうございます。当サロンは、頭皮のアートメイク・ヘアタトゥーの高度な技術である「スカルプインク（Scalp Ink）」の正規資格を保有するサロンです。 確かな知識と繊細な技術力で、髪の生え際や分け目の薄さ、つむじのボリューム不足など、お一人おひとりの頭皮の状態や髪色に合わせた自然な仕上がりをご提案いたします。「薄毛が気になって自分に自信が持てない」「毎日のセットに時間がかかる」というお悩みに寄り添い、プライベートな空間で丁寧に施術を行います。まずは無料カウンセリングからお気軽にご相談ください。\n2026/06/15"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:58:34.792Z",
+  "seconds": 8.3
+}

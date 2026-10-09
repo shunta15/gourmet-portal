@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 332,
+  "sheet": {
+    "name": "佐世保市 hair room Socio.",
+    "address": "長崎県佐世保市川下町３７４ カラー 縮毛矯正 パーマ",
+    "url": "https://share.google/7C6vFEtzzU0cTF0nj",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=14371eb37312ee0c&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/1vl9pcvy&q=%E4%BD%90%E4%B8%96%E4%BF%9D%E5%B8%82+hair+room+Socio.&shndl=30&shem=bdsle,damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=3a673c04a070ad8f&utm_source=bdsle,damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1vl9pcvy",
+  "queries": [
+    "佐世保市 hair room Socio."
+  ],
+  "candidates": [
+    {
+      "name": "hair room Socio.",
+      "address": "長崎県佐世保市川下町３７４−１",
+      "url": "https://www.google.com/maps/place/hair+room+Socio./@33.1909798,129.6697167,17z/data=!3m1!4b1!4m6!3m5!1s0x356a94dcd7a92609:0xdd058e5c25104c71!8m2!3d33.1909798!4d129.6697167!16s%2Fg%2F1vl9pcvy",
+      "addressLevel": "near",
+      "addressDetail": "番地一致（丁目なしの番地に枝番の差: シート374 / マップ374-1）",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/hair+room+Socio./@33.1909798,129.6697167,17z/data=!3m1!4b1!4m6!3m5!1s0x356a94dcd7a92609:0xdd058e5c25104c71!8m2!3d33.1909798!4d129.6697167!16s%2Fg%2F1vl9pcvy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（番地一致（丁目なしの番地に枝番の差: シート374 / マップ374-1））／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "長崎県佐世保市川下町３７４ カラー 縮毛矯正 パーマ",
+    "place": "長崎県佐世保市川下町３７４−１",
+    "sheetNorm": "長崎県佐世保市川下町374カラー縮毛矯正パーマ",
+    "placeNorm": "長崎県佐世保市川下町374-1",
+    "level": "near",
+    "detail": "番地一致（丁目なしの番地に枝番の差: シート374 / マップ374-1）"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "hair room Socio.",
+    "address": "長崎県佐世保市川下町３７４−１",
+    "category": "美容院",
+    "lat": 33.1909798,
+    "lng": 129.6697167,
+    "gbpUrl": "https://maps.google.com/?cid=15926292183675587697",
+    "phone": "0956-47-7395",
+    "website": "https://hairroom-socio.com/",
+    "hours": {
+      "月": "09:30–19:00",
+      "火": "09:30–18:00",
+      "水": "定休日",
+      "木": "09:30–18:00",
+      "金": "09:30–18:00",
+      "土": "09:30–18:00",
+      "日": "09:30–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s8000037879/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【フェイシャルや毛穴ケアも対応しています】 hair room Socio.では、髪の施術に加えて、フェイシャルや毛穴ケアのメニューもご用意しています。洗顔フェイシャル、周波数ケア、毛穴ケア、パック、美顔器など、内容により前日までの予約が必要です。髪と一緒にお顔まわりのケアも相談したい方は、お気軽にお問い合わせください。 #佐世保市美容室 #フェイシャル #毛穴ケア"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:56:47.389Z",
+  "seconds": 8.1
+}

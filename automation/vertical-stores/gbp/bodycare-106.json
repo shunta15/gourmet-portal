@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 106,
+  "sheet": {
+    "name": "【美容鍼×小顔矯正】KADOMORI カドモリ 恵比寿代官山",
+    "address": "東京都渋谷区恵比寿西２－20－15　solstice代官山2F&B1",
+    "url": "https://beauty.hotpepper.jp/kr/slnH000478876/?cstt=1392",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "hotpepper",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "【美容鍼×小顔矯正】KADOMORI カドモリ 恵比寿代官山 東京都渋谷区恵比寿西２－20－15　solstice代官山2F&B1"
+  ],
+  "candidates": [
+    {
+      "name": "KADOMORI 代官山店",
+      "address": "東京都渋谷区恵比寿西２丁目２０−１５ solstice代官山2F&B1",
+      "url": "https://www.google.com/maps/place/KADOMORI+%E4%BB%A3%E5%AE%98%E5%B1%B1%E5%BA%97/@35.6484964,139.7043538,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b44363e33b1:0xc5850b5ed8c7f6d6!8m2!3d35.6484964!4d139.7043538!16s%2Fg%2F11c5h39pb3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/KADOMORI+%E4%BB%A3%E5%AE%98%E5%B1%B1%E5%BA%97/@35.6484964,139.7043538,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188b44363e33b1:0xc5850b5ed8c7f6d6!8m2!3d35.6484964!4d139.7043538!16s%2Fg%2F11c5h39pb3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "住所は一致で店名がちがう",
+  "verdictReason": "住所一致（町名・番地とも一致）。シート「【美容鍼×小顔矯正】KADOMORI カドモリ 恵比寿代官山」とマップ「KADOMORI 代官山店」で店名が合わない（改称・同じ建物の別店・シートの表記ゆれのいずれか未確認）",
+  "addressCompare": {
+    "sheet": "東京都渋谷区恵比寿西２－20－15　solstice代官山2F&B1",
+    "place": "東京都渋谷区恵比寿西２丁目２０−１５ solstice代官山2F&B1",
+    "sheetNorm": "東京都渋谷区恵比寿西2-20-15solstice代官山2F&B1",
+    "placeNorm": "東京都渋谷区恵比寿西2-20-15solstice代官山2F&B1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "KADOMORI 代官山店",
+    "address": "東京都渋谷区恵比寿西２丁目２０−１５ solstice代官山2F&B1",
+    "category": "整体",
+    "lat": 35.6484964,
+    "lng": 139.7043538,
+    "gbpUrl": "https://maps.google.com/?cid=14232794699366135510",
+    "phone": "03-5458-1320",
+    "website": "https://kadomori-kogao.com/salon/daikanyama/?utm_source=gmb&utm_medium=organic&utm_campaign=daikanyama_gmb",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "11:00–21:00",
+      "木": "11:00–21:00",
+      "金": "11:00–21:00",
+      "土": "11:00–20:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://1cs.jp/kadomoritokyo/rwg"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": ". ハリネズミ美容鍼🦔 お顔の状態を見極めながら、 表情筋・骨格筋・血流・肌へ多角的にアプローチ。 見た目の変化だけではなく、 内側から本来の美しさを引き出していきます。 「むくみが気になる」 「フェイスラインを整えたい」 「肌のハリ・ツヤを高めたい」 そんな方におすすめです。 ✨ 美容鍼モニター募集中 ✨ 気になる方は DMより「美容鍼モニター希望」とお送りください💌 恵比寿エリアで鍼灸院をお探しなら、代官山駅から徒歩1分・恵比寿駅から徒歩7分の「美容鍼・小顔矯正 KADOMORI 代官山店」へ。 一人ひとりの骨格・筋肉・巡りの状態を見極め、オーダーメイドの小顔矯正・美容鍼施術を行うサロンです。美容鍼・小顔矯正・整顔矯正・美容整体を中心に、フェイスラインの左右差、むくみ、たるみ、姿勢や全身バランスまでを総合的に整える施術をご提供しています。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:01:29.718Z",
+  "seconds": 8.5
+}

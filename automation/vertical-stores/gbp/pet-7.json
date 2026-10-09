@@ -1,0 +1,67 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 7,
+  "sheet": {
+    "name": "ネザーランドドワーフ専門店うさんぽ&うさカフェ",
+    "address": "福井県福井市和田東２丁目２２２３",
+    "url": "https://maps.app.goo.gl/iLz6gUPfHq2f8KWf8",
+    "type": "ペット",
+    "d1": "動物カフェ",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E3%83%8D%E3%82%B6%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%89%E3%83%AF%E3%83%BC%E3%83%95%E5%B0%82%E9%96%80%E5%BA%97%E3%81%86%E3%81%95%E3%82%93%E3%81%BD%EF%BC%86%E3%81%86%E3%81%95%E3%82%AB%E3%83%95%E3%82%A7/@36.0469078,136.2505278,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bda4a6242439:0xc1e566ee7212d8ea!8m2!3d36.0469078!4d136.2505278!16s%2Fg%2F11rcxy2wnp?entry=tts&g_ep=EgoyMDI1MTAwOC4wIPu8ASoASAFQAw%3D%3D&skid=5fcd0b09-93b7-496d-b04b-bed679ae67ac",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "ネザーランドドワーフ専門店うさんぽ＆うさカフェ",
+      "address": "福井県福井市和田東２丁目２２２３ うさんぽ&うさカフェ",
+      "url": "https://www.google.com/maps/place/%E3%83%8D%E3%82%B6%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%89%E3%83%AF%E3%83%BC%E3%83%95%E5%B0%82%E9%96%80%E5%BA%97%E3%81%86%E3%81%95%E3%82%93%E3%81%BD%EF%BC%86%E3%81%86%E3%81%95%E3%82%AB%E3%83%95%E3%82%A7/@36.0469078,136.2505278,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bda4a6242439:0xc1e566ee7212d8ea!8m2!3d36.0469078!4d136.2505278!16s%2Fg%2F11rcxy2wnp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%8D%E3%82%B6%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%83%89%E3%83%AF%E3%83%BC%E3%83%95%E5%B0%82%E9%96%80%E5%BA%97%E3%81%86%E3%81%95%E3%82%93%E3%81%BD%EF%BC%86%E3%81%86%E3%81%95%E3%82%AB%E3%83%95%E3%82%A7/@36.0469078,136.2505278,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bda4a6242439:0xc1e566ee7212d8ea!8m2!3d36.0469078!4d136.2505278!16s%2Fg%2F11rcxy2wnp?entry=tts&g_ep=EgoyMDI1MTAwOC4wIPu8ASoASAFQAw%3D%3D&skid=5fcd0b09-93b7-496d-b04b-bed679ae67ac",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福井県福井市和田東２丁目２２２３",
+    "place": "福井県福井市和田東２丁目２２２３ うさんぽ&うさカフェ",
+    "sheetNorm": "福井県福井市和田東2-2223",
+    "placeNorm": "福井県福井市和田東2-2223うさんぽ&うさカフェ",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ネザーランドドワーフ専門店うさんぽ＆うさカフェ",
+    "address": "福井県福井市和田東２丁目２２２３ うさんぽ&うさカフェ",
+    "category": "ペットショップ",
+    "lat": 36.0469078,
+    "lng": 136.2505278,
+    "gbpUrl": "https://maps.google.com/?cid=13971686593288919274",
+    "phone": "0776-21-6115",
+    "website": "https://usanpo-usagicafe.com/",
+    "hours": {
+      "月": "11:30–18:00",
+      "火": "12:00–17:00",
+      "水": "定休日",
+      "木": "12:00–17:00",
+      "金": "12:00–17:00",
+      "土": "11:30–18:00",
+      "日": "11:30–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "チンチラの女の子　名前はバニラ\n2026/07/24"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:00:28.626Z",
+  "seconds": 6
+}

@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 116,
+  "sheet": {
+    "name": "リラクゼーションサロン・さくら",
+    "address": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+    "url": "https://share.google/ODX2lVh55WmmLNVgj",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=6d9773df8986f1e8&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPp5WtvETQKfIlu8Lw_58IdT-wegg:1761633436089&kgmid=/g/11ptlkfy1x&q=%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%81%95%E3%81%8F%E3%82%89&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=78ba3032cebf1875&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ptlkfy1x",
+  "queries": [
+    "リラクゼーションサロン・さくら",
+    "リラクゼーションサロン・さくら 大阪府東大阪市足代３丁目６−２ タカビル ２F"
+  ],
+  "candidates": [
+    {
+      "name": "リラクゼーションサロン・さくら",
+      "address": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+      "url": "https://www.google.com/maps/place/%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%81%95%E3%81%8F%E3%82%89/@34.662694,135.5656484,17z/data=!3m1!4b1!4m6!3m5!1s0x6000dffa741c56b5:0xf6cc0c7a6c0301f7!8m2!3d34.662694!4d135.5656484!16s%2Fg%2F11ptlkfy1x",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%81%95%E3%81%8F%E3%82%89/@34.662694,135.5656484,17z/data=!3m1!4b1!4m6!3m5!1s0x6000dffa741c56b5:0xf6cc0c7a6c0301f7!8m2!3d34.662694!4d135.5656484!16s%2Fg%2F11ptlkfy1x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+    "place": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+    "sheetNorm": "大阪府東大阪市足代3-6-2タカビル2F",
+    "placeNorm": "大阪府東大阪市足代3-6-2タカビル2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "リラクゼーションサロン・さくら",
+    "address": "大阪府東大阪市足代３丁目６−２ タカビル ２F",
+    "category": "リフレクソロジスト",
+    "lat": 34.662694,
+    "lng": 135.5656484,
+    "gbpUrl": "https://maps.google.com/?cid=17783602748516925943",
+    "phone": "06-4309-8963",
+    "website": "https://mitsuraku.jp/salon/91266/?jumpfrom=top_salon&internal_referral=history_top",
+    "hours": {
+      "月": "10:00–21:30",
+      "火": "10:00–21:30",
+      "水": "10:00–21:30",
+      "木": "定休日",
+      "金": "10:00–21:30",
+      "土": "10:00–21:30",
+      "日": "10:00–21:30"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s2000048193/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:57:23.609Z",
+  "seconds": 13.3
+}
