@@ -1,14 +1,5 @@
 {
-  "key": "bodycare-3",
-  "images": [
-    {
-      "path": "/_portal/vshops/bodycare-3/s1.jpg",
-      "imageUrl": "https://www.oosawaseikotsuin.com/wp-content/themes/temp02_10/images/under/page17_01.jpg",
-      "pageUrl": "https://www.oosawaseikotsuin.com/equipment/",
-      "what": "キッズスペース",
-      "width": 800,
-      "height": 533
-    }
-  ],
-  "note": ""
+ "key": "bodycare-3",
+ "images": [],
+ "note": "写真なし: 公式サイトで使える実店舗の写真は、幼児の顔がはっきり写るキッズスペースの1枚だけ(子どもの顔が分かる写真は使わない=発注者の判断)"
 }
