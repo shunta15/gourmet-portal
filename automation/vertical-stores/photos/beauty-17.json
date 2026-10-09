@@ -1,5 +1,15 @@
 {
   "key": "beauty-17",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-17/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rr845sAHQDtwyNVqF29A3P1URf74D7iHPaOCUMevHaezsyvdu6_Ew47e1IJ0Dd10acRybp-idmfhyTgLqUKwab_pq1q7VAmcLoWIPYGWbnnMJfyQcaslFwFlDi1l-fO8_qoYD2=w408-h544-k-no",
+      "pageUrl": "https://maps.google.com/?cid=3794766852228851090",
+      "what": "ストレートの髪の仕上がり後ろ姿",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-56",
-  "images": [],
-  "note": "公式サイトに店内・外観・施術室の写真が無い(まつげ・眉の接写とバナー、400px 以下の小画像だけ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-56/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9THcgoYhNwGKLZPYWZKBB3gVqK3k-QQRKTfloK6PVr3Oo1d18LeDlWJsOdgZr1LIQucmGy6XJVUQSLSZD7mcERUB22AIPW5ainzdGqZbTE4BWdesBAL_TRDUlK8WmWmPGN7z-KCLg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4019298357468283933",
+      "what": "施術ベッドのある白い個室",
+      "width": 1200,
+      "height": 955,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトに店内・外観・施術室の写真が無い(まつげ・眉の接写とバナー、400px 以下の小画像だけ) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-9",
-  "images": [],
-  "note": "Googleマップ記載のサイトがLINE公式アカウントのみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-9/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QFUjdtwfD_TuPmD7Q5NiYaixVWDXl5p_8seeVR-6EbpxTNib5nhfuhu2GKAtO7UntHIzVTY8-7pKmHuIWd0B5XKRTGR7psAatPkSfyL3cwlIjlgULy--W9En6eKhHzbYmr3GERhMJnqf-H=w426-h240-k-no",
+      "pageUrl": "https://maps.google.com/?cid=12230675342996067525",
+      "what": "白とナチュラル木目のネイル席",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがLINE公式アカウントのみで、自前の公式サイトが無い / Google マップの写真"
 }

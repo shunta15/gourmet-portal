@@ -1,5 +1,15 @@
 {
   "key": "beauty-62",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-62/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWGqgdjOMShaOySl8jrMAbbs5WTilxftIV-F1WQTguTn1F8f3TgJHUNxomfp23WqzvslxqK8qTIfcR1aGTLf0tem1A6Dc4YYDfzkjFW9Nm1_FmULTS7cPSimmmEUHxvHfO-f7LvA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=245201558187846171",
+      "what": "夜のBABE HAIR店頭の外観",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

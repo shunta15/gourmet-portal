@@ -1,5 +1,15 @@
 {
   "key": "beauty-96",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-96/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TpCHxWBDApV_Jao5bkHEeOpeKDxYBDxgWekl-KHp42He0FOErmgNoOYJkp17o-SoIM7A_UyShxmw-HJtfxGRlJjseQEbOtNwZizSZLjmEW0nPsuOT6RQjdmyhyYk6vDlZ0s8i99ybFlY9W=w408-h271-k-no",
+      "pageUrl": "https://maps.google.com/?cid=3261067820293358582",
+      "what": "受付と大きな窓のある店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

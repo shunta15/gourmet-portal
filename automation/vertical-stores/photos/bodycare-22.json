@@ -1,5 +1,15 @@
 {
   "key": "bodycare-22",
-  "images": [],
-  "note": "公式サイトは1ページのみで、載っている画像は店名・院長紹介・診療時間のバナーだけ(店内・外観の写真なし)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-22/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNwvIYyQo1IS4HbmVnbm068rOj5gtSbGcgqXy-V8fOuzH82vlUJdDGEwGXKyLzDZ5BG9jixcc6J3vqzRFK0psN8uaMDZAOIu4TcmdMKH-paa01QCZcvSwLUlFMvAcapiygBFU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3027718566350911202",
+      "what": "みさお接骨院の外観",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトは1ページのみで、載っている画像は店名・院長紹介・診療時間のバナーだけ(店内・外観の写真なし) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-120",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-120/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-9T1r1BOqRJsGJrMhdC_pMzeEgodXFXAv-qOWzs2grM8HfthHwXYCuqXgKe7IVk150bq4BHKhQLvHJBbHsAjkOpN_1wKQoIYcu_iENi62796zdIbUzlQ4ZrELuUWNQpwFNYA-=w408-h306-k-no",
+      "pageUrl": "https://maps.google.com/?cid=2400611962910507231",
+      "what": "ガラスで仕切られた白い店内",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "bodycare-116",
-  "images": [],
-  "note": "Googleマップのサイトは予約・掲載サイト(EPARKリラク&エステ)のみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-116/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJa2uqs8fZu8ESyHSZFXnF0o1R7bOljmiqYuQf-iyHHox89bv5SLANU60W5XTlsMSNNbycQGl1XQa_QMeH8oUjUUnvCq_5Xbl5Bwha_CWtkrYS0BH1tnaQisR2cTaFkCQWcLjLCw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17783602748516925943",
+      "what": "施術ベッドが並ぶ院内",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトは予約・掲載サイト(EPARKリラク&エステ)のみで自前の公式サイトなし / Google マップの写真"
 }

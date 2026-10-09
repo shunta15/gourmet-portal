@@ -1,5 +1,15 @@
 {
   "key": "beauty-98",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-98/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Syjrn3UgDwe7ZWQ1Ks4tuSjCkAO_sWdEtFiitvAJ2_iU7pv7zIkOcohR-4F6AcsqZLqXOLmYQk7lho_0Zw_WbVAXVoF7BSAUMMd6MUYHSU_FkUfA-1Yci37jroGV51f1fnP8Iy=w408-h306-k-no",
+      "pageUrl": "https://maps.google.com/?cid=9209132912062171965",
+      "what": "ヘアセット仕上がり例の写真6枚",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

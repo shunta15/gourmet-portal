@@ -1,5 +1,15 @@
 {
   "key": "beauty-122",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-122/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RYQUtav-HYtK5JACpbdcbrBiXaLaM9tICQXmSTf_ehXg17qcsXphfmhSVPlpcbfu9q3EPbMe5Xkzw-QiS1K8flbUXw4nXVA087DTVakmiswgkuiqHy8dpaXNegzvWJ1T-CeGYotw=w408-h305-k-no",
+      "pageUrl": "https://maps.google.com/?cid=10606362825615978088",
+      "what": "金枠の鏡とセット椅子の店内",
+      "width": 1200,
+      "height": 899,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }
