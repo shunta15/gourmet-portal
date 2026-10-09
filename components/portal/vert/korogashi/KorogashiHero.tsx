@@ -3,9 +3,10 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import type { KoroKind } from "@/lib/portal/vert/korogashi/data";
-import { beginGrab, createWorld, endGrab, setGrabTarget, step, type Body, type World } from "@/lib/portal/vert/korogashi/physics";
+import { beginGrab, createWorld, endGrab, kickToy, rollIn, rollOut, setGrabTarget, step, type Body, type World } from "@/lib/portal/vert/korogashi/physics";
 import { camAt, makeCam, project, ray } from "@/lib/portal/vert/korogashi/camera";
 import { createRenderer, N_OBJ, type KRenderer } from "./renderer";
+import { LINE_P0, LINE_P1, linePoses } from "@/lib/portal/vert/korogashi/lineup";
 
 type Props = { kinds: KoroKind[]; lead: string };
 
@@ -179,6 +180,10 @@ export default function KorogashiHero({ kinds, lead }: Props) {
     const poses: Pose[] = Array.from({ length: N_OBJ }, () => ({ z: 0, y: 0, a: 0 }));
     let blend = 0;
     let pOverride: number | null = null;
+    // 何もしないときの小さな出来事(玉が転がってくる・上のポールがごろりと動いて戻る・棒を押す)
+    let evtAt = 0;
+    let evtN = 0;
+    let rock: { i: number; t0: number; T: number; A: number } | null = null;
     let devTilt = 0;
     const A = new Float32Array(N_OBJ * 4);
     const B = new Float32Array(N_OBJ * 4);
@@ -231,30 +236,31 @@ export default function KorogashiHero({ kinds, lead }: Props) {
 
     // 描く姿勢: 物理の姿勢と、横一列の位置(スロット)を、スクロールで混ぜる。ポールは、手前の壁に近い順に 1 本ずつのスロットへ
     const computePoses = () => {
-      blend = reduce ? 0 : sm(0.5, 0.76, p);
-      // 先に横(手前〜奥)へ寄り、そのあと床へ降りる。ポールどうしが重ならないよう、同じ高さでは並び順を保つ
-      const zb = reduce ? 0 : sm(0.5, 0.68, p);
-      const yb = reduce ? 0 : sm(0.64, 0.78, p);
-      const ps = world.bodies.slice(0, 6).map((b, i) => ({ b, i })).sort((u, v) => (Math.abs(v.b.z - u.b.z) < 0.02 ? u.b.y - v.b.y : v.b.z - u.b.z));
-      const sortedRank = new Array<number>(6);
-      ps.forEach((u, k) => {
-        sortedRank[u.i] = k;
-      });
-      // 横一列の位置は、種類の番号順(上から 1〜6)。並びが入れ替わるポールは、隣を転がり越えるように、すこし持ち上がる
-      const slot = new Array<number>(6);
-      const lift = new Array<number>(6).fill(0);
-      for (let i = 0; i < 6; i++) {
-        const front = 5 - KOF[i];
-        slot[i] = world.zMax - 0.5 - 0.015 - front * 1.03;
-        if (sortedRank[i] !== front) lift[i] = 1.1 * Math.sin(Math.PI * clamp((zb - 0.0) / 1, 0, 1));
-      }
+      blend = reduce ? 0 : clamp((p - LINE_P0) / (LINE_P1 - LINE_P0), 0, 1);
+      const src = world.bodies.slice(0, 6).map((b) => ({ z: b.z, y: b.y, a: b.a, r: b.r }));
+      const lined = blend > 0 ? linePoses(src, KOF, world.zMax, p) : null;
       world.bodies.forEach((b, i) => {
         if (i < 6) {
-          const z = b.z + (slot[i] - b.z) * zb;
-          const y = b.y + (0.5 - b.y) * yb + lift[i];
-          poses[i].z = z;
-          poses[i].y = y;
-          poses[i].a = b.a - (z - b.z) / b.r;
+          if (lined) {
+            poses[i].z = lined[i].z;
+            poses[i].y = lined[i].y;
+            poses[i].a = lined[i].a;
+          } else {
+            poses[i].z = b.z;
+            poses[i].y = b.y;
+            poses[i].a = b.a;
+          }
+          // 上の段のポールは、床がわずかに傾いたように、ゆっくり揺れる(ポインターの左右+ときどき、ごろりと動いて戻る)
+          if (i >= 3 && blend < 0.01) {
+            let ra = mxs * (i === 5 ? 0.26 : 0.18);
+            if (rock && rock.i === i) {
+              const u = (performance.now() - rock.t0) / rock.T;
+              if (u < 1) ra += rock.A * Math.pow(Math.sin(Math.PI * u), 2);
+              else rock = null;
+            }
+            poses[i].a += ra;
+            poses[i].z -= ra * b.r * 0.3;
+          }
         } else {
           poses[i].z = b.gone ? 99 : b.z;
           poses[i].y = b.gone ? -9 : b.y;
@@ -287,7 +293,7 @@ export default function KorogashiHero({ kinds, lead }: Props) {
         by1 = Math.max(by1, poses[i].y + b.r);
       });
       const intro = clamp((now - t0) / 500, 0, 1);
-      r.render({ time: now / 1000, cam, a: A, b: B, march: [Math.max(0, dist - 10.5), dist + 20], exposure: 0.25 + 0.75 * intro, box: [bz0, bz1, by1] });
+      r.render({ time: now / 1000, cam, a: A, b: B, march: [Math.max(0, dist - 10.5), dist + 20], exposure: 0.25 + 0.75 * intro, box: [bz0, bz1, by1], focus: dist });
       if (frameN === 0) {
         w.dataset.mode = "gl";
         if (root) root.dataset.mode = "gl";
@@ -316,6 +322,21 @@ export default function KorogashiHero({ kinds, lead }: Props) {
         viewOff[i] = want * k;
         void b;
       });
+    };
+
+    const runEvent = (kk: number, now: number) => {
+      const k = kk % 6;
+      evtN = kk + 1;
+      const sgn = evtN % 2 ? 1 : -1;
+      // 玉: 手前の外にいる玉を転がし込む(山にぶつかって止まる)。いなければ、手前の玉を 1 つ転がし出す
+      const ids = [8, 7, 6];
+      const ball = () => ids.some((_, j) => rollIn(world, ids[(j + evtN) % 3], 3.7 + 0.4 * sgn)) || ids.some((_, j) => rollOut(world, ids[(j + evtN) % 3], 4.2));
+      if (k === 0 || k === 2 || k === 5) ball();
+      else if (k === 1) rock = { i: 5, t0: now, T: 1900, A: 0.7 * sgn };
+      else if (k === 3) {
+        if (!kickToy(world, 9, 2.8)) ball();
+      } else rock = { i: 3 + (evtN % 2), t0: now, T: 1800, A: -0.6 * sgn };
+      busyUntil = now + 2600;
     };
 
     const frame = (now: number) => {
@@ -353,6 +374,17 @@ export default function KorogashiHero({ kinds, lead }: Props) {
       }
       if (n === 3) acc = 0;
       mxs += (mx - mxs) * 0.04;
+      // 小さな道具だけに、ポインターの高さでごくわずかな床の傾き
+      world.tiltSmall = reduce || p > 0.02 || grab ? 0 : Math.abs(mys) < 0.18 ? 0 : Math.sign(mys) * Math.min(0.1, (Math.abs(mys) - 0.18) * 0.16);
+      // 数秒おきの小さな出来事
+      if (!reduce && p < 0.02 && !grab && !leaving && world.restFor > 0.6) {
+        if (evtAt === 0) evtAt = now + 1800;
+        if (now > evtAt) {
+          const k = evtN;
+          runEvent(evtN, now);
+          evtAt = now + 3000 + (k % 3) * 500;
+        }
+      } else if (p >= 0.02 || grab) evtAt = 0;
       mys += (my - mys) * 0.04;
       // ホバー(ポインターの下の物)
       const { cam } = getCam();
@@ -559,6 +591,7 @@ export default function KorogashiHero({ kinds, lead }: Props) {
         },
         world: () => world,
         reset: resetWorld,
+        fire: (k: number) => runEvent(k, performance.now()),
         setP: (v: number | null) => {
           pOverride = v;
         },

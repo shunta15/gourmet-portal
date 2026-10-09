@@ -117,7 +117,9 @@
   .kz-labels{display:none}
   .kz-list{transform:translateY(calc(var(--kh) * -148px));padding:0;margin-left:0;background:rgba(245,242,234,calc(var(--kh) * .94))}
   .kz-row{grid-template-columns:1.6em 1fr;padding:0 4px 0 6px}
-  .kz-cue{bottom:18px}
+  .kz-cue{bottom:18px;color:#f6f2e8;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+  .kz-cue-l{background:rgba(246,242,232,.6)}
+  .kz-cue-l::after{background:#f6f2e8}
   .kz-hero{height:330svh}
   .kz-shops{grid-template-columns:repeat(2,minmax(0,1fr))}
 }

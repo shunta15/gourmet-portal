@@ -18,6 +18,8 @@ export type Frame = {
   exposure: number;
   /** 物体全体を囲む箱: [zMin, zMax, yMax](x は ±3.15)。外れた視線・影・遮蔽は、行進を省く */
   box: [number, number, number];
+  /** ピントの合う距離(カメラから山まで) */
+  focus: number;
 };
 
 export type KRenderer = {
@@ -46,6 +48,7 @@ uniform vec4 uA[11];
 uniform vec4 uB[11];
 uniform vec3 uCol[6];
 uniform float uExp;
+uniform float uFocus;
 uniform sampler2D uAtlas;
 
 const float PI = 3.14159265;
@@ -132,12 +135,12 @@ float winMask(vec3 p){
   if (t < 0.0) return 1.0;
   float hy = p.y + LDIR.y * t;
   float hz = p.z + LDIR.z * t;
-  float s = 0.5 + 0.07 * t;
+  float s = 0.3 + 0.045 * t;
   float inside = smoothstep(2.5 - s, 2.5 + s, hy) * (1.0 - smoothstep(26.0 - s, 26.0 + s, hy)) * smoothstep(-8.0 - s, -8.0 + s, hz) * (1.0 - smoothstep(20.0 - s, 20.0 + s, hz));
-  float barH = 1.0 - smoothstep(0.1, 0.1 + s, abs(hy - 5.6));
-  float barV = 1.0 - smoothstep(0.1, 0.1 + s, abs(hz - 12.5));
-  float m = inside * (1.0 - 0.55 * max(barH, barV));
-  return mix(0.6, 1.0, m);
+  float barH = 1.0 - smoothstep(0.2, 0.2 + s, abs(hy - 5.6));
+  float barV = 1.0 - smoothstep(0.22, 0.22 + s, abs(hz - 4.6));
+  float m = inside * (1.0 - 0.7 * max(barH, barV));
+  return mix(0.5, 1.0, m);
 }
 float softShadow0(vec3 ro, vec3 rd, float tmax){
   float tn, tf;
@@ -337,29 +340,47 @@ vec3 shadeStick(vec3 p, vec3 n, vec3 rd, float t){
   vec4 a = uA[9]; vec4 b = uB[9];
   vec3 q = vec3(p.x - b.x, p.y - a.y, p.z - a.x);
   vec3 lp = toLocal(q, a.z);
-  float g1 = n3(vec3(lp.x * 4.0, lp.y * 70.0, lp.z * 70.0));
-  float g2 = n3(vec3(lp.x * 22.0, lp.y * 140.0, lp.z * 140.0));
-  vec3 alb = mix(vec3(0.76, 0.58, 0.38), vec3(0.62, 0.43, 0.26), smoothstep(0.35, 0.75, g1)) * (0.92 + 0.12 * g2);
-  // 焼き印の細い輪(転がると回って見える)と、先の濃い色
-  alb *= 1.0 - 0.45 * smoothstep(0.02, 0.0, abs(q.x - 0.28) - 0.012) * step(0.0, lp.y + 0.2 * lp.z + 0.02);
-  alb *= 1.0 - 0.18 * smoothstep(b.y - 0.5, b.y, q.x);
+  // 木目: 軸に沿った細い筋と、年輪のにじみ
+  float g1 = n3(vec3(lp.x * 2.5, lp.y * 90.0, lp.z * 90.0));
+  float g2 = n3(vec3(lp.x * 14.0, lp.y * 170.0, lp.z * 170.0));
+  float ring = sin(atan(lp.y, lp.z) * 5.0 + n3(vec3(lp.x * 1.5, 3.0, 3.0)) * 6.0) * 0.5 + 0.5;
+  vec3 alb = mix(vec3(0.60, 0.42, 0.23), vec3(0.38, 0.24, 0.12), smoothstep(0.25, 0.75, g1 * 0.6 + ring * 0.4)) * (0.85 + 0.3 * g2);
+  // 焼き印の輪と、先の木口
+  alb *= 1.0 - 0.5 * smoothstep(0.016, 0.0, abs(q.x - 0.3) - 0.01);
+  alb *= 1.0 - 0.5 * smoothstep(0.016, 0.0, abs(q.x - 0.36) - 0.004);
+  float tip = smoothstep(b.y - 0.1, b.y, q.x);
+  alb = mix(alb, vec3(0.62, 0.45, 0.28), tip * 0.7);
   float ao = calcAO(p, n);
   float sh = softShadow(p + n * 0.01, LDIR, 9.0);
-  return lighting(p, n, rd, alb, 0.22, 28.0, 0.25, ao, sh);
+  return lighting(p, n, rd, alb, 0.2, 24.0, 0.25, ao, sh);
 }
 
 vec3 shadeBamboo(vec3 p, vec3 n, vec3 rd, float t){
   vec4 a = uA[10]; vec4 b = uB[10];
   vec3 q = vec3(p.x - b.x, p.y - a.y, p.z - a.x);
-  float fib = n3(vec3(q.x * 1.6, q.y * 90.0, q.z * 90.0));
-  float fib2 = n3(vec3(q.x * 9.0, q.y * 220.0, q.z * 220.0));
-  vec3 alb = mix(vec3(0.20, 0.29, 0.10), vec3(0.34, 0.38, 0.16), smoothstep(0.3, 0.8, fib)) * (0.92 + 0.12 * fib2);
-  float node = exp(-pow((q.x + 0.6) * 11.0, 2.0)) + exp(-pow((q.x - 0.5) * 11.0, 2.0));
-  alb = mix(alb, vec3(0.50, 0.46, 0.22), clamp(node, 0.0, 1.0) * 0.7);
-  // 平らな面の縁
+  // 繊維: 軸(x)に沿って長く伸びた細い筋、太いむら、節
+  float f1 = n3(vec3(q.x * 0.8, q.y * 150.0, q.z * 150.0));
+  float f2 = n3(vec3(q.x * 3.2, q.y * 64.0, q.z * 64.0));
+  float f3 = n3(vec3(q.x * 0.3, q.y * 14.0, q.z * 14.0));
+  vec3 green = vec3(0.13, 0.20, 0.05);
+  vec3 straw = vec3(0.36, 0.34, 0.12);
+  vec3 alb = mix(green, straw, smoothstep(0.32, 0.78, f3));
+  alb *= 0.74 + 0.5 * f1;
+  alb *= 1.0 - 0.28 * smoothstep(0.66, 0.9, f2);
+  float nodeD = min(abs(q.x + 0.6), abs(q.x - 0.5));
+  alb = mix(alb, vec3(0.46, 0.42, 0.17), smoothstep(0.075, 0.0, nodeD) * 0.65);
+  alb *= 1.0 - 0.5 * smoothstep(0.02, 0.0, abs(nodeD - 0.085));
+  // 乾いて入った縦の割れ
+  float ang = atan(q.y, q.z);
+  float crack = smoothstep(0.016, 0.0, abs(ang - 0.95 - 0.12 * sin(q.x * 3.0))) * smoothstep(0.35, 0.6, f2);
+  alb *= 1.0 - 0.6 * crack;
+  // 切り口(髄と繊維の淡い色)
+  float cap = smoothstep(0.55, 0.85, abs(n.x));
+  vec3 cut = vec3(0.58, 0.50, 0.30) * (0.78 + 0.34 * n3(vec3(q.y * 100.0, q.z * 100.0, 1.0)));
+  alb = mix(alb, cut, cap);
   float ao = calcAO(p, n);
   float sh = softShadow(p + n * 0.01, LDIR, 9.0);
-  return lighting(p, n, rd, alb * 0.82, 0.16, 34.0, 0.3, ao, sh);
+  return lighting(p, n, rd, alb * 0.9, 0.11, 13.0, 0.3, ao, sh);
 }
 
 void main(){
@@ -388,7 +409,9 @@ void main(){
     }
   }
   vec3 col;
+  float depthT = tE;
   if (hit > 0.5 && t < tE){
+    depthT = t;
     vec3 p = ro + rd * t;
     vec3 n = calcN(p, t);
     if (id < 5.5) col = shadePole(p, n, rd, id, t);
@@ -424,7 +447,35 @@ void main(){
   vec2 vq = uv - 0.5;
   col *= 1.0 - 0.42 * dot(vq, vq) * 1.6;
   col += (h21(gl_FragCoord.xy + uTime) - 0.5) / 255.0;
-  gl_FragColor = vec4(col, 1.0);
+  float da = tE > 5e4 && hit < 0.5 ? 1.0 : clamp(0.5 + (depthT - uFocus) / 16.0, 0.0, 1.0);
+  gl_FragColor = vec4(col, da);
+}
+`;
+
+// 被写界深度: 手前の床・玉はぼけ、奥の壁はわずかにぼける。ピントは山
+const FS2 = `
+precision highp float;
+uniform sampler2D uTex;
+uniform vec2 uRes;
+uniform float uBlur;
+float cocOf(float a){ float d = (a - 0.5) * 2.0; return d < 0.0 ? -d : d * 0.5; }
+void main(){
+  vec2 uv = gl_FragCoord.xy / uRes;
+  vec4 c0 = texture2D(uTex, uv);
+  float rad = max(0.0, cocOf(c0.a) - 0.04) * uBlur;
+  if (rad < 0.7){ gl_FragColor = vec4(c0.rgb, 1.0); return; }
+  vec3 sum = c0.rgb; float wsum = 1.0;
+  for (int i = 0; i < 24; i++){
+    float r = sqrt((float(i) + 0.5) / 24.0) * rad;
+    float th = float(i) * 2.39996;
+    vec2 o = vec2(cos(th), sin(th)) * r;
+    vec4 c = texture2D(uTex, uv + o / uRes);
+    float coc2 = cocOf(c.a) * uBlur;
+    float w = 1.0;
+    if (c.a < c0.a - 0.02 && coc2 < r * 0.8) w = 0.0;
+    sum += c.rgb * w; wsum += w;
+  }
+  gl_FragColor = vec4(sum / wsum, 1.0);
 }
 `;
 
@@ -442,24 +493,30 @@ export function createRenderer(canvas: HTMLCanvasElement): KRenderer | null {
     }
     return s;
   };
-  const vs = sh(gl.VERTEX_SHADER, VS);
-  const fs = sh(gl.FRAGMENT_SHADER, FS);
-  if (!vs || !fs) return null;
-  const prog = gl.createProgram()!;
-  gl.attachShader(prog, vs);
-  gl.attachShader(prog, fs);
-  gl.linkProgram(prog);
-  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
-    console.warn("korogashi link:", gl.getProgramInfoLog(prog));
-    return null;
-  }
-  gl.useProgram(prog);
+  const mkProg = (fsSrc: string) => {
+    const vs = sh(gl.VERTEX_SHADER, VS);
+    const fs = sh(gl.FRAGMENT_SHADER, fsSrc);
+    if (!vs || !fs) return null;
+    const pr = gl.createProgram()!;
+    gl.attachShader(pr, vs);
+    gl.attachShader(pr, fs);
+    gl.bindAttribLocation(pr, 0, "aPos");
+    gl.linkProgram(pr);
+    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) {
+      console.warn("korogashi link:", gl.getProgramInfoLog(pr));
+      return null;
+    }
+    return pr;
+  };
+  const prog = mkProg(FS);
+  if (!prog) return null;
+  const prog2 = mkProg(FS2);
   const buf = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, buf);
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-  const loc = gl.getAttribLocation(prog, "aPos");
-  gl.enableVertexAttribArray(loc);
-  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  gl.enableVertexAttribArray(0);
+  gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+  gl.useProgram(prog);
   const U = (n: string) => gl.getUniformLocation(prog, n);
   const u = {
     res: U("uRes"),
@@ -475,9 +532,17 @@ export function createRenderer(canvas: HTMLCanvasElement): KRenderer | null {
     b: U("uB[0]"),
     col: U("uCol[0]"),
     exp: U("uExp"),
+    focus: U("uFocus"),
     atlas: U("uAtlas"),
   };
+  const u2 = prog2
+    ? { tex: gl.getUniformLocation(prog2, "uTex"), res: gl.getUniformLocation(prog2, "uRes"), blur: gl.getUniformLocation(prog2, "uBlur") }
+    : null;
   const tex = gl.createTexture();
+  // 被写界深度の 1 パス目の描き先
+  const fboTex = gl.createTexture();
+  const fbo = gl.createFramebuffer();
+  let dof = !!prog2 && new URLSearchParams(location.search).get("dof") !== "0";
   let lostFlag = false;
   canvas.addEventListener("webglcontextlost", (e) => {
     e.preventDefault();
@@ -493,6 +558,20 @@ export function createRenderer(canvas: HTMLCanvasElement): KRenderer | null {
       canvas.width = W;
       canvas.height = H;
       gl.viewport(0, 0, W, H);
+      if (dof) {
+        gl.activeTexture(gl.TEXTURE1);
+        gl.bindTexture(gl.TEXTURE_2D, fboTex);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, W, H, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+        gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+        gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, fboTex, 0);
+        if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) dof = false;
+        gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        gl.activeTexture(gl.TEXTURE0);
+      }
     },
     setAtlas(c) {
       gl.activeTexture(gl.TEXTURE0);
@@ -513,9 +592,13 @@ export function createRenderer(canvas: HTMLCanvasElement): KRenderer | null {
         arr[i * 3 + 1] = c[1];
         arr[i * 3 + 2] = c[2];
       });
+      gl.useProgram(prog);
       gl.uniform3fv(u.col, arr);
     },
     render(f) {
+      gl.useProgram(prog);
+      if (dof) gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+      gl.viewport(0, 0, W, H);
       gl.uniform2f(u.res, W, H);
       gl.uniform1f(u.time, f.time % 100);
       gl.uniform3fv(u.camPos, f.cam.pos);
@@ -528,8 +611,23 @@ export function createRenderer(canvas: HTMLCanvasElement): KRenderer | null {
       gl.uniform4fv(u.a, f.a);
       gl.uniform4fv(u.b, f.b);
       gl.uniform1f(u.exp, f.exposure);
+      gl.uniform1f(u.focus, f.focus);
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, tex);
       gl.uniform1i(u.atlas, 0);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
+      if (dof && prog2 && u2) {
+        gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        gl.useProgram(prog2);
+        gl.viewport(0, 0, W, H);
+        gl.activeTexture(gl.TEXTURE1);
+        gl.bindTexture(gl.TEXTURE_2D, fboTex);
+        gl.uniform1i(u2.tex, 1);
+        gl.uniform2f(u2.res, W, H);
+        gl.uniform1f(u2.blur, Math.max(3, H * 0.0105));
+        gl.drawArrays(gl.TRIANGLES, 0, 3);
+        gl.activeTexture(gl.TEXTURE0);
+      }
     },
     destroy() {
       // 開発時の StrictMode は同じ canvas で 2 度つくり直す。コンテキストを手放すと 2 度目が使えないので、何もしない(canvas ごと破棄される)

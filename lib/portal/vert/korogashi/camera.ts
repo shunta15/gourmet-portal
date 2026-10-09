@@ -75,8 +75,8 @@ const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 export function camAt(s: number, aspect: number, mobile: boolean, drift: { x: number; y: number }): CamParams {
   const e = s * s * (3 - 2 * s);
   if (mobile) {
-    const a: CamParams = { tx: 0.1, ty: 1.1, tz: 0.15, yaw: 0.7, el: 0.42, dist: 26, fovDeg: 30, sx: 0, sy: -0.46 };
-    const b: CamParams = { tx: 0.1, ty: 0.4, tz: 0.55, yaw: 0.2, el: 0.9, dist: 31, fovDeg: 30, sx: 0, sy: -0.3 };
+    const a: CamParams = { tx: 0.1, ty: 1.2, tz: 0.15, yaw: 0.74, el: 0.44, dist: 18.5, fovDeg: 30, sx: 0, sy: -0.5 };
+    const b: CamParams = { tx: 0.1, ty: 0.4, tz: 0.55, yaw: 0.2, el: 0.9, dist: 26.5, fovDeg: 30, sx: 0, sy: -0.27 };
     return {
       tx: lerp(a.tx, b.tx, e) + drift.x * 0.02,
       ty: lerp(a.ty, b.ty, e),

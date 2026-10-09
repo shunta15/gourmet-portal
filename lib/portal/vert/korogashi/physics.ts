@@ -27,12 +27,18 @@ export type Body = {
   lockRot: boolean;
   /** 描画で使う、軸方向(x)の位置 */
   wx: number;
+  /** 軸方向(x)の半分の長さ(玉は 0)。玉・棒・竹どうしは、x が離れていればぶつからない(奥行きの違う筋にあるので) */
+  hl: number;
   grabbed: boolean;
   /** 床の傾きで押される/はじけた瞬間の記録など(描画の補助) */
   hit: number;
   /** 眠り: 動きが小さい状態が続いたら動かさない(山の、じわじわ広がる誤差を止める)。揺らされたら起きる */
   asleep: boolean;
   sleepT: number;
+  /** 画面の手前の外から転がり込んでくる最中(手前の壁を無視する) */
+  enter: boolean;
+  /** 画面の手前へ転がり出ていく最中 */
+  leave: boolean;
   /** 転がって画面の手前へ出ていった(描画しない) */
   gone: boolean;
   iM0: number;
@@ -46,6 +52,8 @@ export type World = {
   g: number;
   /** 床の傾き(ラジアン。+ で手前(+z)へ転がる向き) */
   tilt: number;
+  /** 小さな道具(玉・棒・竹)だけにかかる、床のごくわずかな傾き(ポインターの高さで変わる) */
+  tiltSmall: number;
   zMin: number;
   zMax: number;
   yMax: number;
@@ -59,8 +67,10 @@ export type World = {
 };
 
 const R_POLE = 0.5;
+/** 眠っている物を起こす、ぶつかる物の速さ */
+const WAKE_SPEED = 0.45;
 /** 山が落ち着くまでに、ポールが(あたり・転がりで)回る量。実測(同じ手順で必ず同じになる)。帯の字が、落ち着いたときにカメラ側を向くよう、置くときに引いておく */
-const SETTLE_DELTA = [-0.006, 0.023, -0.15, -0.291, 0.126, 1.007];
+const SETTLE_DELTA = [-0.007, 0.031, -0.055, -0.36, 0.066, 1.007];
 const VARIETY = [0.05, -0.06, 0.04, -0.03, 0.06, -0.04];
 
 function mk(kind: BodyKind, id: number, z: number, y: number, r: number, o: Partial<Body> = {}): Body {
@@ -85,10 +95,13 @@ function mk(kind: BodyKind, id: number, z: number, y: number, r: number, o: Part
     floorOff: kind === "bamboo" ? 0 : r,
     lockRot: kind === "bamboo",
     wx: 0,
+    hl: kind === "pole" ? 2.8 : kind === "stick" ? 0.7 : kind === "bamboo" ? 1.25 : 0,
     grabbed: false,
     hit: 0,
     asleep: false,
     sleepT: 0,
+    enter: false,
+    leave: false,
     gone: false,
     iM0: 0,
     iI0: 0,
@@ -175,6 +188,7 @@ export function createWorld(): World {
     bodies,
     g: 31,
     tilt: 0,
+    tiltSmall: 0,
     zMin: -3.55,
     zMax: 3.55,
     yMax: 12,
@@ -193,9 +207,10 @@ function collide(w: World, A: Body, B: Body, h: number) {
   const rs = A.r + B.r;
   const d2 = dz * dz + dy * dy;
   if (d2 >= rs * rs) return;
+  if (A.kind !== "pole" && B.kind !== "pole" && Math.abs(A.wx - B.wx) > A.hl + B.hl + rs) return;
   if (A.asleep !== B.asleep) {
     const mv = A.asleep ? B : A;
-    if (Math.hypot(mv.vz, mv.vy) > 0.45) wake(A.asleep ? A : B);
+    if (Math.hypot(mv.vz, mv.vy) > WAKE_SPEED) wake(A.asleep ? A : B);
   }
   let d = Math.sqrt(d2);
   if (d < 1e-6) {
@@ -326,10 +341,13 @@ function plane(w: World, B: Body, nz: number, ny: number, dist: number) {
 function sub(w: World, h: number) {
   const gz = Math.sin(w.tilt) * w.g;
   const gy = -Math.cos(w.tilt) * w.g;
+  const gzS = Math.sin(w.tilt + w.tiltSmall) * w.g;
+  const gyS = -Math.cos(w.tilt + w.tiltSmall) * w.g;
   for (const b of w.bodies) {
     if (b.grabbed || b.asleep || b.gone) continue;
-    b.vz += gz * h;
-    b.vy += gy * h;
+    const small = b.kind !== "pole";
+    b.vz += (small ? gzS : gz) * h;
+    b.vy += (small ? gyS : gy) * h;
     // ごくわずかな空気抵抗・回転の減衰(発泡材は鈍い)
     b.vz *= 1 - 0.05 * h;
     b.vy *= 1 - (b.kind === "pole" ? 4.2 : 0.6) * h * (b.vy < 0 ? 1 : 0.3);
@@ -403,7 +421,12 @@ function sub(w: World, h: number) {
       plane(w, b, 0, 1, b.y); // 床
       plane(w, b, 1, 0, b.z - w.zMin); // 奥の壁(法線は +z 向き)
       // 手前の見えない壁。床が手前へ傾いている間、小さな道具(玉・棒)は、壁を抜けて画面の手前へ転がり出ていく
-      if (b.kind === "pole" || w.tilt < 0.1) plane(w, b, -1, 0, w.zMax - b.z);
+      if (b.enter && b.z < w.zMax - b.r - 0.02) b.enter = false;
+      if (b.leave && b.z > w.zMax + b.r + 1.0) {
+        b.gone = true;
+        b.leave = false;
+      }
+      if (!b.enter && !b.leave && (b.kind === "pole" || w.tilt < 0.1)) plane(w, b, -1, 0, w.zMax - b.z);
       else if (b.z > w.zMax + 1.6) b.gone = true;
       if (b.y > w.yMax) {
         b.y = w.yMax;
@@ -423,6 +446,7 @@ export function step(w: World, dt: number) {
   for (let i = 0; i < n; i++) sub(w, h);
   w.time += dt;
   if (Math.abs(w.tilt) > 0.02) wakeAll(w);
+  if (Math.abs(w.tiltSmall) > 0.02) for (const b of w.bodies) if (b.kind !== "pole") wake(b);
   for (const b of w.bodies) {
     if (b.asleep || b.gone) continue;
     const held = w.grab && w.grab.body === b;
@@ -473,5 +497,81 @@ export function lineupDone(w: World): boolean {
   const zs = ps.map((b) => b.z).sort((a, b) => b - a);
   if (zs[0] < w.zMax - 0.56) return false;
   for (let i = 1; i < zs.length; i++) if (zs[i - 1] - zs[i] > 1.06) return false;
+  return true;
+}
+
+/**
+ * 何もしないときの小さな出来事: 玉・棒・竹を、山から遠いほうの向きへ軽く転がす(手前に余地が無ければ山のほうへ)。
+ * 山のポールは、玉がぶつかった勢いが小さければ眠ったまま。
+ */
+export function kickToy(w: World, id: number, speed: number): boolean {
+  const b = w.bodies[id];
+  if (!b || b.gone || b.grabbed) return false;
+  // 同じ筋(x)の上で、前後どちらに余地があるか
+  const room = (dir: number) => {
+    let free = dir > 0 ? w.zMax - b.z - b.r : b.z - w.zMin - b.r;
+    for (const o of w.bodies) {
+      if (o === b || o.gone) continue;
+      if (o.kind !== "pole" && Math.abs(o.wx - b.wx) > o.hl + b.hl + o.r + b.r) continue;
+      const d = (o.z - b.z) * dir;
+      if (d <= 0) continue;
+      if (o.y - o.floorOff > 0.9) continue; // 上の段のポールの下は通れるが、ここでは数えない
+      free = Math.min(free, d - o.r - b.r);
+    }
+    return free;
+  };
+  const rf = room(1);
+  const rb = room(-1);
+  if (rf < 0.35 && rb < 0.35) return false;
+  const dir = rf >= rb ? 1 : -1;
+  wake(b);
+  const vz = dir * Math.abs(speed) * Math.min(1, 0.6 + Math.max(rf, rb) * 0.5);
+  b.vz = vz;
+  b.vy = 0;
+  b.w = b.kind === "bamboo" ? 0 : -vz / b.r;
+  return true;
+}
+
+/** 玉を、画面の手前の外から山のほうへ転がし込む。同じ筋(x)の行く手に 1.2 以上の余地があるときだけ */
+export function rollIn(w: World, id: number, speed: number): boolean {
+  const b = w.bodies[id];
+  if (!b || b.kind !== "ball" || !b.gone || b.grabbed || w.tilt > 0.02) return false;
+  const z0 = w.zMax + b.r + 0.45;
+  let free = z0 - w.zMin - b.r;
+  for (const o of w.bodies) {
+    if (o === b || o.gone) continue;
+    if (o.kind !== "pole" && Math.abs(o.wx - b.wx) > o.hl + b.hl + o.r + b.r) continue;
+    if (o.y - o.floorOff > 0.9) continue;
+    const d = z0 - o.z;
+    if (d <= 0) continue;
+    free = Math.min(free, d - o.r - b.r);
+  }
+  if (free < 1.6) return false;
+  b.gone = false;
+  b.leave = false;
+  wake(b);
+  b.z = z0;
+  b.y = b.r + 0.005;
+  b.vz = -Math.abs(speed);
+  b.vy = 0;
+  b.w = Math.abs(speed) / b.r;
+  b.enter = true;
+  return true;
+}
+
+/** 玉を、画面の手前の外へ転がし出す(行く手に余地があるときだけ)。出ていった玉は gone になり、あとで rollIn で戻る */
+export function rollOut(w: World, id: number, speed: number): boolean {
+  const b = w.bodies[id];
+  if (!b || b.kind !== "ball" || b.gone || b.grabbed || b.leave) return false;
+  for (const o of w.bodies) {
+    if (o === b || o.gone) continue;
+    if (o.kind !== "pole" && Math.abs(o.wx - b.wx) > o.hl + b.hl + o.r + b.r) continue;
+    const d = o.z - b.z;
+    if (d > 0 && d - o.r - b.r < 0.5) return false;
+  }
+  wake(b);
+  b.leave = true;
+  b.vz = Math.abs(speed);
+  b.w = -b.vz / b.r;
   return true;
 }
