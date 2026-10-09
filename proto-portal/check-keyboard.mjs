@@ -19,6 +19,7 @@
  */
 import { chromium } from "playwright";
 import sharp from "sharp";
+import fs from "node:fs";
 
 const arg = (k, d) => {
   const i = process.argv.indexOf(`--${k}`);
@@ -100,13 +101,19 @@ async function tabUntil(page, pred, max = 80) {
 // Tab の順番: 本文へ移動 → ロゴ → さがす → 業種の入口 6 つ（グルメ・ビューティー・ボディケアはリンク、ほかの 3 つはボタン）。
 // 入口にフォーカスが来ると、その業種が選ばれる（.ng の data-sel が変わる）。選んだものが入れる業種なら、入口の列のあとに「入る」のリンクが出る。
 // 色は 2 色とも見る（履歴の項目に色を先に入れて固定する。ページの抽選スクリプトがそれを読む）。
+// ビューティー・ボディケアは実在の店のデータ（lib/places/generated/*.json）の件数で「掲載中」（aria-label「◯◯に入る」）／「掲載準備中」（「◯◯（準備中）のページを見る」）が決まる（2026-10-09 から掲載中）
+function liveName(key, name) {
+  let n = 0;
+  try { n = JSON.parse(fs.readFileSync(new URL(`../lib/places/generated/${key}.json`, import.meta.url), "utf8")).places.length; } catch (e) {}
+  return n > 0 ? `${name}に入る` : `${name}（準備中）`;
+}
 const HOME_WANT = [
   ["本文へ移動", null],
   ["マチノワ", null],
   ["さがす", null],
   ["グルメに入る", "gourmet"],
-  ["ビューティー（準備中）", "beauty"],
-  ["ボディケア（準備中）", "bodycare"],
+  [liveName("beauty", "ビューティー"), "beauty"],
+  [liveName("bodycare", "ボディケア"), "bodycare"],
   ["ペット（準備中）", "pet"],
   ["おでかけ（準備中）", "leisure"],
   ["ステイ（準備中）", "stay"],

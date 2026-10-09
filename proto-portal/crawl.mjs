@@ -55,6 +55,8 @@ for(const u of ok200){const r=await get(u);if(r.s!==200){bad.push(`expected200 $
  else if(u==='/photos'){const sm=await (await fetch(B+'/photos/sitemap.xml')).text();const inSm=sm.includes('https://machinowa.tokyo/photos</loc>');if(inSm===/noindex/.test(robots||''))bad.push(`photos robots mismatch inSitemap=${inSm} (${robots})`);console.log('   photos inSitemap',inSm,'expect',inSm?'index':'noindex')}
  else if(u.startsWith('/omakase')){const stated=u.includes('?');if(stated===!/noindex/.test(robots||''))bad.push(`omakase robots mismatch ${u} (${robots}) 答えの無い /omakase だけ index`);console.log('   omakase',stated?'答えあり → noindex':'答えなし → index')}
  else if(NEW_V.includes(u.split('?')[0].split('/')[1])){const inSm=smPaths[u.split('/')[1]].has(u.split('?')[0]);if(inSm===/noindex/.test(robots||''))bad.push(`new-vertical robots mismatch ${u} inSitemap=${inSm} (${robots})`);console.log('   new vertical inSitemap',inSm,'expect',inSm?'index':'noindex')}
+ // /area/<pref>（業種横断）: 新業種（ビューティー・ボディケア）の掲載が県内で 3 件以上なら index（lib/seo/gate.ts。2026-10-09 に実データが入って、東京・愛知などが index になる）
+ else if(u.startsWith('/area/')){const pref=u.split('?')[0].split('/')[2];const n=['beauty','bodycare'].reduce((a,v)=>a+GEN[v].filter(p=>p.pref===pref).length,0);const wantIndex=n>=3;if(wantIndex===/noindex/.test(robots||''))bad.push(`area robots mismatch ${u} newVerticalCount=${n} (${robots})`);console.log('   area new-vertical count',n,'expect',wantIndex?'index':'noindex')}
  else if(isNew&&!/noindex/.test(robots||''))bad.push(`not noindex ${u} (${robots})`);
  else if(!isNew&&/noindex/.test(robots||''))bad.push(`should be index ${u} (${robots})`);
  const expCanon='https://machinowa.tokyo'+(u==='/'?'':u.split('?')[0]);if(canon&&decodeURI(canon)!==expCanon&&!(u==='/'&&canon==='https://machinowa.tokyo'))bad.push(`canonical ${u} -> ${canon}`);if(!canon)bad.push(`no canonical ${u}`);
@@ -95,10 +97,11 @@ for(const [canon,{u,h}] of byCanon){
   const nav=(h.match(/<nav class="mp-crumbs[^"]*"[^>]*>([\s\S]*?)<\/nav>/)||[])[1];
   const lds=[...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>{try{return JSON.parse(m[1])}catch{return null}}).filter(Boolean);
   const bc=lds.find(j=>j['@type']==='BreadcrumbList');
-  if(u!=='/'){
+  // /beauty は「曇り鏡」（共通ヘッダーなし）なので、表示のパンくずは無い（JSON-LD の BreadcrumbList は上の「no breadcrumb」で見ている）
+  if(u!=='/'&&u!=='/beauty'){
     if(!nav)bad.push(`no visible breadcrumb ${u}`);
     else if(bc){
-      const items=[...nav.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(m=>({name:m[1].replace(/<[^>]+>/g,'').trim(),href:(m[1].match(/href="([^"]*)"/)||[])[1]}));
+      const items=[...nav.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(m=>({name:m[1].replace(/<[^>]+>/g,'').trim().replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#x27;|&#39;/g,"'").replace(/&amp;/g,'&'),href:(m[1].match(/href="([^"]*)"/)||[])[1]}));
       const ld=bc.itemListElement;
       if(items.length!==ld.length)bad.push(`breadcrumb count visible ${items.length} vs ld ${ld.length} ${u}`);
       else items.forEach((it,i)=>{
