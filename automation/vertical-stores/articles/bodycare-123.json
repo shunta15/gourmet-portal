@@ -1,0 +1,85 @@
+{
+  "key": "bodycare-123",
+  "headline": "大分市王子南町の整骨院・美容整体院。火曜・祝日定休、完全予約制",
+  "lede": "大分市王子南町にある、あきくに整骨院と美容整体院の名を並べる店です。完全予約制で、予約は電話、LINE、メールの予約フォームのいずれかで受け付けています。火曜と祝日は休みです。",
+  "sections": [
+    {
+      "heading": "曜日ごとの時間と所在地",
+      "body": "月・水・木・金は9時から12時30分、13時30分から19時30分、土曜は9時から17時、日曜は9時から15時と案内されています。定休日は火曜と祝日です。所在地は大分県大分市王子南町3-10のREGINA 102号で、電話は097-511-4342です。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "土日営業",
+      "factIndex": 4
+    }
+  ],
+  "facts": [
+    {
+      "claim": "大分県大分市王子南町3-10のREGINA 102号にある",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "大分県大分市王子南町3-10 REGINA 102号",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は097-511-4342",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "097-511-4342",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "当院は完全予約制となっております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月・水・木・金は9:00〜12:30、13:30〜19:30(Googleマップも同じ)",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "[月･水･木･金]9:00～12:30/13:30～19:30",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土曜は9:00〜17:00、日曜は9:00〜15:00(Googleマップも同じ)",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "土曜9:00～17:00\n日曜9:00～15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は火曜と祝日(Googleマップも火曜が定休日)",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "＜火曜・祝日定休＞",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話で予約できる",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "電話で予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEで予約できる",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "LINEで予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メールの予約フォームで予約できる",
+      "source": "https://create-oita.com/beauty/",
+      "quote": "メールで予約",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://create-oita.com/beauty/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5124450528521716849"
+    }
+  ],
+  "notes": "営業時間は公式サイトとGoogleマップが一致(月・水〜金9:00〜12:30と13:30〜19:30、土9:00〜17:00、日9:00〜15:00、火曜休み)。祝日定休は公式のみの記載。「土日営業」のタグは土曜・日曜の両方に営業があるため付けた。夜遅くまで営業・駅近は根拠なし(閉店は最大19:30、駅の記載なし)。書かなかったこと: このサイト(美容整体院のページ)の中身は痩身・ダイエットのコース、体験談、前後の数値が大半のため、それらは本文・メニューに入れていない(メニューは0個)。「初回ダイエット体験」の料金も載せない。店の種類はGoogleマップの業種「整体」と店名による。整骨院としての保険の扱いはサイトにないため書いていない。"
+}
