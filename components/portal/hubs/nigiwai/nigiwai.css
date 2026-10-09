@@ -231,6 +231,18 @@ body:has(.ng) .cursor-ring {
   object-fit: cover;
   -webkit-user-drag: none;
 }
+/* ビューティー・ボディケアの写真の輪（data-v）。グルメの写真と同じ皿・同じ縁の上に重ねる。選んだ業種の写真だけが出る（data-on）。
+   選んでいないときは、空の丸と同じ「小さく・薄く・見えない」状態。グルメの写真も、グルメ以外を選んだら同じように引く（data-off） */
+.ng-photo[data-v]:not([data-on]),
+.ng-photo[data-off] {
+  opacity: 0;
+  scale: 0.55;
+  visibility: hidden;
+  transition:
+    scale 0.45s ease,
+    opacity 0.3s ease,
+    visibility 0s 0.45s;
+}
 .ng-dish:hover {
   z-index: 2;
 }
@@ -601,24 +613,6 @@ body:has(.ng) .cursor-ring {
   color: var(--ng-num, var(--ng-ink));
   text-shadow: 0 0.05em 0 color-mix(in srgb, var(--ng-tshade) 28%, transparent);
 }
-.ng-open {
-  transition: opacity 0.6s ease;
-}
-.ng-open:not([data-on]) {
-  opacity: 0;
-}
-/* スクリプトなしでは、現在時刻で数えられない。行ごと出さない（見えない「0 軒」を、読み上げに残さない） */
-@media (scripting: none) {
-  .ng-open {
-    display: none;
-  }
-}
-.ng-open small {
-  display: block;
-  margin-top: 6px;
-  font: 500 clamp(12.5px, calc(var(--R) * 0.028), 14px) / 1.4 var(--font);
-  letter-spacing: 0.03em;
-}
 .ng-act {
   display: flex;
   flex-wrap: wrap;
@@ -901,10 +895,6 @@ body:has(.ng) .cursor-ring {
     margin: 0 2px 0 3px;
     font-size: clamp(19px, calc(var(--Dout) * 0.062), 26px);
   }
-  .ng-open small {
-    margin-top: 3px;
-    font-size: 12px;
-  }
   .ng-go {
     order: 2;
     min-height: 44px;
@@ -966,10 +956,6 @@ body:has(.ng) .cursor-ring {
   }
   .ng-facts b {
     font-size: clamp(17px, calc(var(--Dout) * 0.056), 22px);
-  }
-  .ng-open small {
-    margin-top: 2px;
-    font-size: 12px;
   }
   .ng-go {
     min-height: 40px;

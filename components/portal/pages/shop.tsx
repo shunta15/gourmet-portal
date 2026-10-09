@@ -2,8 +2,9 @@
  * 新業種の店ページ（共通部品）。/{v}/shop/{id}
  * 各業種の app/{v}/shop/[id]/page.tsx は shopPage(key) の結果をそのまま出すだけ。
  *
- * 出すもの: 写真（事前生成の WebP）・基本情報（住所・最寄り駅・営業時間・定休日・電話・価格帯）・業種ごとの項目・紹介・
+ * 出すもの: 写真（Place.photos / image。ページの上に 1 枚め＋2〜3 枚め）・基本情報（住所・最寄り駅・営業時間・定休日・電話・価格帯）・業種ごとの項目・紹介・
  * 電話／地図／予約／公式サイト／SNS のボタン（値がある項目だけ）・共有ボタン。数字・評価・口コミは出さない。
+ * 「営業中」「営業時間外」の表記は出さない（2026-10-09 オーナー指示。営業時間の表は残す）。
  * 店のデータが無い ID は 404（今は新業種の掲載が 0 件なので、どの ID も 404）。
  * 構造化データは lib/seo/jsonld.ts の localBusiness（schema.org の型は種類の schemaType）。星・口コミは入れない。
  * index の判定は他の新業種ページと同じ gate（業種の掲載が 3 件以上）。
@@ -20,22 +21,19 @@ import { notFound } from "next/navigation";
 import JsonLd from "../JsonLd";
 import ShareButtons from "../ShareButtons";
 import ShopLinks from "../ShopLinks";
-import ShopPhoto from "../ShopPhoto";
-import { OpenBadge, OpenScope } from "../OpenNow";
 import { getPlaces, type Place } from "@/lib/places";
 import { featurePath, findFeatureForPlace } from "@/lib/places/features";
 import type { GeneratedVertical } from "@/lib/places/newVerticals";
 import { getCategory, getVertical } from "@/lib/verticals";
 import type { Vertical } from "@/lib/verticals/types";
-import type { PlaceArticle } from "@/lib/places/types";
+import type { PlaceArticle, PlacePhoto } from "@/lib/places/types";
 import { getPrefBySlug } from "@/lib/areas/prefectures";
 import { buildMetadata } from "@/lib/seo/meta";
 import { localBusiness } from "@/lib/seo/jsonld";
 import { SITE_URL, absUrl } from "@/lib/seo/util";
 import { mapsSearchUrl } from "@/lib/maps";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
-import { packWeeks } from "@/lib/portal/openNow";
-import { shopPhoto } from "@/lib/portal/photos";
+import { isUsableImage } from "@/lib/portal/photoRules";
 import { shareTarget } from "@/lib/portal/share";
 import { shopLinks, socialLinks, type ShopSocial } from "@/lib/portal/sns";
 import { safeDecode } from "@/lib/stations/query";
@@ -124,6 +122,40 @@ function MenuTable({ menus }: { menus: NonNullable<PlaceArticle["menus"]> }) {
   );
 }
 
+/** 店の写真（最大 3 枚）。photos があればそれ、無ければ images / image のパス。使えない写真（lib/portal/photoRules）は除く */
+export function photosOf(p: Place): PlacePhoto[] {
+  const list: PlacePhoto[] = p.photos?.length ? p.photos : (p.images?.length ? p.images : p.image ? [p.image] : []).map((path) => ({ path }));
+  return list.filter((x) => isUsableImage(x.path)).slice(0, 3);
+}
+
+/** ページの上の写真。1 枚めを大きく、2〜3 枚めは並べる。枠は切り抜きで揃える（縦横比がばらばらでも崩れない）。1 枚めだけ優先読み込み */
+function ShopGallery({ name, photos }: { name: string; photos: PlacePhoto[] }) {
+  if (photos.length === 0) return null;
+  return (
+    <section className="mp-pg-sec mp-gal-sec" aria-label="写真">
+      <div className="mp-wrap">
+        <ul className="mp-gal" data-n={photos.length}>
+          {photos.map((x, i) => (
+            <li key={x.path} className={i === 0 ? "mp-gal-m" : "mp-gal-s"}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={x.path}
+                alt={x.what ? `${name} — ${x.what}` : `${name}の写真`}
+                width={x.width ?? 1200}
+                height={x.height ?? 800}
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : undefined}
+                decoding="async"
+                sizes={i === 0 ? "(max-width: 720px) 100vw, 66vw" : "(max-width: 720px) 50vw, 33vw"}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 export function shopPage(key: PortalVertical) {
   async function find(params: Props["params"]): Promise<{ v: Vertical; all: Place[]; place: Place } | null> {
     const { id } = await params;
@@ -151,6 +183,8 @@ export function shopPage(key: PortalVertical) {
         description: describe(v, p, catName),
         path: `${v.path}/shop/${p.id}`,
         count: all.length,
+        // 写真がある店は、共有画像（OGP）を 1 枚めの写真にする
+        ...(photosOf(p)[0] ? { image: { url: photosOf(p)[0].path, width: photosOf(p)[0].width, height: photosOf(p)[0].height, alt: `${p.name}の写真` } } : {}),
       });
     },
 
@@ -168,7 +202,7 @@ export function shopPage(key: PortalVertical) {
         reservationUrl: p.reservationUrl,
         ...socialOf(p),
       });
-      const weeks = packWeeks([{ id: p.id, hours: p.hours, closed: p.holidays }]);
+      const photos = photosOf(p);
 
       const art = p.article;
       // この店の特集記事（/{v}/feature/{id}）。あるときだけ「特集記事を読む」を出す（beauty / bodycare のみ。データは lib/places/features.ts）
@@ -192,7 +226,7 @@ export function shopPage(key: PortalVertical) {
       }
 
       const ld = localBusiness(p, cat?.schemaType ?? "LocalBusiness");
-      const img = p.image;
+      const img = photos[0]?.path ?? p.image;
       const ldFull: Record<string, unknown> = {
         ...ld,
         ...(art ? { description: art.headline } : {}),
@@ -216,6 +250,8 @@ export function shopPage(key: PortalVertical) {
           lead={art ? `${art.headline}。` : `${[areaText(p), cat?.name].filter(Boolean).join("の") || `${v.name}の店`}。`}
           className={art ? "mp-shop-page mp-shop-page-art" : "mp-shop-page"}
         >
+          <ShopGallery name={p.name} photos={photos} />
+
           {art ? (
             <section className="mp-pg-sec mp-art" aria-label="紹介">
               <div className="mp-wrap mp-art-grid">
@@ -232,16 +268,6 @@ export function shopPage(key: PortalVertical) {
                 </div>
 
                 <aside className="mp-art-aside" aria-label="基本情報">
-                  {shopPhoto(p.image) && (
-                    <div className="mp-shop-photo">
-                      <ShopPhoto image={p.image} alt={`${p.name}の写真`} sizes="(max-width: 900px) 100vw, 400px" eager />
-                    </div>
-                  )}
-                  <OpenScope weeks={weeks}>
-                    <p className="mp-shop-open">
-                      <OpenBadge id={p.id} />
-                    </p>
-                  </OpenScope>
                   <ShopLinks links={links} storeId={p.id} page={path} />
                   <h2 className="mp-art-h3">基本情報</h2>
                   <dl className="mp-shop-facts">
@@ -303,18 +329,8 @@ export function shopPage(key: PortalVertical) {
             </section>
           ) : (
             <section className="mp-pg-sec mp-shop" aria-label="店の情報">
-              <div className={shopPhoto(p.image) ? "mp-wrap mp-shop-grid" : "mp-wrap mp-shop-grid mp-shop-solo"}>
-                {shopPhoto(p.image) && (
-                  <div className="mp-shop-photo">
-                    <ShopPhoto image={p.image} alt={`${p.name}の写真`} sizes="(max-width: 900px) 100vw, 560px" eager />
-                  </div>
-                )}
+              <div className="mp-wrap mp-shop-grid mp-shop-solo">
                 <div className="mp-shop-info">
-                  <OpenScope weeks={weeks}>
-                    <p className="mp-shop-open">
-                      <OpenBadge id={p.id} />
-                    </p>
-                  </OpenScope>
                   {p.intro && <p className="mp-note-p">{p.intro}</p>}
                   {featureHref && (
                     <p className="mp-art-feat">

@@ -8,6 +8,14 @@
  *
  * 既定: pilot.json にあるキーの店と、特集記事（features/<キー>.json）がある店のうち、紹介記事（articles/<キー>.json）か特集記事がある店だけを出す。
  * --all : 「一致」の全店を出す（記事が無い店は基本情報だけのページになる）。
+ * --listed : 既定の店（紹介文つき）に加えて、basic.json（キーの配列。紹介文なし・基本情報だけで載せる店）にある店も出す。
+ *
+ * どのモードでも次は適用する（引数で場所を差し替えられる）:
+ *  - 写真: photos/<キー>.json（{ key, images: [ { path, imageUrl, pageUrl, what, width, height } ], note }）があれば、
+ *          public/ に実在する画像だけを Place の image（1 枚め）・images（全部）・photos（説明と寸法）に入れる。imageUrl・pageUrl は入れない。
+ *  - 種類の上書き: category-overrides/<キー>.json（{ key, category, evidence }）があれば、その種類を使う。
+ *          その業種の種類の slug（lib/verticals/<業種>.ts）に無い値は無効（使わない）。決められない店は、今までどおり unmapped.json へ（理由に無効の旨を足す）。
+ *  - 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json（キーの配列）にある店は、どのモードでも出さない。
  * --rows : 対象の行の範囲を絞る（例: --rows beauty:2-129,bodycare:2-133。オーナーが指定した範囲）。
  *          書き方は <beauty|bodycare>:<開始行>-<終了行>（1 行だけなら <業種>:<行>）。範囲の外の店は、出さない・ID も払い出さない・
  *          unmapped.json にも入れない。--rows に書いていない業種は絞らない。指定しなければ今までと同じ（全行が対象）。
@@ -17,14 +25,16 @@
  *   node automation/vertical-stores/build-places.mjs --all      # 全店
  *   node automation/vertical-stores/build-places.mjs --all --rows beauty:2-129,bodycare:2-133   # 指定の行の範囲の全店
  *   node automation/vertical-stores/build-places.mjs --dry      # 書き込まず、結果の要約だけ
+ *   node automation/vertical-stores/build-places.mjs --listed  # 紹介文つきの店 + basic.json の店
  *   --pilot <file> --articles <dir> --ids <file> --out <dir> --unmapped <file>  # 場所の差し替え（試験用）
+ *   --photos <dir> --public <dir> --category-overrides <dir> --skipped <dir> --exclude <file> --basic <file>  # 同上（試験用）
  *
  * 店 ID: ids.json（業種ごとに Google マップの cid → 店 ID）。ビューティー be0001〜、ボディケア bo0001〜。
  *        一度払い出した ID は変えない（追記だけ）。シートの行がずれても、同じ店（同じ cid）は同じ ID。
  * 除外: 種類を決められない店・都道府県を決められない店・cid が無い／重複の店は、理由つきで unmapped.json に書く
  *       （推測で振り分けない）。unmapped.json は既定でも「一致」の全店を点検した結果。
  *
- * サイトのデータに入れないもの: 記事の facts / quote / notes（確認用）、星・口コミ・価格帯、写真、ownerPost。
+ * サイトのデータに入れないもの: 記事の facts / quote / notes（確認用）、星・口コミ・価格帯、写真の取得元 URL（imageUrl・pageUrl）、ownerPost。
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -41,6 +51,7 @@ const opt = (n, d) => {
   return i >= 0 && argv[i + 1] ? path.resolve(argv[i + 1]) : d;
 };
 const ALL = flag("all");
+const LISTED = flag("listed");
 const rawOpt = (n) => {
   const i = argv.indexOf(`--${n}`);
   return i >= 0 ? argv[i + 1] : undefined;
@@ -55,6 +66,12 @@ const FEATURES_DIR = opt("features", path.join(HERE, "features"));
 const IDS_FILE = opt("ids", path.join(HERE, "ids.json"));
 const OUT_DIR = opt("out", path.join(REPO, "lib/places/generated"));
 const UNMAPPED_FILE = opt("unmapped", path.join(HERE, "unmapped.json"));
+const PHOTOS_DIR = opt("photos", path.join(HERE, "photos"));
+const PUBLIC_DIR = opt("public", path.join(REPO, "public"));
+const OVERRIDES_DIR = opt("category-overrides", path.join(HERE, "category-overrides"));
+const SKIPPED_DIR = opt("skipped", path.join(HERE, "skipped"));
+const EXCLUDE_FILE = opt("exclude", path.join(HERE, "exclude.json"));
+const BASIC_FILE = opt("basic", path.join(HERE, "basic.json"));
 
 const VERTICALS = {
   beauty: { prefix: "be", tab: "ビューティ" },
@@ -186,6 +203,16 @@ export function categoryOf(vertical, d) {
   }
   return { reason: `Google マップの業種表示「${placeCat || "(なし)"}」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない` };
 }
+
+/** その業種の種類の slug（lib/verticals/<業種>.ts の categories。schemaType を持つ { slug, name } の行） */
+function loadCategorySlugs(vertical) {
+  const src = readFileSync(path.join(REPO, `lib/verticals/${vertical}.ts`), "utf8");
+  const out = new Set();
+  for (const m of src.matchAll(/\{\s*slug:\s*'([^']+)',\s*name:\s*'[^']+',\s*schemaType:/g)) out.add(m[1]);
+  if (out.size === 0) throw new Error(`lib/verticals/${vertical}.ts から種類の slug を読めませんでした`);
+  return out;
+}
+const CATEGORY_SLUGS = { beauty: loadCategorySlugs("beauty"), bodycare: loadCategorySlugs("bodycare") };
 
 // ------------------------------------------------------------------ 営業時間
 const DAYS = ["月", "火", "水", "木", "金", "土", "日"];
@@ -377,6 +404,29 @@ function buildArticle(vertical, d, article, key) {
 
 // ------------------------------------------------------------------ 本体
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
+/** 写真の記録 photos/<キー>.json → public/ に実在する画像だけの { path, what, width, height }。記録が無い・0 枚なら [] */
+function loadPhotos(key) {
+  const f = path.join(PHOTOS_DIR, `${key}.json`);
+  if (!existsSync(f)) return [];
+  const out = [];
+  const seen = new Set();
+  for (const im of Array.isArray(readJson(f).images) ? readJson(f).images : []) {
+    // 記録の path は「/_portal/vshops/…」でも「public/_portal/vshops/…」でもよい。サイト内パス（/ で始まる）にそろえる
+    const rel = String(im?.path ?? "").trim().replace(/^\.?\/?public\//, "").replace(/^\/+/, "");
+    if (!rel || rel.includes("..") || seen.has(rel)) continue;
+    if (!existsSync(path.join(PUBLIC_DIR, rel))) {
+      warn(key, `写真 ${rel} が public/ に無いので入れない`);
+      continue;
+    }
+    seen.add(rel);
+    const dim = (x) => (Number.isFinite(x) && x > 0 ? Math.round(x) : undefined);
+    const what = typeof im?.what === "string" ? im.what.trim() : "";
+    const w = dim(im?.width);
+    const h = dim(im?.height);
+    out.push({ path: `/${rel}`, ...(what ? { what } : {}), ...(w && h ? { width: w, height: h } : {}) });
+  }
+  return out;
+}
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
 const gbp = new Map();
@@ -397,11 +447,22 @@ const ledger = {
 };
 for (const v of Object.keys(VERTICALS)) ledger[v] ??= {};
 
+// 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json にある店（どのモードでも出さない。ID も払い出さない）
+const notListed = new Set(existsSync(EXCLUDE_FILE) ? readJson(EXCLUDE_FILE) : []);
+if (existsSync(SKIPPED_DIR)) {
+  for (const f of readdirSync(SKIPPED_DIR).filter((x) => x.endsWith(".json"))) {
+    const sk = readJson(path.join(SKIPPED_DIR, f));
+    if (typeof sk?.reason === "string" && sk.reason.startsWith("掲載を見送る")) notListed.add(sk.key ?? f.slice(0, -5));
+  }
+}
+const basicKeys = new Set(LISTED && existsSync(BASIC_FILE) ? readJson(BASIC_FILE) : []);
+
 const unmapped = [];
 const keyOf = (v, cid) => `${v}:${cid}`;
 const seenCid = new Map();
 const resolved = new Map(); // key -> { vertical, category, area, cid }
 for (const [key, d] of [...gbp].sort((a, b) => natural(a[0], b[0]))) {
+  if (notListed.has(key)) continue;
   const vertical = d.tabEn;
   const item = { key, vertical, name: d.place.name, sheetName: d.sheet?.name, address: d.place.address };
   const cid = /[?&]cid=(\d+)/.exec(d.place.gbpUrl || "")?.[1];
@@ -409,7 +470,19 @@ for (const [key, d] of [...gbp].sort((a, b) => natural(a[0], b[0]))) {
     unmapped.push({ ...item, reason: "place.gbpUrl に cid が無く、店 ID を払い出せない" });
     continue;
   }
-  const cat = categoryOf(vertical, d);
+  let cat = categoryOf(vertical, d);
+  // 種類の上書き（category-overrides/<キー>.json）。その業種の種類の slug にある値だけ有効。無効なら使わず、決められない店は理由つきで除外
+  const ovFile = path.join(OVERRIDES_DIR, `${key}.json`);
+  if (existsSync(ovFile)) {
+    const ov = readJson(ovFile);
+    if (typeof ov?.category === "string" && CATEGORY_SLUGS[vertical].has(ov.category)) {
+      cat = { category: ov.category };
+    } else {
+      const bad = `種類の上書き「${ov?.category}」は ${vertical} の種類の slug（${[...CATEGORY_SLUGS[vertical]].join("・")}）に無いので無効`;
+      warn(key, bad + "。使いません");
+      if (!cat.category) cat = { reason: `${cat.reason}（${bad}）` };
+    }
+  }
   if (!cat.category) {
     unmapped.push({ ...item, reason: cat.reason });
     continue;
@@ -440,7 +513,11 @@ if (ALL) {
   const featureKeys = existsSync(FEATURES_DIR)
     ? readdirSync(FEATURES_DIR).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5))
     : [];
-  wanted = [...new Set([...readJson(PILOT_FILE), ...featureKeys])].filter((k) => {
+  wanted = [...new Set([...readJson(PILOT_FILE), ...featureKeys, ...basicKeys])].filter((k) => {
+    if (notListed.has(k)) {
+      warn(k, "掲載を見送る店（skipped / exclude.json）なので出さない");
+      return false;
+    }
     if (!gbp.has(k)) {
       warn(k, outOfRows.has(k) ? "pilot.json にあるが、--rows の範囲の外なので出さない" : "pilot.json にあるが、gbp に「一致」の店として無い");
       return false;
@@ -461,8 +538,8 @@ for (const key of wanted) {
   const articleFile = path.join(ARTICLES_DIR, `${key}.json`);
   const hasArticle = existsSync(articleFile);
   const hasFeature = existsSync(path.join(FEATURES_DIR, `${key}.json`));
-  if (!ALL && !hasArticle && !hasFeature) {
-    warn(key, "記事がまだ無いので出しません（既定は紹介記事か特集記事がある店だけ）");
+  if (!ALL && !hasArticle && !hasFeature && !basicKeys.has(key)) {
+    warn(key, "記事がまだ無いので出しません（既定は紹介記事か特集記事がある店だけ。基本情報だけで載せるなら --listed と basic.json）");
     continue;
   }
   const v = VERTICALS[r.vertical];
@@ -479,6 +556,7 @@ for (const key of wanted) {
   const reserve = Array.isArray(p.reserveLinks) ? p.reserveLinks.find((l) => l && isHttp(l.url)) : null;
   const reservationUrl = reserve ? cleanUrl(reserve.url)?.toString() : undefined;
   const built = hasArticle ? buildArticle(r.vertical, d, readJson(articleFile), key) : { article: undefined, tags: [] };
+  const photos = loadPhotos(key);
   const place = {
     id,
     vertical: r.vertical,
@@ -499,7 +577,9 @@ for (const key of wanted) {
     ...(web.line ? { line: web.line } : {}),
     ...(reservationUrl ? { reservationUrl } : {}),
     mapUrl: p.gbpUrl,
-    images: [],
+    ...(photos.length > 0 ? { image: photos[0].path } : {}),
+    images: photos.map((x) => x.path),
+    ...(photos.length > 0 ? { photos } : {}),
     tags: built.tags,
     ...(built.article ? { article: built.article } : {}),
   };
@@ -518,7 +598,7 @@ if (!DRY) {
   writeFileSync(UNMAPPED_FILE, JSON.stringify({ _note: "種類・都道府県・cid を決められず除外した店（gbp の「一致」の全店を点検した結果）。推測で振り分けない。build-places.mjs が毎回作り直す。", items: unmapped }, null, 2) + "\n");
 }
 
-console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : "pilot"}${ROWS ? `  rows=${rawOpt("rows")}（範囲の外の「一致」の店=${outOfRows.size}）` : ""}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
+console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : LISTED ? "listed" : "pilot"}${ROWS ? `  rows=${rawOpt("rows")}（範囲の外の「一致」の店=${outOfRows.size}）` : ""}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
 for (const i of issued) console.log(`  ID 払い出し: ${i}`);
 for (const u of unmapped) console.log(`  除外: ${u.key} 「${u.name}」 — ${u.reason}`);
 for (const w of warnings) console.log(`  注意: ${w}`);

@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 import type { HubItem } from "@/lib/portal/hub";
-import type { Week } from "@/lib/portal/openNow";
-import type { DishPhoto } from "@/lib/portal/hubs/nigiwai/photos";
+import type { DishPhoto, VerticalRingPhoto } from "@/lib/portal/hubs/nigiwai/photos";
 import { HEAD, LEAD } from "./copy";
 
 /**
@@ -25,6 +24,9 @@ const SCALES = [1, 0.86, 1.06, 0.92, 1.1, 0.88, 1, 0.94, 1.08, 0.86, 1.02, 0.92,
 const GAP = 0.075; // 隣どうしの隙間（写真の直径に対する比）
 /** 別のページへ入って「戻る」で帰ってきたとき（同じ文書の中。部品は作り直される）、輪の角度を引き継ぐ */
 let savedAng = 0;
+/** 写真の輪を持つ、グルメ以外の業種 */
+const RING_VERTICALS = ["beauty", "bodycare"] as const;
+type RingVertical = (typeof RING_VERTICALS)[number];
 const fmt = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 /** 写真の置き場所。大きさに比例した弧を割り当てて、隙間をそろえる（決まった値なのでサーバーとクライアントで同じ） */
@@ -58,14 +60,15 @@ export default function Nigiwai({
   items,
   gourmetTotal,
   featureTotal,
-  open,
   photos,
+  rings,
 }: {
   items: HubItem[];
   gourmetTotal: number;
   featureTotal: number;
-  open: { weeks: Week[]; n: number[] };
   photos: DishPhoto[];
+  /** ビューティー・ボディケアの写真の輪（店データから、サーバーが決めた 16 枚。足りない業種は空＝空の丸のまま） */
+  rings: Record<RingVertical, VerticalRingPhoto[]>;
 }) {
   const router = useRouter();
   const rootRef = useRef<HTMLElement>(null);
@@ -83,40 +86,20 @@ export default function Nigiwai({
   const [live, setLive] = useState("");
   const [leaving, setLeaving] = useState(false);
   const [shake, setShake] = useState(0);
-  const [openNow, setOpenNow] = useState<{ open: number; known: number } | null>(null);
 
   const { dishes, dk } = layout(photos.length || 16);
   selRef.current = sel;
   const cur = items[sel];
   const kind = cur.live ? "live" : cur.enter ? "prep" : "off";
-  // 輪の姿: グルメ＝料理の写真の輪／ほかの業種で入れる＝その業種の色の空の丸（掲載中でも準備中でも同じ）／入れない＝線だけの空の丸
-  const ring = cur.key === "gourmet" ? "photo" : cur.enter ? "void" : "line";
+  // 輪の姿: グルメ＝料理の写真の輪／ビューティー・ボディケアで写真が足りている＝その業種の店の写真の輪／ほかの業種で入れる＝その業種の色の空の丸（掲載中でも準備中でも同じ）／入れない＝線だけの空の丸
+  const ringKey = (RING_VERTICALS as readonly string[]).includes(cur.key) ? (cur.key as RingVertical) : null;
+  const hasRing = (k: RingVertical) => rings[k].length >= dishes.length;
+  const ring = cur.key === "gourmet" || (ringKey && hasRing(ringKey)) ? "photo" : cur.enter ? "void" : "line";
+  // 写真は、その業種を選んだときに初めて読む（最初の画面＝グルメの表示を遅くしない。一度選んだら、そのまま持つ）
+  const seenRings = useRef(new Set<string>());
+  if (ringKey && hasRing(ringKey)) seenRings.current.add(ringKey);
   // 掲載中だが、グルメではない業種（数字は実数の「N店」だけ）
   const solo = cur.live && cur.key !== "gourmet";
-
-  /* ───────────── いま営業中の数（営業時間が確かな店だけ。現在時刻はブラウザで当てる） ───────────── */
-  useEffect(() => {
-    let stop = false;
-    const calc = async () => {
-      const m = await import("@/lib/portal/openNow");
-      const now = Date.now();
-      let o = 0;
-      let k = 0;
-      open.weeks.forEach((w, i) => {
-        k += open.n[i];
-        if (m.isOpenState(m.getOpenStatus(w, now).state)) o += open.n[i];
-      });
-      if (!stop) setOpenNow({ open: o, known: k });
-    };
-    const ric = (window as unknown as { requestIdleCallback?: (f: () => void) => number }).requestIdleCallback;
-    const h = ric ? ric(() => void calc()) : window.setTimeout(() => void calc(), 400);
-    const iv = window.setInterval(() => void calc(), 60_000);
-    return () => {
-      stop = true;
-      window.clearInterval(iv);
-      if (!ric) window.clearTimeout(h);
-    };
-  }, [open]);
 
   /* ───────────── 輪のエンジン ───────────── */
   useEffect(() => {
@@ -411,12 +394,24 @@ export default function Nigiwai({
                 } as CSSProperties
               }
             >
-              <span className="ng-photo">
+              <span className="ng-photo" {...(cur.key !== "gourmet" ? { "data-off": "" } : {})}>
                 {p && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={p.src} srcSet={p.srcSet} sizes="(max-width: 760px) 30vw, 15vw" alt="" draggable={false} style={{ objectPosition: p.pos }} decoding="async" loading="eager" fetchPriority={i < 6 ? "high" : "auto"} />
                 )}
               </span>
+              {RING_VERTICALS.map((k) => {
+                const q = hasRing(k) ? rings[k][i] : undefined;
+                if (!q) return null;
+                return (
+                  <span key={k} className="ng-photo" data-v={k} {...(ring === "photo" && cur.key === k ? { "data-on": "" } : {})}>
+                    {seenRings.current.has(k) && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={q.src} alt={q.alt} draggable={false} style={{ objectPosition: q.pos }} decoding="async" fetchPriority="low" />
+                    )}
+                  </span>
+                );
+              })}
               <span className="ng-void" />
             </span>
           );
@@ -499,7 +494,7 @@ export default function Nigiwai({
 
           <div className="ng-info" key={cur.key}>
             {/* 数字は、どの業種を選んでいても場所を取る（見出し・入口の位置が動かないように）。掲載中の業種だけ見える。掲載準備中では見えず、読み上げもしない。
-                グルメは「店・特集・いま営業中」。ほかの掲載中の業種（solo）は、実データを数えた「N店」だけ（特集は今回の公開に出さない・営業中の数はグルメだけ）。
+                グルメは「店・特集」。ほかの掲載中の業種（solo）は、実データを数えた「N店」だけ（特集は今回の公開に出さない）。「いま営業中」の数は 2026-10-09 オーナー指示で出さない。
                 solo は、グルメと同じ形の見えない数字（data-ghost。読み上げない）で同じ高さ・同じ折り返しを取り、見える「N店」（.ng-solo）をその上に中央寄せで重ねる */}
             <p className="ng-facts" {...(!cur.live ? { "aria-hidden": true, "data-off": "" } : solo ? { "data-solo": "" } : {})}>
               {solo && (
@@ -512,16 +507,6 @@ export default function Nigiwai({
               </span>
               <span {...(solo ? { "data-ghost": "", "aria-hidden": true } : {})}>
                 特集<b>{fmt(featureTotal)}</b>本
-              </span>
-              {/* 営業中の数字は、現在時刻で数え終わるまで、読み上げない（スクリプトなしでは、CSS が行ごと出さない） */}
-              <span
-                className="ng-open"
-                data-on={openNow || solo ? "" : undefined}
-                aria-hidden={openNow && !solo ? undefined : true}
-                {...(solo ? { "data-ghost": "" } : {})}
-              >
-                いま営業中<b>{openNow ? fmt(openNow.open) : "0"}</b>軒
-                <small>営業時間が確かな{openNow ? fmt(openNow.known) : "0"}店のうち</small>
               </span>
             </p>
             <div className="ng-act">

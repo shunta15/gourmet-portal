@@ -12,6 +12,8 @@ export interface MetadataParams {
   description: string;
   path: string;
   count?: number;
+  /** 共有画像（OGP）の差し替え。無ければ総合サイトの共有画像（lib/seo/og.ts）。店の写真など、サイト内のパス（/ から）か https の URL */
+  image?: { url: string; width?: number; height?: number; alt: string };
 }
 
 /**
@@ -22,7 +24,8 @@ export interface MetadataParams {
  * - robots（件数に基づいて index/noindex）
  */
 export function buildMetadata(params: MetadataParams): Metadata {
-  const { vertical, title, description, path, count = 0 } = params;
+  const { vertical, title, description, path, count = 0, image } = params;
+  const og = image ? { url: image.url, ...(image.width && image.height ? { width: image.width, height: image.height } : {}), alt: image.alt } : ogImage(path, title);
 
   // canonical URL（末尾スラッシュなし）
   const canonicalUrl = `https://machinowa.tokyo${path}`;
@@ -41,14 +44,14 @@ export function buildMetadata(params: MetadataParams): Metadata {
       siteName: 'マチノワ',
       locale: 'ja_JP',
       // 総合サイトの共有画像（app/og/**）。ルートの app/opengraph-image.tsx（グルメ用）には頼らない
-      images: [ogImage(path, title)],
+      images: [og],
     },
     // twitter を指定しないと、ルートレイアウトの「全国飲食店ポータル」の文言と 180px のアイコンが引き継がれてしまう
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage(path, title).url],
+      images: [og.url],
     },
     robots: robotsFor(count),
   };

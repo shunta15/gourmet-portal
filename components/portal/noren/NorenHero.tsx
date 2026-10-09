@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
-import { jstNow } from "@/lib/portal/noren/lamp";
 import Lantern from "./Lantern";
 
 type Props = { photo: string; count: number; areas: number };
@@ -26,7 +25,6 @@ export default function NorenHero({ photo, count, areas }: Props) {
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const [mode, setMode] = useState<"init" | "gl" | "css">("init");
-  const [clock, setClock] = useState("--:--");
   const [nPanels, setNPanels] = useState(5);
 
   useEffect(() => {
@@ -34,7 +32,6 @@ export default function NorenHero({ photo, count, areas }: Props) {
     const st = stage.current!;
     const cv = canvas.current!;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const q = new URLSearchParams(location.search).get("t");
     const root = w.closest(".vN") as HTMLElement;
 
     let cloth: Cloth | null = null;
@@ -149,19 +146,12 @@ export default function NorenHero({ photo, count, areas }: Props) {
 
     window.addEventListener("resize", onResize);
     window.addEventListener("mousemove", onMove, { passive: true });
-    const tick = () => {
-      const t = jstNow(q);
-      setClock(`${String(t.h).padStart(2, "0")}:${String(t.m).padStart(2, "0")}`);
-    };
-    tick();
-    const iv = window.setInterval(tick, 5000);
 
     return () => {
       alive = false;
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("mousemove", onMove);
-      window.clearInterval(iv);
       cloth?.destroy();
     };
   }, []);
@@ -217,9 +207,6 @@ export default function NorenHero({ photo, count, areas }: Props) {
           <i className="vN-cue-l" />
           <span className="vN-cue-e">Scroll</span>
         </div>
-        <p className="vN-live" aria-hidden="true">
-          <em>JST</em> {clock}
-        </p>
       </div>
     </section>
   );

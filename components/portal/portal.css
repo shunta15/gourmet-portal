@@ -632,16 +632,8 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 }
 
 /* ─────────── 地図で探す（/map・駅ページ・県ページの小さな地図）と、今開いている店 ─────────── */
-/* 今開いている店: バッジ（店カードの中）。判定はクライアント。判定前（pending）は場所だけ取って中身は空 */
-.mp .mp-ob{display:flex; flex-wrap:wrap; align-items:center; gap:3px 7px; margin-top:2px}
-.mp .mp-ob[data-s="pending"]{min-height:22px}
-.mp .mp-ob b{display:inline-flex; align-items:center; gap:6px; padding:4px 9px; border:1px solid currentColor; border-radius:99px; font:600 11.5px/1.2 var(--sans); letter-spacing:.04em}
-.mp .mp-ob b::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor; flex:none}
-.mp .mp-ob[data-s="open"] b{color:#2f6b4f; background:rgba(47,107,79,.09)}
-.mp .mp-ob[data-s="soon"] b{color:#97560f; background:rgba(151,86,15,.09)}
-.mp .mp-ob[data-s="closed"] b{color:var(--ink-3)}
-.mp .mp-ob[data-s="unknown"] b{color:var(--ink-3); border-style:dashed; font-weight:500}
-.mp .mp-ob small{font:400 10.5px/1.5 var(--sans); letter-spacing:0; color:var(--ink-3)}
+/* 今開いている店: 目印（店カードの中）。文字は出さない（2026-10-09 オーナー指示）。絞り込みが data-s を見るので要素は残す */
+.mp .mp-ob{display:none}
 /* 「今開いている店だけ」（?open=1）: 営業中でない店と、営業中の店が無いグループを隠す */
 .mp-open-only li:has(.mp-ob[data-s="closed"]), .mp-open-only li:has(.mp-ob[data-s="unknown"]){display:none}
 .mp-open-only .mp-og:not(:has(.mp-ob[data-s="open"], .mp-ob[data-s="soon"])){display:none}
@@ -656,10 +648,6 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-obar-switch input:checked + .tr{background:#2f6b4f}
 .mp-obar-switch input:checked + .tr i{transform:translateX(20px)}
 .mp-obar-switch input:focus-visible + .tr{outline:2px solid var(--ink); outline-offset:3px}
-.mp-obar-sum{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 20px; min-height:24px; font:500 12.5px/1.6 var(--sans); color:var(--ink-2)}
-.mp-obar-sum .at{font:500 11px/1.6 var(--mono); letter-spacing:.08em; color:var(--ink-3)}
-.mp-obar-sum b{font:400 22px/1 var(--latin); font-variant-numeric:lining-nums; margin-inline:2px; color:var(--ink)}
-.mp-obar-sum small{font:400 11px/1.5 var(--sans); color:var(--ink-3)}
 .mp-obar-note{grid-column:1 / -1; font:400 12px/1.9 var(--sans); color:var(--ink-3)}
 .mp-obar-note small{margin-left:.6em; font:500 12px/1.9 var(--sans); color:var(--ink-2)}
 .mp-obar-sec{padding-block:clamp(28px,4vw,48px) 0}
@@ -831,3 +819,20 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-art-feat{margin-top:18px}
 .mp-art-feat a{display:inline-flex; align-items:center; min-height:44px; padding:0 22px; border:1px solid var(--ink); font:500 15px/1.4 var(--sans); letter-spacing:.06em; transition:background .3s, color .3s}
 .mp-art-feat a:hover{background:var(--ink); color:var(--ivory)}
+
+/* ─────────── 新業種の店ページ: 写真（1 枚め＋2〜3 枚め）。枠は切り抜きで揃える ─────────── */
+.mp-gal-sec{padding-block:clamp(8px,2vw,24px) clamp(8px,1.5vw,16px)}
+.mp-gal{display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); grid-template-rows:1fr 1fr; gap:clamp(6px,1vw,12px)}
+.mp-gal > li{position:relative; overflow:hidden; background:var(--acl,var(--paper))}
+.mp-gal img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block}
+.mp-gal-m{grid-row:1 / 3; aspect-ratio:3/2}
+.mp-gal[data-n="1"]{grid-template-columns:minmax(0,52em); grid-template-rows:auto}
+.mp-gal[data-n="1"] .mp-gal-m{grid-row:auto}
+.mp-gal[data-n="2"] .mp-gal-s{grid-row:1 / 3}
+@media (max-width: 720px){
+  .mp-gal, .mp-gal[data-n="2"]{grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-rows:auto}
+  .mp-gal-m{grid-column:1 / -1; grid-row:auto; aspect-ratio:4/3}
+  .mp-gal-s, .mp-gal[data-n="2"] .mp-gal-s{grid-row:auto; aspect-ratio:1/1}
+  .mp-gal[data-n="2"] .mp-gal-s{grid-column:1 / -1; aspect-ratio:3/2}
+  .mp-gal[data-n="1"]{grid-template-columns:minmax(0,1fr)}
+}

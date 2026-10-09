@@ -207,7 +207,7 @@ export default async function Page({ params }: Props) {
       </Block>
 
       <OpenScope weeks={weeks}>
-        <section className="mp-pg-sec mp-obar-sec" aria-label="営業中の絞り込み">
+        <section className="mp-pg-sec mp-obar-sec" aria-label="今開いている店の絞り込み">
           <div className="mp-wrap">
             <OpenBar ids={page.stores.map((s) => s.place.id)} />
           </div>

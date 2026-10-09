@@ -11,7 +11,7 @@
  * 絞り込みは CSS で行う（.mp-open-only のとき、営業中でないバッジを持つ li と、営業中の店が無いグループを隠す）。
  */
 import { createContext, useContext, useSyncExternalStore, type ReactNode } from "react";
-import { formatJst, getOpenStatus, isOpenState, type OpenResult, type Week } from "@/lib/portal/openNow";
+import { getOpenStatus, isOpenState, type OpenResult, type Week } from "@/lib/portal/openNow";
 
 export interface WeekTableProp {
   table: (Week | null)[];
@@ -114,29 +114,15 @@ export function OpenScope({ weeks, children }: { weeks: WeekTableProp; children:
   );
 }
 
-const LABEL: Record<string, string> = {
-  open: "営業中",
-  soon: "まもなく閉店",
-  closed: "営業時間外",
-  unknown: "営業時間不明",
-};
-
-/** 店カードのバッジ。判定前（サーバー・ハイドレーション中）は中身が空 */
+/**
+ * 店カードの目印。2026-10-09 オーナー指示で「営業中」などの表記は出さない（文字は無し・非表示）。
+ * 「今開いている店だけ」の絞り込み（CSS の :has）が data-s を見て動くので、要素と data-s は残す。判定前（サーバー・ハイドレーション中）は pending。
+ */
 export function OpenBadge({ id }: { id: string }) {
   const weeks = useContext(Ctx);
   const now = useNowMs();
   const r = statusOf(weeks, id, now);
-  const s = r?.state ?? "pending";
-  return (
-    <span className="mp-ob" data-s={s}>
-      {r && (
-        <>
-          <b>{LABEL[s]}</b>
-          {s !== "unknown" && <small>（店の案内の営業時間による）</small>}
-        </>
-      )}
-    </span>
-  );
+  return <span className="mp-ob" data-s={r?.state ?? "pending"} hidden />;
 }
 
 /** 見出しの「N店」。絞り込み中は、営業中（まもなく閉店を含む）の店の数にする */
@@ -152,18 +138,9 @@ export function OpenCount({ ids, unit = "店" }: { ids: string[]; unit?: string 
   return <>{n}{unit}</>;
 }
 
-/** 一覧の上の切替（今開いている店だけ）と、判定の根拠・注意書き */
-export function OpenBar({ ids }: { ids: string[] }) {
-  const weeks = useContext(Ctx);
+/** 一覧の上の切替（今開いている店だけ）と、判定の根拠・注意書き。「営業中 N店」などの件数は出さない（2026-10-09 オーナー指示） */
+export function OpenBar(_props: { ids?: string[] }) {
   const only = useOpenOnly();
-  const now = useNowMs();
-  const counts = { open: 0, soon: 0, closed: 0, unknown: 0 };
-  if (now !== null) {
-    for (const id of ids) {
-      const r = statusOf(weeks, id, now);
-      if (r) counts[r.state]++;
-    }
-  }
   return (
     <div className="mp-obar">
       <label className="mp-obar-switch">
@@ -173,26 +150,8 @@ export function OpenBar({ ids }: { ids: string[] }) {
         </span>
         <span className="tx">今開いている店だけ</span>
       </label>
-      <p className="mp-obar-sum" aria-live="polite">
-        {now !== null ? (
-          <>
-            <span className="at">{formatJst(now)} 時点</span>
-            <span>
-              営業中 <b>{counts.open + counts.soon}</b>店
-              {counts.soon > 0 && <small>（うちまもなく閉店 {counts.soon}店）</small>}
-            </span>
-            <span>
-              営業時間外 <b>{counts.closed}</b>店
-            </span>
-            <span>
-              営業時間不明 <b>{counts.unknown}</b>店
-            </span>
-          </>
-        ) : null}
-      </p>
       <p className="mp-obar-note">
-        営業中・営業時間外は、店の案内にある営業時間と定休日をもとに、日本時間の現在時刻で判定しています。
-        営業時間や定休日が読み取れない店は「営業時間不明」です。
+        店の案内にある営業時間と定休日をもとに、日本時間の現在時刻で判定しています。営業時間や定休日が読み取れない店は、絞り込み中は出ません。
         <small>臨時休業・祝日は店にご確認ください。</small>
       </p>
     </div>

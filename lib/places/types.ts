@@ -24,6 +24,18 @@ export interface PlaceArticle {
 }
 
 /**
+ * 店の写真 1 枚（新業種の実在の店。build-places.mjs が automation/vertical-stores/photos/<キー>.json から作る）。
+ * path は public/ 以下のサイト内パス。取得元の URL（imageUrl・pageUrl）はデータに入れない。
+ */
+export interface PlacePhoto {
+  path: string;
+  /** 写っているもの（alt に使う。「店名 — 写っているもの」） */
+  what?: string;
+  width?: number;
+  height?: number;
+}
+
+/**
  * Place の共通フィールド
  */
 export interface PlaceBase {
@@ -57,6 +69,8 @@ export interface PlaceBase {
   website?: string;
   image?: string;            // 代表画像
   images: string[];          // 画像一覧
+  /** 写真の説明と寸法（images と同じ並び。新業種の店で写真があるときだけ） */
+  photos?: PlacePhoto[];
   tags: string[];            // シーンタグ
   priceRange?: string;       // 価格帯（例: '¥¥', '¥¥¥'）
   intro?: string;            // 店舗紹介文

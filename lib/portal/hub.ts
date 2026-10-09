@@ -4,15 +4,13 @@
  *  - gourmetTotal : グルメの掲載店数（getPlaces('gourmet')）
  *  - items[].count: 業種ごとの掲載店数（getPlaces(業種)）。1 以上の業種は「掲載中」（実数を出す）、0 は「掲載準備中」（items[].live）
  *  - featureTotal : 公開中（index 対象）の特集の本数（/sitemap.xml と同じ基準）
- *  - open         : 「いま営業中」を数えるための、営業予定の表。店ごとではなく、同じ予定の店をまとめた
- *                   （weeks[i] の予定の店が n[i] 軒）。営業時間が読み取れない店は含めない。判定はクライアントで現在時刻に当てる
+ *  （「いま営業中」の数は 2026-10-09 オーナー指示で出さない。以前の open フィールドは外した）
  */
 import { getPlaces } from "@/lib/places";
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "./meta";
-import { packWeeks, type Week } from "./openNow";
 
 /** 輪に並べる順（時計まわり）。 */
 const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
@@ -54,7 +52,6 @@ export interface HubData {
   items: HubItem[];
   gourmetTotal: number;
   featureTotal: number;
-  open: { weeks: Week[]; n: number[] };
 }
 
 export async function getHubData(): Promise<HubData> {
@@ -63,18 +60,6 @@ export async function getHubData(): Promise<HubData> {
   const counts = Object.fromEntries(
     await Promise.all(ORDER.map(async (k) => [k, k === "gourmet" ? places.length : (await getPlaces(k)).length] as const)),
   ) as Record<VerticalKey, number>;
-
-  const { table, index } = packWeeks(places.map((p) => ({ id: p.id, hours: p.hours, closed: p.holidays })));
-  const tally = new Array<number>(table.length).fill(0);
-  for (const i of Object.values(index)) tally[i]++;
-  const weeks: Week[] = [];
-  const n: number[] = [];
-  table.forEach((w, i) => {
-    if (w) {
-      weeks.push(w);
-      n.push(tally[i]);
-    }
-  });
 
   const items: HubItem[] = ORDER.map((k) => {
     const v = VERTICALS[k];
@@ -100,6 +85,5 @@ export async function getHubData(): Promise<HubData> {
     items,
     gourmetTotal: places.length,
     featureTotal: (await getAllFeatureArticleIdsWithUpdatedAt()).filter((f) => isFeatureIndexable(f.id)).length,
-    open: { weeks, n },
   };
 }

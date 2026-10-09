@@ -3,10 +3,9 @@ import { getAllRestaurants } from "@/lib/db/restaurants";
 import { FEATURES } from "@/lib/data";
 import { REGIONS, type RegionKey } from "@/lib/regions";
 import { sized } from "@/lib/imageUrl";
-import { buildChapters, buildFlags, CLOCK_PICK, HERO_PICK, photoFor } from "@/lib/portal/noren/picks";
+import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/noren/picks";
 import NorenHero from "@/components/portal/noren/NorenHero";
 import Chapter from "@/components/portal/noren/Chapter";
-import NightClock from "@/components/portal/noren/NightClock";
 import Nobori from "@/components/portal/noren/Nobori";
 import "../noren/top.css";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
@@ -40,8 +39,6 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
-  const clockShop = byId.get(CLOCK_PICK[0]);
-  const clockPhoto = sized((clockShop && photoFor(clockShop, CLOCK_PICK[1])) || heroPhoto, 1400);
 
   // エリア：掲載店のある地域を、掲載数の多い順に
   const counts = restaurants.reduce<Record<string, number>>((m, r) => ((m[r.region] = (m[r.region] ?? 0) + 1), m), {});
@@ -69,8 +66,7 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
       {/* 1 暖簾 */}
       <NorenHero photo={heroPhoto} count={restaurants.length} areas={regions.length} />
 
-      {/* 2 いま何時 */}
-      <NightClock photo={clockPhoto} />
+      {/* 2 いま何時(2026-10-09 オーナー指示で出さない。部品 NightClock.tsx は残してある) */}
 
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">

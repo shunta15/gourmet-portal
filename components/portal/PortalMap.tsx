@@ -126,13 +126,6 @@ function safeHref(href: string): string {
   return href.startsWith("/") || href.startsWith("https://") ? href : "#";
 }
 
-const BADGE_LABEL: Record<string, string> = {
-  open: "営業中",
-  soon: "まもなく閉店",
-  closed: "営業時間外",
-  unknown: "営業時間不明",
-};
-
 export default function PortalMap({
   points,
   colors,
@@ -372,7 +365,7 @@ export default function PortalMap({
     const map = mapRef.current;
     const layer = layerRef.current;
     if (!L || !map || !layer) return;
-    const { visible: all, colors: cols, weeks: wk, stations: stl } = live.current;
+    const { visible: all, colors: cols, stations: stl } = live.current;
     layer.clearLayers();
     const z = map.getZoom();
     // 表示範囲の周り（1画面分の余白）に入る店だけを描く
@@ -410,15 +403,9 @@ export default function PortalMap({
         title: p.name,
         riseOnHover: true,
       });
-      // 開くたびに、その時点の現在時刻（日本時間）で営業中かを判定し直す
+      // 吹き出し（営業中などの表記は出さない。2026-10-09 オーナー指示）
       m.bindPopup(
         () => {
-          const r = statusOf(wk, p.id, Date.now());
-          const badge = r
-            ? `<span class="mp-ob" data-s="${r.state}"><b>${BADGE_LABEL[r.state]}</b>${
-                r.state !== "unknown" ? "<small>（店の案内の営業時間による）</small>" : ""
-              }</span>`
-            : "";
           const sub = [p.category, p.stationName]
             .filter((x): x is string => !!x)
             .map(esc)
@@ -427,7 +414,6 @@ export default function PortalMap({
             `<div class="mp-pop">` +
             `<b class="mp-pop-name">${esc(p.name)}</b>` +
             (sub ? `<span class="mp-pop-sub">${sub}</span>` : "") +
-            badge +
             `<a class="mp-pop-link" href="${esc(safeHref(p.href))}">店のページを見る →</a>` +
             `</div>`
           );

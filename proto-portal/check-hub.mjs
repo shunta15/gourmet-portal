@@ -10,9 +10,9 @@
  *  B 色: 2 色（sometsuke・akagane）のどちらかで出る。20 回開いて両方出る（片方に偏り過ぎない）／ 最初の描画のあとで色が変わらない（ちらつき 0）／
  *        フッターの色が輪の色に合う／ 入る → 戻るで同じ色
  *  C 業種の扱い: 店の数が 1 以上の業種は「掲載中」（実数。「◯◯に入る」）、0 の業種は「掲載準備中」。数は lib/places/generated/{beauty,bodycare}.json の件数（グルメは DB なので 1 以上であること）。
- *        ビューティー・ボディケアが掲載中なら「N店」の実数だけ（特集・いま営業中は出ない）、掲載準備中なら「ページを見る」。ペット・おでかけ・ステイは掲載 0 件＝リンク無し（押しても移動しない）／
+ *        ビューティー・ボディケアが掲載中なら「N店」の実数だけ（特集は出ない）、掲載準備中なら「ページを見る」。ペット・おでかけ・ステイは掲載 0 件＝リンク無し（押しても移動しない）／
  *        「掲載準備中」は選んでいる業種の 1 回だけ／ 「さがす」が /find の 1 つ
- *  D 数字: グルメの掲載店・特集・いま営業中が出る。 営業中 ≤ 営業時間が確かな店 ≤ 掲載店
+ *  D 数字: グルメの掲載店・特集が出る。「いま営業中」「営業時間が確かな◯店のうち」は出ない（2026-10-09 オーナー指示）
  *  E 輪を回す: ドラッグ（PC はマウス・スマホは指の横スワイプ）・矢印キー（← →）で輪の角度が動く。逆向きは逆に回る
  *  F 動きを減らす設定: 輪は回らず（矢印キー・ドラッグでも動かない）、入るのは演出なしで移動、全文が見えている
  *  G スクリプトなし: 言葉が全部ある／ 6 業種のうち入れる 3 つ・さがす・フッターの全リンクが 200（--no-footer ならフッターを除く）
@@ -65,6 +65,16 @@ const generatedCount = (v) => {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")).places.length : 0;
 };
 const COUNTS = [null, generatedCount("beauty"), generatedCount("bodycare"), 0, 0, 0];
+/**
+ * 輪の姿の期待値（2026-10-09）。グルメ＝料理の写真の輪（photo）。ビューティー・ボディケア＝店データの image（写真のある店）が 16 以上なら、その業種の店の写真の輪（photo。16 枚・alt は店名）、
+ * 足りなければ業種の色の空の丸（void。lib/portal/hubs/nigiwai/photos.ts の pickRing・RING_SIZE）。ペット・おでかけ・ステイ＝線だけの空の丸（line）。
+ */
+const RING_SIZE = 16;
+const photoShops = (v) => {
+  const f = path.join(here, "..", "lib", "places", "generated", `${v}.json`);
+  return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")).places.filter((p) => p.image).length : 0;
+};
+const RINGS = ["photo", photoShops("beauty") >= RING_SIZE ? "photo" : "void", photoShops("bodycare") >= RING_SIZE ? "photo" : "void", "line", "line", "line"];
 const LIVE = COUNTS.map((c) => c === null || c > 0);
 
 /**
@@ -217,6 +227,11 @@ for (const vp of [
       sr: document.querySelector(".ng-sr")?.textContent.trim() ?? "",
       deadLinks: [...document.querySelectorAll(".ng a")].map((a) => a.getAttribute("href")).filter((h) => /^\/(pet|leisure|stay)(\/|$)/.test(h || "")),
       facts: !!document.querySelector(".ng-facts:not([data-off])"),
+      ring: document.querySelector(".ng")?.getAttribute("data-ring") ?? null,
+      // 業種の店の写真の輪（data-v）: 出ている枚数・alt が店名（空でない）・壊れた画像
+      vShown: document.querySelectorAll(".ng-photo[data-on]").length,
+      vImgs: [...document.querySelectorAll(".ng-photo[data-on] img")].filter((im) => im.complete && im.naturalWidth > 0 && im.alt.trim()).length,
+      vBroken: [...document.querySelectorAll(".ng-photo img")].filter((im) => im.complete && im.naturalWidth === 0).length,
       // 掲載中の業種の数字: 最初の数（N店）と、数字の組の数（グルメは 3、ほかの掲載中は 1）
       shops: Number((document.querySelector(".ng-facts:not([data-off]) b")?.textContent ?? "").replace(/,/g, "")),
       // 見える数字の組（見えない場所取り data-ghost は数えない）
@@ -224,7 +239,7 @@ for (const vp of [
     }));
     if (i === 0) check(s.state === "掲載中" && s.go === "/gourmet" && s.goText === "グルメに入る" && s.facts, "グルメ: 掲載中・「グルメに入る」→ /gourmet・数字あり", `グルメ: ${JSON.stringify(s)}`);
     else if (LIVE[i]) {
-      // 掲載中（店の数が 1 以上）: グルメと同じ形。「N店」の実数だけ（特集・いま営業中は出ない）
+      // 掲載中（店の数が 1 以上）: グルメと同じ形。「N店」の実数だけ（特集は出ない）
       check(
         s.state === "掲載中" && s.go === HREFS[i] && s.goText === `${NAMES[i]}に入る` && s.facts && s.shops === COUNTS[i] && s.factSpans === 1,
         `${NAMES[i]}: 掲載中・「${NAMES[i]}に入る」→ ${HREFS[i]}・${COUNTS[i]}店（実数）のみ`,
@@ -232,6 +247,14 @@ for (const vp of [
       );
     } else if (i < 3) check(s.state === "掲載準備中" && s.go === HREFS[i] && s.goText === "ページを見る" && !s.facts, `${NAMES[i]}: 掲載準備中・「ページを見る」→ ${HREFS[i]}`, `${NAMES[i]}: ${JSON.stringify(s)}`);
     else check(s.state === "掲載準備中" && s.go === null && s.deadLinks.length === 0, `${NAMES[i]}: 掲載準備中と出るだけ。リンク無し`, `${NAMES[i]}: ${JSON.stringify(s)}`);
+    // 輪の姿（photo / void / line）。ビューティー・ボディケアの写真の輪は、画面に 16 枚・alt あり・壊れた画像 0
+    check(s.ring === RINGS[i], `${NAMES[i]}: 輪の姿が ${RINGS[i]}`, `${NAMES[i]}: 輪の姿が ${s.ring}（期待 ${RINGS[i]}）`);
+    if (i === 1 || i === 2) {
+      const want = RINGS[i] === "photo" ? 16 : 0;
+      await page.waitForTimeout(500);
+      const v = await page.evaluate(() => ({ shown: document.querySelectorAll(".ng-photo[data-on]").length, imgs: [...document.querySelectorAll(".ng-photo[data-on] img")].filter((im) => im.complete && im.naturalWidth > 0 && im.alt.trim()).length, broken: [...document.querySelectorAll(".ng-photo img")].filter((im) => im.complete && im.naturalWidth === 0).length }));
+      check(v.shown === want && v.imgs === want && v.broken === 0, `${NAMES[i]}: 店の写真の輪 ${want} 枚（alt は店名・壊れた画像 0）`, `${NAMES[i]}: 写真の輪 ${JSON.stringify(v)}（期待 ${want} 枚）`);
+    }
     if (i > 0) {
       check(s.prep === (LIVE[i] ? 0 : 1), `${NAMES[i]}: 「掲載準備中」は画面に ${LIVE[i] ? 0 : 1} 回`, `${NAMES[i]}: 「掲載準備中」が ${s.prep} 回`);
       const want = LIVE[i] ? "掲載中" : "掲載準備中";
@@ -271,15 +294,14 @@ for (const vp of [
   await page.waitForTimeout(300);
 
   console.log(" D 数字");
-  await page.waitForFunction(() => document.querySelector(".ng-open[data-on]"), null, { timeout: 15000 }).catch(() => {});
   const nums = await page.evaluate(() => {
     const b = [...document.querySelectorAll(".ng-facts b")].map((e) => Number(e.textContent.replace(/,/g, "")));
-    const known = Number((document.querySelector(".ng-open small")?.textContent.match(/([\d,]+)店/) || [])[1]?.replace(/,/g, ""));
-    return { shops: b[0], features: b[1], open: b[2], known };
+    const facts = document.querySelector(".ng-facts")?.textContent ?? "";
+    return { shops: b[0], features: b[1], count: b.length, hasOpenNow: !!document.querySelector(".ng-open") || /営業中|営業時間が確か/.test(document.querySelector(".ng")?.textContent ?? ""), facts };
   });
-  note(`掲載 ${nums.shops} 店・特集 ${nums.features} 本・いま営業中 ${nums.open} 軒（営業時間が確かな ${nums.known} 店のうち）`);
+  note(`掲載 ${nums.shops} 店・特集 ${nums.features} 本`);
   check(nums.shops > 0 && nums.features > 0, "掲載店・特集の数が出ている", `数字: ${JSON.stringify(nums)}`);
-  check(nums.known > 0 && nums.open <= nums.known && nums.known <= nums.shops, "営業中 ≤ 営業時間が確かな店 ≤ 掲載店", `数字の大小が合わない: ${JSON.stringify(nums)}`);
+  check(nums.count === 2 && !nums.hasOpenNow, "「いま営業中」「営業時間が確かな◯店のうち」は出ない（数字は店・特集の 2 つだけ）", `営業中の表記が残っている: ${JSON.stringify(nums)}`);
 
   console.log(" E 輪を回す");
   const pt = await dragPoint(page);

@@ -5,7 +5,7 @@ import NigiwaiFonts from "./NigiwaiFonts";
 import Statement from "./Statement";
 import RandomTheme from "./RandomTheme";
 import { getHubData } from "@/lib/portal/hub";
-import { getNigiwaiPhotos } from "@/lib/portal/hubs/nigiwai/photos";
+import { getNigiwaiPhotos, getVerticalRings } from "@/lib/portal/hubs/nigiwai/photos";
 import { RANDOM_KEYS, type ThemeKey } from "@/lib/portal/hubs/nigiwai/themes";
 
 /**
@@ -39,7 +39,7 @@ const PICK_HTML =
  *  - 固定の色: theme をそのまま出す（プレビュー・ローカル専用の /proto-hub/nigiwai/<色>）。
  */
 export default async function NigiwaiPage({ theme, random = false }: { theme: ThemeKey; random?: boolean }) {
-  const [data, photos] = await Promise.all([getHubData(), getNigiwaiPhotos()]);
+  const [data, photos, rings] = await Promise.all([getHubData(), getNigiwaiPhotos(), getVerticalRings()]);
   return (
     <div className="ngp" data-theme={theme} suppressHydrationWarning={random}>
       {random && (
@@ -49,7 +49,7 @@ export default async function NigiwaiPage({ theme, random = false }: { theme: Th
         </>
       )}
       <NigiwaiFonts />
-      <Nigiwai items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} open={data.open} photos={photos.ring} />
+      <Nigiwai items={data.items} gourmetTotal={data.gourmetTotal} featureTotal={data.featureTotal} photos={photos.ring} rings={rings} />
       <Statement ring={photos.ring} side={photos.side} />
     </div>
   );

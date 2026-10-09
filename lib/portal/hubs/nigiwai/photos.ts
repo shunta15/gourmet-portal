@@ -10,6 +10,8 @@
 import "server-only";
 import { loadWall } from "@/lib/portal/photoWall";
 import { photoSrc, type WallItem } from "@/lib/portal/photoWallShared";
+import { getPlaces, type Place } from "@/lib/places";
+import { isUsableImage } from "@/lib/portal/photoRules";
 
 /**
  * 輪に並べる 16 枚（時計まわり。隣どうしの色・料理が重ならない順）。
@@ -84,4 +86,60 @@ export async function getNigiwaiPhotos(): Promise<{ ring: DishPhoto[]; side: Dis
   const pick = (ids: readonly string[], max = 800) => ids.map((id) => by.get(id)).filter((x): x is WallItem => !!x).map((x) => toDish(x, max));
   // 場面 1 の大きい写真（最大 340px 径。2 倍の画面で 680px）は、1200 まで読ませる
   return { ring: pick(RING_IDS), side: pick(SIDE_IDS, 1200) };
+}
+
+/**
+ * ビューティー・ボディケアの写真の輪（2026-10-09 オーナー指示）。その業種の店データ（lib/places/generated/*.json）の image（1 枚め）から作る。
+ *  - 枚数は、グルメの輪と同じ RING_SIZE（16）。写真のある店（使ってよい写真）が 16 に満たない業種は、輪にしない（空の輪＝[]。今までどおり業種の色の空の丸）。
+ *    8〜15 枚の小さい輪は作らない（輪の大きさ・並びがスマホと PC で枚数ごとに変わるため）。同じ写真を繰り返して数合わせもしない。
+ *  - どの店を使うかは、データだけで決まる（無作為にしない。同じデータなら必ず同じ輪）。種類・都道府県がばらけるように、貪欲に選ぶ:
+ *    1 枚ずつ、直近 5 枚と同じ県・同じ種類を避け（隣どうしが重ならない）、それが同点なら、ここまでに多く選んだ県・種類を避け、それでも同点なら店 ID の順。
+ */
+export const RING_SIZE = RING_IDS.length;
+
+export interface VerticalRingPhoto {
+  /** サイト内の画像のパス（/_portal/vshops/…） */
+  src: string;
+  /** 店名 */
+  alt: string;
+  /** 丸く切るときの中心（object-position） */
+  pos: string;
+}
+
+/** 写真のある店から、種類・都道府県がばらけるように size 枚を決まった順に選ぶ。足りなければ []（数合わせはしない） */
+export function pickRing(places: Place[], size = RING_SIZE): Place[] {
+  const pool = places.filter((p) => isUsableImage(p.image)).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  if (pool.length < size) return [];
+  const chosen: Place[] = [];
+  const used = { pref: new Map<string, number>(), cat: new Map<string, number>() };
+  const count = (m: Map<string, number>, k: string) => m.get(k) ?? 0;
+  while (chosen.length < size) {
+    const recent = chosen.slice(-5);
+    let best: Place | null = null;
+    let bestScore: number[] = [];
+    for (const p of pool) {
+      if (chosen.includes(p)) continue;
+      const score = [
+        recent.filter((r) => r.pref === p.pref).length + recent.filter((r) => r.category === p.category).length,
+        count(used.pref, p.pref),
+        count(used.cat, p.category),
+      ];
+      const better = !best || score.some((v, i) => (score[i] !== bestScore[i] ? v < bestScore[i] : false) && score.slice(0, i).every((x, j) => x === bestScore[j]));
+      if (better) {
+        best = p;
+        bestScore = score;
+      }
+    }
+    if (!best) break;
+    chosen.push(best);
+    used.pref.set(best.pref, count(used.pref, best.pref) + 1);
+    used.cat.set(best.category, count(used.cat, best.category) + 1);
+  }
+  return chosen;
+}
+
+export async function getVerticalRings(): Promise<{ beauty: VerticalRingPhoto[]; bodycare: VerticalRingPhoto[] }> {
+  const toRing = (ps: Place[]): VerticalRingPhoto[] => pickRing(ps).map((p) => ({ src: p.image as string, alt: p.name, pos: "50% 50%" }));
+  const [b, o] = await Promise.all([getPlaces("beauty"), getPlaces("bodycare")]);
+  return { beauty: toRing(b), bodycare: toRing(o) };
 }
