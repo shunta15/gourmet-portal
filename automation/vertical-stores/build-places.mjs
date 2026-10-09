@@ -13,6 +13,7 @@
  * どのモードでも次は適用する（引数で場所を差し替えられる）:
  *  - 写真: photos/<キー>.json（{ key, images: [ { path, imageUrl, pageUrl, what, width, height } ], note }）があれば、
  *          public/ に実在する画像だけを Place の image（1 枚め）・images（全部）・photos（説明と寸法）に入れる。imageUrl・pageUrl は入れない。
+ *          店の写真の記録が無い・空（使える画像が 0 枚）の店は、公開する特集（--features のフォルダの features/<キー>.json）の images（hero・p1・p2）を使う。
  *  - 種類の上書き: category-overrides/<キー>.json（{ key, category, evidence }）があれば、その種類を使う。
  *          その業種の種類の slug（lib/verticals/<業種>.ts）に無い値は無効（使わない）。決められない店は、今までどおり unmapped.json へ（理由に無効の旨を足す）。
  *  - 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json（キーの配列）にある店は、どのモードでも出さない。
@@ -404,13 +405,16 @@ function buildArticle(vertical, d, article, key) {
 
 // ------------------------------------------------------------------ 本体
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
-/** 写真の記録 photos/<キー>.json → public/ に実在する画像だけの { path, what, width, height }。記録が無い・0 枚なら [] */
-function loadPhotos(key) {
-  const f = path.join(PHOTOS_DIR, `${key}.json`);
+/**
+ * 写真の記録（photos/<キー>.json または features/<キー>.json）の images → public/ に実在する画像だけの { path, what, width, height }。
+ * 記録が無い・0 枚なら []。
+ */
+function loadImagesFrom(f, key) {
   if (!existsSync(f)) return [];
   const out = [];
   const seen = new Set();
-  for (const im of Array.isArray(readJson(f).images) ? readJson(f).images : []) {
+  const rec = readJson(f);
+  for (const im of Array.isArray(rec.images) ? rec.images : []) {
     // 記録の path は「/_portal/vshops/…」でも「public/_portal/vshops/…」でもよい。サイト内パス（/ で始まる）にそろえる
     const rel = String(im?.path ?? "").trim().replace(/^\.?\/?public\//, "").replace(/^\/+/, "");
     if (!rel || rel.includes("..") || seen.has(rel)) continue;
@@ -426,6 +430,16 @@ function loadPhotos(key) {
     out.push({ path: `/${rel}`, ...(what ? { what } : {}), ...(w && h ? { width: w, height: h } : {}) });
   }
   return out;
+}
+/**
+ * 店の写真。photos/<キー>.json の images が使える（public/ に実在する）ならそれ。
+ * 店の写真の記録が無い・空の店でも、公開する特集（--features のフォルダの features/<キー>.json）があれば、
+ * その特集の写真（images: hero・p1・p2）を店の写真として使う（特集の写真があるのに店ページに写真が出ない、を防ぐ）。
+ */
+function loadPhotos(key) {
+  const own = loadImagesFrom(path.join(PHOTOS_DIR, `${key}.json`), key);
+  if (own.length > 0) return own;
+  return loadImagesFrom(path.join(FEATURES_DIR, `${key}.json`), key);
 }
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
 

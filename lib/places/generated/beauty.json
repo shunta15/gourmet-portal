@@ -306,7 +306,26 @@
       "website": "https://claire2025.com/",
       "reservationUrl": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000750644",
       "mapUrl": "https://maps.google.com/?cid=2526645982184747843",
-      "images": [],
+      "image": "/_portal/vshops/beauty-92/hero.jpg",
+      "images": [
+        "/_portal/vshops/beauty-92/hero.jpg",
+        "/_portal/vshops/beauty-92/p1.jpg",
+        "/_portal/vshops/beauty-92/p2.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/beauty-92/hero.jpg",
+          "what": "施術スペース。石目調のネイル用テーブル、アーム式ライト、ジェルのカラーサンプルを並べた棚、革張りの椅子、窓。人物は写っていない。公式サイトのトップ(ページ内で同じ部屋の写真が複数カットある)"
+        },
+        {
+          "path": "/_portal/vshops/beauty-92/p1.jpg",
+          "what": "ジェルネイルの仕上がり(グラデーションにストーン)。画像内に「Claire Nail」のロゴの書き込みがあり、店の自作の写真と判断。手元のみで顔は写っていない"
+        },
+        {
+          "path": "/_portal/vshops/beauty-92/p2.jpg",
+          "what": "ネイルチップのデザイン見本(トラバーチン調の台の上に5点)。公式サイトの「ネイルの定額デザイン」のお知らせのメイン画像"
+        }
+      ],
       "tags": []
     },
     {
@@ -7559,7 +7578,26 @@
       "website": "https://gazebo-hairsalon.com/",
       "reservationUrl": "https://rwg.kanzashi.com/l/4LFd777PjZ/hair?merchant_id=hair-55159",
       "mapUrl": "https://maps.google.com/?cid=9139584387690899352",
-      "images": [],
+      "image": "/_portal/vshops/beauty-48/hero.jpg",
+      "images": [
+        "/_portal/vshops/beauty-48/hero.jpg",
+        "/_portal/vshops/beauty-48/p1.jpg",
+        "/_portal/vshops/beauty-48/p2.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/beauty-48/hero.jpg",
+          "what": "店内(2席のセット面、レンガ調の壁、奥にシャンプー台)"
+        },
+        {
+          "path": "/_portal/vshops/beauty-48/p1.jpg",
+          "what": "カットの手元(コームとハサミ、お客様は後ろ姿)"
+        },
+        {
+          "path": "/_portal/vshops/beauty-48/p2.jpg",
+          "what": "台に並べたハサミ類(道具)"
+        }
+      ],
       "tags": []
     }
   ]
