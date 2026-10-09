@@ -38,11 +38,16 @@ const NEW_V=['beauty','bodycare','pet','leisure','stay'];
 // 店ページ（/{v}/shop/{id}）は全部 200 で見る。特集ページ（/{v}/feature/{id}）は、切り替えが false のあいだ 404（true なら 200）
 for(const v of ['beauty','bodycare'])for(const p of GEN[v])ok200.push(`/${v}/shop/${p.id}`);
 if(!FEATURES_ON)exp404.push('/beauty/feature/claire-nail','/bodycare/feature/nosuch');
+// 特集が ON（2026-10-09〜）: 出す特集（lib/places/generated/features-*.json）は全部 200 で見る。サイトマップに載っていて index のはず（下の検査）
+const FEATS={};for(const v of ['beauty','bodycare']){const f=path.join(ROOT,'lib/places/generated','features-'+v+'.json');FEATS[v]=fs.existsSync(f)?JSON.parse(fs.readFileSync(f,'utf8')).features:[]}
+if(FEATURES_ON)for(const v of ['beauty','bodycare'])for(const f of FEATS[v])ok200.push(`/${v}/feature/${f.id}`);
+else exp404.push(...['beauty','bodycare'].flatMap(v=>FEATS[v].map(f=>`/${v}/feature/${f.id}`)));
 // 各業種のサイトマップの中身（<loc> のパス）。ここに載っているページだけが index のはず
 const smPaths={};
 for(const v of NEW_V){const r=await fetch(B+'/'+v+'/sitemap.xml');const x=r.status===200?await r.text():'';smPaths[v]=new Set([...x.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>{try{return decodeURI(m[1])}catch{return m[1]}}).map(u=>u.replace('https://machinowa.tokyo','')||'/'))}
 const seen=new Map();const get=async u=>{if(seen.has(u))return seen.get(u);const r=await fetch(B+encodeURI(u),{redirect:'manual'});const t=r.status===200&&!u.endsWith('.xml')?await r.text():'';const v={s:r.status,t};seen.set(u,v);return v};
 const bad=[];
+if(FEATURES_ON)for(const v of ['beauty','bodycare'])for(const f of FEATS[v])if(!smPaths[v].has(`/${v}/feature/${f.id}`))bad.push(`feature missing from sitemap /${v}/feature/${f.id}`);
 for(const u of exp404){const r=await get(u);if(r.s!==404)bad.push(`expected404 ${u} -> ${r.s}`)}
 const links=new Set();
 for(const u of ok200){const r=await get(u);if(r.s!==200){bad.push(`expected200 ${u} -> ${r.s}`);continue}if(u.endsWith('.xml'))continue;

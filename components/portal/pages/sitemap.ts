@@ -3,13 +3,15 @@
  * index 対象（判定は lib/seo/gate.ts の1か所）のURLだけを出す。載せるもの: 業種のトップ・都道府県・種類・種類×都道府県・シーン・店ページ（/shop/{id}）。
  * 各ページの robots は件数で決まる（buildMetadata の count）。ここでも同じ件数を gate に通す:
  *   店ページの count はその業種の掲載数（components/portal/pages/shop.tsx）、ほかは絞り込んだあとの件数。掲載数が 3 件未満なら店ページも載せない。
- * 特集ページ（/{v}/feature/{id}）は載せない（今回の公開の対象外。lib/places/features.ts の VERTICAL_FEATURES_ENABLED）。
+ * 特集ページ（/{v}/feature/{id}。ビューティー・ボディケアだけ）は、lib/places/features.ts の VERTICAL_FEATURES_ENABLED が true のあいだ載せる
+ * （false のあいだは getGeneratedFeatures が空を返すので 1 本も載らない）。特集ページの robots の件数は店ページと同じ（その業種の掲載数）。
  */
 import type { MetadataRoute } from "next";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { assertPortalLive } from "@/lib/portal/launch";
+import { getGeneratedFeatures } from "@/lib/places/features";
 import { loadVertical, pick, type PortalVertical } from "./data";
 
 export function verticalSitemap(key: PortalVertical) {
@@ -29,6 +31,9 @@ export function verticalSitemap(key: PortalVertical) {
     }
     for (const s of v.scenes) add(`${v.path}/scene/${s.slug}`, pick(all, { scene: s }).length);
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
+    if (key === "beauty" || key === "bodycare") {
+      for (const f of await getGeneratedFeatures(key)) add(`${v.path}/feature/${encodeURIComponent(f.id)}`, all.length);
+    }
 
     return paths.map((path) => ({ url: absUrl(path) }));
   };
