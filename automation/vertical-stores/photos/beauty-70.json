@@ -1,0 +1,21 @@
+{
+  "key": "beauty-70",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-70/s1.jpg",
+      "imageUrl": "https://lafelice.jp/system_panel/uploads/images/top_concept03.jpg",
+      "pageUrl": "https://lafelice.jp/",
+      "what": "ベッドのある施術室",
+      "width": 568,
+      "height": 288
+    },
+    {
+      "path": "/_portal/vshops/beauty-70/s2.jpg",
+      "imageUrl": "https://lafelice.jp/system_panel/uploads/images/top_salon01.jpg",
+      "pageUrl": "https://lafelice.jp/",
+      "what": "アームチェアのある廊下",
+      "width": 600,
+      "height": 315
+    }
+  ]
+}

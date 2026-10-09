@@ -1,0 +1,29 @@
+{
+  "key": "beauty-80",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-80/s1.jpg",
+      "imageUrl": "http://hipocket.co.jp/sakura/images/S__2326530.jpg",
+      "pageUrl": "http://hipocket.co.jp/sakura/about.html",
+      "what": "ベッドのある施術室",
+      "width": 675,
+      "height": 1200
+    },
+    {
+      "path": "/_portal/vshops/beauty-80/s2.jpg",
+      "imageUrl": "http://hipocket.co.jp/sakura/images/korugi.jpg",
+      "pageUrl": "http://hipocket.co.jp/sakura/facial.html",
+      "what": "フェイシャル施術の様子",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/beauty-80/s3.jpg",
+      "imageUrl": "http://hipocket.co.jp/sakura/images/slim_facial.jpg",
+      "pageUrl": "http://hipocket.co.jp/sakura/facial.html",
+      "what": "美顔器での施術の様子",
+      "width": 1200,
+      "height": 800
+    }
+  ]
+}
