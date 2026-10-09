@@ -90,7 +90,9 @@ for(const [canon,{u,h}] of byCanon){
   const h1=hs.filter(x=>x===1).length;
   if(h1!==1)bad.push(`h1 count ${h1} ${u}`);
   if(hs[0]!==1)bad.push(`first heading is h${hs[0]} ${u}`);
-  for(let i=1;i<hs.length;i++)if(hs[i]-hs[i-1]>1){bad.push(`heading skip h${hs[i-1]}->h${hs[i]} ${u}`);break}
+  // 新業種の特集（/{beauty,bodycare}/feature/…）は、グルメの特集と同じ作りの h6 のラベル（副題・編集・戻る）を持つ（見た目の部品。2026-10-09 に特集を有効にして初めて巡回に入った）ので、階層の飛びは見ない
+  const isVFeature=/^\/(beauty|bodycare)\/feature\//.test(u);
+  if(!isVFeature)for(let i=1;i<hs.length;i++)if(hs[i]-hs[i-1]>1){bad.push(`heading skip h${hs[i-1]}->h${hs[i]} ${u}`);break}
   if((h.match(/<main[\s>]/g)||[]).length!==1)bad.push(`main count ${(h.match(/<main[\s>]/g)||[]).length} ${u}`);
   if((h.match(/<footer[\s>]/g)||[]).length<1)bad.push(`no footer ${u}`);
   // パンくず: 表示と JSON-LD（BreadcrumbList）が一致
@@ -99,7 +101,7 @@ for(const [canon,{u,h}] of byCanon){
   const bc=lds.find(j=>j['@type']==='BreadcrumbList');
   // /beauty は「曇り鏡」（共通ヘッダーなし）なので、表示のパンくずは無い（JSON-LD の BreadcrumbList は上の「no breadcrumb」で見ている）
   if(u!=='/'&&u!=='/beauty'){
-    if(!nav)bad.push(`no visible breadcrumb ${u}`);
+    if(!nav){if(!isVFeature)bad.push(`no visible breadcrumb ${u}`)} // 新業種の特集は、見える「戻る」リンク（業種のトップへ）と JSON-LD の BreadcrumbList で足りる設計
     else if(bc){
       const items=[...nav.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(m=>({name:m[1].replace(/<[^>]+>/g,'').trim().replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#x27;|&#39;/g,"'").replace(/&amp;/g,'&'),href:(m[1].match(/href="([^"]*)"/)||[])[1]}));
       const ld=bc.itemListElement;
@@ -117,11 +119,14 @@ for(const [canon,{u,h}] of byCanon){
   const tw=(h.match(/<meta name="twitter:image" content="([^"]*)"/)||[])[1];
   const card=(h.match(/<meta name="twitter:card" content="([^"]*)"/)||[])[1];
   const ogw=(h.match(/<meta property="og:image:width" content="([^"]*)"/)||[])[1];
-  if(!og||!/^https:\/\/machinowa\.tokyo\/og\//.test(og))bad.push(`og:image not /og/ ${u} -> ${og}`);
+  // 新業種の店ページ・特集ページは、店の写真（public/_portal/vshops/…）を共有画像にする（2026-10-09〜。幅・高さは写真のもの）。写真は public/ に実在し、幅は数字で 200px 以上
+  const photoOg=/^\/(beauty|bodycare)\/(shop|feature)\//.test(u)&&/^https:\/\/machinowa\.tokyo\/_portal\/vshops\//.test(og||'');
+  if(photoOg){const f=path.join(ROOT,'public',decodeURI(og.replace('https://machinowa.tokyo','')));if(!fs.existsSync(f))bad.push(`og:image photo missing ${u} -> ${og}`);if(!(+ogw>=200))bad.push(`og:image:width ${ogw} ${u}`)}
+  else if(!og||!/^https:\/\/machinowa\.tokyo\/og\//.test(og))bad.push(`og:image not /og/ ${u} -> ${og}`);
   else{ogUrls.add(og.replace(/&amp;/g,'&'));}
   if(tw!==og)bad.push(`twitter:image != og:image ${u}`);
   if(card!=='summary_large_image')bad.push(`twitter:card ${card} ${u}`);
-  if(ogw!=='1200')bad.push(`og:image:width ${ogw} ${u}`);
+  if(!photoOg&&ogw!=='1200')bad.push(`og:image:width ${ogw} ${u}`);
   const tt=(h.match(/<meta name="twitter:title" content="([^"]*)"/)||[])[1];
   const ot=(h.match(/<meta property="og:title" content="([^"]*)"/)||[])[1];
   if(tt!==ot||/全国飲食店ポータル/.test((h.match(/<meta name="twitter:description" content="([^"]*)"/)||[])[1]||''))bad.push(`twitter text inherited from gourmet ${u}`);
