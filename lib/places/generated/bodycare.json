@@ -5221,7 +5221,18 @@
       "phone": "011-302-4141",
       "reservationUrl": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000418910",
       "mapUrl": "https://maps.google.com/?cid=5088114683047955288",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-108/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-108/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-108/g1.jpg",
+          "what": "ベッドのある施術室",
+          "width": 900,
+          "height": 1200
+        }
+      ],
       "tags": [],
       "article": {
         "headline": "札幌市清田区平岡の、完全予約制で駐車場のある整体サロン",
@@ -5274,7 +5285,18 @@
       "phone": "06-4309-8963",
       "reservationUrl": "https://beauty.rakuten.co.jp/s2000048193/?scid=we_bty_glam_shoptop",
       "mapUrl": "https://maps.google.com/?cid=17783602748516925943",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-116/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-116/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-116/g1.jpg",
+          "what": "施術ベッドが並ぶ院内",
+          "width": 900,
+          "height": 1200
+        }
+      ],
       "tags": [
         "駅近"
       ],
@@ -5665,7 +5687,18 @@
       "url": "http://misao.shonan-1.com/",
       "website": "http://misao.shonan-1.com/",
       "mapUrl": "https://maps.google.com/?cid=3027718566350911202",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-22/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-22/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-22/g1.jpg",
+          "what": "みさお接骨院の外観",
+          "width": 1200,
+          "height": 900
+        }
+      ],
       "tags": [],
       "article": {
         "headline": "バス停から徒歩1分、茅ヶ崎市矢畑の接骨院",
@@ -5762,7 +5795,18 @@
       "url": "https://www.gurutto-fukushima.com/detail/2044/index.html",
       "website": "https://www.gurutto-fukushima.com/detail/2044/index.html",
       "mapUrl": "https://maps.google.com/?cid=13278029821050973830",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-37/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-37/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-37/g1.jpg",
+          "what": "施術ベッドが並ぶ広い院内",
+          "width": 1200,
+          "height": 858
+        }
+      ],
       "tags": [],
       "article": {
         "headline": "2025年3月に開いた、福島市渡利の鍼灸接骨院",
@@ -6053,7 +6097,18 @@
       "phone": "03-6457-6684",
       "reservationUrl": "https://karadarefre.jp/reserve/_index/f:57134673?site_code=gbp",
       "mapUrl": "https://maps.google.com/?cid=17812756798521967357",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-58/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-58/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-58/g1.jpg",
+          "what": "ソフィア整骨院の店頭の外観",
+          "width": 1200,
+          "height": 926
+        }
+      ],
       "tags": [
         "駅近"
       ],
@@ -6153,7 +6208,18 @@
       "url": "https://yurashi.net/lab/fukuiechizen/",
       "website": "https://yurashi.net/lab/fukuiechizen/",
       "mapUrl": "https://maps.google.com/?cid=687596294936745315",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-60/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-60/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-60/g1.jpg",
+          "what": "木造の建物の外観",
+          "width": 1200,
+          "height": 675
+        }
+      ],
       "tags": [],
       "article": {
         "headline": "越前市村国の接骨院。北府駅から徒歩11分、駐車場あり",
@@ -6316,7 +6382,18 @@
       "url": "https://www4.hp-ez.com/hp/otonanokitakubu",
       "website": "https://www4.hp-ez.com/hp/otonanokitakubu",
       "mapUrl": "https://maps.google.com/?cid=18001695760302925919",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-76/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-76/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-76/g1.jpg",
+          "what": "店内で花束を持つ女性スタッフ",
+          "width": 1200,
+          "height": 900
+        }
+      ],
       "tags": [
         "駅近"
       ],
@@ -6426,7 +6503,18 @@
       "phone": "045-900-9033",
       "reservationUrl": "https://mitsuraku.jp/pm/online/index/e1j4p3/eNpLtDK0qi62MjSyUsovKMnMzytJTI_PTFGyLrYys1IyMjKwMDdUsq4FXDD0zAuZ",
       "mapUrl": "https://maps.google.com/?cid=11983620692436055783",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-79/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-79/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-79/g1.jpg",
+          "what": "店の入り口のドアと掲示",
+          "width": 900,
+          "height": 1200
+        }
+      ],
       "tags": [
         "駅近",
         "土日営業"
@@ -6638,7 +6726,18 @@
       "holidays": "月曜",
       "phone": "044-541-6125",
       "mapUrl": "https://maps.google.com/?cid=14088079469938885184",
-      "images": [],
+      "image": "/_portal/vshops/bodycare-94/g1.jpg",
+      "images": [
+        "/_portal/vshops/bodycare-94/g1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/bodycare-94/g1.jpg",
+          "what": "米ぬか酵素風呂をかき混ぜるスタッフ",
+          "width": 1200,
+          "height": 900
+        }
+      ],
       "tags": [],
       "article": {
         "headline": "川崎市幸区南幸町の、店名に酵素風呂を掲げるサロン",
