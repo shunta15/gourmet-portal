@@ -17,6 +17,7 @@ import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
+import { decodeRewrittenId } from "@/lib/portal/noren/rewrites";
 
 // 特集記事ページの暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/<id> が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical・構造化データは /feature/<id> のまま。この内部のパス /gourmet/feature/<id> は外に出さない）。
@@ -37,7 +38,8 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   assertPortalLive();
-  const { id } = await params;
+  // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
+  const id = decodeRewrittenId((await params).id);
   const a = await getFeatureArticleById(id);
   if (!a) return { title: "記事が見つかりません — マチノワ" };
   const isIndexable = isFeatureIndexable(id);
@@ -66,7 +68,8 @@ export default async function Page({
   params: Promise<{ id: string }>;
 }) {
   assertPortalLive();
-  const { id } = await params;
+  // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
+  const id = decodeRewrittenId((await params).id);
   const article = await getFeatureArticleById(id);
   if (!article) notFound();
   const articleJsonLd = buildArticleJsonLd(article);

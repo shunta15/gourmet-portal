@@ -12,10 +12,10 @@
 export const NOREN_SHOP_REWRITE = true;
 
 /**
- * 特集記事ページ（/feature/<id>）を暖簾にする。app/gourmet/feature/[id]（別の担当が作る）が合流してから true にする。
+ * 特集記事ページ（/feature/<id>）を暖簾にする。app/gourmet/feature/[id] が合流したので true（2026-10-09 公開②）。
  * false のあいだは、/feature/<id> は今のグルメの特集ページのまま（書き換えも、枠の出し分けも、リダイレクトも効かない）。
  */
-export const NOREN_FEATURE_REWRITE = false;
+export const NOREN_FEATURE_REWRITE = true;
 
 /**
  * 書き換え（rewrites）を通ってきた動的ルートの `params.id` を、元の ID に戻す。

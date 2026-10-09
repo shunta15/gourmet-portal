@@ -41,7 +41,7 @@ export interface PlaceFeature {
  * 特集ページは 404、店ページのリンクは出ず、サイトマップにも載らない（getGeneratedFeatures が空を返すため。ほかの関数もここ経由）。
  * 出すときは true にする。
  */
-export const VERTICAL_FEATURES_ENABLED = false;
+export const VERTICAL_FEATURES_ENABLED = true;
 
 export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise<PlaceFeature[]> {
   if (!VERTICAL_FEATURES_ENABLED) return [];

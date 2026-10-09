@@ -280,6 +280,25 @@
       }
     },
     {
+      "id": "be0005",
+      "vertical": "beauty",
+      "category": "nail",
+      "name": "claire.nail〜パーマネントジュエリー〜",
+      "pref": "saitama",
+      "cityName": "さいたま市見沼区",
+      "address": "埼玉県さいたま市見沼区大和田町1丁目1715-9 2E",
+      "lat": 35.9296315,
+      "lng": 139.6540771,
+      "hours": "毎日 11:00 - 21:00",
+      "phone": "080-7795-9382",
+      "url": "https://claire2025.com/",
+      "website": "https://claire2025.com/",
+      "reservationUrl": "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000750644",
+      "mapUrl": "https://maps.google.com/?cid=2526645982184747843",
+      "images": [],
+      "tags": []
+    },
+    {
       "id": "be0006",
       "vertical": "beauty",
       "category": "hair",
@@ -6948,6 +6967,26 @@
       "url": "https://hairsalonnavy.com/",
       "website": "https://hairsalonnavy.com/",
       "mapUrl": "https://maps.google.com/?cid=9993099044853447695",
+      "images": [],
+      "tags": []
+    },
+    {
+      "id": "be0105",
+      "vertical": "beauty",
+      "category": "hair",
+      "name": "Gazebo",
+      "pref": "aichi",
+      "cityName": "名古屋市北区",
+      "address": "愛知県名古屋市北区若葉通5丁目7-3 豊島ビル 1A",
+      "lat": 35.196247,
+      "lng": 136.928368,
+      "hours": "火-土 10:00 - 20:00 / 日 10:00 - 19:00",
+      "holidays": "月曜",
+      "phone": "052-982-7219",
+      "url": "https://gazebo-hairsalon.com/",
+      "website": "https://gazebo-hairsalon.com/",
+      "reservationUrl": "https://rwg.kanzashi.com/l/4LFd777PjZ/hair?merchant_id=hair-55159",
+      "mapUrl": "https://maps.google.com/?cid=9139584387690899352",
       "images": [],
       "tags": []
     }
