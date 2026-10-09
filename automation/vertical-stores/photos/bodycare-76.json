@@ -1,5 +1,15 @@
 {
   "key": "bodycare-76",
-  "images": [],
-  "note": "公式サイトの画像は店名バナー・院長の人物写真・ヘッドスパのモデル写真(素材写真に見える)のみで、店内・外観の写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-76/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIgDOKIPgPMOojNHWm9U9I3TKq7BErkwJkyLJ6ZRt6kYnmfdXMYGaN-iX19TggPEa4YfhuxxF4-lKWwZL5qQEKRevAM-fu_e3WJs6wlbAfTtsRffEmEB98XsI9j4RhcPx28VyN=w408-h306-k-no",
+      "pageUrl": "https://maps.google.com/?cid=18001695760302925919",
+      "what": "店内で花束を持つ女性スタッフ",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像は店名バナー・院長の人物写真・ヘッドスパのモデル写真(素材写真に見える)のみで、店内・外観の写真なし / Google マップの写真"
 }

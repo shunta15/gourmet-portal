@@ -1,5 +1,15 @@
 {
   "key": "beauty-121",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトは予約ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-121/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1vP0fC5tzGGO0QWobNWd-Isj5T2obmWLKsyuKT-kA_S4m3rT_KnrEY_veir5Typ_a6sNRB0TQZLaUCDxD1G9FulaXcV8Cz4Wlo-bmcOFFh2P7mQsD-pr8CjvCHU2HBqdzMlkhDQ=w408-h306-k-no",
+      "pageUrl": "https://maps.google.com/?cid=10440479901939096082",
+      "what": "白い椅子と観葉植物の待合スペース",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトは予約ページ) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-32",
-  "images": [],
-  "note": "Googleマップ記載のサイトが予約ページ(kanzashi)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-32/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QORaB8PCLQTYQtjHTT4XuEfgE0K-8dHc0OVvZQmqFYQCzeQIcE-0f7MWEGS7QzNbj07G9YeAZwC6FeR8xhWj8-OrrjSw-1GxJj9OEULL-3PJQ4BliAPNgQu9cbmkQk5YnUIzQBqw=w408-h306-k-no",
+      "pageUrl": "https://maps.google.com/?cid=5431908884536558321",
+      "what": "赤茶系のネイルアートの仕上がり",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトが予約ページ(kanzashi)のみで、自前の公式サイトが無い / Google マップの写真"
 }

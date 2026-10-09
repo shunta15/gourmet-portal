@@ -1,5 +1,15 @@
 {
   "key": "beauty-15",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-15/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7JU4YyFylMLgDCt6hlntADkwxCGx0rZdK80m-gO6aPQbsNfGtxgwpKSNXFLgD323RjwYHazR9IBxkYRlxDYPiZY2jWA81Fta7J-oEZ5pH9k_744uF8lDom5ageH72YpNnvailK4RgnrY=w408-h408-k-no",
+      "pageUrl": "https://maps.google.com/?cid=10371385945879713496",
+      "what": "店の看板の前の髪の後ろ姿",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }

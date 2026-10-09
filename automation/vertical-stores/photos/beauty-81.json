@@ -1,5 +1,15 @@
 {
   "key": "beauty-81",
-  "images": [],
-  "note": "公式サイト(Canva)の写真は素材写真(ストックフォト)ばかりで、店の実物の写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-81/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkZBHiPXRnoXtCYHtkrcvzvYYPnWJiL-IlI8JDyEnlEI7vqG-JCAoAvv3tfeBsYQxYFDPjwit-6JbcfUFqhOGCD-FUGEWDmM0GdDqA83gGYfWaaUraF3_SrQ8aVF392Ov8sTk_z0Y-o9SA=w408-h544-k-no",
+      "pageUrl": "https://maps.google.com/?cid=16597873180670241254",
+      "what": "施術ベッドのある個室",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイト(Canva)の写真は素材写真(ストックフォト)ばかりで、店の実物の写真なし / Google マップの写真"
 }

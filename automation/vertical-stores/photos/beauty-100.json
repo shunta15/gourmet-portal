@@ -1,5 +1,15 @@
 {
   "key": "beauty-100",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-100/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGspkZb0WVgVmxHWfRCgClHcxWvaL5ymGkhymjD804aBmt_46qexZEOVL-rpCAgo5FxCstGCIcl7vyhepHxgZxi8ZAFZlHH85D7-PYvNCzPPMrre2boZy31hJbFwZqueO2NpbZ=w408-h272-k-no",
+      "pageUrl": "https://maps.google.com/?cid=3860700915004218809",
+      "what": "受付と個室が並ぶ店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

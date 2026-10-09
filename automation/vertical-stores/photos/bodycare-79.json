@@ -1,5 +1,15 @@
 {
   "key": "bodycare-79",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはEPARK掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-79/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R26HcRHZhlS00-vJ_BeLh6HHAiLZfvsNG5F1vkR32f6vL0vtWp_bSTRHTqx3XoYm7RWx9XLMGx3XwlkYv7hMyeSX7qG07bsXxGT4_r8u4pwiSP50qO4F826F5DNCMoyahzJ3O40Q=w408-h543-k-no",
+      "pageUrl": "https://maps.google.com/?cid=11983620692436055783",
+      "what": "店の入り口のドアと掲示",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはEPARK掲載ページ) / Google マップの写真"
 }

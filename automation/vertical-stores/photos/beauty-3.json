@@ -1,5 +1,15 @@
 {
   "key": "beauty-3",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-3/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QvLSYP7gzHcWGkKDUsPx4XrIbFZiPLS7QeyL9tPibAOAJtWTwG3ipMfAynEu-Jgs6xdi3-1-kLNf6isX8CiqcmVFvM7_XYlVwtnVNSnC2pouN5D-alebTQYHogTTvd0WIq1mJAXA=w408-h544-k-no",
+      "pageUrl": "https://maps.google.com/?cid=8981792447537063555",
+      "what": "店のロゴの額と造花",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }
