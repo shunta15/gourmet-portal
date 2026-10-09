@@ -1,0 +1,133 @@
+{
+  "key": "beauty-12",
+  "headline": "熊本市中央区新市街の眉毛・ワックス脱毛などのサロン",
+  "lede": "旧店名をAK Estheticsという、熊本市中央区新市街のエステティックサロン「ViV 熊本」です。ホットペッパービューティーでは、眉毛、パラジェル、ワックス脱毛、まつげパーマを掲げています。熊本市電の辛島町駅から徒歩3分と案内されています。",
+  "sections": [
+    {
+      "heading": "予約と店内の設備",
+      "body": "営業時間は10時から19時までで、定休日は不定休、完全予約制です。当日の予約受付にも対応すると記載があります。設備はベッド3台とネイル用の3席の計6で、個室ありとも記載されています。お子さま同伴は可、近くにコインパーキングがあります。掲載の電話番号は予約専用のダイヤルで、営業の電話は控えるよう案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ワックス脱毛"
+    },
+    {
+      "name": "まつげパーマ"
+    },
+    {
+      "name": "パラジェル"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "当日予約可",
+      "factIndex": 3
+    },
+    {
+      "tag": "個室あり",
+      "factIndex": 4
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「エステティック サロン」",
+      "source": "https://maps.google.com/?cid=14483102255150850110",
+      "quote": "エステティック サロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "旧店名はAK Esthetics",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "旧店名：AK Esthetics",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "熊本市電辛島町駅から徒歩3分",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "辛島町駅徒歩3分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日受付OK",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "当日受付OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "個室ありと記載",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴可",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "お子さま同伴可",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00(Google マップも毎日10:00–19:00)",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "10:00～19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はベッド3・ネイル3(総数6)",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "総数6(ベッド3／ネイル3)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付近にコインパーキングがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "付近にコインパーキング有り",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "掲載の電話番号は予約専用ダイヤルで、営業電話は控えるよう案内",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "記載の電話番号は予約専用ダイヤルとなっております。営業電話はお控えください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "眉毛・パラジェル・ワックス脱毛・まつげパーマを掲げている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "眉毛/パラジェル/ワックス脱毛/毛穴/まつげパーマ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は熊本県熊本市中央区新市街12-21 須美ビル301号室",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000519790/",
+      "quote": "熊本県熊本市中央区新市街１２－２１須美ビル３０１号室",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000519790/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14483102255150850110"
+    }
+  ],
+  "notes": "Google マップの website は同店のホットペッパービューティー。別に公式サイト(kumamoto-esthetics.com、電話 096-355-3520 が gbp と一致)があるが、毛穴・ニキビ・ビフォーアフターなど効き目の語が中心のため、本文は HP の事実(設備・予約・駅からの道)で書いた。HP の「毛穴」「眉癖改善」「初回HBL」、口コミ、キャンペーンは使っていない。路面電車(熊本市電)の駅なので「駅近」は付けていない。営業時間は HP と Google マップが10:00-19:00で一致(Google マップは定休日の表示なし、HP は不定休)。"
+}

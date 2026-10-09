@@ -1,0 +1,91 @@
+{
+  "key": "beauty-36",
+  "headline": "今治市高市のヘアサロン。駐車場10台・セット面8席",
+  "lede": "伊予富田駅から徒歩20分、イオンモール今治新都市から車で10分と案内されている、愛媛県今治市高市のヘアサロン「イノセント」です。ホットペッパービューティーには「イノセント 今治(INNOCENT)」の名前で載っています。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は8席で、スタイリストは1人です。駐車場は10台分あり、支払いはVisa、Mastercard、JCB、American Express、Diners Club、Discoverのクレジットカードに対応します。お子さま同伴も可と記載されています。ヘアケア剤のAujuaについて、今治では取り扱う店が少ないとうたっています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "子連れ可",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=9624639505900983226",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "伊予富田駅から徒歩20分",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "伊予富田駅から徒歩２０分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "イオンモール今治新都市から車で10分",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "イオンモール今治新都市から車で１０分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は8席",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "セット面8席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは1人",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "スタイリスト1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は10台",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "有り(１０台)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレジットカード各ブランドに対応",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "Visa／Mastercard／JCB／American Express／Diners Club／Discover",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Aujuaについて今治では希少な取扱店とうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "今治では希少なAujua取り扱い店",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は愛媛県今治市高市189-1",
+      "source": "https://beauty.hotpepper.jp/slnH000353253/",
+      "quote": "愛媛県今治市高市１８９－１",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店名・住所から探した店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000353253/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9624639505900983226"
+    }
+  ],
+  "notes": "(確認してほしい点)gbp に website が無いため、web 検索で店名・住所から探したホットペッパービューティーのページを使った。住所は HP「今治市高市189-1」と gbp「高市甲189-1」で番地が一致するが「甲」の有無が違う。電話番号は HP 上で非表示のため照合できていない(同一店と判断した根拠は店名・番地・業種)。営業時間・定休日は HP が「9:00-18:00・第1日曜と月曜が定休日」、Google マップが「月曜定休・他9:00-18:00」で第1日曜の扱いが違うため本文に書いていない。「大人女性を若く美しく」「ダメージ修復」・口コミは使っていない。"
+}

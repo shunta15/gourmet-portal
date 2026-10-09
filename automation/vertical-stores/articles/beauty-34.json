@@ -1,0 +1,142 @@
+{
+  "key": "beauty-34",
+  "headline": "茅ヶ崎駅南口から徒歩5分。キッズスペースのあるヘアサロン",
+  "lede": "JR茅ヶ崎駅の南口を出て雄三通りを歩いて5分ほどの場所にある、ヘアサロン「Hair lounge SEA SAW(シーソー)」です。所在は茅ヶ崎市東海岸北で、目印は3階建ての白い三角形のビルの1階です。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は4席の小さなサロンで、スタイリストは4人です。キッズスペースがあり、お子さま同伴も可と記載されています。個室ありの記載もあります。駐車場はなく、近くのコインパーキングを使う形で、料金は利用者の負担です。自転車は、ビルの階段下に停められます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "グレイカラー"
+    },
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "トリートメント"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 4
+    },
+    {
+      "tag": "個室あり",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=497847409284752927",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "茅ヶ崎駅南口から徒歩5分",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "茅ヶ崎駅南口から徒歩5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "茅ヶ崎駅南口を出て雄三通りを真っ直ぐ5分ほど",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "茅ヶ崎駅南口を出て雄三通りを真っ直ぐ5分ほど歩いていただくと",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "3階建ての白い三角形のビルの1階",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "３階建の白い三角形のビルの1Fです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズスペースあり・お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "キッズスペースあり／お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は4席・スタイリストは4人",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "席数\tセット面4席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "個室あり",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは4人",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "スタイリスト4人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はコインパーキング(利用者負担)",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "コインパーキングあり【お客様負担】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "自転車は階段下に停められる",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "自転車でお越しの際は、当ビルの階段下にお停めください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "ショートヘアのカットが得意なサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにグレイカラーがある",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "グレイカラー・白髪カバーが得意なサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "ヘッドスパが自慢のサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにトリートメントがある",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "トリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は神奈川県茅ヶ崎市東海岸北1-7-14 フィルパーク茅ヶ崎南",
+      "source": "https://beauty.hotpepper.jp/slnH000496248/",
+      "quote": "神奈川県茅ヶ崎市東海岸北１－７－１４　フィルパーク茅ヶ崎南",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000496248/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=497847409284752927"
+    }
+  ],
+  "notes": "営業時間・定休日が食い違うため本文に書いていない: HP は9:00-20:00・定休日は月曜日(祝日は営業)、Google マップは毎日9:00-20:00で定休日の表示なし。時間にもとづくタグも付けていない。HP に「お店のホームページ www.seasaw-salon.com」とあるが今回は読んでいない。「髪質改善」「美髪」「コンテスト入賞」・クーポン・口コミは使っていない。「個室あり」は HP のこだわり条件の記載。"
+}

@@ -1,0 +1,125 @@
+{
+  "key": "beauty-15",
+  "headline": "地下鉄藤崎駅から徒歩1分。セット面3席のヘアサロン",
+  "lede": "セット面3席のヘアサロン「valo Hair Design(ヴァロ)」は、福岡市早良区高取にあります。地下鉄の藤崎駅4番出入口から徒歩1分と案内され、藤崎商店街に入ってすぐの角を曲がった先です。",
+  "sections": [
+    {
+      "heading": "予約と設備",
+      "body": "完全予約制で、スタイリストは2人です。駐車場はなく、近隣にコインパーキングが5か所あります。ドリンクサービスがあります。クレジットカードは利用に金額の条件があるため、店に確かめる必要があります。ホットペッパービューティーのページは、オーナースタイリストによるマンツーマン施術をうたっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "トリートメント"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「美容院」",
+      "source": "https://maps.google.com/?cid=10371385945879713496",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "地下鉄藤崎駅4番出入口より徒歩1分",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "地下鉄藤崎駅4番出入口より徒歩1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "藤崎商店街に入ってすぐの角を曲がった先にある",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "藤崎商店街に入ってすぐ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は3席",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "セット面3席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは2人",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "スタイリスト2人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場はなく、近隣にコインパーキングが5か所",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "無し（近隣にコインパーキング5ヵ所あり）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレジットカードは合計金額に条件がある",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "※クレジットカードは合計金額",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オーナースタイリストによるマンツーマン施術をうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "オーナースタイリストによるマンツーマン施術",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットがある",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "カット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカラーがある",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "カラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにトリートメントがある",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "トリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は福岡県福岡市早良区高取2-17-8 朝日プラザ高取103号",
+      "source": "https://beauty.hotpepper.jp/slnH000358169/",
+      "quote": "福岡県福岡市早良区高取２－１７－８　朝日プラザ高取１０３号",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(Google マップに登録された店のページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000358169/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10371385945879713496"
+    }
+  ],
+  "notes": "営業時間が食い違うため本文に書いていない: HP は平日10:00-20:00・日祝10:00-19:00・不定休、Google マップは毎日10:00-19:00。そのため時間にもとづくタグ(夜遅くまで営業)も付けていない。「髪質改善」「うる艶」「人気No.1」・クーポン・料金・口コミは使っていない。カードの条件は金額なので書かず「店に確かめる」とした。"
+}

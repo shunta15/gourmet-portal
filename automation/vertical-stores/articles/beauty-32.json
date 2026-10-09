@@ -1,0 +1,125 @@
+{
+  "key": "beauty-32",
+  "headline": "高松市番町のネイルサロン。スタッフとメニューを選んで予約",
+  "lede": "Google マップでネイルサロンと表示される、高松市番町の「salon de Viel(サロン・ド・ヴィエル)」です。Google マップに載せている予約ページには、ネイルのメニュー23件とエステのメニュー2件があります。",
+  "sections": [
+    {
+      "heading": "予約ページの流れ",
+      "body": "予約は、スタッフ、付け替えオフの有無、施術のメニュー、日時の順に選んで進めます。メニューには、ジェルのハンドとフット、付け替えオフ、アイブロウのワックス脱毛があります。キャラクターアートと細かい手書きデザインは行っていないという断り書きがあります。最終受付は19時で、19時以降の予約には時間外の料金がかかると案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "【ハンド】ワンカラー",
+      "minutes": 60
+    },
+    {
+      "name": "【ハンド】グラデーション",
+      "minutes": 60
+    },
+    {
+      "name": "【ハンド】フレンチネイル",
+      "minutes": 120
+    },
+    {
+      "name": "【フット】ワンカラー",
+      "minutes": 90
+    },
+    {
+      "name": "【アイブロウ】ワックス脱毛",
+      "minutes": 45
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「ネイルサロン」",
+      "source": "https://maps.google.com/?cid=5431908884536558321",
+      "quote": "ネイルサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は香川県高松市番町1-9-2",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "香川県高松市番町1-9-2",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約ページにネイル23件・エステ2件のメニューがある",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "ネイル(23) エステ(2)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はスタッフ選択から始まる",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "①スタッフを選択",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付け替えオフからメニューを選ぶ",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "②付替えオフからメニューを選択",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キャラクターアートと細かい手書きデザインは行っていない",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "※キャラクターアートと細かい手書きデザインは行なっておりません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最終受付は19:00",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "※最終受付は19:00となります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "19:00以降の予約は時間外料金が発生",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "19:00以降のご予約の場合、時間外料金が発生致します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【ハンド】ワンカラーのメニューがある(所要60分)",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "【ハンド】ワンカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【ハンド】グラデーション(所要60分)",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "【ハンド】グラデーション",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【ハンド】フレンチネイル(所要120分)",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "【ハンド】フレンチネイル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【フット】ワンカラー(所要90分)",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "【フット】ワンカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【アイブロウ】ワックス脱毛(所要45分)",
+      "source": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+      "quote": "【アイブロウ】ワックス脱毛",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "予約ページ(Google マップに登録された店のページ)",
+      "url": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5431908884536558321"
+    }
+  ],
+  "notes": "Google マップの website は予約サイト(kanzashi)の店の予約ページ。公式サイト・SNS は確認できていない(未検索)。ページの事実だけを使い、料金・指名料・時間外料金の額は書いていない。営業時間は Google マップが毎日9:00-23:00、予約ページは最終受付19:00で、全体の営業時間は載っていないため本文に書いていない。所要時間(minutes)は予約ページの「所要時間」の表記。スタッフの名前・人数は使っていない。電話は gbp にある(080-4039-1615)が予約ページには無い。"
+}
