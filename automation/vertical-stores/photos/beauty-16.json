@@ -1,5 +1,15 @@
 {
   "key": "beauty-16",
-  "images": [],
-  "note": "公式サイトの画像はネイルの素材写真・文字入りバナー・500px未満のものだけで、店の実物の写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-16/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCEjRSW2q5a2xOuQI1PlhoCIUUT8y6cpr4ZIJk1_yV7_ilFPF-86kn5XnrVQtNzmayp5uqarvnmIRShsOD80KRgFmURIOGN24WDuMMkOC6vmNpDjyljPqvHguHaWXkqopauexcx2af_z2R=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12338316877387084538",
+      "what": "緑と茶色のネイルデザイン",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像はネイルの素材写真・文字入りバナー・500px未満のものだけで、店の実物の写真なし。Google マップの写真"
 }

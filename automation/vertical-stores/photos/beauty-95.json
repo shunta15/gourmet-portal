@@ -1,5 +1,15 @@
 {
   "key": "beauty-95",
-  "images": [],
-  "note": "公式サイト(トップ・店舗案内・ヘッドスパ)の画像は、モデル写真に文字を載せたスライド画像・バナー・素材写真(pixta/AdobeStockの素材)だけで、店の実物写真が無かったため、写真なし。"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-95/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJEE2OTya7rE_hTJuLPLonc1Q1x3uf-SVyDGPaNRaFQJAeVRqF2S81PnxODyQtPiJGK4YrTgr0lwp7BXgbcZoyijR3hmey14TrVcAnMkhIdznAMwvu7p84RmHyS9OyDm1BlKSmMA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6938207225891551241",
+      "what": "白いテーブルと椅子のあるサロン内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイト(トップ・店舗案内・ヘッドスパ)の画像は、モデル写真に文字を載せたスライド画像・バナー・素材写真(pixta/AdobeStockの素材)だけで、店の実物写真が無かったため、写真なし。。Google マップの写真"
 }

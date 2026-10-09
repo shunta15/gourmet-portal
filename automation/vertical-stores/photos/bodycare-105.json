@@ -1,5 +1,15 @@
 {
   "key": "bodycare-105",
-  "images": [],
-  "note": "公式サイトの画像は料金・文字入りの図解バナーとスクリーンショットのみ(候補8枚確認)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-105/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVn2ATWr-YCKnxiF6ypAeTJPHegw21HMR-VcKF7sbe4nf0ZILXofJ2pyrDEbHUtOUDHODaCpJttwYUGHKDQrAHlwTzFdd3gcSw77eZskrVEUIYzvzfaqiQ1j2skpqppzBZET8IxLMHLidD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14590199883791670418",
+      "what": "窓際の施術ベッドのある院内",
+      "width": 1200,
+      "height": 904,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像は料金・文字入りの図解バナーとスクリーンショットのみ(候補8枚確認)。Google マップの写真"
 }

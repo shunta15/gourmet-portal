@@ -1,5 +1,15 @@
 {
   "key": "beauty-53",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がヘアブックのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-53/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rn2EZGG67I0gNCrjfSATMdTrlTMQu1WYFWlFn8neoKfIQoMWzZuYGppDwp74qacwZ1xBYVADeKQ0R-7t4KiX85qt6-WUJbLzaxcDXNYUiQHs0HLTFZTekGPCG2ELb-jKh0XFQP=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13141544620267971099",
+      "what": "天井の高いコンクリートのサロン内",
+      "width": 1020,
+      "height": 765,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がヘアブックのみ)。Google マップの写真"
 }
