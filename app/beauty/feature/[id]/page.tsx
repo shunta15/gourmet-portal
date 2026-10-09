@@ -1,1 +1,9 @@
-export { default } from "@/components/portal/pages/stub";
+import { featurePage } from "@/components/portal/pages/feature";
+
+const page = featurePage("beauty");
+
+export const revalidate = 3600;
+export const dynamicParams = true;
+export const generateStaticParams = page.generateStaticParams;
+export const generateMetadata = page.generateMetadata;
+export default page.Page;

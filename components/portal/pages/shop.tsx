@@ -11,6 +11,7 @@
  * 紹介記事（Place.article。実在の店の記事の JSON から automation/vertical-stores/build-places.mjs が作る）がある店は、
  * 1 行の説明・導入・見出しつきの本文・メニューの表・基本情報・情報の出どころと確認日を出す。記事が無い店は基本情報だけ。
  * 記事の確認用の項目（facts・quote・notes）はデータに入れていないので、画面にも出ない。
+ * その店の特集記事（/{v}/feature/{id}。components/portal/pages/feature.tsx）があれば「特集記事を読む」で特集ページへ（特集ページからも店ページへ戻れる）。
  */
 import { liveStaticParams } from "@/lib/portal/launch";
 import type { Metadata } from "next";
@@ -22,6 +23,8 @@ import ShopLinks from "../ShopLinks";
 import ShopPhoto from "../ShopPhoto";
 import { OpenBadge, OpenScope } from "../OpenNow";
 import { getPlaces, type Place } from "@/lib/places";
+import { featurePath, findFeatureForPlace } from "@/lib/places/features";
+import type { GeneratedVertical } from "@/lib/places/newVerticals";
 import { getCategory, getVertical } from "@/lib/verticals";
 import type { Vertical } from "@/lib/verticals/types";
 import type { PlaceArticle } from "@/lib/places/types";
@@ -168,6 +171,9 @@ export function shopPage(key: PortalVertical) {
       const weeks = packWeeks([{ id: p.id, hours: p.hours, closed: p.holidays }]);
 
       const art = p.article;
+      // この店の特集記事（/{v}/feature/{id}）。あるときだけ「特集記事を読む」を出す（beauty / bodycare のみ。データは lib/places/features.ts）
+      const feature = key === "beauty" || key === "bodycare" ? await findFeatureForPlace(key as GeneratedVertical, p.id) : undefined;
+      const featureHref = feature ? encodeURI(featurePath(feature.vertical, feature.id)) : undefined;
       const facts: { dt: string; dd: string[] }[] = [];
       const add = (dt: string, dd: string | undefined) => dd && facts.push({ dt, dd: [dd] });
       add("住所", p.address);
@@ -216,6 +222,13 @@ export function shopPage(key: PortalVertical) {
                 <div className="mp-art-lede">
                   <p className="mp-art-where">{[areaText(p), cat?.name].filter(Boolean).join("　/　")}</p>
                   <p className="mp-art-lede-p">{art.lede}</p>
+                  {featureHref && (
+                    <p className="mp-art-feat">
+                      <Link href={featureHref} prefetch={false} data-cursor="READ">
+                        特集記事を読む<span aria-hidden="true"> →</span>
+                      </Link>
+                    </p>
+                  )}
                 </div>
 
                 <aside className="mp-art-aside" aria-label="基本情報">
@@ -303,6 +316,13 @@ export function shopPage(key: PortalVertical) {
                     </p>
                   </OpenScope>
                   {p.intro && <p className="mp-note-p">{p.intro}</p>}
+                  {featureHref && (
+                    <p className="mp-art-feat">
+                      <Link href={featureHref} prefetch={false} data-cursor="READ">
+                        特集記事を読む<span aria-hidden="true"> →</span>
+                      </Link>
+                    </p>
+                  )}
                   <dl className="mp-shop-facts">
                     {facts.map((f) => (
                       <div key={f.dt}>

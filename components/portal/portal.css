@@ -827,3 +827,7 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 
 /* ジャンル × 駅（/station/{pref}/{駅名}/{ジャンル}）。チップのタップ領域を 48px 以上にする */
 .mp-gn .mp-pref{min-height:48px; align-items:center; padding-block:0}
+/* 店ページ → その店の特集記事へのリンク（特集があるときだけ） */
+.mp-art-feat{margin-top:18px}
+.mp-art-feat a{display:inline-flex; align-items:center; min-height:44px; padding:0 22px; border:1px solid var(--ink); font:500 15px/1.4 var(--sans); letter-spacing:.06em; transition:background .3s, color .3s}
+.mp-art-feat a:hover{background:var(--ink); color:var(--ivory)}

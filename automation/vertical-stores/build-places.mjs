@@ -8,10 +8,14 @@
  *
  * 既定: pilot.json にあるキーの店で、記事（articles/<キー>.json）がある店だけを出す。
  * --all : 「一致」の全店を出す（記事が無い店は基本情報だけのページになる）。
+ * --rows : 対象の行の範囲を絞る（例: --rows beauty:2-129,bodycare:2-133。オーナーが指定した範囲）。
+ *          書き方は <beauty|bodycare>:<開始行>-<終了行>（1 行だけなら <業種>:<行>）。範囲の外の店は、出さない・ID も払い出さない・
+ *          unmapped.json にも入れない。--rows に書いていない業種は絞らない。指定しなければ今までと同じ（全行が対象）。
  *
  * 使い方:
  *   node automation/vertical-stores/build-places.mjs            # 試作の店だけ
  *   node automation/vertical-stores/build-places.mjs --all      # 全店
+ *   node automation/vertical-stores/build-places.mjs --all --rows beauty:2-129,bodycare:2-133   # 指定の行の範囲の全店
  *   node automation/vertical-stores/build-places.mjs --dry      # 書き込まず、結果の要約だけ
  *   --pilot <file> --articles <dir> --ids <file> --out <dir> --unmapped <file>  # 場所の差し替え（試験用）
  *
@@ -37,6 +41,10 @@ const opt = (n, d) => {
   return i >= 0 && argv[i + 1] ? path.resolve(argv[i + 1]) : d;
 };
 const ALL = flag("all");
+const rawOpt = (n) => {
+  const i = argv.indexOf(`--${n}`);
+  return i >= 0 ? argv[i + 1] : undefined;
+};
 const DRY = flag("dry");
 const GBP_DIR = path.join(HERE, "gbp");
 const PILOT_FILE = opt("pilot", path.join(HERE, "pilot.json"));
@@ -52,6 +60,30 @@ const VERTICALS = {
 
 const warnings = [];
 const warn = (key, msg) => warnings.push(`${key}: ${msg}`);
+
+/** --rows beauty:2-129,bodycare:2-133 → { beauty: [[2,129]], bodycare: [[2,133]] }。無指定は null（絞らない）。書き方が違えば終了 */
+export function parseRows(spec) {
+  if (spec === undefined) return null;
+  const ranges = {};
+  for (const part of String(spec).split(",").map((x) => x.trim()).filter(Boolean)) {
+    const m = /^(beauty|bodycare):(\d+)(?:-(\d+))?$/.exec(part);
+    const from = m ? Number(m[2]) : NaN;
+    const to = m ? Number(m[3] ?? m[2]) : NaN;
+    if (!m || from < 1 || to < from) {
+      console.error(`--rows の書き方が違います: 「${part}」（例: --rows beauty:2-129,bodycare:2-133）`);
+      process.exit(1);
+    }
+    (ranges[m[1]] ??= []).push([from, to]);
+  }
+  if (Object.keys(ranges).length === 0) {
+    console.error("--rows に範囲がありません（例: --rows beauty:2-129,bodycare:2-133）");
+    process.exit(1);
+  }
+  return ranges;
+}
+const ROWS = parseRows(rawOpt("rows"));
+/** 行の範囲に入っているか。--rows に書いていない業種は常に true */
+const inRows = (vertical, row) => !ROWS || !ROWS[vertical] || ROWS[vertical].some(([a, b]) => row >= a && row <= b);
 
 // ------------------------------------------------------------------ 都道府県（lib/areas/prefectures.ts を読んで使う）
 function loadPrefectures() {
@@ -344,9 +376,14 @@ const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
 const gbp = new Map();
+const outOfRows = new Set(); // 「一致」だが --rows の範囲の外の店
 for (const f of readdirSync(GBP_DIR).filter((x) => x.endsWith(".json")).sort(natural)) {
   const d = readJson(path.join(GBP_DIR, f));
   if (!VERTICALS[d.tabEn] || d.verdict !== "一致" || !d.place) continue;
+  if (!inRows(d.tabEn, Number(d.row))) {
+    outOfRows.add(`${d.tabEn}-${d.row}`);
+    continue;
+  }
   gbp.set(`${d.tabEn}-${d.row}`, d);
 }
 
@@ -398,7 +435,7 @@ if (ALL) {
   }
   wanted = readJson(PILOT_FILE).filter((k) => {
     if (!gbp.has(k)) {
-      warn(k, "pilot.json にあるが、gbp に「一致」の店として無い");
+      warn(k, outOfRows.has(k) ? "pilot.json にあるが、--rows の範囲の外なので出さない" : "pilot.json にあるが、gbp に「一致」の店として無い");
       return false;
     }
     if (!resolved.has(k)) {
@@ -473,7 +510,7 @@ if (!DRY) {
   writeFileSync(UNMAPPED_FILE, JSON.stringify({ _note: "種類・都道府県・cid を決められず除外した店（gbp の「一致」の全店を点検した結果）。推測で振り分けない。build-places.mjs が毎回作り直す。", items: unmapped }, null, 2) + "\n");
 }
 
-console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : "pilot"}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
+console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : "pilot"}${ROWS ? `  rows=${rawOpt("rows")}（範囲の外の「一致」の店=${outOfRows.size}）` : ""}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
 for (const i of issued) console.log(`  ID 払い出し: ${i}`);
 for (const u of unmapped) console.log(`  除外: ${u.key} 「${u.name}」 — ${u.reason}`);
 for (const w of warnings) console.log(`  注意: ${w}`);
