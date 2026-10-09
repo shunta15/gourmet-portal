@@ -1,0 +1,270 @@
+{
+  "key": "beauty-46",
+  "headline": "帯広市のアパートの一室で営む、脱毛と光フェイシャルのサロン",
+  "lede": "帯広市西9条南にある、脱毛と光フェイシャルのサロンです。公式サイトは完全予約・完全個室と案内し、メニューをメンズ、レディース、学生、小学生などに分けています。営業は夜9時までです。",
+  "sections": [
+    {
+      "heading": "メニューの分け方",
+      "body": "メニュー表は、メンズ脱毛、レディース脱毛、学生、女子学生、小学生、光フェイシャルに分かれています。メンズの部位別はAからEとVIOの区分で、たとえばAメニューは鼻下、おでこ、両もみあげなどから選ぶ形です。セットは全顔、首から下の全身、顔から下の全身などです。光フェイシャルには1回と2回のコースがあります。剃毛は追加料金で承り、VIOは込みです。"
+    },
+    {
+      "heading": "予約と問い合わせ",
+      "body": "当日の予約は電話で受け付けています。施術中は電話に出られないことがあり、その場合は折り返す案内です。LINEのIDはfamiliar_obihiroです。無料カウンセリングの案内があり、初めての男性向けには、ヒゲ全体の脱毛とカウンセリングを組み合わせたメニューが載っています。施術箇所の追加は、来店時に伝えます。"
+    },
+    {
+      "heading": "場所と営業時間",
+      "body": "住所は帯広市西9条南15丁目2、SmartⅡの103号室です。アパートの一室を使い、完全予約・完全個室だと公式サイトは案内しています。営業は10時から21時で、不定休です。男性でも来やすい空間をコンセプトに、男女どちらも利用でき、友人や家族と一緒の来店も歓迎するとしています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "無料カウンセリング＆ヒゲ全体脱毛",
+      "price": "¥11,000→¥5,500(初めてご利用の男性の方のメニュー)"
+    },
+    {
+      "name": "メンズ脱毛 全顔（おでこ・喉周り有）",
+      "price": "¥10,000 (11,000)"
+    },
+    {
+      "name": "メンズ脱毛 首から下の全身（VIO無）",
+      "price": "¥25,000 (27,500)"
+    },
+    {
+      "name": "レディース脱毛 全顔",
+      "price": "¥5,000 (5,500)"
+    },
+    {
+      "name": "レディース脱毛 顔から下の全身（VIO有）",
+      "price": "¥15,000 (16,500)"
+    },
+    {
+      "name": "小学生メニュー 全身（ＶＩＯ無）",
+      "price": "¥9,000 (9,900)"
+    },
+    {
+      "name": "光フェイシャルケア １回コース",
+      "price": "¥5,000 (5,500)"
+    },
+    {
+      "name": "光フェイシャルケア ２回コース",
+      "price": "¥8,000 (8,800)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 1
+    },
+    {
+      "tag": "個室あり",
+      "factIndex": 6
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 7
+    },
+    {
+      "tag": "当日予約可",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "北海道帯広市西9条南15丁目2 SmartⅡ 103号室にある",
+      "source": "https://www.familiar-obihiro.com/locations",
+      "quote": "帯広市西9条南15丁目2 SmartⅡ 103号室",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜21:00、不定休",
+      "source": "https://www.familiar-obihiro.com/locations",
+      "quote": "営業時間 10：00 ～ 21：00 不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日予約は電話で受け付ける",
+      "source": "https://www.familiar-obihiro.com/locations",
+      "quote": "当日予約はお電話にてよろしくお願いします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術中は電話に対応できないことがあり、折り返す",
+      "source": "https://www.familiar-obihiro.com/locations",
+      "quote": "施術中の場合対応出来ないことがあります。 その時は折り返しさせていただきます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE IDはfamiliar_obihiro",
+      "source": "https://www.familiar-obihiro.com/locations",
+      "quote": "LINE ID/ familiar_obihiro",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アパートの一室を使って営業している",
+      "source": "https://www.familiar-obihiro.com/home-1",
+      "quote": "当店はアパートの一室を使用し、営業しています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約・完全個室と案内している",
+      "source": "https://www.familiar-obihiro.com/home-1",
+      "quote": "その為、完全予約・完全個室。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "コンセプトは「男性でも気軽に来やすい空間」のフェイシャルケア＆脱毛の店",
+      "source": "https://www.familiar-obihiro.com/home-1",
+      "quote": "男性でも気軽に来やすい空間",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "男女問わず利用を受け付けている",
+      "source": "https://www.familiar-obihiro.com/home-1",
+      "quote": "男女問わずまずご連絡ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "一人はもちろん、友人・カップル・夫婦・家族でも来店を歓迎",
+      "source": "https://www.familiar-obihiro.com/home-1",
+      "quote": "おひとりはもちろん、ご友人やカップル、ご夫婦・ご家族の方とでも足を運んで頂ければ嬉しいです。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "無料カウンセリングの案内(NPL脱毛と光フェイシャル)がある",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "無料カウンセリング☆【最新ＮＰＬ脱毛】【最新光フェイシャル】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "剃毛は+¥500で承り、VIOは込",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "+¥500で剃毛も承ります（VIOは込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術箇所の追加は来店時に伝える",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "施術箇所の追加は来店時にお伝えください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニュー表はメンズ・レディース・学生・女子学生・小学生・光フェイシャルに分かれる",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "学生脱毛★部位別メニュー 学生脱毛★セットメニュー 女子学生☆部位別メニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "小学生メニューがある",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "☆小学生メニュー☆",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズ部位別のAメニューは鼻下・おでこ・両もみあげ・うなじ・手指と甲・足指と甲から選び¥2,000 (2,200)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "鼻下・おでこ・両もみあげ・うなじ・手指と甲・足指と甲からお選びください。 ¥2,000 (2,200)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズ部位別のCメニューは両わき・両ひじ上・両ひじ下・両肩から選ぶ",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "両わき・両ひじ上・両ひじ下・両肩からお選びください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズ部位別のEメニューは背中・太もも・ひざ下(ひざ有)から選び¥6,000 (6,600)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "背中・太もも・ひざ下(ひざ有)からお選びください。 ¥6,000 (6,600)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのセットメニューに全顔(おでこ・喉周り有)¥10,000 (11,000)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "全顔（おでこ・喉周り有） ¥10,000 (11,000)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのセットメニューに首から下の全身(VIO無)¥25,000 (27,500)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "首から下の全身（VIO無） ¥25,000 (27,500)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのセットメニューに顔から下の全身(VIO無)¥30,000 (33,000)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "顔から下の全身（VIO無） ¥30,000 (33,000)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディース部位別にわき¥2,000 (2,200)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "わき ¥2,000 (2,200)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースのセットメニューに全顔¥5,000 (5,500)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "全顔 ¥5,000 (5,500)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースのセットメニューに顔から下の全身(VIO有)¥15,000 (16,500)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "顔から下の全身（VIO有） ¥15,000 (16,500)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "学生脱毛の部位別Aメニューは¥1,400 (1,540)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "鼻下・おでこ・両もみあげ・うなじ・手指と甲・足指と甲 ¥1,400 (1,540)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "小学生メニューに全身(VIO無)¥9,000 (9,900)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "全身（ＶＩＯ無） ¥9,000 (9,900)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルケアの1回コースは¥5,000 (5,500)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "光フェイシャルケア １回コース ¥5,000 (5,500)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルケアの2回コースは¥8,000 (8,800)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "光フェイシャルケア ２回コース お得な２回コース ¥8,000 (8,800)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性限定の光セット(光フェイシャルと脱毛1ヶ所)¥8,000 (8,800)",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "女性限定 光セット 光フェイシャルと脱毛１ヶ所のお得なセット ¥8,000 (8,800)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初めてご利用の男性向けに無料カウンセリング＆ヒゲ全体脱毛¥11,000→¥5,500がある",
+      "source": "https://www.familiar-obihiro.com/book-online",
+      "quote": "無料カウンセリング＆ヒゲ全体脱毛 ¥11,000→¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日10:00–21:00",
+      "source": "https://maps.google.com/?cid=16884419282055583185",
+      "quote": "月 10:00–21:00 火 10:00–21:00",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.familiar-obihiro.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16884419282055583185"
+    }
+  ],
+  "notes": "営業時間は公式サイト(10:00〜21:00・不定休)と Google マップ(毎日10:00–21:00)で一致。『夜遅くまで営業』は21時閉店で付けた。『個室あり』は店が自分でうたう『完全予約・完全個室(アパートの一室)』のため、本文は『公式サイトは〜と案内』の形。『当日予約可』は『当日予約はお電話にて』の記載による(電話に出られない場合は折り返す旨も本文に添えた)。メニューの料金は予約ページのメニュータブ(JavaScriptの予約ウィジェット)を開いて読んだもので、表記は『¥2,000 (2,200)』の形。括弧内が税込と思われるが、ページに税の注記が無いため意味を書かずサイトの表記のままにした。『¥11,000→¥5,500』は定価から値下げ価格への表記で、初めてご利用の男性の方のタブに載っている。取得は、トップ・お店紹介(home-1)・住所(locations)・メニュー＆ご予約(book-online。13個のタブをクリックして閲覧)。保存したページ文字からゼロ幅スペース(U+200B)を除いている。書かなかったこと: 店主の体験談・肌や毛に関する悩みの記述、「最新NPL脱毛」「最新光フェイシャル」の宣伝文、レディース・学生・女子学生の各部位の料金(代表のみ menus に)、メンズ部位別B・D・VIOの料金、担当者紹介・施術風景・光フェイシャルのページ(4ページ上限のため未取得)、店主名。ホットペッパー等の予約サイトは確認していない。"
+}

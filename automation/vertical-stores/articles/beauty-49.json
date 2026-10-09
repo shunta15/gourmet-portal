@@ -1,0 +1,245 @@
+{
+  "key": "beauty-49",
+  "headline": "金沢市畝田東の、完全予約制の個室をうたうメンズ脱毛サロン",
+  "lede": "石川県金沢市畝田東にある、メンズ脱毛と眉毛のサロンです。公式サイトは完全予約制の個室サロンで、施術士は男性と案内しています。定休日は水曜日です。眉毛のメニューも扱っています。",
+  "sections": [
+    {
+      "heading": "脱毛と眉のメニュー",
+      "body": "脱毛は、ヒゲ全体(鼻下・口下・ほほ・あご・首周り)や鼻下などの部位別と、上半身・下半身のセット、全身のメニューに分かれています。多くのメニューに初回価格があり、2回目以降の料金は別に示されています。施術時間も、ヒゲ全体が約25分、全身(ヒゲ、VIOなし)が約60分などと書かれています。眉毛は、似合わせ眉パーマと似合わせスタイリングWaxが用意されています。"
+    },
+    {
+      "heading": "カウンセリングと支払い",
+      "body": "無料のカウンセリングがあり、時間は約20分です。勧誘は一切ないと案内しています。料金は都度払いで、通うタイミングを選べるとしています。メニューの料金はいずれも税込で表示され、初回価格のものにはヒゲ全体や、ヒゲ・わき・肘から下・膝から下を組み合わせたLeadセットなどがあります。予約は予約フォームか電話で受け付けています。"
+    },
+    {
+      "heading": "場所と営業日",
+      "body": "住所は金沢市畝田東3-50、D-BOX畝田東B棟の105号です。道路側の建物のいちばん端の部屋で、駐車場は道路側から2番目の15番と案内されています。定休日は水曜日です。予約は予約フォームのほか、電話(080-6386-0084)でも受け付けています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "無料カウンセリング",
+      "price": "0円(税込)",
+      "minutes": 20
+    },
+    {
+      "name": "ヒゲ全体",
+      "price": "初回価格 3,500円(税込)",
+      "minutes": 25
+    },
+    {
+      "name": "鼻下",
+      "price": "初回価格 1,100円(税込)"
+    },
+    {
+      "name": "上半身脱毛セット",
+      "price": "初回価格 9,000円(税込)"
+    },
+    {
+      "name": "下半身脱毛セット",
+      "price": "初回価格 9,000円(税込)"
+    },
+    {
+      "name": "全身脱毛(ヒゲ、VIOなし)",
+      "price": "初回価格 12,000円(税込)",
+      "minutes": 60
+    },
+    {
+      "name": "似合わせ眉パーマ（新HBL）",
+      "price": "初回価格 4,000円(税込)"
+    },
+    {
+      "name": "似合わせスタイリングWax",
+      "price": "3,500円(税込)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 24
+    },
+    {
+      "tag": "個室あり",
+      "factIndex": 2
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 26
+    }
+  ],
+  "facts": [
+    {
+      "claim": "石川県金沢市畝田東3-50 D-BOX畝田東B棟105にある",
+      "source": "https://leadmensbeauty.com/access/",
+      "quote": "石川県金沢市畝田東3-50 D-BOX畝田東B棟105",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は水曜日",
+      "source": "https://leadmensbeauty.com/",
+      "quote": "【営業時間】10:00～22:00【定休日】水曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制の個室サロンと案内している",
+      "source": "https://leadmensbeauty.com/",
+      "quote": "完全予約制の個室サロン。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術士は男性と案内している",
+      "source": "https://leadmensbeauty.com/",
+      "quote": "当店は施術士は男性なので、気軽に施術を受けて頂けます！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "料金は都度払いと案内している",
+      "source": "https://leadmensbeauty.com/",
+      "quote": "料金は『都度払い』なのでお好きなタイミングで通えます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "無料カウンセリングがあり、時間は約20分",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "※カウンセリング時間は約20分です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "勧誘などは一切ないと案内している",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "勧誘などは一切ございません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "建物の道路側の1番端の部屋",
+      "source": "https://leadmensbeauty.com/access/",
+      "quote": "道路側の建物の1番端のお部屋になります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は道路側から2番目の15番",
+      "source": "https://leadmensbeauty.com/access/",
+      "quote": "駐車場は道路側から2番目の15番です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約フォームと電話の案内がある",
+      "source": "https://leadmensbeauty.com/access/",
+      "quote": "予約フォーム TEL. 080-6386-0084",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヒゲ全体の脱毛は初回価格3,500円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "ヒゲ全体 初回価格 3,500円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヒゲ全体は鼻下・口下・ほほ・あご・首周りで、施術時間は約25分",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "鼻下・口下・ほほ・あご・首周りのヒゲ全体のメニューになります。施術時間は約25分です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "鼻下の脱毛は初回価格1,100円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "鼻下 初回価格 1,100円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "上半身脱毛セットは初回価格9,000円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "上半身脱毛セット 初回価格 9,000円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "上半身脱毛セットは胸・脇・腕全体・お腹・乳輪・背中全体",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "胸・脇・腕全体・お腹・乳輪・背中全体の脱毛セットメニューになります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "下半身脱毛セットは初回価格9,000円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "下半身脱毛セット 初回価格 9,000円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "下半身脱毛セットはVIO全体・足全体・お尻",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "VIO全体・足全体・お尻の脱毛セットメニューになります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛(ヒゲ、VIOなし)は初回価格12,000円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "全身脱毛(ヒゲ、VIOなし) 初回価格 12,000円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛(ヒゲ、VIOなし)の施術時間は約60分",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "全身の脱毛になります。施術時間は約60分です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "似合わせ眉パーマ(新HBL)は初回価格4,000円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "似合わせ眉パーマ（新HBL） 初回価格 4,000円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "似合わせスタイリングWaxは3,500円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "似合わせスタイリングWax 3,500円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2回目以降の料金が別に示されたメニューが多い(ヒゲ全体は2回目以降通常価格7,000円)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "2回目以降は通常価格7,000円になります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛(ヒゲ、VIOなし)の2回目以降は20,000円",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "2回目以降から20,000円となります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Leadセットはヒゲ＋わき＋肘から下＋膝から下で初回価格7,000円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "Leadセット 初回価格 7,000円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は水曜定休で、他の曜日は10:00–21:00。公式サイトは10:00～22:00",
+      "source": "https://maps.google.com/?cid=16447023868722772826",
+      "quote": "月 10:00–21:00 火 10:00–21:00 水 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "無料カウンセリングは0円(税込)",
+      "source": "https://leadmensbeauty.com/service/",
+      "quote": "無料カウンセリング 0円（税込）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズ脱毛専門サロンとしている",
+      "source": "https://leadmensbeauty.com/",
+      "quote": "金沢市のメンズ脱毛専門サロン。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://leadmensbeauty.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16447023868722772826"
+    }
+  ],
+  "notes": "営業時間が食い違う: 公式サイトは10:00～22:00・水曜定休、Google マップは水曜定休で他は10:00–21:00。閉店時刻が食い違う(公式22時・Google 21時)ため、本文には時刻を書かず定休日(水曜、両者一致)だけ書いた。「夜遅くまで営業」タグは、どちらの時刻でも21時以降のため付けた(factsに両方の出どころを入れた)。「個室あり」は店が自分でうたう『完全予約制の個室サロン』のため、headline・導入・本文とも『公式サイトは〜と案内』の形。料金の『2回目以降』は、トップのキャンペーン欄(ヒゲ全体の通常価格6,600円)とメニュー(7,000円)で食い違うので、本文にもmenusにも2回目以降の金額は書かず、初回価格だけを載せた。書かなかったこと: 眉毛タトゥー(Beautetatoo)・モニター価格、各部位の細かいメニュー、わき・陰茎・睾丸などの項目、求人、メディア掲載のお知らせ、スタッフ名。眉パーマの宣伝文(眉癖を改善…コンプレックス解消)は載せていない。メニュー名の『似合わせ眉パーマ（新HBL）』は公式表記のまま。店の名前は gbp が『メンズサロンLead』、公式は『眉毛＆メンズ脱毛サロン Lead 金沢店』。"
+}
