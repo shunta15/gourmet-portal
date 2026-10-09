@@ -759,9 +759,56 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-shop-open{margin-bottom:18px}
 .mp-shop-facts{margin-top:clamp(20px,2.4vw,32px); border-top:1px solid var(--ink)}
 .mp-shop-facts > div{display:grid; grid-template-columns:8em minmax(0,1fr); gap:16px; padding:14px 0; border-bottom:1px solid var(--rule)}
-.mp-shop-facts dt{font:500 11px/1.8 var(--mono); letter-spacing:.18em; color:var(--ink-3)}
+.mp-shop-facts dt{font:500 12px/1.8 var(--mono); letter-spacing:.14em; color:var(--ink-3)}
 .mp-shop-facts dd{font:500 14px/1.8 var(--sans); overflow-wrap:anywhere}
 .mp-shop-facts dd li + li{margin-top:4px}
+.mp-shop-grid.mp-shop-solo{grid-template-columns:minmax(0,40em)}
+.mp-shop-page .mp-kicker, .mp-shop-page .mp-state{font-size:12px}
+.mp-shop-page .mp-ob b{font-size:12px}
+.mp-shop-page .mp-ob small{font-size:12px}
+
+/* 紹介記事のある店ページ（読みやすさ優先。業種のデザインが決まったら合わせる） */
+.mp-art{padding-block:clamp(8px,2vw,24px) clamp(24px,3vw,48px)}
+.mp-art-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,400px); grid-template-areas:"lede aside" "body aside"; column-gap:clamp(32px,5vw,88px); align-items:start}
+.mp-art-lede{grid-area:lede; max-width:40em}
+.mp-art-aside{grid-area:aside; position:sticky; top:88px; padding:clamp(18px,2vw,28px); background:var(--paper); border:1px solid var(--rule); border-top:2px solid var(--ac,var(--ink))}
+.mp-art-body{grid-area:body; max-width:40em}
+.mp-art-where{font:500 13px/1.7 var(--sans); letter-spacing:.06em; color:var(--ink-3)}
+.mp-art-lede-p{margin-top:14px; font:500 clamp(17px,1.5vw,19px)/2 var(--serif); text-wrap:pretty; overflow-wrap:anywhere}
+.mp-art-sec{margin-top:clamp(28px,3.4vw,48px)}
+.mp-art-h2{padding-left:14px; border-left:3px solid var(--ac,var(--ink)); font:500 clamp(19px,1.9vw,23px)/1.5 var(--serif); letter-spacing:.02em}
+.mp-art-sec > p{margin-top:14px; font:400 16px/2 var(--sans); color:var(--ink); text-wrap:pretty; overflow-wrap:anywhere}
+.mp-art-h3{margin-top:22px; font:500 13px/1.6 var(--sans); letter-spacing:.14em; color:var(--ink-3)}
+.mp-art-aside .mp-shop-open{margin-bottom:14px}
+.mp-art-aside .mp-sl{margin-top:0}
+.mp-art-aside .mp-shop-facts{margin-top:8px}
+.mp-art-aside .mp-shop-facts > div{grid-template-columns:5.5em minmax(0,1fr); gap:12px; padding:12px 0}
+.mp-art-aside .mp-shop-photo{margin-bottom:16px}
+.mp-art-note{margin-top:16px; font:400 13px/1.8 var(--sans); color:var(--ink-2); text-wrap:pretty}
+.mp-art-menus{width:100%; margin-top:14px; border-collapse:collapse; border-top:1px solid var(--ink); font:400 15px/1.7 var(--sans)}
+.mp-art-menus th, .mp-art-menus td{padding:13px 12px 13px 0; border-bottom:1px solid var(--rule); text-align:left; vertical-align:top; font-weight:400; overflow-wrap:anywhere}
+.mp-art-menus thead th{font:500 12px/1.6 var(--sans); letter-spacing:.1em; color:var(--ink-3); padding-block:9px}
+.mp-art-menus tbody th{font-weight:500}
+.mp-art-menus td{white-space:nowrap}
+.mp-art-src ul{margin-top:10px}
+.mp-art-src li a{display:inline-flex; align-items:center; min-height:44px; border-bottom:1px solid currentColor; font:500 15px/1.6 var(--sans); letter-spacing:.04em}
+.mp-art-src li a::after{content:"\2197"; margin-left:6px; font-size:13px}
+.mp-art-checked{margin-top:12px; font:400 14px/1.8 var(--sans); color:var(--ink-2)}
+@media (max-width: 900px){
+  .mp-art-grid{grid-template-columns:minmax(0,1fr); grid-template-areas:"lede" "aside" "body"; row-gap:clamp(20px,5vw,32px)}
+  .mp-art-aside{position:static}
+  .mp-art-sec:first-child{margin-top:0}
+}
+@media (max-width: 560px){
+  .mp-art-menus thead{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); clip-path:inset(50%)}
+  .mp-art-menus, .mp-art-menus tbody{display:block}
+  .mp-art-menus tr{display:grid; grid-template-columns:1fr 1fr; gap:2px 12px; padding:13px 0; border-bottom:1px solid var(--rule)}
+  .mp-art-menus th, .mp-art-menus td{padding:0; border:0}
+  .mp-art-menus tbody th{grid-column:1 / -1}
+  .mp-art-menus td{white-space:normal; color:var(--ink-2); font-size:14px}
+  .mp-art-menus td::before{content:attr(data-label) "　"; color:var(--ink-3); font-size:12px}
+  .mp-art-menus td:empty{display:none}
+}
 
 @media (max-width: 1000px){
   .mp-hd-search{position:static}
