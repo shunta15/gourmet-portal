@@ -1,5 +1,15 @@
 {
   "key": "bodycare-39",
-  "images": [],
-  "note": "公式サイトの写真は、素材写真・イラスト・バナーのみ。院内の写真は他社ブランド名が大きく入った酸素カプセル機器のみで、他社製品が主役のため不採用。"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-39/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMjnytJQNGIHllxJjlQSiRkQsYfjN3LiLpD0KdMI1CdsiqR6eq2Q0FjLSmQLN8uYqiuGEFA5bH2HJTTQrurpLyXX2gVsUFl_Ux5WMzjv-EjTvKIBVjOI6n1XNzlA2I8yx0jvOK=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15942289320636206587",
+      "what": "受付カウンターと院内",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの写真は、素材写真・イラスト・バナーのみ。院内の写真は他社ブランド名が大きく入った酸素カプセル機器のみで、他社製品が主役のため不採用。。Google マップの写真"
 }

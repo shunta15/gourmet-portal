@@ -1,5 +1,15 @@
 {
   "key": "beauty-40",
-  "images": [],
-  "note": "Googleマップにサイト記載なし。記事の出典もホットペッパーのみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-40/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-UEoOqGsGLnbwMTvPJJ2MJATtVZYzZBiMqHAiDgbB_4AVtjE0nUT1Qyu1-_J6IK7zR8q1bPeBE1LFm6opNsKYXaJonJuO9byg6Di_pDIrG2NhUEkOBGeY4QGO_J87kzHNST6B5A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10032450106485374768",
+      "what": "植木が並ぶ店の入り口",
+      "width": 522,
+      "height": 349,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップにサイト記載なし。記事の出典もホットペッパーのみで、自前の公式サイトが無い。Google マップの写真"
 }

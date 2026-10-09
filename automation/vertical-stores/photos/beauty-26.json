@@ -1,5 +1,15 @@
 {
   "key": "beauty-26",
-  "images": [],
-  "note": "公式サイトの写真は、モデルの素材風写真と、低解像度の機材・商品棚のアップのみで、店の実物の写真として使えるものが無かった。"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-26/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBXXD_oOxiN4nQksJJcp81p-JzrED9FserJayUpD0LXTj4THF-gih2h1sM5SmOvoeYrlJBQW8UgMZEdtbXMD5mFIE_mOBsNTWngYuMTniwmhA0zsGyeLTx1008cKMga2XUfDb5Y2g_iw9G=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5495645255163276973",
+      "what": "青緑の外壁のサロンの入口",
+      "width": 650,
+      "height": 867,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの写真は、モデルの素材風写真と、低解像度の機材・商品棚のアップのみで、店の実物の写真として使えるものが無かった。。Google マップの写真"
 }

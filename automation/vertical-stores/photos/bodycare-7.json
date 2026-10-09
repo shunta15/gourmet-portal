@@ -1,5 +1,15 @@
 {
   "key": "bodycare-7",
-  "images": [],
-  "note": "公式サイトのトップで確認した画像12枚は、文字入りバナー・動画サムネイル・素材のイラスト写真・お客さん(赤ちゃん連れ)の報告写真・姿勢チェックの縦長のモデル写真で、店の外観・店内の写真が無かったため、写真なし(候補の上限に達したので、当院案内・アクセスのページは未確認)。"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-7/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8Yb_Wzoa-GaQguCFJJFC6pm6_M6so4Dxgabnci6JjfsFN2k9q-asDsyfW0b4Z65nm7j35ImHhQCiRYdDftffYOa6SrvDGmtfAfkOGvldpAfmch-W27wxUrvVOrC1-yOvuYhFG=s1200",
+      "pageUrl": "https://maps.google.com/?cid=18417635335450926890",
+      "what": "ノートパソコンの前のスタッフ",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトのトップで確認した画像12枚は、文字入りバナー・動画サムネイル・素材のイラスト写真・お客さん(赤ちゃん連れ)の報告写真・姿勢チェックの縦長のモデル写真で、店の外観・店内の写真が無かったため、写真なし(候補の上限に達したので、当院案内・アクセスのページは未確認)。。Google マップの写真"
 }

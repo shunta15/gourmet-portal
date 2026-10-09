@@ -1,5 +1,15 @@
 {
   "key": "beauty-88",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-88/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_vwHmS61vBosqasTCHORsKEji-jz3Hh7mFEkBbKkxp57DXipJyLZCUwSMUknbkdLjqVQexQop43Iwrx1ea4wKXLdEUCXLWsqniISeLkk5wTZ4c-aCCA_52FTx_Z-saJDrqYhGhKzJ23mi=w240-h100-k-no",
+      "pageUrl": "https://maps.google.com/?cid=9733114385265538432",
+      "what": "スタッフがフェイスマスクを施術中",
+      "width": 1200,
+      "height": 500,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

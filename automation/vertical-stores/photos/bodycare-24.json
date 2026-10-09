@@ -1,5 +1,15 @@
 {
   "key": "bodycare-24",
-  "images": [],
-  "note": "Googleマップのサイトは地域ポータル「はい!よろこんで」の掲載ページのみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-24/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sm36IGiOsP0honrm0Q11R2xT2VzeweyGolZGKOlf41JyUYC73k6fpKajjo1zEZKGdzI_t1RA6qEGP_OPSx4-NTH5HvMVM9WQVEyA-ARAMk-QbX1tK4SntQznKuND7xpiSWpXj4WA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3987178130500640625",
+      "what": "市松模様の床のカーテン付き院内",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトは地域ポータル「はい!よろこんで」の掲載ページのみで自前の公式サイトなし / Google マップの写真"
 }

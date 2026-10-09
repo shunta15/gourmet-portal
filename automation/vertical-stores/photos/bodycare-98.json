@@ -1,5 +1,15 @@
 {
   "key": "bodycare-98",
-  "images": [],
-  "note": "公式サイトの画像は文字入りバナー・ビフォーアフター・口コミ画像のみ(候補8枚確認)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-98/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5Bzz3UDmCOUNnp3wlsp_7D7v1DMUh1XTIg05S2JYztx9veUAxaMENot4nTnvB_OAXIwYbhU4DM4ybMyVETKJp2RdOIGDz9ST16U-fLx89Bem9bUleY2MsZmGI1tq5bTU1j71ity_KgoQs=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6035313380809639188",
+      "what": "施術を行う先生と患者",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像は文字入りバナー・ビフォーアフター・口コミ画像のみ(候補8枚確認)。Google マップの写真"
 }

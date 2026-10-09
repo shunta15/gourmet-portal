@@ -1,5 +1,15 @@
 {
   "key": "beauty-54",
-  "images": [],
-  "note": "公式サイトのトップと案内ページに、店内・外観の写真が無い(広告バナー・機器メーカーの画像・文字入りの画像・店と関係の薄い手芸の写真だけ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-54/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgFCH06vLnyINbypJ-jPA67Atjl44qWdqvhUJA9Ar0lSGfWhUvWenE_9ViS5e4HGCHy4C9x2sHnIs5QbKj8csOMFR821f5OOV5s-bdlrPPt-yJ6XQDjJDXhsZFtD8erb0AZfKv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12667341518936132185",
+      "what": "ガラス張りの店の入り口",
+      "width": 1000,
+      "height": 667,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトのトップと案内ページに、店内・外観の写真が無い(広告バナー・機器メーカーの画像・文字入りの画像・店と関係の薄い手芸の写真だけ)。Google マップの写真"
 }

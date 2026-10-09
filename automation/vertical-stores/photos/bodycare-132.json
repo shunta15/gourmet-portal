@@ -1,5 +1,15 @@
 {
   "key": "bodycare-132",
-  "images": [],
-  "note": "公式サイト(トップ・施術のご案内・アクセス・院長紹介)の画像は、文字入りの丸型メニュー画像・イラスト・背景模様・空の素材写真だけで、実物写真が無かったため、写真なし。"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-132/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2QXhg8RD0VqKwbhmhMb3ArSRPgTCoIUJWoQRr8JyR0XfYBkLrWE3RwkWDC-4bLvYOj7V0keTeVCOLI1KhViKWNRdCDnloaEiLu2s00HRBnrD38wCqqLoYj-NplOgMOGSe6y190Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14614117006645153277",
+      "what": "ベッドが3台並ぶ施術室",
+      "width": 512,
+      "height": 341,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイト(トップ・施術のご案内・アクセス・院長紹介)の画像は、文字入りの丸型メニュー画像・イラスト・背景模様・空の素材写真だけで、実物写真が無かったため、写真なし。。Google マップの写真"
 }

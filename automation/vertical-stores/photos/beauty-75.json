@@ -1,5 +1,15 @@
 {
   "key": "beauty-75",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-75/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrCIBNxlA2wEY2rNxnYpea3szRR4dknJq2WUFt9thOghJbfslpLno2pBW3iwSYFUzmR8KY6qTAEhTF7siUGy5vqKMC6ezfwE8Uf5O0P6dRmKh1VEfObXXUuWuQVwVTcbQKStQzig=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16911369511655597944",
+      "what": "B・BLOOMの商品棚とカウンター",
+      "width": 1146,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

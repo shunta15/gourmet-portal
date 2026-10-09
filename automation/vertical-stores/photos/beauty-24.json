@@ -1,5 +1,15 @@
 {
   "key": "beauty-24",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-24/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjgoKXBOn1Mp7QfmBIs94pWFv0cs2N7RvD86p2ZsyZLd4tjQ39XpVh0XhLlmtYyDQ-m7tadL_vXoJrgfpyVz82PLV-r5bJ36kxQnQXawOhJKh9N4FvF8-TriMqy3NkJUEh4LjP=w203-h135-k-no",
+      "pageUrl": "https://maps.google.com/?cid=12079026355071609447",
+      "what": "エントランスと待合の店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }

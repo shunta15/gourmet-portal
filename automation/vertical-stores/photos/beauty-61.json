@@ -1,5 +1,15 @@
 {
   "key": "beauty-61",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-61/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Trwoq4JTUVKBjV7keNSya8ZsK8ka4U4ZcwkWRZPCQ-2ahhDO9An4szmo70YqlLE-7kacy2ON1nqEmtGVEO-3hyWMxZLkmJUMJQlIFqgpIQbYJ73cbKPQxpj3R88HsovnRAuLxL2g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4284984110486733622",
+      "what": "シャンデリアと階段のある店内",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "bodycare-73",
-  "images": [],
-  "note": "Googleマップのサイトは予約システム(peakmanager)のみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-73/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RauRLcM3lkP-zrX_nh754l5FJU1Cvxid53CxJLP9ZD1l22P3wZU9h0ROf8-4JV0xKNpC3z3Thh4iTAJ-Phs9KR1cRJbjVnMIciPbNCCTIxjgpE700LvJeuKHz6U5MvCEIvmbApXw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=2814469383763800234",
+      "what": "ベッドと運動器具のある明るい室内",
+      "width": 660,
+      "height": 440,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトは予約システム(peakmanager)のみで自前の公式サイトなし / Google マップの写真"
 }

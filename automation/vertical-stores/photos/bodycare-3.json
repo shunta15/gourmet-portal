@@ -1,5 +1,15 @@
 {
- "key": "bodycare-3",
- "images": [],
- "note": "写真なし: 公式サイトで使える実店舗の写真は、幼児の顔がはっきり写るキッズスペースの1枚だけ(子どもの顔が分かる写真は使わない=発注者の判断)"
+  "key": "bodycare-3",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-3/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwZuNfgfH4hY8xSyvLMXKfw6iw7iSu9vtApHeBeGro9cwXUtMJxHTo8dEUikzmRt7IEhwW8VkiOr1mIvKubZTXUcdPGfBpqi8tDoL-cqdztQydElmAiTTNDYyYv5D43JZX1sum=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4746631343671715331",
+      "what": "ツツジの花と店の入り口",
+      "width": 735,
+      "height": 1020,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "写真なし: 公式サイトで使える実店舗の写真は、幼児の顔がはっきり写るキッズスペースの1枚だけ(子どもの顔が分かる写真は使わない=発注者の判断)。Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "bodycare-91",
-  "images": [],
-  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-91/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q3q1-0NF5QbhTuCz3tqUyZ92SOd0soJIyiaM3Z4P70FvPBuSoBv8WJgjh2vSesc8sJ6VcS-xhAciipZvI7umK7mxkWoEqSySVFLu0pyHwJKNUkywpwQsK9-_4YJYu8YOQJK6hG-2zrV5c=w203-h360-k-no",
+      "pageUrl": "https://maps.google.com/?cid=9043307486787804526",
+      "what": "ベッドで施術を行うスタッフ",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "自前の公式サイトなし(Googleマップ記載のサイトはホットペッパー掲載ページ) / Google マップの写真"
 }

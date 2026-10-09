@@ -1,5 +1,15 @@
 {
   "key": "bodycare-67",
-  "images": [],
-  "note": "公式サイトで確認した画像(12枚)は、長辺500px未満の院内・外観・施術写真(350x250)、素材写真(診察風景)、文字入りバナー・休診カレンダー・酸素カプセルのポスターで、使える実物写真が無かったため、写真なし。"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-67/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QT5kFlz8MLPXUOOh-1oXtmlx9XbIMw3NWYEWkltlTGkbJJ6MnJ0QAWsx-N6c8eYwHAVG2ItM0WYInkbCUzpL8dLSDB-RR8GPgxm8ZJbdeEIUWHdS-KnrXKGhbD2Q0ZhREthPmV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12227840457829001066",
+      "what": "白衣姿のスタッフの写真",
+      "width": 1180,
+      "height": 664,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトで確認した画像(12枚)は、長辺500px未満の院内・外観・施術写真(350x250)、素材写真(診察風景)、文字入りバナー・休診カレンダー・酸素カプセルのポスターで、使える実物写真が無かったため、写真なし。。Google マップの写真"
 }

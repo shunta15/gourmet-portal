@@ -1,5 +1,15 @@
 {
   "key": "beauty-42",
-  "images": [],
-  "note": "公式サイト(purity-osaka.com)の画像は小さい(長辺500px未満)か、製品・メニューの宣伝画像のみで、店の様子が分かる使える写真が無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-42/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFBThhFeYqf0zwegrvGe844gWJcoK3A3lB7OajK1XPiWF5IuPSGffCzZrRz7ARJ5D2c63sREPoqc_ZF-3u-aepIZGJt9pFiFu_2ve_-x84wCufslZ18aohm3MhrAwgHc0SD4spfA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14473334935077820043",
+      "what": "白いベッドのある施術室",
+      "width": 660,
+      "height": 440,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイト(purity-osaka.com)の画像は小さい(長辺500px未満)か、製品・メニューの宣伝画像のみで、店の様子が分かる使える写真が無い。Google マップの写真"
 }

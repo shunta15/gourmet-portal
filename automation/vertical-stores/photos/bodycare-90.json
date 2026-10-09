@@ -1,5 +1,15 @@
 {
   "key": "bodycare-90",
-  "images": [],
-  "note": "公式サイトの画像は地図・イラスト・学会写真・サムネ(240x100)のみで、店の実物写真が無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-90/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtGDB-pK6JE-E92Rlsp_LpKvOh42zlRsGH-dy98CrEATWwlBNbQXqYbuwXnYkAF-8U1bdCaqQY5zufXr8TdTDozQp3TQWrWuC7gY62PJ2zungX7ucYyrxuMp_LsJfoi3RJN9rHIw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16138272023186733077",
+      "what": "施術室の2台のベッド",
+      "width": 1200,
+      "height": 860,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像は地図・イラスト・学会写真・サムネ(240x100)のみで、店の実物写真が無い。Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "beauty-68",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-68/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAqWNVuAeCbSFXA6Tm0IYkPdpU2Uxyz3cMhQWhHmtR42dMUlYL5FBu4bQdPSex5jv5FRIi_BaNKjRd28q0-OL3HQ8_Z2eMx0-Y-hquhP0Z2Ra0S309xfdW-qdIZ2wRJ4gSpOUgi3__0ElW=s1200",
+      "pageUrl": "https://maps.google.com/?cid=18078920156287174705",
+      "what": "コンクリートの床の広い店内",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

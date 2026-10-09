@@ -1,5 +1,15 @@
 {
   "key": "bodycare-97",
-  "images": [],
-  "note": "公式サイトがアクセス制限(Cloudflare のブロック)で開けないため、あきらめた"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-97/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sp8yiXPn3SWos7F90t4iEqAnviiTejkoU2pKkd7szpG0JV_lAG87rJzYXKtdlNyjCWTy1bdIkaiWByBwYlL3QbB9gtLp5HOuTGe_IRaeFabv2i5wd0FOWCgIrOc4EYB6Aw5f12=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9474982964653030985",
+      "what": "整骨院かふうの入口と外観",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトがアクセス制限(Cloudflare のブロック)で開けないため、あきらめた / Google マップの写真"
 }

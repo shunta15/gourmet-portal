@@ -1,5 +1,15 @@
 {
   "key": "beauty-34",
-  "images": [],
-  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-34/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYgeOegqnZYuJodqF1IsodClVXHZC0vGoVkyjYCuT6Ycpb3HlTZ4-zHmCBecUtxr4EAIpflVuyNkS2arTamZm73oeUls9sPGuwBIdf536oMS5JKXZsRjHCcSxhZFj63JKFTtqr=w408-h272-k-no",
+      "pageUrl": "https://maps.google.com/?cid=497847409284752927",
+      "what": "木の天井と受付カウンターのある店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップ記載のサイトがホットペッパー(掲載サイト)のみで、自前の公式サイトが無い / Google マップの写真"
 }

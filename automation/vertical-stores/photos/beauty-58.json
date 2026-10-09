@@ -1,5 +1,15 @@
 {
   "key": "beauty-58",
-  "images": [],
-  "note": "公式サイトに店の実物の写真が無い(素材写真・バナー・セミナーの文字入り画像・340px の小画像だけ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-58/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QDKIIU7hxuMW9yle5yQJJyJ8BzIjmtjAeEKos-Q0MOTzwg2bPii-oDg0ecXY0BF7B1CAR7oM7rouu10kHeb3n3XNiWSM3XN03wiN5C6uSQcuvQX8jZGTHqevdkMpjarZTNtg0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=2280333214996758810",
+      "what": "テーブルと棚のある明るい店内",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトに店の実物の写真が無い(素材写真・バナー・セミナーの文字入り画像・340px の小画像だけ) / Google マップの写真"
 }

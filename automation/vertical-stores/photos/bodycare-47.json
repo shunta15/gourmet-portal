@@ -1,5 +1,15 @@
 {
   "key": "bodycare-47",
-  "images": [],
-  "note": "公式サイトの大きな写真はモデルのストック写真風、店の外観は300px四方で小さすぎ(長辺500px未満)のため不採用"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-47/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QKmVQ6XWC9tkL3WP4S_ul4XHbxdXtSvY4DFSTtOO_bLAPW8XgyHKyUcL_9CTKM3KkH8beLjoGd2aPUpuijBJ6gCdwlUqIPRDzJ3Wvy-vxRXRufrkn1PcBR0Cn3_oJ36RCPYmkstmYa1wqj=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5988772818844713849",
+      "what": "観葉植物のある施術室",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの大きな写真はモデルのストック写真風、店の外観は300px四方で小さすぎ(長辺500px未満)のため不採用 / Google マップの写真"
 }

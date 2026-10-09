@@ -1,5 +1,15 @@
 {
   "key": "beauty-39",
-  "images": [],
-  "note": "公式サイトの画像はモデルの素材写真・文字入りの空き枠告知バナー・ネイルの手元のアップのみで、店内・外観の写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-39/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkiQ-oy7ZfCygUN2gRfny1FbV1Wfu_4oCQu4rHmZ7rdFfFpDHs-cJlMJL2LHqAyl5V4FMKwtnIJaWDzD9N-eqG4nN_I3ICxMGWxj1VjXF9aOuQDL-EiYPSRpl7xk87_JH7f-mLp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17211326865184434628",
+      "what": "ピンクを基調にした店内",
+      "width": 1200,
+      "height": 676,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの画像はモデルの素材写真・文字入りの空き枠告知バナー・ネイルの手元のアップのみで、店内・外観の写真なし。Google マップの写真"
 }

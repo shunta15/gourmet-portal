@@ -1,5 +1,15 @@
 {
   "key": "beauty-59",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-59/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIKMLLfpIrTVv_wsBVNfOaGB6Meh-ZLW9175JUBGZEWR4u3eqFQiGqJxWYEoPG0qgMKnbCZp3n8X3TjMmZrMhwB0diiXh9-G1VH-OQRP1UfojECTsZ3k7PW7aF1KCmOgsw8Xc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11408289121740325689",
+      "what": "ネオンサインと椅子のある店内",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }
