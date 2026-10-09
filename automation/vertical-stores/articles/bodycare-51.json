@@ -78,7 +78,13 @@
       "checkedAt": "2026-10-09"
     },
     {
-      "claim": "酸素カプセルは30分と60分がある",
+      "claim": "酸素カプセルは30分がある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000824961/",
+      "quote": "｜酸素カプセル｜30分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "酸素カプセルは60分もある",
       "source": "https://beauty.hotpepper.jp/kr/slnH000824961/",
       "quote": "｜酸素カプセル｜60分",
       "checkedAt": "2026-10-09"

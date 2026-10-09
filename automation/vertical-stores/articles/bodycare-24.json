@@ -40,9 +40,21 @@
       "checkedAt": "2026-10-09"
     },
     {
-      "claim": "メニューに整骨、鍼、灸がある",
+      "claim": "メニューに整骨がある",
       "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
-      "quote": "各種保険適応しています",
+      "quote": "骨折、脱臼、捻挫、打撲、肉離れ等の治療",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに鍼がある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "電気鍼、トリガーポイント治療",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに灸がある",
+      "source": "https://www.hi-yorokonde.com/detail/1854/menu.html",
+      "quote": "上質もぐさを使用",
       "checkedAt": "2026-10-09"
     },
     {
