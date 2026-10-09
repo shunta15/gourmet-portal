@@ -10,11 +10,22 @@ import { isPortalLive } from "@/lib/portal/launch";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
+// サイト全体の既定の題・説明（ページが自分の題を持たないときと、SNS のカードの既定に使われる）。
+// 総合サイトとして公開したあと（公開スイッチ ON）は、飲食店だけの言い方（「全国飲食店ポータル」）をやめる。
+// 言葉は総合トップと同じ（proto-portal/hub-concepts/COPY-FINAL.md）。公開スイッチ OFF（グルメだけのサイト）の出力は変えない。
+const PORTAL_ON = isPortalLive();
+const DEFAULT_TITLE = PORTAL_ON ? "マチノワ — 街の輪" : "マチノワ / 街の輪 — 全国飲食店ポータル";
+const DEFAULT_DESCRIPTION = PORTAL_ON
+  ? "ひとつの店との出会いが、次の出会いにつながり、その小さな輪が、街へと広がっていく。マチノワは、店と人をつなぎ、街の魅力を広げていく地域ポータルサイトです。"
+  : '全国の街の"いいお店"を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。';
+const DEFAULT_SOCIAL_DESCRIPTION = PORTAL_ON
+  ? "街と店、店と人。つながる輪を、マチノワから。"
+  : "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://machinowa.tokyo"),
-  title: "マチノワ / 街の輪 — 全国飲食店ポータル",
-  description:
-    '全国の街の"いいお店"を、エリア・業種・特集で巡れる食のポータル「マチノワ」。食べたい気分から、お店が見つかります。',
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESCRIPTION,
   // app/icon.tsx と app/apple-icon.tsx が自動登録されるが、
   // 確実に Google / SNS が拾うように明示しておく
   icons: {
@@ -23,8 +34,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "マチノワ — 街の輪",
-    description:
-      "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。",
+    description: DEFAULT_SOCIAL_DESCRIPTION,
     type: "website",
     locale: "ja_JP",
     siteName: "マチノワ",
@@ -33,8 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "マチノワ — 街の輪",
-    description:
-      "全国飲食店ポータル。街の“いいお店”、ぜんぶここに。",
+    description: DEFAULT_SOCIAL_DESCRIPTION,
     images: ["/apple-icon"],
   },
   // Google Search Console の所有権確認。
