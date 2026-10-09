@@ -1,0 +1,139 @@
+{
+  "key": "beauty-122",
+  "headline": "谷町九丁目駅から5分ほどの、女性専用のヘアサロン",
+  "lede": "谷町九丁目駅の6番出口から5分ほどの、大阪市中央区上汐1丁目のベルツ上汐3階にある美容院です。席は2席、スタイリストは1人の小さな店で、女性専用のサロンと案内しています。",
+  "sections": [
+    {
+      "heading": "店のきまりと設備",
+      "body": "新規の男性客は断っており、紹介された人だけを受け付けると案内されています。条件欄には個室と半個室ありの記載があり、禁煙で、ドリンクのサービスがあります。ヘッドスパと着付けのメニューもあります。ビルにはエレベーターがあり、近くにコインパーキングが数か所あります。支払いはクレジットカードと楽天ペイ、auペイです。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "ヘアセット"
+    },
+    {
+      "name": "着付け"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 9
+    },
+    {
+      "tag": "個室あり",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=10606362825615978088",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "大阪市中央区上汐1丁目3-10のベルツ上汐3階にある",
+      "source": "https://maps.google.com/?cid=10606362825615978088",
+      "quote": "大阪府大阪市中央区上汐１丁目３−１０ ベルツ上汐 3F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "谷町九丁目駅6番出口を出て5分",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "谷町九丁目駅６番出口を出て5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は2席、スタイリストは1人",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "セット面2席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性専用サロンで新規男性客は断り、紹介者のみ",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "女性専用サロンの為申し訳ないのですが新規男性客お断りさせて頂いております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "条件欄に個室あり・半個室ありと載っている",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "個室あり／半個室あり／完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "禁煙、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "禁煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは1人",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "スタイリスト1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドスパのメニューがある",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "ヘッドスパもゆったりお寛ぎいただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘアセットと着付けが条件欄に載っている",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "ヘアセット／着付け",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "新規男性客は紹介者のみ受け付ける",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "ご紹介者様のみお受けしております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ビルにエレベーターがある",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "エレベーター有り",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "近隣にコインパーキングが数箇所",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "近隣にコインパーキングが数箇所ございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカードと楽天ペイ・auペイ",
+      "source": "https://beauty.hotpepper.jp/slnH000479853/",
+      "quote": "Visa／Mastercard／JCB／American Express／楽天ペイ・auペイ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000479853/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10606362825615978088"
+    }
+  ],
+  "notes": "営業時間は食い違うため書いていない(ホットペッパー: 平日9時〜最終受付19時・土日祝8時半〜、Google マップ: 月〜金10〜20時、土日9〜20時)。定休日は不定休。オーガニックを掲げる薬剤ブランドの記載は自己申告のため載せていない。料金・口コミ・評価は使っていない。"
+}

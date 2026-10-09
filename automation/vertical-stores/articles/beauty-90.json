@@ -1,0 +1,117 @@
+{
+  "key": "beauty-90",
+  "headline": "松伏町にある、15台分の駐車場がある美容院",
+  "lede": "埼玉県北葛飾郡松伏町にある美容院です。カットやカラー、パーマ、ヘッドスパ、着付けなどのメニューがあり、キッズカットやシニアカットも用意されています。予約はウェブで受け付けています。",
+  "sections": [
+    {
+      "heading": "車で行く人へ",
+      "body": "駐車場は店舗横に7台、店舗裏に8台の計15台分と案内されています。レイクタウン、吉川駅、野田市阿多駅のいずれからも車で15分ほどです。定休日は不定休で、講習会のために休む場合があります。支払いはクレジットカードのほか、PayPayなどの電子マネーやQR決済が使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "パーマ"
+    },
+    {
+      "name": "トリートメント"
+    },
+    {
+      "name": "ヘアセット"
+    },
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "着付け"
+    },
+    {
+      "name": "キッズカット"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=6162268810541897242",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "埼玉県北葛飾郡松伏町松伏4751にある",
+      "source": "https://maps.google.com/?cid=6162268810541897242",
+      "quote": "埼玉県北葛飾郡松伏町松伏４７５１",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "店舗横に7台、店舗裏に8台の計15台の駐車スペース",
+      "source": "https://enzerubiyousitu.com/beginners",
+      "quote": "店舗横に7台、店舗裏に8台、計15台の駐車可能なスペースがございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レイクタウン・吉川駅・野田市阿多駅から車で15分",
+      "source": "https://enzerubiyousitu.com/shop",
+      "quote": "レイクタウンから車で15分　吉川駅から車で15分　野田市阿多駅から車で15分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休で、講習会のため休む場合がある",
+      "source": "https://enzerubiyousitu.com/shop",
+      "quote": "不定休（※講習会の為お休みをいただく場合がございます）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカード各種",
+      "source": "https://enzerubiyousitu.com/shop",
+      "quote": "Visa／Mastercard／JCB／American Express／Diners Club／Discover",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "PayPayなどの電子マネー・QR決済が使える",
+      "source": "https://enzerubiyousitu.com/shop",
+      "quote": "UnionPay（銀聯）／PayPay／auPay／メルペイ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカット、カラー、パーマ、トリートメント、ヘアセット、ヘッドスパ、着付けが並ぶ",
+      "source": "https://enzerubiyousitu.com/menu",
+      "quote": "カットカラーパーマ縮毛矯正トリートメントヘアセットヘッドスパ着付けその他",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズカットは0歳〜小学生",
+      "source": "https://enzerubiyousitu.com/menu",
+      "quote": "【0歳～小学生】キッズカット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シニアカットは70歳以上の人向け",
+      "source": "https://enzerubiyousitu.com/menu",
+      "quote": "シニアカット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はウェブで受け付ける",
+      "source": "https://enzerubiyousitu.com/beginners",
+      "quote": "ご予約はWEBにて承っております。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://enzerubiyousitu.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6162268810541897242"
+    }
+  ],
+  "notes": "営業時間は食い違うため書いていない(公式は5:00〜23:00、Google マップは7:00〜21:00/22:00/23:00と曜日で異なる)。Google マップの website 欄は2つのURLが連結していたため、公式サイトのトップを使った。縮毛矯正はメニュー名に載せていない。料金・割引・クーポンは使っていない。"
+}

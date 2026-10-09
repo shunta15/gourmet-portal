@@ -1,0 +1,129 @@
+{
+  "key": "beauty-106",
+  "headline": "船橋の大神宮下駅から徒歩1分にある、少人数の美容院",
+  "lede": "京成大神宮下駅から徒歩1分、船橋市宮本の鳥光ビル103にある美容院です。席は2席、スタイリストは1人の少人数のサロンで、店は完全マンツーマンの施術をうたっています。ネットの即時予約に対応しています。",
+  "sections": [
+    {
+      "heading": "営業日と支払い",
+      "body": "営業は10時から20時で、定休日は不定休です。カットの最終受付は19時と案内されています。お子さま同伴ができ、分煙で、ドリンクのサービスもあります。支払いはクレジットカードが使えます。駐車場はなく、近くのパーキングを使うよう案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "トリートメント"
+    },
+    {
+      "name": "ヘッドスパ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ可",
+      "factIndex": 8
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=244645748355560622",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "船橋市宮本4丁目1-1の鳥光ビル103にある",
+      "source": "https://maps.google.com/?cid=244645748355560622",
+      "quote": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "京成大神宮下駅から徒歩1分",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "京成大神宮下駅から徒歩1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は2席",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "セット面2席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリストは1人",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "スタイリスト1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全マンツーマン施術をうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "完全マンツーマン施術",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は10時〜20時、カット最終受付19時",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "■10時～20時(カット最終受付19時)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日10:00–20:00",
+      "source": "https://maps.google.com/?cid=244645748355560622",
+      "quote": "\"月\": \"10:00–20:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK、分煙、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "お子さま同伴OK／分煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカード各種",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "Visa／Mastercard／JCB／American Express",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "提携の駐車場はなく近隣のパーキングを案内",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "提携してる駐車場はございませんので、近隣のパーキングにて駐車をお願い致します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカット、トリートメント、ヘッドスパがある",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "カットトリートメントヘッドスパ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "即時予約に対応",
+      "source": "https://beauty.hotpepper.jp/slnH000546725/",
+      "quote": "ポイント利用OK、即時予約OK",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000546725/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=244645748355560622"
+    }
+  ],
+  "notes": "営業時間は一致(10:00〜20:00)。「夜遅くまで」は付けていない(20時閉店)。駅徒歩は1分(京成大神宮下)、JR船橋駅・京成船橋は15分と案内。「分煙」は条件欄の記載。料金・クーポン・受賞歴・口コミは使っていない。トリートメント名のうち効き目を思わせるものは載せていない。"
+}

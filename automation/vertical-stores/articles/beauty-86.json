@@ -1,0 +1,90 @@
+{
+  "key": "beauty-86",
+  "headline": "守山市浮気町の、月曜休みの美容院",
+  "lede": "滋賀県守山市浮気町にある美容院です。カットやカラー、パーマ、トリートメント、セットのメニューがあります。定休日は毎週月曜日と、第1・第3火曜日で、営業は朝9時からです。",
+  "sections": [
+    {
+      "heading": "営業日と連絡先",
+      "body": "営業は朝9時からで、営業時間外も相談に応じると案内されています。電話は077-582-3272のほか、070-9000-3272も案内されています。Google マップには楽天ビューティの予約ページが載っています。料金表にはパーマ、カラー、カット、セット、トリートメントなどが並んでいます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "パーマ"
+    },
+    {
+      "name": "トリートメント"
+    },
+    {
+      "name": "セット"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=5705125759743308675",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "滋賀県守山市浮気町370にある",
+      "source": "https://erika-biyou.studio.site/",
+      "quote": "〒524-0033　滋賀県守山市浮気町370",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの住所も守山市浮気町370",
+      "source": "https://maps.google.com/?cid=5705125759743308675",
+      "quote": "滋賀県守山市浮気町３７０",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週月曜と第1・第3火曜",
+      "source": "https://erika-biyou.studio.site/",
+      "quote": "毎週　月曜 第1　第３　火曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00から、時間外も相談可",
+      "source": "https://erika-biyou.studio.site/",
+      "quote": "9：00～ 営業時間外もご相談ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は077-582-3272と070-9000-3272",
+      "source": "https://erika-biyou.studio.site/",
+      "quote": "TEL            077-582-3272",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにパーマ、カラー、カット、セット、トリートメントがある",
+      "source": "https://erika-biyou.studio.site/",
+      "quote": "パ－マ ￥9.500～ カラ－ ￥8.500～ カット ￥3.500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "楽天ビューティの予約ページがGoogle マップに載っている",
+      "source": "https://maps.google.com/?cid=5705125759743308675",
+      "quote": "https://beauty.rakuten.co.jp/s5000059556/",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://erika-biyou.studio.site/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5705125759743308675"
+    }
+  ],
+  "notes": "公式サイトは STUDIO 製で Playwright で本文を取得した。営業時間は「9:00〜」とあり終了時刻の記載がなく、Google マップに営業時間のデータが無いため時刻は書いていない。縮毛矯正は載せていない。料金は quote の原文にだけ含まれ、本文・menus には書いていない。電話番号の070は公式の記載のまま。"
+}

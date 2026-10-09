@@ -1,0 +1,128 @@
+{
+  "key": "beauty-88",
+  "headline": "寝屋川市のビルの2階にある、ジェルネイルのサロン",
+  "lede": "寝屋川市長栄寺町のあしびビル2階にあるネイルサロンです。ジェルネイルのほか、パラジェルやフィルイン、長さだしのメニューが並びます。予約は完全予約制で、日曜は定休日です。",
+  "sections": [
+    {
+      "heading": "場所と設備",
+      "body": "寝屋川市駅の西口から歩くと10分ほどで旧国道に出て、その近くの交差点側にビルがあります。敷地内に駐車場があり、車で行く人は予約のときに伝えるよう案内されています。支払いはクレジットカードやPayPayが使えます。施術の席は総数3で、スタッフは3人です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ジェルネイル"
+    },
+    {
+      "name": "パラジェル"
+    },
+    {
+      "name": "フィルイン"
+    },
+    {
+      "name": "長さだし"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "個室あり",
+      "factIndex": 8
+    }
+  ],
+  "facts": [
+    {
+      "claim": "大阪府寝屋川市長栄寺町6-16のあしびビル204号室にある",
+      "source": "https://maps.google.com/?cid=9733114385265538432",
+      "quote": "大阪府寝屋川市長栄寺町６−１６ あしびビル 204号室",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ページは大人の女性向けのネイルサロンとして紹介している",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "大人女性ネイルサロン/パラジェル・フィルイン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "寝屋川市駅の西口から10分ほど歩くと旧国道に出る",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "寝屋川市駅の西口を出て、まっすぐ10分ほど歩くと旧国道",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "敷地内に駐車場があり、利用時は予約時に知らせる",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "お車の方は敷地内に駐車場もございます。ご利用のお客様は、ご予約時にお知らせください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカード各種とPayPayが使える",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "Visa／Mastercard／JCB／American Express／Diners Club",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備は総数3(ベッド1、ネイル3)",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "総数3(ベッド1／ネイル3)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタッフは3人",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "総数3人(スタッフ3人)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "条件欄に個室ありと載っている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "女性専用／個室あり／駐車場あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は不定休と日・祝",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "不定休/日・祝",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも日曜は定休日",
+      "source": "https://maps.google.com/?cid=9733114385265538432",
+      "quote": "\"日\": \"定休日\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにパラジェル、フィルイン、長さだしがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "パラジェル・フィルイン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ出しのメニューがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "長さ出しのできるサロン",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "PayPayが使える",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000710062/",
+      "quote": "Discover／paypay",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000710062/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9733114385265538432"
+    }
+  ],
+  "notes": "Google マップの業種はエステティックサロンだが、ページの内容はネイルサロン。営業時間は10:00〜17:00で一致するが、定休日はホットペッパーが「不定休／日・祝」、Google マップが月曜と日曜のため、曜日は日曜だけ書いた。料金・クーポン・口コミは使っていない。毛穴の施術の記載は載せていない。駐車場は「1台」の記載と「敷地内」の記載があり、台数は書いていない。"
+}

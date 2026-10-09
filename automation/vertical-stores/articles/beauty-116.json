@@ -1,0 +1,134 @@
+{
+  "key": "beauty-116",
+  "headline": "渋谷・円山町にある、年中無休の美容院",
+  "lede": "渋谷駅のA0出口から道玄坂を進んだ先、円山町のビル4階にある美容院です。店はレイヤーカットを軸にしたサロンとうたっています。営業は毎日11時から20時で、予約は完全予約制です。",
+  "sections": [
+    {
+      "heading": "席と設備",
+      "body": "セット面は8席、スタイリストは7人とアシスタントが4人です。お子さま同伴ができ、ドリンクのサービスもあります。女性スタッフが多いとも載っています。支払いはクレジットカードが使えます。道順は、道玄坂を進み、交番を過ぎて少し行った右手のビルの4階と案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カット"
+    },
+    {
+      "name": "レイヤーカット"
+    },
+    {
+      "name": "カラー"
+    },
+    {
+      "name": "トリートメント"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ可",
+      "factIndex": 7
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種は美容院",
+      "source": "https://maps.google.com/?cid=17348909091579885146",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "渋谷区円山町5-3のMIEUX渋谷ビル4Fにある",
+      "source": "https://maps.google.com/?cid=17348909091579885146",
+      "quote": "東京都渋谷区円山町５−３ MIEUX渋谷ビル 4F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は11:00〜20:00",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "11：00～20：00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日11:00–20:00",
+      "source": "https://maps.google.com/?cid=17348909091579885146",
+      "quote": "\"月\": \"11:00–20:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "年中無休",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "年中無休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面は8席",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "セット面8席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト7人、アシスタント4人",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "スタイリスト7人／アシスタント4人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK、ドリンクサービスあり",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "お子さま同伴OK／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レイヤーカットを軸にしたサロンとうたう",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "トレンドの“レイヤーカット”を軸に",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはクレジットカード各種",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "Visa／Mastercard／JCB／American Express",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "道順は渋谷駅A0出口から道玄坂、交番を過ぎて右手のビルの4階",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "【渋谷駅】A0出口を出て右へ進み、道玄坂を進みます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "女性スタッフが多い",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "女性スタッフが多い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカット、カラー、トリートメントがある",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "カットカラートリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交番を過ぎて少し進んだ右手のビルの4階",
+      "source": "https://beauty.hotpepper.jp/slnH000737642/",
+      "quote": "交番を超え、少し進むと右手に1階がいくら（飲食店）のビルが見えます",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティーの店のページ(Google マップ記載のサイト)",
+      "url": "https://beauty.hotpepper.jp/slnH000737642/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17348909091579885146"
+    }
+  ],
+  "notes": "営業時間・年中無休は公式とGoogle マップが一致。駅徒歩は見出しに「渋谷駅徒歩6分」、条件欄に「3分以内」と食い違うため、本文に分数を書かず駅近も付けていない。店名・キャッチの「髪質改善」「小顔」などは載せていない。料金・クーポン・口コミは使っていない。"
+}

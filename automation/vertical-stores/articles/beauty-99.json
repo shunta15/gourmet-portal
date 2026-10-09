@@ -1,0 +1,118 @@
+{
+  "key": "beauty-99",
+  "headline": "高石駅から徒歩1分の、完全予約制のエステティックサロン",
+  "lede": "南海本線高石駅から徒歩1分、高石市綾園にあるエステティックサロンです。メニューは脱毛とフェイシャル、ボディの3つに分かれています。完全予約制で、営業は10時から19時です。",
+  "sections": [
+    {
+      "heading": "メニューと予約",
+      "body": "メニューにはフラッシュ脱毛、美顔イオン導入、フォトSRフェイシャル、筋膜リリーストリートメントなどがあり、美顔イオン導入は60分、筋膜リリーストリートメントは70分です。最終受付は18時で、定休日は不定休です。電話番号は072-264-2306です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "美顔イオン導入",
+      "minutes": 60
+    },
+    {
+      "name": "フォトSRフェイシャル"
+    },
+    {
+      "name": "筋膜リリーストリートメント",
+      "minutes": 70
+    },
+    {
+      "name": "脱毛"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種はエステティックサロン",
+      "source": "https://maps.google.com/?cid=16519137693926901969",
+      "quote": "\"category\": \"エステティック サロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "南海本線高石駅から徒歩1分",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "南海本線高石駅から徒歩1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "大阪府高石市綾園1丁目1-21にある",
+      "source": "https://maps.google.com/?cid=16519137693926901969",
+      "quote": "大阪府高石市綾園１丁目１−２１",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00、最終受付18:00、定休日は不定休",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "営業時間:10:00〜19:00 最終受付:18:00 定休日:不定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップも毎日10:00–19:00",
+      "source": "https://maps.google.com/?cid=16519137693926901969",
+      "quote": "\"月\": \"10:00–19:00\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューは脱毛、フェイシャル、ボディ",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "メニューは ①脱毛　②フェイシャル　③ボディ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美顔イオン導入は60分",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "美顔イオン導入　4,400円(60分)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "筋膜リリーストリートメントは70分",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "筋膜リリーストリートメント 70分　7,700円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フォトSRフェイシャルのメニューがある",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "フォトSRフェイシャル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フラッシュ脱毛",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "フラッシュ脱毛とは？",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は072-264-2306",
+      "source": "https://www.sweet-vipok.com/",
+      "quote": "TEL 072-264-2306",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.sweet-vipok.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16519137693926901969"
+    }
+  ],
+  "notes": "種類は esthetic に決めた(脱毛・フェイシャル・ボディを並べる総合エステ。脱毛だけの店ではない)。営業時間は公式とGoogle マップが一致。quote に料金が含まれるのは原文のまま(本文・menus には料金を書いていない)。デトックス、アンチエイジング、痩身、キッズ脱毛の記載は載せていない。"
+}

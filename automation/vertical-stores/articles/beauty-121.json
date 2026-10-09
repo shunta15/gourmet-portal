@@ -1,0 +1,101 @@
+{
+  "key": "beauty-121",
+  "headline": "大阪・神山町にある、まつげとフェイシャルのサロン",
+  "lede": "大阪市北区神山町の梅電ビル3階にあるサロンです。Google マップの業種はまつげサロンで、予約ページには脱毛、フェイシャル、ヘッドスパ、眉毛ワックスなども並びます。東梅田駅5分と案内されています。",
+  "sections": [
+    {
+      "heading": "予約ページの使い方",
+      "body": "予約ページはスタッフを選んで予約する形で、指名なしも選べます。メニューの絞り込みにはリラクゼーション、リフレッシュ、アイラッシュ・メイク、エステの区分があります。男女どちらも利用できると案内しています。お知らせでは、お仕事終わりにも寄れる営業時間をうたっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "脱毛"
+    },
+    {
+      "name": "フェイシャル"
+    },
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "眉毛ワックス"
+    },
+    {
+      "name": "アロマリンパトリートメント"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種はまつげサロン",
+      "source": "https://maps.google.com/?cid=10440479901939096082",
+      "quote": "\"category\": \"まつげサロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "大阪市北区神山町8-22の梅電ビル3Fにある",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "大阪府大阪市北区神山町8-22 梅電ビル3F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東梅田駅5分と案内",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "【東梅田駅5分◎男女OK！】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューに脱毛、フェイシャル、ヘッドスパ、眉毛ワックス、アロマリンパトリートメントなどがある",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "脱毛/ハイドラ/ハイフ/眉毛ワックス/フェイシャル/ヘッドスパ/アロマリンパトリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタッフを選んで予約でき、指名なしも選べる",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "指名なし 選択する",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "男女OKと案内",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "男女OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニュー区分はリラクゼーション、リフレッシュ、アイラッシュ・メイク、エステ",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "リラクゼーション(6) リフレッシュ(1) アイラッシュ・メイク(7) エステ(27)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "眉毛ワックスは男女可",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "【眉毛ワックス】美眉ケアでイメージUP★男女可◎",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お仕事終わりにもピッタリな営業時間とうたう",
+      "source": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+      "quote": "営業ですのでお仕事終わりにもピッタリ◎",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "予約ページ(Google マップ記載のサイト)",
+      "url": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10440479901939096082"
+    }
+  ],
+  "notes": "Google マップの website は予約サイト(kanzashi)で、公式サイトではない。営業時間は予約ページが「10時〜21時半(20時最終受付)」、Google マップが月〜金9:00–21:30・土日10:00–19:30で食い違うため書かず、時間のタグも付けていない。「東梅田駅5分」は徒歩の語が無いため駅近は付けていない。ハイフ、ホワイトニング、まつ育パーマの特徴の記載、料金、クーポンは使っていない。"
+}
