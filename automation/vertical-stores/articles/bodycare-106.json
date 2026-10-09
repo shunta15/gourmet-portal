@@ -1,0 +1,108 @@
+{
+  "key": "bodycare-106",
+  "headline": "代官山駅から徒歩1分の、美容鍼を扱う整体サロン",
+  "lede": "東京都渋谷区恵比寿西にある整体のサロンです。美容鍼や美容整体などを中心にしていると、Googleマップの投稿でうたっています。予約はWEB、LINE、電話に対応しています。",
+  "sections": [
+    {
+      "heading": "駅からの道と支払い",
+      "body": "東急東横線の代官山駅の北口から徒歩1分と案内されています。JR恵比寿駅の西口からは徒歩6分です。公式サイトは、プライバシーを守る完全個室をうたっています。支払いは、現金、各種クレジットカード、QRコード決済、電子マネーに対応しています。電話は03-5458-1320です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ハリネズミ美容鍼"
+    },
+    {
+      "name": "美容整体"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "東京都渋谷区恵比寿西2-20-15にある",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "東京都渋谷区恵比寿西2-20-15",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東急東横線の代官山駅北口から徒歩1分と案内されている",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "東急東横線「代官山駅」北口より徒歩1分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR恵比寿駅の西口から徒歩6分",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "JR「恵比寿駅」西口より徒歩6分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プライバシーを守る完全個室をうたう",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "プライバシーを守る完全個室",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "現金・各種クレジットカード・QRコード決済・電子マネーが使える",
+      "source": "https://kadomori-kogao.com/faq/",
+      "quote": "現金、各種クレジットカード、QRコード決済、電子マネーに対応しております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は03-5458-1320",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "03-5458-1320",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "WEB予約がある",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "WEB予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE予約がある",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "LINE予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話予約がある",
+      "source": "https://kadomori-kogao.com/salon/daikanyama/",
+      "quote": "電話予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美容鍼・小顔矯正・整顔矯正・美容整体を中心にしているとGoogleマップの投稿でうたっている(本文は美容鍼・美容整体のみ挙げた)",
+      "source": "https://maps.google.com/?cid=14232794699366135510",
+      "quote": "美容鍼・小顔矯正・整顔矯正・美容整体を中心に",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハリネズミ美容鍼のメニューがある",
+      "source": "https://maps.google.com/?cid=14232794699366135510",
+      "quote": "ハリネズミ美容鍼",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(代官山サロン)",
+      "url": "https://kadomori-kogao.com/salon/daikanyama/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://kadomori-kogao.com/faq/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14232794699366135510"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない: 公式は「月〜金11:00〜21:00・日祝11:00〜20:00・不定休」の表、Googleマップは土11:00〜20:00・日11:00〜21:00で、土日の扱いが食い違う。時間にもとづくタグは付けていない。駅近の根拠は鉄道の駅(東急東横線の代官山駅、徒歩1分)。メニューは、公式サイトのメニューが全店共通の一覧で代官山サロンで扱うか確かめきれないため、Googleマップの投稿(代官山店の記述)にある「ハリネズミ美容鍼」「美容整体」だけを載せた。公式のメニュー名のほぼすべてに小顔・脂肪燃焼・治療・デトックスなどの語があり載せていない。書かなかったこと: 料金・営業時間・スタッフ数・施術実績の件数・口コミ件数・ビフォーアフター・美容整形に触れる記述・小顔矯正などの悩みや見た目の変化を示す名前。「完全個室」は店の自己申告なのでうたうの形。"
+}

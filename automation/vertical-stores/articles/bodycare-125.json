@@ -1,0 +1,122 @@
+{
+  "key": "bodycare-125",
+  "headline": "さいたま市浦和区東仲町の整体院。JR浦和駅東口から徒歩2分",
+  "lede": "さいたま市浦和区東仲町のパーレンス東仲町303にある整体院です。頭蓋骨調整、骨盤調整、リフレクソロジー、ハンドマッサージといったメニューを案内しています。予約はWEBとLINEで受け付けています。",
+  "sections": [
+    {
+      "heading": "駅からの道と予約",
+      "body": "JR浦和駅の東口から徒歩2分と案内されています。所在地はパーレンス東仲町の303です。定休日は毎週水曜日で、月曜日は隔週の営業です。電話は048-711-6686で、予約はWEBとLINEから受け付けています。メニューには、頭蓋骨調整を組み合わせたコースや、リフレクソロジーとハンドマッサージを含む120分のコースがあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "頭蓋骨調整"
+    },
+    {
+      "name": "骨盤調整"
+    },
+    {
+      "name": "リフレクソロジー"
+    },
+    {
+      "name": "ハンドマッサージ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "さいたま市浦和区東仲町12-9にある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "さいたま市浦和区東仲町12 - 9",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーレンス東仲町の303",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "パーレンス東仲町303",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR浦和駅の東口から徒歩2分と案内されている",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "JR線浦和駅、東口から徒歩2分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週水曜日(Googleマップも水曜が定休日)",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "毎週水曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月曜日は隔週営業",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "※月曜日のみ隔週営業です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は048-711-6686",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "048-711-6686",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "WEB予約ができる",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "WEB予約はこちら",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE予約ができる",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "LINE予約はこちら",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "頭蓋骨調整のメニューがある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "頭蓋骨調整",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "骨盤調整のメニューがある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "骨盤調整",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "120分のコースがある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "VIPコース(120分)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リフレクソロジーを含むコースがある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "『リフレクソロジー』",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハンドマッサージを含むコースがある",
+      "source": "https://sunpark-urawa.instatry.jp/",
+      "quote": "『ハンドマッサージ』",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://sunpark-urawa.instatry.jp/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17780800480425842072"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない: 公式は「11:00〜22:00(最終受付20:00)」、Googleマップは11:00〜21:00で閉店時刻が食い違う。月曜日も公式は「隔週営業」、Googleマップは毎週営業の表示。時間にもとづくタグは付けていない。定休日の水曜は両方で一致。公式サイトは、効き目・病名・メンタルの不調などの語が大半のため、本文は場所・予約・技術名・コースの形だけに絞った。メニュー名は、「猫背を改善する整体」(改善を含む)や、悩み・症状を含む名前を載せていない。書かなかったこと: 料金・初回割引・院長の名前と経歴・DVD・他社への指導実績・体験記事・「神コース」などの宣伝文・「1日3組限定」。"
+}

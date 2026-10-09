@@ -1,0 +1,118 @@
+{
+  "key": "bodycare-97",
+  "headline": "沖縄市越来の整骨院。LINEで予約でき、子ども連れも可",
+  "lede": "沖縄市越来2丁目にある整骨院です。全身の状態を確認する施術のほか、カッピングや超音波、ハイボルテージ、肩甲骨はがしといった追加のメニューがあります。予約や問い合わせはLINEからできます。",
+  "sections": [
+    {
+      "heading": "保険と子ども連れ",
+      "body": "保険については、状態によって適用される場合があるとして、保険証の持参が案内されています。適用の可否は状態を確認したうえで伝えると案内されており、店に確かめる必要があります。施術室は広いとうたい、子ども連れの来院も受け付けています。施術には柔道整復師があたります。電話は090-6867-0343です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身施術"
+    },
+    {
+      "name": "カッピング（吸玉）"
+    },
+    {
+      "name": "超音波"
+    },
+    {
+      "name": "ハイボルテージ"
+    },
+    {
+      "name": "肩甲骨はがし"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "沖縄市越来2丁目3-3にある",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "沖縄市越来2丁目3-3",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は090-6867-0343",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "０９０－６８６７－０３４３",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約・問い合わせはLINEからできる",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "LINEからの予約やお問い合わせができます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "広い施術室をうたい、子ども連れの来院ができる",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "広々した施術室なのでお子様連れでも大丈夫。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "症状によって保険が適用できることがあり、保険証の持参を案内している",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "症状によっては保険が適用できることがありますので、保険証をご持参ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "適用の可否は症状を確認したうえで案内される",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "適用の可否は症状を確認したうえでご案内します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "柔道整復師が施術にあたる",
+      "source": "https://www.seikotsuin-kafu.com/",
+      "quote": "柔道整復師が対応します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身の状態を確認する施術(全身施術)がある",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "全身の状態を確認し、オーダーメイドの施術を行っていきます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カッピング(吸玉)のメニューがある",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "カッピング（吸玉）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "超音波のメニューがある",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "超音波",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハイボルテージのメニューがある",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "ハイボルテージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "肩甲骨はがしのメニューがある",
+      "source": "https://www.seikotsuin-kafu.com/サービス内容/",
+      "quote": "肩甲骨はがし",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.seikotsuin-kafu.com/"
+    },
+    {
+      "label": "公式サイト(サービス内容)",
+      "url": "https://www.seikotsuin-kafu.com/サービス内容/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9474982964653030985"
+    }
+  ],
+  "notes": "営業時間と定休日は本文に書いていない: 公式は「月〜金10時〜19時・土曜10時〜15時・日祝は休み」、Googleマップは月曜が定休日で食い違う(火〜金10:00〜19:00、土10:00〜15:00、日の休みは一致)。時間にもとづくタグは付けていない。駅からの距離の記載なし。院長の経歴年数が公式内で食い違う(トップは「10年以上」、サービス内容は「15年以上」)ため書いていない。書かなかったこと: 料金・「〜が期待できます」の効き目の説明・交通事故の治療のページ・症状名・院長の名前。保険は「症状によって適用される場合」の条件ごと、判断を店に委ねる形で書いた。"
+}

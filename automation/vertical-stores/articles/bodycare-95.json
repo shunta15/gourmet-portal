@@ -1,0 +1,114 @@
+{
+  "key": "bodycare-95",
+  "headline": "札幌市手稲区新発寒の整骨院。水曜定休、WEB予約は24時間",
+  "lede": "札幌市手稲区新発寒7条3丁目にある整骨院です。全身オーダーメイド整体、姿勢/骨盤矯正、リラクゼーションのメニューがあり、予約は24時間、WEBで受け付けています。",
+  "sections": [
+    {
+      "heading": "保険と問い合わせ",
+      "body": "定休日は水曜です。電話は011-688-9081で、LINEでの問い合わせも24時間できます。保険については、健康保険のメニューと、交通事故・労災の通院への対応が案内されていて、適用の範囲は店に確かめる必要があります。施術には微弱電流の機器「エレサスブラック」を使うと、公式サイトはうたっています。駐車場は、Googleマップの投稿に「駐車場完備」とあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身オーダーメイド整体"
+    },
+    {
+      "name": "姿勢/骨盤矯正"
+    },
+    {
+      "name": "リラクゼーションメニュー"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "札幌市手稲区新発寒7条3丁目1-11にある",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "札幌市手稲区新発寒７条３丁目１－１１",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "WEB予約は24時間受け付けている",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "ご予約はWEBから24時間受け付けています。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身オーダーメイド整体のメニューがある",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "全身オーダーメイド整体",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "姿勢/骨盤矯正のメニューがある",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "姿勢/骨盤矯正",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リラクゼーションのメニューがある",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "リラクゼーションメニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "水曜が定休日(Googleマップも水曜が定休日)",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "水 定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号は011-688-9081",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "011-688-9081",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEなどでの問い合わせは24時間できる",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "下記から24時間いつでもお問い合わせいただけます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINEで問い合わせられる",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "💬 LINEで問い合わせる",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "健康保険のメニューがある(適用の範囲は店に確かめる必要がある)",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "健康保険",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故・労災の通院に対応すると案内している",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "当院は交通事故・労災の通院、治療も対応しております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "微弱電流の機器「エレサスブラック」を使うと案内している",
+      "source": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+      "quote": "【エレサスブラック】を使用し",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの投稿に「駐車場完備」とある",
+      "source": "https://maps.google.com/?cid=9877609622547959604",
+      "quote": "駐車場完備",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(予約ページを兼ねる)",
+      "url": "https://mebaeyoyaku.mebae2022.workers.dev/top"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9877609622547959604"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない: 公式は「月火木金土 9:00-21:00／日祝 9:00-13:00／水 定休」、Googleマップは月曜が9:00〜13:00で食い違う(火・木〜土の9:00〜21:00、日の9:00〜13:00、水の定休日は一致)。時間にもとづくタグ(夜遅くまで営業・土日営業)は付けていない。駅からの距離の記載なし。公式サイトは予約サイト(workers.dev)で、Googleマップに店が登録しているウェブサイト。書かなかったこと: 料金・割引・「道内では珍しい」「人気NO.1」などの宣伝文・プロ野球球団への導入・窓口負担金の記述・患者様の声(Googleマップの引用)・スタッフの名前・新店舗(北区新琴似)・院長の施術歴・悩みの名前を含むメニュー説明。"
+}
