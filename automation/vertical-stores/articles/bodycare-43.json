@@ -1,0 +1,96 @@
+{
+  "key": "bodycare-43",
+  "headline": "尾道市因島中庄町の、鍼灸院と接骨院を兼ねた店",
+  "lede": "2018年に開院したと案内されている、広島県尾道市因島中庄町の鍼灸院・接骨院です。「10年後も活動的でいられるには今なにができるか」をコンセプトに掲げ、予約優先で営業しています。",
+  "sections": [
+    {
+      "heading": "メニューと予約",
+      "body": "紹介されているメニューは、鍼(公式サイトは髪の毛より細い鍼を使うとうたっています)、器具を使わないオールハンドのもみほぐし、お灸などです。予約・問い合わせは電話で受け付けています。Googleマップでは火曜が定休日と表示されています。公式サイトからはInstagramのページも案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "鍼"
+    },
+    {
+      "name": "オールハンドのもみほぐし"
+    },
+    {
+      "name": "お灸"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "広島県尾道市因島中庄町3838-1にある",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "広島県尾道市因島中庄町3838-1",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2018年に広島県尾道市の因島に鍼灸・接骨院を開院した",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "2018年に広島県尾道市の因島に鍼灸・接骨院を開院いたしました",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約優先の鍼灸・接骨院",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "予約優先の鍼灸・接骨院です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "コンセプトは「10年後も活動的でいられるには今なにができるか」",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "『１０年後も活動的でいられるには今なにができるか』をコンセプト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "髪の毛より細い鍼を使うとうたっている",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "髪の毛より細い鍼を使用します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "器具を使わないオールハンドのもみほぐしがある",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "器具等を使わない、オールハンドのもみほぐし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お灸のメニューがある",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "温活でも人気のお灸",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約・問い合わせの電話番号(05012036675)は、Googleマップの電話050-1203-6675と一致",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "ご予約・お問い合わせ 05012036675",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップでは火曜が定休日",
+      "source": "https://maps.google.com/?cid=6042570427646731904",
+      "quote": "定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "公式サイトにInstagramへのリンクがある",
+      "source": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/",
+      "quote": "https://www.instagram.com/manboujieguyuan/",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(尾道・因島の店のページ)",
+      "url": "https://kakio-manbou-sekkotuin.jimdofree.com/おのみち-まんぼう/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6042570427646731904"
+    }
+  ],
+  "notes": "公式サイト(Jimdo)は、川崎市麻生区の同名の接骨院(044-543-9880)の案内と共用で、フッターに川崎の電話・住所がある。そのため、Googleマップがwebsiteに登録している『おのみち-まんぼう』のページ1枚だけを出どころにした(住所・電話は gbp と一致)。『メニュー』『アクセス』などの共用ページは使っていない。営業時間は公式側に記載が無く、Googleマップ(火曜定休、日曜は9:00-12:00/13:00-20:00)のみのため、時間は書かず火曜定休だけ『Googleマップでは』と断って書いた。『同業者からも信頼される』『不調の改善』『他院でよくならなかった』『おススメ』『妊活』などの語、院長の経歴、Googleマップのオーナー投稿は書かなかった。"
+}

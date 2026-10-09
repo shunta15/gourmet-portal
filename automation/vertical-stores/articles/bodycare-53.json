@@ -1,0 +1,80 @@
+{
+  "key": "bodycare-53",
+  "headline": "上越市大豆の、保険の取り扱いを案内する接骨院",
+  "lede": "新潟県上越市大豆にある接骨院です。月曜から土曜の午前と午後に施術があり、日曜と祝日が休診日です。駐車場は10台分あり、往診も相談を受け付けています。電話は025-522-5220です。",
+  "sections": [
+    {
+      "heading": "保険の扱い",
+      "body": "保険は、健康保険(国保・協会健保・組合健保・共済など)、75歳以上の方向けの保険、自賠責保険、労災保険の取り扱いが案内されています。対象は急性や亜急性の原因で生じた損傷とされ、状態や内容によっては保険で施術できない場合があるとも書かれています。柔道整復師の免許を取得していると案内され、予約・問い合わせは電話で受け付けています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "新潟県上越市大豆1-6-36にある",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "新潟県上越市大豆1-6-36",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術は午前8:00〜12:30、午後14:30〜19:30。土曜は18:00まで。日曜・祝日は休診",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "日曜・祝日休診 土曜は午後6:00まで",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場が10台分ある",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "駐車場 有り10台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "往診を希望する人は相談を受け付ける",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "往診を希望の方はご相談ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険は健康保険・後期高齢者向けの保険・自賠責保険・労災保険を案内している",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "▶︎ 医療健康保険（国保、協会健保、組合健保、共済など）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "保険の対象は急性・亜急性の原因で生じた損傷",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "急性、亜急性の原因によって発生する",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "症状や内容によっては保険で施術できない場合がある",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "症状や治療内容により保険での施術ができない場合があります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "柔道整復師の免許を取得している",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "柔道整復師の免許を取得しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約・問い合わせは電話025-522-5220",
+      "source": "https://shimotorisekkotuin.studio.site/",
+      "quote": "ご予約・お問い合わせ 025-522-5220",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://shimotorisekkotuin.studio.site/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14168947522699748057"
+    }
+  ],
+  "notes": "公式サイトはSTUDIO製(JavaScript描画)のため、Playwrightで本文を取得した(batch/lite-4/bodycare-53/pw.txt)。施術時間は公式サイトとGoogleマップが一致(月〜金8:00-12:30/14:30-19:30、土8:00-12:30/14:30-18:00、日定休)。ただし『月曜から土曜の午前と午後』と大まかに書き、タグは付けていない(20時以降の営業なし)。『神経伝達調整治療(NTA)』は名前に『治療』を含むため載せず、MCC、交通事故の施術(無料の記載・症状語)、料金、院長の名前・経歴は書かなかった。保険の対象にある損傷の名前(骨折・脱臼など)は並べず『急性や亜急性の原因で生じた損傷』にとどめた。"
+}

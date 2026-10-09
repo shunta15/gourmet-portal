@@ -1,1 +1,4 @@
-{ "key": "beauty-127", "reason": "place.website(https://hairsalonnavy.com/)のドメインが名前解決できず(curl・dig(8.8.8.8)とも失敗、時間をあけて2回試行)、公式サイトが開けない。" }
+{
+ "key": "beauty-127",
+ "reason": "紹介文なし(基本情報のみ): place.website(https://hairsalonnavy.com/)のドメインが名前解決できず(curlで再確認)、ウェブ検索(店名+住所)でも公式サイト・公式SNSを確認できなかった。Googleマップの記録以外の事実が集まらない。"
+}
