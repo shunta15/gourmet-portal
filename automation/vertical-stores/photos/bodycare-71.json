@@ -1,5 +1,30 @@
 {
   "key": "bodycare-71",
-  "images": [],
-  "note": "公式サイトのトップの画像は、スタッフ・お客さんの顔が写る写真、ストック写真、文字入りの画像だけで、店内・外観の写真が無かったため、写真なし。"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-71/s1.jpg",
+      "imageUrl": "https://stylelab.tokyo/wp-content/uploads/2024/02/img-naikan.jpg",
+      "pageUrl": "https://stylelab.tokyo/overview/",
+      "what": "受付カウンターと店名ロゴ",
+      "width": 640,
+      "height": 426
+    },
+    {
+      "path": "/_portal/vshops/bodycare-71/s2.jpg",
+      "imageUrl": "https://stylelab.tokyo/wp-content/uploads/2024/02/img-sejyutsu.jpg",
+      "pageUrl": "https://stylelab.tokyo/overview/",
+      "what": "ベッドのある施術室",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "path": "/_portal/vshops/bodycare-71/s3.jpg",
+      "imageUrl": "https://stylelab.tokyo/wp-content/uploads/2024/02/img-gaikan-e1708019026889.jpg",
+      "pageUrl": "https://stylelab.tokyo/overview/",
+      "what": "店の外観と入口",
+      "width": 640,
+      "height": 427
+    }
+  ],
+  "note": ""
 }

@@ -1,5 +1,30 @@
 {
   "key": "bodycare-117",
-  "images": [],
-  "note": "確認した公式サイトの画像は文字入りバナーとメニュー用の素材風画像ばかり。水沢院の外観写真は250pxで小さすぎ(500px未満)のため不使用"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-117/s1.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-soto.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "水沢院の外観",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-117/s2.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-naka4.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "待合室のソファと本棚",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-117/s3.jpg",
+      "imageUrl": "https://www.honetsugitsukapon.com/wp/wp-content/uploads/2018/10/mizusawa-img-naka5.jpg",
+      "pageUrl": "https://www.honetsugitsukapon.com/mizusawa/",
+      "what": "カーテンで仕切る施術室",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
 }

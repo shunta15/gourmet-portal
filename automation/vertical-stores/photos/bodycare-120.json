@@ -1,5 +1,22 @@
 {
   "key": "bodycare-120",
-  "images": [],
-  "note": "公式サイトの画像は人物(顔)の写真と背景素材ばかりで、条件に合う実物写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-120/s1.jpg",
+      "imageUrl": "https://bodyworkshop.jp/_img/ja/cms/43787/image/_/",
+      "pageUrl": "https://bodyworkshop.jp/",
+      "what": "腕を整える施術の様子",
+      "width": 1200,
+      "height": 493
+    },
+    {
+      "path": "/_portal/vshops/bodycare-120/s2.jpg",
+      "imageUrl": "https://bodyworkshop.jp/_img/ja/resource/9/cv_image/_/",
+      "pageUrl": "https://bodyworkshop.jp/",
+      "what": "脚の施術の様子",
+      "width": 1200,
+      "height": 799
+    }
+  ],
+  "note": ""
 }
