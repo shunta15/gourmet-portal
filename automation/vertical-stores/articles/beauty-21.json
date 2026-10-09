@@ -1,0 +1,264 @@
+{
+  "key": "beauty-21",
+  "headline": "吉祥寺駅北口から徒歩5分の、子ども連れも受け入れる整体サロン",
+  "lede": "揉みほぐしの基本コースは50分で、アロマオイルのトリートメントやフットトリートメントも選べます。吉祥寺東町の完全予約制の整体サロンで、子ども連れでの来店も受け入れています。",
+  "sections": [
+    {
+      "heading": "コースとオプション",
+      "body": "基本コースは50分で、全身の揉みほぐし、骨盤調整、ストレッチ、生活習慣や姿勢のアドバイスが内容です。100分のスペシャルコースは、基本コースとオプションやフットトリートメントを自由に組み合わせる形で、すべてを揉みほぐしにすることもできます。アロマオイルのコースは、全身の120分と部分の60分です。リンパドレナージュ、ハンドトリートメント、頭部マニュピレーションなどのオプションがあり、どのコースも10分単位で延長できます。"
+    },
+    {
+      "heading": "子ども連れの来店",
+      "body": "公式サイトには、お子様連れの方向けの案内ページがあります。プライベートサロンなので、多少子どもが泣いたり騒いだりしても気にしないとあり、一人遊びができる年齢なら施術ベッドのすぐ脇で遊んでいてよいとされています。小さな赤ちゃんは、ベビーカーごと入ってそのまま寝かせておく人もいます。付き添いの人が一緒に待つこともできますが、シッターは置いていません。"
+    },
+    {
+      "heading": "行き方と予約の方法",
+      "body": "吉祥寺駅北口から徒歩5分で、所在地は武蔵野市吉祥寺東町1-4-1の202です。定休日は水曜日です。完全予約制で、周囲に気兼ねなく過ごせる空間をうたっています。予約は電話のほか、LINEで希望の日時を送る方法でも受け付けていて、質問もLINEから送れます。施術するのは女性です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "基本コース",
+      "price": "5,300円",
+      "minutes": 50
+    },
+    {
+      "name": "フットトリートメント",
+      "price": "4,240円",
+      "minutes": 40
+    },
+    {
+      "name": "ヘッドマッサージ",
+      "price": "5,500円",
+      "minutes": 50
+    },
+    {
+      "name": "スペシャルコース",
+      "price": "10,000円",
+      "minutes": 100
+    },
+    {
+      "name": "フルボディ",
+      "price": "14,000円",
+      "minutes": 120
+    },
+    {
+      "name": "ハーフボディ",
+      "price": "7,500円",
+      "minutes": 60
+    },
+    {
+      "name": "リンパドレナージュ",
+      "price": "3,000円",
+      "minutes": 30
+    },
+    {
+      "name": "ハンドトリートメント",
+      "price": "3,000円",
+      "minutes": 30
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ可",
+      "factIndex": 7
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "東京都武蔵野市吉祥寺東町1-4-1-202にある",
+      "source": "http://www.koritoru-kanno.com/salon.html",
+      "quote": "〒180-0002 東京都武蔵野市吉祥寺東町1-4-1-202",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "吉祥寺駅北口から徒歩5分にある小さな整体サロンとしている",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "吉祥寺駅北口より徒歩5分にある小さな整体サロンです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制のプライベートサロン",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "完全予約制のプライベートサロンですから",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話とLINEで可能",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "ご予約はお電話の他、LINEからでも可能です。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術者は女性",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "施術者は女性ですので",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は水曜日",
+      "source": "http://www.koritoru-kanno.com/salon.html",
+      "quote": "定休日 水曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子様連れの方向けの案内ページがある",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "お子様連れの方へ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プライベートサロンのため、子どもが泣いたり騒いだりしても気にしないと案内",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "多少子どもが泣こうが騒ごうが気にすることはありません",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "1人遊びできる年齢の子どもは、施術ベッドのすぐ脇で遊んでいてよい",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "１人遊びできる年齢のお子さんなら施術ベッドのすぐ脇で遊んでいても大丈夫です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "小さな赤ちゃんはベビーカーごと中に入り、そのまま寝かせておける",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "ベビーカーごと中に入ってきて、そのまま寝かせておかれる方もいらっしゃいます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シッターは置いていない",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "シッターこそ置いてませんが",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付き添いの人が一緒に来て待つこともできる",
+      "source": "http://www.koritoru-kanno.com/with_child.html",
+      "quote": "付き添いの方がご一緒に来られて待っていていただくこともできます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制のため、周囲に気兼ねなくリラックスして施術を受けられるとしている",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "周囲に気兼ねすることなく、ゆったりとリラックスして施術が受けられます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "体に関する質問もLINEで問い合わせできる",
+      "source": "http://www.koritoru-kanno.com/",
+      "quote": "お体に関する質問等もお気軽にLINEよりお問い合わせください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "基本コースは50分5,300円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "基本コース 時間 50分 料金 5,300円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "基本コースの内容は全身の揉みほぐし、骨盤調整、ストレッチ、生活習慣や姿勢等のアドバイス",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "全身の揉みほぐし、骨盤調整、ストレッチ、生活習慣や姿勢等のアドバイス",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フットトリートメントは40分4,240円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "フットトリートメント 時間 40分 料金 4,240円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フットトリートメントはクリームを使った東洋式の足つぼ",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "クリームを使った東洋式の足つぼです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドマッサージは50分5,500円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "ヘッドマッサージ 時間 50分 料金 5,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドマッサージは首・デコルテ・腕のアロマオイルトリートメントの後にドライヘッドマッサージ",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "首、デコルテ、腕をアロマオイルを使ってトリートメント致します。その後、ドライヘッドマッサージを行います。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スペシャルコースは100分10,000円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "スペシャルコース 時間 100分 料金 10,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スペシャルコースは基本コースとオプション・フットトリートメント等を自由に組み合わせられる",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "オプションメニューやフットトリートメント等を自由に組み合わせできます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "100分全て揉みほぐしにもできる",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "100分全て揉みほぐしということもできます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマボディのフルボディは120分14,000円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "フルボディ 時間 120分 料金 14,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハーフボディは60分7,500円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "ハーフボディ 時間 60分 料金 7,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハーフボディは下肢の背面と背中、または背中・腕・デコルテのオイルトリートメント",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "下肢（足先から付け根）の背面＆背中",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オプションのリンパドレナージュは30分3,000円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "リンパドレナージュ 時間 30分 料金 3,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ハンドトリートメントは30分3,000円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "ハンドトリートメント 時間 30分 料金 3,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "頭部マニュピレーションは20分2,000円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "頭部マニュピレーション 時間 20分 料金 2,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "どのコースも10分ごとに延長でき、1,060円",
+      "source": "http://www.koritoru-kanno.com/price.html",
+      "quote": "延長（全てのコース） 時間 10分 料金 1,060円",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.koritoru-kanno.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12532628976317333753"
+    }
+  ],
+  "notes": "営業時間が食い違うため本文に時刻を書いていない: 公式サイトは「10:00～21:00・水曜休」、Googleマップは「月・火・木〜日 10:00–19:30・水曜定休」。定休日(水曜)は一致。閉店時刻が割れているので「夜遅くまで営業」は付けなかった。料金は公式に税込・税別の注記がないため、表記どおり「円」だけ載せた。メニュー名「アロマボディ」はフルボディ・ハーフボディの親見出しで、表では「フルボディ」「ハーフボディ」を名前にした。書かなかったこと: 冷え性・アレルギー・頭痛・眼の疲れ等「こんな人にお勧め」の欄、反射区の作用の説明、生理痛や更年期の相談の記述、プロフィール(施術者の経歴)、2022〜2024年の古いキャンペーン記事。施術者が女性である旨は公式トップのとおり。 【監査 audit-beauty-1】「子どもが泣いても騒いでも気にしない」の「多少」が落ちていたため補った。駅近タグは「吉祥寺駅北口より徒歩5分」(鉄道の駅)で根拠あり。"
+}

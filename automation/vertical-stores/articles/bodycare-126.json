@@ -1,0 +1,177 @@
+{
+  "key": "bodycare-126",
+  "headline": "寒河江市の接骨院。土日祝も営業、駐車場は歯科医院と共同",
+  "lede": "火曜が休みで、土曜、日曜、祝日も営業すると公式サイトが案内する、山形県寒河江市島東の接骨院です。予約は電話、ネット、LINEで受け付けていて、駐車場は同じ敷地の歯科医院と共同です。",
+  "sections": [
+    {
+      "heading": "メニューと施術の方針",
+      "body": "公式サイトのメニューには、自費施術、健康保険施術、体外衝撃波、3D EMS、セルフ脱毛・セルフフォトフェイシャル、フェイスリフト、コンディショニング調整が並んでいます。交通事故後の施術にも対応すると案内されています。骨をボキボキと鳴らさない、ソフトな施術を行うとしています。"
+    },
+    {
+      "heading": "行き方と営業日",
+      "body": "営業は午前9〜12時、午後14時30分〜19時30分で、火曜とGW・お盆・年末年始は休みです。住所は寒河江市島東76-1です。山形方面から車で来る場合は、国道112号から長崎大橋を渡って県道282号(産業通り)に入り、セブンイレブンを過ぎて約200mの左手と案内されています。佐藤歯科医院と同じ敷地で、駐車場は共同のため、どこに止めてもよいとされています。"
+    },
+    {
+      "heading": "予約と初回の流れ",
+      "body": "予約は電話、ネット予約、LINEで受け付けています。LINEでは、希望の日時(第3希望まで)と、名前、電話番号を送ります。初回は問診票などの記入があるため、予約時間の5〜10分前の来院をお願いしていて、所要時間は約1時間です。2回目以降は、施術の内容によって前後します。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "土日営業",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "山形県寒河江市島東76-1にある",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "〒991-0043山形県寒河江市島大字島東76-1",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "土・日・祝日も営業している",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "土・日・祝日も営業！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は午前9:00-12:00、午後14:30-19:30",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "営業時間：午前09:00～12:00、午後14:30～19:30",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は火曜日、GW、お盆、年末年始",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "定休日 火曜日、GW、お盆、年末年始",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話、ネット予約、LINE予約",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "ネット予約 LINE予約",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE予約では希望日時(第3希望まで)を送る",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "希望のご予約日時 （第3希望までいただけると予約がスムーズです）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LINE予約では名前と電話番号を送る",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "お名前と電話番号",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回は問診票などの記入があるため5〜10分早めの来院をお願いしている",
+      "source": "https://minamisagae-sekkotuinn.com/first/",
+      "quote": "問診票などの記入がありますので、予約時間より5分～10分位お早めにご来院をお願いしております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回は約1時間、2回目以降は施術内容で前後",
+      "source": "https://minamisagae-sekkotuinn.com/first/",
+      "quote": "初回は約1時間を頂いております。2回目以降は施術内容で時間が前後します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "山形方面から国道112号線で寒河江方面(長崎大橋)に向かう",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "国道112号線を通り、 寒河江方面(長崎大橋)に向かいます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長崎大橋を渡り終えたら左折し、県道282号線(産業通り)に入る",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "長崎大橋を渡り終えたら左折します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セブンイレブンを通り過ぎて約200m進むと左手にある",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "セブンイレブンを通り過ぎ、約200ｍ進むと左手にみえます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "佐藤歯科医院と同じ敷地にある",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "佐藤歯科医院さんと同じ敷地にあります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は佐藤歯科医院と共同で、どこに止めてもよい",
+      "source": "https://minamisagae-sekkotuinn.com/access/",
+      "quote": "車でお越しの際は佐藤歯科医院さんと共同ですのでどこに止めて頂いても構いません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『自費施術メニュー』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "自費施術メニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『健康保険施術』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "健康保険施術",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『体外衝撃波』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "体外衝撃波",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『3D EMS』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "3D EMS",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『セルフ脱毛/セルフフォトフェイシャル』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "セルフ脱毛/セルフフォトフェイシャル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『フェイスリフト』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "フェイスリフト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューの見出しに『コンディショニング調整』がある",
+      "source": "https://minamisagae-sekkotuinn.com/menu/",
+      "quote": "コンディショニング調整",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "交通事故施術が可能と案内している",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "交通事故施術可能",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボキボキしないソフトな施術を行っている",
+      "source": "https://minamisagae-sekkotuinn.com/",
+      "quote": "ボキボキしないソフトな施術を行っております。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://minamisagae-sekkotuinn.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5068155212444268154"
+    }
+  ],
+  "notes": "営業時間は公式(メニュー・アクセスの欄)とGoogleマップが一致: 火定休、他の曜日(土日含む)9:00-12:00・14:30-19:30。『土日営業』は公式の『土・日・祝日も営業！』とGoogleマップで確認。駅からの案内は無く(車の道順のみ)『駅近』なし。メニュー/料金のページは料金表が画像のため文字が読めず、menus は空にした(自費施術・体外衝撃波・3D EMSなどの初回限定価格は画像で、金額を確認できていない)。メニューの見出し(自費施術メニュー、健康保険施術、体外衝撃波、3D EMS、セルフ脱毛/セルフフォトフェイシャル、フェイスリフト、コンディショニング調整)は文字の見出しで確認済み。保険は『健康保険施術』のメニュー名があるだけで、適用の範囲の記載を読めていないため、本文はメニューの一つとして触れるにとどめた(広く使えるとは書いていない)。書かなかったこと: 『ヘルモア口コミ1位』『交通事故治療推奨院』『弁護士法人心 西尾先生の評価』などの称号・評価(画像の文字のため原文確認不可でもある)、お客様の声(ページ中の口コミ)、症状別ページ(頭痛・めまい・顎関節・ストレートネック・頸椎ヘルニア・自律神経など)、『根本改善』『再発防止のセルフケア』、5つの選ばれる理由、院長メッセージ、産後骨盤矯正認定院、初回限定キャンペーン(画像)、お支払い方法(画像)、LINEの申し込み画面。『治療』の語は本文に使っていない。住所は公式トップが『島大字島東76-1』、アクセスのページが『島島東76-1』、Googleマップが『島島東76-1』と表記が分かれるため、本文は『寒河江市島東76-1』とした。『土日祝も営業』は『祝日が火曜と重なる場合』などの扱いは確認していない。 道順は『山形方面から』の説明のみ読んだ(他方面は未読)。"
+}

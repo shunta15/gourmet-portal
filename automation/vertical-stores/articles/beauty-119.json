@@ -1,0 +1,268 @@
+{
+  "key": "beauty-119",
+  "headline": "富士宮市万野原新田の、まつげと眉と脱毛を扱うアイラッシュサロン",
+  "lede": "まつげエクステとまつ毛カールを軸に、眉や脱毛も扱うアイラッシュサロンです。所在地は静岡県富士宮市で、メンズメニューのページも設けられています。施術台は1台です。",
+  "sections": [
+    {
+      "heading": "資格と器具",
+      "body": "公式サイトは、美容師免許のほか、JBCAのアイコーディネーター検定を取得していると案内しています。各種認可の欄には保健所認可も載っています。エクステをつかむツイーザーは紫外線消毒器で消毒し、グルーの接着剤は客のまつ毛の状態などに応じて使い分けるとしています。個室での施術もうたっています。"
+    },
+    {
+      "heading": "エクステとカール",
+      "body": "エクステのカールはN、J、Cの3種類で、ソエルラッシュは3Dラッシュとフラットラッシュの組み合わせです。付け替えとリペアは本数で料金が分かれ、付け替え時は自店のオフが無料、他店のオフは有料です。まつ毛カールにはパッチテストの案内があり、約30分で無料です。付けまつげをオーダーメイドでつくるメニューもあります。"
+    },
+    {
+      "heading": "受付と行き方",
+      "body": "営業は9時から17時で、最終受付の時刻はメニューごとに15時、16時、16時30分と分かれています。富士宮道路の北山ICから車で5分、駐車場は3台です。店内は禁煙です。予約は専用のWEBページから行い、その前に健康や体調に関する注意事項を読むよう案内されています。住所は富士宮市万野原新田4000-21です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "マツエク 付替え Basic ～60本",
+      "price": "7,700円"
+    },
+    {
+      "name": "マツエク 付替え Basic ～180本",
+      "price": "13,200円"
+    },
+    {
+      "name": "マツエク リペア ～2week ～60本",
+      "price": "4,400円"
+    },
+    {
+      "name": "ラッシュリフト（まつ毛カール）",
+      "price": "¥7,150"
+    },
+    {
+      "name": "ラッシュリフト（まつ毛カール）学割",
+      "price": "¥6,650(学生証のご提示で¥500 OFF)"
+    },
+    {
+      "name": "他店オフ(付替え時)",
+      "price": "1,100円"
+    },
+    {
+      "name": "オフのみ",
+      "price": "2,200円"
+    },
+    {
+      "name": "オーダーメイドの付けまつげ ベーシック",
+      "price": "両目で3,000円"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "個室あり",
+      "factIndex": 12
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "静岡県富士宮市万野原新田4000-21にある",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "所在地 〒418-0001 静岡県富士宮市万野原新田４０００−２１",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は090-7606-4143",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "TEL 090-7606-4143",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "富士宮道路北山ICより車で5分",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "富士宮道路北山ICより車で5分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は3台",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "駐車場 有り（3台）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術台1台、洗い台1台、店内禁煙",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "設備 施術台1台、洗い台1台、店内禁煙",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜17:00",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "営業時間 9:00～17:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最終受付はメニューごとに15:00、16:00、16:30に分かれる",
+      "source": "https://sakurasaku-beauty.com/",
+      "quote": "最終受付：パラレルブロウ・ブロウラミネーション・全身脱毛/15:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リペア・美眉スタイリング・選べる3パーツ脱毛などは16:00、アイスパなどは16:30",
+      "source": "https://sakurasaku-beauty.com/",
+      "quote": "リペア・美眉スタイリング・美肌スパ・選べる3パーツ脱毛/16:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美容師免許取得とJBCA アイコーディネーター検定取得を案内している",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "美容師免許取得 JBCA アイコーディネーター検定取得",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "各種認可の欄に保健所認可がある",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "保健所認可",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "WEB予約は予約専用ページから",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "下記のボタンを押して、予約専用ページからご予約ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約前に健康や体調に関する注意事項を読むよう案内している",
+      "source": "https://sakurasaku-beauty.com/saloninfo",
+      "quote": "ご予約前に必ずお読みくださいませ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プライベートを重視した落ち着いた個室で施術するとうたう",
+      "source": "https://sakurasaku-beauty.com/",
+      "quote": "プライベートを重視した落ち着いた個室で、ゆっくりとリラックスして施術を受けていただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズメニューのページがある",
+      "source": "https://sakurasaku-beauty.com/",
+      "quote": "メンズメニューはこちら",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューは美眉・ブロウラミネーション、まつエク・まつ毛カール、脱毛、美肌エステ・フォトフェイシャルなど",
+      "source": "https://sakurasaku-beauty.com/",
+      "quote": "美眉・ブロウラミネーション まつエク・まつ毛カール 脱毛 美肌エステ・フォトフェイシャル",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステのカールにNカールがある",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "Nカール",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステのカールにJカールがある",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "Jカール",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステのカールにCカールがある",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "Cカール",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ソエルラッシュは3Dラッシュ(極細3本1束)とフラットラッシュの組み合わせ",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "・3Dラッシュ（極細3本1束）・フラットラッシュ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "グルー(接着剤)を客のライフスタイルや自まつ毛の状態に応じて使い分ける",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "当サロンではグルー（接着剤）の使い分けをしております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ツイーザーを紫外線消毒器で消毒する",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "ツイーザー（エクステをつかむ際のピンセット）などの器具を紫外線消毒器で消毒し",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付替えのBasicは本数の列が～60本から～180本まである",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "～170本 ～180本 付替え 7,700円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付替えのBasicは7,700円から13,200円",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "12,650円 13,200円 リペア",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リペア(～2week)の～60本は4,400円",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "リペア ～2week 4,400円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付替え時は当店オフ無料、他店オフは1,100円",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "付替え時 *当店オフ 無料♡ *他店オフ 1,100円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オフのみは2,200円",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "オフのみ 2,200円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ラッシュリフト(まつ毛カール)は¥7,150",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "ラッシュリフト（まつ毛カール） ¥7,150",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ラッシュリフトの学割は学生証の提示で¥500 OFFの¥6,650",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "学割【学生証のご提示で¥500 OFF】 ¥6,650",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パッチテストは約30分で無料",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "◇パッチテスト 約30分 無料",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "付けまつげのオーダーメイドはベーシックが両目で3,000円",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "ベーシック ⇒ 両目で3,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オーダーメイドの付けまつげは来店でデザインや色を決め、1週間以内の受け渡し",
+      "source": "https://sakurasaku-beauty.com/eyelash",
+      "quote": "一度ご来店いただきデザインや色を決定します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は月・火・木〜日が9:00–17:00",
+      "source": "https://maps.google.com/?cid=18120938284049866289",
+      "quote": "月 09:00–17:00 火 09:00–17:00",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://sakurasaku-beauty.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=18120938284049866289"
+    }
+  ],
+  "notes": "place.website(www.sakurasaku-eyelashsalon.com)は sakurasaku-beauty.com へ転送され、同じ店(店名・電話090-7606-4143・住所が一致)。営業時間・定休日は本文で一部だけ書いた: 営業9:00–17:00は公式サイトとGoogle マップ(水曜を除く)で一致するが、定休日は公式サイト内で食い違う(トップ「毎週水曜日」、サロン情報「毎週水曜日・月曜日(隔週)」)うえ、Google マップは水曜が「24時間営業」と表示されており不整合のため、定休日は本文に書いていない。アイシャンプーは文中「500円」、料金表「550円」で食い違うため書かなかった。書かなかったこと: 美肌エステ・小顔スパ等の効き目を思わせるメニュー名、脱毛・ブロウ・フォトフェイシャルのページ(取得せず)、「エクソソームトリートメント【医療レベル】」、ソエルラッシュの「自まつ毛に優しい・重さが半分」などの効能的な説明、アンティアレージゲルの吸着・無害化の説明、ビフォーアフター、医師への相談が必要な方のリスト、パッチテスト対象の疾患名、学生割引以外の割引。「メンズ歓迎」は「メンズメニューはこちら」のリンクを根拠にした(メンズ用のメニューページは取得していない)。料金表の本数と価格の対応は、表の列の並び(Basicの～60本〜～180本の11列と価格11個)による読み取り。「個室あり」は「落ち着いた個室で施術」というトップの記述による(自己申告のため本文は「うたう」の形)。"
+}

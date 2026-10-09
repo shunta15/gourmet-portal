@@ -1,0 +1,270 @@
+{
+  "key": "beauty-111",
+  "headline": "高崎問屋町駅から車で数分。完全個室をうたうエステサロン",
+  "lede": "「ピーリング専門店」と名乗る、高崎市飯玉町のエステサロンです。公式サイトは完全個室のプライベートサロンと案内しています。定休日は木曜日で、駐車場は3台あります。",
+  "sections": [
+    {
+      "heading": "部屋と設備",
+      "body": "施術ベッドは1台で、カウンセリングルーム、ホワイトニングルーム、ワークショップルームもあります。公式サイトは、アロマが香る雰囲気の中で施術を受けられるとうたっています。自家製ハーブティーや製酵素ジュースを取り入れ、クレンジングや洗顔料、化粧水などの商品も販売しています。"
+    },
+    {
+      "heading": "メニューの区分",
+      "body": "メニューは、フェイシャル、ブライダル、ボディトリートメント、セルフホワイトニングなどの区分に分かれています。フェイシャルには、PHA水光ピールトリートメント、光フェイシャル、BBL、ノーマルトリートメント、アロマスペシャルトリートメントなどがあり、光フェイシャルとBBLには回数別のコースもあります。ブライダルは電話で問い合わせる形です。"
+    },
+    {
+      "heading": "営業日と行き方",
+      "body": "営業は11時から20時で、定休日は木曜日です。最寄りの高崎問屋町駅からは車で数分で、近くにバス停もあります。住所は高崎市飯玉町50のパナシアマンション301です。支払いは各種クレジットカードと、楽天ペイ、au PAY、d払い、nanaco、WAONの電子マネーに対応しています。予約は電話か、サイト内の予約ボタンから受け付けています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ノーマルトリートメント",
+      "price": "￥5,500(税込)"
+    },
+    {
+      "name": "アロマスペシャルトリートメント (肌別パック付)",
+      "price": "￥8,800(税込)",
+      "minutes": 90
+    },
+    {
+      "name": "PHA水光ピールトリートメント",
+      "price": "￥13,000(税込)"
+    },
+    {
+      "name": "PHA水光ノンピールトリートメント",
+      "price": "￥9,900(税込)"
+    },
+    {
+      "name": "BBL (光フェイシャル) 1回",
+      "price": "￥12,000(税込)"
+    },
+    {
+      "name": "光フェイシャル 1回",
+      "price": "￥9,900(税込)"
+    },
+    {
+      "name": "アロマタッチ (40分)",
+      "price": "￥4,400(税込)",
+      "minutes": 40
+    },
+    {
+      "name": "初回セルフホワイトニング 8分×2回",
+      "price": "￥3,500(税込)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "個室あり",
+      "factIndex": 7
+    }
+  ],
+  "facts": [
+    {
+      "claim": "群馬県高崎市飯玉町50 パナシアマンション301にある",
+      "source": "https://anelatakasaki.com/",
+      "quote": "群馬県高崎市飯玉町50 パナシアマンション301",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は080-3532-4184",
+      "source": "https://anelatakasaki.com/",
+      "quote": "電話番号 080-3532-4184",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は11:00〜20:00、定休日は木曜日",
+      "source": "https://anelatakasaki.com/",
+      "quote": "営業時間 11:00 〜 20:00 定休日 木曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも木曜が定休日で、他の曜日は11:00–20:00",
+      "source": "https://maps.google.com/?cid=2551943330419128041",
+      "quote": "木 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはVISA/MasterCard/JCB/American Expressのカードに対応",
+      "source": "https://anelatakasaki.com/",
+      "quote": "VISA / MasterCard / JCB / American Express",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Diners/Discoverのカード、楽天ペイ、au PAY、d払い、nanaco、WAONにも対応",
+      "source": "https://anelatakasaki.com/",
+      "quote": "Diners / Discover / 楽天ペイ / au PAY / d払い / nanaco / WAON",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備・特徴は完全個室、施術ベッド数1台、カウンセリングルーム、ホワイトニングルーム、ワークショップルーム、駐車場3台完備",
+      "source": "https://anelatakasaki.com/",
+      "quote": "完全個室 施術ベッド数1台 カウンセリングルーム ホワイトニングルーム ワークショップルーム 駐車場3台完備",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全個室のプライベートサロンと案内している",
+      "source": "https://anelatakasaki.com/",
+      "quote": "完全個室のプライベートサロンのため、じっくり美と向き合えます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "最寄りの高崎問屋町駅から車で数分",
+      "source": "https://anelatakasaki.com/",
+      "quote": "最寄りである高崎問屋町駅からは車で数分の立地で営業しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "近くにバス停がある",
+      "source": "https://anelatakasaki.com/",
+      "quote": "近くにはバス停もございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場を完備している",
+      "source": "https://anelatakasaki.com/",
+      "quote": "駐車場も完備しておりますので",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話番号とご予約のボタンが並ぶ",
+      "source": "https://anelatakasaki.com/",
+      "quote": "080-3532-4184 ご予約はこちら",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "自家製ハーブティーや製酵素ジュースを取り入れている",
+      "source": "https://anelatakasaki.com/",
+      "quote": "施術だけでなく、自家製ハーブティーや製酵素ジュースで内側から身体の巡りを整えてキレイになりましょう",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレンジングや洗顔料、化粧水などの商品を販売している",
+      "source": "https://anelatakasaki.com/",
+      "quote": "クレンジングや洗顔料、化粧水など様々な商品を販売しております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマが香る雰囲気の中で施術を受けられるとうたう",
+      "source": "https://anelatakasaki.com/",
+      "quote": "アロマが香る優雅な雰囲気の中で、リラックスしてエステを心ゆくまで群馬でご堪能いただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにフェイシャルの区分がある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "フェイシャル PHA水光ピールトリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにブライダルメニューの区分がある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "ブライダルメニュー ブライダルコース 各種",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにボディトリートメントの区分がある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "ボディトリートメント アロマタッチ (40分)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにセルフホワイトニングの区分がある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "セルフホワイトニング 初回セルフホワイトニング",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ノーマルトリートメントは￥5,500(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "クレンジング⇒洗顔⇒トリートメント⇒マッサージ⇒パック⇒お仕上げ ￥5,500 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマスペシャルトリートメント(肌別パック付)は90分、￥8,800(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "お仕度含め90分の施術です。 ￥8,800 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマスペシャルトリートメント (肌別パック付)がある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "アロマスペシャルトリートメント (肌別パック付)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "PHA水光ピールトリートメントは￥13,000(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "すぐにメイクしていただけます。 ￥13,000 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "PHA水光ノンピールトリートメントは￥9,900(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "お肌に優しくアプローチします。 ￥9,900 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "BBL (光フェイシャル) 1回は￥12,000(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "エイジングケアに◎ ￥12,000 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "BBL (光フェイシャル)に6回、12回のコースがある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "BBL (光フェイシャル) 6回",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルに6回、12回のコースがある",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "光フェイシャル 6回",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャル 1回は￥9,900(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "本来の美しさを引き出します。 ￥9,900 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アロマタッチ (40分)は￥4,400(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "お仕度含め40分の施術です。 ￥4,400 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "初回セルフホワイトニングは8分×2回、￥3,500(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "初回セルフホワイトニング 8分×2回 ￥3,500 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セルフホワイトニング 3回は￥10,000(税込)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "セルフホワイトニング 3回 8分×2回 ￥10,000 (税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ブライダルコースは期間や予算に合わせて用意し、電話で問い合わせる(要問い合わせ)",
+      "source": "https://anelatakasaki.com/menu/",
+      "quote": "期間や予算に合わせてご用意しております。 お電話にてお問い合わせください。",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://anelatakasaki.com/"
+    },
+    {
+      "label": "公式サイト(メニュー)",
+      "url": "https://anelatakasaki.com/menu/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2551943330419128041"
+    }
+  ],
+  "notes": "営業時間(11:00〜20:00)と定休日(木曜)は公式サイトとGoogle マップで一致するため本文に書いた。夜遅くまで営業は付けていない(20時閉店)。Google マップの店名は「ハーブピーリング専門店LIME 高崎 by Anela」、公式サイトは「【肌質改善/ピーリング専門店】LIME高崎 By Anela」。書かなかったこと: 「お尻ピーリング」(メニュー名に【お尻のざらつき / 色素沈着改善】と効き目の語が付く)、エステ用ダーマペン(針を用いる施術で、公式の説明もなく扱いに迷うため載せていない)、BBLバストアップ(バストの変化を思わせるメニュー名)、各メニューの説明文(「ダウンタイムなし」「コラーゲン生成」「ニキビケア」「自律神経を整え」などの効き目の語)、「県内でも取扱い希少」(実績の自己申告)、ギャラリーのビフォーアフター、ブログ、ピーリング・フェイシャル・メンズ・レディースの特集ページ(取得せず)、歯のホワイトニング。「ピーリング専門店と名乗る」は公式サイトの題と、Google マップの店名にある「専門店」による。メニュー名の「PHA水光」は公式の表記のまま(説明文の「芸能人ピーリング」「話題」は写していない)。「個室あり」は「完全個室のプライベートサロン」という自己申告(本文は「案内」の形)。最寄り駅は「車で数分」で、徒歩の分数は無いため駅近は付けていない。予約ボタンの先(Hot Pepper Beauty、LINE)は見ていない。"
+}

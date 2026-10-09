@@ -1,0 +1,316 @@
+{
+  "key": "beauty-63",
+  "headline": "浜松市中央区葵東の、スタイリスト1人で営む美容室",
+  "lede": "スタイリスト1人で営む美容室です。浜松市中央区葵東にあり、カット、カラー、パーマ、縮毛矯正のほか、酵素を使うヘッドスパのメニューを案内しています。設立は2022年10月です。",
+  "sections": [
+    {
+      "heading": "メニューの並び",
+      "body": "メニュー表は、カット、カラー、パーマ、縮毛矯正、トリートメント、ヘッドスパの順に並びます。カットはシャンプー・ブロー込みの表示で、高校生と中学生の区分もあります。小学生以下は、シャンプー・ブローを付けると追加料金の表示です。前髪カットだけのメニューもあります。カラーはヘアカラーのほか、オーガニックヴィラロドラカラーとメテオカラーライトの設定です。パーマにはスパイラル、ツイスト、ポイント、メンズがあり、縮毛矯正には前髪だけ、顔周りだけのメニューもあります。表示はすべて税込です。"
+    },
+    {
+      "heading": "予約のしかた",
+      "body": "1人営業のため、予約をお願いしたいと案内しています。当日の予約も可能ですが、予約状況によっては希望の日時で受けられない場合があるため、問い合わせが必要です。前髪カットや顔まわりカットだけの予約もできます。窓口はホットペッパービューティー、公式LINE、Instagramで、電話は1人営業のため出るのが遅くなることがあります。"
+    },
+    {
+      "heading": "場所と営業時間",
+      "body": "営業は午前9時からで、金曜日だけ10時からです。カットの最終受付は18時(金曜日は19時)、カラーやパーマと組み合わせる場合は17時(金曜日は17時30分)で、定休日は毎週月曜と第二火曜です。住所は浜松市中央区葵東2丁目24-39の1階で、バス停の追分南から徒歩1分、店舗前に4台分の駐車スペースがあります。お子さま同伴にも対応し、支払いは各種クレジットカードやPayPayなどが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "CUT(シャンプー・ブロー込)",
+      "price": "¥4,950(税込)"
+    },
+    {
+      "name": "高校生CUT(シャンプー・ブロー込)",
+      "price": "¥4,400(税込)"
+    },
+    {
+      "name": "中学生CUT(シャンプー・ブロー込)",
+      "price": "¥3,850(税込)"
+    },
+    {
+      "name": "ヘアカラー",
+      "price": "¥7,700(税込)"
+    },
+    {
+      "name": "オーガニックヴィラロドラカラー",
+      "price": "¥8,800(税込)"
+    },
+    {
+      "name": "パーマ(シャンプー＋カット込)",
+      "price": "¥13,200(税込)"
+    },
+    {
+      "name": "縮毛矯正(シャンプー＋カット込)",
+      "price": "¥20,900(税込)"
+    },
+    {
+      "name": "クレンジング酵素ヘッドスパ",
+      "price": "¥2,200(税込)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "当日予約可",
+      "factIndex": 5
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "静岡県浜松市中央区葵東2丁目24-39 1Fにある",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "静岡県浜松市中央区葵東2丁目24-39 1F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2022年10月22日の設立",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "設立 2022年10月22日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "マンツーマンサロンとして開いたと案内している",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "マンツーマンサロン「Polku hair & rento」をオープンいたしました",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "1人営業のため予約をお願いしたいと案内している",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "1人営業のため予約していただけると助かります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタッフ数はスタイリスト1人",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "スタッフ数 スタイリスト1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日予約は可能だが、予約状況により希望の日時で受けられない場合がある",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "当日予約はできますか？ A. 可能です！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "希望の日時で受けられない場合がありお問い合わせを求めている",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "予約状況によりご希望の日にち、時間でお受けできない場合があります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "前髪カットや顔まわりカットだけでも予約できる",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "前髪カットや顔まわりカットだけでも予約できますか？ A. 大丈夫です！",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "1人営業のため電話に出るのが遅くなることがある",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "1人営業のため電話にでることが遅くなることがあります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約・問い合わせはHOT PEPPER BEAUTY・公式LINE・Instagramから",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "「HOT PEPPER BEAUTY」「公式LINE」「Instagram」から承っております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴OK",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ドリンクサービスあり",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "朝10時前でも受付OK",
+      "source": "https://www.polkuhair-rento.com/",
+      "quote": "朝10時前でも受付OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00から、金曜日は10:00から",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "営業時間 9:00~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラー・パーマは最終17:00、カットは最終18:00(金曜日はそれぞれ17:30、19:00)",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "カット+カラー・カット+パーマ 最終17:00 カット最終18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "金曜日は10:00からで、最終はカラー・パーマ17:30、カット19:00",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "カット+カラー、カット+パーマ 最終17:30 カット最終19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週月曜・第二火曜",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "定休日 毎週月曜・第二火曜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は店舗前の「A」のスペースで4台分",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "店舗前に4台分の駐車スペースがございます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "バス停「追分南」から徒歩1分",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "バス停「追分南」から徒歩1分。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは各種クレジットカード・PayPay・楽天Pay・メルPay・d払い",
+      "source": "https://www.polkuhair-rento.com/access.html",
+      "quote": "各種クレジットカード・PayPay ・楽天Pay・メルPay・d払い",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "料金はすべて税込",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "※すべて税込価格になります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カットはシャンプー・ブロー込み¥4,950",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "CUT シャンプー・ブロー込 ￥4,950",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "高校生CUT(シャンプー・ブロー込)は¥4,400",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "高校生CUT シャンプー・ブロー込 ￥4,400",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "中学生CUT(シャンプー・ブロー込)は¥3,850",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "中学生CUT シャンプー・ブロー込 ￥3,850",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "小学生以下CUTはシャンプー&ブロー＋¥550で¥2,750",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "小学生以下CUT シャンプー&ブロー＋￥550 ￥2,750",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "前髪CUTは¥550",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "前髪CUT ￥550",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘアカラーは¥7,700",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "ヘアカラー 全体カラー料金/根元カラー変更−¥550 白髪染め変更可能",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オーガニックヴィラロドラカラーは¥8,800",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "オーガニックヴィラロドラカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メテオカラーライトがある(¥9,900)",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "メテオカラーライト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーマは¥13,200(シャンプー＋カット込)",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "パーマ シャンプー＋カット込 ￥13,200",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スパイラルパーマ・ツイストパーマ・ポイントパーマ・メンズパーマがある",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "スパイラルパーマ シャンプー＋カット込 ￥15,400 ツイストパーマ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正は¥20,900(シャンプー＋カット込)",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "縮毛矯正 シャンプー＋カット込 ￥20,900",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "前髪縮毛矯正と顔周り縮毛矯正のメニューがある",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "前髪縮毛矯正 シャンプー＋カット込 ￥9,900 顔周り縮毛矯正",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "クレンジング酵素ヘッドスパは¥2,200",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "クレンジング酵素ヘッドスパ 酵素の力で頭皮をクリアにし、頭皮を保湿していきます ￥2,200",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スパ&トリートメントは¥4,400",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "スパ&トリートメント 豆乳発酵液、温泉水などで髪と地肌を潤いに浸して丸ごとパック ¥4,400",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘアクレンジングは¥1,650",
+      "source": "https://www.polkuhair-rento.com/menu.html",
+      "quote": "ヘアクレンジング",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "縮毛矯正が得意なサロンとしている",
+      "source": "https://www.polkuhair-rento.com/about.html",
+      "quote": "縮毛矯正が得意なサロンです。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラー剤にterra by ESSENSITYを使うと案内",
+      "source": "https://www.polkuhair-rento.com/about.html",
+      "quote": "「terra by ESSENSITY」を使用。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプーにLebeL ONEを使うと案内",
+      "source": "https://www.polkuhair-rento.com/about.html",
+      "quote": "LebeL ONEのシャンプー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は月曜定休、金曜10:00–20:00、他は9:00–19:00",
+      "source": "https://maps.google.com/?cid=2868340493746875371",
+      "quote": "月 定休日 火 09:00–19:00",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.polkuhair-rento.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2868340493746875371"
+    }
+  ],
+  "notes": "営業時間の閉店は書いていない: 公式サイトは「9:00~ カラー・パーマ最終17:00/カット最終18:00、金曜は10:00~ 最終17:30/19:00」(閉店時刻の記載なし)、Google マップは火〜日 9:00–19:00(金 10:00–20:00)。始業と定休日は一致するので本文に書き、最終受付は公式の表記どおりに書いた。「当日予約可」は FAQ に『可能です！』とあり、『希望の日時で受けられない場合がある』の条件を本文に添えた。『完全予約制』とも書かれているが、FAQ の予約の要否は『予約していただけると助かります』のため、本文は『予約をお願いしたい』にとどめた。メニュー名の『髪質改善LINK…』『頭皮改善酵素ヘッドスパ』は決まり7により載せていない。『最高峰Xトリートメント』も『最高』の語が入るため載せていない。メテオカラーライトの説明文(髪質改善…)は載せていない(名前だけ本文に出した)。ブランド(terra by ESSENSITY、LebeL ONE、DEMI DO)の説明文は効能を含むので本文に使わなかった(facts 37・38は参考)。縮毛矯正は『得意なサロン』という自己申告があるが、本文には使っていない。『4席以下の小型サロン』『男性スタッフ』も使っていない。 【監査】本文の「カットはシャンプー・ブロー込み」は小学生以下(シャンプー&ブロー＋¥550)・前髪CUT(込みの表記なし)に当てはまらない条件抜けだったため、一般・高校生・中学生に限る形に直した。カラー・パーマの最終受付(17:00／金17:30)も本文に添えた。"
+}

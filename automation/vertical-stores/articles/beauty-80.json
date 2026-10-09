@@ -1,0 +1,248 @@
+{
+  "key": "beauty-80",
+  "headline": "歌舞伎町の美容サロン。光脱毛とフェイシャルを用意",
+  "lede": "営業は11時からで、予約制の美容サロンです。場所は東京都新宿区歌舞伎町の泉ビル201で、光脱毛を中心に、フェイシャルや光フェイシャルのメニューが並びます。脱毛の料金は女性と男性で分かれています。",
+  "sections": [
+    {
+      "heading": "脱毛のパーツ区分",
+      "body": "脱毛は、SSからLLまでのパーツ区分と、顔セット、VIOの各部とセット、全身から選びます。SSは鼻下・口下・あご下・手指など、Sは脇・襟足・ほほ・ひざ・ひじ、Mは背中の上下とひじの上下、Lは胸・おなか・ヒップ・ひざ下、LLはひざ上です。全身は、顔とVIOを含めるかどうかで4通りに分かれます。回数券があり、美肌脱毛と全身脱毛で割引率が違います。"
+    },
+    {
+      "heading": "施術の流れ",
+      "body": "流れは、1対1の無料カウンセリング、消毒液での清拭、冷却ジェルの塗布、ゴーグルをかけての光脱毛の照射、保湿の美容液を塗るアフタートリートメントの順です。毛周期に関係なく施術できるとして、2週間に1度の通い方を挙げています。脇の照射は3分ほどと案内されています。"
+    },
+    {
+      "heading": "フェイシャルと場所",
+      "body": "フェイシャルには、クレンジングや洗顔に始まる毛穴洗浄と保湿パックの50分と、光フェイシャルがあります。光フェイシャルは、光照射のみの30分と、洗顔や美容ジェルを含む70分です。住所は新宿区歌舞伎町2-41-12の泉ビル201号で、電話は080-3007-6889です。営業は11時からで、予約制です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "SSパーツ",
+      "price": "1回 女性 1,100円／男性 2,200円"
+    },
+    {
+      "name": "Sパーツ",
+      "price": "1回 女性 2,200円／男性 3,300円"
+    },
+    {
+      "name": "顔セット",
+      "price": "1回 女性 8,900円／男性 15,000円"
+    },
+    {
+      "name": "VIOセット",
+      "price": "1回 女性 9,900円／男性 12,400円"
+    },
+    {
+      "name": "全身脱毛",
+      "price": "顔なし・VIOなし 1回 女性 38,500円／男性 44,000円、顔あり・VIOあり 1回 女性 44,000円／男性 49,000円"
+    },
+    {
+      "name": "毛穴洗浄+保湿パック",
+      "price": "4,980円",
+      "minutes": 50
+    },
+    {
+      "name": "光フェイシャル",
+      "price": "9,500円",
+      "minutes": 70
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 27
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "東京都新宿区歌舞伎町2-41-12 泉ビル201にある",
+      "source": "http://hipocket.co.jp/sakura/about.html",
+      "quote": "〒160-0021 東京都新宿区歌舞伎町2-41-12 泉ビル201",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は080-3007-6889で、予約制",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "TEL. 080-3007-6889「予約制」",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は11:00から",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "【営業時間】11:00～Last (相談可)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "毛周期に関係なく施術でき、2週間に1度受けられると案内",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "当店では毛周期に関係なく施術可能なので、2週間に1度施術を受けていただけます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SSパーツは1回 女性1,100円／男性2,200円(鼻下・口下・あご下・鼻・額・手指・手甲・足指・足甲・乳輪周り・おへそ周り)",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "SSパーツ 1回 女性 1,100円／男性 2,200円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Sパーツは1回 女性2,200円／男性3,300円(脇・襟足・ほほ・フェイスライン・ひざ・ひじ)",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "Sパーツ 1回 女性 2,200円／男性 3,300円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Mパーツは1回 女性4,400円／男性5,500円(背中上・背中下・ひじ上・ひじ下)",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "Mパーツ 1回 女性 4,400円／男性 5,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Lパーツは1回 女性6,600円／男性7,700円(胸・おなか・ヒップ・ひざ下)",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "Lパーツ 1回 女性 6,600円／男性 7,700円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "LLパーツは1回 女性8,800円／男性9,900円(ひざ上)",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "LLパーツ 1回 女性 8,800円／男性 9,900円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "顔セットは1回 女性8,900円／男性15,000円",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "顔セット 1回 女性 8,900円／男性 15,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "VIO各部(Vライン・Iライン・Oライン)は1回 女性3,500円／男性4,500円",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "VIO各部 1回 女性 3,500円／男性 4,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "VIOセットは1回 女性9,900円／男性12,400円",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "VIOセット 1回 女性 9,900円／男性 12,400円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛(顔なし・VIOなし)は1回 女性38,500円／男性44,000円",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "顔なし・VIOなし 1回 女性 38,500円／男性 44,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛(顔あり・VIOあり)は1回 女性44,000円／男性49,000円",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "顔あり・VIOあり 1回 女性 44,000円／男性 49,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛は顔・VIOの有無で4通りの料金がある",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "顔あり・VIOなし 1回 女性 41,000円／男性 46,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "美肌脱毛回数券は5回10%off、10回20%off",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "美肌脱毛回数券 5回 10％off 10回 20％off",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全身脱毛回数券は5回20%off、10回40%off",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "全身脱毛回数券 5回 20％off 10回 40％off",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "脱毛の流れの最初は、1対1の無料カウンセリング",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "１対１の無料カウンセリングにて",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "消毒液を含ませた綿で皮膚の表面を清拭する",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "消毒液を含ませた綿で皮膚の表面を十分に清拭します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術箇所に冷却ジェルを塗る",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "お肌を保護する冷却ジェルを塗ります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光脱毛の照射では目を保護するゴーグルをかける",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "光から目を保護するゴーグルをかけます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "わきの下なら3分程度で終了",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "わきの下なら３分程度で終了。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "照射後は保湿効果のある美容液を塗布する",
+      "source": "http://hipocket.co.jp/sakura/dep.html",
+      "quote": "冷却後のお肌に、保湿効果のある美容液を塗布し、",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "毛穴洗浄+保湿パックは50分・4,980円",
+      "source": "http://hipocket.co.jp/sakura/facial.html",
+      "quote": "美顔パック、仕上げ 50分 4,980円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "毛穴洗浄+保湿パックの工程はクレンジング、洗顔、角質ピーリング、パック、スチーマー…",
+      "source": "http://hipocket.co.jp/sakura/facial.html",
+      "quote": "クレンジング、洗顔、角質ピーリング、パック、スチーマーで皮脂を吸引、",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルは光照射のみで30分・6,000円",
+      "source": "http://hipocket.co.jp/sakura/facial.html",
+      "quote": "光照射のみ 30分 6,000円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "光フェイシャルはクレンジング・洗顔・美容ジェル・光照射などを含む70分・9,500円",
+      "source": "http://hipocket.co.jp/sakura/facial.html",
+      "quote": "光フャイシャル クレンジング・洗顔・美容ジェル・光照射・鎮静パックヘッドスパ・お仕上げ 70分 9,500円",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日11:00–22:30",
+      "source": "https://maps.google.com/?cid=7736028984723044801",
+      "quote": "月 11:00–22:30 火 11:00–22:30",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの住所",
+      "source": "https://maps.google.com/?cid=7736028984723044801",
+      "quote": "東京都新宿区歌舞伎町２丁目４１−１２ 泉ビル 201",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://hipocket.co.jp/sakura/index.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7736028984723044801"
+    }
+  ],
+  "notes": "営業時間が食い違う(トップなど各ページは「11:00〜Last(相談可)」、アクセスのページは「11:00〜23:00」、Google マップは毎日11:00〜22:30)ため、本文には『営業は11時から』だけを書いた。『夜遅くまで営業』のタグは、公式のアクセスのページ(23:00)と Google マップ(22:30)がどちらも21時以降のため付けた。「メンズ歓迎」は脱毛料金表に男性料金の列があることによる。店名は Google マップが「サクラチャンビューティ＆スパ」、公式サイトは「Sakura Beauty&Spa」(著作表記は Sakurachan-Beauty＆Spa)。書かなかったこと: ニキビ・シミ・赤ら顔などの症状名、痩身・サイズダウン、『効果をご実感』『お悩みを解決』などの宣伝文、フェイシャルの『美肌小顔コルギ』『スリムセルゼロフェイシャル』『顔ニキビ集中ケア』『背中ニキビ集中ケア』(名前に効き目や症状を含むため)、バストや痩身のメニュー(バストのページは効き目の文が中心で、料金の見出しも読み取れなかったため使っていない)、『抜けが早い』『痛みが少ない』の評判、初回限定料金、光フェイシャルの説明文。税の表記は公式サイトに見当たらず、『1,100円』の表記のまま載せた。『光フャイシャル』は公式サイトの表記(誤記と思われる)のため、メニュー名は『光フェイシャル』と直した。"
+}
