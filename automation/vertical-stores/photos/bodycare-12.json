@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-12",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-12/s1.jpg",
+      "imageUrl": "https://bodycarefuruya.com/wp/wp-content/uploads/2022/11/三島市オステオパシー.jpg",
+      "pageUrl": "https://bodycarefuruya.com/",
+      "what": "院長が腕を施術する様子",
+      "width": 1200,
+      "height": 745
+    },
+    {
+      "path": "/_portal/vshops/bodycare-12/s2.jpg",
+      "imageUrl": "https://bodycarefuruya.com/wp/wp-content/uploads/2022/11/三島市人気整体.jpg",
+      "pageUrl": "https://bodycarefuruya.com/",
+      "what": "頭部を施術する様子",
+      "width": 1150,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-12/s3.jpg",
+      "imageUrl": "https://bodycarefuruya.com/wp/wp-content/uploads/2022/11/三島市整体.jpg",
+      "pageUrl": "https://bodycarefuruya.com/",
+      "what": "脚を施術する様子",
+      "width": 1200,
+      "height": 745
+    }
+  ],
+  "note": ""
+}

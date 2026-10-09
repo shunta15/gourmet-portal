@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-14",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-14/s1.jpg",
+      "imageUrl": "https://rebody-bonesetting.com/_img/ja/cms/44788/field_image/_/image.webp",
+      "pageUrl": "https://rebody-bonesetting.com/",
+      "what": "ベッドでの施術の様子",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "path": "/_portal/vshops/bodycare-14/s2.jpg",
+      "imageUrl": "https://rebody-bonesetting.com/_img/ja/cms/44789/field_image/_/image.webp",
+      "pageUrl": "https://rebody-bonesetting.com/",
+      "what": "トレーニングルームの様子",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "path": "/_portal/vshops/bodycare-14/s3.jpg",
+      "imageUrl": "https://rebody-bonesetting.com/_img/ja/article/1276/image/_/image.webp",
+      "pageUrl": "https://rebody-bonesetting.com/",
+      "what": "スタッフの写真",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "note": ""
+}

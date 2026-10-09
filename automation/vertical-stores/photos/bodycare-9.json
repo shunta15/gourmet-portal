@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-9",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-9/s1.jpg",
+      "imageUrl": "https://kiyoshigaoka-seikotsu.jp/wp-content/uploads/top-reason-01.jpg",
+      "pageUrl": "https://kiyoshigaoka-seikotsu.jp/",
+      "what": "きよしヶ丘整骨院の外観",
+      "width": 660,
+      "height": 467
+    },
+    {
+      "path": "/_portal/vshops/bodycare-9/s2.jpg",
+      "imageUrl": "https://kiyoshigaoka-seikotsu.jp/wp-content/uploads/top-about.jpg",
+      "pageUrl": "https://kiyoshigaoka-seikotsu.jp/",
+      "what": "二台のベッドが並ぶ施術室",
+      "width": 1200,
+      "height": 899
+    },
+    {
+      "path": "/_portal/vshops/bodycare-9/s3.jpg",
+      "imageUrl": "https://kiyoshigaoka-seikotsu.jp/wp-content/uploads/81942566be9afe447e2397d5aa1b105f-7.jpg",
+      "pageUrl": "https://kiyoshigaoka-seikotsu.jp/",
+      "what": "施術室で施術する様子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

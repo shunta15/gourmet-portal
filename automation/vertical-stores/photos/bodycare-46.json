@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-46",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-46/s1.jpg",
+      "imageUrl": "https://hari-nezumi.net/home/img/img21bjh0347_1.jpg",
+      "pageUrl": "https://hari-nezumi.net/",
+      "what": "黄色い外壁の院の外観",
+      "width": 1200,
+      "height": 798
+    },
+    {
+      "path": "/_portal/vshops/bodycare-46/s2.jpg",
+      "imageUrl": "https://hari-nezumi.net/home/img/img21bjh0509_1.jpg",
+      "pageUrl": "https://hari-nezumi.net/",
+      "what": "運動器具のある広い室内",
+      "width": 1200,
+      "height": 798
+    },
+    {
+      "path": "/_portal/vshops/bodycare-46/s3.jpg",
+      "imageUrl": "https://hari-nezumi.net/home/img/img2239g0111_1.jpg",
+      "pageUrl": "https://hari-nezumi.net/",
+      "what": "器具を使う運動の様子",
+      "width": 640,
+      "height": 450
+    }
+  ],
+  "note": ""
+}
