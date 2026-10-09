@@ -1,5 +1,15 @@
 {
   "key": "bodycare-108",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-108/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rn4ZkE43eNvratmkBnyagNA7DmiHwfHEG1rBL1IsJnwqIyLo9Bo1lD82l5ogdEPnnRzQR8sBns-oEe8npnH8c_4Xfch7nbK5eZKA3WJ2-QbPwytE0BG-rZcMSVetgvsPoGFMnovw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5088114683047955288",
+      "what": "ベッドのある施術室",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

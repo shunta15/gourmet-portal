@@ -1,5 +1,15 @@
 {
   "key": "bodycare-60",
-  "images": [],
-  "note": "Googleマップのサイトは施術院紹介の掲載サイト(yurashi.net)のみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-60/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQsDiBJAmy0H0gaWjLiQHzGlgAw_eeNXSac2amqMVDshIo0y73eX_xlYpUTGwuh3O8fMp14aA-F_mdUDOc-VAn4iflkmjKk9LFapYgyD0p-nwgfa9Fchy7Fij-BgeHyr8jjtDl=s1200",
+      "pageUrl": "https://maps.google.com/?cid=687596294936745315",
+      "what": "木造の建物の外観",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトは施術院紹介の掲載サイト(yurashi.net)のみで自前の公式サイトなし / Google マップの写真"
 }

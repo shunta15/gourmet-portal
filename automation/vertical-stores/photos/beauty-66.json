@@ -1,5 +1,15 @@
 {
   "key": "beauty-66",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-66/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSoKCg4VDyeGA_l5Uli1tEW-Asz2Ew0wjRwpOfeawV02u111nwPXJwiJtvBP8ExtLCmTXlresPTsqdNpQEQZv9gj_zljDdCMhZNVS1MfN_pci3R8Rp0sugBYXPNwyJxgR955B15g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16993679147576010595",
+      "what": "窓辺に椅子が並ぶ明るい店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }

@@ -1,5 +1,15 @@
 {
   "key": "bodycare-58",
-  "images": [],
-  "note": "Googleマップのサイトは予約・掲載サイト(EPARK接骨・鍼灸)のみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-58/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8inQJ9lifEaSAhpmPzG0vnZ65AJeGfSfk23JBDyUnRaU-Z1-Qm1-47Mafv1Tr8h3UBdtmxypN15emyTMeEKVUdgBjSYfgpP2vc9HqhCIpojcMiQ1HzmQ54cjabOWnQ7yPI7my=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17812756798521967357",
+      "what": "ソフィア整骨院の店頭の外観",
+      "width": 1200,
+      "height": 926,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトは予約・掲載サイト(EPARK接骨・鍼灸)のみで自前の公式サイトなし / Google マップの写真"
 }

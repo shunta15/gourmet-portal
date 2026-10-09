@@ -1,5 +1,15 @@
 {
   "key": "beauty-57",
-  "images": [],
-  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ)"
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-57/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCuuGyQnw6r4rMFLAeSy5QkxMeDS-tcWsfn7W3OboBc2wEXUtG8Em--tQtet6sg4E6zNWhcq4MfTBorO8tlWT_pj-ApHfPUfca-S2egvg8lM4dJAT8ZguHKRJlHfcokG19OtJ0qg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4416916615364769501",
+      "what": "白い内装のネイル施術室",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトなし(Googleマップの掲載先がホットペッパービューティーのみ) / Google マップの写真"
 }
