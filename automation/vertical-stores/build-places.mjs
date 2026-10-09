@@ -46,6 +46,7 @@ const rawOpt = (n) => {
   return i >= 0 ? argv[i + 1] : undefined;
 };
 const DRY = flag("dry");
+const WITH_PRICE = flag("with-price");
 const GBP_DIR = path.join(HERE, "gbp");
 const PILOT_FILE = opt("pilot", path.join(HERE, "pilot.json"));
 const ARTICLES_DIR = opt("articles", path.join(HERE, "articles"));
@@ -320,7 +321,8 @@ function buildArticle(vertical, d, article, key) {
     .map((m) => {
       const o = { name: str(m?.name) };
       if (!o.name) return null;
-      if (str(m?.price)) o.price = str(m.price);
+      // 料金は既定では載せない(オーナー指示 2026-10-09「メニューの料金とかあんまり入れなくていい」)。載せるときは --with-price
+      if (WITH_PRICE && str(m?.price)) o.price = str(m.price);
       if (Number.isFinite(m?.minutes) && m.minutes > 0) o.minutes = m.minutes;
       return o;
     })

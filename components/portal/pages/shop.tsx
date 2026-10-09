@@ -262,7 +262,7 @@ export function shopPage(key: PortalVertical) {
                       </div>
                     ))}
                   </dl>
-                  <p className="mp-art-note">料金・営業時間は変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
+                  <p className="mp-art-note">メニューや営業時間は変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
                 </aside>
 
                 <div className="mp-art-body">
