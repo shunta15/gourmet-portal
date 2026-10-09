@@ -1,0 +1,30 @@
+{
+  "key": "beauty-123",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-123/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/525a91_7a443b09b2ac4217ab9fce492a878719~mv2.jpg",
+      "pageUrl": "https://hairsalon-nendo.com/",
+      "what": "店の入口",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-123/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/525a91_4c4d1b6211ec4d1a9844fd44b95e2a48~mv2.jpg",
+      "pageUrl": "https://hairsalon-nendo.com/",
+      "what": "シャンプー台と店内",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-123/s3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/525a91_35e35fe7cc634ee09e793f23e320b4cf~mv2.jpg",
+      "pageUrl": "https://hairsalon-nendo.com/",
+      "what": "セット面の鏡と椅子",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}

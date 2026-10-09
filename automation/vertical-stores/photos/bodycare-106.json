@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-106",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-106/s1.jpg",
+      "imageUrl": "https://kadomori-kogao.com/wp-content/uploads/2026/06/⭐️代官山の店舗写真はこちらを希望です-scaled.jpg",
+      "pageUrl": "https://kadomori-kogao.com/salon/daikanyama/",
+      "what": "受付とカウンター",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-106/s2.jpg",
+      "imageUrl": "https://kadomori-kogao.com/wp-content/uploads/2026/06/IMG_0331-scaled.jpg",
+      "pageUrl": "https://kadomori-kogao.com/salon/daikanyama/",
+      "what": "施術室のベッド",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-106/s3.jpg",
+      "imageUrl": "https://kadomori-kogao.com/wp-content/uploads/2026/06/IMG_0283-scaled.jpg",
+      "pageUrl": "https://kadomori-kogao.com/salon/daikanyama/",
+      "what": "待合のソファ",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "note": ""
+}
