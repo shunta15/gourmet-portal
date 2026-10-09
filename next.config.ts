@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
-import { NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 
 // 総合サイトの公開スイッチ（lib/portal/launch.ts と同じ判定。proto-portal/LAUNCH.md）。ビルド時に評価する。
 const PORTAL_LIVE = portalLiveFromEnv();
@@ -66,6 +66,14 @@ const nextConfig: NextConfig = {
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),
       ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE ? [{ source: "/gourmet/feature/:id", destination: "/feature/:id", permanent: true }] : []),
+      // 特集記事のトップ（一覧・地域別・特集を探す）の内部のパスも同じ。/gourmet/feature/search は上の :id にも当たるが、同じ行き先（/feature/search）になる
+      ...(PORTAL_LIVE && NOREN_FEATURE_INDEX_REWRITE
+        ? [
+            { source: "/gourmet/feature", destination: "/feature", permanent: true },
+            { source: "/gourmet/feature/search", destination: "/feature/search", permanent: true },
+            { source: "/gourmet/feature/region/:key", destination: "/feature/region/:key", permanent: true },
+          ]
+        : []),
     ];
   },
   async rewrites() {
@@ -80,6 +88,14 @@ const nextConfig: NextConfig = {
             { source: "/", destination: "/portal-home" },
             ...(NOREN_SHOP_REWRITE ? [{ source: "/restaurant/:id", destination: "/gourmet/restaurant/:id" }] : []),
             ...(NOREN_FEATURE_REWRITE ? [{ source: "/feature/:id((?!search$)[^/]+)", destination: "/gourmet/feature/:id" }] : []),
+            // 特集記事のトップ（一覧・特集を探す・地域別）も同じ仕組み（URL は /feature・/feature/search・/feature/region/<key> のまま）
+            ...(NOREN_FEATURE_INDEX_REWRITE
+              ? [
+                  { source: "/feature", destination: "/gourmet/feature" },
+                  { source: "/feature/search", destination: "/gourmet/feature/search" },
+                  { source: "/feature/region/:key", destination: "/gourmet/feature/region/:key" },
+                ]
+              : []),
           ]
         : PORTAL_OFF_SOURCES.map((source) => ({ source, destination: "/__portal-off" })),
       afterFiles: [],

@@ -1,0 +1,163 @@
+/* ====================================================================
+   暖簾 — 特集記事のトップ（/feature・/feature/region/<key>・/feature/search）
+   暖簾の文法だけで組む: 墨の地・竿に掛かる布・生成りの紙・朱の印・明朝。新しい色・書体は足さない。
+   変数（--sumi・--kinari・--shu…・--cloth・--pleat・--rodg）は noren.css と feature.css（.vN）。クラスは vI-。
+   カードの暖簾（vH-ac-*）は特集ページの「関連」と同じ部品（feature.css）。
+   ==================================================================== */
+
+/* ---------- 見出しの区画 ---------- */
+.vI-hero{position:relative;isolation:isolate;overflow:hidden;background:var(--sumi-4);padding:calc(var(--hd) + 14px) var(--gx) clamp(46px,8vh,84px);min-height:min(76svh,620px);display:flex;align-items:flex-end}
+.vI-hero.is-compact{min-height:0;padding-bottom:clamp(34px,6vh,64px)}
+.vI-hero-img{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(.9) sepia(.2)}
+.vI-hero-sh{position:absolute;inset:0;z-index:-2;background:
+  linear-gradient(180deg,rgba(15,12,10,.92) 0%,rgba(15,12,10,.5) 40%,rgba(15,12,10,.82) 82%,#0f0c0a 100%),
+  radial-gradient(ellipse 60% 70% at 80% 38%,rgba(200,54,29,.14),transparent 70%)}
+.vI-hero-rod{position:absolute;left:0;right:0;top:var(--hd);height:12px;z-index:1;background:var(--rodg);box-shadow:0 8px 16px -6px #000}
+.vI-hero-in{width:100%;max-width:1500px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,6vw,110px);align-items:end}
+.vI-hero-tx{min-width:0}
+.vI-hero .vF-crumbs{grid-row:auto;grid-column:auto;padding:0}
+.vI-hero .vF-crumbs ol{flex-wrap:wrap}
+.vI-hero .vF-crumbs a{min-width:44px;justify-content:center}
+.vI-hero .vF-crumbs span{max-width:min(24em,60vw)}
+.vI-eye{margin:clamp(22px,5vh,48px) 0 14px}
+.vI-h1{font:700 clamp(36px,5.2vw,84px)/1.28 var(--f-min);letter-spacing:.06em;color:var(--kinari);text-wrap:balance;max-width:16em;
+  text-shadow:0 0 54px rgba(200,54,29,.34),0 2px 26px rgba(0,0,0,.85)}
+.vI-h1.is-s{font-size:clamp(30px,3.8vw,56px);max-width:none}
+.vI-h1 em{color:var(--shu-hi)}
+.vI-h1 .n{font:300 1.12em/1 var(--f-lat);font-variant-numeric:lining-nums;letter-spacing:.02em;color:var(--shu-hi);margin:0 .12em}
+.vI-lead{margin-top:clamp(16px,3vh,28px);max-width:36em;font:500 clamp(15px,1.25vw,18px)/2 var(--f-min);letter-spacing:.05em;color:var(--kinari-2);text-wrap:pretty}
+.vI-back{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;font:500 15px/1.4 var(--f-min);letter-spacing:.14em;color:var(--kinari);border-bottom:1px solid var(--line-2);transition:color .3s,border-color .3s}
+.vI-back:hover{color:var(--shu-hi);border-color:var(--shu-hi)}
+
+/* 竿に掛かった暖簾（字は 1 字ずつ。最後の 1 枚に印） */
+.vI-noren{display:flex;gap:10px;align-self:start;padding-top:2px}
+.vI-noren li{display:flex;flex-direction:column;align-items:center;gap:14px;width:clamp(70px,6.6vw,100px);height:clamp(240px,34vh,340px);padding:26px 4px 16px;background:var(--pleat),var(--cloth);
+  box-shadow:inset 0 14px 18px -10px #000,0 22px 30px -18px #000;border-bottom:2px solid rgba(239,230,214,.16);transform-origin:50% 0;animation:vNnb 6.5s ease-in-out infinite;animation-delay:calc(var(--d) * -.9s)}
+.vI-noren b{font:400 clamp(40px,4.4vw,64px)/1 var(--f-brush);color:var(--kinari);opacity:.94}
+.vI-noren .vN-seal{margin-top:auto;width:clamp(34px,3.2vw,44px);height:clamp(34px,3.2vw,44px);font-size:clamp(19px,1.9vw,25px);box-shadow:none}
+
+/* ---------- 区画の共通 ---------- */
+.vI-sec{padding:clamp(60px,10vh,110px) var(--gx)}
+.vI-sec--latest{background:var(--sumi-2);border-top:1px solid var(--line)}
+.vI-sec-in{max-width:1400px;margin:0 auto}
+.vI-sh{display:flex;justify-content:space-between;align-items:flex-end;gap:14px 28px;flex-wrap:wrap;margin-bottom:clamp(24px,5vh,44px)}
+.vI-sh p{margin-top:12px;font:400 15px/1.9 var(--f-sans);letter-spacing:.06em;color:var(--kinari-2)}
+.vI-sh-link{display:inline-flex;align-items:center;min-height:44px;font:700 14px/1.2 var(--f-min);letter-spacing:.24em;color:var(--kinari);border-bottom:1px solid var(--line-2);transition:color .3s,border-color .3s}
+.vI-sh-link:hover{color:var(--shu-hi);border-color:var(--shu-hi)}
+
+/* 生成りの紙（地域） */
+.vI-paper{position:relative;z-index:2;margin-top:-14px;padding:clamp(76px,12vh,130px) var(--gx) clamp(56px,9vh,100px)}
+.vI-paper .vI-sec-in{position:relative}
+.vI-paper .vF-h2d{color:var(--ink)}
+.vI-paper .vF-h2d em{color:var(--shu-ink)}
+.vI-paper .vI-sh p{color:var(--ink-2)}
+.vI-paper .vI-sh-link{color:var(--ink);border-color:rgba(26,20,16,.4)}
+.vI-paper .vI-sh-link:hover{color:var(--shu-ink);border-color:var(--shu-ink)}
+
+/* 札（地域・テーマ） */
+.vI-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+.vI-tile{position:relative;display:flex;flex-direction:column;justify-content:center;gap:6px;min-height:108px;padding:18px 20px 16px;transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .3s,background .3s}
+.vI-tile .en{font:italic 400 14px/1.2 var(--f-lat);letter-spacing:.22em;text-transform:uppercase}
+.vI-tile .nm{font:700 22px/1.3 var(--f-min);letter-spacing:.1em}
+.vI-tile .ct{font:400 13px/1.6 var(--f-sans);letter-spacing:.08em}
+.vI-tile:hover{transform:translateY(-4px)}
+.vI-tile--paper{background:var(--paper-hi);border:1px solid rgba(26,20,16,.14);border-top:3px solid var(--shu-ink);color:var(--ink);box-shadow:0 14px 22px -18px rgba(60,40,20,.55)}
+.vI-tile--paper:hover{box-shadow:0 24px 28px -18px rgba(60,40,20,.6)}
+.vI-tile--paper .en{color:var(--shu-ink)}
+.vI-tile--paper .ct{color:var(--ink-3)}
+.vI-tile--cloth{background:var(--pleat),var(--cloth);border-top:3px solid #4a392c;color:var(--kinari);box-shadow:0 18px 26px -18px #000}
+.vI-tile--cloth:hover{border-top-color:var(--shu-hi)}
+.vI-tile--cloth .en{color:var(--shu-hi)}
+.vI-tile--cloth .ct{color:var(--kinari-2)}
+
+/* 下の入口（検索・全件） */
+.vI-cta{display:flex;justify-content:center;align-items:center;gap:14px clamp(22px,3vw,44px);flex-wrap:wrap;padding:clamp(48px,8vh,84px) var(--gx) clamp(70px,11vh,120px);background:var(--sumi-4);border-top:1px solid var(--line)}
+.vI-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px 0 calc(30px + .24em);background:var(--shu);color:#fff7ee;font:700 14px/1 var(--f-min);letter-spacing:.24em;cursor:pointer;border:0;transition:background .3s}
+.vI-btn:hover{background:#d8452a}
+.vI-ulink{display:inline-flex;align-items:center;min-height:52px;font:700 14px/1.5 var(--f-min);letter-spacing:.2em;color:var(--kinari);border-bottom:2px solid var(--kinari);transition:color .3s,border-color .3s}
+.vI-ulink:hover{color:var(--shu-hi);border-color:var(--shu-hi)}
+
+/* ---------- 特集のカード ---------- */
+.vI-list{padding:clamp(48px,8vh,88px) var(--gx) clamp(70px,11vh,120px);background:var(--sumi)}
+.vI-list-in{max-width:1500px;margin:0 auto}
+.vI-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,236px),1fr));gap:clamp(30px,3.4vw,46px) clamp(14px,1.8vw,26px)}
+.vI-grid>li{min-width:0}
+.vI-card{display:flex;flex-direction:column;gap:16px;height:100%;color:var(--kinari)}
+.vI-vis{position:relative;display:block;height:clamp(340px,26vw,390px);overflow:hidden;background:#1a1410;isolation:isolate;box-shadow:0 26px 40px -24px #000}
+.vI-vis .vH-ac-cloth{height:calc(100% - 122px)}
+.vI-vis .vH-ac-cloth .vN-seal{width:36px;height:36px;font-size:20px}
+.vI-vis.is-nophoto .vH-ac-cloth{height:calc(100% - 24px)}
+.vI-card:hover .vH-ac-cloth,.vI-card:focus-visible .vH-ac-cloth{transform:translateY(-104%)}
+.vI-card:hover .is-nophoto .vH-ac-cloth,.vI-card:focus-visible .is-nophoto .vH-ac-cloth{transform:none}
+.vI-card:hover .vH-ac-ph img,.vI-card:focus-visible .vH-ac-ph img{transform:scale(1.06)}
+.vI-card:focus-visible{outline:2px solid var(--shu-hi);outline-offset:4px}
+.vI-cap{display:flex;flex-direction:column;gap:7px;padding:0 2px;min-width:0}
+.vI-meta{display:flex;align-items:center;gap:.9em;flex-wrap:wrap}
+.vI-no{font:italic 400 15px/1 var(--f-lat);letter-spacing:.16em;color:var(--kinari-3);font-variant-numeric:lining-nums}
+.vI-tag{font:700 12px/1 var(--f-min);letter-spacing:.2em;color:var(--shu-hi);border:1px solid rgba(234,106,78,.55);padding:5px 7px 5px calc(7px + .2em)}
+.vI-kk{font:500 12px/1.5 var(--f-lat);letter-spacing:.22em;text-transform:uppercase;color:var(--kinari-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vI-ti{font:700 17px/1.65 var(--f-min);letter-spacing:.04em;color:var(--kinari);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.vI-sb{font:400 13px/1.8 var(--f-sans);letter-spacing:.04em;color:var(--kinari-2);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.vI-card:hover .vI-ti{color:var(--shu-hi)}
+.vI-empty{padding:clamp(50px,10vh,100px) 0;text-align:center;font:500 16px/2.2 var(--f-min);letter-spacing:.08em;color:var(--kinari-2)}
+.vI-empty a{display:inline-flex;align-items:center;min-height:44px;margin-left:.8em;color:var(--shu-hi);border-bottom:1px solid currentColor}
+
+/* 他の地域 */
+.vI-others{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:clamp(44px,8vh,84px);padding-top:clamp(24px,4vh,36px);border-top:1px solid var(--line)}
+.vI-others>span{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);margin-right:8px}
+.vI-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--line-2);font:500 15px/1 var(--f-min);letter-spacing:.14em;color:var(--kinari);transition:background .3s,color .3s}
+.vI-chip:hover{background:var(--kinari);color:var(--ink)}
+
+/* ---------- 特集を探す（フォーム・件数・テーマ） ---------- */
+.vI-form{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,.8fr) minmax(0,1.6fr) auto;gap:14px;align-items:end;margin:0 0 clamp(26px,5vh,44px)}
+.vI-fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.vI-fld label{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em}
+.vI-fld select,.vI-fld input{width:100%;min-height:52px;padding:0 16px;background:rgba(239,230,214,.06);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1 var(--f-sans);color-scheme:dark}
+.vI-fld select option{color:#1a1410;background:#f8f2e5}
+.vI-fld input::placeholder{color:var(--kinari-3)}
+.vN .vI-fld select:focus-visible,.vN .vI-fld input:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+.vI-bar{display:flex;justify-content:space-between;align-items:baseline;gap:12px 24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;margin-bottom:clamp(26px,5vh,42px)}
+.vI-bar-c{font:500 14px/1.7 var(--f-min);letter-spacing:.12em;color:var(--kinari-2)}
+.vI-bar-n{font:300 clamp(24px,2.6vw,34px)/1 var(--f-lat);font-variant-numeric:lining-nums;letter-spacing:.04em;color:var(--kinari)}
+.vI-bar-n em{font-size:1.6em;color:var(--shu-hi)}
+.vI-bar-n small{font:500 14px/1 var(--f-min);letter-spacing:.2em;margin-left:.4em}
+.vI-tags{display:flex;flex-wrap:wrap;gap:10px}
+.vI-hash{display:inline-flex;align-items:center;gap:.8em;min-height:44px;padding:0 16px;background:var(--pleat),var(--cloth);border-top:3px solid #4a392c;color:var(--kinari);font:500 15px/1 var(--f-min);letter-spacing:.1em;transition:border-color .3s,background .3s}
+.vI-hash .c{font:italic 400 15px/1 var(--f-lat);letter-spacing:.06em;color:var(--kinari-3);font-variant-numeric:lining-nums}
+.vI-hash:hover{border-top-color:var(--shu-hi)}
+.vI-hash.on{background:var(--shu);border-top-color:var(--shu)}
+.vI-hash.on .c{color:#ffe3d8}
+
+/* ---------- スマホ ---------- */
+@media (max-width:820px){
+  .vI-hero{min-height:0;padding-bottom:40px}
+  .vI-hero.is-compact{padding-bottom:36px}
+  .vI-hero-in{grid-template-columns:minmax(0,1fr);gap:26px}
+  .vI-hero-tx{order:1}
+  .vI-noren{order:2;gap:6px;align-self:start}
+  .vI-noren li{width:58px;height:168px;padding:16px 2px 12px;gap:8px}
+  .vI-noren b{font-size:36px}
+  .vI-noren .vN-seal{width:32px;height:32px;font-size:18px}
+  .vI-h1{font-size:clamp(32px,9vw,46px)}
+  .vI-h1.is-s{font-size:clamp(28px,8vw,40px)}
+  .vI-lead{font-size:15px}
+  .vI-sh{flex-direction:column;align-items:flex-start}
+  .vI-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .vI-tile{padding:16px 14px 14px;min-height:100px}
+  .vI-tile .nm{font-size:19px;letter-spacing:.06em}
+  .vI-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 12px}
+  .vI-vis{height:300px}
+  .vI-vis .vH-ac-cloth{height:calc(100% - 104px);left:4%;right:4%;padding:18px 4px 12px}
+  .vI-vis .vH-ac-cloth b{font-size:calc(var(--fs,20px) * .8)}
+  .vI-vis .vH-ac-go{font-size:13px;padding:30px 10px 12px;letter-spacing:.12em}
+  .vI-ti{font-size:15px;line-height:1.6}
+  .vI-sb{font-size:13px}
+  .vI-form{grid-template-columns:minmax(0,1fr);gap:14px}
+  .vI-form .vI-btn{width:100%}
+  .vI-cta{flex-direction:column}
+  .vI-cta .vI-btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .vI-noren li{animation:none}
+  .vI-tile,.vI-card .vH-ac-cloth,.vI-card .vH-ac-ph img{transition:none}
+}

@@ -21,6 +21,15 @@ export const NOREN_SHOP_REWRITE = true;
 export const NOREN_FEATURE_REWRITE = true;
 
 /**
+ * 特集記事のトップ（/feature・地域別 /feature/region/<key>・特集を探す /feature/search）を暖簾にする。
+ * 内部のパスは app/gourmet/feature/page.tsx・app/gourmet/feature/region/[key]/page.tsx・app/gourmet/feature/search/page.tsx。
+ * true のあいだ、公開スイッチ ON では /feature → /gourmet/feature、/feature/region/:key → /gourmet/feature/region/:key、/feature/search → /gourmet/feature/search に差し替わり
+ * （ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
+ * 元に戻すなら false（/feature・/feature/region/<key>・/feature/search は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
+ */
+export const NOREN_FEATURE_INDEX_REWRITE = true;
+
+/**
  * 書き換え（rewrites）を通ってきた動的ルートの `params.id` を、元の ID に戻す。
  * 実測（2026-10-09、next dev）: `/feature/<日本語の ID>` を `/gourmet/feature/:id` に書き換えると、`params.id` が百分率エンコードのまま
  * （`%E3%81%82…`）で届く（直接開いたときは復号済みで届く）。ID に `%XX` が入っていれば 1 回復号する（本物の ID に `%` は含まれない）。
