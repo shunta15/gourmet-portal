@@ -16,6 +16,9 @@
  *     LocalBusiness 系（HairSalon・Hotel・Museum など）: name と address
  *     Article        : headline と author.name
  * - ページ単位の検査: 総合トップ以外は BreadcrumbList が1つあり、最後の項目の URL が canonical と一致する。
+ * - 星・口コミを入れない（すべてのページ）: aggregateRating・review・reviewRating・ratingValue・ratingCount・reviewCount・bestRating が、どのノードのどの深さにも無い。
+ *   新業種の店ページ（/beauty/shop/{id}・/bodycare/shop/{id}。実在の店のデータ lib/places/generated/*.json）は、ビルド出力に無ければ（next dev など）--base のサーバーから取って検査する。
+ *   店ページには LocalBusiness 系のノード（name が店名）が1つあること。
  * 違反があれば終了コード 1。
  */
 import fs from "node:fs";
@@ -124,9 +127,14 @@ function urlPathOf(file) {
 }
 
 const pages = [];
-if (!fs.existsSync(APP)) {
-  console.error("ビルド出力（.next/server/app）が無い。先に npm run build を実行してください。");
-  process.exit(2);
+const HAS_BUILD = fs.existsSync(APP);
+if (!HAS_BUILD) {
+  // ビルド出力が無くても、--base（next dev など起動中のサーバー）があれば、動的ページと新業種の店ページだけ検査する
+  if (!BASE) {
+    console.error("ビルド出力（.next/server/app）が無い。先に npm run build を実行してください（または --base で起動中のサーバーを指定）。");
+    process.exit(2);
+  }
+  console.log("ビルド出力（.next/server/app）が無いので、--base のサーバーから取れるページだけ検査する");
 }
 /** その HTML の .meta の status が 200（または .meta が無い）か。next start で 404 を踏むと 404 の HTML がキャッシュされるので除く用 */
 function is200(f) {
@@ -141,7 +149,7 @@ function is200(f) {
 // そのとき index.html はグルメのトップ（`/` として出ない）なので検査しない。OFF のときは portal-home.html が 404 なので index.html がグルメのトップ。
 const portalHomeFile = path.join(APP, "portal-home.html");
 const portalLive = fs.existsSync(portalHomeFile) && is200(portalHomeFile);
-for (const f of walk(APP)) {
+for (const f of HAS_BUILD ? walk(APP) : []) {
   let u = urlPathOf(f);
   if (u === "/portal-home") u = "/";
   else if (u === "/" && portalLive) continue;
@@ -169,8 +177,38 @@ for (const u of ["/map", "/map?pref=kyoto", "/videos", "/videos?v=gourmet", "/fi
   else dynamicSkipped.push(`${u}（${r.status}）`);
 }
 
+// 新業種の店ページ（実データあり）。ビルド出力に無ければ、--base のサーバーから取る
+const SHOPS = [];
+for (const v of ["beauty", "bodycare"]) {
+  const f = path.join(ROOT, "lib/places/generated", `${v}.json`);
+  if (!fs.existsSync(f)) continue;
+  for (const p of JSON.parse(fs.readFileSync(f, "utf8")).places) SHOPS.push({ url: `/${v}/shop/${p.id}`, name: p.name });
+}
+for (const sh of SHOPS) {
+  if (builtSet.has(sh.url)) continue;
+  if (!BASE) {
+    dynamicSkipped.push(sh.url);
+    continue;
+  }
+  const r = await fetch(BASE + encodeURI(sh.url));
+  if (r.status === 200) pages.push({ url: sh.url, html: await r.text(), from: "server" });
+  else dynamicSkipped.push(`${sh.url}（${r.status}）`);
+}
+
 const counts = {};
 const violations = [];
+/** 星・口コミのプロパティ（どの深さにも入れない） */
+const RATING_KEYS = new Set(["aggregateRating", "review", "reviews", "reviewRating", "ratingValue", "ratingCount", "reviewCount", "bestRating", "worstRating"]);
+function* ratingKeys(o, trail = "") {
+  if (Array.isArray(o)) {
+    for (let i = 0; i < o.length; i++) yield* ratingKeys(o[i], trail);
+  } else if (o && typeof o === "object") {
+    for (const [k, v] of Object.entries(o)) {
+      if (RATING_KEYS.has(k)) yield trail + k;
+      yield* ratingKeys(v, trail + k + ".");
+    }
+  }
+}
 let blocks = 0;
 for (const pg of pages) {
   const re = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
@@ -189,6 +227,14 @@ for (const pg of pages) {
   for (const n of nodes) {
     for (const t of [].concat(n["@type"] ?? ["(なし)"])) counts[t] = (counts[t] ?? 0) + 1;
     for (const e of checkNode(n, pg.url)) violations.push(e);
+    for (const k of ratingKeys(n)) violations.push(`${pg.url}: 星・口コミのプロパティ ${k} がある（入れない）`);
+  }
+  // 新業種の店ページ: LocalBusiness 系のノードが 1 つ（name が店名）
+  const shop = SHOPS.find((x) => x.url === pg.url);
+  if (shop) {
+    const lb = nodes.filter((n) => [].concat(n["@type"] ?? []).some((t) => LOCAL_BUSINESS.has(t)));
+    if (lb.length !== 1) violations.push(`${pg.url}: LocalBusiness 系のノードが ${lb.length} 個（1 個であるべき）`);
+    else if (lb[0].name !== shop.name) violations.push(`${pg.url}: LocalBusiness の name（${lb[0].name}）が店名（${shop.name}）と違う`);
   }
   // ページ単位
   const isHome = pg.url === "/";

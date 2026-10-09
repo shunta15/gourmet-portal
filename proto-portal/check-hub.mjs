@@ -9,7 +9,8 @@
  *          古い言い回し（業種をまたいで・街とお店、人と人・Prototype）が画面に無い
  *  B 色: 2 色（sometsuke・akagane）のどちらかで出る。20 回開いて両方出る（片方に偏り過ぎない）／ 最初の描画のあとで色が変わらない（ちらつき 0）／
  *        フッターの色が輪の色に合う／ 入る → 戻るで同じ色
- *  C 業種の扱い: グルメ＝/gourmet（掲載中）、ビューティー・ボディケア＝/beauty・/bodycare（「ページを見る」）、ペット・おでかけ・ステイ＝リンク無し（押しても移動しない）／
+ *  C 業種の扱い: 店の数が 1 以上の業種は「掲載中」（実数。「◯◯に入る」）、0 の業種は「掲載準備中」。数は lib/places/generated/{beauty,bodycare}.json の件数（グルメは DB なので 1 以上であること）。
+ *        ビューティー・ボディケアが掲載中なら「N店」の実数だけ（特集・いま営業中は出ない）、掲載準備中なら「ページを見る」。ペット・おでかけ・ステイは掲載 0 件＝リンク無し（押しても移動しない）／
  *        「掲載準備中」は選んでいる業種の 1 回だけ／ 「さがす」が /find の 1 つ
  *  D 数字: グルメの掲載店・特集・いま営業中が出る。 営業中 ≤ 営業時間が確かな店 ≤ 掲載店
  *  E 輪を回す: ドラッグ（PC はマウス・スマホは指の横スワイプ）・矢印キー（← →）で輪の角度が動く。逆向きは逆に回る
@@ -54,6 +55,17 @@ const THEMES = ["sometsuke", "akagane"];
 const FOOT_BG = { sometsuke: "rgb(24, 38, 90)", akagane: "rgb(5, 10, 24)" };
 const NAMES = ["グルメ", "ビューティー", "ボディケア", "ペット", "おでかけ", "ステイ"];
 const HREFS = ["/gourmet", "/beauty", "/bodycare", null, null, null];
+/**
+ * 業種ごとの掲載数の期待値。掲載中か準備中かは、この数で決まる（1 以上＝掲載中。components/portal/hubs・lib/portal/hub.ts と同じ決め方）。
+ * ビューティー・ボディケアは lib/places/generated/*.json の places の数。ペット・おでかけ・ステイはデータが無いので 0。
+ * グルメは DB（数は固定しない。1 以上であること）なので null。
+ */
+const generatedCount = (v) => {
+  const f = path.join(here, "..", "lib", "places", "generated", `${v}.json`);
+  return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")).places.length : 0;
+};
+const COUNTS = [null, generatedCount("beauty"), generatedCount("bodycare"), 0, 0, 0];
+const LIVE = COUNTS.map((c) => c === null || c > 0);
 
 /**
  * コンソールエラーと、失敗したリクエスト（404 など）を集める。
@@ -205,12 +217,26 @@ for (const vp of [
       sr: document.querySelector(".ng-sr")?.textContent.trim() ?? "",
       deadLinks: [...document.querySelectorAll(".ng a")].map((a) => a.getAttribute("href")).filter((h) => /^\/(pet|leisure|stay)(\/|$)/.test(h || "")),
       facts: !!document.querySelector(".ng-facts:not([data-off])"),
+      // 掲載中の業種の数字: 最初の数（N店）と、数字の組の数（グルメは 3、ほかの掲載中は 1）
+      shops: Number((document.querySelector(".ng-facts:not([data-off]) b")?.textContent ?? "").replace(/,/g, "")),
+      // 見える数字の組（見えない場所取り data-ghost は数えない）
+      factSpans: document.querySelectorAll(".ng-facts:not([data-off]) > span:not([data-ghost])").length,
     }));
     if (i === 0) check(s.state === "掲載中" && s.go === "/gourmet" && s.goText === "グルメに入る" && s.facts, "グルメ: 掲載中・「グルメに入る」→ /gourmet・数字あり", `グルメ: ${JSON.stringify(s)}`);
-    else if (i < 3) check(s.state === "掲載準備中" && s.go === HREFS[i] && s.goText === "ページを見る" && !s.facts, `${NAMES[i]}: 掲載準備中・「ページを見る」→ ${HREFS[i]}`, `${NAMES[i]}: ${JSON.stringify(s)}`);
+    else if (LIVE[i]) {
+      // 掲載中（店の数が 1 以上）: グルメと同じ形。「N店」の実数だけ（特集・いま営業中は出ない）
+      check(
+        s.state === "掲載中" && s.go === HREFS[i] && s.goText === `${NAMES[i]}に入る` && s.facts && s.shops === COUNTS[i] && s.factSpans === 1,
+        `${NAMES[i]}: 掲載中・「${NAMES[i]}に入る」→ ${HREFS[i]}・${COUNTS[i]}店（実数）のみ`,
+        `${NAMES[i]}（掲載 ${COUNTS[i]} 件）: ${JSON.stringify(s)}`,
+      );
+    } else if (i < 3) check(s.state === "掲載準備中" && s.go === HREFS[i] && s.goText === "ページを見る" && !s.facts, `${NAMES[i]}: 掲載準備中・「ページを見る」→ ${HREFS[i]}`, `${NAMES[i]}: ${JSON.stringify(s)}`);
     else check(s.state === "掲載準備中" && s.go === null && s.deadLinks.length === 0, `${NAMES[i]}: 掲載準備中と出るだけ。リンク無し`, `${NAMES[i]}: ${JSON.stringify(s)}`);
-    if (i > 0) check(s.prep === 1, `${NAMES[i]}: 「掲載準備中」は画面に 1 回`, `${NAMES[i]}: 「掲載準備中」が ${s.prep} 回`);
-    if (i > 0) check(s.sr.startsWith(NAMES[i]) && s.sr.includes("掲載準備中"), `${NAMES[i]}: 選ぶと読み上げ（role=status）が「${s.sr}」`, `${NAMES[i]}: 読み上げが合わない: ${JSON.stringify(s.sr)}`);
+    if (i > 0) {
+      check(s.prep === (LIVE[i] ? 0 : 1), `${NAMES[i]}: 「掲載準備中」は画面に ${LIVE[i] ? 0 : 1} 回`, `${NAMES[i]}: 「掲載準備中」が ${s.prep} 回`);
+      const want = LIVE[i] ? "掲載中" : "掲載準備中";
+      check(s.sr.startsWith(NAMES[i]) && s.sr.includes(want), `${NAMES[i]}: 選ぶと読み上げ（role=status）が「${s.sr}」`, `${NAMES[i]}: 読み上げが合わない: ${JSON.stringify(s.sr)}`);
+    }
   }
   // どの業種を選んでも、見出し・リード・6 つの入口の位置が動かない（.ng の上端からの距離。1px も）
   {

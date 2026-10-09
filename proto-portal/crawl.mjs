@@ -4,8 +4,8 @@
  *   PORTAL_LAUNCHED=1 npm run build && PORTAL_LAUNCHED=1 npx next start -p 3242   # 別ターミナルで
  *   node proto-portal/crawl.mjs [--base http://localhost:3242]
  *
- * - 主要 URL が 200、存在しない URL が 404、canonical・JSON-LD（パース可・パンくず）・robots（新業種は件数ゲートで noindex、
- *   総合トップ・/gourmet は index）・title/description の重複なし・見出し・パンくず表示と JSON-LD の一致・共有画像・
+ * - 主要 URL が 200、存在しない URL が 404、canonical・JSON-LD（パース可・パンくず）・robots（新業種は件数ゲート＝その業種のサイトマップに
+ *   載っているページだけ index、載っていなければ noindex。総合トップ・/gourmet は index）・title/description の重複なし・見出し・パンくず表示と JSON-LD の一致・共有画像・
  *   内部リンク切れなし・SNS/共有ボタン・サイト内検索（/find・/search-index.json）を調べる。
  * - 最後に `PROBLEMS N` を出す。N が 0 なら合格。1 以上なら終了コード 1。
  * - 公開スイッチ OFF のビルドの検査は compare-off.mjs（main との比較）。この巡回は ON 専用。
@@ -22,11 +22,25 @@ globalThis.fetch = async (...a) => {
     }
   }
 };
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 const argv = process.argv.slice(2);
 const argi = argv.indexOf('--base');
 const B = (argi >= 0 ? argv[argi + 1] : 'http://localhost:3242').replace(/\/$/, '');
 const ok200=['/','/gourmet','/beauty','/beauty/area/tokyo','/beauty/hair','/beauty/hair/tokyo','/bodycare/seitai/osaka','/pet','/pet/trimming','/leisure/onsen/kanagawa','/stay/area/hokkaido','/stay/ryokan','/bodycare/scene/weekend-open','/beauty/scene/late-night','/area/tokyo','/area/aichi','/area/okinawa','/beauty/sitemap.xml','/station','/station/kyoto','/station/kyoto/祇園四条','/station/hyogo/神戸三宮','/station/tokyo/蒲田','/station/niigata/直江津','/station/sitemap.xml','/videos','/videos/sv-nazatu-1','/videos/sv-nazatu-review','/videos/sitemap.xml','/map','/map?pref=kyoto','/station/kyoto/祇園四条?open=1','/find?q=三宮','/find?q=京都','/find','/find?q=zzzz','/photos','/photos/sitemap.xml','/omakase','/omakase?r=kinki&who=solo&b=3000&m=men','/list','/station/kyoto/烏丸/和食・割烹'];
 const exp404=['/beauty/area/xxx','/beauty/nosuch','/beauty/shop/abc','/beauty/hair/tokyo/nosuchcity','/area/nosuch','/station/tokyo/存在しない駅','/station/nosuch','/station/nosuch/駅','/videos/nosuch'];
+// ───── 新業種（ビューティー・ボディケア）: 実在の店のデータ（lib/places/generated/*.json）と、特集の切り替え（lib/places/features.ts）─────
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const GEN={};for(const v of ['beauty','bodycare']){const f=path.join(ROOT,'lib/places/generated',v+'.json');GEN[v]=fs.existsSync(f)?JSON.parse(fs.readFileSync(f,'utf8')).places:[]}
+const FEATURES_ON=/VERTICAL_FEATURES_ENABLED\s*=\s*true/.test(fs.readFileSync(path.join(ROOT,'lib/places/features.ts'),'utf8'));
+const NEW_V=['beauty','bodycare','pet','leisure','stay'];
+// 店ページ（/{v}/shop/{id}）は全部 200 で見る。特集ページ（/{v}/feature/{id}）は、切り替えが false のあいだ 404（true なら 200）
+for(const v of ['beauty','bodycare'])for(const p of GEN[v])ok200.push(`/${v}/shop/${p.id}`);
+if(!FEATURES_ON)exp404.push('/beauty/feature/claire-nail','/bodycare/feature/nosuch');
+// 各業種のサイトマップの中身（<loc> のパス）。ここに載っているページだけが index のはず
+const smPaths={};
+for(const v of NEW_V){const r=await fetch(B+'/'+v+'/sitemap.xml');const x=r.status===200?await r.text():'';smPaths[v]=new Set([...x.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>{try{return decodeURI(m[1])}catch{return m[1]}}).map(u=>u.replace('https://machinowa.tokyo','')||'/'))}
 const seen=new Map();const get=async u=>{if(seen.has(u))return seen.get(u);const r=await fetch(B+encodeURI(u),{redirect:'manual'});const t=r.status===200&&!u.endsWith('.xml')?await r.text():'';const v={s:r.status,t};seen.set(u,v);return v};
 const bad=[];
 for(const u of exp404){const r=await get(u);if(r.s!==404)bad.push(`expected404 ${u} -> ${r.s}`)}
@@ -40,6 +54,7 @@ for(const u of ok200){const r=await get(u);if(r.s!==200){bad.push(`expected200 $
    const wantIndex=u==='/videos'?inSm:hasVO;if(wantIndex===/noindex/.test(robots||''))bad.push(`videos robots mismatch ${u} hasVideoObject=${hasVO} inSitemap=${inSm} (${robots})`);if(hasVO!==inSm&&u!=='/videos')bad.push(`videos VideoObject/sitemap mismatch ${u}`);console.log('   videos: VideoObject',hasVO,'inSitemap',inSm,'expect',wantIndex?'index':'noindex')}
  else if(u==='/photos'){const sm=await (await fetch(B+'/photos/sitemap.xml')).text();const inSm=sm.includes('https://machinowa.tokyo/photos</loc>');if(inSm===/noindex/.test(robots||''))bad.push(`photos robots mismatch inSitemap=${inSm} (${robots})`);console.log('   photos inSitemap',inSm,'expect',inSm?'index':'noindex')}
  else if(u.startsWith('/omakase')){const stated=u.includes('?');if(stated===!/noindex/.test(robots||''))bad.push(`omakase robots mismatch ${u} (${robots}) 答えの無い /omakase だけ index`);console.log('   omakase',stated?'答えあり → noindex':'答えなし → index')}
+ else if(NEW_V.includes(u.split('?')[0].split('/')[1])){const inSm=smPaths[u.split('/')[1]].has(u.split('?')[0]);if(inSm===/noindex/.test(robots||''))bad.push(`new-vertical robots mismatch ${u} inSitemap=${inSm} (${robots})`);console.log('   new vertical inSitemap',inSm,'expect',inSm?'index':'noindex')}
  else if(isNew&&!/noindex/.test(robots||''))bad.push(`not noindex ${u} (${robots})`);
  else if(!isNew&&/noindex/.test(robots||''))bad.push(`should be index ${u} (${robots})`);
  const expCanon='https://machinowa.tokyo'+(u==='/'?'':u.split('?')[0]);if(canon&&decodeURI(canon)!==expCanon&&!(u==='/'&&canon==='https://machinowa.tokyo'))bad.push(`canonical ${u} -> ${canon}`);if(!canon)bad.push(`no canonical ${u}`);
@@ -118,6 +133,43 @@ for(const o of [...nonSt,...stSample]){const r=await fetch(B+o.replace('https://
   if(r.status!==200||!/image\/png/.test(ct)||buf.length<2000||buf.readUInt32BE(16)!==1200||buf.readUInt32BE(20)!==630)bad.push(`og image ${r.status} ${ct} ${buf.length}B ${o}`);}
 console.log(`og images: distinct ${allOg.length} (station ${stOg.length}), fetched ${ogChecked}, bytes min ${Math.min(...ogSizes)} max ${Math.max(...ogSizes)}`);
 console.log('unique titles',tmap.size,'unique descriptions',dmap.size,'of',byCanon.size,'portal pages');
+
+// ───── 新業種のサイトマップ・店ページ・特集の切り替え（2026-10-09） ─────
+{
+  let smTotal=0,shopsChecked=0;
+  for(const v of NEW_V){
+    const urls=[...smPaths[v]];smTotal+=urls.length;
+    const gate=(GEN[v]||[]).length>=3; // lib/seo/gate.ts の MIN_INDEXABLE
+    for(const u of urls){
+      const r=await get(u);
+      if(r.s!==200){bad.push(`sitemap url not 200: ${u} -> ${r.s}`);continue}
+      const rb=(r.t.match(/<meta name="robots" content="([^"]+)"/)||[])[1]||'';
+      if(!/(^|,\s*)index(,|$)/.test(rb)||/noindex/.test(rb))bad.push(`sitemap url not index: ${u} (${rb})`);
+      const cn=(r.t.match(/<link rel="canonical" href="([^"]+)"/)||[])[1]||'';
+      if(decodeURI(cn)!=='https://machinowa.tokyo'+u)bad.push(`sitemap url canonical mismatch: ${u} -> ${cn}`);
+      if(/^\/[a-z]+\/feature\//.test(u)&&!FEATURES_ON)bad.push(`sitemap has a feature page while VERTICAL_FEATURES_ENABLED=false: ${u}`);
+    }
+    if(urls.some(u=>/^\/[a-z]+\/feature\//.test(u))&&!FEATURES_ON)bad.push(`${v}/sitemap.xml に特集ページが載っている`);
+    if(v==='beauty'||v==='bodycare'){
+      for(const p of GEN[v]){
+        const u=`/${v}/shop/${p.id}`;
+        if(gate!==smPaths[v].has(u))bad.push(`shop page ${u}: gate=${gate} but inSitemap=${smPaths[v].has(u)}`);
+        const r=await get(u);if(r.s!==200)continue;
+        const h=r.t;shopsChecked++;
+        // 店ページの JSON-LD に星・口コミを入れない
+        const lds=[...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m=>{try{return JSON.parse(m[1])}catch{return null}}).filter(Boolean);
+        const flat=JSON.stringify(lds);
+        if(/aggregateRating|"review"|"reviews"|reviewRating|ratingValue|ratingCount|reviewCount|bestRating/.test(flat))bad.push(`shop JSON-LD has rating/review ${u}`);
+        if(!lds.some(j=>j['@type']&&!['BreadcrumbList','Organization','WebSite'].includes(j['@type'])&&j.name===p.name))bad.push(`shop JSON-LD has no LocalBusiness-type node for ${u}`);
+        // 特集の切り替え: false のあいだ、店ページに「特集記事を読む」・特集ページへのリンクが無い
+        if(!FEATURES_ON&&(/特集記事を読む/.test(h)||/href="\/[a-z]+\/feature\//.test(h)))bad.push(`shop page shows feature link while VERTICAL_FEATURES_ENABLED=false: ${u}`);
+        // 評価・口コミの文言も出さない
+        if(/★|口コミ|レビュー/.test(h.replace(/<script[\s\S]*?<\/script>/g,'').replace(/<[^>]+>/g,' ')))bad.push(`shop page text has 星/口コミ/レビュー: ${u}`);
+      }
+    }else if(urls.length)bad.push(`${v}/sitemap.xml は掲載 0 件のはずが ${urls.length} 本`);
+  }
+  console.log(`new-vertical sitemaps: ${NEW_V.map(v=>v+'='+smPaths[v].size).join(' ')}（計 ${smTotal}）, shop pages checked ${shopsChecked}, features ${FEATURES_ON?'ON':'OFF'}`);
+}
 
 // ───── SNS・共有ボタン・サイト内検索（2026-10-04） ─────
 {

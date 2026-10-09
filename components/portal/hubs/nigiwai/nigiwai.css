@@ -255,8 +255,9 @@ body:has(.ng) .cursor-ring {
     opacity 0.45s ease calc(var(--i) * 28ms),
     background-color 0.45s ease;
 }
-.ng[data-kind="prep"] .ng-photo,
-.ng[data-kind="off"] .ng-photo {
+/* 輪の姿は data-ring（photo＝料理の写真／void＝業種の色の空の丸／line＝線だけの空の丸）。掲載中か準備中か（data-kind）とは別 */
+.ng[data-ring="void"] .ng-photo,
+.ng[data-ring="line"] .ng-photo {
   opacity: 0;
   scale: 0.55;
   visibility: hidden;
@@ -265,7 +266,7 @@ body:has(.ng) .cursor-ring {
     opacity 0.3s ease,
     visibility 0s 0.45s;
 }
-.ng[data-kind="prep"] .ng-void {
+.ng[data-ring="void"] .ng-void {
   opacity: 1;
   scale: 1;
   box-shadow:
@@ -273,7 +274,7 @@ body:has(.ng) .cursor-ring {
     0 0 0 calc(var(--d) * 0.03 + 1.5px) var(--ng-edge),
     0 calc(var(--d) * 0.1) calc(var(--d) * 0.22) calc(var(--d) * -0.06) color-mix(in srgb, var(--ng-shade) 60%, transparent);
 }
-.ng[data-kind="off"] .ng-void {
+.ng[data-ring="line"] .ng-void {
   opacity: 1;
   scale: 1;
   background: transparent;
@@ -283,7 +284,7 @@ body:has(.ng) .cursor-ring {
 .ng-dish:hover .ng-void {
   scale: 1.1;
 }
-.ng[data-kind="live"] .ng-void {
+.ng[data-ring="photo"] .ng-void {
   visibility: hidden;
   transition: scale 0.3s ease, opacity 0.25s ease, visibility 0s 0.3s;
 }
@@ -630,6 +631,21 @@ body:has(.ng) .cursor-ring {
 .ng-facts[data-off] {
   visibility: hidden;
   order: 2; /* 「入る」を入口のすぐ下に出し、見えない数字の場所は、その下に残す */
+}
+/* グルメ以外の掲載中の業種（data-solo）: 数字は実数の「N店」だけ。グルメと同じ形の見えない数字（data-ghost）が同じ高さ・折り返しを取り、
+   見える「N店」（.ng-solo）を、その一行目に中央寄せで重ねる（一行目の作りがグルメの「N店」と同じなので、上端をそろえれば同じ位置になる） */
+.ng-facts[data-solo] {
+  position: relative;
+}
+.ng-facts[data-solo] > [data-ghost] {
+  visibility: hidden;
+}
+.ng-solo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
 }
 .ng-state {
   display: inline-flex;

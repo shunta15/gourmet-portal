@@ -35,7 +35,16 @@ export interface PlaceFeature {
   photos: Record<string, FeaturePhoto>;
 }
 
+/**
+ * 新業種の特集（/{beauty,bodycare}/feature/{id}・店ページの「特集記事を読む」）を出すか。
+ * 今回の公開は対象外（false）。false のあいだは特集のデータを空として扱う入口がここの 1 か所だけで、
+ * 特集ページは 404、店ページのリンクは出ず、サイトマップにも載らない（getGeneratedFeatures が空を返すため。ほかの関数もここ経由）。
+ * 出すときは true にする。
+ */
+export const VERTICAL_FEATURES_ENABLED = false;
+
 export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise<PlaceFeature[]> {
+  if (!VERTICAL_FEATURES_ENABLED) return [];
   const mod = vertical === 'beauty' ? await import('./generated/features-beauty.json') : await import('./generated/features-bodycare.json');
   return (mod.default as unknown as { features: PlaceFeature[] }).features;
 }

@@ -89,6 +89,10 @@ export default function Nigiwai({
   selRef.current = sel;
   const cur = items[sel];
   const kind = cur.live ? "live" : cur.enter ? "prep" : "off";
+  // 輪の姿: グルメ＝料理の写真の輪／ほかの業種で入れる＝その業種の色の空の丸（掲載中でも準備中でも同じ）／入れない＝線だけの空の丸
+  const ring = cur.key === "gourmet" ? "photo" : cur.enter ? "void" : "line";
+  // 掲載中だが、グルメではない業種（数字は実数の「N店」だけ）
+  const solo = cur.live && cur.key !== "gourmet";
 
   /* ───────────── いま営業中の数（営業時間が確かな店だけ。現在時刻はブラウザで当てる） ───────────── */
   useEffect(() => {
@@ -377,6 +381,7 @@ export default function Nigiwai({
       className={`ng${leaving ? " is-leaving" : ""}`}
       style={rootStyle}
       data-kind={kind}
+      data-ring={ring}
       data-sel={cur.key}
       aria-labelledby="ng-h1"
       onClickCapture={(e) => suppressClick.current && (e.preventDefault(), e.stopPropagation())}
@@ -493,16 +498,28 @@ export default function Nigiwai({
           </ul>
 
           <div className="ng-info" key={cur.key}>
-            {/* 数字は、どの業種を選んでいても場所を取る（見出し・入口の位置が動かないように）。グルメ以外では見えず、読み上げもしない */}
-            <p className="ng-facts" {...(cur.key !== "gourmet" ? { "aria-hidden": true, "data-off": "" } : {})}>
-              <span>
+            {/* 数字は、どの業種を選んでいても場所を取る（見出し・入口の位置が動かないように）。掲載中の業種だけ見える。掲載準備中では見えず、読み上げもしない。
+                グルメは「店・特集・いま営業中」。ほかの掲載中の業種（solo）は、実データを数えた「N店」だけ（特集は今回の公開に出さない・営業中の数はグルメだけ）。
+                solo は、グルメと同じ形の見えない数字（data-ghost。読み上げない）で同じ高さ・同じ折り返しを取り、見える「N店」（.ng-solo）をその上に中央寄せで重ねる */}
+            <p className="ng-facts" {...(!cur.live ? { "aria-hidden": true, "data-off": "" } : solo ? { "data-solo": "" } : {})}>
+              {solo && (
+                <span className="ng-solo">
+                  <b>{fmt(cur.count)}</b>店
+                </span>
+              )}
+              <span {...(solo ? { "data-ghost": "", "aria-hidden": true } : {})}>
                 <b>{fmt(gourmetTotal)}</b>店
               </span>
-              <span>
+              <span {...(solo ? { "data-ghost": "", "aria-hidden": true } : {})}>
                 特集<b>{fmt(featureTotal)}</b>本
               </span>
               {/* 営業中の数字は、現在時刻で数え終わるまで、読み上げない（スクリプトなしでは、CSS が行ごと出さない） */}
-              <span className="ng-open" data-on={openNow ? "" : undefined} aria-hidden={openNow ? undefined : true}>
+              <span
+                className="ng-open"
+                data-on={openNow || solo ? "" : undefined}
+                aria-hidden={openNow && !solo ? undefined : true}
+                {...(solo ? { "data-ghost": "" } : {})}
+              >
                 いま営業中<b>{openNow ? fmt(openNow.open) : "0"}</b>軒
                 <small>営業時間が確かな{openNow ? fmt(openNow.known) : "0"}店のうち</small>
               </span>

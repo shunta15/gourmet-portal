@@ -36,8 +36,8 @@ ON になる条件は `PORTAL_LAUNCHED` が `"1"`、または `VERCEL_ENV` が `
 | 3 | **グルメ不変**（OFF が main と同一）| 1-A（下） | `PROBLEMS 0` が 2 回（static と live） |
 | 4 | ON のビルド | `rm -rf .next && PORTAL_LAUNCHED=1 npm run build` | 終了コード 0、最後に `OK: client bundle clean` |
 | 5 | ON を起動 | `PORTAL_LAUNCHED=1 npx next start -p 3242`（別ターミナル。**実行時にも環境変数が要る**）| `Ready` |
-| 6 | 巡回 | `node proto-portal/crawl.mjs --base http://localhost:3242` | 最後の行が `PROBLEMS 0` |
-| 7 | 構造化データ | `node proto-portal/check-jsonld.mjs --base http://localhost:3242` | `違反: 0` |
+| 6 | 巡回 | `node proto-portal/crawl.mjs --base http://localhost:3242` | 最後の行が `PROBLEMS 0`（新業種は、サイトマップに載るページ＝index・載らないページ＝noindex、店ページは JSON-LD に星・口コミなし・特集の切り替えどおりかも見る）|
+| 7 | 構造化データ | `node proto-portal/check-jsonld.mjs --base http://localhost:3242` | `違反: 0`（星・口コミのプロパティが無いことも見る。新業種の店ページは --base のサーバーから取って検査）|
 | 8 | 土台 | `node proto-portal/check-foundation.mjs` | `不合格: 0` |
 | 9 | 駅データ | `node automation/stations/check.mjs` | `QA検査完了`、「0が正常」の項目が 0、slug 衝突 0、pref null 0 |
 | 10 | 営業時間の判定 | `node proto-portal/test-openNow.mjs` | `0 failed` |
@@ -47,7 +47,7 @@ ON になる条件は `PORTAL_LAUNCHED` が `"1"`、または `VERCEL_ENV` が `
 | 14 | 表示速度（任意）| `node proto-portal/measure-speed.mjs` | LCP・CLS・TBT が前回から悪化していない |
 | 15 | 関数に public/ が入っていない | `find .next/server/app -name '*.nft.json' -print0 \| xargs -0 grep -l 'public/'` | **何も出ない**（ビルドは 4 のあと）|
 | 16 | 日本語 URL | 下の 1-C | 20 回とも 200 |
-| 17 | 総合トップ（にぎわいの輪）の動作 | `node proto-portal/check-hub.mjs --base http://localhost:3242` | `違反: 0`（title・言葉が COPY-FINAL.md と一致／2 色が出てちらつかない／業種の扱い／数字／輪を回す／動きを減らす設定／スクリプトなし／横スクロール 0・コンソールエラー 0・壊れた画像 0）|
+| 17 | 総合トップ（にぎわいの輪）の動作 | `node proto-portal/check-hub.mjs --base http://localhost:3242` | `違反: 0`（title・言葉が COPY-FINAL.md と一致／2 色が出てちらつかない／業種の扱い（店の数が 1 以上＝掲載中・実数、0＝掲載準備中）／数字／輪を回す／動きを減らす設定／スクリプトなし／横スクロール 0・コンソールエラー 0・壊れた画像 0）|
 
 （`crawl.mjs` は約 30 秒・1,800 リンクと共有画像 80 枚を取る。本番に向けて打つときは空いている時間に）
 
@@ -237,11 +237,11 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
   ```
 - `/gourmet` の title が「グルメの店をエリア・特集・シーンから探す｜マチノワグルメ」、canonical が `https://machinowa.tokyo/gourmet`。
 - `robots.txt` の `Sitemap:` が 9 行（`/sitemap.xml`・`/station/sitemap.xml`・業種 5 本・`/videos/sitemap.xml`・`/photos/sitemap.xml`）。`Disallow` は従来どおり（`/admin/` `/api/` `/agent-teams/`）。
-- 新業種（`/beauty` など）は掲載 0 件なので **noindex**（件数ゲート。3 件以上で index になる）。`/area/**`・`/map`・`/find`・`/videos` も noindex のまま。駅ページは店 3 件以上のものだけ index。
+- 新業種は、**実在の店のデータが入っている**（ビューティー・ボディケア。`lib/places/generated/{beauty,bodycare}.json`。2026-10-09 時点でビューティー 5 店・ボディケア 3 店。公開までに増える）。index の決まりは件数ゲート（`lib/seo/gate.ts`、3 件以上）で、**ページごとの件数**で決まる: 業種のトップ（`/beauty`）と店ページ（`/beauty/shop/<id>`）はその業種の掲載数が 3 件以上で index、都道府県・種類・種類×都道府県・シーンのページは、絞り込んだあとの店が 3 件以上のものだけ index（店が 1〜2 件の絞り込みは noindex のまま。店が増えると自動で index になる）。ペット・おでかけ・ステイは掲載 0 件なので全ページ noindex。`/area/**`・`/map`・`/find`・`/videos` も noindex のまま。駅ページは店 3 件以上のものだけ index。
 - 共有画像: `https://machinowa.tokyo/og/home?v=2` が 200 で画像（白磁の地・藍の文字・金の細い輪。キャッチコピーそのまま。`lib/seo/og.ts` の `OG_VERSION` が 2）。X・LINE のカードデバッガーで `/` と `/station/kyoto/祇園四条` を確かめる。
 - 日本語 URL を 20 回ずつ（1-C のコマンドの `localhost:3242` を `machinowa.tokyo` に）。
 
-目で見る（スマホ幅 375 と PC 1280）: `/`・`/beauty`・`/area/tokyo`・`/station/kyoto/祇園四条`・`/map`・`/videos`・`/find?q=三宮`・グルメの店ページ（`/restaurant/r21` の SNS・共有ボタン）・グルメのトップ `/gourmet`。
+目で見る（スマホ幅 375 と PC 1280）: `/`・`/beauty`・`/beauty/shop/be0001`・`/bodycare`・`/area/tokyo`・`/station/kyoto/祇園四条`・`/map`・`/videos`・`/find?q=三宮`・グルメの店ページ（`/restaurant/r21` の SNS・共有ボタン）・グルメのトップ `/gourmet`。
 
 ### 4-2. Search Console
 
@@ -250,7 +250,7 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
    - `https://machinowa.tokyo/videos/sitemap.xml`（今は空。動画に投稿日が付くと入る）
    - `https://machinowa.tokyo/photos/sitemap.xml`（`/photos` の 1 ページだけ。写真が 3 枚以上あるときに載る）
    - 既存の `https://machinowa.tokyo/sitemap.xml` は送信済みのはず。再取得させる（`/gourmet` が増えた）。
-   - 新業種のサイトマップ（`/beauty/sitemap.xml` など 5 本）は今は空（掲載 0 件）。**掲載ができて index 対象が出てから**送る。
+   - 新業種のサイトマップ: **`/beauty/sitemap.xml`・`/bodycare/sitemap.xml` を送る**（index 対象のページが載っている。店ページ `/beauty/shop/<id>`・`/bodycare/shop/<id>` を含む。載せ方は `components/portal/pages/sitemap.ts`。`robots` が index になるページだけ。特集ページ `/{業種}/feature/<id>` は載せない）。`/pet`・`/leisure`・`/stay` のサイトマップは掲載 0 件で空なので、掲載ができて index 対象が出てから送る。
 2. **URL 検査 →「インデックス登録をリクエスト」**する対象（index のページだけ。noindex のページには要らない）:
    - `https://machinowa.tokyo/`（総合トップ。これまでのグルメのトップから中身が変わる）
    - `https://machinowa.tokyo/gourmet`
@@ -292,7 +292,9 @@ curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 - **`/` は rewrites で総合トップに差し替わる**ので、ON のとき `app/page.tsx`（グルメのトップ）はビルドされるが配信されない。グルメのトップは `/gourmet`。
 - **IndexNow の cron（`/api/cron/ping-search`）は `/sitemap.xml` の URL だけ通知する**。総合サイトのサイトマップ（駅など）は通知されない（Search Console の送信で足りる）。
 - **駅と店の対応・写真の生成物は自動では増えない**（1-B）。
-- **新業種は掲載 0 件**。総合トップ（にぎわいの輪）では、グルメだけが「掲載中」（実数を出す）。ビューティー・ボディケアは「掲載準備中」で、「ページを見る」でページへ入れる（noindex）。ペット・おでかけ・ステイは「掲載準備中」と出るだけで、リンクにしない（`<button>`。押しても移動しない）。フッターの業種の一覧には 6 業種ともリンクが残る。掲載が 3 件になると自動で index・サイトマップに入る（`lib/seo/gate.ts`）。
+- **新業種（ビューティー・ボディケア）は実在の店のデータがある**（上の 4-1 のとおり。以前の「掲載 0 件・noindex・サイトマップは空」の前提は古い）。総合トップ（にぎわいの輪）の「掲載中」「掲載準備中」は、**業種ごとの掲載数（実データを数える。`lib/portal/hub.ts` の `HubItem.count`）で決まる**: 1 以上の業種は「掲載中」（グルメと同じ形。「◯◯に入る」。数字は、グルメが「店・特集・いま営業中」、ほかの掲載中の業種は実数の「N店」だけ）、0 の業種は「掲載準備中」。2026-10-09 の公開時点は、グルメ・ビューティー・ボディケアが掲載中、ペット・おでかけ・ステイが掲載準備中（`check-hub.mjs` は `lib/places/generated/*.json` の件数から期待値を決める）。掲載準備中でも、ビューティー・ボディケアは「ページを見る」でページへ入れる。ペット・おでかけ・ステイは「掲載準備中」と出るだけで、リンクにしない（`<button>`。押しても移動しない）。フッターの業種の一覧には 6 業種ともリンクが残る。ビューティー・ボディケアの輪は、掲載中でも準備中でも「その業種の色の空の丸」（料理の写真の輪はグルメだけ。`data-ring`）。index・サイトマップへの載り方は 4-1 の件数ゲート（`lib/seo/gate.ts`）。
+- **新業種の特集は今回の公開に出さない**: `lib/places/features.ts` の `VERTICAL_FEATURES_ENABLED = false`。false のあいだ、特集のデータを空として扱う（入口はこの 1 か所）ので、`/beauty/feature/<id>`・`/bodycare/feature/<id>` は 404、店ページの「特集記事を読む」リンクは出ず、サイトマップにも載らない。出すときは `true` にして再デプロイ（`crawl.mjs` はこの値を読んで期待を切り替える）。
+- **グルメのトップとビューティーのトップの差し替え**: グルメのトップ（`/gourmet`）は「暖簾」、ビューティーのトップ（`/beauty`）は「曇り鏡」のデザインになる（別の担当が組み込み中。組み込みが済むまでは、それぞれ今のトップのまま）。組み込み後は、1 の事前チェックを全部やり直す。
 - **総合トップは「にぎわいの輪」（2 色ランダム）**: 配色は sometsuke（白磁と藍）・akagane（濃紺と銅）の 2 色で、開くたびにランダム（半々）。ページ自体はどちらの色でも同じ HTML（静的に配信される）。言葉は `proto-portal/hub-concepts/COPY-FINAL.md`（発注者の決定）で、`components/portal/hubs/nigiwai/copy.ts` に一字一句写してある。言葉を変えるときは、COPY-FINAL.md・`copy.ts`・`app/portal-home/page.tsx` の title/description・共有画像 `HomeCard`（`components/portal/og/cards.tsx`）を揃え、`check-hub.mjs` で突き合わせる。title はキャッチコピーそのまま（`buildMetadata` は接尾辞を足さない。ルートの `app/layout.tsx` の title は文字列で、template ではない）。
 - **色を固定して見るルートは、プレビューとローカルだけ**: `/proto-hub/nigiwai`（`/` と同じもの）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。判定は `lib/portal/launch.ts` の `isPreviewOrLocal()`（`VERCEL_ENV=preview` または `NODE_ENV!=="production"`）で、`app/proto-hub/layout.tsx` が 404 にする。**本番（`VERCEL_ENV=production`）は公開スイッチ ON でも 404**。ローカルでも `next build` → `next start`（`NODE_ENV=production`）では開けない（`next dev` では開ける）。`next.config.ts` の `PORTAL_OFF_SOURCES` の `/proto-hub/:path*`・`isPortalPath.ts`・`compare-off.mjs` の `PORTAL_404`（`/proto-hub/nigiwai`）は、OFF の 404 のために残してある。
 - **総合トップの検査を自動化するときの注意**: 色は `Math.random` の差し替えで固定しない（値が固定されると、ページの React のイベントが動かなくなる。2026-10-07 に確認）。ページの抽選スクリプトが読む `history.state.ngTheme` を、ページのスクリプトより先に `addInitScript` で入れて固定する（`check-hub.mjs`・`check-keyboard.mjs`・`check-contrast.mjs` はそうしている）。
@@ -385,7 +387,7 @@ rm -f .vercel/.env.preview.local .vercel/.env.production.local
 - **入る動き**: 満ちる円は `transform: scale` だけで広げる専用の層（`.ng-wipe`・`will-change`）。輪の拡大も `transform`（個別の `scale` プロパティだと、同じ条件で 2 倍以上かかった）。入るあいだは輪の回転を止める。
 - **導入と、戻ったとき**: 見出し・リード・入口・数字は、スクリプトを待たずに文書が届いた瞬間から始まる（皿が集まる動きだけ、書体と最初の写真 6 枚（遅くても 0.6 秒）を待つ）。ブラウザの戻る・進む（`history.state` に覚えた色が残っている／文書の読み込み直しは navigation の type が `back_forward`）で帰ってきたときは、`.ngp` に `data-skip` を付けて導入を省き、輪の角度も引き継ぐ。
 - **下のブロック**: 3 つの場面（店と出会う→人とつながる→輪が広がる）は、同じ 1 皿が育っていく筋。場面 3 は、スクロールに合わせて、小さな輪（場面 2 の 3 枚）から皿が増えて輪が外へ広がる（`StatementMotion` が `--p`（0〜1）を書く。動きを減らす設定・スクリプトなしでは、はじめから広がりきった姿）。結びを囲む輪は、文字より大きく、上の半分は第 2 段落までは伸びない（線が文字を横切らない）。
-- **業種の扱い**: 「掲載準備中」と「掲載中」は、選んでいる業種のぶんだけ出る。行き先は 6 業種の表のとおり（グルメ＝`/gourmet`・ビューティー＝`/beauty`・ボディケア＝`/bodycare`・ほかの 3 つはリンクなし）。「さがす」は `/find`（1 つだけ）。
+- **業種の扱い**: 「掲載準備中」と「掲載中」は、選んでいる業種のぶんだけ出る。どちらかは**業種の掲載数で決まる**（1 以上＝掲載中、0＝掲載準備中。6 の「新業種は実在の店のデータがある」）。行き先は 6 業種の表のとおり（グルメ＝`/gourmet`・ビューティー＝`/beauty`・ボディケア＝`/bodycare`・ほかの 3 つはリンクなし）。掲載中の業種の数字は、グルメが「店・特集・いま営業中」、ほかは実数の「N店」。「さがす」は `/find`（1 つだけ）。
 - **「いま営業中」**: 営業時間が確かに読み取れた店だけ（`packWeeks` が `null` にしなかった店）を、現在時刻（日本時間・ブラウザ）で数える。営業中＝営業中＋まもなく閉店。不定休などで営業時間内でも言い切れない店は数に入らない。分母（営業時間が確かな店）は時刻によらず一定。表示は「掲載店 N 店・特集 M 本・いま営業中 K 軒（営業時間が確かな L 店のうち）」。
 - **動きを減らす設定（`prefers-reduced-motion`）・スクリプトなし**: 輪は回さない（動きを減らす設定では、時間・矢印キー・ドラッグのどれでも回らない）。集まる演出もなく、言葉は、はじめから全部見える。入るときは演出なしで移動する。スクリプトなしでは色は sometsuke、入れる 3 業種・「さがす」はリンクで届く。
 - **色を固定して見る（プレビュー・ローカルだけ）**: `/proto-hub/nigiwai`（`/` と同じ）・`/proto-hub/nigiwai/sometsuke`・`/proto-hub/nigiwai/akagane`。色見本は無い。本番では公開スイッチ ON でも 404（6 の「色を固定して見るルートは、プレビューとローカルだけ」）。
