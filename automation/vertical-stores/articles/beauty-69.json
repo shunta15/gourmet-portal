@@ -1,0 +1,123 @@
+{
+  "key": "beauty-69",
+  "headline": "岐阜市神田町にある、23時まで営業のカフェ併設の美容室",
+  "lede": "入口側にカフェが併設された、岐阜市神田町6丁目の美容室です。エムテック神田町ビルの1階にあり、サロンの営業は9時から23時（カット最終受付22時）で、定休日は火曜日です。",
+  "sections": [
+    {
+      "heading": "行き方と設備",
+      "body": "名鉄岐阜駅前から長良橋通りを北へ600m、徹明郵便局から南へ2つ目のビルにあります。カフェの営業時間は11時から18時で、火曜と水曜が定休日です。席は5席で、スタイリスト5人です。提携駐車場はなく、近くのコインパーキングを使います。キッズスペースがあり、お子さま同伴にも対応しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "インナーカラー"
+    },
+    {
+      "name": "ハイライト"
+    },
+    {
+      "name": "ブリーチ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 3
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=15103291235084471611",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "岐阜市神田町6丁目3のエムテック神田町ビル1階にある",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "岐阜県岐阜市神田町６丁目3番地エムテック神田町ビル1F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "入口側がカフェになっている",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "お店の入り口側がカフェになっております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "サロン営業時間は9:00〜23:00(カット最終受付22:00)、Google マップと一致",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "サロン営業時間 9:00～23:00【カット最終受付22:00まで】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は火曜日(Google マップと一致)",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "定休日 火曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カフェの営業時間は11:00〜18:00で火水が定休日",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "カフェの営業時間は11:00～18:00【火水定休日】",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "名鉄岐阜駅前から長良橋通りを北へ600m",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "名鉄岐阜駅前、長良橋通りを北へ６００m",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "徹明郵便局から南に2つ目のビル",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "徹明郵便局から南に２つ目のビルです。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面5席",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "セット面5席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト5人",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "スタイリスト5人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "提携駐車場はなく、お近くのコインパーキングを使う",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "お車でお越しの方はお近くのコインパーキングをご利用ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "キッズスペースがあり、お子さま同伴OK",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "キッズスペースあり／お子さま同伴OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ブリーチ・インナーカラー・ハイライトがメニューのキーワードにある",
+      "source": "https://beauty.hotpepper.jp/slnH000427597/",
+      "quote": "ブリーチ/インナーカラー/バレイヤージュ/ハイライト",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000427597/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15103291235084471611"
+    }
+  ],
+  "notes": "営業時間(9〜23時)・定休日(火曜)は Google マップと一致。20時を超える施術のナイター料金は料金のため書いていない。「髪質改善」を含む語は使っていない。"
+}

@@ -1,0 +1,108 @@
+{
+  "key": "beauty-72",
+  "headline": "仙台市青葉区中央の、ビル8階にある4席の美容室",
+  "lede": "仙台駅西口から広瀬通方面へ歩く道順が案内されている、仙台市青葉区中央2丁目の美容室です。第6藤榮駅前ビルの8階にあり、セット面は4席で、スタイリストは3人が在籍しています。",
+  "sections": [
+    {
+      "heading": "営業日と設備",
+      "body": "営業時間は平日が10時から20時、土曜と祝日が9時から19時、日曜が9時から18時で、定休日は毎月第2火曜日と案内されています。駐車場はなく、店内は禁煙で、ドリンクサービスがあります。ビルの入口の左側にあるエレベーターで8階へ上がります。支払いはカードのほか、PayPay、交通IC、Apple Payが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "デザインカラー"
+    },
+    {
+      "name": "ハイライト"
+    },
+    {
+      "name": "メンズパーマ"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=8285960420681099449",
+      "quote": "\"category\": \"美容院\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "仙台市青葉区中央2丁目6-33の第6藤榮駅前ビル8階にある",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "宮城県仙台市青葉区中央２－６－３３　第６藤榮駅前ビル８Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "仙台駅西口のドンキホーテをファミリーマート側に渡り、広瀬通方面に歩く",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "仙台駅西口のドンキホーテをファミリーマート側に渡り,広瀬通方面に歩きます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ビル入口左側のエレベーターを使う",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "ビル入り口左側にエレベーターがあるのでそちらをご利用下さい",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は平日10〜20時、土曜・祝日9〜19時、日曜9〜18時(Google マップと一致)",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "平日10:00～20:00土曜・祝日9:00～19:00日曜日9:00～18:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎月第2火曜",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "定休日 毎月第2火曜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面4席",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "セット面4席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト3人",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "スタイリスト3人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は無",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "駐車場 無",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "禁煙でドリンクサービスがある",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "禁煙／ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカード、PayPay、交通IC、Apple Pay",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "PayPay,交通IC,Apple Pay各種",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デザインカラー・ハイライト・メンズパーマがメニューのキーワードにある",
+      "source": "https://beauty.hotpepper.jp/slnH000650976/",
+      "quote": "デザインカラー/メンズ/ツイストスパイラル/ショートカット/メンズパーマ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(住所が Google マップの記録と一致するページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000650976/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8285960420681099449"
+    }
+  ],
+  "notes": "gbp の place.website が空のため、ウェブ検索で見つけたホットペッパーの店ページ(住所「青葉区中央2-6-33 第6藤榮駅前ビル8F」が gbp と一致)を出どころにした。電話番号はページに出ないため一致は未確認(解釈の確認を希望)。営業時間・曜日は Google マップと一致(第2火曜休みは Google マップには出ない)。"
+}

@@ -1,0 +1,86 @@
+{
+  "key": "beauty-62",
+  "headline": "福岡市城南区西片江にある、席が2つの理容室",
+  "lede": "福岡市城南区西片江1丁目の理容室です。セット面は2席の小さな店で、店の前に2台分の駐車スペースがあります。営業は火曜日から日曜日の10時から20時で、定休日は毎週月曜日と、第一火曜日、第三日曜日と案内されています。",
+  "sections": [
+    {
+      "heading": "席と支払い",
+      "body": "スタッフはスタイリスト2人とアシスタント1人です。支払いはVisa、Mastercard、JCB、American Expressなどのカードのほか、現金、PayPay、交通系が使えます。ドリンクサービスがあり、4席以下の小型サロンとして案内されています。営業時間はGoogleマップの表示とも一致します。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=245201558187846171",
+      "quote": "\"category\": \"理容店\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "福岡市城南区西片江1丁目1-46にある",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "福岡県福岡市城南区西片江１丁目１―４６",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は火曜日から日曜日の10時から20時",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "火曜日～日曜日 10時～20時",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は毎週月曜日、第一火曜日、第三日曜日",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "毎週月曜日、第一火曜日、第三日曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セット面2席",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "セット面2席",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタイリスト2人／アシスタント1人",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "スタイリスト2人／アシスタント1人",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お店の前に2台停められる",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "お店の前に2台停められます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカード、現金、PayPay、交通系が使える",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "現金、PayPay、交通系",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ドリンクサービスがある",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "ドリンクサービスあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "4席以下の小型サロン",
+      "source": "https://beauty.hotpepper.jp/slnH000683665/",
+      "quote": "4席以下の小型サロン",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/slnH000683665/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=245201558187846171"
+    }
+  ],
+  "notes": "営業日は Google マップ(月曜休み・火〜日10〜20時)と一致。第一火曜日・第三日曜日の休みは Google マップの週間表示には出ない。メニュー名はページに無いため menus は空。メンズ向けの表示はどの店にも出る定型のため使っていない。"
+}

@@ -1,0 +1,143 @@
+{
+  "key": "beauty-57",
+  "headline": "池袋1丁目にある、予約制のネイルとまつげのサロン",
+  "lede": "東京都豊島区池袋1丁目のマンションの一室にある、ネイルとまつげのサロンです。完全予約制で、設備はネイルとリクライニングチェアが1つずつ、スタッフは1人と案内されています。",
+  "sections": [
+    {
+      "heading": "行き方と支払い",
+      "body": "JR池袋駅の西口(北)20a出口を出て線路沿いに進み、平和通り商店街を直進して約100m進むと、ローソンの隣にベルメゾン池袋があります。203号室で、オートロックの呼び出しを使います。支払いはカードのほか現金とPayPayが使えます。個室あり、当日受付OK、お子さま同伴可と案内され、当日の変更やキャンセルには料金がかかります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "パラジェル"
+    },
+    {
+      "name": "まつげパーマ"
+    },
+    {
+      "name": "眉毛"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "個室あり",
+      "factIndex": 10
+    },
+    {
+      "tag": "当日予約可",
+      "factIndex": 11
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 12
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=4416916615364769501",
+      "quote": "\"category\": \"ネイルサロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "豊島区池袋1丁目2-6のベルメゾン池袋203号にある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "東京都豊島区池袋１－２－６ベルメゾン池袋２０３号",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はネイル1・リクライニングチェア1",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "総数2(ネイル1／リクライニングチェア1)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタッフは1人",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "総数1人(スタッフ1人)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "JR池袋駅西口(北)/20a出口を出て線路沿いに直進する道順",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "JR池袋駅西口(北)/20a出口を出て線路沿いに直進",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "平和通り商店街を直進して約100m進むと右手にローソンがあり、その隣のマンションにある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "平和通り商店街を直進⇒約100m進むと右手にローソンがあります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オートロックで203を呼び出す",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "オートロックで『203呼出』と押して下さい",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いはカード、現金、PayPayが使える",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "Visa／Mastercard／JCB／American Express／現金/PayPay",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日の変更・キャンセルは予約金額の全額を徴求と案内している",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "当日変更、キャンセルのお客様はご予約金額の100％を徴求致します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "個室ありと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "夜20時以降も受付OK／当日受付OK／個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日受付OKと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "当日受付OK／個室あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴可",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "お子さま同伴可",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駅から徒歩5分以内と案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "駅から徒歩5分以内",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パラジェル・まつげパーマ・眉毛のメニューがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000600426/",
+      "quote": "《定額/パラジェル/まつげパーマ/LED/眉毛》",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000600426/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4416916615364769501"
+    }
+  ],
+  "notes": "営業時間はホットペッパー(平日11〜23時・土日祝10〜22時)と Google マップ(毎日10〜22時)が食い違うため時刻を書かず、時間にもとづくタグ(夜遅くまで営業)も付けていない。個室・当日受付・駅徒歩5分以内は掲載ページのこだわり条件の表示で、本文は「案内されている」の形にした。"
+}

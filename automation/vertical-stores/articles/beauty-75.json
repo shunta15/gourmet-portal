@@ -1,0 +1,123 @@
+{
+  "key": "beauty-75",
+  "headline": "熊本市南区田迎にある、ベッド3台のエステサロン",
+  "lede": "ベッド3台、スタッフ3人と案内されている、熊本市南区田迎6丁目のエステティックサロンです。完全予約制で、駐車場は店の白い看板の横から入った右側に2台分あり、当日受付や2名以上の利用にも対応していると案内されています。",
+  "sections": [
+    {
+      "heading": "行き方と案内",
+      "body": "けやき坂通りとはませんバイパスの交差点から入ってすぐ、パチンコ店の裏の駐車場の隣にある白い1階のテナントです。個室、着替え、メイクルームがあり、お子さま同伴にも対応していると案内されています。営業時間は店の案内とGoogleマップで開始時刻が異なるため、予約の際に確かめる必要があります。電話は090-9562-8108です。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "個室あり",
+      "factIndex": 8
+    },
+    {
+      "tag": "当日予約可",
+      "factIndex": 9
+    },
+    {
+      "tag": "子連れ可",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示",
+      "source": "https://maps.google.com/?cid=16911369511655597944",
+      "quote": "\"category\": \"エステティック サロン\"",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "熊本市南区田迎6丁目5-36にある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "熊本県熊本市南区田迎６－５－３６",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は090-9562-8108",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "090-9562-8108",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "設備はベッド3",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "総数3(ベッド3)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スタッフは3人",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "総数3人(スタッフ3人)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "けやき坂通りと、はませんバイパス交差点から入ってすぐ",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "けやき坂通りと、はませんバイパス交差点から入ってすぐ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "駐車場は店の白い看板の横から入った右側2台",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "お店の白い看板の横から入った右側2台が当店の駐車場になります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "個室ありと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "個室あり／駐車場あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日受付OKと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "当日受付OK／2名以上の利用OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "お子さま同伴可",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "お子さま同伴可",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2名以上の利用OKと案内されている",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "2名以上の利用OK",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "着替えあり・メイクルームあり",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "メイクルームあり／着替えあり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は9:00〜20:00の間で完全予約制(Google マップは10:00〜20:00)",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+      "quote": "9:00～20:00の間で完全予約制",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホットペッパービューティー(店が Google マップに載せているページ)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000533326/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16911369511655597944"
+    }
+  ],
+  "notes": "営業時間は掲載ページが9:00〜20:00、Google マップが10:00〜20:00で開始時刻が食い違うため時刻を書かず、時間にもとづくタグも付けていない。メニュー名には小顔・リフトアップなど見た目の変化の語が入るため menus は空。個室・当日受付・お子さま同伴は掲載ページの表示で、本文は「案内されている」の形にした。"
+}
