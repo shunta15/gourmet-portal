@@ -1,0 +1,27 @@
+{
+ "featureId": "new-ginza-gallery",
+ "dir": "fs-532249dd41",
+ "storeName": "歌舞伎座・銀座四丁目交差点",
+ "mapsUrl": null,
+ "placeUrl": null,
+ "matched": null,
+ "images": [
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-532249dd41/p5.jpg",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Ginza_4-Chome_Crossing_2020-04-19.jpg",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Ginza_4-Chome_Crossing_2020-04-19.jpg",
+   "what": "銀座四丁目交差点の和光と時計塔",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Wikimedia Commons",
+   "author": "Asanagi",
+   "license": "CC0 1.0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "commonsFile": "File:Ginza 4-Chome Crossing 2020-04-19.jpg",
+   "taken": "2020-04-19"
+  }
+ ],
+ "note": "スポット名は「歌舞伎座・銀座四丁目交差点」だが、本文は「銀座4丁目交差点を挟んで向かい合う2大百貨店(三越・松屋)」の話なので、交差点の写真を選んだ(歌舞伎座の写真は選んでいない)。和光(銀座4丁目交差点の角の時計塔ビル)が主役で、三越は写っていない。撮影は2020年4月の緊急事態宣言下で人も車も少ない。表示禁止リストの画像(Ginza_Mitsukoshi_Lion_Statue)は選んでいない。"
+}

@@ -293,11 +293,24 @@
       "5": "/restaurants/fs/fs-b66aba71c8/p5.jpg"
     }
   },
+  "feature-kinosha-nachikatsuura": {
+    "spots": {
+      "1": "/restaurants/fs/fs-a72b2b43c9/p1.jpg",
+      "2": "/restaurants/fs/fs-a72b2b43c9/p2.jpg",
+      "3": "/restaurants/fs/fs-a72b2b43c9/p3.jpg",
+      "4": "/restaurants/fs/fs-a72b2b43c9/p4.jpg"
+    }
+  },
   "filmcafebar": {
     "spots": {
       "3": "/restaurants/fs/fs-763560b14c/p3.jpg",
       "4": "/restaurants/fs/fs-763560b14c/p4.jpg",
       "5": "/restaurants/fs/fs-763560b14c/p5.jpg"
+    }
+  },
+  "hokkaido-noboribetsu-onsen": {
+    "spots": {
+      "3": "/restaurants/fs/fs-e544614ec1/p3.jpg"
     }
   },
   "kanekocoffeebeans旭川": {
@@ -307,11 +320,26 @@
       "5": "/restaurants/fs/fs-1b4fc7d982/p5.jpg"
     }
   },
+  "kansai-expo-park-family": {
+    "spots": {
+      "4": "/restaurants/fs/fs-10aeb5777a/p4.jpg"
+    }
+  },
+  "kansai-kawaramachi-pontocho-date": {
+    "spots": {
+      "1": "/restaurants/fs/fs-9fd4997358/p1.jpg"
+    }
+  },
   "nanohana": {
     "spots": {
       "3": "/restaurants/fs/fs-045bb67f0d/p3.jpg",
       "4": "/restaurants/fs/fs-045bb67f0d/p4.jpg",
       "5": "/restaurants/fs/fs-045bb67f0d/p5.jpg"
+    }
+  },
+  "new-ginza-gallery": {
+    "spots": {
+      "5": "/restaurants/fs/fs-532249dd41/p5.jpg"
     }
   },
   "paspa!": {

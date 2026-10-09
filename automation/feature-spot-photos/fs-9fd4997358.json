@@ -1,0 +1,27 @@
+{
+ "featureId": "kansai-kawaramachi-pontocho-date",
+ "dir": "fs-9fd4997358",
+ "storeName": "錦市場",
+ "mapsUrl": null,
+ "placeUrl": null,
+ "matched": null,
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-9fd4997358/p1.jpg",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Tsukemono_shop_by_collinox_in_Nishiki_Ichiba%2C_Kyoto.jpg",
+   "pageUrl": "https://commons.wikimedia.org/wiki/File:Tsukemono_shop_by_collinox_in_Nishiki_Ichiba,_Kyoto.jpg",
+   "what": "錦市場のアーケードの漬物店",
+   "width": 900,
+   "height": 602,
+   "byOwner": null,
+   "source": "Wikimedia Commons",
+   "author": "collinox",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "commonsFile": "File:Tsukemono shop by collinox in Nishiki Ichiba, Kyoto.jpg",
+   "taken": "2009-04-19"
+  }
+ ],
+ "note": "Commons の説明に「京都・中京区錦小路通柳馬場西入ル中魚屋町、錦市場の漬物屋」とあり、カテゴリは Tsukemono shops in Nishiki Market。本文の「漬物」の紹介に合う。撮影は2009年だが、アーケードの店先の様子は変わっていないと判断(未確認)。人は小さく写る程度で、顔は分からない。表示禁止リストの画像(Sergiy Galyonkin の写真)は選んでいない。"
+}
