@@ -40,6 +40,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { readJpeg } from "../feature-spot-photos/jpeg.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "../..");
@@ -409,7 +410,7 @@ const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
  * 写真の記録（photos/<キー>.json または features/<キー>.json）の images → public/ に実在する画像だけの { path, what, width, height }。
  * 記録が無い・0 枚なら []。
  */
-function loadImagesFrom(f, key) {
+function loadImagesFrom(f, key, fillDims = false) {
   if (!existsSync(f)) return [];
   const out = [];
   const seen = new Set();
@@ -425,8 +426,13 @@ function loadImagesFrom(f, key) {
     seen.add(rel);
     const dim = (x) => (Number.isFinite(x) && x > 0 ? Math.round(x) : undefined);
     const what = typeof im?.what === "string" ? im.what.trim() : "";
-    const w = dim(im?.width);
-    const h = dim(im?.height);
+    let w = dim(im?.width);
+    let h = dim(im?.height);
+    if (fillDims && !(w && h)) {
+      // 特集の写真の記録には寸法が無い。og:image:width などのため、画像ファイルの JPEG のヘッダから読む（読めなければ寸法なし）
+      const d = readJpeg(readFileSync(path.join(PUBLIC_DIR, rel)));
+      if (!d.error) { w = d.width; h = d.height; }
+    }
     out.push({ path: `/${rel}`, ...(what ? { what } : {}), ...(w && h ? { width: w, height: h } : {}) });
   }
   return out;
@@ -439,7 +445,7 @@ function loadImagesFrom(f, key) {
 function loadPhotos(key) {
   const own = loadImagesFrom(path.join(PHOTOS_DIR, `${key}.json`), key);
   if (own.length > 0) return own;
-  return loadImagesFrom(path.join(FEATURES_DIR, `${key}.json`), key);
+  return loadImagesFrom(path.join(FEATURES_DIR, `${key}.json`), key, true);
 }
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
 
