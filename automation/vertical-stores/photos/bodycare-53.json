@@ -1,5 +1,15 @@
 {
   "key": "bodycare-53",
-  "images": [],
-  "note": "公式サイトのページで確認できた画像(候補8枚)は口コミ・アプリ案内・イラスト・症状を謳うバナーのみで、店内・外観の実写真なし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-53/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1xXtE8iGiHxrnCBtELABMql1fcd6iksVxgiT28mKISo49p-Lv39VKRKpWJX3KK-RT_BJz-FsuV_TzXN9SLOTrqlsMsNBZuDttg153Ra9KJJ4o-ua68M6_enjVzloGNtM7kYhsQA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14168947522699748057",
+      "what": "ベッドが並ぶ施術室",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトのページで確認できた画像(候補8枚)は口コミ・アプリ案内・イラスト・症状を謳うバナーのみで、店内・外観の実写真なし / Google マップの写真"
 }

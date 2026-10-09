@@ -1,5 +1,15 @@
 {
   "key": "bodycare-51",
-  "images": [],
-  "note": "Googleマップのサイトはホットペッパービューティーのみで自前の公式サイトなし"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-51/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJaaJ5-kxIb7K5MDzunfv0AqJw9agPmWgojqYXuju9KdvsQa4A2lEmA-q6Teui0YRkNOJwjdk-MbwDxn9ldLbXKJvH9Y2_vkPt_7B8tVbnIhhhrA-maT0HP-dUd_g3T_21aQBf=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13610381515838391227",
+      "what": "カーテンで仕切られた施術ベッド",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Googleマップのサイトはホットペッパービューティーのみで自前の公式サイトなし / Google マップの写真"
 }
