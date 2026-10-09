@@ -10,7 +10,7 @@
  * 隙間・開いた後の空間は alpha 0 で、後ろの DOM（店の写真）がそのまま見える。
  */
 
-export type DyeKind = "ai" | "cha";
+export type DyeKind = "ai" | "kon" | "cha";
 
 export type RealState = {
   time: number;
@@ -43,6 +43,8 @@ export type ClothReal = {
   resize: (l: RealLayout) => void;
   setGlyphs: (chars: string[], family: string, scale?: number) => void;
   setDye: (k: DyeKind) => void;
+  /** 布の細かいしわの強さ 0〜1（既定は弱く 0.2。大きなひだ・畳みじわは変わらない） */
+  setWrinkle: (w: number) => void;
   destroy: () => void;
 };
 
@@ -58,7 +60,8 @@ uniform float uTime, uOpen, uGust, uLamp, uMouse, uN, uS;
 uniform vec4 uLay;   // rodY, hemY, rodR, bandH(device px)
 uniform vec4 uPt;    // pointer x, y (device px), hoverIdx, hoverAmt
 uniform vec2 uSel;   // selIdx, selAmt
-uniform vec3 uDye, uDyeHi, uInk, uTint;
+uniform vec3 uDye, uDyeHi, uInk, uTint, uGrade; // uGrade: 彩度, 灯りの暖かさ, 暗部の落とし(ガンマ)
+uniform float uWr;
 uniform sampler2D uAtlas;
 
 const float PI = 3.14159265;
@@ -88,8 +91,8 @@ float weaveH(vec2 m, float p){
   float par = mod(c.x + c.y, 2.0);
   float rx = hash(vec2(c.x, 17.0));
   float ry = hash(vec2(5.0, c.y));
-  float bx = pow(sin(PI * f.x), 0.7) * (0.78 + 0.44 * rx);
-  float by = pow(sin(PI * f.y), 0.7) * (0.78 + 0.44 * ry);
+  float bx = pow(sin(PI * f.x), 0.7) * (0.50 + 0.95 * rx);
+  float by = pow(sin(PI * f.y), 0.7) * (0.50 + 0.95 * ry);
   float wp = bx * (0.62 + 0.38 * by);
   float wf = by * (0.62 + 0.38 * bx);
   return mix(wf, wp, 1.0 - par);
@@ -137,7 +140,7 @@ float liftOf(float k){
 float hemOf(float k, float u, float yb, float sw){
   float hv = (abs(uPt.z - k) < 0.5) ? uPt.w : 0.0;
   float lift = liftOf(k);
-  float h = yb + (uLay.y - yb) * (1.0 - 0.925 * lift);
+  float h = yb + (uLay.y - yb) * (1.0 - 0.88 * lift);
   h -= hv * 15.0 * uS * (1.0 - lift);
   h += (sin(u * TAU * 1.35 + k * 2.1 + uTime * 0.35) * 3.4 + sin(u * TAU * 3.1 + k * 5.0 - uTime * 0.23) * 1.3) * uS * (1.0 - lift * 0.85);
   h -= abs(sw) * 0.10;
@@ -197,7 +200,7 @@ void main(){
   // ---------- 面の傾き ----------
   // 大きなひだ（垂れごとに位相が違う。帯の中ではつながる）
   float pb = smoothstep(yb - 10.0 * s, yb + 70.0 * s, y);
-  float foldA = panelPw * 0.115 * amp * (1.0 + 0.5 * uGust);
+  float foldA = panelPw * 0.19 * amp * (1.0 + 0.5 * uGust);
   float f1p = mix(0.0, hash(vec2(k + 1.0, 2.0)) * TAU, pb);
   float f2p = mix(1.7, hash(vec2(k + 1.0, 3.0)) * TAU + 1.0, pb);
   float f3p = mix(3.4, hash(vec2(k + 1.0, 4.0)) * TAU + 2.0, pb);
@@ -205,8 +208,8 @@ void main(){
   float ph1 = TAU * 1.15 * u + f1p + 0.5 * wob;
   float ph2 = TAU * 2.35 * u + f2p + 0.5 * sin(yq * 4.1 + k * 0.7 + uTime * 0.31);
   float ph3 = TAU * 4.3 * u + f3p + 0.5 * sin(yq * 5.3 + k * 2.7 + uTime * 0.17);
-  float fh = sin(ph1) + 0.5 * sin(ph2) + 0.22 * sin(ph3);
-  float fs = cos(ph1) * TAU * 1.15 + 0.5 * cos(ph2) * TAU * 2.35 + 0.22 * cos(ph3) * TAU * 4.3;
+  float fh = sin(ph1) + 0.42 * sin(ph2) + 0.10 * sin(ph3);
+  float fs = cos(ph1) * TAU * 1.15 + 0.42 * cos(ph2) * TAU * 2.35 + 0.10 * cos(ph3) * TAU * 4.3;
   float gx = foldA * fs / panelPw;
   float Hn = foldA * fh;
 
@@ -229,17 +232,30 @@ void main(){
   vec2 d3 = -(a3 / q3) * 2.0 * (c3.yz * R3) / vec2(11.0, 17.0);
   vec2 d1 = -(a1 / q1) * 2.0 * (c1.yz * R1) / vec2(52.0, 84.0);
   vec2 d2 = -(a2 / q2) * 2.0 * (c2.yz * R2) / vec2(21.0, 34.0);
-  float crA = 12.0 * (0.35 + 0.65 * amp);
+  float crA = 12.0 * (0.35 + 0.65 * amp) * uWr;
   vec2 gc = crA * (d1 * 0.46 + d2 * 0.34 + d3 * 0.13);
   Hn += crA * (r1 * 0.46 + r2 * 0.34 + r3 * 0.13) - crA * 0.5;
 
   // 乳から広がる縦のしぼり（竿の近く）
   float lpp = (pw0 / s > 150.0) ? 3.0 : 1.0;
   float dgap = pw0 / lpp / s;
-  float gt = exp(-(y - rodY) / (86.0 * s));
+  float gt = exp(-(y - rodY) / (170.0 * s));
   float gph = TAU * mC.x / dgap;
-  float gxg = -10.0 * gt * sin(gph) * TAU / dgap;
-  Hn += 10.0 * gt * cos(gph);
+  float gxg = -15.0 * gt * sin(gph) * TAU / dgap;
+  Hn += 15.0 * gt * cos(gph);
+
+  // 畳みじわの名残（まっすぐな線が、横に 1 本・縦に 0〜1 本。布が上がると一緒に上がる）
+  float upD = (lk * 0.88 * (hemY - yb)) / s;
+  float cdy = (y - (yb + (hemY - yb) * (0.47 + 0.02 * sin(mC.x / 90.0)))) / s + upD;
+  float cs = exp(-cdy * cdy / 5.0);
+  float crvA = 2.4 * (0.6 + 0.8 * uWr) * smoothstep(0.0, 18.0, (y - yb) / s);
+  Hn -= crvA * cs;
+  float crSlope = crvA * 2.0 * cdy / 5.0 * cs;
+  float cdx = (u - (0.30 + 0.40 * hash(vec2(k, 8.3)))) * panelPw;
+  float cvs = exp(-cdx * cdx / 5.0);
+  float cvA = 2.0 * (0.6 + 0.8 * uWr) * step(0.5, hash(vec2(k, 5.5))) * smoothstep(0.08, 0.3, yq) * (1.0 - smoothstep(0.8, 1.0, yq));
+  Hn -= cvA * cvs;
+  float cvSlope = cvA * 2.0 * cdx / 5.0 * cvs;
 
   // 押された窪み
   float hv = (abs(uPt.z - k) < 0.5) ? uPt.w : 0.0;
@@ -252,20 +268,20 @@ void main(){
 
   // 上がった垂れは、裾が畳まれて横ひだになる
   float vv = clamp((y - yb) / max(hem - yb, 1.0), 0.0, 1.0);
-  float plA = lk * (0.30 + 0.70 * vv);
+  float plA = lk * (0.30 + 0.70 * vv) * 1.15;
   float plPh = TAU * 3.0 * vv + k * 1.3;
   float plSlope = plA * 0.9 * cos(plPh);
   Hn -= plA * 0.9 * (max(hem - yb, 1.0) / s) / (TAU * 3.0) * sin(plPh);
   float edL = (x - ln) / s, edR = (rn - x) / s;
   float curl = 0.42 * (exp(-max(edL, 0.0) / 20.0) - exp(-max(edR, 0.0) / 20.0)) * smoothstep(0.0, 0.25, yq) * (1.0 - lk);
-  vec2 g = vec2(gx + gxg + gc.x + gb.x + curl, gc.y + gb.y + plSlope);
+  vec2 g = vec2(gx + gxg + gc.x + gb.x + curl + cvSlope, gc.y + gb.y + plSlope + crSlope);
   vec3 N = normalize(vec3(-g.x, -g.y, 1.0));
 
   // ---------- 糸 ----------
-  float p = 2.2;
-  float fadeW = smoothstep(2.2, 5.6, p * s);
+  float p = 1.8;
+  float fadeW = smoothstep(2.0, 5.0, p * s);
   vec2 jo = vec2(0.0);
-  vec2 mT = mC + (vec2(vn(mC / vec2(7.0, 11.0)), vn(mC / vec2(7.0, 11.0) + 5.0)) - 0.5) * vec2(1.5, 1.7);
+  vec2 mT = mC + (vec2(vn(mC / vec2(7.0, 11.0)), vn(mC / vec2(7.0, 11.0) + 5.0)) - 0.5) * vec2(2.4, 2.8);
   float h0 = weaveH(mT, p);
   float h1 = weaveH(mT + vec2(-0.30, -0.65), p);
   float wb = h0 - h1;
@@ -276,41 +292,42 @@ void main(){
   float lenW = vn(vec2(th.x * 1.7, mC.y / 28.0));
   float lenF = vn(vec2(mC.x / 60.0 + 4.0, th.y * 1.3));
   float slubK = mix(0.38, 1.0, fadeW);
-  float slub = ((colr * 0.55 + lenW * 0.45 - 0.5) * 0.55 + (rowr * 0.40 + lenF * 0.60 - 0.5) * 0.20) * slubK;
+  float slub = ((colr * 0.55 + lenW * 0.45 - 0.5) * 0.42 + (rowr * 0.40 + lenF * 0.60 - 0.5) * 0.18) * slubK;
   float nep = step(0.9988, hash(floor(mC / 1.1) + 3.3));
 
   // 染めのむら
   float mot = fbm(R2 * (mC / vec2(64.0, 100.0)) + 11.0);
   float streak = vn(vec2(mC.x / 15.0, mC.y / 150.0));
-  float dens = 0.82 * mot + 0.18 * streak;
-  vec3 alb = mix(uDye, uDyeHi, clamp(0.75 * (1.0 - smoothstep(0.30, 0.70, dens)) + 0.42 * wg * fadeW + 0.18 * (1.0 - yq) * (1.0 - ramp), 0.0, 1.0));
+  float dens = 0.84 * mot + 0.16 * streak;
+  vec3 alb = mix(uDye, uDyeHi, clamp(0.55 * (1.0 - smoothstep(0.30, 0.70, dens)) + 0.42 * wg * fadeW + 0.18 * (1.0 - yq) * (1.0 - ramp), 0.0, 1.0));
 
   // 藍のぼかし：竿に近い上のほうは染めが浅く、下へ向かって深くなる（藍染めの暖簾によくある染め方）
   float topK = 1.0 - smoothstep(0.0, 0.55, (y - rodY) / (hemY - rodY));
-  alb = mix(alb, uDyeHi * 1.38 + vec3(0.03, 0.04, 0.05), 0.40 * topK * topK);
+  alb = mix(alb, uDyeHi * 1.18 + vec3(0.03, 0.035, 0.04), 0.46 * topK * topK);
 
   // ---------- 染め抜きの字 ----------
-  float sq = clamp((hem - yb) / (hemY - yb), 0.07, 1.0);
-  float gyc = yb + (hem - yb) * 0.40;
+  // 布が上がると、字は布と一緒に上へ動き、帯の下へ抜ける（縮めない）
+  float gyc = yb + (hemY - yb) * 0.40 - (lk * 0.88 * (hemY - yb) + hv * 15.0 * s * (1.0 - lk));
   float narrow = (pw0 / s < 150.0) ? 1.0 : 0.0;
   float Sg = mix(0.90, 0.95, narrow) * pw0 / s;
   float jk = mix(1.0, 0.40, narrow);
-  vec2 cl = vec2((u - 0.5) * panelPw, (y - gyc) / (s * sq));
+  vec2 cl = vec2((u - 0.5) * panelPw, (y - gyc) / s);
   vec2 qd = (floor(cl / p) + 0.5) * p;
-  vec2 clj = mix(cl, qd, 0.30 * jk) + (vec2(vn(mC * 0.55), vn(mC * 0.55 + 7.0)) - 0.5) * 1.6 * jk;
+  vec2 clj = mix(cl, qd, 0.14 * jk) + (vec2(vn(mC * 0.55), vn(mC * 0.55 + 7.0)) - 0.5) * 0.8 * jk;
   vec2 auv = vec2((k + 0.5 + clj.x / Sg) / n, 0.5 + clj.y / Sg);
   float inBox = step(abs(clj.x), Sg * 0.5) * step(abs(clj.y), Sg * 0.5);
   float tapR = 2.6 / Sg;
   float mask = texture2D(uAtlas, auv).r;
   float mblur = (texture2D(uAtlas, auv + vec2(tapR / n, 0.0)).r + texture2D(uAtlas, auv - vec2(tapR / n, 0.0)).r + texture2D(uAtlas, auv + vec2(0.0, tapR)).r + texture2D(uAtlas, auv - vec2(0.0, tapR)).r) * 0.25;
-  float edgeN = ((vn(mC * 0.8) - 0.5) * 0.20 + (hash(floor(mC / 1.2)) - 0.5) * 0.12) * jk;
-  float ink = smoothstep(0.34, 0.70, mask + edgeN) * inBox * (1.0 - 0.92 * smoothstep(0.20, 0.70, lk));
+  mask = mix(mask, mblur, 0.5);
+  float edgeN = ((vn(mC * 0.8) - 0.5) * 0.09 + (hash(floor(mC / 1.2)) - 0.5) * 0.05) * jk;
+  float ink = smoothstep(0.40, 0.60, mask + edgeN) * inBox * smoothstep(yb, yb + 4.0 * s, y);
   float fleck = smoothstep(0.80, 0.96, vn(mC / 2.6 + 9.1));
-  ink *= (1.0 - 0.26 * fleck) * (0.94 + 0.06 * vn(mC / 7.0 + 3.0));
-  float halo = smoothstep(0.03, 0.55, mblur) * (1.0 - ink) * inBox;
+  ink *= (1.0 - 0.07 * fleck) * (0.96 + 0.04 * vn(mC / 7.0 + 3.0));
+  float halo = smoothstep(0.03, 0.55, mblur) * (1.0 - ink) * inBox * smoothstep(yb, yb + 4.0 * s, y);
   alb = mix(alb, uDyeHi * 1.25, halo * 0.30);
 
-  vec3 inkCol = uInk * (0.94 + 0.10 * (colr - 0.5));
+  vec3 inkCol = uInk * 0.79 * (0.95 + 0.10 * (colr - 0.5));
   float bleed = (1.0 - smoothstep(0.62, 0.98, mask)) * ink;
   inkCol = mix(inkCol, alb * 2.6 + 0.07, bleed * 0.55);
   vec3 baseCol = mix(alb, inkCol, ink);
@@ -327,11 +344,11 @@ void main(){
   vec2 lp = vec2(x / uRes.x - 0.5, (y - rodY) / (hemY - rodY) - 0.10);
   float spot = exp(-dot(lp * vec2(1.25, 1.0), lp * vec2(1.25, 1.0)) * 4.2);
   float lampF = 1.0 + 0.035 * sin(uTime * 1.9) * sin(uTime * 0.47 + 1.3);
-  vec3 lightKey = lampF * mix(vec3(1.0, 0.94, 0.84), vec3(1.0, 0.86, 0.66), spot) * (0.48 + 0.78 * uLamp) * (0.84 + 0.46 * spot);
+  vec3 lightKey = lampF * mix(vec3(1.0, 0.955, 0.89), vec3(1.0, 0.88, 0.70), spot) * (0.50 + 0.78 * uLamp) * (0.90 + 0.26 * spot);
   vec3 diffuse = lightKey * (d1v * tl) + vec3(1.0, 0.78, 0.56) * 0.18 * d2v + vec3(0.66, 0.74, 1.0) * 0.17;
   float hmax = foldA * 1.8 + crA * 0.7 + 2.0;
   float ao = 0.72 + 0.28 * clamp(0.5 + 0.55 * Hn / hmax, 0.0, 1.0);
-  float weaveMul = 1.0 + fadeW * (0.21 * wb - 0.10 * wg + 0.03) * (0.75 + 0.5 * colr);
+  float weaveMul = 1.0 + fadeW * (0.12 * wb - 0.06 * wg + 0.02) * (0.6 + 0.8 * colr);
   float vig = 1.0 - 0.34 * smoothstep(0.30, 1.0, abs(x / uRes.x - 0.5) * 2.0);
   vec3 col = baseCol * diffuse * ao * weaveMul * vig;
   col += baseCol * vec3(1.0, 0.8, 0.6) * pow(1.0 - N.z, 2.0) * 0.5;
@@ -344,9 +361,13 @@ void main(){
   vec3 trCol = mix(alb * vec3(2.2, 1.9, 1.6) + uTint, inkCol * 0.95, ink);
   vec2 ld = (fc - vec2(uRes.x * 0.5, rodY + (hemY - rodY) * 0.34)) / (s * 175.0);
   float disc = exp(-dot(ld, ld) * 1.3);
-  float T = (back * (0.06 + 0.34 * uLamp) + disc * 0.16 * uLamp) * thin * (1.0 + 1.1 * uOpen);
+  float T = (back * (0.06 + 0.34 * uLamp) + disc * 0.08 * uLamp) * thin * (1.0 + 1.1 * uOpen);
   col += trCol * vec3(1.0, 0.82, 0.58) * T * mix(0.6, 1.25, ink);
-  col += inkCol * vec3(1.0, 0.80, 0.55) * back * uLamp * 0.07 * ink;
+  // 色の整え：彩度を落とし、暗部は墨に寄せ、灯りの当たる所だけわずかに暖かく
+  float gl = dot(col, vec3(0.30, 0.59, 0.11));
+  col = mix(vec3(gl), col, uGrade.x);
+  col *= mix(vec3(1.0), vec3(1.07, 1.0, 0.89), uGrade.y * smoothstep(0.10, 0.45, gl) * (0.35 + 0.65 * spot));
+  col = pow(max(col, vec3(0.0)), vec3(uGrade.z));
 
   // ---------- 縫い・裾・耳 ----------
   float dE = min(x - ln, rn - x) / s;
@@ -354,14 +375,14 @@ void main(){
   float below = smoothstep(0.0, 6.0, (y - yb) / s);
   float dashY = step(0.38, fract(y / (4.2 * s)));
   float sl1 = (1.0 - smoothstep(0.30, 0.85, abs(dE - 6.5))) * dashY * below;
-  col *= 1.0 - 0.34 * sl1;
+  col *= 1.0 - 0.34 * sl1 * (1.0 - lk);
   col *= mix(1.0, 0.93, (1.0 - smoothstep(0.0, 6.5, dE)) * below);
   col += 0.045 * baseCol * exp(-max(dE, 0.0) / 0.9) * below * 6.0;
   col += vec3(1.0, 0.72, 0.42) * 0.10 * uLamp * exp(-max(dE, 0.0) / 2.4) * below * (1.0 - lk);
   float dashX = step(0.38, fract(x / (4.2 * s)));
   float hl1 = (1.0 - smoothstep(0.30, 0.85, abs(dH - 29.0))) * dashX;
   float hl2 = (1.0 - smoothstep(0.30, 0.85, abs(dH - 32.2))) * dashX;
-  col *= 1.0 - 0.34 * max(hl1, hl2) * step(0.0, dH);
+  col *= 1.0 - 0.34 * max(hl1, hl2) * step(0.0, dH) * (1.0 - lk);
   col *= mix(1.0, 0.90, (1.0 - smoothstep(26.0, 29.5, dH)) * step(0.0, dH));
   col += 0.05 * baseCol * exp(-max(dH, 0.0) / 1.1) * 6.0;
   col *= 0.86 + 0.14 * smoothstep(0.0, 3.0, dH);
@@ -370,15 +391,15 @@ void main(){
   float si = floor(x / pw0 + 0.5);
   float sx = abs(x - si * pw0) / s;
   float tack = step(sx, 5.0) * step(1.0, si) * step(si, n - 1.0) * step(abs((y - yb) / s - 1.5), 5.5);
-  col *= 1.0 - 0.38 * tack * step(0.5, fract(x / (1.7 * s) + 0.25));
+  col *= 1.0 - 0.38 * tack * step(0.5, fract(x / (1.7 * s) + 0.25)) * (1.0 - lk);
   // 竿の影（竿の下の布）
-  col *= 1.0 - 0.60 * exp(-max(y - (rodY + rodR), 0.0) / (13.0 * s)) * step(rodY, y);
+  col *= 1.0 - 0.72 * exp(-max(y - (rodY + rodR), 0.0) / (21.0 * s)) * step(rodY, y);
 
   // 布の色
   vec3 clothCol = col;
   vec4 c = vec4(clothCol * cov, cov);
   if (y > yb) {
-    float sh = 0.62 * exp(-max(shadowD, 0.0) / (10.0 * s)) * (1.0 - cov);
+    float sh = (0.62 + 0.25 * lk) * exp(-max(shadowD, 0.0) / ((10.0 + 12.0 * lk) * s)) * (1.0 - cov);
     c = c + vec4(0.0, 0.0, 0.0, sh) * (1.0 - c.a);
   }
 
@@ -396,12 +417,12 @@ void main(){
   float loopBot = rodY + rodR + (10.0 + 6.0 * hash(vec2(lj, 11.3))) * s;
   float inLoop = inLoopX * aa(y - loopTop) * aa(loopBot - y);
   // 乳の見え方（筒状の陰影・上へ折り返す所・下の縫い止め）
-  float lsh = 0.50 + 0.50 * sqrt(max(0.0, 1.0 - nx * nx));
+  float lsh = 0.40 + 0.60 * sqrt(max(0.0, 1.0 - nx * nx));
   float topTurn = smoothstep(loopTop, loopTop + 7.0 * s, y);
   float arch = smoothstep(loopTop + 5.0 * s, loopTop, y);
   vec3 loopCol = clothCol * lsh * (0.78 + 0.42 * topTurn) * 1.08 + vec3(0.05, 0.07, 0.11) * arch * 1.4;
   float stL = (1.0 - smoothstep(0.25, 0.8, abs(abs(ldx) / s - 6.2))) * step(0.45, fract(y / (3.6 * s)));
-  loopCol *= 1.0 - 0.30 * stL;
+  loopCol *= (1.0 - 0.30 * stL) * (0.90 + 0.20 * hash(vec2(lj, 2.2)));
   loopCol *= 1.0 - 0.32 * (1.0 - smoothstep(0.5, 1.0, abs(nx))) * 0.0;
   float tackL = (1.0 - smoothstep(0.35, 0.9, abs((y - loopBot) / s + 1.5))) * step(0.5, fract(x / (1.7 * s)));
   loopCol *= 1.0 - 0.38 * tackL;
@@ -419,7 +440,7 @@ void main(){
   wood *= 1.0 - 0.45 * smoothstep(2.6, 0.0, nodeD) + 0.10 * smoothstep(9.0, 3.0, nodeD) * smoothstep(0.0, 3.0, nodeD);
   wood *= 1.0 - 0.22 * (1.0 - ringN) * (1.0 - ringN);
   vec3 spec = vec3(1.0, 0.92, 0.80) * pow(max(dot(reflect(-LR, nr), vec3(0.0, 0.0, 1.0)), 0.0), 20.0) * 0.12;
-  vec3 rodCol = wood * (0.20 + 1.00 * rd * (0.55 + 0.6 * uLamp)) * (0.62 + 0.38 * nr.z) + spec * (0.55 + 0.6 * uLamp);
+  vec3 rodCol = wood * (0.09 + 1.30 * pow(rd, 1.25) * (0.55 + 0.6 * uLamp)) * (0.50 + 0.50 * nr.z) * (1.0 - 0.42 * smoothstep(0.15, 1.0, tt)) + spec * (0.55 + 0.6 * uLamp);
   float lsd = smoothstep(lw + 6.0 * s, lw, abs(ldx));
   rodCol *= 1.0 - 0.55 * lsd;
 
@@ -445,11 +466,13 @@ function compile(gl: WebGLRenderingContext, type: number, src: string) {
   return sh;
 }
 
-const DYES: Record<DyeKind, { dye: number[]; hi: number[]; ink: number[]; tint: number[] }> = {
-  // 藍染め（深い藍）
-  ai: { dye: [0.050, 0.094, 0.190], hi: [0.116, 0.200, 0.352], ink: [0.88, 0.85, 0.77], tint: [0.0, 0.03, 0.09] },
+const DYES: Record<DyeKind, { dye: number[]; hi: number[]; ink: number[]; tint: number[]; grade: number[] }> = {
+  // 本藍（落ち着いた深い藍。褪せた渋さ）
+  ai: { dye: [0.046, 0.075, 0.130], hi: [0.105, 0.150, 0.235], ink: [0.87, 0.85, 0.80], tint: [0.0, 0.02, 0.05], grade: [0.92, 1.0, 1.06] },
+  // 濃紺（ほぼ墨に近い紺）
+  kon: { dye: [0.026, 0.038, 0.066], hi: [0.050, 0.068, 0.108], ink: [0.86, 0.84, 0.79], tint: [0.0, 0.01, 0.03], grade: [0.86, 0.9, 1.10] },
   // 柿渋・茶（暗い茶）
-  cha: { dye: [0.150, 0.082, 0.050], hi: [0.260, 0.150, 0.095], ink: [0.90, 0.84, 0.72], tint: [0.06, 0.02, 0.0] },
+  cha: { dye: [0.105, 0.070, 0.052], hi: [0.185, 0.130, 0.098], ink: [0.88, 0.84, 0.76], tint: [0.05, 0.02, 0.0], grade: [0.84, 0.9, 1.06] },
 };
 
 export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
@@ -478,7 +501,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   const U = (n: string) => gl.getUniformLocation(prog, n);
   const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"), uMouse = U("uMouse"),
     uN = U("uN"), uS = U("uS"), uLay = U("uLay"), uPt = U("uPt"), uSel = U("uSel"),
-    uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uAtlas = U("uAtlas");
+    uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uGrade = U("uGrade"), uWr = U("uWr"), uAtlas = U("uAtlas");
 
   const tex = gl.createTexture();
   gl.activeTexture(gl.TEXTURE0);
@@ -496,6 +519,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   let n = 5;
   let layout: RealLayout | null = null;
   let dye = DYES.ai;
+  let wrinkle = 0.2;
 
   /** 字のアトラス: 1 枚の布につき 512 角の 1 区画。R が字（染め抜き＝白）。区画の中心が字の中心 */
   const setGlyphs = (chars: string[], family: string, scale = 1) => {
@@ -521,6 +545,9 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
 
   const setDye = (k: DyeKind) => {
     dye = DYES[k];
+  };
+  const setWrinkle = (w: number) => {
+    wrinkle = Math.min(1, Math.max(0, w));
   };
 
   const resize = (l: RealLayout) => {
@@ -553,6 +580,8 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     gl.uniform3fv(uDyeHi, dye.hi);
     gl.uniform3fv(uInk, dye.ink);
     gl.uniform3fv(uTint, dye.tint);
+    gl.uniform3fv(uGrade, dye.grade);
+    gl.uniform1f(uWr, wrinkle);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
 
@@ -565,5 +594,5 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     }, 0);
   };
 
-  return { render, resize, setGlyphs, setDye, destroy };
+  return { render, resize, setGlyphs, setDye, setWrinkle, destroy };
 }

@@ -33,7 +33,7 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - 5 つの垂れは、それぞれ、その種類の章（#ch-xxx）への行き先（<a>）。乗せると垂れが押されてたわみ、押すと垂れが上がって章へ移る。
  * - スクロールで、布が上がって奥（店の写真と、h1）へ入る。
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
- * 見た目の切り替え（試作の比較用）: ?dye=ai|cha（布の色）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
+ * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|cha（布の色。本藍・濃紺・茶）、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
 export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai" }: Props) {
   const wrap = useRef<HTMLElement>(null);
@@ -53,7 +53,10 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const root = w.closest(".vN") as HTMLElement;
     const qs = new URLSearchParams(location.search);
-    const dyeQ = qs.get("dye") === "cha" ? "cha" : qs.get("dye") === "ai" ? "ai" : defaultDye;
+    const dq = qs.get("dye");
+    const dyeQ: DyeKind = dq === "cha" || dq === "kon" || dq === "ai" ? dq : defaultDye;
+    const wq = parseFloat(qs.get("wrinkle") ?? "");
+    const wrinkleQ = Number.isFinite(wq) ? wq : 0.2;
     setDye(dyeQ);
     const fontQ = (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
     const dprQ = parseFloat(qs.get("dpr") ?? "");
@@ -232,6 +235,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       if (!alive) return;
       if (cloth) {
         cloth.setDye(dyeQ);
+        cloth.setWrinkle(wrinkleQ);
         cloth.setGlyphs(chapters.map((c) => c.kanji), family);
       }
       layout();
@@ -297,6 +301,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           <div className="vR-photo" style={{ backgroundImage: `url(${photo})` }} />
           <div className="vR-shade" />
           <div className="vR-glow" />
+          <div className="vR-hlshade" aria-hidden="true" />
           <div className="vN-headline">
             <h1 className="vN-h1" aria-label="暖簾を、くぐる。">
               <span className="vN-h1-col" aria-hidden="true">
@@ -316,7 +321,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           </p>
         </div>
 
-        {mode === "css" && (
+        {(
           <div className="vR-fb" aria-hidden="true">
             <i className="vR-fb-rod" />
             {chapters.map((c) => (
