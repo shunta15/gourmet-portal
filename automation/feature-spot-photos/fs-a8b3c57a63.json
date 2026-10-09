@@ -1,0 +1,45 @@
+{
+ "featureId": "CaféBleu2",
+ "dir": "fs-a8b3c57a63",
+ "storeName": "Café Bleu 2",
+ "mapsUrl": "https://maps.google.com/?cid=10301746549935135887",
+ "placeUrl": "https://www.google.com/maps/place/Caf%C3%A9+Bleu+2/@33.9533632,131.2432659,17z/data=!3m1!4b1!4m6!3m5!1s0x3543818c833b744d:0x8ef727e7fafd5c8f!8m2!3d33.9533632!4d131.2432659!16s%2Fg%2F11w1j_33z8?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Café Bleu 2",
+  "address": "山口県宇部市中央町２丁目６−５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a8b3c57a63/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiHhHk24rmK04QQ_A-8flljJtZJ_FUA4sEUGOYgKVFmsLUc4IE7MeXZUmfTuHRarSgCdZDDFihQLzDKrk1oqh0sDXx1b4uincEjpX2FX9fIq2B7Tl-1B2yoxf0EVD5ha-bD4vtOE5t8Ksd=s1200",
+   "what": "野菜をのせた麺料理",
+   "width": 900,
+   "height": 673,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a8b3c57a63/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2AJar6-0fI4n9QWaKwsYs0_MNgGNc8gkvqEPFXyxeOVrnSeDi5Cwr6QDIS9c1Q9E0aQk9_KVhRwFfsrOxuSETUeTSNZYTyU8yy2KZuXIXN2uR48XelvpUEolCS-gTgCm56S7A1nnxADJG=s1200",
+   "what": "テーブル席のある店内",
+   "width": 900,
+   "height": 673,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a8b3c57a63/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rd9A3xvh0K-5HwXtUIf40nqbojWvqWj_hgjxnCHGOQWd_ETE6GW89e-qh9c39n9wIob26MAivNbkx9Lf-gczPhlfNVPF-yWUPAxEXRGdObGpYw40KOIfBj8gXCsnTNOJvDdRey=s1200",
+   "what": "厨房カウンターが見える店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

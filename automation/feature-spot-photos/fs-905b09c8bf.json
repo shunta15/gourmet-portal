@@ -1,0 +1,45 @@
+{
+ "featureId": "淡路屋",
+ "dir": "fs-905b09c8bf",
+ "storeName": "淡路屋",
+ "mapsUrl": "https://maps.google.com/?cid=3895545176277339807",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B7%A1%E8%B7%AF%E5%B1%8B/@34.5867142,135.5348492,17z/data=!3m1!4b1!4m6!3m5!1s0x6000d94e289c6d45:0x360fc1b2c67f4e9f!8m2!3d34.5867142!4d135.5348492!16s%2Fg%2F1tcx1d9j?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "淡路屋",
+  "address": "〒580-0033 大阪府松原市天美南５丁目１８−２１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-905b09c8bf/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOnYHu5Dv9N3owVBeVwrrO8w1o3ElTyxY-CzxwIkfbHgmkZP-DtbnPO_Ud7749aPgQ7fuzqdRqtTo6d6n_g-0zCsLjcoZ0uyNjHj43VOX8mSBuL-ApK0kVrMOx9ieT5CzQGqZZQvJHhGA=s1200",
+   "what": "わかめうどん",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-905b09c8bf/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RP70M1xIQ6nkamdgdrf1GHQPe-bS8dn3l2qNZ01CxmcBWNzotMWxxOU0dXlnrFq028MGlto23KBSjB_1DIx2ASHlXWhVveIIttDN4kmNHkZhm17LzjKU4FUcnISfqs5Q46B6VrNg=s1200",
+   "what": "厨房に面したカウンター席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-905b09c8bf/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYo9xuQtwFO4udEk4K_OG5rxK1gEhyIOBREOLD-eFkJnTTuq8UirtuJYf7ov5MOEpfap-lf1GCJD7XbbUvYbaK8SuJqObpF2_ms90Yp-PJgPHX2WNyjsHNNZn38C6IA3H1kOxvCH-D9xFE=s1200",
+   "what": "看板の出た店の外観",
+   "width": 796,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "お品書きだけの写真は不使用"
+}

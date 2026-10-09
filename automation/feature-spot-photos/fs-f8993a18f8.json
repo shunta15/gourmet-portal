@@ -1,0 +1,45 @@
+{
+ "featureId": "CafeFuu",
+ "dir": "fs-f8993a18f8",
+ "storeName": "cafe Fuu",
+ "mapsUrl": "https://maps.google.com/?cid=12134948307980531694",
+ "placeUrl": "https://www.google.com/maps/place/cafe+Fuu/@35.7558856,139.4671598,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e70d11a13be5:0xa867ff3140e837ee!8m2!3d35.7558856!4d139.4671598!16s%2Fg%2F11qpx62y24?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "cafe Fuu",
+  "address": "〒189-0014 東京都東村山市本町１丁目２３−２７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f8993a18f8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAet_0fPQm2qY0Rmlv0hiZunWPmpeDi3nwx9-kykTH6pOwn11otC84t_VcWs_avVp2jPlrgbrK8A1Qp0XCgbskfZs9KQTySwQN0LWKf79hWXh1YktgKSNEHy6soKmuIJoEM7fWB96bUDlZ=s1200",
+   "what": "コーヒーとワッフル",
+   "width": 900,
+   "height": 562,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f8993a18f8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZiJotwrhgtnTXw-GMcvZ1n55-z03cLlhZdGRpB8qZ37zKeD9lz7D65EykXYoSCCf3yShD-eP_UsesL3AkvpVJfIHpjrLnGqmU_zTKpo-yomQfMYeA4LUvHUFntigQlDdS47ofC4lxTWkg=s1200",
+   "what": "カウンターのある明るい店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f8993a18f8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QmLmRJ6LJ-O8MmBx5yI5KzvCllA6wftarxrAAvoEnc8XokY6mU_aL01CgGrqeVUCGtr6nX8JWbHdTQxdURLMbT3JAalW5yyogJ-2ySwNlzxoiUJujvUFv_Xg0phGTRPCbzXuirTa-co2Qj=s1200",
+   "what": "木の扉の店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

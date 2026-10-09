@@ -1,0 +1,45 @@
+{
+ "featureId": "ラーメンうずまき",
+ "dir": "fs-5d9e7abc9f",
+ "storeName": "ラーメンうずまき",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%86%E3%81%9A%E3%81%BE%E3%81%8D%20%E9%82%A3%E8%A6%87%E5%B8%82%E5%89%8D%E5%B3%B62%E4%B8%81%E7%9B%AE%EF%BC%88%E5%9B%BD%E9%81%9358%E5%8F%B7%E6%B2%BF%E3%81%84%EF%BC%89",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%86%E3%81%9A%E3%81%BE%E3%81%8D/@26.2220558,127.6844124,17z/data=!3m1!4b1!4m6!3m5!1s0x34e5690061daf6b3:0xa0952475fd6bc34c!8m2!3d26.2220558!4d127.6844124!16s%2Fg%2F11y54nps4t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ラーメンうずまき",
+  "address": "沖縄県那覇市前島２丁目１１−１５ ライオンズマンション前島第2 103号室",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5d9e7abc9f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RU-HumFjEW5PBQ2_XUHpR4hEb5oANrYAGl2RCELN1_Dik4SeyiSOMft79rLJoDFfT0EtWR-gqimO9Vn26_fhO-blWAHNpbTGHLa1bYw9CaFPSMgnuBDAy2_Opn_AhE1-xytxkBeqIct2-7=s1200",
+   "what": "味玉とチャーシューのラーメン",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5d9e7abc9f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q3ABj_SRoKGf11VqeqFqj5o62yF7-kNF0YO4k_ExPMNPxVr5IjhhYUclssNPbYgswua9EpJ3AeF7lLG316QlDGQo3CX-FXytD7ZHtf-mKfqaDG-OFu_lwO5KE8flyfNsa4g1Mjs2MamdGV=s1200",
+   "what": "厨房が見えるカウンター席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5d9e7abc9f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMExYcsQoKTbOU4uFZ-XXzKeEUl_xxIeBpExTSEoOVaDpOy2qFZ5Vfhh4tFXN_lsTICUqVadFtoHchxTK75pYG4tf1fjHkzhwvq-FV_qM0ai9zCu5kK4X63jQXPdr0vqvr4TDsPSXT3qic=s1200",
+   "what": "黄色い看板の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

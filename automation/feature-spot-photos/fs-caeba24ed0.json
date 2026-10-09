@@ -1,0 +1,55 @@
+{
+ "featureId": "RestaurantCentre",
+ "dir": "fs-caeba24ed0",
+ "storeName": "Restaurant Centre",
+ "mapsUrl": "https://maps.google.com/?cid=6086022266891628271",
+ "placeUrl": "https://www.google.com/maps/place/Restaurant+Centre/@35.1198038,137.0174399,17z/data=!3m1!4b1!4m6!3m5!1s0x6003650031c059af:0x5475e501b1316eef!8m2!3d35.1198038!4d137.0174399!16s%2Fg%2F11wg8d4wdp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Restaurant Centre",
+  "address": "〒470-0125 愛知県日進市赤池３丁目４０２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-caeba24ed0/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVR-YyXDKTugEU-coU6NASZjKHPyBV5ISsI_TUf9ply99QYc-XSXDShxBc7S7R9F1ZGxTtw9J2zVIPeUHEbzi1fm24NExIBzm_UNwJ7jWD4SmnUCux5d4Zvi-odV0-ucyMA7xR3iIojSU=s1200",
+   "what": "オムライス",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-caeba24ed0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sj1oQMZEi2bioP0sepLMnSCHmpT_xt36wQv3lX3bRQq1vWXAQJVQzuYDJpIYQcufVreUwU5BlEixbcZzuXSHvV01y37XWa6RhGXvpm-G279uu-3Tl3vk1aFVjGr4i2Yh49lRmjdLTp3YYQ=s1200",
+   "what": "シェフのいる厨房",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-caeba24ed0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SUEOwt4nILwMJDLlc_8bm4hjMKGyeRiOKV_Ycsv9xx86ul51t8Z1ZWeczSMFRY2nDfZPVfDnyvSdHB_XihH47Q2rdDj2TfoQVHjTULAOTozKwQz48_Z8anFkUeSihx1py5E3l3=s1200",
+   "what": "テーブルが並ぶ店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-caeba24ed0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJkkCvC1uo8dxcuCBGKNTtNsvqqIcRpFq5nUN448VJMxZbYdzg_CDMUTEC7S-uNacOpM46bDCtUS3-vnKZuLGtsbnn6kO21Ox1o8Cz1elHxvoUctvUhAY5w9SczZgnQj6-IiF71sxm0gg=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

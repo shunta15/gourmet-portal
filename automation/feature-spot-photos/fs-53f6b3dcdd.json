@@ -1,0 +1,65 @@
+{
+ "featureId": "pepo",
+ "dir": "fs-53f6b3dcdd",
+ "storeName": "pepo",
+ "mapsUrl": "https://maps.google.com/?cid=10503902071428739335",
+ "placeUrl": "https://www.google.com/maps/place/pepo/@36.365681,140.4704341,17z/data=!3m1!4b1!4m6!3m5!1s0x60222528dd84ce29:0x91c55b482afff107!8m2!3d36.365681!4d140.4704341!16s%2Fg%2F11x_nwyjb4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "pepo",
+  "address": "〒310-0805 茨城県水戸市中央２丁目９−８ こーぽらす中央 102号",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-53f6b3dcdd/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TafOyhEexCwOQRNOHNUku840god3KUx0rSVBPdC1xuJ92_1DDVh4J-BjZdEJGx4grj8j1Vt0SYEo-xVxFke-k6Mfnb9fXJch_8jHMB_zlACoL4rqTYJRBSlXks20vsBNPrzZY2vNCAz3R_=s1200",
+   "what": "テーブルに並ぶ料理",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-53f6b3dcdd/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHW0ogLYX_K-cT_70fQdZgP5GOzFoWRqo3PTFU1DVAMh2TOZSP8oOof7Wyq5-rpYgRedFAPV6iLz4KtVfIPXQPhX7AhdEZOQzHBJPHz8zhttOGe97C_0Bql3uTYFIxqQAAI8IsDCIM5SU=s1200",
+   "what": "夜の店頭",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-53f6b3dcdd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sdo6RgGmZWljHG1KlvCtuyBypsP2emzPx2nzLUp3Y8bhqlmHNpzKyL8FTK9GVwFb9Y8P18Z-4eV2FqhVb07ZCxLEbQWC6RAsw8mfFP9I03UcA2tUF3nKczMMQWh6NatCqb0D9VDALoc-bO=s1200",
+   "what": "ピザ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-53f6b3dcdd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrJuGr2yxHYxQ3zdf4G88qgu7OvHEsAXxuHle5pP2cFmzcXnaU9HMAJkMJw5gnrScw9RZKsTQOr5gsGsaUWRlEQWmhHcJOgvmQPBx3HOcoiQIWhNLz8w5LPizaP3vqV--t0vvgUI8Ryt0=s1200",
+   "what": "カウンター席と料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-53f6b3dcdd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeDT5LGoURQNYtC_FANCo50A_ZJZXVPSMiQK-IY0SsIppZn9fT1E-9vhhKsHR0sPXG_klJIYzhmOu6yZRT_rRsn3zMp6Kqw5yhAuU9rkzdpq2FB-7J4LkvUweqhDYC29LuLzYXrEGOWoKD=s1200",
+   "what": "ステーキ",
+   "width": 900,
+   "height": 814,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,35 @@
+{
+ "featureId": "多幸",
+ "dir": "fs-29f89f8da8",
+ "storeName": "多幸",
+ "mapsUrl": "https://maps.google.com/?cid=10462713188138941791",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%9A%E5%B9%B8/@34.8457895,138.3184872,17z/data=!3m1!4b1!4m6!3m5!1s0x601a46780f2e06f7:0x91330635f5d0fd5f!8m2!3d34.8457895!4d138.3184872!16s%2Fg%2F1tdprqt8?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "多幸",
+  "address": "静岡県焼津市石津１１４３−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-29f89f8da8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5wgnGzLno-8Hkfy0Aob52Uyr-f6c1RYh6ZEG2U3uicOF-bMpcdGkk0hqk-nSnb4idYTcSK5UA_hRS9vE8lYw-c94zRQ3H1J5hwY9CjU5bndWnN1Wj0KWgM2HO-1kEgD9Tcy6g1g=s1200",
+   "what": "テーブル席とカウンターのある店内",
+   "width": 900,
+   "height": 601,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-29f89f8da8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Smjah5JGMq6Fl60FQ59BqUesUdxGardYi4sztt8OI9dQccF8Jbk3sPpmyvN_ECGnFkXWCv0icjoH-apxPY5RwQ3QvSBDTnXwaZTlM_2_sJcDzuI7RxH-Xrg0388TMk304xZ_QVn-XMNVcH=s1200",
+   "what": "駐車場のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "Giselleジゼル雑貨屋&カフェ",
+ "dir": "fs-4f11b1e100",
+ "storeName": "Giselleジゼル雑貨屋&カフェ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Giselle%E3%82%B8%E3%82%BC%E3%83%AB%E9%9B%91%E8%B2%A8%E5%B1%8B%26%E3%82%AB%E3%83%95%E3%82%A7%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E8%8A%B1%E7%95%91",
+ "placeUrl": "https://www.google.com/maps/place/Giselle+%E3%82%B8%E3%82%BC%E3%83%AB+%E9%9B%91%E8%B2%A8%E5%B1%8B%26%E3%82%AB%E3%83%95%E3%82%A7/@33.3045543,130.5160023,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a545946162b1:0x90589bca7ea0a8a6!8m2!3d33.3045543!4d130.5160023!16s%2Fg%2F11ssd6t1rj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Giselle ジゼル 雑貨屋&カフェ",
+  "address": "福岡県久留米市花畑３丁目3−１４",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4f11b1e100/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJNBikUXp-V2t2A4ay2Ov3JRpu0eGEyUtT_xVF9zeOjlSuuEqR5cRrxtAxcfpOddFJLkjb0Vc68vSkrJqH1deOLnceT_ZkdJhft6QpiFTdfAgnfF09ZgMYt9TbF2lavmCcBDUgOtg54To=s1200",
+   "what": "カフェラテとレインボーケーキ",
+   "width": 900,
+   "height": 715,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4f11b1e100/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tfiw0ktDP1MmckzNGa8hMMmtQRAE_bOMmKIRNjSerHjCTbACHNEmTiOm0ppls-Z2YQPkIBNXSyMz1Lh7gBph6mhrn-ZNqis37O26iLb9raapK6m1UBa3U9TAuzOgltdh_O4zyHiZNVLi0k=s1200",
+   "what": "アンティークに囲まれた店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4f11b1e100/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TpjlyyThWJFYP_rlzZ45v9beCLsc2ZTLac20sLLGRFYB9VNypbFUzjb6ZBigDtj8mK2HPPhvLOfy11G2p8drPlhQOdxyilRGAMI0xFUNY5Mxi5G3IDe0K01qrvL9W_Oc-A8CZZ=s1200",
+   "what": "ガラス扉の入口と外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

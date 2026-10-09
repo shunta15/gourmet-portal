@@ -1,0 +1,45 @@
+{
+ "featureId": "初味寿司本店",
+ "dir": "fs-81797b03a6",
+ "storeName": "初味寿司 本店",
+ "mapsUrl": "https://maps.google.com/?cid=6175683238176181583",
+ "placeUrl": "https://www.google.com/maps/place/%E5%88%9D%E5%91%B3%E5%AF%BF%E5%8F%B8+%E6%9C%AC%E5%BA%97/@36.05096,136.21477,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bebaf33cdbd3:0x55b46f2f58d34d4f!8m2!3d36.05096!4d136.21477!16s%2Fg%2F1vtzh1qw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "初味寿司 本店",
+  "address": "福井県福井市みのり２丁目３−１２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-81797b03a6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1JNp4qhR_aHyY7PLQAie6XTRfILB9quhiBcZz_jxGdb9UfLABZGMGx_Xi8x-gkppES-pcbsHAxvD7Lm1PECjt5XhhM0wPHHhMYGUCsacaW6oD3bxzA5qFkEzAoeGQS6Iw8L51=s1200",
+   "what": "握り寿司の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-81797b03a6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tzx-KToB1NR73B0TEJTbzje1q-tbfIhbRiOOSLZCPiCQPc2qn7gAC3W8MzKjlsJsRt8Gc6tPmGw4yGJK_Gxvpe2UifSCzasN-N_Y_T7tptsYimCfwB96A6MyA8zK6fZUq_MDyN=s1200",
+   "what": "囲炉裏のある座敷",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-81797b03a6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxCR5svd2wfhjTLbgOKC_NcGLiq882uwBePni2WivFJFdcgjs-mU9ZFpzE54NQSaPo9_7kCCHnoTl51pPLbG3VlkwtdRc3dFY15dow-RjcOa7ycZZXwtDinZ5TpwawPiRt7K4GOg=s1200",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

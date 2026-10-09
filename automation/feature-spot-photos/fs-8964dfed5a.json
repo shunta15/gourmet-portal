@@ -1,0 +1,55 @@
+{
+ "featureId": "フルーツスノウ",
+ "dir": "fs-8964dfed5a",
+ "storeName": "フルーツスノウ",
+ "mapsUrl": "https://maps.google.com/?cid=7085676699803122087",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E3%82%B9%E3%83%8E%E3%82%A6/@35.0659519,136.6923126,17z/data=!3m1!4b1!4m6!3m5!1s0x60039b473ca9fe95:0x6255616abd06f9a7!8m2!3d35.0659519!4d136.6923126!16s%2Fg%2F11g0kcpqy3?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "フルーツスノウ",
+  "address": "〒511-0073 三重県桑名市北寺町４３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-8964dfed5a/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QFZjVn8clw1IVLAdBLod5UHfWT5qWAn2TuH9TLxv1fpCwpS5khzPWuOUHz8w1V1uUJmr9sUonC8sMt7Xdi3NGO3FFSyrbDavtTV_QMCd6BsljbXN3dupyhtjo3mZEsFrhmuvxU8g=s1200",
+   "what": "古民家風の店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8964dfed5a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJad5lovSM8xcP5baq9jGxQ8_YRZTtaHw80Ktnu-AVf6aW7lcSNKNPhaNYHpJzuqBHvboD-sio1qBnGBobrCZXw0ZH67ST1wLV8ZijEB2Sr8Dt4EutouXtvNn0lSGhPHAt-YQ=s1200",
+   "what": "桃のかき氷",
+   "width": 678,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8964dfed5a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TiEF8cQqi-OmKlyeI3yJDsjQahNQ2xoJW2m6eFKyGYIvCoLk8qqEVSPKTSZKtEJn6o8TMWTGYcsWaPPRQAyV0wiDLBUyadufpDtfXSe0MrKB3IJSS6rWUq-gwN8gtqIsFtUzvoif3LiU18=s1200",
+   "what": "メロンのかき氷",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8964dfed5a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXuG_qta9nyKoxnKFo-iEtzN4ygn8yzU5xNB2WBlPk88j2849TO0WmgABkTbAwPtODLAOkw23qZ3TOiatAGlK7U9ve76aRYd2iclaIusWA3hTw9H52Q84NO1dRdmqYwnypARYV=s1200",
+   "what": "絵が飾られた店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "オーナー提供のメニュー札(文字入り)は使わず、外観の写真が無いため店内の写真を当てた"
+}

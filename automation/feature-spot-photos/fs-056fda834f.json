@@ -1,0 +1,45 @@
+{
+ "featureId": "ホルモン道楽〜煙煙大魔王〜",
+ "dir": "fs-056fda834f",
+ "storeName": "ホルモン道楽〜煙煙大魔王〜",
+ "mapsUrl": "https://maps.google.com/?cid=16970345413801639431",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E9%81%93%E6%A5%BD%E3%80%9C%E7%85%99%E7%85%99%E5%A4%A7%E9%AD%94%E7%8E%8B%E3%80%9C/@36.3846806,139.7199827,17z/data=!3m1!4b1!4m6!3m5!1s0x601f470012a60cb5:0xeb82c73db9537e07!8m2!3d36.3846806!4d139.7199827!16s%2Fg%2F11w506_h5j?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ホルモン道楽〜煙煙大魔王〜",
+  "address": "〒328-0075 栃木県栃木市箱森町６−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-056fda834f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcaC9Lwm8tAV-J0opIGGhphoGCZCpwKA4m062IjLuAyKmv_NUDTNVypE8SmVi-50tbsdZPj1l394Z4vKQ60YeVomaGeFhZqAHF0S7TNpTXbosJqKZUFEWU5W1hQbxcEw7_qcFe=s1200",
+   "what": "ドラム缶の焼き台",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-056fda834f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QkIWZwPI_dpqUbyfJLeDtpaUPusRoPa0G2nhPBlFb3aMIpW5rlhGAYWRNjoysDHcdlZ2prt9r4J67UhqKlXUtO7JYi0sMsnLlc-B3K0JOomY1TWjpR59eMISVGOWJBOL18r-In=s1200",
+   "what": "座敷のテーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-056fda834f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEUc0prVduUzV1DzvJz_Z1Z18-bVhAmK_kTTsSsiV5ZwRhUw3x7zorlxMnQFi-XKpOOsPCH-koJOE_Z8i5Tf5m2ScfP6mbD4qOwZZb0xXjzjA7WjczkKOf8MvmDsDxkDM-7ns=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "料金表の写真は不使用"
+}

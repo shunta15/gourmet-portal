@@ -1,0 +1,45 @@
+{
+ "featureId": "よしむら",
+ "dir": "fs-73180f7964",
+ "storeName": "よしむら",
+ "mapsUrl": "https://maps.google.com/?cid=18160400264782554181",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%88%E3%81%97%E3%82%80%E3%82%89/@32.5821892,131.6677874,17z/data=!3m1!4b1!4m6!3m5!1s0x3547194e9a4427a7:0xfc06b3d2a9462445!8m2!3d32.5821892!4d131.6677874!16s%2Fg%2F1hc1wkdq4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "よしむら",
+  "address": "宮崎県延岡市中町１丁目１−５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-73180f7964/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvpMkuJTq7VhgF1HovdaOLeMcx_qVlJf5LbcVDHL0IGgzouZH61Ke9a8jpjR36IfBL9BIymWsELJaFrb9XGYs0zadU2j8127uQDkBnuwqIa30e-4JcD11QQtdlagMZTOh6yl_tZF79ZoPF=s1200",
+   "what": "木箱に盛った刺身",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-73180f7964/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBh05VLGDxW97uKwIInpRg35OMNiBnQCSciNIUqmA96ncjK1-3xTIRHzJJUGRYJszNQprk-qdqCU7ju8-gTnlT1VgAm9P6sM3DA5fpEn5YmrBECmoofFog_t60tDzHHpiqTecB_w=s1200",
+   "what": "酒棚のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-73180f7964/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tjc9L86OaPOpmg0iHn8CUYg38w9G08qUKQsn724srp8AvMkoJQvWgFc2KSINvejvx4kBfSaX6fbx1o69d58znScoXAWF_4EY-u1CQqszCs25dmvM-1MA4KEYsiehxBOT7bxnw=s1200",
+   "what": "海老などの料理",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p5(アクセス・立地)に合う外観の写真がなく、料理の写真で代用"
+}

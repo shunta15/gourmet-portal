@@ -1,0 +1,45 @@
+{
+ "featureId": "秋桜",
+ "dir": "fs-7a8ad70883",
+ "storeName": "秋桜",
+ "mapsUrl": "https://maps.google.com/?cid=12047337696646628240",
+ "placeUrl": "https://www.google.com/maps/place/%E7%A7%8B%E6%A1%9C/@39.705041,140.0885735,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8fc317784e02c1:0xa730bdce39cb8390!8m2!3d39.705041!4d140.0885735!16s%2Fg%2F1tsr30ns?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "秋桜",
+  "address": "〒010-1612 秋田県秋田市新屋豊町４−２４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7a8ad70883/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThhhtmU6VMGrGn9WkBMtK5MqHiws4tumq62sbYzGYW4vmTNa2j_blqzDLlp52SDTnomhv0sDC0JpHPt5SC9gFOicgEO3Tetz4v_SOr369A2N_PUO83r7mmczWQbpHWvxXL4mu-aWkxEX_3",
+   "what": "定食のお膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7a8ad70883/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjTd1VVfaNn9IfOH3cIjHjO0SnFba6sHyaVnC0uE0cfkqLkZOtmgH2kwnpi6naN_6LXInBtUyPGp8ETX9T9eTs1nd45j6nEu_zVjBUBICMimQDJQb55r39v0ncUbaCAHYBPoZq",
+   "what": "テーブル席のある店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7a8ad70883/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLUIuwwkMXc01gcMTEi5r9TSDy0nv3482zBYndgO5s_BLkTmuWj35SwVWUXc9lekLZFBfuiuMPdAiVU-epvrMfhUiEYk1OIIjIrZ4lS1ve1KWs9Dq1fcRkRxq955w-o2X7UTnLYa2LW59r",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

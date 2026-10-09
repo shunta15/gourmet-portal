@@ -1,0 +1,45 @@
+{
+ "featureId": "ジョージレストラン",
+ "dir": "fs-cdb210f9e0",
+ "storeName": "ジョージレストラン",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%20%E9%82%A3%E8%A6%87%E5%B8%82%E8%BE%BB",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3/@26.2172451,127.6718931,17z/data=!3m1!4b1!4m6!3m5!1s0x34e5699a60ad1493:0xcf9d5ea0541bf9e3!8m2!3d26.2172451!4d127.6718931!16s%2Fg%2F1tjrmr1v?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ジョージレストラン",
+  "address": "Matsufuji, ２丁目-１-９ 辻 那覇市 沖縄県 900-0037",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-cdb210f9e0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R9O_DnGr3yH1y6Dd2SLvebVux1uR7izwnoHxlIeByP_XWqDSvygYiGLaohybqaFtWrBTInBiTYwX3z0bAt_nmvaGaE_Jqu0VAV6WKf72wFIASnqNC56d319bna5La_K0usgyjq6cMPvuo=s1200",
+   "what": "バター添えのステーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-cdb210f9e0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TmyEZji27EGvZ8q5DXyLU9o8A89vRhg6dFZv491s97m9mDvMDtboesT_HMx6R3TmMk1ikESYK1ujJhdpo2uaW_fhcxvIVq5BhILVJEUua_6ghsXmgvP3RqJe7_WtoFLxh4RrRWWEkmhXA=s1200",
+   "what": "赤いチェックの席が並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-cdb210f9e0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdGODCbQMAoE79-EkugJdPga8DLR2rLY_x8vDPxHmIDJ11nqlRDcEeDbO7df4lrh3YdbaoZ8gomdL8zzwTKTKLbjOI7eU4CINrxfemeG1h6SSJWMqdHYc5ldxA9Yh0pfATgQ4TCA=s1200",
+   "what": "白いひさしの外観と通り",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "Googleの住所表記が「辻 那覇市 沖縄県」の逆順だったため、市と町名の両方が住所に入ることで確認"
+}

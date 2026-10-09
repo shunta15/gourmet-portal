@@ -1,0 +1,45 @@
+{
+ "featureId": "メモアール",
+ "dir": "fs-2e414715ee",
+ "storeName": "メモアール",
+ "mapsUrl": "https://maps.google.com/?cid=458225993854461400",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%A1%E3%83%A2%E3%82%A2%E3%83%BC%E3%83%AB/@36.648561,138.1930066,17z/data=!3m1!4b1!4m6!3m5!1s0x601d86f3117effab:0x65bf21d168ba5d8!8m2!3d36.648561!4d138.1930066!16s%2Fg%2F11bccm9kj8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "メモアール",
+  "address": "〒381-0000 長野県長野市大字鶴賀 緑町１６０５ グリーン ハイツ",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2e414715ee/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNOMLxXGtB_E7-IQOnrXwmR7dOAvwgqNmh4uWxsfBz9y3kum9KDUMn9nXfmGNEWllQX_NO5L_9AUyE-wpZiKdZfYH7xpzf4hS9yM8uGWa8iFndjBA1oeEt7vuJy6g19rVqWihd=s1200",
+   "what": "ナポリタンとコーヒー",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2e414715ee/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TvXAXEo5xNNzRVnY3hjd6CuehWJkYOFM8lofNAhWJZ1jflWKDF8stCQgGrebY2u4xm671Jehom0rhurmv-uGBzHdkOqcLbuuP-0N-jRG5IpGhK9rpn630Dew77Yr4i9sjIzmQ=s1200",
+   "what": "シャンデリアのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2e414715ee/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SU1gP3aQHDqz2gLU3YcTLCExFgiqd26WRwwYCPAla5aGwwvbf-PN_lKpCY2nEhO396pTUE36ah1QwTs1J3S0WqZqYvharttX-eZXI8bP-UoTwN21vvzy7ommwEl-j5M9pEoLfyANXnxAmV=s1200",
+   "what": "窓辺のソファ席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "和彩弥嶋川",
+ "dir": "fs-6cd73c2d98",
+ "storeName": "和彩弥 嶋川",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E5%BD%A9%E5%BC%A5%20%E5%B6%8B%E5%B7%9D%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A0%BA%E5%B8%82%E5%A0%BA%E5%8C%BA%E5%8C%97%E7%93%A6%E7%94%BA2-1-32",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E5%BD%A9%E5%BC%A5+%E5%B6%8B%E5%B7%9D/@34.575392,135.48304,17z/data=!3m1!4b1!4m6!3m5!1s0x6000dc868406a595:0xc221948b81c83bbd!8m2!3d34.575392!4d135.48304!16s%2Fg%2F1tdqtdr_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和彩弥 嶋川",
+  "address": "〒590-0076 大阪府堺市堺区北瓦町２丁１−３２",
+  "how": "search"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6cd73c2d98/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuccqYio49Hgt_GksflPmzjZD_a99C3wLvM6CV1gg0Rwbp-YulV4TEhVUL6IdrrG4iXmbFSb_RB3oeWOOuqsl23eO5Y2Z8u1ewNJGbp3Byo1Pnp0F5Oqc2Via6n4eXf8Grhm0GdFdzzaCm=s1200",
+   "what": "お膳の昼ごはん",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6cd73c2d98/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RO9vnRuYNr5guD0ioTlNx2kTyugz9wF02j64pXu4OfqyPLO2crZqYOk2TVZgEbQmkB6Duk294QBm1PnuyXeQyRYN2q32vaeoe981E7QGEKHRn05unL4YS71p0e8rRBqXPnvB31Em7BV6b6=s1200",
+   "what": "大きなテーブルのある個室",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6cd73c2d98/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTwrujNtXWJ7nThYnuhKSTxXm8ew4DJvpk2edCK1H42wvSbpJ7l_srwwF-T2SG6QCOUUiJoSZl9cvLLHYM3e2KNuByh74_vKWsk-Vls05MYI-HHlJoprX98F7MsVOhPKxVG61X9w=s1200",
+   "what": "木のカウンター席",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

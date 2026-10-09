@@ -1,0 +1,45 @@
+{
+ "featureId": "すりーぴーす",
+ "dir": "fs-7f548b3891",
+ "storeName": "すりーぴーす",
+ "mapsUrl": "https://maps.google.com/?cid=5047250768316344425",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%82%8A%E3%83%BC%E3%81%B4%E3%83%BC%E3%81%99/@35.0160446,135.7315873,17z/data=!3m1!4b1!4m6!3m5!1s0x6001072a31a850d9:0x460b6fd511d02869!8m2!3d35.0160446!4d135.7315873!16s%2Fg%2F11kppygmmb?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すりーぴーす",
+  "address": "京都府京都市中京区西ノ京中御門東町106ｰ3",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7f548b3891/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQ35mXoDUi288y_HMS1aVOSx6KACzOGAxbz5Jdy8GbZ9bQLM_Ub4Z_fjL6LuArtL2zREjV_OVbMFR103N0VSMfO0xfo0QojRqUcLtEBS5m_NemCyNOpn2C9mP58DUt1ZYq90uqvbiJmiem=s1200",
+   "what": "カウンター席の並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7f548b3891/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBmPSXQBHLLtiCPeJLFWEPWyzUWn-1Ve0feEiLAFFRqdMgDxJbFjFQpKtOlLt9zA7vCQCJ7LhCZJ8HWh_yliJmaDe5_YJUWmGQHQ5OQ48Snu6mOa1V1jpwH60_TIjvvE1aLpF3sS2zpWVT=s1200",
+   "what": "日本酒の瓶が並ぶカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7f548b3891/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TvO4X38rwgDR6rEHoKsdykkPek2aZZdCra3VgEKQOziJPY8MW5tg2VwykwW4R_EneHG7_ipBO2MHFIdYfZnm_4V7pZCsIdE0AKij8M543vI9H_MKNoG4y9vTksxu9Nra2SP54E=s1200",
+   "what": "看板のともる夜の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

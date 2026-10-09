@@ -1,0 +1,55 @@
+{
+ "featureId": "酒菜ちゃんちゃんこ",
+ "dir": "fs-655b235cdd",
+ "storeName": "酒菜ちゃんちゃんこ",
+ "mapsUrl": "https://maps.google.com/?cid=11207238349629916598",
+ "placeUrl": "https://www.google.com/maps/place/%E9%85%92%E8%8F%9C%E3%81%A1%E3%82%83%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E3%81%93/@36.2584501,139.3196644,17z/data=!3m1!4b1!4m6!3m5!1s0x601edf074b073bbd:0x9b881be686d385b6!8m2!3d36.2584501!4d139.3196644!16s%2Fg%2F11sy_1xfc1?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "酒菜ちゃんちゃんこ",
+  "address": "群馬県太田市尾島町504‐1",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-655b235cdd/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCWjpbj41SOZqJEE_yFTgNC852LcKixTFIYnpYWvkuiiIMKlPXy0P3vIlFhG3GgJY5arEFJbFK9t0gxnp2IYHSv8Qg8_lUtb05hORM5Qly9-Hyni4SwXml8NM63BeeF4ppKL4TDKgGr_5r=s1200",
+   "what": "提灯の下がる店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-655b235cdd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TONK3pj4Kn9TWgyKUr3qcqYdv_drRzIQASZN8aRmHGc1FjiZRyP5csMaeB3DKjravA4pjGN-diQgcTvh7q7aw-lZm6DpzYQ5nwEve-Q7CqdClb25spjvYO9KxDrHjAg4_yjJEtI5GQl0gr=s1200",
+   "what": "かつおのたたき",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-655b235cdd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8TlUmslBnsXuPS6eXuZO1SZGTauaXEwJh8wdh44psT5CNkAI8ufPi5QI1xfR8ADELjfNNLBHKhWsU3iTxMVM8mEa5nDO_OyDYb2ae6wFAomMI4ivzObjC3CWAOfKcZGGo1p_HHu5uB1Pi=s1200",
+   "what": "カウンターに置かれた瓶ビール",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-655b235cdd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnztMf9Ul67NodvpwwVYqdnuC_V_G0n2KJWTJQDs1wRwYjXvRdIH3tK5CTfhYl35eBn_sSaQ7-qF26e6LqElpGcYDt73w0fnbArcIcJs4TG7zTHaUjmDTL45aDUn7mavfa11_neprkp74=s1200",
+   "what": "鉄板皿の焼きもの",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "あんばい食楽厨房",
+ "dir": "fs-160ae2eb78",
+ "storeName": "あんばい 食楽厨房",
+ "mapsUrl": "https://maps.app.goo.gl/Jrvam7XoRPPAWBEH6",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%82%93%E3%81%B0%E3%81%84+%E9%A3%9F%E6%A5%BD%E5%8E%A8%E6%88%BF/@33.8845093,130.8822546,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bf4dcd6ba9d7:0x482305f18270ba24!8m2!3d33.8845093!4d130.8822546!16s%2Fg%2F1tf6df3l?entry=tts&g_ep=EgoyMDI2MDUxMy4wIPu8ASoASAFQAw%3D%3D&skid=daf542c7-3ebb-4c24-aa8f-67bc520e38e4",
+ "matched": {
+  "name": "和食居酒屋 あんばい 食楽厨房",
+  "address": "〒802-0003 福岡県北九州市小倉北区米町１丁目１−１２",
+  "how": "short"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-160ae2eb78/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzLm9GACNv_HGkzfRSjinqU1jpY9Z5EOyNgfD4G94Wh2lmTQEiaiAsQGDgx99I9k_0H-yZStWeVgs_YFxrV9zz5Gv3dOItpgLKFbpcJpFodZXcowijZoBGbt36-SPCsd5IrJwvnejfOK4=s1200",
+   "what": "日本酒の一升瓶",
+   "width": 900,
+   "height": 894,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-160ae2eb78/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4o1LRsBQCKWslDp8OAX-MTHhFcJaI6vtfzq7e2wuQcGuuoUpEfqHwukghdauRQq3ewVwauxkfv57CJS8ZHSUVEVqNVgcRT6Zq8GN9YQnlQFJ7y5Y1NPUDZNXm3mmFQ4A6oV8UHuUZ09-V=s1200",
+   "what": "木のカウンター席",
+   "width": 900,
+   "height": 710,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-160ae2eb78/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ra932kRJJwswPWNhfS7wcnrwChl4bNuMjnC60VVqIjO_rAeSnQ0kLyNNR-nbjPQ58n9C1aNI4Ys49NwQZlfWnsR58XqpDbxlGvB795yk21l-wf2M3sYkub8R0kAWsMeKAYWv5-WBtFnX8m=s1200",
+   "what": "店の入口と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "Googleマップの店名は「和食居酒屋 あんばい 食楽厨房」。短縮URLで1店のページに着き、住所(小倉北区米町1丁目1-12)が記録と一致したので同じ店とした。"
+}

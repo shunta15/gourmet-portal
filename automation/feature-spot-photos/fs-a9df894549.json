@@ -1,0 +1,45 @@
+{
+ "featureId": "定食屋ふくろう",
+ "dir": "fs-a9df894549",
+ "storeName": "定食屋 ふくろう",
+ "mapsUrl": "https://maps.google.com/?cid=95164809621137350",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AE%9A%E9%A3%9F%E5%B1%8B+%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%86/@36.1069492,140.1037653,17z/data=!3m1!4b1!4m6!3m5!1s0x60220c064dd99809:0x15217e3e095e7c6!8m2!3d36.1069492!4d140.1037653!16s%2Fg%2F11c45359tj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "定食屋 ふくろう",
+  "address": "〒305-0005 茨城県つくば市天久保３丁目１０−１１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a9df894549/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLSeVbhAXV_Btua6ajmKAWvnYOUK8d-ijoE44tDjckiTcnMpQsq-qQmdse8UCsH7v8abqZfRMJK-PLF4hwH5J10G7_XRGMSnMfPXOO-yfCLWS68BQWH2EjvW1F2WCYLicZbGmQoPtK4Dgg",
+   "what": "定食のお膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a9df894549/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SA_1akzgy2fENDcKg0BwjqbhB2puzDGcEKqcDZhw4nJd6wQahJ9AhB35eJKGWdseoxQKWnWNafS1rrnx7VwPsY5TJMjXAr1GQQ89ekrlkNm4sxnGqKFqDZH6FVIw3RUjXHRAtP",
+   "what": "小さな店構えと看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a9df894549/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhrtwSdSBbjR_THSidTwkTiQqkfHnvivMzv3uU7MlWwsF66zvyWIFtF7NDLEO3wGE5B0n7mVjpji3ral1IBmUNuflTcmxnjOnIm358p3Hoid-iTelthmsMkXHDsZUsYJiB9PohcNWHZuLP",
+   "what": "店まわりの駐車場と建物",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無いため、ポイント4は外観(小さな店構え)を当てた。"
+}

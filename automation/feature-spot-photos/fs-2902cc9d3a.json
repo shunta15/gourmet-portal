@@ -1,0 +1,45 @@
+{
+ "featureId": "元祖煮ぼうとうの國良",
+ "dir": "fs-2902cc9d3a",
+ "storeName": "元祖煮ぼうとうの國良",
+ "mapsUrl": "https://maps.google.com/?cid=6412905629030870567",
+ "placeUrl": "https://www.google.com/maps/place/%E5%85%83%E7%A5%96%E7%85%AE%E3%81%BC%E3%81%86%E3%81%A8%E3%81%86%E3%81%AE%E5%9C%8B%E8%89%AF/@36.1635024,139.24732,17z/data=!3m1!4b1!4m6!3m5!1s0x601eda56e80846e9:0x58ff37b14c7cee27!8m2!3d36.1635024!4d139.24732!16s%2Fg%2F1tfvh92d?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "元祖煮ぼうとうの國良",
+  "address": "埼玉県深谷市大谷１９５９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2902cc9d3a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7qamcBocW3vM8nh3g8a9-OC1YUhwiQvHUftgNQvTpLj-_nKVuGz1EIElZEQYjeOPjPvj-K3XCTiEEDLudkG7bOec-oKvva-93zLTMdEPeOLeKorNrUSColj2luPNmDWCJ0NmUWqlyHzLx=s1200",
+   "what": "ざるうどんの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2902cc9d3a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T5cTZxDv_nNy3YteKUbtDeT9NmoO-wh1hy-5TV61sowE1sc9q3FmTrHdQ6gkGhMuBjFe1z3g-P4WVFnOH4kl8sXMVzx9qINmDyEHeya0CdxjVyN7vBazrT01sNYH3j7OQkDmVM=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2902cc9d3a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3SiOlvE3Y10Zh7KpzzET_VRvnkWI61ja-yE5abcjRBnJGUffsL0mPEh7Zv2kvXRg5Vh8uWnCz3maf2HKnkJZmqnHQ7SODmO0Tc-vjcuX8IQga_bODT2wjOdCS0Yj2KavqyT7Q=s1200",
+   "what": "のれんの掛かる店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

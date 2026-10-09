@@ -1,0 +1,45 @@
+{
+ "featureId": "ソワン",
+ "dir": "fs-ac9784dc48",
+ "storeName": "ソワン",
+ "mapsUrl": "https://maps.google.com/?cid=5234054061295833246",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%BD%E3%83%AF%E3%83%B3/@36.0939943,136.2295844,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bfc44a6ea129:0x48a3187002ba909e!8m2!3d36.0939943!4d136.2295844!16s%2Fg%2F11bx1h9l68?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ソワン",
+  "address": "福井県福井市高木２丁目１１２−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ac9784dc48/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ST0_a-YFZ1wGWNQlBM0OlJviUAKn6sDgheRi7qR-aFbMeS6ouKmScCawnUu0NH7tnwKN594hoVnWO8Og6rnEM_A8Dr_jCuAIIff3YHZZk2EeoOsmwC47g6gV-2gJ51Kv-sWEo=s1200",
+   "what": "肉料理の皿",
+   "width": 900,
+   "height": 579,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ac9784dc48/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuSzMPybfi4QWdv16zVHMMoK4VA05K7yn82_b6yJ54LpTZp2dlXNs30ZJZumJ3i4XordJB8IGff2EyP8hCjcPuGueNuyi9wGy67mfHaT2S5Q5xciCnhPfOfzWEp1qoa8AXC1Wldg=s1200",
+   "what": "白いクロスの客席",
+   "width": 900,
+   "height": 579,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ac9784dc48/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qf0DgiaUBQkKjWykOX2c4nJ8F1EQ-zehyLd5WhmhjQsSDRhbid0-r9Oiqq-mqC9zESvJXB5COoLM2b4xX3uY9Yn8zVukm1g6Ei0oBahhaYUZB6cydmiwnWx6KJMlnjYh1uP7hh=s1200",
+   "what": "テイクアウトのお重",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "文字入りの宣伝用画像は使わず"
+}

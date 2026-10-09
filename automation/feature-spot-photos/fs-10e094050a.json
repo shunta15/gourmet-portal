@@ -1,0 +1,45 @@
+{
+ "featureId": "おばんざいと酒の店信～shin～",
+ "dir": "fs-10e094050a",
+ "storeName": "おばんざいと酒の店信～shin～",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E3%81%A8%E9%85%92%E3%81%AE%E5%BA%97%E4%BF%A1%EF%BD%9Eshin%EF%BD%9E%20%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%89%8B%E7%A8%B2%E5%8C%BA%E5%89%8D%E7%94%B010%E6%9D%A111%E4%B8%81%E7%9B%AE1-7%20%E6%96%B0%E5%B7%9D%E3%83%93%E3%83%ABB1",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E3%81%B0%E3%82%93%E3%81%96%E3%81%84%E3%81%A8%E9%85%92%E3%81%AE%E5%BA%97+%E4%BF%A1%EF%BD%9Eshin%EF%BD%9E/@43.132752,141.262171,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b27001dd389a5:0x5494f9777bed8103!8m2!3d43.132752!4d141.262171!16s%2Fg%2F11yfvffsp6?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "おばんざいと酒の店 信～shin～",
+  "address": "〒006-0820 北海道札幌市手稲区前田１０条１１丁目１−７ 新川ビル b1",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-10e094050a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBtVLjx4ynBypcO3EyLQggfBXeLoGPOjZu2hT4C9oppqCmqZ82e6lljtWWeuFr0LZn5qMCM96w3tTzVpRvs6vhuqDppvMHELxCu6fsQqunpFpj6cLRVDT8Z2lIydquhH3lPMhxTOtuXVeU=s1200",
+   "what": "おばんざいの盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-10e094050a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3J4r6Wf7DdqNQ5HtLMN-mDjOFawab4b3K2mQ1lp9BzrTQ2zCDslsz1iD8RROnOTM6ePMOo6kInT2CCo-9PoaAptrWc87wRMZYKfas20RNqALKM3VQJap-DxG6G-UJHOFTKJBmqmdI_d_a=s1200",
+   "what": "カウンターと席の店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-10e094050a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGJjHOe2CGd0YLVsBKlajKZiN17AztgE70ITqOJMlxBBKFb75y8OBsXqssoqjbgxUFvEADn7XGSo2eg9yxtCLJWjEIEZu0cSO-zWRkjR616MSG1dHGOUlpC-KOZGvkVpvuDR8uVCPsxU4Q=s1200",
+   "what": "地下の入口と暖簾",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店名はマップ上「おばんざいと酒の店 信～shin～」(空白をそろえると一致)"
+}

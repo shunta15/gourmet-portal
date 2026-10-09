@@ -1,0 +1,45 @@
+{
+ "featureId": "大幸亭",
+ "dir": "fs-505e01dd56",
+ "storeName": "大幸亭",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%B9%B8%E4%BA%AD%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E8%A5%BF%E6%B5%9C",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%B9%B8%E4%BA%AD/@34.2099337,135.1496834,17z/data=!3m1!4b1!4m6!3m5!1s0x6000ad6d768f6905:0xe85f738e9a803c63!8m2!3d34.2099337!4d135.1496834!16s%2Fg%2F11nfnffsdx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "大幸亭",
+  "address": "〒641-0036 和歌山県和歌山市西浜１６６０−４０１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-505e01dd56/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R7emU8k1GVNBKA3BVeiL3wh79PsS96PRJntWkyflsUUZ0D-PPm-lljdU331Ij0jKj0_gqputcNm87QApiFrIZxIuvZtfwit3KFmdvLIfgyOMRNn_ELPoQa5IdHv2g3gggoUeow6phQjmMa",
+   "what": "海鮮丼",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-505e01dd56/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrQk8c5d1CKYMREliB3mEtnShyKWbW0JbcB1K8l4mxUnW5t-KFOQ-f6oNBJbesc1L4n45xSRlMNtBVLEeNJAAcODZGpU6xZJ-jBdT83zfzDFY21b21V6A5_Cw2Js9a29Q806IDddzcX2GB",
+   "what": "のれんと店内の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-505e01dd56/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOAzZ1fCaonIQhH55QVgHx4mmwJdyMzEJl5lC1pZ261_XBKeOt2K9Lu2cqbqhYbkQZatkG0Hc1k4TbQfIo3FwRgIOLRxJjC0_kg1sr2J5iVHWNvEhAdxakGvYOJ3ut4O7HuoghkXwFA68w",
+   "what": "まぐろの丼",
+   "width": 900,
+   "height": 690,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "ポイント5は、店の外観の写真が無い(市場の建物の写真は別の施設の看板が主役)ため、丼の写真を当てた。"
+}

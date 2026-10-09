@@ -1,0 +1,25 @@
+{
+ "featureId": "喜重軒",
+ "dir": "fs-5e174cbf4f",
+ "storeName": "喜重軒",
+ "mapsUrl": "https://maps.google.com/?cid=8749615706841797642",
+ "placeUrl": "https://www.google.com/maps/place/%E5%96%9C%E9%87%8D%E8%BB%92/@36.3440852,138.9657764,17z/data=!3m1!4b1!4m6!3m5!1s0x601e8d6c46006877:0x796ce120bf7bd40a!8m2!3d36.3440852!4d138.9657764!16s%2Fg%2F11zgscpcny?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "喜重軒",
+  "address": "群馬県高崎市上豊岡町８７５−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5e174cbf4f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpVFRtWLx3E0PxdWxazI95mInr8opXy3hhN7IyPizKBxcvRr-wlNA-U7VR3ZwWsvrjjiwtGRTyRZUKzGk7vS2UDn1PorjwfjtsfI1tf_ySVJzKhq_YDIS0gQ4_4d49DMwEbJ6YYQUA8kYQ=s1200",
+   "what": "一軒家の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、ポイント4 は外観で代用。ほかの候補は文字入りの宣伝画像だったため不採用。"
+}

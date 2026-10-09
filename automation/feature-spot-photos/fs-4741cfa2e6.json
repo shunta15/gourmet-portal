@@ -1,0 +1,45 @@
+{
+ "featureId": "すすきの浪花亭｜札幌和食",
+ "dir": "fs-4741cfa2e6",
+ "storeName": "すすきの浪花亭｜札幌和食",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%99%E3%81%99%E3%81%8D%E3%81%AE%E6%B5%AA%E8%8A%B1%E4%BA%AD%EF%BD%9C%E6%9C%AD%E5%B9%8C%E5%92%8C%E9%A3%9F%20%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%974%E6%9D%A1%E8%A5%BF4%E4%B8%81%E7%9B%AE7%20%E6%9D%BE%E5%B2%A1%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%99%E3%81%8D%E3%81%AE%E6%B5%AA%E8%8A%B1%E4%BA%AD%EF%BD%9C%E6%9C%AD%E5%B9%8C+%E5%92%8C%E9%A3%9F/@43.055938,141.35264,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b29845ba81e89:0xb9ade582cbe39065!8m2!3d43.055938!4d141.35264!16s%2Fg%2F1tgvdf88?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すすきの浪花亭｜札幌 和食",
+  "address": "〒064-0804 北海道札幌市中央区南４条西４丁目7 松岡ビル 1Ｆ",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4741cfa2e6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RR69JWFuzFthiBNSwVKDTaJMzlnkrmdsCYo4Bm7WoABxk335i_xMDkgY-MtVzBDKyO8jNDhqCXQw-FezQpCCxJALwbSKQ2pg8p2bTQ9ZVLAA3-iAvNqlp5iPwZsocmG6-1WvU=s1200",
+   "what": "会席料理の盛り合わせ",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4741cfa2e6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWQcfSy6JDO0uZoZyObz3NRmovo8G-RkTo-O4q3ylah9Vv71FnRV87rE-PWBy8yTxMY1NDzHvKiB1tTAX-7fCY22J68X4EdMJkdJoopOHWQyJKdDJdwVmXBi4AX9Do7YhzNvCy0g=s1200",
+   "what": "長いカウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4741cfa2e6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdxN8Ir4P69d8n1ALoAd0cyulPj5lKVbzEW4SVOOjRQzZE3ILBxEh6jK8YW40hP5cTIGQswc-NLNs16bU2MWDAmJnVswlsxHB2KVDw4myFPzZulmDok_F6xoqnwxEFBa2KTosnj_QFJaeX=s1200",
+   "what": "のれんのかかる入口",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "マップの店名は「すすきの浪花亭｜札幌 和食」(空白をそろえると一致)。個室・天ぷら・うなぎの写真は無いので、spot 3 は会席の盛り合わせ、spot 4 はカウンターの店内を当てた"
+}

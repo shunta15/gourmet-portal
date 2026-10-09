@@ -1,0 +1,65 @@
+{
+ "featureId": "個室焼肉華牛KAGYU",
+ "dir": "fs-a52b88e784",
+ "storeName": "個室焼肉 華牛 KAGYU",
+ "mapsUrl": "https://maps.google.com/?cid=14941270809519396222",
+ "placeUrl": "https://www.google.com/maps/place/%E5%80%8B%E5%AE%A4%E7%84%BC%E8%82%89+%E8%8F%AF%E7%89%9B+KAGYU/@34.0537959,131.5742701,17z/data=!3m1!4b1!4m6!3m5!1s0x3544930013da25cd:0xcf5a0ea39651157e!8m2!3d34.0537959!4d131.5742701!16s%2Fg%2F11x7jtjhz2?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "個室焼肉 華牛 KAGYU",
+  "address": "〒747-0034 山口県防府市天神１丁目２−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-a52b88e784/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqZIswOpSG24PekREUfwYT1rz04xpQl3yeQoE0lumkOb9bUkXgnSK4FZZ8_qdsr83WOr-_CKWBIT6hdQUOSXCU-fsWNlJMIuBXpp3BdUfZ_7mv8mEqIHkmw6SpgeeF8OCsywR98LTWceZK=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-a52b88e784/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQkU4yAFDiCr_7dQR79fw0k84h2oLbeQ_71T-ZkZDmPGRpYQvFMDEESteb_V0ZTPHVkRChvAIAXaRc0f_risyQEvBPBfn-f_9nf_cgpMWvtQixzgVJpqJWuKeSjuiOaSfGB5Hv4YF7G-Y=s1200",
+   "what": "網で焼く肉",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a52b88e784/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnjpDUrJdkJYIucVkFcL9Z3JCKidA7lL-W8-zZICqYHs5sG6vYZ614S2bTmdEQx19BFYl8XcrSJdMmg6BKu_bk215PFYEDBIrUHUfFcwy_6OQc7A000yb2eV-o7nlCaBgBbP-JhovLSGIh=s1200",
+   "what": "バースデーの肉のケーキ",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a52b88e784/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSWdJwgJSpNthmocdS-E65sPwlbOWAr46Zsn-AeoXt-j5yzAKWprWH33sn_WEX4vdVljibgNybK5MmH2aIN9cB2mM_B0yF4oNrm2EWVeV0uca4CRILMgWZ9fY7jteu1Q78bzvkvx9iEy8x=s1200",
+   "what": "夜の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a52b88e784/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-33qrtT4GMWaK2RpumnlEL0mwba0ZCPJ0iIHfAadwQPYfH6q_emklMDbV_omBxxln4ZX5JH7osUlgmrEoujZkH041-kIPu3LKzudL0EYvOZCYvLPCkg7Q68-BepL6GeS_HlG8TcYavJdC=s1200",
+   "what": "藁に載せたステーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

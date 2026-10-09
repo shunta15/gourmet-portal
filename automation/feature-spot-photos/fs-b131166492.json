@@ -1,0 +1,45 @@
+{
+ "featureId": "松寿司本店",
+ "dir": "fs-b131166492",
+ "storeName": "松寿司本店",
+ "mapsUrl": "https://maps.google.com/?cid=168919103361576918",
+ "placeUrl": "https://www.google.com/maps/place/%E6%9D%BE%E5%AF%BF%E5%8F%B8%E6%9C%AC%E5%BA%97/@35.24661,136.75661,17z/data=!3m1!4b1!4m6!3m5!1s0x6003a1835f4ac875:0x2581f078fa4efd6!8m2!3d35.24661!4d136.75661!16s%2Fg%2F1tfj_swv?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "松寿司本店",
+  "address": "愛知県稲沢市中野宮町２４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b131166492/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QG4Mg21xchZyxAHE0n5-qOxUzDZg5b6fWCGm7ePB65UeXNFv6ttNmjjMRM_erfVBv52k9l13m_dNc7UssJ_PEkExkbu0-6GncnrnicTl_EBpfcv7HzAM4IMVGkpZsZbdQkbz5HtUvqhFE=s1200",
+   "what": "寿司と天ぷらの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b131166492/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuPn_aVyFunsH-_NQPyU0Piwr5LNgo8OsbykGknG-3UoBJaNWLBR0hV0cxDBKlBlAaAfW-u-1befH9LjIar25Ewjk-UF0iqNBWJ4VS9cu-Xdy917BuEyCCurJcNfL0Hk_HyV5zUEH945A=s1200",
+   "what": "赤い絨毯の座敷席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b131166492/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrwAfVjOWdmSTNET3b1djOUttjklxZIfwLSw73aWhzZNAQWKkMpYRiQKWSkVouJg9m_VDeXUxvIlVLjOE5h42EVeMJZM3LJl897tnsg5-pMoFloif4HAio8Cbe2LPqH9O0pdOdGBBbaA16=s1200",
+   "what": "白壁の建物の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

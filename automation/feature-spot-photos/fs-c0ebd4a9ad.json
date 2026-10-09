@@ -1,0 +1,45 @@
+{
+ "featureId": "和牛焼肉たつ竹",
+ "dir": "fs-c0ebd4a9ad",
+ "storeName": "和牛焼肉たつ竹",
+ "mapsUrl": "https://maps.google.com/?cid=3241784976779994766",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E7%89%9B%E7%84%BC%E8%82%89%E3%81%9F%E3%81%A4%E7%AB%B9/@36.0157934,140.1398738,17z/data=!3m1!4b1!4m6!3m5!1s0x602273a9e796899b:0x2cfd2242bb2b668e!8m2!3d36.0157934!4d140.1398738!16s%2Fg%2F11xtmgjy4y?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和牛焼肉たつ竹",
+  "address": "〒300-1243 茨城県つくば市大井１３４８−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c0ebd4a9ad/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QqtYjbh97K9L1Q61m--Ib7PQ7mZQoGrodQjSIe7hQlnLbDnM7LewiotukaGEJkW7OTNE3tmE_nSYbA0mEBHdyBEenN50zvmDXaUcJfEh5IL-utcgcOUuNW-_vGzGT-tvvtuUe9XoYFvxqO",
+   "what": "焼肉の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c0ebd4a9ad/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2o05PnCo2aHJZHar2EE-KlqmkcYBMUUxvNI_pvramNM4lIYyD8nWWA532Rvbnw7bAEFIcG8f3nK3154oFKviFeRlOc1oymFdsymBlc8QXb4q8Vu6f-r6yHtn1MAUlP0103L9t2hCbHrc",
+   "what": "座敷の個室",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c0ebd4a9ad/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkVAc8j4VAeiJmy0BUtBqegBit3tE0St0o2p36bCzxwNhxIcS4JE3rGZSLO02fBsBKHbeBbhrkdbOVmpsl_-2UEgiHYUefe6PXPO07YjUEEgI6r-UG1OU6X_z1gR74yDlwafzKjEob0z9U",
+   "what": "店の外観と駐車場",
+   "width": 507,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

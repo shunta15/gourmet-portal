@@ -1,0 +1,45 @@
+{
+ "featureId": "蔵カフェ・ぱぷりか",
+ "dir": "fs-c6007222f9",
+ "storeName": "蔵カフェ・ぱぷりか",
+ "mapsUrl": "https://maps.google.com/?cid=5001567844958268048",
+ "placeUrl": "https://www.google.com/maps/place/%E8%94%B5%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%81%B1%E3%81%B7%E3%82%8A%E3%81%8B/@35.8252865,138.0650454,17z/data=!3m1!4b1!4m6!3m5!1s0x601cf5eb08cfe99b:0x456923749ec0ea90!8m2!3d35.8252865!4d138.0650454!16s%2Fg%2F11jyl9xh6f?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "蔵カフェ・ぱぷりか",
+  "address": "長野県伊那市高遠町勝間３２７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c6007222f9/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tp1D2_EmljGbBIKuHd1r-vLP1Snl383L_ruWUlG0_JGPS8ATE17pOqyNg3GMQJnT0l6Ekj5CZGjPZKQJYBJxMNTEilyByDodlIOpWdjjk1eshZcT58mYx-aux_tEV0S049weAt-aEn5-wK=s1200",
+   "what": "副菜つきの唐揚げ定食",
+   "width": 890,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c6007222f9/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S6j6biBN75Mdk1KU-5mrB1zC7XK3DmCiHkPnFoJNPg_qgzf8nTrH_xnZehjsmqApSCBErgTLIKLz5ktszQ3CYNndMZrVcP2nCbn_J9emUPycMWAvYy94-qnwcjen5EhQ6V6W8tMkXVRz4G=s1200",
+   "what": "木の梁の店内と席",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c6007222f9/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tav9_4gy17WIkFMU6KIWqenvwb4SS2ccUe5NoS1WJ4Ar96dtB2WcIfMlkYOVY_GAiqRsBMtJU4OMFMiWZ7GaLPH65eiwtoW3thY2vXrWsG4Be89MnJu5qO5OloWnWn0aISzzVDQg=s1200",
+   "what": "蔵の入口と店先の黒板",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

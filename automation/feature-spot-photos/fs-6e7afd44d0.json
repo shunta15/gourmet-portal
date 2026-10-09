@@ -1,0 +1,45 @@
+{
+ "featureId": "ルリアンロダン",
+ "dir": "fs-6e7afd44d0",
+ "storeName": "Le Lien.RODAN",
+ "mapsUrl": "https://maps.google.com/?cid=15160510507489312892",
+ "placeUrl": "https://www.google.com/maps/place/Le+Lien.RODAN/@34.9552862,136.6177062,17z/data=!3m1!4b1!4m6!3m5!1s0x60038ec21f521467:0xd264f3fb947a407c!8m2!3d34.9552862!4d136.6177062!16s%2Fg%2F11b6dq1h06?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Le Lien.RODAN",
+  "address": "三重県四日市市新正４丁目６−２４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6e7afd44d0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sglz6I9i0pSZ3GbUaPUN25S855lzUIzVMP4q1CBlMtB2Nj3a5yidwQC8hpQBdf5frZw5_AnsSRyNx4TDmPW3UoXXfUamOkApxiG59GK7Vh--WgjF0_q46qCzkcfeK779myKQDfeGUL9m8=s1200",
+   "what": "広い宴会向けの店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6e7afd44d0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdXjasEUOSgRCffr9VvzoeZSJEycopalmYYaelPlHLhTmg0EVMGlz90r73S8hp3s4FCMDyP3iCgo8H-AR_zGPnAxZ_pGBwp53aNU43_GwwNP18ext37otQ9FYX_7vU96CBnqKc4g=s1200",
+   "what": "酒瓶が並ぶバーカウンター",
+   "width": 900,
+   "height": 419,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6e7afd44d0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzvEy8-xNScUJLHAjqtrHOr1xOxKx1d5I2IAoo-8_fBtVVlIJ3alV83SYKcmOs8MKM5y8FQYS5xvABjbktnD1CcJI0Mytkz3ixsV3JU72L0n6Msj7mcyCYLbBHOpXS8q4x4Y1Y=s1200",
+   "what": "店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

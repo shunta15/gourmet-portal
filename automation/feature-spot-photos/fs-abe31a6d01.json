@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉ホルモン牛に恋したブタ野郎",
+ "dir": "fs-abe31a6d01",
+ "storeName": "焼肉ホルモン牛に恋したブタ野郎",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3%E7%89%9B%E3%81%AB%E6%81%8B%E3%81%97%E3%81%9F%E3%83%96%E3%82%BF%E9%87%8E%E9%83%8E%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%B5%85%E9%87%8E%E6%9C%AC%E7%94%BA2-19-20%20%E9%87%91%E6%B2%A2%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%93%E3%83%AB%201F",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3+%E7%89%9B%E3%81%AB%E6%81%8B%E3%81%97%E3%81%9F%E3%83%96%E3%82%BF%E9%87%8E%E9%83%8E/@36.5843005,136.6584489,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff833f1722e1783:0x990d954c92144823!8m2!3d36.5843005!4d136.6584489!16s%2Fg%2F11jzphmf2k?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉ホルモン 牛に恋したブタ野郎",
+  "address": "〒920-0841 石川県金沢市浅野本町２丁目１９−２０ 金沢クインビル 1F",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-abe31a6d01/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuRNNekpOjYimDIuTZ5_mJz-NnOqnk00bJp92hjnHNEgH8_cb_omZ-PRFBJy0xCDeUPPxkbUd2Zk6XyHoemyxXmZl9mMGpX62bu0SJ6Sr72xbbopWYJt6QAAjbQ3VvJ2VGiCI=s1200",
+   "what": "牛タンの盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-abe31a6d01/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUNL_oXXA1M5bOlWJVpyKHWHEFLlRyjbS1OZWjnIoDgJr2qi5C6qtbZXY0DGH6ljFLAPT1BOsovRBVf7Rglg0XvIama09Sd0VcGkk0kCgzpTURVNcPA6h3eGjf82BxZdXw5cZMknOs1XI=s1200",
+   "what": "焼き網のあるテーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-abe31a6d01/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RH1Ix1P9VbCfEYBXhb9fJNgaLfFY4jbqYD64RyalSzgdkirSb54_GZjN2NY1PN77edqaaDTtomfVGFrzHU6iepjtkYnlvkMIbejC6DYgbJXYHKTkjvhuVo5n3pDOuZ21TQ1iNadg=s1200",
+   "what": "夜の外観と看板",
+   "width": 900,
+   "height": 693,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "串カツおーばん",
+ "dir": "fs-8c82b4c9e8",
+ "storeName": "串カツ おーばん",
+ "mapsUrl": "https://maps.google.com/?cid=12645707268099337377",
+ "placeUrl": "https://www.google.com/maps/place/%E4%B8%B2%E3%82%AB%E3%83%84+%E3%81%8A%E3%83%BC%E3%81%B0%E3%82%93/@34.5952897,133.7409254,17z/data=!3m1!4b1!4m6!3m5!1s0x355157df20a06be7:0xaf7e93c2b0a2eca1!8m2!3d34.5952897!4d133.7409254!16s%2Fg%2F11pz4_s8qy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "串カツ おーばん",
+  "address": "岡山県倉敷市西阿知町１１−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8c82b4c9e8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNGaXIYsqpKaMGAEuO7bobsypyYrvjjy3KwmmnRHAKZtJ94a_QF2sHQAHl2P1PrlHVBhdXx1mUwXzmwZKlSCyK3gA_QoXheXGA3xbQBX0BZ75ImQL2X_qZtKfyUHXw5J2TlxTR=s1200",
+   "what": "揚げたての串カツの盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8c82b4c9e8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIuT8u_4uE2rPZKumPr8z2TTEgO-m-0HlLJ3ym2bdPOE7a13UbYMUHIIldt-wFY4dc1fZJ31izRyj1l-nNyGu7He6XAc-QF4N2ybsvGRLqFW0dcCo8eyNHMLULyvVjXqRiYnQ=s1200",
+   "what": "横長のカウンター席",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8c82b4c9e8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWn2NeCwIbs9f7PhJmAL10vs6WsuG3ySwVgIMdi6OVngKz5hLfPKY0uRwFqZ2VSIzJL91frGbaQPozrzxISlbUTN2-s46yhyLTO_uM4_Xg8zaVznppzqmPqeI_W2YQRvsc1ps=s1200",
+   "what": "提灯の並ぶ店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "文字入りの宣伝用画像は使わず"
+}

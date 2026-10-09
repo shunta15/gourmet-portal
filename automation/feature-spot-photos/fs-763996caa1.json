@@ -1,0 +1,45 @@
+{
+ "featureId": "レストラン･ブルボン",
+ "dir": "fs-763996caa1",
+ "storeName": "レストラン･ブルボン",
+ "mapsUrl": "https://maps.google.com/?cid=15263989179731411709",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%EF%BD%A5%E3%83%96%E3%83%AB%E3%83%9C%E3%83%B3/@35.1253975,137.0241308,17z/data=!3m1!4b1!4m6!3m5!1s0x6003647c9f8b790d:0xd3d49549714c02fd!8m2!3d35.1253975!4d137.0241308!16s%2Fg%2F1tmgcby3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "レストラン･ブルボン",
+  "address": "〒470-0124 愛知県日進市浅田町東前田３７−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-763996caa1/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1qGuL4Ayzz8GfM1uZxCoZIc-2Wv8DyqRAqGIFfJscKEg3dDLipvwrztry2lvo0eb3_RyrRXYywXegGH4uNEzwaLYrLqnZ-92whXTBGiX2iu6AFN-sbTZkm86_UuM7mZlqSJaJLduYGnYx=s1200",
+   "what": "鉄板のスパゲッティ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-763996caa1/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-T35OSITQ44JMPphZ0UmAdZI9bfa0D6mcd1swL4ho4_K43CVIB6XmuRCHAF5N7oHP6saRL7F0FBcZl0LG4hDNXogFuKge7fRvvyFM7qy9MZmuondiETs5oz2P-qiCgjGQQ5do=s1200",
+   "what": "テーブルのコーヒーとパンケーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-763996caa1/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8NPMPBZ8KitVAXDuW-yKTIBQzxFqkryjB-5JexL2YSr95cG-RJ0oRPo-H0HsPgNUkSHtfW0yyi0Jz2vFe46Qvde6KJk_rKZoCuc3vQGDKy-2gInL8iyQrMxkuYuEcHj5__ZRcEBNaFIi7=s1200",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot4はテーブルの写真で代用"
+}

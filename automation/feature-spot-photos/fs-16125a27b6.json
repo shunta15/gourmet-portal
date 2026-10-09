@@ -1,0 +1,45 @@
+{
+ "featureId": "ヌーラNulla",
+ "dir": "fs-16125a27b6",
+ "storeName": "Nulla",
+ "mapsUrl": "https://maps.google.com/?cid=3440301329335472662",
+ "placeUrl": "https://www.google.com/maps/place/Nulla/@36.4190088,140.4242844,17z/data=!3m1!4b1!4m6!3m5!1s0x602221bcbdf0d4bf:0x2fbe67d4df585216!8m2!3d36.4190088!4d140.4242844!16s%2Fg%2F11lnrvcrk0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Nulla",
+  "address": "〒311-4206 茨城県水戸市飯富町字中割５３２８−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-16125a27b6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJrYWoNMAwW0zw1iEycMYYKUfp9EJL05bbhmtLWQAfXxU5KGAInLrEyyLm8FELxtEbyr6ZuygiRqKBeyOlk7ly26-UlfzR6qATbapM0R-YrcRQO9FvjcLHQk1_ss0E2lmlSLU26iAvhXpz",
+   "what": "コース料理の皿",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-16125a27b6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3JOIv4QAEC-w7iOmMsqKUgKAwZc3EfTC5eZv88Pxy2NJfq7fmkEyAFVfFJw5bhLydPeiPaWEmEYUMngRrlLycG4ArFOHpOP2o_4MmVO1m9wjVk3VbtamW5pPW_NLqxj2plOR6B2PjkNb7",
+   "what": "木のぬくもりの店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-16125a27b6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYwnmFv24egGBaptaeBosegGAL8J_ch2aCkr_vi0FRJHfyaERoHn2RTUKNV4uIfGmBeEyXTpRaVFaVorEA0HnCg4eW0EGqHvu-fH592i6mMQcgjLBR9DHu5PKjlflOBpET5zQmj2fYGV1d",
+   "what": "夜の店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

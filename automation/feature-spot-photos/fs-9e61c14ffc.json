@@ -1,0 +1,45 @@
+{
+ "featureId": "太平楽本店",
+ "dir": "fs-9e61c14ffc",
+ "storeName": "太平楽 本店",
+ "mapsUrl": "https://maps.google.com/?cid=2074170657581233182",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%AA%E5%B9%B3%E6%A5%BD+%E6%9C%AC%E5%BA%97/@33.9513201,130.9341311,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bdbc71e1eb05:0x1cc8ef3940aaf41e!8m2!3d33.9513201!4d130.9341311!16s%2Fg%2F1tmk68xw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "太平楽 本店",
+  "address": "〒750-0014 山口県下関市岬之町１６−１１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9e61c14ffc/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rw4GYisW93YvRoob83RTvJMQWK10LJOqQp_IvRDHp5NvxhS4Sll4JskzeacWj_Hrg0BycoR0SCqWiMbfo-YmiaQ_BhspryzthXWqVMRa44SjVLZGPzn246i9m3pctHvEG07t8SUWJ8cPM1",
+   "what": "醤油ラーメン",
+   "width": 900,
+   "height": 865,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9e61c14ffc/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sv8bPkcA3njekPg3S1IJUfXAmPdC14t9f28Eov5dgoIY8BuPaYEMsYfxOgCOvuwTVB8YT9jOVSUWiBxd72XqaZqJ1isO1bvfldOiLzwbBugIDgiQxmtbm-MWlGtpnsH5VWfnxp-hHd3ykU",
+   "what": "蒸籠の焼売",
+   "width": 720,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9e61c14ffc/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXdSlemK4J1DPWDHkbAVbrwwCc-yFOuM7ymHIPkuWGkTo_F2Qdc5UI334vCOvCG9dQhJHT7C-qH7we7wSj2gIIwiuXXP1nhTlzJoC21kKsVYFP334lNjndImSBqF-KuadDDLImAOeV3MnU",
+   "what": "店の外観と看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無いため、ポイント4は料理(焼売)の写真を当てた。"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "麺家市政",
+ "dir": "fs-080f5ebc71",
+ "storeName": "麺家市政",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%AE%B6%E5%B8%82%E6%94%BF%20%E5%B8%82%E5%B7%9D%E5%B8%82%E5%B8%82%E5%B7%9D%E5%8D%97",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%AE%B6%E5%B8%82%E6%94%BF/@35.7266107,139.9083288,17z/data=!3m1!4b1!4m6!3m5!1s0x60188692fee110e1:0x1a743aababdbfd77!8m2!3d35.7266107!4d139.9083288!16s%2Fg%2F1th49cvj?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺家市政",
+  "address": "千葉県市川市市川南１丁目３−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-080f5ebc71/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjR_pUy7rxeNKu1ssSR6iuI4ObptxD_0iBUiD5L0ZowFpytKNmD2MO1zw4eRMUZKFrFMw-ZHxZ97LQKfCTGIFRKQ0-H9VsKo1jwUqKK6sNPqgtbeEMSdIySlYNNrK3fMyElMlPMcb7_5tR=s1200",
+   "what": "海苔とほうれん草のラーメン",
+   "width": 900,
+   "height": 690,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-080f5ebc71/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qkn92Kx7D4ItKswxi8r5UgoIhz5VDfaWPzElqbZwXNhLAvYkMha8mrSNG5M7yZszKzk6y4bxjZzu2IfFAoh8Dan-TF756sW0G9oMbs_y6m2WwchOjFqoWzFn1Gi-1nvatB1n5z=s1200",
+   "what": "木のカウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-080f5ebc71/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RzimtqyyXTn_qjG1ZY9b9nQOtKmGTellf-ftg9jLq3iwgwhiML6_6UhLjVG_yw5l7DwuyM4w9vD86R5mE_LNp423R2al-V2zMjyYKLn035E2W1E5kQOdkRGlRq0QUyYgpTN6s9yz1LiQ4=s1200",
+   "what": "木の格子の店の入口",
+   "width": 900,
+   "height": 710,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

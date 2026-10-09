@@ -1,0 +1,35 @@
+{
+ "featureId": "喜作",
+ "dir": "fs-d5a73a45e1",
+ "storeName": "喜作",
+ "mapsUrl": "https://maps.google.com/?cid=3030266631185693021",
+ "placeUrl": "https://www.google.com/maps/place/%E5%96%9C%E4%BD%9C/@39.1416481,141.1437004,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8f4a6d0ef26427:0x2a0dab722e8af95d!8m2!3d39.1416481!4d141.1437004!16s%2Fg%2F1tfkfdqs?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "喜作",
+  "address": "〒023-0811 岩手県奥州市水沢寺小路２６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d5a73a45e1/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgW_qpwqpf6NdBIX5yIbYQZpGBRofMmSvn0bzOBZUnyTgUDWLvH6XYOOgbU3dK3rTxJ3I1ypgNaG8sS54AdPNmlBlIkNa2w25DF5azhy7EBEgPvQgTzjqO22_jjA6plbSxrGOv=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d5a73a45e1/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RO2N42DOaPq2BAutw2_UhM-ELB2J6QipK2g3KutD54dMlAQV7ERQt8KSdltZWUGV7HTpw3ZawkQEhO-bK2_6WzBrQe95tst4BgkxPOrkVx2qxzSRnfwH9y8TWbBTZZp8xbf5RA=s1200",
+   "what": "のれんと看板の入口",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

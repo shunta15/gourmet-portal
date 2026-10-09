@@ -1,0 +1,65 @@
+{
+ "featureId": "diningkitchenLIFE",
+ "dir": "fs-b66aba71c8",
+ "storeName": "dining kitchen LIFE",
+ "mapsUrl": "https://maps.google.com/?cid=10118661293287571227",
+ "placeUrl": "https://www.google.com/maps/place/dining+kitchen+LIFE/@35.9195613,139.482854,17z/data=!3m1!4b1!4m6!3m5!1s0x6018db1445378055:0x8c6cb4d5d4e67f1b!8m2!3d35.9195613!4d139.482854!16s%2Fg%2F11h4v7y99z?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "dining kitchen LIFE",
+  "address": "〒350-0066 埼玉県川越市連雀町１０−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-b66aba71c8/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZt4Myah9RPbDYSRm35UcIZ_NHbHjuGtSL9UeqhRh-3vyYQWBet5cktp_1SS5cn9TT-lNqQnap1BAPklcDu-xL1DjksdJIoUNDA9Spf0EmOarvAXXVS9vYa18n94Ti0a0UgL_P7Q=s1200",
+   "what": "コース料理の盛り付け",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-b66aba71c8/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVRNQhqeaJ-fT_Ziw0H3V2nxbkaE4hcE_dQL5mV51gL7VfUaf67h0_a6s6SI6-e7DOqnSlQXVZew8zDyKCV8NsccCwa6tP-PggMYZYdTsHozBKh-WgKymxGlPXFoGLIjf75h-vug=s1200",
+   "what": "花を添えた前菜",
+   "width": 900,
+   "height": 507,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b66aba71c8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sukc27URh9E1iwsJJkMRM0JErqjql1NEIpRAoa9FHT9ZZ_R2uQ-3Cg-rwC0Ula0_pzCbvRqvFALgs9-NzOT7-zm32aEDktAuLw-MnOfNK3d_bAcBsjavZMGXs5lLvfGCuavlJt=s1200",
+   "what": "ローストビーフの丼",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b66aba71c8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFgn-6xhysd7iauOaSKe6GoUYuL9n2F_zpF9Xhg_M7k-UdZIPH75CEUa-Nw7moPnL1F0n6VPYMKjPJpKnxKLpu0sfWO-WVVGr_lA6qWUc7sgJZb8Xsa4r0PQR3gkCxTy5nLdgDQg=s1200",
+   "what": "明るい店内",
+   "width": 900,
+   "height": 582,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b66aba71c8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxRNVFma6tUJzcJncMwApTi1-EGr-xqLwzvOn0yAQi-69lQqpRGI4eu9wAC6-76gPLu9HRNI-CYVtZWkl8TrQ_3KZdba8CH5SX8OzAa-WrLA9-y2Y2Kj0dTl4M1ofQC3Oiguov=s1200",
+   "what": "ガラス張りの店頭",
+   "width": 900,
+   "height": 601,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

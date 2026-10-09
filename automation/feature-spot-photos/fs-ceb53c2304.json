@@ -1,0 +1,65 @@
+{
+ "featureId": "めん食い処わ",
+ "dir": "fs-ceb53c2304",
+ "storeName": "めん食い処 わ",
+ "mapsUrl": "https://maps.google.com/?cid=5862035932023090795",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%81%E3%82%93%E9%A3%9F%E3%81%84%E5%87%A6+%E3%82%8F/@36.2314307,138.4749971,17z/data=!3m1!4b1!4m6!3m5!1s0x601c35956887e58b:0x515a229f2ccfee6b!8m2!3d36.2314307!4d138.4749971!16s%2Fg%2F11hzpl7dzx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "めん食い処 わ",
+  "address": "〒385-0051 長野県佐久市中込２８９−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-ceb53c2304/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoMPoOU3DqSAtfDYWQWSKtSNgn89rWaaI3xObLZjdXrnR1CFwsQmZG_bmJkoLdhiNHByevJ18SZXygGP0ydO2nCRL863udMO746uMfdLuUo97XGLd7rPxQK4gzJeCiiNEBuOB1Vw=s1200",
+   "what": "ざる蕎麦と天ぷら",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-ceb53c2304/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SppXh98XITpgFDxisgsjlhcp28cLXES3ivCkRmjwxWzeIp9wO_17bnjXll3CgZkMrKXkHWIub-FxKNAzZAfio-i7eaovR4SJOKGn6EJhHF_cWAxlOKI02SHSrIOQ0Ot9w6Q_NW8A=s1200",
+   "what": "海老の天丼",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ceb53c2304/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RYGGLncTv7XqkvUOyi-NIbw1uk2zXiiOSPbq7BeaIQo5tn_b0J0Df6lhyWIo1W-jjIKVN7HUQedl-PaMA-KN_cNW1S1ikD43kWrAfZwJVk6bSt2wKjJ7f0cGHn30aevURxeI89sWCYozj6=s1200",
+   "what": "かき揚げ蕎麦",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ceb53c2304/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rxmm4q-kiN8tA_ox-ftkMY108t-5sULLRjALCeUCQra2P900-m2eAwUyWzTKsojyD8nLv5E0h2PntrPUey2Z7pT79oF6J_P99YRQ9yCaAC_CAvzh3uD6whyGZkaDD3rRDtmBfX=s1200",
+   "what": "座敷とテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ceb53c2304/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWYw3YaivU2mLeTN8_dP9yVNcEocwTNbo7YWEiYwZkNFvxj5Tx7uV5GsprwiDlrggH54VhDXUuocxmDqT6WtjZgT8wc_szNWmewtup9CdrZEWsbmuQadzKgYKwsC-5NM8nCgXO17x07HlY=s1200",
+   "what": "暖簾と看板のある店の外観",
+   "width": 900,
+   "height": 720,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

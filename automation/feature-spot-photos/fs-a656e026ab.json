@@ -1,0 +1,45 @@
+{
+ "featureId": "麺屋ふくじゅ",
+ "dir": "fs-a656e026ab",
+ "storeName": "麺屋ふくじゅ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B%E3%81%B5%E3%81%8F%E3%81%98%E3%82%85%20%E6%9C%AD%E5%B9%8C%E5%B8%82%E6%B8%85%E7%94%B0%E5%8C%BA%E7%BE%8E%E3%81%97%E3%81%8C%E4%B8%983%E6%9D%A12%E4%B8%81%E7%9B%AE1-8",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%B1%8B%E3%81%B5%E3%81%8F%E3%81%98%E3%82%85/@42.9871733,141.4472038,17z/data=!3m1!4b1!4m6!3m5!1s0x5f74d53c072bd469:0x189e9ada7f331a5!8m2!3d42.9871733!4d141.4472038!16s%2Fg%2F1td7n3h3?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺屋ふくじゅ",
+  "address": "〒004-0813 北海道札幌市清田区美しが丘３条２丁目１−８",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a656e026ab/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R60f3kHEDO6KnGU3ct8PuWqG8LnLTyOzh7jfkEGRSWf7Mhweumwt801Zxj5XIUMDqB2qkakWUO0mE7yOL_kfIpNVWYtq_-FucKctESOvi9yBeiN-l3HzgzX5AVma7pceazFtNVRmNiwTAV=s1200",
+   "what": "ラーメンの丼",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a656e026ab/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkE0hqOat4cAMc7vWSmduCBh4HTHc4QQWKkYHr0uKX5sntSUZJMIqZKZV68dkKov-YdDsChEoUeanFyO_9Kom4MdNB7dHYAg62E5aqQOoJfPMx_Mmjgi89V2AB4h268cPqGxatTWeAf3E3=s1200",
+   "what": "カウンター席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a656e026ab/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw1uOaoQp27QlJH5xlTQ4p6N1Kvbn28oRYntzvFN-xLKrofVahkg5EBpEQTSxXBeG3sl89ZTJenOYyq458eMSULYMjsXBInyG8m9vmQI7diCIj_1v3EvMvKlefahhunGx222jZIyRE7OGm=s1200",
+   "what": "のれんのかかる店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

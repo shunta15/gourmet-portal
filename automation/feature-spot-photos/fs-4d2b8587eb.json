@@ -1,0 +1,45 @@
+{
+ "featureId": "マックス食堂酒・肴・お田",
+ "dir": "fs-4d2b8587eb",
+ "storeName": "マックス食堂 酒・肴・お田",
+ "mapsUrl": "https://maps.google.com/?cid=15550977134631775673",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9%E9%A3%9F%E5%A0%82+%E9%85%92%E3%83%BB%E8%82%B4%E3%83%BB%E3%81%8A%E7%94%B0/@34.7196619,135.4134531,17z/data=!3m1!4b1!4m6!3m5!1s0x6000ef3127098de5:0xd7d02b4fb3f2edb9!8m2!3d34.7196619!4d135.4134531!16s%2Fg%2F11ylgwmfy3?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "マックス食堂 酒・肴・お田",
+  "address": "兵庫県尼崎市神田中通３丁目７５−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4d2b8587eb/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQ-bu4sXy-9B1Nw3HRkBJtLyME5LHibKGDnMxTSIeBTKV65x2csRXWkNQK1qEgasG2W_1KTvYzf6Z2YOO7o1-mjcQ0nlTPvU3P42qyIuO5WOFwsLPUWUURaRusm6odm1WIVqkLPWz0bGsj=s1200",
+   "what": "おでんの盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4d2b8587eb/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qx7ILOOiOJwPbuWf1KXL4mZYU6f33hUvg64jP9vNiCmQD893AStca9VHFTdX9UwsoyoQWP8GKLM2kQMHS4EhePTDrDF9908Yd04ySPCPy3t5-wDfz5nW2nkcee41mfLEsgm5C6XHdAKkw=s1200",
+   "what": "カウンターに置かれた一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4d2b8587eb/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RL0RHb3KHhOSmQ-v8g7DFhvcd5K9bWjpnXD_7o0hj8ppe8mq8RETkNX2ChrfWLtaCfWiKOp1V1186ogHUm5WzP-ClQCzM6qf2ypK13gDn83gf2NHR09I4yD_CJAsCa8rirleQF1qzDJs4=s1200",
+   "what": "看板の下がる入口と奥のカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "ポイント4 の店内写真は客の顔が主役のものしか無く、カウンターの料理写真で代用。"
+}

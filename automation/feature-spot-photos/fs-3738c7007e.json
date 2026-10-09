@@ -1,0 +1,55 @@
+{
+ "featureId": "黒壁亭",
+ "dir": "fs-3738c7007e",
+ "storeName": "黒壁亭",
+ "mapsUrl": "https://maps.google.com/?cid=1781217893085987401",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BB%92%E5%A3%81%E4%BA%AD/@35.3817117,136.2667666,17z/data=!3m1!4b1!4m6!3m5!1s0x600229004130a241:0x18b8283c88f5c249!8m2!3d35.3817117!4d136.2667666!16s%2Fg%2F11y76mhsg8?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "黒壁亭",
+  "address": "〒526-0059 滋賀県長浜市元浜町２２−３７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-3738c7007e/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QVABhaCz_QFdtjo8Fu8_tGhGUNMqtST689r4ohAjrZKFHNQK8IGQS58WWA9cKSyKEOQ6krtmOkYfG-tOCN8m2jAlmWZcsO7DGkhhWHBSSNr1EiDE5_chdGUnijjB2pdYpI-6VB=s1200",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3738c7007e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHmFwYTAfYQrJFg4cGHpKFRI21kxODlT62vTHr9-WOm5vJP7AstCNXROhhCGIRJXUxO2ZfAJF8FQOaKeQYlmSp1nrnLxkUjwpKP_tK8lILEikzQSTHzXyZG6l7DNRVvO4BLOchMYbyltV9=s1200",
+   "what": "季節の御膳",
+   "width": 900,
+   "height": 500,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3738c7007e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QSe25hIG1CuqKx9nAeSHTcNdaNrgMjWOFMbmePk0JNIKIHjOaoGTcyOVbRpQh2-NwXGb4gRV8Ee-QGR5olYMYS2XWXaBQgpMUDvZzVu2KQ3G8NE9SF4vqJIUW6GixfcXAagOOKYW00Dyw=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 542,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3738c7007e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-wusnJhROcAlqAAC58Nb_a-Qsi365wYAPzp5_aN-rTKla9GlJr4UADsTKb5Riypb0Gp8UbutL8Hm_WwdKpIkSLXA3GWxUkMbha-HZwLMhmrX-PFT5zfSYC3gdugSUZXMK02-0PP2Sh5Y=s1200",
+   "what": "のれんのある店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

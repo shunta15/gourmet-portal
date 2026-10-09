@@ -1,0 +1,45 @@
+{
+ "featureId": "和旬席はなぶさ",
+ "dir": "fs-f11b35b8ed",
+ "storeName": "和旬席 はなぶさ",
+ "mapsUrl": "https://maps.google.com/?cid=15529560962849491909",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E6%97%AC%E5%B8%AD+%E3%81%AF%E3%81%AA%E3%81%B6%E3%81%95/@34.9541771,139.1097297,17z/data=!3m1!4b1!4m6!3m5!1s0x6019c3520bc9264f:0xd784156aa46acbc5!8m2!3d34.9541771!4d139.1097297!16s%2Fg%2F11zdc6916z?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和旬席 はなぶさ",
+  "address": "〒414-0045 静岡県伊東市玖須美元和田７２７−４５８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f11b35b8ed/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SUWZa47yVBK_zyPPkC5ZRkRRlmmM6UTsUvL0_0tqiZs5l4VoCjAQh8AUjolL9zUio2lKOi_QCYL78fYclJ0mpnMXfXpDk_D1mgoauNw90OAbopatCSAWhDrnUs1QjIcTk80LOrgsO4Jh81=s1200",
+   "what": "天ぷらの定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f11b35b8ed/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAwGbS19tIjpBubFYAH6SNYwta0djmvStGyNPTIdgOPclgdUkruQwUbDd0ECdeP0g4_677dTgBlUZinvruBTUHhy3f__g20ElR84M23qyW_aLUHguF5Nhgp4AJ2VWMg6He8xlZlp2drY8F=s1200",
+   "what": "小鉢が並ぶお膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f11b35b8ed/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbcBZP6v1IhgFOvIwIpSThuFPG09S27vmMXGp6yV4sdWiIae9Mwix3qe5sycom6K7R93ULxlRxAoZRTGbX2YJy_kndApxXH98RIT-9MVccBL_-a6QtlVIUTl5JYdyXaoa5_hINMeJq_Nk=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観・店内の写真が無く、3枚とも料理の写真で代用。店情報のカード画像は不使用"
+}

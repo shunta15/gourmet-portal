@@ -1,0 +1,75 @@
+{
+ "featureId": "すし大",
+ "dir": "fs-6ebcbbdcb2",
+ "storeName": "すし大",
+ "mapsUrl": "https://maps.google.com/?cid=17167164950691311534",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%97%E5%A4%A7/@36.307841,139.985898,17z/data=!3m1!4b1!4m6!3m5!1s0x601f5519add7b897:0xee3e05912e7defae!8m2!3d36.307841!4d139.985898!16s%2Fg%2F1tkc268c?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すし大",
+  "address": "〒308-0825 茨城県筑西市下中山５８４−４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkZSBlfyvSQBpM04lUlnoItUF8uvT4G5-xC1m1paiJFRA6ZOcfIYLCZSBpLD6R012esQbZmfZhSnVTm2nhHVx69JeymyQtyCTO3V8bC847hhq9ylc4T7Smg72yOQ14NgTriSG0=s1200",
+   "what": "握り寿司の盛り合わせ",
+   "width": 599,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QeswWGx1cFvoaH4oTHAM1IG6yXRkBQZ36MtX2dwiTUL0t57L28r59NVAIYys87zOGZyhjiWvRHoZyIVb-oz4rrZ-2WWWnEakPhmn_7fcVn6MhRMAE13Dvt9Ri2nChMV8fsC79tHVHshAXx=s1200",
+   "what": "海鮮丼と汁物",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnn6B6NxdCEKccwjTw8xpljsf_bk8tUH1nLrBGvOpxhW9uo6bkV5vppsvwTHP4uawgM0pzxL_cUT4XPNjyhRUexeJ9Q1P4jbMCop3Dr1KTCe4rKWqqQPTXlw-u6kr-bOOwylj8=s1200",
+   "what": "鍋料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxPNSL8sTmiPLO4DHPfOU9FhvjT2NTF7qM8Zxv_nrb8P-7BcUh8S7JYwySF6gVq_NuWlbeCR26osJT4f0-WBuK5M379nJyZYqtVg3u8GJ_nOqO2oT3sAO-svzW1nAHgC3_zuKOWw=s1200",
+   "what": "テーブル席と店内",
+   "width": 809,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn_vz4ZXcD12d03Ee0IrEg52u9p3Nfq68odzRO7Rf7pnX0dubsM9jk_GBIHE9wrwL24_Nq-FBQvIZPIapdkGHBWpRx-jPz1WPKHQCNGiUn_Z3U_yUNWleovJaYGV_uZCISBMIAU=s1200",
+   "what": "看板のある店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-6ebcbbdcb2/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRwVx9VM-4TlUzYWAHnTnvm0SMZRxKDHsNBRfNHqyT7IK5WrNePDrY2nWyRkMgOpp_vokkAE2Ft6hftoFnSLdvbP3PYNJrnEM-w5qzIubJC8mDEvzQx2F0xLznxZ0HdU9Bw6r_=s1600",
+   "what": "カウンターのある店内",
+   "width": 1400,
+   "height": 787,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

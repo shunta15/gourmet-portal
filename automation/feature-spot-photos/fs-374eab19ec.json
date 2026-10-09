@@ -1,0 +1,55 @@
+{
+ "featureId": "茶寮一丈",
+ "dir": "fs-374eab19ec",
+ "storeName": "茶寮一丈",
+ "mapsUrl": "https://maps.google.com/?cid=9697544157471302536",
+ "placeUrl": "https://www.google.com/maps/place/%E8%8C%B6%E5%AF%AE%E4%B8%80%E4%B8%88/@34.885902,139.096361,17z/data=!3m1!4b1!4m6!3m5!1s0x6019dcc3e7a5a797:0x869499080bbde388!8m2!3d34.885902!4d139.096361!16s%2Fg%2F1vl5gv85?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "茶寮一丈",
+  "address": "〒413-0232 静岡県伊東市 八幡野１３５０−１１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-374eab19ec/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9REq5y743vfr3XLFWjBygohE1tdoD1y-m6-ClGJJBWVdZa0remjlBadB3RG5y69VGnv-4mo7ZHNnUHWJRxJ66ZfTwtu0hlSm1nPmGpjPxb6GlHRBgGs3Ui7sswaRPg3vwioWzbh6S-6HhRu=s1200",
+   "what": "天ぷらの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-374eab19ec/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIMbgEV0FqJuVo7ZlM1r26rFa8Gh5-f_6dsXqIkg9KFPgjm3d6xzm6vq1n0XKJaAhmUQ0P55K8v4M9FFVpWGHOEiFtOfwCiUO1neT7UHaBtoQ3BEvCwg4lZbp2Hwx23-B278be=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-374eab19ec/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sf_znihcg5nMevDyDJQXAbv68T7O2XNWxkkFWPEGVBAvDGKEqOpuMq0NyWIoROEtJViEz2bK20ZC5QGku0vOg_ITMv4gZy3YII2pFWyrg7qJJ5bHsx83P5fckoWSFArLLVvl_OPuewnLY=s1200",
+   "what": "板張りの廊下と座敷",
+   "width": 507,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-374eab19ec/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCfIdNHrQOkxhXNtaW7na5EZ-mlz6cL9Enm8cKTNaulWhLI_K6kUlexYZozAQ33at1Y0oI-Fosm6ZdSzigf52Pql_1W1aJPrONvKvQFsK4glN8cvU6H5hnYvML5eWHgnsCdGYohQ=s1200",
+   "what": "木の格子戸の入口",
+   "width": 678,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

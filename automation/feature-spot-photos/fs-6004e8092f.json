@@ -1,0 +1,45 @@
+{
+ "featureId": "心晴",
+ "dir": "fs-6004e8092f",
+ "storeName": "心晴",
+ "mapsUrl": "https://maps.google.com/?cid=17671037325909248759",
+ "placeUrl": "https://www.google.com/maps/place/%E5%BF%83%E6%99%B4/@35.101852,136.687882,17z/data=!3m1!4b1!4m6!3m5!1s0x60039a17ad43baa1:0xf53c22d29f7d4af7!8m2!3d35.101852!4d136.687882!16s%2Fg%2F11bbx07rgw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "心晴",
+  "address": "〒511-1147 三重県桑名市長島町平方４７５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6004e8092f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0uVw5KUOzb6sSuRtZewC5o3Y4bb_K6QtrC-RCB7mOiU68Ll0uh2VFOv-RyayNQIfuAcKNd1vx2oPI71ZoclsahXZylMLqYsq6vlpcr_1EWUGwpDjJLDZFuYFwBGKpc2yCMGHq3knfTEFO=s1200",
+   "what": "コーヒーとケーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6004e8092f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNZbsU5vyxsB1ZdY_sp1BNIBOmucMH1cuz4bmJp48fLfi4KBp-b9EOCuw9sBl9Jwgxjcw_x15UKpwJWX4KfxPyxPjphadv-M-SRFt_Wqvz-67FIo_NOO-BetNrGJKjn1qw851nhQ=s1200",
+   "what": "座敷とテーブルの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6004e8092f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrJDanXQtnkDfXDB6LT4pmdRdUzr-hb47Tgkh3mocY0IHsedxkxhU-DyWmyVW7laasRc7O_86UMN8R4TuMWV7fQZKTvLDcEOd3CpSlmCeC-3l7p_SbX5O6AJI4H7mOFFoTec-0=s1200",
+   "what": "藍色の暖簾の古民家",
+   "width": 900,
+   "height": 674,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

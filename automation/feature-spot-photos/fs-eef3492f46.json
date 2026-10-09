@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉遊",
+ "dir": "fs-eef3492f46",
+ "storeName": "焼肉遊",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%E9%81%8A%20%E5%B0%BC%E5%B4%8E%E5%B8%82%E5%8D%97%E6%AD%A6%E5%BA%AB%E4%B9%8B%E8%8D%98",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89%E9%81%8A/@34.7508956,135.3916078,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f1005e7decbd:0x3adb3b77f9a68063!8m2!3d34.7508956!4d135.3916078!16s%2Fg%2F11w42pp5x1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉遊",
+  "address": "〒661-0033 兵庫県尼崎市南武庫之荘１丁目２０−１５",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-eef3492f46/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TgsWbbiArspwaGzBcPNrl16g0_2TfxOc7XPchcHRnMfqNhJQdHoeM5rLQ7p4k7t8oVuvtuxCLZBcfKoL5WErU-YGQGY7opGw1bmV7DjiDEK9oGfdN4DkxyO6fSpL68DAxpVId2ODrKEN7v=s1200",
+   "what": "焼肉の盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-eef3492f46/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBvLgnIb7yXOH93fV9xI96SQqWPIRAHQ8S6kjPzsgN2QT8gRWBq3hWKXAZg9HL7dU1UhbsqEv0sb4rm6i-muh-ecpv6a2oCZQPC7H6uEleeoqDpOKN_n0IbQSf3jl_R46TLVxA7ZpDBzvr=s1200",
+   "what": "掘りごたつ風の座敷席",
+   "width": 900,
+   "height": 767,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-eef3492f46/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RD0_hJoKWAX00U5zqU8iy2jQMik3NzBKvwKGfsBUNXWdrR-csSPS1JKTywehIXXPmQXNhOEo0NWkkusWg24Q6L2IH8qLMwd_Yrtw7xk5w1Zyu49WVKGEbmuyTTgpfrdlQd98ZaboHmdKbg=s1200",
+   "what": "テーブルに並んだ肉料理",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無いのでアクセス・立地には料理の写真を当てた"
+}

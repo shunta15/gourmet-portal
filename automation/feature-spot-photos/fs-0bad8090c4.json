@@ -1,0 +1,45 @@
+{
+ "featureId": "天や椀や",
+ "dir": "fs-0bad8090c4",
+ "storeName": "天や椀や",
+ "mapsUrl": "https://maps.google.com/?cid=8935000220153558319",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%A9%E3%82%84%E6%A4%80%E3%82%84/@35.7062586,139.5957997,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ee13bc83b9bf:0x7bff7f5c4e4a352f!8m2!3d35.7062586!4d139.5957997!16s%2Fg%2F1tjkfv22?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "天や椀や",
+  "address": "〒167-0042 東京都杉並区西荻北４丁目１−１６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0bad8090c4/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SAAKTlKundX422qZDZhk-PP8FI1NTtbhfjcRlLfOUsPbVyclhN7TKGrQiwQ2EX2JIHDkSNLhOLnmDk9NOpWZ1VX5iNuWKYudRotmdSQd1xf34XjME96G6w_ERp3MU5Kp0XI4iccg=s1200",
+   "what": "秋刀魚の焼き魚定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0bad8090c4/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qta_DSH3XppeDwHZYNNSPa9vjx5XCLwv90SQgdlBLWkrEE0-D5StUT33Cmgg1z9mHsDqwhjZgQ0PnThfdUQbdssts0lO6HKMNsB6A_6h26gZBFluvFl3kW60fly_H7GnJFvzBq=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0bad8090c4/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9REiO71u5BO9Zx8EAjOwu-iz6guLZ9IOZSKrJeqgg2CHuiEAC20Q09L7dHyA2ardcyDNAFEdrAxPQuuHfLCDkMBsY4IBkgEr-BCB7MbBmCW7oA2K6UGrnwPaTUyddBBVAxv99GfcHiWjp8=s1200",
+   "what": "提灯の下がる店の入口",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

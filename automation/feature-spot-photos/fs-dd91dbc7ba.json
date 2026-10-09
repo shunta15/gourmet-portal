@@ -1,0 +1,45 @@
+{
+ "featureId": "肉のまるたか",
+ "dir": "fs-dd91dbc7ba",
+ "storeName": "肉のまるたか",
+ "mapsUrl": "https://maps.google.com/?cid=14403971522287547003",
+ "placeUrl": "https://www.google.com/maps/place/%E8%82%89%E3%81%AE%E3%81%BE%E3%82%8B%E3%81%9F%E3%81%8B/@34.2584662,133.8147369,17z/data=!3m1!4b1!4m6!3m5!1s0x3553d956cfe5e235:0xc7e52fc8b4cab27b!8m2!3d34.2584662!4d133.8147369!16s%2Fg%2F11lfkm4t_4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "肉のまるたか",
+  "address": "〒763-0093 香川県丸亀市郡家町１８６６−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-dd91dbc7ba/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThV8ThQ_rDGM0gr3KAqfdnVfnztEUnLXr9yXDRGhcCGyVvfNJXZZC34_-RMkT7zVHzZVF69DHLWCiDbWVQf2C9DgTh9-M2uO6nCxKUcgLa9ewDZmbojVYM8NZln2vaFdldq1GI4Q=s1200",
+   "what": "店内の販売カウンター",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-dd91dbc7ba/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3SLH3isfxvlPnoVlaGDohLY66O_CV5Juje1znbYIzbGxfM2A_Puiol2i3QDjbQ2jOFnWPj9HqN9sgwgBFMeAhopvi6F48x-VymA7MihXjzewDtrKkLnc9RMXuHybr7r6CXfZcnA=s1200",
+   "what": "カツのお弁当",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-dd91dbc7ba/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLLqMnKmBG5xiAJflKyyncLnkiREsjCXTlAdxXh7-7ytfbP_HxsVcaZYTdBgnNNOZTQPPvou0lCXcHTtzk3W210BsB4YiPpC0UkRCaO_0YpsibERHmXOS2V4ROlKCMxmEKA328=s1200",
+   "what": "駐車場前の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "5席の座席の写真が無いため、店内の販売カウンターの写真を当てた"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "Ristorantet.v.b",
+ "dir": "fs-4926db0007",
+ "storeName": "Ristorantet.v.b",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ristorantet.v.b%20%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E7%A5%87%E5%9C%92%E7%94%BA%E5%8D%97%E5%81%B4",
+ "placeUrl": "https://www.google.com/maps/place/Ristorante+t.v.b/@35.0024533,135.7755215,17z/data=!3m1!4b1!4m6!3m5!1s0x600108c16137ee67:0xeb1a5db98a7be2cf!8m2!3d35.0024533!4d135.7755215!16s%2Fg%2F1tg2dd47?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Ristorante t.v.b",
+  "address": "〒605-0074 京都府京都市東山区祇園町南側５７０−１５５",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4926db0007/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QE-SwFjbiaosr7-WiLV1vV2TVmgYVZJcViPBNbuvNVwLdoK7qtdaaiEYyfbP1qcWKDSyI5rM8Ga3VttpJteI3OvivlWaIgUzdHnPk3cj0Ss36gH5IjZzXSAZ6zxZPAwhawr53Q2xwuxqcM=s1200",
+   "what": "パスタ2皿と前菜",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4926db0007/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QskEZOgvyHIWzLA7B7gsMagjvQ44as1zTlPgg9GoU599FYMg_wao_WZuZsU4ZxOh0nLeZG117xc6ysdMipuO_x8myTxbLve5U114fLb5S9dz_lY1avYVDRKjSqzED3uEoxrJz3UGoefAtg=s1200",
+   "what": "石壁のダイニングルーム",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4926db0007/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SF53oUpq7R9SLjK_a21RJZIBz8spTL9gWQcdhG0rK8leteFVsmfslmHxO-opK_qBujApR-76EhheXrNjpiKdM57JPaQCzjvDPqVqLxLy802n5pM7SUzAzzVHX5XgqWK7r0Ee-Mkm9LZurw=s1200",
+   "what": "長テーブルの個室",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店名はマップ上「Ristorante t.v.b」(空白をそろえると一致)。外観の写真が無いので、アクセス・立地には個室の写真を当てた"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "本手打ちそば蕎友館",
+ "dir": "fs-20887771e0",
+ "storeName": "本手打ちそば 蕎友館",
+ "mapsUrl": "https://maps.google.com/?cid=12502572026925286596",
+ "placeUrl": "https://www.google.com/maps/place/%E6%9C%AC%E6%89%8B%E6%89%93%E3%81%A1%E3%81%9D%E3%81%B0+%E8%95%8E%E5%8F%8B%E9%A4%A8/@35.23594,138.6150488,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd11494cdc39d:0xad820f045b9e04c4!8m2!3d35.23594!4d138.6150488!16s%2Fg%2F1x5fbf89?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "本手打ちそば 蕎友館",
+  "address": "〒418-0062 静岡県富士宮市城北町１５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-20887771e0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZNEjuKffAsDonGo1Nqbm7NYVDluIRtzc2mV9nkEN2yNmCCmGeUAVhRu5_0REm4-wIZz9ER0A7lxrp2qfWPw8KI2R3S9sgrWt7iPm3DiAbX2-pAJt3luod06Nhv3RuvLIBlQYuBF4LNJk=s1200",
+   "what": "ざる蕎麦",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-20887771e0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TV4xhnvNQeHq5JqtQLLmLpGXiLI5gzyQnI58ddZjHsrYRQxpl-__E2GKkH1rlFz8XHaMNYmFENg53g-g3wc4C_-RgFxxMRuJkJOiiv5gm-Od_NSV9_jRE1u8PRuFfHerwEO5OwOjzffBNM=s1200",
+   "what": "駐車場と店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-20887771e0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SC5VAneXZgzh_vFmS84CH5v-OqDoIvw1KfmCCbzDMndPzE56yZ82tBUi4phMFYWoCB6Pydphgp2o1ZycGV4fyJYWbav4OwHAtGMY5kDaR5RJ2PuP7G4DzXGy0UBksz2keucmpcO7tnVLA0=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

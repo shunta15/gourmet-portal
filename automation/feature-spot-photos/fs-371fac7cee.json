@@ -1,0 +1,45 @@
+{
+ "featureId": "ほたる翔",
+ "dir": "fs-371fac7cee",
+ "storeName": "ほたる翔",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%BB%E3%81%9F%E3%82%8B%E7%BF%94%20%E8%B1%8A%E4%B8%AD%E5%B8%82%E8%9B%8D%E6%B1%A0",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BB%E3%81%9F%E3%82%8B%E7%BF%94/@34.7961951,135.4493835,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f12968f39331:0x939cb0f25fcb0499!8m2!3d34.7961951!4d135.4493835!16s%2Fg%2F11j8jw_830?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ほたる翔",
+  "address": "〒560-0032 大阪府豊中市螢池東町２丁目５−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-371fac7cee/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScDVbDalLBiOGgixIk0tRIMCXvIjh_JUOvJCMIBFSLqtZCVhroLWjvQgqq_juBL8enlwG3JI_qldKR2vS4_QirLRv30_4DGa8s3WYQZmD31FoUUNkLnJByzVzZmQr1ExPhChg",
+   "what": "焼肉の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-371fac7cee/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRVucM44ySrQZRClNGrTku407OBIpnGn9BgOrr3JaZ5uO1QnD7RsjjKhsfSpLo_hA34THppUQM3WJl9yJ6uNRansOejrCICY4Ng2B2oxrKobpNFNy5DXrUnFGNR8tAfp_9pLMC",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-371fac7cee/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Su3sS1GszaWVav6lMo8aeUiyvC2QHNBME4OWI0U7xZQJcqkI-Ca5zceBGodaowZv_u2ujLLmHdogzGJHfXQ0NUv8inxqp0UY8DFPuc_CSdF4KNdN3OiIyjfvpch4qJrimG_p_7",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店の確かめ: 記録の area は豊中市蛍池、Google マップの住所は豊中市螢池東町2丁目5-1(蛍と螢は同じ字の書き分け)。店名は完全一致。"
+}

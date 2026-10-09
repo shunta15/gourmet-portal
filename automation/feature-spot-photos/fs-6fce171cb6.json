@@ -1,0 +1,45 @@
+{
+ "featureId": "MAKOCHANNEL",
+ "dir": "fs-6fce171cb6",
+ "storeName": "MAKO CHANNEL",
+ "mapsUrl": "https://maps.google.com/?cid=8361308559250289061",
+ "placeUrl": "https://www.google.com/maps/place/MAKO+CHANNEL/@33.9531185,130.9345724,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bd66c35d67b5:0x740955d5a38bf1a5!8m2!3d33.9531185!4d130.9345724!16s%2Fg%2F11jz49v2qb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "MAKO CHANNEL",
+  "address": "〒750-0013 山口県下関市入江町２−１０ 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6fce171cb6/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMsRO2cJKhNUDvFug-mJJLtc7X1ijCBv0VllLq33Mn6vx2LBH7MWk4IrRiZ0aTq-BGrZ2o7LU-s7Dslr0Fx7E_rZQQ0nqlpCttg9_aV6waVb4N0X89SmFtW6Fz2PaamIKRFrgwZQ",
+   "what": "料理の盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6fce171cb6/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tu5EnmOmet1BpcLVko9fCEdpYgjNouTuTwD3HIgx0sfBPQwHqRW2XS7Wt-eI3WtdisquYmavVehwYE2UoTKJ_vCrtAs615Y-yXTv4HpQUIpW033RxF2OgSXjX0-K_K48FmPLN6",
+   "what": "木のテーブルが並ぶ店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6fce171cb6/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_NdSxX4nBtiWQPzQZnM7j6_9Mj7Y1eyGj94M7jDMT-01KXhQLTOn3KrTWTZ7uLwICf9puUZTTQitkRx8InmPeG1nRFntE5O-X7QHaHBCFQo0JDiECul6YNp57jOkfkHhPdTSM",
+   "what": "店の入口と扉",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

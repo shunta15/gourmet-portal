@@ -1,0 +1,65 @@
+{
+ "featureId": "カフェレガーロ",
+ "dir": "fs-474e1f7c9d",
+ "storeName": "カフェ レガーロ",
+ "mapsUrl": "https://maps.google.com/?cid=2655969354914031611",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7+%E3%83%AC%E3%82%AC%E3%83%BC%E3%83%AD/@34.851859,135.4046498,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f6f866545555:0x24dbe60e6df967fb!8m2!3d34.851859!4d135.4046498!16s%2Fg%2F11c2kdtfnl?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "カフェ レガーロ",
+  "address": "〒666-0137 兵庫県川西市湯山台２丁目１−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-474e1f7c9d/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEYXNPb7bnccQ5jnN7IbyerIiS1PfD9H0Xo_ZmjDst3cygcmAMsCrqZ_9YJPRR9g8tua9CAaSfOMgqeLKF90YX3hZaTGMDkKjFvBb8JbBz2j6OWEt8ou5u9wUkV-uHea6aGMGipg=s1200",
+   "what": "モーニングセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-474e1f7c9d/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RO4XO54MdTYs0Zdz2f3np8CvYYfcIjmGTSXoWQRU1e5Cx0zBV0kPZ7KHH68-q0-H8BjPzvBhA4_N0Hl-lqZZi0U4T88r5GzO9FvONR5NCSr1UOUQ9L4qWbiVFyYCZ4Q4sBn639-ORhP7e4=s1200",
+   "what": "野菜の小鉢のプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-474e1f7c9d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STIYRcwAuTkJKlYcF-InY5uULCIkkuvfSKw-JlrURHRz080jSPcsAffMeEURw3h7R9_-KQsdimmSzOAHmuuDZtTqIlcdsOvr2XvTobQR1SRqj_mAW10g6ERMPnGub_yE7lT71Y=s1200",
+   "what": "ランチの豚肉プレート",
+   "width": 900,
+   "height": 621,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-474e1f7c9d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZTf3v-d_2BYL6TaQr8NpK6kO-1yEv7GyPXAkvzkRd0dHnBtjTv0M2pX28A6q7as3iiF-zKXjkO2fPWf8jJxNdCuTJY6kjLWxZKXHnBGMm32vKx1K0a_DNkr4cf6QMxxSk56UH0w=s1200",
+   "what": "カウンターとテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-474e1f7c9d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxX99ICWpFOK_PbAgtBcSWtLdUfSU6XHbOnTmZMQY7zMW40ciQUEyugWfdYtZssb7d5eNDV40oJ5u0Q7yuPX0HSjAXK2nYuYu5DCkcLctbu80zDHOlGSaneESHwtVt8__57ZLMvg=s1200",
+   "what": "CAFE REGALOの店頭",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

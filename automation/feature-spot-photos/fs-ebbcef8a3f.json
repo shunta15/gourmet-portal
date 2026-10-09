@@ -1,0 +1,45 @@
+{
+ "featureId": "「野菜が主役のレストラン」やさいやVegeTABLEベジテーブル",
+ "dir": "fs-ebbcef8a3f",
+ "storeName": "「野菜が主役のレストラン」やさいやVege TABLEベジテーブル",
+ "mapsUrl": "https://maps.google.com/?cid=15815785754488899898",
+ "placeUrl": "https://www.google.com/maps/place/%E3%80%8C%E9%87%8E%E8%8F%9C%E3%81%8C%E4%B8%BB%E5%BD%B9%E3%81%AE%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%8D%E3%82%84%E3%81%95%E3%81%84%E3%82%84Vege+TABLE%E3%83%99%E3%82%B8%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB/@35.1216952,138.9145569,17z/data=!3m1!4b1!4m6!3m5!1s0x60199b9b6c58fe27:0xdb7cf5591bfe893a!8m2!3d35.1216952!4d138.9145569!16s%2Fg%2F11kb2w20p8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "「野菜が主役のレストラン」やさいやVege TABLEベジテーブル",
+  "address": "静岡県三島市芝本町５−３４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ebbcef8a3f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNHKpUyediuhYI8MjgAXAbLAPBccblzyxp-7XJKzBP0O5IJVwrhbYa9qQgxq7WSAhc_e77Yn1yzvLW9rLErpftMbFzuuYSTKl1nPCzDofCrKxziyWiTgkER50lsYe8V3KjWFnULHdgow4G=s1200",
+   "what": "コース料理の皿",
+   "width": 900,
+   "height": 614,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ebbcef8a3f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIK8gHCREy5UcNlFf1cI-UD9WUq2hmnpdXYbXI2b1rn_jVwB_Eq-KWKDz1wEaZ4b2kQehxdkQPgnFUSWdpssBB5T6ResvfPwRV23KqEiLbU2MBDpoMkuVe84NRIAwRVrfvtrSQpuNzAnU=s1200",
+   "what": "長いカウンターのある店内",
+   "width": 900,
+   "height": 897,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ebbcef8a3f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnKFBBIkmqU16pKMrW13c5Dz6F7xlIQxtibLAeuqPGPGUQkfElo4bC2QW1fb3SIIsocXlhGIXzZ1dpemCp9t4rVFtv0C7snIqQnGiAdqcaZ3zJh5XrDtw69J1AvJ7lG6UI4c9KYh4jejy2=s1200",
+   "what": "野菜の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p5(アクセス・立地)に合う外観の写真がなく、料理の写真で代用"
+}

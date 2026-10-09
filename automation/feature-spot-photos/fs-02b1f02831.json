@@ -1,0 +1,45 @@
+{
+ "featureId": "イタリアンバルAvanti",
+ "dir": "fs-02b1f02831",
+ "storeName": "イタリアンバルAvanti",
+ "mapsUrl": "https://maps.google.com/?cid=14044303180950269543",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%90%E3%83%ABAvanti/@34.9954787,137.0053227,17z/data=!3m1!4b1!4m6!3m5!1s0x60049ce42389349b:0xc2e763554a6dee67!8m2!3d34.9954787!4d137.0053227!16s%2Fg%2F11b5pkyllh?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "イタリアンバルAvanti",
+  "address": "愛知県刈谷市神明町２丁目３５ ビラ三秀神明 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-02b1f02831/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTwn9EtqetW-dC-5-78W6JLvMCrxHGCTjCkKqE9Y5qgEA0PAJbb6BO4OnrFgdczg0QqF0dPSdL2RFBW2vY7nT6WkP40hhdoVZgTivypKJqkrZGQWkHN9o_AEjRs8NPytUkzsts=s1200",
+   "what": "パーティー用の盛り合わせ",
+   "width": 888,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-02b1f02831/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9REcKCeLDQhbY64Wqqq5ky30FPnfgyDbWOuA2p830Xlrr5bnEjTfk5ueR_F8Lb3pYYVIx02JTeexkv01SvJrUZp3UdfJidumhkozG6-UccNiX44DIr2HvCDR3d_CVTNDcLaGOXr=s1200",
+   "what": "ソファ席のある店内",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-02b1f02831/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri1iwJv_oCt8yKCyaP2WOQQKaKjosI3It9bArT77kEhwlCqa41RVV2lZEnJY0qeWL6uQugCV1_SrWspd5Qrr7iR6ooUgYdhoTfEbULDDtZFamghR7ReqWGU_lcUbOyugl0L-aK8w=s1200",
+   "what": "看板と駐車場の標識がある外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

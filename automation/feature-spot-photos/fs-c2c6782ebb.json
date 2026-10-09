@@ -1,0 +1,55 @@
+{
+ "featureId": "点心厨房桃花",
+ "dir": "fs-c2c6782ebb",
+ "storeName": "点心厨房 桃花",
+ "mapsUrl": "https://maps.google.com/?cid=9789407993593408907",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%B9%E5%BF%83%E5%8E%A8%E6%88%BF+%E6%A1%83%E8%8A%B1/@35.0206944,135.6988427,17z/data=!3m1!4b1!4m6!3m5!1s0x600107371aef8dff:0x87daf6b423812d8b!8m2!3d35.0206944!4d135.6988427!16s%2Fg%2F11fd6l2dht?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "点心厨房 桃花",
+  "address": "〒616-8185 京都府京都市右京区太秦開日町２−１ 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-c2c6782ebb/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T9HLemWgKvhVi-tZEs82mdSIz7kkev72jJo2dMek2i2VRsIYPqqyczMrXb-9xlTccMaZzcbnlNm_bp3YmQk5ROYgADuw6CtphI0Gxg4SIBtv5ngkNOi2CPoO29Bi5K7AAFmt08uP4DHtk0=s1200",
+   "what": "前菜の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c2c6782ebb/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZ8leAxKksj6p07L9AcO_wcty95M0Esh83aIEhiE313b-0oukAce7aI13mbKGQNj7Yj58_lKmtzzHUL4VPDa5zWv9govhQvR6jxobH-XG4T1zCwBtDqMrs-fioc6jWBzo6vZAyg3ZNrM8=s1200",
+   "what": "小籠包の蒸籠",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c2c6782ebb/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RlW_mf006H-OUVI9r5Y_7_8j683VjWaLhY0hc3RuXIZzaNl3_sirb7Rep9jT8V0Jvfn4WfhA1CxeZR00HpplVl5_GzgA6Hjv9sTwrLkjm4aghSKzbCyBi3hb6mj7HyrSzOQ5iMgQ=s1200",
+   "what": "オープンキッチンのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c2c6782ebb/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SA5gjNeRhWIfOgtDGzwo0pOv_CZHTYNEDhWufkrXicBYG1FiRy7zqjN_icphbTem2bEii3F59GfQeFvfHNxwJ5hC6VvCHFbthY1uaH46L3UmP4NqYrrY-h3np_DRzvcouOBW4Q7xE2mOPI=s1200",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "アトリエMOF",
+ "dir": "fs-a39079532a",
+ "storeName": "アトリエMOF",
+ "mapsUrl": "https://maps.google.com/?cid=14429536854813697512",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8MOF/@34.7700564,138.0125997,17z/data=!3m1!4b1!4m6!3m5!1s0x601af991b16b8293:0xc84003518893e5e8!8m2!3d34.7700564!4d138.0125997!16s%2Fg%2F1tlkcfnz?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "アトリエMOF",
+  "address": "静岡県掛川市中央１丁目４−１５ 望月ビル ２階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a39079532a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcV5uobT8ybKnZcgd6GDrtHr-BsmPw9AdcazU8Hw7-RfbvbEDRr1hGY47BZoNLMnK9MsvNj0ZEJh8k7BgWR5l6ehqy82Wr5ZqqYG47uD_-y4awca2PVuOUv1hhaV6gZT7g0T8=s1200",
+   "what": "肉料理の一皿",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a39079532a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAvdlU1LjQw03_UQpFO_b5kvct6cihBFvphTx_ei3C1pHPuwrZJbRc8QJKSieP2e8ZgAcNnqhPDJOKH7oLj-7O0mfFmeUBhaEZRQXp2MSPPK2bNOjIhnIO5ioQeave3KwpvkA=s1200",
+   "what": "白いクロスのかかった長テーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a39079532a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QKPUH2O81igg-ERNVg0HKCwQPjwXasYU2AXsiyOsLfg7JmWC3snxgUIvk07rNhdsOAEQCKJTIVEZ2Kl1swz_77rT4zX9Ek9xHTi2_pS8On6mIIs5q_GnqRwb3h2_Uvo_QI8FWg=s1200",
+   "what": "奥へ続く店の入口通路",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

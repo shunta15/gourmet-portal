@@ -1,0 +1,45 @@
+{
+ "featureId": "BistroPaysan",
+ "dir": "fs-c9369f5432",
+ "storeName": "Bistro Paysan",
+ "mapsUrl": "https://maps.google.com/?cid=7056320065954858773",
+ "placeUrl": "https://www.google.com/maps/place/Bistro+Paysan/@34.1138148,133.0383809,17z/data=!3m1!4b1!4m6!3m5!1s0x35503704f39e6b79:0x61ed15b6c8b34715!8m2!3d34.1138148!4d133.0383809!16s%2Fg%2F11t4yr300r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Bistro Paysan",
+  "address": "愛媛県今治市吉海町南浦３７９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c9369f5432/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxcnKvVvChenQvYuxaBTdytHUHAuLQl4qDRGNJ69KfI5X_QoTkPsPeVfbWud2lPk1TscfatuDCY0_6FlOU_FM02UqdyMC_B5cPi3zO4jTfKHtmwAr36nhRHl1qVl1QqHiFOQqaXYoTYSj4=s1200",
+   "what": "オムライスのプレート",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c9369f5432/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qo6gmG2SHcpq7M86X6zPxZd5VHGavye-LIJX-k60qEOmr97tkL1QjqXkQ6BMUH2XJOdkw4rfgI0ZSdaG_PSkpfA_3lqh8xCcaSvxuqJmlFxGHk206apXxark_nOiu8EGvMDEEfzEEjOYdA=s1200",
+   "what": "赤い椅子のテラス席",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c9369f5432/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYRQK_Z9C3n4bkeRgnwNT4_cI6WQYdZ4MHDLUNQ7VkEuT_Bdjvdt7zCbrCC5rR28fIW9A65dLLmmOg2IeUVtftAhGRdwN_YEqS5pjb0OyWVDVd5ki3N4nJ8h4XC27fpbfCRC42rAv382sv=s1200",
+   "what": "丘の上の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

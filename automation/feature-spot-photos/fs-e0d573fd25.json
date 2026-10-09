@@ -1,0 +1,45 @@
+{
+ "featureId": "きさん",
+ "dir": "fs-e0d573fd25",
+ "storeName": "きさん",
+ "mapsUrl": "https://maps.google.com/?cid=9778057426901861825",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8D%E3%81%95%E3%82%93/@35.0210961,137.0175195,17z/data=!3m1!4b1!4m6!3m5!1s0x60049d0a3769fad3:0x87b2a36c63db05c1!8m2!3d35.0210961!4d137.0175195!16s%2Fg%2F1tkp4y6n?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "きさん",
+  "address": "愛知県刈谷市一ツ木町７丁目１４−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e0d573fd25/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIncbvwv364tCBWX7vpkhVeYCrD5_kJvkQxQJejHedZ-1PVs-hmxq8V9IUN5pZMvVbbZTLBGt3c3G8PagoIOFXCIepURtCqrfhLGFyIcnntZTCAAzGZUIhGkhdOD3LIxRNhjuztScltq79=s1200",
+   "what": "揚げ入りのうどん",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e0d573fd25/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm3fU4LvT9L9hXIlrMaQV6QSNFwcm_xubq7s5cJigDuFpg-euK6cd9T267K_1Vbv7sIoEYQrFhD4dQjsluBou94xee6wAhQtNNV8m5dahgv6PHERGqvcxGqj133qIuKEN8XrOui=s1200",
+   "what": "梁の見える高い天井の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e0d573fd25/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl4EEhrg_-rT4e0JF9Sc-u14nAO0oklfV8pSZSfXu_L7ILzlceShiaZjDMK-qiHzpW0FrrwjZ9XLc4wqAYh8QCH5MVUopE1I1qm0BtWonSrSqbF151Rc1k_rfGMUsz_qPvm6trRgFVavaLY=s1200",
+   "what": "暖簾と営業時間の看板のある入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

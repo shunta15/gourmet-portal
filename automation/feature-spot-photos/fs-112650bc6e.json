@@ -1,0 +1,45 @@
+{
+ "featureId": "ダイニングチヨdiningchiyo",
+ "dir": "fs-112650bc6e",
+ "storeName": "ダイニングチヨ(dining chiyo)",
+ "mapsUrl": "https://maps.google.com/?cid=13644834275227237575",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%81%E3%83%A8(dining+chiyo)/@35.877505,139.5058442,17z/data=!3m1!4b1!4m6!3m5!1s0x6018db60e8f7d56b:0xbd5c307ad9fe7cc7!8m2!3d35.877505!4d139.5058442!16s%2Fg%2F12qgqg3x2?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ダイニングチヨ(dining chiyo)",
+  "address": "〒350-1145 埼玉県川越市清水町１３−１１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-112650bc6e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIjRemTEEw9Tifnh-j9msHjxym5aDfazav0pwMT4e8cZFzuMBerwJMHbLLDAMUbzYuDKFYxDF6CJRNVPcajI_lrcjUy9V9al94tKP033jgCMaqEw7OnmPDHdYgLsUcMEnqh1CIE7V7ey05=s1200",
+   "what": "魚介のパエリア",
+   "width": 825,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-112650bc6e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RoqxCRn3FzqmsybECBRiP08smZVP27fncOqTeZuGe00hXGhCyvLWhEV7yLSQKLSBBbq_mZezzIeAxel1EEVc3-ThpiEwE2lBx7Lj5kyegiPQhBi2W4aHvg33nvADgXaBl7n3aX=s1200",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-112650bc6e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXqNBtvSR-07t4Hlswq14yzbke-Y-z8oIgQz9Av-enDQmLvQfdtrudAxCzVUPFMNgiH3Rez7sELnNPuNJ2JN4y9wKVafoC0ynIbXbY8gkht4jDkbaRV4YQ1sZJD7q4GoRRJgo=s1200",
+   "what": "dining Chiyoの店頭",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

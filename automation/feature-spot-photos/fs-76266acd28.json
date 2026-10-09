@@ -1,0 +1,45 @@
+{
+ "featureId": "キッチンおばた",
+ "dir": "fs-76266acd28",
+ "storeName": "キッチン おばた",
+ "mapsUrl": "https://maps.google.com/?cid=1082894717601243377",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3+%E3%81%8A%E3%81%B0%E3%81%9F/@35.3634744,139.4722013,17z/data=!3m1!4b1!4m6!3m5!1s0x60185185d9eae367:0xf0737021bc4e0f1!8m2!3d35.3634744!4d139.4722013!16s%2Fg%2F11z34l007t?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "キッチン おばた",
+  "address": "神奈川県藤沢市善行１丁目24−１５ 善進ビル 2階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-76266acd28/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYRxyPOSpk-rNXZcepZlQpMiVhwokhu3-Cg_u4WSKuxm8H1mxKXMuEmu0ryvMBFfJ6qkLQK_81W4FDWSczcEZ80yMnfMOpbFLX6zJDifi-oPoWauSHvFdLC3hdaRomR-R4n9yX8OnzuwgT=s1200",
+   "what": "ワインと肉料理の一皿",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-76266acd28/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoxWMBZStLsPwF8guXuCJTcbIoxowUywR8FqwXVcW7aLZg00YOF0q35GyAO5I7SZy4ipXrfKnrpMc5qLSKESmNYYNZjTx1yC1TayR_JFzktBG64kvDnIHOvbz59QHQf2buVgvNwykflUUJ=s1200",
+   "what": "座布団の並ぶカウンターと座敷の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-76266acd28/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ShqoXtgJXWun8M08i18WPa7GOII4Tm6JpqF7D6Y_W1GybDnjzqHfnOI1IZFR6lCKUBhXTn0CquUV6VYviRLPdGpoenFPH6kxqey4D9z3oV-S5msHzMWl8z3XYxmd6KQaLU64q0rCbM8ioi=s1200",
+   "what": "パスタの一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

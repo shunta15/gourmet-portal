@@ -1,0 +1,45 @@
+{
+ "featureId": "麺酒房風神",
+ "dir": "fs-1cdf89c5d2",
+ "storeName": "麺酒房 風神",
+ "mapsUrl": "https://maps.google.com/?cid=11334022142915696922",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E9%85%92%E6%88%BF+%E9%A2%A8%E7%A5%9E/@35.3264779,139.3479092,17z/data=!3m1!4b1!4m6!3m5!1s0x6019ad38095e7ab9:0x9d4a8916b8e6d91a!8m2!3d35.3264779!4d139.3479092!16s%2Fg%2F11wj2xf6kw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺酒房 風神",
+  "address": "神奈川県平塚市八重咲町７−２３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1cdf89c5d2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TG8dGiPBCKspQdCK7YrKNGiA7H-UrZR_Ti0y9PUy0m9HnZm-RrzQJgwZyfTe6paBlTkHtiH_6-vCWVy-OYFHKYZLqMDbodD_16NCAG28y3RIVwxssiJaEWv8fLFIdarIllnXzykj7unSpV=s1200",
+   "what": "味噌ラーメン",
+   "width": 900,
+   "height": 763,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1cdf89c5d2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrjJqWzx9CHIol8pTG0P_1kGaemM8E_ELdI4thsXMZBYv1oH4UmYTAlO28IXZ_0xsLO3F3p0pQ8-EL0I7KLWTz0ptuxiJHEIXwdDQp37hjFM4oxN6DV_bSSfTIMzfc30z41kg6=s1200",
+   "what": "カウンターと厨房の店内",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1cdf89c5d2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TM4wfMPSjEdch1ymnQ9H87I_a6Mg9CDN7XjeOqX0hvhpQx4gnrped7ymcdkXH8aCxY9iyserFSqF4bUqStuUii_qxbllP7dmRtKjizRper-2lXf1W-z99MIa2S2Y-2kjnLp6igvmc5Jv4f=s1200",
+   "what": "夜の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

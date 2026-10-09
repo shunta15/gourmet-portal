@@ -1,0 +1,45 @@
+{
+ "featureId": "らぱん",
+ "dir": "fs-e84f73724b",
+ "storeName": "らぱん",
+ "mapsUrl": "https://maps.google.com/?cid=10412023313728015877",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%89%E3%81%B1%E3%82%93/@34.9856477,137.0768684,17z/data=!3m1!4b1!4m6!3m5!1s0x600499479be22acb:0x907ef009dfd80e05!8m2!3d34.9856477!4d137.0768684!16s%2Fg%2F1tffjqrs?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "らぱん",
+  "address": "愛知県安城市住吉町７丁目３７−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e84f73724b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWLLznrgJE2Cq8T6Bj72KX5NKL_CwgGE_hfE_pJS3Cx9MTvOpZ7mbPvh4mXbgxhG0ZWD94fW2JQ3b0mnTXxVt3mVLWtEQdkj24upINTOVIb3jg8u9ITEGjVa8te6Zqrjfx261tegBAvHLR=s1200",
+   "what": "海老とあさりのパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e84f73724b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOUNGDfVFrOGp3ctNS0N6bSjXQLK-41zvWgbojiJaWtIQvQ9t8v35183u2eZv401AL4UPacydy3PDG0QoIqgJNRxjv0CXpiGMSveACnFbqgp2GJp3ozvskDFXM2sgJBatVPxtvk65aLHk=s1200",
+   "what": "牛肉と春野菜の主菜",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e84f73724b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tpj2g2FOf8RCVwOMnJu5rfBwgQNzCgDgKIwHh3Zk6k6Q62epxiK6w6JJmTFDgW2J_TlS3nIyC67xxxijvNH55jio3KDHvKfsK5c10ZETyshk2It-C53IVgwwi6i1heV3e1nKE=s1200",
+   "what": "店の外観とテラス席",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真がなく、料理の写真で代用"
+}

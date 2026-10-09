@@ -1,0 +1,55 @@
+{
+ "featureId": "よりみち",
+ "dir": "fs-6e0279dc1e",
+ "storeName": "よりみち",
+ "mapsUrl": "https://maps.google.com/?cid=9342970208281700343",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%88%E3%82%8A%E3%81%BF%E3%81%A1/@34.4767131,136.7100391,17z/data=!3m1!4b1!4m6!3m5!1s0x60045a7fcf64fd67:0x81a8e5e73bb027f7!8m2!3d34.4767131!4d136.7100391!16s%2Fg%2F11ppq0rnvc?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "よりみち",
+  "address": "三重県伊勢市勢田町５３７−９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-6e0279dc1e/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STDUga3HlF9sFhDZVrKeX43sAtNO6OYH_OHwqT2MV5Rsfjy4CtJd96mv9AAXUSS0GDGhVOlQKTPKqgt9eV7s79X5U3DA_H8_GyxzE9zSxfG4E4Fr1v8eCX20vLB4uLxVsIzPLcKA=s1200",
+   "what": "牡蠣のグラタン",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6e0279dc1e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SotaJ5XLVBnjdjzGwZGcVcr99g7NqB4Re10Os72wIpjTvMcTw51GjYqo9G0iO-bAE5AKV19xbU6B4FVXaYT6hlHnX51pxwN8ZwMLt6IPHKPPdd6-F4T78CcA4eTfCUrn_L6h8=s1200",
+   "what": "海鮮の一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6e0279dc1e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcoAyEijxnGp4ixatW3XxsSqvVU5mkR0XBjqLst6gsGYbmLGK2BkUrhEoZw7mbNgZDznRbokHXP7UdvwtwNwh4NKX36xmD2lmmP8lc7rUnciwG13-HUyABHj11P-ht5Hx6DsKJAkgQxWE1=s1200",
+   "what": "カウンターに置かれた餃子",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6e0279dc1e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TY4CdJeqxGr4jkA4qgr3EH3pBibtFjYcD9vIQXpxRDGeeOoIFM3QP2PDK6FE3GNm834Fg_rl3yP9-tk5BdiiXBmkOwEXzvb641vHyIzqoVlNCi4D9ro5S5k_Pb8tCw5duvjdfYHfAT_VC9=s1200",
+   "what": "小皿が並ぶ酒の肴",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観・店内の写真が候補になく、4 ポイントとも料理・カウンターの写真(お店の写真は 6 枚のみ)。"
+}

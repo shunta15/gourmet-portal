@@ -1,0 +1,55 @@
+{
+ "featureId": "富寿し",
+ "dir": "fs-342f00efa1",
+ "storeName": "富寿し",
+ "mapsUrl": "https://maps.google.com/?cid=2737171155868803327",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AF%8C%E5%AF%BF%E3%81%97/@35.7669182,137.9395823,17z/data=!3m1!4b1!4m6!3m5!1s0x601cf2602e2bfc99:0x25fc62aa030160ff!8m2!3d35.7669182!4d137.9395823!16s%2Fg%2F1vn9p4xq?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "富寿し",
+  "address": "〒399-4301 長野県上伊那郡宮田村３２１５−１２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-342f00efa1/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SUOBg0vBRxdcGwV50dqNsl6M-EjuV3yY3ClULYje9QYHC4EESwpaddNca6QiccxC8lZynJV51qJqlQ9mXoXItO7GuQk1SBM5x9w7q-iQVCqjqkelMtsxNm3l442gNclkN-COQ=s1200",
+   "what": "海老の刺身盛り",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-342f00efa1/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGlLh0kcv6-XjjmCcWRlmlptk0ff2ioWJhO-_AZAOJqjwERs-LdWn3lqk--ELcvtPnwvm95EjMEhPg5lURnTeqnaceqLvZCEfK5oF8AUOzO0Vjghc-M3J9e4RVyrZhxRektcnqCGryNO6V=s1200",
+   "what": "握りの盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-342f00efa1/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZl8hTdqBGdx3-sQK_ntlxJy-zlBcl-bGApWLm-EcLHUm2RG2-NZZbZLgaqUR5kUyF6rm19t0CiCDXw4f2DRFfwpKIR7X66nG1eF4JYESbDAJBXkRDkB_Yq2ujyFdRZ4Zqwdq9bMOHjS8u=s1200",
+   "what": "カウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-342f00efa1/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJIIKFibD6en3CK5ra4m-HAfEUI372Ewq_b-NbaJQyItqz44FCP9Ok5x8uJMUoz62yq5D45_q-OjGTddaHZw_I1_2o01AJ9-2dbK51MHaASz4IYsAKr6I1lEyUDIrRrdj8HwZA=s1200",
+   "what": "黒壁の店の外観",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

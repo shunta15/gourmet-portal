@@ -1,0 +1,55 @@
+{
+ "featureId": "食道楽いわたに家",
+ "dir": "fs-8a5f6c72cd",
+ "storeName": "食道楽 いわたに家",
+ "mapsUrl": "https://maps.google.com/?cid=12032917440242604065",
+ "placeUrl": "https://www.google.com/maps/place/%E9%A3%9F%E9%81%93%E6%A5%BD+%E3%81%84%E3%82%8F%E3%81%9F%E3%81%AB%E5%AE%B6/@34.3298397,132.6605355,17z/data=!3m1!4b1!4m6!3m5!1s0x3550733dc30f1ec5:0xa6fd82a8a5435821!8m2!3d34.3298397!4d132.6605355!16s%2Fg%2F1tj28tmr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "食道楽 いわたに家",
+  "address": "〒739-2613 広島県東広島市黒瀬町楢原９４８−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-8a5f6c72cd/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0x-Gp_KX7HEigxz8_A72Yr_N9FFzTkffl3TzXPWGrCOuXjqtbxj4jVO35n7kauOxPYYSSSQsjdBCXB7o8NucP1U-z0QqwCeS9j8j1F5P0S--KWO8ChkNbBazwi4DrxJ7SxDpx=s1200",
+   "what": "エビフライ定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8a5f6c72cd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSgcmCJlJcL91AKYDEWEzeKkMAXTcJ37o0VHrsVNNJazgQBHkRKnrDI6t7bFqS1ndmNekOucCfbxeH99YJrw0Enk_a6boMpqw0fwVwqI4nmd2Fpt7CuOoNBpeZJ8wl0jpM49lm=s1200",
+   "what": "座敷風の個室席",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8a5f6c72cd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QvvO94f5mE1Fr84sK6rzA37-2wZawx06K95lHU-554FWaEllmjqC3xNelc-FTWhKYA9IwwU4ykq5XAsxWWSXjyWMv0_AldDHHi_-i1Tp6Igc6iAWrLzmqJUt_W6E9n2tx7jNc4FnUFgIIY=s1200",
+   "what": "とんかつ定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8a5f6c72cd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SphoTcNkCOJ7yzdLVpvUfqdjmWHTFUWYrcL15EOAMWBGnFm1L2Y5rQzTIe95l745-ClrkrsPFzuWTVYVEOP8FWmFwphgDCwbBR8o8HdmxZGV4a4d3dsBwyuHl5x2W0_6CyzPoB=s1200",
+   "what": "店の外観と駐車場",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

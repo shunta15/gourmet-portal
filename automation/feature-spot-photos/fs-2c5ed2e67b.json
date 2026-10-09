@@ -1,0 +1,45 @@
+{
+ "featureId": "USHIWAKAMARU",
+ "dir": "fs-2c5ed2e67b",
+ "storeName": "USHIWAKAMARU",
+ "mapsUrl": "https://maps.google.com/?cid=8722012320425175402",
+ "placeUrl": "https://www.google.com/maps/place/USHIWAKAMARU/@35.3139867,139.5443725,17z/data=!3m1!4b1!4m6!3m5!1s0x6018455270af8897:0x790acffe8585e96a!8m2!3d35.3139867!4d139.5443725!16s%2Fg%2F11s5h01fd3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "USHIWAKAMARU",
+  "address": "〒248-0014 神奈川県鎌倉市由比ガ浜３丁目３−２４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2c5ed2e67b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkhPEyTBIfi_zMjst3ZwRlSmr9-4Chu_tpFme5mQgDIxvFRZzELQWIslpSc6qh49FruV2PGZU890DA2hYNhPF20j28nCqe4tYbjlhOpFyRUVe10yOyLcbadEEyI7e5nJWVT9r0PPVxWQNOQ=s1200",
+   "what": "焼肉の盛り合わせと焼き台",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2c5ed2e67b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWniS5PjsPBzO7DPmjjxzimza56VZJyIxYwHj19QaAj-nW_3L1tVuAGCY-uY-mojyZhqi7MOBOTXWWQXye3Scwned5sQ5jlWagdqoWPkm4vlwETJMPh-ZPcSDL6a2AWdD-mZ5iPL4w=s1200",
+   "what": "窓際のテーブル席",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2c5ed2e67b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm9LpxKysjBJvVJwU79sZQzdAKa_C6RREOugWQWYo86DY4qj5M82Yehk2v4lY2eWj_IxKF-iK9e-MjT6U6mSEBrvFglfk_0ZBkYTDL6gxpvVj5GKWcbijZypUP0DGYsDh566Tss=s1200",
+   "what": "路地の奥の入口と立て看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

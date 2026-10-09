@@ -1,0 +1,45 @@
+{
+ "featureId": "備後ピザ",
+ "dir": "fs-8a5e6abf0f",
+ "storeName": "備後ピザ",
+ "mapsUrl": "https://maps.google.com/?cid=946794095605217584",
+ "placeUrl": "https://www.google.com/maps/place/%E5%82%99%E5%BE%8C%E3%83%94%E3%82%B6/@34.3505589,133.2935045,17z/data=!3m1!4b1!4m6!3m5!1s0x3551071c56190bf9:0xd23b036affc7930!8m2!3d34.3505589!4d133.2935045!16s%2Fg%2F11ts_01fgy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "備後ピザ",
+  "address": "〒722-2632 広島県福山市内海町ロ３４２６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8a5e6abf0f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVSRO1yFMtzBxYXoPJA9-9iDTjAqdg9LJz1qfauGSQReARo0bjDKTUnP9cXW86gg_2w8ssiHfW3vNu0nX2lkjEonbFX72a4rk0xOYrNodA8bGm4cOzcwUIC-4H55yxA43q6-DYiTEw1wqx=s1200",
+   "what": "ピザ(ハーフ&ハーフ)",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8a5e6abf0f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TC2s5Y7NTrsYrSivDYX8A-6X-4x7EsxcJjO4647GfOSR6P4HKOXfaHGg_WPg5_5Kunl1y_5XRc_Yp-qkP3THu1FU6JrsSRLs0BS8oC8RD0bpUPJa4QWZzsgCosp7egMXY2JGtdcdUscbUM=s1200",
+   "what": "海を望むテラス席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8a5e6abf0f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROFVzCmBU-i6HZY2F9qcY9sHbhzkSo2noSCCsckeurLYMCc9Ay7E6TR71NWbQLyINViZ5GQk_wz0j8_Ww7LQGqZjP6yGC2bqVdXawKjnTD2Vn_2LBrw9rHG6R4jdUjH6EO750QADQOngE=s1200",
+   "what": "テラスから見える海と島",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

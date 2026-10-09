@@ -1,0 +1,45 @@
+{
+ "featureId": "つるや",
+ "dir": "fs-26643fa6ce",
+ "storeName": "つるや",
+ "mapsUrl": "https://maps.google.com/?cid=7737191501162723967",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%A4%E3%82%8B%E3%82%84/@40.5078969,141.4333124,17z/data=!3m1!4b1!4m6!3m5!1s0x5f9b4e70ff67b3a7:0x6b6006ad49f9ba7f!8m2!3d40.5078969!4d141.4333124!16s%2Fg%2F1tjynk8f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "つるや",
+  "address": "青森県八戸市一番町１丁目１−１８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-26643fa6ce/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Th6_5sO0oGO3WgZ7uSoUeUQZVZnrp_SVROAH4RG4EjYatlzGIH21YLcXwMr1DRN5WOPDL8OM1ZVcN31k0cxNpMRCnaopVUIyjHTAJ1PXD1I8xCmJ81rXMBtcVkgQg0yWrZO4uQUc_LjfM=s1200",
+   "what": "貝柱入りのラーメン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-26643fa6ce/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5m0fn5I2ENflyrxntdGiAhb5tBm-TvZCy5Lwpm3rNvG6rIKyyTL5vraGMetLy8kU0Teap8bUCKtCaJxAQf3pByoV9Hbngei99EkF_-jmn5UvRsNNcxt5npSs1z6UtR4dtBC5ZRg=s1200",
+   "what": "卓上に並ぶ料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-26643fa6ce/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMzXn6pMPGmfyDqi5H2xW_fCED3rwL0Va1AEqacQvAz9bFvjG5pWzAbkbio895R7QVNiQ3ke6Whsn5wI0PAFkzIEM_APbaheJBrvnAH2R2NM_IP1zkR7F-3xjJKkgxpYzt7rWWlSlghhc=s1200",
+   "what": "店の外観と看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真がなく、料理の写真で代用"
+}

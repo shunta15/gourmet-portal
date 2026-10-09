@@ -1,0 +1,45 @@
+{
+ "featureId": "じゃがじゃが",
+ "dir": "fs-bc8d201e1c",
+ "storeName": "じゃがじゃが",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%98%E3%82%83%E3%81%8C%E3%81%98%E3%82%83%E3%81%8C%20%E5%A7%AB%E8%B7%AF%E5%B8%82%E5%BA%83%E7%95%91%E5%8C%BA%E6%9D%B1%E6%96%B0%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%98%E3%82%83%E3%81%8C%E3%81%98%E3%82%83%E3%81%8C/@34.7983399,134.6327334,17z/data=!3m1!4b1!4m6!3m5!1s0x3554e6ad02d8741b:0x46705cc7974f6067!8m2!3d34.7983399!4d134.6327334!16s%2Fg%2F1tdz2njg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "じゃがじゃが",
+  "address": "〒671-1121 兵庫県姫路市広畑区東新町１丁目６４ 二階",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-bc8d201e1c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyREWDcCfOXjwJ9lqflX3L6uXPiBpOlgLmZKoOLzgz_Xysf5td6P1_ub3cR09xNp3KNdBGISJ71bAMVCsd2fsAYE3VgMA3HHP8_yy0y3PMllqZMDGMa-YKqVRKE-8ppDUG1r2pew",
+   "what": "鉄板で焼いた豚の一皿",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-bc8d201e1c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RungU5AsGmcCuAW94cR8n3JZ3R1-jEIkb5dxZYbELji-Fa-T2bCunuy1w6TybmewvzGhwiAgDaG4CH4iB-2Omp5_jbAcSA5kvvR73fENO-wkWFlfYrzOBAdSXKKSpwWsbrmqK6",
+   "what": "店の看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-bc8d201e1c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPyTwAkUvkFnOIf3riDl2c86Sn7UiNE4hBdH72Kp1COpZrjMuzFMM0sUR4MOdCgHccDeLCxvKSkctl7UlylbHZwzf5mjispxOeOpXnY2mFzXQ_4RfgR0HVOC3i3SsNnlGjXYG9",
+   "what": "オムそばのお好み焼き",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無い。看板の写真は2枚がほとんど同じ構図のため1枚だけ使い、ポイント5は料理の写真を当てた。"
+}

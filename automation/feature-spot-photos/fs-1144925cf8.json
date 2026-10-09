@@ -1,0 +1,45 @@
+{
+ "featureId": "割烹なり田",
+ "dir": "fs-1144925cf8",
+ "storeName": "割烹 なり田",
+ "mapsUrl": "https://maps.google.com/?cid=4463217570709730484",
+ "placeUrl": "https://www.google.com/maps/place/%E5%89%B2%E7%83%B9+%E3%81%AA%E3%82%8A%E7%94%B0/@35.0852444,137.1583617,17z/data=!3m1!4b1!4m6!3m5!1s0x6004a041c98ec36f:0x3df088bbc16f74b4!8m2!3d35.0852444!4d137.1583617!16s%2Fg%2F1v3lpxbc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "割烹 なり田",
+  "address": "〒471-0029 愛知県豊田市桜町１丁目４１−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1144925cf8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SaaAcgYTfRhBuhr_kO9gzf5Qjvu7DzKuRyJay4TmhK1T5woF68Vevxk3b5bj8W91l2ONB1hG9y0Bo6ugRTB934625kV0Cwz63-9T3UENe76lodmnSIfIPnKT13-PzAd9J86hVk-g=s1200",
+   "what": "お造りの一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1144925cf8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-ELIXLludF_yXAp67dNUdQ0b21boZX4EX3r1qlzjVgxe_tJLdttxeIxRDJCMNCO4MC6yHfinozK6Tag35rYY78DyoMZYQcPFF46ODUQta66PmEDlcMNsAqnLATfItmyOORaOX=s1200",
+   "what": "一枚板のカウンターと厨房",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1144925cf8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qe_GdK9UI9Vt-F_jWakr7kvtMJoTiTWRS2a_mxgRCMJe0g-zinzSyJwtQO_Qgcz6plU-uRZu_OCRjzQtNNBswYuXdhlOvk8Vh16vrh5Q9UCW7cddBrVkcpiyKyL6u7rJTYnmuV=s1200",
+   "what": "夜の店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

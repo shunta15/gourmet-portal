@@ -1,0 +1,45 @@
+{
+ "featureId": "すき亭吉寅",
+ "dir": "fs-b012e19892",
+ "storeName": "すき亭 吉寅",
+ "mapsUrl": "https://maps.google.com/?cid=14438521217621091813",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%99%E3%81%8D%E4%BA%AD+%E5%90%89%E5%AF%85/@35.9247463,139.4847346,17z/data=!3m1!4b1!4m6!3m5!1s0x6018da61785fd5fd:0xc85fee8c823ee5e5!8m2!3d35.9247463!4d139.4847346!16s%2Fg%2F1tkc6pzr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "すき亭 吉寅",
+  "address": "〒350-0062 埼玉県川越市元町１丁目９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b012e19892/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4JeJ8iUsmBpxTNUnek58ZthVVPAOro7yNCq5G788y8XI0eF2VauvsAnORc1V8yILMBuSzc1BYegnaaEEQ2vMPHje230lAiQ1a8EGuyzgVJpOzAJsFQp8BtuLXANcXI0Fjudc=s1200",
+   "what": "しゃぶしゃぶ",
+   "width": 600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b012e19892/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGZ7OfOq35thrIa4C2AHm-D90FUZfQH_HEbmvu40vQ3iN-lPobvMGU3vZEHkOZV3BDU52E3kROchRGh8W_K_Y1wwcdYiNPKNUo9yG5DDG6Kjp5ndR_IeO07sT92vrPO0RjGxyF=s1200",
+   "what": "天窓のある広間",
+   "width": 900,
+   "height": 632,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b012e19892/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNlISkuUX8tniQMVDJTCdHfRK6CSyFzD63AlI0mbD-2rZko76po2MWWmK_5oiwUCcaTVETbY7PN8NfLUMnC-7f8NlvTG50Hbiuzi_1khABHjxK3Hjd6Qb71wZhrpY7MPwTXCMEzA=s1200",
+   "what": "夕暮れの店の外観",
+   "width": 900,
+   "height": 632,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

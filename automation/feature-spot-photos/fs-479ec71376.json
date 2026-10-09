@@ -1,0 +1,35 @@
+{
+ "featureId": "樂食中華孝（KOU)",
+ "dir": "fs-479ec71376",
+ "storeName": "樂食中華 孝（KOU)",
+ "mapsUrl": "https://maps.google.com/?cid=4183846430277302254",
+ "placeUrl": "https://www.google.com/maps/place/%E6%A8%82%E9%A3%9F%E4%B8%AD%E8%8F%AF+%E5%AD%9D%EF%BC%88KOU)/@42.6308894,141.5945123,17z/data=!3m1!4b1!4m6!3m5!1s0x5f75112d954fdccb:0x3a1002294f76f7ee!8m2!3d42.6308894!4d141.5945123!16s%2Fg%2F11vdmwv192?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "樂食中華 孝（KOU)",
+  "address": "北海道苫小牧市本町２丁目１−１１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-479ec71376/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZmgY7TF-pgHLJcI1QJEfU3QjMUytXTr072ODzI-T3j7Z-77bg9yJ1JqoyzSInXBKfpoW4HLNbl1errIpPFZ1IMxA9yIogsv-7YOYzcasqXCMkgqqde8JOJuef0sCg_Yw4QyNs=s1200",
+   "what": "黒い皿の麺料理",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-479ec71376/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QINbP6w-Vm7QmehPdS_7q_Ttjq4mlVpuJsrZV6Vk_meLrIIVwBSjlfOx_MBeZS__M1QFRrN7YtWrbVv-04XRdjxvy7RZpYhJ2O-zR1Au5-yRB1nU4Zm_GcOZMRbgZtfEqsyk2JxwK4Kfq0=s1200",
+   "what": "看板の並ぶ店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "オーナー提供の写真の多くはメニュー表・チラシのため使わず"
+}

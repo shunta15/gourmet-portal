@@ -1,0 +1,45 @@
+{
+ "featureId": "鳥ト鮪かめ",
+ "dir": "fs-ff224995b4",
+ "storeName": "鳥ト鮪 かめ",
+ "mapsUrl": "https://maps.google.com/?cid=4658202055275508855",
+ "placeUrl": "https://www.google.com/maps/place/%E9%B3%A5%E3%83%88%E9%AE%AA+%E3%81%8B%E3%82%81/@36.1436585,137.2567588,17z/data=!3m1!4b1!4m6!3m5!1s0x6002bb256543c475:0x40a54216ccb0f477!8m2!3d36.1436585!4d137.2567588!16s%2Fg%2F11wj0mwq06?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "鳥ト鮪 かめ",
+  "address": "岐阜県高山市朝日町２３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ff224995b4/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3YOrHI10tocXeowTj-5UuVzM7BWYOMKpEv_AuoolmF76qbA4misZTX_2sm3O8XV87dOLvJhJfh13WDr-uwbUsw8u0n3PjvvKIWu4QyyknM5SL8tT0S98hjeuWSl7zO527xWP6Og=s1200",
+   "what": "鮪の刺身の盛り合わせ",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ff224995b4/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5OARN8NBO2Q3n8FzjvLK8_0Af7UPDLwNkmaMY6o8zywBzNC6GYScCMjdYAONyDLU-xAyde3REilIlDDz2xjFY_mzHuiqQk7CcbZ8E_blE9j0UDvPp0tbq9UpvMMdF4V_0qIQqS26Wlcd4=s1200",
+   "what": "カウンターに並ぶ串",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ff224995b4/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGRDlL3YmHBssUAHI-uXVJy_edawQ6SftR4cThmiXyjJ6Oty4NtoeXNWitB1zLiImtGxkB8UpY_-7wCRoEazD3naud7Jm16rLjsYCwhNH6B_nzBKQY7eJlwyEsWZ1wv7dN2QFAQHWULYg=s1200",
+   "what": "夜の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p4(店内・空間)に合う店内の写真がなく、カウンター上の料理の写真で代用"
+}

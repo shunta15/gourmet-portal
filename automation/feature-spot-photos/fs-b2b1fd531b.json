@@ -1,0 +1,45 @@
+{
+ "featureId": "蕎亭う月",
+ "dir": "fs-b2b1fd531b",
+ "storeName": "蕎亭う月",
+ "mapsUrl": "https://maps.google.com/?cid=11563009635883976657",
+ "placeUrl": "https://www.google.com/maps/place/%E8%95%8E%E4%BA%AD%E3%81%86%E6%9C%88/@35.3349222,137.1245095,17z/data=!3m1!4b1!4m6!3m5!1s0x60036a64e2e9d3b3:0xa0781000194887d1!8m2!3d35.3349222!4d137.1245095!16s%2Fg%2F11hcylr2zy?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "蕎亭う月",
+  "address": "〒507-0033 岐阜県多治見市本町３丁目57番地",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b2b1fd531b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXtD0Y4wQBX9w-WbCkbFIQTXY0OnCaL_iKYmPTeS6Jq8KNyphLikk6ERFvC3vLBryWC_xFZHcQNbpbz__uBOQKs26c6M0yKJHpKfy-_HVir-1ZTJaiONBbYrQ6fk0YtKxxOtgB=s1200",
+   "what": "長いカウンターの店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b2b1fd531b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHfkzOtK8pSbo1OS_FRoz9nPc4fmJZVVfGSOYN1TnrJGLn_iFvL29Irw-LhS2VlA78oXR5JQeIaA2Co0YtcaTs4oecKqgLMx6cD-7R5lRD6sxaptmt-Yidd-FxSwJHvEd_zv-n=s1200",
+   "what": "蕎麦と天ぷらのセット",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b2b1fd531b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3gVkFT2-_yMkAWOLyBmlUfElxkltaN9izMwaCYLrB4Hn7b5Laarxc2WeyjOhZJ1iO27ZkLB_ttEyKYaHK2iR0Gdk2MmBjDXTqz4imhAOBI7Ct4DfPR5lhiGKPAble65MkL5lQ=s1200",
+   "what": "通りに面した店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

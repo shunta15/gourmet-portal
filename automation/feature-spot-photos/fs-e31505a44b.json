@@ -1,0 +1,45 @@
+{
+ "featureId": "雑貨と喫茶と宿題カフェ木下商店",
+ "dir": "fs-e31505a44b",
+ "storeName": "雑貨と喫茶と宿題カフェ 木下商店",
+ "mapsUrl": "https://maps.google.com/?cid=17366083646681191169",
+ "placeUrl": "https://www.google.com/maps/place/%E9%9B%91%E8%B2%A8%E3%81%A8%E5%96%AB%E8%8C%B6%E3%81%A8%E5%AE%BF%E9%A1%8C%E3%82%AB%E3%83%95%E3%82%A7+%E6%9C%A8%E4%B8%8B%E5%95%86%E5%BA%97/@36.3542382,139.1406156,17z/data=!3m1!4b1!4m6!3m5!1s0x601eef1a3f714867:0xf100b91134271301!8m2!3d36.3542382!4d139.1406156!16s%2Fg%2F11j9044n4k?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "雑貨と喫茶と宿題カフェ 木下商店",
+  "address": "群馬県前橋市小屋原町９８３−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e31505a44b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfSLiy8TkeQsb9efqWPAVJLBHz273uH2ArzuSw8aYwWQje-0keonh1I-yyx_TAMQ8Y4M8TtmKfGkyQhPIDD2XcPFoomVOTa9OhQKx_2A32tc959iuNj5rua98A979WFJy3WfwhZEfCxOKd=s1200",
+   "what": "ワンプレートと焼き菓子",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e31505a44b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STadCd6Lb_R7mW3tvZcu9XMhSL9OgpW9fBWegsbQHGRJe_k74pNIRbFpVLmOMJhFHMvloamcI51TeiZiKumLwW1G_szu-aXmPyxfmTcjnfeUj4fdiPrfnnJl2PdxDLcqLbj40AI5mpjXuy=s1200",
+   "what": "木造の広い店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e31505a44b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQfFU--Ahrg9-j7u5NTTf1S6IqiF0vf70AXUh0tUAshuFqmBzyZk4x6kFbPIjomyxoKtH6XkbLX-eB2lVnQSwFzFO0z2ixrmLMhI6p8mU7mtfeT8ueOXIh1AAg98UZ1q22_WumDUmKOHg=s1200",
+   "what": "看板のある建物の外観",
+   "width": 900,
+   "height": 507,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

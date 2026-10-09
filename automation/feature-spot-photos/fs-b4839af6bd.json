@@ -1,0 +1,45 @@
+{
+ "featureId": "酒場むゆう",
+ "dir": "fs-b4839af6bd",
+ "storeName": "酒場 むゆう",
+ "mapsUrl": "https://maps.google.com/?cid=16538117732880359574",
+ "placeUrl": "https://www.google.com/maps/place/%E9%85%92%E5%A0%B4+%E3%82%80%E3%82%86%E3%81%86/@35.7048652,139.6386638,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f3486dce57f7:0xe583327491ec2096!8m2!3d35.7048652!4d139.6386638!16s%2Fg%2F11cst1ycz4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "酒場 むゆう",
+  "address": "〒166-0004 東京都杉並区阿佐谷南２丁目２０−７ 田中ビル",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b4839af6bd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfFteIsy_b__ECiFu862GxkuTULunW5act8dt1zIMncKCoJZEw3mnKkJRUhVShRyElLwhmJR5Ooi2RJ23eIiImuvoA24SSCfA1nv69XqGblx_mGgIGLHTb4ZICmkseqNxTdsmqM-aSxsc=s1200",
+   "what": "小皿料理の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b4839af6bd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSrW7etV738Id2oO1GlFjQFsN6SeijAuwh98zYVQV2eRoZ4bEx8rkC8xnSKbZwKC-uLRmHhdfeTQj2ZT2iM2hcMDImnqpqFNMoF_BC35CK23GtsRBkrmVikmRKYrUtcMwVbz4=s1200",
+   "what": "カウンター越しに見える店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b4839af6bd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TDd_cNbuclIzGZEULrpDgYRBy4h9O-PmKQu3wENB6Gr8yJgu_1ZA6xSM_4svY6_V4F5o0UrTjnAeS_lQpUi6-aTlo9lmw7KOY7HAHmRKYAkX9RkHPq0d8PRKQ_dtwkQv7rrdB_7i4zXHQ=s1200",
+   "what": "提灯の下がる店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

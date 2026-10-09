@@ -1,0 +1,55 @@
+{
+ "featureId": "SteakHouseG-Base",
+ "dir": "fs-7ae186570f",
+ "storeName": "Steak House G-Base",
+ "mapsUrl": "https://maps.google.com/?cid=18192095609508473058",
+ "placeUrl": "https://www.google.com/maps/place/Steak+House+G-Base/@36.3924748,139.0705529,17z/data=!3m1!4b1!4m6!3m5!1s0x601ef300357e449f:0xfc774e922cb228e2!8m2!3d36.3924748!4d139.0705529!16s%2Fg%2F11w3hcrr_7?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Steak House G-Base",
+  "address": "群馬県前橋市千代田町４丁目１５−１１ 2F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-7ae186570f/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sa_oo9My3YgxUGfHb1wtHcDEnPowG6iX7s7fhzCBHPSXMOCSm9S45xdShImx8frgZc-QLw6Std2lN1ypn421Mv8yIqn8tzhxEV9O11QsUY0ESLQJZOB_SVyfkRpeic2QlIyWjDzA=s1200",
+   "what": "3種のソースを添えたステーキ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7ae186570f/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Svf-2kdINnDPc2M7d24YwZYAD-u9mNOAvfabAfRJ08OL5loPgacqzkJIx9Gr0o2yWC6EkXwcML8NYKgCtvCOEi1QQKuy3Ua3KTMU1FAG1nUKOXMSDLCge38LHwKn_PJSyyCbb_6w=s1200",
+   "what": "黒を基調にした店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7ae186570f/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SL9r7z-G-k724OM7BUcmz5pw23Fx4eBYUkYJNyxA8Yng7n6-6d5NVmohrpj6jZkonjEh5IPkDE4KExWmZyUCvtpHDT8Dpky4uGMRw2BiH1i0MUYCP90eGgU8SnvrMdkrjXMT7rPTDEXYOf=s1200",
+   "what": "看板と入口の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7ae186570f/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ra738pxxk1XOor1x_EfApzM_ME-Z9QwdXHBgfcADKD5nX1K_1qbwZfQJrZjDm2i-u53hlrLyiLa8Tl2EOtp0AqpiSxPm5YpKOXl5OdtMqSqb6Ep96XG8QOnUd3RmEhJvvm934=s1200",
+   "what": "鉄板のステーキ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

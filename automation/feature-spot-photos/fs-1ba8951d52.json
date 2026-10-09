@@ -1,0 +1,45 @@
+{
+ "featureId": "OceanHarvestCocomo",
+ "dir": "fs-1ba8951d52",
+ "storeName": "Ocean Harvest Cocomo",
+ "mapsUrl": "https://maps.google.com/?cid=2698268847674408334",
+ "placeUrl": "https://www.google.com/maps/place/Ocean+Harvest+Cocomo/@35.310355,139.5383262,17z/data=!3m1!4b1!4m6!3m5!1s0x60184583e1042bad:0x25722d388e22bd8e!8m2!3d35.310355!4d139.5383262!16s%2Fg%2F11qg1kwmch?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Ocean Harvest Cocomo",
+  "address": "〒248-0016 神奈川県鎌倉市長谷２丁目８−８ 鎌倉コートハウス ２F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-1ba8951d52/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLyEZytslHf86_Zj-YVirT3CCl9gX_QJI8aHMp465iAFfFGcOASrwOSornPyDWT2Cyf7yIJqmr03pW0Q-Nk1tChzHt3S0h_BGb52TQyy7LpxuzUipPEp4D3Cy8sopRSYYfr08JPQ",
+   "what": "牡蠣やピザなどの料理の盛り合わせ",
+   "width": 900,
+   "height": 507,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-1ba8951d52/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAUx0EAg7EokTUhDDYmlu3C_uJbgXIV1p1X8msF0oJ6nx9knLA9x_ttSplCLzK0dIToMsCs4K9q6i_FpV-pLT00TrJdo9pbBXddSBr61XkDlgZQmrAF2DNyu8v-KRavTFqyiSVRnkFs84",
+   "what": "カウンターとテーブルのある店内",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-1ba8951d52/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbC_vSq1r2AfQs2nhOZWPXnsONNpluW__Fmfx2SrKP5cVO5hA_qA8iYdaoUT_t0W5N5jfyjCUpWVoOS2NV4hKo4PphlRRgkOhXwI02Ew3BnS0e0o37jElApG29PUQMISImvzir01E78dvF",
+   "what": "店の入口と看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "炭焼き鳥一の屋",
+ "dir": "fs-ea43ac3197",
+ "storeName": "炭焼き鳥一の屋",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E7%84%BC%E3%81%8D%E9%B3%A5%E4%B8%80%E3%81%AE%E5%B1%8B%20%E7%99%BD%E7%9F%B3%E5%8C%BA%E5%8C%97%E9%83%B73%E6%9D%A112%E4%B8%81%E7%9B%AE",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%84%BC%E3%81%8D%E9%B3%A5%E4%B8%80%E3%81%AE%E5%B1%8B/@43.0499678,141.4379414,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b2ba8d1ea59e5:0xd32b632be5f409dd!8m2!3d43.0499678!4d141.4379414!16s%2Fg%2F11qr_0j1wv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭焼き鳥一の屋",
+  "address": "北海道札幌市白石区北郷３条１２丁目７−３０ サニープレイス２ １F",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ea43ac3197/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Szr39NsAsMhH1q4j7pxNjLOTuF3vKs5jhGSpCGglQn1FIJFmGf3kN7aIxZL4fAZrx6e91BqsS13g0IZeMl3GGzo0SJiwzC66-65quZkAMMGVsFXa7SdLQooMkG2QHaDF6hJmCQiU5wvNkr=s1200",
+   "what": "炭火の網で焼く串",
+   "width": 720,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ea43ac3197/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVELGMWzu84rp8OxV5LTpCIVrJPhZgdscBECkm2dzQg8wcHg2p98gvF1QIvT07S0Aun6JKogP1RPh7lyLOBqb72lTJEameVx5Va9GsE6SXEwMHlkBjZdPoaMkWr3A2ZrIK-Naa=s1200",
+   "what": "カウンター席のある店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ea43ac3197/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qmevkt0ncbhTJe2fSyGmaYwUHMy6JgflH0jBeK8gaQ-YZ_JYVINvAqa40fr_NIPFCOI8-iHwA0j2e5cnoFJg4sLBJhG9j9_Zg1YR30QA5fBvx4K11I80OBBt0zZ-bf5dE3QdPilDgENjo=s1200",
+   "what": "赤い提灯と看板の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

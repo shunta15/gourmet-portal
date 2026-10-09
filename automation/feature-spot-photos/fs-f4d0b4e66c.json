@@ -1,0 +1,45 @@
+{
+ "featureId": "きまっちゃん",
+ "dir": "fs-f4d0b4e66c",
+ "storeName": "きまっちゃん",
+ "mapsUrl": "https://maps.google.com/?cid=18380470221429540517",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8D%E3%81%BE%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93/@34.4879717,136.6483822,17z/data=!3m1!4b1!4m6!3m5!1s0x600444e12f0d503b:0xff148c4850f406a5!8m2!3d34.4879717!4d136.6483822!16s%2Fg%2F11b7hp9c0m?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "きまっちゃん",
+  "address": "三重県伊勢市上地町５０１９−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f4d0b4e66c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SESuFmK9jE5migg559ABUqNx1sCFX74IgEtYj_Q8KGW38fVbp2ysRe54-Pup3B-J_eOIpqnG516AKe2Hc9Tn6LiPWQK6027_uqQq8cFk6gCSeHNXOYzRQbr1a3u0RszrmT2aEKCQ=s1200",
+   "what": "たれ焼きのランチ定食",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f4d0b4e66c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RT8viVFg2q_DxngF2nzPuM7oth3sWXnJpYtsLb4i76Gk5GJ5KVM2SuX43NGoP9JlNqt9GtDwBmVU-Vdtj_qIzv6Bkv6A0JeK7SJqMITCWWeqYSLI8rPVclp2Cphat4R598LlQkSw=s1200",
+   "what": "座敷とカウンターの店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f4d0b4e66c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqPAe-qEUugYd_rupZfvPJr30rp6ZWPMPzZSzcNbYFn7ctlYY3L9UNoBA8NFG6bclzFNTw-0ZHsayxPq0DC7QOcoF3godl2esYk0Y88kUApIRxRGafzTxskoLVJU2Me5HdmA0elUZAv7he=s1200",
+   "what": "道沿いの店の看板",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

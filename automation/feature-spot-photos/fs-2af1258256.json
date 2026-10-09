@@ -1,0 +1,45 @@
+{
+ "featureId": "宝光亭",
+ "dir": "fs-2af1258256",
+ "storeName": "宝光亭",
+ "mapsUrl": "https://maps.google.com/?cid=15845890967907231488",
+ "placeUrl": "https://www.google.com/maps/place/%E5%AE%9D%E5%85%89%E4%BA%AD/@34.8163687,135.351291,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f5117c17fa25:0xdbe7e9e153ae6700!8m2!3d34.8163687!4d135.351291!16s%2Fg%2F11sgfq6z28?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "宝光亭",
+  "address": "〒665-0836 兵庫県宝塚市清荒神３丁目１５−１６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2af1258256/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOXljPItXQYxR-nih2ZJbvJg8QTgFQ4bH-QbvbinOebMEgUcf9MLobiLU2KYZrTTAWKi66EZsguP5xyMQi76HSmCKTkbbuebg28p-gIL5qgX9Bdp385ZQptDC4fsBBZX4iEipF_PA796s2=s1200",
+   "what": "そばと小鉢の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2af1258256/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1FZwe0-GTIhYqqv_LKRO3ML7YyJdFOc55WMdT60SQevmSwWErcGn-Cug5dtphYeuWTs5kGdAkyjuKijd6YRyjjYuQsyoV4IycSGb3kTHJPylBS1yanJZRCGh5DPDBA0v0rkem=s1200",
+   "what": "座敷とテーブルの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2af1258256/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tpsu-iTrOIA-Mc5eZFW9gCXNMNO59nPkHvQfKvtLJFe0n9C_vLUiTkoMVpKmrKdG2ZKfI6PGkfE5E2wDWe8MasYpvgzkuvB0rbux9nx_9Go281OOA9VKBUpKJLb3m4E0Byw_aDTan2Lf8=s1200",
+   "what": "参道沿いの店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,75 @@
+{
+ "featureId": "炭火家本舗なんばや",
+ "dir": "fs-31ceb9d487",
+ "storeName": "炭火家本舗 なんばや",
+ "mapsUrl": "https://maps.google.com/?cid=151205643870544531",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%81%AB%E5%AE%B6%E6%9C%AC%E8%88%97+%E3%81%AA%E3%82%93%E3%81%B0%E3%82%84/@33.2932004,130.5090925,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a50b144f725b:0x21930bb62f02293!8m2!3d33.2932004!4d130.5090925!16s%2Fg%2F12hrqfqry?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭火家本舗 なんばや",
+  "address": "〒830-0061 福岡県久留米市津福今町１８１−５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-31ceb9d487/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROmlcxNVXWzK04zKTpll5r3-Dw1Pw7-BzDbPwURknq0kXjqHpBz5rEl6c2R4y9bh4zqZA15qace9w3pwgX0xoXmyUoPLR_qgkCxXMBs5VvIehP_Kfh_X2uSTFxgyJiuJWhWqEG=s1200",
+   "what": "炭火で焼く肉",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-31ceb9d487/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtLuUyPYGBgLWx73NnVfQxd80bDEzpMcfgrcQmZhGIKXtZIHMO-D2ZJKSt9QEsk0oWVScK30DYV5OHckhrhO2Ykq0p9sxIgrWElFSJZNvecnU4y70GruIJcVLCF7__uCxhjh_5qKeXD2A=s1200",
+   "what": "焼肉の皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-31ceb9d487/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9St_O3oWnofsa8WCMSW9XN6xvUXtWDB-fFC0NyJXpVWk4DCxWXYFAPXkctcYlCXH0DNXiFIAN-Fc629zkfSpYP-D2LL6Dh9GPuY3N2ugcZScwRBJB5ZuC-SNIZxKXpMlfN6XsV7vw=s1200",
+   "what": "焼肉の皿(別の部位)",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-31ceb9d487/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWWohS5p_d9aKjJmXhrZk1TFVxyaz1m0LJb7MVNLhIiT8Q91UkfI-ik4t-YemURslBbmeN0U4aCffM4BJfR7c0eC_37YFuSFA6dj7v4xQL9zJp3PUrGcHL1xWIHcK4tZutwFZT=s1200",
+   "what": "カウンターとテーブルの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-31ceb9d487/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBq3vJWnrglMHNSaobd2g1NRnm99cNYf88wkypXjHHaCEehp86QY4rlKhD1W8OMT22cT428vL3rxG4Uq7AMEkxRAqQlC5NZD8MPKNObVnnunTfpuvS56c2vlklFWvWLnrZ2wJPXA=s1200",
+   "what": "店の看板と提灯",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-31ceb9d487/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RDCtyiBi__JlqO3ZSqUkocwvXhS2G5Ss3tXvoBmDK4t1-EXwI-4YFGvjlSpFwwIFT4GZZ_1nwxOyMV-gmjh92L5dvWORY05bgWuDNnup6lgtlOISoDFYHHY8Uni9eOesGC4a8=s1200",
+   "what": "夜の店の外観と看板",
+   "width": 1400,
+   "height": 787,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "ポイント3(ドリンク)に合う写真が無く、焼肉の皿の写真。ポイント5は看板の写真。heroは横長の外観(1200x675)。"
+}

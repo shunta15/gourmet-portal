@@ -1,0 +1,65 @@
+{
+ "featureId": "海カフェプルメリア",
+ "dir": "fs-a1ddf4e53d",
+ "storeName": "海カフェ プルメリア",
+ "mapsUrl": "https://maps.google.com/?cid=3358260157999695208",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B5%B7%E3%82%AB%E3%83%95%E3%82%A7+%E3%83%97%E3%83%AB%E3%83%A1%E3%83%AA%E3%82%A2/@34.7814687,137.0949068,17z/data=!3m1!4b1!4m6!3m5!1s0x6004eb29a99b26d5:0x2e9aefd224eb4568!8m2!3d34.7814687!4d137.0949068!16s%2Fg%2F12qfhfkx2?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "海カフェ プルメリア",
+  "address": "〒444-0513 愛知県西尾市吉良町宮崎中道下５２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-a1ddf4e53d/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMOfUJO1ZcJW_jeKau2Ql9qfg5i93ObU0Tg_AF3VJsrmZrwffm9VxeUMvNbHmDdGX2HyKyLfQwCMmxXFa10B-7PtrR92jquZv-Zjen1uDZbit0KoIJDABSUpkqIUcOjLAM35fPOhH3xWQ=s1200",
+   "what": "ハンバーグのプレート",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-a1ddf4e53d/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TztJIwv-hSRkhpKnEky39_ZPNUdcthP76elJmaL4FXsRMpFZf1QTNfEi--ZyDHU5LpcmD_pPHhcCYHo29wYxW3nuKU6nI1vNhhO9_4nfSGF6vz6gpoo_M3XRi4ojPnX6J9zc7bqQ=s1200",
+   "what": "雑貨の並ぶ店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a1ddf4e53d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RC3Ct3n5_vNAKF_oHD7kDfBg20aq3dSdTY7q57u_qEORqRHaQWIj6I0bAOgfYa_X_3GirOKSYGUaCrV6GZAhLRHdWbPNV_KtE5LIt5uPGdv0aRC6VNmUvDMm02E4uAniPoLKIo6AkmZYUp=s1200",
+   "what": "ダッチベイビー",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a1ddf4e53d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTs-Vn18Irx-izdxKpv7XfVbNIu4fz_Fc0IdeTzmyZknH0sIBJP1BVdpL8TR05t0Uu6jfJj8WPkeRHJ_27NOszoUCueqqecGsJFlI_JefudA696AAHJwrt_M7aIqDlwvUaFnf_BoDrb_U=s1200",
+   "what": "海を望むテラス席",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a1ddf4e53d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RN-GKi0ZDW1ISHUiDO9a1xAeng-xuEdzUavI87Wa0vYySYf-S1UfNVQ-sEAIzJsXJECUzQGbs7uCfDXY_mTr_Dngll7dWPQe8c5y-TzotlWkdn9NeUbPJ_L358mgw0GT_k7jWMFJaAhqz4=s1200",
+   "what": "ビーチ近くの店の外観",
+   "width": 900,
+   "height": 507,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

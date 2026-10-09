@@ -1,0 +1,45 @@
+{
+ "featureId": "旬菜美味南風亭",
+ "dir": "fs-9d3b754435",
+ "storeName": "旬菜美味 南風亭",
+ "mapsUrl": "https://maps.google.com/?cid=10334077192920779817",
+ "placeUrl": "https://www.google.com/maps/place/%E6%97%AC%E8%8F%9C%E7%BE%8E%E5%91%B3+%E5%8D%97%E9%A2%A8%E4%BA%AD/@37.723013,140.480579,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a847e88efa397:0x8f6a047465824c29!8m2!3d37.723013!4d140.480579!16s%2Fg%2F1tjjp5j_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "旬菜美味 南風亭",
+  "address": "福島県福島市南向台２丁目１０−６２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9d3b754435/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RglwLAvF5HJ3dtBa35cPQxu6W_Paocgep72CuGl3SnEgf7pRfXrD-tViexYmOjQlGOTJ49yQaRT1GN3_mEO-5yZoLtXduYkQhqxM-y7espYRYMrUnC9jQ6KxNTdBqcx4cCN2n7=s1200",
+   "what": "茶碗蒸しなどの御膳",
+   "width": 900,
+   "height": 598,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9d3b754435/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMQY5aavPkcP8S32tglQ3LwvNPAcF5WzdhrwCFP-whlQNa14Jit-be3GQknxJG9H3CvhJQgu5NRv4lDkLWNBCnGHg9cJz_zI138zAzfbmE5UvNt48aDR4FnFIBB3WBF5JGbeagcKVEDIw=s1200",
+   "what": "入口の看板と石の置物",
+   "width": 506,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9d3b754435/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TqIU4ZVCTc9_OE8O2g0xV5T8zv9MRoLi-8gGZQP-5iJUU6prawRolSG_V9ZUHFC3NGLUBelj4zmAljuFXu4xkGaXLTCea2_UV2CyajMncZQ_M59QsolYXveUTKSCeXbZu--neIb894Dz9-=s1200",
+   "what": "ウニの前菜",
+   "width": 813,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p3(店内・空間)とp5(営業)に合う店内の写真がなく、料理の写真で代用"
+}

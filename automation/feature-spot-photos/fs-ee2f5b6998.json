@@ -1,0 +1,45 @@
+{
+ "featureId": "シトラス",
+ "dir": "fs-ee2f5b6998",
+ "storeName": "シトラス",
+ "mapsUrl": "https://maps.google.com/?cid=6137917208110070908",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B7%E3%83%88%E3%83%A9%E3%82%B9/@33.3917333,130.7133689,17z/data=!3m1!4b1!4m6!3m5!1s0x354175e6ce395235:0x552e432e42287c7c!8m2!3d33.3917333!4d130.7133689!16s%2Fg%2F11hftcfx4m?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "シトラス",
+  "address": "〒838-1316 福岡県朝倉市大庭６６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ee2f5b6998/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHogztQergDlc2agCwjObPihtnPZSMWlJvmebap18iyJrKwt709qPl9UY5vzBjK-l-kmNpMkSNvI1fJPy-7dWeWTbHN5DtIK3EdZj0r7tjZfwvquncAB5TMhPqIBAucmnDf1ln4SA4Nb0Q=s1200",
+   "what": "前菜の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ee2f5b6998/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qwx8Um7yjs-iMKF4ss24NO_lsM3071y2X76jqmXLy8dAoUMT1bA6umriKx2_Ur1cq6RO-OQBbVsqzxE7UDwuRxznVGPgFVjhOGv1HjpVZUKeojmRz_A5EJ8Tzuft7736I-IbZLng=s1200",
+   "what": "古民家風の店内",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ee2f5b6998/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgX-m0HS8pb9bCO_5sAPdK8oytlZxxiEfAGiHvf_m1q0weoSaupHT5ES2UNXWMRKl3Ao944Vg5Chg9KS1_m93X_A6r5BhIRhcerR1ahFG9hGHc-xFsfRkaANXtspPjS00vuUzO=s1200",
+   "what": "木の扉の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

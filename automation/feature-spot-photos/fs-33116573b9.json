@@ -1,0 +1,55 @@
+{
+ "featureId": "さつま路",
+ "dir": "fs-33116573b9",
+ "storeName": "さつま路",
+ "mapsUrl": "https://maps.google.com/?cid=1158818419533734303",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF/@31.8919561,130.8258329,17z/data=!3m1!4b1!4m6!3m5!1s0x353f1b13cf09f131:0x1014f3367f7ce19f!8m2!3d31.8919561!4d130.8258329!16s%2Fg%2F1tf67tx4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "さつま路",
+  "address": "鹿児島県霧島市牧園町高千穂３８８５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-33116573b9/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QX2pkz15Ty4qerjEipuTXQ2E-O7-Iv-PdcOTwX8_4gPmn2D2bcsr2sKDQcq0zMx8id-BYdwL2-DQLUFGYyNtTBYOsvFhZp3v0-qf2hW_KuXVgShe2Bz33Q7W607gGdt1s_TtHS=s1200",
+   "what": "夜の店の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-33116573b9/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TFp2HPlejloYTvN-E0VWULKpjdo-o8utZW_tYwwvuKVRCIOjmaNWc7pINH2A4e3mNj-aB3uz9O6-MIk1eCWBF6qEiErnaErckGargkUjjoR10hrb_l7YLRPWn_BOjLH5BKa14=s1200",
+   "what": "座敷でいただく鍋の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-33116573b9/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdDnD1uUiHxOARt1tLQEJNxZyLWO7lUbnBQvDuBW_Fp5naoXthlc57gibWOWNcl2pObqo-EczfGZrvzk8y9TfKFXGLg5RWFRV7IHCJwUnHUX8I0zhI-VKN3428Fr5GHNx8qlFmszNxWS_P=s1200",
+   "what": "刺身とそばの定食",
+   "width": 900,
+   "height": 633,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-33116573b9/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T96VhSIyWdLT3a6ETpmB7baP7S7U173LDe97MMIfJh1Ra3TUGWwbey_9W_MEDwfy-KKnLEYedcWdzYWmETkf2wXPiLlaZpazEd99JJPytrhhGwMiEdNL0zfck1IbD6WunfAwvQPabPqVE1=s1200",
+   "what": "天丼の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、ポイント3 は座敷が背景に写る鍋の写真で代用。"
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "ぎゃらりー喫茶なよたけ",
+ "dir": "fs-537c533dc5",
+ "storeName": "ぎゃらりー喫茶 なよたけ",
+ "mapsUrl": "https://maps.google.com/?cid=17975694347350354823",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8E%E3%82%83%E3%82%89%E3%82%8A%E3%83%BC%E5%96%AB%E8%8C%B6+%E3%81%AA%E3%82%88%E3%81%9F%E3%81%91/@35.4429495,139.3664621,17z/data=!3m1!4b1!4m6!3m5!1s0x60185552bd0b0dd9:0xf9767ec504d0ab87!8m2!3d35.4429495!4d139.3664621!16s%2Fg%2F1tgnx5dz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ぎゃらりー喫茶 なよたけ",
+  "address": "〒243-0018 神奈川県厚木市中町１丁目６−１ 厚木セントラルハイツ ２Ｆ",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-537c533dc5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SC-GOXEv7hfz70bInjpy72qE4nhHi5SbJ5kRe7G7UlmFobmUs03LMovobYHqrfAxQMdOT2M8L5e4MpfsW4dIo5fvxnFQBvX6mzxUaeN4Eqy4wjbYkOuYDJ7bX8oJez41vvtAJzCTIHg9Yg=s1200",
+   "what": "ナポリタン",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-537c533dc5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RyJMJrLaTdh2UM-uIHqDHCwAKrhF48PMrM5VR8Y_RYH46fKTAgttXYDYC5O5aWYJlt2525c5jkryf0U2Nk3FqA1JOBUWa74DHC_wdD_twmFB2sAIjOfvo4mroOR5JqW-5W9RqL=s1200",
+   "what": "木のぬくもりのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-537c533dc5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWrKo6CyhH7Ncrcl8psw8MZrM-JmNrQprQ5RZrtjlfG-ykxFiJq8XN0z89I8umt27VqPuL5BQKQ_OasINSfvyaFrzuakstritysKUmkvArFNfNJZkZYHiQ-z32wN5jLjyrYvOB7qxnfJ4=s1200",
+   "what": "看板の出た1階の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

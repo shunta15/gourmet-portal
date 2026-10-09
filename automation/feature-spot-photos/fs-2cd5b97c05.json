@@ -1,0 +1,45 @@
+{
+ "featureId": "あづまラーメン",
+ "dir": "fs-2cd5b97c05",
+ "storeName": "あづまラーメン",
+ "mapsUrl": "https://maps.google.com/?cid=11176293893642314562",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%A5%E3%81%BE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/@32.82196,130.148971,17z/data=!3m1!4b1!4m6!3m5!1s0x35401009203aa4f3:0x9b1a2c14ebeae342!8m2!3d32.82196!4d130.148971!16s%2Fg%2F1wc45rwj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "あづまラーメン",
+  "address": "長崎県諫早市森山町杉谷１７９−３０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2cd5b97c05/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SttQDxhWQqsUXjSjx2ujA0-Jd4varKq9ZLLgv3fV9WL1q_eKSypJfoUBmvmkj3Lv5ILh_7F2n9FaSNZJRXMy-atY0sQDhIEpCV776sKxuLvYKzDBiFwiizran0m4uuIUWLpNSCiwZOgfdf=s1200",
+   "what": "ラーメンとおにぎりのセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2cd5b97c05/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S228LLY6faMQhjK_eQGiVggrMGqiFu1mEVpks_I5zIuxxIeKMtNK7VJluo9OdX4ZiGSXxbEPKYxld6Co1Slcnlj3pKcquBzd655YAk5suv9OG76tBuB8bKNsdU4h5vuzvKB25Mr2VsrodA=s1200",
+   "what": "カウンターの店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2cd5b97c05/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6MdJHwkdLM0tQea09FDAJAmRZnuBj8qguJtKDZvtYzOfBEv9AGu8EDzBcwb4kx3tVWKnu5m7PQlG00efvTmjBjjp4d6-6ZRcBVslYm7w2ES3PWZxV4UpDfxucxdJyecWCE349rv3f-qYN=s1200",
+   "what": "道路沿いの店の外観",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

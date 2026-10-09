@@ -1,0 +1,45 @@
+{
+ "featureId": "SUNABAR",
+ "dir": "fs-176affd735",
+ "storeName": "SUNABAR",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SUNABAR%20%E5%B0%8F%E5%80%89%E5%8D%97%E5%8C%BA%E6%97%A5%E3%81%AE%E5%87%BA%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/SUNABAR/@33.8394014,130.8758282,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c79855bb4f89:0x77506d239a99de30!8m2!3d33.8394014!4d130.8758282!16s%2Fg%2F11gnpxkzyw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "SUNABAR",
+  "address": "福岡県北九州市小倉南区日の出町１丁目６−５７",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-176affd735/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7DixRs3kDHNqQlPDzyBKUVV_IiTRGMSBv_cr2qv9rt8c919Usr-IyrTlEkn31G1AtAY4CjBRJXWbXoLpoKz9nzs4LtsqG_6nXXZV9loxgB5so5qgCxyvTP_hGzsRXS4d9Vw9KhXMbNjU=s1200",
+   "what": "カツ丼とざるそばのセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-176affd735/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TlGEzIJGhfwjP3VIBpHLNQwnAxBhHlgR26Gfsv4CP94ru9TdA-t0E2d3Z5-lKgAo8ABNnhVeUhxJJFwqSmbu9UaHd46sndu_2XAYzx24mRRC3KXbS8aE9ZFjemkPtdD8bxLm7bvtboaXw6=s1200",
+   "what": "カウンター席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-176affd735/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7JCRQY2uePK6BWmoABCd-nvV1kcR-wMlHSaXYJB3hQeJqRNwWa7rXkxWg-rqJ_HsBdo1uDonNcDYc6PfGvb6UFG5MddRmq0WirZjO0YAElEvkz81ysn3YfZBWsNsWbMj0vCFnlw=s1200",
+   "what": "のれんと看板の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

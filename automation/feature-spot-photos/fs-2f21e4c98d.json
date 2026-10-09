@@ -1,0 +1,45 @@
+{
+ "featureId": "ThePerch",
+ "dir": "fs-2f21e4c98d",
+ "storeName": "The Perch",
+ "mapsUrl": "https://maps.google.com/?cid=11578669398847562693",
+ "placeUrl": "https://www.google.com/maps/place/The+Perch/@35.2564157,136.8747107,17z/data=!3m1!4b1!4m6!3m5!1s0x60030deebc91042f:0xa0afb278c9fea3c5!8m2!3d35.2564157!4d136.8747107!16s%2Fg%2F11j1xk49r3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "The Perch",
+  "address": "〒481-0004 愛知県北名古屋市鹿田神明附 38番地 Equator 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-2f21e4c98d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRlDkfitPCuy623zRgJQ9EyEex0Yd1t_HoaL1FJoSpOQpsWU0m13cb7H87PT6mB5mw67fUl2Fdw3ZG0P1gXparVdzl7vZHixanhTCaKyGNDGwcGGlbksSsXIbCQkahSFVdImrd=s1200",
+   "what": "瓶に入った焼き菓子",
+   "width": 506,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-2f21e4c98d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QG83K8zXmqQKx-DbzEGKBqyUoABed6ngC3_t4ofaCcqWRMfx-TRQ_xypC4ReULFFIeBrtaqiiwD7wYDx1zflhuuxGHfwv5B6x_S3HQp0mSMk9hTMRbW8Xj6Kk8dTu_lIQCkzAF=s1200",
+   "what": "酒瓶が並ぶカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-2f21e4c98d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5sLT1u8rIajpM04PI1zZjoDFDgaeO4oUXn5j08dquthYYsyp1eHReiepcI0RI-h_F-NpNFLeMoXE3hUUC65iXQDo18_eBGuI0QC7YZtXqqRQb7lswoTHn4yqsZvTpTP78s4MDrA=s1200",
+   "what": "コンクリートの外壁と入口",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "缶ビールの銘柄ロゴが主役の写真は不使用"
+}

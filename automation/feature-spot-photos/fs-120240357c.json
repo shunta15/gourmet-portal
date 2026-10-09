@@ -1,0 +1,75 @@
+{
+ "featureId": "MOONCAFE",
+ "dir": "fs-120240357c",
+ "storeName": "MOON CAFE",
+ "mapsUrl": "https://maps.google.com/?cid=8926430673765917254",
+ "placeUrl": "https://www.google.com/maps/place/MOON+CAFE/@34.7836857,137.0979398,17z/data=!3m1!4b1!4m6!3m5!1s0x6004eb13b5b547a5:0x7be10d674df7e246!8m2!3d34.7836857!4d137.0979398!16s%2Fg%2F11kqf93nxr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "MOON CAFE",
+  "address": "〒444-0513 愛知県西尾市吉良町宮崎東部田１５ 1 Terrace",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-120240357c/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RF-ksmzET_Yj4xb-QQlTltKkToLV-jLWACZ9W0zWpuJ-yjXpqspRpzUHU_SoaBJTkemD9-_SFdAy63EGNonH05uiqAOxs7-LxGoCIb3DB_B83qASxvkmz_XJm9zGvWYgIDNjE8=s1200",
+   "what": "ヤシの木と海の眺め",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-120240357c/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_bH0jfqi4Hg8IFGosfs8bDVYbWRkub42204tuxOlOih4iDI276xNRCK6A-ONgcIimrU6N8BY69ZRUHNp8T-1bUF8NAilFsjIClI0lXcyu9gBWAEUv7kR6_n1DQbPLNw6cRKovqNZQitk=s1200",
+   "what": "コンテナハウスの店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-120240357c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLTCNF4zW5KTxVsTkCZlg1Sh0R3tWgJjV1NKA0DOZnybE709HM9oRWQp8L8gf1hWFL8v09vOZDxA-98nbNR8xH-QR7Wsw5yc6j884I73hDdYOm42dI0h8tt_GtQm4t1N7hr0gv=s1200",
+   "what": "ワッフルプレート",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-120240357c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpxlQ6Oh0tFtjPoQvJeO8uYtH-zvF-_6qs6uz-gbhPmxnX0xWJ2AWfiHw1BacRnv7WdB-4yRu_SNxGOTvprJHL9SucBb6EYYTYQEXLNmeKKgDeFowD7WjnStF_T6R6M2pP4UADTzmLQfGM=s1200",
+   "what": "白い柱のテラス席",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-120240357c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTU7-RxYOoT__5Jure466P5laFxXWE9mHTwar3WxI9oG08zcX-4-JsYxrlZU82cSBCUr5O2e5GBJkjHMSepqMFVnNhax1UQx49TpiyN0qpCFxXROL9JqsSmdSaqJLA_wYfRnun73NhPq0e=s1200",
+   "what": "テラスから見るビーチとテント",
+   "width": 900,
+   "height": 755,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-120240357c/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwdHdIIoeUAAr1apGvCmAEobheedeZkC1qYr14b3nCFbQ9G8FQ8mTo-B4rxPWTmHimJEZ9x5Vf_Z_rytkggCyb0oKD8XT1ImJealA366oUeiyRq9b9VWat2Zx5hdyuuJshkvDS0A=s1600",
+   "what": "ビーチを望むテラスの料理",
+   "width": 1400,
+   "height": 1050,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

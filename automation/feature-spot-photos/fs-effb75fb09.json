@@ -1,0 +1,65 @@
+{
+ "featureId": "二福亭",
+ "dir": "fs-effb75fb09",
+ "storeName": "二福亭",
+ "mapsUrl": "https://maps.google.com/?cid=12191075647532761460",
+ "placeUrl": "https://www.google.com/maps/place/%E4%BA%8C%E7%A6%8F%E4%BA%AD/@35.3835804,136.2754237,17z/data=!3m1!4b1!4m6!3m5!1s0x6002293ab04e7a83:0xa92f66b5d91b0174!8m2!3d35.3835804!4d136.2754237!16s%2Fg%2F1tf319l4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "二福亭",
+  "address": "〒526-0053 滋賀県長浜市宮前町１５−６",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-effb75fb09/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RjQmU3hdDGtuy5VQh2WN7Nfp1-1E8ynHTy3j222ZLjKxfwSKrb6ee68sJ05m7hMK_fup21JcQ-xKMY2QZu84XMGNlK1_hPAH--PHAyn9Cr47rvyGpfzG6tdhEDovhB-FFNUjE9XwAuE2wN=s1200",
+   "what": "うどんと天ぷら",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-effb75fb09/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScZ_cm7I3_F5_etArcH7s1rshB_-aiGThvemrAJX_NYQIujqlEaQ7f-wzfz6sniM6Z32pDAutPwbJg1jSE5rWBXK7t17BBQ3srdDvBstV0wITuSlnovEXqQlsTr8meSTIcUGw61Q=s1200",
+   "what": "ソースカツ丼のセット",
+   "width": 900,
+   "height": 618,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-effb75fb09/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rr3BmunCSuCqxWnOEUJfYBgzpPDkytVf-pWzAjlaSAuAEYWvtd3i11EziynMCWEM8kgpGqNb85BUFeqBohaw_FXtHwlcNB-jbzmfh1XY6_Nuj31JcKD0xGc5Hsrmx52y1D3oMNudk_tTbp=s1200",
+   "what": "肉の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-effb75fb09/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzqTi-vRMEJhHu1CjzBSTpo_Rj7F49KL8NXWK4flZW9s2_r7Wm5QYaZQzAw_N73vq5LBWw5Ef1ME2G1wiYvfu5QgllC-hhqSd5z4OfnoGAdZZmeI9IBrUVcEcwzGlgckXEqRQZtQ=s1200",
+   "what": "座席の並ぶ店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-effb75fb09/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1g8L-YiAmKoFTsr72Wh3QkktMW9coChjcSLYP_mfwxK2OYp6k6d10cz0HwQ4CeiJlnK0CCbVRmqIczvhL0z1mwEtLxRJyBVbv7oeLe-s9PAmj1dhXY5l-q4Tq53FTzJcDXCG0h-VdnSVs=s1200",
+   "what": "二福亭の看板",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

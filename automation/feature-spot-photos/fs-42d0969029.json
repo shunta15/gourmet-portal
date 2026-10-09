@@ -1,0 +1,45 @@
+{
+ "featureId": "ありがとう",
+ "dir": "fs-42d0969029",
+ "storeName": "居酒屋 ありがとう 藤沢",
+ "mapsUrl": "https://maps.google.com/?cid=13466376725522685470",
+ "placeUrl": "https://www.google.com/maps/place/%E5%B1%85%E9%85%92%E5%B1%8B+%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86+%E8%97%A4%E6%B2%A2/@35.3383778,139.4888917,17z/data=!3m1!4b1!4m6!3m5!1s0x60184fcb1a1ca6ad:0xbae22e48b05e1e1e!8m2!3d35.3383778!4d139.4888917!16s%2Fg%2F1tfd2c4r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "居酒屋 ありがとう 藤沢",
+  "address": "〒251-0055 神奈川県藤沢市南藤沢２−１−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-42d0969029/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXCbaX5QKrzhim8RStKnXt8Hrm-2PbK47gr2-us0bedBa0anno0vC9UN5eXOtZOhq2hEUUtPhyXZi80Gxaq4L7udtF0fVHSZK4uNtHHFLzftoUrmp5ojlideTxLaWhghtPYGWULdZjJf3k=s1200",
+   "what": "刺身定食",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-42d0969029/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rn4ByXL0OGkMRByt9TrJLv25y1ivBj0z7RjaodM77jKZuYIistthrUTGhVwixn1ktjmBVWXm8eMjDCZEKh3JeVhSVmlz9OUiymwzRzoMv9fs8gJ3jmKfTazQLf0H85x7j54KA=s1200",
+   "what": "座敷席が並ぶ店内",
+   "width": 900,
+   "height": 678,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-42d0969029/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMEVaTvFz1QSXk9nPxbE8-LapNWoUy52ut2vj10bO9YdNBKKBBeiTT6YRJi2I-RZV29H1xc57hsQ-Et4PdQUQjuMh0QWWHe0G3b7ZEh_j-BVKVkQGVY6mwlfU8307r9JpJQmh4Fne0GGgx=s1200",
+   "what": "看板の出た店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "ポイント5の入口の写真は、飲料メーカーの看板が写り込んでいる(店の看板も写る)。"
+}

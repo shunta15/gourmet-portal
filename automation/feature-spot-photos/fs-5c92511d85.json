@@ -1,0 +1,45 @@
+{
+ "featureId": "そば処美やじま",
+ "dir": "fs-5c92511d85",
+ "storeName": "そば処美やじま",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%9D%E3%81%B0%E5%87%A6%E7%BE%8E%E3%82%84%E3%81%98%E3%81%BE%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82%E5%A4%96%E7%A5%9E2211-17%20%2F%20%E9%A7%90%E8%BB%8A%E5%A0%B420%E5%8F%B0%E3%83%BB%E5%A4%A7%E5%9E%8B%E3%83%90%E3%82%B9%E5%8F%AF",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%9D%E3%81%B0%E5%87%A6+%E7%BE%8E%E3%82%84%E3%81%98%E3%81%BE/@35.2602735,138.6153482,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd0e65c63a775:0x7e31031b07bc9a36!8m2!3d35.2602735!4d138.6153482!16s%2Fg%2F1v6p4c3_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "そば処 美やじま",
+  "address": "静岡県富士宮市外神２２１１−１７",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5c92511d85/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQMmBVb8CK51V5CEk7oo2zif_XH70vTPdwligK2jgEUwlXdOCc8KNoXucrjJRnuWLqvU6J7QJqepW1691I5gteZgwuxTIn1T4p_3rtpbe19HzBb0o9hvrUKTUvACar-4F3PViAJC7vU9h2=s1200",
+   "what": "定食のお膳",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5c92511d85/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TstHw1C_XC6ZZ48sUSrXSrwXpiRTcTNvC9jFnNxSPBYd9mSwZXK_2yITFAeiedH5soAKT6ZiuyBW2zQpV92KW_MC8lV4Bx9o9okuoKsGdgqMl7ptUqObJHB9QyNzjd-uB1a-8g5Q=s1200",
+   "what": "座敷とテーブル席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5c92511d85/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RASVERkjItrFfQGPccCsfIOJ3QwaSq589HxkEEwtEIHzuD9_748VyJGBiC0b5DG3Wi2gKNq3vfMcohPSmxiGB19_tsSkkf1zeJrn0vw3jmdktNGjitwxG-so-twAAG1Jv2nWt-SMn0-5RE=s1200",
+   "what": "黒いテーブルの並ぶ店内",
+   "width": 674,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "検索URLで単一の店ページに着き、店名(空白をそろえて)完全一致、住所は富士宮市外神2211-17で一致。ポイント5用の外観写真は無く、店内の写真で代用。"
+}

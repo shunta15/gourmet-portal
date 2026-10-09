@@ -1,0 +1,45 @@
+{
+ "featureId": "ラーメンさつま路",
+ "dir": "fs-c98d32cc45",
+ "storeName": "ラーメンさつま路",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF%20%E3%81%95%E3%81%A4%E3%81%BE%E7%94%BA%E8%A5%BF%E6%96%B0%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%95%E3%81%A4%E3%81%BE%E8%B7%AF/@31.906831,130.447807,17z/data=!3m1!4b1!4m6!3m5!1s0x353e4d0deb2ad39d:0xbe04eb07f93b3d5c!8m2!3d31.906831!4d130.447807!16s%2Fg%2F1tj28s00?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ラーメンさつま路",
+  "address": "鹿児島県薩摩郡さつま町西新町７−９",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c98d32cc45/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKDN_LiKwl3VkYNMyEaaMnl3fwMm-dcVW1lP7qQvEe5k4zwOFpigPEm0jQKc-9-_GORSNHpabHQ2YmRRZexoKA86i9TJCJbPZITpCkV5hrqz5vqmFqLsqrAztrDaslbQ=s1200",
+   "what": "赤い看板のラーメン店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c98d32cc45/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQyp-MJ4gpspo0dDzB-qnYJ5arb-hdbGXK3B7eQYuUqYblJvwEz2H7REYpXYQ9qrY8qvwStLAJxbOEXXhb2Jr-9vgBKteVPv8ut04kzwT60m4477VjgJVTt7FEpLzGumBDwRCRyg=s1200",
+   "what": "ラーメンとチャーハン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c98d32cc45/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNhn9iw2ZcBxXrd9VkAPRnf66EGXNrPY03bbB_66MFTLY81gnOGbBKOP_waugcu1CrYQaeNJhP8LMfDF64GXNXXP8_9iAJVXapIbRC7U0SZMeDKWwbiyCfF5rT94m8UJm1j3XK=s1200",
+   "what": "ラーメンと餃子のセット",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内・外観の写真が足りず、スロット4と5は料理の写真"
+}

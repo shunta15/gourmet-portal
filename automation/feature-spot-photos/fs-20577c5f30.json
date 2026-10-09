@@ -1,0 +1,65 @@
+{
+ "featureId": "まるこう",
+ "dir": "fs-20577c5f30",
+ "storeName": "まるこう",
+ "mapsUrl": "https://maps.google.com/?cid=18001461865832663956",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BE%E3%82%8B%E3%81%93%E3%81%86/@36.14291,139.384067,17z/data=!3m1!4b1!4m6!3m5!1s0x601f29c7c12e235f:0xf9d20a30eeb24b94!8m2!3d36.14291!4d139.384067!16s%2Fg%2F1tgzbfzm?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "まるこう",
+  "address": "〒360-0043 埼玉県熊谷市星川１丁目８１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-20577c5f30/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBlUqhh7RzPbeRzBoWop8MMJ6dxG9IrmEHk3RXdA-vNPI8xkuFXvMswweT9WneyKG4chSSK10sZ138-EHFFWME2NxBg5Dle76FYiJvE9qVBO6pNV1RQ4ejmny7CMsHrk_AXC8pyvdtXcCb=s1200",
+   "what": "黄色いカレーの皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-20577c5f30/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHbO9V3Rtr95uRCEcg4wMsyq5PxpaeVKYegQl1MsrnR2cGpXBcyalQkw2feFgrHo6ondC5radi8orrxb6rVjF1rEMx5CAr2tABBD_TsQpeyrTBlzLX9ygUaV0LRcqNYatg3tuROo1zPqBI=s1200",
+   "what": "座敷のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-20577c5f30/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rn0UJkcf8HhXPmMXrbjczYDnFlzd8nxX5siRq8MQr4Yg-keGsUimoILJQbMurhvmXIhQ49yKyX3t_spG67IWafx4CoFIsen7gOupAYH_4CbZJrxgFYziOLz9g8LqCICOyDMUAaYQ=s1200",
+   "what": "ラーメン",
+   "width": 506,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-20577c5f30/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZxXLs8AguMXvfba6Iacg9i_-9QOZB2lkB0mi4SMg5vasDBJlz79Q_RVgHcKvve9jR_9LeldlmHfEn77quQbTJGGnduO6zpLaDlsYXeDlhGBiFDBje5S--gK6VGYrUcsY61IQqDA=s1200",
+   "what": "テーブル席の広い店内",
+   "width": 900,
+   "height": 673,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-20577c5f30/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZ7tNDKPlTANXZVnOH5W8jgs-Bd7iW1ahXRSOreSQ7XI1KT_19kTPygEyKKjUxnnO4Q3ni2U5z5a6q3RVolP_NYq6kU-_DvVtmGEEPDtmOS7ARstbdKjOVvirudQdcM0cDVQXin4xO29EZ=s1200",
+   "what": "商店街側の店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

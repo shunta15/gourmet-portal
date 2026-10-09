@@ -1,0 +1,45 @@
+{
+ "featureId": "日本料理吉晶(きっしょう)",
+ "dir": "fs-b60505e280",
+ "storeName": "日本料理吉晶(きっしょう)",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86%E5%90%89%E6%99%B6(%E3%81%8D%E3%81%A3%E3%81%97%E3%82%87%E3%81%86)%20%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85",
+ "placeUrl": "https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86+%E5%90%89%E6%99%B6(%E3%81%8D%E3%81%A3%E3%81%97%E3%82%87%E3%81%86)/@34.6638847,133.9315129,17z/data=!3m1!4b1!4m6!3m5!1s0x3554063a039ed00b:0x72a7357a114ad2e8!8m2!3d34.6638847!4d133.9315129!16s%2Fg%2F11bwncklsf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "日本料理 吉晶(きっしょう)",
+  "address": "〒700-0823 岡山県岡山市北区丸の内１丁目４−１２−２",
+  "how": "search"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b60505e280/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkrErYYE0lqm_NbCLWSxtSmLWZN-Njn2XvEgkTVtaVMym-c_OmThqB-8fvyWDi9twO6m3KmAe98T4L6NrI6KlPwhLleUHBI_Ghit8DDGpCE00S2XGwUHpCvNn1G8qCz5JDo0rq=s1200",
+   "what": "ちらし寿司のお重",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b60505e280/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QO5--O8kbMUW-czJW8ZH3VLpWDCC97MZu9_R8xxMugQykVNOPYHHP0KcAYAb5Rru5HgxlILQ8ERCRfHYvFVUvkvgAT0RP5Y7BfMxxLlaFJfQ3Le4gAMZo5MkJekUY_x6gFHgx4=s1200",
+   "what": "漆の器の椀物",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b60505e280/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tz_QGgdQtq5aXXsaQsrpyMP-xRE_KMN123Pe3RT2ihyOl67jjYP3xfnmE3gIV-a_37taacOEce-HAlVq66cDHWATIuinEA45VW0HWsTUBzVe_rN7pOMmwcNd7f20f3d927ows=s1200",
+   "what": "店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、ポイント4は椀物の写真。"
+}

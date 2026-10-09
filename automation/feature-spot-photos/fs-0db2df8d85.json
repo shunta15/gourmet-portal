@@ -1,0 +1,45 @@
+{
+ "featureId": "毘沙門寿司",
+ "dir": "fs-0db2df8d85",
+ "storeName": "毘沙門寿司",
+ "mapsUrl": "https://maps.google.com/?cid=16693527827604308715",
+ "placeUrl": "https://www.google.com/maps/place/%E6%AF%98%E6%B2%99%E9%96%80%E5%AF%BF%E5%8F%B8/@36.01778,136.27538,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff8bc999851ca45:0xe7ab531cf47402eb!8m2!3d36.01778!4d136.27538!16s%2Fg%2F1tgg9t_m?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "毘沙門寿司",
+  "address": "〒910-2144 福井県福井市上毘沙門町１−４６−４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0db2df8d85/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpgLJ4upZkLIr_jLNufz5N7vObxEGtuIAmjuy-FtCoCWw8h9tqF067Esrywzyo9MiEMLaJHbiRnzTBw967YBsNE6dR-iltUVkE9MnLftoBPOVwntdNlw5wBy3V1rbzAc9bkh_j7K0XHz8",
+   "what": "ランチの定食",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0db2df8d85/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwH3vEEjTXJVMKpnXNcEE5axGreNj9-dqGxXhx_grHd5bMwtHEmVdU2_fZ_-VNaI6pxD32Mh0ShfSqZdu0vHusQcGWzjTyrl6R5Hw0OGVF00QfLWc_59lNM2YKQKy8v29AAGVkju1EVLgT",
+   "what": "寿司のカウンターのある店内",
+   "width": 900,
+   "height": 415,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0db2df8d85/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5kkX-mBRZpmXIrjjeBnedER2wuspecnZddPkcl6wQGQzsapHQQ2I7RnpS1hOOVbIOD5nNjd6UROOEOHZcqO-Txg62eUbM-KxmLlNJxpV4xMf2nmGJ8DBJll9-xUmJgx6t0d57GWFM7iE",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店の確かめ: 記録の area は福井市東郷だが、address(福井市上毘沙門町1-46-4)が Google マップの住所と一致。"
+}

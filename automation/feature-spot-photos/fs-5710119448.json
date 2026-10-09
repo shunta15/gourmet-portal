@@ -1,0 +1,45 @@
+{
+ "featureId": "麺家本倉",
+ "dir": "fs-5710119448",
+ "storeName": "麺家本倉",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%AE%B6%E6%9C%AC%E5%80%89%20%E5%A7%AB%E8%B7%AF%E5%B8%82%E7%A0%A5%E5%A0%80",
+ "placeUrl": "https://www.google.com/maps/place/%E9%BA%BA%E5%AE%B6%E6%9C%AC%E5%80%89/@34.8637705,134.7221599,17z/data=!3m1!4b1!4m6!3m5!1s0x3555212d83362c9d:0x85428583438a0ce0!8m2!3d34.8637705!4d134.7221599!16s%2Fg%2F11rnjxkdrk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "麺家本倉",
+  "address": "兵庫県姫路市砥堀２３６−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-5710119448/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TEwYDgwo6fzUd6tkGKyD5T_x7hUFYyc6qX1mPAxtdj_DbuSX3o0btmkCtlR1RfyiOlqqEm_3b3GClkFfpzooHH9NEeSaDgI08fAV6MeP6EivK9sbTf15_9w1NxC8g5HManx4E=s1200",
+   "what": "透き通ったスープのラーメン",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-5710119448/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StMlxztbo0r_P0nlmE9pTo4P1FTOnCto3k9v5C-UsvTGRopf5tCeFtMjjtg1UDgeFnVZYcREe0J5RFgcxTrEdTgHVNB-QV1bgfk3p4IvQQcqcbVbK55EGpZGtH2Mzo3R0NcSlRo70J3mu7=s1200",
+   "what": "卓上の調味料とラーメン",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-5710119448/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TFMuARi42d5EeV6sNYGapske1z2d1EmMl9zfXOeBiQmSKn1MyYmJK0CKJh2zwi34IGoqJjmbQ-kGzfHZz50zglK8Ub2raZDz3FOAvSQ_b9PzeVFKcwQrRRVDYYKCJwYkDcG6Fy=s1200",
+   "what": "駐車場のある外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の料理写真で代用"
+}

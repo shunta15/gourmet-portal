@@ -1,0 +1,45 @@
+{
+ "featureId": "鎌倉由比ヶ浜蕎麦slove",
+ "dir": "fs-ce75019102",
+ "storeName": "鎌倉由比ヶ浜 蕎麦 slove",
+ "mapsUrl": "https://maps.google.com/?cid=10999845123350692612",
+ "placeUrl": "https://www.google.com/maps/place/%E9%8E%8C%E5%80%89%E7%94%B1%E6%AF%94%E3%83%B6%E6%B5%9C+%E8%95%8E%E9%BA%A6+slove/@35.313893,139.5436986,17z/data=!3m1!4b1!4m6!3m5!1s0x601845d9702c652f:0x98a74cdc29a18304!8m2!3d35.313893!4d139.5436986!16s%2Fg%2F11qzcbjxqc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "鎌倉由比ヶ浜 蕎麦 slove",
+  "address": "〒248-0014 神奈川県鎌倉市由比ガ浜３丁目９−４７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ce75019102/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpBmCto95yR3N3jbl28YR71gfPYCDxBxeKXpX0M2LBRGLPFpvNsLW5Kxj_EIco_ker2_2ZyXl-jrMGNZTS6Z2_YpztMjKeXS2Wq2-PeRUMw7pWlDjU5FlmZo4K84izEVlVO_94uF9Sig=s1200",
+   "what": "せいろそば",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ce75019102/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TqElNOWQ2ZvqcKxRrqA_9Nfav9dWvwfxsTuWIcG-xFvRYM6IaN1TxWL-_vDvifif4RiUGfL_hWhKrTxeP95ePndSpiTygveXSeAFmNBM88kGGyWr_esvUEiARflvrnoIy40VJEm8k990D_=s1200",
+   "what": "木のテーブルが並ぶ店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ce75019102/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfyGrcYilDgO7WoEN5XvTeSwyXdN_oE2nOmL0sowezsdN5UIrjyXUVb_8auNSyC9eR9fM-paYXeFRgd80UZAuPlGqDs2xD6bNjyQatfy0U8tMi6vbkCiss4dC5DLFkTW-9ZlK_K3DD9N8=s1200",
+   "what": "夕暮れの店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

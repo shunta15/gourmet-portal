@@ -1,0 +1,55 @@
+{
+ "featureId": "山麓園",
+ "dir": "fs-64d24415bd",
+ "storeName": "山麓園",
+ "mapsUrl": "https://maps.google.com/?cid=7056051065977204421",
+ "placeUrl": "https://www.google.com/maps/place/%E5%B1%B1%E9%BA%93%E5%9C%92/@34.8166153,137.1702158,17z/data=!3m1!4b1!4m6!3m5!1s0x6004c07952d65f07:0x61ec210f58966ec5!8m2!3d34.8166153!4d137.1702158!16s%2Fg%2F1thxqll5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "山麓園",
+  "address": "〒443-0102 愛知県蒲郡市金平町上ノ坊２０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-64d24415bd/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5xm7to7-jHSKa7i3yXiBFryah2CqKeCP6qzJ5H4hW7dj2j6GQs3pGDNjo4TLhTR-GalepUhEL8AJjFEoFHr66pez2hKTFuIAbmiWx4CHwBVH_tkoMXCgT5HVxnACt0cson9aYIg=s1200",
+   "what": "ガラス戸の入口と室内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-64d24415bd/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6bylnRi8WZ2QN0TIpWSJYRT4OLHnu6P1dYaPk9XOOo1R0UO5KiPNyy5Np0LIOmFHVyXRnXShy-5-dGCnOAtbQ3p1nCkOU8Ag-b-63fxxtd8Lu_7xpI5P1i4lp8dYCrrXiIze1llDq4TY=s1200",
+   "what": "ジンギスカンの鉄板",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-64d24415bd/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R8ZW4eZ088yRgFIa1z3TFURmKKd1MrmUGqPoSYomQ9yvNnuZNxDAiM0TMtWhteOqBnF7fv05W2nrjTANKGgmkbLAnuGeJnSM5384tYN7GWV3GGs3XlCev0f6H_mgL-qsIK0ArxPIXFJSc=s1200",
+   "what": "木造の建物と室内",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-64d24415bd/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAUyp9PcILvwKEnliy_jzTQ0xNENf-eomFauP9YpPp7X743hBFa0bpJ2FNbRmppWKzsPaV_5w1XIwfeVCmrj_8_jBK1AIOurbAxXo5LNFdAWp3ftnxNG0GdPTecm0l4lZewB28=s1200",
+   "what": "山道の入口の看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内全体の写真が無く、slot2・4は入口と建物の写真で代用"
+}

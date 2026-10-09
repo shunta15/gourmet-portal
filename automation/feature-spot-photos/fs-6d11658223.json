@@ -1,0 +1,45 @@
+{
+ "featureId": "牛久春木屋",
+ "dir": "fs-6d11658223",
+ "storeName": "牛久春木屋",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E4%B9%85%E6%98%A5%E6%9C%A8%E5%B1%8B%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E7%89%9B%E4%B9%85283-1",
+ "placeUrl": "https://www.google.com/maps/place/%E7%89%9B%E4%B9%85%E6%98%A5%E6%9C%A8%E5%B1%8B/@35.3983714,140.137728,17z/data=!3m1!4b1!4m6!3m5!1s0x6022a3839d72b863:0x1922e3d0188c191a!8m2!3d35.3983714!4d140.137728!16s%2Fg%2F1tql4x7c?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "牛久春木屋",
+  "address": "千葉県市原市牛久２８３−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6d11658223/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyOdEGA0rdebH2SvrwDzFZHcjVohT4ikIUrgNCnlnjYd0x0AMbX2ucggLRs60sk20I6Ob_YbnYS4hCBr67qZAuklsK62ABFtSOTP5A4Fksyr-qk4WG3gmgItBNUa08sRuPHShoNgpGz_Gw=s1200",
+   "what": "窓際のテーブル席の店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6d11658223/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TItTZMUEvx9zzl4FFhPM72D5lwumPaTjJvMpcWkVg2NvxmxC9Uc1YaVMAET_uutPvFLE77KHlGRgWSOD9Nm6yVhvq0CZJWkMvkwR5FZgI5e3Ze8f8fEt3nrpHNru8sTEXQ5g9ufg=s1200",
+   "what": "天ぷらの載った麺の膳",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6d11658223/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGmtxsaBpbYaCHl6mQ-JNJep2gZ7yY-NV2mxPhiM8ro8Q3vODzPdri80RdNqv2Pvvn351_BfN9lr5TqiWnM92q4EEPdFDMNDwDvP-AqfPpLSupCO9-MUHSoWiqtjsiDa4aq5t8askomAv8=s1200",
+   "what": "のれんと黒板の店先",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

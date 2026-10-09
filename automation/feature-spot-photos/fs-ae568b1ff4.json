@@ -1,0 +1,45 @@
+{
+ "featureId": "大和",
+ "dir": "fs-ae568b1ff4",
+ "storeName": "大和",
+ "mapsUrl": "https://maps.google.com/?cid=9127882240578700070",
+ "placeUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%92%8C/@34.9410394,137.154118,17z/data=!3m1!4b1!4m6!3m5!1s0x6004bd4039a61ebb:0x7eacc089454a4326!8m2!3d34.9410394!4d137.154118!16s%2Fg%2F1tgf34y6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "大和",
+  "address": "〒444-0846 愛知県岡崎市六名新町２−２５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ae568b1ff4/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3UDPQI9J2t4twOugcIZX3R-wTpnM2QT28UhH41-fhitBtpcoQGMEwKRmTp5rpjKw5ejG749IUkZ0BIgV1MhqWwBRWR_HOFK-_EP-EIw7o7Ld_NUfvcet3kF33bnt2_7ZRf2ZF1lWL0olm=s1200",
+   "what": "海老の天ぷら",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ae568b1ff4/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKq6Vjv6Yrjsdj_qI5J98s0vSZr-NBFfAWOFy8cLIIYdctl1uFrvllgvEwiUIVU8QRd-BRqB0iiaryy_IPwkr7i_RMxQu3R004Koe6cEXVPaltggNDqA9EGDWGdORWn7TTtzd9=s1200",
+   "what": "座敷に並んだお膳",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ae568b1ff4/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QH5DEpLxIoUInvtbdRNwic1BocTuFdub1rwCguRikFUmQolqlh2_9qU2_S8TOfTtWwqQCpebFbWckAIH5gRxINePgMH1XCgQByh_c5G8LFDmnDWaipG_qASddaJugpzgS9HMPyRowgCqM=s1200",
+   "what": "暖簾のかかる店の外観",
+   "width": 506,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

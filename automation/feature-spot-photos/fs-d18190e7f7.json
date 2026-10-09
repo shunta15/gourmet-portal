@@ -1,0 +1,45 @@
+{
+ "featureId": "炭火鰻のこうせい",
+ "dir": "fs-d18190e7f7",
+ "storeName": "炭火鰻のこうせい",
+ "mapsUrl": "https://maps.google.com/?cid=10363520737150006424",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%AD%E7%81%AB%E9%B0%BB%E3%81%AE%E3%81%93%E3%81%86%E3%81%9B%E3%81%84/@34.9972246,136.6331436,17z/data=!3m1!4b1!4m6!3m5!1s0x60038f42a7df5aef:0x8fd29f33c0387498!8m2!3d34.9972246!4d136.6331436!16s%2Fg%2F11yyj07yyc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炭火鰻のこうせい",
+  "address": "三重県四日市市別名６丁目４−９",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d18190e7f7/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RU9qNrz-MXPiNiSpWml8axoziNh4yKTSJIXSCFc1HBZRjWP5S6QvBVC0KTwQk59DhvJqPMLoBaHEJ1UxyEtDstJfiTKUheb66HNEhbN_wr86KmNRFd7WqLyo6NLM-T83Qi-Ci7v1bZLqk=s1200",
+   "what": "うな重の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d18190e7f7/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q6TcnrrX4C5WShrl6wiAJikjSsoeXVAqMJboTDUILku56uYAOdn_mUQOqnxfLfPU9glk0lvVxILkxqi2PF--6EJgvtsf5K7cKTKovmuGofmIN4fHD6IfmrfLri286dYgXCiRY_-_Sc0KcK=s1200",
+   "what": "黒い看板のある店の壁面",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d18190e7f7/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIvrp-kzP-xpteLryIf4zYdfU-yszTHqeP4nt98-1Bt9QyveYZFdBNbGokjQUoDhpkiizJc1Mqje3EqL8Auf8CnqJB4dqOGT_YzvsvzR6dxjPRS0Uv7RdWW2dL8hQBSXX54KgoZc-ZE8In=s1200",
+   "what": "入口のある店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p3(店内・空間)に合う店内の写真がなく、料理の写真で代用"
+}

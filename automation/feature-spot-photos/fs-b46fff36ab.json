@@ -1,0 +1,55 @@
+{
+ "featureId": "凜喜桜変",
+ "dir": "fs-b46fff36ab",
+ "storeName": "凜喜桜変",
+ "mapsUrl": "https://maps.google.com/?cid=14678761877342629048",
+ "placeUrl": "https://www.google.com/maps/place/%E5%87%9C%E5%96%9C%E6%A1%9C%E5%A4%89/@34.7166214,137.851166,17z/data=!3m1!4b1!4m6!3m5!1s0x601ae43281709fe5:0xcbb57027f18dacb8!8m2!3d34.7166214!4d137.851166!16s%2Fg%2F1tk8nns4?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "凜喜桜変",
+  "address": "静岡県磐田市国府台９−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-b46fff36ab/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGOOy4L_EteDkegsIhBqOBuSjetNSEglXNpgwYthkYxKA0rBY18zYrpNpW66sF3pMJolIR1UNYxlcRG0afygS39_pc5o8SNOZbBqFe6VVJG2q_qfQmk7KiaxEmbUPyP8qZjP3jI6B7Ps-k=s1200",
+   "what": "握りや一品の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b46fff36ab/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSugCMDRZ4QNuM4t1Z-TS17mP_qvQtmR8rANNT-1ohFGUja30tWjaaY0B_ohlRQqtHAWtp0fWfZbcE0cIooJgAcOnykYEpIR8410JcXTf5xlthR7Fj3y_m4OkA7AtmlVnK1OMD0JuQoxXr=s1200",
+   "what": "鶏料理の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b46fff36ab/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJQOWcd0sxOmfC39X6YChJW6dcuk9HYRuZr17xivQX42pCY0u6i99wGHccwSLED85FfNYOp-M9uur_IGxCSyrkR1IP1PoQ7ass0x281mKaIIkB4UQfVlxqplBa2izD-DJGzwVl=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b46fff36ab/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RlNceBxgnPC7VtfNaZBG11wkjaWKp2cw5IW-DO33LttYO1rjUVl4UJXrbajERhfzRnlxmLZqtJFAG6WUmsoLLKM-u6ApwP5e_rVxrDClXDuozSwztfIvU8FQjeKV7izIJly8fE=s1200",
+   "what": "格子戸の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

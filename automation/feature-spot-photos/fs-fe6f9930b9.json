@@ -1,0 +1,45 @@
+{
+ "featureId": "sakuraya",
+ "dir": "fs-fe6f9930b9",
+ "storeName": "sakuraya",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=sakuraya%20%E5%9F%8E%E5%8D%97%E5%8C%BA%E5%A0%A4",
+ "placeUrl": "https://www.google.com/maps/place/sakuraya/@33.5473766,130.3804717,17z/data=!3m1!4b1!4m6!3m5!1s0x354195a3f30c4d5b:0x78341cb49a612ed0!8m2!3d33.5473766!4d130.3804717!16s%2Fg%2F11h4qmwq_b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "sakuraya",
+  "address": "福岡県福岡市城南区堤１丁目１１−１７ スコーレ堤 １０３",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-fe6f9930b9/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TR6wwS9SrU_MCLBLkavYLY1YPpvKQKtSjl7tKSMgJKVmCRL8U5fnsmK-aQA-7GWKgRnYaMyLw9Mte90uUAs0zRAtGY9Fzfgm0OLFTl6W30BowJ_ef9Kgz3agTjol7LMGeEy2k=s1200",
+   "what": "ローストした肉の一皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-fe6f9930b9/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8rebENo1cPIGfE3ypouweZgjKj22VA4QM6BKGiI5FpQmlOvVV7J1YEVYKleaV0uBrecQ9NA17b0oUDa25jZOU6RlhRlg2Cc4HGyCmA7sZVH_VgqD3wpqG8thsZKjl4mLtz10o=s1200",
+   "what": "トレーに載った定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-fe6f9930b9/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYRMZXcXxhpGjr1cdfQUdrP87npLdE1B-8kNEf6JirUk130uVzIxyg5IyKKgU0_E-GQAfmTIP2RZ8RF20oMv5Up2kj3jLml0IaaJAp0VggQsrbvQW4-0cr3ugv-g5qTaFmvgBF=s1200",
+   "what": "のぼりの並ぶ外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の料理写真で代用"
+}

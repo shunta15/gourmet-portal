@@ -1,0 +1,55 @@
+{
+ "featureId": "ジッリオ・ディ・フィレンツェ",
+ "dir": "fs-a6ad31f512",
+ "storeName": "ジッリオ・ディ・フィレンツェ",
+ "mapsUrl": "https://maps.google.com/?cid=6365362585625728360",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%B8%E3%83%83%E3%83%AA%E3%82%AA%E3%83%BB%E3%83%87%E3%82%A3%E3%83%BB%E3%83%95%E3%82%A3%E3%83%AC%E3%83%B3%E3%83%84%E3%82%A7/@36.508136,136.567861,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff84a411c118a9d:0x58564f8be6c89568!8m2!3d36.508136!4d136.567861!16s%2Fg%2F1hc41y5s4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ジッリオ・ディ・フィレンツェ",
+  "address": "〒924-0841 石川県白山市平松町８９−１３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-a6ad31f512/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtUBYjKKcq-kyrQwtJC8vQNloqVLyXxRdQZKq6uhOwuK0FAqhJgIZHVMLAesIufBjNs-sEAGbirfM4Ppxmey71Js9MPdyiIkybmL8Bv82oOpNI9BSkKi5mSsEpF2WwyygcYhZ4q6afiYo-=s1200",
+   "what": "トマト系のパスタ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a6ad31f512/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYOlimU5tNX3W0IDJw4xS7mUd2hRnOmtGplMQ9OIFKfavR6b-H1gCS3_OghqykG7Ss0UhY36UXblZQ7uHyMg9RsHKT6xY76CQxzcQaMb0iLpqwm4ZwHD2FDJlQSIOIYq00056W_cBtHzc=s1200",
+   "what": "赤身肉の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a6ad31f512/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ti_Q06v8iGZkp0_rAcF0JkVQmGgTb6yxB_7VUXwK638s-Nffo0Nqp1GUjsd7fUR79VXxDo1tVGHeBPNfqRK6ZyZ6bKP_gJwL1gI9gHB54zeOHPS_-FUDJcLrihTPZLhr3EZCQGtQ=s1200",
+   "what": "テーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a6ad31f512/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIB6UOzVx8a7kOEgYp5lqJo3OEdi6Up2VKGj0QUYBUJgxv19De4cYYRzXOM-7KG-z6ai_GCfVLSBMykPOBeUJOEX2oZun8SlxBPgj13Y08STztlk3wamcNnQ5K7UasXYTOyNkt=s1200",
+   "what": "旗のある店の入口",
+   "width": 900,
+   "height": 703,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

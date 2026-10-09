@@ -1,0 +1,45 @@
+{
+ "featureId": "讃岐うどん明月",
+ "dir": "fs-dfb56a414c",
+ "storeName": "讃岐うどん 明月",
+ "mapsUrl": "https://maps.google.com/?cid=13255215171197267799",
+ "placeUrl": "https://www.google.com/maps/place/%E8%AE%83%E5%B2%90%E3%81%86%E3%81%A9%E3%82%93+%E6%98%8E%E6%9C%88/@34.6101333,133.7741375,17z/data=!3m1!4b1!4m6!3m5!1s0x355156128b8cd98d:0xb7f3fbf81494ef57!8m2!3d34.6101333!4d133.7741375!16s%2Fg%2F1tdqrbrs?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "讃岐うどん 明月",
+  "address": "〒710-0062 岡山県倉敷市浜町２丁目１６−８５１−２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-dfb56a414c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnoCMbmv662VR9clg4M3xePLbabcZkLBwAuVF0mhQuyGSKjKm-OkwrXNk_VJMbMeA4r-VUXYX4y-DyqxTXtg7vJ1JogoRjFnlV3MtvCyqJgW8h9Wm7g1MggwdZdNjY0u-GUN2M",
+   "what": "一品の小鉢の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-dfb56a414c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RGexNRRoBoO-9iV_I-VSs8NpZbZDWmYtN3KG5bdTDFKYUV2DpHLu7gLGA7dSg7DVKXPxbJAaORiV-4Gad7HixZaEfXlTv1icUZXVs9bBeUjxnTIm7AuqC4XnlCLU4_2cnT2uqz",
+   "what": "禁煙表示のある店内の席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-dfb56a414c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QK2WBicnJDn1-42KNSqrKKumrsI4hd3nankslZF55_XFgN7uYgbCDJECTdYFdMjhPMmSvpjE9VWUh6pnq4_lg-a5ixq5t1KUWuRbEQvMKlBctJchLEU-JPt4vj8lVlFc4o3kLg2CcvbHY",
+   "what": "店の外観と看板",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

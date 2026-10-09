@@ -1,0 +1,55 @@
+{
+ "featureId": "お好み焼き千富",
+ "dir": "fs-06416c094d",
+ "storeName": "お好み焼き 千富",
+ "mapsUrl": "https://maps.google.com/?cid=17914833099947291233",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%E3%81%8D+%E5%8D%83%E5%AF%8C/@34.3418415,132.3248324,17z/data=!3m1!4b1!4m6!3m5!1s0x355aba2e1c558073:0xf89e45c99cc4b261!8m2!3d34.3418415!4d132.3248324!16s%2Fg%2F1tj6rp5m?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "お好み焼き 千富",
+  "address": "〒738-0042 広島県廿日市市地御前１丁目１６−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-06416c094d/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QKU3UIkQZmw1lawWnSwXvEZPIrxF83_0pUQZgl_E3GmdIRaQNGtAqXNn7RK17MCUrmeeWGI3LZGq0IcVp4BDMQmr6mphBbPzuDYCgb2zB6dDjBeDghd-8TqK4GG2FT_mkHO9cs0CmyRSOB=s1200",
+   "what": "マヨネーズのお好み焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-06416c094d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9REuyGNbNFB2oK7ZDY2Lwci_vi1ObvgIEcnHJuyxu0AYfYSKiYXiax0i-5qYmAcdYu6GGXkHhV2b2vf3A99U3jJCIGMSduE54pqoTXAiFQOw6Bd4xBq2wC7_T1BUEjAuulBGl1L_RidckM6=s1200",
+   "what": "鉄板のお好み焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-06416c094d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAHr6vNRy4scEITWGjD9hVctx8Sgy1FZP4udeui-OgwB1QOlImpNINQxTLCoeP7v9XOt4_hJJ2IemS6iucmOzebaCFBPlY0yseiq7xVwaNQg3BbWM9S9kWMYlHIecjwCGquVF1hY1c-rjI=s1200",
+   "what": "海苔の養殖棚が見える海",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-06416c094d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2GIcyha6YjdqCWNejEvBNmGoJryZtMzZO4Qa84MjAwHki-5qH95KtI50xBYHzDh11ldSpSNjnZvNk4-_-e3uCXfyHjcBeB1pXT89D9gV30884j8F1kifcUmM05j7LrJ6wKgWk3uhGUPs=s1200",
+   "what": "のれんのある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "堤防越しの海の景色の写真をカウンター席の写真の代わりに当てた"
+}

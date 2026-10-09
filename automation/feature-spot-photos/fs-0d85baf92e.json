@@ -1,0 +1,45 @@
+{
+ "featureId": "ますます増田",
+ "dir": "fs-0d85baf92e",
+ "storeName": "ますます増田",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%81%99%E3%81%BE%E3%81%99%E5%A2%97%E7%94%B0%20%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BE%E3%81%99%E3%81%BE%E3%81%99%E5%A2%97%E7%94%B0/@35.0256278,135.7494768,17z/data=!3m1!4b1!4m6!3m5!1s0x6001072e9737ae47:0xd66d5535a2af48e1!8m2!3d35.0256278!4d135.7494768!16s%2Fg%2F11l38zxmt_?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ますます増田",
+  "address": "京都府京都市上京区旧大宮通中立売上西中筋 る庇町187-1",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0d85baf92e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qf6MZowcOrVNBSEai5z7gIVCmP_ByLYHw35bKWkKpgTxmTuUp4W4C09DPTwtPpkh2tqTlsM4qB57UyE2XkLw2onjgw35BXMVUZIaqKclrfTctN5RKtVrN_15KohrhGc9D5Q4C22Tjn9WF0=s1200",
+   "what": "ソースを添えた牛肉料理",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0d85baf92e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUITBeJwV_OmUH9P-6DRmoQg3t_grT_is5BL13k3w2oI5k3fiOdGs8VtTOqN57ZBHbg70rTFVxj2TlyTEd-0GSlXakuMK6T1YKNQmH2GIrc4Su-nPmR_8RoVEcKzr-QjMKa74Ampy6Yfo=s1200",
+   "what": "木の廊下とカウンターのある店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0d85baf92e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqEscssZC1mGfEAbeqZcOEXeWDHULgFX68KVxm52ndwUAVCtBtaB6dQFGmyL9gU74P2ErfXlr2v_-hQKj3YdPAevtuqmOjKfbY0JK-745VgWc0i_FRTgDY_WrGTdv0_y9evaG4eVUCT-cs=s1200",
+   "what": "のれんの掛かる町家の入口",
+   "width": 900,
+   "height": 858,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

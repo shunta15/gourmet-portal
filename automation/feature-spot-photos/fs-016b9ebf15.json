@@ -1,0 +1,65 @@
+{
+ "featureId": "紅梅庵",
+ "dir": "fs-016b9ebf15",
+ "storeName": "紅梅庵",
+ "mapsUrl": "https://maps.google.com/?cid=17192498935577945324",
+ "placeUrl": "https://www.google.com/maps/place/%E7%B4%85%E6%A2%85%E5%BA%B5/@35.0308654,135.7365249,17z/data=!3m1!4b1!4m6!3m5!1s0x600107edbeb5185b:0xee9806b13067a4ec!8m2!3d35.0308654!4d135.7365249!16s%2Fg%2F1vs1rsc6?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "紅梅庵",
+  "address": "京都府京都市上京区今出川御前東入東町678 社家長屋町",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-016b9ebf15/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnNFYQJC4RwIzHXN-LxScdmoQ0wIwI9p4mJ6Ec9AiQQUjimdFu8FCExhTMhcuBsXagNbZLxLZUOP5tv_gqYw8_uxYmZjplv4jP_-kjntNuIdyWCzeoQXGWRv-cZnVkJPjJKLW5QMO4v9Wk=s1200",
+   "what": "旬の小鉢が並ぶ御膳",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-016b9ebf15/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLJxGHd6d53ykwwf-z7bxrYaxfvJSPrwArDrTeje76rC5LdeHIfTsiM8pbQQAggNroIV3nkY00mKeZoSn6iyeDy_KLIA-g1KwuHsuUVJiGMfUv2yB6XW1U-qpmuMDdWZDn7SM=s1200",
+   "what": "窓越しに外の見える座敷の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-016b9ebf15/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SyMeo_zfE13SnNNDeR1b4dQ8y_opdrq_HvyR8ET-Cv9Cv_bquy5uAvr_iEKF96rZvVh5M_SCUAu6dUilzKdPEQ_HMP1zyyjlRz-xzBqmItdHomrWZXt01IuhNZtnRHKZrZaC2P=s1200",
+   "what": "重箱の行楽弁当",
+   "width": 600,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-016b9ebf15/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sz97ysEJGWMHx1FUXyMfaqexODGNqu7tiF0-z3RQPWuxJoJESB69245D6I6FMmbaCEcU8_oOLIkWYhsP3p7FePDQdAsXs_OfDcG0qc8raFBvqqfQ-ZVy72PvfKZMwDjE3iiL4x=s1200",
+   "what": "障子のある個室席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-016b9ebf15/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgoZwxmrRTOYkvfj7lrNdGvKBgk5L8mi1hYUPNHfDdDRTiSgz63nxpjLm6jYsPOyhhMyHF8BpkkJrVeANuc0VwKCcsXV1QyCZxytu5xaW2sOepceJe-26jkj5MI_ZDcW4gHqMzIKTRwiI=s1200",
+   "what": "町屋の店の外観",
+   "width": 900,
+   "height": 799,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

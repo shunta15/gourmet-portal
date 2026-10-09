@@ -1,0 +1,45 @@
+{
+ "featureId": "花見うどん・ラーメン",
+ "dir": "fs-a356e8d700",
+ "storeName": "花見うどん・ラーメン",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8A%B1%E8%A6%8B%E3%81%86%E3%81%A9%E3%82%93%E3%83%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E5%AE%AE%E5%B4%8E%E7%9C%8C%E5%AE%AE%E5%B4%8E%E5%B8%82%E9%AB%98%E5%B2%A1%E7%94%BA%E8%8A%B1%E8%A6%8B381-14",
+ "placeUrl": "https://www.google.com/maps/place/%E8%8A%B1%E8%A6%8B%E3%81%86%E3%81%A9%E3%82%93%E3%83%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3/@31.944036,131.337876,17z/data=!3m1!4b1!4m6!3m5!1s0x3538b446c2b8a313:0x6f902e0611a298e5!8m2!3d31.944036!4d131.337876!16s%2Fg%2F1tdb6lp0?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "花見うどん・ラーメン",
+  "address": "〒880-2211 宮崎県宮崎市高岡町３８１−１４",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a356e8d700/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkCsu628eGL50OCoar7X96mynWMG55KbXIX3b2CUwcJQva9s1EZWXwBwfqES3hpuTdegN488ReoGJ9_FqQ7WDzpw4QeMBQRIluMlrJ_iZLxOVYLuDEH2wLlO4lX8OBZ3s9Opwk=s1200",
+   "what": "鍋に並ぶおでん",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a356e8d700/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S85ckierjXSU9HOnNHRw2ZKPznKR1JwWPiyu9OZypGuJnqB4RW7rkRimlUwV38WkLm6_zKr8qiPoJPq-kZuslW8sZl82P9uH2ZU3_Byfmdr1jIYyDjRQ8ZtUZOG-cDI4kWUc6iyw=s1200",
+   "what": "木のテーブルが並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a356e8d700/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2mSfnBVZ70-sJSW59SY1PswJRW-1031jQRRgtzV3rn32HALOV88hYHLKdaXajMTREYMstrM6zY0ewZ6jtYmlaLWQQAUEYSfJ10BW1rKLX80CkRKiBlrye4r-mBkSz5UFDvcUSKFgnGe34=s1200",
+   "what": "のぼりと入口の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "マップの住所は高岡町381-14(花見の表記なし)。番地と店名が一致"
+}

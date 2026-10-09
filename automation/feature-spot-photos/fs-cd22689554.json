@@ -1,0 +1,55 @@
+{
+ "featureId": "イタリア料理エンメ",
+ "dir": "fs-cd22689554",
+ "storeName": "イタリア料理 エンメ",
+ "mapsUrl": "https://maps.google.com/?cid=2867958956454351336",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E6%96%99%E7%90%86+%E3%82%A8%E3%83%B3%E3%83%A1/@34.3864132,132.7609025,17z/data=!3m1!4b1!4m6!3m5!1s0x35506f1a2e0c1bcb:0x27cd0979cddc91e8!8m2!3d34.3864132!4d132.7609025!16s%2Fg%2F11b7hjm2fd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "イタリア料理 エンメ",
+  "address": "広島県東広島市三永２丁目７−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-cd22689554/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoxS1_kN6A2pkPu0dJ-XRzU3hKchfQBLn34grTqmYGElfj5pY4rTFCtzD9DBdXWNHW3mlmZIclBXtmIYJYSDvK1Pi8Y6ExeSWnskaq3O15gARXiE4D5Wt7sWk1tH-JxwKTN4DZdQ=s1200",
+   "what": "前菜の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-cd22689554/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGl1fc9BDz0svrnd1w92jnJJPaPa3EJC4Ok6jqRAnZzJoSrpVjrT__bD0uPPDMZ-6ZeOjmq2G99937UiaXPEkwZ_xxtBb5oMhT9m45-f2FT5o5f56oa1MwR261E-Jd1x4yB7NUiQ=s1200",
+   "what": "トマトソースのパスタ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-cd22689554/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R86MU1ZetvZM8LHruP4bdE6tj-dFmWMWf-UROn5v6Pb3-ZiKG2grRYFeddOCzLwwUvrWxwWrW06_V3H2sRqtlSRsl0ftCAQt2mOLta_R2JRc3-1XbjguANjnIK-acvY8Pn-o4=s1200",
+   "what": "牡蠣の香草焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-cd22689554/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLsLR-mGn14MyOASXyzB9jODpC8mHTTKwbeSrv5Ehn5soBKbS77RMW_hfjz54wpJW2ZDgZDb-UhCYL1NZE-f5aJYSUI3aRjWE3t-IGPfqW9Gh64QWymmimT2XdD0YOu-LgE7f0=s1200",
+   "what": "看板が灯る店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無いため、スロット4は料理の写真"
+}

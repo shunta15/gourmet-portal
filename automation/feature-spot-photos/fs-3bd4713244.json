@@ -1,0 +1,45 @@
+{
+ "featureId": "お食事処本山",
+ "dir": "fs-3bd4713244",
+ "storeName": "お食事処 本山",
+ "mapsUrl": "https://maps.google.com/?cid=8649927039874210484",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6+%E6%9C%AC%E5%B1%B1/@35.2539055,138.5980146,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd057e921fb49:0x780ab6d040bf9ab4!8m2!3d35.2539055!4d138.5980146!16s%2Fg%2F1tdft69f?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "お食事処 本山",
+  "address": "静岡県富士宮市外神６７３−８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3bd4713244/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9St4-2vTE1PXbR7Wirzsi-9HUZESlDB8idfFYIme6IA6y7tKmWX9Q4qM18vmNIEw5e5JUP7hmhjKQDVy-KpPuFjoGhmb-0hpMZT4IvC5dVpE_2LrnULYsUXKUgo3gELiwnr5Q4NogNV9ABr=s1200",
+   "what": "刺身の盛り合わせ膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3bd4713244/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxKdcEmIyc_Fg-DwUjmWQ8fJ1M40JFtf0bNRziKGgebjpygCSagMYMF0TaJUkpuDG7m73GmESdnetWidTXAxe5N9RCysKtEpLImSjDTl5plQAFWH9pDJKliV2w5WR7fbfsfrc2=s1200",
+   "what": "畳の広間に並ぶ座卓",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3bd4713244/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_ts-EH4DIbm_u6BSkL5AN5M2ICQGbatmBCEWJfn5M0PaaOu8Dk-kYIaunpkkbhBhyBIf9lrn6ZulzJPvtlO1OlMA3QWoYYaqpQKOyXyNLrRhDb2MG4w9ZbGLp80BwE2xF-q4=s1200",
+   "what": "石段のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

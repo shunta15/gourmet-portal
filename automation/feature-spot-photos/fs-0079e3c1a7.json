@@ -1,0 +1,45 @@
+{
+ "featureId": "ぱすたRakuen",
+ "dir": "fs-0079e3c1a7",
+ "storeName": "ぱすた Rakuen",
+ "mapsUrl": "https://maps.google.com/?cid=18320212713432107820",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%B1%E3%81%99%E3%81%9F+Rakuen/@34.4927054,136.6754241,17z/data=!3m1!4b1!4m6!3m5!1s0x60045ad69e15bf87:0xfe3e7865f1b74b2c!8m2!3d34.4927054!4d136.6754241!16s%2Fg%2F11ggzb7wm9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ぱすた Rakuen",
+  "address": "三重県伊勢市小俣町宮前749-1",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0079e3c1a7/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QN2HdVDr1fhVtBUqjk4VpLNiiGnteMBxo8sbOC76I3Ws-ikI-DBLw0oaKwPvosBIB10CstHgzNE03NdnQCUGWy40h8eYX3iS-3SYBN0aBqpDxLRJR4MRtosubqWk3xhnKNc5kP=s1200",
+   "what": "鉄板のチーズパスタ",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0079e3c1a7/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q269NDBEOUI1x7ygBocjXU9BlxND4gPTjolMOHLUywXqLVBkgyale69TG0b7HPVLeYsGsEdfNgRhINc374C44Fx6xsVx9EHvZscW0SFMB7kFvS-UNrYfPb0btxuO1grwxOxYDV=s1200",
+   "what": "緑の椅子の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0079e3c1a7/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_PapxDPzipHP6AsWVq6ViwTmAzJiaUcNbKUXgKp7kLA4jSaZoGwX5SDstqSWB9VKpeOsv20ksneiI-z9lg9ZIfkWth1G_FMyg7WPZ-KO__LvynA7wrjz3EjJc3JvIkkWZGDuKkSywE9vJ=s1200",
+   "what": "緑の看板の店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

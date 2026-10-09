@@ -1,0 +1,45 @@
+{
+ "featureId": "赤れんが",
+ "dir": "fs-c32b614e4b",
+ "storeName": "赤れんが",
+ "mapsUrl": "https://maps.google.com/?cid=17971450559006318003",
+ "placeUrl": "https://www.google.com/maps/place/%E8%B5%A4%E3%82%8C%E3%82%93%E3%81%8C/@35.4237986,137.0625775,17z/data=!3m1!4b1!4m6!3m5!1s0x600316aa3236978b:0xf9676b110c111db3!8m2!3d35.4237986!4d137.0625775!16s%2Fg%2F11b86qh4rl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "赤れんが",
+  "address": "〒509-0214 岐阜県可児市広見３丁目５",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c32b614e4b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SC7NcWE-0wA88mfq-SW8Wz-YKEb5MOgUAvVdWPLzwxoTxwyAaqOp88JO1IgvxUKOTMdsqs6mW3BYMrijE1vwIWlwOijfUcZUkdhNbLJlZQMlWZD2UaabzPRPfCXdg7mXZV7pmFfxflEa0m=s1200",
+   "what": "ハンバーグの定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c32b614e4b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjsFynSv9KBzVqnhNRSLtRGXa3YdQnB5dxXnLqX14sENPlVX1iQlToi0fow2ER5itds-MSLxv-tiN9TRAgdDzeJLkiMr0Ly_CBHH8u-FxMl--xzd6V9gNfxZNd9dRnZ14U7VDJ=s1200",
+   "what": "席が並ぶ店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c32b614e4b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNJG__GZuJWPTYuCI4n7KqWCzkAZ10liGVfAMoaBQcShKUHWpv0e9X5vvWyMnRsgvcaOVQWB-CibbuOU12pCnSslJqasuY6-oyAikyBbxfXH5xp2fFf_-eLyutjAj6TOZvh3c2muQzk7tH=s1200",
+   "what": "店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,35 @@
+{
+ "featureId": "みや乃家",
+ "dir": "fs-5e81adfe3d",
+ "storeName": "みや乃家",
+ "mapsUrl": "https://maps.google.com/?cid=9335577108145084771",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%BF%E3%82%84%E4%B9%83%E5%AE%B6/@34.0229814,131.5484372,17z/data=!3m1!4b1!4m6!3m5!1s0x35448d18d02f5e19:0x818ea1eaf8419963!8m2!3d34.0229814!4d131.5484372!16s%2Fg%2F11qvdb50sw?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "みや乃家",
+  "address": "〒747-0834 山口県防府市田島３１９−６−１０２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-5e81adfe3d/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SV9wcQixkx783NjyjFT8sUFN3shfqoAHY_DPIMotBZQMGlrw0KW3l5mK2RkQMed1I4p2fXDoWbocaDi8X77z1oBnmlfwZxoEAXj59KtPiDszszmPz5HwpvZuQ7vZZ7LCCcrNG0DaenEn0=s1200",
+   "what": "お好み焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": "hero",
+   "path": "/restaurants/fs/fs-5e81adfe3d/hero.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtKd-fPZZQJMP9FfuSy-DMWwPh-GV4jqtoA0claI18iXFMbRLtfkK1HErUlH3GdC6ifSjuvYnnpPicmm826pYchD9KgL9cBmX-I7vBtTGHUV8KS4ukEvBU4dZLKJ1B9sOSEPp7=s1600",
+   "what": "座敷の席のある店内",
+   "width": 1400,
+   "height": 787,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

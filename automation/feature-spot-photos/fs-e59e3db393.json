@@ -1,0 +1,55 @@
+{
+ "featureId": "souvenir",
+ "dir": "fs-e59e3db393",
+ "storeName": "souvenir-スヴニール-",
+ "mapsUrl": "https://maps.google.com/?cid=12380545873762475643",
+ "placeUrl": "https://www.google.com/maps/place/souvenir-%E3%82%B9%E3%83%B4%E3%83%8B%E3%83%BC%E3%83%AB-/@34.8663345,137.0520867,17z/data=!3m1!4b1!4m6!3m5!1s0x600491002936175f:0xabd088e0930a5e7b!8m2!3d34.8663345!4d137.0520867!16s%2Fg%2F11lvhdwnnx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "souvenir-スヴニール-",
+  "address": "愛知県西尾市本町４６−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-e59e3db393/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCLtWdPnI0CBXd9vgaurayIBtdCyYCoT1fPLDs6oxhMAKckSSGovyFuQHU0l0RlG04Mp8Bly-Zw_h55WL4pkgTrB3-joHcEEgWmUkhsPAJmEg0-Sjt2mJUkh0QbPYNaikuIFELy1SjOzpj=s1200",
+   "what": "和牛ステーキと三種のソース",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-e59e3db393/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TuGw3Z1pa6kockmVpcl7UNxPe8L6Is71Qx8ofj1Ayv-G6v6qajmR6YXEhQHwzKYdFhAj2OqwG8G9eVROy2CgSf6UbfiG_O11g_r09-cfD0h1_hNqtcatpFL5VsO4l5azuTX-Rsjw=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-e59e3db393/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sd-dN08baZlxjh7HgivxqrknLwhGo2JoRaNY7q7UlialTIsIWi4nQiLMVcHJWMuxY3WiuOUyYucj-EvbsCYymeIqFzGG6k26rizmeR2NfrQmJcXQcoiiAmQKgqDQXhUMsflRI=s1200",
+   "what": "カウンター席の店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-e59e3db393/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_ErlwjMN6W-JwuOAQo6qrDoM-skpGYnqgv66ZJjTTBwMsm9CzOxvHs2jwmiapYrLili-Z9Eyk3qjoVvKxpxU0IJwXN2UGpCR1QYqegHiYflejPKq2e1meXZZCGlzojAvBcYT8l_ApM1JK=s1200",
+   "what": "彩りのサラダ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "カウンター店内の写真は同じ構図が 2 枚のため 1 枚だけ使用。"
+}

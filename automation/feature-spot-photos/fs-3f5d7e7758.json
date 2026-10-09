@@ -1,0 +1,45 @@
+{
+ "featureId": "ごはん屋はれいろ",
+ "dir": "fs-3f5d7e7758",
+ "storeName": "ごはん屋はれいろ",
+ "mapsUrl": "https://maps.google.com/?cid=17474197612726306534",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%94%E3%81%AF%E3%82%93%E5%B1%8B%E3%81%AF%E3%82%8C%E3%81%84%E3%82%8D/@34.7948606,134.8250416,17z/data=!3m1!4b1!4m6!3m5!1s0x3555273a1e4422ad:0xf280d2258187c6e6!8m2!3d34.7948606!4d134.8250416!16s%2Fg%2F11l2hk7dl0?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ごはん屋はれいろ",
+  "address": "兵庫県加古川市東神吉町神吉１０２０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-3f5d7e7758/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TU-fEIwGwILZ5we4T44G_VaWUKAvrQh4wX7fTGt8HFhuWASLAQ7FcO_flhbzKyJcz1qNkMZYh7Tk2leFP9lOFXUS2MYshRLdOiq850hG3RJYXNQRcwbKyzI5Z11K7gSxyIE7fL=s1200",
+   "what": "コーヒーとたまごサンド",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-3f5d7e7758/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TgVgcMorMCLrhyjroM0jpt3cPaQJnXCSG6XdXs9Y-SeHJLfDMWHaitlP7Sl8IJBOK-m3J5xFcRckK9fwz8co0Mc9131uL0ecWw7qaxHxjICS-fqhd3Bhk7-84jnk0V3CCMfCw=s1200",
+   "what": "白い壁のテーブル席の店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-3f5d7e7758/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SebI_EazNYD357ibHjinQ67MO40giGctFpd6DmI87fFY_egJVNar5OrxTwF41g6n294lwjApcBTnIAMJNcyDfi5YmFCqqgMdjqW0RXWXPNU-yK0Z2bnaW2VDV4htwI9PHMDlpCnw=s1200",
+   "what": "レンガ調の建物の外観",
+   "width": 891,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

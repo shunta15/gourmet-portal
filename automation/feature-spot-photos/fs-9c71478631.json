@@ -1,0 +1,45 @@
+{
+ "featureId": "オッティモ",
+ "dir": "fs-9c71478631",
+ "storeName": "オッティモ",
+ "mapsUrl": "https://maps.google.com/?cid=129434129028074605",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%83%83%E3%83%86%E3%82%A3%E3%83%A2/@36.6446128,138.1859839,17z/data=!3m1!4b1!4m6!3m5!1s0x601d87cb75c1f2d1:0x1cbd7a79287cc6d!8m2!3d36.6446128!4d138.1859839!16s%2Fg%2F11s3b1plww?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "オッティモ",
+  "address": "〒380-0824 長野県長野市南長野南石堂町１２７９−４ 1F",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-9c71478631/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh6lVqYkA5BHfgjZfgcH3BF-la7q9yYw5PT1fDnWScPdbTNrtQw01uxsWgmHtHURUHOvEQMBdcHAShuCc2pQgc6Ui9QUefHjlg9IkdZa2kWDvvl-7Ycb8H0gy2s8ZOcGa5_sw_AM9CI40=s1200",
+   "what": "パスタ",
+   "width": 900,
+   "height": 661,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-9c71478631/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNCn1FCb-UzkrJp9glctYq76yhYpJ5T3lrCQVFyy1ZauHPZedZuAqwdKho_5wW2PTxLicvnmhVZINO4F0opFfUH0AmMGkraZvsuRLUQKZhLEmvzjEA6f7E34g4XSjAADkcH4VkTzY_z-bU=s1200",
+   "what": "厨房に面したカウンター席",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-9c71478631/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJFCGHlfeEJ2Ier-Wx_-EKF08BSSHBanpswaSFTRVMUmPmv1SZIUrh5wtGAPh80_38wUQFcFc6eLG0hPID2bvghQF4G_ukZCjp5LqIcgfKIw59XveGioJTzQNt1qhhwjnDbEJsIcs1kVw0=s1200",
+   "what": "ハンバーグの一皿",
+   "width": 900,
+   "height": 866,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く、ポイント5は料理の写真。ポイント4の店内の写真は480x480と小さい。"
+}

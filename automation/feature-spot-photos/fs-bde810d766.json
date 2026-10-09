@@ -1,0 +1,65 @@
+{
+ "featureId": "ロータスカフェ",
+ "dir": "fs-bde810d766",
+ "storeName": "ロータスカフェ",
+ "mapsUrl": "https://maps.google.com/?cid=2027798843538530641",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AD%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AB%E3%83%95%E3%82%A7/@35.3382715,137.1272462,17z/data=!3m1!4b1!4m6!3m5!1s0x60036a7ca6f72e85:0x1c24304df10fe151!8m2!3d35.3382715!4d137.1272462!16s%2Fg%2F1v44qb9v?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ロータスカフェ",
+  "address": "〒507-0025 岐阜県多治見市宮前町２丁目４４−１ コーポ みやまえ 1-B",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-bde810d766/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3YfgiMfDTKfAqE3RfDyB4-ebXcORenwnXJpr3jJZIPTPoE4WR8AhswdDcUMTL9x4G79Gi6LE6zsIeGif0RRd6MUWKcYAJ0TT5PIbFdP_CHSft2a-Q44TiVVZY4jnU4YDZmzC64mRmrvVt=s1200",
+   "what": "アサリのパスタ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-bde810d766/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qe7_0qEI9Os4U5WghfnRlusK0oBo43i69Pbi6i6wV9nJrJKnR8UTCMJ3QvxSVD5QWA-QE5gnJU5rGQE_wZn-3sRhVZ1QYvnzF-O9Cgexr_S_6WnJ84jlheLvr0lQ-7XFPEWejeKQ=s1200",
+   "what": "バーカウンターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-bde810d766/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qd6p-5eisHjKoSaeozUJN7SUarsY2wiLELN7-8_mYwpnBRzkP_HRWnx8Td-XzToxmECBmX7OWWULWilnl0ZRUC5ReuWwWz5XkrjjuZ38nRufI6_i1R3NMRC0j1YmqdV0SpHc2n=s1200",
+   "what": "レコード棚のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-bde810d766/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RJttIyAIHb097KdCXMKxYxTyzelo0I2XnppB2nSY8G9MpgEBBgkEXYb4MXSUxZZvVqV5siww7miF_2XQdW72joPRIsdwL3MeHOTKu981tYJgFfHof-CKpwsT-q3OfpBwlyigp6eiOt8VhY=s1200",
+   "what": "木のテーブルの店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-bde810d766/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T5fOMtKXRcCBRRPesu2eoIpvmsYx5RficiWANkTsXXY3JT30aw_FVtywB83Xd4IrUKNpD_9I75lsYMSUqs1rZwsKXtHnKckVBkoKWADwmLaBiqcdUuGcLsPQywflmiEllzmUs=s1200",
+   "what": "LOTUSの看板の夜の店頭",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

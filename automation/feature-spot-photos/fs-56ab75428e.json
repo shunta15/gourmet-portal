@@ -1,0 +1,45 @@
+{
+ "featureId": "炉端と地酒まる文すが原",
+ "dir": "fs-56ab75428e",
+ "storeName": "炉端と地酒 まる文 すが原",
+ "mapsUrl": "https://maps.google.com/?cid=7505137676465973228",
+ "placeUrl": "https://www.google.com/maps/place/%E7%82%89%E7%AB%AF%E3%81%A8%E5%9C%B0%E9%85%92+%E3%81%BE%E3%82%8B%E6%96%87+%E3%81%99%E3%81%8C%E5%8E%9F/@43.7678283,142.3584251,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0ce7298e4baedd:0x68279af3ec27a7ec!8m2!3d43.7678283!4d142.3584251!16s%2Fg%2F11n_xqpwww?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "炉端と地酒 まる文 すが原",
+  "address": "〒070-0033 北海道旭川市三条通り６丁目３３５−３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-56ab75428e/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1RimgqePW-hB9AYL4fwGquqfQ0am1yXXWqF7k_uANVZ1Vxkk6lYginZtLHSEBhtZDFsAJ7SMG9t17HBRiW5HmJsFBvEM5bjOJarv76rh2Tm-cRIW4xLvguz5gWcKNXiLTPe5AZyXYyb_a=s1200",
+   "what": "小鉢の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-56ab75428e/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQp3sacKpCHA-aaPrTVyLtlAKUolMiFFiORX9IrY-EkaMmk6v3H7_ifrRUVy-iP4ANHujYpUcYjmrBxh51s0J7WFQUBsb2Paid0BShU3shZ0WoB_6ZLd8E4wLv9dfKQuQ7xaI8kWkRdPqt=s1200",
+   "what": "座敷の完全個室",
+   "width": 900,
+   "height": 892,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-56ab75428e/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEcYeBW1o--ZyyS9zyJWAwpUuoEfYY_Y-FtqhcrUIHnHlCkHzn-jPeM764QLFgxoKMiEqC3qQ-W6mBwuwLcmQPX0E18kSQ6qb00084av-dwJNJ_W0-BAlrrm3x8Nxq5U5vHZ4bKQnl-9x0=s1200",
+   "what": "夜の店の外観",
+   "width": 720,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "旬菜笑食屋裕-ひろ-",
+ "dir": "fs-bc85d6e872",
+ "storeName": "旬菜笑食屋 裕 -ひろ-",
+ "mapsUrl": "https://maps.google.com/?cid=5950145947992236892",
+ "placeUrl": "https://www.google.com/maps/place/%E6%97%AC%E8%8F%9C%E7%AC%91%E9%A3%9F%E5%B1%8B+%E8%A3%95+-%E3%81%B2%E3%82%8D-/@35.513892,137.8286132,17z/data=!3m1!4b1!4m6!3m5!1s0x601c99c632324b81:0x52932a36e7cea35c!8m2!3d35.513892!4d137.8286132!16s%2Fg%2F11yf7rqcgx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "旬菜笑食屋 裕 -ひろ-",
+  "address": "長野県飯田市主税町１５ 井上ハイツ 103",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-bc85d6e872/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKQzr6Nbvop-MF16x7SMW5bd6brwYTZhNfGn9G_wUdIQ4YKl46XgEURITgXjjmC7C1Bph4_hK4hcuKc9NmwbkJaft2mIRWZa0b-BWhkSQEz4eRWz6vuFtfVSUV_Bebdu0SwUjTzjgag5WU=s1200",
+   "what": "刺身盛りと日本酒のカウンター",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-bc85d6e872/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SymEjzhaNGKoja1GwyBnHzz0UZD3x3gJugVNXNeLzWOIXUT29bjyxYJuoRGzaxT0u-8LxEvaDZQX8M4_wHC_FgR3AuCH0qQjdQ_2dfwMsDhImvQmwpIWK8oJsWPs12XAN8ySLrQEBtTCEN=s1200",
+   "what": "海鮮丼の定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-bc85d6e872/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxmWas93sVCySXU17gCb2VqMELWZUIioDiVBwLfk7_GYVogS4eTb0S_hQshhMcwPiGsfNrXmMBj7veIaP6Dul9UQBz-xsRdTM00-BfKWLUa58LYsxOPmCHFCzLLO3hmmYRJVlbu5yKUUs=s1200",
+   "what": "赤い幕の掛かる店の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "らーめんとんてき大翔",
+ "dir": "fs-67837161a5",
+ "storeName": "らーめんとんてき大翔",
+ "mapsUrl": "https://maps.google.com/?cid=5656669026072246233",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E3%81%A8%E3%82%93%E3%81%A6%E3%81%8D%E5%A4%A7%E7%BF%94/@35.4736217,133.0545417,17z/data=!3m1!4b1!4m6!3m5!1s0x355705015e943c77:0x4e80868246fdb7d9!8m2!3d35.4736217!4d133.0545417!16s%2Fg%2F1tdqrcjx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "らーめんとんてき大翔",
+  "address": "〒690-0887 島根県松江市殿町３３３−４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-67837161a5/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RB5hsl8usXw5Dj0zE6TeLNRSHjy7gCScg6XdzSga-E0COtFHLuD3A4ParTuYvKxsYfqRMxfkyKRLDN0DjSaPpSxf2i_Llwxlhb_Sf6kR1bmYLLbpEyDSZsEsKoM4yMuJUS7SrHkEZqXTQ",
+   "what": "チャーシューの醤油ラーメン",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-67837161a5/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScUuAMMMCYyd8d84q-HzGaLzalwIQSEpSD28HHzd0ITOL-SMhhZbl_JpULQia9oF5DUCWaWT-RJx26PVK7OMST4mSIWuYtLkX-i2IItjZ6pMDtaeFK5be3eJAe2nwoFrwtdy3but7KVXvl",
+   "what": "カウンターとテーブルの店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-67837161a5/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNnkOBAsCVX5fZdH53bHVJpTfKUzmA-uFE9-SDo-odUlJMdDthOn8GWj3IAfLG7ClSYFdZTIalVhbUbARYOUY6RfgVojScsCoDBOmKKFzJxAKf1YTouXDYA2a_9Xv9GJivHm_ULOsZOxqK",
+   "what": "店先の看板と入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

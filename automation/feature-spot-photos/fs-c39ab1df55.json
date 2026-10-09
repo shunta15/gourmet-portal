@@ -1,0 +1,45 @@
+{
+ "featureId": "懐仙",
+ "dir": "fs-c39ab1df55",
+ "storeName": "懐仙",
+ "mapsUrl": "https://maps.google.com/?cid=10445033168423230839",
+ "placeUrl": "https://www.google.com/maps/place/%E6%87%90%E4%BB%99/@35.0073933,136.8867502,17z/data=!3m1!4b1!4m6!3m5!1s0x60037e6bdb8e520d:0x90f43653970a1d77!8m2!3d35.0073933!4d136.8867502!16s%2Fg%2F1tctlqnx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "懐仙",
+  "address": "愛知県東海市養父町３丁目６４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c39ab1df55/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5LdXmsqrBCRb9uMQwxlaQ7X8Yr6FSIrswAIbY8eOnNQw1nJI0b9dkGiz80ffcNt7QtMJiRKWPH2WOgy-4Rnfmd54qwI3_M8pz-5MTS7ZfdvXQ383BN4ELikUlWIoL4YyDJZu5x0GnMbI=s1200",
+   "what": "花かご御膳",
+   "width": 900,
+   "height": 599,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c39ab1df55/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHcckSxTD-VMTKLgRYPS6wa9qVs6Zcpr2q1brYoSFVm28Yqkf4rcZK4tNBF0z2lowgj98ce9R_IZD0nzOVuhDa7DfWaJi_VUduF4ELZ0RyJs-KR2hdS7vbTM_qF-EjSK9Cf-4H0EAjVfJQ=s1200",
+   "what": "座卓の個室",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c39ab1df55/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpETVomeDwqyRnVsb-n4lNd6lrlebK6vFCA3luus0aFzofAyI5aefYUA7tNi6S305O7pABlKMCN3jQOnYtIiZXGZ0SLyzI_a4Jhw-6koX8pTN-4a8SoEVaRBxm4W5gDJKXDAF_UgqhJ6Ct=s1200",
+   "what": "赤い暖簾の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

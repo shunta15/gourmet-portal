@@ -1,0 +1,45 @@
+{
+ "featureId": "CRAPESTANDYAMAKI",
+ "dir": "fs-d2ec85dd8b",
+ "storeName": "CRAPESTANDYAMAKI",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=CRAPESTANDYAMAKI%20%E7%8E%89%E5%90%8D%E5%B8%82%E4%B8%AD",
+ "placeUrl": "https://www.google.com/maps/place/CRAPE+STAND+YAMAKI/@32.9293952,130.5488373,17z/data=!3m1!4b1!4m6!3m5!1s0x35405b172e15b6b5:0x9ec733a7ba61b24e!8m2!3d32.9293952!4d130.5488373!16s%2Fg%2F11r_q_3wl7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "CRAPE STAND YAMAKI",
+  "address": "熊本県玉名市中１８２９−１",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-d2ec85dd8b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QepqxOgpPcrGQOuR6UW9A5iUoGB8g5UjaaMtYuTv_-KkMqkACtxIBERJ62N0mnZ3kATWf5Xv9EOQNaidNfbIk5U1_bvDeb0_Y8-c2-pHT4YNc3TqttJWVE7moq56KC6qHQOa8N=s1200",
+   "what": "バナナとチョコのクレープ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-d2ec85dd8b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJTuCq8Z3UaaXIL9BHWs1J1mSdbqOpVWyOBUx6WilYWUkT5YyGZ9KkO5opNJCRDiHPCcOmpRXGKHGDy7ukDUC5vbxFM4ajVO4NBJ4xRTmfUv_XAUzsalNGxMyTgUkhfs2HbsYm=s1200",
+   "what": "白黒の床のイートイン席",
+   "width": 900,
+   "height": 600,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-d2ec85dd8b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNMRbOWFlfCA35J3te6ziY2WSMd8Jg9nkaQ9DMnb9GistCmMij-_eeOa2_5ivTytLtCCQvecLcMn1ZusOIhjIFltIbTrlMlqv1IeX6TBS-9lx7g2PSD512B9JD6fmSmIAgn95BKXlFx0c=s1200",
+   "what": "紺の看板のクレープ店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

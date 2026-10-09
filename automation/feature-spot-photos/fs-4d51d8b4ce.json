@@ -1,0 +1,55 @@
+{
+ "featureId": "和重",
+ "dir": "fs-4d51d8b4ce",
+ "storeName": "和重",
+ "mapsUrl": "https://maps.google.com/?cid=6202038727948405279",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E9%87%8D/@34.8266312,138.1399375,17z/data=!3m1!4b1!4m6!3m5!1s0x601a57180dfa9019:0x5612115cfe948a1f!8m2!3d34.8266312!4d138.1399375!16s%2Fg%2F1w0j47p5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和重",
+  "address": "〒428-0013 静岡県島田市金谷東２丁目５−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-4d51d8b4ce/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8rmg4KzQaS4DT087O9iUB7N134ymG5da4m3lA3Lt8kS_XYDcLXrw3kO002Nm40wrZw3mssKEbM48DZ3uw2wMWoLBYNgd8iD1ymh5o5F6HnBmQy4WhlM_QOKZjGfCiRsBoghteenOX-JMb=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 899,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4d51d8b4ce/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Svlh1lwJsVi8NVHt1do4r5KZFAgQAnSBnklGziNDHq2l8CUm_jZFnQCl-yY8JU0cYvjgLWZmvQD1aziQG0MlAc-rpMsyLHy6urC8Q_3bQRQHHoc-2BKTvZOp-f2r7DaRZ0DzBHx_VKhy6L=s1200",
+   "what": "天丼とあさり汁",
+   "width": 900,
+   "height": 674,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4d51d8b4ce/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tg_fR-VqQw8TNOnvg9XoPyqzJPDc1ltqCiGBDL-9IYlBsG0ww8g3QN8SI_f8TW34WWlT__CF8hlbEMoNsmWJagyROA95UWLoYWSFff-oJINcpuvLGyBA6YtCJJZjc6rxs3JsUtwrME43FA=s1200",
+   "what": "テーブルが並ぶ座敷",
+   "width": 900,
+   "height": 450,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4d51d8b4ce/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuyfeSrcqHgeSYXVZ2XDLggRdVmIELjFEdCr163lh_6aMjFpN6XZ-QgaJFaDQawkjz0WkJXQGIDOgKhfdfOMTPLwEs5GnkJT_mPLjR6b_OdufRdfAaGxcmsxuo_qI6qIKvN7SD=s1200",
+   "what": "暖簾のかかった入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

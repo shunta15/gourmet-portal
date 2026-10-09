@@ -1,0 +1,45 @@
+{
+ "featureId": "Coffee&LunchCROSSROAD",
+ "dir": "fs-fd6333c946",
+ "storeName": "Coffee & Lunch CROSSROAD",
+ "mapsUrl": "https://maps.google.com/?cid=5945162522328639571",
+ "placeUrl": "https://www.google.com/maps/place/Coffee+%26+Lunch+CROSSROAD/@34.4794116,136.7428295,17z/data=!3m1!4b1!4m6!3m5!1s0x60045130b2d7e65f:0x528175d0b35d2853!8m2!3d34.4794116!4d136.7428295!16s%2Fg%2F11tf4j2vbs?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "Coffee & Lunch CROSSROAD",
+  "address": "三重県伊勢市楠部町７９８−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-fd6333c946/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMeitMByy2WccoM3PMw2xoceBlE8nnLmjccRiSXACnFa52LsQpaP1bPq0PzoP6FFeR7ExHBJZtX3z5cBLCl1b9AkY0iSQRAYT3i7Q2Z-yDPmuAjdY6WkZkv2Abt4lnKjTNsYZQnHikC9LN=s1200",
+   "what": "ワンプレートのランチ",
+   "width": 900,
+   "height": 741,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-fd6333c946/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tcdl3szPJ12ij13M4Zyv-m5exl3HoAmw5vk6Ui1Fra8lTxiL_lrxq4hbx7IAtvHL0Nrl--6VbBjmrpWAGzYib9TDGadBAYpAGmeZPbaafkGaykcbVA50Hxb-LfAbSNGavv9g2k=s1200",
+   "what": "木造の店の外観",
+   "width": 900,
+   "height": 405,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-fd6333c946/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-6ZlDI7sAKpKt9rLmzA2babjMxMpQVc4U31Av5sF2WY-Gq6T4VVvdSMN4k1qnINNiNJtUZI1GKfStx-FjcW9QhFUycrdaRnlO_XGpfbZT8snp0t-mE12t9FQrO-3Cbc54-ddPv1e4UhGS=s1200",
+   "what": "ギターのある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p5(アクセス・立地)に合う外観の写真が1枚だけのため、p5は店内の写真で代用"
+}

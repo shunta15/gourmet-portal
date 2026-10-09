@@ -1,0 +1,45 @@
+{
+ "featureId": "cafebarGroovy",
+ "dir": "fs-4d1c1ca2c2",
+ "storeName": "cafe&barGroovy",
+ "mapsUrl": "https://maps.google.com/?cid=14157833999191658022",
+ "placeUrl": "https://www.google.com/maps/place/cafe%26barGroovy/@34.3294745,134.049072,17z/data=!3m1!4b1!4m6!3m5!1s0x3553eb82d3b72d89:0xc47abb02c6c44e26!8m2!3d34.3294745!4d134.049072!16s%2Fg%2F11l354p1s8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "cafe&barGroovy",
+  "address": "〒760-0073 香川県高松市栗林町２丁目１７−２３",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-4d1c1ca2c2/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXv0oMisse4QMm1JF2_0GllrXOtpaJm3vw6k_uNkRFENLjbVmpyd65hb_Rm_kTwmSZPaSXfaEXryDyZyd38EPaNBH_PtQTGdcaAjcQ0tn3r-vLd0LLEXnqKAS2tWlBO7i_NgqI3KNDKM8=s1200",
+   "what": "パスタ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-4d1c1ca2c2/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmqUQ220MtsT3xTlY2UzkJ5flvaDFaaeDgCHSwFMjLthsxvh04G5kNBZVTM-3r3h_nNK2y3679gya48WjG4xNv1UUxEzAw4_mTHJZFiyftXWWCbusDlnJQPt1WE0LT9K0msg0MMq1JzT9Z=s1200",
+   "what": "ドライフラワーの飾られた店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-4d1c1ca2c2/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxTwgg-ztOdzXwD9DErhoyvbx2t5cVHi61oLnzwlUP-5GUf6RloSxlEw3jq-VBRrJDN8Z7OeGI8n8yqEVAwrpFkziR7Sw8Byt1I2mM7-9dSOYUILV3xxuYrTXpgqDLGHjxiiDMiujUTjof=s1200",
+   "what": "看板の出た店の入口",
+   "width": 675,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,45 @@
+{
+ "featureId": "沖縄料理ピーター",
+ "dir": "fs-a3a0d1676d",
+ "storeName": "沖縄料理ピーター",
+ "mapsUrl": "https://maps.google.com/?cid=7354443568787103458",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E6%96%99%E7%90%86%E3%83%94%E3%83%BC%E3%82%BF%E3%83%BC/@35.2723497,136.2602986,17z/data=!3m1!4b1!4m6!3m5!1s0x6003d4cf1c3cc301:0x66103b75d6361ee2!8m2!3d35.2723497!4d136.2602986!16s%2Fg%2F1hc2kcjwq?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "沖縄料理ピーター",
+  "address": "滋賀県彦根市佐和町９−３０",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a3a0d1676d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9w2koM8SpynwSIEp2zoQAgn1RfdduyO2baUcDMnnXkl8JL7Ma3lqUriXYAnXPG5Ydlfp8LsLRZnrY31D0IgJKh9mjva7lW8AhK-eB-aHyVnjdWOBskLmq7eOdYRKD-2J9O3iH=s1200",
+   "what": "海ぶどうをのせた丼",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-a3a0d1676d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXW8rBeVk4gbAlHoblR840Vnaml4D79S2wHfXoCKyxFjCGaIp8sjWNK--Sut0NVUqBrwavf9O8ZDeLAJQD8_HZjCrmdE6U2l304ID4PfgWltxYMdjlQVm-pX_HBSmke9QZBNXuzbXvbKdS=s1200",
+   "what": "座敷席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a3a0d1676d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbOFTc_ozPgCV1TPfkI5JZkC8-dviX9c1Az5unjUfl05EstCTjUbeT0VFN1r8zC2G2e1CQjjIshs0L-ulR9dRbwq5lTg9zMrKr6WVaPQePA7MXpbqIeUZ1CPHQk6ZSBYbZbI-l=s1200",
+   "what": "のぼりの立つ店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

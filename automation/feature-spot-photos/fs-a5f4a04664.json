@@ -1,0 +1,35 @@
+{
+ "featureId": "洋食DiningWoody",
+ "dir": "fs-a5f4a04664",
+ "storeName": "洋食Dining Woody",
+ "mapsUrl": "https://maps.google.com/?cid=8629462057388773471",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B4%8B%E9%A3%9FDining+Woody/@34.8080855,135.4447124,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f1c197de4499:0x77c20205355e905f!8m2!3d34.8080855!4d135.4447124!16s%2Fg%2F11r_vh1qfx?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "洋食Dining Woody",
+  "address": "大阪府池田市石橋１丁目３−１５ オアシス・アイ 1階",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-a5f4a04664/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2xEJM3SOvNkr9Dnzx-GmjtjL8M4JzDbldZxuft4yaU-UToreFYf93nTj3UKDyg39bM-YWPvBAeC5IIbzEGhgMWyHs4lyu0_Z8IVi42kx69OSt0vxlGiobWTluT5GggD6YfOw5=s1200",
+   "what": "ハンバーグの一皿",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-a5f4a04664/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STyXsHTPsBwaoGXZiBijFAPM3XhRHvn0RWB0nKU60gVLCj2QscHJB0qdb9XKe6TU0dh_dxo9dFwb6ofYwSPFLyHUi3cglAR7QaeRrpy0j2dZr-QYwB87lyLzbBDjtWrE-bda2ozoHBBUzv=s1200",
+   "what": "窓際のテーブル席のある店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

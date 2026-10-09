@@ -1,0 +1,65 @@
+{
+ "featureId": "日本料理利喜笑店八王子",
+ "dir": "fs-f2176724e0",
+ "storeName": "日本料理 利喜笑店 八王子",
+ "mapsUrl": "https://maps.google.com/?cid=12279973196302865999",
+ "placeUrl": "https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E6%96%99%E7%90%86+%E5%88%A9%E5%96%9C%E7%AC%91%E5%BA%97+%E5%85%AB%E7%8E%8B%E5%AD%90/@35.6590272,139.3341938,17z/data=!3m1!4b1!4m6!3m5!1s0x60191e7810ae10f3:0xaa6b3a8f58f3564f!8m2!3d35.6590272!4d139.3341938!16s%2Fg%2F11g9k0t15m?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "日本料理 利喜笑店 八王子",
+  "address": "東京都八王子市南町２−７",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 1,
+   "path": "/restaurants/fs/fs-f2176724e0/p1.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGXwVuz2RP482hybwEInbrFmjnxrcN_whbYafrTN4D13RrXvdzKUUxUSk3nma41YkM04LGtD5_iurtyRRGW3ZS2mZ4H3h0cYp0-DqzhJDiS22komPK0QSCmDjy_xS1VYUFowPSgxlEzZwp=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-f2176724e0/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rsh1fmPa9ihC5mzEMm4O6K679YS0zy3QWUugXb1b60NWVXS4HxD98fQSmE1ZZjuYCXC7IieOjDc5XUNYCdA0HD4d7OZ5DGEv3tNNvoBlnxuFu-7OEDICSXQu-RliSlFgewwOqwDA=s1200",
+   "what": "白子の小鉢",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-f2176724e0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPrMbUuImjcAilwXaPk0D02KWbXGTolOsrQtCUUYnTVLqoBF4F2ImvxgF_SiIyMebAbRYo8qXYzttzYX27gF7NBkgzonPFpvMkD36XrJEQpPMpbxGidhZHLFAGJGXdVKVvCgV85y-uTeI=s1200",
+   "what": "おまかせの盛り合わせプレート",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-f2176724e0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbGncu0YMBiivKRimeJLcGS6ADz0YFxWSgFKfFSADZuPb4KztOfWuBPB1Ths6KxgxCLSmxypApIex83ayRVspaj9hGfSAS60dvMkKxKsb3_Rmj8m1LkONkWhuq0pyyf_JtLoN7=s1200",
+   "what": "カウンターとテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-f2176724e0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QKkylbob3U4WXVNyC-CjgwZ16eLwTLDx-H37t3QPt7ZiKmfLMLXXKig59EFHay0r05Hgn9TRLDZJc4LBO776Hg77GR-jKIrGOWK5XyM1RttmdtuD9wVmb6OELjlrONQQz96fhi=s1200",
+   "what": "白い壁の座席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

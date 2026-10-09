@@ -1,0 +1,55 @@
+{
+ "featureId": "らくおーれ",
+ "dir": "fs-c4dca24ac8",
+ "storeName": "らくおーれ",
+ "mapsUrl": "https://maps.google.com/?cid=15514908450854760852",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%89%E3%81%8F%E3%81%8A%E3%83%BC%E3%82%8C/@34.9842025,137.0095428,17z/data=!3m1!4b1!4m6!3m5!1s0x60049c92a0fbc8c1:0xd7500708d7e77194!8m2!3d34.9842025!4d137.0095428!16s%2Fg%2F11ks03ykhr?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "らくおーれ",
+  "address": "愛知県刈谷市住吉町３丁目５８",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-c4dca24ac8/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QVfBApTPX03_1x8jqvEa9SckSpgq2kknP1esQYSjLpceb31Cur7V5sIYdrvW6CBDcSjccDaZfmpWytM9u9NvPTpwfTBbYGpUVx3zzot4uoot2Sie3uKfqFrwVYV9ruMGvNEQmCQ0rEReZM=s1200",
+   "what": "ハンバーグとエビフライの皿",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c4dca24ac8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJ-aLFk4NfGJc5YvqWfzGkXE1OkXMqN1oQhXrLyvB0hXqco7q9135hISEwtgMAO1rATmr7fptof2q4qH4elH9oZ8_jyyXmqc7zPV1kHa1ZdCltV2zH7g6pyqGElLy8ay8eBfs2OkXIw3A=s1200",
+   "what": "鉄板のハンバーグと目玉焼き",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c4dca24ac8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Te33HcJ6HPcnbwYR0Fs9T3--V1AIgCwxDj-2yPV85BGH9k5ZG0Jk8jMBUJ39v2g4a18QabRcmv8xdF96g1cXSz_QvEOsPY6fBYg-tQHxDr_ZXCou8CYaGTNUJiXNgYxeREzaLEPes2izqJ=s1200",
+   "what": "ベンチ席とテーブル席の店内",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c4dca24ac8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkrbD9Hk5zbYlh0codQGglun5s-DudPtxH0ZCSPmkRv0BWUqWXT4q65psikK9DWAM5c5R8fTYWq44g4mfaxEeDcWzny6KfPHXqWDxJHCNpKgjGhCZPLfuKFdH_fv3uXNIWYP22ag=s1200",
+   "what": "暖簾と営業中の看板のある外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

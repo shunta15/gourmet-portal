@@ -1,0 +1,45 @@
+{
+ "featureId": "北海道本格ジンギスカンひつじや",
+ "dir": "fs-02090c6909",
+ "storeName": "北海道本格ジンギスカン ひつじや",
+ "mapsUrl": "https://maps.google.com/?cid=8339197451137066242",
+ "placeUrl": "https://www.google.com/maps/place/%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AC%E6%A0%BC%E3%82%B8%E3%83%B3%E3%82%AE%E3%82%B9%E3%82%AB%E3%83%B3+%E3%81%B2%E3%81%A4%E3%81%98%E3%82%84/@37.3991252,140.3849332,17z/data=!3m1!4b1!4m6!3m5!1s0x60206c867a568d89:0x73bac7e61ade2502!8m2!3d37.3991252!4d140.3849332!16s%2Fg%2F11gbwd08mj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "北海道本格ジンギスカン ひつじや",
+  "address": "福島県郡山市大町１丁目２−１４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-02090c6909/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPBUhBA0qQDY0SIFJ3YgNWxJzBsdK2jyDDeO538vyRVEOsydJEaXmP7oyR7f_7Rqi4wZDKMs-HNpUIZWGnT9BvQhht6ZI2n3SIxhRB3nMBYcARV-8vMCSBYq0gRJ45OXc0-CqPIhSeE3U=s1200",
+   "what": "掘りごたつの個室",
+   "width": 900,
+   "height": 669,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-02090c6909/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWtIf1xycQ-AZR9YGSo-cHI_xlEJ_Vn1rkrQwHPE7RyJXwqDwMOwAN8R3r8ln0cB4DWiSW5TY5wNOCglDeUY590oFIra3ML6llU1wgoF_AqdLoVmfMOBGo_7vVO_bvLetj_kfQ1JHdy9qd=s1200",
+   "what": "のれんのある店の入口",
+   "width": 721,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-02090c6909/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T0-IYqcypdirm-7V7AkyNhDwB7OiAvxtO9FKO5TT6vvn2v6Q70kwuEL8trtEp74oFJ5wrAcaAqY5qlTDod4AuUnoRAs4dURA4d8kJYbBxlhK4tI1jYt-iwCkQGg9Sx7FXQm60sICqskQ8-=s1200",
+   "what": "骨付きラム肉の盛り付け",
+   "width": 900,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

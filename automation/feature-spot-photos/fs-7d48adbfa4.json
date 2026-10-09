@@ -1,0 +1,45 @@
+{
+ "featureId": "小料理木下",
+ "dir": "fs-7d48adbfa4",
+ "storeName": "小料理木下",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E6%96%99%E7%90%86%E6%9C%A8%E4%B8%8B%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E6%98%8E%E7%9F%B3%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D%E7%94%BA%E9%A7%85%E5%89%8D2-1-6",
+ "placeUrl": "https://www.google.com/maps/place/%E5%B0%8F%E6%96%99%E7%90%86+%E6%9C%A8%E4%B8%8B/@34.6837943,134.9402606,17z/data=!3m1!4b1!4m6!3m5!1s0x3554d5d9ef36b625:0x2be9a9a5cff9233a!8m2!3d34.6837943!4d134.9402606!16s%2Fg%2F11fhxchdsn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "小料理 木下",
+  "address": "兵庫県明石市大久保町駅前２丁目１−６ 朝日堂製菓所ビル",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7d48adbfa4/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyvQ1KBvUnGD_6w47IaAM6Lp3WqXvkmJ8MBDTN7NF9bBhwhC_jNElPQ02BaalTWwQR2YAvxg-5_mJ3zitosRw-PZhAH57trNOeU98vh_WZCkhMLPrU3B6YyWCl7685FjraSmxfSg=s1200",
+   "what": "牛の炙りと薬味",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7d48adbfa4/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rpl0Hy2v32O1fXPMiRFX9X8oC4EyQnT0GgxFQBxchQA6M9uw8z3PVA7p85c4dnm-QaphA2-1lNwL3AeLRcmLbDzaI2DsXxsGhu2CNNogNUBvrtAAObd6qiaqo--O8QQoSuhBuK=s1200",
+   "what": "卓上の茄子の田楽",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7d48adbfa4/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUTp9mvKTe-XsrEY0uyOBfJxS_29PMtciU4LjVENaDX1CkYwkAMjTsnx34RbfUfJS2OBS8Va4RhXJIVAGElAEH0OPOm9D9924C1LZwpyivL97-fh0VzqWIcQHYXKiwGtSeK7BY=s1200",
+   "what": "赤いのれんの入口",
+   "width": 900,
+   "height": 507,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の料理写真で代用"
+}

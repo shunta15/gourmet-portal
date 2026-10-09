@@ -1,0 +1,45 @@
+{
+ "featureId": "酒蔵たから屋",
+ "dir": "fs-6e216e1d47",
+ "storeName": "酒蔵たから屋",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%85%92%E8%94%B5%E3%81%9F%E3%81%8B%E3%82%89%E5%B1%8B%20%E9%9D%99%E5%B2%A1%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8C%BA%E7%9B%B8%E7%94%9F%E7%94%BA2-30",
+ "placeUrl": "https://www.google.com/maps/place/%E9%85%92%E8%94%B5+%E3%81%9F%E3%81%8B%E3%82%89%E5%B1%8B/@35.0168203,138.4876522,17z/data=!3m1!4b1!4m6!3m5!1s0x601a3157e65605cd:0xb8aa84dd8b64f313!8m2!3d35.0168203!4d138.4876522!16s%2Fg%2F1tggtl9c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "酒蔵 たから屋",
+  "address": "静岡県静岡市清水区相生町２−３０ たから屋",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6e216e1d47/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qewhzh0EafHT6YnnkClkjJ-L3IPAOjFh9Ck3hcBTk9Shr940GI6aeaOvZ2WZZjieN0DVLDIh3i20flIxUDwOMs2gRVQpeptc2VbC4juyz5lpMkKzUjJRX3iPmXBn1UF10RKftT=s1200",
+   "what": "薄造りと小鉢の膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6e216e1d47/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SoHzKhSK2uUhUdjx89HFP6ImVX5aGUFU900oEd5J4fJR9V8uc6RCbGfnHXMuW6XEp7cOnLW4ap2AligVGL17d3QQJ6VYbsSA2IcgUJvAJ9R6CYjQJsyvlcbJJJ13e3Y5Dla0My4mshRYzu=s1200",
+   "what": "卓上の日本酒と茶碗蒸し",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6e216e1d47/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SB1rjUhZEyQSqeGEQngdRGD9ADSdWZxGVOk8wezpxXERKtDNqCfzRt7VY9uXgTIZF3PGU-YjS285cehHHQx6vGTwMdBzY-kkj10VhZ2F36gv3bMggAdlzqaHbQBckaoYvqlVX_=s1200",
+   "what": "木造りの店先",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、p4は卓上の写真で代用"
+}

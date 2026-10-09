@@ -1,0 +1,45 @@
+{
+ "featureId": "ナナンテアnananthea",
+ "dir": "fs-88fd24a91d",
+ "storeName": "ナナンテアnananthea",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8A%E3%83%8A%E3%83%B3%E3%83%86%E3%82%A2nananthea%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E8%BF%91%E5%B2%A1%E7%94%BA390-1",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%8A%E3%83%8A%E3%83%B3%E3%83%86%E3%82%A2+nananthea/@36.6118325,136.6325187,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff9cd4024ab673d:0xa4e74d07332cca3f!8m2!3d36.6118325!4d136.6325187!16s%2Fg%2F11x1bpvxdx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ナナンテア nananthea",
+  "address": "〒920-8217 石川県金沢市近岡町390番地1",
+  "how": "search"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-88fd24a91d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBdAybKOKfrArCX0VuatksqB4WOl1gC0bqB7lEFtv0aGapn7ujzZ684bgfVWNqfvD_7tx0-0e7Nu5gedUmb1P8YeTiirQEd4cZelTRAiPKQNrFWiUfNd3r3bOXzdpUXN3ohVS8EhTLQVzK=s1200",
+   "what": "緑の椅子が並ぶ店内",
+   "width": 900,
+   "height": 601,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-88fd24a91d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta4g-R1R_mPcOaxstvuRLzaG0MvQSJ1u9t7G2IkRoB0TPYxem9nHcutCYzE1Lj8fy_ZegxmRYpz6Trf13omWfSAgKpQfeqdMNWp-G4w79rzJuTjSv-c2wyKtmqB2tWsKlsGJGZe3kqcitC=s1200",
+   "what": "アフタヌーンティーのスタンド",
+   "width": 601,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-88fd24a91d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2vas6vD13S6rIUYEtyJ8Npm0lUTxJb3aLfkROz8KI7AJI-cG2_gpLS6YjnqCFjxkFjefjeDAzknHgY4LW-UqDSoxC4jEEGhOJEsm2tBeSbHPkqNeUVfQ74Al3DeM2F1-dJYCulmKk-ug=s1200",
+   "what": "緑色の外壁の店の入口",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

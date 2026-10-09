@@ -1,0 +1,45 @@
+{
+ "featureId": "和ダイニングしろべえ",
+ "dir": "fs-0ed2106e51",
+ "storeName": "和ダイニングしろべえ",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%92%8C%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%97%E3%82%8D%E3%81%B9%E3%81%88%20%E9%87%91%E6%B2%A2%E5%B8%82%E5%B9%B8%E7%94%BA",
+ "placeUrl": "https://www.google.com/maps/place/%E5%92%8C%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%97%E3%82%8D%E3%81%B9%E3%81%88/@36.5556505,136.6586372,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff835c970b5d257:0x55f56e58e33d1609!8m2!3d36.5556505!4d136.6586372!16s%2Fg%2F11nxg0ghph?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "和ダイニングしろべえ",
+  "address": "〒920-0968 石川県金沢市幸町２−２ スカイハイツ １Ｆ",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-0ed2106e51/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4WI9XV5BmTXk81zeHrImDU_Ey4J3CZ61RSI3noxO6yyN3if4XYf-5EKROUTypYxgdIEZ4vbHCmTCSjRqGf-dVPXGnuCZJeP5vuvGkoSb-G56ZI6KXqABJjaRwZJKHqfU0wzosG-iMgzpJ=s1200",
+   "what": "刺身の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-0ed2106e51/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOTsw4ZnGqcD9aibolmpGhiOpyA2v3IxoCPtwz8PXMx406VVlOqEL9nGODVT0-LaElz75gzwJXeBOlMueCxNsTLk9I8TGhrqhIyFc1hXBej8kXT2L3kmshAPbsksLIOAnSYyFp=s1200",
+   "what": "カウンター席の店内",
+   "width": 900,
+   "height": 600,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-0ed2106e51/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZtnm1KbHRwVWkVoMr8S_meNNKGsWtN3pnMkVSFePL5sCHejq5FBi9V2r4dveE6_TCO8eNcdfKGcN8iN8TeEIKZVWtH4Qgje-sWwvfFiP1htE53121zdfF3La41-Yg_5uAhkrs=s1200",
+   "what": "のれんと看板の店頭",
+   "width": 900,
+   "height": 506,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

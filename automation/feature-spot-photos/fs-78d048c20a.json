@@ -1,0 +1,45 @@
+{
+ "featureId": "阿波酔処しずく",
+ "dir": "fs-78d048c20a",
+ "storeName": "阿波酔処しずく",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E6%B3%A2%E9%85%94%E5%87%A6%E3%81%97%E3%81%9A%E3%81%8F%20%E5%BE%B3%E5%B3%B6%E5%B8%82%E7%A7%8B%E7%94%B0%E7%94%BA1%E4%B8%81%E7%9B%AE6-2%20%E3%81%B2%E3%81%B0%E3%82%8A%E3%83%93%E3%83%AB1F",
+ "placeUrl": "https://www.google.com/maps/place/%E9%98%BF%E6%B3%A2%E9%85%94%E5%87%A6+%E3%81%97%E3%81%9A%E3%81%8F/@34.06668,134.5498618,17z/data=!3m1!4b1!4m6!3m5!1s0x35537300332ec55f:0x73b733d5ec85037e!8m2!3d34.06668!4d134.5498618!16s%2Fg%2F11m6mwdx2r?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "阿波酔処 しずく",
+  "address": "徳島県徳島市秋田町１丁目６−２ ひばりビル 1F",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-78d048c20a/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwV0MuttegWS8Z1Y6dWDHRsAgyJHDCYxO41PTjWM6Yc9C5Elg5eie4lPc0tnnNdBJYWietmQzmPROGqC17YJKgfacJddsg9egg3lb3d5kWH67dTsBhaAYTlA_3jk-0kHIl4rViYzfYOtkz=s1200",
+   "what": "刺身や焼き物の盛り合わせ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-78d048c20a/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TlHpuVf7NtMxEOi8PNYHg73X7hz4SPOFKINPtNqLjzGaGo2EYhaDX9mKsrAxH9hCf4Yx5ycRpa536zPG7OQomYt3yenf-FURbk8RglZmuSaFRf3l7QP2f-kXgO2WrI1nrIF9-CWlVJcFRZ=s1200",
+   "what": "テーブル席が並ぶ明るい店内",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-78d048c20a/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReHjw1JdYPlGzv3dulZaLMFlMpc3WlefC5kzTpq1indTZPGYUDuDghaaPebceram7W87pbfq6-3OCfKCK_ICPX9h08F-mRo0Q65x5DkF-yxwONft01M0qxywUyAB81laX6SdzlGtUp9tXX=s1200",
+   "what": "看板としずくの暖簾の入口",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

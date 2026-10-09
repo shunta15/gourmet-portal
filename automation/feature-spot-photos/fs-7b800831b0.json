@@ -1,0 +1,45 @@
+{
+ "featureId": "ごはん家さんCOCORU",
+ "dir": "fs-7b800831b0",
+ "storeName": "ごはん家さんCOCORU",
+ "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%94%E3%81%AF%E3%82%93%E5%AE%B6%E3%81%95%E3%82%93COCORU%20%E5%8C%97%E6%B5%B7%E9%81%93%E5%8C%97%E8%A6%8B%E5%B8%82%E5%8C%97%E9%80%B2%E7%94%BA3%E4%B8%81%E7%9B%AE14-24%20%2F%20%E9%A7%90%E8%BB%8A%E5%A0%B46%E5%8F%B0",
+ "placeUrl": "https://www.google.com/maps/place/%E3%81%94%E3%81%AF%E3%82%93%E5%AE%B6%E3%81%95%E3%82%93+COCORU/@43.8041884,143.8704983,17z/data=!3m1!4b1!4m6!3m5!1s0x5f6d57a8216ed4cf:0x12144333a5719d2b!8m2!3d43.8041884!4d143.8704983!16s%2Fg%2F11xzjxbh21?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ごはん家さん COCORU",
+  "address": "北海道北見市北進町３丁目１４−２４",
+  "how": "search(店名の完全一致+住所)"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7b800831b0/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgUrG5wYGE1y0z4Dsgw-RyEmR6BbakPriUsnfaHOiVYtogWf7m61kXViAAs3whR8MzAmvmTDKuhVDbO3juSRL7d395r4x4yTJSd1y_oBM7gvF1cf6dF-a6zOSXafzezngEaUfD81obTCq0=s1200",
+   "what": "定食の組み合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7b800831b0/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROuuWBGEwRKpADC2wEXAnIZqW61m8cu2-DEIwknWNkT4UVl09nUy0teux1XewtJUbhJTDFzniEba2ikk9LFZRAVXeVWDJjx-XMxpl_gZ7olya9le1wuOrWEFKeyatHzJR958b86eQqji-2=s1200",
+   "what": "白い壁と木のテーブルの店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7b800831b0/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLBoPvL_hrUENCP6L23lCs9QDOykOoOJ_hQytWVuRDmF5E142mWPDsNAV-iZ1pxfB7qem0LW2vBYODnEYR01pxZo2l9LzyKaAQMaFYvklPx8z3Sf0GC-4Uu87FJ-10w9aDclac4w_022_u=s1200",
+   "what": "COCORUの看板がある外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "検索URLで単一の店ページに着き、店名(空白をそろえて)完全一致、住所は北見市北進町3丁目14-24で一致。"
+}

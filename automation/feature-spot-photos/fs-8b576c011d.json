@@ -1,0 +1,45 @@
+{
+ "featureId": "蕎粋庵",
+ "dir": "fs-8b576c011d",
+ "storeName": "蕎粋庵",
+ "mapsUrl": "https://maps.google.com/?cid=9372004859860226882",
+ "placeUrl": "https://www.google.com/maps/place/%E8%95%8E%E7%B2%8B%E5%BA%B5/@36.7248551,139.6883874,17z/data=!3m1!4b1!4m6!3m5!1s0x601f0acc57101ebb:0x82100cc3d9341342!8m2!3d36.7248551!4d139.6883874!16s%2Fg%2F11bx1sf4j8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "蕎粋庵",
+  "address": "〒321-1261 栃木県日光市今市７３３−１ 日光街道ニコニコマルシェ",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-8b576c011d/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVmwWJO7Rmh3M8yotN1rowvrkicdU8-jxF45hpfjDbNDPdfZEUMWMCWGFarn3pn-njSJZcbvur4naH-nkmkxct-uAzApds0R8D4hSiTn6XY-JMUNYIB9jaRCQPnor4XdOzFawq",
+   "what": "そばと天ぷらのセット",
+   "width": 900,
+   "height": 609,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-8b576c011d/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SefEMitnAovPnK_q2jaSA8G55uRk0sYrpgO7F_R3rnFgUatK8Zt4Z2cNYrE1-5YRIlBaMqW4opeFLRvLwH84H-y3xXC3AxyZght2iHYgT72uJnAGnN-emgCnuBL2MtY7N_EZSavptHp7k",
+   "what": "入口と店内の様子",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-8b576c011d/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiQRdfVbczkpG8qd1iySmpqqWPQJYCVRINqWLsyRIZbecw590xHReVSAOXuZFU6-YoEBdeM41gfvEEyP17fnt6vdKhLe_ofYC_UzpDQUEe5dUf0ECZgCkyuCX-SH6ro_92iJn1ECAKGnvy",
+   "what": "ざるそばと小鉢",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無い(入口の写真は1枚を店内用に使用)ため、ポイント5は料理の写真を当てた。"
+}

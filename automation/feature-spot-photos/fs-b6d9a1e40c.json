@@ -1,0 +1,55 @@
+{
+ "featureId": "ウーブリエ",
+ "dir": "fs-b6d9a1e40c",
+ "storeName": "ウーブリエ",
+ "mapsUrl": "https://maps.google.com/?cid=8572730183511680936",
+ "placeUrl": "https://www.google.com/maps/place/%E3%82%A6%E3%83%BC%E3%83%96%E3%83%AA%E3%82%A8/@34.7922692,138.2388378,17z/data=!3m1!4b1!4m6!3m5!1s0x601a5bbfabf55b47:0x76f874ae7f7ba7a8!8m2!3d34.7922692!4d138.2388378!16s%2Fg%2F1vhkkm51?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ウーブリエ",
+  "address": "〒427-0104 静岡県島田市井口１４８１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-b6d9a1e40c/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGBzyHg9p63M6lHm1GaEh1szMqLE6rTDCIvW9dVn8bGQkE3Deq4FCf_YR88eI4EfCtoz4_2DLe3xIzQBWx99-So6Ogbb265eFU2vAbfsHgwVHz6n933xcFa5VjQgncT6VEEtUd=s1200",
+   "what": "並んだ洋菓子",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-b6d9a1e40c/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTL5eSfsxyywyCtdpAisgM9NBe_e0JaMkKzqcpFelnuNpex6_yxoySRXcPQilhv7iI_CqfgqnwULNOSgJe8M5z1MHUEdchanVzwbMWXY81AlsKDNiZMS5_dsTvmeFAsT-aYP5S3Q=s1200",
+   "what": "抹茶のかき氷",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-b6d9a1e40c/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpRFDggPH8w17B-FbRCOlNKczrWCBfFWqv32Zfw9a5XiKz4uFQn4IbFk_t_2ITexwsCRgeAXIXMsrTWvuPBDaSEiY-I-ugz0jB1Ees-kX3jL08AWhf7nV9ig9y_8M3RLAND03G=s1200",
+   "what": "明るいカフェ席の店内",
+   "width": 900,
+   "height": 506,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-b6d9a1e40c/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SweebdlzvQh_41VKLzICty5IkXpFpDpau8Zek5F4zdRksJEgd7iARjlck-WzOsRb2pJATxvOlWqrbelg3vcPltOc9z5shoQZ9D3CpATJh6Nar-ZrfN587ORGU6UkImai2f_hRp=s1200",
+   "what": "駐車場と白い店舗の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

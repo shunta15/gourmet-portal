@@ -1,0 +1,45 @@
+{
+ "featureId": "トラットリアネロnero",
+ "dir": "fs-c67572cf22",
+ "storeName": "トラットリア ネロ nero",
+ "mapsUrl": "https://maps.google.com/?cid=9603387884755180636",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%88%E3%83%A9%E3%83%83%E3%83%88%E3%83%AA%E3%82%A2+%E3%83%8D%E3%83%AD+nero/@35.28908,136.799645,17z/data=!3m1!4b1!4m6!3m5!1s0x6003a0c26a6c6f9d:0x85461666771f5c5c!8m2!3d35.28908!4d136.799645!16s%2Fg%2F1tf7glxj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "トラットリア ネロ nero",
+  "address": "〒491-0914 愛知県一宮市花池４丁目５−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-c67572cf22/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-hvUx_UVsGtF2D7ihczkdYSc-RPTHgrPXceVpVnm4ZRZ5ldqi-Hy392P4aMMs-Upb4CxBMv2yhztYLbHMYbG0E7FHFWvtVBEAKSChnBEsaHv5sHH1unfgZ5097Ld06kE8Xu3Yp0DbGQKk=s1200",
+   "what": "パスタ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-c67572cf22/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcEUNP_D1hvkQZdLC8tB8kZ9hQKRbRo-JyqhGHLuevn98DL-ELXYQ2R8WNOLDTuJdPXP7ZkcTFvNFVc8zk8tIM4zGKdx_xzbRDbD0WpL1pqYR7rarPD8CrzXZ1d2s9mZVD8o_hCSR-6ows=s1200",
+   "what": "黒板メニューのある店内",
+   "width": 900,
+   "height": 678,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-c67572cf22/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6zNNXzD9OfyOgwCV9QRjvbF4F-StNXsxitSMpZUxaqkNIbMAwQ8pvRfIIhfJ4HWRsXwclSRuG0mp-0qdruLycQK-AiBO61qcx-Ct8Ct42xKmERC7ldNWrgouwyAR1bmUfliiT=s1200",
+   "what": "厨房の見えるテーブル席",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "外観の写真が無く(外観は広告画像のため不採用)、ポイント5は店内の写真。"
+}

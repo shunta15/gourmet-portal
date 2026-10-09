@@ -1,0 +1,45 @@
+{
+ "featureId": "ルーラル",
+ "dir": "fs-419051acf9",
+ "storeName": "ルーラル",
+ "mapsUrl": "https://maps.app.goo.gl/revNSn3DMqC4C4mJ9",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AB%E3%83%BC%E3%83%A9%E3%83%AB/@34.4199546,135.408464,17z/data=!3m1!4b1!4m6!3m5!1s0x6000cef9eb2b2bf5:0x9b2cdb278d2e2152!8m2!3d34.4199546!4d135.408464!16s%2Fg%2F11cmxx9rwf?entry=tts&g_ep=EgoyMDI2MDUxMy4wIPu8ASoASAFQAw%3D%3D&skid=8df7da00-7421-4937-814b-9b5ffc0c026c",
+ "matched": {
+  "name": "ルーラル",
+  "address": "〒596-0845 大阪府岸和田市阿間河滝町１６４３",
+  "how": "short"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-419051acf9/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tv4JOJZ0TJKG4yCPmOeEOVE0joHG8H0t6HvShyj0QAq87XhyeSQaOk1uxBa9g4iTd8xG3LRDt0p-jcDtvqT5-bkfg9R-XbAyPvlqzePaa34UtYL232Lke6Fg6_QGM5ts0pBCKbSxOva3dp=s1200",
+   "what": "入口の看板と暖簾",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-419051acf9/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhLLjZ_Li6cpzEhAkxxzVwi0kRxULO7O5wGREXPIUSENnvSHN38MF7VwN_uTeO0kgMDEUOI1qqWcI4dx-xZR-7yNQxNJmEYaOnycKo6O-9w0JZuyAegmB9gwDgiRR6pK0HKYWN5DFyfDzt=s1200",
+   "what": "窓の外に庭が見える座敷",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-419051acf9/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TpvwTrVg1X3sbCS5C-_P5AzjwryA97KUGe-vhfkQK7GAVKVte04dLJEgLP8utMk3A8BOBkTruxXzS97Cg7ZQfJ7E_4QKQcTCBZBLdM_XRPoFRgIXZ6OVXzDivtEDqHIbEW10trAgFmN44=s1200",
+   "what": "庭に面した古民家の外観",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

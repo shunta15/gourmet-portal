@@ -1,0 +1,45 @@
+{
+ "featureId": "海鮮割烹食堂樹八",
+ "dir": "fs-7de1f112cb",
+ "storeName": "海鮮割烹食堂 樹八",
+ "mapsUrl": "https://maps.google.com/?cid=13222589776166685101",
+ "placeUrl": "https://www.google.com/maps/place/%E6%B5%B7%E9%AE%AE%E5%89%B2%E7%83%B9%E9%A3%9F%E5%A0%82+%E6%A8%B9%E5%85%AB/@37.1723766,138.2419042,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff6786d39e5f537:0xb78013585b2089ad!8m2!3d37.1723766!4d138.2419042!16s%2Fg%2F1tjbs00x?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "海鮮割烹食堂 樹八",
+  "address": "新潟県上越市西本町１丁目１４−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-7de1f112cb/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxHzrf4g4VwCyeWmZc0BY_AzJ8LFECPXVVQDfyUPVDYXVP9N20XUY4ESGszjWbMPlCw1Hvq1C5A8bzwPhlxuD0HCX4rxz7iiVFVKcoRMOuvdQ0cRC83OJ0sti4fablfyNKauy_h7DUWUyK=s1200",
+   "what": "刺身の入った定食",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-7de1f112cb/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qr9fPcPl4gve1PY0Iee2OOvS2HcCNfuuoLl7KvXqzM90pzDodlubaDpPZ0kP6TIUeO5Mztk01jAUM8FS1OPQldZ__C_SfCobruehIZgvZuIs_M_PA7EGdsDHH4wdFzMwvaYLZAnw=s1200",
+   "what": "カウンターに置かれた刺身の盛り合わせ",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-7de1f112cb/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAhgmjjXZnyuIzOOj1Ga5TcS_zg35uViBnL5gnyyx33bRyZ2LUB3azX-fEDyfveeuZlJZUsuq1KE5qDNa5OIUeixeIbB2jSoKEOFJ0a393S0o0S5Mmm84qsBHLTsA87x-yBPCbAqMyPYSW=s1200",
+   "what": "夜の店の外観",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "店内の写真が無く、ポイント4 はカウンターに置かれた料理の写真で代用。"
+}

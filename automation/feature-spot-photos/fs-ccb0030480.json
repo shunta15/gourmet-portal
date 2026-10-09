@@ -1,0 +1,45 @@
+{
+ "featureId": "神宮茶処あじゃり",
+ "dir": "fs-ccb0030480",
+ "storeName": "神宮茶処あじゃり",
+ "mapsUrl": "https://maps.google.com/?cid=11611536557382232886",
+ "placeUrl": "https://www.google.com/maps/place/%E7%A5%9E%E5%AE%AE%E8%8C%B6%E5%87%A6%E3%81%82%E3%81%98%E3%82%83%E3%82%8A/@34.8249325,135.4277189,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f0cbbb8fe429:0xa12476fa773aeb36!8m2!3d34.8249325!4d135.4277189!16s%2Fg%2F1tgcxyzt?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "神宮茶処あじゃり",
+  "address": "〒563-0058 大阪府池田市栄本町１２−４",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-ccb0030480/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SoqIzAkAzKeMPcykz82ID1BUQsVkjHyMPWhtZtL6ICrzNAsgyzZORbtYVhoWUpY966YVLq47luW0nD9itNLGrHHuu3OEfoCKnJCn6PixXgxYdPay_FUY9jYJmVcIPypa2qGAc5SvHtcJY=s1200",
+   "what": "ランチの御膳",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-ccb0030480/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCDvJtfruY_lAkDZzfJ423jVAaAPtYzXrg8fs7wQMtc1_sOD8MMk7gYRb3xy8a4WTArWoP00L6NpD6bRuEZlWViNa-Nsdnoyi30oRUMy47BRdxY9-zYHbrJhIb6Xmyjv43-os=s1200",
+   "what": "窓辺のテーブル席",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-ccb0030480/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QDhIxARKYlOUmkEUQHXUbtnZmEA0HcLNx835dm-0OzsRCnwI-t2rLzntpqSgMbv44xsJUMfS0qOJX52Vcr2_X7K6Z_107LwcTkOci25rj5Gi8DLLxha0lZE7SYigTTmd61EZW7=s1200",
+   "what": "のれんと看板の入口",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

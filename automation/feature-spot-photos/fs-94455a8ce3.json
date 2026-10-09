@@ -1,0 +1,45 @@
+{
+ "featureId": "SEAFOODBOWLSHOPINTANASHI",
+ "dir": "fs-94455a8ce3",
+ "storeName": "SEAFOODBOWL SHOP IN TANASHI",
+ "mapsUrl": "https://maps.google.com/?cid=12622748488284227332",
+ "placeUrl": "https://www.google.com/maps/place/SEAFOODBOWL+SHOP+IN+TANASHI/@35.7271918,139.5409349,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ef791a5d8125:0xaf2d02df3547c704!8m2!3d35.7271918!4d139.5409349!16s%2Fg%2F11hzs1jpbc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "SEAFOODBOWL SHOP IN TANASHI",
+  "address": "〒188-0012 東京都西東京市南町４丁目５−２ マツヤビル 壱番館102号",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-94455a8ce3/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeCo-bazYRW3VPV_xbaQeCdHusHLaQt1_CMa-dKSgRiWajuQFDA1pU3kVq7B_HAqKkpaxvd3Mxtte4dwM37P9Yxmp3PDjS98LMCIQPizhlNh3ydbsQr7PuLD-M47pscGU0E_KQ",
+   "what": "アボカドとえびの丼",
+   "width": 900,
+   "height": 678,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-94455a8ce3/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5pZdppFsN_GRD2kQNr-hQa3bht3H_DIbA_Oey__uO3tZODJm-46WwBzNYINq7vOU5dLvj9rs3-Q1wTbes5Qbcvj45MQAkacx1-tegKrLpJLHdQ8P_oJTTrO7jSilGq2Oa4eTG",
+   "what": "持ち帰り容器の海鮮丼",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-94455a8ce3/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYBA1nQ7lxXIfvfFA5oor-OvkjYcWOsAhl43huxLSUoWWwxTJ7EY7Z2QVivYDlzbNm16bcWOBdvXDGdc1DWemEHmZM-eUY4KnOCMNz3bxvhz_9x_qxx_z9oiqnGpJwxFsUL7LS",
+   "what": "店の入口と看板",
+   "width": 900,
+   "height": 551,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

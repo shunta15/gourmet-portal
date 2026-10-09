@@ -1,0 +1,45 @@
+{
+ "featureId": "焼肉いち",
+ "dir": "fs-30556b2f9b",
+ "storeName": "焼肉 いち",
+ "mapsUrl": "https://maps.google.com/?cid=4921041219545888055",
+ "placeUrl": "https://www.google.com/maps/place/%E7%84%BC%E8%82%89+%E3%81%84%E3%81%A1/@34.5150277,133.1446195,17z/data=!3m1!4b1!4m6!3m5!1s0x3550fdcf3d485c87:0x444b0cea98167537!8m2!3d34.5150277!4d133.1446195!16s%2Fg%2F11h7d7rgy_?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "焼肉 いち",
+  "address": "広島県尾道市御調町神１４２−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-30556b2f9b/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxXW6qMj1SjUwU-oWJfpnfPcNCePDLgCPa0w1VvgTzMGnljADptLTeecWKHk4qdBoJ8qcP_NKVaG9HsWdiVNUMTiFhVXa1eonN44RBRcIbQDeo2VPqAYstYts2kejpNVwPHnzi=s1200",
+   "what": "厚切りのタン",
+   "width": 900,
+   "height": 675,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-30556b2f9b/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROQqAVPGBoN6UUUf-79ysZ_WgR_096BVatko_t82BHDGd08Da_RXVSraScR_o_8Ox27aejKOUnuDvgH_WaFgmOv7SmxWfMpxI5wDlLF1YRi8WRVkzEN6fMzcVG6QpEBDwYvc-3=s1200",
+   "what": "酒棚のある店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-30556b2f9b/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qra3sVQEulkyZ8R7WZ_rvG6uJ0VGO9E0Mv0VgQJ_m5wDljMu47fF_Edelrhwz_q6fAzl137zObP6HgQmm247zGteNO-zfTQd1cX7VNMxXSobcHK_ZSSIfN4bMRXgznVNIOhJcAG_LidNen=s1200",
+   "what": "夜の店の外観",
+   "width": 900,
+   "height": 600,
+   "byOwner": true,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "360度画像(17-19)は使わず"
+}

@@ -1,0 +1,55 @@
+{
+ "featureId": "ロースタリーフィト",
+ "dir": "fs-20266935f8",
+ "storeName": "ロースタリーフィト",
+ "mapsUrl": "https://maps.google.com/?cid=4887679577309744033",
+ "placeUrl": "https://www.google.com/maps/place/%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%BC%E3%83%95%E3%82%A3%E3%83%88/@36.3608583,139.2771236,17z/data=!3m1!4b1!4m6!3m5!1s0x601ee7003c82b021:0x43d486adf57a8ba1!8m2!3d36.3608583!4d139.2771236!16s%2Fg%2F11zb9jmcpx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "ロースタリーフィト",
+  "address": "群馬県太田市大原町１５３３−２２",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-20266935f8/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXYIsNxPBqeKKt3f5jf96StlGE2Sx2xiohwREiqtBupqxRmf5_pY3MY4bH5z_WRQyNp6wMDOt9Cq0yzTLlGSPZNCe1rQ1i1Lj09O7P_b81PkOg8gbMyHk4Jk14msEPNNAJth0p-nNGwwY=s1200",
+   "what": "コーヒーと焼き菓子",
+   "width": 900,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-20266935f8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQHE3WHbQq2enFDeMXfRqutyq_JCkN8HywhJkqxr4bQxw08NaLS7HNFRBqvlrBLin9tdnriLQ57IAnxFonpNxwTXe0m00mtSsr9NAoRMyoGTaikQvc4Idgx9sNVoFhahFYdpwBMp_O9rE=s1200",
+   "what": "ケーキのスイーツ",
+   "width": 900,
+   "height": 900,
+   "byOwner": true,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-20266935f8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STb9UhXxPjFNSqA6EcEccO3s-1xXKM_HQzgPQbU3Tz2hoiR6wsIuaaDko-Nzac4Klofs9zOmH4purZ4Q8J9lhYqB4SHcVV0OwYp4NbT6A7zXxXFxi0vxNZYj4-pyhOHs8rpp8RTQGekMmr=s1200",
+   "what": "カウンター席のある店内",
+   "width": 675,
+   "height": 900,
+   "byOwner": false,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-20266935f8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNGV1OYzndZ3c1X2n4nOzjo3ImdfOqQpUzrP6sWBO8qteJmcBp_Cr_w_GEkmhjNaVz4VMVE4qiC29DySe6YPGvtscJBmBjANp_LVxBpL4XTC_9ZXuZ4e0qH_LLiT-TZ7OX5Uy-7BR6w8xK=s1200",
+   "what": "看板のある店の外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": false,
+   "source": "Google マップ"
+  }
+ ],
+ "note": ""
+}

@@ -1,0 +1,55 @@
+{
+ "featureId": "幌馬車樹樹",
+ "dir": "fs-dc2873e4e8",
+ "storeName": "幌馬車 樹樹",
+ "mapsUrl": "https://maps.google.com/?cid=13409554889265008502",
+ "placeUrl": "https://www.google.com/maps/place/%E5%B9%8C%E9%A6%AC%E8%BB%8A+%E6%A8%B9%E6%A8%B9/@35.685108,139.3288735,17z/data=!3m1!4b1!4m6!3m5!1s0x60191fc95794f059:0xba184f1ffabe4f76!8m2!3d35.685108!4d139.3288735!16s%2Fg%2F11khchy98c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "幌馬車 樹樹",
+  "address": "東京都八王子市谷野町４６１−１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 2,
+   "path": "/restaurants/fs/fs-dc2873e4e8/p2.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNll81iHd4h43oOhiFASlG13IpQMuuPuav5PU3dQWAG8kSX953-Qdr65cqKRP_WcGJPWUvEySrQvwJY8mLa4ye6UC9KXR97NcXuz9AGRGTvgVRolSJN0en16XACS59wHEwusP1=s1200",
+   "what": "カレーとカツのテイクアウト",
+   "width": 900,
+   "height": 714,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-dc2873e4e8/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TpZYHuMFP3NPHod0UDww2-VBRDocDT7ZtF0xRe-fdqHm3p8tBNfzdaf-85x1t5MZK0jnFo3VuJl7ts9xDGi3QnlP8TOBJSIjvPwta6ydvjFj7rWtHanXp1WuGujBna018Sh5x88g=s1200",
+   "what": "木のトレーの丼",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-dc2873e4e8/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTiIv-fWZdf63GwVyiBb6ZM8drbmoEPlIvo9CoeZYKlLgeN4Ka5FINuMtdGk7abIXZS3AEKrbxaO_ArUsSWsRWYBZ3s6DABdEi5u0b-LnThBtnKQDLyEDCB17betK5hXz0aaoRHw=s1200",
+   "what": "ガラス張りの店の外観",
+   "width": 900,
+   "height": 506,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-dc2873e4e8/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qk7s5iK6kCAE3ocWlLz2o5zqHxRlUQeDMMJC8TFqh1Ua_wQPJQ-SuO2bw4Dta7-ePVtIvj-Lgz-UD-fC1CeF37zr81YKSRtyq55xa-x1p3brlhNPDvNafpryaQi6pnh4Gx8_SZ=s1200",
+   "what": "カツをのせたカレー",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "p3(店内・空間)に合う店内の写真がなく、料理の写真で代用"
+}

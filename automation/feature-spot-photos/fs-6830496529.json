@@ -1,0 +1,45 @@
+{
+ "featureId": "BeatoKitchen",
+ "dir": "fs-6830496529",
+ "storeName": "BeatoKitchen",
+ "mapsUrl": "https://maps.google.com/?cid=16408422063264599554",
+ "placeUrl": "https://www.google.com/maps/place/BeatoKitchen/@36.3353611,139.1476677,17z/data=!3m1!4b1!4m6!3m5!1s0x601eef003c283aaf:0xe3b66cee55918e02!8m2!3d36.3353611!4d139.1476677!16s%2Fg%2F11n9dnk4p6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+ "matched": {
+  "name": "BeatoKitchen",
+  "address": "〒372-0801 群馬県伊勢崎市宮子町１１９１−２１",
+  "how": "cid"
+ },
+ "images": [
+  {
+   "slot": 3,
+   "path": "/restaurants/fs/fs-6830496529/p3.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TotSECxMw0PRf9ieFE-2B9ppwyvnAQ2o80Zmlvjd1CZmCzLDwDK5DLQfNfy_MtZ583TL1yYcPev9wFg2xrFw0trQatj0421m0bMen1hPjZ7G7iUQefPlRd5veaxYTXMrLcnBR_yf9n1x6r=s1200",
+   "what": "シーフードのパスタ",
+   "width": 804,
+   "height": 900,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 4,
+   "path": "/restaurants/fs/fs-6830496529/p4.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXOHSB00zTksfV42z2ezUyefX-8ascBs3AwYlLBam7ocEH1M41NMA1B9OvEt87Bx0eWIkt4ViNWkkhHbbO2h-e_KZQ1vTQ647yQ6rcGai-XHRldnjBTXqd59XC8d8k36sN1UNXQGy2LEk=s1200",
+   "what": "畳のキッズスペース",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  },
+  {
+   "slot": 5,
+   "path": "/restaurants/fs/fs-6830496529/p5.jpg",
+   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sjc3Qx8u5YEhYF0HLBpm1Tr74BoEUWsIb1iFySSJXpIsJNnU0Micyb-o9ju0l7UfzixcLftHBZA5jP1INmRfa9hI3cX5P7wco7S7FbDDQ6oumL7tyUplLp5ElL5iGmRwheEQAn_VQn2NWo=s1200",
+   "what": "PASTAの掲示がある外観",
+   "width": 900,
+   "height": 675,
+   "byOwner": null,
+   "source": "Google マップ"
+  }
+ ],
+ "note": "slot4は店内のキッズスペースの写真(客席全体の写真は collage のため不使用)"
+}
