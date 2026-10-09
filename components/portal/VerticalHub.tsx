@@ -74,7 +74,7 @@ export default async function VerticalHub({ vertical }: { vertical: VerticalKey 
             {catNames.join("、")}の店を、エリア・種類・利用シーンから探せる入口です。
           </p>
           <div className="mp-vh-state">
-            <p className="mp-state"><i aria-hidden="true" />{total > 0 ? "掲載中" : "掲載準備中"}</p>
+            {total === 0 && <p className="mp-state"><i aria-hidden="true" />掲載準備中</p>}
             <dl className="mp-vh-facts">
               <div>
                 <dt>現在の掲載</dt>
@@ -154,15 +154,15 @@ export default async function VerticalHub({ vertical }: { vertical: VerticalKey 
       <section className="mp-sec mp-vh-note" aria-labelledby="mp-vh-note-h">
         <div className="mp-wrap mp-note-grid">
           <div data-reveal>
-            <p className="mp-kicker">Status</p>
-            <h2 id="mp-vh-note-h" className="mp-h2 sm">{total > 0 ? "掲載状況" : "掲載準備中です"}</h2>
+            <p className="mp-kicker">{total > 0 ? "About" : "Status"}</p>
+            <h2 id="mp-vh-note-h" className="mp-h2 sm">{total > 0 ? "掲載について" : "掲載準備中です"}</h2>
           </div>
           <div data-reveal style={{ ["--i" as string]: 1 }}>
-            <p className="mp-note-p">
-              {total > 0
-                ? `現在の掲載は ${total} 件です。`
-                : `${v.name}の掲載は、まだありません（現在 0 件）。掲載できる店が確認でき次第、ここに並びます。`}
-            </p>
+            {total === 0 && (
+              <p className="mp-note-p">
+                {`${v.name}の掲載は、まだありません（現在 0 件）。掲載できる店が確認でき次第、ここに並びます。`}
+              </p>
+            )}
             {HAS_CLAIM_POLICY.has(vertical) && (
               <p className="mp-note-p sub">
                 掲載方針：効果・効能をうたう表現は使わず、確認できた事実（メニュー・営業時間・設備など）だけを載せます。
