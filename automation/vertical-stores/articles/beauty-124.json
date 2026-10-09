@@ -1,0 +1,242 @@
+{
+  "key": "beauty-124",
+  "headline": "学芸大学駅から徒歩7分、AVEDAのメニューを並べる目黒区の美容室",
+  "lede": "メニューにAVEDAのカラー、ヘッドスパ、トリートメントが並ぶ、目黒区中央町の美容室です。ヘアのカット・カラー・パーマに加えてメイクも扱い、定休日は月曜日です。",
+  "sections": [
+    {
+      "heading": "ヘアとメイクの項目",
+      "body": "カットは学生の区分ごとに料金が分かれ、前髪のみのカットもあります。カラーの欄にはブリーチとヘナが並び、パーマはトリートメントパーマとストレートパーマも選べます。メイクの項目は、メイク、メイクのアドバイス、ヘアメイクの3つに分かれ、眉のカットとカラーもあります。"
+    },
+    {
+      "heading": "AVEDAの項目",
+      "body": "メニュー表には、AVEDAのカラー、AVEDA botanical head spa(20分)、AVEDA organic treatmentが載っています。ヘッドスパにはAVEDA pramasana head spaもあり、purifying scalp cleanserとnourishing scalp masqueの2項目に分かれています。公式サイトは、AVEDAのorganicを掲げたcut&color&permのスタジオと名乗っています。"
+    },
+    {
+      "heading": "場所と予約",
+      "body": "最寄りは東急東横線の学芸大学駅で、徒歩7分と案内されています。武蔵小山駅(東急目黒線)からは徒歩20分です。住所は目黒区中央町1-12-9のAimer1階です。予約は電話かHOT PEPPER Beautyで受け付けています。オリジナルのシャンプーとトリートメントはサロンのほか、オンラインストアでも買えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "cut",
+      "price": "¥5,500"
+    },
+    {
+      "name": "cut+shampoo",
+      "price": "¥6,600"
+    },
+    {
+      "name": "color",
+      "price": "¥7,700~"
+    },
+    {
+      "name": "AVEDA color",
+      "price": "¥8,500~"
+    },
+    {
+      "name": "perm",
+      "price": "¥7,700~"
+    },
+    {
+      "name": "AVEDA botanical head spa (20min)",
+      "price": "¥5,500",
+      "minutes": 20
+    },
+    {
+      "name": "AVEDA organic treatment",
+      "price": "¥5,000~"
+    },
+    {
+      "name": "make up",
+      "price": "¥6,000~"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "目黒区中央町1-12-9のAimer(エメ)1階にある",
+      "source": "https://www.wallsalon.com/access/",
+      "quote": "東京都目黒区中央町 1-12-9 Aimer(エメ) 1F",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東急東横線の学芸大学駅から徒歩7分",
+      "source": "https://www.wallsalon.com/access/",
+      "quote": "東急東横線 学芸大学駅 徒歩7分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "東急目黒線の武蔵小山駅から徒歩20分",
+      "source": "https://www.wallsalon.com/access/",
+      "quote": "東急目黒線 武蔵小山駅 徒歩20分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は月曜日",
+      "source": "https://www.wallsalon.com/access/",
+      "quote": "定休日 : 月曜日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも月曜が定休日",
+      "source": "https://maps.google.com/?cid=8504105291222735676",
+      "quote": "月 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は03-3794-8758",
+      "source": "https://www.wallsalon.com/access/",
+      "quote": "電話 03-3794-8758",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約は電話とHOT PEPPER Beautyから",
+      "source": "https://www.wallsalon.com/reservation/",
+      "quote": "お電話でのご予約→ TEL 03-3794-8758 WEBからのご予約→ HOT PEPPER Beauty",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "サイトの題に「AVEDA organic cut&color&perm studio」とある",
+      "source": "https://www.wallsalon.com/",
+      "quote": "hair&make up wallsalon AVEDA organic cut&color&perm studio",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "cutは¥5,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "cut ¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "cut+shampooは¥6,600",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "cut+shampoo ¥6,600",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "kindergartenとprimary school studentは¥3,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "kindergarten ¥3,500 primary school student ¥3,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "junior high school studentは¥4,400、high school studentは¥4,950",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "junior high school student ¥4,400 high school student ¥4,950",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "bang cutは¥1,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "bang cut ¥1,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "colorは¥7,700~、bleachとhenaは¥9,000~、AVEDAは¥8,500~",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "color ¥7,700~ bleach ¥9,000~ hena ¥9,000~ AVEDA ¥8,500~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "AVEDA colorは¥8,500~",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "AVEDA color ¥8,500~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "AVEDA botanical head spa (20min)は¥5,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "AVEDA botanical head spa (20min) ¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "AVEDA pramasana head spaの項目にpurifying scalp cleanser ¥5,500がある",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "AVEDA pramasana head spa purifying scalp cleanser ¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "同じ項目に+nourishing scalp masque ¥5,500がある",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "+nourishing scalp masque ¥5,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "AVEDA organic treatmentは¥5,000~",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "AVEDA organic treatment ¥5,000~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "treatmentに4th step treatment ¥5,000~がある",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "4th step treatment ¥5,000~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "treatmentにQuick treatment ¥2,500~がある",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "Quick treatment ¥2,500~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "permは¥7,700~、treatment permは¥8,500~、straight permは¥17,000~",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "perm ¥7,700~ treatment perm ¥8,500~ straight perm ¥17,000~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "make upは¥6,000~、make up adviceは¥3,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "make up ¥6,000~ make up advice ¥3,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "hair and make upは¥12,000",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "hair and make up ¥12,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "eyebrow cutとeyebrow colorは各¥1,500",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "eyebrow cut ¥1,500 eyebrow color ¥1,500",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "shampooは¥1,100、shampoo+blowは¥4,400",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "shampoo ¥1,100 shampoo+blow ¥4,400",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "scalp cleansingのcleansing massageは¥4,000",
+      "source": "https://www.wallsalon.com/menu/",
+      "quote": "cleansing massage ¥4,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オリジナルのシャンプーとトリートメントをサロンで買える",
+      "source": "https://www.wallsalon.com/",
+      "quote": "wallのオリジナルシャンプーとトリートメント。サロンでお買い求めいただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプーとトリートメントはオンラインストアでも買える",
+      "source": "https://www.wallsalon.com/",
+      "quote": "シャンプーとトリートメントが、オンラインストアでもご購入いただけるようになりました",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.wallsalon.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8504105291222735676"
+    }
+  ],
+  "notes": "営業時間は本文に書いていない(食い違い): 公式サイトのアクセスは「火・金・土・日 11:00-20:00、水・木 10:00-20:00」、トップは「11:00~20:00」、Google マップは「火 11:00–19:00、水〜金 10:00–19:00、土日 11:00–19:00」で、閉店時刻(20時/19時)と金曜の開店時刻(11時/10時)が合わない。定休日の月曜は両者一致なので書いた。「夜遅くまで営業」は付けていない(閉店が公式20時・マップ19時で21時以降ではない)。「駅近」は、徒歩7分で「徒歩5分以内」の基準を満たさないため付けていない。書かなかったこと: 髪質改善の言い回しを含むHITAトリートメントと、ヒト幹細胞の「強髪プログラム」(効き目の語を含むメニュー名)、AVEDA プラマサナの説明文(頭皮のバリアなど効き目の語)、オーダーメイドトリートメント「link」の説明、指名料(スタッフ名入り)、「non-residents +¥3,000 service fee」(意味が不明)、2025年3月の価格改定のお知らせ(文中に「[サロン名]」の置き忘れがあり、現行の料金表が改定後かは不明)、シャンプー台のリニューアル、採用情報。料金は税の表記がないため、公式の表記のまま(税区分なし)。メニュー名は公式の英語表記のまま載せた。「AVEDAのorganicを掲げたスタジオ」の事実は、トップの題(ブラウザのタブに出るタイトル)の文字による。"
+}

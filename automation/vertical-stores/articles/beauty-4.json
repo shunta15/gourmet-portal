@@ -1,0 +1,221 @@
+{
+  "key": "beauty-4",
+  "headline": "元麻布の、英語でも対応するとうたう美容室",
+  "lede": "「English speaking hair salon」と名乗る、港区元麻布のvip creative hair internationalです。日本語と英語の両方で案内を載せています。定休日は月曜日です。",
+  "sections": [
+    {
+      "heading": "営業日と連絡",
+      "body": "営業は火曜日から日曜日の10時から19時で、夜間の予約がない日は早めに終わる場合があります。電話は03-6408-6132で、日本語の案内にも英語の案内にも載っています。所在地は港区元麻布2丁目1-21のYSビル2階です。公式サイトは、2012年から営業しているとしています。"
+    },
+    {
+      "heading": "メニューの区分",
+      "body": "メニューは、カット、スタイリング、カラー、パーマ・ウェーブ、トリートメント、ヘッドスパに分かれ、フェーシャル、アイラッシュリフトとまつげのエクステ、スムージング除毛、ワックス脱毛、着付のメニューもあります。カラーでは、低アルカリカラー、酸性カラー、ジアミンフリーのカラー剤から選べると案内されています。エクステには水に強い国産のグルーを使うとうたっています。"
+    },
+    {
+      "heading": "ヘッドスパ",
+      "body": "ヘッドスパは、ケラスターゼを使う20分からのショートスパと、お好みのアロマの香りで受ける40分のリラックス スパがあり、どちらもスチーム付きです。アイマスクトリートメントには、海藻と抹茶のクールアイマスクがあります。ヘッドスパのときのカットとブローは別料金です。メニューの料金は税込です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ショートスパ20",
+      "price": "￥6,000~",
+      "minutes": 20
+    },
+    {
+      "name": "リラックス スパ40",
+      "price": "￥8000",
+      "minutes": 40
+    },
+    {
+      "name": "アイマスクトリートメント",
+      "price": "￥1700"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "公式サイトは「English speaking hair salon」と名乗る",
+      "source": "https://www.vipcreativehair.jp/",
+      "quote": "English speaking hair salon",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "日本語と英語の両方のページがある",
+      "source": "https://www.vipcreativehair.jp/",
+      "quote": "English speaking hair salon 日本語 English",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業は火曜日から日曜日の10:00〜19:00、月曜日は定休",
+      "source": "https://www.vipcreativehair.jp/",
+      "quote": "Open hour / TUESDAY ~ SUNDAY 10:00 ~ 19:00 Close / MONDAY",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでも月曜が定休日で、他の曜日は10:00–19:00",
+      "source": "https://maps.google.com/?cid=14326829657280848927",
+      "quote": "月 定休日 火 10:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "夜間の予約が無い日は営業を早めに終了する場合がある",
+      "source": "https://www.vipcreativehair.jp/日本語/アクセス/",
+      "quote": "夜間のご予約が無い日は、営業を早めに終了する場合もございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は03-6408-6132",
+      "source": "https://www.vipcreativehair.jp/",
+      "quote": "TEL 03-6408-6132",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "英語の案内にも電話番号03-6408-6132が載っている",
+      "source": "https://www.vipcreativehair.jp/english/access/",
+      "quote": "TEL：03－6408-6132",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "港区元麻布2丁目1-21 YSビル2階にある(Google マップの所在地)",
+      "source": "https://maps.google.com/?cid=14326829657280848927",
+      "quote": "東京都港区元麻布２丁目１−２１ ＹＳビル ２Ｆ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "2012年から営業している",
+      "source": "https://www.vipcreativehair.jp/",
+      "quote": "sharing the greatest time together in since 2012 with you",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにカットの区分がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "カット シルエットで作る印象美へ。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにスタイリングの区分がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "スタイリング 仕上げで差がつく美人スタイリング",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラーは、ゼロタッチ技術、低アルカリカラー、酸性カラー、ジアミンフリーのカラー剤を選べると案内している",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "ゼロタッチ技術、刺激の少ない低アルカリカラー、酸性カラー、ジアミンフリーのカラー剤を選べます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにパーマ・ウェーブの区分がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "パーマ・ウェーブ しなやかさで見せる、新しい自分へ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにトリートメントの区分があり、ヘアケアマイスターがカスタマイズする",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "ヘアケアマイスターが貴方の頭皮・髪のお悩みに合わせてカスタマイズ致します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにヘッドスパの区分がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "ヘッドスパ 極上のリラックスへ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートスパ20はケラスターゼ使用、頭皮と頭筋のマニュピュレーションマッサージ",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "ショートスパ20： ケラスターゼ使用、頭皮と頭筋のマニュピュレーションマッサージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートスパ20はスチーム付き(20分~)￥6,000~",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "スチーム付き（20分~）￥6,000~",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リラックス スパ40はお好みのアロマの香り",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "リラックス スパ40 : お好みのアロマの香りで癒されて",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "リラックス スパ40はスチーム付き(40分)￥8000",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "スチーム付き（40分）￥8000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アイマスクトリートメントは海藻と抹茶のクールアイマスクで￥1700",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "海藻と抹茶のクールアイマスクを同時におススメします。￥1700",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドスパのカット、ブローは別料金",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "※ カット、ブローは別料金となります。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューは全て税込み",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "※ メニューは全て税込みです。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにフェーシャル(オールハンドマッサージ)の区分がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "プルプルフェーシャル・オールハンドマッサージ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにアイラッシュリフトとまつげのエクステがある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "次世代型アイラッシュリフト、まつげのエクステ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "エクステは水に強く肌を傷めない国産のグルーを使うとうたう",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "水に強く肌を傷めない国産のグルーを（接着剤）使用しているので安全です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにスムージング除毛がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "スムージング除毛",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メニューにワックス脱毛がある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "ワックス脱毛",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "詳しい着付けのメニューがある",
+      "source": "https://www.vipcreativehair.jp/日本語/メニュー-料金/",
+      "quote": "詳しい着付けのメニューはコチラ",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.vipcreativehair.jp/"
+    },
+    {
+      "label": "公式サイト(メニュー・料金)",
+      "url": "https://www.vipcreativehair.jp/日本語/メニュー-料金/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14326829657280848927"
+    }
+  ],
+  "notes": "【住所・電話の確認】公式サイトに住所の文字は無い(アクセスページは地図の埋め込みのみ)。地図の埋め込みの検索語は「港区元麻布2-1-21」で、gbpの所在地(東京都港区元麻布2丁目1-21 YSビル2F)と一致。電話03-6408-6132は公式トップ・アクセス・gbpで一致。営業日・時間も、公式トップ「火〜日 10:00〜19:00・月曜休み」とgbpが一致。そのため本文の所在地は gbp を出どころにした(公式サイトの文字ではない)。【書かなかったこと】カット・カラー・パーマの料金(公式サイトでは画像のため文字として取れない)、メニューの「髪質改善カラー」(名前に効き目の語)、オラプレックスの「髪の内部から修復」(効き目)、育毛マッサージ・疲れ目への言及、フェーシャル2コース(幹細胞培養液・リフトアップ・角質除去など効き目の語の説明)、スムージング除毛の説明、アイラッシュリフトの「お悩みを解決」、ヘアスタイル・クーポン・着付・スタッフ・クライアントの声の各ページ(取得せず。取得は4ページまで)、12周年のお知らせの10%OFF、求人、感染予防の記述。「2012年から営業」は英語の一文(since 2012)による読み取りで、本文は「としています」の形にした。ヘッドスパの「カット、ブローは別料金」は、ヘッドスパの項の注記。「英語対応」は「English speaking hair salon」という自称のみで、実際の対応範囲は確かめていない。メニュー名の「ショートスパ20」「リラックス スパ40」は公式の「気軽に ショートスパ20」「リラックス スパ40」の名称部分。"
+}

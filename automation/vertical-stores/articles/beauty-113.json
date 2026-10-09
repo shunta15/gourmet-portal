@@ -1,0 +1,260 @@
+{
+  "key": "beauty-113",
+  "headline": "下北沢南西口から徒歩3分、カラーとパーソナルカラー診断のある美容室",
+  "lede": "アンティーク家具に囲まれた隠れ家風のフレンチサロンと案内される、世田谷区代沢の美容室です。下北沢南西口から徒歩3分で、Google マップでの定休日は火曜日です。",
+  "sections": [
+    {
+      "heading": "カラーのメニュー",
+      "body": "ジアミンを含まないノンジアミンカラーのほか、一般的なジアミンカラー剤も取り扱っています。オーガニックカラー、デザインカラー(ハイライト・ローライト)、ブリーチ、イルミナカラーのメニューがあります。トリートメントは、全てのメニューでランクアップを選べます。予約の時間に遅れそうなときは連絡が求められ、順番が入れ替わる場合があります。"
+    },
+    {
+      "heading": "パーソナルカラー診断",
+      "body": "診断は4シーズンと16タイプの2種類です。4シーズンはドレープを使い、肌や瞳の色に似合う色味と明るさを診断します。16タイプはカラーメニューと併用できます。公式サイトは、診断に基づいたイルミナカラーやアディクシーカラーを用意しているとしています。"
+    },
+    {
+      "heading": "ヘッドスパと所在地",
+      "body": "ヘッドスパは、野菜の成分を使うベジタブルヴィージェスパのロング(30分)と、追加メニューのショートスパ(15分)があります。ショートスパは単品では予約できません。炭酸泉やシャンプー・ブローのメニューもあり、シャンプー台はフルフラットのベッドタイプです。所在地は代沢5丁目33-5のグラシア下北沢1階です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "オーガニックカラー",
+      "price": "¥8,800"
+    },
+    {
+      "name": "デザインカラー◆ハイライトorローライト",
+      "price": "¥8,800～"
+    },
+    {
+      "name": "イルミナカラー",
+      "price": "¥8,800"
+    },
+    {
+      "name": "【縮毛矯正】nino naturalストレート",
+      "price": "¥13,200～"
+    },
+    {
+      "name": "ベジタブルヴィージェスパ ロング 30分",
+      "price": "¥6,980",
+      "minutes": 30
+    },
+    {
+      "name": "ショートスパ15分",
+      "price": "¥3,300",
+      "minutes": 15
+    },
+    {
+      "name": "４シーズンパーソナルカラー診断",
+      "price": "¥6,000"
+    },
+    {
+      "name": "１６タイプパーソナルカラー診断",
+      "price": "¥13,200"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 0
+    }
+  ],
+  "facts": [
+    {
+      "claim": "下北沢南西口から徒歩3分",
+      "source": "https://ateliernino-shimokitazawa.com/about-us/",
+      "quote": "下北沢南西口から徒歩3分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "アンティーク家具に囲まれた落ち着いた空間をうたう",
+      "source": "https://ateliernino-shimokitazawa.com/about-us/",
+      "quote": "アンティーク家具に囲まれた落ち着いた空間で、上質なひとときをお楽しみいただけます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "隠れ家風のフレンチサロンで少人数のおもてなしをうたう",
+      "source": "https://ateliernino-shimokitazawa.com/about-us/",
+      "quote": "隠れ家風のフレンチサロンで少人数ならではのおもてなし",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーソナルカラー診断に基づいたイルミナカラーやアディクシーカラー、ハイライト、ブリーチなどのメニューがある",
+      "source": "https://ateliernino-shimokitazawa.com/about-us/",
+      "quote": "パーソナルカラー診断に基づいたイルミナカラーやアディクシーカラーをはじめ、ハイライトやブリーチなど",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カウンセリングを通じてヘアスタイルを提案する",
+      "source": "https://ateliernino-shimokitazawa.com/about-us/",
+      "quote": "丁寧なカウンセリングを通じて最適なヘアスタイルをご提案します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ノンジアミンカラーも採用している",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "当サロンではノンジアミンカラーも採用しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ジアミン色素を含まないヘアカラー剤を用意し、一般的なジアミンカラー剤も取り扱う",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "ジアミン色素を含まないヘアカラー剤もご用意しています。もちろん一般的なジアミンカラー剤も取り扱っています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全てのメニューでトリートメントのランクアップが可能",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "全てのメニューにおいてトリートメントのランクアップが可能です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ご予約の時間に間に合わない場合は必ず連絡が必要で、メニュー変更または順番の入れ替えがある",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "ご予約のお時間に間に合わない際は必ずご連絡下さい、メニュー変更、もしくは順番が入れ替わる場合がございます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【植物オイル配合】オーガニックカラーがあり、カラー剤・シャンプー剤もオーガニックのものを使うとする",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "【植物オイル配合】オーガニックカラー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "オーガニックカラーは¥8,800",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "イオンミストで浸透させ艶と色持ちを良くさせます ¥8,800",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デザインカラー◆ハイライトorローライトがある",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "デザインカラー◆ハイライトorローライト",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "デザインカラー◆ハイライトorローライトは¥8,800～",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "カラーメニュー併用必須です。 ¥8,800～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ブリーチデザインは¥8,800～で、耳上インナーブリーチ¥5500～、全体ブリーチ¥9,900～",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "耳上インナーブリーチ￥5500～全体ブリーチは￥9,900～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "イルミナカラーはシャンプー・ブロー込で、パーソナルカラー診断は別メニュー",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "◆パーソナルカラー診断は別メニュー!◆シャンプー・ブロー込",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "イルミナカラーは¥8,800",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "イルミナカラー専用トリートメント使用♪ ¥8,800",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【縮毛矯正】nino naturalストレートはカットを含まない",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "nino naturalストレート◆cutは含まれていません",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "【縮毛矯正】nino naturalストレートは¥13,200～",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "◆シャンプー・ブロー込 ¥13,200～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "４シーズンパーソナルカラー診断は、肌や瞳の色に似合う色味と明るさをドレープを使って診断する",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "その人の肌や瞳の色 雰囲気に似合う色味、明るさををドレープを使い診断します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "４シーズンパーソナルカラー診断は¥6,000",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "カラーメニューとの併用をお勧めします！メイクにも活かせます♪ ¥6,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "１６タイプは４シーズン診断に加え、1st、2ndまで似合うタイプを出す",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "４シーズン診断に加え、１st,2ndまで似合うタイプを出していきます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "１６タイプはカラーメニューとの併用可能",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "より似合う色が明確に！カラーメニューとの併用可能",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "１６タイプパーソナルカラー診断は¥13,200",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "カラーメニューとの併用可能 ¥13,200",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ベジタブルヴィージェスパ ロング 30分は、野菜の成分をつかったヘッドスパ",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "ベジタブルヴィージェスパ ロング 30分 ◆野菜の成分をつかったヘッドスパ♪",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ベジタブルヴィージェスパ ロング 30分はシャンプー、ブロー込で¥6,980",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "シャンプー、ブロー込 ¥6,980",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートスパ15分は単品での予約不可の追加メニュー",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "ショートスパ15分（※単品でのご予約不可。追加メニューです）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ショートスパ15分は¥3,300",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "他メニューとの組み合わせでシャンプーブロー代なし ¥3,300",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "炭酸泉のメニューがある",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "炭酸泉",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプー・ブローはフルフラットのベッドタイプのシャンプー台",
+      "source": "https://ateliernino-shimokitazawa.com/menu/",
+      "quote": "フルフラットのベッドタイプのシャンプー台",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップでは火曜が定休日",
+      "source": "https://maps.google.com/?cid=10106058510335186350",
+      "quote": "火 定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの所在地は東京都世田谷区代沢5丁目33-5 グラシア下北沢1階",
+      "source": "https://maps.google.com/?cid=10106058510335186350",
+      "quote": "東京都世田谷区代沢５丁目３３−５ グラシア下北沢 1F",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://ateliernino-shimokitazawa.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10106058510335186350"
+    }
+  ],
+  "notes": "営業時間・定休日は公式サイトに記載が見つからず(取得した4ページ: トップ・メニュー・お知らせ・店についてのいずれにも無い)、Google マップの「火曜定休・他は10:00–19:00」のみ。公式サイトにも住所の文字は無く(MAPのリンクだけ)、電話番号はリンク(tel:0368053786)で03-6805-3786と一致した。住所と定休日は gbp のみが出どころ。公式サイトの住所は確認できていないが、食い違いも無い。書かなかったこと: メニュー名に「小顔カット」「髪質改善カラー【メテオカラー】」「髪質改善ストレート」を含むもの(効き目・体の変化を思わせる語)、「【話題沸騰】イルミナカラー」の「話題沸騰」(店名の飾りの宣伝語のため外してイルミナカラーとした)、セットメニュー(組み合わせが多く、名前に小顔・美髪・髪質を含むものが多い)、パーソナルカラー診断への掲載(ほかの媒体の記事)、スタイリスト・ギャラリー・お荷物預かりサービスのページ。カットは名前が「小顔カット」のみで載せられないため、カットの料金はメニューに入れていない(本文にはカットの説明を書いていない)。料金は税の表記がないため公式の表記のまま。ベジタブルヴィージェスパの「頭皮の環境を整える」などの説明は効き目に当たるため書かなかった。"
+}
