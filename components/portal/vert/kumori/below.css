@@ -1,0 +1,1017 @@
+/* 曇り鏡 — 下のブロック。canvas は増やさない(CSS の mask / opacity / transform だけ) */
+@property --r {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.k-below {
+  --wall2: #1b0f09;
+  --amber: #f0b36a;
+  --cream: #fff6ea;
+  --rouge: #b01832;
+  --ink: #1f1517;
+  --ink2: #4a3d40;
+  --fogimg: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><filter id='n' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.011 .018' numOctaves='3' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .62 -.1'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --fogimg2: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='520'><filter id='n' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.02 .009' numOctaves='2' seed='19' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .38 0 0 0 0 .34 0 0 0 0 .3 0 0 0 .5 -.2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --beads: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Ccircle cx='316.7' cy='348.9' r='3.05' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='316.7' cy='349.6' r='3.05' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='315.7' cy='347.8' r='0.82' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='326.0' cy='310.4' r='1.53' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='326.0' cy='310.8' r='1.53' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='325.5' cy='309.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='129.3' cy='313.4' r='1.65' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='129.3' cy='313.8' r='1.65' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='128.7' cy='312.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='555.1' cy='41.1' r='1.07' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='555.1' cy='41.3' r='1.07' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='554.7' cy='40.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='63.5' cy='543.3' r='1.87' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='63.5' cy='543.7' r='1.87' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='62.9' cy='542.6' r='0.50' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='29.3' cy='685.1' r='3.33' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='29.3' cy='685.8' r='3.33' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='28.2' cy='683.9' r='0.90' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='457.7' cy='391.0' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='457.7' cy='391.3' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='457.4' cy='390.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='10.5' cy='325.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='10.5' cy='325.8' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='10.2' cy='325.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='133.1' cy='127.5' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='133.1' cy='127.7' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='132.8' cy='127.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='324.8' cy='261.7' r='2.55' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='324.8' cy='262.3' r='2.55' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='323.9' cy='260.8' r='0.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='363.4' cy='410.0' r='1.32' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='363.4' cy='410.3' r='1.32' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='363.0' cy='409.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='463.7' cy='273.8' r='1.06' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='463.7' cy='274.0' r='1.06' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='463.4' cy='273.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='698.4' cy='696.4' r='2.54' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='698.4' cy='696.9' r='2.54' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='697.5' cy='695.5' r='0.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='495.5' cy='175.2' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='495.5' cy='175.4' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='495.1' cy='174.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='202.3' cy='28.9' r='2.17' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='202.3' cy='29.4' r='2.17' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='201.6' cy='28.1' r='0.59' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='280.3' cy='573.2' r='1.15' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='280.3' cy='573.4' r='1.15' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='279.9' cy='572.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='670.6' cy='573.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='670.6' cy='574.0' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='670.3' cy='573.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='146.8' cy='625.3' r='1.27' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='146.8' cy='625.6' r='1.27' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='146.4' cy='624.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='686.3' cy='231.3' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='686.3' cy='231.5' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='685.9' cy='231.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='440.6' cy='518.3' r='1.05' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='440.6' cy='518.6' r='1.05' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='440.3' cy='518.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='61.0' cy='186.8' r='3.33' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='61.0' cy='187.5' r='3.33' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='59.9' cy='185.6' r='0.90' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='530.6' cy='53.9' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='530.6' cy='54.1' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='530.3' cy='53.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='70.7' cy='23.9' r='2.32' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='70.7' cy='24.4' r='2.32' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='70.0' cy='23.0' r='0.63' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='124.4' cy='348.6' r='1.23' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='124.4' cy='348.8' r='1.23' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='124.0' cy='348.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='133.5' cy='481.3' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='133.5' cy='481.5' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='133.2' cy='481.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='450.6' cy='53.1' r='1.19' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='450.6' cy='53.3' r='1.19' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='450.2' cy='52.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='149.0' cy='145.3' r='3.38' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='149.0' cy='146.1' r='3.38' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='147.9' cy='144.1' r='0.91' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='562.4' cy='167.8' r='2.80' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='562.4' cy='168.4' r='2.80' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='561.5' cy='166.8' r='0.76' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='147.5' cy='229.1' r='2.62' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='147.5' cy='229.7' r='2.62' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='146.7' cy='228.2' r='0.71' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='449.3' cy='44.3' r='3.52' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='449.3' cy='45.1' r='3.52' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='448.2' cy='43.1' r='0.95' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='149.3' cy='137.9' r='2.20' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='149.3' cy='138.4' r='2.20' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='148.6' cy='137.1' r='0.59' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='230.3' cy='162.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='230.3' cy='162.9' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='229.9' cy='162.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='63.1' cy='366.2' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='63.1' cy='366.4' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='62.8' cy='365.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='420.9' cy='213.5' r='1.24' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='420.9' cy='213.7' r='1.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='420.5' cy='213.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='671.4' cy='292.8' r='1.49' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='671.4' cy='293.2' r='1.49' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='670.9' cy='292.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='606.6' cy='91.1' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='606.6' cy='91.3' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='606.2' cy='90.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='635.9' cy='549.9' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='635.9' cy='550.1' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='635.6' cy='549.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='132.9' cy='487.3' r='3.16' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='132.9' cy='488.0' r='3.16' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='131.8' cy='486.1' r='0.85' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='137.6' cy='658.3' r='2.79' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='137.6' cy='658.9' r='2.79' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='136.7' cy='657.3' r='0.75' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='422.5' cy='248.2' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='422.5' cy='248.4' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='422.2' cy='247.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='27.1' cy='668.8' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='27.1' cy='669.0' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='26.8' cy='668.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='493.2' cy='137.1' r='2.45' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='493.2' cy='137.6' r='2.45' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='492.4' cy='136.2' r='0.66' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='417.5' cy='160.7' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='417.5' cy='161.0' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='417.2' cy='160.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='504.2' cy='28.2' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='504.2' cy='28.4' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='503.9' cy='27.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='391.6' cy='577.9' r='1.60' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='391.6' cy='578.3' r='1.60' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='391.0' cy='577.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='196.2' cy='631.2' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='196.2' cy='631.4' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='195.8' cy='630.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='11.6' cy='144.9' r='1.23' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='11.6' cy='145.2' r='1.23' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='11.2' cy='144.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='42.3' cy='87.2' r='1.13' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='42.3' cy='87.4' r='1.13' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='42.0' cy='86.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='400.5' cy='61.4' r='1.12' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='400.5' cy='61.6' r='1.12' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='400.2' cy='61.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='623.7' cy='683.6' r='1.74' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='623.7' cy='684.0' r='1.74' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='623.1' cy='683.0' r='0.47' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='483.9' cy='367.4' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='483.9' cy='367.7' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='483.5' cy='367.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='24.6' cy='5.6' r='2.96' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='24.6' cy='6.3' r='2.96' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='23.6' cy='4.5' r='0.80' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='490.7' cy='668.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='490.7' cy='669.1' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='490.4' cy='668.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='445.3' cy='291.7' r='2.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='445.3' cy='292.2' r='2.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='444.7' cy='291.0' r='0.54' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='223.2' cy='699.5' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='223.2' cy='699.7' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='222.9' cy='699.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='382.3' cy='485.4' r='2.90' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='382.3' cy='486.0' r='2.90' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='381.3' cy='484.3' r='0.78' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='516.0' cy='459.2' r='2.30' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='516.0' cy='459.7' r='2.30' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='515.2' cy='458.3' r='0.62' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='640.5' cy='199.8' r='1.84' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='640.5' cy='200.3' r='1.84' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='639.9' cy='199.2' r='0.50' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='630.6' cy='593.2' r='1.19' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='630.6' cy='593.4' r='1.19' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='630.2' cy='592.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='553.4' cy='586.9' r='1.49' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='553.4' cy='587.3' r='1.49' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='552.9' cy='586.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='437.5' cy='220.8' r='1.51' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='437.5' cy='221.1' r='1.51' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='437.0' cy='220.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='426.2' cy='33.9' r='1.68' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='426.2' cy='34.3' r='1.68' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='425.7' cy='33.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='695.3' cy='600.3' r='2.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='695.3' cy='600.7' r='2.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='694.7' cy='599.6' r='0.54' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='271.9' cy='483.8' r='1.51' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='271.9' cy='484.1' r='1.51' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='271.4' cy='483.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='308.4' cy='566.5' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='308.4' cy='566.7' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='308.0' cy='566.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='525.1' cy='10.3' r='1.57' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='525.1' cy='10.7' r='1.57' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='524.6' cy='9.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='336.7' cy='120.1' r='1.89' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='336.7' cy='120.6' r='1.89' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='336.1' cy='119.5' r='0.51' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='348.1' cy='390.2' r='3.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='348.1' cy='390.9' r='3.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='347.1' cy='389.1' r='0.82' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='179.1' cy='3.2' r='1.07' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='179.1' cy='3.5' r='1.07' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='178.7' cy='2.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='474.7' cy='103.0' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='474.7' cy='103.3' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='474.4' cy='102.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='634.0' cy='425.2' r='1.22' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='634.0' cy='425.4' r='1.22' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='633.6' cy='424.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='624.2' cy='183.0' r='1.77' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='624.2' cy='183.4' r='1.77' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='623.6' cy='182.4' r='0.48' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='139.0' cy='254.9' r='2.36' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='139.0' cy='255.4' r='2.36' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='138.2' cy='254.0' r='0.64' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='640.0' cy='600.7' r='1.15' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='640.0' cy='600.9' r='1.15' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='639.6' cy='600.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='408.2' cy='176.0' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='408.2' cy='176.2' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='407.9' cy='175.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='347.5' cy='565.5' r='2.59' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='347.5' cy='566.1' r='2.59' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='346.7' cy='564.6' r='0.70' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='497.9' cy='658.2' r='1.06' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='497.9' cy='658.4' r='1.06' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='497.5' cy='657.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='118.4' cy='269.0' r='1.05' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='118.4' cy='269.2' r='1.05' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='118.1' cy='268.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='149.9' cy='242.9' r='1.64' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='149.9' cy='243.3' r='1.64' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='149.3' cy='242.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='345.7' cy='175.3' r='2.54' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='345.7' cy='175.8' r='2.54' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='344.9' cy='174.3' r='0.68' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='687.4' cy='270.3' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='687.4' cy='270.5' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='687.1' cy='269.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='22.0' cy='594.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='22.0' cy='594.8' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='21.7' cy='594.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='496.0' cy='357.0' r='1.08' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='496.0' cy='357.2' r='1.08' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='495.7' cy='356.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='554.1' cy='6.1' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='554.1' cy='6.3' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='553.7' cy='5.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='318.4' cy='8.3' r='2.48' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='318.4' cy='8.8' r='2.48' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='317.6' cy='7.4' r='0.67' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='166.2' cy='66.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='166.2' cy='66.9' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='165.9' cy='66.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='440.4' cy='266.0' r='1.65' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='440.4' cy='266.4' r='1.65' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='439.9' cy='265.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='458.5' cy='541.5' r='3.29' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='458.5' cy='542.2' r='3.29' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='457.5' cy='540.3' r='0.89' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='479.1' cy='101.1' r='1.28' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='479.1' cy='101.3' r='1.28' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='478.7' cy='100.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='125.1' cy='3.0' r='1.27' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='125.1' cy='3.3' r='1.27' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='124.7' cy='2.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='499.9' cy='88.9' r='1.05' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='499.9' cy='89.1' r='1.05' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='499.6' cy='88.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='242.0' cy='454.2' r='1.37' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='242.0' cy='454.5' r='1.37' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='241.6' cy='453.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='430.1' cy='500.6' r='1.16' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='430.1' cy='500.8' r='1.16' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='429.7' cy='500.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='554.4' cy='622.0' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='554.4' cy='622.2' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='554.0' cy='621.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='652.8' cy='473.8' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='652.8' cy='474.0' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='652.5' cy='473.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='317.5' cy='398.7' r='2.96' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='317.5' cy='399.3' r='2.96' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='316.5' cy='397.6' r='0.80' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='263.8' cy='355.7' r='2.77' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='263.8' cy='356.3' r='2.77' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='262.9' cy='354.7' r='0.75' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='557.7' cy='653.4' r='1.26' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='557.7' cy='653.7' r='1.26' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='557.3' cy='653.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='455.9' cy='104.5' r='1.98' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='455.9' cy='104.9' r='1.98' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='455.3' cy='103.7' r='0.53' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='572.8' cy='411.0' r='1.96' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='572.8' cy='411.4' r='1.96' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='572.2' cy='410.3' r='0.53' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='149.3' cy='616.9' r='3.45' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='149.3' cy='617.6' r='3.45' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='148.2' cy='615.6' r='0.93' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='684.2' cy='331.9' r='2.29' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='684.2' cy='332.4' r='2.29' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='683.4' cy='331.1' r='0.62' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='224.3' cy='625.1' r='2.63' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='224.3' cy='625.7' r='2.63' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='223.4' cy='624.1' r='0.71' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='244.0' cy='35.2' r='1.22' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='244.0' cy='35.5' r='1.22' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='243.6' cy='34.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='385.2' cy='510.1' r='1.30' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='385.2' cy='510.4' r='1.30' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='384.8' cy='509.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='19.9' cy='542.9' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='19.9' cy='543.1' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='19.6' cy='542.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='559.9' cy='85.2' r='1.10' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='559.9' cy='85.4' r='1.10' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='559.6' cy='84.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='551.5' cy='66.4' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='551.5' cy='66.6' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='551.2' cy='66.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='361.6' cy='474.8' r='2.54' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='361.6' cy='475.3' r='2.54' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='360.8' cy='473.8' r='0.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='482.6' cy='654.7' r='1.31' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='482.6' cy='655.0' r='1.31' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='482.1' cy='654.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='664.4' cy='36.9' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='664.4' cy='37.1' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='664.1' cy='36.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='368.7' cy='158.6' r='2.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='368.7' cy='159.0' r='2.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='368.0' cy='157.9' r='0.54' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='447.2' cy='321.4' r='2.56' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='447.2' cy='322.0' r='2.56' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='446.4' cy='320.5' r='0.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='392.0' cy='172.8' r='1.14' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='392.0' cy='173.1' r='1.14' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='391.6' cy='172.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='591.7' cy='617.3' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='591.7' cy='617.5' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='591.4' cy='616.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='595.5' cy='673.6' r='1.37' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='595.5' cy='673.9' r='1.37' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='595.1' cy='673.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='401.1' cy='102.1' r='1.40' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='401.1' cy='102.4' r='1.40' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='400.6' cy='101.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='352.2' cy='383.2' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='352.2' cy='383.4' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='351.9' cy='382.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='678.6' cy='316.4' r='1.17' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='678.6' cy='316.7' r='1.17' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='678.2' cy='316.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='560.7' cy='351.2' r='1.31' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='560.7' cy='351.5' r='1.31' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='560.3' cy='350.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='483.7' cy='26.8' r='1.41' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='483.7' cy='27.1' r='1.41' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='483.2' cy='26.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='289.6' cy='663.9' r='3.05' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='289.6' cy='664.6' r='3.05' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='288.7' cy='662.8' r='0.82' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='188.4' cy='285.2' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='188.4' cy='285.4' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='188.1' cy='284.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='303.6' cy='548.2' r='2.90' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='303.6' cy='548.8' r='2.90' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='302.6' cy='547.2' r='0.78' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='333.6' cy='176.5' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='333.6' cy='176.7' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='333.2' cy='176.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='432.5' cy='637.7' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='432.5' cy='637.9' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='432.2' cy='637.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='545.5' cy='7.5' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='545.5' cy='7.7' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='545.2' cy='7.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='159.1' cy='446.1' r='1.09' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='159.1' cy='446.4' r='1.09' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='158.7' cy='445.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='248.7' cy='394.2' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='248.7' cy='394.5' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='248.4' cy='393.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='511.6' cy='56.5' r='1.35' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='511.6' cy='56.8' r='1.35' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='511.2' cy='56.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='175.4' cy='100.1' r='1.39' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='175.4' cy='100.4' r='1.39' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='174.9' cy='99.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='305.7' cy='216.3' r='1.18' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='305.7' cy='216.5' r='1.18' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='305.4' cy='215.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='370.5' cy='77.5' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='370.5' cy='77.7' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='370.2' cy='77.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='441.9' cy='408.6' r='1.39' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='441.9' cy='408.9' r='1.39' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='441.5' cy='408.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='595.9' cy='388.1' r='2.64' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='595.9' cy='388.7' r='2.64' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='595.0' cy='387.2' r='0.71' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='162.9' cy='488.3' r='2.38' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='162.9' cy='488.9' r='2.38' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='162.1' cy='487.5' r='0.64' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='631.9' cy='175.6' r='1.08' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='631.9' cy='175.8' r='1.08' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='631.5' cy='175.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='645.9' cy='112.6' r='3.59' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='645.9' cy='113.4' r='3.59' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='644.8' cy='111.3' r='0.97' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='621.3' cy='62.7' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='621.3' cy='62.9' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='620.9' cy='62.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='508.6' cy='138.7' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='508.6' cy='138.9' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='508.3' cy='138.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='582.5' cy='248.3' r='2.28' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='582.5' cy='248.8' r='2.28' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='581.8' cy='247.5' r='0.62' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='88.2' cy='235.1' r='1.84' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='88.2' cy='235.5' r='1.84' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='87.6' cy='234.4' r='0.50' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='12.4' cy='102.0' r='1.83' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='12.4' cy='102.4' r='1.83' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='11.8' cy='101.4' r='0.49' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='638.0' cy='673.5' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='638.0' cy='673.7' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='637.6' cy='673.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='354.0' cy='502.1' r='1.33' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='354.0' cy='502.4' r='1.33' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='353.6' cy='501.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='480.0' cy='94.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='480.0' cy='95.0' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='479.7' cy='94.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='74.3' cy='13.6' r='1.44' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='74.3' cy='13.9' r='1.44' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='73.9' cy='13.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='360.4' cy='355.6' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='360.4' cy='355.9' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='360.1' cy='355.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='129.2' cy='103.9' r='2.54' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='129.2' cy='104.4' r='2.54' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='128.4' cy='102.9' r='0.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='693.2' cy='639.0' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='693.2' cy='639.3' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='692.9' cy='638.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='43.4' cy='666.0' r='5.77' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='43.4' cy='667.3' r='5.77' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.81'/%3E%3Ccircle cx='41.5' cy='664.0' r='1.56' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='535.3' cy='228.8' r='5.79' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='535.3' cy='230.1' r='5.79' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.81'/%3E%3Ccircle cx='533.5' cy='226.7' r='1.56' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='360.7' cy='301.1' r='6.24' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='360.7' cy='302.4' r='6.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.87'/%3E%3Ccircle cx='358.7' cy='298.8' r='1.69' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='9.3' cy='490.7' r='7.07' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='9.3' cy='492.3' r='7.07' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.99'/%3E%3Ccircle cx='7.0' cy='488.2' r='1.91' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='126.9' cy='317.8' r='6.71' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='126.9' cy='319.2' r='6.71' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.94'/%3E%3Ccircle cx='124.7' cy='315.3' r='1.81' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='283.7' cy='136.6' r='4.76' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='283.7' cy='137.6' r='4.76' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.67'/%3E%3Ccircle cx='282.2' cy='134.9' r='1.29' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='358.8' cy='10.8' r='7.24' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='358.8' cy='12.4' r='7.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='1.01'/%3E%3Ccircle cx='356.5' cy='8.2' r='1.95' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='561.2' cy='493.3' r='7.13' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='561.2' cy='494.8' r='7.13' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='1.00'/%3E%3Ccircle cx='558.9' cy='490.7' r='1.92' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='440.6' cy='283.2' r='6.24' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='440.6' cy='284.5' r='6.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.87'/%3E%3Ccircle cx='438.6' cy='280.9' r='1.68' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='353.0' cy='687.9' r='6.94' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='353.0' cy='689.4' r='6.94' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.97'/%3E%3Ccircle cx='350.8' cy='685.4' r='1.87' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='180.8' cy='637.9' r='6.73' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='180.8' cy='639.4' r='6.73' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.94'/%3E%3Ccircle cx='178.6' cy='635.5' r='1.82' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='544.6' cy='570.2' r='5.58' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='544.6' cy='571.5' r='5.58' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.78'/%3E%3Ccircle cx='542.8' cy='568.2' r='1.51' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='627.6' cy='615.9' r='6.56' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='627.6' cy='617.3' r='6.56' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.92'/%3E%3Ccircle cx='625.5' cy='613.5' r='1.77' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='537.1' cy='535.7' r='5.58' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='537.1' cy='536.9' r='5.58' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.78'/%3E%3Ccircle cx='535.3' cy='533.7' r='1.51' fill='rgba(255,255,255,.92)'/%3E%3C/svg%3E") 0 0 / 700px 700px, url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='960' height='960'%3E%3Ccircle cx='887.9' cy='901.1' r='2.85' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='887.9' cy='901.7' r='2.85' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='887.0' cy='900.1' r='0.77' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='80.2' cy='511.8' r='1.20' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='80.2' cy='512.0' r='1.20' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='79.8' cy='511.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='508.9' cy='83.2' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='508.9' cy='83.4' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='508.6' cy='82.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='426.8' cy='156.9' r='1.24' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='426.8' cy='157.2' r='1.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='426.4' cy='156.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='23.8' cy='50.4' r='1.93' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='23.8' cy='50.8' r='1.93' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='23.2' cy='49.7' r='0.52' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='404.4' cy='430.6' r='2.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='404.4' cy='431.0' r='2.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='403.7' cy='429.8' r='0.55' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='344.6' cy='31.2' r='2.25' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='344.6' cy='31.7' r='2.25' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='343.9' cy='30.4' r='0.61' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='565.6' cy='580.9' r='1.62' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='565.6' cy='581.2' r='1.62' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='565.0' cy='580.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='931.9' cy='284.4' r='2.14' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='931.9' cy='284.8' r='2.14' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='931.2' cy='283.6' r='0.58' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='353.9' cy='491.1' r='1.75' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='353.9' cy='491.5' r='1.75' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='353.4' cy='490.5' r='0.47' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='301.8' cy='50.4' r='1.28' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='301.8' cy='50.6' r='1.28' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='301.4' cy='49.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='689.2' cy='510.3' r='1.23' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='689.2' cy='510.6' r='1.23' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='688.8' cy='509.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='616.7' cy='124.3' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='616.7' cy='124.5' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='616.4' cy='123.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='310.5' cy='752.0' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='310.5' cy='752.2' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='310.1' cy='751.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='109.7' cy='59.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='109.7' cy='59.8' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='109.4' cy='59.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='264.5' cy='491.9' r='2.44' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='264.5' cy='492.5' r='2.44' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='263.8' cy='491.0' r='0.66' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='317.6' cy='290.8' r='1.06' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='317.6' cy='291.1' r='1.06' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='317.2' cy='290.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='292.6' cy='709.9' r='1.43' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='292.6' cy='710.2' r='1.43' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='292.1' cy='709.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='248.1' cy='65.8' r='2.25' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='248.1' cy='66.3' r='2.25' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='247.4' cy='65.0' r='0.61' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='678.9' cy='766.1' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='678.9' cy='766.3' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='678.5' cy='765.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='523.7' cy='867.2' r='1.54' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='523.7' cy='867.5' r='1.54' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='523.2' cy='866.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='907.6' cy='112.3' r='3.41' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='907.6' cy='113.0' r='3.41' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='906.6' cy='111.1' r='0.92' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='53.7' cy='335.3' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='53.7' cy='335.5' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='53.4' cy='335.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='777.2' cy='612.0' r='3.40' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='777.2' cy='612.8' r='3.40' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='776.1' cy='610.8' r='0.92' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='772.8' cy='901.4' r='1.41' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='772.8' cy='901.7' r='1.41' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='772.3' cy='900.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='948.7' cy='678.7' r='1.11' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='948.7' cy='678.9' r='1.11' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='948.3' cy='678.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='935.4' cy='297.8' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='935.4' cy='298.0' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='935.1' cy='297.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='72.8' cy='384.0' r='1.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='72.8' cy='384.2' r='1.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='72.5' cy='383.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='896.2' cy='903.2' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='896.2' cy='903.4' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='895.9' cy='902.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='99.4' cy='447.1' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='99.4' cy='447.3' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='99.0' cy='446.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='521.9' cy='748.7' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='521.9' cy='748.9' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='521.6' cy='748.3' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='404.9' cy='847.0' r='1.23' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='404.9' cy='847.2' r='1.23' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='404.5' cy='846.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='329.1' cy='837.3' r='2.40' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='329.1' cy='837.9' r='2.40' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='328.3' cy='836.5' r='0.65' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='859.4' cy='612.6' r='1.18' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='859.4' cy='612.9' r='1.18' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='859.0' cy='612.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='665.3' cy='767.5' r='1.68' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='665.3' cy='767.8' r='1.68' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='664.8' cy='766.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='228.9' cy='222.1' r='1.18' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='228.9' cy='222.3' r='1.18' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='228.5' cy='221.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='740.8' cy='475.8' r='1.43' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='740.8' cy='476.1' r='1.43' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='740.3' cy='475.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='793.5' cy='66.8' r='1.65' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='793.5' cy='67.1' r='1.65' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='793.0' cy='66.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='319.2' cy='478.1' r='2.52' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='319.2' cy='478.6' r='2.52' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='318.4' cy='477.2' r='0.68' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='238.4' cy='904.4' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='238.4' cy='904.6' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='238.1' cy='904.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='539.5' cy='460.1' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='539.5' cy='460.4' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='539.2' cy='459.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='538.4' cy='388.7' r='1.24' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='538.4' cy='389.0' r='1.24' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='538.0' cy='388.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='689.6' cy='1.3' r='1.14' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='689.6' cy='1.5' r='1.14' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='689.3' cy='0.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='754.2' cy='92.2' r='2.70' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='754.2' cy='92.7' r='2.70' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='753.3' cy='91.2' r='0.73' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='195.4' cy='605.5' r='1.01' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='195.4' cy='605.8' r='1.01' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='195.1' cy='605.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='431.4' cy='341.4' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='431.4' cy='341.7' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='431.0' cy='341.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='671.6' cy='398.1' r='1.85' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='671.6' cy='398.5' r='1.85' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='671.0' cy='397.4' r='0.50' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='517.6' cy='474.5' r='1.38' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='517.6' cy='474.8' r='1.38' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='517.1' cy='474.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='285.9' cy='844.6' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='285.9' cy='844.8' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='285.6' cy='844.2' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='841.6' cy='804.9' r='1.32' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='841.6' cy='805.2' r='1.32' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='841.1' cy='804.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='745.9' cy='597.3' r='1.58' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='745.9' cy='597.6' r='1.58' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='745.4' cy='596.7' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='280.0' cy='244.3' r='1.11' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='280.0' cy='244.5' r='1.11' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='279.6' cy='243.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='290.1' cy='913.8' r='1.10' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='290.1' cy='914.0' r='1.10' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='289.7' cy='913.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='372.0' cy='338.6' r='2.42' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='372.0' cy='339.1' r='2.42' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='371.3' cy='337.7' r='0.65' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='458.6' cy='472.3' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='458.6' cy='472.6' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='458.3' cy='472.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='266.9' cy='52.7' r='1.03' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='266.9' cy='53.0' r='1.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='266.6' cy='52.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='253.3' cy='792.4' r='1.33' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='253.3' cy='792.7' r='1.33' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='252.9' cy='792.0' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='106.0' cy='380.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='106.0' cy='381.0' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='105.7' cy='380.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='543.4' cy='360.5' r='2.64' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='543.4' cy='361.1' r='2.64' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='542.5' cy='359.6' r='0.71' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='248.9' cy='790.9' r='1.04' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='248.9' cy='791.1' r='1.04' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='248.6' cy='790.5' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='943.3' cy='555.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='943.3' cy='556.0' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='943.0' cy='555.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='774.9' cy='204.5' r='1.12' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='774.9' cy='204.7' r='1.12' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='774.5' cy='204.1' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='140.7' cy='775.9' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='140.7' cy='776.1' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='140.4' cy='775.6' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='708.7' cy='315.6' r='1.82' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='708.7' cy='316.0' r='1.82' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='708.2' cy='315.0' r='0.49' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='281.3' cy='45.1' r='2.99' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='281.3' cy='45.8' r='2.99' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='280.4' cy='44.1' r='0.81' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='628.6' cy='114.2' r='3.42' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='628.6' cy='115.0' r='3.42' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='627.5' cy='113.0' r='0.92' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='875.3' cy='124.8' r='1.00' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='875.3' cy='125.0' r='1.00' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='875.0' cy='124.4' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='586.6' cy='90.0' r='2.02' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='586.6' cy='90.5' r='2.02' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='585.9' cy='89.3' r='0.55' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='450.1' cy='635.5' r='1.48' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='450.1' cy='635.8' r='1.48' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='449.6' cy='634.9' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='739.9' cy='758.4' r='1.57' fill='rgba(255,255,255,.3)'/%3E%3Ccircle cx='739.9' cy='758.7' r='1.57' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.60'/%3E%3Ccircle cx='739.4' cy='757.8' r='0.45' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='567.7' cy='313.8' r='4.66' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='567.7' cy='314.8' r='4.66' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.65'/%3E%3Ccircle cx='566.3' cy='312.1' r='1.26' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='88.8' cy='822.7' r='4.90' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='88.8' cy='823.7' r='4.90' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.69'/%3E%3Ccircle cx='87.2' cy='820.9' r='1.32' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='409.5' cy='304.1' r='6.31' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='409.5' cy='305.5' r='6.31' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.88'/%3E%3Ccircle cx='407.5' cy='301.8' r='1.70' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='512.0' cy='824.7' r='5.68' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='512.0' cy='825.9' r='5.68' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.80'/%3E%3Ccircle cx='510.2' cy='822.6' r='1.53' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='347.4' cy='625.2' r='6.73' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='347.4' cy='626.7' r='6.73' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.94'/%3E%3Ccircle cx='345.3' cy='622.7' r='1.82' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='888.4' cy='299.4' r='7.21' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='888.4' cy='300.9' r='7.21' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='1.01'/%3E%3Ccircle cx='886.1' cy='296.8' r='1.95' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='942.2' cy='943.1' r='4.64' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='942.2' cy='944.1' r='4.64' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.65'/%3E%3Ccircle cx='940.7' cy='941.4' r='1.25' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='364.9' cy='743.0' r='7.03' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='364.9' cy='744.6' r='7.03' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.98'/%3E%3Ccircle cx='362.7' cy='740.5' r='1.90' fill='rgba(255,255,255,.92)'/%3E%3Ccircle cx='37.9' cy='379.3' r='6.66' fill='rgba(255,214,150,.42)'/%3E%3Ccircle cx='37.9' cy='380.7' r='6.66' fill='none' stroke='rgba(70,80,86,.34)' stroke-width='0.93'/%3E%3Ccircle cx='35.8' cy='376.9' r='1.80' fill='rgba(255,255,255,.92)'/%3E%3C/svg%3E") 230px 130px / 960px 960px;
+  --streaks: repeating-linear-gradient(90deg, transparent 0 61px, rgba(255, 255, 255, 0.16) 61px 63px, transparent 63px 149px), repeating-linear-gradient(90deg, transparent 0 97px, rgba(255, 255, 255, 0.1) 97px 100px, transparent 100px 233px);
+  --fogbase: linear-gradient(180deg, rgba(240, 235, 228, 0.8), rgba(238, 226, 208, 0.72) 52%, rgba(240, 218, 186, 0.62));
+  position: relative;
+  padding: 0 0 56px;
+  color: var(--cream);
+  background:
+    radial-gradient(60% 40% at 18% 8%, rgba(240, 179, 106, 0.16), transparent 70%),
+    radial-gradient(50% 30% at 86% 38%, rgba(240, 179, 106, 0.1), transparent 70%),
+    linear-gradient(180deg, #1b0f09, #150b07 60%, #120a06);
+  font-family: var(--k-mincho), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  overflow: hidden;
+}
+.k-below :where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+.k-below :where(a):focus-visible {
+  outline: 3px solid #ffe3b0;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+/* 洗面台のふち(鏡のある壁と、奥の部屋の境目) */
+.k-sill {
+  height: 16px;
+  background: linear-gradient(180deg, #f1ebe1, #bdb3a5 55%, #6d6358);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+.k-sec {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: clamp(56px, 8vw, 104px) var(--gut, clamp(20px, 4vw, 64px)) 0;
+}
+.k-head2 {
+  margin-bottom: clamp(28px, 4vw, 52px);
+}
+.k-kick {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.k-kick span {
+  font-family: var(--k-kuren), cursive;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: #ff7d92;
+  margin-right: 10px;
+}
+.k-head2 h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  color: var(--cream);
+}
+.k-lead2 {
+  margin: 16px 0 0;
+  max-width: 44em;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: rgba(255, 244, 228, 0.9);
+}
+
+/* ---- 曇りガラス(共通) ---- */
+.k-pane {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 7px;
+  background: linear-gradient(135deg, #ffffff 0%, #dfe6e9 24%, #a9b4ba 54%, #6b777e 80%, #c4ced3 100%);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  color: var(--ink);
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+}
+.k-glass2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #2a180e;
+  box-shadow: inset 0 0 0 1px rgba(40, 32, 28, 0.55), inset 0 0 26px 4px rgba(16, 9, 5, 0.55);
+}
+.k-glass2 > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.14) saturate(1.3) brightness(1.06) contrast(1.16);
+}
+.k-room2 {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 24% 30%, rgba(255, 232, 190, 0.85) 0 4px, rgba(255, 210, 150, 0.35) 5px 12px, transparent 16px),
+    radial-gradient(circle at 70% 24%, rgba(255, 226, 176, 0.7) 0 3px, rgba(255, 200, 130, 0.3) 4px 10px, transparent 14px),
+    radial-gradient(circle at 62% 72%, rgba(255, 220, 170, 0.8) 0 5px, rgba(255, 196, 120, 0.3) 6px 15px, transparent 20px),
+    radial-gradient(circle at 30% 78%, rgba(255, 214, 160, 0.6) 0 3px, rgba(255, 190, 120, 0.25) 4px 11px, transparent 14px),
+    linear-gradient(165deg, #3b2a2a, #1c1112 70%);
+}
+.k-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 10, 5, 0.08) 12%, rgba(20, 10, 5, 0.7) 48%, rgba(20, 10, 5, 0.92) 100%);
+  opacity: 0;
+  transition: opacity 1.6s 3s;
+}
+.kb-fog {
+  position: absolute;
+  inset: 0;
+  --r: 0%;
+  background: var(--beads), var(--streaks), var(--fogimg2) 0 0 / 520px 520px, var(--fogimg) 0 0 / 420px 420px, var(--fogbase);
+  -webkit-mask-image: radial-gradient(circle at var(--wx, 50%) var(--wy, 52%), transparent calc(var(--r) - 5%), #000 var(--r));
+  mask-image: radial-gradient(circle at var(--wx, 50%) var(--wy, 52%), transparent calc(var(--r) - 5%), #000 var(--r));
+  transition: --r 6s cubic-bezier(0.3, 0, 0.8, 1);
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-fog {
+  --r: 175%;
+  transition: --r 1.15s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-shade {
+  opacity: 1;
+  transition: opacity 0.7s 0.3s;
+}
+.k-stack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 0 10%;
+}
+.kb-num {
+  font-family: var(--k-kuren), "Zen Kurenaido", cursive;
+  font-size: 50px;
+  line-height: 1;
+  color: var(--rouge);
+  -webkit-text-stroke: 0.8px #8e1228;
+  text-shadow: 0 0 1px rgba(255, 130, 150, 0.7), 1px 1px 0 rgba(110, 0, 20, 0.4), 0 0 10px rgba(238, 243, 245, 0.95), 0 0 4px rgba(238, 243, 245, 0.95);
+  transform: rotate(-5deg);
+  filter: url(#k-wax);
+}
+.k-txt {
+  color: var(--ink);
+  text-shadow: 0 0 12px rgba(238, 243, 245, 0.96), 0 0 5px rgba(238, 243, 245, 0.96), 0 0 2px rgba(238, 243, 245, 0.96);
+  transition: color 1s 3.2s, text-shadow 1s 3.2s;
+}
+.kb-name {
+  word-break: keep-all;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+}
+.kb-slug {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #33272a;
+}
+.k-st {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-txt {
+  color: var(--cream);
+  text-shadow: 0 1px 14px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.7);
+  transition: color 0.5s 0.45s, text-shadow 0.5s 0.45s;
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-num {
+  color: #ff93a6;
+  -webkit-text-stroke: 0.8px #5a0a18;
+  text-shadow: 0 1px 10px rgba(10, 4, 2, 0.95), 0 0 3px rgba(10, 4, 2, 0.8);
+  transition: color 0.5s 0.45s;
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-slug,
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-st {
+  color: #f1e2cc;
+}
+
+/* ---- 1 種類(形も大きさも不ぞろい) ---- */
+.k-panes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(28px, 4vw, 56px) clamp(24px, 3.4vw, 48px);
+  align-items: start;
+}
+.k-panes li {
+  display: block;
+}
+.k-p1 { margin-top: 0; }
+.k-p2 { margin-top: 70px; }
+.k-p3 { margin-top: 24px; }
+.k-p4 { margin-top: 10px; }
+.k-p5 { margin-top: 60px; }
+.k-p6 { margin-top: 0; }
+.k-arch { aspect-ratio: 4 / 5.3; border-radius: 999px 999px 26px 26px; }
+.k-round { aspect-ratio: 1; border-radius: 50%; }
+.k-oval { aspect-ratio: 5 / 4; border-radius: 50%; }
+.k-hand { aspect-ratio: 1; border-radius: 50%; margin-bottom: 46px; }
+.k-tall { aspect-ratio: 3 / 4.1; border-radius: 22px; }
+.k-port { aspect-ratio: 1 / 1.12; border-radius: 120px 120px 30px 30px; }
+.k-pane.k-hand::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 98%;
+  width: 26px;
+  height: 64px;
+  transform: translateX(-50%);
+  border-radius: 4px 4px 14px 14px;
+  background: linear-gradient(90deg, #7d8a91, #f1f5f6 45%, #8c989e);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.k-pane > .k-glass2 { border-radius: inherit; }
+.k-pane:focus-visible { outline-offset: 6px; }
+.k-arch .k-stack, .k-round .k-stack, .k-oval .k-stack, .k-hand .k-stack { bottom: 17%; }
+.k-pane:hover { transform: translateY(-3px); }
+.k-pane { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+
+/* ---- 大きな曇りガラス(エリア・シーン)。奥に雰囲気の写真、乗せたところが丸く拭かれる ---- */
+@property --ar {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+.k-big {
+  position: relative;
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #dfe6e9 24%, #a9b4ba 54%, #6b777e 80%, #c4ced3 100%);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  isolation: isolate;
+}
+.k-areaglass {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #3b2416;
+  box-shadow: inset 0 0 0 1px rgba(40, 32, 28, 0.5), inset 0 0 34px 6px rgba(16, 9, 5, 0.5);
+  isolation: isolate;
+  --ar: 0px;
+  transition: --ar 4.5s cubic-bezier(0.3, 0, 0.8, 1);
+}
+.k-areaglass:has(.k-pref:is(:hover, :focus-visible)) {
+  --ar: 80px;
+  transition: --ar 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.k-areaphoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.16) saturate(1.2) brightness(1.3) contrast(0.92);
+}
+.k-areaglow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 240, 210, 0.9), transparent 9%),
+    radial-gradient(circle at 34% 40%, rgba(255, 232, 190, 0.8), transparent 10%),
+    radial-gradient(circle at 58% 14%, rgba(255, 240, 214, 0.85), transparent 9%),
+    radial-gradient(circle at 80% 36%, rgba(255, 228, 184, 0.8), transparent 10%),
+    radial-gradient(circle at 20% 66%, rgba(255, 236, 200, 0.85), transparent 10%),
+    radial-gradient(circle at 46% 78%, rgba(255, 230, 188, 0.85), transparent 11%),
+    radial-gradient(circle at 70% 62%, rgba(255, 240, 210, 0.8), transparent 10%),
+    radial-gradient(circle at 90% 84%, rgba(255, 232, 192, 0.9), transparent 11%),
+    radial-gradient(circle at 8% 90%, rgba(255, 236, 200, 0.8), transparent 10%),
+    radial-gradient(circle at 62% 92%, rgba(255, 238, 206, 0.8), transparent 10%),
+    radial-gradient(75% 65% at 50% 50%, rgba(255, 234, 200, 0.62), rgba(255, 220, 170, 0.5));
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+.kb-fog.kb-fog-area {
+  --r: 0%;
+  transition: none;
+  -webkit-mask-image: radial-gradient(circle at var(--ax, 50%) var(--ay, 50%), transparent calc(var(--ar) - 26px), rgba(0, 0, 0, 0.5) calc(var(--ar) - 10px), rgba(0, 0, 0, 0.9) calc(var(--ar) + 4px), #000 calc(var(--ar) + 12px));
+  mask-image: radial-gradient(circle at var(--ax, 50%) var(--ay, 50%), transparent calc(var(--ar) - 26px), rgba(0, 0, 0, 0.5) calc(var(--ar) - 10px), rgba(0, 0, 0, 0.9) calc(var(--ar) + 4px), #000 calc(var(--ar) + 12px));
+}
+/* 拭いた円のふちに残る、曇りの盛り上がり(細い明るい線) */
+.k-areaglass::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: var(--ax, 50%);
+  top: var(--ay, 50%);
+  width: calc(var(--ar) * 2);
+  height: calc(var(--ar) * 2);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 0 22px 6px rgba(255, 255, 255, 0.2), 0 0 14px 3px rgba(255, 255, 255, 0.14);
+  filter: blur(1.2px);
+  pointer-events: none;
+}
+.k-sceneglass::after { display: none; }
+.k-bulbrow {
+  position: absolute;
+  z-index: 3;
+  left: 22px;
+  right: 22px;
+  top: 6px;
+  height: 22px;
+  background: radial-gradient(circle, #fffdf2 0 2.5px, #ffe2a0 3.5px 5px, rgba(255, 190, 100, 0.4) 8px, transparent 11px) 0 50% / 46px 22px repeat-x;
+  pointer-events: none;
+}
+.k-areain {
+  position: relative;
+  z-index: 2;
+  padding: 44px clamp(20px, 3vw, 48px) 26px;
+}
+.k-region-row {
+  display: grid;
+  grid-template-columns: 196px 1fr;
+  gap: 6px 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+}
+.k-region-row:first-of-type { border-top: 0; }
+/* 地方名: 曇りを指でなぞって抜いた字(線の中だけ曇りが薄く、奥が少し見える。色なし・立体なし・光らせない) */
+.k-region {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.k-rg {
+  display: block;
+  font-family: var(--k-kuren), "Zen Kurenaido", cursive;
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  color: #4b382e;
+  -webkit-text-stroke: 4.5px #4b382e;
+  paint-order: stroke fill;
+  opacity: 0.58;
+}
+.k-region small {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--k-mincho), serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #5a4a4c;
+}
+.k-prefs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+.k-prefs li {
+  display: flex;
+  flex: 1 1 calc(100% / var(--c, 6) - 6px);
+  min-width: 0;
+}
+.k-pref {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 0 12px;
+  font-size: clamp(17px, 1.5vw, 21px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  text-shadow: 0 0 10px rgba(246, 242, 234, 0.9), 0 0 3px rgba(246, 242, 234, 0.9);
+  border-radius: 8px;
+  transition: letter-spacing 0.4s;
+}
+.k-pref em {
+  font-style: normal;
+  font-size: 12px;
+  color: #33272a;
+}
+.k-pref:hover,
+.k-pref:focus-visible {
+  letter-spacing: 0.12em;
+  color: #fff6ea;
+  text-shadow: 0 0 2px rgba(20, 9, 4, 0.95), 0 0 2px rgba(20, 9, 4, 0.95), 0 1px 10px rgba(20, 9, 4, 0.9), 0 0 20px rgba(20, 9, 4, 0.6);
+  transition: letter-spacing 0.4s, color 0.35s 0.2s, text-shadow 0.35s 0.2s;
+}
+.k-pref:hover em,
+.k-pref:focus-visible em { color: #f6e6cf; text-shadow: 0 1px 8px rgba(20, 9, 4, 0.9); }
+.k-big :where(a):focus-visible {
+  outline: 3px solid #2a160a;
+  outline-offset: -3px;
+  box-shadow: 0 0 0 2px rgba(255, 246, 234, 0.9);
+  border-radius: 8px;
+}
+
+/* ---- 3 シーン(口紅で書いた印と名前を、大きく、不ぞろいに) ---- */
+.k-sceneglass {
+  min-height: 460px;
+}
+.k-scenelist {
+  position: relative;
+  z-index: 2;
+  list-style: none;
+  margin: 0;
+  padding: 46px clamp(24px, 4vw, 64px) 96px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px 0;
+  align-items: center;
+}
+.k-sc0 { grid-column: 1 / span 5; transform: rotate(-2deg); }
+.k-sc1 { grid-column: 6 / span 4; margin-top: 30px; transform: rotate(1.6deg); }
+.k-sc2 { grid-column: 10 / span 3; transform: rotate(-1deg); }
+.k-sc3 { grid-column: 2 / span 4; grid-row: 2; transform: rotate(1.2deg); }
+.k-sc4 { grid-column: 6 / span 3; grid-row: 2; margin-top: -14px; transform: rotate(-1.8deg); }
+.k-sc5 { grid-column: 9 / span 4; grid-row: 2; transform: rotate(2deg); }
+.k-scenelist li { display: flex; justify-content: center; }
+.k-scene {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 124px;
+  padding: 0 22px;
+  color: var(--ink);
+  isolation: isolate;
+}
+.k-scene-t {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(30px, 3.5vw, 50px);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 12px rgba(246, 242, 234, 0.95), 0 0 4px rgba(246, 242, 234, 0.95);
+}
+.k-lip {
+  position: absolute;
+  left: 0;
+  top: 56%;
+  width: 100%;
+  height: 40%;
+  z-index: 0;
+  overflow: visible;
+  filter: url(#k-wax);
+}
+.k-lip.k-ring {
+  top: 6px;
+  height: calc(100% - 12px);
+}
+.k-lip path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.k-lip-b { stroke: #a8132d; stroke-width: 13px; }
+.k-lip-g { stroke: #e0405e; stroke-width: 3px; opacity: 0.8; transform: translate(0, -3px); }
+.k-scene:hover .k-lip path,
+.k-scene:focus-visible .k-lip path {
+  animation: k-draw 0.8s cubic-bezier(0.3, 0.6, 0.2, 1);
+}
+@keyframes k-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+/* 口紅(書いた道具) */
+.k-lipstick {
+  position: absolute;
+  z-index: 3;
+  right: 4%;
+  bottom: 22px;
+  width: 250px;
+  height: 46px;
+  transform: rotate(-13deg);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+.k-lipstick i { position: absolute; display: block; }
+.lp-tube { left: 0; top: 7px; width: 140px; height: 32px; border-radius: 5px; background: linear-gradient(180deg, #4a3d40, #17100f 46%, #2b2224); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+.lp-band { left: 138px; top: 3px; width: 18px; height: 40px; border-radius: 3px; background: linear-gradient(180deg, #f8e6b0, #b88a3a 55%, #7d5a1f); }
+.lp-bullet { left: 154px; top: 10px; width: 84px; height: 26px; background: linear-gradient(180deg, #ee4a66, #a8132d 68%, #7a0c20); clip-path: polygon(0 0, 74% 0, 100% 58%, 100% 100%, 0 100%); border-radius: 0 0 4px 0; }
+
+/* ---- 4 紙のカード(鏡の縁にはさむ) ---- */
+.k-sec-card {
+  padding-top: clamp(72px, 10vw, 130px);
+}
+.k-edge {
+  height: 22px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #ffffff, #c3ccd1 40%, #7c8990 100%);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.k-card {
+  position: relative;
+  width: min(720px, 94%);
+  margin: -10px auto 0;
+  padding: 44px clamp(24px, 4vw, 48px) 32px;
+  color: var(--ink);
+  background:
+    repeating-linear-gradient(0deg, rgba(120, 90, 50, 0.04) 0 2px, transparent 2px 5px),
+    linear-gradient(180deg, #fbf5e8, #f3ead8);
+  transform: rotate(-1.5deg);
+  transform-origin: 50% 0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 26px 30px -14px rgba(0, 0, 0, 0.75), 0 3px 5px rgba(0, 0, 0, 0.45), 14px 8px 18px -8px rgba(0, 0, 0, 0.5);
+}
+.k-card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.14) 50%, rgba(255, 255, 255, 0.55));
+}
+.k-clip {
+  position: absolute;
+  top: -16px;
+  width: 74px;
+  height: 30px;
+  border-radius: 6px 6px 3px 3px;
+  background: linear-gradient(180deg, #f6f9fa, #aab4b9 55%, #6c777d);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+.k-clip-l { left: 12%; }
+.k-clip-r { right: 12%; }
+.k-kick-ink { color: #7b4a26; }
+.k-note {
+  margin: 0 0 14px;
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+}
+.k-note-sub {
+  font-size: 15px;
+  color: var(--ink2);
+}
+.k-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 18px 0 0;
+}
+.k-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8e1228;
+  border: 2px solid #b01832;
+  border-radius: 999px;
+}
+.k-links a:hover { background: rgba(176, 24, 50, 0.1); }
+.k-links a:focus-visible { outline-color: #8e1228; }
+.k-facts {
+  display: flex;
+  gap: 8px 28px;
+  flex-wrap: wrap;
+  margin: 22px 0 0;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(120, 90, 50, 0.5);
+}
+.k-facts div { display: flex; gap: 8px; align-items: baseline; }
+.k-facts dt { font-size: 13px; letter-spacing: 0.14em; color: var(--ink2); }
+.k-facts dd { margin: 0; font-size: 13px; color: var(--ink2); }
+.k-facts b { font-size: 20px; color: var(--ink); margin-right: 2px; }
+
+/* ---- 5 ほかの入口(小さな丸い手鏡) ---- */
+.k-others {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px clamp(24px, 4vw, 56px);
+  justify-content: space-between;
+}
+.k-minilink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 132px;
+  margin: 0;
+  aspect-ratio: auto;
+  border-radius: 0;
+  color: var(--cream);
+}
+.k-others li { align-self: flex-start; }
+.k-others li:nth-child(1) { --ms: 150px; --hr: -9deg; margin-top: 8px; }
+.k-others li:nth-child(2) { --ms: 176px; --hr: 7deg; margin-top: 34px; }
+.k-others li:nth-child(3) { --ms: 142px; --hr: -3deg; margin-top: 0; }
+.k-others li:nth-child(4) { --ms: 168px; --hr: 11deg; margin-top: 40px; }
+.k-others li:nth-child(5) { --ms: 154px; --hr: -6deg; margin-top: 14px; }
+.k-minilink .k-mini {
+  width: var(--ms, 160px);
+  height: var(--ms, 160px);
+  transform: rotate(var(--hr, 0deg));
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.k-minilink .k-mini::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 96%;
+  width: 16px;
+  height: 36px;
+  transform: translateX(-50%);
+  border-radius: 3px 3px 9px 9px;
+  background: linear-gradient(90deg, #7d8a91, #f1f5f6 45%, #8c989e);
+  z-index: -1;
+}
+.k-minilink b { font-size: 17px; letter-spacing: 0.08em; margin-top: 18px; }
+.k-minilink small { font-size: 12px; letter-spacing: 0.22em; color: var(--amber); }
+.k-g {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 66px;
+  -webkit-text-stroke: 3.5px #4a2a14;
+}
+.k-minilink:is(:hover, :focus-visible, .is-in) .k-g {
+  color: #fff2dc;
+  -webkit-text-stroke: 3.5px #fff2dc;
+  filter: drop-shadow(0 1px 6px rgba(10, 4, 2, 0.85));
+  transition: color 0.3s 0.12s, -webkit-text-stroke-color 0.3s 0.12s;
+}
+.k-minilink:is(:hover, :focus-visible, .is-in) .k-g::before { -webkit-text-stroke-color: rgba(20, 10, 6, 0.55); transition: -webkit-text-stroke-color 0.3s 0.12s; }
+.k-g::before {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  -webkit-text-stroke: 11px rgba(252, 253, 254, 0.95);
+}
+
+.k-credit2 {
+  max-width: 1440px;
+  margin: clamp(56px, 7vw, 88px) auto 0;
+  padding: 18px var(--gut, clamp(20px, 4vw, 64px)) 0;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  text-align: center;
+  color: rgba(255, 244, 228, 0.92);
+}
+.k-credit2::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 auto 18px;
+  background: linear-gradient(90deg, transparent, rgba(255, 244, 228, 0.3), transparent);
+}
+
+/* フッターの色を合わせる(あたたかい濃い色) */
+.mp:has(.k-below) .mp-ft {
+  background: #120a06;
+}
+
+/* ---- スマホ(別に設計) ---- */
+@media (max-width: 900px) {
+  .k-panes { grid-template-columns: repeat(2, 1fr); }
+  .k-region-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .k-sec { padding-left: 16px; padding-right: 16px; }
+  .k-panes { grid-template-columns: 1fr; gap: 40px; }
+  .k-panes li { width: 84%; }
+  .k-p1, .k-p3, .k-p5 { margin: 0 auto 0 0; }
+  .k-p2, .k-p4, .k-p6 { margin: 0 0 0 auto; }
+
+  .kb-name { font-size: clamp(19px, 5.8vw, 24px); }
+  .k-stack { padding: 0 4%; }
+  .kb-num { font-size: 44px; }
+  .k-scenelist { grid-template-columns: 1fr; gap: 6px; padding: 40px 18px 100px; }
+  .k-sc0, .k-sc1, .k-sc2, .k-sc3, .k-sc4, .k-sc5 { grid-column: 1; grid-row: auto; margin-top: 0; }
+  .k-sc1, .k-sc3, .k-sc5 { margin-left: 8%; }
+  .k-sc0, .k-sc2, .k-sc4 { margin-right: 8%; }
+  .k-scene { min-height: 84px; }
+  .k-scene-t { font-size: 30px; }
+  .k-rg { font-size: 36px; }
+  .k-areain { padding: 40px 12px 18px; }
+  .k-prefs li { flex: 1 1 calc(50% - 6px); min-width: 0; }
+  .k-pref { padding: 0 8px; font-size: 18px; min-height: 48px; }
+  .k-lipstick { width: 190px; right: 2%; bottom: 14px; }
+  .lp-tube { width: 104px; }
+  .lp-band { left: 102px; }
+  .lp-bullet { left: 118px; width: 66px; }
+  .k-minilink .k-mini { width: 132px; height: 132px; }
+  .k-card { transform: rotate(-1deg); padding-top: 40px; }
+  .k-others { gap: 30px 22px; justify-content: space-between; }
+  .k-others li { width: calc(50% - 14px); }
+  .k-minilink { min-width: 0; width: 100%; }
+}
+
+/* 動きを減らす設定: 曇りは晴れた状態(文字は読める色に) */
+@media (prefers-reduced-motion: reduce) {
+  .kb-fog:not(.kb-fog-area) { opacity: 0; transition: none; }
+  .k-areaglass { transition: none; }
+  .k-shade { opacity: 1; transition: none; }
+  .k-pane .k-txt { color: var(--cream); text-shadow: 0 1px 14px rgba(10, 4, 2, 0.9), 0 0 3px rgba(10, 4, 2, 0.7); transition: none; }
+  .k-pane .kb-slug, .k-pane .k-st { color: #f1e2cc; }
+  .k-pane .kb-num { color: #ff93a6; -webkit-text-stroke: 0.8px #5a0a18; text-shadow: 0 1px 10px rgba(10, 4, 2, 0.95), 0 0 3px rgba(10, 4, 2, 0.8); }
+  .k-pane, .k-pref::before { transition: none; }
+  .k-pane:hover { transform: none; }
+  .k-lip path { animation: none !important; }
+}
+
+/* ================= 2 エリア: 曇った鏡に、指で描いた日本地図(タイル地図) ================= */
+.k-mapglass {
+  --cell: min(76px, calc((100vw - 2 * var(--gut, 57px) - 160px) / 12));
+}
+.k-mapin {
+  display: flex;
+  justify-content: center;
+  padding: 54px 18px 34px;
+}
+.k-map {
+  position: relative;
+  width: calc(var(--cell) * 12);
+  height: calc(var(--cell) * 11);
+  isolation: isolate;
+  --oy: calc(var(--cell) * 1.8);
+}
+.k-maplead {
+  position: absolute;
+  left: 0;
+  top: calc(var(--cell) * 0.1);
+  width: calc(var(--cell) * 6.6);
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.95;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  text-shadow: 0 0 10px rgba(246, 242, 234, 0.95), 0 0 3px rgba(246, 242, 234, 0.95);
+}
+.k-mapline {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  overflow: visible;
+  pointer-events: none;
+  filter: url(#k-wax);
+}
+.k-mapline path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.82);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.k-tiles { list-style: none; margin: 0; padding: 0; }
+.k-maplabel {
+  position: absolute;
+  left: calc(var(--l, 0) * var(--cell));
+  top: calc(var(--t, 0) * var(--cell));
+  width: calc(var(--w, 2) * var(--cell));
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.1;
+  pointer-events: none;
+}
+.k-maplabel .k-rg {
+  font-size: clamp(20px, calc(var(--cell) * 0.37), 30px);
+  -webkit-text-stroke-width: 3px;
+  opacity: 0.6;
+}
+.k-maplabel small { display: block; margin-top: 2px; font-family: var(--k-mincho), serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #4a3b3e; }
+.k-tile {
+  position: absolute;
+  left: calc(var(--col) * var(--cell));
+  top: calc(var(--row) * var(--cell));
+  width: var(--cell);
+  height: var(--cell);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #26160d;
+  font-size: clamp(14px, calc(var(--cell) * 0.235), 19px);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 9px rgba(255, 248, 238, 0.95), 0 0 3px rgba(255, 248, 238, 0.95);
+  white-space: nowrap;
+}
+.k-tile em { font-style: normal; font-size: 12px; font-weight: 700; }
+/* 指先でひと押しして曇りを抜いた、丸い小さな跡(奥が少し見える) */
+.k-tile::before,
+.k-tile::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  z-index: -2;
+  pointer-events: none;
+  transition: transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.5s, background 0.5s, filter 0.6s;
+}
+.k-tile::before {
+  background-image: var(--ph);
+  background-size: calc(var(--cell) * 12) auto;
+  background-position: calc(var(--col) * var(--cell) * -1 - 5px) calc(var(--row) * var(--cell) * -1 - 5px - var(--oy, 0px));
+  filter: brightness(1.6) contrast(0.88) saturate(1.1);
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.78), inset 0 0 12px rgba(255, 255, 255, 0.45);
+}
+.k-tile::after {
+  background: rgba(246, 238, 226, 0.58);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.5);
+}
+/* 乗せた県の跡が大きく拭かれて、奥が明るく見える。字は暗いまま読める */
+.k-tile:is(:hover, :focus-visible)::before,
+.k-tile:is(:hover, :focus-visible)::after {
+  z-index: -1;
+  transform: scale(1.95);
+}
+.k-tile:is(:hover, :focus-visible)::before { filter: brightness(1.38) saturate(1.2) contrast(1.1); }
+.k-tile:is(:hover, :focus-visible)::after {
+  background: radial-gradient(circle, rgba(255, 244, 224, 0.32), rgba(255, 228, 184, 0.06) 70%, rgba(255, 228, 184, 0));
+  box-shadow: none;
+}
+.k-tile:focus-visible {
+  outline: 3px solid #7a2a1c;
+  outline-offset: -3px;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 5px rgba(255, 246, 234, 0.9);
+}
+/* 同じ地方のほかの県の跡も、うっすら晴れる */
+.k-map:has(.k-tile[data-r="0"]:is(:hover, :focus-visible)) .k-tile[data-r="0"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="1"]:is(:hover, :focus-visible)) .k-tile[data-r="1"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="2"]:is(:hover, :focus-visible)) .k-tile[data-r="2"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="3"]:is(:hover, :focus-visible)) .k-tile[data-r="3"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="4"]:is(:hover, :focus-visible)) .k-tile[data-r="4"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="5"]:is(:hover, :focus-visible)) .k-tile[data-r="5"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="6"]:is(:hover, :focus-visible)) .k-tile[data-r="6"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+.k-map:has(.k-tile[data-r="7"]:is(:hover, :focus-visible)) .k-tile[data-r="7"]:not(:hover):not(:focus-visible)::after { background: rgba(244, 236, 224, 0.16); }
+
+@media (max-width: 899px) {
+  .k-mapin { display: block; padding: 46px 14px 22px; }
+  .k-map { width: auto; height: auto; --oy: 0px; }
+  .k-maplead { position: static; width: auto; margin: 0 0 12px; }
+  .k-mapline { display: none; }
+  .k-maplabel { position: static; width: auto; margin: 20px 0 8px; text-align: left !important; }
+  .k-maplabel .k-rg { font-size: 28px; }
+  .k-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .k-tile { position: relative; left: auto; top: auto; width: auto; height: auto; min-height: 58px; font-size: 18px; }
+  .k-tile::before, .k-tile::after { inset: 3px; }
+  .k-tile::before { background-size: cover; background-position: center; }
+  .k-tile:is(:hover, :focus-visible)::before, .k-tile:is(:hover, :focus-visible)::after { transform: scale(1.14); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .k-tile::after { opacity: 0; }
+  .k-tile::before, .k-tile::after { transition: none; }
+  .k-minilink .k-g { color: #fff2dc; -webkit-text-stroke-color: #fff2dc; }
+  .k-minilink .k-g::before { -webkit-text-stroke-color: rgba(20, 10, 6, 0.55); }
+}
+
+/* ================= ほかの入口: 大きな手鏡(灯りの映り込み) ================= */
+.k-room2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(118deg, transparent 32%, rgba(255, 240, 215, 0.24) 41%, rgba(255, 240, 215, 0.05) 52%, transparent 60%);
+}
+@media (min-width: 601px) {
+  #other { padding-top: 52px; }
+  .k-others { gap: 18px clamp(14px, 2vw, 32px); max-width: 1320px; justify-content: space-between; }
+  .k-others li:nth-child(1) { --ms: min(226px, 15vw); margin-top: 6px; }
+  .k-others li:nth-child(2) { --ms: min(262px, 17.4vw); margin-top: 26px; }
+  .k-others li:nth-child(3) { --ms: min(210px, 14vw); margin-top: 0; }
+  .k-others li:nth-child(4) { --ms: min(250px, 16.6vw); margin-top: 30px; }
+  .k-others li:nth-child(5) { --ms: min(234px, 15.6vw); margin-top: 10px; }
+  .k-minilink .k-mini::after { width: calc(var(--ms, 160px) * 0.1); height: calc(var(--ms, 160px) * 0.26); }
+  .k-minilink b { margin-top: calc(var(--ms, 160px) * 0.2); }
+  .k-g { font-size: calc(var(--ms, 160px) * 0.42); }
+  .k-credit2 { margin-top: 40px; }
+}
+
+/* ================= 小さな直し ================= */
+.k-note { word-break: auto-phrase; text-wrap: pretty; line-break: strict; }
+.k-big :where(a):focus-visible {
+  outline-color: #7a2a1c;
+  box-shadow: inset 0 0 0 5px rgba(255, 246, 234, 0.92);
+}
+.k-pane:focus-visible {
+  outline: 3px solid #ffe3b0;
+  outline-offset: 5px;
+  box-shadow: inset 0 0 0 4px #8e1228, 0 18px 34px rgba(0, 0, 0, 0.55);
+}
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-txt { transition: color 0.3s 0.1s, text-shadow 0.3s 0.1s; }
+@media (hover: none) {
+  [data-wipe]:is(.is-in) .kb-fog { transition: --r 2.4s cubic-bezier(0.3, 0.5, 0.3, 1); }
+}
+
+/* ================= 4 回目の直し ================= */
+/* 1. エリアの丸い跡: 全県そろった明るい色(奥の写真の明るい窓辺だけが、少しずつ位置を変えて見える) */
+.k-tile { color: #120a05; --lift: 0.38; }
+.k-tile::before {
+  background-image: linear-gradient(rgba(255, 244, 226, var(--lift)), rgba(255, 244, 226, var(--lift))), var(--ph);
+  background-size: 100% 100%, cover;
+  background-position: 0 0, center;
+  filter: brightness(1.12) saturate(1.05);
+}
+.k-tile::after { background: rgba(250, 243, 232, 0.5); }
+@media (min-width: 900px) {
+  .k-tile::before {
+    background-size: 100% 100%, calc(var(--cell) * 3.4) auto;
+    background-position: 0 0, calc(var(--cell) * (var(--bx) * -0.42 - 1) - 5px) calc(var(--cell) * (var(--by) * -0.5 - 0.6) - 5px);
+  }
+}
+.k-tile:is(:hover, :focus-visible) { --lift: 0.04; }
+.k-tile:is(:hover, :focus-visible)::before { filter: brightness(1.28) saturate(1.2) contrast(1.06); }
+.k-tile:is(:hover, :focus-visible)::after {
+  background: radial-gradient(circle, rgba(255, 246, 228, 0.16), rgba(255, 232, 192, 0.04) 70%, rgba(255, 232, 192, 0));
+}
+.k-tile:is(:hover, :focus-visible)::before,
+.k-tile:is(:hover, :focus-visible)::after { transform: scale(2.5); }
+@media (max-width: 899px) {
+  .k-tile:is(:hover, :focus-visible)::before, .k-tile:is(:hover, :focus-visible)::after { transform: scale(1.14); }
+}
+.k-tile span { text-shadow: 0 0 2px #fffaf0, 0 0 2px #fffaf0, 0 0 5px #fffaf0, 0 0 10px rgba(255, 250, 240, 0.98), 0 0 18px rgba(255, 250, 240, 0.9); }
+
+/* 2. 暗い地の Tab の枠: 生成りの 3px の外枠 */
+.k-below :where(a):focus-visible { outline: 3px solid #fff6ea; outline-offset: 5px; }
+.k-minilink:focus-visible { outline: 3px solid #fff6ea; outline-offset: 8px; border-radius: 12px; }
+.k-head a:focus-visible { outline: 3px solid #fff6ea; outline-offset: 3px; box-shadow: 0 0 0 6px rgba(122, 42, 28, 0.95); border-radius: 6px; }
+
+/* 3. 利用シーン: 乗せると、言葉のまわりの曇りがやわらかく拭かれる。言葉・印を大きく、口紅も大きく */
+.k-sceneglass:has(.k-scene:is(:hover, :focus-visible)) { --ar: 130px; transition: --ar 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.k-sceneglass::after { display: block; }
+.k-sceneglass { min-height: 540px; }
+.k-scenelist { padding: 60px clamp(24px, 4vw, 72px) 150px; gap: 26px 0; }
+.k-scene { min-height: 150px; padding: 0 28px; }
+.k-scene-t { font-size: clamp(32px, 4.1vw, 62px); }
+.k-lip-b { stroke-width: 15px; }
+.k-lipstick { transform: rotate(-12deg) scale(1.3); transform-origin: 100% 100%; bottom: 30px; right: 3.5%; }
+@media (max-width: 899px) {
+  .k-sceneglass { min-height: 0; }
+  .k-scenelist { padding: 44px 18px 118px; gap: 6px; }
+  .k-scene { min-height: 88px; }
+  .k-scene-t { font-size: 32px; }
+  .k-lipstick { transform: rotate(-12deg); }
+}
+
+/* 4. 紙のカード: 中央に、少し広く */
+.k-edge { width: min(1100px, 100%); margin-inline: auto; }
+.k-card { width: min(980px, 94%); padding: 52px clamp(28px, 5vw, 72px) 38px; }
+.k-note { font-size: 19px; }
+.k-note-sub { font-size: 16px; }
+.k-clip-l { left: 14%; }
+.k-clip-r { right: 14%; }
+
+/* 5. 種類: 字の色の切り替えを先に(影の膜はそのあとを追う) */
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-txt { transition: color 0.12s 0s, text-shadow 0.12s 0s; }
+[data-wipe]:is(:hover, :focus-visible, .is-in) .kb-num { transition: color 0.12s 0s; }
+[data-wipe]:is(:hover, :focus-visible, .is-in) .k-shade { transition: opacity 0.3s 0s; }
+
+/* Tab の枠: 暗い地=生成りの 3px の外枠。明るいガラス・紙の上=濃い赤茶 */
+.k-below a:focus-visible { outline: 3px solid #fff6ea; outline-offset: 5px; }
+.k-below a.k-minilink:focus-visible { outline-offset: 8px; border-radius: 12px; }
+.k-below .k-big a:focus-visible,
+.k-below a.k-tile:focus-visible { outline: 3px solid #7a2a1c; outline-offset: -3px; }
+.k-below .k-card a:focus-visible { outline-color: #8e1228; outline-offset: 3px; }
+
+/* 利用シーンの言葉は折らない */
+.k-scene-t { white-space: nowrap; font-size: clamp(30px, 3.7vw, 54px); }
+.k-scene { padding: 0 22px; }
