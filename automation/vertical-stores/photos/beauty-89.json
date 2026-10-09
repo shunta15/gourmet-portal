@@ -1,0 +1,30 @@
+{
+  "key": "beauty-89",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-89/s1.jpg",
+      "imageUrl": "https://uyo-shorthair.com/images/about.jpg",
+      "pageUrl": "http://uyo-shorthair.com/",
+      "what": "受付と店内の様子",
+      "width": 1195,
+      "height": 772
+    },
+    {
+      "path": "/_portal/vshops/beauty-89/s2.jpg",
+      "imageUrl": "https://uyo-shorthair.com/images/salon1.jpg",
+      "pageUrl": "http://uyo-shorthair.com/",
+      "what": "セット椅子と鏡",
+      "width": 1200,
+      "height": 686
+    },
+    {
+      "path": "/_portal/vshops/beauty-89/s3.jpg",
+      "imageUrl": "https://uyo-shorthair.com/images/salon2.jpg",
+      "pageUrl": "http://uyo-shorthair.com/",
+      "what": "シャンプー台",
+      "width": 892,
+      "height": 801
+    }
+  ],
+  "note": ""
+}
