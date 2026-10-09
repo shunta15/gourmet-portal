@@ -1,0 +1,85 @@
+/* ====================================================================
+   暖簾（リアル版）— 最初の画面。top.css の .vN-hero まわりを写して、布を本物らしくしたもの。
+   h1・導入・メタ・「暖簾を上げる」の手がかりは top.css の .vN-headline / .vN-h1 / .vN-lead / .vN-meta / .vN-cue をそのまま使う。
+   ==================================================================== */
+.vR-hero{position:relative;height:200svh;--open:0;--prog:0}
+.vR-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--sumi);--yb:236px;--hem:860px;--rod:80px}
+.vR-scene{position:absolute;inset:0;transition:opacity 1s}
+.vR-hero[data-mode="init"] .vR-scene{opacity:0}
+.vR-photo{
+  position:absolute;inset:-3%;background-size:cover;background-position:50% 42%;
+  transform:scale(calc(1.02 + var(--prog) * .18));
+  /* 奥の写真は、見出しが主役になるよう、暗めに・わずかにぼかす（動かす値は --prog の拡大だけ。明るさは固定） */
+  filter:blur(2.2px) brightness(calc(.36 + var(--open) * .14 + var(--lamp) * .05)) saturate(.84) sepia(.22);
+  will-change:transform;
+}
+.vR-shade{position:absolute;inset:0;background:
+  radial-gradient(ellipse 30% 58% at 50% 58%,rgba(15,12,10,calc(var(--open) * .62)) 0%,rgba(15,12,10,calc(var(--open) * .30)) 58%,rgba(15,12,10,0) 100%),
+  radial-gradient(ellipse 70% 62% at 50% 56%,rgba(15,12,10,0) 0%,rgba(15,12,10,.35) 60%,rgba(15,12,10,.86) 100%),
+  linear-gradient(180deg,rgba(15,12,10,.75) 0%,rgba(15,12,10,0) 22%,rgba(15,12,10,0) 48%,rgba(15,12,10,.88) 82%,rgba(15,12,10,.98) 100%)}
+.vR-glow{position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none;
+  background:radial-gradient(ellipse 38% 58% at 50% 60%,rgba(240,196,140,calc(.06 + var(--lamp) * .12)),rgba(200,54,29,calc(.03 + var(--lamp) * .04)) 55%,transparent 75%)}
+/* 提灯（WebGL の canvas。写真と布のあいだ。暖簾が上がると見える。本番と同じ「奥の左右の上」）。WebGL が使えないときは本番の CSS の提灯（.vN-hero-lan） */
+.vR-lan{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:clamp(0,calc((var(--open) - .28) * 3.5),1)}
+.vR-hero .vN-hero-lan{top:var(--lan-top,300px)}
+.vR-hero .vN-hero-lan--l{left:calc(50% - var(--lan-off,30vw))}
+.vR-hero .vN-hero-lan--r{left:calc(50% + var(--lan-off,30vw))}
+/* 見出しの後ろの暗がり（暖簾が開いて見出しが出はじめるのに合わせて、写真を落として字を主役にする。下のページのこげ茶へ溶ける） */
+.vR-hlshade{position:absolute;left:50%;top:53%;width:min(52vw,720px);height:96%;transform:translate(-50%,-50%);pointer-events:none;
+  background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(12,9,7,.78) 0%,rgba(12,9,7,.58) 42%,rgba(12,9,7,0) 100%);
+  opacity:clamp(0,calc((var(--open) - .30) * 4),1)}
+/* 見出し・副題・左下の表記の位置・出る順番・大きさは、本番（top.css の .vN-headline / .vN-h1 / .vN-ch / .vN-lead / .vN-meta）と同じ。読みやすさのため、影だけ少し強くする */
+.vR-hero .vN-headline{z-index:2}
+.vR-hero .vN-h1{text-shadow:0 2px 26px rgba(0,0,0,.78),0 0 3px rgba(0,0,0,.45)}
+.vR-hero .vN-lead{text-shadow:0 0 16px rgba(0,0,0,.95),0 0 4px rgba(0,0,0,.9)}
+.vR-hero .vN-meta{z-index:4}
+
+.vR-cloth{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0;transition:opacity .8s}
+.vR-hero[data-mode="gl"] .vR-cloth{opacity:1}
+/* 夜の店先の暗がり：四隅と下を少し落とす（布の上に重ねるだけ。動かない） */
+.vR-vig{position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:radial-gradient(ellipse 85% 75% at 50% 42%,rgba(8,6,5,0) 58%,rgba(8,6,5,.42) 100%),linear-gradient(180deg,rgba(8,6,5,0) 76%,rgba(8,6,5,.38) 100%);
+  opacity:calc(1 - var(--open) * 1.6)}
+.vR-cover{display:none}
+
+/* 5 つの垂れ＝5 つの行き先（布の上に重ねた <a>。見えない。乗せる・Tab で垂れがたわみ、種類名が出る） */
+.vR-doors{position:absolute;left:0;right:0;top:var(--yb);height:calc(var(--hem) - var(--yb));z-index:4;display:grid;grid-template-columns:repeat(var(--n,5),minmax(0,1fr))}
+.vR-hero[data-up="1"] .vR-doors{pointer-events:none}
+.vR-door{position:relative;display:block;cursor:pointer;-webkit-tap-highlight-color:transparent;min-height:44px;min-width:44px}
+.vN a.vR-door:focus-visible{outline:2px solid var(--shu-hi);outline-offset:-14px}
+.vR-door-tag{position:absolute;left:50%;bottom:6.5%;display:flex;flex-direction:column;align-items:center;gap:9px;pointer-events:none;
+  opacity:0;transform:translate(-50%,8px);transition:opacity .5s,transform .7s cubic-bezier(.2,.7,.2,1)}
+.vR-door:hover .vR-door-tag,.vR-door:focus-visible .vR-door-tag{opacity:clamp(0,calc(1 - var(--open) * 6),1);transform:translate(-50%,0)}
+.vR-door-tag b{writing-mode:vertical-rl;font:500 14px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari);text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.vR-door-tag i{font:italic 400 12px/1 var(--f-lat);letter-spacing:.24em;color:var(--kinari-2);text-shadow:0 1px 8px rgba(0,0,0,.6)}
+@media (hover:none){.vR-door-tag{display:none}}
+
+/* CSS の布（最初の WebGL のコマが出るまでの静かな面と、WebGL が使えないときの代わり。出たら溶けて切り替わる） */
+.vR-fb{position:absolute;left:0;right:0;top:var(--rod);height:calc(var(--hem) - var(--rod));z-index:2;pointer-events:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  opacity:1;transition:opacity .9s ease .8s,visibility 0s 1.8s}
+.vR-hero[data-mode="gl"] .vR-fb{opacity:0;visibility:hidden}
+.vR-fb-rod{position:absolute;left:0;right:0;top:-11px;height:22px;z-index:2;background:linear-gradient(180deg,#4a3a2c,#2b1f16 40%,#120c08);box-shadow:0 10px 18px -4px rgba(0,0,0,.6)}
+.vR-fb-p{position:relative;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.30),rgba(255,255,255,.04) 30%,rgba(0,0,0,.22) 62%,rgba(0,0,0,.36)),
+    linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,0) 30%,rgba(0,0,0,.28) 100%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='w'><feTurbulence type='fractalNoise' baseFrequency='.9 .5' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .45 -.12'/></filter><rect width='100%25' height='100%25' filter='url(%23w)'/></svg>"),
+    #17233a}
+.vR-hero[data-dye="kon"] .vR-fb-p{background-color:#0d1524}
+.vR-hero[data-dye="sumi"] .vR-fb-p{background-color:#1c1714}
+.vR-hero[data-dye="kakishibu"] .vR-fb-p{background-color:#3a2012}
+.vR-hero[data-dye="enji"] .vR-fb-p{background-color:#3a1018}
+.vR-fb-p::before{content:"";position:absolute;left:0;top:calc(var(--yb) - var(--rod));bottom:0;width:3px;background:#07090d}
+.vR-fb-p:first-of-type::before{display:none}
+.vR-fb-p::after{content:"";position:absolute;left:0;right:0;bottom:30px;height:1px;background:rgba(255,255,255,.12);box-shadow:0 3px 0 rgba(0,0,0,.25)}
+.vR-fb-p b{position:absolute;left:0;right:0;top:calc(var(--yb) - var(--rod) + (var(--hem) - var(--yb)) * .40);transform:translateY(-50%);text-align:center;
+  font:400 15.2vw/1 var(--vR-f-shippori),"Shippori Mincho B1",serif;color:#cfc6b2;text-shadow:0 0 1px rgba(30,24,18,.6)}
+@media (min-width:1500px){.vR-fb-p b{font-size:228px}}
+
+/* 12px 未満の文字を無くす（下の段の小さい注記） */
+.vN-clock-note,.vN-ch-count small,.vN-nb-c,.vN-tan-tag{font-size:12px}
+.vN-col-st{font-size:clamp(12px,.95vw,14px)}
+@media (max-width:640px){.vN-ch-cur-go{font-size:12px}.vN-lan{font-size:12px}}
+
+/* スマホ: 画面の左下に見本の操作盤が出るので、「暖簾を上げる」の手がかりは少し上へ（開くとすぐ消える） */
+@media (max-width:640px){.vR-hero .vN-cue{bottom:56px}}
