@@ -1,0 +1,22 @@
+{
+  "key": "beauty-125",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-125/s1.jpg",
+      "imageUrl": "https://www.riyou-chokkinzu.com/img/sec05_img.png",
+      "pageUrl": "https://www.riyou-chokkinzu.com/",
+      "what": "店の入口(外観)",
+      "width": 520,
+      "height": 350
+    },
+    {
+      "path": "/_portal/vshops/beauty-125/s2.jpg",
+      "imageUrl": "https://www.riyou-chokkinzu.com/img/mv_bg.jpg",
+      "pageUrl": "https://www.riyou-chokkinzu.com/",
+      "what": "店の外観と看板",
+      "width": 1200,
+      "height": 450
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-52",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-52/s1.jpg",
+      "imageUrl": "https://futaba-shinkyu.net/wp-content/themes/futaba-shinkyu/images/index.info_image1.jpg",
+      "pageUrl": "https://futaba-shinkyu.net/",
+      "what": "入口の植物と玄関",
+      "width": 1200,
+      "height": 525
+    },
+    {
+      "path": "/_portal/vshops/bodycare-52/s2.jpg",
+      "imageUrl": "https://futaba-shinkyu.net/wp-content/themes/futaba-shinkyu/images/index_about_image1.jpg",
+      "pageUrl": "https://futaba-shinkyu.net/",
+      "what": "鍼の施術の手元",
+      "width": 1200,
+      "height": 524
+    }
+  ],
+  "note": ""
+}

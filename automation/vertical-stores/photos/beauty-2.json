@@ -1,0 +1,30 @@
+{
+  "key": "beauty-2",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-2/s1.jpg",
+      "imageUrl": "http://www.bagus-fukuoka.com/60002612/wp-content/uploads/2016/05/slider_02.png",
+      "pageUrl": "http://www.bagus-fukuoka.com/",
+      "what": "店内のセット椅子と棚",
+      "width": 1070,
+      "height": 587
+    },
+    {
+      "path": "/_portal/vshops/beauty-2/s2.jpg",
+      "imageUrl": "http://www.bagus-fukuoka.com/60002612/wp-content/uploads/2016/05/slider_03.png",
+      "pageUrl": "http://www.bagus-fukuoka.com/",
+      "what": "店内の鏡と椅子",
+      "width": 1070,
+      "height": 587
+    },
+    {
+      "path": "/_portal/vshops/beauty-2/s3.jpg",
+      "imageUrl": "http://www.bagus-fukuoka.com/60002612/wp-content/uploads/2016/05/slider_01.png",
+      "pageUrl": "http://www.bagus-fukuoka.com/",
+      "what": "店の木の看板",
+      "width": 1070,
+      "height": 587
+    }
+  ],
+  "note": ""
+}
