@@ -42,5 +42,5 @@ const CSS = `
 .dp-b:hover{background:rgba(239,230,214,.08)}
 .dp-b[data-on="1"]{border-color:rgba(239,230,214,.7);background:rgba(239,230,214,.12);color:#fff}
 .dp-b:focus-visible{outline:2px solid #e8643f;outline-offset:1px}
-@media (max-width:640px){.dp{left:8px;bottom:8px;padding:4px}.dp-t{display:none}.dp-b{padding:0 7px;min-height:40px}}
+@media (max-width:640px){.vR-hero .vN-cue{bottom:56px}.dp{left:8px;bottom:8px;padding:4px}.dp-t{display:none}.dp-b{padding:0 7px;min-height:40px}}
 `;

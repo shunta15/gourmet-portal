@@ -76,10 +76,7 @@
   font:400 15.2vw/1 var(--vR-f-shippori),"Shippori Mincho B1",serif;color:#cfc6b2;text-shadow:0 0 1px rgba(30,24,18,.6)}
 @media (min-width:1500px){.vR-fb-p b{font-size:228px}}
 
-/* 12px 未満の文字を無くす（下の段の小さい注記） */
-.vN-clock-note,.vN-ch-count small,.vN-nb-c,.vN-tan-tag{font-size:12px}
-.vN-col-st{font-size:clamp(12px,.95vw,14px)}
-@media (max-width:640px){.vN-ch-cur-go{font-size:12px}.vN-lan{font-size:12px}}
-
-/* スマホ: 画面の左下に見本の操作盤が出るので、「暖簾を上げる」の手がかりは少し上へ（開くとすぐ消える） */
-@media (max-width:640px){.vR-hero .vN-cue{bottom:56px}}
+/* 12px 未満の文字を無くす（下の段の小さい注記）。リアル版の最初の画面があるページ（.vR-hero を含む .vN）だけに効かせる＝本番の暖簾（OFF のとき）は変えない */
+.vN:has(.vR-hero) :is(.vN-clock-note,.vN-ch-count small,.vN-nb-c,.vN-tan-tag){font-size:12px}
+.vN:has(.vR-hero) .vN-col-st{font-size:clamp(12px,.95vw,14px)}
+@media (max-width:640px){.vN:has(.vR-hero) :is(.vN-ch-cur-go,.vN-lan){font-size:12px}}

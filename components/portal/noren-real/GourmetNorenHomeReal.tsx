@@ -10,11 +10,12 @@ import Nobori from "@/components/portal/noren/Nobori";
 import "../noren/top.css";
 import "./real.css";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
+import type { DyeKind } from "./clothReal";
 
 /**
  * 暖簾のグルメのトップ（リアル版の試作）。components/portal/pages/gourmet-noren-home.tsx を写して、
  * 最初の画面（NorenHero）だけを NorenHeroReal に差し替えたもの。最初の画面より下は、いまの入口と同じ中身。
- * プレビュー・ローカル専用（/proto-noren/real）。本番の /gourmet は変えない。
+ * 見本（/proto-noren/real。allowUrlOverride で URL の ?dye= などを許す）と、本番の /gourmet（lib/portal/noren/realTop.ts のスイッチが true のときだけ。色は固定）で使う。
  */
 
 function splitTitle(t: string): [string, string] {
@@ -29,7 +30,7 @@ const PRINCIPLES = [
   { k: "口コミを転載しない", en: "No reposted reviews", body: "ほかのサイトの口コミや評価は、掲載しません。" },
 ];
 
-export default async function GourmetNorenHomeReal({ links }: { links: NorenLinks }) {
+export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrlOverride = false }: { links: NorenLinks; dye?: DyeKind; allowUrlOverride?: boolean }) {
   const restaurants = await getAllRestaurants();
   const byId = new Map(restaurants.map((r) => [r.id, r]));
   const regionName = (k: string) => REGIONS[k as RegionKey]?.name ?? k;
@@ -66,6 +67,8 @@ export default async function GourmetNorenHomeReal({ links }: { links: NorenLink
         count={restaurants.length}
         areas={regions.length}
         chapters={chapters.map((c) => ({ key: c.key, kanji: c.kanji, ja: c.ja, en: c.en }))}
+        defaultDye={dye}
+        allowUrlOverride={allowUrlOverride}
       />
 
       {/* 3 章 */}

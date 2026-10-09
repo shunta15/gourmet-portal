@@ -6,7 +6,16 @@ import Lantern from "../noren/Lantern";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
 export type RealChapter = { key: string; kanji: string; ja: string; en: string };
-type Props = { photo: string; count: number; areas: number; chapters: RealChapter[]; defaultDye?: DyeKind };
+type Props = {
+  photo: string;
+  count: number;
+  areas: number;
+  chapters: RealChapter[];
+  /** 布の色（本番では lib/portal/noren/realTop.ts の NOREN_REAL_DYE で固定） */
+  defaultDye?: DyeKind;
+  /** URL の ?dye= ?wrinkle= ?font= ?dpr= と、色の切り替えイベントを受け付けるか。見本のルート（/proto-noren/real）だけ true。本番は false（既定） */
+  allowUrlOverride?: boolean;
+};
 
 const clamp = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
 const ease = (x: number) => x * x * (3 - 2 * x);
@@ -37,7 +46,7 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
  * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
-export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai" }: Props) {
+export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -58,12 +67,13 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const root = w.closest(".vN") as HTMLElement;
     const qs = new URLSearchParams(location.search);
-    const dyeQ: DyeKind = parseDye(qs.get("dye")) ?? defaultDye;
-    const wq = parseFloat(qs.get("wrinkle") ?? "");
+    const allow = allowUrlOverride;
+    const dyeQ: DyeKind = (allow ? parseDye(qs.get("dye")) : null) ?? defaultDye;
+    const wq = allow ? parseFloat(qs.get("wrinkle") ?? "") : NaN;
     const wrinkleQ = Number.isFinite(wq) ? wq : 0.2;
     setDye(dyeQ);
-    const fontQ = (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
-    const dprQ = parseFloat(qs.get("dpr") ?? "");
+    const fontQ = allow && (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
+    const dprQ = allow ? parseFloat(qs.get("dpr") ?? "") : NaN;
 
     let cloth: ClothReal | null = null;
     let lans: LanternReal | null = null;
@@ -285,7 +295,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       dirty = true;
       lastDraw = 0;
     };
-    window.addEventListener(DYE_EVENT, onDye);
+    if (allow) window.addEventListener(DYE_EVENT, onDye);
     window.addEventListener("resize", onResize);
     window.addEventListener("pointermove", onMove, { passive: true });
     dEl?.addEventListener("pointerover", onEnter);

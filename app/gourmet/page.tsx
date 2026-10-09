@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import GourmetNorenHome from "@/components/portal/pages/gourmet-noren-home";
+import GourmetNorenHomeReal from "@/components/portal/noren-real/GourmetNorenHomeReal";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
+import { NOREN_REAL_DYE, NOREN_REAL_TOP } from "@/lib/portal/noren/realTop";
 
 // グルメのトップ（公開スイッチ ON のときだけ。2026-10-09 から暖簾のデザイン。枠は app/gourmet/layout.tsx）。
 // 中身は components/portal/pages/gourmet-noren-home.tsx（見本 /proto-noren と共通。行き先だけ本物のページ）。
@@ -17,5 +19,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   assertPortalLive();
+  // 最初の画面だけ、リアル版の暖簾に替えられる（lib/portal/noren/realTop.ts のスイッチ。false なら今までの暖簾）。色は固定で、URL では替わらない
+  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} />;
   return <GourmetNorenHome links={LIVE_LINKS} />;
 }
