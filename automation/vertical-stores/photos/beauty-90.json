@@ -1,0 +1,30 @@
+{
+  "key": "beauty-90",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-90/s1.jpg",
+      "imageUrl": "https://enzerubiyousitu.com/system_panel/uploads/images/cover01.jpg",
+      "pageUrl": "https://enzerubiyousitu.com/",
+      "what": "明るい店内の全景",
+      "width": 1200,
+      "height": 550
+    },
+    {
+      "path": "/_portal/vshops/beauty-90/s2.jpg",
+      "imageUrl": "https://enzerubiyousitu.com/system_panel/uploads/images/top_shop.jpg",
+      "pageUrl": "https://enzerubiyousitu.com/",
+      "what": "店の外観と入口",
+      "width": 780,
+      "height": 885
+    },
+    {
+      "path": "/_portal/vshops/beauty-90/s3.jpg",
+      "imageUrl": "https://enzerubiyousitu.com/system_panel/uploads/images/top_concept02.jpg",
+      "pageUrl": "https://enzerubiyousitu.com/",
+      "what": "シャンプー台の席",
+      "width": 560,
+      "height": 361
+    }
+  ],
+  "note": ""
+}
