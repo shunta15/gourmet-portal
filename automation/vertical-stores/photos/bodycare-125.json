@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-125",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-125/s1.jpg",
+      "imageUrl": "https://sunpark-urawa.instatry.jp/img/point01.jpg",
+      "pageUrl": "https://sunpark-urawa.instatry.jp/",
+      "what": "施術室で背中を見る様子",
+      "width": 1035,
+      "height": 651
+    },
+    {
+      "path": "/_portal/vshops/bodycare-125/s2.jpg",
+      "imageUrl": "https://sunpark-urawa.instatry.jp/img/point02.jpg",
+      "pageUrl": "https://sunpark-urawa.instatry.jp/",
+      "what": "ヘッドの施術の様子",
+      "width": 1035,
+      "height": 645
+    },
+    {
+      "path": "/_portal/vshops/bodycare-125/s3.jpg",
+      "imageUrl": "https://sunpark-urawa.instatry.jp/img/point03.jpg",
+      "pageUrl": "https://sunpark-urawa.instatry.jp/",
+      "what": "腰まわりの施術の様子",
+      "width": 1035,
+      "height": 645
+    }
+  ],
+  "note": ""
+}

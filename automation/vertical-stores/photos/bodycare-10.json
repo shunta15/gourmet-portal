@@ -1,0 +1,30 @@
+{
+  "key": "bodycare-10",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-10/s1.jpg",
+      "imageUrl": "https://yamato-seikotsuin.com/common/upload_data/yamato-seikotsuincom/image/20220224102301.jpg",
+      "pageUrl": "https://yamato-seikotsuin.com/",
+      "what": "施術室での施術の様子",
+      "width": 1200,
+      "height": 846
+    },
+    {
+      "path": "/_portal/vshops/bodycare-10/s2.jpg",
+      "imageUrl": "https://yamato-seikotsuin.com/common/upload_data/yamato-seikotsuincom/image/20220224102253.jpg",
+      "pageUrl": "https://yamato-seikotsuin.com/",
+      "what": "背中の施術の様子",
+      "width": 1200,
+      "height": 846
+    },
+    {
+      "path": "/_portal/vshops/bodycare-10/s3.jpg",
+      "imageUrl": "https://yamato-seikotsuin.com/common/upload_data/yamato-seikotsuincom/image/20220224102257.jpg",
+      "pageUrl": "https://yamato-seikotsuin.com/",
+      "what": "脚のストレッチ施術",
+      "width": 1200,
+      "height": 846
+    }
+  ],
+  "note": ""
+}
