@@ -15,10 +15,10 @@
 //   6. 1 つの店(featureId)の中で、同じ中身(sha256)のファイルが 2 回使われていない(ポイントの若い順に残し、一番上は最後)
 // 「写真が無い」の数え方は common.mjs の lackOf(inventory.mjs と同じ。FeaturePage.tsx と同じ判定関数を共有)。
 // 当てはめの前の記事で数えるので、このスクリプトを何度回しても結果は同じ(生成済みのファイルには左右されない)。
-import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { ROOT, CALLER_CWD, loadCode, lackOf } from './common.mjs';
+import { readJpeg, sha1dir, sha256, MIN_PX, KB, SLACK, LIMIT } from './jpeg.mjs';
 
 // ---------- 引数 ----------
 const argv = process.argv.slice(2);
@@ -30,10 +30,6 @@ const OUT = opt('--out', path.join(ROOT, 'lib/featureSpotPhotos.generated.json')
 const DRY = flag('--dry-run');
 
 // ---------- 決まり ----------
-const MIN_PX = 300;
-const KB = 1024;
-const LIMIT = { spot: 220 * KB, hero: 350 * KB };
-const SLACK = 1.5;
 
 const REASONS = {
   'record-unreadable': '記録が読めない(JSON として壊れている・形が違う)',
@@ -52,38 +48,6 @@ const REASONS = {
   'dup-content': '同じ店の中で、同じ中身のファイルが 2 回使われている(先のものを採用)',
 };
 
-// ---------- JPEG を読む(依存なし。SOF のサイズの記載と、終わりの EOI を見る) ----------
-function readJpeg(buf) {
-  if (buf.length < 4 || buf[0] !== 0xff || buf[1] !== 0xd8) return { error: '先頭が JPEG ではない' };
-  let i = 2;
-  let dims = null;
-  while (i < buf.length - 1) {
-    if (buf[i] !== 0xff) return { error: 'JPEG の構造が壊れている' };
-    while (i < buf.length && buf[i] === 0xff) i++; // 詰めの 0xFF
-    const m = buf[i++];
-    if (m === undefined) break;
-    if (m === 0x01 || (m >= 0xd0 && m <= 0xd8)) continue; // 長さの無いマーカー
-    if (m === 0xd9) break; // EOI(SOF より前に来たら、下で dims 無しになる)
-    if (i + 2 > buf.length) return { error: 'JPEG の途中で切れている' };
-    const len = buf.readUInt16BE(i);
-    if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) {
-      if (i + 7 > buf.length) return { error: 'JPEG のサイズの記載が切れている' };
-      dims = { height: buf.readUInt16BE(i + 3), width: buf.readUInt16BE(i + 5) };
-      break;
-    }
-    if (m === 0xda) break; // SOS: 画像の本体に入った(SOF を見つけられなかった)
-    i += len;
-  }
-  if (!dims || !dims.width || !dims.height) return { error: 'JPEG のサイズの記載が見つからない' };
-  let end = buf.length;
-  while (end > 2 && buf[end - 1] === 0x00) end--; // 末尾の 0 の詰めは許す
-  if (!(buf[end - 2] === 0xff && buf[end - 1] === 0xd9)) return { error: '終わり(EOI)が無い=途中で切れた JPEG' };
-  return dims;
-}
-
-const sha1dir = (featureId) => 'fs-' + createHash('sha1').update(featureId).digest('hex').slice(0, 10);
-const sha256 = (buf) => createHash('sha256').update(buf).digest('hex');
-
 // ---------- コードの特集 ----------
 const code = await loadCode();
 const lack = new Map(); // featureId -> { spots: Set<番号>, count: ranking の長さ, heroUnusable }
@@ -94,7 +58,7 @@ for (const [id, a0] of Object.entries(code.FEATURE_ARTICLES)) {
 }
 
 // ---------- 記録を読む ----------
-const files = existsSync(RECORDS_DIR) ? readdirSync(RECORDS_DIR).filter((f) => f.endsWith('.json')).sort() : [];
+const files = existsSync(RECORDS_DIR) ? readdirSync(RECORDS_DIR).filter((f) => f.endsWith('.json') && f !== 'store-links.json').sort() : []; // store-links.json は店ページ用の結びつき(記録ではない)
 const drops = []; // { featureId, slot, file, reason, detail }
 const warns = [];
 const recorded = new Set(); // 記録のある featureId(読めた記録のもの)
