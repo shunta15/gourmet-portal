@@ -48,6 +48,7 @@ export default function ShopActionsNoren({
                 href={a.href}
                 {...(a.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className={`vS-act${a.hero ? " is-hero" : ""}`}
+                data-sa-id={a.id}
                 aria-label={`${label(a)}（${KIND[a.id]}）${a.external ? "（外部サイトが新しいタブで開きます）" : ""}`}
                 data-cursor={a.id === "phone" ? "CALL" : a.id === "reserve" ? "BOOK" : "GO"}
                 onClick={() => {
