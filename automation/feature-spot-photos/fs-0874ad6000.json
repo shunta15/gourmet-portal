@@ -3,10 +3,45 @@
   "dir": "fs-0874ad6000",
   "storeName": "道後ハイボール酒場",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%81%93%E5%BE%8C%E3%83%8F%E3%82%A4%E3%83%9C%E3%83%BC%E3%83%AB%E9%85%92%E5%A0%B4%20%E6%9D%BE%E5%B1%B1%E5%B8%82%E9%81%93%E5%BE%8C%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE",
-  "placeUrl": "https://www.google.com/maps/place/%E9%81%93%E5%BE%8C%E3%83%8F%E3%82%A4%E3%83%9C%E3%83%BC%E3%83%AB%E9%85%92%E5%A0%B4/@33.8520149,132.7845954,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe5362b83bdb9:0x5319a431bc7b9c4f!8m2!3d33.8520149!4d132.7845954!16s%2Fg%2F11mrwhpf8f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「道後ハイボール酒場」(名前は一致)・住所は〒790-0842 愛媛県松山市道後湯之町14-16・業種は居酒屋。記録の area は道後町一丁目で、Google の町名(道後湯之町)が食い違う。",
+  "placeUrl": "https://www.google.com/maps/place/%E9%81%93%E5%BE%8C%E3%83%8F%E3%82%A4%E3%83%9C%E3%83%BC%E3%83%AB%E9%85%92%E5%A0%B4/@33.8520149,132.7845954,17z/data=!3m1!4b1!4m6!3m5!1s0x354fe5362b83bdb9:0x5319a431bc7b9c4f!8m2!3d33.8520149!4d132.7845954!16s%2Fg%2F11mrwhpf8f?hl=ja&hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "道後ハイボール酒場",
+    "address": "〒790-0842 愛媛県松山市道後湯之町１４−１６",
+    "how": "deep-verified"
+  },
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-0874ad6000/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qh2h-ylnflCoNGcOQJYM8yteGPLfC9yZTc-fOPcN3vTKaDa8tWXsauMTzR8zggpqWPxKmv87hr26OrmWgI2A_WJlp1SGCiezI1FooGFu1f6DIbss0Mov0Asm1eRoMyZgbfvldWGjU59ac",
+      "what": "提灯の灯る店の外観",
+      "width": 720,
+      "height": 540,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-0874ad6000/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMjPIk0CXUuH8Zmu3nxhrls7vTo0AbV_KP6GcWIXB7Ubgro2VsDprSS2goNpuUX74LdRZhgbPD9sOOQG_sdT9AR_fwgMe84clpukOWjXsqqmHc4qkBArwEgCTAFpVxA4LsgkS1t3InBo_-",
+      "what": "酒瓶の棚とカウンターのある店内",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-0874ad6000/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RhxpLuQ2ibtrb0VUHauKe7wKrCMzwTRrLdxmEgvsit6doYoh56BC2tN6VhRO9opLvNYm1WELdy5MxXkMoGdju5ZPjAjG3rmEwWia7Haevg7OGhR2OHPSpLfqbr2e_SNXuAegHrkj1N3RU",
+      "what": "道後ビールの瓶とつまみ",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「道後ハイボール酒場」(名前は一致)・住所は〒790-0842 愛媛県松山市道後湯之町14-16・業種は居酒屋。記録の area は道後町一丁目で、Google の町名(道後湯之町)が食い違う。 / 発注者が手がかりを読んで同じ店と判断(2026-10-09): 店名が完全一致し、記事の「飛鳥乃湯泉の目の前」と Google の位置(43m)が合う。町名は隣り合う「道後町」と「道後湯之町」の書きちがい",
   "verify": {
     "status": "不一致",
     "signals": [

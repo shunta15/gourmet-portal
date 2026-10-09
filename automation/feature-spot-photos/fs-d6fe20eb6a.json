@@ -3,10 +3,45 @@
   "dir": "fs-d6fe20eb6a",
   "storeName": "喫茶食事まこ",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E9%A3%9F%E4%BA%8B%E3%81%BE%E3%81%93%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%B8%89%E9%87%8D%E9%83%A1%E8%8F%B0%E9%87%8E%E7%94%BA%E5%A4%A7%E5%AD%97%E7%A5%9E%E6%A3%AE",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "検索の結果が候補の一覧のままで、1つの店のページに着かなかったため写真なし(一覧の中から選ばない決まり)。(着いた先: list/other)",
+  "placeUrl": "https://www.google.com/maps/place/%E5%96%AB%E8%8C%B6%E9%A3%9F%E4%BA%8B%E3%81%BE%E3%81%93/@34.9986747,136.5352277,17z/data=!3m1!4b1!4m6!3m5!1s0x600392beda27a43f:0x8cb6b8c261c7e8cf!8m2!3d34.9986747!4d136.5352277!16s%2Fg%2F1ts3l44f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "喫茶食事まこ",
+    "address": "〒512-1211 三重県四日市市桜町３８４−３",
+    "how": "deep-verified"
+  },
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-d6fe20eb6a/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SeXe6lwleep1mkQqEgJhe4rpVEUcRwLk9nTO_WpiIA7nss18DWv2j1Zw3PjjZ25zJTFsyBlP_NbxZxpoXaDFHzsTf3tvQdBR2t6QT4ByMGeXNGCJ7EICmTmIguDw83fK6Z6u-LWA",
+      "what": "食器棚の前に花を飾った店内",
+      "width": 600,
+      "height": 800,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-d6fe20eb6a/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TX18oGqzUzmCPfDYcm-17wlP8k8rfq3YwJ7E7e6gGXADz44xpqx_4zx_AtNVLDcC979n7a31G2yMbQkrZg6QhS4AtV09jZ62DKdCBHf6-4RVW_GpBFb2i2-m8oUeUnwT3dxHn8HA",
+      "what": "看板のある入口の扉",
+      "width": 675,
+      "height": 900,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-d6fe20eb6a/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwOqBozVRjMz4olBmzAqaUCaqZ9ZTpfF8k0ADGr8JwNxxqQk2s-W2CwpE8vaC2wBFLAl6s9IVBnbJ8P_dpKibvqIFxLvWI_z3EOIOWfPKgl7gwWkn0kYV41N2Up_ko5MFwwmefBCSBKmWO",
+      "what": "道沿いの店の外観と駐車場",
+      "width": 800,
+      "height": 600,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "検索の結果が候補の一覧のままで、1つの店のページに着かなかったため写真なし(一覧の中から選ばない決まり)。(着いた先: list/other) / 発注者が手がかりを読んで同じ店と判断(2026-10-09): マチノワの元の記録(automation/stores500/map.json)にあるオーナー側の Google マップの cid が、その店そのもの",
   "verify": {
     "status": "不一致",
     "signals": [

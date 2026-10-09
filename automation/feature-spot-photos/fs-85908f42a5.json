@@ -3,10 +3,75 @@
   "dir": "fs-85908f42a5",
   "storeName": "晩餐-Bansun",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%99%A9%E9%A4%90-Bansun%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E8%8A%B1%E7%95%91",
-  "placeUrl": "https://www.google.com/maps/place/%E4%B9%85%E7%95%99%E7%B1%B3%E5%B1%85%E9%85%92%E5%B1%8B+%E5%92%8C%E6%B4%8B%2F%E5%89%B5%E4%BD%9C%E9%85%92%E5%A0%B4+%E6%99%A9%E9%A4%90-Bansun-/@33.3100264,130.5192568,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a571fd6a6261:0xe4500a4cc23f13c6!8m2!3d33.3100264!4d130.5192568!16s%2Fg%2F11wjpgnm74?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
-  "matched": null,
-  "images": [],
-  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」・住所は〒830-0033 福岡県久留米市天神町152-4 第6富太屋ビル101・業種はモダン居酒屋レストラン。記録の area は久留米市花畑で、Google の町名(天神町)が食い違う。",
+  "placeUrl": "https://www.google.com/maps/place/%E4%B9%85%E7%95%99%E7%B1%B3%E5%B1%85%E9%85%92%E5%B1%8B+%E5%92%8C%E6%B4%8B%2F%E5%89%B5%E4%BD%9C%E9%85%92%E5%A0%B4+%E6%99%A9%E9%A4%90-Bansun-/@33.3100264,130.5192568,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a571fd6a6261:0xe4500a4cc23f13c6!8m2!3d33.3100264!4d130.5192568!16s%2Fg%2F11wjpgnm74?hl=ja&hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "久留米居酒屋 和洋/創作酒場 晩餐-Bansun-",
+    "address": "〒830-0033 福岡県久留米市天神町１５２−４ 第6 富太 屋ビル101",
+    "how": "deep-verified"
+  },
+  "images": [
+    {
+      "slot": 1,
+      "path": "/restaurants/fs/fs-85908f42a5/p1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWFcZbeCS0GTqrKHYPAa4FBvUiivL_-h0fKQ9gfZquTsSUscYXqziw526bOFqNHXEkzTJiZGMIEhZ_euKUQdxVnPDtMJaFUG_tVCpHq2MH0tQ7MlzPVQkya_naqpoXbofE3yiNK7pjsKU",
+      "what": "牡蠣とアスパラの小鉢",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-85908f42a5/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpIjtaPSoYmtfUYVKUJCNAmn1743gUkMM0H2yu8KWPeivZSNcFW5PQ7Aq38fdCbuq_dxST8ZF2KK8MFkSg3XL2Wcw254JmfJahZ7hg6jyPFA2pRCzaYyR8YzQZR-LJmlap1iRekPgIhPO2",
+      "what": "ウニをのせた焼き料理",
+      "width": 720,
+      "height": 542,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-85908f42a5/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkCQVtwEQJPOSxsCBjJAhvQRqDWZcSmGTPJOXDfoPoh3Xp7Sh7YG17lpcV4LeE1fMOPi9_6-e06aL9LiC9Nh1wpFIr3ozFvH6bLvLEaqjcvyC9vlGJ2TBYHxrmaaVFQK_zpdvHaSygRvnt",
+      "what": "木のカウンターが続く店内",
+      "width": 600,
+      "height": 399,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-85908f42a5/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SI4tXeR2BtPt-exIYgj8_K_ZJwZBjdMEJBuoirIZP-m2FjjJvuF8GmeCUzuAd4bSozAHCyYcZd_boZxNEMwpws8RBnEFGapw6HRbMiQzltsxtRnWncGPPkXAWZ_7nKKrfOmBVOjcIqIc--",
+      "what": "木のテーブルと椅子の席",
+      "width": 800,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-85908f42a5/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmXMC0oFWDUR3Mq4LWXHnQTlps7grHEwDgacE1JJwajkIzw81iWEygAzrx-rCO0dtBjYBI7B3ZKSZ8LUYJdVuVjtvJvKgrLOohfSSJPQvyEaecj2MjMgJzNKBs3IVDUDIUgcc04TNL1g19",
+      "what": "刺身の盛り合わせ",
+      "width": 800,
+      "height": 533,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": "hero",
+      "path": "/restaurants/fs/fs-85908f42a5/hero.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R7BQ3vyFZ67VGkZjF04biHItmjEwcIARmokVO04TaTH8p4jfHH6b4DahUHbc76cr4OVI9w7rFqVVoyPEfb-fDg9utdI9UdusYsu89EOXAyoZRgFGVDmcs8uCFxGuN0FSYHXXfgk1VEi0oI",
+      "what": "酒の棚とお客さんで賑わう店内",
+      "width": 1400,
+      "height": 788,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」・住所は〒830-0033 福岡県久留米市天神町152-4 第6富太屋ビル101・業種はモダン居酒屋レストラン。記録の area は久留米市花畑で、Google の町名(天神町)が食い違う。 / 発注者が手がかりを読んで同じ店と判断(2026-10-09): マチノワの店ページ r283 の住所(久留米市天神町152-4)が Google と番地まで一致。記事の「花畑」は最寄り駅の名前",
   "verify": {
     "status": "不一致",
     "signals": [
