@@ -17,7 +17,7 @@ import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
-import { decodeRewrittenId } from "@/lib/portal/noren/rewrites";
+import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
 
 // 特集記事ページの暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/<id> が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical・構造化データは /feature/<id> のまま。この内部のパス /gourmet/feature/<id> は外に出さない）。
@@ -27,7 +27,10 @@ import { decodeRewrittenId } from "@/lib/portal/noren/rewrites";
 export const revalidate = 60;
 export const dynamicParams = true;
 
+// 特集の暖簾化を使わないあいだ（NOREN_FEATURE_REWRITE=false）は、この内部のパスを直接開いても 404（/feature/<id> と同じ中身の重複ページを出さない）。
+// 静的に作る ID も空にする（536 本ぶんのビルドを省く）。true にすれば書き換え・リダイレクトと一緒に効く。
 export const generateStaticParams = liveStaticParams(async () => {
+  if (!NOREN_FEATURE_REWRITE) return [];
   const ids = await getAllFeatureArticleIds();
   return ids.map((id) => ({ id }));
 });
@@ -38,6 +41,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   assertPortalLive();
+  if (!NOREN_FEATURE_REWRITE) notFound();
   // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
   const id = decodeRewrittenId((await params).id);
   const a = await getFeatureArticleById(id);
@@ -68,6 +72,7 @@ export default async function Page({
   params: Promise<{ id: string }>;
 }) {
   assertPortalLive();
+  if (!NOREN_FEATURE_REWRITE) notFound();
   // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
   const id = decodeRewrittenId((await params).id);
   const article = await getFeatureArticleById(id);
