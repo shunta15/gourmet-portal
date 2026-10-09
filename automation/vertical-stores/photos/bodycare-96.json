@@ -8,6 +8,22 @@
       "what": "施術ベッドが並ぶ院内",
       "width": 916,
       "height": 520
+    },
+    {
+      "path": "/_portal/vshops/bodycare-96/s2.jpg",
+      "imageUrl": "https://all-age-seikotsuin.com/wp-content/themes/sg073/img/index/mv_01.jpg",
+      "pageUrl": "https://all-age-seikotsuin.com/",
+      "what": "施術者が施術する様子",
+      "width": 1200,
+      "height": 563
+    },
+    {
+      "path": "/_portal/vshops/bodycare-96/s3.jpg",
+      "imageUrl": "https://all-age-seikotsuin.com/wp-content/uploads/2021/04/ph_index_05.jpg",
+      "pageUrl": "https://all-age-seikotsuin.com/",
+      "what": "施術者(スタッフ)の写真",
+      "width": 916,
+      "height": 520
     }
   ],
   "note": ""

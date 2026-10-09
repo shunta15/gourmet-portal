@@ -3,6 +3,22 @@
   "images": [
     {
       "path": "/_portal/vshops/bodycare-107/s1.jpg",
+      "imageUrl": "https://bonesetter-yawaragi.com/wp-content/uploads/2020/12/TOPFV1-scaled-e1608696057395.jpg",
+      "pageUrl": "https://www.bonesetter-yawaragi.com/",
+      "what": "院の外観と院長",
+      "width": 1200,
+      "height": 619
+    },
+    {
+      "path": "/_portal/vshops/bodycare-107/s2.jpg",
+      "imageUrl": "https://bonesetter-yawaragi.com/wp-content/uploads/2020/12/TOPFV3-scaled-e1608696087752.jpg",
+      "pageUrl": "https://www.bonesetter-yawaragi.com/",
+      "what": "院内での問診の様子",
+      "width": 1200,
+      "height": 639
+    },
+    {
+      "path": "/_portal/vshops/bodycare-107/s3.jpg",
       "imageUrl": "https://bonesetter-yawaragi.com/wp-content/uploads/2020/12/visceral-adjustment1-e1608693543622.jpg",
       "pageUrl": "https://www.bonesetter-yawaragi.com/",
       "what": "施術の手元(顔なし)",

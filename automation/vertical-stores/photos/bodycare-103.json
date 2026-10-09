@@ -3,6 +3,14 @@
   "images": [
     {
       "path": "/_portal/vshops/bodycare-103/s1.jpg",
+      "imageUrl": "http://yamamoto-seikotsuin.com/wp-content/uploads/2025/08/IMG_2754-1024x683-1.jpg",
+      "pageUrl": "https://yamamoto-seikotsuin.com/",
+      "what": "施術室での問診の様子",
+      "width": 1024,
+      "height": 683
+    },
+    {
+      "path": "/_portal/vshops/bodycare-103/s2.jpg",
       "imageUrl": "https://yamamoto-seikotsuin.com/wp-content/uploads/2025/08/IMG_2895.jpg",
       "pageUrl": "https://yamamoto-seikotsuin.com/",
       "what": "施術ベッドでの背中の施術(顔なし)",

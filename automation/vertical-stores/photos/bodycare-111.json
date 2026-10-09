@@ -1,5 +1,22 @@
 {
   "key": "bodycare-111",
-  "images": [],
-  "note": "公式サイトの写真は外観・施術とも人の顔が写る(スタッフ・患者)か装飾の森の写真のみ"
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-111/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/cf4057_dabe6893ac2347d19116278199021819~mv2.jpg",
+      "pageUrl": "https://www.lucesekkotsuin-shinkyuin.com/",
+      "what": "院の外観とスタッフ(画像の一部を切抜)",
+      "width": 950,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/bodycare-111/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/3e9cd9_f28f99503c7040c89c54f9d8e47d7bb3~mv2.png",
+      "pageUrl": "https://www.lucesekkotsuin-shinkyuin.com/%E7%BE%8E%E5%AE%B9%E9%8D%BC%E7%81%B8",
+      "what": "美容鍼灸の施術の様子",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "note": ""
 }
