@@ -1,0 +1,22 @@
+{
+  "key": "bodycare-88",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-88/s1.jpg",
+      "imageUrl": "https://hakutakudou.com/wp-content/uploads/2024/11/DSC_4847.jpg",
+      "pageUrl": "https://hakutakudou.com/",
+      "what": "受付と待合の店内",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-88/s2.jpg",
+      "imageUrl": "https://hakutakudou.com/wp-content/uploads/2024/05/1外観6-1.jpg",
+      "pageUrl": "https://hakutakudou.com/",
+      "what": "入口の外観(黒板看板)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "note": ""
+}
