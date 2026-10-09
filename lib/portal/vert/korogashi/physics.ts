@@ -60,7 +60,7 @@ export type World = {
 
 const R_POLE = 0.5;
 /** 山が落ち着くまでに、ポールが(あたり・転がりで)回る量。実測(同じ手順で必ず同じになる)。帯の字が、落ち着いたときにカメラ側を向くよう、置くときに引いておく */
-const SETTLE_DELTA = [0.016, 0.028, -1.209, 0.501, -0.083, 0.434];
+const SETTLE_DELTA = [-0.006, 0.023, -0.15, -0.291, 0.126, 1.007];
 const VARIETY = [0.05, -0.06, 0.04, -0.03, 0.06, -0.04];
 
 function mk(kind: BodyKind, id: number, z: number, y: number, r: number, o: Partial<Body> = {}): Body {
@@ -143,7 +143,7 @@ export function createWorld(): World {
   order.forEach((slot, k) => {
     const id = slot; // 描画の番号 = 山の位置の番号(紙の帯は番号順に 1〜6)
     const [sz, sy] = slots[slot];
-    const b = mk("pole", id, sz + jit[k], 5.2 + k * 1.15, R_POLE);
+    const b = mk("pole", id, sz + jit[k], 5.2 + k * 1.75, R_POLE);
     b.vy = -1.5;
     b.w = 0;
     // 帯の字がカメラ側(手前上)を向くように、すこしだけばらして置く

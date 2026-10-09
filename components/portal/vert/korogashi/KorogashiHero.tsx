@@ -20,7 +20,7 @@ const hex = (h: string): [number, number, number] => {
   return [lin((n >> 16) & 255), lin((n >> 8) & 255), lin(n & 255)];
 };
 /** ポール(物体の番号)→ 種類の番号。落ち着いたあとの横一列で、上から 1〜6 の順に並ぶよう、実測の並びから決めた */
-const KOF = [0, 2, 5, 1, 4, 3];
+const KOF = [0, 2, 5, 1, 3, 4];
 const POLE_OF_KIND = KOF.map((_, k) => KOF.indexOf(k));
 const HALF_LEN = [2.8, 2.8, 2.8, 2.8, 2.8, 2.8, 0, 0, 0, 0.7, 1.25];
 
@@ -179,6 +179,7 @@ export default function KorogashiHero({ kinds, lead }: Props) {
     const poses: Pose[] = Array.from({ length: N_OBJ }, () => ({ z: 0, y: 0, a: 0 }));
     let blend = 0;
     let pOverride: number | null = null;
+    let devTilt = 0;
     const A = new Float32Array(N_OBJ * 4);
     const B = new Float32Array(N_OBJ * 4);
     let grab: { id: number; x: number; sx: number; sy: number; t: number; moved: boolean; pid: number; lz: number; ly: number; lt: number } | null = null;
@@ -332,8 +333,13 @@ export default function KorogashiHero({ kinds, lead }: Props) {
       w.style.setProperty("--copy", String(1 - sm(0.03, 0.2, p)));
       w.style.setProperty("--kh", String(sm(0.8, 0.94, p)));
       if (!inView || !r) return;
+      if (r.lost()) {
+        w.dataset.mode = "css";
+        if (root) root.dataset.mode = "css";
+        return;
+      }
       // 床の傾き: スクロールで手前へ傾き、並んだら戻る
-      const tiltT = reduce ? 0 : 0.42 * sm(0.06, 0.2, p) * (1 - sm(0.46, 0.62, p));
+      const tiltT = reduce ? 0 : 0.42 * sm(0.06, 0.2, p) * (1 - sm(0.46, 0.62, p)) + (p < 0.05 ? devTilt : 0);
       world.tilt += (tiltT - world.tilt) * 0.1;
       if (p > 0.7) lineupSeen = true;
       if (lineupSeen && p < 0.02 && !leaving) resetWorld();
@@ -531,6 +537,16 @@ export default function KorogashiHero({ kinds, lead }: Props) {
     window.addEventListener("pointerup", onUp);
     window.addEventListener("pointercancel", onCancel);
     cv.addEventListener("pointerleave", onLeave);
+    // 端末を前後に大きく傾けると、山が転がる(Android など、許可の要らない端末だけ。iOS は許可の操作が要るので使わない)
+    const DOE = (window as unknown as { DeviceOrientationEvent?: { requestPermission?: unknown } }).DeviceOrientationEvent;
+    const onOri = (e: DeviceOrientationEvent) => {
+      if (e.beta == null) return;
+      const dev = ((e.beta - 70) * Math.PI) / 180;
+      const dz = 0.22;
+      devTilt = Math.abs(dev) < dz ? 0 : Math.sign(dev) * Math.min(0.4, Math.abs(dev) - dz);
+      if (devTilt !== 0) busyUntil = performance.now() + 1500;
+    };
+    if (!reduce && DOE && typeof DOE.requestPermission !== "function" && window.matchMedia("(pointer: coarse)").matches) window.addEventListener("deviceorientation", onOri);
     const onVis = () => {
       last = performance.now();
     };
@@ -565,6 +581,7 @@ export default function KorogashiHero({ kinds, lead }: Props) {
       window.removeEventListener("pointercancel", onCancel);
       cv.removeEventListener("pointerleave", onLeave);
       document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("deviceorientation", onOri);
       r?.destroy();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

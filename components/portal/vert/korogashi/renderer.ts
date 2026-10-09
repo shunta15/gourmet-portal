@@ -126,7 +126,20 @@ vec3 calcN(vec3 p, float t){
 }
 
 vec3 LDIR;
-float softShadow(vec3 ro, vec3 rd, float tmax){
+// 左の高い窓から入る光: 窓の枠(縦と横の桟)の影が、床と壁にやわらかく落ちる
+float winMask(vec3 p){
+  float t = (p.x + 9.0) / max(0.05, -LDIR.x);
+  if (t < 0.0) return 1.0;
+  float hy = p.y + LDIR.y * t;
+  float hz = p.z + LDIR.z * t;
+  float s = 0.5 + 0.07 * t;
+  float inside = smoothstep(2.5 - s, 2.5 + s, hy) * (1.0 - smoothstep(26.0 - s, 26.0 + s, hy)) * smoothstep(-8.0 - s, -8.0 + s, hz) * (1.0 - smoothstep(20.0 - s, 20.0 + s, hz));
+  float barH = 1.0 - smoothstep(0.1, 0.1 + s, abs(hy - 5.6));
+  float barV = 1.0 - smoothstep(0.1, 0.1 + s, abs(hz - 12.5));
+  float m = inside * (1.0 - 0.55 * max(barH, barV));
+  return mix(0.6, 1.0, m);
+}
+float softShadow0(vec3 ro, vec3 rd, float tmax){
   float tn, tf;
   if (!boxHit(ro, rd, 0.45, tn, tf)) return 1.0;
   float res = 1.0; float t = max(0.02, tn - 0.05); float ph = 1e5;
@@ -143,6 +156,7 @@ float softShadow(vec3 ro, vec3 rd, float tmax){
   res = clamp(res, 0.0, 1.0);
   return res * res * (3.0 - 2.0 * res);
 }
+float softShadow(vec3 ro, vec3 rd, float tmax){ return softShadow0(ro, rd, tmax) * winMask(ro); }
 float calcAO(vec3 p, vec3 n){
   vec3 bmin = vec3(-3.15, -0.1, uBox.x); vec3 bmax = vec3(3.15, uBox.z, uBox.y);
   if (length(max(max(bmin - p, p - bmax), vec3(0.0))) > 0.75) return 1.0;
