@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 282,
+  "sheet": {
+    "name": "ラブリー",
+    "address": "鹿児島県奄美市名瀬末広町１７－１０",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=9d19827db9edfb9f&hl=ja&sxsrf=AE3TifOPgXDUBiatelZl1cfOpkcTvXjIng:1764038956037&kgmid=/g/1txy01sw&q=%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC&shndl=30&shem=damc,dimg2,lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3ff7e45ef5545c5d&utm_source=damc,dimg2,lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1txy01sw",
+  "queries": [
+    "ラブリー 鹿児島県奄美市名瀬末広町１７－１０"
+  ],
+  "candidates": [
+    {
+      "name": "ラブリー",
+      "address": "鹿児島県奄美市名瀬末広町１７−１０",
+      "url": "https://www.google.com/maps/place/%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC/@28.377709,129.495068,17z/data=!3m1!4b1!4m6!3m5!1s0x351fba7d11e20e69:0xf753b7d398c4f26d!8m2!3d28.377709!4d129.495068!16s%2Fg%2F1txy01sw",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC/@28.377709,129.495068,17z/data=!3m1!4b1!4m6!3m5!1s0x351fba7d11e20e69:0xf753b7d398c4f26d!8m2!3d28.377709!4d129.495068!16s%2Fg%2F1txy01sw?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "鹿児島県奄美市名瀬末広町１７－１０",
+    "place": "鹿児島県奄美市名瀬末広町１７−１０",
+    "sheetNorm": "鹿児島県奄美市名瀬末広町17-10",
+    "placeNorm": "鹿児島県奄美市名瀬末広町17-10",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ラブリー",
+    "address": "鹿児島県奄美市名瀬末広町１７−１０",
+    "category": "美容院",
+    "lat": 28.377709,
+    "lng": 129.495068,
+    "gbpUrl": "https://maps.google.com/?cid=17821790269864211053",
+    "phone": "0997-53-6990",
+    "website": "https://lovely.amamin.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:30–19:00",
+      "水": "09:30–19:00",
+      "木": "09:30–19:00",
+      "金": "09:30–19:00",
+      "土": "09:30–19:00",
+      "日": "09:30–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:58:54.915Z",
+  "seconds": 5.4
+}

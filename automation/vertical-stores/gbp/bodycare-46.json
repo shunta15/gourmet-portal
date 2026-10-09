@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 46,
+  "sheet": {
+    "name": "はりねずみ治療院",
+    "address": "愛知県名古屋市昭和区田面町１丁目 22番",
+    "url": "https://share.google/ZqXTNEIv3by8aAoSU",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=c2f26cb52e36919b&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPVLLm-uKmb_QZUhLN8KN61BNRNHA:1759469159526&kgmid=/g/11b66smqs0&q=%E3%81%AF%E3%82%8A%E3%81%AD%E3%81%9A%E3%81%BF%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dc3ab9def1f1819d&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b66smqs0",
+  "queries": [
+    "はりねずみ治療院",
+    "はりねずみ治療院 愛知県名古屋市昭和区田面町１丁目 22番"
+  ],
+  "candidates": [
+    {
+      "name": "はりねずみ治療院",
+      "address": "愛知県名古屋市昭和区田面町１丁目 22番",
+      "url": "https://www.google.com/maps/place/%E3%81%AF%E3%82%8A%E3%81%AD%E3%81%9A%E3%81%BF%E6%B2%BB%E7%99%82%E9%99%A2/@35.1587487,136.9538538,17z/data=!3m1!4b1!4m6!3m5!1s0x600370762a922c75:0x42c41a00548983af!8m2!3d35.1587487!4d136.9538538!16s%2Fg%2F11b66smqs0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AF%E3%82%8A%E3%81%AD%E3%81%9A%E3%81%BF%E6%B2%BB%E7%99%82%E9%99%A2/@35.1587487,136.9538538,17z/data=!3m1!4b1!4m6!3m5!1s0x600370762a922c75:0x42c41a00548983af!8m2!3d35.1587487!4d136.9538538!16s%2Fg%2F11b66smqs0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市昭和区田面町１丁目 22番",
+    "place": "愛知県名古屋市昭和区田面町１丁目 22番",
+    "sheetNorm": "愛知県名古屋市昭和区田面町1-22",
+    "placeNorm": "愛知県名古屋市昭和区田面町1-22",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "はりねずみ治療院",
+    "address": "愛知県名古屋市昭和区田面町１丁目 22番",
+    "category": "鍼灸院",
+    "lat": 35.1587487,
+    "lng": 136.9538538,
+    "gbpUrl": "https://maps.google.com/?cid=4810998890659152815",
+    "phone": "052-753-3586",
+    "website": "http://www.hari-nezumi.net/",
+    "hours": {
+      "月": "17:30–19:00",
+      "火": "定休日",
+      "水": "17:30–19:00",
+      "木": "17:30–19:00",
+      "金": "17:30–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:38:29.571Z",
+  "seconds": 10.4
+}

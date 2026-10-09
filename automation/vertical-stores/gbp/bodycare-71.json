@@ -1,0 +1,72 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 71,
+  "sheet": {
+    "name": "Style Lab整骨院・整体院",
+    "address": "東京都葛飾区青戸３丁目２３ー１０ オークレスト青砥 1階",
+    "url": "https://www.google.com/maps/place/Style+Lab%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@35.7458945,139.8518068,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f4a8549edfb:0x1086c0ae31c5d23d!8m2!3d35.7458945!4d139.8518068!16s%2Fg%2F11l77q0djd?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "Style Lab整骨院・整体院",
+      "address": "東京都葛飾区青戸３丁目２３−１０ オークレスト青砥 1階",
+      "url": "https://www.google.com/maps/place/Style+Lab%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@35.7458945,139.8518068,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f4a8549edfb:0x1086c0ae31c5d23d!8m2!3d35.7458945!4d139.8518068!16s%2Fg%2F11l77q0djd",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Style+Lab%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2/@35.7458945,139.8518068,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f4a8549edfb:0x1086c0ae31c5d23d!8m2!3d35.7458945!4d139.8518068!16s%2Fg%2F11l77q0djd?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都葛飾区青戸３丁目２３ー１０ オークレスト青砥 1階",
+    "place": "東京都葛飾区青戸３丁目２３−１０ オークレスト青砥 1階",
+    "sheetNorm": "東京都葛飾区青戸3-23-10オークレスト青砥1階",
+    "placeNorm": "東京都葛飾区青戸3-23-10オークレスト青砥1階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Style Lab整骨院・整体院",
+    "address": "東京都葛飾区青戸３丁目２３−１０ オークレスト青砥 1階",
+    "category": "整体",
+    "lat": 35.7458945,
+    "lng": 139.8518068,
+    "gbpUrl": "https://maps.google.com/?cid=1190851005877965373",
+    "phone": "03-6662-7203",
+    "website": "https://stylelab.tokyo/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–21:00",
+      "水": "09:00–21:00",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "定休日",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://dg6.power-k.jp/llogin/13099/13106/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「更年期女性に多いヘバーデン結節の手指ケア」その３ こんにちは！ Style Lab整骨院・整体院の大久保です！ 本日は前回の続き「更年期女性に多いヘバーデン結節の手指ケア法」その３をお話しさせていただきます！ ●Style Lab整骨院・整体院ができるケアとは？ 当院では、ヘバーデン結節の症状に対しても、以下のような視点でサポートを行っています。 ・手指の動きに関与する前腕や肩の筋肉の緊張緩和 ・首や背骨の歪み調整による神経伝達のスムーズ化 ・筋膜リリースによる血行改善と組織の柔軟性回復 「痛い指だけを触る」のではなく、「なぜそこに負担がかかっているのか」を明らかにし、全身の状態を整えることを目指しています。 ●最新機器による施術のご紹介 当院では、手技療法に加えて、最新の施術機器を用いた施術も取り入れています。 １）メディセル筋膜療法 専用の吸引機器によって筋膜の癒着や滞りをやさしくリリースし、痛みや動きの制限を軽減させる施術です。 ２）EMS（電気的筋肉刺激装置） 筋力低下が進んでいる部位を安全に刺激し、体を支える力を取り戻す補助が可能です。 これらの機器は痛みの少ない施術であるため、年齢や症状の程度にかかわらず受けていただきやすいのが特徴です。 ●セルフケアの提案とアフターサポート 施術と並行して、自宅でできるセルフケアのご提案も行っています。たとえば、 ・指のストレッチ "
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:43:07.218Z",
+  "seconds": 3
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 45,
+  "sheet": {
+    "name": "Mahalo+",
+    "address": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+    "url": "https://share.google/904unrxYP7M6lP9Xh",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4f5104ed2b7290e9&sxsrf=AE3TifPC6nhiRGyQjK8dg5cISgdmgBXb4g:1759804487531&kgmid=/g/11g4jrs453&q=Mahalo%2B&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=a51e26b31b413df8&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11g4jrs453",
+  "queries": [
+    "Mahalo+"
+  ],
+  "candidates": [
+    {
+      "name": "Mahalo+",
+      "address": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+      "url": "https://www.google.com/maps/place/Mahalo%2B/data=!4m7!3m6!1s0x3538b7e7d411db89:0xd2c3b339a436de39!8m2!3d31.928325!4d131.4206694!16s%2Fg%2F11g4jrs453!19sChIJidsR1Oe3ODUROd42pDmzw9I",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Mahalo%2B/data=!4m7!3m6!1s0x3538b7e7d411db89:0xd2c3b339a436de39!8m2!3d31.928325!4d131.4206694!16s%2Fg%2F11g4jrs453!19sChIJidsR1Oe3ODUROd42pDmzw9I?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+    "place": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+    "sheetNorm": "宮崎県宮崎市船塚2-6-2ソリッドグリーン2Fマハロプラス宮崎本店",
+    "placeNorm": "宮崎県宮崎市船塚2-6-2ソリッドグリーン2Fマハロプラス宮崎本店",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Mahalo+",
+    "address": "宮崎県宮崎市船塚２丁目6−２ ソリッドグリーン 2F マハロプラス宮崎本店",
+    "category": "エステティック サロン",
+    "lat": 31.928325,
+    "lng": 131.4206694,
+    "gbpUrl": "https://maps.google.com/?cid=15187179428573011513",
+    "phone": "0985-41-8817",
+    "website": "http://www.mahalo-plus.com/index.html",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:55:59.581Z",
+  "seconds": 4.8
+}

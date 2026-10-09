@@ -1,0 +1,75 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 68,
+  "sheet": {
+    "name": "En,【エン】",
+    "address": "宮城県仙台市青葉区本町２丁目１２-１ 結城ビル２F",
+    "url": "https://share.google/rSnpL49Mt3MMCEKB1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4acce884baa46368&rlz=1C1TMBY_jaJP1174JP1174&cs=0&output=search&kgmid=/g/11lddn2_f3&q=En,+%E3%80%90%E3%82%A8%E3%83%B3%E3%80%91&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=6c82eee48c0067fe&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11lddn2_f3",
+  "queries": [
+    "En, 【エン】",
+    "En,【エン】 宮城県仙台市青葉区本町２丁目１２-１ 結城ビル２F"
+  ],
+  "candidates": [
+    {
+      "name": "En, 【エン】",
+      "address": "宮城県仙台市青葉区本町２丁目１２−１ 結城ビル ２Ｆ",
+      "url": "https://www.google.com/maps/place/En,+%E3%80%90%E3%82%A8%E3%83%B3%E3%80%91/data=!4m7!3m6!1s0x5f8a2959529ca97d:0xfae53a188e258831!8m2!3d38.2650521!4d140.8752144!16s%2Fg%2F11lddn2_f3!19sChIJfamcUlkpil8RMYgljhg65fo",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/En,+%E3%80%90%E3%82%A8%E3%83%B3%E3%80%91/data=!4m7!3m6!1s0x5f8a2959529ca97d:0xfae53a188e258831!8m2!3d38.2650521!4d140.8752144!16s%2Fg%2F11lddn2_f3!19sChIJfamcUlkpil8RMYgljhg65fo?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "宮城県仙台市青葉区本町２丁目１２-１ 結城ビル２F",
+    "place": "宮城県仙台市青葉区本町２丁目１２−１ 結城ビル ２Ｆ",
+    "sheetNorm": "宮城県仙台市青葉区本町2-12-1結城ビル2F",
+    "placeNorm": "宮城県仙台市青葉区本町2-12-1結城ビル2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "En, 【エン】",
+    "address": "宮城県仙台市青葉区本町２丁目１２−１ 結城ビル ２Ｆ",
+    "category": "美容院",
+    "lat": 38.2650521,
+    "lng": 140.8752144,
+    "gbpUrl": "https://maps.google.com/?cid=18078920156287174705",
+    "phone": "022-738-7636",
+    "website": "https://beauty.hotpepper.jp/slnH000680839/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–20:00",
+      "日": "09:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000680839&wak=BPCO100001_s_top_reserve_button"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは、仙台市青葉区本町のプライベートサロンEn,(エン)です！ 今週末は3連休という方が多いのではないでしょうか？ 3連休は若干ですが、まだご案内可能です◎ イベントやお出かけの前って急に髪切りたくなることありませんか？ 僕は結構あります(笑) 連休中に髪のメンテナンスがおすすめです！ ・最近パサつく ・まとまりが悪くなった気がする ・カラーの褪色が気になる これらは夏に受けた紫外線ダメージの影響の可能性がございます。 今の時期からダメージケアをしておくと、冬の乾燥対策にも繋がります◎ オージュアを使用した髪質改善トリートメントや、カラーをしながら、保湿、保護をしてくれる、DeeplexさんのD.LIQUIDを使用したジェルカラーをご用意しております◎ また、季節の変わり目、頭皮環境も乱れがちになります。 気持ちよくて寝落ちする人が急増してる【頭浸浴】も合わせておすすめです◎ 初めての方でも安心していただけるように、カウンセリングも長めに取らせていただいてます！ お気軽にご相談ください！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:17:48.133Z",
+  "seconds": 10.4
+}

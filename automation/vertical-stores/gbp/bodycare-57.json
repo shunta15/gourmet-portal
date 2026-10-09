@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 57,
+  "sheet": {
+    "name": "オレンジ整骨院",
+    "address": "佐賀県三養基郡基山町宮浦４８７－７",
+    "url": "https://share.google/GhWv0RoV49d1l71RO",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=27e57b1e925aecdc&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifNMDGfG-p5wrNj-le8NIpxcPAi8ag:1760061281739&kgmid=/g/11h12rm6j1&q=%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=f901e6dcb51bbdc5&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11h12rm6j1",
+  "queries": [
+    "オレンジ整骨院",
+    "オレンジ整骨院 佐賀県三養基郡基山町宮浦４８７－７"
+  ],
+  "candidates": [
+    {
+      "name": "オレンジ整骨院",
+      "address": "佐賀県三養基郡基山町宮浦４８７−７",
+      "url": "https://www.google.com/maps/place/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@33.42508,130.5300986,17z/data=!3m1!4b1!4m6!3m5!1s0x3541997a2efa13c7:0xbecaa478254e61eb!8m2!3d33.42508!4d130.5300986!16s%2Fg%2F11h12rm6j1",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@33.42508,130.5300986,17z/data=!3m1!4b1!4m6!3m5!1s0x3541997a2efa13c7:0xbecaa478254e61eb!8m2!3d33.42508!4d130.5300986!16s%2Fg%2F11h12rm6j1?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "佐賀県三養基郡基山町宮浦４８７－７",
+    "place": "佐賀県三養基郡基山町宮浦４８７−７",
+    "sheetNorm": "佐賀県三養基郡基山町宮浦487-7",
+    "placeNorm": "佐賀県三養基郡基山町宮浦487-7",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "オレンジ整骨院",
+    "address": "佐賀県三養基郡基山町宮浦４８７−７",
+    "category": "接骨院",
+    "lat": 33.42508,
+    "lng": 130.5300986,
+    "gbpUrl": "https://maps.google.com/?cid=13747981648430785003",
+    "phone": "0942-85-8857",
+    "website": "http://supporterplaza.com/",
+    "hours": {
+      "月": "08:30–12:30, 14:30–20:30",
+      "火": "08:30–12:30, 14:30–20:30",
+      "水": "08:30–12:30, 14:30–20:30",
+      "木": "08:30–12:30, 14:30–20:30",
+      "金": "08:30–12:30, 14:30–20:30",
+      "土": "08:30–12:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:40:48.492Z",
+  "seconds": 12.3
+}

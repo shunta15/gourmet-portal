@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 48,
+  "sheet": {
+    "name": "Gazebo【ガゼボ】",
+    "address": "愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ",
+    "url": "https://www.google.com/search?q=Gazebo【ガゼボ】愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Gazebo【ガゼボ】 愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ"
+  ],
+  "candidates": [
+    {
+      "name": "Gazebo",
+      "address": "愛知県名古屋市北区若葉通５丁目7−３ 豊島ビル 1A",
+      "url": "https://www.google.com/maps/place/Gazebo/@35.196247,136.928368,17z/data=!3m1!4b1!4m6!3m5!1s0x600371d6c77f183f:0x7ed65393b705a798!8m2!3d35.196247!4d136.928368!16s%2Fg%2F11wvmb6yfm",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Gazebo/@35.196247,136.928368,17z/data=!3m1!4b1!4m6!3m5!1s0x600371d6c77f183f:0x7ed65393b705a798!8m2!3d35.196247!4d136.928368!16s%2Fg%2F11wvmb6yfm?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市北区若葉通５－７－３　豊島ビル１Ａ",
+    "place": "愛知県名古屋市北区若葉通５丁目7−３ 豊島ビル 1A",
+    "sheetNorm": "愛知県名古屋市北区若葉通5-7-3豊島ビル1A",
+    "placeNorm": "愛知県名古屋市北区若葉通5-7-3豊島ビル1A",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Gazebo",
+    "address": "愛知県名古屋市北区若葉通５丁目7−３ 豊島ビル 1A",
+    "category": "美容院",
+    "lat": 35.196247,
+    "lng": 136.928368,
+    "gbpUrl": "https://maps.google.com/?cid=9139584387690899352",
+    "phone": "052-982-7219",
+    "website": "https://gazebo-hairsalon.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://rwg.kanzashi.com/l/4LFd777PjZ/hair?merchant_id=hair-55159"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://lin.ee/5ngmjKZ"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【大曽根】「抗酸化ケアはまだ早い？」カラーやアイロンを楽しむ若い世代こそ必要です 「抗酸化デトックスってエイジングケアでしょ？」セット面で若いお客様からよくいただく質問です。 実は、トレンドカラーの繰り返しや毎日のヘアアイロン、重たいオイルの重ね塗りを楽しんでいる20代〜30代前半の髪と頭皮ほど、残留薬品や古い油が焼き付いてサビ（酸化）ついています。「アイロンの形がつきにくい」「ゴワついて硬い」と感じるなら、それは髪からのSOSサインです。 痛んでいるからとさらにオイルを塗り重ねる「足し算」は逆効果。 Gazebo（ガゼボ）では、ウルトラファインバブルと抗酸化デトックスで髪にへばりついた不純物や残留毒素を分子レベルで削ぎ落とし、まっさらな「素髪（すっぴん）」にリセットします。余計な膜をなくすことで、本来の柔らかさと圧倒的なツヤが蘇り、毎朝のスタイリングやカラーの発色も劇的に良くなります。 1席貸切のプライベートサロンですので、ガヤガヤしたお店が苦手な方も気軽にご相談ください。 ▼空き状況の確認・ご予約は下の【予約】ボタンからお気軽にどうぞ！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:13:12.044Z",
+  "seconds": 8.7
+}

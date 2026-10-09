@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 99,
+  "sheet": {
+    "name": "Ｗｉｎｇ施術院",
+    "address": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+    "url": "https://share.google/fOzJBKu5yg2LaXUkg",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=2a6fa6d95aad8520&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifNWmCfH_dhkUGkCGRlW6-6r72Y0Gg:1761020678280&kgmid=/g/1tj2bzmf&q=Wing%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dd110610c31b7bbd&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tj2bzmf",
+  "queries": [
+    "Wing整体院"
+  ],
+  "candidates": [
+    {
+      "name": "Wing整体院",
+      "address": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+      "url": "https://www.google.com/maps/place/Wing%E6%95%B4%E4%BD%93%E9%99%A2/@35.4519739,139.5028583,17z/data=!3m1!4b1!4m6!3m5!1s0x60185715fc7b42f1:0x34a037d85ec5302f!8m2!3d35.4519739!4d139.5028583!16s%2Fg%2F1tj2bzmf",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Wing%E6%95%B4%E4%BD%93%E9%99%A2/@35.4519739,139.5028583,17z/data=!3m1!4b1!4m6!3m5!1s0x60185715fc7b42f1:0x34a037d85ec5302f!8m2!3d35.4519739!4d139.5028583!16s%2Fg%2F1tj2bzmf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「Ｗｉｎｇ施術院」とマップ「Wing整体院」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+    "place": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+    "sheetNorm": "神奈川県横浜市瀬谷区阿久和東2-5-39",
+    "placeNorm": "神奈川県横浜市瀬谷区阿久和東2-5-39",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "Wing整体院",
+    "address": "神奈川県横浜市瀬谷区阿久和東２丁目５−３９",
+    "category": "整体",
+    "lat": 35.4519739,
+    "lng": 139.5028583,
+    "gbpUrl": "https://maps.google.com/?cid=3792092288688402479",
+    "phone": "080-1099-0441",
+    "website": "https://wing-seitai.site/lp/wing-seyaku-katakori/",
+    "hours": {
+      "月": "09:00–22:00",
+      "火": "09:00–22:00",
+      "水": "09:00–22:00",
+      "木": "09:00–22:00",
+      "金": "09:00–22:00",
+      "土": "09:00–22:00",
+      "日": "09:00–13:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "2026/09/27\n"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:05:29.024Z",
+  "seconds": 8,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "Ｗｉｎｇ施術院",
+    "mapName": "Wing整体院"
+  }
+}

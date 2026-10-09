@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 62,
+  "sheet": {
+    "name": "白光治療院",
+    "address": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+    "url": "https://share.google/P5xkqPAhsoBqA0ps5",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a67f889c4de23fbe&rlz=1C1CHBF_enJP1148JP1148&sxsrf=AE3TifPfP3GqREZ6BhhOkZNIrdF9PGO6uQ:1760410026863&kgmid=/g/11b5pkjv1b&q=%E7%99%BD%E5%85%89%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=639b2a21f29c2aa9&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b5pkjv1b",
+  "queries": [
+    "白光治療院"
+  ],
+  "candidates": [
+    {
+      "name": "白光治療院",
+      "address": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+      "url": "https://www.google.com/maps/place/%E7%99%BD%E5%85%89%E6%B2%BB%E7%99%82%E9%99%A2/@37.593642,139.9476958,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8ab1ed68971599:0x6b9f83953aeed967!8m2!3d37.593642!4d139.9476958!16s%2Fg%2F11b5pkjv1b",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%99%BD%E5%85%89%E6%B2%BB%E7%99%82%E9%99%A2/@37.593642,139.9476958,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8ab1ed68971599:0x6b9f83953aeed967!8m2!3d37.593642!4d139.9476958!16s%2Fg%2F11b5pkjv1b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+    "place": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+    "sheetNorm": "福島県喜多方市塩川町中屋沢道久乙1810-2",
+    "placeNorm": "福島県喜多方市塩川町中屋沢道久乙1810-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "白光治療院",
+    "address": "福島県喜多方市塩川町中屋沢道久乙１８１０−２",
+    "category": "クリニック・医院・診療所",
+    "lat": 37.593642,
+    "lng": 139.9476958,
+    "gbpUrl": "https://maps.google.com/?cid=7755061760317380967",
+    "phone": "0241-27-8284",
+    "website": "http://kitakata-shinkyu.com/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "定休日",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:41:35.963Z",
+  "seconds": 6
+}

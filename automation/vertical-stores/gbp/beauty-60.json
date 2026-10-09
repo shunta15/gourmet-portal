@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 60,
+  "sheet": {
+    "name": "u'i room",
+    "address": "東京都足立区西綾瀬２丁目２３−３４",
+    "url": "https://share.google/aXhzofX1F806NEd24",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e7eb012a39ff2160&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifOgh5WqhNbk1IPSQEKUW7XJcEDRlw:1760429003538&kgmid=/g/11c5xnxcsp&q=u%27i+room%EF%BC%88%E3%82%A6%E3%82%A4%E3%83%AB%E3%83%BC%E3%83%A0%EF%BC%89%E3%80%9C%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%88%E3%82%82%E3%81%8E%E8%92%B8%E3%81%97%E9%96%8B%E6%A5%AD%E8%AC%9B%E5%BA%A7%E3%80%9C&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=3fa1f5ce3edf2fb3&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c5xnxcsp",
+  "queries": [
+    "u'i room（ウイルーム）〜オンラインよもぎ蒸し開業講座〜"
+  ],
+  "candidates": [
+    {
+      "name": "u'i room（ウイルーム）〜オンラインよもぎ蒸し開業講座〜",
+      "address": "東京都足立区西綾瀬２丁目２３−３４",
+      "url": "https://www.google.com/maps/place/u'i+room%EF%BC%88%E3%82%A6%E3%82%A4%E3%83%AB%E3%83%BC%E3%83%A0%EF%BC%89%E3%80%9C%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%88%E3%82%82%E3%81%8E%E8%92%B8%E3%81%97%E9%96%8B%E6%A5%AD%E8%AC%9B%E5%BA%A7%E3%80%9C/@35.7657807,139.8112909,17z/data=!3m1!4b1!4m6!3m5!1s0x60189028a3214483:0x3b9deb3a9ea9cb7c!8m2!3d35.7657807!4d139.8112909!16s%2Fg%2F11c5xnxcsp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/u'i+room%EF%BC%88%E3%82%A6%E3%82%A4%E3%83%AB%E3%83%BC%E3%83%A0%EF%BC%89%E3%80%9C%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%88%E3%82%82%E3%81%8E%E8%92%B8%E3%81%97%E9%96%8B%E6%A5%AD%E8%AC%9B%E5%BA%A7%E3%80%9C/@35.7657807,139.8112909,17z/data=!3m1!4b1!4m6!3m5!1s0x60189028a3214483:0x3b9deb3a9ea9cb7c!8m2!3d35.7657807!4d139.8112909!16s%2Fg%2F11c5xnxcsp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都足立区西綾瀬２丁目２３−３４",
+    "place": "東京都足立区西綾瀬２丁目２３−３４",
+    "sheetNorm": "東京都足立区西綾瀬2-23-34",
+    "placeNorm": "東京都足立区西綾瀬2-23-34",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "u'i room（ウイルーム）〜オンラインよもぎ蒸し開業講座〜",
+    "address": "東京都足立区西綾瀬２丁目２３−３４",
+    "category": "エステティック サロン",
+    "lat": 35.7657807,
+    "lng": 139.8112909,
+    "gbpUrl": "https://maps.google.com/?cid=4295848256583879548",
+    "phone": "080-9355-0314",
+    "website": "http://ui-room.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "定休日",
+      "火": "11:00–13:00, 21:00–23:00",
+      "水": "11:00–13:00, 21:00–23:00",
+      "木": "11:00–13:00, 21:00–23:00",
+      "金": "11:00–13:00, 21:00–23:00",
+      "土": "21:00–23:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "http://ui-room.jp/%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:16:15.875Z",
+  "seconds": 8.8
+}

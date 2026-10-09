@@ -1,0 +1,67 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 32,
+  "sheet": {
+    "name": "salon de Viel サロン・ド・ヴィエル",
+    "address": "香川県高松市番町１丁目９?２",
+    "url": "https://www.google.com/maps?cid=5431908884536558321",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "cid",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "salon de Viel サロン・ド・ヴィエル",
+      "address": "香川県高松市番町１丁目９−２",
+      "url": "https://www.google.com/maps/place/salon+de+Viel+%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%89%E3%83%BB%E3%83%B4%E3%82%A3%E3%82%A8%E3%83%AB/@34.3431488,134.0454337,887m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3553ebca695156ed:0x4b620459db1702f1!8m2!3d34.3431488!4d134.0454337!16s%2Fg%2F11vwpqyw4m",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/salon+de+Viel+%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%89%E3%83%BB%E3%83%B4%E3%82%A3%E3%82%A8%E3%83%AB/@34.3431488,134.0454337,887m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3553ebca695156ed:0x4b620459db1702f1!8m2!3d34.3431488!4d134.0454337!16s%2Fg%2F11vwpqyw4m?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "香川県高松市番町１丁目９?２",
+    "place": "香川県高松市番町１丁目９−２",
+    "sheetNorm": "香川県高松市番町1-9-2",
+    "placeNorm": "香川県高松市番町1-9-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "salon de Viel サロン・ド・ヴィエル",
+    "address": "香川県高松市番町１丁目９−２",
+    "category": "ネイルサロン",
+    "lat": 34.3431488,
+    "lng": 134.0454337,
+    "gbpUrl": "https://maps.google.com/?cid=5431908884536558321",
+    "phone": "080-4039-1615",
+    "website": "https://rwg.kanzashi.com/l/4KSf912dycP/kirei",
+    "hours": {
+      "月": "09:00–23:00",
+      "火": "09:00–23:00",
+      "水": "09:00–23:00",
+      "木": "09:00–23:00",
+      "金": "09:00–23:00",
+      "土": "09:00–23:00",
+      "日": "09:00–23:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「ネイルは初めてで、何を頼めばいいか分からない」 という方もご安心ください。 30種類以上の豊富なサンプルから、 お好みのデザインをゆっくりお選びいただけます。 季節のトレンドから上品なシンプルスタイルまで 幅広くご用意しており、カラー変更も自由自在。 自分だけのお気に入りを見つける、ワクワクする時間を過ごしませんか。 香川・高松でネイルをご希望の方は【salon de Viel サロン・ド・ヴィエル】がおすすめです✨️"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:00:46.603Z",
+  "seconds": 5.6
+}

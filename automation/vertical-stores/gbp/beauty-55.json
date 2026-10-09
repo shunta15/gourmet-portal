@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 55,
+  "sheet": {
+    "name": "thema",
+    "address": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+    "url": "https://share.google/qAsV89cpcMOX1rM5p",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a40d7e7b6a25306b&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPgncZ9nqd0iVkYGjF4_Vo8e5SALw:1759986305148&kgmid=/g/11csqw0b2_&q=thema&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=158f40c4550c7cab&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11csqw0b2_",
+  "queries": [
+    "thema"
+  ],
+  "candidates": [
+    {
+      "name": "thema",
+      "address": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+      "url": "https://www.google.com/maps/place/thema/data=!4m7!3m6!1s0x60188ca003855c39:0x5fcf137996165155!8m2!3d35.6643698!4d139.7112458!16s%2Fg%2F11csqw0b2_!19sChIJOVyFA6CMGGARVVEWlnkTz18",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/thema/data=!4m7!3m6!1s0x60188ca003855c39:0x5fcf137996165155!8m2!3d35.6643698!4d139.7112458!16s%2Fg%2F11csqw0b2_!19sChIJOVyFA6CMGGARVVEWlnkTz18?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+    "place": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+    "sheetNorm": "東京都港区北青山3-6-23青山ダイハンビル3F",
+    "placeNorm": "東京都港区北青山3-6-23青山ダイハンビル3F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "thema",
+    "address": "東京都港区北青山３丁目６−２３ 青山ダイハンビル 3F",
+    "category": "美容院",
+    "lat": 35.6643698,
+    "lng": 139.7112458,
+    "gbpUrl": "https://maps.google.com/?cid=6903758166712275285",
+    "phone": "03-5468-6237",
+    "website": "https://thema.tokyo/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "定休日",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "表参道で美容院・美容室をお探しなら、表参道駅B2出口より徒歩1分のヘアサロン「thema」へ。 青山にある当サロンは、緑に囲まれた癒しのプライベート空間となっており、人目を気にせずリラックスしながら美を追求できます。メニューはヘアカットをはじめ、カラー、パーマ、ストレートパーマ、トリートメントまで豊富に取り揃え、お客様一人ひとりの髪質やライフスタイルに合わせたご提案をしています。\n2026/08/17"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:15:14.341Z",
+  "seconds": 6.8
+}

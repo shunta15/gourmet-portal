@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 21,
+  "sheet": {
+    "name": "整体・リラクゼーションKanno",
+    "address": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+    "url": "https://share.google/ppK89CIClF07tUZdw",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=ccc88b753bb383cd&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifMhJiYKZjO8zSscXIQXYlguvHnv1w:1758527895731&kgmid=/g/1tdf1ctv&q=%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3Kanno&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=19d544856de813c2&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tdf1ctv",
+  "queries": [
+    "整体・リラクゼーションKanno"
+  ],
+  "candidates": [
+    {
+      "name": "整体・リラクゼーションKanno",
+      "address": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3Kanno/@35.7069545,139.5806135,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ee466e5fa3d1:0xadecd7a73b2980f9!8m2!3d35.7069545!4d139.5806135!16s%2Fg%2F1tdf1ctv",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3Kanno/@35.7069545,139.5806135,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ee466e5fa3d1:0xadecd7a73b2980f9!8m2!3d35.7069545!4d139.5806135!16s%2Fg%2F1tdf1ctv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+    "place": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+    "sheetNorm": "東京都武蔵野市吉祥寺東町1-4-1202",
+    "placeNorm": "東京都武蔵野市吉祥寺東町1-4-1202",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整体・リラクゼーションKanno",
+    "address": "東京都武蔵野市吉祥寺東町１丁目４−１ 202",
+    "category": "整体",
+    "lat": 35.7069545,
+    "lng": 139.5806135,
+    "gbpUrl": "https://maps.google.com/?cid=12532628976317333753",
+    "phone": "0422-20-8300",
+    "website": "http://www.koritoru-kanno.com/",
+    "hours": {
+      "月": "10:00–19:30",
+      "火": "10:00–19:30",
+      "水": "定休日",
+      "木": "10:00–19:30",
+      "金": "10:00–19:30",
+      "土": "10:00–19:30",
+      "日": "10:00–19:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:08:25.160Z",
+  "seconds": 8.3
+}

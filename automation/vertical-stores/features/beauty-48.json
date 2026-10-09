@@ -1,0 +1,611 @@
+{
+  "key": "beauty-48",
+  "vertical": "beauty",
+  "storeName": "Gazebo",
+  "article": {
+    "id": "Gazebo",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "GAZEBO NAGOYA KITA",
+    "title": "名古屋・平安通駅から徒歩2分、北区若葉通のGazeboで読む、カラーを軸にしたメニューと料金",
+    "titleHTML": "名古屋・平安通駅から徒歩2分、<br>北区若葉通の<em>Gazebo</em>で読む、カラーを軸にしたメニューと料金",
+    "subtitle": "名古屋市北区若葉通／カラーを軸にした美容院のメニュー",
+    "lede": "カラーではブリーチをしない。ドレッドやアフロなどの特殊パーマもしない。名古屋市北区若葉通5丁目の豊島ビル1Aにある美容院、Gazeboのメニュー表は、できないことまで先に書いている。最寄りは名古屋市営地下鉄の平安通駅で、徒歩約2分。公式サイトが一貫して語るのは、プライベートサロンであること、マンツーマンで対応すること、そしてカラーの薬剤選びにこだわることの3点だ。10年後20年後もおしゃれを楽しんでほしい、という趣旨の言葉が、施術の考え方として何度も出てくる。Googleマップの分類は「美容院」で、公式サイトはメンズのお客様にも対応すると案内している。カット単体は7,260円。この記事では、公式サイトとGoogleマップに載っている情報だけを使って、料金の組み立て、予約のしかた、行き方を順に読み解いていく。",
+    "date": "2026-10-09",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/beauty-48/hero.jpg",
+    "ogImage": "/_portal/vshops/beauty-48/hero.jpg",
+    "ranking": [
+      {
+        "name": "カラーを軸に組むセットメニューと、単品のカット・カラー・パーマ",
+        "cuisine": "美容院・カラー",
+        "area": "名古屋市北区",
+        "purpose": "何をいくらで頼める店なのか、メニューの骨格を先につかみたい人へ",
+        "desc": "公式サイトが特にこだわりとして語るのはカラーで、メニューもカラーを軸にしたセットが中心だ。カットとカラーのセットは14,850円、トリートメントまで付けたセットは17,050円(いずれも税込)。カラー単体は10,890円で、トリートメントと組み合わせると13,310円。パーマは、カットとのセットが14,850円、パーマ単体は8,470円。パーマはスパイラルパーマが+2,420円、ツイスト系パーマが+7,260円(メンズのみ)で、トリートメントまで付けたセットは17,050円。単品のカットは7,260円、高校生以下は4,950円から。カラーのセットには「ブリーチは×」という注記があり、全体カラーのメニューにも、ブリーチはしていないと書かれている。カラーのメニュー名は複数に分かれ、料金表の説明文も異なる。選ぶ前に、予約の電話で内容を聞いておくと確実だ。",
+        "images": [
+          "/_portal/vshops/beauty-48/p1.jpg"
+        ],
+        "specs": [
+          {
+            "k": "セット(税込)",
+            "v": "カット＋カラー14,850円・カット＋パーマ14,850円"
+          },
+          {
+            "k": "単品(税込)",
+            "v": "カット7,260円・全体カラー8,470円〜・パーマ8,470円"
+          }
+        ],
+        "rank": "POINT 01",
+        "rankNum": 1
+      },
+      {
+        "name": "公式サイトが語るカラーの薬剤選びと、しないことの明記",
+        "cuisine": "カラー・白髪染め",
+        "area": "名古屋市北区",
+        "purpose": "施術の方針や、頼めないことを先に知っておきたい人へ",
+        "desc": "ほかの店と分けて読める点は二つある。ひとつは、カラー後の臭いに着目して薬剤を選んでいると、公式サイトが案内していること。カラー剤は選りすぐりのものを使い、頭皮と髪にやさしいオーガニック商材を使った白髪染めも用意するという。カラーは、カウンセリングで色味と施術方法を決めてから進める形で、トリートメントも同時に行うとある。もうひとつは、しないことを先に書いている点だ。全体カラーはブリーチをしない、ドレッドやアフロなどの特殊パーマもしないと、メニュー表に明記されている。やることの幅を絞っている店は、頼む側が見極めやすい。カットについては、髪質とクセを見極めたうえで、顔の形やライフスタイル、簡単にスタイリングできるかどうかも考慮するという。パーマ後のケア方法も説明するとある。メンズのお客様にも対応し、カウンセリングはマンツーマンで行うと書かれている。施術の土台にある考え方は、10年後20年後もおしゃれを楽しんでほしいという想いだと公式サイトは述べている。",
+        "images": [
+          "/_portal/vshops/beauty-48/p2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "しないこと",
+            "v": "ブリーチ・ドレッドやアフロなどの特殊パーマ(メニュー表)"
+          },
+          {
+            "k": "対応",
+            "v": "メンズ・オーガニック商材の白髪染め(公式サイトの案内)"
+          }
+        ],
+        "rank": "POINT 02",
+        "rankNum": 2
+      },
+      {
+        "name": "長さの追加料金と、足していくメニューの組み立て方",
+        "cuisine": "料金の組み立て",
+        "area": "名古屋市北区",
+        "purpose": "髪の長さや足したい施術から、総額を見積もりたい人へ",
+        "desc": "料金の組み立ては、基本の料金に長さの追加が乗る形だ。長さの表記は、S(顎まで)、M(肩まで、+550円)、L(鎖骨下まで、+1,100円)、LL(鎖骨下から胸まで、+1,650円)、SL(胸から下、+2,200円)。カラーやパーマのメニューには「ロング料金あり」と添えられていて、髪の長さで総額が動く。足していくメニューは、プレミアムトリートメントが4,840円、ナノバブルが1,210円、ヘッドスパが4,840円。プレミアムトリートメントは、COTAのトリートメントから髪質に合ったものを選ぶ形と説明されている。カットとヘッドスパのセットは10,890円で、炭酸シャワースパを使うと案内されている。ヘアマニキュアは8,800円から、カットとのセットが16,500円から。まゆ毛カットは605円で、ネット予約の対象外とある。シャンプーブローは4,235円、ブローは2,420円。セットメニューにある「SB込み」は、シャンプーブロー込みの意味と読める。全体カラーとヘアマニキュアはブローが別途2,200円で、パーマとプレミアムトリートメントは「SB別」と書かれている。",
+        "images": [],
+        "specs": [
+          {
+            "k": "長さの追加(税込)",
+            "v": "M+550円・L+1,100円・LL+1,650円・SL+2,200円"
+          },
+          {
+            "k": "足すメニュー(税込)",
+            "v": "ヘッドスパ4,840円・プレミアムトリートメント4,840円"
+          }
+        ],
+        "rank": "POINT 03",
+        "rankNum": 3
+      },
+      {
+        "name": "公式サイトが案内するプライベート空間と、支払い・営業日の条件",
+        "cuisine": "店の形・営業日",
+        "area": "名古屋市北区",
+        "purpose": "人目を気にせず通いたい人や、営業日を確かめたい人へ",
+        "desc": "公式サイトは、一人ひとりのお客様が他の誰にも邪魔されずに過ごせる、プライベート空間に仕上げていると説明している。対応はマンツーマン。支払いは現金、クレジットカード、PayPay、auPAY、楽天PAY、iD払い、QUICPayが使える。定休日は月曜日で、月に2回ほど日曜日も休むという。営業時間は、公式サイトが10:00〜19:00、Googleマップは火曜から土曜が10:00〜20:00、日曜が10:00〜19:00と出ていて、表記が一致しない。予約はInstagram、Googleマップ、ホットペッパービューティー、電話から。ホットペッパービューティーは時間を問わず受け付けていて、電話は営業時間内にとの案内がある。どんな人が使いやすいかは、メニューから輪郭が引ける。メンズに対応し、高校生以下の料金設定があり、白髪染めのメニューもある。一方で、ブリーチを使うカラーやドレッド、アフロは対象外なので、そうした希望の人は別の店を探すことになる。通う曜日と時間帯は、予約の前に電話で擦り合わせておきたい。",
+        "images": [],
+        "specs": [
+          {
+            "k": "定休日",
+            "v": "月曜日・月2回ほど日曜日も休み"
+          },
+          {
+            "k": "支払い",
+            "v": "現金・クレジットカード・PayPayほか"
+          }
+        ],
+        "rank": "POINT 04",
+        "rankNum": 4
+      },
+      {
+        "name": "平安通駅から徒歩約2分、北区若葉通5丁目",
+        "cuisine": "アクセス・予約",
+        "area": "名古屋市北区",
+        "purpose": "行き方と、直前の予約のしかたを確かめたい人へ",
+        "desc": "最寄りは名古屋市営地下鉄の平安通駅で、徒歩約2分。電車で来やすい環境だと公式サイトは書き、特にカラーの施術にこだわっていると繰り返している。住所は名古屋市北区若葉通5丁目7-3、豊島ビル1A。電話番号は052-982-7219。地図をGoogleマップで確認できるリンクも付いている。完全予約制で、施術を希望する場合は事前予約をお願いしたい、と公式サイトにある。当日予約も可能だが、空きがない場合は取れないと断り書きがつく。直前に決める日は、電話かホットペッパービューティーで空きを確かめる流れになる。Googleマップの予約リンクは、予約サイトとLINEの2つが出ている。住所の表記は、公式サイトとGoogleマップで一致している。駅から近い一方、公式サイトには駐車場の案内が見当たらないため、車で来る場合は電話で聞いておくほうが早い。",
+        "images": [],
+        "specs": [
+          {
+            "k": "アクセス",
+            "v": "平安通駅から徒歩約2分"
+          },
+          {
+            "k": "所在地",
+            "v": "名古屋市北区若葉通5丁目7-3 豊島ビル1A"
+          }
+        ],
+        "rank": "POINT 05",
+        "rankNum": 5
+      }
+    ],
+    "sideArticles": [],
+    "quote": "Gazeboは、できることとできないことを先に書いてある美容院だ。10年後20年後もおしゃれを楽しめるように、という言葉を軸に、料金表まで筋が通っている。平安通駅から2分の北区で、カラーとじっくり向き合う日に思い出したい一軒だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "月曜の定休と、月に2回ほどの日曜休み。Gazeboに行く日を決めるときは、まず曜日から確かめることになる。カラーなら、単体が10,890円、カットを含むセットで14,850円が目安で、髪が肩を超えるなら長さの追加が乗る。カットだけなら7,260円で、高校生以下は4,950円から。ヘッドスパを足して10,890円のセットもある。パーマの日は、カットとのセットが14,850円、パーマ単体が8,470円。所要時間は公式サイトに記載がない。予約は完全予約制で、当日予約もできるが、空きがなければ取れない。ホットペッパービューティーなら時間を問わず、電話なら営業時間内に。ブリーチを入れたい日は、メニュー表の範囲では受けていない。支払いはPayPayやiD払いなどのキャッシュレスにも対応している。日曜に行く日は、定休の案内があるので先に確かめたい。営業時間は公式サイトが19:00まで、Googleマップは火曜から土曜が20:00までと出ているので、夕方以降の枠は電話で確認すると確実だ。"
+  },
+  "summary": "名古屋市北区若葉通の美容院Gazeboを、公式サイトとGoogleマップの情報から整理。セットメニューやカット、カラー、パーマ、ヘッドスパの料金、公式サイトが案内するマンツーマンのプライベートサロンという形、平安通駅からの行き方、予約方法をまとめました。",
+  "tags": [
+    "名古屋市北区",
+    "若葉通",
+    "美容院",
+    "平安通駅",
+    "カラー",
+    "Gazebo"
+  ],
+  "charCount": 3028,
+  "facts": [
+    {
+      "claim": "Googleマップの正式名はGazebo",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "Gazebo",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの業種は美容院",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "美容院",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は名古屋市北区若葉通5丁目7-3 豊島ビル1A(Googleマップ)",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "愛知県名古屋市北区若葉通５丁目7−３ 豊島ビル 1A",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話は052-982-7219",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "052-982-7219",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの営業時間は火〜土が10:00-20:00",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "10:00–20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの営業時間は日曜が10:00-19:00",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "10:00–19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップでは月曜が定休日",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "定休日",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Googleマップの予約リンクは予約サイト(kanzashi)とLINE",
+      "source": "https://maps.google.com/?cid=9139584387690899352",
+      "quote": "https://lin.ee/5ngmjKZ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "名古屋市営地下鉄の平安通駅から徒歩で約2分",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "名古屋市営地下鉄の平安通駅から徒歩で約2分の位置に店舗を設けており",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "住所は名古屋市北区若葉通5丁目7-3 豊島ビル1A(公式)",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "５丁目7−３ 豊島ビル 1A",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00(公式)",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "営業時間 10:00～19:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "定休日は月曜日",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "月曜日定休",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "月2回ほど日曜日も休み",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "月2回ほど日曜日休み",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "支払いは現金・クレジットカード・PayPay・auPAY・楽天PAY・iD払い・QUICPay",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "現金、クレジットカード、PayPay、auPAY、楽天PAY、iD払い、QUICPay",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "完全予約制(当日予約OK)",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "完全予約制（当日予約OK）",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約方法はHOT PEPPER Beauty・インスタ・Googleマップ・電話",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "HOT PEPPER Beauty、インスタ、Googleマップ、電話",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電話の予約は営業時間内に",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "お電話の場合は営業時間内でのご連絡をお願いしています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ホットペッパービューティーはいつでも受け付け",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "ホットペッパービューティーの場合はいつでも受け付けている",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "朝から夜の時間帯まで、カット・カラー・トリートメント・ヘッドスパに対応",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "朝から夜までカットやカラー、さらにはトリートメントやヘッドスパなど様々な施術に対応しております",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "頭皮と髪にやさしいオーガニック商材を使用した白髪染め",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "頭皮と髪にやさしいオーガニック商材を使用した白髪染め",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "髪質やクセを見極めながら行うカット",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "髪質やクセを見極めながら行うカット",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "当日予約は可能。空きがない場合は予約できない",
+      "source": "https://gazebo-hairsalon.com/faq/",
+      "quote": "はい、可能です！空きがない場合予約できかねることございますので予めご了承ください。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はInstagram・Googleマップ・ホットペッパービューティー・電話から",
+      "source": "https://gazebo-hairsalon.com/faq/",
+      "quote": "Instagram、Googleマップ、ホットペッパービューティー、お電話よりお願い致します。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プライベートサロンとして特別なひとときを提供",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "プライベートサロンとしてお客様に特別なひとときを提供できるよう努めております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "他の誰にも邪魔されないプライベート空間に仕上げている",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "他の誰にも邪魔されることなくリラックスできるようなプライベート空間に仕上げています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "マンツーマンで対応",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "マンツーマンで対応することで",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラー後の臭いに着目して工夫している",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "施術後に気になるカラーの臭いに着目し",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "選りすぐりのカラー剤を使用",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "施術には選りすぐりのカラー剤を使用しており",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのお客様にも対応",
+      "source": "https://gazebo-hairsalon.com/feature/",
+      "quote": "メンズのお客様にも対応しており",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "マンツーマンでのカウンセリング",
+      "source": "https://gazebo-hairsalon.com/feature/",
+      "quote": "マンツーマンでの丁寧なカウンセリングを通じて",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋Gazebo抗酸化カラー＋抗酸化トリートメントは17,050円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋Gazebo抗酸化カラー＋抗酸化トリートメント 17,050円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋Gazebo抗酸化美髪カラーは14,850円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋Gazebo抗酸化美髪カラー 14,850円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋Gazebo抗酸化美髪パーマは14,850円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋Gazebo抗酸化美髪パーマ 14,850円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Gazebo抗酸化美髪カラー＋抗酸化トリートメントは13,310円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "Gazebo抗酸化美髪カラー＋抗酸化トリートメント 13,310円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Gazebo抗酸化美髪カラーは10,890円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "Gazebo抗酸化美髪カラー 10,890円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラーのセットには「ブリーチは×」の注記",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ブリーチは× トリートメント付き",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋リフトアップヘッドスパは10,890円(税込)。炭酸シャワースパ",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋リフトアップヘッドスパ 10,890円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "炭酸シャワースパで頭皮と髪の汚れを取り除く",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "炭酸シャワースパで頭皮と髪の汚れを取り除きます",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋ヘアマニキュアは16,500円(税込)〜",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋ヘアマニキュア 16,500円(税込)～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カットは7,260円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット 7,260円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "高校生以下カットは4,950円(税込)から",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "高校生以下カット 4,950円(税込)〜",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全体カラーは8,470円(税込)から。ブリーチはしていない",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ブロー別途2,200円・ロング料金あり・ブリーチは致しておりません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全体カラーは8,470円(税込)から",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "全体カラー 8,470円(税込)～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘアマニキュアは8,800円(税込)から",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ヘアマニキュア 8,800円(税込)～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーマは8,470円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "パーマ 8,470円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ドレッド、アフロ等の特殊パーマはしていない",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ドレッド、アフロ等の特殊パーマは致しておりません。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プレミアムトリートメントは4,840円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "プレミアムトリートメント 4,840円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ナノバブルは1,210円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ナノバブル 1,210円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ヘッドスパは4,840円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ヘッドスパ 4,840円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "まゆ毛カットは605円(税込)でネット予約対象外",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "まゆ毛カット 605円(税込) ※ネット予約対象外",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シャンプーブローは4,235円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "シャンプーブロー 4,235円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ブローは2,420円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ブロー 2,420円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ表記S：顎まで",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "S：顎まで",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ表記M：肩まで+550円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "M：肩まで＋550円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ表記L：鎖骨下まで+1,100円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "L：鎖骨下まで＋1,100円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ表記LL：鎖骨下から胸まで+1,650円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "LL：鎖骨下から胸まで＋1,650円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "長さ表記SL：胸から下+2,200円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "SL：胸から下＋2,200円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カットは顔の形・ライフスタイル・簡単にスタイリングできるかどうかも考慮",
+      "source": "https://gazebo-hairsalon.com/service/",
+      "quote": "カットする際には顔の形やライフスタイル、そして簡単にスタイリングできるかどうかも考慮しつつ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーマ後のケア方法も詳しく説明する",
+      "source": "https://gazebo-hairsalon.com/service/",
+      "quote": "パーマ後のケア方法も詳しく説明いたします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "10年後20年後もおしゃれを楽しんで欲しいという想いで施術している",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "10年後20年後もおしゃれを楽しんで欲しいという想いで施術しております。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "施術を希望する場合は事前予約をお願いしたい",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "予約必須のため施術を希望される方は事前予約をお願いします。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "スパイラルパーマ+2,420円・ツイスト系パーマ+7,260円(メンズのみ)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "スパイラルパーマ+2,420円・ツイスト系パーマ+7,260円(メンズのみ)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット＋Gazebo抗酸化美髪パーマ＋抗酸化トリートメントは17,050円(税込)",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "カット＋Gazebo抗酸化美髪パーマ＋抗酸化トリートメント 17,050円(税込)",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プレミアムトリートメントはCOTAのトリートメントから髪質に合ったものを選べる",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "COTAの最上級の髪質の合った選べるトリートメント",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カラーはカウンセリングで色味と施術方法を提案する",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "丁寧にカウンセリングを行ったうえで、お客様に合った色味と施術方法を提案しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "髪を健康に保つためのトリートメントも同時に行う",
+      "source": "https://gazebo-hairsalon.com/concept/",
+      "quote": "髪を健康に保つためのトリートメントも同時に行ってまいります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "電車にて来店しやすい環境",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "電車にてお越しいただきやすい環境です",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "特にカラーの施術にこだわっている",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "特にカラーの施術にこだわっており",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "地図はGoogle MAPで確認できる",
+      "source": "https://gazebo-hairsalon.com/access/",
+      "quote": "Google MAPで確認",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "カット込みセットはSB込み・ロング料金あり",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "SB込み・ロング料金あり・カラー後の臭いとかゆみを抑えます。",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "全体カラー・ヘアマニキュアはブロー別途2,200円",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "ブロー別途2,200円・ロング料金あり",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "パーマはSB別",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "SB別・ロング料金あり・スパイラルパーマ",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "プレミアムトリートメントはSB別",
+      "source": "https://gazebo-hairsalon.com/menu/",
+      "quote": "SB別・COTAの最上級の髪質の合った選べるトリートメント",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-48/hero.jpg",
+      "imageUrl": "https://gazebo-hairsalon.com/_img/ja/cms/44153/image/_/image.webp",
+      "pageUrl": "https://gazebo-hairsalon.com/",
+      "what": "店内(2席のセット面、レンガ調の壁、奥にシャンプー台)"
+    },
+    {
+      "path": "/_portal/vshops/beauty-48/p1.jpg",
+      "imageUrl": "https://gazebo-hairsalon.com/_img/ja/cms/44013/image/_/image.webp",
+      "pageUrl": "https://gazebo-hairsalon.com/",
+      "what": "カットの手元(コームとハサミ、お客様は後ろ姿)"
+    },
+    {
+      "path": "/_portal/vshops/beauty-48/p2.jpg",
+      "imageUrl": "https://gazebo-hairsalon.com/_img/ja/cms/44164/image/_/image.webp",
+      "pageUrl": "https://gazebo-hairsalon.com/",
+      "what": "台に並べたハサミ類(道具)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://gazebo-hairsalon.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9139584387690899352"
+    }
+  ],
+  "notes": "営業時間の食い違い: Googleマップは月休・火〜土10:00-20:00・日10:00-19:00。公式サイトは10:00〜19:00・月曜定休・月2回ほど日曜休み。記事には両方を載せた。公式サイトの「朝から夜の時間帯まで対応」は10:00〜19:00の営業時間と合わないため本文に書かなかった。駐車場: 公式サイトに記載がなく、本文では「案内が見当たらない」とだけ書いた。書かなかったこと: 公式サイトにある頭痛・肩こり・アトピー・抜け毛・かゆみ等の症状語、「髪質改善」、「抗酸化」「美髪」「リフトアップ」を含むメニュー名(効き目を思わせる語のため名前を載せていない。料金だけを「カットとカラーのセット」のように書いた)、「10年後を守る」等の効き目の説明、オーナー名・家庭の事情の記述、お客様の声のページ。カラーのセットの料金: 14,850円は「カット＋Gazebo抗酸化美髪カラー」、17,050円は「カット＋Gazebo抗酸化カラー＋抗酸化トリートメント」、カラー単体10,890円と13,310円は「抗酸化美髪カラー」(単体／トリートメント付き)で、メニュー名が別のため本文では「カラーのメニュー名は複数」と注意だけ書いた。メニュー表の「SB込み」はシャンプーブロー込みの意味と読んだ(公式に定義の記載なし)。席数・所要時間は公式サイトに記載がなく書いていない。写真: 同じCMSの連番(44013〜44164)で店の撮影とみなした店内写真・カット手元・ハサミ。同サイトの背景素材(ハサミが並ぶ木の台)は店と別物に見えたため使わなかった。商品棚の写真は他社ロゴが目立つため使わなかった。タイトル・見出し・導入では、プライベートサロン・マンツーマン・薬剤へのこだわり等の自己申告は「公式サイトが〜」の形にした。"
+}

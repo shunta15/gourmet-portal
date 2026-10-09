@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 88,
+  "sheet": {
+    "name": "鍼灸・接骨院 白澤堂HAKUTAKUDOU",
+    "address": "京都府京都市東山区七軒町１７－１",
+    "url": "https://share.google/iPgiVBvL1K54lCGZw",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3aa3359d46e30aa6&sxsrf=AE3TifOlccTsrE8UYUEKUZlJC7UYoTmLgQ:1761006461904&kgmid=/g/11fnx6wf6h&q=%E9%8D%BC%E7%81%B8%E3%83%BB%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%99%BD%E6%BE%A4%E5%A0%82HAKUTAKUDOU&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9cdb98713f4117ad&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11fnx6wf6h",
+  "queries": [
+    "鍼灸・接骨院 白澤堂HAKUTAKUDOU"
+  ],
+  "candidates": [
+    {
+      "name": "鍼灸・接骨院 白澤堂HAKUTAKUDOU",
+      "address": "京都府京都市東山区七軒町１７−１",
+      "url": "https://www.google.com/maps/place/%E9%8D%BC%E7%81%B8%E3%83%BB%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%99%BD%E6%BE%A4%E5%A0%82HAKUTAKUDOU/@35.009597,135.777297,17z/data=!3m1!4b1!4m6!3m5!1s0x6001096f1d26bd23:0xa378c01b241f87c5!8m2!3d35.009597!4d135.777297!16s%2Fg%2F11fnx6wf6h",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%8D%BC%E7%81%B8%E3%83%BB%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%99%BD%E6%BE%A4%E5%A0%82HAKUTAKUDOU/@35.009597,135.777297,17z/data=!3m1!4b1!4m6!3m5!1s0x6001096f1d26bd23:0xa378c01b241f87c5!8m2!3d35.009597!4d135.777297!16s%2Fg%2F11fnx6wf6h?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "京都府京都市東山区七軒町１７－１",
+    "place": "京都府京都市東山区七軒町１７−１",
+    "sheetNorm": "京都府京都市東山区七軒町17-1",
+    "placeNorm": "京都府京都市東山区七軒町17-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "鍼灸・接骨院 白澤堂HAKUTAKUDOU",
+    "address": "京都府京都市東山区七軒町１７−１",
+    "category": "鍼灸院",
+    "lat": 35.009597,
+    "lng": 135.777297,
+    "gbpUrl": "https://maps.google.com/?cid=11779376048190228421",
+    "phone": "075-708-8215",
+    "website": "https://hakutakudou.com/",
+    "hours": {
+      "月": "09:00–12:00, 15:00–19:00",
+      "火": "09:00–12:00, 15:00–19:00",
+      "水": "定休日",
+      "木": "09:00–12:00, 15:00–19:00",
+      "金": "09:00–12:00, 15:00–19:00",
+      "土": "09:00–12:00, 15:00–19:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://aikarte.vercel.app/hakutakudou/reserve?ch=gmap"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【不安を和らげる】自律神経の悩みに寄り添います 秋が深まり、朝晩の気温差や環境の変化で、めまい・動悸・のぼせ・眠りにくさなどを感じていませんか。 白澤堂HAKUTAKUDOUでは、丁寧なカウンセリングと検査を通して、お一人おひとりの体調や生活背景を確認します。 鍼灸とやさしい整体を組み合わせ、心身のバランスを整える施術をご提案いたします。 不調への不安やセルフケアについても、無理なく続けられる方法を一緒に考えてまいります。 気になる症状がございましたら、まずはお気軽にご相談ください。 **Easing Your Concerns: Supporting You Through Autonomic Nervous System Issues** As autumn deepens, changes in temperature between morning and evening, as well as changes in your daily environment, may leave you experiencing dizziness, palpitations, hot flashes, or difficulty sleeping. At HAKUTAKUDOU, we carefully learn about your condition and lifestyl"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:46:09.458Z",
+  "seconds": 6
+}

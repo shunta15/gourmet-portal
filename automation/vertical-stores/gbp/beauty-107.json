@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 107,
+  "sheet": {
+    "name": "ROOM3K (ルームスリーケイ)",
+    "address": "香川県高松市福岡町３丁目６−２０",
+    "url": "https://share.google/DTGP9r9RJ9YKktL90",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a103ba62d6fbfa94&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11r999k0kb&q=ROOM3K+(%E3%83%AB%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%B1%E3%82%A4)&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=cc0cb97b0e2742e0&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11r999k0kb",
+  "queries": [
+    "ROOM3K (ルームスリーケイ)"
+  ],
+  "candidates": [
+    {
+      "name": "ROOM3K (ルームスリーケイ)",
+      "address": "香川県高松市福岡町３丁目６−２０",
+      "url": "https://www.google.com/maps/place/ROOM3K+(%E3%83%AB%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%B1%E3%82%A4)/@34.3457788,134.0742688,17z/data=!3m1!4b1!4m6!3m5!1s0x3553ed5ee22412c5:0x160c41e9fe729bd9!8m2!3d34.3457788!4d134.0742688!16s%2Fg%2F11r999k0kb",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/ROOM3K+(%E3%83%AB%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%B1%E3%82%A4)/@34.3457788,134.0742688,17z/data=!3m1!4b1!4m6!3m5!1s0x3553ed5ee22412c5:0x160c41e9fe729bd9!8m2!3d34.3457788!4d134.0742688!16s%2Fg%2F11r999k0kb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "香川県高松市福岡町３丁目６−２０",
+    "place": "香川県高松市福岡町３丁目６−２０",
+    "sheetNorm": "香川県高松市福岡町3-6-20",
+    "placeNorm": "香川県高松市福岡町3-6-20",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ROOM3K (ルームスリーケイ)",
+    "address": "香川県高松市福岡町３丁目６−２０",
+    "category": "脱毛サービス",
+    "lat": 34.3457788,
+    "lng": 134.0742688,
+    "gbpUrl": "https://maps.google.com/?cid=1588717241807051737",
+    "phone": "087-821-8886",
+    "website": "https://room3k.satellite-sai-g.xyz/#",
+    "hours": {
+      "月": "定休日",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ROOM3Kは5月１日で5周年を迎える事が出来ました。皆様のおかげです🙇🏽🙇🏽🙇🏽 常連様、ご新規様よろしくお願いいたします。 常に感謝の気持ちを忘れず、香川県で1番の脱毛、日焼けサロンを目指してます(^^)\n2026/05/01"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:25:44.218Z",
+  "seconds": 5.9
+}

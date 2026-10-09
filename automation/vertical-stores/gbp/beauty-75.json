@@ -1,0 +1,67 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 75,
+  "sheet": {
+    "name": "B・BLOOM ➖良心価格のトータルビューティサロン➖",
+    "address": "熊本県熊本市南区田迎６丁目５−３６",
+    "url": "https://maps.app.goo.gl/oMLtogEv6uhr8rRK8",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.co.jp/maps/place/B%E3%83%BBBLOOM+%E2%9E%96%E8%89%AF%E5%BF%83%E4%BE%A1%E6%A0%BC%E3%81%AE%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B5%E3%83%AD%E3%83%B3%E2%9E%96/@32.8312653,130.6373994,12z/data=!4m7!3m6!1s0x3540f3e649b36d3b:0xeab140f8779a6778!8m2!3d32.7773706!4d130.7175156!15sChXnhormnKznnIzjgIDjgqjjgrnjg4ZaFiIU54aK5pysIOecjCDjgqjjgrnjg4aSAQxiZWF1dHlfc2Fsb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTmZPRXBxT0RWUlJSQUKqAVcKCS9tLzAxZzdkXxABKg0iCeOCqOOCueODhigIMh8QASIbGA8Atn-g_lDJZLN-wZAC7Otl9bMSCThmlK89MhgQAiIU54aK5pysIOecjCDjgqjjgrnjg4bgAQD6AQQIABAk!16s%2Fg%2F11n86d_y_0?entry=tts&g_ep=EgoyMDI1MTAxNC4wIPu8ASoASAFQAw%3D%3D&skid=b4a5ddf6-f264-4424-a760-f97c3affb2bd",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "B・BLOOM",
+      "address": "熊本県熊本市南区田迎６丁目５−３６",
+      "url": "https://www.google.co.jp/maps/place/B%E3%83%BBBLOOM+%E2%9E%96%E8%89%AF%E5%BF%83%E4%BE%A1%E6%A0%BC%E3%81%AE%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B5%E3%83%AD%E3%83%B3%E2%9E%96/@32.8312653,130.6373994,12z/data=!4m7!3m6!1s0x3540f3e649b36d3b:0xeab140f8779a6778!8m2!3d32.7773706!4d130.7175156!15sChXnhormnKznnIzjgIDjgqjjgrnjg4ZaFiIU54aK5pysIOecjCDjgqjjgrnjg4aSAQxiZWF1dHlfc2Fsb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTmZPRXBxT0RWUlJSQUKqAVcKCS9tLzAxZzdkXxABKg0iCeOCqOOCueODhigIMh8QASIbGA8Atn-g_lDJZLN-wZAC7Otl9bMSCThmlK89MhgQAiIU54aK5pysIOecjCDjgqjjgrnjg4bgAQD6AQQIABAk!16s%2Fg%2F11n86d_y_0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.co.jp/maps/place/B%E3%83%BBBLOOM+%E2%9E%96%E8%89%AF%E5%BF%83%E4%BE%A1%E6%A0%BC%E3%81%AE%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B5%E3%83%AD%E3%83%B3%E2%9E%96/@32.8312653,130.6373994,12z/data=!4m7!3m6!1s0x3540f3e649b36d3b:0xeab140f8779a6778!8m2!3d32.7773706!4d130.7175156!15sChXnhormnKznnIzjgIDjgqjjgrnjg4ZaFiIU54aK5pysIOecjCDjgqjjgrnjg4aSAQxiZWF1dHlfc2Fsb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTmZPRXBxT0RWUlJSQUKqAVcKCS9tLzAxZzdkXxABKg0iCeOCqOOCueODhigIMh8QASIbGA8Atn-g_lDJZLN-wZAC7Otl9bMSCThmlK89MhgQAiIU54aK5pysIOecjCDjgqjjgrnjg4bgAQD6AQQIABAk!16s%2Fg%2F11n86d_y_0?entry=tts&g_ep=EgoyMDI1MTAxNC4wIPu8ASoASAFQAw%3D%3D&skid=b4a5ddf6-f264-4424-a760-f97c3affb2bd",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "熊本県熊本市南区田迎６丁目５−３６",
+    "place": "熊本県熊本市南区田迎６丁目５−３６",
+    "sheetNorm": "熊本県熊本市南区田迎6-5-36",
+    "placeNorm": "熊本県熊本市南区田迎6-5-36",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "B・BLOOM",
+    "address": "熊本県熊本市南区田迎６丁目５−３６",
+    "category": "エステティック サロン",
+    "lat": 32.7773706,
+    "lng": 130.7175156,
+    "gbpUrl": "https://maps.google.com/?cid=16911369511655597944",
+    "phone": "090-9562-8108",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000533326/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "2026/05/12"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:19:06.248Z",
+  "seconds": 3.5
+}

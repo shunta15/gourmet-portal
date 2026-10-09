@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 72,
+  "sheet": {
+    "name": "訪問整体・ユアタイム",
+    "address": "茨城県古河市常盤町１０−２３",
+    "url": "https://share.google/AH2vStvo6JCmStBr7",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=552fb68e3d08662a&rlz=1CAHFDH_enJP1182&sxsrf=AE3TifNQa9H_-_7stJ6EVqzyeLWgBJZWzg:1760510713843&kgmid=/g/11pcv3tq4d&q=%E8%A8%AA%E5%95%8F%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%A6%E3%82%A2%E3%82%BF%E3%82%A4%E3%83%A0&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=eb12d6811ab26f17&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11pcv3tq4d",
+  "queries": [
+    "訪問整体・ユアタイム"
+  ],
+  "candidates": [
+    {
+      "name": "訪問整体・ユアタイム",
+      "address": "茨城県古河市常盤町１０−２３",
+      "url": "https://www.google.com/maps/place/%E8%A8%AA%E5%95%8F%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%A6%E3%82%A2%E3%82%BF%E3%82%A4%E3%83%A0/@36.2059782,139.7145446,17z/data=!3m1!4b1!4m6!3m5!1s0x601f4b73f8ce1afb:0x7b27903e7dc69355!8m2!3d36.2059782!4d139.7145446!16s%2Fg%2F11pcv3tq4d",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%A8%AA%E5%95%8F%E6%95%B4%E4%BD%93%E3%83%BB%E3%83%A6%E3%82%A2%E3%82%BF%E3%82%A4%E3%83%A0/@36.2059782,139.7145446,17z/data=!3m1!4b1!4m6!3m5!1s0x601f4b73f8ce1afb:0x7b27903e7dc69355!8m2!3d36.2059782!4d139.7145446!16s%2Fg%2F11pcv3tq4d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "茨城県古河市常盤町１０−２３",
+    "place": "茨城県古河市常盤町１０−２３",
+    "sheetNorm": "茨城県古河市常盤町10-23",
+    "placeNorm": "茨城県古河市常盤町10-23",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "訪問整体・ユアタイム",
+    "address": "茨城県古河市常盤町１０−２３",
+    "category": "整体",
+    "lat": 36.2059782,
+    "lng": 139.7145446,
+    "gbpUrl": "https://maps.google.com/?cid=8874220188829389653",
+    "phone": "080-5503-5193",
+    "website": "https://koga-yourtime.net/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:43:18.819Z",
+  "seconds": 5.9
+}

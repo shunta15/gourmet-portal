@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 121,
+  "sheet": {
+    "name": "PS　BEAUTY",
+    "address": "大阪府大阪市北区神山町８－２２梅電ビル３F",
+    "url": "https://share.google/dIi1UgwwfuxvHaS2v",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=6d9773df8986f1e8&kgmid=/g/11wj9_hc_h&q=Eyelash/Men%27s+Eyebrow/Facial+-+PS+BEAUTY+-&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=091cab50c2faeb1f&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11wj9_hc_h",
+  "queries": [
+    "Eyelash/Men's Eyebrow/Facial - PS BEAUTY -"
+  ],
+  "candidates": [
+    {
+      "name": "Eyelash/Men's Eyebrow/Facial - PS BEAUTY -",
+      "address": "大阪府大阪市北区神山町８−２２ 梅電ビル ３F",
+      "url": "https://www.google.com/maps/place/Eyelash%2FMen%27s+Eyebrow%2FFacial+-+PS+BEAUTY+-/data=!4m7!3m6!1s0x6000e777f3a656d7:0x90e409279faf5a12!8m2!3d34.7025304!4d135.505299!16s%2Fg%2F11wj9_hc_h!19sChIJ11am83fnAGARElqvnycJ5JA",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Eyelash%2FMen%27s+Eyebrow%2FFacial+-+PS+BEAUTY+-/data=!4m7!3m6!1s0x6000e777f3a656d7:0x90e409279faf5a12!8m2!3d34.7025304!4d135.505299!16s%2Fg%2F11wj9_hc_h!19sChIJ11am83fnAGARElqvnycJ5JA?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市北区神山町８－２２梅電ビル３F",
+    "place": "大阪府大阪市北区神山町８−２２ 梅電ビル ３F",
+    "sheetNorm": "大阪府大阪市北区神山町8-22梅電ビル3F",
+    "placeNorm": "大阪府大阪市北区神山町8-22梅電ビル3F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "Eyelash/Men's Eyebrow/Facial - PS BEAUTY -",
+    "address": "大阪府大阪市北区神山町８−２２ 梅電ビル ３F",
+    "category": "まつげサロン",
+    "lat": 34.7025304,
+    "lng": 135.505299,
+    "gbpUrl": "https://maps.google.com/?cid=10440479901939096082",
+    "phone": "070-9292-6822",
+    "website": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei",
+    "hours": {
+      "月": "09:00–21:30",
+      "火": "09:00–21:30",
+      "水": "09:00–21:30",
+      "木": "09:00–21:30",
+      "金": "09:00–21:30",
+      "土": "10:00–19:30",
+      "日": "10:00–19:30"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei?merchant_id=kirei-1025880"
+      },
+      {
+        "label": "予約",
+        "url": "https://rwg.kanzashi.com/l/4M9fa758pp9/kirei"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "✨ 神山町・梅田エリアで叶える、素肌美人の近道。 ✨ 毛穴の黒ずみ、開き、くすみ、乾燥…お肌のお悩み、PS BEAUTYにご相談ください。 人気の毛穴洗浄や小顔フェイシャルメニューで、自信の持てる素肌へ導きます。 丁寧なカウンセリングで、あなたのお肌に最適な施術をご提案。自分ではケアしきれない深部の汚れまでしっかりとアプローチします。 ☕ 忙しい日々を忘れる、あなただけの癒やしの時間 ☕ お子様同伴でも安心なベビーサークル・バウンサーを完備しています。 子育て中で自分のケアが後回しになりがちなママにこそ、ゆったりとした時間を過ごしていただきたい。施術中はプロに身を委ねて、心身ともにリフレッシュしてください。 当店で、ワンランク上の美肌を手に入れませんか？ ========================== PS BEAUTY 〒530-0026 大阪府大阪市北区神山町８−２２ 梅電ビル ３F\n2026/07/22\n予約"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:28:25.637Z",
+  "seconds": 4.8
+}

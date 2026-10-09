@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 86,
+  "sheet": {
+    "name": "JUMP整体院",
+    "address": "宮崎県宮崎市佐土原町下田島１２０９２－５ 1F",
+    "url": "https://share.google/Hebzj9pJRdp48p7yn",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=f8a7c404b5b226c8&sxsrf=AE3TifORZD0K9pH3TdyJcuXLRZ7KyRL47g:1760938149289&kgmid=/g/11vt6k_x47&q=JUMP%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=91dee27771c045ef&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vt6k_x47",
+  "queries": [
+    "JUMP整体院"
+  ],
+  "candidates": [
+    {
+      "name": "JUMP整体院",
+      "address": "宮崎県宮崎市佐土原町下田島１２０９２−５ 1F",
+      "url": "https://www.google.com/maps/place/JUMP%E6%95%B4%E4%BD%93%E9%99%A2/@32.0302472,131.473833,17z/data=!3m1!4b1!4m6!3m5!1s0x3538a50e79e598bb:0xb0caf236d26f3349!8m2!3d32.0302472!4d131.473833!16s%2Fg%2F11vt6k_x47",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/JUMP%E6%95%B4%E4%BD%93%E9%99%A2/@32.0302472,131.473833,17z/data=!3m1!4b1!4m6!3m5!1s0x3538a50e79e598bb:0xb0caf236d26f3349!8m2!3d32.0302472!4d131.473833!16s%2Fg%2F11vt6k_x47?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "宮崎県宮崎市佐土原町下田島１２０９２－５ 1F",
+    "place": "宮崎県宮崎市佐土原町下田島１２０９２−５ 1F",
+    "sheetNorm": "宮崎県宮崎市佐土原町下田島12092-51F",
+    "placeNorm": "宮崎県宮崎市佐土原町下田島12092-51F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "JUMP整体院",
+    "address": "宮崎県宮崎市佐土原町下田島１２０９２−５ 1F",
+    "category": "整体",
+    "lat": 32.0302472,
+    "lng": 131.473833,
+    "gbpUrl": "https://maps.google.com/?cid=12739260813243528009",
+    "phone": "070-4436-2866",
+    "website": "https://jump-seitai.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "10:00–12:00, 13:00–20:00",
+      "火": "10:00–12:00, 13:00–20:00",
+      "水": "10:00–12:00, 13:00–20:00",
+      "木": "10:00–12:00, 13:00–20:00",
+      "金": "10:00–12:00, 13:00–20:00",
+      "土": "09:00–14:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://jump-seitai.jp/contact/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "佐土原で辛い肩こりを改善する整体施術の秘訣 宮崎市での整体院選びなら、佐土原駅から徒歩14分のJUMP整体院をご検討ください。国家資格である柔道整復師を持つスタッフが、骨盤の歪み、腰痛、首肩こりなど様々な症状に対応し、根本から改善いたします。トリガーポイント治療、背骨・骨盤矯正、EMSトレーニングの3つの治療で痛みのない健康な身体を目指します。他にも美容小顔電気マッサージやカッピング・吸い玉も提供しています。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:45:47.333Z",
+  "seconds": 8.5
+}

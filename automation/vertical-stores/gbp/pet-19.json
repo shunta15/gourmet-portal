@@ -1,0 +1,70 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 19,
+  "sheet": {
+    "name": "トータルドッグサロン・パーティー",
+    "address": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+    "url": "https://share.google/GFZvE2rDdSO39PJFU",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=7b0828787f02e929&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11b6j0n7d4&q=%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%89%E3%83%83%E3%82%B0%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5f212cf81321e510&utm_source=damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b6j0n7d4",
+  "queries": [
+    "トータルドッグサロン・パーティー",
+    "トータルドッグサロン・パーティー 福岡県北九州市小倉北区鍛冶町１丁目９−８"
+  ],
+  "candidates": [
+    {
+      "name": "トータルドッグサロン・パーティー",
+      "address": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+      "url": "https://www.google.com/maps/place/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%89%E3%83%83%E3%82%B0%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC/@33.8830208,130.8845034,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bf4e44a9c2d1:0x421f96249ec87417!8m2!3d33.8830208!4d130.8845034!16s%2Fg%2F11b6j0n7d4",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%88%E3%83%BC%E3%82%BF%E3%83%AB%E3%83%89%E3%83%83%E3%82%B0%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC/@33.8830208,130.8845034,17z/data=!3m1!4b1!4m6!3m5!1s0x3543bf4e44a9c2d1:0x421f96249ec87417!8m2!3d33.8830208!4d130.8845034!16s%2Fg%2F11b6j0n7d4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+    "place": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+    "sheetNorm": "福岡県北九州市小倉北区鍛冶町1-9-8",
+    "placeNorm": "福岡県北九州市小倉北区鍛冶町1-9-8",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "トータルドッグサロン・パーティー",
+    "address": "福岡県北九州市小倉北区鍛冶町１丁目９−８",
+    "category": "トリミングサロン",
+    "lat": 33.8830208,
+    "lng": 130.8845034,
+    "gbpUrl": "https://maps.google.com/?cid=4764692014808200215",
+    "phone": "093-541-8588",
+    "website": "https://www.petshop-party.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:30–18:00",
+      "水": "09:30–18:00",
+      "木": "09:30–18:00",
+      "金": "09:30–18:00",
+      "土": "09:30–18:00",
+      "日": "09:30–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:58:10.995Z",
+  "seconds": 9.8
+}

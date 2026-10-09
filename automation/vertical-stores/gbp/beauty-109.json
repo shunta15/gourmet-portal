@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 109,
+  "sheet": {
+    "name": "Ｉｒｉｓ",
+    "address": "静岡県富士市伝法２０−７",
+    "url": "https://www.google.co.jp/search?hl=ja&q=%EF%BC%A9%EF%BD%92%EF%BD%89%EF%BD%93%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%B8%82%E4%BC%9D%E6%B3%95%EF%BC%92%EF%BC%90%EF%BC%8D%EF%BC%97&lr=lang_ja",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Ｉｒｉｓ 静岡県富士市伝法２０−７"
+  ],
+  "candidates": [
+    {
+      "name": "Ｉｒｉｓ",
+      "address": "静岡県富士市伝法２０−７",
+      "url": "https://www.google.com/maps/place/%EF%BC%A9%EF%BD%92%EF%BD%89%EF%BD%93/@35.188115,138.6762772,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd4e0f4cc4c7b:0x4851a81cabd8eb5e!8m2!3d35.188115!4d138.6762772!16s%2Fg%2F11c6wm66_r",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%EF%BC%A9%EF%BD%92%EF%BD%89%EF%BD%93/@35.188115,138.6762772,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd4e0f4cc4c7b:0x4851a81cabd8eb5e!8m2!3d35.188115!4d138.6762772!16s%2Fg%2F11c6wm66_r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県富士市伝法２０−７",
+    "place": "静岡県富士市伝法２０−７",
+    "sheetNorm": "静岡県富士市伝法20-7",
+    "placeNorm": "静岡県富士市伝法20-7",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Ｉｒｉｓ",
+    "address": "静岡県富士市伝法２０−７",
+    "category": "エステティック サロン",
+    "lat": 35.188115,
+    "lng": 138.6762772,
+    "gbpUrl": "https://maps.google.com/?cid=5211131084940045150",
+    "phone": "090-7529-5847",
+    "website": "https://irisesutesalon.wixsite.com/esute",
+    "hours": {
+      "月": "10:30–22:00",
+      "火": "10:30–22:00",
+      "水": "10:30–17:00",
+      "木": "10:30–22:00",
+      "金": "10:30–22:00",
+      "土": "10:30–22:00",
+      "日": "10:30–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://lin.ee/wc0ijet"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "Irisでレモンボトルお受け頂けます‼️ レモンボトルは韓国発祥🇰🇷美容外科でも使用されている、天然成分から出来た、お身体に負担の少ない脂肪溶解剤になります🍍 たぽっとした、柔らかい皮下脂肪に効果的です！ Irisでは、こちらのレモンボトルを近赤外線音響振動LED光で入れ込んでいきます🍋 ですので、単なる導入より、近赤外線音響振動LED光の効果 ⚜️浸透力促進 ⚜️巡りの向上 ⚜️脂肪排出の促進 ⚜️お肌の引き締め ⚜️ハリ感アップ ⚜️コリの改善、筋肉のハリ改善 ⚜️美肌 などのさまざまな効果がプラスされます。 お写真はレモンボトル5cc使用での1回の効果になります。(前回お手入れ後との比較) 施術範囲に対しては、少しレモンボトルの量が少なめになっていますが、それでも1回でこのぐらいの変化がでました😊✨ 当てていて、減り感感じます！ 他のお客様からも、柔らかいお肉多い方にかなり好評頂いております。 二重顎も変化わかりやすい部位です！ 二重顎や、たぽっとお肉が気になる方はぜひご相談下さいませ🤗✨ #富士市エステ　#富士市レモンボトル　#富士市痩身　#富士市近赤外線　#富士市ブライダルエステ"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:26:05.415Z",
+  "seconds": 5.6
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 17,
+  "sheet": {
+    "name": "agu_hairsalon",
+    "address": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+    "url": "https://share.google/zXk5xmmnCPCh2IcM7",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=19970beb36c98359&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifNG_KLbh6-8_kV2ky3OTQyIjQwaOQ:1758248124070&kgmid=/g/11w2n0p6r4&q=agu_hairsalon&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=31a193bb41f2d093&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11w2n0p6r4",
+  "queries": [
+    "agu_hairsalon"
+  ],
+  "candidates": [
+    {
+      "name": "agu_hairsalon「アグーヘアサロン」",
+      "address": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+      "url": "https://www.google.com/maps/place/agu_hairsalon%E3%80%8C%E3%82%A2%E3%82%B0%E3%83%BC%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%8D/data=!4m7!3m6!1s0x60183f375848fa25:0x34a9b858b8872592!8m2!3d35.2520669!4d139.6856773!16s%2Fg%2F11w2n0p6r4!19sChIJJfpIWDc_GGARkiWHuFi4qTQ",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/agu_hairsalon%E3%80%8C%E3%82%A2%E3%82%B0%E3%83%BC%E3%83%98%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%8D/data=!4m7!3m6!1s0x60183f375848fa25:0x34a9b858b8872592!8m2!3d35.2520669!4d139.6856773!16s%2Fg%2F11w2n0p6r4!19sChIJJfpIWDc_GGARkiWHuFi4qTQ?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+    "place": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+    "sheetNorm": "神奈川県横須賀市根岸町1-7-20渡辺ビル2階左",
+    "placeNorm": "神奈川県横須賀市根岸町1-7-20渡辺ビル2階左",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "agu_hairsalon「アグーヘアサロン」",
+    "address": "神奈川県横須賀市根岸町１丁目７−２０ 渡辺ビル 2階左",
+    "category": "美容院",
+    "lat": 35.2520669,
+    "lng": 139.6856773,
+    "gbpUrl": "https://maps.google.com/?cid=3794766852228851090",
+    "phone": "046-834-2355",
+    "website": "https://beauty.hotpepper.jp/slnH000706929/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "定休日",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:06:55.550Z",
+  "seconds": 4.3
+}

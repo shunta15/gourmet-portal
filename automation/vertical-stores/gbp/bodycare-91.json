@@ -1,0 +1,76 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 91,
+  "sheet": {
+    "name": "total body care oasis 日暮里/谷中銀座店",
+    "address": "東京都荒川区西日暮里３丁目１０ー４ 2F",
+    "url": "https://www.google.com/maps/place/total+body+care+oasis+%E6%97%A5%E6%9A%AE%E9%87%8C%2F%E8%B0%B7%E4%B8%AD%E9%8A%80%E5%BA%A7%E5%BA%97/@35.7277322,139.7677338,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d807d547ff5:0x7d80483ee89e1d6e!8m2!3d35.7277322!4d139.7677338!16s%2Fg%2F11wy0d2gs5?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "total body care oasis 日暮里/谷中銀座店",
+      "address": "東京都荒川区西日暮里３丁目１０−４ 2F",
+      "url": "https://www.google.com/maps/place/total+body+care+oasis+%E6%97%A5%E6%9A%AE%E9%87%8C%2F%E8%B0%B7%E4%B8%AD%E9%8A%80%E5%BA%A7%E5%BA%97/@35.7277322,139.7677338,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d807d547ff5:0x7d80483ee89e1d6e!8m2!3d35.7277322!4d139.7677338!16s%2Fg%2F11wy0d2gs5",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/total+body+care+oasis+%E6%97%A5%E6%9A%AE%E9%87%8C%2F%E8%B0%B7%E4%B8%AD%E9%8A%80%E5%BA%A7%E5%BA%97/@35.7277322,139.7677338,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d807d547ff5:0x7d80483ee89e1d6e!8m2!3d35.7277322!4d139.7677338!16s%2Fg%2F11wy0d2gs5?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都荒川区西日暮里３丁目１０ー４ 2F",
+    "place": "東京都荒川区西日暮里３丁目１０−４ 2F",
+    "sheetNorm": "東京都荒川区西日暮里3-10-42F",
+    "placeNorm": "東京都荒川区西日暮里3-10-42F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "total body care oasis 日暮里/谷中銀座店",
+    "address": "東京都荒川区西日暮里３丁目１０−４ 2F",
+    "category": "整体",
+    "lat": 35.7277322,
+    "lng": 139.7677338,
+    "gbpUrl": "https://maps.google.com/?cid=9043307486787804526",
+    "phone": "090-5791-4559",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000745243/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–14:00, 16:00–20:00",
+      "水": "10:00–14:00, 16:00–20:00",
+      "木": "10:00–14:00, 16:00–20:00",
+      "金": "10:00–14:00, 16:00–20:00",
+      "土": "10:00–14:00, 15:00–18:00",
+      "日": "10:00–14:00, 15:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_15078913/reserve/"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/kr/slnH000745243/?cstt=20"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【専門家が解説】「夏の肩こり頭痛」が増える理由とは？原因と解決法 「夏になると、肩こりや頭痛がひどくなる気がする…」 「冷房の効いた部屋にずっといると、頭が締め付けられるように痛い…」 実は、夏は1年の中で最も「肩こり」や「頭痛」のトラブルが起きやすい季節のひとつです。 今回は、医学的な知見や生理学のメカニズムをもとに、「なぜ夏に肩こり頭痛が増えるのか」とその解決法をわかりやすく解説します。 その頭痛、「緊張型頭痛」かもしれません。頭痛にはいくつか種類がありますが、肩こりと深く関係しているのが「緊張型頭痛（きんちょうがたずつう）」です。頭全体がぎゅーっと締め付けられるような重い痛みが特徴で、頭痛全体の約6割以上を占めます。 首や肩の筋肉が固まることで血流が滞り、発生した痛み物質が神経を伝わって「頭痛」として脳に届くのが基本的なメカニズムです。 なぜ？夏に「肩こり頭痛」が悪化する3つの理由 教科書や論文のデータでも、気温の変化や生活環境が自律神経・血管に大きな影響を与えることが知られています。特に夏場は、以下の3つの要因が重なります。 1. 冷房による「局所的な冷え」と筋肉の縮こまり 冷房の風が直接首や肩に当たると、体温を逃がさないように皮膚表面の血管が収縮します。 血管が縮むと、筋肉（後頭下筋群や僧帽筋など）へ届く酸素や栄養が不足し、乳酸などの痛み物質が局所に留まりやすくなります。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:46:39.333Z",
+  "seconds": 4.9
+}

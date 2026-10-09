@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 124,
+  "sheet": {
+    "name": "女性専門整体院airacu",
+    "address": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+    "url": "https://share.google/Z0v1jgEZ89LtjPRz6",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=de39b42295ba4a4a&sxsrf=AE3TifMfs_LbaykGY6kEmFwHSWh8VTzRZg:1761798691464&kgmid=/g/11lnj7wsql&q=%E5%A5%B3%E6%80%A7%E5%B0%82%E9%96%80%E6%95%B4%E4%BD%93%E9%99%A2airacu&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=a11f3de460937a64&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11lnj7wsql",
+  "queries": [
+    "女性専門整体院airacu"
+  ],
+  "candidates": [
+    {
+      "name": "整体・はりきゅう院airacu",
+      "address": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E3%83%BB%E3%81%AF%E3%82%8A%E3%81%8D%E3%82%85%E3%81%86%E9%99%A2airacu/data=!4m7!3m6!1s0x5f0b2bfb518f312f:0xd9931103373e9e91!8m2!3d43.0345983!4d141.4209589!16s%2Fg%2F11lnj7wsql!19sChIJLzGPUfsrC18RkZ4-NwMRk9k",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E3%83%BB%E3%81%AF%E3%82%8A%E3%81%8D%E3%82%85%E3%81%86%E9%99%A2airacu/data=!4m7!3m6!1s0x5f0b2bfb518f312f:0xd9931103373e9e91!8m2!3d43.0345983!4d141.4209589!16s%2Fg%2F11lnj7wsql!19sChIJLzGPUfsrC18RkZ4-NwMRk9k?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「女性専門整体院airacu」とマップ「整体・はりきゅう院airacu」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+    "place": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+    "sheetNorm": "北海道札幌市白石区南郷通南1-16サンホーム館RB302",
+    "placeNorm": "北海道札幌市白石区南郷通南1-16サンホーム館RB302",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "整体・はりきゅう院airacu",
+    "address": "北海道札幌市白石区南郷通南１−１６ サンホーム 館RB302",
+    "category": "整体",
+    "lat": 43.0345983,
+    "lng": 141.4209589,
+    "gbpUrl": "https://maps.google.com/?cid=15677893433316253329",
+    "phone": "011-600-1653",
+    "website": "https://www.instagram.com/seitai.airacu?stkn=eXg5dmVkMjAzZ2p5&utm_source=qr",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "朝晩は冷え込んできましたね！ 冷えによる血行不良、じわ～っと緩める指圧整体で巡りを整えていきます １０月もよろしくお願いします！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:04:30.223Z",
+  "seconds": 4.2,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "女性専門整体院airacu",
+    "mapName": "整体・はりきゅう院airacu"
+  }
+}

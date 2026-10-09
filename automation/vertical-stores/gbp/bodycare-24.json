@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 24,
+  "sheet": {
+    "name": "のりちゃん鍼灸整骨院",
+    "address": "長野県上田市上丸子１６６３",
+    "url": "https://share.google/IdA1alynTCUpy4pzH",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=cc2c3cd950dba5e5&sxsrf=AE3TifMf7PruNDuqEukS2WEoamlNP6sOlA:1758515535711&kgmid=/g/11hz_lm98v&q=%E3%81%AE%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9e1a754914fb2706&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11hz_lm98v",
+  "queries": [
+    "のりちゃん鍼灸整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "のりちゃん鍼灸整骨院",
+      "address": "長野県上田市上丸子１６６３",
+      "url": "https://www.google.com/maps/place/%E3%81%AE%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@36.3261889,138.2701702,17z/data=!3m1!4b1!4m6!3m5!1s0x601dbb0f0d5d79e7:0x37554d627cb25f71!8m2!3d36.3261889!4d138.2701702!16s%2Fg%2F11hz_lm98v",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AE%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@36.3261889,138.2701702,17z/data=!3m1!4b1!4m6!3m5!1s0x601dbb0f0d5d79e7:0x37554d627cb25f71!8m2!3d36.3261889!4d138.2701702!16s%2Fg%2F11hz_lm98v?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "長野県上田市上丸子１６６３",
+    "place": "長野県上田市上丸子１６６３",
+    "sheetNorm": "長野県上田市上丸子1663",
+    "placeNorm": "長野県上田市上丸子1663",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "のりちゃん鍼灸整骨院",
+    "address": "長野県上田市上丸子１６６３",
+    "category": "接骨院",
+    "lat": 36.3261889,
+    "lng": 138.2701702,
+    "gbpUrl": "https://maps.google.com/?cid=3987178130500640625",
+    "phone": "0268-71-7396",
+    "website": "http://www.hi-yorokonde.com/detail/index_1854.html",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:33:55.429Z",
+  "seconds": 6.4
+}

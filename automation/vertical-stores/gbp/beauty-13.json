@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 13,
+  "sheet": {
+    "name": "エステルームかれん(ﾊｰﾌﾞﾋﾟｰﾘﾝｸﾞ専門ｻﾛﾝ)",
+    "address": "福岡県柳川市三橋町吉開７４６−７",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6534821db4ca833b&hl=ja&sxsrf=AE3TifOc9j0hD6sJNrwmen5vvIdnxHIbsw:1758096330081&kgmid=/g/1tf3lptt&q=%E3%82%A8%E3%82%B9%E3%83%86%E3%83%AB%E3%83%BC%E3%83%A0%E3%81%8B%E3%82%8C%E3%82%93(%EF%BE%8A%EF%BD%B0%EF%BE%8C%EF%BE%9E%EF%BE%8B%EF%BE%9F%EF%BD%B0%EF%BE%98%EF%BE%9D%EF%BD%B8%EF%BE%9E%E5%B0%82%E9%96%80%EF%BD%BB%EF%BE%9B%EF%BE%9D)&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ba13998c86ebc7dd&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1tf3lptt",
+  "queries": [
+    "エステルームかれん(ﾊｰﾌﾞﾋﾟｰﾘﾝｸﾞ専門ｻﾛﾝ) 福岡県柳川市三橋町吉開７４６−７"
+  ],
+  "candidates": [
+    {
+      "name": "エステルームかれん/たるみ・小顔・ニキビ跡改善｜テラボーラー・ポテンツァ・ハーブピーリング",
+      "address": "福岡県柳川市三橋町吉開７４６−７",
+      "url": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%86%E3%83%AB%E3%83%BC%E3%83%A0%E3%81%8B%E3%82%8C%E3%82%93%2F%E3%81%9F%E3%82%8B%E3%81%BF%E3%83%BB%E5%B0%8F%E9%A1%94%E3%83%BB%E3%83%8B%E3%82%AD%E3%83%93%E8%B7%A1%E6%94%B9%E5%96%84%EF%BD%9C%E3%83%86%E3%83%A9%E3%83%9C%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%BB%E3%83%9D%E3%83%86%E3%83%B3%E3%83%84%E3%82%A1%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0/@33.178952,130.449303,17z/data=!3m1!4b1!4m6!3m5!1s0x3541b2f37e3e81a7:0xcea260d6f977cd85!8m2!3d33.178952!4d130.449303!16s%2Fg%2F1tf3lptt",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%86%E3%83%AB%E3%83%BC%E3%83%A0%E3%81%8B%E3%82%8C%E3%82%93%2F%E3%81%9F%E3%82%8B%E3%81%BF%E3%83%BB%E5%B0%8F%E9%A1%94%E3%83%BB%E3%83%8B%E3%82%AD%E3%83%93%E8%B7%A1%E6%94%B9%E5%96%84%EF%BD%9C%E3%83%86%E3%83%A9%E3%83%9C%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%BB%E3%83%9D%E3%83%86%E3%83%B3%E3%83%84%E3%82%A1%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0/@33.178952,130.449303,17z/data=!3m1!4b1!4m6!3m5!1s0x3541b2f37e3e81a7:0xcea260d6f977cd85!8m2!3d33.178952!4d130.449303!16s%2Fg%2F1tf3lptt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "福岡県柳川市三橋町吉開７４６−７",
+    "place": "福岡県柳川市三橋町吉開７４６−７",
+    "sheetNorm": "福岡県柳川市三橋町吉開746-7",
+    "placeNorm": "福岡県柳川市三橋町吉開746-7",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "エステルームかれん/たるみ・小顔・ニキビ跡改善｜テラボーラー・ポテンツァ・ハーブピーリング",
+    "address": "福岡県柳川市三橋町吉開７４６−７",
+    "category": "エステティック サロン",
+    "lat": 33.178952,
+    "lng": 130.449303,
+    "gbpUrl": "https://maps.google.com/?cid=14889569794464927109",
+    "phone": "0944-74-5389",
+    "website": "https://www.esthe-karen.jp/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "定休日",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "いつもありがとうございます☺️ お肌を劇的に生まれ変わらせる、 特別なイベントのお知らせです✨ ＼先着10名様限定！／ 🎉 1ヶ月集中・ 美肌育成チャレンジコンテスト 🎉 お家で週2回、1ヶ月間（計8回）の 贅沢パックを行い、 1ヶ月でお肌がどれだけ綺麗に変わるかを、 楽しみながらチャレンジする企画です🥰 今回は、皆さま一緒にスタートできるように 10/6から一斉スタートします💕 📅 開催スケジュール 💌 参加受付：9/26〜10/2 先着10名様限定！　 🏠 パックのお受け取り： 参加確定後〜10/5まで サロンにご来店いただき、受付＆パックのお渡しをします✨ 🎉 10/6 コンテストSTART！ ここから1ヶ月間、週2回（計8回）お家で炭酸パック✨ 🏆 11/5頃 結果発表！ そしてなんと… 🎁 参加者全員に 総額1万円以上の超豪華2大特典をプレゼント！ 🔥🔥 全員もらえる2大特典 🔥🔥 ① スパークラッシュセラム現品（5,500円相当） 👉 パチパチ弾けるボディ＆頭皮用炭酸スプレー！ 全身の疲れをスッキリ引き締め✨ ② 生水素水ハイドロ毛穴洗浄（4,950円相当） 👉 出来たての水素水で洗う贅沢サロンケア！ 毛穴の汚れをスッキリ洗浄し、透明感を引き出します✨ そして今回使用するのは…💎 【MARROW（マロウ）】 1回でハリ・透明感を実感でき"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:06:24.540Z",
+  "seconds": 5.5
+}

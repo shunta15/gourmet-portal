@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 62,
+  "sheet": {
+    "name": "BABE HAIR【ベイブヘアー】",
+    "address": "福岡県福岡市城南区西片江１丁目１―４６",
+    "url": "https://share.google/uBleBVUuIpUU2lYQK",
+    "type": "理・美容院",
+    "d1": "理容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=da19ebeccc14b1b9&kgmid=/g/1tlqms3k&q=%E3%83%99%E3%82%A4%E3%83%96%E3%83%98%E3%82%A2%E3%83%BC&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=8ca6a1996edf7ad4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tlqms3k",
+  "queries": [
+    "ベイブヘアー"
+  ],
+  "candidates": [
+    {
+      "name": "ベイブヘアー",
+      "address": "福岡県福岡市城南区西片江１丁目１−４６",
+      "url": "https://www.google.com/maps/place/%E3%83%99%E3%82%A4%E3%83%96%E3%83%98%E3%82%A2%E3%83%BC/@33.545723,130.367486,17z/data=!3m1!4b1!4m6!3m5!1s0x354194725f9be24f:0x36721849e28aa1b!8m2!3d33.545723!4d130.367486!16s%2Fg%2F1tlqms3k",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%99%E3%82%A4%E3%83%96%E3%83%98%E3%82%A2%E3%83%BC/@33.545723,130.367486,17z/data=!3m1!4b1!4m6!3m5!1s0x354194725f9be24f:0x36721849e28aa1b!8m2!3d33.545723!4d130.367486!16s%2Fg%2F1tlqms3k?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "福岡県福岡市城南区西片江１丁目１―４６",
+    "place": "福岡県福岡市城南区西片江１丁目１−４６",
+    "sheetNorm": "福岡県福岡市城南区西片江1-1-46",
+    "placeNorm": "福岡県福岡市城南区西片江1-1-46",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ベイブヘアー",
+    "address": "福岡県福岡市城南区西片江１丁目１−４６",
+    "category": "理容店",
+    "lat": 33.545723,
+    "lng": 130.367486,
+    "gbpUrl": "https://maps.google.com/?cid=245201558187846171",
+    "phone": "092-518-4657",
+    "website": "https://beauty.hotpepper.jp/slnH000683665/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:16:36.066Z",
+  "seconds": 5.8
+}

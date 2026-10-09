@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 89,
+  "sheet": {
+    "name": "アルエ骨盤整体サロン",
+    "address": "山梨県富士吉田市下吉田２丁目２７－１５",
+    "url": "https://share.google/9525x14YQxVGnVMB9",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3aa3359d46e30aa6&sxsrf=AE3TifNxq8-McGvh2AutLoJ-5cT24oRufA:1761009360067&kgmid=/g/11r2rpy4bt&q=%E3%82%A2%E3%83%AB%E3%82%A8%E9%AA%A8%E7%9B%A4%E6%95%B4%E4%BD%93%E3%82%B5%E3%83%AD%E3%83%B3&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=c31e401680288820&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11r2rpy4bt",
+  "queries": [
+    "アルエ骨盤整体サロン"
+  ],
+  "candidates": [
+    {
+      "name": "アルエ骨盤整体サロン",
+      "address": "山梨県富士吉田市下吉田２丁目２７−１５",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AB%E3%82%A8%E9%AA%A8%E7%9B%A4%E6%95%B4%E4%BD%93%E3%82%B5%E3%83%AD%E3%83%B3/@35.4892705,138.8076671,17z/data=!3m1!4b1!4m6!3m5!1s0x6019674a0d36ee37:0xc7a3a78c1a5e0ec!8m2!3d35.4892705!4d138.8076671!16s%2Fg%2F11r2rpy4bt",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%AB%E3%82%A8%E9%AA%A8%E7%9B%A4%E6%95%B4%E4%BD%93%E3%82%B5%E3%83%AD%E3%83%B3/@35.4892705,138.8076671,17z/data=!3m1!4b1!4m6!3m5!1s0x6019674a0d36ee37:0xc7a3a78c1a5e0ec!8m2!3d35.4892705!4d138.8076671!16s%2Fg%2F11r2rpy4bt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "山梨県富士吉田市下吉田２丁目２７－１５",
+    "place": "山梨県富士吉田市下吉田２丁目２７−１５",
+    "sheetNorm": "山梨県富士吉田市下吉田2-27-15",
+    "placeNorm": "山梨県富士吉田市下吉田2-27-15",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "アルエ骨盤整体サロン",
+    "address": "山梨県富士吉田市下吉田２丁目２７−１５",
+    "category": "整体",
+    "lat": 35.4892705,
+    "lng": 138.8076671,
+    "gbpUrl": "https://maps.google.com/?cid=899095365933195500",
+    "phone": "0555-75-2041",
+    "website": "https://arue-seikotsuin619.com/",
+    "hours": {
+      "月": "09:00–12:30, 15:00–20:30",
+      "火": "09:00–12:30, 15:00–20:30",
+      "水": "09:00–12:30, 15:00–20:30",
+      "木": "09:00–12:30, 15:00–20:30",
+      "金": "09:00–12:30, 15:00–20:30",
+      "土": "09:00–14:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:46:18.961Z",
+  "seconds": 6.1
+}

@@ -1,0 +1,72 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 58,
+  "sheet": {
+    "name": "東新宿ソフィア整骨院",
+    "address": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+    "url": "https://www.google.com/maps?cid=17812756798521967357",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "東新宿ソフィア整骨院",
+      "address": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+      "url": "https://www.google.com/maps/place/%E6%9D%B1%E6%96%B0%E5%AE%BF%E3%82%BD%E3%83%95%E3%82%A3%E3%82%A2%E6%95%B4%E9%AA%A8%E9%99%A2/@35.6999151,139.7076117,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188d48d06652fd:0xf7339feea65382fd!8m2!3d35.6999151!4d139.7076117!16s%2Fg%2F11t3fpz792",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%9D%B1%E6%96%B0%E5%AE%BF%E3%82%BD%E3%83%95%E3%82%A3%E3%82%A2%E6%95%B4%E9%AA%A8%E9%99%A2/@35.6999151,139.7076117,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60188d48d06652fd:0xf7339feea65382fd!8m2!3d35.6999151!4d139.7076117!16s%2Fg%2F11t3fpz792?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+    "place": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+    "sheetNorm": "東京都新宿区大久保1-3-22ヴァンヴェール新宿105",
+    "placeNorm": "東京都新宿区大久保1-3-22ヴァンヴェール新宿105",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "東新宿ソフィア整骨院",
+    "address": "東京都新宿区大久保１丁目３−２２ ヴァンヴェール新宿 105",
+    "category": "接骨院",
+    "lat": 35.6999151,
+    "lng": 139.7076117,
+    "gbpUrl": "https://maps.google.com/?cid=17812756798521967357",
+    "phone": "03-6457-6684",
+    "website": "https://karadarefre.jp/facility/57134673/",
+    "hours": {
+      "月": "10:00–15:00, 16:00–20:00",
+      "火": "10:00–15:00, 16:00–20:00",
+      "水": "定休日",
+      "木": "10:00–15:00, 16:00–20:00",
+      "金": "10:00–15:00, 16:00–20:00",
+      "土": "10:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://karadarefre.jp/reserve/_index/f:57134673?site_code=gbp"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:00:55.353Z",
+  "seconds": 5.6
+}

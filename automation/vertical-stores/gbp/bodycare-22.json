@@ -1,0 +1,62 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 22,
+  "sheet": {
+    "name": "みさお接骨院",
+    "address": "神奈川県茅ヶ崎市矢畑３９６－１",
+    "url": "https://share.google/K2kTTUMqFn9TbZwrw",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fd8ebd7ef327be3d&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifPj0ik0FBmKSUMjKC7fX2nwGC7hRw:1758259861411&kgmid=/g/1tkq_6wp&q=%E3%81%BF%E3%81%95%E3%81%8A%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4d6a390535ad2017&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tkq_6wp",
+  "queries": [
+    "みさお接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "みさお接骨院",
+      "address": "神奈川県茅ヶ崎市矢畑３９６−１",
+      "url": "https://www.google.com/maps/place/%E3%81%BF%E3%81%95%E3%81%8A%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3365375,139.3931093,17z/data=!3m1!4b1!4m6!3m5!1s0x601852ec52f3231f:0x2a049dfe9b3376e2!8m2!3d35.3365375!4d139.3931093!16s%2Fg%2F1tkq_6wp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%BF%E3%81%95%E3%81%8A%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.3365375,139.3931093,17z/data=!3m1!4b1!4m6!3m5!1s0x601852ec52f3231f:0x2a049dfe9b3376e2!8m2!3d35.3365375!4d139.3931093!16s%2Fg%2F1tkq_6wp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県茅ヶ崎市矢畑３９６－１",
+    "place": "神奈川県茅ヶ崎市矢畑３９６−１",
+    "sheetNorm": "神奈川県茅ケ崎市矢畑396-1",
+    "placeNorm": "神奈川県茅ケ崎市矢畑396-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "みさお接骨院",
+    "address": "神奈川県茅ヶ崎市矢畑３９６−１",
+    "category": "接骨院",
+    "lat": 35.3365375,
+    "lng": 139.3931093,
+    "gbpUrl": "https://maps.google.com/?cid=3027718566350911202",
+    "phone": "0467-40-5465",
+    "website": "http://misao.shonan-1.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:33:33.222Z",
+  "seconds": 10.4,
+  "hoursRetried": false
+}

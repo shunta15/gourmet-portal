@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 49,
+  "sheet": {
+    "name": "メンズサロンLead",
+    "address": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=bb4d93514f3ace56&hl=ja&sxsrf=AE3TifO7ro5sQLCM02VFXjnFQSWviC3puQ:1759891838008&kgmid=/g/11rvf_k0rs&q=%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B5%E3%83%AD%E3%83%B3Lead&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=cf7090d8cadc785a&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11rvf_k0rs",
+  "queries": [
+    "メンズサロンLead 石川県金沢市畝田東３丁目５０ B 棟105 D-BOX"
+  ],
+  "candidates": [
+    {
+      "name": "メンズサロンLead",
+      "address": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+      "url": "https://www.google.com/maps/place/%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B5%E3%83%AD%E3%83%B3Lead/@36.596562,136.6144607,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff9cd12ebcb59a7:0xe43f91118b977b5a!8m2!3d36.596562!4d136.6144607!16s%2Fg%2F11rvf_k0rs",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B5%E3%83%AD%E3%83%B3Lead/@36.596562,136.6144607,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff9cd12ebcb59a7:0xe43f91118b977b5a!8m2!3d36.596562!4d136.6144607!16s%2Fg%2F11rvf_k0rs?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+    "place": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+    "sheetNorm": "石川県金沢市畝田東3-50B棟105D-BOX",
+    "placeNorm": "石川県金沢市畝田東3-50B棟105D-BOX",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "メンズサロンLead",
+    "address": "石川県金沢市畝田東３丁目５０ B 棟105 D-BOX",
+    "category": "脱毛サービス",
+    "lat": 36.596562,
+    "lng": 136.6144607,
+    "gbpUrl": "https://maps.google.com/?cid=16447023868722772826",
+    "phone": "080-6386-0084",
+    "website": "https://leadmensbeauty.com/",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "定休日",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://lit.link/leadmensbeauty"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "メンズサロンLead 上手い、早い、リーズナブルの3つ◯ 似合わせ眉Wax & HBL 自己処理では限界がありますが、 当店にお任せ頂ければ最高の眉毛に仕上げます。 効果抜群のメンズ脱毛と合わせれば、 一気に垢抜け清潔感漂うこと間違いなし！ 金沢でお店に迷ったら当店にお越しください。\n2026/09/29\n"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:13:22.001Z",
+  "seconds": 5.5
+}

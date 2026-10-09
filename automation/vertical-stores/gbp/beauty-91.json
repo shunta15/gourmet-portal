@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 91,
+  "sheet": {
+    "name": "プラスはあと",
+    "address": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+    "url": "https://share.google/XLXRFpLzRTIn1aoAM",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4acce884baa46368&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11h4zq9_cr&q=%E3%83%97%E3%83%A9%E3%82%B9%E3%81%AF%E3%81%82%E3%81%A8&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=c68b74b3373f9c52&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11h4zq9_cr",
+  "queries": [
+    "プラスはあと"
+  ],
+  "candidates": [
+    {
+      "name": "プラスはあと",
+      "address": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+      "url": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%82%B9%E3%81%AF%E3%81%82%E3%81%A8/@35.2252588,136.8573518,17z/data=!3m1!4b1!4m6!3m5!1s0x600375d1a4cdd42d:0x851ad53844e9f8dc!8m2!3d35.2252588!4d136.8573518!16s%2Fg%2F11h4zq9_cr",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%82%B9%E3%81%AF%E3%81%82%E3%81%A8/@35.2252588,136.8573518,17z/data=!3m1!4b1!4m6!3m5!1s0x600375d1a4cdd42d:0x851ad53844e9f8dc!8m2!3d35.2252588!4d136.8573518!16s%2Fg%2F11h4zq9_cr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+    "place": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+    "sheetNorm": "愛知県名古屋市西区中沼町235平田店舗3",
+    "placeNorm": "愛知県名古屋市西区中沼町235平田店舗3",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "プラスはあと",
+    "address": "愛知県名古屋市西区中沼町２３５ 平田店舗 3号",
+    "category": "美容院",
+    "lat": 35.2252588,
+    "lng": 136.8573518,
+    "gbpUrl": "https://maps.google.com/?cid=9591212794089961692",
+    "phone": "052-503-4793",
+    "website": "https://www.plusheart2024.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:22:40.371Z",
+  "seconds": 6.6
+}

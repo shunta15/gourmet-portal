@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 160,
+  "sheet": {
+    "name": "ボディケアサロンBocce",
+    "address": "福岡県直方市下境２５８５−５",
+    "url": "https://www.google.com/search?q=%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce&sca_esv=2286498253ea9ec4&rlz=1C1VDKB_jaJP1185JP1186&sxsrf=AE3TifPaikhNZYIP84k75g5VHWuHnmI6Mg%3A1762928609697&ei=4ScUaeWlKsm3vr0P--qU6Qw&ved=0ahUKEwilmq7s_OuQAxXJm68BHXs1Jc0Q4dUDCBE&uact=5&oq=%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce&gs_lp=Egxnd3Mtd2l6LXNlcnAiHeODnOODh-OCo-OCseOCouOCteODreODs0JvY2NlSKoFUABYAHAAeACQAQCYAXCgAXCqAQMwLjG4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBzOyBwC4BwDCBwDIBwA&sclient=gws-wiz-serp",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "ボディケアサロンBocce 福岡県直方市下境２５８５−５"
+  ],
+  "candidates": [
+    {
+      "name": "ボディケアサロンBocce",
+      "address": "福岡県直方市下境２５８５−５",
+      "url": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce/@33.7393399,130.7397754,17z/data=!3m1!4b1!4m6!3m5!1s0x3543d14d644ee4cd:0x710ef02e37082ee9!8m2!3d33.7393399!4d130.7397754!16s%2Fg%2F11rc4cbbt6",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A2%E3%82%B5%E3%83%AD%E3%83%B3Bocce/@33.7393399,130.7397754,17z/data=!3m1!4b1!4m6!3m5!1s0x3543d14d644ee4cd:0x710ef02e37082ee9!8m2!3d33.7393399!4d130.7397754!16s%2Fg%2F11rc4cbbt6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県直方市下境２５８５−５",
+    "place": "福岡県直方市下境２５８５−５",
+    "sheetNorm": "福岡県直方市下境2585-5",
+    "placeNorm": "福岡県直方市下境2585-5",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ボディケアサロンBocce",
+    "address": "福岡県直方市下境２５８５−５",
+    "category": "整体",
+    "lat": 33.7393399,
+    "lng": 130.7397754,
+    "gbpUrl": "https://maps.google.com/?cid=8146712857242250985",
+    "phone": "0949-24-5920",
+    "website": "https://www.bodycaresalon-bocce.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "13:00–21:00",
+      "水": "13:00–21:00",
+      "木": "13:00–21:00",
+      "金": "13:00–21:00",
+      "土": "10:00–16:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:59:15.366Z",
+  "seconds": 5.4
+}

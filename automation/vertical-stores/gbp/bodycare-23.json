@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 23,
+  "sheet": {
+    "name": "もみらく整体院",
+    "address": "東京都板橋区赤塚２丁目９−６",
+    "url": "https://share.google/hTbyZcPs8Djmzri5L",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=7cdb92668fd479c3&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPgdQzhvTCdPjxnhdd9uNvraIKl6g:1758339892881&kgmid=/g/1xgrmz9t&q=%E3%82%82%E3%81%BF%E3%82%89%E3%81%8F%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=2974845bef8dfe48&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1xgrmz9t",
+  "queries": [
+    "もみらく整体院"
+  ],
+  "candidates": [
+    {
+      "name": "もみらく整体院",
+      "address": "東京都板橋区赤塚２丁目９−６",
+      "url": "https://www.google.com/maps/place/%E3%82%82%E3%81%BF%E3%82%89%E3%81%8F%E6%95%B4%E4%BD%93%E9%99%A2/@35.7721766,139.644414,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ec646232e45d:0x362a43fcbf184dcf!8m2!3d35.7721766!4d139.644414!16s%2Fg%2F1xgrmz9t",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%82%E3%81%BF%E3%82%89%E3%81%8F%E6%95%B4%E4%BD%93%E9%99%A2/@35.7721766,139.644414,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ec646232e45d:0x362a43fcbf184dcf!8m2!3d35.7721766!4d139.644414!16s%2Fg%2F1xgrmz9t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都板橋区赤塚２丁目９−６",
+    "place": "東京都板橋区赤塚２丁目９−６",
+    "sheetNorm": "東京都板橋区赤塚2-9-6",
+    "placeNorm": "東京都板橋区赤塚2-9-6",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "もみらく整体院",
+    "address": "東京都板橋区赤塚２丁目９−６",
+    "category": "整体",
+    "lat": 35.7721766,
+    "lng": 139.644414,
+    "gbpUrl": "https://maps.google.com/?cid=3903006779886816719",
+    "phone": "03-5968-3771",
+    "website": "http://momiraku-seitai.com/",
+    "hours": {
+      "月": "08:00–21:00",
+      "火": "08:00–21:00",
+      "水": "10:00–21:00",
+      "木": "定休日",
+      "金": "08:00–21:00",
+      "土": "08:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「しょうれんいたＰａｙまつり」 10月1日～10月31日まで 「いたＰａｙ」でお支払い頂くと、 5％ポイント還元があります。 この機会に是非ご来院ください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:33:43.965Z",
+  "seconds": 6
+}

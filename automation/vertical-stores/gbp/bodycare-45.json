@@ -1,0 +1,100 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 45,
+  "sheet": {
+    "name": "伏見パーソナルジム　SHION",
+    "address": "愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+    "url": "https://www.google.com/search?q=伏見パーソナルジム　SHION愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "伏見パーソナルジム　SHION 愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+    "伏見パーソナルジム　SHION 愛知県名古屋市"
+  ],
+  "candidates": [
+    {
+      "name": "パーソナルジムPREMIUM",
+      "address": "愛知県名古屋市東区葵３丁目３−８ SLX葵 201",
+      "url": "https://www.google.com/maps/place/%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%B8%E3%83%A0PREMIUM/data=!4m7!3m6!1s0x600371fbb790e565:0xc73f5b92c445d81d!8m2!3d35.17315!4d136.928955!16s%2Fg%2F11wv3mp375!19sChIJZeWQt_txA2ARHdhFxJJbP8c",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:愛知県名古屋市中区栄 / マップ:愛知県名古屋市東区葵）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "スポーツクラブ メガロステラッセ納屋橋",
+      "address": "愛知県名古屋市中区栄１丁目２−４９ テラッセ納屋橋A棟３F A３０１",
+      "url": "https://www.google.com/maps/place/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%AF%E3%83%A9%E3%83%96+%E3%83%A1%E3%82%AC%E3%83%AD%E3%82%B9%E3%83%86%E3%83%A9%E3%83%83%E3%82%BB%E7%B4%8D%E5%B1%8B%E6%A9%8B/data=!4m7!3m6!1s0x60037727e1c8d00d:0x37d40cca2829baf0!8m2!3d35.166935!4d136.892483!16s%2Fg%2F11gbq6403b!19sChIJDdDI4Sd3A2AR8LopKMoM1Dc",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:1-23-23 / マップ:1-2-49）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "SHION GYM",
+      "address": "愛知県名古屋市中区栄１丁目２４−４０ ｻﾝ•ｻｶｴﾋﾞﾙ 301",
+      "url": "https://www.google.com/maps/place/SHION+GYM/data=!4m7!3m6!1s0x6003770fbe2d5e0f:0x9c30bc91056434e!8m2!3d35.1638374!4d136.8970169!16s%2Fg%2F11zfjnt_1r!19sChIJD14tvg93A2ARTkNWEMkLwwk",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:1-23-23 / マップ:1-24-40）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "CACHIE 名古屋栄伏見店",
+      "address": "愛知県名古屋市中区栄２丁目１−２１ 6F",
+      "url": "https://www.google.com/maps/place/CACHIE+%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%A0%84%E4%BC%8F%E8%A6%8B%E5%BA%97/data=!4m7!3m6!1s0x600377afe4707795:0x3c16cf91343f9c63!8m2!3d35.1673462!4d136.8986042!16s%2Fg%2F11y4_wgpxz!19sChIJlXdw5K93A2ARY5w_NJHPFjw",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:1-23-23 / マップ:2-1-21）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "伏見パーソナルジムSHION",
+      "address": "愛知県名古屋市中区栄１丁目２３−２３ メゾン白川 1F東側",
+      "url": "https://www.google.com/maps/place/%E4%BC%8F%E8%A6%8B%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%B8%E3%83%A0SHION/@35.1640494,136.8972793,17z/data=!3m1!4b1!4m6!3m5!1s0x600371891b86e7a7:0xc78bb83cf671b1!8m2!3d35.1640494!4d136.8972793!16s%2Fg%2F11q3mwbwql",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E4%BC%8F%E8%A6%8B%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%B8%E3%83%A0SHION/@35.1640494,136.8972793,17z/data=!3m1!4b1!4m6!3m5!1s0x600371891b86e7a7:0xc78bb83cf671b1!8m2!3d35.1640494!4d136.8972793!16s%2Fg%2F11q3mwbwql?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "閉業の表示あり",
+  "verdictReason": "住所は一致（町名・番地とも一致）だが、画面に「閉業」の表示",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市中区栄１-23-23　メゾン白川1F東側",
+    "place": "愛知県名古屋市中区栄１丁目２３−２３ メゾン白川 1F東側",
+    "sheetNorm": "愛知県名古屋市中区栄1-23-23メゾン白川1F東側",
+    "placeNorm": "愛知県名古屋市中区栄1-23-23メゾン白川1F東側",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "伏見パーソナルジムSHION",
+    "address": "愛知県名古屋市中区栄１丁目２３−２３ メゾン白川 1F東側",
+    "category": null,
+    "lat": 35.1640494,
+    "lng": 136.8972793,
+    "gbpUrl": "https://maps.google.com/?cid=56167143778447793",
+    "phone": "080-8470-6966",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [
+      "閉業"
+    ],
+    "closedSignal": true,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:38:13.802Z",
+  "seconds": 32.7
+}

@@ -1,0 +1,105 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 38,
+  "sheet": {
+    "name": "げんき接骨院",
+    "address": "京都府亀岡市篠町馬堀駅前１丁目３－３ マナ・コート",
+    "url": "https://share.google/wpuJqEBYjMtFZoced",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=426a8004247428d8&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifPNkGktInl-5y93_f6E4lKifpuBqg:1759206026099&kgmid=/g/11c1l5ryyz&q=%E3%81%92%E3%82%93%E3%81%8D%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=8565d9941db95a78&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c1l5ryyz",
+  "queries": [
+    "げんき接骨院",
+    "げんき接骨院 京都府亀岡市篠町馬堀駅前１丁目３－３ マナ・コート",
+    "げんき接骨院 京都府亀岡市"
+  ],
+  "candidates": [
+    {
+      "name": "かどの Genki鍼灸整骨院",
+      "address": "京都府京都市右京区梅津南広町９３",
+      "url": "https://www.google.com/maps/place/%E3%81%8B%E3%81%A9%E3%81%AE+Genki%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60010716da41c397:0x2525d2692a5273f7!8m2!3d35.0002015!4d135.7139588!16s%2Fg%2F11_sdhb43!19sChIJl8NB2hYHAWAR93NSKmnSJSU",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市右京区梅津南広町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "烏丸 Genki整骨院",
+      "address": "京都府京都市中京区古西町４３６ 興和セントラルビル 1F",
+      "url": "https://www.google.com/maps/place/%E7%83%8F%E4%B8%B8+Genki%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6001088324480a37:0xbce9d6f4d18d6e4d!8m2!3d35.005765!4d135.754842!16s%2Fg%2F1td04yy4!19sChIJNwpIJIMIAWARTW6N0fTW6bw",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市中京区古西町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "丸太町 Genki鍼灸整骨院",
+      "address": "京都府京都市上京区丸太町通堀川西入西丸太町１７１ 中西ビル 1F",
+      "url": "https://www.google.com/maps/place/%E4%B8%B8%E5%A4%AA%E7%94%BA+Genki%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6001074ce9442e7b:0xcffae862e26a8e27!8m2!3d35.0175224!4d135.751497!16s%2Fg%2F11h0kgr6w0!19sChIJey5E6UwHAWARJ45q4mLo-s8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市上京区丸太町通堀川西入西丸太町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "Genki REHA",
+      "address": "京都府京都市右京区西京極徳大寺団子田町６４ 京都アクアリーナ 1F",
+      "url": "https://www.google.com/maps/place/Genki+REHA/data=!4m7!3m6!1s0x600106563886a08d:0x33871041d36ea587!8m2!3d34.9894354!4d135.7156816!16s%2Fg%2F11bx1s2c5j!19sChIJjaCGOFYGAWARh6Vu00EQhzM",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市右京区西京極徳大寺団子田町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "かどの Genki鍼灸整骨院",
+      "address": "京都府京都市右京区梅津南広町９３",
+      "url": "https://www.google.com/maps/place/%E3%81%8B%E3%81%A9%E3%81%AE+Genki%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60010716da41c397:0x2525d2692a5273f7!8m2!3d35.0002015!4d135.7139588!16s%2Fg%2F11_sdhb43!19sChIJl8NB2hYHAWAR93NSKmnSJSU",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市右京区梅津南広町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "KENT鍼灸整骨院|整體院",
+      "address": "京都府亀岡市篠町篠下北裏３６−１１",
+      "url": "https://www.google.com/maps/place/KENT%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2%7C%E6%95%B4%E9%AB%94%E9%99%A2/data=!4m7!3m6!1s0x600054dc1b151a3b:0x4254a9bbdffb9173!8m2!3d35.0077234!4d135.6038383!16s%2Fg%2F11g8g096tb!19sChIJOxoVG9xUAGARc5H737upVEI",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府亀岡市篠町篠下北裏）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "丸太町 Genki鍼灸整骨院",
+      "address": "京都府京都市上京区丸太町通堀川西入西丸太町１７１ 中西ビル 1F",
+      "url": "https://www.google.com/maps/place/%E4%B8%B8%E5%A4%AA%E7%94%BA+Genki%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6001074ce9442e7b:0xcffae862e26a8e27!8m2!3d35.0175224!4d135.751497!16s%2Fg%2F11h0kgr6w0!19sChIJey5E6UwHAWARJ45q4mLo-s8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府京都市上京区丸太町通堀川西入西丸太町）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "ちよかわ接骨院",
+      "address": "京都府亀岡市千代川町今津１丁目１１−１０ レジェンド千代川 1-B",
+      "url": "https://www.google.com/maps/place/%E3%81%A1%E3%82%88%E3%81%8B%E3%82%8F%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x600053b914c1836d:0xf3fe2f95185d02e2!8m2!3d35.0486938!4d135.547513!16s%2Fg%2F11bwqbn0nn!19sChIJbYPBFLlTAGAR4gJdGJUv_vM",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:京都府亀岡市篠町馬堀駅前 / マップ:京都府亀岡市千代川町今津）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    }
+  ],
+  "finalUrl": null,
+  "verdict": "見つからない",
+  "verdictReason": "住所が合う店が見つからなかった（候補8件を確認: かどの Genki鍼灸整骨院／京都府京都市右京区梅津南広町９３ | 烏丸 Genki整骨院／京都府京都市中京区古西町４３６ 興和セントラルビル 1F | 丸太町 Genki鍼灸整骨院／京都府京都市上京区丸太町通堀川西入西丸太町１７１ 中西ビル 1F | Genki REHA／京都府京都市右京区西京極徳大寺団子田町６４ 京都アクアリーナ 1F | かどの Genki鍼灸整骨院／京都府京都市右京区梅津南広町９３ | KENT鍼灸整骨院|整體院／京都府亀岡市篠町篠下北裏３６−１１ | 丸太町 Genki鍼灸整骨院／京都府京都市上京区丸太町通堀川西入西丸太町１７１ 中西ビル 1F | ちよかわ接骨院／京都府亀岡市千代川町今津１丁目１１−１０ レジェンド千代川 1-B）",
+  "addressCompare": null,
+  "nameRelation": null,
+  "place": null,
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:36:38.012Z",
+  "seconds": 45.5
+}

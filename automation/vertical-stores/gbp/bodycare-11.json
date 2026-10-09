@@ -1,0 +1,72 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 11,
+  "sheet": {
+    "name": "ふたば治療院 鍼灸・整体",
+    "address": "愛知県 弥富市鍋田町 稲山393番地84",
+    "url": "https://maps.app.goo.gl/bZz7X6k2eZWqbJoC6",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E3%81%B5%E3%81%9F%E3%81%B0%E6%B2%BB%E7%99%82%E9%99%A2+%E9%8D%BC%E7%81%B8%E3%83%BB%E6%95%B4%E4%BD%93/@35.0516365,136.7612511,20.76z/data=!4m6!3m5!1s0x6003836955fa4cf3:0x1ebe30c35ffa4f16!8m2!3d35.0517829!4d136.7613689!16s%2Fg%2F11jmc2v50h?entry=tts&g_ep=EgoyMDI1MDkwOS4wIPu8ASoASAFQAw%3D%3D&skid=99542090-773a-4ccd-bcda-feea989c2d9d",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "ふたば治療院 鍼灸・整体",
+      "address": "愛知県弥富市鍋田町稲山３９３−８４",
+      "url": "https://www.google.com/maps/place/%E3%81%B5%E3%81%9F%E3%81%B0%E6%B2%BB%E7%99%82%E9%99%A2+%E9%8D%BC%E7%81%B8%E3%83%BB%E6%95%B4%E4%BD%93/@35.0516365,136.7612511,20.76z/data=!4m6!3m5!1s0x6003836955fa4cf3:0x1ebe30c35ffa4f16!8m2!3d35.0517829!4d136.7613689!16s%2Fg%2F11jmc2v50h",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%B5%E3%81%9F%E3%81%B0%E6%B2%BB%E7%99%82%E9%99%A2+%E9%8D%BC%E7%81%B8%E3%83%BB%E6%95%B4%E4%BD%93/@35.0516365,136.7612511,20.76z/data=!4m6!3m5!1s0x6003836955fa4cf3:0x1ebe30c35ffa4f16!8m2!3d35.0517829!4d136.7613689!16s%2Fg%2F11jmc2v50h?entry=tts&g_ep=EgoyMDI1MDkwOS4wIPu8ASoASAFQAw%3D%3D&skid=99542090-773a-4ccd-bcda-feea989c2d9d",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県 弥富市鍋田町 稲山393番地84",
+    "place": "愛知県弥富市鍋田町稲山３９３−８４",
+    "sheetNorm": "愛知県弥富市鍋田町稲山393-84",
+    "placeNorm": "愛知県弥富市鍋田町稲山393-84",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ふたば治療院 鍼灸・整体",
+    "address": "愛知県弥富市鍋田町稲山３９３−８４",
+    "category": "鍼灸院",
+    "lat": 35.0517829,
+    "lng": 136.7613689,
+    "gbpUrl": "https://maps.google.com/?cid=2215261682399858454",
+    "phone": "090-5457-2735",
+    "website": "https://futaba-chiryouin.com/",
+    "hours": {
+      "月": "08:00–23:00",
+      "火": "19:00–23:00",
+      "水": "12:00–14:00, 19:00–23:00",
+      "木": "19:00–23:00",
+      "金": "12:00–14:00, 17:00–23:00",
+      "土": "08:00–23:00",
+      "日": "08:00–23:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://airrsv.net/futabachiryouin/calendar"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "秋も深まってまいりました。 当院では年間を通して、首こり・肩こり・腰痛でご来院される方が多く、全体の約8割を占めています。 先日も、首こり・肩こりの施術を希望されて来院された方がいらっしゃいました。 お話を伺うと、以前から変形性股関節症による股関節の痛みや動かしにくさもあり、こちらについては半ば諦めていらっしゃるとのことでした。 今回は首肩のケアを中心に施術を行いましたが、施術後には首肩だけでなく、股関節の痛みや動かしやすさにも変化を感じられたとのことで、大変喜んでいただきました。 このように、最初は「もう仕方がない」と諦めている症状でも、身体全体をみながら施術することで、何らかの変化を感じていただける場合があります。 「この症状はもう仕方がない」と諦めている方も、一度ご相談ください。 鍼灸には、まだまだ奥深い可能性があります。 当院には弥富市を中心に、桑名市や愛西市など近隣地域からも多くの方にご来院いただいております。 お体の不調でお困りの方は、お気軽にご相談ください。\n2026/09/24"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:31:23.475Z",
+  "seconds": 3.6
+}

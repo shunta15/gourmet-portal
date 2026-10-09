@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 112,
+  "sheet": {
+    "name": "黎明総合院",
+    "address": "北海道札幌市東区北３５条東１５丁目１－１７",
+    "url": "https://share.google/9KfiBc4vfR4k3N3hC",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3c78addd28f7a980&rlz=1C1TMBY_jaJP1161JP1169&biw=946&bih=918&sxsrf=AE3TifNrOXSZEUQm7CyCY4xEn8CljfMqFw:1761624515619&kgmid=/g/1tfcylym&q=%E9%BB%8E%E6%98%8E%E7%B7%8F%E5%90%88%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e69a8f86bfb48d72&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tfcylym",
+  "queries": [
+    "黎明総合院"
+  ],
+  "candidates": [
+    {
+      "name": "黎明総合院",
+      "address": "北海道札幌市東区北３５条東１５丁目１−１７ オーシャンビル",
+      "url": "https://www.google.com/maps/place/%E9%BB%8E%E6%98%8E%E7%B7%8F%E5%90%88%E9%99%A2/@43.1054779,141.3685676,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b2f2da0b566db:0x18ddd596525e29bd!8m2!3d43.1054779!4d141.3685676!16s%2Fg%2F1tfcylym",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%BB%8E%E6%98%8E%E7%B7%8F%E5%90%88%E9%99%A2/@43.1054779,141.3685676,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b2f2da0b566db:0x18ddd596525e29bd!8m2!3d43.1054779!4d141.3685676!16s%2Fg%2F1tfcylym?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道札幌市東区北３５条東１５丁目１－１７",
+    "place": "北海道札幌市東区北３５条東１５丁目１−１７ オーシャンビル",
+    "sheetNorm": "北海道札幌市東区北35条東15-1-17",
+    "placeNorm": "北海道札幌市東区北35条東15-1-17オーシャンビル",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "黎明総合院",
+    "address": "北海道札幌市東区北３５条東１５丁目１−１７ オーシャンビル",
+    "category": "鍼灸院",
+    "lat": 43.1054779,
+    "lng": 141.3685676,
+    "gbpUrl": "https://maps.google.com/?cid=1791823068367038909",
+    "phone": "011-704-7171",
+    "website": "http://www.reimeisougouin.sakura.ne.jp/",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:50:22.790Z",
+  "seconds": 6.4
+}

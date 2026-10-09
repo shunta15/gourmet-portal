@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 242,
+  "sheet": {
+    "name": "北海道セラピストアカデミー直営 整体&酸素BOXサロンSora Sera～ソラセラ～",
+    "address": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+    "url": "https://share.google/zo7T8pIqzkoMEIOiy",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=414ecf1566e10a89&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPUGRCXT3ZgHMHx6U5sZclkboeltA:1765266902126&kgmid=/g/11c2np8j0r&q=%E5%8C%97%E6%B5%B7%E9%81%93%E3%82%BB%E3%83%A9%E3%83%94%E3%82%B9%E3%83%88%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%83%BC%E7%9B%B4%E5%96%B6+%E6%95%B4%E4%BD%93%26%E9%85%B8%E7%B4%A0BOX%E3%82%B5%E3%83%AD%E3%83%B3Sora+Sera%EF%BD%9E%E3%82%BD%E3%83%A9%E3%82%BB%E3%83%A9%EF%BD%9E&shndl=30&shem=damc,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=651036ba213663c9&utm_source=damc,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c2np8j0r",
+  "queries": [
+    "北海道セラピストアカデミー直営 整体&酸素BOXサロンSora Sera～ソラセラ～"
+  ],
+  "candidates": [
+    {
+      "name": "ソラセラ",
+      "address": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+      "url": "https://www.google.com/maps/place/%E3%82%BD%E3%83%A9%E3%82%BB%E3%83%A9/@43.1904931,141.7580621,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b4bd29f3f9c6f:0x3b708f3bc1b8fd91!8m2!3d43.1904931!4d141.7580621!16s%2Fg%2F11c2np8j0r",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%BD%E3%83%A9%E3%82%BB%E3%83%A9/@43.1904931,141.7580621,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b4bd29f3f9c6f:0x3b708f3bc1b8fd91!8m2!3d43.1904931!4d141.7580621!16s%2Fg%2F11c2np8j0r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+    "place": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+    "sheetNorm": "北海道岩見沢市美園1条6-1-1フレクルール美園1F",
+    "placeNorm": "北海道岩見沢市美園1条6-1-1フレクルール美園1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ソラセラ",
+    "address": "北海道岩見沢市美園１条６丁目１−１ フレクルール美園 1F",
+    "category": "整体",
+    "lat": 43.1904931,
+    "lng": 141.7580621,
+    "gbpUrl": "https://maps.google.com/?cid=4283080732445310353",
+    "phone": "0126-35-5300",
+    "website": null,
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "09:00–17:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "13:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "シルバーウィーク9/20(日)～9/26(土) 特別営業時間のお知らせ 9/20(日)～9/23(水) →13:00～17:00日祝営業 9/24(木)→店休 9/25(金)→10:00～21:00通常営業 9/26(土)→店休 となります。 予約の埋まりが早いため、当日の受付枠が少ないことご了承ください。 ※岩見沢プレミアム商品券御利用可能です。\n2026/09/16"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:57:55.491Z",
+  "seconds": 5.6
+}

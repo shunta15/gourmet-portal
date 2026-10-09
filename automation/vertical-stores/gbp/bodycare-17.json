@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 17,
+  "sheet": {
+    "name": "ボディメンテナンスサロン BODY EVO",
+    "address": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3階",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=046dc2c9c0fa6748&hl=ja&sxsrf=AE3TifM4gOvAr5eS_RmchOAUSZckQbUpNA:1758160428269&kgmid=/g/11t9n7q_w2&q=%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3+BODY+EVO&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=73b75d474d565786&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11t9n7q_w2",
+  "queries": [
+    "ボディメンテナンスサロン BODY EVO 岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3階"
+  ],
+  "candidates": [
+    {
+      "name": "ボディメンテナンスサロンBODYEVO 盛岡バスセンター3F",
+      "address": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3F マッサージ",
+      "url": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3BODYEVO+%E7%9B%9B%E5%B2%A1%E3%83%90%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC3F/@39.6996429,141.1573459,17z/data=!3m1!4b1!4m6!3m5!1s0x5f85777e5ae0afd9:0x576070cbd38d971f!8m2!3d39.6996429!4d141.1573459!16s%2Fg%2F11t9n7q_w2",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%82%B5%E3%83%AD%E3%83%B3BODYEVO+%E7%9B%9B%E5%B2%A1%E3%83%90%E3%82%B9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC3F/@39.6996429,141.1573459,17z/data=!3m1!4b1!4m6!3m5!1s0x5f85777e5ae0afd9:0x576070cbd38d971f!8m2!3d39.6996429!4d141.1573459!16s%2Fg%2F11t9n7q_w2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3階",
+    "place": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3F マッサージ",
+    "sheetNorm": "岩手県盛岡市中ノ橋通1-9-22盛岡バスセンタ3階",
+    "placeNorm": "岩手県盛岡市中ノ橋通1-9-22盛岡バスセンタ3Fマッサージ",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ボディメンテナンスサロンBODYEVO 盛岡バスセンター3F",
+    "address": "岩手県盛岡市中ノ橋通１丁目９−２２ 盛岡バスセンタ 3F マッサージ",
+    "category": "指圧・マッサージ",
+    "lat": 39.6996429,
+    "lng": 141.1573459,
+    "gbpUrl": "https://maps.google.com/?cid=6296156299793897247",
+    "phone": "019-681-6779",
+    "website": "https://bodyevo2022.com/",
+    "hours": {
+      "月": "11:00–22:30",
+      "火": "11:00–22:30",
+      "水": "11:00–22:30",
+      "木": "11:00–22:30",
+      "金": "11:00–22:30",
+      "土": "11:00–22:30",
+      "日": "11:00–22:30"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://bodyevo2022.com/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🎉 おかげさまでBODYEVOは4周年！感謝を込めた3日間限定の特別イベント開催✨ いつもボディメンテナンスサロンBODYEVO盛岡店をご利用いただき、誠にありがとうございます😊 おかげさまでBODYEVOは4周年を迎えることができました！ 日頃からご来店いただいている皆さま、そして地域の皆さまに支えられ、こうして4周年を迎えられることをスタッフ一同、心より感謝しております。 そこで今回は、日頃の感謝の気持ちを込めて、**10月10日（土）〜12日（月）の3日間限定で4周年記念イベントを開催します！**🎊 🎁 4周年記念！3つの特別特典 ①【ポイント3倍！】 イベント期間中の3日間は、なんとポイントが通常の3倍に！ いつもご利用いただいている方はもちろん、久しぶりに身体のメンテナンスをしたい方にもおすすめです。 ②【スパ500円券プレゼント♨️】 館内のスパも一緒に楽しめる500円券をプレゼント！ 日頃の疲れを癒やしながら、お風呂とマッサージでゆったりとした時間をお過ごしください。 ③【特別クーポン配布！】 10月4日（日）〜12日（月）の期間中、ドライヘッドケアまたはフェイシャルのサービス券を配布します✨ この機会に、普段とは違ったメニューもぜひお楽しみください！ 🍁 秋の疲れはBODYEVOでリフレッシュ！ 10月に入り、朝晩は肌寒くなってきましたね。 季節の変わり目"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:32:29.613Z",
+  "seconds": 8.4
+}

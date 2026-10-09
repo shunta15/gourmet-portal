@@ -1,0 +1,63 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 54,
+  "sheet": {
+    "name": "Bijou",
+    "address": "長野県長野市篠ノ井布施五明４２５−２ 105",
+    "url": "https://share.google/Ux7JUvnuUSNYOyJFy",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fa0d648ec49d7a9f&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/12hq0g10r&q=Bijou&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=24249ad9ce4aa724&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/12hq0g10r",
+  "queries": [
+    "Bijou",
+    "Bijou 長野県長野市篠ノ井布施五明４２５−２ 105"
+  ],
+  "candidates": [
+    {
+      "name": "Bijou",
+      "address": "長野県長野市篠ノ井布施五明４２５−２ 105",
+      "url": "https://www.google.com/maps/place/Bijou/@36.575847,138.131497,17z/data=!3m1!4b1!4m6!3m5!1s0x601d825354cd1f69:0xafcb6fff3cbeca59!8m2!3d36.575847!4d138.131497!16s%2Fg%2F12hq0g10r",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Bijou/@36.575847,138.131497,17z/data=!3m1!4b1!4m6!3m5!1s0x601d825354cd1f69:0xafcb6fff3cbeca59!8m2!3d36.575847!4d138.131497!16s%2Fg%2F12hq0g10r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "長野県長野市篠ノ井布施五明４２５−２ 105",
+    "place": "長野県長野市篠ノ井布施五明４２５−２ 105",
+    "sheetNorm": "長野県長野市篠ノ井布施五明425-2105",
+    "placeNorm": "長野県長野市篠ノ井布施五明425-2105",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Bijou",
+    "address": "長野県長野市篠ノ井布施五明４２５−２ 105",
+    "category": "エステティック サロン",
+    "lat": 36.575847,
+    "lng": 138.131497,
+    "gbpUrl": "https://maps.google.com/?cid=12667341518936132185",
+    "phone": "026-299-8644",
+    "website": "https://labo-bijou.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:15:02.521Z",
+  "seconds": 14.9,
+  "hoursRetried": false
+}

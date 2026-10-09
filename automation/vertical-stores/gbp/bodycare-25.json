@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 25,
+  "sheet": {
+    "name": "吉原氣療院",
+    "address": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=ccc88b753bb383cd&hl=ja&sxsrf=AE3TifONgqgwrl9ENIzORIca--TeIv_Vzw:1758523410982&kgmid=/g/11b7l42353&q=%E5%90%89%E5%8E%9F%E6%B0%A3%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=7c6c2097e1d88389&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11b7l42353",
+  "queries": [
+    "吉原氣療院 山梨県南巨摩郡富士川町最勝寺１３２６−１"
+  ],
+  "candidates": [
+    {
+      "name": "吉原氣療院",
+      "address": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+      "url": "https://www.google.com/maps/place/%E5%90%89%E5%8E%9F%E6%B0%A3%E7%99%82%E9%99%A2/@35.554989,138.461178,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf3cafe30e161:0xcc94166933ea056c!8m2!3d35.554989!4d138.461178!16s%2Fg%2F11b7l42353",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%90%89%E5%8E%9F%E6%B0%A3%E7%99%82%E9%99%A2/@35.554989,138.461178,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf3cafe30e161:0xcc94166933ea056c!8m2!3d35.554989!4d138.461178!16s%2Fg%2F11b7l42353?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+    "place": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+    "sheetNorm": "山梨県南巨摩郡富士川町最勝寺1326-1",
+    "placeNorm": "山梨県南巨摩郡富士川町最勝寺1326-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "吉原氣療院",
+    "address": "山梨県南巨摩郡富士川町最勝寺１３２６−１",
+    "category": "整体",
+    "lat": 35.554989,
+    "lng": 138.461178,
+    "gbpUrl": "https://maps.google.com/?cid=14741432121388828012",
+    "phone": "0556-48-8123",
+    "website": "https://www.yoshihara-kiryou.com/",
+    "hours": {
+      "月": "09:00–21:00",
+      "火": "09:00–21:00",
+      "水": "09:00–21:00",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://www.yoshihara-kiryou.com/reservation/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "実際に来院された方は、頭が下がったあと、自分の力だけでは戻せず、手で頭を支えて起こしていました。 いわゆる「首下がり症候群」と呼ばれる状態です。 首が下がると、どうしても首そのものに原因があると思われがちですが、私は首だけではなく、胸郭や肩甲帯、背骨、骨盤、呼吸まで含めて身体全体を確認します。 この方は5回ほど施術を重ね、卒業する頃には、お辞儀をしても手を使わず、自分の力で頭を起こせるようになりました。 首が下がる。 前を向いているのがつらい。 頭を自分で起こしにくい。 「年齢だから仕方ない」と思っている方にも、一度読んでいただきたい内容です。 首が下がる原因と、実際の症例についてブログに詳しく書きました👇 🔗 https://yoshihara-kiryou.com/blog/dropped-head-syndrome/ (インスタはプロフィールリンク→HP→ブログ) #首下がり症候群 #首の悩み #山梨整体\n2026/09/22"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:34:04.895Z",
+  "seconds": 6
+}

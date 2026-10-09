@@ -1,0 +1,91 @@
+/* ════════════════════════════════════════════════════════════
+   新業種（ビューティー・ボディケア）の特集ページ。/{v}/feature/{id}
+   見た目の元はグルメの特集ページ（app/globals.css の .feat-*・.article・.rank-item・.quote-block）。
+   ここには「グルメの CSS だけでは足りない差分」だけを .mpf-* で足す（グルメ側の CSS は触らない）。
+   読み込むのは components/portal/pages/feature.tsx（新業種の特集ページ）だけ。
+   ════════════════════════════════════════════════════════════ */
+
+/* ヒーロー写真は <img>（グルメは背景画像）。.feat-hero .img と同じ見え方 */
+.feat-hero .mpf-hero-img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:.55; transform:scale(1.05)}
+
+/* ヒーローの上端に薄い影を敷く。明るい写真の上でも、共通ヘッダーの文字と日付・キッカー（朱の小さな文字）が読めるように */
+.mp .feat-hero::before{content:""; position:absolute; left:0; right:0; top:0; height:clamp(180px,26vh,280px); z-index:1; pointer-events:none; background:linear-gradient(180deg, rgba(20,17,13,.68) 0%, rgba(20,17,13,.32) 55%, rgba(20,17,13,0) 100%)}
+
+/* 業種の入口へ戻るリンクなど、ヒーローの小さなリンク */
+.feat-hero .bot .dt a{border-bottom:1px solid rgba(244,239,227,.5); padding-bottom:2px}
+.feat-hero .bot .dt a:hover{border-bottom-color:var(--accent)}
+
+/* 共通ヘッダーは墨の文字で、ヒーロー（暗い写真）の上では読めない。スクロール前（html.mp-scrolled が無い）の間だけ生成りにする。
+   スクロールすると、ヘッダーは明るい帯になって墨の文字に戻る（portal.css の既定）。全画面メニューを開いているときは、メニュー側の指定を使う */
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd{color:var(--ivory)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-logo .en{color:rgba(244,239,230,.78)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-nav a::after{background:var(--ivory)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-burger i{background:var(--ivory)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-sbtn:hover{background:rgba(244,239,230,.14)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-search.open{border-color:var(--ivory)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-search input{color:var(--ivory)}
+html:not(.mp-scrolled):not(.mp-menu-open) .mp:has(.feat-hero) .mp-hd-search input::placeholder{color:rgba(244,239,230,.7)}
+
+/* タブ（グルメの特集の一覧）は出さないので、最初の見出しとの間を詰める */
+.mpf-body{padding-top:0}
+
+/* 写真は <img>。.rank-item .imgs .im（背景画像）と同じ並び */
+.rank-item .imgs img.im{display:block; width:100%; height:100%; object-fit:cover; object-position:center; background:var(--bg-2)}
+
+/* 写真が 1 枚だけの POINT は、枠（グリッドの固定の高さ）を使わず、写真の縦横比のまま出す（スマホで下に余白が出ないように） */
+.rank-item .imgs.mpf-one{display:block; grid-template-rows:none; overflow:hidden}
+.rank-item .imgs.mpf-one img.im{width:100%; height:auto; min-height:0; aspect-ratio:3 / 2}
+
+/* 写真が無い POINT（03〜05）は、空の枠・「画像イメージ」の板を出さず、本文を広く使う */
+.rank-item.mpf-noimg{grid-template-columns:140px minmax(0,1fr)}
+.rank-item.mpf-noimg .desc{max-width:44em}
+.rank-item.mpf-noimg .specs{max-width:44em}
+.rank-item .desc + .desc{margin-top:-8px}
+
+/* 店ページへのリンク */
+.mpf-link{display:inline-flex; align-items:center; gap:8px; padding:14px 22px; min-height:44px; border:1px solid var(--ink); font:500 13px/1.4 var(--body); letter-spacing:.06em; transition:background .3s, color .3s}
+.mpf-link:hover{background:var(--ink); color:#f4efe3}
+.mpf-link:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.mpf-links{display:flex; flex-wrap:wrap; gap:12px; margin-top:40px}
+
+/* 情報の出どころ・確認日・注意書き */
+.mpf-src{padding:80px 0 60px; border-bottom:1px solid var(--line)}
+.mpf-src h2{font:500 clamp(22px,2.4vw,30px)/1.4 var(--serif); letter-spacing:.02em}
+.mpf-src ul{margin-top:18px; display:flex; flex-wrap:wrap; gap:6px 28px}
+.mpf-src li a{display:inline-flex; align-items:center; min-height:44px; border-bottom:1px solid currentColor; font:500 15px/1.6 var(--body); letter-spacing:.04em}
+.mpf-src li a::after{content:"\2197"; margin-left:6px; font-size:13px}
+.mpf-src .mpf-checked{margin-top:14px; font:400 14px/1.8 var(--body); color:var(--ink-soft)}
+.mpf-src .mpf-note{margin-top:10px; font:400 14px/1.9 var(--body); color:var(--ink-soft); max-width:40em; text-wrap:pretty}
+
+/* ほかの特集 */
+.mpf-more{padding:80px 0 100px}
+.mpf-more h2{font:500 clamp(24px,3vw,40px)/1.2 var(--serif); margin-bottom:28px}
+.mpf-more .lab{font:500 10px/1 var(--mono); letter-spacing:.35em; color:var(--accent); margin-bottom:18px}
+.mpf-cards{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px}
+.mpf-card{display:block; position:relative; overflow:hidden; aspect-ratio:3/4; background:#2a2520; color:#f4efe3}
+.mpf-card img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .8s}
+.mpf-card:hover img{transform:scale(1.06)}
+.mpf-card::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,.88) 100%)}
+.mpf-card .info{position:absolute; left:14px; right:14px; bottom:14px; z-index:2}
+.mpf-card .t{font:500 10px/1.4 var(--mono); letter-spacing:.15em; opacity:.85; margin-bottom:8px}
+.mpf-card h3{font:500 16px/1.5 var(--serif)}
+.mpf-card:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+
+@media (max-width:900px){
+  .rank-item.mpf-noimg{grid-template-columns:1fr}
+  .mpf-src{padding:56px 0 40px}
+  .mpf-more{padding:56px 0 72px}
+  .mpf-cards{grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+}
+@media (max-width:480px){
+  .mpf-cards{grid-template-columns:1fr}
+  .mpf-card{aspect-ratio:16/10}
+}
+@media (prefers-reduced-motion:reduce){
+  .mpf-card img{transition:none}
+}
+/* JS が使えない環境では、「ふわっと現れる」前の透明のまま残らないよう最初から見せる */
+@media (scripting:none){
+  .feat-page .reveal{opacity:1; transform:none}
+  .feat-page .reveal-line > *{transform:none}
+}

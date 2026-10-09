@@ -1,0 +1,72 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 7,
+  "sheet": {
+    "name": "aquabell-",
+    "address": "鹿児島県鹿児島市上之園町26-7 トーカンマンション上之園１F‐B",
+    "url": "https://maps.app.goo.gl/J1jii8sm6pPivdH5A",
+    "type": "理・美容院",
+    "d1": "理容室",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/AQUA+BELL+%E3%80%9Cpersonal+HAIR+studio%E3%80%9C/@31.580812,130.545205,16z/data=!4m6!3m5!1s0x353e67ea1fdedbfb:0x2e4649551ebee37f!8m2!3d31.5808123!4d130.545205!16s%2Fg%2F11lvjxx41g?entry=tts&g_ep=EgoyMDI1MDkwOS4wIPu8ASoASAFQAw%3D%3D&skid=0b920450-71f9-44bf-83c0-270c371f6ad9",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "AQUA BELL 〜personal HAIR studio〜",
+      "address": "鹿児島県鹿児島市上之園町２６−７ トーカンマンション 上之園 １F-B",
+      "url": "https://www.google.com/maps/place/AQUA+BELL+%E3%80%9Cpersonal+HAIR+studio%E3%80%9C/@31.580812,130.545205,16z/data=!4m6!3m5!1s0x353e67ea1fdedbfb:0x2e4649551ebee37f!8m2!3d31.5808123!4d130.545205!16s%2Fg%2F11lvjxx41g",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/AQUA+BELL+%E3%80%9Cpersonal+HAIR+studio%E3%80%9C/@31.580812,130.545205,16z/data=!4m6!3m5!1s0x353e67ea1fdedbfb:0x2e4649551ebee37f!8m2!3d31.5808123!4d130.545205!16s%2Fg%2F11lvjxx41g?entry=tts&g_ep=EgoyMDI1MDkwOS4wIPu8ASoASAFQAw%3D%3D&skid=0b920450-71f9-44bf-83c0-270c371f6ad9",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "鹿児島県鹿児島市上之園町26-7 トーカンマンション上之園１F‐B",
+    "place": "鹿児島県鹿児島市上之園町２６−７ トーカンマンション 上之園 １F-B",
+    "sheetNorm": "鹿児島県鹿児島市上之園町26-7トーカンマンション上之園1F‐B",
+    "placeNorm": "鹿児島県鹿児島市上之園町26-7トーカンマンション上之園1F-B",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "AQUA BELL 〜personal HAIR studio〜",
+    "address": "鹿児島県鹿児島市上之園町２６−７ トーカンマンション 上之園 １F-B",
+    "category": "美容院",
+    "lat": 31.5808123,
+    "lng": 130.545205,
+    "gbpUrl": "https://maps.google.com/?cid=3334433204051305343",
+    "phone": "099-822-8555",
+    "website": "https://aquabell-hairstudio.com/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_95453676/reserve/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "秋の髪乾燥対策とパサつき改善法 秋は涼しい風とともに湿度が下がり、髪の乾燥やパサつきが気になる季節です。特に夏の紫外線ダメージや冷暖房の影響で、髪の内部の水分が失われ、まとまりにくくなりがちです。美容室業界では、こうした秋の髪の悩みに対し、保湿ケアや適切なヘアケア製品の提案が重要視されています。今回のブログでは、秋特有の髪の乾燥やパサつきを防ぐための効果的な対策や、美容室で受けられるトリートメントの特徴、日々のケア方法について詳しく紹介します。季節の変わり目に健康的で艶のある髪を保つために役立… 鹿児島市の都通駅から徒歩4分にある美容院 AQUA BELL(アクアベル) HAIR studioは、一人一人の髪のお悩みに真剣に向き合うパーソナルヘアサロンで、メンズやレディース・キッズカットにも対応しており、良草カラー・オゾントリートメント・ヘッドスパなど様々なメニューをご用意している美容室です。 鹿児島県にある当店は、JR鹿児島中央駅や二中通駅からも徒歩圏内にございます。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:05:14.614Z",
+  "seconds": 5.5
+}

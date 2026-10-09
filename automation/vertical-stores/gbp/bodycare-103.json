@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 103,
+  "sheet": {
+    "name": "やまもと針灸整骨院",
+    "address": "熊本県熊本市北区徳王１丁目７−１５ ＣＡＬＭ徳王 106",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=25498c63d407204d&hl=ja&sxsrf=AE3TifOlxtw7i8jvVXUcxUH4pkJXNL6Gvw:1761281195620&kgmid=/g/11x1th296w&q=%E3%82%84%E3%81%BE%E3%82%82%E3%81%A8%E9%87%9D%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=2aaf74e9f82d31a9&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11x1th296w",
+  "queries": [
+    "やまもと針灸整骨院 熊本県熊本市北区徳王１丁目７−１５ ＣＡＬＭ徳王 106"
+  ],
+  "candidates": [
+    {
+      "name": "やまもと針灸整骨院",
+      "address": "熊本県熊本市北区徳王１丁目７−１５ 106",
+      "url": "https://www.google.com/maps/place/%E3%82%84%E3%81%BE%E3%82%82%E3%81%A8%E9%87%9D%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@32.839982,130.7085496,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f7d45e767dcb:0xf23337c592cba396!8m2!3d32.839982!4d130.7085496!16s%2Fg%2F11x1th296w",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%84%E3%81%BE%E3%82%82%E3%81%A8%E9%87%9D%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@32.839982,130.7085496,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f7d45e767dcb:0xf23337c592cba396!8m2!3d32.839982!4d130.7085496!16s%2Fg%2F11x1th296w?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "熊本県熊本市北区徳王１丁目７−１５ ＣＡＬＭ徳王 106",
+    "place": "熊本県熊本市北区徳王１丁目７−１５ 106",
+    "sheetNorm": "熊本県熊本市北区徳王1-7-15CALM徳王106",
+    "placeNorm": "熊本県熊本市北区徳王1-7-15106",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "やまもと針灸整骨院",
+    "address": "熊本県熊本市北区徳王１丁目７−１５ 106",
+    "category": "接骨院",
+    "lat": 32.839982,
+    "lng": 130.7085496,
+    "gbpUrl": "https://maps.google.com/?cid=17452354302701708182",
+    "phone": "070-8949-3699",
+    "website": "https://yamamoto-seikotsuin.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "09:00–13:00, 15:00–20:00",
+      "木": "09:00–13:00, 15:00–20:00",
+      "金": "09:00–13:00, 15:00–20:00",
+      "土": "09:00–18:00",
+      "日": "08:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "ゴールデンウィークの営業日のお知らせです！ 時間外の相談やお問い合わせ、ご予約随時承っております！ よろしくお願いします🙇\n2026/04/16\n今すぐ電話する"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:48:56.636Z",
+  "seconds": 5.6
+}

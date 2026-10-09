@@ -1,0 +1,54 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 32,
+  "sheet": {
+    "name": "Conditioning Gym AU-GO",
+    "address": "熊本県熊本市中央区桜町２−３６ 錦桜町ビル 1F",
+    "url": "https://share.google/CnUTfZsaYJrfj76Lc",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=70a532a702b7bdb6&rlz=1C1VDKB_jaJP1175JP1176&sxsrf=AE3TifOu5RZE48eUMMPSmryCb5oWOcR8_A:1758880343091&kgmid=/g/11r797lc02&q=Conditioning+Gym+AU-GO&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=b1f860a87de922c1&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11r797lc02",
+  "queries": [
+    "Conditioning Gym AU-GO"
+  ],
+  "candidates": [
+    {
+      "name": "Conditioning Gym AU-GO",
+      "address": "熊本県熊本市中央区新町２丁目１２−２６ アンピール光助新町 1階",
+      "url": "https://www.google.com/maps/place/Conditioning+Gym+AU-GO/@32.7987655,130.6970655,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f55816359843:0x886a30463b0549ac!8m2!3d32.7987655!4d130.6970655!16s%2Fg%2F11r797lc02",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:熊本県熊本市中央区桜町 / マップ:熊本県熊本市中央区新町）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Conditioning+Gym+AU-GO/@32.7987655,130.6970655,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f55816359843:0x886a30463b0549ac!8m2!3d32.7987655!4d130.6970655!16s%2Fg%2F11r797lc02?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:熊本県熊本市中央区桜町 / マップ:熊本県熊本市中央区新町）（シート:熊本県熊本市中央区桜町２−３６ 錦桜町ビル 1F / マップ:熊本県熊本市中央区新町２丁目１２−２６ アンピール光助新町 1階）／店名: シート「Conditioning Gym AU-GO」マップ「Conditioning Gym AU-GO」(exact)",
+  "addressCompare": {
+    "sheet": "熊本県熊本市中央区桜町２−３６ 錦桜町ビル 1F",
+    "place": "熊本県熊本市中央区新町２丁目１２−２６ アンピール光助新町 1階",
+    "sheetNorm": "熊本県熊本市中央区桜町2-36錦桜町ビル1F",
+    "placeNorm": "熊本県熊本市中央区新町2-12-26アンピール光助新町1階",
+    "level": "none",
+    "detail": "町名までがちがう（シート:熊本県熊本市中央区桜町 / マップ:熊本県熊本市中央区新町）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "Conditioning Gym AU-GO",
+    "address": "熊本県熊本市中央区新町２丁目１２−２６ アンピール光助新町 1階",
+    "category": "整体",
+    "lat": 32.7987655,
+    "lng": 130.6970655,
+    "gbpUrl": "https://maps.google.com/?cid=9829722214885575084"
+  },
+  "fetchedAt": "2026-10-09T01:35:09.173Z",
+  "seconds": 7.3
+}

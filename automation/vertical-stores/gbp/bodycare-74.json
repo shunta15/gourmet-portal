@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 74,
+  "sheet": {
+    "name": "吉宗指圧治療院",
+    "address": "東京都千代田区神田佐久間町１丁目１６−５０２",
+    "url": "https://share.google/H263ChrmKdsvz1YNK",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d39e7dff067d00e3&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifOnv_nY74Fqhp0NNfjFU4q14lfZVQ:1760518040609&kgmid=/g/11b7ss_mrs&q=%E5%90%89%E5%AE%97%E6%8C%87%E5%9C%A7%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7f18affc23d0191c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b7ss_mrs",
+  "queries": [
+    "吉宗指圧治療院"
+  ],
+  "candidates": [
+    {
+      "name": "吉宗指圧治療院",
+      "address": "東京都千代田区神田佐久間町１丁目１６−５０２",
+      "url": "https://www.google.com/maps/place/%E5%90%89%E5%AE%97%E6%8C%87%E5%9C%A7%E6%B2%BB%E7%99%82%E9%99%A2/@35.697684,139.774634,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ea86e3cc369:0x9e5cf07a49bfdc2!8m2!3d35.697684!4d139.774634!16s%2Fg%2F11b7ss_mrs",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%90%89%E5%AE%97%E6%8C%87%E5%9C%A7%E6%B2%BB%E7%99%82%E9%99%A2/@35.697684,139.774634,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ea86e3cc369:0x9e5cf07a49bfdc2!8m2!3d35.697684!4d139.774634!16s%2Fg%2F11b7ss_mrs?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都千代田区神田佐久間町１丁目１６−５０２",
+    "place": "東京都千代田区神田佐久間町１丁目１６−５０２",
+    "sheetNorm": "東京都千代田区神田佐久間町1-16-502",
+    "placeNorm": "東京都千代田区神田佐久間町1-16-502",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "吉宗指圧治療院",
+    "address": "東京都千代田区神田佐久間町１丁目１６−５０２",
+    "category": "指圧・マッサージ",
+    "lat": 35.697684,
+    "lng": 139.774634,
+    "gbpUrl": "https://maps.google.com/?cid=713203747741498818",
+    "phone": "03-3527-1976",
+    "website": "http://yosimune.org/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "13:00–21:00",
+      "木": "13:00–21:00",
+      "金": "13:00–21:00",
+      "土": "13:00–21:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://karadarefre.jp/reserve/_index/f:166294?site_code=gbp"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "本日10月7日(水)の予約空き時間は、 15時 から 18時まで、になります。 https://karadarefre.jp/reserve/_menu/f:166294?SITE_CODE=hp 皆様の「ご予約」や「ご紹介」を、心よりお待ちしております。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:57:07.029Z",
+  "seconds": 5.6
+}

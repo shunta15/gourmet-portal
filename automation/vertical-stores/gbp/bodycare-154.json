@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 154,
+  "sheet": {
+    "name": "整体院〜結喜〜",
+    "address": "福岡県田川市伊加利８０８−２",
+    "url": "https://share.google/C5cVSzDxILgmNsQws",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=79231a2a76414654&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifMsRRKDNosEIDzDrMInSuy29jAm3w:1762752373866&kgmid=/g/11xlgkpv2c&q=%E6%95%B4%E4%BD%93%E9%99%A2%E3%80%9C%E7%B5%90%E5%96%9C%E3%80%9C&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=1bfea276707001f2&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11xlgkpv2c",
+  "queries": [
+    "整体院〜結喜〜"
+  ],
+  "candidates": [
+    {
+      "name": "整体院〜結喜〜",
+      "address": "福岡県田川市伊加利８０８−２",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E9%99%A2%E3%80%9C%E7%B5%90%E5%96%9C%E3%80%9C/@33.6262568,130.8357167,17z/data=!3m1!4b1!4m6!3m5!1s0x3543d9caba578165:0xf4d60e8871b75b4b!8m2!3d33.6262568!4d130.8357167!16s%2Fg%2F11xlgkpv2c",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E9%99%A2%E3%80%9C%E7%B5%90%E5%96%9C%E3%80%9C/@33.6262568,130.8357167,17z/data=!3m1!4b1!4m6!3m5!1s0x3543d9caba578165:0xf4d60e8871b75b4b!8m2!3d33.6262568!4d130.8357167!16s%2Fg%2F11xlgkpv2c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県田川市伊加利８０８−２",
+    "place": "福岡県田川市伊加利８０８−２",
+    "sheetNorm": "福岡県田川市伊加利808-2",
+    "placeNorm": "福岡県田川市伊加利808-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整体院〜結喜〜",
+    "address": "福岡県田川市伊加利８０８−２",
+    "category": "整体",
+    "lat": 33.6262568,
+    "lng": 130.8357167,
+    "gbpUrl": "https://maps.google.com/?cid=17642304569456679755",
+    "phone": "090-4157-0812",
+    "website": "https://seitai-yuiki.com/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–20:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://online.peakmanager.com/h1s0i3/book?booking_source=googlemap"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "#7 『30代女性　産後でも産前でも痩せる！』 こんにちは♪ 整体院〜結喜〜です☺️ 本日は3ヶ月で−7.8kg達成された方です！ 【始めた理由】 夏頃に妊活スタートするため その前に2人産んだ前の体型に戻したい！ と整体×ダイエットを決意。 【成果】 体重:63.6kg→55.8kg（−7.8kg） ウエスト:87cm→74cm（−13cm） 『楽しく痩せる事ができた』と 今もメンテナンスに来られてます✨ 田川市の店舗にご来院できる方で不調や体型に悩まれている方は一度、カウンセリングご予約下さい♪ 福岡県田川市にある整体院 結喜では、本格的な整体からヘッド・足つぼ・もみほぐしといったリラクゼーションまで様々なメニューをご用意しております。 肩こりや腰痛など身体のお悩みや不調を根本から整えていく施術で、諦めていた事を一緒に叶えましょう！ 身体のお悩みでやりたい事ができない人生とおさらばしたい方を柔道整復師が全力で施術いたしますので、田川市で整体院、整骨院、接骨院、治療院をお探しの方は、是非当院をお試し下さい。\n2026/07/01"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:57:36.017Z",
+  "seconds": 8.6
+}

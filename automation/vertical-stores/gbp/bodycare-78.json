@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 78,
+  "sheet": {
+    "name": "オガワセイタイ",
+    "address": "広島県三原市宮浦３丁目２９−２４",
+    "url": "https://share.google/cJ9Q8Z2HkeWWF7YJO",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9a7c25c8d7074169&biw=2078&bih=1008&sxsrf=AE3TifOfcs9wLeXvcfg3lqjkdLlaFb0hlw:1760598005856&kgmid=/g/11b6dp70sx&q=%E3%82%AA%E3%82%AC%E3%83%AF%E3%82%BB%E3%82%A4%E3%82%BF%E3%82%A4&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=1881997dda40583b&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b6dp70sx",
+  "queries": [
+    "オガワセイタイ"
+  ],
+  "candidates": [
+    {
+      "name": "オガワセイタイ",
+      "address": "広島県三原市宮浦３丁目２９−２４",
+      "url": "https://www.google.com/maps/place/%E3%82%AA%E3%82%AC%E3%83%AF%E3%82%BB%E3%82%A4%E3%82%BF%E3%82%A4/@34.3964669,133.0675372,17z/data=!3m1!4b1!4m6!3m5!1s0x35505650ae3abd3b:0x129871435b01cc85!8m2!3d34.3964669!4d133.0675372!16s%2Fg%2F11b6dp70sx",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%AA%E3%82%AC%E3%83%AF%E3%82%BB%E3%82%A4%E3%82%BF%E3%82%A4/@34.3964669,133.0675372,17z/data=!3m1!4b1!4m6!3m5!1s0x35505650ae3abd3b:0x129871435b01cc85!8m2!3d34.3964669!4d133.0675372!16s%2Fg%2F11b6dp70sx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "広島県三原市宮浦３丁目２９−２４",
+    "place": "広島県三原市宮浦３丁目２９−２４",
+    "sheetNorm": "広島県三原市宮浦3-29-24",
+    "placeNorm": "広島県三原市宮浦3-29-24",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "オガワセイタイ",
+    "address": "広島県三原市宮浦３丁目２９−２４",
+    "category": "整体",
+    "lat": 34.3964669,
+    "lng": 133.0675372,
+    "gbpUrl": "https://maps.google.com/?cid=1339945423246314629",
+    "phone": "0848-64-0625",
+    "website": "https://ogawa-seitai.studio.site/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://www.ogawa-seitai.com/book-online"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "「施術を受けても、また痛みが戻ってしまう」というお悩みをよく伺います。痛みの根本原因は、関節を支える筋肉(サボリ筋)が弱くなり、正常な関節運動が失われていることにあります。オガワセイタイでは施術で関節の動きを整えるだけでなく、関節トレーニングによるセルフケア指導で再発しにくい身体づくりをサポートしています。一人ひとりの状態に合わせたアプローチを大切にしています。三原市・尾道市・福山市からもご来院いただいています。三原駅から車で5分・駐車場完備。\n2026/09/30\n予約"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:44:18.241Z",
+  "seconds": 6.2
+}

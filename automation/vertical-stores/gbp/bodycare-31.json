@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 31,
+  "sheet": {
+    "name": "そうしゅん整骨院",
+    "address": "岡山県岡山市南区下中野１４０１−８",
+    "url": "https://share.google/BOCdwOGVceLAywCfc",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9ae03e477ff97b33&sxsrf=AE3TifPwYFors2iVYHYBcnqmYsecOEP6yA:1758865422996&kgmid=/g/11rs0twqw&q=%E3%81%9D%E3%81%86%E3%81%97%E3%82%85%E3%82%93%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=480e51c5b2190f0c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rs0twqw",
+  "queries": [
+    "そうしゅん整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "そうしゅん整骨院",
+      "address": "岡山県岡山市南区下中野１４０１−８",
+      "url": "https://www.google.com/maps/place/%E3%81%9D%E3%81%86%E3%81%97%E3%82%85%E3%82%93%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x3554079b8435d099:0x8c28b28c272f29f2!8m2!3d34.6420512!4d133.9108476!16s%2Fg%2F11rs0twqw!19sChIJmdA1hJsHVDUR8ikvJ4yyKIw",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%9D%E3%81%86%E3%81%97%E3%82%85%E3%82%93%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x3554079b8435d099:0x8c28b28c272f29f2!8m2!3d34.6420512!4d133.9108476!16s%2Fg%2F11rs0twqw!19sChIJmdA1hJsHVDUR8ikvJ4yyKIw?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "岡山県岡山市南区下中野１４０１−８",
+    "place": "岡山県岡山市南区下中野１４０１−８",
+    "sheetNorm": "岡山県岡山市南区下中野1401-8",
+    "placeNorm": "岡山県岡山市南区下中野1401-8",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "そうしゅん整骨院",
+    "address": "岡山県岡山市南区下中野１４０１−８",
+    "category": "接骨院",
+    "lat": 34.6420512,
+    "lng": 133.9108476,
+    "gbpUrl": "https://maps.google.com/?cid=10099518479400905202",
+    "phone": "086-250-8884",
+    "website": "https://sousyun-seikotsuin.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–18:00",
+      "水": "09:00–13:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "背中がなんとなく重い、張り感がとれない、そんな不調を感じながらも「大げさかな」と思って、なかなか相談できずにいる方もいらっしゃるのではないでしょうか。 背部の張りは、長時間のデスクワークや同じ姿勢が続く日常のなかで、気づかないうちに積み重なっていくことが多いように感じます。はっきりとした痛みではないだけに、つい後回しにしてしまいがちですが、放置することでじわじわとつらさが増してしまうケースも少なくありません。 そうしゅん整骨院では、背部の張りを抱える方のお気持ちに寄り添いながら、一人ひとりのお身体の状態をていねいに確認したうえで施術の方針をお伝えしています。問診・検査・施術のすべてを院長が一貫して担当しているため、毎回同じ施術者がお身体の変化を丁寧に把握しながら、その時々の状態に合わせた対応を心掛けることができます。少しでも張りやつらさが和らぐよう、真心を込めて向き合ってまいります。 背中の重さや張り感が気になっている方は、どうぞお気軽にご相談ください。小さなお悩みでも、遠慮なくお声がけいただけますと幸いです。 そうしゅん整骨院\n2026/10/02\n今すぐ電話する"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:34:58.414Z",
+  "seconds": 5.5
+}

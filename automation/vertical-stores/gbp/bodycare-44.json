@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 44,
+  "sheet": {
+    "name": "niini CELLULAM",
+    "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+    "url": "https://share.google/tYrd8p8MkAOXe6ZO2",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?client=safari&sca_esv=731f5d5eb4363032&channel=iphone_bm&sxsrf=AE3TifNuC4KW-jDUjx7XfOdbb9_L3ra-HA:1759373515658&kgmid=/g/11smwg2j4r&q=niini+CELLULAM&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=49ca1ccad2452a52&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11smwg2j4r",
+  "queries": [
+    "niini CELLULAM"
+  ],
+  "candidates": [
+    {
+      "name": "niini CELLULAM",
+      "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+      "url": "https://www.google.com/maps/place/niini+CELLULAM/@35.70098,139.5586131,17z/data=!3m1!4b1!4m6!3m5!1s0x6018eff0c41de82b:0x8232364bf31f6e22!8m2!3d35.70098!4d139.5586131!16s%2Fg%2F11smwg2j4r",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/niini+CELLULAM/@35.70098,139.5586131,17z/data=!3m1!4b1!4m6!3m5!1s0x6018eff0c41de82b:0x8232364bf31f6e22!8m2!3d35.70098!4d139.5586131!16s%2Fg%2F11smwg2j4r?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+    "place": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+    "sheetNorm": "東京都三鷹市上連雀2-3-18エブロス101",
+    "placeNorm": "東京都三鷹市上連雀2-3-18エブロス101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "niini CELLULAM",
+    "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
+    "category": "エステティック サロン",
+    "lat": 35.70098,
+    "lng": 139.5586131,
+    "gbpUrl": "https://maps.google.com/?cid=9381620673595534882",
+    "phone": "070-2294-8716",
+    "website": "https://niini.biz/",
+    "hours": {
+      "月": "10:30–22:00",
+      "火": "10:30–22:00",
+      "水": "10:30–22:00",
+      "木": "10:30–22:00",
+      "金": "10:30–22:00",
+      "土": "10:30–22:00",
+      "日": "10:30–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://salonniini.pos-s.net/reserve/"
+      },
+      {
+        "label": "予約",
+        "url": "https://page.line.me/714rlqee?openQrModal=true"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "フェイスラインや顔まわりの印象が以前と少し変わってきたと感じたら、日頃のお手入れに加えてフェイシャルケアを取り入れてみませんか。 三鷹駅近くのエステサロンniiniでは、セルラムを使用した「フェイシャル＆ネックエステ」をご用意しています。 施術では、ナノ＆マイクロカレントと呼ばれる微弱電流を使用。ドレナージュモードによるケアも取り入れながら、お顔から首元まで施術していきます。 途中からはパッドを使用し、デコルテ・首のマッサージ、最後にはヘッドと首のマッサージも行います。 「小顔を意識したケアを始めたい」 「エイジングケアを取り入れたい」 「顔だけでなく首元まで一緒に整えたい」 そんな方に取り入れていただけるフェイシャルエステです。 東京・三鷹で、セルラムによる小顔・若返りを意識した美容ケアに興味がある方は、niiniへご相談ください。 LINEでのご予約はこちらから👇"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:37:36.072Z",
+  "seconds": 6.5
+}

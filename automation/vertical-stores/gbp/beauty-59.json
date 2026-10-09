@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 59,
+  "sheet": {
+    "name": "アッセンブル ビューティーアンドスパ",
+    "address": "千葉県柏市豊四季１９７−１",
+    "url": "https://share.google/AOi6otK5GTcd30gB6",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d02360be45a080c7&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11rcs11jp9&q=%E3%82%A2%E3%83%83%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AB+%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%A2%E3%83%B3%E3%83%89%E3%82%B9%E3%83%91&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=22281573f26f30a4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rcs11jp9",
+  "queries": [
+    "アッセンブル ビューティーアンドスパ"
+  ],
+  "candidates": [
+    {
+      "name": "アッセンブル ビューティーアンドスパ",
+      "address": "千葉県柏市豊四季１９７−１",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%83%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AB+%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%A2%E3%83%B3%E3%83%89%E3%82%B9%E3%83%91/@35.8685664,139.9404861,17z/data=!3m1!4b1!4m6!3m5!1s0x60189d2f2f4e5c2b:0x9e52628334490339!8m2!3d35.8685664!4d139.9404861!16s%2Fg%2F11rcs11jp9",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A2%E3%83%83%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AB+%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%82%A2%E3%83%B3%E3%83%89%E3%82%B9%E3%83%91/@35.8685664,139.9404861,17z/data=!3m1!4b1!4m6!3m5!1s0x60189d2f2f4e5c2b:0x9e52628334490339!8m2!3d35.8685664!4d139.9404861!16s%2Fg%2F11rcs11jp9?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県柏市豊四季１９７−１",
+    "place": "千葉県柏市豊四季１９７−１",
+    "sheetNorm": "千葉県柏市豊四季197-1",
+    "placeNorm": "千葉県柏市豊四季197-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "アッセンブル ビューティーアンドスパ",
+    "address": "千葉県柏市豊四季１９７−１",
+    "category": "美容院",
+    "lat": 35.8685664,
+    "lng": 139.9404861,
+    "gbpUrl": "https://maps.google.com/?cid=11408289121740325689",
+    "phone": "04-7161-2467",
+    "website": "https://beauty.hotpepper.jp/slnH000560736/",
+    "hours": {
+      "月": "09:00–17:30",
+      "火": "定休日",
+      "水": "09:00–17:30",
+      "木": "09:00–17:30",
+      "金": "09:00–17:30",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s3000052513/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【９～10月限定】カット＋パーマ＋クリーミースパ【プレゼント付き】\n9月1日～10月31日\n人気No.１ウルトラファインバブル＋クリームズスパを体験できるお得なコース◆好きな香りのクリームをMIXして自分だけの香りをカスタマイズ◆プレゼント：全身洗浄剤クリームズクリーム\n2026/08/29\n今すぐ電話する"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:16:01.582Z",
+  "seconds": 5.9
+}

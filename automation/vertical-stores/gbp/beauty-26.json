@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 26,
+  "sheet": {
+    "name": "recherche",
+    "address": "静岡県富士宮市山本４６４−５",
+    "url": "https://share.google/UUZH8qCYdWyUlRLlQ",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=148cca40eee112c3&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifO3vjR0Yie8p2gqO_XafEH9-1Q8kA:1758852329401&kgmid=/g/11c1vmc2bt&q=recherche+%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%A5&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=d11ce4441876aa4e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c1vmc2bt",
+  "queries": [
+    "recherche ルシェルシュ"
+  ],
+  "candidates": [
+    {
+      "name": "recherche ルシェルシュ",
+      "address": "静岡県富士宮市山本４６４−５",
+      "url": "https://www.google.com/maps/place/recherche+%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%A5/data=!4m7!3m6!1s0x601bd3e7d2574bd9:0x4c44743e0d916ead!8m2!3d35.2041357!4d138.6256279!16s%2Fg%2F11c1vmc2bt!19sChIJ2UtX0ufTG2ARrW6RDT50REw",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/recherche+%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%A5/data=!4m7!3m6!1s0x601bd3e7d2574bd9:0x4c44743e0d916ead!8m2!3d35.2041357!4d138.6256279!16s%2Fg%2F11c1vmc2bt!19sChIJ2UtX0ufTG2ARrW6RDT50REw?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "静岡県富士宮市山本４６４−５",
+    "place": "静岡県富士宮市山本４６４−５",
+    "sheetNorm": "静岡県富士宮市山本464-5",
+    "placeNorm": "静岡県富士宮市山本464-5",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "recherche ルシェルシュ",
+    "address": "静岡県富士宮市山本４６４−５",
+    "category": "エステティック サロン",
+    "lat": 35.2041357,
+    "lng": 138.6256279,
+    "gbpUrl": "https://maps.google.com/?cid=5495645255163276973",
+    "phone": "0544-26-9755",
+    "website": "https://e-recherche.jp/",
+    "hours": {
+      "月": "10:00–18:30",
+      "火": "10:00–18:30",
+      "水": "10:00–19:30",
+      "木": "10:00–18:30",
+      "金": "10:00–18:30",
+      "土": "10:00–19:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://recherche2525.com/pcreserve.php"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🫧泡のせフェイシャルでの施術です🫧 運動会で紫外線に浴びてきたお肌　まだお肌に熱がこもっていて赤みやくすみが出ています ☀️ 紫外線がお肌に与える影響 紫外線は「日焼け」だけじゃないんです。 紫外線を浴びると、お肌の中で少しずつダメージが蓄積されていきます。 ☀️ 乾燥しやすくなる お肌のうるおいが失われ、カサつきやゴワつきの原因に。 ☀️ シミ・そばかすの原因に 紫外線を浴びると、肌を守るためにメラニンが作られます。これが蓄積すると、シミやそばかすにつながります。 ☀️ ハリ・弾力が低下 紫外線は、お肌のハリを支えるコラーゲンなどにもダメージを与えます。長年浴び続けることで、シワやたるみの原因にも。 ☀️ 肌のバリア機能が低下 乾燥しやすくなったり、外からの刺激を受けやすい敏感な状態になったりすることも。 紫外線は 「今の日焼け」だけではなく、未来のお肌にも影響するんです 「紫外線を浴びない」ことは難しくても、 「浴びた後にきちんとケアする」ことはできます。 ルシェルシュでは、紫外線や乾燥などで疲れたお肌をいたわるフェイシャルケアもおすすめしています✨ 今日のお肌を大切にすることが、未来のキレイにつながります♡ 特におすすめなのが、たっぷりの泡でお肌を包み込む「泡のせフェイシャル」。ふわふわの泡に包まれながら、心地よくリラックスしていただける細胞レベルのフェイシャルメニューで"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:09:14.618Z",
+  "seconds": 4.4
+}

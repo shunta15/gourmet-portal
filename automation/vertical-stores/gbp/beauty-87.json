@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 87,
+  "sheet": {
+    "name": "Tresor eternel",
+    "address": "茨城県神栖市深芝南３丁目1−９",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8fe6cc88df9a283f&hl=ja&sxsrf=AE3TifOoE8eZwaFlomn8TLZpPaDpdmLQDg:1761271741525&kgmid=/g/11bv1p2zpb&q=Tresor+eternel&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=fa9743b2a1fbcc0a&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11bv1p2zpb",
+  "queries": [
+    "Tresor eternel 茨城県神栖市深芝南３丁目1−９"
+  ],
+  "candidates": [
+    {
+      "name": "Tresor eternel",
+      "address": "茨城県神栖市深芝南３丁目1−９",
+      "url": "https://www.google.com/maps/place/Tresor+eternel/@35.9098867,140.6496284,17z/data=!3m1!4b1!4m6!3m5!1s0x6022ff18bdb268db:0x84f982c88b4f91d9!8m2!3d35.9098867!4d140.6496284!16s%2Fg%2F11bv1p2zpb",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Tresor+eternel/@35.9098867,140.6496284,17z/data=!3m1!4b1!4m6!3m5!1s0x6022ff18bdb268db:0x84f982c88b4f91d9!8m2!3d35.9098867!4d140.6496284!16s%2Fg%2F11bv1p2zpb?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "茨城県神栖市深芝南３丁目1−９",
+    "place": "茨城県神栖市深芝南３丁目1−９",
+    "sheetNorm": "茨城県神栖市深芝南3-1-9",
+    "placeNorm": "茨城県神栖市深芝南3-1-9",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Tresor eternel",
+    "address": "茨城県神栖市深芝南３丁目1−９",
+    "category": "エステティック サロン",
+    "lat": 35.9098867,
+    "lng": 140.6496284,
+    "gbpUrl": "https://maps.google.com/?cid=9581833480049758681",
+    "phone": "0299-95-9495",
+    "website": "http://www.tresor-eternel.com/",
+    "hours": {
+      "月": "09:30–19:00",
+      "火": "定休日",
+      "水": "09:30–19:00",
+      "木": "09:30–19:00",
+      "金": "09:30–19:00",
+      "土": "09:30–19:00",
+      "日": "09:30–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:21:59.042Z",
+  "seconds": 5.6
+}

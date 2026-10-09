@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 10,
+  "sheet": {
+    "name": "Beauty Salon SONATA",
+    "address": "〒410-0048 静岡県沼津市新宿町１９−４",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=3dd5e06a00554f5a&hl=ja&sxsrf=AE3TifO-31fW7YOftV0iuRnvTPhthvAClQ:1758073386217&kgmid=/g/11tg8p3gtk&q=Beauty+Salon+SONATA&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=ae5b1ce6579c3a60&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11tg8p3gtk",
+  "queries": [
+    "Beauty Salon SONATA 静岡県沼津市新宿町１９−４"
+  ],
+  "candidates": [
+    {
+      "name": "Beauty Salon SONATA",
+      "address": "静岡県沼津市新宿町１９−４",
+      "url": "https://www.google.com/maps/place/Beauty+Salon+SONATA/@35.1087639,138.8604771,17z/data=!3m1!4b1!4m6!3m5!1s0x601985464e917f2f:0xe9508c13c1568b6a!8m2!3d35.1087639!4d138.8604771!16s%2Fg%2F11tg8p3gtk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Beauty+Salon+SONATA/@35.1087639,138.8604771,17z/data=!3m1!4b1!4m6!3m5!1s0x601985464e917f2f:0xe9508c13c1568b6a!8m2!3d35.1087639!4d138.8604771!16s%2Fg%2F11tg8p3gtk?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒410-0048 静岡県沼津市新宿町１９−４",
+    "place": "静岡県沼津市新宿町１９−４",
+    "sheetNorm": "静岡県沼津市新宿町19-4",
+    "placeNorm": "静岡県沼津市新宿町19-4",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Beauty Salon SONATA",
+    "address": "静岡県沼津市新宿町１９−４",
+    "category": "エステティック サロン",
+    "lat": 35.1087639,
+    "lng": 138.8604771,
+    "gbpUrl": "https://maps.google.com/?cid=16812091425450003306",
+    "phone": "090-8359-1734",
+    "website": "https://beautysalonsonata.amebaownd.com/",
+    "hours": {
+      "月": "09:30–23:30",
+      "火": "09:30–23:30",
+      "水": "09:30–23:30",
+      "木": "09:30–23:30",
+      "金": "09:30–23:30",
+      "土": "09:30–23:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/9a897621bfb2786327bce0075f2ddab0?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://lin.ee/XG0BEum"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "梅雨や台風の時期になると、 「なんとなく身体が重い」「頭がスッキリしない」「疲れが抜けない」 と感じる方が増えてきます。 原因の一つとして気圧や湿度の変化です🌀 気圧が下がることで自律神経のバランスが乱れやすくなり、 頭痛や肩こり、だるさ、むくみなどの不調が現れやすくなります。 また、雨の日が続くことで運動不足になったり、 日照時間が減って気分が落ち込みやすくなることも🤧💦 当店ではよもぎ蒸しや、ヘッドスパなどのリラクメニューもご用意ありますので 悪天候が続くこんな時だからこそ身体をやさしくほぐして血流を促し、 心身をリラックスさせることが大切です。 「天気が悪い日はいつも調子が悪い…」という方は、 ぜひ一度リラクゼーションで身体を整えてみてください☺ 心も身体も軽くなり、毎日を快適に過ごせますよ✨\n2026/07/07"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:05:53.556Z",
+  "seconds": 5.5
+}

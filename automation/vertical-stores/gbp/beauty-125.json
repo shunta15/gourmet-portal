@@ -1,0 +1,84 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 125,
+  "sheet": {
+    "name": "理容チョッキンズPLUS",
+    "address": "兵庫県姫路市網干区坂上382-13",
+    "url": "https://share.google/PfetqDptR0nWvX4Kd",
+    "type": "理・美容院",
+    "d1": "理容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=eb5b4f820ac811f1&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifPBIuiPJVi2Z2M1HpaqFLotfyWr0g:1761642477973&kgmid=/g/11btrrgdjy&q=%E5%A7%AB%E8%B7%AF%E3%83%BB%E3%82%B9%E3%83%83%E3%82%AD%E3%83%AA%E6%95%A3%E9%AB%AA%EF%BC%86%E8%84%B1%E6%AF%9B%E3%83%81%E3%83%A7%E3%83%83%E3%82%AD%E3%83%B3%E3%82%BAPLUS&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=cb9ac3e422cc4d41&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11btrrgdjy",
+  "queries": [
+    "姫路・スッキリ散髪＆脱毛チョッキンズPLUS"
+  ],
+  "candidates": [
+    {
+      "name": "姫路・スッキリ散髪＆脱毛チョッキンズPLUS",
+      "address": "兵庫県姫路市網干区坂上３８２−１３",
+      "url": "https://www.google.com/maps/place/%E5%A7%AB%E8%B7%AF%E3%83%BB%E3%82%B9%E3%83%83%E3%82%AD%E3%83%AA%E6%95%A3%E9%AB%AA%EF%BC%86%E8%84%B1%E6%AF%9B%E3%83%81%E3%83%A7%E3%83%83%E3%82%AD%E3%83%B3%E3%82%BAPLUS/@34.7995348,134.5870796,17z/data=!3m1!4b1!4m6!3m5!1s0x3554e4f5ef9dce13:0x5859f152c8f411de!8m2!3d34.7995348!4d134.5870796!16s%2Fg%2F11btrrgdjy",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%A7%AB%E8%B7%AF%E3%83%BB%E3%82%B9%E3%83%83%E3%82%AD%E3%83%AA%E6%95%A3%E9%AB%AA%EF%BC%86%E8%84%B1%E6%AF%9B%E3%83%81%E3%83%A7%E3%83%83%E3%82%AD%E3%83%B3%E3%82%BAPLUS/@34.7995348,134.5870796,17z/data=!3m1!4b1!4m6!3m5!1s0x3554e4f5ef9dce13:0x5859f152c8f411de!8m2!3d34.7995348!4d134.5870796!16s%2Fg%2F11btrrgdjy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「理容チョッキンズPLUS」とマップ「姫路・スッキリ散髪＆脱毛チョッキンズPLUS」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "兵庫県姫路市網干区坂上382-13",
+    "place": "兵庫県姫路市網干区坂上３８２−１３",
+    "sheetNorm": "兵庫県姫路市網干区坂上382-13",
+    "placeNorm": "兵庫県姫路市網干区坂上382-13",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "姫路・スッキリ散髪＆脱毛チョッキンズPLUS",
+    "address": "兵庫県姫路市網干区坂上３８２−１３",
+    "category": "理容店",
+    "lat": 34.7995348,
+    "lng": 134.5870796,
+    "gbpUrl": "https://maps.google.com/?cid=6366384886125957598",
+    "phone": "079-272-0153",
+    "website": "https://www.riyou-chokkinzu.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "08:00–19:00",
+      "木": "08:00–19:00",
+      "金": "08:00–19:00",
+      "土": "08:00–19:00",
+      "日": "08:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s6000062585/?scid=we_bty_glam_shoptop"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "http://chokkinzu.crm-s.net/r/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:02:32.538Z",
+  "seconds": 6.1,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "理容チョッキンズPLUS",
+    "mapName": "姫路・スッキリ散髪＆脱毛チョッキンズPLUS"
+  }
+}

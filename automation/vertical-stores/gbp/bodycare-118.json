@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 118,
+  "sheet": {
+    "name": "もみ屋　八",
+    "address": "高知県四万十市古津賀１３１０－２",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sa=X&sca_esv=e88d928ee76a2e23&hl=ja&biw=890&bih=664&sxsrf=AE3TifMFmhWTUY4A386nRnmvVtBfdATtXQ:1761704645214&kgmid=/g/11fqy27mzf&q=%E3%82%82%E3%81%BF%E5%B1%8B+%E5%85%AB&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=b2ce13d5b48f95d4&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11fqy27mzf",
+  "queries": [
+    "もみ屋　八 高知県四万十市古津賀１３１０－２"
+  ],
+  "candidates": [
+    {
+      "name": "もみ屋 八",
+      "address": "高知県四万十市古津賀１３１０−２",
+      "url": "https://www.google.com/maps/place/%E3%82%82%E3%81%BF%E5%B1%8B+%E5%85%AB/@32.9806082,132.9547919,17z/data=!3m1!4b1!4m6!3m5!1s0x354f3e7ee5555555:0xec6f8cabadc3b183!8m2!3d32.9806082!4d132.9547919!16s%2Fg%2F11fqy27mzf",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%82%E3%81%BF%E5%B1%8B+%E5%85%AB/@32.9806082,132.9547919,17z/data=!3m1!4b1!4m6!3m5!1s0x354f3e7ee5555555:0xec6f8cabadc3b183!8m2!3d32.9806082!4d132.9547919!16s%2Fg%2F11fqy27mzf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "高知県四万十市古津賀１３１０－２",
+    "place": "高知県四万十市古津賀１３１０−２",
+    "sheetNorm": "高知県四万十市古津賀1310-2",
+    "placeNorm": "高知県四万十市古津賀1310-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "もみ屋 八",
+    "address": "高知県四万十市古津賀１３１０−２",
+    "category": "タイ マッサージ セラピスト",
+    "lat": 32.9806082,
+    "lng": 132.9547919,
+    "gbpUrl": "https://maps.google.com/?cid=17036990584348455299",
+    "phone": "0880-34-3808",
+    "website": "http://shantiii.com/",
+    "hours": {
+      "月": "11:00–18:30",
+      "火": "定休日",
+      "水": "11:00–18:30",
+      "木": "11:00–18:30",
+      "金": "11:00–18:30",
+      "土": "11:00–18:30",
+      "日": "11:00–18:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "四万十市、土佐清水市、宿毛市、三原村、黒潮町近郊にお住いの方、肩こりや身体の疲れにお悩みの方はお気軽にご相談下さい。もみ屋八では、肩こりはもちろん、ぎっくり腰と言われている腰の疲れなどにも対応。男性スタッフ１名、女性スタッフ１名の２名体制のお店です。ペアでのお客様のご予約も可能です。長年の経験を積んだセラピストが皆様の疲れをほぐすお手伝いをさせて頂きます。たくさんメニューはありますが、まずよくわからない方には、もみほぐしのメニューのご予約がおすすめです。\n2026/08/20"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:51:17.776Z",
+  "seconds": 5.9
+}

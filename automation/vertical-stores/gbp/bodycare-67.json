@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 67,
+  "sheet": {
+    "name": "栄整骨院",
+    "address": "千葉県佐倉市栄町５−２",
+    "url": "https://share.google/YtLGsvT38udoK4hEP",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d14af1df391cf56f&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifNJO35j4Ams2nWl6zVElpuQVL7JDA:1760429952008&kgmid=/g/1v3h_2nn&q=%E6%A0%84%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=69511bfe35529e3c&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1v3h_2nn",
+  "queries": [
+    "栄整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "栄整骨院",
+      "address": "千葉県佐倉市栄町５−２",
+      "url": "https://www.google.com/maps/place/%E6%A0%84%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60228ed350df582b:0xa9b2041c4b0c276a!8m2!3d35.7227977!4d140.2299518!16s%2Fg%2F1v3h_2nn!19sChIJK1jfUNOOImARaicMSxwEsqk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%A0%84%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60228ed350df582b:0xa9b2041c4b0c276a!8m2!3d35.7227977!4d140.2299518!16s%2Fg%2F1v3h_2nn!19sChIJK1jfUNOOImARaicMSxwEsqk?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県佐倉市栄町５−２",
+    "place": "千葉県佐倉市栄町５−２",
+    "sheetNorm": "千葉県佐倉市栄町5-2",
+    "placeNorm": "千葉県佐倉市栄町5-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "栄整骨院",
+    "address": "千葉県佐倉市栄町５−２",
+    "category": "接骨院",
+    "lat": 35.7227977,
+    "lng": 140.2299518,
+    "gbpUrl": "https://maps.google.com/?cid=12227840457829001066",
+    "phone": "043-484-4976",
+    "website": "https://www.sakae4976.com/",
+    "hours": {
+      "月": "09:00–22:00",
+      "火": "09:00–22:00",
+      "水": "09:00–22:00",
+      "木": "定休日",
+      "金": "定休日",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://karadarefre.jp/reserve/_index/f:101022?site_code=gbp"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "http://b.hpr.jp/kr/hp/H000737534"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【10月の営業案内・3連休のお知らせ】 いつも佐倉市の栄整骨院をご利用いただき、ありがとうございます。 来週は3連休となり、皆様にはご不便をおかけいたします。 連休前後は整体・スポーツ整体のご予約が混み合うことが予想されます。 ご希望の日時でご案内できない場合もございますので、誠に恐れ入りますが、お早めのご予約にご協力いただけますと幸いです。 肩こり・腰痛・スポーツによる身体の疲労など、お身体のメンテナンスもお気軽にご相談ください。 ご予約はLINE・WEB・お電話にて承っております。 千葉県佐倉市 栄整骨院"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:42:24.267Z",
+  "seconds": 5.2
+}

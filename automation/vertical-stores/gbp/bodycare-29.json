@@ -1,0 +1,54 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 29,
+  "sheet": {
+    "name": "心と骨盤調律処 ままの和",
+    "address": "東京都中野区野方６丁目６−７ 1F",
+    "url": "https://share.google/Pe2YiNNefqXHoaopc",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=421eaf0524372ec9&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifORMXKTUYyd86iZoIjlovR4Rfxwbw:1758860670368&kgmid=/g/11fj45z02f&q=%E5%BF%83%E3%81%A8%E9%AA%A8%E7%9B%A4%E8%AA%BF%E5%BE%8B%E5%87%A6+%E3%81%BE%E3%81%BE%E3%81%AE%E5%92%8C&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=d2480dd1d262b9ff&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11fj45z02f",
+  "queries": [
+    "心と骨盤調律処 ままの和"
+  ],
+  "candidates": [
+    {
+      "name": "心と骨盤調律処 ままの和",
+      "address": "東京都杉並区高円寺南４丁目３−１２ 1F",
+      "url": "https://www.google.com/maps/place/%E5%BF%83%E3%81%A8%E9%AA%A8%E7%9B%A4%E8%AA%BF%E5%BE%8B%E5%87%A6+%E3%81%BE%E3%81%BE%E3%81%AE%E5%92%8C/@35.7023306,139.6537658,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f39a9a8f09c9:0xd9797ac1033e1a89!8m2!3d35.7023306!4d139.6537658!16s%2Fg%2F11fj45z02f",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:東京都中野区野方 / マップ:東京都杉並区高円寺南）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%BF%83%E3%81%A8%E9%AA%A8%E7%9B%A4%E8%AA%BF%E5%BE%8B%E5%87%A6+%E3%81%BE%E3%81%BE%E3%81%AE%E5%92%8C/@35.7023306,139.6537658,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f39a9a8f09c9:0xd9797ac1033e1a89!8m2!3d35.7023306!4d139.6537658!16s%2Fg%2F11fj45z02f?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:東京都中野区野方 / マップ:東京都杉並区高円寺南）（シート:東京都中野区野方６丁目６−７ 1F / マップ:東京都杉並区高円寺南４丁目３−１２ 1F）／店名: シート「心と骨盤調律処 ままの和」マップ「心と骨盤調律処 ままの和」(exact)",
+  "addressCompare": {
+    "sheet": "東京都中野区野方６丁目６−７ 1F",
+    "place": "東京都杉並区高円寺南４丁目３−１２ 1F",
+    "sheetNorm": "東京都中野区野方6-6-71F",
+    "placeNorm": "東京都杉並区高円寺南4-3-121F",
+    "level": "none",
+    "detail": "町名までがちがう（シート:東京都中野区野方 / マップ:東京都杉並区高円寺南）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "心と骨盤調律処 ままの和",
+    "address": "東京都杉並区高円寺南４丁目３−１２ 1F",
+    "category": "整体",
+    "lat": 35.7023306,
+    "lng": 139.6537658,
+    "gbpUrl": "https://maps.google.com/?cid=15670691347814029961"
+  },
+  "fetchedAt": "2026-10-09T00:56:57.135Z",
+  "seconds": 5.6
+}

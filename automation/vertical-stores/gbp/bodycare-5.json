@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 5,
+  "sheet": {
+    "name": "スカイブルー鍼灸接骨院",
+    "address": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+    "url": "https://share.google/e6TcWLRutaD1VJgaW",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=01d7d1da4f3739f4&rlz=1C1NDCM_jaJP1037JP1131&sxsrf=AE3TifP_chhGKwPH6XdYq7iacpBbu4w2mQ:1757586738246&kgmid=/g/11wj2z6lph&q=%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AB%E3%83%BC%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=981c9d1b1eb17d85&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11wj2z6lph",
+  "queries": [
+    "スカイブルー鍼灸接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "スカイブルー鍼灸接骨院",
+      "address": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+      "url": "https://www.google.com/maps/place/%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AB%E3%83%BC%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.7146099,139.785471,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f95b5527433:0x9f71c2f0cd5f01f0!8m2!3d35.7146099!4d139.785471!16s%2Fg%2F11wj2z6lph",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%96%E3%83%AB%E3%83%BC%E9%8D%BC%E7%81%B8%E6%8E%A5%E9%AA%A8%E9%99%A2/@35.7146099,139.785471,17z/data=!3m1!4b1!4m6!3m5!1s0x60188f95b5527433:0x9f71c2f0cd5f01f0!8m2!3d35.7146099!4d139.785471!16s%2Fg%2F11wj2z6lph?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+    "place": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+    "sheetNorm": "東京都台東区松が谷2-19-10ストークプラザ上野松が谷102",
+    "placeNorm": "東京都台東区松が谷2-19-10ストークプラザ上野松が谷102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "スカイブルー鍼灸接骨院",
+    "address": "東京都台東区松が谷２丁目１９−１０ ストークプラザ上野松が谷 102",
+    "category": "鍼灸院",
+    "lat": 35.7146099,
+    "lng": 139.785471,
+    "gbpUrl": "https://maps.google.com/?cid=11489178463892341232",
+    "phone": "090-6324-9088",
+    "website": "https://skyblue2024.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "定休日",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–20:00",
+      "日": "09:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://rwg.kanzashi.com/l/4pw102f78Vtz/kirei?merchant_id=kirei-1060728"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "台東区松が谷の鍼灸で座りっぱなしの梨状筋症候群を改善へ導くポイント 長時間座りっぱなしのデスクワークや車の運転後、お尻から太もも、足先にかけて痛みやしびれを感じたことはありませんか？このような症状は梨状筋症候群が関与していることが少なくありません。座り仕事が多い台東区松が谷周辺では、臀部や脚の不快感で悩む方が増えています。本記事では、鍼灸による専門的なアプローチや、国家資格を持つ院長による一貫した施術体制のもと、安全性や的確なカウンセリングを重視した梨状筋症候群の解決策を詳しく解説します。仕事… 東京都台東区上野エリアで鍼灸の施術を受けるなら、稲荷町駅から徒歩約8分、入谷駅から徒歩約10分のスカイブルー鍼灸接骨院へお越しください。肩こりや腰痛、姿勢の歪みなどの痛みに対して、適切な施術を提供します。特に首や肩の疲労には鍼灸で筋肉の緊張を緩め、血流改善を図ります。また、美容鍼も行っており、肌トラブルの改善や美肌効果が期待できます。体の痛みや美容の悩みは当院にお任せください。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:30:32.621Z",
+  "seconds": 6.5
+}

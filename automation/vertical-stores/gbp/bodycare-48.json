@@ -1,0 +1,70 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 48,
+  "sheet": {
+    "name": "なかの接骨院",
+    "address": "京都府長岡京市開田３丁目１０－３１",
+    "url": "https://share.google/ptEZl650AHXqEXDg7",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=8c9fb7ba56c1513a&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifOH0K7kipD7vFA1VJw0Q1H7O_xAEg:1759719092706&kgmid=/g/1tgf7pj6&q=%E3%81%AA%E3%81%8B%E3%81%AE%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4595068a6a2c437e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tgf7pj6",
+  "queries": [
+    "なかの接骨院",
+    "なかの接骨院 京都府長岡京市開田３丁目１０－３１"
+  ],
+  "candidates": [
+    {
+      "name": "なかの接骨院",
+      "address": "京都府長岡京市開田３丁目１０−３１",
+      "url": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%81%AE%E6%8E%A5%E9%AA%A8%E9%99%A2/@34.9238967,135.6943968,17z/data=!3m1!4b1!4m6!3m5!1s0x600104680a21c733:0xdb11654a30825177!8m2!3d34.9238967!4d135.6943968!16s%2Fg%2F1tgf7pj6",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%81%AE%E6%8E%A5%E9%AA%A8%E9%99%A2/@34.9238967,135.6943968,17z/data=!3m1!4b1!4m6!3m5!1s0x600104680a21c733:0xdb11654a30825177!8m2!3d34.9238967!4d135.6943968!16s%2Fg%2F1tgf7pj6?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "京都府長岡京市開田３丁目１０－３１",
+    "place": "京都府長岡京市開田３丁目１０−３１",
+    "sheetNorm": "京都府長岡京市開田3-10-31",
+    "placeNorm": "京都府長岡京市開田3-10-31",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "なかの接骨院",
+    "address": "京都府長岡京市開田３丁目１０−３１",
+    "category": "接骨院",
+    "lat": 34.9238967,
+    "lng": 135.6943968,
+    "gbpUrl": "https://maps.google.com/?cid=15785509538226131319",
+    "phone": "075-204-2828",
+    "website": "https://nakano-sekkothuin.com/?utm_source=google_maps&utm_medium=referral&utm_campaign=business_listing",
+    "hours": {
+      "月": "定休日",
+      "火": "09:00–12:00, 16:00–20:00",
+      "水": "09:00–12:00, 16:00–20:00",
+      "木": "09:00–12:00, 16:00–20:00",
+      "金": "09:00–12:00, 16:00–20:00",
+      "土": "09:00–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【9/21(月・祝) 乙訓DREAMフェスタ出店のお知らせ】 いつも長岡京市のなかの接骨院をご利用いただきありがとうございます。 今週末の9月21日（月・祝）、JR長岡京駅西口のバンビオ広場公園にて開催される「乙訓DREAMフェスタ」になかの接骨院が出店いたします！ 当院のブースでは、地域の皆様や子どもたちに楽しんでいただける特別企画として、院長オリジナルの体験型イベントを開催いたします。 ━━━━━━━━━━━━━━━━━━━━ ◆ 長岡京 痛みの謎解き事件簿 〜めざせ！ジュニア＆マスター柔道整復師〜 ━━━━━━━━━━━━━━━━━━━━ 駅前周辺を冒険しながら、患者さんの痛みの原因を解き明かす【職業体験型のリアル謎解きゲーム】です！ 年齢に合わせて3つのコースをご用意しておりますので、小さなお子様からご高齢の方まで、ご家族皆様でお楽しみいただけます。 ・【初級】からだポーズ大冒険（幼児〜小2向け） ・【中級】ジュニア柔道整復師（小学生向け） ・【上級】マスター柔道整復師（中高生・大人向け） 見事クリアされた方全員に、大人気の「スクイーズ」または「駄菓子詰め合わせ」から選べる景品をプレゼント！ ■ 日時：2026年9月21日(月・祝) 11:00〜17:05 ■ 場所：JR長岡京駅西口 バンビオ広場公園「なかの接骨院ブース」 ■ 参加費：誰でも一律 300円（予約不要・景品つ"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:38:57.798Z",
+  "seconds": 10.3
+}

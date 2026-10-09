@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 66,
+  "sheet": {
+    "name": "温活めぐり鍼灸サロン",
+    "address": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション ５０１",
+    "url": "https://share.google/tugKDQCmLS9d0CmTl",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=dab62521a055e104&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPtr677Lf2fDh9Dj2MLzTWuVVtqSA:1760425409689&kgmid=/g/11fd7d6k7d&q=%E6%B8%A9%E6%B4%BB%E3%82%81%E3%81%90%E3%82%8A%E9%8D%BC%E7%81%B8%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%9C%E8%AD%B7%E5%9B%BD%E5%AF%BA%E3%80%9C&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4c9f6c07ea92d68e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11fd7d6k7d",
+  "queries": [
+    "温活めぐり鍼灸サロン〜護国寺〜"
+  ],
+  "candidates": [
+    {
+      "name": "温活めぐり鍼灸サロン〜護国寺〜",
+      "address": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション 501",
+      "url": "https://www.google.com/maps/place/%E6%B8%A9%E6%B4%BB%E3%82%81%E3%81%90%E3%82%8A%E9%8D%BC%E7%81%B8%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%9C%E8%AD%B7%E5%9B%BD%E5%AF%BA%E3%80%9C/@35.7196568,139.7268099,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d2aeb0c6cf3:0xf15ec77aeee10334!8m2!3d35.7196568!4d139.7268099!16s%2Fg%2F11fd7d6k7d",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%B8%A9%E6%B4%BB%E3%82%81%E3%81%90%E3%82%8A%E9%8D%BC%E7%81%B8%E3%82%B5%E3%83%AD%E3%83%B3%E3%80%9C%E8%AD%B7%E5%9B%BD%E5%AF%BA%E3%80%9C/@35.7196568,139.7268099,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d2aeb0c6cf3:0xf15ec77aeee10334!8m2!3d35.7196568!4d139.7268099!16s%2Fg%2F11fd7d6k7d?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション ５０１",
+    "place": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション 501",
+    "sheetNorm": "東京都文京区音羽2-11-18音羽ダイヤモンドマンション501",
+    "placeNorm": "東京都文京区音羽2-11-18音羽ダイヤモンドマンション501",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "温活めぐり鍼灸サロン〜護国寺〜",
+    "address": "東京都文京区音羽２丁目１１−１８ 音羽ダイヤモンドマンション 501",
+    "category": "鍼灸院",
+    "lat": 35.7196568,
+    "lng": 139.7268099,
+    "gbpUrl": "https://maps.google.com/?cid=17392558141759095604",
+    "phone": "03-6882-1343",
+    "website": "https://www.onkyu.life/",
+    "hours": {
+      "月": "11:00–22:00",
+      "火": "11:00–22:00",
+      "水": "11:00–22:00",
+      "木": "11:00–22:00",
+      "金": "11:00–22:00",
+      "土": "11:00–22:00",
+      "日": "11:00–22:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.peakmanager.com/online/index/h8t5k2?booking_source=googlemap"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "文京区・護国寺で鍼灸院をお探しの方は、「温活めぐり鍼灸サロン」へ🌿 当院では温灸の施術も行っています。 温灸は施術を受けることで全身の血流がよくなり、不調の原因の 1 つとなる冷えの改善や肩こり・腰痛・全身の疲れの改善が望めます。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:42:16.065Z",
+  "seconds": 6
+}

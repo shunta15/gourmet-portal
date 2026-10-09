@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 26,
+  "sheet": {
+    "name": "佐々木接骨院",
+    "address": "福島県郡山市並木２丁目１３−１４",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=7cb9f156b4b884f6&hl=ja&sxsrf=AE3TifM7mvhqgmFqTl05AmJFc_UKltKtbQ:1758686985718&kgmid=/g/1wtbt_6w&q=%E4%BD%90%E3%80%85%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=21fb3148b97213ca&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1wtbt_6w",
+  "queries": [
+    "佐々木接骨院 福島県郡山市並木２丁目１３−１４"
+  ],
+  "candidates": [
+    {
+      "name": "佐々木接骨院",
+      "address": "福島県郡山市並木２丁目１３−１４",
+      "url": "https://www.google.com/maps/place/%E4%BD%90%E3%80%85%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60206cdbebca369d:0xf23f6e6553774b18!8m2!3d37.4137643!4d140.3625794!16s%2Fg%2F1wtbt_6w!19sChIJnTbK69tsIGARGEt3U2VuP_I",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E4%BD%90%E3%80%85%E6%9C%A8%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x60206cdbebca369d:0xf23f6e6553774b18!8m2!3d37.4137643!4d140.3625794!16s%2Fg%2F1wtbt_6w!19sChIJnTbK69tsIGARGEt3U2VuP_I?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福島県郡山市並木２丁目１３−１４",
+    "place": "福島県郡山市並木２丁目１３−１４",
+    "sheetNorm": "福島県郡山市並木2-13-14",
+    "placeNorm": "福島県郡山市並木2-13-14",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "佐々木接骨院",
+    "address": "福島県郡山市並木２丁目１３−１４",
+    "category": "接骨院",
+    "lat": 37.4137643,
+    "lng": 140.3625794,
+    "gbpUrl": "https://maps.google.com/?cid=17455792062182411032",
+    "phone": "024-932-7131",
+    "website": "https://www.sasaki-mimi.com/",
+    "hours": {
+      "月": "09:00–12:30",
+      "火": "09:00–12:30, 16:00–20:00",
+      "水": "09:00–12:30, 16:00–20:00",
+      "木": "09:00–12:30, 17:00–20:00",
+      "金": "09:00–12:30, 16:00–20:00",
+      "土": "09:00–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【郡山市×接骨院🍁長続きする肩こり・首こり、むち打ちの違和感がある方へ】 いつも佐々木接骨院を ご利用いただきありがとうございます。 秋が深まり、 朝晩の冷えで肩や首のつらさを感じていませんか？🍂 佐々木接骨院では、 ていねいな問診と検査をもとに、 原因を見極めながら手技を中心に施術を行います。 長く続く肩こりや首こりはもちろん、 交通事故後のむち打ちのご相談にも対応。 姿勢や体の使い方も見直しながら、 痛みを発生させにくい体づくりをお手伝いします✨ 「その場しのぎではなく整えたい」という方は、 ぜひ一度ご相談ください。 ---------------- 店舗名：佐々木接骨院 住所：福島県郡山市並木２丁目１３−１４ 営業時間：9時00分～12時30分, 16時00分～20時00分 -------------"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:34:12.142Z",
+  "seconds": 4
+}

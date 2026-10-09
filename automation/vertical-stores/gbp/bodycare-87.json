@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 87,
+  "sheet": {
+    "name": "LAKSHMI (ラクシュミー) けんえい治療院",
+    "address": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル",
+    "url": "https://share.google/Zg61VfImBYoJtBSeV",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d338bcc5c49f5d6d&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifNd-09e1ZfuMOziB7xj1oDPKuNddw:1760947985185&kgmid=/g/1tg35423&q=LAKSHMI+(%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%BC)+%E3%81%91%E3%82%93%E3%81%88%E3%81%84%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=89208886906c4723&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tg35423",
+  "queries": [
+    "LAKSHMI (ラクシュミー) けんえい治療院"
+  ],
+  "candidates": [
+    {
+      "name": "LAKSHMI (ラクシュミー) けんえい治療院",
+      "address": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル 1階",
+      "url": "https://www.google.com/maps/place/LAKSHMI+(%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%BC)+%E3%81%91%E3%82%93%E3%81%88%E3%81%84%E6%B2%BB%E7%99%82%E9%99%A2/@35.181388,136.9848753,17z/data=!3m1!4b1!4m6!3m5!1s0x60036fe353241eb1:0x91f698861864deaa!8m2!3d35.181388!4d136.9848753!16s%2Fg%2F1tg35423",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/LAKSHMI+(%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%BC)+%E3%81%91%E3%82%93%E3%81%88%E3%81%84%E6%B2%BB%E7%99%82%E9%99%A2/@35.181388,136.9848753,17z/data=!3m1!4b1!4m6!3m5!1s0x60036fe353241eb1:0x91f698861864deaa!8m2!3d35.181388!4d136.9848753!16s%2Fg%2F1tg35423?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル",
+    "place": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル 1階",
+    "sheetNorm": "愛知県名古屋市名東区八前2-301鈴幸ビル",
+    "placeNorm": "愛知県名古屋市名東区八前2-301鈴幸ビル1階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "LAKSHMI (ラクシュミー) けんえい治療院",
+    "address": "愛知県名古屋市名東区八前２丁目３０１ 鈴幸ビル 1階",
+    "category": "整体",
+    "lat": 35.181388,
+    "lng": 136.9848753,
+    "gbpUrl": "https://maps.google.com/?cid=10517761681472675498",
+    "phone": "052-775-3661",
+    "website": "https://kenei-chiryouin.com/",
+    "hours": {
+      "月": "08:30–12:00, 13:30–18:00",
+      "火": "08:30–12:00, 15:30–20:00",
+      "水": "08:30–12:00, 15:30–20:00",
+      "木": "08:30–12:00, 15:30–20:00",
+      "金": "08:30–12:00, 15:30–20:00",
+      "土": "08:30–12:00, 13:30–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://kenei-chiryouin.com/contact/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは！ラクシュミーけんえい治療院です 🌿 「最近なんだか調子が上がらない…」 「肩こりや頭痛が抜けなくてすっきりしない」 そんなお悩みの背景には、実は普段意識しにくいさまざまなストレスが関係しています。 今回は、当院でも大切にしている4つのストレスのうち、特に体に影響を与えやすい「精神的ストレス」と「構造的ストレス（体の歪み）」の対処法をご紹介します！ 💡 1. 精神的ストレスの対処法：『物理的な距離を置く』 人間関係などによる心のストレスは、相手を変えようとすると余計にエネルギーを使ってしまいます。 無理に我慢したり相手を変えようとせず、物理的に距離を置く（会う頻度を減らす、オンラインを活用するなど）ことが、心を休ませる一番の近道です。 💡 2. 構造的ストレスの対処法：『姿勢と呼吸を整える』 猫背や骨格の歪みは、胸を圧迫して呼吸を浅くし、自律神経の乱れを引き起こします。 姿勢を整えて深い呼吸ができるようになると、脳へ良い刺激が伝わり、自律神経も心も安定しやすくなります。 🔗 心と体はつながっています！ 「自分でのストレッチやセルフケアだけでは、なかなか姿勢が変わらない…」という方は、プロの手で力を抜いた状態の体に適切なケアを施すのがとても効果的です。 当院では、お一人おひとりの体に合わせた丁寧な施術で、歪みと自律神経の乱れにアプローチします。 心も体も軽やかな毎日"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:45:59.236Z",
+  "seconds": 6
+}

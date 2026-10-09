@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 139,
+  "sheet": {
+    "name": "Morphome【モルフォム】",
+    "address": "大阪府大阪市北区神山町９-２４ ジューム神山２０６",
+    "url": "https://share.google/cx3IIeML0UGwXqgXT",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "脱毛サロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=0c9d9d2c0958ac4e&kgmid=/g/11vz7xwdx2&q=Morphome&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5836f49a768b7081&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vz7xwdx2",
+  "queries": [
+    "Morphome"
+  ],
+  "candidates": [
+    {
+      "name": "Morphome",
+      "address": "大阪府大阪市北区神山町９−２４ 206",
+      "url": "https://www.google.com/maps/place/Morphome/@34.7037375,135.5053262,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e74ad332d4d7:0xe119a47e8221520b!8m2!3d34.7037375!4d135.5053262!16s%2Fg%2F11vz7xwdx2",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Morphome/@34.7037375,135.5053262,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e74ad332d4d7:0xe119a47e8221520b!8m2!3d34.7037375!4d135.5053262!16s%2Fg%2F11vz7xwdx2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市北区神山町９-２４ ジューム神山２０６",
+    "place": "大阪府大阪市北区神山町９−２４ 206",
+    "sheetNorm": "大阪府大阪市北区神山町9-24ジューム神山206",
+    "placeNorm": "大阪府大阪市北区神山町9-24206",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Morphome",
+    "address": "大阪府大阪市北区神山町９−２４ 206",
+    "category": "脱毛サービス",
+    "lat": 34.7037375,
+    "lng": 135.5053262,
+    "gbpUrl": "https://maps.google.com/?cid=16220176396207608331",
+    "phone": "080-5755-3314",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000692824/?vos=cpahpbprosmaf131118003",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:56:09.311Z",
+  "seconds": 6.2
+}

@@ -6,6 +6,24 @@
 import type { VerticalKey } from '@/lib/verticals/types';
 
 /**
+ * 店の紹介記事（新業種の実在の店。automation/vertical-stores の build-places.mjs が記事の JSON から作る）。
+ * 確認用の facts・quote・notes は持たない（画面に出さない）。
+ */
+export interface PlaceArticle {
+  /** 1 行の説明（事実だけ） */
+  headline: string;
+  /** 導入 */
+  lede: string;
+  sections: Array<{ heading: string; body: string }>;
+  /** メニュー（公式サイトの表記のまま。あるものだけ） */
+  menus?: Array<{ name: string; price?: string; minutes?: number }>;
+  /** 情報の出どころ（公式サイト・Google マップなど） */
+  sources: Array<{ label: string; url: string }>;
+  /** 確認日（YYYY-MM-DD） */
+  checkedAt?: string;
+}
+
+/**
  * Place の共通フィールド
  */
 export interface PlaceBase {
@@ -42,6 +60,8 @@ export interface PlaceBase {
   tags: string[];            // シーンタグ
   priceRange?: string;       // 価格帯（例: '¥¥', '¥¥¥'）
   intro?: string;            // 店舗紹介文
+  /** 紹介記事（新業種の実在の店。無い店は基本情報だけのページになる） */
+  article?: PlaceArticle;
   updatedAt?: string;        // ISO 8601
 }
 

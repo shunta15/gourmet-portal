@@ -1,0 +1,52 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 115,
+  "sheet": {
+    "name": "i-SPA代官山",
+    "address": "東京都渋谷区恵比寿西２－２０－８  パーフェクトルーム６１１",
+    "url": "https://maps.app.goo.gl/NNTsdXzS7TL9AoGt7",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E3%80%92150-0021+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E8%A5%BF%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%98+611/@35.6481487,139.7020049,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b443075d115:0xcac763c159b5a444!8m2!3d35.6481444!4d139.7045798?entry=tts&g_ep=EgoyMDI1MTAyMi4wIPu8ASoASAFQAw%3D%3D&skid=bfc6a536-bb12-4c80-9a88-6d04bad35c10",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "〒150-0021 東京都渋谷区恵比寿西２丁目２０−８",
+      "address": null,
+      "url": "https://www.google.com/maps/place/%E3%80%92150-0021+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E8%A5%BF%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%98/@35.6481444,139.7045798,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b443075d115:0xaca5785e1971bddc!8m2!3d35.6481444!4d139.7045798!16s%2Fg%2F12ht4167t",
+      "addressLevel": "unknown",
+      "addressDetail": "マップ側に住所が出ていない",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%80%92150-0021+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E8%A5%BF%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%98/@35.6481444,139.7045798,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b443075d115:0xaca5785e1971bddc!8m2!3d35.6481444!4d139.7045798!16s%2Fg%2F12ht4167t?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "マップ側に住所が出ていない（シート:東京都渋谷区恵比寿西２－２０－８  パーフェクトルーム６１１ / マップ:null）／店名: シート「i-SPA代官山」マップ「〒150-0021 東京都渋谷区恵比寿西２丁目２０−８」(different)",
+  "addressCompare": {
+    "sheet": "東京都渋谷区恵比寿西２－２０－８  パーフェクトルーム６１１",
+    "place": null,
+    "sheetNorm": "東京都渋谷区恵比寿西2-20-8パーフェクトルーム611",
+    "placeNorm": "",
+    "level": "unknown",
+    "detail": "マップ側に住所が出ていない"
+  },
+  "nameRelation": "different",
+  "place": null,
+  "landedPlace": {
+    "name": "〒150-0021 東京都渋谷区恵比寿西２丁目２０−８",
+    "address": null,
+    "category": null,
+    "lat": 35.6481444,
+    "lng": 139.7045798,
+    "gbpUrl": "https://maps.google.com/?cid=12440481891230006748"
+  },
+  "fetchedAt": "2026-10-09T01:27:15.858Z",
+  "seconds": 12.4
+}

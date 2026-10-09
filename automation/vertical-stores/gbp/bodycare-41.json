@@ -1,0 +1,67 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 41,
+  "sheet": {
+    "name": "大住鍼灸整骨院",
+    "address": "徳島県徳島市佐古三番町１６−８",
+    "url": "https://www.google.com/maps/place/%E5%A4%A7%E4%BD%8F%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.0808406,134.5364412,17z/data=!3m1!4b1!4m6!3m5!1s0x355372968443048f:0xe21d5b28d760d011!8m2!3d34.0808406!4d134.5364412!16s%2Fg%2F1tgh5cw2?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "大住鍼灸整骨院",
+      "address": "徳島県徳島市佐古三番町１６−８",
+      "url": "https://www.google.com/maps/place/%E5%A4%A7%E4%BD%8F%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.0808406,134.5364412,17z/data=!3m1!4b1!4m6!3m5!1s0x355372968443048f:0xe21d5b28d760d011!8m2!3d34.0808406!4d134.5364412!16s%2Fg%2F1tgh5cw2",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%A4%A7%E4%BD%8F%E9%8D%BC%E7%81%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.0808406,134.5364412,17z/data=!3m1!4b1!4m6!3m5!1s0x355372968443048f:0xe21d5b28d760d011!8m2!3d34.0808406!4d134.5364412!16s%2Fg%2F1tgh5cw2?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "徳島県徳島市佐古三番町１６−８",
+    "place": "徳島県徳島市佐古三番町１６−８",
+    "sheetNorm": "徳島県徳島市佐古3町16-8",
+    "placeNorm": "徳島県徳島市佐古3町16-8",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "大住鍼灸整骨院",
+    "address": "徳島県徳島市佐古三番町１６−８",
+    "category": "接骨院",
+    "lat": 34.0808406,
+    "lng": 134.5364412,
+    "gbpUrl": "https://maps.google.com/?cid=16293279257866588177",
+    "phone": "088-626-0611",
+    "website": null,
+    "hours": {
+      "月": "定休日",
+      "火": "08:30–13:00, 15:00–19:00",
+      "水": "08:30–13:00, 15:00–19:00",
+      "木": "08:30–13:00, 15:00–19:00",
+      "金": "08:30–13:00, 15:00–19:00",
+      "土": "08:30–13:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:01:06.807Z",
+  "seconds": 2.2
+}

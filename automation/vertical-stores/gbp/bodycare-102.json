@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 102,
+  "sheet": {
+    "name": "整体院 潮 USHIO",
+    "address": "長野県塩尻市広丘野村１５４０－１",
+    "url": "https://share.google/36w7jbx08Sq3Wf7Pg",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=dd688c13b322be04&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifMri5IQqiBlONXMwRKdqB1c05bJ-A:1761183512297&kgmid=/g/11l34svw2c&q=%E6%95%B4%E4%BD%93%E9%99%A2+%E6%BD%AE+USHIO&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=ff1ddc6224f70970&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11l34svw2c",
+  "queries": [
+    "整体院 潮 USHIO"
+  ],
+  "candidates": [
+    {
+      "name": "整体院 潮 USHIO",
+      "address": "長野県塩尻市広丘野村１５４０−１",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E9%99%A2+%E6%BD%AE+USHIO/data=!4m7!3m6!1s0x601d0500666e4199:0xe82b0516cccf946c!8m2!3d36.1425596!4d137.9498662!16s%2Fg%2F11l34svw2c!19sChIJmUFuZgAFHWARbJTPzBYFK-g",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93%E9%99%A2+%E6%BD%AE+USHIO/data=!4m7!3m6!1s0x601d0500666e4199:0xe82b0516cccf946c!8m2!3d36.1425596!4d137.9498662!16s%2Fg%2F11l34svw2c!19sChIJmUFuZgAFHWARbJTPzBYFK-g?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "長野県塩尻市広丘野村１５４０－１",
+    "place": "長野県塩尻市広丘野村１５４０−１",
+    "sheetNorm": "長野県塩尻市広丘野村1540-1",
+    "placeNorm": "長野県塩尻市広丘野村1540-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整体院 潮 USHIO",
+    "address": "長野県塩尻市広丘野村１５４０−１",
+    "category": "整体",
+    "lat": 36.1425596,
+    "lng": 137.9498662,
+    "gbpUrl": "https://maps.google.com/?cid=16729470836281414764",
+    "phone": "080-3548-7634",
+    "website": "https://ushio.seitai-in.jp/lp/koshi/",
+    "hours": {
+      "月": "09:00–21:00",
+      "火": "09:00–21:00",
+      "水": "09:00–21:00",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "09:00–21:00",
+      "日": "09:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://line.me/R/ti/p/@546zmeik"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:48:45.655Z",
+  "seconds": 4.7
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 105,
+  "sheet": {
+    "name": "Design Lab Chic",
+    "address": "千葉県君津市北子安６丁目６−１９",
+    "url": "https://share.google/qcDQHlbUTOy4lMaRD",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3112218073a0b46b&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11t__rx2_w&q=Design+Lab+Chic&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=f2bb59cd46e1a19f&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11t__rx2_w",
+  "queries": [
+    "Design Lab Chic"
+  ],
+  "candidates": [
+    {
+      "name": "Design Lab Chic",
+      "address": "千葉県君津市北子安６丁目６−１９",
+      "url": "https://www.google.com/maps/place/Design+Lab+Chic/@35.3319434,139.9200384,17z/data=!3m1!4b1!4m6!3m5!1s0x60180d0dc682b9fb:0xf3516f18272ebd8c!8m2!3d35.3319434!4d139.9200384!16s%2Fg%2F11t__rx2_w",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Design+Lab+Chic/@35.3319434,139.9200384,17z/data=!3m1!4b1!4m6!3m5!1s0x60180d0dc682b9fb:0xf3516f18272ebd8c!8m2!3d35.3319434!4d139.9200384!16s%2Fg%2F11t__rx2_w?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県君津市北子安６丁目６−１９",
+    "place": "千葉県君津市北子安６丁目６−１９",
+    "sheetNorm": "千葉県君津市北子安6-6-19",
+    "placeNorm": "千葉県君津市北子安6-6-19",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Design Lab Chic",
+    "address": "千葉県君津市北子安６丁目６−１９",
+    "category": "美容院",
+    "lat": 35.3319434,
+    "lng": 139.9200384,
+    "gbpUrl": "https://maps.google.com/?cid=17532916973857324428",
+    "phone": "090-8010-8263",
+    "website": "https://designlab-chic.com/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:25:21.871Z",
+  "seconds": 5.9
+}

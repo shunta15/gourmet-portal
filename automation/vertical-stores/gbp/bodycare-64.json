@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 64,
+  "sheet": {
+    "name": "あおい整骨院 国分中央院",
+    "address": "〒899-4332 鹿児島県霧島市国分中央１丁目９−２２ 101",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=8dfd45bbc5676ef5&hl=ja&sxsrf=AE3TifNj7lFGBqjBPXa7-l2FSEaTCXpJJw:1761018670215&kgmid=/g/11vb_8zc4t&q=%E3%81%82%E3%81%8A%E3%81%84%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%9B%BD%E5%88%86%E4%B8%AD%E5%A4%AE%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=df67f9709dd1a6f5&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11vb_8zc4t",
+  "queries": [
+    "あおい整骨院 国分中央院 鹿児島県霧島市国分中央１丁目９−２２ 101"
+  ],
+  "candidates": [
+    {
+      "name": "あおい整骨院 国分中央院",
+      "address": "鹿児島県霧島市国分中央１丁目９−２２ 101",
+      "url": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%84%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%9B%BD%E5%88%86%E4%B8%AD%E5%A4%AE%E9%99%A2/@31.7445138,130.7698853,17z/data=!3m1!4b1!4m6!3m5!1s0x353efd5478f5169f:0xbef7dbf981d86adb!8m2!3d31.7445138!4d130.7698853!16s%2Fg%2F11vb_8zc4t",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%82%E3%81%8A%E3%81%84%E6%95%B4%E9%AA%A8%E9%99%A2+%E5%9B%BD%E5%88%86%E4%B8%AD%E5%A4%AE%E9%99%A2/@31.7445138,130.7698853,17z/data=!3m1!4b1!4m6!3m5!1s0x353efd5478f5169f:0xbef7dbf981d86adb!8m2!3d31.7445138!4d130.7698853!16s%2Fg%2F11vb_8zc4t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒899-4332 鹿児島県霧島市国分中央１丁目９−２２ 101",
+    "place": "鹿児島県霧島市国分中央１丁目９−２２ 101",
+    "sheetNorm": "鹿児島県霧島市国分中央1-9-22101",
+    "placeNorm": "鹿児島県霧島市国分中央1-9-22101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "あおい整骨院 国分中央院",
+    "address": "鹿児島県霧島市国分中央１丁目９−２２ 101",
+    "category": "接骨院",
+    "lat": 31.7445138,
+    "lng": 130.7698853,
+    "gbpUrl": "https://maps.google.com/?cid=13760709051125623515",
+    "phone": "0995-73-8096",
+    "website": "https://aoiseikotsuin-kokubuchuo.com/",
+    "hours": {
+      "月": "09:00–13:00, 15:30–20:00",
+      "火": "09:00–13:00, 15:30–20:00",
+      "水": "09:00–13:00, 15:30–20:00",
+      "木": "09:00–13:00, 15:30–20:00",
+      "金": "09:00–13:00, 15:30–20:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "10月に入り、霧島市にある、あおい整骨院国分中央院は3周年を迎えます。これまで支えて下さった皆さまに感謝を込めて10月は周年キャンペーンを開催中！ 整体でからだを整えるのはもちろん、骨盤からからだを整えるグループレッスン「ソコトレ」、からだの内側から美しさをサポートする美容鍼もお得に体験いただけます。 「これからも元気に動けるからだ」を一緒に作っていきましょう。 10月も皆さまのご来院をお待ちしております。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:41:56.227Z",
+  "seconds": 5.6
+}

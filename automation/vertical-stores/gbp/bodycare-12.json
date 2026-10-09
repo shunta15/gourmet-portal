@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 12,
+  "sheet": {
+    "name": "ボディーケアフルヤ",
+    "address": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=97ae6d3e0a80ce36&hl=ja&sxsrf=AE3TifOVxX3rFXBDTpzpvWgmTOg5igWcag:1757733121679&kgmid=/g/1th5cmfy&q=%E3%83%9C%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B1%E3%82%A2%E3%83%95%E3%83%AB%E3%83%A4&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e453e1238c5e9110&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1th5cmfy",
+  "queries": [
+    "ボディーケアフルヤ 静岡県三島市大社町２−２１ 尾崎第一ビル"
+  ],
+  "candidates": [
+    {
+      "name": "ボディーケアフルヤ",
+      "address": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+      "url": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B1%E3%82%A2%E3%83%95%E3%83%AB%E3%83%A4/@35.1183044,138.9197144,17z/data=!3m1!4b1!4m6!3m5!1s0x6019907e0f4774c9:0x88b5d22c033ce19!8m2!3d35.1183044!4d138.9197144!16s%2Fg%2F1th5cmfy",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%9C%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B1%E3%82%A2%E3%83%95%E3%83%AB%E3%83%A4/@35.1183044,138.9197144,17z/data=!3m1!4b1!4m6!3m5!1s0x6019907e0f4774c9:0x88b5d22c033ce19!8m2!3d35.1183044!4d138.9197144!16s%2Fg%2F1th5cmfy?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+    "place": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+    "sheetNorm": "静岡県三島市大社町2-21尾崎第一ビル",
+    "placeNorm": "静岡県三島市大社町2-21尾崎第一ビル",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ボディーケアフルヤ",
+    "address": "静岡県三島市大社町２−２１ 尾崎第一ビル",
+    "category": "整体",
+    "lat": 35.1183044,
+    "lng": 138.9197144,
+    "gbpUrl": "https://maps.google.com/?cid=615688177901096473",
+    "phone": "055-981-8883",
+    "website": "https://bodycarefuruya.com/?utm_source=google_business&utm_medium=referral&utm_campaign=profile",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "10:00–21:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://bodycarefuruya.com/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "圧迫骨折をした後、「背中がズキズキして夜も眠れない」「少し動いただけでズーンと重くなる」——そんなつらさを、毎日ひっそり抱えていませんか？ 骨折が落ち着いたあとも、背中のこわばりや痛みが続いてしまうことは少なくありません。 当院では、そのような状態にあるお身体に対して、オステオパシーの「間接法」と呼ばれるソフトな手技を中心にアプローチしています。 バキバキと強く押し込むのではなく、骨格・筋膜・内臓・頭蓋骨まで含めた全身のつながりを丁寧に整えていく施術です。「痛みの出ている場所だけ」を無理にほぐすのではなく、お身体全体のバランスを確かめながら進めることを大切にしています。 「圧迫骨折の後だから、強い刺激は怖い…」そうお感じの方にも、できるだけ安心して受けていただけるよう、施術の力加減はお身体の状態に合わせてそのつど調整しています。 まずはお話をじっくりお聞きして、今のお身体の状態や日常生活での困りごとを一緒に確認するところから始めます。その上で、その日のお身体に合った手技を組み合わせながら、丁寧に施術を進めていきます。 ✅「施術中はほとんど痛くないのに、終わったあとに背中が楽に感じた」 ✅「こんなにやさしい施術なのに、身体がふっと軽くなるのが不思議でした」 ✅「続けて通うのが楽しみになっています」 といったお声をよくいただきます。😊 圧迫骨折後の背中の痛みや、慢性腰痛・肩こり・手の"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:31:32.576Z",
+  "seconds": 5.5
+}

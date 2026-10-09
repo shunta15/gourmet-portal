@@ -1,0 +1,4 @@
+{
+  "_note": "自動生成（automation/vertical-stores/build-features.mjs）。手で編集しない。直すときは features/<キー>.json か build-features.mjs を直して作り直す。facts・notes は入れていない（確認用）。",
+  "features": []
+}

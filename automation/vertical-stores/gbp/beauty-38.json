@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 38,
+  "sheet": {
+    "name": "Hair room Ricco",
+    "address": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+    "url": "https://share.google/4n91zDVHc87AEqU0k",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=ca19146f6630880d&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifNXRJ-_76cUARD2Pi-Yh_aNVQ6iEA:1759463485249&kgmid=/g/11b5pljwlt&q=hairroom+Ricco%EF%BC%88%E3%83%98%E3%82%A2%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0+%E3%83%AA%E3%83%83%E3%82%B3%EF%BC%89&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=02e6680d085269f4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b5pljwlt",
+  "queries": [
+    "hairroom Ricco（ヘアールーム リッコ）"
+  ],
+  "candidates": [
+    {
+      "name": "hairroom Ricco（ヘアールーム リッコ）",
+      "address": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+      "url": "https://www.google.com/maps/place/hairroom+Ricco%EF%BC%88%E3%83%98%E3%82%A2%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0+%E3%83%AA%E3%83%83%E3%82%B3%EF%BC%89/@35.863907,139.67056,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ea9f592b1563:0xa917dfd7baa99dc1!8m2!3d35.863907!4d139.67056!16s%2Fg%2F11b5pljwlt",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/hairroom+Ricco%EF%BC%88%E3%83%98%E3%82%A2%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%A0+%E3%83%AA%E3%83%83%E3%82%B3%EF%BC%89/@35.863907,139.67056,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ea9f592b1563:0xa917dfd7baa99dc1!8m2!3d35.863907!4d139.67056!16s%2Fg%2F11b5pljwlt?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+    "place": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+    "sheetNorm": "埼玉県さいたま市緑区太田窪1-26-27",
+    "placeNorm": "埼玉県さいたま市緑区太田窪1-26-27",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "hairroom Ricco（ヘアールーム リッコ）",
+    "address": "埼玉県さいたま市緑区太田窪１丁目２６−２７",
+    "category": "美容院",
+    "lat": 35.863907,
+    "lng": 139.67056,
+    "gbpUrl": "https://maps.google.com/?cid=12184453434516807105",
+    "phone": "048-816-5878",
+    "website": "http://www.hairroom-ricco.com/",
+    "hours": {
+      "月": "09:00–17:30",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "09:00–17:30",
+      "金": "09:00–17:30",
+      "土": "09:00–17:30",
+      "日": "09:00–17:30"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://hairroomricco.crm-s.net/r/?shop_cd=1"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "10月のお休みです🧸🍯 よろしくお願いします\n2026/09/13"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:11:23.972Z",
+  "seconds": 5.8
+}

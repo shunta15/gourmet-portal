@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 95,
+  "sheet": {
+    "name": "めばえ整骨院",
+    "address": "北海道札幌市手稲区新発寒７条３丁目１－１１",
+    "url": "https://share.google/xrU5bNUehgYF463OL",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d029728c4f6818f7&sxsrf=AE3TifOfLiG4ma42tQAh-3rAlZRJ4ryFhA:1761273123185&kgmid=/g/11rvdd46jk&q=%E3%82%81%E3%81%B0%E3%81%88%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7235b573126a55f4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rvdd46jk",
+  "queries": [
+    "めばえ整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "めばえ整骨院",
+      "address": "北海道札幌市手稲区新発寒７条３丁目１−１１",
+      "url": "https://www.google.com/maps/place/%E3%82%81%E3%81%B0%E3%81%88%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x5f0b273a09d927cf:0x8914519e2df38f34!8m2!3d43.1179391!4d141.2796863!16s%2Fg%2F11rvdd46jk!19sChIJzyfZCTonC18RNI_zLZ5RFIk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%81%E3%81%B0%E3%81%88%E6%95%B4%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x5f0b273a09d927cf:0x8914519e2df38f34!8m2!3d43.1179391!4d141.2796863!16s%2Fg%2F11rvdd46jk!19sChIJzyfZCTonC18RNI_zLZ5RFIk?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道札幌市手稲区新発寒７条３丁目１－１１",
+    "place": "北海道札幌市手稲区新発寒７条３丁目１−１１",
+    "sheetNorm": "北海道札幌市手稲区新発寒7条3-1-11",
+    "placeNorm": "北海道札幌市手稲区新発寒7条3-1-11",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "めばえ整骨院",
+    "address": "北海道札幌市手稲区新発寒７条３丁目１−１１",
+    "category": "接骨院",
+    "lat": 43.1179391,
+    "lng": 141.2796863,
+    "gbpUrl": "https://maps.google.com/?cid=9877609622547959604",
+    "phone": "011-688-9081",
+    "website": "https://mebaeyoyaku.mebae2022.workers.dev/top",
+    "hours": {
+      "月": "09:00–13:00",
+      "火": "09:00–21:00",
+      "水": "定休日",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "09:00–21:00",
+      "日": "09:00–13:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://mebaeyoyaku.mebae2022.workers.dev/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【交通事故にあわれた方へ】 交通事故のあとに、 「首や腰が痛くなってきた」 「身体に違和感がある」 「事故直後は何ともなかったけど、後から痛みが出てきた」 ということはありませんか？ 交通事故による身体の不調は、事故直後には症状がはっきり出ないこともあります。 少しでも気になる症状がある場合は、無理をせず早めにご相談ください。 めばえ整骨院では、むち打ち・首の痛み・腰痛・身体の痛みなど、交通事故によるケガの施術についてご相談いただけます。 また、 ✅ 相談無料 ✅ 自賠責保険適応で治療費0円の場合があります ✅ 平日・土曜日21時まで ✅ 日・祝も営業 ✅ 駐車場完備 事故後の手続きや通院について不安なことがある方も、まずはお気軽にご相談ください。 「これくらいなら大丈夫」と我慢せず、身体の状態をしっかり確認することが大切です。 📍札幌市手稲区・めばえ整骨院 交通事故のお悩みもお気軽にご相談ください。 #手稲区 #手稲区整骨院 #交通事故 #交通事故治療 #むち打ち #腰痛 #首の痛み #自賠責保険 #めばえ整骨院"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:47:25.501Z",
+  "seconds": 5
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 110,
+  "sheet": {
+    "name": "ベルチャーム(Belle Charm)",
+    "address": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+    "url": "https://share.google/eRrX74Le1T3IhFQ6f",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=b36809973b46a30f&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifN2dTsko52uSCeVoNZCnGrBbQGn6A:1761293623390&kgmid=/g/11r36z4hcv&q=Belle+Charm&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9f476074c431374f&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11r36z4hcv",
+  "queries": [
+    "Belle Charm"
+  ],
+  "candidates": [
+    {
+      "name": "Belle Charm",
+      "address": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+      "url": "https://www.google.com/maps/place/Belle+Charm/@35.7895079,139.9306713,17z/data=!3m1!4b1!4m6!3m5!1s0x601885df2e23e843:0x39bc0f30911b6a!8m2!3d35.7895079!4d139.9306713!16s%2Fg%2F11r36z4hcv",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Belle+Charm/@35.7895079,139.9306713,17z/data=!3m1!4b1!4m6!3m5!1s0x601885df2e23e843:0x39bc0f30911b6a!8m2!3d35.7895079!4d139.9306713!16s%2Fg%2F11r36z4hcv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+    "place": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+    "sheetNorm": "千葉県松戸市松戸新田579-37ジュネパレス第293階303",
+    "placeNorm": "千葉県松戸市松戸新田579-37ジュネパレス第293階303",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "Belle Charm",
+    "address": "千葉県松戸市松戸新田５７９−３７ ジュネパレス第29 3階303",
+    "category": "エステティック サロン",
+    "lat": 35.7895079,
+    "lng": 139.9306713,
+    "gbpUrl": "https://maps.google.com/?cid=16250847097854826",
+    "phone": "090-7829-2225",
+    "website": "https://bellecharm.jp/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:26:14.769Z",
+  "seconds": 5.8
+}

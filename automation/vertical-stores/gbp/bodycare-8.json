@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 8,
+  "sheet": {
+    "name": "しぶや整骨院",
+    "address": "愛知県豊田市渋谷町３丁目３９−５",
+    "url": "https://share.google/ODbrW7suKCy2wfohW",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?kgmid=/g/11ssh5h40d&hl=ja-JP&q=%E3%81%97%E3%81%B6%E3%82%84%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,shrtsdl&source=sh/x/loc/osrp/m5/1&kgs=85f13b2db519c0e3&utm_source=lcuae,lsptbl1,shrtsdl,sh/x/loc/osrp/m5/1",
+  "kgmidHint": "/g/11ssh5h40d",
+  "queries": [
+    "しぶや接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "しぶや接骨院",
+      "address": "愛知県豊田市渋谷町３丁目３９−５",
+      "url": "https://www.google.com/maps/place/%E3%81%97%E3%81%B6%E3%82%84%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6004a19800ab08b5:0xe98bc6fe7eeefa28!8m2!3d35.085571!4d137.1904119!16s%2Fg%2F11ssh5h40d!19sChIJtQirAJihBGARKPrufv7Gi-k",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%97%E3%81%B6%E3%82%84%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6004a19800ab08b5:0xe98bc6fe7eeefa28!8m2!3d35.085571!4d137.1904119!16s%2Fg%2F11ssh5h40d!19sChIJtQirAJihBGARKPrufv7Gi-k?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「しぶや整骨院」とマップ「しぶや接骨院」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "愛知県豊田市渋谷町３丁目３９−５",
+    "place": "愛知県豊田市渋谷町３丁目３９−５",
+    "sheetNorm": "愛知県豊田市渋谷町3-39-5",
+    "placeNorm": "愛知県豊田市渋谷町3-39-5",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "しぶや接骨院",
+    "address": "愛知県豊田市渋谷町３丁目３９−５",
+    "category": "接骨院",
+    "lat": 35.085571,
+    "lng": 137.1904119,
+    "gbpUrl": "https://maps.google.com/?cid=16828763228953573928",
+    "phone": "0565-79-7234",
+    "website": "https://shibuyasekkotuinn.jp/",
+    "hours": {
+      "月": "09:00–12:00, 15:30–19:30",
+      "火": "09:00–12:00, 15:30–19:30",
+      "水": "09:00–12:00, 15:30–19:30",
+      "木": "09:00–12:00",
+      "金": "09:00–12:00, 15:30–19:30",
+      "土": "09:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "2026年 10月 施療カレンダー 10月施療日カレンダーの配信です！📅 朝晩はだいぶ涼しくなってきましたね🍂 スポーツの秋、運動会や大会に向けて 急に体を動かし始めた方も多いのでは？🏃&zwj;♂️ 「なんだか膝が痛い&hellip;」 「走ったら足首をひねった」 そんなケガこそ 早めの対応が大切です💡 しぶや接骨院では スポーツ外傷や交通事故後のケガに エコー観察や様々な医療機器を活かして早期復帰をサポートしています✨ 「これくらい大丈夫かな？」 と迷ったら まずはお気軽にご相談ください😊 愛知県豊田市渋谷町のしぶや接骨院は、心に寄りそう治療を行い、患者様の「生活を豊かに」します。ねんざや骨折などのスポーツ外傷に豊富な臨床経験を持つ柔道整復師が一人ひとりに合わせた治療を提供。便利な立地にあり、各種保険対応、医療連携体制、先進的な超音波画像検査装置を用いた診断、スポーツ選手のサポートまで幅広く対応。地域の健康と快適な生活をサポートいたします。\n2026/10/01"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:05:06.742Z",
+  "seconds": 4.3,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "しぶや整骨院",
+    "mapName": "しぶや接骨院"
+  }
+}

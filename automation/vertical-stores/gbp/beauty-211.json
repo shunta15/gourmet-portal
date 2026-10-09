@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 211,
+  "sheet": {
+    "name": "OSHAREKAN【オシャレカン】",
+    "address": "北海道札幌市中央区北３条西２８‐２‐１　サンビルB２",
+    "url": "https://share.google/jnSKKkMtfo4D6wPbA",
+    "type": "理・美容院",
+    "d1": "理容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a065251458dca523&kgmid=/g/1th0y466&q=OSHAREKAN%E3%80%90%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%E9%A4%A8%E3%80%91&shndl=30&shem=damc,dlvs1,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=eff0a6cc47aa81e3&utm_source=damc,dlvs1,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1th0y466",
+  "queries": [
+    "OSHAREKAN【おしゃれ館】"
+  ],
+  "candidates": [
+    {
+      "name": "OSHAREKAN【おしゃれ館】",
+      "address": "北海道札幌市中央区北３条西２８丁目２−１ サンビル B2",
+      "url": "https://www.google.com/maps/place/OSHAREKAN%E3%80%90%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%E9%A4%A8%E3%80%91/data=!4m7!3m6!1s0x5f0b29c6da5072ed:0x65d090ecc15ab933!8m2!3d43.0601616!4d141.3143139!16s%2Fg%2F1th0y466!19sChIJ7XJQ2sYpC18RM7laweyQ0GU",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/OSHAREKAN%E3%80%90%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%E9%A4%A8%E3%80%91/data=!4m7!3m6!1s0x5f0b29c6da5072ed:0x65d090ecc15ab933!8m2!3d43.0601616!4d141.3143139!16s%2Fg%2F1th0y466!19sChIJ7XJQ2sYpC18RM7laweyQ0GU?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "北海道札幌市中央区北３条西２８‐２‐１　サンビルB２",
+    "place": "北海道札幌市中央区北３条西２８丁目２−１ サンビル B2",
+    "sheetNorm": "北海道札幌市中央区北3条西28-2-1サンビルB2",
+    "placeNorm": "北海道札幌市中央区北3条西28-2-1サンビルB2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "OSHAREKAN【おしゃれ館】",
+    "address": "北海道札幌市中央区北３条西２８丁目２−１ サンビル B2",
+    "category": "理容店",
+    "lat": 43.0601616,
+    "lng": 141.3143139,
+    "gbpUrl": "https://maps.google.com/?cid=7336523139517167923",
+    "phone": "011-643-0381",
+    "website": "https://osharekan.net/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "定休日",
+      "金": "09:00–19:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "９月の休みのお知らせ。 ビルの工事により変則的になってしまいますが、何卒宜しくお願い致します。\n2026/09/01"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T00:56:21.932Z",
+  "seconds": 6.7
+}

@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 104,
+  "sheet": {
+    "name": "友接骨院 墨田区",
+    "address": "東京都墨田区立花５丁目２８−１ 103",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=25498c63d407204d&hl=ja&sxsrf=AE3TifOYy1mUEEY9FJ32tuJhMxdLUHofyg:1761281540298&kgmid=/g/1v44qd6s&q=%E5%8F%8B%E6%8E%A5%E9%AA%A8%E9%99%A2+%E5%A2%A8%E7%94%B0%E5%8C%BA&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=c43a924bd484c41b&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1v44qd6s",
+  "queries": [
+    "友接骨院 墨田区 東京都墨田区立花５丁目２８−１ 103"
+  ],
+  "candidates": [
+    {
+      "name": "友接骨院 墨田区/交通事故治療",
+      "address": "東京都墨田区立花５丁目２８−１ 103",
+      "url": "https://www.google.com/maps/place/%E5%8F%8B%E6%8E%A5%E9%AA%A8%E9%99%A2+%E5%A2%A8%E7%94%B0%E5%8C%BA%2F%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E6%B2%BB%E7%99%82/@35.7107819,139.8323578,17z/data=!3m1!4b1!4m6!3m5!1s0x601888cafaa9e47b:0x85573137cbbcdd73!8m2!3d35.7107819!4d139.8323578!16s%2Fg%2F1v44qd6s",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8F%8B%E6%8E%A5%E9%AA%A8%E9%99%A2+%E5%A2%A8%E7%94%B0%E5%8C%BA%2F%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E6%B2%BB%E7%99%82/@35.7107819,139.8323578,17z/data=!3m1!4b1!4m6!3m5!1s0x601888cafaa9e47b:0x85573137cbbcdd73!8m2!3d35.7107819!4d139.8323578!16s%2Fg%2F1v44qd6s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都墨田区立花５丁目２８−１ 103",
+    "place": "東京都墨田区立花５丁目２８−１ 103",
+    "sheetNorm": "東京都墨田区立花5-28-1103",
+    "placeNorm": "東京都墨田区立花5-28-1103",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "友接骨院 墨田区/交通事故治療",
+    "address": "東京都墨田区立花５丁目２８−１ 103",
+    "category": "接骨院",
+    "lat": 35.7107819,
+    "lng": 139.8323578,
+    "gbpUrl": "https://maps.google.com/?cid=9608202445729357171",
+    "phone": "03-5631-8825",
+    "website": "https://tomo-sekkotsuin.com/",
+    "hours": {
+      "月": "11:00–18:00",
+      "火": "09:00–13:00, 15:00–20:00",
+      "水": "09:00–13:00, 15:00–20:00",
+      "木": "09:00–13:00, 15:00–20:00",
+      "金": "09:00–13:00, 15:00–20:00",
+      "土": "09:00–13:00, 15:00–20:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://karadarefre.jp/reserve/_index/f:103338?site_code=gbp"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:49:06.128Z",
+  "seconds": 5.5
+}

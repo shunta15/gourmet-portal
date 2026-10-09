@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 96,
+  "sheet": {
+    "name": "BOND TOKYO 渋谷",
+    "address": "東京都渋谷区円山町７－５ GP Dogenzaka ３Ｆ",
+    "url": "https://share.google/rBFAECOGzqwYhcGw4",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3112218073a0b46b&rlz=1C1JCYX_jaJP1069JP1078&kgmid=/g/11m59k8_86&q=BOND+TOKYO+%E6%B8%8B%E8%B0%B7(%E3%83%9C%E3%83%B3%E3%83%89%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC)%E7%BE%8E%E5%AE%B9%E5%AE%A4&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=236f376ec03fbaf0&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11m59k8_86",
+  "queries": [
+    "BOND TOKYO 渋谷(ボンドトーキョー)美容室"
+  ],
+  "candidates": [
+    {
+      "name": "BOND TOKYO 渋谷(ボンドトーキョー)美容室",
+      "address": "東京都渋谷区円山町７−５ GP Dogenzaka 3F",
+      "url": "https://www.google.com/maps/place/BOND+TOKYO+%E6%B8%8B%E8%B0%B7(%E3%83%9C%E3%83%B3%E3%83%89%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC)%E7%BE%8E%E5%AE%B9%E5%AE%A4/@35.657739,139.6949123,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d002bbe60c3:0x2d41a3e7990b03f6!8m2!3d35.657739!4d139.6949123!16s%2Fg%2F11m59k8_86",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/BOND+TOKYO+%E6%B8%8B%E8%B0%B7(%E3%83%9C%E3%83%B3%E3%83%89%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC)%E7%BE%8E%E5%AE%B9%E5%AE%A4/@35.657739,139.6949123,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d002bbe60c3:0x2d41a3e7990b03f6!8m2!3d35.657739!4d139.6949123!16s%2Fg%2F11m59k8_86?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都渋谷区円山町７－５ GP Dogenzaka ３Ｆ",
+    "place": "東京都渋谷区円山町７−５ GP Dogenzaka 3F",
+    "sheetNorm": "東京都渋谷区円山町7-5GPDogenzaka3F",
+    "placeNorm": "東京都渋谷区円山町7-5GPDogenzaka3F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "BOND TOKYO 渋谷(ボンドトーキョー)美容室",
+    "address": "東京都渋谷区円山町７−５ GP Dogenzaka 3F",
+    "category": "美容院",
+    "lat": 35.657739,
+    "lng": 139.6949123,
+    "gbpUrl": "https://maps.google.com/?cid=3261067820293358582",
+    "phone": "03-6455-3611",
+    "website": "https://beauty.hotpepper.jp/slnH000742925/",
+    "hours": {
+      "月": "11:00–22:00",
+      "火": "11:00–22:00",
+      "水": "11:00–22:00",
+      "木": "11:00–22:00",
+      "金": "11:00–22:00",
+      "土": "11:00–22:00",
+      "日": "11:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:23:41.221Z",
+  "seconds": 6.3
+}

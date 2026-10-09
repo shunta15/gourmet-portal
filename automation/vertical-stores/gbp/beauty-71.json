@@ -1,0 +1,54 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 71,
+  "sheet": {
+    "name": "愛音I.onTherapyHealing",
+    "address": "北海道函館市元町２１−１８",
+    "url": "https://share.google/ps1B8ppxgRG4PTsa7",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=415e83c541284ed9&sxsrf=AE3TifMhFPuvKj4Ep-BwKpBBIPTNaP8W_Q:1760664832998&kgmid=/g/11sv_03k8x&q=%E6%84%9B%E9%9F%B3I.onTherapyHealing&shndl=30&shem=dlvs3,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=fd38623b7544b02f&utm_source=dlvs3,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11sv_03k8x",
+  "queries": [
+    "愛音I.onTherapyHealing"
+  ],
+  "candidates": [
+    {
+      "name": "愛音I.onTherapyHealing",
+      "address": "北海道函館市元町１９",
+      "url": "https://www.google.com/maps/place/%E6%84%9B%E9%9F%B3I.onTherapyHealing/@41.7599499,140.7147759,17z/data=!3m1!4b1!4m6!3m5!1s0x5f9ef399e2863edb:0xecacf726a4f034df!8m2!3d41.7599499!4d140.7147759!16s%2Fg%2F11sv_03k8x",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:21-18 / マップ:19）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%84%9B%E9%9F%B3I.onTherapyHealing/@41.7599499,140.7147759,17z/data=!3m1!4b1!4m6!3m5!1s0x5f9ef399e2863edb:0xecacf726a4f034df!8m2!3d41.7599499!4d140.7147759!16s%2Fg%2F11sv_03k8x?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "番地がちがう（シート:21-18 / マップ:19）（シート:北海道函館市元町２１−１８ / マップ:北海道函館市元町１９）／店名: シート「愛音I.onTherapyHealing」マップ「愛音I.onTherapyHealing」(exact)",
+  "addressCompare": {
+    "sheet": "北海道函館市元町２１−１８",
+    "place": "北海道函館市元町１９",
+    "sheetNorm": "北海道函館市元町21-18",
+    "placeNorm": "北海道函館市元町19",
+    "level": "none",
+    "detail": "番地がちがう（シート:21-18 / マップ:19）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "愛音I.onTherapyHealing",
+    "address": "北海道函館市元町１９",
+    "category": "マッサージスパ",
+    "lat": 41.7599499,
+    "lng": 140.7147759,
+    "gbpUrl": "https://maps.google.com/?cid=17054277634293249247"
+  },
+  "fetchedAt": "2026-10-09T01:18:21.570Z",
+  "seconds": 5.8
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 80,
+  "sheet": {
+    "name": "山﨑接骨院",
+    "address": "神奈川県小田原市酒匂５丁目２−３０",
+    "url": "https://share.google/Ju4lIHRIcKO9gpHYs",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4b752b0057153c0c&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifP3UTcWBPMIDovDVz4BDgCQqoZikQ:1760667001907&kgmid=/g/12m98s7vn&q=%E5%B1%B1%EF%A8%91%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=b25c7197f8fdb2a5&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/12m98s7vn",
+  "queries": [
+    "山﨑接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "小田原本店山﨑接骨院",
+      "address": "神奈川県小田原市酒匂５丁目２−３０",
+      "url": "https://www.google.com/maps/place/%E5%B0%8F%E7%94%B0%E5%8E%9F%E6%9C%AC%E5%BA%97%E5%B1%B1%EF%A8%91%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6019a5764fe3213b:0x3543ea2beafc6372!8m2!3d35.2679016!4d139.1898523!16s%2Fg%2F12m98s7vn!19sChIJOyHjT3alGWARcmP86ivqQzU",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%B0%8F%E7%94%B0%E5%8E%9F%E6%9C%AC%E5%BA%97%E5%B1%B1%EF%A8%91%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x6019a5764fe3213b:0x3543ea2beafc6372!8m2!3d35.2679016!4d139.1898523!16s%2Fg%2F12m98s7vn!19sChIJOyHjT3alGWARcmP86ivqQzU?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "神奈川県小田原市酒匂５丁目２−３０",
+    "place": "神奈川県小田原市酒匂５丁目２−３０",
+    "sheetNorm": "神奈川県小田原市酒匂5-2-30",
+    "placeNorm": "神奈川県小田原市酒匂5-2-30",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "小田原本店山﨑接骨院",
+    "address": "神奈川県小田原市酒匂５丁目２−３０",
+    "category": "接骨院",
+    "lat": 35.2679016,
+    "lng": 139.1898523,
+    "gbpUrl": "https://maps.google.com/?cid=3838168781796696946",
+    "phone": "0465-49-6333",
+    "website": "http://www.yamazaki-bonesetter.com/",
+    "hours": {
+      "月": "07:00–11:30, 13:00–20:30",
+      "火": "07:00–11:30, 13:00–20:30",
+      "水": "07:00–11:30, 13:00–20:30",
+      "木": "07:00–11:30, 13:00–20:30",
+      "金": "07:00–11:30, 13:00–20:30",
+      "土": "07:00–12:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:44:38.818Z",
+  "seconds": 4.5
+}

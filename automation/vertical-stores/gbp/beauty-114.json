@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 114,
+  "sheet": {
+    "name": "レフティ スマイル",
+    "address": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+    "url": "https://www.google.co.jp/search?hl=ja&q=%E3%83%AC%E3%83%95%E3%83%86%E3%82%A3%20%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E7%93%9C%E7%A0%B4%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%8D%EF%BC%96%EF%BC%94%EF%BC%8D%EF%BC%92%EF%BC%90%EF%BC%93&lr=lang_ja",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "レフティ スマイル 大阪府大阪市平野区瓜破２丁目１−６４−２０３"
+  ],
+  "candidates": [
+    {
+      "name": "レフティ スマイル",
+      "address": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+      "url": "https://www.google.com/maps/place/%E3%83%AC%E3%83%95%E3%83%86%E3%82%A3+%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB/@34.6078929,135.5508104,17z/data=!3m1!4b1!4m6!3m5!1s0x6000decf5aa67e09:0x5c9b72119778ccd4!8m2!3d34.6078929!4d135.5508104!16s%2Fg%2F1yj4k4612",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%AC%E3%83%95%E3%83%86%E3%82%A3+%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB/@34.6078929,135.5508104,17z/data=!3m1!4b1!4m6!3m5!1s0x6000decf5aa67e09:0x5c9b72119778ccd4!8m2!3d34.6078929!4d135.5508104!16s%2Fg%2F1yj4k4612?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+    "place": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+    "sheetNorm": "大阪府大阪市平野区瓜破2-1-64-203",
+    "placeNorm": "大阪府大阪市平野区瓜破2-1-64-203",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "レフティ スマイル",
+    "address": "大阪府大阪市平野区瓜破２丁目１−６４−２０３",
+    "category": "エステティック サロン",
+    "lat": 34.6078929,
+    "lng": 135.5508104,
+    "gbpUrl": "https://maps.google.com/?cid=6673052692760808660",
+    "phone": "090-6974-4638",
+    "website": "https://lefty-smile.com/",
+    "hours": {
+      "月": "09:30–18:00",
+      "火": "09:30–18:00",
+      "水": "09:30–18:00",
+      "木": "09:30–18:00",
+      "金": "09:30–18:00",
+      "土": "09:30–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "楽しい妊活のYouTubeをアップしました。 妊活中、仕事をどうしようか悩まれてる方へ必見です。 妊活サポート大阪 妊活マッサージ大阪 フェムケア大阪 更年期フェムケア"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:26:58.680Z",
+  "seconds": 6.2
+}

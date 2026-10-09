@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 119,
+  "sheet": {
+    "name": "Sakurasaku EYELASH SALON",
+    "address": "静岡県富士宮市万野原新田４０００−２１",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=a9b651f2ccff5662&hl=ja&sxsrf=AE3TifNKz41amFI5HbpttczAir4dmZJpEg:1761624714469&kgmid=/g/11hbpyvgd4&q=Sakurasaku+EYELASH+SALON&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=e3d2e420c812157c&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11hbpyvgd4",
+  "queries": [
+    "Sakurasaku EYELASH SALON 静岡県富士宮市万野原新田４０００−２１"
+  ],
+  "candidates": [
+    {
+      "name": "Sakurasaku EYELASH SALON",
+      "address": "静岡県富士宮市万野原新田４０００−２１",
+      "url": "https://www.google.com/maps/place/Sakurasaku+EYELASH+SALON/@35.2522187,138.6222365,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd1210d8fe381:0xfb7a815c49919e31!8m2!3d35.2522187!4d138.6222365!16s%2Fg%2F11hbpyvgd4",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Sakurasaku+EYELASH+SALON/@35.2522187,138.6222365,17z/data=!3m1!4b1!4m6!3m5!1s0x601bd1210d8fe381:0xfb7a815c49919e31!8m2!3d35.2522187!4d138.6222365!16s%2Fg%2F11hbpyvgd4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県富士宮市万野原新田４０００−２１",
+    "place": "静岡県富士宮市万野原新田４０００−２１",
+    "sheetNorm": "静岡県富士宮市万野原新田4000-21",
+    "placeNorm": "静岡県富士宮市万野原新田4000-21",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Sakurasaku EYELASH SALON",
+    "address": "静岡県富士宮市万野原新田４０００−２１",
+    "category": "まつげサロン",
+    "lat": 35.2522187,
+    "lng": 138.6222365,
+    "gbpUrl": "https://maps.google.com/?cid=18120938284049866289",
+    "phone": "090-7606-4143",
+    "website": "https://www.sakurasaku-eyelashsalon.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "24時間営業",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🎃happy Halloween 🎃 10/31までご来店いただいたお客さまに 『ラスク』をプレゼント🎁 大人にもありま〜す😇✴︎ ◯チョコ ◯ホワイトチョコ ◯キャラメルアーモンド ◯リッチシュガー　 　　 4種類、計100個ご用意しております。 なくなり次第終了です。 お待ちしております👻"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:28:06.093Z",
+  "seconds": 6.1
+}

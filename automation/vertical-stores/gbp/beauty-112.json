@@ -1,0 +1,75 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 112,
+  "sheet": {
+    "name": "カウンセリングルームnatuiro",
+    "address": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+    "url": "https://www.google.co.jp/search?hl=ja&q=%E8%80%B3%E3%81%A4%E3%81%BC%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88natuiro%20%E5%B1%B1%E5%8F%A3%E7%9C%8C%E5%B1%B1%E9%99%BD%E5%B0%8F%E9%87%8E%E7%94%B0%E5%B8%82%E6%96%B0%E7%94%9F%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%94%EF%BC%8D%EF%BC%91%EF%BC%91%20%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%8F%E3%82%A4%E3%83%84%20102%E5%8F%B7%E5%AE%A4&lr=lang_ja&lqi=CnPogLPjgaTjgbzjg4DjgqTjgqjjg4Pjg4huYXR1aXJvIOWxseWPo-ecjOWxsemZveWwj-mHjueUsOW4guaWsOeUn--8keS4geebru-8lO-8je-8ke-8kSDjgrnjgqvjgqTjg4_jgqTjg4QgMTAy5Y-35a6kWngiduiAsyDjgaTjgbwg44OA44Kk44Ko44OD44OIIG5hdHVpcm8g5bGx5Y-jIOecjCDlsbHpmb0g5bCP6YeO55SwIOW4giDmlrDnlJ8gMSDkuIHnm64gNCAxMSDjgrnjgqvjgqQg44OP44Kk44OEIDEwMiDlj7flrqSSARN3ZWlnaHRfbG9zc19zZXJ2aWNl#rlimm=4569890107259408315",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "カウンセリングルームnatuiro 山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室"
+  ],
+  "candidates": [
+    {
+      "name": "SUCCESS natuiro",
+      "address": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+      "url": "https://www.google.com/maps/place/SUCCESS+natuiro/@34.0000644,131.1791006,17z/data=!3m1!4b1!4m6!3m5!1s0x354381ca5e00b941:0x3f6b82d719c4cfbb!8m2!3d34.0000644!4d131.1791006!16s%2Fg%2F11sjfnpfjg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/SUCCESS+natuiro/@34.0000644,131.1791006,17z/data=!3m1!4b1!4m6!3m5!1s0x354381ca5e00b941:0x3f6b82d719c4cfbb!8m2!3d34.0000644!4d131.1791006!16s%2Fg%2F11sjfnpfjg?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「カウンセリングルームnatuiro」とマップ「SUCCESS natuiro」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+    "place": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+    "sheetNorm": "山口県山陽小野田市新生1-4-11スカイハイツ102室",
+    "placeNorm": "山口県山陽小野田市新生1-4-11スカイハイツ102室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "SUCCESS natuiro",
+    "address": "山口県山陽小野田市新生１丁目４−１１ スカイハイツ 102号室",
+    "category": "ダイエット支援サービス",
+    "lat": 34.0000644,
+    "lng": 131.1791006,
+    "gbpUrl": "https://maps.google.com/?cid=4569890107259408315",
+    "phone": "090-7597-1342",
+    "website": "https://natuiro1107.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:02:21.752Z",
+  "seconds": 5.7,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "カウンセリングルームnatuiro",
+    "mapName": "SUCCESS natuiro"
+  }
+}

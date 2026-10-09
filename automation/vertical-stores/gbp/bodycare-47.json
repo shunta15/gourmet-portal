@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 47,
+  "sheet": {
+    "name": "なかがわ整骨院",
+    "address": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+    "url": "https://share.google/fdqe0jFBsEP0FmFnm",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=25c2551b4f45e1f2&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPLNK7XyEDiToO8OIVk1fKpvqml4A:1759486496280&kgmid=/g/1tj876rl&q=%E3%81%AA%E3%81%8B%E3%81%8C%E3%82%8F%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=a6c6583890e6de3e&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tj876rl",
+  "queries": [
+    "なかがわ整骨院",
+    "なかがわ整骨院 福岡県行橋市泉中央１丁目１１−２４−１０２"
+  ],
+  "candidates": [
+    {
+      "name": "なかがわ整骨院",
+      "address": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+      "url": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%81%8C%E3%82%8F%E6%95%B4%E9%AA%A8%E9%99%A2/@33.7169567,130.9773176,17z/data=!3m1!4b1!4m6!3m5!1s0x3543e83646a4e86f:0x531c65261bc10379!8m2!3d33.7169567!4d130.9773176!16s%2Fg%2F1tj876rl",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%81%AA%E3%81%8B%E3%81%8C%E3%82%8F%E6%95%B4%E9%AA%A8%E9%99%A2/@33.7169567,130.9773176,17z/data=!3m1!4b1!4m6!3m5!1s0x3543e83646a4e86f:0x531c65261bc10379!8m2!3d33.7169567!4d130.9773176!16s%2Fg%2F1tj876rl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+    "place": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+    "sheetNorm": "福岡県行橋市泉中央1-11-24-102",
+    "placeNorm": "福岡県行橋市泉中央1-11-24-102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "なかがわ整骨院",
+    "address": "福岡県行橋市泉中央１丁目１１−２４−１０２",
+    "category": "接骨院",
+    "lat": 33.7169567,
+    "lng": 130.9773176,
+    "gbpUrl": "https://maps.google.com/?cid=5988772818844713849",
+    "phone": "0930-23-5253",
+    "website": "https://www.nakagawa-osteopathic-clinic.com/",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "09:00–20:00",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "09:00–15:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://lin.ee/qfbYLTx"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【行橋市・みやこ町・苅田町で生理痛・PMSのお悩みなら】 「生理痛がひどくて仕事に集中できない」 「学校を休んでしまうほど痛みがつらい」 「薬を飲んでも生理痛が改善しない」 「生理前からイライラやだるさがある」 このようなお悩みはありませんか？ 生理痛は「毎月のことだから仕方ない」と我慢してしまう方も少なくありません。 当院では、生理痛やPMS（月経前症候群）など女性特有のお悩みに対して、**ホルモンバランス療法**を行っています。 骨盤だけを見るのではなく、自律神経、身体全体のバランス、筋肉の緊張、姿勢などを確認し、お一人おひとりの状態に合わせて施術を行います。 特に「痛み止めを飲んでも効かない」「生理痛で仕事や学校生活に支障がある」という方は、一人で我慢せずご相談ください。 行橋市・みやこ町・苅田町で、生理痛・PMS・ホルモンバランス・自律神経の乱れなど、女性特有のお悩みで整体をお探しの方はお気軽にご相談ください。 ※強い生理痛や急な症状の悪化、不正出血などがある場合は、一度婦人科などの医療機関への受診をおすすめします。 ご予約・お問い合わせは公式LINEからお気軽にどうぞ。 【公式LINE】 https://lin.ee/wMVvlwG"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:38:44.043Z",
+  "seconds": 10.8
+}

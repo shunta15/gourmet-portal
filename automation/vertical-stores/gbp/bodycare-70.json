@@ -1,0 +1,78 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 70,
+  "sheet": {
+    "name": "本厚木かしわぎ整体院",
+    "address": "神奈川県厚木市中町１丁目７－１８ 亀屋ビル 101",
+    "url": "https://share.google/JsFE2xeLAuMZ7L8Mb",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=04a013b6530774b2&sxsrf=AE3TifO5Yyxelab8Gas7erFjijov6laskA:1760503887338&kgmid=/g/11vt1zd0db&q=%E6%9C%AC%E5%8E%9A%E6%9C%A8%E3%81%8B%E3%81%97%E3%82%8F%E3%81%8E%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4da5eafc5bdfd642&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vt1zd0db",
+  "queries": [
+    "本厚木かしわぎ整体院"
+  ],
+  "candidates": [
+    {
+      "name": "本厚木かしわぎ整体院",
+      "address": "神奈川県厚木市中町１丁目７−１８ 亀屋ビル 101",
+      "url": "https://www.google.com/maps/place/%E6%9C%AC%E5%8E%9A%E6%9C%A8%E3%81%8B%E3%81%97%E3%82%8F%E3%81%8E%E6%95%B4%E4%BD%93%E9%99%A2/@35.4429262,139.3677884,17z/data=!3m1!4b1!4m6!3m5!1s0x6018558c7e1c462b:0xd9028fc31953a09c!8m2!3d35.4429262!4d139.3677884!16s%2Fg%2F11vt1zd0db",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%9C%AC%E5%8E%9A%E6%9C%A8%E3%81%8B%E3%81%97%E3%82%8F%E3%81%8E%E6%95%B4%E4%BD%93%E9%99%A2/@35.4429262,139.3677884,17z/data=!3m1!4b1!4m6!3m5!1s0x6018558c7e1c462b:0xd9028fc31953a09c!8m2!3d35.4429262!4d139.3677884!16s%2Fg%2F11vt1zd0db?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県厚木市中町１丁目７－１８ 亀屋ビル 101",
+    "place": "神奈川県厚木市中町１丁目７−１８ 亀屋ビル 101",
+    "sheetNorm": "神奈川県厚木市中町1-7-18亀屋ビル101",
+    "placeNorm": "神奈川県厚木市中町1-7-18亀屋ビル101",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "本厚木かしわぎ整体院",
+    "address": "神奈川県厚木市中町１丁目７−１８ 亀屋ビル 101",
+    "category": "整体",
+    "lat": 35.4429262,
+    "lng": 139.3677884,
+    "gbpUrl": "https://maps.google.com/?cid=15637218924290089116",
+    "phone": "046-204-5082",
+    "website": "https://www.kashiwagi-seitaiin.com/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "定休日",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–12:00",
+      "土": "10:00–16:00",
+      "日": "10:00–16:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://www.ekiten.jp/shop_6022805/reserve/"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/CSP/kr/reserve/?cstt=6&storeId=H000695843"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "本厚木で顎関節症にお悩みの方へ｜本厚木かしわぎ整体院 「口を開けるとカクカク音が鳴る」 「食事のたびに顎が痛い」 「口が開きにくくなってきた」 そんな 顎関節症 の症状でお悩みではありませんか？ 厚木市中町にある 本厚木かしわぎ整体院 です。 当院では、顎関節症の根本改善を目指した整体施術を行っています。 ◆ 顎関節症は“顎だけの問題ではない”ことも 顎関節症は、 ・顎の筋肉の緊張 ・噛み合わせのクセ だけでなく、 ・首や肩のコリ ・姿勢の乱れ ・骨盤の歪み など、全身のバランスが関係しているケースが多くあります。 例えば、猫背などの姿勢の崩れが首や肩の緊張を引き起こし、 それが顎の筋肉に負担をかけている場合もあります。 ◆ 本厚木で選ばれる理由｜全身から整える顎ケア 本厚木かしわぎ整体院では、 顎だけでなく体全体のバランスを整える整体を行っています。 ・顎周りの筋肉調整 ・首や肩のバランス調整 ・骨盤矯正 を組み合わせることで、 顎にかかる負担を根本から軽減していきます。 ◆ 当院の整体の特徴 ● バキバキしない優しい施術 身体に負担の少ない整体で、初めての方でも安心です。 ● 丁寧なカウンセリング 症状や生活習慣をしっかり確認し、原因からアプローチします。 ● 本厚木駅徒歩5分 通いやすく、継続しやすい環境です。 ◆ このような方におすすめ ・本厚木で顎関節症の整体を探している"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:42:58.429Z",
+  "seconds": 8
+}

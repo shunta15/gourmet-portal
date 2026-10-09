@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 106,
+  "sheet": {
+    "name": "CHAINON",
+    "address": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+    "url": "https://share.google/kyVtVx0S0X3wMuALk",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=8fe6cc88df9a283f&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifPy7ELiGrdcZFQCcS_EVf2O1b7qWQ:1761274482750&kgmid=/g/11rsbd0wqq&q=CHAINON%E3%80%90%E3%82%B7%E3%82%A7%E3%83%8E%E3%83%B3%E3%80%91%E8%88%B9%E6%A9%8B&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=1ff25cad960baf6f&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rsbd0wqq",
+  "queries": [
+    "CHAINON【シェノン】船橋"
+  ],
+  "candidates": [
+    {
+      "name": "CHAINON【シェノン】船橋",
+      "address": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+      "url": "https://www.google.com/maps/place/CHAINON%E3%80%90%E3%82%B7%E3%82%A7%E3%83%8E%E3%83%B3%E3%80%91%E8%88%B9%E6%A9%8B/@35.6945572,139.9921627,17z/data=!3m1!4b1!4m6!3m5!1s0x60187fd4e7734693:0x36528030e8af4ae!8m2!3d35.6945572!4d139.9921627!16s%2Fg%2F11rsbd0wqq",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/CHAINON%E3%80%90%E3%82%B7%E3%82%A7%E3%83%8E%E3%83%B3%E3%80%91%E8%88%B9%E6%A9%8B/@35.6945572,139.9921627,17z/data=!3m1!4b1!4m6!3m5!1s0x60187fd4e7734693:0x36528030e8af4ae!8m2!3d35.6945572!4d139.9921627!16s%2Fg%2F11rsbd0wqq?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+    "place": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+    "sheetNorm": "千葉県船橋市宮本4-1-1鳥光ビル103",
+    "placeNorm": "千葉県船橋市宮本4-1-1鳥光ビル103",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "CHAINON【シェノン】船橋",
+    "address": "千葉県船橋市宮本４丁目１−１ 鳥光ビル 103",
+    "category": "美容院",
+    "lat": 35.6945572,
+    "lng": 139.9921627,
+    "gbpUrl": "https://maps.google.com/?cid=244645748355560622",
+    "phone": "080-1328-5952",
+    "website": "https://beauty.hotpepper.jp/slnH000546725/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:25:32.503Z",
+  "seconds": 5.8
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 20,
+  "sheet": {
+    "name": "クライオサロン",
+    "address": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+    "url": "https://share.google/TRkkuz2lfPHQSI8gV",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=6a6f709483df0fcb&rlz=1C1NDCM_jaJP1037JP1131&sxsrf=AE3TifP4iwezpUWUIUD4196JTFfiiKdZVA:1758367226259&kgmid=/g/1v26m2rd&q=%E5%86%B7%E5%87%8D%E7%BE%8E%E5%AE%B9+%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%AA%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%95%E3%82%A9%E3%83%88%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A3%E3%83%AF%E3%83%BC+%E6%96%B0%E5%AE%BF&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e2ab989f534234e9&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1v26m2rd",
+  "queries": [
+    "冷凍美容 クライオサロン フォトニックシャワー 新宿"
+  ],
+  "candidates": [
+    {
+      "name": "クライオサロン",
+      "address": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+      "url": "https://www.google.com/maps/place/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%AA%E3%82%B5%E3%83%AD%E3%83%B3/@35.6903914,139.7063218,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdb58d14abf:0x434f6ff423f90b89!8m2!3d35.6903914!4d139.7063218!16s%2Fg%2F1v26m2rd",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%AA%E3%82%B5%E3%83%AD%E3%83%B3/@35.6903914,139.7063218,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdb58d14abf:0x434f6ff423f90b89!8m2!3d35.6903914!4d139.7063218!16s%2Fg%2F1v26m2rd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+    "place": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+    "sheetNorm": "東京都新宿区新宿3-2-2紺野ビル6F",
+    "placeNorm": "東京都新宿区新宿3-2-2紺野ビル6F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "クライオサロン",
+    "address": "東京都新宿区新宿３丁目２−２ 紺野ビル 6F",
+    "category": "エステティック サロン",
+    "lat": 35.6903914,
+    "lng": 139.7063218,
+    "gbpUrl": "https://maps.google.com/?cid=4850218418067540873",
+    "phone": "03-3225-9351",
+    "website": "https://www.jmedix.co.jp/cryosalon.html",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "11:00–21:00",
+      "木": "11:00–21:00",
+      "金": "11:00–21:00",
+      "土": "11:00–21:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "- @mmymmyg by @get_regrammer 💡 💡 美容ケアの時間を心地よいものに🫧 新宿三丁目駅C4出口を出てすぐ。 新宿で創業40年のクライオサロンさん(@cryo_salon )へフォトニックシャワーを受けに行ってきたよ♡ 4色の可視光線を全身に浴びる 「フォトニックシャワー」 元ガングロギャル、時間があれば日焼けサロンにいつもいたから、フォトニックシャワーをみてなんかとてもセンチメンタルな気持ちに🥺♡ 美容機器でも見かけるLEDを全身で浴びてみたよ〜✌️ 最近雨続きじゃない？ なんだかお日さまが恋しくて、全身に光浴びるのとても楽しみにしていたの😊 カウンセリングをして、説明を受けてお着替えしてスタート。 最初はうつ伏せで、そのあと仰向けに。 スタッフさんが時間を教えてくれて、開け閉めもしてくれたよ🥰(自分でも開け閉め可能) ほんのり暖かくて、ぽかぽかしてきて仰向けになってから寝てしまってたの🫪 中は約40°くらいの空間。 暑い時は扇風機をつけられるよ✨ フォトニックシャワーは目を開けていてもいいのに、あまりにも心地よくて途中から爆睡してた私😭 イメージ的には岩盤浴みたいな感じで 汗が噴き出るわけでもなく、ほんとポカポカしてるくらいで、シャワーやメイク直しも必要ないから、隙間時間にも良さそう♡ 赤・青・緑・黄の4色の可視光線を一気に全身に照射でき"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:08:11.979Z",
+  "seconds": 9
+}

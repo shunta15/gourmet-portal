@@ -1,0 +1,75 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 10,
+  "sheet": {
+    "name": "大和整骨院",
+    "address": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+    "url": "https://share.google/sM08f1i8ndBHcyrDj",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=53569ca3ec5332b8&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifO3WORxkMZ7cjQEEt6YjVl9DeErvg:1757668485040&kgmid=/g/11g72bscf2&q=%E5%A4%A7%E5%92%8C%E6%B2%BB%E7%99%82%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=62c618a83979d86b&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11g72bscf2",
+  "queries": [
+    "大和治療院"
+  ],
+  "candidates": [
+    {
+      "name": "大和治療院",
+      "address": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+      "url": "https://www.google.com/maps/place/%E5%A4%A7%E5%92%8C%E6%B2%BB%E7%99%82%E9%99%A2/data=!4m7!3m6!1s0x600376aaba43ecf1:0x91cb02692e0d92a6!8m2!3d35.2097763!4d136.9143914!16s%2Fg%2F11g72bscf2!19sChIJ8exDuqp2A2ARppINLmkCy5E",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%A4%A7%E5%92%8C%E6%B2%BB%E7%99%82%E9%99%A2/data=!4m7!3m6!1s0x600376aaba43ecf1:0x91cb02692e0d92a6!8m2!3d35.2097763!4d136.9143914!16s%2Fg%2F11g72bscf2!19sChIJ8exDuqp2A2ARppINLmkCy5E?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「大和整骨院」とマップ「大和治療院」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+    "place": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+    "sheetNorm": "愛知県名古屋市北区鳩岡2-19-16",
+    "placeNorm": "愛知県名古屋市北区鳩岡2-19-16",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "大和治療院",
+    "address": "愛知県名古屋市北区鳩岡２丁目１９−１６",
+    "category": "医療施設",
+    "lat": 35.2097763,
+    "lng": 136.9143914,
+    "gbpUrl": "https://maps.google.com/?cid=10505493206539276966",
+    "phone": "052-938-3477",
+    "website": "https://yamato-seikotsuin.com/own_expense_menu/",
+    "hours": {
+      "月": "09:00–21:00",
+      "火": "09:00–21:00",
+      "水": "09:00–21:00",
+      "木": "09:00–21:00",
+      "金": "09:00–21:00",
+      "土": "09:00–21:00",
+      "日": "09:00–20:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:04:06.980Z",
+  "seconds": 4.3,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "大和整骨院",
+    "mapName": "大和治療院"
+  }
+}

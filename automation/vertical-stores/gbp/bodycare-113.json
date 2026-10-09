@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 113,
+  "sheet": {
+    "name": "藤沢協和整骨院・整体院",
+    "address": "神奈川県藤沢市南藤沢２０－２ 第一興産 22号館）5階",
+    "url": "https://share.google/0i4HlhTFu4w2PbL0i",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a9b651f2ccff5662&sxsrf=AE3TifMMIMWXnuMKcRGLe6JGQt6lO7Pzcw:1761627861045&kgmid=/g/11s5902gzz&q=%E8%97%A4%E6%B2%A2%E5%8D%94%E5%92%8C%E6%95%B4%E9%AA%A8%E9%99%A2%E3%83%BB%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5e136b20744d1375&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11s5902gzz",
+  "queries": [
+    "藤沢協和整骨院・整体院"
+  ],
+  "candidates": [
+    {
+      "name": "藤沢協和整骨院",
+      "address": "神奈川県藤沢市南藤沢２０−２ 第一興産 22号館）5階",
+      "url": "https://www.google.com/maps/place/%E8%97%A4%E6%B2%A2%E5%8D%94%E5%92%8C%E6%95%B4%E9%AA%A8%E9%99%A2/@35.337688,139.4883055,17z/data=!3m1!4b1!4m6!3m5!1s0x60184ff66f9d99ad:0x563079aa4141ed5c!8m2!3d35.337688!4d139.4883055!16s%2Fg%2F11s5902gzz",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%97%A4%E6%B2%A2%E5%8D%94%E5%92%8C%E6%95%B4%E9%AA%A8%E9%99%A2/@35.337688,139.4883055,17z/data=!3m1!4b1!4m6!3m5!1s0x60184ff66f9d99ad:0x563079aa4141ed5c!8m2!3d35.337688!4d139.4883055!16s%2Fg%2F11s5902gzz?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "神奈川県藤沢市南藤沢２０－２ 第一興産 22号館）5階",
+    "place": "神奈川県藤沢市南藤沢２０−２ 第一興産 22号館）5階",
+    "sheetNorm": "神奈川県藤沢市南藤沢20-2第一興産22館)5階",
+    "placeNorm": "神奈川県藤沢市南藤沢20-2第一興産22館)5階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "藤沢協和整骨院",
+    "address": "神奈川県藤沢市南藤沢２０−２ 第一興産 22号館）5階",
+    "category": "接骨院",
+    "lat": 35.337688,
+    "lng": 139.4883055,
+    "gbpUrl": "https://maps.google.com/?cid=6210597658290154844",
+    "phone": "0466-54-8911",
+    "website": "https://fujisawa.kyouwaseikotsu.com/",
+    "hours": {
+      "月": "10:00–13:00, 15:30–20:00",
+      "火": "10:00–13:00, 15:30–20:00",
+      "水": "定休日",
+      "木": "10:00–13:00, 15:30–20:00",
+      "金": "10:00–13:00, 15:30–20:00",
+      "土": "09:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは！ 新しくLINEを始めました。 （アカウント＠911xawvs） こちらで連絡を取り合えたら嬉しいです。お手数ですが、お友だち追加していただけたらスタンプか一言返信してもらえると助かります！よろしくお願いいたします。✨ 初めての方もご質問などお気軽にお問い合わせはください。\n2026/09/19"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:50:33.202Z",
+  "seconds": 6.6
+}

@@ -1,0 +1,67 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 40,
+  "sheet": {
+    "name": "整足院 徳島店（外反母趾・足の痛み専門）",
+    "address": "徳島県徳島市西須賀町東開４１−４",
+    "url": "https://www.google.com/maps/place/%E6%95%B4%E8%B6%B3%E9%99%A2+%E5%BE%B3%E5%B3%B6%E5%BA%97%EF%BC%88%E5%A4%96%E5%8F%8D%E6%AF%8D%E8%B6%BE%E3%83%BB%E8%B6%B3%E3%81%AE%E7%97%9B%E3%81%BF%E5%B0%82%E9%96%80%EF%BC%89/@34.0321459,134.5476782,17z/data=!3m1!4b1!4m6!3m5!1s0x35530d1a7af2e09f:0xb0176fc3d511d327!8m2!3d34.0321459!4d134.5476782!16s%2Fg%2F11lf953r71?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "整足院 徳島店（外反母趾・足の痛み専門）",
+      "address": "徳島県徳島市西須賀町東開４１−４",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E8%B6%B3%E9%99%A2+%E5%BE%B3%E5%B3%B6%E5%BA%97%EF%BC%88%E5%A4%96%E5%8F%8D%E6%AF%8D%E8%B6%BE%E3%83%BB%E8%B6%B3%E3%81%AE%E7%97%9B%E3%81%BF%E5%B0%82%E9%96%80%EF%BC%89/@34.0321459,134.5476782,17z/data=!3m1!4b1!4m6!3m5!1s0x35530d1a7af2e09f:0xb0176fc3d511d327!8m2!3d34.0321459!4d134.5476782!16s%2Fg%2F11lf953r71",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E8%B6%B3%E9%99%A2+%E5%BE%B3%E5%B3%B6%E5%BA%97%EF%BC%88%E5%A4%96%E5%8F%8D%E6%AF%8D%E8%B6%BE%E3%83%BB%E8%B6%B3%E3%81%AE%E7%97%9B%E3%81%BF%E5%B0%82%E9%96%80%EF%BC%89/@34.0321459,134.5476782,17z/data=!3m1!4b1!4m6!3m5!1s0x35530d1a7af2e09f:0xb0176fc3d511d327!8m2!3d34.0321459!4d134.5476782!16s%2Fg%2F11lf953r71?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "徳島県徳島市西須賀町東開４１−４",
+    "place": "徳島県徳島市西須賀町東開４１−４",
+    "sheetNorm": "徳島県徳島市西須賀町東開41-4",
+    "placeNorm": "徳島県徳島市西須賀町東開41-4",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整足院 徳島店（外反母趾・足の痛み専門）",
+    "address": "徳島県徳島市西須賀町東開４１−４",
+    "category": "整体",
+    "lat": 34.0321459,
+    "lng": 134.5476782,
+    "gbpUrl": "https://maps.google.com/?cid=12688733362023682855",
+    "phone": "088-678-9685",
+    "website": "https://tokushima.kashiwagura-seikotsuin.com/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "■薬やシップに頼らない、自立した生活を目指して 薬やシップに頼らない生活を目指すことは可能です。 本来の改善とは、整体施術やインソール、サポーター、装具にも頼らず、 ご自身での体操や運動、栄養管理で健康を維持できる状態が理想です。 当院のテーピング施術も、 最終的にはテーピングをしなくて良い形を目指します。 テーピングをしている時としていない時の差を無くしていくことで、 ご自身の力で足を使えるように導き、 薬やシップに頼ることのない、自立した生活を送れるようサポートいたします。 徳島で外反母趾・フットケア・巻き爪のご相談は【整足院 徳島店】にお任せください！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:37:00.364Z",
+  "seconds": 4.9
+}

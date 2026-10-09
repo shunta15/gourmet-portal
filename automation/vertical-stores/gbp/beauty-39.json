@@ -1,0 +1,68 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 39,
+  "sheet": {
+    "name": "エステ Angel",
+    "address": "福岡県北九州市門司区上本町２−３５",
+    "url": "https://share.google/b5bqp8WTwsAm8VM7f",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=ca19146f6630880d&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11mhgh7tz2&q=%E3%82%A8%E3%82%B9%E3%83%86+Angel&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=44bf394963c23760&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11mhgh7tz2",
+  "queries": [
+    "エステ Angel",
+    "エステ Angel 福岡県北九州市門司区上本町２−３５"
+  ],
+  "candidates": [
+    {
+      "name": "エステ Angel",
+      "address": "福岡県北九州市門司区上本町２−３５",
+      "url": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%86+Angel/@33.9458367,130.9796317,17z/data=!3m1!4b1!4m6!3m5!1s0x354397264a53bde9:0xeedaea982874a9c4!8m2!3d33.9458367!4d130.9796317!16s%2Fg%2F11mhgh7tz2",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A8%E3%82%B9%E3%83%86+Angel/@33.9458367,130.9796317,17z/data=!3m1!4b1!4m6!3m5!1s0x354397264a53bde9:0xeedaea982874a9c4!8m2!3d33.9458367!4d130.9796317!16s%2Fg%2F11mhgh7tz2?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県北九州市門司区上本町２−３５",
+    "place": "福岡県北九州市門司区上本町２−３５",
+    "sheetNorm": "福岡県北九州市門司区上本町2-35",
+    "placeNorm": "福岡県北九州市門司区上本町2-35",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "エステ Angel",
+    "address": "福岡県北九州市門司区上本町２−３５",
+    "category": "エステティック サロン",
+    "lat": 33.9458367,
+    "lng": 130.9796317,
+    "gbpUrl": "https://maps.google.com/?cid=17211326865184434628",
+    "phone": "080-3957-8843",
+    "website": "https://angel-2004.com/",
+    "hours": null,
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://angel-2004.com/menu/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🍂今週まだご予約いただけます🍂 少しずつ涼しくなってきましたね✨ 季節の変わり目は、身体も疲れを感じやすい時期。 そんな今におすすめなのが【よもぎ蒸し】🌿 身体をじんわり温めながら、心もリラックス♡ 冷えが気になる方や、ゆっくり汗をかいてリフレッシュしたい方にもおすすめです✨ もちろん、 ♡まつげパーマ ♡マツエク ♡アイブロウWAX ♡脱毛 ♡よもぎ蒸し 気になるメニューがございましたら、ぜひこの機会にお試しください♪ 「今週どこか空いてないかな？」という方も大歓迎です☺️ まだご案内できるお時間がありますので、お気軽にご予約ください♡ 皆さまのご来店を心よりお待ちしております🌿✨ ご予約・お問い合わせはDMまたはホットペッパーからお気軽にどうぞ♪ 皆さまのご来店を心よりお待ちしております。ご予約はアプリ、InstagramのDM、https://beauty.hotpepper.jp/kr/slnH000454122/またはライン公式アカウントからお願いいたします ♪♪♪ ホットペッパーやアプリが✕が付いているお時間でも、直接お電話をいただけたらご予約受付ができる場合もございますのでよろしくお願いします。 何か分からないことや、ご質問などお気軽にお問い合わせ下さい♪ ＃ VIO脱毛 まつげパーマ美顔 個人サロン マツエク マツエクサロン フォトフェイシャル フラットラッ"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:11:43.331Z",
+  "seconds": 15,
+  "hoursRetried": false
+}

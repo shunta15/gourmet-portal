@@ -1,0 +1,67 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 15,
+  "sheet": {
+    "name": "valo Hair Design（ヴァロ）",
+    "address": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+    "url": "https://www.google.com/maps/place/valo+Hair+Design%EF%BC%88%E3%83%B4%E3%82%A1%E3%83%AD%EF%BC%89/@33.5805391,130.3496496,17z/data=!3m1!4b1!4m6!3m5!1s0x35419bd6f3b405fd:0x8fee90915ca396d8!8m2!3d33.5805391!4d130.3496496!16s%2Fg%2F1tdm1j2d?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "direct",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "valo Hair Design（ヴァロ）",
+      "address": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+      "url": "https://www.google.com/maps/place/valo+Hair+Design%EF%BC%88%E3%83%B4%E3%82%A1%E3%83%AD%EF%BC%89/@33.5805391,130.3496496,17z/data=!3m1!4b1!4m6!3m5!1s0x35419bd6f3b405fd:0x8fee90915ca396d8!8m2!3d33.5805391!4d130.3496496!16s%2Fg%2F1tdm1j2d",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/valo+Hair+Design%EF%BC%88%E3%83%B4%E3%82%A1%E3%83%AD%EF%BC%89/@33.5805391,130.3496496,17z/data=!3m1!4b1!4m6!3m5!1s0x35419bd6f3b405fd:0x8fee90915ca396d8!8m2!3d33.5805391!4d130.3496496!16s%2Fg%2F1tdm1j2d?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+    "place": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+    "sheetNorm": "福岡県福岡市早良区高取2-17-8朝日プラザ高取103",
+    "placeNorm": "福岡県福岡市早良区高取2-17-8朝日プラザ高取103",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "valo Hair Design（ヴァロ）",
+    "address": "福岡県福岡市早良区高取２丁目１７−８ 朝日プラザ高取 １０３号",
+    "category": "美容院",
+    "lat": 33.5805391,
+    "lng": 130.3496496,
+    "gbpUrl": "https://maps.google.com/?cid=10371385945879713496",
+    "phone": "092-851-6678",
+    "website": "https://beauty.hotpepper.jp/slnH000358169/",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:01:01.212Z",
+  "seconds": 2.1
+}

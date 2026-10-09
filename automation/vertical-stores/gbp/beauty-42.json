@@ -1,0 +1,85 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 42,
+  "sheet": {
+    "name": "✨エステサロン ピュアティ✨",
+    "address": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+    "url": "https://share.google/wrkMprJnUGuDzvoLp",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=2eb052a5461778fe&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11c7091rlh&q=%E2%9C%A8%E3%82%A8%E3%82%B9%E3%83%86%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%94%E3%83%A5%E3%82%A2%E3%83%86%E3%82%A3%E2%9C%A8&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=8a09f0071245a6c8&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11c7091rlh",
+  "queries": [
+    "✨エステサロン ピュアティ✨",
+    "✨エステサロン ピュアティ✨ 大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605"
+  ],
+  "candidates": [
+    {
+      "name": "シミたるみ専門サロン ピュアティ",
+      "address": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+      "url": "https://www.google.com/maps/place/%E3%82%B7%E3%83%9F%E3%81%9F%E3%82%8B%E3%81%BF%E5%B0%82%E9%96%80%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%94%E3%83%A5%E3%82%A2%E3%83%86%E3%82%A3/@34.681409,135.6208054,17z/data=!3m1!4b1!4m6!3m5!1s0x60012046a8ab1805:0xc8db9d70c090968b!8m2!3d34.681409!4d135.6208054!16s%2Fg%2F11c7091rlh",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B7%E3%83%9F%E3%81%9F%E3%82%8B%E3%81%BF%E5%B0%82%E9%96%80%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%94%E3%83%A5%E3%82%A2%E3%83%86%E3%82%A3/@34.681409,135.6208054,17z/data=!3m1!4b1!4m6!3m5!1s0x60012046a8ab1805:0xc8db9d70c090968b!8m2!3d34.681409!4d135.6208054!16s%2Fg%2F11c7091rlh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「✨エステサロン ピュアティ✨」とマップ「シミたるみ専門サロン ピュアティ」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+    "place": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+    "sheetNorm": "大阪府東大阪市中新開2-8-4パークサイドヨシタ605",
+    "placeNorm": "大阪府東大阪市中新開2-8-4パークサイドヨシタ605",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "シミたるみ専門サロン ピュアティ",
+    "address": "大阪府東大阪市中新開２丁目８−４ パークサイドヨシタ 605",
+    "category": "エステティック サロン",
+    "lat": 34.681409,
+    "lng": 135.6208054,
+    "gbpUrl": "https://maps.google.com/?cid=14473334935077820043",
+    "phone": "090-1445-9401",
+    "website": "https://www.purity-osaka.com/",
+    "hours": {
+      "月": "10:00–14:00",
+      "火": "定休日",
+      "水": "10:00–14:00",
+      "木": "定休日",
+      "金": "10:00–12:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/d0003c103252bc5152a793b62780809e?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "http://b.hpr.jp/kr/sd/H000408695/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:02:59.453Z",
+  "seconds": 12.9,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "✨エステサロン ピュアティ✨",
+    "mapName": "シミたるみ専門サロン ピュアティ"
+  }
+}

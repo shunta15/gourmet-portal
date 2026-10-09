@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 12,
+  "sheet": {
+    "name": "AK Esthetics",
+    "address": "熊本県熊本市中央区新市街１２−２１ 須美ビル",
+    "url": "https://share.google/jFVNZxazA19jpIkJb",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=7cffcbb1fa984c63&kgmid=/g/11pr10222c&q=ViV%E7%86%8A%E6%9C%AC+(%E6%97%A7+AK+Esthetics)&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=445781949accfce9&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11pr10222c",
+  "queries": [
+    "ViV熊本 (旧 AK Esthetics)"
+  ],
+  "candidates": [
+    {
+      "name": "ViV熊本 (旧 AK Esthetics)",
+      "address": "熊本県熊本市中央区新市街１２−２１ 須美ビル ３０１号室",
+      "url": "https://www.google.com/maps/place/ViV%E7%86%8A%E6%9C%AC+(%E6%97%A7+AK+Esthetics)/@32.7981237,130.7064507,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f52a2ff8a7e1:0xc8fe50c42bece03e!8m2!3d32.7981237!4d130.7064507!16s%2Fg%2F11pr10222c",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/ViV%E7%86%8A%E6%9C%AC+(%E6%97%A7+AK+Esthetics)/@32.7981237,130.7064507,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f52a2ff8a7e1:0xc8fe50c42bece03e!8m2!3d32.7981237!4d130.7064507!16s%2Fg%2F11pr10222c?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "熊本県熊本市中央区新市街１２−２１ 須美ビル",
+    "place": "熊本県熊本市中央区新市街１２−２１ 須美ビル ３０１号室",
+    "sheetNorm": "熊本県熊本市中央区新市街12-21須美ビル",
+    "placeNorm": "熊本県熊本市中央区新市街12-21須美ビル301室",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ViV熊本 (旧 AK Esthetics)",
+    "address": "熊本県熊本市中央区新市街１２−２１ 須美ビル ３０１号室",
+    "category": "エステティック サロン",
+    "lat": 32.7981237,
+    "lng": 130.7064507,
+    "gbpUrl": "https://maps.google.com/?cid=14483102255150850110",
+    "phone": "096-355-3520",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000519790/?vos=evhbksg0058&pog=mt%28%29ti%28%29dv%28m%29cr%28%29fi%28%29gi%28%29ci%2822152450439%29lc%289198867%29ps%28%29nw%28x%29&gclsrc=aw.ds&gad_source=1&gad_campaignid=22148639414&gclid=Cj0KCQjw5c_FBhDJARIsAIcmHK_Q4gyAHcreBFH8ZBx52Dye-gIHbmnBgdWG5_UkbxbBr2udF8imdU8aAkx_EALw_wcB",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://kumamoto-esthetics.com/contact/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【熊本のエステプロ監修】乾燥やくすみが気になる年齢肌にピーリングを取り入れるべき理由と正しいケア 「昔と同じスキンケアをしているのに、最近肌が乾燥する」 「ファンデーションを塗っても、顔全体がどんよりとくすんで見える」 「高い美容液を使っているのに、肌に入っていかない気がする」 30代、40代と年齢を重ねるにつれて、このような「年齢肌」特有のお悩みを抱える方は非常に多くいらっしゃいます。実は、これらのトラブルの根本的な原因は、肌の表面に蓄積した「不要な古い角質」にあります。 本記事では、美容のプロフェッショナルとしての視点から、年齢肌にこそ「エステティックサロンでのピーリング」を取り入れるべき理由と、お肌の環境を整えるための正しいホームケア・生活習慣について徹底解説します。 なぜ年齢とともに「乾燥」や「くすみ」が目立つのか？ 年齢を重ねると肌質が変化するのは、決して気のせいではありません。皮膚の構造と細胞の働きが加齢によって変化することが直接的な原因です。まずは、あなたのお肌で何が起きているのかを正しく理解しましょう。 1. ターンオーバーの長期化と「老皮」の蓄積 健康な肌は、通常約28日周期で新しい細胞へと生まれ変わります（ターンオーバー）。しかし、加齢や紫外線ダメージ、女性ホルモンの変化などにより、細胞分裂のスピードは徐々に低下します。30代後半から40代になると、この周期が4"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:06:13.532Z",
+  "seconds": 6.3
+}

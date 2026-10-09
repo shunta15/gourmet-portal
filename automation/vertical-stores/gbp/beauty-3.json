@@ -1,0 +1,69 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 3,
+  "sheet": {
+    "name": "Salon Refino",
+    "address": "福岡県京都郡苅田町殿川町１−３２ 白川ビル １階",
+    "url": "https://www.google.com/search?q=Salon%20Refino%EF%BC%88%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3%20%E3%83%AC%E3%83%95%E3%82%A3%E3%83%BC%E3%83%8E%EF%BC%89%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%BA%AC%E9%83%BD%E9%83%A1%E8%8B%85%E7%94%B0%E7%94%BA%E6%AE%BF%E5%B7%9D%E7%94%BA%EF%BC%91%EF%BC%8D%EF%BC%93%EF%BC%92%20%E7%99%BD%E5%B7%9D%E3%83%93%E3%83%AB%20%EF%BC%91%E9%9A%8E",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Salon Refino 福岡県京都郡苅田町殿川町１−３２ 白川ビル １階"
+  ],
+  "candidates": [
+    {
+      "name": "Salon Refino（リラクゼーションサロン レフィーノ）",
+      "address": "福岡県京都郡苅田町殿川町１−３２ １階",
+      "url": "https://www.google.com/maps/place/Salon+Refino%EF%BC%88%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%AC%E3%83%95%E3%82%A3%E3%83%BC%E3%83%8E%EF%BC%89/@33.7693717,130.9808438,17z/data=!3m1!4b1!4m6!3m5!1s0x3543eb45e01cecf5:0x7ca5bca4b9bba683!8m2!3d33.7693717!4d130.9808438!16s%2Fg%2F11sgkfpttn",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Salon+Refino%EF%BC%88%E3%83%AA%E3%83%A9%E3%82%AF%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%AD%E3%83%B3+%E3%83%AC%E3%83%95%E3%82%A3%E3%83%BC%E3%83%8E%EF%BC%89/@33.7693717,130.9808438,17z/data=!3m1!4b1!4m6!3m5!1s0x3543eb45e01cecf5:0x7ca5bca4b9bba683!8m2!3d33.7693717!4d130.9808438!16s%2Fg%2F11sgkfpttn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県京都郡苅田町殿川町１−３２ 白川ビル １階",
+    "place": "福岡県京都郡苅田町殿川町１−３２ １階",
+    "sheetNorm": "福岡県京都郡苅田町殿川町1-32白川ビル1階",
+    "placeNorm": "福岡県京都郡苅田町殿川町1-321階",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Salon Refino（リラクゼーションサロン レフィーノ）",
+    "address": "福岡県京都郡苅田町殿川町１−３２ １階",
+    "category": "指圧・マッサージ",
+    "lat": 33.7693717,
+    "lng": 130.9808438,
+    "gbpUrl": "https://maps.google.com/?cid=8981792447537063555",
+    "phone": "093-434-5755",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000401537/coupon/",
+    "hours": {
+      "月": "10:00–00:00",
+      "火": "10:00–00:00",
+      "水": "10:00–00:00",
+      "木": "10:00–00:00",
+      "金": "10:00–00:00",
+      "土": "10:00–00:00",
+      "日": "10:00–00:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:04:26.151Z",
+  "seconds": 6.1
+}

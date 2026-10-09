@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 115,
+  "sheet": {
+    "name": "FORM整骨院",
+    "address": "千葉県東金市東金３７８－７",
+    "url": "https://share.google/B2KenQYcLWflfgix7",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=2fb4accb1dc1e879&rlz=1C1VDKB_jaJP1161JP1162&sxsrf=AE3TifOdt6SfgjTzl80NCC5rD2Si4vA0-A:1761630711238&kgmid=/g/11nmhccmnx&q=FORM%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=1b7ecea1a400c686&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11nmhccmnx",
+  "queries": [
+    "FORM整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "FORM整骨院",
+      "address": "千葉県東金市東金３７８−７",
+      "url": "https://www.google.com/maps/place/FORM%E6%95%B4%E9%AA%A8%E9%99%A2/@35.5578064,140.3602236,17z/data=!3m1!4b1!4m6!3m5!1s0x6022eb6fe1236d85:0xc0fd29a96107882f!8m2!3d35.5578064!4d140.3602236!16s%2Fg%2F11nmhccmnx",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/FORM%E6%95%B4%E9%AA%A8%E9%99%A2/@35.5578064,140.3602236,17z/data=!3m1!4b1!4m6!3m5!1s0x6022eb6fe1236d85:0xc0fd29a96107882f!8m2!3d35.5578064!4d140.3602236!16s%2Fg%2F11nmhccmnx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県東金市東金３７８－７",
+    "place": "千葉県東金市東金３７８−７",
+    "sheetNorm": "千葉県東金市東金378-7",
+    "placeNorm": "千葉県東金市東金378-7",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "FORM整骨院",
+    "address": "千葉県東金市東金３７８−７",
+    "category": "整体",
+    "lat": 35.5578064,
+    "lng": 140.3602236,
+    "gbpUrl": "https://maps.google.com/?cid=13906317031844055087",
+    "phone": "0475-78-4148",
+    "website": "https://formseikotsuin.jp/",
+    "hours": {
+      "月": "10:00–12:00, 14:00–20:00",
+      "火": "10:00–12:00, 14:00–20:00",
+      "水": "定休日",
+      "木": "10:00–12:00, 14:00–20:00",
+      "金": "10:00–12:00, 14:00–20:00",
+      "土": "10:00–12:00, 14:00–20:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://lin.ee/rpH9pfR"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【Googleの定休日表示について】 いつもFORM整骨院をご利用いただき、ありがとうございます。 2026年10月より、当院の定休日が 木曜日・金曜日・日曜日（不定休） に変更となりました。 現在、Googleビジネスプロフィールの定休日表示がまだ変更前の情報となっている場合がございます。 ご来院の際は、Googleの表示ではなく、当院からのお知らせをご確認いただくか、お気軽にお問い合わせください。 ご不便をおかけしますが、何卒よろしくお願いいたします。 FORM整骨院"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:50:55.196Z",
+  "seconds": 6
+}

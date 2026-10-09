@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 129,
+  "sheet": {
+    "name": "美容室Bigote",
+    "address": "東京都目黒区下目黒３丁目１９－１１ メゾンｆ１Ｆ",
+    "url": "https://share.google/txP7xjPloeXLzZClj",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?kgmid=/g/1v62hn91&hl=ja-JP&q=%E7%BE%8E%E5%AE%B9%E5%AE%A4+Bigote&shndl=30&shem=lcuae,shrtsdl&source=sh/x/loc/osrp/m5/1&kgs=6cd1497fbeca0415&utm_source=lcuae,shrtsdl,sh/x/loc/osrp/m5/1",
+  "kgmidHint": "/g/1v62hn91",
+  "queries": [
+    "美容室 Bigote"
+  ],
+  "candidates": [
+    {
+      "name": "美容室 Bigote",
+      "address": "東京都目黒区下目黒３丁目１９−１１ メゾン エフ １F",
+      "url": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E5%AE%A4+Bigote/data=!4m7!3m6!1s0x60188b23a1ca7b01:0xb950a7080ad04b65!8m2!3d35.6275557!4d139.7096264!16s%2Fg%2F1v62hn91!19sChIJAXvKoSOLGGARZUvQCginULk",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%BE%8E%E5%AE%B9%E5%AE%A4+Bigote/data=!4m7!3m6!1s0x60188b23a1ca7b01:0xb950a7080ad04b65!8m2!3d35.6275557!4d139.7096264!16s%2Fg%2F1v62hn91!19sChIJAXvKoSOLGGARZUvQCginULk?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都目黒区下目黒３丁目１９－１１ メゾンｆ１Ｆ",
+    "place": "東京都目黒区下目黒３丁目１９−１１ メゾン エフ １F",
+    "sheetNorm": "東京都目黒区下目黒3-19-11メゾンf1F",
+    "placeNorm": "東京都目黒区下目黒3-19-11メゾンエフ1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "美容室 Bigote",
+    "address": "東京都目黒区下目黒３丁目１９−１１ メゾン エフ １F",
+    "category": "美容院",
+    "lat": 35.6275557,
+    "lng": 139.7096264,
+    "gbpUrl": "https://maps.google.com/?cid=13353356548136520549",
+    "phone": "03-3791-9170",
+    "website": "https://bigote-8.jp/",
+    "hours": {
+      "月": "10:00–19:30",
+      "火": "定休日",
+      "水": "10:00–19:30",
+      "木": "10:00–19:30",
+      "金": "10:00–19:30",
+      "土": "10:00–19:30",
+      "日": "10:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s4000053401/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "美容室のチラシで集客アップ！効果的なデザインと配布のコツ 美容室の集客を効果的に向上させるには、チラシのデザインと配布方法がキーとなります。この記事では、初めてチラシを作成する方から、すでに印刷済みの方まで、誰にでも役立つ情報を提供します。デザインの基本からテンプレートの活用法、おしゃれなチラシの秘訣、さらには実際にお客様からいただいた相談内容や対応事例までを詳しく解説。効果的な集客を実現するためのステップ・バイ・ステップガイドです。経営者やデザイナーだけでなく、美容師の方々も必見です。 目黒区で美容室なら不動前駅から徒歩5分、お客様一人ひとりに寄り添うプライベートサロンbigote(ビゴーテ)へどうぞ。オーナースタイリストがカウンセリングからスタイリングまで一貫して担当し、丁寧な施術とゆったりとした時間を提供いたします。カット、カラー、パーマ、コベラウェーブなど幅広いメニューをご用意。ナチュラルなヘアスタイルが得意で、メンズカットも歓迎しています。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:29:50.260Z",
+  "seconds": 8.3
+}

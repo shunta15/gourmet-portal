@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 116,
+  "sheet": {
+    "name": "LAVEL 渋谷　髪質改善 レイヤーカット",
+    "address": "東京都渋谷区円山町５-３　MIEUX渋谷ビル４F",
+    "url": "https://share.google/jGR5PXtd0v9oTRmyH",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3c78addd28f7a980&rlz=1C1JCYX_jaJP1069JP1078&kgmid=/g/11x092zlbh&q=LAVEL&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=f91bd5a6cdafec33&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11x092zlbh",
+  "queries": [
+    "LAVEL"
+  ],
+  "candidates": [
+    {
+      "name": "LAVEL",
+      "address": "東京都渋谷区円山町５−３ MIEUX渋谷ビル 4F",
+      "url": "https://www.google.com/maps/place/LAVEL/@35.6569843,139.6955264,17z/data=!3m1!4b1!4m6!3m5!1s0x60188bc2794075f9:0xf0c3b4e67c29f65a!8m2!3d35.6569843!4d139.6955264!16s%2Fg%2F11x092zlbh",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/LAVEL/@35.6569843,139.6955264,17z/data=!3m1!4b1!4m6!3m5!1s0x60188bc2794075f9:0xf0c3b4e67c29f65a!8m2!3d35.6569843!4d139.6955264!16s%2Fg%2F11x092zlbh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "東京都渋谷区円山町５-３　MIEUX渋谷ビル４F",
+    "place": "東京都渋谷区円山町５−３ MIEUX渋谷ビル 4F",
+    "sheetNorm": "東京都渋谷区円山町5-3MIEUX渋谷ビル4F",
+    "placeNorm": "東京都渋谷区円山町5-3MIEUX渋谷ビル4F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "LAVEL",
+    "address": "東京都渋谷区円山町５−３ MIEUX渋谷ビル 4F",
+    "category": "美容院",
+    "lat": 35.6569843,
+    "lng": 139.6955264,
+    "gbpUrl": "https://maps.google.com/?cid=17348909091579885146",
+    "phone": "03-6455-3558",
+    "website": "https://beauty.hotpepper.jp/slnH000737642/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/a59594765938e9fa47ef56c66e5d17c0?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      },
+      {
+        "label": "予約リンクを開きます",
+        "url": "https://beauty.hotpepper.jp/slnH000737642/coupon/"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【LAVEL RECRUIT】 募集期間 : 10/3〜10/31 LAVELは、美を通じて人を幸せにし、 関わるすべての人が豊かになれる場所を目指しています。 お客様に一生寄り添える“美のパートナー”として、 スタッフも仕事もプライベートも充実し、 誇りを持って働ける環境づくりを大切にしています。 夢を持って成長したい方、 美容を本気で楽しみたい方、 一緒にLAVELを創りませんか？ DM・ご応募お待ちしております。 スタイリスト募集 LAVEL 渋谷で美容室をお探しなら、韓国風レイヤースタイルと艶髪が叶うLAVELへ。 東京都渋谷区にあるLAVELは、渋谷駅徒歩5分、神泉駅徒歩4分の美容室です。実力派スタイリストが丁寧にカウンセリングを行い、レディースカット、メンズカット、カラー、パーマ、縮毛矯正、髪質改善トリートメントまで、髪質や理想に合わせた施術をご提案。顔周りのデザインにもこだわった理想のヘアスタイルを叶えます。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:27:29.150Z",
+  "seconds": 8.3
+}

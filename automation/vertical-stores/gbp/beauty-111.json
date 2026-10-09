@@ -1,0 +1,78 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 111,
+  "sheet": {
+    "name": "ハーブピーリング専門店LIME 高崎 by Anela",
+    "address": "〒370-0063 群馬県高崎市飯玉町５０ パナシアマンション 301",
+    "url": "https://share.google/rKU2W9TIioCUY5LCX",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?client=safari&sca_esv=4c6e5173cbbd1641&rls=en&sxsrf=AE3TifMybTiWgrpXL0e3SdH-PAPaNgfC1g:1761297600820&kgmid=/g/11fk54j8md&q=%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B0%82%E9%96%80%E5%BA%97LIME+%E9%AB%98%E5%B4%8E+by+Anela&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=dd0d3aff51dbf914&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11fk54j8md",
+  "queries": [
+    "ハーブピーリング専門店LIME 高崎 by Anela"
+  ],
+  "candidates": [
+    {
+      "name": "ハーブピーリング専門店LIME 高崎 by Anela",
+      "address": "群馬県高崎市飯玉町５０ パナシアマンション 301",
+      "url": "https://www.google.com/maps/place/%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B0%82%E9%96%80%E5%BA%97LIME+%E9%AB%98%E5%B4%8E+by+Anela/@36.3382206,139.0138562,17z/data=!3m1!4b1!4m6!3m5!1s0x601e8d12e07a2791:0x236a52f0308f36e9!8m2!3d36.3382206!4d139.0138562!16s%2Fg%2F11fk54j8md",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B0%82%E9%96%80%E5%BA%97LIME+%E9%AB%98%E5%B4%8E+by+Anela/@36.3382206,139.0138562,17z/data=!3m1!4b1!4m6!3m5!1s0x601e8d12e07a2791:0x236a52f0308f36e9!8m2!3d36.3382206!4d139.0138562!16s%2Fg%2F11fk54j8md?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒370-0063 群馬県高崎市飯玉町５０ パナシアマンション 301",
+    "place": "群馬県高崎市飯玉町５０ パナシアマンション 301",
+    "sheetNorm": "群馬県高崎市飯玉町50パナシアマンション301",
+    "placeNorm": "群馬県高崎市飯玉町50パナシアマンション301",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ハーブピーリング専門店LIME 高崎 by Anela",
+    "address": "群馬県高崎市飯玉町５０ パナシアマンション 301",
+    "category": "エステティック サロン",
+    "lat": 36.3382206,
+    "lng": 139.0138562,
+    "gbpUrl": "https://maps.google.com/?cid=2551943330419128041",
+    "phone": "080-3532-4184",
+    "website": "https://anelatakasaki.com/",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "定休日",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://minimodel.jp/salon/8876361e13de4458cf1e17c7da0b1f58?utm_campaign=gmaps&utm_medium=organic&utm_source=google_maps"
+      },
+      {
+        "label": "予約",
+        "url": "http://b.hpr.jp/kr/sd/H000435828"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "高崎市でハーブピーリング・肌質改善・フェイシャルエステをお探しなら【LIME 高崎 by Anela】へ。 当店は医療提携のハーブピーリング専門店として、ニキビ・毛穴・シミ・たるみなどのお悩みに対応した肌質改善をサポートしています。 高品質・高技術のピーリング施術で、他では受けられない特別なケアをご提供。メンズエステとしてもご利用いただけるため、男性のお客様にも人気です。 高崎市でハーブピーリング・メンズエステ・フェイシャルエステをお探しの方はぜひご相談ください。\n2026/05/10\n予約"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:26:27.588Z",
+  "seconds": 8
+}

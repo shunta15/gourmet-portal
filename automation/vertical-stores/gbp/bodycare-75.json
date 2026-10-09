@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 75,
+  "sheet": {
+    "name": "北陸整骨院",
+    "address": "大阪府大阪市旭区千林２丁目１０－３２ 丸吉ハイツ 1F",
+    "url": "https://share.google/3MoB2RNDxRqUa38XS",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=9a7c25c8d7074169&biw=2075&bih=1008&sxsrf=AE3TifPh13gUiCcgBIqeOvC0ZgEyCeE_aw:1760581232087&kgmid=/g/11gj76nr2g&q=%E5%8D%83%E6%9E%97%E5%8C%97%E9%99%B8%E6%95%B4%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e3a9c9655261ff35&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11gj76nr2g",
+  "queries": [
+    "千林北陸整骨院"
+  ],
+  "candidates": [
+    {
+      "name": "千林北陸整骨院",
+      "address": "大阪府大阪市旭区千林２丁目１０−３２ 丸吉ハイツ 1F",
+      "url": "https://www.google.com/maps/place/%E5%8D%83%E6%9E%97%E5%8C%97%E9%99%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.7248713,135.5517071,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e1cfc0df9f09:0xe2589c4a23c0487c!8m2!3d34.7248713!4d135.5517071!16s%2Fg%2F11gj76nr2g",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8D%83%E6%9E%97%E5%8C%97%E9%99%B8%E6%95%B4%E9%AA%A8%E9%99%A2/@34.7248713,135.5517071,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e1cfc0df9f09:0xe2589c4a23c0487c!8m2!3d34.7248713!4d135.5517071!16s%2Fg%2F11gj76nr2g?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市旭区千林２丁目１０－３２ 丸吉ハイツ 1F",
+    "place": "大阪府大阪市旭区千林２丁目１０−３２ 丸吉ハイツ 1F",
+    "sheetNorm": "大阪府大阪市旭区千林2-10-32丸吉ハイツ1F",
+    "placeNorm": "大阪府大阪市旭区千林2-10-32丸吉ハイツ1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "千林北陸整骨院",
+    "address": "大阪府大阪市旭区千林２丁目１０−３２ 丸吉ハイツ 1F",
+    "category": "接骨院",
+    "lat": 34.7248713,
+    "lng": 135.5517071,
+    "gbpUrl": "https://maps.google.com/?cid=16309957892763568252",
+    "phone": "090-8538-9938",
+    "website": "https://hokuriku-seikotsu.jp/",
+    "hours": {
+      "月": "08:30–12:30, 15:00–20:00",
+      "火": "08:30–12:30, 15:00–20:00",
+      "水": "08:30–12:30, 15:00–20:00",
+      "木": "08:30–12:30, 15:00–20:00",
+      "金": "08:30–12:30, 15:00–20:00",
+      "土": "08:30–12:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "腰痛改善と肩こり解消の新常識！ 多くの方が悩む腰痛や肩こりを根本から改善するための情報をお届けします。リラクゼーションサロンと整骨院の違いを明確にし、それぞれの特徴や利点を徹底解説します。どのような施術が自分にあっているのかを知り、効果的な改善方法を見つけましょう。日常生活を快適に過ごすための手助けとなる情報を提供し、最後にはお問い合わせを促す構成となっています。 詳しくは下記「詳細」リンクよりご覧ください 大阪市旭区の千林大宮駅から徒歩3分にある北陸整骨院は、姿勢改善や骨盤矯正・ストレッチ・歩行指導など様々な施術をご提供しており、肩こりや腰痛・膝痛・眼精疲労・坐骨神経痛・外反母趾など体の様々なお悩みの症状を改善する施術を行なっている整骨院です。 大阪府の千林駅からも近い当院は、夜の20時まで営業し駐車場もございますので、旭区で接骨院や整体院などをお探しの際は是非ご利用下さい。\n2026/09/08"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:43:41.919Z",
+  "seconds": 6
+}

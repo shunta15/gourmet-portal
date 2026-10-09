@@ -1,0 +1,75 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 100,
+  "sheet": {
+    "name": "髪質改善　waTatori  ～私のトリートメント～",
+    "address": "東京都新宿区西新宿７-7-28　第一山本ビル2F",
+    "url": "https://share.google/nVihFLhMpxB1lq2K1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4cc0427d7f251a55&kgmid=/g/11vp_9z0cp&q=%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84%E5%B0%82%E9%96%80%E5%BA%97waTatori(%E3%83%AF%E3%82%BF%E3%83%88%E3%83%AA)&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=b7ab5610f9c7681a&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vp_9z0cp",
+  "queries": [
+    "髪質改善専門店waTatori(ワタトリ)"
+  ],
+  "candidates": [
+    {
+      "name": "髪質改善専門店waTatori(ワタトリ)",
+      "address": "東京都新宿区西新宿７丁目７−２８ 山本ビル 2Ｆ",
+      "url": "https://www.google.com/maps/place/%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84%E5%B0%82%E9%96%80%E5%BA%97waTatori(%E3%83%AF%E3%82%BF%E3%83%88%E3%83%AA)/@35.6972054,139.6974793,17z/data=!3m1!4b1!4m6!3m5!1s0x60188df50957a7a9:0x3593f706feda1db9!8m2!3d35.6972054!4d139.6974793!16s%2Fg%2F11vp_9z0cp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%AB%AA%E8%B3%AA%E6%94%B9%E5%96%84%E5%B0%82%E9%96%80%E5%BA%97waTatori(%E3%83%AF%E3%82%BF%E3%83%88%E3%83%AA)/@35.6972054,139.6974793,17z/data=!3m1!4b1!4m6!3m5!1s0x60188df50957a7a9:0x3593f706feda1db9!8m2!3d35.6972054!4d139.6974793!16s%2Fg%2F11vp_9z0cp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: シート「髪質改善　waTatori  ～私のトリートメント～」とマップ「髪質改善専門店waTatori(ワタトリ)」は書き方がちがうが、発注者が確認して同じ店と決めた行（--accept）",
+  "addressCompare": {
+    "sheet": "東京都新宿区西新宿７-7-28　第一山本ビル2F",
+    "place": "東京都新宿区西新宿７丁目７−２８ 山本ビル 2Ｆ",
+    "sheetNorm": "東京都新宿区西新宿7-7-28第一山本ビル2F",
+    "placeNorm": "東京都新宿区西新宿7-7-28山本ビル2F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "髪質改善専門店waTatori(ワタトリ)",
+    "address": "東京都新宿区西新宿７丁目７−２８ 山本ビル 2Ｆ",
+    "category": "美容院",
+    "lat": 35.6972054,
+    "lng": 139.6974793,
+    "gbpUrl": "https://maps.google.com/?cid=3860700915004218809",
+    "phone": "03-5937-0338",
+    "website": "https://beauty.hotpepper.jp/slnH000682248/",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T02:02:11.443Z",
+  "seconds": 5.9,
+  "acceptedByOwnerCheck": true,
+  "acceptedFrom": {
+    "verdict": "住所は一致で店名がちがう",
+    "sheetName": "髪質改善　waTatori  ～私のトリートメント～",
+    "mapName": "髪質改善専門店waTatori(ワタトリ)"
+  }
+}

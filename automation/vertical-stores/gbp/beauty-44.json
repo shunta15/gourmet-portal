@@ -1,0 +1,74 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 44,
+  "sheet": {
+    "name": "hair room Sherie",
+    "address": "山梨県甲斐市玉川３６−１",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=4f5104ed2b7290e9&hl=ja&sxsrf=AE3TifPJW3DPwLOfYgvYvbGuBwmftenDjg:1759805322790&kgmid=/g/11clgy3m2k&q=hair+room+Sherie&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=f18ac92898ac40e5&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "理・美容院",
+    "d1": "美容室",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11clgy3m2k",
+  "queries": [
+    "hair room Sherie 山梨県甲斐市玉川３６−１"
+  ],
+  "candidates": [
+    {
+      "name": "hair room Sherie",
+      "address": "山梨県甲斐市玉川３６−１",
+      "url": "https://www.google.com/maps/place/hair+room+Sherie/@35.6391017,138.5181082,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf6e2982fbac5:0x82e7ff1d7185a90!8m2!3d35.6391017!4d138.5181082!16s%2Fg%2F11clgy3m2k",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/hair+room+Sherie/@35.6391017,138.5181082,17z/data=!3m1!4b1!4m6!3m5!1s0x601bf6e2982fbac5:0x82e7ff1d7185a90!8m2!3d35.6391017!4d138.5181082!16s%2Fg%2F11clgy3m2k?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "山梨県甲斐市玉川３６−１",
+    "place": "山梨県甲斐市玉川３６−１",
+    "sheetNorm": "山梨県甲斐市玉川36-1",
+    "placeNorm": "山梨県甲斐市玉川36-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "hair room Sherie",
+    "address": "山梨県甲斐市玉川３６−１",
+    "category": "美容院",
+    "lat": 35.6391017,
+    "lng": 138.5181082,
+    "gbpUrl": "https://maps.google.com/?cid=589549277904657040",
+    "phone": "055-242-7955",
+    "website": "https://beauty.hotpepper.jp/slnH000335534/",
+    "hours": {
+      "月": "10:00–19:30",
+      "火": "10:00–19:30",
+      "水": "10:00–19:30",
+      "木": "10:00–19:30",
+      "金": "10:00–19:30",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://beauty.rakuten.co.jp/s8000036232/?scid=we_bty_glam_shoptop"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【透明感と立体感で魅せる、海外風ショートヘア✨】 山梨県甲斐市の美容室 Hair room Sherieです🌿 今回ご紹介するのは、柔らかな毛流れと、透明感のあるホワイトグレーベージュを合わせた海外風ショートヘア🤍 ふんわり流れる長めの前髪と、後頭部の自然な丸みがポイント。襟足をすっきりと整えることで、横顔も後ろ姿も美しく見えるシルエットに仕上げました✨ ホワイトグレーベージュの透けるような色味と明暗のコントラストが、毛流れや立体感を引き立てます🕊️ 「短くしたいけれど、柔らかい雰囲気は残したい」 「いつものショートに少し変化をつけたい」 そんな方におすすめの、大人のショートスタイルです💇🏼‍♀️ 髪質や骨格、普段のスタイリングに合わせて、あなたに似合うヘアをご提案します。ぜひお気軽にご相談ください🌿 Hair room Sherie"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:12:48.677Z",
+  "seconds": 5.4
+}

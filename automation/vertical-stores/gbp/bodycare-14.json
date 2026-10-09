@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 14,
+  "sheet": {
+    "name": "RE:BODY接骨院",
+    "address": "神奈川県相模原市緑区下九沢２０３０−３",
+    "url": "https://share.google/I6wicjJ23QY1lxDhU",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d03e2024ca5b9e89&rlz=1C1QABZ_jaJP873JP873&sxsrf=AE3TifM--l-Z5aD25AyIap6wJo6hBtisVQ:1758080154777&kgmid=/g/11xd2nq9gt&q=RE:BODY%E6%8E%A5%E9%AA%A8%E9%99%A2&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=0988b0a38e6fa2f2&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11xd2nq9gt",
+  "queries": [
+    "RE:BODY接骨院"
+  ],
+  "candidates": [
+    {
+      "name": "RE:BODY接骨院",
+      "address": "神奈川県相模原市緑区下九沢２０３０−３",
+      "url": "https://www.google.com/maps/place/RE:BODY%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x601903f675bd667b:0xe7077698565974c0!8m2!3d35.5801118!4d139.3351436!16s%2Fg%2F11xd2nq9gt!19sChIJe2a9dfYDGWARwHRZVph2B-c",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/RE:BODY%E6%8E%A5%E9%AA%A8%E9%99%A2/data=!4m7!3m6!1s0x601903f675bd667b:0xe7077698565974c0!8m2!3d35.5801118!4d139.3351436!16s%2Fg%2F11xd2nq9gt!19sChIJe2a9dfYDGWARwHRZVph2B-c?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県相模原市緑区下九沢２０３０−３",
+    "place": "神奈川県相模原市緑区下九沢２０３０−３",
+    "sheetNorm": "神奈川県相模原市緑区下九沢2030-3",
+    "placeNorm": "神奈川県相模原市緑区下九沢2030-3",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "RE:BODY接骨院",
+    "address": "神奈川県相模原市緑区下九沢２０３０−３",
+    "category": "接骨院",
+    "lat": 35.5801118,
+    "lng": 139.3351436,
+    "gbpUrl": "https://maps.google.com/?cid=16647404944254137536",
+    "phone": "042-853-2191",
+    "website": "https://rebody-bonesetting.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "09:30–19:30",
+      "水": "09:30–19:30",
+      "木": "09:30–19:30",
+      "金": "09:30–19:30",
+      "土": "09:30–13:30",
+      "日": "定休日"
+    },
+    "reserveLinks": [
+      {
+        "label": "予約",
+        "url": "https://page.line.me/354ytcgw?oat_content=url&openQrModal=true"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "こんにちは！RE:BODY接骨院です。 10月の営業日をお知らせいたします。 10月は連休があるため、連休前後での予約が埋まりやすくなっております。 ご希望の方は早めのご予約をお願いいたします！ その他、受付時間が13：30までの日がありますので、カレンダーにてご確認ください。 ご不便をおかけしますが、よろしくお願いいたします。 季節の変わり目で体調を崩しやすくなります。コンディショニングケアで体調を整えにいらしてください！ ゴルフの飛距離アップやスイングの安定、スポーツのパフォーマンスを上げたいかた是非ご相談ください！ 相模原市の整骨院・パーソナルトレーニング RE:BODY接骨院\n2026/10/01\n予約"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:31:52.932Z",
+  "seconds": 4.5
+}

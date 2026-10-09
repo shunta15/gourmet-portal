@@ -1,0 +1,74 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 36,
+  "sheet": {
+    "name": "ZEROLE鍼灸整体院",
+    "address": "愛媛県松山市石風呂町５０−１",
+    "url": "https://share.google/fIB7r7Oum7FNGYF2D",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=a07d3ce3eab5b463&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifO5sXKpW3dsnGvVB4Xk37Fn5PUJNQ:1759135603269&kgmid=/g/11ybvj2mxt&q=ZEROLE%E9%8D%BC%E7%81%B8%E6%95%B4%E4%BD%93%E9%99%A2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7323da2898bbba95&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ybvj2mxt",
+  "queries": [
+    "ZEROLE鍼灸整体院"
+  ],
+  "candidates": [
+    {
+      "name": "ZEROLE鍼灸整体院",
+      "address": "愛媛県松山市石風呂町５０−１",
+      "url": "https://www.google.com/maps/place/ZEROLE%E9%8D%BC%E7%81%B8%E6%95%B4%E4%BD%93%E9%99%A2/data=!4m7!3m6!1s0x354fe58a1f7f78f1:0x3d056bd2e6625f87!8m2!3d33.8745279!4d132.7196191!16s%2Fg%2F11ybvj2mxt!19sChIJ8Xh_H4rlTzURh19i5tJrBT0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/ZEROLE%E9%8D%BC%E7%81%B8%E6%95%B4%E4%BD%93%E9%99%A2/data=!4m7!3m6!1s0x354fe58a1f7f78f1:0x3d056bd2e6625f87!8m2!3d33.8745279!4d132.7196191!16s%2Fg%2F11ybvj2mxt!19sChIJ8Xh_H4rlTzURh19i5tJrBT0?authuser=0&hl=ja&g_ep=EgoyMDI2MTAwNi4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛媛県松山市石風呂町５０−１",
+    "place": "愛媛県松山市石風呂町５０−１",
+    "sheetNorm": "愛媛県松山市石風呂町50-1",
+    "placeNorm": "愛媛県松山市石風呂町50-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ZEROLE鍼灸整体院",
+    "address": "愛媛県松山市石風呂町５０−１",
+    "category": "鍼灸院",
+    "lat": 33.8745279,
+    "lng": 132.7196191,
+    "gbpUrl": "https://maps.google.com/?cid=4397039164749668231",
+    "phone": "080-6282-8134",
+    "website": "https://www.zerole.jp/",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "オンラインで予約",
+        "url": "https://online.peakmanager.com/t3i7k5/book?booking_source=googlemap"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【松山市】 ZEROLE鍼灸整体院｜ゼロール 松山市で、美容鍼灸や鍼灸院をお探しの方へ。 ZEROLE鍼灸整体院では、美容面のお悩みから日常生活で感じる身体の不調まで、一人ひとりの状態に合わせた施術を大切にしています🌿 「顔まわりの印象が気になる」 「美容鍼灸を受けてみたい」 「肩こりや首まわりの重さがつらい」 「腰痛が気になって仕事や家事がつらい」 そんなお悩みはありませんか？ 美容鍼灸は、顔まわりに鍼を用いる美容ケアのひとつです。 普段のスキンケアとは違った方法で美容を意識したい方や、年齢に応じたお手入れを取り入れたい方にもおすすめです。 松山市で美容鍼灸、鍼灸院、整体、腰痛、肩こりについて相談できる場所をお探しの方は、ZEROLE鍼灸整体院へ。\n2026/09/30"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:35:37.958Z",
+  "seconds": 4.4
+}

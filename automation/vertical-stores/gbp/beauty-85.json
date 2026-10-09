@@ -1,0 +1,64 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 85,
+  "sheet": {
+    "name": "ATLANTICA",
+    "address": "東京都国立市中１丁目１６−７５ ピースボート 102",
+    "url": "https://share.google/tHVyIDLeidmA4Zqob",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "エステサロン"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=fbaa7d3b9c35fdd6&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifNfq8ZYOtX1lvMjA7ZanE4WuSolLQ:1761032514024&kgmid=/g/11sjp8m12t&q=%E3%80%90%E6%AF%9B%E7%A9%B4%E3%83%BB%E5%B0%8F%E9%A1%94%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%91ATLANTICA&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9455e809bbe013bb&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11sjp8m12t",
+  "queries": [
+    "【毛穴・小顔・ハーブピーリング】ATLANTICA"
+  ],
+  "candidates": [
+    {
+      "name": "【毛穴・小顔・ハーブピーリング】ATLANTICA",
+      "address": "東京都国立市中１丁目１６−７５ ピースボート 102",
+      "url": "https://www.google.com/maps/place/%E3%80%90%E6%AF%9B%E7%A9%B4%E3%83%BB%E5%B0%8F%E9%A1%94%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%91ATLANTICA/@35.6969254,139.4454893,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e360c508c23d:0xe4fac8c0d31e6362!8m2!3d35.6969254!4d139.4454893!16s%2Fg%2F11sjp8m12t",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%80%90%E6%AF%9B%E7%A9%B4%E3%83%BB%E5%B0%8F%E9%A1%94%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%96%E3%83%94%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%91ATLANTICA/@35.6969254,139.4454893,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e360c508c23d:0xe4fac8c0d31e6362!8m2!3d35.6969254!4d139.4454893!16s%2Fg%2F11sjp8m12t?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都国立市中１丁目１６−７５ ピースボート 102",
+    "place": "東京都国立市中１丁目１６−７５ ピースボート 102",
+    "sheetNorm": "東京都国立市中1-16-75ピースボート102",
+    "placeNorm": "東京都国立市中1-16-75ピースボート102",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "【毛穴・小顔・ハーブピーリング】ATLANTICA",
+    "address": "東京都国立市中１丁目１６−７５ ピースボート 102",
+    "category": "エステティック サロン",
+    "lat": 35.6969254,
+    "lng": 139.4454893,
+    "gbpUrl": "https://maps.google.com/?cid=16499720915326493538",
+    "phone": null,
+    "website": "https://beauty.hotpepper.jp/kr/slnH000628873/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [
+      "臨時休業"
+    ],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:21:32.005Z",
+  "seconds": 20.5,
+  "hoursRetried": false
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ボディケア",
+  "tabEn": "bodycare",
+  "row": 114,
+  "sheet": {
+    "name": "整体 もみほぐし ＆ パーソナル トレーニング Lino",
+    "address": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=6d9773df8986f1e8&hl=ja&sxsrf=AE3TifMkUN7Z8ST3oCId8kI0LBG8onuV5Q:1761630308259&kgmid=/g/11xdpxq7kx&q=%E6%95%B4%E4%BD%93+%E3%82%82%E3%81%BF%E3%81%BB%E3%81%90%E3%81%97+%EF%BC%86+%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB+%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+Lino&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=19a276be69c7a180&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "整骨・整体・鍼灸",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11xdpxq7kx",
+  "queries": [
+    "整体 もみほぐし ＆ パーソナル トレーニング Lino 熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F"
+  ],
+  "candidates": [
+    {
+      "name": "整体 もみほぐし ＆ パーソナル トレーニング Lino",
+      "address": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+      "url": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93+%E3%82%82%E3%81%BF%E3%81%BB%E3%81%90%E3%81%97+%EF%BC%86+%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB+%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+Lino/@32.8435951,130.7537148,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f1007656ff53:0xa3d1cc5facbe1301!8m2!3d32.8435951!4d130.7537148!16s%2Fg%2F11xdpxq7kx",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%95%B4%E4%BD%93+%E3%82%82%E3%81%BF%E3%81%BB%E3%81%90%E3%81%97+%EF%BC%86+%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB+%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0+Lino/@32.8435951,130.7537148,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f1007656ff53:0xa3d1cc5facbe1301!8m2!3d32.8435951!4d130.7537148!16s%2Fg%2F11xdpxq7kx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+    "place": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+    "sheetNorm": "熊本県熊本市北区龍田4-30-31繁田第一ビル1F",
+    "placeNorm": "熊本県熊本市北区龍田4-30-31繁田第一ビル1F",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "整体 もみほぐし ＆ パーソナル トレーニング Lino",
+    "address": "熊本県熊本市北区龍田４丁目３０−３１ 繁田第一ビル 1F",
+    "category": "指圧・マッサージ",
+    "lat": 32.8435951,
+    "lng": 130.7537148,
+    "gbpUrl": "https://maps.google.com/?cid=11804440809606877953",
+    "phone": "070-9135-5579",
+    "website": "https://www.instagram.com/p/DQ0cuwoE8Rc/?igsh=YjN1NGFkcWY4NHdj",
+    "hours": {
+      "月": "10:00–22:00",
+      "火": "10:00–22:00",
+      "水": "10:00–22:00",
+      "木": "10:00–22:00",
+      "金": "10:00–22:00",
+      "土": "10:00–22:00",
+      "日": "10:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-09T01:50:43.472Z",
+  "seconds": 6.1
+}

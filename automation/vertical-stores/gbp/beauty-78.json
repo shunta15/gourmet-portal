@@ -1,0 +1,92 @@
+{
+  "tab": "ビューティ",
+  "tabEn": "beauty",
+  "row": 78,
+  "sheet": {
+    "name": "Mimi",
+    "address": "兵庫県神戸市長田区松野通１丁目１１−１３−２ INSTABASE 202",
+    "url": "https://share.google/0qMdcwfiHtHh8tVbc",
+    "type": "美容サロン（ネイル・エステ）",
+    "d1": "",
+    "d2": "ネイル・マツエク"
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=41638d9270b90df6&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifP7XmDIHPC503K9VL4igbQ3ADLSIg:1760942390391&kgmid=/g/11gfn6nrcl&q=Mimi&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=d79477fdc680cabe&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11gfn6nrcl",
+  "queries": [
+    "Mimi",
+    "Mimi 兵庫県神戸市長田区松野通１丁目１１−１３−２ INSTABASE 202",
+    "Mimi 兵庫県神戸市"
+  ],
+  "candidates": [
+    {
+      "name": "Mimi & vif",
+      "address": "兵庫県神戸市長田区水笠通３丁目５−７",
+      "url": "https://www.google.com/maps/place/Mimi+%26+vif/@34.6593434,135.1426229,17z/data=!3m1!4b1!4m6!3m5!1s0x60008578eff2a295:0xa78778c5c70ece84!8m2!3d34.6593434!4d135.1426229!16s%2Fg%2F11gfn6nrcl",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市長田区水笠通）",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    },
+    {
+      "name": "Mimi & vif",
+      "address": "兵庫県神戸市長田区水笠通３丁目５−７",
+      "url": "https://www.google.com/maps/place/Mimi+%26+vif/data=!4m7!3m6!1s0x60008578eff2a295:0xa78778c5c70ece84!8m2!3d34.6593434!4d135.1426229!16s%2Fg%2F11gfn6nrcl!19sChIJlaLy73iFAGARhM4Ox8V4h6c",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市長田区水笠通）",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    },
+    {
+      "name": "hair house mimi",
+      "address": "兵庫県神戸市須磨区寺田町１丁目３−２ １０２",
+      "url": "https://www.google.com/maps/place/hair+house+mimi/data=!4m7!3m6!1s0x600085ecb4f4bbe1:0x4f0a902b583c80a4!8m2!3d34.6576139!4d135.1385852!16s%2Fg%2F11z0wf2nfj!19sChIJ4bv0tOyFAGARpIA8WCuQCk8",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市須磨区寺田町）",
+      "nameRelation": "contains",
+      "kgmidMatch": false
+    },
+    {
+      "name": "mimi seul ストレッチ&エンダモロジー ミミスル",
+      "address": "兵庫県神戸市中央区二宮町４丁目２−１０ クロワートル二宮 405",
+      "url": "https://www.google.com/maps/place/mimi+seul+%E3%82%B9%E3%83%88%E3%83%AC%E3%83%83%E3%83%81%26%E3%82%A8%E3%83%B3%E3%83%80%E3%83%A2%E3%83%AD%E3%82%B8%E3%83%BC+%E3%83%9F%E3%83%9F%E3%82%B9%E3%83%AB/data=!4m7!3m6!1s0x60008f002dcf1daf:0xc2dc61b0d4a3d26e!8m2!3d34.6981405!4d135.1952839!16s%2Fg%2F11nc905xvz!19sChIJrx3PLQCPAGARbtKj1LBh3MI",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市中央区二宮町）",
+      "nameRelation": "contains",
+      "kgmidMatch": false
+    },
+    {
+      "name": "MIMI",
+      "address": "兵庫県神戸市兵庫区福原町１２−３",
+      "url": "https://www.google.com/maps/place/MIMI/data=!4m7!3m6!1s0x60008f0c8d1ff325:0x3c83937a57c40834!8m2!3d34.6786075!4d135.1699951!16s%2Fg%2F11r77fd335!19sChIJJfMfjQyPAGARNAjEV3qTgzw",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市兵庫区福原町）",
+      "nameRelation": "exact",
+      "kgmidMatch": false
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Mimi+%26+vif/@34.6593434,135.1426229,17z/data=!3m1!4b1!4m6!3m5!1s0x60008578eff2a295:0xa78778c5c70ece84!8m2!3d34.6593434!4d135.1426229!16s%2Fg%2F11gfn6nrcl?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市長田区水笠通）（シート:兵庫県神戸市長田区松野通１丁目１１−１３−２ INSTABASE 202 / マップ:兵庫県神戸市長田区水笠通３丁目５−７）／店名: シート「Mimi」マップ「Mimi & vif」(contains)",
+  "addressCompare": {
+    "sheet": "兵庫県神戸市長田区松野通１丁目１１−１３−２ INSTABASE 202",
+    "place": "兵庫県神戸市長田区水笠通３丁目５−７",
+    "sheetNorm": "兵庫県神戸市長田区松野通1-11-13-2INSTABASE202",
+    "placeNorm": "兵庫県神戸市長田区水笠通3-5-7",
+    "level": "none",
+    "detail": "町名までがちがう（シート:兵庫県神戸市長田区松野通 / マップ:兵庫県神戸市長田区水笠通）"
+  },
+  "nameRelation": "contains",
+  "place": null,
+  "landedPlace": {
+    "name": "Mimi & vif",
+    "address": "兵庫県神戸市長田区水笠通３丁目５−７",
+    "category": "ネイルサロン",
+    "lat": 34.6593434,
+    "lng": 135.1426229,
+    "gbpUrl": "https://maps.google.com/?cid=12071750117033430660"
+  },
+  "fetchedAt": "2026-10-09T01:20:01.006Z",
+  "seconds": 33.8
+}
