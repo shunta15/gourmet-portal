@@ -1,0 +1,21 @@
+{
+  "key": "beauty-30",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-30/s1.jpg",
+      "imageUrl": "https://www.tsukuru215.jp/upload/tenant_1/b2d0e9c2cb3534d7bd551e24eaaef6bc.jpg",
+      "pageUrl": "https://www.tsukuru215.jp/",
+      "what": "客席と鏡のある店内",
+      "width": 800,
+      "height": 533
+    },
+    {
+      "path": "/_portal/vshops/beauty-30/s2.jpg",
+      "imageUrl": "https://www.tsukuru215.jp/upload/tenant_1/3dfcf425046f719c22abe9d71bccac83.jpg",
+      "pageUrl": "https://www.tsukuru215.jp/",
+      "what": "シャンプー台のある店内",
+      "width": 800,
+      "height": 553
+    }
+  ]
+}

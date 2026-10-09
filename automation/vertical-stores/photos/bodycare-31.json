@@ -1,0 +1,29 @@
+{
+  "key": "bodycare-31",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-31/s1.jpg",
+      "imageUrl": "https://sousyun-seikotsuin.com/wp-content/uploads/2024/11/sousyunseikotsuin-innai01.jpg",
+      "pageUrl": "https://sousyun-seikotsuin.com/%e5%ba%97%e8%88%97%e7%b4%b9%e4%bb%8b",
+      "what": "待合室の椅子",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "path": "/_portal/vshops/bodycare-31/s2.jpg",
+      "imageUrl": "https://sousyun-seikotsuin.com/wp-content/uploads/2024/11/sousyunseikotsuin-sejutsu01.jpg",
+      "pageUrl": "https://sousyun-seikotsuin.com/%e5%ba%97%e8%88%97%e7%b4%b9%e4%bb%8b",
+      "what": "施術室での施術の様子",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "path": "/_portal/vshops/bodycare-31/s3.jpg",
+      "imageUrl": "https://sousyun-seikotsuin.com/wp-content/uploads/2024/11/sousyunseikotsuin-sejutsu02.jpg",
+      "pageUrl": "https://sousyun-seikotsuin.com/%e5%ba%97%e8%88%97%e7%b4%b9%e4%bb%8b",
+      "what": "施術室での運動指導",
+      "width": 640,
+      "height": 427
+    }
+  ]
+}
