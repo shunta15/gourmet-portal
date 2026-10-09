@@ -1,0 +1,21 @@
+{
+  "key": "beauty-8",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-8/s1.jpg",
+      "imageUrl": "https://www.saya-padoma.com/wp-content/uploads/image1.jpg",
+      "pageUrl": "https://www.saya-padoma.com/",
+      "what": "ベッドとチェアのある施術室",
+      "width": 1200,
+      "height": 625
+    },
+    {
+      "path": "/_portal/vshops/beauty-8/s2.jpg",
+      "imageUrl": "https://www.saya-padoma.com/wp-content/uploads/image3.jpg",
+      "pageUrl": "https://www.saya-padoma.com/",
+      "what": "腹部の機器ケアの様子",
+      "width": 1200,
+      "height": 625
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "key": "bodycare-20",
+  "images": [
+    {
+      "path": "/_portal/vshops/bodycare-20/s1.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=4096x4096:format=jpg/path/sda10be533897ba8a/image/ia317da48e36e4c82/version/1791382558/image.jpg",
+      "pageUrl": "https://ogawa-acupuncture.jimdofree.com/",
+      "what": "建物の入口まわり(外観)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "/_portal/vshops/bodycare-20/s2.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sda10be533897ba8a/image/id6b41ccd60db2d38/version/1791382558/image.jpg",
+      "pageUrl": "https://ogawa-acupuncture.jimdofree.com/",
+      "what": "施術ベッドのある部屋",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "path": "/_portal/vshops/bodycare-20/s3.jpg",
+      "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sda10be533897ba8a/image/ib8b640d6b8c5604e/version/1791382558/image.jpg",
+      "pageUrl": "https://ogawa-acupuncture.jimdofree.com/",
+      "what": "引き戸の玄関",
+      "width": 600,
+      "height": 400
+    }
+  ]
+}

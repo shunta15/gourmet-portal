@@ -1,0 +1,21 @@
+{
+  "key": "beauty-77",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-77/s1.jpg",
+      "imageUrl": "https://www.embellir-salon.net/img/top/top-service-img03.jpg",
+      "pageUrl": "https://www.embellir-salon.net/",
+      "what": "リクライニングチェアの個室",
+      "width": 640,
+      "height": 410
+    },
+    {
+      "path": "/_portal/vshops/beauty-77/s2.jpg",
+      "imageUrl": "https://www.embellir-salon.net/img/top/top-service-img02.jpg",
+      "pageUrl": "https://www.embellir-salon.net/",
+      "what": "施術ベッドと機器のある部屋",
+      "width": 640,
+      "height": 410
+    }
+  ]
+}

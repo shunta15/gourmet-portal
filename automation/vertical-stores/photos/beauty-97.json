@@ -1,0 +1,29 @@
+{
+  "key": "beauty-97",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-97/s1.jpg",
+      "imageUrl": "https://beautysalonspot.com/wp-content/uploads/2026/07/IMG_1102-2-2.jpg",
+      "pageUrl": "https://beautysalonspot.com/",
+      "what": "店名パネルの前のカウンセリング",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-97/s2.jpg",
+      "imageUrl": "https://beautysalonspot.com/wp-content/uploads/2026/07/IMG_1117b.jpg",
+      "pageUrl": "https://beautysalonspot.com/",
+      "what": "脱毛機器での施術の様子",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "/_portal/vshops/beauty-97/s3.jpg",
+      "imageUrl": "https://beautysalonspot.com/wp-content/uploads/2026/07/DSC_0041.jpg",
+      "pageUrl": "https://beautysalonspot.com/",
+      "what": "施術ベッドでの施術の様子",
+      "width": 1200,
+      "height": 800
+    }
+  ]
+}

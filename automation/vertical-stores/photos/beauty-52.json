@@ -1,0 +1,29 @@
+{
+  "key": "beauty-52",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-52/s1.jpg",
+      "imageUrl": "http://blanda2020.com/wp-content/uploads/2022/06/content02-inner-img01.jpg",
+      "pageUrl": "https://blanda2020.com/",
+      "what": "カウンセリングの様子",
+      "width": 1000,
+      "height": 700
+    },
+    {
+      "path": "/_portal/vshops/beauty-52/s2.jpg",
+      "imageUrl": "https://blanda2020.com/wp-content/themes/story_tcd041/img/content02-inner-img03.jpg",
+      "pageUrl": "https://blanda2020.com/",
+      "what": "フェイシャル施術の様子",
+      "width": 1000,
+      "height": 700
+    },
+    {
+      "path": "/_portal/vshops/beauty-52/s3.jpg",
+      "imageUrl": "https://blanda2020.com/wp-content/themes/story_tcd041/img/content02-inner-img02.jpg",
+      "pageUrl": "https://blanda2020.com/",
+      "what": "光脱毛機器を使う施術の手元",
+      "width": 1000,
+      "height": 700
+    }
+  ]
+}

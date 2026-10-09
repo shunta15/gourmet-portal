@@ -1,0 +1,29 @@
+{
+  "key": "beauty-37",
+  "images": [
+    {
+      "path": "/_portal/vshops/beauty-37/s1.jpg",
+      "imageUrl": "https://subsaku.com/wp-content/uploads/2026/01/2-292.png",
+      "pageUrl": "https://subsaku.com/mahotsukai_hairsalon/",
+      "what": "店先の外観と看板",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "path": "/_portal/vshops/beauty-37/s2.jpg",
+      "imageUrl": "https://subsaku.com/wp-content/uploads/2026/02/269a35d50362e62feb79d9a8fac16b10.png",
+      "pageUrl": "https://subsaku.com/mahotsukai_hairsalon/",
+      "what": "セット椅子が並ぶ店内",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "path": "/_portal/vshops/beauty-37/s3.jpg",
+      "imageUrl": "https://subsaku.com/wp-content/uploads/2026/01/4-246.png",
+      "pageUrl": "https://subsaku.com/mahotsukai_hairsalon/",
+      "what": "観葉植物と電話機のある一角",
+      "width": 640,
+      "height": 480
+    }
+  ]
+}
