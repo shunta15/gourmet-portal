@@ -377,9 +377,13 @@ void main(){
   mask = mix(mask, mblur, 0.5);
   float edgeN = ((vn(mC * 0.8) - 0.5) * 0.09 + (hash(floor(mC / 1.2)) - 0.5) * 0.05) * jk;
   float ink = smoothstep(0.40, 0.60, mask + edgeN) * inBox * smoothstep(yb, yb + 4.0 * s, y);
+  // 中央の垂れは、上がるにつれて字を薄くして消す（本番の暖簾と同じ。畳まれた布に字の残りが明るい点として出ない）
+  float cfade = (abs(k - (uN - 1.0) * 0.5) < 0.01) ? 1.0 - smoothstep(0.05, 0.42, uOpen) : 1.0;
+  cfade = min(cfade, (abs(uSel.x - k) < 0.5) ? 1.0 - smoothstep(0.15, 0.6, uSel.y) : 1.0);
+  ink *= cfade;
   float fleck = smoothstep(0.80, 0.96, vn(mC / 2.6 + 9.1));
   ink *= (1.0 - 0.07 * fleck) * (0.96 + 0.04 * vn(mC / 7.0 + 3.0));
-  float halo = smoothstep(0.03, 0.55, mblur) * (1.0 - ink) * inBox * smoothstep(yb, yb + 4.0 * s, y);
+  float halo = smoothstep(0.03, 0.55, mblur) * (1.0 - ink) * inBox * smoothstep(yb, yb + 4.0 * s, y) * cfade;
   alb = mix(alb, uDyeHi * 1.25, halo * 0.30);
 
   vec3 inkCol = uInk * 0.79 * (0.95 + 0.10 * (colr - 0.5));
