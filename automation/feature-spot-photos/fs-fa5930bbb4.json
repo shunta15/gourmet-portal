@@ -3,8 +3,66 @@
   "dir": "fs-fa5930bbb4",
   "storeName": "韃靼蕎麦吉川",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%9F%83%E9%9D%BC%E8%95%8E%E9%BA%A6%E5%90%89%E5%B7%9D%20%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E9%A3%9B%E5%8F%B0",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店名は空白のちがいのみで一致するが、住所の町名が記録(松戸市松飛台)と不一致(紙敷)。店を確かめられないため写真なし。(マップで着いた店: 韃靼蕎麦 吉川 / 千葉県松戸市紙敷１丁目34−２)"
+  "placeUrl": "https://www.google.com/maps/place/%E9%9F%83%E9%9D%BC%E8%95%8E%E9%BA%A6+%E5%90%89%E5%B7%9D/@35.7749175,139.9567115,17z/data=!3m1!4b1!4m6!3m5!1s0x6018838367b660c9:0x61ce1e7aa2db552e!8m2!3d35.7749175!4d139.9567115!16s%2Fg%2F11zbh0tzqc?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "韃靼蕎麦 吉川",
+    "address": "〒270-2221 千葉県松戸市紙敷１丁目34−２",
+    "category": "蕎麦店",
+    "how": "deep-check(別々の手がかり2つ以上。verify 参照)"
+  },
+  "images": [
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-fa5930bbb4/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q4KDg3pyEce07_wF3W4qkk59Nqh7g6d2wWhtR3sHM8jk-Ozrz0whcD0JLnyv1IdhlI2YRh9y4T6N4zZguIo-gV5hKBGpiXHC23KX_gz67dvmyKRri4Am5FTwQCDB6EzLxsfNSyxNwq1AIt",
+      "what": "ざる蕎麦の膳",
+      "width": 600,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-fa5930bbb4/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rbx9yA4rJf-BbARvO3bnmq2WbYtzyf_JLabJYw4uRRgoNQPlugOxbFlohiXJpAdOidh9vqAJS0c3tT7wurwzWYIpJUP-6U7QknAmIBdogWan7Fs8AEk3UlAIqC6RkLQ2PvDM_rQrQgLGrA",
+      "what": "盛り付けた蕎麦",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-fa5930bbb4/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tz9E25Fg0Iyw1ULJ1Icg-xXpFX0CeuRfZKFZVXtTK1-fuPcYPAyuwAPRLumsnQMGVUEaJ14zO1dRJz57ukDtRTpjJG0orzfEbOKyM-gh5-vPzGW5fcEEoU6FPFOPoba45Z7WbHUxhW74UX",
+      "what": "吉川の暖簾と店内の席",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-fa5930bbb4/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rq1HeRiqpbRXJJ46uTWl0tE_FuORhVvpU41LpAJ_IYoi9E2qn9HXC4By0w08tUPGIRI_1MsFEJPhdqsg7M5D0w4ac4X1qC4S9WSpxd3f8Df23ZslWZcKsR3CrQjiwSBZdQqrACVT8t7c0R",
+      "what": "十割そばののぼりと店の外観",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店名は空白のちがいのみで一致するが、住所の町名が記録(松戸市松飛台)と不一致(紙敷)。店を確かめられないため写真なし。(マップで着いた店: 韃靼蕎麦 吉川 / 千葉県松戸市紙敷１丁目34−２) 【2026-10-09 D1: 深い照合で確定→写真を付けた】",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(b) 住所: 記事「千葉県松戸市紙敷1-34-2」=Google「紙敷1丁目34-2」",
+      "(d) 公式Instagram(@yoshikawaya_official=Googleのウェブサイト欄): 「韃靼蕎麦 吉川 / 千葉県松戸市紙敷1-34-2 / TEL047-706-8203 / 松飛台駅徒歩2分」=Googleの住所・電話と一致、記事の住所・「松飛台駅 徒歩2分」とも一致",
+      "(g)の一部: 韃靼蕎麦・十割蕎麦・日本酒焼酎の取り揃え(プロフィール)=記事の看板"
+    ],
+    "checkedAt": "2026-10-09",
+    "conflicts": [
+      "[記事データ] エリア欄「松戸市松飛台」だが記事本文の所在地は「紙敷1-34-2」(松飛台は駅名・地区名)。営業時間 記事11:00〜15:00・17:00〜20:00 / Google 11:30〜14:30・17:00〜20:00(わずかに違う)"
+    ]
+  }
 }

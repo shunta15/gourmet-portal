@@ -1,35 +1,43 @@
 {
- "featureId": "りんかい",
- "dir": "fs-0aec0c0526",
- "storeName": "りんかい",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%8A%E3%82%93%E3%81%8B%E3%81%84%20%E8%8D%89%E6%B4%A5%E5%B8%82%E7%9F%A2%E6%A9%8B%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%82%8A%E3%82%93%E3%81%8B%E3%81%84/@35.0085219,135.9334369,17z/data=!3m1!4b1!4m6!3m5!1s0x600173b05514b37d:0x1f89ff3fbf1103e3!8m2!3d35.0085219!4d135.9334369!16s%2Fg%2F11fpkf7_q7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "りんかい",
-  "address": "〒525-0066 滋賀県草津市矢橋町97−１",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-0aec0c0526/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QflhOdEPoBUBezsZHGW5jLInKZvMxAFeMpSvlvARK7S954QuQ9iVuh8yD_IcV8v1cYI3M7HNQeRtnpr5semJlUwuq_v-Y4Guynvke2BHrh2Is0hW9HSdcOkS4yxSbPLa0jzRP0ZT7_IUk=s1200",
-   "what": "天ぷらとうどんの膳",
-   "width": 900,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "りんかい",
+  "dir": "fs-0aec0c0526",
+  "storeName": "りんかい",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%8A%E3%82%93%E3%81%8B%E3%81%84%20%E8%8D%89%E6%B4%A5%E5%B8%82%E7%9F%A2%E6%A9%8B%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%8A%E3%82%93%E3%81%8B%E3%81%84/@35.0085219,135.9334369,17z/data=!3m1!4b1!4m6!3m5!1s0x600173b05514b37d:0x1f89ff3fbf1103e3!8m2!3d35.0085219!4d135.9334369!16s%2Fg%2F11fpkf7_q7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "りんかい",
+    "address": "〒525-0066 滋賀県草津市矢橋町97−１",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-0aec0c0526/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRpWH3sIf7dw_UBTijorF9bUh2xVQjvJFEjlLFCO2tMILfmErHOOWMvRoik66eCArjgolsCiTReeFuCcUjf6tmOo5hyO-ilXNMFQpMGrCh99q3K5olzOT02jSQ0raOb4219Sg=s1200",
-   "what": "のれんと幟のある店頭",
-   "width": 900,
-   "height": 507,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-0aec0c0526/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QflhOdEPoBUBezsZHGW5jLInKZvMxAFeMpSvlvARK7S954QuQ9iVuh8yD_IcV8v1cYI3M7HNQeRtnpr5semJlUwuq_v-Y4Guynvke2BHrh2Is0hW9HSdcOkS4yxSbPLa0jzRP0ZT7_IUk=s1200",
+      "what": "天ぷらとうどんの膳",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-0aec0c0526/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRpWH3sIf7dw_UBTijorF9bUh2xVQjvJFEjlLFCO2tMILfmErHOOWMvRoik66eCArjgolsCiTReeFuCcUjf6tmOo5hyO-ilXNMFQpMGrCh99q3K5olzOT02jSQ0raOb4219Sg=s1200",
+      "what": "のれんと幟のある店頭",
+      "width": 900,
+      "height": 507,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「りんかい」(完全一致)/町名 記事「草津市矢橋町」= Google「草津市矢橋町97-1」/業種 うどん屋",
+      "(g) 記事「JR南草津駅から徒歩15分(約1,390m)」= Google位置から南草津駅(マップ検索で座標取得)まで直線約1,364m(道のり1,390mと整合)/ 記事『夜も営業』= Google『営業開始: 18:00』"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

@@ -1,45 +1,53 @@
 {
- "featureId": "カフェ・トム・トム",
- "dir": "fs-838bc0f6c9",
- "storeName": "カフェ・トム・トム",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%88%E3%83%A0%E3%83%BB%E3%83%88%E3%83%A0%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E5%85%AD%E6%B9%9B%E5%AF%BA%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%88%E3%83%A0%E3%83%BB%E3%83%88%E3%83%A0/@34.7373412,135.3402413,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f25eec0ae915:0x2d9c138f2c8e4d75!8m2!3d34.7373412!4d135.3402413!16s%2Fg%2F1tgm2rmv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "カフェ・トム・トム",
-  "address": "〒662-0918 兵庫県西宮市六湛寺町１２−１２ hu",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-838bc0f6c9/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuU6Uw-FrCZNqjAEc-K1J7dRsQlZVBmh1wqiXtEa0LrRbFFlZjzWZ2MV7vFfXb-V48H0-nS_NFSSPPKHKCQnJtAkRqbfzivPq1hSouZCLoj4L-fddp75C_l0b-DV-uqlBWc06u",
-   "what": "トーストとコーヒー",
-   "width": 900,
-   "height": 506,
-   "byOwner": null,
-   "source": "Google マップ"
+  "featureId": "カフェ・トム・トム",
+  "dir": "fs-838bc0f6c9",
+  "storeName": "カフェ・トム・トム",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%88%E3%83%A0%E3%83%BB%E3%83%88%E3%83%A0%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E5%85%AD%E6%B9%9B%E5%AF%BA%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%88%E3%83%A0%E3%83%BB%E3%83%88%E3%83%A0/@34.7373412,135.3402413,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f25eec0ae915:0x2d9c138f2c8e4d75!8m2!3d34.7373412!4d135.3402413!16s%2Fg%2F1tgm2rmv?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "カフェ・トム・トム",
+    "address": "〒662-0918 兵庫県西宮市六湛寺町１２−１２ hu",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-838bc0f6c9/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOT30kPxmDQJI8M8IdE6Gp73sHGGuNFlHtMSiuWbQAyDX9P9WaiwsWM7f6JpgVGxyjDO3AuUCl9yLfY6aTKJ3hl5O7gQn5exkNvDrtv6lDw-4x8-tH6zmYcEF6ffF6Ygb64LW-",
-   "what": "カウンターのある店内",
-   "width": 900,
-   "height": 506,
-   "byOwner": null,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-838bc0f6c9/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Try01kQL0-76o6XIRfmL4H3UWefvPjxx1lq-vaHaRvI6T2Hu1Uhwl2P5lRbyu7-mF4JarJANlYMmfVQ0bIarsgI4y6GtJ5QOwgSSgl5CiB3Qw-7Y5SNJrMt1p6VrArXP8NIe8",
-   "what": "店の入口と外観",
-   "width": 900,
-   "height": 506,
-   "byOwner": null,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-838bc0f6c9/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuU6Uw-FrCZNqjAEc-K1J7dRsQlZVBmh1wqiXtEa0LrRbFFlZjzWZ2MV7vFfXb-V48H0-nS_NFSSPPKHKCQnJtAkRqbfzivPq1hSouZCLoj4L-fddp75C_l0b-DV-uqlBWc06u",
+      "what": "トーストとコーヒー",
+      "width": 900,
+      "height": 506,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-838bc0f6c9/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOT30kPxmDQJI8M8IdE6Gp73sHGGuNFlHtMSiuWbQAyDX9P9WaiwsWM7f6JpgVGxyjDO3AuUCl9yLfY6aTKJ3hl5O7gQn5exkNvDrtv6lDw-4x8-tH6zmYcEF6ffF6Ygb64LW-",
+      "what": "カウンターのある店内",
+      "width": 900,
+      "height": 506,
+      "byOwner": null,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-838bc0f6c9/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Try01kQL0-76o6XIRfmL4H3UWefvPjxx1lq-vaHaRvI6T2Hu1Uhwl2P5lRbyu7-mF4JarJANlYMmfVQ0bIarsgI4y6GtJ5QOwgSSgl5CiB3Qw-7Y5SNJrMt1p6VrArXP8NIe8",
+      "what": "店の入口と外観",
+      "width": 900,
+      "height": 506,
+      "byOwner": null,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "不明",
+    "signals": [
+      "(f) 店名「カフェ・トム・トム」(完全一致)/町名 記事「六湛寺町」= Google「西宮市六湛寺町12-12」/業種 カフェ・喫茶",
+      "(g・1点のみ一致) 記事『西宮市役所の隣』= Google位置が西宮市役所(六湛寺町10-3)から直線約112m"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

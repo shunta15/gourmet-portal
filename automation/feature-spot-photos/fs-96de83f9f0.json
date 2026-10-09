@@ -1,35 +1,46 @@
 {
- "featureId": "ガルーダ",
- "dir": "fs-96de83f9f0",
- "storeName": "ガルーダ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80%20%E5%A4%A7%E5%9E%A3%E5%B8%82%E9%B6%B4%E8%A6%8B%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80/@35.3614019,136.6348413,17z/data=!3m1!4b1!4m6!3m5!1s0x6003b19e8d6b16af:0xf95c2609d0368aa7!8m2!3d35.3614019!4d136.6348413!16s%2Fg%2F1xtf1ht3?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "ガルーダ",
-  "address": "岐阜県大垣市鶴見町２０７−１ ブルーム ２０７−２",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-96de83f9f0/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWGzCxBirNQ6-r0hweJvp1Sk3xRkfcRC264TSoqpk86ENv-pJ_J78OSzUA9RI2RQkazPUjyqJQc0zNiWERASflWANu-3tTGAqxiJefVu-vti4676JLQU3mnNgcUN2UeiPPRRkX8Q=s1200",
-   "what": "階段と座敷のある古民家の店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "ガルーダ",
+  "dir": "fs-96de83f9f0",
+  "storeName": "ガルーダ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80%20%E5%A4%A7%E5%9E%A3%E5%B8%82%E9%B6%B4%E8%A6%8B%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%AC%E3%83%AB%E3%83%BC%E3%83%80/@35.3614019,136.6348413,17z/data=!3m1!4b1!4m6!3m5!1s0x6003b19e8d6b16af:0xf95c2609d0368aa7!8m2!3d35.3614019!4d136.6348413!16s%2Fg%2F1xtf1ht3?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "ガルーダ",
+    "address": "岐阜県大垣市鶴見町２０７−１ ブルーム ２０７−２",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-96de83f9f0/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QednHCqarNuSC0PHCQW1zPzuuiX2PJGLQBNtoYzcCdL3jlw1mUnSZxnl1WCDf_ePzw58DGIJoEd-PrBWXEuy4Xv1xt1KuPDO8bD83S5qSrFqcAx0_tSlBcjkHYU9Aw_cVJJqslDQ=s1200",
-   "what": "重厚な木の扉の入口",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
-  }
- ],
- "note": ""
+  "images": [],
+  "note": " 【写真を外した 2026-10-09: D2の深い照合で不一致(verify 参照)。画像ファイルは残してある】",
+  "verify": {
+    "status": "不一致",
+    "signals": [
+      "(a) 電話: 記事「0584-81-7811」= Google = 公式 ogaki-garuda.com",
+      "(b) 住所: 記事「鶴見町207-2」= 公式・Google(鶴見町207-1 ブルーム207-2)",
+      "(g) 記事『店名の由来は迦楼羅』= 公式『焼肉Dining 迦楼羅』",
+      "【食い違い】業種: 記事は『創作和食・居酒屋/魚と日本酒が軸/100品以上』。Googleの業種は『焼肉店』、公式サイトは『焼肉Dining 迦楼羅(ガルーダ)・料理人がつくる唯一無二の焼肉店』で、姉妹店は炭焼きDiningばろん。店(電話・住所)は同じだが、記事の説明する店の中身と合わない"
+    ],
+    "checkedAt": "2026-10-09"
+  },
+  "rejectedImages": [
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-96de83f9f0/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWGzCxBirNQ6-r0hweJvp1Sk3xRkfcRC264TSoqpk86ENv-pJ_J78OSzUA9RI2RQkazPUjyqJQc0zNiWERASflWANu-3tTGAqxiJefVu-vti4676JLQU3mnNgcUN2UeiPPRRkX8Q=s1200",
+      "what": "階段と座敷のある古民家の店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-96de83f9f0/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QednHCqarNuSC0PHCQW1zPzuuiX2PJGLQBNtoYzcCdL3jlw1mUnSZxnl1WCDf_ePzw58DGIJoEd-PrBWXEuy4Xv1xt1KuPDO8bD83S5qSrFqcAx0_tSlBcjkHYU9Aw_cVJJqslDQ=s1200",
+      "what": "重厚な木の扉の入口",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ]
 }

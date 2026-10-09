@@ -1,45 +1,53 @@
 {
- "featureId": "お食事処魚の光家",
- "dir": "fs-c19fea0d7d",
- "storeName": "お食事処魚の光家",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E9%AD%9A%E3%81%AE%E5%85%89%E5%AE%B6%20%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%B0%8F%E5%80%89%E5%8D%97%E5%8C%BA",
- "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6+%E9%AD%9A%E3%81%AE%E5%85%89%E5%AE%B6/@33.8291947,130.8673717,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c70037d00821:0x2cf096c202198b37!8m2!3d33.8291947!4d130.8673717!16s%2Fg%2F11y3ygmvmg?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "お食事処 魚の光家",
-  "address": "〒802-0974 福岡県北九州市小倉南区徳力２丁目３−１ 103号",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-c19fea0d7d/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjVDFLBfduvzCPj86unan5evFlgJUyR7_Zp61NXz9hS4gb8ga6gkGXfwSmCD--o6rHBQrE5RvlD7U5s8NwrRVoVWP_Yxyxy3CyE7b2xmEAgwCRe_dV23UFrZdMx5rtV2TlEYJTuTstDBQ=s1200",
-   "what": "刺身つきの定食",
-   "width": 900,
-   "height": 639,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "お食事処魚の光家",
+  "dir": "fs-c19fea0d7d",
+  "storeName": "お食事処魚の光家",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%E9%AD%9A%E3%81%AE%E5%85%89%E5%AE%B6%20%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%B0%8F%E5%80%89%E5%8D%97%E5%8C%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6+%E9%AD%9A%E3%81%AE%E5%85%89%E5%AE%B6/@33.8291947,130.8673717,17z/data=!3m1!4b1!4m6!3m5!1s0x3543c70037d00821:0x2cf096c202198b37!8m2!3d33.8291947!4d130.8673717!16s%2Fg%2F11y3ygmvmg?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "お食事処 魚の光家",
+    "address": "〒802-0974 福岡県北九州市小倉南区徳力２丁目３−１ 103号",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-c19fea0d7d/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnclCb0EG4yMfO9KL4Lmz5s08Fzxla_1sNX5eMroLawien1EDjaoMYKkSYRLuAkKHnAhhDs5Bue24Jg8yrswoCmY3pm-negAKMEn0ACPbh79_-lsMsZW_YC-ClCS0NCVEAPHd2=s1200",
-   "what": "カウンターのある明るい店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-c19fea0d7d/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TggOZiDT2zAjvmFFSBEZh-krisIVx18dpVR_ws1fwdIxbrWevkzIChbEFrw3SjuFBMKfIvzM-n5UGrpMPw1uHZg6HWitbNmFwbLvYIgO1GZVBfjOz6OhKLF_42HSxr5_XGnREr2zKK794=s1200",
-   "what": "のれんと看板の店頭",
-   "width": 900,
-   "height": 678,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-c19fea0d7d/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjVDFLBfduvzCPj86unan5evFlgJUyR7_Zp61NXz9hS4gb8ga6gkGXfwSmCD--o6rHBQrE5RvlD7U5s8NwrRVoVWP_Yxyxy3CyE7b2xmEAgwCRe_dV23UFrZdMx5rtV2TlEYJTuTstDBQ=s1200",
+      "what": "刺身つきの定食",
+      "width": 900,
+      "height": 639,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-c19fea0d7d/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnclCb0EG4yMfO9KL4Lmz5s08Fzxla_1sNX5eMroLawien1EDjaoMYKkSYRLuAkKHnAhhDs5Bue24Jg8yrswoCmY3pm-negAKMEn0ACPbh79_-lsMsZW_YC-ClCS0NCVEAPHd2=s1200",
+      "what": "カウンターのある明るい店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-c19fea0d7d/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TggOZiDT2zAjvmFFSBEZh-krisIVx18dpVR_ws1fwdIxbrWevkzIChbEFrw3SjuFBMKfIvzM-n5UGrpMPw1uHZg6HWitbNmFwbLvYIgO1GZVBfjOz6OhKLF_42HSxr5_XGnREr2zKK794=s1200",
+      "what": "のれんと看板の店頭",
+      "width": 900,
+      "height": 678,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "住所は小倉南区徳力2丁目(記録は区まで)",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「093-600-2323」=Google「093-600-2323」",
+      "(f) 町名: 記事「北九州市小倉南区徳力」=Google「徳力2丁目3-1」、店名一致、業種 定食屋(海鮮・定食)"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "住所は小倉南区徳力2丁目(記録は区まで)"
 }

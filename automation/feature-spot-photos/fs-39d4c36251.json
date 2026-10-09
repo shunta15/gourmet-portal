@@ -1,45 +1,53 @@
 {
- "featureId": "川内珈琲bycampgear12",
- "dir": "fs-39d4c36251",
- "storeName": "川内珈琲bycampgear12",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B7%9D%E5%86%85%E7%8F%88%E7%90%B2bycampgear12%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%9F%8E%E5%8D%97%E5%8C%BA",
- "placeUrl": "https://www.google.com/maps/place/%E5%B7%9D%E5%86%85%E7%8F%88%E7%90%B2+by+camp+gear+12/@33.5622738,130.3784442,17z/data=!3m1!4b1!4m6!3m5!1s0x35418f29bd9f1267:0x6ebc24e5aea8e19d!8m2!3d33.5622738!4d130.3784442!16s%2Fg%2F11l34tly3g?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "川内珈琲 by camp gear 12",
-  "address": "福岡県福岡市城南区友泉亭６−３０ B",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-39d4c36251/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0WWOgE-JbIrfuA73WX1nRnrqkSHat4KNwXNJVDmEVw3by1ehM2KQpMkRhXYdoFVe8s5L4S2tsiMsuUlHw1NJ8MCwP9DrnZsXnP8h5hJtGaSVzkbDYTPntLpnPXRHkgKdCDMA=s1200",
-   "what": "コーヒー豆の瓶が並ぶ棚",
-   "width": 900,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "川内珈琲bycampgear12",
+  "dir": "fs-39d4c36251",
+  "storeName": "川内珈琲bycampgear12",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B7%9D%E5%86%85%E7%8F%88%E7%90%B2bycampgear12%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%9F%8E%E5%8D%97%E5%8C%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E5%B7%9D%E5%86%85%E7%8F%88%E7%90%B2+by+camp+gear+12/@33.5622738,130.3784442,17z/data=!3m1!4b1!4m6!3m5!1s0x35418f29bd9f1267:0x6ebc24e5aea8e19d!8m2!3d33.5622738!4d130.3784442!16s%2Fg%2F11l34tly3g?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "川内珈琲 by camp gear 12",
+    "address": "福岡県福岡市城南区友泉亭６−３０ B",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-39d4c36251/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLeCLJJUQQkE9WKNnzYRjVHHosIlHMyf-vh83AYfLwK-TxVj7_12bUksD5ld6-RdlrEueytsMdgxBx50FNQt5u-WgvcI4GI_If0zKNl9d8UVPStTkv_uao7xw28_0aSRFlOJ2yfCp7G_M=s1200",
-   "what": "青い看板の外観",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-39d4c36251/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAK9YNMnyHaKcO19Zb8rbuckebegy4G__B4C9blC39iCbgGrdMnjsNeQGOkItaBDzz0OhEC4cmMWh0IIaxV0i3N4CUz6z-WVkzYuCZuFSxD7VIxzroGa1OaCL3w9EhcQT6qnmMLgX7gUPy=s1200",
-   "what": "夕日の差す店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-39d4c36251/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0WWOgE-JbIrfuA73WX1nRnrqkSHat4KNwXNJVDmEVw3by1ehM2KQpMkRhXYdoFVe8s5L4S2tsiMsuUlHw1NJ8MCwP9DrnZsXnP8h5hJtGaSVzkbDYTPntLpnPXRHkgKdCDMA=s1200",
+      "what": "コーヒー豆の瓶が並ぶ棚",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-39d4c36251/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLeCLJJUQQkE9WKNnzYRjVHHosIlHMyf-vh83AYfLwK-TxVj7_12bUksD5ld6-RdlrEueytsMdgxBx50FNQt5u-WgvcI4GI_If0zKNl9d8UVPStTkv_uao7xw28_0aSRFlOJ2yfCp7G_M=s1200",
+      "what": "青い看板の外観",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-39d4c36251/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAK9YNMnyHaKcO19Zb8rbuckebegy4G__B4C9blC39iCbgGrdMnjsNeQGOkItaBDzz0OhEC4cmMWh0IIaxV0i3N4CUz6z-WVkzYuCZuFSxD7VIxzroGa1OaCL3w9EhcQT6qnmMLgX7gUPy=s1200",
+      "what": "夕日の差す店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "p4・p5がどちらもアクセス・立地の話題で、外観の写真は1枚のため、p5は店内の写真で代用",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「川内珈琲bycampgear12」= Google「川内珈琲 by camp gear 12」(完全一致)/町名 福岡市城南区(友泉亭)/業種 カフェ",
+      "(d) 公式サイト campgear12.com: 『福岡県福岡市城南区友泉亭6-30』= Google/『ギアショップ併設珈琲店・登山やキャンプ道具の中古の取り扱い』= 記事『キャンプ・登山用品/中古買取』『友泉亭公園が徒歩圏』と合う"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "p4・p5がどちらもアクセス・立地の話題で、外観の写真は1枚のため、p5は店内の写真で代用"
 }

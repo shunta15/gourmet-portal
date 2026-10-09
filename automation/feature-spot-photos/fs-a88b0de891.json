@@ -1,45 +1,53 @@
 {
- "featureId": "BlissBurgerHawaii",
- "dir": "fs-a88b0de891",
- "storeName": "BlissBurgerHawaii",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BlissBurgerHawaii%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E5%8C%97%E5%90%8D%E6%AC%A1%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/Bliss+Burger+Hawaii/@34.7546853,135.3293637,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f31cf93668e3:0x5f2793e2d3d62e9f!8m2!3d34.7546853!4d135.3293637!16s%2Fg%2F11rxg1gtwh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "Bliss Burger Hawaii",
-  "address": "〒662-0025 兵庫県西宮市北名次町１５−１１ 白井マンション １０１",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-a88b0de891/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVSwO5Sl6Gv5UE0zmk-M5WNka6ML3jKiIidGzcD0RWzMptlOC6A1C2O6etaqiLDV2Y-Kn6sx0gLCn2HV5APbxKN0h60tlBj_8Bk_kWoOc3gbw6A2xt9mt7CMRUmVB7fmcmIl8jl_PuHm8Z",
-   "what": "鉄板皿のグラタン風の一品",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "BlissBurgerHawaii",
+  "dir": "fs-a88b0de891",
+  "storeName": "BlissBurgerHawaii",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BlissBurgerHawaii%20%E8%A5%BF%E5%AE%AE%E5%B8%82%E5%8C%97%E5%90%8D%E6%AC%A1%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/Bliss+Burger+Hawaii/@34.7546853,135.3293637,17z/data=!3m1!4b1!4m6!3m5!1s0x6000f31cf93668e3:0x5f2793e2d3d62e9f!8m2!3d34.7546853!4d135.3293637!16s%2Fg%2F11rxg1gtwh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "Bliss Burger Hawaii",
+    "address": "〒662-0025 兵庫県西宮市北名次町１５−１１ 白井マンション １０１",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-a88b0de891/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7TLr_EVUxAiuuoebsUIHkH6UR8JJ3wycmmkrWTylJ0EyHpJBW4HoSGuH1_CKnQ8mN1ALk6tuGG9PTArwGc0grqnBMMGI7D1VEZQmB92OexmiFhIdQTgBXgEq5_U7j6u3K37TCLaVzP9kT",
-   "what": "雑貨と絵の飾られた店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-a88b0de891/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdfjWn_iiyr0oXAOUl0jM7oIgyI6QKaaBhmbgFliVXGni3BLHnze7_Nd3-ppf1avd-QJZvtPe3MSYQ-RY-C8Bd9gGjgaHEXkD5AuvCwUqKT9iqwpOrdObZELkb_agDa1qApEI",
-   "what": "店の看板",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-a88b0de891/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVSwO5Sl6Gv5UE0zmk-M5WNka6ML3jKiIidGzcD0RWzMptlOC6A1C2O6etaqiLDV2Y-Kn6sx0gLCn2HV5APbxKN0h60tlBj_8Bk_kWoOc3gbw6A2xt9mt7CMRUmVB7fmcmIl8jl_PuHm8Z",
+      "what": "鉄板皿のグラタン風の一品",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-a88b0de891/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7TLr_EVUxAiuuoebsUIHkH6UR8JJ3wycmmkrWTylJ0EyHpJBW4HoSGuH1_CKnQ8mN1ALk6tuGG9PTArwGc0grqnBMMGI7D1VEZQmB92OexmiFhIdQTgBXgEq5_U7j6u3K37TCLaVzP9kT",
+      "what": "雑貨と絵の飾られた店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-a88b0de891/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdfjWn_iiyr0oXAOUl0jM7oIgyI6QKaaBhmbgFliVXGni3BLHnze7_Nd3-ppf1avd-QJZvtPe3MSYQ-RY-C8Bd9gGjgaHEXkD5AuvCwUqKT9iqwpOrdObZELkb_agDa1qApEI",
+      "what": "店の看板",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d)+(g) 公式サイト(sites.google.com/view/bliss-burger-hawaii1808): 住所「西宮市北名次町15-11 白井マンション101」・TEL 080-3844-1808=Google / 営業「11:00〜15:00・17:00〜22:00」「定休 木曜」=記事の「11時〜15時／17時〜22時・木曜定休」",
+      "(f) 店名・町名 北名次町・業種 ハンバーガー店"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

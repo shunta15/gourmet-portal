@@ -62,6 +62,13 @@
       "5": "/restaurants/fs/fs-f8993a18f8/p5.jpg"
     }
   },
+  "CafeLABOUQUET": {
+    "spots": {
+      "3": "/restaurants/fs/fs-5ca042da18/p3.jpg",
+      "4": "/restaurants/fs/fs-5ca042da18/p4.jpg",
+      "5": "/restaurants/fs/fs-5ca042da18/p5.jpg"
+    }
+  },
   "CaféBleu2": {
     "spots": {
       "3": "/restaurants/fs/fs-a8b3c57a63/p3.jpg",
@@ -268,6 +275,13 @@
       "3": "/restaurants/fs/fs-5e782e47a3/p3.jpg",
       "4": "/restaurants/fs/fs-5e782e47a3/p4.jpg",
       "5": "/restaurants/fs/fs-5e782e47a3/p5.jpg"
+    }
+  },
+  "cafeGRANO": {
+    "spots": {
+      "3": "/restaurants/fs/fs-a7e40904fb/p3.jpg",
+      "4": "/restaurants/fs/fs-a7e40904fb/p4.jpg",
+      "5": "/restaurants/fs/fs-a7e40904fb/p5.jpg"
     }
   },
   "cafebarGroovy": {
@@ -708,6 +722,13 @@
       "5": "/restaurants/fs/fs-26643fa6ce/p5.jpg"
     }
   },
+  "とりえもん": {
+    "spots": {
+      "3": "/restaurants/fs/fs-2fbf1136bf/p3.jpg",
+      "4": "/restaurants/fs/fs-2fbf1136bf/p4.jpg",
+      "5": "/restaurants/fs/fs-2fbf1136bf/p5.jpg"
+    }
+  },
   "とんかつ林": {
     "spots": {
       "2": "/restaurants/fs/fs-680638da97/p2.jpg",
@@ -735,6 +756,13 @@
       "3": "/restaurants/fs/fs-85f997e776/p3.jpg",
       "4": "/restaurants/fs/fs-85f997e776/p4.jpg",
       "5": "/restaurants/fs/fs-85f997e776/p5.jpg"
+    }
+  },
+  "ふじ": {
+    "spots": {
+      "3": "/restaurants/fs/fs-a6c6cfff58/p3.jpg",
+      "4": "/restaurants/fs/fs-a6c6cfff58/p4.jpg",
+      "5": "/restaurants/fs/fs-a6c6cfff58/p5.jpg"
     }
   },
   "ぺんぎん食堂": {
@@ -805,6 +833,13 @@
       "3": "/restaurants/fs/fs-ceb53c2304/p3.jpg",
       "4": "/restaurants/fs/fs-ceb53c2304/p4.jpg",
       "5": "/restaurants/fs/fs-ceb53c2304/p5.jpg"
+    }
+  },
+  "やく味屋": {
+    "spots": {
+      "3": "/restaurants/fs/fs-524cee6d84/p3.jpg",
+      "4": "/restaurants/fs/fs-524cee6d84/p4.jpg",
+      "5": "/restaurants/fs/fs-524cee6d84/p5.jpg"
     }
   },
   "ゆで餃子JINGJIAOZI": {
@@ -951,12 +986,6 @@
       "3": "/restaurants/fs/fs-838bc0f6c9/p3.jpg",
       "4": "/restaurants/fs/fs-838bc0f6c9/p4.jpg",
       "5": "/restaurants/fs/fs-838bc0f6c9/p5.jpg"
-    }
-  },
-  "ガルーダ": {
-    "spots": {
-      "4": "/restaurants/fs/fs-96de83f9f0/p4.jpg",
-      "5": "/restaurants/fs/fs-96de83f9f0/p5.jpg"
     }
   },
   "キッチンおばた": {
@@ -1145,6 +1174,13 @@
       "3": "/restaurants/fs/fs-2e414715ee/p3.jpg",
       "4": "/restaurants/fs/fs-2e414715ee/p4.jpg",
       "5": "/restaurants/fs/fs-2e414715ee/p5.jpg"
+    }
+  },
+  "ヤマビコホルモン焼肉大阪豊中": {
+    "spots": {
+      "3": "/restaurants/fs/fs-6812d46328/p3.jpg",
+      "4": "/restaurants/fs/fs-6812d46328/p4.jpg",
+      "5": "/restaurants/fs/fs-6812d46328/p5.jpg"
     }
   },
   "ライブカフェNobodyKnows": {
@@ -1640,6 +1676,13 @@
       "5": "/restaurants/fs/fs-cbedbd432f/p5.jpg"
     }
   },
+  "寿司美奈吉": {
+    "spots": {
+      "3": "/restaurants/fs/fs-6222bcf96e/p3.jpg",
+      "4": "/restaurants/fs/fs-6222bcf96e/p4.jpg",
+      "5": "/restaurants/fs/fs-6222bcf96e/p5.jpg"
+    }
+  },
   "寿園カフェ": {
     "spots": {
       "3": "/restaurants/fs/fs-9c76abf17d/p3.jpg",
@@ -2112,6 +2155,13 @@
       "5": "/restaurants/fs/fs-36d39a8d0c/p5.jpg"
     }
   },
+  "縁カフェ天神森": {
+    "spots": {
+      "3": "/restaurants/fs/fs-24b319a38e/p3.jpg",
+      "4": "/restaurants/fs/fs-24b319a38e/p4.jpg",
+      "5": "/restaurants/fs/fs-24b319a38e/p5.jpg"
+    }
+  },
   "肉のまるたか": {
     "spots": {
       "3": "/restaurants/fs/fs-dd91dbc7ba/p3.jpg",
@@ -2176,6 +2226,13 @@
       "3": "/restaurants/fs/fs-8b576c011d/p3.jpg",
       "4": "/restaurants/fs/fs-8b576c011d/p4.jpg",
       "5": "/restaurants/fs/fs-8b576c011d/p5.jpg"
+    }
+  },
+  "蕎麦処一閑人": {
+    "spots": {
+      "3": "/restaurants/fs/fs-aa3fef569d/p3.jpg",
+      "4": "/restaurants/fs/fs-aa3fef569d/p4.jpg",
+      "5": "/restaurants/fs/fs-aa3fef569d/p5.jpg"
     }
   },
   "薪窯ピザドーノ": {
@@ -2289,6 +2346,14 @@
       "3": "/restaurants/fs/fs-e31505a44b/p3.jpg",
       "4": "/restaurants/fs/fs-e31505a44b/p4.jpg",
       "5": "/restaurants/fs/fs-e31505a44b/p5.jpg"
+    }
+  },
+  "韃靼蕎麦吉川": {
+    "spots": {
+      "2": "/restaurants/fs/fs-fa5930bbb4/p2.jpg",
+      "3": "/restaurants/fs/fs-fa5930bbb4/p3.jpg",
+      "4": "/restaurants/fs/fs-fa5930bbb4/p4.jpg",
+      "5": "/restaurants/fs/fs-fa5930bbb4/p5.jpg"
     }
   },
   "飛騨あっぽ": {

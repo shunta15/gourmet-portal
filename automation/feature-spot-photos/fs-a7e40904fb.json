@@ -3,8 +3,56 @@
   "dir": "fs-a7e40904fb",
   "storeName": "cafe GRANO",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=cafe%20GRANO%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: 検索結果は一覧(7件)で、店名が完全一致するのは「cafe GRANO」(一覧のカードの住所は「妙大開83-5」・業種はカフェ・喫茶)の1件のみだが、詳細ページは開いていない。記録の address は「兵庫県神戸市」、area は「八戸市妙」で食い違ったまま(1回めのメモの理由が残る)ため通していない。"
+  "placeUrl": "https://www.google.com/maps/place/cafe+GRANO/@40.4807153,141.5668385,17z/data=!3m1!4b1!4m6!3m5!1s0x5f9b53005f05f035:0xf831c636a722c9be!8m2!3d40.4807153!4d141.5668385!16s%2Fg%2F11n52m_fjj?authuser=0&hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "cafe GRANO",
+    "address": "〒031-0814 青森県八戸市妙大開８３−５",
+    "category": "カフェ・喫茶",
+    "how": "deep-check(別々の手がかり2つ以上。verify 参照)"
+  },
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-a7e40904fb/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qn24XunN-8umSk2jVORmeNwDtpCp1aL-SUf477ActaZdME7l3USoLcsZkM9BECbvO6rU3f_OYK1ZRwIVRjqZYAzhnU9BO2QMIbibmdi3JvDN5TrBjotjAwHGP4p6OJb_K27NOEYeuI-dMg",
+      "what": "チーズをのせたオムライス",
+      "width": 900,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-a7e40904fb/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S03iHihijOqsmQedyr9RHW2Ena2svxL5wwMnbQ6sDIypvNcV_KTi-EAenD9R2YinSRU0wwr6l78B_45be9TiZwjxxzcwrRNVGj-K1VGa6kvcDDfodJazIZT-RhS-F8-EE8l0HBrdoIKwg",
+      "what": "カウンターとテーブルのある明るい店内",
+      "width": 900,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-a7e40904fb/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrbJZTlOfkijdMl-S7spqOsuHxKHkUrKCk2AyqrdovowY6RGBBbKvAau3adHNFJYpZeBtKUOrwN9wQ-C1b7XrDUsZME-mEN2UmPC4pe2XNq5eOKKRCG4l2Vvnz0k2haAxLS42FCxSQxJ4E",
+      "what": "三角屋根の店の外観と入口",
+      "width": 900,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: 検索結果は一覧(7件)で、店名が完全一致するのは「cafe GRANO」(一覧のカードの住所は「妙大開83-5」・業種はカフェ・喫茶)の1件のみだが、詳細ページは開いていない。記録の address は「兵庫県神戸市」、area は「八戸市妙」で食い違ったまま(1回めのメモの理由が残る)ため通していない。 【2026-10-09 D1: 深い照合で確定→写真を付けた】",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「050-8883-0996」=Google「050-8883-0996」",
+      "(b) 住所: 記事「青森県八戸市妙字大開83-5」=Google「青森県八戸市妙大開83-5」",
+      "(g) 営業「10:00〜15:30・月曜定休」(記事)=Google一覧「営業開始 10:00・15:30まで」"
+    ],
+    "checkedAt": "2026-10-09",
+    "conflicts": [
+      "[記事データ] 元の一覧(inventory)の address は「兵庫県神戸市」、automation/feature-spot-photos/store-links.json は cafeGRANO を lib/data.ts の r174(神戸・兵庫の別の cafe GRANO)に結びつけている。記事本文は八戸で、Googleの八戸の店と一致する。店舗ページのリンク先が神戸の店になっていないか要確認"
+    ]
+  }
 }

@@ -1,35 +1,44 @@
 {
- "featureId": "三ちゃん",
- "dir": "fs-bdfe72cadf",
- "storeName": "三ちゃん",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E3%81%A1%E3%82%83%E3%82%93%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8F%B3%E4%BA%AC%E5%8C%BA",
- "placeUrl": "https://www.google.com/maps/place/%E4%B8%89%E3%81%A1%E3%82%83%E3%82%93/@35.003231,135.7066393,17z/data=!3m1!4b1!4m6!3m5!1s0x6001070e51870e8d:0x6ca4f02aea372b03!8m2!3d35.003231!4d135.7066393!16s%2Fg%2F1th2893r?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "三ちゃん",
-  "address": "京都府京都市右京区梅津高畝町４２ 梅津高畝ハイツ 1F",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-bdfe72cadf/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPsS8EuWKArpkQIlYHlp-cSNwDBcklIhCG1Uqmz5RYEPL2FHpGmBerXwNi2cccwsZPLmn0i9qfKTHFmlAMdTHP8JurybrJJky8vr4br6EgoxxX3D3vesUOYebjZ7dPAYl0VYsrVg=s1200",
-   "what": "刺身の盛り合わせ",
-   "width": 900,
-   "height": 507,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "三ちゃん",
+  "dir": "fs-bdfe72cadf",
+  "storeName": "三ちゃん",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E3%81%A1%E3%82%83%E3%82%93%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8F%B3%E4%BA%AC%E5%8C%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E4%B8%89%E3%81%A1%E3%82%83%E3%82%93/@35.003231,135.7066393,17z/data=!3m1!4b1!4m6!3m5!1s0x6001070e51870e8d:0x6ca4f02aea372b03!8m2!3d35.003231!4d135.7066393!16s%2Fg%2F1th2893r?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "三ちゃん",
+    "address": "京都府京都市右京区梅津高畝町４２ 梅津高畝ハイツ 1F",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-bdfe72cadf/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGlT_ZzPnd43rcbSEW8pnC7sgzZA4UUi-Plrf6_w3Tn5jHZ6JQPb308G4vwqmMx0PRRQGCk_A0uF4SYDilvyZuFcKtlilAQjxJq_D_EAn4-C9J9sLfa5u7fz0YS4qjKa_c4Rs=s1200",
-   "what": "カウンターと客席の店内",
-   "width": 900,
-   "height": 507,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-bdfe72cadf/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPsS8EuWKArpkQIlYHlp-cSNwDBcklIhCG1Uqmz5RYEPL2FHpGmBerXwNi2cccwsZPLmn0i9qfKTHFmlAMdTHP8JurybrJJky8vr4br6EgoxxX3D3vesUOYebjZ7dPAYl0VYsrVg=s1200",
+      "what": "刺身の盛り合わせ",
+      "width": 900,
+      "height": 507,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-bdfe72cadf/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGlT_ZzPnd43rcbSEW8pnC7sgzZA4UUi-Plrf6_w3Tn5jHZ6JQPb308G4vwqmMx0PRRQGCk_A0uF4SYDilvyZuFcKtlilAQjxJq_D_EAn4-C9J9sLfa5u7fz0YS4qjKa_c4Rs=s1200",
+      "what": "カウンターと客席の店内",
+      "width": 900,
+      "height": 507,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "外観の写真は縦に細長すぎて使わず、スロット5は店内の写真",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「075-861-9201」= Google = 公式 kyoto-sanchan.com",
+      "(g) 記事『市バス梅津段町 徒歩1分・嵐電太秦広隆寺 徒歩22分・総席数46・カウンター10・定休水曜(不定休・月1連休)』= ホットペッパー(Googleの予約リンク先)の記載と一致",
+      "(e) 施設: Google『梅津高畝ハイツ 1F』/町名 梅津高畝町"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "外観の写真は縦に細長すぎて使わず、スロット5は店内の写真"
 }

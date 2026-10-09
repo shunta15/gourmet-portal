@@ -1,45 +1,53 @@
 {
- "featureId": "馳走かねこ",
- "dir": "fs-66224a767f",
- "storeName": "馳走かねこ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%B3%E8%B5%B0%E3%81%8B%E3%81%AD%E3%81%93%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%8E%8C%E5%80%89%E5%B8%82%E9%9B%AA%E3%83%8E%E4%B8%8B",
- "placeUrl": "https://www.google.com/maps/place/%E9%A6%B3%E8%B5%B0%E3%81%8B%E3%81%AD%E3%81%93/@35.322194,139.5536883,17z/data=!3m1!4b1!4m6!3m5!1s0x6018453d98421907:0x68d4ab8241bfafcf!8m2!3d35.322194!4d139.5536883!16s%2Fg%2F11gjmbm_9m?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "馳走かねこ",
-  "address": "〒248-0005 神奈川県鎌倉市雪ノ下１丁目９−２９ シャングリラ鶴岡 2-B",
-  "how": "search"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-66224a767f/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLgIS1Yr-oVAgs__xB_hK0_wCGDY0bN2alJ3eBjBd-56pJ7mQNR9WLq7cfFqGiI--SsLefe67_SjIBnHvw823CRfizPh7KeYxHC3ZGOPK8EztnqT02XuBd992tWPg6ettP9TzT5w-z1P4=s1200",
-   "what": "刺身と小鉢の膳",
-   "width": 900,
-   "height": 600,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "馳走かねこ",
+  "dir": "fs-66224a767f",
+  "storeName": "馳走かねこ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A6%B3%E8%B5%B0%E3%81%8B%E3%81%AD%E3%81%93%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%8E%8C%E5%80%89%E5%B8%82%E9%9B%AA%E3%83%8E%E4%B8%8B",
+  "placeUrl": "https://www.google.com/maps/place/%E9%A6%B3%E8%B5%B0%E3%81%8B%E3%81%AD%E3%81%93/@35.322194,139.5536883,17z/data=!3m1!4b1!4m6!3m5!1s0x6018453d98421907:0x68d4ab8241bfafcf!8m2!3d35.322194!4d139.5536883!16s%2Fg%2F11gjmbm_9m?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "馳走かねこ",
+    "address": "〒248-0005 神奈川県鎌倉市雪ノ下１丁目９−２９ シャングリラ鶴岡 2-B",
+    "how": "search"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-66224a767f/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZtJdVnQGNYNDerTOrlhOwQ_kuN7P-3efnxs6i-NGp2yOJVukkVXWtp-7E5EUSszlwzhxTUfK0Ch1_smQHQpb1L9v-WEPWYjmWJXzjBixxDSBtaEFGVyD6NFpXLXyvlr6LTX8=s1200",
-   "what": "テーブル席のある客席",
-   "width": 900,
-   "height": 675,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-66224a767f/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbpaA7IBb2TR_tUKCOq_Le9s89aEdzwdqmFgNdEumf9yNdWfG01pyBZT-KfBsd15igBNAgnVp5ELmDNvhSxJtfafVi578aMF6PU1-iCy7cV-wpCXQX00BXWQhDXb3mkqnp6MfN=s1200",
-   "what": "暖簾のかかる店の入口",
-   "width": 900,
-   "height": 506,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-66224a767f/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLgIS1Yr-oVAgs__xB_hK0_wCGDY0bN2alJ3eBjBd-56pJ7mQNR9WLq7cfFqGiI--SsLefe67_SjIBnHvw823CRfizPh7KeYxHC3ZGOPK8EztnqT02XuBd992tWPg6ettP9TzT5w-z1P4=s1200",
+      "what": "刺身と小鉢の膳",
+      "width": 900,
+      "height": 600,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-66224a767f/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZtJdVnQGNYNDerTOrlhOwQ_kuN7P-3efnxs6i-NGp2yOJVukkVXWtp-7E5EUSszlwzhxTUfK0Ch1_smQHQpb1L9v-WEPWYjmWJXzjBixxDSBtaEFGVyD6NFpXLXyvlr6LTX8=s1200",
+      "what": "テーブル席のある客席",
+      "width": 900,
+      "height": 675,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-66224a767f/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbpaA7IBb2TR_tUKCOq_Le9s89aEdzwdqmFgNdEumf9yNdWfG01pyBZT-KfBsd15igBNAgnVp5ELmDNvhSxJtfafVi578aMF6PU1-iCy7cV-wpCXQX00BXWQhDXb3mkqnp6MfN=s1200",
+      "what": "暖簾のかかる店の入口",
+      "width": 900,
+      "height": 506,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(c) 元の記録のcid: automation/stores500/map.json の cid=7553851050944344015 =開いたページのcid",
+      "(d)+(g) 公式サイト(kamakura-chisokaneko.com/information): 所在地「雪ノ下1-9-29 シャングリラ鶴岡2-B」・TEL 0467-84-9969=Googleと一致 / 記事の「席数16席」「不定休」「JR鎌倉駅 徒歩6分」「小町通りそば」=公式の記載と同じ"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

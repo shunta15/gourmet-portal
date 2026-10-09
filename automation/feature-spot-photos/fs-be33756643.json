@@ -1,45 +1,53 @@
 {
- "featureId": "レストランマキ",
- "dir": "fs-be33756643",
- "storeName": "レストランマキ",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%9E%E3%82%AD%20%E5%B0%BC%E5%B4%8E%E5%B8%82%E6%98%AD%E5%92%8C%E9%80%9A",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%9E%E3%82%AD/@34.7200166,135.4199567,17z/data=!3m1!4b1!4m6!3m5!1s0x6000ef554a804e09:0x914e0b583d7bc8a0!8m2!3d34.7200166!4d135.4199567!16s%2Fg%2F11hzv4nmft?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "レストランマキ",
-  "address": "〒660-0881 兵庫県尼崎市昭和通２丁目６−６８",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-be33756643/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPJ6PRkr1eP4uWhbcowU_8io4hIgnwOP24HVCI4tqSQulzh8Wf1qExSIaSE41eh7rVHQU6Dnb6WXFPPumAxyTPhF4YMNOynny0AlbLdkMGPW-jeQ7eSJrO1s0yFO4yNMu3gkKpZXjAaPGD",
-   "what": "海老フライ定食",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "レストランマキ",
+  "dir": "fs-be33756643",
+  "storeName": "レストランマキ",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%9E%E3%82%AD%20%E5%B0%BC%E5%B4%8E%E5%B8%82%E6%98%AD%E5%92%8C%E9%80%9A",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%9E%E3%82%AD/@34.7200166,135.4199567,17z/data=!3m1!4b1!4m6!3m5!1s0x6000ef554a804e09:0x914e0b583d7bc8a0!8m2!3d34.7200166!4d135.4199567!16s%2Fg%2F11hzv4nmft?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "レストランマキ",
+    "address": "〒660-0881 兵庫県尼崎市昭和通２丁目６−６８",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-be33756643/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9So6eWSdtEG8jSjKT2q9mZdLhYhfZ1RXGhGfMbRb6laXsM20xsrDj0Y3WzdlH5UmgWFrgABbhCqqQQDA1WgDJNVL1AaFjdzsjZYxhvS-vkjryzSif0yQKE_R_2VdjzpNwRx9htk",
-   "what": "窓の大きい店内の席",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-be33756643/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rnep4VdD28LxoUKAVD2gnXXDA5nPjC5uNYecH7X9JRkb7fzVukVwgo78SN6x7719wm4tQ7XDM7lsEalfRbmFW6IHQWad_TjNS5TTqByGKw0afokPvWtDVKdO6qU7mRfzrCTrgYDQ",
-   "what": "ガラス張りの入口",
-   "width": 900,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-be33756643/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPJ6PRkr1eP4uWhbcowU_8io4hIgnwOP24HVCI4tqSQulzh8Wf1qExSIaSE41eh7rVHQU6Dnb6WXFPPumAxyTPhF4YMNOynny0AlbLdkMGPW-jeQ7eSJrO1s0yFO4yNMu3gkKpZXjAaPGD",
+      "what": "海老フライ定食",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-be33756643/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9So6eWSdtEG8jSjKT2q9mZdLhYhfZ1RXGhGfMbRb6laXsM20xsrDj0Y3WzdlH5UmgWFrgABbhCqqQQDA1WgDJNVL1AaFjdzsjZYxhvS-vkjryzSif0yQKE_R_2VdjzpNwRx9htk",
+      "what": "窓の大きい店内の席",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-be33756643/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rnep4VdD28LxoUKAVD2gnXXDA5nPjC5uNYecH7X9JRkb7fzVukVwgo78SN6x7719wm4tQ7XDM7lsEalfRbmFW6IHQWad_TjNS5TTqByGKw0afokPvWtDVKdO6qU7mRfzrCTrgYDQ",
+      "what": "ガラス張りの入口",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(f) 店名「レストランマキ」=Google、町名 記事「尼崎市昭和通」=Google「昭和通2丁目6-68」、業種 日本式洋食レストラン",
+      "(d)+(g) 公式サイト(crestix-company.github.io/restaurantmaki): 電話 06-6488-0555=Google、尼崎市昭和通、「昼のみ(9:30〜15:00)・不定休」=記事の「昼のみ・不定休」"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

@@ -1,65 +1,73 @@
 {
- "featureId": "ベルエポック",
- "dir": "fs-90bbedc7ee",
- "storeName": "ベルエポック",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%99%E3%83%AB%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF%20%E6%8E%9B%E5%B7%9D%E5%B8%82",
- "placeUrl": "https://www.google.com/maps/place/%E3%83%99%E3%83%AB%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF/@34.7397949,138.0458217,17z/data=!3m1!4b1!4m6!3m5!1s0x601af7a221a7ec2b:0xf64691902c62ccbd!8m2!3d34.7397949!4d138.0458217!16s%2Fg%2F1tv3nrq7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "ベルエポック",
-  "address": "静岡県掛川市子隣３２７−１",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 1,
-   "path": "/restaurants/fs/fs-90bbedc7ee/p1.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qgm31Ty2jW_DMpgyPPQF1CZrKq2wIStR-9lN4HeuyivHVWtVHauF5DKjMWad_6OXOQnc_mOX1U9GeS1i6TZdxF4IP_Rnl9lg7hPf7A7U8P0NKHf3HDIP5WZzVZ48dhwJwkKnl3ziFT8GM=s1200",
-   "what": "デミグラスソースのハンバーグ",
-   "width": 900,
-   "height": 684,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "ベルエポック",
+  "dir": "fs-90bbedc7ee",
+  "storeName": "ベルエポック",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%99%E3%83%AB%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF%20%E6%8E%9B%E5%B7%9D%E5%B8%82",
+  "placeUrl": "https://www.google.com/maps/place/%E3%83%99%E3%83%AB%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF/@34.7397949,138.0458217,17z/data=!3m1!4b1!4m6!3m5!1s0x601af7a221a7ec2b:0xf64691902c62ccbd!8m2!3d34.7397949!4d138.0458217!16s%2Fg%2F1tv3nrq7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "ベルエポック",
+    "address": "静岡県掛川市子隣３２７−１",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 2,
-   "path": "/restaurants/fs/fs-90bbedc7ee/p2.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SL_hVfDcAy1hsj3cKVw9zGm8nd_yrUKNCaYA-SdFkDTUX1WYz_orAqjEbguRGRKT-_1nkynWvyRaAblYFg7aUiDr77p97aMyuNKhjshRHU82oz72HhW9W8ERHBRqGE6fitlQLm=s1200",
-   "what": "エビと野菜の洋食プレート",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-90bbedc7ee/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPVxUb42qnxqfmp5xThNE7YJEj8qsvGB39MKsfkpelua2qlEFy2Fq5sgWzzDlc2jWl2SuCXjf1GPUtuDJrMkpXrgnN0nrSulObBmjJgDLuOY21xqVbo2VtAjLL3eJd3zUy_G3ccq4E7pCr=s1200",
-   "what": "デザートの盛り合わせ",
-   "width": 678,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-90bbedc7ee/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8-3i5kW1stHOp0QnZW7x5VBNkg37BhFC3HozOfhKqqfryLs6bMlvXH2cXKM2f-6L-_2OdXKf58ETI3X3gAgprk6zhsTTqy6fq-PEawCY1jTcc-L5xsRcaKh6hRTuyA4RhhAOTqG81IcY=s1200",
-   "what": "窓際のテーブル席の店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-90bbedc7ee/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9BwBxyW9sZ-gjy9Ud9MRyKGWoOa2mmIECfu5tSTa8HJgf5PaYcv3T9xShP1BGptl00xj94_u_-1796Q97O5nsbLeuB2mkq1C0uOIONvXrdKmzHfgIUv67E_fx9-fdefgIjKjc=s1200",
-   "what": "カウンターのある店内",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 1,
+      "path": "/restaurants/fs/fs-90bbedc7ee/p1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qgm31Ty2jW_DMpgyPPQF1CZrKq2wIStR-9lN4HeuyivHVWtVHauF5DKjMWad_6OXOQnc_mOX1U9GeS1i6TZdxF4IP_Rnl9lg7hPf7A7U8P0NKHf3HDIP5WZzVZ48dhwJwkKnl3ziFT8GM=s1200",
+      "what": "デミグラスソースのハンバーグ",
+      "width": 900,
+      "height": 684,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-90bbedc7ee/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SL_hVfDcAy1hsj3cKVw9zGm8nd_yrUKNCaYA-SdFkDTUX1WYz_orAqjEbguRGRKT-_1nkynWvyRaAblYFg7aUiDr77p97aMyuNKhjshRHU82oz72HhW9W8ERHBRqGE6fitlQLm=s1200",
+      "what": "エビと野菜の洋食プレート",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-90bbedc7ee/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPVxUb42qnxqfmp5xThNE7YJEj8qsvGB39MKsfkpelua2qlEFy2Fq5sgWzzDlc2jWl2SuCXjf1GPUtuDJrMkpXrgnN0nrSulObBmjJgDLuOY21xqVbo2VtAjLL3eJd3zUy_G3ccq4E7pCr=s1200",
+      "what": "デザートの盛り合わせ",
+      "width": 678,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-90bbedc7ee/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8-3i5kW1stHOp0QnZW7x5VBNkg37BhFC3HozOfhKqqfryLs6bMlvXH2cXKM2f-6L-_2OdXKf58ETI3X3gAgprk6zhsTTqy6fq-PEawCY1jTcc-L5xsRcaKh6hRTuyA4RhhAOTqG81IcY=s1200",
+      "what": "窓際のテーブル席の店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-90bbedc7ee/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9BwBxyW9sZ-gjy9Ud9MRyKGWoOa2mmIECfu5tSTa8HJgf5PaYcv3T9xShP1BGptl00xj94_u_-1796Q97O5nsbLeuB2mkq1C0uOIONvXrdKmzHfgIUv67E_fx9-fdefgIjKjc=s1200",
+      "what": "カウンターのある店内",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "検索URLで単一の店ページに着き、店名は完全一致、住所に掛川市を含む(area が市までのため町名までは照合できていない)。外観の写真は候補になく、店内・料理の写真のみ。",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(b) 住所: 記事「〒436-0013 静岡県掛川市子隣327-1」=Google「子隣327-1」=公式(r-belle-epoque.sakura.ne.jp)「掛川市子隣327-1」",
+      "(d) 公式サイト: TEL 0537-24-5556=Google、ランチ11:00〜、ディナー17:30〜、定休 火曜"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": "検索URLで単一の店ページに着き、店名は完全一致、住所に掛川市を含む(area が市までのため町名までは照合できていない)。外観の写真は候補になく、店内・料理の写真のみ。"
 }

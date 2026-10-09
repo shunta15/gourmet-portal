@@ -1,55 +1,64 @@
 {
- "featureId": "喜想菴",
- "dir": "fs-63a1fae09a",
- "storeName": "喜想菴",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%9C%E6%83%B3%E8%8F%B4%20%E7%A8%B2%E6%B2%A2%E5%B8%82%E5%B9%B3%E5%92%8C%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/%E5%96%9C%E6%83%B3%E8%8F%B4/@35.2152687,136.7385435,17z/data=!3m1!4b1!4m6!3m5!1s0x6003a2055c0db0ef:0xdad411f4ce014976!8m2!3d35.2152687!4d136.7385435!16s%2Fg%2F1tgq6l6l?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "喜想菴",
-  "address": "愛知県稲沢市平和町西光坊海道東３７３−２",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 2,
-   "path": "/restaurants/fs/fs-63a1fae09a/p2.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QW9l8eVjGWHM0199maGN6FhJ9T7JoP6HPc6E5bwsM_fu93e-kwoqSeDCBgWX-X1VWpcZ9ceQWzLKB62xyl2Oa12gVXvGUu4CmxZO3bJRvUAuJe8-c9TyXZ77PIvn0YrPXOCmniCcB0BdI=s1200",
-   "what": "蓋付きの器の一品",
-   "width": 900,
-   "height": 535,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "喜想菴",
+  "dir": "fs-63a1fae09a",
+  "storeName": "喜想菴",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%9C%E6%83%B3%E8%8F%B4%20%E7%A8%B2%E6%B2%A2%E5%B8%82%E5%B9%B3%E5%92%8C%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/%E5%96%9C%E6%83%B3%E8%8F%B4/@35.2152687,136.7385435,17z/data=!3m1!4b1!4m6!3m5!1s0x6003a2055c0db0ef:0xdad411f4ce014976!8m2!3d35.2152687!4d136.7385435!16s%2Fg%2F1tgq6l6l?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "喜想菴",
+    "address": "愛知県稲沢市平和町西光坊海道東３７３−２",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-63a1fae09a/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKRbqkK_ha19CpfGFnGbC4foOJ7-uSZMG_Yp1wmj-5_oYAlqgj8y--topwsYgMpS3PKabxos6WjvD8TsQe_cQlxxayCy5zbnjHySdYgUQfwmBofCgVpRyx8yO1-1oNIzaVkd4=s1200",
-   "what": "彩りの前菜の皿",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-63a1fae09a/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThsUUtJPPg0rsEx5UEFgdv0C_GRqQia8iYeP7Zj4x-1x0-cTk1_2Hv7ZSOmA3D7D8gv1gISt3iSPdp1LkjL3RkdXPVFq9BkYDNkyyfUy7hHnK5r3cqgv-gM7FkDokbdV5cWTU=s1200",
-   "what": "木のカウンター席",
-   "width": 675,
-   "height": 900,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-63a1fae09a/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVO7JM7tGTVCUo6odzOiOcPEvbQCK70BboSfkcaGueT4txye3JscPNofAGHn21HclEG6yRd9IpPaSrliMB4zdfBPczLXktnssuDz0Z1aPDLMkEwCXwCtDKke0vJhzZLLAtSeUG=s1200",
-   "what": "のれんの掛かる店の入口",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 2,
+      "path": "/restaurants/fs/fs-63a1fae09a/p2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QW9l8eVjGWHM0199maGN6FhJ9T7JoP6HPc6E5bwsM_fu93e-kwoqSeDCBgWX-X1VWpcZ9ceQWzLKB62xyl2Oa12gVXvGUu4CmxZO3bJRvUAuJe8-c9TyXZ77PIvn0YrPXOCmniCcB0BdI=s1200",
+      "what": "蓋付きの器の一品",
+      "width": 900,
+      "height": 535,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-63a1fae09a/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKRbqkK_ha19CpfGFnGbC4foOJ7-uSZMG_Yp1wmj-5_oYAlqgj8y--topwsYgMpS3PKabxos6WjvD8TsQe_cQlxxayCy5zbnjHySdYgUQfwmBofCgVpRyx8yO1-1oNIzaVkd4=s1200",
+      "what": "彩りの前菜の皿",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-63a1fae09a/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ThsUUtJPPg0rsEx5UEFgdv0C_GRqQia8iYeP7Zj4x-1x0-cTk1_2Hv7ZSOmA3D7D8gv1gISt3iSPdp1LkjL3RkdXPVFq9BkYDNkyyfUy7hHnK5r3cqgv-gM7FkDokbdV5cWTU=s1200",
+      "what": "木のカウンター席",
+      "width": 675,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-63a1fae09a/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVO7JM7tGTVCUo6odzOiOcPEvbQCK70BboSfkcaGueT4txye3JscPNofAGHn21HclEG6yRd9IpPaSrliMB4zdfBPczLXktnssuDz0Z1aPDLMkEwCXwCtDKke0vJhzZLLAtSeUG=s1200",
+      "what": "のれんの掛かる店の入口",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d) 公式サイト kisouan-inazawa.com: 所在地『稲沢市平和町西光坊海道東373-2』= Google/記事『稲沢市平和町』",
+      "(g) 記事『秋会席・ハモ会席・鮎会席など』= 公式『秋の季節会席・ハモ会席・鮎会席』/ 記事『ミシュラン掲載・店主の仕入れ姿勢』は公式の『旬で一番おいしい食材』と合う",
+      "(f) 店名「喜想菴」(完全一致)/会席・懐石料理店"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

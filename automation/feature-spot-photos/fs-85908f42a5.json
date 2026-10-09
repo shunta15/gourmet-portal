@@ -6,5 +6,17 @@
   "placeUrl": "https://www.google.com/maps/place/%E4%B9%85%E7%95%99%E7%B1%B3%E5%B1%85%E9%85%92%E5%B1%8B+%E5%92%8C%E6%B4%8B%2F%E5%89%B5%E4%BD%9C%E9%85%92%E5%A0%B4+%E6%99%A9%E9%A4%90-Bansun-/@33.3100264,130.5192568,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a571fd6a6261:0xe4500a4cc23f13c6!8m2!3d33.3100264!4d130.5192568!16s%2Fg%2F11wjpgnm74?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
   "matched": null,
   "images": [],
-  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」・住所は〒830-0033 福岡県久留米市天神町152-4 第6富太屋ビル101・業種はモダン居酒屋レストラン。記録の area は久留米市花畑で、Google の町名(天神町)が食い違う。"
+  "note": "R1(2回め・ゆるい基準で再確認)でも写真なし: Google の店名は「久留米居酒屋 和洋/創作酒場 晩餐-Bansun-」・住所は〒830-0033 福岡県久留米市天神町152-4 第6富太屋ビル101・業種はモダン居酒屋レストラン。記録の area は久留米市花畑で、Google の町名(天神町)が食い違う。",
+  "verify": {
+    "status": "不一致",
+    "signals": [
+      "(参考) 店名「晩餐-Bansun-」一致・業種 創作居酒屋・「西鉄久留米駅から徒歩」も整合。Googleのページは lib/teleapo-restaurants.ts の r283(別記録)の出典URLと同じ店で、その住所もGoogleと同じ(久留米市天神町152-4 トミタヤビル1F)",
+      "営業17:00〜23:00=公式Instagram(@sousakubansun)と一致"
+    ],
+    "checkedAt": "2026-10-09",
+    "conflicts": [
+      "町名: 記事「久留米市花畑(花畑二丁目)」/ Google・lib/teleapo-restaurants.ts r283「久留米市天神町152-4」。記事の町名が誤りの可能性が高い(記事のデータがおかしい)が、基準では不一致",
+      "電話: Google 070-5497-1115 / Instagram 080-5497-1115 / r283 0942-48-7974(3種類)"
+    ]
+  }
 }

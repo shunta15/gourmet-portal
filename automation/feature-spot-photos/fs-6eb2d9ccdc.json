@@ -1,45 +1,54 @@
 {
- "featureId": "PARIGOT",
- "dir": "fs-6eb2d9ccdc",
- "storeName": "PARIGOT",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=PARIGOT%20%E9%87%91%E6%B2%A2%E5%B8%82%E7%89%87%E7%94%BA",
- "placeUrl": "https://www.google.com/maps/place/PARIGOT/@36.5607745,136.6496963,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff83480818c447b:0xec309f396a68222d!8m2!3d36.5607745!4d136.6496963!16s%2Fg%2F11c329fjwr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "PARIGOT",
-  "address": "〒920-0981 石川県金沢市片町２丁目３１−２７ 駒井ビル 1F",
-  "how": "search"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-6eb2d9ccdc/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2bWyJKquQ5AVZmvAcS2tpwiYMlujj1VPX0NIwDQZ8tsf8ZO-R0_zeXH4Nwg_xBjXPXpmK4NzveJi2Z8vBzy_0QDoYue5pXhvGp8a_vdw5WuAs7O-uTlb7t7fEzeAL4_a_zNh8=s1200",
-   "what": "魚料理の一皿",
-   "width": 900,
-   "height": 900,
-   "byOwner": true,
-   "source": "Google マップ"
+  "featureId": "PARIGOT",
+  "dir": "fs-6eb2d9ccdc",
+  "storeName": "PARIGOT",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=PARIGOT%20%E9%87%91%E6%B2%A2%E5%B8%82%E7%89%87%E7%94%BA",
+  "placeUrl": "https://www.google.com/maps/place/PARIGOT/@36.5607745,136.6496963,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff83480818c447b:0xec309f396a68222d!8m2!3d36.5607745!4d136.6496963!16s%2Fg%2F11c329fjwr?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "PARIGOT",
+    "address": "〒920-0981 石川県金沢市片町２丁目３１−２７ 駒井ビル 1F",
+    "how": "search"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-6eb2d9ccdc/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9M0A6N_hBgxowxKfvKM0fd3wTHqTdBWqzf8T2cCP8J1oFj0Dehkc3COpvImfbMTSlTT6HggCPPOoD6_dL2Xdrd1mLgvMxCE3UjZpxQn97jGVLTyUEcj6rrAtA0QkGZb1DbtbyOA=s1200",
-   "what": "テーブルが並ぶ店内",
-   "width": 900,
-   "height": 505,
-   "byOwner": true,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-6eb2d9ccdc/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNhs-bfWxFFR4VCYA-oPMQ5atnFPlPDXganXFv16lGgykYxpn_uV7__9wLYkBhL_IhKFMn1CTDgf9grkASPVDfy8BhV_uyJgmoafZqP19CP34R0TtH9K_e7JXYRXGDeaEVmyBp=s1200",
-   "what": "夜の店の入口",
-   "width": 900,
-   "height": 721,
-   "byOwner": true,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-6eb2d9ccdc/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2bWyJKquQ5AVZmvAcS2tpwiYMlujj1VPX0NIwDQZ8tsf8ZO-R0_zeXH4Nwg_xBjXPXpmK4NzveJi2Z8vBzy_0QDoYue5pXhvGp8a_vdw5WuAs7O-uTlb7t7fEzeAL4_a_zNh8=s1200",
+      "what": "魚料理の一皿",
+      "width": 900,
+      "height": 900,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-6eb2d9ccdc/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9M0A6N_hBgxowxKfvKM0fd3wTHqTdBWqzf8T2cCP8J1oFj0Dehkc3COpvImfbMTSlTT6HggCPPOoD6_dL2Xdrd1mLgvMxCE3UjZpxQn97jGVLTyUEcj6rrAtA0QkGZb1DbtbyOA=s1200",
+      "what": "テーブルが並ぶ店内",
+      "width": 900,
+      "height": 505,
+      "byOwner": true,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-6eb2d9ccdc/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SNhs-bfWxFFR4VCYA-oPMQ5atnFPlPDXganXFv16lGgykYxpn_uV7__9wLYkBhL_IhKFMn1CTDgf9grkASPVDfy8BhV_uyJgmoafZqP19CP34R0TtH9K_e7JXYRXGDeaEVmyBp=s1200",
+      "what": "夜の店の入口",
+      "width": 900,
+      "height": 721,
+      "byOwner": true,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(a) 電話: 記事「076-254-1217」=Google「076-254-1217」",
+      "(e) 建物と階: 記事「片町2丁目のビル1階」(lib/teleapo-restaurants.ts では「駒井ビルの1階」)=Google「片町2丁目31-27 駒井ビル 1F」",
+      "(g) 営業 12:00〜15:00・18:00〜23:00・日曜定休=Google"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

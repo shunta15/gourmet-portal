@@ -1,45 +1,54 @@
 {
- "featureId": "カフェグリーンハット",
- "dir": "fs-10edf63866",
- "storeName": "カフェグリーンハット",
- "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%8F%E3%83%83%E3%83%88%20%E5%9B%9B%E5%9B%BD%E4%B8%AD%E5%A4%AE%E5%B8%82%E9%87%91%E7%A0%82%E7%94%BA%E5%B9%B3%E9%87%8E%E5%B1%B1",
- "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%8F%E3%83%83%E3%83%88/@33.9227074,133.5256375,17z/data=!3m1!4b1!4m6!3m5!1s0x3551eb213e26bdcd:0x8380e6d6aa50a2f7!8m2!3d33.9227074!4d133.5256375!16s%2Fg%2F1hc7rd4h7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
- "matched": {
-  "name": "カフェグリーンハット",
-  "address": "愛媛県四国中央市金砂町平野山１６７−３",
-  "how": "search(店名の完全一致+住所)"
- },
- "images": [
-  {
-   "slot": 3,
-   "path": "/restaurants/fs/fs-10edf63866/p3.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLulFx1BPhPEs1GiKcuzuJ8smJIxNSPvPvLrcKLx9Ulw_-Sk1Jocm7PzO86SW2mkm2UfFxqLqAIJOm7VpGw3KFIeHP31_Y8gHo8u8CFbbhM3Eg9z1bFUJaxGcCXn-nfp6wAIE3=s1200",
-   "what": "木組みの天井の店内",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
+  "featureId": "カフェグリーンハット",
+  "dir": "fs-10edf63866",
+  "storeName": "カフェグリーンハット",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%8F%E3%83%83%E3%83%88%20%E5%9B%9B%E5%9B%BD%E4%B8%AD%E5%A4%AE%E5%B8%82%E9%87%91%E7%A0%82%E7%94%BA%E5%B9%B3%E9%87%8E%E5%B1%B1",
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%8F%E3%83%83%E3%83%88/@33.9227074,133.5256375,17z/data=!3m1!4b1!4m6!3m5!1s0x3551eb213e26bdcd:0x8380e6d6aa50a2f7!8m2!3d33.9227074!4d133.5256375!16s%2Fg%2F1hc7rd4h7?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "カフェグリーンハット",
+    "address": "愛媛県四国中央市金砂町平野山１６７−３",
+    "how": "search(店名の完全一致+住所)"
   },
-  {
-   "slot": 4,
-   "path": "/restaurants/fs/fs-10edf63866/p4.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QyGtksmcOW9T76x0AkGRV3rywnYVTPjJW0zu1CwuG8NQrZ_fp5XcV84pT9Z7TXM_mK7nWb1kV91j2SnVZbZJk20rXZYnoCCjxnJ6mHku9zulpJr61M9Bcyq29scZqeZGX5qp2i=s1200",
-   "what": "山を望むテラス席",
-   "width": 900,
-   "height": 675,
-   "byOwner": false,
-   "source": "Google マップ"
-  },
-  {
-   "slot": 5,
-   "path": "/restaurants/fs/fs-10edf63866/p5.jpg",
-   "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qmsfo88IoBN3vFiSmRJY0o8gwhPASKV8Ee4LF2d6oWxMJCddFN-aKjuzanqxnqtwD7XNkZPpS5b0GgJSXsy203zNtUvi3Cw9yBgfpT1s0k3eOqpXBi_uuPkSUG_kpTPE81BW8=s1200",
-   "what": "木造の入口と看板",
-   "width": 900,
-   "height": 506,
-   "byOwner": false,
-   "source": "Google マップ"
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-10edf63866/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLulFx1BPhPEs1GiKcuzuJ8smJIxNSPvPvLrcKLx9Ulw_-Sk1Jocm7PzO86SW2mkm2UfFxqLqAIJOm7VpGw3KFIeHP31_Y8gHo8u8CFbbhM3Eg9z1bFUJaxGcCXn-nfp6wAIE3=s1200",
+      "what": "木組みの天井の店内",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-10edf63866/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QyGtksmcOW9T76x0AkGRV3rywnYVTPjJW0zu1CwuG8NQrZ_fp5XcV84pT9Z7TXM_mK7nWb1kV91j2SnVZbZJk20rXZYnoCCjxnJ6mHku9zulpJr61M9Bcyq29scZqeZGX5qp2i=s1200",
+      "what": "山を望むテラス席",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-10edf63866/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qmsfo88IoBN3vFiSmRJY0o8gwhPASKV8Ee4LF2d6oWxMJCddFN-aKjuzanqxnqtwD7XNkZPpS5b0GgJSXsy203zNtUvi3Cw9yBgfpT1s0k3eOqpXBi_uuPkSUG_kpTPE81BW8=s1200",
+      "what": "木造の入口と看板",
+      "width": 900,
+      "height": 506,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(d) 公式ブログ(ameblo.jp/greenhat・Googleのウェブサイト欄): 四国中央市金砂町平野山・電話 090-4503-8243 = Googleの電話/営業9:00〜17:00・定休(月火)= 記事『9:00〜17:00・月火定休』",
+      "(g) 記事『ログハウス風』『鹿・猪の肉のカレー』= 公式ブログ『地元の木材で作ったログハウス』『鹿カレー・猪カレー』",
+      "(f) 店名「カフェグリーンハット」(完全一致)/町名 四国中央市金砂町平野山/業種 カフェ"
+    ],
+    "checkedAt": "2026-10-09"
   }
- ],
- "note": ""
 }

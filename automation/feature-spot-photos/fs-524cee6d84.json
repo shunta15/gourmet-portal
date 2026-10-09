@@ -3,8 +3,57 @@
   "dir": "fs-524cee6d84",
   "storeName": "やく味屋",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%8F%E5%91%B3%E5%B1%8B%20%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8F%B3%E4%BA%AC%E5%8C%BA%E5%A4%AA%E7%A7%A6",
-  "placeUrl": null,
-  "matched": null,
-  "images": [],
-  "note": "店名は一致するが、住所の町名が記録(京都市右京区太秦)と不一致(嵯峨野開町)。店を確かめられないため写真なし。(マップで着いた店: やく味屋 / 京都府京都市右京区嵯峨野開町24−９)"
+  "placeUrl": "https://www.google.com/maps/place/%E3%82%84%E3%81%8F%E5%91%B3%E5%B1%8B/@35.014295,135.6963979,17z/data=!3m1!4b1!4m6!3m5!1s0x60010767e97afb0d:0x575e73bda6b0b60!8m2!3d35.014295!4d135.6963979!16s%2Fg%2F12lt46wzx?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+  "matched": {
+    "name": "やく味屋",
+    "address": "〒616-8313 京都府京都市右京区嵯峨野開町24−９",
+    "category": "居酒屋",
+    "how": "deep-check(別々の手がかり2つ以上。verify 参照)"
+  },
+  "images": [
+    {
+      "slot": 3,
+      "path": "/restaurants/fs/fs-524cee6d84/p3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rj89NEATItFVaRSjgqiJr9ZUcw6XzBSUQ_EYTsUGYOwAXvpi01htNoA1FnK1n9Fo_qmoAC9AkioaF4fxROChk18ql_mi1speHAr9RrJSBdbBpS2_LRRJbgAAtkQbiXfv56R5yUjw",
+      "what": "お造り盛り合わせ",
+      "width": 900,
+      "height": 900,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 4,
+      "path": "/restaurants/fs/fs-524cee6d84/p4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1hYjdcd8V8uBm5S8KhjOdGg52VhH1sDNKZg2or6Dzma3gTaSplWAHyOQmq_02RC4mGKFSlFgbY_w49fJ1vDDBavyvHolpaLjEDTUa6TW6EyNG63wr-esyKQRgFt3MJ5uEcbrw",
+      "what": "酒瓶が並ぶ店内のカウンター",
+      "width": 900,
+      "height": 675,
+      "byOwner": false,
+      "source": "Google マップ"
+    },
+    {
+      "slot": 5,
+      "path": "/restaurants/fs/fs-524cee6d84/p5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQZbYMw2MES8nhN-EqDhrSQYbJjLKW-PrgG64Cg1fmZ8Gdsa2xmyIqw2KjsvxpLSyY_Ol_uCgzJgbzA8r8asim6FGka6fKO-X7s9EUadGOtKAirlTSkWWdLPPsO10ngNYhqxQH4A",
+      "what": "やく味屋の看板が出た店の入口",
+      "width": 800,
+      "height": 600,
+      "byOwner": false,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "店名は一致するが、住所の町名が記録(京都市右京区太秦)と不一致(嵯峨野開町)。店を確かめられないため写真なし。(マップで着いた店: やく味屋 / 京都府京都市右京区嵯峨野開町24−９) 【2026-10-09 D1: 深い照合で確定→写真を付けた】",
+  "verify": {
+    "status": "確定",
+    "signals": [
+      "(b) 住所: 記事「京都市右京区嵯峨野開町24-9」=Google「嵯峨野開町24-9」=公式(yakumiya.gorp.jp)「嵯峨野開町24-9」",
+      "(g) 営業「月〜土・祝・祝前日 17:30〜翌3時、日曜 17:30〜翌0時」=Google・公式の同じ時刻 / 総席数70席=公式「総席数70席」/ 帷子ノ辻駅・有栖川駅 各徒歩3分=公式の交通手段",
+      "(f)の一部: 店名一致「やく味屋」、業種 居酒屋(町名は記事内で太秦と嵯峨野開町が混在)"
+    ],
+    "checkedAt": "2026-10-09",
+    "conflicts": [
+      "[記事データ] エリア欄は「京都市右京区太秦」だが、記事本文の所在地は「嵯峨野開町24-9」(記事内で不整合。Googleとは本文の住所が一致)",
+      "電話: Google 075-861-0515 / 公式 050-5485-8830(記事に電話は無いので食い違いではない)"
+    ]
+  }
 }
