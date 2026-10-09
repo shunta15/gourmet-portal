@@ -1,0 +1,280 @@
+{
+  "key": "beauty-77",
+  "headline": "函南町の脱毛・ボディケア・ホワイトニングのサロン",
+  "lede": "静岡県田方郡函南町塚本にある、トータルビューティーサロンEmbellir（アンベリール）です。THR式脱毛、SECRET MESという機器のコース、セルフホワイトニングを扱い、公式サイトは都度払いで通えるメニューと案内しています。",
+  "sections": [
+    {
+      "heading": "THR式脱毛の料金表",
+      "body": "THR式脱毛の料金表は、レディースとメンズに分かれています。全身脱毛は顔とVIOを含むかどうかで4通り、そのほかVIO脱毛、顔またはひげの脱毛、部位ごとの部分脱毛、シェービングが並びます。公式サイトは、全身脱毛の施術が約1時間で終わるとし、男性や子どもの利用にも対応すると案内しています。通う間隔の目安は、通常の部位で4週間程度、VIOで2週間程度と示されています。"
+    },
+    {
+      "heading": "SECRET MESのコース",
+      "body": "SECRET MESのコースでは、ラジオ波、キャビテーション、EMS／吸引などが施術内容に挙がっています。全身コースは100分で、脚の裏側30分、背中20分、脚の表側30分、お腹20分の内訳です。パーツコースは20分・40分・60分があり、バストケアやフェイシャル、スカルプケアのメニューもあります。"
+    },
+    {
+      "heading": "ホワイトニングと来店の流れ",
+      "body": "セルフホワイトニングの照射時間は、初回が約30分、通常が約45分、ロングが約60分です。予約はWEB予約、LINE、電話などから。脱毛の施術前には電気シェーバーでの自己処理を求められ、未処理だと追加料金がかかる場合があります。所在地は函南町塚本185-1のシャルマンコーポ102号室で、Google マップでは毎日10時から20時の営業です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身脱毛 顔あり・VIOあり",
+      "price": "レディース ￥15,000／メンズ ￥20,000"
+    },
+    {
+      "name": "全身脱毛 顔なし・VIOなし",
+      "price": "レディース ￥10,000／メンズ ￥15,000"
+    },
+    {
+      "name": "VIO脱毛 全体",
+      "price": "レディース ￥5,000／メンズ ￥6,000"
+    },
+    {
+      "name": "ひげ脱毛 全体",
+      "price": "メンズ ￥5,000"
+    },
+    {
+      "name": "SECRET MES 全身コース",
+      "price": "￥18,000",
+      "minutes": 100
+    },
+    {
+      "name": "ボディーケア パーツコース 40分",
+      "price": "￥9,000",
+      "minutes": 40
+    },
+    {
+      "name": "SECRET MES サーマルフラクショナル",
+      "price": "￥3,000"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 4
+    }
+  ],
+  "facts": [
+    {
+      "claim": "静岡県田方郡函南町塚本185-1 シャルマンコーポ102号室にある",
+      "source": "https://www.embellir-salon.net/",
+      "quote": "〒419-0124 静岡県田方郡函南町塚本185-1 シャルマンコーポ102号室",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日10:00–20:00",
+      "source": "https://maps.google.com/?cid=11652170506251381562",
+      "quote": "月 10:00–20:00 火 10:00–20:00 水 10:00–20:00",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "都度払いで通える美容メニューを用意していると案内している",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "都度払いで無理なく通える美容メニューをご用意しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "複数メニューを組み合わせたオーダーメイドプランを提案している",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "複数メニューを組み合わせたオーダーメイドプランもご提案しています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "THR式脱毛は女性のほか男性・お子様にも対応すると案内している",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "女性はもちろん男性やお子様にも対応",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースの全身脱毛 顔あり・VIOありは￥15,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔あり・VIOあり ￥15,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズの全身脱毛 顔あり・VIOありは￥20,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔あり・VIOあり ￥20,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースの全身脱毛 顔あり・VIOなしは￥13,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔あり・VIOなし ￥13,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースの全身脱毛 顔なし・VIOありは￥13,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔なし・VIOあり ￥13,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースの全身脱毛 顔なし・VIOなしは￥10,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔なし・VIOなし ￥10,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズの全身脱毛 顔なし・VIOなしは￥15,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛 顔なし・VIOなし ￥15,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースのVIO脱毛 全体は￥5,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "VIO脱毛 全体 ￥5,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのVIO脱毛 全体は￥6,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "VIO脱毛 全体 ￥6,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "レディースの顔脱毛 全体は￥5,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "顔脱毛 全体 ￥5,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "部位ごとの部分脱毛(脇など)がある",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "部分脱毛 脇 ￥2,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "メンズのひげ脱毛 全体は￥5,000",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "ひげ脱毛 全体 ￥5,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "シェービングがある(￥1,000〜)",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "シェービング ￥1,000～",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "THR式脱毛は全身脱毛でも約1時間で施術が完了すると案内している",
+      "source": "https://www.embellir-salon.net/thr/",
+      "quote": "全身脱毛でも約1時間ほどで施術が完了します",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "通う間隔の目安は通常部位4週間程度、VIO2週間程度",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "通常部位：4週間程度",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "VIOの通う間隔の目安は2週間程度",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "VIO：2週間程度",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "脱毛の施術前に電気シェーバーでの自己処理を求めている",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "脱毛施術の場合は、事前に電気シェーバーでの自己処理をお願いしています",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "未処理の場合は追加料金が発生する場合がある",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "未処理の場合は追加料金が発生する場合があります",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "予約はWEB予約・LINE・電話などから",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "WEB予約・LINE・お電話などからご希望の日時をご予約ください",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SECRET MESの施術内容にラジオ波・キャビテーション・EMS／吸引が挙がっている",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "ラジオ波 キャビテーション EMS／吸引",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SECRET MES 全身コースは100分(脚裏側30分、背中20分、脚表側30分、お腹20分)で￥18,000",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "全身コース 100分 脚裏側30分、背中20分、脚表側30分、お腹20分 ￥18,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディーケア パーツコースに40分がある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "ボディーケア パーツコース 40分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディーケア パーツコースに60分がある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "ボディーケア パーツコース 60分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディーケア パーツコースに20分がある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "ボディーケア パーツコース 20分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SECRET MESはトータルビューティーマシンと案内している",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "トータルビューティーマシンです",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "ボディーケア パーツコース 40分は￥9,000",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "A.下半身 40分 B.上半身 40分+（お腹20分・二の腕＆肩甲骨20分・背中20分）のうち2つの選択 ￥9,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "バストケアのメニューがある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "バストケア 背中・二の腕・肩 30分",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "フェイシャルメニューがある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "フェイシャルメニュー",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SECRET MES スカルプケアがある",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "SECRET MES スカルプケア",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "SECRET MES サーマルフラクショナルは￥3,000",
+      "source": "https://www.embellir-salon.net/secret-mes/",
+      "quote": "SECRET MES サーマルフラクショナル ￥3,000",
+      "checkedAt": "2026-10-09"
+    },
+    {
+      "claim": "セルフホワイトニングの照射時間は初回約30分、通常約45分、ロング約60分",
+      "source": "https://www.embellir-salon.net/menu/",
+      "quote": "初回：約30分 通常：約45分 ロング：約60分",
+      "checkedAt": "2026-10-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.embellir-salon.net/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11652170506251381562"
+    }
+  ],
+  "notes": "公式サイトの屋号は「トータルビューティーサロンEmbellir」、Googleマップも同じ(シートは「脱毛サロンEmbellir-アンベリール-」)。住所(静岡県田方郡函南町塚本185-1 シャルマンコーポ102号室)と電話(055-900-8141)は公式とGoogleマップが一致。営業時間は公式サイトに記載がなく、Googleマップ(毎日10:00-20:00)だけが出どころ。メニュー・料金は公式のメニュー/THR式脱毛/SECRET MESの3ページから。サイト内の食い違い(本文・menusに書かなかった): メニューのページは『メンズ脱毛(ヒゲ 1,000円〜)』『VIO脱毛(初回 1,000円)』『全身脱毛(初回半額)』だが、THR式脱毛の料金表にはひげ脱毛の最安が￥2,000、VIO脱毛1箇所が￥2,000で、初回条件の記載がない。料金は料金表(THR式脱毛・SECRET MESのページ)の通常料金だけ載せた。税の表記は公式になし。書かなかったこと: 効き目の説明(小顔・痩身・引き締め・肩や首のこり・美肌・毛周期ごとの変化・脱毛完了までの回数目安)、メニュー名に効き目語を含むコース(ヒップアップケア、アンチエイジングコース、リフトアップコース、首肩こりケア)、『次世代ハイフ』『結果にこだわる』などの宣伝文、ブライダル前の集中ケアの相談、お知らせ・コラム。セルフホワイトニングの料金は載っていなかったため載せていない。タグは、メンズ歓迎のみ(閉店20時・個室や駅徒歩の記載なし・当日予約の明記なし)。"
+}
