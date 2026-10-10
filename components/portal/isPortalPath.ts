@@ -1,4 +1,7 @@
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "@/lib/portal/noren/rewrites";
+// ── area ここから
+import { NOREN_REGION_REWRITE } from "@/lib/portal/noren/rewrites";
+// ── area ここまで
 
 /**
  * 総合サイト用のヘッダー・フッターを出すパスかどうか。
@@ -37,6 +40,9 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (NOREN_SHOP_REWRITE && pathname.startsWith('/restaurant/')) return true; // 暖簾の店ページ（本物の URL）
   if (NOREN_FEATURE_REWRITE && /^\/feature\/[^/]+$/.test(pathname) && pathname !== '/feature/search') return true; // 暖簾の特集記事ページ（本物の URL）
   if (NOREN_FEATURE_INDEX_REWRITE && (pathname === '/feature' || pathname === '/feature/search' || /^\/feature\/region\/[^/]+$/.test(pathname))) return true; // 暖簾の特集記事のトップ（一覧・特集を探す・地域別。本物の URL）
+  // ── area ここから
+  if (NOREN_REGION_REWRITE && /^\/region(\/[^/]+){0,2}$/.test(pathname)) return true; // 暖簾のエリアのページ（エリア一覧・エリアごと・街ごと。本物の URL。/region/<key>/opengraph-image は 3 段なので当たらない）
+  // ── area ここまで
   if (pathname === '/proto-hub' || pathname.startsWith('/proto-hub/')) return true; // 総合トップ「にぎわいの輪」の色を固定して見るルート（プレビュー・ローカル専用）
   if (pathname === '/proto-noren' || pathname.startsWith('/proto-noren/')) return true; // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用）。グルメの共通ヘッダーは出さない
   return NEW_VERTICAL_PATHS.some((p) => pathname === p || pathname.startsWith(p + '/'));

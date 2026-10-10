@@ -29,6 +29,17 @@ export const NOREN_FEATURE_REWRITE = true;
  */
 export const NOREN_FEATURE_INDEX_REWRITE = true;
 
+// ── area ここから
+/**
+ * エリアのページ（エリア一覧 /region・エリアごと /region/<key>・街ごと /region/<key>/<街>）を暖簾にする（担当名: area）。
+ * 内部のパスは app/gourmet/region/page.tsx・app/gourmet/region/[key]/page.tsx・app/gourmet/region/[key]/[town]/page.tsx。
+ * true のあいだ、公開スイッチ ON では /region → /gourmet/region、/region/:key → /gourmet/region/:key、/region/:key/:town → /gourmet/region/:key/:town に差し替わり
+ * （ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
+ * 元に戻すなら false（/region・/region/<key>・/region/<key>/<街> は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
+ */
+export const NOREN_REGION_REWRITE = true;
+// ── area ここまで
+
 /**
  * 書き換え（rewrites）を通ってきた動的ルートの `params.id` を、元の ID に戻す。
  * 実測（2026-10-09、next dev）: `/feature/<日本語の ID>` を `/gourmet/feature/:id` に書き換えると、`params.id` が百分率エンコードのまま
