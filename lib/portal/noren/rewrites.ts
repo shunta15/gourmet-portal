@@ -29,6 +29,23 @@ export const NOREN_FEATURE_REWRITE = true;
  */
 export const NOREN_FEATURE_INDEX_REWRITE = true;
 
+// ── scene ここから（シーンのページ・店をさがす。統括が合流するときはこの 1 かたまりをそのまま取り込む）
+/**
+ * シーンのページ（/scene/<slug> の 12 種類と、一覧 /scene）を暖簾にする。内部のパスは app/gourmet/scene/[slug]/page.tsx・app/gourmet/scene/page.tsx。
+ * true のあいだ、公開スイッチ ON では /scene/:slug → /gourmet/scene/:slug、/scene → /gourmet/scene に差し替わり（ブラウザの URL・canonical は本物のまま）、
+ * 内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。公開スイッチ ON の判定は他の暖簾と同じ（OFF ではこの定数に関係なく今のグルメのまま）。
+ * 元に戻すなら false（/scene・/scene/<slug> は今のグルメのページ、内部のパスは 404）。
+ */
+export const NOREN_SCENE_REWRITE = true;
+
+/**
+ * 店をさがす（/search。noindex。?q= ?region= ?cuisine= ?tag= ?budget= ?f= の絞り込みも同じページ）を暖簾にする。内部のパスは app/gourmet/search/page.tsx。
+ * true のあいだ、公開スイッチ ON では /search → /gourmet/search に差し替わり（ブラウザの URL・canonical は /search のまま）、内部のパスを直接開くと /search へ恒久リダイレクトされる。
+ * 元に戻すなら false（/search は今のグルメのページ、内部のパスは 404）。シーンのスイッチ（NOREN_SCENE_REWRITE）とは別々に戻せる。
+ */
+export const NOREN_SEARCH_REWRITE = true;
+// ── scene ここまで
+
 /**
  * 書き換え（rewrites）を通ってきた動的ルートの `params.id` を、元の ID に戻す。
  * 実測（2026-10-09、next dev）: `/feature/<日本語の ID>` を `/gourmet/feature/:id` に書き換えると、`params.id` が百分率エンコードのまま

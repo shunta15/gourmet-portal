@@ -473,6 +473,7 @@ export default function SearchFacets({ base: baseIn, facets, sp, render }: Props
       const t = tagsOf(r.id);
       return <FacetCard key={r.id} r={r} tags={t.tags} total={t.total} />;
     },
+    tagsOf,
   };
 
   return <>{render(view.list, ext)}</>;
