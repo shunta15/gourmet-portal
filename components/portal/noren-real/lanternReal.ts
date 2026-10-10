@@ -19,7 +19,8 @@ export type LanternLayout = {
 };
 
 export type LanternReal = {
-  render: (s: { time: number; lamp: number }) => void;
+  /** idxA・idxB: 字のアトラスでの番号。swing: 1 で揺れる（0 は静止。CSS 側で揺らすとき）。cord: 0 で紐を描かない。lans[1].F が 0 なら 2 つ目は描かない */
+  render: (s: { time: number; lamp: number; idxA?: number; idxB?: number; swing?: number; cord?: number }) => void;
   resize: (l: LanternLayout) => void;
   setGlyphs: (chars: string[], family: string) => void;
   destroy: () => void;
@@ -33,7 +34,7 @@ void main(){ gl_Position = vec4(aPos, 0.0, 1.0); }
 const FS = `
 precision highp float;
 uniform vec2 uRes;
-uniform float uS, uTime, uLamp, uPivot;
+uniform float uS, uTime, uLamp, uPivot, uCells, uIdxA, uIdxB, uSwing, uCord;
 uniform vec4 uA, uB; // cx, top, F, phase
 uniform sampler2D uAtlas;
 
@@ -66,7 +67,8 @@ vec4 lantern(vec2 fc, vec4 L, float idx, float period){
   float s = uS;
   float F = L.z;
   vec2 p = fc / s;
-  float th = 0.0155 * sin(uTime * TAU / period + L.w);
+  if (L.z <= 0.0) return vec4(0.0);
+  float th = uSwing * 0.0155 * sin(uTime * TAU / period + L.w);
   vec2 P = vec2(L.x, uPivot);
   vec2 d = p - P;
   float cs = cos(th), sn = sin(th);
@@ -88,7 +90,7 @@ vec4 lantern(vec2 fc, vec4 L, float idx, float period){
 
   // ---------- 吊り紐 ----------
   float hw = 0.62 / F;
-  float cordA = clamp(0.5 - (abs(lx) - hw) / aaE, 0.0, 1.0) * step(ly, -0.2);
+  float cordA = clamp(0.5 - (abs(lx) - hw) / aaE, 0.0, 1.0) * step(ly, -0.2) * uCord;
   float twist = 0.82 + 0.18 * sin(ly * F * 1.1 + lx * F * 4.0);
   vec3 cordCol = vec3(0.50, 0.38, 0.28) * (0.34 + 0.40 * uLamp) * twist;
   cordCol += vec3(1.0, 0.5, 0.2) * 0.10 * uLamp * exp(-max(-ly, 0.0) * 0.5);
@@ -165,7 +167,7 @@ vec4 lantern(vec2 fc, vec4 L, float idx, float period){
       // 墨の字（胴のふくらみに沿って曲がる）
       float Sg = 3.3;
       vec2 gp = vec2(arc / Sg, (ly - 3.2 + 0.05) / Sg);
-      vec2 auv = vec2((idx + 0.5 + gp.x) * 0.5, 0.5 + gp.y);
+      vec2 auv = vec2((idx + 0.5 + gp.x) / uCells, 0.5 + gp.y);
       float inBox = step(abs(gp.x), 0.5) * step(abs(gp.y), 0.5);
       float tap = 0.012;
       float mask = texture2D(uAtlas, auv).r;
@@ -222,8 +224,8 @@ vec4 lantern(vec2 fc, vec4 L, float idx, float period){
 
 void main(){
   vec2 fc = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
-  vec4 a = lantern(fc, uA, 0.0, 7.0);
-  vec4 b = lantern(fc, uB, 1.0, 8.6);
+  vec4 a = lantern(fc, uA, uIdxA, 7.0);
+  vec4 b = lantern(fc, uB, uIdxB, 8.6);
   vec4 c = a + b * (1.0 - a.a);
   c.rgb += (hash(fc * 0.37 + uTime * 0.0) - 0.5) / 255.0 * step(0.001, c.a + c.r + c.g + c.b);
   gl_FragColor = clamp(c, 0.0, 1.0);
@@ -266,6 +268,7 @@ export function createLanternReal(canvas: HTMLCanvasElement): LanternReal | null
   gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
 
   const U = (n: string) => gl.getUniformLocation(prog, n);
+  const uCells = U("uCells"), uIdxA = U("uIdxA"), uIdxB = U("uIdxB"), uSwing = U("uSwing"), uCord = U("uCord");
   const uRes = U("uRes"), uS = U("uS"), uTime = U("uTime"), uLamp = U("uLamp"), uPivot = U("uPivot"), uA = U("uA"), uB = U("uB"), uAtlas = U("uAtlas");
 
   const tex = gl.createTexture();
@@ -280,10 +283,12 @@ export function createLanternReal(canvas: HTMLCanvasElement): LanternReal | null
   gl.clearColor(0, 0, 0, 0);
 
   let layout: LanternLayout | null = null;
+  let cells = 2;
 
   const setGlyphs = (chars: string[], family: string) => {
     const cell = 512;
     const n = chars.length;
+    cells = n;
     const c = document.createElement("canvas");
     c.width = cell * n;
     c.height = cell;
@@ -312,7 +317,7 @@ export function createLanternReal(canvas: HTMLCanvasElement): LanternReal | null
     gl.viewport(0, 0, w, h);
   };
 
-  const render = (s: { time: number; lamp: number }) => {
+  const render = (s: { time: number; lamp: number; idxA?: number; idxB?: number; swing?: number; cord?: number }) => {
     if (!layout) return;
     const l = layout;
     const d = l.dpr;
@@ -322,7 +327,12 @@ export function createLanternReal(canvas: HTMLCanvasElement): LanternReal | null
     gl.uniform1f(uTime, s.time);
     gl.uniform1f(uLamp, s.lamp);
     gl.uniform1f(uPivot, l.pivotY);
-    const a = l.lans[0], b = l.lans[1];
+    gl.uniform1f(uCells, cells);
+    gl.uniform1f(uIdxA, s.idxA ?? 0);
+    gl.uniform1f(uIdxB, s.idxB ?? 1);
+    gl.uniform1f(uSwing, s.swing ?? 1);
+    gl.uniform1f(uCord, s.cord ?? 1);
+    const a = l.lans[0], b = l.lans[1] ?? { cx: 0, top: 0, F: 0 };
     gl.uniform4f(uA, a.cx, a.top, a.F, 0.0);
     gl.uniform4f(uB, b.cx, b.top, b.F, 2.1);
     gl.drawArrays(gl.TRIANGLES, 0, 3);

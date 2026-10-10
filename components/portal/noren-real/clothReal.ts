@@ -525,7 +525,7 @@ function compile(gl: WebGLRenderingContext, type: number, src: string) {
   return sh;
 }
 
-const DYES: Record<DyeKind, { dye: number[]; hi: number[]; ink: number[]; tint: number[]; grade: number[] }> = {
+export const DYES: Record<DyeKind, { dye: number[]; hi: number[]; ink: number[]; tint: number[]; grade: number[] }> = {
   // 本藍（落ち着いた深い藍。褪せた渋さ）
   ai: { dye: [0.046, 0.075, 0.130], hi: [0.105, 0.150, 0.235], ink: [0.87, 0.85, 0.80], tint: [0.0, 0.02, 0.05], grade: [0.92, 1.0, 1.06] },
   // 濃紺（ほぼ墨に近い紺）

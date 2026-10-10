@@ -1,0 +1,24 @@
+/* ====================================================================
+   CSS で描いている布（特集のカード・店ごとの入口・見出しの暖簾・目次の札・テーマの札・フッターの小さな暖簾・WebGL が使えないときの代わり）の色を、
+   選んだ色（lib/portal/noren/realTop.ts の NOREN_REAL_DYE）に揃える。
+   NorenFrame が、NOREN_REAL_INNER が true のときだけ、枠（.vN）に data-dye="ai|kon|sumi|kakishibu|enji" を付ける。
+   付いていない（false）ときは、このファイルの規則はどれも効かない＝今までの墨茶のまま。
+   布の色は WebGL の布（clothReal.ts・clothInner.ts の DYES）の見た目に合わせた、縁（暗い）と中ほど（明るい）の 2 色。
+   ==================================================================== */
+.vN[data-dye="ai"]{--cl-edge:#0d1524;--cl-mid:#22324f}
+.vN[data-dye="kon"]{--cl-edge:#070b14;--cl-mid:#141d31}
+.vN[data-dye="sumi"]{--cl-edge:#120e0c;--cl-mid:#2a2019}
+.vN[data-dye="kakishibu"]{--cl-edge:#240f07;--cl-mid:#53291a}
+.vN[data-dye="enji"]{--cl-edge:#260811;--cl-mid:#5a1627}
+
+/* 共通の布の変数（feature.css の --cloth）を上書きする → 特集カード・目次の札・テーマの札・見出しの暖簾・店ごとの入口・次の横丁・巻頭の代わり、が揃う */
+.vN[data-dye]{--cloth:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 48%,var(--cl-edge))}
+/* 直接色を書いている所 */
+.vN[data-dye] .vN-ft-noren a{background:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 48%,var(--cl-edge))}
+.vN[data-dye] .vS-fb-p,.vN[data-dye] .vN-fb-p{background:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 45%,var(--cl-edge))}
+.vN[data-dye] .vH-roll{background:repeating-linear-gradient(90deg,rgba(0,0,0,.34) 0 3px,transparent 3px 26px),linear-gradient(180deg,var(--cl-mid),var(--cl-edge))}
+
+/* 朱の「輪」の印：深い赤・茶の布の上でも沈まないよう、少し明るい朱にして、細い生成りの縁を付ける（藍・濃紺・墨は今のまま） */
+.vN[data-dye="kakishibu"] .vN-seal,.vN[data-dye="enji"] .vN-seal{
+  background:radial-gradient(circle at 35% 30%,#ff8f63,#f0552f 60%,#a52f12);
+  box-shadow:0 0 0 1px rgba(239,230,214,.22),0 0 22px rgba(240,85,47,.28)}

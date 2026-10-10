@@ -2,8 +2,10 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
+import { NOREN_REAL_DYE, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 import { panelPlan } from "@/lib/portal/noren/shop";
 import Lantern from "./Lantern";
+import LanternInner from "../noren-real/LanternInner";
 
 export type Crumb = { label: string; href?: string };
 type Props = {
@@ -151,7 +153,16 @@ export default function ShopHero({ name, layout: nl, images, eyebrow, crumbs }: 
     const onResize = () => layout();
 
     (async () => {
-      cloth = createCloth(cv);
+      // リアル版（lib/portal/noren/realTop.ts の NOREN_REAL_INNER が true のときだけ読み込む）。false は今までの布
+      if (NOREN_REAL_INNER) {
+        try {
+          cloth = (await import("../noren-real/clothInner")).createClothInner(cv, NOREN_REAL_DYE);
+        } catch {
+          cloth = createCloth(cv); // 読み込みに失敗したら、今までの布
+        }
+      } else {
+        cloth = createCloth(cv);
+      }
       family = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || "serif";
       try {
         const glyphs = Array.from(new Set(panelPlan(name, false).flat().concat(panelPlan(name, true).flat()).join("") + "輪")).join("");
@@ -190,8 +201,8 @@ export default function ShopHero({ name, layout: nl, images, eyebrow, crumbs }: 
     <section ref={wrap} className="vS-hero" data-mode={mode} aria-label={`${name}の暖簾`}>
       <div ref={stage} className="vS-stage">
         <div className="vS-wall" aria-hidden="true" />
-        <Lantern className="vS-lan vS-lan--l" mark="灯" />
-        <Lantern className="vS-lan vS-lan--r" mark="宵" />
+        {NOREN_REAL_INNER ? <LanternInner className="vS-lan vS-lan--l" mark="灯" /> : <Lantern className="vS-lan vS-lan--l" mark="灯" />}
+        {NOREN_REAL_INNER ? <LanternInner className="vS-lan vS-lan--r" mark="宵" /> : <Lantern className="vS-lan vS-lan--r" mark="宵" />}
 
         <div className="vS-door">
           {shown.map((im, i) => (
