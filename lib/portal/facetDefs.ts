@@ -118,4 +118,6 @@ export interface FacetExt {
   active: boolean;
   /** 結果の1店（当てはまった条件の札つき。星・点数は出さない） */
   renderCard: (r: SearchItem) => ReactNode;
+  /** 結果の1店に添える札だけを返す（暖簾の店をさがす（components/portal/noren/NorenSearch）が、自分の店カードに添えるため）。total は札の総数（表示は先頭の数件） */
+  tagsOf?: (id: string) => { tags: { label: string; on: boolean }[]; total: number };
 }

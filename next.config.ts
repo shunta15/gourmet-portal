@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
+// ── scene ここから
+import { NOREN_SCENE_REWRITE, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
+// ── scene ここまで
 
 // 総合サイトの公開スイッチ（lib/portal/launch.ts と同じ判定。proto-portal/LAUNCH.md）。ビルド時に評価する。
 const PORTAL_LIVE = portalLiveFromEnv();
@@ -74,6 +77,15 @@ const nextConfig: NextConfig = {
             { source: "/gourmet/feature/region/:key", destination: "/feature/region/:key", permanent: true },
           ]
         : []),
+      // ── scene ここから（シーン・店をさがすの内部のパスを直接開いたら本物の URL へ）
+      ...(PORTAL_LIVE && NOREN_SCENE_REWRITE
+        ? [
+            { source: "/gourmet/scene", destination: "/scene", permanent: true },
+            { source: "/gourmet/scene/:slug", destination: "/scene/:slug", permanent: true },
+          ]
+        : []),
+      ...(PORTAL_LIVE && NOREN_SEARCH_REWRITE ? [{ source: "/gourmet/search", destination: "/search", permanent: true }] : []),
+      // ── scene ここまで
     ];
   },
   async rewrites() {
@@ -96,6 +108,15 @@ const nextConfig: NextConfig = {
                   { source: "/feature/region/:key", destination: "/gourmet/feature/region/:key" },
                 ]
               : []),
+            // ── scene ここから（シーン一覧・シーンごと・店をさがす。URL は /scene・/scene/<slug>・/search のまま）
+            ...(NOREN_SCENE_REWRITE
+              ? [
+                  { source: "/scene", destination: "/gourmet/scene" },
+                  { source: "/scene/:slug", destination: "/gourmet/scene/:slug" },
+                ]
+              : []),
+            ...(NOREN_SEARCH_REWRITE ? [{ source: "/search", destination: "/gourmet/search" }] : []),
+            // ── scene ここまで
           ]
         : PORTAL_OFF_SOURCES.map((source) => ({ source, destination: "/__portal-off" })),
       afterFiles: [],
