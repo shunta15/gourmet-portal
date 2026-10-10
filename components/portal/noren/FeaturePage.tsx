@@ -6,6 +6,8 @@ import FeatureIndex from "@/components/portal/noren/FeatureIndex";
 import FeatureTabsRail from "@/components/portal/noren/FeatureTabsRail";
 import DoorLift from "@/components/portal/noren/DoorLift";
 import Lantern from "@/components/portal/noren/Lantern";
+import LanternInner from "@/components/portal/noren-real/LanternInner";
+import { NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 import type { Feature, FeatureArticle } from "@/lib/regions";
 import type { FmapData } from "@/lib/portal/fmap";
 import { mapsUrlForRankItem } from "@/lib/maps";
@@ -182,8 +184,8 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
                 {/* 店の入口: 暖簾が掛かっている。スクロールで上がり、写真が現れる */}
                 <div className="vH-door" style={{ ["--np" as string]: pc.length, ["--ns" as string]: sp.length, ["--nfs" as string]: `${bandNameSize(em)}px` }}>
                   <div className="vH-wall" aria-hidden="true" />
-                  <Lantern className="vH-lan vH-lan--l" mark="灯" />
-                  <Lantern className="vH-lan vH-lan--r" mark="宵" />
+                  {NOREN_REAL_INNER ? <LanternInner className="vH-lan vH-lan--l" mark="灯" /> : <Lantern className="vH-lan vH-lan--l" mark="灯" />}
+                  {NOREN_REAL_INNER ? <LanternInner className="vH-lan vH-lan--r" mark="宵" /> : <Lantern className="vH-lan vH-lan--r" mark="宵" />}
                   <div className="vH-win">
                     {door && (
                       // eslint-disable-next-line @next/next/no-img-element

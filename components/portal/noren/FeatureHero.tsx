@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
+import { NOREN_REAL_DYE, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 
 export type StreetItem = {
   /** 漢数字（一・二・三…） */
@@ -189,7 +190,16 @@ export default function FeatureHero({ items, photo, children }: Props) {
     io.observe(root);
 
     (async () => {
-      cloth = createCloth(cv);
+      // リアル版（lib/portal/noren/realTop.ts の NOREN_REAL_INNER が true のときだけ読み込む）。false は今までの布
+      if (NOREN_REAL_INNER) {
+        try {
+          cloth = (await import("../noren-real/clothInner")).createClothInner(cv, NOREN_REAL_DYE);
+        } catch {
+          cloth = createCloth(cv); // 読み込みに失敗したら、今までの布
+        }
+      } else {
+        cloth = createCloth(cv);
+      }
       family = getComputedStyle(page).getPropertyValue("--vN-brush").trim() || "serif";
       try {
         const glyphs = Array.from(new Set(items.map((it) => it.num + it.name).join("") + "輪")).join("");
@@ -201,6 +211,7 @@ export default function FeatureHero({ items, photo, children }: Props) {
         setMode("css");
         return;
       }
+      if (NOREN_REAL_INNER) key = ""; // リアル版の布は読み込みが非同期なので、布ができる前の layout() で記録した値を捨てて、店名の染めを確実にやり直す
       layout();
       t0 = performance.now();
       setMode("gl");

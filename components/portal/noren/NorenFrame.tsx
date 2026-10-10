@@ -3,6 +3,8 @@ import Boot from "./Boot";
 import NorenHeader from "./NorenHeader";
 import NorenFooter from "./NorenFooter";
 import { brush, latin } from "./fonts";
+import { NOREN_REAL_DYE, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
+import "../noren-real/dye.css";
 
 // 出現・暖簾の演出は、最初は隠した状態から始まる。スクリプトが動かない環境では、最初から全部見える（中身は全部そのまま読める）
 const NOREN_NOSCRIPT_CSS =
@@ -29,7 +31,7 @@ export default function NorenFrame({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`vN ${brush.variable} ${latin.variable}`}>
+    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined}>
       <noscript>
         <style>{NOREN_NOSCRIPT_CSS}</style>
       </noscript>
