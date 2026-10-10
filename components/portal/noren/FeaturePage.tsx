@@ -12,7 +12,7 @@ import { mapsUrlForRankItem } from "@/lib/maps";
 import { sized } from "@/lib/imageUrl";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
-import { bandNameSize, bandPlan, clothName, colsOf, emOf, kanjiNo, photoSpans, plainLen, splitRank, titleSize } from "@/lib/portal/noren/feature";
+import { bandNameSize, bandPlan, clothName, colsOf, emOf, issueLabel, kanjiNo, photoSpans, plainLen, splitRank, titleSize } from "@/lib/portal/noren/feature";
 
 // 暖簾の特集記事ページの中身（サーバーコンポーネント）。見本 /proto-noren/feature/[id] と、公開スイッチ ON の本番 /gourmet/feature/[id]
 // （/feature/<id> が next.config.ts の rewrites でここに来る）が共通で使う。データの取り方・メタ情報・構造化データは呼び出し側のページ。
@@ -51,7 +51,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
     "編集部厳選",
     A.kicker,
     isSinglePoint ? `${A.ranking.length} POINTS` : `厳選${A.ranking.length}スポット`,
-    "2026年 春号",
+    issueLabel(A.date), // 記事の日付から「2026年 10月号」。日付が無ければ出さない
   ].filter(Boolean);
 
   const heroSrc = usable(A.heroImage) ? sized(A.heroImage, 1800) : "";

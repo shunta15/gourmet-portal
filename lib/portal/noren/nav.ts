@@ -45,22 +45,23 @@ export const FOOT_NAV = [
 
 /**
  * 本番の /gourmet のフッターのナビゲーションだけに足す入口。今のグルメのトップ（暖簾に替える前）にあって、暖簾のトップに無かった行き先。
- * ラベルは今のグルメのトップにある言葉（おまかせ提案・写真から探す・ショート動画）。見本（/proto-noren）のフッターには足さない。
+ * ラベルは今のグルメのトップにある言葉（おまかせ提案・写真から探す・ショート動画）。ショート動画の行き先は総合サイトの動画のページ /videos（公開スイッチ ON で開ける）。見本（/proto-noren）のフッターには足さない。
  * 「総合トップ」は、今のグルメのヘッダーのロゴ（`/`）が公開スイッチ ON で総合トップへ行っていたぶん。
  */
 export const FOOT_NAV_LIVE_EXTRA = [
   { href: "/omakase", ja: "おまかせ提案" },
   { href: "/photos", ja: "写真から探す" },
-  { href: "/nazatu", ja: "ショート動画" },
+  { href: "/videos", ja: "ショート動画" },
   { href: "/", ja: "総合トップ" },
 ] as const;
 
+/** フッターの地域。表示名は行き先の地域データ（lib/regions.ts の REGIONS[key].name）と同じにする */
 export const FOOT_REGIONS = [
-  { href: "/region/tokyo", ja: "東京・下町" },
+  { href: "/region/tokyo", ja: "東京" },
   { href: "/region/kyoto", ja: "京都" },
-  { href: "/region/osaka", ja: "大阪・ミナミ" },
-  { href: "/region/fukuoka", ja: "博多" },
-  { href: "/region/hokkaido", ja: "札幌" },
+  { href: "/region/osaka", ja: "大阪" },
+  { href: "/region/fukuoka", ja: "福岡" },
+  { href: "/region/hokkaido", ja: "北海道" },
 ] as const;
 
 export const FOOT_INFO = [

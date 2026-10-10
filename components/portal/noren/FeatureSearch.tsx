@@ -36,6 +36,13 @@ export default function FeatureSearch({ features }: { features: SearchFeature[] 
     return [...counts.entries()].sort((a, b) => b[1] - a[1]);
   }, [features]);
 
+  // 地域の選択肢は、特集が 1 本以上ある地域だけ（選ぶと 0 件になる地域を出さない）。並びは REGIONS の順
+  const regionOptions = useMemo(() => {
+    const has = new Set<string>();
+    features.forEach((f) => f.regions.forEach((k) => has.add(k)));
+    return Object.entries(REGIONS).filter(([k]) => has.has(k));
+  }, [features]);
+
   const results = useMemo(() => {
     const needle = q.trim().toLowerCase();
     return features.filter((f) => {
@@ -76,7 +83,7 @@ export default function FeatureSearch({ features }: { features: SearchFeature[] 
               <label htmlFor="vI-region">地域</label>
               <select id="vI-region" value={region} onChange={(e) => setRegion(e.target.value)}>
                 <option value="">すべての地域</option>
-                {Object.entries(REGIONS).map(([k, r]) => (
+                {regionOptions.map(([k, r]) => (
                   <option key={k} value={k}>
                     {r.name}
                   </option>

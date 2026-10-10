@@ -13,14 +13,17 @@ import type { FeatureCardItem } from "./featureCard";
 /** よく出てくる tag を「テーマ」として束ねる（app/feature/page.tsx と同じ） */
 export const THEME_GROUPS: { label: string; labelEn: string; tags: string[] }[] = [
   { label: "デート", labelEn: "DATE", tags: ["デート"] },
-  { label: "観光・街歩き", labelEn: "SIGHTSEEING", tags: ["観光", "街歩き", "散歩", "散歩・自然", "観光・博物館"] },
+  // さんぽ = 散歩 = 街歩き（表記ゆれ）。記事のタグは「さんぽ」が 37 本で最多
+  { label: "観光・街歩き", labelEn: "SIGHTSEEING", tags: ["観光", "街歩き", "さんぽ", "散歩", "散歩・自然", "観光・博物館"] },
   { label: "雨の日", labelEn: "RAINY DAY", tags: ["雨の日"] },
   { label: "夜景・夜遊び", labelEn: "NIGHT", tags: ["夜景"] },
   { label: "カフェ・朝活", labelEn: "CAFE / MORNING", tags: ["カフェ", "カフェ・朝活"] },
-  { label: "家族・子連れ", labelEn: "FAMILY", tags: ["家族", "ファミリー"] },
+  // 子連れ = 家族 = ファミリー（表記ゆれ）
+  { label: "家族・子連れ", labelEn: "FAMILY", tags: ["家族", "子連れ", "ファミリー"] },
   { label: "ショッピング", labelEn: "SHOPPING", tags: ["ショッピング"] },
   { label: "アート", labelEn: "ART", tags: ["アート"] },
-  { label: "グルメ", labelEn: "GOURMET", tags: ["グルメ"] },
+  // ランチ は食事の特集（scene-lunch-*）。入れる札は「グルメ」だけ
+  { label: "グルメ", labelEn: "GOURMET", tags: ["グルメ", "ランチ"] },
   { label: "時間つぶし", labelEn: "KILL TIME", tags: ["時間つぶし"] },
 ];
 

@@ -2,9 +2,12 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 
+// 地域の数は地域データ（REGIONS）の数から出す（数を直接書かない）
+const REGION_COUNT = Object.keys(REGIONS).length;
+
 export const metadata = {
   title: "地域から探す | マチノワ",
-  description: "東京・大阪・京都・福岡など、16 地域のミニポータルから探す日本の名店ガイド。",
+  description: `東京・大阪・京都・福岡など、${REGION_COUNT} 地域のミニポータルから探す日本の名店ガイド。`,
   alternates: { canonical: "/region" },
 };
 
@@ -33,7 +36,7 @@ export default function RegionIndex() {
               街ごとの、<em>味。</em>
             </h1>
             <p style={{ marginTop: 20, maxWidth: 640, font: "400 14px/1.9 var(--body)", opacity: 0.85 }}>
-              16 地域それぞれのミニポータル。気になる街から、編集部が選んだ一軒を辿ってください。
+              {keys.length} 地域それぞれのミニポータル。気になる街から、編集部が選んだ一軒を辿ってください。
             </p>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
     .map((k) => ({ key: k, name: REGIONS[k].name, en: REGIONS[k].nameEn, count: counts[k] }));
   const flags = buildFlags(restaurants, regions);
 
-  // 特集：タグが重ならないように先頭から7本
+  // 特集：写真があり、タグと題名の主題が重ならないものを、先頭から6本
   const seen = new Set<string>();
   const seenMain = new Set<string>();
   const feats: typeof FEATURES = [];

@@ -107,11 +107,11 @@ export default function Footer() {
         <div>
           <h5>地域</h5>
           <ul>
-            <li><Link href="/region/tokyo">東京・下町</Link></li>
+            <li><Link href="/region/tokyo">東京</Link></li>
             <li><Link href="/region/kyoto">京都</Link></li>
-            <li><Link href="/region/osaka">大阪・ミナミ</Link></li>
-            <li><Link href="/region/fukuoka">博多</Link></li>
-            <li><Link href="/region/hokkaido">札幌</Link></li>
+            <li><Link href="/region/osaka">大阪</Link></li>
+            <li><Link href="/region/fukuoka">福岡</Link></li>
+            <li><Link href="/region/hokkaido">北海道</Link></li>
           </ul>
         </div>
         <div>
