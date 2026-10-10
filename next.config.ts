@@ -4,6 +4,9 @@ import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE 
 // ── scene ここから
 import { NOREN_SCENE_REWRITE, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
+// ── area ここから
+import { NOREN_REGION_REWRITE } from "./lib/portal/noren/rewrites";
+// ── area ここまで
 
 // 総合サイトの公開スイッチ（lib/portal/launch.ts と同じ判定。proto-portal/LAUNCH.md）。ビルド時に評価する。
 const PORTAL_LIVE = portalLiveFromEnv();
@@ -86,6 +89,16 @@ const nextConfig: NextConfig = {
         : []),
       ...(PORTAL_LIVE && NOREN_SEARCH_REWRITE ? [{ source: "/gourmet/search", destination: "/search", permanent: true }] : []),
       // ── scene ここまで
+      // ── area ここから
+      // エリアのページ（エリア一覧・エリアごと・街ごと）の内部のパスも同じ。街ごとは /region/<key>/opengraph-image（3 段目が opengraph-image）に当たらないよう除く
+      ...(PORTAL_LIVE && NOREN_REGION_REWRITE
+        ? [
+            { source: "/gourmet/region", destination: "/region", permanent: true },
+            { source: "/gourmet/region/:key", destination: "/region/:key", permanent: true },
+            { source: "/gourmet/region/:key/:town((?!opengraph-image)[^/]+)", destination: "/region/:key/:town", permanent: true },
+          ]
+        : []),
+      // ── area ここまで
     ];
   },
   async rewrites() {
@@ -117,6 +130,16 @@ const nextConfig: NextConfig = {
               : []),
             ...(NOREN_SEARCH_REWRITE ? [{ source: "/search", destination: "/gourmet/search" }] : []),
             // ── scene ここまで
+            // ── area ここから
+            // エリアのページ（エリア一覧・エリアごと・街ごと）も同じ仕組み（URL は /region・/region/<key>・/region/<key>/<街> のまま）。/region/<key>/opengraph-image（OG 画像）は元のルートのまま
+            ...(NOREN_REGION_REWRITE
+              ? [
+                  { source: "/region", destination: "/gourmet/region" },
+                  { source: "/region/:key", destination: "/gourmet/region/:key" },
+                  { source: "/region/:key/:town((?!opengraph-image)[^/]+)", destination: "/gourmet/region/:key/:town" },
+                ]
+              : []),
+            // ── area ここまで
           ]
         : PORTAL_OFF_SOURCES.map((source) => ({ source, destination: "/__portal-off" })),
       afterFiles: [],
