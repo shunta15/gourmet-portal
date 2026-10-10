@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import { REGIONS } from "@/lib/regions";
 
 export const metadata = {
   title: "編集部について | マチノワ",
@@ -39,7 +40,7 @@ export default function AboutPage() {
           </p>
           <p style={{ marginBottom: 28 }}>
             扱うのは、地元の人がふだん使いする一軒から、観光で立ち寄りたい老舗、新しいカルチャーを背負う場まで。
-            16 地域の街ごとのミニポータルと、利用シーン別のセレクトを軸に編成しています。
+            {Object.keys(REGIONS).length} 地域の街ごとのミニポータルと、利用シーン別のセレクトを軸に編成しています。
           </p>
           <p style={{ marginBottom: 28 }}>
             記事には事実情報のみを載せ、誇張・推測・虚偽は使いません。

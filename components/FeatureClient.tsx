@@ -2,6 +2,7 @@
 import { Suspense, lazy, useRef, useState } from "react";
 import Link from "next/link";
 import Marquee from "./Marquee";
+import { issueLabel } from "@/lib/issueLabel";
 import Footer from "./Footer";
 import type { FeatureArticle, Feature } from "@/lib/regions";
 import { mapsUrlForRankItem } from "@/lib/maps";
@@ -343,8 +344,8 @@ export default function FeatureClient({ article, features, storeHref, fmap }: Fe
           "編集部厳選",
           A.kicker,
           isSinglePoint ? `${A.ranking.length} POINTS` : `厳選${A.ranking.length}スポット`,
-          "2026年 春号",
-        ]}
+          issueLabel(A.date), // 記事の日付から「2026年 10月号」。日付が無ければ出さない
+        ].filter((t): t is string => Boolean(t))}
       />
 
       <div className="feat-body">

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { yearLabel } from "@/lib/issueLabel";
 import Marquee from "./Marquee";
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
@@ -82,7 +83,7 @@ export default function RegionPage({
               <span>·</span>
               <span>{r.name}</span>
               <span>·</span>
-              <span>2026年 春号</span>
+              <span suppressHydrationWarning>{yearLabel()}</span>
             </div>
             <div style={{ marginTop: 30 }} className="reveal-line">
               <div
@@ -125,7 +126,7 @@ export default function RegionPage({
           r.subtitle,
           r.tagline,
           "編集部厳選",
-          "2026年 春号",
+          yearLabel(),
         ]}
       />
 

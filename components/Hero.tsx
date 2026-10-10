@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { yearLabel } from "@/lib/issueLabel";
 import { useEffect, useRef, useState } from "react";
 import { NATIONAL } from "@/lib/regions";
 import { useParallax, useTypewriter } from "@/lib/hooks";
@@ -81,7 +82,7 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-meta">
           <span>◎ {N.brand} · 全国飲食店ポータル</span>
-          <span>第24号 · 2026年 春号</span>
+          <span suppressHydrationWarning>第24号 · {yearLabel()}</span>
         </div>
         <h1 className={"hero-title " + (inView ? "in" : "")}>
           <span className="line">
