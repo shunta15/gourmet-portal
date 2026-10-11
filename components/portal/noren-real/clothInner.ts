@@ -7,6 +7,10 @@
  */
 import type { Cloth, ClothLayout, ClothState } from "../noren/cloth";
 import { DYES, type DyeKind } from "./clothReal";
+import { BRIGHT_MUL, NOREN_REAL_BRIGHT } from "@/lib/portal/noren/realTop";
+
+/** 入口の布（clothReal.ts）と同じく、明るさの倍率を渡せる。既定は realTop.ts の NOREN_REAL_BRIGHT（店ページ・特集記事はここから届く） */
+export type ClothInner = Cloth & { setBright: (m: number) => void };
 
 /** 朱の印の色（染めの色ごと）。深い色の上でも読めるよう、臙脂・柿渋・墨では少し明るい朱にする */
 const SEAL: Record<DyeKind, number[]> = {
@@ -27,6 +31,7 @@ precision highp float;
 uniform vec2 uRes;
 uniform float uTime, uOpen, uGust, uLamp, uMouse, uN, uScale;
 uniform float uPw, uScroll, uSel, uSelAmt, uHover, uHoverAmt, uIntro;
+uniform float uBright; // 明るさの倍率(1 = 今まで通り。lib/portal/noren/realTop.ts の NOREN_REAL_BRIGHT)
 uniform vec4 uLayout; // margin, gap, rodY, hemY (device px)
 uniform vec3 uDye, uDyeHi, uInk, uTint, uGrade, uSeal;
 uniform sampler2D uAtlas;
@@ -274,6 +279,9 @@ void main(){
     pc += lightCol * exp(-rimD / 5.5) * (0.08 + 0.28 * uLamp) * (0.5 + 0.5 * q);
     float hemD = (hemN - frag.y) / s;
     pc += lightCol * exp(-hemD / 7.0) * (0.05 + 0.18 * uLamp);
+    // 明るさの段階(uBright)：布の色に掛ける。夜は元から明るいので上げ幅を 1/3 ほどに抑える。字(ink)は 1.1 倍まで（入口の布と同じ）
+    float bE = mix(uBright, 1.0 + (uBright - 1.0) * 0.35, smoothstep(0.18, 1.0, uLamp));
+    pc *= mix(bE, min(bE, 1.1), ink);
     // 色の整え
     float gl0 = dot(pc, vec3(0.30, 0.59, 0.11));
     pc = mix(vec3(gl0), pc, uGrade.x);
@@ -308,6 +316,7 @@ void main(){
     wood *= 1.0 - 0.45 * smoothstep(2.6, 0.0, nodeD);
     vec3 spc = vec3(1.0, 0.92, 0.80) * pow(max(dot(reflect(-LR, nr), vec3(0.0, 0.0, 1.0)), 0.0), 20.0) * 0.12;
     vec3 rodCol = wood * (0.09 + 1.30 * pow(rd, 1.25) * (0.55 + 0.6 * uLamp)) * (0.50 + 0.50 * nr.z) * (1.0 - 0.42 * smoothstep(0.15, 1.0, rt)) + spc * (0.55 + 0.6 * uLamp);
+    rodCol *= mix(uBright, 1.0 + (uBright - 1.0) * 0.35, smoothstep(0.18, 1.0, uLamp));
     float aaR = clamp((1.0 - abs(rt)) * 7.0 / 1.4, 0.0, 1.0);
     col = vec4(rodCol * aaR, aaR) + col * (1.0 - aaR);
   }
@@ -410,7 +419,7 @@ function drawVertical(g: CanvasRenderingContext2D, text: string, family: string,
 
 const NUM: Record<string, string> = { 麺: "一", 鮨: "二", 肉: "三", 酒: "四", 蕎: "五" };
 
-export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "ai"): Cloth | null {
+export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "ai"): ClothInner | null {
   const gl = canvas.getContext("webgl", { alpha: true, premultipliedAlpha: true, antialias: false, powerPreference: "high-performance" }) as WebGLRenderingContext | null;
   if (!gl) return null;
   let prog: WebGLProgram;
@@ -434,7 +443,7 @@ export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "a
   gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
 
   const U = (n: string) => gl.getUniformLocation(prog, n);
-  const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"),
+  const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"), uBright = U("uBright"),
     uMouse = U("uMouse"), uN = U("uN"), uScale = U("uScale"), uLayout = U("uLayout"), uAtlas = U("uAtlas"),
     uPw = U("uPw"), uScroll = U("uScroll"), uSel = U("uSel"), uSelAmt = U("uSelAmt"), uHover = U("uHover"), uHoverAmt = U("uHoverAmt"), uIntro = U("uIntro"),
     uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uGrade = U("uGrade"), uSeal = U("uSeal");
@@ -456,6 +465,10 @@ export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "a
   let layout: ClothLayout | null = null;
   const dye = DYES[dyeKey] ?? DYES.ai;
   const seal = SEAL[dyeKey] ?? SEAL.ai;
+  let bright = BRIGHT_MUL[NOREN_REAL_BRIGHT];
+  const setBright = (m: number) => {
+    bright = Math.min(4, Math.max(0.3, m));
+  };
 
   const setChars = (chars: string[], family: string, aspect = 3) => {
     n = chars.length;
@@ -594,6 +607,7 @@ export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "a
     gl.uniform1f(uOpen, s.open);
     gl.uniform1f(uGust, s.gust);
     gl.uniform1f(uLamp, s.lamp);
+    gl.uniform1f(uBright, bright);
     gl.uniform1f(uMouse, s.mouse);
     gl.uniform1f(uN, n);
     gl.uniform1f(uScale, l.dpr);
@@ -625,6 +639,6 @@ export function createClothInner(canvas: HTMLCanvasElement, dyeKey: DyeKind = "a
     }, 0);
   };
 
-  return { render, resize, setChars, setPanels, setNames, destroy };
+  return { render, resize, setChars, setPanels, setNames, setBright, destroy };
 }
 

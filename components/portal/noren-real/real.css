@@ -9,8 +9,8 @@
 .vR-photo{
   position:absolute;inset:-3%;background-size:cover;background-position:50% 42%;
   transform:scale(calc(1.02 + var(--prog) * .18));
-  /* 奥の写真は、見出しが主役になるよう、暗めに・わずかにぼかす（動かす値は --prog の拡大だけ。明るさは固定） */
-  filter:blur(2.2px) brightness(calc(.36 + var(--open) * .14 + var(--lamp) * .05)) saturate(.84) sepia(.22);
+  /* 奥の写真は、見出しが主役になるよう、暗めに・わずかにぼかす（動かす値は --prog の拡大だけ。明るさは固定。--real-bright は明るさの段階の倍率で、既定 1 = 今まで通り） */
+  filter:blur(2.2px) brightness(calc((.36 + var(--open) * .14 + var(--lamp) * .05) * var(--real-bright,1))) saturate(.84) sepia(.22);
   will-change:transform;
 }
 .vR-shade{position:absolute;inset:0;background:

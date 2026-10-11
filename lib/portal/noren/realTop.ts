@@ -28,3 +28,32 @@ export const NOREN_REAL_DYE: NorenRealDye = "ai";
  * - 実装: components/portal/noren-real/（clothInner.ts・lanternInner.ts・dye.css）。本番の暖簾の部品（cloth.ts・Lantern.tsx）は書き換えていない。
  */
 export const NOREN_REAL_INNER = false;
+
+/**
+ * 布・竿・奥の写真の明るさの段階（1〜5）。見本 /proto-noren/real で段階を見比べて決める（URL の ?bright=1〜5。時刻は ?t=12:30 / ?t=21:30）。
+ * - 1 は今までと同じ（倍率 1.0。見た目は 1 画素も変わらない）。大きいほど明るい。
+ * - 本番では URL で変えられない。ここの値で固定（決まったら書き替えて再デプロイ）。
+ * - 効く所: 入口の布・竿・奥の写真（clothReal.ts / real.css）、店ページ・特集記事の WebGL の布・竿（clothInner.ts）。染め抜きの字は 1.1 倍まで。
+ *   夜（灯りが強い時刻）は元から明るいので、上げ幅は約 1/3（シェーダーの中で自動で抑える）。
+ */
+export type NorenRealBright = 1 | 2 | 3 | 4 | 5;
+export const NOREN_REAL_BRIGHT: NorenRealBright = 1;
+
+/** 段階 → 倍率（昼の灯りが弱い時刻での倍率。夜は 1 に寄せて掛かる） */
+export const BRIGHT_MUL: Record<NorenRealBright, number> = { 1: 1.0, 2: 1.25, 3: 1.5, 4: 1.8, 5: 2.2 };
+
+/** 見本の操作盤から明るさを切り替える口。window に CustomEvent(BRIGHT_EVENT, { detail: 1〜5 }) を送ると、読み込み直しなしで替わる */
+export const BRIGHT_EVENT = "noren-real:bright";
+
+/** ?bright= の文字列を段階に直す。合わなければ null */
+export function parseBright(q: string | null | undefined): NorenRealBright | null {
+  const n = Number(q);
+  return n === 1 || n === 2 || n === 3 || n === 4 || n === 5 ? n : null;
+}
+
+/** 写真（CSS）に掛ける倍率。布のシェーダーと同じ式で、夜（lamp が大きい）ほど上げ幅を 1/3 に抑える */
+export function effBright(mul: number, lamp: number): number {
+  const t = Math.min(1, Math.max(0, (lamp - 0.18) / (1 - 0.18)));
+  const k = t * t * (3 - 2 * t);
+  return mul + (1 + (mul - 1) * 0.35 - mul) * k;
+}

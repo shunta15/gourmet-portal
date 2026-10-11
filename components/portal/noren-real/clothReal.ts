@@ -61,6 +61,8 @@ export type ClothReal = {
   setDye: (k: DyeKind) => void;
   /** 布の細かいしわの強さ 0〜1（既定は弱く 0.2。大きなひだ・畳みじわは変わらない） */
   setWrinkle: (w: number) => void;
+  /** 明るさの倍率（1 = 今まで通り）。見本の操作盤・本番の既定値から渡す */
+  setBright: (m: number) => void;
   destroy: () => void;
 };
 
@@ -73,6 +75,7 @@ const FS = `
 precision highp float;
 uniform vec2 uRes;
 uniform float uTime, uOpen, uGust, uLamp, uMouse, uN, uS;
+uniform float uBright; // 明るさの倍率(1 = 今まで通り。lib/portal/noren/realTop.ts の NOREN_REAL_BRIGHT)
 uniform vec4 uLay;   // rodY, hemY, rodR, bandH(device px)
 uniform vec4 uPt;    // pointer x, y (device px), hoverIdx, hoverAmt
 uniform vec2 uSel;   // selIdx, selAmt
@@ -425,6 +428,9 @@ void main(){
   float disc = exp(-dot(ld, ld) * 1.3);
   float T = (back * (0.06 + 0.34 * uLamp) + disc * 0.08 * uLamp) * thin * (1.0 + 1.1 * uOpen);
   col += trCol * vec3(1.0, 0.82, 0.58) * T * mix(0.6, 1.25, ink);
+  // 明るさの段階(uBright)：布の色に掛ける。夜は元から明るいので上げ幅を 1/3 ほどに抑える。字(ink)は 1.1 倍までで、白飛びさせない。乗算なので、ひだの陰・織り目の濃淡は保たれる
+  float bE = mix(uBright, 1.0 + (uBright - 1.0) * 0.35, smoothstep(0.18, 1.0, uLamp));
+  col *= mix(bE, min(bE, 1.1), ink);
   // 色の整え：彩度を落とし、暗部は墨に寄せ、灯りの当たる所だけわずかに暖かく
   float gl = dot(col, vec3(0.30, 0.59, 0.11));
   col = mix(vec3(gl), col, uGrade.x);
@@ -505,6 +511,7 @@ void main(){
   vec3 rodCol = wood * (0.09 + 1.30 * pow(rd, 1.25) * (0.55 + 0.6 * uLamp)) * (0.50 + 0.50 * nr.z) * (1.0 - 0.42 * smoothstep(0.15, 1.0, tt)) + spec * (0.55 + 0.6 * uLamp);
   float lsd = smoothstep(lw + 6.0 * s, lw, abs(ldx));
   rodCol *= 1.0 - 0.55 * lsd;
+  rodCol *= bE;
 
   // 重ね順：布（奥）→ 竿 → 乳（手前）
   vec4 res = c;
@@ -565,7 +572,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
 
   const U = (n: string) => gl.getUniformLocation(prog, n);
-  const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"), uMouse = U("uMouse"),
+  const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"), uMouse = U("uMouse"), uBright = U("uBright"),
     uN = U("uN"), uS = U("uS"), uLay = U("uLay"), uPt = U("uPt"), uSel = U("uSel"),
     uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uGrade = U("uGrade"), uWr = U("uWr"), uAtlas = U("uAtlas");
 
@@ -586,6 +593,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   let layout: RealLayout | null = null;
   let dye = DYES.ai;
   let wrinkle = 0.2;
+  let bright = 1;
 
   /** 字のアトラス: 1 枚の布につき 512 角の 1 区画。R が字（染め抜き＝白）。区画の中心が字の中心 */
   const setGlyphs = (chars: string[], family: string, scale = 1) => {
@@ -614,6 +622,10 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   };
   const setWrinkle = (w: number) => {
     wrinkle = Math.min(1, Math.max(0, w));
+  };
+
+  const setBright = (m: number) => {
+    bright = Math.min(4, Math.max(0.3, m));
   };
 
   const resize = (l: RealLayout) => {
@@ -648,6 +660,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     gl.uniform3fv(uTint, dye.tint);
     gl.uniform3fv(uGrade, dye.grade);
     gl.uniform1f(uWr, wrinkle);
+    gl.uniform1f(uBright, bright);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
 
@@ -660,5 +673,5 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     }, 0);
   };
 
-  return { render, resize, setGlyphs, setDye, setWrinkle, destroy };
+  return { render, resize, setGlyphs, setDye, setWrinkle, setBright, destroy };
 }

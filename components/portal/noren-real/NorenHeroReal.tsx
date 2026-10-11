@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { createClothReal, DYE_EVENT, parseDye, type ClothReal, type DyeKind } from "./clothReal";
 import { createLanternReal, type LanternReal } from "./lanternReal";
 import Lantern from "../noren/Lantern";
+import { BRIGHT_EVENT, BRIGHT_MUL, effBright, NOREN_REAL_BRIGHT, parseBright } from "@/lib/portal/noren/realTop";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
 export type RealChapter = { key: string; kanji: string; ja: string; en: string };
@@ -13,7 +14,7 @@ type Props = {
   chapters: RealChapter[];
   /** 布の色（本番では lib/portal/noren/realTop.ts の NOREN_REAL_DYE で固定） */
   defaultDye?: DyeKind;
-  /** URL の ?dye= ?wrinkle= ?font= ?dpr= と、色の切り替えイベントを受け付けるか。見本のルート（/proto-noren/real）だけ true。本番は false（既定） */
+  /** URL の ?dye= ?wrinkle= ?bright= ?font= ?dpr= と、色・明るさの切り替えイベントを受け付けるか。見本のルート（/proto-noren/real）だけ true。本番は false（既定） */
   allowUrlOverride?: boolean;
 };
 
@@ -44,7 +45,7 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - 5 つの垂れは、それぞれ、その種類の章（#ch-xxx）への行き先（<a>）。乗せると垂れが押されてたわみ、押すと垂れが上がって章へ移る。
  * - スクロールで、布が上がって奥（店の写真と、h1）へ入る。
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
- * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
+ * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?bright=1〜5（明るさの段階。既定は realTop.ts の NOREN_REAL_BRIGHT。時刻は ?t=12:30 / ?t=21:30）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
 export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false }: Props) {
   const wrap = useRef<HTMLElement>(null);
@@ -72,6 +73,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const wq = allow ? parseFloat(qs.get("wrinkle") ?? "") : NaN;
     const wrinkleQ = Number.isFinite(wq) ? wq : 0.2;
     setDye(dyeQ);
+    // 明るさ（布・竿はシェーダーへ、奥の写真は CSS の --real-bright へ。既定は realTop.ts の値。?bright= は見本だけ）
+    let bmul = BRIGHT_MUL[(allow ? parseBright(qs.get("bright")) : null) ?? NOREN_REAL_BRIGHT];
     const fontQ = allow && (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
     const dprQ = allow ? parseFloat(qs.get("dpr") ?? "") : NaN;
 
@@ -97,6 +100,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     let lastOpen = "";
     let lampAt = -9999;
     let lamp = 0.5;
+    const applyBright = () => w.style.setProperty("--real-bright", effBright(bmul, lamp).toFixed(4));
+    applyBright();
     let hov = 0;
     let hovIdx = -1;
     let selAmt = 0;
@@ -179,6 +184,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
         const lv = parseFloat(getComputedStyle(root).getPropertyValue("--lamp")) || 0.5;
         if (Math.abs(lv - lamp) > 0.001) lanDirty = true;
         lamp = lv;
+        applyBright();
         dirty = true;
       }
       const r = w.getBoundingClientRect();
@@ -278,6 +284,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       if (cloth) {
         cloth.setDye(dyeQ);
         cloth.setWrinkle(wrinkleQ);
+        cloth.setBright(bmul);
         cloth.setGlyphs(chapters.map((c) => c.kanji), family);
       }
       lans?.setGlyphs(["灯", "酒"], brush);
@@ -295,7 +302,17 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       dirty = true;
       lastDraw = 0;
     };
+    const onBright = (e: Event) => {
+      const b = parseBright(String((e as CustomEvent).detail ?? ""));
+      if (!b) return;
+      bmul = BRIGHT_MUL[b];
+      cloth?.setBright(bmul);
+      applyBright();
+      dirty = true;
+      lastDraw = 0;
+    };
     if (allow) window.addEventListener(DYE_EVENT, onDye);
+    if (allow) window.addEventListener(BRIGHT_EVENT, onBright);
     window.addEventListener("resize", onResize);
     window.addEventListener("pointermove", onMove, { passive: true });
     dEl?.addEventListener("pointerover", onEnter);
@@ -310,6 +327,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       ro.disconnect();
       window.clearTimeout(selTimer.current);
       window.removeEventListener(DYE_EVENT, onDye);
+      window.removeEventListener(BRIGHT_EVENT, onBright);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("pointermove", onMove);
       dEl?.removeEventListener("pointerover", onEnter);
