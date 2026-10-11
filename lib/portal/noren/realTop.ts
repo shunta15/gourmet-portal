@@ -37,7 +37,7 @@ export const NOREN_REAL_INNER = false;
  *   夜（灯りが強い時刻）は元から明るいので、上げ幅は約 1/3（シェーダーの中で自動で抑える）。
  */
 export type NorenRealBright = 1 | 2 | 3 | 4 | 5;
-export const NOREN_REAL_BRIGHT: NorenRealBright = 1;
+export const NOREN_REAL_BRIGHT: NorenRealBright = 5;
 
 /** 段階 → 倍率（昼の灯りが弱い時刻での倍率。夜は 1 に寄せて掛かる） */
 export const BRIGHT_MUL: Record<NorenRealBright, number> = { 1: 1.0, 2: 1.4, 3: 1.9, 4: 2.5, 5: 3.2 };
