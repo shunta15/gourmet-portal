@@ -5,6 +5,8 @@
  *  - 縦書きの店名の大きさ（nameScale）
  */
 
+import { RELEASE_REST } from "./release";
+
 /** 暖簾に書く屋号の芯。かっこの中・「by …」・支店名（○○店）を落とし、空白でつなぐ */
 export function nameCore(name: string): string {
   let s = name
@@ -65,8 +67,21 @@ export function panelPlan(name: string, mobile: boolean): string[][] {
   return panels;
 }
 
-// 暖簾の 7 つの章（和・洋・中・麺・肉・酒・茶。lib/cuisineBroad.ts）の漢字。鮨・蕎麦・うどんは「和」に寄せる。どれにも当たらない店の扱いは、下の kanjiFor（屋号の最初の漢字、無ければ「輪」）のまま
-const KANJI_RULES: [RegExp, string][] = [
+// 店ページ・特集記事・店カードの布の漢字。RELEASE_REST が false のあいだは今の本番の対応（KANJI_RULES_MAIN）。
+// true のとき、暖簾の 7 つの章（和・洋・中・麺・肉・酒・茶。lib/cuisineBroad.ts）の漢字（鮨・蕎麦・うどんは「和」、珈→茶、華→中）。
+// どれにも当たらない店の扱いは、下の kanjiFor（屋号の最初の漢字、無ければ「輪」）のまま
+const KANJI_RULES_MAIN: [RegExp, string][] = [
+  [/ラーメン|拉麺|らーめん|中華そば|つけ麺|担々麺|担担麺/, "麺"],
+  [/寿司|鮨|すし/, "鮨"],
+  [/焼肉|ホルモン|ジンギスカン|ステーキ|肉/, "肉"],
+  [/居酒屋|酒場|バル|炉端|焼鳥|焼き鳥|酒|ワイン|バー|Bar/i, "酒"],
+  [/蕎麦|そば|うどん/, "蕎"],
+  [/カフェ|喫茶|珈琲|コーヒー|Coffee|Cafe/i, "珈"],
+  [/中華|中国/, "華"],
+  [/洋食|フレンチ|ビストロ|イタリアン|パスタ|ピザ|ピッツァ/, "洋"],
+  [/和食|割烹|懐石|定食|天ぷら|うなぎ|海鮮/, "和"],
+];
+const KANJI_RULES_7: [RegExp, string][] = [
   [/ラーメン|拉麺|らーめん|中華そば|つけ麺|担々麺|担担麺/, "麺"],
   [/焼肉|ホルモン|ジンギスカン|ステーキ|肉/, "肉"],
   [/居酒屋|酒場|バル|炉端|焼鳥|焼き鳥|酒|ワイン|バー|Bar/i, "酒"],
@@ -75,6 +90,7 @@ const KANJI_RULES: [RegExp, string][] = [
   [/洋食|フレンチ|ビストロ|イタリアン|パスタ|ピザ|ピッツァ/, "洋"],
   [/和食|割烹|懐石|定食|天ぷら|うなぎ|海鮮|寿司|鮨|すし|蕎麦|そば|うどん/, "和"],
 ];
+const KANJI_RULES: [RegExp, string][] = RELEASE_REST ? KANJI_RULES_7 : KANJI_RULES_MAIN;
 
 /** 暖簾・切り抜きに使う一文字。業種の表記から。当てはまらなければ屋号の最初の漢字、それも無ければ「輪」 */
 export function kanjiFor(cuisine: string, name: string): string {

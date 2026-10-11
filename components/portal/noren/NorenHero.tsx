@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
 import Lantern from "./Lantern";
+import { ENTRANCE_H1, ENTRANCE_H1_LINES, ENTRANCE_LEAD } from "@/lib/portal/noren/entranceCopy";
 import { NOREN_HERO_KEYS } from "@/lib/portal/noren/nav";
 import { BROAD_GROUPS } from "@/lib/cuisineBroad";
 
@@ -171,15 +172,15 @@ export default function NorenHero({ photo, count, areas }: Props) {
           <Lantern className="vN-hero-lan vN-hero-lan--l" />
           <Lantern className="vN-hero-lan vN-hero-lan--r" mark="酒" />
           <div className="vN-headline">
-            <h1 className="vN-h1" aria-label="暖簾を、くぐる。">
+            <h1 className="vN-h1" aria-label={ENTRANCE_H1}>
               <span className="vN-h1-col" aria-hidden="true">
-                <Chars text="暖簾を、" />
+                <Chars text={ENTRANCE_H1_LINES[0]} />
               </span>
               <span className="vN-h1-col" aria-hidden="true">
-                <Chars text="くぐる。" base={4} />
+                <Chars text={ENTRANCE_H1_LINES[1]} base={Array.from(ENTRANCE_H1_LINES[0]).length} />
               </span>
             </h1>
-            <p className="vN-lead">一日の終わりに寄る店を、駅と街から。</p>
+            <p className="vN-lead">{ENTRANCE_LEAD}</p>
           </div>
           <p className="vN-meta">
             <span>Machinowa Gourmet</span>

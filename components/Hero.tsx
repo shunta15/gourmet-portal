@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { yearLabel } from "@/lib/issueLabel";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { useEffect, useRef, useState } from "react";
 import { NATIONAL } from "@/lib/regions";
 import { useParallax, useTypewriter } from "@/lib/hooks";
@@ -82,7 +83,7 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-meta">
           <span>◎ {N.brand} · 全国飲食店ポータル</span>
-          <span suppressHydrationWarning>第24号 · {yearLabel()}</span>
+          <span suppressHydrationWarning>第24号 · {RELEASE_REST ? yearLabel() : "2026年 春号"}</span>
         </div>
         <h1 className={"hero-title " + (inView ? "in" : "")}>
           <span className="line">

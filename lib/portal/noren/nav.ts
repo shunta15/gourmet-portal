@@ -1,3 +1,5 @@
+import { RELEASE_REST } from "./release";
+
 /**
  * 暖簾の見本（/proto-noren/**）の行き先。グルメの今のヘッダー・フッターと同じ行き先（行き先は今の本物のページ）。
  * サーバー・クライアントのどちらからも使える（軽い定数だけ）。
@@ -51,17 +53,17 @@ export const FOOT_NAV = [
 export const FOOT_NAV_LIVE_EXTRA = [
   { href: "/omakase", ja: "おまかせ提案" },
   { href: "/photos", ja: "写真から探す" },
-  { href: "/videos", ja: "ショート動画" },
+  { href: RELEASE_REST ? "/videos" : "/nazatu", ja: "ショート動画" },
   { href: "/", ja: "総合トップ" },
 ] as const;
 
 /** フッターの地域。表示名は行き先の地域データ（lib/regions.ts の REGIONS[key].name）と同じにする */
 export const FOOT_REGIONS = [
-  { href: "/region/tokyo", ja: "東京" },
+  { href: "/region/tokyo", ja: RELEASE_REST ? "東京" : "東京・下町" },
   { href: "/region/kyoto", ja: "京都" },
-  { href: "/region/osaka", ja: "大阪" },
-  { href: "/region/fukuoka", ja: "福岡" },
-  { href: "/region/hokkaido", ja: "北海道" },
+  { href: "/region/osaka", ja: RELEASE_REST ? "大阪" : "大阪・ミナミ" },
+  { href: "/region/fukuoka", ja: RELEASE_REST ? "福岡" : "博多" },
+  { href: "/region/hokkaido", ja: RELEASE_REST ? "北海道" : "札幌" },
 ] as const;
 
 export const FOOT_INFO = [
@@ -71,16 +73,27 @@ export const FOOT_INFO = [
   { href: "/owner", ja: "店舗登録" },
 ] as const;
 
-/** フッターの七つの暖簾（トップの章の漢字。lib/cuisineBroad.ts の大分類と同じ並び）。押すとトップのその章へ */
-export const FOOT_NOREN = [
-  { key: "wa", kanji: "和", ja: "和食" },
-  { key: "yo", kanji: "洋", ja: "洋食" },
-  { key: "chu", kanji: "中", ja: "中華・アジア" },
-  { key: "men", kanji: "麺", ja: "ラーメン" },
-  { key: "niku", kanji: "肉", ja: "焼肉・焼鳥" },
-  { key: "sake", kanji: "酒", ja: "居酒屋・バー" },
-  { key: "cha", kanji: "茶", ja: "カフェ・甘味" },
-] as const;
+/**
+ * フッターの暖簾（トップの章の漢字。押すとトップのその章へ）。フッターは入口以外のページにも出るので、RELEASE_REST が false のあいだは今の本番の 5 つ（麺・鮨・肉・酒・蕎）のまま。
+ * 鮨・蕎の行き先 #ch-sushi・#ch-soba は、入口（7 つの章）の「和」の章の手前に置いた別名の目印に着く。true で 7 つ（lib/cuisineBroad.ts の大分類と同じ並び）。
+ */
+export const FOOT_NOREN: readonly { key: string; kanji: string; ja: string }[] = RELEASE_REST
+  ? [
+      { key: "wa", kanji: "和", ja: "和食" },
+      { key: "yo", kanji: "洋", ja: "洋食" },
+      { key: "chu", kanji: "中", ja: "中華・アジア" },
+      { key: "men", kanji: "麺", ja: "ラーメン" },
+      { key: "niku", kanji: "肉", ja: "焼肉・焼鳥" },
+      { key: "sake", kanji: "酒", ja: "居酒屋・バー" },
+      { key: "cha", kanji: "茶", ja: "カフェ・甘味" },
+    ]
+  : [
+      { key: "men", kanji: "麺", ja: "ラーメン" },
+      { key: "sushi", kanji: "鮨", ja: "鮨・寿司" },
+      { key: "niku", kanji: "肉", ja: "焼肉" },
+      { key: "sake", kanji: "酒", ja: "居酒屋" },
+      { key: "soba", kanji: "蕎", ja: "蕎麦・うどん" },
+    ];
 
 /**
  * 入口のいちばん上の暖簾（最初の画面。本物の暖簾 NorenHeroReal と、WebGL が使えないときの暖簾 NorenHero）に出す章（この順）。

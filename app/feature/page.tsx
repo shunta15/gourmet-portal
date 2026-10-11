@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import Footer from "@/components/Footer";
 import { FEATURES, FEATURE_ARTICLES, REGIONS, type RegionKey } from "@/lib/data";
 import { getFeatureCountsByRegion, getFeaturesByRegion } from "@/lib/featureRegions";
@@ -21,17 +22,17 @@ export const metadata = {
 // よく出てくる tag を「テーマ」として束ねる（カテゴリ統合）
 const THEME_GROUPS: { label: string; labelEn: string; tags: string[] }[] = [
   { label: "デート", labelEn: "DATE", tags: ["デート"] },
-  // さんぽ = 散歩 = 街歩き（表記ゆれ）。記事のタグは「さんぽ」が 37 本で最多
-  { label: "観光・街歩き", labelEn: "SIGHTSEEING", tags: ["観光", "街歩き", "さんぽ", "散歩", "散歩・自然", "観光・博物館"] },
+  // さんぽ = 散歩 = 街歩き（表記ゆれ。RELEASE_REST が true のときだけ足す）
+  { label: "観光・街歩き", labelEn: "SIGHTSEEING", tags: ["観光", "街歩き", ...(RELEASE_REST ? ["さんぽ"] : []), "散歩", "散歩・自然", "観光・博物館"] },
   { label: "雨の日", labelEn: "RAINY DAY", tags: ["雨の日"] },
   { label: "夜景・夜遊び", labelEn: "NIGHT", tags: ["夜景"] },
   { label: "カフェ・朝活", labelEn: "CAFE / MORNING", tags: ["カフェ", "カフェ・朝活"] },
-  // 子連れ = 家族 = ファミリー（表記ゆれ）
-  { label: "家族・子連れ", labelEn: "FAMILY", tags: ["家族", "子連れ", "ファミリー"] },
+  // 子連れ = 家族 = ファミリー（表記ゆれ。RELEASE_REST が true のときだけ足す）
+  { label: "家族・子連れ", labelEn: "FAMILY", tags: ["家族", ...(RELEASE_REST ? ["子連れ"] : []), "ファミリー"] },
   { label: "ショッピング", labelEn: "SHOPPING", tags: ["ショッピング"] },
   { label: "アート", labelEn: "ART", tags: ["アート"] },
-  // ランチ は食事の特集（scene-lunch-*）。入れる札は「グルメ」だけ
-  { label: "グルメ", labelEn: "GOURMET", tags: ["グルメ", "ランチ"] },
+  // ランチ は食事の特集（scene-lunch-*）。入れる札は「グルメ」だけ（RELEASE_REST が true のときだけ足す）
+  { label: "グルメ", labelEn: "GOURMET", tags: ["グルメ", ...(RELEASE_REST ? ["ランチ"] : [])] },
   { label: "時間つぶし", labelEn: "KILL TIME", tags: ["時間つぶし"] },
 ];
 
@@ -170,7 +171,7 @@ export default async function FeatureIndexPage({
             地域から探す。
           </h2>
           <p style={{ font: "400 14px/1.8 var(--body)", color: "var(--ink-soft)", marginBottom: 32 }}>
-            {availableRegions.length} 地域のミニポータルから特集を絞り込み。
+            {RELEASE_REST ? availableRegions.length : 16} 地域のミニポータルから特集を絞り込み。
           </p>
           <div
             style={{

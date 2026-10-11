@@ -8,6 +8,8 @@
  * - 枠: /gourmet の暖簾の枠（app/gourmet/layout.tsx）。isPortalPath が本物の URL と内部のパスの両方を総合サイト扱いにして、グルメの共通の枠（SiteShell）を出さない。
  */
 
+import { RELEASE_REST } from "./release";
+
 /** 店ページ（/restaurant/<id>）を暖簾にする。app/gourmet/restaurant/[id] */
 export const NOREN_SHOP_REWRITE = true;
 
@@ -36,14 +38,14 @@ export const NOREN_FEATURE_INDEX_REWRITE = true;
  * 内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。公開スイッチ ON の判定は他の暖簾と同じ（OFF ではこの定数に関係なく今のグルメのまま）。
  * 元に戻すなら false（/scene・/scene/<slug> は今のグルメのページ、内部のパスは 404）。
  */
-export const NOREN_SCENE_REWRITE = true;
+export const NOREN_SCENE_REWRITE = RELEASE_REST;
 
 /**
  * 店をさがす（/search。noindex。?q= ?region= ?cuisine= ?tag= ?budget= ?f= の絞り込みも同じページ）を暖簾にする。内部のパスは app/gourmet/search/page.tsx。
  * true のあいだ、公開スイッチ ON では /search → /gourmet/search に差し替わり（ブラウザの URL・canonical は /search のまま）、内部のパスを直接開くと /search へ恒久リダイレクトされる。
  * 元に戻すなら false（/search は今のグルメのページ、内部のパスは 404）。シーンのスイッチ（NOREN_SCENE_REWRITE）とは別々に戻せる。
  */
-export const NOREN_SEARCH_REWRITE = true;
+export const NOREN_SEARCH_REWRITE = RELEASE_REST;
 // ── scene ここまで
 // ── area ここから
 /**
@@ -53,7 +55,7 @@ export const NOREN_SEARCH_REWRITE = true;
  * （ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
  * 元に戻すなら false（/region・/region/<key>・/region/<key>/<街> は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
  */
-export const NOREN_REGION_REWRITE = true;
+export const NOREN_REGION_REWRITE = RELEASE_REST;
 // ── area ここまで
 
 /**

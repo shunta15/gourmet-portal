@@ -3,14 +3,20 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
+import OwnerPortalLegacy, { legacyMetadata } from "./OwnerPortalLegacy";
 
 // フッターの「店舗登録」の行き先。訪問者向けに、準備中であることとお問い合わせへの案内だけを出す
-export const metadata = {
-  title: "店舗登録 — マチノワ",
-  robots: { index: false, follow: false },
-};
+// RELEASE_REST が false のあいだは、今の本番の店舗登録ページ（OwnerPortalLegacy）を出す
+export const metadata = RELEASE_REST
+  ? {
+      title: "店舗登録 — マチノワ",
+      robots: { index: false, follow: false },
+    }
+  : legacyMetadata;
 
 export default function OwnerPortal() {
+  if (!RELEASE_REST) return <OwnerPortalLegacy />;
   return (
     <div className="admin-root min-h-screen px-4 py-12">
       <div className="mx-auto max-w-2xl space-y-6">

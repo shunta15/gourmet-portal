@@ -15,6 +15,7 @@ import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
 import { applyFeatureSpotPhotos } from "@/lib/featureSpotPhotos";
 import { applyFeatureSinglePhotos } from "@/lib/portal/noren/featureSinglePhotos";
 import { cleanArticleText } from "@/lib/otherSiteRatings";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -165,7 +166,9 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
   // 触れた文／句を取り除く（lib/otherSiteRatings.ts。DB の文章にもコード側の文章にも効く。2026-10-11 発注者指示。DB は書き換えない）
   // その前に、店 1 軒の記事の「足りない写真」を、対の店ページの写真で補う（lib/portal/noren/featureSinglePhotos.ts の表。表に無い記事は何も変わらない）。
   // 表の写真も、この後の sanitizeFeatureArticle（表示禁止の画像の除去）を通る
-  return cleanArticleText(applyFeatureSpotPhotos(sanitizeFeatureArticle(applyFeatureSinglePhotos(result))));
+  // 店 1 軒の記事の写真の補いは RELEASE_REST が true のときだけ、ほかのサイトの評価の除去は NOREN_STRIP_OTHER_RATINGS が true のときだけ（false は今の本番と同じ）
+  const a = applyFeatureSpotPhotos(sanitizeFeatureArticle(RELEASE_REST ? applyFeatureSinglePhotos(result) : result));
+  return NOREN_STRIP_OTHER_RATINGS ? cleanArticleText(a) : a;
 }
 
 /**

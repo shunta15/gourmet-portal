@@ -16,6 +16,7 @@ import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
 import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 import { applyShopPhotos } from "@/lib/shopPhotos";
 import { cleanRestaurantText } from "@/lib/otherSiteRatings";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -68,7 +69,11 @@ const CODE_BY_ID = new Map<string, Restaurant>(RESTAURANTS.map((r) => [r.id, r])
  * 文／句を取り除く（lib/otherSiteRatings.ts。DB の文章にもコード側の文章にも効く。2026-10-11 発注者指示。DB は書き換えない）。
  * map(finish) のように 1 引数で呼ぶ（2 番目以降の引数は受けない）。
  */
-const finish = (r: Restaurant): Restaurant => cleanRestaurantText(applyShopPhotos(sanitizeRestaurant(r)));
+// ほかのサイトの評価に触れた文を取り除く処理は NOREN_STRIP_OTHER_RATINGS が true のときだけ（false は今の本番と同じ文）
+const finish = (r: Restaurant): Restaurant => {
+  const x = applyShopPhotos(sanitizeRestaurant(r));
+  return NOREN_STRIP_OTHER_RATINGS ? cleanRestaurantText(x) : x;
+};
 
 /**
  * DB の行から店を作る。Google の評価（googleRating・googleReviewCount）は DB に列が無いので、
@@ -76,7 +81,8 @@ const finish = (r: Restaurant): Restaurant => cleanRestaurantText(applyShopPhoto
  * 新しく取りに行かない・何も書き込まない。付けた店には googleShopOnly を立て、暖簾の店ページ以外では使わせない。
  */
 export function rowToRestaurant(r: DbRestaurantRow): Restaurant {
-  const code = CODE_BY_ID.get(r.id);
+  // 同じ ID のコード側の店から Google の評価を借りるのは RELEASE_REST が true のときだけ（false は今の本番と同じ）
+  const code = RELEASE_REST ? CODE_BY_ID.get(r.id) : undefined;
   const googleRating = r.google_rating ?? code?.googleRating;
   const googleReviewCount = r.google_review_count ?? code?.googleReviewCount;
   const restaurant = {

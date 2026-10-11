@@ -4,6 +4,7 @@ import { createClothReal, DYE_EVENT, parseDye, type ClothReal, type DyeKind } fr
 import { createLanternReal, type LanternReal } from "./lanternReal";
 import Lantern from "../noren/Lantern";
 import Link from "next/link";
+import { ENTRANCE_COPY_DEFAULT, parseEntranceCopy, type EntranceCopy } from "@/lib/portal/noren/entranceCopy";
 import { BRIGHT_EVENT, BRIGHT_MUL, effBright, NOREN_REAL_BRIGHT, NOREN_REAL_SP_SHAPE, parseBright, parseSpShape, SP_HEM_FRAC, SP_MAX_WIDTH, type NorenRealSpShape } from "@/lib/portal/noren/realTop";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
@@ -21,6 +22,8 @@ type Props = {
   spShape?: NorenRealSpShape;
   /** URL の ?sp=long|half|short|mid でスマホ幅の丈の案を上書きできるか。サーバーで「本番（VERCEL_ENV が production）でないとき」だけ true にして渡す */
   allowSpUrl?: boolean;
+  /** URL の ?copy=1〜5 で見出し・リードの候補に替えられるか（?sp= と同じ。本番でないときだけ true） */
+  allowCopyUrl?: boolean;
   /** 業種の 7 つの大分類（短い丈の案 "short" で、暖簾のすぐ下に出す札。lib/portal/noren/openSearch.ts の cuisines） */
   genres?: { key: string; kanji: string; label: string; count: number }[];
 };
@@ -54,7 +57,7 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
  * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?bright=1〜5（明るさの段階。既定は realTop.ts の NOREN_REAL_BRIGHT。時刻は ?t=12:30 / ?t=21:30）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
-export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false, spShape = NOREN_REAL_SP_SHAPE, allowSpUrl = false, genres = [] }: Props) {
+export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false, spShape = NOREN_REAL_SP_SHAPE, allowSpUrl = false, allowCopyUrl = false, genres = [] }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -67,6 +70,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
   const [dye, setDye] = useState<DyeKind>(defaultDye);
   // スマホ幅（700px 未満）の丈の案。読み込み直後は既定、?sp= があれば（許されているときだけ）上書き
   const [sp, setSp] = useState<NorenRealSpShape>(spShape);
+  // 見出し 2 行とリード（既定は lib/portal/noren/entranceCopy.ts。?copy=1〜5 は許されているときだけ）
+  const [copy, setCopy] = useState<EntranceCopy>(ENTRANCE_COPY_DEFAULT);
   // 提灯: WebGL で描けないときは、本番の CSS の提灯を代わりに出す
   const [lanCss, setLanCss] = useState(false);
 
@@ -84,6 +89,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     setDye(dyeQ);
     const spNow: NorenRealSpShape = (allowSpUrl ? parseSpShape(qs.get("sp")) : null) ?? spShape;
     setSp(spNow);
+    const copyQ = allowCopyUrl ? parseEntranceCopy(qs.get("copy")) : null;
+    if (copyQ) setCopy(copyQ);
     // 明るさ（布・竿はシェーダーへ、奥の写真は CSS の --real-bright へ。既定は realTop.ts の値。?bright= は見本だけ）
     let bmul = BRIGHT_MUL[(allow ? parseBright(qs.get("bright")) : null) ?? NOREN_REAL_BRIGHT];
     const fontQ = allow && (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
@@ -403,15 +410,15 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           )}
           <div className="vR-hlshade" aria-hidden="true" />
           <div className="vN-headline">
-            <h1 className="vN-h1" aria-label="暖簾を、くぐる。">
+            <h1 className="vN-h1" aria-label={copy.lines.join("")}>
               <span className="vN-h1-col" aria-hidden="true">
-                <Chars text="暖簾を、" />
+                <Chars text={copy.lines[0]} />
               </span>
               <span className="vN-h1-col" aria-hidden="true">
-                <Chars text="くぐる。" base={4} />
+                <Chars text={copy.lines[1]} base={Array.from(copy.lines[0]).length} />
               </span>
             </h1>
-            <p className="vN-lead">一日の終わりに寄る店を、駅と街から。</p>
+            <p className="vN-lead">{copy.lead}</p>
           </div>
           <p className="vN-meta">
             <span>Machinowa Gourmet</span>
@@ -471,12 +478,12 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
               ))}
             </ul>
           </div>
-        ) : (
+        ) : sp === "long" ? null : (
           <div className={`vR-sp-under vR-sp-under--${sp}`}>
             <p className="vR-sp-name">
               マチノワ グルメ<span lang="en">Machinowa Gourmet</span>
             </p>
-            <p className="vR-sp-lead">一日の終わりに寄る店を、駅と街から。</p>
+            <p className="vR-sp-lead">{copy.lead}</p>
             {sp === "half" && (
               <a href="#open-search" className="vR-sp-go" data-cursor="GO">
                 店をさがす <span aria-hidden="true">↓</span>

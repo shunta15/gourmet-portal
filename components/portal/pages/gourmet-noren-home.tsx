@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { getAllRestaurants } from "@/lib/db/restaurants";
 import { FEATURES } from "@/lib/data";
@@ -7,6 +8,7 @@ import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/nor
 import NorenHero from "@/components/portal/noren/NorenHero";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import OpenSearch from "@/components/portal/noren/OpenSearch";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import "../noren/top.css";
@@ -29,7 +31,7 @@ function splitTitle(t: string): [string, string] {
 const PRINCIPLES = [
   { k: "誇張しない", en: "No exaggeration", body: "「最高」「絶品」といった言葉は使いません。住所、営業時間、写真など、確かめられることを書きます。" },
   { k: "順位をつけない", en: "No rankings", body: "点数や星、ランキングで店を並べません。このページの並びも、順位ではありません。" },
-  { k: "口コミを転載しない", en: "No reposted reviews", body: "口コミの文章は転載しません。評価の数字は、出典（Google）を明記したものだけを載せます。" },
+  { k: "口コミを転載しない", en: "No reposted reviews", body: RELEASE_REST ? "口コミの文章は転載しません。評価の数字は、出典（Google）を明記したものだけを載せます。" : "ほかのサイトの口コミや評価は、掲載しません。" },
 ];
 
 export default async function GourmetNorenHome({ links }: { links: NorenLinks }) {
@@ -104,7 +106,16 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
           </ul>
         </div>
         {chapters.map((c, i) => (
-          <Chapter key={c.key} c={c} index={i} total={chapters.length} shopBase={links.shopBase} />
+          <Fragment key={c.key}>
+            {/* フッターの暖簾（今の本番の 5 つ）の行き先 #ch-sushi・#ch-soba の別名の目印。入口の「和」の章の手前に着く */}
+            {i === 0 && (
+              <>
+                <i id="ch-sushi" aria-hidden="true" style={{ display: "block", height: 0 }} />
+                <i id="ch-soba" aria-hidden="true" style={{ display: "block", height: 0 }} />
+              </>
+            )}
+            <Chapter c={c} index={i} total={chapters.length} shopBase={links.shopBase} />
+          </Fragment>
         ))}
       </div>
 

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 
-// 地域の数は地域データ（REGIONS）の数から出す（数を直接書かない）
-const REGION_COUNT = Object.keys(REGIONS).length;
+// 地域の数は地域データ（REGIONS）の数から出す（RELEASE_REST が true のとき。false は今の本番の「16」）
+const REGION_COUNT = RELEASE_REST ? Object.keys(REGIONS).length : 16;
 
 export const metadata = {
   title: "地域から探す | マチノワ",
@@ -36,7 +37,7 @@ export default function RegionIndex() {
               街ごとの、<em>味。</em>
             </h1>
             <p style={{ marginTop: 20, maxWidth: 640, font: "400 14px/1.9 var(--body)", opacity: 0.85 }}>
-              {keys.length} 地域それぞれのミニポータル。気になる街から、編集部が選んだ一軒を辿ってください。
+              {RELEASE_REST ? keys.length : 16} 地域それぞれのミニポータル。気になる街から、編集部が選んだ一軒を辿ってください。
             </p>
           </div>
         </div>

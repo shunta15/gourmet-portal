@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { REGIONS, type RegionKey } from "@/lib/data";
 import { SCENES } from "@/lib/scenes";
 import { getFeatureCountsByRegion } from "@/lib/featureRegions";
@@ -30,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // 公開スイッチ ON のときだけ、トップ・特集のトップ・グルメのトップに更新日を付ける（OFF の出力は従来と同一）。
   // 検索エンジンに「このページは変わった」と伝えるための日付。これらのページの題・デザインを大きく変えたら、ENTRANCE_UPDATED を手で直す。
-  const entranceUpdated = isPortalLive() ? { lastModified: ENTRANCE_UPDATED } : {};
+  const entranceUpdated = RELEASE_REST && isPortalLive() ? { lastModified: ENTRANCE_UPDATED } : {};
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE, changeFrequency: "daily", priority: 1.0, ...entranceUpdated },
     {

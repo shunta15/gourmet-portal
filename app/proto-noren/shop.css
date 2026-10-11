@@ -127,7 +127,8 @@
 .vS-info-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(36px,6vw,110px);align-items:start}
 .vS-spec{border-top:1px solid var(--line-2)}
 .vS-spec>div{display:grid;grid-template-columns:clamp(92px,9vw,132px) minmax(0,1fr);gap:8px 20px;padding:20px 0;border-bottom:1px solid var(--line)}
-.vS-spec dt{font:700 14px/1.9 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);word-break:keep-all}
+.vS-spec dt{font:700 14px/1.9 var(--f-min);letter-spacing:.3em;color:var(--kinari-3)}
+.vN[data-rest] .vS-spec dt{word-break:keep-all} /* RELEASE_REST が true のときだけ（NorenFrame が data-rest を付ける） */
 .vS-spec dd{font:500 17px/1.9 var(--f-min);letter-spacing:.05em;color:var(--kinari);overflow-wrap:anywhere}
 .vS-spec dd a.tel{display:inline-flex;align-items:center;min-height:44px;font:500 22px/1 var(--f-lat);letter-spacing:.1em;border-bottom:1px solid var(--shu-hi);color:var(--kinari);font-variant-numeric:lining-nums}
 .vS-spec dd small{font:400 14px/1.7 var(--f-sans);color:var(--kinari-3);letter-spacing:.04em;margin-left:.6em}

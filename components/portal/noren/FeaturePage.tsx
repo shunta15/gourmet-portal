@@ -9,6 +9,7 @@ import DoorLift from "@/components/portal/noren/DoorLift";
 import Lantern from "@/components/portal/noren/Lantern";
 import LanternInner from "@/components/portal/noren-real/LanternInner";
 import { NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
 import type { Feature, FeatureArticle } from "@/lib/regions";
 import type { FmapData } from "@/lib/portal/fmap";
 import { mapsUrlForRankItem } from "@/lib/maps";
@@ -55,7 +56,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
     "編集部厳選",
     A.kicker,
     isSinglePoint ? `${A.ranking.length} POINTS` : `厳選${A.ranking.length}スポット`,
-    issueLabel(A.date), // 記事の日付から「2026年 10月号」。日付が無ければ出さない
+    RELEASE_REST ? issueLabel(A.date) : "2026年 春号", // 記事の日付から「2026年 10月号」（RELEASE_REST が true のとき。日付が無ければ出さない）。false は今の本番の「2026年 春号」
   ].filter(Boolean);
 
   const heroSrc = usable(A.heroImage) ? sized(A.heroImage, 1800) : "";
@@ -82,7 +83,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
               <Link href={links.top} data-cursor="BACK">トップ</Link>
             </li>
             <li>
-              <Link href={FEATURE_ROUNDUP_HREF} data-cursor="BACK">{FEATURE_KIND_ROUNDUP}</Link>
+              <Link href={RELEASE_REST ? FEATURE_ROUNDUP_HREF : "/feature"} data-cursor="BACK">{RELEASE_REST ? FEATURE_KIND_ROUNDUP : "特集"}</Link>
             </li>
             <li>
               <span aria-current="page">{A.title}</span>
@@ -151,7 +152,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
                 </h2>
                 <p className="vF-sub">
                   {introText}
-                  {stripTabelogScore(A.lede)}
+                  {NOREN_STRIP_OTHER_RATINGS ? stripTabelogScore(A.lede) : A.lede}
                 </p>
               </div>
             </div>
@@ -244,7 +245,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
                         {r.cuisine} · {r.area}
                       </p>
                       {!isCourse && r.heading && <p className="vF-hd">{r.heading}</p>}
-                      <p className="vF-desc">{stripTabelogScore(r.desc)}</p>
+                      <p className="vF-desc">{NOREN_STRIP_OTHER_RATINGS ? stripTabelogScore(r.desc) : r.desc}</p>
                       {r.specs.length > 0 && (
                         <dl className="vF-specs">
                           {r.specs.map((s, j) => (

@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { REGIONS, type RegionKey } from "@/lib/regions";
@@ -40,7 +41,7 @@ export default function FeatureSearch({ features }: { features: SearchFeature[] 
   const regionOptions = useMemo(() => {
     const has = new Set<string>();
     features.forEach((f) => f.regions.forEach((k) => has.add(k)));
-    return Object.entries(REGIONS).filter(([k]) => has.has(k));
+    return RELEASE_REST ? Object.entries(REGIONS).filter(([k]) => has.has(k)) : Object.entries(REGIONS);
   }, [features]);
 
   const results = useMemo(() => {

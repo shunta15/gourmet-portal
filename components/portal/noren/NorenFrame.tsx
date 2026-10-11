@@ -3,6 +3,7 @@ import Boot from "./Boot";
 import NorenHeader from "./NorenHeader";
 import NorenFooter from "./NorenFooter";
 import { brush, latin } from "./fonts";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { BRIGHT_MUL, NOREN_REAL_BRIGHT, NOREN_REAL_DYE, NOREN_REAL_GROUND, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 import "../noren-real/dye.css";
 import "../noren-real/ground.css";
@@ -37,7 +38,7 @@ export default function NorenFrame({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined} data-ground={NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined} data-lit={CLOTH_LIT ? "1" : undefined} style={CLOTH_LIT ? ({ "--cloth-lit": CLOTH_LIT_PCT } as React.CSSProperties) : undefined}>
+    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined} data-ground={RELEASE_REST && NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined} data-ground-top={NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined} data-rest={RELEASE_REST ? "1" : undefined} data-lit={CLOTH_LIT ? "1" : undefined} style={CLOTH_LIT ? ({ "--cloth-lit": CLOTH_LIT_PCT } as React.CSSProperties) : undefined}>
       <noscript>
         <style>{NOREN_NOSCRIPT_CSS}</style>
       </noscript>

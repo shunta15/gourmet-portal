@@ -17,20 +17,22 @@ import {
 } from "@/lib/portal/noren/featureKinds";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_FEATURE_INDEX_REWRITE } from "@/lib/portal/noren/rewrites";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
+import LegacyFeatureIndexPage, { legacyMetadata } from "./LegacyFeatureIndexPage";
 
 // 特集記事のトップ（一覧）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /feature のまま。この内部のパス /gourmet/feature は外に出さない）。
 // 枠は app/gourmet/layout.tsx（暖簾の枠）。絞り込み（?region=・?theme=・?all=1）の結果は、今の app/feature/page.tsx と同じ中身・並び（まとめ記事の側）。
 // 一覧の上の方は 2 つの棚: 「特集記事」（店 1 軒の記事。FEATURED_SINGLE_IDS の 20 本）→「まとめ記事」（複数の店・場所の記事 = FEATURES。利用シーン別 → 街歩き・コース）。名称は lib/portal/noren/featureKinds.ts。
 // 公開スイッチ OFF のあいだは 404（レイアウトとここで assertPortalLive）。NOREN_FEATURE_INDEX_REWRITE=false のあいだも 404。
-export const metadata: Metadata = {
+const newMetadata: Metadata = {
   title: "特集 — 特集記事・まとめ記事を読む | マチノワ",
   description:
     "店を 1 軒ずつ紹介する特集記事と、複数の店や街の歩き方をまとめたまとめ記事。地域・テーマ・利用シーンから絞り込んで読めます。",
   alternates: { canonical: "/feature" },
 };
 
-export default async function Page({
+async function NewFeatureIndexPage({
   searchParams,
 }: {
   searchParams: Promise<{ region?: string; theme?: string; all?: string }>;
@@ -180,3 +182,7 @@ export default async function Page({
     </>
   );
 }
+
+// RELEASE_REST が false のあいだは、今の本番（main）の特集のトップ（LegacyFeatureIndexPage）を出す。true で 2 棚の新しい一覧（NewFeatureIndexPage）
+export const metadata: Metadata = RELEASE_REST ? newMetadata : legacyMetadata;
+export default RELEASE_REST ? NewFeatureIndexPage : LegacyFeatureIndexPage;

@@ -11,6 +11,8 @@
  *   本番では URL の ?dye= ?wrinkle= は効かず、色は NOREN_REAL_DYE に固定される。
  * - 店ページ・特集記事の布・提灯は、このスイッチでは変わらない（墨茶のまま）。揃えるスイッチは下の NOREN_REAL_INNER。
  */
+import { RELEASE_REST } from "./release";
+
 export type NorenRealDye = "ai" | "kon" | "sumi" | "kakishibu" | "enji";
 
 /** true で /gourmet の最初の画面がリアル版になる（公開するときはここを true にして再デプロイ） */
@@ -27,7 +29,7 @@ export const NOREN_REAL_DYE: NorenRealDye = "ai";
  * - false: 今までどおり（本番の暖簾。出力は変わらない）。元に戻すときは false にして再デプロイ。
  * - 実装: components/portal/noren-real/（clothInner.ts・lanternInner.ts・dye.css）。本番の暖簾の部品（cloth.ts・Lantern.tsx）は書き換えていない。
  */
-export const NOREN_REAL_INNER = true;
+export const NOREN_REAL_INNER = RELEASE_REST;
 
 /**
  * 布・竿・奥の写真の明るさの段階（1〜5）。見本 /proto-noren/real で段階を見比べて決める（URL の ?bright=1〜5。時刻は ?t=12:30 / ?t=21:30）。
@@ -97,11 +99,11 @@ export function parsePaper(q: string | null | undefined): NorenRealPaper | null 
  * - "half": 半分の丈（裾が画面の高さの約 50%。裾の下に、店の中の灯り・サイト名・一言・「店をさがす」への案内）
  * - "short": 短い丈（裾が約 30%。横に渡した短い暖簾。そのすぐ下に「店を、さがす。」の見出しと業種 7 個）
  * - "mid": 6 割の丈（裾が約 62%。字を少し上寄せ。裾の下はサイト名と一言だけ）
- * 既定は NOREN_REAL_SP_SHAPE。URL の ?sp=long|half|short|mid で上書きできるのは、本番（VERCEL_ENV が production）以外だけ
+ * 既定は NOREN_REAL_SP_SHAPE（2026-10-11 オーナー決定で "long"＝今まで。half・short・mid のコードと ?sp= は残してある）。URL の ?sp=long|half|short|mid で上書きできるのは、本番（VERCEL_ENV が production）以外だけ
  * （サーバー側で判定して allowSpUrl として渡す。app/gourmet/page.tsx）。元に戻すなら "long"。
  */
 export type NorenRealSpShape = "long" | "half" | "short" | "mid";
-export const NOREN_REAL_SP_SHAPE: NorenRealSpShape = "half";
+export const NOREN_REAL_SP_SHAPE: NorenRealSpShape = "long";
 export const SP_SHAPE_LIST: readonly NorenRealSpShape[] = ["long", "half", "short", "mid"];
 /** スマホ幅の暖簾の丈の、裾の位置（画面の高さに対する割合）。"long" は割合でなく今までの位置（画面の下から 50px） */
 export const SP_HEM_FRAC: Record<Exclude<NorenRealSpShape, "long">, number> = { half: 0.5, short: 0.3, mid: 0.62 };
