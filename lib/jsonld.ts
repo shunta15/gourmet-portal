@@ -156,7 +156,9 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
 
   // Google レビューを Aggregate Rating として埋め込む
   // 注意: 出典が明確で信頼できる場合のみ。捏造禁止
+  // DB の行に借りた値（googleShopOnly）は暖簾の店ページの表示専用。構造化データには出さない（今の本番と同じ）
   if (
+    !r.googleShopOnly &&
     typeof r.googleRating === "number" &&
     typeof r.googleReviewCount === "number" &&
     r.googleReviewCount > 0 &&

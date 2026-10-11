@@ -51,8 +51,14 @@ type DbRestaurantRow = {
   tags: string[] | null;
   highlights: string[] | null;
   body: string[] | null;
+  /** 今の DB には無い列。将来できたら DB の値を優先する */
+  google_rating?: number | null;
+  google_review_count?: number | null;
   published: boolean;
 };
+
+/** コード側の店（ID の完全一致だけで引く。店名では引かない） */
+const CODE_BY_ID = new Map<string, Restaurant>(RESTAURANTS.map((r) => [r.id, r]));
 
 /**
  * 店を返す前の仕上げ: 表示禁止の画像を除き（sanitizeRestaurant）、そのあと、使える写真が 1 枚も無い店にだけ
@@ -61,7 +67,15 @@ type DbRestaurantRow = {
  */
 const finish = (r: Restaurant): Restaurant => applyShopPhotos(sanitizeRestaurant(r));
 
-function rowToRestaurant(r: DbRestaurantRow): Restaurant {
+/**
+ * DB の行から店を作る。Google の評価（googleRating・googleReviewCount）は DB に列が無いので、
+ * 同じ ID のコード側の店（lib/data.ts）にあればそれを付ける（DB の行に値があれば DB を優先）。
+ * 新しく取りに行かない・何も書き込まない。付けた店には googleShopOnly を立て、暖簾の店ページ以外では使わせない。
+ */
+export function rowToRestaurant(r: DbRestaurantRow): Restaurant {
+  const code = CODE_BY_ID.get(r.id);
+  const googleRating = r.google_rating ?? code?.googleRating;
+  const googleReviewCount = r.google_review_count ?? code?.googleReviewCount;
   const restaurant = {
     id: r.id,
     name: r.name,
@@ -88,6 +102,9 @@ function rowToRestaurant(r: DbRestaurantRow): Restaurant {
     body: r.body ?? undefined,
     highlights: r.highlights ?? undefined,
     tags: r.tags ?? undefined,
+    ...(googleRating
+      ? { googleRating, googleReviewCount: googleReviewCount ?? undefined, googleShopOnly: true }
+      : {}),
   };
   return finish(restaurant as Restaurant);
 }
