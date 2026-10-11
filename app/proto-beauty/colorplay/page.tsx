@@ -5,13 +5,19 @@ import { IconArrow, IconPin, IconSearch, IconSparkle } from "@/components/portal
 import { loadFeatures, loadShops } from "@/lib/portal/bproto/colorplay/data";
 import { BASE, searchHref } from "@/lib/portal/bproto/colorplay/types";
 
+// 大きな英字の帯(ことばは、いまの画面にあるものだけ)
+const rep = (a: string[]) => Array.from({ length: 6 }, () => a).flat();
+const RIB_A = rep(["COLOR PLAY", "●", "HAIR", "●", "NAIL", "●", "BEAUTY", "●"]);
+const RIB_B = rep(["Machinowa Beauty", "●", "キレイで、あそぼう。", "●"]);
+const TILT = [-9, 6, -6, 9];
+
 export default async function Page() {
   const [features, shops] = await Promise.all([loadFeatures(), loadShops()]);
   const has = (k: string) => shops.some((s) => s.kind === k);
   return (
     <>
       <Header onColor />
-      <section className="cp-hero">
+      <section className="cp-hero" id="cp-hero" data-sp="o">
         <div className="cp-wrap cp-hero-in">
           <div className="cp-hero-copy">
             <h1 className="cp-h1">
@@ -31,10 +37,11 @@ export default async function Page() {
             <span>キレイで、<br />あそぼう。</span>
           </div>
         </div>
+        <span className="cp-hero-cut" aria-hidden="true" />
       </section>
 
       <div className="cp-wrap">
-        <nav className="cp-pills" aria-label="入口">
+        <nav className="cp-pills" id="cp-pills" data-sp="o" data-sp-src="cp-hero" aria-label="入口">
           <Link href={`${BASE}/search`} className="cp-pill p-pink" style={{ ["--p" as string]: 0 }}>
             <IconSearch size={30} />
             <span><b>お店を探す</b><small>サロンの種類・エリアから</small></span>
@@ -50,26 +57,37 @@ export default async function Page() {
         </nav>
       </div>
 
-      <section className="cp-panels" aria-label="種類から探す">
-        <Link href={has("hair") ? searchHref({ kind: "hair" }) : `${BASE}/search`} className="cp-panel pn-hair">
+      <nav className="cp-mini-pills" data-sp="o" data-sp-src="cp-pills" data-sp-show aria-label="入口(スクロール中に上に残る帯)">
+        <Link href={`${BASE}/search`} className="mp-pink"><IconSearch size={18} />お店を探す</Link>
+        <Link href={`${BASE}/search#area`} className="mp-blue"><IconPin size={18} />エリア</Link>
+        <Link href="#features" className="mp-black"><IconSparkle size={18} />特集</Link>
+      </nav>
+
+      <section className="cp-panels" data-sp="g" aria-label="種類から探す">
+        <Link href={has("hair") ? searchHref({ kind: "hair" }) : `${BASE}/search`} className="cp-panel pn-hair" data-sp="e p" style={{ ["--n" as string]: 0 }}>
           <span className="cp-panel-ph"><img src="/_portal/bproto/colorplay/ref-hair.jpg" alt="" loading="lazy" width={296} height={264} /></span>
           <span className="cp-panel-t"><b className="cp-cond">HAIR</b><span>で、<br />あそぶ。</span></span>
         </Link>
-        <Link href={has("nail") ? searchHref({ kind: "nail" }) : `${BASE}/search`} className="cp-panel pn-nail">
+        <Link href={has("nail") ? searchHref({ kind: "nail" }) : `${BASE}/search`} className="cp-panel pn-nail" data-sp="e p" style={{ ["--n" as string]: 1 }}>
           <span className="cp-panel-ph"><img src="/_portal/bproto/colorplay/own-nails.jpg" alt="" loading="lazy" width={380} height={282} /></span>
           <span className="cp-panel-t"><b className="cp-cond">NAIL</b><span>で、<br />ときめく。</span></span>
         </Link>
-        <Link href={has("esthetic") ? searchHref({ kind: "esthetic" }) : `${BASE}/search`} className="cp-panel pn-beauty">
+        <Link href={has("esthetic") ? searchHref({ kind: "esthetic" }) : `${BASE}/search`} className="cp-panel pn-beauty" data-sp="e p" style={{ ["--n" as string]: 2 }}>
           <span className="cp-panel-ph"><img src="/_portal/bproto/colorplay/ref-beauty.jpg" alt="" loading="lazy" width={178} height={378} /></span>
           <span className="cp-panel-t"><b className="cp-cond">BEAUTY</b><span>で、<br />わたしらしく。</span></span>
         </Link>
       </section>
 
-      <section className="cp-wrap cp-features" id="features">
+      <section className="cp-ribbons" data-sp="p" aria-hidden="true">
+        <div className="cp-rib rib-a"><div className="cp-rib-row cp-cond">{RIB_A.map((w, i) => (<span key={i}>{w}</span>))}</div></div>
+        <div className="cp-rib rib-b"><div className="cp-rib-row cp-cond">{RIB_B.map((w, i) => (<span key={i}>{w}</span>))}</div></div>
+      </section>
+
+      <section className="cp-wrap cp-features" id="features" data-sp="e">
         <h2 className="cp-h2 cp-rv">特集を、読む。<IconArrow size={22} /></h2>
         <ul className="cp-tiles">
           {features.slice(0, 4).map((f, i) => (
-            <li key={f.id} className="cp-rv" style={{ ["--i" as string]: i }}>
+            <li key={f.id} data-sp="e p" style={{ ["--i" as string]: i, ["--r" as string]: TILT[i % TILT.length] }}>
               <Link href={f.href} className="cp-tile">
                 {f.photo && (
                   // eslint-disable-next-line @next/next/no-img-element

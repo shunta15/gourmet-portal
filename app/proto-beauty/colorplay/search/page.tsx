@@ -49,9 +49,9 @@ export default async function Page({ searchParams }: { searchParams: Promise<SP>
   return (
     <>
       <Header />
-      <section className="cp-sband">
+      <section className="cp-sband" data-sp="o">
         <div className="cp-wrap cp-sband-in">
-          <div>
+          <div className="cp-sband-t">
             <h1 className="cp-h1s"><span className="cp-line" style={{ ["--l" as string]: 0 }}>お店を探す</span></h1>
             <p className="cp-sband-sub cp-line" style={{ ["--l" as string]: 1 }}>好きが見つかる、近くのビューティーサロン</p>
           </div>

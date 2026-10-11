@@ -85,9 +85,9 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
 @property --k2b{syntax:"<percentage>"; inherits:true; initial-value:67%}
 .cp-panels{--k1t:41%; --k1b:32%; --k2t:58%; --k2b:67%; transition:--k1t .5s cubic-bezier(.3,.9,.3,1), --k1b .5s cubic-bezier(.3,.9,.3,1), --k2t .5s cubic-bezier(.3,.9,.3,1), --k2b .5s cubic-bezier(.3,.9,.3,1); position:relative; height:340px; margin-top:30px; overflow:hidden}
 .cp-panel{position:absolute; inset:0; color:#111}
-.pn-hair{background:var(--sky); clip-path:polygon(0 0, var(--k1t) 0, var(--k1b) 100%, 0 100%)}
-.pn-nail{background:var(--pink-p); clip-path:polygon(var(--k1t) 0, var(--k2t) 0, var(--k2b) 100%, var(--k1b) 100%)}
-.pn-beauty{background:var(--red-d); color:#fff; clip-path:polygon(var(--k2t) 0, 100% 0, 100% 100%, var(--k2b) 100%)}
+.pn-hair{background:var(--sky); clip-path:polygon(0 0, calc(var(--k1t) - var(--sp-g,0)*7%) 0, calc(var(--k1b) + var(--sp-g,0)*7%) 100%, 0 100%)}
+.pn-nail{background:var(--pink-p); clip-path:polygon(calc(var(--k1t) - var(--sp-g,0)*7%) 0, calc(var(--k2t) + var(--sp-g,0)*7%) 0, calc(var(--k2b) - var(--sp-g,0)*5%) 100%, calc(var(--k1b) + var(--sp-g,0)*7%) 100%)}
+.pn-beauty{background:var(--red-d); color:#fff; clip-path:polygon(calc(var(--k2t) + var(--sp-g,0)*7%) 0, 100% 0, 100% 100%, calc(var(--k2b) - var(--sp-g,0)*5%) 100%)}
 .cp-panels:has(.pn-hair:hover){--k1t:47%; --k1b:38%}
 .cp-panels:has(.pn-nail:hover){--k1t:37%; --k1b:28%; --k2t:62%; --k2b:71%}
 .cp-panels:has(.pn-beauty:hover){--k2t:52%; --k2b:61%}
@@ -156,7 +156,7 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
 .cp-count span{margin-left:10px; font-size:14px; font-weight:500; color:var(--mut)}
 .cp-count b{font-size:30px; font-weight:900; margin:0 2px}
 .cp-list{display:grid; grid-template-columns:1fr; gap:22px}
-.cp-card{display:grid; grid-template-columns:38% 1fr; border:1px solid var(--line); border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.05); animation:cp-card .6s cubic-bezier(.34,1.4,.64,1) both; animation-delay:calc(var(--i)*60ms); transition:box-shadow .3s, transform .3s}
+.cp-card{display:grid; grid-template-columns:38% 1fr; border:1px solid var(--line); border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.05); transition:box-shadow .3s, transform .3s}
 .cp-card:hover{box-shadow:0 12px 30px rgba(0,0,0,.12); transform:translateY(-3px)}
 .cp-card-photo{position:relative; display:block; min-height:300px; background:#f1f2f6; overflow:hidden}
 .cp-card-photo img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s}
@@ -216,7 +216,7 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
 .cp-red{flex:1; display:flex; justify-content:center; align-items:center; gap:10px; min-height:64px; padding:0 30px; border-radius:999px; background:var(--red-btn); color:#fff !important; font-weight:900; font-size:20px; box-shadow:0 8px 20px rgba(226,9,30,.3); transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
 .cp-red:hover{transform:translateY(-3px) scale(1.02)}
 .cp-tabs{display:flex; gap:6px; border-bottom:1px solid var(--line); margin-top:8px; overflow-x:auto}
-.cp-tabs a{padding:18px 22px; font-size:16px; font-weight:700; white-space:nowrap; border-bottom:3px solid transparent}
+.cp-tabs a{padding:18px 22px; font-size:16px; font-weight:700; white-space:nowrap; border-bottom:3px solid transparent; transition:border-color .25s, color .25s}
 .cp-tabs a.is-on{border-color:var(--red-btn); color:var(--red-btn)}
 .cp-tabs a:hover{border-color:#111}
 .cp-photos{padding-top:28px}
@@ -229,7 +229,7 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
 .cp-about-t p{font-size:16px; line-height:1.95; color:#222}
 .cp-sec{margin-top:22px}
 .cp-sec h3{font-size:19px; font-weight:900; margin-bottom:6px; padding-left:12px; border-left:4px solid var(--hot)}
-.cp-bluecard{border-radius:26px; background:linear-gradient(135deg,#d9ecfb,#eef6fd); min-height:240px; display:grid; place-items:center; padding:24px; position:sticky; top:96px}
+.cp-bluecard{border-radius:26px; background:linear-gradient(135deg,#d9ecfb,#eef6fd); min-height:240px; display:grid; place-items:center; padding:24px; position:sticky; top:156px}
 .cp-bluecard .cp-script{font-size:clamp(38px,4.4vw,56px); color:#111; transform:rotate(-8deg)}
 .cp-access{padding-top:52px}
 .cp-access dl{margin:0; border-top:1px solid var(--line)}
@@ -271,6 +271,67 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
 @supports (animation-timeline: view()){
   .cp-rv{animation:cp-rv linear both; animation-timeline:view(); animation-range:entry 0% entry 38%}
 }
+
+/* スクロールに連動する動き(ScrollFx が --sp-p/e/o/g を入れる。入っていない時の既定値=落ち着いた見た目) */
+/* 全体: 上端の進み具合の線(赤→ピンク→水色) */
+.cp-prog{position:fixed; top:0; left:0; right:0; height:5px; z-index:120; pointer-events:none}
+.cp-prog i{display:block; height:100%; background:linear-gradient(90deg,var(--red) 0,var(--hot) 34%,var(--pink) 64%,var(--sky) 100%); clip-path:inset(0 calc((1 - var(--sp-page,0))*100%) 0 0 round 0 3px 3px 0)}
+/* トップの最初の画面: 人物と大見出しが違う速さで動き、白い斜めの面が赤を押し上げる */
+.cp-hero-photo{will-change:translate; translate:0 calc(var(--sp-o,0)*230px)}
+.cp-hero-copy{will-change:translate, opacity; translate:0 calc(var(--sp-o,0)*-150px); opacity:calc(1 - var(--sp-o,0)*1.5)}
+.cp-hero-sub{translate:0 calc(var(--sp-o,0)*-36px)}
+.cp-hero-tag{transform-origin:0 0; will-change:translate; translate:0 calc(var(--sp-o,0)*190px); rotate:calc(var(--sp-o,0)*34deg)}
+.cp-hero-cut{position:absolute; z-index:4; left:0; right:0; bottom:-1px; height:300px; background:#fff; pointer-events:none;
+  clip-path:polygon(0 100%, 100% 100%, 100% calc(100% - 3px - var(--sp-o,0)*320px))}
+/* 丸いボタンのトレー: 少し浮き上がり、3つが互い違いにずれる */
+.cp-pills{translate:0 calc(var(--sp-o,0)*-64px)}
+.cp-pill{translate:0 calc(var(--sp-o,0)*(var(--p) - 1)*22px)}
+/* 過ぎると上端に小さく残る帯 */
+.cp-mini-pills{position:fixed; z-index:60; top:12px; left:50%; display:flex; gap:6px; padding:6px; border-radius:999px; background:#fff; box-shadow:0 8px 26px rgba(0,0,0,.22);
+  visibility:hidden; opacity:min(1, calc(var(--sp-o,0)*3)); translate:-50% calc((1 - min(1, var(--sp-o,0)*3))*-90px)}
+.cp-mini-pills.is-in{visibility:visible}
+.cp-mini-pills a{display:inline-flex; align-items:center; gap:6px; min-height:44px; padding:0 16px; border-radius:999px; font-size:13px; font-weight:900; white-space:nowrap; transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.cp-mini-pills a:hover{transform:scale(1.06)}
+.mp-pink{background:var(--pink); color:#111}
+.mp-blue{background:var(--blue); color:#111}
+.mp-black{background:#0a0a0a; color:#fff}
+/* 3つの色面: 斜めの境目が開き、1枚ずつ横から文字と写真が滑り込み、大きな英字が色面の中を流れる */
+.cp-panel{--fe:clamp(0, calc(var(--sp-e,1)*1.7 - var(--n,0)*.35), 1)}
+.cp-panel-t{translate:calc((1 - var(--fe))*-110px + var(--sp-g,0)*var(--tx,0px)) 0; opacity:calc(.15 + var(--fe)*.85)}
+.cp-panel-t b{translate:calc(var(--sp-g,0)*var(--bx,0px)) 0}
+.pn-hair .cp-panel-t{--tx:20px; --bx:60px}
+.pn-nail .cp-panel-t{--tx:-40px; --bx:-40px}
+.pn-beauty .cp-panel-t{--tx:-30px; --bx:-46px}
+.cp-panel-ph{translate:calc((1 - var(--fe))*140px) 0}
+.cp-panel-ph img{scale:1.12; translate:0 calc((var(--sp-p,.5) - .5)*-24px)}
+/* 色の帯: 赤とピンクの斜めの帯が、スクロールの向きと量に合わせて逆向きに走る */
+.cp-ribbons{--rw:1400px; position:relative; height:clamp(190px,21vw,290px); margin-top:30px; overflow:clip}
+.cp-rib{position:absolute; left:-4%; right:-4%; height:clamp(76px,8.6vw,118px); display:flex; align-items:center; overflow:hidden}
+.rib-a{top:12%; rotate:-3deg; background:var(--red); color:#fff}
+.rib-b{top:46%; rotate:3deg; background:var(--pink); color:#111}
+.cp-rib-row{display:flex; align-items:center; gap:.5em; width:max-content; white-space:nowrap; font-family:var(--cp-cond),var(--cp-jp),sans-serif; font-size:clamp(46px,6.4vw,92px); line-height:1.1; letter-spacing:.02em; will-change:translate}
+.rib-a .cp-rib-row{translate:calc(var(--sp-p,.5)*var(--rw)*-1) 0}
+.rib-b .cp-rib-row{translate:calc((var(--sp-p,.5) - 1)*var(--rw)) 0}
+.cp-rib-row span{font-size:1em}
+/* 特集: 水色の面が斜めに走って広がり、タイルが傾きを戻しながら順に並ぶ。写真はタイルの中で遅れて動く */
+.cp-features{position:relative; isolation:isolate}
+.cp-features::before{content:""; position:absolute; z-index:-1; top:0; bottom:0; left:50%; width:100vw; translate:-50% 0; background:#e4f2fd;
+  clip-path:polygon(0 0, calc(var(--sp-e,1)*150% - 25%) 0, calc(var(--sp-e,1)*150% - 50%) 100%, 0 100%)}
+.cp-tiles li{--fe:clamp(0, calc(var(--sp-e,1)*1.6 - var(--i,0)*.22), 1); transform-origin:50% 90%; translate:0 calc((1 - var(--fe))*70px); rotate:calc((1 - var(--fe))*var(--r,0)*1deg); scale:calc(.9 + var(--fe)*.1); opacity:calc(.12 + var(--fe)*.88)}
+.cp-tile img{scale:1.16; translate:0 calc((var(--sp-p,.5) - .5)*-26px)}
+/* お店を探す: 見出し帯の人物と文字が違う速さで動く / カードは入る量に合わせて現れる */
+.cp-sband-t{translate:0 calc(var(--sp-o,0)*-60px); opacity:calc(1 - var(--sp-o,0)*1.2)}
+.cp-sband-photo{translate:0 calc(var(--sp-o,0)*90px)}
+.cp-sband-sc{rotate:calc(var(--sp-o,0)*-24deg); translate:calc(var(--sp-o,0)*-30px) calc(var(--sp-o,0)*40px)}
+.cp-card{--fe:clamp(0, calc(var(--sp-e,1)*1.25), 1); translate:0 calc((1 - var(--fe))*40px); scale:calc(.95 + var(--fe)*.05); opacity:calc(.3 + var(--fe)*.7)}
+.cp-card-photo img{scale:1.12; translate:0 calc((var(--sp-p,.5) - .5)*-20px)}
+/* 店のページ: 写真が遅れて動く / タブの帯が上に残り、見ている節のタブに下線が移り、上端に進み具合の線 */
+.cp-shop-photo img{scale:1.1; translate:0 calc((var(--sp-p,.5) - .5)*-28px)}
+.cp-shop-sc{rotate:calc((var(--sp-p,.5) - .5)*-18deg)}
+.cp-tabs{position:sticky; top:76px; z-index:40; background:#fff}
+.cp-tabs::after{content:""; position:absolute; left:0; top:0; width:100%; height:3px; background:linear-gradient(90deg,var(--red-btn),var(--pink),var(--sky)); transform-origin:0 50%; transform:scaleX(var(--sp-tp,0))}
+#top,#photos,#about,#access{scroll-margin-top:150px}
+.cp-mini{--fe:clamp(0, calc(var(--sp-e,1)*1.5 - var(--i,0)*.15), 1); translate:0 calc((1 - var(--fe))*44px); scale:calc(.94 + var(--fe)*.06); opacity:calc(.2 + var(--fe)*.8)}
 
 /* スマホ */
 @media (max-width:900px){
@@ -354,6 +415,26 @@ body:has(.cp-root), body:has(.cp-root) main{cursor:auto; background:#fff; paddin
   .cp-about{grid-template-columns:1fr; gap:24px}
   .cp-bluecard{position:static; min-height:160px}
   .cp-minis{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .cp-ribbons{--rw:700px; height:190px}
+  .cp-panels{--sp-g:0 !important}
+  .cp-panel-ph{translate:calc((1 - var(--fe))*90px) 0}
+  .cp-pills{translate:0 calc(var(--sp-o,0)*-36px)}
+  .cp-pill{translate:0 calc(var(--sp-o,0)*(var(--p) - 1)*10px)}
+  .cp-hero-photo{translate:0 calc(var(--sp-o,0)*170px)}
+  .cp-hero-cut{height:220px}
+  .cp-hero-cut{clip-path:polygon(0 100%, 100% 100%, 100% calc(100% - 3px - var(--sp-o,0)*240px))}
+  .cp-mini-pills{top:8px; gap:4px; padding:4px}
+  .cp-mini-pills a{padding:0 12px}
+  .cp-tabs{top:60px}
+  #top,#photos,#about,#access{scroll-margin-top:134px}
+  .cp-card-photo img{translate:0 calc((var(--sp-p,.5) - .5)*-16px)}
+}
+@media (prefers-reduced-motion: reduce){
+  .cp-prog,.cp-mini-pills,.cp-hero-cut,.cp-tabs::after{display:none !important}
+  .cp-root .cp-tile img,.cp-root .cp-card-photo img,.cp-root .cp-panel-ph img,.cp-root .cp-shop-photo img{scale:1 !important; translate:none !important}
+  .cp-root *{will-change:auto !important}
 }
 @media (prefers-reduced-motion: reduce){
   .cp-root *, .cp-root *::before, .cp-root *::after{animation:none !important; transition:none !important}

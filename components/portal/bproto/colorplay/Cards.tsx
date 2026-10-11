@@ -8,7 +8,7 @@ export const shopHref = (id: string) => `${BASE}/shop?id=${id}`;
 /** 一覧の店のカード: 左に大きな写真、右に店名・種類の札・住所・一言・小さな写真 */
 export function ShopCard({ s, i = 0 }: { s: CpShop; i?: number }) {
   return (
-    <article className="cp-card" style={{ ["--i" as string]: i }}>
+    <article className="cp-card" data-sp="e p" style={{ ["--i" as string]: i }}>
       <Link href={shopHref(s.id)} className="cp-card-photo" aria-label={`${s.name}のページへ`}>
         {s.main ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -43,7 +43,7 @@ export function ShopCard({ s, i = 0 }: { s: CpShop; i?: number }) {
 /** 店のページ下の小さなカード */
 export function MiniCard({ s, i = 0 }: { s: CpShop; i?: number }) {
   return (
-    <Link href={shopHref(s.id)} className="cp-mini" style={{ ["--i" as string]: i }}>
+    <Link href={shopHref(s.id)} className="cp-mini" data-sp="e" style={{ ["--i" as string]: i }}>
       <span className="cp-mini-ph">
         {s.main ? (
           // eslint-disable-next-line @next/next/no-img-element

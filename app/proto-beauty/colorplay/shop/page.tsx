@@ -32,7 +32,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<SP>
           <p className="cp-addr cp-addr-l"><IconPin size={18} /><span>{s.address}{d.headline && (<><br /><small>{d.headline}</small></>)}</span></p>
         </div>
         <div className="cp-shop-right">
-          <div className="cp-shop-photo">
+          <div className="cp-shop-photo" data-sp="p">
             {big && (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={big.src} alt={big.alt} width={1024} height={683} fetchPriority="high" />
