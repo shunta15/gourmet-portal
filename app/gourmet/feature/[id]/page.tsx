@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import FeaturePage from "@/components/portal/noren/FeaturePage";
+import FeatureSinglePage from "@/components/portal/noren/FeatureSinglePage";
 import {
   buildArticleJsonLd,
   buildFeatureBreadcrumbJsonLd,
@@ -13,10 +14,12 @@ import {
 } from "@/lib/db/features";
 import { FEATURES } from "@/lib/data";
 import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { getRestaurantById } from "@/lib/db/restaurants";
 import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
+import { NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
 
 // 特集記事ページの暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/<id> が next.config.ts の rewrites でここに来る
@@ -82,8 +85,13 @@ export default async function Page({
   const itemListJsonLd = buildFeatureItemListJsonLd(article);
   // この記事と対になる店舗ページ（記事由来の店 r299〜）。あれば「店舗情報（営業時間・地図）」を出す
   const storeId = ARTICLE_STORE_ID_BY_FEATURE[article.id];
+  // 店 1 軒の記事（POINT 01〜の視点の並び）は、店 1 軒用の枠（FeatureSinglePage）で出す。複数の店・場所の記事は今のまま（FeaturePage）。
+  // 切り替えは lib/portal/noren/featureSingle.ts の NOREN_FEATURE_SINGLE（false で全記事が FeaturePage に戻る）。
+  const single = NOREN_FEATURE_SINGLE && isSingleShopFeature(article);
+  // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
+  const shop = single && storeId ? await getRestaurantById(storeId) : null;
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
-  const fmap = await buildFmap(article);
+  const fmap = single ? null : await buildFmap(article);
   return (
     <>
       <script
@@ -98,14 +106,27 @@ export default async function Page({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      <FeaturePage
-        article={article}
-        features={FEATURES}
-        storeId={storeId}
-        fmap={fmap}
-        links={LIVE_LINKS}
-        href={(h) => h}
-      />
+      {single ? (
+        <FeatureSinglePage
+          article={article}
+          store={
+            shop
+              ? { id: shop.id, name: shop.name, cuisine: shop.cuisine, area: shop.area, nearest: shop.nearest, address: shop.address }
+              : null
+          }
+          links={LIVE_LINKS}
+          href={(h) => h}
+        />
+      ) : (
+        <FeaturePage
+          article={article}
+          features={FEATURES}
+          storeId={storeId}
+          fmap={fmap}
+          links={LIVE_LINKS}
+          href={(h) => h}
+        />
+      )}
     </>
   );
 }
