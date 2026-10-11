@@ -331,6 +331,7 @@ __GBP_PHOTO_BLOCK__
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=permanent_error --reason=禁止語含む
 6b. 脱テンプレ自己チェック: 今回追記した記事ブロックに対し、closing が「編集部が考える」で始まる/「初めてなら、まずは」「初訪問なら、まずは」「5つのポイントに分けて紹介」を含む、のいずれかに当てはまらないか確認。当てはまったら closing/lede を書き直してから次へ進む（公開前に必ず潰す）
+6c. 他サイト評価の自己チェック: 今回追記した記事ブロックに、ほかのサイト・サービスの点数・星・評価の高さ・口コミやレビューの件数（例: 食べログ3.5・Google4.3・口コミ200件・食べログで高評価）が入っていないか確認。入っていたら、その文／句を取り除いてから次へ進む（公開前に必ず潰す）
 7. commit & push:
      git add lib/teleapo-features.ts public/restaurants/teleapo-__SAFE_NAME__/
      git commit -m feat(teleapo)記事を自動生成
@@ -347,6 +348,7 @@ __GBP_PHOTO_BLOCK__
 - 場所推測禁止（必ず公式情報から）
 - 画像は実店舗のもののみ（Unsplash 等の汎用画像 NG）
 - 文中で半角ダブルクォートを使わない（日本語の「」を使う）
+- ほかのサイト・サービス（食べログ・Google・Retty・ホットペッパーなど）の点数・星・評価の高さ・口コミやレビューの件数を、文章（紹介文・本文・見どころ・特集記事）に書かない。（2026-10-11 オーナー指示）
 - author 固定 マチノワ編集部
 - **id は __SAFE_NAME__ のみ（スペース絶対禁止・URL がスペースで切れて 500 になるため）**
 - フォルダ名・画像パス・スプシ書き戻し URL もすべて __SAFE_NAME__ を使う
