@@ -107,7 +107,13 @@ function ResultsMap({
         <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={prefCounts} prefRegion={prefRegion} regionCounts={regionCounts} onPick={onPick} />
       </div>
       <p className="vMp-mapnote" aria-live="polite">
-        {nation
+        {mode === "d"
+          ? nation
+            ? `全 ${list.length} 軒。右の一覧から地域を選ぶと、その地域の店が地図に出ます。`
+            : pts.length === 0
+              ? "この条件の店には、地図に出せる位置の情報がありません。"
+              : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`
+          : nation
           ? mode === "a"
             ? `県のマスに店の数を出しています(全 ${list.length} 軒)。店のある県を押すと、その地域の店に絞り込みます。`
             : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
@@ -115,6 +121,7 @@ function ResultsMap({
             ? "この条件の店には、地図に出せる位置の情報がありません。"
             : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
       </p>
+      {mode === "d" && <p className="vMp-illust-warn">この地図は雰囲気を見るための絵です。店の位置は、おおよその関係で置いています。</p>}
     </div>
   );
 }
@@ -163,7 +170,7 @@ export default function NorenSearch({
   const spTab = sp.get("tab");
   // 地図の見た目: 既定は a（絵図）。?map=b（線だけの地図）は、本番でないときだけ
   const mapParam = sp.get("map");
-  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c") ? mapParam : "a";
+  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d") ? mapParam : "a";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);
@@ -255,7 +262,7 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
-    if (allowMapUrl && (mapParam === "b" || mapParam === "c")) params.set("map", mapParam);
+    if (allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d")) params.set("map", mapParam);
     if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };

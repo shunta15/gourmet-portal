@@ -267,6 +267,11 @@
 .vMp-mk--tree{pointer-events:none;opacity:.9}
 .vMp-popw--c .leaflet-popup-content-wrapper{background:#fff;color:#2a2a24}
 .vMp-leaf--c .vMp-pop b{color:#25406b}
+/* d「イラスト」: 手描きの地図の絵を敷く。ピン・札・吹き出しは c と同じ（上の c の規則） */
+.vMp-leaf--d{background:#dfe6d2}
+.vMp-leaf--d .leaflet-control-attribution{display:none}
+.vMp-illust-hint{position:absolute;left:50%;bottom:18px;z-index:500;transform:translateX(-50%);margin:0;padding:10px 18px;max-width:calc(100% - 32px);background:rgba(255,255,255,.88);color:#2a2a24;font:500 14px/1.6 var(--f-min);letter-spacing:.08em;text-align:center;box-shadow:0 4px 14px rgba(30,40,30,.25);pointer-events:none}
+.vMp-illust-warn{margin-top:4px;font:400 12px/1.6 var(--f-sans);letter-spacing:.04em;color:var(--kinari-3)}
 @media (pointer:coarse){
   /* スマホ・タブレット（タッチ）では、重くならないよう線の揺らし（SVG フィルター）はやめて、色のフィルターだけ */
   .vMp-leaf--c .leaflet-tile-pane{filter:saturate(.55) contrast(.86) brightness(1.07) sepia(.22) hue-rotate(-6deg)}
