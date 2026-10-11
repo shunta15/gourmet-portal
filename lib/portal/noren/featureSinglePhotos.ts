@@ -23,11 +23,6 @@ export type FeatureSinglePhotoEntry = {
 export type FeatureSinglePhotos = Record<string, FeatureSinglePhotoEntry>;
 
 export const FEATURE_SINGLE_PHOTOS: FeatureSinglePhotos = {
-  // GOGUMI.（r405 の店）: 視点 1（看板コーヒー）の写真が主役と同じ絵（hero.jpg）だった。同じ店の point1.jpg（抹茶のドリンク）に替える。
-  //   ※ 本文はコーヒーの話で、写真は抹茶のドリンク（同じ店の飲み物。直接は合わない）。
-  "GOGUMI.": {
-    points: { "1": ["/restaurants/teleapo-GOGUMI./point1.jpg"] },
-  },
   // 赤れんが（r477 の店）: 視点 1（手ごねハンバーグのこだわり）は、本文と合う看板の写真（hero.jpg）を持つが、主役も同じ写真だった。
   //   主役を、同じ店の point2.jpg（入口まわり・店内）に替え、視点 1 はそのまま看板の写真にする（視点の本文と写真は合ったまま）。
   "赤れんが": {
