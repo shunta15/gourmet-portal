@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 export default async function Page() {
   assertPortalLive();
   // 最初の画面だけ、リアル版の暖簾に替えられる（lib/portal/noren/realTop.ts のスイッチ。false なら今までの暖簾）。色は固定で、URL では替わらない
-  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} />;
+  // スマホ幅の暖簾の丈の案は、URL の ?sp= で替えられる（見比べ用）。本番（VERCEL_ENV が production）では URL の指定を無視する（サーバーで判定して渡す）
+  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={process.env.VERCEL_ENV !== "production"} />;
   return <GourmetNorenHome links={LIVE_LINKS} />;
 }

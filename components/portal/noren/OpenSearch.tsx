@@ -6,9 +6,33 @@ import "./opensearch.css";
 /**
  * グルメの入口（/gourmet）の「店をさがす」の節。暖簾が開ききった直後、「七つの章」の入口の前に置く。
  * リアル版（components/portal/noren-real/GourmetNorenHomeReal.tsx）と、スイッチが false のときの components/portal/pages/gourmet-noren-home.tsx の両方が、この 1 つの部品を使う。
- * 中身: 見出しと 1 行の説明（数はデータから）→ 検索の箱（キーワード・エリア・業種）→ 業種からさがす（全分類の札と件数）→ 利用シーンからさがす（12 の札）。
+ * 中身（上から）: 見出しと 1 行の説明（数はデータから）→ 業種からさがす（7 つの大分類。漢字 1 字・名称・件数の大きな札。押すと /search?cuisine=…）
+ *   → 検索の箱（キーワード・エリア・業種）→ 利用シーンからさがす（12 の札）。
  * 件数は呼び出し側のサーバーが店のデータから数えて渡す（lib/portal/noren/openSearch.ts）。星・点数・口コミの件数・順位は出さない。
  */
+export function GenreCards({ cuisines, className = "" }: { cuisines: OpenSearchData["cuisines"]; className?: string }) {
+  return (
+    <ul className={`vOs-genre ${className}`.trim()} aria-label="業種の分類">
+      {cuisines.map((c) => (
+        <li key={c.key}>
+          <Link href={`/search?cuisine=${encodeURIComponent(c.label)}`} className="vOs-g" data-cursor="GO">
+            <b className="vOs-g-k" aria-hidden="true">
+              {c.kanji}
+            </b>
+            <span className="vOs-g-t">
+              <span className="vOs-g-n">{c.label}</span>
+              <i className="vOs-g-c">
+                {c.count}
+                <small>軒</small>
+              </i>
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function OpenSearch({ data }: { data: OpenSearchData }) {
   return (
     <section className="vOs" id="open-search" aria-labelledby="vOs-h">
@@ -23,29 +47,15 @@ export default function OpenSearch({ data }: { data: OpenSearchData }) {
           <p className="vOs-lead">全 {data.total} 軒を、言葉・エリア・業種・利用シーンからさがせます。</p>
         </header>
 
-        <OpenSearchForm regions={data.regions} cuisines={data.cuisines} total={data.total} />
-
-        <div className="vOs-blk vN-rv" id="open-cuisine">
-          <div className="vOs-blk-h">
-            <h3 className="vOs-h3">
-              業種から<em>さがす。</em>
-            </h3>
-            <p className="vOs-note">和・洋・中・麺・肉・酒・茶、七つの章と同じ分類です。1 軒が複数の分類に入ることがあります。</p>
-          </div>
-          <ul className="vOs-chips" aria-label="業種の分類">
-            {data.cuisines.map((c) => (
-              <li key={c.label}>
-                <Link href={`/search?cuisine=${encodeURIComponent(c.label)}`} className="vOs-chip" data-cursor="GO">
-                  <span>{c.label}</span>
-                  <i>
-                    {c.count}
-                    <small>軒</small>
-                  </i>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="vOs-blk vOs-blk--genre vN-rv" id="open-cuisine">
+          <h3 className="vOs-h3">
+            業種から<em>さがす。</em>
+          </h3>
+          <GenreCards cuisines={data.cuisines} />
+          <p className="vOs-note">和・洋・中・麺・肉・酒・茶、七つの章と同じ分類です。1 軒が複数の分類に入ることがあります。</p>
         </div>
+
+        <OpenSearchForm regions={data.regions} cuisines={data.cuisines} total={data.total} />
 
         <div className="vOs-blk vN-rv" id="open-scene">
           <div className="vOs-blk-h">

@@ -81,3 +81,9 @@ export const FOOT_NOREN = [
   { key: "sake", kanji: "酒", ja: "居酒屋・バー" },
   { key: "cha", kanji: "茶", ja: "カフェ・甘味" },
 ] as const;
+
+/**
+ * 入口のいちばん上の暖簾（最初の画面。本物の暖簾 NorenHeroReal と、WebGL が使えないときの暖簾 NorenHero）に出す章（この順）。
+ * 章そのものは 7 つ（lib/cuisineBroad.ts）のまま。最初の暖簾だけ 5 枚（洋・中を除く）。押すとその章（#ch-<key>）へ行く。
+ */
+export const NOREN_HERO_KEYS = ["wa", "men", "niku", "sake", "cha"] as const;

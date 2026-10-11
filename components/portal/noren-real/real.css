@@ -80,3 +80,37 @@
 .vN:has(.vR-hero) :is(.vN-clock-note,.vN-ch-count small,.vN-nb-c,.vN-tan-tag){font-size:12px}
 .vN:has(.vR-hero) .vN-col-st{font-size:clamp(12px,.95vw,14px)}
 @media (max-width:640px){.vN:has(.vR-hero) :is(.vN-ch-cur-go,.vN-lan){font-size:12px}}
+
+/* ====================================================================
+   スマホ幅（700px 未満）だけの、暖簾の丈の案（lib/portal/noren/realTop.ts の NOREN_REAL_SP_SHAPE。data-sp = long | half | short | mid）。
+   裾の位置は NorenHeroReal.tsx の layout() が --hem に入れる（ここの値は、スクリプトが動く前の最初の描画のための初期値）。PC（700px 以上）は何も変わらない。
+   裾の下の要素（.vR-sp-under）は、PC と long では出さない。暖簾が上がるにつれて薄れる。
+   ==================================================================== */
+.vR-sp-under{display:none}
+@media (max-width:699px){
+  .vR-hero[data-sp="half"] .vR-stage{--hem:50svh}
+  .vR-hero[data-sp="short"] .vR-stage{--hem:30svh}
+  .vR-hero[data-sp="mid"] .vR-stage{--hem:62svh}
+  /* half: 裾の下に、店の中の灯り（提灯）を見せる */
+  .vR-hero[data-sp="half"] .vR-lan{opacity:clamp(0,calc(1 - var(--open) * 1.5),1)}
+  .vR-sp-under{display:flex;position:absolute;left:0;right:0;z-index:4;flex-direction:column;align-items:center;text-align:center;padding:0 var(--gx);
+    opacity:clamp(0,calc(1 - var(--open) * 4),1)}
+  .vR-hero[data-up="1"] .vR-sp-under{pointer-events:none;visibility:hidden}
+  .vR-hero[data-sp="long"] .vR-sp-under{display:none}
+  .vR-sp-under--half{bottom:54px;gap:8px}
+  .vR-sp-under--mid{top:calc(var(--hem) + 40px);gap:10px}
+  .vR-sp-under--short{top:calc(var(--hem) + 24px);gap:12px;align-items:stretch;text-align:left}
+  .vR-sp-name{font:700 clamp(24px,7vw,30px)/1.3 var(--f-min);letter-spacing:.14em;color:var(--kinari);text-shadow:0 0 16px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8)}
+  .vR-sp-name span{display:block;margin-top:4px;font:italic 400 12px/1.4 var(--f-lat);letter-spacing:.24em;color:var(--kinari-2)}
+  .vR-sp-lead{font:400 13px/1.9 var(--f-sans);letter-spacing:.1em;color:var(--kinari-2);text-shadow:0 0 12px rgba(0,0,0,.95),0 0 3px rgba(0,0,0,.9)}
+  .vR-sp-go{display:inline-flex;align-items:center;min-height:44px;gap:.5em;padding:0 6px;color:var(--shu-hi);border-bottom:1px solid currentColor;font:700 15px/1 var(--f-min);letter-spacing:.2em}
+  .vR-sp-h{font:700 clamp(26px,7.4vw,32px)/1.3 var(--f-min);letter-spacing:.06em;color:var(--kinari);text-shadow:0 0 14px rgba(0,0,0,.9)}
+  .vR-sp-h em{color:var(--shu-hi)}
+  .vR-sp-genre{gap:6px}
+  .vR-sp-genre .vOs-g{min-height:60px;padding:4px 10px;gap:8px;background:color-mix(in srgb,var(--sumi) 70%,transparent);backdrop-filter:blur(2px)}
+  .vR-sp-genre .vOs-g-k{font-size:32px;width:1.1em;text-align:center}
+  .vR-sp-genre .vOs-g-n{font-size:14px;letter-spacing:0;white-space:nowrap}
+  .vR-sp-genre .vOs-g-c{font-size:16px}
+  .vR-hero[data-sp="short"] .vN-meta,.vR-hero[data-sp="mid"] .vN-meta,.vR-hero[data-sp="half"] .vN-meta{display:none}
+}
+@media (prefers-reduced-motion:reduce){.vR-sp-under{transition:none}}

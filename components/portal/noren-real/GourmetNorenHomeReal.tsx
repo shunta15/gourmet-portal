@@ -11,7 +11,8 @@ import OpenSearch from "@/components/portal/noren/OpenSearch";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import "../noren/top.css";
 import "./real.css";
-import type { NorenLinks } from "@/lib/portal/noren/nav";
+import { NOREN_HERO_KEYS, type NorenLinks } from "@/lib/portal/noren/nav";
+import type { NorenRealSpShape } from "@/lib/portal/noren/realTop";
 import type { DyeKind } from "./clothReal";
 
 /**
@@ -32,12 +33,27 @@ const PRINCIPLES = [
   { k: "口コミを転載しない", en: "No reposted reviews", body: "口コミの文章は転載しません。評価の数字は、出典（Google）を明記したものだけを載せます。" },
 ];
 
-export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrlOverride = false }: { links: NorenLinks; dye?: DyeKind; allowUrlOverride?: boolean }) {
+export default async function GourmetNorenHomeReal({
+  links,
+  dye = "ai",
+  allowUrlOverride = false,
+  spShape,
+  allowSpUrl = false,
+}: {
+  links: NorenLinks;
+  dye?: DyeKind;
+  allowUrlOverride?: boolean;
+  /** スマホ幅の暖簾の丈の案（省略すると realTop.ts の NOREN_REAL_SP_SHAPE） */
+  spShape?: NorenRealSpShape;
+  /** URL の ?sp= で丈の案を上書きできるか（本番でないときだけ true。app/gourmet/page.tsx が VERCEL_ENV で判定して渡す） */
+  allowSpUrl?: boolean;
+}) {
   const restaurants = await getAllRestaurants();
   const byId = new Map(restaurants.map((r) => [r.id, r]));
   const regionName = (k: string) => REGIONS[k as RegionKey]?.name ?? k;
 
   const chapters = buildChapters(restaurants, regionName);
+  const openSearchData = buildOpenSearchData(restaurants);
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
@@ -64,17 +80,21 @@ export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrl
   return (
     <>
       {/* 1 暖簾（リアル版） */}
+      {/* 最初の暖簾は 5 枚（和・麺・肉・酒・茶。lib/portal/noren/nav.ts の NOREN_HERO_KEYS）。章そのものは 7 つのまま */}
       <NorenHeroReal
         photo={heroPhoto}
         count={restaurants.length}
         areas={regions.length}
-        chapters={chapters.map((c) => ({ key: c.key, kanji: c.kanji, ja: c.ja, en: c.en }))}
+        chapters={NOREN_HERO_KEYS.map((k) => chapters.find((c) => c.key === k)!).map((c) => ({ key: c.key, kanji: c.kanji, ja: c.ja, en: c.en }))}
         defaultDye={dye}
         allowUrlOverride={allowUrlOverride}
+        spShape={spShape}
+        allowSpUrl={allowSpUrl}
+        genres={openSearchData.cuisines}
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      <OpenSearch data={buildOpenSearchData(restaurants)} />
+      <OpenSearch data={openSearchData} />
 
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">

@@ -2,10 +2,13 @@
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
 import Lantern from "./Lantern";
+import { NOREN_HERO_KEYS } from "@/lib/portal/noren/nav";
+import { BROAD_GROUPS } from "@/lib/cuisineBroad";
 
 type Props = { photo: string; count: number; areas: number };
 
-const CHARS7 = ["和", "洋", "中", "麺", "肉", "酒", "茶"];
+// 最初の暖簾の字（lib/portal/noren/nav.ts の NOREN_HERO_KEYS = 和・麺・肉・酒・茶）。スマホ幅は 3 枚
+const CHARS5 = NOREN_HERO_KEYS.map((k) => BROAD_GROUPS.find((g) => g.key === k)!.kanji);
 const CHARS3 = ["和", "麺", "酒"];
 
 function Chars({ text, base = 0 }: { text: string; base?: number }) {
@@ -25,7 +28,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const [mode, setMode] = useState<"init" | "gl" | "css">("init");
-  const [nPanels, setNPanels] = useState(7);
+  const [nPanels, setNPanels] = useState(CHARS5.length);
 
   useEffect(() => {
     const w = wrap.current!;
@@ -58,14 +61,14 @@ export default function NorenHero({ photo, count, areas }: Props) {
       const mobile = cssW < 640;
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       cloth?.resize({ cssW, cssH, dpr, rodY: mobile ? 62 : 78, hemY: cssH - (mobile ? 46 : 38), gap: mobile ? 5 : 7 });
-      const n = mobile ? 3 : 7;
+      const n = mobile ? 3 : CHARS5.length;
       const gap = mobile ? 5 : 7;
       const aspect = (cssH - (mobile ? 46 : 38) - (mobile ? 62 : 78)) / ((cssW - (n - 1) * gap) / n);
       if (n !== lastN || Math.abs(aspect / lastAspect - 1) > 0.06) {
         if (n !== lastN) setNPanels(n);
         lastN = n;
         lastAspect = aspect;
-        cloth?.setChars(n === 3 ? CHARS3 : CHARS7, family, aspect);
+        cloth?.setChars(n === 3 ? CHARS3 : CHARS5, family, aspect);
       }
       dirty = true;
     };
@@ -131,7 +134,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
       }
       family = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || "serif";
       try {
-        await document.fonts.load(`400 100px ${family}`, "和洋中麺肉酒茶輪");
+        await document.fonts.load(`400 100px ${family}`, `${CHARS5.join("")}輪`);
         await document.fonts.ready;
       } catch {}
       if (!alive) return;
@@ -156,7 +159,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
     };
   }, []);
 
-  const chars = nPanels === 3 ? CHARS3 : CHARS7;
+  const chars = nPanels === 3 ? CHARS3 : CHARS5;
 
   return (
     <section ref={wrap} className="vN-hero" id="top" data-mode={mode} aria-label="暖簾をくぐる">

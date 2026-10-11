@@ -90,3 +90,24 @@ export const PAPER_LIST: { key: NorenRealPaper; label: string; swatch: string }[
 export function parsePaper(q: string | null | undefined): NorenRealPaper | null {
   return PAPER_LIST.find((g) => g.key === q)?.key ?? null;
 }
+
+/**
+ * スマホ幅（700px 未満）だけの、暖簾の丈（裾の位置）。PC（700px 以上）は変わらない。
+ * - "long": 今まで（裾が画面の下近く。1 枚が細長い帯になる）
+ * - "half": 半分の丈（裾が画面の高さの約 50%。裾の下に、店の中の灯り・サイト名・一言・「店をさがす」への案内）
+ * - "short": 短い丈（裾が約 30%。横に渡した短い暖簾。そのすぐ下に「店を、さがす。」の見出しと業種 7 個）
+ * - "mid": 6 割の丈（裾が約 62%。字を少し上寄せ。裾の下はサイト名と一言だけ）
+ * 既定は NOREN_REAL_SP_SHAPE。URL の ?sp=long|half|short|mid で上書きできるのは、本番（VERCEL_ENV が production）以外だけ
+ * （サーバー側で判定して allowSpUrl として渡す。app/gourmet/page.tsx）。元に戻すなら "long"。
+ */
+export type NorenRealSpShape = "long" | "half" | "short" | "mid";
+export const NOREN_REAL_SP_SHAPE: NorenRealSpShape = "half";
+export const SP_SHAPE_LIST: readonly NorenRealSpShape[] = ["long", "half", "short", "mid"];
+/** スマホ幅の暖簾の丈の、裾の位置（画面の高さに対する割合）。"long" は割合でなく今までの位置（画面の下から 50px） */
+export const SP_HEM_FRAC: Record<Exclude<NorenRealSpShape, "long">, number> = { half: 0.5, short: 0.3, mid: 0.62 };
+/** この幅（px）未満を「スマホ幅」とする */
+export const SP_MAX_WIDTH = 700;
+/** ?sp= の文字列を丈の案に直す。合わなければ null */
+export function parseSpShape(q: string | null | undefined): NorenRealSpShape | null {
+  return SP_SHAPE_LIST.find((k) => k === q) ?? null;
+}

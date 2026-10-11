@@ -6,13 +6,14 @@
  * - シーンは lib/scenes.ts の 12 種（/scene/<slug>）
  */
 import { REGIONS, type RegionKey } from "@/lib/regions";
-import { countByBroad } from "@/lib/cuisineBroad";
+import { BROAD_GROUPS, countByBroad } from "@/lib/cuisineBroad";
 import { SCENES } from "@/lib/scenes";
 
 export type OpenSearchData = {
   total: number;
   regions: { key: string; name: string; count: number }[];
-  cuisines: { label: string; count: number }[];
+  /** 業種の 7 つの大分類（暖簾の章と同じ並び）。kanji は暖簾の一文字、key は章の key */
+  cuisines: { key: string; kanji: string; label: string; count: number }[];
   scenes: { slug: string; name: string }[];
 };
 
@@ -27,7 +28,7 @@ export function buildOpenSearchData(restaurants: readonly { id: string; region: 
   return {
     total: restaurants.length,
     regions,
-    cuisines: countByBroad(restaurants),
+    cuisines: countByBroad(restaurants).map((c, i) => ({ key: BROAD_GROUPS[i].key, kanji: BROAD_GROUPS[i].kanji, label: c.label, count: c.count })),
     scenes: SCENES.map((s) => ({ slug: s.slug, name: s.name })),
   };
 }

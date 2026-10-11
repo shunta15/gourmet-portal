@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { createClothReal, DYE_EVENT, parseDye, type ClothReal, type DyeKind } from "./clothReal";
 import { createLanternReal, type LanternReal } from "./lanternReal";
 import Lantern from "../noren/Lantern";
-import { BRIGHT_EVENT, BRIGHT_MUL, effBright, NOREN_REAL_BRIGHT, parseBright } from "@/lib/portal/noren/realTop";
+import Link from "next/link";
+import { BRIGHT_EVENT, BRIGHT_MUL, effBright, NOREN_REAL_BRIGHT, NOREN_REAL_SP_SHAPE, parseBright, parseSpShape, SP_HEM_FRAC, SP_MAX_WIDTH, type NorenRealSpShape } from "@/lib/portal/noren/realTop";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
 export type RealChapter = { key: string; kanji: string; ja: string; en: string };
@@ -16,6 +17,12 @@ type Props = {
   defaultDye?: DyeKind;
   /** URL の ?dye= ?wrinkle= ?bright= ?font= ?dpr= と、色・明るさの切り替えイベントを受け付けるか。見本のルート（/proto-noren/real）だけ true。本番は false（既定） */
   allowUrlOverride?: boolean;
+  /** スマホ幅（700px 未満）の暖簾の丈の案（既定は realTop.ts の NOREN_REAL_SP_SHAPE） */
+  spShape?: NorenRealSpShape;
+  /** URL の ?sp=long|half|short|mid でスマホ幅の丈の案を上書きできるか。サーバーで「本番（VERCEL_ENV が production）でないとき」だけ true にして渡す */
+  allowSpUrl?: boolean;
+  /** 業種の 7 つの大分類（短い丈の案 "short" で、暖簾のすぐ下に出す札。lib/portal/noren/openSearch.ts の cuisines） */
+  genres?: { key: string; kanji: string; label: string; count: number }[];
 };
 
 const clamp = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
@@ -47,7 +54,7 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
  * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?bright=1〜5（明るさの段階。既定は realTop.ts の NOREN_REAL_BRIGHT。時刻は ?t=12:30 / ?t=21:30）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
-export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false }: Props) {
+export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false, spShape = NOREN_REAL_SP_SHAPE, allowSpUrl = false, genres = [] }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -58,6 +65,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
   const selTimer = useRef(0);
   const [mode, setMode] = useState<"init" | "gl" | "css">("init");
   const [dye, setDye] = useState<DyeKind>(defaultDye);
+  // スマホ幅（700px 未満）の丈の案。読み込み直後は既定、?sp= があれば（許されているときだけ）上書き
+  const [sp, setSp] = useState<NorenRealSpShape>(spShape);
   // 提灯: WebGL で描けないときは、本番の CSS の提灯を代わりに出す
   const [lanCss, setLanCss] = useState(false);
 
@@ -73,6 +82,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const wq = allow ? parseFloat(qs.get("wrinkle") ?? "") : NaN;
     const wrinkleQ = Number.isFinite(wq) ? wq : 0.2;
     setDye(dyeQ);
+    const spNow: NorenRealSpShape = (allowSpUrl ? parseSpShape(qs.get("sp")) : null) ?? spShape;
+    setSp(spNow);
     // 明るさ（布・竿はシェーダーへ、奥の写真は CSS の --real-bright へ。既定は realTop.ts の値。?bright= は見本だけ）
     let bmul = BRIGHT_MUL[(allow ? parseBright(qs.get("bright")) : null) ?? NOREN_REAL_BRIGHT];
     const fontQ = allow && (FONT_KEYS as string[]).includes(qs.get("font") ?? "") ? (qs.get("font") as FontKey) : DEFAULT_FONT;
@@ -82,6 +93,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     let lans: LanternReal | null = null;
     let lastLan = 0;
     let lanDirty = true;
+    let lanShown = false;
     let lanLayout: { cssW: number; cssH: number; dpr: number; lans: { cx: number; top: number; F: number }[]; pivotY: number } | null = null;
     let raf = 0;
     let alive = true;
@@ -116,17 +128,24 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const layout = () => {
       const cssW = st.clientWidth, cssH = st.clientHeight;
       const mobile = cssW < 640;
+      // スマホ幅（700px 未満）だけ、丈の案で裾の位置を変える（"long" と PC は今までどおり）
+      const shaped = cssW < SP_MAX_WIDTH && spNow !== "long";
       const rodY = mobile ? 70 : 80;
-      const hemY = cssH - (mobile ? 50 : 40);
+      const hemY = shaped ? Math.round(cssH * SP_HEM_FRAC[spNow as Exclude<NorenRealSpShape, "long">]) : cssH - (mobile ? 50 : 40);
       const rodR = mobile ? 8 : 11;
       const bandH = (hemY - rodY) * (mobile ? 0.17 : 0.19);
       lay = { cssW, cssH, rodY, hemY, rodR, bandH };
       const want = Number.isFinite(dprQ) && dprQ > 0 ? dprQ : Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(3.4e6 / Math.max(1, cssW * cssH)));
       const dpr = Math.max(0.5, want * quality);
+      // 字の位置・大きさ（隣の字とくっつかないよう、どれも 1 より小さく）: half は布の中ほど、short は布に合わせて小さく、mid は少し上寄せで half より大きめ
+      const gl2 = !shaped ? [0.4, 1] : spNow === "half" ? [0.5, 0.88] : spNow === "short" ? [0.5, 0.8] : [0.34, 0.96];
+      cloth?.setGlyphLayout(gl2[0], gl2[1]);
       cloth?.resize({ cssW, cssH, dpr, rodY, hemY, rodR, bandH });
       // 提灯: 本番と同じ「奥の左右の上」（上から 76px・中心から 30vw）。紐は舞台の上から垂れ、竿の後ろを通る。
       const F = cssW <= 640 ? 12 : Math.min(22, Math.max(12, cssW * 0.0155));
-      const lanTop = Math.round(rodY + rodR + 16);
+      // 提灯: ふつうは竿の下（暖簾が上がると見える）。half の案では、裾の下に吊るして「店の中の灯り」として見せる
+      const lanTop = shaped && spNow === "half" ? Math.round(hemY + 20) : Math.round(rodY + rodR + 16);
+      lanShown = shaped && spNow === "half";
       const off = cssW * 0.30;
       const ldpr = Math.max(0.75, Math.min(want, 1.75) * quality);
       lanLayout = { cssW, cssH, dpr: ldpr, lans: [{ cx: cssW / 2 - off, top: lanTop, F }, { cx: cssW / 2 + off, top: lanTop, F }], pivotY: lanTop - Math.min(cssH * 0.4, 360) };
@@ -189,7 +208,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       }
       const r = w.getBoundingClientRect();
       inView = r.bottom > -50 && r.top < window.innerHeight + 50;
-      if (inView && lans && open > 0.2 && (reduce ? lanDirty : now - lastLan > 30)) {
+      if (inView && lans && (open > 0.2 || lanShown) && (reduce ? lanDirty : now - lastLan > 30)) {
         lastLan = now;
         lanDirty = false;
         lans.render({ time: reduce ? 3.0 : t, lamp });
@@ -365,7 +384,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
   };
 
   return (
-    <section ref={wrap} className={`vR-hero ${FONT_CLASSES}`} id="top" data-mode={mode} data-dye={dye} aria-label="暖簾をくぐる">
+    <section ref={wrap} className={`vR-hero ${FONT_CLASSES}`} id="top" data-mode={mode} data-dye={dye} data-sp={sp} aria-label="暖簾をくぐる">
       <noscript>
         <style>{NOSCRIPT_CSS}</style>
       </noscript>
@@ -415,7 +434,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
         <canvas ref={canvas} className="vR-cloth" aria-hidden="true" />
         <div className="vR-vig" aria-hidden="true" />
 
-        <nav ref={doors} className="vR-doors" aria-label="グルメの種類（和・洋・中・麺・肉・酒・茶）" style={{ ["--n" as string]: chapters.length }}>
+        <nav ref={doors} className="vR-doors" aria-label={`グルメの種類（${chapters.map((c) => c.kanji).join("・")}）`} style={{ ["--n" as string]: chapters.length }}>
           {chapters.map((c, i) => (
             <a key={c.key} href={`#ch-${c.key}`} className="vR-door" data-i={i} data-cursor="ENTER" onClick={(e) => go(e, i)}>
               <span className="vN-vh">{c.kanji}　{c.ja}</span>
@@ -426,6 +445,45 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
             </a>
           ))}
         </nav>
+
+        {/* スマホ幅（700px 未満）だけ、裾の下に出す（丈の案 half・short・mid。long と PC では出ない）。暖簾が上がると薄れる */}
+        {sp === "short" ? (
+          <div className="vR-sp-under vR-sp-under--short">
+            <p className="vR-sp-h">
+              店を、<em>さがす。</em>
+            </p>
+            <ul className="vOs-genre vR-sp-genre" aria-label="業種の分類">
+              {genres.map((g) => (
+                <li key={g.key}>
+                  <Link href={`/search?cuisine=${encodeURIComponent(g.label)}`} className="vOs-g" data-cursor="GO">
+                    <b className="vOs-g-k" aria-hidden="true">
+                      {g.kanji}
+                    </b>
+                    <span className="vOs-g-t">
+                      <span className="vOs-g-n">{g.label}</span>
+                      <i className="vOs-g-c">
+                        {g.count}
+                        <small>軒</small>
+                      </i>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className={`vR-sp-under vR-sp-under--${sp}`}>
+            <p className="vR-sp-name">
+              マチノワ グルメ<span lang="en">Machinowa Gourmet</span>
+            </p>
+            <p className="vR-sp-lead">一日の終わりに寄る店を、駅と街から。</p>
+            {sp === "half" && (
+              <a href="#open-search" className="vR-sp-go" data-cursor="GO">
+                店をさがす <span aria-hidden="true">↓</span>
+              </a>
+            )}
+          </div>
+        )}
 
         <div className="vR-cover" aria-hidden="true" />
 

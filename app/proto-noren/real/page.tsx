@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export default function Page() {
   return (
     <>
-      <GourmetNorenHomeReal links={SAMPLE_LINKS} allowUrlOverride />
+      <GourmetNorenHomeReal links={SAMPLE_LINKS} allowUrlOverride allowSpUrl />
       <DyePanel />
     </>
   );
