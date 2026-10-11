@@ -283,3 +283,16 @@
 @media (prefers-reduced-motion:reduce){
   .vMp-pin,.vMp-flag,.vMp-circ,.vMp-cell,.vMp-gridin>li{animation:none!important}
 }
+
+/* e「手描き風の地図」（既定）: 地理院ベクトルタイルから描き起こした SVG を、実際の範囲に敷く（ShopMap.tsx）。箱の中だけ明るい手描き風。まわりの枠・一覧は暖簾の色のまま */
+.vMp-leaf--e{background:#f1ead6}
+.vMp-leaf--e .leaflet-control-attribution{display:none}
+.vMp-ill{image-rendering:auto;max-width:none!important}
+.vMp-credit{position:absolute;right:8px;bottom:6px;z-index:460;margin:0;padding:2px 8px;background:rgba(255,255,255,.72);color:#4a4a42;font:400 12px/1.6 var(--f-sans);letter-spacing:.02em;pointer-events:none}
+.vMp-town--e{font-family:var(--f-brush);font-size:18px;letter-spacing:.1em;color:#26332e;opacity:.92;text-shadow:0 0 5px #f6f1e0,0 0 3px #f6f1e0,0 0 2px #f6f1e0}
+.vMp-leaf--e .vMp-circ{background:#e8772e}
+.vMp-leaf--e .vMp-circ span{color:#25406b;text-shadow:0 0 5px #fff,0 0 2px #fff}
+.vMp-leaf--e .vMp-pop b{color:#25406b}
+.vMp-leaf--e .leaflet-control-zoom a{color:#25406b}
+/* 細かい層（初期表示のまわり）の縁を、四辺の 9% でぼかして、粗い層へなじませる（CSS の mask。SVG の mask は重かったので使わない） */
+.vMp-ill--core{-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}

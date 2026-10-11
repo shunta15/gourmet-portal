@@ -119,7 +119,9 @@ function ResultsMap({
             : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
           : pts.length === 0
             ? "この条件の店には、地図に出せる位置の情報がありません。"
-            : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
+            : mode === "e" && pts.length > 12
+              ? `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。店が多く集まる所を大きく見せています。地図を動かす・縮めると、ほかの店も見えます。`
+              : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
       </p>
       {mode === "d" && <p className="vMp-illust-warn">この地図は雰囲気を見るための絵です。店の位置は、おおよその関係で置いています。</p>}
     </div>
@@ -170,7 +172,7 @@ export default function NorenSearch({
   const spTab = sp.get("tab");
   // 地図の見た目: 既定は a（絵図）。?map=b（線だけの地図）は、本番でないときだけ
   const mapParam = sp.get("map");
-  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d") ? mapParam : "a";
+  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d") ? mapParam : "e";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);

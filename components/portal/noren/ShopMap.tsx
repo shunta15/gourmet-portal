@@ -2,6 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CELLS, CELL_U, GAP_U, MAP_GRID } from "@/lib/portal/mapRegions";
 import { PREFECTURES } from "@/lib/areas/prefectures";
+import { ILLUST_JAPAN, ILLUST_MAPS } from "@/lib/portal/noren/illustMaps.generated";
+import { densestFit } from "@/lib/portal/noren/mapFit";
 
 /**
  * 「さがす」の地図（暖簾版）。実物の地図（道路・地名の細かいタイル）は使わない。2 つの見た目を ?map=a|b で見比べられる（既定 a）:
@@ -17,7 +19,8 @@ import { PREFECTURES } from "@/lib/areas/prefectures";
  */
 
 export type MapPt = { id: string; name: string; lat: number; lng: number; area: string; cuisine: string; photo: string; town: string; region: string };
-export type MapMode = "a" | "b" | "c" | "d";
+/** "a"（絵図）は候補から外した（?map=a は e に読み替える。コードは残してある）。既定は e */
+export type MapMode = "a" | "b" | "c" | "d" | "e";
 
 /** 店の写真つきの札で立てる数（手本の考え方: 写真のある店のうち、重ならない少数。目安 6〜10） */
 export const FLAG_MAX = 8;
@@ -33,6 +36,7 @@ const TREE_MAX = 16;
 /** 札（幅 112px・高さ 104px。先は店の位置）が箱の辺で切れないための余白（px）: 上は札の高さ + 先の丸、左右は幅の半分 + すこし */
 const FLAG_TOP = 126;
 const FLAG_SIDE = 64;
+
 
 /** 文字列から決まる乱数（毎回同じ並びになる） */
 function seeded(seed: string) {
@@ -115,6 +119,12 @@ function LeafMap({
   const st = useRef<{ L: typeof import("leaflet"); map: import("leaflet").Map; layer: import("leaflet").LayerGroup } | null>(null);
   const [ready, setReady] = useState(false);
   const coverRef = useRef(0);
+  // e: いま敷いている手描き風の地図（SVG）と、その url
+  const overlayRef = useRef<import("leaflet").ImageOverlay | null>(null);
+  const coreRef = useRef<import("leaflet").ImageOverlay | null>(null);
+  const overlayKey = useRef("");
+  // e: 寄せる動き（飛ぶ）が終わってから、範囲の外へ出られない制限をかける（動きの途中に掛けると、飛ぶ先がずれる）
+  const moveEndRef = useRef<(() => void) | null>(null);
   const onPickRef = useRef(onPick);
   onPickRef.current = onPick;
   const key = useMemo(() => JSON.stringify([mode, regionKey, pts.map((p) => p.id), circles.map((c) => [c.key, c.count])]), [mode, regionKey, pts, circles]);
@@ -140,6 +150,7 @@ function LeafMap({
         minZoom: mode === "d" ? cover : mode === "a" ? 3 : 5,
         maxZoom: mode === "d" ? cover + 2.5 : mode === "b" ? 14 : mode === "c" ? 18 : 17,
         ...(mode === "d" ? { crs: L.CRS.Simple, maxBounds: IMG_BOUNDS, maxBoundsViscosity: 1 } : {}),
+        ...(mode === "e" ? { maxBoundsViscosity: 1 } : {}),
         zoomAnimation: !reduce,
         fadeAnimation: !reduce,
         markerZoomAnimation: !reduce,
@@ -185,6 +196,9 @@ function LeafMap({
       st.current?.map.stop();
       st.current?.map.remove();
       st.current = null;
+      overlayRef.current = null;
+      coreRef.current = null;
+      overlayKey.current = "";
       setReady(false);
     };
   }, [mode, reduce]);
@@ -195,10 +209,41 @@ function LeafMap({
     if (!ready || !s) return;
     const { L, map, layer } = s;
     map.stop();
+    if (moveEndRef.current) {
+      map.off("moveend", moveEndRef.current);
+      moveEndRef.current = null;
+    }
     map.closePopup();
     layer.clearLayers();
     const bb = L.latLngBounds([]);
     const delayOf = (i: number) => (reduce ? 0 : (i % 36) * 70 + 250);
+
+    // e: その地域の手描き風の地図（SVG）を、実際の範囲に敷く（だから店のピンは本当の位置に落ちる）。範囲の外へは動かせず、拡大は敷いた範囲が箱を埋める所まで
+    let eSetup: null | { bounds: import("leaflet").LatLngBounds; dataZ: number } = null;
+    if (mode === "e") {
+      const info = regionKey ? ILLUST_MAPS[regionKey] : undefined;
+      const bounds = L.latLngBounds(info ? info.bounds : ILLUST_JAPAN.bounds);
+      const url = info ? `/_portal/illust-map/${regionKey}.svg` : "/_portal/illust-map/japan.svg";
+      if (overlayKey.current !== url) {
+        overlayRef.current?.remove();
+        coreRef.current?.remove();
+        coreRef.current = null;
+        overlayRef.current = L.imageOverlay(url, bounds, { interactive: false, className: "vMp-ill", zIndex: 1 }).addTo(map);
+        // 細かい層（初期表示のまわり。縁をぼかしてあるので、粗い層の上にそのまま重ねる）
+        if (info?.core) coreRef.current = L.imageOverlay(`/_portal/illust-map/${regionKey}-core.svg`, L.latLngBounds(info.core.bounds), { interactive: false, className: "vMp-ill vMp-ill--core", zIndex: 2 }).addTo(map);
+        overlayKey.current = url;
+      }
+      (map as unknown as { setMaxBounds: (b: unknown) => void }).setMaxBounds(null); // 動かす間は外す。終わったら下で掛け直す
+      // 前の地域の拡大の範囲に挟まれて計算がずれないよう、いったん広げてから、箱を埋める下限を求める
+      // setMinZoom / setMaxZoom は、いまのズームが範囲の外だと、その場で拡大縮小の動きを始めてしまう（そのあとの寄せる動きと食い違い、ピンと絵が別々の位置に残る）。範囲の値だけを直接入れ替え、寄せるのは下の setView / flyToBounds に任せる
+      const zo = map.options as { minZoom?: number; maxZoom?: number };
+      zo.minZoom = 0;
+      zo.maxZoom = 20;
+      const cz = map.getBoundsZoom(bounds, true);
+      zo.minZoom = cz;
+      zo.maxZoom = Math.max(cz + 1, info ? info.zi + 3 : 8);
+      eSetup = { bounds, dataZ: info ? info.z : 6 };
+    }
 
     if (mode === "d" && !regionKey) {
       // 全国（d）: 絵を敷いただけ。一文（JSX 側）だけ出す
@@ -206,21 +251,25 @@ function LeafMap({
       return;
     }
 
-    if (!regionKey && (mode === "b" || mode === "c")) {
+    if (!regionKey && (mode === "b" || mode === "c" || mode === "e")) {
       // 全国（b）: 地域ごとの丸（件数つき）。押すとその地域で絞り込む
       circles.forEach((c, i) => {
-        const size = Math.round(28 + 4.5 * Math.sqrt(c.count));
+        const size = mode === "e" ? Math.round(20 + 3.4 * Math.sqrt(c.count)) : Math.round(28 + 4.5 * Math.sqrt(c.count));
         const icon = L.divIcon({
           className: "vMp-mk",
           iconSize: [size, size],
           iconAnchor: [size / 2, size / 2],
-          html: `<div class="vMp-circ" style="--s:${size}px;animation-delay:${delayOf(i)}ms"><b>${c.count}</b><span>${esc(c.name)}</span></div>`,
+          html: `<div class="vMp-circ" style="--s:${size}px;animation-delay:${delayOf(i)}ms"><b>${c.count}</b>${mode === "e" && c.count < 8 ? "" : `<span>${esc(c.name)}</span>`}</div>`,
         });
         const m = L.marker([c.lat, c.lng], { icon, title: `${c.name} ${c.count}軒`, zIndexOffset: -c.count }).addTo(layer);
         m.on("click", () => onPickRef.current(c.key));
         bb.extend([c.lat, c.lng]);
       });
-      if (reduce) map.fitBounds(JAPAN, { animate: false });
+      if (mode === "e") {
+        // e: 全国の地図は、すぐ全体を見せる（地域の地図から戻るとき、範囲がちがうので飛ばない）
+        map.fitBounds(JAPAN, { animate: false });
+        if (eSetup) map.setMaxBounds(eSetup.bounds);
+      } else if (reduce) map.fitBounds(JAPAN, { animate: false });
       else map.flyToBounds(JAPAN, { duration: 0.9 });
       return;
     }
@@ -233,7 +282,13 @@ function LeafMap({
       const i = (v.length - 1) * t;
       return v[Math.floor(i)] + (v[Math.ceil(i)] - v[Math.floor(i)]) * (i - Math.floor(i));
     };
-    const fit = pts.length > 12 ? L.latLngBounds([quant(pts.map((p) => p.lat), 0.06), quant(pts.map((p) => p.lng), 0.06)], [quant(pts.map((p) => p.lat), 0.94), quant(pts.map((p) => p.lng), 0.94)]) : bb;
+    // e: 店がいちばん集まっている所に寄せる（lib/portal/noren/mapFit.ts。描き起こしのスクリプトと同じ決め方）。ほかは、外れ値を除いた中央の約 88%
+    const dense = mode === "e" && pts.length > 12 ? densestFit(pts) : null;
+    const fit = dense
+      ? L.latLngBounds([dense.minLat, dense.minLng], [dense.maxLat, dense.maxLng])
+      : pts.length > 12 && mode !== "e"
+        ? L.latLngBounds([quant(pts.map((p) => p.lat), 0.06), quant(pts.map((p) => p.lng), 0.06)], [quant(pts.map((p) => p.lat), 0.94), quant(pts.map((p) => p.lng), 0.94)])
+        : bb;
     const span = pts.length > 1 ? Math.max(fit.getNorth() - fit.getSouth(), fit.getEast() - fit.getWest()) : 0.1;
     // d: 店を、緯度経度の相対位置のまま、絵の上（いま箱に見えている範囲の内側）に置く。内側の余白は 8%、上は札の高さ・左右は札の幅の半分以上
     let at = (p: MapPt): [number, number] => [p.lat, p.lng];
@@ -267,17 +322,44 @@ function LeafMap({
     const minD = span / 3.6; // 札（幅 112px）どうしが重ならない程度に離す（8 軒まで）
     const flags = new Set<string>();
     const picked: MapPt[] = [];
-    for (const p of pts) {
-      if (flags.size >= FLAG_MAX) break;
-      if (!p.photo) continue;
-      if (!fit.contains([p.lat, p.lng])) continue; // 寄せる範囲の外の店は札にしない（札が箱の辺で切れないように）
-      if (picked.every((q) => Math.hypot(q.lat - p.lat, q.lng - p.lng) > minD)) {
-        flags.add(p.id);
-        picked.push(p);
+    // 狭い箱（スマホ）では、札が地図をふさがないよう少なくする
+    const maxFlags = (ref.current?.clientWidth ?? 800) < 520 ? 3 : FLAG_MAX;
+    if (mode === "e" && pts.length > 1) {
+      // e: 寄せたあとの画面で、札（幅 112px・高さ 104px）どうしが重ならないものを、中心に近い店から選ぶ
+      const tzf = Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * FLAG_SIDE, FLAG_TOP + 36)));
+      const fc0 = fit.getCenter();
+      const rects: [number, number, number, number][] = [];
+      const order = [...pts].sort((a, b) => Math.hypot(a.lat - fc0.lat, (a.lng - fc0.lng) * 0.82) - Math.hypot(b.lat - fc0.lat, (b.lng - fc0.lng) * 0.82));
+      for (const p of order) {
+        if (flags.size >= maxFlags) break;
+        if (!p.photo || !fit.contains([p.lat, p.lng])) continue;
+        const q = map.project([p.lat, p.lng], tzf);
+        const r: [number, number, number, number] = [q.x - 60, q.y - 112, q.x + 60, q.y + 8];
+        if (rects.every((o) => r[2] < o[0] || r[0] > o[2] || r[3] < o[1] || r[1] > o[3])) {
+          rects.push(r);
+          flags.add(p.id);
+        }
+      }
+    } else {
+      for (const p of pts) {
+        if (flags.size >= maxFlags) break;
+        if (!p.photo) continue;
+        if (!fit.contains([p.lat, p.lng])) continue; // 寄せる範囲の外の店は札にしない（札が箱の辺で切れないように）
+        if (picked.every((q) => Math.hypot(q.lat - p.lat, q.lng - p.lng) > minD)) {
+          flags.add(p.id);
+          picked.push(p);
+        }
       }
     }
+    // 落ちる順は、寄せた範囲の中心に近い店から（見えている店が先に現れる）
+    const fc = fit.isValid() ? fit.getCenter() : L.latLng(0, 0); // 位置のある店が 1 軒も無い地域では、範囲が空
+    const rank = new Map(
+      [...pts]
+        .sort((a, b) => Math.hypot(a.lat - fc.lat, (a.lng - fc.lng) * 0.82) - Math.hypot(b.lat - fc.lat, (b.lng - fc.lng) * 0.82))
+        .map((p, i) => [p.id, i] as const),
+    );
     pts.forEach((p, i) => {
-      const delay = delayOf(i);
+      const delay = delayOf(rank.get(p.id) ?? i);
       const isFlag = flags.has(p.id);
       const icon = isFlag
         ? L.divIcon({
@@ -285,7 +367,7 @@ function LeafMap({
             iconSize: [112, 104],
             iconAnchor: [56, 104],
             popupAnchor: [0, -100],
-            html: `<div class="vMp-flag${mode === "c" || mode === "d" ? " vMp-flag--c" : ""}" style="animation-delay:${delay}ms${mode === "c" || mode === "d" ? `;--tilt:${i % 2 === 0 ? -2.5 : 2.5}deg` : ""}"><img src="${esc(p.photo)}" alt="" loading="lazy" /><b>${esc(p.name)}</b></div>`,
+            html: `<div class="vMp-flag${mode === "c" || mode === "d" || mode === "e" ? " vMp-flag--c" : ""}" style="animation-delay:${delay}ms${mode === "c" || mode === "d" || mode === "e" ? `;--tilt:${i % 2 === 0 ? -2.5 : 2.5}deg` : ""}"><img src="${esc(p.photo)}" alt="" loading="lazy" /><b>${esc(p.name)}</b></div>`,
           })
         : L.divIcon({
             className: "vMp-mk",
@@ -293,32 +375,58 @@ function LeafMap({
             iconAnchor: [15, 38],
             popupAnchor: [0, -34],
             // c は橙と紺の 2 色（色に意味は無い。並びの偶数番を橙、奇数番を紺）
-            html: `<div class="vMp-pin${mode === "c" || mode === "d" ? (i % 2 === 0 ? " vMp-pin--o" : " vMp-pin--n") : ""}" style="animation-delay:${delay}ms"><i></i></div>`,
+            html: `<div class="vMp-pin${mode === "c" || mode === "d" || mode === "e" ? (i % 2 === 0 ? " vMp-pin--o" : " vMp-pin--n") : ""}" style="animation-delay:${delay}ms"><i></i></div>`,
           });
       const m = L.marker(at(p), { icon, title: p.name, zIndexOffset: isFlag ? 500 : 0 }).addTo(layer);
       m.bindPopup(
         `<div class="vMp-pop">${p.photo ? `<img src="${esc(p.photo)}" alt="" />` : ""}<b>${esc(p.name)}</b><span>${esc(p.area)}・${esc(p.cuisine)}</span><a href="/restaurant/${encodeURIComponent(p.id)}">店のページへ →</a></div>`,
-        { closeButton: false, className: mode === "c" || mode === "d" ? "vMp-popw vMp-popw--c" : "vMp-popw", autoPan: true, autoPanPaddingTopLeft: [24, 24], autoPanPaddingBottomRight: [24, 24], keepInView: true },
+        { closeButton: false, className: mode === "c" || mode === "d" || mode === "e" ? "vMp-popw vMp-popw--c" : "vMp-popw", autoPan: true, autoPanPaddingTopLeft: [24, 24], autoPanPaddingBottomRight: [24, 24], keepInView: true },
       );
     });
 
-    // a・c: 目印に、店の多い市区町村の名前を、その店たちの中心あたりに薄く出す（c は手書き風の字）
-    if (mode === "a" || mode === "c") {
+    // 目印に、店の多い市区町村の名前を、その店たちの中心あたりに出す（a・c は薄く。e は筆の字で、ピン・札に重なりにくい位置へずらす）
+    if (mode === "a" || mode === "c" || mode === "e") {
       const g = new Map<string, MapPt[]>();
       for (const p of pts) if (p.town) g.set(p.town, [...(g.get(p.town) ?? []), p]);
-      [...g.entries()]
-        .sort((x, y) => y[1].length - x[1].length)
-        .slice(0, 6)
-        .forEach(([town, list]) => {
-          const lat = list.reduce((a, p) => a + p.lat, 0) / list.length;
-          const lng = list.reduce((a, p) => a + p.lng, 0) / list.length;
-          L.marker([lat, lng], {
-            icon: L.divIcon({ className: "vMp-mk vMp-mk--town", iconSize: [140, 24], iconAnchor: [70, 12], html: `<span class="vMp-town">${esc(town)}</span>` }),
-            interactive: false,
-            keyboard: false,
-            zIndexOffset: -1000,
-          }).addTo(layer);
-        });
+      const towns = [...g.entries()].sort((x, y) => y[1].length - x[1].length).slice(0, mode === "e" ? 8 : 6);
+      // e: 寄せたあとのズームで、ピン・札の画面上の位置を求め、いちばん重ならない向きへ名前をずらす
+      const tz = mode === "e" && pts.length > 1 ? Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * FLAG_SIDE, FLAG_TOP + 36))) : 0;
+      const boxes: [number, number, number, number][] = [];
+      if (tz) {
+        for (const p of pts) {
+          const q = map.project([p.lat, p.lng], tz);
+          boxes.push(flags.has(p.id) ? [q.x - 58, q.y - 112, q.x + 58, q.y + 6] : [q.x - 13, q.y - 42, q.x + 13, q.y + 2]);
+        }
+      }
+      const overlap = (a: number[], b: number[]) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+      const OFFS: [number, number][] = [[0, 0], [0, -34], [0, 34], [-70, 0], [70, 0], [-56, -30], [56, -30], [-56, 30], [56, 30], [0, -60], [0, 60], [-100, 0], [100, 0]];
+      const placed: number[][] = [];
+      towns.forEach(([town, list]) => {
+        const lat = list.reduce((a, p) => a + p.lat, 0) / list.length;
+        const lng = list.reduce((a, p) => a + p.lng, 0) / list.length;
+        let at: [number, number] = [lat, lng];
+        if (tz) {
+          const c = map.project([lat, lng], tz);
+          const w = Array.from(town).length * 19 + 10;
+          let best = OFFS[0], bestScore = Infinity;
+          for (const o of OFFS) {
+            const r = [c.x + o[0] - w / 2, c.y + o[1] - 13, c.x + o[0] + w / 2, c.y + o[1] + 13];
+            let sc = Math.hypot(o[0], o[1]) * 0.05;
+            for (const bx of boxes) sc += overlap(r, bx);
+            for (const pl of placed) sc += overlap(r, pl) * 3;
+            if (sc < bestScore) { bestScore = sc; best = o; }
+          }
+          placed.push([c.x + best[0] - w / 2, c.y + best[1] - 13, c.x + best[0] + w / 2, c.y + best[1] + 13]);
+          const ll = map.unproject([c.x + best[0], c.y + best[1]], tz);
+          at = [ll.lat, ll.lng];
+        }
+        L.marker(at, {
+          icon: L.divIcon({ className: "vMp-mk vMp-mk--town", iconSize: [140, 24], iconAnchor: [70, 12], html: `<span class="vMp-town${mode === "e" ? " vMp-town--e" : ""}">${esc(town)}</span>` }),
+          interactive: false,
+          keyboard: false,
+          zIndexOffset: -1000,
+        }).addTo(layer);
+      });
     }
 
     // c: 飾りの小さな木。地域キーから決めた位置に、店のピン・札から離して散らす（毎回同じ場所）
@@ -344,11 +452,39 @@ function LeafMap({
     } else if (pts.length > 1) {
       // 余白: 上は札の高さ（104px + 先の丸）ぶん、左右は札の幅の半分（56px）ぶん取り、最初に寄った状態で札が箱の辺で切れないようにする
       const opt = { paddingTopLeft: [FLAG_SIDE, FLAG_TOP] as [number, number], paddingBottomRight: [FLAG_SIDE, 36] as [number, number], maxZoom: 14 };
-      if (reduce) map.fitBounds(fit, { ...opt, animate: false });
-      else map.flyToBounds(fit, { ...opt, duration: 0.9 });
+      if (reduce) {
+        map.fitBounds(fit, { ...opt, animate: false });
+        if (eSetup) map.setMaxBounds(eSetup.bounds);
+      } else if (eSetup) {
+        // e: 新しい地域の地図の上で、一段ひいた所から、なめらかに寄せる
+        const z1 = Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * FLAG_SIDE, FLAG_TOP + 36)));
+        map.setView(fit.getCenter(), Math.max(map.getMinZoom(), z1 - 1.25), { animate: false });
+        const done = () => {
+          moveEndRef.current = null;
+          map.setMaxBounds(eSetup!.bounds);
+        };
+        moveEndRef.current = done;
+        map.once("moveend", done);
+        map.flyToBounds(fit, { ...opt, duration: 0.9 });
+      } else map.flyToBounds(fit, { ...opt, duration: 0.9 });
     } else if (pts.length === 1) {
       if (reduce) map.setView([pts[0].lat, pts[0].lng], 13, { animate: false });
       else map.flyTo([pts[0].lat, pts[0].lng], 13, { duration: 0.9 });
+      if (eSetup) {
+        if (reduce) map.setMaxBounds(eSetup.bounds);
+        else {
+          const done = () => {
+            moveEndRef.current = null;
+            map.setMaxBounds(eSetup!.bounds);
+          };
+          moveEndRef.current = done;
+          map.once("moveend", done);
+        }
+      }
+    } else if (eSetup) {
+      // 店に位置の情報が無い地域: 敷いた地図の中心を、少し寄せて見せる
+      map.setView(eSetup.bounds.getCenter(), Math.min(map.getMaxZoom(), map.getMinZoom() + 1), { animate: false });
+      map.setMaxBounds(eSetup.bounds);
     } else {
       map.fitBounds(JAPAN, { animate: false });
     }
@@ -358,6 +494,7 @@ function LeafMap({
   return (
     <div className={`vMp-leaf vMp-leaf--${mode}`} ref={ref} role="region" aria-label="店の地図">
       {!ready && <div className="vMp-maploading">地図を読み込み中…</div>}
+      {mode === "e" && <p className="vMp-credit">地図: 国土地理院ベクトルタイルをもとに作成</p>}
       {mode === "d" && ready && !regionKey && <p className="vMp-illust-hint">右の一覧から地域を選ぶと、店が地図に出ます。</p>}
       {mode === "c" && (
         // c の水彩風の線の揺らし（タイルの層だけに掛かる。ピンや札には掛けない）
