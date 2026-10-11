@@ -63,7 +63,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
     mapsUrl,
     geo: geo ? { lat: geo.lat, lng: geo.lng } : null,
     social,
-    hasRating: !!r.rating,
+    hasRating: false, // 食べログなど別の出典の評価は出さない。評価の行から外れた出典リンクは、ボタンとして出す
     source: r.source ?? null,
     featureId,
     town: town ? { name: town.town, href: town.href, count: town.count } : null,
@@ -189,23 +189,10 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
               )}
               {r.googleRating && (
                 <div>
-                  <dt>Google評価</dt>
+                  <dt>Google の評価</dt>
                   <dd>
                     {r.googleRating}
                     {r.googleReviewCount ? <small>（{r.googleReviewCount.toLocaleString()}件）</small> : null}
-                  </dd>
-                </div>
-              )}
-              {r.rating && (
-                <div>
-                  <dt>評価</dt>
-                  <dd>
-                    {r.rating}
-                    {r.source && (
-                      <a className="src" href={r.source.url} target="_blank" rel="noopener noreferrer">
-                        （{r.source.label}）
-                      </a>
-                    )}
                   </dd>
                 </div>
               )}
@@ -362,7 +349,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                         #{x.id.replace(/^r/, "").padStart(2, "0")} · {x.area}
                       </span>
                       <em>{x.cuisine}</em>
-                      {(x.googleRating || x.rating) && <em>評価 {x.googleRating ?? x.rating}</em>}
+                      {x.googleRating ? <em>Google {x.googleRating}</em> : null}
                     </span>
                   </Link>
                 </li>
