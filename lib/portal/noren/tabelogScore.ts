@@ -6,6 +6,7 @@
  *  - 取り除くのは「食べログ」＋ 点数（3.50・4.2 のような小数）に触れている文または句だけ。
  *  - 文の残りに別の事実があるときは、その句（読点「、」で区切った 1 かたまり）だけを取り、残りの文は残す。
  *  - 文全体が点数の話なら、その文を丸ごと取る。
+ *  - 「食べログ」と書かずに点数だけ出している文は、OVERRIDES に完全一致で入れたものだけ取る。
  *  - 点数を伴わない「食べログ」の言及（百名店・予約・掲載情報など）はそのまま。
  *  - 機械的に句を取ると文が切れてしまう文は、OVERRIDES で個別に指定する（完全一致の置き換え表）。
  */
@@ -28,9 +29,20 @@ const OVERRIDES: Record<string, string> = {
   // r64 本文: 前の句が「…構えながら、」だけ残って切れる
   "住宅地の一角に構えながら、食べログ評価3.44・口コミ220件超という数字が示す実力を持つ中華料理店だ。":
     "住宅地の一角に構える中華料理店だ。",
+  // 「食べログ」と書かずに点数だけ出している文(2026-10-11 追加。Google の評価の隣に出どころの分からない別の点数を残さない)
+  "評価3.58は口コミ191件の積み上げた信頼の数字だ。": "", // r62 本文: 文全体が点数の話
+  "九条という下町感のある立地で、炭火焼き鳥を提供する一軒として評価3.53と高い支持を集める。": "九条という下町感のある立地で、炭火焼き鳥を提供する一軒だ。", // r63 本文
+  "九条駅から徒歩2分、炭火焼き鳥の評価3.53の人気店": "九条駅から徒歩2分、炭火焼き鳥の人気店", // r63 見どころ(暖簾の店ページでは出していない)
+  "評価3.44・220件超の口コミを誇り、26席でランチからディナーまで安定した人気を持つ。": "26席でランチからディナーまで安定した人気を持つ。", // r64 desc
+  "評価は3.36と高く、92件超の口コミが積み上がる。": "", // r93 本文: 文全体が点数の話
   // 特集「ごはん処 湊茶屋」の導入: 後ろの句「62件のレビューを集めている」が主語を失う
   "食べログの評価は開業から3ヶ月で3.06点、62件のレビューを集めている。": "",
 };
+
+const OVERRIDE_KEYS = Object.keys(OVERRIDES);
+/** 食べログの点数、または個別指定の文を含むか（含まなければ何もせずそのまま返す） */
+const needsFix = (t: string): boolean =>
+  (t.includes("食べログ") && SCORE.test(t)) || OVERRIDE_KEYS.some((k) => t.includes(k));
 
 /** 句を取ったあとの残りが、文として切れているか（接続の語尾で終わる・件数で始まる） */
 function looksBroken(rest: string): boolean {
@@ -38,8 +50,8 @@ function looksBroken(rest: string): boolean {
 }
 
 function fixSentence(s: string): string {
-  if (!SCORE.test(s)) return s;
   if (Object.prototype.hasOwnProperty.call(OVERRIDES, s)) return OVERRIDES[s];
+  if (!SCORE.test(s)) return s;
   const end = s.endsWith("。") ? "。" : "";
   const body = end ? s.slice(0, -1) : s;
   const clauses = body.split("、");
@@ -55,7 +67,7 @@ function fixSentence(s: string): string {
 export function stripTabelogScore(text: string): string;
 export function stripTabelogScore(text: string | undefined): string | undefined;
 export function stripTabelogScore(text: string | undefined): string | undefined {
-  if (!text || !text.includes("食べログ") || !SCORE.test(text)) return text;
+  if (!text || !needsFix(text)) return text;
   const sentences = text.match(/[^。]*。|[^。]+$/g) ?? [text];
   return sentences.map(fixSentence).join("");
 }
@@ -65,6 +77,6 @@ export function stripTabelogScoreList(items: string[]): string[];
 export function stripTabelogScoreList(items: string[] | undefined): string[] | undefined;
 export function stripTabelogScoreList(items: string[] | undefined): string[] | undefined {
   if (!items) return items;
-  if (!items.some((t) => typeof t === "string" && t.includes("食べログ") && SCORE.test(t))) return items;
+  if (!items.some((t) => typeof t === "string" && needsFix(t))) return items;
   return items.map((t) => stripTabelogScore(t)).filter((t) => t.trim() !== "");
 }
