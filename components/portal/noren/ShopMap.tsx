@@ -24,6 +24,9 @@ const BLANK_TILE = "https://cyberjapandata.gsi.go.jp/xyz/blank/{z}/{x}/{y}.png";
 const PALE_TILE = "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png";
 /** c「手描き風」の飾りの木の数（位置は地域キーから決めるので、毎回同じ場所。店のピン・札の近くには置かない） */
 const TREE_MAX = 16;
+/** 札（幅 112px・高さ 104px。先は店の位置）が箱の辺で切れないための余白（px）: 上は札の高さ + 先の丸、左右は幅の半分 + すこし */
+const FLAG_TOP = 126;
+const FLAG_SIDE = 64;
 
 /** 文字列から決まる乱数（毎回同じ並びになる） */
 function seeded(seed: string) {
@@ -207,6 +210,7 @@ function LeafMap({
     for (const p of pts) {
       if (flags.size >= FLAG_MAX) break;
       if (!p.photo) continue;
+      if (!fit.contains([p.lat, p.lng])) continue; // 寄せる範囲の外の店は札にしない（札が箱の辺で切れないように）
       if (picked.every((q) => Math.hypot(q.lat - p.lat, q.lng - p.lng) > minD)) {
         flags.add(p.id);
         picked.push(p);
@@ -234,7 +238,7 @@ function LeafMap({
       const m = L.marker([p.lat, p.lng], { icon, title: p.name, zIndexOffset: isFlag ? 500 : 0 }).addTo(layer);
       m.bindPopup(
         `<div class="vMp-pop">${p.photo ? `<img src="${esc(p.photo)}" alt="" />` : ""}<b>${esc(p.name)}</b><span>${esc(p.area)}・${esc(p.cuisine)}</span><a href="/restaurant/${encodeURIComponent(p.id)}">店のページへ →</a></div>`,
-        { closeButton: false, className: mode === "c" ? "vMp-popw vMp-popw--c" : "vMp-popw", autoPanPadding: [20, 60] },
+        { closeButton: false, className: mode === "c" ? "vMp-popw vMp-popw--c" : "vMp-popw", autoPan: true, autoPanPaddingTopLeft: [24, 24], autoPanPaddingBottomRight: [24, 24], keepInView: true },
       );
     });
 
@@ -275,8 +279,10 @@ function LeafMap({
     }
 
     if (pts.length > 1) {
-      if (reduce) map.fitBounds(fit, { padding: [44, 44], maxZoom: 14, animate: false });
-      else map.flyToBounds(fit, { padding: [44, 44], maxZoom: 14, duration: 0.9 });
+      // 余白: 上は札の高さ（104px + 先の丸）ぶん、左右は札の幅の半分（56px）ぶん取り、最初に寄った状態で札が箱の辺で切れないようにする
+      const opt = { paddingTopLeft: [FLAG_SIDE, FLAG_TOP] as [number, number], paddingBottomRight: [FLAG_SIDE, 36] as [number, number], maxZoom: 14 };
+      if (reduce) map.fitBounds(fit, { ...opt, animate: false });
+      else map.flyToBounds(fit, { ...opt, duration: 0.9 });
     } else if (pts.length === 1) {
       if (reduce) map.setView([pts[0].lat, pts[0].lng], 13, { animate: false });
       else map.flyTo([pts[0].lat, pts[0].lng], 13, { duration: 0.9 });

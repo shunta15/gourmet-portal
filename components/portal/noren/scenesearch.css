@@ -194,7 +194,9 @@
 .vN .leaflet-popup-content a.mw-popup-link{color:var(--paper-hi)}
 
 /* ---------- 地図の見た目（ShopMap.tsx）: a「絵図」・b「線だけの地図」。動かすのは transform と opacity だけ ---------- */
-.vMp-surface{background:var(--paper);color:var(--ink)}
+/* 地図の箱: leaflet の層（z-index 400〜1000。ピン・札・吹き出し・拡大縮小）が、箱の外・固定ヘッダーの上に出ないよう、箱の中だけの重なり（isolation）にして、はみ出しは切り取る */
+.vMp-surface{position:relative;isolation:isolate;overflow:hidden;background:var(--paper);color:var(--ink)}
+.vMp-leaf{isolation:isolate;overflow:hidden}
 .vMp-leaf{height:460px;background:var(--paper);font-family:var(--f-sans)}
 .vMp-leaf .leaflet-control-zoom a{width:44px;height:44px;line-height:44px;font-size:22px;text-indent:0}
 .vMp-leaf .leaflet-control-attribution a{display:inline-block;min-height:24px;line-height:24px}
