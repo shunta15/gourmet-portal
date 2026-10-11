@@ -85,6 +85,12 @@ export type Restaurant = {
   tags?: string[];
   googleRating?: number;
   googleReviewCount?: number;
+  /**
+   * true のとき、googleRating / googleReviewCount は「DB の行から店を作るとき、同じ ID のコード側の店から借りた」値。
+   * 発注者が Google の評価を載せてよいとしたのは暖簾の店ページ（と、その「同じ地域の他の店」）だけなので、
+   * 旧デザインの店ページ・カード・構造化データ（aggregateRating）はこの値を使わない（今の本番と同じ見え方のまま）。
+   */
+  googleShopOnly?: boolean;
   /** 対になる特集記事の ID（/feature/<featureId>）。記事由来の店（lib/articleStores.ts）だけが持つ */
   featureId?: string;
 };
@@ -490,13 +496,13 @@ export const SHORT_VIDEOS: ShortVideo[] = [
 // RestaurantCardItem: minimal fields for RestaurantCard, used by grids/lists
 export type RestaurantCardItem = Pick<
   Restaurant,
-  "id" | "name" | "cuisine" | "area" | "region" | "shape" | "image" | "googleRating" | "rating"
+  "id" | "name" | "cuisine" | "area" | "region" | "shape" | "image" | "googleRating" | "googleShopOnly" | "rating"
 >;
 
 // SearchItem: fields needed for search filtering + card display
 export type SearchItem = Pick<
   Restaurant,
-  "id" | "name" | "cuisine" | "area" | "region" | "address" | "desc" | "tags" | "shape" | "image" | "googleRating" | "rating"
+  "id" | "name" | "cuisine" | "area" | "region" | "address" | "desc" | "tags" | "shape" | "image" | "googleRating" | "googleShopOnly" | "rating"
 >;
 
 // Helpers to convert full Restaurant to lean types
@@ -510,6 +516,7 @@ export function toCardItem(r: Restaurant): RestaurantCardItem {
     shape: r.shape,
     image: r.image,
     googleRating: r.googleRating,
+    googleShopOnly: r.googleShopOnly,
     rating: r.rating,
   };
 }
@@ -527,6 +534,7 @@ export function toSearchItem(r: Restaurant): SearchItem {
     shape: r.shape,
     image: r.image,
     googleRating: r.googleRating,
+    googleShopOnly: r.googleShopOnly,
     rating: r.rating,
   };
 }

@@ -29,9 +29,11 @@ export default function RestaurantCard({ r }: { r: RestaurantCardItem }) {
         <span>
           #{r.id.replace(/^r/, "").padStart(2, "0")} · {r.area}
         </span>
-        {(r.googleRating || r.rating) && (
-          <span className="rating">★ {r.googleRating ?? r.rating}</span>
-        )}
+        {/* DB の行に借りた Google の評価（googleShopOnly）は暖簾の店ページ専用。カードでは使わない */}
+        {(() => {
+          const g = r.googleShopOnly ? undefined : r.googleRating;
+          return g || r.rating ? <span className="rating">★ {g ?? r.rating}</span> : null;
+        })()}
       </div>
       <div className="body">
         <div className="cuisine">{r.cuisine}</div>

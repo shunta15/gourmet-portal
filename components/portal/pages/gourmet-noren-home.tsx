@@ -29,7 +29,7 @@ function splitTitle(t: string): [string, string] {
 const PRINCIPLES = [
   { k: "誇張しない", en: "No exaggeration", body: "「最高」「絶品」といった言葉は使いません。住所、営業時間、写真など、確かめられることを書きます。" },
   { k: "順位をつけない", en: "No rankings", body: "点数や星、ランキングで店を並べません。このページの並びも、順位ではありません。" },
-  { k: "口コミを転載しない", en: "No reposted reviews", body: "ほかのサイトの口コミや評価は、掲載しません。" },
+  { k: "口コミを転載しない", en: "No reposted reviews", body: "口コミの文章は転載しません。評価の数字は、出典（Google）を明記したものだけを載せます。" },
 ];
 
 export default async function GourmetNorenHome({ links }: { links: NorenLinks }) {

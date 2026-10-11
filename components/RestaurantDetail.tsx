@@ -229,7 +229,7 @@ export default function RestaurantDetail({
                 {r.budget}
               </div>
             )}
-            {r.googleRating && (
+            {r.googleRating && !r.googleShopOnly && (
               <div>
                 <b>Google評価</b>
                 <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>

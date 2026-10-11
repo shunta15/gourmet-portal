@@ -22,8 +22,12 @@ import { restaurantSocialLinks } from "@/lib/portal/shopSocial";
 import { shareTarget } from "@/lib/portal/share";
 import { buildActionModel } from "@/lib/portal/shopActions";
 import { heroImagesOf, isUnusableImage, kanjiFor, nameLayout, stationName } from "@/lib/portal/noren/shop";
-import type { NorenLinks } from "@/lib/portal/noren/nav";
+import { LIVE_LINKS, type NorenLinks } from "@/lib/portal/noren/nav";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
+import { pairFeatureNote, pairShopNote, pairedFeatureOfShop } from "@/lib/portal/noren/pair";
+import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
+import PairSwitch from "@/components/portal/noren/PairSwitch";
+import { stripTabelogScore, stripTabelogScoreList } from "@/lib/portal/noren/tabelogScore";
 
 /**
  * 暖簾のデザインの店ページの中身（サーバーコンポーネント）。今の /restaurant/[id] と同じデータ・同じ取り方で、同じ中身を出す。
@@ -42,6 +46,9 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   if (!r) notFound();
   const region = REGIONS[r.region];
   const geo = GEO[r.id] ?? null;
+  // 食べログの点数に触れている文・句は出さない（店の評価は Google にする。2026-10-11 オーナー指示。データは書き換えず表示の直前で取る）
+  const desc = stripTabelogScore(r.desc);
+  const body = stripTabelogScoreList(r.body ?? []);
 
   // 今の店ページと同じ取り方
   const featureId = r.featureId ?? ARTICLE_STORE_FEATURE_IDS[r.id];
@@ -51,7 +58,9 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   const social = restaurantSocialLinks(r);
   const mapsUrl = mapsUrlForRestaurant(r);
   const video = SHORT_VIDEOS.find((v) => v.restaurantId === r.id) ?? null;
-  const features = await featuresOfShop(r.id, featureId);
+  // 対の特集記事（店 1 軒の記事）。ある店だけ、紹介の上に切り替えの帯を置き、関連記事の先頭に大きく出す（本番の行き先のときだけ。見本の特集は店 1 軒の枠ではない）
+  const pair = links === LIVE_LINKS ? pairedFeatureOfShop(r.id) : null;
+  const features = await featuresOfShop(r.id, pair?.featureId ?? featureId);
 
   // 行動ボタンの一覧（今の ShopActions と同じ関数）。特集記事への行き先だけ、links（見本は見本の特集ページ、本番は /feature/<id>）に向ける
   const model = buildActionModel({
@@ -104,11 +113,23 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
         ]}
       />
 
+      {/* 店の紹介 ⇄ この店の特集（対の記事がある店だけ） */}
+      {pair && (
+        <PairSwitch
+          current="shop"
+          shopName={r.name}
+          shopHref={page}
+          featureHref={links.feature(pair.featureId)}
+          shopNote={pairShopNote(r)}
+          featureNote={pairFeatureNote(pair.views)}
+        />
+      )}
+
       {/* 紹介 */}
       <section className={`vS-intro${cutCands.length > 0 ? "" : " no-kj"}`} aria-label="紹介">
         {cutCands.length > 0 && <KanjiCut kanji={kanji} cands={cutCands} />}
         <div className="vS-intro-b vN-rv" style={{ ["--d" as string]: 1 }}>
-          {r.desc && <p className="vS-lede">{r.desc}</p>}
+          {desc && <p className="vS-lede">{desc}</p>}
           {r.tags && r.tags.length > 0 && (
             <ul className="vS-tags" aria-label="タグ">
               {r.tags.map((t) => (
@@ -125,7 +146,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
       </section>
 
       {/* 本文 */}
-      {r.body && r.body.length > 0 && (
+      {body.length > 0 && (
         <section className="vS-body vN-paper" aria-labelledby="vS-h-body">
           <div className={`vS-body-in${sidePhoto ? "" : " no-ph"}`}>
             {sidePhoto && (
@@ -138,7 +159,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
               </div>
             )}
             <div className="vS-body-tx vN-rv" style={{ ["--d" as string]: 1 }}>
-              {r.body.map((p, i) => (
+              {body.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
             </div>
@@ -189,23 +210,10 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
               )}
               {r.googleRating && (
                 <div>
-                  <dt>Google評価</dt>
+                  <dt>Google の評価</dt>
                   <dd>
                     {r.googleRating}
                     {r.googleReviewCount ? <small>（{r.googleReviewCount.toLocaleString()}件）</small> : null}
-                  </dd>
-                </div>
-              )}
-              {r.rating && (
-                <div>
-                  <dt>評価</dt>
-                  <dd>
-                    {r.rating}
-                    {r.source && (
-                      <a className="src" href={r.source.url} target="_blank" rel="noopener noreferrer">
-                        （{r.source.label}）
-                      </a>
-                    )}
                   </dd>
                 </div>
               )}
@@ -316,23 +324,31 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
               <h2 id="vS-h-rel" className="vS-h2">関連記事</h2>
             </div>
             <ul className="vS-rel-l">
-              {features.map((f, i) => (
-                <li key={f.id} className="vN-rv" style={{ ["--d" as string]: i }}>
-                  <Link href={links.feature(f.id)} className="vS-rc" data-cursor="READ">
-                    <span className="vS-rc-im">
-                      {f.image && (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={sized(f.image, 640)} alt="" loading="lazy" decoding="async" />
-                      )}
-                    </span>
+              {features.map((f, i) => {
+                const lead = !!pair && f.id === pair.featureId;
+                // 中身が真っ黒な仮の画像（写真が無かった店の記事）は、写真なしとして扱う
+                const img = f.image && !isDummyFeatureImage(f.image) ? f.image : "";
+                return (
+                <li key={f.id} className={`vN-rv${lead ? " vS-rel-lead" : ""}`} style={{ ["--d" as string]: i }}>
+                  <Link href={links.feature(f.id)} className={`vS-rc${lead ? " vS-rc--lead" : ""}${lead && !img ? " vS-rc--noph" : ""}`} data-cursor="READ">
+                    {!(lead && !img) && (
+                      <span className="vS-rc-im">
+                        {img && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={sized(img, 640)} alt="" loading="lazy" decoding="async" />
+                        )}
+                      </span>
+                    )}
                     <span className="vS-rc-tx">
+                      {lead && <em className="vS-rc-k">この店の特集</em>}
                       <b>{f.title}</b>
                       {f.sub && <small>{f.sub}</small>}
                       <span>{f.paired ? "この店の特集記事を読む →" : "記事を読む →"}</span>
                     </span>
                   </Link>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           </div>
         </section>
@@ -362,7 +378,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                         #{x.id.replace(/^r/, "").padStart(2, "0")} · {x.area}
                       </span>
                       <em>{x.cuisine}</em>
-                      {(x.googleRating || x.rating) && <em>評価 {x.googleRating ?? x.rating}</em>}
+                      {x.googleRating ? <em>Google {x.googleRating}</em> : null}
                     </span>
                   </Link>
                 </li>

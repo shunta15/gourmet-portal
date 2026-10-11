@@ -15,6 +15,7 @@ import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
 import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 import { applyShopPhotos } from "@/lib/shopPhotos";
+import { cleanRestaurantText } from "@/lib/otherSiteRatings";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -51,17 +52,33 @@ type DbRestaurantRow = {
   tags: string[] | null;
   highlights: string[] | null;
   body: string[] | null;
+  /** 今の DB には無い列。将来できたら DB の値を優先する */
+  google_rating?: number | null;
+  google_review_count?: number | null;
   published: boolean;
 };
+
+/** コード側の店（ID の完全一致だけで引く。店名では引かない） */
+const CODE_BY_ID = new Map<string, Restaurant>(RESTAURANTS.map((r) => [r.id, r]));
 
 /**
  * 店を返す前の仕上げ: 表示禁止の画像を除き（sanitizeRestaurant）、そのあと、使える写真が 1 枚も無い店にだけ
  * 集めた写真を当てはめる（lib/shopPhotos.ts。lib/shopPhotos.generated.json が `{}` なら何もしない）。
+ * 最後に、文章（desc・body・highlights）から、ほかのサイト・サービスの点数・星・評価の高さ・口コミやレビューの件数に触れた
+ * 文／句を取り除く（lib/otherSiteRatings.ts。DB の文章にもコード側の文章にも効く。2026-10-11 発注者指示。DB は書き換えない）。
  * map(finish) のように 1 引数で呼ぶ（2 番目以降の引数は受けない）。
  */
-const finish = (r: Restaurant): Restaurant => applyShopPhotos(sanitizeRestaurant(r));
+const finish = (r: Restaurant): Restaurant => cleanRestaurantText(applyShopPhotos(sanitizeRestaurant(r)));
 
-function rowToRestaurant(r: DbRestaurantRow): Restaurant {
+/**
+ * DB の行から店を作る。Google の評価（googleRating・googleReviewCount）は DB に列が無いので、
+ * 同じ ID のコード側の店（lib/data.ts）にあればそれを付ける（DB の行に値があれば DB を優先）。
+ * 新しく取りに行かない・何も書き込まない。付けた店には googleShopOnly を立て、暖簾の店ページ以外では使わせない。
+ */
+export function rowToRestaurant(r: DbRestaurantRow): Restaurant {
+  const code = CODE_BY_ID.get(r.id);
+  const googleRating = r.google_rating ?? code?.googleRating;
+  const googleReviewCount = r.google_review_count ?? code?.googleReviewCount;
   const restaurant = {
     id: r.id,
     name: r.name,
@@ -88,6 +105,9 @@ function rowToRestaurant(r: DbRestaurantRow): Restaurant {
     body: r.body ?? undefined,
     highlights: r.highlights ?? undefined,
     tags: r.tags ?? undefined,
+    ...(googleRating
+      ? { googleRating, googleReviewCount: googleReviewCount ?? undefined, googleShopOnly: true }
+      : {}),
   };
   return finish(restaurant as Restaurant);
 }

@@ -1,0 +1,67 @@
+/* ====================================================================
+   暖簾 — 店ページ ⇄ その店の特集記事 の切り替えの帯 (.vN スコープ。クラスは .vP-)
+   札が 2 枚並ぶ帯。いまいるページの札は朱(選ばれた状態)、もう一方は押すと移る。上端のヘッダーの下に細く残る(sticky)。
+   色は noren.css の変数と rgba(var(--sumi-rgb),α) だけ(地の色が替わっても追従する)。
+   ==================================================================== */
+.vN{--vp-h:58px}
+
+.vP-bar{position:sticky;top:var(--hd);z-index:50;background:rgba(var(--sumi-rgb,15,12,10),.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line-2);height:var(--vp-h)}
+.vP-in{max-width:1500px;margin:0 auto;height:100%;padding:0 var(--gx);display:flex;align-items:center;justify-content:space-between;gap:clamp(14px,3vw,40px)}
+.vP-name{display:flex;align-items:baseline;gap:.9em;min-width:0;color:var(--kinari)}
+.vP-k{flex:none;font:700 12px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3)}
+.vP-name b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:700 15px/1.4 var(--f-min);letter-spacing:.08em}
+.vP-tabs{display:flex;gap:8px;flex:none}
+.vP-tab{display:grid;gap:2px;align-content:center;justify-items:start;min-width:0;width:clamp(200px,19vw,268px);min-height:44px;padding:5px 16px;border:1px solid var(--line-2);border-radius:3px;
+  color:var(--kinari);transition:background .3s,border-color .3s,color .3s}
+.vP-tab b{font:700 14px/1.25 var(--f-min);letter-spacing:.14em;white-space:nowrap}
+.vP-tab small{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:500 12px/1.3 var(--f-min);letter-spacing:.04em;color:var(--kinari-2)}
+a.vP-tab:hover{border-color:var(--shu-hi);background:rgba(var(--sumi-rgb,15,12,10),.6)}
+a.vP-tab:hover b{color:var(--shu-hi)}
+a.vP-tab:focus-visible{outline:2px solid var(--shu-hi);outline-offset:2px}
+.vP-tab.is-on{background:var(--shu);border-color:var(--shu);color:var(--paper-hi)}
+.vP-tab.is-on small{color:var(--paper-hi)}
+
+/* 特集記事の目次札(.vF-idx。固定)と、視点へ飛んだときの余白は、この帯の高さぶん下げる */
+.vN:has(.vP-bar) .vF-idx{top:calc(var(--hd) + var(--vp-h))}
+.vN:has(.vP-bar) .vK-pt{scroll-margin-top:calc(var(--hd) + var(--vp-h) + 66px)}
+/* 店ページの右の行動欄・左の写真(sticky)も、帯の下に */
+.vN:has(.vP-bar) .vS-body-ph,.vN:has(.vP-bar) .vS-acts{top:calc(var(--hd) + var(--vp-h) + 24px)}
+.vN:has(.vP-bar) .vS-info,.vN:has(.vP-bar) .vS-map{scroll-margin-top:calc(var(--hd) + var(--vp-h))}
+
+/* 店ページの関連記事: 対の特集記事を先頭に、1 列ぶん大きく */
+.vS-rel-l .vS-rel-lead{grid-column:1 / -1}
+.vS-rel .vS-rc--lead{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:clamp(260px,30vw,380px);border-left:6px solid var(--shu)}
+.vS-rel .vS-rc--lead .vS-rc-im{min-height:240px}
+.vS-rel .vS-rc--lead .vS-rc-tx{padding:clamp(22px,3vw,40px);gap:14px}
+.vS-rel .vS-rc--lead .vS-rc-tx b{font-size:clamp(21px,2.3vw,30px);line-height:1.6}
+.vS-rel .vS-rc--lead .vS-rc-tx small{font-size:15px}
+.vS-rel .vS-rc--lead.vS-rc--noph{grid-template-columns:1fr;min-height:0}
+.vS-rc-k{justify-self:start;font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--paper-hi);background:var(--shu);padding:7px 12px 6px 14px}
+
+@media (max-width:820px){
+  .vS-rel .vS-rc--lead{grid-template-columns:1fr;border-left-width:0;border-top:6px solid var(--shu)}
+  .vS-rel .vS-rc--lead .vS-rc-im{min-height:0;aspect-ratio:16/9}
+  .vN{--vp-h:74px}
+  .vP-in{flex-direction:column;align-items:stretch;justify-content:center;gap:5px;padding:0 12px}
+  .vP-name{gap:.7em}
+  .vP-name b{font-size:13px;letter-spacing:.05em}
+  .vP-tabs{gap:6px}
+  .vP-tabs li{flex:1 1 0;min-width:0}
+  .vP-tab{width:100%;padding:4px 10px}
+  .vP-tab b{font-size:14px;letter-spacing:.08em}
+  .vP-tab small{letter-spacing:0}
+}
+@media (max-width:480px){
+  /* スマホ: 1 段・高さ 48px。左右 2 つの札だけ(「店の紹介」「この店の特集」。いまいる方が朱)。店名と説明文は帯の見た目から外す(読み上げには残る) */
+  .vN{--vp-h:48px}
+  .vP-in{flex-direction:row;align-items:center;justify-content:stretch;gap:0;padding:0 12px}
+  .vP-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  .vP-tabs{width:100%}
+  .vP-tab{height:44px;min-height:44px;padding:0 8px;justify-items:center;align-content:center;text-align:center}
+  .vP-tab b{font-size:14px;letter-spacing:.1em}
+  .vP-tab small{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  .vP-tab{transition:none}
+}
