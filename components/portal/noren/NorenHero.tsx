@@ -5,8 +5,8 @@ import Lantern from "./Lantern";
 
 type Props = { photo: string; count: number; areas: number };
 
-const CHARS5 = ["麺", "鮨", "肉", "酒", "蕎"];
-const CHARS3 = ["麺", "酒", "鮨"];
+const CHARS7 = ["和", "洋", "中", "麺", "肉", "酒", "茶"];
+const CHARS3 = ["和", "麺", "酒"];
 
 function Chars({ text, base = 0 }: { text: string; base?: number }) {
   return (
@@ -25,7 +25,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
   const stage = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const [mode, setMode] = useState<"init" | "gl" | "css">("init");
-  const [nPanels, setNPanels] = useState(5);
+  const [nPanels, setNPanels] = useState(7);
 
   useEffect(() => {
     const w = wrap.current!;
@@ -58,14 +58,14 @@ export default function NorenHero({ photo, count, areas }: Props) {
       const mobile = cssW < 640;
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       cloth?.resize({ cssW, cssH, dpr, rodY: mobile ? 62 : 78, hemY: cssH - (mobile ? 46 : 38), gap: mobile ? 5 : 7 });
-      const n = mobile ? 3 : 5;
+      const n = mobile ? 3 : 7;
       const gap = mobile ? 5 : 7;
       const aspect = (cssH - (mobile ? 46 : 38) - (mobile ? 62 : 78)) / ((cssW - (n - 1) * gap) / n);
       if (n !== lastN || Math.abs(aspect / lastAspect - 1) > 0.06) {
         if (n !== lastN) setNPanels(n);
         lastN = n;
         lastAspect = aspect;
-        cloth?.setChars(n === 3 ? CHARS3 : CHARS5, family, aspect);
+        cloth?.setChars(n === 3 ? CHARS3 : CHARS7, family, aspect);
       }
       dirty = true;
     };
@@ -131,7 +131,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
       }
       family = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || "serif";
       try {
-        await document.fonts.load(`400 100px ${family}`, "麺鮨肉酒蕎輪");
+        await document.fonts.load(`400 100px ${family}`, "和洋中麺肉酒茶輪");
         await document.fonts.ready;
       } catch {}
       if (!alive) return;
@@ -156,7 +156,7 @@ export default function NorenHero({ photo, count, areas }: Props) {
     };
   }, []);
 
-  const chars = nPanels === 3 ? CHARS3 : CHARS5;
+  const chars = nPanels === 3 ? CHARS3 : CHARS7;
 
   return (
     <section ref={wrap} className="vN-hero" id="top" data-mode={mode} aria-label="暖簾をくぐる">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, lazy, useEffect, useMemo, useState, type FormEvent } from "react";
 import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
-import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
+import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/cuisineBroad";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
@@ -52,13 +52,7 @@ export default function NorenSearch({ restaurants, facets }: { restaurants: Sear
     const needle = q.trim().toLowerCase();
     return restaurants.filter((r) => {
       if (region && r.region !== region) return false;
-      if (cuisine !== "ALL") {
-        const group = CUISINE_GROUPS.find((g) => g.label === cuisine);
-        if (group) {
-          const matched = group.keywords.some((kw) => r.cuisine.includes(kw));
-          if (!matched) return false;
-        }
-      }
+      if (cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
       if (tag && !(r.tags || []).includes(tag)) return false;
       if (needle) {
         const hay = (r.name + r.area + r.cuisine + r.address + r.desc + (r.tags || []).join(" ")).toLowerCase();
@@ -129,11 +123,13 @@ export default function NorenSearch({ restaurants, facets }: { restaurants: Sear
                   <label htmlFor="vSc-cuisine">業種</label>
                   <select id="vSc-cuisine" value={cuisine} onChange={(e) => setCuisine(e.target.value)}>
                     <option value="ALL">すべての業種</option>
-                    {CUISINE_GROUPS.map((g) => (
+                    {BROAD_GROUPS.map((g) => (
                       <option key={g.label} value={g.label}>
                         {g.label}
                       </option>
                     ))}
+                    {/* 以前の細かい分類の名前の URL（?cuisine=居酒屋 など）で開いたときだけ、その名前を 1 つ足す（選択の表示を保つ。絞り込みは lib/cuisineBroad.ts の matchesCuisineFilter） */}
+                    {isLegacyCuisineLabel(cuisine) && <option value={cuisine}>{cuisine}</option>}
                   </select>
                 </div>
                 <div className="vI-fld">

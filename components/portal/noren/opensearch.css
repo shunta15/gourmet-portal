@@ -1,0 +1,61 @@
+/* ====================================================================
+   グルメの入口の「店をさがす」の節（OpenSearch.tsx・OpenSearchForm.tsx）。.vN の変数（noren.css）を使う。色は変数と rgba(var(--sumi-rgb),α)・color-mix の形で書く。
+   最小の文字 12px、押す所 44px 以上、横スクロールなし。出現の動きは既存の .vN-rv（動きを減らす設定では noren.css が止める）。
+   ==================================================================== */
+.vOs{padding:clamp(72px,12vh,128px) var(--gx) clamp(64px,10vh,112px);border-top:1px solid var(--line);background:var(--sumi)}
+.vOs-in{max-width:1500px;margin:0 auto;display:grid;gap:clamp(36px,6vh,60px)}
+
+/* 見出し */
+.vOs-head{display:grid;gap:clamp(14px,2.2vh,22px);justify-items:start}
+.vOs-k{display:flex;align-items:baseline;gap:1.4em;font:700 14px/1 var(--f-min);letter-spacing:.5em;color:var(--shu-hi)}
+.vOs-k span{font:italic 400 14px/1 var(--f-lat);letter-spacing:.2em;color:var(--kinari-3)}
+.vOs-h{font:700 clamp(36px,5.2vw,76px)/1.25 var(--f-min);letter-spacing:.06em;color:var(--kinari);text-wrap:balance}
+.vOs-h em,.vOs-h3 em{color:var(--shu-hi)}
+.vOs-lead{font:400 clamp(14px,1.2vw,16px)/2 var(--f-sans);letter-spacing:.1em;color:var(--kinari-2);max-width:40em;word-break:auto-phrase;text-wrap:pretty}
+
+/* 検索の箱 */
+.vOs-form{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr) minmax(0,1fr) auto;gap:14px;align-items:end}
+.vOs-fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.vOs-fld label{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em}
+.vOs-fld input,.vOs-fld select{width:100%;min-width:0;min-height:52px;padding:0 16px;background:color-mix(in srgb,var(--kinari) 7%,transparent);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1.3 var(--f-sans);color-scheme:dark;text-overflow:ellipsis}
+.vOs-fld select option{color:var(--ink);background:var(--paper-hi)}
+.vOs-fld input::placeholder{color:var(--kinari-3);opacity:1}
+.vN .vOs-fld input:focus-visible,.vN .vOs-fld select:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+.vOs-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 30px 0 calc(30px + .24em);background:var(--shu);color:var(--paper-hi);font:700 15px/1 var(--f-min);letter-spacing:.24em;cursor:pointer;border:0;border-radius:0;transition:background .3s}
+.vOs-btn:hover{background:color-mix(in srgb,var(--shu) 80%,var(--kinari))}
+.vN .vOs-btn:focus-visible{outline:2px solid var(--shu-hi);outline-offset:4px}
+
+/* 業種・シーンの札 */
+.vOs-blk{display:grid;grid-template-columns:minmax(220px,.34fr) minmax(0,1fr);gap:clamp(18px,3vw,56px);align-items:start;padding-top:clamp(28px,4.5vh,44px);border-top:1px solid var(--line);scroll-margin-top:calc(var(--hd) + 24px)}
+.vOs-blk-h{display:grid;gap:12px;justify-items:start}
+.vOs-h3{font:700 clamp(24px,2.4vw,34px)/1.4 var(--f-min);letter-spacing:.08em;color:var(--kinari)}
+.vOs-note{font:400 13px/1.9 var(--f-sans);letter-spacing:.08em;color:var(--kinari-2);max-width:26em;word-break:auto-phrase;text-wrap:pretty}
+.vOs-chips{display:flex;flex-wrap:wrap;gap:10px}
+.vOs-chip{display:inline-flex;align-items:center;gap:.9em;min-height:44px;padding:0 16px;background:color-mix(in srgb,var(--kinari) 6%,transparent);border:1px solid var(--line-2);border-top:3px solid color-mix(in srgb,var(--kinari) 28%,var(--sumi));color:var(--kinari);font:500 15px/1.2 var(--f-min);letter-spacing:.1em;transition:background .3s,color .3s,border-color .3s}
+.vOs-chip i{font:italic 400 15px/1 var(--f-lat);letter-spacing:.06em;color:var(--kinari-3);font-variant-numeric:lining-nums;transition:color .3s}
+.vOs-chip small{font:500 12px/1 var(--f-min);letter-spacing:.1em;margin-left:.2em}
+.vOs-chip:hover{background:var(--kinari);color:var(--ink);border-top-color:var(--shu)}
+.vOs-chip:hover i{color:var(--ink-2)}
+
+/* 五つの章の入口から、この節の「業種からさがす」への 1 行 */
+.vN-chs-intro-more{display:flex;flex-wrap:wrap;align-items:center;gap:2px 1.2em;font:400 clamp(13px,1.1vw,15px)/1.9 var(--f-sans);letter-spacing:.12em;color:var(--kinari-2)}
+.vN-chs-intro-more a{display:inline-flex;align-items:center;min-height:44px;color:var(--shu-hi);border-bottom:1px solid currentColor;letter-spacing:.14em}
+
+@media (min-width:981px){
+  .vOs-h3 em{display:block}
+}
+@media (max-width:980px){
+  .vOs-form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .vOs-fld-q{grid-column:1 / -1}
+  .vOs-btn{grid-column:1 / -1;width:100%}
+  .vOs-blk{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+  .vOs-form{grid-template-columns:minmax(0,1fr)}
+  .vOs-k{letter-spacing:.34em}
+  .vOs-chips{gap:8px}
+  .vOs-chip{padding:0 14px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vOs-btn,.vOs-chip,.vOs-chip i{transition:none}
+}

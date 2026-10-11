@@ -5,7 +5,7 @@ import { Suspense, lazy, useMemo, useState, useEffect, type FormEvent } from "re
 import Footer from "./Footer";
 import RestaurantCard from "./RestaurantCard";
 import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
-import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
+import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/cuisineBroad";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 
 // 「こだわり条件で絞る」は公開スイッチ ON のときだけ（page.tsx が facets を渡す）。React.lazy で分けて、OFF のときは読み込まない
@@ -39,7 +39,7 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
     setTag(spTag);
   }, [spQ, spRegion, spCuisine, spTag]);
 
-  // cuisines は CUISINE_GROUPS に統合済み
+  // cuisines は CUISINE_GROUPS（検索の選択肢と絞り込みは lib/cuisineBroad.ts の 7 つの大分類）に統合済み
 
   // Aggregate all unique tags for the cloud
   const allTags = useMemo(() => {
@@ -54,13 +54,7 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
     const needle = q.trim().toLowerCase();
     return restaurants.filter((r) => {
       if (region && r.region !== region) return false;
-      if (cuisine !== "ALL") {
-        const group = CUISINE_GROUPS.find((g) => g.label === cuisine);
-        if (group) {
-          const matched = group.keywords.some((kw) => r.cuisine.includes(kw));
-          if (!matched) return false;
-        }
-      }
+      if (cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
       if (tag && !(r.tags || []).includes(tag)) return false;
       if (needle) {
         const hay = (
@@ -177,11 +171,13 @@ export default function SearchClient({ restaurants, facets }: SearchClientProps)
                 onChange={(e) => setCuisine(e.target.value)}
               >
                 <option value="ALL">すべての業種</option>
-                {CUISINE_GROUPS.map((g) => (
+                {BROAD_GROUPS.map((g) => (
                   <option key={g.label} value={g.label}>
                     {g.label}
                   </option>
                 ))}
+                {/* 以前の細かい分類の名前の URL（?cuisine=居酒屋 など）で開いたときだけ、その名前を 1 つ足す（選択の表示を保つ。絞り込みは lib/cuisineBroad.ts の matchesCuisineFilter） */}
+                {isLegacyCuisineLabel(cuisine) && <option value={cuisine}>{cuisine}</option>}
               </select>
             </div>
             <div className="sb-field sb-field-q">

@@ -224,7 +224,7 @@ void main(){
   float sWin = 0.0;
   float qq = clamp((y - rodY) / (hemY - rodY), 0.0, 1.0);
   float qyB = clamp((y - yb) / (hemY - yb), 0.0, 1.0);
-  for (int zi = 0; zi < 5; zi++) {
+  for (int zi = 0; zi < 9; zi++) {  // 上限 9 枚（以前は 5 枚。章が 7 つになったため。n 枚を超えたら break）
     if (float(zi) >= n) break;
     float kk = (mod(float(zi), 2.0) < 0.5) ? floor(float(zi) * 0.5) : (n - 1.0 - floor(float(zi) * 0.5));
     float xtl, xtr;

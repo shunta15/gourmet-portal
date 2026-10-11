@@ -5,6 +5,7 @@
  * （指定パスがその店の image / heroImages / gallery に無ければ、先頭の実写真にフォールバック）。
  */
 import { sized } from "@/lib/imageUrl";
+import { BROAD_GROUPS, matchesBroadKey } from "@/lib/cuisineBroad";
 
 export type NRestaurant = {
   id: string;
@@ -24,16 +25,48 @@ export type CatDef = {
   no: string;
   en: string;
   ja: string;
-  re: RegExp;
   note: string;
   picks: [id: string, path: string][];
 };
 
-export const CATS: CatDef[] = [
-  {
-    key: "men", kanji: "麺", no: "一", en: "Ramen", ja: "ラーメン",
-    re: /ラーメン|拉麺|らーめん|中華そば|つけ麺/,
-    note: "業種表記に「ラーメン・中華そば・つけ麺」を含む店",
+/**
+ * 暖簾の 7 つの章（和・洋・中・麺・肉・酒・茶）。章の入る店は lib/cuisineBroad.ts の大分類（業種の表記の語 + 店 ID の振り分け）。key・漢字・番号・英名・日本語名はそちらが持つ。
+ * ここは、章ごとの注記と、章に並べる店（手で選んだ店 ID と写真パス。写真はその店自身の写真。指定パスがその店に無ければ先頭の実写真）。
+ */
+const CHAPTER_DEF: Record<string, { note: string; picks: [id: string, path: string][] }> = {
+  wa: {
+    note: "寿司・蕎麦・うどん・割烹・定食などの店",
+    picks: [
+      ["r162", "/restaurants/r162/r162-01.webp"],
+      ["r195", "/restaurants/r195/r195-04.jpg"],
+      ["r123", "/restaurants/r123/r123-02.jpg"],
+      ["r227", "/restaurants/r227/r227-02.jpg"],
+      ["r124", "/restaurants/r124/r124-02.jpg"],
+      ["r100", "/restaurants/r100/r100-02.jpg"],
+    ],
+  },
+  yo: {
+    note: "イタリアン・フレンチ・ビストロ・洋食などの店",
+    picks: [
+      ["r50", "/restaurants/r50/r50-image-1.jpg"],
+      ["r56", "/restaurants/r56/r56-mv_1.jpg"],
+      ["r111", "/restaurants/r111/r111-03.jpg"],
+      ["r135", "/restaurants/r135/r135-g1.jpg"],
+      ["r155", "/restaurants/r155/r155-02.jpg"],
+    ],
+  },
+  chu: {
+    note: "中華・餃子・カレー・韓国・ベトナムなどの店",
+    picks: [
+      ["r07", "/restaurants/r07/r07-dandan-1.jpg"],
+      ["r64", "/restaurants/r64/r64-02.jpg"],
+      ["r125", "/restaurants/r125/r125-03.jpg"],
+      ["r178", "/restaurants/r178/r178-03.jpg"],
+      ["r148", "/restaurants/r148/r148-02.jpg"],
+    ],
+  },
+  men: {
+    note: "ラーメン・つけ麺・中華そば・まぜそばの店",
     picks: [
       ["r06", "/restaurants/r06/r06-hero.jpg"],
       ["r159", "/restaurants/r159/r159-04.jpg"],
@@ -42,21 +75,8 @@ export const CATS: CatDef[] = [
       ["r176", "/restaurants/r176/r176-03.jpg"],
     ],
   },
-  {
-    key: "sushi", kanji: "鮨", no: "二", en: "Sushi", ja: "鮨・寿司",
-    re: /寿司|鮨|すし/,
-    note: "業種表記に「鮨・寿司」を含む店",
-    picks: [
-      ["r162", "/restaurants/r162/r162-01.webp"],
-      ["r123", "/restaurants/r123/r123-02.jpg"],
-      ["r124", "/restaurants/r124/r124-02.jpg"],
-      ["r184", "/restaurants/r184/r184-02.jpg"],
-    ],
-  },
-  {
-    key: "niku", kanji: "肉", no: "三", en: "Yakiniku", ja: "焼肉",
-    re: /焼肉|ホルモン|ジンギスカン/,
-    note: "業種表記に「焼肉・ホルモン」を含む店",
+  niku: {
+    note: "焼肉・ホルモン・焼鳥・ステーキ・鉄板などの店",
     picks: [
       ["r128", "/restaurants/r128/r128-03.jpg"],
       ["r129", "/restaurants/r129/r129-04.jpg"],
@@ -65,10 +85,8 @@ export const CATS: CatDef[] = [
       ["r76", "/restaurants/r76/r76-02.jpg"],
     ],
   },
-  {
-    key: "sake", kanji: "酒", no: "四", en: "Izakaya", ja: "居酒屋",
-    re: /居酒屋|酒場|バル|炉端/,
-    note: "業種表記に「居酒屋・酒場・バル・炉端」を含む店",
+  sake: {
+    note: "居酒屋・酒場・バー・バル・ワインなどの店",
     picks: [
       ["r197", "/restaurants/r197/r197-08.jpg"],
       ["r160", "/restaurants/r160/r160-05.jpg"],
@@ -78,19 +96,19 @@ export const CATS: CatDef[] = [
       ["r59", "/restaurants/r59/r59-03.jpg"],
     ],
   },
-  {
-    key: "soba", kanji: "蕎", no: "五", en: "Soba & Udon", ja: "蕎麦・うどん",
-    re: /蕎麦|そば|うどん/,
-    note: "業種表記に「蕎麦・そば・うどん」を含む店",
+  cha: {
+    note: "カフェ・喫茶・スイーツ・パンなどの店",
     picks: [
-      ["r195", "/restaurants/r195/r195-04.jpg"],
-      ["r227", "/restaurants/r227/r227-02.jpg"],
-      ["r100", "/restaurants/r100/r100-02.jpg"],
-      ["r103", "/restaurants/r103/r103-03.jpg"],
-      ["r221", "/restaurants/r221/r221-02.jpg"],
+      ["r22", "/restaurants/r22/r22-image-1.jpg"],
+      ["r215", "/restaurants/r215/r215-02.jpg"],
+      ["r202", "/restaurants/r202/r202-04.jpg"],
+      ["r232", "/restaurants/r232/r232-02.jpg"],
+      ["r43", "/restaurants/r43/r43-image-3.jpg"],
     ],
   },
-];
+};
+
+export const CATS: CatDef[] = BROAD_GROUPS.map((g) => ({ key: g.key, kanji: g.kanji, no: g.no, en: g.en, ja: g.label, ...CHAPTER_DEF[g.key] }));
 
 /** 暖簾の奥に見える店の灯り（実在店の写真） */
 export const HERO_PICK: [string, string] = ["r81", "/restaurants/r81/r81-01.jpg"];
@@ -140,7 +158,7 @@ export function buildChapters(rs: NRestaurant[], regionName: (k: string) => stri
   const byId = new Map(rs.map((r) => [r.id, r]));
   const used = new Set<string>();
   return CATS.map((c) => {
-    const count = rs.filter((r) => c.re.test(r.cuisine)).length;
+    const count = rs.filter((r) => matchesBroadKey(c.key, r)).length;
     const shops: ChapterShop[] = [];
     for (const [id, path] of c.picks) {
       const r = byId.get(id);

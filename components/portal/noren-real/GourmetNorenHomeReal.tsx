@@ -7,6 +7,8 @@ import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/nor
 import NorenHeroReal from "./NorenHeroReal";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
+import OpenSearch from "@/components/portal/noren/OpenSearch";
+import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import "../noren/top.css";
 import "./real.css";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
@@ -71,17 +73,24 @@ export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrl
         allowUrlOverride={allowUrlOverride}
       />
 
+      {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
+      <OpenSearch data={buildOpenSearchData(restaurants)} />
+
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">
         <div className="vN-chs-intro">
           <div className="vN-chs-intro-tx vN-rv">
-            <p className="vN-chs-intro-k">五つの章</p>
+            <p className="vN-chs-intro-k">七つの章</p>
             <p className="vN-chs-intro-t">
-              麺、鮨、肉、酒、蕎。<br />
+              和、洋、中、麺、肉、酒、茶。<br />
               暖簾の一文字ごとに、<br />
               実在の店を数軒ずつ。
             </p>
-            <p className="vN-chs-intro-s">スクロールで店が入れ替わります。縦書きの店名を押すと、その店のページへ。数字は、業種表記に当てはまる掲載店の数です。</p>
+            <p className="vN-chs-intro-s">スクロールで店が入れ替わります。縦書きの店名を押すと、その店のページへ。数字は、その章に入る掲載店の数です。</p>
+            <p className="vN-chs-intro-more">
+              <span>ほかの業種は、上の「業種からさがす」から。</span>
+              <a href="#open-cuisine" data-cursor="JUMP">業種からさがす <span aria-hidden="true">↑</span></a>
+            </p>
           </div>
           <ul className="vN-toc vN-rv" style={{ ["--d" as string]: 1 }}>
             {chapters.map((c) => (

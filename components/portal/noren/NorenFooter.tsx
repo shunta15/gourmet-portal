@@ -3,7 +3,7 @@ import { FOOT_INFO, FOOT_NAV, FOOT_NOREN, FOOT_REGIONS, NOREN_TOP } from "@/lib/
 import NorenNewsletter from "./NorenNewsletter";
 
 /**
- * 暖簾の共通フッター（見本 /proto-noren と本番の /gourmet で共通）。竿に五つの小さな暖簾（top の章へ）、その下に今のフッターと同じ行き先
+ * 暖簾の共通フッター（見本 /proto-noren と本番の /gourmet で共通）。竿に七つの小さな暖簾（top の章へ）、その下に今のフッターと同じ行き先
  * （ナビゲーション 5・地域 5・サイト情報 4）とニュースレター。
  * top: トップの行き先（見本は NOREN_TOP、本番は /gourmet）。extraNav: ナビゲーションの末尾に足すリンク（本番の /gourmet だけが渡す。見本は渡さない）。
  */

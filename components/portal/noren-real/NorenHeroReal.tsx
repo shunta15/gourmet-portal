@@ -414,7 +414,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
         <canvas ref={canvas} className="vR-cloth" aria-hidden="true" />
         <div className="vR-vig" aria-hidden="true" />
 
-        <nav ref={doors} className="vR-doors" aria-label="グルメの種類（麺・鮨・肉・酒・蕎）" style={{ ["--n" as string]: chapters.length }}>
+        <nav ref={doors} className="vR-doors" aria-label="グルメの種類（和・洋・中・麺・肉・酒・茶）" style={{ ["--n" as string]: chapters.length }}>
           {chapters.map((c, i) => (
             <a key={c.key} href={`#ch-${c.key}`} className="vR-door" data-i={i} data-cursor="ENTER" onClick={(e) => go(e, i)}>
               <span className="vN-vh">{c.kanji}　{c.ja}</span>

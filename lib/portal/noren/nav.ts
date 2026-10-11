@@ -71,11 +71,13 @@ export const FOOT_INFO = [
   { href: "/owner", ja: "店舗登録" },
 ] as const;
 
-/** フッターの五つの暖簾（トップの章の漢字）。押すとトップのその章へ */
+/** フッターの七つの暖簾（トップの章の漢字。lib/cuisineBroad.ts の大分類と同じ並び）。押すとトップのその章へ */
 export const FOOT_NOREN = [
+  { key: "wa", kanji: "和", ja: "和食" },
+  { key: "yo", kanji: "洋", ja: "洋食" },
+  { key: "chu", kanji: "中", ja: "中華・アジア" },
   { key: "men", kanji: "麺", ja: "ラーメン" },
-  { key: "sushi", kanji: "鮨", ja: "鮨・寿司" },
-  { key: "niku", kanji: "肉", ja: "焼肉" },
-  { key: "sake", kanji: "酒", ja: "居酒屋" },
-  { key: "soba", kanji: "蕎", ja: "蕎麦・うどん" },
+  { key: "niku", kanji: "肉", ja: "焼肉・焼鳥" },
+  { key: "sake", kanji: "酒", ja: "居酒屋・バー" },
+  { key: "cha", kanji: "茶", ja: "カフェ・甘味" },
 ] as const;
