@@ -2,25 +2,25 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Suspense, lazy, useEffect, useMemo, useState, type FormEvent } from "react";
+import { Suspense, lazy, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
 import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/cuisineBroad";
 import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
+import { sized } from "@/lib/imageUrl";
+import type { MapMode, MapPt } from "./ShopMap";
 import "./opensearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
 const SearchFacets = lazy(() => import("@/components/portal/SearchFacets"));
-// 地図（地理院の淡い地図 + leaflet。既存の components/LeafletMap.tsx）。画面に出るまで読み込まない（next/dynamic + 中の IntersectionObserver）
-const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
+// 地図（絵図 a・線だけの地図 b。components/portal/noren/ShopMap.tsx）。画面に出るまで読み込まない（next/dynamic。leaflet も中で遅れて読む）
+const ShopMap = dynamic(() => import("./ShopMap"), {
   ssr: false,
   loading: () => <div className="vMp-maploading">地図を読み込み中…</div>,
 });
 
-/** 地図に出す店の上限（座標のある店のうち、絞り込んだ先頭から） */
-export const MAP_MAX = 220;
 /** 1 ページに出す店の数 */
 const PER = 24;
 
@@ -36,26 +36,84 @@ const isTab = (s: string | null): s is Tab => !!s && TABS.some((t) => t.key === 
 
 type SceneDef = { slug: string; name: string; matchTags: string[] };
 
-/** 絞り込んだ店の地図。座標のある店だけを、上限 MAP_MAX までピンで出す（押すと店名・エリア・業種の札が出て、店ページへ行ける） */
-function ResultsMap({ list, coords }: { list: SearchItem[]; coords: Record<string, [number, number]> }) {
-  const { points, withCoords } = useMemo(() => {
-    const withC = list.filter((r) => coords[r.id]);
-    return {
-      withCoords: withC.length,
-      points: withC.slice(0, MAP_MAX).map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], href: `/restaurant/${r.id}`, sub: `${r.area}・${r.cuisine}` })),
+/** 件数の数字。値が替わると、前の数から数え上がる（「動きを減らす」設定では、すぐ替える）。最初に開いたときは 0 から */
+function CountUp({ value }: { value: number }) {
+  const [n, setN] = useState(value);
+  const prev = useRef<number | null>(null);
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const from = prev.current ?? 0;
+    prev.current = value;
+    if (reduce || from === value) {
+      setN(value);
+      return;
+    }
+    let raf = 0;
+    const t0 = performance.now();
+    const dur = 700;
+    const tick = (now: number) => {
+      const k = Math.min(1, (now - t0) / dur);
+      const e = 1 - Math.pow(1 - k, 3);
+      setN(Math.round(from + (value - from) * e));
+      if (k < 1) raf = requestAnimationFrame(tick);
     };
-  }, [list, coords]);
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [value]);
+  return <>{n}</>;
+}
+
+/**
+ * 絞り込んだ店の地図。地域を選んでいないとき: a は日本地図のマス（県ごとの店の数）、b は地域ごとの丸。選んだら、その地域の位置のある店を全部ピンで（上限は設けない）。
+ * ピンを押すと店名・エリア・業種の札が出て、店ページへ行ける。
+ */
+function ResultsMap({
+  list,
+  coords,
+  prefOf,
+  townOf,
+  prefRegion,
+  mode,
+  regionKey,
+  onPick,
+}: {
+  list: SearchItem[];
+  coords: Record<string, [number, number]>;
+  prefOf: Record<string, string>;
+  townOf: Record<string, string>;
+  prefRegion: Record<string, string>;
+  mode: MapMode;
+  regionKey: string;
+  onPick: (region: string) => void;
+}) {
+  const { pts, prefCounts, regionCounts } = useMemo(() => {
+    const pts: MapPt[] = list
+      .filter((r) => coords[r.id])
+      .map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], area: r.area, cuisine: r.cuisine, photo: r.image ? sized(r.image, 360) : "", town: townOf[r.id] ?? "", region: r.region }));
+    const prefCounts: Record<string, number> = {};
+    const byRegion = new Map<string, number>();
+    for (const r of list) {
+      const p = prefOf[r.id];
+      if (p) prefCounts[p] = (prefCounts[p] ?? 0) + 1;
+      byRegion.set(r.region, (byRegion.get(r.region) ?? 0) + 1);
+    }
+    const regionCounts = [...byRegion.entries()].map(([key, count]) => ({ key, name: REGIONS[key as RegionKey]?.name ?? key, count }));
+    return { pts, prefCounts, regionCounts };
+  }, [list, coords, prefOf, townOf]);
+  const nation = !regionKey;
   return (
     <div className="vMp-map">
       <div className="vSc-map-fr">
-        <LeafletMap points={points} height={460} zoom={14} />
+        <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={prefCounts} prefRegion={prefRegion} regionCounts={regionCounts} onPick={onPick} />
       </div>
       <p className="vMp-mapnote" aria-live="polite">
-        {withCoords === 0
-          ? "この条件の店には、地図に出せる位置の情報がありません。"
-          : withCoords > MAP_MAX
-            ? `位置のわかる ${withCoords} 軒のうち、先頭の ${MAP_MAX} 軒を地図に出しています。`
-            : `位置のわかる ${withCoords} 軒を地図に出しています。`}
+        {nation
+          ? mode === "a"
+            ? `県のマスに店の数を出しています(全 ${list.length} 軒)。店のある県を押すと、その地域の店に絞り込みます。`
+            : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
+          : pts.length === 0
+            ? "この条件の店には、地図に出せる位置の情報がありません。"
+            : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
       </p>
     </div>
   );
@@ -75,11 +133,23 @@ export default function NorenSearch({
   facets,
   sceneDefs,
   coords,
+  prefOf,
+  townOf,
+  prefRegion,
+  allowMapUrl = false,
 }: {
   restaurants: SearchItem[];
   facets?: FacetPayload;
   sceneDefs: SceneDef[];
   coords: Record<string, [number, number]>;
+  /** 店 ID → 住所の都道府県 slug（全店。位置の無い店も県のマスに数えるため） */
+  prefOf: Record<string, string>;
+  /** 店 ID → 市区町村（lib/towns.ts の取り出し方。絵図 a の目印の地名用） */
+  townOf: Record<string, string>;
+  /** 県 slug → その県の店の地域（region のキー）。店のデータの住所の県と region から作った対応 */
+  prefRegion: Record<string, string>;
+  /** URL の ?map=a|b で地図の見た目を替えられるか（本番でないときだけ true。?sp= と同じ） */
+  allowMapUrl?: boolean;
 }) {
   const router = useRouter();
   const sp = useSearchParams();
@@ -91,6 +161,9 @@ export default function NorenSearch({
   const spTag = sp.get("tag") || "";
   const spScene = sp.get("scene") || "";
   const spTab = sp.get("tab");
+  // 地図の見た目: 既定は a（絵図）。?map=b（線だけの地図）は、本番でないときだけ
+  const mapParam = sp.get("map");
+  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c") ? mapParam : "a";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);
@@ -182,6 +255,7 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
+    if (allowMapUrl && (mapParam === "b" || mapParam === "c")) params.set("map", mapParam);
     if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };
@@ -246,7 +320,7 @@ export default function NorenSearch({
 
                 {/* 箱: 左に地図・右にそのタブの一覧 */}
                 <div className="vMp-box">
-                  <ResultsMap list={list} coords={coords} />
+                  <ResultsMap list={list} coords={coords} prefOf={prefOf} townOf={townOf} prefRegion={prefRegion} mode={mapMode} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
                   <div className={`vMp-side vMp-side--${active}`}>
                     {active === "area" && (
                       <>
@@ -343,13 +417,13 @@ export default function NorenSearch({
                     )}
                   </p>
                   <p className="vI-bar-n">
-                    <em>{list.length}</em> / {restaurants.length}
+                    <em><CountUp value={list.length} /></em> / {restaurants.length}
                     <small>店</small>
                   </p>
                 </div>
 
                 {shown.length > 0 ? (
-                  <ul className="vSc-grid" aria-label="検索結果">
+                  <ul key={`${spQ}|${spRegion}|${spCuisine}|${spScene}|${spTag}|${cur}`} className="vSc-grid vMp-gridin" aria-label="検索結果">
                     {shown.map((r, i) => {
                       const t = ext?.tagsOf?.(r.id);
                       return (
