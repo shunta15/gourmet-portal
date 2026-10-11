@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import FeaturePage from "@/components/portal/noren/FeaturePage";
 import FeatureSinglePage from "@/components/portal/noren/FeatureSinglePage";
+import FeatureScenePage from "@/components/portal/noren/FeatureScenePage";
 import {
   buildArticleJsonLd,
   buildFeatureBreadcrumbJsonLd,
@@ -20,6 +21,7 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import { pairFeatureNote, pairShopNote, pairedShopOfFeature } from "@/lib/portal/noren/pair";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
 
@@ -89,6 +91,8 @@ export default async function Page({
   // 店 1 軒の記事（POINT 01〜の視点の並び）は、店 1 軒用の枠（FeatureSinglePage）で出す。複数の店・場所の記事は今のまま（FeaturePage）。
   // 切り替えは lib/portal/noren/featureSingle.ts の NOREN_FEATURE_SINGLE（false で全記事が FeaturePage に戻る）。
   const single = NOREN_FEATURE_SINGLE && isSingleShopFeature(article);
+  // 利用シーン+店舗紹介の記事（ID が scene- で始まり、全項目が店ページを指す）は、専用の枠（FeatureScenePage）。切り替えは lib/portal/noren/featureScene.ts の NOREN_FEATURE_SCENE。
+  const scene = !single && NOREN_FEATURE_SCENE && isSceneShopFeature(article.id, article);
   // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
   const shop = single && storeId ? await getRestaurantById(storeId) : null;
   // 店ページとの切り替えの帯: 対の店ページがある記事だけ（店ページ側と同じ関数 pairedShopOfFeature の対応表。店名の部分一致はしない）
@@ -123,6 +127,8 @@ export default async function Page({
           links={LIVE_LINKS}
           href={(h) => h}
         />
+      ) : scene ? (
+        <FeatureScenePage article={article} features={FEATURES} fmap={fmap} links={LIVE_LINKS} href={(h) => h} />
       ) : (
         <FeaturePage
           article={article}
