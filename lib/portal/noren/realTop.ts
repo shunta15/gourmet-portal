@@ -14,7 +14,7 @@
 export type NorenRealDye = "ai" | "kon" | "sumi" | "kakishibu" | "enji";
 
 /** true で /gourmet の最初の画面がリアル版になる（公開するときはここを true にして再デプロイ） */
-export const NOREN_REAL_TOP = false;
+export const NOREN_REAL_TOP = true;
 
 /** 本番で使う布の色: ai（藍）・kon（濃紺）・sumi（墨）・kakishibu（柿渋）・enji（臙脂） */
 export const NOREN_REAL_DYE: NorenRealDye = "ai";
@@ -27,7 +27,7 @@ export const NOREN_REAL_DYE: NorenRealDye = "ai";
  * - false: 今までどおり（本番の暖簾。出力は変わらない）。元に戻すときは false にして再デプロイ。
  * - 実装: components/portal/noren-real/（clothInner.ts・lanternInner.ts・dye.css）。本番の暖簾の部品（cloth.ts・Lantern.tsx）は書き換えていない。
  */
-export const NOREN_REAL_INNER = false;
+export const NOREN_REAL_INNER = true;
 
 /**
  * 布・竿・奥の写真の明るさの段階（1〜5）。見本 /proto-noren/real で段階を見比べて決める（URL の ?bright=1〜5。時刻は ?t=12:30 / ?t=21:30）。
@@ -65,7 +65,7 @@ export function effBright(mul: number, lamp: number): number {
  * - 見本 /proto-noren/real では、操作盤の「地の色」（URL の ?ground=）で切り替えて見比べる。
  */
 export type NorenRealGround = "sumi" | "aizumi" | "kogecha" | "tetsukon" | "haizumi";
-export const NOREN_REAL_GROUND: NorenRealGround = "sumi";
+export const NOREN_REAL_GROUND: NorenRealGround = "haizumi";
 
 export const GROUND_LIST: { key: NorenRealGround; label: string; swatch: string }[] = [
   { key: "sumi", label: "墨", swatch: "#0f0c0a" },
