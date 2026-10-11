@@ -34,14 +34,15 @@ export default function DyePanel() {
     setT(qs.get("t"));
     // スマホ幅では、布を隠さないよう、はじめは畳んでおく（「見え方」を押すと開く）
     if (window.matchMedia("(max-width:640px)").matches) setOpen(false);
-    const g = parseGround(qs.get("ground")) ?? NOREN_REAL_GROUND;
+    const g0 = parseGround(qs.get("ground")) ?? NOREN_REAL_GROUND;
+    const g: NorenRealGround = g0 === "sumi" || g0 === "aizumi" ? "kogecha" : g0;
     const pp = parsePaper(qs.get("paper")) ?? "kinari";
     setGround(g);
     setPaper(pp);
     // 指定があるときだけ、枠に付ける（指定なしは本番の既定のまま）
     const root = document.querySelector<HTMLElement>(".vN");
     if (root) {
-      if (qs.get("ground") && parseGround(qs.get("ground"))) root.dataset.ground = g;
+      root.dataset.ground = g;
       if (qs.get("paper") && parsePaper(qs.get("paper"))) root.dataset.paper = pp;
     }
   }, []);
@@ -73,6 +74,8 @@ export default function DyePanel() {
     const root = document.querySelector<HTMLElement>(".vN");
     if (root) root.dataset.paper = k;
     rewrite("paper", k);
+    // どこの色かが分かるよう、明るい紙の面（下の「特集」の段）まで動かす
+    document.querySelector(".vN-menu")?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
   const pickTime = (v: string | null) => {
     try {
@@ -91,7 +94,7 @@ export default function DyePanel() {
       <div className="dp-body" hidden={!open}>
       <div className="dp-r">
         <span className="dp-t">暖簾の色</span>
-        {DYE_LIST.map((d) => (
+        {DYE_LIST.filter((d) => d.key !== "kon" && d.key !== "sumi").map((d) => (
           <button key={d.key} type="button" className="dp-b" data-on={cur === d.key ? "1" : "0"} aria-pressed={cur === d.key} onClick={() => pick(d.key)}>
             <i style={{ background: d.swatch }} />
             {d.label}
@@ -100,7 +103,7 @@ export default function DyePanel() {
       </div>
       <div className="dp-r">
         <span className="dp-t">地の色</span>
-        {GROUND_LIST.map((g) => (
+        {GROUND_LIST.filter((g) => g.key !== "sumi" && g.key !== "aizumi").map((g) => (
           <button key={g.key} type="button" className="dp-b" data-on={ground === g.key ? "1" : "0"} aria-pressed={ground === g.key} onClick={() => pickGround(g.key)}>
             <i style={{ background: g.swatch }} />
             {g.label}
@@ -108,7 +111,7 @@ export default function DyePanel() {
         ))}
       </div>
       <div className="dp-r">
-        <span className="dp-t">紙の色</span>
+        <span className="dp-t">特集の面の色</span>
         {PAPER_LIST.map((g) => (
           <button key={g.key} type="button" className="dp-b" data-on={paper === g.key ? "1" : "0"} aria-pressed={paper === g.key} onClick={() => pickPaper(g.key)}>
             <i style={{ background: g.swatch }} />
