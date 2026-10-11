@@ -18,5 +18,5 @@
  * - NOREN_STRIP_OTHER_RATINGS: ほかのサイト・サービスの点数・星・評価の高さ・件数に触れた文／句を、表示するデータから取り除く処理（lib/otherSiteRatings.ts）を、
  *   データ層（lib/db/restaurants.ts・lib/db/features.ts）と暖簾の表示（店ページ・記事ページ）に掛けるか。RELEASE_REST とは別のスイッチ。false のあいだは main と同じ文で出る。
  */
-export const RELEASE_REST = true; // true: 見本が基準（全部出る）／false: 入口だけを新しくする版（入口以外は main と同じ）
-export const NOREN_STRIP_OTHER_RATINGS = true;
+export const RELEASE_REST = false; // true: 見本が基準（全部出る）／false: 入口だけを新しくする版（入口以外は main と同じ）
+export const NOREN_STRIP_OTHER_RATINGS = false;
