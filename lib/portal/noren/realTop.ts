@@ -40,7 +40,7 @@ export type NorenRealBright = 1 | 2 | 3 | 4 | 5;
 export const NOREN_REAL_BRIGHT: NorenRealBright = 1;
 
 /** 段階 → 倍率（昼の灯りが弱い時刻での倍率。夜は 1 に寄せて掛かる） */
-export const BRIGHT_MUL: Record<NorenRealBright, number> = { 1: 1.0, 2: 1.25, 3: 1.5, 4: 1.8, 5: 2.2 };
+export const BRIGHT_MUL: Record<NorenRealBright, number> = { 1: 1.0, 2: 1.4, 3: 1.9, 4: 2.5, 5: 3.2 };
 
 /** 見本の操作盤から明るさを切り替える口。window に CustomEvent(BRIGHT_EVENT, { detail: 1〜5 }) を送ると、読み込み直しなしで替わる */
 export const BRIGHT_EVENT = "noren-real:bright";
@@ -56,4 +56,37 @@ export function effBright(mul: number, lamp: number): number {
   const t = Math.min(1, Math.max(0, (lamp - 0.18) / (1 - 0.18)));
   const k = t * t * (3 - 2 * t);
   return mul + (1 + (mul - 1) * 0.35 - mul) * k;
+}
+
+/**
+ * 暖簾のページの地（背景）の色。sumi（墨・今のまま）・aizumi（藍墨）・kogecha（焦茶）・tetsukon（鉄紺）・haizumi（灰墨）。
+ * - sumi 以外にすると、NorenFrame が枠（.vN）に data-ground を付け、components/portal/noren-real/ground.css が --sumi・--sumi-2・--sumi-3・--sumi-4・--sumi-rgb を上書きする。
+ *   sumi のときは何も付けない＝出力は今までと同じ。本番はこの値だけを使う（URL では変えられない）。
+ * - 見本 /proto-noren/real では、操作盤の「地の色」（URL の ?ground=）で切り替えて見比べる。
+ */
+export type NorenRealGround = "sumi" | "aizumi" | "kogecha" | "tetsukon" | "haizumi";
+export const NOREN_REAL_GROUND: NorenRealGround = "sumi";
+
+export const GROUND_LIST: { key: NorenRealGround; label: string; swatch: string }[] = [
+  { key: "sumi", label: "墨", swatch: "#0f0c0a" },
+  { key: "aizumi", label: "藍墨", swatch: "#0b1018" },
+  { key: "kogecha", label: "焦茶", swatch: "#20160f" },
+  { key: "tetsukon", label: "鉄紺", swatch: "#14203a" },
+  { key: "haizumi", label: "灰墨", swatch: "#26221f" },
+];
+
+/** ?ground= の文字列を地の色に直す。合わなければ null */
+export function parseGround(q: string | null | undefined): NorenRealGround | null {
+  return GROUND_LIST.find((g) => g.key === q)?.key ?? null;
+}
+
+/** 紙の節の色（見本の操作盤の「紙の色」。?paper=）。kinari（生成り・今のまま）・shirocha（白茶）・haijiro（灰白） */
+export type NorenRealPaper = "kinari" | "shirocha" | "haijiro";
+export const PAPER_LIST: { key: NorenRealPaper; label: string; swatch: string }[] = [
+  { key: "kinari", label: "生成り", swatch: "#efe6d6" },
+  { key: "shirocha", label: "白茶", swatch: "#e8dcc4" },
+  { key: "haijiro", label: "灰白", swatch: "#e3e1db" },
+];
+export function parsePaper(q: string | null | undefined): NorenRealPaper | null {
+  return PAPER_LIST.find((g) => g.key === q)?.key ?? null;
 }

@@ -3,15 +3,16 @@ import Boot from "./Boot";
 import NorenHeader from "./NorenHeader";
 import NorenFooter from "./NorenFooter";
 import { brush, latin } from "./fonts";
-import { NOREN_REAL_DYE, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
+import { NOREN_REAL_DYE, NOREN_REAL_GROUND, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 import "../noren-real/dye.css";
+import "../noren-real/ground.css";
 
 // 出現・暖簾の演出は、最初は隠した状態から始まる。スクリプトが動かない環境では、最初から全部見える（中身は全部そのまま読める）
 const NOREN_NOSCRIPT_CSS =
   ".vN .vN-rv{opacity:1!important;transform:none!important}" +
   ".vS-hero{--open:1!important;--ex:1!important}" +
   ".vS-door{opacity:1!important}.vS-cover,.vS-cue,.vS-cloth,.vS-lan{display:none!important}" +
-  ".vN-hd{background:rgba(15,12,10,.94)!important}" +
+  ".vN-hd{background:rgba(var(--sumi-rgb,15,12,10),.94)!important}" +
   ".vF-stamp{opacity:.8!important;transform:rotate(-6deg)!important}" +
   ".vF-nr-fb{opacity:1!important}.vF-rodline{opacity:1!important}.vF-cloth,.vF-idx,.vF-prog{display:none!important}" +
   ".vH-door{--lift:1!important;--ex:1!important}";
@@ -31,7 +32,7 @@ export default function NorenFrame({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined}>
+    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined} data-ground={NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined}>
       <noscript>
         <style>{NOREN_NOSCRIPT_CSS}</style>
       </noscript>

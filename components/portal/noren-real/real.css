@@ -14,9 +14,9 @@
   will-change:transform;
 }
 .vR-shade{position:absolute;inset:0;background:
-  radial-gradient(ellipse 30% 58% at 50% 58%,rgba(15,12,10,calc(var(--open) * .62)) 0%,rgba(15,12,10,calc(var(--open) * .30)) 58%,rgba(15,12,10,0) 100%),
-  radial-gradient(ellipse 70% 62% at 50% 56%,rgba(15,12,10,0) 0%,rgba(15,12,10,.35) 60%,rgba(15,12,10,.86) 100%),
-  linear-gradient(180deg,rgba(15,12,10,.75) 0%,rgba(15,12,10,0) 22%,rgba(15,12,10,0) 48%,rgba(15,12,10,.88) 82%,rgba(15,12,10,.98) 100%)}
+  radial-gradient(ellipse 30% 58% at 50% 58%,rgba(var(--sumi-rgb,15,12,10),calc(var(--open) * .62)) 0%,rgba(var(--sumi-rgb,15,12,10),calc(var(--open) * .30)) 58%,rgba(var(--sumi-rgb,15,12,10),0) 100%),
+  radial-gradient(ellipse 70% 62% at 50% 56%,rgba(var(--sumi-rgb,15,12,10),0) 0%,rgba(var(--sumi-rgb,15,12,10),.35) 60%,rgba(var(--sumi-rgb,15,12,10),.86) 100%),
+  linear-gradient(180deg,rgba(var(--sumi-rgb,15,12,10),.75) 0%,rgba(var(--sumi-rgb,15,12,10),0) 22%,rgba(var(--sumi-rgb,15,12,10),0) 48%,rgba(var(--sumi-rgb,15,12,10),.88) 82%,rgba(var(--sumi-rgb,15,12,10),.98) 100%)}
 .vR-glow{position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none;
   background:radial-gradient(ellipse 38% 58% at 50% 60%,rgba(240,196,140,calc(.06 + var(--lamp) * .12)),rgba(200,54,29,calc(.03 + var(--lamp) * .04)) 55%,transparent 75%)}
 /* 提灯（WebGL の canvas。写真と布のあいだ。暖簾が上がると見える。本番と同じ「奥の左右の上」）。WebGL が使えないときは本番の CSS の提灯（.vN-hero-lan） */

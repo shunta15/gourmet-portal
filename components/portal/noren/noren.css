@@ -5,6 +5,7 @@
    ==================================================================== */
 .vN{
   --sumi:#0f0c0a; --sumi-2:#181310; --sumi-3:#231b15; --sumi-4:#0a0806;
+  --sumi-rgb:15,12,10;  /* --sumi の R,G,B（半透明の墨 rgba(var(--sumi-rgb),α) 用。地の色を替えるときは --sumi と一緒に替える: noren-real/ground.css） */
   --kinari:#efe6d6; --kinari-2:#d6c9b0; --kinari-3:#a99c86;
   --shu:#c8361d;        /* 面・線・印（大きいもの） */
   --shu-hi:#ea6a4e;     /* 墨の地の上の朱い文字（コントラスト 5 以上） */
@@ -47,9 +48,9 @@
 .vN-hd{
   position:fixed; inset:0 0 auto 0; z-index:70; display:flex; align-items:center; justify-content:space-between;
   min-height:var(--hd); padding:6px var(--gx); transition:background .5s,backdrop-filter .5s,padding .4s;
-  background:linear-gradient(180deg,rgba(15,12,10,.86),rgba(15,12,10,0));
+  background:linear-gradient(180deg,rgba(var(--sumi-rgb,15,12,10),.86),rgba(var(--sumi-rgb,15,12,10),0));
 }
-.vN-hd.is-solid{background:rgba(15,12,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(239,230,214,.10)}
+.vN-hd.is-solid{background:rgba(var(--sumi-rgb,15,12,10),.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(239,230,214,.10)}
 .vN-logo{display:flex;align-items:baseline;gap:.7em;color:var(--kinari);min-height:44px;align-items:center}
 .vN-logo .ja{font:700 22px/1 var(--f-min);letter-spacing:.18em}
 .vN-logo em{font:italic 400 15px/1 var(--f-lat);letter-spacing:.22em;color:var(--kinari-2)}
