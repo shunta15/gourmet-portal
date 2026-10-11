@@ -13,6 +13,7 @@ import {
 } from "@/lib/data";
 import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
 import { applyFeatureSpotPhotos } from "@/lib/featureSpotPhotos";
+import { cleanArticleText } from "@/lib/otherSiteRatings";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -159,7 +160,9 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
 
   // 表示禁止の画像を除いたあと、写真の無いポイント・使えない一番上の写真にだけ、集めた写真を当てはめる
   // （lib/featureSpotPhotos.ts。まとめた lib/featureSpotPhotos.generated.json が無ければ何もしない）。DB の値を重ねたあとの最後
-  return applyFeatureSpotPhotos(sanitizeFeatureArticle(result));
+  // そのあと、文章（subtitle・lede・quote・closing・各項目の説明ほか）から、ほかのサイト・サービスの点数・星・評価の高さ・口コミやレビューの件数に
+  // 触れた文／句を取り除く（lib/otherSiteRatings.ts。DB の文章にもコード側の文章にも効く。2026-10-11 発注者指示。DB は書き換えない）
+  return cleanArticleText(applyFeatureSpotPhotos(sanitizeFeatureArticle(result)));
 }
 
 /**

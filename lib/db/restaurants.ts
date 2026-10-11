@@ -15,6 +15,7 @@ import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
 import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 import { applyShopPhotos } from "@/lib/shopPhotos";
+import { cleanRestaurantText } from "@/lib/otherSiteRatings";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -63,9 +64,11 @@ const CODE_BY_ID = new Map<string, Restaurant>(RESTAURANTS.map((r) => [r.id, r])
 /**
  * 店を返す前の仕上げ: 表示禁止の画像を除き（sanitizeRestaurant）、そのあと、使える写真が 1 枚も無い店にだけ
  * 集めた写真を当てはめる（lib/shopPhotos.ts。lib/shopPhotos.generated.json が `{}` なら何もしない）。
+ * 最後に、文章（desc・body・highlights）から、ほかのサイト・サービスの点数・星・評価の高さ・口コミやレビューの件数に触れた
+ * 文／句を取り除く（lib/otherSiteRatings.ts。DB の文章にもコード側の文章にも効く。2026-10-11 発注者指示。DB は書き換えない）。
  * map(finish) のように 1 引数で呼ぶ（2 番目以降の引数は受けない）。
  */
-const finish = (r: Restaurant): Restaurant => applyShopPhotos(sanitizeRestaurant(r));
+const finish = (r: Restaurant): Restaurant => cleanRestaurantText(applyShopPhotos(sanitizeRestaurant(r)));
 
 /**
  * DB の行から店を作る。Google の評価（googleRating・googleReviewCount）は DB に列が無いので、
