@@ -87,3 +87,32 @@ const DUMMY_FEATURE_IMAGES: ReadonlySet<string> = new Set([
   "/restaurants/teleapo-馳走かねこ/point2.jpg",
 ]);
 export const isDummyFeatureImage = (u: string | undefined | null): boolean => !!u && DUMMY_FEATURE_IMAGES.has(u.normalize("NFC"));
+
+/**
+ * 特集の一覧で「先に出す 20 本」（店 1 軒の記事。順番つき。2026-10-11 発注者指示「まず 20 店舗ぶん」）。
+ * 選び方: 対の店ページがあり、主役の写真が使え、主役と全部の視点に写真があって（足りない所は lib/portal/noren/featureSinglePhotos.ts の表で
+ * 対の店の写真を当てて）、記事の中で同じ写真が重ならない記事。そのうえで写真の質・枚数・本文の量が良い順に、同じ地域は 3 本まで・業種が偏らないように選んだ。
+ * 並びは、地域・業種が隣り合って続かないようにしてある。一覧のページは別で作る（ここは ID の並びだけ）。
+ */
+export const FEATURED_SINGLE_IDS: readonly string[] = [
+  "スペインバルPALLO", // 三重・バー＆グリル
+  "日本料理利喜笑店八王子", // 東京・居酒屋（日本料理）
+  "ぺんぎん食堂", // 富山・居酒屋
+  "凜喜桜変", // 静岡・寿司
+  "近江牛日本料理ひょうたんや", // 滋賀・近江牛専門・日本料理
+  "taracafe.", // 名古屋・カフェ
+  "SteakHouseG-Base", // 群馬・ステーキ
+  "寿司割烹粋里", // 北海道・会席・懐石
+  "MOONCAFE", // 名古屋・カフェ
+  "FUJICOFFEE（ふじ珈琲）", // 山口・コーヒーショップ
+  "すし大", // 茨城・寿司
+  "多幸", // 静岡・和食
+  "DolceCucinaAngeloアンジェロ", // 名古屋・イタリアン・カフェ
+  "GOGUMI.", // 京都・カフェ（足りない視点を補う）
+  "二福亭", // 滋賀・うどん
+  "グルテンフリーREZAN", // 三重・カフェ
+  "ロータスカフェ", // 岐阜・カフェ
+  "味感真寿美", // 香川・定食
+  "赤れんが", // 岐阜・洋食（足りない所を補う）
+  "ごはん処湊茶屋", // 三重・定食
+];
