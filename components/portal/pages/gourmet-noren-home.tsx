@@ -85,8 +85,8 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
             </p>
             <p className="vN-chs-intro-s">スクロールで店が入れ替わります。縦書きの店名を押すと、その店のページへ。数字は、その章に入る掲載店の数です。</p>
             <p className="vN-chs-intro-more">
-              <span>ほかの業種は、上の「業種からさがす」から。</span>
-              <a href="#open-cuisine" data-cursor="JUMP">業種からさがす <span aria-hidden="true">↑</span></a>
+              <span>言葉やエリアで絞るなら、上の「店を、さがす。」から。</span>
+              <a href="#open-search" data-cursor="JUMP">店をさがす <span aria-hidden="true">↑</span></a>
             </p>
           </div>
           <ul className="vN-toc vN-rv" style={{ ["--d" as string]: 1 }}>

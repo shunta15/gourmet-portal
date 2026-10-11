@@ -285,7 +285,8 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
         cloth.setDye(dyeQ);
         cloth.setWrinkle(wrinkleQ);
         cloth.setBright(bmul);
-        cloth.setGlyphs(chapters.map((c) => c.kanji), family);
+        // 垂れが 6 枚以上でスマホ幅のときは、字を少し小さくして、隣の字とのすき間を空ける
+        cloth.setGlyphs(chapters.map((c) => c.kanji), family, chapters.length > 5 && window.innerWidth < 700 ? 0.84 : 1);
       }
       lans?.setGlyphs(["灯", "酒"], brush);
       layout();

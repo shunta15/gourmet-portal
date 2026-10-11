@@ -37,7 +37,7 @@
 .vOs-chip:hover{background:var(--kinari);color:var(--ink);border-top-color:var(--shu)}
 .vOs-chip:hover i{color:var(--ink-2)}
 
-/* 五つの章の入口から、この節の「業種からさがす」への 1 行 */
+/* 七つの章の入口から、この節（店をさがす）への 1 行 */
 .vN-chs-intro-more{display:flex;flex-wrap:wrap;align-items:center;gap:2px 1.2em;font:400 clamp(13px,1.1vw,15px)/1.9 var(--f-sans);letter-spacing:.12em;color:var(--kinari-2)}
 .vN-chs-intro-more a{display:inline-flex;align-items:center;min-height:44px;color:var(--shu-hi);border-bottom:1px solid currentColor;letter-spacing:.14em}
 

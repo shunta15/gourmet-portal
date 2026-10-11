@@ -332,7 +332,8 @@ function drawVertical(g: CanvasRenderingContext2D, text: string, family: string,
   });
 }
 
-const NUM: Record<string, string> = { 麺: "一", 鮨: "二", 肉: "三", 酒: "四", 蕎: "五" };
+// 章の番号（暖簾の 7 つの章: 和・洋・中・麺・肉・酒・茶。lib/cuisineBroad.ts の no と同じ）
+const NUM: Record<string, string> = { 和: "一", 洋: "二", 中: "三", 麺: "四", 肉: "五", 酒: "六", 茶: "七" };
 
 export function createCloth(canvas: HTMLCanvasElement): Cloth | null {
   const gl = canvas.getContext("webgl", { alpha: true, premultipliedAlpha: true, antialias: false, powerPreference: "high-performance" }) as WebGLRenderingContext | null;
