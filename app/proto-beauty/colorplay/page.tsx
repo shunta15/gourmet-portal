@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/portal/bproto/colorplay/Header";
 import Footer from "@/components/portal/bproto/colorplay/Footer";
 import { IconArrow, IconPin, IconSearch, IconSparkle } from "@/components/portal/bproto/colorplay/Icons";
+import HeroView, { type HeroVariant } from "@/components/portal/bproto/colorplay/hero/HeroView";
 import { loadFeatures, loadShops } from "@/lib/portal/bproto/colorplay/data";
 import { BASE, searchHref } from "@/lib/portal/bproto/colorplay/types";
 
@@ -11,12 +12,43 @@ const RIB_A = rep(["COLOR PLAY", "●", "HAIR", "●", "NAIL", "●", "BEAUTY", 
 const RIB_B = rep(["Machinowa Beauty", "●", "キレイで、あそぼう。", "●"]);
 const TILT = [-9, 6, -6, 9];
 
-export default async function Page() {
-  const [features, shops] = await Promise.all([loadFeatures(), loadShops()]);
+// 3 つの丸薬形のボタン。stage=true は案 2(最初の画面の中でせり上がる)で、スクロール連動の印(data-sp)を付けない
+function Pills({ stage = false }: { stage?: boolean }) {
+  const sp = stage ? {} : { "data-sp": "o", "data-sp-src": "cp-hero" };
+  return (
+    <nav className="cp-pills" id="cp-pills" {...sp} aria-label="入口">
+      <Link href={`${BASE}/search`} className="cp-pill p-pink" style={{ ["--p" as string]: 0 }}>
+        <IconSearch size={30} />
+        <span><b>お店を探す</b><small>サロンの種類・エリアから</small></span>
+      </Link>
+      <Link href={`${BASE}/search#area`} className="cp-pill p-blue" style={{ ["--p" as string]: 1 }}>
+        <IconPin size={30} />
+        <span><b>エリア</b><small>店の多い順に見る</small></span>
+      </Link>
+      <Link href="#features" className="cp-pill p-black" style={{ ["--p" as string]: 2 }}>
+        <IconSparkle size={30} />
+        <span><b>特集</b><small>特集記事を読む</small></span>
+      </Link>
+    </nav>
+  );
+}
+
+// ?hero=1 / 2 / 3 で最初の画面の動きの案を切り替える(1・2・3 以外は今のまま)
+function pickHero(v: string | string[] | undefined): HeroVariant | 0 {
+  const x = Array.isArray(v) ? v[0] : v;
+  return x === "1" ? 1 : x === "2" ? 2 : x === "3" ? 3 : 0;
+}
+
+export default async function Page({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+  const [features, shops, sp] = await Promise.all([loadFeatures(), loadShops(), searchParams]);
+  const hero = pickHero(sp.hero);
   const has = (k: string) => shops.some((s) => s.kind === k);
   return (
     <>
       <Header onColor />
+      {hero !== 0 ? (
+        <HeroView variant={hero} pills={hero === 2 ? <Pills stage /> : undefined} />
+      ) : (
       <section className="cp-hero" id="cp-hero" data-sp="o">
         <div className="cp-wrap cp-hero-in">
           <div className="cp-hero-copy">
@@ -39,29 +71,21 @@ export default async function Page() {
         </div>
         <span className="cp-hero-cut" aria-hidden="true" />
       </section>
+      )}
 
-      <div className="cp-wrap">
-        <nav className="cp-pills" id="cp-pills" data-sp="o" data-sp-src="cp-hero" aria-label="入口">
-          <Link href={`${BASE}/search`} className="cp-pill p-pink" style={{ ["--p" as string]: 0 }}>
-            <IconSearch size={30} />
-            <span><b>お店を探す</b><small>サロンの種類・エリアから</small></span>
-          </Link>
-          <Link href={`${BASE}/search#area`} className="cp-pill p-blue" style={{ ["--p" as string]: 1 }}>
-            <IconPin size={30} />
-            <span><b>エリア</b><small>店の多い順に見る</small></span>
-          </Link>
-          <Link href="#features" className="cp-pill p-black" style={{ ["--p" as string]: 2 }}>
-            <IconSparkle size={30} />
-            <span><b>特集</b><small>特集記事を読む</small></span>
-          </Link>
-        </nav>
-      </div>
+      {hero !== 2 && (
+        <>
+          <div className="cp-wrap">
+            <Pills />
+          </div>
 
-      <nav className="cp-mini-pills" data-sp="o" data-sp-src="cp-pills" data-sp-show aria-label="入口(スクロール中に上に残る帯)">
-        <Link href={`${BASE}/search`} className="mp-pink"><IconSearch size={18} />お店を探す</Link>
-        <Link href={`${BASE}/search#area`} className="mp-blue"><IconPin size={18} />エリア</Link>
-        <Link href="#features" className="mp-black"><IconSparkle size={18} />特集</Link>
-      </nav>
+          <nav className="cp-mini-pills" data-sp="o" data-sp-src="cp-pills" data-sp-show aria-label="入口(スクロール中に上に残る帯)">
+            <Link href={`${BASE}/search`} className="mp-pink"><IconSearch size={18} />お店を探す</Link>
+            <Link href={`${BASE}/search#area`} className="mp-blue"><IconPin size={18} />エリア</Link>
+            <Link href="#features" className="mp-black"><IconSparkle size={18} />特集</Link>
+          </nav>
+        </>
+      )}
 
       <section className="cp-panels" data-sp="g" aria-label="種類から探す">
         <Link href={has("hair") ? searchHref({ kind: "hair" }) : `${BASE}/search`} className="cp-panel pn-hair" data-sp="e p" style={{ ["--n" as string]: 0 }}>
