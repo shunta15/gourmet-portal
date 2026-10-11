@@ -141,3 +141,54 @@
 @media (max-width:560px){
   .vI-form.vSc-form{grid-template-columns:minmax(0,1fr)}
 }
+
+/* ---------- 「さがす」の中心のページ（NorenSearch）: 探し方のタブ・箱（左に地図・右に一覧）・結果 ---------- */
+.vMp-tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line-2);margin:0 0 clamp(18px,3vh,28px)}
+.vMp-tabs::-webkit-scrollbar{display:none}
+.vMp-tab{flex:0 0 auto;display:inline-flex;align-items:center;min-height:48px;padding:0 clamp(14px,2vw,26px);margin-bottom:-1px;border-bottom:3px solid transparent;font:500 15px/1 var(--f-min);letter-spacing:.14em;color:var(--kinari-2);white-space:nowrap;transition:color .3s,border-color .3s}
+.vMp-tab:hover{color:var(--kinari)}
+.vMp-tab[aria-current="true"]{color:var(--kinari);border-bottom-color:var(--shu);font-weight:700}
+.vMp-box{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:clamp(16px,2vw,28px);align-items:start;margin:0 0 clamp(34px,6vh,56px)}
+.vMp-map{min-width:0}
+.vMp-map .vSc-map-fr{padding:8px}
+.vMp-mapnote{margin-top:10px;font:400 13px/1.7 var(--f-sans);letter-spacing:.06em;color:var(--kinari-2)}
+.vMp-maploading{height:460px;display:grid;place-items:center;font:400 14px/1 var(--f-sans);color:var(--ink-3);background:#e4dac6}
+.vMp-side{min-width:0}
+.vMp-list{display:grid;gap:4px;max-height:460px;overflow:auto;padding-right:4px;scrollbar-width:thin}
+.vMp-row{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:0 14px;border:1px solid var(--line);background:color-mix(in srgb,var(--kinari) 5%,transparent);color:var(--kinari);font:500 15px/1.3 var(--f-min);letter-spacing:.08em;transition:background .3s,color .3s,border-color .3s}
+.vMp-row em{font:italic 400 15px/1 var(--f-lat);letter-spacing:.04em;font-variant-numeric:lining-nums;color:var(--kinari-3)}
+.vMp-row:hover{border-color:var(--shu-hi)}
+.vMp-row[aria-current="true"]{background:var(--kinari);color:var(--ink);border-color:var(--kinari);box-shadow:inset 3px 0 0 var(--shu)}
+.vMp-row[aria-current="true"] em{color:var(--ink-2)}
+.vN .vMp-row:focus-visible,.vN .vMp-tab:focus-visible{outline:2px solid var(--shu-hi);outline-offset:-3px}
+.vMp-side .vSc-regionlink{margin:0 0 12px}
+.vMp-qform{display:grid;gap:10px}
+.vMp-qform label{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em}
+.vMp-qrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+.vMp-qrow input{min-width:0;min-height:52px;padding:0 16px;background:color-mix(in srgb,var(--kinari) 7%,transparent);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1.3 var(--f-sans);color-scheme:dark}
+.vMp-qrow input::placeholder{color:var(--kinari-3);opacity:1}
+.vN .vMp-qrow input:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+.vMp-tagtab{display:grid;gap:clamp(22px,4vh,34px);min-width:0}
+.vMp-h{font:700 clamp(20px,1.8vw,24px)/1.4 var(--f-min);letter-spacing:.1em;color:var(--kinari);margin-bottom:14px}
+.vMp-h em{color:var(--shu-hi)}
+.vMp-res{align-items:center}
+.vMp-resh{font:700 clamp(20px,1.8vw,24px)/1.4 var(--f-min);letter-spacing:.14em;color:var(--kinari)}
+.vMp-clear{display:inline-flex;align-items:center;min-height:44px;margin-left:1em;color:var(--shu-hi);border-bottom:1px solid currentColor;letter-spacing:.1em}
+.vMp-pager{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;margin:clamp(30px,5vh,48px) 0 0;font:500 15px/1 var(--f-min);letter-spacing:.14em;color:var(--kinari-2)}
+.vMp-pager a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--line-2);color:var(--kinari);justify-self:start;transition:background .3s,color .3s}
+.vMp-pager a:last-child{justify-self:end}
+.vMp-pager a:hover{background:var(--kinari);color:var(--ink)}
+@media (max-width:820px){
+  .vMp-box{grid-template-columns:minmax(0,1fr)}
+  .vMp-map .mw-map{height:300px!important}
+  .vMp-maploading{height:300px}
+  /* スマホ: 地図が上、一覧はその下で横にならべて、横にすべらせる */
+  .vMp-list{display:flex;max-height:none;overflow-x:auto;overflow-y:hidden;gap:8px;padding:0 0 8px;scroll-snap-type:x proximity}
+  .vMp-list>li{flex:0 0 auto}
+  .vMp-row{white-space:nowrap;gap:10px;scroll-snap-align:start}
+  .vMp-qrow{grid-template-columns:minmax(0,1fr)}
+  .vMp-pager{grid-template-columns:auto 1fr auto}
+  .vMp-pager>span[aria-current]{text-align:center}
+}
+/* 地図のピンの札（leaflet の吹き出し）のリンクは、暖簾の地の上でも読める色に */
+.vN .leaflet-popup-content a.mw-popup-link{color:var(--paper-hi)}

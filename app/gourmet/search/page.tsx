@@ -8,7 +8,7 @@ import { buildFacetPayload } from "@/lib/portal/facets";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
 import { toSearchShop } from "@/lib/portal/noren/sceneShop";
-import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
+import { GEO } from "@/lib/geo";
 import { SCENES } from "@/lib/scenes";
 
 // 店をさがす（/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/search が next.config.ts の rewrites でここに来る
@@ -33,6 +33,12 @@ export default async function Page() {
   const items = restaurants.map(toSearchShop);
   // こだわり条件は公開スイッチ ON のときだけ（ここは ON のときしか開けない）
   const facets = buildFacetPayload(restaurants);
+  // 地図のピン用: 座標のある店だけの [緯度, 経度]（小数 5 桁。地理院の地図に出す）
+  const coords: Record<string, [number, number]> = {};
+  for (const r of items) {
+    const g = GEO[r.id];
+    if (g) coords[r.id] = [Math.round(g.lat * 1e5) / 1e5, Math.round(g.lng * 1e5) / 1e5];
+  }
   return (
     <>
       <ListHero crumbs={[TOP_CRUMB, { label: "店をさがす" }]} eyebrow="店をさがす" eyebrowEn="Search" cloth="さがす" compact>
@@ -44,7 +50,7 @@ export default async function Page() {
         <NorenSearch
           restaurants={items}
           facets={facets}
-          hub={buildOpenSearchData(items)}
+          coords={coords}
           sceneDefs={SCENES.map((x) => ({ slug: x.slug, name: x.name, matchTags: x.matchTags }))}
         />
       </Suspense>

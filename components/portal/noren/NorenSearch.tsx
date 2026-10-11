@@ -1,40 +1,85 @@
 "use client";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, lazy, useEffect, useMemo, useState, type FormEvent } from "react";
 import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
 import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/cuisineBroad";
+import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
-import { GenreCards, RegionChips, SceneChips } from "./FindParts";
-import { shopInScene } from "@/lib/portal/noren/sceneMatch";
-import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import "./opensearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
 const SearchFacets = lazy(() => import("@/components/portal/SearchFacets"));
+// 地図（地理院の淡い地図 + leaflet。既存の components/LeafletMap.tsx）。画面に出るまで読み込まない（next/dynamic + 中の IntersectionObserver）
+const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
+  ssr: false,
+  loading: () => <div className="vMp-maploading">地図を読み込み中…</div>,
+});
+
+/** 地図に出す店の上限（座標のある店のうち、絞り込んだ先頭から） */
+export const MAP_MAX = 220;
+/** 1 ページに出す店の数 */
+const PER = 24;
+
+type Tab = "area" | "genre" | "scene" | "tag" | "q";
+const TABS: { key: Tab; label: string }[] = [
+  { key: "area", label: "エリア" },
+  { key: "genre", label: "業種" },
+  { key: "scene", label: "利用シーン" },
+  { key: "tag", label: "こだわり" },
+  { key: "q", label: "キーワード" },
+];
+const isTab = (s: string | null): s is Tab => !!s && TABS.some((t) => t.key === s);
+
+type SceneDef = { slug: string; name: string; matchTags: string[] };
+
+/** 絞り込んだ店の地図。座標のある店だけを、上限 MAP_MAX までピンで出す（押すと店名・エリア・業種の札が出て、店ページへ行ける） */
+function ResultsMap({ list, coords }: { list: SearchItem[]; coords: Record<string, [number, number]> }) {
+  const { points, withCoords } = useMemo(() => {
+    const withC = list.filter((r) => coords[r.id]);
+    return {
+      withCoords: withC.length,
+      points: withC.slice(0, MAP_MAX).map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], href: `/restaurant/${r.id}`, sub: `${r.area}・${r.cuisine}` })),
+    };
+  }, [list, coords]);
+  return (
+    <div className="vMp-map">
+      <div className="vSc-map-fr">
+        <LeafletMap points={points} height={460} zoom={14} />
+      </div>
+      <p className="vMp-mapnote" aria-live="polite">
+        {withCoords === 0
+          ? "この条件の店には、地図に出せる位置の情報がありません。"
+          : withCoords > MAP_MAX
+            ? `位置のわかる ${withCoords} 軒のうち、先頭の ${MAP_MAX} 軒を地図に出しています。`
+            : `位置のわかる ${withCoords} 軒を地図に出しています。`}
+      </p>
+    </div>
+  );
+}
 
 /**
- * 店をさがす（/search）の検索と結果（暖簾版）。今の components/SearchClient.tsx と同じ中身:
- *  - 引数 q・region・cuisine・tag（と、こだわり条件の budget・f）。入力すると結果が変わり、検索を押すと URL に載る。タグを押すと tag が入り、「×」で外れる
- *  - 絞り込み（地域・業種の語・タグ・キーワード（店名・エリア・料理・住所・紹介文・タグ））、タグの集計（多い順）、件数、0 件のときの文
- *  - 店ページのタグ（/search?tag=…）から来たときは、その絞り込みが効いた状態で出る
- * 見出しは呼び出し側のサーバーのページ。フッターは暖簾の枠が出す。店カードは暖簾の店カード（縦書きの店名＋写真。写真が無い店は布だけ）。評価の数字は出さない。
- * データはサーバーのページで必要な項目だけに絞って渡す（クライアントの束に lib/data を入れない）。image は使える写真だけ（空なら写真なし）。
+ * 店をさがす（/search）の検索と結果（暖簾版。「店をさがす」の中心のページ）。組み立て（上から）:
+ *  - 探し方のタブ（エリア・業種・利用シーン・こだわり・キーワード。?tab= で表す。何も無ければ、絞り込みに使っている項目のタブ、無ければエリア）
+ *  - 箱: 左に地図（絞り込んだ店のピン）・右にそのタブの一覧（押すと絞り込みが替わり、地図と結果も替わる。件数は、ほかの絞り込みを掛けたときの数）
+ *  - 結果: 件数・店の札・ページ送り（?page=）
+ * 引数 q・region・cuisine・scene・tag（と、こだわり条件の budget・f、tab、page）。入力すると結果が変わり、検索を押すと URL に載る。
+ * 判定: 業種は lib/cuisineBroad.ts の matchesCuisineFilter、利用シーンは lib/portal/noren/sceneMatch.ts の shopInScene（シーンのページと同じ）、キーワードは今の /search と同じ。
+ * データはサーバーのページで必要な項目だけに絞って渡す（クライアントの束に lib/data を入れない）。coords は座標のある店だけの [緯度, 経度]。
  */
 export default function NorenSearch({
   restaurants,
   facets,
-  hub,
   sceneDefs,
+  coords,
 }: {
   restaurants: SearchItem[];
   facets?: FacetPayload;
-  /** 絞り込みが何も無いときの「さがす」のトップに出す札の件数（サーバーで数える。lib/portal/noren/openSearch.ts） */
-  hub: OpenSearchData;
-  /** 利用シーンの定義（?scene=<slug> の絞り込み用。matchTags は lib/scenes.ts のもの。判定は lib/portal/noren/sceneMatch.ts の shopInScene） */
-  sceneDefs: { slug: string; name: string; matchTags: string[] }[];
+  sceneDefs: SceneDef[];
+  coords: Record<string, [number, number]>;
 }) {
   const router = useRouter();
   const sp = useSearchParams();
@@ -45,6 +90,8 @@ export default function NorenSearch({
   const spCuisine = sp.get("cuisine") || "ALL";
   const spTag = sp.get("tag") || "";
   const spScene = sp.get("scene") || "";
+  const spTab = sp.get("tab");
+  const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);
   const [cuisine, setCuisine] = useState<string>(spCuisine);
@@ -58,6 +105,16 @@ export default function NorenSearch({
     setScene(spScene);
   }, [spQ, spRegion, spCuisine, spTag, spScene]);
 
+  // 一覧（エリア・業種・シーン）の選んでいる行が見える位置まで、一覧の中だけをずらす（ページ全体は動かさない）
+  useEffect(() => {
+    const el = document.querySelector<HTMLElement>('.vMp-list .vMp-row[aria-current="true"]');
+    const box = el?.closest<HTMLElement>(".vMp-list");
+    if (!el || !box) return;
+    const b = box.getBoundingClientRect();
+    const r = el.getBoundingClientRect();
+    box.scrollTo({ top: box.scrollTop + r.top - b.top - 8, left: box.scrollLeft + r.left - b.left - 8 });
+  }, [spRegion, spCuisine, spScene, spTab]);
+
   // タグの集計（店の数が多い順）
   const allTags = useMemo(() => {
     const counts = new Map<string, number>();
@@ -67,37 +124,57 @@ export default function NorenSearch({
     return [...counts.entries()].sort((a, b) => b[1] - a[1]);
   }, [restaurants]);
 
-  const results = useMemo(() => {
-    const needle = q.trim().toLowerCase();
-    // 利用シーン（?scene=<slug>）。知らない slug は絞り込まない（シーンのページと同じ判定 shopInScene）
-    const sceneDef = scene ? sceneDefs.find((x) => x.slug === scene) : undefined;
-    return restaurants.filter((r) => {
-      if (region && r.region !== region) return false;
-      if (cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
-      if (tag && !(r.tags || []).includes(tag)) return false;
-      if (sceneDef && !shopInScene(sceneDef.matchTags, r.tags)) return false;
-      if (needle) {
-        const hay = (r.name + r.area + r.cuisine + r.address + r.desc + (r.tags || []).join(" ")).toLowerCase();
-        if (!hay.includes(needle)) return false;
-      }
-      return true;
-    });
+  // 絞り込み。skip を渡すと、その軸だけ掛けない（その軸の一覧の件数を出すため）。知らない業種・シーンは絞り込まない
+  const sceneDef = scene ? sceneDefs.find((x) => x.slug === scene) : undefined;
+  const needle = q.trim().toLowerCase();
+  const pass = (r: SearchItem, skip?: "region" | "cuisine" | "scene") => {
+    if (skip !== "region" && region && r.region !== region) return false;
+    if (skip !== "cuisine" && cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
+    if (tag && !(r.tags || []).includes(tag)) return false;
+    if (skip !== "scene" && sceneDef && !shopInScene(sceneDef.matchTags, r.tags)) return false;
+    if (needle) {
+      const hay = (r.name + r.area + r.cuisine + r.address + r.desc + (r.tags || []).join(" ")).toLowerCase();
+      if (!hay.includes(needle)) return false;
+    }
+    return true;
+  };
+  const results = useMemo(
+    () => restaurants.filter((r) => pass(r)),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [q, region, cuisine, tag, scene, sceneDefs, restaurants],
+  );
+  // 一覧の件数（その軸以外の絞り込みを掛けたときの店の数）
+  const counts = useMemo(() => {
+    const byRegion = new Map<string, number>();
+    let regionAll = 0;
+    for (const r of restaurants) if (pass(r, "region")) { byRegion.set(r.region, (byRegion.get(r.region) || 0) + 1); regionAll++; }
+    const cuisineRows = BROAD_GROUPS.map((g) => ({ label: g.label, count: 0 }));
+    let cuisineAll = 0;
+    for (const r of restaurants) if (pass(r, "cuisine")) { cuisineAll++; BROAD_GROUPS.forEach((g, i) => { if (matchesCuisineFilter(g.label, r)) cuisineRows[i].count++; }); }
+    const sceneRows = sceneDefs.map((x) => ({ slug: x.slug, name: x.name, count: 0 }));
+    let sceneAll = 0;
+    for (const r of restaurants) if (pass(r, "scene")) { sceneAll++; sceneDefs.forEach((x, i) => { if (shopInScene(x.matchTags, r.tags)) sceneRows[i].count++; }); }
+    return { byRegion, regionAll, cuisineRows, cuisineAll, sceneRows, sceneAll };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q, region, cuisine, tag, scene, sceneDefs, restaurants]);
 
-  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string }) => {
+  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string }) => {
     const next = {
-      q: overrides.q !== undefined ? overrides.q : q,
-      region: overrides.region !== undefined ? overrides.region : region,
-      cuisine: overrides.cuisine !== undefined ? overrides.cuisine : cuisine,
-      tag: overrides.tag !== undefined ? overrides.tag : tag,
-      scene: overrides.scene !== undefined ? overrides.scene : scene,
+      q: overrides.q !== undefined ? overrides.q : spQ,
+      region: overrides.region !== undefined ? overrides.region : spRegion,
+      cuisine: overrides.cuisine !== undefined ? overrides.cuisine : spCuisine,
+      tag: overrides.tag !== undefined ? overrides.tag : spTag,
+      scene: overrides.scene !== undefined ? overrides.scene : spScene,
+      tab: overrides.tab !== undefined ? overrides.tab : spTab ?? "",
+      page: overrides.page ?? "",
     };
     const params = new URLSearchParams();
     if (next.q) params.set("q", next.q);
     if (next.region) params.set("region", next.region);
     if (next.cuisine && next.cuisine !== "ALL") params.set("cuisine", next.cuisine);
-    if (next.tag) params.set("tag", next.tag);
     if (next.scene) params.set("scene", next.scene);
+    if (next.tag) params.set("tag", next.tag);
+    if (next.tab && isTab(next.tab)) params.set("tab", next.tab);
     // こだわり条件（ON のときだけ）は、キーワードや地域を変えても保つ
     if (facets) {
       const budget = sp.get("budget");
@@ -105,12 +182,13 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
+    if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    router.push(buildUrl({}));
+    router.push(buildUrl({ q: q.trim(), tab: "q" }));
   };
 
   const clearTag = () => {
@@ -122,204 +200,200 @@ export default function NorenSearch({
   // pending（こだわり条件の部品を読み込んでいる間）は、読み込み中の文だけ。入力欄・結果は出さない
   // （先に出すと、読み込みが終わって画面が入れ替わったとき、入力中の欄が作り直されてフォーカスとキャレットを失い、続きの入力が消える）
   const view = (list: SearchItem[], ext?: FacetExt, pending = false) => {
-    // 「さがす」のトップ（絞り込みが何も無い）か、結果か。URL に載っている条件（spXxx）で決める（入力中の文字では切り替えない）
     const applied = !!spQ || !!spRegion || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
-    const isHub = !applied;
-    // エリアだけで絞っているときは、その地域のページへのリンクを出す
-    const regionOnly = !!spRegion && spRegion in REGIONS && !spQ && spCuisine === "ALL" && !spTag && !spScene && !ext?.active;
+    // どのタブを開くか: ?tab= があればそれ、無ければ絞り込みに使っている項目のタブ、無ければエリア
+    const active: Tab = isTab(spTab)
+      ? spTab
+      : spCuisine !== "ALL"
+        ? "genre"
+        : spScene
+          ? "scene"
+          : spTag || ext?.active
+            ? "tag"
+            : spQ && !spRegion
+              ? "q"
+              : "area";
+    const regionName = spRegion in REGIONS ? REGIONS[spRegion as RegionKey].name : "";
+    const shown = list.slice((Math.min(page, Math.max(1, Math.ceil(list.length / PER))) - 1) * PER, Math.min(page, Math.max(1, Math.ceil(list.length / PER))) * PER);
+    const pages = Math.max(1, Math.ceil(list.length / PER));
+    const cur = Math.min(page, pages);
+    const row = (href: string, label: string, count: number, on: boolean) => (
+      <li key={label}>
+        <Link href={href} className="vMp-row" aria-current={on ? "true" : undefined} data-cursor="PICK">
+          <span>{label}</span>
+          <em>{count}</em>
+        </Link>
+      </li>
+    );
     return (
-    <>
-      <section className="vI-list vI-find vSc-find" aria-label="店の検索">
-        <div className="vI-list-in">
-          {pending ? (
-            <p role="status" aria-busy="true" className="vI-empty">
-              条件を読み込んでいます…
-            </p>
-          ) : (
-            <>
-              {/* 検索の箱。絞り込みが何も無いとき（isHub）はキーワードだけ。絞り込みがあるときは、キーワード・エリア・業種・利用シーンの帯。
-                  同じ form・同じ入力欄のまま中身だけ替わるので、入力中のフォーカスは失われない */}
-              <form className={`vI-form vSc-form${isHub ? " vSc-form--hub" : ""}`} onSubmit={onSubmit} role="search" aria-label="店をさがす">
-                <div className="vI-fld" key="q">
-                  <label htmlFor="vSc-q">キーワード</label>
-                  <input
-                    id="vSc-q"
-                    type="text"
-                    placeholder="店名・エリア・料理名・タグ"
-                    value={q}
-                    onChange={(e) => setQ(e.target.value)}
-                  />
-                </div>
-                {!isHub && (
-                  <div className="vI-fld" key="region">
-                    <label htmlFor="vSc-region">エリア</label>
-                    <select id="vSc-region" value={region} onChange={(e) => setRegion(e.target.value)}>
-                      <option value="">すべてのエリア</option>
-                      {Object.entries(REGIONS).map(([k, r]) => (
-                        <option key={k} value={k}>
-                          {r.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-                {!isHub && (
-                  <div className="vI-fld" key="cuisine">
-                    <label htmlFor="vSc-cuisine">業種</label>
-                    <select id="vSc-cuisine" value={cuisine} onChange={(e) => setCuisine(e.target.value)}>
-                      <option value="ALL">すべての業種</option>
-                      {BROAD_GROUPS.map((g) => (
-                        <option key={g.label} value={g.label}>
-                          {g.label}
-                        </option>
-                      ))}
-                      {/* 以前の細かい分類の名前の URL（?cuisine=居酒屋 など）で開いたときだけ、その名前を 1 つ足す（選択の表示を保つ。絞り込みは lib/cuisineBroad.ts の matchesCuisineFilter） */}
-                      {isLegacyCuisineLabel(cuisine) && <option value={cuisine}>{cuisine}</option>}
-                    </select>
-                  </div>
-                )}
-                {!isHub && (
-                  <div className="vI-fld" key="scene">
-                    <label htmlFor="vSc-scene">利用シーン</label>
-                    <select id="vSc-scene" value={scene} onChange={(e) => setScene(e.target.value)}>
-                      <option value="">すべてのシーン</option>
-                      {sceneDefs.map((x) => (
-                        <option key={x.slug} value={x.slug}>
-                          {x.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-                <button type="submit" className="vI-btn" data-cursor="SEARCH" key="btn">
-                  {isHub ? "さがす →" : "検索 →"}
-                </button>
-              </form>
-
-              {/* 絞り込みが何も無いとき: エリア → 業種 → 利用シーン の札（押すと、エリア・シーンはそのページ、業種は /search?cuisine=…） */}
-              {isHub && (
-                <div className="vOs vOs--embed vSc-hub">
-                  <div className="vOs-in">
-                    <div className="vOs-blk" id="find-area">
-                      <div className="vOs-blk-h">
-                        <h2 className="vOs-h3">
-                          エリアから<em>さがす。</em>
-                        </h2>
-                        <p className="vOs-note">{hub.regions.length} 地域。押すと、その地域のページへ。</p>
-                      </div>
-                      <RegionChips regions={hub.regions} />
-                    </div>
-                    <div className="vOs-blk vOs-blk--genre" id="find-cuisine">
-                      <h2 className="vOs-h3">
-                        業種から<em>さがす。</em>
-                      </h2>
-                      <GenreCards cuisines={hub.cuisines} />
-                      <p className="vOs-note">1 軒が複数の分類に入ることがあります。</p>
-                    </div>
-                    <div className="vOs-blk" id="find-scene">
-                      <div className="vOs-blk-h">
-                        <h2 className="vOs-h3">
-                          利用シーンから<em>さがす。</em>
-                        </h2>
-                        <p className="vOs-note">デート、接待、一人飲みなど、{hub.scenes.length} の場面から。押すと、そのシーンのページへ。</p>
-                      </div>
-                      <SceneChips scenes={hub.scenes} />
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {tag && (
-                <div className="vSc-active">
-                  <span>タグ絞り込み</span>
-                  <span className="vSc-chip">
-                    #{tag}
-                    <button type="button" onClick={clearTag} aria-label="タグを外す">
-                      ×
-                    </button>
-                  </span>
-                </div>
-              )}
-
-              {ext?.panel}
-
-              {!isHub && regionOnly && (
-                <p className="vSc-regionlink">
-                  <Link href={`/region/${spRegion}`} data-cursor="GO">
-                    {REGIONS[spRegion as RegionKey].name}のページを見る <span aria-hidden="true">→</span>
-                  </Link>
-                </p>
-              )}
-
-              {!isHub && (
+      <>
+        <section className="vI-list vI-find vSc-find vMp" aria-label="店の検索">
+          <div className="vI-list-in">
+            {pending ? (
+              <p role="status" aria-busy="true" className="vI-empty">
+                条件を読み込んでいます…
+              </p>
+            ) : (
               <>
-              <div className="vI-bar">
-                <p className="vI-bar-c" aria-live="polite">
-                  {q && <>キーワード: 「{q}」 / </>}
-                  {region && <>{REGIONS[region as RegionKey]?.name} / </>}
-                  {cuisine !== "ALL" && <>{cuisine} / </>}
-                  {scene && sceneDefs.find((x) => x.slug === scene) && <>{sceneDefs.find((x) => x.slug === scene)?.name} / </>}
-                  {tag && <>#{tag} / </>}
-                  {ext?.summary}
-                  {!q && !region && cuisine === "ALL" && !tag && !scene && !ext?.active && "全件表示"}
-                </p>
-                <p className="vI-bar-n">
-                  <em>{list.length}</em> / {restaurants.length}
-                  <small>店</small>
-                </p>
-              </div>
+                {/* 探し方のタブ */}
+                <nav className="vMp-tabs" aria-label="探し方">
+                  {TABS.map((t) => (
+                    <Link key={t.key} href={buildUrl({ tab: t.key })} className="vMp-tab" aria-current={active === t.key ? "true" : undefined} data-cursor="TAB">
+                      {t.label}
+                    </Link>
+                  ))}
+                </nav>
 
-              {ext?.notice}
+                {/* 箱: 左に地図・右にそのタブの一覧 */}
+                <div className="vMp-box">
+                  <ResultsMap list={list} coords={coords} />
+                  <div className={`vMp-side vMp-side--${active}`}>
+                    {active === "area" && (
+                      <>
+                        {regionName && (
+                          <p className="vSc-regionlink">
+                            <Link href={`/region/${spRegion}`} data-cursor="GO">
+                              {regionName}のページを見る <span aria-hidden="true">→</span>
+                            </Link>
+                          </p>
+                        )}
+                        <ul className="vMp-list" aria-label="エリア">
+                          {row(buildUrl({ region: "", tab: "area" }), "すべてのエリア", counts.regionAll, !spRegion)}
+                          {Object.entries(REGIONS).map(([k, r]) => row(buildUrl({ region: k, tab: "area" }), r.name, counts.byRegion.get(k) || 0, spRegion === k))}
+                        </ul>
+                      </>
+                    )}
+                    {active === "genre" && (
+                      <ul className="vMp-list" aria-label="業種">
+                        {row(buildUrl({ cuisine: "ALL", tab: "genre" }), "すべての業種", counts.cuisineAll, spCuisine === "ALL")}
+                        {counts.cuisineRows.map((c) => row(buildUrl({ cuisine: c.label, tab: "genre" }), c.label, c.count, spCuisine === c.label))}
+                        {/* 以前の細かい分類の名前の URL（?cuisine=居酒屋 など）で開いたときだけ、その名前を 1 つ足す（選択の表示を保つ。絞り込みは matchesCuisineFilter） */}
+                        {isLegacyCuisineLabel(spCuisine) && row(buildUrl({ cuisine: spCuisine, tab: "genre" }), spCuisine, results.length, true)}
+                      </ul>
+                    )}
+                    {active === "scene" && (
+                      <ul className="vMp-list" aria-label="利用シーン">
+                        {row(buildUrl({ scene: "", tab: "scene" }), "すべてのシーン", counts.sceneAll, !spScene)}
+                        {counts.sceneRows.map((s) => row(buildUrl({ scene: s.slug, tab: "scene" }), s.name, s.count, spScene === s.slug))}
+                      </ul>
+                    )}
+                    {active === "tag" && (
+                      <div className="vMp-tagtab">
+                        {ext?.panel}
+                        {allTags.length > 0 && (
+                          <section className="vMp-tags" aria-labelledby="vSc-tagcloud">
+                            <h2 id="vSc-tagcloud" className="vMp-h">
+                              タグから<em>さがす。</em>
+                            </h2>
+                            <ul className="vI-tags">
+                              {allTags.map(([t, count]) => (
+                                <li key={t}>
+                                  <Link href={buildUrl({ tag: t, tab: "tag" })} className={"vI-hash" + (t === spTag ? " on" : "")} data-cursor="TAG" aria-current={t === spTag ? "true" : undefined}>
+                                    #{t}
+                                    <span className="c">{count}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </section>
+                        )}
+                      </div>
+                    )}
+                    {active === "q" && (
+                      <form className="vMp-qform" onSubmit={onSubmit} role="search" aria-label="キーワードでさがす">
+                        <label htmlFor="vSc-q">キーワード</label>
+                        <div className="vMp-qrow">
+                          <input id="vSc-q" type="text" placeholder="店名・エリア・料理名・タグ" value={q} onChange={(e) => setQ(e.target.value)} />
+                          <button type="submit" className="vI-btn" data-cursor="SEARCH">
+                            検索 →
+                          </button>
+                        </div>
+                      </form>
+                    )}
+                  </div>
+                </div>
 
-              {list.length > 0 ? (
-                <ul className="vSc-grid" aria-label="検索結果">
-                  {list.map((r, i) => {
-                    const t = ext?.tagsOf?.(r.id);
-                    return (
-                      <ShopCard
-                        key={r.id}
-                        s={{ id: r.id, name: r.name, cuisine: r.cuisine, area: r.area, img: r.image }}
-                        tags={t?.tags}
-                        tagsTotal={t?.total}
-                        eager={i < 4}
-                        save={<SaveButton id={r.id} name={r.name} variant="card" page="/search" />}
-                      />
-                    );
-                  })}
-                </ul>
-              ) : (
-                <p className="vI-empty">該当する店舗が見つかりませんでした。条件を変えてお試しください。</p>
-              )}
+                {/* 結果 */}
+                {spTag && active !== "tag" && (
+                  <div className="vSc-active">
+                    <span>タグ絞り込み</span>
+                    <span className="vSc-chip">
+                      #{spTag}
+                      <button type="button" onClick={clearTag} aria-label="タグを外す">
+                        ×
+                      </button>
+                    </span>
+                  </div>
+                )}
+                {ext?.notice}
+                <div className="vI-bar vMp-res">
+                  <h2 className="vMp-resh">検索結果</h2>
+                  <p className="vI-bar-c" aria-live="polite">
+                    {q && <>キーワード: 「{q}」 / </>}
+                    {regionName && <>{regionName} / </>}
+                    {cuisine !== "ALL" && <>{cuisine} / </>}
+                    {sceneDef && <>{sceneDef.name} / </>}
+                    {tag && <>#{tag} / </>}
+                    {ext?.summary}
+                    {!applied && "全件表示"}
+                    {applied && (
+                      <Link href="/search" className="vMp-clear" data-cursor="BACK">
+                        絞り込みをはずす
+                      </Link>
+                    )}
+                  </p>
+                  <p className="vI-bar-n">
+                    <em>{list.length}</em> / {restaurants.length}
+                    <small>店</small>
+                  </p>
+                </div>
+
+                {shown.length > 0 ? (
+                  <ul className="vSc-grid" aria-label="検索結果">
+                    {shown.map((r, i) => {
+                      const t = ext?.tagsOf?.(r.id);
+                      return (
+                        <ShopCard
+                          key={r.id}
+                          s={{ id: r.id, name: r.name, cuisine: r.cuisine, area: r.area, img: r.image }}
+                          tags={t?.tags}
+                          tagsTotal={t?.total}
+                          eager={i < 4}
+                          save={<SaveButton id={r.id} name={r.name} variant="card" page="/search" />}
+                        />
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p className="vI-empty">該当する店舗が見つかりませんでした。条件を変えてお試しください。</p>
+                )}
+
+                {pages > 1 && (
+                  <nav className="vMp-pager" aria-label="ページ">
+                    {cur > 1 ? (
+                      <Link href={buildUrl({ page: String(cur - 1) })} data-cursor="PREV">
+                        前へ
+                      </Link>
+                    ) : (
+                      <span aria-hidden="true" />
+                    )}
+                    <span aria-current="page">
+                      {cur} / {pages}
+                    </span>
+                    {cur < pages ? (
+                      <Link href={buildUrl({ page: String(cur + 1) })} data-cursor="NEXT">
+                        次へ
+                      </Link>
+                    ) : (
+                      <span aria-hidden="true" />
+                    )}
+                  </nav>
+                )}
               </>
-              )}
-            </>
-          )}
-        </div>
-      </section>
-
-      {!pending && allTags.length > 0 && (
-        <section className="vN-paper vI-paper" aria-labelledby="vSc-tagcloud">
-          <div className="vI-sec-in">
-            <div className="vI-sh">
-              <div>
-                <h2 id="vSc-tagcloud" className="vF-h2d">気分から、<em>選ぶ。</em></h2>
-                <p>タグから探す</p>
-              </div>
-            </div>
-            <ul className="vI-tags">
-              {allTags.map(([t, count]) => (
-                <li key={t}>
-                  <Link href={buildUrl({ tag: t })} className={"vI-hash" + (t === tag ? " on" : "")} data-cursor="TAG" aria-current={t === tag ? "true" : undefined}>
-                    #{t}
-                    <span className="c">{count}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            )}
           </div>
         </section>
-      )}
-    </>
+      </>
     );
   };
 
