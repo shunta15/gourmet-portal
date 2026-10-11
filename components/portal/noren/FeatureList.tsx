@@ -5,6 +5,7 @@ import "./featlist.css";
 import { sized } from "@/lib/imageUrl";
 import { GOURMET_TOP } from "@/lib/portal/noren/nav";
 import { clothChars, clothFs, splitTitle, type FeatureCardItem } from "@/lib/portal/noren/featureCard";
+import { nameCore } from "@/lib/portal/noren/shop";
 
 // 暖簾の特集記事のトップ（/feature・/feature/region/<key>・/feature/search）の部品。サーバー・クライアントのどちらからも使える（データは読まない）。
 // 見た目は暖簾の特集ページ・/gourmet と同じ文法（布・竿・紙・書体・カードの形）。CSS は featlist.css（vI-）と、特集ページの feature.css（布の変数・パンくず・見出し）。
@@ -48,6 +49,53 @@ export function CardGrid({ items, label }: { items: FeatureCardItem[]; label: st
       {items.map((f, i) => (
         <li key={f.id}>
           <FeatureCard f={f} eager={i < 4} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** 店 1 軒の記事（特集記事）の札のデータ。lib/portal/noren/featureList.ts の ShopFeatureCardItem と同じ形（こちらはクライアントからも読めるよう、型だけここに持つ） */
+export type ShopFeatureCardData = { id: string; img: string; shopName: string; area: string; cuisine: string; title: string };
+
+/** 特集記事（店 1 軒）の札 1 枚。写真の暖簾は店名（触れると上がる）。下に、地域・業種・店名・記事の題。行き先は /feature/<ID> */
+export function ShopFeatureCard({ f, eager = false }: { f: ShopFeatureCardData; eager?: boolean }) {
+  const main = Array.from(nameCore(f.shopName)).slice(0, 12).join("");
+  return (
+    <Link href={`/feature/${encodeURIComponent(f.id)}`} className="vI-card" data-cursor="READ">
+      <span className={`vI-vis${f.img ? "" : " is-nophoto"}`}>
+        <span className="vH-ac-ph">
+          {f.img && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={sized(f.img, 640)} alt={`${f.shopName} の写真`} loading={eager ? "eager" : "lazy"} decoding="async" />
+          )}
+        </span>
+        <span className="vH-ac-rod" aria-hidden="true" />
+        <span className="vH-ac-cloth" aria-hidden="true">
+          <b style={{ ["--fs" as string]: `${clothFs(main)}px` }}>{main}</b>
+          <i className="vN-seal">輪</i>
+        </span>
+        <span className="vH-ac-go" aria-hidden="true">記事を読む →</span>
+      </span>
+      <span className="vI-cap">
+        <span className="vI-meta">
+          {f.area && <span className="vI-no">{f.area}</span>}
+          {f.cuisine && <span className="vI-tag">{f.cuisine}</span>}
+        </span>
+        <span className="vI-sn">{f.shopName}</span>
+        <span className="vI-sb vI-sb--3">{f.title}</span>
+      </span>
+    </Link>
+  );
+}
+
+/** 特集記事の札を並べる（渡された並びのまま） */
+export function ShopFeatureGrid({ items, label }: { items: ShopFeatureCardData[]; label: string }) {
+  return (
+    <ul className="vI-grid" aria-label={label}>
+      {items.map((f, i) => (
+        <li key={f.id}>
+          <ShopFeatureCard f={f} eager={i < 4} />
         </li>
       ))}
     </ul>

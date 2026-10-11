@@ -127,9 +127,9 @@ export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrl
       </section>
 
       {/* 5 特集（お品書き） */}
-      <section className="vN-menu" id="features" aria-label="特集">
+      <section className="vN-menu" id="features" aria-label="まとめ記事">
         <div className="vN-menu-head vN-rv">
-          <h2 className="vN-tate-h">特集</h2>
+          <h2 className="vN-tate-h">まとめ記事</h2>
           <p className="vN-menu-note">
             街を歩く、季節をたどる。<br />
             お品書きのように、いくつか。
@@ -157,7 +157,7 @@ export default async function GourmetNorenHomeReal({ links, dye = "ai", allowUrl
           })}
         </ol>
         <p className="vN-menu-more vN-rv">
-          <Link href="/feature" data-cursor="ALL">特集をすべて見る <span aria-hidden="true">→</span></Link>
+          <Link href="/feature" data-cursor="ALL">特集記事・まとめ記事をすべて見る <span aria-hidden="true">→</span></Link>
         </p>
       </section>
 

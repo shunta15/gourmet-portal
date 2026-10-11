@@ -14,6 +14,7 @@ import { sized } from "@/lib/imageUrl";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
 import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
+import { FEATURE_KIND_SINGLE, FEATURE_SINGLE_HREF } from "@/lib/portal/noren/featureKinds";
 import { bandNameSize, bandPlan, clothName, colsOf, emOf, photoSpans, plainLen, titleSize } from "@/lib/portal/noren/feature";
 import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 
@@ -98,7 +99,7 @@ export default function FeatureSinglePage({ article: A, store, pair, links, href
                 <Link href={links.top} data-cursor="BACK">トップ</Link>
               </li>
               <li>
-                <Link href="/feature" data-cursor="BACK">特集</Link>
+                <Link href={FEATURE_SINGLE_HREF} data-cursor="BACK">{FEATURE_KIND_SINGLE}</Link>
               </li>
               <li>
                 <span aria-current="page">{A.title}</span>
@@ -106,7 +107,7 @@ export default function FeatureSinglePage({ article: A, store, pair, links, href
             </ol>
           </nav>
           <p className="vN-eyebrow vK-label">
-            <b>店の特集</b>
+            <b>{FEATURE_KIND_SINGLE}</b>
             <em>Shop Story</em>
           </p>
           <h1 className="vF-title vK-title" style={{ ["--tfs" as string]: `${tfs}px` }} dangerouslySetInnerHTML={{ __html: A.titleHTML }} />

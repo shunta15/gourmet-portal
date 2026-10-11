@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_HREF } from "@/lib/portal/noren/featureKinds";
 import "@/app/proto-noren/feature.css";
 import "@/app/proto-noren/feature-scene.css";
 import FeatureMap from "@/components/portal/FeatureMap";
@@ -69,7 +70,7 @@ export default function FeatureScenePage({ article: A, features, fmap, links, hr
               <Link href={links.top} data-cursor="BACK">トップ</Link>
             </li>
             <li>
-              <Link href="/feature" data-cursor="BACK">特集</Link>
+              <Link href={FEATURE_ROUNDUP_HREF} data-cursor="BACK">{FEATURE_KIND_ROUNDUP}</Link>
             </li>
             <li>
               <span aria-current="page">{A.title}</span>
@@ -78,8 +79,8 @@ export default function FeatureScenePage({ article: A, features, fmap, links, hr
         </nav>
         <div className="vF-hd-main">
           <p className="vN-eyebrow vC-label">
-            <b>利用シーン</b>
-            <em>Scene</em>
+            <b>{FEATURE_KIND_ROUNDUP}</b>
+            <em>Roundup</em>
           </p>
           <h1 className="vF-title" style={{ ["--tfs" as string]: `${tfs}px` }} dangerouslySetInnerHTML={{ __html: A.titleHTML }} />
           <p className="vF-meta">

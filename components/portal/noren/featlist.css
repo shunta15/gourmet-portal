@@ -99,6 +99,10 @@
 .vI-ti{font:700 17px/1.65 var(--f-min);letter-spacing:.04em;color:var(--kinari);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
 .vI-sb{font:400 13px/1.8 var(--f-sans);letter-spacing:.04em;color:var(--kinari-2);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 .vI-card:hover .vI-ti{color:var(--shu-hi)}
+.vI-sn{font:700 19px/1.5 var(--f-min);letter-spacing:.05em;color:var(--kinari);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.vI-card:hover .vI-sn{color:var(--shu-hi)}
+.vI-sb--3{-webkit-line-clamp:3}
+.vI-meta .vI-no{font:400 13px/1.4 var(--f-sans);font-style:normal;letter-spacing:.06em}
 .vI-empty{padding:clamp(50px,10vh,100px) 0;text-align:center;font:500 16px/2.2 var(--f-min);letter-spacing:.08em;color:var(--kinari-2)}
 .vI-empty a{display:inline-flex;align-items:center;min-height:44px;margin-left:.8em;color:var(--shu-hi);border-bottom:1px solid currentColor}
 
@@ -161,3 +165,13 @@
   .vI-noren li{animation:none}
   .vI-tile,.vI-card .vH-ac-cloth,.vI-card .vH-ac-ph img{transition:none}
 }
+
+/* ---------- 一覧ページの 2 つの棚（特集記事・まとめ記事） ---------- */
+.vI-shelf{padding:clamp(54px,9vh,96px) var(--gx)}
+.vI-shelf--matome{background:var(--sumi-2);border-top:1px solid var(--line)}
+.vI-sub{margin:clamp(40px,7vh,72px) 0 clamp(18px,3vh,28px);display:flex;align-items:baseline;gap:.9em;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line-2)}
+.vI-sub h3{font:700 clamp(20px,2vw,26px)/1.4 var(--f-min);letter-spacing:.12em;color:var(--kinari)}
+.vI-sub .n{font:400 14px/1 var(--f-sans);letter-spacing:.08em;color:var(--kinari-2)}
+.vI-fl{margin-top:clamp(18px,3vh,30px)}
+.vI-fl h3{font:700 15px/1.4 var(--f-min);letter-spacing:.18em;color:var(--kinari-2);margin:0 0 12px}
+.vI-fl+.vI-fl{margin-top:clamp(22px,4vh,36px)}

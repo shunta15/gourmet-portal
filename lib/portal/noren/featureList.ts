@@ -1,9 +1,14 @@
 import "server-only";
 import { FEATURES, FEATURE_ARTICLES } from "@/lib/data";
+import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { getFeatureArticleById } from "@/lib/db/features";
+import { getRestaurantById } from "@/lib/db/restaurants";
 import type { Feature } from "@/lib/regions";
 import { featureHeroImage } from "@/lib/featureSpotPhotos";
 import { isUsableFeatureImage } from "./usableImage";
 import type { FeatureCardItem } from "./featureCard";
+import { FEATURED_SINGLE_IDS, isDummyFeatureImage } from "./featureSingle";
+import { isSceneShopFeature } from "./featureScene";
 
 /**
  * 暖簾の特集記事のトップ（一覧・地域別・特集を探す）のデータ側（サーバー専用）。
@@ -64,4 +69,41 @@ export function cardImage(f: Feature): string {
 
 export function toCardItem(f: Feature): FeatureCardItem {
   return { id: f.id, no: f.no, tag: f.tag, kicker: f.kicker, title: f.title, sub: f.sub, img: cardImage(f) };
+}
+
+/**
+ * 「まとめ記事」（複数の店・場所が載る記事 = lib/data の FEATURES。今の一覧と同じ集合・同じ並び）を、「利用シーン別」と「街歩き・コース」に分ける。
+ * 分け方は記事ページの枠の分け方と同じ（isSceneShopFeature）。2 つを合わせると FEATURES と同じ本数・同じ並びになる（増やさない・減らさない）。
+ */
+export function getRoundupGroups(): { scene: FeatureCardItem[]; walk: FeatureCardItem[]; total: number } {
+  const scene: FeatureCardItem[] = [];
+  const walk: FeatureCardItem[] = [];
+  for (const f of FEATURES) {
+    const a = FEATURE_ARTICLES[f.id];
+    (a && isSceneShopFeature(f.id, a) ? scene : walk).push(toCardItem(f));
+  }
+  return { scene, walk, total: scene.length + walk.length };
+}
+
+/** 「特集記事」（店 1 軒の記事）の札 1 枚ぶん */
+export type ShopFeatureCardItem = { id: string; img: string; shopName: string; area: string; cuisine: string; title: string };
+
+/**
+ * 「特集記事」の棚の札。FEATURED_SINGLE_IDS の本だけを、その順で。
+ * 写真は記事ページの入口と同じ主役の写真（補いの表 lib/portal/noren/featureSinglePhotos.ts を通した getFeatureArticleById の heroImage。
+ * 使えなければ視点の写真の 1 枚目）。店名・地域・業種は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店のデータ）のものだけ。
+ */
+export async function getFeaturedSingleCards(): Promise<ShopFeatureCardItem[]> {
+  const usableShot = (u: string | undefined | null) => isUsableFeatureImage(u) && !isDummyFeatureImage(u);
+  const out: ShopFeatureCardItem[] = [];
+  for (const id of FEATURED_SINGLE_IDS) {
+    const a = await getFeatureArticleById(id);
+    if (!a) continue;
+    const sid = ARTICLE_STORE_ID_BY_FEATURE[id];
+    const shop = sid ? await getRestaurantById(sid) : null;
+    if (!shop) continue;
+    const img = usableShot(a.heroImage) ? a.heroImage : a.ranking.flatMap((r) => r.images).find(usableShot) ?? "";
+    out.push({ id, img, shopName: shop.name, area: shop.area, cuisine: shop.cuisine, title: a.title });
+  }
+  return out;
 }

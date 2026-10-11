@@ -3,19 +3,30 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FEATURES, REGIONS, type RegionKey } from "@/lib/data";
 import { getFeatureCountsByRegion, getFeaturesByRegion } from "@/lib/featureRegions";
-import { CardGrid, ListHero, TOP_CRUMB } from "@/components/portal/noren/FeatureList";
-import { THEME_GROUPS, countByTheme, filterByTheme, getLatestFeatures, toCardItem } from "@/lib/portal/noren/featureList";
+import { CardGrid, ListHero, ShopFeatureGrid, TOP_CRUMB } from "@/components/portal/noren/FeatureList";
+import { THEME_GROUPS, countByTheme, filterByTheme, getFeaturedSingleCards, getRoundupGroups, toCardItem } from "@/lib/portal/noren/featureList";
+import {
+  FEATURE_KIND_ROUNDUP,
+  FEATURE_KIND_SINGLE,
+  FEATURE_ROUNDUP_NOTE,
+  FEATURE_ROUNDUP_SCENE,
+  FEATURE_ROUNDUP_WALK,
+  FEATURE_SHELF_ROUNDUP_ID,
+  FEATURE_SHELF_SINGLE_ID,
+  FEATURE_SINGLE_NOTE,
+} from "@/lib/portal/noren/featureKinds";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_FEATURE_INDEX_REWRITE } from "@/lib/portal/noren/rewrites";
 
 // 特集記事のトップ（一覧）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /feature のまま。この内部のパス /gourmet/feature は外に出さない）。
-// 枠は app/gourmet/layout.tsx（暖簾の枠）。中身・並び・絞り込み（?region=・?theme=・?all=1）・metadata は、今の app/feature/page.tsx と同じ。
+// 枠は app/gourmet/layout.tsx（暖簾の枠）。絞り込み（?region=・?theme=・?all=1）の結果は、今の app/feature/page.tsx と同じ中身・並び（まとめ記事の側）。
+// 一覧の上の方は 2 つの棚: 「特集記事」（店 1 軒の記事。FEATURED_SINGLE_IDS の 20 本）→「まとめ記事」（複数の店・場所の記事 = FEATURES。利用シーン別 → 街歩き・コース）。名称は lib/portal/noren/featureKinds.ts。
 // 公開スイッチ OFF のあいだは 404（レイアウトとここで assertPortalLive）。NOREN_FEATURE_INDEX_REWRITE=false のあいだも 404。
 export const metadata: Metadata = {
-  title: "特集記事 — 地域・テーマから探す | マチノワ",
+  title: "特集 — 特集記事・まとめ記事を読む | マチノワ",
   description:
-    "編集部が週替わりでお届けする特集記事。地域・テーマ・利用シーンから絞り込んで読めます。",
+    "店を 1 軒ずつ紹介する特集記事と、複数の店や街の歩き方をまとめたまとめ記事。地域・テーマ・利用シーンから絞り込んで読めます。",
   alternates: { canonical: "/feature" },
 };
 
@@ -56,17 +67,17 @@ export default async function Page({
         <ListHero
           crumbs={[TOP_CRUMB, { label: "特集", href: "/feature" }, { label: activeLabel }]}
           eyebrow={activeLabel}
-          cloth={region && availableRegions.includes(region) ? REGIONS[region].name : theme ?? "特集全件"}
+          cloth={region && availableRegions.includes(region) ? REGIONS[region].name : theme ?? "まとめ記事"}
           compact
         >
           <h1 id="vI-h1" className="vI-h1">
-            特集記事<span className="n">{filtered.length}</span>件
+            {FEATURE_KIND_ROUNDUP}<span className="n">{filtered.length}</span>件
           </h1>
           <p>
             <Link href="/feature" className="vI-back" data-cursor="BACK">← フィルタを変える</Link>
           </p>
         </ListHero>
-        <section className="vI-list" aria-label="特集記事の一覧">
+        <section className="vI-list" aria-label={`${FEATURE_KIND_ROUNDUP}の一覧`}>
           <div className="vI-list-in">
             {items.length === 0 ? (
               <p className="vI-empty">
@@ -82,82 +93,90 @@ export default async function Page({
     );
   }
 
-  // ───────── フィルタ未選択時: カテゴリ ランディング ─────────
-  const latest = getLatestFeatures(3).map(toCardItem);
+  // ───────── フィルタ未選択時: 2 つの棚 ─────────
+  const singles = await getFeaturedSingleCards();
+  const roundup = getRoundupGroups();
   return (
     <>
-      <ListHero crumbs={[TOP_CRUMB, { label: "特集" }]} eyebrow="特集記事" cloth="特集記事">
+      <ListHero crumbs={[TOP_CRUMB, { label: "特集" }]} eyebrow="特集" cloth="特集">
         <h1 id="vI-h1" className="vI-h1">
-          絞り込んで、<em>読む。</em>
+          特集を、<em>読む。</em>
         </h1>
-        <p className="vI-lead">編集部が週替わりでお届けする特集。地域・テーマから読みたい一本を選んでください。</p>
+        <p className="vI-lead">
+          {FEATURE_KIND_SINGLE}は店を 1 軒ずつ、{FEATURE_KIND_ROUNDUP}は複数の店や街の歩き方をまとめて紹介します。
+        </p>
       </ListHero>
 
-      {/* 最新の特集 */}
-      <section className="vI-sec vI-sec--latest" aria-labelledby="vI-latest">
+      {/* 特集記事（店 1 軒の記事。FEATURED_SINGLE_IDS の並び） */}
+      <section id={FEATURE_SHELF_SINGLE_ID} className="vI-shelf vI-shelf--tokushu" aria-labelledby="vI-single">
         <div className="vI-sec-in">
           <div className="vI-sh vN-rv">
             <div>
-              <h2 id="vI-latest" className="vF-h2d">最新の<em>特集。</em></h2>
-              <p>編集部が直近で公開した3本。</p>
+              <h2 id="vI-single" className="vF-h2d">{FEATURE_KIND_SINGLE}</h2>
+              <p>{FEATURE_SINGLE_NOTE}{singles.length} 本。</p>
             </div>
-            <Link href="/feature?all=1" className="vI-sh-link" data-cursor="ALL">全件を見る →</Link>
           </div>
-          <CardGrid items={latest} label="最新の特集" />
+          <ShopFeatureGrid items={singles} label={FEATURE_KIND_SINGLE} />
         </div>
       </section>
 
-      {/* 地域から探す */}
-      <section className="vN-paper vI-paper" aria-labelledby="vI-regions">
+      {/* まとめ記事（FEATURES。利用シーン別 → 街歩き・コース）。絞り込み・検索の部品は今までどおり */}
+      <section id={FEATURE_SHELF_ROUNDUP_ID} className="vI-shelf vI-shelf--matome" aria-labelledby="vI-roundup">
         <div className="vI-sec-in">
           <div className="vI-sh vN-rv">
             <div>
-              <h2 id="vI-regions" className="vF-h2d">地域から<em>探す。</em></h2>
-              <p>{availableRegions.length} 地域のミニポータルから特集を絞り込み。</p>
+              <h2 id="vI-roundup" className="vF-h2d">{FEATURE_KIND_ROUNDUP}</h2>
+              <p>{FEATURE_ROUNDUP_NOTE}{roundup.total} 本。</p>
             </div>
+            <Link href="/feature/search" className="vI-sh-link" data-cursor="SEARCH">キーワードで探す →</Link>
           </div>
-          <ul className="vI-tiles vN-rv">
-            {availableRegions.map((k) => (
-              <li key={k}>
-                <Link href={`/feature?region=${k}`} className="vI-tile vI-tile--paper" data-cursor="READ">
-                  <span className="en">{REGIONS[k].nameEn}</span>
-                  <span className="nm">{REGIONS[k].name}</span>
-                  <span className="ct">{counts[k]} 記事</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+          <div className="vI-fl vN-rv">
+            <h3>地域で絞る（{availableRegions.length} 地域）</h3>
+            <ul className="vI-tiles">
+              {availableRegions.map((k) => (
+                <li key={k}>
+                  <Link href={`/feature?region=${k}`} className="vI-tile vI-tile--paper" data-cursor="READ">
+                    <span className="en">{REGIONS[k].nameEn}</span>
+                    <span className="nm">{REGIONS[k].name}</span>
+                    <span className="ct">{counts[k]} 記事</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="vI-fl vN-rv">
+            <h3>テーマ・シーンで絞る</h3>
+            <ul className="vI-tiles">
+              {THEME_GROUPS.filter((g) => countByTheme(g) > 0).map((g) => (
+                <li key={g.label}>
+                  <Link href={`/feature?theme=${encodeURIComponent(g.label)}`} className="vI-tile vI-tile--cloth" data-cursor="READ">
+                    <span className="en">{g.labelEn}</span>
+                    <span className="nm">{g.label}</span>
+                    <span className="ct">{countByTheme(g)} 記事</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="vI-sub">
+            <h3>{FEATURE_ROUNDUP_SCENE}</h3>
+            <span className="n">{roundup.scene.length} 本</span>
+          </div>
+          <CardGrid items={roundup.scene} label={`${FEATURE_KIND_ROUNDUP}（${FEATURE_ROUNDUP_SCENE}）`} />
+
+          <div className="vI-sub">
+            <h3>{FEATURE_ROUNDUP_WALK}</h3>
+            <span className="n">{roundup.walk.length} 本</span>
+          </div>
+          <CardGrid items={roundup.walk} label={`${FEATURE_KIND_ROUNDUP}（${FEATURE_ROUNDUP_WALK}）`} />
+
+          <div className="vI-cta vN-rv">
+            <Link href="/feature?all=1" className="vI-ulink" data-cursor="ALL">{FEATURE_KIND_ROUNDUP}を一覧で見る（{FEATURES.length}件）</Link>
+          </div>
         </div>
       </section>
-
-      {/* テーマから探す */}
-      <section className="vI-sec" aria-labelledby="vI-themes">
-        <div className="vI-sec-in">
-          <div className="vI-sh vN-rv">
-            <div>
-              <h2 id="vI-themes" className="vF-h2d">テーマ・シーンから<em>探す。</em></h2>
-              <p>気分・利用シーンから読みたい特集を選ぶ。</p>
-            </div>
-          </div>
-          <ul className="vI-tiles vN-rv">
-            {THEME_GROUPS.filter((g) => countByTheme(g) > 0).map((g) => (
-              <li key={g.label}>
-                <Link href={`/feature?theme=${encodeURIComponent(g.label)}`} className="vI-tile vI-tile--cloth" data-cursor="READ">
-                  <span className="en">{g.labelEn}</span>
-                  <span className="nm">{g.label}</span>
-                  <span className="ct">{countByTheme(g)} 記事</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* 全件・検索フォールバック */}
-      <div className="vI-cta vN-rv">
-        <Link href="/feature/search" className="vI-btn" data-cursor="SEARCH">キーワードで探す →</Link>
-        <Link href="/feature?all=1" className="vI-ulink" data-cursor="ALL">全件を一覧で見る（{FEATURES.length}件）</Link>
-      </div>
     </>
   );
 }
