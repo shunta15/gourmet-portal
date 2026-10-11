@@ -119,7 +119,7 @@ void main(){
 
     // 風：上（竿）は動かず、裾ほど大きく揺れる
     float ph = uTime * 0.82 + idx * 1.73;
-    float amp = (5.0 + 44.0 * uGust) * s;
+    float amp = (7.5 + 48.0 * uGust) * s;
     float wv = sin(ph + q * 1.7) * 0.62 + sin(ph * 1.93 + idx * 3.1 + q * 2.6) * 0.38;
     float dx = (amp * wv + uMouse * 14.0 * s) * pow(q, 1.55);
     float bil = amp * 0.32 * sin(ph * 1.31 + q * 4.2 + idx) * q;

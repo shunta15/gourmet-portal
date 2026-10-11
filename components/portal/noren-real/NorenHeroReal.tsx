@@ -171,7 +171,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       if (Math.abs(target - open) < 0.0005) open = target;
       mouse += (mouseT - mouse) * 0.05;
       const t = (now - t0) / 1000;
-      gust = reduce ? 0.1 : 0.12 + 0.95 * Math.exp(-t / 2.4) + vel * 0.9 + Math.abs(open - prev) * 6;
+      gust = reduce ? 0.1 : 0.18 + 0.95 * Math.exp(-t / 2.4) + vel * 0.9 + Math.abs(open - prev) * 6;
       const os = open.toFixed(4);
       if (os !== lastOpen) {
         lastOpen = os;

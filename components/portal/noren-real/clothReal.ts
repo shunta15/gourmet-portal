@@ -130,7 +130,7 @@ float swing(float k, float qy){
   float wv = sin(ph + qy * 1.4) * 0.6 + sin(ph * 1.83 + k * 3.1 + qy * 2.3) * 0.4;
   // 風は一定でなく、ゆるむ時と強まる時が不規則に来る（垂れごとに少しずれる）
   float lull = 0.5 + 0.5 * sin(uTime * 0.31 + 1.0) * sin(uTime * 0.17 + k * 0.45 + 2.0);
-  float amp = (3.0 + 14.0 * uGust) * (0.62 + 0.9 * lull) * uS;
+  float amp = (5.0 + 15.0 * uGust) * (0.62 + 0.9 * lull) * uS;
   float hv = (abs(uPt.z - k) < 0.5) ? uPt.w : 0.0;
   return (amp * wv + uMouse * 14.0 * uS + hv * 5.0 * uS * sin(uTime * 2.1 + k)) * pow(qy, 1.4);
 }
