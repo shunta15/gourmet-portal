@@ -13,6 +13,9 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { NOREN_SCENE_REWRITE } from "@/lib/portal/noren/rewrites";
 import { cardImage } from "@/lib/portal/noren/featureList";
 import { toShopCard } from "@/lib/portal/noren/sceneShop";
+import { shopInScene } from "@/lib/portal/noren/sceneMatch";
+import { SceneFindBand } from "@/components/portal/noren/FindBand";
+import { countCuisines, countRegions } from "@/lib/portal/noren/openSearch";
 import { sceneAccent, sceneCloth } from "@/lib/portal/noren/sceneText";
 import type { Feature } from "@/lib/regions";
 
@@ -61,7 +64,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const totalCount = restaurants.length;
 
   // シーンのタグに当てはまる店（今のページと同じ判定）
-  const matchedRestaurants = restaurants.filter((r) => s.matchTags.some((t) => (r.tags || []).includes(t)));
+  const matchedRestaurants = restaurants.filter((r) => shopInScene(s.matchTags, r.tags));
   const shops = matchedRestaurants.map(toShopCard);
 
   // 地図の点（位置のある店だけ。今のページと同じ）
@@ -93,7 +96,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   const breadcrumb = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
-    { name: "シーン", url: `${BASE}/scene` },
+    { name: "さがす", url: `${BASE}/search` },
     { name: s.title, url: `${BASE}/scene/${s.slug}` },
   ]);
 
@@ -106,7 +109,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
       <ListHero
-        crumbs={[TOP_CRUMB, { label: "シーン", href: "/scene" }, { label: s.name }]}
+        crumbs={[TOP_CRUMB, { label: "さがす", href: "/search" }, { label: s.name }]}
         eyebrow="シーン"
         eyebrowEn={`No.${String(no).padStart(2, "0")}`}
         cloth={sceneCloth(s.slug, s.name)}
@@ -119,6 +122,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <p className="vSc-sub">{s.subtitle}</p>
         <p className="vI-lead vSc-lead">{s.intro}</p>
       </ListHero>
+
+      {/* 絞り込みの帯: このシーンで、エリア・業種を選んで /search?scene=<slug>&… の結果へ（件数は、このシーンに当てはまる店の数） */}
+      <SceneFindBand sceneSlug={s.slug} sceneName={s.name} regions={countRegions(matchedRestaurants)} cuisines={countCuisines(matchedRestaurants)} />
 
       {/* タグで絞った店 */}
       <section className="vI-list" aria-labelledby="vSc-h-shops">

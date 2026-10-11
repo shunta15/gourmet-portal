@@ -124,3 +124,20 @@
   .vSc-mc:hover,.vSc-sc:hover{transform:none}
   .vSc-mc:hover .vSc-mc-im img{transform:none}
 }
+
+/* ---------- 「さがす」のトップ（絞り込みなし）と、絞り込みの帯（キーワード・エリア・業種・利用シーン） ---------- */
+.vI-form.vSc-form{grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr) minmax(0,.8fr) minmax(0,.8fr) auto}
+.vI-form.vSc-form--hub{grid-template-columns:minmax(0,1fr) auto;margin-bottom:clamp(28px,5vh,48px)}
+.vSc-hub .vOs-in{gap:clamp(30px,5vh,48px)}
+.vSc-regionlink{margin:0 0 clamp(18px,3vh,26px)}
+.vSc-regionlink a{display:inline-flex;align-items:center;gap:.6em;min-height:44px;color:var(--shu-hi);border-bottom:1px solid currentColor;font:700 15px/1 var(--f-min);letter-spacing:.14em}
+@media (max-width:980px){
+  .vI-form.vSc-form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .vI-form.vSc-form .vI-fld:first-child{grid-column:1 / -1}
+  .vI-form.vSc-form .vI-btn{grid-column:1 / -1}
+  .vI-form.vSc-form--hub{grid-template-columns:minmax(0,1fr)}
+  .vI-form.vSc-form--hub .vI-fld:first-child{grid-column:auto}
+}
+@media (max-width:560px){
+  .vI-form.vSc-form{grid-template-columns:minmax(0,1fr)}
+}

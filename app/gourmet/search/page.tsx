@@ -8,11 +8,15 @@ import { buildFacetPayload } from "@/lib/portal/facets";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
 import { toSearchShop } from "@/lib/portal/noren/sceneShop";
+import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
+import { SCENES } from "@/lib/scenes";
 
 // 店をさがす（/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/search が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /search のまま。この内部のパス /gourmet/search は外に出さない）。枠は app/gourmet/layout.tsx。
 // metadata（noindex を含む）・検索の引数・絞り込み・こだわり条件は、今の app/search/page.tsx・components/SearchClient.tsx と同じ。
 // OFF のあいだ・NOREN_SEARCH_REWRITE=false のあいだは 404。
+// 「店をさがす」の中心のページ: 絞り込みが何も無いときは、キーワードの箱 → エリア → 業種 → 利用シーンの札（NorenSearch の hub。件数はここで数える）。
+// 絞り込みがあるとき（?q= ?region= ?cuisine= ?tag= ?scene= ?budget= ?f=）は結果の一覧。
 export const metadata: Metadata = {
   title: "店舗を探す — マチノワ",
   description:
@@ -37,7 +41,12 @@ export default async function Page() {
         </h1>
       </ListHero>
       <Suspense fallback={null}>
-        <NorenSearch restaurants={items} facets={facets} />
+        <NorenSearch
+          restaurants={items}
+          facets={facets}
+          hub={buildOpenSearchData(items)}
+          sceneDefs={SCENES.map((x) => ({ slug: x.slug, name: x.name, matchTags: x.matchTags }))}
+        />
       </Suspense>
     </>
   );

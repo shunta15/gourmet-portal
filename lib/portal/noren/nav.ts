@@ -28,22 +28,36 @@ export const LIVE_LINKS: NorenLinks = {
   feature: (id) => `/feature/${encodeURIComponent(id)}`,
 };
 
-/** 今のヘッダーの行き先（トップはロゴ） */
-export const HEADER_NAV = [
-  { href: "/feature", ja: "特集", en: "Features" },
-  { href: "/region/tokyo", ja: "エリア", en: "Area" },
-  { href: "/scene/date", ja: "シーン", en: "Scene" },
-  { href: "/search", ja: "さがす", en: "Search" },
-] as const;
+/**
+ * ヘッダーの行き先（トップはロゴ）。RELEASE_REST が true のとき「特集・さがす」の 2 つ（エリア・シーンは「さがす」のページから入る）。
+ * false のときは今までの 4 つ（特集・エリア・シーン・さがす。今の本番と同じ）。
+ */
+export const HEADER_NAV = RELEASE_REST
+  ? ([
+      { href: "/feature", ja: "特集", en: "Features" },
+      { href: "/search", ja: "さがす", en: "Search" },
+    ] as const)
+  : ([
+      { href: "/feature", ja: "特集", en: "Features" },
+      { href: "/region/tokyo", ja: "エリア", en: "Area" },
+      { href: "/scene/date", ja: "シーン", en: "Scene" },
+      { href: "/search", ja: "さがす", en: "Search" },
+    ] as const);
 
-/** 今のフッターの行き先 */
-export const FOOT_NAV = [
-  { href: NOREN_TOP, ja: "トップ" },
-  { href: "/feature", ja: "特集" },
-  { href: "/region", ja: "エリア" },
-  { href: "/scene", ja: "シーン" },
-  { href: "/search", ja: "検索" },
-] as const;
+/** フッターのナビゲーション。RELEASE_REST が true のときはヘッダーと同じ「トップ・特集・さがす」（エリアの一覧は下の「地域」の列にある）。false は今までの 5 つ */
+export const FOOT_NAV = RELEASE_REST
+  ? ([
+      { href: NOREN_TOP, ja: "トップ" },
+      { href: "/feature", ja: "特集" },
+      { href: "/search", ja: "さがす" },
+    ] as const)
+  : ([
+      { href: NOREN_TOP, ja: "トップ" },
+      { href: "/feature", ja: "特集" },
+      { href: "/region", ja: "エリア" },
+      { href: "/scene", ja: "シーン" },
+      { href: "/search", ja: "検索" },
+    ] as const);
 
 /**
  * 本番の /gourmet のフッターのナビゲーションだけに足す入口。今のグルメのトップ（暖簾に替える前）にあって、暖簾のトップに無かった行き先。

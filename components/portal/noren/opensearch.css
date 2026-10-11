@@ -96,3 +96,38 @@
 @media (prefers-reduced-motion:reduce){
   .vOs-btn,.vOs-chip,.vOs-chip i{transition:none}
 }
+
+/* 「すべての地域を見る」の札（最後の 1 つ。朱の字） */
+.vOs-chip--more{color:var(--shu-hi);border-top-color:var(--shu)}
+.vOs-chip--more:hover{color:var(--ink)}
+/* 検索のトップ（NorenSearch）の中に埋め込むとき: 入口の節の余白・地・上の線は付けない */
+.vOs--embed{padding:0;border-top:0;background:transparent}
+.vOs--embed .vOs-in{max-width:none;margin:0}
+
+/* ---------- 地域のページ・シーンのページの「絞り込みの帯」（FindBand.tsx） ---------- */
+.vFb{padding:clamp(30px,5vh,48px) var(--gx);background:var(--sumi-2);border-bottom:1px solid var(--line)}
+.vFb-in{max-width:1500px;margin:0 auto;display:grid;gap:16px}
+.vFb-h{font:700 clamp(22px,2.2vw,30px)/1.4 var(--f-min);letter-spacing:.08em;color:var(--kinari)}
+.vFb-h em{color:var(--shu-hi)}
+.vFb-form{display:grid;gap:14px}
+.vFb-kw{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:end;max-width:720px}
+.vFb-kw .vI-fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.vFb-kw .vI-fld label{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em}
+.vFb-kw input,.vFb-kw select{width:100%;min-width:0;min-height:52px;padding:0 16px;background:color-mix(in srgb,var(--kinari) 7%,transparent);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1.3 var(--f-sans);color-scheme:dark}
+.vFb-kw select option{color:var(--ink);background:var(--paper-hi)}
+.vN .vFb-kw input:focus-visible,.vN .vFb-kw select:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+.vFb-kw .vI-btn{min-height:52px;padding:0 24px 0 calc(24px + .24em)}
+.vFb-l{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em;margin-top:6px}
+/* 札は <button>（押すと form が /search へ送る）。見た目は入口の札（a.vOs-g・a.vOs-chip）と同じ */
+.vFb button.vOs-g,.vFb button.vOs-chip{cursor:pointer;font-family:inherit;text-align:inherit}
+.vFb button.vOs-g{width:100%;border-left:1px solid var(--line-2);border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.vFb .vOs-g{min-height:100px;padding:10px 6px;gap:6px}
+.vFb .vOs-g-k{font-size:clamp(34px,3.2vw,46px)}
+.vN .vFb button:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+@media (max-width:640px){
+  .vFb{padding:28px var(--gx)}
+  .vFb-kw{grid-template-columns:minmax(0,1fr)}
+  .vFb-kw .vI-btn{width:100%}
+  .vFb .vOs-g{min-height:64px;padding:6px 12px}
+  .vFb .vOs-g-k{font-size:36px}
+}

@@ -19,6 +19,8 @@ import { regionShopCounts } from "@/lib/portal/noren/areaData";
 import { REGION_PICKS, photoFor } from "@/lib/portal/noren/picks";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import { flagSize, toAreaShop } from "@/lib/portal/noren/area";
+import { RegionFindBand } from "@/components/portal/noren/FindBand";
+import { countCuisines, countScenes } from "@/lib/portal/noren/openSearch";
 
 // エリアごと（/region/<key>）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/region/<key> が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical・og:url は /region/<key> のまま。この内部のパス /gourmet/region/<key> は外に出さない）。枠は app/gourmet/layout.tsx。
@@ -96,7 +98,7 @@ export default async function Page({ params }: { params: Promise<{ key: string }
   return (
     <>
       <AreaHero
-        crumbs={[TOP_CRUMB, { label: "エリア", href: "/region" }, { label: r.name }]}
+        crumbs={[TOP_CRUMB, { label: "さがす", href: "/search" }, { label: r.name }]}
         eyebrow="地域別ポータル"
         eyebrowEn={r.nameEn}
         photo={photo}
@@ -121,6 +123,9 @@ export default async function Page({ params }: { params: Promise<{ key: string }
           </div>
         </dl>
       </AreaHero>
+
+      {/* 絞り込みの帯: この地域で、業種・利用シーン・キーワードを選んで /search?region=<key>&… の結果へ（件数は、この地域の店の数） */}
+      <RegionFindBand regionKey={rk} regionName={r.name} cuisines={countCuisines(restaurants)} scenes={countScenes(restaurants)} />
 
       {/* 店 */}
       <section className="vR-sec vR-sec--sumi" aria-labelledby="vR-h-shops">
