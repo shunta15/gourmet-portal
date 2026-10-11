@@ -15,6 +15,7 @@ import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
 import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
 import { bandNameSize, bandPlan, clothName, colsOf, emOf, photoSpans, plainLen, titleSize } from "@/lib/portal/noren/feature";
+import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 
 // 店 1 軒の特集記事ページの中身（サーバーコンポーネント）。切り替えは lib/portal/noren/featureSingle.ts（NOREN_FEATURE_SINGLE / isSingleShopFeature）。
 // 記事は「POINT 01〜05」という視点の並びなので、暖簾は店の入口として 1 回だけ掛ける（視点ごとには掛けない）。
@@ -196,7 +197,7 @@ export default function FeatureSinglePage({ article: A, store, pair, links, href
         {/* 導入（紙）と、この記事の視点の目次 */}
         <section className="vH-paper vN-paper vK-intro" aria-label="導入">
           <div className={`vK-intro-in${A.ranking.length > 1 ? "" : " solo"}`}>
-            <p className="vK-lede vN-rv">{A.lede}</p>
+            <p className="vK-lede vN-rv">{stripTabelogScore(A.lede)}</p>
             {A.ranking.length > 1 && (
               <nav className="vK-toc vN-rv" aria-labelledby="vK-toc-h">
                 <p id="vK-toc-h" className="vK-toc-k">この記事の視点</p>
@@ -229,7 +230,7 @@ export default function FeatureSinglePage({ article: A, store, pair, links, href
                   {r.cuisine && <p className="vK-pt-cu">{r.cuisine}</p>}
                   <h2 id={`${sid}-h`} className="vK-pt-h">{r.name}</h2>
                   {r.heading && <p className="vK-pt-hd">{r.heading}</p>}
-                  <p className="vK-pt-desc">{r.desc}</p>
+                  <p className="vK-pt-desc">{stripTabelogScore(r.desc)}</p>
                   {r.specs.length > 0 && (
                     <dl className="vK-specs">
                       {r.specs.map((s, j) => (

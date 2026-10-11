@@ -18,6 +18,7 @@ import type { NorenLinks } from "@/lib/portal/noren/nav";
 import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
 import { commonSpecKeys } from "@/lib/portal/noren/featureScene";
 import { bandNameSize, bandPlan, clothName, colsOf, emOf, kanjiNo, photoSpans, plainLen, splitRank, titleSize } from "@/lib/portal/noren/feature";
+import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 
 // 利用シーン+店舗紹介の記事ページの中身（サーバーコンポーネント）。切り替えは lib/portal/noren/featureScene.ts（NOREN_FEATURE_SCENE / isSceneShopFeature）。
 // 組み方: 巻頭（墨。暖簾の横一列は FeaturePage と同じ FeatureHero）→ 導入と「店を見比べる表」（紙）→ 店ごとの節 ×N（暖簾をくぐって、紙に品書き。最後に「店のページを見る →」）
@@ -121,7 +122,7 @@ export default function FeatureScenePage({ article: A, features, fmap, links, hr
         {/* 導入と、店を見比べる表（紙） */}
         <section className="vH-paper vN-paper vC-cmp" aria-labelledby="vC-cmp-h">
           <div className="vC-cmp-in vN-rv">
-            <p className="vC-lede">{A.lede}</p>
+            <p className="vC-lede">{stripTabelogScore(A.lede)}</p>
             <h2 id="vC-cmp-h" className="vF-h2 vC-cmp-h">
               店を、<em>見比べる。</em>
             </h2>
@@ -274,7 +275,7 @@ export default function FeatureScenePage({ article: A, features, fmap, links, hr
                         {r.cuisine} · {r.area}
                       </p>
                       {r.heading && <p className="vF-hd">{r.heading}</p>}
-                      <p className="vF-desc">{r.desc}</p>
+                      <p className="vF-desc">{stripTabelogScore(r.desc)}</p>
                       {restSpecs.length > 0 && (
                         <dl className="vF-specs">
                           {restSpecs.map((s, j) => (

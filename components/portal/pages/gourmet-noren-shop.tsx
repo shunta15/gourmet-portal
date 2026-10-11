@@ -27,6 +27,7 @@ import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
 import { pairFeatureNote, pairShopNote, pairedFeatureOfShop } from "@/lib/portal/noren/pair";
 import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
 import PairSwitch from "@/components/portal/noren/PairSwitch";
+import { stripTabelogScore, stripTabelogScoreList } from "@/lib/portal/noren/tabelogScore";
 
 /**
  * 暖簾のデザインの店ページの中身（サーバーコンポーネント）。今の /restaurant/[id] と同じデータ・同じ取り方で、同じ中身を出す。
@@ -45,6 +46,9 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   if (!r) notFound();
   const region = REGIONS[r.region];
   const geo = GEO[r.id] ?? null;
+  // 食べログの点数に触れている文・句は出さない（店の評価は Google にする。2026-10-11 オーナー指示。データは書き換えず表示の直前で取る）
+  const desc = stripTabelogScore(r.desc);
+  const body = stripTabelogScoreList(r.body ?? []);
 
   // 今の店ページと同じ取り方
   const featureId = r.featureId ?? ARTICLE_STORE_FEATURE_IDS[r.id];
@@ -125,7 +129,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
       <section className={`vS-intro${cutCands.length > 0 ? "" : " no-kj"}`} aria-label="紹介">
         {cutCands.length > 0 && <KanjiCut kanji={kanji} cands={cutCands} />}
         <div className="vS-intro-b vN-rv" style={{ ["--d" as string]: 1 }}>
-          {r.desc && <p className="vS-lede">{r.desc}</p>}
+          {desc && <p className="vS-lede">{desc}</p>}
           {r.tags && r.tags.length > 0 && (
             <ul className="vS-tags" aria-label="タグ">
               {r.tags.map((t) => (
@@ -142,7 +146,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
       </section>
 
       {/* 本文 */}
-      {r.body && r.body.length > 0 && (
+      {body.length > 0 && (
         <section className="vS-body vN-paper" aria-labelledby="vS-h-body">
           <div className={`vS-body-in${sidePhoto ? "" : " no-ph"}`}>
             {sidePhoto && (
@@ -155,7 +159,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
               </div>
             )}
             <div className="vS-body-tx vN-rv" style={{ ["--d" as string]: 1 }}>
-              {r.body.map((p, i) => (
+              {body.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
             </div>

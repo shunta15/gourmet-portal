@@ -15,6 +15,7 @@ import { sized } from "@/lib/imageUrl";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import type { NorenLinks } from "@/lib/portal/noren/nav";
 import { bandNameSize, bandPlan, clothName, colsOf, emOf, issueLabel, kanjiNo, photoSpans, plainLen, splitRank, titleSize } from "@/lib/portal/noren/feature";
+import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 
 // 暖簾の特集記事ページの中身（サーバーコンポーネント）。見本 /proto-noren/feature/[id] と、公開スイッチ ON の本番 /gourmet/feature/[id]
 // （/feature/<id> が next.config.ts の rewrites でここに来る）が共通で使う。データの取り方・メタ情報・構造化データは呼び出し側のページ。
@@ -149,7 +150,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
                 </h2>
                 <p className="vF-sub">
                   {introText}
-                  {A.lede}
+                  {stripTabelogScore(A.lede)}
                 </p>
               </div>
             </div>
@@ -242,7 +243,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
                         {r.cuisine} · {r.area}
                       </p>
                       {!isCourse && r.heading && <p className="vF-hd">{r.heading}</p>}
-                      <p className="vF-desc">{r.desc}</p>
+                      <p className="vF-desc">{stripTabelogScore(r.desc)}</p>
                       {r.specs.length > 0 && (
                         <dl className="vF-specs">
                           {r.specs.map((s, j) => (
