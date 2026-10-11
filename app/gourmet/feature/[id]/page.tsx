@@ -20,6 +20,7 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { pairFeatureNote, pairShopNote, pairedShopOfFeature } from "@/lib/portal/noren/pair";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
 
 // 特集記事ページの暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/<id> が next.config.ts の rewrites でここに来る
@@ -90,6 +91,10 @@ export default async function Page({
   const single = NOREN_FEATURE_SINGLE && isSingleShopFeature(article);
   // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
   const shop = single && storeId ? await getRestaurantById(storeId) : null;
+  // 店ページとの切り替えの帯: 対の店ページがある記事だけ（店ページ側と同じ関数 pairedShopOfFeature の対応表。店名の部分一致はしない）
+  const pair = single && shop && pairedShopOfFeature(article.id) === shop.id
+    ? { shopNote: pairShopNote(shop), featureNote: pairFeatureNote(article.ranking.length) }
+    : null;
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
   const fmap = single ? null : await buildFmap(article);
   return (
@@ -114,6 +119,7 @@ export default async function Page({
               ? { id: shop.id, name: shop.name, cuisine: shop.cuisine, area: shop.area, nearest: shop.nearest, address: shop.address }
               : null
           }
+          pair={pair}
           links={LIVE_LINKS}
           href={(h) => h}
         />

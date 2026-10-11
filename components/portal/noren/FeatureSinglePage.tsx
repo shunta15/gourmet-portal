@@ -3,6 +3,8 @@ import "@/app/proto-noren/feature.css";
 import "@/app/proto-noren/feature-single.css";
 import FeatureIndex from "@/components/portal/noren/FeatureIndex";
 import DoorLift from "@/components/portal/noren/DoorLift";
+import PairSwitch from "@/components/portal/noren/PairSwitch";
+import type { PairNote } from "@/lib/portal/noren/pair";
 import Lantern from "@/components/portal/noren/Lantern";
 import LanternInner from "@/components/portal/noren-real/LanternInner";
 import { NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
@@ -30,12 +32,17 @@ export type FeatureSinglePageProps = {
   article: FeatureArticle;
   /** 記事と対になる店（ARTICLE_STORE_ID_BY_FEATURE の店）。無い記事は null（入口の暖簾を掛けず、主役の写真をそのまま見せる） */
   store: SingleShop | null;
+  /**
+   * 対の店ページとの切り替えの帯（巻頭のすぐ下）。対の店ページがある記事だけ渡す（lib/portal/noren/pair.ts の pairedShopOfFeature が店を返す記事）。
+   * 無ければ帯は出さない。
+   */
+  pair?: { shopNote: PairNote; featureNote: PairNote } | null;
   links: NorenLinks;
   /** データの中の行き先（/feature/…）を、この画面の行き先に付け替える（本番は変えない） */
   href: (h: string) => string;
 };
 
-export default function FeatureSinglePage({ article: A, store, links, href }: FeatureSinglePageProps) {
+export default function FeatureSinglePage({ article: A, store, pair, links, href }: FeatureSinglePageProps) {
   const isGuide = A.articleType === "guide";
   const tfs = titleSize(plainLen(A.titleHTML));
 
@@ -120,6 +127,18 @@ export default function FeatureSinglePage({ article: A, store, links, href }: Fe
           {A.subtitle && <p className="vK-sub">{A.subtitle}</p>}
         </div>
       </header>
+
+      {/* 店の紹介 ⇄ この店の特集（対の店ページがある記事だけ。上端のヘッダーの下に残る） */}
+      {store && pair && (
+        <PairSwitch
+          current="feature"
+          shopName={store.name}
+          shopHref={`${links.shopBase}/${store.id}`}
+          featureHref={href(links.feature(A.id))}
+          shopNote={pair.shopNote}
+          featureNote={pair.featureNote}
+        />
+      )}
 
       {/* 入口（1 回だけ）: 店の屋号を染めた暖簾が掛かり、スクロールで上がって主役の写真が出る。対の店が無い記事は、写真をそのまま大きく */}
       {store ? (
