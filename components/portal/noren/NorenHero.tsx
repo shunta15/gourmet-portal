@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createCloth, type Cloth } from "./cloth";
 import Lantern from "./Lantern";
-import { ENTRANCE_H1, ENTRANCE_H1_LINES, ENTRANCE_LEAD } from "@/lib/portal/noren/entranceCopy";
+import { ENTRANCE_H1, ENTRANCE_H1_LINES, ENTRANCE_LEAD, lineBases } from "@/lib/portal/noren/entranceCopy";
 import { NOREN_HERO_KEYS } from "@/lib/portal/noren/nav";
 import { BROAD_GROUPS } from "@/lib/cuisineBroad";
 
@@ -173,12 +173,11 @@ export default function NorenHero({ photo, count, areas }: Props) {
           <Lantern className="vN-hero-lan vN-hero-lan--r" mark="酒" />
           <div className="vN-headline">
             <h1 className="vN-h1" aria-label={ENTRANCE_H1}>
-              <span className="vN-h1-col" aria-hidden="true">
-                <Chars text={ENTRANCE_H1_LINES[0]} />
-              </span>
-              <span className="vN-h1-col" aria-hidden="true">
-                <Chars text={ENTRANCE_H1_LINES[1]} base={Array.from(ENTRANCE_H1_LINES[0]).length} />
-              </span>
+              {ENTRANCE_H1_LINES.map((line, i) => (
+                <span key={i} className="vN-h1-col" aria-hidden="true">
+                  <Chars text={line} base={lineBases(ENTRANCE_H1_LINES)[i]} />
+                </span>
+              ))}
             </h1>
             <p className="vN-lead">{ENTRANCE_LEAD}</p>
           </div>

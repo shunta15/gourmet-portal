@@ -4,7 +4,7 @@ import { createClothReal, DYE_EVENT, parseDye, type ClothReal, type DyeKind } fr
 import { createLanternReal, type LanternReal } from "./lanternReal";
 import Lantern from "../noren/Lantern";
 import Link from "next/link";
-import { ENTRANCE_COPY_DEFAULT, parseEntranceCopy, type EntranceCopy } from "@/lib/portal/noren/entranceCopy";
+import { ENTRANCE_COPY_DEFAULT, lineBases, parseEntranceCopy, type EntranceCopy } from "@/lib/portal/noren/entranceCopy";
 import { BRIGHT_EVENT, BRIGHT_MUL, effBright, NOREN_REAL_BRIGHT, NOREN_REAL_SP_SHAPE, parseBright, parseSpShape, SP_HEM_FRAC, SP_MAX_WIDTH, type NorenRealSpShape } from "@/lib/portal/noren/realTop";
 import { DEFAULT_FONT, FONT_CLASSES, FONT_KEYS, fontVar, type FontKey } from "./fonts";
 
@@ -410,13 +410,12 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           )}
           <div className="vR-hlshade" aria-hidden="true" />
           <div className="vN-headline">
-            <h1 className="vN-h1" aria-label={copy.lines.join("")}>
-              <span className="vN-h1-col" aria-hidden="true">
-                <Chars text={copy.lines[0]} />
-              </span>
-              <span className="vN-h1-col" aria-hidden="true">
-                <Chars text={copy.lines[1]} base={Array.from(copy.lines[0]).length} />
-              </span>
+            <h1 className="vN-h1" aria-label={copy.lines.join("")} style={copy.h1Size ? { fontSize: copy.h1Size } : undefined}>
+              {copy.lines.map((line, i) => (
+                <span key={i} className="vN-h1-col" aria-hidden="true">
+                  <Chars text={line} base={lineBases(copy.lines)[i]} />
+                </span>
+              ))}
             </h1>
             <p className="vN-lead">{copy.lead}</p>
           </div>
