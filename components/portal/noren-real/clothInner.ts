@@ -235,7 +235,7 @@ void main(){
     if (center) { float cf = 1.0 - smoothstep(0.05, 0.42, uOpen); ink *= cf; seal *= cf; }
     float halo = smoothstep(0.03, 0.55, mR) * (1.0 - ink);
     alb = mix(alb, uDyeHi * 1.25, halo * 0.30);
-    vec3 inkCol = uInk * 0.79 * (0.95 + 0.10 * (colr - 0.5));
+    vec3 inkCol = uInk * 0.93 * (0.95 + 0.10 * (colr - 0.5));
     float bleed = (1.0 - smoothstep(0.62, 0.98, mask)) * ink;
     inkCol = mix(inkCol, alb * 2.6 + 0.07, bleed * 0.55);
     vec3 baseCol = mix(alb, inkCol, ink);
@@ -259,6 +259,9 @@ void main(){
     float weaveMul = 1.0 + fadeW * (0.12 * wb - 0.06 * wgv + 0.02) * (0.6 + 0.8 * colr);
     float vig = 1.0 - 0.22 * smoothstep(0.30, 1.0, abs(frag.x / W - 0.5) * 2.0);
     vec3 pc = baseCol * diffuse * ao * weaveMul * vig;
+    // 染め抜きの字は、昼(灯りが弱い時刻)でも、端の垂れやひだの陰でも暗く沈まないよう、字の所だけ明るさの下限を持たせる(2026-10-11 オーナー指示「暖簾の中の字が暗い。全部明るく」)
+    vec3 inkLit = uInk * (0.95 + 0.10 * (colr - 0.5)) * (0.84 + 0.16 * ao) * weaveMul * (0.95 + 0.05 * uLamp);
+    pc = mix(pc, max(pc, inkLit), ink * 0.92);
     pc += baseCol * vec3(1.0, 0.8, 0.6) * pow(1.0 - N.z, 2.0) * 0.5;
 
     // 裏からの灯り（糸の隙間・薄い所から透ける）
