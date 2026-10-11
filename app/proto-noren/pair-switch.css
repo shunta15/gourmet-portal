@@ -53,8 +53,14 @@ a.vP-tab:focus-visible{outline:2px solid var(--shu-hi);outline-offset:2px}
   .vP-tab small{letter-spacing:0}
 }
 @media (max-width:480px){
-  /* 狭い画面では、説明の前置き(「編集部が」)を見えなくする(読み上げには残る) */
-  .vP-opt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  /* スマホ: 1 段・高さ 48px。左右 2 つの札だけ(「店の紹介」「この店の特集」。いまいる方が朱)。店名と説明文は帯の見た目から外す(読み上げには残る) */
+  .vN{--vp-h:48px}
+  .vP-in{flex-direction:row;align-items:center;justify-content:stretch;gap:0;padding:0 12px}
+  .vP-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  .vP-tabs{width:100%}
+  .vP-tab{height:44px;min-height:44px;padding:0 8px;justify-items:center;align-content:center;text-align:center}
+  .vP-tab b{font-size:14px;letter-spacing:.1em}
+  .vP-tab small{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 }
 @media (prefers-reduced-motion:reduce){
   .vP-tab{transition:none}

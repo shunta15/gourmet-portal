@@ -68,7 +68,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
     mapsUrl,
     geo: geo ? { lat: geo.lat, lng: geo.lng } : null,
     social,
-    hasRating: false, // 食べログなど別の出典の評価は出さない。評価の行から外れた出典リンクは、ボタンとして出す
+    hasRating: !!r.rating,
     source: r.source ?? null,
     featureId,
     town: town ? { name: town.town, href: town.href, count: town.count } : null,
