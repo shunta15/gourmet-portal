@@ -3,9 +3,14 @@ import Boot from "./Boot";
 import NorenHeader from "./NorenHeader";
 import NorenFooter from "./NorenFooter";
 import { brush, latin } from "./fonts";
-import { NOREN_REAL_DYE, NOREN_REAL_GROUND, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
+import { BRIGHT_MUL, NOREN_REAL_BRIGHT, NOREN_REAL_DYE, NOREN_REAL_GROUND, NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
 import "../noren-real/dye.css";
 import "../noren-real/ground.css";
+
+// CSS の布の明るさ（dye.css の「明るさ」）。リアル版が ON で、段階が 2 以上のときだけ、段階の割合を枠に渡す（1 のときは何も付けない＝今までと同じ）
+const CLOTH_LIT = NOREN_REAL_INNER && BRIGHT_MUL[NOREN_REAL_BRIGHT] !== 1;
+/** 段階 1 → 0%、段階 5 → 100%（倍率で線形に補間） */
+const CLOTH_LIT_PCT = `${Math.round(((BRIGHT_MUL[NOREN_REAL_BRIGHT] - 1) / (BRIGHT_MUL[5] - 1)) * 1000) / 10}%`;
 
 // 出現・暖簾の演出は、最初は隠した状態から始まる。スクリプトが動かない環境では、最初から全部見える（中身は全部そのまま読める）
 const NOREN_NOSCRIPT_CSS =
@@ -32,7 +37,7 @@ export default function NorenFrame({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined} data-ground={NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined}>
+    <div className={`vN ${brush.variable} ${latin.variable}`} data-dye={NOREN_REAL_INNER ? NOREN_REAL_DYE : undefined} data-ground={NOREN_REAL_GROUND !== "sumi" ? NOREN_REAL_GROUND : undefined} data-lit={CLOTH_LIT ? "1" : undefined} style={CLOTH_LIT ? ({ "--cloth-lit": CLOTH_LIT_PCT } as React.CSSProperties) : undefined}>
       <noscript>
         <style>{NOREN_NOSCRIPT_CSS}</style>
       </noscript>

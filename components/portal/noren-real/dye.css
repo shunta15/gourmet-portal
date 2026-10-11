@@ -5,18 +5,33 @@
    付いていない（false）ときは、このファイルの規則はどれも効かない＝今までの墨茶のまま。
    布の色は WebGL の布（clothReal.ts・clothInner.ts の DYES）の見た目に合わせた、縁（暗い）と中ほど（明るい）の 2 色。
    ==================================================================== */
-.vN[data-dye="ai"]{--cl-edge:#0d1524;--cl-mid:#22324f}
-.vN[data-dye="kon"]{--cl-edge:#070b14;--cl-mid:#141d31}
-.vN[data-dye="sumi"]{--cl-edge:#120e0c;--cl-mid:#2a2019}
-.vN[data-dye="kakishibu"]{--cl-edge:#240f07;--cl-mid:#53291a}
-.vN[data-dye="enji"]{--cl-edge:#260811;--cl-mid:#5a1627}
+.vN[data-dye="ai"]{--cl-edge:#0d1524;--cl-mid:#22324f;--cl-edge5:#182132;--cl-mid5:#3f4e6d}
+.vN[data-dye="kon"]{--cl-edge:#070b14;--cl-mid:#141d31;--cl-edge5:#0c0e15;--cl-mid5:#212533}
+.vN[data-dye="sumi"]{--cl-edge:#120e0c;--cl-mid:#2a2019;--cl-edge5:#15110e;--cl-mid5:#31261e}
+.vN[data-dye="kakishibu"]{--cl-edge:#240f07;--cl-mid:#53291a;--cl-edge5:#240f07;--cl-mid5:#53291b}
+.vN[data-dye="enji"]{--cl-edge:#260811;--cl-mid:#5a1627;--cl-edge5:#260811;--cl-mid5:#5a1627}
+/* --cl-edge5・--cl-mid5 は、明るさ 5 のときの WebGL の布（昼 12:30・夜 21:30 の実測の平均色。昼夜でほぼ同じ）に平均色を合わせた縁・中ほどの色。ただし今の色より暗くなる所は今の色のまま（柿渋・臙脂はほぼ変わらない） */
 
 /* 共通の布の変数（feature.css の --cloth）を上書きする → 特集カード・目次の札・テーマの札・見出しの暖簾・店ごとの入口・次の横丁・巻頭の代わり、が揃う */
-.vN[data-dye]{--cloth:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 48%,var(--cl-edge))}
+/* --cl-e・--cl-h は「実際に使う縁・中ほどの色」。明るさ 1 のとき（data-lit なし）は --cl-edge・--cl-mid そのまま（今までと同じ）。下の「明るさ」で明るくする */
+.vN[data-dye]{--cl-e:var(--cl-edge);--cl-h:var(--cl-mid);--cloth:linear-gradient(90deg,var(--cl-e),var(--cl-h) 48%,var(--cl-e))}
 /* 直接色を書いている所 */
-.vN[data-dye] .vN-ft-noren a{background:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 48%,var(--cl-edge))}
-.vN[data-dye] .vS-fb-p,.vN[data-dye] .vN-fb-p{background:linear-gradient(90deg,var(--cl-edge),var(--cl-mid) 45%,var(--cl-edge))}
-.vN[data-dye] .vH-roll{background:repeating-linear-gradient(90deg,rgba(0,0,0,.34) 0 3px,transparent 3px 26px),linear-gradient(180deg,var(--cl-mid),var(--cl-edge))}
+.vN[data-dye] .vN-ft-noren a{background:linear-gradient(90deg,var(--cl-e),var(--cl-h) 48%,var(--cl-e))}
+.vN[data-dye] .vS-fb-p,.vN[data-dye] .vN-fb-p{background:linear-gradient(90deg,var(--cl-e),var(--cl-h) 45%,var(--cl-e))}
+.vN[data-dye] .vH-roll{background:repeating-linear-gradient(90deg,rgba(0,0,0,.34) 0 3px,transparent 3px 26px),linear-gradient(180deg,var(--cl-h),var(--cl-e))}
+
+/* 明るさ（lib/portal/noren/realTop.ts の NOREN_REAL_BRIGHT）。WebGL の布と同じ明るさに見えるよう、CSS の布の地・竿だけを明るくする。
+   NorenFrame が、スイッチ NOREN_REAL_INNER が true で明るさが 2 以上のときだけ、枠（.vN）に data-lit="1" と --cloth-lit（段階 1 → 0%、段階 5 → 100%）を付ける。付いていなければ何も効かない＝今までと同じ。
+   式: 色 = color-mix(今の色, 明るさ 5 の色, --cloth-lit)。昼夜で変えない（WebGL の布は、明るさ 5 では灯りの強さと夜の抑えが打ち消し合って、昼夜でほぼ同じ明るさ。実測 12:30 と 21:30 で平均色の差は 1 割未満）。
+   動かすのは布の地・竿の色だけ。染め抜きの字（生成り）・朱の印・ひだの黒い筋は別の色なので、白飛びしない。 */
+@supports (color:color-mix(in srgb,#000,#fff 50%)){
+  .vN[data-dye][data-lit]{
+    --cl-e:color-mix(in srgb,var(--cl-edge),var(--cl-edge5) var(--cloth-lit,0%));
+    --cl-h:color-mix(in srgb,var(--cl-mid),var(--cl-mid5) var(--cloth-lit,0%));
+    /* 竿（木）。明るさ 5 の WebGL の竿は、上 #a57c5b ・ 4 割ほどで #765538 ・ 下は暗いまま */
+    --rodg:linear-gradient(180deg,color-mix(in srgb,#6a5240,#a57c5b var(--cloth-lit,0%)),color-mix(in srgb,#33271e,#765538 var(--cloth-lit,0%)) 42%,#0f0a07);
+  }
+}
 
 /* 朱の「輪」の印：深い赤・茶の布の上でも沈まないよう、少し明るい朱にして、細い生成りの縁を付ける（藍・濃紺・墨は今のまま） */
 .vN[data-dye="kakishibu"] .vN-seal,.vN[data-dye="enji"] .vN-seal{
