@@ -1,0 +1,180 @@
+/* COLOR PLAY トップの最初の画面(赤い面)の動きの案 3 つ。?hero=1 / 2 / 3(見本専用)。指定なしは colorplay.css のまま。
+   動かすのは transform / opacity / translate / rotate / scale が基本。写真は 1.05 倍を超えて拡大しない。 */
+
+@keyframes hx-photo-in{from{opacity:0; transform:translateY(4%)}}
+@keyframes hx-drift{from{transform:scale(1) translate(0,0)} to{transform:scale(1.04) translate(-1%,-.6%)}}
+@keyframes hx-fade{from{opacity:0} to{opacity:1}}
+.cp-hero[data-hero] .cp-hero-photo img{transform-origin:70% 60%; animation:hx-photo-in 1s var(--pd,.9s) cubic-bezier(.2,.8,.2,1) both, hx-drift 12s 2.2s ease-in-out infinite alternate}
+
+/* ============ 案 1 塗る ============ */
+.cp-hero[data-hero="1"]{background:#fff; touch-action:pan-y pinch-zoom}
+.cp-hero[data-hero="1"]::after{display:none}
+.hp-coats{position:absolute; inset:0; z-index:0; pointer-events:none}
+.hp-coat{position:absolute; inset:-14% -14%; rotate:-4deg; pointer-events:none}
+.hp-coat.c0{--cc:var(--red)}
+.hp-coat.c1{--cc:var(--hot); --a:.02}
+.hp-coat.c2{--cc:var(--sky); --a:.17}
+.hp-coat.c3{--cc:#111; --a:.32}
+.hp-s{position:absolute; width:114%; left:calc(-4% + (var(--d) + 1)*-3%); top:calc(var(--k)*16.6% - 2%); height:20.8%; background:var(--cc); scale:calc(var(--d)*-1) 1; will-change:translate}
+/* 開いた瞬間: 6 本の筆が互い違いの向きで走って、赤い面になる */
+@keyframes hp-in{from{translate:calc(var(--d)*114%) 0}}
+.hp-coat.c0 .hp-s{animation:hp-in .85s cubic-bezier(.3,.75,.2,1) both; animation-delay:calc(var(--k)*85ms + 40ms)}
+/* スクロール: 次の色が、同じように筆で塗り重なる(進み具合は ScrollFx が .cp-hero に入れる --sp-o) */
+.hp-coat:not(.c0) .hp-s{translate:calc((1 - clamp(0, (var(--sp-o,0) - var(--a) - var(--k)*.016) / .15, 1))*var(--d)*114%) 0}
+/* 見出し: 1 字ずつ、しずくのように乗る。行ごとに違う速さで横にずれる */
+@keyframes hp-ch{0%{opacity:0; transform:translateY(-.95em) scale(1.35,.65) rotate(-8deg)} 55%{opacity:1; transform:translateY(.05em) scale(.92,1.1)} 100%{opacity:1; transform:none}}
+.cp-hero[data-hero="1"] .cp-line{animation:none; translate:calc(var(--sp-o,0)*var(--dx,0px)) 0}
+.cp-hero[data-hero="1"] .cp-line:nth-child(1){--dx:-26vw}
+.cp-hero[data-hero="1"] .cp-line:nth-child(2){--dx:42vw}
+.cp-hero[data-hero="1"] .cp-line:nth-child(3){--dx:-14vw}
+.cp-ch{display:inline-block; animation:hp-ch .75s cubic-bezier(.34,1.56,.64,1) both; animation-delay:calc(.75s + var(--c)*55ms)}
+.cp-hero[data-hero="1"] .cp-hero-sub{animation:hx-fade 1s 1.7s both}
+.cp-hero[data-hero="1"] .cp-hero-sc{animation:hx-fade 1s 1.9s both}
+.cp-hero[data-hero="1"] .cp-hero-tag{animation:hx-fade 1s 1.2s both}
+.cp-hero[data-hero="1"]{--pd:1.1s}
+.cp-hero[data-hero="1"] .cp-hero-copy{translate:0 calc(var(--sp-o,0)*-90px); opacity:calc(1 - max(0, var(--sp-o,0) - .5)*2.4)}
+/* 触った跡 */
+.hp-trail{position:absolute; inset:0; width:100%; height:100%; z-index:6; pointer-events:none}
+
+/* ============ 案 2 留める ============ */
+.cp-stage{position:relative; height:320vh; height:calc(100svh*3.2)}
+.cp-stage .cp-hero{position:sticky; top:0; height:100vh; height:100svh; min-height:560px; overflow:hidden; color:var(--ink,#fff); transition:color .35s}
+.cp-stage .cp-hero::after{display:none}
+.cp-stage .cp-hero-in{height:100%; min-height:0; padding-bottom:0}
+.cp-stage{--ink:#fff}
+.cp-stage[data-scene="1"], .cp-stage[data-scene="2"]{--ink:#111}
+/* 背景の色: 円が広がって次の色に切り替わる(クリップの円。スクロールの進み具合 --sp-s で広がる) */
+.st-bg{position:absolute; inset:0; z-index:0; pointer-events:none; background:var(--bgc);
+  --t:clamp(0, (var(--sp-s,0) - var(--a)) / .15, 1); --e:calc(var(--t)*var(--t)*(3 - 2*var(--t)));
+  clip-path:circle(calc(var(--e)*130%) at var(--ox) var(--oy))}
+.st-b1{--a:.10; --bgc:var(--pink); --ox:60%; --oy:58%}
+.st-b2{--a:.36; --bgc:var(--blue); --ox:30%; --oy:62%}
+.st-b3{--a:.62; --bgc:#111; --ox:72%; --oy:40%}
+/* 人物のまわりの形(場面ごとに入れ替わる)。写真と同じ枠に重ねて、写真の後ろに置く */
+.st-shapes{position:absolute; z-index:1; right:max(0px, calc(50% - 574px)); bottom:0; width:min(52%,500px); aspect-ratio:532/632; pointer-events:none}
+.st-sh{position:absolute; inset:-4% -18% 12% -18%; display:block; opacity:0; scale:.45; rotate:-35deg; transition:opacity .4s, scale .75s cubic-bezier(.34,1.56,.64,1), rotate .85s cubic-bezier(.34,1.56,.64,1)}
+.sh1, .sh2, .sh3{inset:-24% -34% -6% -34%}
+.st-sh svg{display:block; width:100%; height:100%; overflow:visible; rotate:calc(var(--sp-s,0)*50deg); animation:st-float 5.5s ease-in-out infinite alternate}
+@keyframes st-float{from{translate:0 0} to{translate:0 -3%}}
+.cp-stage[data-scene="0"] .sh0, .cp-stage[data-scene="1"] .sh1, .cp-stage[data-scene="2"] .sh2, .cp-stage[data-scene="3"] .sh3{opacity:1; scale:1; rotate:0deg}
+@keyframes st-in{from{opacity:0; scale:.3}}
+.cp-stage .sh0{animation:st-in 1.1s .35s cubic-bezier(.34,1.56,.64,1) both}
+.cp-stage .cp-hero-photo{translate:none; transform-origin:50% 100%; scale:calc(1 + var(--sp-s,0)*.04); rotate:calc((var(--sp-s,0) - .5)*3deg); will-change:scale,rotate}
+.cp-stage .cp-hero{--pd:.2s}
+.cp-stage .cp-hero-copy{translate:none; opacity:1}
+.cp-stage .cp-hero-sub{translate:none}
+.cp-stage .cp-line{translate:calc(var(--sp-s,0)*var(--dx,0px)) 0}
+.cp-stage .cp-line:nth-child(1){--dx:3vw}
+.cp-stage .cp-line:nth-child(2){--dx:7vw}
+.cp-stage .cp-line:nth-child(3){--dx:1.5vw}
+/* 場面が変わるたびに、見出しの行が入れ替わるように出直す(アニメーション名を変えて再生し直す) */
+@keyframes st-swapA{from{opacity:0; transform:translateY(.55em) rotate(2deg)} to{opacity:1; transform:none}}
+@keyframes st-swapB{from{opacity:0; transform:translateY(-.55em) rotate(-2deg)} to{opacity:1; transform:none}}
+.cp-stage[data-scene="1"] .cp-line, .cp-stage[data-scene="3"] .cp-line{animation:st-swapA .65s cubic-bezier(.34,1.56,.64,1) both; animation-delay:calc(var(--l)*90ms)}
+.cp-stage[data-scene="2"] .cp-line{animation:st-swapB .65s cubic-bezier(.34,1.56,.64,1) both; animation-delay:calc(var(--l)*90ms)}
+/* 右上の COLOR PLAY: 場面ごとに別の札に入れ替わる */
+.st-tags{position:absolute; z-index:4; top:112px; right:max(24px, calc(50% - 550px)); width:0; height:0; animation:hx-fade 1s .5s both}
+.st-tg{position:absolute; right:0; top:0; text-align:left; opacity:0; translate:0 -26px; rotate:6deg; transform-origin:100% 0; transition:opacity .3s, translate .6s cubic-bezier(.34,1.56,.64,1), rotate .6s cubic-bezier(.34,1.56,.64,1)}
+.st-tg b{display:block; font-family:var(--cp-cond),sans-serif; font-weight:700; font-size:34px; line-height:1.02; letter-spacing:.03em; white-space:nowrap}
+.st-tg span{display:block; margin-top:12px; font-size:15px; font-weight:500; line-height:1.5; white-space:nowrap}
+.cp-stage[data-scene="0"] .tg0, .cp-stage[data-scene="1"] .tg1, .cp-stage[data-scene="2"] .tg2, .cp-stage[data-scene="3"] .tg3{opacity:1; translate:0 0; rotate:0deg}
+.tg1{background:#111; color:#fff; padding:12px 22px; border-radius:999px}
+.tg1 b{font-size:26px}
+.tg1 span{margin-top:2px; font-size:12px}
+.tg2 b{color:transparent; -webkit-text-stroke:2px #111; font-size:44px}
+.tg2 span{color:#111; font-weight:700}
+.tg3{width:136px; height:136px; border-radius:50%; background:var(--hot); color:#fff; display:grid; place-items:center; text-align:center}
+.tg3 b{font-size:30px}
+/* いまどの色かを示す印 */
+.st-dots{position:absolute; z-index:6; right:14px; top:50%; translate:0 -50%; display:grid; gap:16px; margin:0; padding:0; list-style:none; animation:hx-fade 1s .8s both}
+.st-dots li{width:13px; height:13px; border-radius:50%; background:var(--dc); box-shadow:0 0 0 2px #fff, 0 0 0 3px rgba(0,0,0,.25); transition:scale .4s cubic-bezier(.34,1.56,.64,1)}
+.cp-stage[data-scene="0"] .st-dots li:nth-child(1), .cp-stage[data-scene="1"] .st-dots li:nth-child(2), .cp-stage[data-scene="2"] .st-dots li:nth-child(3), .cp-stage[data-scene="3"] .st-dots li:nth-child(4){scale:1.75}
+/* 下へ促す矢印(文字は足さない)。動き出したら消える */
+.st-cue{position:absolute; z-index:6; left:50%; bottom:22px; translate:-50% 0; color:#fff; opacity:calc(1 - var(--sp-s,0)*14); animation:st-bob 1.4s ease-in-out infinite alternate; pointer-events:none}
+.cp-stage .st-cue{display:block}
+@keyframes st-bob{from{transform:translateY(-4px)} to{transform:translateY(6px)}}
+/* 最後に 3 つのタブがせり上がる */
+.cp-stage .cp-pills{position:absolute; z-index:7; left:50%; bottom:36px; width:min(1100px, calc(100% - 48px)); margin:0;
+  --pr:clamp(0, (var(--sp-s,0) - .80) / .15, 1); --pe:calc(1 - (1 - var(--pr))*(1 - var(--pr))*(1 - var(--pr)));
+  translate:-50% calc((1 - var(--pe))*190%)}
+.cp-stage:not([data-pills="1"]) .cp-pills{visibility:hidden}
+.cp-stage .cp-pill{animation:none; translate:none}
+/* ヘッダー: 留まっている間は上に固定して場面の色に合わせ、終わったら白い帯になる */
+body:has(.cp-stage) .cp-header.on-color{position:fixed; transition:color .35s, background .3s}
+body:has(.cp-stage[data-scene="1"]) .cp-header.on-color, body:has(.cp-stage[data-scene="2"]) .cp-header.on-color{color:#111}
+body:has(.cp-stage[data-scene="1"]) .cp-header.on-color .cp-ic:hover, body:has(.cp-stage[data-scene="2"]) .cp-header.on-color .cp-ic:hover{background:rgba(0,0,0,.08)}
+body:has(.cp-stage[data-scene="3"]) .cp-header.on-color .cp-menu-btn{background:#fff; color:#111}
+body:has(.cp-stage[data-end="1"]) .cp-header.on-color{background:rgba(255,255,255,.94); backdrop-filter:blur(8px); color:#111}
+body:has(.cp-stage[data-end="1"]) .cp-header.on-color .cp-menu-btn{background:#111; color:#fff}
+body:has(.cp-stage[data-end="1"]) .cp-header.on-color .cp-ic:hover{background:rgba(0,0,0,.07)}
+
+/* ============ 案 3 流れる ============ */
+.cp-hero[data-hero="3"]{touch-action:pan-y pinch-zoom; --pd:.2s}
+.hf-bands{position:absolute; inset:-14% -12%; z-index:0; pointer-events:none; rotate:-7deg; translate:0 calc(var(--sp-o,0)*-70px)}
+.hf-row{position:absolute; left:0; right:0; height:1.18em; overflow:hidden; line-height:1.18; font-size:min(15vw,230px)}
+.hf-track{display:flex; width:max-content; will-change:transform}
+.hf-unit{display:inline-flex; align-items:center; gap:.3em; padding-right:.3em; white-space:nowrap}
+.hf-unit i{font-style:normal; font-size:.34em}
+.hf-o{font-family:var(--cp-cond),sans-serif; font-weight:700; letter-spacing:.02em; color:transparent; -webkit-text-stroke:2px rgba(255,255,255,.45)}
+.hf-f{font-size:min(9vw,140px); font-weight:900; color:rgba(255,255,255,.13)}
+.hf-p{font-family:var(--cp-cond),sans-serif; font-weight:700; letter-spacing:.02em; color:rgba(251,155,220,.3)}
+.hf-q{font-size:min(10vw,150px); font-weight:900; color:transparent; -webkit-text-stroke:2px rgba(255,255,255,.45)}
+.cp-hero[data-hero="3"] .cp-hero-photo{transform-origin:50% 62%; will-change:transform, translate}
+.cp-hero[data-hero="3"] .cp-hero-photo img{scale:1.04}
+.cp-hero[data-hero="3"] .cp-line{animation-duration:.8s}
+.hf-shapes{position:absolute; z-index:2; top:0; bottom:0; left:50%; width:100vw; margin-left:-50vw; pointer-events:none}
+.hf-sh{position:absolute; display:block; width:calc(var(--w)*var(--u,1)*1px); height:calc(var(--w)*var(--u,1)*1px); will-change:transform, opacity; transform:translate(-50%,-50%); animation:hx-fade 1s .6s both}
+.hf-dot{border-radius:50%; background:var(--c); box-shadow:inset -4px -5px 0 rgba(0,0,0,.14), inset 3px 3px 0 rgba(255,255,255,.4)}
+.hf-ring{border-radius:50%; border:3px solid var(--c)}
+.hf-tip{height:calc(var(--w)*var(--u,1)*1.4px); border-radius:50% 50% 16% 16% / 64% 64% 12% 12%; background:var(--c); box-shadow:inset -3px -4px 0 rgba(0,0,0,.14)}
+.hf-tip::after{content:""; position:absolute; left:20%; top:16%; width:18%; height:50%; border-radius:99px; background:rgba(255,255,255,.55)}
+.hf-swatch{height:calc(var(--w)*var(--u,1)*1.5px); border-radius:10px; background:radial-gradient(circle at 50% 36%, var(--c) 0 32%, #fff 33%); box-shadow:0 6px 14px rgba(0,0,0,.22)}
+
+/* ============ スマホ ============ */
+@media (max-width:900px){
+  .cp-hero[data-hero="1"] .cp-line:nth-child(1){--dx:-9vw}
+  .cp-hero[data-hero="1"] .cp-line:nth-child(2){--dx:36vw}
+  .cp-hero[data-hero="1"] .cp-line:nth-child(3){--dx:14vw}
+  .cp-stage{height:250vh; height:calc(100svh*2.5)}
+  .cp-stage .cp-hero-in{padding-top:96px}
+  .st-shapes{width:min(70%,300px); right:-2%}
+  .st-tags{top:84px; right:16px}
+  .st-tg b{font-size:20px}
+  .st-tg span{font-size:12px; margin-top:8px}
+  .tg1{padding:8px 16px} .tg1 b{font-size:17px} .tg1 span{font-size:10px}
+  .tg2 b{font-size:28px; -webkit-text-stroke-width:1.5px}
+  .tg3{width:96px; height:96px} .tg3 b{font-size:21px}
+  .st-dots{right:8px; gap:14px}
+  .cp-stage .cp-pills{grid-template-columns:repeat(3,1fr); gap:6px; padding:6px; border-radius:999px; bottom:22px; width:calc(100% - 28px)}
+  .cp-stage .cp-pill{flex-direction:column; justify-content:center; gap:4px; min-height:68px; padding:0 4px; text-align:center}
+  .cp-stage .cp-pill span{align-items:center}
+  .cp-stage .cp-pill b{font-size:14px}
+  .cp-stage .cp-pill small{display:none}
+  .cp-stage .cp-pill svg{width:24px; height:24px}
+  .hf-bands{inset:-14% -22%}
+  .hf-row{font-size:min(24vw,230px)}
+  .hf-f{font-size:min(13vw,140px)}
+  .hf-q{font-size:min(15vw,150px)}
+  .hf-sh{--u:.78}
+}
+
+/* ============ 動きを減らす設定: 動きを止め、今の静止した見た目に近づける ============ */
+@media (prefers-reduced-motion: reduce){
+  .hp-coats, .hp-trail, .hf-bands, .hf-shapes, .st-bg, .st-shapes, .st-dots, .st-cue, .st-tags{display:none !important}
+  .cp-hero[data-hero="1"]{background:var(--red)}
+  .cp-hero[data-hero="1"]::after{display:block}
+  .cp-hero[data-hero="1"] .cp-line, .cp-hero[data-hero="1"] .cp-hero-copy{translate:none !important; opacity:1 !important}
+  .cp-stage{height:auto}
+  .cp-stage .cp-hero{position:relative; height:auto; min-height:680px}
+  .cp-stage .cp-hero::after{display:block}
+  .cp-stage .cp-hero-in{height:auto; min-height:680px; padding-bottom:120px}
+  .cp-stage .cp-hero-photo{scale:1; rotate:0deg}
+  .cp-stage .cp-line{translate:none}
+  .cp-stage .cp-pills{visibility:visible !important; translate:-50% 0}
+  body:has(.cp-stage) .cp-header.on-color{position:absolute}
+  .cp-hero[data-hero] .cp-hero-photo img{scale:1; transform:none}
+  .hf-sh, .hf-track, .cp-hero[data-hero="3"] .cp-hero-photo{transform:none !important}
+}
+@media (prefers-reduced-motion: reduce) and (max-width:900px){
+  .cp-stage .cp-hero, .cp-stage .cp-hero-in{min-height:600px}
+}
