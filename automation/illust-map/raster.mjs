@@ -35,11 +35,10 @@ for (const [id, m] of Object.entries(meta)) {
   if (only.length && !only.includes(m.key)) continue;
   const t0 = Date.now();
   const fi = 2 ** (m.zi - m.z); // 初期表示の画面の px / 単位
-  const W = m.W || 1536, H = m.H || 1024; // japan（W/H 未記録）は SVG の大きさから
-  let scale = Math.min(2 * fi, CAP[m.kind] / Math.max(W, H));
   const file = path.join(ROOT, "automation/illust-map", m.file);
   const svgText = fs.readFileSync(file, "utf8");
-  const sw = Number(svgText.match(/width="(\d+)"/)?.[1] ?? W), sh = Number(svgText.match(/height="(\d+)"/)?.[1] ?? H);
+  const sw = Number(svgText.match(/width="(\d+)"/)?.[1]), sh = Number(svgText.match(/height="(\d+)"/)?.[1]);
+  let scale = Math.min(2 * fi, CAP[m.kind] / Math.max(sw, sh));
   let png, info;
   let q = 74;
   for (let attempt = 0; attempt < 6; attempt++) {

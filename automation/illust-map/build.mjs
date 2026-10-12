@@ -41,7 +41,7 @@ const FALLBACK_CENTER = { wakayama: [34.2261, 135.1675] };
 
 // 描き方: e 手描き風（既定）/ f 古地図 / g 夜の灯り / h 見下ろす（平らな色面。画面側で倒す）。 --style=f のように指定する
 const STYLE = (process.argv.find((a) => a.startsWith("--style=")) ?? "--style=e").slice(8);
-const GROUND = { e: "#f4eedc", f: "#e7d9b3", g: "#1a1612", h: "#ece6d5" }[STYLE];
+const GROUND = { e: "#f4eedc", f: "#e7d9b3", g: "#1a1612", h: "#e8e1cc" }[STYLE];
 
 // ---- 小さな道具 ----
 function seeded(seed) {
@@ -178,7 +178,8 @@ function planLayers(key, pts) {
   };
   const spanOk = (r, box, pad) => worldX(box.minLng - pad.lng, r.z) >= r.x0 * 256 - 1 && worldX(box.maxLng + pad.lng, r.z) <= (r.x1 + 1) * 256 + 1 && worldY(box.maxLat + pad.lat, r.z) >= r.y0 * 256 - 1 && worldY(box.minLat - pad.lat, r.z) <= (r.y1 + 1) * 256 + 1;
   const hLatA = (A.maxLat - A.minLat) / 2, hLngA = (A.maxLng - A.minLng) / 2;
-  const padA = { lat: Math.max(hLatA * 0.3, 0.015), lng: Math.max(hLngA * 0.3, 0.02) };
+  const padK = STYLE === "h" ? 1.5 : 0.3; // h（見下ろす）は面を倒して奥が長く見えるので、すべての店のまわりを広めに覆う
+  const padA = { lat: Math.max(hLatA * padK, 0.015), lng: Math.max(hLngA * padK, 0.02) };
   // 粗い層（overview）: すべての店 + 余白、と初期表示の範囲の両方を覆う。横縦とも 7 枚以内で最も細かいズーム（13 まで）
   let ov = null;
   for (let z = 13; z >= 7; z--) {
@@ -395,7 +396,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     }
     if (d) waterD.push(d);
   }
-  const WFILL = { e: "#bfe0f0", f: "#a9bdd6", g: "#0e1a33", h: "#a6d4ec" }[STYLE];
+  const WFILL = { e: "#bfe0f0", f: "#a9bdd6", g: "#0e1a33", h: "#9ccbe8" }[STYLE];
   parts.push(`<g fill="${WFILL}" stroke="${WFILL}" stroke-width="${r1(px(1.4))}" stroke-linejoin="round" fill-rule="evenodd">${waterD.map((d) => `<path d="${d}"/>`).join("")}</g>`);
   // 水の深み（ところどころの濃い水色）と波の印
   const deep = [], waves = [];
@@ -441,13 +442,13 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     if (STYLE === "e") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#ffffff" stroke-width="${r1(px(4.2))}" opacity=".65"/><use href="#rim" stroke="#6fb2d8" stroke-width="${r1(px(1.1))}" opacity=".9"/></g>`);
     // 古地図: 岸が濃く、沖へ薄い藍のぼかし（水の面の中だけ）+ 墨の細い岸線
     if (STYLE === "f") parts.push(`<g clip-path="url(#wclip)"><use href="#rim" fill="none" stroke="#2a4b88" stroke-width="${r1(px(22))}" stroke-linejoin="round" stroke-linecap="round" opacity=".62" filter="url(#blurW)"/></g><use href="#rim" fill="none" stroke="#2a2d44" stroke-width="${r1(px(1.3))}" stroke-linejoin="round" stroke-linecap="round" opacity=".85"/>`);
-    if (STYLE === "g") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#1d3770" stroke-width="${r1(px(9))}" opacity=".55" filter="url(#blurG)"/><use href="#rim" stroke="#2f5088" stroke-width="${r1(px(1.0))}" opacity=".7"/></g>`);
-    if (STYLE === "h") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#8cc1df" stroke-width="${r1(px(1.8))}" opacity=".95"/></g>`);
+    if (STYLE === "g") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#1d3770" stroke-width="${r1(px(8))}" opacity=".4" filter="url(#blurG)"/><use href="#rim" stroke="#2f5088" stroke-width="${r1(px(1.0))}" opacity=".55"/></g>`);
+    if (STYLE === "h") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#7fb6d8" stroke-width="${r1(px(1.8))}" opacity=".95"/></g>`);
   }
   // 川
   if (rivers.length) {
     const rd = rivers.filter((l) => lenOf(l) > px(110)).map((l) => smoothPath(simplify(l.map(dp), px(1.6)), false, rInt)).filter(Boolean).join("");
-    const RC = { e: ["#b9dcee", 2], f: ["#41629c", 2.1], g: ["#1a3060", 2.0], h: ["#a6d4ec", 2.6] }[STYLE];
+    const RC = { e: ["#b9dcee", 2], f: ["#4a6ca6", 1.5], g: ["#15284f", 1.8], h: ["#9ccbe8", 2.6] }[STYLE];
     parts.push(`<path d="${rd}" fill="none" stroke="${RC[0]}" stroke-width="${r1(px(RC[1]))}" stroke-linecap="round" stroke-linejoin="round"${STYLE === "f" ? ' opacity=".8"' : ""}/>`);
   }
 
@@ -477,14 +478,14 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#fffefa" stroke-width="${r1(px(w))}"/>`));
   } else if (STYLE === "f") {
     // 墨の筆の線: 太い道ほど濃く太い
-    const W2 = [1.15, 1.9, 2.7, 3.8], C2 = ["#5f5748", "#4a4234", "#322c23", "#1c1914"], O2 = [0.82, 0.9, 0.95, 1];
+    const W2 = [1.1, 1.8, 2.5, 3.2], C2 = ["#645c4d", "#4e4638", "#372f26", "#221e18"], O2 = [0.82, 0.9, 0.95, 1];
     widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="${C2[tier(w)]}" stroke-width="${r1(px(W2[tier(w)]))}" opacity="${O2[tier(w)]}"/>`));
   } else if (STYLE === "g") {
     const W2 = [0.9, 1.3, 2.0, 2.9], C2 = ["#76694f", "#a09070", "#dcc89c", "#ffe6ae"], O2 = [0.6, 0.75, 0.9, 1];
     widths.forEach((w, i) => { if (tier(w) >= 2) roadSvg += `<use href="#r${i}" stroke="#ffbf5e" stroke-width="${r1(px(W2[tier(w)] + 5.5))}" opacity="${tier(w) === 3 ? 0.3 : 0.2}" filter="url(#blurG)"/>`; });
     widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="${C2[tier(w)]}" stroke-width="${r1(px(W2[tier(w)]))}" opacity="${O2[tier(w)]}"/>`));
   } else {
-    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#d9d1ba" stroke-width="${r1(px(w * 0.72 + 1.6))}"/>`));
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#cbc2a6" stroke-width="${r1(px(w * 0.72 + 1.6))}"/>`));
     widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#ffffff" stroke-width="${r1(px(w * 0.72))}"/>`));
   }
   // 鉄道: 細い点線
@@ -590,7 +591,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     const patch = [];
     for (let i = 0; i < 16; i++) {
       const cx = rnd() * W, cy = rnd() * H, rr = px(40 + rnd() * 90);
-      patch.push(`<ellipse cx="${r1(cx)}" cy="${r1(cy)}" rx="${r1(rr * 1.5)}" ry="${r1(rr)}" transform="rotate(${r1(rnd() * 180)} ${r1(cx)} ${r1(cy)})" fill="${["#d3e4c1", "#d3e4c1", "#efe0bd", "#dfe4ea", "#f1e6d0"][i % 5]}" opacity=".85"/>`);
+      patch.push(`<ellipse cx="${r1(cx)}" cy="${r1(cy)}" rx="${r1(rr * 1.5)}" ry="${r1(rr)}" transform="rotate(${r1(rnd() * 180)} ${r1(cx)} ${r1(cy)})" fill="${["#c5ddb0", "#c5ddb0", "#ecd9b0", "#d3dce6", "#efe2c6"][i % 5]}" opacity=".85"/>`);
     }
     parts.splice(parkWashIdx, 1, `<g>${patch.join("")}</g>`);
     const bl = [];
@@ -608,7 +609,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
           const off = px(roadWOf(r.rank) / 2 + 3 + 3) + bh / 2;
           const x = ax + ux * d - uy * side * off, y = ay + uy * d + ux * side * off;
           if (!freeAt(x, y, px(4), 3)) continue;
-          bl.push(`<rect x="${r1(-bw / 2)}" y="${r1(-bh / 2)}" width="${r1(bw)}" height="${r1(bh)}" transform="translate(${r1(x)} ${r1(y)}) rotate(${r1(ang)})" fill="${["#ddd5bf", "#e4dcc8", "#d6cdb6", "#e9e1cd"][Math.floor(rnd() * 4)]}"/>`);
+          bl.push(`<rect x="${r1(-bw / 2)}" y="${r1(-bh / 2)}" width="${r1(bw)}" height="${r1(bh)}" transform="translate(${r1(x)} ${r1(y)}) rotate(${r1(ang)})" fill="${["#d3cab0", "#dbd2b9", "#cdc3a8", "#e0d7be"][Math.floor(rnd() * 4)]}"/>`);
         }
         acc = (acc + l) % px(13);
       }
@@ -729,19 +730,27 @@ async function buildJapan() {
   for (let i = 0; i < 260; i++) { const x = rnd() * W, y = rnd() * H, s0 = px(1 + rnd()); waves.push(`<path d="M${r1(x)} ${r1(y)}q${r1(3 * s0)} ${r1(-3 * s0)} ${r1(6 * s0)} 0t${r1(6 * s0)} 0"/>`); }
   const deep = [];
   for (let i = 0; i < 14; i++) deep.push(`<ellipse cx="${r1(rnd() * W)}" cy="${r1(rnd() * H)}" rx="${r1(px(60 + rnd() * 100))}" ry="${r1(px(20 + rnd() * 40))}"/>`);
+  const JP = {
+    e: { sea: "#bfe0f0", deep: "#7fbfe4", deepOp: 0.3, wave: "#ffffff", waveOp: 0.9, land: "#f1ead6", coast: "#6fb2d8" },
+    f: { sea: "#a9bdd6", deep: "#7f9cc4", deepOp: 0.25, wave: "#3a5a90", waveOp: 0.55, land: "#e7d9b3", coast: "#2a2d44" },
+    g: { sea: "#0e1a33", deep: "#070f22", deepOp: 0.5, wave: "#35568d", waveOp: 0.35, land: "#1f1a15", coast: "#4a74b4" },
+    h: { sea: "#9ccbe8", deep: "#9ccbe8", deepOp: 0, wave: "#9ccbe8", waveOp: 0, land: "#e8e1cc", coast: "#7fb6d8" },
+  }[STYLE];
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" preserveAspectRatio="none"><defs>
+<filter id="blurJ" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="${r1(px(5))}"/></filter>
 <radialGradient id="gA"><stop offset="0" stop-color="#c8deb2" stop-opacity=".45"/><stop offset="1" stop-color="#bfd9a8" stop-opacity="0"/></radialGradient>
 <radialGradient id="gB"><stop offset="0" stop-color="#ece3b8" stop-opacity=".4"/><stop offset="1" stop-color="#e6dca8" stop-opacity="0"/></radialGradient>
 <path id="land" d="${landD}"/><path id="coast" d="${coastD}"/>
 <clipPath id="lc"><use href="#land" clip-rule="evenodd"/></clipPath>
 </defs>
-<rect width="${W}" height="${H}" fill="#bfe0f0"/>
-<g fill="#7fbfe4" opacity=".3">${deep.join("")}</g>
-<g fill="none" stroke="#ffffff" stroke-width="${r1(px(1))}" stroke-linecap="round" opacity=".9">${waves.join("")}</g>
-<use href="#land" fill="#f1ead6" fill-rule="evenodd"/>
-<g clip-path="url(#lc)">${blots.join("")}</g>
-<use href="#coast" fill="none" stroke="#ffffff" stroke-width="${r1(px(4))}" opacity=".7" stroke-linejoin="round" stroke-linecap="round"/>
-<use href="#coast" fill="none" stroke="#6fb2d8" stroke-width="${r1(px(1.1))}" stroke-linejoin="round" stroke-linecap="round"/>
+<rect width="${W}" height="${H}" fill="${JP.sea}"/>
+${STYLE === "f" ? `<use href="#coast" fill="none" stroke="#27457f" stroke-width="${r1(px(16))}" opacity=".5" stroke-linejoin="round" filter="url(#blurJ)"/>` : ""}${STYLE === "g" ? `<use href="#coast" fill="none" stroke="#1d3770" stroke-width="${r1(px(10))}" opacity=".6" stroke-linejoin="round" filter="url(#blurJ)"/>` : ""}
+<g fill="${JP.deep}" opacity="${JP.deepOp}">${deep.join("")}</g>
+<g fill="none" stroke="${JP.wave}" stroke-width="${r1(px(1))}" stroke-linecap="round" opacity="${JP.waveOp}">${waves.join("")}</g>
+<use href="#land" fill="${JP.land}" fill-rule="evenodd"/>
+<g clip-path="url(#lc)">${STYLE === "e" ? blots.join("") : ""}</g>
+${STYLE === "e" ? `<use href="#coast" fill="none" stroke="#ffffff" stroke-width="${r1(px(4))}" opacity=".7" stroke-linejoin="round" stroke-linecap="round"/>` : ""}
+<use href="#coast" fill="none" stroke="${JP.coast}" stroke-width="${r1(px(STYLE === "f" ? 1.4 : 1.1))}" stroke-linejoin="round" stroke-linecap="round"${STYLE === "g" ? ' opacity=".9"' : ""}/>
 </svg>`;
   const [lonW, latN] = tileToLonLat(x0, y0, z);
   const [lonE, latS] = tileToLonLat(x1 + 1, y1 + 1, z);

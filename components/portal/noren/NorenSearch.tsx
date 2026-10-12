@@ -16,7 +16,7 @@ import "./opensearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
 const SearchFacets = lazy(() => import("@/components/portal/SearchFacets"));
-// 地図（絵図 a・線だけの地図 b。components/portal/noren/ShopMap.tsx）。画面に出るまで読み込まない（next/dynamic。leaflet も中で遅れて読む）
+// 地図（絵図 a・手描き風 e・古地図 f・夜の灯り g・見下ろす h。components/portal/noren/ShopMap.tsx）。画面に出るまで読み込まない（next/dynamic。leaflet も中で遅れて読む）
 const ShopMap = dynamic(() => import("./ShopMap"), {
   ssr: false,
   loading: () => <div className="vMp-maploading">地図を読み込み中…</div>,
@@ -108,13 +108,7 @@ function ResultsMap({
         <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={prefCounts} prefRegion={prefRegion} regionCounts={regionCounts} onPick={onPick} />
       </div>
       <p className="vMp-mapnote" aria-live="polite">
-        {mode === "d"
-          ? nation
-            ? `全 ${list.length} 軒。右の一覧から地域を選ぶと、その地域の店が地図に出ます。`
-            : pts.length === 0
-              ? "この条件の店には、地図に出せる位置の情報がありません。"
-              : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`
-          : nation
+        {nation
           ? mode === "a"
             ? `県のマスに店の数を出しています(全 ${list.length} 軒)。店のある県を押すと、その地域の店に絞り込みます。`
             : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
@@ -123,7 +117,6 @@ function ResultsMap({
             : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。${mode === "h" && !usesEPicture(mode, regionKey) ? "見下ろした地図は、拡大・移動はできません。" : ""}`}
         {usesEPicture(mode, regionKey) ? <small className="vMp-fallback"> この{nation ? "全国" : "地域"}は e の絵を出しています。</small> : null}
       </p>
-      {mode === "d" && <p className="vMp-illust-warn">この地図は雰囲気を見るための絵です。店の位置は、おおよその関係で置いています。</p>}
     </div>
   );
 }
@@ -157,7 +150,7 @@ export default function NorenSearch({
   townOf: Record<string, string>;
   /** 県 slug → その県の店の地域（region のキー）。店のデータの住所の県と region から作った対応 */
   prefRegion: Record<string, string>;
-  /** URL の ?map=a|b で地図の見た目を替えられるか（本番でないときだけ true。?sp= と同じ） */
+  /** URL の ?map=a|f|g|h で地図の見た目を替えられるか（本番でないときだけ true。?sp= と同じ） */
   allowMapUrl?: boolean;
 }) {
   const router = useRouter();
@@ -170,7 +163,7 @@ export default function NorenSearch({
   const spTag = sp.get("tag") || "";
   const spScene = sp.get("scene") || "";
   const spTab = sp.get("tab");
-  // 地図の見た目: 既定は a（絵図）。?map=b（線だけの地図）は、本番でないときだけ
+  // 地図の見た目: 既定は e（手描き風）。?map=a|f|g|h は、本番でないときだけ（b・c・d は e に読み替える）
   const mapParam = sp.get("map");
   const mapMode: MapMode = allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h") ? mapParam : "e";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);

@@ -193,18 +193,14 @@
 /* 地図のピンの札（leaflet の吹き出し）のリンクは、暖簾の地の上でも読める色に */
 .vN .leaflet-popup-content a.mw-popup-link{color:var(--paper-hi)}
 
-/* ---------- 地図の見た目（ShopMap.tsx）: a「絵図」・b「線だけの地図」。動かすのは transform と opacity だけ ---------- */
+/* ---------- 地図の見た目（ShopMap.tsx）: a「絵図」（動きの基準。ピン・札・落ちる動きは e・f・g・h も同じ）。動かすのは transform と opacity だけ ---------- */
 /* 地図の箱: leaflet の層（z-index 400〜1000。ピン・札・吹き出し・拡大縮小）が、箱の外・固定ヘッダーの上に出ないよう、箱の中だけの重なり（isolation）にして、はみ出しは切り取る */
-.vMp-surface{position:relative;isolation:isolate;overflow:hidden;background:var(--paper);color:var(--ink)}
-.vMp-leaf{isolation:isolate;overflow:hidden}
+.vMp-surface{position:relative;isolation:isolate;overflow:hidden;overflow:clip;background:var(--paper);color:var(--ink)}
+/* overflow:clip は、中のボタンにフォーカスが移っても、箱がスクロールして絵がずれることがない（hidden はずれる） */
+.vMp-leaf{isolation:isolate;overflow:hidden;overflow:clip}
 .vMp-leaf{height:460px;background:var(--paper);font-family:var(--f-sans)}
 .vMp-leaf .leaflet-control-zoom a{width:44px;height:44px;line-height:44px;font-size:22px;text-indent:0}
 .vMp-leaf .leaflet-control-attribution a{display:inline-block;min-height:24px;line-height:24px}
-/* b: 地理院の白地図（白地に灰色の線）を、暗い地に生成りの線へ寄せる */
-.vMp-leaf--b{background:var(--sumi-3)}
-.vMp-leaf--b .leaflet-tile-pane{filter:invert(1) contrast(.72) sepia(.35) brightness(.98)}
-.vMp-leaf--b .leaflet-control-attribution{background:color-mix(in srgb,var(--sumi) 70%,transparent);color:var(--kinari-2)}
-.vMp-leaf--b .leaflet-control-attribution a{color:var(--kinari)}
 .vMp-leaf--a .leaflet-control-attribution{display:none}
 .vMp-mk{background:none!important;border:0!important}
 .vMp-pin{width:30px;height:40px;position:relative;animation:vMpDrop .7s cubic-bezier(.3,1.3,.5,1) both}
@@ -248,34 +244,6 @@
 .vMp-gridin>li:nth-child(5){animation-delay:240ms}.vMp-gridin>li:nth-child(6){animation-delay:300ms}.vMp-gridin>li:nth-child(7){animation-delay:360ms}
 .vMp-gridin>li:nth-child(8){animation-delay:420ms}.vMp-gridin>li:nth-child(9){animation-delay:480ms}.vMp-gridin>li:nth-child(10){animation-delay:540ms}
 .vMp-gridin>li:nth-child(11){animation-delay:600ms}.vMp-gridin>li:nth-child(12){animation-delay:660ms}.vMp-gridin>li:nth-child(n+13){animation-delay:720ms}
-/* c「手描き風」: 箱の中だけ明るい水彩の見た目（まわりの枠・一覧は暖簾の色のまま）。フィルターはタイルの層だけ */
-.vMp-leaf--c{background:#e4ecda}
-.vMp-leaf--c .leaflet-tile-pane{filter:url(#vMp-hand) saturate(.55) contrast(.86) brightness(1.07) sepia(.22) hue-rotate(-6deg) blur(.3px)}
-.vMp-leaf--c::after{content:"";position:absolute;inset:0;z-index:420;pointer-events:none;opacity:.09;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 .3  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23g)'/></svg>")}
-.vMp-leaf--c .leaflet-control-attribution{background:rgba(255,255,255,.72);color:#4a4a42}
-.vMp-pin--o i{background:#e8772e}
-.vMp-pin--n i{background:#25406b}
-.vMp-flag--c{background:#fff;border-top:0;padding:6px 6px 7px;box-shadow:0 6px 16px rgba(30,40,30,.35);animation-name:vMpDropTilt;transform:rotate(var(--tilt,0deg))}
-.vMp-flag--c img{height:66px}
-.vMp-flag--c b{color:#25406b}
-.vMp-flag--c::after{background:#fff}
-.vMp-flag--c::before{background:#e8772e;border-color:#fff}
-@keyframes vMpDropTilt{0%{opacity:0;transform:translateY(-90px) rotate(var(--tilt,0deg))}35%{opacity:1}70%{transform:translateY(4px) rotate(var(--tilt,0deg))}100%{opacity:1;transform:rotate(var(--tilt,0deg))}}
-.vMp-leaf--c .vMp-town{font-family:var(--f-brush);font-size:18px;letter-spacing:.12em;color:#3f5a3c;opacity:.7}
-.vMp-leaf--c .vMp-circ{background:#e8772e}
-.vMp-leaf--c .vMp-circ span{color:#25406b;text-shadow:0 0 5px #fff,0 0 2px #fff}
-.vMp-mk--tree{pointer-events:none;opacity:.9}
-.vMp-popw--c .leaflet-popup-content-wrapper{background:#fff;color:#2a2a24}
-.vMp-leaf--c .vMp-pop b{color:#25406b}
-/* d「イラスト」: 手描きの地図の絵を敷く。ピン・札・吹き出しは c と同じ（上の c の規則） */
-.vMp-leaf--d{background:#dfe6d2}
-.vMp-leaf--d .leaflet-control-attribution{display:none}
-.vMp-illust-hint{position:absolute;left:50%;bottom:18px;z-index:500;transform:translateX(-50%);margin:0;padding:10px 18px;max-width:calc(100% - 32px);background:rgba(255,255,255,.88);color:#2a2a24;font:500 14px/1.6 var(--f-min);letter-spacing:.08em;text-align:center;box-shadow:0 4px 14px rgba(30,40,30,.25);pointer-events:none}
-.vMp-illust-warn{margin-top:4px;font:400 12px/1.6 var(--f-sans);letter-spacing:.04em;color:var(--kinari-3)}
-@media (pointer:coarse){
-  /* スマホ・タブレット（タッチ）では、重くならないよう線の揺らし（SVG フィルター）はやめて、色のフィルターだけ */
-  .vMp-leaf--c .leaflet-tile-pane{filter:saturate(.55) contrast(.86) brightness(1.07) sepia(.22) hue-rotate(-6deg)}
-}
 @media (max-width:820px){
   .vMp-grid{height:auto}
   .vMp-leaf{height:300px}
@@ -284,7 +252,7 @@
   .vMp-pin,.vMp-flag,.vMp-circ,.vMp-cell,.vMp-gridin>li{animation:none!important}
 }
 
-/* e「手描き風の地図」（既定）: 地理院ベクトルタイルから描き起こした SVG を、実際の範囲に敷く（ShopMap.tsx）。箱の中だけ明るい手描き風。まわりの枠・一覧は暖簾の色のまま */
+/* e「手描き風の地図」（既定）: 地理院ベクトルタイルから描き起こして画像（WebP）にした地図を、実際の範囲に敷く（ShopMap.tsx）。箱の中だけ明るい手描き風。まわりの枠・一覧は暖簾の色のまま */
 .vMp-leaf--e{background:#f1ead6}
 .vMp-leaf--e .leaflet-control-attribution{display:none}
 .vMp-ill{image-rendering:auto;max-width:none!important}
@@ -294,13 +262,11 @@
 .vMp-leaf--e .vMp-circ span{color:#25406b;text-shadow:0 0 5px #fff,0 0 2px #fff}
 .vMp-leaf--e .vMp-pop b{color:#25406b}
 .vMp-leaf--e .leaflet-control-zoom a{color:#25406b}
-/* 細かい層（初期表示のまわり）の縁を、四辺の 9% でぼかして、粗い層へなじませる（CSS の mask。SVG の mask は重かったので使わない） */
-.vMp-ill--core{-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
 
 /* ---------- f「古地図」・g「夜の灯り」・h「見下ろす」（ShopMap.tsx）。ピン・札・寄せ方・落ちる動きは a と同じ（上の a の規則）。地図の絵はあらかじめ画像（WebP）にしたものを敷く ---------- */
 .vMp-leaf--f{background:#e7d9b3}
 .vMp-leaf--g{background:#1a1612}
-.vMp-leaf--h{background:#ece6d5}
+.vMp-leaf--h{background:#e8e1cc}
 .vMp-leaf--f .leaflet-control-attribution,.vMp-leaf--g .leaflet-control-attribution{display:none}
 .vMp-leaf--f .leaflet-control-zoom a{color:#4a3a22;background:#fbf5e4;border-color:#b9a77a}
 .vMp-leaf--g .leaflet-control-zoom a{color:#efe4c9;background:#2a231c;border-color:#4a3f33}
@@ -317,12 +283,12 @@
 .vMp-glow{position:absolute;left:calc(var(--gx) - 34px);top:calc(var(--gy) - 34px);width:68px;height:68px;border-radius:50%;background:radial-gradient(circle,rgba(255,200,120,.5) 0%,rgba(255,160,70,.2) 42%,rgba(255,140,50,0) 70%);pointer-events:none;opacity:0;animation:vMpGlow 1.7s ease-out both}
 @keyframes vMpGlow{0%{opacity:0;transform:scale(.25)}35%{opacity:.95}100%{opacity:.42;transform:scale(1)}}
 /* h: 地図の面を奥へ倒して、斜め上から見下ろす。ピン・札は面に対して立つ（倒した分を打ち消す）。奥ほど小さく（遠近）・薄く（霞） */
-.vMp-leaf--h{position:relative;overflow:hidden;perspective:1100px}
-.vMp-t-plane{position:absolute;left:0;top:0;transform-style:preserve-3d;will-change:transform}
+.vMp-leaf--h{position:relative;overflow:hidden;overflow:clip;perspective:1100px}
+.vMp-t-plane{position:absolute;left:0;top:0;transform-style:preserve-3d;will-change:transform;background:#e8e1cc;box-shadow:0 0 0 2400px #e8e1cc}
 .vMp-t-img{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
 .vMp-t-anchor{position:absolute;width:0;height:0;transform-style:preserve-3d}
 .vMp-t-stand{position:absolute;display:block;padding:0;margin:0;border:0;background:none;cursor:pointer;color:inherit;font:inherit;text-align:left;transform-style:preserve-3d}
-.vMp-t-haze{position:absolute;left:0;right:0;top:0;height:44%;z-index:3;pointer-events:none;background:linear-gradient(to bottom,#ece6d5 0%,rgba(236,230,213,.82) 34%,rgba(236,230,213,0) 100%)}
+.vMp-t-haze{position:absolute;left:0;right:0;top:0;height:42%;z-index:3;pointer-events:none;background:linear-gradient(to bottom,#e8e1cc 0%,#e8e1cc 8%,rgba(232,225,204,.72) 26%,rgba(232,225,204,0) 100%)}
 .vMp-t-pop{position:absolute;z-index:5;width:200px;transform:translate(-50%,-100%);background:var(--paper-hi);color:var(--ink);box-shadow:0 12px 28px rgba(0,0,0,.45)}
 .vMp-t-pop.is-below{transform:translate(-50%,0)}
 .vMp-leaf--h .vMp-credit{z-index:6}
@@ -330,3 +296,10 @@
 @media (prefers-reduced-motion:reduce){
   .vMp-glow{animation:none!important;opacity:.42}
 }
+.vMp-t-lines{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.vMp-lead{stroke:#6b5d4c;stroke-width:1.4;stroke-dasharray:3 3;fill:none;opacity:.85}
+.vMp-leaddot{fill:#6b5d4c;stroke:#fff;stroke-width:1;opacity:.9}
+.vMp-leaf--g .vMp-lead{stroke:#cbbd9f}
+.vMp-leaf--g .vMp-leaddot{fill:#cbbd9f;stroke:#1a1612}
+.vMp-leaf--f .vMp-lead{stroke:#2a251d}
+.vMp-leaf--f .vMp-leaddot{fill:#2a251d;stroke:#fbf5e4}
