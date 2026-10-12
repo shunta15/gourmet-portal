@@ -19,4 +19,4 @@
  *   データ層（lib/db/restaurants.ts・lib/db/features.ts）と暖簾の表示（店ページ・記事ページ）に掛けるか。RELEASE_REST とは別のスイッチ。false のあいだは main と同じ文で出る。
  */
 export const RELEASE_REST = false; // true: 見本が基準（全部出る）／false: 入口だけを新しくする版（入口以外は main と同じ）
-export const NOREN_STRIP_OTHER_RATINGS = false;
+export const NOREN_STRIP_OTHER_RATINGS = true; // 2026-10-12 本番でも有効（オーナー指示「他サイトの評価を文章に入れるのやめて」「確定したところはどんどん公開」）
