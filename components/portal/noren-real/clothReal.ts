@@ -60,6 +60,8 @@ export type ClothReal = {
   setGlyphs: (chars: string[], family: string, scale?: number) => void;
   /** 染め抜きの字の位置と大きさ。frac: 帯の下から裾までのどこに字の中心を置くか（既定 0.40）、mul: 字の大きさの倍率（既定 1）。スマホ幅で丈を変える案（NOREN_REAL_SP_SHAPE）が使う */
   setGlyphLayout: (frac: number, mul: number) => void;
+  /** 染め抜きの字の濃さ 0〜1（既定 1）。0 は字なしの布。書体が遅れて届いたとき、布を先に出して、字をあとからすっと入れるために使う */
+  setGlyphAlpha: (a: number) => void;
   setDye: (k: DyeKind) => void;
   /** 布の細かいしわの強さ 0〜1（既定は弱く 0.2。大きなひだ・畳みじわは変わらない） */
   setWrinkle: (w: number) => void;
@@ -84,6 +86,7 @@ uniform vec4 uPt;    // pointer x, y (device px), hoverIdx, hoverAmt
 uniform vec2 uSel;   // selIdx, selAmt
 uniform vec3 uDye, uDyeHi, uInk, uTint, uGrade; // uGrade: 彩度, 灯りの暖かさ, 暗部の落とし(ガンマ)
 uniform float uWr;
+uniform float uGA; // 染め抜きの字の濃さ（0..1。既定 1）。字の書体が遅れて届いたとき、布が出てから字だけすっと入れるために使う
 uniform sampler2D uAtlas;
 
 const float PI = 3.14159265;
@@ -386,6 +389,7 @@ void main(){
   // 中央の垂れは、上がるにつれて字を薄くして消す（本番の暖簾と同じ。畳まれた布に字の残りが明るい点として出ない）
   float cfade = (abs(k - (uN - 1.0) * 0.5) < 0.01) ? 1.0 - smoothstep(0.05, 0.42, uOpen) : 1.0;
   cfade = min(cfade, (abs(uSel.x - k) < 0.5) ? 1.0 - smoothstep(0.15, 0.6, uSel.y) : 1.0);
+  cfade *= uGA;
   ink *= cfade;
   float fleck = smoothstep(0.80, 0.96, vn(mC / 2.6 + 9.1));
   ink *= (1.0 - 0.07 * fleck) * (0.96 + 0.04 * vn(mC / 7.0 + 3.0));
@@ -577,7 +581,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   const U = (n: string) => gl.getUniformLocation(prog, n);
   const uRes = U("uRes"), uTime = U("uTime"), uOpen = U("uOpen"), uGust = U("uGust"), uLamp = U("uLamp"), uMouse = U("uMouse"), uBright = U("uBright"),
     uN = U("uN"), uS = U("uS"), uLay = U("uLay"), uPt = U("uPt"), uSel = U("uSel"),
-    uGl = U("uGlyph"), uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uGrade = U("uGrade"), uWr = U("uWr"), uAtlas = U("uAtlas");
+    uGl = U("uGlyph"), uDye = U("uDye"), uDyeHi = U("uDyeHi"), uInk = U("uInk"), uTint = U("uTint"), uGrade = U("uGrade"), uWr = U("uWr"), uGA = U("uGA"), uAtlas = U("uAtlas");
 
   const tex = gl.createTexture();
   gl.activeTexture(gl.TEXTURE0);
@@ -595,6 +599,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   let n = 5;
   let glyphFrac = 0.4;
   let glyphMul = 1;
+  let glyphAlpha = 1;
   let layout: RealLayout | null = null;
   let dye = DYES.ai;
   let wrinkle = 0.2;
@@ -625,6 +630,10 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
   const setGlyphLayout = (frac: number, mul: number) => {
     glyphFrac = frac;
     glyphMul = mul;
+  };
+
+  const setGlyphAlpha = (a: number) => {
+    glyphAlpha = Math.min(1, Math.max(0, a));
   };
 
   const setDye = (k: DyeKind) => {
@@ -671,6 +680,7 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     gl.uniform3fv(uTint, dye.tint);
     gl.uniform3fv(uGrade, dye.grade);
     gl.uniform1f(uWr, wrinkle);
+    gl.uniform1f(uGA, glyphAlpha);
     gl.uniform1f(uBright, bright);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
@@ -684,5 +694,5 @@ export function createClothReal(canvas: HTMLCanvasElement): ClothReal | null {
     }, 0);
   };
 
-  return { render, resize, setGlyphs, setGlyphLayout, setDye, setWrinkle, setBright, destroy };
+  return { render, resize, setGlyphs, setGlyphLayout, setGlyphAlpha, setDye, setWrinkle, setBright, destroy };
 }
