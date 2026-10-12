@@ -126,3 +126,64 @@
 .vBkt-band .vMp-card-nm,.vBkt-band .vMp-card-h{font-family:var(--bk-maru);color:var(--bk-navy)}
 .vN .vBkt-band .vMp-card .vMp-card-a{color:var(--bk-or-ink);font-family:var(--bk-maru)}
 .vBkt-band .vMp-card-c{background:var(--bk-or-t);color:var(--bk-or-ink)}
+
+/* ====================================================================
+   入口の「店を、さがす。」の節: dark（既定。暖簾の灰墨に合わせる）。?open=dark|block（見本）。
+   地は入口と同じ灰墨（.vN の --sumi）、字は生成り、差し色は朱。白い面・橙・紺の字は使わない。上下に紙の縁は無い（同じ地の色でつながる）。
+   検索の箱は、暗い地の上で、生成りの箱 + 墨の字 + 朱の「さがす」ボタン。
+   色の組み（実測。字 / 実際の地・コントラスト。本文は 4.5 以上）: 見出し・帯の見出し 12.7、本文（リード・帯の文）9.7、小さい朱の字（小見出し・箱の上の 1 行・業種からさがす）5.0、
+   小さい薄い字（下の七つの章へ・出典）5.9、シーンの札 10.3（件数 4.7）、箱の中の墨の字 16.4、箱の淡い字（プレースホルダー）5.7、ボタンの白 / 朱 5.3、札の朱の文字 / 生成り 6.3。
+   ==================================================================== */
+.vBkt--dark{
+  --bk-or:var(--shu); --bk-or-d:var(--shu-ink); --bk-or-ink:var(--shu-hi); --bk-or-t:rgba(200,54,29,.2);
+  --bk-navy:var(--kinari); --bk-ink:var(--kinari-2); --bk-mute:var(--kinari-3);
+  --bk-line:var(--line-2); --bk-bg2:rgba(239,230,214,.08); --bk-cream:var(--sumi);
+  background:transparent; color:var(--kinari-2);
+}
+.vN .vBkt--dark a:focus-visible,.vN .vBkt--dark button:focus-visible,.vN .vBkt--dark input:focus-visible,.vN .vBkt--dark select:focus-visible{outline-color:var(--shu-hi)}
+.vBkt--dark .vBkt-h em{color:var(--shu-hi)}
+/* 検索の箱: 生成りの箱に墨の字（箱の中だけ、字の色の変数を墨に戻す） */
+.vBkt--dark .vBkt-sbox{background:var(--paper-hi);color:var(--ink);--bk-ink:var(--ink);--bk-navy:var(--ink);--bk-line:rgba(26,20,16,.2);box-shadow:0 18px 48px rgba(0,0,0,.6),0 0 0 1px rgba(239,230,214,.5)}
+.vBkt--dark .vBkt-sbox:focus-within{box-shadow:0 18px 48px rgba(0,0,0,.6),0 0 0 3px var(--shu-hi)}
+.vBkt--dark .vBkt-sbox input::placeholder{color:var(--ink-3);opacity:1}
+.vBkt--dark .vBkt-sbox select option{color:var(--ink);background:var(--paper-hi)}
+.vBkt--dark .vBkt-sbox-area{color:var(--shu-ink)}
+.vBkt--dark .vBkt-sbox button{background:var(--shu);color:#fff;box-shadow:0 6px 16px rgba(200,54,29,.45)}
+.vBkt--dark .vBkt-sbox button:hover{background:var(--shu-ink)}
+/* 業種のタイル（?tiles=1）: 写真の上の字は生成り。矢印の丸は生成りに墨 */
+.vBkt--dark .vBkt-circ{background:var(--paper-hi);color:var(--ink)}
+/* 箱の下の 1 行: 下の七つの章へ */
+.vBkt-chapline{margin-top:clamp(10px,1.4vw,16px)}
+.vBkt-chapline a{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 8px;min-height:44px;padding:0 4px;color:var(--bk-or-ink);font:700 15px/1.5 var(--bk-maru);letter-spacing:.06em}
+.vBkt-chapline a:hover{text-decoration:underline;text-underline-offset:4px}
+.vBkt-chapline small{font:500 13px/1.5 var(--bk-sans);letter-spacing:.04em;color:var(--bk-mute)}
+/* 帯: 地の色の濃い墨。ぼかしも墨（上下 44px も墨に溶かす） */
+.vBkt--dark .vBkt-fade{background:linear-gradient(90deg,var(--sumi) 0%,var(--sumi) 26%,rgba(var(--sumi-rgb),.84) 36%,rgba(var(--sumi-rgb),0) 48%),linear-gradient(180deg,var(--sumi) 0,rgba(var(--sumi-rgb),0) 44px),linear-gradient(0deg,var(--sumi) 0,rgba(var(--sumi-rgb),0) 44px)}
+.vBkt--dark .vBkt-or{color:var(--shu-hi)}
+.vBkt--dark .vBkt-btn{background:var(--paper-hi);color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.vBkt--dark .vBkt-btn:hover{box-shadow:0 10px 24px rgba(0,0,0,.6)}
+.vBkt--dark .vBkt-credit{background:rgba(var(--sumi-rgb),.72);color:var(--kinari-3)}
+/* 利用シーンの札 */
+.vBkt--dark .vBkt-chip{color:var(--kinari);border:1px solid var(--line)}
+.vBkt--dark .vBkt-chip:hover{background:var(--shu);border-color:var(--shu);color:var(--paper-hi)}
+.vBkt--dark .vBkt-chip:hover i{color:var(--paper-hi)}
+/* 帯のピンを押したときの店の情報の札: 生成りの面に墨の字・朱の文字 */
+.vBkt--dark .vBkt-band .vMp-card{background:var(--paper-hi);color:var(--ink);box-shadow:0 16px 40px rgba(0,0,0,.65),0 0 0 1px rgba(239,230,214,.25)}
+.vBkt--dark .vBkt-band .vMp-card-nm,.vBkt--dark .vBkt-band .vMp-card-h{color:var(--ink)}
+.vBkt--dark .vBkt-band .vMp-card-m,.vBkt--dark .vBkt-band .vMp-card-lm,.vBkt--dark .vBkt-band .vMp-card-more{color:var(--ink-3)}
+.vBkt--dark .vBkt-band .vMp-card-c{background:rgba(200,54,29,.12);color:var(--shu-ink)}
+.vN .vBkt--dark .vBkt-band .vMp-card .vMp-card-a{color:var(--shu-ink)}
+.vBkt--dark .vBkt-band .vMp-card-back{color:var(--ink-2)}
+.vBkt--dark .vBkt-band .vMp-card-l button{background:rgba(26,20,16,.06);color:var(--ink)}
+.vBkt--dark .vBkt-band .vMp-card-l button:hover,.vBkt--dark .vBkt-band .vMp-card-l button:focus-visible{background:rgba(200,54,29,.14)}
+.vBkt--dark .vBkt-band .vMp-card-x{color:var(--ink)}
+/* ?band=e: 手描き風（明るい絵）は、生成りの額に入れて、暗い帯の右に置く */
+.vBkt--dark.vBkt--band-e .vBkt-fade{display:none}
+.vBkt--dark.vBkt--band-e .vBkt-map{left:auto;right:max(var(--gx),calc((100% - 1200px) / 2));top:34px;bottom:34px;width:min(700px,calc(100% - var(--bt-w) - max(var(--gx),calc((100% - 1200px) / 2)) - 56px));padding:9px;background:var(--paper-hi);border-radius:5px;box-shadow:0 22px 56px rgba(0,0,0,.65),0 0 0 1px rgba(239,230,214,.4)}
+.vBkt--dark.vBkt--band-e .vBkt-map .vMp-surface{border-radius:2px}
+@media (max-width:1000px){
+  .vBkt--dark.vBkt--band-e .vBkt-map{left:auto;right:auto;top:auto;bottom:auto;position:relative;width:calc(100% - 2 * var(--gx));margin:6px var(--gx) 26px;height:400px;padding:7px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-chapline a{transition:none}
+}

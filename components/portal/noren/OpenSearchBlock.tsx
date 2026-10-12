@@ -6,6 +6,7 @@ import { ArrowIcon } from "./BlockSearchParts";
 import type { MapPt } from "./ShopMap";
 import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import type { BlockTile } from "@/lib/portal/noren/blockTop";
+import type { OpenView } from "@/lib/portal/noren/looks";
 // 地図の部品（ShopMap の vMp- の見た目）の CSS は scenesearch.css にある（検索のページは ShopCard 経由で読む。入口は、ここで読む）
 import "./scenesearch.css";
 import "./blocktop.css";
@@ -45,11 +46,12 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
  * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（イラスト地図 + 橙と紺のピン + 白い枠の店の写真の札）→ 利用シーンの札（小さく）。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
-export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion }: { data: OpenSearchData; tiles: BlockTile[]; bandPts: MapPt[]; bandRegion: string }) {
+export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion, view }: { data: OpenSearchData; tiles: BlockTile[]; bandPts: MapPt[]; bandRegion: string; view: OpenView }) {
+  const dark = view.tone === "dark";
   return (
-    <section className="vBkt" id="open-search" aria-labelledby="vBkt-h">
+    <section className={`vBkt ${dark ? "vBkt--dark" : "vBkt--block"} vBkt--band-${view.band}`} id="open-search" aria-labelledby="vBkt-h">
       <BlockFonts />
-      <PaperEdge pos="top" />
+      {!dark && <PaperEdge pos="top" />}
       <div className="vBkt-top">
         <div className="vBkt-wrap">
           <header className="vBkt-head vN-rv">
@@ -62,6 +64,16 @@ export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion }: { 
           <div className="vN-rv">
             <BlockTopForm regions={data.regions} />
           </div>
+          {/* 業種のタイルを出さない版（既定の dark）は、下の「七つの章」へ目が行くよう、箱の下に 1 行 */}
+          {!view.tiles && (
+            <p className="vBkt-chapline vN-rv">
+              <a href="#chapters">
+                業種からさがす <span aria-hidden="true">↓</span>
+                <small>（下の七つの章へ）</small>
+              </a>
+            </p>
+          )}
+          {view.tiles && (
           <ul className="vBkt-tiles vN-rv" aria-label="業種から探す" id="open-cuisine">
             {tiles.map((t) => (
               <li key={t.key}>
@@ -81,10 +93,11 @@ export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion }: { 
               </li>
             ))}
           </ul>
+          )}
         </div>
       </div>
 
-      <BlockTopMap pts={bandPts} regionKey={bandRegion}>
+      <BlockTopMap pts={bandPts} regionKey={bandRegion} mode={view.band}>
         <div className="vBkt-fade" aria-hidden="true" />
         <div className="vBkt-bt" id="open-area">
           <div className="vBkt-bt-in vN-rv">
@@ -118,7 +131,7 @@ export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion }: { 
           </ul>
         </div>
       </div>
-      <PaperEdge pos="bottom" />
+      {!dark && <PaperEdge pos="bottom" />}
     </section>
   );
 }

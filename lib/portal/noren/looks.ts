@@ -19,3 +19,24 @@ export function resolveLook(base: Look, param: string | null | undefined, allowU
   if (allowUrl && (param === "noren" || param === "block")) return param;
   return base;
 }
+
+/**
+ * 入口（/gourmet）の「店を、さがす。」の節（look が block のとき）の色。見本でだけ URL で替えられる（?open=dark|block。?tiles=1・?band=e|g も同じ。本番は読まない）。
+ * - "dark"（既定）: 暖簾の灰墨の地・生成りの字・朱の差し色。業種のタイルは出さない（下の「七つの章」と重なるため）。帯の地図は夜の灯り（g）か、生成りの額に入れた手描き風（e）。
+ * - "block": 今までの白い地・橙と紺の差し色・業種のタイルあり（帯の地図は e）。
+ */
+export type OpenTone = "dark" | "block";
+export type OpenBand = "e" | "g";
+export const OPEN_TONE: OpenTone = "dark";
+/** dark のときの帯の地図の既定（?band= で替えられる） */
+export const OPEN_BAND: OpenBand = "g";
+
+export type OpenView = { tone: OpenTone; tiles: boolean; band: OpenBand };
+
+/** URL の ?open= ?tiles= ?band= から、入口の節の見え方を決める。allowUrl が false（本番）のときは、URL を読まず既定のまま */
+export function resolveOpen(p: { open?: string | null; tiles?: string | null; band?: string | null }, allowUrl: boolean): OpenView {
+  const tone: OpenTone = allowUrl && (p.open === "dark" || p.open === "block") ? p.open : OPEN_TONE;
+  const tiles = tone === "block" ? true : allowUrl && p.tiles === "1";
+  const band: OpenBand = tone === "block" ? "e" : allowUrl && (p.band === "e" || p.band === "g") ? p.band : OPEN_BAND;
+  return { tone, tiles, band };
+}

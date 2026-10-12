@@ -13,7 +13,7 @@ import OpenSearch from "@/components/portal/noren/OpenSearch";
 import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import { buildBlockTop } from "@/lib/portal/noren/blockTop";
-import type { Look } from "@/lib/portal/noren/looks";
+import { resolveOpen, type Look, type OpenView } from "@/lib/portal/noren/looks";
 import "../noren/top.css";
 import "./real.css";
 import { NOREN_HERO_KEYS, type NorenLinks } from "@/lib/portal/noren/nav";
@@ -46,6 +46,7 @@ export default async function GourmetNorenHomeReal({
   allowSpUrl = false,
   allowCopyUrl = false,
   searchLook = "noren",
+  searchOpen,
 }: {
   links: NorenLinks;
   dye?: DyeKind;
@@ -58,6 +59,8 @@ export default async function GourmetNorenHomeReal({
   allowCopyUrl?: boolean;
   /** 「店を、さがす。」の節の見た目（lib/portal/noren/looks.ts。app/gourmet/page.tsx が決めて渡す）。省略は今までの暖簾の見た目 */
   searchLook?: Look;
+  /** block のときの節の色・タイルの有無・帯の地図（lib/portal/noren/looks.ts の resolveOpen。省略は既定） */
+  searchOpen?: OpenView;
 }) {
   const restaurants = await getAllRestaurants();
   const byId = new Map(restaurants.map((r) => [r.id, r]));
@@ -107,7 +110,7 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandPts={blockTop.bandPts} bandRegion={blockTop.bandRegion} /> : <OpenSearch data={openSearchData} />}
+      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandPts={blockTop.bandPts} bandRegion={blockTop.bandRegion} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">

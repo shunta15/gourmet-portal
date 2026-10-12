@@ -16,7 +16,7 @@ const NONE_C: Record<string, number> = {};
 const NONE_R: { key: string; name: string; count: number }[] = [];
 const noop = () => {};
 
-export default function BlockTopMap({ pts, regionKey, children }: { pts: MapPt[]; regionKey: string; children?: React.ReactNode }) {
+export default function BlockTopMap({ pts, regionKey, mode = "e", children }: { pts: MapPt[]; regionKey: string; /** 地図の絵: e = 手描き風（明るい）、g = 夜の灯り（暗い地に合う） */ mode?: "e" | "g"; children?: React.ReactNode }) {
   // 帯の要素（札を出す先にも使う）
   const [wrap, setWrap] = useState<HTMLDivElement | null>(null);
   const [on, setOn] = useState(false);
@@ -41,7 +41,7 @@ export default function BlockTopMap({ pts, regionKey, children }: { pts: MapPt[]
   return (
     <div className="vBkt-band" ref={setWrap}>
       <div className="vBkt-map">
-        {on && <ShopMap mode="e" regionKey={regionKey} pts={pts} prefCounts={NONE_C} prefRegion={NONE_C as unknown as Record<string, string>} regionCounts={NONE_R} onPick={noop} cardHost={wrap} />}
+        {on && <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={NONE_C} prefRegion={NONE_C as unknown as Record<string, string>} regionCounts={NONE_R} onPick={noop} cardHost={wrap} />}
       </div>
       {children}
     </div>
