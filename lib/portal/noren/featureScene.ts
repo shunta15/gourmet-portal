@@ -12,7 +12,9 @@ export const NOREN_FEATURE_SCENE = RELEASE_REST;
  * （店 1 軒の記事は POINT 01〜の視点の並びで ID も scene- ではないので重ならない。呼び出し側は店 1 軒の判定を先にする。）
  */
 export function isSceneShopFeature(id: string, a: { ranking: { href?: string }[] }): boolean {
-  return id.startsWith("scene-") && a.ranking.length > 0 && a.ranking.every((r) => typeof r.href === "string" && r.href.startsWith("/restaurant/"));
+  // 非表示の店（lib/hiddenStores.ts）へのリンクは記事を返す入口で外す（href が無くなる）ので、href が無い項目は許す。ほかの項目はすべて /restaurant/<店 ID>、かつ 1 つ以上は店へのリンクがあること
+  const isShop = (r: { href?: string }) => typeof r.href === "string" && r.href.startsWith("/restaurant/");
+  return id.startsWith("scene-") && a.ranking.length > 0 && a.ranking.every((r) => r.href === undefined || isShop(r)) && a.ranking.some(isShop);
 }
 
 /** 見比べる表の行になる項目名: 2 店以上に共通する項目（現れる順）。1 店だけの項目は表に出さず、その店の節で出す */

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import { REGIONS, RESTAURANTS, type RegionKey } from "@/lib/data";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { visibleStores } from "@/lib/hiddenStores";
 
 // 地域の数は地域データ（REGIONS）の数から出す（RELEASE_REST が true のとき。false は今の本番の「16」）
 const REGION_COUNT = RELEASE_REST ? Object.keys(REGIONS).length : 16;
@@ -15,7 +16,7 @@ export const metadata = {
 export default function RegionIndex() {
   const keys = Object.keys(REGIONS) as RegionKey[];
   const counts: Record<string, number> = {};
-  for (const r of RESTAURANTS) counts[r.region] = (counts[r.region] || 0) + 1;
+  for (const r of visibleStores(RESTAURANTS)) counts[r.region] = (counts[r.region] || 0) + 1;
 
   return (
     <>

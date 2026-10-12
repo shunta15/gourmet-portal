@@ -79,6 +79,7 @@ export const BROAD_GROUPS: readonly BroadGroup[] = [
  *   r489 Kazuのちゅーぼー(レストラン): 「創作イタリアン」「100種を超えるイタリアワイン」 → 洋
  *   r509 BeatoKitchen(レストラン): 「パスタとキッズルームを掛け合わせたカフェ」 → 洋・茶
  * 振り分けていない店（本文を読んでも系統を決められなかった。オーナー確認待ち）: r72 Kitchen Sunny(惣菜・デリ)・r277 OWL(ナイトクラブ)・r330 Nulla(レストラン)・r368 やさいやVege TABLE(レストラン)
+ *   → 2026-10-12 オーナー決定「これ削除でいいよ一旦めんどいから」で、この 4 店は非表示にした（lib/hiddenStores.ts。データは消していない）。
  */
 export const BROAD_BY_ID: Record<string, readonly string[]> = {
   r168: ["yo", "wa"],

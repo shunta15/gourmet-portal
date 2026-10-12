@@ -1,6 +1,7 @@
 import HomeClient from "@/components/HomeClient";
 import { SHORT_VIDEOS, NEIGHBORHOODS, REGIONS, toCardItem, type RegionKey, type Stat } from "@/lib/regions";
-import { FEATURES, getNationalStats, getRegionStats } from "@/lib/data";
+import { FEATURES, RESTAURANTS, getNationalStats, getRegionStats } from "@/lib/data";
+import { isHiddenStore } from "@/lib/hiddenStores";
 import { getAllRestaurants } from "@/lib/db/restaurants";
 import { isPortalLive } from "@/lib/portal/launch";
 import { buildWall, entrancePhotos } from "@/lib/portal/photoWall";
@@ -17,11 +18,16 @@ import OmakaseEntrance from "../OmakaseEntrance";
 export default async function GourmetHome() {
   const restaurants = await getAllRestaurants();
   const cuisines = ["ALL", ...new Set(restaurants.map((r) => r.cuisine))];
-  const stats = getNationalStats();
+  // 掲載店舗の数は、非表示の店（lib/hiddenStores.ts。2026-10-12 オーナー決定の 4 店）を除く。getNationalStats / getRegionStats は lib/data.ts の全店を数えるので、ここで引く
+  const hiddenN = RESTAURANTS.filter((r) => isHiddenStore(r.id)).length;
+  const stats = getNationalStats().map((s) => (s.l === "掲載店舗" ? { ...s, n: String(Number(s.n) - hiddenN) } : s));
   const cardItems = restaurants.map(toCardItem);
   // 地域カードの統計はサーバーで計算（RegionsShowcase は client 経由で描画されるため data.ts を持ち込まない）
   const regionStats = Object.fromEntries(
-    (Object.keys(REGIONS) as RegionKey[]).map((k) => [k, getRegionStats(k)])
+    (Object.keys(REGIONS) as RegionKey[]).map((k) => {
+      const hiddenInRegion = RESTAURANTS.filter((r) => r.region === k && isHiddenStore(r.id)).length;
+      return [k, getRegionStats(k).map((s) => (s.l === "登録店舗" ? { ...s, n: String(Number(s.n) - hiddenInRegion) } : s))];
+    })
   ) as Record<RegionKey, Stat[]>;
 
   // 総合サイトの入口（公開スイッチ ON のときだけ。OFF のときは undefined で、出力は従来と同じ）。
