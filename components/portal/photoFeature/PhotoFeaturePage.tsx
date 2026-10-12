@@ -275,6 +275,55 @@ function StackBlock({ views, photos, owner }: { views: PfView[]; photos: PfPhoto
   );
 }
 
+/**
+ * 特集記事の無い店: 小見出しの無い、写真の列 + 文。写真があれば、写真のある視点と同じ組み（写真 + 文の札）。
+ * 写真が 0 枚なら、空の枠は出さず、和紙の面に文だけを置き、下に筆の線と朱の印を添える。
+ */
+function PlainBlock({ photos, text, variant, rv }: { photos: PfPhoto[]; text: PfText; variant: string; rv: Rv }) {
+  const n = photos.length;
+  if (n === 0) {
+    return (
+      <section className="pf-v pf-v--plain pf-v--plain0">
+        <div className="pf-plain0">
+          <div className="pf-v__tx pf-rv">
+            <Text t={text} />
+          </div>
+          <div className="pf-bare__rule" aria-hidden="true">
+            <Brush kind="dash" className="pf-bare__br" delay={0.1} reveal />
+            <Seal className="pf-bare__seal" delay={0.8} reveal />
+          </div>
+        </div>
+      </section>
+    );
+  }
+  const cls = `pf-v pf-v--plain pf-v--${variant}${n > 1 ? " pf-v--multi" : photos[0].port ? " pf-v--port" : ""}`;
+  return (
+    <section className={cls}>
+      <div className="pf-v__ph">
+        <div className="pf-cl__in" data-rvw="" data-rv={rv}>
+          <Row photos={photos} rv={rv} />
+        </div>
+      </div>
+      <div className="pf-v__tx pf-rv">
+        <Text t={text} />
+      </div>
+    </section>
+  );
+}
+
+/** 特集記事の無い店: 店のデータの「特徴」（短い箇条）。和紙の面に、朱の点を打って並べる */
+function PointsBlock({ items }: { items: string[] }) {
+  return (
+    <section className="pf-v pf-v--plain pf-pts" aria-label="特徴">
+      <ul className="pf-pts__ul pf-rv">
+        {items.map((x, i) => (
+          <li key={i}>{x}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 /** 巻頭に写真を出した視点の文（小見出しは巻頭の写真の上にある） */
 function NoteBlock({ view }: { view: PfView }) {
   return (
@@ -410,6 +459,8 @@ function renderBlocks(blocks: PfBlock[]): ReactNode[] {
       flush(i);
       if (b.kind === "view") out.push(<ViewBlock key={i} view={b.view} variant={b.variant} rv={b.rv} nrk={nrKind(b.view.no)} />);
       else if (b.kind === "pair") out.push(<PairBlock key={i} a={b.a} b={b.b} rv={b.rv} nrk={nrKind(b.a.no)} />);
+      else if (b.kind === "plain") out.push(<PlainBlock key={i} photos={b.photos} text={b.text} variant={b.variant} rv={b.rv} />);
+      else if (b.kind === "points") out.push(<PointsBlock key={i} items={b.items} />);
       else out.push(<NoteBlock key={i} view={b.view} />);
     }
   });
@@ -546,6 +597,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
 
       {/* 巻頭: 主役の写真（大きく）+ 縦書きの題の札が重なる + 朱の丸 */}
       <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}${D.coverPair ? " pf-cover--pair" : ""}`} style={cover} aria-label="巻頭">
+        {!hero && <Brush kind="wave" className="pf-cover__br pf-cover__br--np" delay={0.5} />}
         {hero && (
           <div className="pf-cover__ph" style={{ "--cap": `${D.coverPair ? rowOf([hero, ...D.coverPair.photos]).cap : hero.cap}px` } as Fx}>
             {D.coverPair ? (
@@ -553,15 +605,19 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
                 <Row
                   photos={[hero, ...D.coverPair.photos]}
                   big
-                  overlay={{
-                    1: (
-                      <h2 id="v-cover-h" className="pf-ov pf-l">
-                        <span className="pf-no" aria-hidden="true">{D.coverPair.no}</span>
-                        <Tate cols={D.coverPair.cols} className="pf-vt" label={false} />
-                        <span className="pf-vh">{D.coverPair.name}</span>
-                      </h2>
-                    ),
-                  }}
+                  overlay={
+                    D.coverPair.name
+                      ? {
+                          1: (
+                            <h2 id="v-cover-h" className="pf-ov pf-l">
+                              <span className="pf-no" aria-hidden="true">{D.coverPair.no}</span>
+                              <Tate cols={D.coverPair.cols} className="pf-vt" label={false} />
+                              <span className="pf-vh">{D.coverPair.name}</span>
+                            </h2>
+                          ),
+                        }
+                      : undefined
+                  }
                 />
               </div>
             ) : (
@@ -571,8 +627,8 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
           </div>
         )}
         <div className="pf-cover__t">
-          <span className="pf-tag" aria-hidden="true">特集</span>
-          <Seal className="pf-cover__seal" delay={0.9} />
+          {D.tag && <span className="pf-tag" aria-hidden="true">特集</span>}
+          <Seal className={`pf-cover__seal${D.tag ? "" : " pf-cover__seal--notag"}`} delay={0.9} />
           {D.subCols.length > 0 && <Tate cols={D.subCols} className="pf-sub" />}
           <Tate cols={T.cols} as="h1" className="pf-ttl" animate delay={0.15} emFrom={T.em} />
         </div>
@@ -591,13 +647,21 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         )}
       </section>
 
+      {/* 巻頭の写真が無いときは、紹介文を最初の画面の中（暖簾で留める区画）に置く（題だけの画面を空けない） */}
+      {!hero && D.lede.head && (
+        <section className="pf-lede pf-lede--cover" aria-label="導入">
+          <Text t={D.lede} className="pf-lede__in pf-rv" />
+        </section>
+      )}
         </div>
       </div>
 
       {/* リード（記事の文そのまま。最初の数文だけ見せて、残りは開く） */}
-      <section className="pf-lede" aria-label="導入">
-        <Text t={D.lede} className="pf-lede__in pf-rv" />
-      </section>
+      {hero && D.lede.head && (
+        <section className="pf-lede" aria-label="導入">
+          <Text t={D.lede} className="pf-lede__in pf-rv" />
+        </section>
+      )}
 
       <div id="main" className="pf-body">
         {renderBlocks(D.blocks)}

@@ -791,3 +791,36 @@ body:has(.pf-root) main { display: contents; }
 /* 締めのあとの店舗情報は、間をつめる（空きが画面の 3 割を超えないように）。地図の中の部品（z-index が大きい）が上端の竿の帯に重ならないよう、地図の額は独立した重なりにする */
 .pf-end + .pf-info { margin-top: clamp(24px, 3vw, 44px); }
 .pf-map__fr { position: relative; z-index: 0; isolation: isolate; }
+
+/* ───────── 特集記事の無い店（店のデータだけで組む 1 ページ）: 小見出しの無い写真の列 + 文 / 文だけ / 特徴 / 写真が無いときの巻頭 ───────── */
+.pf-v--plain { padding-top: 0; }
+.pf-body > .pf-v--plain + .pf-v--plain { margin-top: 6px; }
+/* 写真が 0 枚の段落: 和紙の面に文だけ。左に細い線、下に筆の線と朱の印 */
+.pf-v--plain0 { margin-top: clamp(18px, 2.4vw, 34px); }
+.pf-plain0 { grid-column: 3 / 11; display: grid; row-gap: clamp(14px, 1.6vw, 22px); }
+.pf-plain0 .pf-v__tx { grid-row: auto; margin: 0; padding: 4px 0 4px clamp(20px, 2.4vw, 34px); border-left: 1px solid var(--line); background: none; box-shadow: none; max-width: 40em; }
+.pf-plain0 .pf-v__tx p:last-child { margin-bottom: 0; }
+.pf-plain0 .pf-bare__rule { grid-row: auto; grid-column: auto; }
+/* 特徴（短い箇条）: 朱の点 */
+.pf-pts { margin-top: clamp(18px, 2.4vw, 34px); }
+.pf-pts__ul { grid-column: 3 / 11; display: grid; gap: 4px; max-width: 40em; }
+.pf-pts__ul li { position: relative; padding: 8px 0 8px 26px; border-bottom: 1px solid var(--line); font-size: clamp(15px, 1.08vw, 16px); line-height: 1.9; letter-spacing: 0.04em; }
+.pf-pts__ul li::before { content: ""; position: absolute; left: 4px; top: 1.15em; width: 9px; height: 9px; border-radius: 50%; background: var(--shu); }
+/* 札（特集の字）が無い巻頭: 朱の丸は右端へ */
+.pf-cover__seal--notag { right: 22px; }
+/* 巻頭の写真が無い: 和紙の面に、題を大きく置く（暗い空の枠は出さない）。筆の波線が題の下を走る */
+/* 題の大きさ（--fs）は幅だけで決め（高さの余白を題の下に空けない）、札の高さは題の長さ（1 列の字数 --per）に合わせる。空いた分は、紹介文を最初の画面の中に置いて埋める（.pf-lede--cover） */
+.pf-lede--cover { margin-top: clamp(22px, 2.6vw, 38px); }
+.pf-cover--nophoto .pf-cover__t { --fs: clamp(40px, 5vw, 72px); grid-column: 3 / 11; margin: clamp(24px, 3vw, 44px) 0 0; height: max(300px, calc(92px + var(--per) * var(--fs) * 1.12 + 100px)); box-shadow: none; background: transparent; border-top: 3px solid var(--indigo); border-bottom: 1px solid var(--line); margin-bottom: 0; }
+.pf-cover--nophoto .pf-ttl { right: 50%; transform: translateX(50%); }
+.pf-cover--nophoto .pf-cover__br--np { left: 18%; bottom: 62px; width: 40%; height: 8%; min-height: 40px; z-index: 3; }
+.pf-cover--nophoto .pf-cover__cap { grid-column: 3 / 11; }
+@media (max-width: 760px) {
+  .pf-plain0 { grid-column: auto; padding: 0 14px; }
+  .pf-plain0 .pf-v__tx { padding: 0 0 0 14px; border-left: 2px solid var(--indigo); }
+  .pf-pts__ul { padding: 0 14px; }
+  .pf-cover--nophoto .pf-cover__t { position: relative; height: max(240px, calc(84px + var(--per) * var(--fs) * 1.12 + 70px)); width: auto; margin: 0 14px; padding: 0; background: transparent; color: var(--ink); border-top: 3px solid var(--indigo); border-bottom: 1px solid var(--line); container-type: size; display: block; --fs: clamp(30px, 9vw, 40px); pointer-events: auto; }
+  .pf-cover--nophoto .pf-ttl { right: 16px; transform: none; color: var(--ink); text-shadow: none; top: 84px; }
+  .pf-cover--nophoto .pf-sub { color: var(--ink2); text-shadow: none; }
+  .pf-cover--nophoto .pf-cover__br--np { left: 4%; bottom: 40px; width: 60%; height: 7%; min-height: 28px; }
+}
