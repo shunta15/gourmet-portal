@@ -12,6 +12,10 @@ import { buildMetadata } from "@/lib/seo/meta";
 import { loadWall } from "@/lib/portal/photoWall";
 import type { WallData } from "@/lib/portal/photoWallShared";
 import PhotoWall from "../photos/PhotoWall";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない）
+const PhotosView = dynamic(() => import("../periphery/PhotosView"));
 import { PageFrame, type Tone } from "./frame";
 
 const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "写" };
@@ -51,6 +55,9 @@ export default async function Page({ searchParams }: Props) {
   assertPortalLive();
   const data = await loadWall();
   const f = readFilter(await searchParams, data);
+
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY）。壁・絞り込み・大きな表示・字は同じ
+  if (RELEASE_PERIPHERY) return <PhotosView data={data} initial={f} />;
 
   return (
     <PageFrame

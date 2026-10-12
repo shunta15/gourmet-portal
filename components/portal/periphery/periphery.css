@@ -236,3 +236,66 @@
 @media (prefers-reduced-motion: reduce) {
   .pp-chip, .pp-chips a, .pp-nl button { transition: none; }
 }
+
+/* ───────── おまかせ提案 /omakase ───────── */
+/* 今のおまかせ提案の部品（omakase.css の .om-*）は portal.css の変数（--ivory --ink-2 --ink-3 --rule --sans --latin --mono --ease-io --gut と --om-*）を使う。
+   周りのページの色（和紙・墨・朱）に読み替える。結果の店の札は /search の結果の札（BlockCard。blocksearch.css の .vBk-*）。 */
+.pp-om {
+  --ivory: var(--paper); --ink-2: var(--ink2); --ink-3: #5d574c; --rule: var(--line); --gut: 0px;
+  --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --latin: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --ease-io: cubic-bezier(0.76, 0, 0.24, 1);
+  --om-red: #b3391f; --om-shu: var(--shu); --om-cloth: #17130f; --om-paper: #fff;
+  --om-serif: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  position: relative; width: var(--box); margin: 0 auto; padding-bottom: clamp(8px, 2vw, 24px);
+}
+.pp-om-crumbs { padding-top: clamp(20px, 3vw, 36px); }
+.pp-om .om { max-width: none; padding: clamp(8px, 1.4vw, 16px) 0 clamp(40px, 5vw, 72px); }
+.pp-om .om-board { top: 40px; }
+.pp-om .om-how, .pp-om .om-noscript { max-width: none; padding-left: 0; padding-right: 0; }
+.pp-om .om-how { padding-bottom: clamp(24px, 3vw, 40px); }
+.pp-om .om-opt-c i, .pp-om .om-roll, .pp-om .om-pref i { font-family: var(--latin); }
+/* 結果の店の札（BlockCard）: 3 軒を横に並べる（スマホは 1 列）。暖簾が落ちる・上がる動きの高さは 1 枚ぶん */
+.pp-om .om-cards.om-bk { grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 16px; align-items: stretch; }
+.pp-om .om-cards.om-bk > li { min-width: 0; }
+.pp-om .om-cards-wrap { min-height: 340px; }
+.pp-om .om-res[data-n="0"] .om-cards-wrap { min-height: 0; }
+.om-res[data-curtain="lift"] .om-bk > li { animation: omRise 1.05s var(--ease) both; }
+.om-res[data-curtain="lift"] .om-bk > li:nth-child(1) { animation-delay: 260ms; }
+.om-res[data-curtain="lift"] .om-bk > li:nth-child(2) { animation-delay: 390ms; }
+.om-res[data-curtain="lift"] .om-bk > li:nth-child(3) { animation-delay: 520ms; }
+@media (max-width: 899px) {
+  .pp-om .om-cards.om-bk { grid-template-columns: minmax(0, 1fr); }
+  .pp-om .om-cards-wrap { min-height: calc(var(--n, 3) * 300px); }
+  .pp-om .om-mini { top: 24px; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; background: rgba(251, 250, 246, 0.94); }
+  .pp-om .om-board { top: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .om-res .om-bk > li { animation: none !important; }
+}
+
+/* ───────── 写真から探す /photos ───────── */
+/* 壁・絞り込み・大きな表示（今の部品。photos.css の .mp-ph-*）は、総合サイトの色の変数（.mp）をまとった枠の中に置く。.mp の地と高さは使わず、周りのページの和紙の地の上に出す */
+.pf-root .pp-ph.mp { min-height: 0; background: transparent; overflow-x: clip; font-family: inherit; }
+.pf-root .pp-ph { --serif: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif; --ink-3: #5d574c; }
+.pp-ph-sec { padding-top: clamp(16px, 2vw, 28px); }
+.pp-ph .mp-wrap { max-width: none; padding-inline: 0; }
+.pp-ph .mp-ph-bleed { padding-inline: 0; max-width: none; }
+/* 絞り込みの札: 周りのページの札（角ばった枠・和紙の面。選んだものは墨）に揃える */
+.pp-ph .mp-mx-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.pp-ph .mp-mx-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 0; background: var(--paper2); color: var(--ink); font: 800 15px/1.4 "Shippori Mincho B1", "Hiragino Mincho ProN", serif; letter-spacing: 0.06em; cursor: pointer; transition: background 0.3s, border-color 0.3s, color 0.3s; }
+.pp-ph .mp-mx-chip:hover { background: #fff; border-color: var(--ink); }
+.pp-ph .mp-mx-chip small { font: 700 12px/1 "Shippori Mincho B1", serif; letter-spacing: 0.06em; color: var(--shu); }
+.pp-ph .mp-mx-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.pp-ph .mp-mx-chip[aria-pressed="true"] small { color: #fff; opacity: 0.8; }
+.pp-ph .mp-ph-more { border-style: dashed; }
+.pp-ph .mp-ph-lab { font: 800 13px/1 "Shippori Mincho B1", serif; letter-spacing: 0.16em; color: var(--ink2); }
+.pp-ph .mp-ph-meta { font-size: 14px; color: var(--ink2); }
+.pp-ph .mp-ph-meta b { font: 800 30px/1 "Shippori Mincho B1", serif; color: var(--shu); letter-spacing: 0.02em; }
+.pp-ph .mp-ph-t { background: var(--paper2); box-shadow: 0 0 0 clamp(3px, 0.4vw, 5px) var(--paper), 0 8px 18px rgba(25, 24, 21, 0.12); }
+.pp-ph .mp-ph-grid { --gap: 14px; }
+@container (min-width: 560px) { .mp-ph-grid { --gap: 16px; } }
+@container (min-width: 800px) { .mp-ph-grid { --gap: 18px; } }
+@container (min-width: 1100px) { .mp-ph-grid { --gap: 20px; } }
+.pp-om ol, .pp-om ul { list-style: none; margin: 0; padding: 0; }

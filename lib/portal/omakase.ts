@@ -10,6 +10,7 @@ import { prefOfGourmetRegion } from "@/lib/areas/gourmet";
 import { buildFacetPayload } from "./facets";
 import { buildOmakaseData } from "./omakaseRows";
 import type { OmakaseData } from "./omakaseDefs";
+import { RELEASE_PERIPHERY } from "./noren/release";
 
 // 同じ集計をリクエストごとに繰り返さない（ISR の再生成のたびに取り直す）
 let memo: { at: number; p: Promise<OmakaseData> } | null = null;
@@ -17,13 +18,15 @@ let memo: { at: number; p: Promise<OmakaseData> } | null = null;
 async function build(): Promise<OmakaseData> {
   const restaurants = await getAllRestaurants();
   const fp = buildFacetPayload(restaurants);
-  return buildOmakaseData({
+  const data = buildOmakaseData({
     restaurants,
     facetRows: fp.rows,
     shown: fp.shown,
     shownBands: fp.shownBands,
     prefOfRegion: prefOfGourmetRegion,
   });
+  // 新しい見た目（RELEASE_PERIPHERY）の結果の札に添える事実の行の元（/search の店の札と同じ表）。false のあいだは今までと同じ形
+  return RELEASE_PERIPHERY ? { ...data, facts: { rows: fp.rows, shown: [...fp.shown] } } : data;
 }
 
 export function loadOmakaseData(): Promise<OmakaseData> {

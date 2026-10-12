@@ -239,6 +239,11 @@ export interface OmakaseData {
   rows: OmakaseRow[];
   /** 画面に出す予算の帯（BUDGET_BANDS の位置。こだわり条件と同じ基準） */
   shownBands: number[];
+  /**
+   * 結果の札に添える事実の行の元（/search の店の札と同じ。buildFacetPayload の rows = 店ID → [予算の帯, 設備・特徴などの判定ビット]、shown = 画面に出す条件）。
+   * RELEASE_PERIPHERY が true のときだけサーバーが入れる（false のあいだは今までと同じ形）。
+   */
+  facts?: { rows: Record<string, [number, number]>; shown: string[] };
 }
 
 /** 答え。null = まだ答えていない、"any" = どれでもよい（場所は "all"＝どこでも） */
