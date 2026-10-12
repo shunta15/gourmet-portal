@@ -151,7 +151,10 @@ export default function Motion() {
       const flow = im.dataset.par === "flow";
       return { flow, z: parseFloat(fig.style.getPropertyValue("--z")) || 1.04, k: flow ? 1 : Math.min(1, parseFloat(im.dataset.par || "0.5")) };
     });
-    const stacks = Array.from(root.querySelectorAll<HTMLElement>("[data-stack]")).map((el) => ({ el, ph: Array.from(el.querySelectorAll<HTMLElement>(".pf-st")) }));
+    const stacks = Array.from(root.querySelectorAll<HTMLElement>("[data-stack]")).map((el) => {
+      const ph = Array.from(el.querySelectorAll<HTMLElement>(".pf-st"));
+      return { el, ph, ov: ph.map((f) => f.querySelector<HTMLElement>(".pf-ov")) };
+    });
     // 暖簾らしさの連動: 竿と進みの布・暗い面の灯り・写真の傾きと照り・横に流れる帯・伸び縮みする飾り・数え上がる数字
     const rod = root.querySelector<HTMLElement>(".pf-rod");
     const darks = Array.from(root.querySelectorAll<HTMLElement>(".pf-dark")).map((el) => ({ el, lamp: el.querySelector<HTMLElement>(".pf-lamp i"), cx: 0, cy: 0, init: false, vx: 0, vy: 0, lr: 340 }));
@@ -270,6 +273,14 @@ export default function Motion() {
       });
       // 4. 留める場面: 重なった写真が 1 枚ずつ入れ替わる
       stacks.forEach((s, i) => {
+        if (narrow) {
+          // スマホは留めない（横にはらう帯）。送り出しの変形を戻す
+          s.ph.forEach((el, j) => {
+            if (el.style.transform) el.style.removeProperty("transform");
+            s.ov[j]?.style.removeProperty("opacity");
+          });
+          return;
+        }
         const r = stackRects[i];
         const total = Math.max(1, r.height - vh);
         const p = clamp(-r.top / total);
@@ -280,6 +291,9 @@ export default function Motion() {
           const d = Math.min(2, Math.max(0, j - u));
           // 直接 transform に書く（var() の計算を挟まない。写真は左へ送り出して舞台の外に出すので、opacity は動かさない）
           el.style.transform = `translate3d(${(t * -118).toFixed(2)}%, ${(t * -5).toFixed(2)}%, 0) rotate(${(t * -10 + j * 0.7 - 1).toFixed(2)}deg) scale(${(1 - d * 0.025).toFixed(4)})`;
+          // 小見出しは、いちばん上の写真のものだけ（入れ替わる途中で、2 つの小見出しが重ならない）
+          const ov = s.ov[j];
+          if (ov) ov.style.opacity = (clamp(1 - t * 6) * clamp(1 - d * 4)).toFixed(3);
         });
       });
       // 横に流れる帯: 縦のスクロールが、写真の列の横送りになる
@@ -377,7 +391,7 @@ export default function Motion() {
           rod.style.setProperty("--rs", `${clamp(vyS * 0.5, -10, 10).toFixed(2)}deg`);
         }
         const span = Math.max(0, vh * 0.8 - 20);
-        hudCur?.parentElement?.style.setProperty("--hy", `${(prog * span).toFixed(1)}px`);
+        void span;
         hud.classList.toggle("pf-hud--on", y > vh * 0.35);
         // いまの視点（画面の真ん中にかかっている区画。2 つの視点の区画は、下半分で 2 つめ）
         let no = "";
@@ -404,7 +418,17 @@ export default function Motion() {
         }
       }
       // 8. 店ページへの小さなボタンの出し入れ
-      if (fab) fab.classList.toggle("pf-fab--on", y > vh * 0.9 && infoTop > vh * 0.9);
+      if (fab) {
+        let on = y > vh * 0.9 && infoTop > vh * 0.9;
+        // 本文の字の上に重なるときは、出さない（字を隠さない）。足もとの 4 点と中心を、下にある要素まで見て調べる
+        if (on) {
+          const r = fab.getBoundingClientRect();
+          const pts: [number, number][] = [[r.left + 2, r.top + 2], [r.right - 2, r.top + 2], [r.left + 2, r.bottom - 2], [r.right - 2, r.bottom - 2], [r.left + r.width / 2, r.top + r.height / 2]];
+          const TEXT = ".pf-v__tx, .pf-lede__in, .pf-closing, .pf-quote, .pf-dl, .pf-pr__tx, .pf-stack__notes, .pf-film__notes, .pf-info__t, .pf-end__in";
+          on = !pts.some(([x, yy]) => document.elementsFromPoint(x, yy).some((el) => el !== fab && !fab.contains(el) && el.closest(TEXT) && (el as HTMLElement).closest(".pf-ph") === null));
+        }
+        fab.classList.toggle("pf-fab--on", on);
+      }
     };
     const schedule = () => {
       if (!raf) raf = requestAnimationFrame(frame);
@@ -463,8 +487,9 @@ export default function Motion() {
       if (raf) cancelAnimationFrame(raf);
       pars.forEach((im) => im.style.removeProperty("--py"));
       stacks.forEach((s) =>
-        s.ph.forEach((el) => {
+        s.ph.forEach((el, j) => {
           el.style.removeProperty("transform");
+          s.ov[j]?.style.removeProperty("opacity");
         }),
       );
       cover?.style.removeProperty("--hy");

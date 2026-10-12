@@ -35,6 +35,7 @@ export default function Gate({ name }: { name: string }) {
     let open = 0;
     let t0 = performance.now();
     let lastNow = 0;
+    let lastDraw = 0;
     let lastY = window.scrollY;
     let vel = 0;
     let mouse = 0;
@@ -63,8 +64,8 @@ export default function Gate({ name }: { name: string }) {
       }
       const pw = (cssW - 2 * margin - (n - 1) * gap) / n;
       const aspect = (hemY - rodY) / pw;
-      // スマホは解像度を 1 倍に（軽い版）。PC は最大 1.5 倍
-      const dpr = mobile ? 1 : Math.min(window.devicePixelRatio || 1, 1.5);
+      // スマホは解像度を 1 倍に（軽い版）。PC は最大 1.25 倍
+      const dpr = mobile ? 1 : Math.min(window.devicePixelRatio || 1, 1.25);
       cloth.resize({ cssW, cssH, dpr, rodY, hemY, gap, margin });
       const key = p.map((x) => x.join("")).join("|");
       if (key !== planKey || Math.abs(aspect / lastAspect - 1) > 0.06) {
@@ -75,13 +76,23 @@ export default function Gate({ name }: { name: string }) {
       L = { cssW, cssH, rodY, hemY, margin };
     };
 
-    const hole = (e: number) => {
-      // 戸口（暖簾の掛かる所）だけ奥が見え、暖簾が上がるにつれて戸口が画面いっぱいに広がる
+    const hole = (h: number) => {
+      // 暖簾が掛かっているあいだ（h = 0）は、奥（本文・ボタン）を見せない。暖簾が割れ始めたら、戸口の中心から奥が見え始め、戸口いっぱい → 画面いっぱいに広がる
       const { cssW: W, cssH: H, rodY, hemY, margin } = L;
-      const l = margin * (1 - e);
-      const r = W - margin * (1 - e);
-      const t = rodY * (1 - e);
-      const b = hemY + (H - hemY) * e;
+      const cx = W / 2;
+      const cy = (rodY + hemY) / 2;
+      const dw = (W - 2 * margin) / 2;
+      const dh = (hemY - rodY) / 2;
+      const s1 = clamp(h / 0.4, 0, 1);
+      const s2 = clamp((h - 0.4) / 0.6, 0, 1);
+      const l1 = cx - dw * s1;
+      const r1 = cx + dw * s1;
+      const t1 = cy - dh * s1;
+      const b1 = cy + dh * s1;
+      const l = l1 * (1 - s2);
+      const r = r1 + (W - r1) * s2;
+      const t = t1 * (1 - s2);
+      const b = b1 + (H - b1) * s2;
       return `polygon(evenodd, 0px 0px, ${W}px 0px, ${W}px ${H}px, 0px ${H}px, 0px 0px, ${l}px ${t}px, ${l}px ${b}px, ${r}px ${b}px, ${r}px ${t}px, ${l}px ${t}px)`;
     };
 
@@ -108,14 +119,23 @@ export default function Gate({ name }: { name: string }) {
       mouse += (mouseT - mouse) * (1 - Math.exp(-dt * 3));
       const t = (now - t0) / 1000;
       const gust = Math.min(1.4, 0.12 + 0.95 * Math.exp(-t / 2.4) + vel * 0.9 + Math.abs(open - prev) * 6);
-      const e = ease(open);
-      wl.style.clipPath = hole(e);
+      // 掛かりきる前（intro）と、まだ割れていないあいだは、壁に穴を開けない
+      const introDone = clamp((now - t0) / 1000 / 1.6, 0, 1) >= 1;
+      const h = introDone ? ease(clamp((open - 0.05) / 0.95, 0, 1)) : 0;
+      wl.style.clipPath = h > 0.001 ? hole(h) : "none";
       el.style.setProperty("--open", open.toFixed(4));
       if (open > 0.3 && !page.classList.contains("pf-gate-open")) page.classList.add("pf-gate-open");
       // タップで上げられるのは、暖簾が下りているあいだだけ
       el.style.pointerEvents = open < 0.4 ? "auto" : "none";
       const done = open >= 0.995 && target >= 0.995;
       el.classList.toggle("is-done", done);
+      // 動いていない（風で揺れているだけ）ときは、描く回数を半分にする（軽くする）
+      const calm = Math.abs(target - open) < 0.003 && vel < 0.03;
+      if (calm && !done && now - lastDraw < 33) {
+        raf = requestAnimationFrame(frame);
+        return;
+      }
+      lastDraw = now;
       cloth.render({ time: t, open, gust, mouse, lamp: 0.62, intro: ease(clamp(t / 1.6, 0, 1)) });
       if (done) {
         stop();

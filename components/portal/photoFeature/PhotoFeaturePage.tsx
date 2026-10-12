@@ -72,12 +72,15 @@ function Row({ photos, big = false, overlay, rv }: { photos: PfPhoto[]; big?: bo
   );
 }
 
+/** 小さな暖簾の種類（0〜4）: 視点の番号で決める（01〜05 が、それぞれ違う揺れ方・上がり方になる） */
+const nrKind = (no: string) => (parseInt(no, 10) - 1 + 5) % 5;
+
 /** 視点の頭に掛ける小さな暖簾（竿 + 短い藍の布 3 枚。番号と見出しの字を染め抜く）。揺れ方・上がり方は k（0〜4）で変える。飾りなので読み上げない */
 function Nr({ chars, k, side = "l" }: { chars: string[]; k: number; side?: "l" | "r" }) {
   const sway = [1.6, 2.4, 1.9, 3.0, 2.1][k % 5];
   const dur = [3.6, 4.6, 4.0, 5.2, 3.2][k % 5];
   return (
-    <span className={`pf-nr pf-nr--k${k % 5} pf-nr--${side}`} aria-hidden="true" style={{ "--sa": `${sway}deg`, "--sd": `${dur}s` } as Fx}>
+    <span className={`pf-nr pf-nr--k${k % 5} pf-nr--${side}`} aria-hidden="true" style={{ "--sa": `${sway}deg`, "--sd": `${dur}s`, "--np": chars.length } as Fx}>
       <i className="pf-nr__rod" />
       <span className="pf-nr__cl">
         {chars.map((c, i) => (
@@ -124,6 +127,7 @@ function FilmBlock({ views, photos }: { views: PfView[]; photos: PfPhoto[] }) {
       <div className="pf-film__notes">
         {views.map((v) => (
           <div key={v.no} className="pf-v__tx pf-rv">
+            <Nr chars={v.nr} k={nrKind(v.no)} side="l" />
             {v.heading && <p className="pf-hd">{v.heading}</p>}
             <Text t={{ head: v.head, rest: v.rest }} />
           </div>
@@ -137,10 +141,12 @@ function FilmBlock({ views, photos }: { views: PfView[]; photos: PfPhoto[] }) {
 const COUNT_KEYS = new Set(["席", "予算", "最寄り"]);
 function InfoVal({ k, v }: { k: string; v: string }) {
   if (!COUNT_KEYS.has(k)) return <>{v}</>;
+  // 最寄りは「徒歩 N 分」の N だけ（住所の番地などは数えない）。席・予算は、値の中の数字
+  const re = k === "最寄り" ? /(\d[\d,]*)(?=分)/ : /(\d[\d,]*)/;
   return (
     <>
-      {v.split(/(\d[\d,]*)/).map((x, i) =>
-        /^\d/.test(x) ? (
+      {v.split(new RegExp(re.source)).map((x, i) =>
+        i % 2 === 1 ? (
           <span key={i} className="pf-num" data-to={x.replace(/,/g, "")} data-comma={x.includes(",") ? "1" : undefined}>
             {x}
           </span>
@@ -227,6 +233,7 @@ function StackBlock({ views, photos, owner }: { views: PfView[]; photos: PfPhoto
         <div className={`pf-stack__notes pf-stack__notes--${views.length}`}>
           {views.map((v) => (
             <div key={v.no} className="pf-v__tx pf-rv">
+              <Nr chars={v.nr} k={nrKind(v.no)} side="l" />
               {v.heading && <p className="pf-hd">{v.heading}</p>}
               <Text t={{ head: v.head, rest: v.rest }} />
             </div>
@@ -356,6 +363,29 @@ function BandBlock({ photos, no, rv }: { photos: PfPhoto[]; no: number; rv: Rv }
   );
 }
 
+/** 暗い面になる区画（留める場面・横に流れる帯・写真だけの面）が続くときは、ひとつの暗い面にまとめる（和紙 ⇔ 灰墨の切り替えを、続けて 2 回しない） */
+function renderBlocks(blocks: PfBlock[]): ReactNode[] {
+  const out: ReactNode[] = [];
+  let dark: ReactNode[] = [];
+  const flush = (key: number) => {
+    if (dark.length) out.push(<Dark key={`d${key}`}>{dark}</Dark>);
+    dark = [];
+  };
+  blocks.forEach((b, i) => {
+    if (b.kind === "stack") dark.push(<StackBlock key={i} views={b.views} photos={b.photos} owner={b.owner} />);
+    else if (b.kind === "film") dark.push(<FilmBlock key={i} views={b.views} photos={b.photos} />);
+    else if (b.kind === "band") dark.push(<BandBlock key={i} photos={b.photos} no={b.no} rv={b.rv} />);
+    else {
+      flush(i);
+      if (b.kind === "view") out.push(<ViewBlock key={i} view={b.view} variant={b.variant} rv={b.rv} nrk={nrKind(b.view.no)} />);
+      else if (b.kind === "pair") out.push(<PairBlock key={i} a={b.a} b={b.b} rv={b.rv} nrk={nrKind(b.a.no)} />);
+      else out.push(<NoteBlock key={i} view={b.view} />);
+    }
+  });
+  flush(blocks.length);
+  return out;
+}
+
 export type PhotoFeaturePageProps = {
   data: PfData;
   /** 対の店ページの行き先（無ければ null） */
@@ -444,27 +474,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
       </section>
 
       <div id="main" className="pf-body">
-        {D.blocks.map((b: PfBlock, i) =>
-          b.kind === "view" ? (
-            <ViewBlock key={i} view={b.view} variant={b.variant} rv={b.rv} nrk={i} />
-          ) : b.kind === "pair" ? (
-            <PairBlock key={i} a={b.a} b={b.b} rv={b.rv} nrk={i} />
-          ) : b.kind === "note" ? (
-            <NoteBlock key={i} view={b.view} />
-          ) : b.kind === "stack" ? (
-            <Dark key={i}>
-              <StackBlock views={b.views} photos={b.photos} owner={b.owner} />
-            </Dark>
-          ) : b.kind === "film" ? (
-            <Dark key={i}>
-              <FilmBlock views={b.views} photos={b.photos} />
-            </Dark>
-          ) : (
-            <Dark key={i}>
-              <BandBlock photos={b.photos} no={b.no} rv={b.rv} />
-            </Dark>
-          ),
-        )}
+        {renderBlocks(D.blocks)}
       </div>
 
       {/* 店の案内 */}
@@ -534,14 +544,14 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
 
       {/* ページの上端の竿と、読み進みに合わせて横へ進む小さな布（JS が動いたときだけ） */}
       <div className="pf-rod" aria-hidden="true">
+        <span className="pf-rod__tr"><span className="pf-rod__cl"><b /></span></span>
         <i className="pf-rod__bar" />
-        <span className="pf-rod__cl"><b /></span>
+        <span className="pf-hud__no"><b className="pf-hud__cur" /><b className="pf-hud__prev" /></span>
       </div>
 
       {/* 読み進みの印（画面の端の朱の線 + いまの視点の番号）と、店ページへの小さなボタン。どちらも JS が動いたときだけ出る */}
       <div className="pf-hud" aria-hidden="true">
         <span className="pf-hud__line"><i /></span>
-        <span className="pf-hud__no"><b className="pf-hud__cur" /><b className="pf-hud__prev" /></span>
       </div>
       {shopHref && (
         <Link href={shopHref} className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">

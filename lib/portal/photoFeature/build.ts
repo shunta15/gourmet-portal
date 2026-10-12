@@ -317,12 +317,18 @@ const VARIANTS = ["A", "C", "B", "D", "E"] as const;
 export const PHOTO_BUDGET = 12;
 const PER_VIEW_MAX = 3;
 
-const KNUM = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
-/** 小さな暖簾に染め抜く字: 見出しの最初の 2 字（かな・漢字）の間に、番号の漢数字 */
-export function nrChars(no: string, name: string): string[] {
-  const cs = Array.from(name).filter((ch) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(ch));
-  const n = parseInt(no, 10);
-  return [cs[0], KNUM[n - 1] ?? no, cs[1]].filter(Boolean) as string[];
+/**
+ * 視点の頭に掛ける小さな暖簾に染め抜く語: 見出しにある語だけ（字を拾い集めて並べない）。
+ * 見出しの最初の節（、。・で区切る）の漢字・カタカナの連なり（2〜4 字）を選ぶ。無ければ見出し全体から、それも無ければ見出しの最初の 2 字。
+ * 最後が「り」で終わる語（最寄り）は「り」まで含める。
+ */
+export function nrChars(_no: string, name: string): string[] {
+  const clauses = name.split(/[、。・\s（）()「」]/).filter(Boolean);
+  // 4 字までの連なりを探す（5 字以上の連なり = 長い語は、途中で切らないので選ばない）
+  const runs = (text: string) => Array.from(text.matchAll(/[\u4e00-\u9fff々ァ-ヶー]+り?/g)).map((m) => m[0]).filter((w) => Array.from(w).length >= 2 && Array.from(w).length <= 4 + (w.endsWith("り") ? 1 : 0));
+  const first = runs(clauses[0] ?? "")[0] ?? runs(name)[0];
+  if (first) return Array.from(first);
+  return Array.from(name).filter((ch) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(ch)).slice(0, 2);
 }
 
 export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): PfData {
