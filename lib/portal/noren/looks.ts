@@ -3,9 +3,9 @@
  * - "block": 参考画像「G1 / TASTE THE BLOCK」の形（白い地・橙の差し色・紺の字・角の丸い札）。見本の既定
  * - "noren": 今までの暖簾の見た目（墨の地）
  * 見本（プレビュー・ローカル）でだけ、URL の ?look=noren|block で上書きできる。本番（VERCEL_ENV が production）では URL の指定を無視する
- * （呼び出し側のサーバーが allowUrl に VERCEL_ENV !== "production" を渡す）。RELEASE_REST が false のときは、いつも今までどおり（noren）。
+ * （呼び出し側のサーバーが allowUrl に VERCEL_ENV !== "production" を渡す）。RELEASE_SEARCH が false のときは、いつも今までどおり（noren）。
  */
-import { RELEASE_REST } from "./release";
+import { RELEASE_SEARCH } from "./release";
 
 export type Look = "block" | "noren";
 
@@ -15,7 +15,7 @@ export const SEARCH_LOOK: Look = "block";
 export const OPEN_SEARCH_LOOK: Look = "block";
 
 export function resolveLook(base: Look, param: string | null | undefined, allowUrl: boolean): Look {
-  if (!RELEASE_REST) return "noren";
+  if (!RELEASE_SEARCH) return "noren";
   if (allowUrl && (param === "noren" || param === "block")) return param;
   return base;
 }

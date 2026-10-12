@@ -2,17 +2,17 @@
  * 地域・街への行き先（軽い定数と純関数だけ。サーバー・クライアントのどちらからも使える）。
  *
  * 2026-10-12 オーナー決定「地域と街のページ（大阪、大阪市北区）は『さがす』のページへ統合」:
- * RELEASE_REST が true（見本が基準）のあいだ、/region・/region/<キー>・/region/<キー>/<街> のページは無く、next.config.ts が /search へ恒久転送する
+ * RELEASE_SEARCH が true（見本が基準）のあいだ、/region・/region/<キー>・/region/<キー>/<街> のページは無く、next.config.ts が /search へ恒久転送する
  * （/region → /search、/region/<キー> → /search?region=<キー>、/region/<キー>/<街> → /search?region=<キー>&town=<街>）。
  * サイト内のリンクは転送を踏まないよう、リンクを作る所でこの関数を通して、はじめから /search の URL にする。
- * RELEASE_REST が false のときは今までの /region 系の URL のまま（今の本番と同じ）。
+ * RELEASE_SEARCH が false のときは今までの /region 系の URL のまま（今の本番と同じ）。
  */
 import type { FeatureArticle } from "../../regions";
-import { RELEASE_REST } from "./release";
+import { RELEASE_SEARCH } from "./release";
 import { isScenePath, scenePathToSearch } from "./sceneLinks";
 
 /** 地域・街のページを「さがす」へ統合するか（next.config.ts の転送と、サイト内リンクの両方がこれを見る） */
-export const AREA_TO_SEARCH = RELEASE_REST;
+export const AREA_TO_SEARCH = RELEASE_SEARCH;
 
 /** エリア一覧（/region）の行き先 */
 export const areaIndexHref = (): string => (AREA_TO_SEARCH ? "/search" : "/region");

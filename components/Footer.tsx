@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
-import { areaIndexHref, regionHref } from "@/lib/portal/noren/areaLinks";
-import { sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
+import { AREA_TO_SEARCH, areaIndexHref, regionHref } from "@/lib/portal/noren/areaLinks";
+import { SCENE_TO_SEARCH, sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -102,8 +102,9 @@ export default function Footer() {
           <ul>
             <li><Link href="/">トップ</Link></li>
             <li><Link href="/feature">特集</Link></li>
-            <li><Link href={areaIndexHref()}>エリア</Link></li>
-            <li><Link href={sceneIndexHref()}>シーン</Link></li>
+            {/* 地域・シーンのページを「さがす」へ統合したあとは、行き先が「検索」と同じになるので項目を置かない */}
+            {!AREA_TO_SEARCH && <li><Link href={areaIndexHref()}>エリア</Link></li>}
+            {!SCENE_TO_SEARCH && <li><Link href={sceneIndexHref()}>シーン</Link></li>}
             <li><Link href="/search">検索</Link></li>
           </ul>
         </div>

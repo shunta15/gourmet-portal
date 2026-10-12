@@ -1,4 +1,4 @@
-import { RELEASE_REST } from "./release";
+import { RELEASE_REST, RELEASE_SEARCH } from "./release";
 import { areaIndexHref, regionHref } from "./areaLinks";
 
 /**
@@ -30,10 +30,10 @@ export const LIVE_LINKS: NorenLinks = {
 };
 
 /**
- * ヘッダーの行き先（トップはロゴ）。RELEASE_REST が true のとき「特集・さがす」の 2 つ（エリア・シーンは「さがす」のページから入る）。
+ * ヘッダーの行き先（トップはロゴ）。RELEASE_SEARCH が true のとき「特集・さがす」の 2 つ（エリア・シーンは「さがす」のページから入る）。
  * false のときは今までの 4 つ（特集・エリア・シーン・さがす。今の本番と同じ）。
  */
-export const HEADER_NAV = RELEASE_REST
+export const HEADER_NAV = RELEASE_SEARCH
   ? ([
       { href: "/feature", ja: "特集", en: "Features" },
       { href: "/search", ja: "さがす", en: "Search" },
@@ -45,8 +45,8 @@ export const HEADER_NAV = RELEASE_REST
       { href: "/search", ja: "さがす", en: "Search" },
     ] as const);
 
-/** フッターのナビゲーション。RELEASE_REST が true のときはヘッダーと同じ「トップ・特集・さがす」（エリアの一覧は下の「地域」の列にある）。false は今までの 5 つ */
-export const FOOT_NAV = RELEASE_REST
+/** フッターのナビゲーション。RELEASE_SEARCH が true のときはヘッダーと同じ「トップ・特集・さがす」（エリアの一覧は下の「地域」の列にある）。false は今までの 5 つ */
+export const FOOT_NAV = RELEASE_SEARCH
   ? ([
       { href: NOREN_TOP, ja: "トップ" },
       { href: "/feature", ja: "特集" },
