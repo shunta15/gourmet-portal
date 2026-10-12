@@ -1,6 +1,6 @@
 // 描き起こした SVG（automation/illust-map/svg/<style>/）を、あらかじめ画像（WebP）にする。画面では SVG を敷かず、この画像を敷く（実行時に重い SVG を描かないため）。
-//   使い方: node automation/illust-map/raster.mjs [--style=e|f|g|h] [地域キー…]   （meta.json の項目のうち、指定したものを画像にする。省くと全部）
-//   出力: public/_portal/illust-map/<style>-<キー>[-core].webp、automation/illust-map/webp.json、lib/portal/noren/illustMaps.generated.ts（範囲の表）
+//   使い方: node automation/illust-map/raster.mjs [--style=e|g] [地域・地方のキー…]   （meta.json の項目のうち、指定したものを画像にする。省くと全部。地方ごとの地図は kind = "area"）
+//   出力: public/_portal/illust-map/<style>-<キー>[-core].webp、automation/illust-map/webp.json、lib/portal/noren/illustMaps.generated.ts（範囲の表。ILLUST = 地域ごと、ILLUST_AREA = 地方ごと、ILLUST_JAPAN = 全国図）
 // 解像度: 初期表示の画面の 2 倍（スマホ・高精細の画面でもにじまない）。ただし長辺 CAP px まで、1 枚 BUDGET KB 前後に収まるよう画質を下げる。
 // 細かい層（core）は、縁を四辺の 9% でぼかした透明つきの画像にする（実行時の CSS の mask は使わない）。
 import fs from "fs";
@@ -23,7 +23,7 @@ const args = process.argv.slice(2);
 const styleArg = args.find((a) => a.startsWith("--style="))?.slice(8);
 const only = args.filter((a) => !a.startsWith("--"));
 const BUDGET = Number(process.env.BUDGET_KB || 260);
-const CAP = { overview: Number(process.env.CAP_OV || 2600), core: Number(process.env.CAP_CORE || 2600) };
+const CAP = { overview: Number(process.env.CAP_OV || 2600), core: Number(process.env.CAP_CORE || 2600), area: Number(process.env.CAP_AREA || 2000) };
 
 fs.mkdirSync(OUT, { recursive: true });
 const tmp = path.join(HERE, "tmp");
@@ -72,51 +72,40 @@ await browser.close();
 fs.rmSync(tmp, { recursive: true, force: true });
 
 // ---- 範囲の表（lib/portal/noren/illustMaps.generated.ts）----
-// e の地域のうち、まだ画像にしていないものは、これまでの SVG（public/_portal/illust-map/<キー>.svg。automation/illust-map/table.json）のまま
-const legacyPath = path.join(HERE, "table.json");
-const legacy = fs.existsSync(legacyPath) ? JSON.parse(fs.readFileSync(legacyPath, "utf8")) : {};
-const tbl = { e: {}, f: {}, g: {}, h: {} };
+// 地域ごとの画像は e（手描き風）だけ。全国図は e（さがす・入口）と g（入口の暗い版の帯）。地方ごとの画像（kind=area）は ILLUST_AREA。
+const tbl = {};
+const area = {};
 const jp = {};
-for (const [k, v] of Object.entries(legacy)) {
-  if (k === "__japan") { jp.e = { src: "/_portal/illust-map/japan.svg", bounds: v.bounds }; continue; }
-  tbl.e[k] = { zi: v.zi, main: { src: `/_portal/illust-map/${k}.svg`, bounds: v.bounds }, ...(v.core ? { core: { src: `/_portal/illust-map/${k}-core.svg`, bounds: v.core.bounds } } : {}) };
-}
-const seen = new Set();
 for (const [id, w] of Object.entries(webp)) {
   const [style, key, kind] = id.split("/");
-  if (key === "japan") { jp[style] = { src: w.src, bounds: w.bounds }; continue; }
-  if (!seen.has(style + key)) { seen.add(style + key); tbl[style][key] = {}; } // 画像にした地域は、これまでの SVG（暫定）の項目を捨てる
-  tbl[style][key][kind === "core" ? "core" : "main"] = { src: w.src, bounds: w.bounds, kb: w.kb };
-  if (kind !== "core") tbl[style][key].zi = w.zi;
+  if (key === "japan") { if (style === "e" || style === "g") jp[style] = { src: w.src, bounds: w.bounds }; continue; }
+  if (style !== "e") continue;
+  if (kind === "area") { area[key] = { src: w.src, bounds: w.bounds, w: w.w, h: w.h, kb: w.kb }; continue; }
+  tbl[key] ??= {};
+  tbl[key][kind === "core" ? "core" : "main"] = { src: w.src, bounds: w.bounds, kb: w.kb };
+  if (kind !== "core") tbl[key].zi = w.zi;
 }
 const fmt = (o) => JSON.stringify(o, null, 1).replace(/\n\s*/g, " ");
-const rows = (style) => Object.entries(tbl[style]).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `    ${JSON.stringify(k)}: ${fmt(v)},`).join("\n");
+const rows = (t) => Object.entries(t).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `  ${JSON.stringify(k)}: ${fmt(v)},`).join("\n");
 fs.writeFileSync(TABLE, `/**
- * 「さがす」の地図 e・f・g・h の、地域ごとの画像の範囲の表。automation/illust-map/raster.mjs が書き出す（手で編集しない）。
- * main = 粗い層（すべての店の範囲。h はこの 1 枚だけ）、core = 細かい層（初期表示のまわり。縁をぼかした透明つき。粗い層の上に重ねる）。bounds は [[南, 西], [北, 東]]（緯度経度）。
- * f・g・h は、ここにある地域だけ（ほかの地域は e の絵を出す）。e のうち src が .svg のものは、画像にする前の描き起こし（暫定）。
+ * 「さがす」の地図（手描き風 e）の画像の範囲の表。automation/illust-map/raster.mjs が書き出す（手で編集しない）。
+ * ILLUST = 地域ごとの画像。main = 粗い層（すべての店の範囲）、core = 細かい層（初期表示のまわり。縁をぼかした透明つき。粗い層の上に重ねる）。bounds は [[南, 西], [北, 東]]（緯度経度）。
+ * ILLUST_AREA = 地方ごとの画像（その地方の地域・店が全部入る四角。粗い層 1 枚。w・h は画像の画素数）。ILLUST_JAPAN = 全国図（e・g。入口の帯）。
  * 出典: 地図は国土地理院ベクトルタイルをもとに作成。
  */
 export type IllustLayer = { src: string; bounds: [[number, number], [number, number]]; kb?: number };
 export type IllustEntry = { main: IllustLayer; core?: IllustLayer; zi?: number };
-export type IllustStyle = "e" | "f" | "g" | "h";
+export type IllustAreaEntry = IllustLayer & { w: number; h: number };
 
-export const ILLUST: Record<IllustStyle, Record<string, IllustEntry>> = {
-  e: {
-${rows("e")}
-  },
-  f: {
-${rows("f")}
-  },
-  g: {
-${rows("g")}
-  },
-  h: {
-${rows("h")}
-  },
+export const ILLUST: Record<string, IllustEntry> = {
+${rows(tbl)}
 };
 
-/** 全国の地図（描き方ごと。f・g・h が無いときは e） */
-export const ILLUST_JAPAN: Partial<Record<IllustStyle, IllustLayer>> & { e: IllustLayer } = ${fmt(jp)};
+export const ILLUST_AREA: Record<string, IllustAreaEntry> = {
+${rows(area)}
+};
+
+/** 全国の地図（e = 手描き風、g = 夜の灯り） */
+export const ILLUST_JAPAN: { e: IllustLayer; g: IllustLayer } = ${fmt(jp)};
 `);
 console.log("table written");

@@ -110,7 +110,7 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandRegions={blockTop.bandRegions} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
+      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandAreas={blockTop.bandAreas} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
       {/* 章の前置き（「七つの章」の見出し・説明・7 つの目次）は置かない（2026-10-12 オーナー指示「ここいらないかな」）。「店を、さがす。」の節のすぐ下から、和食の章が始まる */}

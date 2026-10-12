@@ -52,6 +52,7 @@
 
 /* ---------- 箱: 左に地図・右に一覧 ---------- */
 .vBk-box{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:26px;align-items:start}
+.vBk-mapcol{min-width:0}
 .vBk .vMp-map .vSc-map-fr{padding:0;border:1px solid var(--bk-line);border-radius:16px;overflow:hidden;box-shadow:none;background:#f1ead6}
 .vBk .vMp-map .vMp-surface{background:#f1ead6}
 .vBk .vMp-leaf{height:460px}

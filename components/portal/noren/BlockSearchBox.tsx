@@ -3,7 +3,7 @@
  * 「さがす」ページ（block の見た目）の検索の箱。上の帯（写真 +「お店を探す」）の見出しのすぐ下に、大きな白い箱を常に出す（どのタブを開いていても見える）:
  *   「エリアを選ぶ」のセレクト + 入力欄 + 橙のボタン（虫めがねの絵と「さがす」の字）。入力があるときは、欄の中に消すための ×。Enter でも送れる。
  *  - いま絞り込んでいるキーワード・エリア（URL の ?q= ?region=）が、箱に入った状態で出る。
- *  - 送ると、キーワード（q）とエリア（region）だけ替わる。業種・シーン・タグ・こだわり条件・見た目（?map= ?look=）・並べ替え・タブは保つ。ページ番号は 1 に戻す。
+ *  - 送ると、キーワード（q）とエリア（region）だけ替わる。業種・シーン・タグ・こだわり条件・見た目（?look=）・並べ替え・タブは保つ。ページ番号は 1 に戻す。
  *  - ?tab=q（以前の「キーワード」タブ）で来たときは、入力欄にフォーカスを当てて、エリアのタブを開く（タブの列に「キーワード」は無い）。
  *  - BlockSearchSticky: 帯の箱が画面から消えたら、ヘッダーの下に細い帯（入力欄 + ボタンだけ）で留まる。出入りの動きは「動きを減らす」で無し。
  * 'use client' の部品。大きなデータは持たない（地域の名前だけ lib/regions の REGIONS から）。
@@ -28,7 +28,10 @@ export function boxUrl(sp: URLSearchParams, q: string, region: string): string {
   if (p.get("tab") === "q") p.delete("tab");
   const qq = q.trim();
   if (qq) p.set("q", qq);
-  if (region) p.set("region", region);
+  if (region) {
+    p.set("region", region);
+    p.delete("area"); // 地域を選んだら、地方（?area=）は外す（地域が優先なので、載せても効かない）
+  }
   const s = p.toString();
   return `/search${s ? `?${s}` : ""}`;
 }
