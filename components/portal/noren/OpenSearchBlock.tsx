@@ -1,6 +1,5 @@
 import Link from "next/link";
 import BlockFonts from "./BlockFonts";
-import BlockTopMap from "./BlockTopMap";
 import { ArrowIcon, PinIcon, SearchIcon } from "./BlockSearchParts";
 import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import type { BlockTile } from "@/lib/portal/noren/blockTop";
@@ -43,7 +42,7 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
  * 上から: 見出し → 検索の箱の形のリンク（押すと「さがす」のページへ。ここでは入力しない）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地方ごとのピン・地方名・件数。押すと「さがす」のその地方へ。それ以外の所とボタンは「さがす」のページへ）。利用シーンの札は置かない。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
-export default function OpenSearchBlock({ data, tiles, bandAreas, view }: { data: OpenSearchData; tiles: BlockTile[]; bandAreas: JpArea[]; view: OpenView }) {
+export default function OpenSearchBlock({ data, tiles, view }: { data: OpenSearchData; tiles: BlockTile[]; bandAreas?: JpArea[]; view: OpenView }) {
   const dark = view.tone === "dark";
   return (
     <section className={`vBkt ${dark ? "vBkt--dark" : "vBkt--block"} vBkt--band-${view.band}`} id="open-search" aria-labelledby="vBkt-h">
@@ -110,23 +109,7 @@ export default function OpenSearchBlock({ data, tiles, bandAreas, view }: { data
         </div>
       </div>
 
-      <BlockTopMap areas={bandAreas} mode={view.band}>
-        <div className="vBkt-fade" aria-hidden="true" />
-        <div className="vBkt-bt" id="open-area">
-          <div className="vBkt-bt-in vN-rv">
-            <p className="vBkt-or">地図で見つける</p>
-            <h2 className="vBkt-bh">今気になる、あの店。</h2>
-            <p className="vBkt-bp">
-              マップから探して、
-              <br />
-              街を歩いて、おいしい出会いを。
-            </p>
-            <Link href="/search" className="vBkt-btn">
-              エリアから探す <ArrowIcon />
-            </Link>
-          </div>
-        </div>
-      </BlockTopMap>
+      {/* 「地図で見つける」の帯（日本の地図と地方のピン）は置かない（2026-10-13 オーナー指示「最初のページのこの部分いらない」）。地方から選ぶ地図は「さがす」のページ（/search）にある */}
 
       {/* 利用シーンの札は置かない（2026-10-12 オーナー指示「利用シーンから探すを除外して」）。この節は「さがす」のページへ送る入口（箱・地図のピン・ボタンのどれも /search へ） */}
       {!dark && <PaperEdge pos="bottom" />}
