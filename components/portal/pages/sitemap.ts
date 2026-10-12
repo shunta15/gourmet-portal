@@ -12,6 +12,7 @@ import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { getGeneratedFeatures } from "@/lib/places/features";
+import { VERTICAL_DESIGN } from "@/lib/portal/verticalDesign";
 import { loadVertical, pick, type PortalVertical } from "./data";
 
 export function verticalSitemap(key: PortalVertical) {
@@ -24,10 +25,20 @@ export function verticalSitemap(key: PortalVertical) {
     };
 
     add(v.path, all.length);
-    for (const p of PREFECTURES) add(`${v.path}/area/${p.slug}`, pick(all, { pref: p.slug }).length);
-    for (const c of v.categories) {
-      add(`${v.path}/${c.slug}`, pick(all, { category: c.slug }).length);
-      for (const p of PREFECTURES) add(`${v.path}/${c.slug}/${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
+    if ((key === "beauty" || key === "bodycare") && VERTICAL_DESIGN[key] === "colorplay") {
+      // COLOR PLAY: 種類・エリアのページは「さがす」へ転送するので載せない。転送先（種類・エリアだけの絞り込み）を載せる（件数は同じ gate）
+      add(`${v.path}/search`, all.length);
+      for (const p of PREFECTURES) add(`${v.path}/search?pref=${p.slug}`, pick(all, { pref: p.slug }).length);
+      for (const c of v.categories) {
+        add(`${v.path}/search?kind=${c.slug}`, pick(all, { category: c.slug }).length);
+        for (const p of PREFECTURES) add(`${v.path}/search?kind=${c.slug}&pref=${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
+      }
+    } else {
+      for (const p of PREFECTURES) add(`${v.path}/area/${p.slug}`, pick(all, { pref: p.slug }).length);
+      for (const c of v.categories) {
+        add(`${v.path}/${c.slug}`, pick(all, { category: c.slug }).length);
+        for (const p of PREFECTURES) add(`${v.path}/${c.slug}/${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
+      }
     }
     for (const s of v.scenes) add(`${v.path}/scene/${s.slug}`, pick(all, { scene: s }).length);
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
