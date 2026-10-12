@@ -1,4 +1,8 @@
 import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
+const GuidelinesView = dynamic(() => import("@/components/portal/periphery/GuidelinesView"));
 
 export const metadata = {
   title: "掲載基準 | マチノワ",
@@ -52,6 +56,8 @@ const SECTIONS: { title: string; body: string[] }[] = [
 ];
 
 export default function GuidelinesPage() {
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ
+  if (RELEASE_PERIPHERY) return <GuidelinesView sections={SECTIONS} />;
   return (
     <>
       <section className="feat-hero" style={{ minHeight: 320 }}>

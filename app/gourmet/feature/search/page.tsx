@@ -8,6 +8,12 @@ import { ListHero, TOP_CRUMB } from "@/components/portal/noren/FeatureList";
 import { toCardItem } from "@/lib/portal/noren/featureList";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_FEATURE_INDEX_REWRITE } from "@/lib/portal/noren/rewrites";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+import { GOURMET_TOP } from "@/lib/portal/noren/nav";
+import { toFeatureItem } from "@/components/portal/periphery/featureItems";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない）
+const FeatureSearchView = dynamic(() => import("@/components/portal/periphery/FeatureSearchView"));
 
 // 特集を探す（/feature/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/search が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /feature/search のまま）。枠は app/gourmet/layout.tsx。metadata・検索の引数・結果は、今の app/feature/search/page.tsx・components/FeatureSearchClient.tsx と同じ。
@@ -23,6 +29,8 @@ export const metadata: Metadata = {
 export default function Page() {
   assertPortalLive();
   if (!NOREN_FEATURE_INDEX_REWRITE) notFound();
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。特集の一覧 /feature と同じ世界）。検索の動き・結果・並び・リンク先・件数は同じ
+  if (RELEASE_PERIPHERY) return <FeatureSearchView features={FEATURES.map(toFeatureItem)} topHref={GOURMET_TOP} />;
   // 必要な項目だけに絞って渡す（写真は暖簾の特集ページと同じ判定を通したもの）
   const features: SearchFeature[] = FEATURES.map((f) => ({ ...toCardItem(f), regions: getFeatureRegions(f.id) }));
   return (

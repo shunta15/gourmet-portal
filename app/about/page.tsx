@@ -1,6 +1,9 @@
 import Footer from "@/components/Footer";
 import { REGIONS } from "@/lib/regions";
-import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_PERIPHERY, RELEASE_REST } from "@/lib/portal/noren/release";
+import dynamic from "next/dynamic";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
+const AboutView = dynamic(() => import("@/components/portal/periphery/AboutView"));
 
 export const metadata = {
   title: "編集部について | マチノワ",
@@ -9,6 +12,8 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ
+  if (RELEASE_PERIPHERY) return <AboutView regionCount={RELEASE_REST ? Object.keys(REGIONS).length : 16} />;
   return (
     <>
       <section className="feat-hero" style={{ minHeight: 360 }}>

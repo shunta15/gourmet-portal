@@ -8,6 +8,12 @@ import { toCardItem } from "@/lib/portal/noren/featureList";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { NOREN_FEATURE_INDEX_REWRITE } from "@/lib/portal/noren/rewrites";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+import { GOURMET_TOP } from "@/lib/portal/noren/nav";
+import { toFeatureItem } from "@/components/portal/periphery/featureItems";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない）
+const FeatureRegionView = dynamic(() => import("@/components/portal/periphery/FeatureRegionView"));
 
 // 地域別の特集記事（/feature/region/<key>）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature/region/<key> が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical・og:url は /feature/region/<key> のまま）。枠は app/gourmet/layout.tsx。
@@ -63,10 +69,23 @@ export default async function Page({
   const region = REGIONS[key as RegionKey];
   const features = getFeaturesByRegion(key as RegionKey);
   if (features.length === 0) notFound();
+  const others = KEYS.filter((k) => k !== key && getFeaturesByRegion(k).length > 0);
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。特集の一覧 /feature と同じ世界）。並び・件数・リンク先は同じ
+  if (RELEASE_PERIPHERY) {
+    return (
+      <FeatureRegionView
+        name={region.name}
+        nameEn={region.nameEn}
+        subtitle={region.subtitle}
+        items={features.map(toFeatureItem)}
+        others={others.map((k) => ({ key: k, name: REGIONS[k].name }))}
+        topHref={GOURMET_TOP}
+      />
+    );
+  }
   const items = features.map(toCardItem);
   // 見出しの背景の写真: 今のページと同じ地域の写真（heroImages[0]）。使えない写真（仮の画像・表示禁止）のときは敷かない
   const photo = isUsableFeatureImage(region.heroImages[0]) ? region.heroImages[0] : undefined;
-  const others = KEYS.filter((k) => k !== key && getFeaturesByRegion(k).length > 0);
 
   return (
     <>
