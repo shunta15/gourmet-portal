@@ -19,13 +19,15 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: `${a.title} — マチノワ（試作）`, description: a.lede, robots: { index: false, follow: false } };
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+export default async function Page({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ film?: string }> }) {
   const { id } = await params;
+  // 見本だけ: ?film=1 で「横に流れる帯」あり（既定は帯なし。本番のページは URL を読まない）
+  const film = (await searchParams).film === "1" ? true : undefined;
   const A = await getFeatureArticleById(id);
   if (!A || !isSingleShopFeature(A)) notFound();
   const sid = ARTICLE_STORE_ID_BY_FEATURE[A.id];
   const store = sid ? await getRestaurantById(sid) : null;
-  const data = buildPhotoFeature(A, store);
+  const data = buildPhotoFeature(A, store, { film });
   return (
     <PhotoFeaturePage
       data={data}

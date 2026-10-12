@@ -7,6 +7,9 @@ import Gate from "./Gate";
 import DoorLink from "./DoorLink";
 import { Brush, Seal, Tate } from "./parts";
 import type { PfRelated } from "@/lib/portal/photoFeature/related";
+import type { PfShopInfo } from "@/lib/portal/photoFeature/shopInfo";
+import JumpLink from "./JumpLink";
+import { ShopActions, ShopFeatures, ShopMap, ShopMore, ShopVideoBlock, type PfShopFeature } from "./ShopInfoParts";
 
 // 写真が主役の特集記事（試作）の中身（サーバーコンポーネント）。見た目は photofeature.css。
 // 画面の 6〜7 割が写真になる組み: 写真を大きく、互い違い（左右）に、すき間を詰めて接する・少し重ねて並べる。文は短い（最初の数文だけ。残りは「続きを読む」）。
@@ -401,13 +404,101 @@ export type PhotoFeaturePageProps = {
   proto?: boolean;
   /** 「ほかの特集記事」（最大 3 本）。空なら出さない */
   related?: PfRelated[];
+  /** 1 店 1 ページ（/restaurant/<店の ID>）: 店ページと同じ店舗情報（行動ボタン・地図・動画・同じ地域の他の店）。無ければ今までの「店の案内」だけ */
+  shopInfo?: PfShopInfo | null;
+  /** 1 店 1 ページ: 店ページへのリンクを出さず、代わりに「店舗情報のみ見る」（ページの上端・右下）を出す。締め → 店舗情報の順にする */
+  onePage?: boolean;
+  /** 店舗情報のあとの「関連記事」（この店が出てくるほかの記事。店ページと同じ選び方） */
+  shopFeatures?: PfShopFeature[];
 };
 
-export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref, searchHref, proto = false, related = [] }: PhotoFeaturePageProps) {
+export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref, searchHref, proto = false, related = [], shopInfo = null, onePage = false, shopFeatures = [] }: PhotoFeaturePageProps) {
   const T = D.title;
   const hero = D.hero;
   const shopLine = D.shop ? [D.shop.cuisine, D.shop.area].filter(Boolean).join("　") : "";
   const cover: Fx = { "--per": T.per, "--cols": T.cols.length, "--nh": hero && hero.nh ? Math.round(hero.nh * 1.3) : 9999 };
+  // 店舗情報（店の案内）。shopInfo があるとき（1 店 1 ページ）は、店ページと同じ行動ボタン・タグ・候補に入れるを足し、続きの地図・動画・同じ地域の他の店・関連記事は後ろに並べる
+  const infoSection = (
+    <section className="pf-info" id="shop-info" aria-labelledby="pf-info-h">
+      <div className="pf-info__in pf-rv">
+        <h2 id="pf-info-h" className="pf-info__t">{shopInfo ? "店舗情報" : "店の案内"}</h2>
+        {D.info.length > 0 && (
+          <dl className="pf-dl">
+            {D.info.map(([k, v]) => (
+              <div key={k}>
+                <dt>{k}</dt>
+                <dd>
+                  {k === "電話" && shopInfo ? (
+                    <a className="pf-tel" href={`tel:${v.replace(/[^\d+]/g, "")}`}>{v}</a>
+                  ) : (
+                    <InfoVal k={k} v={v} />
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
+        {shopInfo?.note && <p className="pf-note">{shopInfo.note}</p>}
+        {shopInfo && <ShopActions info={shopInfo} />}
+        <p className="pf-acts">
+          {shopHref && (
+            <Link href={shopHref} className="pf-btn pf-mag">
+              店ページを見る →
+            </Link>
+          )}
+          {!shopInfo && D.mapsUrl && (
+            <a href={D.mapsUrl} target="_blank" rel="noopener noreferrer" className="pf-btn pf-btn--ghost">
+              Google マップで開く ↗<span className="pf-vh">（外部サイトが新しいタブで開きます）</span>
+            </a>
+          )}
+          <Link href={listHref} className="pf-btn pf-btn--ghost">
+            特集の一覧へ →
+          </Link>
+          {searchHref && (
+            <Link href={searchHref} className="pf-btn pf-btn--ghost">
+              さがす →
+            </Link>
+          )}
+        </p>
+      </div>
+    </section>
+  );
+  // 締め。1 店 1 ページでは、記事の終わり（締め）→ 店舗情報の順。特集の一覧・さがすへのリンクは店舗情報の側にあるので、ここには置かない
+  const endSection =
+    D.quote.length > 0 || D.closing.head ? (
+      <section className="pf-end" aria-label="締めの文">
+        <div className="pf-end__in pf-rv">
+          {D.quote.length > 0 && (
+            <blockquote className="pf-quote">
+              {D.quote.map((x, i) => (
+                <p key={i}>{x}</p>
+              ))}
+            </blockquote>
+          )}
+          {D.closing.head && <Text t={D.closing} className="pf-closing" />}
+          {/* 締めの文の下に、筆の跡が引かれ、朱の印が押される */}
+          <div className="pf-end__sig" aria-hidden="true">
+            <Brush kind="dash" className="pf-end__brush" delay={0.1} reveal />
+            <Seal className="pf-end__seal" delay={0.95} reveal />
+          </div>
+          {!onePage && (
+            <p className="pf-acts pf-acts--end">
+              <Link href={listHref} className="pf-btn pf-btn--ghost">
+                特集の一覧へ →
+              </Link>
+              {searchHref && (
+                <Link href={searchHref} className="pf-btn pf-btn--ghost">
+                  さがす →
+                </Link>
+              )}
+            </p>
+          )}
+          {/* 最後は、暖簾をくぐって店に入る（押すと布が上がる） */}
+          {shopHref && D.shop && <DoorLink href={shopHref} name={D.shop.name} />}
+        </div>
+      </section>
+    ) : null;
+
   return (
     <>
       {/* 暖簾の入口（WebGL の布。使える端末だけ）: 最初の画面に藍の暖簾が掛かり、スクロール（またはタップ）で上がって、奥から主役の写真と題が現れる。
@@ -485,77 +576,27 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         {renderBlocks(D.blocks)}
       </div>
 
-      {/* 店の案内 */}
-      <section className="pf-info" aria-labelledby="pf-info-h">
-        <div className="pf-info__in pf-rv">
-          <h2 id="pf-info-h" className="pf-info__t">店の案内</h2>
-          {D.info.length > 0 && (
-            <dl className="pf-dl">
-              {D.info.map(([k, v]) => (
-                <div key={k}>
-                  <dt>{k}</dt>
-                  <dd><InfoVal k={k} v={v} /></dd>
-                </div>
-              ))}
-            </dl>
+      {onePage ? (
+        <>
+          {endSection}
+          {infoSection}
+          {shopInfo && (
+            <>
+              <ShopMap info={shopInfo} />
+              <ShopVideoBlock info={shopInfo} />
+              <ShopMore info={shopInfo} />
+              <ShopFeatures items={shopFeatures} />
+            </>
           )}
-          <p className="pf-acts">
-            {shopHref && (
-              <Link href={shopHref} className="pf-btn pf-mag">
-                店ページを見る →
-              </Link>
-            )}
-            {D.mapsUrl && (
-              <a href={D.mapsUrl} target="_blank" rel="noopener noreferrer" className="pf-btn pf-btn--ghost">
-                Google マップで開く ↗<span className="pf-vh">（外部サイトが新しいタブで開きます）</span>
-              </a>
-            )}
-            <Link href={listHref} className="pf-btn pf-btn--ghost">
-              特集の一覧へ →
-            </Link>
-            {searchHref && (
-              <Link href={searchHref} className="pf-btn pf-btn--ghost">
-                さがす →
-              </Link>
-            )}
-          </p>
-        </div>
-      </section>
-
-      {/* 締め */}
-      {(D.quote.length > 0 || D.closing.head) && (
-        <section className="pf-end" aria-label="締めの文">
-          <div className="pf-end__in pf-rv">
-            {D.quote.length > 0 && (
-              <blockquote className="pf-quote">
-                {D.quote.map((x, i) => (
-                  <p key={i}>{x}</p>
-                ))}
-              </blockquote>
-            )}
-            {D.closing.head && <Text t={D.closing} className="pf-closing" />}
-            {/* 締めの文の下に、筆の跡が引かれ、朱の印が押される */}
-            <div className="pf-end__sig" aria-hidden="true">
-              <Brush kind="dash" className="pf-end__brush" delay={0.1} reveal />
-              <Seal className="pf-end__seal" delay={0.95} reveal />
-            </div>
-            <p className="pf-acts pf-acts--end">
-              <Link href={listHref} className="pf-btn pf-btn--ghost">
-                特集の一覧へ →
-              </Link>
-              {searchHref && (
-                <Link href={searchHref} className="pf-btn pf-btn--ghost">
-                  さがす →
-                </Link>
-              )}
-            </p>
-            {/* 最後は、暖簾をくぐって店に入る（押すと布が上がる） */}
-            {shopHref && D.shop && <DoorLink href={shopHref} name={D.shop.name} />}
-          </div>
-        </section>
+        </>
+      ) : (
+        <>
+          {infoSection}
+          {endSection}
+        </>
       )}
 
-      {/* ほかの特集記事（写真が主役の形で出す 20 本の中から、最大 3 本。同じ地域 → 同じ業種 → 並びの順） */}
+      {/* ほかの特集記事（特集の一覧の「特集記事」の棚（FEATURED_SINGLE_IDS。どれも写真が主役の形の 1 店 1 ページ）の中から、最大 3 本。同じ地域 → 同じ業種 → 並びの順） */}
       {related.length > 0 && (
         <section className="pf-rel" aria-labelledby="pf-rel-h">
           <div className="pf-rel__in pf-rv">
@@ -587,8 +628,15 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         <p className="pf-ft__s">{proto ? "© 2026 マチノワ / 街の輪（試作 — 非公開のページです）" : "© 2026 マチノワ / 街の輪"}</p>
       </footer>
 
+      {/* 「店舗情報のみ見る」: 開いた最初の画面（暖簾が掛かっている間）から、ページの上端に出ている。押すと暖簾を待たずに記事の終わりの店舗情報へ。JS なしでもアンカーで着く */}
+      {onePage && (
+        <JumpLink href="#shop-info" className="pf-jump">
+          店舗情報のみ見る
+        </JumpLink>
+      )}
+
       {/* ページの上端の竿と、読み進みに合わせて横へ進む小さな布（JS が動いたときだけ） */}
-      <div className="pf-rod">
+      <div className={onePage ? "pf-rod pf-rod--one" : "pf-rod"}>
         <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
           <Link href={topHref}>グルメ</Link>
           <Link href={listHref}>特集</Link>
@@ -603,10 +651,16 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       <div className="pf-hud" aria-hidden="true">
         <span className="pf-hud__line"><i /></span>
       </div>
-      {shopHref && (
-        <Link href={shopHref} className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
-          店ページを見る →
-        </Link>
+      {onePage ? (
+        <JumpLink href="#shop-info" className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
+          店舗情報のみ見る ↓
+        </JumpLink>
+      ) : (
+        shopHref && (
+          <Link href={shopHref} className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
+            店ページを見る →
+          </Link>
+        )
       )}
 
       {/* 動き・大きく見る幕（記事のページごとに付く。入口のページには付かない） */}

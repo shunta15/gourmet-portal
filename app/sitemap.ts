@@ -1,3 +1,4 @@
+import { onePageShopOf } from "@/lib/portal/noren/onePage";
 import type { MetadataRoute } from "next";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { REGIONS, type RegionKey } from "@/lib/data";
@@ -85,7 +86,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Feature ID は URL パスセグメントなので percent-encode が必要
   const featureData = await getAllFeatureArticleIdsWithUpdatedAt();
   const features: MetadataRoute.Sitemap = featureData
-    .filter((f) => isFeatureIndexable(f.id))
+    // 1 店 1 ページにした記事（lib/portal/noren/onePage.ts の表）は /feature/<ID> が /restaurant/<店の ID> への転送なので載せない（店の URL の側に 1 つだけ載る）
+    .filter((f) => isFeatureIndexable(f.id) && !onePageShopOf(f.id))
     .map((f) => {
       const entry: Record<string, unknown> = {
         url: `${BASE}/feature/${encodeURIComponent(f.id)}`,

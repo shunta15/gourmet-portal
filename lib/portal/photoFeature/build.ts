@@ -340,7 +340,15 @@ function nrWordFor(articleId: string, i: number, no: string, name: string): stri
   return w && name.includes(w) ? Array.from(w) : nrChars(no, name);
 }
 
-export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): PfData {
+/**
+ * 「横に流れる帯」（pf-film。写真が 1 枚ずつの視点 3 つが、スクロールで横へ流れる）を作るか。2026-10-12 オーナー指示「おびなしで一旦確定、横に流れるものは残しておいて」で、既定は作らない（どの記事も紅梅庵の形）。
+ * 帯のコード（ここの作り方・PhotoFeaturePage の FilmBlock・Motion・photofeature.css）は消さずに残してある。true にすると、写真が 1 枚ずつの視点が 3 つ以上続く記事に帯が戻る。
+ * 見本のページ（/proto-gourmet/photo-feature/<ID>?film=1）だけは、URL で帯ありを見られる（サーバー側で読んで opts で渡す。本番のページは URL を読まない）。
+ */
+export const PF_FILM = false;
+
+export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, opts: { film?: boolean } = {}): PfData {
+  const withFilm = opts.film ?? PF_FILM;
   const shopName = store?.name ?? "";
   const c = collectPhotos(A, store);
   const alt = (what: string) => (shopName ? `${shopName}（${what}）` : what);
@@ -437,7 +445,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
       }
       i = Math.max(j, i + 1);
     }
-    if (bestL >= 3) {
+    if (withFilm && bestL >= 3) {
       const st = bestS + (bestL >= 4 ? 1 : 0);
       const vs = (blocks.slice(st, st + 3) as { view: PfView }[]).map((b) => b.view);
       blocks.splice(st, 3, { kind: "film", views: vs, photos: vs.map((v) => v.photos[0]) });

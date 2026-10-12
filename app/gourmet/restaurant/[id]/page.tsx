@@ -1,9 +1,20 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import GourmetNorenShop from "@/components/portal/pages/gourmet-noren-shop";
+import PhotoFeatureShell from "@/components/portal/photoFeature/PhotoFeatureShell";
+import PhotoFeaturePage from "@/components/portal/photoFeature/PhotoFeaturePage";
 import { REGIONS } from "@/lib/regions";
 import { getRestaurantById, getAllRestaurantIds } from "@/lib/db/restaurants";
-import { buildRestaurantJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
+import { buildRestaurantJsonLd, buildBreadcrumbJsonLd, buildArticleJsonLd } from "@/lib/jsonld";
+import { getFeatureArticleById } from "@/lib/db/features";
+import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
+import { onePageFeatureOf } from "@/lib/portal/noren/onePage";
+import { NOREN_FEATURE_PHOTO, isDummyFeatureImage, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
+import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
+import { getShopInfo } from "@/lib/portal/photoFeature/shopInfo";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
@@ -74,6 +85,50 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     { name: region?.name || r.region, url: `${BASE}/region/${r.region}` },
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
+
+  // 1 店 1 ページ（見本。lib/portal/noren/onePage.ts）: 対象（lib/portal/noren/onePage.ts の表）の特集記事の店は、/restaurant/<店の ID> で「写真が主役の特集記事 + 記事の終わりの店舗情報」を 1 ページで出す。
+  // 店と記事の対応は ID の完全一致（onePageFeatureOf）。既存の対応表 ARTICLE_STORE_ID_BY_FEATURE と食い違うとき・記事が店 1 軒の記事でないときは、1 ページ化せず今までの店ページを出す。
+  const featureId = NOREN_FEATURE_PHOTO ? onePageFeatureOf(r.id) : null;
+  const article = featureId && ARTICLE_STORE_ID_BY_FEATURE[featureId] === r.id ? await getFeatureArticleById(featureId) : null;
+  if (featureId && article && isSingleShopFeature(article)) {
+    const page = `/restaurant/${r.id}`;
+    const data = buildPhotoFeature(article, r);
+    const shopInfo = await getShopInfo(r, LIVE_LINKS, page);
+    const related = await getRelatedFeatured(featureId, { region: r.region, cuisine: r.cuisine });
+    // 関連記事: 店ページと同じ選び方・同じ本数（featuresOfShop の既定 3 本 = この記事自身 + ほか最大 2 本）。この記事（=このページ）自身は除く
+    const shopFeatures = (await featuresOfShop(r.id, featureId))
+      .filter((f) => !f.paired)
+      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_REST && isDummyFeatureImage(f.image)) ? f.image : "" }));
+    const articleJsonLd = buildArticleJsonLd(article, page);
+    // 1 ページ版は点数・口コミ件数を画面に出さないので、構造化データにも評価（aggregateRating）を入れない（画面に無い評価を構造化データに載せない）。地域のパンくずは「さがす」へ
+    const { aggregateRating: _omit, ...restaurantLd } = restaurantJsonLd as Record<string, unknown>;
+    void _omit;
+    const onePageBreadcrumb = buildBreadcrumbJsonLd([
+      { name: "トップ", url: BASE },
+      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
+      { name: r.name, url: `${BASE}/restaurant/${r.id}` },
+    ]);
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(onePageBreadcrumb) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <PhotoFeatureShell>
+          <PhotoFeaturePage
+            data={data}
+            shopHref={null}
+            listHref="/feature"
+            topHref={LIVE_LINKS.top}
+            searchHref="/search"
+            related={related}
+            shopInfo={shopInfo}
+            onePage
+            shopFeatures={shopFeatures}
+          />
+        </PhotoFeatureShell>
+      </>
+    );
+  }
 
   return (
     <>

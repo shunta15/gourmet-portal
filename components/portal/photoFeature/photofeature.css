@@ -47,7 +47,7 @@ body:has(.pf-root) main { display: contents; }
 .pf-root a:focus-visible { outline: 3px solid var(--shu); outline-offset: 3px; }
 .pf-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 .pf-vh { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.pf-skip { position: absolute; left: 8px; top: -60px; z-index: 100; background: var(--ink); color: #fff !important; padding: 12px 16px; font-size: 14px; }
+.pf-skip { position: absolute; left: 8px; top: -140px; z-index: 100; background: var(--ink); color: #fff !important; padding: 12px 16px; font-size: 14px; }
 .pf-skip:focus { top: 8px; }
 
 /* ───────── 縦書き ───────── */
@@ -58,7 +58,7 @@ body:has(.pf-root) main { display: contents; }
 .pf-em { color: var(--indigo); }
 
 /* ───────── ヘッダー・フッター ───────── */
-.pf-hd-bar { width: var(--box); margin: 0 auto; height: 52px; margin-top: 22px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.pf-hd-bar { width: var(--box); margin: 0 auto; height: 52px; margin-top: var(--rodh, 22px); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
 .pf-logo { font-weight: 800; font-size: 24px; letter-spacing: 0.04em; line-height: 1; min-height: 44px; display: inline-flex; align-items: center; }
 .pf-logo small { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; margin-left: 8px; color: var(--ink2); }
 .pf-hd-bar nav { display: flex; gap: clamp(12px, 2vw, 28px); }
@@ -544,9 +544,9 @@ body:has(.pf-root) main { display: contents; }
 }
 
 /* 11. ページの上端の細い帯: 竿 + 読み進みに合わせて横へ進む小さな藍の布 + いまの視点の番号（右はし）。帯の中だけに収め、本文・見出し・写真の上には掛からない（帯の下に本文が潜る） */
-.pf-rod { display: block; position: fixed; left: 0; right: 0; top: 0; height: 22px; z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
-.pf-rod__nav { position: absolute; left: 6px; top: 0; height: 17px; display: flex; gap: 0; pointer-events: auto; }
-.pf-rod__nav a { display: inline-flex; align-items: center; height: 17px; padding: 0 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; line-height: 1; color: var(--ink); border-bottom: 1px solid transparent; }
+.pf-rod { display: block; position: fixed; left: 0; right: 0; top: 0; height: var(--rodh, 22px); z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
+.pf-rod__nav { position: absolute; left: 6px; top: 0; height: calc(var(--rodh, 22px) - 5px); display: flex; gap: 0; pointer-events: auto; }
+.pf-rod__nav a { display: inline-flex; align-items: center; height: calc(var(--rodh, 22px) - 5px); padding: 0 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; line-height: 1; color: var(--ink); border-bottom: 1px solid transparent; }
 .pf-rod__nav a { position: relative; }
 .pf-rod__nav a::after { content: ""; position: absolute; left: 0; right: 0; top: -2px; bottom: -11px; }
 .pf-rod__nav a:hover { border-color: var(--shu); }
@@ -629,3 +629,125 @@ body:has(.pf-root) main { display: contents; }
   .pf-rod__tr, .pf-hud__no { display: none !important; }
   .pf-s { top: 0 !important; opacity: 1 !important; transition: none !important; }
 }
+
+/* ───────── 1 店 1 ページ（/restaurant/<店の ID>）: 店舗情報・「店舗情報のみ見る」 ───────── */
+.pf-root { --rodh: 22px; }
+#shop-info, #map { scroll-margin-top: 36px; }
+/* 「店舗情報のみ見る」: ページの上端（竿の帯の右）。入口の暖簾（z-index 80）が掛かっている間も見えて押せる */
+.pf-jump { position: fixed; top: 0; right: 52px; z-index: 90; height: 17px; display: inline-flex; align-items: center; padding: 0 10px; background: var(--shu); color: #fff !important; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; line-height: 1; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.28); }
+.pf-jump::after { content: ""; position: absolute; left: -4px; right: -4px; top: 0; bottom: -12px; }
+.pf-jump:hover { background: var(--ink); }
+.pf-rod--one .pf-rod__tr { right: 196px; }
+.pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 196px - 26px)), 0, 0); }
+.pf-sec__t { font-weight: 800; font-size: clamp(22px, 2.4vw, 32px); letter-spacing: 0.1em; line-height: 1.3; }
+
+/* 基本情報の下: タグ・行動ボタン・候補に入れる（店ページの ShopActionsNoren などの部品を、特集記事の世界の見た目で） */
+.pf-info__in .pf-sa { grid-column: 5 / 13; display: grid; gap: 26px; }
+.pf-tel { display: inline-flex; align-items: center; min-height: 44px; font-size: 20px; letter-spacing: 0.1em; border-bottom: 1px solid var(--shu); }
+.pf-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.pf-tags a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--line); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; transition: border-color 0.3s, color 0.3s; }
+.pf-tags a:hover { border-color: var(--shu); color: var(--shu); }
+.pf-sa .vS-acts { display: grid; gap: 22px; }
+.pf-sa .vS-acts ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.pf-sa .vS-act { position: relative; display: flex; align-items: center; gap: 12px; width: 100%; min-height: 56px; padding: 0 16px 0 8px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); font-weight: 800; font-size: 15px; letter-spacing: 0.12em; overflow: hidden; isolation: isolate; transition: color 0.3s; }
+.pf-sa .vS-act::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--ink); transform: translateY(101%); transition: transform 0.45s var(--ease); }
+.pf-sa .vS-act:hover, .pf-sa .vS-act:focus-visible { color: #fff; }
+.pf-sa .vS-act:hover::before, .pf-sa .vS-act:focus-visible::before { transform: none; }
+.pf-sa .vS-act .dsc { display: grid; place-items: center; flex: none; width: 40px; height: 40px; background: rgba(25, 24, 21, 0.07); transition: background 0.3s; }
+.pf-sa .vS-act:hover .dsc { background: rgba(255, 255, 255, 0.16); }
+.pf-sa .vS-act .go { margin-left: auto; display: grid; place-items: center; }
+.pf-sa .vS-act .go svg { width: 18px; height: 18px; }
+.pf-sa .vS-act.is-hero { background: var(--shu); border-color: var(--shu); color: #fff; }
+.pf-sa .vS-act.is-hero .dsc { background: rgba(255, 255, 255, 0.2); }
+.pf-sa .vS-sub { display: grid; border-top: 1px solid var(--line); }
+.pf-sa .vS-sub a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 48px; padding: 6px 2px; border-bottom: 1px solid var(--line); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; line-height: 1.5; transition: color 0.3s, padding 0.4s; }
+.pf-sa .vS-sub a svg { width: 18px; height: 18px; flex: none; color: var(--shu); }
+.pf-sa .vS-sub a:hover { color: var(--shu); padding-left: 8px; }
+.pf-sa .vN-vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.pf-sa .vS-share { display: grid; gap: 10px; }
+.pf-sa .vS-share p.cap { font-size: 13px; font-weight: 800; letter-spacing: 0.3em; color: var(--ink2); }
+.pf-sa .vS-share ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.pf-sa .vS-sh { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 6px; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: 14px; font-weight: 700; letter-spacing: 0.08em; cursor: pointer; transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.pf-sa .vS-sh .dsc { display: grid; place-items: center; width: 32px; height: 32px; background: rgba(25, 24, 21, 0.07); }
+.pf-sa .vS-sh:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+.pf-sa .vS-sh.is-done { border-color: var(--shu); color: var(--shu); }
+.pf-sa .vS-share-msg { min-height: 1.6em; font-size: 13px; color: var(--ink2); line-height: 1.6; }
+.pf-sa .vS-share-url { width: 100%; min-height: 44px; padding: 0 12px; background: rgba(25, 24, 21, 0.04); border: 1px solid var(--line); color: var(--ink); font: inherit; font-size: 14px; }
+.pf-save .vS-save { display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 20px 0 8px; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-weight: 800; font-size: 15px; letter-spacing: 0.12em; cursor: pointer; transition: border-color 0.3s, background 0.3s; }
+.pf-save .vS-save .vN-seal { width: 36px; height: 36px; font-size: 20px; box-shadow: none; filter: saturate(0.55) brightness(0.9); transition: transform 0.5s var(--ease), filter 0.4s; }
+.pf-save .vS-save[aria-pressed="true"] { border-color: var(--shu); background: rgba(200, 52, 31, 0.08); }
+.pf-save .vS-save[aria-pressed="true"] .vN-seal { filter: none; transform: rotate(-8deg); }
+.pf-save .vS-save:hover { border-color: var(--ink); }
+
+/* 地図・ショート動画（和紙の面。地図は写真と同じ、紙の縁をつけた額） */
+.pf-map, .pf-vid { width: var(--box); margin: clamp(40px, 5vw, 72px) auto 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--cg); row-gap: 22px; align-items: start; }
+.pf-map__tx, .pf-vid__tx { grid-column: 1 / 5; display: grid; gap: 20px; align-content: start; }
+.pf-map__dl { display: grid; gap: 16px; }
+.pf-map__dl dt { font-size: 13px; font-weight: 800; letter-spacing: 0.2em; color: var(--ink2); margin-bottom: 4px; }
+.pf-map__dl dd { font-size: 15px; line-height: 1.8; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.pf-map .vS-btn-ink { justify-self: start; min-height: 48px; display: inline-flex; align-items: center; padding: 0 24px; background: var(--ink); color: #fff !important; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border: 1px solid var(--ink); transition: background 0.3s; }
+.pf-map .vS-btn-ink:hover { background: var(--shu); border-color: var(--shu); }
+.pf-map__fr { grid-column: 5 / 13; padding: 10px; background: #fff; box-shadow: 0 0 0 clamp(4px, 0.55vw, 8px) var(--paper), 0 16px 34px rgba(25, 24, 21, 0.16); }
+.pf-map__fr .mw-map { border-radius: 0; border-color: rgba(25, 24, 21, 0.2); background: #e4dac6; }
+.pf-map__fr .mw-map .leaflet-tile-pane { filter: sepia(0.42) saturate(0.75) contrast(0.96) brightness(0.99); }
+.pf-map__fr .leaflet-container { background: #e4dac6; font-family: inherit; }
+.pf-vid { --kinari: #efe6d6; --kinari-2: #d6c9b0; --line-2: rgba(239, 230, 214, 0.3); --f-min: inherit; --f-lat: inherit; --sumi-rgb: 15, 12, 10; }
+.pf-vid__b { grid-column: 5 / 13; }
+.pf-vid .vS-vcard { position: relative; display: block; width: min(100%, 240px); aspect-ratio: 9 / 16; background: linear-gradient(180deg, #201812, #120e0b); border: 1px solid var(--line-2); overflow: hidden; text-align: left; cursor: pointer; padding: 0; }
+.pf-vid .vS-vcard img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pf-vid .vS-vcard .ov { position: absolute; left: 0; right: 0; bottom: 0; display: grid; gap: 6px; padding: 18px 14px 14px; background: linear-gradient(0deg, rgba(10, 8, 6, 0.92), rgba(10, 8, 6, 0)); }
+.pf-vid .vS-vcard .ov b { font-size: 15px; line-height: 1.5; letter-spacing: 0.06em; color: var(--kinari); }
+.pf-vid .vS-vcard .ov span { font-size: 14px; line-height: 1.6; color: var(--kinari-2); }
+.pf-vid .vS-vcard .play { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; display: grid; place-items: center; background: rgba(15, 12, 10, 0.6); border: 1px solid var(--kinari); color: var(--kinari); }
+.pf-vid .vS-vcard .tag, .pf-vid .vS-vcard .dur { position: absolute; top: 10px; font-size: 13px; line-height: 1; background: rgba(15, 12, 10, 0.7); padding: 6px 9px; color: var(--kinari); }
+.pf-vid .vS-vcard .tag { left: 10px; }
+.pf-vid .vS-vcard .dur { right: 10px; }
+.vS-vm { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; background: rgba(10, 8, 6, 0.94); padding: 20px; }
+.vS-vm-fr { position: relative; width: min(92vw, 420px); display: grid; gap: 12px; }
+.vS-vm-fr video, .vS-vm-fr iframe { width: 100%; aspect-ratio: 9 / 16; border: 0; background: #000; }
+.vS-vm-fr .msg { aspect-ratio: 9 / 16; display: grid; place-items: center; background: #231b15; color: #d6c9b0; font-size: 16px; letter-spacing: 0.2em; }
+.vS-vm-x { position: absolute; right: -6px; top: -56px; min-width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid rgba(239, 230, 214, 0.3); border-radius: 50%; color: #efe6d6; font-size: 22px; cursor: pointer; background: transparent; }
+
+/* 同じ地域の他の店（暗い面。灰墨の地に、写真のカード） */
+.pf-night { position: relative; margin-top: clamp(40px, 5vw, 72px); padding: clamp(64px, 7vw, 100px) 0; color: #e7dccb; background: linear-gradient(to bottom, rgba(38, 34, 31, 0), #26221f clamp(48px, 6vw, 88px), #26221f calc(100% - clamp(48px, 6vw, 88px)), rgba(38, 34, 31, 0)); }
+.pf-night__in { width: var(--box); margin: 0 auto; }
+.pf-night__t { font-weight: 800; font-size: clamp(20px, 2.2vw, 30px); letter-spacing: 0.12em; line-height: 1.4; color: #f6eddc; padding-bottom: 12px; border-bottom: 1px solid rgba(231, 220, 203, 0.4); }
+.pf-root .pf-mc-l { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); margin-top: 26px; }
+.pf-mc { display: block; }
+.pf-mc__ph { display: block; position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #3a3430; box-shadow: 0 0 0 clamp(3px, 0.4vw, 6px) #26221f, 0 10px 22px rgba(0, 0, 0, 0.5); }
+.pf-mc__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
+.pf-mc:hover .pf-mc__img { transform: scale(1.04); }
+.pf-mc__b { display: block; margin-top: 16px; }
+.pf-mc__b b { display: block; font-size: 16px; font-weight: 800; letter-spacing: 0.04em; line-height: 1.6; color: #f6eddc; }
+.pf-mc__b small { display: block; margin-top: 4px; font-size: 13px; color: #cbbfa9; letter-spacing: 0.06em; line-height: 1.6; }
+
+@media (max-width: 760px) {
+  /* 「店舗情報のみ見る」を 44px 以上で押せるように、上端の竿の帯をスマホでは 44px にする（リンクも同じ高さ） */
+  .pf-root:has(.pf-jump) { --rodh: 44px; }
+  .pf-root:has(.pf-jump) .pf-rod__nav { height: var(--rodh); }
+  .pf-root:has(.pf-jump) .pf-rod__nav a { height: var(--rodh); padding-bottom: 5px; }
+  .pf-root:has(.pf-jump) .pf-rod__nav a::after { top: 0; bottom: 0; }
+  .pf-jump { top: 0; right: 46px; height: 44px; padding: 0 12px 5px; font-size: 12px; box-shadow: none; }
+  .pf-jump::after { left: 0; right: 0; top: 0; bottom: 0; }
+  .pf-root:has(.pf-jump) .pf-hud__no { top: 14px; }
+  .pf-rod--one .pf-rod__tr { display: none; }
+  .pf-info__in .pf-sa { margin-top: 22px; gap: 22px; }
+  .pf-sa .vS-acts ul { grid-template-columns: minmax(0, 1fr); }
+  .pf-map, .pf-vid { display: block; margin-top: 34px; }
+  .pf-map__tx, .pf-vid__tx { margin-bottom: 18px; }
+  .pf-map__fr { padding: 6px; }
+  .pf-map__fr .mw-map { height: 300px !important; }
+  .pf-vid__b { margin-top: 18px; }
+  .pf-root .pf-mc-l { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; }
+  .pf-mc__b b { font-size: 14px; }
+  .pf-night { padding: 56px 0; }
+}
+
+/* 店ページの部品（shop.css の丸い形）を、特集記事の世界の角のある形にそろえる */
+.pf-sa .vS-act, .pf-sa .vS-act .dsc, .pf-sa .vS-sh, .pf-sa .vS-sh .dsc, .pf-save .vS-save, .pf-map .vS-btn-ink { border-radius: 0; }
+.pf-info__in .pf-note { grid-column: 5 / 13; margin-top: -6px; font-size: 13px; line-height: 1.8; letter-spacing: 0.04em; color: var(--ink2); }
+@media (max-width: 760px) { .pf-info__in .pf-note { margin-top: 14px; } }
+
+/* 締めのあとの店舗情報は、間をつめる（空きが画面の 3 割を超えないように）。地図の中の部品（z-index が大きい）が上端の竿の帯に重ならないよう、地図の額は独立した重なりにする */
+.pf-end + .pf-info { margin-top: clamp(24px, 3vw, 44px); }
+.pf-map__fr { position: relative; z-index: 0; isolation: isolate; }

@@ -33,6 +33,8 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
     let running = false;
     let cloth: Awaited<ReturnType<typeof makeCloth>> = null;
     let open = 0;
+    // 「店舗情報のみ見る」が押された（pf-gate-skip）: 暖簾を待たずに上がった扱いにする。スクロールで入口より上へ戻ったら、また普通の暖簾に戻る
+    let skip = false;
     let t0 = performance.now();
     let lastNow = 0;
     let lastDraw = 0;
@@ -108,6 +110,11 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
       const y = window.scrollY;
       vel = vel * 0.9 + Math.min(1, Math.abs(y - lastY) / 60) * 0.1;
       lastY = y;
+      if (skip && y < vh * LIFT) skip = false;
+      if (skip) {
+        open = 1;
+        t0 = Math.min(t0, now - 5000);
+      }
       const p = clamp(y / (vh * LIFT), 0, 1);
       const target = ease(clamp((p - 0.02) / 0.92, 0, 1));
       const prev = open;
@@ -161,6 +168,17 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
     const onMove = (e: MouseEvent) => {
       mouseT = (e.clientX / window.innerWidth - 0.5) * 2;
     };
+    const onSkip = () => {
+      skip = true;
+      // 布ができているかどうかに関わらず、すぐに上がった扱い（壁・布を消して、描くのをやめる）
+      open = 1;
+      wl.style.clipPath = "none";
+      el.style.setProperty("--open", "1");
+      el.style.pointerEvents = "none";
+      el.classList.add("is-done");
+      page.classList.add("pf-gate-open");
+      stop();
+    };
     const onTap = () => {
       if (open < 0.4) window.scrollTo({ top: window.innerHeight * LIFT * 1.02, behavior: "smooth" });
     };
@@ -179,6 +197,12 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
       page.classList.add("pf-gate-on");
       layout();
       t0 = performance.now();
+      if (skip || window.scrollY >= window.innerHeight * LIFT) {
+        // 布ができる前に押されていた・すでに入口より下へスクロールしている（アンカーで来た・再読み込み）: 掛けずに、上がった扱いのまま
+        el.classList.add("is-done");
+        page.classList.add("pf-gate-open");
+        return;
+      }
       start();
     })();
 
@@ -186,7 +210,9 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
     window.addEventListener("resize", onResize, { passive: true });
     window.addEventListener("mousemove", onMove, { passive: true });
     el.addEventListener("click", onTap);
+    window.addEventListener("pf-gate-skip", onSkip);
     return () => {
+      window.removeEventListener("pf-gate-skip", onSkip);
       alive = false;
       stop();
       window.removeEventListener("scroll", onScroll);

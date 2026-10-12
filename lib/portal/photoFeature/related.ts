@@ -6,17 +6,17 @@ import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { FEATURED_SINGLE_IDS, isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 
-/** 記事の終わりの「ほかの特集記事」の 1 件（写真が主役の形で出す 20 本の中から） */
+/** 記事の終わりの「ほかの特集記事」の 1 件（特集の一覧の「特集記事」の棚（FEATURED_SINGLE_IDS。どれも写真が主役の形の 1 店 1 ページ）の中から） */
 export type PfRelated = { id: string; href: string; title: string; shop: string; area: string; img: string };
 
 const NFC = (s: string) => s.normalize("NFC");
 
 /**
- * 「ほかの特集記事」: 写真が主役の形で出す 20 本（FEATURED_SINGLE_IDS）のうち、この記事以外から最大 3 本。
+ * 「ほかの特集記事」: 特集の一覧の「特集記事」の棚（FEATURED_SINGLE_IDS。どれも写真が主役の形の 1 店 1 ページ）のうち、この記事以外から最大 3 本。
  * 選び方（点数・人気・おすすめは使わない。決まった並びだけ）:
- *   1. 対の店ページの地域（region）が同じ記事（20 本の並びの順）
- *   2. 足りなければ、対の店ページの業種（cuisine）が同じ記事（20 本の並びの順）
- *   3. それでも足りなければ、20 本の並びで、この記事の次から一巡（この記事の前で止まる）
+ *   1. 対の店ページの地域（region）が同じ記事（棚の並びの順）
+ *   2. 足りなければ、対の店ページの業種（cuisine）が同じ記事（棚の並びの順）
+ *   3. それでも足りなければ、棚の並びで、この記事の次から一巡（この記事の前で止まる）
  * 札の写真・店名・地域は、特集の一覧の「特集記事」の棚（getFeaturedSingleCards）と同じ取り方（記事の主役の写真・対の店ページの店名と地域）。
  */
 export async function getRelatedFeatured(selfId: string, self: { region?: string; cuisine?: string } | null, max = 3): Promise<PfRelated[]> {
