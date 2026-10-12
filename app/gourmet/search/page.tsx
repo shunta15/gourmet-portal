@@ -18,6 +18,7 @@ import { BlockSearchBox, BlockSearchBoxStatic, BlockSearchSticky } from "@/compo
 import { heroImagesOf } from "@/lib/portal/noren/shop";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import { sized } from "@/lib/imageUrl";
+import { getSceneRoundups } from "@/lib/portal/noren/sceneRoundups";
 
 // 店をさがす（/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/search が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /search のまま。この内部のパス /gourmet/search は外に出さない）。枠は app/gourmet/layout.tsx。
@@ -91,6 +92,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
           sceneDefs={SCENES.map((x) => ({ slug: x.slug, name: x.name, matchTags: x.matchTags }))}
           look={look}
           allowLookUrl={allowUrl}
+          sceneRoundups={getSceneRoundups()}
         />
       </Suspense>
   );

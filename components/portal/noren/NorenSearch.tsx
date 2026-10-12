@@ -9,6 +9,8 @@ import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import { OPEN_NOW_ON } from "@/lib/portal/noren/release";
 import { AREA_TO_SEARCH } from "@/lib/portal/noren/areaLinks";
+import { orderSceneRoundups, type SceneRoundupCard } from "@/lib/portal/noren/sceneRoundupOrder";
+import SceneRoundups from "./SceneRoundups";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
@@ -155,6 +157,7 @@ export default function NorenSearch({
   allowMapUrl = false,
   look = "noren",
   allowLookUrl = false,
+  sceneRoundups,
 }: {
   restaurants: SItem[];
   facets?: FacetPayload;
@@ -172,6 +175,8 @@ export default function NorenSearch({
   look?: Look;
   /** URL の ?look= を、タブ・絞り込みの移動でも保つか（見本でだけ true。本番は false） */
   allowLookUrl?: boolean;
+  /** シーンのスラッグ → そのシーンの「シーン別のまとめ記事」の札（サーバーが全シーンぶんを渡す。?scene= を選んだときだけ、結果の上に出す） */
+  sceneRoundups?: Record<string, SceneRoundupCard[]>;
 }) {
   const router = useRouter();
   const sp = useSearchParams();
@@ -332,6 +337,9 @@ export default function NorenSearch({
               ? "q"
               : "area";
     const regionName = spRegion in REGIONS ? REGIONS[spRegion as RegionKey].name : "";
+    // 利用シーンを選んでいるときだけ、そのシーンのまとめ記事を結果の上に（1 ページ目だけ。地域・街も選んでいればその記事を先に。0 本なら節ごと出さない）
+    const roundupItems = sceneDef && sceneRoundups && page <= 1 ? orderSceneRoundups(sceneRoundups[sceneDef.slug] ?? [], spRegion, spTown) : [];
+    const roundups = sceneDef && roundupItems.length > 0 ? <SceneRoundups key={`${sceneDef.slug}|${spRegion}|${spTown}`} items={roundupItems} sceneName={sceneDef.name} look={block ? "block" : "noren"} /> : null;
     const shown = list.slice((Math.min(page, Math.max(1, Math.ceil(list.length / PER))) - 1) * PER, Math.min(page, Math.max(1, Math.ceil(list.length / PER))) * PER);
     const pages = Math.max(1, Math.ceil(list.length / PER));
     const cur = Math.min(page, pages);
@@ -488,6 +496,7 @@ export default function NorenSearch({
                   </div>
                 </div>
 
+                {roundups}
                 {bshown.length > 0 ? (
                   <ul key={`${spQ}|${spRegion}|${spCuisine}|${spScene}|${spTag}|${spSort}|${cur}`} className="vBk-grid" aria-label="検索結果">
                     {bshown.map((r, i) => {
@@ -680,6 +689,7 @@ export default function NorenSearch({
                   </p>
                 </div>
 
+                {roundups}
                 {shown.length > 0 ? (
                   <ul key={`${spQ}|${spRegion}|${spCuisine}|${spScene}|${spTag}|${cur}`} className="vSc-grid vMp-gridin" aria-label="検索結果">
                     {shown.map((r, i) => {

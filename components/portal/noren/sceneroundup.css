@@ -1,0 +1,29 @@
+/* 「さがす」で利用シーンを選んだとき、結果の上に出す「シーン別のまとめ記事」の節（components/portal/noren/SceneRoundups.tsx）。クラスは vSr-。
+   block（白と橙）は --bk-* を、暖簾（暗い地）は --kinari・--line を読む。最小の文字 12px、押す所 44px 以上、横スクロールなし。 */
+.vSr{--sr-ink:var(--bk-navy,var(--kinari,#1c2541));--sr-sub:var(--bk-mute,var(--kinari-2,#6b7280));--sr-line:var(--bk-line,var(--line,#e8e9ee));--sr-acc:var(--bk-or-ink,var(--shu-hi,#c4510a));--sr-bg:var(--bk-bg2,rgba(255,255,255,.04));
+  margin:0 0 22px;padding:16px 18px 18px;border:1px solid var(--sr-line);border-radius:16px;background:var(--sr-bg);min-width:0}
+.vSr-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;margin-bottom:12px}
+.vSr-h{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin:0;font:900 17px/1.4 var(--bk-maru,var(--f-min,inherit));color:var(--sr-ink)}
+.vSr-h small{font:500 13px/1.4 var(--bk-sans,var(--f-min,inherit));color:var(--sr-sub)}
+.vSr-all{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;border:0;background:none;cursor:pointer;color:var(--sr-acc);font:700 13px/1.3 var(--bk-maru,var(--f-min,inherit));text-decoration:underline;text-underline-offset:3px}
+.vSr-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.vSr-list>li{min-width:0}
+.vSr-card{display:flex;flex-direction:column;height:100%;overflow:hidden;border-radius:12px;background:#fff;color:inherit;text-decoration:none;box-shadow:0 1px 8px rgba(28,37,65,.08);transition:transform .3s cubic-bezier(.2,.6,.2,1),box-shadow .3s}
+.vSr--noren .vSr-card{background:rgba(255,255,255,.06);box-shadow:none;border:1px solid var(--sr-line)}
+.vSr-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(28,37,65,.14)}
+.vSr-ph{display:block;aspect-ratio:16/9;background:linear-gradient(135deg,#f3e9d9,#e9dcc6);overflow:hidden}
+.vSr-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.vSr-tx{display:flex;flex-direction:column;gap:3px;padding:10px 12px 12px;min-width:0}
+.vSr-ar{font:700 12px/1.3 var(--bk-sans,var(--f-min,inherit));color:var(--sr-acc)}
+.vSr-ti{font:700 14px/1.5 var(--bk-sans,var(--f-min,inherit));color:var(--sr-ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vSr--noren .vSr-ti{color:var(--kinari,#f2ead8)}
+.vSr--noren .vSr-ar{color:var(--shu-hi,#e0623a)}
+.vSr :focus-visible{outline:3px solid var(--bk-or,#f26a10);outline-offset:2px;border-radius:8px}
+@media (max-width:760px){
+  .vSr{padding:14px 12px 12px}
+  .vSr-list{grid-template-columns:minmax(0,1fr);gap:10px}
+  .vSr-card{flex-direction:row;align-items:stretch;min-height:76px}
+  .vSr-ph{flex:0 0 108px;aspect-ratio:auto;height:auto;min-height:76px}
+  .vSr-tx{justify-content:center;padding:8px 10px}
+}
+@media (prefers-reduced-motion:reduce){.vSr-card{transition:none}.vSr-card:hover{transform:none}}
