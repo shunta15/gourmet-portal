@@ -15,7 +15,11 @@ import type { Video } from "@/lib/videos/types";
 import { getVideoStores, type VideoStore } from "@/lib/videos/stores";
 import { isVideoIndexable } from "@/lib/videos/display";
 import VideoCard from "@/components/portal/video/VideoCard";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 import { Block, PageFrame, type Tone } from "./frame";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
+const VideosView = dynamic(() => import("@/components/portal/periphery/VideosView"));
 
 const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "動" };
 
@@ -91,6 +95,37 @@ export default async function Page({ searchParams }: Props) {
     (r) => (!cur.v || r.verticals.has(cur.v as VerticalKey)) && (!cur.pref || r.prefs.has(cur.pref)),
   );
   const filtered = !!(cur.v || cur.pref);
+
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。データ・絞り込み・メタ情報は上のまま、字・リンク先も同じ
+  if (RELEASE_PERIPHERY) {
+    return (
+      <VideosView
+        shown={shown.map((r) => ({ video: r.video, stores: r.stores }))}
+        verticalLinks={verticalOptions.map((k) => ({
+          key: k,
+          name: VERTICALS[k].name,
+          count: verticalCount.get(k),
+          href: href({ v: k, pref: cur.pref }),
+          current: cur.v === k,
+        }))}
+        verticalAllHref={href({ pref: cur.pref })}
+        verticalAllCurrent={!cur.v}
+        prefLinks={prefOptions.map((p) => ({
+          key: p.slug,
+          name: p.short,
+          count: prefCount.get(p.slug),
+          href: href({ v: cur.v, pref: p.slug }),
+          current: cur.pref === p.slug,
+        }))}
+        prefAllHref={href({ v: cur.v })}
+        prefAllCurrent={!cur.pref}
+        filtered={filtered}
+        curLabel={curLabel}
+        curPrefShort={cur.pref ? (getPrefBySlug(cur.pref)?.short ?? null) : null}
+        curPrefSlug={cur.pref}
+      />
+    );
+  }
 
   return (
     <PageFrame

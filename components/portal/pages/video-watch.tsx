@@ -30,7 +30,11 @@ import VideoTiles from "@/components/portal/video/VideoTiles";
 import { toFacade } from "@/components/portal/video/facade";
 import { videoTone } from "@/components/portal/video/VideoCard";
 import { notFoundMetadata } from "./data";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 import { Block, PageFrame, ShareSection, type Tone } from "./frame";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
+const VideoWatchView = dynamic(() => import("@/components/portal/periphery/VideoWatchView"));
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -92,6 +96,28 @@ export default async function Page({ params }: Props) {
   const sameStation = stationId ? others(getVideosByStation(stationId), video, shown) : [];
 
   const ld = videoObject(video, { name: title, description: videoDescription(video, store?.name) });
+
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。データ・メタ情報・VideoObject は上のまま、字・リンク先も同じ
+  if (RELEASE_PERIPHERY) {
+    return (
+      <VideoWatchView
+        video={video}
+        stores={stores}
+        title={title}
+        lead={store ? `${store.name}を紹介するショート動画です。` : "マチノワに掲載しているショート動画です。"}
+        crumbs={[
+          { name: "マチノワ", href: "/" },
+          { name: "動画で探す", href: "/videos" },
+          { name: shortTitle(video, 28), href: `/videos/${video.id}` },
+        ]}
+        duration={du}
+        shareText={`${shortTitle(video, 40)}｜マチノワ`}
+        sameStore={sameStore}
+        sameStation={sameStation}
+        ld={ld}
+      />
+    );
+  }
 
   return (
     <PageFrame

@@ -29,11 +29,16 @@
  *   - 店ページの布の漢字の対応（shop.ts）、フッターの暖簾の並び・地域の言い方・「ショート動画」の行き先（nav.ts）
  *   - 号の名前（「2026年 春号」を日付から作る変更）、地域の数の表記（「16 地域」を数から作る変更）、店舗登録ページの文言、サイトマップの更新日
  *   - 地の色（灰墨）は入口だけ。入口以外のページの色は変えない（NorenFrame と ground.css。入口は :has(.vR-hero) で見分ける）
+ * - RELEASE_PERIPHERY（周りのページ。2026-10-13 オーナー指示「周りのページの見た目は新しいデザインに合わせてください」。true）: グルメの周りのページを、特集の一覧 /feature と同じ世界（和紙の地・墨の字・藍の筆の線・朱の印・小さな暖簾の見出し・上端の竿の帯・フッター）にする。
+ *   対象: 動画の一覧 /videos・動画のページ /videos/<id>・ショート動画 /nazatu・店舗登録 /owner・お問い合わせ /contact・編集部 /about・掲載基準 /editorial/guidelines・見つからないページ（app/not-found.tsx・app/videos/not-found.tsx）・エラーのページ（app/error.tsx）。
+ *   文言・リンク先・メタ情報・構造化データ・canonical・robots は変えず、見た目だけ（components/portal/periphery/）。false のあいだは、これらは今の本番と同じ見た目・同じ HTML で出る。
+ *   ほかのスイッチ（RELEASE_SEARCH・RELEASE_FEATURE・RELEASE_REST・NOREN_STRIP_OTHER_RATINGS）には依らない。
  * - NOREN_STRIP_OTHER_RATINGS: ほかのサイト・サービスの点数・星・評価の高さ・件数に触れた文／句を、表示するデータから取り除く処理（lib/otherSiteRatings.ts）を、
  *   データ層（lib/db/restaurants.ts・lib/db/features.ts）と暖簾の表示（店ページ・記事ページ）に掛けるか。他の 2 つとは別のスイッチ。2026-10-12 から本番でも true。
  */
 export const RELEASE_SEARCH = true; // 確定した部分（さがす・統合・営業中なし・メニュー）。true: 出す
 export const RELEASE_FEATURE = true; // 確定した部分（特集まわり: 1 店 1 ページ・シーン別まとめ記事の新しい枠・特集の一覧の 3 棚）。true: 出す
+export const RELEASE_PERIPHERY = true; // 周りのページ（動画・店舗登録・お問い合わせ・編集部・掲載基準・見つからない・エラー）を /feature と同じ世界に。true: 新しい見た目／false: 今の本番と同じ
 export const RELEASE_REST = false; // 未確定の部分。true: 見本が基準（全部出る）／false: 今の本番と同じ見た目・同じ文言
 export const NOREN_STRIP_OTHER_RATINGS = true; // 2026-10-12 本番でも有効（オーナー指示「他サイトの評価を文章に入れるのやめて」「確定したところはどんどん公開」）
 /**
