@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 import type { CuisineCount, RegionCount, SceneCount } from "@/lib/portal/noren/openSearch";
 
 /**
@@ -31,13 +32,13 @@ export function GenreCards({ cuisines, className = "" }: { cuisines: CuisineCoun
   );
 }
 
-/** エリアからさがす: 地域の札（名称・件数）。押すとその地域のページ /region/<key> */
+/** エリアからさがす: 地域の札（名称・件数）。押すとその地域の結果（/search?region=<key>。RELEASE_REST が false のあいだは /region/<key>） */
 export function RegionChips({ regions, more }: { regions: RegionCount[]; more?: { href: string; label: string } }) {
   return (
     <ul className="vOs-chips" aria-label="エリア">
       {regions.map((r) => (
         <li key={r.key}>
-          <Link href={`/region/${r.key}`} className="vOs-chip" data-cursor="GO">
+          <Link href={regionHref(r.key)} className="vOs-chip" data-cursor="GO">
             <span>{r.name}</span>
             <i>
               {r.count}

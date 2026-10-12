@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { areaIndexHref, regionHref } from "@/lib/portal/noren/areaLinks";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -100,7 +101,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/">トップ</Link></li>
             <li><Link href="/feature">特集</Link></li>
-            <li><Link href="/region">エリア</Link></li>
+            <li><Link href={areaIndexHref()}>エリア</Link></li>
             <li><Link href="/scene">シーン</Link></li>
             <li><Link href="/search">検索</Link></li>
           </ul>
@@ -108,11 +109,11 @@ export default function Footer() {
         <div>
           <h5>地域</h5>
           <ul>
-            <li><Link href="/region/tokyo">{RELEASE_REST ? "東京" : "東京・下町"}</Link></li>
-            <li><Link href="/region/kyoto">京都</Link></li>
-            <li><Link href="/region/osaka">{RELEASE_REST ? "大阪" : "大阪・ミナミ"}</Link></li>
-            <li><Link href="/region/fukuoka">{RELEASE_REST ? "福岡" : "博多"}</Link></li>
-            <li><Link href="/region/hokkaido">{RELEASE_REST ? "北海道" : "札幌"}</Link></li>
+            <li><Link href={regionHref("tokyo")}>{RELEASE_REST ? "東京" : "東京・下町"}</Link></li>
+            <li><Link href={regionHref("kyoto")}>京都</Link></li>
+            <li><Link href={regionHref("osaka")}>{RELEASE_REST ? "大阪" : "大阪・ミナミ"}</Link></li>
+            <li><Link href={regionHref("fukuoka")}>{RELEASE_REST ? "福岡" : "博多"}</Link></li>
+            <li><Link href={regionHref("hokkaido")}>{RELEASE_REST ? "北海道" : "札幌"}</Link></li>
           </ul>
         </div>
         <div>

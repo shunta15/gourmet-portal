@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SCENES } from "@/lib/scenes";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 
 /**
  * グローバルナビ。現在のページに応じて .active クラスを付与し、
@@ -60,7 +61,7 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            href="/region/tokyo"
+            href={regionHref("tokyo")}
             data-cursor="ENTER"
             className={activeRegion ? "active" : ""}
             aria-current={activeRegion ? "page" : undefined}

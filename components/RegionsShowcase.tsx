@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { sized } from "@/lib/imageUrl";
 import { REGIONS, type RegionKey, type Stat } from "@/lib/regions";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 
 export default function RegionsShowcase({
   region,
@@ -35,7 +36,7 @@ export default function RegionsShowcase({
           return (
             <Link
               key={k}
-              href={`/region/${k}`}
+              href={regionHref(k)}
               className={"region-card " + (k === region ? "active" : "")}
               data-cursor="ENTER"
             >

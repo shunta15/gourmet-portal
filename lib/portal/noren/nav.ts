@@ -1,4 +1,5 @@
 import { RELEASE_REST } from "./release";
+import { areaIndexHref, regionHref } from "./areaLinks";
 
 /**
  * 暖簾の見本（/proto-noren/**）の行き先。グルメの今のヘッダー・フッターと同じ行き先（行き先は今の本物のページ）。
@@ -39,7 +40,7 @@ export const HEADER_NAV = RELEASE_REST
     ] as const)
   : ([
       { href: "/feature", ja: "特集", en: "Features" },
-      { href: "/region/tokyo", ja: "エリア", en: "Area" },
+      { href: regionHref("tokyo"), ja: "エリア", en: "Area" },
       { href: "/scene/date", ja: "シーン", en: "Scene" },
       { href: "/search", ja: "さがす", en: "Search" },
     ] as const);
@@ -54,7 +55,7 @@ export const FOOT_NAV = RELEASE_REST
   : ([
       { href: NOREN_TOP, ja: "トップ" },
       { href: "/feature", ja: "特集" },
-      { href: "/region", ja: "エリア" },
+      { href: areaIndexHref(), ja: "エリア" },
       { href: "/scene", ja: "シーン" },
       { href: "/search", ja: "検索" },
     ] as const);
@@ -73,11 +74,11 @@ export const FOOT_NAV_LIVE_EXTRA = [
 
 /** フッターの地域。表示名は行き先の地域データ（lib/regions.ts の REGIONS[key].name）と同じにする */
 export const FOOT_REGIONS = [
-  { href: "/region/tokyo", ja: RELEASE_REST ? "東京" : "東京・下町" },
-  { href: "/region/kyoto", ja: "京都" },
-  { href: "/region/osaka", ja: RELEASE_REST ? "大阪" : "大阪・ミナミ" },
-  { href: "/region/fukuoka", ja: RELEASE_REST ? "福岡" : "博多" },
-  { href: "/region/hokkaido", ja: RELEASE_REST ? "北海道" : "札幌" },
+  { href: regionHref("tokyo"), ja: RELEASE_REST ? "東京" : "東京・下町" },
+  { href: regionHref("kyoto"), ja: "京都" },
+  { href: regionHref("osaka"), ja: RELEASE_REST ? "大阪" : "大阪・ミナミ" },
+  { href: regionHref("fukuoka"), ja: RELEASE_REST ? "福岡" : "博多" },
+  { href: regionHref("hokkaido"), ja: RELEASE_REST ? "北海道" : "札幌" },
 ] as const;
 
 export const FOOT_INFO = [

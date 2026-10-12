@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { VERTICALS } from "@/lib/verticals";
+import { areaIndexHref } from "@/lib/portal/noren/areaLinks";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { BLOCK_FACE } from "@/lib/portal/meta";
@@ -55,7 +56,7 @@ export default async function PortalFooter() {
             <h2>グルメを読む</h2>
             <ul>
               <li><Link href="/feature">特集</Link></li>
-              <li><Link href="/region">地域から探す</Link></li>
+              <li><Link href={areaIndexHref()}>地域から探す</Link></li>
               <li><Link href="/scene">利用シーンから探す</Link></li>
               <li><Link href="/search">店舗を探す</Link></li>
             </ul>

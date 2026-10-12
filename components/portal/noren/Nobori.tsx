@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 
 export type FlagProp = {
   key: string;
@@ -67,7 +68,7 @@ export default function Nobori({ flags, total, shopBase }: { flags: FlagProp[]; 
         {flags.map((f, i) => (
           <li key={f.key} style={{ ["--w" as string]: `${f.w}px`, ["--h" as string]: f.h }}>
             <Link
-              href={`/region/${f.key}`}
+              href={regionHref(f.key)}
               className="vN-nb-a"
               data-on={i === cur ? "1" : "0"}
               data-cursor="AREA"

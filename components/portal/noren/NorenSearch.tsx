@@ -8,6 +8,7 @@ import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/
 import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import { OPEN_NOW_ON } from "@/lib/portal/noren/release";
+import { AREA_TO_SEARCH } from "@/lib/portal/noren/areaLinks";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
@@ -178,6 +179,8 @@ export default function NorenSearch({
   // こだわり条件（?budget= ?f=）だけが変わったときは、入力途中のキーワードなどを戻さない
   const spQ = sp.get("q") || "";
   const spRegion = sp.get("region") || "";
+  // 街（?town=。lib/towns.ts が住所から取り出す市区町村。地域のページ /region/<key>/<街> の転送先。townOf と完全一致で絞る）
+  const spTown = sp.get("town") || "";
   const spCuisine = sp.get("cuisine") || "ALL";
   const spTag = sp.get("tag") || "";
   const spScene = sp.get("scene") || "";
@@ -226,6 +229,7 @@ export default function NorenSearch({
   const needle = q.trim().toLowerCase();
   const pass = (r: SearchItem, skip?: "region" | "cuisine" | "scene") => {
     if (skip !== "region" && region && r.region !== region) return false;
+    if (spTown && townOf[r.id] !== spTown) return false;
     if (skip !== "cuisine" && cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
     if (tag && !(r.tags || []).includes(tag)) return false;
     if (skip !== "scene" && sceneDef && !shopInScene(sceneDef.matchTags, r.tags)) return false;
@@ -238,7 +242,7 @@ export default function NorenSearch({
   const results = useMemo(
     () => restaurants.filter((r) => pass(r)),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [q, region, cuisine, tag, scene, sceneDefs, restaurants, block],
+    [q, region, spTown, cuisine, tag, scene, sceneDefs, restaurants, block],
   );
   // 一覧の件数（その軸以外の絞り込みを掛けたときの店の数）
   const counts = useMemo(() => {
@@ -253,12 +257,14 @@ export default function NorenSearch({
     for (const r of restaurants) if (pass(r, "scene")) { sceneAll++; sceneDefs.forEach((x, i) => { if (shopInScene(x.matchTags, r.tags)) sceneRows[i].count++; }); }
     return { byRegion, regionAll, cuisineRows, cuisineAll, sceneRows, sceneAll };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, region, cuisine, tag, scene, sceneDefs, restaurants, block]);
+  }, [q, region, spTown, cuisine, tag, scene, sceneDefs, restaurants, block]);
 
-  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string; sort?: string }) => {
+  const buildUrl = (overrides: { q?: string; region?: string; town?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string; sort?: string }) => {
     const next = {
       q: overrides.q !== undefined ? overrides.q : spQ,
       region: overrides.region !== undefined ? overrides.region : spRegion,
+      // 街は地域の中の絞り込み。地域を替えたら外す
+      town: overrides.town !== undefined ? overrides.town : overrides.region !== undefined && overrides.region !== spRegion ? "" : spTown,
       cuisine: overrides.cuisine !== undefined ? overrides.cuisine : spCuisine,
       tag: overrides.tag !== undefined ? overrides.tag : spTag,
       scene: overrides.scene !== undefined ? overrides.scene : spScene,
@@ -269,6 +275,7 @@ export default function NorenSearch({
     const params = new URLSearchParams();
     if (next.q) params.set("q", next.q);
     if (next.region) params.set("region", next.region);
+    if (next.town) params.set("town", next.town);
     if (next.cuisine && next.cuisine !== "ALL") params.set("cuisine", next.cuisine);
     if (next.scene) params.set("scene", next.scene);
     if (next.tag) params.set("tag", next.tag);
@@ -311,7 +318,7 @@ export default function NorenSearch({
   // pending（こだわり条件の部品を読み込んでいる間）は、読み込み中の文だけ。入力欄・結果は出さない
   // （先に出すと、読み込みが終わって画面が入れ替わったとき、入力中の欄が作り直されてフォーカスとキャレットを失い、続きの入力が消える）
   const view = (list: SearchItem[], ext?: FacetExt, pending = false) => {
-    const applied = !!spQ || !!spRegion || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
+    const applied = !!spQ || !!spRegion || !!spTown || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
     // どのタブを開くか: ?tab= があればそれ、無ければ絞り込みに使っている項目のタブ、無ければエリア
     const active: Tab = isTab(spTab) && !(block && spTab === "q")
       ? spTab
@@ -353,6 +360,7 @@ export default function NorenSearch({
       const chosen: { key: string; label: string; what: string; href: string }[] = [];
       if (spQ) chosen.push({ key: "q", label: `「${spQ}」`, what: `キーワード「${spQ}」`, href: buildUrl({ q: "" }) });
       if (regionName) chosen.push({ key: "region", label: regionName, what: `エリア「${regionName}」`, href: buildUrl({ region: "" }) });
+      if (spTown) chosen.push({ key: "town", label: spTown, what: `街「${spTown}」`, href: buildUrl({ town: "" }) });
       if (spCuisine !== "ALL") chosen.push({ key: "cuisine", label: spCuisine, what: `業種「${spCuisine}」`, href: buildUrl({ cuisine: "ALL" }) });
       if (sceneDef) chosen.push({ key: "scene", label: sceneDef.name, what: `利用シーン「${sceneDef.name}」`, href: buildUrl({ scene: "" }) });
       // 0 件のとき: 業種のリンクは、いまの条件をすべてはずして、その業種だけで探す（見た目・並べ替え・地図の指定だけ残す）
@@ -387,7 +395,7 @@ export default function NorenSearch({
                   <div className={`vBk-side vBk-side--${active}`}>
                     {active === "area" && (
                       <>
-                        {regionName && (
+                        {regionName && !AREA_TO_SEARCH && (
                           <p className="vBk-regionlink">
                             <Link href={`/region/${spRegion}`}>
                               {regionName}のページを見る <ArrowIcon size={15} />
@@ -562,7 +570,7 @@ export default function NorenSearch({
                   <div className={`vMp-side vMp-side--${active}`}>
                     {active === "area" && (
                       <>
-                        {regionName && (
+                        {regionName && !AREA_TO_SEARCH && (
                           <p className="vSc-regionlink">
                             <Link href={`/region/${spRegion}`} data-cursor="GO">
                               {regionName}のページを見る <span aria-hidden="true">→</span>
@@ -637,12 +645,24 @@ export default function NorenSearch({
                     </span>
                   </div>
                 )}
+                {spTown && (
+                  <div className="vSc-active">
+                    <span>街で絞り込み</span>
+                    <span className="vSc-chip">
+                      {spTown}
+                      <button type="button" onClick={() => router.push(buildUrl({ town: "" }))} aria-label="街を外す">
+                        ×
+                      </button>
+                    </span>
+                  </div>
+                )}
                 {ext?.notice}
                 <div className="vI-bar vMp-res">
                   <h2 className="vMp-resh">検索結果</h2>
                   <p className="vI-bar-c" aria-live="polite">
                     {q && <>キーワード: 「{q}」 / </>}
                     {regionName && <>{regionName} / </>}
+                    {spTown && <>{spTown} / </>}
                     {cuisine !== "ALL" && <>{cuisine} / </>}
                     {sceneDef && <>{sceneDef.name} / </>}
                     {tag && <>#{tag} / </>}

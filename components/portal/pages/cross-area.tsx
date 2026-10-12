@@ -10,6 +10,7 @@ import { notFound } from "next/navigation";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { gourmetRegionKey } from "@/lib/areas/gourmet";
 import { getPlaces } from "@/lib/places";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 import { VERTICALS, NEW_VERTICAL_KEYS } from "@/lib/verticals";
 import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
@@ -36,7 +37,7 @@ async function rowsFor(pref: string) {
     ORDER.map(async (v) => {
       if (v.key === "gourmet") {
         const count = gKey ? (await getPlaces("gourmet", { pref: gKey })).length : 0;
-        return { v, count, href: gKey ? `/region/${gKey}` : null };
+        return { v, count, href: gKey ? regionHref(gKey) : null };
       }
       const count = pick(await getPlaces(v.key), { pref }).length;
       return { v, count, href: count > 0 ? `${v.path}/area/${pref}` : null };

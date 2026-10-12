@@ -10,6 +10,8 @@ import { decodeTownParam, parseTown, townKey } from "@/lib/towns";
 import { getTownFeatureLinks } from "@/lib/townFeatures";
 import { sceneFeaturesForTown } from "@/lib/sceneFeatureLinks";
 import { cuisineLabel } from "@/lib/seoText";
+import { isPortalLive } from "@/lib/portal/launch";
+import { NOREN_REGION_TO_SEARCH } from "@/lib/portal/noren/rewrites";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -18,6 +20,8 @@ export const revalidate = 60;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
+  // 「さがす」へ統合したあと（公開スイッチ ON かつ NOREN_REGION_TO_SEARCH）は事前生成しない（転送されるため着く URL が無い）
+  if (NOREN_REGION_TO_SEARCH && isPortalLive()) return [];
   const towns = await getAllTowns();
   return towns.map((t) => ({ key: t.region, town: t.town }));
 }

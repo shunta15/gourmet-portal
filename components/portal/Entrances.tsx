@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
+import { areaIndexHref } from "@/lib/portal/noren/areaLinks";
 import type { Vertical } from "@/lib/verticals/types";
 import type { GourmetPhoto } from "@/lib/portal/home";
 
@@ -101,7 +102,7 @@ export default function Entrances({
               </Link>
               <p className="mp-gm-sub">
                 <Link href="/feature">特集</Link>
-                <Link href="/region">エリア</Link>
+                <Link href={areaIndexHref()}>エリア</Link>
                 <Link href="/scene">シーン</Link>
                 <Link href="/search">さがす</Link>
               </p>

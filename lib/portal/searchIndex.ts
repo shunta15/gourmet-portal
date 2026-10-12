@@ -10,6 +10,7 @@
  */
 import { getPlaces } from "@/lib/places";
 import { VERTICALS } from "@/lib/verticals";
+import { AREA_TO_SEARCH, townLinkHref } from "@/lib/portal/noren/areaLinks";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { prefOfGourmetRegion } from "@/lib/areas/gourmet";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
@@ -59,9 +60,9 @@ async function build(): Promise<SearchIndexJson> {
     items.push(item(K.station, label, [prefName, `${s.count}店`].filter(Boolean).join("・"), stationHref(st), [st.name, ...stationAliases(st)]));
   }
 
-  // 市区町村（グルメの街ページ）
+  // 市区町村（グルメの街。RELEASE_REST が true のあいだは /search?region=…&town=…、false は街ページ）
   for (const t of await getAllTowns()) {
-    items.push(item(K.town, t.town, `${t.pref}・グルメ${t.count}店`, `/region/${t.region}/${t.town}`));
+    items.push(item(K.town, t.town, `${t.pref}・グルメ${t.count}店`, AREA_TO_SEARCH ? townLinkHref(t.region, t.town) : `/region/${t.region}/${t.town}`));
   }
 
   // 店（全業種）

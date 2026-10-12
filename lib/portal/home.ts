@@ -10,6 +10,7 @@ import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from '@/lib/
 import type { Place } from '@/lib/places/types';
 import { PREFECTURES, type PrefBlockName } from '@/lib/areas/prefectures';
 import { gourmetRegionKey } from '@/lib/areas/gourmet';
+import { regionHref } from '@/lib/portal/noren/areaLinks';
 import homePhotos from './homePhotos.json';
 import { isUsableImage } from './photoRules';
 
@@ -163,7 +164,7 @@ export async function getPortalHomeData(): Promise<PortalHomeData> {
       name: p.name,
       block: p.block,
       count: hasGourmet ? count : 0,
-      href: hasGourmet ? `/region/${key}` : `/area/${p.slug}`,
+      href: hasGourmet ? regionHref(key) : `/area/${p.slug}`,
       hasGourmet,
     };
   });

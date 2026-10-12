@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { areaIndexHref } from "@/lib/portal/noren/areaLinks";
 
 export const metadata = {
   title: "ページが見つかりません — マチノワ",
@@ -60,7 +61,7 @@ export default function NotFound() {
             ホームへ
           </Link>
           <Link
-            href="/region"
+            href={areaIndexHref()}
             style={{
               padding: "12px 24px",
               border: "1px solid var(--line)",

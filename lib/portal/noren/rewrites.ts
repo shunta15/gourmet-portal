@@ -49,13 +49,24 @@ export const NOREN_SEARCH_REWRITE = RELEASE_REST;
 // ── scene ここまで
 // ── area ここから
 /**
+ * 【2026-10-12 オーナー決定「地域と街のページは『さがす』のページへ統合」】エリアのページ（/region・/region/<key>・/region/<key>/<街>）は、暖簾版（下の NOREN_REGION_REWRITE）を出さず、
+ * RELEASE_REST が true のあいだは /search へ恒久転送する（NOREN_REGION_TO_SEARCH。仕組みは next.config.ts の redirects）:
+ *   /region → /search、/region/<key> → /search?region=<key>、/region/<key>/<街> → /search?region=<key>&town=<街>（街は lib/towns.ts の取り出し方・完全一致）。
+ * サイト内のリンクは転送を踏まないよう、リンクを作る所（lib/portal/noren/areaLinks.ts）からはじめから /search の URL にしてある。
+ * RELEASE_REST が false のときは転送せず、今の本番のページ（app/region/**）が出る。
+ */
+export const NOREN_REGION_TO_SEARCH = RELEASE_REST;
+
+/**
  * エリアのページ（エリア一覧 /region・エリアごと /region/<key>・街ごと /region/<key>/<街>）を暖簾にする（担当名: area）。
+ * 【2026-10-12 から false 固定】上の NOREN_REGION_TO_SEARCH のとおり「さがす」へ統合したので、暖簾版（app/gourmet/region/**）は出さない。
+ * 暖簾版を復活させるなら、この定数を RELEASE_REST に戻し、NOREN_REGION_TO_SEARCH を false にする（両方 true にすると転送が先に効く）。
  * 内部のパスは app/gourmet/region/page.tsx・app/gourmet/region/[key]/page.tsx・app/gourmet/region/[key]/[town]/page.tsx。
  * true のあいだ、公開スイッチ ON では /region → /gourmet/region、/region/:key → /gourmet/region/:key、/region/:key/:town → /gourmet/region/:key/:town に差し替わり
  * （ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
  * 元に戻すなら false（/region・/region/<key>・/region/<key>/<街> は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
  */
-export const NOREN_REGION_REWRITE = RELEASE_REST;
+export const NOREN_REGION_REWRITE = false;
 // ── area ここまで
 
 /**
