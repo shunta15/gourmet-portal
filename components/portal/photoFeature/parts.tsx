@@ -9,6 +9,7 @@ export function Tate({
   as: Tag = "span",
   emFrom,
   label = true,
+  trigger = false,
 }: {
   cols: string[];
   className?: string;
@@ -19,6 +20,8 @@ export function Tate({
   emFrom?: [number, number] | null;
   /** false のとき、読み上げに出さない（同じ文を別の所で読ませるとき） */
   label?: boolean;
+  /** true のとき、字が上から 1 字ずつ、写真が出たあと（親の [data-rvw] に .in が付いたあと）に現れる */
+  trigger?: boolean;
 }) {
   let k = 0;
   return (
@@ -31,8 +34,8 @@ export function Tate({
             return (
               <span
                 key={i}
-                className={`${animate ? "pf-ch" : ""}${em ? " pf-em" : ""}`}
-                style={animate ? ({ "--i": i, "--d": `${delay}s` } as CSSProperties) : undefined}
+                className={`${animate ? "pf-ch" : trigger ? "pf-chv" : ""}${em ? " pf-em" : ""}`}
+                style={animate || trigger ? ({ "--i": i, "--d": `${delay}s` } as CSSProperties) : undefined}
               >
                 {ch}
               </span>

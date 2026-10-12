@@ -22,8 +22,13 @@ export type PfPhoto = {
   port: boolean;
   /** 元の高さ（CSS px 相当。分からなければ 0）。枠を縦に伸ばして切り抜くとき、元の 1.3 倍を超えないための上限に使う */
   nh: number;
+  /** 枠の中で写真を拡大しておく倍率（スクロールで中身がずれても枠の外が見えない余白）。cap はこの分だけ小さくしてある（枠の幅 × z ≤ 元の幅の 1.3 倍） */
+  z: number;
   alt: string;
 };
+
+/** 視点ごとの、写真の現れ方（場面ごとに仕組みを変える）。converge は 2 枚以上の列、ほかは 1 枚の列 */
+export type Rv = "curtain" | "converge" | "tilt" | "flow" | "paper" | "none";
 
 export type PfView = {
   /** "01" … */
@@ -44,12 +49,14 @@ export type PfView = {
 export type PfText = { head: string; rest: string[] };
 
 export type PfBlock =
-  | { kind: "view"; view: PfView; variant: "A" | "B" | "C" | "D" | "E" }
-  | { kind: "band"; photos: PfPhoto[]; no: number }
+  | { kind: "view"; view: PfView; variant: "A" | "B" | "C" | "D" | "E"; rv: Rv }
+  | { kind: "band"; photos: PfPhoto[]; no: number; rv: Rv }
   /** 縦長の写真の視点（a）と、次の視点（b）の写真を、高さをそろえて横に接して並べる（縦長の写真の横のすき間を作らない） */
-  | { kind: "pair"; a: PfView; b: PfView }
+  | { kind: "pair"; a: PfView; b: PfView; rv: Rv }
   /** 巻頭の写真の列に写真を出した視点（小見出しは写真の上に出ているので、文だけを出す） */
-  | { kind: "note"; view: PfView };
+  | { kind: "note"; view: PfView }
+  /** 写真の多い視点（または写真だけの面）。画面に留めて、重なった写真をスクロールで 1 枚ずつ入れ替える（紙芝居）。photos[i] の小見出しは views[owner[i]]（無ければ -1） */
+  | { kind: "stack"; views: PfView[]; photos: PfPhoto[]; owner: number[] };
 
 export type PfData = {
   id: string;
@@ -75,11 +82,12 @@ export type PfData = {
 
 const ROUND = (n: number, d = 3) => Math.round(n * 10 ** d) / 10 ** d;
 
-export function toPf(p: Photo, alt: string): PfPhoto {
+/** 写真を表示用にする。表示の幅の上限 cap は「元の幅 × 1.3 ÷ z」（枠の中で z 倍に拡大して動かしても、元の 1.3 倍を超えない） */
+export function toPf(p: Photo, alt: string, z = 1.04): PfPhoto {
   const known = p.w > 0 && p.h > 0;
   const raw = known ? p.w / p.h : 4 / 3;
   const ar = Math.min(1.9, Math.max(0.72, raw));
-  return { src: p.src, ar: ROUND(ar), cap: known ? Math.round(p.w * 1.3) : 1170, port: ar < 0.95, nh: known ? p.h : 0, alt };
+  return { src: p.src, ar: ROUND(ar), cap: Math.round(((known ? p.w : 900) * 1.3) / z), port: ar < 0.95, nh: known ? p.h : 0, z, alt };
 }
 
 /* ───────── 縦書きの列に割る ───────── */
@@ -367,15 +375,38 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     const nx = views[i + 1];
     let last = i;
     if (v.photos.length === 1 && v.photos[0].port && nx && nx.photos.length > 0 && nx.photos.length <= 2 && !bandAfter.has(i)) {
-      blocks.push({ kind: "pair", a: v, b: nx });
+      blocks.push({ kind: "pair", a: v, b: nx, rv: "converge" });
       last = i + 1;
       i++;
     } else {
-      blocks.push({ kind: "view", view: v, variant: VARIANTS[vi % VARIANTS.length] });
+      blocks.push({ kind: "view", view: v, variant: VARIANTS[vi % VARIANTS.length], rv: "none" });
     }
     vi++;
     const bp = bandAfter.get(last);
-    if (bp) blocks.push({ kind: "band", photos: bp.map((p) => toPf(p, alt("店の写真"))), no: ++bandNo });
+    if (bp) blocks.push({ kind: "band", photos: bp.map((p) => toPf(p, alt("店の写真"))), no: ++bandNo, rv: "converge" });
+  }
+
+  // 写真の現れ方: 2 枚以上の列は「左右から寄って接する」、1 枚の列は 暖簾・傾きが落ち着く・中身が流れる・白い紙が引かれる を順に
+  const SINGLE: Rv[] = ["curtain", "tilt", "flow", "paper"];
+  let si = 0;
+  for (const b of blocks) {
+    if (b.kind === "view" || b.kind === "pair") {
+      const cnt = b.kind === "view" ? b.view.photos.length : b.a.photos.length + b.b.photos.length;
+      b.rv = cnt >= 2 ? "converge" : cnt === 1 ? SINGLE[si++ % SINGLE.length] : "none";
+      if (b.rv === "flow" && b.kind === "view") for (const p of b.view.photos) { p.cap = Math.round((p.cap * 1.04) / 1.12); p.z = 1.12; }
+    }
+  }
+  // 写真がいちばん多い視点（または写真だけの面）を、画面に留める場面にする。3 枚以上（7 枚以上の記事なら 2 枚）のときだけ
+  const cntOf = (b: PfBlock) => (b.kind === "view" ? b.view.photos.length : b.kind === "pair" ? b.a.photos.length + b.b.photos.length : b.kind === "band" ? b.photos.length : 0);
+  let pick = -1;
+  blocks.forEach((b, i) => {
+    if (cntOf(b) >= 2 && (pick < 0 || cntOf(b) > cntOf(blocks[pick]))) pick = i;
+  });
+  if (pick >= 0 && (cntOf(blocks[pick]) >= 3 || (cntOf(blocks[pick]) === 2 && used >= 7))) {
+    const b = blocks[pick];
+    if (b.kind === "view") blocks[pick] = { kind: "stack", views: [b.view], photos: b.view.photos, owner: b.view.photos.map(() => 0) };
+    else if (b.kind === "pair") blocks[pick] = { kind: "stack", views: [b.a, b.b], photos: [...b.a.photos, ...b.b.photos], owner: [...b.a.photos.map(() => 0), ...b.b.photos.map(() => 1)] };
+    else if (b.kind === "band") blocks[pick] = { kind: "stack", views: [], photos: b.photos, owner: b.photos.map(() => -1) };
   }
 
   const sub = A.subtitle ? stripTabelogScore(A.subtitle) : "";

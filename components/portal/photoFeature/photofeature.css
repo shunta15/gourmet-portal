@@ -69,7 +69,7 @@ body:has(.pf-root) main { display: contents; }
 
 /* ───────── 写真の枠・視差・現れ方 ───────── */
 .pf-ph { position: relative; display: block; overflow: hidden; background: #d9d2c3; width: 100%; max-width: var(--cap, 1200px); aspect-ratio: var(--ar, 1.333); }
-.pf-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: translate3d(0, var(--py, 0px), 0) scale(1.06); will-change: transform; }
+.pf-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: translate3d(0, var(--py, 0px), 0) scale(var(--z, 1.04)); will-change: transform; }
 .pf-sm { box-shadow: 0 0 0 clamp(4px, 0.55vw, 8px) var(--paper), 0 16px 34px rgba(25, 24, 21, 0.16); }
 .pf-js .pf-rv { opacity: 0; transform: translate3d(0, 22px, 0); transition: opacity 0.9s var(--ease), transform 1s var(--ease); }
 .pf-js .pf-rv.in { opacity: 1; transform: none; }
@@ -131,9 +131,8 @@ body:has(.pf-root) main { display: contents; }
 .pf-body { padding-bottom: 0; }
 .pf-v { width: var(--box); margin: clamp(10px, 1.1vw, 16px) auto 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--cg); align-items: start; position: relative; --ovl: clamp(16px, 2.4vw, 36px); }
 .pf-body > .pf-v:first-child { margin-top: clamp(16px, 2vw, 30px); }
-/* 前の視点の写真に、次の写真の上の縁が少し重なる（文を開いたときは重ねない） */
+/* 前の視点の写真に、次の写真の上の縁が少し重なる（文の札は、重なる分だけ上げてある。開いても下の要素が飛ばない） */
 .pf-body > .pf-v + .pf-v { margin-top: calc(-1 * var(--ovl)); }
-.pf-body > .pf-v:has(details[open]) + .pf-v { margin-top: 20px; }
 .pf-v__ph { grid-row: 1; min-width: 0; position: relative; }
 .pf-cl__in { position: relative; }
 .pf-row { display: grid; grid-template-columns: var(--cols); gap: 6px; max-width: var(--cap, 1200px); }
@@ -171,10 +170,10 @@ body:has(.pf-root) main { display: contents; }
   .pf-v--B .pf-v__tx { grid-column: 1 / 5; }
   /* C: 写真は左（10 列）、文の札は右上 */
   .pf-v--C .pf-v__ph { grid-column: 1 / 11; }
-  .pf-v--C .pf-v__tx { grid-column: 9 / 13; align-self: start; margin-top: 24px; background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
+  .pf-v--C .pf-v__tx { grid-column: 9 / 13; align-self: start; margin: 24px 0 calc(var(--ovl) + 8px); background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
   /* D: 文の札は左上、写真は右（10 列） */
   .pf-v--D .pf-v__ph { grid-column: 3 / 13; justify-self: end; width: 100%; }
-  .pf-v--D .pf-v__tx { grid-column: 1 / 5; align-self: start; margin-top: 24px; background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
+  .pf-v--D .pf-v__tx { grid-column: 1 / 5; align-self: start; margin: 24px 0 calc(var(--ovl) + 8px); background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
   .pf-v--C .pf-v__tx p:last-child, .pf-v--D .pf-v__tx p:last-child, .pf-v--C .pf-more__b p:last-child, .pf-v--D .pf-more__b p:last-child { margin-bottom: 0; }
   /* E: 広い写真（10 列）、文の札は左下 */
   .pf-v--E .pf-v__ph { grid-column: 2 / 12; }
@@ -222,13 +221,106 @@ body:has(.pf-root) main { display: contents; }
 /* ───────── 締め ───────── */
 .pf-end { width: var(--box); margin: clamp(48px, 6vw, 90px) auto 0; }
 .pf-end__in { max-width: 40em; margin: 0 auto; position: relative; padding-top: 18px; }
-.pf-end__seal { position: absolute; right: -4px; top: -34px; width: 52px; height: auto; }
+
 .pf-quote { font-size: clamp(17px, 1.45vw, 21px); font-weight: 800; line-height: 2; letter-spacing: 0.08em; border-left: 3px solid var(--indigo); padding-left: clamp(16px, 2vw, 28px); margin-bottom: clamp(22px, 3vw, 40px); }
 .pf-quote p + p { margin-top: 0.8em; }
 .pf-closing { font-size: clamp(15px, 1.1vw, 16px); line-height: 2.1; letter-spacing: 0.045em; color: var(--ink2); }
 .pf-closing p { margin-bottom: 0.7em; }
 .pf-closing .pf-more__b p { margin-bottom: 1.1em; }
 .pf-acts--end { margin-top: 26px; }
+
+/* ═════════ 動き（JavaScript が動いて、動きを減らす設定でないときだけ。隠した状態は全部 .pf-js の中にあるので、JS が無ければ全部見える） ═════════ */
+@keyframes pf-fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pf-kb { from { scale: 1; translate: 0 0; } to { scale: 1.04; translate: -0.7% -0.5%; } }
+@keyframes pf-flip-in { from { opacity: 0; transform: translate3d(0, 70%, 0) rotateX(-80deg); } to { opacity: 1; transform: none; } }
+@keyframes pf-flip-out { from { opacity: 1; transform: none; } to { opacity: 0; transform: translate3d(0, -70%, 0) rotateX(80deg); } }
+
+/* 1. 最初の画面: 主役の写真はゆっくりわずかに動き続ける（拡大は 1.04 倍まで）。スクロールすると、写真と題の札が違う速さでずれる */
+.pf-hero { animation: pf-fadein 1.1s var(--ease) both; }
+.pf-hero .pf-img, .pf-cover .pf-ph--m .pf-img { animation: pf-kb 26s ease-in-out infinite alternate; transform: none; will-change: scale, translate; }
+.pf-cover .pf-ph--s .pf-img { animation: pf-kb 30s ease-in-out infinite alternate-reverse; transform: none; will-change: scale, translate; }
+.pf-cover__ph { transform: translate3d(0, var(--hy, 0px), 0); }
+.pf-cover__t { transform: translate3d(0, var(--ty, 0px), 0); }
+
+/* 3. 視点ごとに、写真の現れ方を変える（画面に入ったとき 1 回。[data-rvw] に .in が付く） */
+/*   a. 暖簾が上がるように、藍の布が上へめくれて写真が出る */
+.pf-js [data-rv="curtain"] .pf-ph::after { content: ""; position: absolute; inset: 0; z-index: 7; pointer-events: none; transform-origin: 50% 0; border-bottom: 7px solid #101c43; background: repeating-linear-gradient(90deg, #1b2d5c 0 min(7vw, 92px), #2a437f min(7vw, 92px) calc(min(7vw, 92px) + 3px)); transition: transform 1.5s cubic-bezier(0.65, 0, 0.2, 1); }
+.pf-js [data-rv="curtain"].in .pf-ph::after { transform: scaleY(0); }
+/*   b. 左右から 2 枚が寄ってきて接する */
+.pf-js [data-rv="converge"] .pf-ph { opacity: 0; transform: translate3d(-9%, 0, 0); transition: opacity 0.9s var(--ease), transform 1.2s var(--ease); }
+.pf-js [data-rv="converge"] .pf-ph:nth-child(even) { transform: translate3d(9%, 0, 0); }
+.pf-js [data-rv="converge"].in .pf-ph { opacity: 1; transform: none; }
+.pf-js [data-rv="converge"] .pf-b .pf-ph, .pf-js .pf-band [data-rv="converge"] .pf-ph { transition-delay: calc(var(--k, 0) * 0.12s); }
+/*   c. 小さく傾いた状態から、置かれるように水平に落ち着く */
+.pf-js [data-rv="tilt"] .pf-ph { opacity: 0; transform: translate3d(0, 38px, 0) rotate(-5deg) scale(0.94); transition: opacity 0.5s linear, transform 1.15s cubic-bezier(0.2, 1.45, 0.4, 1); transform-origin: 20% 90%; }
+.pf-js [data-rv="tilt"].in .pf-ph { opacity: 1; transform: none; }
+/*   d. 写真の中身だけが、枠の中でゆっくり流れる（枠は動かない。中の写真が、スクロールに合わせて上下に動く: Motion が --py を入れる） */
+.pf-js [data-rv="flow"] .pf-ph { opacity: 0; transition: opacity 1s linear; }
+.pf-js [data-rv="flow"].in .pf-ph { opacity: 1; }
+/*   e. 白い紙が横に引かれて写真が出る */
+.pf-js [data-rv="paper"] .pf-ph::after { content: ""; position: absolute; inset: 0; z-index: 7; pointer-events: none; background: var(--paper); box-shadow: -12px 0 24px rgba(25, 24, 21, 0.14); transition: transform 1.25s cubic-bezier(0.7, 0, 0.2, 1); }
+.pf-js [data-rv="paper"].in .pf-ph::after { transform: translate3d(102%, 0, 0); }
+/* 5. 縦書きの小見出し: 写真が出たあとに、字が上から順に現れる */
+.pf-js .pf-chv { opacity: 0; }
+.pf-js [data-rvw].in .pf-chv { animation: pf-ch 0.8s var(--ease) both; animation-delay: calc(0.75s + var(--i, 0) * 0.055s); }
+
+/* 2. 読み進みの印: 画面の端に細い朱の線が、読んだ分だけ伸びる。脇に、いまの視点の番号（めくれるように入れ替わる） */
+.pf-hud { display: none; position: fixed; left: 0; top: 0; bottom: 0; width: 30px; z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.5s linear; }
+.pf-js .pf-hud { display: block; }
+.pf-js .pf-hud--on { opacity: 1; }
+.pf-hud__line { position: absolute; left: 7px; top: 10svh; bottom: 10svh; width: 2px; background: rgba(25, 24, 21, 0.14); }
+.pf-hud__line i { position: absolute; inset: 0; background: var(--shu); transform-origin: 50% 0; transform: scaleY(var(--prog, 0)); }
+.pf-hud__no { position: absolute; left: 3px; top: 10svh; width: 28px; height: 20px; perspective: 120px; transform: translate3d(0, var(--hy, 0px), 0); }
+.pf-hud__no b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--shu); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; line-height: 1; transform-origin: 50% 50%; }
+.pf-hud__no b:empty { display: none; }
+.pf-hud__cur.is-in { animation: pf-flip-in 0.5s var(--ease) both; }
+.pf-hud__prev.is-out { animation: pf-flip-out 0.4s var(--ease) both; }
+
+/* 8. 店ページへの小さなボタン（いつでも押せる）と、近づくと少し反応するボタン */
+.pf-fab { display: none; position: fixed; right: 14px; bottom: 14px; z-index: 45; box-shadow: 0 10px 28px rgba(25, 24, 21, 0.28); opacity: 0; transform: translate3d(0, 14px, 0); pointer-events: none; transition: opacity 0.4s linear, transform 0.5s var(--ease), background 0.3s; }
+.pf-js .pf-fab { display: inline-flex; }
+.pf-js .pf-fab.pf-fab--on { opacity: 1; transform: none; pointer-events: auto; }
+.pf-mag { transform: translate3d(var(--mx, 0px), var(--my, 0px), 0) scale(var(--ms, 1)); transition: transform 0.28s var(--ease), background 0.3s, color 0.3s; will-change: transform; }
+.pf-fab.pf-mag { transform: translate3d(var(--mx, 0px), calc(var(--my, 0px) + 14px), 0) scale(var(--ms, 1)); }
+.pf-js .pf-fab.pf-fab--on.pf-mag { transform: translate3d(var(--mx, 0px), var(--my, 0px), 0) scale(var(--ms, 1)); }
+@keyframes pf-pulse { 0% { box-shadow: 0 0 0 0 rgba(200, 52, 31, 0.5); } 100% { box-shadow: 0 0 0 16px rgba(200, 52, 31, 0); } }
+@media (hover: none) { .pf-js .pf-info .pf-mag.pf-pulse { animation: pf-pulse 1.6s ease-out 2; } }
+
+/* 4. 画面に留める場面: 写真をその場に留め、スクロールに合わせて、重なった写真が 1 枚ずつ入れ替わる。JS が無い・動きを減らす設定のときは、写真が縦に並ぶ */
+.pf-stackw { width: var(--box); margin: clamp(10px, 1.1vw, 16px) auto 0; }
+.pf-stack__stage { display: grid; gap: 6px; }
+.pf-st { max-width: var(--cap, 1200px); }
+.pf-stack__notes { display: grid; gap: var(--cg); grid-template-columns: repeat(var(--cn, 1), minmax(0, 1fr)); margin-top: 10px; font-size: clamp(15px, 1.08vw, 16px); line-height: 2.05; letter-spacing: 0.04em; }
+.pf-stack__notes--2 { --cn: 2; }
+.pf-stack__notes p { margin-bottom: 0.7em; }
+.pf-js .pf-stack { --ex: var(--ex-pc, 1.5); height: calc(100svh * (1 + var(--ex))); }
+.pf-js .pf-stack__stage { position: sticky; top: 0; height: 100svh; display: grid; place-items: center; overflow: clip; gap: 0; }
+.pf-js .pf-st { grid-area: 1 / 1; width: min(var(--cap, 1200px), 88%, calc((100svh - 40px) * var(--ar, 1.333))); z-index: calc(var(--n, 3) - var(--i, 0)); transform: translate3d(calc(var(--t, 0) * -118%), calc(var(--t, 0) * -5%), 0) rotate(calc(var(--t, 0) * -10deg + var(--i, 0) * 0.7deg - 1deg)) scale(calc(1 - var(--d, 0) * 0.025)); opacity: calc(1 - var(--t, 0) * 0.85); box-shadow: 0 0 0 clamp(4px, 0.5vw, 8px) var(--paper), 0 10px 24px rgba(25, 24, 21, 0.2); will-change: transform, opacity; }
+
+/* 7. 写真を押すと、その場で大きく見られる */
+.pf-js .pf-ph { cursor: zoom-in; }
+.pf-lb { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; background: rgba(8, 7, 6, 0.9); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.35s linear, visibility 0s linear 0.35s; touch-action: pan-y; overscroll-behavior: contain; cursor: zoom-out; }
+.pf-lb.is-open { opacity: 1; visibility: visible; pointer-events: auto; transition-delay: 0s; }
+.pf-lb .pf-lb__img { width: min(94vw, calc(var(--nw, 1200) * 1.3px), calc(88svh * var(--ar, 1.333))); max-width: none; height: auto; aspect-ratio: var(--ar, 1.333); object-fit: contain; display: block; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5); transform: scale(0.94); opacity: 0; transition: transform 0.45s var(--ease), opacity 0.35s linear; }
+.pf-lb.is-open .pf-lb__img { transform: none; opacity: 1; }
+.pf-lb.is-open .pf-lb__img.is-next { animation: pf-lb-next 0.4s var(--ease) both; }
+.pf-lb.is-open .pf-lb__img.is-prev { animation: pf-lb-prev 0.4s var(--ease) both; }
+@keyframes pf-lb-next { from { opacity: 0; transform: translate3d(5%, 0, 0); } to { opacity: 1; transform: none; } }
+@keyframes pf-lb-prev { from { opacity: 0; transform: translate3d(-5%, 0, 0); } to { opacity: 1; transform: none; } }
+.pf-lb__x, .pf-lb__p, .pf-lb__n { position: absolute; width: 48px; height: 48px; border: 1px solid rgba(255, 255, 255, 0.5); background: rgba(8, 7, 6, 0.4); color: #fff; font-size: 20px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.pf-lb__x { top: 14px; right: 14px; }
+.pf-lb__p { left: 14px; top: 50%; margin-top: -24px; }
+.pf-lb__n { right: 14px; top: 50%; margin-top: -24px; }
+.pf-lb__c { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; color: rgba(255, 255, 255, 0.85); font-size: 13px; letter-spacing: 0.14em; }
+.pf-lb button:focus-visible { outline: 3px solid var(--shu); outline-offset: 2px; }
+
+/* 6. 「続きを読む」: 高さがなめらかに開く（Motion が高さを動かす。JS が無ければ details のまま開く） */
+.pf-more__b { overflow: hidden; }
+
+/* 8. 締め: 文の下に筆の跡が引かれ、朱の印が押される */
+.pf-end__sig { position: relative; height: 70px; margin: 8px 0 12px; }
+.pf-end__brush { position: absolute; left: 0; top: 18px; width: min(72%, 420px); height: 34px; }
+.pf-end__seal { position: absolute; left: min(72%, 420px); top: 0; width: 58px; height: auto; margin-left: -18px; }
 
 /* ───────── スマホ・細い画面（760px 以下）: 写真は画面の幅いっぱいに近く・互い違い、文は写真の間に短く ───────── */
 @media (max-width: 760px) {
@@ -303,9 +395,28 @@ body:has(.pf-root) main { display: contents; }
   .pf-acts { margin-top: 22px; }
   .pf-btn { padding: 0 20px; flex: 1 1 100%; justify-content: center; }
   .pf-btn--sm { flex: 0 0 auto; }
-  .pf-end__seal { right: 0; top: -40px; width: 44px; }
   .pf-quote { font-size: 17px; line-height: 1.95; }
   .pf-closing { font-size: 15px; line-height: 2.05; }
+}
+
+
+/* ───────── スマホ・細い画面: 重いものは軽くする（常時の動きと、スクロールごとの視差・ずれは止める。現れ方・留める場面・読み進みの印は残す） ───────── */
+@media (max-width: 760px) {
+  .pf-cover__ph, .pf-cover__t { transform: none; }
+  .pf-hero .pf-img, .pf-cover .pf-ph--m .pf-img, .pf-cover .pf-ph--s .pf-img { animation: none; }
+  .pf-js [data-rv="curtain"] .pf-ph::after { background: repeating-linear-gradient(90deg, #1b2d5c 0 42px, #2a437f 42px 45px); }
+  .pf-js .pf-st { width: min(var(--cap, 1200px), 92%, calc((100svh - 40px) * var(--ar, 1.333))); }
+  .pf-js .pf-stack { --ex: var(--ex-sp, 1.5); }
+  .pf-hud { width: 18px; }
+  .pf-hud__line { left: 3px; }
+  .pf-hud__no { left: 0; width: 22px; height: 18px; }
+  .pf-hud__no b { font-size: 12px; }
+  .pf-fab { right: 10px; bottom: 10px; }
+  .pf-stackw { width: 100%; }
+  .pf-stack__notes { grid-template-columns: 1fr; margin: 10px 14px 0; font-size: 15px; line-height: 2; }
+  .pf-lb__p, .pf-lb__n { width: 44px; height: 44px; }
+  .pf-end__sig { height: 60px; }
+  .pf-end__seal { width: 48px; }
 }
 
 /* ───────── 動きを減らす設定 ───────── */
@@ -315,4 +426,10 @@ body:has(.pf-root) main { display: contents; }
   .pf-img { transform: scale(1.04) !important; }
   .pf-b { translate: none !important; }
   .pf-rv { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .pf-hero, .pf-hero .pf-img, .pf-cover .pf-img { animation: none !important; scale: none !important; translate: none !important; }
+  .pf-cover__ph, .pf-cover__t { transform: none !important; }
+  .pf-hud, .pf-fab { display: none !important; }
+  .pf-chv, .pf-ch { animation: none !important; opacity: 1 !important; }
+  .pf-mag { transform: none !important; transition: none !important; }
+  .pf-lb, .pf-lb__img { transition: none !important; animation: none !important; }
 }

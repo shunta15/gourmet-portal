@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { sized } from "@/lib/imageUrl";
-import { rowOf, type PfBlock, type PfData, type PfPhoto, type PfText, type PfView } from "@/lib/portal/photoFeature/build";
+import { rowOf, type PfBlock, type PfData, type PfPhoto, type PfText, type PfView, type Rv } from "@/lib/portal/photoFeature/build";
+import Motion from "./Motion";
 import { Brush, Seal, Tate } from "./parts";
 
 // 写真が主役の特集記事（試作）の中身（サーバーコンポーネント）。見た目は photofeature.css。
@@ -11,10 +12,10 @@ import { Brush, Seal, Tate } from "./parts";
 
 type Fx = CSSProperties & Record<`--${string}`, string | number>;
 
-function Fig({ p, cls = "", par = 0.6, ar, big = false, children }: { p: PfPhoto; cls?: string; par?: number; ar?: number; big?: boolean; children?: ReactNode }) {
-  const st: Fx = { "--ar": ar ?? p.ar, "--cap": `${p.cap}px`, "--nh": p.nh || 9999 };
+function Fig({ p, cls = "", par, ar, big = false, rv = true, k = 0, children }: { p: PfPhoto; cls?: string; par?: number | "flow"; ar?: number; big?: boolean; rv?: boolean; k?: number; children?: ReactNode }) {
+  const st: Fx = { "--ar": ar ?? p.ar, "--cap": `${p.cap}px`, "--nh": p.nh || 9999, "--z": p.z, "--k": k };
   return (
-    <figure className={`pf-ph pf-rv ${cls}`} style={st}>
+    <figure className={`pf-ph${rv ? " pf-rv" : ""} ${cls}`} style={st}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="pf-img" data-par={par} src={sized(p.src, big ? 1600 : 1200)} alt={p.alt} loading="lazy" decoding="async" />
       {children}
@@ -44,15 +45,15 @@ function Text({ t, className = "" }: { t: PfText; className?: string }) {
   );
 }
 
-/** 写真の列（1〜3 枚。横に接して並べる。高さはそろえる） */
-function Row({ photos, big = false, overlay }: { photos: PfPhoto[]; big?: boolean; overlay?: Record<number, ReactNode> }) {
+/** 写真の列（1〜3 枚。横に接して並べる。高さはそろえる）。現れ方は親の [data-rvw] の data-rv で決まる */
+function Row({ photos, big = false, overlay, rv }: { photos: PfPhoto[]; big?: boolean; overlay?: Record<number, ReactNode>; rv?: Rv }) {
   const r = rowOf(photos);
   const a0 = photos[0].ar;
   const arm = Math.min(1, Math.max(0.75, a0));
   return (
     <div className="pf-row" style={{ "--cols": r.fr, "--cap": `${r.cap}px`, "--arm": arm, "--n": photos.length } as Fx}>
       {photos.map((p, i) => (
-        <Fig key={p.src} p={p} cls={i === 0 ? "pf-ph--m" : "pf-ph--s"} par={0.3 + i * 0.35} big={big}>
+        <Fig key={p.src} p={p} cls={i === 0 ? "pf-ph--m" : "pf-ph--s"} par={rv === "flow" ? "flow" : 0.3 + i * 0.35} big={big} rv={false} k={i}>
           {overlay?.[i]}
         </Fig>
       ))}
@@ -69,7 +70,7 @@ const HEAD: Record<string, { kind: "ov" | "tz"; side: "l" | "r" }> = {
   E: { kind: "ov", side: "r" },
 };
 
-function ViewBlock({ view, variant }: { view: PfView; variant: string }) {
+function ViewBlock({ view, variant, rv }: { view: PfView; variant: string; rv: Rv }) {
   const id = `v-${view.no}`;
   const n = view.photos.length;
   const h = HEAD[variant] ?? HEAD.A;
@@ -77,16 +78,16 @@ function ViewBlock({ view, variant }: { view: PfView; variant: string }) {
   const heading = (
     <h2 id={`${id}-h`} className={`pf-${h.kind} pf-${h.side}${n === 0 ? " pf-hbare" : ""}`}>
       <span className="pf-no" aria-hidden="true">{view.no}</span>
-      <Tate cols={view.cols} className="pf-vt" label={false} />
+      <Tate cols={view.cols} className="pf-vt" label={false} trigger={n > 0} />
       <span className="pf-vh">{view.name}</span>
     </h2>
   );
   return (
-    <section className={cls} aria-labelledby={`${id}-h`}>
+    <section className={cls} data-no={view.no} aria-labelledby={`${id}-h`}>
       {n > 0 ? (
         <div className="pf-v__ph">
-          <div className="pf-cl__in">
-            <Row photos={view.photos} />
+          <div className="pf-cl__in" data-rvw="" data-rv={rv}>
+            <Row photos={view.photos} rv={rv} />
             {heading}
           </div>
         </div>
@@ -101,10 +102,53 @@ function ViewBlock({ view, variant }: { view: PfView; variant: string }) {
   );
 }
 
+/** 写真の多い視点（または写真だけの面）: 画面に留めて、重なった写真をスクロールで 1 枚ずつ入れ替える（紙芝居）。JS が無い・動きを減らす設定のときは、写真が縦に並ぶ */
+function StackBlock({ views, photos, owner }: { views: PfView[]; photos: PfPhoto[]; owner: number[] }) {
+  const n = photos.length;
+  const first = new Map<number, number>();
+  owner.forEach((o, i) => {
+    if (o >= 0 && !first.has(o)) first.set(o, i);
+  });
+  return (
+    <section className="pf-stackw" data-no={views[0]?.no} data-no2={views[1]?.no} aria-label={views.length ? views.map((v) => v.name).join("・") : "写真"}>
+      <div className="pf-stack" data-stack="" style={{ "--n": n, "--ex-pc": Math.min(2, 0.75 * n), "--ex-sp": Math.min(1.5, 0.5 * n) } as Fx}>
+        <div className="pf-stack__stage">
+          {photos.map((p, i) => {
+            const o = owner[i];
+            const v = o >= 0 ? views[o] : null;
+            const isFirst = o >= 0 && first.get(o) === i;
+            return (
+              <Fig key={p.src} p={p} cls="pf-st" par={0.3} rv={false} k={i}>
+                {v && (
+                  <h2 id={isFirst ? `v-${v.no}-h` : undefined} className="pf-ov pf-l" aria-hidden={isFirst ? undefined : true}>
+                    <span className="pf-no" aria-hidden="true">{v.no}</span>
+                    <Tate cols={v.cols} className="pf-vt" label={false} />
+                    {isFirst && <span className="pf-vh">{v.name}</span>}
+                  </h2>
+                )}
+              </Fig>
+            );
+          })}
+        </div>
+      </div>
+      {views.length > 0 && (
+        <div className={`pf-stack__notes pf-stack__notes--${views.length}`}>
+          {views.map((v) => (
+            <div key={v.no} className="pf-v__tx pf-rv">
+              {v.heading && <p className="pf-hd">{v.heading}</p>}
+              <Text t={{ head: v.head, rest: v.rest }} />
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
 /** 巻頭に写真を出した視点の文（小見出しは巻頭の写真の上にある） */
 function NoteBlock({ view }: { view: PfView }) {
   return (
-    <section className="pf-v pf-v--note" aria-label={view.name}>
+    <section className="pf-v pf-v--note" data-no={view.no} aria-label={view.name}>
       <div className="pf-v__tx pf-rv">
         {view.heading && <p className="pf-hd">{view.heading}</p>}
         <Text t={{ head: view.head, rest: view.rest }} />
@@ -114,7 +158,7 @@ function NoteBlock({ view }: { view: PfView }) {
 }
 
 /** 縦長の写真の視点 a と、次の視点 b の写真を、高さをそろえて横に接して並べる。文は、それぞれの写真の下に */
-function PairBlock({ a, b }: { a: PfView; b: PfView }) {
+function PairBlock({ a, b, rv }: { a: PfView; b: PfView; rv: Rv }) {
   const photos = [...a.photos, ...b.photos];
   const bw = b.photos.reduce((x, p) => x + p.ar, 0);
   const rr = rowOf(photos);
@@ -123,15 +167,15 @@ function PairBlock({ a, b }: { a: PfView; b: PfView }) {
   const head = (v: PfView, id: string, kind: "ov" | "tz", side: "l" | "r") => (
     <h2 id={`${id}-h`} className={`pf-${kind} pf-${side}`}>
       <span className="pf-no" aria-hidden="true">{v.no}</span>
-      <Tate cols={v.cols} className="pf-vt" label={false} />
+      <Tate cols={v.cols} className="pf-vt" label={false} trigger />
       <span className="pf-vh">{v.name}</span>
     </h2>
   );
   return (
-    <section className="pf-v pf-pr" style={{ "--cap": `${rr.cap}px` } as Fx} aria-label={`${a.name}・${b.name}`}>
+    <section className="pf-v pf-pr" data-no={a.no} data-no2={b.no} style={{ "--cap": `${rr.cap}px` } as Fx} aria-label={`${a.name}・${b.name}`}>
       <div className="pf-pr__ph">
-        <div className="pf-cl__in">
-          <Row photos={photos} overlay={{ 0: head(a, idA, "ov", "l"), [photos.length - 1]: head(b, idB, "ov", "r") }} />
+        <div className="pf-cl__in" data-rvw="" data-rv={rv}>
+          <Row photos={photos} rv={rv} overlay={{ 0: head(a, idA, "ov", "l"), [photos.length - 1]: head(b, idB, "ov", "r") }} />
         </div>
       </div>
       <div className="pf-pr__tx" style={{ "--cols2": `${a.photos[0].ar}fr ${bw}fr` } as Fx}>
@@ -196,13 +240,13 @@ function assign(slots: Slot[], photos: PfPhoto[]): PfPhoto[] {
   return best.map((i) => photos[i]);
 }
 
-function BandBlock({ photos, no }: { photos: PfPhoto[]; no: number }) {
+function BandBlock({ photos, no, rv }: { photos: PfPhoto[]; no: number; rv: Rv }) {
   const list = photos.slice(0, 6);
   const tpl = BAND[list.length];
   const placed = assign(tpl.slots, list);
   return (
     <section className={`pf-band pf-band--${list.length}`} aria-label={`写真 ${no}`}>
-      <div className="pf-band__in" style={{ "--bh": `${tpl.h}cqw` } as Fx}>
+      <div className="pf-band__in" data-rvw="" data-rv={rv} style={{ "--bh": `${tpl.h}cqw` } as Fx}>
         {tpl.slots.map((s, i) => (
           <div
             key={i}
@@ -210,7 +254,7 @@ function BandBlock({ photos, no }: { photos: PfPhoto[]; no: number }) {
             data-drift={i % 2 === 0 ? "0.8" : "-1.1"}
             style={{ "--l": `${s.l}%`, "--t": `${s.t}cqw`, "--w": `${s.w}cqw`, "--cap": `${placed[i].cap}px`, "--ar0": placed[i].ar, zIndex: s.z ?? 1 } as Fx}
           >
-            <Fig p={placed[i]} ar={s.ar} par={0.4 + (i % 3) * 0.3} cls={i > 0 && s.z ? "pf-sm" : ""} />
+            <Fig p={placed[i]} ar={s.ar} par={0.4 + (i % 3) * 0.3} cls={i > 0 && s.z ? "pf-sm" : ""} rv={false} k={i} />
           </div>
         ))}
         <Brush kind="dash" className="pf-band__br" delay={0.2} reveal />
@@ -267,7 +311,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
                 />
               </div>
             ) : (
-              <Fig p={hero} cls="pf-hero" par={0.6} big />
+              <Fig p={hero} cls="pf-hero" rv={false} big />
             )}
             <Brush kind="wave" className="pf-cover__br" delay={0.5} />
           </div>
@@ -285,7 +329,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
               {shopLine && <span>{shopLine}</span>}
             </span>
             {shopHref && (
-              <Link href={shopHref} className="pf-btn pf-btn--sm">
+              <Link href={shopHref} className="pf-btn pf-btn--sm pf-mag">
                 店ページを見る →
               </Link>
             )}
@@ -300,7 +344,17 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
 
       <div id="main" className="pf-body">
         {D.blocks.map((b: PfBlock, i) =>
-          b.kind === "view" ? <ViewBlock key={i} view={b.view} variant={b.variant} /> : b.kind === "pair" ? <PairBlock key={i} a={b.a} b={b.b} /> : b.kind === "note" ? <NoteBlock key={i} view={b.view} /> : <BandBlock key={i} photos={b.photos} no={b.no} />,
+          b.kind === "view" ? (
+            <ViewBlock key={i} view={b.view} variant={b.variant} rv={b.rv} />
+          ) : b.kind === "pair" ? (
+            <PairBlock key={i} a={b.a} b={b.b} rv={b.rv} />
+          ) : b.kind === "note" ? (
+            <NoteBlock key={i} view={b.view} />
+          ) : b.kind === "stack" ? (
+            <StackBlock key={i} views={b.views} photos={b.photos} owner={b.owner} />
+          ) : (
+            <BandBlock key={i} photos={b.photos} no={b.no} rv={b.rv} />
+          ),
         )}
       </div>
 
@@ -320,7 +374,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
           )}
           <p className="pf-acts">
             {shopHref && (
-              <Link href={shopHref} className="pf-btn">
+              <Link href={shopHref} className="pf-btn pf-mag">
                 店ページを見る →
               </Link>
             )}
@@ -340,7 +394,6 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
       {(D.quote.length > 0 || D.closing.head) && (
         <section className="pf-end" aria-label="締めの文">
           <div className="pf-end__in pf-rv">
-            <Seal className="pf-end__seal" delay={0.2} reveal />
             {D.quote.length > 0 && (
               <blockquote className="pf-quote">
                 {D.quote.map((x, i) => (
@@ -349,9 +402,14 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
               </blockquote>
             )}
             {D.closing.head && <Text t={D.closing} className="pf-closing" />}
+            {/* 締めの文の下に、筆の跡が引かれ、朱の印が押される */}
+            <div className="pf-end__sig" aria-hidden="true">
+              <Brush kind="dash" className="pf-end__brush" delay={0.1} reveal />
+              <Seal className="pf-end__seal" delay={0.95} reveal />
+            </div>
             <p className="pf-acts pf-acts--end">
               {shopHref && (
-                <Link href={shopHref} className="pf-btn">
+                <Link href={shopHref} className="pf-btn pf-mag">
                   店ページを見る →
                 </Link>
               )}
@@ -367,6 +425,20 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
         <p className="pf-ft__l">マチノワ</p>
         <p className="pf-ft__s">© 2026 マチノワ / 街の輪（試作 — 非公開のページです）</p>
       </footer>
+
+      {/* 読み進みの印（画面の端の朱の線 + いまの視点の番号）と、店ページへの小さなボタン。どちらも JS が動いたときだけ出る */}
+      <div className="pf-hud" aria-hidden="true">
+        <span className="pf-hud__line"><i /></span>
+        <span className="pf-hud__no"><b className="pf-hud__cur" /><b className="pf-hud__prev" /></span>
+      </div>
+      {shopHref && (
+        <Link href={shopHref} className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
+          店ページを見る →
+        </Link>
+      )}
+
+      {/* 動き・大きく見る幕（記事のページごとに付く。入口のページには付かない） */}
+      <Motion />
     </>
   );
 }
