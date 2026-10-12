@@ -57,6 +57,7 @@ export function verticalSitemap(key: PortalVertical) {
       for (const f of await getGeneratedFeatures(key)) add(`${v.path}/feature/${encodeURIComponent(f.id)}`, all.length);
     }
 
-    return paths.map((path) => ({ url: absUrl(path) }));
+    // Next.js は <loc> を XML エスケープしないので、クエリの & は自分で &amp; にする(さがすの絞り込み URL に & がある)
+    return paths.map((path) => ({ url: absUrl(path).replace(/&/g, "&amp;") }));
   };
 }
