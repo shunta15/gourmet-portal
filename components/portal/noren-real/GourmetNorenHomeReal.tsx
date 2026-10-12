@@ -68,7 +68,7 @@ export default async function GourmetNorenHomeReal({
 
   const chapters = buildChapters(restaurants, regionName);
   const openSearchData = buildOpenSearchData(restaurants);
-  const blockTop = searchLook === "block" ? buildBlockTop(restaurants, openSearchData.cuisines) : null;
+  const blockTop = searchLook === "block" ? buildBlockTop(restaurants, openSearchData.cuisines, openSearchData.regions) : null;
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
@@ -110,7 +110,7 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandPts={blockTop.bandPts} bandRegion={blockTop.bandRegion} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
+      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandRegions={blockTop.bandRegions} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">

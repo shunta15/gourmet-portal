@@ -1,6 +1,6 @@
 "use client";
 /**
- * 地図のピンを押したときに出る「店の情報の札」（ShopMap の a・e・f・g・h と、入口の帯の地図で共通）。写真つきの札は地図に立てない（ピンだけ）。
+ * 地図のピンを押したときに出る「店の情報の札」（ShopMap の a・e・f・g・h で共通）。写真つきの札は地図に立てない（ピンだけ）。
  *  - 1 軒: 店の写真 1 枚・店名・エリアと最寄り駅・業種・「店のページへ →」。店のデータにある事実だけ（星・評価の数字・「おすすめ」などは出さない）。
  *  - 画面上で近いピンが 2 つ以上（CLUSTER_PX 以内）: その場所の店の一覧（店名を並べる。最大 LIST_MAX 軒 + 「ほか n 軒」）。選ぶとその店の情報に替わる（「← この辺りの店」で一覧へ戻れる）。
  *  - 置き場所: PC は、押したピンの上（入らなければ下、それも入らなければ横）に、地図の箱の中へ収めて出す。スマホ（幅 520 未満）は、吹き出しではなく、箱の下の端に出る横長の札。
@@ -8,7 +8,6 @@
  */
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
-import { createPortal } from "react-dom";
 import type { MapPt } from "./ShopMap";
 
 /** 札の幅（PC。px） */
@@ -20,7 +19,7 @@ export const CLUSTER_PX = 22;
 /** 幅がこれ未満の箱は、吹き出しでなく下の端の横長の札 */
 export const NARROW_PX = 520;
 
-/** 押されたピン（origin）と、その場所の店（ids。2 軒以上なら一覧）。id が入っていれば、その 1 軒の情報。ax・ay は、札を置く面（箱または host）での、ピンの先の位置 */
+/** 押されたピン（origin）と、その場所の店（ids。2 軒以上なら一覧）。id が入っていれば、その 1 軒の情報。ax・ay は、札を置く面（地図の箱）での、ピンの先の位置 */
 export type PinSel = { origin: string; ids: string[]; id: string | null; ax: number; ay: number; bw: number; bh: number; narrow: boolean; byKey: boolean };
 
 /** 最寄り駅の表示: 「路線… 駅名駅 出口 徒歩N分」から、駅名と徒歩だけ。取り出せなければ、データのまま（長ければ切る） */
@@ -50,15 +49,12 @@ function place(ax: number, ay: number, bw: number, bh: number, h: number): CSSPr
 export default function PinCard({
   byId,
   sel,
-  host,
   onPick,
   onBack,
   onClose,
 }: {
   byId: Map<string, MapPt>;
   sel: PinSel;
-  /** 札を出す先（入口の帯のように、地図の箱の外へ出したいとき）。無ければ、呼び出し側が置いた場所にそのまま */
-  host?: HTMLElement | null;
   onPick: (id: string) => void;
   onBack: () => void;
   onClose: () => void;
@@ -134,5 +130,5 @@ export default function PinCard({
       )}
     </div>
   );
-  return host ? createPortal(node, host) : node;
+  return node;
 }

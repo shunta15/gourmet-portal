@@ -3,12 +3,10 @@ import BlockFonts from "./BlockFonts";
 import BlockTopForm from "./BlockTopForm";
 import BlockTopMap from "./BlockTopMap";
 import { ArrowIcon } from "./BlockSearchParts";
-import type { MapPt } from "./ShopMap";
 import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import type { BlockTile } from "@/lib/portal/noren/blockTop";
+import type { JpRegion } from "@/lib/portal/noren/jpBand";
 import type { OpenView } from "@/lib/portal/noren/looks";
-// 地図の部品（ShopMap の vMp- の見た目）の CSS は scenesearch.css にある（検索のページは ShopCard 経由で読む。入口は、ここで読む）
-import "./scenesearch.css";
 import "./blocktop.css";
 
 /** 紙の縁（ざらっとした切り口）の輪郭。毎回同じ形（疑似乱数の種で決める）。viewBox は 1200×24 */
@@ -43,10 +41,10 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
 
 /**
  * グルメの入口（/gourmet）の「店をさがす」の節の block の見た目（参考画像 1 枚目の形。この節の中だけ明るい。lib/portal/noren/looks.ts の OPEN_SEARCH_LOOK）。
- * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（イラスト地図 + 橙と紺のピン + 白い枠の店の写真の札）→ 利用シーンの札（小さく）。
+ * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）→ 利用シーンの札（小さく）。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
-export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion, view }: { data: OpenSearchData; tiles: BlockTile[]; bandPts: MapPt[]; bandRegion: string; view: OpenView }) {
+export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { data: OpenSearchData; tiles: BlockTile[]; bandRegions: JpRegion[]; view: OpenView }) {
   const dark = view.tone === "dark";
   return (
     <section className={`vBkt ${dark ? "vBkt--dark" : "vBkt--block"} vBkt--band-${view.band}`} id="open-search" aria-labelledby="vBkt-h">
@@ -97,7 +95,7 @@ export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion, view
         </div>
       </div>
 
-      <BlockTopMap pts={bandPts} regionKey={bandRegion} mode={view.band}>
+      <BlockTopMap regions={bandRegions} mode={view.band}>
         <div className="vBkt-fade" aria-hidden="true" />
         <div className="vBkt-bt" id="open-area">
           <div className="vBkt-bt-in vN-rv">
@@ -108,12 +106,11 @@ export default function OpenSearchBlock({ data, tiles, bandPts, bandRegion, view
               <br />
               街を歩いて、おいしい出会いを。
             </p>
-            <Link href="/search?tab=area" className="vBkt-btn">
+            <Link href="/search" className="vBkt-btn">
               エリアから探す <ArrowIcon />
             </Link>
           </div>
         </div>
-        <p className="vBkt-credit">地図: 国土地理院ベクトルタイルをもとに作成</p>
       </BlockTopMap>
 
       <div className="vBkt-scn" id="open-scene">

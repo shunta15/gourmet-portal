@@ -84,7 +84,6 @@ function LeafMap({
   circles,
   onPick,
   reduce,
-  cardHost,
 }: {
   mode: MapMode;
   regionKey: string;
@@ -92,7 +91,6 @@ function LeafMap({
   circles: { key: string; name: string; count: number; lat: number; lng: number }[];
   onPick: (region: string) => void;
   reduce: boolean;
-  cardHost?: HTMLElement | null;
 }) {
   // e・f・g: あらかじめ画像（WebP）にした地図を、実際の範囲に敷く（ピン・札・寄せ方は a と同じ）。f 古地図・g 夜の灯りは、画像のある地域だけ（ほかは e の絵）
   const isOv = mode === "e" || mode === "f" || mode === "g";
@@ -105,8 +103,6 @@ function LeafMap({
   selRef.current = sel;
   const ptsRef = useRef(pts);
   ptsRef.current = pts;
-  const hostRef = useRef(cardHost);
-  hostRef.current = cardHost;
   const byId = useMemo(() => new Map(pts.map((p) => [p.id, p])), [pts]);
   const markersRef = useRef<Map<string, import("leaflet").Marker>>(new Map());
   // e・f・g: いま敷いている地図の画像（粗い層・細かい層）と、その url
@@ -282,12 +278,9 @@ function LeafMap({
         })
         .filter((o) => o.d <= CLUSTER_PX)
         .sort((a, b) => a.d - b.d || a.id.localeCompare(b.id));
-      const host = hostRef.current;
-      const cr = el.getBoundingClientRect();
-      const hr = host ? host.getBoundingClientRect() : cr;
-      const bw = host ? host.clientWidth : el.clientWidth;
-      const bh = host ? host.clientHeight : el.clientHeight;
-      setSel({ origin: id, ids: near.map((o) => o.id), id: near.length >= 2 ? null : id, ax: tip.x + (cr.left - hr.left), ay: tip.y + (cr.top - hr.top), bw, bh, narrow: bw < NARROW_PX, byKey });
+      const bw = el.clientWidth;
+      const bh = el.clientHeight;
+      setSel({ origin: id, ids: near.map((o) => o.id), id: near.length >= 2 ? null : id, ax: tip.x, ay: tip.y, bw, bh, narrow: bw < NARROW_PX, byKey });
     };
     pts.forEach((p, i) => {
       const delay = delayOf(rank.get(p.id) ?? i);
@@ -438,7 +431,7 @@ function LeafMap({
     <div className={`vMp-leaf vMp-leaf--${mode}`} ref={ref} role="region" aria-label="店の地図">
       {!ready && <div className="vMp-maploading">地図を読み込み中…</div>}
       {isOv && <p className="vMp-credit">地図: 国土地理院ベクトルタイルをもとに作成</p>}
-      {sel && <PinCard byId={byId} sel={sel} host={cardHost} onPick={(id) => setSel({ ...sel, id })} onBack={() => setSel({ ...sel, id: null })} onClose={() => setSel(null)} />}
+      {sel && <PinCard byId={byId} sel={sel} onPick={(id) => setSel({ ...sel, id })} onBack={() => setSel({ ...sel, id: null })} onClose={() => setSel(null)} />}
     </div>
   );
 }
@@ -629,12 +622,9 @@ export default function ShopMap({
   prefRegion,
   regionCounts,
   onPick,
-  cardHost,
 }: {
   mode: MapMode;
   regionKey: string;
-  /** 店の情報の札を出す先（入口の帯のように、地図の箱の外へ出したいとき。省くと、地図の箱の中） */
-  cardHost?: HTMLElement | null;
   /** 位置のある店（絞り込んだ全部。上限は設けない） */
   pts: MapPt[];
   /** 県ごとの店の数（絞り込んだ店。位置の無い店も住所の県で数えている） */
@@ -671,7 +661,7 @@ export default function ShopMap({
       ) : eff === "h" && (regionKey || ILLUST_JAPAN.h) ? (
         <TiltMap key={regionKey || "japan"} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} />
       ) : (
-        <LeafMap mode={eff === "h" ? "e" : eff} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} cardHost={cardHost} />
+        <LeafMap mode={eff === "h" ? "e" : eff} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} />
       )}
     </div>
   );
