@@ -11,7 +11,7 @@ import type { FeatureArticle, Restaurant } from "@/lib/regions";
 import { isGoogleMapsUrl } from "@/lib/maps";
 import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 import { collectPhotos, type Photo } from "./collect";
-import { gateUnitsOf, nrWordsOf } from "./featured";
+import { gateUnitsFor, nrWordsFor } from "./featured";
 
 export type PfPhoto = {
   src: string;
@@ -38,6 +38,8 @@ export type PfView = {
   name: string;
   /** 縦書きの小見出しの列 */
   cols: string[];
+  /** 写真のない視点で、和紙の面に大きな縦書きで置く見出しの列（1 列 8 字ほど・最大 4 列。写真のある視点では使わない） */
+  big: string[];
   /** 項目の小見出し（あれば） */
   heading: string;
   /** 本文の最初の 2〜3 文（90〜120 字ほど）。残りは rest（「続きを読む」で開く） */
@@ -102,8 +104,8 @@ export function toPf(p: Photo, alt: string, z = 1.04): PfPhoto {
 const OPEN_OK = "、。！？」』）・";
 const NO_HEAD = "、。，．」』）！？ー・";
 
-/** 文字の並びを n 列に割る。句読点の後ろで切れるようにし、列の先頭に 、。 が来ないようにする */
-export function splitBalanced(chars: string[], n: number): string[] {
+/** 文字の並びを n 列に割る。句読点の後ろで切れるようにし、列の先頭に 、。 が来ないようにする。isCut（あれば）は、i 字めの手前が語の切れ目か（切れ目でない所は切りにくくする） */
+export function splitBalanced(chars: string[], n: number, isCut?: (i: number) => boolean): string[] {
   const len = chars.length;
   if (n <= 1 || len <= 2) return [chars.join("")];
   const out: string[] = [];
@@ -116,6 +118,7 @@ export function splitBalanced(chars: string[], n: number): string[] {
       let d = Math.abs(i - ideal);
       if (!OPEN_OK.includes(chars[i - 1])) d += 4;
       if (NO_HEAD.includes(chars[i])) d += 20;
+      if (isCut && !isCut(i)) d += 6;
       if (d < bd) {
         bd = d;
         best = i;
@@ -128,14 +131,31 @@ export function splitBalanced(chars: string[], n: number): string[] {
   return out;
 }
 
-/** 縦書きの 1 列に入れる字数の上限 maxPer で、列に割る（最大 maxCols 列） */
-export function tateCols(text: string, maxPer: number, maxCols = 3): string[] {
+/** 語の切れ目（文字の位置。Array.from の数え方）。Intl.Segmenter が使えなければ空 */
+function wordCuts(text: string): Set<number> {
+  const cuts = new Set<number>();
+  try {
+    const seg = new Intl.Segmenter("ja", { granularity: "word" });
+    let pos = 0;
+    for (const x of seg.segment(text)) {
+      pos += Array.from(x.segment).length;
+      cuts.add(pos);
+    }
+  } catch {
+    /* 語の切れ目が取れなければ、字数だけで割る */
+  }
+  return cuts;
+}
+
+/** 縦書きの 1 列に入れる字数の上限 maxPer で、列に割る（最大 maxCols 列）。words が true のときは、語の途中で切れないようにする（写真のない視点の大きな見出し用） */
+export function tateCols(text: string, maxPer: number, maxCols = 3, words = false): string[] {
   const chars = Array.from(text.trim());
   if (chars.length <= maxPer) return [chars.join("")];
-  const byPhrase = phraseCols(chars, -1, maxPer);
+  const cuts = words ? wordCuts(chars.join("")) : undefined;
+  const byPhrase = phraseCols(chars, -1, maxPer, cuts);
   if (byPhrase && byPhrase.length <= maxCols) return byPhrase;
   const n = Math.min(maxCols, Math.ceil(chars.length / maxPer));
-  return splitBalanced(chars, n);
+  return splitBalanced(chars, n, cuts && cuts.size > 0 ? (i) => cuts.has(i) : undefined);
 }
 
 /** 空白を整える。日本語の字の隣の空白は落とし、英数字どうしの間の空白だけを 1 つ残す */
@@ -161,7 +181,7 @@ const ENT: Record<string, string> = { "&amp;": "&", "&lt;": "<", "&gt;": ">", "&
  * 句読点の後ろ・屋号（em）の手前で切って、列にする（読みの切れ目を残す）。長すぎる句はさらに割り、全部で 4 列を超えるなら null。
  * 短い句が続くときは、隣とまとめて 4 列以内にする。
  */
-function phraseCols(chars: string[], emAt: number, maxPer: number): string[] | null {
+function phraseCols(chars: string[], emAt: number, maxPer: number, cuts?: Set<number>): string[] | null {
   const len = chars.length;
   const cut: number[] = [];
   for (let i = 1; i < len; i++) {
@@ -182,9 +202,14 @@ function phraseCols(chars: string[], emAt: number, maxPer: number): string[] | n
     pieces = [...pieces.slice(0, k), [...pieces[k], ...pieces[k + 1]], ...pieces.slice(k + 2)];
   }
   const out: string[] = [];
+  let off = 0;
   for (const p of pieces) {
     if (p.length <= maxPer + 1) out.push(p.join(""));
-    else out.push(...splitBalanced(p, Math.ceil(p.length / maxPer)));
+    else {
+      const o = off;
+      out.push(...splitBalanced(p, Math.ceil(p.length / maxPer), cuts && cuts.size > 0 ? (i) => cuts.has(o + i) : undefined));
+    }
+    off += p.length;
   }
   return out.length <= 4 ? out : null;
 }
@@ -279,7 +304,9 @@ export function splitExcerpt(text: string, min = 90, max = 150): PfText {
 export function rowOf(photos: PfPhoto[]): { fr: string; cap: number; ar: number } {
   const sum = photos.reduce((a, p) => a + p.ar, 0);
   const cap = Math.min(...photos.map((p) => (p.cap * sum) / p.ar));
-  return { fr: photos.map((p) => `${p.ar}fr`).join(" "), cap: Math.round(cap + 6 * (photos.length - 1)), ar: ROUND(sum) };
+  // 1 枚だけの列は、枠いっぱい（縦長の 0.75fr のように 1 未満の fr だけの列は、CSS の仕様で枠の 75% までしか使われず、横が空く）
+  const fr = photos.length === 1 ? "minmax(0, 1fr)" : photos.map((p) => `${p.ar}fr`).join(" ");
+  return { fr, cap: Math.round(cap + 6 * (photos.length - 1)), ar: ROUND(sum) };
 }
 
 /* ───────── 店の案内・行き先 ───────── */
@@ -320,25 +347,6 @@ const VARIANTS = ["A", "C", "B", "D", "E"] as const;
 export const PHOTO_BUDGET = 12;
 const PER_VIEW_MAX = 3;
 
-/**
- * 視点の頭に掛ける小さな暖簾に染め抜く語: 見出しにある語だけ（字を拾い集めて並べない）。
- * 見出しの最初の節（、。・で区切る）の漢字・カタカナの連なり（2〜4 字）を選ぶ。無ければ見出し全体から、それも無ければ見出しの最初の 2 字。
- * 最後が「り」で終わる語（最寄り）は「り」まで含める。
- */
-export function nrChars(_no: string, name: string): string[] {
-  const clauses = name.split(/[、。・\s（）()「」]/).filter(Boolean);
-  // 4 字までの連なりを探す（5 字以上の連なり = 長い語は、途中で切らないので選ばない）
-  const runs = (text: string) => Array.from(text.matchAll(/[\u4e00-\u9fff々ァ-ヶー]+り?/g)).map((m) => m[0]).filter((w) => Array.from(w).length >= 2 && Array.from(w).length <= 4 + (w.endsWith("り") ? 1 : 0));
-  const first = runs(clauses[0] ?? "")[0] ?? runs(name)[0];
-  if (first) return Array.from(first);
-  return Array.from(name).filter((ch) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(ch)).slice(0, 2);
-}
-
-/** 小さな暖簾の語: 表（featured.ts の NR_WORDS。見出しの中にある語だけ）にあればそれ、なければ見出しの最初の節の語（nrChars） */
-function nrWordFor(articleId: string, i: number, no: string, name: string): string[] {
-  const w = nrWordsOf(articleId)?.[i];
-  return w && name.includes(w) ? Array.from(w) : nrChars(no, name);
-}
 
 /**
  * 「横に流れる帯」（pf-film。写真が 1 枚ずつの視点 3 つが、スクロールで横へ流れる）を作るか。2026-10-12 オーナー指示「おびなしで一旦確定、横に流れるものは残しておいて」で、既定は作らない（どの記事も紅梅庵の形）。
@@ -364,14 +372,17 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, o
   used += pool.length;
   const fromShop = pool.filter((p) => c.shop.includes(p)).length;
 
+  // 小さな暖簾の語: 記事 ID の表 → 店 ID の直しの表 → 自動（featured.ts の nrWordsFor）。見出しの中にある語だけ・同じ記事の中で重ならない
+  const nrWords = nrWordsFor(A.id, store?.id ?? null, A.ranking.map((r) => r.name));
   const views: PfView[] = A.ranking.map((r, i) => ({
     no: String(i + 1).padStart(2, "0"),
     name: r.name,
     cols: tateCols(r.name, 11, 3),
+    big: tateCols(r.name, 8, 4, true),
     heading: r.heading ? stripTabelogScore(r.heading) : "",
     ...splitExcerpt(stripTabelogScore(r.desc)),
     photos: vPhotos[i].map((p) => toPf(p, alt(r.name))),
-    nr: nrWordFor(A.id, i, String(i + 1).padStart(2, "0"), r.name),
+    nr: Array.from(nrWords[i]),
   }));
 
   // 足りない写真が 1 枚だけのときは、本文のいちばん長い視点に足して横に並べる（2 枚以上あれば「写真だけの面」にする）
@@ -473,10 +484,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, o
     hero: heroPf,
     heroAlt: alt("主役の写真"),
     coverPair,
-    gate: (() => {
-      const g = gateUnitsOf(A.id);
-      return g ? [...g] : null;
-    })(),
+    gate: store ? gateUnitsFor(A.id, { id: store.id, name: store.name, area: store.area }) : null,
     shop: store ? { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area } : null,
     blocks,
     info: infoRows(store),

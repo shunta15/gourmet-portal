@@ -1,6 +1,8 @@
 /**
- * 写真が主役の形（components/portal/photoFeature/）で出す、店 1 軒の特集記事（1 店 1 ページの対象 50 本）の、手で選んだ字の表。軽いファイル（fs・process は使わない）。
- * 対象の ID は lib/portal/noren/onePage.ts の ONE_PAGE_SHOP_OF_FEATURE（ID の完全一致。店名・題の部分一致は使わない）。先頭の 20 本は 2026-10-11 に、続く 30 本は 2026-10-12 に表を作った。
+ * 写真が主役の形（components/portal/photoFeature/）で出す、店 1 軒の特集記事の、字の表と自動の決め方。軽いファイル（fs・process は使わない）。
+ * 対象の ID は lib/portal/noren/onePage.ts の ONE_PAGE_SHOP_OF_FEATURE（ID の完全一致。店名・題の部分一致は使わない）。先頭の 20 本は 2026-10-11 に、続く 30 本は 2026-10-12 に手で表を作った。
+ * 2026-10-13 に対象を広げた分（写真の枚数を問わない 175 本）と、特集記事の無い店は、表に無い場合の自動の決め方（lib/portal/photoFeature/autoWords.ts）で決め、全部を一覧にして目で確かめて、
+ * おかしいものだけを下の GATE_FIX_BY_SHOP・NR_FIX_BY_SHOP（どちらも店 ID の表）で直した。参照の順は、記事 ID の表（NR_WORDS・GATE_UNITS）→ 店 ID の直しの表 → 自動。
  *
  * 1. NR_WORDS: 視点（見どころ）の頭に掛ける小さな暖簾の語（2〜5 字）。記事 ID → 視点 1〜5 の語。
  *    その視点の見出し（記事の ranking[i].name）の中にある語だけ。見出しにない語・作った語は入れない。見出しの核になる語を選んだ。
@@ -18,6 +20,7 @@
  *      - 「ロースタリーフィト」（9 字）は、業態の「ロースタリー」を外して「フィト」だけにした（空白がなく、そのままでは 9 字で 6 字を超えるため）。「元祖煮ぼうとうの國良」も、料理名の「元祖煮ぼうとう」を外して「國良」だけ。
  */
 import { isOnePageFeature } from "@/lib/portal/noren/onePage";
+import { autoGateUnits, autoNrWord } from "./autoWords";
 
 const NFC = (s: string) => s.normalize("NFC");
 /** この記事 ID は、写真が主役の形で出す対象（1 店 1 ページの 50 本）のひとつか（ID の完全一致） */
@@ -130,6 +133,139 @@ export const GATE_UNITS: Readonly<Record<string, readonly string[]>> = {
   OyatsuBoxPiyo: ["Oyatsu", "Box", "Piyo"],
   "元祖煮ぼうとうの國良": ["國", "良"],
 };
+
+/**
+ * 入口の暖簾の字の直し（店 ID → 字の並び。2026-10-13）。自動の決め方（autoGateUnits）で決められない店（7 字を超える・欧文の読みがなが混ざる・屋号の核が空白で分かれていない）と、
+ * 自動の結果が屋号として読めなかった店だけ。字は店名の中にあるものだけ（作らない）。
+ */
+export const GATE_FIX_BY_SHOP: Readonly<Record<string, readonly string[]>> = {
+  r300: ["ウ", "ッ", "チ", "ー", "ノ"], // クッチーナ ウッチーノ Cucina Ucchi～no（クッチーナ = 業態・Cucina の読みを外す）
+  r314: ["CAFÉ", "DE", "FLEUR"], // CAFÉ DE FLEUR カフェ・ドゥ・フルール（欧文の屋号を使う）
+  r319: ["ネ", "ロ"], // トラットリア ネロ nero（nero は読みがな）
+  r323: ["霧", "笛"], // 食事・呑み処霧笛
+  r331: ["Plaisir"], // Plaisir プレジール
+  r357: ["Le", "Lien", "RODAN"], // Le Lien.RODAN
+  r358: ["FOCACCERIA", "PUFFER"], // フォカッチェリアパッファー FOCACCERIA PUFFER
+  r362: ["ひ", "つ", "じ", "や"], // 北海道本格ジンギスカン ひつじや
+  r366: ["樂", "食", "中", "華", "孝"], // 樂食中華 孝（KOU)
+  r372: ["木", "下", "商", "店"], // 雑貨と喫茶と宿題カフェ 木下商店
+  r381: ["麺", "楽", "屋"], // らぁめん麺楽屋上尾店 つけ麺（上尾店は支店名）
+  r387: ["CROSSROAD"], // Coffee & Lunch CROSSROAD
+  r392: ["山", "波", "月"], // 炉ばたやき山波月
+  r398: ["ち", "ゃ", "ん", "ち", "ゃ", "ん", "こ"], // 酒菜ちゃんちゃんこ
+  r400: ["は", "れ", "い", "ろ"], // ごはん屋はれいろ
+  r404: ["マ", "ッ", "ク", "ス", "食", "堂"], // マックス食堂 酒・肴・お田
+  r415: ["シ", "ュ", "ビ", "ラ", "バ"], // 飯＆酒 シュビラバ
+  r439: ["華"], // 野菜と魚を楽しむ店 華－hana
+  r442: ["あ", "じ", "ゃ", "り"], // 神宮茶処あじゃり
+  r448: ["匠", "ち", "ゃ", "ん"], // かき小屋 匠ちゃん
+  r456: ["す", "ず", "虫", "庵"], // 中佐中店すず虫庵
+  r472: ["天", "ノ", "松"], // 大衆天ぷら天ノ松
+  r474: ["チ", "ャ", "ー", "ラ", "ー", "メ", "ン"], // チャー（車）ラーメン
+  r478: ["い", "わ", "た", "に", "家"], // 食道楽 いわたに家
+  r479: ["焼", "肉", "8", "7"], // 焼肉87 （ハナ）
+  r488: ["あ", "ら", "や"], // 焼鶏ラーメンあらや
+  r494: ["麺", "歩"], // 手打ちそば処 麺歩（めんぽ）
+  r496: ["ジ", "ッ", "リ", "オ"], // ジッリオ・ディ・フィレンツェ（最初の語）
+  r499: ["s", "i", "k", "i"], // うどんとお酒と彩りsiki
+  r518: ["ぱ", "ぷ", "り", "か"], // 蔵カフェ・ぱぷりか
+  r523: ["café", "oniton"], // café oniton カフェ オニトン
+};
+
+/**
+ * 小さな暖簾の語の直し（店 ID → 視点の番号（1 始まり）→ 語。2026-10-13）。自動の取り方（autoNrWord）の結果が、
+ * 一般的すぎる語・途中で切れた語・数の言い方・語として弱いもの（営業・来店・立地・距離・素材・徒歩…）だったものだけ。
+ * 語は、その視点の見出し（記事の ranking[i].name）の中にある字だけ（無ければ使われず、自動に戻る）。
+ */
+export const NR_FIX_BY_SHOP: Readonly<Record<string, Readonly<Record<number, string>>>> = {
+  r301: { 4: "店内", 5: "教育大" },
+  r310: { 3: "飲み放題" },
+  r311: { 4: "空間設計" },
+  r313: { 3: "通し営業" },
+  r314: { 3: "通し営業" },
+  r320: { 1: "渡り蟹", 2: "距離感" },
+  r321: { 3: "営業時間" },
+  r323: { 3: "営業設計", 4: "店内" },
+  r325: { 2: "持ち帰り" },
+  r326: { 3: "定休" },
+  r327: { 2: "店主", 3: "営業時間" },
+  r328: { 5: "訪れ方" },
+  r329: { 3: "もつ煮" },
+  r343: { 4: "小上がり" },
+  r344: { 4: "高台" },
+  r346: { 3: "休み" },
+  r350: { 5: "四日市" },
+  r354: { 3: "同じ卓", 4: "大人" },
+  r366: { 3: "週替わり" },
+  r369: { 4: "夜だけ" },
+  r372: { 3: "カフェ" },
+  r374: { 5: "アクセス" },
+  r379: { 3: "飲み放題" },
+  r381: { 5: "上尾環状線" },
+  r387: { 4: "裏側", 5: "立ち寄り先" },
+  r391: { 5: "甲州街道" },
+  r392: { 4: "掘りごたつ" },
+  r394: { 5: "寄る店" },
+  r401: { 1: "松花堂弁当" },
+  r406: { 3: "時間帯" },
+  r407: { 3: "防音" },
+  r411: { 4: "店内空間" },
+  r412: { 4: "記念日", 5: "距離感" },
+  r415: { 1: "二部制", 2: "藤枝駅", 3: "夜の組み方", 4: "テナント", 5: "再開発" },
+  r417: { 5: "駐車場" },
+  r437: { 4: "居心地" },
+  r441: { 3: "内装" },
+  r445: { 2: "ぬくもり" },
+  r449: { 4: "営業設計", 5: "来店前" },
+  r456: { 5: "小松空港" },
+  r463: { 2: "受賞農家", 3: "親密な空間" },
+  r469: { 4: "ホーム", 5: "家山駅" },
+  r474: { 1: "ラーメン" },
+  r475: { 2: "個室" },
+  r476: { 3: "営業時間", 4: "座敷" },
+  r484: { 4: "貸切" },
+  r490: { 5: "駐車スペース" },
+  r492: { 3: "価格設計" },
+  r494: { 2: "うどん" },
+  r496: { 2: "店名", 4: "一軒家" },
+  r506: { 5: "徳重" },
+  r508: { 4: "店構え" },
+  r513: { 1: "薪窯", 2: "丹波立杭焼" },
+  r517: { 3: "持ち帰り" },
+  r518: { 4: "子ども連れ", 5: "山あい" },
+  r524: { 3: "QRコード" },
+  r525: { 3: "電子マネー" },
+};
+
+/** 店 1 軒の記事の、入口の暖簾の字: 記事 ID の表 → 店 ID の直しの表 → 自動（店名・地域から）。決められなければ null（暖簾の既定の割り方 panelPlan に落ちる） */
+export function gateUnitsFor(articleId: string | null, shop: { id: string; name: string; area?: string }): string[] | null {
+  const byArticle = articleId ? gateUnitsOf(articleId) : null;
+  if (byArticle) return [...byArticle];
+  const fix = GATE_FIX_BY_SHOP[shop.id];
+  if (fix) return [...fix];
+  return autoGateUnits(shop.name, shop.area ?? "");
+}
+
+/** 視点ごとの小さな暖簾の語（1 視点 1 語。ranking の順）: 記事 ID の表（NR_WORDS）→ 店 ID の直しの表 → 自動（見出しから）。語は、その視点の見出しにあるものだけ。同じ記事の中で重ならない */
+export function nrWordsFor(articleId: string | null, shopId: string | null, names: readonly string[]): string[] {
+  const table = articleId ? nrWordsOf(articleId) : null;
+  const fix = shopId ? NR_FIX_BY_SHOP[shopId] : undefined;
+  const picked: (string | undefined)[] = names.map((n, i) => {
+    const t = table?.[i];
+    if (t && n.includes(t)) return t;
+    const f = fix?.[i + 1];
+    if (f && n.includes(f)) return f;
+    return undefined;
+  });
+  const used = new Set<string>(picked.filter((w): w is string => !!w));
+  return names.map((n, i) => {
+    const w = picked[i];
+    if (w) return w;
+    const a = autoNrWord(n, used);
+    used.add(a);
+    return a;
+  });
+}
 
 /** 表の語を引く（NFC にそろえて、ID の完全一致だけ）。無ければ null */
 export function nrWordsOf(articleId: string): readonly string[] | null {
