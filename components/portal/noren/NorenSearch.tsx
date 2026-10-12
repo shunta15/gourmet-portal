@@ -12,7 +12,10 @@ import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
 import type { MapMode, MapPt } from "./ShopMap";
 import { usesEPicture } from "@/lib/portal/noren/illustStyle";
+import type { Look } from "@/lib/portal/noren/looks";
+import { ArrowIcon, BlockCard, PinIcon, SearchIcon, TabIcon, isShowableTag } from "./BlockSearchParts";
 import "./opensearch.css";
+import "./blocksearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
 const SearchFacets = lazy(() => import("@/components/portal/SearchFacets"));
@@ -36,6 +39,11 @@ const TABS: { key: Tab; label: string }[] = [
 const isTab = (s: string | null): s is Tab => !!s && TABS.some((t) => t.key === s);
 
 type SceneDef = { slug: string; name: string; matchTags: string[] };
+/** 検索の 1 店。block の見た目のときだけ、最寄り駅（nearest）も渡る（駅名でも探せるように） */
+type SItem = SearchItem & { nearest?: string };
+type Sort = "" | "new";
+/** 店 ID の番号（r12 → 12）。ID は掲載した順に振っているので、番号が大きいほど新しく載った店。r＋数字でない ID は 0 */
+const idNo = (id: string) => (/^r\d+$/.test(id) ? parseInt(id.slice(1), 10) : 0);
 
 /** 件数の数字。値が替わると、前の数から数え上がる（「動きを減らす」設定では、すぐ替える）。最初に開いたときは 0 から */
 function CountUp({ value }: { value: number }) {
@@ -77,6 +85,7 @@ function ResultsMap({
   mode,
   regionKey,
   onPick,
+  look = "noren",
 }: {
   list: SearchItem[];
   coords: Record<string, [number, number]>;
@@ -86,6 +95,7 @@ function ResultsMap({
   mode: MapMode;
   regionKey: string;
   onPick: (region: string) => void;
+  look?: Look;
 }) {
   const { pts, prefCounts, regionCounts } = useMemo(() => {
     const pts: MapPt[] = list
@@ -103,7 +113,7 @@ function ResultsMap({
   }, [list, coords, prefOf, townOf]);
   const nation = !regionKey;
   return (
-    <div className="vMp-map">
+    <div className={look === "block" ? "vMp-map vBk-map" : "vMp-map"}>
       <div className="vSc-map-fr">
         <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={prefCounts} prefRegion={prefRegion} regionCounts={regionCounts} onPick={onPick} />
       </div>
@@ -139,8 +149,10 @@ export default function NorenSearch({
   townOf,
   prefRegion,
   allowMapUrl = false,
+  look = "noren",
+  allowLookUrl = false,
 }: {
-  restaurants: SearchItem[];
+  restaurants: SItem[];
   facets?: FacetPayload;
   sceneDefs: SceneDef[];
   coords: Record<string, [number, number]>;
@@ -152,6 +164,10 @@ export default function NorenSearch({
   prefRegion: Record<string, string>;
   /** URL の ?map=a|f|g|h で地図の見た目を替えられるか（本番でないときだけ true。?sp= と同じ） */
   allowMapUrl?: boolean;
+  /** 見た目（lib/portal/noren/looks.ts）。"block" は参考画像の形（白い地・橙の差し色）。サーバーのページが決めて渡す */
+  look?: Look;
+  /** URL の ?look= を、タブ・絞り込みの移動でも保つか（見本でだけ true。本番は false） */
+  allowLookUrl?: boolean;
 }) {
   const router = useRouter();
   const sp = useSearchParams();
@@ -163,6 +179,9 @@ export default function NorenSearch({
   const spTag = sp.get("tag") || "";
   const spScene = sp.get("scene") || "";
   const spTab = sp.get("tab");
+  const block = look === "block";
+  const lookParam = allowLookUrl ? sp.get("look") : null;
+  const spSort: Sort = block && sp.get("sort") === "new" ? "new" : "";
   // 地図の見た目: 既定は e（手描き風）。?map=a|f|g|h は、本番でないときだけ（b・c・d は e に読み替える）
   const mapParam = sp.get("map");
   const mapMode: MapMode = allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h") ? mapParam : "e";
@@ -182,8 +201,8 @@ export default function NorenSearch({
 
   // 一覧（エリア・業種・シーン）の選んでいる行が見える位置まで、一覧の中だけをずらす（ページ全体は動かさない）
   useEffect(() => {
-    const el = document.querySelector<HTMLElement>('.vMp-list .vMp-row[aria-current="true"]');
-    const box = el?.closest<HTMLElement>(".vMp-list");
+    const el = document.querySelector<HTMLElement>('.vMp-list .vMp-row[aria-current="true"], .vBk-list .vBk-row[aria-current="true"]');
+    const box = el?.closest<HTMLElement>(".vMp-list, .vBk-list");
     if (!el || !box) return;
     const b = box.getBoundingClientRect();
     const r = el.getBoundingClientRect();
@@ -208,7 +227,7 @@ export default function NorenSearch({
     if (tag && !(r.tags || []).includes(tag)) return false;
     if (skip !== "scene" && sceneDef && !shopInScene(sceneDef.matchTags, r.tags)) return false;
     if (needle) {
-      const hay = (r.name + r.area + r.cuisine + r.address + r.desc + (r.tags || []).join(" ")).toLowerCase();
+      const hay = (r.name + r.area + r.cuisine + r.address + r.desc + (r.tags || []).join(" ") + (block ? (r as SItem).nearest ?? "" : "")).toLowerCase();
       if (!hay.includes(needle)) return false;
     }
     return true;
@@ -216,7 +235,7 @@ export default function NorenSearch({
   const results = useMemo(
     () => restaurants.filter((r) => pass(r)),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [q, region, cuisine, tag, scene, sceneDefs, restaurants],
+    [q, region, cuisine, tag, scene, sceneDefs, restaurants, block],
   );
   // 一覧の件数（その軸以外の絞り込みを掛けたときの店の数）
   const counts = useMemo(() => {
@@ -231,9 +250,9 @@ export default function NorenSearch({
     for (const r of restaurants) if (pass(r, "scene")) { sceneAll++; sceneDefs.forEach((x, i) => { if (shopInScene(x.matchTags, r.tags)) sceneRows[i].count++; }); }
     return { byRegion, regionAll, cuisineRows, cuisineAll, sceneRows, sceneAll };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, region, cuisine, tag, scene, sceneDefs, restaurants]);
+  }, [q, region, cuisine, tag, scene, sceneDefs, restaurants, block]);
 
-  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string }) => {
+  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string; sort?: string }) => {
     const next = {
       q: overrides.q !== undefined ? overrides.q : spQ,
       region: overrides.region !== undefined ? overrides.region : spRegion,
@@ -242,6 +261,7 @@ export default function NorenSearch({
       scene: overrides.scene !== undefined ? overrides.scene : spScene,
       tab: overrides.tab !== undefined ? overrides.tab : spTab ?? "",
       page: overrides.page ?? "",
+      sort: overrides.sort !== undefined ? overrides.sort : spSort,
     };
     const params = new URLSearchParams();
     if (next.q) params.set("q", next.q);
@@ -257,10 +277,21 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
-    if (allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h")) params.set("map", mapParam);
+    if (allowMapUrl && (mapParam === "a" || mapParam === "b" || mapParam === "c" || mapParam === "d" || mapParam === "f" || mapParam === "g" || mapParam === "h")) params.set("map", mapParam);
+    if (block && next.sort === "new") params.set("sort", "new");
+    if (lookParam === "noren" || lookParam === "block") params.set("look", lookParam);
     if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };
+
+  /** 絞り込みをはずした URL（見た目・並べ替え・地図の指定だけ残す。こだわり条件もはずす） */
+  const clearUrl = (() => {
+    const params = new URLSearchParams();
+    if (allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d")) params.set("map", mapParam);
+    if (block && spSort === "new") params.set("sort", "new");
+    if (lookParam === "noren" || lookParam === "block") params.set("look", lookParam);
+    return `/search${params.toString() ? "?" + params.toString() : ""}`;
+  })();
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -301,6 +332,174 @@ export default function NorenSearch({
         </Link>
       </li>
     );
+    // ---- block の見た目（参考画像の形。白い地・橙の差し色。絞り込み・件数・URL の作りは下の暖簾の見た目と同じ） ----
+    if (block) {
+      const ordered = spSort === "new" ? [...list].sort((a, b) => idNo(b.id) - idNo(a.id)) : list;
+      const bshown = ordered.slice((cur - 1) * PER, cur * PER);
+      const brow = (href: string, label: string, count: number, on: boolean) => (
+        <li key={label}>
+          <Link href={href} className="vBk-row" aria-current={on ? "true" : undefined}>
+            <PinIcon size={16} />
+            <span>{label}</span>
+            <em>{count}</em>
+          </Link>
+        </li>
+      );
+      const chosen: string[] = [];
+      if (spQ) chosen.push(`「${spQ}」`);
+      if (regionName) chosen.push(regionName);
+      if (spCuisine !== "ALL") chosen.push(spCuisine);
+      if (sceneDef) chosen.push(sceneDef.name);
+      return (
+        <section className="vBk-main vBk-find" aria-label="店の検索">
+          <div className="vBk-wrap">
+            {pending ? (
+              <p role="status" aria-busy="true" className="vBk-empty">
+                条件を読み込んでいます…
+              </p>
+            ) : (
+              <>
+                {/* 探し方のタブ（選んでいるタブは橙） */}
+                <nav className="vBk-tabs" aria-label="探し方">
+                  {TABS.map((t) => (
+                    <Link key={t.key} href={buildUrl({ tab: t.key })} className="vBk-tab" aria-current={active === t.key ? "true" : undefined} aria-label={t.key === "q" ? "キーワードで探す" : undefined}>
+                      <TabIcon k={t.key} />
+                      {t.key !== "q" && <span>{t.label}</span>}
+                    </Link>
+                  ))}
+                </nav>
+
+                {/* 箱: 左にイラストの地図・右にそのタブの一覧 */}
+                <div className="vBk-box">
+                  <ResultsMap look="block" list={list} coords={coords} prefOf={prefOf} townOf={townOf} prefRegion={prefRegion} mode={mapMode} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
+                  <div className={`vBk-side vBk-side--${active}`}>
+                    {active === "area" && (
+                      <>
+                        {regionName && (
+                          <p className="vBk-regionlink">
+                            <Link href={`/region/${spRegion}`}>
+                              {regionName}のページを見る <ArrowIcon size={15} />
+                            </Link>
+                          </p>
+                        )}
+                        <ul className="vBk-list" aria-label="エリア">
+                          {brow(buildUrl({ region: "", tab: "area" }), "すべてのエリア", counts.regionAll, !spRegion)}
+                          {Object.entries(REGIONS).map(([k, r]) => brow(buildUrl({ region: k, tab: "area" }), r.name, counts.byRegion.get(k) || 0, spRegion === k))}
+                        </ul>
+                      </>
+                    )}
+                    {active === "genre" && (
+                      <ul className="vBk-list" aria-label="業種">
+                        {brow(buildUrl({ cuisine: "ALL", tab: "genre" }), "すべての業種", counts.cuisineAll, spCuisine === "ALL")}
+                        {counts.cuisineRows.map((c) => brow(buildUrl({ cuisine: c.label, tab: "genre" }), c.label, c.count, spCuisine === c.label))}
+                        {isLegacyCuisineLabel(spCuisine) && brow(buildUrl({ cuisine: spCuisine, tab: "genre" }), spCuisine, results.length, true)}
+                      </ul>
+                    )}
+                    {active === "scene" && (
+                      <ul className="vBk-list" aria-label="利用シーン">
+                        {brow(buildUrl({ scene: "", tab: "scene" }), "すべてのシーン", counts.sceneAll, !spScene)}
+                        {counts.sceneRows.map((s) => brow(buildUrl({ scene: s.slug, tab: "scene" }), s.name, s.count, spScene === s.slug))}
+                      </ul>
+                    )}
+                    {active === "tag" && (
+                      <div className="vBk-tagtab">
+                        {ext?.panel}
+                        {allTags.some(([t]) => isShowableTag(t)) && (
+                          <section className="vBk-tags" aria-labelledby="vBk-tagcloud">
+                            <h2 id="vBk-tagcloud" className="vBk-h">
+                              タグから探す
+                            </h2>
+                            <ul className="vBk-tagcloud">
+                              {allTags.filter(([t]) => isShowableTag(t)).map(([t, count]) => (
+                                <li key={t}>
+                                  <Link href={buildUrl({ tag: t, tab: "tag" })} className={"vBk-hash" + (t === spTag ? " on" : "")} aria-current={t === spTag ? "true" : undefined}>
+                                    #{t}
+                                    <span className="c">{count}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </section>
+                        )}
+                      </div>
+                    )}
+                    {active === "q" && (
+                      <form className="vBk-qform" onSubmit={onSubmit} role="search" aria-label="キーワードでさがす">
+                        <label htmlFor="vBk-q">キーワード</label>
+                        <input id="vBk-q" type="search" placeholder="エリア・駅名・お店の名前で探す" value={q} onChange={(e) => setQ(e.target.value)} />
+                        <button type="submit" className="vBk-qbtn">
+                          <SearchIcon size={18} />
+                          探す
+                        </button>
+                      </form>
+                    )}
+                  </div>
+                </div>
+
+                {ext?.notice}
+                {/* 結果 */}
+                <div className="vBk-reshead">
+                  <h2>検索結果</h2>
+                  <p className="vBk-count" aria-live="polite">
+                    <strong>
+                      <CountUp value={list.length} />
+                    </strong>
+                    件
+                  </p>
+                  {chosen.map((c) => (
+                    <span key={c} className="vBk-chosen">
+                      {c}
+                    </span>
+                  ))}
+                  {spTag && (
+                    <span className="vBk-chosen">
+                      #{spTag}
+                      <button type="button" onClick={clearTag} aria-label="タグを外す">
+                        ×
+                      </button>
+                    </span>
+                  )}
+                  {ext?.summary}
+                  {applied && (
+                    <Link href={clearUrl} className="vBk-clear">
+                      絞り込みをはずす
+                    </Link>
+                  )}
+                  <div className="vBk-sort" role="group" aria-label="並べ替え">
+                    <Link href={buildUrl({ sort: "" })} aria-current={spSort === "" ? "true" : undefined}>
+                      標準
+                    </Link>
+                    <Link href={buildUrl({ sort: "new" })} aria-current={spSort === "new" ? "true" : undefined}>
+                      新着順
+                    </Link>
+                  </div>
+                </div>
+
+                {bshown.length > 0 ? (
+                  <ul key={`${spQ}|${spRegion}|${spCuisine}|${spScene}|${spTag}|${spSort}|${cur}`} className="vBk-grid" aria-label="検索結果">
+                    {bshown.map((r, i) => (
+                      <BlockCard key={r.id} r={r} tags={ext?.tagsOf?.(r.id)?.tags} eager={i < 3} />
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="vBk-empty">該当する店舗が見つかりませんでした。条件を変えてお試しください。</p>
+                )}
+
+                {pages > 1 && (
+                  <nav className="vBk-pager" aria-label="ページ">
+                    {cur > 1 && <Link href={buildUrl({ page: String(cur - 1) })}>前へ</Link>}
+                    <span aria-current="page">
+                      {cur} / {pages}
+                    </span>
+                    {cur < pages && <Link href={buildUrl({ page: String(cur + 1) })}>次へ</Link>}
+                  </nav>
+                )}
+              </>
+            )}
+          </div>
+        </section>
+      );
+    }
     return (
       <>
         <section className="vI-list vI-find vSc-find vMp" aria-label="店の検索">

@@ -10,7 +10,10 @@ import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
 import OpenSearch from "@/components/portal/noren/OpenSearch";
+import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
+import { buildBlockTop } from "@/lib/portal/noren/blockTop";
+import type { Look } from "@/lib/portal/noren/looks";
 import "../noren/top.css";
 import "./real.css";
 import { NOREN_HERO_KEYS, type NorenLinks } from "@/lib/portal/noren/nav";
@@ -42,6 +45,7 @@ export default async function GourmetNorenHomeReal({
   spShape,
   allowSpUrl = false,
   allowCopyUrl = false,
+  searchLook = "noren",
 }: {
   links: NorenLinks;
   dye?: DyeKind;
@@ -52,6 +56,8 @@ export default async function GourmetNorenHomeReal({
   allowSpUrl?: boolean;
   /** URL の ?copy=1〜5 で見出し・リードの候補に替えられるか（?sp= と同じ。本番でないときだけ true） */
   allowCopyUrl?: boolean;
+  /** 「店を、さがす。」の節の見た目（lib/portal/noren/looks.ts。app/gourmet/page.tsx が決めて渡す）。省略は今までの暖簾の見た目 */
+  searchLook?: Look;
 }) {
   const restaurants = await getAllRestaurants();
   const byId = new Map(restaurants.map((r) => [r.id, r]));
@@ -59,6 +65,7 @@ export default async function GourmetNorenHomeReal({
 
   const chapters = buildChapters(restaurants, regionName);
   const openSearchData = buildOpenSearchData(restaurants);
+  const blockTop = searchLook === "block" ? buildBlockTop(restaurants, openSearchData.cuisines) : null;
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
@@ -100,7 +107,7 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      <OpenSearch data={openSearchData} />
+      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandPts={blockTop.bandPts} bandRegion={blockTop.bandRegion} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
       <div className="vN-chs" id="chapters">
