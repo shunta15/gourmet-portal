@@ -16,6 +16,26 @@ const ease = (x: number) => x * x * (3 - 2 * x);
 /** 暖簾を上げるスクロールの距離（画面の高さに対する割合） */
 const LIFT = 0.6;
 
+/**
+ * 布の準備を、ハイドレーションを待たずに始める（2026-10-13）。
+ * 以前は、ハイドレーションのあと（useEffect）で clothInner を import し、そのあとで WebGL の準備をしていたため、壁と提灯だけの状態が 1 秒前後続いてから暖簾が下りていた。
+ * いまは、このファイルが読み込まれた時点で、サーバーが出した HTML の中の canvas（.pf-gate__cv）がすでにあり、かつ描画の前に付く印 .pf-gate-on（EarlyJs が付ける = WebGL が使え、動きを減らす設定でない）があるときだけ、
+ * clothInner の import と布づくりを始める（ハイドレーションと同時に進む）。useEffect は、その canvas が自分の canvas と同じなら、できかけの布を受け取る。違えば捨てて、今までどおり作る。
+ * 印が無い（WebGL なし・動きを減らす・JavaScript なし）ときは、何も始めない（何も読み込まない）。
+ */
+type EarlyCloth = { canvas: HTMLCanvasElement; made: Promise<Awaited<ReturnType<typeof makeCloth>>> };
+let early: EarlyCloth | null = null;
+/** 外れた直後（開発の StrictMode は effect を「外す → すぐ付け直す」）に、同じ canvas へ付け直されたら、壊さずにそのまま使う。付け直されなければ、次の tick で壊す */
+let kept: EarlyCloth | null = null;
+if (typeof document !== "undefined") {
+  try {
+    const cv0 = document.querySelector<HTMLCanvasElement>(".pf-root.pf-gate-on .pf-gate__cv");
+    if (cv0) early = { canvas: cv0, made: makeCloth(cv0) };
+  } catch {
+    early = null;
+  }
+}
+
 export default function Gate({ name, units }: { name: string; units?: string[] | null }) {
   const root = useRef<HTMLDivElement>(null);
   const cv = useRef<HTMLCanvasElement>(null);
@@ -43,6 +63,7 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
     let mouse = 0;
     let mouseT = 0;
     let L = { cssW: 0, cssH: 0, rodY: 0, hemY: 0, margin: 0 };
+    let made: Promise<Awaited<ReturnType<typeof makeCloth>>> | null = null;
     let planKey = "";
     let lastAspect = 1;
     const family = '"Hiragino Mincho ProN","Yu Mincho","Shippori Mincho B1","Noto Serif JP",serif';
@@ -184,11 +205,18 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
     };
 
     (async () => {
-      cloth = await makeCloth(canvas);
-      if (!alive) {
-        cloth?.destroy();
-        return;
+      // ハイドレーションの前に始めておいた布（同じ canvas のとき）を受け取る。受け取れなければ、今までどおりここで作る
+      const pre = early ?? kept;
+      early = null;
+      kept = null;
+      if (pre && pre.canvas === canvas) made = pre.made;
+      else {
+        void pre?.made.then((c) => c?.destroy());
+        made = makeCloth(canvas);
       }
+      cloth = await made;
+      // 外れていたら何もしない（布は、外すときの後始末が、付け直されなければ壊す）
+      if (!alive) return;
       if (!cloth) {
         // 布が使えない端末: 何もしない（最初から写真と題が見える）
         page.classList.remove("pf-gate-on");
@@ -220,7 +248,15 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
       window.removeEventListener("mousemove", onMove);
       el.removeEventListener("click", onTap);
       page.classList.remove("pf-gate-open");
-      cloth?.destroy();
+      if (made) {
+        const mine: EarlyCloth = { canvas, made };
+        kept = mine;
+        window.setTimeout(() => {
+          if (kept !== mine) return; // 付け直されて、使われている
+          kept = null;
+          void mine.made.then((c) => c?.destroy());
+        }, 0);
+      }
     };
   }, [name, units]);
 
@@ -255,7 +291,7 @@ function distribute(units: string[], mobile: boolean): string[][] {
   return out;
 }
 
-/** 布を作る（WebGL が使えなければ null）。clothInner は重いので、使える端末でだけ読み込む */
+/** 布を作る（WebGL が使えなければ null）。clothInner は重いので、使える端末（.pf-gate-on が付いたとき）でだけ読み込む */
 async function makeCloth(canvas: HTMLCanvasElement) {
   try {
     const mod = await import("../noren-real/clothInner");
