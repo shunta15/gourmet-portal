@@ -141,6 +141,7 @@ export default function Motion() {
     const hudCur = root.querySelector<HTMLElement>(".pf-hud__cur");
     const hudPrev = root.querySelector<HTMLElement>(".pf-hud__prev");
     const fab = root.querySelector<HTMLElement>(".pf-fab");
+    const fabTargets = Array.from(root.querySelectorAll<HTMLElement>(".pf-v__tx p, .pf-v__tx summary, .pf-lede__in p, .pf-closing p, .pf-quote p, .pf-dl, .pf-info__t, .pf-tz, .pf-ov .pf-vt, .pf-nr, .pf-cover__cap, .pf-cover__t, .pf-btn, .pf-door, .pf-hd, .pf-more__b p")).filter((el) => !el.closest(".pf-fab"));
     const info = root.querySelector<HTMLElement>(".pf-info");
     const body = root.querySelector<HTMLElement>(".pf-body");
     const secs = Array.from(root.querySelectorAll<HTMLElement>(".pf-body [data-no], .pf-body [data-nos]"));
@@ -420,12 +421,13 @@ export default function Motion() {
       // 8. 店ページへの小さなボタンの出し入れ
       if (fab) {
         let on = y > vh * 0.9 && infoTop > vh * 0.9;
-        // 本文の字の上に重なるときは、出さない（字を隠さない）。足もとの 4 点と中心を、下にある要素まで見て調べる
+        // 本文・小見出しの字の上に重なるときは、出さない（字を隠さない）。字の枠（pointer-events が無い小見出しも含む）の位置で調べる
         if (on) {
           const r = fab.getBoundingClientRect();
-          const pts: [number, number][] = [[r.left + 2, r.top + 2], [r.right - 2, r.top + 2], [r.left + 2, r.bottom - 2], [r.right - 2, r.bottom - 2], [r.left + r.width / 2, r.top + r.height / 2]];
-          const TEXT = ".pf-v__tx, .pf-lede__in, .pf-closing, .pf-quote, .pf-dl, .pf-pr__tx, .pf-stack__notes, .pf-film__notes, .pf-info__t, .pf-end__in";
-          on = !pts.some(([x, yy]) => document.elementsFromPoint(x, yy).some((el) => el !== fab && !fab.contains(el) && el.closest(TEXT) && (el as HTMLElement).closest(".pf-ph") === null));
+          on = !fabTargets.some((el) => {
+            const b = el.getBoundingClientRect();
+            return b.width > 0 && b.bottom > 0 && b.top < vh && Math.min(b.right, r.right + 4) - Math.max(b.left, r.left - 4) > 0 && Math.min(b.bottom, r.bottom + 4) - Math.max(b.top, r.top - 4) > 0;
+          });
         }
         fab.classList.toggle("pf-fab--on", on);
       }
