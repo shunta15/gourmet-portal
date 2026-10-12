@@ -3,6 +3,7 @@ import Header from "@/components/portal/bproto/colorplay/Header";
 import Footer from "@/components/portal/bproto/colorplay/Footer";
 import { IconArrow, IconPin, IconSearch, IconSparkle } from "@/components/portal/bproto/colorplay/Icons";
 import HeroView, { type HeroVariant } from "@/components/portal/bproto/colorplay/hero/HeroView";
+import HeroViewB, { type HeroVariantB } from "@/components/portal/bproto/colorplay/hero/HeroViewB";
 import { loadFeatures, loadShops } from "@/lib/portal/bproto/colorplay/data";
 import { BASE, searchHref } from "@/lib/portal/bproto/colorplay/types";
 
@@ -33,10 +34,10 @@ function Pills({ stage = false }: { stage?: boolean }) {
   );
 }
 
-// ?hero=1 / 2 / 3 で最初の画面の動きの案を切り替える(1・2・3 以外は今のまま)
-function pickHero(v: string | string[] | undefined): HeroVariant | 0 {
+// ?hero=1〜6 で最初の画面の動きの案を切り替える(1〜6 以外は今のまま)
+function pickHero(v: string | string[] | undefined): HeroVariant | HeroVariantB | 0 {
   const x = Array.isArray(v) ? v[0] : v;
-  return x === "1" ? 1 : x === "2" ? 2 : x === "3" ? 3 : 0;
+  return x === "1" ? 1 : x === "2" ? 2 : x === "3" ? 3 : x === "4" ? 4 : x === "5" ? 5 : x === "6" ? 6 : 0;
 }
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
@@ -46,8 +47,10 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ [
   return (
     <>
       <Header onColor />
-      {hero !== 0 ? (
-        <HeroView variant={hero} pills={hero === 2 ? <Pills stage /> : undefined} />
+      {hero >= 4 ? (
+        <HeroViewB variant={hero as HeroVariantB} />
+      ) : hero !== 0 ? (
+        <HeroView variant={hero as HeroVariant} pills={hero === 2 ? <Pills stage /> : undefined} />
       ) : (
       <section className="cp-hero" id="cp-hero" data-sp="o">
         <div className="cp-wrap cp-hero-in">

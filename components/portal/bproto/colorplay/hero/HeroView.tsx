@@ -4,6 +4,7 @@
  *   2 留める : 最初の画面を 2〜3 画面ぶん留め、背景の色・見出しの色・形・右上の札が順に入れ替わる。最後に 3 つのタブがせり上がる(HeroStage)
  *   3 流れる : 見出しと COLOR PLAY の帯が逆向きに流れ、スクロールの速さで速くなり傾く。写真は触る/傾けると向きが変わる。形が弾んで漂う(HeroFlow)
  * 文言は今の画面にあるものだけ。サーバーコンポーネント(マークアップだけ)。動きの制御は各 client コンポーネントが受け持つ。
+ * 案 4〜6 は HeroViewB.tsx(ここの Copy / Photo / Tag を使う)。
  */
 import type { CSSProperties, ReactNode } from "react";
 import "./hero.css";
@@ -13,8 +14,8 @@ import HeroStage from "./HeroStage";
 
 export type HeroVariant = 1 | 2 | 3;
 
-const IMG = "/_portal/bproto/colorplay/ref-hero.jpg";
-const LINES = ["この街で、", "わたしは", "もっとカワイイ。"];
+export const IMG = "/_portal/bproto/colorplay/ref-hero.jpg";
+export const LINES = ["この街で、", "わたしは", "もっとカワイイ。"];
 const css = (o: Record<string, string | number>) => o as CSSProperties;
 
 /** 筆の先のかすれ(右端がぎざぎざの形)。種から決まるので、サーバーとブラウザで同じになる */
@@ -31,7 +32,7 @@ function rag(seed: number): string {
   return `polygon(${pts.join(",")})`;
 }
 
-function Copy({ chars = false }: { chars?: boolean }) {
+export function Copy({ chars = false }: { chars?: boolean }) {
   let n = 0;
   return (
     <div className="cp-hero-copy">
@@ -48,7 +49,7 @@ function Copy({ chars = false }: { chars?: boolean }) {
   );
 }
 
-function Photo() {
+export function Photo() {
   return (
     <div className="cp-hero-photo">
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -57,7 +58,7 @@ function Photo() {
   );
 }
 
-const Tag = () => (
+export const Tag = () => (
   <div className="cp-hero-tag" aria-hidden="true">
     <b>COLOR<br />PLAY</b>
     <span>キレイで、<br />あそぼう。</span>
