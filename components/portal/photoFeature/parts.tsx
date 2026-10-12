@@ -81,7 +81,7 @@ export function Defs() {
 /** 朱の丸（判を押すように出る。transform と opacity だけ） */
 export function Seal({ className = "", delay = 0.9, reveal = false }: { className?: string; delay?: number; reveal?: boolean }) {
   return (
-    <svg className={`pf-seal${reveal ? " pf-rvs" : ""} ${className}`} viewBox="0 0 100 100" aria-hidden="true" style={{ "--d": `${delay}s` } as CSSProperties}>
+    <svg data-scrub="seal" className={`pf-seal${reveal ? " pf-rvs" : ""} ${className}`} viewBox="0 0 100 100" aria-hidden="true" style={{ "--d": `${delay}s` } as CSSProperties}>
       <path
         d="M51 5 C76 4 96 25 95 51 C94 77 74 96 48 95 C23 94 5 74 6 48 C7 24 27 6 51 5 Z"
         fill="currentColor"
@@ -96,7 +96,7 @@ export function Brush({ kind = "wave", className = "", delay = 0.5, reveal = fal
   const style = { "--d": `${delay}s` } as CSSProperties;
   if (kind === "dash") {
     return (
-      <svg className={`pf-brush${reveal ? " pf-rvb" : ""} ${className}`} viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true" style={style}>
+      <svg data-scrub="brush" className={`pf-brush${reveal ? " pf-rvb" : ""} ${className}`} viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true" style={style}>
         <path
           d="M4 36 C70 14 150 12 230 26 C320 42 410 44 500 28 C540 20 574 22 596 30 L592 38 C560 34 530 34 500 42 C410 58 320 56 228 40 C150 28 70 30 6 48 Z"
           fill="currentColor"
@@ -106,7 +106,7 @@ export function Brush({ kind = "wave", className = "", delay = 0.5, reveal = fal
     );
   }
   return (
-    <svg className={`pf-brush${reveal ? " pf-rvb" : ""} ${className}`} viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" style={style}>
+    <svg data-scrub="brush" className={`pf-brush${reveal ? " pf-rvb" : ""} ${className}`} viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" style={style}>
       <path
         d="M0 118 C110 60 240 44 372 86 C490 124 580 168 740 150 C880 134 990 112 1140 126 C1260 138 1360 128 1440 108 L1440 146 C1360 170 1262 182 1140 170 C990 156 880 178 742 196 C580 216 486 176 366 138 C240 100 112 112 0 172 Z"
         fill="currentColor"

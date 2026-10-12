@@ -116,7 +116,7 @@ export default function Motion() {
     cleanups.push(() => root.classList.remove("pf-js"));
 
     // 現れる（画面に入ったとき 1 回）: 文・筆の跡・朱の印は .pf-rv/.pf-rvb/.pf-rvs、写真の列は [data-rvw]
-    const reveal = Array.from(root.querySelectorAll<HTMLElement>(".pf-rv, .pf-rvb, .pf-rvs, [data-rvw], .pf-info .pf-mag"));
+    const reveal = Array.from(root.querySelectorAll<HTMLElement>(".pf-rv, .pf-rvb, .pf-rvs, [data-rvw], .pf-nr, .pf-info .pf-mag"));
     const io = new IntersectionObserver(
       (es) => {
         for (const e of es) {
@@ -143,7 +143,7 @@ export default function Motion() {
     const fab = root.querySelector<HTMLElement>(".pf-fab");
     const info = root.querySelector<HTMLElement>(".pf-info");
     const body = root.querySelector<HTMLElement>(".pf-body");
-    const secs = Array.from(root.querySelectorAll<HTMLElement>(".pf-body [data-no]"));
+    const secs = Array.from(root.querySelectorAll<HTMLElement>(".pf-body [data-no], .pf-body [data-nos]"));
     const pars = Array.from(root.querySelectorAll<HTMLImageElement>("img[data-par]"));
     // 写真ごとの拡大の余白（--z）と、ずらし方は、最初に 1 回だけ読む（フレームごとに style を読まない）
     const parInfo = pars.map((im) => {
@@ -152,8 +152,81 @@ export default function Motion() {
       return { flow, z: parseFloat(fig.style.getPropertyValue("--z")) || 1.04, k: flow ? 1 : Math.min(1, parseFloat(im.dataset.par || "0.5")) };
     });
     const stacks = Array.from(root.querySelectorAll<HTMLElement>("[data-stack]")).map((el) => ({ el, ph: Array.from(el.querySelectorAll<HTMLElement>(".pf-st")) }));
+    // 暖簾らしさの連動: 竿と進みの布・暗い面の灯り・写真の傾きと照り・横に流れる帯・伸び縮みする飾り・数え上がる数字
+    const rod = root.querySelector<HTMLElement>(".pf-rod");
+    const darks = Array.from(root.querySelectorAll<HTMLElement>(".pf-dark")).map((el) => ({ el, lamp: el.querySelector<HTMLElement>(".pf-lamp i"), cx: 0, cy: 0, init: false, vx: 0, vy: 0, lr: 340 }));
+    const films = Array.from(root.querySelectorAll<HTMLElement>("[data-film]")).map((el) => ({ el, track: el.querySelector<HTMLElement>(".pf-film__track"), travel: 0 }));
+    const scrubs = Array.from(root.querySelectorAll<SVGElement>("[data-scrub]"));
+    const figs = pars.map((im) => im.parentElement as HTMLElement);
+    const darkOf = figs.map((f) => darks.findIndex((d) => d.el.contains(f)));
+    const fst = figs.map(() => ({ ax: 0, ay: 0, lit: 0, lx: 0, ly: 0, on: false }));
+    let px = -1e4;
+    let py = -1e4;
+    let lastY = window.scrollY;
+    let vyS = 0;
     let curNo = "";
     let raf = 0;
+    const sizeFilms = () => {
+      const vh = window.innerHeight;
+      const vw = window.innerWidth;
+      const narrow = narrowMq.matches;
+      films.forEach((f) => {
+        if (!f.track) return;
+        if (narrow) {
+          f.el.style.height = "";
+          f.track.style.transform = "";
+          f.travel = 0;
+          return;
+        }
+        const travel = Math.max(0, f.track.scrollWidth - vw + 60);
+        f.travel = travel;
+        // 横へ流れる分だけ、画面に留める（最大 2 画面ぶん）
+        f.el.style.height = `${Math.round(vh + Math.min(2 * vh, Math.max(0.8 * vh, travel * 0.9)))}px`;
+      });
+      darks.forEach((d) => {
+        if (d.lamp) d.lr = d.lamp.offsetWidth / 2 || 340;
+      });
+    };
+    sizeFilms();
+    // 店の案内の数字: 画面に入ったとき、0 から数え上がる（データにある数字だけ。終わったら元の文字に戻す）
+    const nums = Array.from(root.querySelectorAll<HTMLElement>(".pf-num"));
+    let countRaf = 0;
+    const counted = new Set<HTMLElement>();
+    const runCount = () => {
+      nums.forEach((n) => {
+        n.dataset.txt = n.textContent || "";
+        n.style.minWidth = `${n.getBoundingClientRect().width}px`;
+        n.style.display = "inline-block";
+        n.textContent = "0";
+      });
+      const t0 = performance.now();
+      const step = (now: number) => {
+        const k = clamp((now - t0) / 1200);
+        const e = 1 - Math.pow(1 - k, 3);
+        nums.forEach((n) => {
+          const to = parseInt(n.dataset.to || "0", 10);
+          const v = Math.round(to * e);
+          n.textContent = n.dataset.comma ? v.toLocaleString("en-US") : String(v);
+        });
+        if (k < 1) countRaf = requestAnimationFrame(step);
+        else nums.forEach((n) => { n.textContent = n.dataset.txt || n.textContent; n.style.minWidth = ""; n.style.display = ""; });
+      };
+      countRaf = requestAnimationFrame(step);
+    };
+    const dl = root.querySelector<HTMLElement>(".pf-dl");
+    const countIo = new IntersectionObserver(
+      (es) => {
+        for (const e of es) {
+          if (e.isIntersecting && !counted.has(e.target as HTMLElement)) {
+            counted.add(e.target as HTMLElement);
+            countIo.disconnect();
+            runCount();
+          }
+        }
+      },
+      { threshold: 0.3 },
+    );
+    if (dl && nums.length) countIo.observe(dl);
 
     const frame = () => {
       raf = 0;
@@ -168,6 +241,11 @@ export default function Motion() {
       const secRects = secs.map((s) => s.getBoundingClientRect());
       const infoTop = info ? info.getBoundingClientRect().top : Infinity;
       const bodyRect = body ? body.getBoundingClientRect() : null;
+      const filmRects = films.map((f) => f.el.getBoundingClientRect());
+      const darkRects = darks.map((d) => d.el.getBoundingClientRect());
+      const scrubRects = scrubs.map((el) => el.getBoundingClientRect());
+      vyS = vyS * 0.85 + (y - lastY) * 0.15;
+      lastY = y;
 
       // ── 書く ──
       // 1. 巻頭: 写真と題の札が、違う速さでずれる（PC だけ）
@@ -204,10 +282,100 @@ export default function Motion() {
           el.style.transform = `translate3d(${(t * -118).toFixed(2)}%, ${(t * -5).toFixed(2)}%, 0) rotate(${(t * -10 + j * 0.7 - 1).toFixed(2)}deg) scale(${(1 - d * 0.025).toFixed(4)})`;
         });
       });
+      // 横に流れる帯: 縦のスクロールが、写真の列の横送りになる
+      films.forEach((f, i) => {
+        if (!f.track || f.travel <= 0) return;
+        const r = filmRects[i];
+        const p = clamp(-r.top / Math.max(1, r.height - vh));
+        f.track.style.transform = `translate3d(${(-p * f.travel).toFixed(1)}px, 0, 0)`;
+      });
+      // 暗い面: 提灯の灯りが、マウス（スマホはスクロールの位置）に合わせて動く
+      let inDark = false;
+      darks.forEach((d, i) => {
+        const r = darkRects[i];
+        if (r.top < vh * 0.5 && r.bottom > vh * 0.5) inDark = true;
+        if (!d.lamp || r.bottom < -200 || r.top > vh + 200) return;
+        const usePointer = finePointer && px > -1e3;
+        const tx = usePointer ? px - r.left : r.width * (0.5 + 0.3 * Math.sin(y * 0.004 + i * 2));
+        const ty = usePointer ? py - r.top : vh * 0.5 - r.top;
+        if (!d.init) {
+          d.cx = tx;
+          d.cy = ty;
+          d.init = true;
+        }
+        d.cx += (tx - d.cx) * 0.16;
+        d.cy += (ty - d.cy) * 0.16;
+        d.lamp.style.transform = `translate3d(${(d.cx - d.lr).toFixed(1)}px, ${(d.cy - d.lr).toFixed(1)}px, 0)`;
+        d.vx = r.left + d.cx;
+        d.vy = r.top + d.cy;
+      });
+      root.classList.toggle("is-dark", inDark);
+      // 写真: 乗ると（PC）わずかに傾き、灯りの照りが動く。スマホはスクロールの速さでわずかに傾く。暗い面では、灯りに近い写真ほど明るく照らされる
+      figs.forEach((f, i) => {
+        const r = parRects[i];
+        const st = fst[i];
+        if (r.bottom < -100 || r.top > vh + 100) return;
+        const cx = r.left + r.width / 2;
+        const cy = r.top + r.height / 2;
+        let tax = 0;
+        let tay = 0;
+        let tlit = 0;
+        let tlx = 0;
+        let tly = 0;
+        if (finePointer && px > -1e3 && px >= r.left && px <= r.right && py >= r.top && py <= r.bottom) {
+          tax = clamp((px - cx) / (r.width / 2), -1, 1);
+          tay = clamp((py - cy) / (r.height / 2), -1, 1);
+          tlit = 1;
+          tlx = tax * r.width * 0.5;
+          tly = tay * r.height * 0.5;
+        } else if (!finePointer) {
+          tay = clamp(vyS * 0.03, -1, 1);
+          tlit = clamp(Math.abs(vyS) * 0.04, 0, 0.8);
+          tlx = clamp(vyS * 4, -r.width * 0.4, r.width * 0.4);
+        }
+        const di = darkOf[i];
+        if (di >= 0 && darks[di].init) {
+          const dx = darks[di].vx - cx;
+          const dy = darks[di].vy - cy;
+          const dist = Math.hypot(dx, dy);
+          tlit = clamp(1.1 - dist / (Math.max(r.width, r.height) * 0.9 + 160), 0, 1);
+          tlx = clamp(dx, -r.width * 0.9, r.width * 0.9);
+          tly = clamp(dy, -r.height * 0.9, r.height * 0.9);
+        }
+        st.ax += (tax - st.ax) * 0.14;
+        st.ay += (tay - st.ay) * 0.14;
+        st.lit += (tlit - st.lit) * 0.14;
+        st.lx += (tlx - st.lx) * 0.2;
+        st.ly += (tly - st.ly) * 0.2;
+        const active = Math.abs(st.ax) + Math.abs(st.ay) + st.lit > 0.004;
+        if (!active && !st.on) return;
+        st.on = active;
+        const ang = Math.hypot(st.ax, st.ay) * (finePointer ? 2 : 1.4);
+        f.style.rotate = active ? (finePointer ? `${(-st.ay).toFixed(3)} ${st.ax.toFixed(3)} 0 ${ang.toFixed(2)}deg` : `1 0 0 ${(st.ay * 1.4).toFixed(2)}deg`) : "";
+        f.style.setProperty("--lit", st.lit.toFixed(3));
+        f.style.setProperty("--lx", `${st.lx.toFixed(1)}px`);
+        f.style.setProperty("--ly", `${st.ly.toFixed(1)}px`);
+      });
+      // 筆の跡・朱の印は、スクロールの位置に連動して伸び縮みする（止まった飾りにしない）
+      scrubs.forEach((el, i) => {
+        const r = scrubRects[i];
+        if (r.bottom < -50 || r.top > vh + 50) return;
+        const p = clamp((r.top + r.height / 2 - vh / 2) / (vh / 2), -1, 1);
+        const a = 1 - Math.abs(p);
+        if (el.dataset.scrub === "brush") el.style.scale = `${(0.5 + 0.5 * a).toFixed(3)} 1`;
+        else {
+          el.style.scale = (0.88 + 0.22 * a).toFixed(3);
+          el.style.rotate = `${(p * 16).toFixed(1)}deg`;
+        }
+      });
       // 2. 読み進みの印
       if (hud) {
         const prog = clamp(y / Math.max(1, docH - vh));
         hud.style.setProperty("--prog", prog.toFixed(4));
+        if (rod) {
+          rod.style.setProperty("--pp", prog.toFixed(4));
+          rod.style.setProperty("--rs", `${clamp(vyS * 0.5, -10, 10).toFixed(2)}deg`);
+        }
         const span = Math.max(0, vh * 0.8 - 20);
         hudCur?.parentElement?.style.setProperty("--hy", `${(prog * span).toFixed(1)}px`);
         hud.classList.toggle("pf-hud--on", y > vh * 0.35);
@@ -216,9 +384,8 @@ export default function Motion() {
         for (let i = 0; i < secs.length; i++) {
           const r = secRects[i];
           if (r.top <= vh * 0.5 && r.bottom > vh * 0.5) {
-            no = secs[i].dataset.no || "";
-            const no2 = secs[i].dataset.no2;
-            if (no2 && (vh * 0.5 - r.top) / Math.max(1, r.height) > 0.55) no = no2;
+            const nos = (secs[i].dataset.nos || secs[i].dataset.no || "").split(",");
+            no = nos.length > 1 ? nos[Math.min(nos.length - 1, Math.floor(clamp((vh * 0.5 - r.top) / Math.max(1, r.height), 0, 0.999) * nos.length))] : nos[0];
           }
         }
         if (bodyRect && (bodyRect.bottom < vh * 0.35 || bodyRect.top > vh * 0.65)) no = bodyRect.top > vh * 0.65 ? "" : no;
@@ -242,14 +409,56 @@ export default function Motion() {
     const schedule = () => {
       if (!raf) raf = requestAnimationFrame(frame);
     };
+    const onPointer = (e: PointerEvent) => {
+      px = e.clientX;
+      py = e.clientY;
+      schedule();
+    };
+    const onLeave = () => {
+      px = -1e4;
+      py = -1e4;
+      schedule();
+    };
+    const onResize = () => {
+      sizeFilms();
+      schedule();
+    };
     window.addEventListener("scroll", schedule, { passive: true });
-    window.addEventListener("resize", schedule, { passive: true });
-    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(schedule) : null;
+    window.addEventListener("resize", onResize, { passive: true });
+    if (finePointer) {
+      window.addEventListener("pointermove", onPointer, { passive: true });
+      document.documentElement.addEventListener("pointerleave", onLeave, { passive: true });
+    }
+    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(onResize) : null;
     ro?.observe(document.body);
     schedule();
     cleanups.push(() => {
       window.removeEventListener("scroll", schedule);
-      window.removeEventListener("resize", schedule);
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("pointermove", onPointer);
+      document.documentElement.removeEventListener("pointerleave", onLeave);
+      countIo.disconnect();
+      if (countRaf) cancelAnimationFrame(countRaf);
+      nums.forEach((n) => {
+        if (n.dataset.txt) n.textContent = n.dataset.txt;
+        n.style.minWidth = "";
+        n.style.display = "";
+      });
+      films.forEach((f) => {
+        f.el.style.height = "";
+        f.track?.style.removeProperty("transform");
+      });
+      figs.forEach((f) => {
+        f.style.removeProperty("rotate");
+        ["--lit", "--lx", "--ly"].forEach((k) => f.style.removeProperty(k));
+      });
+      scrubs.forEach((el) => {
+        el.style.removeProperty("scale");
+        el.style.removeProperty("rotate");
+      });
+      darks.forEach((d) => d.lamp?.style.removeProperty("transform"));
+      root.classList.remove("is-dark");
+      rod?.style.removeProperty("--pp");
       ro?.disconnect();
       if (raf) cancelAnimationFrame(raf);
       pars.forEach((im) => im.style.removeProperty("--py"));

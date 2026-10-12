@@ -43,6 +43,8 @@ export type PfView = {
   head: string;
   rest: string[];
   photos: PfPhoto[];
+  /** 視点の頭に掛ける小さな暖簾に染め抜く字（見出しの字と番号の漢数字だけ。最大 3 つ） */
+  nr: string[];
 };
 
 /** 本文を「最初の数文」と「残り」に分けたもの（文字は変えない） */
@@ -56,7 +58,9 @@ export type PfBlock =
   /** 巻頭の写真の列に写真を出した視点（小見出しは写真の上に出ているので、文だけを出す） */
   | { kind: "note"; view: PfView }
   /** 写真の多い視点（または写真だけの面）。画面に留めて、重なった写真をスクロールで 1 枚ずつ入れ替える（紙芝居）。photos[i] の小見出しは views[owner[i]]（無ければ -1） */
-  | { kind: "stack"; views: PfView[]; photos: PfPhoto[]; owner: number[] };
+  | { kind: "stack"; views: PfView[]; photos: PfPhoto[]; owner: number[] }
+  /** 写真が 1 枚ずつの視点が 3 つ続くとき、その 3 つの写真を、画面に留めて横へ流れる帯にする（スマホは横にはらう帯）。小見出しは写真の上、文は帯の下 */
+  | { kind: "film"; views: PfView[]; photos: PfPhoto[] };
 
 export type PfData = {
   id: string;
@@ -313,6 +317,14 @@ const VARIANTS = ["A", "C", "B", "D", "E"] as const;
 export const PHOTO_BUDGET = 12;
 const PER_VIEW_MAX = 3;
 
+const KNUM = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+/** 小さな暖簾に染め抜く字: 見出しの最初の 2 字（かな・漢字）の間に、番号の漢数字 */
+export function nrChars(no: string, name: string): string[] {
+  const cs = Array.from(name).filter((ch) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(ch));
+  const n = parseInt(no, 10);
+  return [cs[0], KNUM[n - 1] ?? no, cs[1]].filter(Boolean) as string[];
+}
+
 export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): PfData {
   const shopName = store?.name ?? "";
   const c = collectPhotos(A, store);
@@ -336,6 +348,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     heading: r.heading ? stripTabelogScore(r.heading) : "",
     ...splitExcerpt(stripTabelogScore(r.desc)),
     photos: vPhotos[i].map((p) => toPf(p, alt(r.name))),
+    nr: nrChars(String(i + 1).padStart(2, "0"), r.name),
   }));
 
   // 足りない写真が 1 枚だけのときは、本文のいちばん長い視点に足して横に並べる（2 枚以上あれば「写真だけの面」にする）
@@ -394,6 +407,25 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
       const cnt = b.kind === "view" ? b.view.photos.length : b.a.photos.length + b.b.photos.length;
       b.rv = cnt >= 2 ? "converge" : cnt === 1 ? SINGLE[si++ % SINGLE.length] : "none";
       if (b.rv === "flow" && b.kind === "view") for (const p of b.view.photos) { p.cap = Math.round((p.cap * 1.04) / 1.12); p.z = 1.12; }
+    }
+  }
+  // 写真が 1 枚ずつの視点が 3 つ以上続くとき、その真ん中の 3 つを「横に流れる帯」にする（少ない記事では作らない）
+  {
+    let bestS = -1;
+    let bestL = 0;
+    for (let i = 0; i < blocks.length; ) {
+      let j = i;
+      while (j < blocks.length && blocks[j].kind === "view" && (blocks[j] as { view: PfView }).view.photos.length === 1) j++;
+      if (j - i > bestL) {
+        bestL = j - i;
+        bestS = i;
+      }
+      i = Math.max(j, i + 1);
+    }
+    if (bestL >= 3) {
+      const st = bestS + (bestL >= 4 ? 1 : 0);
+      const vs = (blocks.slice(st, st + 3) as { view: PfView }[]).map((b) => b.view);
+      blocks.splice(st, 3, { kind: "film", views: vs, photos: vs.map((v) => v.photos[0]) });
     }
   }
   // 写真がいちばん多い視点（または写真だけの面）を、画面に留める場面にする。3 枚以上（7 枚以上の記事なら 2 枚）のときだけ
