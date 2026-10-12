@@ -84,8 +84,9 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
               <Link href={links.top} data-cursor="BACK">トップ</Link>
             </li>
             <li>
-              {/* 街歩き・コースの記事は「街歩き・コース」の棚へ（「シーン別まとめ記事」とは出さない）。利用シーン+店舗紹介の記事がこの枠に来たときだけ、その棚の名前 */}
-              <Link href={RELEASE_FEATURE ? (isSceneShopFeature(A.id, A) ? FEATURE_ROUNDUP_HREF : FEATURE_WALK_HREF) : "/feature"} data-cursor="BACK">{RELEASE_FEATURE ? (isSceneShopFeature(A.id, A) ? FEATURE_KIND_ROUNDUP : FEATURE_ROUNDUP_WALK) : "特集"}</Link>
+              {/* 街歩き・コースの記事は「街歩き・コース」の棚へ（「シーン別まとめ記事」とは出さない）。利用シーン+店舗紹介の記事がこの枠に来たときだけ、その棚の名前。
+                  店 1 軒の記事（POINT 01〜。対象外の記事がこの枠に来る）は今までどおり「特集」→ /feature（isSinglePoint） */}
+              <Link href={RELEASE_FEATURE && !isSinglePoint ? (isSceneShopFeature(A.id, A) ? FEATURE_ROUNDUP_HREF : FEATURE_WALK_HREF) : "/feature"} data-cursor="BACK">{RELEASE_FEATURE && !isSinglePoint ? (isSceneShopFeature(A.id, A) ? FEATURE_KIND_ROUNDUP : FEATURE_ROUNDUP_WALK) : "特集"}</Link>
             </li>
             <li>
               <span aria-current="page">{A.title}</span>

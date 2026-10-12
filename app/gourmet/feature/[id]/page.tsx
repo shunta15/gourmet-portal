@@ -104,9 +104,11 @@ export default async function Page({
   // 切り替えは lib/portal/noren/featureSingle.ts の NOREN_FEATURE_SINGLE（false で全記事が FeaturePage に戻る）。
   const single = NOREN_FEATURE_SINGLE && isSingleShopFeature(article);
   // 利用シーン+店舗紹介の記事（ID が scene- で始まり、全項目が店ページを指す）は、専用の枠（FeatureScenePage）。切り替えは lib/portal/noren/featureScene.ts の NOREN_FEATURE_SCENE。
-  const scene = !single && NOREN_FEATURE_SCENE && isSceneShopFeature(article.id, article);
+  const sceneShop = !single && isSceneShopFeature(article.id, article);
+  const scene = sceneShop && NOREN_FEATURE_SCENE;
   // 利用シーン+店舗紹介の記事（シーン別まとめ記事）は、店舗特集記事と同じ「写真が主役の形」で出す。切り替えは NOREN_FEATURE_ROUNDUP_PHOTO（false で上の scene の枠 FeatureScenePage に戻る）。街歩き・コースの記事は入らない。
-  const roundupPhoto = scene && NOREN_FEATURE_ROUNDUP_PHOTO;
+  // （NOREN_FEATURE_SCENE が false でも、NOREN_FEATURE_ROUNDUP_PHOTO が true なら新しい枠で出す。両方 false は今までの FeaturePage）
+  const roundupPhoto = sceneShop && NOREN_FEATURE_ROUNDUP_PHOTO;
   // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
   const shop = single && storeId ? await getRestaurantById(storeId) : null;
   // 店ページとの切り替えの帯: 対の店ページがある記事だけ（店ページ側と同じ関数 pairedShopOfFeature の対応表。店名の部分一致はしない）

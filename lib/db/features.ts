@@ -15,7 +15,7 @@ import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
 import { applyFeatureSpotPhotos } from "@/lib/featureSpotPhotos";
 import { applyFeatureSinglePhotos } from "@/lib/portal/noren/featureSinglePhotos";
 import { cleanArticleText } from "@/lib/otherSiteRatings";
-import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
 import { rewriteAreaLinksInArticle } from "@/lib/portal/noren/areaLinks";
 import { isHiddenFeature, stripHiddenStoreLinks } from "@/lib/hiddenStores";
 
@@ -173,7 +173,7 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
   // 店 1 軒の記事の写真の補いは RELEASE_REST が true のときだけ、ほかのサイトの評価の除去は NOREN_STRIP_OTHER_RATINGS が true のときだけ（false は今の本番と同じ）
   // 地域・シーンへのリンクの付け替え（rewriteAreaLinksInArticle。「さがす」へ統合したときだけ働く）と、非表示の店へのリンクの除去（stripHiddenStoreLinks）は RELEASE_REST に関係なく通す
   const linked = rewriteAreaLinksInArticle(stripHiddenStoreLinks(result));
-  const a = applyFeatureSpotPhotos(sanitizeFeatureArticle(RELEASE_REST ? applyFeatureSinglePhotos(linked) : linked));
+  const a = applyFeatureSpotPhotos(sanitizeFeatureArticle(RELEASE_REST || RELEASE_FEATURE ? applyFeatureSinglePhotos(linked) : linked)); // 表（featureSinglePhotos.ts）の記事は赤れんが 1 本（1 店 1 ページの対象 50 本の 1 つ）だけ
   return NOREN_STRIP_OTHER_RATINGS ? cleanArticleText(a) : a;
 }
 
