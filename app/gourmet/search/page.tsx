@@ -12,6 +12,11 @@ import { GEO } from "@/lib/geo";
 import { PREF_BY_REGION, parseTown } from "@/lib/towns";
 import { getPrefByName } from "@/lib/areas/prefectures";
 import { SCENES } from "@/lib/scenes";
+import { SEARCH_LOOK, resolveLook } from "@/lib/portal/noren/looks";
+import BlockFonts from "@/components/portal/noren/BlockFonts";
+import { heroImagesOf } from "@/lib/portal/noren/shop";
+import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
+import { sized } from "@/lib/imageUrl";
 
 // 店をさがす（/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/search が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /search のまま。この内部のパス /gourmet/search は外に出さない）。枠は app/gourmet/layout.tsx。
@@ -27,12 +32,22 @@ export const metadata: Metadata = {
   alternates: { canonical: "/search" },
 };
 
-export default async function Page() {
+// 上の帯の写真に使う店（G6「街歩き」の試作と同じ選び方: 店先の暖簾の写真）。店 ID の完全一致
+const BAND_SHOP = "r259";
+const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) ?? "";
+
+export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
   if (!NOREN_SEARCH_REWRITE) notFound();
+  // 見た目（lib/portal/noren/looks.ts）。URL の ?look= は見本でだけ効く（本番は読まない = ページは今までどおり静的のまま）
+  const allowUrl = process.env.VERCEL_ENV !== "production";
+  const look = resolveLook(SEARCH_LOOK, allowUrl ? one((await searchParams).look) : "", allowUrl);
+  const block = look === "block";
   const restaurants = await getAllRestaurants();
-  // 必要な項目だけに絞って渡す（写真は暖簾の店ページと同じ判定を通したもの。評価の数字は渡さない）
-  const items = restaurants.map(toSearchShop);
+  // 必要な項目だけに絞って渡す（写真は暖簾の店ページと同じ判定を通したもの。評価の数字は渡さない）。block のときだけ、最寄り駅も渡す（駅名でも探せるように）
+  const items = block ? restaurants.map((r) => ({ ...toSearchShop(r), nearest: r.nearest })) : restaurants.map(toSearchShop);
+  const bandShop = block ? restaurants.find((r) => r.id === BAND_SHOP) : undefined;
+  const bandPhoto = bandShop ? [...heroImagesOf(bandShop), ...(bandShop.gallery ?? [])].find(isUsableFeatureImage) ?? "" : "";
   // こだわり条件は公開スイッチ ON のときだけ（ここは ON のときしか開けない）
   const facets = buildFacetPayload(restaurants);
   // 地図のピン用: 座標のある店だけの [緯度, 経度]（小数 5 桁。地理院の地図に出す）
@@ -62,14 +77,8 @@ export default async function Page() {
   }
   const prefRegion: Record<string, string> = {};
   for (const [slug, m] of votes) prefRegion[slug] = [...m.entries()].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0]))[0][0];
-  return (
-    <>
-      <ListHero crumbs={[TOP_CRUMB, { label: "店をさがす" }]} eyebrow="店をさがす" eyebrowEn="Search" cloth="さがす" compact>
-        <h1 id="vI-h1" className="vI-h1 is-s vSc-lead">
-          食べたいお店を、<em>見つける。</em>
-        </h1>
-      </ListHero>
-      <Suspense fallback={null}>
+  const search = (
+    <Suspense fallback={null}>
         <NorenSearch
           restaurants={items}
           facets={facets}
@@ -79,8 +88,38 @@ export default async function Page() {
           prefRegion={prefRegion}
           allowMapUrl={process.env.VERCEL_ENV !== "production"}
           sceneDefs={SCENES.map((x) => ({ slug: x.slug, name: x.name, matchTags: x.matchTags }))}
+          look={look}
+          allowLookUrl={allowUrl}
         />
       </Suspense>
+  );
+  if (block) {
+    // 参考画像 2 枚目の形: 上に店の写真の帯と見出し → タブ → 地図と一覧 → 検索結果。ヘッダーはこのページだけ白（blocksearch.css の :has(.vBk-page)）
+    return (
+      <div className="vBk vBk-page">
+        <BlockFonts />
+        <section className="vBk-ban" aria-label="お店を探す">
+          {bandPhoto && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img className="vBk-ban-img" src={sized(bandPhoto, 1600)} alt="" decoding="async" fetchPriority="high" />
+          )}
+          <div className="vBk-wrap vBk-ban-in">
+            <h1>お店を探す</h1>
+            <p>地図から、リストから、気になるお店を見つけよう。</p>
+          </div>
+        </section>
+        {search}
+      </div>
+    );
+  }
+  return (
+    <>
+      <ListHero crumbs={[TOP_CRUMB, { label: "店をさがす" }]} eyebrow="店をさがす" eyebrowEn="Search" cloth="さがす" compact>
+        <h1 id="vI-h1" className="vI-h1 is-s vSc-lead">
+          食べたいお店を、<em>見つける。</em>
+        </h1>
+      </ListHero>
+      {search}
     </>
   );
 }

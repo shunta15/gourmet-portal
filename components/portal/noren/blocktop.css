@@ -1,0 +1,116 @@
+/* ====================================================================
+   入口（/gourmet）の「店を、さがす。」の節の block の見た目（OpenSearchBlock.tsx。参考画像 1 枚目の形）。クラスは vBkt-。
+   この節の中だけ明るい（白い地・橙の差し色・紺の字・角の丸い札）。上下の暗い暖簾の画面との境目は紙の縁（.vBkt-edge）。
+   書体は BlockFonts.tsx（Klee One・Zen Maru Gothic）。最小の文字 12px、押す所 44px 以上、横スクロールなし。「動きを減らす」設定では動きを止める。
+   ==================================================================== */
+.vBkt{
+  --bk-or:#f26a10; --bk-or-d:#d9560a; --bk-or-ink:#c4510a; --bk-or-t:#fff1e6;
+  --bk-navy:#1c2541; --bk-ink:#2b3040; --bk-mute:#6b7280; --bk-line:#e8e9ee; --bk-bg2:#f6f7f9; --bk-cream:#fbf6ea;
+  --bk-hand:"Klee One","Yomogi",cursive;
+  --bk-maru:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --bk-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+  position:relative; z-index:2; background:#fff; color:var(--bk-ink); font-family:var(--bk-sans); font-feature-settings:normal; line-height:1.7;
+  scroll-margin-top:var(--hd);
+}
+.vBkt-wrap{width:min(1200px,100% - 2 * var(--gx));margin-inline:auto}
+.vN .vBkt a:focus-visible,.vN .vBkt button:focus-visible,.vN .vBkt input:focus-visible,.vN .vBkt select:focus-visible{outline:3px solid var(--bk-or);outline-offset:3px;border-radius:10px}
+
+/* ---------- 境目: 紙の縁 ---------- */
+.vBkt-edge{position:absolute;left:0;right:0;height:24px;z-index:3;pointer-events:none;display:block}
+.vBkt-edge svg{display:block;width:100%;height:100%;overflow:visible}
+.vBkt-edge--top{top:-23px;filter:drop-shadow(0 -3px 4px rgba(0,0,0,.55))}
+.vBkt-edge--bottom{bottom:-23px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.55))}
+
+/* ---------- 見出し・検索の箱・業種のタイル ---------- */
+.vBkt-top{padding:clamp(56px,8vw,96px) 0 clamp(40px,5vw,64px)}
+.vBkt-head{display:grid;gap:6px;justify-items:start;margin-bottom:clamp(22px,3vw,34px)}
+.vBkt-k{font:700 14px/1 var(--bk-maru);letter-spacing:.2em;color:var(--bk-or-ink)}
+.vBkt-h{font:600 clamp(40px,5.6vw,80px)/1.15 var(--bk-hand);color:var(--bk-navy);transform:rotate(-2deg);transform-origin:left bottom;margin:4px 0 6px}
+.vBkt-h em{color:var(--bk-or)}
+.vBkt-lead{font:500 clamp(14px,1.2vw,16px)/1.9 var(--bk-sans);color:var(--bk-ink);word-break:auto-phrase;text-wrap:pretty}
+
+.vBkt-sbox{display:flex;align-items:center;gap:10px;width:min(860px,100%);min-height:66px;padding:6px 6px 6px 22px;border-radius:999px;background:#fff;box-shadow:0 8px 30px rgba(28,37,65,.16),0 0 0 1px var(--bk-line);color:var(--bk-ink)}
+.vBkt-sbox:focus-within{box-shadow:0 8px 30px rgba(28,37,65,.16),0 0 0 3px var(--bk-or)}
+.vBkt-sbox-area{display:flex;align-items:center;gap:8px;flex:none;padding-right:14px;border-right:1px solid var(--bk-line);color:var(--bk-or)}
+.vBkt-sbox select{appearance:none;-webkit-appearance:none;border:0;background:transparent;width:176px;min-height:44px;padding:0 4px;font:700 14px/1 var(--bk-sans);color:var(--bk-navy);cursor:pointer;text-overflow:ellipsis;color-scheme:light}
+.vBkt-sbox select option{color:#1c2541;background:#fff}
+.vBkt-sbox input{flex:1;min-width:0;border:0;background:transparent;min-height:44px;font:400 15px/1.2 var(--bk-sans);color:var(--bk-ink);color-scheme:light;-webkit-appearance:none;appearance:none;outline:none}
+.vBkt-sbox input::placeholder{color:#8a909c;opacity:1}
+.vN .vBkt .vBkt-sbox input:focus-visible,.vN .vBkt .vBkt-sbox select:focus-visible{outline:none}
+.vBkt-sbox button{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--bk-or);color:#fff;cursor:pointer;transition:transform .2s,background .2s}
+.vBkt-sbox button:hover{background:var(--bk-or-d);transform:scale(1.06)}
+
+.vBkt-tiles{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-top:clamp(24px,3.4vw,40px)}
+.vBkt-tile{position:relative;display:block;height:clamp(190px,17vw,236px);overflow:hidden;border-radius:16px;background:#3a3027;color:#fff;isolation:isolate}
+.vBkt-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.2,.6,.2,1)}
+.vBkt-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.74) 0%,rgba(0,0,0,.34) 46%,rgba(0,0,0,.04) 82%)}
+.vBkt-tile:hover img{transform:scale(1.07)}
+.vBkt-tile-t{position:absolute;left:14px;right:10px;bottom:14px;display:flex;flex-direction:column;gap:2px;text-shadow:0 1px 10px rgba(0,0,0,.45)}
+.vBkt-tile-t b{font:700 clamp(16px,1.35vw,19px)/1.3 var(--bk-maru)}
+.vBkt-tile-t small{font:500 13px/1.3 var(--bk-sans);opacity:.92;padding-right:44px}
+.vBkt-circ{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--bk-navy);box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .25s,background .25s,color .25s}
+.vBkt-tile:hover .vBkt-circ{transform:translateX(3px);background:var(--bk-or);color:#fff}
+
+/* ---------- 地図で見つける ---------- */
+.vBkt-band{position:relative;height:clamp(480px,39vw,570px);overflow:hidden;background:var(--bk-cream);isolation:isolate}
+/* 地図の箱は、見える帯より右へ広く取る（左の文字の分だけ）。店は箱の真ん中に寄るので、見える帯のうち文字の右側の真ん中に来て、左の文字とかぶらない */
+.vBkt{--bt-w:460px}
+.vBkt-map{position:absolute;top:0;bottom:0;left:0;width:calc(100% + max(var(--gx),calc((100% - 1200px) / 2)) + var(--bt-w) + 24px)}
+.vBkt-map .vMp-surface,.vBkt-map .vMp-leaf{height:100%}
+.vBkt-map .leaflet-control-container{display:none}
+.vBkt-map .vMp-credit{display:none}
+.vBkt-map .leaflet-container{pointer-events:none}
+.vBkt-map .vMp-flag b{font-family:var(--bk-sans)}
+.vBkt-fade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,var(--bk-cream) 0%,var(--bk-cream) 26%,rgba(251,246,234,.85) 36%,rgba(251,246,234,0) 48%),linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 44px)}
+.vBkt-bt{position:absolute;z-index:3;top:0;bottom:0;left:max(var(--gx),calc((100% - 1200px) / 2));display:flex;align-items:center;max-width:var(--bt-w);pointer-events:none}
+.vBkt-bt-in{pointer-events:auto}
+.vBkt-or{font:700 clamp(26px,3vw,44px)/1.2 var(--bk-hand);color:var(--bk-or);transform:rotate(-3deg);transform-origin:left bottom;margin-bottom:6px}
+.vBkt-bh{font:900 clamp(30px,3.2vw,46px)/1.3 var(--bk-maru);color:var(--bk-navy);margin:4px 0 16px;white-space:nowrap}
+.vBkt-bp{font:500 16px/1.9 var(--bk-sans);color:var(--bk-ink)}
+.vBkt-btn{margin-top:22px;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 30px;border-radius:999px;background:#fff;color:var(--bk-navy);font:700 15px/1 var(--bk-sans);box-shadow:0 4px 14px rgba(28,37,65,.16);transition:transform .2s,box-shadow .2s}
+.vBkt-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(28,37,65,.22)}
+.vBkt-credit{position:absolute;right:8px;bottom:6px;z-index:4;margin:0;padding:2px 8px;background:rgba(255,255,255,.72);color:#4a4a42;font:400 12px/1.6 var(--bk-sans);pointer-events:none}
+
+/* ---------- 利用シーン（小さく） ---------- */
+.vBkt-scn{padding:clamp(34px,4vw,48px) 0 clamp(52px,6vw,72px)}
+.vBkt-sh{font:700 15px/1.4 var(--bk-maru);color:var(--bk-navy);margin-bottom:12px}
+.vBkt-chips{display:flex;flex-wrap:wrap;gap:8px}
+.vBkt-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--bk-bg2);color:#4b5160;font:500 14px/1 var(--bk-sans);transition:background .2s,color .2s}
+.vBkt-chip i{font:400 12px/1 var(--bk-sans);font-style:normal;color:var(--bk-mute)}
+.vBkt-chip:hover{background:var(--bk-or-t);color:var(--bk-or-ink)}
+
+/* ---------- 狭い画面 ---------- */
+@media (max-width:1240px){
+  .vBkt{--bt-w:350px}
+  .vBkt-bh{white-space:normal}
+}
+@media (max-width:1100px){
+  .vBkt-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+  .vBkt-top{padding:48px 0 32px}
+  .vBkt-h{font-size:clamp(38px,11vw,52px)}
+  /* 検索の箱: 角の丸い箱。エリアが上、キーワードとボタンが下 */
+  .vBkt-sbox{flex-wrap:wrap;gap:0;min-height:0;padding:8px 8px 8px 16px;border-radius:24px}
+  .vBkt-sbox-area{flex:1 1 100%;padding:0 0 4px;border-right:0;border-bottom:1px solid var(--bk-line);margin-bottom:6px}
+  .vBkt-sbox select{width:100%}
+  .vBkt-sbox input{flex:1 1 60%}
+  /* 業種のタイル: 横にすべらせる（ページ全体は動かさない） */
+  .vBkt-tiles{display:flex;gap:10px;overflow-x:auto;margin-inline:calc(-1 * var(--gx));padding:2px var(--gx) 10px;scroll-snap-type:x proximity;scroll-padding-inline:var(--gx);scrollbar-width:none}
+  .vBkt-tiles::-webkit-scrollbar{display:none}
+  .vBkt-tiles>li{flex:0 0 148px;scroll-snap-align:start}
+  .vBkt-tile{height:196px}
+  /* 地図の帯: 文字が上、地図がその下 */
+  .vBkt-band{height:auto;display:flex;flex-direction:column}
+  .vBkt-fade{display:none}
+  .vBkt-bt{position:static;max-width:none;padding:34px var(--gx) 22px;order:1;display:block}
+  .vBkt-bh{white-space:normal}
+  .vBkt-map{position:relative;order:2;width:100%;height:400px;flex:none}
+  .vBkt-sbox{width:100%}
+}
+@media (max-width:420px){
+  .vBkt-tiles>li{flex-basis:138px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-tile img,.vBkt-circ,.vBkt-btn,.vBkt-sbox button,.vBkt-chip{transition:none!important}
+}

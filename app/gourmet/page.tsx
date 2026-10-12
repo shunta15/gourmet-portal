@@ -4,6 +4,7 @@ import GourmetNorenHomeReal from "@/components/portal/noren-real/GourmetNorenHom
 import { assertPortalLive } from "@/lib/portal/launch";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { NOREN_REAL_DYE, NOREN_REAL_TOP } from "@/lib/portal/noren/realTop";
+import { OPEN_SEARCH_LOOK, resolveLook } from "@/lib/portal/noren/looks";
 
 // グルメのトップ（公開スイッチ ON のときだけ。2026-10-09 から暖簾のデザイン。枠は app/gourmet/layout.tsx）。
 // 中身は components/portal/pages/gourmet-noren-home.tsx（見本 /proto-noren と共通。行き先だけ本物のページ）。
@@ -17,10 +18,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gourmet" },
 };
 
-export default async function Page() {
+export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
   // 最初の画面だけ、リアル版の暖簾に替えられる（lib/portal/noren/realTop.ts のスイッチ。false なら今までの暖簾）。色は固定で、URL では替わらない
   // スマホ幅の暖簾の丈の案は URL の ?sp=、見出し・リードの候補は ?copy=1〜5 で替えられる（見比べ用）。本番（VERCEL_ENV が production）では URL の指定を無視する（サーバーで判定して渡す）
-  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={process.env.VERCEL_ENV !== "production"} allowCopyUrl={process.env.VERCEL_ENV !== "production"} />;
+  // 「店を、さがす。」の節の見た目（block = 参考画像 1 枚目の形 / noren = 今までの暗い札）。URL の ?look=noren|block は見本でだけ効く（本番は読まない）
+  const allowUrl = process.env.VERCEL_ENV !== "production";
+  const look = resolveLook(OPEN_SEARCH_LOOK, allowUrl ? (([] as string[]).concat((await searchParams).look ?? [])[0] ?? "") : "", allowUrl);
+  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={allowUrl} allowCopyUrl={allowUrl} searchLook={look} />;
   return <GourmetNorenHome links={LIVE_LINKS} />;
 }
