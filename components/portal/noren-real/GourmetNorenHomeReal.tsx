@@ -9,6 +9,7 @@ import NorenHeroReal from "./NorenHeroReal";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { FEATURE_KIND_ROUNDUP, FEATURE_KIND_SINGLE, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
 import OpenSearch from "@/components/portal/noren/OpenSearch";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import "../noren/top.css";
@@ -162,9 +163,9 @@ export default async function GourmetNorenHomeReal({
       </section>
 
       {/* 5 特集（お品書き） */}
-      <section className="vN-menu" id="features" aria-label="まとめ記事">
+      <section className="vN-menu" id="features" aria-label="特集">
         <div className="vN-menu-head vN-rv">
-          <h2 className="vN-tate-h">まとめ記事</h2>
+          <h2 className="vN-tate-h">特集</h2>
           <p className="vN-menu-note">
             街を歩く、季節をたどる。<br />
             お品書きのように、いくつか。
@@ -192,7 +193,7 @@ export default async function GourmetNorenHomeReal({
           })}
         </ol>
         <p className="vN-menu-more vN-rv">
-          <Link href="/feature" data-cursor="ALL">特集記事・まとめ記事をすべて見る <span aria-hidden="true">→</span></Link>
+          <Link href="/feature" data-cursor="ALL">{FEATURE_KIND_SINGLE}・{FEATURE_KIND_ROUNDUP}・{FEATURE_ROUNDUP_WALK}をすべて見る <span aria-hidden="true">→</span></Link>
         </p>
       </section>
 

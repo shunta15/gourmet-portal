@@ -73,7 +73,7 @@ export function toCardItem(f: Feature): FeatureCardItem {
 }
 
 /**
- * 「まとめ記事」（複数の店・場所が載る記事 = lib/data の FEATURES。今の一覧と同じ集合・同じ並び）を、「利用シーン別」と「街歩き・コース」に分ける。
+ * 複数の店・場所が載る記事（lib/data の FEATURES。変更前の「まとめ記事」と同じ集合・同じ並び）を、「シーン別まとめ記事」（scene）と「街歩き・コース」（walk）に分ける。
  * 分け方は記事ページの枠の分け方と同じ（isSceneShopFeature）。2 つを合わせると FEATURES と同じ本数・同じ並びになる（増やさない・減らさない）。
  */
 export function getRoundupGroups(): { scene: FeatureCardItem[]; walk: FeatureCardItem[]; total: number } {

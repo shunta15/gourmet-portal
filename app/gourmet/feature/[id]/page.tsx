@@ -27,6 +27,8 @@ import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
 import { isFeaturedPhotoId } from "@/lib/portal/photoFeature/featured";
 import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
+import { NOREN_FEATURE_ROUNDUP_PHOTO } from "@/lib/portal/noren/featureScene";
+import RoundupArticle from "@/components/portal/photoFeature/roundup/RoundupArticle";
 import { pairFeatureNote, pairShopNote, pairedShopOfFeature } from "@/lib/portal/noren/pair";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
 
@@ -98,6 +100,8 @@ export default async function Page({
   const single = NOREN_FEATURE_SINGLE && isSingleShopFeature(article);
   // 利用シーン+店舗紹介の記事（ID が scene- で始まり、全項目が店ページを指す）は、専用の枠（FeatureScenePage）。切り替えは lib/portal/noren/featureScene.ts の NOREN_FEATURE_SCENE。
   const scene = !single && NOREN_FEATURE_SCENE && isSceneShopFeature(article.id, article);
+  // 利用シーン+店舗紹介の記事（シーン別まとめ記事）は、店舗特集記事と同じ「写真が主役の形」で出す。切り替えは NOREN_FEATURE_ROUNDUP_PHOTO（false で上の scene の枠 FeatureScenePage に戻る）。街歩き・コースの記事は入らない。
+  const roundupPhoto = scene && NOREN_FEATURE_ROUNDUP_PHOTO;
   // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
   const shop = single && storeId ? await getRestaurantById(storeId) : null;
   // 店ページとの切り替えの帯: 対の店ページがある記事だけ（店ページ側と同じ関数 pairedShopOfFeature の対応表。店名の部分一致はしない）
@@ -148,6 +152,8 @@ export default async function Page({
           links={LIVE_LINKS}
           href={(h) => h}
         />
+      ) : roundupPhoto ? (
+        <RoundupArticle article={article} />
       ) : scene ? (
         <FeatureScenePage article={article} features={FEATURES} fmap={fmap} links={LIVE_LINKS} href={(h) => h} />
       ) : (
