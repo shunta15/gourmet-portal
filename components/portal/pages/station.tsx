@@ -37,7 +37,7 @@ import {
 } from "@/lib/stations/query";
 import { getVideosByStation } from "@/lib/videos";
 import { loadMapData, subsetOf } from "@/lib/portal/mapData";
-import { packWeeks } from "@/lib/portal/openNow";
+import { OPEN_NOW_ON, packWeeks } from "@/lib/portal/openNow";
 import VideoTiles from "../video/VideoTiles";
 import PortalMap from "../PortalMap";
 import ShopPhoto from "../ShopPhoto";
@@ -262,11 +262,13 @@ export default async function Page({ params }: Props) {
       )}
 
       <OpenScope weeks={weeks}>
-        <section className="mp-pg-sec mp-obar-sec" aria-label="今開いている店の絞り込み">
-          <div className="mp-wrap">
-            <OpenBar ids={summary.stores.map((s) => s.place.id)} />
-          </div>
-        </section>
+        {OPEN_NOW_ON && (
+          <section className="mp-pg-sec mp-obar-sec" aria-label="今開いている店の絞り込み">
+            <div className="mp-wrap">
+              <OpenBar ids={summary.stores.map((s) => s.place.id)} />
+            </div>
+          </section>
+        )}
         {groups.map(({ v, stated, nearby }) => (
           <Block
             key={v.key}

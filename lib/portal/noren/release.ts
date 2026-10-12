@@ -20,3 +20,9 @@
  */
 export const RELEASE_REST = true; // true: 見本が基準（全部出る）／false: 入口だけを新しくする版（入口以外は main と同じ）
 export const NOREN_STRIP_OTHER_RATINGS = true;
+/**
+ * 「いま営業中」の概念（営業中・まもなく閉店・営業時間外の表示、「いま営業中」「今開いている店だけ」の絞り込み、?open=1 / f=open、現在時刻を読むタイマー）を出すか。
+ * 2026-10-12 オーナー決定「今営業中の概念無くしていい」: RELEASE_REST が true（見本が基準）のあいだは false＝どこにも出さない。RELEASE_REST を false に戻せば今までどおり出る。
+ * 営業時間の表記や「深夜まで」「昼に開いている」「日曜に開いている」など時刻で変わらない事実の札は、このスイッチに関係なく出る。
+ */
+export const OPEN_NOW_ON = !RELEASE_REST;

@@ -16,7 +16,7 @@ import { OpenBadge, OpenBar, OpenCount, OpenScope, statusOf, useNowMs, useOpenOn
 import MapStage, { mapHref, type Stage, type Target } from "./MapStage";
 import { PrefRows, RegionList, StageNav } from "./MapRegionPicker";
 import { getRegionBySlug, regionOfPref, type StationLabel } from "@/lib/portal/mapRegions";
-import { isOpenState } from "@/lib/portal/openNow";
+import { OPEN_NOW_ON, isOpenState } from "@/lib/portal/openNow";
 
 export interface ExplorerPoint extends PinPoint {
   /** 都道府県 slug（分からなければ空） */
@@ -228,9 +228,11 @@ export default function MapExplorer({ head, stage, region: regionSlug, points, w
             ))}
           </ul>
         </div>
-        <div className="mp-mx-obar">
-          <OpenBar ids={isStation ? listed.map((p) => p.id) : eff.stage === "pref" ? listed.map((p) => p.id) : eff.stage === "region" ? regionIds : shown.map((p) => p.id)} />
-        </div>
+        {OPEN_NOW_ON && (
+          <div className="mp-mx-obar">
+            <OpenBar ids={isStation ? listed.map((p) => p.id) : eff.stage === "pref" ? listed.map((p) => p.id) : eff.stage === "region" ? regionIds : shown.map((p) => p.id)} />
+          </div>
+        )}
 
         <div className="mp-mx-frame">
           {isStation ? (
@@ -387,10 +389,13 @@ export default function MapExplorer({ head, stage, region: regionSlug, points, w
             </>
           )}
 
-          <p className="mp-mx-foot">
-            「今開いている店だけ」は、店の案内にある営業時間と定休日をもとに、日本時間の現在時刻で判定しています。営業時間や定休日が読み取れない店は、絞り込み中は出ません。
-            <b>臨時休業・祝日は店にご確認ください。</b>
-          </p>
+          {/* 「今開いている店だけ」の説明。概念を外した（OPEN_NOW_ON が false。2026-10-12 オーナー決定）あいだは出さない */}
+          {OPEN_NOW_ON && (
+            <p className="mp-mx-foot">
+              「今開いている店だけ」は、店の案内にある営業時間と定休日をもとに、日本時間の現在時刻で判定しています。営業時間や定休日が読み取れない店は、絞り込み中は出ません。
+              <b>臨時休業・祝日は店にご確認ください。</b>
+            </p>
+          )}
         </div>
 
         <p className="mp-sr" role="status" aria-live="polite">

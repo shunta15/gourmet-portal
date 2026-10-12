@@ -9,9 +9,12 @@
  * 絞り込みの状態は URL の ?open=1 と同期する（useSyncExternalStore で location.search を読む。
  * Suspense やサーバー側の searchParams は使わない＝駅ページなどの静的ページのまま）。
  * 絞り込みは CSS で行う（.mp-open-only のとき、営業中でないバッジを持つ li と、営業中の店が無いグループを隠す）。
+ *
+ * 2026-10-12 オーナー決定「今営業中の概念無くしていい」: OPEN_NOW_ON（lib/portal/openNow.ts。RELEASE_REST が true のあいだ false）が false のときは、
+ * この部品はすべて何も出さず・何も判定しない（タイマーを動かさない・location を読まない・?open=1 は無視・OpenBar と OpenBadge は空）。
  */
 import { createContext, useContext, useSyncExternalStore, type ReactNode } from "react";
-import { getOpenStatus, isOpenState, type OpenResult, type Week } from "@/lib/portal/openNow";
+import { OPEN_NOW_ON, getOpenStatus, isOpenState, type OpenResult, type Week } from "@/lib/portal/openNow";
 
 export interface WeekTableProp {
   table: (Week | null)[];
@@ -45,11 +48,13 @@ function subscribeTime(cb: () => void) {
   };
 }
 
-/** 現在時刻（epoch ミリ秒。分の頭に丸める）。サーバー・ハイドレーション中は null */
+const noSubscribe = () => () => {};
+
+/** 現在時刻（epoch ミリ秒。分の頭に丸める）。サーバー・ハイドレーション中は null。OPEN_NOW_ON が false のあいだは常に null（タイマーも動かさない） */
 export function useNowMs(): number | null {
   const m = useSyncExternalStore(
-    subscribeTime,
-    () => minuteNow,
+    OPEN_NOW_ON ? subscribeTime : noSubscribe,
+    () => (OPEN_NOW_ON ? minuteNow : null),
     () => null,
   );
   return m === null ? null : m * 60000;
@@ -60,6 +65,7 @@ export function useNowMs(): number | null {
 const openSubs = new Set<() => void>();
 
 function readOpenOnly(): boolean {
+  if (!OPEN_NOW_ON) return false;
   try {
     return new URLSearchParams(window.location.search).get("open") === "1";
   } catch {
@@ -68,6 +74,7 @@ function readOpenOnly(): boolean {
 }
 
 function subscribeOpen(cb: () => void) {
+  if (!OPEN_NOW_ON) return () => {};
   openSubs.add(cb);
   window.addEventListener("popstate", cb);
   return () => {
@@ -82,6 +89,7 @@ export function useOpenOnly(): boolean {
 }
 
 export function setOpenOnly(on: boolean) {
+  if (!OPEN_NOW_ON) return;
   const url = new URL(window.location.href);
   if (on) url.searchParams.set("open", "1");
   else url.searchParams.delete("open");
@@ -95,7 +103,7 @@ export function setOpenOnly(on: boolean) {
 const Ctx = createContext<WeekTableProp | null>(null);
 
 export function statusOf(weeks: WeekTableProp | null | undefined, id: string, now: number | null): OpenResult | null {
-  if (!weeks || now === null) return null;
+  if (!OPEN_NOW_ON || !weeks || now === null) return null;
   const i = weeks.index[id];
   return getOpenStatus(i === undefined ? null : (weeks.table[i] ?? null), now);
 }
@@ -105,6 +113,11 @@ export function statusOf(weeks: WeekTableProp | null | undefined, id: string, no
  * ?open=1 かつ現在時刻が分かった後は .mp-open-only を付け、CSS が営業中でない店を隠す。
  */
 export function OpenScope({ weeks, children }: { weeks: WeekTableProp; children: ReactNode }) {
+  if (!OPEN_NOW_ON) return <div className="mp-open-scope">{children}</div>;
+  return <OpenScopeInner weeks={weeks}>{children}</OpenScopeInner>;
+}
+
+function OpenScopeInner({ weeks, children }: { weeks: WeekTableProp; children: ReactNode }) {
   const only = useOpenOnly();
   const now = useNowMs();
   return (
@@ -119,6 +132,11 @@ export function OpenScope({ weeks, children }: { weeks: WeekTableProp; children:
  * 「今開いている店だけ」の絞り込み（CSS の :has）が data-s を見て動くので、要素と data-s は残す。判定前（サーバー・ハイドレーション中）は pending。
  */
 export function OpenBadge({ id }: { id: string }) {
+  if (!OPEN_NOW_ON) return null;
+  return <OpenBadgeInner id={id} />;
+}
+
+function OpenBadgeInner({ id }: { id: string }) {
   const weeks = useContext(Ctx);
   const now = useNowMs();
   const r = statusOf(weeks, id, now);
@@ -127,6 +145,11 @@ export function OpenBadge({ id }: { id: string }) {
 
 /** 見出しの「N店」。絞り込み中は、営業中（まもなく閉店を含む）の店の数にする */
 export function OpenCount({ ids, unit = "店" }: { ids: string[]; unit?: string }) {
+  if (!OPEN_NOW_ON) return <>{ids.length}{unit}</>;
+  return <OpenCountInner ids={ids} unit={unit} />;
+}
+
+function OpenCountInner({ ids, unit }: { ids: string[]; unit: string }) {
   const weeks = useContext(Ctx);
   const only = useOpenOnly();
   const now = useNowMs();
@@ -140,6 +163,11 @@ export function OpenCount({ ids, unit = "店" }: { ids: string[]; unit?: string 
 
 /** 一覧の上の切替（今開いている店だけ）と、判定の根拠・注意書き。「営業中 N店」などの件数は出さない（2026-10-09 オーナー指示） */
 export function OpenBar(_props: { ids?: string[] }) {
+  if (!OPEN_NOW_ON) return null;
+  return <OpenBarInner />;
+}
+
+function OpenBarInner() {
   const only = useOpenOnly();
   return (
     <div className="mp-obar">

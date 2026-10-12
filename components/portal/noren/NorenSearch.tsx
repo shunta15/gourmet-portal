@@ -7,6 +7,7 @@ import { REGIONS, type RegionKey, type SearchItem } from "@/lib/regions";
 import { BROAD_GROUPS, isLegacyCuisineLabel, matchesCuisineFilter } from "@/lib/cuisineBroad";
 import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
+import { OPEN_NOW_ON } from "@/lib/portal/noren/release";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
@@ -275,7 +276,8 @@ export default function NorenSearch({
     // こだわり条件（ON のときだけ）は、キーワードや地域を変えても保つ
     if (facets) {
       const budget = sp.get("budget");
-      const f = sp.get("f");
+      // f=open（「いま営業中」。概念を外した: OPEN_NOW_ON が false）は引き継がない。ほかの条件はそのまま
+      const f = OPEN_NOW_ON ? sp.get("f") : (sp.get("f") ?? "").split(",").filter((x) => x.trim() !== "open").join(",");
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }

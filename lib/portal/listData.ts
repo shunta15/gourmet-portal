@@ -14,7 +14,7 @@ import { getPrefBySlug } from "@/lib/areas/prefectures";
 import { placeCategoryName, placeHref } from "@/lib/stations/query";
 import { VERTICAL_FACE } from "./meta";
 import { shopPhoto } from "./photos";
-import { weekFromText } from "./openNow";
+import { OPEN_NOW_ON, weekFromText } from "./openNow";
 import type { ListShop } from "./listShop";
 
 async function build(): Promise<Map<string, ListShop>> {
@@ -38,7 +38,7 @@ async function build(): Promise<Map<string, ListShop>> {
         light: v.accent.lightColor,
         glyph: VERTICAL_FACE[v.key].glyph,
         ...(ph ? { photo: { src: ph.src, srcSet: ph.srcSet, width: ph.width, height: ph.height } } : {}),
-        week: weekFromText(p.hours, p.holidays).week,
+        week: OPEN_NOW_ON ? weekFromText(p.hours, p.holidays).week : null,
       });
     }
   }

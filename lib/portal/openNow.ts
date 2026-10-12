@@ -18,6 +18,10 @@
  * クライアントに配るのは Week（数字の配列だけ）。文字列の解析はサーバー側で行う。
  */
 import { parseOpeningHours } from "../openingHours";
+import { OPEN_NOW_ON } from "./noren/release";
+
+// 「いま営業中」の概念を出すか（定義と経緯は lib/portal/noren/release.ts の OPEN_NOW_ON）。RELEASE_REST が true のあいだ false
+export { OPEN_NOW_ON };
 
 /** [開店(0時からの分), 閉店(分)]。閉店が 1440 を超えるときは翌日にまたがる（翌2:00 = 1560） */
 export type Win = [number, number];
@@ -157,11 +161,12 @@ export function weekFromText(hours: string | undefined | null, closed?: string |
   return { week };
 }
 
-/** 営業予定の重複排除と連番化（同じ予定の店が多いので、クライアントへ送る量を減らす） */
+/** 営業予定の重複排除と連番化（同じ予定の店が多いので、クライアントへ送る量を減らす）。OPEN_NOW_ON が false のあいだは、何も作らない（クライアントに配らない） */
 export function packWeeks(entries: { id: string; hours?: string | null; closed?: string | null }[]): {
   table: (Week | null)[];
   index: Record<string, number>;
 } {
+  if (!OPEN_NOW_ON) return { table: [], index: {} };
   const table: (Week | null)[] = [];
   const seen = new Map<string, number>();
   const index: Record<string, number> = {};
