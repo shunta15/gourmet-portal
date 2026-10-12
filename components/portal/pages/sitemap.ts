@@ -42,7 +42,8 @@ export function verticalSitemap(key: PortalVertical) {
     }
     for (const s of v.scenes) add(`${v.path}/scene/${s.slug}`, pick(all, { scene: s }).length);
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
-    if (key === "beauty" || key === "bodycare") {
+    // COLOR PLAY: 特集記事は店のページと一緒（/feature/{id} は店のページへ転送）なので、特集の URL は載せない
+    if ((key === "beauty" || key === "bodycare") && !(VERTICAL_DESIGN[key] === "colorplay")) {
       for (const f of await getGeneratedFeatures(key)) add(`${v.path}/feature/${encodeURIComponent(f.id)}`, all.length);
     }
 

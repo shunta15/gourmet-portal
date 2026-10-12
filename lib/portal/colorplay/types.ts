@@ -17,8 +17,10 @@ export type CpShop = {
   main: CpPhoto | null;
   /** 小さな写真(main と重ならない) */
   subs: CpPhoto[];
+  /** 店のタグ(こだわり。駅近・個室あり など。データにあるものだけ) */
+  tags: string[];
 };
 
 export type CpFeature = { id: string; title: string; store: string; href: string; photo: CpPhoto | null };
 
-export type Filters = { kind?: string; pref?: string; q?: string; sort?: string; n?: number };
+export type Filters = { kind?: string; pref?: string; tag?: string; q?: string; sort?: string; n?: number };

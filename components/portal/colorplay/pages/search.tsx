@@ -12,7 +12,8 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { ShopCard } from "../Cards";
 import { IconFilter, IconPin, IconSearch, KIND_ICON } from "@/components/portal/bproto/colorplay/Icons";
-import { loadFeatures, loadShops } from "@/lib/portal/colorplay/data";
+import { loadShops } from "@/lib/portal/colorplay/data";
+import type { CpShop } from "@/lib/portal/colorplay/types";
 import { PAGE_SIZE, countBy, filterShops, parseFilters, searchHref } from "@/lib/portal/colorplay/search";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 import { PREFECTURES } from "@/lib/areas/prefectures";
@@ -25,31 +26,36 @@ type SP = Record<string, string | string[] | undefined>;
 const PREF = new Map(PREFECTURES.map((p) => [p.slug, p]));
 
 /** さがすの設定(種類・県の正しい値)。種類は掲載のない種類(これまでのページにあったもの)も URL としては受ける */
-function setup(site: CpSite) {
+function setup(site: CpSite, shops: CpShop[]) {
   const v = getVertical(site.key);
   const kindName = (slug: string) => site.kinds.find((k) => k.slug === slug)?.name ?? v.categories.find((c) => c.slug === slug)?.name ?? slug;
   const validKinds = new Set(v.categories.map((c) => c.slug));
   const validPrefs = new Set(PREFECTURES.map((p) => p.slug));
-  return { v, kindName, validKinds, validPrefs };
+  // こだわり(店のタグ)。データにあるものだけ。多い順
+  const tagCount = new Map<string, number>();
+  for (const sh of shops) for (const t of sh.tags) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+  const tags = [...tagCount.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"));
+  const validTags = new Set(tags.map((t) => t[0]));
+  return { v, kindName, validKinds, validPrefs, tags, validTags };
 }
 
 export function cpSearchPage(site: CpSite) {
   async function generateMetadata({ searchParams }: { searchParams: Promise<SP> }): Promise<Metadata> {
     const sp = await searchParams;
     const shops = await loadShops(site);
-    const { v, kindName, validKinds, validPrefs } = setup(site);
-    const f = parseFilters(sp, site, validKinds, validPrefs);
+    const { v, kindName, validKinds, validPrefs, validTags } = setup(site, shops);
+    const f = parseFilters(sp, site, validKinds, validPrefs, validTags);
     const count = countBy(shops, f);
     const pref = f.pref ? PREF.get(f.pref) : undefined;
-    const scope = [pref ? `${pref.short}の` : "", f.kind ? kindName(f.kind) : pref ? `${v.name}の店` : `${v.name}の店`].join("");
-    const title = `${f.kind || pref ? scope : `${v.name}の店を探す`}｜${v.brand}`;
+    const scope = [f.tag ? `${f.tag}の` : "", pref ? `${pref.short}の` : "", f.kind ? kindName(f.kind) : `${v.name}の店`].join("");
+    const title = `${f.kind || pref || f.tag ? scope : `${v.name}の店を探す`}｜${v.brand}`;
     // 種類・エリアだけの絞り込みなら、その URL が正本。キーワード・並べ替え・もっと見るが付くものは noindex(件数 0 を渡す)で、正本は種類・エリアだけの URL
     const plain = !f.q && f.sort === "area" && f.n === PAGE_SIZE;
-    const canonical = searchHref(site, { kind: f.kind, pref: f.pref });
+    const canonical = searchHref(site, { kind: f.kind, pref: f.pref, tag: f.tag });
     const meta = buildMetadata({
       vertical: site.key,
       title,
-      description: `${f.kind || pref ? scope : v.name}の店を、種類・エリア・キーワードで探せます。${count > 0 ? `掲載${count}件。` : ""}`,
+      description: `${f.kind || pref || f.tag ? scope : v.name}の店を、種類・エリア・こだわり・キーワードで探せます。${count > 0 ? `掲載${count}件。` : ""}`,
       path: canonical,
       count: plain ? count : 0,
     });
@@ -58,9 +64,9 @@ export function cpSearchPage(site: CpSite) {
 
   async function Page({ searchParams }: { searchParams: Promise<SP> }) {
     const sp = await searchParams;
-    const [shops, features] = await Promise.all([loadShops(site), loadFeatures(site)]);
-    const { v, kindName, validKinds, validPrefs } = setup(site);
-    const f = parseFilters(sp, site, validKinds, validPrefs);
+    const shops = await loadShops(site);
+    const { v, kindName, validKinds, validPrefs, tags, validTags } = setup(site, shops);
+    const f = parseFilters(sp, site, validKinds, validPrefs, validTags);
     const kinds = site.kinds.filter((k) => shops.some((s) => s.kind === k.slug));
     const prefCount = new Map<string, number>();
     for (const s of shops) prefCount.set(s.pref, (prefCount.get(s.pref) ?? 0) + 1);
@@ -73,8 +79,7 @@ export function cpSearchPage(site: CpSite) {
     const list = filterShops(shops, f);
     const shown = list.slice(0, f.n);
     const sig = `${f.kind}|${f.pref}|${f.q}|${f.sort}`;
-    const featuresHref = features.length > 0 ? `${site.base}#features` : undefined;
-    const scope = [f.pref ? `${prefShort(f.pref)}の` : "", f.kind ? kindName(f.kind) : "", f.q ? `「${f.q}」` : ""].join("");
+    const scope = [f.tag ? `${f.tag}・` : "", f.pref ? `${prefShort(f.pref)}の` : "", f.kind ? kindName(f.kind) : "", f.q ? `「${f.q}」` : ""].join("");
     const ld = breadcrumb([
       { name: "マチノワ", url: absUrl("/") },
       { name: v.name, url: absUrl(v.path) },
@@ -91,7 +96,7 @@ export function cpSearchPage(site: CpSite) {
     return (
       <>
         <JsonLd data={ld} />
-        <Header base={site.base} logoA={site.logoA} logoB={site.logoB} featuresHref={featuresHref} />
+        <Header base={site.base} logoA={site.logoA} logoB={site.logoB} />
         <main id="cp-main" tabIndex={-1}>
           <section className="cp-sband" data-sp="o">
             <div className="cp-wrap cp-sband-in">
@@ -110,13 +115,13 @@ export function cpSearchPage(site: CpSite) {
           <div className="cp-wrap cp-search">
             <nav className="cp-kinds" aria-label="種類">
               <Link href={searchHref(site, { ...base, kind: "" })} className={`cp-kind ${f.kind === "" ? "is-on" : ""}`} aria-current={f.kind === "" ? "true" : undefined}>
-                <KIND_ICON.all size={36} /><span>すべて</span><small>{countBy(shops, { pref: f.pref })}</small>
+                <KIND_ICON.all size={36} /><span>すべて</span><small>{countBy(shops, { pref: f.pref, tag: f.tag })}</small>
               </Link>
               {kinds.map((k) => {
                 const Ic = KIND_ICON[k.slug] ?? KIND_ICON.all;
                 return (
                   <Link key={k.slug} href={searchHref(site, { ...base, kind: k.slug })} className={`cp-kind ${f.kind === k.slug ? "is-on" : ""}`} aria-current={f.kind === k.slug ? "true" : undefined}>
-                    <Ic size={36} /><span>{k.name}</span><small>{countBy(shops, { kind: k.slug, pref: f.pref })}</small>
+                    <Ic size={36} /><span>{k.name}</span><small>{countBy(shops, { kind: k.slug, pref: f.pref, tag: f.tag })}</small>
                   </Link>
                 );
               })}
@@ -136,7 +141,16 @@ export function cpSearchPage(site: CpSite) {
                   {prefOptions.map((p) => (<option key={p.slug} value={p.slug}>{p.name}({prefCount.get(p.slug)})</option>))}
                 </select>
               </label>
-              <button type="submit" className="cp-go"><IconFilter size={18} /> さがす</button>
+              {tags.length > 0 && (
+                <label className="cp-field">
+                  <IconFilter size={18} />
+                  <select name="tag" defaultValue={f.tag} aria-label="こだわり条件">
+                    <option value="">こだわり</option>
+                    {tags.map(([t, c]) => (<option key={t} value={t}>{t}({c})</option>))}
+                  </select>
+                </label>
+              )}
+              <button type="submit" className="cp-go">さがす</button>
             </form>
 
             <div className="cp-areas" id="area">
@@ -167,7 +181,7 @@ export function cpSearchPage(site: CpSite) {
             )}
           </div>
         </main>
-        <Footer site={site} featuresHref={featuresHref} />
+        <Footer site={site} />
       </>
     );
   }

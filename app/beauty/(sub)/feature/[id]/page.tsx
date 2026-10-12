@@ -1,6 +1,8 @@
 import { featurePage } from "@/components/portal/pages/feature";
+import { featureRedirectPage } from "@/components/portal/colorplay/pages/redirects";
 
-const page = featurePage("beauty");
+// COLOR PLAY（lib/portal/verticalDesign.ts）のあいだは、特集記事は店のページと一緒（1 店 1 ページ）なので /beauty/shop/{店 ID} へ恒久の転送。"legacy" なら元の特集ページ。
+const page = featureRedirectPage("beauty", featurePage("beauty"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

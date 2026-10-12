@@ -7,7 +7,8 @@ import { notFound, permanentRedirect } from "next/navigation";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { getCategory, getVertical } from "@/lib/verticals";
 import { CP_SITES } from "@/lib/portal/colorplay/site";
-import { searchHref } from "@/lib/portal/colorplay/search";
+import { searchHref, shopHref } from "@/lib/portal/colorplay/search";
+import { findFeature } from "@/lib/places/features";
 import { isColorplay } from "@/lib/portal/verticalDesign";
 
 type CpVerticalKey = keyof typeof CP_SITES;
@@ -63,6 +64,31 @@ export function areaRedirectPage<P extends { pref: string }>(key: CpVerticalKey,
         const { pref } = await props.params;
         if (!PREFECTURES.some((p) => p.slug === pref)) notFound();
         permanentRedirect(searchHref(site, { pref }));
+      }
+      return legacy.Page(props);
+    },
+  };
+}
+
+/** /{v}/feature/{id}: 特集記事は店のページと一緒(1 店 1 ページ)なので、その店のページへ恒久の転送。店との対応は特集の placeId と店 ID の完全一致 */
+export function featureRedirectPage<P extends { id: string }>(key: CpVerticalKey, legacy: Legacy<P>) {
+  const site = CP_SITES[key];
+  const decode = (x: string) => {
+    try {
+      return decodeURIComponent(x);
+    } catch {
+      return x;
+    }
+  };
+  return {
+    generateStaticParams: legacy.generateStaticParams,
+    generateMetadata: legacy.generateMetadata,
+    async Page(props: { params: Promise<P> }) {
+      if (isColorplay(key)) {
+        const { id } = await props.params;
+        const f = await findFeature(key, decode(id));
+        if (!f || !f.placeId) notFound();
+        permanentRedirect(shopHref(site, f.placeId));
       }
       return legacy.Page(props);
     },

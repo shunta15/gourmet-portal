@@ -9,7 +9,7 @@ import { isUsableImage } from "@/lib/portal/photoRules";
 import type { Place } from "@/lib/places/types";
 import type { CpSite } from "./site";
 import { PHOTO_META } from "./photoMeta";
-import { cleanLine, cleanParagraphs, firstSentence } from "./text";
+import { cleanLine, cleanParagraphs, firstSentence, lineOk } from "./text";
 import type { CpFeature, CpPhoto, CpShop } from "./types";
 
 const PREF_BY_SLUG = new Map(PREFECTURES.map((p) => [p.slug, p]));
@@ -52,6 +52,7 @@ function toShop(site: CpSite, p: Place): CpShop {
     blurb: firstSentence(p.article?.lede ?? p.intro, site.strict),
     main: list[0] ? toPhoto(p, list[0]) : null,
     subs: list.slice(1, 4).map((x) => toPhoto(p, x)),
+    tags: p.tags ?? [],
   };
 }
 
@@ -77,7 +78,12 @@ export async function loadFeatures(site: CpSite): Promise<CpFeature[]> {
   });
 }
 
-/** 店のページ用の詳細(実在のデータだけ。メニュー・料金は含めない) */
+/** 特集記事の 1 つのポイント(見出し・向く人・本文・要点) */
+export type CpPoint = { name: string; purpose: string; body: string[]; specs: { k: string; v: string }[] };
+/** 特集記事(その店の ID と完全に一致する特集だけ)。店のページの紹介文の所に出す */
+export type CpStory = { kicker: string; title: string; subtitle: string; lede: string[]; points: CpPoint[]; quote: string; quoteCite: string; closing: string[] };
+
+/** 店のページ用の詳細(実在のデータだけ。メニューは名前だけ・料金は含めない) */
 export type CpDetail = {
   place: Place;
   shop: CpShop;
@@ -88,23 +94,63 @@ export type CpDetail = {
   phone?: string;
   station?: string;
   headline: string;
+  /** 短い紹介(特集記事のある店では使わない) */
   lede: string[];
   sections: { heading: string; body: string[] }[];
-  feature?: { href: string; title: string };
+  story?: CpStory;
+  menus: { name: string; minutes?: number }[];
+  sources: { label: string; url: string }[];
+  checkedAt?: string;
 };
 
 export async function loadDetail(site: CpSite, id: string): Promise<{ detail: CpDetail; sameArea: CpShop[]; sameKind: CpShop[]; total: number } | null> {
   const places = await getGeneratedPlaces(site.key);
   const p = places.find((x) => x.id === id);
   if (!p) return null;
-  const shop = toShop(site, p);
-  const photos = ordered(photoList(p)).map((x) => toPhoto(p, x));
   const strict = site.strict;
-  const feats = await getGeneratedFeatures(site.key);
-  const feat = feats.find((f) => f.placeId === p.id);
+  const shop = toShop(site, p);
+  // 店と特集記事の対応は ID の完全一致(placeId === p.id)
+  const feat = (await getGeneratedFeatures(site.key)).find((f) => f.placeId === p.id);
+
+  // 写真: 店のデータの写真(使えるもの)。特集記事のある店は、その特集の写真(ヒーロー・各ポイント)も同じ店の写真として足す(重なりは除く)
+  let list = photoList(p);
+  let photos = ordered(list).map((x) => toPhoto(p, x));
+  if (feat) {
+    const have = new Set(photos.map((x) => x.src));
+    const extraSrc = [feat.article.heroImage, ...feat.article.ranking.flatMap((r) => r.images)].filter((x, i, a) => !!x && a.indexOf(x) === i);
+    const extra: CpPhoto[] = extraSrc
+      .filter((src) => isUsableImage(src) && !have.has(src) && !(AVOID_CLEAR_FACES && (PHOTO_META[src]?.[0] ?? 3) < 2) && !(AVOID_CLEAR_FACES && (PHOTO_META[src]?.[1] ?? 0) >= 2))
+      .map((src) => ({ src, alt: feat.photos[src]?.alt ?? `${p.name} — 店の写真`, w: feat.photos[src]?.w, h: feat.photos[src]?.h }));
+    photos = [...photos, ...extra];
+    // 特集のヒーロー画像があれば先頭に
+    const hero = photos.find((x) => x.src === feat.article.heroImage);
+    if (hero) photos = [hero, ...photos.filter((x) => x !== hero)];
+    list = [];
+  }
+
+  const story: CpStory | undefined = feat
+    ? {
+        kicker: feat.article.kicker,
+        title: feat.article.title,
+        subtitle: feat.article.subtitle,
+        lede: cleanParagraphs(feat.article.lede, strict),
+        points: feat.article.ranking
+          .map((r) => ({
+            name: r.name,
+            purpose: cleanLine(r.purpose, strict),
+            body: cleanParagraphs(r.desc, strict),
+            specs: r.specs.filter((sp) => lineOk(`${sp.k}${sp.v}`, strict)),
+          }))
+          .filter((r) => r.body.length > 0 && cleanLine(r.name, strict)),
+        quote: cleanLine(feat.article.quote, strict),
+        quoteCite: feat.article.quoteCite ?? "",
+        closing: cleanParagraphs(feat.article.closing, strict),
+      }
+    : undefined;
+
   const detail: CpDetail = {
     place: p,
-    shop,
+    shop: { ...shop, main: photos[0] ?? null, subs: photos.slice(1, 4) },
     nameKana: p.nameKana,
     photos,
     hours: p.hours ? p.hours.split(" / ") : [],
@@ -112,11 +158,16 @@ export async function loadDetail(site: CpSite, id: string): Promise<{ detail: Cp
     phone: p.phone,
     station: p.station,
     headline: cleanLine(p.article?.headline, strict),
-    lede: cleanParagraphs(p.article?.lede ?? p.intro, strict),
-    sections: (p.article?.sections ?? [])
-      .map((s) => ({ heading: s.heading, body: cleanParagraphs(s.body, strict) }))
-      .filter((s) => s.body.length > 0 && cleanLine(s.heading, strict)),
-    feature: feat ? { href: encodeURI(featurePath(site.key, feat.id)), title: feat.article.title } : undefined,
+    lede: story ? [] : cleanParagraphs(p.article?.lede ?? p.intro, strict),
+    sections: story
+      ? []
+      : (p.article?.sections ?? [])
+          .map((s) => ({ heading: s.heading, body: cleanParagraphs(s.body, strict) }))
+          .filter((s) => s.body.length > 0 && cleanLine(s.heading, strict)),
+    story,
+    menus: (p.article?.menus ?? []).filter((m) => lineOk(m.name, strict)).map((m) => ({ name: m.name, minutes: m.minutes })),
+    sources: p.article?.sources ?? [],
+    checkedAt: p.article?.checkedAt,
   };
   const all = places.filter((x) => x.id !== p.id).map((x) => toShop(site, x));
   const sameArea = all

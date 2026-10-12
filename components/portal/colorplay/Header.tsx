@@ -11,17 +11,19 @@ export type CpHeaderProps = {
   base: string;
   logoA: string;
   logoB: string;
-  /** 「特集」の行き先。無ければ「特集」を出さない */
-  featuresHref?: string;
   onColor?: boolean;
+  /** 色面の上に重ねるとき、字を黒にするか(ピンク・水色の面) */
+  ink?: boolean;
+  /** 黒い面の上に重ねるとき、メニューのボタンを白にするか */
+  invert?: boolean;
 };
 
-export default function Header({ base, logoA, logoB, featuresHref, onColor = false }: CpHeaderProps) {
+export default function Header({ base, logoA, logoB, onColor = false, ink = false, invert = false }: CpHeaderProps) {
   const [open, setOpen] = useState(false);
   const links = [
     { href: `${base}/search`, label: "お店を探す" },
-    { href: `${base}/search#area`, label: "エリア" },
-    ...(featuresHref ? [{ href: featuresHref, label: "特集" }] : []),
+    { href: `${base}#area`, label: "エリア" },
+    { href: `${base}#kinds`, label: "種類" },
   ];
   useEffect(() => {
     if (!open) return;
@@ -30,7 +32,7 @@ export default function Header({ base, logoA, logoB, featuresHref, onColor = fal
     return () => window.removeEventListener("keydown", k);
   }, [open]);
   return (
-    <header className={`cp-header ${onColor ? "on-color" : ""}`}>
+    <header className={`cp-header ${onColor ? "on-color" : ""} ${onColor && ink ? "ink" : ""} ${onColor && invert ? "inv" : ""}`}>
       <div className="cp-header-in">
         <Link href={base} className="cp-logo" aria-label={`${logoA} ${logoB} トップ`}>
           {logoA}<i>·</i><span>{logoB}</span>

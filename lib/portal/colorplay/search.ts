@@ -13,13 +13,15 @@ const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) 
 export const norm = (s: string) => s.toLowerCase().normalize("NFKC");
 
 /** URL の引数 → 正しい値だけの Filters(知らない種類・県は捨てる) */
-export function parseFilters(sp: SP, _site: CpSite, kindSlugs: Set<string>, prefSlugs: Set<string>): Required<Filters> {
+export function parseFilters(sp: SP, _site: CpSite, kindSlugs: Set<string>, prefSlugs: Set<string>, tagNames: Set<string>): Required<Filters> {
   const k = one(sp.kind);
   const p = one(sp.pref);
+  const t = one(sp.tag);
   const n = Math.min(Math.max(parseInt(one(sp.n)) || PAGE_SIZE, PAGE_SIZE), PAGE_MAX);
   return {
     kind: kindSlugs.has(k) ? k : "",
     pref: prefSlugs.has(p) ? p : "",
+    tag: tagNames.has(t) ? t : "",
     q: one(sp.q).replace(/\s+/g, " ").trim().slice(0, 40),
     sort: one(sp.sort) === "name" ? "name" : "area",
     n,
@@ -33,6 +35,7 @@ export function filterShops(shops: CpShop[], f: Filters): CpShop[] {
     (s) =>
       (!f.kind || s.kind === f.kind) &&
       (!f.pref || s.pref === f.pref) &&
+      (!f.tag || s.tags.includes(f.tag)) &&
       (words.length === 0 || words.every((w) => norm(`${s.name} ${s.address} ${s.prefName} ${s.city} ${s.kindName}`).includes(w))),
   );
   if (f.sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name, "ja"));
@@ -40,8 +43,8 @@ export function filterShops(shops: CpShop[], f: Filters): CpShop[] {
 }
 
 /** 種類・県だけで数える(q を使わない。件数の突き合わせ用) */
-export function countBy(shops: CpShop[], f: { kind?: string; pref?: string }): number {
-  return shops.filter((s) => (!f.kind || s.kind === f.kind) && (!f.pref || s.pref === f.pref)).length;
+export function countBy(shops: CpShop[], f: { kind?: string; pref?: string; tag?: string }): number {
+  return shops.filter((s) => (!f.kind || s.kind === f.kind) && (!f.pref || s.pref === f.pref) && (!f.tag || s.tags.includes(f.tag))).length;
 }
 
 /** さがすの URL(空の項目は付けない) */
@@ -49,6 +52,7 @@ export function searchHref(site: CpSite, f: Filters, hash = ""): string {
   const p = new URLSearchParams();
   if (f.kind) p.set("kind", f.kind);
   if (f.pref) p.set("pref", f.pref);
+  if (f.tag) p.set("tag", f.tag);
   if (f.q) p.set("q", f.q);
   if (f.sort && f.sort !== "area") p.set("sort", f.sort);
   if (f.n && f.n > PAGE_SIZE) p.set("n", String(f.n));

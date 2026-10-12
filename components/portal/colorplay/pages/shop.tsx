@@ -1,8 +1,12 @@
 /**
- * 1 店 1 ページ(/{v}/shop/{id})。COLOR PLAY(試作 app/proto-beauty/colorplay/shop/page.tsx の本番版)。
- * 写真は 0〜3 枚しかないので、枚数に合わせて組み方を変える(空の枠・壊れた画像・同じ写真の繰り返しを出さない)。
- *   0 枚: 写真の枠を出さず、色面と店名の大きな字で見せる / 1 枚: 大きく 1 枚 / 2〜3 枚: 並べる(大 1 枚+小 1〜2 枚)
- * 紹介文が無い店は、基本情報だけのページ。メニューの料金は出さない(データに価格があっても出さない)。
+ * 1 店 1 ページ(/{v}/shop/{id})。COLOR PLAY(試作 app/proto-beauty/colorplay/shop/page.tsx の本番版)。特集記事は店のページと一緒(1 店 1 ページ)。
+ *
+ * 組み: 入口(色面が開いて店名と写真が出てくる) → 帯 → 写真 → 紹介(見出しごとに色面が替わる。文は短く見せて「続きを読む」に畳む)
+ *       → メニュー(名前だけ) → 店舗情報(黒い面。住所・営業時間・電話・公式サイト・予約・地図) → 同じエリアの店・同じ種類の店。
+ * 特集記事のある店(店 ID と特集の placeId が完全一致)は、短い紹介文の代わりに特集記事の本文を出す(二重にしない)。
+ * 写真は 0〜3 枚(特集のある店はもっと)。枚数に合わせて組み方を変える(0 枚は色面と店名の大きな字。空の枠・壊れた画像・同じ写真の繰り返しを出さない)。
+ * 紹介文が無い店は、入口・帯・店舗情報だけのページ。メニューの料金は出さない。
+ * 動きは transform・opacity・clip-path だけ。prefers-reduced-motion と JS なしでは、動かない完成形のまま読める。
  * 構造化データ・metadata は、これまでの店ページ(components/portal/pages/shop.tsx)と同じ考え方(URL は変えない)。
  */
 import Link from "next/link";
@@ -14,7 +18,7 @@ import { MiniCard } from "../Cards";
 import Heart from "@/components/portal/bproto/colorplay/Heart";
 import JsonLd from "@/components/portal/JsonLd";
 import { IconChevron, IconPin } from "@/components/portal/bproto/colorplay/Icons";
-import { loadDetail, loadFeatures } from "@/lib/portal/colorplay/data";
+import { loadDetail } from "@/lib/portal/colorplay/data";
 import { searchHref, shopHref } from "@/lib/portal/colorplay/search";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 import { getCategory, getVertical } from "@/lib/verticals";
@@ -34,21 +38,70 @@ const safeDecode = (s: string): string => {
   }
 };
 
+/** 入口の色(種類ごと) */
+const HERO_TONE: Record<string, string> = { hair: "red", esthetic: "pink", "hair-removal": "sky", nail: "black", eyelash: "blue" };
+const KIND_EN: Record<string, string> = { hair: "HAIR", esthetic: "ESTHETIC", "hair-removal": "HAIR REMOVAL", nail: "NAIL", eyelash: "EYELASH" };
+/** 見出しごとの色面(入口の色を除いて順に回す) */
+const BANDS = ["pink", "blue", "red", "black", "sky"];
+
+const nameSize = (n: number) => (n <= 6 ? "xl" : n <= 14 ? "l" : n <= 28 ? "m" : "s");
+const rep = (a: string[]) => Array.from({ length: 6 }, () => a).flat();
+
+/** 本文を「見える所」と「続きを読むの中」に分ける。短ければ全部見せる */
+function foldBody(body: string[]): { open: string[]; rest: string[] } {
+  const total = body.reduce((n, x) => n + x.length, 0);
+  if (total <= 170) return { open: body, rest: [] };
+  const sents = body[0].match(/[^。]+。?/g) ?? [body[0]];
+  let head = "";
+  let i = 0;
+  while (i < sents.length && head.length < 100) head += sents[i++];
+  const tail = sents.slice(i).join("");
+  return { open: [head], rest: [...(tail ? [tail] : []), ...body.slice(1)] };
+}
+
+type PanelData = { no: string; heading: string; sub?: string; body: string[]; specs?: { k: string; v: string }[]; id?: string };
+
+function Panel({ d, band, right }: { d: PanelData; band: string; right: boolean }) {
+  const { open, rest } = foldBody(d.body);
+  return (
+    <section className={`sh-sec bg-${band}`} id={d.id} data-sp="e p">
+      <p className="sh-no cp-cond" aria-hidden="true">{d.no}</p>
+      <div className={`cp-wrap sh-sec-in sh-2col ${right ? "rev" : ""}`}>
+        <div className="sh-hd">
+          <h2 className="sh-h">{d.heading}</h2>
+          {d.sub && <p className="sh-sub">{d.sub}</p>}
+        </div>
+        <div className={`sh-card ${right ? "al-r" : ""}`}>
+          {open.map((t, i) => (<p key={i}>{t}</p>))}
+          {rest.length > 0 && (
+            <details className="sh-more">
+              <summary><span className="so">続きを読む</span><span className="sc">たたむ</span></summary>
+              {rest.map((t, i) => (<p key={i}>{t}</p>))}
+            </details>
+          )}
+          {d.specs && d.specs.length > 0 && (
+            <dl className="sh-specs">
+              {d.specs.map((x) => (<div key={x.k}><dt>{x.k}</dt><dd>{x.v}</dd></div>))}
+            </dl>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function cpShopPage(site: CpSite) {
   return async function Page({ params }: Props) {
     const { id } = await params;
     const hit = await loadDetail(site, safeDecode(id));
     if (!hit) notFound();
     const { detail: d, sameArea, sameKind } = hit;
-    const features = await loadFeatures(site);
-    const featuresHref = features.length > 0 ? `${site.base}#features` : undefined;
     const p = d.place;
     const s = d.shop;
     const v = getVertical(site.key);
     const cat = getCategory(v, p.category);
     const path = shopHref(site, s.id);
     const n = d.photos.length;
-    const hasAbout = d.lede.length > 0 || d.sections.length > 0 || !!d.feature;
 
     const mapUrl = p.mapUrl ?? mapsSearchUrl(p.name, p.address);
     const all: ShopLink[] = shopLinks({
@@ -79,6 +132,36 @@ export function cpShopPage(site: CpSite) {
       { name: p.name, url: absUrl(path) },
     ]);
 
+    // ---- 紹介の面(特集記事のある店は特集の本文。無ければ短い紹介文) ----
+    const panels: PanelData[] = [];
+    let no = 0;
+    const nn = () => String(++no).padStart(2, "0");
+    if (d.story) {
+      const st = d.story;
+      panels.push({ no: nn(), id: "about", heading: st.title, sub: st.subtitle, body: st.lede });
+      for (const pt of st.points) panels.push({ no: nn(), heading: pt.name, sub: pt.purpose, body: pt.body, specs: pt.specs });
+    } else {
+      if (d.lede.length > 0) panels.push({ no: nn(), id: "about", heading: "紹介", body: d.lede });
+      for (const sc of d.sections) panels.push({ no: nn(), id: panels.length === 0 ? "about" : undefined, heading: sc.heading, body: sc.body });
+    }
+    const hasAbout = panels.length > 0;
+    const tone = HERO_TONE[s.kind] ?? "red";
+    const ink = tone === "pink" || tone === "sky" || tone === "blue";
+    // 面の色は 入口の色と黒(最後の面)を除いて順に回す。隣どうしが同じ色にならない
+    const cyc = BANDS.filter((b) => b !== tone && b !== "black");
+    const bandOf = (i: number) => cyc[i % (cyc.length - 1)];
+    const lastBand = panels.length > 0 ? bandOf(panels.length - 1) : cyc[0];
+    const menuBand = lastBand === "sky" ? "pink" : "sky";
+    const gallery = d.photos.slice(1);
+    const tabs = [
+      { href: "#top", label: "トップ" },
+      ...(hasAbout ? [{ href: "#about", label: "紹介" }] : []),
+      { href: "#access", label: "店舗情報" },
+    ];
+    const phoneLink = all.find((l) => l.kind === "phone");
+    const ribA = rep([KIND_EN[s.kind] ?? s.kindName, "●", s.name, "●"]);
+    const ribB = rep([`${s.prefName}${s.city ? ` ${s.city}` : ""}`, "●", "Machinowa Beauty", "●"]);
+
     const crumb = (
       <nav className="cp-crumb" aria-label="パンくず">
         <Link href={site.base}>TOP</Link><IconChevron size={12} />
@@ -87,111 +170,118 @@ export function cpShopPage(site: CpSite) {
         <span aria-current="page">{s.name}</span>
       </nav>
     );
-    const addr = (
-      <p className="cp-addr cp-addr-l"><IconPin size={18} /><span>{s.address}{d.headline && (<><br /><small>{d.headline}</small></>)}</span></p>
-    );
-    const cta = (
-      <div className="cp-cta">
-        <Heart id={s.id} name={s.name} className="cp-heart-l" />
-        {primary && <CpLinks links={[primary]} storeId={s.id} page={path} variant="primary" />}
-      </div>
-    );
-    const tabs = [
-      { href: "#top", label: "トップ" },
-      ...(hasAbout ? [{ href: "#about", label: "店について" }] : []),
-      { href: "#access", label: "アクセス" },
-    ];
 
     return (
       <>
         <JsonLd data={ld} />
         <JsonLd data={crumbLd} />
-        <Header base={site.base} logoA={site.logoA} logoB={site.logoB} featuresHref={featuresHref} />
+        <Header base={site.base} logoA={site.logoA} logoB={site.logoB} onColor ink={ink} invert={tone === "black"} />
         <main id="cp-main" tabIndex={-1}>
-          {n > 0 ? (
-            <div className={`cp-wrap cp-shop-top`} id="top">
-              <div className="cp-shop-left">
-                {crumb}
-                <h1 className="cp-h1d"><span className="cp-line" style={{ ["--l" as string]: 0 }}>{s.name}</span></h1>
-                {d.nameKana && <p className="cp-kana">{d.nameKana}</p>}
-                <p className="cp-tags"><span className={`cp-tag k-${s.kind}`}>{s.kindName}</span></p>
-                {addr}
-              </div>
-              <div className="cp-shop-right">
-                <div className={`cp-shop-photos n${n}`} data-sp="p">
-                  {d.photos.map((x, i) => (
-                    <div key={x.src} className={`cp-sp cp-sp-${i}`}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={sized(x.src, i === 0 ? 1024 : 640)}
-                        alt={x.alt}
-                        width={x.w ?? 1200}
-                        height={x.h ?? 800}
-                        loading={i === 0 ? "eager" : "lazy"}
-                        fetchPriority={i === 0 ? "high" : undefined}
-                        decoding="async"
-                      />
-                    </div>
-                  ))}
-                  {n === 1 && <p className="cp-script cp-shop-sc" aria-hidden="true">{site.scriptShop.split("\n").map((l, i) => (<span key={i}>{i > 0 && <br />}{l}</span>))}</p>}
+          <section className={`sh-hero t-${tone} ${n > 0 ? "has-ph" : "no-ph"}`} id="top" data-sp="o">
+            <div className="sh-curtain" aria-hidden="true"><i /><i /><i /><i /></div>
+            <div className="sh-shape sh-s1" aria-hidden="true" />
+            <div className="sh-shape sh-s2" aria-hidden="true" />
+            <div className="cp-wrap sh-hero-in">
+              {crumb}
+              <div className="sh-hero-grid">
+                <div className="sh-hero-copy">
+                  <p className="cp-tags"><span className={`cp-tag k-${s.kind}`}>{s.kindName}</span></p>
+                  <h1 className={`sh-name sz-${nameSize(s.name.length)}`}><span className="cp-line" style={{ ["--l" as string]: 0 }}>{s.name}</span></h1>
+                  {d.nameKana && <p className="cp-kana">{d.nameKana}</p>}
+                  <p className="cp-addr cp-addr-l"><IconPin size={18} /><span>{s.address}{d.headline && (<><br /><small>{d.headline}</small></>)}</span></p>
+                  <div className="cp-cta">
+                    <Heart id={s.id} name={s.name} className="cp-heart-l" />
+                    {primary && <CpLinks links={[primary]} storeId={s.id} page={path} variant="primary" />}
+                  </div>
+                  <p className="sh-info-p"><a className="sh-info-btn" href="#access">店舗情報のみ見る<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M6 13l6 6 6-6" /></svg></a></p>
                 </div>
-                {cta}
+                {n > 0 && (
+                  <div className="sh-hero-ph">
+                    <div className="sh-cut">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={sized(d.photos[0].src, 1024)} alt={d.photos[0].alt} width={d.photos[0].w ?? 1200} height={d.photos[0].h ?? 800} fetchPriority="high" decoding="async" />
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
-          ) : (
-            <div className="cp-wrap cp-shop-0" id="top">
-              <div className={`cp-shop-0-in k-${s.kind}-bg`}>
-                {crumb}
-                <h1 className="cp-h1d cp-h1-big"><span className="cp-line" style={{ ["--l" as string]: 0 }}>{s.name}</span></h1>
-                {d.nameKana && <p className="cp-kana">{d.nameKana}</p>}
-                <p className="cp-tags"><span className={`cp-tag k-${s.kind}`}>{s.kindName}</span></p>
-                {addr}
-                {cta}
-                <p className="cp-script cp-shop-0-sc" aria-hidden="true">{site.scriptShop.split("\n").map((l, i) => (<span key={i}>{i > 0 && <br />}{l}</span>))}</p>
-              </div>
-            </div>
-          )}
+            <span className="cp-hero-cut" aria-hidden="true" />
+          </section>
 
-          <nav className="cp-tabs cp-wrap" aria-label="ページ内の移動">
+          <section className="cp-ribbons sh-rib" data-sp="p" aria-hidden="true">
+            <div className="cp-rib rib-a"><div className="cp-rib-row cp-cond">{ribA.map((w, i) => (<span key={i}>{w}</span>))}</div></div>
+            <div className="cp-rib rib-b"><div className="cp-rib-row cp-cond">{ribB.map((w, i) => (<span key={i}>{w}</span>))}</div></div>
+          </section>
+
+          <nav className="cp-tabs sh-tabs cp-wrap" aria-label="ページ内の移動">
             {tabs.map((t, i) => (<a key={t.href} href={t.href} className={i === 0 ? "is-on" : undefined}>{t.label}</a>))}
           </nav>
 
-          {hasAbout && (
-            <section className="cp-wrap cp-about" id="about">
-              <div className="cp-about-t cp-rv">
-                {d.headline && <h2 className="cp-h2d">{d.headline}</h2>}
-                {d.lede.map((t, i) => (<p key={i}>{t}</p>))}
-                {d.sections.map((x) => (
-                  <div key={x.heading} className="cp-sec">
-                    <h3>{x.heading}</h3>
-                    {x.body.map((t, i) => (<p key={i}>{t}</p>))}
-                  </div>
-                ))}
-                {d.feature && (
-                  <p className="cp-feat">
-                    <Link href={d.feature.href} prefetch={false}>特集記事を読む<span aria-hidden="true"> →</span></Link>
-                  </p>
-                )}
+          {gallery.length > 0 && (
+            <section className={`sh-sec sh-gal-sec bg-${cyc[cyc.length - 1]}`} aria-label="店の写真">
+              <div className="cp-wrap sh-sec-in">
+                <ul className={`sh-gal g${Math.min(gallery.length, 6)}`}>
+                  {gallery.map((x, i) => (
+                    <li key={x.src} data-sp="e" style={{ ["--i" as string]: i % 3, ["--r" as string]: i % 2 ? 3 : -3 }}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={sized(x.src, 800)} alt={x.alt} width={x.w ?? 1200} height={x.h ?? 800} loading="lazy" decoding="async" />
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <aside className="cp-bluecard cp-rv" aria-hidden="true" style={{ ["--i" as string]: 1 }}>
-                <p className="cp-script">{site.scriptAbout.split("\n").map((l, i) => (<span key={i}>{i > 0 && <br />}{l}</span>))}</p>
-              </aside>
             </section>
           )}
 
-          <section className="cp-wrap cp-access cp-rv" id="access">
-            <h2 className="cp-h2">アクセス</h2>
-            <dl>
-              <div><dt>住所</dt><dd>{s.address}</dd></div>
-              {d.station && <div><dt>最寄り駅</dt><dd>{d.station}</dd></div>}
-              {d.hours.length > 0 && (
-                <div><dt>営業時間</dt><dd>{d.hours.length === 1 ? d.hours[0] : (<ul className="cp-hours">{d.hours.map((h, i) => (<li key={i}>{h}</li>))}</ul>)}</dd></div>
+          {panels.map((pd, i) => (<Panel key={i} d={pd} band={bandOf(i)} right={i % 2 === 1} />))}
+
+          {d.story && (d.story.quote || d.story.closing.length > 0) && (
+            <section className="sh-sec bg-black sh-quote" data-sp="e p">
+              <div className="cp-wrap sh-sec-in">
+                {d.story.quote && (
+                  <blockquote className="sh-bq"><p>{d.story.quote}</p>{d.story.quoteCite && <cite>{d.story.quoteCite}</cite>}</blockquote>
+                )}
+                {d.story.closing.map((t, i) => (<p key={i} className="sh-closing">{t}</p>))}
+              </div>
+            </section>
+          )}
+
+          {d.menus.length > 0 && (
+            <section className={`sh-sec bg-${d.story && (d.story.quote || d.story.closing.length > 0) ? menuBand : lastBand === "sky" ? "pink" : "sky"} sh-menu`} data-sp="e" aria-labelledby="sh-menu-h">
+              <div className="cp-wrap sh-sec-in">
+                <h2 className="sh-h" id="sh-menu-h">メニュー</h2>
+                <ul className="sh-chips">
+                  {d.menus.map((m, i) => (<li key={i}>{m.name}</li>))}
+                </ul>
+              </div>
+            </section>
+          )}
+
+          <section className="sh-sec sh-access bg-black" id="access" data-sp="e">
+            <div className="cp-wrap sh-sec-in">
+              <h2 className="sh-h">店舗情報</h2>
+              <dl className="sh-facts">
+                <div><dt>住所</dt><dd>{s.address}</dd></div>
+                {d.station && <div><dt>最寄り駅</dt><dd>{d.station}</dd></div>}
+                {d.hours.length > 0 && (
+                  <div><dt>営業時間</dt><dd>{d.hours.length === 1 ? d.hours[0] : (<ul className="cp-hours">{d.hours.map((h, i) => (<li key={i}>{h}</li>))}</ul>)}</dd></div>
+                )}
+                {d.holidays && <div><dt>定休日</dt><dd>{d.holidays}</dd></div>}
+                {d.phone && <div><dt>電話</dt><dd>{phoneLink ? <a href={phoneLink.href}>{d.phone}</a> : d.phone}</dd></div>}
+              </dl>
+              <CpLinks links={all} storeId={s.id} page={path} variant="row" />
+              <p className="cp-note-d">営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
+              {d.sources.length > 0 && (
+                <div className="sh-src">
+                  <h3>情報の出どころ</h3>
+                  <ul>
+                    {d.sources.map((x) => (
+                      <li key={x.url}><a href={x.url} target="_blank" rel="noopener noreferrer">{x.label}<span className="cp-sr">(別のタブで開きます)</span></a></li>
+                    ))}
+                  </ul>
+                  {d.checkedAt && <p>確認日　<time dateTime={d.checkedAt}>{d.checkedAt.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, da) => `${y}年${Number(mo)}月${Number(da)}日`)}</time></p>}
+                </div>
               )}
-              {d.holidays && <div><dt>定休日</dt><dd>{d.holidays}</dd></div>}
-              {d.phone && <div><dt>電話</dt><dd>{all.find((l) => l.kind === "phone") ? <a href={all.find((l) => l.kind === "phone")!.href}>{d.phone}</a> : d.phone}</dd></div>}
-            </dl>
-            <CpLinks links={all} storeId={s.id} page={path} variant="row" />
-            <p className="cp-note-d">営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
+            </div>
           </section>
 
           {sameArea.length > 0 && (
@@ -207,7 +297,7 @@ export function cpShopPage(site: CpSite) {
             </section>
           )}
         </main>
-        <Footer site={site} featuresHref={featuresHref} />
+        <Footer site={site} />
       </>
     );
   };
