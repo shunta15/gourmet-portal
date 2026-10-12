@@ -7,6 +7,7 @@ import { beginGrab, createWorld, endGrab, kickToy, pushToy, rollIn, rollOut, set
 import { camAt, makeCam, project, ray } from "@/lib/portal/vert/korogashi/camera";
 import { createRenderer, N_OBJ, type KRenderer } from "./renderer";
 import { LINE_P0, LINE_P1, linePoses } from "@/lib/portal/vert/korogashi/lineup";
+import { POLE_COLORS } from "@/lib/portal/vert/korogashi/colors";
 
 type Props = { kinds: KoroKind[]; lead: string };
 
@@ -26,8 +27,8 @@ const POLE_OF_KIND = KOF.map((_, k) => KOF.indexOf(k));
 const PREROLL = 22;
 const HALF_LEN = [2.8, 2.8, 2.8, 2.8, 2.8, 2.8, 0, 0, 0, 0.7, 1.25];
 
-/** 紙の帯の字を 1 枚の画像(R = 墨、G = 帯の色の刷り)に描く。2 列 × 3 行 */
-function drawAtlas(kinds: KoroKind[], mincho: string, sans: string) {
+/** 紙の帯の字を 1 枚の画像(R = 墨、G = 帯の色の刷り)に描く。2 列 × 3 行。掲載のない種類のポール(null)は、何も刷らない無地の帯 */
+function drawAtlas(kinds: (KoroKind | null)[], mincho: string, sans: string) {
   const c = document.createElement("canvas");
   c.width = 2048;
   c.height = 2048;
@@ -36,6 +37,7 @@ function drawAtlas(kinds: KoroKind[], mincho: string, sans: string) {
   g.fillRect(0, 0, 2048, 2048);
   const CH = 341;
   kinds.forEach((k, i) => {
+    if (!k) return;
     const ox = (i % 2) * 1024;
     const oy = (2 - Math.floor(i / 2)) * CH;
     g.save();
@@ -576,8 +578,9 @@ export default function KorogashiHero({ kinds, lead }: Props) {
     };
 
     goRef.current = (i: number) => {
-      if (leaving) return;
-      const href = kinds[KOF[i]].href;
+      const kd = kinds[KOF[i]];
+      if (leaving || !kd) return;
+      const href = kd.href;
       leaving = true;
       w.classList.add("kz-leaving");
       const b = world.bodies[i];
@@ -603,9 +606,9 @@ export default function KorogashiHero({ kinds, lead }: Props) {
         await document.fonts.ready;
       } catch {}
       if (!alive) return;
-      const pk = KOF.map((k) => kinds[k]);
+      const pk = KOF.map((k) => kinds[k] ?? null);
       r.setAtlas(drawAtlas(pk, mf, sf));
-      r.setColors(pk.map((k) => hex(k.color)));
+      r.setColors(pk.map((k, i) => hex(k ? k.color : POLE_COLORS[KOF[i]])));
       layout();
       if (reduce) {
         // 動きを止めた完成形: 山を落ち着くまで先に進める
@@ -697,9 +700,9 @@ export default function KorogashiHero({ kinds, lead }: Props) {
   };
 
   return (
-    <section ref={wrap} className="kz-hero" id="top" data-mode="init" aria-label="ストレッチポールの山">
+    <section ref={wrap} className="kz-hero" id="top" data-mode="init" aria-label="丸めたマットの山の立体">
       <noscript>
-        <style>{".kz-fb{opacity:1!important;visibility:visible!important}"}</style>
+        <style>{".kz-fb{opacity:1!important;visibility:visible!important}.kz-hero{height:100svh!important}.kz-cue{display:none!important}"}</style>
       </noscript>
       <div ref={stage} className="kz-stage">
         <picture className="kz-fb" aria-hidden="true">
@@ -745,7 +748,10 @@ export default function KorogashiHero({ kinds, lead }: Props) {
                 >
                   <i className="kz-row-no">{String(k.n).padStart(2, "0")}</i>
                   <span className="kz-row-n">{k.name}</span>
-                  <em className="kz-row-en">{k.en}</em>
+                  <em className="kz-row-ct">
+                    {k.count}
+                    <small>件</small>
+                  </em>
                 </Link>
               </li>
             ))}
@@ -753,11 +759,13 @@ export default function KorogashiHero({ kinds, lead }: Props) {
         </nav>
 
         <div className="kz-labels" aria-hidden="true">
-          {KOF.map((ki, i) => (
-            <span key={kinds[ki].slug} className="kz-rl" ref={(el) => { labels.current[i] = el; }}>
-              {kinds[ki].name} <i>→</i>
-            </span>
-          ))}
+          {KOF.map((ki, i) =>
+            kinds[ki] ? (
+              <span key={kinds[ki].slug} className="kz-rl" ref={(el) => { labels.current[i] = el; }}>
+                {kinds[ki].name} <i>→</i>
+              </span>
+            ) : null
+          )}
         </div>
         <p className="kz-kh" aria-hidden="true">
           種類からさがす

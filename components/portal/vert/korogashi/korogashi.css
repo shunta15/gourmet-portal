@@ -37,6 +37,9 @@
 .kz-h1a,.kz-h1b{display:block}
 .kz-lead{margin:18px 0 0;font:400 14.5px/1.95 var(--sans);color:var(--ink2);max-width:25em}
 .kz-hero:not([data-mode="gl"]) .kz-copy{pointer-events:auto}
+/* WebGL が使えないとき(静止画): スクロールで進む場面は無い。1 画面の高さにたたむ */
+.kz-hero[data-mode="css"]{height:100svh}
+.kz-hero[data-mode="css"] .kz-cue{display:none}
 
 /* 山の脇の小さな 6 行(いつでも押せる) */
 .kz-list{position:absolute;z-index:6;left:var(--gut);bottom:clamp(22px,7svh,64px);width:min(27vw,340px);box-sizing:border-box;padding:calc(var(--kh) * 10px) calc(var(--kh) * 12px);margin-left:calc(var(--kh) * -12px);background:rgba(245,242,234,calc(var(--kh) * .94));box-shadow:0 10px 24px -14px rgba(40,28,14,calc(var(--kh) * .6))}
@@ -48,7 +51,8 @@
 .kz-row:hover::before,.kz-row:focus-visible::before{width:6px}
 .kz-row-no{font:500 12px/1 var(--sans);letter-spacing:.08em;color:var(--ink3);font-style:normal}
 .kz-row-n{font:800 17px/1.2 var(--min);color:var(--sumi)}
-.kz-row-en{font:500 12px/1 var(--sans);letter-spacing:.18em;color:var(--ink3);font-style:normal;text-transform:uppercase}
+.kz-row-ct{font:500 13px/1 var(--sans);letter-spacing:.06em;color:var(--ink3);font-style:normal;white-space:nowrap}
+.kz-row-ct small{font-size:11px;margin-left:1px}
 
 /* 種類の場面: 並んだポールの脇の札と見出し */
 .kz-labels{position:absolute;inset:0;z-index:5;pointer-events:none}
@@ -78,6 +82,7 @@
 /* その下 */
 .kz-below{background:var(--wall);padding:clamp(56px,9vw,130px) var(--gut) clamp(64px,9vw,120px);position:relative}
 .kz-below::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(180deg,rgba(60,44,24,.16),rgba(60,44,24,0))}
+.kz-tag span{display:inline-block}
 .kz-tag{margin:0 0 clamp(48px,7vw,96px);font:800 clamp(30px,5.4vw,84px)/1.15 var(--min);letter-spacing:.06em;color:var(--sumi)}
 .kz-sec{margin:0 0 clamp(52px,7vw,96px)}
 .kz-sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(28,27,25,.28);padding-bottom:12px;margin-bottom:24px}
@@ -85,13 +90,20 @@
 .kz-sec-en{font:500 12px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink3)}
 .kz-shops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,32px)}
 .kz-shop{display:block;position:relative}
-.kz-shop img{display:block;width:100%;aspect-ratio:16/11;object-fit:cover;background:var(--wall2);filter:saturate(.9)}
+.kz-shop img{display:block;width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;background:var(--wall2);filter:saturate(.9)}
 .kz-shop-n{display:block;margin-top:12px;font:800 17px/1.45 var(--min);letter-spacing:.03em}
 .kz-shop-c{display:block;margin-top:2px;font:400 14px/1.6 var(--sans);color:var(--ink3)}
 .kz-shop:hover .kz-shop-n{text-decoration:underline;text-underline-offset:4px}
 .kz-areas{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 10px}
-.kz-areas a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid rgba(28,27,25,.3);border-radius:999px;font:500 15px/1 var(--sans);letter-spacing:.06em}
+.kz-areas a{display:inline-flex;align-items:center;gap:.6em;min-height:44px;padding:0 16px;border:1px solid rgba(28,27,25,.3);border-radius:999px;font:500 15px/1 var(--sans);letter-spacing:.06em}
+.kz-areas a small{font:500 12px/1 var(--sans);letter-spacing:.04em;color:var(--ink3)}
 .kz-areas a:hover{background:var(--sumi);color:var(--wall)}
+.kz-areas a:hover small{color:inherit;opacity:.8}
+.kz-sec-note{margin:-6px 0 22px;font:400 14px/1.8 var(--sans);color:var(--ink3)}
+.kz-note{margin:0 0 clamp(36px,5vw,64px);font:400 14px/1.9 var(--sans);color:var(--ink3)}
+.kz-note p{margin:0}
+.kz-note-links{display:flex;flex-wrap:wrap;gap:0 20px;margin-top:6px!important}
+.kz-note-links a{display:inline-flex;align-items:center;min-height:44px;border-bottom:1px solid rgba(28,27,25,.3);color:var(--ink2)}
 .kz-others{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;border-top:1px solid rgba(28,27,25,.28);padding-top:20px}
 .kz-others-l{font:500 12px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink3);margin-right:6px}
 .kz-others a{display:inline-flex;align-items:center;min-height:44px;font:800 17px/1 var(--min);letter-spacing:.06em;border-bottom:1px solid rgba(28,27,25,.4)}
@@ -106,14 +118,14 @@
   .kz-eyebrow{margin-bottom:10px}
   .kz-list{left:var(--gut);right:var(--gut);bottom:auto;top:calc(66px + 232px);width:auto}
   .kz-list-h{display:none}
-  .kz-list ol{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;border-top:0}
-  .kz-row{min-height:44px;grid-template-columns:1.8em 1fr;border-top:1px solid rgba(28,27,25,.18);border-bottom:0}
-  .kz-row-en{display:none}
-  .kz-row-n{font-size:15px;white-space:nowrap}
+  .kz-list ol{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:14px;border-top:0}
+  .kz-row{min-height:44px;grid-template-columns:1.8em 1fr auto;border-top:1px solid rgba(28,27,25,.18);border-bottom:0}
+  .kz-row-n{font-size:14px;white-space:nowrap;letter-spacing:0}
+  .kz-row-ct{font-size:12px;letter-spacing:0}
   .kz-kh{display:none}
   .kz-labels{display:none}
   .kz-list{transform:translateY(calc(var(--kh) * -148px));padding:0;margin-left:0;background:rgba(245,242,234,calc(var(--kh) * .94))}
-  .kz-row{grid-template-columns:1.6em 1fr;padding:0 4px 0 6px}
+  .kz-row{grid-template-columns:1.5em 1fr auto;gap:.3em;padding:0 4px 0 6px}
   .kz-cue{bottom:18px;color:#f6f2e8;text-shadow:0 1px 8px rgba(0,0,0,.6)}
   .kz-cue-l{background:rgba(246,242,232,.6)}
   .kz-cue-l::after{background:#f6f2e8}
@@ -121,6 +133,9 @@
   .kz-shops{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:460px){.kz-shops{grid-template-columns:1fr}}
+/* 狭い画面: 種類の行(2 列)に収まるよう、飾りの番号・「件」を順に外す */
+@media (max-width:389px){.kz-row-no{display:none}.kz-row{grid-template-columns:1fr auto!important;padding-left:4px!important}}
+@media (max-width:339px){.kz-row-ct small{display:none}}
 @media (min-width:700px) and (max-width:1100px){.kz-copy{width:min(34vw,360px)}.kz-list{width:min(30vw,300px)}}
 
 /* 動きを減らす設定: スクロールで進む場面は無し。山は止めた形、種類は静止版 */
@@ -128,5 +143,6 @@
   .kz-hero{height:100svh}
   .kz-kinds{display:block}
   .kz-cue-l::after{animation:none}
+  .kz-cue{display:none}
   .kz-labels,.kz-kh{display:none}
 }
