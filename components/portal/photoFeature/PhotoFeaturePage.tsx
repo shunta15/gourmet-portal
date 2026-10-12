@@ -66,7 +66,7 @@ function Row({ photos, big = false, overlay, rv }: { photos: PfPhoto[]; big?: bo
   const a0 = photos[0].ar;
   const arm = Math.min(1, Math.max(0.75, a0));
   return (
-    <div className="pf-row" style={{ "--cols": r.fr, "--cap": `${r.cap}px`, "--arm": arm, "--n": photos.length } as Fx}>
+    <div className="pf-row" style={{ "--cols": r.fr, "--cap": `${r.cap}px`, "--arm": arm, "--n": photos.length, "--ar1": a0 } as Fx}>
       {photos.map((p, i) => (
         <Fig key={p.src} p={p} cls={i === 0 ? "pf-ph--m" : "pf-ph--s"} par={rv === "flow" ? "flow" : 0.3 + i * 0.35} big={big} rv={false} k={i}>
           {overlay?.[i]}
@@ -171,31 +171,58 @@ const HEAD: Record<string, { kind: "ov" | "tz"; side: "l" | "r" }> = {
   E: { kind: "ov", side: "r" },
 };
 
+/**
+ * 写真のない視点: 空の写真の枠は出さず、和紙の面に、大きな縦書きの見出し（スマホは横書きの大きな字）と文を、重ならない 2 つの区画に分けて並べる。
+ * 見出し・文の下に筆の線を引き、朱の印を押す。頭に掛ける小さな暖簾は、写真のある視点と同じ。視点の番号の奇数は見出しが左、偶数は右（互い違い）。
+ */
+function BareBlock({ view, nrk }: { view: PfView; nrk: number }) {
+  const id = `v-${view.no}`;
+  const side = parseInt(view.no, 10) % 2 === 1 ? "l" : "r";
+  return (
+    <section className={`pf-v pf-v--bare pf-v--bare-${side}`} data-no={view.no} aria-labelledby={`${id}-h`}>
+      <Nr chars={view.nr} k={nrk} side={side === "l" ? "r" : "l"} />
+      <div className="pf-bare" data-rvw="" data-rv="none">
+        <h2 id={`${id}-h`} className="pf-bare__h">
+          <span className="pf-no" aria-hidden="true">{view.no}</span>
+          <Tate cols={view.big} className="pf-vt pf-bare__vt" label={false} trigger />
+          <span className="pf-bare__hz" aria-hidden="true">{view.name}</span>
+          <span className="pf-vh">{view.name}</span>
+        </h2>
+        <div className="pf-v__tx pf-rv">
+          {view.heading && <p className="pf-hd">{view.heading}</p>}
+          <Text t={{ head: view.head, rest: view.rest }} />
+        </div>
+        <div className="pf-bare__rule" aria-hidden="true">
+          <Brush kind="dash" className="pf-bare__br" delay={0.1} reveal />
+          <Seal className="pf-bare__seal" delay={0.8} reveal />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ViewBlock({ view, variant, rv, nrk }: { view: PfView; variant: string; rv: Rv; nrk: number }) {
   const id = `v-${view.no}`;
   const n = view.photos.length;
+  if (n === 0) return <BareBlock view={view} nrk={nrk} />;
   const h = HEAD[variant] ?? HEAD.A;
-  const cls = `pf-v pf-v--${variant}${n === 0 ? " pf-v--bare" : n > 1 ? " pf-v--multi" : view.photos[0].port ? " pf-v--port" : ""}`;
+  const cls = `pf-v pf-v--${variant}${n > 1 ? " pf-v--multi" : view.photos[0].port ? " pf-v--port" : ""}`;
   const heading = (
-    <h2 id={`${id}-h`} className={`pf-${h.kind} pf-${h.side}${n === 0 ? " pf-hbare" : ""}`}>
+    <h2 id={`${id}-h`} className={`pf-${h.kind} pf-${h.side}`}>
       <span className="pf-no" aria-hidden="true">{view.no}</span>
-      <Tate cols={view.cols} className="pf-vt" label={false} trigger={n > 0} />
+      <Tate cols={view.cols} className="pf-vt" label={false} trigger />
       <span className="pf-vh">{view.name}</span>
     </h2>
   );
   return (
     <section className={cls} data-no={view.no} aria-labelledby={`${id}-h`}>
       <Nr chars={view.nr} k={nrk} side={h.side === "r" ? "l" : "r"} />
-      {n > 0 ? (
-        <div className="pf-v__ph">
-          <div className="pf-cl__in" data-rvw="" data-rv={rv}>
-            <Row photos={view.photos} rv={rv} />
-            {heading}
-          </div>
+      <div className="pf-v__ph">
+        <div className="pf-cl__in" data-rvw="" data-rv={rv}>
+          <Row photos={view.photos} rv={rv} />
+          {heading}
         </div>
-      ) : (
-        heading
-      )}
+      </div>
       <div className="pf-v__tx pf-rv">
         {view.heading && <p className="pf-hd">{view.heading}</p>}
         <Text t={{ head: view.head, rest: view.rest }} />

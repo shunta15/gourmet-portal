@@ -173,7 +173,6 @@ body:has(.pf-root) main { display: contents; }
 .pf-tz { position: absolute; top: -14px; z-index: 4; background: var(--paper); padding: 16px 12px 18px; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--ink); font-size: inherit; font-weight: inherit; box-shadow: 0 8px 26px rgba(25, 24, 21, 0.16); }
 .pf-tz.pf-l { left: clamp(-20px, -1.4vw, -8px); }
 .pf-tz.pf-r { right: clamp(-20px, -1.4vw, -8px); }
-.pf-hbare { grid-column: 3 / 4; grid-row: 1; display: flex; flex-direction: column; align-items: center; gap: 14px; justify-self: center; font-size: inherit; font-weight: inherit; }
 
 @media (min-width: 761px) {
   /* 文の札（写真の隅に重なる） */
@@ -198,6 +197,7 @@ body:has(.pf-root) main { display: contents; }
   /* 縦長の写真が 1 枚だけ残ったとき（次の視点と並べられない最後の視点など） */
   .pf-v--port .pf-v__ph { grid-column: 2 / 8; }
   .pf-v--port .pf-v__tx { grid-column: 8 / 12; align-self: center; background: none; box-shadow: none; padding: 0 0 0 14px; margin: 0; }
+  .pf-v--port .pf-row { max-width: min(var(--cap, 1200px), calc((100svh - 90px) * var(--ar1, 0.75))); }
   .pf-v--port.pf-v--B .pf-v__ph, .pf-v--port.pf-v--D .pf-v__ph { grid-column: 6 / 12; }
   .pf-v--port.pf-v--B .pf-v__tx, .pf-v--port.pf-v--D .pf-v__tx { grid-column: 2 / 6; padding: 0 14px 0 0; }
   /* 写真が 2〜3 枚（横に接して並べる）: 12 列いっぱいに広げ、文は下の右 or 左 */
@@ -206,17 +206,35 @@ body:has(.pf-root) main { display: contents; }
   .pf-v--multi.pf-v--B .pf-v__tx, .pf-v--multi.pf-v--D .pf-v__tx, .pf-v--multi.pf-v--E .pf-v__tx { grid-column: 1 / 6; }
   /* 巻頭に写真を出した視点の文 */
   .pf-v--note .pf-v__tx { grid-column: 3 / 9; padding: 6px 0 0; }
-  /* 写真が 1 枚も無い視点: 小見出しと文だけ */
-  .pf-v--bare .pf-v__tx { grid-column: 4 / 10; padding: 10px 0 0; background: none; box-shadow: none; margin: 0; }
   /* 2 つの視点の写真を横に接して並べる（pair）。文は、それぞれの写真の下 */
   .pf-pr { display: block; }
   .pf-pr__ph .pf-row { max-width: var(--cap); }
   .pf-pr__tx { display: grid; grid-template-columns: var(--cols2); gap: 6px; max-width: var(--cap); margin-top: 6px; }
   .pf-pr__tx .pf-v__tx { grid-row: auto; padding: 8px 14px 0; }
-  .pf-v--multi .pf-v__tx, .pf-v--note .pf-v__tx, .pf-v--bare .pf-v__tx, .pf-pr .pf-pr__tx .pf-v__tx { padding-bottom: calc(var(--ovl) + 6px); }
+  .pf-v--multi .pf-v__tx, .pf-v--note .pf-v__tx, .pf-pr .pf-pr__tx .pf-v__tx { padding-bottom: calc(var(--ovl) + 6px); }
 }
 .pf-pr__ph { min-width: 0; }
 .pf-pr .pf-row { grid-template-columns: var(--cols); }
+
+/* ───────── 写真のない視点: 空の枠は出さず、和紙の面に、大きな縦書きの見出し + 文を、重ならない 2 つの区画に並べる ───────── */
+.pf-v--bare { padding-bottom: clamp(14px, 2vw, 30px); margin-top: clamp(14px, 2vw, 28px); }
+.pf-body > .pf-v--bare + .pf-v, .pf-body > .pf-v + .pf-v--bare { margin-top: clamp(14px, 2vw, 28px); }
+.pf-bare { grid-column: 1 / -1; position: relative; display: grid; grid-template-columns: auto minmax(0, 38em); grid-template-rows: auto auto; justify-content: start; align-items: center; column-gap: clamp(30px, 4.4vw, 72px); row-gap: clamp(14px, 1.6vw, 24px); margin-left: clamp(0px, 5.5vw, 90px); }
+.pf-v--bare-r .pf-bare { grid-template-columns: minmax(0, 38em) auto; justify-content: end; margin-left: 0; margin-right: clamp(0px, 5.5vw, 90px); }
+.pf-bare__h { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; align-items: center; gap: 16px; margin: 0; font-size: inherit; font-weight: inherit; }
+.pf-v--bare-r .pf-bare__h { grid-column: 2; }
+.pf-bare .pf-no { font-size: 14px; }
+.pf-bare__vt { font-size: clamp(26px, 2.75vw, 40px); line-height: 1.5; letter-spacing: 0.1em; font-weight: 800; color: var(--ink); }
+.pf-bare__hz { display: none; }
+.pf-bare .pf-v__tx { grid-column: 2; grid-row: 1; margin: 0; padding: 4px 0 4px clamp(20px, 2.4vw, 34px); border-left: 1px solid var(--line); background: none; box-shadow: none; align-self: center; }
+.pf-v--bare-r .pf-bare .pf-v__tx { grid-column: 1; padding: 4px clamp(20px, 2.4vw, 34px) 4px 0; border-left: 0; border-right: 1px solid var(--line); }
+.pf-bare .pf-v__tx p:last-child, .pf-bare .pf-more__b p:last-child { margin-bottom: 0; }
+.pf-bare__rule { grid-column: 1 / -1; grid-row: 2; position: relative; display: flex; align-items: center; height: 40px; pointer-events: none; }
+.pf-v--bare-r .pf-bare__rule { justify-content: flex-end; }
+.pf-bare__br { width: min(62%, 560px); height: 30px; }
+.pf-v--bare-r .pf-bare__br { transform-origin: 100% 50%; }
+.pf-bare__seal { position: relative; width: 40px; height: auto; margin-left: -14px; flex: none; }
+.pf-v--bare-r .pf-bare__seal { order: -1; margin-left: 0; margin-right: -14px; }
 
 /* ───────── 写真だけの面（コラージュ） ───────── */
 .pf-band { width: var(--box); margin: clamp(10px, 1.1vw, 16px) auto 0; container-type: inline-size; }
@@ -392,8 +410,18 @@ body:has(.pf-root) main { display: contents; }
   .pf-tz { top: -10px; padding: 12px 9px 14px; }
   .pf-tz.pf-l { left: -6px; }
   .pf-tz.pf-r { right: -6px; }
-  .pf-hbare { margin: 14px 14px 0; flex-direction: row; justify-content: flex-start; align-items: flex-start; }
-  .pf-v--bare .pf-v__tx { margin-top: 8px; }
+  /* 写真のない視点: 見出しは横書きの大きな字（縦書きの列は隠す）→ 文 → 筆の線と朱の印 */
+  .pf-v--bare { padding-bottom: 6px; margin-top: 14px; }
+  .pf-bare, .pf-v--bare-r .pf-bare { display: block; margin: 0; padding: 0 14px; }
+  .pf-bare__h { display: block; margin-bottom: 12px; }
+  .pf-bare__vt { display: none; }
+  .pf-bare .pf-no { display: block; margin-bottom: 6px; }
+  .pf-bare__hz { display: block; font-size: 21px; font-weight: 800; line-height: 1.6; letter-spacing: 0.05em; color: var(--ink); }
+  .pf-bare .pf-v__tx, .pf-v--bare-r .pf-bare .pf-v__tx { margin: 0; padding: 0 0 0 14px; border: 0; border-left: 2px solid var(--indigo); }
+  .pf-bare__rule, .pf-v--bare-r .pf-bare__rule { justify-content: flex-start; height: 34px; margin-top: 10px; }
+  .pf-bare__br { width: 62%; height: 24px; }
+  .pf-v--bare-r .pf-bare__br { transform-origin: 0 50%; }
+  .pf-bare__seal, .pf-v--bare-r .pf-bare__seal { order: 0; width: 34px; margin: 0 0 0 -10px; }
   .pf-pr__ph, .pf-pr .pf-cl__in { width: 100%; }
   .pf-pr__tx { display: block; }
   .pf-pr__tx .pf-v__tx { margin: 12px 14px 0; }
@@ -640,6 +668,18 @@ body:has(.pf-root) main { display: contents; }
 .pf-rod--one .pf-rod__tr { right: 196px; }
 .pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 196px - 26px)), 0, 0); }
 .pf-sec__t { font-weight: 800; font-size: clamp(22px, 2.4vw, 32px); letter-spacing: 0.1em; line-height: 1.3; }
+
+/* PC の「店舗情報のみ見る」: 一目で分かり、押しやすい大きさ（高さ 36px・字 14px）。ページの上端の帯を 22px → 40px にして、その右はし（暖簾・屋号の字・題・ヘッダーの文字に重ならない所）に掛ける。スマホは上の 44px のまま */
+@media (min-width: 761px) {
+  .pf-root:has(.pf-jump) { --rodh: 40px; }
+  .pf-root:has(.pf-jump) #shop-info, .pf-root:has(.pf-jump) #map { scroll-margin-top: 58px; }
+  .pf-jump { height: 36px; padding: 0 20px; font-size: 14px; letter-spacing: 0.1em; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+  .pf-jump::after { left: -4px; right: -4px; top: 0; bottom: -4px; }
+  .pf-root:has(.pf-jump) .pf-rod__tr { top: calc(var(--rodh) - 22px); }
+  .pf-root:has(.pf-jump) .pf-hud__no { top: 11px; }
+  .pf-rod--one .pf-rod__tr { right: 236px; }
+  .pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 236px - 26px)), 0, 0); }
+}
 
 /* 基本情報の下: タグ・行動ボタン・候補に入れる（店ページの ShopActionsNoren などの部品を、特集記事の世界の見た目で） */
 .pf-info__in .pf-sa { grid-column: 5 / 13; display: grid; gap: 26px; }
