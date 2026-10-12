@@ -33,12 +33,22 @@ export const NOREN_FEATURE_INDEX_REWRITE = true;
 
 // ── scene ここから（シーンのページ・店をさがす。統括が合流するときはこの 1 かたまりをそのまま取り込む）
 /**
+ * 【2026-10-12 オーナー決定「利用シーンのページを、地域と同じように『さがす』へ統合」】シーンのページ（/scene・/scene/<slug> の 12 種類）は、暖簾版（下の NOREN_SCENE_REWRITE）を出さず、
+ * RELEASE_REST が true のあいだは /search へ恒久転送する（NOREN_SCENE_TO_SEARCH。仕組みは next.config.ts の redirects）: /scene → /search、/scene/<slug> → /search?scene=<slug>。
+ * サイト内のリンクは転送を踏まないよう、リンクを作る所（lib/portal/noren/sceneLinks.ts）からはじめから /search の URL にしてある。
+ * RELEASE_REST が false のときは転送せず、今の本番のページ（app/scene/**）が出る。
+ */
+export const NOREN_SCENE_TO_SEARCH = RELEASE_REST;
+
+/**
  * シーンのページ（/scene/<slug> の 12 種類と、一覧 /scene）を暖簾にする。内部のパスは app/gourmet/scene/[slug]/page.tsx・app/gourmet/scene/page.tsx。
+ * 【2026-10-12 から false 固定】上の NOREN_SCENE_TO_SEARCH のとおり「さがす」へ統合したので、暖簾版（app/gourmet/scene/**）は出さない。
+ * 復活させるなら、この定数を RELEASE_REST に戻し、NOREN_SCENE_TO_SEARCH を false にする（両方 true にすると転送が先に効く）。
  * true のあいだ、公開スイッチ ON では /scene/:slug → /gourmet/scene/:slug、/scene → /gourmet/scene に差し替わり（ブラウザの URL・canonical は本物のまま）、
  * 内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。公開スイッチ ON の判定は他の暖簾と同じ（OFF ではこの定数に関係なく今のグルメのまま）。
  * 元に戻すなら false（/scene・/scene/<slug> は今のグルメのページ、内部のパスは 404）。
  */
-export const NOREN_SCENE_REWRITE = RELEASE_REST;
+export const NOREN_SCENE_REWRITE = false;
 
 /**
  * 店をさがす（/search。noindex。?q= ?region= ?cuisine= ?tag= ?budget= ?f= の絞り込みも同じページ）を暖簾にする。内部のパスは app/gourmet/search/page.tsx。

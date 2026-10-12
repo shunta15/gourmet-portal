@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { SCENES } from "@/lib/scenes";
+import { sceneHref } from "@/lib/portal/noren/sceneLinks";
 
 export default function SceneSection() {
   return (
@@ -20,7 +21,7 @@ export default function SceneSection() {
         {SCENES.map((s, i) => (
           <Link
             key={s.slug}
-            href={`/scene/${s.slug}`}
+            href={sceneHref(s.slug)}
             className="scene-section-card"
             data-cursor="ENTER"
           >

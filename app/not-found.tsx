@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { areaIndexHref } from "@/lib/portal/noren/areaLinks";
+import { sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
 
 export const metadata = {
   title: "ページが見つかりません — マチノワ",
@@ -74,7 +75,7 @@ export default function NotFound() {
             地域から探す
           </Link>
           <Link
-            href="/scene"
+            href={sceneIndexHref()}
             style={{
               padding: "12px 24px",
               border: "1px solid var(--line)",

@@ -6,10 +6,14 @@ import { buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import { getAllRestaurants } from "@/lib/db/restaurants";
 import { GEO } from "@/lib/geo";
 import { sceneFeaturesForScene } from "@/lib/sceneFeatureLinks";
+import { isPortalLive } from "@/lib/portal/launch";
+import { NOREN_SCENE_TO_SEARCH } from "@/lib/portal/noren/rewrites";
 
 const BASE = "https://machinowa.tokyo";
 
 export function generateStaticParams() {
+  // 「さがす」へ統合したあと（公開スイッチ ON かつ NOREN_SCENE_TO_SEARCH）は、このページへ着く URL が無い（next.config.ts が /search へ転送する）ので事前生成しない
+  if (NOREN_SCENE_TO_SEARCH && isPortalLive()) return [];
   return SCENES.map((s) => ({ slug: s.slug }));
 }
 

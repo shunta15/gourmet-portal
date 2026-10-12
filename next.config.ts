@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここから
-import { NOREN_SCENE_REWRITE, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_SCENE_REWRITE, NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
 // ── area ここから
 import { NOREN_REGION_REWRITE, NOREN_REGION_TO_SEARCH } from "./lib/portal/noren/rewrites";
@@ -81,6 +81,16 @@ const nextConfig: NextConfig = {
           ]
         : []),
       // ── scene ここから（シーン・店をさがすの内部のパスを直接開いたら本物の URL へ）
+      // 利用シーンのページは「さがす」へ統合（2026-10-12 オーナー決定。lib/portal/noren/rewrites.ts の NOREN_SCENE_TO_SEARCH）。1 回の恒久転送で /search の絞り込みに着く:
+      //   /scene → /search、/scene/:slug → /search?scene=:slug。暖簾版の内部のパス（/gourmet/scene/**）も同じ行き先へ 1 回で。
+      ...(PORTAL_LIVE && NOREN_SCENE_TO_SEARCH
+        ? [
+            { source: "/scene", destination: "/search", permanent: true },
+            { source: "/scene/:slug", destination: "/search?scene=:slug", permanent: true },
+            { source: "/gourmet/scene", destination: "/search", permanent: true },
+            { source: "/gourmet/scene/:slug", destination: "/search?scene=:slug", permanent: true },
+          ]
+        : []),
       ...(PORTAL_LIVE && NOREN_SCENE_REWRITE
         ? [
             { source: "/gourmet/scene", destination: "/scene", permanent: true },

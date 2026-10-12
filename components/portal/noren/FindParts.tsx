@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { regionHref } from "@/lib/portal/noren/areaLinks";
+import { sceneHref } from "@/lib/portal/noren/sceneLinks";
 import type { CuisineCount, RegionCount, SceneCount } from "@/lib/portal/noren/openSearch";
 
 /**
@@ -59,13 +60,13 @@ export function RegionChips({ regions, more }: { regions: RegionCount[]; more?: 
   );
 }
 
-/** 利用シーンからさがす: 12 のシーンの札（名称・件数）。押すとそのシーンのページ /scene/<slug> */
+/** 利用シーンからさがす: 12 のシーンの札（名称・件数）。押すとそのシーンの結果（/search?scene=<slug>。RELEASE_REST が false のあいだは /scene/<slug>） */
 export function SceneChips({ scenes }: { scenes: SceneCount[] }) {
   return (
     <ul className="vOs-chips" aria-label="利用シーン">
       {scenes.map((s) => (
         <li key={s.slug}>
-          <Link href={`/scene/${s.slug}`} className="vOs-chip" data-cursor="GO">
+          <Link href={sceneHref(s.slug)} className="vOs-chip" data-cursor="GO">
             <span>{s.name}</span>
             <i>
               {s.count}

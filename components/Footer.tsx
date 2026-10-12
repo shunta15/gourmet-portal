@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { areaIndexHref, regionHref } from "@/lib/portal/noren/areaLinks";
+import { sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -102,7 +103,7 @@ export default function Footer() {
             <li><Link href="/">トップ</Link></li>
             <li><Link href="/feature">特集</Link></li>
             <li><Link href={areaIndexHref()}>エリア</Link></li>
-            <li><Link href="/scene">シーン</Link></li>
+            <li><Link href={sceneIndexHref()}>シーン</Link></li>
             <li><Link href="/search">検索</Link></li>
           </ul>
         </div>

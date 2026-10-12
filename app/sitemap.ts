@@ -8,7 +8,7 @@ import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/
 import { isRegionHubIndexable, isRestaurantIndexable, isTownIndexable } from "@/lib/restaurantIndexable";
 import { getAllTowns } from "@/lib/db/towns";
 import { isPortalLive } from "@/lib/portal/launch";
-import { NOREN_REGION_TO_SEARCH } from "@/lib/portal/noren/rewrites";
+import { NOREN_REGION_TO_SEARCH, NOREN_SCENE_TO_SEARCH } from "@/lib/portal/noren/rewrites";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -102,7 +102,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return entry as MetadataRoute.Sitemap[number];
     });
 
-  const scenes: MetadataRoute.Sitemap = SCENES.map((s) => ({
+  // 利用シーンのページも「さがす」へ統合したあと（公開スイッチ ON かつ NOREN_SCENE_TO_SEARCH）は載せない（/search?scene=<slug> へ恒久転送される）
+  const scenes: MetadataRoute.Sitemap = (NOREN_SCENE_TO_SEARCH && isPortalLive() ? [] : SCENES).map((s) => ({
     url: `${BASE}/scene/${s.slug}`,
     changeFrequency: "weekly",
     priority: 0.7,

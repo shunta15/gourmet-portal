@@ -9,6 +9,7 @@
  */
 import type { FeatureArticle } from "../../regions";
 import { RELEASE_REST } from "./release";
+import { isScenePath, scenePathToSearch } from "./sceneLinks";
 
 /** 地域・街のページを「さがす」へ統合するか（next.config.ts の転送と、サイト内リンクの両方がこれを見る） */
 export const AREA_TO_SEARCH = RELEASE_REST;
@@ -44,14 +45,14 @@ export function areaPathToSearch(href: string): string {
 }
 
 /**
- * 記事の「関連（sideArticles）」に入っている /region 系のリンク（利用シーン特集の「○○の店を探す」。lib/sceneFeatures.ts は自動生成なので手で直さない）を、
- * 記事を返すときに /search の URL へ直す（lib/db/features.ts の getFeatureArticleById が通す）。AREA_TO_SEARCH が false のときは何もしない（同じ記事をそのまま返す）。
+ * 記事の「関連（sideArticles）」に入っている /region 系・/scene 系のリンク（利用シーン特集の「○○の店を探す」。lib/sceneFeatures.ts は自動生成なので手で直さない）を、
+ * 記事を返すときに /search の URL へ直す（lib/db/features.ts の getFeatureArticleById が通す）。それぞれ AREA_TO_SEARCH / SCENE_TO_SEARCH が false のときは何もしない（同じ記事をそのまま返す）。
  * 直すのは sideArticles の h だけ。ほかのリンク・本文は変えない。
  */
 export function rewriteAreaLinksInArticle(a: FeatureArticle): FeatureArticle {
-  if (!AREA_TO_SEARCH) return a;
-  const isArea = (h: string) => /^\/region(\/|$)/.test(h);
+  const isArea = (h: string) => AREA_TO_SEARCH && /^\/region(\/|$)/.test(h);
+  const isScene = (h: string) => isScenePath(h) && scenePathToSearch(h) !== h;
   const side = a.sideArticles;
-  if (!side || !side.some((x) => isArea(x.h))) return a;
-  return { ...a, sideArticles: side.map((x) => (isArea(x.h) ? { ...x, h: areaPathToSearch(x.h) } : x)) };
+  if (!side || !side.some((x) => isArea(x.h) || isScene(x.h))) return a;
+  return { ...a, sideArticles: side.map((x) => (isArea(x.h) ? { ...x, h: areaPathToSearch(x.h) } : isScene(x.h) ? { ...x, h: scenePathToSearch(x.h) } : x)) };
 }
