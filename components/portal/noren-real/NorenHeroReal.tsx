@@ -31,9 +31,14 @@ type Props = {
 const clamp = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
 const ease = (x: number) => x * x * (3 - 2 * x);
 
+/** 本物の布を出すまでに、必要な字（暖簾の漢字・提灯の字）の書体を待つ上限（ms）。超えたら、字なしの布を先に出して、書体が届いたら字をすっと入れる */
+const FONT_WAIT_MS = 1200;
+/** 書体があとから届いたとき、字を入れる時間（ms） */
+const GLYPH_FADE_MS = 450;
+
 // スクリプトが動かない環境でも、5 つの行き先が見えて押せる（布は描かず、藍の面に字を出す）
 const NOSCRIPT_CSS =
-  ".vR-cover{display:none!important}.vR-scene{opacity:1!important}.vR-cloth{display:none}" +
+  ".vR-cover{display:none!important}.vR-scene{opacity:1!important}.vR-cloth{display:none}.vR-fb{opacity:1!important;animation:none!important}" +
   ".vR-door{background:#14264a;border-left:3px solid #07090d;display:grid;place-items:start center;padding-top:14vh}" +
   ".vR-door .vN-vh{position:static;width:auto;height:auto;clip:auto;clip-path:none;overflow:visible;font:800 clamp(44px,8vw,120px)/1.1 var(--f-min);color:#efe6d6;writing-mode:vertical-rl;white-space:normal}" +
   ".vR-door-tag{opacity:1;transform:translate(-50%,0)}";
@@ -55,6 +60,9 @@ function Chars({ text, base = 0 }: { text: string; base?: number }) {
  * - 5 つの垂れは、それぞれ、その種類の章（#ch-xxx）への行き先（<a>）。乗せると垂れが押されてたわみ、押すと垂れが上がって章へ移る。
  * - スクロールで、布が上がって奥（店の写真と、h1）へ入る。
  * - WebGL が使えない・スクリプトなしのときは、CSS の布（静止）で同じ行き先を出す。「動きを減らす」設定では静止した布。
+ * - 最初の描画（スクリプトが動く環境の準備中 = data-mode="init"）では、CSS の布を見せない（地だけ。real.css）。本物の布ができたら WebGL の布がすっと現れる。
+ *   「別の暖簾が一瞬出てから本物に切り替わる」ことが無いように、CSS の布は ①スクリプトなし ②WebGL が使えない ③準備が 2.5 秒たっても終わらない、のときだけ出す。
+ *   本物の布までの時間を縮めるため、書体の読み込み（必要な字だけ・上限 FONT_WAIT_MS）と WebGL の準備は同時に進める。
  * 見た目の切り替え（試作の比較用）: ?dye=ai|kon|sumi|kakishibu|enji（布の色。藍・濃紺・墨・柿渋・臙脂。cha は柿渋の別名）。window に DYE_EVENT を送っても替わる、?wrinkle=0〜1（細かいしわの強さ。既定 0.2）、?bright=1〜5（明るさの段階。既定は realTop.ts の NOREN_REAL_BRIGHT。時刻は ?t=12:30 / ?t=21:30）、?font=syuku|mai|shippori|antique|tokumin|zenold（字の書体）、?dpr=2（描く細かさ）。
  */
 export default function NorenHeroReal({ photo, count, areas, chapters, defaultDye = "ai", allowUrlOverride = false, spShape = NOREN_REAL_SP_SHAPE, allowSpUrl = false, allowCopyUrl = false, genres = [] }: Props) {
@@ -127,6 +135,10 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     let px = -999;
     let py = -999;
     let lastDraw = 0;
+    // 字の濃さ。書体が上限までに届かなかったときだけ 0 から始めて、届いたら GLYPH_FADE_MS で 1 へ
+    let ga = 1;
+    let gaAt = 0;
+    let gaGo = false;
     let quality = 1;
     let prevDraw = 0;
     const samples: number[] = [];
@@ -197,6 +209,12 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       if (Math.abs(target - open) < 0.0005) open = target;
       mouse += (mouseT - mouse) * 0.05;
       const t = (now - t0) / 1000;
+      if (cloth && gaGo && ga < 1) {
+        ga = reduce ? 1 : Math.min(1, ga + (now - gaAt) / GLYPH_FADE_MS);
+        gaAt = now;
+        cloth.setGlyphAlpha(ease(ga));
+        dirty = true;
+      }
       gust = reduce ? 0.1 : 0.18 + 0.95 * Math.exp(-t / 2.4) + vel * 0.9 + Math.abs(open - prev) * 6;
       const os = open.toFixed(4);
       if (os !== lastOpen) {
@@ -291,34 +309,74 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     ro.observe(st);
 
     (async () => {
+      // 書体の読み込みを先に始める（このあとの WebGL の準備と同時に進める）。待つのは暖簾の漢字と提灯の字の書体だけ。
+      // ページ全部の書体（document.fonts.ready）は待たない＝本文の書体が重いほど布が遅れていた。
+      const fam = getComputedStyle(w).getPropertyValue(fontVar(fontQ)).trim();
+      if (fam) family = fam;
+      const brush = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || '"Yuji Boku", serif';
+      const kanji = chapters.map((c) => c.kanji);
+      let fontsP: Promise<void>;
+      try {
+        fontsP = Promise.all([document.fonts.load(`400 100px ${family}`, kanji.join("")), document.fonts.load(`400 100px ${brush}`, "灯酒")]).then(
+          () => undefined,
+          () => undefined
+        );
+      } catch {
+        fontsP = Promise.resolve();
+      }
+      const drawGlyphs = () => {
+        // 垂れが 6 枚以上でスマホ幅のときは、字を少し小さくして、隣の字とのすき間を空ける
+        cloth?.setGlyphs(kanji, family, chapters.length > 5 && window.innerWidth < 700 ? 0.84 : 1);
+        lans?.setGlyphs(["灯", "酒"], brush);
+      };
+
       cloth = createClothReal(cv);
       if (!cloth) setMode("css");
       const lcv = lanCv.current;
       lans = lcv ? createLanternReal(lcv) : null;
       if (!lans) setLanCss(true);
-      const fam = getComputedStyle(w).getPropertyValue(fontVar(fontQ)).trim();
-      if (fam) family = fam;
-      const brush = getComputedStyle(root).getPropertyValue("--vN-brush").trim() || '"Yuji Boku", serif';
-      try {
-        await Promise.all([
-          document.fonts.load(`400 100px ${family}`, chapters.map((c) => c.kanji).join("")),
-          document.fonts.load(`400 100px ${brush}`, "灯酒"),
-        ]);
-        await document.fonts.ready;
-      } catch {}
+
+      let timer = 0;
+      const late =
+        (await Promise.race([
+          fontsP.then(() => false),
+          new Promise<boolean>((res) => {
+            timer = window.setTimeout(() => res(true), FONT_WAIT_MS);
+          }),
+        ])) === true;
+      window.clearTimeout(timer);
       if (!alive) return;
       if (cloth) {
         cloth.setDye(dyeQ);
         cloth.setWrinkle(wrinkleQ);
         cloth.setBright(bmul);
-        // 垂れが 6 枚以上でスマホ幅のときは、字を少し小さくして、隣の字とのすき間を空ける
-        cloth.setGlyphs(chapters.map((c) => c.kanji), family, chapters.length > 5 && window.innerWidth < 700 ? 0.84 : 1);
+        // 書体が上限までに届かなかった: 字なしの布を先に出す（代わりの書体の字を出してあとで変えない）
+        if (late) {
+          ga = 0;
+          cloth.setGlyphAlpha(0);
+        }
       }
-      lans?.setGlyphs(["灯", "酒"], brush);
+      if (!late) drawGlyphs();
       layout();
-      if (cloth) setMode("gl");
       t0 = performance.now();
-      raf = requestAnimationFrame(frame);
+      // 最初の 1 コマを、布を見せる前に描いておく（中身の無い canvas が一瞬見えない）。このあと frame が自分で次のコマを予約する
+      frame(t0);
+      if (cloth) {
+        // 準備に時間がかかって CSS の布が（real.css の 2.5 秒の保険で）出ていたら、その濃さから溶かす。ふつうは 0（見えていない）
+        const fb = w.querySelector(".vR-fb");
+        w.style.setProperty("--fb-now", fb ? getComputedStyle(fb).opacity : "0");
+        setMode("gl");
+      }
+      if (late) {
+        fontsP.then(() => {
+          if (!alive) return;
+          drawGlyphs();
+          gaAt = performance.now();
+          gaGo = true;
+          dirty = true;
+          lastDraw = 0;
+        });
+      }
     })();
 
     const onDye = (e: Event) => {
@@ -427,16 +485,15 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
           </p>
         </div>
 
-        {(
-          <div className="vR-fb" aria-hidden="true">
-            <i className="vR-fb-rod" />
-            {chapters.map((c) => (
-              <span key={c.key} className="vR-fb-p">
-                <b>{c.kanji}</b>
-              </span>
-            ))}
-          </div>
-        )}
+        {/* CSS の布: スクリプトなし・WebGL が使えない・準備が 2.5 秒たっても終わらないときだけ見える（real.css）。ふつうは見えない（opacity 0）が、書体の読み込みは、ここの字が先に始めてくれる */}
+        <div className="vR-fb" aria-hidden="true">
+          <i className="vR-fb-rod" />
+          {chapters.map((c) => (
+            <span key={c.key} className="vR-fb-p">
+              <b>{c.kanji}</b>
+            </span>
+          ))}
+        </div>
         <canvas ref={canvas} className="vR-cloth" aria-hidden="true" />
         <div className="vR-vig" aria-hidden="true" />
 
