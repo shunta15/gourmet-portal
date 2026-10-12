@@ -23,7 +23,7 @@ export function Nr({ units, k, side = "l" }: { units: { t: string; w: number }[]
   const dur = [3.6, 4.6, 4.0, 5.2, 3.2][k % 5];
   const total = units.reduce((n, u) => n + u.w, 0);
   return (
-    <span className={`pf-nr pf-nr--k${k % 5} pf-nr--${side}`} aria-hidden="true" style={{ "--sa": `${sway}deg`, "--sd": `${dur}s`, "--np": total } as Fx}>
+    <span className={`pf-nr pf-nr--k${k % 5} pf-nr--${side}`} aria-hidden="true" suppressHydrationWarning style={{ "--sa": `${sway}deg`, "--sd": `${dur}s`, "--np": total } as Fx}>
       <i className="pf-nr__rod" />
       <span className="pf-nr__cl">
         {units.map((u, i) => (
@@ -81,6 +81,7 @@ export function Sec({
   k = 0,
   children,
   brush = true,
+  brushReveal = true,
   className = "",
   label,
 }: {
@@ -92,17 +93,19 @@ export function Sec({
   k?: number;
   children?: ReactNode;
   brush?: boolean;
+  /** 筆の線を、画面に入ったときに伸ばすか（false: 読み込んだときに伸びる）。遅れて組み上がる部品（Suspense の中）では false（動きの印を付ける Motion と、組み上げが食い違うため） */
+  brushReveal?: boolean;
   className?: string;
   label?: string;
 }) {
   return (
     <section className={`rp-shelf pp-sec${className ? ` ${className}` : ""}`} {...(title === null ? { "aria-label": label } : { "aria-labelledby": id })}>
-      <div className="rp-shelf__sh pf-rv">
+      <div className="rp-shelf__sh pf-rv" suppressHydrationWarning>
         <Nr units={markOf(mark, 6)} k={nrKind(k)} side="l" />
         {title !== null && <h2 id={id} className="rp-shelf__t">{title}</h2>}
         {note && <p className="rp-shelf__n">{note}</p>}
       </div>
-      {brush && <Brush kind="dash" className="rp-shelf__br" delay={0.1} reveal />}
+      {brush && <Brush kind="dash" className="rp-shelf__br" delay={0.1} reveal={brushReveal} />}
       {children}
     </section>
   );

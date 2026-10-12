@@ -198,6 +198,41 @@
   .pp-hero-h1--msg { font-size: clamp(22px, 6.9vw, 30px); }
 }
 
+
+/* ───────── 特集のキーワード検索 /feature/search・地域別 /feature/region/<key> ───────── */
+.pp-fsec { padding-top: clamp(20px, 2.6vw, 36px); }
+.pp-fs { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr) auto; gap: 14px; align-items: end; margin: 0; }
+.pp-fld { min-width: 0; }
+.pp-fld label { display: block; margin: 0 0 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.16em; line-height: 1.6; color: var(--ink2); }
+.pp-fld select, .pp-fld input {
+  display: block; width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink);
+  font: 500 16px/1.4 "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; letter-spacing: 0.02em;
+}
+.pp-fld select { appearance: none; padding-right: 40px; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23191815' stroke-width='1.6'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; }
+.pp-fld input::placeholder { color: rgba(25, 24, 21, 0.45); }
+.pp-fld select:focus-visible, .pp-fld input:focus-visible { outline: 3px solid var(--shu); outline-offset: 2px; }
+.pp-fs__btn { cursor: pointer; font-family: inherit; appearance: none; justify-content: center; white-space: nowrap; }
+.pp-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; margin: clamp(20px, 2.4vw, 30px) 0 clamp(18px, 2.2vw, 28px); padding-top: 14px; border-top: 1px solid var(--line); }
+.pp-bar p { margin: 0; }
+.pp-bar-c { font-size: 14px; letter-spacing: 0.05em; line-height: 1.8; color: var(--ink2); }
+.pp-bar-n { font-size: 15px; letter-spacing: 0.04em; color: var(--ink2); }
+.pp-bar-n em { font-style: normal; font-size: 30px; font-weight: 800; color: var(--shu); margin-right: 4px; letter-spacing: 0.02em; }
+.pp-bar-n small { font-size: 13px; margin-left: 2px; }
+.pp-empty-note { max-width: 46em; margin: 18px 0 0; font-size: 15px; line-height: 2.05; letter-spacing: 0.05em; }
+.pp-fgrid .rp-card .pf-rel__b b { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; } /* 今の札と同じ: 題は 3 行・副題は 2 行まで */
+.pp-fgrid .rp-card__s { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.rp-h1.pp-hero-h1 em { display: inline-block; }
+.pp-fmeta { display: block; margin-top: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; line-height: 1.7; color: var(--ink2); overflow-wrap: anywhere; }
+.pp-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; }
+.pp-sec .rp-shelf__t em { font-style: normal; color: var(--indigo); }
+.pp-others { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0; }
+.pp-others__l { font-size: 14px; font-weight: 800; letter-spacing: 0.1em; color: var(--ink2); }
+@media (max-width: 760px) {
+  .pp-fs { grid-template-columns: 1fr; gap: 12px; }
+  .pp-fs__btn { width: 100%; }
+  .pp-bar-n em { font-size: 26px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pp-chip, .pp-chips a, .pp-nl button { transition: none; }
 }
