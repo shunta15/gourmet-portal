@@ -31,12 +31,14 @@ export const OPEN_TONE: OpenTone = "dark";
 /** dark のときの帯の地図の既定（?band= で替えられる） */
 export const OPEN_BAND: OpenBand = "g";
 
-export type OpenView = { tone: OpenTone; tiles: boolean; band: OpenBand };
+/** box: 検索の箱を出すか（既定は出す。見本でだけ ?box=0 で、箱なし＝見出しと地図だけの形を見比べられる） */
+export type OpenView = { tone: OpenTone; tiles: boolean; band: OpenBand; box: boolean };
 
 /** URL の ?open= ?tiles= ?band= から、入口の節の見え方を決める。allowUrl が false（本番）のときは、URL を読まず既定のまま */
-export function resolveOpen(p: { open?: string | null; tiles?: string | null; band?: string | null }, allowUrl: boolean): OpenView {
+export function resolveOpen(p: { open?: string | null; tiles?: string | null; band?: string | null; box?: string | null }, allowUrl: boolean): OpenView {
   const tone: OpenTone = allowUrl && (p.open === "dark" || p.open === "block") ? p.open : OPEN_TONE;
   const tiles = tone === "block" ? true : allowUrl && p.tiles === "1";
   const band: OpenBand = tone === "block" ? "e" : allowUrl && (p.band === "e" || p.band === "g") ? p.band : OPEN_BAND;
-  return { tone, tiles, band };
+  const box = !(allowUrl && p.box === "0");
+  return { tone, tiles, band, box };
 }

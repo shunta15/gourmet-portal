@@ -41,7 +41,7 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
 
 /**
  * グルメの入口（/gourmet）の「店をさがす」の節の block の見た目（参考画像 1 枚目の形。この節の中だけ明るい。lib/portal/noren/looks.ts の OPEN_SEARCH_LOOK）。
- * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）→ 利用シーンの札（小さく）。
+ * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）。利用シーンの札は置かない。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
 export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { data: OpenSearchData; tiles: BlockTile[]; bandRegions: JpRegion[]; view: OpenView }) {
@@ -59,9 +59,11 @@ export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { da
             </h2>
             <p className="vBkt-lead">全 {data.total} 軒を、言葉・エリア・業種・利用シーンからさがせます。</p>
           </header>
-          <div className="vN-rv">
-            <BlockTopForm regions={data.regions} />
-          </div>
+          {view.box && (
+            <div className="vN-rv">
+              <BlockTopForm regions={data.regions} />
+            </div>
+          )}
           {/* 業種のタイルを出さない版（既定の dark）は、すぐ下の業種ごとの章（和食〜カフェ・甘味）へ目が行くよう、箱の下に 1 行 */}
           {!view.tiles && (
             <p className="vBkt-chapline vN-rv">
@@ -113,21 +115,7 @@ export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { da
         </div>
       </BlockTopMap>
 
-      <div className="vBkt-scn" id="open-scene">
-        <div className="vBkt-wrap">
-          <h3 className="vBkt-sh">利用シーンから探す</h3>
-          <ul className="vBkt-chips">
-            {data.scenes.map((s) => (
-              <li key={s.slug}>
-                <Link href={`/scene/${s.slug}`} className="vBkt-chip">
-                  <span>{s.name}</span>
-                  <i>{s.count}</i>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      {/* 利用シーンの札は置かない（2026-10-12 オーナー指示「利用シーンから探すを除外して」）。この節は「さがす」のページへ送る入口（箱・地図のピン・ボタンのどれも /search へ） */}
       {!dark && <PaperEdge pos="bottom" />}
     </section>
   );

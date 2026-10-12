@@ -28,7 +28,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
   const one = (v: string | string[] | undefined) => (([] as string[]).concat(v ?? [])[0] ?? "");
   const look = resolveLook(OPEN_SEARCH_LOOK, allowUrl ? one(sp.look) : "", allowUrl);
   // 「店を、さがす。」の色（block のとき）: ?open=dark（既定。暖簾の灰墨）|block（白と橙）、?tiles=1（業種のタイル）、?band=e|g（帯の地図）。見本でだけ効く
-  const open = resolveOpen({ open: one(sp.open), tiles: one(sp.tiles), band: one(sp.band) }, allowUrl);
+  const open = resolveOpen({ open: one(sp.open), tiles: one(sp.tiles), band: one(sp.band), box: one(sp.box) }, allowUrl);
   if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={allowUrl} allowCopyUrl={allowUrl} searchLook={look} searchOpen={open} />;
   return <GourmetNorenHome links={LIVE_LINKS} />;
 }
