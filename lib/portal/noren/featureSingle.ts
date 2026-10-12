@@ -1,4 +1,4 @@
-import { RELEASE_REST } from "./release";
+import { RELEASE_FEATURE, RELEASE_REST } from "./release";
 /**
  * 特集記事ページを「店 1 軒の記事」と「複数の店・場所の記事」で、別の枠にするスイッチ。軽いファイル（サーバー専用の import は足さない）。
  *
@@ -16,7 +16,7 @@ export const NOREN_FEATURE_SINGLE = RELEASE_REST;
  * - false（本番の main など RELEASE_REST が false のとき）: 20 本も今までの店 1 軒の枠（FeatureSinglePage）。元に戻すときは false にして再デプロイ。
  * NOREN_FEATURE_SINGLE が false のときは、この値に関係なく、全記事が今までどおり。
  */
-export const NOREN_FEATURE_PHOTO = RELEASE_REST;
+export const NOREN_FEATURE_PHOTO = RELEASE_FEATURE;
 
 /**
  * 店 1 軒の記事か。ranking が「POINT 01〜」という視点の並びになっている記事（店の並びではない）。

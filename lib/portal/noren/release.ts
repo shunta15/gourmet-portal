@@ -14,6 +14,12 @@
  *     さがすで利用シーンを選んだとき、そのシーンのまとめ記事を結果の上に見せる（このスイッチに関係なく、/search 側に入っている）
  *   - ヘッダー・フッターのメニュー（nav.ts の HEADER_NAV・FOOT_NAV）。統合した地域・シーンのページへの項目を持たない形
  *   （4 店の非表示 lib/hiddenStores.ts は、もともとスイッチなし。常に効く）
+ * - RELEASE_FEATURE（確定。第 2 弾。true）: 特集まわり。
+ *   - 1 店 1 ページ: 店 1 軒の特集記事のうち対象 50 本（onePage.ts の表）は、店のページ /restaurant/<店 ID> で「写真が主役の特集記事 + 記事の終わりの店舗情報」を 1 ページで出す
+ *     （NOREN_FEATURE_PHOTO・NOREN_ONE_PAGE）。/feature/<記事 ID> は next.config.ts の redirects で /restaurant/<店 ID> へ 308。サイト内リンク（featureHrefOf）・sitemap もそれに合わせる
+ *   - シーン別まとめ記事 24 本の新しい枠（NOREN_FEATURE_ROUNDUP_PHOTO）
+ *   - 特集の一覧 /feature の 3 棚（特集記事・シーン別まとめ記事・街歩き・コース）と新しい見た目、棚の呼び方（featureKinds.ts）、街歩き・コースの記事のパンくず、入口の特集の節の見出し
+ *   false のあいだは、これらはすべて止まり、今の本番（RELEASE_SEARCH までの版）と同じ見た目・同じ文言で出る（redirects の行も出ない）。
  * - RELEASE_REST（未確定。false）: false のあいだ、これらはすべて止まり、main と同じ見た目・同じ文言で出る。true にして再デプロイすると、止めていた部分が一度に出る。止めているもの:
  *   - 店ページ・特集記事ページの本物の布と提灯（realTop.ts の NOREN_REAL_INNER）
  *   - 店 1 軒の記事の新しい型（featureSingle.ts の NOREN_FEATURE_SINGLE）・利用シーン+店舗紹介の型（featureScene.ts の NOREN_FEATURE_SCENE）
@@ -27,6 +33,7 @@
  *   データ層（lib/db/restaurants.ts・lib/db/features.ts）と暖簾の表示（店ページ・記事ページ）に掛けるか。他の 2 つとは別のスイッチ。2026-10-12 から本番でも true。
  */
 export const RELEASE_SEARCH = true; // 確定した部分（さがす・統合・営業中なし・メニュー）。true: 出す
+export const RELEASE_FEATURE = true; // 確定した部分（特集まわり: 1 店 1 ページ・シーン別まとめ記事の新しい枠・特集の一覧の 3 棚）。true: 出す
 export const RELEASE_REST = false; // 未確定の部分。true: 見本が基準（全部出る）／false: 今の本番と同じ見た目・同じ文言
 export const NOREN_STRIP_OTHER_RATINGS = true; // 2026-10-12 本番でも有効（オーナー指示「他サイトの評価を文章に入れるのやめて」「確定したところはどんどん公開」）
 /**

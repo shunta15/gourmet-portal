@@ -1,4 +1,4 @@
-import { RELEASE_REST } from "./release";
+import { RELEASE_FEATURE, RELEASE_REST } from "./release";
 /**
  * 利用シーン+店舗紹介の記事を、専用の枠（components/portal/noren/FeatureScenePage.tsx）で出すスイッチ。軽いファイル（サーバー専用の import は足さない）。
  * 記事の枠は 3 種類: ①店 1 軒の特集（featureSingle.ts）／②利用シーン+店舗紹介（これ）／③街の特集・コース（今の FeaturePage）。
@@ -15,7 +15,7 @@ export const NOREN_FEATURE_SCENE = RELEASE_REST;
  *   メタ情報・構造化データ・canonical・静的生成の対象・再生成の間隔は、このスイッチと関係なく同じ。
  * - 街歩き・コースの記事（isSceneShopFeature が false）は、このスイッチと関係なく今までの枠（FeaturePage）。
  */
-export const NOREN_FEATURE_ROUNDUP_PHOTO = RELEASE_REST;
+export const NOREN_FEATURE_ROUNDUP_PHOTO = RELEASE_FEATURE;
 
 /**
  * 利用シーン+店舗紹介の記事か。記事の ID が `scene-` で始まり、店の並び（ranking）の全項目の href が /restaurant/<店 ID> を指すもの。

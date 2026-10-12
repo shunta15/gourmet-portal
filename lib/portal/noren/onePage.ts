@@ -1,11 +1,11 @@
-import { RELEASE_REST } from "./release";
+import { RELEASE_FEATURE } from "./release";
 import { FEATURED_SINGLE_IDS } from "./featureSingle";
 
 /**
  * 1 店 1 ページ（見本。2026-10-12 オーナー指示「店舗ページと特集記事は一緒に」）。
  * 対象の特集記事（下の ONE_PAGE_SHOP_OF_FEATURE の 50 本）は、写真が主役の特集記事 + 記事の終わりの店舗情報を、店ページ側の URL /restaurant/<店の ID> で 1 ページとして出す。
  * 特集記事の URL /feature/<記事 ID> は、同じ店の /restaurant/<店の ID> へ恒久リダイレクト（next.config.ts）。サイト内のリンクは、はじめから /restaurant/<店の ID> を指す（featureHrefOf）。
- * 切り替え NOREN_ONE_PAGE が false（RELEASE_REST が false の本番の main）のときは、全部今までどおり（店ページ・特集記事ページは別々）。
+ * 切り替え NOREN_ONE_PAGE が false（RELEASE_FEATURE が false のとき）のときは、全部今までどおり（店ページ・特集記事ページは別々）。
  *
  * 対象の決め方（2026-10-12）: 店 1 軒の記事（isSingleShopFeature）のうち、
  *   ① 対の店ページがある（pairedShopOfFeature。ARTICLE_STORE_ID_BY_FEATURE の完全一致）、
@@ -18,7 +18,7 @@ import { FEATURED_SINGLE_IDS } from "./featureSingle";
  * 記事 ID → 店 ID の対応は、既存の対応表 ARTICLE_STORE_ID_BY_FEATURE（lib/articleStores.ts）の対象ぶんの写し。ID の完全一致だけで引く（店名・題の部分一致は使わない）。
  * 既存の対応表と食い違わないことは、店ページ（app/gourmet/restaurant/[id]/page.tsx）が描くときに確かめる（食い違えば 1 ページ化せず、今までの店ページを出す）。
  */
-export const NOREN_ONE_PAGE = RELEASE_REST;
+export const NOREN_ONE_PAGE = RELEASE_FEATURE;
 
 /** 記事 ID → 店 ID（対象の 50 本 = FEATURED_SINGLE_IDS の 50 本。先頭の 20 本が先頭の 20 本） */
 export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {

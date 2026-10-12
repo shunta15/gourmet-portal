@@ -23,7 +23,7 @@ import {
 } from "@/lib/portal/noren/featureKinds";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_FEATURE_INDEX_REWRITE } from "@/lib/portal/noren/rewrites";
-import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
 import LegacyFeatureIndexPage, { legacyMetadata } from "./LegacyFeatureIndexPage";
 
 // 特集記事のトップ（一覧）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/feature が next.config.ts の rewrites でここに来る
@@ -215,6 +215,6 @@ async function NewFeatureIndexPage({
   );
 }
 
-// RELEASE_REST が false のあいだは、今の本番（main）の特集のトップ（LegacyFeatureIndexPage）を出す。true で 2 棚の新しい一覧（NewFeatureIndexPage）
-export const metadata: Metadata = RELEASE_REST ? newMetadata : legacyMetadata;
-export default RELEASE_REST ? NewFeatureIndexPage : LegacyFeatureIndexPage;
+// RELEASE_FEATURE が false のあいだは、今の本番（main）の特集のトップ（LegacyFeatureIndexPage）を出す。true で 3 棚の新しい一覧（NewFeatureIndexPage）
+export const metadata: Metadata = RELEASE_FEATURE ? newMetadata : legacyMetadata;
+export default RELEASE_FEATURE ? NewFeatureIndexPage : LegacyFeatureIndexPage;

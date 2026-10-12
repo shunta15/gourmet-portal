@@ -11,7 +11,7 @@ import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
 import { onePageFeatureOf } from "@/lib/portal/noren/onePage";
 import { NOREN_FEATURE_PHOTO, isDummyFeatureImage, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
-import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
 import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
 import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { getShopInfo } from "@/lib/portal/photoFeature/shopInfo";
@@ -98,7 +98,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     // 関連記事: 店ページと同じ選び方・同じ本数（featuresOfShop の既定 3 本 = この記事自身 + ほか最大 2 本）。この記事（=このページ）自身は除く
     const shopFeatures = (await featuresOfShop(r.id, featureId))
       .filter((f) => !f.paired)
-      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_REST && isDummyFeatureImage(f.image)) ? f.image : "" }));
+      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_FEATURE && isDummyFeatureImage(f.image)) ? f.image : "" }));
     const articleJsonLd = buildArticleJsonLd(article, page);
     // 1 ページ版は点数・口コミ件数を画面に出さないので、構造化データにも評価（aggregateRating）を入れない（画面に無い評価を構造化データに載せない）。地域のパンくずは「さがす」へ
     const { aggregateRating: _omit, ...restaurantLd } = restaurantJsonLd as Record<string, unknown>;
