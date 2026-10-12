@@ -47,7 +47,9 @@ export type PfBlock =
   | { kind: "view"; view: PfView; variant: "A" | "B" | "C" | "D" | "E" }
   | { kind: "band"; photos: PfPhoto[]; no: number }
   /** 縦長の写真の視点（a）と、次の視点（b）の写真を、高さをそろえて横に接して並べる（縦長の写真の横のすき間を作らない） */
-  | { kind: "pair"; a: PfView; b: PfView };
+  | { kind: "pair"; a: PfView; b: PfView }
+  /** 巻頭の写真の列に写真を出した視点（小見出しは写真の上に出ているので、文だけを出す） */
+  | { kind: "note"; view: PfView };
 
 export type PfData = {
   id: string;
@@ -57,6 +59,8 @@ export type PfData = {
   lede: PfText;
   hero: PfPhoto | null;
   heroAlt: string;
+  /** 主役の写真が小さい（元の幅 × 1.3 が 900px 未満）とき、巻頭で主役の写真の横に接して並べる、最初の視点（その写真 1 枚）。無ければ null */
+  coverPair: PfView | null;
   shop: { id: string; name: string; cuisine: string; area: string } | null;
   blocks: PfBlock[];
   info: [string, string][];
@@ -348,12 +352,17 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
   // 並べる（縦長の写真 1 枚の視点は、次の視点の写真と横に接して並べる。写真だけの面は、視点の真ん中あたりと最後に）
   const n = views.length;
   const blocks: PfBlock[] = [];
+  // 主役の写真が小さい記事は、最初の視点の写真を巻頭の主役の横に接して並べる（巻頭の写真の面積を稼ぐ）
+  const heroPf = c.hero ? toPf(c.hero, alt("主役の写真")) : null;
+  const coverPair: PfView | null =
+    heroPf && heroPf.cap < 900 && n >= 2 && views[0].photos.length === 1 && !views[0].photos[0].port && bands.length === 0 ? views[0] : null;
+  if (coverPair) blocks.push({ kind: "note", view: coverPair });
   const bandAfter = new Map<number, Photo[]>();
-  if (bands.length >= 1) bandAfter.set(Math.max(0, Math.ceil(n / 2) - 1), bands[0]);
+  if (bands.length >= 1) bandAfter.set(Math.max(coverPair ? 1 : 0, Math.ceil(n / 2) - 1), bands[0]);
   if (bands.length >= 2) bandAfter.set(n - 1, bands[1]);
   let bandNo = 0;
   let vi = 0;
-  for (let i = 0; i < n; i++) {
+  for (let i = coverPair ? 1 : 0; i < n; i++) {
     const v = views[i];
     const nx = views[i + 1];
     let last = i;
@@ -375,8 +384,9 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     title: titleColumns(A.titleHTML, A.title),
     subCols: sub ? tateCols(sub, 12, 2) : [],
     lede: splitExcerpt(stripTabelogScore(A.lede)),
-    hero: c.hero ? toPf(c.hero, alt("主役の写真")) : null,
+    hero: heroPf,
     heroAlt: alt("主役の写真"),
+    coverPair,
     shop: store ? { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area } : null,
     blocks,
     info: infoRows(store),

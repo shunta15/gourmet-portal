@@ -141,14 +141,14 @@ body:has(.pf-root) main { display: contents; }
 .pf-row .pf-ph--m { aspect-ratio: var(--ar, 1.333); }
 .pf-row .pf-ph--s { aspect-ratio: auto; }
 .pf-v .pf-ph { box-shadow: 0 0 0 5px var(--paper); }
-.pf-v__tx { grid-row: 1; font-size: clamp(15px, 1.08vw, 16px); line-height: 2.05; letter-spacing: 0.04em; position: relative; z-index: 2; }
+.pf-v__tx { grid-row: 1; font-size: clamp(15px, 1.08vw, 16px); line-height: 2.05; letter-spacing: 0.04em; position: relative; z-index: 5; }
 .pf-v__tx p { margin-bottom: 0.7em; }
 .pf-hd { font-weight: 800; font-size: 1.05em; letter-spacing: 0.1em; }
 .pf-no { font-size: 13px; letter-spacing: 0.14em; color: var(--shu); font-weight: 700; line-height: 1; }
 .pf-vt { font-size: clamp(18px, 1.6vw, 23px); font-weight: 800; line-height: 1.45; letter-spacing: 0.12em; }
 
 /* 小見出し 1: 写真の上に白抜き（暗い帯を敷く。影つき） */
-.pf-ov { position: absolute; top: 0; bottom: 0; z-index: 3; width: clamp(104px, 10.5vw, 160px); display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 24px; color: #fff; font-size: inherit; font-weight: inherit; pointer-events: none; }
+.pf-ov { position: absolute; top: 0; bottom: 0; z-index: 3; margin: 0; width: clamp(104px, 10.5vw, 160px); display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 24px; color: #fff; font-size: inherit; font-weight: inherit; pointer-events: none; }
 .pf-ov.pf-r { right: 0; background: linear-gradient(to left, rgba(10, 9, 8, 0.7), rgba(10, 9, 8, 0.36) 55%, rgba(10, 9, 8, 0)); }
 .pf-ov.pf-l { left: 0; background: linear-gradient(to right, rgba(10, 9, 8, 0.7), rgba(10, 9, 8, 0.36) 55%, rgba(10, 9, 8, 0)); }
 .pf-ov .pf-no { color: #fff; opacity: 0.92; }
@@ -161,7 +161,7 @@ body:has(.pf-root) main { display: contents; }
 
 @media (min-width: 761px) {
   /* 文の札（写真の隅に重なる） */
-  .pf-v--A .pf-v__tx, .pf-v--B .pf-v__tx, .pf-v--E .pf-v__tx { background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); align-self: end; margin-bottom: 20px; }
+  .pf-v--A .pf-v__tx, .pf-v--B .pf-v__tx, .pf-v--E .pf-v__tx { background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); align-self: end; margin-bottom: calc(var(--ovl) + 16px); }
   .pf-v--A .pf-v__tx p:last-child, .pf-v--B .pf-v__tx p:last-child, .pf-v--E .pf-v__tx p:last-child, .pf-v--A .pf-more__b p:last-child, .pf-v--B .pf-more__b p:last-child, .pf-v--E .pf-more__b p:last-child { margin-bottom: 0; }
   /* A: 写真は左（10 列）、文の札は右下 */
   .pf-v--A .pf-v__ph { grid-column: 1 / 11; }
@@ -169,12 +169,13 @@ body:has(.pf-root) main { display: contents; }
   /* B: 写真は右（10 列）、文の札は左下 */
   .pf-v--B .pf-v__ph { grid-column: 3 / 13; justify-self: end; width: 100%; }
   .pf-v--B .pf-v__tx { grid-column: 1 / 5; }
-  /* C: 写真は左（9 列）、文は右の横 */
-  .pf-v--C .pf-v__ph { grid-column: 1 / 10; }
-  .pf-v--C .pf-v__tx { grid-column: 10 / 13; align-self: center; padding-left: 14px; }
-  /* D: 文は左の横、写真は右（9 列） */
-  .pf-v--D .pf-v__ph { grid-column: 4 / 13; justify-self: end; width: 100%; }
-  .pf-v--D .pf-v__tx { grid-column: 1 / 4; align-self: center; padding-right: 14px; }
+  /* C: 写真は左（10 列）、文の札は右上 */
+  .pf-v--C .pf-v__ph { grid-column: 1 / 11; }
+  .pf-v--C .pf-v__tx { grid-column: 9 / 13; align-self: start; margin-top: 24px; background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
+  /* D: 文の札は左上、写真は右（10 列） */
+  .pf-v--D .pf-v__ph { grid-column: 3 / 13; justify-self: end; width: 100%; }
+  .pf-v--D .pf-v__tx { grid-column: 1 / 5; align-self: start; margin-top: 24px; background: var(--paper); padding: clamp(16px, 1.7vw, 26px); box-shadow: 0 0 0 1px rgba(25, 24, 21, 0.05), 0 18px 40px rgba(25, 24, 21, 0.14); }
+  .pf-v--C .pf-v__tx p:last-child, .pf-v--D .pf-v__tx p:last-child, .pf-v--C .pf-more__b p:last-child, .pf-v--D .pf-more__b p:last-child { margin-bottom: 0; }
   /* E: 広い写真（10 列）、文の札は左下 */
   .pf-v--E .pf-v__ph { grid-column: 2 / 12; }
   .pf-v--E .pf-v__tx { grid-column: 1 / 6; }
@@ -187,6 +188,8 @@ body:has(.pf-root) main { display: contents; }
   .pf-v--multi .pf-v__ph { grid-column: 1 / 13; justify-self: stretch; }
   .pf-v--multi .pf-v__tx { grid-row: 2; grid-column: 8 / 13; align-self: start; margin: 8px 0 0; padding: 0; background: none; box-shadow: none; }
   .pf-v--multi.pf-v--B .pf-v__tx, .pf-v--multi.pf-v--D .pf-v__tx, .pf-v--multi.pf-v--E .pf-v__tx { grid-column: 1 / 6; }
+  /* 巻頭に写真を出した視点の文 */
+  .pf-v--note .pf-v__tx { grid-column: 3 / 9; padding: 6px 0 0; }
   /* 写真が 1 枚も無い視点: 小見出しと文だけ */
   .pf-v--bare .pf-v__tx { grid-column: 4 / 10; padding: 10px 0 0; background: none; box-shadow: none; margin: 0; }
   /* 2 つの視点の写真を横に接して並べる（pair）。文は、それぞれの写真の下 */
@@ -194,6 +197,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-pr__ph .pf-row { max-width: var(--cap); }
   .pf-pr__tx { display: grid; grid-template-columns: var(--cols2); gap: 6px; max-width: var(--cap); margin-top: 6px; }
   .pf-pr__tx .pf-v__tx { grid-row: auto; padding: 8px 14px 0; }
+  .pf-v--multi .pf-v__tx, .pf-v--note .pf-v__tx, .pf-v--bare .pf-v__tx, .pf-pr .pf-pr__tx .pf-v__tx { padding-bottom: calc(var(--ovl) + 6px); }
 }
 .pf-pr__ph { min-width: 0; }
 .pf-pr .pf-row { grid-template-columns: var(--cols); }
@@ -245,7 +249,12 @@ body:has(.pf-root) main { display: contents; }
   .pf-sub { position: absolute; top: 72px; right: calc(16px + var(--cols) * var(--fs) * 1.25 + 12px); color: rgba(255, 255, 255, 0.92); font-size: 12px; letter-spacing: 0.14em; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); max-height: 300px; }
   .pf-cover__seal { right: 54px; top: 14px; width: 40px; }
   .pf-cover--nophoto .pf-cover__t { position: static; height: auto; background: none; padding: 24px 14px; color: var(--ink); }
+  .pf-cover--pair .pf-cover__ph { height: auto; }
+  .pf-cover--pair .pf-row { display: block; }
+  .pf-cover--pair .pf-row .pf-ph--m { height: min(calc(var(--nh, 9999) * 1px), clamp(440px, 72svh, 640px)); aspect-ratio: auto; }
+  .pf-cover--pair .pf-row .pf-ph--s { aspect-ratio: var(--ar, 1.33); margin-top: 5px; }
   .pf-cover__cap { width: calc(100% - 28px); margin: 12px auto 0; }
+  .pf-v--note .pf-v__tx { margin: 12px 14px 0; }
   .pf-cover__name b { font-size: 16px; }
 
   .pf-lede { margin-top: 10px; }
@@ -256,7 +265,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-body > .pf-v + .pf-v { margin-top: 6px; }
   .pf-body > .pf-v:first-child { margin-top: 12px; }
   .pf-v__ph { width: 100%; }
-  .pf-v .pf-cl__in { width: 94%; }
+  .pf-v .pf-cl__in { width: 96%; }
   .pf-v--B .pf-cl__in, .pf-v--D .pf-cl__in { margin-left: auto; }
   .pf-row { grid-template-columns: 1fr 1fr; gap: 5px; max-width: none; }
   .pf-row .pf-ph { max-width: none; }

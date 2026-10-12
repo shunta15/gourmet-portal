@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { sized } from "@/lib/imageUrl";
 import { rowOf, type PfBlock, type PfData, type PfPhoto, type PfText, type PfView } from "@/lib/portal/photoFeature/build";
 import { Brush, Seal, Tate } from "./parts";
@@ -11,12 +11,13 @@ import { Brush, Seal, Tate } from "./parts";
 
 type Fx = CSSProperties & Record<`--${string}`, string | number>;
 
-function Fig({ p, cls = "", par = 0.6, ar, big = false }: { p: PfPhoto; cls?: string; par?: number; ar?: number; big?: boolean }) {
+function Fig({ p, cls = "", par = 0.6, ar, big = false, children }: { p: PfPhoto; cls?: string; par?: number; ar?: number; big?: boolean; children?: ReactNode }) {
   const st: Fx = { "--ar": ar ?? p.ar, "--cap": `${p.cap}px`, "--nh": p.nh || 9999 };
   return (
     <figure className={`pf-ph pf-rv ${cls}`} style={st}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="pf-img" data-par={par} src={sized(p.src, big ? 1600 : 1200)} alt={p.alt} loading="lazy" decoding="async" />
+      {children}
     </figure>
   );
 }
@@ -44,14 +45,16 @@ function Text({ t, className = "" }: { t: PfText; className?: string }) {
 }
 
 /** 写真の列（1〜3 枚。横に接して並べる。高さはそろえる） */
-function Row({ photos, big = false }: { photos: PfPhoto[]; big?: boolean }) {
+function Row({ photos, big = false, overlay }: { photos: PfPhoto[]; big?: boolean; overlay?: Record<number, ReactNode> }) {
   const r = rowOf(photos);
   const a0 = photos[0].ar;
-  const arm = Math.min(1.15, Math.max(0.75, a0));
+  const arm = Math.min(1, Math.max(0.75, a0));
   return (
     <div className="pf-row" style={{ "--cols": r.fr, "--cap": `${r.cap}px`, "--arm": arm, "--n": photos.length } as Fx}>
       {photos.map((p, i) => (
-        <Fig key={p.src} p={p} cls={i === 0 ? "pf-ph--m" : "pf-ph--s"} par={0.3 + i * 0.35} big={big} />
+        <Fig key={p.src} p={p} cls={i === 0 ? "pf-ph--m" : "pf-ph--s"} par={0.3 + i * 0.35} big={big}>
+          {overlay?.[i]}
+        </Fig>
       ))}
     </div>
   );
@@ -63,7 +66,7 @@ const HEAD: Record<string, { kind: "ov" | "tz"; side: "l" | "r" }> = {
   B: { kind: "tz", side: "l" },
   C: { kind: "ov", side: "l" },
   D: { kind: "tz", side: "r" },
-  E: { kind: "ov", side: "l" },
+  E: { kind: "ov", side: "r" },
 };
 
 function ViewBlock({ view, variant }: { view: PfView; variant: string }) {
@@ -98,6 +101,18 @@ function ViewBlock({ view, variant }: { view: PfView; variant: string }) {
   );
 }
 
+/** 巻頭に写真を出した視点の文（小見出しは巻頭の写真の上にある） */
+function NoteBlock({ view }: { view: PfView }) {
+  return (
+    <section className="pf-v pf-v--note" aria-label={view.name}>
+      <div className="pf-v__tx pf-rv">
+        {view.heading && <p className="pf-hd">{view.heading}</p>}
+        <Text t={{ head: view.head, rest: view.rest }} />
+      </div>
+    </section>
+  );
+}
+
 /** 縦長の写真の視点 a と、次の視点 b の写真を、高さをそろえて横に接して並べる。文は、それぞれの写真の下に */
 function PairBlock({ a, b }: { a: PfView; b: PfView }) {
   const photos = [...a.photos, ...b.photos];
@@ -116,9 +131,7 @@ function PairBlock({ a, b }: { a: PfView; b: PfView }) {
     <section className="pf-v pf-pr" style={{ "--cap": `${rr.cap}px` } as Fx} aria-label={`${a.name}・${b.name}`}>
       <div className="pf-pr__ph">
         <div className="pf-cl__in">
-          <Row photos={photos} />
-          {head(a, idA, "ov", "l")}
-          {head(b, idB, "tz", "r")}
+          <Row photos={photos} overlay={{ 0: head(a, idA, "ov", "l"), [photos.length - 1]: head(b, idB, "ov", "r") }} />
         </div>
       </div>
       <div className="pf-pr__tx" style={{ "--cols2": `${a.photos[0].ar}fr ${bw}fr` } as Fx}>
@@ -234,10 +247,28 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
       </header>
 
       {/* 巻頭: 主役の写真（大きく）+ 縦書きの題の札が重なる + 朱の丸 */}
-      <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}`} style={cover} aria-label="巻頭">
+      <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}${D.coverPair ? " pf-cover--pair" : ""}`} style={cover} aria-label="巻頭">
         {hero && (
-          <div className="pf-cover__ph" style={{ "--cap": `${hero.cap}px` } as Fx}>
-            <Fig p={hero} cls="pf-hero" par={0.6} big />
+          <div className="pf-cover__ph" style={{ "--cap": `${D.coverPair ? rowOf([hero, ...D.coverPair.photos]).cap : hero.cap}px` } as Fx}>
+            {D.coverPair ? (
+              <div className="pf-cl__in">
+                <Row
+                  photos={[hero, ...D.coverPair.photos]}
+                  big
+                  overlay={{
+                    1: (
+                      <h2 id="v-cover-h" className="pf-ov pf-l">
+                        <span className="pf-no" aria-hidden="true">{D.coverPair.no}</span>
+                        <Tate cols={D.coverPair.cols} className="pf-vt" label={false} />
+                        <span className="pf-vh">{D.coverPair.name}</span>
+                      </h2>
+                    ),
+                  }}
+                />
+              </div>
+            ) : (
+              <Fig p={hero} cls="pf-hero" par={0.6} big />
+            )}
             <Brush kind="wave" className="pf-cover__br" delay={0.5} />
           </div>
         )}
@@ -269,7 +300,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
 
       <div id="main" className="pf-body">
         {D.blocks.map((b: PfBlock, i) =>
-          b.kind === "view" ? <ViewBlock key={i} view={b.view} variant={b.variant} /> : b.kind === "pair" ? <PairBlock key={i} a={b.a} b={b.b} /> : <BandBlock key={i} photos={b.photos} no={b.no} />,
+          b.kind === "view" ? <ViewBlock key={i} view={b.view} variant={b.variant} /> : b.kind === "pair" ? <PairBlock key={i} a={b.a} b={b.b} /> : b.kind === "note" ? <NoteBlock key={i} view={b.view} /> : <BandBlock key={i} photos={b.photos} no={b.no} />,
         )}
       </div>
 
