@@ -14,6 +14,7 @@ import { getPrefByName } from "@/lib/areas/prefectures";
 import { SCENES } from "@/lib/scenes";
 import { SEARCH_LOOK, resolveLook } from "@/lib/portal/noren/looks";
 import BlockFonts from "@/components/portal/noren/BlockFonts";
+import { BlockSearchBox, BlockSearchBoxStatic, BlockSearchSticky } from "@/components/portal/noren/BlockSearchBox";
 import { heroImagesOf } from "@/lib/portal/noren/shop";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import { sized } from "@/lib/imageUrl";
@@ -106,8 +107,16 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
           <div className="vBk-wrap vBk-ban-in">
             <h1>お店を探す</h1>
             <p>地図から、リストから、気になるお店を見つけよう。</p>
+            {/* 検索の箱は、どのタブを開いていても常に見える（キーワード・エリアは URL の ?q= ?region= と合う）。引数を読むまでは、同じ形のふつうの form */}
+            <Suspense fallback={<BlockSearchBoxStatic />}>
+              <BlockSearchBox />
+            </Suspense>
           </div>
         </section>
+        {/* 帯の箱が画面から消えたら、ヘッダーの下に細く留まる検索の欄 */}
+        <Suspense fallback={null}>
+          <BlockSearchSticky />
+        </Suspense>
         {search}
       </div>
     );

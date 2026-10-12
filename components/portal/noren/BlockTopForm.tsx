@@ -21,6 +21,8 @@ export default function BlockTopForm({ regions }: { regions: { key: string; name
     window.setTimeout(() => off.forEach((el) => (el.disabled = false)), 0);
   };
   return (
+    <div className="vBkt-sboxw">
+    <p className="vBkt-sbox-cap">店名・エリア・駅名でさがす</p>
     <form className="vBkt-sbox" method="get" action="/search" role="search" aria-label="店をさがす" onSubmit={onSubmit}>
       <label className="vBkt-sbox-area">
         <PinIcon size={18} />
@@ -33,10 +35,12 @@ export default function BlockTopForm({ regions }: { regions: { key: string; name
           ))}
         </select>
       </label>
-      <input name="q" type="search" enterKeyHint="search" autoComplete="off" placeholder="エリア・駅名・お店の名前で探す" aria-label="キーワード" />
-      <button type="submit" aria-label="探す">
+      <input name="q" type="search" enterKeyHint="search" autoComplete="off" placeholder="店名・エリア・駅名・料理名でさがす" aria-label="キーワード" />
+      <button type="submit">
         <SearchIcon size={22} sw={2.4} />
+        <span>さがす</span>
       </button>
     </form>
+    </div>
   );
 }

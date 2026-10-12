@@ -37,6 +37,8 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "q", label: "キーワード" },
 ];
 const isTab = (s: string | null): s is Tab => !!s && TABS.some((t) => t.key === s);
+/** block の見た目のタブ（キーワードは、帯の検索の箱が常にあるので、タブには無い） */
+const BLOCK_TABS = TABS.filter((t) => t.key !== "q");
 
 type SceneDef = { slug: string; name: string; matchTags: string[] };
 /** 検索の 1 店。最寄り駅（nearest）も渡る（地図のピンの店の情報の札に出す。block では駅名でも探せる） */
@@ -269,7 +271,7 @@ export default function NorenSearch({
     if (next.cuisine && next.cuisine !== "ALL") params.set("cuisine", next.cuisine);
     if (next.scene) params.set("scene", next.scene);
     if (next.tag) params.set("tag", next.tag);
-    if (next.tab && isTab(next.tab)) params.set("tab", next.tab);
+    if (next.tab && isTab(next.tab) && !(block && next.tab === "q")) params.set("tab", next.tab);
     // こだわり条件（ON のときだけ）は、キーワードや地域を変えても保つ
     if (facets) {
       const budget = sp.get("budget");
@@ -309,7 +311,7 @@ export default function NorenSearch({
   const view = (list: SearchItem[], ext?: FacetExt, pending = false) => {
     const applied = !!spQ || !!spRegion || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
     // どのタブを開くか: ?tab= があればそれ、無ければ絞り込みに使っている項目のタブ、無ければエリア
-    const active: Tab = isTab(spTab)
+    const active: Tab = isTab(spTab) && !(block && spTab === "q")
       ? spTab
       : spCuisine !== "ALL"
         ? "genre"
@@ -317,7 +319,7 @@ export default function NorenSearch({
           ? "scene"
           : spTag || ext?.active
             ? "tag"
-            : spQ && !spRegion
+            : spQ && !spRegion && !block
               ? "q"
               : "area";
     const regionName = spRegion in REGIONS ? REGIONS[spRegion as RegionKey].name : "";
@@ -345,11 +347,19 @@ export default function NorenSearch({
           </Link>
         </li>
       );
-      const chosen: string[] = [];
-      if (spQ) chosen.push(`「${spQ}」`);
-      if (regionName) chosen.push(regionName);
-      if (spCuisine !== "ALL") chosen.push(spCuisine);
-      if (sceneDef) chosen.push(sceneDef.name);
+      // いまの絞り込みの札（× でその条件だけ外れる）。キーワード・エリア・業種・シーン（タグは下に、こだわり条件は ext.summary）
+      const chosen: { key: string; label: string; what: string; href: string }[] = [];
+      if (spQ) chosen.push({ key: "q", label: `「${spQ}」`, what: `キーワード「${spQ}」`, href: buildUrl({ q: "" }) });
+      if (regionName) chosen.push({ key: "region", label: regionName, what: `エリア「${regionName}」`, href: buildUrl({ region: "" }) });
+      if (spCuisine !== "ALL") chosen.push({ key: "cuisine", label: spCuisine, what: `業種「${spCuisine}」`, href: buildUrl({ cuisine: "ALL" }) });
+      if (sceneDef) chosen.push({ key: "scene", label: sceneDef.name, what: `利用シーン「${sceneDef.name}」`, href: buildUrl({ scene: "" }) });
+      // 0 件のとき: 業種のリンクは、いまの条件をすべてはずして、その業種だけで探す（見た目・並べ替え・地図の指定だけ残す）
+      const freshCuisine = (label: string) => {
+        const u = new URLSearchParams(clearUrl.split("?")[1] ?? "");
+        u.set("cuisine", label);
+        u.set("tab", "genre");
+        return `/search?${u.toString()}`;
+      };
       return (
         <section className="vBk-main vBk-find" aria-label="店の検索">
           <div className="vBk-wrap">
@@ -361,10 +371,10 @@ export default function NorenSearch({
               <>
                 {/* 探し方のタブ（選んでいるタブは橙） */}
                 <nav className="vBk-tabs" aria-label="探し方">
-                  {TABS.map((t) => (
-                    <Link key={t.key} href={buildUrl({ tab: t.key })} className="vBk-tab" aria-current={active === t.key ? "true" : undefined} aria-label={t.key === "q" ? "キーワードで探す" : undefined}>
+                  {BLOCK_TABS.map((t) => (
+                    <Link key={t.key} href={buildUrl({ tab: t.key })} className="vBk-tab" aria-current={active === t.key ? "true" : undefined}>
                       <TabIcon k={t.key} />
-                      {t.key !== "q" && <span>{t.label}</span>}
+                      <span>{t.label}</span>
                     </Link>
                   ))}
                 </nav>
@@ -423,16 +433,6 @@ export default function NorenSearch({
                         )}
                       </div>
                     )}
-                    {active === "q" && (
-                      <form className="vBk-qform" onSubmit={onSubmit} role="search" aria-label="キーワードでさがす">
-                        <label htmlFor="vBk-q">キーワード</label>
-                        <input id="vBk-q" type="search" placeholder="エリア・駅名・お店の名前で探す" value={q} onChange={(e) => setQ(e.target.value)} />
-                        <button type="submit" className="vBk-qbtn">
-                          <SearchIcon size={18} />
-                          探す
-                        </button>
-                      </form>
-                    )}
                   </div>
                 </div>
 
@@ -447,14 +447,17 @@ export default function NorenSearch({
                     件
                   </p>
                   {chosen.map((c) => (
-                    <span key={c} className="vBk-chosen">
-                      {c}
+                    <span key={c.key} className="vBk-chosen">
+                      <span>{c.label}</span>
+                      <Link href={c.href} scroll={false} className="vBk-chosen-x" aria-label={`${c.what}を外す`}>
+                        ×
+                      </Link>
                     </span>
                   ))}
                   {spTag && (
                     <span className="vBk-chosen">
-                      #{spTag}
-                      <button type="button" onClick={clearTag} aria-label="タグを外す">
+                      <span>#{spTag}</span>
+                      <button type="button" className="vBk-chosen-x" onClick={clearTag} aria-label="タグを外す">
                         ×
                       </button>
                     </span>
@@ -482,7 +485,37 @@ export default function NorenSearch({
                     ))}
                   </ul>
                 ) : (
-                  <p className="vBk-empty">該当する店舗が見つかりませんでした。条件を変えてお試しください。</p>
+                  <div className="vBk-empty vBk-empty--rich" role="status">
+                    <p className="vBk-empty-h">{spQ ? `「${spQ}」に合う店は見つかりませんでした` : "条件に合う店は見つかりませんでした"}</p>
+                    <p className="vBk-empty-p">言葉や条件を変えて、もう一度さがしてみてください。</p>
+                    <ul className="vBk-empty-links" aria-label="条件を外す">
+                      {chosen.map((c) => (
+                        <li key={c.key}>
+                          <Link href={c.href} scroll={false}>
+                            {c.what}を外す
+                          </Link>
+                        </li>
+                      ))}
+                      {spTag && (
+                        <li>
+                          <Link href={buildUrl({ tag: "" })} scroll={false}>
+                            タグ「#{spTag}」を外す
+                          </Link>
+                        </li>
+                      )}
+                      <li>
+                        <Link href={clearUrl}>すべての条件をはずして、全店から探す</Link>
+                      </li>
+                    </ul>
+                    <p className="vBk-empty-p">業種から探す</p>
+                    <ul className="vBk-empty-cuis" aria-label="業種から探す">
+                      {BROAD_GROUPS.map((g) => (
+                        <li key={g.key}>
+                          <Link href={freshCuisine(g.label)}>{g.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
 
                 {pages > 1 && (
