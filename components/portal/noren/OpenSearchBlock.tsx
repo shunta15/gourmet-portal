@@ -62,12 +62,12 @@ export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { da
           <div className="vN-rv">
             <BlockTopForm regions={data.regions} />
           </div>
-          {/* 業種のタイルを出さない版（既定の dark）は、下の「七つの章」へ目が行くよう、箱の下に 1 行 */}
+          {/* 業種のタイルを出さない版（既定の dark）は、すぐ下の業種ごとの章（和食〜カフェ・甘味）へ目が行くよう、箱の下に 1 行 */}
           {!view.tiles && (
             <p className="vBkt-chapline vN-rv">
               <a href="#chapters">
                 業種からさがす <span aria-hidden="true">↓</span>
-                <small>（下の七つの章へ）</small>
+                <small>（この下に、和食からカフェ・甘味まで）</small>
               </a>
             </p>
           )}

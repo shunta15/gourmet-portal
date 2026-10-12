@@ -113,35 +113,8 @@ export default async function GourmetNorenHomeReal({
       {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandRegions={blockTop.bandRegions} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
+      {/* 章の前置き（「七つの章」の見出し・説明・7 つの目次）は置かない（2026-10-12 オーナー指示「ここいらないかな」）。「店を、さがす。」の節のすぐ下から、和食の章が始まる */}
       <div className="vN-chs" id="chapters">
-        <div className="vN-chs-intro">
-          <div className="vN-chs-intro-tx vN-rv">
-            <p className="vN-chs-intro-k">七つの章</p>
-            <p className="vN-chs-intro-t">
-              和、洋、中、麺、肉、酒、茶。<br />
-              暖簾の一文字ごとに、<br />
-              実在の店を数軒ずつ。
-            </p>
-            <p className="vN-chs-intro-s">スクロールで店が入れ替わります。縦書きの店名を押すと、その店のページへ。数字は、その章に入る掲載店の数です。</p>
-            <p className="vN-chs-intro-more">
-              <span>言葉やエリアで絞るなら、上の「店を、さがす。」から。</span>
-              <a href="#open-search" data-cursor="JUMP">店をさがす <span aria-hidden="true">↑</span></a>
-            </p>
-          </div>
-          <ul className="vN-toc vN-rv" style={{ ["--d" as string]: 1 }}>
-            {chapters.map((c) => (
-              <li key={c.key}>
-                <a href={`#ch-${c.key}`} data-cursor="JUMP">
-                  <i className="vN-toc-no">{c.no}</i>
-                  <b className="vN-toc-k">{c.kanji}</b>
-                  <span className="vN-toc-c">
-                    <em>{c.count}</em>軒
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
         {chapters.map((c, i) => (
           <Fragment key={c.key}>
             {/* フッターの暖簾（今の本番の 5 つ）の行き先 #ch-sushi・#ch-soba の別名の目印。入口の「和」の章の手前に着く */}
