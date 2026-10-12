@@ -145,6 +145,12 @@ export default function Motion() {
     const body = root.querySelector<HTMLElement>(".pf-body");
     const secs = Array.from(root.querySelectorAll<HTMLElement>(".pf-body [data-no]"));
     const pars = Array.from(root.querySelectorAll<HTMLImageElement>("img[data-par]"));
+    // 写真ごとの拡大の余白（--z）と、ずらし方は、最初に 1 回だけ読む（フレームごとに style を読まない）
+    const parInfo = pars.map((im) => {
+      const fig = im.parentElement as HTMLElement;
+      const flow = im.dataset.par === "flow";
+      return { flow, z: parseFloat(fig.style.getPropertyValue("--z")) || 1.04, k: flow ? 1 : Math.min(1, parseFloat(im.dataset.par || "0.5")) };
+    });
     const stacks = Array.from(root.querySelectorAll<HTMLElement>("[data-stack]")).map((el) => ({ el, ph: Array.from(el.querySelectorAll<HTMLElement>(".pf-st")) }));
     let curNo = "";
     let raf = 0;
@@ -176,15 +182,13 @@ export default function Motion() {
       }
       // 3d. 写真の中身が、枠の中でゆっくり流れる（枠は動かない）。ほかの写真の視差は PC だけ（スマホは軽くする）
       pars.forEach((im, i) => {
-        const flow = im.dataset.par === "flow";
+        const { flow, z, k } = parInfo[i];
         if (narrow && !flow) return;
         const r = parRects[i];
         if (r.bottom < -200 || r.top > vh + 200) return;
-        const z = parseFloat(getComputedStyle(im).getPropertyValue("--z")) || 1.04;
-        const k = flow ? 1 : parseFloat(im.dataset.par || "0.5");
         const p = clamp((r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2), -1, 1);
         const maxShift = ((z - 1) / 2) * r.height * 0.9; // 枠の外が見えない範囲
-        im.style.setProperty("--py", `${(-p * maxShift * (flow ? 1 : Math.min(1, k))).toFixed(1)}px`);
+        im.style.setProperty("--py", `${(-p * maxShift * k).toFixed(1)}px`);
       });
       // 4. 留める場面: 重なった写真が 1 枚ずつ入れ替わる
       stacks.forEach((s, i) => {
@@ -196,8 +200,8 @@ export default function Motion() {
         s.ph.forEach((el, j) => {
           const t = j < n - 1 ? clamp(u - j) : 0;
           const d = Math.min(2, Math.max(0, j - u));
-          el.style.setProperty("--t", t.toFixed(3));
-          el.style.setProperty("--d", d.toFixed(3));
+          // 直接 transform に書く（var() の計算を挟まない。写真は左へ送り出して舞台の外に出すので、opacity は動かさない）
+          el.style.transform = `translate3d(${(t * -118).toFixed(2)}%, ${(t * -5).toFixed(2)}%, 0) rotate(${(t * -10 + j * 0.7 - 1).toFixed(2)}deg) scale(${(1 - d * 0.025).toFixed(4)})`;
         });
       });
       // 2. 読み進みの印
@@ -251,8 +255,7 @@ export default function Motion() {
       pars.forEach((im) => im.style.removeProperty("--py"));
       stacks.forEach((s) =>
         s.ph.forEach((el) => {
-          el.style.removeProperty("--t");
-          el.style.removeProperty("--d");
+          el.style.removeProperty("transform");
         }),
       );
       cover?.style.removeProperty("--hy");
