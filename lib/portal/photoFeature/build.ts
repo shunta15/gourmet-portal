@@ -20,6 +20,8 @@ export type PfPhoto = {
   cap: number;
   /** 縦長か（ar < 0.95） */
   port: boolean;
+  /** 元の高さ（CSS px 相当。分からなければ 0）。枠を縦に伸ばして切り抜くとき、元の 1.3 倍を超えないための上限に使う */
+  nh: number;
   alt: string;
 };
 
@@ -32,21 +34,27 @@ export type PfView = {
   cols: string[];
   /** 項目の小見出し（あれば） */
   heading: string;
-  paras: string[];
+  /** 本文の最初の 2〜3 文（90〜120 字ほど）。残りは rest（「続きを読む」で開く） */
+  head: string;
+  rest: string[];
   photos: PfPhoto[];
 };
+
+/** 本文を「最初の数文」と「残り」に分けたもの（文字は変えない） */
+export type PfText = { head: string; rest: string[] };
 
 export type PfBlock =
   | { kind: "view"; view: PfView; variant: "A" | "B" | "C" | "D" | "E" }
   | { kind: "band"; photos: PfPhoto[]; no: number }
-  | { kind: "spread"; a: PfView; b: PfView };
+  /** 縦長の写真の視点（a）と、次の視点（b）の写真を、高さをそろえて横に接して並べる（縦長の写真の横のすき間を作らない） */
+  | { kind: "pair"; a: PfView; b: PfView };
 
 export type PfData = {
   id: string;
   /** 題の縦書きの列。em は強調する字の範囲（全体の何字めから何字めまで） */
   title: { cols: string[]; per: number; em: [number, number] | null; plain: string };
   subCols: string[];
-  lede: string[];
+  lede: PfText;
   hero: PfPhoto | null;
   heroAlt: string;
   shop: { id: string; name: string; cuisine: string; area: string } | null;
@@ -54,7 +62,7 @@ export type PfData = {
   info: [string, string][];
   mapsUrl: string;
   quote: string[];
-  closing: string[];
+  closing: PfText;
   /** 使った写真の枚数（主役 + 視点 + 写真だけの面） */
   photoCount: number;
   /** そのうち、店ページから足した枚数 */
@@ -67,7 +75,7 @@ export function toPf(p: Photo, alt: string): PfPhoto {
   const known = p.w > 0 && p.h > 0;
   const raw = known ? p.w / p.h : 4 / 3;
   const ar = Math.min(1.9, Math.max(0.72, raw));
-  return { src: p.src, ar: ROUND(ar), cap: known ? Math.round(p.w * 1.3) : 1170, port: ar < 0.95, alt };
+  return { src: p.src, ar: ROUND(ar), cap: known ? Math.round(p.w * 1.3) : 1170, port: ar < 0.95, nh: known ? p.h : 0, alt };
 }
 
 /* ───────── 縦書きの列に割る ───────── */
@@ -222,6 +230,39 @@ export function paragraphs(text: string, target = 110): string[] {
   return out;
 }
 
+/**
+ * 本文を「最初の数文（90 字を超えたところで切る。1 文が長ければその文まで）」と「残りの段落」に分ける。文の切れ目（。！？）でだけ切り、字は変えない。
+ * 残りは「続きを読む」（details）で開く。全文が 90 字に満たなければ rest は空。
+ */
+export function splitExcerpt(text: string, min = 90, max = 150): PfText {
+  const paras = paragraphs(text, 100000);
+  const sents: { t: string; end: boolean }[] = [];
+  for (const para of paras) {
+    const ss = para.split(/(?<=[。！？])(?![」』）])/).filter((x) => x.trim());
+    ss.forEach((t, i) => sents.push({ t, end: i === ss.length - 1 }));
+  }
+  let head = "";
+  let k = 0;
+  while (k < sents.length) {
+    if (head.length >= min) break;
+    if (head.length >= 60 && head.length + sents[k].t.length > max) break;
+    head += sents[k].t;
+    k++;
+  }
+  if (k >= sents.length) return { head, rest: [] };
+  // 残り: 元の段落の切れ目を残してから、読みやすい長さに割る
+  let restText = "";
+  for (let i = k; i < sents.length; i++) restText += sents[i].t + (sents[i].end && i < sents.length - 1 ? "\n" : "");
+  return { head, rest: paragraphs(restText, 110) };
+}
+
+/** 写真の並び（横に接して並べる）の、縦横比の合計と、幅の上限（どの写真も元の幅の 1.3 倍を超えない幅） */
+export function rowOf(photos: PfPhoto[]): { fr: string; cap: number; ar: number } {
+  const sum = photos.reduce((a, p) => a + p.ar, 0);
+  const cap = Math.min(...photos.map((p) => (p.cap * sum) / p.ar));
+  return { fr: photos.map((p) => `${p.ar}fr`).join(" "), cap: Math.round(cap + 6 * (photos.length - 1)), ar: ROUND(sum) };
+}
+
 /* ───────── 店の案内・行き先 ───────── */
 
 const blank = (v: string | undefined | null) => !v || !v.trim() || /^[-—－\s]+$/.test(v);
@@ -281,11 +322,11 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     name: r.name,
     cols: tateCols(r.name, 11, 3),
     heading: r.heading ? stripTabelogScore(r.heading) : "",
-    paras: paragraphs(stripTabelogScore(r.desc)),
+    ...splitExcerpt(stripTabelogScore(r.desc)),
     photos: vPhotos[i].map((p) => toPf(p, alt(r.name))),
   }));
 
-  // 足りない写真が 1 枚だけのときは、本文のいちばん長い視点に足す（2 枚あれば「写真だけの面」にする）
+  // 足りない写真が 1 枚だけのときは、本文のいちばん長い視点に足して横に並べる（2 枚以上あれば「写真だけの面」にする）
   let bands: Photo[][] = [];
   if (pool.length === 1 && views.length > 0) {
     let at = -1;
@@ -304,24 +345,28 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     bands = bands.filter((b) => b.length > 0);
   }
 
-  // 並べる
+  // 並べる（縦長の写真 1 枚の視点は、次の視点の写真と横に接して並べる。写真だけの面は、視点の真ん中あたりと最後に）
   const n = views.length;
   const blocks: PfBlock[] = [];
   const bandAfter = new Map<number, Photo[]>();
   if (bands.length >= 1) bandAfter.set(Math.max(0, Math.ceil(n / 2) - 1), bands[0]);
   if (bands.length >= 2) bandAfter.set(n - 1, bands[1]);
-  // 写真だけの面が作れない（店ページの写真が足りない）ときは、視点 3・4 の写真を 2 枚の「写真の面」にまとめる
-  const spreadAt = bands.length === 0 && n >= 4 && views[2].photos.length > 0 && views[3].photos.length > 0 ? 2 : -1;
   let bandNo = 0;
+  let vi = 0;
   for (let i = 0; i < n; i++) {
-    if (i === spreadAt) {
-      blocks.push({ kind: "spread", a: views[i], b: views[i + 1] });
+    const v = views[i];
+    const nx = views[i + 1];
+    let last = i;
+    if (v.photos.length === 1 && v.photos[0].port && nx && nx.photos.length > 0 && nx.photos.length <= 2 && !bandAfter.has(i)) {
+      blocks.push({ kind: "pair", a: v, b: nx });
+      last = i + 1;
       i++;
-      continue;
+    } else {
+      blocks.push({ kind: "view", view: v, variant: VARIANTS[vi % VARIANTS.length] });
     }
-    blocks.push({ kind: "view", view: views[i], variant: VARIANTS[i % VARIANTS.length] });
-    const b = bandAfter.get(i);
-    if (b) blocks.push({ kind: "band", photos: b.map((p) => toPf(p, alt("店の写真"))), no: ++bandNo });
+    vi++;
+    const bp = bandAfter.get(last);
+    if (bp) blocks.push({ kind: "band", photos: bp.map((p) => toPf(p, alt("店の写真"))), no: ++bandNo });
   }
 
   const sub = A.subtitle ? stripTabelogScore(A.subtitle) : "";
@@ -329,7 +374,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     id: A.id,
     title: titleColumns(A.titleHTML, A.title),
     subCols: sub ? tateCols(sub, 12, 2) : [],
-    lede: paragraphs(stripTabelogScore(A.lede), 120),
+    lede: splitExcerpt(stripTabelogScore(A.lede)),
     hero: c.hero ? toPf(c.hero, alt("主役の写真")) : null,
     heroAlt: alt("主役の写真"),
     shop: store ? { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area } : null,
@@ -337,7 +382,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     info: infoRows(store),
     mapsUrl: mapsUrlOf(A),
     quote: A.quote ? paragraphs(stripTabelogScore(A.quote), 90) : [],
-    closing: A.closing ? paragraphs(stripTabelogScore(A.closing), 120) : [],
+    closing: A.closing ? splitExcerpt(stripTabelogScore(A.closing)) : { head: "", rest: [] },
     photoCount: used,
     fromShop,
   };

@@ -5,7 +5,7 @@ import { getFeatureArticleById } from "@/lib/db/features";
 import { getRestaurantById } from "@/lib/db/restaurants";
 import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import { isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
-import { SAMPLE_LINKS } from "@/lib/portal/noren/nav";
+import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
 
 // 写真が主役の特集記事（試作）。店 1 軒の記事（isSingleShopFeature）だけ。プレビュー・ローカル専用（門は ../layout.tsx）。
@@ -29,7 +29,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   return (
     <PhotoFeaturePage
       data={data}
-      shopHref={store ? `${SAMPLE_LINKS.shopBase}/${store.id}` : null}
+      shopHref={store ? `${LIVE_LINKS.shopBase}/${store.id}` : null}
       listHref="/feature"
       topHref="/proto-gourmet/photo-feature"
     />
