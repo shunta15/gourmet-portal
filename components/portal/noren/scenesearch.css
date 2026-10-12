@@ -296,3 +296,37 @@
 .vMp-leaf--e .leaflet-control-zoom a{color:#25406b}
 /* 細かい層（初期表示のまわり）の縁を、四辺の 9% でぼかして、粗い層へなじませる（CSS の mask。SVG の mask は重かったので使わない） */
 .vMp-ill--core{-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+
+/* ---------- f「古地図」・g「夜の灯り」・h「見下ろす」（ShopMap.tsx）。ピン・札・寄せ方・落ちる動きは a と同じ（上の a の規則）。地図の絵はあらかじめ画像（WebP）にしたものを敷く ---------- */
+.vMp-leaf--f{background:#e7d9b3}
+.vMp-leaf--g{background:#1a1612}
+.vMp-leaf--h{background:#ece6d5}
+.vMp-leaf--f .leaflet-control-attribution,.vMp-leaf--g .leaflet-control-attribution{display:none}
+.vMp-leaf--f .leaflet-control-zoom a{color:#4a3a22;background:#fbf5e4;border-color:#b9a77a}
+.vMp-leaf--g .leaflet-control-zoom a{color:#efe4c9;background:#2a231c;border-color:#4a3f33}
+.vMp-leaf--f .vMp-credit{background:rgba(251,245,228,.78);color:#4a3a22}
+.vMp-leaf--g .vMp-credit{background:rgba(20,16,12,.72);color:#cbbd9f}
+.vMp-leaf--f .vMp-circ,.vMp-leaf--g .vMp-circ,.vMp-leaf--h .vMp-circ{background:var(--shu)}
+.vMp-leaf--f .vMp-circ span{color:#2a251d;text-shadow:0 0 5px #fbf5e4,0 0 2px #fbf5e4}
+.vMp-leaf--g .vMp-circ span{color:#efe4c9;text-shadow:0 0 6px #000,0 0 2px #000}
+.vMp-mk--town{text-align:center}
+/* f: 町の名前は、縦書きの短冊（白い札に筆の字） */
+.vMp-town--f{display:inline-block;writing-mode:vertical-rl;text-orientation:upright;padding:7px 4px;background:#fbf5e4;border:1px solid #2a251d;font:700 15px/1.1 var(--f-brush,var(--f-min));letter-spacing:.12em;color:#221d16;box-shadow:1px 2px 0 rgba(42,37,29,.28);opacity:.97}
+/* g: 町の名前は生成りの字。店の朱のピンが落ちた所に、提灯のような灯りのにじみが広がる（opacity と transform だけ） */
+.vMp-town--g{font-family:var(--f-brush);font-size:18px;letter-spacing:.1em;color:#efe4c9;opacity:.92;text-shadow:0 0 6px #000,0 0 3px #000,0 0 12px rgba(255,190,100,.3)}
+.vMp-glow{position:absolute;left:calc(var(--gx) - 34px);top:calc(var(--gy) - 34px);width:68px;height:68px;border-radius:50%;background:radial-gradient(circle,rgba(255,200,120,.5) 0%,rgba(255,160,70,.2) 42%,rgba(255,140,50,0) 70%);pointer-events:none;opacity:0;animation:vMpGlow 1.7s ease-out both}
+@keyframes vMpGlow{0%{opacity:0;transform:scale(.25)}35%{opacity:.95}100%{opacity:.42;transform:scale(1)}}
+/* h: 地図の面を奥へ倒して、斜め上から見下ろす。ピン・札は面に対して立つ（倒した分を打ち消す）。奥ほど小さく（遠近）・薄く（霞） */
+.vMp-leaf--h{position:relative;overflow:hidden;perspective:1100px}
+.vMp-t-plane{position:absolute;left:0;top:0;transform-style:preserve-3d;will-change:transform}
+.vMp-t-img{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.vMp-t-anchor{position:absolute;width:0;height:0;transform-style:preserve-3d}
+.vMp-t-stand{position:absolute;display:block;padding:0;margin:0;border:0;background:none;cursor:pointer;color:inherit;font:inherit;text-align:left;transform-style:preserve-3d}
+.vMp-t-haze{position:absolute;left:0;right:0;top:0;height:44%;z-index:3;pointer-events:none;background:linear-gradient(to bottom,#ece6d5 0%,rgba(236,230,213,.82) 34%,rgba(236,230,213,0) 100%)}
+.vMp-t-pop{position:absolute;z-index:5;width:200px;transform:translate(-50%,-100%);background:var(--paper-hi);color:var(--ink);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+.vMp-t-pop.is-below{transform:translate(-50%,0)}
+.vMp-leaf--h .vMp-credit{z-index:6}
+.vMp-fallback{display:inline;font:400 12px/1.7 var(--f-sans);color:var(--kinari-3)}
+@media (prefers-reduced-motion:reduce){
+  .vMp-glow{animation:none!important;opacity:.42}
+}

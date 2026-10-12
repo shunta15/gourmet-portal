@@ -1,0 +1,222 @@
+{
+ "e/osaka/overview": {
+  "style": "e",
+  "key": "osaka",
+  "kind": "overview",
+  "file": "svg/e/osaka.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "svgKB": 383,
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "e/hyogo/overview": {
+  "style": "e",
+  "key": "hyogo",
+  "kind": "overview",
+  "file": "svg/e/hyogo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "svgKB": 299,
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "f/osaka/overview": {
+  "style": "f",
+  "key": "osaka",
+  "kind": "overview",
+  "file": "svg/f/osaka.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "svgKB": 472,
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "f/hyogo/overview": {
+  "style": "f",
+  "key": "hyogo",
+  "kind": "overview",
+  "file": "svg/f/hyogo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "svgKB": 370,
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "g/osaka/overview": {
+  "style": "g",
+  "key": "osaka",
+  "kind": "overview",
+  "file": "svg/g/osaka.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "svgKB": 351,
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "g/hyogo/overview": {
+  "style": "g",
+  "key": "hyogo",
+  "kind": "overview",
+  "file": "svg/g/hyogo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "svgKB": 303,
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "h/osaka/overview": {
+  "style": "h",
+  "key": "osaka",
+  "kind": "overview",
+  "file": "svg/h/osaka.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "svgKB": 257,
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "h/hyogo/overview": {
+  "style": "h",
+  "key": "hyogo",
+  "kind": "overview",
+  "file": "svg/h/hyogo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "svgKB": 241,
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ }
+}

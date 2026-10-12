@@ -11,6 +11,7 @@ import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
 import type { MapMode, MapPt } from "./ShopMap";
+import { usesEPicture } from "@/lib/portal/noren/illustStyle";
 import "./opensearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
@@ -119,9 +120,8 @@ function ResultsMap({
             : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
           : pts.length === 0
             ? "この条件の店には、地図に出せる位置の情報がありません。"
-            : mode === "e" && pts.length > 12
-              ? `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。店が多く集まる所を大きく見せています。地図を動かす・縮めると、ほかの店も見えます。`
-              : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
+            : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。${mode === "h" && !usesEPicture(mode, regionKey) ? "見下ろした地図は、拡大・移動はできません。" : ""}`}
+        {usesEPicture(mode, regionKey) ? <small className="vMp-fallback"> この{nation ? "全国" : "地域"}は e の絵を出しています。</small> : null}
       </p>
       {mode === "d" && <p className="vMp-illust-warn">この地図は雰囲気を見るための絵です。店の位置は、おおよその関係で置いています。</p>}
     </div>
@@ -172,7 +172,7 @@ export default function NorenSearch({
   const spTab = sp.get("tab");
   // 地図の見た目: 既定は a（絵図）。?map=b（線だけの地図）は、本番でないときだけ
   const mapParam = sp.get("map");
-  const mapMode: MapMode = allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d") ? mapParam : "e";
+  const mapMode: MapMode = allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h") ? mapParam : "e";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);
@@ -264,7 +264,7 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
-    if (allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d")) params.set("map", mapParam);
+    if (allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h")) params.set("map", mapParam);
     if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };

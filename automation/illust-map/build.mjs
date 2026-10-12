@@ -34,10 +34,14 @@ require.extensions[".ts"] = function (module, filename) {
 };
 const { RESTAURANTS, REGIONS } = require(path.join(ROOT, "lib/data.ts"));
 const { GEO } = require(path.join(ROOT, "lib/geo.ts"));
-const { densestFit } = require(path.join(ROOT, "lib/portal/noren/mapFit.ts")); // 画面（ShopMap.tsx）と同じ「初期表示で寄せる範囲」の決め方
+const { quantFit } = require(path.join(ROOT, "lib/portal/noren/mapFit.ts")); // 画面（ShopMap.tsx）と同じ「初期表示で寄せる範囲」の決め方（a と同じ。外れ値を除いた中央の約 88%）
 
 // 位置のある店が 1 軒も無い地域の、地図の中心（県庁所在地のおおよその位置。店のピンは出ない）
 const FALLBACK_CENTER = { wakayama: [34.2261, 135.1675] };
+
+// 描き方: e 手描き風（既定）/ f 古地図 / g 夜の灯り / h 見下ろす（平らな色面。画面側で倒す）。 --style=f のように指定する
+const STYLE = (process.argv.find((a) => a.startsWith("--style=")) ?? "--style=e").slice(8);
+const GROUND = { e: "#f4eedc", f: "#e7d9b3", g: "#1a1612", h: "#ece6d5" }[STYLE];
 
 // ---- 小さな道具 ----
 function seeded(seed) {
@@ -155,7 +159,7 @@ function planLayers(key, pts) {
   } else {
     const lats = pts.map((p) => p.lat), lngs = pts.map((p) => p.lng);
     A = sane({ minLat: Math.min(...lats), maxLat: Math.max(...lats), minLng: Math.min(...lngs), maxLng: Math.max(...lngs) });
-    I = pts.length > 12 ? sane(densestFit(pts)) : A;
+    I = pts.length > 12 ? sane(quantFit(pts)) : A;
   }
   // 初期表示のズーム Zi（寄せる範囲 I を箱に収めたとき。0.25 刻みで切り下げ。店が 1 軒なら 13）
   const fitW0 = worldX(I.maxLng, 0) - worldX(I.minLng, 0), fitH0 = worldY(I.minLat, 0) - worldY(I.maxLat, 0);
@@ -357,12 +361,13 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   // ---- 描き起こし ----
   const rnd = seeded(key);
   const parts = [];
-  parts.push(`<rect width="${W}" height="${H}" fill="#f4eedc"/>`);
-  parts.push(`<rect width="${W}" height="${H}" fill="url(#hatch)"/>`);
+  parts.push(`<rect width="${W}" height="${H}" fill="${GROUND}"/>`);
+  if (STYLE === "e") parts.push(`<rect width="${W}" height="${H}" fill="url(#hatch)"/>`);
+  if (STYLE === "f") parts.push(`<rect width="${W}" height="${H}" filter="url(#paper)"/>`);
 
   // 地のにじみ（淡い緑・黄みの生成り）。水の上は後で水が覆う
   const blots = [];
-  for (let i = 0; i < 26; i++) {
+  for (let i = 0; i < (STYLE === "h" ? 0 : STYLE === "e" ? 26 : 18); i++) {
     const bx = rnd() * W, by = rnd() * H, rx = px(60 + rnd() * 120), ry = rx * (0.5 + rnd() * 0.5);
     const c = i % 3 === 0 ? "url(#gA)" : i % 3 === 1 ? "url(#gB)" : "url(#gC)";
     blots.push(`<ellipse cx="${r1(bx)}" cy="${r1(by)}" rx="${r1(rx)}" ry="${r1(ry)}" fill="${c}" transform="rotate(${r1(rnd() * 180)} ${r1(bx)} ${r1(by)})"/>`);
@@ -390,11 +395,12 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     }
     if (d) waterD.push(d);
   }
-  parts.push(`<g fill="#bfe0f0" stroke="#bfe0f0" stroke-width="${r1(px(1.4))}" stroke-linejoin="round" fill-rule="evenodd">${waterD.map((d) => `<path d="${d}"/>`).join("")}</g>`);
+  const WFILL = { e: "#bfe0f0", f: "#a9bdd6", g: "#0e1a33", h: "#a6d4ec" }[STYLE];
+  parts.push(`<g fill="${WFILL}" stroke="${WFILL}" stroke-width="${r1(px(1.4))}" stroke-linejoin="round" fill-rule="evenodd">${waterD.map((d) => `<path d="${d}"/>`).join("")}</g>`);
   // 水の深み（ところどころの濃い水色）と波の印
   const deep = [], waves = [];
   let tries = 0;
-  while ((deep.length < 16 || waves.length < 70) && tries++ < 6000) {
+  while (STYLE !== "h" && (deep.length < 16 || waves.length < 70) && tries++ < 6000) {
     const x = rnd() * W, y = rnd() * H;
     const gx = Math.floor(x / CELL), gy = Math.floor(y / CELL);
     if (gx < 4 || gy < 4 || gx >= GW - 4 || gy >= GH - 4) continue;
@@ -408,7 +414,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   }
   // 小さな舟（広い水面のところどころ。位置は座標から決まる）
   const boats = [];
-  for (let t2 = 0; t2 < 4000 && boats.length < 5; t2++) {
+  for (let t2 = 0; t2 < 4000 && boats.length < (STYLE === "e" ? 5 : 0); t2++) {
     const x = rnd() * W, y = rnd() * H;
     const gx = Math.floor(x / CELL), gy = Math.floor(y / CELL);
     const R = Math.ceil(px(34) / CELL);
@@ -419,21 +425,34 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     if (boats.some((b) => Math.hypot(b.x - x, b.y - y) < px(160))) continue;
     boats.push({ x, y, id: BOAT_IDS[boats.length % BOAT_IDS.length], sc: px(1) * (1.2 + rnd() * 0.5) });
   }
-  parts.push(`<g fill="#7fbfe4" opacity=".35">${deep.join("")}</g>`);
-  parts.push(`<g fill="none" stroke="#ffffff" stroke-width="${r1(px(1))}" stroke-linecap="round" opacity=".9">${waves.join("")}</g>`);
-  parts.push(`<g>${boats.map((b) => `<use href="#${b.id}" transform="translate(${r1(b.x)} ${r1(b.y)}) scale(${r1(b.sc * 100) / 100})"/>`).join("")}</g>`);
+  if (STYLE === "e") {
+    parts.push(`<g fill="#7fbfe4" opacity=".35">${deep.join("")}</g>`);
+    parts.push(`<g fill="none" stroke="#ffffff" stroke-width="${r1(px(1))}" stroke-linecap="round" opacity=".9">${waves.join("")}</g>`);
+    parts.push(`<g>${boats.map((b) => `<use href="#${b.id}" transform="translate(${r1(b.x)} ${r1(b.y)}) scale(${r1(b.sc * 100) / 100})"/>`).join("")}</g>`);
+  } else if (STYLE === "f") {
+    // 古地図: 海の波の線（藍の墨）
+    parts.push(`<g fill="none" stroke="#3a5a90" stroke-width="${r1(px(1.15))}" stroke-linecap="round" opacity=".62">${waves.join("")}</g>`);
+  } else if (STYLE === "g") {
+    parts.push(`<g fill="#070f22" opacity=".55">${deep.join("")}</g>`);
+    parts.push(`<g fill="none" stroke="#35568d" stroke-width="${r1(px(0.9))}" stroke-linecap="round" opacity=".38">${waves.join("")}</g>`);
+  }
   // 岸: 白いにじみ + 細い濃い水色の線
   if (rimD.length) {
-    parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#ffffff" stroke-width="${r1(px(4.2))}" opacity=".65"/><use href="#rim" stroke="#6fb2d8" stroke-width="${r1(px(1.1))}" opacity=".9"/></g>`);
+    if (STYLE === "e") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#ffffff" stroke-width="${r1(px(4.2))}" opacity=".65"/><use href="#rim" stroke="#6fb2d8" stroke-width="${r1(px(1.1))}" opacity=".9"/></g>`);
+    // 古地図: 岸が濃く、沖へ薄い藍のぼかし（水の面の中だけ）+ 墨の細い岸線
+    if (STYLE === "f") parts.push(`<g clip-path="url(#wclip)"><use href="#rim" fill="none" stroke="#2a4b88" stroke-width="${r1(px(22))}" stroke-linejoin="round" stroke-linecap="round" opacity=".62" filter="url(#blurW)"/></g><use href="#rim" fill="none" stroke="#2a2d44" stroke-width="${r1(px(1.3))}" stroke-linejoin="round" stroke-linecap="round" opacity=".85"/>`);
+    if (STYLE === "g") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#1d3770" stroke-width="${r1(px(9))}" opacity=".55" filter="url(#blurG)"/><use href="#rim" stroke="#2f5088" stroke-width="${r1(px(1.0))}" opacity=".7"/></g>`);
+    if (STYLE === "h") parts.push(`<g fill="none" stroke-linejoin="round" stroke-linecap="round"><use href="#rim" stroke="#8cc1df" stroke-width="${r1(px(1.8))}" opacity=".95"/></g>`);
   }
   // 川
   if (rivers.length) {
     const rd = rivers.filter((l) => lenOf(l) > px(110)).map((l) => smoothPath(simplify(l.map(dp), px(1.6)), false, rInt)).filter(Boolean).join("");
-    parts.push(`<path d="${rd}" fill="none" stroke="#b9dcee" stroke-width="${r1(px(2))}" stroke-linecap="round" stroke-linejoin="round"/>`);
+    const RC = { e: ["#b9dcee", 2], f: ["#41629c", 2.1], g: ["#1a3060", 2.0], h: ["#a6d4ec", 2.6] }[STYLE];
+    parts.push(`<path d="${rd}" fill="none" stroke="${RC[0]}" stroke-width="${r1(px(RC[1]))}" stroke-linecap="round" stroke-linejoin="round"${STYLE === "f" ? ' opacity=".8"' : ""}/>`);
   }
 
   if (waterStores.length) {
-    parts.push(`<g fill="#f4eedc" stroke="#ffffff" stroke-width="${r1(px(2.2))}">${waterStores.map((w) => `<ellipse cx="${r1(w.u[0])}" cy="${r1(w.u[1])}" rx="${r1(px(20))}" ry="${r1(px(14))}"/>`).join("")}</g>`);
+    parts.push(`<g fill="${GROUND}" stroke="${STYLE === "e" ? "#ffffff" : "none"}" stroke-width="${r1(px(2.2))}">${waterStores.map((w) => `<ellipse cx="${r1(w.u[0])}" cy="${r1(w.u[1])}" rx="${r1(px(20))}" ry="${r1(px(14))}"/>`).join("")}</g>`);
     for (const w of waterStores) mark(w.u[0], w.u[1], px(24), 4);
   }
 
@@ -452,12 +471,27 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   const widths = [...byWidth.keys()].sort((a, b) => a - b);
   const defs2 = widths.map((w, i) => `<path id="r${i}" d="${byWidth.get(w)}"/>`).join("");
   let roadSvg = "";
-  widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#e2d8bb" stroke-width="${r1(px(w + 2.2))}"/>`));
-  widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#fffefa" stroke-width="${r1(px(w))}"/>`));
+  const tier = (w) => (w >= 8 ? 3 : w >= 6 ? 2 : w >= 4.5 ? 1 : 0);
+  if (STYLE === "e") {
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#e2d8bb" stroke-width="${r1(px(w + 2.2))}"/>`));
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#fffefa" stroke-width="${r1(px(w))}"/>`));
+  } else if (STYLE === "f") {
+    // 墨の筆の線: 太い道ほど濃く太い
+    const W2 = [1.15, 1.9, 2.7, 3.8], C2 = ["#5f5748", "#4a4234", "#322c23", "#1c1914"], O2 = [0.82, 0.9, 0.95, 1];
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="${C2[tier(w)]}" stroke-width="${r1(px(W2[tier(w)]))}" opacity="${O2[tier(w)]}"/>`));
+  } else if (STYLE === "g") {
+    const W2 = [0.9, 1.3, 2.0, 2.9], C2 = ["#76694f", "#a09070", "#dcc89c", "#ffe6ae"], O2 = [0.6, 0.75, 0.9, 1];
+    widths.forEach((w, i) => { if (tier(w) >= 2) roadSvg += `<use href="#r${i}" stroke="#ffbf5e" stroke-width="${r1(px(W2[tier(w)] + 5.5))}" opacity="${tier(w) === 3 ? 0.3 : 0.2}" filter="url(#blurG)"/>`; });
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="${C2[tier(w)]}" stroke-width="${r1(px(W2[tier(w)]))}" opacity="${O2[tier(w)]}"/>`));
+  } else {
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#d9d1ba" stroke-width="${r1(px(w * 0.72 + 1.6))}"/>`));
+    widths.forEach((w, i) => (roadSvg += `<use href="#r${i}" stroke="#ffffff" stroke-width="${r1(px(w * 0.72))}"/>`));
+  }
   // 鉄道: 細い点線
   const railD = rails.filter((l) => lenOf(l) > px(30)).map((l) => smoothPath(simplify(l.map(dp), px(1.4)), false, rInt)).filter(Boolean).join("");
-  const railSvg = railD ? `<use href="#rail" fill="none" stroke="#cbc4b0" stroke-width="${r1(px(2.2))}" stroke-linecap="butt" opacity=".8"/><use href="#rail" fill="none" stroke="#fffdf6" stroke-width="${r1(px(1.2))}" stroke-dasharray="${r1(px(6))} ${r1(px(5))}"/>` : "";
-  parts.push(`<g fill="none" stroke-linecap="round" stroke-linejoin="round">${roadSvg}</g>`);
+  const RL = { e: ["#cbc4b0", "#fffdf6"], f: ["#4a4234", "#e7d9b3"], g: ["#5a5240", "#2a241c"], h: ["#c5bfae", "#ffffff"] }[STYLE];
+  const railSvg = railD ? `<use href="#rail" fill="none" stroke="${RL[0]}" stroke-width="${r1(px(STYLE === "f" ? 1.0 : 2.2))}" stroke-linecap="butt" opacity="${STYLE === "f" ? 0.6 : 0.8}"/>${STYLE === "f" ? "" : `<use href="#rail" fill="none" stroke="${RL[1]}" stroke-width="${r1(px(1.2))}" stroke-dasharray="${r1(px(6))} ${r1(px(5))}"/>`}` : "";
+  parts.push(`<g fill="none" stroke-linecap="round" stroke-linejoin="round"${STYLE === "f" ? ' filter="url(#brush)"' : ""}>${roadSvg}</g>`);
   if (railSvg) parts.push(`<g>${railSvg}</g>`);
 
   // ---- 木と家 ----
@@ -465,6 +499,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   const treeScale = (heightPx) => px(heightPx) / 38;
   const inFit = (x, y) => x >= fitMinU[0] - px(120) && x <= fitMaxU[0] + px(120) && y >= fitMinU[1] - px(120) && y <= fitMaxU[1] + px(120);
   const areaPx = (W * H) * f * f;
+  const STYLED = STYLE !== "e";
   // 木: かたまり（公園・林）と、ぽつぽつ
   const decorK = (layer.kind === 'overview' && hasCore ? 0.45 : 1) / lod;
   const nTrees = Math.min(170, Math.round(((areaPx / 377000) * 26 + 46) * decorK));
@@ -472,7 +507,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   for (let i = 0; i < 18; i++) clusters.push([rnd() * W, rnd() * H, px(28 + rnd() * 48)]);
   parts[parkWashIdx] = `<g>${clusters.slice(0, 12).map((c) => `<ellipse cx="${r1(c[0])}" cy="${r1(c[1])}" rx="${r1(c[2] * 1.5)}" ry="${r1(c[2] * 1.1)}" fill="url(#gA)" opacity=".9"/>`).join("")}</g>`;
   let placedTrees = 0, guard = 0;
-  while (placedTrees < nTrees && guard++ < nTrees * 40) {
+  while (!STYLED && placedTrees < nTrees && guard++ < nTrees * 40) {
     let x, y;
     if (rnd() < 0.4) {
       const c = clusters[Math.floor(rnd() * clusters.length)];
@@ -504,7 +539,7 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
     }
   }
   let placedH = 0; guard = 0;
-  while (placedH < nHouseGroups * 3 && guard++ < nHouseGroups * 80 && samples.length) {
+  while (!STYLED && placedH < nHouseGroups * 3 && guard++ < nHouseGroups * 80 && samples.length) {
     const sm = samples[Math.floor(rnd() * samples.length)];
     const side = rnd() < 0.5 ? 1 : -1;
     const nx = -sm.uy, ny = sm.ux;
@@ -528,20 +563,83 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   }
   decor.sort((a, b) => a.y - b.y);
   parts.push(`<g>${decor.map((d) => d.svg).join("")}</g>`);
+  const topLayer = layer.kind === "core" || !pl.core;
+  if (STYLE === "f" && topLayer) {
+    // 古地図の方位の印（初期表示の左下）
+    const cx = view.x0 + px(64), cy = view.y1 - px(78);
+    parts.push(`<g transform="translate(${r1(cx)} ${r1(cy)}) scale(${r1(px(1) * 100) / 100})" stroke="#2a251d" fill="none" stroke-width="1.1" opacity=".88"><circle r="27"/><circle r="22.5" stroke-width=".55"/><path d="M0 -42L6.5 -6.5L0 0L-6.5 -6.5Z" fill="#2a251d"/><path d="M0 42L5.5 6L0 0L-5.5 6Z"/><path d="M-42 0L-6.5 -5.5L0 0L-6.5 5.5Z"/><path d="M42 0L6.5 -5.5L0 0L6.5 5.5Z"/><text y="-48" text-anchor="middle" font-size="15" font-family="Hiragino Mincho ProN, Yu Mincho, serif" fill="#2a251d" stroke="none">北</text></g>`);
+  }
+  if (STYLE === "g") {
+    // 夜: 幹線に沿った街灯の小さな灯り
+    const lamps = [];
+    for (const r of picked) {
+      if (r.rank < 4.4) continue;
+      let acc = 0;
+      for (let i = 1; i < r.pts.length; i++) {
+        const [ax, ay] = r.pts[i - 1], [bx, by] = r.pts[i];
+        const l = Math.hypot(bx - ax, by - ay);
+        if (l === 0) continue;
+        for (let d = (px(15) - acc) % px(15); d < l; d += px(15)) if (rnd() < 0.72) lamps.push(`<circle cx="${r1(ax + ((bx - ax) * d) / l)}" cy="${r1(ay + ((by - ay) * d) / l)}" r="${r1(px(0.85 + rnd() * 0.5))}"/>`);
+        acc = (acc + l) % px(15);
+      }
+    }
+    parts.push(`<g fill="#ffe3a0" opacity=".85">${lamps.slice(0, 1800).join("")}</g>`);
+  }
+  if (STYLE === "h") {
+    // 見下ろす: 公園・街区の淡い色の面と、道に沿った建物の四角
+    const patch = [];
+    for (let i = 0; i < 16; i++) {
+      const cx = rnd() * W, cy = rnd() * H, rr = px(40 + rnd() * 90);
+      patch.push(`<ellipse cx="${r1(cx)}" cy="${r1(cy)}" rx="${r1(rr * 1.5)}" ry="${r1(rr)}" transform="rotate(${r1(rnd() * 180)} ${r1(cx)} ${r1(cy)})" fill="${["#d3e4c1", "#d3e4c1", "#efe0bd", "#dfe4ea", "#f1e6d0"][i % 5]}" opacity=".85"/>`);
+    }
+    parts.splice(parkWashIdx, 1, `<g>${patch.join("")}</g>`);
+    const bl = [];
+    for (const r of picked) {
+      let acc = 0;
+      for (let i = 1; i < r.pts.length; i++) {
+        const [ax, ay] = r.pts[i - 1], [bx, by] = r.pts[i];
+        const l = Math.hypot(bx - ax, by - ay);
+        if (l === 0) continue;
+        const ux = (bx - ax) / l, uy = (by - ay) / l, ang = (Math.atan2(uy, ux) * 180) / Math.PI;
+        for (let d = (px(13) - acc) % px(13); d < l; d += px(13)) {
+          if (rnd() < 0.35) continue;
+          const side = rnd() < 0.5 ? 1 : -1;
+          const bw = px(7 + rnd() * 6), bh = px(5 + rnd() * 5);
+          const off = px(roadWOf(r.rank) / 2 + 3 + 3) + bh / 2;
+          const x = ax + ux * d - uy * side * off, y = ay + uy * d + ux * side * off;
+          if (!freeAt(x, y, px(4), 3)) continue;
+          bl.push(`<rect x="${r1(-bw / 2)}" y="${r1(-bh / 2)}" width="${r1(bw)}" height="${r1(bh)}" transform="translate(${r1(x)} ${r1(y)}) rotate(${r1(ang)})" fill="${["#ddd5bf", "#e4dcc8", "#d6cdb6", "#e9e1cd"][Math.floor(rnd() * 4)]}"/>`);
+        }
+        acc = (acc + l) % px(13);
+      }
+    }
+    parts.push(`<g>${bl.slice(0, 2600).join("")}</g>`);
+  }
 
   // 紙のにじみ: ごく薄い大きなしみ
   const stains = [];
   for (let i = 0; i < 7; i++) stains.push(`<ellipse cx="${r1(rnd() * W)}" cy="${r1(rnd() * H)}" rx="${r1(px(120 + rnd() * 200))}" ry="${r1(px(70 + rnd() * 120))}" fill="url(#gD)"/>`);
-  parts.push(`<g opacity=".5">${stains.join("")}</g>`);
+  if (STYLE === "e") parts.push(`<g opacity=".5">${stains.join("")}</g>`);
 
   const body0 = parts.join("");
   const usedIds = new Set();
   for (const m of body0.matchAll(/href="#([a-z]\d)"/g)) usedIds.add(m[1]);
+  const GR = {
+    e: [["#c8deb2", ".42"], ["#ece3b8", ".4"], ["#d6e6ca", ".4"], ["#d9cfae", ".18"]],
+    f: [["#bda56c", ".30"], ["#f3e8c6", ".55"], ["#b09a62", ".24"], ["#9a7c48", ".16"]],
+    g: [["#3a2b1a", ".55"], ["#1a2438", ".55"], ["#2c2117", ".5"], ["#000000", ".25"]],
+    h: [["#ffffff", "0"], ["#ffffff", "0"], ["#ffffff", "0"], ["#ffffff", "0"]],
+  }[STYLE];
+  const gradDefs = ["gA", "gB", "gC", "gD"].map((id, i) => `<radialGradient id="${id}"><stop offset="0" stop-color="${GR[i][0]}" stop-opacity="${GR[i][1]}"/><stop offset="1" stop-color="${GR[i][0]}" stop-opacity="0"/></radialGradient>`).join("\n");
+  const styleDefs = STYLE === "f"
+    ? `<filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="${r1(f / 2.2 * 100) / 100}" numOctaves="3" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .52  0 0 0 0 .40  0 0 0 0 .22  0 0 0 .5 -.16"/></filter>
+<filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="${r1(f / 1.3 * 100) / 100}" numOctaves="2" seed="9" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="${r1(px(1.6))}" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="${r1(f / 3.2 * 100) / 100}" numOctaves="2" seed="21" result="t2"/><feColorMatrix in="t2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 5 -0.9" result="a"/><feComposite in="d" in2="a" operator="in"/></filter>
+<filter id="blurW" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="${r1(px(11))}"/></filter>
+<clipPath id="wclip">${waterD.map((d) => `<path d="${d}" clip-rule="evenodd"/>`).join("")}</clipPath>`
+    : STYLE === "g" ? `<filter id="blurG" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="${r1(px(2.6))}"/></filter>` : "";
   const defs = `<defs>
-<radialGradient id="gA"><stop offset="0" stop-color="#c8deb2" stop-opacity=".42"/><stop offset="1" stop-color="#bfd9a8" stop-opacity="0"/></radialGradient>
-<radialGradient id="gB"><stop offset="0" stop-color="#ece3b8" stop-opacity=".4"/><stop offset="1" stop-color="#e6dca8" stop-opacity="0"/></radialGradient>
-<radialGradient id="gC"><stop offset="0" stop-color="#d6e6ca" stop-opacity=".4"/><stop offset="1" stop-color="#cfe2c2" stop-opacity="0"/></radialGradient>
-<radialGradient id="gD"><stop offset="0" stop-color="#d9cfae" stop-opacity=".18"/><stop offset="1" stop-color="#d9cfae" stop-opacity="0"/></radialGradient>
+${gradDefs}
+${styleDefs}
 <pattern id="hatch" width="22" height="18" patternUnits="userSpaceOnUse" patternTransform="scale(${r1(1 / f)})"><path d="M2 4h7M13 9h6M5 14h8" stroke="#cdbf9c" stroke-width=".5" stroke-linecap="round" opacity=".35" fill="none"/></pattern>
 ${symbolDefs(new Set([...usedIds]))}
 ${defs2}${rimD.length ? `<path id="rim" d="${rimD.join("")}"/>` : ""}${railD ? `<path id="rail" d="${railD}"/>` : ""}
@@ -667,6 +765,7 @@ export const ILLUST_JAPAN: { bounds: [[number, number], [number, number]]; kb: n
 }
 
 // ---- 実行 ----
+// 使い方: node build.mjs --style=e|f|g|h [地域キー…|japan]  → automation/illust-map/svg/<style>/<キー>[-core].svg と meta.json（画像にするのは raster.mjs）
 const only = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const byRegion = {};
 for (const r of RESTAURANTS) {
@@ -674,45 +773,32 @@ for (const r of RESTAURANTS) {
   (byRegion[r.region] = byRegion[r.region] || []);
   if (g) byRegion[r.region].push({ id: r.id, lat: g.lat, lng: g.lng });
 }
-fs.mkdirSync(OUT_DIR, { recursive: true });
-const table = fs.existsSync(path.join(HERE, "table.json")) ? JSON.parse(fs.readFileSync(path.join(HERE, "table.json"), "utf8")) : {};
-const keys = Object.keys(REGIONS).filter((k) => !only.length || only.includes(k));
-for (const key of keys) {
+const SVG_DIR = path.join(HERE, "svg", STYLE);
+fs.mkdirSync(SVG_DIR, { recursive: true });
+const META = path.join(HERE, "meta.json");
+const meta = fs.existsSync(META) ? JSON.parse(fs.readFileSync(META, "utf8")) : {};
+const keys = Object.keys(REGIONS).filter((k) => only.includes(k) || (!only.length));
+for (const key of only.includes("japan") && only.length === 1 ? [] : keys) {
   const t0 = Date.now();
-  const pl = planLayers(key, byRegion[key] ?? []);
-  const entry = { zi: pl.Zi };
+  const pl0 = planLayers(key, byRegion[key] ?? []);
+  // h（見下ろす）は 1 枚（すべての店と初期表示を覆う。縁のぼかしなし）。ほかは粗い層 + 細かい層
+  const pl = STYLE === "h" ? { ...pl0, core: null } : pl0;
+  const layers = STYLE === "h" ? [{ ...pl0.ov, Zdes: pl0.Zi }] : [pl0.ov, pl0.core].filter(Boolean);
   const logs = [];
-  const waterBy = {};
-  for (const layer of [pl.ov, pl.core].filter(Boolean)) {
-    const budget = layer.kind === "core" ? 190 : pl.core ? 80 : 150; // KB の目標（全体で 8MB 前後に収めるため）
-    let lod = 1, res;
-    for (;;) {
-      res = await buildRegion(key, byRegion[key] ?? [], layer, pl, lod);
-      if (process.env.NO_BUDGET || res.size / 1024 <= budget || lod > 3) break;
-      lod *= 1.3;
-    }
-    const file = layer.kind === "core" ? `${key}-core.svg` : `${key}.svg`;
-    fs.writeFileSync(path.join(OUT_DIR, file), res.svg);
-    waterBy[layer.kind] = { ids: res.inWaterStores, bounds: res.bounds };
-    const e = { z: layer.z, bounds: res.bounds.map((p) => p.map((n) => Math.round(n * 1e5) / 1e5)), kb: Math.round(res.size / 1024), tiles: res.stats.tiles };
-    if (layer.kind === "core") entry.core = e; else Object.assign(entry, e);
-    logs.push(`${layer.kind} z${layer.z} Zdes=${layer.Zdes} lod=${lod.toFixed(1)} tiles=${res.stats.tiles} ${e.kb}KB 道 ${res.stats.roadsPicked}/${res.stats.roadsAll} 木 ${res.stats.trees} 家 ${res.stats.houses} 水上の店 ${res.inWaterStores.length}${res.inWaterStores.length ? " " + res.inWaterStores.join(",") : ""}`);
+  for (const layer of layers) {
+    const res = await buildRegion(key, byRegion[key] ?? [], layer, pl, 1);
+    const file = `${key}${layer.kind === "core" ? "-core" : ""}.svg`;
+    fs.writeFileSync(path.join(SVG_DIR, file), res.svg);
+    meta[`${STYLE}/${key}/${layer.kind}`] = { style: STYLE, key, kind: layer.kind, file: `svg/${STYLE}/${file}`, z: layer.z, zi: pl0.Zi, W: res.W, H: res.H, bounds: res.bounds.map((p) => p.map((n) => Math.round(n * 1e5) / 1e5)), svgKB: Math.round(res.size / 1024), waterRaw: res.inWaterStores };
+    logs.push(`${layer.kind} z${layer.z} svg ${Math.round(res.size / 1024)}KB 道 ${res.stats.roadsPicked}/${res.stats.roadsAll} 水上の店 ${res.inWaterStores.length}`);
   }
-  // 見える層（核の範囲の中なら core、外なら overview）で、水の面に入っていた店（陸の小さな島を足す前の数）
-  const inB = (b, id) => { const g = GEO[id]; return g && g.lat >= b[0][0] && g.lat <= b[1][0] && g.lng >= b[0][1] && g.lng <= b[1][1]; };
-  const visWater = waterBy.core ? [...waterBy.core.ids.filter((id) => inB(waterBy.core.bounds, id)), ...waterBy.overview.ids.filter((id) => !inB(waterBy.core.bounds, id))] : waterBy.overview.ids;
-  entry.waterRaw = visWater;
-  logs.push(`見える層で水の面に入っていた店 ${visWater.length}${visWater.length ? " " + visWater.join(",") : ""}（足もとに陸の島を足して救済済み）`);
-  table[key] = entry;
-  fs.writeFileSync(path.join(HERE, "table.json"), JSON.stringify(table, null, 1));
-  console.log(`${key.padEnd(10)} Zi=${pl.Zi} | ${logs.join(" | ")} ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+  fs.writeFileSync(META, JSON.stringify(meta, null, 1));
+  console.log(`${STYLE} ${key.padEnd(10)} Zi=${pl0.Zi} | ${logs.join(" | ")} ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 }
-if (!only.length || only.includes("japan")) {
+if (only.includes("japan")) {
   const jp = await buildJapan();
-  fs.writeFileSync(path.join(OUT_DIR, "japan.svg"), jp.svg);
-  table.__japan = { bounds: jp.bounds.map((p) => p.map((n) => Math.round(n * 1e5) / 1e5)), kb: Math.round(Buffer.byteLength(jp.svg) / 1024) };
-  fs.writeFileSync(path.join(HERE, "table.json"), JSON.stringify(table, null, 1));
-  console.log(`japan z${jp.z} ${table.__japan.kb}KB`);
+  fs.writeFileSync(path.join(SVG_DIR, "japan.svg"), jp.svg);
+  meta[`${STYLE}/japan/overview`] = { style: STYLE, key: "japan", kind: "overview", file: `svg/${STYLE}/japan.svg`, z: jp.z, zi: 5.5, W: 0, H: 0, bounds: jp.bounds.map((p) => p.map((n) => Math.round(n * 1e5) / 1e5)), svgKB: Math.round(Buffer.byteLength(jp.svg) / 1024) };
+  fs.writeFileSync(META, JSON.stringify(meta, null, 1));
+  console.log(`${STYLE} japan z${jp.z} ${Math.round(Buffer.byteLength(jp.svg) / 1024)}KB`);
 }
-const { __japan, ...regionsTable } = table;
-if (__japan) writeTable(regionsTable, __japan);

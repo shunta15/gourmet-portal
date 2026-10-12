@@ -1,0 +1,214 @@
+{
+ "e/osaka/overview": {
+  "src": "/_portal/illust-map/e-osaka.webp",
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "z": 10,
+  "zi": 10,
+  "w": 2560,
+  "h": 1536,
+  "kb": 253,
+  "q": 62,
+  "kind": "overview",
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "e/hyogo/overview": {
+  "src": "/_portal/illust-map/e-hyogo.webp",
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "z": 11,
+  "zi": 10.75,
+  "w": 2583,
+  "h": 1722,
+  "kb": 253,
+  "q": 56,
+  "kind": "overview",
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "f/osaka/overview": {
+  "src": "/_portal/illust-map/f-osaka.webp",
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "z": 10,
+  "zi": 10,
+  "w": 2560,
+  "h": 1536,
+  "kb": 255,
+  "q": 68,
+  "kind": "overview",
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "f/hyogo/overview": {
+  "src": "/_portal/illust-map/f-hyogo.webp",
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "z": 11,
+  "zi": 10.75,
+  "w": 2583,
+  "h": 1722,
+  "kb": 244,
+  "q": 62,
+  "kind": "overview",
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "g/osaka/overview": {
+  "src": "/_portal/illust-map/g-osaka.webp",
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "z": 10,
+  "zi": 10,
+  "w": 2560,
+  "h": 1536,
+  "kb": 177,
+  "q": 74,
+  "kind": "overview",
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "g/hyogo/overview": {
+  "src": "/_portal/illust-map/g-hyogo.webp",
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "z": 11,
+  "zi": 10.75,
+  "w": 2583,
+  "h": 1722,
+  "kb": 179,
+  "q": 74,
+  "kind": "overview",
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "h/osaka/overview": {
+  "src": "/_portal/illust-map/h-osaka.webp",
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "z": 10,
+  "zi": 10,
+  "w": 2560,
+  "h": 1536,
+  "kb": 151,
+  "q": 74,
+  "kind": "overview",
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "h/hyogo/overview": {
+  "src": "/_portal/illust-map/h-hyogo.webp",
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "z": 11,
+  "zi": 10.75,
+  "w": 2583,
+  "h": 1722,
+  "kb": 156,
+  "q": 74,
+  "kind": "overview",
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ }
+}
