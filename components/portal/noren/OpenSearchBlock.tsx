@@ -1,8 +1,7 @@
 import Link from "next/link";
 import BlockFonts from "./BlockFonts";
-import BlockTopForm from "./BlockTopForm";
 import BlockTopMap from "./BlockTopMap";
-import { ArrowIcon } from "./BlockSearchParts";
+import { ArrowIcon, PinIcon, SearchIcon } from "./BlockSearchParts";
 import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import type { BlockTile } from "@/lib/portal/noren/blockTop";
 import type { JpRegion } from "@/lib/portal/noren/jpBand";
@@ -41,7 +40,7 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
 
 /**
  * グルメの入口（/gourmet）の「店をさがす」の節の block の見た目（参考画像 1 枚目の形。この節の中だけ明るい。lib/portal/noren/looks.ts の OPEN_SEARCH_LOOK）。
- * 上から: 見出し → 検索の箱（エリア + キーワード + 橙の丸いボタン）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）。利用シーンの札は置かない。
+ * 上から: 見出し → 検索の箱の形のリンク（押すと「さがす」のページへ。ここでは入力しない）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）。利用シーンの札は置かない。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
 export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { data: OpenSearchData; tiles: BlockTile[]; bandRegions: JpRegion[]; view: OpenView }) {
@@ -61,7 +60,21 @@ export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { da
           </header>
           {view.box && (
             <div className="vN-rv">
-              <BlockTopForm regions={data.regions} />
+              {/* 検索の箱: ここでは入力しない。押すと「さがす」のページへ送るリンク（2026-10-12 オーナー指示「検索の箱を押したら探すページに飛ぶように」）。見た目は箱のまま */}
+              <div className="vBkt-sboxw">
+                <p className="vBkt-sbox-cap">店名・エリア・駅名でさがす</p>
+                <Link href="/search" className="vBkt-sbox vBkt-sbox--go" aria-label="「さがす」のページへ（店名・エリア・駅名・料理名でさがす）">
+                  <span className="vBkt-sbox-area" aria-hidden="true">
+                    <PinIcon size={18} />
+                    <span className="vBkt-sbox-sel">エリアを選ぶ</span>
+                  </span>
+                  <span className="vBkt-sbox-ph" aria-hidden="true">店名・エリア・駅名・料理名でさがす</span>
+                  <span className="vBkt-sbox-btn" aria-hidden="true">
+                    <SearchIcon size={22} sw={2.4} />
+                    <span>さがす</span>
+                  </span>
+                </Link>
+              </div>
             </div>
           )}
           {/* 業種のタイルを出さない版（既定の dark）は、すぐ下の業種ごとの章（和食〜カフェ・甘味）へ目が行くよう、箱の下に 1 行 */}

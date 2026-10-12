@@ -226,3 +226,25 @@
 @media (prefers-reduced-motion:reduce){
   .vBkt-chapline a{transition:none}
 }
+
+/* 検索の箱（入口）: 押すと「さがす」のページへ送るリンク（2026-10-12 オーナー指示）。見た目は検索の箱のまま、中は字だけ（ここでは入力しない） */
+.vBkt-sbox--go{text-decoration:none;cursor:pointer;transition:transform .2s}
+.vBkt-sbox--go:hover{transform:translateY(-2px)}
+.vBkt-sbox--go .vBkt-sbox-sel{display:flex;align-items:center;width:184px;min-height:48px;padding:0 4px;font:700 16px/1 var(--bk-sans);color:var(--bk-navy)}
+.vBkt-sbox--go .vBkt-sbox-ph{flex:1;min-width:0;display:flex;align-items:center;min-height:52px;font:400 17px/1.2 var(--bk-sans);color:#6f7684}
+.vBkt-sbox--go .vBkt-sbox-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:132px;height:64px;padding:0 26px;border-radius:999px;background:var(--bk-or);color:#fff;font:700 18px/1 var(--bk-maru);letter-spacing:.08em;transition:transform .2s,background .2s;box-shadow:0 6px 16px rgba(242,106,16,.4)}
+.vBkt-sbox--go:hover .vBkt-sbox-btn{background:var(--bk-or-d);transform:scale(1.04)}
+.vN .vBkt a.vBkt-sbox--go:focus-visible{border-radius:999px}
+@media (max-width:1000px){
+  .vBkt-sbox--go .vBkt-sbox-ph{order:1;flex:1 1 100%;border-bottom:1px solid var(--bk-line)}
+  .vBkt-sbox--go .vBkt-sbox-sel{width:100%}
+  .vBkt-sbox--go .vBkt-sbox-btn{order:3;height:54px;min-width:112px;padding:0 20px;font-size:17px}
+  .vN .vBkt a.vBkt-sbox--go:focus-visible{border-radius:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-sbox--go,.vBkt-sbox--go .vBkt-sbox-btn{transition:none!important}
+  .vBkt-sbox--go:hover,.vBkt-sbox--go:hover .vBkt-sbox-btn{transform:none}
+}
+.vBkt--dark .vBkt-sbox--go .vBkt-sbox-ph{color:var(--ink-3)}
+.vBkt--dark .vBkt-sbox--go .vBkt-sbox-btn{background:var(--shu);color:#fff;box-shadow:0 6px 16px rgba(200,54,29,.45)}
+.vBkt--dark .vBkt-sbox--go:hover .vBkt-sbox-btn{background:var(--shu-ink)}
