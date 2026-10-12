@@ -11,6 +11,7 @@ import { sized } from "@/lib/imageUrl";
 import { kanjiFor } from "@/lib/portal/noren/shop";
 import { LIST_MAX, announce, getList, toggleSaved, useIsSaved } from "@/lib/portal/savedList";
 import { trackTap } from "@/lib/portal/track";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 
 const svg = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true, focusable: false } as const;
 
@@ -113,10 +114,15 @@ export function BlockCard({ r, tags, tagsTotal = 0, eager = false }: { r: Search
   return (
     <li className="vBk-cardw">
       <Link href={`/restaurant/${r.id}`} className="vBk-card">
-        <span className={`vBk-ph${r.image ? "" : " is-none"}`}>
+        <span className={`vBk-ph${r.image ? "" : RELEASE_PERIPHERY ? " is-none is-paper" : " is-none"}`}>
           {r.image ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={sized(r.image, 640)} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
+          ) : RELEASE_PERIPHERY ? (
+            // 写真の無い店（RELEASE_PERIPHERY）: 空の枠・薄い字の枠にしない。和紙の面に店名を縦書きで（特集の一覧の「写真の無い札」と同じ考え方。写真は足さない）
+            <span className="vBk-ph-name" aria-hidden="true" style={{ ["--n" as string]: Array.from(r.name).length }}>
+              {r.name}
+            </span>
           ) : (
             <b aria-hidden="true">{kanjiFor(r.cuisine, r.name)}</b>
           )}
