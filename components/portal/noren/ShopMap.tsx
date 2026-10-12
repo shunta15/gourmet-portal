@@ -4,6 +4,7 @@ import { CELLS, CELL_U, GAP_U, MAP_GRID } from "@/lib/portal/mapRegions";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { ILLUST, ILLUST_JAPAN, type IllustLayer } from "@/lib/portal/noren/illustMaps.generated";
 import { quantFit } from "@/lib/portal/noren/mapFit";
+import PinCard, { CLUSTER_PX, NARROW_PX, type PinSel } from "./PinCard";
 
 /**
  * 「さがす」の地図（暖簾版）。5 つの見た目を ?map=a|e|f|g|h で見比べられる（既定 e。?map= は本番では無視）:
@@ -13,21 +14,20 @@ import { quantFit } from "@/lib/portal/noren/mapFit";
  *  - g「夜の灯り」: 暗い地に灯りのような道。ピンが落ちた所に灯りのにじみが広がる。
  *  - h「見下ろす」: 平らな色面の地図を奥へ倒して見下ろす（CSS の 3D）。ピン・札は面に立つ。拡大・移動はしない。
  *  f・g・h は、画像のある地域（大阪・兵庫・東京・京都・名古屋・福岡）と全国だけ。ほかの地域は e の絵。
- * ピン（朱）・札（まっすぐ・上に朱の線）・落ちる順番と速さ・最初の寄せ方（外れ値を除いた中央の約 88%）は、すべて a と同じ。
- * 地域を選んだとき・選び直したときは、地図がその地域へ寄り、店のピンが 1 つずつ少しずつ遅れて上から落ちてきて（(i % 36) * 70 + 250ms）、写真のある店のうち少し（FLAG_MAX 軒）は、店の写真つきの札として立つ。
- * ピン・札を押すと、写真・店名・エリア・業種の吹き出しと店ページへのリンク。動かすのは transform と opacity だけ。「動きを減らす」設定では動かさず、すぐ出す。タイマーは使わず（CSS の遅れだけ）、選び直すと前のピンは消す。
+ * 地図に立てるのはピンだけ（写真つきの札は立てない）。ピン（朱）・落ちる順番と速さ・最初の寄せ方（外れ値を除いた中央の約 88%）は、すべて a と同じ。
+ * ピンを押す（スマホはタップ）と、店の情報の札（PinCard.tsx。写真・店名・エリアと最寄り駅・業種・店ページへ）。画面上で近いピンは、押すと一覧（選ぶとその店の情報）。
+ * 地域を選んだとき・選び直したときは、地図がその地域へ寄り、店のピンが 1 つずつ少しずつ遅れて上から落ちてきて（(i % 36) * 70 + 250ms）立つ。
+ * 動かすのは transform と opacity だけ。「動きを減らす」設定では動かさず、すぐ出す。タイマーは使わず（CSS の遅れだけ）、選び直すと前のピンは消す。
  * 出典: 地図は国土地理院ベクトルタイルをもとに作成（画面に表記）。新しいパッケージ・有料の地図・ネットからのデータ取得は無い（leaflet は既存）。
  */
 
-export type MapPt = { id: string; name: string; lat: number; lng: number; area: string; cuisine: string; photo: string; town: string; region: string };
+export type MapPt = { id: string; name: string; lat: number; lng: number; area: string; cuisine: string; photo: string; town: string; region: string; /** 最寄り駅（店のデータの nearest。札に駅名と徒歩だけ出す） */ nearest?: string };
 export type MapMode = "a" | "e" | "f" | "g" | "h";
 
-/** 店の写真つきの札で立てる数（手本の考え方: 写真のある店のうち、重ならない少数。目安 6〜10） */
-export const FLAG_MAX = 8;
-/** 札（幅 112px・高さ 104px。先は店の位置）が箱の辺で切れないための余白（px）: 上は札の高さ + 先の丸、左右は幅の半分 + すこし */
-const FLAG_TOP = 126;
-const FLAG_SIDE = 64;
-
+/** 初期表示の余白（px）。写真つきの札は立てない（ピンだけ）ので、ピン（高さ約 40）が箱の辺で切れない程度 */
+const PAD_SIDE = 40;
+const PAD_TOP = 56;
+const PAD_BOTTOM = 28;
 
 const JAPAN: [[number, number], [number, number]] = [[30.0, 128.5], [45.8, 146.0]];
 
@@ -84,6 +84,7 @@ function LeafMap({
   circles,
   onPick,
   reduce,
+  cardHost,
 }: {
   mode: MapMode;
   regionKey: string;
@@ -91,12 +92,23 @@ function LeafMap({
   circles: { key: string; name: string; count: number; lat: number; lng: number }[];
   onPick: (region: string) => void;
   reduce: boolean;
+  cardHost?: HTMLElement | null;
 }) {
   // e・f・g: あらかじめ画像（WebP）にした地図を、実際の範囲に敷く（ピン・札・寄せ方は a と同じ）。f 古地図・g 夜の灯りは、画像のある地域だけ（ほかは e の絵）
   const isOv = mode === "e" || mode === "f" || mode === "g";
   const ref = useRef<HTMLDivElement>(null);
   const st = useRef<{ L: typeof import("leaflet"); map: import("leaflet").Map; layer: import("leaflet").LayerGroup } | null>(null);
   const [ready, setReady] = useState(false);
+  // ピンを押したときの店の情報の札（PinCard）。ピンの要素は、押されている印（is-sel）を付けるために持つ
+  const [sel, setSel] = useState<PinSel | null>(null);
+  const selRef = useRef<PinSel | null>(null);
+  selRef.current = sel;
+  const ptsRef = useRef(pts);
+  ptsRef.current = pts;
+  const hostRef = useRef(cardHost);
+  hostRef.current = cardHost;
+  const byId = useMemo(() => new Map(pts.map((p) => [p.id, p])), [pts]);
+  const markersRef = useRef<Map<string, import("leaflet").Marker>>(new Map());
   // e・f・g: いま敷いている地図の画像（粗い層・細かい層）と、その url
   const overlayRef = useRef<import("leaflet").ImageOverlay | null>(null);
   const coreRef = useRef<import("leaflet").ImageOverlay | null>(null);
@@ -132,7 +144,16 @@ function LeafMap({
       map.fitBounds(JAPAN, { animate: false });
       const layer = L.layerGroup().addTo(map);
       st.current = { L, map, layer };
-      ro = new ResizeObserver(() => map.invalidateSize());
+      // 札の外（地図の面）を押す・地図を動かす（拡大縮小・ドラッグ・寄せる動き）と、札は閉じる
+      map.on("click", (e) => {
+        if ((e.originalEvent?.target as Element | undefined)?.closest?.(".vMp-card")) return;
+        setSel(null);
+      });
+      map.on("movestart", () => setSel(null));
+      ro = new ResizeObserver(() => {
+        map.invalidateSize();
+        setSel(null);
+      });
       ro.observe(ref.current);
       setReady(true);
     })();
@@ -161,6 +182,8 @@ function LeafMap({
     }
     map.closePopup();
     layer.clearLayers();
+    markersRef.current.clear();
+    setSel(null);
     const bb = L.latLngBounds([]);
     const delayOf = (i: number) => (reduce ? 0 : (i % 36) * 70 + 250);
 
@@ -223,51 +246,18 @@ function LeafMap({
       return;
     }
 
-    // 店のピン。写真のある店のうち、重ならない少数（FLAG_MAX 軒）は写真つきの札
+    // 店のピン（写真つきの札は立てない）
     pts.forEach((p) => bb.extend([p.lat, p.lng]));
     // 寄せる範囲（a と同じ。lib/portal/noren/mapFit.ts。描き起こしのスクリプトとも同じ決め方）: 店が多いときは、はずれ値（遠く離れた数軒）を除いた中央の約 88%（上下 6% を除く）。除いた店は、地図を動かせば見える
     const qf = pts.length > 12 ? quantFit(pts) : null;
     const fit = qf ? L.latLngBounds([qf.minLat, qf.minLng], [qf.maxLat, qf.maxLng]) : bb;
-    const span = pts.length > 1 ? Math.max(fit.getNorth() - fit.getSouth(), fit.getEast() - fit.getWest()) : 0.1;
-    const minD = span / 3.6; // 札（幅 112px）どうしが重ならない程度に離す（8 軒まで）
-    const flags = new Set<string>();
-    const picked: MapPt[] = [];
-    // 狭い箱（スマホ）では、札が地図をふさがないよう少なくする
-    const maxFlags = (ref.current?.clientWidth ?? 800) < 520 ? 3 : FLAG_MAX;
-    // e・f・g: 寄せたあとのズーム（箱を埋める下限・拡大の上限に挟まれる）と、そのときの箱への写し（寄せる範囲の中心が、札の余白を引いた箱の中心に来る）
+    // e・f・g: 寄せたあとのズーム（箱を埋める下限・拡大の上限に挟まれる）と、そのときの箱への写し（寄せる範囲の中心が、余白を引いた箱の中心に来る）
     const BW = ref.current?.clientWidth ?? 800;
     const BH = ref.current?.clientHeight ?? 460;
-    const tzf = isOv && pts.length > 1 ? Math.min(map.getMaxZoom(), Math.max(map.getMinZoom(), Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * FLAG_SIDE, FLAG_TOP + 36))))) : 0;
+    const tzf = isOv && pts.length > 1 ? Math.min(map.getMaxZoom(), Math.max(map.getMinZoom(), Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * PAD_SIDE, PAD_TOP + PAD_BOTTOM))))) : 0;
     const ctrP = tzf ? map.project(fit.getCenter(), tzf) : null;
     const shiftX = ctrP ? BW / 2 - ctrP.x : 0;
-    const shiftY = ctrP ? (FLAG_TOP + BH - 36) / 2 - ctrP.y : 0;
-    if (isOv && pts.length > 1) {
-      // e・f・g: 寄せたあとの画面で、札（幅 112px・高さ 104px）どうしが重ならず、箱の辺で切れないものを、中心に近い店から選ぶ
-      const fc0 = fit.getCenter();
-      const rects: [number, number, number, number][] = [];
-      const order = [...pts].sort((a, b) => Math.hypot(a.lat - fc0.lat, (a.lng - fc0.lng) * 0.82) - Math.hypot(b.lat - fc0.lat, (b.lng - fc0.lng) * 0.82));
-      for (const p of order) {
-        if (flags.size >= maxFlags) break;
-        if (!p.photo || !fit.contains([p.lat, p.lng])) continue;
-        const q = map.project([p.lat, p.lng], tzf);
-        const r: [number, number, number, number] = [q.x - 60, q.y - 112, q.x + 60, q.y + 8];
-        const inBox = r[0] + shiftX >= 4 && r[2] + shiftX <= BW - 4 && r[1] + shiftY >= 4 && r[3] + shiftY <= BH - 4;
-        if (inBox && rects.every((o) => r[2] < o[0] || r[0] > o[2] || r[3] < o[1] || r[1] > o[3])) {
-          rects.push(r);
-          flags.add(p.id);
-        }
-      }
-    } else {
-      for (const p of pts) {
-        if (flags.size >= maxFlags) break;
-        if (!p.photo) continue;
-        if (!fit.contains([p.lat, p.lng])) continue; // 寄せる範囲の外の店は札にしない（札が箱の辺で切れないように）
-        if (picked.every((q) => Math.hypot(q.lat - p.lat, q.lng - p.lng) > minD)) {
-          flags.add(p.id);
-          picked.push(p);
-        }
-      }
-    }
+    const shiftY = ctrP ? (PAD_TOP + BH - PAD_BOTTOM) / 2 - ctrP.y : 0;
     // 落ちる順は、寄せた範囲の中心に近い店から（見えている店が先に現れる）
     const fc = fit.isValid() ? fit.getCenter() : L.latLng(0, 0); // 位置のある店が 1 軒も無い地域では、範囲が空
     const rank = new Map(
@@ -275,30 +265,50 @@ function LeafMap({
         .sort((a, b) => Math.hypot(a.lat - fc.lat, (a.lng - fc.lng) * 0.82) - Math.hypot(b.lat - fc.lat, (b.lng - fc.lng) * 0.82))
         .map((p, i) => [p.id, i] as const),
     );
+    // ピンを押す: 近いピン（画面上 CLUSTER_PX 以内）が 2 つ以上なら一覧、1 つならその店の情報。同じピンをもう一度押すと閉じる
+    const openAt = (id: string, byKey: boolean) => {
+      if (selRef.current?.origin === id) {
+        setSel(null);
+        return;
+      }
+      const p0 = ptsRef.current.find((q) => q.id === id);
+      const el = ref.current;
+      if (!p0 || !el) return;
+      const tip = map.latLngToContainerPoint([p0.lat, p0.lng]);
+      const near = ptsRef.current
+        .map((q) => {
+          const c = map.latLngToContainerPoint([q.lat, q.lng]);
+          return { id: q.id, d: Math.hypot(c.x - tip.x, c.y - tip.y) };
+        })
+        .filter((o) => o.d <= CLUSTER_PX)
+        .sort((a, b) => a.d - b.d || a.id.localeCompare(b.id));
+      const host = hostRef.current;
+      const cr = el.getBoundingClientRect();
+      const hr = host ? host.getBoundingClientRect() : cr;
+      const bw = host ? host.clientWidth : el.clientWidth;
+      const bh = host ? host.clientHeight : el.clientHeight;
+      setSel({ origin: id, ids: near.map((o) => o.id), id: near.length >= 2 ? null : id, ax: tip.x + (cr.left - hr.left), ay: tip.y + (cr.top - hr.top), bw, bh, narrow: bw < NARROW_PX, byKey });
+    };
     pts.forEach((p, i) => {
       const delay = delayOf(rank.get(p.id) ?? i);
-      const isFlag = flags.has(p.id);
-      const icon = isFlag
-        ? L.divIcon({
-            className: "vMp-mk",
-            iconSize: [112, 104],
-            iconAnchor: [56, 104],
-            popupAnchor: [0, -100],
-            html: `${mode === "g" ? `<span class="vMp-glow" style="--gx:56px;--gy:104px;animation-delay:${delay + 480}ms"></span>` : ""}<div class="vMp-flag" style="animation-delay:${delay}ms"><img src="${esc(p.photo)}" alt="" loading="lazy" /><b>${esc(p.name)}</b></div>`,
-          })
-        : L.divIcon({
-            className: "vMp-mk",
-            iconSize: [30, 40],
-            iconAnchor: [15, 38],
-            popupAnchor: [0, -34],
-            // c は橙と紺の 2 色（色に意味は無い。並びの偶数番を橙、奇数番を紺）
-            html: `${mode === "g" ? `<span class="vMp-glow" style="--gx:15px;--gy:38px;animation-delay:${delay + 480}ms"></span>` : ""}<div class="vMp-pin" style="animation-delay:${delay}ms"><i></i></div>`,
-          });
-      const m = L.marker([p.lat, p.lng], { icon, title: p.name, zIndexOffset: isFlag ? 500 : 0 }).addTo(layer);
-      m.bindPopup(
-        `<div class="vMp-pop">${p.photo ? `<img src="${esc(p.photo)}" alt="" />` : ""}<b>${esc(p.name)}</b><span>${esc(p.area)}・${esc(p.cuisine)}</span><a href="/restaurant/${encodeURIComponent(p.id)}">店のページへ →</a></div>`,
-        { closeButton: false, className: "vMp-popw", autoPan: true, autoPanPaddingTopLeft: [24, 24], autoPanPaddingBottomRight: [24, 24], keepInView: true },
-      );
+      const icon = L.divIcon({
+        className: "vMp-mk",
+        iconSize: [30, 40],
+        iconAnchor: [15, 38],
+        // g は、落ちた所に灯りのにじみが広がる。ピンに乗る（hover）と店名だけ小さく出る（.vMp-pn）
+        html: `${mode === "g" ? `<span class="vMp-glow" style="--gx:15px;--gy:38px;animation-delay:${delay + 480}ms"></span>` : ""}<div class="vMp-pin" style="animation-delay:${delay}ms"><i></i><span class="vMp-pn">${esc(p.name)}</span></div>`,
+      });
+      const m = L.marker([p.lat, p.lng], { icon, keyboard: true, alt: p.name }).addTo(layer);
+      m.getElement()?.setAttribute("aria-label", `${p.name}（${p.area}・${p.cuisine}）。Enter で店の情報`);
+      m.on("click", () => openAt(p.id, false));
+      // キーボード: Tab でピンを順に選び、Enter（または Space）で店の情報（Leaflet の標準は、吹き出しを付けたときだけ Enter に反応するので、自分で受ける）
+      m.getElement()?.addEventListener("keydown", (ev) => {
+        if (ev.key !== "Enter" && ev.key !== " ") return;
+        ev.preventDefault();
+        ev.stopPropagation();
+        openAt(p.id, true);
+      });
+      markersRef.current.set(p.id, m);
     });
 
     // 目印に、店の多い市区町村の名前を、その店たちの中心あたりに出す（a・c は薄く。e は筆の字で、ピン・札に重なりにくい位置へずらす）
@@ -306,13 +316,13 @@ function LeafMap({
       const g = new Map<string, MapPt[]>();
       for (const p of pts) if (p.town) g.set(p.town, [...(g.get(p.town) ?? []), p]);
       const towns = [...g.entries()].sort((x, y) => y[1].length - x[1].length).slice(0, mode === "f" ? 5 : isOv ? 8 : 6);
-      // e: 寄せたあとのズームで、ピン・札の画面上の位置を求め、いちばん重ならない向きへ名前をずらす
+      // e: 寄せたあとのズームで、ピンの画面上の位置を求め、いちばん重ならない向きへ名前をずらす
       const tz = tzf;
       const boxes: [number, number, number, number][] = [];
       if (tz) {
         for (const p of pts) {
           const q = map.project([p.lat, p.lng], tz);
-          boxes.push(flags.has(p.id) ? [q.x - 58, q.y - 112, q.x + 58, q.y + 6] : [q.x - 13, q.y - 42, q.x + 13, q.y + 2]);
+          boxes.push([q.x - 13, q.y - 42, q.x + 13, q.y + 2]);
         }
       }
       // 寄せたあとの箱（札の余白を引いた中）の、いまの座標への写し。箱の外へ出る位置は避ける
@@ -365,14 +375,14 @@ function LeafMap({
     }
 
     if (pts.length > 1) {
-      // 余白: 上は札の高さ（104px + 先の丸）ぶん、左右は札の幅の半分（56px）ぶん取り、最初に寄った状態で札が箱の辺で切れないようにする
-      const opt = { paddingTopLeft: [FLAG_SIDE, FLAG_TOP] as [number, number], paddingBottomRight: [FLAG_SIDE, 36] as [number, number], maxZoom: 14 };
+      // 余白（PAD_*）: 最初に寄った状態で、ピンが箱の辺で切れないようにする
+      const opt = { paddingTopLeft: [PAD_SIDE, PAD_TOP] as [number, number], paddingBottomRight: [PAD_SIDE, PAD_BOTTOM] as [number, number], maxZoom: 14 };
       if (reduce) {
         map.fitBounds(fit, { ...opt, animate: false });
         if (eSetup) map.setMaxBounds(eSetup.bounds);
       } else if (eSetup) {
         // e: 新しい地域の地図の上で、一段ひいた所から、なめらかに寄せる
-        const z1 = Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * FLAG_SIDE, FLAG_TOP + 36)));
+        const z1 = Math.min(14, map.getBoundsZoom(fit, false, L.point(2 * PAD_SIDE, PAD_TOP + PAD_BOTTOM)));
         map.setView(fit.getCenter(), Math.max(map.getMinZoom(), z1 - 1.25), { animate: false });
         const done = () => {
           moveEndRef.current = null;
@@ -406,10 +416,29 @@ function LeafMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, key, reduce]);
 
+  // 押されているピンの印（色と大きさ）。一覧から選んだときは、その店のピン
+  useEffect(() => {
+    const hl = sel ? (sel.id ?? sel.origin) : null;
+    markersRef.current.forEach((m, id) => m.getElement()?.classList.toggle("is-sel", id === hl));
+  }, [sel]);
+  // Esc で閉じる（押していたピンへフォーカスを戻す）
+  useEffect(() => {
+    if (!sel) return;
+    const f = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      const o = sel.origin;
+      setSel(null);
+      markersRef.current.get(o)?.getElement()?.focus({ preventScroll: true });
+    };
+    document.addEventListener("keydown", f);
+    return () => document.removeEventListener("keydown", f);
+  }, [sel]);
+
   return (
     <div className={`vMp-leaf vMp-leaf--${mode}`} ref={ref} role="region" aria-label="店の地図">
       {!ready && <div className="vMp-maploading">地図を読み込み中…</div>}
       {isOv && <p className="vMp-credit">地図: 国土地理院ベクトルタイルをもとに作成</p>}
+      {sel && <PinCard byId={byId} sel={sel} host={cardHost} onPick={(id) => setSel({ ...sel, id })} onBack={() => setSel({ ...sel, id: null })} onClose={() => setSel(null)} />}
     </div>
   );
 }
@@ -449,7 +478,8 @@ function TiltMap({ regionKey, pts, circles, onPick, reduce }: { regionKey: strin
   const info = nation ? ILLUST_JAPAN.h! : ILLUST.h[regionKey].main;
   const boxRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ w: 0, h: 0 });
-  const [sel, setSel] = useState<{ id: string; x: number; y: number; below: boolean } | null>(null);
+  const [sel, setSel] = useState<PinSel | null>(null);
+  const byId = useMemo(() => new Map(pts.map((p) => [p.id, p])), [pts]);
   useEffect(() => {
     const el = boxRef.current;
     if (!el) return;
@@ -460,6 +490,18 @@ function TiltMap({ regionKey, pts, circles, onPick, reduce }: { regionKey: strin
     return () => ro.disconnect();
   }, []);
   useEffect(() => setSel(null), [regionKey, pts]);
+  // Esc で閉じる（押していたピンへフォーカスを戻す）
+  useEffect(() => {
+    if (!sel) return;
+    const f = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      const o = sel.origin;
+      setSel(null);
+      boxRef.current?.querySelector<HTMLElement>(`.vMp-t-stand[data-id="${o}"]`)?.focus({ preventScroll: true });
+    };
+    document.addEventListener("keydown", f);
+    return () => document.removeEventListener("keydown", f);
+  }, [sel]);
   const g = useMemo(() => {
     if (!size.w || !size.h) return null;
     const [[s0, w0], [n0, e0]] = info.bounds;
@@ -468,39 +510,18 @@ function TiltMap({ regionKey, pts, circles, onPick, reduce }: { regionKey: strin
     const fx0 = mercX(qf.minLng), fx1 = mercX(qf.maxLng), fy0 = mercY(qf.maxLat), fy1 = mercY(qf.minLat);
     const cosT = Math.cos((TILT * Math.PI) / 180);
     const fw = Math.max(fx1 - fx0, 1e-4), fh = Math.max(fy1 - fy0, 1e-4);
-    const padS = nation ? 40 : FLAG_SIDE, padT = nation ? 44 : FLAG_TOP;
-    const k = Math.min((size.w - 2 * padS) / fw, (size.h - padT - 36) / (cosT * fh), 6e5);
+    const padS = nation ? 40 : PAD_SIDE, padT = nation ? 44 : PAD_TOP;
+    const k = Math.min((size.w - 2 * padS) / fw, (size.h - padT - PAD_BOTTOM) / (cosT * fh), 6e5);
     const PW = k * (x1 - x0), PH = k * (y1 - y0);
     const at = (lat: number, lng: number): [number, number] => [(mercX(lng) - x0) * k, (mercY(lat) - y0) * k];
     const [Fx, Fy] = [((fx0 + fx1) / 2 - x0) * k, ((fy0 + fy1) / 2 - y0) * k];
-    const cy = size.h - 36 - (cosT * fh * k) / 2; // 寄せた範囲の下辺が、箱の下から 36px
+    const cy = size.h - PAD_BOTTOM - (cosT * fh * k) / 2; // 寄せた範囲の下辺が、箱の下から PAD_BOTTOM
     return { PW, PH, at, Fx, Fy, cx: size.w / 2, cy, k, fit: qf, fh: fh * k };
   }, [size, info, pts, nation]);
-  const narrow = size.w < 520;
-  const flags = useMemo(() => {
-    const out = new Set<string>();
-    if (!g || pts.length < 2 || nation) return out;
-    const fc = { lat: (g.fit.minLat + g.fit.maxLat) / 2, lng: (g.fit.minLng + g.fit.maxLng) / 2 };
-    const cosT = Math.cos((TILT * Math.PI) / 180);
-    const rects: [number, number, number, number][] = [];
-    const order = [...pts].sort((a, b) => Math.hypot(a.lat - fc.lat, (a.lng - fc.lng) * 0.82) - Math.hypot(b.lat - fc.lat, (b.lng - fc.lng) * 0.82));
-    for (const p of order) {
-      if (out.size >= (narrow ? 3 : FLAG_MAX)) break;
-      if (!p.photo || p.lat < g.fit.minLat || p.lat > g.fit.maxLat || p.lng < g.fit.minLng || p.lng > g.fit.maxLng) continue;
-      const [px, py] = g.at(p.lat, p.lng);
-      const sx = px, sy = (py - g.Fy) * cosT;
-      const r: [number, number, number, number] = [sx - 60, sy - 112, sx + 60, sy + 8];
-      if (rects.every((o) => r[2] < o[0] || r[0] > o[2] || r[3] < o[1] || r[1] > o[3])) {
-        rects.push(r);
-        out.add(p.id);
-      }
-    }
-    return out;
-  }, [g, pts, narrow, nation]);
+  const narrow = size.w < NARROW_PX;
   const fc = g ? { lat: (g.fit.minLat + g.fit.maxLat) / 2, lng: (g.fit.minLng + g.fit.maxLng) / 2 } : { lat: 0, lng: 0 };
   const rank = useMemo(() => new Map([...pts].sort((a, b) => Math.hypot(a.lat - fc.lat, (a.lng - fc.lng) * 0.82) - Math.hypot(b.lat - fc.lat, (b.lng - fc.lng) * 0.82)).map((p, i) => [p.id, i] as const)), [pts, fc.lat, fc.lng]);
   const delayOf = (i: number) => (reduce ? 0 : (i % 36) * 70 + 250);
-  const selPt = sel ? pts.find((p) => p.id === sel.id) : undefined;
   // 全国: 地域ごとの丸（立たせる）。重なる所は少しずらし、面の上の線で元の位置につなぐ
   const circPos = useMemo(() => {
     if (!g || !nation) return [];
@@ -551,42 +572,41 @@ function TiltMap({ regionKey, pts, circles, onPick, reduce }: { regionKey: strin
             })}
           {!nation && pts.map((p, i) => {
             const [x, y] = g.at(p.lat, p.lng);
-            const isFlag = flags.has(p.id);
             const depth = Math.min(1, Math.max(0, (y - (g.Fy - g.fh * 0.75)) / (g.fh * 1.5)));
             const delay = delayOf(rank.get(p.id) ?? i);
-            const [bw, bh, ox, oy] = isFlag ? [112, 104, 56, 104] : [30, 40, 15, 38];
+            const hl = sel ? (sel.id ?? sel.origin) : null;
             return (
               <div key={p.id} className="vMp-t-anchor" style={{ left: x, top: y }}>
                 <button
                   type="button"
-                  className="vMp-t-stand"
-                  aria-label={`${p.name}（${p.area}・${p.cuisine}）`}
-                  style={{ left: -ox, top: -oy, width: bw, height: bh, transformOrigin: `${ox}px ${oy}px`, transform: `rotateX(${-TILT}deg)`, opacity: 0.66 + 0.34 * depth, zIndex: isFlag ? 2 : 1 }}
+                  className={`vMp-t-stand${hl === p.id ? " is-sel" : ""}`}
+                  data-id={p.id}
+                  aria-label={`${p.name}（${p.area}・${p.cuisine}）。Enter で店の情報`}
+                  style={{ left: -15, top: -38, width: 30, height: 40, transformOrigin: "15px 38px", transform: `rotateX(${-TILT}deg)`, opacity: 0.66 + 0.34 * depth, zIndex: hl === p.id ? 3 : 1 }}
                   onClick={(e) => {
                     e.stopPropagation();
+                    if (sel?.origin === p.id) {
+                      setSel(null);
+                      return;
+                    }
+                    // ピンの先（立っている要素の下端）の、箱での位置。近いピン（画面上 CLUSTER_PX 以内）が 2 つ以上なら一覧
                     const box = boxRef.current!.getBoundingClientRect();
-                    const r = e.currentTarget.getBoundingClientRect();
-                    const px2 = r.left + r.width / 2 - box.left;
-                    // 吹き出し（高さ 約 216px）は、ピンの上に収まれば上、だめなら下、どちらもだめなら箱の中ほどに出す（箱の外へ出さない）
-                    const POP_H = 216;
-                    const above = r.top - box.top - 8 >= POP_H;
-                    const underOk = box.bottom - r.bottom - 8 >= POP_H;
-                    const below = !above && underOk;
-                    const y = above ? r.top - box.top - 6 : below ? r.bottom - box.top + 6 : Math.min(box.height - 4, Math.max(POP_H + 4, box.height / 2 + POP_H / 2));
-                    setSel({ id: p.id, x: Math.min(Math.max(px2, 104), box.width - 104), y, below });
+                    const tipOf = (r: DOMRect) => ({ x: r.left + r.width / 2 - box.left, y: r.bottom - r.height * 0.05 - box.top });
+                    const tip = tipOf(e.currentTarget.getBoundingClientRect());
+                    const near = [...boxRef.current!.querySelectorAll<HTMLElement>(".vMp-t-stand[data-id]")]
+                      .map((el) => {
+                        const t = tipOf(el.getBoundingClientRect());
+                        return { id: el.dataset.id as string, d: Math.hypot(t.x - tip.x, t.y - tip.y) };
+                      })
+                      .filter((o) => o.d <= CLUSTER_PX)
+                      .sort((a, b) => a.d - b.d || a.id.localeCompare(b.id));
+                    setSel({ origin: p.id, ids: near.map((o) => o.id), id: near.length >= 2 ? null : p.id, ax: tip.x, ay: tip.y, bw: box.width, bh: box.height, narrow, byKey: e.detail === 0 });
                   }}
                 >
-                  {isFlag ? (
-                    <div className="vMp-flag" style={{ animationDelay: `${delay}ms` }}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={p.photo} alt="" loading="lazy" />
-                      <b>{p.name}</b>
-                    </div>
-                  ) : (
-                    <div className="vMp-pin" style={{ animationDelay: `${delay}ms` }}>
-                      <i />
-                    </div>
-                  )}
+                  <div className="vMp-pin" style={{ animationDelay: `${delay}ms` }}>
+                    <i />
+                    <span className="vMp-pn">{p.name}</span>
+                  </div>
                 </button>
               </div>
             );
@@ -594,23 +614,13 @@ function TiltMap({ regionKey, pts, circles, onPick, reduce }: { regionKey: strin
         </div>
       )}
       <div className="vMp-t-haze" aria-hidden="true" />
-      {sel && selPt && (
-        <div className={`vMp-t-pop${sel.below ? " is-below" : ""}`} style={{ left: sel.x, top: sel.y }} onClick={(e) => e.stopPropagation()}>
-          <div className="vMp-pop">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            {selPt.photo ? <img src={selPt.photo} alt="" /> : null}
-            <b>{selPt.name}</b>
-            <span>{selPt.area}・{selPt.cuisine}</span>
-            <a href={`/restaurant/${encodeURIComponent(selPt.id)}`}>店のページへ →</a>
-          </div>
-        </div>
-      )}
+      {sel && <PinCard byId={byId} sel={sel} onPick={(id) => setSel({ ...sel, id })} onBack={() => setSel({ ...sel, id: null })} onClose={() => setSel(null)} />}
       <p className="vMp-credit">地図: 国土地理院ベクトルタイルをもとに作成</p>
     </div>
   );
 }
 
-/** 「さがす」の地図の本体。mode a・b と、全国・地域の見た目を切り替える */
+/** 「さがす」の地図の本体。a・e・f・g・h と、全国・地域の見た目を切り替える */
 export default function ShopMap({
   mode,
   regionKey,
@@ -619,9 +629,12 @@ export default function ShopMap({
   prefRegion,
   regionCounts,
   onPick,
+  cardHost,
 }: {
   mode: MapMode;
   regionKey: string;
+  /** 店の情報の札を出す先（入口の帯のように、地図の箱の外へ出したいとき。省くと、地図の箱の中） */
+  cardHost?: HTMLElement | null;
   /** 位置のある店（絞り込んだ全部。上限は設けない） */
   pts: MapPt[];
   /** 県ごとの店の数（絞り込んだ店。位置の無い店も住所の県で数えている） */
@@ -658,7 +671,7 @@ export default function ShopMap({
       ) : eff === "h" && (regionKey || ILLUST_JAPAN.h) ? (
         <TiltMap key={regionKey || "japan"} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} />
       ) : (
-        <LeafMap mode={eff === "h" ? "e" : eff} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} />
+        <LeafMap mode={eff === "h" ? "e" : eff} regionKey={regionKey} pts={pts} circles={circles} onPick={onPick} reduce={reduce} cardHost={cardHost} />
       )}
     </div>
   );

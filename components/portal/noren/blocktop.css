@@ -60,7 +60,6 @@
 .vBkt-map .leaflet-control-container{display:none}
 .vBkt-map .vMp-credit{display:none}
 .vBkt-map .leaflet-container{pointer-events:none}
-.vBkt-map .vMp-flag b{font-family:var(--bk-sans)}
 .vBkt-fade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,var(--bk-cream) 0%,var(--bk-cream) 26%,rgba(251,246,234,.85) 36%,rgba(251,246,234,0) 48%),linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 44px)}
 .vBkt-bt{position:absolute;z-index:3;top:0;bottom:0;left:max(var(--gx),calc((100% - 1200px) / 2));display:flex;align-items:center;max-width:var(--bt-w);pointer-events:none}
 .vBkt-bt-in{pointer-events:auto}
@@ -114,3 +113,9 @@
 @media (prefers-reduced-motion:reduce){
   .vBkt-tile img,.vBkt-circ,.vBkt-btn,.vBkt-sbox button,.vBkt-chip{transition:none!important}
 }
+
+/* 帯の地図のピンを押したときの、店の情報の札（PinCard。帯の要素の中に出る）の字を、block の字に。ぼかし（z 2）・文字（z 3）より上 */
+.vBkt-band .vMp-card{z-index:20;font-family:var(--bk-sans)}
+.vBkt-band .vMp-card-nm,.vBkt-band .vMp-card-h{font-family:var(--bk-maru);color:var(--bk-navy)}
+.vN .vBkt-band .vMp-card .vMp-card-a{color:var(--bk-or-ink);font-family:var(--bk-maru)}
+.vBkt-band .vMp-card-c{background:var(--bk-or-t);color:var(--bk-or-ink)}

@@ -39,7 +39,7 @@ const TABS: { key: Tab; label: string }[] = [
 const isTab = (s: string | null): s is Tab => !!s && TABS.some((t) => t.key === s);
 
 type SceneDef = { slug: string; name: string; matchTags: string[] };
-/** 検索の 1 店。block の見た目のときだけ、最寄り駅（nearest）も渡る（駅名でも探せるように） */
+/** 検索の 1 店。最寄り駅（nearest）も渡る（地図のピンの店の情報の札に出す。block では駅名でも探せる） */
 type SItem = SearchItem & { nearest?: string };
 type Sort = "" | "new";
 /** 店 ID の番号（r12 → 12）。ID は掲載した順に振っているので、番号が大きいほど新しく載った店。r＋数字でない ID は 0 */
@@ -100,7 +100,7 @@ function ResultsMap({
   const { pts, prefCounts, regionCounts } = useMemo(() => {
     const pts: MapPt[] = list
       .filter((r) => coords[r.id])
-      .map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], area: r.area, cuisine: r.cuisine, photo: r.image ? sized(r.image, 360) : "", town: townOf[r.id] ?? "", region: r.region }));
+      .map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], area: r.area, cuisine: r.cuisine, photo: r.image ? sized(r.image, 360) : "", town: townOf[r.id] ?? "", region: r.region, nearest: (r as SItem).nearest }));
     const prefCounts: Record<string, number> = {};
     const byRegion = new Map<string, number>();
     for (const r of list) {

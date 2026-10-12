@@ -2,7 +2,7 @@
  * 入口（/gourmet）の「店を、さがす。」の block の見た目（components/portal/noren/OpenSearchBlock.tsx）に渡すデータを作る（サーバー側）。
  * 軽い関数だけ（fs・process.cwd() を使わない）。店・写真は実在の掲載店。店との対応は ID の完全一致（店名の部分一致は使わない）。
  * - 業種のタイル: 暖簾の章（lib/portal/noren/picks.ts の CATS）の、手で選んだ店の写真（章の先頭から、使える写真のある最初の店）
- * - 地図の帯: 店の多い地域 BAND_REGION（大阪。時間で替わらない固定）の、位置と写真のある店のうち、いちばん集まっている所（lib/portal/noren/mapFit.ts の densestFit）の中で、ばらけて立つ BAND_MAX 軒
+ * - 地図の帯: 店の多い地域 BAND_REGION（大阪。時間で替わらない固定）の、位置と写真のある店のうち、外れ値を除いた中央の約 88%（lib/portal/noren/mapFit.ts の quantFit）の中で、ばらけて立つ BAND_MAX 軒
  */
 import type { Restaurant } from "@/lib/regions";
 import { GEO } from "@/lib/geo";
@@ -68,6 +68,7 @@ export function buildBlockTop(restaurants: Restaurant[], cuisines: { key: string
     area: r.area,
     cuisine: r.cuisine,
     photo: sized(shopCardPhoto(r), 360),
+    nearest: r.nearest,
     town: parseTown(r.address || "", r.region)?.town ?? "",
     region: r.region,
   }));

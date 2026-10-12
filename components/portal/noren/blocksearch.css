@@ -59,11 +59,6 @@
 .vBk .vMp-leaf .leaflet-control-zoom{border:0;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(28,37,65,.2)}
 .vBk .vMp-mapnote{margin-top:10px;font:400 12.5px/1.7 var(--bk-sans);letter-spacing:0;color:var(--bk-mute)}
 .vBk .vMp-maploading{background:#f1ead6;color:var(--bk-mute)}
-.vBk .vMp-popw .leaflet-popup-content-wrapper{border-radius:14px;overflow:hidden}
-.vBk .vMp-pop b{color:var(--bk-navy);font-family:var(--bk-sans)}
-.vBk .vMp-pop span{font-family:var(--bk-sans);color:var(--bk-mute)}
-.vN .vBk .vMp-pop a{color:var(--bk-or-ink);font-family:var(--bk-sans)}
-.vBk .vMp-flag b{font-family:var(--bk-sans)}
 
 .vBk-side{min-width:0}
 .vBk-regionlink{margin:0 0 8px}
@@ -212,3 +207,9 @@
   .vBk-ban-img,.vBk-ban h1,.vBk-ban p,.vBk-grid>li,.vBk-heart[data-pop="1"] svg{animation:none!important}
   .vBk-card,.vBk-ph img,.vBk-tab,.vBk-row{transition:none!important}
 }
+
+/* 店の情報の札（地図のピンを押したとき）の字を、block の字に */
+.vBk .vMp-card,.vBkt .vMp-card{font-family:var(--bk-sans)}
+.vBk .vMp-card-nm,.vBkt .vMp-card-nm,.vBk .vMp-card-h,.vBkt .vMp-card-h{font-family:var(--bk-maru);color:var(--bk-navy)}
+.vN .vBk .vMp-card .vMp-card-a,.vN .vBkt .vMp-card .vMp-card-a{color:var(--bk-or-ink);font-family:var(--bk-maru)}
+.vBk .vMp-card-c,.vBkt .vMp-card-c{background:var(--bk-or-t);color:var(--bk-or-ink)}

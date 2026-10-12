@@ -44,8 +44,8 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
   const look = resolveLook(SEARCH_LOOK, allowUrl ? one((await searchParams).look) : "", allowUrl);
   const block = look === "block";
   const restaurants = await getAllRestaurants();
-  // 必要な項目だけに絞って渡す（写真は暖簾の店ページと同じ判定を通したもの。評価の数字は渡さない）。block のときだけ、最寄り駅も渡す（駅名でも探せるように）
-  const items = block ? restaurants.map((r) => ({ ...toSearchShop(r), nearest: r.nearest })) : restaurants.map(toSearchShop);
+  // 必要な項目だけに絞って渡す（写真は暖簾の店ページと同じ判定を通したもの。評価の数字は渡さない）。最寄り駅（nearest）も渡す（地図のピンの店の情報の札に出す。block では、駅名でも探せる）
+  const items = restaurants.map((r) => ({ ...toSearchShop(r), nearest: r.nearest }));
   const bandShop = block ? restaurants.find((r) => r.id === BAND_SHOP) : undefined;
   const bandPhoto = bandShop ? [...heroImagesOf(bandShop), ...(bandShop.gallery ?? [])].find(isUsableFeatureImage) ?? "" : "";
   // こだわり条件は公開スイッチ ON のときだけ（ここは ON のときしか開けない）
