@@ -34,7 +34,7 @@ export function heroOverrideAllowed(): boolean {
  * 店のページ(/beauty/shop/{id})の動きの案。0 = 今の形 / 1 留める / 2 重ねる / 3 弾む。
  * 本番では URL の ?fx= を読まない(見本=VERCEL_ENV が production 以外のときだけ、URL で替えて見比べられる)。
  */
-export const BEAUTY_SHOP_FX: 0 | 1 | 2 | 3 = 0;
+export const BEAUTY_SHOP_FX: 0 | 1 | 2 | 3 = 1; // 2026-10-13 オーナー決定「留めるにする一旦」(1 = 留める)
 
 /** 店のページの案を URL から選んでよいか(本番=production 以外でだけ true) */
 export function shopFxOverrideAllowed(): boolean {
