@@ -1,0 +1,250 @@
+/* ====================================================================
+   入口（/gourmet）の「店を、さがす。」の節の block の見た目（OpenSearchBlock.tsx。参考画像 1 枚目の形）。クラスは vBkt-。
+   この節の中だけ明るい（白い地・橙の差し色・紺の字・角の丸い札）。上下の暗い暖簾の画面との境目は紙の縁（.vBkt-edge）。
+   書体は BlockFonts.tsx（Klee One・Zen Maru Gothic）。最小の文字 12px、押す所 44px 以上、横スクロールなし。「動きを減らす」設定では動きを止める。
+   ==================================================================== */
+.vBkt{
+  --bk-or:#f26a10; --bk-or-d:#d9560a; --bk-or-ink:#c4510a; --bk-or-t:#fff1e6;
+  --bk-navy:#1c2541; --bk-ink:#2b3040; --bk-mute:#6b7280; --bk-line:#e8e9ee; --bk-bg2:#f6f7f9; --bk-cream:#fbf6ea;
+  --bk-hand:"Klee One","Yomogi",cursive;
+  --bk-maru:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --bk-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+  position:relative; z-index:2; background:#fff; color:var(--bk-ink); font-family:var(--bk-sans); font-feature-settings:normal; line-height:1.7;
+  scroll-margin-top:var(--hd);
+}
+.vBkt-wrap{width:min(1200px,100% - 2 * var(--gx));margin-inline:auto}
+.vN .vBkt a:focus-visible,.vN .vBkt button:focus-visible,.vN .vBkt input:focus-visible,.vN .vBkt select:focus-visible{outline:3px solid var(--bk-or);outline-offset:3px;border-radius:10px}
+
+/* ---------- 境目: 紙の縁 ---------- */
+.vBkt-edge{position:absolute;left:0;right:0;height:24px;z-index:3;pointer-events:none;display:block}
+.vBkt-edge svg{display:block;width:100%;height:100%;overflow:visible}
+.vBkt-edge--top{top:-23px;filter:drop-shadow(0 -3px 4px rgba(0,0,0,.55))}
+.vBkt-edge--bottom{bottom:-23px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.55))}
+
+/* ---------- 見出し・検索の箱・業種のタイル ---------- */
+.vBkt-top{padding:clamp(56px,8vw,96px) 0 clamp(40px,5vw,64px)}
+.vBkt-head{display:grid;gap:6px;justify-items:start;margin-bottom:clamp(22px,3vw,34px)}
+.vBkt-k{font:700 14px/1 var(--bk-maru);letter-spacing:.2em;color:var(--bk-or-ink)}
+.vBkt-h{font:600 clamp(40px,5.6vw,80px)/1.15 var(--bk-hand);color:var(--bk-navy);transform:rotate(-2deg);transform-origin:left bottom;margin:4px 0 6px}
+.vBkt-h em{color:var(--bk-or)}
+.vBkt-lead{font:500 clamp(14px,1.2vw,16px)/1.9 var(--bk-sans);color:var(--bk-ink);word-break:auto-phrase;text-wrap:pretty}
+
+.vBkt-sboxw{display:grid;gap:8px;width:min(1000px,100%)}
+.vBkt-sbox-cap{padding-left:26px;font:700 14px/1.4 var(--bk-maru);letter-spacing:.08em;color:var(--bk-or-ink)}
+.vBkt-sbox{display:flex;align-items:center;gap:10px;width:100%;min-height:82px;padding:9px 9px 9px 26px;border-radius:999px;background:#fff;box-shadow:0 16px 44px rgba(28,37,65,.28),0 0 0 1px rgba(28,37,65,.1);color:var(--bk-ink)}
+.vBkt-sbox:focus-within{box-shadow:0 16px 44px rgba(28,37,65,.28),0 0 0 3px var(--bk-or)}
+.vBkt-sbox-area{display:flex;align-items:center;gap:8px;flex:none;padding-right:14px;border-right:1px solid var(--bk-line);color:var(--bk-or)}
+.vBkt-sbox select{appearance:none;-webkit-appearance:none;border:0;background:transparent;width:184px;min-height:48px;padding:0 4px;font:700 16px/1 var(--bk-sans);color:var(--bk-navy);cursor:pointer;text-overflow:ellipsis;color-scheme:light}
+.vBkt-sbox select option{color:#1c2541;background:#fff}
+.vBkt-sbox input{flex:1;min-width:0;border:0;background:transparent;min-height:52px;font:400 17px/1.2 var(--bk-sans);color:var(--bk-ink);color-scheme:light;-webkit-appearance:none;appearance:none;outline:none}
+.vBkt-sbox input::placeholder{color:#8a909c;opacity:1}
+.vN .vBkt .vBkt-sbox input:focus-visible,.vN .vBkt .vBkt-sbox select:focus-visible{outline:none}
+.vBkt-sbox button{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:132px;height:64px;padding:0 26px;border-radius:999px;background:var(--bk-or);color:#fff;font:700 18px/1 var(--bk-maru);letter-spacing:.08em;cursor:pointer;transition:transform .2s,background .2s;box-shadow:0 6px 16px rgba(242,106,16,.4)}
+.vBkt-sbox button:hover{background:var(--bk-or-d);transform:scale(1.04)}
+
+.vBkt-tiles{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-top:clamp(24px,3.4vw,40px)}
+.vBkt-tile{position:relative;display:block;height:clamp(190px,17vw,236px);overflow:hidden;border-radius:16px;background:#3a3027;color:#fff;isolation:isolate}
+.vBkt-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.2,.6,.2,1)}
+.vBkt-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.74) 0%,rgba(0,0,0,.34) 46%,rgba(0,0,0,.04) 82%)}
+.vBkt-tile:hover img{transform:scale(1.07)}
+.vBkt-tile-t{position:absolute;left:14px;right:10px;bottom:10px;display:flex;flex-direction:column;gap:0;text-shadow:0 1px 10px rgba(0,0,0,.45)}
+.vBkt-tile-t b{font:700 clamp(16px,1.35vw,19px)/1.3 var(--bk-maru);margin-bottom:2px}
+.vBkt-tile-t small{display:flex;align-items:center;min-height:36px;font:500 13px/1.3 var(--bk-sans);padding-right:44px}
+.vBkt-circ{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--bk-navy);box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .25s,background .25s,color .25s}
+.vBkt-tile:hover .vBkt-circ{transform:translateX(3px);background:var(--bk-or);color:#fff}
+
+/* ---------- 地図で見つける（日本全体の地図 + 地域ごとの目印。BlockTopMap.tsx） ---------- */
+.vBkt-band{position:relative;height:clamp(520px,40vw,580px);overflow:hidden;background:var(--bk-cream);isolation:isolate}
+.vBkt{--bt-w:460px}
+/* 文字の列の右端（地図の舞台はこの右。ぼかしもここで終わる） */
+.vBkt-band{--col:calc(max(var(--gx),calc((100% - 1200px) / 2)) + var(--bt-w))}
+.vBkt-map{position:absolute;inset:0}
+/* 舞台を入れる箱（画面の形で目印の置き方 p 縦長 / l 横長を選ぶための入れ物。はみ出した絵は切る） */
+.vBkt-jpw{position:relative;width:100%;height:100%;overflow:hidden;container:vBktjp / size}
+/* 舞台: 目印の置き方の「設計の大きさ」と同じ縦横比（p 360×600・l 600×500）の箱。箱いっぱいに、縦横比を保って収める。絵は舞台より広く敷く（はみ出した所は、地図の海がつづく） */
+.vBkt-jp{--ar:.6;--sw:min(100cqw,calc(100cqh * var(--ar)));position:absolute;inset:0;margin:auto;width:var(--sw);height:calc(var(--sw) / var(--ar));z-index:1;
+  --pin:var(--shu);--pin-b:var(--paper-hi);--nm:var(--kinari);--nm-s:0 0 6px #000,0 0 2px #000,0 0 10px rgba(0,0,0,.65);--ld:rgba(203,189,159,.8);--hv:rgba(239,230,214,.12)}
+.vBkt--band-e .vBkt-jp{--pin:#c4510a;--pin-b:#fff;--nm:#25406b;--nm-s:0 0 5px #fff,0 0 2px #fff,0 0 9px rgba(255,255,255,.95);--ld:#6b5d4c;--hv:rgba(255,255,255,.62)}
+.vBkt-jp-img{position:absolute;left:var(--il-p);top:var(--it-p);width:var(--iw-p);height:auto;max-width:none;display:block;pointer-events:none;user-select:none}
+/* 地図のほかの所（押すと「さがす」のページへ）。目印・点線の下 */
+.vBkt-jp-all{position:absolute;inset:0;display:block;cursor:pointer;transition:background .2s;-webkit-tap-highlight-color:transparent}
+.vBkt-jp-all:hover{background:var(--hv)}
+.vBkt-jp-all:active{background:var(--hv)}
+/* 本当の位置とずらした目印をつなぐ点線（毎回同じ形） */
+.vBkt-ld{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.vBkt-ld--l{display:none}
+.vBkt-ld line{stroke:var(--ld);stroke-width:1.2;stroke-opacity:.75;stroke-dasharray:3 3;vector-effect:non-scaling-stroke}
+.vBkt-ld circle{fill:var(--ld);stroke:var(--pin-b);stroke-width:.8;vector-effect:non-scaling-stroke}
+/* 目印: 設計の位置（舞台に対する %）に、ピンの箱（高さ 46・幅 44 以上）を中心で置く。箱ぜんぶが押す範囲 */
+.vBkt-rgs{list-style:none;margin:0;padding:0}
+.vBkt-rgs>li{position:absolute;left:var(--px);top:var(--py);width:var(--w);height:50px;margin:-25px 0 0 calc(var(--w) * -.5);z-index:2}
+.vBkt-rg{display:block;width:100%;height:100%;border-radius:10px;color:var(--nm);text-decoration:none;cursor:pointer;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.vBkt-rg-in{display:flex;flex-direction:column;align-items:center;width:100%;height:100%;pointer-events:none}
+.vBkt-pin{position:relative;flex:none;display:block;width:30px;height:34px;transition:transform .16s cubic-bezier(.3,1.3,.5,1);transform-origin:50% 100%}
+.vBkt-pin i{position:absolute;left:1px;top:0;width:28px;height:28px;box-sizing:border-box;background:var(--pin);border:2.5px solid var(--pin-b);border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 8px rgba(0,0,0,.45);transition:background .15s}
+.vBkt-pin b{position:absolute;left:0;right:0;top:6px;text-align:center;font:700 12px/16px var(--f-lat,var(--bk-sans));font-variant-numeric:lining-nums;color:#fff7ee;letter-spacing:-.04em}
+.vBkt-nm{flex:none;margin-top:2px;max-width:100%;white-space:nowrap;font:600 12px/14px var(--bk-maru);letter-spacing:.02em;color:var(--nm);text-shadow:var(--nm-s)}
+/* 押せる物だと分かる反応: 乗せる（ホバー）と、箱がうっすら出て、ピンが少し跳ねる。押している間は少し縮む */
+.vBkt-rg:hover{background:var(--hv)}
+.vBkt-rg:hover .vBkt-pin{transform:translateY(-3px) scale(1.14)}
+.vBkt-rg:hover .vBkt-nm{text-decoration:underline;text-underline-offset:2px}
+.vBkt-rg:active{background:var(--hv)}
+.vBkt-rg:active .vBkt-pin{transform:scale(.94)}
+.vBkt-credit{position:absolute;right:8px;bottom:6px;z-index:4;margin:0;padding:2px 8px;background:rgba(255,255,255,.72);color:#4a4a42;font:400 12px/1.6 var(--bk-sans);pointer-events:none;white-space:nowrap}
+/* 画面の形が横長のとき（縦横比 9:10 以上）は、目印と絵を横長 l の置き方に */
+@container vBktjp (min-aspect-ratio:9/10){
+  .vBkt-jp{--ar:1.2}
+  .vBkt-jp-img{left:var(--il-l);top:var(--it-l);width:var(--iw-l)}
+  .vBkt-rgs>li{left:var(--lx);top:var(--ly)}
+  .vBkt-ld--p{display:none}
+  .vBkt-ld--l{display:block}
+}
+/* ピンが立つ動き（「さがす」の地図のピンと同じ落ち方 vMpDrop・同じ遅れの式。箱が画面に入ったとき 1 回。BlockTopReveal が data-phase を替える）。点線は、ピンが立ったあとに現れる */
+@keyframes vBktDrop{0%{opacity:0;transform:translateY(-90px)}35%{opacity:1}70%{transform:translateY(4px)}100%{opacity:1;transform:none}}
+@keyframes vBktFade{from{opacity:0}to{opacity:1}}
+.vBkt-jp[data-phase="pre"] .vBkt-rg-in,.vBkt-jp[data-phase="pre"] .vBkt-ld-g{opacity:0}
+.vBkt-jp[data-phase="on"] .vBkt-rg-in{animation:vBktDrop .7s cubic-bezier(.3,1.3,.5,1) both;animation-delay:var(--d)}
+.vBkt-jp[data-phase="on"] .vBkt-ld-g{animation:vBktFade .5s ease-out both;animation-delay:calc(var(--d) + 450ms)}
+.vBkt-fade{--c:251,246,234;position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,rgb(var(--c)) 0,rgb(var(--c)) calc(var(--col) - 150px),rgba(var(--c),0) calc(var(--col) + 16px)),linear-gradient(180deg,#fff 0,rgba(255,255,255,0) 32px)}
+.vBkt-bt{position:absolute;z-index:3;top:0;bottom:0;left:max(var(--gx),calc((100% - 1200px) / 2));display:flex;align-items:center;max-width:var(--bt-w);pointer-events:none}
+.vBkt-bt-in{pointer-events:auto}
+.vBkt-or{font:700 clamp(26px,3vw,44px)/1.2 var(--bk-hand);color:var(--bk-or);transform:rotate(-3deg);transform-origin:left bottom;margin-bottom:6px}
+.vBkt-bh{font:900 clamp(30px,3.2vw,46px)/1.3 var(--bk-maru);color:var(--bk-navy);margin:4px 0 16px;white-space:nowrap}
+.vBkt-bp{font:500 16px/1.9 var(--bk-sans);color:var(--bk-ink)}
+.vBkt-btn{margin-top:22px;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 30px;border-radius:999px;background:#fff;color:var(--bk-navy);font:700 15px/1 var(--bk-sans);box-shadow:0 4px 14px rgba(28,37,65,.16);transition:transform .2s,box-shadow .2s}
+.vBkt-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(28,37,65,.22)}
+
+/* 広い画面: 舞台は、文字の列の右（右端は文字の列と同じ余白）。左は、絵だけが文字の下までつづく（ぼかしで地の色へ） */
+@media (min-width:1001px){
+  /* 絵の左の縁は、文字の列の下へ消える（縁の線が出ない） */
+  .vBkt-jp-img{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 20%);mask-image:linear-gradient(90deg,transparent 0,#000 20%)}
+  .vBkt-jp{--rt:max(var(--gx),calc((100cqw - 1200px) / 2));--sw:min(calc(100cqh * var(--ar)),calc(100cqw - var(--rt) - var(--gx) - var(--bt-w) - 24px));left:auto;right:var(--rt);margin:auto 0}
+}
+
+/* ---------- 利用シーン（小さく） ---------- */
+.vBkt-scn{padding:clamp(34px,4vw,48px) 0 clamp(52px,6vw,72px)}
+.vBkt-sh{font:700 15px/1.4 var(--bk-maru);color:var(--bk-navy);margin-bottom:12px}
+.vBkt-chips{display:flex;flex-wrap:wrap;gap:8px}
+.vBkt-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--bk-bg2);color:#4b5160;font:500 14px/1 var(--bk-sans);transition:background .2s,color .2s}
+.vBkt-chip i{font:400 12px/1 var(--bk-sans);font-style:normal;color:var(--bk-mute)}
+.vBkt-chip:hover{background:var(--bk-or-t);color:var(--bk-or-ink)}
+
+/* ---------- 狭い画面 ---------- */
+@media (max-width:1240px){
+  .vBkt{--bt-w:320px}
+  .vBkt-bh{white-space:normal}
+}
+@media (max-width:1100px){
+  .vBkt-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+  .vBkt-top{padding:48px 0 32px}
+  .vBkt-h{font-size:clamp(38px,11vw,52px)}
+  /* 検索の箱: 角の丸い箱。エリアが上、キーワードとボタンが下 */
+  .vBkt-sbox{flex-wrap:wrap;gap:0;min-height:0;padding:8px 8px 8px 16px;border-radius:24px}
+  .vBkt-sbox button{height:54px;min-width:112px;padding:0 20px;font-size:17px}
+  .vBkt-sbox-cap{padding-left:6px}
+  /* スマホ: 入力欄が上の行（字が切れないよう全幅）、エリアとボタンが下の行 */
+  .vBkt-sbox{gap:8px}
+  .vBkt-sbox input{order:1;flex:1 1 100%;border-bottom:1px solid var(--bk-line)}
+  .vBkt-sbox-area{order:2;flex:1 1 0;min-width:0;padding:0;border-right:0;border-bottom:0;margin:0}
+  .vBkt-sbox select{width:100%}
+  .vBkt-sbox button{order:3}
+  /* 業種のタイル: 横にすべらせる（ページ全体は動かさない） */
+  .vBkt-tiles{display:flex;gap:10px;overflow-x:auto;margin-inline:calc(-1 * var(--gx));padding:2px var(--gx) 10px;scroll-snap-type:x proximity;scroll-padding-inline:var(--gx);scrollbar-width:none}
+  .vBkt-tiles::-webkit-scrollbar{display:none}
+  .vBkt-tiles>li{flex:0 0 148px;scroll-snap-align:start}
+  .vBkt-tile{height:196px}
+  /* 地図の帯: 文字が上、地図がその下 */
+  .vBkt-band{height:auto;display:flex;flex-direction:column}
+  .vBkt-fade{display:none}
+  .vBkt-bt{position:static;max-width:none;padding:34px var(--gx) 22px;order:1;display:block}
+  .vBkt-bh{white-space:normal}
+  .vBkt-map{position:relative;order:2;width:100%;height:clamp(600px,172vw,720px);flex:none}
+  .vBkt-sbox{width:100%}
+}
+@media (max-width:420px){
+  .vBkt-tiles>li{flex-basis:138px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-tile img,.vBkt-circ,.vBkt-btn,.vBkt-sbox button,.vBkt-chip,.vBkt-rg,.vBkt-pin,.vBkt-jp-all{transition:none!important}
+  /* 動きを減らす設定: ピンは最初から立っている（落ちる動きも、点線の現れる動きも無い） */
+  .vBkt-jp .vBkt-rg-in,.vBkt-jp .vBkt-ld-g{animation:none!important;opacity:1!important;transform:none!important}
+}
+
+/* ====================================================================
+   入口の「店を、さがす。」の節: dark（既定。暖簾の灰墨に合わせる）。?open=dark|block（見本）。
+   地は入口と同じ灰墨（.vN の --sumi）、字は生成り、差し色は朱。白い面・橙・紺の字は使わない。上下に紙の縁は無い（同じ地の色でつながる）。
+   検索の箱は、暗い地の上で、生成りの箱 + 墨の字 + 朱の「さがす」ボタン。
+   色の組み（実測。字 / 実際の地・コントラスト。本文は 4.5 以上）: 見出し・帯の見出し 12.7、本文（リード・帯の文）9.7、小さい朱の字（小見出し・箱の上の 1 行・業種からさがす）5.0、
+   小さい薄い字（下の七つの章へ・出典）5.9、シーンの札 10.3（件数 4.7）、箱の中の墨の字 16.4、箱の淡い字（プレースホルダー）5.7、ボタンの白 / 朱 5.3、札の朱の文字 / 生成り 6.3。
+   ==================================================================== */
+.vBkt--dark{
+  --bk-or:var(--shu); --bk-or-d:var(--shu-ink); --bk-or-ink:var(--shu-hi); --bk-or-t:rgba(200,54,29,.2);
+  --bk-navy:var(--kinari); --bk-ink:var(--kinari-2); --bk-mute:var(--kinari-3);
+  --bk-line:var(--line-2); --bk-bg2:rgba(239,230,214,.08); --bk-cream:var(--sumi);
+  background:transparent; color:var(--kinari-2);
+}
+.vN .vBkt--dark a:focus-visible,.vN .vBkt--dark button:focus-visible,.vN .vBkt--dark input:focus-visible,.vN .vBkt--dark select:focus-visible{outline-color:var(--shu-hi)}
+.vBkt--dark .vBkt-h em{color:var(--shu-hi)}
+/* 検索の箱: 生成りの箱に墨の字（箱の中だけ、字の色の変数を墨に戻す） */
+.vBkt--dark .vBkt-sbox{background:var(--paper-hi);color:var(--ink);--bk-ink:var(--ink);--bk-navy:var(--ink);--bk-line:rgba(26,20,16,.2);box-shadow:0 18px 48px rgba(0,0,0,.6),0 0 0 1px rgba(239,230,214,.5)}
+.vBkt--dark .vBkt-sbox:focus-within{box-shadow:0 18px 48px rgba(0,0,0,.6),0 0 0 3px var(--shu-hi)}
+.vBkt--dark .vBkt-sbox input::placeholder{color:var(--ink-3);opacity:1}
+.vBkt--dark .vBkt-sbox select option{color:var(--ink);background:var(--paper-hi)}
+.vBkt--dark .vBkt-sbox-area{color:var(--shu-ink)}
+.vBkt--dark .vBkt-sbox button{background:var(--shu);color:#fff;box-shadow:0 6px 16px rgba(200,54,29,.45)}
+.vBkt--dark .vBkt-sbox button:hover{background:var(--shu-ink)}
+/* 業種のタイル（?tiles=1）: 写真の上の字は生成り。矢印の丸は生成りに墨 */
+.vBkt--dark .vBkt-circ{background:var(--paper-hi);color:var(--ink)}
+/* 箱の下の 1 行: 下の七つの章へ */
+.vBkt-chapline{margin-top:clamp(10px,1.4vw,16px)}
+.vBkt-chapline a{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 8px;min-height:44px;padding:0 4px;color:var(--bk-or-ink);font:700 15px/1.5 var(--bk-maru);letter-spacing:.06em}
+.vBkt-chapline a:hover{text-decoration:underline;text-underline-offset:4px}
+.vBkt-chapline small{font:500 13px/1.5 var(--bk-sans);letter-spacing:.04em;color:var(--bk-mute)}
+/* 帯: 地の色の濃い墨。ぼかしも墨（文字の列の右で終わる。上下 32px も墨に溶かす） */
+.vBkt--dark .vBkt-fade{--c:var(--sumi-rgb);background:linear-gradient(90deg,rgb(var(--c)) 0,rgb(var(--c)) calc(var(--col) - 150px),rgba(var(--c),0) calc(var(--col) + 16px)),linear-gradient(180deg,rgb(var(--c)) 0,rgba(var(--c),0) 32px),linear-gradient(0deg,rgb(var(--c)) 0,rgba(var(--c),0) 32px)}
+.vBkt--dark .vBkt-or{color:var(--shu-hi)}
+.vBkt--dark .vBkt-btn{background:var(--paper-hi);color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.vBkt--dark .vBkt-btn:hover{box-shadow:0 10px 24px rgba(0,0,0,.6)}
+.vBkt--dark .vBkt-credit{background:rgba(var(--sumi-rgb),.72);color:var(--kinari-3)}
+/* 利用シーンの札 */
+.vBkt--dark .vBkt-chip{color:var(--kinari);border:1px solid var(--line)}
+.vBkt--dark .vBkt-chip:hover{background:var(--shu);border-color:var(--shu);color:var(--paper-hi)}
+.vBkt--dark .vBkt-chip:hover i{color:var(--paper-hi)}
+/* ?band=e: 手描き風（明るい絵）は、生成りの額に入れて、暗い帯の右に置く。額の中に舞台を収める */
+.vBkt--dark.vBkt--band-e .vBkt-fade{display:none}
+.vBkt--dark.vBkt--band-e .vBkt-map{inset:auto;right:max(var(--gx),calc((100% - 1200px) / 2));top:24px;bottom:24px;box-sizing:border-box;width:min(700px,calc(100% - var(--bt-w) - 2 * max(var(--gx),calc((100% - 1200px) / 2)) - 28px));padding:9px;background:var(--paper-hi);border-radius:5px;box-shadow:0 22px 56px rgba(0,0,0,.65),0 0 0 1px rgba(239,230,214,.4)}
+.vBkt--dark.vBkt--band-e .vBkt-jpw{border-radius:2px}
+@media (min-width:1001px){
+  .vBkt--dark.vBkt--band-e .vBkt-jp{--sw:min(100cqw,calc(100cqh * var(--ar)));left:0;right:0;margin:auto}
+  .vBkt--dark.vBkt--band-e .vBkt-jp-img{-webkit-mask-image:none;mask-image:none}
+}
+@media (max-width:1000px){
+  .vBkt--dark.vBkt--band-e .vBkt-map{position:relative;inset:auto;width:calc(100% - 16px);margin:6px 8px 22px;height:clamp(600px,172vw,720px);padding:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-chapline a{transition:none}
+}
+
+/* 検索の箱（入口）: 押すと「さがす」のページへ送るリンク（2026-10-12 オーナー指示）。見た目は検索の箱のまま、中は字だけ（ここでは入力しない） */
+.vBkt-sbox--go{text-decoration:none;cursor:pointer;transition:transform .2s}
+.vBkt-sbox--go:hover{transform:translateY(-2px)}
+.vBkt-sbox--go .vBkt-sbox-sel{display:flex;align-items:center;width:184px;min-height:48px;padding:0 4px;font:700 16px/1 var(--bk-sans);color:var(--bk-navy)}
+.vBkt-sbox--go .vBkt-sbox-ph{flex:1;min-width:0;display:flex;align-items:center;min-height:52px;font:400 17px/1.2 var(--bk-sans);color:#6f7684}
+.vBkt-sbox--go .vBkt-sbox-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:132px;height:64px;padding:0 26px;border-radius:999px;background:var(--bk-or);color:#fff;font:700 18px/1 var(--bk-maru);letter-spacing:.08em;transition:transform .2s,background .2s;box-shadow:0 6px 16px rgba(242,106,16,.4)}
+.vBkt-sbox--go:hover .vBkt-sbox-btn{background:var(--bk-or-d);transform:scale(1.04)}
+.vN .vBkt a.vBkt-sbox--go:focus-visible{border-radius:999px}
+@media (max-width:1000px){
+  .vBkt-sbox--go .vBkt-sbox-ph{order:1;flex:1 1 100%;border-bottom:1px solid var(--bk-line)}
+  .vBkt-sbox--go .vBkt-sbox-sel{width:100%}
+  .vBkt-sbox--go .vBkt-sbox-btn{order:3;height:54px;min-width:112px;padding:0 20px;font-size:17px}
+  .vN .vBkt a.vBkt-sbox--go:focus-visible{border-radius:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vBkt-sbox--go,.vBkt-sbox--go .vBkt-sbox-btn{transition:none!important}
+  .vBkt-sbox--go:hover,.vBkt-sbox--go:hover .vBkt-sbox-btn{transform:none}
+}
+.vBkt--dark .vBkt-sbox--go .vBkt-sbox-ph{color:var(--ink-3)}
+.vBkt--dark .vBkt-sbox--go .vBkt-sbox-btn{background:var(--shu);color:#fff;box-shadow:0 6px 16px rgba(200,54,29,.45)}
+.vBkt--dark .vBkt-sbox--go:hover .vBkt-sbox-btn{background:var(--shu-ink)}

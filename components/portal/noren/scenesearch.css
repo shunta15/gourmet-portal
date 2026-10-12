@@ -141,3 +141,144 @@
 @media (max-width:560px){
   .vI-form.vSc-form{grid-template-columns:minmax(0,1fr)}
 }
+
+/* ---------- 「さがす」の中心のページ（NorenSearch）: 探し方のタブ・箱（左に地図・右に一覧）・結果 ---------- */
+.vMp-tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line-2);margin:0 0 clamp(18px,3vh,28px)}
+.vMp-tabs::-webkit-scrollbar{display:none}
+.vMp-tab{flex:0 0 auto;display:inline-flex;align-items:center;min-height:48px;padding:0 clamp(14px,2vw,26px);margin-bottom:-1px;border-bottom:3px solid transparent;font:500 15px/1 var(--f-min);letter-spacing:.14em;color:var(--kinari-2);white-space:nowrap;transition:color .3s,border-color .3s}
+.vMp-tab:hover{color:var(--kinari)}
+.vMp-tab[aria-current="true"]{color:var(--kinari);border-bottom-color:var(--shu);font-weight:700}
+.vMp-box{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:clamp(16px,2vw,28px);align-items:start;margin:0 0 clamp(34px,6vh,56px)}
+.vMp-map{min-width:0}
+.vMp-map .vSc-map-fr{padding:8px}
+.vMp-mapnote{margin-top:10px;font:400 13px/1.7 var(--f-sans);letter-spacing:.06em;color:var(--kinari-2)}
+.vMp-maploading{height:460px;display:grid;place-items:center;font:400 14px/1 var(--f-sans);color:var(--ink-3);background:var(--paper)}
+.vMp-side{min-width:0}
+.vMp-list{display:grid;gap:4px;max-height:460px;overflow:auto;padding-right:4px;scrollbar-width:thin}
+.vMp-row{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:0 14px;border:1px solid var(--line);background:color-mix(in srgb,var(--kinari) 5%,transparent);color:var(--kinari);font:500 15px/1.3 var(--f-min);letter-spacing:.08em;transition:background .3s,color .3s,border-color .3s}
+.vMp-row em{font:italic 400 15px/1 var(--f-lat);letter-spacing:.04em;font-variant-numeric:lining-nums;color:var(--kinari-3)}
+.vMp-row:hover{border-color:var(--shu-hi)}
+.vMp-row[aria-current="true"]{background:var(--kinari);color:var(--ink);border-color:var(--kinari);box-shadow:inset 3px 0 0 var(--shu)}
+.vMp-row[aria-current="true"] em{color:var(--ink-2)}
+.vN .vMp-row:focus-visible,.vN .vMp-tab:focus-visible{outline:2px solid var(--shu-hi);outline-offset:-3px}
+.vMp-side .vSc-regionlink{margin:0 0 12px}
+.vMp-qform{display:grid;gap:10px}
+.vMp-qform label{font:700 13px/1 var(--f-min);letter-spacing:.3em;color:var(--kinari-3);padding-left:.3em}
+.vMp-qrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+.vMp-qrow input{min-width:0;min-height:52px;padding:0 16px;background:color-mix(in srgb,var(--kinari) 7%,transparent);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1.3 var(--f-sans);color-scheme:dark}
+.vMp-qrow input::placeholder{color:var(--kinari-3);opacity:1}
+.vN .vMp-qrow input:focus-visible{outline:2px solid var(--shu-hi);outline-offset:3px}
+.vMp-tagtab{display:grid;gap:clamp(22px,4vh,34px);min-width:0}
+.vMp-h{font:700 clamp(20px,1.8vw,24px)/1.4 var(--f-min);letter-spacing:.1em;color:var(--kinari);margin-bottom:14px}
+.vMp-h em{color:var(--shu-hi)}
+.vMp-res{align-items:center}
+.vMp-resh{font:700 clamp(20px,1.8vw,24px)/1.4 var(--f-min);letter-spacing:.14em;color:var(--kinari)}
+.vMp-clear{display:inline-flex;align-items:center;min-height:44px;margin-left:1em;color:var(--shu-hi);border-bottom:1px solid currentColor;letter-spacing:.1em}
+.vMp-pager{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;margin:clamp(30px,5vh,48px) 0 0;font:500 15px/1 var(--f-min);letter-spacing:.14em;color:var(--kinari-2)}
+.vMp-pager a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--line-2);color:var(--kinari);justify-self:start;transition:background .3s,color .3s}
+.vMp-pager a:last-child{justify-self:end}
+.vMp-pager a:hover{background:var(--kinari);color:var(--ink)}
+@media (max-width:820px){
+  .vMp-box{grid-template-columns:minmax(0,1fr)}
+  .vMp-map .mw-map{height:300px!important}
+  .vMp-maploading{height:300px}
+  /* スマホ: 地図が上、一覧はその下で横にならべて、横にすべらせる */
+  .vMp-list{display:flex;max-height:none;overflow-x:auto;overflow-y:hidden;gap:8px;padding:0 0 8px;scroll-snap-type:x proximity}
+  .vMp-list>li{flex:0 0 auto}
+  .vMp-row{white-space:nowrap;gap:10px;scroll-snap-align:start}
+  .vMp-qrow{grid-template-columns:minmax(0,1fr)}
+  .vMp-pager{grid-template-columns:auto 1fr auto}
+  .vMp-pager>span[aria-current]{text-align:center}
+}
+/* 地図のピンの札（leaflet の吹き出し）のリンクは、暖簾の地の上でも読める色に */
+.vN .leaflet-popup-content a.mw-popup-link{color:var(--paper-hi)}
+
+/* ---------- 地図の見た目（ShopMap.tsx）: a「絵図」（動きの基準。ピン・札・落ちる動きは e・f・g・h も同じ）。動かすのは transform と opacity だけ ---------- */
+/* 地図の箱: leaflet の層（z-index 400〜1000。ピン・札・吹き出し・拡大縮小）が、箱の外・固定ヘッダーの上に出ないよう、箱の中だけの重なり（isolation）にして、はみ出しは切り取る */
+.vMp-surface{position:relative;isolation:isolate;overflow:hidden;overflow:clip;background:var(--paper);color:var(--ink)}
+/* overflow:clip は、中のボタンにフォーカスが移っても、箱がスクロールして絵がずれることがない（hidden はずれる） */
+.vMp-leaf{isolation:isolate;overflow:hidden;overflow:clip}
+.vMp-leaf{height:460px;background:var(--paper);font-family:var(--f-sans)}
+.vMp-leaf .leaflet-control-zoom a{width:44px;height:44px;line-height:44px;font-size:22px;text-indent:0}
+.vMp-leaf .leaflet-control-attribution a{display:inline-block;min-height:24px;line-height:24px}
+.vMp-mk{background:none!important;border:0!important}
+.vMp-pin{width:30px;height:40px;position:relative;animation:vMpDrop .7s cubic-bezier(.3,1.3,.5,1) both}
+.vMp-pin i{position:absolute;left:1px;top:1px;width:28px;height:28px;background:var(--shu);border:3px solid var(--paper-hi);border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 8px rgba(0,0,0,.45)}
+.vMp-pin i::after{content:"";position:absolute;inset:6px;background:var(--paper-hi);border-radius:50%}
+@keyframes vMpDrop{0%{opacity:0;transform:translateY(-90px)}35%{opacity:1}70%{transform:translateY(4px)}100%{opacity:1;transform:none}}
+.vMp-circ{position:relative;width:var(--s);height:var(--s);display:grid;place-items:center;border-radius:50%;background:var(--shu);border:2px solid var(--paper-hi);box-shadow:0 4px 12px rgba(0,0,0,.5);color:#fff7ee;cursor:pointer;animation:vMpDrop .7s cubic-bezier(.3,1.3,.5,1) both}
+.vMp-circ b{font:700 15px/1 var(--f-lat);font-variant-numeric:lining-nums}
+.vMp-circ span{position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);white-space:nowrap;font:500 12px/1.2 var(--f-min);letter-spacing:.08em;color:var(--kinari);text-shadow:0 0 6px var(--sumi),0 0 2px var(--sumi)}
+.vMp-mk--town{text-align:center}
+.vMp-town{display:block;text-align:center;white-space:nowrap;font:500 15px/24px var(--f-min);letter-spacing:.2em;color:var(--ink-3);opacity:.5;pointer-events:none}
+/* 結果の店の札: 上から順に、少しずつ遅れて現れる */
+.vMp-gridin>li{animation:vMpIn .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes vMpIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.vMp-gridin>li:nth-child(2){animation-delay:60ms}.vMp-gridin>li:nth-child(3){animation-delay:120ms}.vMp-gridin>li:nth-child(4){animation-delay:180ms}
+.vMp-gridin>li:nth-child(5){animation-delay:240ms}.vMp-gridin>li:nth-child(6){animation-delay:300ms}.vMp-gridin>li:nth-child(7){animation-delay:360ms}
+.vMp-gridin>li:nth-child(8){animation-delay:420ms}.vMp-gridin>li:nth-child(9){animation-delay:480ms}.vMp-gridin>li:nth-child(10){animation-delay:540ms}
+.vMp-gridin>li:nth-child(11){animation-delay:600ms}.vMp-gridin>li:nth-child(12){animation-delay:660ms}.vMp-gridin>li:nth-child(n+13){animation-delay:720ms}
+@media (max-width:820px){
+  .vMp-leaf{height:300px}
+}
+@media (prefers-reduced-motion:reduce){
+  .vMp-pin,.vMp-circ,.vMp-gridin>li{animation:none!important}
+}
+
+/* e「手描き風の地図」（既定）: 地理院ベクトルタイルから描き起こして画像（WebP）にした地図を、実際の範囲に敷く（ShopMap.tsx）。箱の中だけ明るい手描き風。まわりの枠・一覧は暖簾の色のまま */
+.vMp-leaf--e{background:#f1ead6}
+.vMp-leaf--e .leaflet-control-attribution{display:none}
+.vMp-ill{image-rendering:auto;max-width:none!important}
+.vMp-credit{position:absolute;right:8px;bottom:6px;z-index:460;margin:0;padding:2px 8px;background:rgba(255,255,255,.72);color:#4a4a42;font:400 12px/1.6 var(--f-sans);letter-spacing:.02em;pointer-events:none}
+.vMp-town--e{font-family:var(--f-brush);font-size:18px;letter-spacing:.1em;color:#26332e;opacity:.92;text-shadow:0 0 5px #f6f1e0,0 0 3px #f6f1e0,0 0 2px #f6f1e0}
+.vMp-leaf--e .vMp-circ{background:#e8772e}
+.vMp-leaf--e .vMp-circ span{color:#25406b;text-shadow:0 0 5px #fff,0 0 2px #fff}
+.vMp-leaf--e .leaflet-control-zoom a{color:#25406b}
+
+.vMp-lead{stroke:#6b5d4c;stroke-width:1.4;stroke-dasharray:3 3;fill:none;opacity:.85}
+.vMp-leaddot{fill:#6b5d4c;stroke:#fff;stroke-width:1;opacity:.9}
+
+/* ---------- ピン（写真つきの札は立てない）: ピンに乗る（hover）と店名だけ小さく出る。押されているピンは色と大きさで分かる ---------- */
+.vMp-pin i{transition:transform .16s,background .16s,box-shadow .16s}
+.vMp-pn{position:absolute;left:50%;bottom:calc(100% + 4px);transform:translateX(-50%);padding:3px 8px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-radius:5px;background:rgba(26,20,16,.92);color:#fff;font:600 12px/1.4 var(--f-sans);letter-spacing:.02em;pointer-events:none;opacity:0;transition:opacity .12s;z-index:5}
+@media (hover:hover){
+  .vMp-mk:not(.vMp-mk--town):hover .vMp-pn{opacity:1}
+}
+.vMp-mk:not(.vMp-mk--town):focus-visible .vMp-pn{opacity:1}
+.vMp-mk:not(.vMp-mk--town):hover,.vMp-mk:not(.vMp-mk--town):focus-visible{z-index:2500!important}
+.vMp-mk:focus{outline:none}
+.vMp-mk:focus-visible .vMp-pin i{box-shadow:0 0 0 3px #1c2541,0 3px 8px rgba(0,0,0,.45)}
+.vMp-mk.is-sel{z-index:3000!important}
+.vMp-mk.is-sel .vMp-pin i{background:#1c2541;border-color:#fff;transform:rotate(-45deg) scale(1.24);box-shadow:0 0 0 3px #f26a10,0 5px 12px rgba(0,0,0,.5)}
+.vMp-mk.is-sel .vMp-pin i::after{background:#fff}
+.vMp-mk.is-sel:not(.vMp-mk--town) .vMp-pn{opacity:0!important}
+
+/* ---------- 店の情報の札（PinCard.tsx）: ピンを押すと出る。PC はピンの上（入らなければ下・横）に吹き出し、スマホ（幅 520 未満）は箱の下の端の横長の札 ---------- */
+.vMp-card{position:absolute;z-index:1400;box-sizing:border-box;display:flex;flex-direction:column;overflow:auto;background:#fff;color:#1a1410;border-radius:12px;box-shadow:0 14px 34px rgba(20,16,10,.4),0 0 0 1px rgba(20,16,10,.06);font:400 13px/1.6 var(--f-sans);animation:vMpCardIn .18s ease-out both;outline:none;text-align:left;letter-spacing:0}
+@keyframes vMpCardIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.vMp-card-x{position:absolute;top:2px;right:2px;z-index:2;width:44px;height:44px;display:grid;place-items:center;border:0;padding:0;color:#1a1410;cursor:pointer;background:radial-gradient(circle,rgba(255,255,255,.94) 0 15px,rgba(255,255,255,0) 16px)}
+.vMp-card-ph{display:block;width:100%;height:128px;object-fit:cover;border-radius:12px 12px 0 0;background:#efe6d6}
+.vMp-card-b{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;padding:12px 14px 14px;min-width:0}
+.vMp-card-h{padding-right:34px}
+.vMp-card-nm{font:700 15px/1.45 var(--f-min,var(--f-sans));overflow-wrap:anywhere}
+.vMp-card-m{font:400 12.5px/1.6 var(--f-sans);color:#6b5d4c}
+.vMp-card-c{justify-self:start;margin-top:2px;padding:1px 10px;border-radius:999px;background:#f3ece0;color:#4a3f33;font:500 12px/1.7 var(--f-sans)}
+.vN .vMp-card .vMp-card-a{display:flex;align-items:center;min-height:44px;margin-top:2px;color:#c4510a;font:700 14px/1.2 var(--f-min,var(--f-sans));letter-spacing:.06em}
+.vMp-card-back{min-height:44px;margin:0;padding:0;border:0;background:none;color:#4a3f33;font:600 12.5px/1.4 var(--f-sans);text-align:left;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.vMp-card-h{font:700 14px/1.5 var(--f-min,var(--f-sans))}
+.vMp-card-l{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;margin:6px 0 0;padding:0;list-style:none}
+.vMp-card-l button{width:100%;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 12px;border:0;border-radius:8px;background:#f7f2e8;color:#1a1410;font:600 13px/1.3 var(--f-sans);text-align:left;cursor:pointer}
+.vMp-card-l button:hover,.vMp-card-l button:focus-visible{background:#f3e3cf}
+.vMp-card-ln{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vMp-card-lm{flex:0 1 auto;min-width:0;max-width:50%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:400 11.5px/1 var(--f-sans);color:#6b5d4c}
+.vMp-card-more{margin:6px 0 0;font:400 12px/1.6 var(--f-sans);color:#6b5d4c}
+.vMp-card:focus-visible{box-shadow:0 14px 34px rgba(20,16,10,.4),0 0 0 3px #1c2541}
+.vMp-card--sheet{left:8px;right:8px;bottom:8px;width:auto;max-height:min(66%,330px)}
+.vMp-card--sheet.is-one.has-ph{display:grid;grid-template-columns:minmax(0,104px) minmax(0,1fr)}
+.vMp-card--sheet.is-one.has-ph .vMp-card-ph{height:100%;min-height:128px;border-radius:12px 0 0 12px}
+.vMp-card--sheet.is-one .vMp-card-b{padding:10px 48px 8px 12px}
+.vMp-card--sheet .vMp-card-nm{font-size:14.5px}
+@media (prefers-reduced-motion:reduce){
+  .vMp-card{animation:none}
+  .vMp-pin i{transition:none}
+}

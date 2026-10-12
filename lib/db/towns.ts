@@ -8,7 +8,8 @@
 import { cache } from "react";
 import type { Restaurant, RegionKey } from "@/lib/regions";
 import { getAllRestaurants, getRestaurantsByRegion } from "@/lib/db/restaurants";
-import { groupByTown, parseTown, townHref } from "@/lib/towns";
+import { groupByTown, parseTown } from "@/lib/towns";
+import { townLinkHref } from "@/lib/portal/noren/areaLinks";
 
 export type TownSummary = {
   region: RegionKey;
@@ -26,7 +27,7 @@ function summarize(stores: Restaurant[]): TownSummary[] {
       town: g.town,
       pref: g.pref,
       count: g.items.length,
-      href: townHref(g.region, g.town),
+      href: townLinkHref(g.region, g.town), // RELEASE_REST が true のあいだは /search?region=…&town=…（地域・街のページは「さがす」へ統合済み）。false は街ページ /region/<region>/<街>
     }))
     .sort((a, b) => b.count - a.count || a.town.localeCompare(b.town, "ja"));
 }
@@ -64,5 +65,5 @@ export async function getTownOfRestaurant(
   if (!p) return null;
   const stores = regionStoresHint ?? (await regionStores(r.region as RegionKey));
   const count = stores.filter((x) => parseTown(x.address, x.region)?.town === p.town).length;
-  return { town: p.town, pref: p.pref, count, href: townHref(r.region, p.town) };
+  return { town: p.town, pref: p.pref, count, href: townLinkHref(r.region, p.town) };
 }

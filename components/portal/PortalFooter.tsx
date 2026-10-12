@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { VERTICALS } from "@/lib/verticals";
+import { AREA_TO_SEARCH, areaIndexHref } from "@/lib/portal/noren/areaLinks";
+import { SCENE_TO_SEARCH, sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { BLOCK_FACE } from "@/lib/portal/meta";
@@ -55,8 +57,9 @@ export default async function PortalFooter() {
             <h2>グルメを読む</h2>
             <ul>
               <li><Link href="/feature">特集</Link></li>
-              <li><Link href="/region">地域から探す</Link></li>
-              <li><Link href="/scene">利用シーンから探す</Link></li>
+              {/* 地域・シーンのページを「さがす」へ統合したあとは、行き先が「店舗を探す」と同じになるので項目を置かない */}
+              {!AREA_TO_SEARCH && <li><Link href={areaIndexHref()}>地域から探す</Link></li>}
+              {!SCENE_TO_SEARCH && <li><Link href={sceneIndexHref()}>利用シーンから探す</Link></li>}
               <li><Link href="/search">店舗を探す</Link></li>
             </ul>
           </div>

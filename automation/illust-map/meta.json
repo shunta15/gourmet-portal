@@ -1,0 +1,1146 @@
+{
+ "e/osaka/overview": {
+  "style": "e",
+  "key": "osaka",
+  "kind": "overview",
+  "file": "svg/e/osaka.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    134.64844
+   ],
+   [
+    35.17381,
+    136.40625
+   ]
+  ],
+  "svgKB": 383,
+  "waterRaw": [
+   "r18",
+   "r107",
+   "r218",
+   "r231",
+   "r234",
+   "r417"
+  ]
+ },
+ "e/hyogo/overview": {
+  "style": "e",
+  "key": "hyogo",
+  "kind": "overview",
+  "file": "svg/e/hyogo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.45222,
+    134.64844
+   ],
+   [
+    35.03,
+    135.70313
+   ]
+  ],
+  "svgKB": 299,
+  "waterRaw": [
+   "r78",
+   "r82",
+   "r173"
+  ]
+ },
+ "e/tokyo/overview": {
+  "style": "e",
+  "key": "tokyo",
+  "kind": "overview",
+  "file": "svg/e/tokyo.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1536,
+  "H": 768,
+  "bounds": [
+   [
+    35.46067,
+    139.04297
+   ],
+   [
+    35.88905,
+    140.09766
+   ]
+  ],
+  "svgKB": 256,
+  "waterRaw": [
+   "r01",
+   "r91"
+  ]
+ },
+ "e/nagoya/overview": {
+  "style": "e",
+  "key": "nagoya",
+  "kind": "overview",
+  "file": "svg/e/nagoya.svg",
+  "z": 10,
+  "zi": 9.5,
+  "W": 1536,
+  "H": 768,
+  "bounds": [
+   [
+    34.59704,
+    136.05469
+   ],
+   [
+    35.46067,
+    138.16406
+   ]
+  ],
+  "svgKB": 284,
+  "waterRaw": [
+   "r359",
+   "r416",
+   "r454",
+   "r482"
+  ]
+ },
+ "e/fukuoka/overview": {
+  "style": "e",
+  "key": "fukuoka",
+  "kind": "overview",
+  "file": "svg/e/fukuoka.svg",
+  "z": 9,
+  "zi": 9,
+  "W": 1024,
+  "H": 768,
+  "bounds": [
+   [
+    32.54681,
+    129.375
+   ],
+   [
+    34.30714,
+    132.1875
+   ]
+  ],
+  "svgKB": 265,
+  "waterRaw": [
+   "r09",
+   "r80",
+   "r232",
+   "r288",
+   "r511"
+  ]
+ },
+ "e/shizuoka/overview": {
+  "style": "e",
+  "key": "shizuoka",
+  "kind": "overview",
+  "file": "svg/e/shizuoka.svg",
+  "z": 9,
+  "zi": 9.25,
+  "W": 1024,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    137.10938
+   ],
+   [
+    36.03133,
+    139.92188
+   ]
+  ],
+  "svgKB": 303,
+  "waterRaw": [
+   "r81",
+   "r438",
+   "r491",
+   "r505"
+  ]
+ },
+ "e/kanagawa/overview": {
+  "style": "e",
+  "key": "kanagawa",
+  "kind": "overview",
+  "file": "svg/e/kanagawa.svg",
+  "z": 11,
+  "zi": 10.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    35.17381,
+    138.86719
+   ],
+   [
+    35.74651,
+    139.92188
+   ]
+  ],
+  "svgKB": 255,
+  "waterRaw": [
+   "r16"
+  ]
+ },
+ "e/saitama/overview": {
+  "style": "e",
+  "key": "saitama",
+  "kind": "overview",
+  "file": "svg/e/saitama.svg",
+  "z": 10,
+  "zi": 9.75,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    35.46067,
+    138.51563
+   ],
+   [
+    36.59789,
+    140.625
+   ]
+  ],
+  "svgKB": 396,
+  "waterRaw": [
+   "r459"
+  ]
+ },
+ "e/kyoto/overview": {
+  "style": "e",
+  "key": "kyoto",
+  "kind": "overview",
+  "file": "svg/e/kyoto.svg",
+  "z": 12,
+  "zi": 11.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.8138,
+    135.43945
+   ],
+   [
+    35.10193,
+    135.9668
+   ]
+  ],
+  "svgKB": 245,
+  "waterRaw": [
+   "r205"
+  ]
+ },
+ "e/nara/overview": {
+  "style": "e",
+  "key": "nara",
+  "kind": "overview",
+  "file": "svg/e/nara.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    135
+   ],
+   [
+    35.17381,
+    136.75781
+   ]
+  ],
+  "svgKB": 404,
+  "waterRaw": []
+ },
+ "e/hiroshima/overview": {
+  "style": "e",
+  "key": "hiroshima",
+  "kind": "overview",
+  "file": "svg/e/hiroshima.svg",
+  "z": 10,
+  "zi": 10.25,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.01624,
+    131.83594
+   ],
+   [
+    34.88593,
+    133.59375
+   ]
+  ],
+  "svgKB": 422,
+  "waterRaw": [
+   "r193",
+   "r204",
+   "r302",
+   "r364",
+   "r467"
+  ]
+ },
+ "e/gunma/overview": {
+  "style": "e",
+  "key": "gunma",
+  "kind": "overview",
+  "file": "svg/e/gunma.svg",
+  "z": 11,
+  "zi": 10.75,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    36.17336,
+    138.69141
+   ],
+   [
+    36.59789,
+    139.57031
+   ]
+  ],
+  "svgKB": 207,
+  "waterRaw": []
+ },
+ "e/shiga/overview": {
+  "style": "e",
+  "key": "shiga",
+  "kind": "overview",
+  "file": "svg/e/shiga.svg",
+  "z": 10,
+  "zi": 9.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    34.59704,
+    135
+   ],
+   [
+    35.74651,
+    137.10938
+   ]
+  ],
+  "svgKB": 386,
+  "waterRaw": [
+   "r457",
+   "r492"
+  ]
+ },
+ "e/kagoshima/overview": {
+  "style": "e",
+  "key": "kagoshima",
+  "kind": "overview",
+  "file": "svg/e/kagoshima.svg",
+  "z": 11,
+  "zi": 11,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    31.65338,
+    130.42969
+   ],
+   [
+    32.10119,
+    131.30859
+   ]
+  ],
+  "svgKB": 267,
+  "waterRaw": [
+   "r448"
+  ]
+ },
+ "e/wakayama/overview": {
+  "style": "e",
+  "key": "wakayama",
+  "kind": "overview",
+  "file": "svg/e/wakayama.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1024,
+  "H": 768,
+  "bounds": [
+   [
+    34.16182,
+    135.08789
+   ],
+   [
+    34.27084,
+    135.26367
+   ]
+  ],
+  "svgKB": 126,
+  "waterRaw": []
+ },
+ "e/hokkaido/overview": {
+  "style": "e",
+  "key": "hokkaido",
+  "kind": "overview",
+  "file": "svg/e/hokkaido.svg",
+  "z": 8,
+  "zi": 8,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    42.03297,
+    139.21875
+   ],
+   [
+    45.08904,
+    146.25
+   ]
+  ],
+  "svgKB": 169,
+  "waterRaw": []
+ },
+ "e/aomori/overview": {
+  "style": "e",
+  "key": "aomori",
+  "kind": "overview",
+  "file": "svg/e/aomori.svg",
+  "z": 10,
+  "zi": 9.75,
+  "W": 1536,
+  "H": 768,
+  "bounds": [
+   [
+    40.17887,
+    139.92188
+   ],
+   [
+    40.9799,
+    142.03125
+   ]
+  ],
+  "svgKB": 189,
+  "waterRaw": [
+   "r480"
+  ]
+ },
+ "e/iwate/overview": {
+  "style": "e",
+  "key": "iwate",
+  "kind": "overview",
+  "file": "svg/e/iwate.svg",
+  "z": 11,
+  "zi": 10.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    38.82259,
+    140.625
+   ],
+   [
+    39.36828,
+    141.67969
+   ]
+  ],
+  "svgKB": 201,
+  "waterRaw": []
+ },
+ "e/akita/overview": {
+  "style": "e",
+  "key": "akita",
+  "kind": "overview",
+  "file": "svg/e/akita.svg",
+  "z": 13,
+  "zi": 12.75,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    39.67337,
+    140.00977
+   ],
+   [
+    39.77477,
+    140.22949
+   ]
+  ],
+  "svgKB": 95,
+  "waterRaw": []
+ },
+ "e/yamagata/overview": {
+  "style": "e",
+  "key": "yamagata",
+  "kind": "overview",
+  "file": "svg/e/yamagata.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1024,
+  "H": 1024,
+  "bounds": [
+   [
+    38.16911,
+    140.22949
+   ],
+   [
+    38.30718,
+    140.40527
+   ]
+  ],
+  "svgKB": 125,
+  "waterRaw": []
+ },
+ "e/fukushima/overview": {
+  "style": "e",
+  "key": "fukushima",
+  "kind": "overview",
+  "file": "svg/e/fukushima.svg",
+  "z": 10,
+  "zi": 10,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    37.16032,
+    139.57031
+   ],
+   [
+    37.99616,
+    141.32813
+   ]
+  ],
+  "svgKB": 259,
+  "waterRaw": []
+ },
+ "e/ibaraki/overview": {
+  "style": "e",
+  "key": "ibaraki",
+  "kind": "overview",
+  "file": "svg/e/ibaraki.svg",
+  "z": 9,
+  "zi": 9,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    35.46067,
+    138.51563
+   ],
+   [
+    37.16032,
+    142.03125
+   ]
+  ],
+  "svgKB": 258,
+  "waterRaw": [
+   "r435",
+   "r446"
+  ]
+ },
+ "e/tochigi/overview": {
+  "style": "e",
+  "key": "tochigi",
+  "kind": "overview",
+  "file": "svg/e/tochigi.svg",
+  "z": 10,
+  "zi": 9.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    36.03133,
+    138.51563
+   ],
+   [
+    37.16032,
+    140.625
+   ]
+  ],
+  "svgKB": 294,
+  "waterRaw": []
+ },
+ "e/niigata/overview": {
+  "style": "e",
+  "key": "niigata",
+  "kind": "overview",
+  "file": "svg/e/niigata.svg",
+  "z": 13,
+  "zi": 13.75,
+  "W": 768,
+  "H": 768,
+  "bounds": [
+   [
+    37.12529,
+    138.16406
+   ],
+   [
+    37.23033,
+    138.2959
+   ]
+  ],
+  "svgKB": 104,
+  "waterRaw": []
+ },
+ "e/toyama/overview": {
+  "style": "e",
+  "key": "toyama",
+  "kind": "overview",
+  "file": "svg/e/toyama.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    36.63316,
+    137.10938
+   ],
+   [
+    36.73888,
+    137.3291
+   ]
+  ],
+  "svgKB": 184,
+  "waterRaw": []
+ },
+ "e/ishikawa/overview": {
+  "style": "e",
+  "key": "ishikawa",
+  "kind": "overview",
+  "file": "svg/e/ishikawa.svg",
+  "z": 11,
+  "zi": 11,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    36.31513,
+    136.05469
+   ],
+   [
+    36.73888,
+    136.93359
+   ]
+  ],
+  "svgKB": 166,
+  "waterRaw": [
+   "r294"
+  ]
+ },
+ "e/fukui/overview": {
+  "style": "e",
+  "key": "fukui",
+  "kind": "overview",
+  "file": "svg/e/fukui.svg",
+  "z": 10,
+  "zi": 9.25,
+  "W": 1792,
+  "H": 1024,
+  "bounds": [
+   [
+    35.74651,
+    135.35156
+   ],
+   [
+    36.87962,
+    137.8125
+   ]
+  ],
+  "svgKB": 197,
+  "waterRaw": []
+ },
+ "e/nagano/overview": {
+  "style": "e",
+  "key": "nagano",
+  "kind": "overview",
+  "file": "svg/e/nagano.svg",
+  "z": 8,
+  "zi": 8,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    34.30714,
+    135
+   ],
+   [
+    37.71859,
+    142.03125
+   ]
+  ],
+  "svgKB": 352,
+  "waterRaw": [
+   "r320",
+   "r470",
+   "r473",
+   "r501",
+   "r515",
+   "r518"
+  ]
+ },
+ "e/gifu/overview": {
+  "style": "e",
+  "key": "gifu",
+  "kind": "overview",
+  "file": "svg/e/gifu.svg",
+  "z": 9,
+  "zi": 8.5,
+  "W": 1536,
+  "H": 768,
+  "bounds": [
+   [
+    34.88593,
+    135
+   ],
+   [
+    36.59789,
+    139.21875
+   ]
+  ],
+  "svgKB": 286,
+  "waterRaw": [
+   "r363",
+   "r370",
+   "r440",
+   "r441"
+  ]
+ },
+ "e/mie/overview": {
+  "style": "e",
+  "key": "mie",
+  "kind": "overview",
+  "file": "svg/e/mie.svg",
+  "z": 9,
+  "zi": 9,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    33.72434,
+    135
+   ],
+   [
+    35.46067,
+    138.51563
+   ]
+  ],
+  "svgKB": 362,
+  "waterRaw": [
+   "r387",
+   "r394",
+   "r497"
+  ]
+ },
+ "e/tottori/overview": {
+  "style": "e",
+  "key": "tottori",
+  "kind": "overview",
+  "file": "svg/e/tottori.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1024,
+  "H": 768,
+  "bounds": [
+   [
+    35.35322,
+    133.24219
+   ],
+   [
+    35.46067,
+    133.41797
+   ]
+  ],
+  "svgKB": 120,
+  "waterRaw": []
+ },
+ "e/shimane/overview": {
+  "style": "e",
+  "key": "shimane",
+  "kind": "overview",
+  "file": "svg/e/shimane.svg",
+  "z": 12,
+  "zi": 11.75,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    35.31737,
+    132.80273
+   ],
+   [
+    35.53223,
+    133.24219
+   ]
+  ],
+  "svgKB": 145,
+  "waterRaw": []
+ },
+ "e/okayama/overview": {
+  "style": "e",
+  "key": "okayama",
+  "kind": "overview",
+  "file": "svg/e/okayama.svg",
+  "z": 13,
+  "zi": 13.75,
+  "W": 768,
+  "H": 512,
+  "bounds": [
+   [
+    34.56086,
+    133.68164
+   ],
+   [
+    34.63321,
+    133.81348
+   ]
+  ],
+  "svgKB": 111,
+  "waterRaw": []
+ },
+ "e/yamaguchi/overview": {
+  "style": "e",
+  "key": "yamaguchi",
+  "kind": "overview",
+  "file": "svg/e/yamaguchi.svg",
+  "z": 11,
+  "zi": 10.5,
+  "W": 1536,
+  "H": 1024,
+  "bounds": [
+   [
+    33.72434,
+    130.78125
+   ],
+   [
+    34.30714,
+    131.83594
+   ]
+  ],
+  "svgKB": 202,
+  "waterRaw": [
+   "r462"
+  ]
+ },
+ "e/kagawa/overview": {
+  "style": "e",
+  "key": "kagawa",
+  "kind": "overview",
+  "file": "svg/e/kagawa.svg",
+  "z": 12,
+  "zi": 11.75,
+  "W": 1280,
+  "H": 1024,
+  "bounds": [
+   [
+    34.16182,
+    133.68164
+   ],
+   [
+    34.45222,
+    134.12109
+   ]
+  ],
+  "svgKB": 195,
+  "waterRaw": []
+ },
+ "e/ehime/overview": {
+  "style": "e",
+  "key": "ehime",
+  "kind": "overview",
+  "file": "svg/e/ehime.svg",
+  "z": 11,
+  "zi": 11,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    33.87042,
+    132.71484
+   ],
+   [
+    34.30714,
+    133.59375
+   ]
+  ],
+  "svgKB": 182,
+  "waterRaw": [
+   "r356"
+  ]
+ },
+ "e/kochi/overview": {
+  "style": "e",
+  "key": "kochi",
+  "kind": "overview",
+  "file": "svg/e/kochi.svg",
+  "z": 13,
+  "zi": 13.75,
+  "W": 768,
+  "H": 768,
+  "bounds": [
+   [
+    33.50476,
+    133.50586
+   ],
+   [
+    33.61462,
+    133.6377
+   ]
+  ],
+  "svgKB": 155,
+  "waterRaw": []
+ },
+ "e/saga/overview": {
+  "style": "e",
+  "key": "saga",
+  "kind": "overview",
+  "file": "svg/e/saga.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    33.17434,
+    130.25391
+   ],
+   [
+    33.28462,
+    130.47363
+   ]
+  ],
+  "svgKB": 372,
+  "waterRaw": []
+ },
+ "e/nagasaki/overview": {
+  "style": "e",
+  "key": "nagasaki",
+  "kind": "overview",
+  "file": "svg/e/nagasaki.svg",
+  "z": 12,
+  "zi": 11.75,
+  "W": 1280,
+  "H": 768,
+  "bounds": [
+   [
+    32.69487,
+    129.81445
+   ],
+   [
+    32.91649,
+    130.25391
+   ]
+  ],
+  "svgKB": 165,
+  "waterRaw": []
+ },
+ "e/miyazaki/overview": {
+  "style": "e",
+  "key": "miyazaki",
+  "kind": "overview",
+  "file": "svg/e/miyazaki.svg",
+  "z": 12,
+  "zi": 11.75,
+  "W": 1280,
+  "H": 1024,
+  "bounds": [
+   [
+    32.4727,
+    131.48438
+   ],
+   [
+    32.7688,
+    131.92383
+   ]
+  ],
+  "svgKB": 153,
+  "waterRaw": []
+ },
+ "e/okinawa/overview": {
+  "style": "e",
+  "key": "okinawa",
+  "kind": "overview",
+  "file": "svg/e/okinawa.svg",
+  "z": 13,
+  "zi": 13,
+  "W": 1024,
+  "H": 768,
+  "bounds": [
+   [
+    26.31311,
+    127.74902
+   ],
+   [
+    26.43123,
+    127.9248
+   ]
+  ],
+  "svgKB": 113,
+  "waterRaw": []
+ },
+ "g/japan/overview": {
+  "style": "g",
+  "key": "japan",
+  "kind": "overview",
+  "file": "svg/g/japan.svg",
+  "z": 6,
+  "zi": 5.5,
+  "W": 0,
+  "H": 0,
+  "bounds": [
+   [
+    16.63619,
+    112.5
+   ],
+   [
+    48.9225,
+    163.125
+   ]
+  ],
+  "svgKB": 40
+ },
+ "e/japan/overview": {
+  "style": "e",
+  "key": "japan",
+  "kind": "overview",
+  "file": "svg/e/japan.svg",
+  "z": 6,
+  "zi": 5.5,
+  "W": 0,
+  "H": 0,
+  "bounds": [
+   [
+    16.63619,
+    112.5
+   ],
+   [
+    48.9225,
+    163.125
+   ]
+  ],
+  "svgKB": 50
+ },
+ "e/kanto/area": {
+  "style": "e",
+  "key": "kanto",
+  "kind": "area",
+  "file": "svg/e/kanto.svg",
+  "z": 10,
+  "zi": 8.5,
+  "W": 2268,
+  "H": 1815,
+  "bounds": [
+   [
+    34.976,
+    138.311
+   ],
+   [
+    36.99268,
+    141.42563
+   ]
+  ],
+  "svgKB": 300
+ },
+ "e/hokkaido-tohoku/area": {
+  "style": "e",
+  "key": "hokkaido-tohoku",
+  "kind": "area",
+  "file": "svg/e/hokkaido-tohoku.svg",
+  "z": 8,
+  "zi": 6.39,
+  "W": 2437,
+  "H": 1949,
+  "bounds": [
+   [
+    36.49639,
+    135.54382
+   ],
+   [
+    44.61393,
+    148.93066
+   ]
+  ],
+  "svgKB": 190
+ },
+ "e/chubu/area": {
+  "style": "e",
+  "key": "chubu",
+  "kind": "area",
+  "file": "svg/e/chubu.svg",
+  "z": 9,
+  "zi": 7.82,
+  "W": 1818,
+  "H": 1455,
+  "bounds": [
+   [
+    34.32076,
+    135.16479
+   ],
+   [
+    37.55547,
+    140.15808
+   ]
+  ],
+  "svgKB": 378
+ },
+ "e/kinki/area": {
+  "style": "e",
+  "key": "kinki",
+  "kind": "area",
+  "file": "svg/e/kinki.svg",
+  "z": 10,
+  "zi": 8.72,
+  "W": 1944,
+  "H": 1556,
+  "bounds": [
+   [
+    33.97753,
+    134.44931
+   ],
+   [
+    35.73091,
+    137.11899
+   ]
+  ],
+  "svgKB": 440
+ },
+ "e/chugoku-shikoku/area": {
+  "style": "e",
+  "key": "chugoku-shikoku",
+  "kind": "area",
+  "file": "svg/e/chugoku-shikoku.svg",
+  "z": 10,
+  "zi": 8.1,
+  "W": 2989,
+  "H": 2264,
+  "bounds": [
+   [
+    33.2318,
+    130.4393
+   ],
+   [
+    35.79331,
+    134.54407
+   ]
+  ],
+  "svgKB": 351
+ },
+ "e/kyushu-okinawa/area": {
+  "style": "e",
+  "key": "kyushu-okinawa",
+  "kind": "area",
+  "file": "svg/e/kyushu-okinawa.svg",
+  "z": 9,
+  "zi": 8.03,
+  "W": 1569,
+  "H": 1256,
+  "bounds": [
+   [
+    31.35833,
+    128.67462
+   ],
+   [
+    34.25722,
+    132.98401
+   ]
+  ],
+  "svgKB": 196
+ }
+}

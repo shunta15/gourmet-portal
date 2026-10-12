@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_HREF } from "@/lib/portal/noren/featureKinds";
+import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_HREF, FEATURE_ROUNDUP_WALK, FEATURE_WALK_HREF } from "@/lib/portal/noren/featureKinds";
+import { isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import "@/app/proto-noren/feature.css";
 import FeatureMap from "@/components/portal/FeatureMap";
 import FeatureHero, { type StreetItem } from "@/components/portal/noren/FeatureHero";
@@ -9,7 +10,7 @@ import DoorLift from "@/components/portal/noren/DoorLift";
 import Lantern from "@/components/portal/noren/Lantern";
 import LanternInner from "@/components/portal/noren-real/LanternInner";
 import { NOREN_REAL_INNER } from "@/lib/portal/noren/realTop";
-import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
 import type { Feature, FeatureArticle } from "@/lib/regions";
 import type { FmapData } from "@/lib/portal/fmap";
 import { mapsUrlForRankItem } from "@/lib/maps";
@@ -83,7 +84,9 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
               <Link href={links.top} data-cursor="BACK">トップ</Link>
             </li>
             <li>
-              <Link href={RELEASE_REST ? FEATURE_ROUNDUP_HREF : "/feature"} data-cursor="BACK">{RELEASE_REST ? FEATURE_KIND_ROUNDUP : "特集"}</Link>
+              {/* 街歩き・コースの記事は「街歩き・コース」の棚へ（「シーン別まとめ記事」とは出さない）。利用シーン+店舗紹介の記事がこの枠に来たときだけ、その棚の名前。
+                  店 1 軒の記事（POINT 01〜。対象外の記事がこの枠に来る）は今までどおり「特集」→ /feature（isSinglePoint） */}
+              <Link href={RELEASE_FEATURE && !isSinglePoint ? (isSceneShopFeature(A.id, A) ? FEATURE_ROUNDUP_HREF : FEATURE_WALK_HREF) : "/feature"} data-cursor="BACK">{RELEASE_FEATURE && !isSinglePoint ? (isSceneShopFeature(A.id, A) ? FEATURE_KIND_ROUNDUP : FEATURE_ROUNDUP_WALK) : "特集"}</Link>
             </li>
             <li>
               <span aria-current="page">{A.title}</span>

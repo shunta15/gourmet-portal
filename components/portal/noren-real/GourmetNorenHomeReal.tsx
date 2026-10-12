@@ -8,9 +8,13 @@ import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/nor
 import NorenHeroReal from "./NorenHeroReal";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
-import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
+import { FEATURE_KIND_ROUNDUP, FEATURE_KIND_SINGLE, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
 import OpenSearch from "@/components/portal/noren/OpenSearch";
+import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
+import { buildBlockTop } from "@/lib/portal/noren/blockTop";
+import { resolveOpen, type Look, type OpenView } from "@/lib/portal/noren/looks";
 import "../noren/top.css";
 import "./real.css";
 import { NOREN_HERO_KEYS, type NorenLinks } from "@/lib/portal/noren/nav";
@@ -42,6 +46,8 @@ export default async function GourmetNorenHomeReal({
   spShape,
   allowSpUrl = false,
   allowCopyUrl = false,
+  searchLook = "noren",
+  searchOpen,
 }: {
   links: NorenLinks;
   dye?: DyeKind;
@@ -52,6 +58,10 @@ export default async function GourmetNorenHomeReal({
   allowSpUrl?: boolean;
   /** URL の ?copy=1〜5 で見出し・リードの候補に替えられるか（?sp= と同じ。本番でないときだけ true） */
   allowCopyUrl?: boolean;
+  /** 「店を、さがす。」の節の見た目（lib/portal/noren/looks.ts。app/gourmet/page.tsx が決めて渡す）。省略は今までの暖簾の見た目 */
+  searchLook?: Look;
+  /** block のときの節の色・タイルの有無・帯の地図（lib/portal/noren/looks.ts の resolveOpen。省略は既定） */
+  searchOpen?: OpenView;
 }) {
   const restaurants = await getAllRestaurants();
   const byId = new Map(restaurants.map((r) => [r.id, r]));
@@ -59,6 +69,7 @@ export default async function GourmetNorenHomeReal({
 
   const chapters = buildChapters(restaurants, regionName);
   const openSearchData = buildOpenSearchData(restaurants);
+  const blockTop = searchLook === "block" ? buildBlockTop(restaurants, openSearchData.cuisines, openSearchData.regions) : null;
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
@@ -100,38 +111,11 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      <OpenSearch data={openSearchData} />
+      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandAreas={blockTop.bandAreas} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
 
       {/* 3 章 */}
+      {/* 章の前置き（「七つの章」の見出し・説明・7 つの目次）は置かない（2026-10-12 オーナー指示「ここいらないかな」）。「店を、さがす。」の節のすぐ下から、和食の章が始まる */}
       <div className="vN-chs" id="chapters">
-        <div className="vN-chs-intro">
-          <div className="vN-chs-intro-tx vN-rv">
-            <p className="vN-chs-intro-k">七つの章</p>
-            <p className="vN-chs-intro-t">
-              和、洋、中、麺、肉、酒、茶。<br />
-              暖簾の一文字ごとに、<br />
-              実在の店を数軒ずつ。
-            </p>
-            <p className="vN-chs-intro-s">スクロールで店が入れ替わります。縦書きの店名を押すと、その店のページへ。数字は、その章に入る掲載店の数です。</p>
-            <p className="vN-chs-intro-more">
-              <span>言葉やエリアで絞るなら、上の「店を、さがす。」から。</span>
-              <a href="#open-search" data-cursor="JUMP">店をさがす <span aria-hidden="true">↑</span></a>
-            </p>
-          </div>
-          <ul className="vN-toc vN-rv" style={{ ["--d" as string]: 1 }}>
-            {chapters.map((c) => (
-              <li key={c.key}>
-                <a href={`#ch-${c.key}`} data-cursor="JUMP">
-                  <i className="vN-toc-no">{c.no}</i>
-                  <b className="vN-toc-k">{c.kanji}</b>
-                  <span className="vN-toc-c">
-                    <em>{c.count}</em>軒
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
         {chapters.map((c, i) => (
           <Fragment key={c.key}>
             {/* フッターの暖簾（今の本番の 5 つ）の行き先 #ch-sushi・#ch-soba の別名の目印。入口の「和」の章の手前に着く */}
@@ -162,9 +146,10 @@ export default async function GourmetNorenHomeReal({
       </section>
 
       {/* 5 特集（お品書き） */}
-      <section className="vN-menu" id="features" aria-label="まとめ記事">
+      {/* 節の見出し・「すべて見る」の言い方は、特集の 3 棚（RELEASE_FEATURE）に合わせる。false のあいだは今の本番の「まとめ記事」「特集記事・まとめ記事」 */}
+      <section className="vN-menu" id="features" aria-label={RELEASE_FEATURE ? "特集" : "まとめ記事"}>
         <div className="vN-menu-head vN-rv">
-          <h2 className="vN-tate-h">まとめ記事</h2>
+          <h2 className="vN-tate-h">{RELEASE_FEATURE ? "特集" : "まとめ記事"}</h2>
           <p className="vN-menu-note">
             街を歩く、季節をたどる。<br />
             お品書きのように、いくつか。
@@ -192,7 +177,7 @@ export default async function GourmetNorenHomeReal({
           })}
         </ol>
         <p className="vN-menu-more vN-rv">
-          <Link href="/feature" data-cursor="ALL">特集記事・まとめ記事をすべて見る <span aria-hidden="true">→</span></Link>
+          <Link href="/feature" data-cursor="ALL">{RELEASE_FEATURE ? `${FEATURE_KIND_SINGLE}・${FEATURE_KIND_ROUNDUP}・${FEATURE_ROUNDUP_WALK}` : "特集記事・まとめ記事"}をすべて見る <span aria-hidden="true">→</span></Link>
         </p>
       </section>
 

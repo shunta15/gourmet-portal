@@ -15,7 +15,9 @@ import { sanitizeFeatureArticle } from "@/lib/imageBlocklist";
 import { applyFeatureSpotPhotos } from "@/lib/featureSpotPhotos";
 import { applyFeatureSinglePhotos } from "@/lib/portal/noren/featureSinglePhotos";
 import { cleanArticleText } from "@/lib/otherSiteRatings";
-import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
+import { NOREN_STRIP_OTHER_RATINGS, RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
+import { rewriteAreaLinksInArticle } from "@/lib/portal/noren/areaLinks";
+import { isHiddenFeature, stripHiddenStoreLinks } from "@/lib/hiddenStores";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -112,6 +114,8 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
   } catch {
     id = rawId;
   }
+  // 非表示の店 1 軒だけを扱う記事（lib/hiddenStores.ts。2026-10-12 オーナー決定）は返さない（ページは 404）
+  if (isHiddenFeature(id)) return null;
   let dbArticle: FeatureArticle | null = null;
   try {
     const { data, error } = await db()
@@ -167,7 +171,9 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
   // その前に、店 1 軒の記事の「足りない写真」を、対の店ページの写真で補う（lib/portal/noren/featureSinglePhotos.ts の表。表に無い記事は何も変わらない）。
   // 表の写真も、この後の sanitizeFeatureArticle（表示禁止の画像の除去）を通る
   // 店 1 軒の記事の写真の補いは RELEASE_REST が true のときだけ、ほかのサイトの評価の除去は NOREN_STRIP_OTHER_RATINGS が true のときだけ（false は今の本番と同じ）
-  const a = applyFeatureSpotPhotos(sanitizeFeatureArticle(RELEASE_REST ? applyFeatureSinglePhotos(result) : result));
+  // 地域・シーンへのリンクの付け替え（rewriteAreaLinksInArticle。「さがす」へ統合したときだけ働く）と、非表示の店へのリンクの除去（stripHiddenStoreLinks）は RELEASE_REST に関係なく通す
+  const linked = rewriteAreaLinksInArticle(stripHiddenStoreLinks(result));
+  const a = applyFeatureSpotPhotos(sanitizeFeatureArticle(RELEASE_REST || RELEASE_FEATURE ? applyFeatureSinglePhotos(linked) : linked)); // 表（featureSinglePhotos.ts）の記事は赤れんが 1 本（1 店 1 ページの対象 50 本の 1 つ）だけ
   return NOREN_STRIP_OTHER_RATINGS ? cleanArticleText(a) : a;
 }
 
@@ -187,7 +193,7 @@ export async function getAllFeatureArticleIds(): Promise<string[]> {
     console.warn("[db] getAllFeatureArticleIds DB read failed:", e);
   }
   for (const id of Object.keys(FEATURE_ARTICLES)) ids.add(id);
-  return [...ids];
+  return [...ids].filter((id) => !isHiddenFeature(id));
 }
 
 /**
@@ -214,11 +220,11 @@ export async function getAllFeatureArticleIdsWithUpdatedAt(): Promise<
   const result: { id: string; updatedAt?: string }[] = [];
   // DB から取得した ID は updated_at 付き
   for (const [id, updatedAt] of dbMap) {
-    result.push({ id, updatedAt });
+    if (!isHiddenFeature(id)) result.push({ id, updatedAt });
   }
   // data.ts からのフォールバック（DB にない ID）は updated_at なし
   for (const id of Object.keys(FEATURE_ARTICLES)) {
-    if (!dbMap.has(id)) {
+    if (!dbMap.has(id) && !isHiddenFeature(id)) {
       result.push({ id });
     }
   }

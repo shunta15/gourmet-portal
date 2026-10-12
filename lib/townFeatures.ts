@@ -6,6 +6,7 @@
  *      曖昧 = 同じ地域の他の街の名前の頭と重なる（例: 富士市の「富士」は富士宮市の頭と重なる）。
  *  - 店の特集記事: 街にある店の featureId（記事由来の店）。
  */
+import { featureHrefOf } from "@/lib/portal/noren/onePage";
 import { FEATURES, FEATURE_ARTICLES, type RegionKey, type Restaurant } from "@/lib/data";
 import { getFeatureRegions } from "@/lib/featureRegions";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
@@ -43,7 +44,7 @@ const linkOf = (id: string): TownFeatureLink | null => {
   if (!a) return null;
   // 一番上の写真が使えない特集だけ、集めた写真（lib/featureSpotPhotos.ts）に替える。ほかは今のまま
   const hero = featureHeroImage(a);
-  return { id, href: `/feature/${encodeURIComponent(id)}`, kicker: a.kicker, title: a.title, image: isBlockedImage(hero) ? "/restaurants/_placeholder/feature-hero.jpg" : hero };
+  return { id, href: featureHrefOf(id), kicker: a.kicker, title: a.title, image: isBlockedImage(hero) ? "/restaurants/_placeholder/feature-hero.jpg" : hero };
 };
 
 export function getTownFeatureLinks(

@@ -13,7 +13,7 @@ import storeStationsJson from "@/lib/stations/storeStations.json";
 import { BOOL_FACETS, FACET_DEFS, type BoolFacetId, type FacetId, type FacetPayload } from "./facetDefs";
 import { facetRowOf, type FacetRow, type StatedStations } from "./facetRow";
 import { FEATURE_KEYS, type FeatureKey } from "./facetParse";
-import { packWeeks } from "./openNow";
+import { OPEN_NOW_ON, packWeeks } from "./openNow";
 
 const STORE_STATIONS = storeStationsJson as unknown as Record<string, StatedStations>;
 
@@ -86,11 +86,16 @@ export function buildFacetPayload(restaurants: Restaurant[]): FacetPayload {
     if (band >= 0 || mask !== 0) payloadRows[id] = [band, mask];
   }
 
-  // 「いま営業中」の判定に使う営業予定（読み取れた店だけ）
-  const packed = packWeeks(restaurants.map((r) => ({ id: r.id, hours: r.hours, closed: r.closed })));
-  const index: Record<string, number> = {};
-  for (const [id, i] of Object.entries(packed.index)) if (packed.table[i] !== null) index[id] = i;
+  // 「いま営業中」の判定に使う営業予定（読み取れた店だけ）。OPEN_NOW_ON が false（2026-10-12 オーナー決定で概念を外した）のあいだは作らず・渡さない
+  let weeks: FacetPayload["weeks"] = { table: [], index: {} };
+  if (OPEN_NOW_ON) {
+    const packed = packWeeks(restaurants.map((r) => ({ id: r.id, hours: r.hours, closed: r.closed })));
+    const index: Record<string, number> = {};
+    for (const [id, i] of Object.entries(packed.index)) if (packed.table[i] !== null) index[id] = i;
+    weeks = { table: packed.table, index };
+  }
 
-  const shown = FACET_DEFS.map((d) => d.id).filter((id) => id === "open" || shownBool.has(id));
-  return { rows: payloadRows, weeks: { table: packed.table, index }, shown, shownBands };
+  // 画面に出す条件。「いま営業中」は OPEN_NOW_ON が false のあいだ出さない（URL の f=open は parseSelection が「出していない条件」として無視する）
+  const shown = FACET_DEFS.map((d) => d.id).filter((id) => (id === "open" ? OPEN_NOW_ON : shownBool.has(id)));
+  return { rows: payloadRows, weeks, shown, shownBands };
 }

@@ -1,3 +1,4 @@
+import { onePageShopOf } from "@/lib/portal/noren/onePage";
 import type { MetadataRoute } from "next";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
 import { REGIONS, type RegionKey } from "@/lib/data";
@@ -8,6 +9,7 @@ import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/
 import { isRegionHubIndexable, isRestaurantIndexable, isTownIndexable } from "@/lib/restaurantIndexable";
 import { getAllTowns } from "@/lib/db/towns";
 import { isPortalLive } from "@/lib/portal/launch";
+import { NOREN_REGION_TO_SEARCH, NOREN_SCENE_TO_SEARCH } from "@/lib/portal/noren/rewrites";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -61,11 +63,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return entry as MetadataRoute.Sitemap[number];
     });
 
+  // 地域・街のページを「さがす」へ統合したあと（2026-10-12 オーナー決定。公開スイッチ ON かつ NOREN_REGION_TO_SEARCH）は、/region 系を sitemap に載せない
+  // （どれも /search へ恒久転送される。転送先の /search は noindex のまま触らない。index させるかはオーナーの判断待ち）
+  const regionsRedirected = NOREN_REGION_TO_SEARCH && isPortalLive();
   // 掲載店が少ない地域ハブは sitemap から外す（ページは残り、noindex。店が増えれば自動で戻る）
   const regionStoreCounts: Record<string, number> = {};
-  for (const r of await getAllRestaurants()) regionStoreCounts[r.region] = (regionStoreCounts[r.region] || 0) + 1;
+  if (!regionsRedirected) for (const r of await getAllRestaurants()) regionStoreCounts[r.region] = (regionStoreCounts[r.region] || 0) + 1;
   const regions: MetadataRoute.Sitemap = Object.keys(REGIONS)
-    .filter((k) => isRegionHubIndexable(regionStoreCounts[k] || 0))
+    .filter((k) => !regionsRedirected && isRegionHubIndexable(regionStoreCounts[k] || 0))
     .map((k) => ({
       url: `${BASE}/region/${k}`,
       changeFrequency: "weekly",
@@ -73,7 +78,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
 
   // 街ページ（/region/<region>/<街>）は掲載店が3店以上の街だけ載せる（2店以下は noindex,follow でページだけ出す）
-  const towns: MetadataRoute.Sitemap = (await getAllTowns())
+  const towns: MetadataRoute.Sitemap = (regionsRedirected ? [] : await getAllTowns())
     .filter((t) => isTownIndexable(t.count))
     .map((t) => ({
       url: `${BASE}${t.href}`,
@@ -85,7 +90,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Feature ID は URL パスセグメントなので percent-encode が必要
   const featureData = await getAllFeatureArticleIdsWithUpdatedAt();
   const features: MetadataRoute.Sitemap = featureData
-    .filter((f) => isFeatureIndexable(f.id))
+    // 1 店 1 ページにした記事（lib/portal/noren/onePage.ts の表）は /feature/<ID> が /restaurant/<店の ID> への転送なので載せない（店の URL の側に 1 つだけ載る）
+    .filter((f) => isFeatureIndexable(f.id) && !onePageShopOf(f.id))
     .map((f) => {
       const entry: Record<string, unknown> = {
         url: `${BASE}/feature/${encodeURIComponent(f.id)}`,
@@ -98,7 +104,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return entry as MetadataRoute.Sitemap[number];
     });
 
-  const scenes: MetadataRoute.Sitemap = SCENES.map((s) => ({
+  // 利用シーンのページも「さがす」へ統合したあと（公開スイッチ ON かつ NOREN_SCENE_TO_SEARCH）は載せない（/search?scene=<slug> へ恒久転送される）
+  const scenes: MetadataRoute.Sitemap = (NOREN_SCENE_TO_SEARCH && isPortalLive() ? [] : SCENES).map((s) => ({
     url: `${BASE}/scene/${s.slug}`,
     changeFrequency: "weekly",
     priority: 0.7,

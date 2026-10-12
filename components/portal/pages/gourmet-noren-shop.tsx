@@ -25,6 +25,7 @@ import { heroImagesOf, isUnusableImage, kanjiFor, nameLayout, stationName } from
 import { LIVE_LINKS, type NorenLinks } from "@/lib/portal/noren/nav";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
 import { pairFeatureNote, pairShopNote, pairedFeatureOfShop } from "@/lib/portal/noren/pair";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 import { isDummyFeatureImage } from "@/lib/portal/noren/featureSingle";
 import PairSwitch from "@/components/portal/noren/PairSwitch";
 import { stripTabelogScore, stripTabelogScoreList } from "@/lib/portal/noren/tabelogScore";
@@ -77,7 +78,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
     source: r.source ?? null,
     featureId,
     town: town ? { name: town.town, href: town.href, count: town.count } : null,
-    region: { name: region.name, href: `/region/${r.region}` },
+    region: { name: region.name, href: regionHref(r.region) },
   });
   model.secondary = model.secondary.map((s) => (s.id === "feature" && featureId ? { ...s, href: links.feature(featureId) } : s));
   const barItems = model.primary.filter((p) => p.id === "reserve" || p.id === "phone" || p.id === "gmap").slice(0, 3);
@@ -109,7 +110,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
         eyebrow={[r.cuisine, station || r.area].filter(Boolean)}
         crumbs={[
           { label: "トップ", href: links.top },
-          { label: region?.name || r.region, href: `/region/${r.region}` },
+          { label: region?.name || r.region, href: regionHref(r.region) },
           { label: r.name },
         ]}
       />

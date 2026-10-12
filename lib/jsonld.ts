@@ -241,13 +241,15 @@ export function jsonLdScript(data: Record<string, unknown>) {
   };
 }
 
-export function buildArticleJsonLd(a: FeatureArticle): Record<string, unknown> {
-  const url = `${BASE}/feature/${encodeURIComponent(a.id)}`;
+/** path: 記事の URL を /feature/<ID> ではなく別のパスにするとき（1 店 1 ページ: 記事は /restaurant/<店の ID> で出す）。省略すると今までどおり */
+export function buildArticleJsonLd(a: FeatureArticle, path?: string): Record<string, unknown> {
+  const url = path ? `${BASE}${path}` : `${BASE}/feature/${encodeURIComponent(a.id)}`;
   const image = a.heroImage.startsWith("http") ? a.heroImage : `${BASE}${a.heroImage}`;
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "@id": url,
+    // 1 店 1 ページ（path あり）: 同じ URL の店（Restaurant）と @id が重ならないよう、記事は #article をつける。今までの /feature/<ID> は今までどおり
+    "@id": path ? `${url}#article` : url,
     headline: a.title,
     description: a.lede,
     image,

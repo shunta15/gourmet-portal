@@ -10,6 +10,8 @@
  * - 各ボタンの数字は、いまの他の絞り込みをかけた状態でその条件を足したときの店数。0 店になる条件は押せない（aria-disabled。Tab では届く）。
  * - URL と同期（history.pushState。戻る・進む・再読み込みで状態が保たれる）。画面幅 767px 以下では条件が下から出るシートになる。
  * - 「いま営業中」だけは現在時刻で決まるので、既存の getOpenStatus で、分単位に更新しながら判定する。
+ *   ただし 2026-10-12 オーナー決定で概念を外した: OPEN_NOW_ON（RELEASE_REST が true のあいだ false）では、条件に出さず・札にも出さず・現在時刻も読まない。
+ *   URL の f=open は、出していない条件として parseSelection が無視する（ほかの条件はそのまま効く）。
  */
 import Link from "next/link";
 import type { ReadonlyURLSearchParams } from "next/navigation";
@@ -32,7 +34,7 @@ import {
   type FacetPayload,
   type FacetSelection,
 } from "@/lib/portal/facetDefs";
-import { isOpenState } from "@/lib/portal/openNow";
+import { OPEN_NOW_ON, isOpenState } from "@/lib/portal/openNow";
 import { answerText, answeredCount, omakaseQuery, parseOmakase, rowMatches, STEPS, STEP_TITLE } from "@/lib/portal/omakaseDefs";
 import { omakaseRowOf, prefOfRegionKey } from "@/lib/portal/omakaseRows";
 import { statusOf, useNowMs } from "./OpenNow";
@@ -157,18 +159,18 @@ export default function SearchFacets({ base: baseIn, facets, sp, render }: Props
   }, [baseIn, facets, omk, omkOn]);
   const sel = useMemo(() => parseSelection(sp.get("budget"), sp.get("f"), facets), [sp, facets]);
   const nowRaw = useNowMs();
-  // この部品はクライアントだけで描かれる（/search は useSearchParams で CSR）。分の頭に丸めた現在時刻（ミリ秒）
-  const now = nowRaw ?? Math.floor(Date.now() / 60000) * 60000;
+  // この部品はクライアントだけで描かれる（/search は useSearchParams で CSR）。分の頭に丸めた現在時刻（ミリ秒）。OPEN_NOW_ON が false のあいだは時刻を読まない
+  const now = !OPEN_NOW_ON ? 0 : nowRaw ?? Math.floor(Date.now() / 60000) * 60000;
 
   /* 店ごとの判定（予算の帯・判定ビット・いま営業中） */
-  const wantOpen = sel.ids.includes("open");
+  const wantOpen = OPEN_NOW_ON && sel.ids.includes("open");
   const boolIds = sel.ids.filter((i): i is BoolFacetId => i !== "open");
   const boolShown = useMemo(() => facets.shown.filter((i): i is BoolFacetId => i !== "open"), [facets]);
   const shops = useMemo(
     () =>
       base.map((r) => {
         const [band, mask] = rowOf(facets, r.id);
-        const st = statusOf(facets.weeks, r.id, now);
+        const st = OPEN_NOW_ON ? statusOf(facets.weeks, r.id, now) : null;
         return { r, band, mask, open: !!st && isOpenState(st.state) };
       }),
     [base, facets, now],
@@ -312,7 +314,7 @@ export default function SearchFacets({ base: baseIn, facets, sp, render }: Props
       .filter((fid) => !sel.ids.includes(fid) && hasBit(s.mask, fid))
       .sort((a, b) => rarity[a] - rarity[b] || BOOL_FACETS.indexOf(a) - BOOL_FACETS.indexOf(b));
     for (const fid of rest) all.push({ label: FACET_BY_ID[fid].badge, on: false });
-    if (s.open && !sel.ids.includes("open") && facets.shown.includes("open")) all.push({ label: FACET_BY_ID.open.badge, on: false });
+    if (OPEN_NOW_ON && s.open && !sel.ids.includes("open") && facets.shown.includes("open")) all.push({ label: FACET_BY_ID.open.badge, on: false });
     return { tags: all.slice(0, MAX_TAGS), total: all.length };
   };
 

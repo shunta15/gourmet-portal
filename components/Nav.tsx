@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SCENES } from "@/lib/scenes";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
+import { sceneHref } from "@/lib/portal/noren/sceneLinks";
 
 /**
  * グローバルナビ。現在のページに応じて .active クラスを付与し、
@@ -60,7 +62,7 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            href="/region/tokyo"
+            href={regionHref("tokyo")}
             data-cursor="ENTER"
             className={activeRegion ? "active" : ""}
             aria-current={activeRegion ? "page" : undefined}
@@ -74,7 +76,7 @@ export default function Nav() {
           onMouseLeave={() => setSceneOpen(false)}
         >
           <Link
-            href={`/scene/${SCENES[0].slug}`}
+            href={sceneHref(SCENES[0].slug)}
             data-cursor="PICK"
             className={activeScene ? "active" : ""}
             aria-current={activeScene ? "page" : undefined}
@@ -87,7 +89,7 @@ export default function Nav() {
               {SCENES.map((s) => (
                 <Link
                   key={s.slug}
-                  href={`/scene/${s.slug}`}
+                  href={sceneHref(s.slug)}
                   className="scene-link"
                   data-cursor="ENTER"
                   onClick={() => setSceneOpen(false)}

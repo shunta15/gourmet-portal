@@ -31,7 +31,7 @@ import {
 } from "@/lib/stations/query";
 import { parseTown } from "@/lib/towns";
 import { loadMapData, subsetOf } from "@/lib/portal/mapData";
-import { packWeeks } from "@/lib/portal/openNow";
+import { OPEN_NOW_ON, packWeeks } from "@/lib/portal/openNow";
 import PortalMap from "../PortalMap";
 import { OpenBar, OpenCount, OpenScope } from "../OpenNow";
 import { notFoundMetadata } from "./data";
@@ -207,11 +207,13 @@ export default async function Page({ params }: Props) {
       </Block>
 
       <OpenScope weeks={weeks}>
-        <section className="mp-pg-sec mp-obar-sec" aria-label="今開いている店の絞り込み">
-          <div className="mp-wrap">
-            <OpenBar ids={page.stores.map((s) => s.place.id)} />
-          </div>
-        </section>
+        {OPEN_NOW_ON && (
+          <section className="mp-pg-sec mp-obar-sec" aria-label="今開いている店の絞り込み">
+            <div className="mp-wrap">
+              <OpenBar ids={page.stores.map((s) => s.place.id)} />
+            </div>
+          </section>
+        )}
         <Block
           id="mp-st-list-h"
           kicker="Shops"

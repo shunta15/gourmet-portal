@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useParallax, useReveal } from "@/lib/hooks";
 import { REGIONS } from "@/lib/regions";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 import { sized } from "@/lib/imageUrl";
 import type { Restaurant, RestaurantCardItem, ShortVideo } from "@/lib/regions";
 import type { GeoPoint } from "@/lib/geo";
@@ -83,7 +84,7 @@ export default function RestaurantDetail({
             source: r.source ?? null,
             featureId,
             town: town ?? null,
-            region: { name: region.name, href: `/region/${r.region}` },
+            region: { name: region.name, href: regionHref(r.region) },
           }
         : null,
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -376,7 +377,7 @@ export default function RestaurantDetail({
                 </Link>
               )}
               <Link
-                href={`/region/${r.region}`}
+                href={regionHref(r.region)}
                 className="chip"
                 style={{ padding: "16px 24px", borderRadius: 0 }}
                 data-cursor="ENTER"

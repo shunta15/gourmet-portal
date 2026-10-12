@@ -8,6 +8,8 @@ import { GEO } from "@/lib/geo";
 import { isRegionHubIndexable } from "@/lib/restaurantIndexable";
 import { getTownsByRegion } from "@/lib/db/towns";
 import { isSceneFeatureId, sceneFeaturesForRegion } from "@/lib/sceneFeatureLinks";
+import { isPortalLive } from "@/lib/portal/launch";
+import { NOREN_REGION_TO_SEARCH } from "@/lib/portal/noren/rewrites";
 
 const KEYS = Object.keys(REGIONS) as RegionKey[];
 
@@ -16,6 +18,8 @@ export const revalidate = 60;
 export const dynamicParams = true;
 
 export function generateStaticParams() {
+  // 「さがす」へ統合したあと（公開スイッチ ON かつ NOREN_REGION_TO_SEARCH）は、このページへ着く URL が無い（next.config.ts が /search へ転送する）ので事前生成しない
+  if (NOREN_REGION_TO_SEARCH && isPortalLive()) return [];
   return KEYS.map((key) => ({ key }));
 }
 

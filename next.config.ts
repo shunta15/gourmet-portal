@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
 // ── scene ここから
-import { NOREN_SCENE_REWRITE, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_SCENE_REWRITE, NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
 // ── area ここから
-import { NOREN_REGION_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_REGION_REWRITE, NOREN_REGION_TO_SEARCH } from "./lib/portal/noren/rewrites";
 // ── area ここまで
 
 // 総合サイトの公開スイッチ（lib/portal/launch.ts と同じ判定。proto-portal/LAUNCH.md）。ビルド時に評価する。
@@ -72,6 +73,17 @@ const nextConfig: NextConfig = {
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),
       ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE ? [{ source: "/gourmet/feature/:id", destination: "/feature/:id", permanent: true }] : []),
+      // 1 店 1 ページ（見本）: 写真が主役の特集記事（対象は lib/portal/noren/onePage.ts の表）の URL /feature/<記事 ID> は、同じ店の /restaurant/<店の ID> へ恒久リダイレクト（308・1 回）。
+      // 対象を、記事 ID の完全一致（1 本ずつ）で書く。サイト内のリンクははじめから /restaurant/<店の ID> を指す（lib/portal/noren/onePage.ts の featureHrefOf）。
+      // source は path-to-regexp の書き方なので、百分率エンコードしたあと、( ) { } : * + ? が残っていたら \\ で打ち消す（今の 53 本の ID には無い。入れ忘れの保険）。
+      // 切り替え NOREN_ONE_PAGE（RELEASE_REST）が false のとき・公開スイッチ OFF のときは 1 行も出ない。
+      ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE && NOREN_ONE_PAGE
+        ? Object.entries(ONE_PAGE_SHOP_OF_FEATURE).map(([fid, sid]) => ({
+            source: `/feature/${encodeURIComponent(fid).replace(/[(){}:*+?]/g, "\\$&")}`,
+            destination: `/restaurant/${sid}`,
+            permanent: true,
+          }))
+        : []),
       // 特集記事のトップ（一覧・地域別・特集を探す）の内部のパスも同じ。/gourmet/feature/search は上の :id にも当たるが、同じ行き先（/feature/search）になる
       ...(PORTAL_LIVE && NOREN_FEATURE_INDEX_REWRITE
         ? [
@@ -81,6 +93,16 @@ const nextConfig: NextConfig = {
           ]
         : []),
       // ── scene ここから（シーン・店をさがすの内部のパスを直接開いたら本物の URL へ）
+      // 利用シーンのページは「さがす」へ統合（2026-10-12 オーナー決定。lib/portal/noren/rewrites.ts の NOREN_SCENE_TO_SEARCH）。1 回の恒久転送で /search の絞り込みに着く:
+      //   /scene → /search、/scene/:slug → /search?scene=:slug。暖簾版の内部のパス（/gourmet/scene/**）も同じ行き先へ 1 回で。
+      ...(PORTAL_LIVE && NOREN_SCENE_TO_SEARCH
+        ? [
+            { source: "/scene", destination: "/search", permanent: true },
+            { source: "/scene/:slug", destination: "/search?scene=:slug", permanent: true },
+            { source: "/gourmet/scene", destination: "/search", permanent: true },
+            { source: "/gourmet/scene/:slug", destination: "/search?scene=:slug", permanent: true },
+          ]
+        : []),
       ...(PORTAL_LIVE && NOREN_SCENE_REWRITE
         ? [
             { source: "/gourmet/scene", destination: "/scene", permanent: true },
@@ -90,6 +112,19 @@ const nextConfig: NextConfig = {
       ...(PORTAL_LIVE && NOREN_SEARCH_REWRITE ? [{ source: "/gourmet/search", destination: "/search", permanent: true }] : []),
       // ── scene ここまで
       // ── area ここから
+      // 地域・街のページは「さがす」へ統合（2026-10-12 オーナー決定。lib/portal/noren/rewrites.ts の NOREN_REGION_TO_SEARCH）。1 回の恒久転送で /search の絞り込みに着く:
+      //   /region → /search、/region/:key → /search?region=:key、/region/:key/:town → /search?region=:key&town=:town（街は日本語のまま。/search 側が完全一致で絞る）。
+      // 地域のOG画像（/region/:key/opengraph-image…）には当てない。暖簾版の内部のパス（/gourmet/region/**）も同じ行き先へ 1 回で。
+      ...(PORTAL_LIVE && NOREN_REGION_TO_SEARCH
+        ? [
+            { source: "/region", destination: "/search", permanent: true },
+            { source: "/region/:key", destination: "/search?region=:key", permanent: true },
+            { source: "/region/:key/:town((?!opengraph-image)[^/]+)", destination: "/search?region=:key&town=:town", permanent: true },
+            { source: "/gourmet/region", destination: "/search", permanent: true },
+            { source: "/gourmet/region/:key", destination: "/search?region=:key", permanent: true },
+            { source: "/gourmet/region/:key/:town((?!opengraph-image)[^/]+)", destination: "/search?region=:key&town=:town", permanent: true },
+          ]
+        : []),
       // エリアのページ（エリア一覧・エリアごと・街ごと）の内部のパスも同じ。街ごとは /region/<key>/opengraph-image（3 段目が opengraph-image）に当たらないよう除く
       ...(PORTAL_LIVE && NOREN_REGION_REWRITE
         ? [

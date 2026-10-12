@@ -73,7 +73,7 @@ export function toCardItem(f: Feature): FeatureCardItem {
 }
 
 /**
- * 「まとめ記事」（複数の店・場所が載る記事 = lib/data の FEATURES。今の一覧と同じ集合・同じ並び）を、「利用シーン別」と「街歩き・コース」に分ける。
+ * 複数の店・場所が載る記事（lib/data の FEATURES。変更前の「まとめ記事」と同じ集合・同じ並び）を、「シーン別まとめ記事」（scene）と「街歩き・コース」（walk）に分ける。
  * 分け方は記事ページの枠の分け方と同じ（isSceneShopFeature）。2 つを合わせると FEATURES と同じ本数・同じ並びになる（増やさない・減らさない）。
  */
 export function getRoundupGroups(): { scene: FeatureCardItem[]; walk: FeatureCardItem[]; total: number } {
@@ -94,17 +94,21 @@ export type ShopFeatureCardItem = { id: string; img: string; shopName: string; a
  * 写真は記事ページの入口と同じ主役の写真（補いの表 lib/portal/noren/featureSinglePhotos.ts を通した getFeatureArticleById の heroImage。
  * 使えなければ視点の写真の 1 枚目）。店名・地域・業種は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店のデータ）のものだけ。
  */
+/** 一覧の「特集記事」の棚の札。1 本ずつ順に読むと本数ぶん待つ（50 本で 25 秒以上かかった）ので、まとめて同時に読み、結果を 5 分だけ覚えておく（並びは FEATURED_SINGLE_IDS の順のまま） */
+let featuredSingleMemo: { at: number; rows: ShopFeatureCardItem[] } | null = null;
 export async function getFeaturedSingleCards(): Promise<ShopFeatureCardItem[]> {
+  if (featuredSingleMemo && Date.now() - featuredSingleMemo.at < 5 * 60 * 1000) return featuredSingleMemo.rows;
   const usableShot = (u: string | undefined | null) => isUsableFeatureImage(u) && !isDummyFeatureImage(u);
-  const out: ShopFeatureCardItem[] = [];
-  for (const id of FEATURED_SINGLE_IDS) {
-    const a = await getFeatureArticleById(id);
-    if (!a) continue;
-    const sid = ARTICLE_STORE_ID_BY_FEATURE[id];
-    const shop = sid ? await getRestaurantById(sid) : null;
-    if (!shop) continue;
-    const img = usableShot(a.heroImage) ? a.heroImage : a.ranking.flatMap((r) => r.images).find(usableShot) ?? "";
-    out.push({ id, img, shopName: shop.name, area: shop.area, cuisine: shop.cuisine, title: a.title });
-  }
+  const rows = await Promise.all(
+    FEATURED_SINGLE_IDS.map(async (id): Promise<ShopFeatureCardItem | null> => {
+      const sid = ARTICLE_STORE_ID_BY_FEATURE[id];
+      const [a, shop] = await Promise.all([getFeatureArticleById(id), sid ? getRestaurantById(sid) : Promise.resolve(null)]);
+      if (!a || !shop) return null;
+      const img = usableShot(a.heroImage) ? a.heroImage : a.ranking.flatMap((r) => r.images).find(usableShot) ?? "";
+      return { id, img, shopName: shop.name, area: shop.area, cuisine: shop.cuisine, title: a.title };
+    }),
+  );
+  const out = rows.filter((x): x is ShopFeatureCardItem => x !== null);
+  if (out.length) featuredSingleMemo = { at: Date.now(), rows: out };
   return out;
 }

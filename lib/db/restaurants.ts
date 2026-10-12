@@ -10,6 +10,7 @@
  *   トップ・地域一覧・シーン・検索から漏れていた（個別ページとサイトマップは和集合なので出ていた）。
  *   DB に行がある店（公開・非公開を問わない）は DB を優先し、非公開行はコード側から復活させない。
  *   ※ 非公開行を見分けるには service role キーが必要（anon だと RLS で非公開行が見えず、コード側の店として出てしまう）。
+ * - 非表示の店（lib/hiddenStores.ts。2026-10-12 オーナー決定の 4 店。ID の完全一致）は、DB の行もコード側の店も、ここで外す（データは消さない・DB には書かない）。
  */
 import { createClient } from "@supabase/supabase-js";
 import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
@@ -17,6 +18,7 @@ import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 import { applyShopPhotos } from "@/lib/shopPhotos";
 import { cleanRestaurantText } from "@/lib/otherSiteRatings";
 import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/release";
+import { isHiddenStore, visibleStores } from "@/lib/hiddenStores";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceKey =
@@ -60,7 +62,9 @@ type DbRestaurantRow = {
 };
 
 /** コード側の店（ID の完全一致だけで引く。店名では引かない） */
-const CODE_BY_ID = new Map<string, Restaurant>(RESTAURANTS.map((r) => [r.id, r]));
+// コード側の店は、非表示の店を外したもの（このファイルの一覧・フォールバックは、すべてこれを使う）
+const CODE_RESTAURANTS: Restaurant[] = visibleStores(RESTAURANTS);
+const CODE_BY_ID = new Map<string, Restaurant>(CODE_RESTAURANTS.map((r) => [r.id, r]));
 
 /**
  * 店を返す前の仕上げ: 表示禁止の画像を除き（sanitizeRestaurant）、そのあと、使える写真が 1 枚も無い店にだけ
@@ -124,7 +128,7 @@ export function rowToRestaurant(r: DbRestaurantRow): Restaurant {
  */
 function splitRows(rows: DbRestaurantRow[]): { published: Restaurant[]; knownIds: Set<string> } {
   return {
-    published: rows.filter((r) => r.published).map(rowToRestaurant),
+    published: rows.filter((r) => r.published && !isHiddenStore(r.id)).map(rowToRestaurant),
     knownIds: new Set(rows.map((r) => r.id)),
   };
 }
@@ -140,12 +144,12 @@ export async function getAllRestaurants(): Promise<Restaurant[]> {
     const { published, knownIds } = splitRows((data ?? []) as DbRestaurantRow[]);
     if (published.length > 0) {
       // DB の公開行 ＋ DB に行が無いコード側の店（DB を優先。非公開行は復活させない）
-      return [...published, ...RESTAURANTS.filter((r) => !knownIds.has(r.id)).map(finish)];
+      return [...published, ...CODE_RESTAURANTS.filter((r) => !knownIds.has(r.id)).map(finish)];
     }
   } catch (e) {
     console.warn("[db] getAllRestaurants fallback to data.ts:", e);
   }
-  return RESTAURANTS.map(finish);
+  return CODE_RESTAURANTS.map(finish);
 }
 
 /**
@@ -153,6 +157,7 @@ export async function getAllRestaurants(): Promise<Restaurant[]> {
  * DB を優先 → なければ data.ts にフォールバック。
  */
 export async function getRestaurantById(id: string): Promise<Restaurant | null> {
+  if (isHiddenStore(id)) return null;
   try {
     const { data, error } = await db()
       .from("restaurants")
@@ -165,7 +170,7 @@ export async function getRestaurantById(id: string): Promise<Restaurant | null> 
   } catch (e) {
     console.warn(`[db] getRestaurantById(${id}) fallback to data.ts:`, e);
   }
-  const fallback = RESTAURANTS.find((r) => r.id === id);
+  const fallback = CODE_RESTAURANTS.find((r) => r.id === id);
   return fallback ? finish(fallback) : null;
 }
 
@@ -186,8 +191,8 @@ export async function getAllRestaurantIds(): Promise<string[]> {
   } catch (e) {
     console.warn("[db] getAllRestaurantIds DB read failed:", e);
   }
-  for (const r of RESTAURANTS) ids.add(r.id);
-  return [...ids];
+  for (const r of CODE_RESTAURANTS) ids.add(r.id);
+  return [...ids].filter((id) => !isHiddenStore(id));
 }
 
 /**
@@ -215,10 +220,10 @@ export async function getAllRestaurantIdsWithUpdatedAt(): Promise<
   const result: { id: string; updatedAt?: string }[] = [];
   // DB から取得した ID は updated_at 付き
   for (const [id, updatedAt] of dbMap) {
-    result.push({ id, updatedAt });
+    if (!isHiddenStore(id)) result.push({ id, updatedAt });
   }
   // data.ts からのフォールバック（DB にない ID）は updated_at なし
-  for (const r of RESTAURANTS) {
+  for (const r of CODE_RESTAURANTS) {
     if (!dbMap.has(r.id)) {
       result.push({ id: r.id });
     }
@@ -244,11 +249,11 @@ export async function getRestaurantsByRegion(region: RegionKey): Promise<Restaur
       // DB の公開行 ＋ DB に行が無い、この地域のコード側の店
       return [
         ...published,
-        ...RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)).map(finish),
+        ...CODE_RESTAURANTS.filter((r) => r.region === region && !knownIds.has(r.id)).map(finish),
       ];
     }
   } catch (e) {
     console.warn(`[db] getRestaurantsByRegion(${region}) fallback to data.ts:`, e);
   }
-  return RESTAURANTS.filter((r) => r.region === region).map(finish);
+  return CODE_RESTAURANTS.filter((r) => r.region === region).map(finish);
 }
