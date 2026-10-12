@@ -1,0 +1,132 @@
+/* ====================================================================
+   転がし(KOROGASHI) — ボディケア入口。明るいオークの床・白い壁・落ち着いた 6 色・墨の文字。
+   ==================================================================== */
+.kz{
+  --wall:#efece5;--wall2:#e5e1d8;--oak:#c9a877;--sumi:#1c1b19;--ink2:#4f4b44;--ink3:#6b665d;--paper:#f5f2ea;
+  --gut:clamp(20px,3.4vw,56px);
+  --min:var(--kz-f-min),"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:var(--kz-f-sans),"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  background:var(--wall);color:var(--sumi);font-family:var(--sans);
+}
+.kz a{color:inherit;text-decoration:none}
+.kz a:focus-visible{outline:2px solid var(--sumi);outline-offset:3px;border-radius:2px;box-shadow:0 0 0 5px rgba(247,244,236,.85)}
+.kz-hero{position:relative;height:360svh;--p:0;--copy:1;--kh:0}
+.kz-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:linear-gradient(180deg,#e4dfd4 0%,#dcd3bf 38%,#d3bf96 100%)}
+.kz-cv{position:absolute;inset:0;width:100%;height:100%;z-index:2;opacity:0;transition:opacity .35s ease;touch-action:pan-y;-webkit-tap-highlight-color:transparent;display:block}
+.kz-hero[data-mode="gl"] .kz-cv{opacity:1}
+.kz-vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(ellipse 90% 80% at 55% 48%,rgba(30,22,12,0) 60%,rgba(30,22,12,.10) 100%)}
+
+/* 静止画: WebGL が使えないときだけ出す(自分のページの 3D を書き出した写真)。読み込み中は、床の色だけ。3D の最初のコマが出たら、ふわっと出る */
+.kz-fb{position:absolute;inset:0;z-index:1;display:block;opacity:0;visibility:hidden;transition:opacity .6s ease}
+.kz-fb img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.kz-hero[data-mode="css"] .kz-fb{opacity:1;visibility:visible}
+/* ヘッダー */
+.kz-head{position:absolute;left:0;right:0;top:0;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:clamp(14px,2.4vh,26px) var(--gut)}
+.kz-logo{font:800 17px/1 var(--min);letter-spacing:.08em;color:var(--sumi);min-height:44px;display:inline-flex;align-items:center;gap:.5em}
+.kz-logo span{font:500 12px/1 var(--sans);letter-spacing:.24em;color:var(--ink3);text-transform:uppercase}
+.kz-find{font:500 14px/1 var(--sans);letter-spacing:.2em;color:var(--ink2);min-height:44px;display:inline-flex;align-items:center;padding:0 4px;border-bottom:1px solid transparent}
+.kz-find:hover{border-bottom-color:var(--ink2)}
+
+/* h1・リード */
+.kz-copy{position:absolute;z-index:5;left:var(--gut);top:clamp(86px,17svh,170px);width:min(31vw,430px);pointer-events:none;opacity:var(--copy);transform:translateY(calc((1 - var(--copy)) * -14px))}
+.kz-eyebrow{font:500 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--ink3);margin:0 0 18px}
+.kz-h1{margin:0;font:800 clamp(28px,2.7vw,44px)/1.18 var(--min);letter-spacing:.03em;color:var(--sumi)}
+.kz-cue-a b{font-weight:500}
+.kz-coarse{display:none}
+@media (pointer:coarse){.kz-fine{display:none}.kz-coarse{display:inline}}
+.kz-h1a,.kz-h1b{display:block}
+.kz-lead{margin:18px 0 0;font:400 14.5px/1.95 var(--sans);color:var(--ink2);max-width:25em}
+.kz-hero:not([data-mode="gl"]) .kz-copy{pointer-events:auto}
+
+/* 山の脇の小さな 6 行(いつでも押せる) */
+.kz-list{position:absolute;z-index:6;left:var(--gut);bottom:clamp(22px,7svh,64px);width:min(27vw,340px);box-sizing:border-box;padding:calc(var(--kh) * 10px) calc(var(--kh) * 12px);margin-left:calc(var(--kh) * -12px);background:rgba(245,242,234,calc(var(--kh) * .94));box-shadow:0 10px 24px -14px rgba(40,28,14,calc(var(--kh) * .6))}
+.kz-list-h{margin:0 0 6px;font:500 12px/1 var(--sans);letter-spacing:.3em;color:var(--ink3)}
+.kz-list ol{list-style:none;margin:0;padding:0;border-top:1px solid rgba(28,27,25,.28)}
+.kz-row{display:grid;grid-template-columns:2.2em 1fr auto;align-items:center;gap:.5em;min-height:40px;padding:0 6px 0 2px;border-bottom:1px solid rgba(28,27,25,.18);position:relative;transition:background .25s,padding-left .3s}
+.kz-row::before{content:"";position:absolute;left:0;top:50%;width:0;height:10px;transform:translateY(-50%);background:var(--c);transition:width .3s}
+.kz-row:hover,.kz-row:focus-visible{background:rgba(255,255,255,.5);padding-left:12px}
+.kz-row:hover::before,.kz-row:focus-visible::before{width:6px}
+.kz-row-no{font:500 12px/1 var(--sans);letter-spacing:.08em;color:var(--ink3);font-style:normal}
+.kz-row-n{font:800 17px/1.2 var(--min);color:var(--sumi)}
+.kz-row-en{font:500 12px/1 var(--sans);letter-spacing:.18em;color:var(--ink3);font-style:normal;text-transform:uppercase}
+
+/* 種類の場面: 並んだポールの脇の札と見出し */
+.kz-labels{position:absolute;inset:0;z-index:5;pointer-events:none}
+.kz-rl{position:absolute;left:0;top:0;white-space:nowrap;opacity:0;font:800 17px/1 var(--min);color:var(--sumi);background:rgba(246,243,235,.94);padding:8px 12px 8px 14px;border-radius:2px;box-shadow:0 6px 14px -8px rgba(40,28,14,.5),0 0 0 1px rgba(28,27,25,.12);will-change:transform}
+.kz-rl i{font-style:normal;font-family:var(--sans);margin-left:.4em;color:var(--ink3)}
+.kz-kh{position:absolute;z-index:5;left:var(--gut);top:clamp(86px,17svh,170px);margin:0;font:800 clamp(26px,3vw,44px)/1.2 var(--min);letter-spacing:.06em;color:var(--sumi);opacity:var(--kh);pointer-events:none}
+
+/* 案内 */
+.kz-cue{position:absolute;z-index:6;right:var(--gut);bottom:clamp(20px,5svh,44px);display:flex;align-items:center;gap:12px;font:500 12px/1 var(--sans);letter-spacing:.3em;color:var(--ink2);text-transform:uppercase;pointer-events:none;opacity:calc(1 - var(--p) * 6)}
+.kz-cue-l{display:block;width:44px;height:1px;background:rgba(28,27,25,.5);position:relative;overflow:hidden}
+.kz-cue-l::after{content:"";position:absolute;inset:0;background:var(--sumi);transform:translateX(-100%);animation:kz-cue 2.4s ease-in-out infinite}
+@keyframes kz-cue{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+
+.kz-leaving .kz-stage{animation:kz-out .55s ease .4s forwards}
+@keyframes kz-out{to{opacity:0}}
+
+/* 種類の静止版(動きを減らす設定・WebGL なし) */
+.kz-kinds{display:none;padding:clamp(40px,7vw,96px) var(--gut);background:var(--wall2)}
+.kz-hero[data-mode="css"] ~ .kz-kinds{display:block}
+.kz-kinds ul{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.kz-kinds a{display:grid;grid-template-columns:2.4em 1fr auto;align-items:center;gap:12px;min-height:76px;padding:0 20px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(0,0,0,0) 40%,rgba(0,0,0,.22)),var(--c);color:#fff;box-shadow:0 10px 18px -12px rgba(40,28,14,.6)}
+.kz-kinds a i{font:500 12px/1 var(--sans);font-style:normal;letter-spacing:.1em;opacity:.85}
+.kz-kinds a b{font:800 22px/1.2 var(--min)}
+.kz-kinds a em{font:500 12px/1 var(--sans);font-style:normal;letter-spacing:.2em;text-transform:uppercase;opacity:.9}
+.kz-kinds li:nth-child(1) a{color:#2a2620}
+
+/* その下 */
+.kz-below{background:var(--wall);padding:clamp(56px,9vw,130px) var(--gut) clamp(64px,9vw,120px);position:relative}
+.kz-below::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(180deg,rgba(60,44,24,.16),rgba(60,44,24,0))}
+.kz-tag{margin:0 0 clamp(48px,7vw,96px);font:800 clamp(30px,5.4vw,84px)/1.15 var(--min);letter-spacing:.06em;color:var(--sumi)}
+.kz-sec{margin:0 0 clamp(52px,7vw,96px)}
+.kz-sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(28,27,25,.28);padding-bottom:12px;margin-bottom:24px}
+.kz-h2{margin:0;font:800 clamp(20px,2vw,28px)/1.3 var(--min);letter-spacing:.08em}
+.kz-sec-en{font:500 12px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink3)}
+.kz-shops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,32px)}
+.kz-shop{display:block;position:relative}
+.kz-shop img{display:block;width:100%;aspect-ratio:16/11;object-fit:cover;background:var(--wall2);filter:saturate(.9)}
+.kz-shop-n{display:block;margin-top:12px;font:800 17px/1.45 var(--min);letter-spacing:.03em}
+.kz-shop-c{display:block;margin-top:2px;font:400 14px/1.6 var(--sans);color:var(--ink3)}
+.kz-shop:hover .kz-shop-n{text-decoration:underline;text-underline-offset:4px}
+.kz-areas{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 10px}
+.kz-areas a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid rgba(28,27,25,.3);border-radius:999px;font:500 15px/1 var(--sans);letter-spacing:.06em}
+.kz-areas a:hover{background:var(--sumi);color:var(--wall)}
+.kz-others{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;border-top:1px solid rgba(28,27,25,.28);padding-top:20px}
+.kz-others-l{font:500 12px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink3);margin-right:6px}
+.kz-others a{display:inline-flex;align-items:center;min-height:44px;font:800 17px/1 var(--min);letter-spacing:.06em;border-bottom:1px solid rgba(28,27,25,.4)}
+
+/* スマホ */
+@media (max-width:699px){
+  .kz-copy{left:var(--gut);right:var(--gut);width:auto;top:66px}
+  .kz-h1{font-size:clamp(26px,8.2vw,34px)}
+  .kz-h1a,.kz-h1b{white-space:nowrap}
+  .kz-h1a,.kz-h1b{display:inline}
+  .kz-lead{font-size:14px;line-height:1.8;margin-top:12px;max-width:none}
+  .kz-eyebrow{margin-bottom:10px}
+  .kz-list{left:var(--gut);right:var(--gut);bottom:auto;top:calc(66px + 232px);width:auto}
+  .kz-list-h{display:none}
+  .kz-list ol{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;border-top:0}
+  .kz-row{min-height:44px;grid-template-columns:1.8em 1fr;border-top:1px solid rgba(28,27,25,.18);border-bottom:0}
+  .kz-row-en{display:none}
+  .kz-row-n{font-size:15px;white-space:nowrap}
+  .kz-kh{display:none}
+  .kz-labels{display:none}
+  .kz-list{transform:translateY(calc(var(--kh) * -148px));padding:0;margin-left:0;background:rgba(245,242,234,calc(var(--kh) * .94))}
+  .kz-row{grid-template-columns:1.6em 1fr;padding:0 4px 0 6px}
+  .kz-cue{bottom:18px;color:#f6f2e8;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+  .kz-cue-l{background:rgba(246,242,232,.6)}
+  .kz-cue-l::after{background:#f6f2e8}
+  .kz-hero{height:330svh}
+  .kz-shops{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:460px){.kz-shops{grid-template-columns:1fr}}
+@media (min-width:700px) and (max-width:1100px){.kz-copy{width:min(34vw,360px)}.kz-list{width:min(30vw,300px)}}
+
+/* 動きを減らす設定: スクロールで進む場面は無し。山は止めた形、種類は静止版 */
+@media (prefers-reduced-motion:reduce){
+  .kz-hero{height:100svh}
+  .kz-kinds{display:block}
+  .kz-cue-l::after{animation:none}
+  .kz-labels,.kz-kh{display:none}
+}
