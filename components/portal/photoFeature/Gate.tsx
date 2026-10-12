@@ -16,7 +16,7 @@ const ease = (x: number) => x * x * (3 - 2 * x);
 /** 暖簾を上げるスクロールの距離（画面の高さに対する割合） */
 const LIFT = 0.6;
 
-export default function Gate({ name }: { name: string }) {
+export default function Gate({ name, units }: { name: string; units?: string[] | null }) {
   const root = useRef<HTMLDivElement>(null);
   const cv = useRef<HTMLCanvasElement>(null);
   const wall = useRef<HTMLDivElement>(null);
@@ -50,7 +50,7 @@ export default function Gate({ name }: { name: string }) {
       const cssW = window.innerWidth;
       const cssH = window.innerHeight;
       const mobile = cssW < 640;
-      const p = panelPlan(name, mobile);
+      const p = units && units.length ? distribute(units, mobile) : panelPlan(name, mobile);
       const n = p.length;
       const gap = mobile ? 5 : 7;
       const rodY = mobile ? 60 : 78;
@@ -196,7 +196,7 @@ export default function Gate({ name }: { name: string }) {
       page.classList.remove("pf-gate-open");
       cloth?.destroy();
     };
-  }, [name]);
+  }, [name, units]);
 
   return (
     <div ref={root} className="pf-gate" aria-hidden="true">
@@ -210,6 +210,23 @@ export default function Gate({ name }: { name: string }) {
       </div>
     </div>
   );
+}
+
+/** 染め抜く字（表で選んだ字の並び）を、布の枚数に割る。panelPlan（lib/portal/noren/shop.ts）と同じ割り方: 5 字以下は 1 枚に 1 字、それより多ければ 1 枚に 2 字（スマホは 3 枚まで・7 字以上は 4 枚）。欧文の語は 1 つの語（横組み） */
+function distribute(units: string[], mobile: boolean): string[][] {
+  const solo = mobile ? 3 : 5;
+  const T = units.length;
+  const n = T <= solo ? T : Math.ceil(T / 2);
+  const per: number[] = Array(n).fill(Math.floor(T / n));
+  const rest = T - per.reduce((a, b) => a + b, 0); // 余りは先頭の枚から 1 字ずつ足す（余りは最初に 1 度だけ数える）
+  for (let i = 0; i < rest; i++) per[i] += 1;
+  const out: string[][] = [];
+  let k = 0;
+  for (const c of per) {
+    out.push(units.slice(k, k + c));
+    k += c;
+  }
+  return out;
 }
 
 /** 布を作る（WebGL が使えなければ null）。clothInner は重いので、使える端末でだけ読み込む */

@@ -10,6 +10,15 @@ import { RELEASE_REST } from "./release";
 export const NOREN_FEATURE_SINGLE = RELEASE_REST;
 
 /**
+ * 店 1 軒の記事のうち、先に出す 20 本（下の FEATURED_SINGLE_IDS。ID の完全一致）だけを、写真が主役の形（components/portal/photoFeature/PhotoFeaturePage.tsx）で出すスイッチ。
+ * - true（RELEASE_REST と同じ）: 20 本が、写真が主役の形で出る（入口の暖簾・視点ごとの小さな暖簾・暗い面・「ほかの特集記事」など）。
+ *   20 本以外の店 1 軒の記事と、複数の店・場所の記事は、今までどおり（出力は変わらない）。メタ情報・構造化データ・静的生成の対象・再生成の間隔も、同じ。
+ * - false（本番の main など RELEASE_REST が false のとき）: 20 本も今までの店 1 軒の枠（FeatureSinglePage）。元に戻すときは false にして再デプロイ。
+ * NOREN_FEATURE_SINGLE が false のときは、この値に関係なく、全記事が今までどおり。
+ */
+export const NOREN_FEATURE_PHOTO = RELEASE_REST;
+
+/**
  * 店 1 軒の記事か。ranking が「POINT 01〜」という視点の並びになっている記事（店の並びではない）。
  * 判定は components/portal/noren/FeaturePage.tsx の isSinglePoint と同じ条件。
  */

@@ -6,6 +6,7 @@ import Motion from "./Motion";
 import Gate from "./Gate";
 import DoorLink from "./DoorLink";
 import { Brush, Seal, Tate } from "./parts";
+import type { PfRelated } from "@/lib/portal/photoFeature/related";
 
 // 写真が主役の特集記事（試作）の中身（サーバーコンポーネント）。見た目は photofeature.css。
 // 画面の 6〜7 割が写真になる組み: 写真を大きく、互い違い（左右）に、すき間を詰めて接する・少し重ねて並べる。文は短い（最初の数文だけ。残りは「続きを読む」）。
@@ -392,11 +393,17 @@ export type PhotoFeaturePageProps = {
   shopHref: string | null;
   /** 特集の一覧の行き先 */
   listHref: string;
-  /** この試作の入口 */
+  /** グルメの入口の行き先（ロゴ・小さなリンク） */
   topHref: string;
+  /** さがすの行き先（無ければ出さない） */
+  searchHref?: string;
+  /** 見本のページ（/proto-gourmet/photo-feature）のとき true。「試作」の表記を出す */
+  proto?: boolean;
+  /** 「ほかの特集記事」（最大 3 本）。空なら出さない */
+  related?: PfRelated[];
 };
 
-export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref }: PhotoFeaturePageProps) {
+export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref, searchHref, proto = false, related = [] }: PhotoFeaturePageProps) {
   const T = D.title;
   const hero = D.hero;
   const shopLine = D.shop ? [D.shop.cuisine, D.shop.area].filter(Boolean).join("　") : "";
@@ -405,15 +412,16 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
     <>
       {/* 暖簾の入口（WebGL の布。使える端末だけ）: 最初の画面に藍の暖簾が掛かり、スクロール（またはタップ）で上がって、奥から主役の写真と題が現れる。
           布が使えない・動きを減らす・JS なしでは、この枠は何もせず、最初から写真と題が見える */}
-      {D.shop && <Gate name={D.shop.name} />}
+      {D.shop && <Gate name={D.shop.name} units={D.gate} />}
       <div className="pf-open">
         <div className="pf-open__in">
       <header className="pf-hd-bar">
-        <Link href={topHref} className="pf-logo" aria-label="マチノワ グルメ 特集（試作）の入口">
+        <Link href={topHref} className="pf-logo" aria-label={proto ? "マチノワ グルメ 特集（試作）の入口" : "マチノワ グルメのトップへ"}>
           マチノワ<small>グルメ</small>
         </Link>
         <nav aria-label="主なリンク">
           <Link href={listHref}>特集の一覧</Link>
+          {searchHref && <Link href={searchHref}>さがす</Link>}
           {shopHref && <Link href={shopHref}>店ページを見る</Link>}
         </nav>
       </header>
@@ -505,6 +513,11 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
             <Link href={listHref} className="pf-btn pf-btn--ghost">
               特集の一覧へ →
             </Link>
+            {searchHref && (
+              <Link href={searchHref} className="pf-btn pf-btn--ghost">
+                さがす →
+              </Link>
+            )}
           </p>
         </div>
       </section>
@@ -530,6 +543,11 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
               <Link href={listHref} className="pf-btn pf-btn--ghost">
                 特集の一覧へ →
               </Link>
+              {searchHref && (
+                <Link href={searchHref} className="pf-btn pf-btn--ghost">
+                  さがす →
+                </Link>
+              )}
             </p>
             {/* 最後は、暖簾をくぐって店に入る（押すと布が上がる） */}
             {shopHref && D.shop && <DoorLink href={shopHref} name={D.shop.name} />}
@@ -537,16 +555,48 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref 
         </section>
       )}
 
+      {/* ほかの特集記事（写真が主役の形で出す 20 本の中から、最大 3 本。同じ地域 → 同じ業種 → 並びの順） */}
+      {related.length > 0 && (
+        <section className="pf-rel" aria-labelledby="pf-rel-h">
+          <div className="pf-rel__in pf-rv">
+            <h2 id="pf-rel-h" className="pf-rel__t">ほかの特集記事</h2>
+            <ul className="pf-rel__ul">
+              {related.map((r) => (
+                <li key={r.id}>
+                  <Link href={r.href} className="pf-rel__a">
+                    <span className="pf-rel__ph" aria-hidden="true">
+                      {r.img && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img className="pf-rel__img" src={sized(r.img, 640)} alt="" loading="lazy" decoding="async" />
+                      )}
+                    </span>
+                    <span className="pf-rel__b">
+                      <b>{r.title}</b>
+                      <small>{[r.shop, r.area].filter(Boolean).join("　")}</small>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <footer className="pf-ft">
         <p className="pf-ft__l">マチノワ</p>
-        <p className="pf-ft__s">© 2026 マチノワ / 街の輪（試作 — 非公開のページです）</p>
+        <p className="pf-ft__s">{proto ? "© 2026 マチノワ / 街の輪（試作 — 非公開のページです）" : "© 2026 マチノワ / 街の輪"}</p>
       </footer>
 
       {/* ページの上端の竿と、読み進みに合わせて横へ進む小さな布（JS が動いたときだけ） */}
-      <div className="pf-rod" aria-hidden="true">
-        <span className="pf-rod__tr"><span className="pf-rod__cl"><b /></span></span>
-        <i className="pf-rod__bar" />
-        <span className="pf-hud__no"><b className="pf-hud__cur" /><b className="pf-hud__prev" /></span>
+      <div className="pf-rod">
+        <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
+          <Link href={topHref}>グルメ</Link>
+          <Link href={listHref}>特集</Link>
+          {searchHref && <Link href={searchHref}>さがす</Link>}
+        </nav>
+        <span className="pf-rod__tr" aria-hidden="true"><span className="pf-rod__cl"><b /></span></span>
+        <i className="pf-rod__bar" aria-hidden="true" />
+        <span className="pf-hud__no" aria-hidden="true"><b className="pf-hud__cur" /><b className="pf-hud__prev" /></span>
       </div>
 
       {/* 読み進みの印（画面の端の朱の線 + いまの視点の番号）と、店ページへの小さなボタン。どちらも JS が動いたときだけ出る */}

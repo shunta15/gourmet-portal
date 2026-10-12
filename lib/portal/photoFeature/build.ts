@@ -11,6 +11,7 @@ import type { FeatureArticle, Restaurant } from "@/lib/regions";
 import { isGoogleMapsUrl } from "@/lib/maps";
 import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
 import { collectPhotos, type Photo } from "./collect";
+import { gateUnitsOf, nrWordsOf } from "./featured";
 
 export type PfPhoto = {
   src: string;
@@ -78,6 +79,8 @@ export type PfData = {
   mapsUrl: string;
   quote: string[];
   closing: PfText;
+  /** 入口の暖簾に染める字（featured.ts の GATE_UNITS。表にない記事は null = 店名から自動で割る） */
+  gate: string[] | null;
   /** 使った写真の枚数（主役 + 視点 + 写真だけの面） */
   photoCount: number;
   /** そのうち、店ページから足した枚数 */
@@ -331,6 +334,12 @@ export function nrChars(_no: string, name: string): string[] {
   return Array.from(name).filter((ch) => /[\u3040-\u30ff\u4e00-\u9fff]/.test(ch)).slice(0, 2);
 }
 
+/** 小さな暖簾の語: 表（featured.ts の NR_WORDS。見出しの中にある語だけ）にあればそれ、なければ見出しの最初の節の語（nrChars） */
+function nrWordFor(articleId: string, i: number, no: string, name: string): string[] {
+  const w = nrWordsOf(articleId)?.[i];
+  return w && name.includes(w) ? Array.from(w) : nrChars(no, name);
+}
+
 export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): PfData {
   const shopName = store?.name ?? "";
   const c = collectPhotos(A, store);
@@ -354,7 +363,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     heading: r.heading ? stripTabelogScore(r.heading) : "",
     ...splitExcerpt(stripTabelogScore(r.desc)),
     photos: vPhotos[i].map((p) => toPf(p, alt(r.name))),
-    nr: nrChars(String(i + 1).padStart(2, "0"), r.name),
+    nr: nrWordFor(A.id, i, String(i + 1).padStart(2, "0"), r.name),
   }));
 
   // 足りない写真が 1 枚だけのときは、本文のいちばん長い視点に足して横に並べる（2 枚以上あれば「写真だけの面」にする）
@@ -456,6 +465,10 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null): 
     hero: heroPf,
     heroAlt: alt("主役の写真"),
     coverPair,
+    gate: (() => {
+      const g = gateUnitsOf(A.id);
+      return g ? [...g] : null;
+    })(),
     shop: store ? { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area } : null,
     blocks,
     info: infoRows(store),

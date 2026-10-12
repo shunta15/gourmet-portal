@@ -32,6 +32,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       shopHref={store ? `${LIVE_LINKS.shopBase}/${store.id}` : null}
       listHref="/feature"
       topHref="/proto-gourmet/photo-feature"
+      proto
     />
   );
 }

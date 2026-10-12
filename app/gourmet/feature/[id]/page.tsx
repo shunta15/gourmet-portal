@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import FeaturePage from "@/components/portal/noren/FeaturePage";
 import FeatureSinglePage from "@/components/portal/noren/FeatureSinglePage";
 import FeatureScenePage from "@/components/portal/noren/FeatureScenePage";
+import PhotoFeatureShell from "@/components/portal/photoFeature/PhotoFeatureShell";
+import PhotoFeaturePage from "@/components/portal/photoFeature/PhotoFeaturePage";
 import {
   buildArticleJsonLd,
   buildFeatureBreadcrumbJsonLd,
@@ -20,7 +22,10 @@ import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
-import { NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { NOREN_FEATURE_PHOTO, NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
+import { isFeaturedPhotoId } from "@/lib/portal/photoFeature/featured";
+import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import { pairFeatureNote, pairShopNote, pairedShopOfFeature } from "@/lib/portal/noren/pair";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
@@ -99,6 +104,11 @@ export default async function Page({
   const pair = single && shop && pairedShopOfFeature(article.id) === shop.id
     ? { shopNote: pairShopNote(shop), featureNote: pairFeatureNote(article.ranking.length) }
     : null;
+  // 先に出す 20 本（FEATURED_SINGLE_IDS。ID の完全一致）だけは、写真が主役の形（components/portal/photoFeature/）で出す。切り替えは NOREN_FEATURE_PHOTO（false で 20 本も FeatureSinglePage に戻る）。
+  // 20 本以外の店 1 軒の記事・複数の店の記事は、この分岐に入らない（出力は今までどおり）。
+  const photo = NOREN_FEATURE_PHOTO && single && isFeaturedPhotoId(article.id);
+  const photoData = photo ? buildPhotoFeature(article, shop) : null;
+  const photoRelated = photo ? await getRelatedFeatured(article.id, shop ? { region: shop.region, cuisine: shop.cuisine } : null) : [];
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
   const fmap = single ? null : await buildFmap(article);
   return (
@@ -115,7 +125,18 @@ export default async function Page({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      {single ? (
+      {photoData ? (
+        <PhotoFeatureShell>
+          <PhotoFeaturePage
+            data={photoData}
+            shopHref={pair && shop ? `${LIVE_LINKS.shopBase}/${shop.id}` : null}
+            listHref="/feature"
+            topHref={LIVE_LINKS.top}
+            searchHref="/search"
+            related={photoRelated}
+          />
+        </PhotoFeatureShell>
+      ) : single ? (
         <FeatureSinglePage
           article={article}
           store={

@@ -107,6 +107,58 @@ export default function Motion() {
       });
     }
 
+    // ───── 小見出しと文の札が重ならないようにする（PC。動きを減らす設定でも働く） ─────
+    // 小見出し（縦書きの白抜き・短冊）が長く、同じ側の文の札の上端より下まで伸びるときだけ、その視点の小見出しを反対側の端へ移す（.pf-flip）。
+    // 札の「現れる」の 22px のずれなど、動きの変形は引いて、並びそのものの位置で比べる。重ならなければ、何もしない（元の並びのまま）。
+    const tyOf = (el: Element) => {
+      const t = getComputedStyle(el).transform;
+      if (!t || t === "none") return 0;
+      try {
+        return new DOMMatrixReadOnly(t).m42;
+      } catch {
+        return 0;
+      }
+    };
+    const shiftOf = (el: Element, stop: Element) => {
+      let sum = 0;
+      for (let n: Element | null = el; n && n !== stop; n = n.parentElement) sum += tyOf(n);
+      return sum;
+    };
+    const fitHeads = () => {
+      root.querySelectorAll<HTMLElement>(".pf-v--A, .pf-v--B").forEach((v) => {
+        v.classList.remove("pf-flip");
+        const tx = v.querySelector<HTMLElement>(".pf-v__tx");
+        const hd = v.querySelector<HTMLElement>(".pf-ov, .pf-tz");
+        if (!tx || !hd) return;
+        if (getComputedStyle(tx).backgroundColor === "rgba(0, 0, 0, 0)") return; // 札ではない（スマホ・縦長の写真は、文が写真の外）
+        const cr = tx.getBoundingClientRect();
+        const cardTop = cr.top - shiftOf(tx, v);
+        let hb = -Infinity;
+        let hl = Infinity;
+        let hr = -Infinity;
+        hd.querySelectorAll<HTMLElement>(".pf-col").forEach((c) => {
+          const r = c.getBoundingClientRect();
+          if (r.width < 1) return;
+          hb = Math.max(hb, r.bottom - shiftOf(c, v));
+          hl = Math.min(hl, r.left);
+          hr = Math.max(hr, r.right);
+        });
+        if (hb === -Infinity) return;
+        if (Math.min(hr, cr.right) - Math.max(hl, cr.left) > 2 && hb > cardTop - 10) v.classList.add("pf-flip");
+      });
+    };
+    fitHeads();
+    const onFit = () => fitHeads();
+    window.addEventListener("resize", onFit, { passive: true });
+    const roFit = typeof ResizeObserver !== "undefined" ? new ResizeObserver(onFit) : null;
+    roFit?.observe(document.body);
+    void document.fonts?.ready.then(onFit);
+    cleanups.push(() => {
+      window.removeEventListener("resize", onFit);
+      roFit?.disconnect();
+      root.querySelectorAll(".pf-flip").forEach((e) => e.classList.remove("pf-flip"));
+    });
+
     if (reduce) {
       return () => cleanups.forEach((f) => f());
     }

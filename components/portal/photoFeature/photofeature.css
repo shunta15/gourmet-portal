@@ -9,6 +9,8 @@ body:has(.pf-root) > .cursor-dot,
 body:has(.pf-root) > .cursor-ring {
   display: none !important;
 }
+/* 本来の URL（暖簾の枠 NorenFrame の中）では、枠のヘッダー・フッター・紙の粒子・本文へ移動を出さない（この形が自分の上端の帯・フッターを持つ） */
+.vN:has(.pf-root) :is(.vN-hd, .vN-grain, .vN-skip, .vN-ft) { display: none !important; }
 body:has(.pf-root) { cursor: auto; background: #fbfaf6; }
 body:has(.pf-root) main { display: contents; }
 
@@ -56,7 +58,7 @@ body:has(.pf-root) main { display: contents; }
 .pf-em { color: var(--indigo); }
 
 /* ───────── ヘッダー・フッター ───────── */
-.pf-hd-bar { width: var(--box); margin: 0 auto; height: 52px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.pf-hd-bar { width: var(--box); margin: 0 auto; height: 52px; margin-top: 22px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
 .pf-logo { font-weight: 800; font-size: 24px; letter-spacing: 0.04em; line-height: 1; min-height: 44px; display: inline-flex; align-items: center; }
 .pf-logo small { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; margin-left: 8px; color: var(--ink2); }
 .pf-hd-bar nav { display: flex; gap: clamp(12px, 2vw, 28px); }
@@ -65,6 +67,18 @@ body:has(.pf-root) main { display: contents; }
 .pf-ft { margin-top: clamp(40px, 5vw, 70px); background: var(--paper2); border-top: 1px solid var(--line); padding: 36px var(--gutter) 30px; text-align: center; }
 .pf-root .pf-ft__l { color: var(--ink); font-weight: 800; font-size: 22px; letter-spacing: 0.06em; }
 .pf-root .pf-ft__s { margin-top: 6px; font-size: 12px; color: var(--ink2); letter-spacing: 0.08em; }
+
+/* ───────── ほかの特集記事（記事の終わり。20 本の中から最大 3 本） ───────── */
+.pf-rel { width: var(--box); margin: clamp(56px, 7vw, 110px) auto 0; }
+.pf-rel__t { font-size: clamp(18px, 1.6vw, 22px); font-weight: 800; letter-spacing: 0.14em; line-height: 1.5; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+.pf-root .pf-rel__ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); margin-top: 22px; }
+.pf-rel__a { display: block; }
+.pf-rel__ph { display: block; position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #d9d2c3; box-shadow: 0 0 0 clamp(3px, 0.4vw, 6px) var(--paper), 0 10px 22px rgba(25, 24, 21, 0.14); }
+.pf-rel__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
+.pf-rel__a:hover .pf-rel__img { transform: scale(1.04); }
+.pf-rel__b { display: block; margin-top: 16px; }
+.pf-rel__b b { display: block; font-size: 16px; font-weight: 800; letter-spacing: 0.04em; line-height: 1.6; }
+.pf-rel__b small { display: block; margin-top: 4px; font-size: 13px; color: var(--ink2); letter-spacing: 0.06em; line-height: 1.6; }
 
 
 /* ───────── 写真の枠・視差・現れ方 ───────── */
@@ -151,6 +165,9 @@ body:has(.pf-root) main { display: contents; }
 .pf-ov.pf-r { right: 0; background: linear-gradient(to left, rgba(10, 9, 8, 0.7), rgba(10, 9, 8, 0.36) 55%, rgba(10, 9, 8, 0)); }
 .pf-ov.pf-l { left: 0; background: linear-gradient(to right, rgba(10, 9, 8, 0.7), rgba(10, 9, 8, 0.36) 55%, rgba(10, 9, 8, 0)); }
 .pf-ov .pf-no { color: #fff; opacity: 0.92; }
+/* 小見出しが同じ側の文の札まで伸びるとき（Motion の fitHeads が .pf-flip を付ける）: 反対側の端へ移す */
+.pf-v.pf-flip .pf-ov.pf-r { right: auto; left: 0; background: linear-gradient(to right, rgba(10, 9, 8, 0.7), rgba(10, 9, 8, 0.36) 55%, rgba(10, 9, 8, 0)); }
+.pf-v.pf-flip .pf-tz.pf-l { left: auto; right: clamp(-20px, -1.4vw, -8px); }
 .pf-ov .pf-vt { text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55), 0 2px 18px rgba(0, 0, 0, 0.5); }
 /* 小見出し 2: 写真にかかる白い短冊 */
 .pf-tz { position: absolute; top: -14px; z-index: 4; background: var(--paper); padding: 16px 12px 18px; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--ink); font-size: inherit; font-weight: inherit; box-shadow: 0 8px 26px rgba(25, 24, 21, 0.16); }
@@ -326,6 +343,9 @@ body:has(.pf-root) main { display: contents; }
   .pf-hd-bar { height: 48px; width: calc(100% - 28px); }
   .pf-logo { font-size: 20px; }
   .pf-hd-bar nav a { font-size: 13px; letter-spacing: 0.04em; }
+  .pf-root .pf-rel__ul { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .pf-rel__a { display: grid; grid-template-columns: 38% minmax(0, 1fr); gap: 14px; align-items: center; }
+  .pf-rel__b { margin-top: 0; }
 
   /* 巻頭: 主役の写真が最初の画面の 6 割以上。縦に切り抜く（元の 1.3 倍まで）。題は写真の右に白抜き */
   .pf-cover { display: block; width: 100%; margin-top: 0; }
@@ -524,14 +544,21 @@ body:has(.pf-root) main { display: contents; }
 }
 
 /* 11. ページの上端の細い帯: 竿 + 読み進みに合わせて横へ進む小さな藍の布 + いまの視点の番号（右はし）。帯の中だけに収め、本文・見出し・写真の上には掛からない（帯の下に本文が潜る） */
-.pf-rod { display: none; position: fixed; left: 0; right: 0; top: 0; height: 20px; z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
-.pf-js .pf-rod { display: block; }
+.pf-rod { display: block; position: fixed; left: 0; right: 0; top: 0; height: 22px; z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
+.pf-rod__nav { position: absolute; left: 6px; top: 0; height: 17px; display: flex; gap: 0; pointer-events: auto; }
+.pf-rod__nav a { display: inline-flex; align-items: center; height: 17px; padding: 0 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; line-height: 1; color: var(--ink); border-bottom: 1px solid transparent; }
+.pf-rod__nav a { position: relative; }
+.pf-rod__nav a::after { content: ""; position: absolute; left: 0; right: 0; top: -2px; bottom: -11px; }
+.pf-rod__nav a:hover { border-color: var(--shu); }
+.is-dark .pf-rod__nav a { color: #efe6d6; }
 .is-dark .pf-rod { background: #26221f; }
 .pf-rod__bar { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: linear-gradient(#92724a, #4a3220); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
-.pf-rod__tr { position: absolute; left: 6px; right: 52px; top: 0; height: 15px; }
-.pf-rod__cl { position: absolute; top: 2px; left: 0; width: 26px; height: 13px; transform: translate3d(calc(var(--pp, 0) * (100vw - 58px - 26px)), 0, 0); }
+.pf-rod__tr { display: none; position: absolute; left: 152px; right: 52px; top: 0; height: 17px; }
+.pf-js .pf-rod__tr { display: block; }
+.pf-rod__cl { position: absolute; top: 2px; left: 0; width: 26px; height: 13px; transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 52px - 26px)), 0, 0); }
 .pf-rod__cl b { display: block; width: 100%; height: 100%; transform-origin: 50% 0; transform: skewX(var(--rs, 0deg)); border-bottom-width: 2px; box-shadow: none; }
-.pf-hud__no { position: absolute; right: 10px; top: 1px; width: 32px; height: 14px; perspective: 120px; }
+.pf-hud__no { display: none; position: absolute; right: 10px; top: 1px; width: 32px; height: 15px; perspective: 120px; }
+.pf-js .pf-hud__no { display: block; }
 .pf-hud__no b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--shu); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; line-height: 1; transform-origin: 50% 50%; }
 .pf-hud__no b:empty { display: none; }
 .is-dark .pf-hud__line { background: rgba(239, 230, 214, 0.22); }
@@ -598,6 +625,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-mag { transform: none !important; transition: none !important; }
   .pf-lb, .pf-lb__img { transition: none !important; animation: none !important; }
   .pf-lan, .pf-lan__g, .pf-nr__p, .pf-door__p, .pf-gate__cue i { animation: none !important; }
-  .pf-gate, .pf-rod, .pf-lamp i { display: none !important; }
+  .pf-gate, .pf-lamp i { display: none !important; }
+  .pf-rod__tr, .pf-hud__no { display: none !important; }
   .pf-s { top: 0 !important; opacity: 1 !important; transition: none !important; }
 }
