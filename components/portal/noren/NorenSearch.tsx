@@ -480,9 +480,11 @@ export default function NorenSearch({
 
                 {bshown.length > 0 ? (
                   <ul key={`${spQ}|${spRegion}|${spCuisine}|${spScene}|${spTag}|${spSort}|${cur}`} className="vBk-grid" aria-label="検索結果">
-                    {bshown.map((r, i) => (
-                      <BlockCard key={r.id} r={r} tags={ext?.tagsOf?.(r.id)?.tags} eager={i < 3} />
-                    ))}
+                    {bshown.map((r, i) => {
+                      // 事実の行（予算・席数・予約ページのリンク・個室の記載 など）は、暖簾版のカードと同じ関数（こだわり条件の部品の tagsOf）が返したものをそのまま渡す
+                      const t = ext?.tagsOf?.(r.id);
+                      return <BlockCard key={r.id} r={r} tags={t?.tags} tagsTotal={t?.total} eager={i < 3} />;
+                    })}
                   </ul>
                 ) : (
                   <div className="vBk-empty vBk-empty--rich" role="status">

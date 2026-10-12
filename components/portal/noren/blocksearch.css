@@ -140,7 +140,12 @@
 .vBk-m i{width:1px;height:12px;background:var(--bk-line)}
 .vBk-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .vBk-chips li{padding:3px 11px;border-radius:999px;background:var(--bk-bg2);color:#4b5160;font:400 13px/1.5 var(--bk-sans)}
-.vBk-chips li[data-on="1"]{background:var(--bk-or-t);color:var(--bk-or-ink);font-weight:700}
+/* 事実の行（暖簾版の店カードと同じ札。予算・席数・予約ページのリンク・個室の記載 など。BlockSearchParts の BlockCard）。小さな一覧: 紺の字、先頭の点は灰、選んだ条件だけ太字 + 橙の点 */
+.vBk-facts{display:grid;gap:3px;margin-top:8px;padding-top:9px;border-top:1px solid var(--bk-line)}
+.vBk-facts li{position:relative;padding-left:15px;font:500 13px/1.5 var(--bk-sans);color:var(--bk-ink);overflow-wrap:anywhere}
+.vBk-facts li::before{content:"";position:absolute;left:2px;top:calc(.75em - 3px);width:6px;height:6px;border-radius:50%;background:#c3c7d1}
+.vBk-facts li[data-on="1"]{font-weight:700;color:var(--bk-navy)}
+.vBk-facts li[data-on="1"]::before{background:var(--bk-or)}
 .vBk-empty{padding:60px 0;text-align:center;color:var(--bk-mute)}
 
 /* 保存のハート（写真の右上） */
@@ -190,6 +195,8 @@
   .vBk-m{font-size:12.5px;flex-direction:column;align-items:flex-start;gap:0}
   .vBk-m i{display:none}
   .vBk-chips li{font-size:12px;padding:2px 9px}
+  .vBk-facts{margin-top:6px;padding-top:7px}
+  .vBk-facts li{font-size:12px;padding-left:13px}
   .vBk-sort{margin-left:0}
   .vBk-reshead{margin-top:28px}
   .vBk-main{padding-bottom:56px}

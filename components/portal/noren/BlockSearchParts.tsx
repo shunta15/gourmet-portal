@@ -101,12 +101,15 @@ export function BlockHeart({ id, name }: { id: string; name: string }) {
   );
 }
 
-/** 店の札: 写真・保存のハート・店名・エリア・業種・タグ。写真の無い店は、業種の漢字を薄く出した面（空の枠・壊れた画像は出さない）。全体が店ページへのリンク（ハートは兄弟に置く） */
-export function BlockCard({ r, tags, eager = false }: { r: SearchItem; tags?: { label: string; on?: boolean }[]; eager?: boolean }) {
-  const own = (r.tags ?? []).filter((t) => isShowableTag(t) && t !== r.area && t !== r.cuisine && !r.name.includes(t)).slice(0, 3).map((t) => ({ label: t, on: false }));
-  // 選んだ条件（こだわり条件の札。当てはまったもの）を先に、続けて店のデータにあるタグ。条件のうち「選んでいない」札（予算の帯・営業中など）は出さない
-  const picked = (tags ?? []).filter((t) => t.on && isShowableTag(t.label));
-  const chips = [...picked, ...own.filter((o) => !picked.some((p) => p.label === o.label))].slice(0, 3);
+/**
+ * 店の札: 写真・保存のハート・店名・エリア・業種・タグ・事実の行。写真の無い店は、業種の漢字を薄く出した面（空の枠・壊れた画像は出さない）。全体が店ページへのリンク（ハートは兄弟に置く）。
+ * 事実の行（vBk-facts）は、暖簾版の店カード（ShopCard の vSc-tags）と同じもの: 呼び出し側が、こだわり条件の部品（FacetExt.tagsOf）が返した札（tags・total）をそのまま渡す。
+ * 語・条件・並び・最大の数（4）は tagsOf のまま（ここで作り直さない）。データの無い店は渡ってこない（0 本のときは行ごと出さない）。選んだ条件は先頭で、太字 + 橙の点。
+ */
+export function BlockCard({ r, tags, tagsTotal = 0, eager = false }: { r: SearchItem; tags?: { label: string; on?: boolean }[]; tagsTotal?: number; eager?: boolean }) {
+  // 店のデータにあるタグ（選んだ条件は、下の事実の行に出る）
+  const chips = (r.tags ?? []).filter((t) => isShowableTag(t) && t !== r.area && t !== r.cuisine && !r.name.includes(t)).slice(0, 3).map((t) => ({ label: t, on: false }));
+  const facts = tags ?? [];
   return (
     <li className="vBk-cardw">
       <Link href={`/restaurant/${r.id}`} className="vBk-card">
@@ -132,7 +135,15 @@ export function BlockCard({ r, tags, eager = false }: { r: SearchItem; tags?: { 
           {chips.length > 0 && (
             <ul className="vBk-chips" aria-label="タグ">
               {chips.map((t) => (
+                <li key={t.label}>{t.label}</li>
+              ))}
+            </ul>
+          )}
+          {facts.length > 0 && (
+            <ul className="vBk-facts" aria-label={tagsTotal > facts.length ? `この店に当てはまる条件（${tagsTotal}件のうち${facts.length}件）` : "この店に当てはまる条件"}>
+              {facts.map((t) => (
                 <li key={t.label} data-on={t.on ? "1" : undefined}>
+                  {t.on && <span className="vN-vh">選んだ条件: </span>}
                   {t.label}
                 </li>
               ))}
