@@ -597,7 +597,6 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
 
       {/* 巻頭: 主役の写真（大きく）+ 縦書きの題の札が重なる + 朱の丸 */}
       <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}${D.coverPair ? " pf-cover--pair" : ""}`} style={cover} aria-label="巻頭">
-        {!hero && <Brush kind="wave" className="pf-cover__br pf-cover__br--np" delay={0.5} />}
         {hero && (
           <div className="pf-cover__ph" style={{ "--cap": `${D.coverPair ? rowOf([hero, ...D.coverPair.photos]).cap : hero.cap}px` } as Fx}>
             {D.coverPair ? (
@@ -631,6 +630,8 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
           <Seal className={`pf-cover__seal${D.tag ? "" : " pf-cover__seal--notag"}`} delay={0.9} />
           {D.subCols.length > 0 && <Tate cols={D.subCols} className="pf-sub" />}
           <Tate cols={T.cols} as="h1" className="pf-ttl" animate delay={0.15} emFrom={T.em} />
+          {/* 写真の無い巻頭の筆の線は、題の面（.pf-cover__t）の中に置く。下の店名の札（.pf-cover__cap）が 2 行に折り返しても、札の字の上を通らない */}
+          {!hero && <Brush kind="wave" className="pf-cover__br pf-cover__br--np" delay={0.5} />}
         </div>
         {D.shop && (
           <p className="pf-cover__cap">
