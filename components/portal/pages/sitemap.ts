@@ -40,7 +40,17 @@ export function verticalSitemap(key: PortalVertical) {
         for (const p of PREFECTURES) add(`${v.path}/${c.slug}/${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
       }
     }
-    for (const s of v.scenes) add(`${v.path}/scene/${s.slug}`, pick(all, { scene: s }).length);
+    if ((key === "beauty" || key === "bodycare") && VERTICAL_DESIGN[key] === "colorplay") {
+      // COLOR PLAY: 利用シーンのページは「さがす」の「こだわり」(店のタグ)へ転送するので載せない。転送先を載せる(件数は同じ gate)
+      const tags = new Set<string>();
+      for (const s of v.scenes) {
+        const tag = s.matchTags.find((t) => all.some((p) => p.tags.includes(t)));
+        if (tag) tags.add(tag);
+      }
+      for (const tag of tags) add(`${v.path}/search?tag=${encodeURIComponent(tag)}`, all.filter((p) => p.tags.includes(tag)).length);
+    } else {
+      for (const s of v.scenes) add(`${v.path}/scene/${s.slug}`, pick(all, { scene: s }).length);
+    }
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
     // COLOR PLAY: 特集記事は店のページと一緒（/feature/{id} は店のページへ転送）なので、特集の URL は載せない
     if ((key === "beauty" || key === "bodycare") && !(VERTICAL_DESIGN[key] === "colorplay")) {

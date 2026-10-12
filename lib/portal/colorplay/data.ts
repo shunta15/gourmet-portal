@@ -15,10 +15,11 @@ import type { CpFeature, CpPhoto, CpShop } from "./types";
 const PREF_BY_SLUG = new Map(PREFECTURES.map((p) => [p.slug, p]));
 
 /**
- * 顔がはっきり写る写真・質の低い写真は、店の写真として出さない(試作で決めた方針。ビューティーの 12 枚)。
- * false にすると、データにある写真は(使えないものを除いて)すべて出す。
+ * 顔がはっきり写る写真・質の低い写真を、店の写真として出さないか(試作では true。ビューティーの 12 枚が対象)。
+ * 2026-10-13 のオーナー指示(「人が映るのしょうがないだろ」・公開の指示)で false: データにある写真は、使えないもの(lib/portal/photoRules の isUsableImage。
+ * 表示禁止リスト lib/imageBlocklist.ts を含む)を除いてすべて出す。個別に外すと決めた写真の一覧は、ビューティーの店写真には見つからなかった。
  */
-export const AVOID_CLEAR_FACES = true;
+export const AVOID_CLEAR_FACES = false;
 
 type Ph = { path: string; what?: string; width?: number; height?: number; m: [number, number, number] };
 

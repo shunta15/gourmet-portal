@@ -13,6 +13,7 @@ import { IconAll, IconArrow, IconPin, IconSearch } from "@/components/portal/bpr
 import HeroView, { type HeroVariant } from "@/components/portal/bproto/colorplay/hero/HeroView";
 import HeroViewB, { type HeroVariantB } from "@/components/portal/bproto/colorplay/hero/HeroViewB";
 import { loadShops } from "@/lib/portal/colorplay/data";
+import { KIND_IMAGES } from "@/lib/portal/colorplay/kindImages";
 import { searchHref, shopHref } from "@/lib/portal/colorplay/search";
 import type { CpShop } from "@/lib/portal/colorplay/types";
 import type { CpSite } from "@/lib/portal/colorplay/site";
@@ -33,12 +34,12 @@ const SHOP_TILES = 8;
 type SP = { [key: string]: string | string[] | undefined };
 type Hero = HeroVariant | HeroVariantB;
 
-/** 種類の札: 英字・色・写真(今ある 3 枚だけ。無い種類は色面と大きな字だけ) */
-const PANELS: Record<string, { en: string[]; cls: string; img?: { src: string; w: number; h: number } }> = {
-  hair: { en: ["HAIR"], cls: "kp-sky", img: { src: "/_portal/bproto/colorplay/ref-hair.jpg", w: 296, h: 264 } },
-  esthetic: { en: ["ESTHETIC"], cls: "kp-red", img: { src: "/_portal/bproto/colorplay/ref-beauty.jpg", w: 178, h: 378 } },
+/** 種類の札: 英字・色。写真は lib/portal/colorplay/kindImages.ts の表(種類と合うものだけ。無い種類は色面と大きな字だけ) */
+const PANELS: Record<string, { en: string[]; cls: string }> = {
+  hair: { en: ["HAIR"], cls: "kp-sky" },
+  esthetic: { en: ["ESTHETIC"], cls: "kp-red" },
   "hair-removal": { en: ["HAIR", "REMOVAL"], cls: "kp-blue" },
-  nail: { en: ["NAIL"], cls: "kp-pink", img: { src: "/_portal/bproto/colorplay/own-nails.jpg", w: 380, h: 282 } },
+  nail: { en: ["NAIL"], cls: "kp-pink" },
   eyelash: { en: ["EYELASH"], cls: "kp-black" },
 };
 
@@ -138,13 +139,14 @@ export function cpTopPage(site: CpSite) {
             <div className="cp-kp" data-sp="g">
               {kinds.map((k, i) => {
                 const pn = PANELS[k.slug] ?? { en: [k.name], cls: "kp-sky" };
+                const img = KIND_IMAGES[k.slug];
                 return (
-                  <Link key={k.slug} href={searchHref(site, { kind: k.slug })} className={`kp-i ${pn.cls} ${pn.img ? "has-ph" : "no-ph"} ${Math.max(...pn.en.map((l) => l.length)) >= 7 ? "lg" : ""}`} data-sp="e" style={{ ["--n" as string]: i, ["--of" as string]: kinds.length }}>
+                  <Link key={k.slug} href={searchHref(site, { kind: k.slug })} className={`kp-i ${pn.cls} ${img ? "has-ph" : "no-ph"} ${Math.max(...pn.en.map((l) => l.length)) >= 7 ? "lg" : ""}`} data-sp="e" style={{ ["--n" as string]: i, ["--of" as string]: kinds.length }}>
                     <span className="kp-c">
-                      {pn.img && (
+                      {img && (
                         <span className="kp-ph">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={pn.img.src} alt="" loading="lazy" width={pn.img.w} height={pn.img.h} />
+                          <img src={img.src} alt="" loading="lazy" width={img.w} height={img.h} />
                         </span>
                       )}
                       <span className="kp-t">

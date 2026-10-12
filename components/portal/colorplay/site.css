@@ -65,7 +65,7 @@
 .kp-blue{background:var(--blue); color:#111}
 .kp-pink{background:var(--pink-p); color:#111}
 .kp-black{background:#0a0a0a; color:#fff}
-.kp-c{--fe:clamp(0, calc(var(--sp-e,1)*1.7 - var(--n)*.25), 1); position:absolute; top:0; bottom:0; left:calc(var(--l) + var(--sl)/2 + .8%); width:calc(100%/var(--of) - var(--sl) - 1.6%);
+.kp-c{--fe:clamp(0, calc(var(--sp-e,1)*2.8 - var(--n)*.3), 1); position:absolute; top:0; bottom:0; left:calc(var(--l) + var(--sl)/2 + .8%); width:calc(100%/var(--of) - var(--sl) - 1.6%);
   display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:40px; translate:calc((1 - var(--fe))*-80px) 0; opacity:calc(.15 + var(--fe)*.85)}
 .kp-i:first-child .kp-c{left:max(24px, calc(50% - 550px))}
 .kp-ph{position:relative; flex:1 1 auto; min-height:0; margin:36px 0 12px; overflow:hidden;

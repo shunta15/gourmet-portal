@@ -1,6 +1,8 @@
 import { scenePage } from "@/components/portal/pages/scene";
+import { sceneRedirectPage } from "@/components/portal/colorplay/pages/redirects";
 
-const page = scenePage("beauty");
+// COLOR PLAY（lib/portal/verticalDesign.ts）のあいだは /beauty/search?tag=…（こだわり）へ恒久の転送。"legacy" なら元の利用シーンページ。
+const page = sceneRedirectPage("beauty", scenePage("beauty"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

@@ -16,10 +16,10 @@ export const VERTICAL_DESIGN: Record<CpVerticalKey, VerticalDesign> = {
 };
 
 /**
- * ビューティーの最初の画面(赤い面)の動きの案。1 塗る / 2 留める / 3 流れる(components/portal/bproto/colorplay/hero/)。
+ * ビューティーの最初の画面(赤い面)の動きの案。オーナー決定(2026-10-13)で 1(塗る)。1 塗る / 2 留める / 3 流れる(components/portal/bproto/colorplay/hero/)。
  * 本番では URL の ?hero= を読まない(見本=VERCEL_ENV が production 以外のときだけ、URL で替えて見比べられる)。
  */
-export const BEAUTY_HERO: 1 | 2 | 3 | 4 | 5 | 6 = 2;
+export const BEAUTY_HERO: 1 | 2 | 3 | 4 | 5 | 6 = 1;
 
 export function isColorplay(key: CpVerticalKey): boolean {
   return VERTICAL_DESIGN[key] === "colorplay";
