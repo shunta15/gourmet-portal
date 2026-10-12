@@ -1,5 +1,6 @@
 import { RELEASE_REST, RELEASE_SEARCH } from "./release";
 import { areaIndexHref, regionHref } from "./areaLinks";
+import { featureHrefOf } from "./onePage";
 
 /**
  * 暖簾の見本（/proto-noren/**）の行き先。グルメの今のヘッダー・フッターと同じ行き先（行き先は今の本物のページ）。
@@ -26,7 +27,8 @@ export const SAMPLE_LINKS: NorenLinks = { top: NOREN_TOP, shopBase: "/proto-nore
 export const LIVE_LINKS: NorenLinks = {
   top: GOURMET_TOP,
   shopBase: "/restaurant",
-  feature: (id) => `/feature/${encodeURIComponent(id)}`,
+  // 1 店 1 ページにした記事は、転送を踏まないよう、はじめから /restaurant/<店の ID> を指す（lib/portal/noren/onePage.ts。切り替えが false なら今までどおり /feature/<記事 ID>）
+  feature: (id) => featureHrefOf(id),
 };
 
 /**

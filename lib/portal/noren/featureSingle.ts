@@ -10,6 +10,15 @@ import { RELEASE_REST } from "./release";
 export const NOREN_FEATURE_SINGLE = RELEASE_REST;
 
 /**
+ * 店 1 軒の記事のうち、先に出す 20 本（下の FEATURED_SINGLE_IDS。ID の完全一致）だけを、写真が主役の形（components/portal/photoFeature/PhotoFeaturePage.tsx）で出すスイッチ。
+ * - true（RELEASE_REST と同じ）: 20 本が、写真が主役の形で出る（入口の暖簾・視点ごとの小さな暖簾・暗い面・「ほかの特集記事」など）。
+ *   20 本以外の店 1 軒の記事と、複数の店・場所の記事は、今までどおり（出力は変わらない）。メタ情報・構造化データ・静的生成の対象・再生成の間隔も、同じ。
+ * - false（本番の main など RELEASE_REST が false のとき）: 20 本も今までの店 1 軒の枠（FeatureSinglePage）。元に戻すときは false にして再デプロイ。
+ * NOREN_FEATURE_SINGLE が false のときは、この値に関係なく、全記事が今までどおり。
+ */
+export const NOREN_FEATURE_PHOTO = RELEASE_REST;
+
+/**
  * 店 1 軒の記事か。ranking が「POINT 01〜」という視点の並びになっている記事（店の並びではない）。
  * 判定は components/portal/noren/FeaturePage.tsx の isSinglePoint と同じ条件。
  */
@@ -90,11 +99,20 @@ const DUMMY_FEATURE_IMAGES: ReadonlySet<string> = new Set([
 export const isDummyFeatureImage = (u: string | undefined | null): boolean => !!u && DUMMY_FEATURE_IMAGES.has(u.normalize("NFC"));
 
 /**
- * 特集の一覧で「先に出す 20 本」（店 1 軒の記事。順番つき。2026-10-11 発注者指示「まず 20 店舗ぶん」）。
+ * 特集の一覧で「先に出す 50 本」（店 1 軒の記事。順番つき）。先頭の 20 本は 2026-10-11 発注者指示「まず 20 店舗ぶん」、
+ * 後ろの 30 本は 2026-10-12 発注者指示「特集の一覧の特集記事の棚を 20 → 50 に増やす」で足した本（今の 20 本の並びは変えず、後ろに足した）。
+ * 足した 30 本の選び方（点数・人気は使わない）:
+ *   ① 1 店 1 ページの対象（lib/portal/noren/onePage.ts。店 1 軒の記事で、対の店ページがあり、使える実物の写真が 6 枚以上、店 ID が r72・r277・r330・r368 ではない）の新規 33 本のうち、
+ *   ② 写真の枚数が多い順（枚数は記事の写真 + 対の店ページの写真を重複なしで数える。33 本とも 6 枚で並ぶので、同じ枚数は記事だけの写真が多い順）に 30 本。
+ *      記事だけの写真が 6 枚に満たない 3 本（GOGUMI.・蕎亭う月・かき小屋匠ちゃん）は棚に載せない。この 3 本は、スマホで縦書きの見出しが本文に重なったので、1 店 1 ページの対象からも外した。
+ *   ③ 並びは、隣り合う 2 本の地域・業種が同じにならないよう、残りの本数の多い地域から先に散らした（地域は愛知が 10 本と多い。33 本の中の本数が元々偏っているため、3 本までにはできなかった）。
+ *   本文に食べログ・Google マップの口コミ・レビューを引いた文が残っていた 3 本（ごはん処湊茶屋・多幸・フルーツスノウ）は、その文を lib/otherSiteRatings.ts の OVERRIDES で取り除いてある（8 文）。
+ * 先頭の 20 本の選び方（以下は 2026-10-11 のまま）:
  * 選び方: 対の店ページがあり、主役の写真が使え、主役と全部の視点に写真があって（足りない所は lib/portal/noren/featureSinglePhotos.ts の表で
  * 対の店の写真を当てて）、記事の中で同じ写真が重ならない記事。そのうえで写真の質・枚数・本文の量が良い順に、同じ地域は 3 本まで・業種が偏らないように選んだ。
  * 本文（リード・視点・店の案内・締め）も読み、ほかのサイトの口コミ・レビューの中身や評価の高さを引いた文、来店していないのに行ったように書いた文が無いことを確かめた（2026-10-11）。
  * 並びは、地域・業種が隣り合って続かないようにしてある。特集の一覧（/feature。app/gourmet/feature/page.tsx）の「特集記事」の棚が、この並びのまま出す。
+ * 棚に出す本（ここ）は、1 店 1 ページの対象（onePage.ts の ONE_PAGE_SHOP_OF_FEATURE）の部分集合（食い違いは onePage.ts が開発時に知らせる）。
  */
 export const FEATURED_SINGLE_IDS: readonly string[] = [
   "スペインバルPALLO", // 三重・バー＆グリル
@@ -117,4 +135,35 @@ export const FEATURED_SINGLE_IDS: readonly string[] = [
   "紅梅庵", // 京都・和食
   "旬菜笑食屋裕-ひろ-", // 長野・居酒屋
   "お好み焼き千富", // 広島・お好み焼き
+  // ── ここから 2026-10-12 に足した 30 本（上の説明の ① ② ③）──
+  "すし笑魚亭", // nagoya・寿司店
+  "創作イタリアン肉バルCRAFT", // saitama・バー＆グリル
+  "souvenir", // nagoya・レストラン
+  "ManpukuShokudoKante", // shizuoka・居酒屋
+  "松寿司本店", // nagoya・寿司店
+  "diningkitchenLIFE", // saitama・レストラン
+  "しんちゃん", // nagoya・韓国料理店
+  "ロースタリーフィト", // gunma・コーヒーショップ・喫茶店
+  "オステリアバールアマーノ", // nagoya・イタリア料理店
+  "ごはん処湊茶屋", // mie・定食屋
+  "太鼓判亭本店", // ibaraki・ラーメン・創作料理
+  "多幸", // shizuoka・和食店
+  "DolceCucinaAngeloアンジェロ", // nagoya・カフェ・喫茶
+  "まるこう", // saitama・とんかつ店
+  "ロータスカフェ", // gifu・カフェ・喫茶
+  "幌馬車樹樹", // tokyo・レストラン
+  "FUJICOFFEE（ふじ珈琲）", // yamaguchi・コーヒーショップ・喫茶店
+  "味感真寿美", // kagawa・定食屋
+  "喜重軒", // gunma・レストラン
+  "すし処隆", // nara・寿司店
+  "さつま路", // kagoshima・定食屋
+  "フルーツスノウ", // mie・スイーツ店
+  "pepo", // ibaraki・イタリア料理店
+  "竹千庵", // iwate・蕎麦店
+  "すみか", // nagoya・カフェ・喫茶
+  "笑酒楽", // osaka・居酒屋
+  "めん食い処わ", // nagano・そば・うどん・丼
+  "赤れんが", // gifu・レストラン
+  "OyatsuBoxPiyo", // shizuoka・コーヒーショップ・喫茶店
+  "元祖煮ぼうとうの國良", // saitama・郷土料理店
 ];

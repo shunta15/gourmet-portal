@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
+import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
 // ── scene ここから
 import { NOREN_SCENE_REWRITE, NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
@@ -72,6 +73,17 @@ const nextConfig: NextConfig = {
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),
       ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE ? [{ source: "/gourmet/feature/:id", destination: "/feature/:id", permanent: true }] : []),
+      // 1 店 1 ページ（見本）: 写真が主役の特集記事（対象は lib/portal/noren/onePage.ts の表）の URL /feature/<記事 ID> は、同じ店の /restaurant/<店の ID> へ恒久リダイレクト（308・1 回）。
+      // 対象を、記事 ID の完全一致（1 本ずつ）で書く。サイト内のリンクははじめから /restaurant/<店の ID> を指す（lib/portal/noren/onePage.ts の featureHrefOf）。
+      // source は path-to-regexp の書き方なので、百分率エンコードしたあと、( ) { } : * + ? が残っていたら \\ で打ち消す（今の 53 本の ID には無い。入れ忘れの保険）。
+      // 切り替え NOREN_ONE_PAGE（RELEASE_REST）が false のとき・公開スイッチ OFF のときは 1 行も出ない。
+      ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE && NOREN_ONE_PAGE
+        ? Object.entries(ONE_PAGE_SHOP_OF_FEATURE).map(([fid, sid]) => ({
+            source: `/feature/${encodeURIComponent(fid).replace(/[(){}:*+?]/g, "\\$&")}`,
+            destination: `/restaurant/${sid}`,
+            permanent: true,
+          }))
+        : []),
       // 特集記事のトップ（一覧・地域別・特集を探す）の内部のパスも同じ。/gourmet/feature/search は上の :id にも当たるが、同じ行き先（/feature/search）になる
       ...(PORTAL_LIVE && NOREN_FEATURE_INDEX_REWRITE
         ? [

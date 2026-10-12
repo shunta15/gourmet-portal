@@ -4,6 +4,7 @@ import "@/app/proto-noren/feature.css";
 import "./featlist.css";
 import { sized } from "@/lib/imageUrl";
 import { GOURMET_TOP } from "@/lib/portal/noren/nav";
+import { featureHrefOf } from "@/lib/portal/noren/onePage";
 import { clothChars, clothFs, splitTitle, type FeatureCardItem } from "@/lib/portal/noren/featureCard";
 import { nameCore } from "@/lib/portal/noren/shop";
 
@@ -14,7 +15,7 @@ import { nameCore } from "@/lib/portal/noren/shop";
 export function FeatureCard({ f, eager = false }: { f: FeatureCardItem; eager?: boolean }) {
   const [main] = splitTitle(f.title);
   return (
-    <Link href={`/feature/${encodeURIComponent(f.id)}`} className="vI-card" data-cursor="READ">
+    <Link href={featureHrefOf(f.id)} className="vI-card" data-cursor="READ">
       <span className={`vI-vis${f.img ? "" : " is-nophoto"}`}>
         <span className="vH-ac-ph">
           {f.img && (
@@ -62,7 +63,7 @@ export type ShopFeatureCardData = { id: string; img: string; shopName: string; a
 export function ShopFeatureCard({ f, eager = false }: { f: ShopFeatureCardData; eager?: boolean }) {
   const main = Array.from(nameCore(f.shopName)).slice(0, 12).join("");
   return (
-    <Link href={`/feature/${encodeURIComponent(f.id)}`} className="vI-card" data-cursor="READ">
+    <Link href={featureHrefOf(f.id)} className="vI-card" data-cursor="READ">
       <span className={`vI-vis${f.img ? "" : " is-nophoto"}`}>
         <span className="vH-ac-ph">
           {f.img && (

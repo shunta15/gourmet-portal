@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import FeaturePage from "@/components/portal/noren/FeaturePage";
 import FeatureSinglePage from "@/components/portal/noren/FeatureSinglePage";
 import FeatureScenePage from "@/components/portal/noren/FeatureScenePage";
+import PhotoFeatureShell from "@/components/portal/photoFeature/PhotoFeatureShell";
+import PhotoFeaturePage from "@/components/portal/photoFeature/PhotoFeaturePage";
 import {
   buildArticleJsonLd,
   buildFeatureBreadcrumbJsonLd,
@@ -20,7 +22,11 @@ import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { buildFmap } from "@/lib/portal/fmapData";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
-import { NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { NOREN_FEATURE_PHOTO, NOREN_FEATURE_SINGLE, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
+import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
+import { isFeaturedPhotoId } from "@/lib/portal/photoFeature/featured";
+import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
+import { onePageShopOf } from "@/lib/portal/noren/onePage";
 import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import { pairFeatureNote, pairShopNote, pairedShopOfFeature } from "@/lib/portal/noren/pair";
 import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rewrites";
@@ -38,7 +44,8 @@ export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => {
   if (!NOREN_FEATURE_REWRITE) return [];
   const ids = await getAllFeatureArticleIds();
-  return ids.map((id) => ({ id }));
+  // 1 店 1 ページにした記事は、/feature/<ID> が /restaurant/<店の ID> への転送になる（このページは出さない）ので、静的に作らない
+  return ids.filter((id) => !onePageShopOf(id)).map((id) => ({ id }));
 });
 
 export async function generateMetadata({
@@ -81,6 +88,9 @@ export default async function Page({
   if (!NOREN_FEATURE_REWRITE) notFound();
   // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
   const id = decodeRewrittenId((await params).id);
+  // 1 店 1 ページにした記事（lib/portal/noren/onePage.ts の表）: /feature/<ID> は next.config.ts の redirects で /restaurant/<店の ID> へ恒久転送される。ここへ来たとき（設定を通らない呼び方）も同じ行き先へ
+  const onePageShop = onePageShopOf(id);
+  if (onePageShop) permanentRedirect(`/restaurant/${onePageShop}`);
   const article = await getFeatureArticleById(id);
   if (!article) notFound();
   const articleJsonLd = buildArticleJsonLd(article);
@@ -99,6 +109,11 @@ export default async function Page({
   const pair = single && shop && pairedShopOfFeature(article.id) === shop.id
     ? { shopNote: pairShopNote(shop), featureNote: pairFeatureNote(article.ranking.length) }
     : null;
+  // 1 店 1 ページの対象（isFeaturedPhotoId = onePage.ts の表。ID の完全一致）は、写真が主役の形（components/portal/photoFeature/）で出す。ただし /feature/<ID> は /restaurant/<店の ID> へ転送されるので、ここへ来るのは転送を通らない呼び方だけ（実際は上の permanentRedirect で止まる）。切り替えは NOREN_FEATURE_PHOTO（false で FeatureSinglePage に戻る）。
+  // 対象以外の店 1 軒の記事・複数の店の記事は、この分岐に入らない（出力は今までどおり）。
+  const photo = NOREN_FEATURE_PHOTO && single && isFeaturedPhotoId(article.id);
+  const photoData = photo ? buildPhotoFeature(article, shop) : null;
+  const photoRelated = photo ? await getRelatedFeatured(article.id, shop ? { region: shop.region, cuisine: shop.cuisine } : null) : [];
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
   const fmap = single ? null : await buildFmap(article);
   return (
@@ -115,7 +130,18 @@ export default async function Page({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
-      {single ? (
+      {photoData ? (
+        <PhotoFeatureShell>
+          <PhotoFeaturePage
+            data={photoData}
+            shopHref={pair && shop ? `${LIVE_LINKS.shopBase}/${shop.id}` : null}
+            listHref="/feature"
+            topHref={LIVE_LINKS.top}
+            searchHref="/search"
+            related={photoRelated}
+          />
+        </PhotoFeatureShell>
+      ) : single ? (
         <FeatureSinglePage
           article={article}
           store={
