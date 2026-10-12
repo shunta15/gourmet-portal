@@ -52,161 +52,6 @@
    "r173"
   ]
  },
- "f/osaka/overview": {
-  "src": "/_portal/illust-map/f-osaka.webp",
-  "bounds": [
-   [
-    34.30714,
-    134.64844
-   ],
-   [
-    35.17381,
-    136.40625
-   ]
-  ],
-  "z": 10,
-  "zi": 10,
-  "w": 2560,
-  "h": 1536,
-  "kb": 252,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r18",
-   "r107",
-   "r218",
-   "r231",
-   "r234",
-   "r417"
-  ]
- },
- "f/hyogo/overview": {
-  "src": "/_portal/illust-map/f-hyogo.webp",
-  "bounds": [
-   [
-    34.45222,
-    134.64844
-   ],
-   [
-    35.03,
-    135.70313
-   ]
-  ],
-  "z": 11,
-  "zi": 10.75,
-  "w": 2583,
-  "h": 1722,
-  "kb": 258,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r78",
-   "r82",
-   "r173"
-  ]
- },
- "g/osaka/overview": {
-  "src": "/_portal/illust-map/g-osaka.webp",
-  "bounds": [
-   [
-    34.30714,
-    134.64844
-   ],
-   [
-    35.17381,
-    136.40625
-   ]
-  ],
-  "z": 10,
-  "zi": 10,
-  "w": 2560,
-  "h": 1536,
-  "kb": 175,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r18",
-   "r107",
-   "r218",
-   "r231",
-   "r234",
-   "r417"
-  ]
- },
- "g/hyogo/overview": {
-  "src": "/_portal/illust-map/g-hyogo.webp",
-  "bounds": [
-   [
-    34.45222,
-    134.64844
-   ],
-   [
-    35.03,
-    135.70313
-   ]
-  ],
-  "z": 11,
-  "zi": 10.75,
-  "w": 2583,
-  "h": 1722,
-  "kb": 176,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r78",
-   "r82",
-   "r173"
-  ]
- },
- "h/osaka/overview": {
-  "src": "/_portal/illust-map/h-osaka.webp",
-  "bounds": [
-   [
-    34.01624,
-    134.64844
-   ],
-   [
-    35.46067,
-    136.40625
-   ]
-  ],
-  "z": 10,
-  "zi": 10,
-  "w": 2560,
-  "h": 2560,
-  "kb": 254,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r231",
-   "r234",
-   "r274"
-  ]
- },
- "h/hyogo/overview": {
-  "src": "/_portal/illust-map/h-hyogo.webp",
-  "bounds": [
-   [
-    34.30714,
-    134.29688
-   ],
-   [
-    35.46067,
-    136.05469
-   ]
-  ],
-  "z": 10,
-  "zi": 10.75,
-  "w": 2600,
-  "h": 2080,
-  "kb": 257,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r78",
-   "r100"
-  ]
- },
  "e/tokyo/overview": {
   "src": "/_portal/illust-map/e-tokyo.webp",
   "bounds": [
@@ -1089,226 +934,6 @@
   "kind": "overview",
   "waterRaw": []
  },
- "f/tokyo/overview": {
-  "src": "/_portal/illust-map/f-tokyo.webp",
-  "bounds": [
-   [
-    35.46067,
-    139.04297
-   ],
-   [
-    35.88905,
-    140.09766
-   ]
-  ],
-  "z": 11,
-  "zi": 10.75,
-  "w": 2583,
-  "h": 1292,
-  "kb": 246,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r01",
-   "r91"
-  ]
- },
- "f/nagoya/overview": {
-  "src": "/_portal/illust-map/f-nagoya.webp",
-  "bounds": [
-   [
-    34.59704,
-    136.05469
-   ],
-   [
-    35.46067,
-    138.16406
-   ]
-  ],
-  "z": 10,
-  "zi": 9.5,
-  "w": 2172,
-  "h": 1086,
-  "kb": 195,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r359",
-   "r416",
-   "r454",
-   "r482"
-  ]
- },
- "f/fukuoka/overview": {
-  "src": "/_portal/illust-map/f-fukuoka.webp",
-  "bounds": [
-   [
-    32.54681,
-    129.375
-   ],
-   [
-    34.30714,
-    132.1875
-   ]
-  ],
-  "z": 9,
-  "zi": 9,
-  "w": 2048,
-  "h": 1536,
-  "kb": 163,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r09",
-   "r80",
-   "r232",
-   "r288",
-   "r511"
-  ]
- },
- "f/kyoto/overview": {
-  "src": "/_portal/illust-map/f-kyoto.webp",
-  "bounds": [
-   [
-    34.8138,
-    135.43945
-   ],
-   [
-    35.10193,
-    135.9668
-   ]
-  ],
-  "z": 12,
-  "zi": 11.5,
-  "w": 2172,
-  "h": 1448,
-  "kb": 221,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r205"
-  ]
- },
- "f/japan/overview": {
-  "src": "/_portal/illust-map/f-japan.webp",
-  "bounds": [
-   [
-    16.63619,
-    112.5
-   ],
-   [
-    48.9225,
-    163.125
-   ]
-  ],
-  "z": 6,
-  "zi": 5.5,
-  "w": 2600,
-  "h": 2022,
-  "kb": 71,
-  "q": 74,
-  "kind": "overview"
- },
- "g/tokyo/overview": {
-  "src": "/_portal/illust-map/g-tokyo.webp",
-  "bounds": [
-   [
-    35.46067,
-    139.04297
-   ],
-   [
-    35.88905,
-    140.09766
-   ]
-  ],
-  "z": 11,
-  "zi": 10.75,
-  "w": 2583,
-  "h": 1292,
-  "kb": 171,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r01",
-   "r91"
-  ]
- },
- "g/nagoya/overview": {
-  "src": "/_portal/illust-map/g-nagoya.webp",
-  "bounds": [
-   [
-    34.59704,
-    136.05469
-   ],
-   [
-    35.46067,
-    138.16406
-   ]
-  ],
-  "z": 10,
-  "zi": 9.5,
-  "w": 2172,
-  "h": 1086,
-  "kb": 121,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r359",
-   "r416",
-   "r454",
-   "r482"
-  ]
- },
- "g/fukuoka/overview": {
-  "src": "/_portal/illust-map/g-fukuoka.webp",
-  "bounds": [
-   [
-    32.54681,
-    129.375
-   ],
-   [
-    34.30714,
-    132.1875
-   ]
-  ],
-  "z": 9,
-  "zi": 9,
-  "w": 2048,
-  "h": 1536,
-  "kb": 95,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r09",
-   "r80",
-   "r232",
-   "r288",
-   "r511"
-  ]
- },
- "g/kyoto/overview": {
-  "src": "/_portal/illust-map/g-kyoto.webp",
-  "bounds": [
-   [
-    34.8138,
-    135.43945
-   ],
-   [
-    35.10193,
-    135.9668
-   ]
-  ],
-  "z": 12,
-  "zi": 11.5,
-  "w": 2172,
-  "h": 1448,
-  "kb": 129,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r205"
-  ]
- },
  "g/japan/overview": {
   "src": "/_portal/illust-map/g-japan.webp",
   "bounds": [
@@ -1326,129 +951,6 @@
   "w": 2600,
   "h": 2022,
   "kb": 47,
-  "q": 74,
-  "kind": "overview"
- },
- "h/tokyo/overview": {
-  "src": "/_portal/illust-map/h-tokyo.webp",
-  "bounds": [
-   [
-    35.17381,
-    138.86719
-   ],
-   [
-    36.03133,
-    140.27344
-   ]
-  ],
-  "z": 10,
-  "zi": 10.75,
-  "w": 2600,
-  "h": 1950,
-  "kb": 258,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r01",
-   "r91",
-   "r124",
-   "r316",
-   "r375"
-  ]
- },
- "h/nagoya/overview": {
-  "src": "/_portal/illust-map/h-nagoya.webp",
-  "bounds": [
-   [
-    34.30714,
-    136.05469
-   ],
-   [
-    35.74651,
-    138.16406
-   ]
-  ],
-  "z": 10,
-  "zi": 9.5,
-  "w": 2172,
-  "h": 1810,
-  "kb": 179,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r475",
-   "r488"
-  ]
- },
- "h/fukuoka/overview": {
-  "src": "/_portal/illust-map/h-fukuoka.webp",
-  "bounds": [
-   [
-    32.54681,
-    129.375
-   ],
-   [
-    34.88593,
-    132.1875
-   ]
-  ],
-  "z": 9,
-  "zi": 9,
-  "w": 2048,
-  "h": 2048,
-  "kb": 125,
-  "q": 74,
-  "kind": "overview",
-  "waterRaw": [
-   "r10",
-   "r80",
-   "r232",
-   "r297"
-  ]
- },
- "h/kyoto/overview": {
-  "src": "/_portal/illust-map/h-kyoto.webp",
-  "bounds": [
-   [
-    34.59704,
-    135.35156
-   ],
-   [
-    35.31737,
-    136.05469
-   ]
-  ],
-  "z": 11,
-  "zi": 11.5,
-  "w": 2080,
-  "h": 2600,
-  "kb": 251,
-  "q": 68,
-  "kind": "overview",
-  "waterRaw": [
-   "r157",
-   "r187",
-   "r205",
-   "r264"
-  ]
- },
- "h/japan/overview": {
-  "src": "/_portal/illust-map/h-japan.webp",
-  "bounds": [
-   [
-    16.63619,
-    112.5
-   ],
-   [
-    48.9225,
-    163.125
-   ]
-  ],
-  "z": 6,
-  "zi": 5.5,
-  "w": 2600,
-  "h": 2022,
-  "kb": 36,
   "q": 74,
   "kind": "overview"
  },
@@ -1471,5 +973,125 @@
   "kb": 63,
   "q": 74,
   "kind": "overview"
+ },
+ "e/kanto/area": {
+  "src": "/_portal/illust-map/e-kanto.webp",
+  "bounds": [
+   [
+    34.976,
+    138.311
+   ],
+   [
+    36.99268,
+    141.42563
+   ]
+  ],
+  "z": 10,
+  "zi": 8.5,
+  "w": 1604,
+  "h": 1283,
+  "kb": 131,
+  "q": 74,
+  "kind": "area"
+ },
+ "e/hokkaido-tohoku/area": {
+  "src": "/_portal/illust-map/e-hokkaido-tohoku.webp",
+  "bounds": [
+   [
+    36.49639,
+    135.54382
+   ],
+   [
+    44.61393,
+    148.93066
+   ]
+  ],
+  "z": 8,
+  "zi": 6.39,
+  "w": 1597,
+  "h": 1277,
+  "kb": 54,
+  "q": 74,
+  "kind": "area"
+ },
+ "e/chubu/area": {
+  "src": "/_portal/illust-map/e-chubu.webp",
+  "bounds": [
+   [
+    34.32076,
+    135.16479
+   ],
+   [
+    37.55547,
+    140.15808
+   ]
+  ],
+  "z": 9,
+  "zi": 7.82,
+  "w": 1605,
+  "h": 1284,
+  "kb": 112,
+  "q": 74,
+  "kind": "area"
+ },
+ "e/kinki/area": {
+  "src": "/_portal/illust-map/e-kinki.webp",
+  "bounds": [
+   [
+    33.97753,
+    134.44931
+   ],
+   [
+    35.73091,
+    137.11899
+   ]
+  ],
+  "z": 10,
+  "zi": 8.72,
+  "w": 1601,
+  "h": 1282,
+  "kb": 172,
+  "q": 74,
+  "kind": "area"
+ },
+ "e/chugoku-shikoku/area": {
+  "src": "/_portal/illust-map/e-chugoku-shikoku.webp",
+  "bounds": [
+   [
+    33.2318,
+    130.4393
+   ],
+   [
+    35.79331,
+    134.54407
+   ]
+  ],
+  "z": 10,
+  "zi": 8.1,
+  "w": 1602,
+  "h": 1213,
+  "kb": 101,
+  "q": 74,
+  "kind": "area"
+ },
+ "e/kyushu-okinawa/area": {
+  "src": "/_portal/illust-map/e-kyushu-okinawa.webp",
+  "bounds": [
+   [
+    31.35833,
+    128.67462
+   ],
+   [
+    34.25722,
+    132.98401
+   ]
+  ],
+  "z": 9,
+  "zi": 8.03,
+  "w": 1602,
+  "h": 1282,
+  "kb": 84,
+  "q": 74,
+  "kind": "area"
  }
 }

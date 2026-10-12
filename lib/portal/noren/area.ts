@@ -5,6 +5,7 @@
 import { isUsableFeatureImage } from "./usableImage";
 import { heroImagesOf } from "./shop";
 import type { Restaurant } from "@/lib/regions";
+import { AREA_DEFS } from "./areaGroups";
 
 /** 店のカード 1 枚ぶん。img は「使える写真」だけ（無ければ空文字。カードは写真なしの布だけで出る） */
 export type AreaShop = {
@@ -53,18 +54,11 @@ export function flagSize(name: string, t: number): { w: number; h: number } {
   return { w: Math.round(62 + 36 * t), h: Math.max(Math.round(230 + 130 * t), need) };
 }
 
-/** エリア一覧を、地方ごとの区画に分ける（北から南へ）。地域のキーは lib/regions.ts の RegionKey。ここに無いキーは最後の「その他」に入る */
-export const AREA_BLOCKS: { label: string; en: string; keys: string[] }[] = [
-  { label: "北海道・東北", en: "Hokkaido / Tohoku", keys: ["hokkaido", "aomori", "iwate", "akita", "yamagata", "fukushima"] },
-  { label: "関東", en: "Kanto", keys: ["tokyo", "kanagawa", "saitama", "ibaraki", "tochigi", "gunma"] },
-  { label: "中部", en: "Chubu", keys: ["niigata", "toyama", "ishikawa", "fukui", "nagano", "gifu", "shizuoka", "nagoya"] },
-  { label: "近畿", en: "Kinki", keys: ["mie", "shiga", "kyoto", "osaka", "hyogo", "nara", "wakayama"] },
-  { label: "中国・四国", en: "Chugoku / Shikoku", keys: ["tottori", "shimane", "okayama", "hiroshima", "yamaguchi", "kagawa", "ehime", "kochi"] },
-  { label: "九州・沖縄", en: "Kyushu / Okinawa", keys: ["fukuoka", "saga", "nagasaki", "miyazaki", "kagoshima", "okinawa"] },
-];
+/** エリア一覧を、地方ごとの区画に分ける（北から南へ。区分は areaGroups.ts の AREA_DEFS）。地域のキーは lib/regions.ts の RegionKey。ここに無いキーは最後の「その他」に入る */
+export const AREA_BLOCKS: { key: string; label: string; en: string; keys: string[] }[] = AREA_DEFS.map((a) => ({ key: a.key, label: a.label, en: a.en, keys: [...a.regions] }));
 
 /** 区画に入らなかったキーを「その他」の区画にして返す（地域が増えても、一覧から落ちないように） */
-export function groupAreaKeys(allKeys: string[]): { label: string; en: string; keys: string[] }[] {
+export function groupAreaKeys(allKeys: string[]): { key: string; label: string; en: string; keys: string[] }[] {
   const have = new Set(allKeys);
   const placed = new Set<string>();
   const blocks = AREA_BLOCKS.map((b) => {
@@ -73,6 +67,6 @@ export function groupAreaKeys(allKeys: string[]): { label: string; en: string; k
     return { ...b, keys };
   }).filter((b) => b.keys.length > 0);
   const rest = allKeys.filter((k) => !placed.has(k));
-  if (rest.length > 0) blocks.push({ label: "その他", en: "Others", keys: rest });
+  if (rest.length > 0) blocks.push({ key: "other", label: "その他", en: "Others", keys: rest });
   return blocks;
 }

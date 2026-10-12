@@ -10,16 +10,20 @@ import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import SaveButton from "@/components/portal/SaveButton";
 import { ShopCard } from "./ShopCard";
 import { sized } from "@/lib/imageUrl";
-import type { MapMode, MapPt } from "./ShopMap";
-import { usesEPicture } from "@/lib/portal/noren/illustStyle";
+import type { MapPt } from "./ShopMap";
 import type { Look } from "@/lib/portal/noren/looks";
+import AreaMap, { type AreaMapRegion } from "./AreaMap";
+import { AreaCards, AreaFigure, type AreaCard } from "./AreaPicker";
+import { AREA_DEFS, AREA_OF_REGION, areaDefOf } from "@/lib/portal/noren/areaGroups";
+import { median, regionCenters } from "@/lib/portal/noren/regionCenters";
+import { ILLUST_AREA } from "@/lib/portal/noren/illustMaps.generated";
 import { ArrowIcon, BlockCard, PinIcon, SearchIcon, TabIcon, isShowableTag } from "./BlockSearchParts";
 import "./opensearch.css";
 import "./blocksearch.css";
 
 // 「こだわり条件で絞る」は今の /search と同じ部品（React.lazy で分ける。読み込みの間は見出しだけ）。
 const SearchFacets = lazy(() => import("@/components/portal/SearchFacets"));
-// 地図（絵図 a・手描き風 e・古地図 f・夜の灯り g・見下ろす h。components/portal/noren/ShopMap.tsx）。画面に出るまで読み込まない（next/dynamic。leaflet も中で遅れて読む）
+// 地図（手描き風 e。components/portal/noren/ShopMap.tsx）。画面に出るまで読み込まない（next/dynamic。leaflet も中で遅れて読む）
 const ShopMap = dynamic(() => import("./ShopMap"), {
   ssr: false,
   loading: () => <div className="vMp-maploading">地図を読み込み中…</div>,
@@ -75,59 +79,45 @@ function CountUp({ value }: { value: number }) {
 }
 
 /**
- * 絞り込んだ店の地図。地域を選んでいないとき: a は日本地図のマス（県ごとの店の数）、b は地域ごとの丸。選んだら、その地域の位置のある店を全部ピンで（上限は設けない）。
+ * 絞り込んだ店の地図（手描き風 e）。地域を選んでいないとき（暖簾の見た目だけ。block は地方から選ぶので、ここへは来ない）: 地域ごとの丸。選んだら、その地域の位置のある店を全部ピンで（上限は設けない）。
  * ピンを押すと店名・エリア・業種の札が出て、店ページへ行ける。
  */
 function ResultsMap({
   list,
   coords,
-  prefOf,
   townOf,
-  prefRegion,
-  mode,
   regionKey,
   onPick,
   look = "noren",
 }: {
   list: SearchItem[];
   coords: Record<string, [number, number]>;
-  prefOf: Record<string, string>;
   townOf: Record<string, string>;
-  prefRegion: Record<string, string>;
-  mode: MapMode;
   regionKey: string;
   onPick: (region: string) => void;
   look?: Look;
 }) {
-  const { pts, prefCounts, regionCounts } = useMemo(() => {
+  const { pts, regionCounts } = useMemo(() => {
     const pts: MapPt[] = list
       .filter((r) => coords[r.id])
       .map((r) => ({ id: r.id, name: r.name, lat: coords[r.id][0], lng: coords[r.id][1], area: r.area, cuisine: r.cuisine, photo: r.image ? sized(r.image, 360) : "", town: townOf[r.id] ?? "", region: r.region, nearest: (r as SItem).nearest }));
-    const prefCounts: Record<string, number> = {};
     const byRegion = new Map<string, number>();
-    for (const r of list) {
-      const p = prefOf[r.id];
-      if (p) prefCounts[p] = (prefCounts[p] ?? 0) + 1;
-      byRegion.set(r.region, (byRegion.get(r.region) ?? 0) + 1);
-    }
+    for (const r of list) byRegion.set(r.region, (byRegion.get(r.region) ?? 0) + 1);
     const regionCounts = [...byRegion.entries()].map(([key, count]) => ({ key, name: REGIONS[key as RegionKey]?.name ?? key, count }));
-    return { pts, prefCounts, regionCounts };
-  }, [list, coords, prefOf, townOf]);
+    return { pts, regionCounts };
+  }, [list, coords, townOf]);
   const nation = !regionKey;
   return (
     <div className={look === "block" ? "vMp-map vBk-map" : "vMp-map"}>
       <div className="vSc-map-fr">
-        <ShopMap mode={mode} regionKey={regionKey} pts={pts} prefCounts={prefCounts} prefRegion={prefRegion} regionCounts={regionCounts} onPick={onPick} />
+        <ShopMap regionKey={regionKey} pts={pts} regionCounts={regionCounts} onPick={onPick} />
       </div>
       <p className="vMp-mapnote" aria-live="polite">
         {nation
-          ? mode === "a"
-            ? `県のマスに店の数を出しています(全 ${list.length} 軒)。店のある県を押すと、その地域の店に絞り込みます。`
-            : `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
+          ? `地域ごとの丸に店の数を出しています(全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。`
           : pts.length === 0
             ? "この条件の店には、地図に出せる位置の情報がありません。"
-            : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。${mode === "h" && !usesEPicture(mode, regionKey) ? "見下ろした地図は、拡大・移動はできません。" : ""}`}
-        {usesEPicture(mode, regionKey) ? <small className="vMp-fallback"> この{nation ? "全国" : "地域"}は e の絵を出しています。</small> : null}
+            : `位置のわかる ${pts.length} 軒を地図に出しています(結果は ${list.length} 軒)。`}
       </p>
     </div>
   );
@@ -147,10 +137,7 @@ export default function NorenSearch({
   facets,
   sceneDefs,
   coords,
-  prefOf,
   townOf,
-  prefRegion,
-  allowMapUrl = false,
   look = "noren",
   allowLookUrl = false,
 }: {
@@ -158,14 +145,8 @@ export default function NorenSearch({
   facets?: FacetPayload;
   sceneDefs: SceneDef[];
   coords: Record<string, [number, number]>;
-  /** 店 ID → 住所の都道府県 slug（全店。位置の無い店も県のマスに数えるため） */
-  prefOf: Record<string, string>;
-  /** 店 ID → 市区町村（lib/towns.ts の取り出し方。絵図 a の目印の地名用） */
+  /** 店 ID → 市区町村（lib/towns.ts の取り出し方。地図の目印の地名用） */
   townOf: Record<string, string>;
-  /** 県 slug → その県の店の地域（region のキー）。店のデータの住所の県と region から作った対応 */
-  prefRegion: Record<string, string>;
-  /** URL の ?map=a|f|g|h で地図の見た目を替えられるか（本番でないときだけ true。?sp= と同じ） */
-  allowMapUrl?: boolean;
   /** 見た目（lib/portal/noren/looks.ts）。"block" は参考画像の形（白い地・橙の差し色）。サーバーのページが決めて渡す */
   look?: Look;
   /** URL の ?look= を、タブ・絞り込みの移動でも保つか（見本でだけ true。本番は false） */
@@ -182,11 +163,12 @@ export default function NorenSearch({
   const spScene = sp.get("scene") || "";
   const spTab = sp.get("tab");
   const block = look === "block";
+  // 地方（?area=<地方のキー>。block だけ。lib/portal/noren/areaGroups.ts）。?region= があるときは、region を優先する（地方は見ない）。知らないキーは無いものとして扱う
+  const spArea = sp.get("area") || "";
+  const areaDef = block && !spRegion ? areaDefOf(spArea) : undefined;
+  const areaRegions = useMemo(() => (areaDef ? new Set(areaDef.regions) : null), [areaDef]);
   const lookParam = allowLookUrl ? sp.get("look") : null;
   const spSort: Sort = block && sp.get("sort") === "new" ? "new" : "";
-  // 地図の見た目: 既定は e（手描き風）。?map=a|f|g|h は、本番でないときだけ（b・c・d は e に読み替える）
-  const mapParam = sp.get("map");
-  const mapMode: MapMode = allowMapUrl && (mapParam === "a" || mapParam === "f" || mapParam === "g" || mapParam === "h") ? mapParam : "e";
   const page = Math.max(1, parseInt(sp.get("page") || "1", 10) || 1);
   const [q, setQ] = useState(spQ);
   const [region, setRegion] = useState<string>(spRegion);
@@ -220,11 +202,36 @@ export default function NorenSearch({
     return [...counts.entries()].sort((a, b) => b[1] - a[1]);
   }, [restaurants]);
 
+  // 地域・地方の目印の位置（block の地方・地域の丸と日本の図。その地域・地方の店の座標の中央値。絞り込みで動かないよう、全店から出す）
+  const centers = useMemo(() => regionCenters(restaurants, coords), [restaurants, coords]);
+  const areaCenters = useMemo(() => {
+    const m = new Map<string, { lat: number; lng: number }>();
+    for (const a of AREA_DEFS) {
+      const inArea = new Set(a.regions);
+      const lat: number[] = [];
+      const lng: number[] = [];
+      for (const r of restaurants) {
+        const g = inArea.has(r.region) ? coords[r.id] : undefined;
+        if (g) {
+          lat.push(g[0]);
+          lng.push(g[1]);
+        }
+      }
+      if (lat.length > 0) m.set(a.key, { lat: median(lat), lng: median(lng) });
+      else {
+        const cs = a.regions.flatMap((k) => centers.get(k) ?? []);
+        if (cs.length > 0) m.set(a.key, { lat: cs.reduce((x, c) => x + c.lat, 0) / cs.length, lng: cs.reduce((x, c) => x + c.lng, 0) / cs.length });
+      }
+    }
+    return m;
+  }, [restaurants, coords, centers]);
+
   // 絞り込み。skip を渡すと、その軸だけ掛けない（その軸の一覧の件数を出すため）。知らない業種・シーンは絞り込まない
   const sceneDef = scene ? sceneDefs.find((x) => x.slug === scene) : undefined;
   const needle = q.trim().toLowerCase();
   const pass = (r: SearchItem, skip?: "region" | "cuisine" | "scene") => {
     if (skip !== "region" && region && r.region !== region) return false;
+    if (skip !== "region" && !region && areaRegions && !areaRegions.has(r.region)) return false;
     if (skip !== "cuisine" && cuisine !== "ALL" && !matchesCuisineFilter(cuisine, r)) return false;
     if (tag && !(r.tags || []).includes(tag)) return false;
     if (skip !== "scene" && sceneDef && !shopInScene(sceneDef.matchTags, r.tags)) return false;
@@ -237,7 +244,7 @@ export default function NorenSearch({
   const results = useMemo(
     () => restaurants.filter((r) => pass(r)),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [q, region, cuisine, tag, scene, sceneDefs, restaurants, block],
+    [q, region, areaRegions, cuisine, tag, scene, sceneDefs, restaurants, block],
   );
   // 一覧の件数（その軸以外の絞り込みを掛けたときの店の数）
   const counts = useMemo(() => {
@@ -252,12 +259,13 @@ export default function NorenSearch({
     for (const r of restaurants) if (pass(r, "scene")) { sceneAll++; sceneDefs.forEach((x, i) => { if (shopInScene(x.matchTags, r.tags)) sceneRows[i].count++; }); }
     return { byRegion, regionAll, cuisineRows, cuisineAll, sceneRows, sceneAll };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, region, cuisine, tag, scene, sceneDefs, restaurants, block]);
+  }, [q, region, areaRegions, cuisine, tag, scene, sceneDefs, restaurants, block]);
 
-  const buildUrl = (overrides: { q?: string; region?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string; sort?: string }) => {
+  const buildUrl = (overrides: { q?: string; region?: string; area?: string; cuisine?: string; tag?: string; scene?: string; tab?: string; page?: string; sort?: string }) => {
     const next = {
       q: overrides.q !== undefined ? overrides.q : spQ,
       region: overrides.region !== undefined ? overrides.region : spRegion,
+      area: overrides.area !== undefined ? overrides.area : spArea,
       cuisine: overrides.cuisine !== undefined ? overrides.cuisine : spCuisine,
       tag: overrides.tag !== undefined ? overrides.tag : spTag,
       scene: overrides.scene !== undefined ? overrides.scene : spScene,
@@ -268,6 +276,7 @@ export default function NorenSearch({
     const params = new URLSearchParams();
     if (next.q) params.set("q", next.q);
     if (next.region) params.set("region", next.region);
+    else if (block && next.area && areaDefOf(next.area)) params.set("area", next.area); // 地域と地方が両方あるときは地域を優先するので、地域があるときは地方を URL に載せない
     if (next.cuisine && next.cuisine !== "ALL") params.set("cuisine", next.cuisine);
     if (next.scene) params.set("scene", next.scene);
     if (next.tag) params.set("tag", next.tag);
@@ -279,17 +288,15 @@ export default function NorenSearch({
       if (budget) params.set("budget", budget);
       if (f) params.set("f", f);
     }
-    if (allowMapUrl && (mapParam === "a" || mapParam === "b" || mapParam === "c" || mapParam === "d" || mapParam === "f" || mapParam === "g" || mapParam === "h")) params.set("map", mapParam);
     if (block && next.sort === "new") params.set("sort", "new");
     if (lookParam === "noren" || lookParam === "block") params.set("look", lookParam);
     if (next.page && next.page !== "1") params.set("page", next.page);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
   };
 
-  /** 絞り込みをはずした URL（見た目・並べ替え・地図の指定だけ残す。こだわり条件もはずす） */
+  /** 絞り込みをはずした URL（見た目・並べ替えだけ残す。こだわり条件もはずす） */
   const clearUrl = (() => {
     const params = new URLSearchParams();
-    if (allowMapUrl && (mapParam === "b" || mapParam === "c" || mapParam === "d")) params.set("map", mapParam);
     if (block && spSort === "new") params.set("sort", "new");
     if (lookParam === "noren" || lookParam === "block") params.set("look", lookParam);
     return `/search${params.toString() ? "?" + params.toString() : ""}`;
@@ -309,7 +316,7 @@ export default function NorenSearch({
   // pending（こだわり条件の部品を読み込んでいる間）は、読み込み中の文だけ。入力欄・結果は出さない
   // （先に出すと、読み込みが終わって画面が入れ替わったとき、入力中の欄が作り直されてフォーカスとキャレットを失い、続きの入力が消える）
   const view = (list: SearchItem[], ext?: FacetExt, pending = false) => {
-    const applied = !!spQ || !!spRegion || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
+    const applied = !!spQ || !!spRegion || !!areaDef || spCuisine !== "ALL" || !!spTag || !!spScene || !!ext?.active;
     // どのタブを開くか: ?tab= があればそれ、無ければ絞り込みに使っている項目のタブ、無ければエリア
     const active: Tab = isTab(spTab) && !(block && spTab === "q")
       ? spTab
@@ -351,6 +358,7 @@ export default function NorenSearch({
       const chosen: { key: string; label: string; what: string; href: string }[] = [];
       if (spQ) chosen.push({ key: "q", label: `「${spQ}」`, what: `キーワード「${spQ}」`, href: buildUrl({ q: "" }) });
       if (regionName) chosen.push({ key: "region", label: regionName, what: `エリア「${regionName}」`, href: buildUrl({ region: "" }) });
+      else if (areaDef) chosen.push({ key: "area", label: areaDef.label, what: `地方「${areaDef.label}」`, href: buildUrl({ area: "" }) });
       if (spCuisine !== "ALL") chosen.push({ key: "cuisine", label: spCuisine, what: `業種「${spCuisine}」`, href: buildUrl({ cuisine: "ALL" }) });
       if (sceneDef) chosen.push({ key: "scene", label: sceneDef.name, what: `利用シーン「${sceneDef.name}」`, href: buildUrl({ scene: "" }) });
       // 0 件のとき: 業種のリンクは、いまの条件をすべてはずして、その業種だけで探す（見た目・並べ替え・地図の指定だけ残す）
@@ -360,10 +368,56 @@ export default function NorenSearch({
         u.set("tab", "genre");
         return `/search?${u.toString()}`;
       };
+      // 地方・地域ごとの件数は、いまの結果（list = 絞り込みを全部掛けたあと）から数える。0 軒の地方・地域は出さない
+      const regionNameOf = (k: string) => REGIONS[k as RegionKey]?.name ?? k;
+      const listByRegion = new Map<string, number>();
+      for (const r of list) listByRegion.set(r.region, (listByRegion.get(r.region) ?? 0) + 1);
+      const boxMode: "region" | "area" | "pick" = regionName ? "region" : areaDef ? "area" : "pick";
+      const areaCards: AreaCard[] = AREA_DEFS.flatMap((a) => {
+        const have = a.regions.filter((k) => (listByRegion.get(k) ?? 0) > 0);
+        const count = have.reduce((n, k) => n + (listByRegion.get(k) ?? 0), 0);
+        const at = areaCenters.get(a.key);
+        if (count <= 0 || !at) return [];
+        return [{ key: a.key, label: a.label, count, regions: have.sort((x, y) => (listByRegion.get(y) ?? 0) - (listByRegion.get(x) ?? 0)).map(regionNameOf), href: buildUrl({ area: a.key, region: "", tab: "area" }), lat: at.lat, lng: at.lng }];
+      });
+      const areaRows = areaDef
+        ? areaDef.regions.flatMap((k) => ((listByRegion.get(k) ?? 0) > 0 ? [{ key: k, name: regionNameOf(k), count: listByRegion.get(k) ?? 0, href: buildUrl({ region: k, area: "", tab: "area" }) }] : []))
+        : [];
+      const areaMapRegions: AreaMapRegion[] = areaRows.flatMap((r) => {
+        const at = centers.get(r.key);
+        return at ? [{ key: r.key, name: r.name, count: r.count, lat: at.lat, lng: at.lng, href: r.href }] : [];
+      });
+      // 地図の上のパンくず（すべての地方 › 関東 › 東京）。関東・東京のうち、いまの階層より上は、押すと戻れる
+      const crumb = (() => {
+        const regionArea = spRegion in REGIONS ? areaDefOf(AREA_OF_REGION[spRegion] ?? "") : undefined;
+        if (boxMode === "pick" || (boxMode === "region" && !regionArea)) return null;
+        return (
+          <nav aria-label="地方へ戻る">
+            <ol className="vBk-crumb">
+              <li>
+                <Link href={buildUrl({ region: "", area: "", tab: "area" })}>すべての地方</Link>
+              </li>
+              {boxMode === "area" && areaDef ? (
+                <li aria-current="page">{areaDef.label}</li>
+              ) : (
+                regionArea && (
+                  <>
+                    <li>
+                      <Link href={buildUrl({ region: "", area: regionArea.key, tab: "area" })}>{regionArea.label}</Link>
+                    </li>
+                    <li aria-current="page">{regionName}</li>
+                  </>
+                )
+              )}
+            </ol>
+          </nav>
+        );
+      })();
       return (
         <section className="vBk-main vBk-find" aria-label="店の検索">
           <div className="vBk-wrap">
-            {pending ? (
+            {/* こだわりのタブだけは、条件の部品が来るまで読み込み中の文。ほかのタブは、読み込み中の下書きにも地方・地域・業種のリンクと結果を出す（JavaScript が動かなくても、リンクで絞れる） */}
+            {pending && active === "tag" ? (
               <p role="status" aria-busy="true" className="vBk-empty">
                 条件を読み込んでいます…
               </p>
@@ -380,10 +434,37 @@ export default function NorenSearch({
                 </nav>
 
                 {/* 箱: 左にイラストの地図・右にそのタブの一覧 */}
-                <div className="vBk-box">
-                  <ResultsMap look="block" list={list} coords={coords} prefOf={prefOf} townOf={townOf} prefRegion={prefRegion} mode={mapMode} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
+                <div className={`vBk-box${boxMode === "pick" ? " vBk-box--areas" : ""}`}>
+                  <div className="vBk-mapcol">
+                    {crumb}
+                    {boxMode === "region" ? (
+                      <ResultsMap look="block" list={list} coords={coords} townOf={townOf} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
+                    ) : boxMode === "area" && areaDef ? (
+                      <div className="vMp-map vBk-map">
+                        <div className="vSc-map-fr">{ILLUST_AREA[areaDef.key] && areaMapRegions.length > 0 ? <AreaMap areaKey={areaDef.key} label={areaDef.label} regions={areaMapRegions} /> : <p className="vBk-empty">この条件に合う店のある地域はありません。</p>}</div>
+                        <p className="vMp-mapnote" aria-live="polite">
+                          {areaMapRegions.length > 0 ? `地域ごとの丸に店の数を出しています(${areaDef.label}の全 ${list.length} 軒)。丸を押すと、その地域の店に絞り込みます。` : "この条件の店には、地図に出せる地域がありません。"}
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="vMp-map vBk-map">
+                        <div className="vSc-map-fr">
+                          <AreaFigure cards={areaCards} />
+                        </div>
+                        <p className="vMp-mapnote" aria-live="polite">
+                          {areaCards.length > 0 ? `地方ごとに色分けしています(全 ${list.length} 軒)。地方を押すと、その地方の地域ごとの地図に進みます。` : "この条件に合う店のある地方はありません。"}
+                        </p>
+                      </div>
+                    )}
+                  </div>
                   <div className={`vBk-side vBk-side--${active}`}>
-                    {active === "area" && (
+                    {active === "area" && boxMode === "pick" && (areaCards.length > 0 ? <AreaCards cards={areaCards} /> : null)}
+                    {active === "area" && boxMode === "area" && areaDef && (
+                      <ul className="vBk-list" aria-label={`${areaDef.label}のエリア`}>
+                        {areaRows.map((r) => brow(r.href, r.name, r.count, false))}
+                      </ul>
+                    )}
+                    {active === "area" && boxMode === "region" && (
                       <>
                         {regionName && (
                           <p className="vBk-regionlink">
@@ -393,7 +474,7 @@ export default function NorenSearch({
                           </p>
                         )}
                         <ul className="vBk-list" aria-label="エリア">
-                          {brow(buildUrl({ region: "", tab: "area" }), "すべてのエリア", counts.regionAll, !spRegion)}
+                          {brow(buildUrl({ region: "", area: "", tab: "area" }), "すべてのエリア", counts.regionAll, !spRegion)}
                           {Object.entries(REGIONS).map(([k, r]) => brow(buildUrl({ region: k, tab: "area" }), r.name, counts.byRegion.get(k) || 0, spRegion === k))}
                         </ul>
                       </>
@@ -556,7 +637,7 @@ export default function NorenSearch({
 
                 {/* 箱: 左に地図・右にそのタブの一覧 */}
                 <div className="vMp-box">
-                  <ResultsMap list={list} coords={coords} prefOf={prefOf} townOf={townOf} prefRegion={prefRegion} mode={mapMode} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
+                  <ResultsMap list={list} coords={coords} townOf={townOf} regionKey={spRegion in REGIONS ? spRegion : ""} onPick={(rg) => router.push(buildUrl({ region: rg, tab: "area" }))} />
                   <div className={`vMp-side vMp-side--${active}`}>
                     {active === "area" && (
                       <>

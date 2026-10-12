@@ -36,6 +36,8 @@ const { RESTAURANTS, REGIONS } = require(path.join(ROOT, "lib/data.ts"));
 const { GEO } = require(path.join(ROOT, "lib/geo.ts"));
 const { quantFit } = require(path.join(ROOT, "lib/portal/noren/mapFit.ts")); // 画面（ShopMap.tsx）と同じ「初期表示で寄せる範囲」の決め方（a と同じ。外れ値を除いた中央の約 88%）
 
+const { AREA_DEFS } = require(path.join(ROOT, "lib/portal/noren/areaGroups.ts")); // 地方の区分（?area=。--areas で地方ごとの地図を描き起こす）
+
 // 位置のある店が 1 軒も無い地域の、地図の中心（県庁所在地のおおよその位置。店のピンは出ない）
 const FALLBACK_CENTER = { wakayama: [34.2261, 135.1675] };
 
@@ -146,6 +148,35 @@ function roadRank(p) {
 
 // ---- 計画: 地域ごとの範囲・ズーム ----
 const VIEW_W = 820, VIEW_H = 460, FIT_W = 692, FIT_H = 298; // 画面の地図の箱と、札の余白を引いた寄せる範囲（ShopMap.tsx と同じ考え方）
+// 地方の地図（--areas）の絵: 横幅を設計の画面 AREA_DESIGN_W px で見たときに道・木・家がちょうどよい大きさになる。縦横比は、横長 2.0 まで・縦長 1.25 までに収める（画面側は画像の縦横比のまま出す）
+const AREA_DESIGN_W = 800;
+const AREA_AR_MIN = 1.25, AREA_AR_MAX = 2.0;
+const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360));
+const unMercY = (y) => (2 * Math.atan(Math.exp(y)) - Math.PI / 2) * 180 / Math.PI;
+function planArea(key, pts) {
+  // pts = その地方のすべての店 + 位置の店が無い地域の目印の位置。すべてが入る四角（上下左右に 12% の余白）。縦横比を整える
+  const lats = pts.map((p) => p.lat), lngs = pts.map((p) => p.lng);
+  let minLat = Math.min(...lats), maxLat = Math.max(...lats), minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+  const mx = (maxLng - minLng) * 0.12 + 0.12, my = (mercY(maxLat) - mercY(minLat)) * 0.12 + 0.002;
+  minLng -= mx; maxLng += mx;
+  let y0 = mercY(minLat) - my, y1 = mercY(maxLat) + my;
+  const wRad = ((maxLng - minLng) * Math.PI) / 180;
+  const ar = wRad / (y1 - y0); // 横 / 縦（ウェブメルカトル）
+  if (ar < AREA_AR_MIN) { const w2 = (y1 - y0) * AREA_AR_MIN; const dl = ((w2 - wRad) / 2) * 180 / Math.PI; minLng -= dl; maxLng += dl; }
+  else if (ar > AREA_AR_MAX) { const h2 = wRad / AREA_AR_MAX; const dy = (h2 - (y1 - y0)) / 2; y0 -= dy; y1 += dy; }
+  const A = { minLat: unMercY(y0), maxLat: unMercY(y1), minLng, maxLng };
+  let ov = null;
+  // z7 以下のタイルには水の面（waterarea）が無く、海が描けない。z8 以上で、横縦とも 12 枚以内の最も細かいズーム（13 まで）
+  for (let z = 13; z >= 8; z--) {
+    const x0 = Math.floor(worldX(A.minLng, z) / 256), x1 = Math.floor(worldX(A.maxLng, z) / 256), yy0 = Math.floor(worldY(A.maxLat, z) / 256), yy1 = Math.floor(worldY(A.minLat, z) / 256);
+    if (x1 - x0 + 1 <= 12 && yy1 - yy0 + 1 <= 12) { ov = { z, x0, x1, y0: yy0, y1: yy1, over: false }; break; }
+  }
+  if (!ov) throw new Error("area too large: " + key);
+  const Wu = worldX(A.maxLng, ov.z) - worldX(A.minLng, ov.z); // 切り取る四角の横幅（単位）
+  const Zdes = ov.z + Math.log2(AREA_DESIGN_W / Wu);
+  return { key, Zi: Zdes, A, I: A, fit: A, ov: { ...ov, Zdes, kind: "overview" }, core: null };
+}
+
 function planLayers(key, pts) {
   const sane = (b) => {
     const cLat = (b.minLat + b.maxLat) / 2, cLng = (b.minLng + b.maxLng) / 2;
@@ -285,6 +316,12 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
   const rivers = [];
   const rails = [];
   for (const t of tiles) {
+    // 地方の地図（seaFill）: 陸のしるし（道・川・鉄道・海岸線・建物・等高線・構造物）が 1 つも無いタイル（沖の海。地理院は何も返さないか、ラベル・航路だけ返す）は、海として塗る
+    if (layer.seaFill && !["road", "river", "railway", "coastline", "building", "contour", "structurea"].some((k) => t.L[k]?.features?.length)) {
+      const c = (vx, vy) => toU(t.tx, t.ty, vx, vy, 4096);
+      waterTiles.push({ rings: [{ pts: [c(-80, -80), c(4176, -80), c(4176, 4176), c(-80, 4176), c(-80, -80)], rim: [], touchesEdge: true }] });
+      continue;
+    }
     const wa = t.L.waterarea;
     if (wa) {
       const rings = [];
@@ -295,7 +332,9 @@ async function buildRegion(key, pts, layer, pl, lod = 1) {
           // 岸の線: タイルの縁に沿った辺は除く
           const rim = [];
           let cur = [];
-          const onEdge = (a, b) => (a[0] <= 1 && b[0] <= 1) || (a[0] >= wa.extent - 1 && b[0] >= wa.extent - 1) || (a[1] <= 1 && b[1] <= 1) || (a[1] >= wa.extent - 1 && b[1] >= wa.extent - 1);
+          // 地方の地図（seaFill）: 水の面の輪郭のうち、座標軸にぴったり沿った長い直線は、タイルの継ぎ目（岸ではない）なので岸の線から除く
+          const seam = (a, b) => layer.seaFill && (a[0] === b[0] || a[1] === b[1]) && Math.hypot(a[0] - b[0], a[1] - b[1]) > 120;
+          const onEdge = (a, b) => (a[0] <= 1 && b[0] <= 1) || (a[0] >= wa.extent - 1 && b[0] >= wa.extent - 1) || (a[1] <= 1 && b[1] <= 1) || (a[1] >= wa.extent - 1 && b[1] >= wa.extent - 1) || seam(a, b);
           for (let i = 0; i < ring.length - 1; i++) {
             if (onEdge(ring[i], ring[i + 1])) { if (cur.length > 1) rim.push(cur); cur = []; continue; }
             if (!cur.length) cur.push(toU(t.tx, t.ty, ring[i][0], ring[i][1], wa.extent));
@@ -774,7 +813,9 @@ export const ILLUST_JAPAN: { bounds: [[number, number], [number, number]]; kb: n
 }
 
 // ---- 実行 ----
-// 使い方: node build.mjs --style=e|f|g|h [地域キー…|japan]  → automation/illust-map/svg/<style>/<キー>[-core].svg と meta.json（画像にするのは raster.mjs）
+// 使い方: node build.mjs --style=e [地域キー…|japan]  → automation/illust-map/svg/e/<キー>[-core].svg と meta.json（画像にするのは raster.mjs）
+//   地方ごとの地図（「さがす」の ?area=）: node build.mjs --style=e --areas [地方のキー…]  → svg/e/<地方のキー>.svg と meta.json の e/<地方のキー>/area（lib/portal/noren/areaGroups.ts の AREA_DEFS。粗い層 1 枚。範囲 = その地方の地域・店が全部入る四角）
+//   （f 古地図・g 夜の灯り・h 見下ろす は、2026-10-12 に「さがす」の地図から外した。g の全国図（g-japan）だけ、入口の帯が使う）
 const only = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const byRegion = {};
 for (const r of RESTAURANTS) {
@@ -787,6 +828,37 @@ fs.mkdirSync(SVG_DIR, { recursive: true });
 const META = path.join(HERE, "meta.json");
 const meta = fs.existsSync(META) ? JSON.parse(fs.readFileSync(META, "utf8")) : {};
 const keys = Object.keys(REGIONS).filter((k) => only.includes(k) || (!only.length));
+// 地方ごとの地図（--areas。キーを渡すとその地方だけ）: その地方の地域のすべての店（位置の無い地域は目印の位置）が入る四角。粗い層 1 枚（核の層・店の足もとの陸は無し）。meta は e/<地方のキー>/area
+if (process.argv.includes("--areas")) {
+  for (const a of AREA_DEFS) {
+    if (only.length && !only.includes(a.key)) continue;
+    const t0 = Date.now();
+    const pts = [];
+    for (const rk of a.regions) {
+      if (a.inset?.includes(rk)) continue; // 本土から遠い地域は、地図の範囲に入れない（丸は縁に寄せて出す）
+      const l = byRegion[rk] ?? [];
+      if (l.length) pts.push(...l);
+      else if (FALLBACK_CENTER[rk]) pts.push({ id: "fb-" + rk, lat: FALLBACK_CENTER[rk][0], lng: FALLBACK_CENTER[rk][1] });
+    }
+    if (!pts.length) continue;
+    const pl = planArea(a.key, pts);
+    const res = await buildRegion(a.key, [], { ...pl.ov, seaFill: true }, pl, 1);
+    // タイルの区切りではなく、すべての店が入る四角（pl.A。縦横比を整えたもの）に切り取る（viewBox で切る。範囲も同じ四角にする）
+    const { z, x0, y0 } = pl.ov;
+    const cx0 = Math.max(0, Math.floor(worldX(pl.A.minLng, z) - x0 * 256)), cx1 = Math.min(res.W, Math.ceil(worldX(pl.A.maxLng, z) - x0 * 256));
+    const cy0 = Math.max(0, Math.floor(worldY(pl.A.maxLat, z) - y0 * 256)), cy1 = Math.min(res.H, Math.ceil(worldY(pl.A.minLat, z) - y0 * 256));
+    const cw = cx1 - cx0, ch = cy1 - cy0;
+    const svg = res.svg.replace(/viewBox="[^"]*" width="\d+" height="\d+"/, `viewBox="${cx0} ${cy0} ${cw} ${ch}" width="${cw}" height="${ch}"`);
+    const [lonW, latN] = tileToLonLat((x0 * 256 + cx0) / 256, (y0 * 256 + cy0) / 256, z);
+    const [lonE, latS] = tileToLonLat((x0 * 256 + cx1) / 256, (y0 * 256 + cy1) / 256, z);
+    const file = `${a.key}.svg`;
+    fs.writeFileSync(path.join(SVG_DIR, file), svg);
+    meta[`${STYLE}/${a.key}/area`] = { style: STYLE, key: a.key, kind: "area", file: `svg/${STYLE}/${file}`, z, zi: Math.round(pl.Zi * 100) / 100, W: cw, H: ch, bounds: [[latS, lonW], [latN, lonE]].map((p) => p.map((n) => Math.round(n * 1e5) / 1e5)), svgKB: Math.round(Buffer.byteLength(svg) / 1024) };
+    fs.writeFileSync(META, JSON.stringify(meta, null, 1));
+    console.log(`${STYLE} area ${a.key.padEnd(16)} z${pl.ov.z} ${cw}x${ch} svg ${Math.round(res.size / 1024)}KB 店 ${pts.length} ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+  }
+  process.exit(0);
+}
 for (const key of only.includes("japan") && only.length === 1 ? [] : keys) {
   const t0 = Date.now();
   const pl0 = planLayers(key, byRegion[key] ?? []);

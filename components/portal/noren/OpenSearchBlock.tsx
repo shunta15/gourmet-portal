@@ -4,7 +4,7 @@ import BlockTopMap from "./BlockTopMap";
 import { ArrowIcon, PinIcon, SearchIcon } from "./BlockSearchParts";
 import type { OpenSearchData } from "@/lib/portal/noren/openSearch";
 import type { BlockTile } from "@/lib/portal/noren/blockTop";
-import type { JpRegion } from "@/lib/portal/noren/jpBand";
+import type { JpArea } from "@/lib/portal/noren/jpBand";
 import type { OpenView } from "@/lib/portal/noren/looks";
 import "./blocktop.css";
 
@@ -40,10 +40,10 @@ function PaperEdge({ pos }: { pos: "top" | "bottom" }) {
 
 /**
  * グルメの入口（/gourmet）の「店をさがす」の節の block の見た目（参考画像 1 枚目の形。この節の中だけ明るい。lib/portal/noren/looks.ts の OPEN_SEARCH_LOOK）。
- * 上から: 見出し → 検索の箱の形のリンク（押すと「さがす」のページへ。ここでは入力しない）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地域ごとのピン・地域名・件数。押すと「さがす」のページへ）。利用シーンの札は置かない。
+ * 上から: 見出し → 検索の箱の形のリンク（押すと「さがす」のページへ。ここでは入力しない）→ 業種 7 つの写真のタイル → 「地図で見つける」の帯（日本全体のイラスト地図 + 掲載店のある地方ごとのピン・地方名・件数。押すと「さがす」のその地方へ。それ以外の所とボタンは「さがす」のページへ）。利用シーンの札は置かない。
  * 暗い暖簾の画面との境目は、紙の縁（PaperEdge）。星・点数・口コミの件数・順位・宣伝文句は出さない。
  */
-export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { data: OpenSearchData; tiles: BlockTile[]; bandRegions: JpRegion[]; view: OpenView }) {
+export default function OpenSearchBlock({ data, tiles, bandAreas, view }: { data: OpenSearchData; tiles: BlockTile[]; bandAreas: JpArea[]; view: OpenView }) {
   const dark = view.tone === "dark";
   return (
     <section className={`vBkt ${dark ? "vBkt--dark" : "vBkt--block"} vBkt--band-${view.band}`} id="open-search" aria-labelledby="vBkt-h">
@@ -110,7 +110,7 @@ export default function OpenSearchBlock({ data, tiles, bandRegions, view }: { da
         </div>
       </div>
 
-      <BlockTopMap regions={bandRegions} mode={view.band}>
+      <BlockTopMap areas={bandAreas} mode={view.band}>
         <div className="vBkt-fade" aria-hidden="true" />
         <div className="vBkt-bt" id="open-area">
           <div className="vBkt-bt-in vN-rv">

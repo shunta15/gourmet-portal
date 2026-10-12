@@ -9,8 +9,7 @@ import { assertPortalLive } from "@/lib/portal/launch";
 import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
 import { toSearchShop } from "@/lib/portal/noren/sceneShop";
 import { GEO } from "@/lib/geo";
-import { PREF_BY_REGION, parseTown } from "@/lib/towns";
-import { getPrefByName } from "@/lib/areas/prefectures";
+import { parseTown } from "@/lib/towns";
 import { SCENES } from "@/lib/scenes";
 import { SEARCH_LOOK, resolveLook } from "@/lib/portal/noren/looks";
 import BlockFonts from "@/components/portal/noren/BlockFonts";
@@ -57,37 +56,19 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     const g = GEO[r.id];
     if (g) coords[r.id] = [Math.round(g.lat * 1e5) / 1e5, Math.round(g.lng * 1e5) / 1e5];
   }
-  // 絵図（a）用: 店 → 住所の都道府県（住所の先頭の都道府県名。無ければ地域から補う。名前の部分一致では対応させない）、店 → 市区町村（lib/towns.ts）、
-  // 県 → 地域（その県の店の region のうち最も多いもの。同数なら地域キーの順。1 つの県に地域が複数あっても 1 つに決める。いまの店のデータでは 41 県すべて 1 対 1）
-  const PREF_RE = /^(北海道|東京都|大阪府|京都府|.{2,3}?県)/;
-  const prefOf: Record<string, string> = {};
+  // 地図の目印の地名用: 店 → 市区町村（lib/towns.ts の取り出し方。名前の部分一致では対応させない）
   const townOf: Record<string, string> = {};
-  const votes = new Map<string, Map<string, number>>();
   for (const r of restaurants) {
-    const a = (r.address || "").replace(/^〒?\s*\d{3}-?\d{4}\s*/, "").trim();
-    const name = a.match(PREF_RE)?.[1] ?? PREF_BY_REGION[r.region];
-    const pref = name ? getPrefByName(name) : null;
-    if (pref) {
-      prefOf[r.id] = pref.slug;
-      const m = votes.get(pref.slug) ?? new Map<string, number>();
-      m.set(r.region, (m.get(r.region) ?? 0) + 1);
-      votes.set(pref.slug, m);
-    }
     const t = parseTown(r.address || "", r.region);
     if (t) townOf[r.id] = t.town;
   }
-  const prefRegion: Record<string, string> = {};
-  for (const [slug, m] of votes) prefRegion[slug] = [...m.entries()].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0]))[0][0];
   const search = (
     <Suspense fallback={null}>
         <NorenSearch
           restaurants={items}
           facets={facets}
           coords={coords}
-          prefOf={prefOf}
           townOf={townOf}
-          prefRegion={prefRegion}
-          allowMapUrl={process.env.VERCEL_ENV !== "production"}
           sceneDefs={SCENES.map((x) => ({ slug: x.slug, name: x.name, matchTags: x.matchTags }))}
           look={look}
           allowLookUrl={allowUrl}

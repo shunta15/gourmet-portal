@@ -1,0 +1,113 @@
+/* ====================================================================
+   「さがす」の地方まわり（block の見た目。.vBk の変数 --bk-* を使う）:
+   - AreaPicker.tsx（vAp-）: 地方も地域も選んでいないときの入口。小さな日本の図（地方ごとに色分け）+ 地方の札
+   - AreaMap.tsx（vAm-）: ?area=<地方> の地図。手描きの地方の図に、地域ごとの丸（件数 + 地域名）
+   - vBk-crumb: 地図の上のパンくず（すべての地方 › 関東 › 東京）
+   最小の文字 12px、押す所 44px 以上、横スクロールなし。動きは「丸が上から落ちて立つ」だけ（transform と opacity）。「動きを減らす」設定では最初から立っている。
+   ==================================================================== */
+
+/* ---------- パンくず（地図の上） ---------- */
+.vBk-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:0 2px;margin:0 0 8px;padding:0;list-style:none;font:500 13.5px/1.3 var(--bk-sans)}
+.vBk-crumb li{display:inline-flex;align-items:center}
+.vBk-crumb li+li::before{content:"›";margin:0 2px;color:var(--bk-mute);font-size:16px}
+.vBk-crumb a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;border-radius:8px;color:var(--bk-or-ink);font-weight:700}
+.vBk-crumb a:hover{text-decoration:underline;text-underline-offset:3px}
+.vBk-crumb [aria-current="page"]{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;color:var(--bk-navy);font-weight:700}
+
+/* ---------- 地方の地図（AreaMap） ---------- */
+.vAm{margin:0;display:grid;justify-items:center;background:#efe8d3}
+.vAm-stage{--maxh:600px;position:relative;container:vAm / inline-size;width:min(100%,calc(var(--maxh) * var(--ar)));aspect-ratio:var(--ar);overflow:hidden;background:#cfe6f3}
+.vAm-img{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.vAm-credit{justify-self:stretch;margin:0;padding:5px 10px;text-align:right;background:#f6f1e0;color:#4a4a42;font:400 12px/1.6 var(--bk-sans)}
+.vAm-ld{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.vAm-ld--l{display:none}
+.vAm-ld line{stroke:#6b5d4c;stroke-width:1.3;stroke-opacity:.8;stroke-dasharray:3 3;vector-effect:non-scaling-stroke}
+.vAm-ld circle{fill:#6b5d4c;stroke:#fff;stroke-width:.8;vector-effect:non-scaling-stroke}
+.vAm-rg{list-style:none;margin:0;padding:0}
+.vAm-rg>li{position:absolute;left:var(--px);top:var(--py);width:var(--w);height:var(--h);margin:calc(var(--s) / -2) 0 0 calc(var(--w) / -2);z-index:2}
+.vAm-c{display:flex;flex-direction:column;align-items:center;width:100%;height:100%;border-radius:12px;color:#25406b;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;animation:vAmDrop .7s cubic-bezier(.3,1.3,.5,1) both;animation-delay:var(--d)}
+.vAm-disc{position:relative;flex:none;box-sizing:border-box;display:grid;place-items:center;width:var(--s);height:var(--s);border-radius:50%;background:#e8772e;border:2px solid #fff;box-shadow:0 4px 12px rgba(28,37,65,.35);color:#fff;transition:transform .16s cubic-bezier(.3,1.3,.5,1),background .15s}
+.vAm-disc b{font:700 15px/1 var(--bk-sans);font-variant-numeric:lining-nums tabular-nums;letter-spacing:0}
+.vAm-nm{flex:none;margin-top:2px;white-space:nowrap;font:700 12.5px/16px var(--bk-maru);letter-spacing:.02em;color:#25406b;text-shadow:0 0 5px #fff,0 0 2px #fff,0 0 9px rgba(255,255,255,.95)}
+.vAm-c:hover .vAm-disc{transform:translateY(-3px) scale(1.1);background:#d9560a}
+.vAm-c:hover .vAm-nm{text-decoration:underline;text-underline-offset:2px}
+.vAm-c:active .vAm-disc{transform:scale(.94)}
+.vAm-ld-g{animation:vAmFade .5s ease-out both;animation-delay:calc(var(--d) + 450ms)}
+@keyframes vAmDrop{0%{opacity:0;transform:translateY(-90px)}35%{opacity:1}70%{transform:translateY(4px)}100%{opacity:1;transform:none}}
+@keyframes vAmFade{from{opacity:0}to{opacity:1}}
+/* 舞台の幅が広いとき（設計の幅 560px 以上）は、広い画面用の置き方 */
+@container vAm (min-width:540px){
+  .vAm-rg>li{left:var(--lx);top:var(--ly)}
+  .vAm-ld--p{display:none}
+  .vAm-ld--l{display:block}
+}
+
+/* ---------- 地方を選ぶ入口（AreaPicker） ---------- */
+/* 箱（vBk-box）が「地方も地域も選んでいない」とき: 左に日本の図、右にそのタブの一覧 */
+.vBk .vBk-box--areas,.vBk .vBk-box--areas:has(.vBk-side--tag){grid-template-columns:minmax(280px,380px) minmax(0,1fr)}
+.vAp-fig{margin:0;overflow:hidden;background:#d5e8f2}
+.vAp-stage{position:relative;width:100%;aspect-ratio:var(--ar);container:vAp / inline-size}
+.vAp-svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.vAp-sea{fill:#d5e8f2}
+.vAp-a{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.vAp-land{fill:var(--ac,#e9dc9e);stroke:#fff;stroke-width:1.4;stroke-linejoin:round;vector-effect:non-scaling-stroke;transition:fill .18s}
+.vAp-land--off{fill:#e6e8e4;stroke:#fff}
+.vAp-a:hover .vAp-land{fill:var(--ac-s,#c2a93f)}
+.vAp-coast{fill:none;stroke:#6fb2d8;stroke-width:.9;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;pointer-events:none}
+.vAp-credit{margin:0;padding:5px 10px;text-align:right;background:#f6f1e0;color:#4a4a42;font:400 12px/1.6 var(--bk-sans)}
+.vAp-ld{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.vAp-ld line{stroke:#6b5d4c;stroke-width:1.3;stroke-opacity:.8;stroke-dasharray:3 3;vector-effect:non-scaling-stroke}
+.vAp-ld circle{fill:#6b5d4c;stroke:#fff;stroke-width:.8;vector-effect:non-scaling-stroke}
+.vAp-ld-g{animation:vAmFade .5s ease-out both;animation-delay:calc(var(--d) + 450ms)}
+.vAp-pins{list-style:none;margin:0;padding:0}
+.vAp-pins>li{position:absolute;left:var(--px);top:var(--py);width:var(--s);height:var(--s);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2);z-index:2}
+.vAp-pin{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;animation:vAmDrop .7s cubic-bezier(.3,1.3,.5,1) both;animation-delay:var(--d);-webkit-tap-highlight-color:transparent}
+.vAp-disc{box-sizing:border-box;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;transition:transform .16s cubic-bezier(.3,1.3,.5,1),background .15s;background:#e8772e;border:2px solid #fff;box-shadow:0 3px 9px rgba(28,37,65,.35);color:#fff}
+.vAp-pin:hover .vAp-disc{transform:translateY(-3px) scale(1.1);background:#d9560a}
+.vAp-disc b{font:700 13px/1 var(--bk-sans);font-variant-numeric:lining-nums tabular-nums;letter-spacing:0}
+/* 地方の色（図の塗り・札の点・丸の縁）。--ac = 塗り、--ac-s = 濃い色（にじませない縁・押したときの色） */
+.vBk-box--areas [data-k="hokkaido-tohoku"]{--ac:#b9d8c8;--ac-s:#5f9e82}
+.vBk-box--areas [data-k="kanto"]{--ac:#f4c9a8;--ac-s:#d98a52}
+.vBk-box--areas [data-k="chubu"]{--ac:#e9dc9e;--ac-s:#c2a93f}
+.vBk-box--areas [data-k="kinki"]{--ac:#d6bde0;--ac-s:#a07ab4}
+.vBk-box--areas [data-k="chugoku-shikoku"]{--ac:#b8dba0;--ac-s:#76a850}
+.vBk-box--areas [data-k="kyushu-okinawa"]{--ac:#f0b7b7;--ac-s:#d46f6f}
+/* 札: 地方名 + 件数 + その地方の地域 */
+.vAp-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vAp-card{display:flex;align-items:center;gap:12px;min-height:88px;height:100%;box-sizing:border-box;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid var(--bk-line);box-shadow:0 2px 14px rgba(28,37,65,.07);color:var(--bk-navy);transition:transform .25s cubic-bezier(.2,.6,.2,1),box-shadow .25s,border-color .25s}
+.vAp-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(28,37,65,.13);border-color:var(--ac-s,var(--bk-or))}
+.vAp-dot{flex:none;width:16px;height:16px;border-radius:50%;background:var(--ac,#ddd);box-shadow:inset 0 0 0 2px var(--ac-s,#999)}
+.vAp-ct{flex:1 1 auto;min-width:0;display:grid;gap:3px}
+.vAp-ct b{font:900 19px/1.3 var(--bk-maru);color:var(--bk-navy)}
+.vAp-ct small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:400 12.5px/1.5 var(--bk-sans);color:var(--bk-mute);overflow-wrap:anywhere}
+.vAp-card em{flex:none;font:500 22px/1 var(--bk-sans);font-style:normal;font-variant-numeric:lining-nums tabular-nums;color:var(--bk-or-ink)}
+.vAp-card em i{margin-left:2px;font:400 12.5px/1 var(--bk-sans);font-style:normal;color:var(--bk-mute)}
+/* 札に乗ると、図の同じ地方が濃くなる */
+.vBk-box--areas:has(.vAp-card[data-k="hokkaido-tohoku"]:hover) .vAp-a[data-k="hokkaido-tohoku"] .vAp-land,
+.vBk-box--areas:has(.vAp-card[data-k="kanto"]:hover) .vAp-a[data-k="kanto"] .vAp-land,
+.vBk-box--areas:has(.vAp-card[data-k="chubu"]:hover) .vAp-a[data-k="chubu"] .vAp-land,
+.vBk-box--areas:has(.vAp-card[data-k="kinki"]:hover) .vAp-a[data-k="kinki"] .vAp-land,
+.vBk-box--areas:has(.vAp-card[data-k="chugoku-shikoku"]:hover) .vAp-a[data-k="chugoku-shikoku"] .vAp-land,
+.vBk-box--areas:has(.vAp-card[data-k="kyushu-okinawa"]:hover) .vAp-a[data-k="kyushu-okinawa"] .vAp-land{fill:var(--ac-s)}
+
+@media (max-width:1100px){
+  .vBk .vBk-box--areas,.vBk .vBk-box--areas:has(.vBk-side--tag){grid-template-columns:minmax(280px,320px) minmax(0,1fr)}
+}
+@media (max-width:820px){
+  .vBk .vBk-box--areas,.vBk .vBk-box--areas:has(.vBk-side--tag){grid-template-columns:minmax(0,1fr)}
+  .vAp-fig{width:min(100%,300px);margin:0 auto}
+  .vAp-cards{gap:10px}
+  .vAp-card{gap:10px;padding:10px 12px;min-height:84px}
+  .vAp-ct b{font-size:17px}
+  .vAp-ct small{-webkit-line-clamp:3}
+  .vAp-card em{font-size:19px}
+}
+@media (max-width:420px){
+  .vAp-card{align-items:flex-start;flex-wrap:wrap;gap:6px 8px}
+  .vAp-ct{flex:1 1 calc(100% - 26px)}
+  .vAp-card em{margin-left:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .vAm-c,.vAm-ld-g,.vAp-pin,.vAp-ld-g{animation:none!important}
+  .vAm-disc,.vAp-disc,.vAp-card,.vAp-land{transition:none!important}
+}
