@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { areaIndexHref } from "@/lib/portal/noren/areaLinks";
 import { sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+import ErrorBoundaryView from "./error";
 
 export const metadata = {
   title: "ページが見つかりません — マチノワ",
 };
 
 export default function NotFound() {
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ
+  if (RELEASE_PERIPHERY) return <ErrorBoundaryView notFound />;
   return (
     <div style={{ padding: "120px 40px" }}>
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

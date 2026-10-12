@@ -1,6 +1,8 @@
 import { categoryAreaPage } from "@/components/portal/pages/category-area";
+import { categoryAreaRedirectPage } from "@/components/portal/colorplay/pages/redirects";
 
-const page = categoryAreaPage("beauty");
+// COLOR PLAY のあいだは /beauty/search?kind=…&pref=… へ恒久の転送。"legacy" なら元のページ。
+const page = categoryAreaRedirectPage("beauty", categoryAreaPage("beauty"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

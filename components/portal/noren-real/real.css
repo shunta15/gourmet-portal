@@ -4,7 +4,7 @@
    ==================================================================== */
 .vR-hero{position:relative;height:200svh;--open:0;--prog:0}
 .vR-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--sumi);--yb:236px;--hem:860px;--rod:80px}
-.vR-scene{position:absolute;inset:0;transition:opacity 1s}
+.vR-scene{position:absolute;inset:0;transition:opacity .6s}
 .vR-hero[data-mode="init"] .vR-scene{opacity:0}
 .vR-photo{
   position:absolute;inset:-3%;background-size:cover;background-position:50% 42%;
@@ -34,7 +34,8 @@
 .vR-hero .vN-lead{text-shadow:0 0 16px rgba(0,0,0,.95),0 0 4px rgba(0,0,0,.9)}
 .vR-hero .vN-meta{z-index:4}
 
-.vR-cloth{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0;transition:opacity .8s}
+/* 本物の布: 準備ができたら（data-mode="gl"）、すっと現れる（.45 秒）。それまでは見えない */
+.vR-cloth{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0;transition:opacity .45s ease}
 .vR-hero[data-mode="gl"] .vR-cloth{opacity:1}
 /* 夜の店先の暗がり：四隅と下を少し落とす（布の上に重ねるだけ。動かない） */
 .vR-vig{position:absolute;inset:0;z-index:3;pointer-events:none;
@@ -54,10 +55,21 @@
 .vR-door-tag i{font:italic 400 12px/1 var(--f-lat);letter-spacing:.24em;color:var(--kinari-2);text-shadow:0 1px 8px rgba(0,0,0,.6)}
 @media (hover:none){.vR-door-tag{display:none}}
 
-/* CSS の布（最初の WebGL のコマが出るまでの静かな面と、WebGL が使えないときの代わり。出たら溶けて切り替わる） */
+/* CSS の布（スクリプトが動かない・WebGL が使えないときの代わり）。
+   スクリプトが動く環境の準備中（data-mode="init"）は見せない: 最初の描画は地（灰墨）だけにして、本物の布ができたら WebGL の布がすっと現れる。
+   これで「別の暖簾が一瞬出てから本物に切り替わる」ことが無い。CSS の布を出すのは次の 3 つの場合だけ:
+   ① スクリプトなし … NorenHeroReal.tsx の NOSCRIPT_CSS（<noscript> の中）が常に見せる
+   ② WebGL が使えない・作れなかった … data-mode="css" で、すぐ（.25 秒）出す
+   ③ 準備が 2.5 秒たっても終わらない … init のまま 2.5 秒たつと出る（CSS だけで数えるので、スクリプトの到着が遅れているときにも効く）。
+      そのあと本物ができたら、出ていた濃さ（--fb-now。NorenHeroReal.tsx が入れる）から溶けて切り替わる。
+   ふつうは見えない（opacity 0）が、レイアウトには残してある＝字の書体の読み込みは、ここの字が先に始めてくれる（display:none にしない） */
 .vR-fb{position:absolute;left:0;right:0;top:var(--rod);height:calc(var(--hem) - var(--rod));z-index:2;pointer-events:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
-  opacity:1;transition:opacity .9s ease .8s,visibility 0s 1.8s}
-.vR-hero[data-mode="gl"] .vR-fb{opacity:0;visibility:hidden}
+  opacity:0;transition:opacity .25s ease}
+.vR-hero[data-mode="css"] .vR-fb{opacity:1}
+.vR-hero[data-mode="init"] .vR-fb{animation:vR-fb-late .4s ease 2.5s both}
+.vR-hero[data-mode="gl"] .vR-fb{animation:vR-fb-out .5s ease both}
+@keyframes vR-fb-late{from{opacity:0}to{opacity:1}}
+@keyframes vR-fb-out{from{opacity:var(--fb-now,0)}to{opacity:0;visibility:hidden}}
 .vR-fb-rod{position:absolute;left:0;right:0;top:-11px;height:22px;z-index:2;background:linear-gradient(180deg,#4a3a2c,#2b1f16 40%,#120c08);box-shadow:0 10px 18px -4px rgba(0,0,0,.6)}
 .vR-fb-p{position:relative;
   background:
@@ -114,3 +126,9 @@
   .vR-hero[data-sp="short"] .vN-meta,.vR-hero[data-sp="mid"] .vN-meta,.vR-hero[data-sp="half"] .vN-meta{display:none}
 }
 @media (prefers-reduced-motion:reduce){.vR-sp-under{transition:none}}
+/* 「動きを減らす」設定: 布・奥の写真はふっと現れず、すぐ切り替わる（静止）。CSS の布の出入りもすぐ（2.5 秒の保険の待ち時間は同じ） */
+@media (prefers-reduced-motion:reduce){
+  .vR-cloth,.vR-scene,.vR-fb{transition:none}
+  .vR-hero[data-mode="init"] .vR-fb{animation-duration:.01s}
+  .vR-hero[data-mode="gl"] .vR-fb{animation-duration:.01s}
+}

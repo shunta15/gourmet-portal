@@ -3,8 +3,11 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
 import { Mail } from "lucide-react";
-import { RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_PERIPHERY, RELEASE_REST } from "@/lib/portal/noren/release";
+import dynamic from "next/dynamic";
 import OwnerPortalLegacy, { legacyMetadata } from "./OwnerPortalLegacy";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
+const OwnerView = dynamic(() => import("@/components/portal/periphery/OwnerView"));
 
 // フッターの「店舗登録」の行き先。訪問者向けに、準備中であることとお問い合わせへの案内だけを出す
 // RELEASE_REST が false のあいだは、今の本番の店舗登録ページ（OwnerPortalLegacy）を出す
@@ -16,6 +19,8 @@ export const metadata = RELEASE_REST
   : legacyMetadata;
 
 export default function OwnerPortal() {
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ（RELEASE_REST の版ごと）
+  if (RELEASE_PERIPHERY) return <OwnerView rest={RELEASE_REST} />;
   if (!RELEASE_REST) return <OwnerPortalLegacy />;
   return (
     <div className="admin-root min-h-screen px-4 py-12">
