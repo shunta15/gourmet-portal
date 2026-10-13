@@ -30,7 +30,7 @@ export default function ShopB({ shop, v }: { shop: BsShop; v: number }) {
     { id: "bs-access", key: "access" },
   ];
   const L = items.length;
-  const N = Math.max(L, 8);
+  const N = Math.max(L + 1, 8); // 内容のある面 L 個 + かならず 1 枠以上の空き(芯だけ)。最後の面が最初の面の上に見えない
   const ft = (2 * Math.tan(Math.PI / N)).toFixed(4);
 
   const body = (key: string) => {
@@ -142,11 +142,12 @@ export default function ShopB({ shop, v }: { shop: BsShop; v: number }) {
                     <div className="bb-paper">
                       <div className="bb-sc">{body(items[j].key)}</div>
                     </div>
-                    <i className="bb-shade" aria-hidden="true" />
                   </section>
                 ) : null
               )}
             </div>
+            <i className="bb-lamp" aria-hidden="true" />
+            <i className="bb-lamp bb-lamp-b" aria-hidden="true" />
             </div>
           </div>
         </div>

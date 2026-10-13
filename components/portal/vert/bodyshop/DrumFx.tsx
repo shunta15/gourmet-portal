@@ -7,7 +7,10 @@
  *  - PC のマウス: 筒をつかんで回す。勢いがついて回り、遅くなると一番近い節で止まり、その節へページが移る。節の境で止まる。
  *    スマホの指: ふつうにスクロールすると筒が回る(スクロールを奪わない)。
  *  - 「店舗情報のみ見る」・面の押下・ハッシュ: その節へスクロールして、筒がそこへ回る。
- *  - 開く動き(筒が勢いよく回って店名の面で止まる)は CSS。終わってから、ここが引き継ぐ。
+ *  - 開く動き(店名の面は正面のまま、数度だけ揺れて落ち着く)は CSS。終わってから、ここが引き継ぐ。
+ *  - 軽さ: 毎フレーム書くのは筒の角度 --th(継承しない登録済みの数)だけ。陰は画面に固定した 1 枚、面の中の文の位置は transform を直接書く。
+ *    正面から遠い面は visibility:hidden。読み取り(寸法)は 1 つの rAF にまとめる。
+ *  - 指(タッチ): 離したときの速さから着地する節を決め(強いはじきで 2 節)、そこへ回る。ばねを弱くして、行き過ぎてから戻る。
  *  - prefers-reduced-motion では何もしない(節の札を縦に並べる)。
  */
 import { useEffect } from "react";
@@ -54,8 +57,14 @@ export default function DrumFx() {
     let lastT = 0;
     let lastActive = performance.now();
     let visible = true;
-    let lastLit = -999;
+    let lastVis = -999;
+    let bounce = false;
+    let Rp = 600;
+    let mq = 0;
     const syNow = new Array<number>(L).fill(0);
+    const offNow = new Array<boolean>(faces.length).fill(false);
+    const segOff = new Array<boolean>(segs.length).fill(false);
+    const lim = step * 1.5 + 10; // 正面からこの角度より遠い面は隠す(画面の外にある)
 
     const measure = () => {
       vh = window.innerHeight;
@@ -76,6 +85,16 @@ export default function DrumFx() {
       }
       total = y;
       track.style.height = `${Math.round(total + vh)}px`;
+      Rp = cyl.offsetHeight / ft || 600;
+    };
+    // 寸法の読み取りは、1 フレームに 1 回だけ(まとめて)
+    const queueMeasure = () => {
+      if (mq) return;
+      mq = requestAnimationFrame(() => {
+        mq = 0;
+        measure();
+        kick();
+      });
     };
     const locate = (y: number) => {
       let i = 0;
@@ -87,23 +106,26 @@ export default function DrumFx() {
     };
     const paint = () => {
       cyl.style.setProperty("--th", theta.toFixed(3));
-      // 影の濃さ(--lit)は、正面に近い面・芯だけ書く(見えない面は書かない。再計算を軽く)
-      if (Math.abs(theta - lastLit) > 0.4) {
-        lastLit = theta;
-        faces.forEach((f, j) => {
+      // 正面から遠い面は隠す(描かない)。境を越えたときだけ書く
+      if (Math.abs(theta - lastVis) > 1.2) {
+        lastVis = theta;
+        for (let j = 0; j < faces.length; j++) {
           const d = Math.abs((((j * step - theta) % 360) + 540) % 360 - 180);
-          if (d < 105 || f.dataset.far !== "1") {
-            f.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(2));
-            f.dataset.far = d >= 105 ? "1" : "0";
+          const off = d > lim;
+          if (off !== offNow[j]) {
+            offNow[j] = off;
+            faces[j].classList.toggle("bb-off", off);
           }
-        });
-        segs.forEach((sg, k) => {
+        }
+        // 芯の細い面も、画面の外にある(正面から 62° より遠い)ものは描かない
+        for (let k = 0; k < segs.length; k++) {
           const d = Math.abs((((k * 15 - theta + 10) % 360) + 540) % 360 - 180);
-          if (d < 105 || sg.dataset.far !== "1") {
-            sg.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(2));
-            sg.dataset.far = d >= 105 ? "1" : "0";
+          const off = d > 62;
+          if (off !== segOff[k]) {
+            segOff[k] = off;
+            segs[k].classList.toggle("bb-off", off);
           }
-        });
+        }
       }
     };
     const setSy = (y: number, cur: number) => {
@@ -111,7 +133,7 @@ export default function DrumFx() {
         const want = i === cur ? clamp(y - ys[i] - 0.06 * vh, 0, Ss[i]) : y > ys[i] ? Ss[i] : 0;
         if (Math.abs(want - syNow[i]) > 0.5) {
           syNow[i] = want;
-          scs[i].style.setProperty("--sy", want.toFixed(1));
+          scs[i].style.transform = `translateY(${(-want).toFixed(1)}px)`;
         }
       }
     };
@@ -148,13 +170,15 @@ export default function DrumFx() {
       } else {
         // スクロール位置から出した角度へ、ばねでついていく(勢い・遅れがあり、止まるとき小さく行き過ぎる)
         const d = loc.th - theta;
-        vf += (110 * d - 14 * vf) * dt;
+        vf += (110 * d - (bounce ? 9.5 : 14) * vf) * dt;
         theta += vf * dt;
         if (Math.abs(d) < 0.02 && Math.abs(vf) < 0.4) {
           theta = loc.th;
           vf = 0;
+          bounce = false;
           paint();
-          return; // 静かなときは JS を動かさない(揺れは CSS)
+          root.classList.remove("bb-moving"); // 静かなときは JS を動かさない(揺れは CSS)
+          return;
         }
       }
       paint();
@@ -176,6 +200,7 @@ export default function DrumFx() {
       return best;
     }
     const kick = () => {
+      if (free) root.classList.add("bb-moving");
       if (!raf && free) {
         lastT = performance.now();
         raf = requestAnimationFrame(frame);
@@ -223,25 +248,69 @@ export default function DrumFx() {
         if (i >= L - 1) return;
         const dEnd = ys[i] + Ds[i];
         // 進む向きに少しでも(20px)回っていたら次の節へ、戻る向きなら今の節へ(速いスワイプでも境へ回り切る)
+        if (y > dEnd + 6 && y < ys[i + 1] - 6) bounce = true;
         if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: (downDir ? y - dEnd > 20 : y - dEnd > T - 20) ? ys[i + 1] : dEnd, behavior: "smooth" });
       }, 150);
     };
-    const onResize = () => {
-      measure();
-      kick();
-    };
-    const ro = new ResizeObserver(() => measure());
+    const onResize = () => queueMeasure();
+    const ro = new ResizeObserver(() => queueMeasure());
     scs.forEach((s) => ro.observe(s));
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize);
     window.addEventListener("load", onResize);
     root.addEventListener("toggle", onResize, true);
-    document.fonts?.ready.then(() => measure());
+    document.fonts?.ready.then(() => queueMeasure());
     const io = new IntersectionObserver((es) => {
       visible = es[0].isIntersecting;
       if (visible) kick();
     });
     io.observe(stage);
+
+    // 指: 離したときの速さで、着地する節を決める(はじきが強いほど先へ。最大 2 節)。ばねは弱め→行き過ぎて戻る
+    let touching = false;
+    let tY = 0;
+    let tT = 0;
+    let tV = 0;
+    const onTS = (e: TouchEvent) => {
+      touching = true;
+      tY = e.touches[0].clientY;
+      tT = performance.now();
+      tV = 0;
+    };
+    const onTM = (e: TouchEvent) => {
+      if (!touching) return;
+      const now = performance.now();
+      const dts = (now - tT) / 1000;
+      if (dts > 0.004) {
+        const yy = e.touches[0].clientY;
+        tV = tV * 0.5 + ((-(yy - tY)) / dts) * 0.5;
+        tY = yy;
+        tT = now;
+      }
+    };
+    const onTE = () => {
+      if (!touching) return;
+      touching = false;
+      if (!free) return;
+      const v = performance.now() - tT > 110 ? 0 : tV;
+      if (Math.abs(v) < 380) return;
+      const y = window.scrollY;
+      const cur = locate(y).i;
+      const proj = clamp(y + v * 0.4, 0, ys[L - 1]);
+      const lp = locate(proj);
+      const dEnd = ys[lp.i] + Ds[lp.i];
+      const raw = proj > dEnd ? Math.min(L - 1, lp.i + 1) : lp.i;
+      const t = v > 0 ? clamp(raw, cur, Math.min(L - 1, cur + 2)) : clamp(raw, Math.max(0, cur - 2), cur);
+      const top = t === raw && proj <= dEnd ? proj : ys[t];
+      if (Math.abs(top - y) < 4) return;
+      bounce = true;
+      lastActive = performance.now();
+      window.scrollTo({ top, behavior: "smooth" });
+    };
+    window.addEventListener("touchstart", onTS, { passive: true });
+    window.addEventListener("touchmove", onTM, { passive: true });
+    window.addEventListener("touchend", onTE, { passive: true });
+    window.addEventListener("touchcancel", onTE, { passive: true });
 
     // 「店舗情報のみ見る」・面の押下
     const skip = root.querySelector<HTMLAnchorElement>(".bs-skip");
@@ -277,7 +346,7 @@ export default function DrumFx() {
     let lastTs = 0;
     let vel = 0;
     let pid = 0;
-    const Rpx = () => (cyl.offsetHeight / ft) || 600;
+    const Rpx = () => Rp;
     const onDown = (e: PointerEvent) => {
       if (e.pointerType === "touch" || e.button !== 0) return;
       if ((e.target as Element).closest("a,button,summary,input,select,textarea")) return;
@@ -335,6 +404,7 @@ export default function DrumFx() {
     return () => {
       cancelAnimationFrame(raf);
       window.clearTimeout(snapT);
+      cancelAnimationFrame(mq);
       ro.disconnect();
       io.disconnect();
       window.removeEventListener("scroll", onScroll);
@@ -343,6 +413,10 @@ export default function DrumFx() {
       root.removeEventListener("toggle", onResize, true);
       skip?.removeEventListener("click", onSkip);
       stage.removeEventListener("click", onStageClick);
+      window.removeEventListener("touchstart", onTS);
+      window.removeEventListener("touchmove", onTM);
+      window.removeEventListener("touchend", onTE);
+      window.removeEventListener("touchcancel", onTE);
       stage.removeEventListener("pointerdown", onDown);
       stage.removeEventListener("pointermove", onMove);
       stage.removeEventListener("pointerup", onUp);

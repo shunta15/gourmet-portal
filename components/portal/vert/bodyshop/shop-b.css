@@ -1,5 +1,5 @@
 /* 案 B「回す」(作り直し): 大きな筒(丸めたマット)がページの主役。面は紙の札を巻いたもの */
-@property --th{syntax:"<number>";inherits:true;initial-value:0}
+@property --th{syntax:"<number>";inherits:false;initial-value:0}
 .bb{--fw:min(94vw,1120px);--endw:clamp(14px,6.4vw,92px);--Hf:clamp(420px,calc(100svh - 190px),760px);--R:calc(var(--Hf) / var(--ft));padding-top:56px}
 
 /* ── 普通のページ(JS なし・動きを減らす設定): 節の札を縦に並べる ── */
@@ -7,7 +7,7 @@
 .bb-cyl{display:grid;gap:clamp(22px,3.4vw,40px);max-width:880px;margin:0 auto}
 .bb-face{position:relative;scroll-margin-top:68px;background:var(--paper);box-shadow:0 18px 30px -20px rgba(30,20,8,.8),0 0 0 1px rgba(28,27,25,.1)}
 .bb-face::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--mat)}
-.bb-blank,.bb-shade,.bb-body{display:none}
+.bb-blank,.bb-lamp,.bb-body{display:none}
 .bb-paper{position:static}
 .bb-sc{padding:clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(28px,3.8vw,48px)}
 
@@ -46,24 +46,31 @@
   .bb-js:not(.bb-still) .bb-stage{position:sticky;top:0;height:100svh;overflow:hidden;perspective:calc(var(--R) * 3);perspective-origin:50% calc(50% + 28px);cursor:grab;-webkit-tap-highlight-color:transparent}
   .bb-js:not(.bb-still) .bb-stage.is-grab{cursor:grabbing;-webkit-user-select:none;user-select:none}
   .bb-js:not(.bb-still) .bb-cyl{display:block;position:absolute;left:50%;top:calc(50% + 28px);width:var(--fw);height:var(--Hf);max-width:none;margin:calc(var(--Hf) / -2) 0 0 calc(var(--fw) / -2);transform-style:preserve-3d;transform:translateZ(calc(var(--R) * -1)) rotateX(calc(var(--th) * 1deg));will-change:transform}
-  .bb-js:not(.bb-still):not(.bb-free) .bb-cyl{animation:bb-intro 1.1s cubic-bezier(.2,.9,.3,1.12) both}
-  @keyframes bb-intro{from{--th:-82}to{--th:0}}
+  .bb-js:not(.bb-still):not(.bb-free) .bb-cyl{animation:bb-intro 1.05s cubic-bezier(.3,.7,.4,1) both}
+  @keyframes bb-intro{0%{--th:-7}38%{--th:2.6}62%{--th:-1.1}82%{--th:.35}100%{--th:0}}
   /* 静かなとき: 筒がゆっくり揺れる(CSS だけ。JS は動かさない) */
-  .bb-js:not(.bb-still) .bb-sway{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:50% calc(50% + 28px) calc(var(--R) * -1);will-change:transform;animation:bb-sway 7.5s ease-in-out infinite alternate}
-  @keyframes bb-sway{from{transform:rotateX(-.75deg)}to{transform:rotateX(.75deg)}}
-  .bb-js:not(.bb-still) .bb-face{position:absolute;inset:0;transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;scroll-margin-top:0;background:none;box-shadow:none;overflow:visible}
+  .bb-js:not(.bb-still) .bb-sway{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:50% calc(50% + 28px) calc(var(--R) * -1);will-change:transform;pointer-events:none;animation:bb-sway 7.5s ease-in-out infinite alternate}
+  /* 外枠は面(正面と同じ奥行き)より 3px 奥へ。同じ奥行きだと、押したとき外枠が先に当たって面のリンクが押せなくなることがある */
+  @keyframes bb-sway{from{transform:translateZ(-3px) rotateX(-.75deg)}to{transform:translateZ(-3px) rotateX(.75deg)}}
+  .bb-js:not(.bb-still) .bb-face{position:absolute;inset:0;transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;scroll-margin-top:0;background:none;box-shadow:none;overflow:visible;pointer-events:auto}
   .bb-js:not(.bb-still) .bb-face::before{display:none}
-  /* 丸い芯: 24 の細い面を並べて円筒にする。種類の色+発泡の肌。手前ほど明るく、上下へ向かって陰る(JS が --lit を滑らかに付ける) */
+  .bb-js:not(.bb-still) .bb-face.bb-off{visibility:hidden}
+  /* 丸い芯: 24 の細い面を並べて円筒にする。種類の色+発泡の肌。陰は画面に固定した 1 枚(.bb-lamp)が受け持つ */
   .bb-js:not(.bb-still) .bb-body{display:block;position:absolute;inset:0;transform-style:preserve-3d;--Rb:calc(var(--R) * .984)}
   .bb-js:not(.bb-still) .bb-seg{position:absolute;left:0;right:0;top:50%;height:calc(var(--Rb) * .2634 + 3px);margin-top:calc((var(--Rb) * .2634 + 3px) / -2);transform:rotateX(calc(var(--k) * -15deg)) translateZ(var(--Rb));backface-visibility:hidden;-webkit-backface-visibility:hidden;
-    background:url(/_portal/bodyshop/foam.svg) 0 0/150px 150px,linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,0) 7%,rgba(0,0,0,0) 93%,rgba(0,0,0,.28)),radial-gradient(120% 80% at 20% 0%,rgba(255,250,236,.24),rgba(255,250,236,0) 60%),color-mix(in srgb,var(--mat) 88%,#fff);background-blend-mode:multiply,normal,normal,normal}
-  .bb-js:not(.bb-still) .bb-seg::after{content:"";position:absolute;inset:0;background:#120d06;opacity:calc((1 - var(--lit,1)) * .5)}
+    background:repeating-linear-gradient(90deg,rgba(60,38,12,.30) 0 1px,rgba(255,248,230,.20) 1px 3px) 0 0/15px 100% no-repeat,repeating-linear-gradient(270deg,rgba(60,38,12,.30) 0 1px,rgba(255,248,230,.20) 1px 3px) 100% 0/15px 100% no-repeat,url(/_portal/bodyshop/foam.svg) 0 0/150px 150px,linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,0) 7%,rgba(0,0,0,0) 93%,rgba(0,0,0,.28)),radial-gradient(120% 80% at 20% 0%,rgba(255,250,236,.1),rgba(255,250,236,0) 60%),color-mix(in srgb,var(--mat) 88%,#fff);background-blend-mode:normal,normal,multiply,normal,normal,normal}
   .bb-js:not(.bb-still) .bb-blank{display:none}
-  .bb-js:not(.bb-still) .bb-paper{position:absolute;inset:calc(var(--Hf) * .05) var(--endw);overflow:hidden;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.16),0 3px 0 rgba(0,0,0,.2),0 12px 20px -8px rgba(0,0,0,.6),inset 0 0 26px rgba(120,90,50,.14);border-radius:3px}
-  .bb-js:not(.bb-still) .bb-sc{max-width:780px;min-height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center;transform:translateY(calc(var(--sy,0) * -1px));will-change:transform}
+  .bb-js:not(.bb-still) .bb-paper{position:absolute;inset:calc(var(--Hf) * .05) var(--endw);overflow:hidden;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.16),0 3px 0 rgba(70,48,20,.34),0 4px 0 rgba(0,0,0,.14),0 12px 20px -8px rgba(0,0,0,.6),inset 0 2px 0 rgba(255,255,255,.7),inset 0 -2px 0 rgba(120,90,50,.3),inset 0 0 26px rgba(120,90,50,.14);border-radius:3px}
+  .bb-js:not(.bb-still) .bb-paper::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(78,50,18,.26),rgba(78,50,18,.08) 5%,rgba(78,50,18,0) 12%,rgba(78,50,18,0) 88%,rgba(78,50,18,.1) 95%,rgba(78,50,18,.3))}
+  .bb-js:not(.bb-still) .bb-sc{max-width:780px;min-height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center}
   .bb-js:not(.bb-still) .bb-sc .bs-body p{font-size:clamp(15.5px,1.45vw,18px);line-height:2.05}
   .bb-js:not(.bb-still) .bb-sc .bb-h{font-size:clamp(24px,3vw,42px)}
-  .bb-js:not(.bb-still) .bb-shade{display:block;position:absolute;inset:calc(var(--Hf) * .05) var(--endw);background:#120d06;opacity:calc((1 - var(--lit,1)) * .42);pointer-events:none;border-radius:3px}
+  /* 筒の丸みの陰: 画面に固定した 1 枚(筒が回っても動かない。角度 a の点は正面から R·3·sin a/(4-cos a) の高さに見えるので、その位置に濃さ 1.6·(1-cos a)·.5 を置く) */
+  .bb-js:not(.bb-still) .bb-lamp{display:block;position:absolute;left:50%;top:0;height:calc(50% + 28px - var(--R) * .2559);width:var(--fw);margin-left:calc(var(--fw) / -2);pointer-events:none;--cy:calc(50% + 28px);
+    background:linear-gradient(180deg,rgba(18,13,6,.4) calc(var(--cy) - var(--R) * .7423),rgba(18,13,6,.234) calc(var(--cy) - var(--R) * .6442),rgba(18,13,6,.107) calc(var(--cy) - var(--R) * .4786),rgba(18,13,6,.027) calc(var(--cy) - var(--R) * .2559))}
+  .bb-js:not(.bb-still) .bb-lamp-b{top:auto;bottom:0;height:calc(50% - 28px - var(--R) * .2559);background:linear-gradient(180deg,rgba(18,13,6,.027),rgba(18,13,6,.107) calc(var(--R) * .2227),rgba(18,13,6,.234) calc(var(--R) * .3883),rgba(18,13,6,.4) calc(var(--R) * .4864))}
+  .bb-js:not(.bb-still) .bb-seg.bb-off{visibility:hidden}
+  .bb-js:not(.bb-still).bb-moving .bb-sway{animation-play-state:paused}
   .bb-js:not(.bb-still) #bs-top .bb-sc{justify-content:flex-start}
   .bb-js:not(.bb-still) .bb-fig{transform:rotate(-1deg)}
 }
