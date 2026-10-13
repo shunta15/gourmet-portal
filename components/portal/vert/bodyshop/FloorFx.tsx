@@ -53,7 +53,7 @@ export default function FloorFx() {
     let brushing = false;
 
     const build = () => {
-      const base = clamp(W * 0.07, 30, 54);
+      const base = clamp(W * 0.045, 24, 34);
       const spec: [Kind, number, string][] = [
         ["mat", 1.0, matColor],
         ["mat", 0.82, "#d8ceb8"],
@@ -349,7 +349,7 @@ export default function FloorFx() {
       if (!document.hidden) wake(100);
     };
     document.addEventListener("visibilitychange", onVis);
-    (window as unknown as { __bcProbe: () => unknown }).__bcProbe = () => ({ o: obs.map((o) => [Math.round(o.x), Math.round(o.y - (H - lh))]), lh, grab: !!grab });
+    (window as unknown as { __bcProbe: () => unknown }).__bcProbe = () => ({ o: obs.map((o) => [Math.round(o.x), Math.round(o.y - (H - lh)), Math.round(o.r)]), lh, grab: !!grab });
 
     // 紙: 見える所に来たら置かれる
     const cards = Array.from(root.querySelectorAll<HTMLElement>("[data-bc-card]"));
