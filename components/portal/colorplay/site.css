@@ -276,3 +276,16 @@
   .sh-shape,.sh-cut,.sh-cut img{translate:none !important; scale:1 !important}
   .sh-card,.sh-gal li,.sh-no,.sh-h{translate:none !important; rotate:none !important; clip-path:none !important}
 }
+
+/* ===== スマホ(2026-10-13・オーナー指示「スマホ最適化」): 14px 未満の字をなくす・押す所を 44px 以上に・上に残る帯が見出しを隠さない ===== */
+/* 上に残る帯(.cp-mini-pills。幅 900px 以下は top:8px・高さ 52px)の下に、「種類」「エリア」「お店」へ飛んだときの見出しが来るようにする */
+#kinds,#area,#shops{scroll-margin-top:32px}
+@media (max-width:900px){
+  .cp-hero-sub{font-size:14px}
+  .cp-hero-tag span{font-size:14px}
+  .cp-pill small{font-size:14px}
+  .cp-tile-t small{font-size:14px}
+  /* フッターは、さがす・店のページと共通。見た目を変えないため、トップ(.cp-kinds-sec があるページ)だけに掛ける */
+  .cp-root:has(.cp-kinds-sec) .cp-note{font-size:14px}
+  .cp-root:has(.cp-kinds-sec) .cp-footer ul a{min-width:44px; justify-content:center}
+}
