@@ -169,6 +169,7 @@ export default function FloorFx() {
           a.y -= ny * push * (ka || 0);
           b.x += nx * push * (kb || 0);
           b.y += ny * push * (kb || 0);
+          if (Math.abs(ny) > 0.55 && (a.y < b.y ? a : b).y - (a.y < b.y ? a : b).r < H - lh + 2) continue; // 帯より上にいる物は、下の物の手前を通る(帯の上に積み重ならない)
           if (Math.abs(ny) > 0.55) {
             const up = a.y < b.y ? a : b;
             const lo = up === a ? b : a;
