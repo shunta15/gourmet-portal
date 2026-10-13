@@ -16,12 +16,11 @@
 html:has(.bs){scroll-padding-top:68px}
 @media (prefers-reduced-motion:no-preference){html:has(.bs){scroll-behavior:smooth}}
 
-/* 木の床 */
+/* 木の床(最初のページ「転がし」と同じ: 明るいオークの板・板の目・窓からの光)。板の絵は public/_portal/bodyshop/oak.svg */
 .bs-floor{background:
-  repeating-linear-gradient(90deg,rgba(84,52,22,.16) 0 2px,transparent 2px 172px),
-  repeating-linear-gradient(90deg,transparent 0 86px,rgba(84,52,22,.07) 86px 87px,transparent 87px 172px),
-  repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 3px,rgba(84,52,22,.04) 3px 6px),
-  linear-gradient(180deg,#dcc496 0%,#cdab7a 55%,#c3a06e 100%)}
+  radial-gradient(ellipse 90% 60% at 28% -6%,rgba(255,248,228,.62),rgba(255,248,228,0) 68%),
+  linear-gradient(180deg,rgba(255,255,255,0) 60%,rgba(70,44,16,.10)),
+  url(/_portal/bodyshop/oak.svg) 0 0/640px 528px,#dcc499}
 
 /* 上の細い帯 */
 .bs-head{position:fixed;left:0;right:0;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 var(--gut);background:rgba(239,236,229,.94);border-bottom:1px solid rgba(28,27,25,.14)}

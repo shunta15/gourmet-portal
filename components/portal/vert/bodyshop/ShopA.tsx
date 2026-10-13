@@ -65,12 +65,16 @@ export default function ShopA({ shop, v }: { shop: BsShop; v: number }) {
             </div>
             <div className="ba-run" aria-hidden="true">
               <div className="ba-roll">
+                <span className="ba-hit" />
                 <span className="ba-lab">
                   <b>{shop.kindName}</b>
                 </span>
               </div>
             </div>
           </section>
+          <p className="ba-hint" aria-hidden="true">
+            <i>↑</i>巻きをつかんで、上へひっぱる
+          </p>
         </div>
 
         {rest.length > 0 && (

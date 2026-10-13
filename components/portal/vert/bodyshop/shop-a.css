@@ -2,15 +2,17 @@
 @property --u{syntax:"<number>";inherits:true;initial-value:1}
 @property --th{syntax:"<number>";inherits:true;initial-value:0}
 .ba{--tone:var(--mat);padding-bottom:40px}
-.ba-u{--u:1;--th:0;--ku:calc(1 / max(var(--u), .04));--d:calc(16px + 58px * (1 - var(--u)));position:relative}
+.ba-u{--u:1;--th:0;--ku:calc(1 / max(var(--u), .04));--arr:1;--d:calc(30px + 62px * (1 - var(--u)));position:relative}
 /* JS が動くとき、最初の画面より下の面は、スクロールで広げる(JS が付ける --u が来るまでは広げ切った形) */
 .ba-sec{margin:0 var(--gut) clamp(52px,7vw,104px);scroll-margin-top:64px}
-.ba-hero-wrap{padding:72px var(--gut) clamp(36px,5vw,64px)}
-.ba-hero{min-height:calc(100svh - 72px - 28px);display:flex}
+.ba-hero-wrap{position:relative;padding:72px var(--gut) 112px}
+.ba-hero{--d:calc(50px + 48px * (1 - var(--u)));min-height:calc(100svh - 72px - 112px);display:flex}
 .ba-hero .ba-sheet{flex:1}
 .ba-sheet{position:relative;padding:clamp(20px,3.6vw,52px) clamp(12px,2.6vw,44px) clamp(30px,4.4vw,60px);
-  background:radial-gradient(rgba(0,0,0,.075) 1px,transparent 1.5px) 0 0/7px 7px,radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.5px) 3px 4px/9px 9px,linear-gradient(180deg,rgba(255,255,255,.12),rgba(0,0,0,.08)),var(--tone);
-  clip-path:inset(0 0 calc((1 - var(--u)) * 100%) 0);box-shadow:0 18px 30px -22px rgba(40,26,10,.7)}
+  background:radial-gradient(rgba(0,0,0,.09) 1px,transparent 1.6px) 0 0/6px 6px,radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.6px) 3px 3px/8px 8px,linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 30%,rgba(0,0,0,.14)),var(--tone);
+  clip-path:inset(0 0 calc((1 - var(--u)) * 100%) 0);box-shadow:0 26px 36px -26px rgba(40,26,10,.85)}
+.ba-sheet::before{content:"";position:absolute;inset:9px;border:1.5px dashed rgba(255,255,255,.38);border-radius:3px;pointer-events:none}
+.ba-sheet::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 52px rgba(0,0,0,.24),inset 0 3px 0 rgba(255,255,255,.28),inset 0 -4px 0 rgba(0,0,0,.22)}
 .ba-hero .ba-sheet{display:flex;flex-direction:column;justify-content:center}
 .ba-paper{background:var(--paper);padding:clamp(20px,3.4vw,44px);max-width:880px;margin:0 auto;width:100%;box-shadow:0 14px 26px -18px rgba(30,20,8,.7),0 0 0 1px rgba(0,0,0,.08)}
 .ba-hero .ba-paper{max-width:1100px}
@@ -18,11 +20,18 @@
 /* マットの巻き(帯のラベル入り) */
 /* 広げた端の位置は transform だけで動かす(レイアウトを動かさない=CLS を出さない)。.ba-run は面と同じ大きさの箱を --u で縦に縮め、巻きは逆の倍率で元の太さに戻す */
 .ba-run{position:absolute;left:calc(var(--gut) * -.5);right:calc(var(--gut) * -.5);top:0;height:100%;z-index:3;pointer-events:none;transform-origin:0 0;transform:scaleY(max(var(--u), .04))}
-.ba-roll{position:absolute;left:0;right:0;top:100%;height:var(--d);border-radius:6px;pointer-events:none;transform-origin:0 0;transform:translateY(calc(-50% * var(--ku))) scaleY(var(--ku));
-  background:linear-gradient(180deg,rgba(0,0,0,.46),rgba(255,255,255,.32) 24%,rgba(255,255,255,.04) 52%,rgba(0,0,0,.4)),repeating-linear-gradient(180deg,rgba(0,0,0,.11) 0 2px,transparent 2px 10px) 0 calc(var(--th) * 10px)/auto,var(--tone);
-  box-shadow:0 16px 20px -12px rgba(40,26,10,.7),inset 0 0 0 1px rgba(0,0,0,.14),inset 12px 0 14px -10px rgba(0,0,0,.35),inset -12px 0 14px -10px rgba(0,0,0,.35)}
-.ba-roll::before{content:"";position:absolute;left:0;right:0;top:-22px;bottom:-22px}
-.ba-lab{position:absolute;top:0;bottom:0;left:clamp(26px,9%,140px);width:min(250px,64%);background:var(--paper);overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.16)}
+.ba-roll{position:absolute;left:0;right:0;top:100%;height:var(--d);border-radius:10px;pointer-events:none;transform-origin:0 0;transform:translateY(calc(-50% * var(--ku))) scaleY(var(--ku));
+  --tone-d:color-mix(in srgb,var(--tone) 62%,#1a1208);
+  background:linear-gradient(180deg,rgba(255,255,255,.62) 0,rgba(255,255,255,.2) 16%,rgba(255,255,255,0) 40%,rgba(0,0,0,.2) 72%,rgba(0,0,0,.52) 100%),radial-gradient(rgba(0,0,0,.1) 1px,transparent 1.6px) 0 calc(var(--th) * 9px)/6px 6px,var(--tone);
+  box-shadow:0 26px 26px -14px rgba(50,30,10,.7),0 6px 6px -2px rgba(50,30,10,.35),inset 0 2px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.28)}
+/* 巻きの両端: 巻いた断面(渦) */
+.ba-roll::before,.ba-roll::after{content:"";position:absolute;top:-1px;bottom:-1px;width:calc(var(--d) * .7);border-radius:50%;
+  background:radial-gradient(ellipse at 36% 30%,rgba(255,255,255,.5),rgba(255,255,255,0) 58%),repeating-radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.3) 0 2px,rgba(0,0,0,0) 2px 7px),var(--tone-d);
+  box-shadow:inset 0 0 0 2px rgba(0,0,0,.28),0 8px 12px -4px rgba(40,24,8,.55)}
+.ba-roll::before{left:calc(var(--d) * -.32)}
+.ba-roll::after{right:calc(var(--d) * -.32)}
+.ba-hit{position:absolute;left:0;right:0;top:-40px;bottom:-40px}
+.ba-lab{position:absolute;top:2px;bottom:2px;left:clamp(40px,10%,150px);width:min(250px,64%);background:var(--paper);overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.16)}
 .ba-lab::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.36),rgba(255,255,255,.2) 24%,rgba(255,255,255,0) 52%,rgba(0,0,0,.34));pointer-events:none}
 .ba-lab b{position:absolute;left:14px;right:8px;top:50%;font:800 13px/1 var(--min);letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transform:translateY(-50%)}
 @supports (width:calc(sin(1) * 1px)){
@@ -31,11 +40,18 @@
 
 /* 最初の画面: 開くと同時に転がって広がる */
 @media (prefers-reduced-motion:no-preference){
-  .ba-hero{animation:ba-open 2.6s cubic-bezier(.16,.72,.2,1) both}
+  .ba-hero{animation:ba-open 3.4s cubic-bezier(.42,.02,.28,1) both}
   .ba-hero.is-drag,.ba-hero.is-free{animation:none}
-  @keyframes ba-open{from{--u:.05;--th:0}to{--u:1;--th:13}}
+  @keyframes ba-open{from{--u:.04;--th:0}to{--u:1;--th:16}}
+  .ba-hero.is-free:not(.is-drag) .ba-roll{animation:ba-spin 16s linear infinite}
+  @keyframes ba-spin{from{--th:16}to{--th:22.2832}}
+  .ba-hint i{animation:ba-nudge 1.8s ease-in-out infinite}
+  @keyframes ba-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 }
-.ba-hero .ba-roll{pointer-events:auto;cursor:grab;touch-action:none}
+.ba-hero .ba-roll{pointer-events:auto;cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
+.ba-hint{position:absolute;left:0;right:0;bottom:30px;text-align:center;font:700 13.5px/1 var(--sans);letter-spacing:.12em;color:#4a3820;pointer-events:none;transition:opacity .5s}
+.ba-hint i{display:inline-block;margin-right:.6em;font-style:normal;font-size:16px}
+.ba-hero-wrap.is-used .ba-hint{opacity:0}
 .ba-hero.is-drag .ba-roll{cursor:grabbing}
 .ba-hero.is-drag{-webkit-user-select:none;user-select:none}
 .ba-hero-in{display:grid;grid-template-columns:1fr;gap:clamp(18px,3vw,36px)}
@@ -74,8 +90,10 @@
 .ba-paper .bs-more-sec:first-child{margin-top:0}
 
 /* JS が動くとき: 最初の画面より下の面は、スクロールで広げる。動きを減らす設定・JS なしでは、広げ切った形(--u:1) */
-.ba-js:not(.ba-still) .ba-sec{--u:0}
+.ba-js:not(.ba-still) .ba-sec{--u:0;--arr:0}
+.ba-js:not(.ba-still) .ba-sec .ba-run{opacity:var(--arr)}
 .ba-js:not(.ba-still) .ba-sec:target{--u:1}
-.ba-js.ba-late:not(.ba-ready):not(.ba-still) .ba-sec{--u:1}
+.ba-js.ba-late:not(.ba-ready):not(.ba-still) .ba-sec{--u:1;--arr:1}
 .ba-still .ba-u{--u:1!important}
-@media (prefers-reduced-motion:reduce){.ba-u{--u:1!important}.ba-roll{display:none}.ba-sheet{clip-path:none}}
+@media (prefers-reduced-motion:reduce){.ba-u{--u:1!important}.ba-roll,.ba-hint{display:none}.ba-sheet{clip-path:none}}
+.ba-still .ba-hint{display:none}
