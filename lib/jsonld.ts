@@ -2,6 +2,7 @@ import { REGIONS, type Restaurant, type FeatureArticle } from "./data";
 import { GEO } from "./geo";
 import { mapsUrlForRestaurant } from "./maps";
 import { parseOpeningHours } from "./openingHours";
+import { stripTabelogScore } from "./portal/noren/tabelogScore";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -112,7 +113,8 @@ export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
     name: r.name,
     url,
     image: images,
-    description: r.desc,
+    // 画面に出す文と同じ除去（他サイトの評価 + 中身の無い文。lib/thinSentences.ts）を、構造化データの文にも通す
+    description: stripTabelogScore(r.desc),
     servesCuisine: cuisine,
     address: postalAddress,
   };
@@ -251,7 +253,7 @@ export function buildArticleJsonLd(a: FeatureArticle, path?: string): Record<str
     // 1 店 1 ページ（path あり）: 同じ URL の店（Restaurant）と @id が重ならないよう、記事は #article をつける。今までの /feature/<ID> は今までどおり
     "@id": path ? `${url}#article` : url,
     headline: a.title,
-    description: a.lede,
+    description: stripTabelogScore(a.lede),
     image,
     datePublished: a.date,
     author: {
@@ -307,7 +309,7 @@ export function buildFeatureItemListJsonLd(
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      description: item.desc,
+      description: stripTabelogScore(item.desc),
       image: item.images?.[0]?.startsWith("http")
         ? item.images[0]
         : item.images?.[0]

@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { NOREN_REAL_DYE } from "@/lib/portal/noren/realTop";
 import { panelPlan } from "@/lib/portal/noren/shop";
+import { distribute, joinLatinRuns } from "@/lib/portal/photoFeature/gateUnits";
 
 /**
  * 記事の入口の暖簾（本物の布 = WebGL。入口 /gourmet・店ページと同じ布 components/portal/noren-real/clothInner.ts を使う）。
@@ -73,7 +74,7 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
       const cssW = window.innerWidth;
       const cssH = window.innerHeight;
       const mobile = cssW < 640;
-      const p = units && units.length ? distribute(units, mobile) : panelPlan(name, mobile);
+      const p = units && units.length ? distribute(mobile ? joinLatinRuns(units) : units, mobile) : panelPlan(name, mobile);
       const n = p.length;
       const gap = mobile ? 5 : 7;
       const rodY = mobile ? 60 : 78;
@@ -272,23 +273,6 @@ export default function Gate({ name, units }: { name: string; units?: string[] |
       </div>
     </div>
   );
-}
-
-/** 染め抜く字（表で選んだ字の並び）を、布の枚数に割る。panelPlan（lib/portal/noren/shop.ts）と同じ割り方: 5 字以下は 1 枚に 1 字、それより多ければ 1 枚に 2 字（スマホは 3 枚まで・7 字以上は 4 枚）。欧文の語は 1 つの語（横組み） */
-function distribute(units: string[], mobile: boolean): string[][] {
-  const solo = mobile ? 3 : 5;
-  const T = units.length;
-  const n = T <= solo ? T : Math.ceil(T / 2);
-  const per: number[] = Array(n).fill(Math.floor(T / n));
-  const rest = T - per.reduce((a, b) => a + b, 0); // 余りは先頭の枚から 1 字ずつ足す（余りは最初に 1 度だけ数える）
-  for (let i = 0; i < rest; i++) per[i] += 1;
-  const out: string[][] = [];
-  let k = 0;
-  for (const c of per) {
-    out.push(units.slice(k, k + c));
-    k += c;
-  }
-  return out;
 }
 
 /** 布を作る（WebGL が使えなければ null）。clothInner は重いので、使える端末（.pf-gate-on が付いたとき）でだけ読み込む */

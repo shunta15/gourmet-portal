@@ -193,7 +193,14 @@ async function main() {
     }
   }
 
-  const out = { name, lat, lng, prefecture, city, address, finalUrl };
+  // Maps 由来の店名は NFD（e + 結合文字）で届くことがある。記事IDの元になるので必ず NFC にする
+  // （2026-10-13: French Restaurant rêve。NFD のIDで台帳・URL・反映確認を作って空回りした）
+  const out = {
+    name: name && name.normalize("NFC"),
+    lat, lng, prefecture, city,
+    address: address && address.normalize("NFC"),
+    finalUrl,
+  };
   console.log(JSON.stringify(out, null, 2));
 }
 

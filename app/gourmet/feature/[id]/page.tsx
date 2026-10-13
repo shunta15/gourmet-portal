@@ -118,10 +118,14 @@ export default async function Page({
   // 1 店 1 ページの対象（isFeaturedPhotoId = onePage.ts の表。ID の完全一致）は、写真が主役の形（components/portal/photoFeature/）で出す。ただし /feature/<ID> は /restaurant/<店の ID> へ転送されるので、ここへ来るのは転送を通らない呼び方だけ（実際は上の permanentRedirect で止まる）。切り替えは NOREN_FEATURE_PHOTO（false で FeatureSinglePage に戻る）。
   // 対象以外の店 1 軒の記事・複数の店の記事は、この分岐に入らない（出力は今までどおり）。
   const photo = NOREN_FEATURE_PHOTO && single && isFeaturedPhotoId(article.id);
-  const photoData = photo ? buildPhotoFeature(article, shop) : null;
-  const photoRelated = photo ? await getRelatedFeatured(article.id, shop ? { region: shop.region, cuisine: shop.cuisine } : null) : [];
+  // 店の対が無い単独店の記事（店のデータが無い。ARTICLE_STORE_ID_BY_FEATURE に店が無い記事。ID の完全一致）: /feature/<記事 ID> のまま、同じ写真が主役の形で出す（切り替えは NOREN_FEATURE_PHOTO = RELEASE_FEATURE）。
+  // 屋号が無いので、入口の暖簾は出さない（題から屋号は作らない）。店舗情報は記事にある項目（住所・営業時間・定休日・席・最寄り・予算・電話。無い行は出さない）だけ。
+  // 店が非表示の記事（storeId があるもの）は、ここに入らず今までの枠のまま。
+  const noShopPhoto = NOREN_FEATURE_PHOTO && isSingleShopFeature(article) && !storeId && !onePageShop; // single（NOREN_FEATURE_SINGLE = RELEASE_REST）には依らない
+  const photoData = photo || noShopPhoto ? buildPhotoFeature(article, shop) : null;
+  const photoRelated = photo || noShopPhoto ? await getRelatedFeatured(article.id, shop ? { region: shop.region, cuisine: shop.cuisine } : null) : [];
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
-  const fmap = single ? null : await buildFmap(article);
+  const fmap = single || noShopPhoto ? null : await buildFmap(article);
   return (
     <>
       <script
@@ -137,9 +141,10 @@ export default async function Page({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
       {photoData ? (
-        <PhotoFeatureShell>
+        <PhotoFeatureShell gate={!noShopPhoto}>
           <PhotoFeaturePage
             data={photoData}
+            noShop={noShopPhoto}
             shopHref={pair && shop ? `${LIVE_LINKS.shopBase}/${shop.id}` : null}
             listHref="/feature"
             topHref={LIVE_LINKS.top}

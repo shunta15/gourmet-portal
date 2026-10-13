@@ -70,7 +70,7 @@ const COATS = ["c0", "c1", "c2", "c3"]; // 赤(開いた時) → ピンク → �
 
 function Paint() {
   return (
-    <section className="cp-hero" id="cp-hero" data-hero="1" data-sp="o">
+    <section className="cp-hero" id="cp-hero" data-hero="1" data-sp="o" data-sp-pause>
       <div className="hp-coats" aria-hidden="true">
         {COATS.map((c, ci) => (
           <div className={`hp-coat ${c}`} key={c}>

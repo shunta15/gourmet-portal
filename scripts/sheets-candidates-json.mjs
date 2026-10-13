@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // 未処理候補を JSON で出力（bash パイプライン用）
-// 出力: {"feature":[{sourceRow,name,url}...], "restaurant":[...]}
+// 出力: {"feature":[{sourceRow,id,name,addr,url,w,x}...], "restaurant":[...]}
+//   w/x = 本体の W列(特集記事_済) / X列(特集記事_URL) の現在値（読むだけ。パイプラインが
+//   「既に済で URL も同じ記事」を見分けて台帳だけ補修するのに使う）
 
 import { google } from 'googleapis';
 import { readFileSync } from 'fs';
@@ -21,7 +23,8 @@ const RETRY_AFTER_HOURS = 24;
 
 function normalize(v) {
   if (v == null) return '';
-  return String(v).replace(/^'+/, '').replace(/[　\s]+/g, ' ').trim();
+  // NFC に揃える（スプシの店名が NFD で入る行があり、記事ID由来の台帳キー(NFC)と一致しなかった）
+  return String(v).normalize('NFC').replace(/^'+/, '').replace(/[　\s]+/g, ' ').trim();
 }
 
 function classifyStatus(cellRaw) {
@@ -95,7 +98,7 @@ for (let i = 0; i < rows.length; i++) {
     // 未生成なら、W列の「済」(=行ズレで残った別店の済)は無視して候補にする。
     // ただし直近エラー冷却 / 処理中ロック / 永久エラーは尊重（取りこぼし救済より誤連打防止）。
     if (s === 'permanent_error' || s === 'processing' || s === 'error_cooldown') continue;
-    feature.push({ sourceRow, id, name, addr, url });      // empty / 行ズレ済 / リトライ可
+    feature.push({ sourceRow, id, name, addr, url, w: normalize(r[IDX.W]), x: normalize(r[IDX.X]) });      // empty / 行ズレ済 / リトライ可
   }
   if (status === RESTAURANT_TRIGGER) {
     const s = classifyStatus(r[IDX.Y]);
