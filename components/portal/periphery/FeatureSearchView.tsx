@@ -21,9 +21,12 @@ export default function FeatureSearchView({ features, topHref }: { features: Fea
         }
         compact
       />
-      <Suspense fallback={null}>
-        <FeatureSearchClient features={features} />
-      </Suspense>
+      {/* 結果の領域に最小の高さを予約する: 結果はクライアントが遅れて描くので、予約が無いとフッターが画面に入っていて、描かれたあとに押し下げられる（PC で CLS 0.45） */}
+      <div style={{ minHeight: "calc(100svh - 120px)" }}>
+        <Suspense fallback={null}>
+          <FeatureSearchClient features={features} />
+        </Suspense>
+      </div>
     </PeripheryFrame>
   );
 }

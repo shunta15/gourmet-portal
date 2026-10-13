@@ -18,6 +18,7 @@ import { heroImagesOf } from "@/lib/portal/noren/shop";
 import { isUsableFeatureImage } from "@/lib/portal/noren/usableImage";
 import { sized } from "@/lib/imageUrl";
 import { getSceneRoundups } from "@/lib/portal/noren/sceneRoundups";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 
 // 店をさがす（/search）の暖簾版の実体（内部のパス）。公開スイッチ ON のとき、/search が next.config.ts の rewrites でここに来る
 // （ブラウザの URL・canonical は /search のまま。この内部のパス /gourmet/search は外に出さない）。枠は app/gourmet/layout.tsx。
@@ -63,7 +64,9 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     const t = parseTown(r.address || "", r.region);
     if (t) townOf[r.id] = t.town;
   }
-  const search = (
+  // 結果の一覧は、URL の引数を読むクライアント（Suspense の中）が描く。描かれる前（サーバーが出す HTML）はフッターが画面に入っていて、描かれた約 0.4 秒後に押し下げられ、
+  // PC で CLS 0.30 になっていた。RELEASE_PERIPHERY のあいだは、結果の領域に最小の高さを予約して、フッターが最初から画面の外に居るようにする（結果が短いときも位置は変わらない）。
+  const search0 = (
     <Suspense fallback={null}>
         <NorenSearch
           restaurants={items}
@@ -77,6 +80,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
         />
       </Suspense>
   );
+  const search = RELEASE_PERIPHERY ? <div style={{ minHeight: "calc(100svh - 120px)" }}>{search0}</div> : search0;
   if (block) {
     // 参考画像 2 枚目の形: 上に店の写真の帯と見出し → タブ → 地図と一覧 → 検索結果。ヘッダーはこのページだけ白（blocksearch.css の :has(.vBk-page)）
     return (
