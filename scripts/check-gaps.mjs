@@ -14,16 +14,18 @@ const sa = JSON.parse(readFileSync(KEY, 'utf8'));
 const auth = new google.auth.GoogleAuth({ credentials: sa, scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'] });
 const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
 
-const arts = new Set(Object.keys((await import('../lib/teleapo-features.ts')).TELEAPO_FEATURE_ARTICLES));
+// 記事ID・台帳の articleId は NFC に揃えて比べる（NFD の台帳 articleId が実在記事と別物扱いになる事故の対策）
+const nfc = (x) => (x == null ? x : String(x).normalize('NFC'));
+const arts = new Set(Object.keys((await import('../lib/teleapo-features.ts')).TELEAPO_FEATURE_ARTICLES).map(nfc));
 const led = JSON.parse(readFileSync(new URL('../automation/generated-ledger.json', import.meta.url), 'utf8'));
-const byCid = new Map(Object.entries(led.cids || {}).map(([c, e]) => [c, e.articleId]));
+const byCid = new Map(Object.entries(led.cids || {}).map(([c, e]) => [c, nfc(e.articleId)]));
 // スラッシュも除去する。店名「【CAFE】i/HUB」に対し記事IDは「【CAFE】i-HUB」となるが、
 // 従来は '-' だけ落として '/' を残していたため両者が一致せず、完成済みの記事を
 // 「記事なし」と誤検知していた（2026-09-08）。重複生成に直結するので必ず揃えること。
 const norm = x => (x || '').toString().replace(/[&’'　\s・。、,.\-·／\/『』「」（）()～~！]/g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 const byName = new Map([...arts].map(id => [norm(id), id]));
 for (const [k, e] of Object.entries(led.names || {})) {
-  const id = e && (e.articleId || e.id);
+  const id = e && nfc(e.articleId || e.id);
   if (id && arts.has(id) && !byName.has(norm(k))) byName.set(norm(k), id);
 }
 

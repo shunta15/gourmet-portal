@@ -46,7 +46,10 @@ const args = Object.fromEntries(
   })
 );
 
-const { type, row, url, reason } = args;
+const { type, row, reason } = args;
+// 記事URLは NFC に揃えて受ける。NFD のまま渡されると、シートの X 列・記事台帳・HYPERLINK の
+// エンコード先(%65%CC%82…)が NFC の本番記事URL(%C3%AA)と別物になり 404 になる（2026-10 NFC/NFD 事故）。
+const url = args.url == null ? args.url : String(args.url).normalize('NFC');
 // --force は値なしでも真として扱う（従来 --force だけだと空文字=falsy で効かなかった）
 const force = 'force' in args && args.force !== 'false' && args.force !== '0';
 let { status = url ? 'done' : null } = args;
@@ -178,7 +181,7 @@ try {
       });
       const gid = (idRes.data.values?.[0]?.[0] || '').toString().trim();
       const shopName = (idRes.data.values?.[0]?.[3] || '').toString().trim();
-      const articleId = decodeURIComponent((url.match(/\/feature\/(.+)$/) || [])[1] || '');
+      const articleId = decodeURIComponent((url.match(/\/feature\/(.+)$/) || [])[1] || '').normalize('NFC');
       if (!gid || !articleId) {
         console.log(`⚠️  記事台帳: 顧客管理ID または 記事ID が取れず未追記 (row ${row})`);
       } else {

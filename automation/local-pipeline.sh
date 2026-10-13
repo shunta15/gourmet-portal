@@ -30,6 +30,32 @@ cd "$REPO"
 log() { echo "[$(date '+%H:%M:%S')] $*" | tee -a "$LOG_FILE"; }
 notify() { /usr/bin/osascript -e "display notification \"$2\" with title \"$1\""; }
 
+# Unicode 正規化(NFC)。記事ID・店名・URL を「作る所」と「比べる所」で必ず通す。
+# Google マップ由来の店名は「e + 結合文字(U+0302)」のような NFD で届くことがあり、そのまま
+# 記事ID(SAFE_NAME)にすると、claude が書く NFC の記事ID・台帳・反映確認のURLと別物になる。
+# 実害(2026-10-09〜13): French Restaurant rêve が毎回「偽エントリ」判定で候補に戻り、
+# claude を約7分動かし何も変えずに vercel --prod → 反映確認が NFD の URL で404 → 「反映失敗」。
+# stdin 経由にしているのは、先頭が - の店名を node がオプションと誤認しないため。
+to_nfc() {
+  local out
+  out=$(printf '%s' "$1" | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>process.stdout.write(d.normalize("NFC")))' 2>/dev/null) || out=""
+  if [ -n "$out" ]; then printf '%s' "$out"; else printf '%s' "$1"; fi
+}
+
+# 生成した記事の文を、型 R/A/B/C/D/E（spec.md §14-0）で機械的に調べる。読むだけ（何も書き換えない・commit しない）。
+# 直す役は claude（プロンプトの手順 4b。--fix で落としてよい文を取る）。ここは「直したはず」を成果物で確かめる後検査で、
+# 当たりが残っていればログと通知に出す。公開済みの記事は触らない（人の手直し待ち）。
+SENTENCE_LEFT=""
+check_sentences() {
+  local id="$1"
+  if node scripts/check-article-sentences.mjs "$id" >> "$LOG_FILE" 2>&1; then
+    log "  ✅ 文の検査: 型R/A/B/C/D/Eに当たる文なし ($id)"
+  else
+    SENTENCE_LEFT="$SENTENCE_LEFT $id"
+    log "  ⚠️ 文の検査: 型R/A/B/C/D/Eの文が残っている ($id) — 上のログ参照。要手直し"
+  fi
+}
+
 log "============================================================"
 log "マチノワ自動化 v2 開始 (label=$HOUR_LABEL)"
 log "============================================================"
@@ -150,10 +176,34 @@ else
   PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
 fi
 
+# === 店ページ化の段（既定は無効・オーナー承認後に MACHINOWA_STORE_PAGE=1 で有効にする） ===
+# 新しい記事ができたら、その店のデータ（lib/articleStores.ts ほか）も作り、記事 /feature/<記事ID> と対の店ページ
+# /restaurant/<店ID> にする。店の追加になるので、既定では入れない（automation/申し送り.md「店ページ化の段」）。
+# 有効にする前の準備: ① build-stores.mjs の再生成で既存の店の画像欄が変わる（2026-10-13 実測 6 店）ので、一度再生成して
+# commit しておく ② 1 店 1 ページの表（lib/portal/noren/onePage.ts）に行を足す仕組みを lib/portal の持ち主と決める。
+# 有効でも、失敗（GBP が取れない・除外・生成器のずれ）したら店ページ化せず記事だけで続行する。
+STORE_PAGE_STEP=""
+if [ "${MACHINOWA_STORE_PAGE:-0}" = "1" ]; then
+  log "🏪 店ページ化の段: 有効 (MACHINOWA_STORE_PAGE=1)"
+  STORE_PAGE_STEP=$(cat <<'STEP_EOF'
+7b. 店ページ化（失敗しても記事は成立している。失敗したら commit せず 8 へ進む）:
+     node automation/stores500/add-article-store.mjs --id=__SAFE_NAME__ --sheetName=__SHEET_NAME_QUOTED__ --mapsUrl='__MAPS_URL__'
+   - 終了コード0（店ページを作れた）: npm run build を実行。通ったら次の対象ファイルだけを add して commit/push（git add -A は禁止）:
+       git add lib/articleStores.ts lib/articleRegions.ts lib/geo.ts automation/stores500/ids.json automation/stores500/map.json automation/stores500/gbp/__SAFE_NAME__.json automation/stores500/excluded.json automation/stores500/tag-evidence.json automation/stores500/warnings.json automation/stores500/region-mismatch.json
+       git commit -m feat(stores)店ページを自動生成
+       git pull --rebase origin main
+       git push origin main
+     build が通らなかったら commit せず、git checkout -- lib/articleStores.ts lib/articleRegions.ts lib/geo.ts automation/stores500/ids.json automation/stores500/map.json automation/stores500/excluded.json automation/stores500/tag-evidence.json automation/stores500/warnings.json automation/stores500/region-mismatch.json で戻す（gbp のファイルは残してよい）。
+   - 終了コード4（除外された。閉業・住所の食い違い等）: 店ページは作らない。上と同じ対象ファイルのうち変わった物だけを commit/push（記録を残して次回また取りに行かないため）。
+   - 終了コード2・3・5（記事が無い・GBP が取れない・生成器のずれ）: 何も commit しない。変わっている物は git checkout -- で元に戻す。記事だけで続行する。
+STEP_EOF
+)
+fi
+
 while IFS= read -r CANDIDATE; do
   [ -z "$CANDIDATE" ] && continue
   ROW=$(echo "$CANDIDATE" | jq -r '.sourceRow')
-  NAME=$(echo "$CANDIDATE" | jq -r '.name')
+  NAME=$(to_nfc "$(echo "$CANDIDATE" | jq -r '.name')")
   MAPS_URL=$(echo "$CANDIDATE" | jq -r '.url')
 
   log ""
@@ -197,7 +247,7 @@ while IFS= read -r CANDIDATE; do
     ERROR_LIST="$ERROR_LIST\n  - $NAME: Maps URL解決失敗"
     continue
   }
-  RESOLVED_NAME=$(echo "$RESOLVED_JSON" | jq -r '.name')
+  RESOLVED_NAME=$(to_nfc "$(echo "$RESOLVED_JSON" | jq -r '.name')")
   RESOLVED_LAT=$(echo "$RESOLVED_JSON" | jq -r '.lat')
   RESOLVED_LNG=$(echo "$RESOLVED_JSON" | jq -r '.lng')
   RESOLVED_PREF=$(echo "$RESOLVED_JSON" | jq -r '.prefecture // "不明"')
@@ -219,6 +269,8 @@ while IFS= read -r CANDIDATE; do
   for CH in '/' '。' '(' ')' '（' '）' '?' '？' '&' '#' '%' '|' ':' '*' '<' '>'; do
     SAFE_NAME="${SAFE_NAME//"$CH"/}"
   done
+  # 記事ID は NFC に統一（claude が書く id・台帳・URL・反映確認を同じ文字列にする）
+  SAFE_NAME=$(to_nfc "$SAFE_NAME")
   if [ -z "$SAFE_NAME" ]; then
     log "  ❌ 店舗名から安全なID を作れない（元: $RESOLVED_NAME）。スキップ"
     node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="記事IDを生成できない" >> "$LOG_FILE" 2>&1
@@ -228,6 +280,29 @@ while IFS= read -r CANDIDATE; do
   log "  ✅ 解決: $RESOLVED_NAME / $RESOLVED_PREF $RESOLVED_CITY"
   log "     座標: $RESOLVED_LAT, $RESOLVED_LNG"
   log "     ID用: $SAFE_NAME"
+
+  # === 既に同じ記事IDの記事が実在するなら claude を起動しない（重複生成・空回り防止） ===
+  # 候補に上がったのに記事がある＝台帳の食い違い、または別の店と記事IDが衝突している。
+  # claude を約7分動かしても新しい記事は作れず（重複キーでビルドが落ちるか、claude が
+  # 「既に完了」と言って何も変えずに終わる）、成功扱いになると vercel --prod まで空振りする。
+  # 判定は NFC 正規化したうえでの完全一致（scripts/article-exists.mjs）。
+  if node scripts/article-exists.mjs "$SAFE_NAME"; then
+    log "  ⚠️ 記事ID「$SAFE_NAME」は既に lib/teleapo-features.ts に実在する → claude を起動しない"
+    # この行がすでに「済」で、X列の URL がこの記事そのもの（NFC 完全一致）なら、同じ店の記事が
+    # 台帳から抜けているだけ。台帳に登録し直して次へ進む（claude もデプロイも不要）。
+    CAND_W=$(echo "$CANDIDATE" | jq -r '.w // ""')
+    CAND_X=$(to_nfc "$(echo "$CANDIDATE" | jq -r '.x // ""')")
+    if [ "$CAND_W" = "済" ] && [ "$CAND_X" = "https://machinowa.tokyo/feature/$SAFE_NAME" ]; then
+      log "     この行は既に 済 + X列が同じ記事のURL → 台帳だけ登録し直す（生成もデプロイもしない）"
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗"
+      continue
+    fi
+    log "     （台帳の食い違い、または別の店と記事IDが衝突。人の確認が必要。row $ROW）"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="記事ID既存(台帳食い違い or ID衝突)" >> "$LOG_FILE" 2>&1 || log "  ⚠️ エラー書き込みに失敗"
+    ERROR=$((ERROR+1))
+    ERROR_LIST="$ERROR_LIST\n  - $NAME: 記事ID既存のため claude を起動せず(要確認)"
+    continue
+  fi
 
   # === GBP 写真の取得（画像ソースの最優先） ===
   # runbook.md は「GBP の写真を最優先」と定めているのに、
@@ -314,7 +389,8 @@ __GBP_PHOTO_BLOCK__
    hero.jpg すら1枚も確保できなかった場合のみ:
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=画像取得失敗
-4. 記事生成: spec.md §1〜13 厳守で本文 3000字以上、文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
+4. 記事生成: spec.md §1〜13 と §14-0（文章の6つの型）を厳守。文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
+   本文の目安は3000字前後。ただし事実が足りないときは水増しせず短くしてよい（短いのは失敗ではない。型A〜Eの文で埋めるのが失敗）
    lib/teleapo-features.ts の末尾 }; 直前に TypeScript object として Edit ツールで追記
    ★脱テンプレ必須（spec.md §14「脱テンプレ規約」厳守）:
      - closing を「編集部が考える」で始めるのは絶対禁止。店の固有要素・時間軸・客層・立地・問いのいずれかから書き出す
@@ -322,6 +398,12 @@ __GBP_PHOTO_BLOCK__
      - lede 末尾に「今回は、〜5つのポイントに分けて紹介していく」を書かない
      - 「訪問前に公式情報での確認を」の固定形は1記事1回まで。POINT 内では言い換える
      - 既存記事と書き出し・締めが被らないよう、店ごとにゼロから組む
+4b. 文の検査（機械・ビルドの前に必ず実行）: node scripts/check-article-sentences.mjs __SAFE_NAME__
+   - 「✅ …当たる文なし」(終了コード0)なら次へ。
+   - 当たったとき(終了コード1)は、表示された文を、言い換えず・書き足さず「その文を取る」か、確かな事実だけの短い文に置き換える。事実が足りなければ取るだけにして短くする。直したら同じコマンドをもう一度実行し、当たりが無くなるまで繰り返す（最大3回）。
+   - 3回やっても残るときだけ: node scripts/check-article-sentences.mjs __SAFE_NAME__ --fix を実行（落としてよい文だけ機械で取る）。それでも「要書き直し」が残る文は、手で取るか、事実の短い文に置き換える。
+   - 「語だけでは事実と区別がつかない」と出た文（店が公式に出しているメニュー名・コース名、実用の注意の中の語）は、評価として書いていなければそのままでよい。
+   - 型は R=他サイトの評価・口コミ / A=分からなかったことを書く文 / B=調べ方の舞台裏 / C=決まり文句・締めの定型・記事の案内文 / D=行ったふり / E=裏付けの無い評価・人気（詳細と実例は spec.md §14-0）。
 5. ビルド: npm run build を Bash で実行。失敗したら:
      git checkout -- lib/teleapo-features.ts
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
@@ -341,6 +423,7 @@ __GBP_PHOTO_BLOCK__
      git reset --hard HEAD~1
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=git push失敗
+__STORE_PAGE_STEP__
 8. スプシ書き戻し:
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --url=https://machinowa.tokyo/feature/__SAFE_NAME__
 
@@ -349,6 +432,12 @@ __GBP_PHOTO_BLOCK__
 - 画像は実店舗のもののみ（Unsplash 等の汎用画像 NG）
 - 文中で半角ダブルクォートを使わない（日本語の「」を使う）
 - ほかのサイト・サービス（食べログ・Google・Retty・ホットペッパーなど）の点数・星・評価の高さ・口コミやレビューの件数を、文章（紹介文・本文・見どころ・特集記事）に書かない。（2026-10-11 オーナー指示）
+- 🚨 次の5つの型の文は書かない（2026-10-13・サイトは画面に出す直前にこれらの文を文ごと取り除いている。実例は spec.md §14-0）。事実が足りないときは、文を作って埋めずに、その分だけ短くする:
+  A 分からなかった・確認できなかったことを書く文（例: 「一次情報は見当たらない」「公開情報からは確認できない」「詳細情報は非公開」）。分かったことだけ書き、分からないことには触れない
+  B 調べ方の舞台裏（例: 「ここでは確認できた事実だけを書く」「先に正直なところを書いておく」「公開している写真から読み取れるのは」）
+  C どの店にも言える決まり文句・締めの定型・記事の案内文（例: 「〜と聞いたら、まず思い出したい店だ」「覚えておきたい一軒だ」「これ、地味に効く。」「まさに編集部イチオシのお店です」「〜を5つの視点から紹介していく」「〜を見ていきたい」）。その店だけの事実で終える。事実で締められないなら書かずに終える
+  D 行ったふり（例: 「ひとくち食べると〜がわかる気がする」「〜と感じた」「実際に足を運んでみないと伝わりにくい」）。来店したかのような体験・感想は書かない
+  E 裏付けの無い評価・人気（例: 「地元の食好きに支持されている」「評判の店」「人気のメニュー」「地域に親しまれている」「おすすめ」「知る人ぞ知る」）。出典つきの賞・選出や、店が公式に出す数字・名称があるときだけ書く
 - author 固定 マチノワ編集部
 - **id は __SAFE_NAME__ のみ（スペース絶対禁止・URL がスペースで切れて 500 になるため）**
 - フォルダ名・画像パス・スプシ書き戻し URL もすべて __SAFE_NAME__ を使う
@@ -360,6 +449,12 @@ PROMPT_EOF
 )
 
   # プレースホルダ → 実値 置換
+  # （店ページ化の段は、中に別のプレースホルダを含むので最初に差し込む。無効のときは空文字になる）
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__STORE_PAGE_STEP__/$STORE_PAGE_STEP}"
+  # 店名はシェルの引数として安全な形（シングルクォートで囲み、中の ' は '\'' に）にする
+  SQ="'"
+  SHEET_NAME_QUOTED="'${NAME//$SQ/$SQ\\$SQ$SQ}'"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__SHEET_NAME_QUOTED__/$SHEET_NAME_QUOTED}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__ROW__/$ROW}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__NAME__/$NAME}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__MAPS_URL__/$MAPS_URL}"
@@ -383,7 +478,13 @@ PROMPT_EOF
   FINAL_LINE=$(grep -oE '(✅ )?COMPLETED row [^\\]+' "$CLAUDE_LOG" | tail -1)
   if [ -n "$FINAL_LINE" ]; then
     log "  $FINAL_LINE"
-    if echo "$FINAL_LINE" | grep -q "https://"; then
+    if echo "$FINAL_LINE" | grep -q "https://" && ! node scripts/article-exists.mjs "$SAFE_NAME"; then
+      # claude が「完了」と言っても、記事が実在しなければ成功ではない（成否はログでなく成果物で判定）。
+      log "  ❌ claude は完了と報告したが、記事ID「$SAFE_NAME」が lib/teleapo-features.ts に無い → 失敗扱い"
+      ERROR=$((ERROR+1))
+      ERROR_LIST="$ERROR_LIST\n  - $NAME: 完了報告だが記事が実在しない"
+      node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="生成未完了(記事が実在しない)" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
+    elif echo "$FINAL_LINE" | grep -q "https://"; then
       SUCCESS=$((SUCCESS+1))
       # claude の出力文からURLを正規表現で拾うと、末尾のマークダウン(**)や
       # 句読点まで取り込んで壊れたURLになる事故が発生した(2026-08-26 かじゅある割烹頼みち)。
@@ -393,6 +494,7 @@ PROMPT_EOF
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
       node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      check_sentences "$SAFE_NAME"
     else
       ERROR=$((ERROR+1))
       ERROR_LIST="$ERROR_LIST\n  - $NAME: $FINAL_LINE"
@@ -407,13 +509,14 @@ PROMPT_EOF
     # 2026-09-14 22:00 の回で、生成に成功した row 401（カフェレガーロ）が
     # マーカーを出さずに終了 → 下の環境起因判定が claude 出力中の「row 401」の
     # "401" を HTTP 401 と読み違え → ループごと中断し、残り10件が未処理で残った。
-    if grep -q "^  \"$SAFE_NAME\": {" lib/teleapo-features.ts 2>/dev/null; then
+    if node scripts/article-exists.mjs "$SAFE_NAME"; then
       log "  ✅ 完了マーカーは無いが記事の実在を確認 — 成功として扱う"
       SUCCESS=$((SUCCESS+1))
       URL="https://machinowa.tokyo/feature/$SAFE_NAME"
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="$URL" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      check_sentences "$SAFE_NAME"
     # 認証切れ(HTTP 401)などで claude が即死した場合、ここを通る。
     # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
     # 認証切れ・ネットワーク断は「この店舗の問題」ではない。
@@ -442,6 +545,10 @@ log "============================================================"
 log "完了サマリ: 成功 $SUCCESS / エラー $ERROR"
 [ -n "$SUCCESS_URLS" ] && log "成功URL:$SUCCESS_URLS"
 [ -n "$ERROR_LIST" ] && log "エラー:$ERROR_LIST"
+if [ -n "$SENTENCE_LEFT" ]; then
+  log "⚠️ 文の検査で型R/A/B/C/D/Eの文が残った記事:$SENTENCE_LEFT"
+  notify "⚠️ マチノワ 文の検査" "型A〜Eの文が残った記事があります:$SENTENCE_LEFT"
+fi
 log "============================================================"
 
 # === Vercel 本番デプロイ（成功が1件以上あれば実行） ===
@@ -467,11 +574,25 @@ if [ $SUCCESS -gt 0 ]; then
     VERIFY_OK=1
     for URL in $SUCCESS_URL_LIST; do
       [ -z "$URL" ] && continue
+      # URL は NFC で確かめる（NFD の URL は本番で404になる。curl で実測済み）。
+      URL=$(to_nfc "$URL")
       log "  反映確認: $URL"
       for WAIT in 0 15 30 45 60 75 90; do
         [ "$WAIT" -gt 0 ] && sleep 15
-        CODE=$(curl -s -o /dev/null -w "%{http_code}" -m 15 -A "Mozilla/5.0" "$URL")
-        [ "$CODE" = "200" ] && { log "    ✅ HTTP 200 ($CODE) — 反映OK"; break; }
+        # -L: 1店1ページ化により /feature/<記事ID> は /restaurant/<店ID> へ 308 で転送されることがある
+        # （転送の表は lib/portal/noren/onePage.ts。新しい記事はまだ表に無く、200 で直接届く）。
+        # 転送をたどった先が 200 なら成功。最終URLもログに残す。
+        CHECK=$(curl -s -L --max-redirs 5 -o /dev/null -w "%{http_code} %{url_effective}" -m 15 -A "Mozilla/5.0" "$URL")
+        CODE=${CHECK%% *}
+        FINAL_URL=${CHECK#* }
+        if [ "$CODE" = "200" ]; then
+          if [ "$FINAL_URL" != "$URL" ]; then
+            log "    ✅ HTTP 200 — 反映OK（転送先: $FINAL_URL）"
+          else
+            log "    ✅ HTTP 200 ($CODE) — 反映OK"
+          fi
+          break
+        fi
         log "    待機中: HTTP $CODE (経過 ${WAIT}s)"
       done
       if [ "$CODE" != "200" ]; then

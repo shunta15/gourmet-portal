@@ -17,13 +17,15 @@ const s = google.sheets({ version: 'v4', auth: await auth.getClient() });
 const R = async (r) => (await s.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: r })).data.values || [];
 
 // --- 正データを作る: 本体の 顧客管理ID → 記事ID (cid照合優先) ---
-const arts = new Set(Object.keys((await import('../lib/teleapo-features.ts')).TELEAPO_FEATURE_ARTICLES));
+// 記事ID・台帳の articleId は NFC に揃えて比べる（NFD の台帳 articleId が実在記事と別物扱いになる事故の対策）
+const nfc = (x) => (x == null ? x : String(x).normalize('NFC'));
+const arts = new Set(Object.keys((await import('../lib/teleapo-features.ts')).TELEAPO_FEATURE_ARTICLES).map(nfc));
 const ledgerJson = JSON.parse(readFileSync(new URL('./generated-ledger.json', import.meta.url), 'utf8'));
-const byCid = new Map(Object.entries(ledgerJson.cids || {}).map(([c, e]) => [c, e.articleId]));
+const byCid = new Map(Object.entries(ledgerJson.cids || {}).map(([c, e]) => [c, nfc(e.articleId)]));
 const norm = x => (x || '').toString().replace(/[&’'　\s・。、,.\-·『』「」（）()～~！]/g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 const byName = new Map([...arts].map(id => [norm(id), id]));
 for (const [k, e] of Object.entries(ledgerJson.names || {})) {
-  const id = e && (e.articleId || e.id); const nk = norm(k);
+  const id = e && nfc(e.articleId || e.id); const nk = norm(k);
   if (id && arts.has(id) && !byName.has(nk)) byName.set(nk, id);
 }
 
