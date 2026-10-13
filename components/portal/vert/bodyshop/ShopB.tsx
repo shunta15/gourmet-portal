@@ -129,7 +129,13 @@ export default function ShopB({ shop, v }: { shop: BsShop; v: number }) {
       <main>
         <div className="bb-track" data-bb-track>
           <div className="bb-stage" data-bb-stage>
+            <div className="bb-sway">
             <div className="bb-cyl" data-bb-cyl>
+              <div className="bb-body" aria-hidden="true">
+                {Array.from({ length: 24 }, (_, k) => (
+                  <i key={k} className="bb-seg" style={{ ["--k" as string]: k }} />
+                ))}
+              </div>
               {Array.from({ length: N }, (_, j) =>
                 j < L ? (
                   <section key={j} id={items[j].id} className="bb-face" data-j={j} style={{ ["--j" as string]: j }}>
@@ -138,12 +144,9 @@ export default function ShopB({ shop, v }: { shop: BsShop; v: number }) {
                     </div>
                     <i className="bb-shade" aria-hidden="true" />
                   </section>
-                ) : (
-                  <div key={j} className="bb-face bb-blank" aria-hidden="true" style={{ ["--j" as string]: j }}>
-                    <i className="bb-shade" />
-                  </div>
-                )
+                ) : null
               )}
+            </div>
             </div>
           </div>
         </div>

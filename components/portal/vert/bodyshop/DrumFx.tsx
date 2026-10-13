@@ -28,6 +28,7 @@ export default function DrumFx() {
       return;
     }
     const faces = Array.from(cyl.querySelectorAll<HTMLElement>(".bb-face"));
+    const segs = Array.from(cyl.querySelectorAll<HTMLElement>(".bb-seg"));
     const N = faces.length;
     const L = Number(root.dataset.l) || N;
     const step = 360 / N;
@@ -44,6 +45,8 @@ export default function DrumFx() {
     let total = 0;
     let theta = 0;
     let omega = 0;
+    let vf = 0; // 角度のばねの速さ
+    let snapT = 0;
     let free = false;
     let dragging = false;
     let spinning = false;
@@ -82,13 +85,17 @@ export default function DrumFx() {
       if (i < L - 1 && y > dEnd) th = (i + sm(clamp((y - dEnd) / T, 0, 1))) * step;
       return { i, th };
     };
-    const paint = (sway: number) => {
-      cyl.style.setProperty("--th", (theta + sway).toFixed(3));
+    const paint = () => {
+      cyl.style.setProperty("--th", theta.toFixed(3));
       if (Math.abs(theta - lastLit) > 0.05) {
         lastLit = theta;
         faces.forEach((f, j) => {
           const d = Math.abs((((j * step - theta) % 360) + 540) % 360 - 180);
           f.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(3));
+        });
+        segs.forEach((sg, k) => {
+          const d = Math.abs((((k * 15 - theta + 10) % 360) + 540) % 360 - 180);
+          sg.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(3));
         });
       }
     };
@@ -132,15 +139,18 @@ export default function DrumFx() {
           if (s < L) window.scrollTo({ top: ys[s], behavior: "instant" });
         }
       } else {
+        // スクロール位置から出した角度へ、ばねでついていく(勢い・遅れがあり、止まるとき小さく行き過ぎる)
         const d = loc.th - theta;
-        if (Math.abs(d) > 0.02) {
-          theta += d * (1 - Math.exp(-dt * 8));
-          lastActive = Math.max(lastActive, now - 300);
+        vf += (110 * d - 14 * vf) * dt;
+        theta += vf * dt;
+        if (Math.abs(d) < 0.02 && Math.abs(vf) < 0.4) {
+          theta = loc.th;
+          vf = 0;
+          paint();
+          return; // 静かなときは JS を動かさない(揺れは CSS)
         }
       }
-      const idle = clamp((now - lastActive - 900) / 1200, 0, 1);
-      const sway = idle * 0.7 * Math.sin(now / 1000 * 1.05);
-      paint(sway);
+      paint();
       raf = requestAnimationFrame(frame);
     };
     // 内容のある面(L 個)のうち、角度 th に一番近い面の角度(一周ぶん含む)
@@ -191,6 +201,17 @@ export default function DrumFx() {
     const onScroll = () => {
       lastActive = performance.now();
       kick();
+      // 止まったとき、節の間(筒が回っている途中)なら、近い節へ吸い付く
+      window.clearTimeout(snapT);
+      snapT = window.setTimeout(() => {
+        if (dragging || spinning || !free) return;
+        const y = window.scrollY;
+        const loc = locate(y);
+        const i = loc.i;
+        if (i >= L - 1) return;
+        const dEnd = ys[i] + Ds[i];
+        if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: y - dEnd < T / 2 ? dEnd : ys[i + 1], behavior: "smooth" });
+      }, 150);
     };
     const onResize = () => {
       measure();
@@ -287,6 +308,7 @@ export default function DrumFx() {
       stage.classList.remove("is-grab");
       if (performance.now() - lastTs > 130) vel = 0;
       omega = clamp(vel * 1.05, -1300, 1300);
+      vf = 0;
       spinning = true;
       kick();
     };
@@ -299,6 +321,7 @@ export default function DrumFx() {
 
     return () => {
       cancelAnimationFrame(raf);
+      window.clearTimeout(snapT);
       ro.disconnect();
       io.disconnect();
       window.removeEventListener("scroll", onScroll);

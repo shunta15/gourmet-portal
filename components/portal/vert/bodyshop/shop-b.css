@@ -7,7 +7,7 @@
 .bb-cyl{display:grid;gap:clamp(22px,3.4vw,40px);max-width:880px;margin:0 auto}
 .bb-face{position:relative;scroll-margin-top:68px;background:var(--paper);box-shadow:0 18px 30px -20px rgba(30,20,8,.8),0 0 0 1px rgba(28,27,25,.1)}
 .bb-face::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--mat)}
-.bb-blank,.bb-shade{display:none}
+.bb-blank,.bb-shade,.bb-body{display:none}
 .bb-paper{position:static}
 .bb-sc{padding:clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(28px,3.8vw,48px)}
 
@@ -47,17 +47,27 @@
   .bb-js:not(.bb-still) .bb-stage.is-grab{cursor:grabbing;-webkit-user-select:none;user-select:none}
   .bb-js:not(.bb-still) .bb-cyl{display:block;position:absolute;left:50%;top:calc(50% + 28px);width:var(--fw);height:var(--Hf);max-width:none;margin:calc(var(--Hf) / -2) 0 0 calc(var(--fw) / -2);transform-style:preserve-3d;transform:translateZ(calc(var(--R) * -1)) rotateX(calc(var(--th) * 1deg));will-change:transform}
   .bb-js:not(.bb-still):not(.bb-free) .bb-cyl{animation:bb-intro 2.6s cubic-bezier(.12,.7,.2,1) both}
-  @keyframes bb-intro{from{--th:560}to{--th:0}}
-  .bb-js:not(.bb-still) .bb-face{position:absolute;inset:0;transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;scroll-margin-top:0;
-    background:radial-gradient(rgba(0,0,0,.1) 1px,transparent 1.6px) 0 0/6px 6px,radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.6px) 3px 3px/8px 8px,linear-gradient(180deg,rgba(255,255,255,.16),rgba(0,0,0,.1)),var(--mat);
-    box-shadow:inset 0 5px 0 rgba(255,255,255,.26),inset 0 -6px 0 rgba(0,0,0,.3);overflow:hidden}
+  @keyframes bb-intro{from{--th:360}to{--th:0}}
+  /* 回っているあいだは節の文を出さない(無地の札が回る)。止まるころに店名の面の文が出る */
+  .bb-js:not(.bb-still):not(.bb-free) .bb-sc{animation:bb-sc-in .5s ease 2.05s both}
+  @keyframes bb-sc-in{from{opacity:0}to{opacity:1}}
+  /* 静かなとき: 筒がゆっくり揺れる(CSS だけ。JS は動かさない) */
+  .bb-js:not(.bb-still) .bb-sway{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:50% calc(50% + 28px) calc(var(--R) * -1);will-change:transform;animation:bb-sway 7.5s ease-in-out infinite alternate}
+  @keyframes bb-sway{from{transform:rotateX(-.75deg)}to{transform:rotateX(.75deg)}}
+  .bb-js:not(.bb-still) .bb-face{position:absolute;inset:0;transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;scroll-margin-top:0;background:none;box-shadow:none;overflow:visible}
   .bb-js:not(.bb-still) .bb-face::before{display:none}
-  .bb-js:not(.bb-still) .bb-blank{display:block}
-  .bb-js:not(.bb-still) .bb-paper{position:absolute;inset:16px var(--endw);overflow:hidden;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.12),0 8px 16px -8px rgba(0,0,0,.55),inset 0 0 26px rgba(120,90,50,.14)}
+  /* 丸い芯: 24 の細い面を並べて円筒にする。種類の色+発泡の肌。手前ほど明るく、上下へ向かって陰る(JS が --lit を滑らかに付ける) */
+  .bb-js:not(.bb-still) .bb-body{display:block;position:absolute;inset:0;transform-style:preserve-3d;--Rb:calc(var(--R) * .984)}
+  .bb-js:not(.bb-still) .bb-seg{position:absolute;left:0;right:0;top:50%;height:calc(var(--Rb) * .2634 + 3px);margin-top:calc((var(--Rb) * .2634 + 3px) / -2);transform:rotateX(calc(var(--k) * -15deg)) translateZ(var(--Rb));backface-visibility:hidden;-webkit-backface-visibility:hidden;
+    background:url(/_portal/bodyshop/foam.svg) 0 0/150px 150px,linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,0) 7%,rgba(0,0,0,0) 93%,rgba(0,0,0,.28)),radial-gradient(120% 80% at 20% 0%,rgba(255,250,236,.2),rgba(255,250,236,0) 60%),var(--mat);background-blend-mode:multiply,normal,normal,normal}
+  .bb-js:not(.bb-still) .bb-seg::after{content:"";position:absolute;inset:0;background:#120d06;opacity:calc((1 - var(--lit,1)) * .74)}
+  .bb-js:not(.bb-still) .bb-blank{display:none}
+  .bb-js:not(.bb-still) .bb-paper{position:absolute;inset:calc(var(--Hf) * .05) var(--endw);overflow:hidden;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.16),0 3px 0 rgba(0,0,0,.2),0 12px 20px -8px rgba(0,0,0,.6),inset 0 0 26px rgba(120,90,50,.14);border-radius:3px}
   .bb-js:not(.bb-still) .bb-sc{max-width:780px;min-height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center;transform:translateY(calc(var(--sy,0) * -1px));will-change:transform}
   .bb-js:not(.bb-still) .bb-sc .bs-body p{font-size:clamp(15.5px,1.45vw,18px);line-height:2.05}
   .bb-js:not(.bb-still) .bb-sc .bb-h{font-size:clamp(24px,3vw,42px)}
-  .bb-js:not(.bb-still) .bb-shade{display:block;position:absolute;inset:0;background:#120d06;opacity:calc((1 - var(--lit,1)) * .62);pointer-events:none}
+  .bb-js:not(.bb-still) .bb-shade{display:block;position:absolute;inset:calc(var(--Hf) * .05) var(--endw);background:#120d06;opacity:calc((1 - var(--lit,1)) * .6);pointer-events:none;border-radius:3px}
+  .bb-js:not(.bb-still) #bs-top .bb-sc{justify-content:flex-start}
   .bb-js:not(.bb-still) .bb-fig{transform:rotate(-1deg)}
 }
 .bb-js.bb-late:not(.bb-ready):not(.bb-still) .bb-track{height:auto}
