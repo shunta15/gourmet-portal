@@ -42,6 +42,20 @@ to_nfc() {
   if [ -n "$out" ]; then printf '%s' "$out"; else printf '%s' "$1"; fi
 }
 
+# 生成した記事の文を、型 R/A/B/C/D/E（spec.md §14-0）で機械的に調べる。読むだけ（何も書き換えない・commit しない）。
+# 直す役は claude（プロンプトの手順 4b。--fix で落としてよい文を取る）。ここは「直したはず」を成果物で確かめる後検査で、
+# 当たりが残っていればログと通知に出す。公開済みの記事は触らない（人の手直し待ち）。
+SENTENCE_LEFT=""
+check_sentences() {
+  local id="$1"
+  if node scripts/check-article-sentences.mjs "$id" >> "$LOG_FILE" 2>&1; then
+    log "  ✅ 文の検査: 型R/A/B/C/D/Eに当たる文なし ($id)"
+  else
+    SENTENCE_LEFT="$SENTENCE_LEFT $id"
+    log "  ⚠️ 文の検査: 型R/A/B/C/D/Eの文が残っている ($id) — 上のログ参照。要手直し"
+  fi
+}
+
 log "============================================================"
 log "マチノワ自動化 v2 開始 (label=$HOUR_LABEL)"
 log "============================================================"
@@ -351,7 +365,8 @@ __GBP_PHOTO_BLOCK__
    hero.jpg すら1枚も確保できなかった場合のみ:
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=画像取得失敗
-4. 記事生成: spec.md §1〜13 厳守で本文 3000字以上、文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
+4. 記事生成: spec.md §1〜13 と §14-0（文章の6つの型）を厳守。文中で半角ダブルクォート禁止（日本語の「」を使う）、id は __SAFE_NAME__ のみ（スペース絶対禁止）
+   本文の目安は3000字前後。ただし事実が足りないときは水増しせず短くしてよい（短いのは失敗ではない。型A〜Eの文で埋めるのが失敗）
    lib/teleapo-features.ts の末尾 }; 直前に TypeScript object として Edit ツールで追記
    ★脱テンプレ必須（spec.md §14「脱テンプレ規約」厳守）:
      - closing を「編集部が考える」で始めるのは絶対禁止。店の固有要素・時間軸・客層・立地・問いのいずれかから書き出す
@@ -359,6 +374,12 @@ __GBP_PHOTO_BLOCK__
      - lede 末尾に「今回は、〜5つのポイントに分けて紹介していく」を書かない
      - 「訪問前に公式情報での確認を」の固定形は1記事1回まで。POINT 内では言い換える
      - 既存記事と書き出し・締めが被らないよう、店ごとにゼロから組む
+4b. 文の検査（機械・ビルドの前に必ず実行）: node scripts/check-article-sentences.mjs __SAFE_NAME__
+   - 「✅ …当たる文なし」(終了コード0)なら次へ。
+   - 当たったとき(終了コード1)は、表示された文を、言い換えず・書き足さず「その文を取る」か、確かな事実だけの短い文に置き換える。事実が足りなければ取るだけにして短くする。直したら同じコマンドをもう一度実行し、当たりが無くなるまで繰り返す（最大3回）。
+   - 3回やっても残るときだけ: node scripts/check-article-sentences.mjs __SAFE_NAME__ --fix を実行（落としてよい文だけ機械で取る）。それでも「要書き直し」が残る文は、手で取るか、事実の短い文に置き換える。
+   - 「語だけでは事実と区別がつかない」と出た文（店が公式に出しているメニュー名・コース名、実用の注意の中の語）は、評価として書いていなければそのままでよい。
+   - 型は R=他サイトの評価・口コミ / A=分からなかったことを書く文 / B=調べ方の舞台裏 / C=決まり文句・締めの定型・記事の案内文 / D=行ったふり / E=裏付けの無い評価・人気（詳細と実例は spec.md §14-0）。
 5. ビルド: npm run build を Bash で実行。失敗したら:
      git checkout -- lib/teleapo-features.ts
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
@@ -386,6 +407,12 @@ __GBP_PHOTO_BLOCK__
 - 画像は実店舗のもののみ（Unsplash 等の汎用画像 NG）
 - 文中で半角ダブルクォートを使わない（日本語の「」を使う）
 - ほかのサイト・サービス（食べログ・Google・Retty・ホットペッパーなど）の点数・星・評価の高さ・口コミやレビューの件数を、文章（紹介文・本文・見どころ・特集記事）に書かない。（2026-10-11 オーナー指示）
+- 🚨 次の5つの型の文は書かない（2026-10-13・サイトは画面に出す直前にこれらの文を文ごと取り除いている。実例は spec.md §14-0）。事実が足りないときは、文を作って埋めずに、その分だけ短くする:
+  A 分からなかった・確認できなかったことを書く文（例: 「一次情報は見当たらない」「公開情報からは確認できない」「詳細情報は非公開」）。分かったことだけ書き、分からないことには触れない
+  B 調べ方の舞台裏（例: 「ここでは確認できた事実だけを書く」「先に正直なところを書いておく」「公開している写真から読み取れるのは」）
+  C どの店にも言える決まり文句・締めの定型・記事の案内文（例: 「〜と聞いたら、まず思い出したい店だ」「覚えておきたい一軒だ」「これ、地味に効く。」「まさに編集部イチオシのお店です」「〜を5つの視点から紹介していく」「〜を見ていきたい」）。その店だけの事実で終える。事実で締められないなら書かずに終える
+  D 行ったふり（例: 「ひとくち食べると〜がわかる気がする」「〜と感じた」「実際に足を運んでみないと伝わりにくい」）。来店したかのような体験・感想は書かない
+  E 裏付けの無い評価・人気（例: 「地元の食好きに支持されている」「評判の店」「人気のメニュー」「地域に親しまれている」「おすすめ」「知る人ぞ知る」）。出典つきの賞・選出や、店が公式に出す数字・名称があるときだけ書く
 - author 固定 マチノワ編集部
 - **id は __SAFE_NAME__ のみ（スペース絶対禁止・URL がスペースで切れて 500 になるため）**
 - フォルダ名・画像パス・スプシ書き戻し URL もすべて __SAFE_NAME__ を使う
@@ -436,6 +463,7 @@ PROMPT_EOF
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       # 台帳に追記（行番号ではなく cid・店名で処理済み管理。IMPORTRANGE 行ズレ対策）
       node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      check_sentences "$SAFE_NAME"
     else
       ERROR=$((ERROR+1))
       ERROR_LIST="$ERROR_LIST\n  - $NAME: $FINAL_LINE"
@@ -457,6 +485,7 @@ PROMPT_EOF
       SUCCESS_URLS="$SUCCESS_URLS\n  - $NAME: $URL"
       SUCCESS_URL_LIST="$SUCCESS_URL_LIST $URL"
       node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="$URL" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗（次回 reconcile で回収）"
+      check_sentences "$SAFE_NAME"
     # 認証切れ(HTTP 401)などで claude が即死した場合、ここを通る。
     # 「処理中」のまま放置するとその行が二度と処理されないので、必ずエラーに落として再試行可能にする。
     # 認証切れ・ネットワーク断は「この店舗の問題」ではない。
@@ -485,6 +514,10 @@ log "============================================================"
 log "完了サマリ: 成功 $SUCCESS / エラー $ERROR"
 [ -n "$SUCCESS_URLS" ] && log "成功URL:$SUCCESS_URLS"
 [ -n "$ERROR_LIST" ] && log "エラー:$ERROR_LIST"
+if [ -n "$SENTENCE_LEFT" ]; then
+  log "⚠️ 文の検査で型R/A/B/C/D/Eの文が残った記事:$SENTENCE_LEFT"
+  notify "⚠️ マチノワ 文の検査" "型A〜Eの文が残った記事があります:$SENTENCE_LEFT"
+fi
 log "============================================================"
 
 # === Vercel 本番デプロイ（成功が1件以上あれば実行） ===
