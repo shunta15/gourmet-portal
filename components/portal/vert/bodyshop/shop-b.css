@@ -1,77 +1,62 @@
-/* 案 B「回す」 */
+/* 案 B「回す」(作り直し): 大きな筒(丸めたマット)がページの主役。面は紙の札を巻いたもの */
 @property --th{syntax:"<number>";inherits:true;initial-value:0}
-.bb{padding-top:56px}
-.bb-grid{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:clamp(20px,3.6vw,56px);padding:20px var(--gut) 56px;align-items:start}
-.bb-main{background:var(--wall);box-shadow:0 22px 40px -28px rgba(40,26,10,.8),0 0 0 1px rgba(0,0,0,.08);padding:clamp(20px,3.6vw,52px);min-width:0}
-.bb-rail{position:sticky;top:76px;height:calc(100svh - 100px);display:grid;place-items:center;min-width:0}
+.bb{--fw:min(94vw,1120px);--endw:clamp(14px,6.4vw,92px);--Hf:clamp(420px,calc(100svh - 190px),760px);--R:calc(var(--Hf) / var(--ft));padding-top:56px}
 
-/* ドラム(丸めたマットを横にして、面は紙の帯) */
-.bb-drum,.bb-lens{display:none}
-@media (prefers-reduced-motion:no-preference){.bb-js:not(.bb-still) .bb-drum,.bb-js:not(.bb-still) .bb-lens{display:block}.bb-js:not(.bb-still) .bb-nav{display:none}}
-.bb-drum{--R:226px;--fw:340px;--fh:calc(var(--R) * var(--ft));position:relative;width:min(var(--fw),100%);height:calc(var(--R) * 2.05);perspective:1000px;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
-.bb-drum.is-grab{cursor:grabbing}
-.bb-cyl{position:absolute;left:0;top:50%;width:100%;height:var(--fh);margin-top:calc(var(--fh) / -2);transform-style:preserve-3d;transform:rotateX(calc(var(--th) * 1deg));will-change:transform}
-.bb-js:not(.bb-free) .bb-cyl{animation:bb-intro 1.9s cubic-bezier(.12,.7,.2,1) both}
-@keyframes bb-intro{from{--th:540}to{--th:0}}
-@media (prefers-reduced-motion:reduce){.bb-js:not(.bb-free) .bb-cyl{animation:none}}
-.bb-face{position:absolute;inset:0;display:flex;align-items:center;gap:12px;padding:0 calc(var(--fw) * .16);transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;
-  background:linear-gradient(90deg,var(--mat) 0 12%,var(--paper) 12% 88%,var(--mat) 88% 100%);border-top:1px solid rgba(0,0,0,.22);overflow:hidden}
-.bb-face::after{content:"";position:absolute;inset:0;background:#120d06;opacity:calc((1 - var(--lit, 1)) * .6);pointer-events:none}
-.bb-face i{flex:none;font:500 11px/1 var(--sans);font-style:normal;letter-spacing:.14em;color:var(--ink3);min-width:3.6em}
-.bb-face b{font:800 clamp(13px,1.5vw,16px)/1.3 var(--min);letter-spacing:.03em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.bb-lens{position:absolute;left:-8px;right:-8px;top:50%;height:var(--fh);margin-top:calc(var(--fh) / -2);border:2px solid var(--sumi);border-radius:4px;pointer-events:none;box-shadow:0 0 0 1px rgba(246,243,234,.7)}
-.bb-nav{width:100%;background:var(--paper);box-shadow:0 12px 24px -18px rgba(30,20,8,.8)}
-.bb-nav a{display:flex;align-items:center;gap:12px;min-height:44px;padding:6px 14px;border-bottom:1px solid rgba(28,27,25,.14)}
-.bb-nav i{flex:none;min-width:3.6em;font:500 11px/1 var(--sans);font-style:normal;letter-spacing:.14em;color:var(--ink3)}
-.bb-nav b{font:800 15px/1.4 var(--min)}
-.bb-nav a:hover{background:rgba(0,0,0,.05)}
+/* ── 普通のページ(JS なし・動きを減らす設定): 節の札を縦に並べる ── */
+.bb-track{padding:20px var(--gut) 8px}
+.bb-cyl{display:grid;gap:clamp(22px,3.4vw,40px);max-width:880px;margin:0 auto}
+.bb-face{position:relative;scroll-margin-top:68px;background:var(--paper);box-shadow:0 18px 30px -20px rgba(30,20,8,.8),0 0 0 1px rgba(28,27,25,.1)}
+.bb-face::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--mat)}
+.bb-blank,.bb-shade{display:none}
+.bb-paper{position:static}
+.bb-sc{padding:clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(28px,3.8vw,48px)}
 
-/* 本文 */
-.bb-hero{display:grid;gap:clamp(10px,1.6vw,18px);padding-bottom:clamp(30px,4vw,56px)}
-.bb-kind{display:inline-flex;align-items:baseline;gap:.8em;width:fit-content;padding:8px 14px;border:1px solid rgba(28,27,25,.55);background:var(--paper)}
+/* ── 筒(丸めたマット)の面の中身 ── */
+.bb-hero{display:grid;gap:clamp(10px,1.4vw,16px)}
+.bb-kind{display:inline-flex;align-items:baseline;gap:.8em;width:fit-content;padding:8px 14px;border:1px solid rgba(28,27,25,.55)}
+.bb-kind i{font:500 12px/1 var(--sans);font-style:normal;letter-spacing:.1em;color:var(--ink3)}
 .bb-kind b{font:800 15px/1 var(--min);letter-spacing:.06em}
 .bb-kind em{font:500 11px/1 var(--sans);font-style:normal;letter-spacing:.22em;color:var(--ink3)}
 .bb-name{text-wrap:balance;font-family:var(--min);font-weight:800;line-height:1.2;letter-spacing:.03em;overflow-wrap:anywhere}
 .bb-kana{font:400 12.5px/1.6 var(--sans);letter-spacing:.14em;color:var(--ink3)}
 .bb-area{font:500 15px/1.7 var(--sans);letter-spacing:.08em;color:var(--ink2)}
 .bb-head{font:400 15.5px/1.9 var(--sans);color:var(--ink2);max-width:32em}
-.bb-fig{margin:0;padding:8px 8px 22px;background:#fbf9f3;box-shadow:0 14px 26px -16px rgba(30,20,8,.75),0 0 0 1px rgba(0,0,0,.08);transform:translateY(var(--py,0px)) rotate(var(--r,0deg));will-change:transform}
-.bb-fig img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
-.bb-fig-hero{margin-top:clamp(8px,1.6vw,20px);max-width:760px}
-.bb-sec{padding:clamp(28px,4vw,56px) 0;border-top:1px solid rgba(28,27,25,.22);scroll-margin-top:68px}
-.bb-sec.has-pic{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:clamp(20px,3vw,44px);align-items:start}
-@media (max-width:1180px){.bb-sec.has-pic{grid-template-columns:1fr}}
+.bb-fig{margin:clamp(10px,1.6vw,18px) 0 0;padding:8px 8px 20px;background:#fbf9f3;box-shadow:0 12px 22px -14px rgba(30,20,8,.75),0 0 0 1px rgba(0,0,0,.08);max-width:560px;transform:rotate(-1deg)}
+.bb-fig img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;max-height:min(34svh,300px)}
 .bb-sno{font:500 12px/1 var(--sans);letter-spacing:.2em;color:var(--ink3);margin-bottom:12px}
 .bb-h{font:800 clamp(22px,2.6vw,32px)/1.4 var(--min);letter-spacing:.04em;margin-bottom:10px;overflow-wrap:anywhere}
 .bb-sub{font:500 14px/1.8 var(--sans);color:var(--ink3);margin-bottom:16px}
-.bb-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:18px}
-.bb-gal li{padding:8px 8px 20px;background:#fbf9f3;box-shadow:0 12px 22px -14px rgba(30,20,8,.75),0 0 0 1px rgba(0,0,0,.08);transform:rotate(var(--r,0deg))}
+.bb-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));gap:14px}
+.bb-gal li{padding:6px 6px 16px;background:#fbf9f3;box-shadow:0 10px 18px -12px rgba(30,20,8,.75),0 0 0 1px rgba(0,0,0,.08)}
 .bb-gal img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .bb-quote blockquote p{font:800 clamp(19px,2.3vw,27px)/1.9 var(--min);letter-spacing:.04em}
 .bb-quote cite{display:block;margin-top:12px;font:500 13px/1.6 var(--sans);font-style:normal;color:var(--ink3);letter-spacing:.1em}
 .bb-closing{margin-top:1.4em;font:400 15.5px/2 var(--sans);color:var(--ink2);max-width:36em}
-.bb-back{margin-top:40px}
+
+/* 筒のあとの、同じエリア・同じ種類の店 */
+.bb-after{padding:clamp(24px,4vw,48px) var(--gut) clamp(40px,6vw,72px)}
+.bb-after-in{max-width:1100px;margin:0 auto;padding:clamp(22px,3.4vw,44px);background:var(--paper);box-shadow:0 18px 30px -20px rgba(30,20,8,.8),0 0 0 1px rgba(28,27,25,.1)}
+.bb-after .bs-more-sec:first-child{margin-top:0}
+.bb-back{margin-top:32px}
 .bb-back a{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border:1px solid var(--sumi);border-radius:999px;background:var(--paper);font:700 14px/1 var(--sans);letter-spacing:.08em}
 
-/* 見出しの帯: 見える所に来ると、左から広がる(JS が動くときだけ) */
-.bb-js:not(.bb-still) .bb-sec .bb-h{clip-path:inset(0 100% 0 0);transition:clip-path .9s cubic-bezier(.2,.7,.2,1)}
-.bb-js:not(.bb-still) .bb-sec.is-in .bb-h,.bb-js.bb-late:not(.bb-ready):not(.bb-still) .bb-sec .bb-h{clip-path:inset(0 0 0 0)}
-
-/* スマホ・タブレット: ドラムは上に固定の細い帯(JS が動いて動きを減らさない設定のときだけ。それ以外は見出しの一覧をふつうに出す) */
-@media (max-width:900px){
-  .bb-grid{grid-template-columns:1fr;gap:0;padding:0 0 40px}
-  .bb-rail{position:static;height:auto;display:block;padding:12px var(--gut) 0}
-  @media (prefers-reduced-motion:no-preference){.bb-js:not(.bb-still) .bb-rail{position:sticky;top:56px;z-index:40;height:124px;padding:0;background:var(--wall);border-bottom:1px solid rgba(28,27,25,.2);box-shadow:0 10px 16px -14px rgba(30,20,8,.6);overflow:hidden;touch-action:none}}
-  .bb-drum{--R:60px;--fw:min(calc(100vw - 2 * var(--gut) - 24px),520px);width:var(--fw);margin:0 auto;height:124px;perspective:420px}
-  .bb-face{padding:0 calc(var(--fw) * .15);gap:8px}
-  .bb-face i{font-size:10px;min-width:3.2em}
-  .bb-face b{font-size:13px;-webkit-line-clamp:1}
-  .bb-main{padding:20px var(--gut) 40px;box-shadow:none}
-}
-
-/* 最初の画面: ドラムが回って止まるのに合わせて、店名まわりが順に上がってくる(CSS だけ。動きを減らす設定・JS なしでは出さない) */
+/* ── 筒にする(JS が動き、動きを減らさない設定のとき) ── */
 @media (prefers-reduced-motion:no-preference){
-  .bb-js .bb-hero>*{animation:bb-rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.45s + var(--k,0) * .1s)}
-  .bb-hero>*:nth-child(1){--k:0}.bb-hero>*:nth-child(2){--k:1}.bb-hero>*:nth-child(3){--k:2}.bb-hero>*:nth-child(4){--k:3}.bb-hero>*:nth-child(5){--k:4}.bb-hero>*:nth-child(6){--k:5}.bb-hero>*:nth-child(7){--k:6}
-  @keyframes bb-rise{from{opacity:0;translate:0 26px}to{opacity:1;translate:0 0}}
+  .bb-js:not(.bb-still) .bb-track{padding:0;height:var(--trackH,calc(var(--l) * 220svh))}
+  .bb-js:not(.bb-still) .bb-stage{position:sticky;top:0;height:100svh;overflow:hidden;perspective:calc(var(--R) * 3);perspective-origin:50% calc(50% + 28px);cursor:grab;-webkit-tap-highlight-color:transparent}
+  .bb-js:not(.bb-still) .bb-stage.is-grab{cursor:grabbing;-webkit-user-select:none;user-select:none}
+  .bb-js:not(.bb-still) .bb-cyl{display:block;position:absolute;left:50%;top:calc(50% + 28px);width:var(--fw);height:var(--Hf);max-width:none;margin:calc(var(--Hf) / -2) 0 0 calc(var(--fw) / -2);transform-style:preserve-3d;transform:translateZ(calc(var(--R) * -1)) rotateX(calc(var(--th) * 1deg));will-change:transform}
+  .bb-js:not(.bb-still):not(.bb-free) .bb-cyl{animation:bb-intro 2.6s cubic-bezier(.12,.7,.2,1) both}
+  @keyframes bb-intro{from{--th:560}to{--th:0}}
+  .bb-js:not(.bb-still) .bb-face{position:absolute;inset:0;transform:rotateX(calc(var(--j) * var(--step) * -1)) translateZ(var(--R));backface-visibility:hidden;-webkit-backface-visibility:hidden;scroll-margin-top:0;
+    background:radial-gradient(rgba(0,0,0,.1) 1px,transparent 1.6px) 0 0/6px 6px,radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.6px) 3px 3px/8px 8px,linear-gradient(180deg,rgba(255,255,255,.16),rgba(0,0,0,.1)),var(--mat);
+    box-shadow:inset 0 5px 0 rgba(255,255,255,.26),inset 0 -6px 0 rgba(0,0,0,.3);overflow:hidden}
+  .bb-js:not(.bb-still) .bb-face::before{display:none}
+  .bb-js:not(.bb-still) .bb-blank{display:block}
+  .bb-js:not(.bb-still) .bb-paper{position:absolute;inset:16px var(--endw);overflow:hidden;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.12),0 8px 16px -8px rgba(0,0,0,.55),inset 0 0 26px rgba(120,90,50,.14)}
+  .bb-js:not(.bb-still) .bb-sc{max-width:780px;margin:0 auto;transform:translateY(calc(var(--sy,0) * -1px));will-change:transform}
+  .bb-js:not(.bb-still) .bb-shade{display:block;position:absolute;inset:0;background:#120d06;opacity:calc((1 - var(--lit,1)) * .62);pointer-events:none}
+  .bb-js:not(.bb-still) .bb-fig{transform:rotate(-1deg)}
 }
+.bb-js.bb-late:not(.bb-ready):not(.bb-still) .bb-track{height:auto}
+@media (max-width:700px){.bb{--endw:clamp(12px,5.4vw,40px)}.bb-sc{padding-left:clamp(22px,5vw,30px)}}
