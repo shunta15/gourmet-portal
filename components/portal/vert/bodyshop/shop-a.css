@@ -18,9 +18,9 @@
 .ba-hero .ba-paper{max-width:1100px}
 
 /* マットの巻き(帯のラベル入り) */
-/* 広げた端の位置は transform だけで動かす(レイアウトを動かさない=CLS を出さない)。.ba-run は面と同じ大きさの箱を --u で縦に縮め、巻きは逆の倍率で元の太さに戻す */
+/* 巻きは広げた端の下に置く(広げた文には重ならない)。広げた端の位置は transform だけで動かす(レイアウトを動かさない=CLS を出さない)。.ba-run は面と同じ大きさの箱を --u で縦に縮め、巻きは逆の倍率で元の太さに戻す */
 .ba-run{position:absolute;left:calc(var(--gut) * -.5);right:calc(var(--gut) * -.5);top:0;height:100%;z-index:3;pointer-events:none;transform-origin:0 0;transform:scaleY(max(var(--u), .04))}
-.ba-roll{position:absolute;left:0;right:0;top:100%;height:var(--d);border-radius:10px;pointer-events:none;transform-origin:0 0;transform:translateY(calc(-50% * var(--ku))) scaleY(var(--ku));
+.ba-roll{position:absolute;left:0;right:0;top:100%;height:var(--d);border-radius:10px;pointer-events:none;transform-origin:0 0;transform:scaleY(var(--ku));
   --tone-d:color-mix(in srgb,var(--tone) 62%,#1a1208);
   background:linear-gradient(180deg,rgba(255,255,255,.62) 0,rgba(255,255,255,.2) 16%,rgba(255,255,255,0) 40%,rgba(0,0,0,.2) 72%,rgba(0,0,0,.52) 100%),radial-gradient(rgba(0,0,0,.1) 1px,transparent 1.6px) 0 calc(var(--th) * 9px)/6px 6px,var(--tone);
   box-shadow:0 26px 26px -14px rgba(50,30,10,.7),0 6px 6px -2px rgba(50,30,10,.35),inset 0 2px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.28)}
