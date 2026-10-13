@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllRestaurants } from "@/lib/db/restaurants";
 import { FEATURES } from "@/lib/data";
 import { REGIONS, type RegionKey } from "@/lib/regions";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/noren/picks";
 import NorenHero from "@/components/portal/noren/NorenHero";
 import Chapter from "@/components/portal/noren/Chapter";
@@ -154,7 +154,7 @@ export default async function GourmetNorenHome({ links }: { links: NorenLinks })
                   <span className="vN-tan-tag">{f.tag}</span>
                   <span className="vN-tan-img">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={sized(f.image, 480)} alt="" loading="lazy" decoding="async" />
+                    <img src={sized(f.image, 480)} srcSet={sizedSrcSet(f.image)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                   </span>
                   <b className="vN-tan-main">{main}</b>
                   {rest && <span className="vN-tan-rest">{rest}</span>}

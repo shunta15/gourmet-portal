@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import "@/app/proto-noren/feature.css";
 import "./featlist.css";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { GOURMET_TOP } from "@/lib/portal/noren/nav";
 import { featureHrefOf } from "@/lib/portal/noren/onePage";
 import { clothChars, clothFs, splitTitle, type FeatureCardItem } from "@/lib/portal/noren/featureCard";
@@ -20,7 +20,7 @@ export function FeatureCard({ f, eager = false }: { f: FeatureCardItem; eager?: 
         <span className="vH-ac-ph">
           {f.img && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={sized(f.img, 640)} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
+            <img src={sized(f.img, 640)} srcSet={sizedSrcSet(f.img)} sizes={CARD_SIZES} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
           )}
         </span>
         <span className="vH-ac-rod" aria-hidden="true" />
@@ -68,7 +68,7 @@ export function ShopFeatureCard({ f, eager = false }: { f: ShopFeatureCardData; 
         <span className="vH-ac-ph">
           {f.img && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={sized(f.img, 640)} alt={`${f.shopName} の写真`} loading={eager ? "eager" : "lazy"} decoding="async" />
+            <img src={sized(f.img, 640)} srcSet={sizedSrcSet(f.img)} sizes={CARD_SIZES} alt={`${f.shopName} の写真`} loading={eager ? "eager" : "lazy"} decoding="async" />
           )}
         </span>
         <span className="vH-ac-rod" aria-hidden="true" />

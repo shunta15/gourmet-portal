@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { rowOf, type PfBlock, type PfData, type PfPhoto, type PfText, type PfView, type Rv } from "@/lib/portal/photoFeature/build";
 import Motion from "./Motion";
 import Gate from "./Gate";
@@ -705,7 +705,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
                     <span className="pf-rel__ph" aria-hidden="true">
                       {r.img && (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img className="pf-rel__img" src={sized(r.img, 640)} alt="" loading="lazy" decoding="async" />
+                        <img className="pf-rel__img" src={sized(r.img, 640)} srcSet={sizedSrcSet(r.img)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                       )}
                     </span>
                     <span className="pf-rel__b">

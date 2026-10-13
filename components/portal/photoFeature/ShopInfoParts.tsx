@@ -4,7 +4,7 @@ import ShopActionsNoren from "@/components/portal/noren/ShopActionsNoren";
 import ShopMapLink from "@/components/portal/noren/ShopMapLink";
 import ShopVideo from "@/components/portal/noren/ShopVideo";
 import SaveSeal from "@/components/portal/noren/SaveSeal";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import type { PfShopInfo } from "@/lib/portal/photoFeature/shopInfo";
 
 /**
@@ -93,7 +93,7 @@ export function ShopMore({ info }: { info: PfShopInfo }) {
               <Link href={x.href} className="pf-mc">
                 <span className="pf-mc__ph" aria-hidden="true">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img className="pf-mc__img" src={sized(x.image, 640)} alt="" loading="lazy" decoding="async" />
+                  <img className="pf-mc__img" src={sized(x.image, 640)} srcSet={sizedSrcSet(x.image)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                 </span>
                 <span className="pf-mc__b">
                   <b>{x.name}</b>
@@ -123,7 +123,7 @@ export function ShopFeatures({ items }: { items: PfShopFeature[] }) {
                 <span className="pf-rel__ph" aria-hidden="true">
                   {f.image && (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img className="pf-rel__img" src={sized(f.image, 640)} alt="" loading="lazy" decoding="async" />
+                    <img className="pf-rel__img" src={sized(f.image, 640)} srcSet={sizedSrcSet(f.image)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                   )}
                 </span>
                 <span className="pf-rel__b">

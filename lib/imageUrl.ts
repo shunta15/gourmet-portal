@@ -4,6 +4,7 @@
  * Imports only lib/imageBlocklist (itself import-free) - safe for server and client.
  */
 import { isBlockedImage } from "./imageBlocklist";
+import { LOCAL_THUMBS } from "./localThumbs";
 
 export function sized(url: string, w: number): string {
   if (!url) return url;
@@ -19,6 +20,9 @@ export function sized(url: string, w: number): string {
     if (!u.searchParams.has("fit")) u.searchParams.set("fit", "crop");
     return u.toString();
   }
+
+  // 自前の店の写真（/restaurants/…）: 縮小版（public/_thumbs/<幅>/restaurants/<相対パス>.webp。scripts/thumbs.mjs が作る）があれば、それにする
+  if (url.startsWith("/restaurants/")) return localSized(url, w);
 
   // Wikimedia Commons: 公式の縮小版（thumb）に変える。Wikimedia は事前に決まった幅（標準幅）以外の thumb を 400 で拒否する
   // （2026-09-10 に 640・700・1000 などへ書き換えて本番で画像が欠けた）ので、標準幅だけを使う。元の thumb より大きくはしない（拡大しない）。
@@ -68,3 +72,56 @@ export function wikimediaSized(url: string, w: number): string {
   if (og) return want <= 500 ? `${og[1]}/thumb/${og[2]}/${want}px-${og[3]}` : url;
   return url;
 }
+
+/**
+ * 自前の店の写真の縮小版。lib/localThumbs.ts の一覧（scripts/thumbs.mjs が作る。縮小版がある画像の相対パス）にあるものだけ。
+ * 縮小版は 480 と 960（元の幅が狭いものは 480 だけ）。欲しい幅が 700 以下なら 480、1000 以下なら 960（無ければ 480）、それより大きければ元の画像。
+ * 一覧に無い画像・クエリのある URL は、そのまま。縮小版の読み込みに失敗したら、<head> の script（app/layout.tsx）が元の画像に戻す。
+ */
+let thumbMap: Map<string, number> | null = null;
+function thumbTier(rel: string): number {
+  if (!thumbMap) {
+    thumbMap = new Map();
+    for (const line of LOCAL_THUMBS.split("\n")) {
+      const i = line.indexOf("\t");
+      thumbMap.set(i < 0 ? line : line.slice(0, i), i < 0 ? 2 : 1);
+    }
+  }
+  return thumbMap.get(rel) ?? 0;
+}
+function localThumb(url: string, width: 480 | 960): string | null {
+  if (!url.startsWith("/restaurants/") || /[?#]/.test(url)) return null;
+  const rel = url.slice("/restaurants/".length);
+  let dec = rel;
+  try {
+    dec = decodeURIComponent(rel);
+  } catch {}
+  const tier = thumbTier(dec);
+  if (!tier || (width === 960 && tier < 2)) return null;
+  return `/_thumbs/${width}/restaurants/${rel}.webp`;
+}
+function localSized(url: string, w: number): string {
+  if (w > 1000) return url;
+  const t = (w <= 700 ? localThumb(url, 480) : localThumb(url, 960) ?? localThumb(url, 480)) ?? null;
+  return t ?? url;
+}
+
+/**
+ * カードの img 用の srcset（幅 480・960 の 2 段。無ければ undefined）。sizes と一緒に使う。
+ * 自前の縮小版（480 と 960 がある画像）と、Wikimedia の thumb（330 と 500。スマホの高精細な画面でも 500 までにする）が対象。
+ */
+export function sizedSrcSet(url: string): string | undefined {
+  if (!url || isBlockedImage(url)) return undefined;
+  const a = localThumb(url, 480);
+  const b = localThumb(url, 960);
+  if (a && b) return `${a} 480w, ${b} 960w`;
+  if (/^https:\/\/upload\.wikimedia\.org\/wikipedia\/[a-z-]+\/thumb\/.+\/\d+px-/.test(url)) {
+    const x = wikimediaSized(url, 330);
+    const y = wikimediaSized(url, 500);
+    if (x !== y && /\/330px-/.test(x) && /\/500px-/.test(y)) return `${x} 330w, ${y} 500w`;
+  }
+  return undefined;
+}
+
+/** カードの img の sizes（実測のカードの表示幅: PC 約 320px、スマホは 2 列で約 175px = 画面の 4 割ほど） */
+export const CARD_SIZES = "(max-width: 760px) 40vw, 320px";

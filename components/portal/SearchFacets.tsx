@@ -17,7 +17,7 @@ import Link from "next/link";
 import type { ReadonlyURLSearchParams } from "next/navigation";
 import { useCallback, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore, type KeyboardEvent, type ReactNode } from "react";
 import type { SearchItem } from "@/lib/regions";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import {
   BOOL_FACETS,
   BUDGET_BANDS,
@@ -105,7 +105,7 @@ function FacetCard({ r, tags, total }: { r: SearchItem; tags: CardTag[]; total: 
       <Link href={`/restaurant/${r.id}`} className="fc-card-link" data-cursor="VIEW">
         <div className="img">
           <img
-            src={sized(r.image, 640)}
+            src={sized(r.image, 640)} srcSet={sizedSrcSet(r.image)} sizes={CARD_SIZES}
             alt={r.name}
             loading="lazy"
             decoding="async"
