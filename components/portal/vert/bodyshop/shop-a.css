@@ -2,7 +2,7 @@
 @property --u{syntax:"<number>";inherits:true;initial-value:1}
 @property --th{syntax:"<number>";inherits:true;initial-value:0}
 .ba{--tone:var(--mat);padding-bottom:40px}
-.ba-u{--u:1;--th:0;--ku:calc(1 / max(var(--u), .04));--arr:1;--d:calc(30px + 62px * (1 - var(--u)));position:relative}
+.ba-u{--u:1;--th:0;--ku:calc(1 / max(var(--u), var(--umin, .04)));--arr:1;--d:calc(30px + 62px * (1 - var(--u)));position:relative}
 /* JS が動くとき、最初の画面より下の面は、スクロールで広げる(JS が付ける --u が来るまでは広げ切った形) */
 .ba-sec{margin:0 var(--gut) clamp(52px,7vw,104px);scroll-margin-top:64px}
 .ba-hero-wrap{position:relative;padding:72px var(--gut) 112px}
@@ -19,7 +19,7 @@
 
 /* マットの巻き(帯のラベル入り) */
 /* 巻きは広げた端の下に置く(広げた文には重ならない)。広げた端の位置は transform だけで動かす(レイアウトを動かさない=CLS を出さない)。.ba-run は面と同じ大きさの箱を --u で縦に縮め、巻きは逆の倍率で元の太さに戻す */
-.ba-run{position:absolute;left:calc(var(--gut) * -.5);right:calc(var(--gut) * -.5);top:0;height:100%;z-index:3;pointer-events:none;transform-origin:0 0;transform:scaleY(max(var(--u), .04))}
+.ba-run{position:absolute;left:calc(var(--gut) * -.5);right:calc(var(--gut) * -.5);top:0;height:100%;z-index:3;pointer-events:none;transform-origin:0 0;transform:scaleY(max(var(--u), var(--umin, .04)))}
 .ba-roll{position:absolute;left:0;right:0;top:100%;height:var(--d);border-radius:10px;pointer-events:none;transform-origin:0 0;transform:scaleY(var(--ku));
   --tone-d:color-mix(in srgb,var(--tone) 62%,#1a1208);
   background:url(/_portal/bodyshop/foam.svg) 0 calc(var(--th) * 7px)/120px 120px,linear-gradient(180deg,rgba(255,255,255,.66) 0,rgba(255,255,255,.22) 16%,rgba(255,255,255,0) 40%,rgba(0,0,0,.22) 72%,rgba(0,0,0,.55) 100%),var(--tone);background-blend-mode:multiply,normal,normal;

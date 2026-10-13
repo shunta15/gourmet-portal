@@ -36,8 +36,16 @@ export default function UnrollFx() {
       const y = window.scrollY;
       secs.forEach((el, i) => {
         const r = el.getBoundingClientRect();
-        // 節ごとに、巻き解け方の速さを少し変える(速め・ふつう・遅め)
-        const u = Math.pow(clamp((vh * 0.78 - r.top) / Math.max(1, r.height), 0, 1), [1, 0.82, 1.2][i % 3]);
+        // 節ごとに、巻き解け方の速さを少し変える(速め・ふつう・遅め)。広げた端は画面の上から 80% の線より下へ出さない(巻きが下端で切れない)
+        const H = Math.max(1, r.height);
+        const lin = clamp((vh * 0.78 - r.top) / H, 0, 1);
+        const u = Math.min(Math.pow(lin, [1, 0.82, 1.2][i % 3]), clamp((vh * 0.8 - r.top) / H, 0, 1));
+        const umin = Math.min(0.04, 24 / H); // 巻きが面の上端から離れすぎない(背の高い面でも、巻きの位置は上端から 24px まで)
+        const edgeY = r.top + Math.max(u, umin) * H;
+        if (el.dataset.um !== umin.toFixed(4)) {
+          el.dataset.um = umin.toFixed(4);
+          el.style.setProperty("--umin", umin.toFixed(4));
+        }
         const prev = last.get(el);
         if (prev === undefined || Math.abs(prev - u) > 0.0008) {
           el.style.setProperty("--u", u.toFixed(4));
@@ -45,7 +53,7 @@ export default function UnrollFx() {
         }
         if (r.bottom > -100 && r.top < vh + 100) {
           el.style.setProperty("--th", (y / 26 + i * 1.7).toFixed(3));
-          el.style.setProperty("--arr", clamp((vh * 0.9 - r.top) / (vh * 0.12), 0, 1).toFixed(3));
+          el.style.setProperty("--arr", clamp((vh * 0.86 - edgeY) / (vh * 0.05), 0, 1).toFixed(3)); // 巻きが画面に全部入ってから見せる(下端で半分切れない)
         }
       });
     };
