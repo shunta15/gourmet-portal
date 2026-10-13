@@ -6,7 +6,8 @@
  */
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
+import { GOURMET_REGION_BY_PREF, PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
+import { regionHref } from "@/lib/portal/noren/areaLinks";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { buildMetadata } from "@/lib/seo/meta";
@@ -122,7 +123,7 @@ export default async function Page({ searchParams }: Props) {
         filtered={filtered}
         curLabel={curLabel}
         curPrefShort={cur.pref ? (getPrefBySlug(cur.pref)?.short ?? null) : null}
-        curPrefSlug={cur.pref}
+        curRegionHref={cur.pref && GOURMET_REGION_BY_PREF[cur.pref] ? regionHref(GOURMET_REGION_BY_PREF[cur.pref]) : null}
       />
     );
   }
