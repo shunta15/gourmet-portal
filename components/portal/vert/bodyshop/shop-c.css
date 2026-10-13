@@ -1,6 +1,6 @@
 /* 案 C「転がる」 */
-.bc{--lh:104px;--tilt:0;padding-top:56px}
-@media (min-width:700px){.bc{--lh:128px}}
+.bc{--lh:64px;--tilt:0;padding-top:56px}
+@media (min-width:700px){.bc{--lh:108px}}
 .bc-main{max-width:1180px;margin:0 auto;padding:clamp(20px,3vw,40px) var(--gut) calc(var(--lh) + 56px)}
 .bc-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,3vw,48px);align-items:center;min-height:calc(100svh - 56px - var(--lh) - 40px);padding:clamp(8px,2vw,24px) 0 clamp(24px,3vw,40px)}
 @media (max-width:900px){.bc-hero{grid-template-columns:1fr;min-height:0}}
