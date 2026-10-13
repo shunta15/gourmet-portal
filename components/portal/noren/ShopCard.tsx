@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "@/app/proto-noren/feature.css";
 import "./featlist.css";
 import "./scenesearch.css";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { kanjiFor, nameLayout } from "@/lib/portal/noren/shop";
 import { shopNo, type ShopCardItem } from "@/lib/portal/noren/sceneShop";
 
@@ -37,7 +37,7 @@ export function ShopCard({
         <span className={`vSc-mc-im${s.img ? "" : " is-nophoto"}`}>
           {s.img ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={sized(s.img, 640)} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
+            <img src={sized(s.img, 640)} srcSet={sizedSrcSet(s.img)} sizes={CARD_SIZES} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
           ) : (
             <b className="vSc-mc-k" aria-hidden="true">{kanji}</b>
           )}

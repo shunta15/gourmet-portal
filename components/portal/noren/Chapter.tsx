@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { sized } from "@/lib/imageUrl";
 import { useEffect, useRef, useState } from "react";
 
 export type ShopProp = {
@@ -106,7 +107,7 @@ export default function Chapter({ c, index, total, shopBase }: { c: ChapterProp;
               key={s.id}
               className="vN-kj vN-kj--img"
               data-on={i === active ? "1" : "0"}
-              style={{ backgroundImage: `url(${s.img})` }}
+              style={{ backgroundImage: `url(${sized(s.img, 480)})` }}
             >
               {c.kanji}
             </span>

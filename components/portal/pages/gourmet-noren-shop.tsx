@@ -16,7 +16,7 @@ import { getTownOfRestaurant } from "@/lib/db/towns";
 import { GEO } from "@/lib/geo";
 import { ARTICLE_STORE_FEATURE_IDS } from "@/lib/articleStores";
 import { mapsUrlForRestaurant } from "@/lib/maps";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { isBlockedImage } from "@/lib/imageBlocklist";
 import { restaurantSocialLinks } from "@/lib/portal/shopSocial";
 import { shareTarget } from "@/lib/portal/share";
@@ -350,7 +350,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                       <span className="vS-rc-im">
                         {img && (
                           // eslint-disable-next-line @next/next/no-img-element
-                          <img src={sized(img, 640)} alt="" loading="lazy" decoding="async" />
+                          <img src={sized(img, 640)} srcSet={sizedSrcSet(img)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                         )}
                       </span>
                     )}
@@ -385,7 +385,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                   <Link href={shopHref(x.id)} className="vS-mc" data-cursor="VIEW">
                     <span className="vS-mc-im">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={sized(x.image, 640)} alt="" loading="lazy" decoding="async" />
+                      <img src={sized(x.image, 640)} srcSet={sizedSrcSet(x.image)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
                       <span className="vS-mc-nm">{x.name}</span>
                     </span>
                     <span className="vS-mc-ms">

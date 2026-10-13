@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { sized } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { tateCols } from "@/lib/portal/photoFeature/build";
 import type { RpCard } from "@/lib/portal/photoFeature/roundupList";
 import {
@@ -38,7 +38,7 @@ function Card({ c, eager = false }: { c: RpCard; eager?: boolean }) {
         <span className={`pf-rel__ph${c.img ? "" : " rp-nophoto"}`} aria-hidden="true">
           {c.img ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img className="pf-rel__img" src={sized(c.img, 640)} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
+            <img className="pf-rel__img" src={sized(c.img, 640)} srcSet={sizedSrcSet(c.img)} sizes={CARD_SIZES} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
           ) : (
             <Tate cols={tateCols(c.title, 8, 3)} className="rp-nophoto__t" label={false} />
           )}
