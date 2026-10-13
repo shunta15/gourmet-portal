@@ -548,8 +548,20 @@ if [ $SUCCESS -gt 0 ]; then
       log "  反映確認: $URL"
       for WAIT in 0 15 30 45 60 75 90; do
         [ "$WAIT" -gt 0 ] && sleep 15
-        CODE=$(curl -s -o /dev/null -w "%{http_code}" -m 15 -A "Mozilla/5.0" "$URL")
-        [ "$CODE" = "200" ] && { log "    ✅ HTTP 200 ($CODE) — 反映OK"; break; }
+        # -L: 1店1ページ化により /feature/<記事ID> は /restaurant/<店ID> へ 308 で転送されることがある
+        # （転送の表は lib/portal/noren/onePage.ts。新しい記事はまだ表に無く、200 で直接届く）。
+        # 転送をたどった先が 200 なら成功。最終URLもログに残す。
+        CHECK=$(curl -s -L --max-redirs 5 -o /dev/null -w "%{http_code} %{url_effective}" -m 15 -A "Mozilla/5.0" "$URL")
+        CODE=${CHECK%% *}
+        FINAL_URL=${CHECK#* }
+        if [ "$CODE" = "200" ]; then
+          if [ "$FINAL_URL" != "$URL" ]; then
+            log "    ✅ HTTP 200 — 反映OK（転送先: $FINAL_URL）"
+          else
+            log "    ✅ HTTP 200 ($CODE) — 反映OK"
+          fi
+          break
+        fi
         log "    待機中: HTTP $CODE (経過 ${WAIT}s)"
       done
       if [ "$CODE" != "200" ]; then
