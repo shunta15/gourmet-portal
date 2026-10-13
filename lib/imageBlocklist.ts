@@ -124,6 +124,13 @@ const BLOCKED_IMAGE_SRCS = new Set<string>([
   "/restaurants/teleapo-貝焼酒場樹/point2.jpg",
   "/restaurants/teleapo-近江牛日本料理ひょうたんや/hero.jpg",
   "/restaurants/teleapo-近江牛日本料理ひょうたんや/point2.jpg",
+  // 2026-10-13: リポジトリに無いファイル（404 になる）。店の対が無い単独店の記事の主役の写真
+  "/restaurants/teleapo-かいしんのいちげき！/hero.jpg",
+  "/restaurants/teleapo-クゥーしんぼう/hero.jpg",
+  "/restaurants/teleapo-牛久春木屋/hero.jpg",
+  "/restaurants/teleapo-牛久春木屋/point2.jpg",
+  "/restaurants/teleapo-本格焼肉レストラン家族亭/hero.jpg",
+  "/restaurants/teleapo-本格焼肉レストラン家族亭/point2.jpg",
 ]);
 
 export function normalizeImageSrc(src?: string | null): string {

@@ -7,13 +7,15 @@ import { useSyncExternalStore } from "react";
  * React は「クライアントで描画した script は実行されない」と警告するため）。ハイドレーションのあとは、この script の要素は取り除かれる（実行は済んでいる）。
  */
 const subscribe = () => () => undefined;
-export default function EarlyJs() {
+const EARLY = "(function(){try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){var r=document.querySelector('.pf-root');if(r){r.classList.add('pf-js');try{var c=document.createElement('canvas');var g=c.getContext('webgl');if(g){r.classList.add('pf-gate-on');var x=g.getExtension('WEBGL_lose_context');if(x)x.loseContext()}}catch(e2){}}}}catch(e){}})()";
+/** gate が false のとき（入口の暖簾を出さない記事。屋号が無い単独店の記事）は、.pf-gate-on を付けない（暖簾の枠が無いのに、枠の分の空きが残らないように） */
+export default function EarlyJs({ gate = true }: { gate?: boolean }) {
   const isClient = useSyncExternalStore(subscribe, () => true, () => false);
   if (isClient) return null;
   return (
     <script
       dangerouslySetInnerHTML={{
-        __html: "(function(){try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){var r=document.querySelector('.pf-root');if(r){r.classList.add('pf-js');try{var c=document.createElement('canvas');var g=c.getContext('webgl');if(g){r.classList.add('pf-gate-on');var x=g.getExtension('WEBGL_lose_context');if(x)x.loseContext()}}catch(e2){}}}}catch(e){}})()",
+        __html: gate ? EARLY : EARLY.replace("r.classList.add('pf-gate-on');", ""),
       }}
     />
   );

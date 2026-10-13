@@ -343,6 +343,31 @@ export function infoRows(s: Restaurant | null): [string, string][] {
   return rows.filter(([, v]) => !blank(v)).map(([k, v]) => [k, v!.trim()] as [string, string]);
 }
 
+/**
+ * 店の対が無い単独店の記事（店のデータが無い）の「店舗情報」の行: 記事の視点（ranking[].specs）にある、店そのものについての項目だけを、記事のとおりに出す。
+ * 項目名のゆれ（所在地 = 住所、営業 = 営業時間、席数 = 席、最寄り駅・最寄駅 = 最寄り、価格帯 = 予算）は、下の表で同じ行にまとめる。表に無い項目（看板・雰囲気・名物 など）は出さない。
+ * 値が空・ハイフンの項目は出さない。同じ項目が視点ごとに違う値で出てくるときは、違う値を先頭から 2 つまで「／」でつなぐ。新しい文・値は作らない。
+ */
+const ARTICLE_INFO_KEYS: [string, string[]][] = [
+  ["住所", ["住所", "所在地"]],
+  ["最寄り", ["最寄り", "最寄り駅", "最寄駅"]],
+  ["アクセス", ["アクセス"]],
+  ["営業時間", ["営業時間", "営業"]],
+  ["定休日", ["定休日"]],
+  ["席", ["席数", "席"]],
+  ["予算", ["予算", "価格帯"]],
+  ["電話", ["電話"]],
+];
+export function articleInfoRows(A: FeatureArticle): [string, string][] {
+  const rows: [string, string][] = [];
+  for (const [label, keys] of ARTICLE_INFO_KEYS) {
+    const vals: string[] = [];
+    for (const r of A.ranking) for (const sp of r.specs) if (keys.includes(sp.k) && !blank(sp.v) && !vals.includes(sp.v.trim())) vals.push(sp.v.trim());
+    if (vals.length) rows.push([label, vals.slice(0, 2).join("／")]);
+  }
+  return rows;
+}
+
 /** 記事の視点にある Google マップの URL（無ければ空。検索リンクは作らない） */
 export function mapsUrlOf(A: FeatureArticle): string {
   for (const r of A.ranking) {
@@ -500,7 +525,7 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, o
     gate: store ? gateUnitsFor(A.id, { id: store.id, name: store.name, area: store.area }) : null,
     shop: store ? { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area } : null,
     blocks,
-    info: infoRows(store),
+    info: store ? infoRows(store) : articleInfoRows(A),
     mapsUrl: mapsUrlOf(A),
     quote: A.quote ? paragraphs(stripTabelogScore(A.quote), 90) : [],
     closing: A.closing ? splitExcerpt(stripTabelogScore(A.closing)) : { head: "", rest: [] },
