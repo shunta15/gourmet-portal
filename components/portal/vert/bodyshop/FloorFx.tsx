@@ -1,5 +1,8 @@
 "use client";
 /**
+ * (2026-10-13 作り直し) 物は画面の下の床の帯([data-bc-ledge])の中だけで動く(本文に重ならない)。開いた直後だけ、帯の上の空きから落ちてくる。
+ * 帯の中で、物を直接つかんで投げる・なぞって転がせる(帯は touch-action:none。文は選択されない)。つかむと重さがあり(ばねで遅れてついてくる)、離すと勢いのまま転がって止まる。
+ * 止まったあとも、床がゆっくり揺れて、物が静かに転がり続ける。
  * 案 C「転がる」の動き(データは持たない。サーバーが出した DOM に付ける)。
  * 画面の下の床([data-bc-ledge])に、丸い物(マットの巻き 3・木の玉 2・竹の輪 1)を転がす。円の物理を実時間で進めて canvas([data-bc-cv])に描く:
  *   重力・床とのはね返り・転がり摩擦・壁・円どうしのぶつかり。開くと上から落ちてくる。
@@ -27,6 +30,10 @@ export default function FloorFx() {
     const ctx = cv.getContext("2d");
     if (!ctx) return;
     const matColor = getComputedStyle(root).getPropertyValue("--mat").trim() || "#768697";
+    const DROP = 260;
+    const born = performance.now();
+    let lh = 120;
+    let ledgeBox = ledge.getBoundingClientRect();
 
     let W = 0;
     let H = 0;
@@ -57,7 +64,7 @@ export default function FloorFx() {
       ];
       obs = spec.map(([kind, k, color], i) => ({
         x: clamp(W * (0.12 + 0.15 * i) + (i % 2 ? 24 : -10), 40, W - 40),
-        y: -base * 2 - i * 150,
+        y: -base * 2 - i * 110,
         vx: (i % 2 ? -1 : 1) * (90 + i * 40),
         vy: 0,
         r: base * k,
@@ -69,12 +76,14 @@ export default function FloorFx() {
       }));
     };
     const resize = () => {
-      W = window.innerWidth;
-      H = window.innerHeight;
+      ledgeBox = ledge.getBoundingClientRect();
+      lh = ledgeBox.height;
+      W = ledgeBox.width;
+      H = lh + DROP;
       dpr = Math.min(2, window.devicePixelRatio || 1);
       cv.width = Math.round(W * dpr);
       cv.height = Math.round(H * dpr);
-      floorY = H - ledge.getBoundingClientRect().height + 5;
+      floorY = H - lh * 0.3;
       if (obs.length === 0) build();
       else obs.forEach((o) => ((o.x = clamp(o.x, o.r, W - o.r)), (o.y = Math.min(o.y, floorY - o.r))));
       wake(1500);
@@ -82,11 +91,32 @@ export default function FloorFx() {
 
     const step = (dt: number) => {
       const g = 2300;
-      const ax = clamp(tilt, -1, 1) * 1500;
-      for (const o of obs) {
-        if (o.grab) continue;
+      const t = (performance.now() - born) / 1000;
+      const ceil = H - lh + 3;
+      const ceilOn = t > 2.4;
+      const ax0 = clamp(tilt, -1, 1) * 900;
+      for (let oi = 0; oi < obs.length; oi++) {
+        const o = obs[oi];
+        if (o.grab) {
+          // つかんでいる間: ばねで指へ(重い物ほど遅れてついてくる)
+          const m = (o.r / 28) * (o.r / 28);
+          const k = 150 / (0.6 + m);
+          o.vx += (k * (gx - o.x) - 15 * o.vx) * dt;
+          o.vy += (k * (gy - o.y) - 15 * o.vy) * dt;
+          o.x += o.vx * dt;
+          o.y += o.vy * dt;
+          o.w = 0;
+          o.x = clamp(o.x, o.r, W - o.r);
+          o.y = clamp(o.y, ceilOn ? ceil + o.r : o.r, floorY - o.r);
+          continue;
+        }
+        const ax = ax0 + Math.sin(t * 0.7 + oi * 1.3) * 95; // 床がゆっくり揺れる(静かでも転がり続ける)
         o.vy += g * dt;
         o.vx += ax * dt;
+        if (ceilOn && o.y - o.r < ceil) {
+          o.y = ceil + o.r;
+          if (o.vy < 0) o.vy = -o.vy * 0.4;
+        }
         o.x += o.vx * dt;
         o.y += o.vy * dt;
         // 床
@@ -243,36 +273,24 @@ export default function FloorFx() {
       lastScrollY = sy;
       tilt += (clamp(scrollVel / 1800, -1, 1) - tilt) * Math.min(1, dt * 8);
       root.style.setProperty("--tilt", (tilt * 1.1).toFixed(3));
-      if (grab) {
-        const nvx = (gx - grab.x) * 22;
-        const nvy = (gy - grab.y) * 22;
-        grab.vx = nvx;
-        grab.vy = nvy;
-        grab.x += nvx * dt;
-        grab.y += nvy * dt;
-        grab.x = clamp(grab.x, grab.r, W - grab.r);
-        grab.y = Math.min(grab.y, floorY - grab.r);
-        grab.w = 0;
-      }
       const n = Math.max(1, Math.ceil(dt / (1 / 120)));
       for (let k = 0; k < n; k++) step(dt / n);
       draw();
-      let energy = 0;
-      for (const o of obs) energy += Math.abs(o.vx) + Math.abs(o.vy) + (o.y + o.r < floorY - 1 ? 500 : 0);
-      if (energy > 14 || Math.abs(tilt) > 0.01 || grab || now < awakeUntil) raf = requestAnimationFrame(frame);
-      else root.style.setProperty("--tilt", "0");
+      if (!document.hidden) raf = requestAnimationFrame(frame);
     };
 
     // 指・マウス
-    const pos = (e: PointerEvent) => ({ x: e.clientX, y: e.clientY });
+    const pos = (e: PointerEvent) => ({ x: e.clientX - ledgeBox.left, y: e.clientY - (ledgeBox.bottom - H) });
     const onDown = (e: PointerEvent) => {
       if (e.button !== 0) return;
+      e.preventDefault();
+      ledgeBox = ledge.getBoundingClientRect();
       const p = pos(e);
       let best: Ob | null = null;
       let bd = 1e9;
       for (const o of obs) {
         const d = Math.hypot(o.x - p.x, o.y - p.y);
-        if (d < o.r + 14 && d < bd) {
+        if (d < o.r + 16 && d < bd) {
           best = o;
           bd = d;
         }
@@ -303,7 +321,7 @@ export default function FloorFx() {
         pxPrev = p.x;
         if (Math.abs(dx) > 1) {
           for (const o of obs) {
-            if (Math.abs(o.x - p.x) < o.r + 8 && p.y > o.y - o.r - 12) o.vx += clamp(dx, -40, 40) * 14;
+            if (Math.abs(o.x - p.x) < o.r + 8 && p.y > o.y - o.r - 12) o.vx += clamp(dx, -40, 40) * 11 * (28 / o.r);
           }
           wake(1200);
         }
@@ -327,6 +345,11 @@ export default function FloorFx() {
     const onScroll = () => wake(700);
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", resize);
+    const onVis = () => {
+      if (!document.hidden) wake(100);
+    };
+    document.addEventListener("visibilitychange", onVis);
+    (window as unknown as { __bcProbe: () => unknown }).__bcProbe = () => ({ o: obs.map((o) => [Math.round(o.x), Math.round(o.y - (H - lh))]), lh, grab: !!grab });
 
     // 紙: 見える所に来たら置かれる
     const cards = Array.from(root.querySelectorAll<HTMLElement>("[data-bc-card]"));
@@ -347,6 +370,7 @@ export default function FloorFx() {
       ledge.removeEventListener("pointercancel", onUp);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", resize);
+      document.removeEventListener("visibilitychange", onVis);
     };
   }, []);
   return null;

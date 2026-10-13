@@ -123,9 +123,10 @@ export default function ShopC({ shop, v }: { shop: BsShop; v: number }) {
         </section>
       </main>
 
-      {/* 画面の下の床。ここに物が転がる(指でつかんで投げる)。物は canvas に描く */}
-      <div className="bc-ledge" data-bc-ledge aria-hidden="true" />
-      <canvas className="bc-cv" data-bc-cv aria-hidden="true" />
+      {/* 画面の下の床の帯(壁と木の床)。物はこの帯の中だけで転がる(開いた直後だけ、上から落ちてくる)。指でつかんで投げる。物は canvas に描く */}
+      <div className="bc-ledge" data-bc-ledge aria-hidden="true">
+        <canvas className="bc-cv" data-bc-cv />
+      </div>
       <FloorFx />
     </div>
   );
