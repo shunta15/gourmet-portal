@@ -29,8 +29,8 @@ export default function DrumFx() {
     }
     const faces = Array.from(cyl.querySelectorAll<HTMLElement>(".bb-face"));
     const segs = Array.from(cyl.querySelectorAll<HTMLElement>(".bb-seg"));
-    const N = faces.length;
-    const L = Number(root.dataset.l) || N;
+    const L = Number(root.dataset.l) || faces.length;
+    const N = Number(root.dataset.n) || Math.max(L, 8); // 筒の面の数(CSS の --step と同じ。内容のある面は先頭の L 個)
     const step = 360 / N;
     const scs = faces.slice(0, L).map((f) => f.querySelector<HTMLElement>(".bb-sc")!);
     const papers = faces.slice(0, L).map((f) => f.querySelector<HTMLElement>(".bb-paper")!);
@@ -87,22 +87,29 @@ export default function DrumFx() {
     };
     const paint = () => {
       cyl.style.setProperty("--th", theta.toFixed(3));
-      if (Math.abs(theta - lastLit) > 0.05) {
+      // 影の濃さ(--lit)は、正面に近い面・芯だけ書く(見えない面は書かない。再計算を軽く)
+      if (Math.abs(theta - lastLit) > 0.4) {
         lastLit = theta;
         faces.forEach((f, j) => {
           const d = Math.abs((((j * step - theta) % 360) + 540) % 360 - 180);
-          f.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(3));
+          if (d < 105 || f.dataset.far !== "1") {
+            f.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(2));
+            f.dataset.far = d >= 105 ? "1" : "0";
+          }
         });
         segs.forEach((sg, k) => {
           const d = Math.abs((((k * 15 - theta + 10) % 360) + 540) % 360 - 180);
-          sg.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(3));
+          if (d < 105 || sg.dataset.far !== "1") {
+            sg.style.setProperty("--lit", Math.max(0, Math.cos((d * Math.PI) / 180)).toFixed(2));
+            sg.dataset.far = d >= 105 ? "1" : "0";
+          }
         });
       }
     };
     const setSy = (y: number, cur: number) => {
-      for (let i = 0; i < L; i++) {
+      for (let i = Math.max(0, cur - 1); i <= Math.min(L - 1, cur + 1); i++) {
         const want = i === cur ? clamp(y - ys[i] - 0.06 * vh, 0, Ss[i]) : y > ys[i] ? Ss[i] : 0;
-        if (Math.abs(want - syNow[i]) > 0.3) {
+        if (Math.abs(want - syNow[i]) > 0.5) {
           syNow[i] = want;
           scs[i].style.setProperty("--sy", want.toFixed(1));
         }
@@ -215,8 +222,8 @@ export default function DrumFx() {
         const i = loc.i;
         if (i >= L - 1) return;
         const dEnd = ys[i] + Ds[i];
-        // 進む向きに少しでも回っていたら次の節へ、戻る向きなら今の節へ(向きの慣性を持たせる)
-        if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: (downDir ? y - dEnd > T * 0.22 : y - dEnd > T * 0.78) ? ys[i + 1] : dEnd, behavior: "smooth" });
+        // 進む向きに少しでも(20px)回っていたら次の節へ、戻る向きなら今の節へ(速いスワイプでも境へ回り切る)
+        if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: (downDir ? y - dEnd > 20 : y - dEnd > T - 20) ? ys[i + 1] : dEnd, behavior: "smooth" });
       }, 150);
     };
     const onResize = () => {
@@ -273,7 +280,7 @@ export default function DrumFx() {
     const Rpx = () => (cyl.offsetHeight / ft) || 600;
     const onDown = (e: PointerEvent) => {
       if (e.pointerType === "touch" || e.button !== 0) return;
-      if ((e.target as Element).closest("a,button,summary,input,select,textarea,details")) return;
+      if ((e.target as Element).closest("a,button,summary,input,select,textarea")) return;
       release();
       pressed = true;
       pid = e.pointerId;
@@ -323,7 +330,7 @@ export default function DrumFx() {
     stage.addEventListener("pointerup", onUp);
     stage.addEventListener("pointercancel", onUp);
 
-    (window as unknown as { __bbProbe: () => unknown }).__bbProbe = () => ({ th: +theta.toFixed(2), y: Math.round(window.scrollY), ys: ys.map(Math.round), dragging, spinning });
+    (window as unknown as { __bbProbe: () => unknown }).__bbProbe = () => ({ th: +theta.toFixed(2), y: Math.round(window.scrollY), ys: ys.map(Math.round), ds: Ds.map(Math.round), T: Math.round(T), total: Math.round(total), dragging, spinning });
 
     return () => {
       cancelAnimationFrame(raf);

@@ -123,7 +123,7 @@ export default function ShopB({ shop, v }: { shop: BsShop; v: number }) {
   };
 
   return (
-    <div suppressHydrationWarning className={`bs bs-floor bb ${KZ_FONT_CLASSES}`} data-bb data-l={L} style={{ ["--mat" as string]: shop.color, ["--n" as string]: N, ["--step" as string]: `${360 / N}deg`, ["--ft" as string]: ft, ["--l" as string]: L }}>
+    <div suppressHydrationWarning className={`bs bs-floor bb ${KZ_FONT_CLASSES}`} data-bb data-l={L} data-n={N} style={{ ["--mat" as string]: shop.color, ["--n" as string]: N, ["--step" as string]: `${360 / N}deg`, ["--ft" as string]: ft, ["--l" as string]: L }}>
       <script dangerouslySetInnerHTML={{ __html: "var r=document.currentScript.parentElement;r.classList.add('bb-js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('bb-still');setTimeout(function(){r.classList.add('bb-late')},4000)" }} />
       <BsHeader />
       <main>
