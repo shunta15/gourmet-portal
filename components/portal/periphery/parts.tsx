@@ -132,7 +132,7 @@ export function Header() {
         マチノワ<small>グルメ</small>
       </Link>
       <nav aria-label="主なリンク">
-        <Link href="/feature">特集の一覧</Link>
+        <Link href="/feature">特集</Link>
         <Link href="/search">さがす</Link>
       </nav>
     </header>
@@ -171,7 +171,7 @@ export function Footer({ newsletter = false }: { newsletter?: boolean }) {
       <div className="pp-ft__in">
         <div className="pp-ft__top">
           <div className="pp-ft__brand">
-            <p className="pf-ft__l">マチノワ</p>
+            <p className="pf-ft__l">マチノワ グルメ</p>
             {newsletter && (
               <>
                 <p className="pp-ft__nlk">ニュースレター</p>
