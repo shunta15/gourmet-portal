@@ -488,18 +488,23 @@ export type PhotoFeaturePageProps = {
   onePage?: boolean;
   /** 店舗情報のあとの「関連記事」（この店が出てくるほかの記事。店ページと同じ選び方） */
   shopFeatures?: PfShopFeature[];
+  /** 店の対が無い単独店の記事（/feature/<記事 ID> のまま出す。店のデータが無い）: 入口の暖簾は出さない（屋号が無い）。店舗情報は記事にある項目だけで、行が 1 つも無ければ節ごと出さない。「店舗情報のみ見る」は、節があるときだけ */
+  noShop?: boolean;
 };
 
-export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref, searchHref, proto = false, related = [], shopInfo = null, onePage = false, shopFeatures = [] }: PhotoFeaturePageProps) {
+export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref, searchHref, proto = false, related = [], shopInfo = null, onePage = false, shopFeatures = [], noShop = false }: PhotoFeaturePageProps) {
   const T = D.title;
   const hero = D.hero;
+  // 店の対が無い記事（noShop）で、店舗情報の行が 1 つでもあるとき（節を出す・「店舗情報のみ見る」を出す）
+  const articleInfo = noShop && (D.info.length > 0 || !!D.mapsUrl);
+  const jumpOn = onePage || articleInfo;
   const shopLine = D.shop ? [D.shop.cuisine, D.shop.area].filter(Boolean).join("　") : "";
   const cover: Fx = { "--per": T.per, "--cols": T.cols.length, "--nh": hero && hero.nh ? Math.round(hero.nh * 1.3) : 9999 };
   // 店舗情報（店の案内）。shopInfo があるとき（1 店 1 ページ）は、店ページと同じ行動ボタン・タグ・候補に入れるを足し、続きの地図・動画・同じ地域の他の店・関連記事は後ろに並べる
   const infoSection = (
     <section className="pf-info" id="shop-info" aria-labelledby="pf-info-h">
       <div className="pf-info__in pf-rv">
-        <h2 id="pf-info-h" className="pf-info__t">{shopInfo ? "店舗情報" : "店の案内"}</h2>
+        <h2 id="pf-info-h" className="pf-info__t">{shopInfo || noShop ? "店舗情報" : "店の案内"}</h2>
         {D.info.length > 0 && (
           <dl className="pf-dl">
             {D.info.map(([k, v]) => (
@@ -596,7 +601,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       </header>
 
       {/* 巻頭: 主役の写真（大きく）+ 縦書きの題の札が重なる + 朱の丸 */}
-      <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}${D.coverPair ? " pf-cover--pair" : ""}`} style={cover} aria-label="巻頭">
+      <section className={`pf-cover${hero ? "" : " pf-cover--nophoto"}${!hero && T.per > 10 ? " pf-cover--long" : ""}${D.coverPair ? " pf-cover--pair" : ""}`} style={cover} aria-label="巻頭">
         {hero && (
           <div className="pf-cover__ph" style={{ "--cap": `${D.coverPair ? rowOf([hero, ...D.coverPair.photos]).cap : hero.cap}px` } as Fx}>
             {D.coverPair ? (
@@ -683,7 +688,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         </>
       ) : (
         <>
-          {infoSection}
+          {(!noShop || articleInfo) && infoSection}
           {endSection}
         </>
       )}
@@ -721,14 +726,14 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       </footer>
 
       {/* 「店舗情報のみ見る」: 開いた最初の画面（暖簾が掛かっている間）から、ページの上端に出ている。押すと暖簾を待たずに記事の終わりの店舗情報へ。JS なしでもアンカーで着く */}
-      {onePage && (
+      {jumpOn && (
         <JumpLink href="#shop-info" className="pf-jump">
           店舗情報のみ見る
         </JumpLink>
       )}
 
       {/* ページの上端の竿と、読み進みに合わせて横へ進む小さな布（JS が動いたときだけ） */}
-      <div className={onePage ? "pf-rod pf-rod--one" : "pf-rod"}>
+      <div className={jumpOn ? "pf-rod pf-rod--one" : "pf-rod"}>
         <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
           <Link href={topHref}>グルメ</Link>
           <Link href={listHref}>特集</Link>
@@ -743,7 +748,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       <div className="pf-hud" aria-hidden="true">
         <span className="pf-hud__line"><i /></span>
       </div>
-      {onePage ? (
+      {jumpOn ? (
         <JumpLink href="#shop-info" className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
           店舗情報のみ見る ↓
         </JumpLink>

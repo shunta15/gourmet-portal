@@ -189,6 +189,9 @@ export default function Motion() {
 
     // スクロールの連動
     const cover = root.querySelector<HTMLElement>(".pf-cover");
+    const coverPh = cover?.querySelector<HTMLElement>(".pf-cover__ph") ?? null;
+    const coverCap = cover?.querySelector<HTMLElement>(".pf-cover__cap") ?? null;
+    const coverLede = root.querySelector<HTMLElement>(".pf-lede");
     const hud = root.querySelector<HTMLElement>(".pf-hud");
     const hudCur = root.querySelector<HTMLElement>(".pf-hud__cur");
     const hudPrev = root.querySelector<HTMLElement>(".pf-hud__prev");
@@ -307,7 +310,15 @@ export default function Motion() {
       // 1. 巻頭: 写真と題の札が、違う速さでずれる（PC だけ）
       if (cover) {
         if (!narrow && y < vh * 1.6) {
-          cover.style.setProperty("--hy", `${(y * 0.16).toFixed(1)}px`);
+          // 写真が下へずれる量は、写真の下（店名の札・導入の文）の字に乗らない範囲まで（巻頭の写真の下端 = 変形の前の位置。札・導入の上端 = 変形しない）。余白が大きければ、今までどおり y × 0.16
+          let hy = y * 0.16;
+          const ph = coverPh;
+          if (ph) {
+            const below = [coverCap, coverLede].map((el) => (el ? el.getBoundingClientRect().top : Infinity)).reduce((m, v) => Math.min(m, v), Infinity);
+            const natBottom = cover.getBoundingClientRect().top + ph.offsetTop + ph.offsetHeight;
+            if (Number.isFinite(below)) hy = Math.min(hy, Math.max(0, below - natBottom - 6));
+          }
+          cover.style.setProperty("--hy", `${hy.toFixed(1)}px`);
           cover.style.setProperty("--ty", `${(-y * 0.1).toFixed(1)}px`);
         } else if (cover.style.getPropertyValue("--hy")) {
           cover.style.removeProperty("--hy");
