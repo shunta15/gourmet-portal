@@ -87,15 +87,18 @@ export default function UnrollFx() {
       const step = (now: number) => {
         const dt = Math.min(0.04, (now - t0) / 1000);
         t0 = now;
-        const k = 11;
-        const c = 3.0;
+        const k = 15;
+        const c = 2.3;
         vel += (-k * (uNow - 1) - c * vel) * dt;
         let nu = uNow + vel * dt;
-        if (nu >= 1) {
-          nu = 1;
-          vel = -vel * 0.32;
+        if (nu <= 0.04) {
+          nu = 0.04;
+          vel = -vel * 0.4;
+        } else if (nu > 1.1) {
+          nu = 1.1;
+          vel = -vel * 0.3;
         }
-        setU(clamp(nu, 0.04, 1));
+        setU(nu);
         if (Math.abs(1 - nu) < 0.0015 && Math.abs(vel) < 0.02) {
           spring = 0;
           setU(1);
@@ -153,7 +156,7 @@ export default function UnrollFx() {
       if (!dragging) return;
       const now = performance.now();
       const dt = (now - lastT) / 1000;
-      const nu = clamp(u0 + (e.clientY - y0) / h, 0.04, 1);
+      const nu = clamp(u0 + (e.clientY - y0) / h, 0.04, 1.1);
       if (dt > 0.004) vel = vel * 0.5 + (((e.clientY - lastY) / h) / dt) * 0.5;
       lastY = e.clientY;
       lastT = now;
@@ -162,8 +165,8 @@ export default function UnrollFx() {
     const onUp = () => {
       if (!dragging) return;
       dragging = false;
-      if (performance.now() - lastT > 140) vel = 0;
-      runSpring(clamp(vel, -3, 3));
+      if (performance.now() - lastT > 170) vel = 0;
+      runSpring(clamp(vel * 1.25, -5, 5));
     };
     roll?.addEventListener("pointerdown", onDown);
     roll?.addEventListener("pointermove", onMove);

@@ -31,7 +31,7 @@ function Sheet({ id, tone, label, children, className = "" }: { id?: string; ton
 export default function ShopA({ shop, v }: { shop: BsShop; v: number }) {
   const ph = shop.photos;
   const rest = ph.slice(1);
-  const dark = "#3b3d40";
+  const dark = "color-mix(in srgb, var(--mat) 66%, #1a1208)"; // 同じ種類の色の、深い色(節ごとに交互)
   return (
     <div suppressHydrationWarning className={`bs bs-floor ba ${KZ_FONT_CLASSES}`} data-ba style={{ ["--mat" as string]: shop.color }}>
       <script dangerouslySetInnerHTML={{ __html: "var r=document.currentScript.parentElement;r.classList.add('ba-js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('ba-still');setTimeout(function(){r.classList.add('ba-late')},4000)" }} />
