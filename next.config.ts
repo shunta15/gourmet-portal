@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
+import { BODYSHOP_PREVIEW } from "./lib/portal/vert/bodyshopPreview";
 // ── scene ここから
 import { NOREN_SCENE_REWRITE, NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
@@ -147,6 +148,8 @@ const nextConfig: NextConfig = {
         ? [
             { source: "/", destination: "/portal-home" },
             ...(NOREN_SHOP_REWRITE ? [{ source: "/restaurant/:id", destination: "/gourmet/restaurant/:id" }] : []),
+            // ボディケアの店のページの見本 3 案(?v=1|2|3)。見本・ローカルのときだけ(本番では 1 行も使われない。lib/portal/vert/bodyshopPreview.ts)
+            ...(BODYSHOP_PREVIEW ? [{ source: "/bodycare/shop/:id", has: [{ type: "query" as const, key: "v", value: "(?<v>[123])" }], destination: "/proto-hub/bodycare-shop/:id/:v" }] : []),
             ...(NOREN_FEATURE_REWRITE ? [{ source: "/feature/:id((?!search$)[^/]+)", destination: "/gourmet/feature/:id" }] : []),
             // 特集記事のトップ（一覧・特集を探す・地域別）も同じ仕組み（URL は /feature・/feature/search・/feature/region/<key> のまま）
             ...(NOREN_FEATURE_INDEX_REWRITE
