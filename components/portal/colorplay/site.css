@@ -67,7 +67,9 @@
 .kp-black{background:#0a0a0a; color:#fff}
 .kp-c{--fe:clamp(0, calc(var(--sp-e,1)*2.8 - var(--n)*.3), 1); position:absolute; top:0; bottom:0; left:calc(var(--l) + var(--sl)/2 + .8%); width:calc(100%/var(--of) - var(--sl) - 1.6%);
   display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:40px; translate:calc((1 - var(--fe))*-80px) 0; opacity:calc(.82 + var(--fe)*.18)}
-.kp-i:first-child .kp-c{left:max(24px, calc(50% - 550px))}
+/* 1 枚目は、ページの左の縁(max(24px, 50% - 550px))に字を揃えたい。ただし札は全体の 1/n 幅なので、広い画面ではその位置が 1 枚目の斜めの縁より右に出て、
+   字と写真が隣の札(2 枚目)の下に隠れる。2 枚目以降と同じ「札の左 + 傾きの半分 + .8%」を上限にして、札の中に収める */
+.kp-i:first-child .kp-c{left:min(max(24px, calc(50% - 550px)), calc(var(--l) + var(--sl)/2 + .8%))}
 .kp-ph{position:relative; flex:1 1 auto; min-height:0; margin:36px 0 12px; overflow:hidden;
   -webkit-mask-image:linear-gradient(180deg,transparent,#000 14%,#000 84%,transparent),linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent); mask-image:linear-gradient(180deg,transparent,#000 14%,#000 84%,transparent),linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent); -webkit-mask-composite:source-in; mask-composite:intersect}
 .kp-ph img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 22%; scale:1.1; translate:0 calc((var(--sp-p,.5) - .5)*-22px); transition:transform .7s cubic-bezier(.2,.8,.2,1)}
