@@ -831,3 +831,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-cover--nophoto.pf-cover--long .pf-cover__t { --fs: min(clamp(30px, 9vw, 40px), calc((100svh - 300px) / (var(--per) * 1.12))); }
   .pf-cover--nophoto .pf-cover__br--np { left: 2px; bottom: 0; width: 65%; height: 28px; min-height: 0; }
 }
+/* スマホ: 上端の帯（.pf-rod）が 44px あるので、「店舗情報のみ見る」「地図を見る」で飛んだ先の見出しが帯に隠れないよう、余白を帯より大きく取る（2026-10-13 点検で「地図」の見出しの上が約 8px 隠れていた） */
+@media (max-width: 760px) {
+  .pf-root:has(.pf-jump) #shop-info, .pf-root:has(.pf-jump) #map { scroll-margin-top: 58px; }
+}
