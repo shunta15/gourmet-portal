@@ -32,15 +32,28 @@ export default function Nobori({ flags, total, shopBase }: { flags: FlagProp[]; 
     let lastY = window.scrollY;
     let vel = 0;
     const boost = items.map(() => 0);
-    const io = new IntersectionObserver((es) => { vis = es[0].isIntersecting; }, { rootMargin: "80px" });
+    const io = new IntersectionObserver(
+      (es) => {
+        vis = es[0].isIntersecting;
+        // 見えたら再開する（画面の外のあいだは、次のコマを頼まない）
+        if (vis && !raf) {
+          lastY = window.scrollY;
+          raf = requestAnimationFrame(frame);
+        }
+      },
+      { rootMargin: "80px" }
+    );
     io.observe(el);
     const t0 = performance.now();
     const frame = (now: number) => {
-      raf = requestAnimationFrame(frame);
       const y = window.scrollY;
       vel = vel * 0.92 + Math.min(1, Math.abs(y - lastY) / 50) * 0.08;
       lastY = y;
-      if (!vis) return;
+      if (!vis) {
+        raf = 0;
+        return;
+      }
+      raf = requestAnimationFrame(frame);
       const t = (now - t0) / 1000;
       items.forEach((li, i) => {
         boost[i] += ((hov.current === i ? 1 : 0) - boost[i]) * 0.08;

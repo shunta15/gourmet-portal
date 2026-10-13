@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     : undefined,
 };
 
+const WM_FALLBACK_JS =
+  '(function(){var R=/^(https:\\/\\/upload\\.wikimedia\\.org\\/wikipedia\\/[a-z-]+)\\/thumb\\/([0-9a-f]\\/[0-9a-f]{2}\\/[^\\/?#]+)\\/\\d+px-[^\\/?#]+$/;function f(i){try{if(!i||i.tagName!=="IMG"||i.getAttribute("data-wm-fb"))return;var m=R.exec(i.currentSrc||i.src);if(!m)return;i.setAttribute("data-wm-fb","1");i.removeAttribute("srcset");i.src=m[1]+"/"+m[2]}catch(e){}}document.addEventListener("error",function(e){f(e.target)},true);document.addEventListener("DOMContentLoaded",function(){var l=document.images;for(var k=0;k<l.length;k++)if(l[k].complete&&l[k].naturalWidth===0)f(l[k])})})();';
+
 export default function RootLayout({
   children,
 }: {
@@ -65,6 +68,9 @@ export default function RootLayout({
   return (
     <html lang="ja" data-region="tokyo" className={cn("font-sans", geist.variable)}>
       <head>
+        {/* Wikimedia の縮小版（thumb。lib/imageUrl.ts の wikimediaSized）が読み込めなかった img を、その場で元の画像に差し替える保険（1 つの img につき 1 回）。
+            error は伝わらないので capture で受ける。script より前に失敗が済んでいた img は DOMContentLoaded で 1 回見る。Wikimedia の thumb 以外の画像には何もしない */}
+        <script dangerouslySetInnerHTML={{ __html: WM_FALLBACK_JS }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

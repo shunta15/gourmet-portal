@@ -115,6 +115,7 @@ export default function Nigiwai({
     let dragging = false;
     let raf = 0;
     let last = 0;
+    let lastWrite = 0;
     let visible = true;
     const timers: number[] = [];
 
@@ -128,7 +129,11 @@ export default function Nigiwai({
       if (!dragging) {
         vel += (AUTO - vel) * (1 - Math.exp(-dt / TAU));
         ang += vel * dt;
-        write();
+        // 輪はゆっくり回るだけなので、描き込み（--rot の更新 = 周りの再計算）は 1 秒に約 30 回まで。角度は毎コマ進めるので、回る速さは同じ
+        if (now - lastWrite >= 30) {
+          lastWrite = now;
+          write();
+        }
       }
       if (running()) raf = requestAnimationFrame(tick);
     };

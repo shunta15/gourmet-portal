@@ -113,6 +113,10 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     let raf = 0;
     let alive = true;
     let inView = true;
+    // 暖簾の区画が画面の外のあいだは、次のコマを頼まない（IntersectionObserver で見えたら再開する。最初のコマを始める前は再開しない）
+    let ioVis = true;
+    let settled = false;
+    let started = false;
     let open = 0;
     let target = 0;
     let gust = 1;
@@ -197,13 +201,19 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
 
     const frame = (now: number) => {
       if (!alive) return;
-      raf = requestAnimationFrame(frame);
+      // 画面の外に出たあと、最後に 1 コマだけ、状態を目標まで一気に進めて（k = 1）止める。戻ってきたときに、前と同じ状態から続く
+      if (!ioVis && settled) {
+        raf = 0;
+        return;
+      }
+      settled = !ioVis;
+      raf = ioVis ? requestAnimationFrame(frame) : 0;
       if (document.hidden) return;
       const y = window.scrollY;
       vel = vel * 0.9 + Math.min(1, Math.abs(y - lastY) / 60) * 0.1;
       lastY = y;
       apply(progress());
-      const k = reduce ? 1 : 0.085;
+      const k = reduce || !ioVis ? 1 : 0.085;
       const prev = open;
       open += (target - open) * k;
       if (Math.abs(target - open) < 0.0005) open = target;
@@ -307,6 +317,18 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     const dEl = doors.current;
     const ro = new ResizeObserver(() => layout());
     ro.observe(st);
+    const io = new IntersectionObserver(
+      (es) => {
+        ioVis = es[es.length - 1].isIntersecting;
+        if (ioVis && alive && started && !raf) {
+          settled = false;
+          lastY = window.scrollY;
+          frame(performance.now());
+        }
+      },
+      { rootMargin: "80px" }
+    );
+    io.observe(w);
 
     (async () => {
       // 書体の読み込みを先に始める（このあとの WebGL の準備と同時に進める）。待つのは暖簾の漢字と提灯の字の書体だけ。
@@ -360,6 +382,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
       layout();
       t0 = performance.now();
       // 最初の 1 コマを、布を見せる前に描いておく（中身の無い canvas が一瞬見えない）。このあと frame が自分で次のコマを予約する
+      started = true;
       frame(t0);
       if (cloth) {
         // 準備に時間がかかって CSS の布が（real.css の 2.5 秒の保険で）出ていたら、その濃さから溶かす。ふつうは 0（見えていない）
@@ -409,6 +432,7 @@ export default function NorenHeroReal({ photo, count, areas, chapters, defaultDy
     return () => {
       alive = false;
       cancelAnimationFrame(raf);
+      io.disconnect();
       ro.disconnect();
       window.clearTimeout(selTimer.current);
       window.removeEventListener(DYE_EVENT, onDye);
