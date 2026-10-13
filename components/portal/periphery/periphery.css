@@ -302,3 +302,13 @@
 
 /* ───────── 候補リスト /list ───────── */
 .pp-list a[href^="/restaurant/"] { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* 総合サイトの色の変数をまとった枠（.pp-ph）の中の a は、元の色の指定を使う。.pf-root a { color: inherit } が元の指定（.mp-ph-* の color）に勝ってしまい、
+   大きな表示の「店のページへ」が背景と同じ色（文字 = 背景）になっていた（PC: 生成りの上に生成り、スマホ: 墨の上に墨）。 */
+.pf-root .pp-ph .mp-ph-a { color: #fff; }
+.pf-root .pp-ph .mp-ph-go { color: #15110e; }
+.pf-root .pp-ph .mp-ph-go:hover { color: #fff; }
+@media (max-width: 899px) {
+  .pf-root .pp-ph .mp-ph-go { color: var(--ivory); }
+  .pf-root .pp-ph .mp-ph-go:hover { color: #fff; }
+}
