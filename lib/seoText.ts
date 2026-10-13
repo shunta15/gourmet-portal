@@ -20,6 +20,8 @@
  *
  * データが欠けている項目は黙って落とす（推測で埋めない）。
  */
+import { stripTabelogScore } from "@/lib/portal/noren/tabelogScore";
+
 
 /** 全角換算の見た目文字数（半角は 0.5 として数える） */
 function visualWidth(s: string): number {
@@ -122,7 +124,8 @@ export function restaurantDescription(r: SeoRestaurant): string {
   const wk = walkOf(r.nearest);
   const hs = hoursShort(r.hours);
   const cl = closedShort(r.closed);
-  const descText = String(r.desc || "").trim();
+  // 画面に出す文と同じ除去（他サイトの評価 + 中身の無い文。lib/thinSentences.ts）を、meta description の元の文にも通す
+  const descText = stripTabelogScore(String(r.desc || "")).trim();
 
   const facts = [
     hs && `営業時間${hs}`,
