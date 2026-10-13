@@ -6,12 +6,13 @@
 //   cid が取れないときでも台帳同期で照合できるよう、スプシ側の店名でも登録する。
 // cid は --mapsurl から自動抽出。--cid で直接渡してもよい。
 
-import { loadLedger, saveLedger, addEntry, cidFromUrl } from './ledger.mjs';
+import { loadLedger, saveLedger, addEntry, cidFromUrl, nfc } from './ledger.mjs';
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
     const [k, ...rest] = a.replace(/^--/, '').split('=');
-    return [k, rest.join('=')];
+    // 記事ID・店名・URL は NFC に揃えて受ける（Maps 由来の NFD 店名が台帳に入る事故の対策）
+    return [k, nfc(rest.join('='))];
   }),
 );
 

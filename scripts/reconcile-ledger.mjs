@@ -15,7 +15,7 @@ import { google } from 'googleapis';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { loadLedger, saveLedger, addEntry, cidFromUrl, nameKey, LEDGER_PATH } from './ledger.mjs';
+import { loadLedgerRaw, canonicalizeLedger, saveLedger, addEntry, cidFromUrl, nameKey, nfc, LEDGER_PATH } from './ledger.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, '..', 'automation', 'secrets', 'sa.json');
@@ -35,11 +35,19 @@ function teleapoArticleIds() {
   const ids = [];
   const re = /^\s*id:\s*"([^"]+)"\s*,/gm;
   let m;
-  while ((m = re.exec(src))) ids.push(m[1]);
+  while ((m = re.exec(src))) ids.push(nfc(m[1]));   // 記事IDは NFC に揃えて扱う（NFD 混入対策）
   return [...new Set(ids)];
 }
 
-const led = loadLedger();
+// 台帳に NFD で残っている記事ID・店名キー・URL を、再構築の最初に NFC へ寄せる
+// （2026-10-13: French Restaurant rêve が毎回「偽エントリ」判定→候補復活→空回りした原因の後始末）
+const led = loadLedgerRaw();
+{
+  const fx = canonicalizeLedger(led);
+  const n = fx.cidsFixed + fx.namesRekeyed + fx.namesFieldsFixed + fx.namesMerged;
+  if (n > 0) console.log(`🔤 台帳の NFD を NFC に寄せた: cids ${fx.cidsFixed}件 / 店名キー再キー ${fx.namesRekeyed}件 / 重複統合 ${fx.namesMerged}件`);
+  for (const c of fx.conflicts) console.log(`⚠️  NFC 化で店名キーが衝突し articleId が食い違う: ${c.key} 残 "${c.kept}" / 捨 "${c.dropped}"`);
+}
 
 // 1) 生成済み記事ID（=生成済み店舗の確定リスト）→ names
 const ids = teleapoArticleIds();
@@ -58,7 +66,8 @@ try {
   const aliasPath = join(__dirname, '..', 'automation', 'article-id-aliases.json');
   const { aliases = {} } = JSON.parse(readFileSync(aliasPath, 'utf-8'));
   let aliased = 0;
-  for (const [sheetName, articleId] of Object.entries(aliases)) {
+  for (const [sheetName, rawArticleId] of Object.entries(aliases)) {
+    const articleId = nfc(rawArticleId);
     if (!ids.includes(articleId)) continue;      // 記事が実在しない別名は無視
     idByKey.set(nameKey(sheetName), articleId);
     addEntry(led, { name: sheetName, articleId, url: `https://machinowa.tokyo/feature/${articleId}` });

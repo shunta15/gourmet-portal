@@ -30,6 +30,18 @@ cd "$REPO"
 log() { echo "[$(date '+%H:%M:%S')] $*" | tee -a "$LOG_FILE"; }
 notify() { /usr/bin/osascript -e "display notification \"$2\" with title \"$1\""; }
 
+# Unicode 正規化(NFC)。記事ID・店名・URL を「作る所」と「比べる所」で必ず通す。
+# Google マップ由来の店名は「e + 結合文字(U+0302)」のような NFD で届くことがあり、そのまま
+# 記事ID(SAFE_NAME)にすると、claude が書く NFC の記事ID・台帳・反映確認のURLと別物になる。
+# 実害(2026-10-09〜13): French Restaurant rêve が毎回「偽エントリ」判定で候補に戻り、
+# claude を約7分動かし何も変えずに vercel --prod → 反映確認が NFD の URL で404 → 「反映失敗」。
+# stdin 経由にしているのは、先頭が - の店名を node がオプションと誤認しないため。
+to_nfc() {
+  local out
+  out=$(printf '%s' "$1" | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>process.stdout.write(d.normalize("NFC")))' 2>/dev/null) || out=""
+  if [ -n "$out" ]; then printf '%s' "$out"; else printf '%s' "$1"; fi
+}
+
 log "============================================================"
 log "マチノワ自動化 v2 開始 (label=$HOUR_LABEL)"
 log "============================================================"
@@ -153,7 +165,7 @@ fi
 while IFS= read -r CANDIDATE; do
   [ -z "$CANDIDATE" ] && continue
   ROW=$(echo "$CANDIDATE" | jq -r '.sourceRow')
-  NAME=$(echo "$CANDIDATE" | jq -r '.name')
+  NAME=$(to_nfc "$(echo "$CANDIDATE" | jq -r '.name')")
   MAPS_URL=$(echo "$CANDIDATE" | jq -r '.url')
 
   log ""
@@ -197,7 +209,7 @@ while IFS= read -r CANDIDATE; do
     ERROR_LIST="$ERROR_LIST\n  - $NAME: Maps URL解決失敗"
     continue
   }
-  RESOLVED_NAME=$(echo "$RESOLVED_JSON" | jq -r '.name')
+  RESOLVED_NAME=$(to_nfc "$(echo "$RESOLVED_JSON" | jq -r '.name')")
   RESOLVED_LAT=$(echo "$RESOLVED_JSON" | jq -r '.lat')
   RESOLVED_LNG=$(echo "$RESOLVED_JSON" | jq -r '.lng')
   RESOLVED_PREF=$(echo "$RESOLVED_JSON" | jq -r '.prefecture // "不明"')
@@ -219,6 +231,8 @@ while IFS= read -r CANDIDATE; do
   for CH in '/' '。' '(' ')' '（' '）' '?' '？' '&' '#' '%' '|' ':' '*' '<' '>'; do
     SAFE_NAME="${SAFE_NAME//"$CH"/}"
   done
+  # 記事ID は NFC に統一（claude が書く id・台帳・URL・反映確認を同じ文字列にする）
+  SAFE_NAME=$(to_nfc "$SAFE_NAME")
   if [ -z "$SAFE_NAME" ]; then
     log "  ❌ 店舗名から安全なID を作れない（元: $RESOLVED_NAME）。スキップ"
     node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="記事IDを生成できない" >> "$LOG_FILE" 2>&1
@@ -228,6 +242,29 @@ while IFS= read -r CANDIDATE; do
   log "  ✅ 解決: $RESOLVED_NAME / $RESOLVED_PREF $RESOLVED_CITY"
   log "     座標: $RESOLVED_LAT, $RESOLVED_LNG"
   log "     ID用: $SAFE_NAME"
+
+  # === 既に同じ記事IDの記事が実在するなら claude を起動しない（重複生成・空回り防止） ===
+  # 候補に上がったのに記事がある＝台帳の食い違い、または別の店と記事IDが衝突している。
+  # claude を約7分動かしても新しい記事は作れず（重複キーでビルドが落ちるか、claude が
+  # 「既に完了」と言って何も変えずに終わる）、成功扱いになると vercel --prod まで空振りする。
+  # 判定は NFC 正規化したうえでの完全一致（scripts/article-exists.mjs）。
+  if node scripts/article-exists.mjs "$SAFE_NAME"; then
+    log "  ⚠️ 記事ID「$SAFE_NAME」は既に lib/teleapo-features.ts に実在する → claude を起動しない"
+    # この行がすでに「済」で、X列の URL がこの記事そのもの（NFC 完全一致）なら、同じ店の記事が
+    # 台帳から抜けているだけ。台帳に登録し直して次へ進む（claude もデプロイも不要）。
+    CAND_W=$(echo "$CANDIDATE" | jq -r '.w // ""')
+    CAND_X=$(to_nfc "$(echo "$CANDIDATE" | jq -r '.x // ""')")
+    if [ "$CAND_W" = "済" ] && [ "$CAND_X" = "https://machinowa.tokyo/feature/$SAFE_NAME" ]; then
+      log "     この行は既に 済 + X列が同じ記事のURL → 台帳だけ登録し直す（生成もデプロイもしない）"
+      node scripts/ledger-add.mjs --mapsurl="$MAPS_URL" --name="$RESOLVED_NAME" --sheetName="$NAME" --articleId="$SAFE_NAME" --url="https://machinowa.tokyo/feature/$SAFE_NAME" >> "$LOG_FILE" 2>&1 || log "  ⚠️ 台帳追記失敗"
+      continue
+    fi
+    log "     （台帳の食い違い、または別の店と記事IDが衝突。人の確認が必要。row $ROW）"
+    node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="記事ID既存(台帳食い違い or ID衝突)" >> "$LOG_FILE" 2>&1 || log "  ⚠️ エラー書き込みに失敗"
+    ERROR=$((ERROR+1))
+    ERROR_LIST="$ERROR_LIST\n  - $NAME: 記事ID既存のため claude を起動せず(要確認)"
+    continue
+  fi
 
   # === GBP 写真の取得（画像ソースの最優先） ===
   # runbook.md は「GBP の写真を最優先」と定めているのに、
@@ -383,7 +420,13 @@ PROMPT_EOF
   FINAL_LINE=$(grep -oE '(✅ )?COMPLETED row [^\\]+' "$CLAUDE_LOG" | tail -1)
   if [ -n "$FINAL_LINE" ]; then
     log "  $FINAL_LINE"
-    if echo "$FINAL_LINE" | grep -q "https://"; then
+    if echo "$FINAL_LINE" | grep -q "https://" && ! node scripts/article-exists.mjs "$SAFE_NAME"; then
+      # claude が「完了」と言っても、記事が実在しなければ成功ではない（成否はログでなく成果物で判定）。
+      log "  ❌ claude は完了と報告したが、記事ID「$SAFE_NAME」が lib/teleapo-features.ts に無い → 失敗扱い"
+      ERROR=$((ERROR+1))
+      ERROR_LIST="$ERROR_LIST\n  - $NAME: 完了報告だが記事が実在しない"
+      node scripts/sheets-mark-done.mjs --type=feature --row="$ROW" --status=error --reason="生成未完了(記事が実在しない)" >> "$LOG_FILE" 2>&1 || log "  ⚠️ ロック解除に失敗"
+    elif echo "$FINAL_LINE" | grep -q "https://"; then
       SUCCESS=$((SUCCESS+1))
       # claude の出力文からURLを正規表現で拾うと、末尾のマークダウン(**)や
       # 句読点まで取り込んで壊れたURLになる事故が発生した(2026-08-26 かじゅある割烹頼みち)。
@@ -407,7 +450,7 @@ PROMPT_EOF
     # 2026-09-14 22:00 の回で、生成に成功した row 401（カフェレガーロ）が
     # マーカーを出さずに終了 → 下の環境起因判定が claude 出力中の「row 401」の
     # "401" を HTTP 401 と読み違え → ループごと中断し、残り10件が未処理で残った。
-    if grep -q "^  \"$SAFE_NAME\": {" lib/teleapo-features.ts 2>/dev/null; then
+    if node scripts/article-exists.mjs "$SAFE_NAME"; then
       log "  ✅ 完了マーカーは無いが記事の実在を確認 — 成功として扱う"
       SUCCESS=$((SUCCESS+1))
       URL="https://machinowa.tokyo/feature/$SAFE_NAME"
@@ -467,6 +510,8 @@ if [ $SUCCESS -gt 0 ]; then
     VERIFY_OK=1
     for URL in $SUCCESS_URL_LIST; do
       [ -z "$URL" ] && continue
+      # URL は NFC で確かめる（NFD の URL は本番で404になる。curl で実測済み）。
+      URL=$(to_nfc "$URL")
       log "  反映確認: $URL"
       for WAIT in 0 15 30 45 60 75 90; do
         [ "$WAIT" -gt 0 ] && sleep 15
