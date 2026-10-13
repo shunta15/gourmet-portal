@@ -516,7 +516,8 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, o
   const sub = A.subtitle ? stripTabelogScore(A.subtitle) : "";
   return {
     id: A.id,
-    title: titleColumns(A.titleHTML, A.title),
+    // 店のデータが無い単独店の記事（store が null）は、欧文の語の途中で題の列を切らない（店の対がある記事の割りは今までどおり）
+    title: titleColumns(A.titleHTML, A.title, store === null),
     subCols: sub ? tateCols(sub, 12, 2) : [],
     lede: splitExcerpt(stripTabelogScore(A.lede)),
     hero: heroPf,

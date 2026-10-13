@@ -827,6 +827,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-cover--nophoto .pf-cover__t { position: relative; height: max(240px, calc(84px + var(--per) * var(--fs) * 1.12 + 70px)); width: auto; margin: 0 14px; padding: 0; background: transparent; color: var(--ink); border-top: 3px solid var(--indigo); border-bottom: 1px solid var(--line); container-type: size; display: block; --fs: clamp(30px, 9vw, 40px); pointer-events: auto; }
   .pf-cover--nophoto .pf-ttl { right: 16px; transform: none; color: var(--ink); text-shadow: none; top: 84px; }
   .pf-cover--nophoto .pf-sub { color: var(--ink2); text-shadow: none; }
+  .pf-cover--nophoto .pf-ttl .pf-em { color: var(--indigo); } /* 写真の上に載せる白（.pf-ttl .pf-em）は、和紙の面では読めない */
   .pf-cover--nophoto.pf-cover--long .pf-cover__t { --fs: min(clamp(30px, 9vw, 40px), calc((100svh - 300px) / (var(--per) * 1.12))); }
   .pf-cover--nophoto .pf-cover__br--np { left: 2px; bottom: 0; width: 65%; height: 28px; min-height: 0; }
 }
