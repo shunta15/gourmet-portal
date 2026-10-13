@@ -36,7 +36,8 @@ export default function UnrollFx() {
       const y = window.scrollY;
       secs.forEach((el, i) => {
         const r = el.getBoundingClientRect();
-        const u = clamp((vh * 0.78 - r.top) / Math.max(1, r.height), 0, 1);
+        // 節ごとに、巻き解け方の速さを少し変える(速め・ふつう・遅め)
+        const u = Math.pow(clamp((vh * 0.78 - r.top) / Math.max(1, r.height), 0, 1), [1, 0.82, 1.2][i % 3]);
         const prev = last.get(el);
         if (prev === undefined || Math.abs(prev - u) > 0.0008) {
           el.style.setProperty("--u", u.toFixed(4));
