@@ -49,8 +49,9 @@
   @keyframes ba-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 }
 .ba-hero .ba-roll{pointer-events:auto;cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
-.ba-hint{position:absolute;left:0;right:0;bottom:30px;text-align:center;font:700 13.5px/1 var(--sans);letter-spacing:.12em;color:#4a3820;pointer-events:none;transition:opacity .5s}
+.ba-hint{display:none;position:absolute;left:0;right:0;bottom:30px;text-align:center;font:700 13.5px/1 var(--sans);letter-spacing:.12em;color:#4a3820;pointer-events:none;transition:opacity .5s}
 .ba-hint i{display:inline-block;margin-right:.6em;font-style:normal;font-size:16px}
+.ba-js:not(.ba-still) .ba-hint{display:block}
 .ba-hero-wrap.is-used .ba-hint{opacity:0}
 .ba-hero.is-drag .ba-roll{cursor:grabbing}
 .ba-hero.is-drag{-webkit-user-select:none;user-select:none}

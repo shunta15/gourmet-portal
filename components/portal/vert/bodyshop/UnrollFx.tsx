@@ -68,6 +68,8 @@ export default function UnrollFx() {
       scheduleTug(1400);
     };
     hero?.addEventListener("animationend", onEnd);
+    // 読み込みが遅く、開く動きがもう終わっているとき(animationend を取りこぼす)も、すぐ引き継ぐ
+    if (hero && hero.getAnimations().every((a) => a.playState === "finished")) onEnd();
 
     // ばね: u を 1(広げ切った)へ。勢い vel(1 秒あたり)を持つ。離したあと・小さく引いて見せるときに使う
     const roll = hero?.querySelector<HTMLElement>(".ba-roll") ?? null;
