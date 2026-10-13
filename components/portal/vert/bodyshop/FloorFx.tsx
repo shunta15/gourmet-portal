@@ -57,33 +57,27 @@ export default function FloorFx() {
     let lastPy = 0;
     let lastPt = 0;
     let timer = 0;
+    let scrolling = false;
+    let live = false;
     let lastTq = 9;
 
     const build = () => {
       const mob = W < 700;
-      const base = mob ? 18 : clamp(W * 0.04, 22, 30);
-      const all: [Kind, number, string][] = [
-        ["mat", 1.0, matColor],
-        ["mat", 0.82, "#d8ceb8"],
-        ["mat", 0.82, "#7f8864"],
-        ["ball", 0.46, "#d9b88a"],
-        ["ball", 0.4, "#c9d0c8"],
-        ["bamboo", 0.62, "#7f8f5a"],
+      const base = mob ? 22 : clamp(W * 0.04, 22, 30);
+      const all: [Kind, number, number, string][] = [
+        ["mat", 1.0, 1.0, matColor],
+        ["mat", 0.82, 0.9, "#d8ceb8"],
+        ["mat", 0.82, 0, "#7f8864"],
+        ["ball", 0.46, 0.62, "#d9b88a"],
+        ["ball", 0.4, 0, "#c9d0c8"],
+        ["bamboo", 0.62, 0.8, "#7f8f5a"],
       ];
-      const spec = mob ? [all[0], all[1], all[3], all[5]] : all; // スマホは 4 つ(画面に収める)
-      obs = spec.map(([kind, k, color], i) => ({
-        hx: W * ((i + 0.5) / spec.length),
-        x: clamp(W * ((i + 0.5) / spec.length) + (i % 2 ? 30 : -30), base + 4, W - base - 4),
-        y: -base * 2 - i * 90,
-        vx: (i % 2 ? -1 : 1) * (80 + i * 35),
-        vy: 0,
-        r: base * k,
-        ang: i,
-        w: 0,
-        kind,
-        color,
-        grab: false,
-      }));
+      const spec = (mob ? all.filter((a) => a[2] > 0) : all).map(([kind, k, mk, color]) => [kind, mob ? mk : k, color] as [Kind, number, string]);
+      obs = spec.map(([kind, k, color], i) => {
+        const r = base * k;
+        const hx = W * ((i + 0.5) / spec.length);
+        return { hx, x: clamp(hx, r + 2, W - r - 2), y: floorY - r, vx: 0, vy: 0, r, ang: i * 1.3, w: 0, kind, color, grab: false };
+      });
     };
     const resize = () => {
       ledgeBox = ledge.getBoundingClientRect();
@@ -102,7 +96,7 @@ export default function FloorFx() {
     const step = (dt: number) => {
       const g = 2300;
       const t = (performance.now() - born) / 1000;
-      const ax0 = clamp(tilt, -1, 1) * 1500;
+      const ax0 = clamp(tilt, -1, 1) * 420;
       for (let oi = 0; oi < obs.length; oi++) {
         const o = obs[oi];
         if (o.grab) {
@@ -119,7 +113,9 @@ export default function FloorFx() {
           continue;
         }
         // 床の傾き(スクロール)+ ゆっくりした揺れ(静かでも転がり続ける)+ 浅い鉢(元の場所へ戻ろうとして、行き来する)
-        const ax = ax0 + Math.sin(t * 0.7 + oi * 1.3) * 120 + 0.55 * (o.hx - o.x);
+        const kHome = scrolling ? 0.22 : 0.85;
+        const ax = ax0 + Math.sin(t * 0.7 + oi * 1.3) * 120 + kHome * (o.hx - o.x);
+        if (!scrolling) o.vx *= Math.exp(-0.9 * dt); // 送りが止まったら、ゆっくり元の場所へ散らばって戻る
         o.vy += g * dt;
         o.vx += ax * dt;
         o.x += o.vx * dt;
@@ -194,7 +190,17 @@ export default function FloorFx() {
     const draw = () => {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, W, H);
+      const nowT = performance.now();
       for (const o of obs) {
+        const air = o.y - o.r < H - lh;
+        // 帯の上へ出ている物: 手前に浮いているので影を付け、止まっていたら半透明に(本文の字を隠し続けない)
+        ctx.globalAlpha = air ? (o.grab && nowT - lastPt > 600 ? 0.4 : 0.66) : 1;
+        if (air) {
+          ctx.fillStyle = "rgba(30,18,6,.22)";
+          ctx.beginPath();
+          ctx.arc(o.x + 3, o.y + 15, o.r * 0.96, 0, Math.PI * 2);
+          ctx.fill();
+        }
         // 影
         const h = clamp((floorY - (o.y + o.r)) / 260, 0, 1);
         ctx.fillStyle = `rgba(40,24,8,${0.32 * (1 - h * 0.8)})`;
@@ -268,6 +274,11 @@ export default function FloorFx() {
         ctx.beginPath();
         ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
         ctx.stroke();
+        ctx.globalAlpha = 1;
+      }
+      if (!live) {
+        live = true;
+        root.classList.add("bc-live");
       }
     };
 
@@ -288,8 +299,22 @@ export default function FloorFx() {
       last = now;
       // スクロールの速さ → 床の傾き(物とページの紙)
       const sy = window.scrollY;
-      scrollVel = scrollVel * 0.82 + ((sy - lastScrollY) / Math.max(dt, 0.001)) * 0.18;
+      const dS = sy - lastScrollY;
+      scrollVel = scrollVel * 0.82 + (dS / Math.max(dt, 0.001)) * 0.18;
       lastScrollY = sy;
+      // 送った量に応じて、物が転がる(下へ送ると右へ回りながら進み、上へ戻ると左へ)。模様の向きも回る
+      if (dS !== 0) {
+        const dd = clamp(dS, -260, 260);
+        obs.forEach((o, oi) => {
+          if (o.grab) return;
+          const dx = dd * (0.24 + 0.05 * oi);
+          const nx = clamp(o.x + dx, o.r, W - o.r);
+          o.ang += (nx - o.x) / o.r;
+          o.x = nx;
+          o.vx = clamp(o.vx + (dx / Math.max(dt, 0.008)) * 0.18, -1500, 1500);
+        });
+      }
+      scrolling = Math.abs(scrollVel) > 60;
       tilt += (clamp(scrollVel / 1100, -1, 1) - tilt) * Math.min(1, dt * 8);
       const tq = Math.round(tilt * 12) / 12;
       if (tq !== lastTq) {
@@ -319,7 +344,7 @@ export default function FloorFx() {
       let bd = 1e9;
       for (const o of obs) {
         const d = Math.hypot(o.x - p.x, o.y - p.y);
-        if (d < o.r + (e.pointerType === "touch" ? 26 : 16) && d < bd) {
+        if (d < o.r + (e.pointerType === "touch" ? 32 : 18) && d < bd) {
           best = o;
           bd = d;
         }
@@ -404,9 +429,18 @@ export default function FloorFx() {
     );
     cards.forEach((c) => io.observe(c));
 
-    resize();
-    wake(3200);
+    // CSS の最初の姿(落ちて弾む物)が終わったら、同じ位置から物理に引き継ぐ
+    let stopped = false;
+    const start = () => {
+      if (stopped) return;
+      resize();
+      wake(3200);
+    };
+    const phAnims = Array.from(root.querySelectorAll<HTMLElement>(".bc-ph")).flatMap((p) => p.getAnimations());
+    if (phAnims.length > 0) Promise.all(phAnims.map((a) => a.finished.catch(() => null))).then(start);
+    else start();
     return () => {
+      stopped = true;
       cancelAnimationFrame(raf);
       io.disconnect();
       ledge.removeEventListener("pointerdown", onDown);

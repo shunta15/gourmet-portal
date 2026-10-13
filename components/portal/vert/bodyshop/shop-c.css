@@ -1,6 +1,6 @@
 /* 案 C「転がる」 */
-.bc{--lh:64px;--tilt:0;padding-top:56px}
-@media (min-width:700px){.bc{--lh:108px}}
+.bc{--lh:68px;--tilt:0;--ob:22px;padding-top:56px}
+@media (min-width:700px){.bc{--lh:108px;--ob:clamp(22px,4vw,30px)}}
 .bc-main{max-width:1180px;margin:0 auto;padding:clamp(20px,3vw,40px) var(--gut) calc(var(--lh) + 56px)}
 .bc-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,3vw,48px);align-items:center;min-height:calc(100svh - 56px - var(--lh) - 40px);padding:clamp(8px,2vw,24px) 0 clamp(24px,3vw,40px)}
 @media (max-width:900px){.bc-hero{grid-template-columns:1fr;min-height:0}}
@@ -60,3 +60,16 @@
 .bc-cv{position:absolute;left:0;bottom:0;width:100%;height:calc(100% + 260px);z-index:2;pointer-events:none;display:none}
 .bc-js:not(.bc-still) .bc-cv{display:block}
 @media (prefers-reduced-motion:reduce){.bc-card{opacity:1!important;translate:none!important}.bc-cv{display:none!important}.bc-ledge{cursor:default}}
+
+/* 帯の上端: 本文が帯の下へ消えていくように、薄くぼかす */
+.bc-fade{position:absolute;left:0;right:0;top:-28px;height:28px;pointer-events:none;background:linear-gradient(180deg,rgba(236,229,214,0),rgba(236,229,214,.92))}
+/* 物(CSS だけの最初の姿)。丸い物が帯の上から落ちて弾む。FloorFx が起動したら hidden */
+.bc-ph{position:absolute;z-index:1;pointer-events:none;border-radius:50%;width:calc(var(--ob) * 2 * var(--mk,var(--k)));height:calc(var(--ob) * 2 * var(--mk,var(--k)));bottom:calc(var(--lh) * .3);left:calc(var(--fm,var(--fx)) * 100%);margin-left:calc(var(--ob) * -1 * var(--mk,var(--k)));
+  background:radial-gradient(circle at 36% 30%,rgba(255,255,255,.5),rgba(255,255,255,0) 55%,rgba(20,12,4,.42)),repeating-radial-gradient(circle,rgba(20,14,8,.26) 0 2px,rgba(0,0,0,0) 2px 6px),var(--c);box-shadow:0 7px 8px -3px rgba(40,24,8,.5),inset 0 0 0 1px rgba(20,12,4,.3)}
+.bc-ph[data-m="0"]{display:none}
+@media (min-width:700px){.bc-ph{--mk:var(--k);left:calc(var(--fx) * 100%)}.bc-ph[data-m="0"]{display:block}}
+@media (prefers-reduced-motion:no-preference){
+  .bc-js .bc-ph{animation:bc-phdrop .8s cubic-bezier(.4,0,.8,.6) var(--d,0ms) both}
+  @keyframes bc-phdrop{0%{translate:0 -300px}52%{translate:0 0;animation-timing-function:cubic-bezier(.2,.6,.4,1)}68%{translate:0 -26px;animation-timing-function:cubic-bezier(.6,0,.8,.5)}82%{translate:0 0;animation-timing-function:cubic-bezier(.2,.6,.4,1)}91%{translate:0 -7px;animation-timing-function:cubic-bezier(.6,0,.8,.5)}100%{translate:0 0}}
+}
+.bc-live .bc-ph{display:none!important}

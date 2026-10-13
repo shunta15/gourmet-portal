@@ -13,6 +13,16 @@ import type { BsShop } from "@/lib/portal/vert/bodyshop/model";
  *   動くのは落ち着くまでの間と、スクロール・指のあいだだけ(止まれば描画も止める)。
  * JS なし・動きを減らす設定・WebGL なしでも読める: 床の帯だけ出す(物は描かない)。
  */
+/** 床の物(PC 6 つ・スマホ 4 つ)。k/mk は大きさの倍率(PC/スマホ)、mi はスマホでの並び順。FloorFx の spec と同じ */
+const PH: { k: number; mk?: number; mi: number; c: string }[] = [
+  { k: 1, mk: 1, mi: 0, c: "var(--mat)" },
+  { k: 0.82, mk: 0.9, mi: 1, c: "#d8ceb8" },
+  { k: 0.82, mi: -1, c: "#7f8864" },
+  { k: 0.46, mk: 0.62, mi: 2, c: "#d9b88a" },
+  { k: 0.4, mi: -1, c: "#c9d0c8" },
+  { k: 0.62, mk: 0.8, mi: 3, c: "#7f8f5a" },
+];
+
 export default function ShopC({ shop, v }: { shop: BsShop; v: number }) {
   const ph = shop.photos;
   const kindNo = String(Math.max(1, ["seitai", "sekkotsu", "shinkyu", "massage", "relaxation", "stretch"].indexOf(shop.kindSlug) + 1)).padStart(2, "0");
@@ -125,6 +135,11 @@ export default function ShopC({ shop, v }: { shop: BsShop; v: number }) {
 
       {/* 画面の下の床の帯(壁と木の床)。物はこの帯の中だけで転がる(開いた直後だけ、上から落ちてくる)。指でつかんで投げる。物は canvas に描く */}
       <div className="bc-ledge" data-bc-ledge aria-hidden="true">
+        <i className="bc-fade" />
+        {/* JS が動き出すまで(と、JS なし・動きを減らす設定のとき)の物。CSS だけで落ちて弾む。FloorFx が起動したら、同じ位置から物理に引き継ぐ */}
+        {PH.map((p, i) => (
+          <i key={i} className="bc-ph" data-m={p.mk ? "1" : "0"} style={{ ["--k" as string]: p.k, ["--mk" as string]: p.mk ?? 0, ["--fx" as string]: (i + 0.5) / 6, ["--fm" as string]: p.mi >= 0 ? (p.mi + 0.5) / 4 : 0, ["--d" as string]: `${i * 60}ms`, ["--c" as string]: p.c }} />
+        ))}
         <canvas className="bc-cv" data-bc-cv />
       </div>
       <FloorFx />
