@@ -38,9 +38,12 @@ export default function HeroPaint() {
     let rect: DOMRect | null = null;
 
     const size = () => {
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
       w = hero.clientWidth;
       h = hero.clientHeight;
+      // 解像度の上限: 画素数が多いと、なぞっている間の毎フレームの「全面を少しずつ消す」塗りつぶしが重い(PC の Retina で 1794×874 の 2 倍 = 約 630 万画素)。
+      // 全体の画素数を PC 約 260 万・タッチ端末約 140 万までに収める(筆の太さは 15〜46px・しずくは 2px 以上なので、見た目の差はほぼ無い)
+      const maxPx = window.matchMedia("(pointer: coarse)").matches ? 1.4e6 : 2.6e6;
+      dpr = Math.max(1, Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(maxPx / Math.max(1, w * h))));
       cv.width = Math.max(1, Math.round(w * dpr));
       cv.height = Math.max(1, Math.round(h * dpr));
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);

@@ -6,13 +6,13 @@
  *   --sp-e : 入ってくる進み具合(上端が画面の下端にいる時 0 → 画面の約 4 割の高さまで来た時 1)
  *   --sp-o : 上へ抜けていく進み具合(上端が画面の上端にいる時 0 → 下端が画面の上端に来た時 1)
  *   --sp-g : 上端が画面の 85% の高さにいる時 0 → 画面の上端に来た時 1
- * data-sp-src="id" があれば、その id の要素の位置で測る。data-sp-show があれば、o が動き出したら .is-in を付ける。
+ * data-sp-src="id" があれば、その id の要素の位置で測る。data-sp-show があれば、o が動き出したら .is-in を付ける。data-sp-pause があれば、画面の外にいる間 .is-off を付ける。
  * 画面に無い要素は 0 か 1 に固定して、値が変わった時だけ書く。rAF は scroll のたびに 1 回だけ。
  * 「動きを減らす」設定のときは何もしない(変数は付かず、CSS の既定値=落ち着いた見た目のまま)。
  */
 import { useEffect, useRef } from "react";
 
-type Item = { el: HTMLElement; src: HTMLElement; keys: string[]; show: boolean; last: Record<string, string> };
+type Item = { el: HTMLElement; src: HTMLElement; keys: string[]; show: boolean; pause: boolean; last: Record<string, string> };
 
 const clamp = (v: number) => (v < 0 ? 0 : v > 1 ? 1 : v);
 
@@ -42,6 +42,7 @@ export default function ScrollFx() {
           src: (id && document.getElementById(id)) || el,
           keys: (el.dataset.sp || "").split(/\s+/).filter(Boolean),
           show: el.hasAttribute("data-sp-show"),
+          pause: el.hasAttribute("data-sp-pause"),
           last: {},
         };
       });
@@ -77,6 +78,8 @@ export default function ScrollFx() {
           }
         }
         if (it.show) it.el.classList.toggle("is-in", o > 0.04);
+        // data-sp-pause: 画面の外(下に 1.3 画面以上 / 上に抜けて 0.3 画面以上)では .is-off を付ける。常時の揺れの animation を止めるため(CSS 側)
+        if (it.pause) it.el.classList.toggle("is-off", top > vh * 1.3 || top + h < -vh * 0.3);
       });
 
       const max = document.documentElement.scrollHeight - vh;
@@ -134,7 +137,7 @@ export default function ScrollFx() {
       mo = null;
       for (const it of items) {
         for (const k of it.keys) it.el.style.removeProperty(`--sp-${k}`);
-        it.el.classList.remove("is-in");
+        it.el.classList.remove("is-in", "is-off");
       }
       bar.style.removeProperty("--sp-page");
       tabs?.box.style.removeProperty("--sp-tp");
