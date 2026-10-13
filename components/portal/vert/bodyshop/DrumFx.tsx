@@ -69,7 +69,7 @@ export default function DrumFx() {
         const ch = scs[i].offsetHeight;
         const s = Math.max(0, ch - ph);
         Ss.push(s);
-        const D = s + 0.42 * vh;
+        const D = s + 0.2 * vh;
         Ds.push(D);
         ys.push(y);
         y += D + (i < L - 1 ? T : 0);
@@ -198,8 +198,13 @@ export default function DrumFx() {
       release();
     }
 
+    let prevY = window.scrollY;
+    let downDir = true;
     const onScroll = () => {
       lastActive = performance.now();
+      const yy = window.scrollY;
+      if (Math.abs(yy - prevY) > 1) downDir = yy > prevY;
+      prevY = yy;
       kick();
       // 止まったとき、節の間(筒が回っている途中)なら、近い節へ吸い付く
       window.clearTimeout(snapT);
@@ -210,7 +215,8 @@ export default function DrumFx() {
         const i = loc.i;
         if (i >= L - 1) return;
         const dEnd = ys[i] + Ds[i];
-        if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: y - dEnd < T / 2 ? dEnd : ys[i + 1], behavior: "smooth" });
+        // 進む向きに少しでも回っていたら次の節へ、戻る向きなら今の節へ(向きの慣性を持たせる)
+        if (y > dEnd + 6 && y < ys[i + 1] - 6) window.scrollTo({ top: (downDir ? y - dEnd > T * 0.22 : y - dEnd > T * 0.78) ? ys[i + 1] : dEnd, behavior: "smooth" });
       }, 150);
     };
     const onResize = () => {
