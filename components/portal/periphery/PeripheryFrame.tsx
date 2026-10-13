@@ -4,6 +4,7 @@ import "../photoFeature/roundup/roundup.css";
 import "./periphery.css";
 import Motion from "../photoFeature/Motion";
 import { Footer, Header, Rod } from "./parts";
+import NavPending from "./NavPending";
 
 /**
  * 周りのページ（動画・店舗登録・お問い合わせ・編集部・掲載基準・見つからない・エラー）の共通の枠。特集の一覧 /feature と同じ世界:
@@ -29,6 +30,7 @@ export default function PeripheryFrame({
       <Footer newsletter={newsletter} />
       <Rod />
       <Motion />
+      <NavPending />
     </PhotoFeatureShell>
   );
 }

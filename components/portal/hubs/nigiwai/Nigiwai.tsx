@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties, type Mous
 import type { HubItem } from "@/lib/portal/hub";
 import type { DishPhoto, VerticalRingPhoto } from "@/lib/portal/hubs/nigiwai/photos";
 import { HEAD, LEAD } from "./copy";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 
 /**
  * 総合トップ「にぎわいの輪」— 地の色に、料理の写真の輪（クライアント）。
@@ -514,10 +515,11 @@ export default function Nigiwai({
                 <i aria-hidden="true" />
                 {cur.live ? "掲載中" : "掲載準備中"}
               </p>
+              {/* 選んでいる業種の入口は、本番では全体を先に読んでおく（prefetch）。入口（/gourmet）は URL の引数を読む動的ページで、既定（auto）では先読みされない。選び直すと、その行き先を読む */}
               {cur.enter && (
                 <Link
                   href={cur.path}
-                  prefetch={false}
+                  prefetch={RELEASE_PERIPHERY ? true : false}
                   className="ng-go"
                   onClick={(e) => {
                     if (suppressClick.current || !plain(e)) return;
