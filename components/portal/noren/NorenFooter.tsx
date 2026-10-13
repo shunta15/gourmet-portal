@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FOOT_INFO, FOOT_NAV, FOOT_NOREN, FOOT_REGIONS, NOREN_TOP } from "@/lib/portal/noren/nav";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 import NorenNewsletter from "./NorenNewsletter";
 
 /**
@@ -24,7 +25,7 @@ export default function NorenFooter({ top, extraNav = [] }: { top: string; extra
         <div className="vN-ft-brand">
           <p className="vN-ft-logo">
             <span className="ja">マチノワ</span>
-            <em>Gourmet</em>
+            {RELEASE_PERIPHERY ? <em data-ja="">グルメ</em> : <em>Gourmet</em>}
           </p>
           <p className="vN-ft-nlk">ニュースレター</p>
           <p className="vN-ft-nlh">

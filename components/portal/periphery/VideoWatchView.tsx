@@ -44,7 +44,7 @@ export default function VideoWatchView({
   const store = stores[0];
   const path = `/videos/${video.id}`;
   return (
-    <PeripheryFrame scope="portal">
+    <PeripheryFrame>
       <Hero
         before={<Breadcrumbs className="pp-crumbs" items={crumbs} />}
         eyebrow="Machinowa — Video"
@@ -71,11 +71,8 @@ export default function VideoWatchView({
                 <p className="pp-shop__sub">{[s.vertical.name, s.categoryName, s.prefShort, s.area].filter(Boolean).join("・")}</p>
                 <p className="pp-links">
                   <Link href={s.href} prefetch={false} data-cursor="SHOP">店のページを見る</Link>
-                  {s.station && (
-                    <Link href={s.station.href} prefetch={false} data-cursor="STATION">
-                      最寄りの駅: {s.station.heading}
-                    </Link>
-                  )}
+                  {/* 駅のページ（/station）は総合サイトの前の見た目のページなので、リンクにしない（駅名だけ出す） */}
+                  {s.station && <span>最寄りの駅: {s.station.heading}</span>}
                 </p>
                 <div className="pp-shoplinks">
                   <ShopLinks links={s.links} storeId={s.id} page={path} variant="gourmet" />
@@ -131,15 +128,8 @@ export default function VideoWatchView({
           <li>
             <Link href="/videos" prefetch={false} data-cursor="VIDEO">動画の一覧へ</Link>
           </li>
-          {store?.station && (
-            <li>
-              <Link href={store.station.href} prefetch={false} data-cursor="STATION">
-                {store.station.heading}の店を見る
-              </Link>
-            </li>
-          )}
           <li>
-            <Link href="/station" prefetch={false} data-cursor="STATION">駅から店を探す</Link>
+            <Link href="/search" prefetch={false}>さがす</Link>
           </li>
         </ul>
       </Sec>

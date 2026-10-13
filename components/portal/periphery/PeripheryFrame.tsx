@@ -4,7 +4,7 @@ import "../photoFeature/roundup/roundup.css";
 import "./periphery.css";
 import Motion from "../photoFeature/Motion";
 import { Footer, Header, Rod } from "./parts";
-import PortalFooterLinks from "./PortalFooterLinks";
+import NavPending from "./NavPending";
 
 /**
  * 周りのページ（動画・店舗登録・お問い合わせ・編集部・掲載基準・見つからない・エラー）の共通の枠。特集の一覧 /feature と同じ世界:
@@ -15,24 +15,22 @@ import PortalFooterLinks from "./PortalFooterLinks";
  */
 export default function PeripheryFrame({
   children,
-  scope = "gourmet",
   newsletter = false,
 }: {
   children: React.ReactNode;
-  /** gourmet: グルメのページ（ロゴ → /gourmet）／portal: 業種をまたぐページ（動画。ロゴ → /） */
-  scope?: "gourmet" | "portal";
   /** フッターにニュースレターの申し込みを出すか（今まで出ていたページだけ true） */
   newsletter?: boolean;
 }) {
   return (
     <PhotoFeatureShell>
-      <Header scope={scope} />
+      <Header />
       <div id="main" className="rp-main pp-main">
         {children}
       </div>
-      <Footer newsletter={newsletter} extra={scope === "portal" ? <PortalFooterLinks /> : undefined} />
+      <Footer newsletter={newsletter} />
       <Rod />
       <Motion />
+      <NavPending />
     </PhotoFeatureShell>
   );
 }

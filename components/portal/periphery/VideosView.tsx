@@ -23,7 +23,7 @@ export default function VideosView({
   filtered,
   curLabel,
   curPrefShort,
-  curPrefSlug,
+  curRegionHref,
 }: {
   shown: { video: Video; stores: VideoStore[] }[];
   verticalLinks: VideoFilterLink[];
@@ -35,11 +35,12 @@ export default function VideosView({
   filtered: boolean;
   curLabel: string;
   curPrefShort: string | null;
-  curPrefSlug: string | undefined;
+  /** 絞り込み中の県の店を探す行き先（グルメの「さがす」。/search?region=…）。県が無い・対応が無いときは null */
+  curRegionHref: string | null;
 }) {
   const hasFilters = verticalLinks.length > 0 || prefLinks.length > 0;
   return (
-    <PeripheryFrame scope="portal">
+    <PeripheryFrame>
       <Hero
         before={
           <Breadcrumbs
@@ -129,7 +130,7 @@ export default function VideosView({
             </p>
             <p className="pp-chips">
               {filtered && <Link href="/videos">すべての動画を見る</Link>}
-              <Link href="/station">駅から探す</Link>
+              <Link href="/search">さがす</Link>
               <Link href="/gourmet">グルメを探す</Link>
             </p>
           </div>
@@ -140,12 +141,12 @@ export default function VideosView({
         <Sec id="pp-vd-more-h" mark="探し方" title="ほかの探し方" k={1}>
           <ul className="pp-chips">
             <li>
-              <Link href="/station" prefetch={false} data-cursor="STATION">駅から店を探す</Link>
+              <Link href="/search" prefetch={false}>さがす</Link>
             </li>
-            {curPrefSlug && (
+            {curRegionHref && (
               <li>
-                <Link href={`/area/${curPrefSlug}`} prefetch={false} data-cursor="AREA">
-                  {curPrefShort}の店を業種から探す
+                <Link href={curRegionHref} prefetch={false}>
+                  {curPrefShort}の店を探す
                 </Link>
               </li>
             )}

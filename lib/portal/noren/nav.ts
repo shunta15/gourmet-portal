@@ -1,4 +1,4 @@
-import { RELEASE_REST, RELEASE_SEARCH } from "./release";
+import { RELEASE_PERIPHERY, RELEASE_REST, RELEASE_SEARCH } from "./release";
 import { areaIndexHref, regionHref } from "./areaLinks";
 import { featureHrefOf } from "./onePage";
 
@@ -50,7 +50,8 @@ export const HEADER_NAV = RELEASE_SEARCH
 /** フッターのナビゲーション。RELEASE_SEARCH が true のときはヘッダーと同じ「トップ・特集・さがす」（エリアの一覧は下の「地域」の列にある）。false は今までの 5 つ */
 export const FOOT_NAV = RELEASE_SEARCH
   ? ([
-      { href: NOREN_TOP, ja: "トップ" },
+      // 「トップ」(/gourmet。グルメのトップ)と「総合トップ」(/。マチノワ全体のトップ)は行き先が違うので、RELEASE_PERIPHERY のあいだは違いが分かる呼び名にする
+      { href: NOREN_TOP, ja: RELEASE_PERIPHERY ? "グルメのトップ" : "トップ" },
       { href: "/feature", ja: "特集" },
       { href: "/search", ja: "さがす" },
     ] as const)

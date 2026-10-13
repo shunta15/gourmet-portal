@@ -1,6 +1,8 @@
 import "./noren.css";
 import Boot from "./Boot";
 import NorenHeader from "./NorenHeader";
+import NavPending from "../periphery/NavPending";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 import NorenFooter from "./NorenFooter";
 import { brush, latin } from "./fonts";
 import { RELEASE_REST } from "@/lib/portal/noren/release";
@@ -47,6 +49,8 @@ export default function NorenFrame({
       <a className="vN-skip" href="#vN-main">本文へ移動</a>
       <NorenHeader top={top} />
       <main id="vN-main" tabIndex={-1}>{children}</main>
+      {/* 押した瞬間に分かる表示と、特集の一覧の先読み（RELEASE_PERIPHERY。components/portal/periphery/NavPending） */}
+      {RELEASE_PERIPHERY && <NavPending />}
       <NorenFooter top={top} extraNav={footExtra} />
     </div>
   );

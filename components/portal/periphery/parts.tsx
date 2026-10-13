@@ -124,21 +124,15 @@ export function Dash({ items, label }: { items: ReactNode[]; label?: string }) {
 
 // ───────── 上端の帯・竿・フッター ─────────
 
-/** 上端の帯（ロゴ + 主なリンク）。gourmet: 「マチノワ グルメ」→ グルメのトップ。portal: 「マチノワ」→ 総合トップ（動画のページなど、業種をまたぐページ） */
-export function Header({ scope = "gourmet" }: { scope?: "gourmet" | "portal" }) {
+/** 上端の帯（ロゴ + 主なリンク）。ロゴは「マチノワ グルメ」→ グルメのトップ（周りのページはどれも同じ） */
+export function Header() {
   return (
     <header className="pf-hd-bar">
-      {scope === "portal" ? (
-        <Link href="/" className="pf-logo" aria-label="マチノワ トップへ">
-          マチノワ
-        </Link>
-      ) : (
-        <Link href={GOURMET_TOP} className="pf-logo" aria-label="マチノワ グルメのトップへ">
-          マチノワ<small>グルメ</small>
-        </Link>
-      )}
+      <Link href={GOURMET_TOP} className="pf-logo" aria-label="マチノワ グルメのトップへ">
+        マチノワ<small>グルメ</small>
+      </Link>
       <nav aria-label="主なリンク">
-        <Link href="/feature">特集の一覧</Link>
+        <Link href="/feature">特集</Link>
         <Link href="/search">さがす</Link>
       </nav>
     </header>
@@ -170,14 +164,14 @@ export function Rod() {
  * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション・地域・サイト情報）と、ニュースレター（newsletter が true のとき。今まで付いていたページだけ）。
  * リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。地域の行き先は areaLinks 経由（/search?region=）。
  */
-export function Footer({ newsletter = false, extra }: { newsletter?: boolean; extra?: ReactNode }) {
+export function Footer({ newsletter = false }: { newsletter?: boolean }) {
   const nav = [...FOOT_NAV.map((n) => (n.href === NOREN_TOP ? { ...n, href: GOURMET_TOP } : n)), ...FOOT_NAV_LIVE_EXTRA];
   return (
     <footer className="pf-ft pp-ft">
       <div className="pp-ft__in">
         <div className="pp-ft__top">
           <div className="pp-ft__brand">
-            <p className="pf-ft__l">マチノワ</p>
+            <p className="pf-ft__l">マチノワ グルメ</p>
             {newsletter && (
               <>
                 <p className="pp-ft__nlk">ニュースレター</p>
@@ -220,7 +214,6 @@ export function Footer({ newsletter = false, extra }: { newsletter?: boolean; ex
                 ))}
               </ul>
             </nav>
-            {extra}
           </div>
         </div>
         <p className="pp-ft__bot">

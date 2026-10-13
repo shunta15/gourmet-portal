@@ -31,11 +31,8 @@ export function VideoCardP({ video, stores, eager = false }: { video: Video; sto
               {s.name}
             </Link>
             <span className="sub">{[s.categoryName, s.prefShort, s.area].filter(Boolean).join("・")}</span>
-            {s.station && (
-              <Link href={s.station.href} prefetch={false} className="st" data-cursor="STATION">
-                最寄り: {s.station.heading}
-              </Link>
-            )}
+            {/* 駅のページ（/station）は総合サイトの前の見た目のページなので、リンクにしない（駅名だけ出す） */}
+            {s.station && <span className="st">最寄り: {s.station.heading}</span>}
           </p>
         ))}
       </div>
