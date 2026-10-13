@@ -18,7 +18,7 @@ const DESC_WORDS = [
   "お食事処", "食事処", "定食屋", "居酒屋", "喫茶", "カフェ", "珈琲", "コーヒー", "ベーカリー", "お好み焼き", "グルテンフリー", "ジンギスカン",
   "ホルモン", "ステーキ", "鉄板", "焼き鳥", "焼鳥", "焼肉", "近江牛", "和牛", "炭火", "ラーメン", "らーめん", "拉麺", "つけ麺", "担々麺", "汁なし",
   "蕎麦", "そば", "うどん", "饂飩", "ピザ", "薪窯", "串カツ", "串揚げ", "天ぷら", "天丼", "うなぎ", "鰻", "海鮮", "鮮魚", "寿司", "鮨", "すし", "割烹", "会席", "懐石",
-  "中華", "和食", "洋食", "洋めし", "創作", "個室", "地酒", "炉端", "酒場", "食堂", "ワイン", "バル", "バー", "麺や", "キッチン",
+  "中華", "和食", "洋食", "洋めし", "創作", "個室", "地酒", "炉端", "酒場", "食堂", "ワイン", "バール", "バル", "バー", "麺処", "麵処", "麺屋", "麺や", "手打ち", "中国料理", "中国菜", "京料理", "酒処", "やきとり", "焼とり", "タヴェルナ", "キッチン",
   "dining", "kitchen", "restaurant", "bistro", "cafe", "café", "coffee", "bar", "lunch", "beans", "shop", "steak", "house",
 ].sort((a, b) => b.length - a.length);
 
@@ -147,7 +147,16 @@ export function autoGateUnits(name: string, area = ""): string[] | null {
     for (const ch of Array.from(s)) if (!JOIN.test(ch)) units.push(ch);
   }
   flush();
-  const out = units.filter((u) => u.length > 0);
+  let out = units.filter((u) => u.length > 0);
+  // 外すと 1 字だけになる（業態を外した結果）ときは、業態の語を残す（「焼肉 膳」→ 焼・肉・膳）
+  if (out.length === 1 && hasJa(out[0]) && Array.from(out[0]).length === 1 && segs0.length >= 2) {
+    const keepAll: string[] = [];
+    for (const sgm of segs0.filter((x) => !JOIN.test(x) && !isBranch(x) && !isPlace(x))) {
+      if (isLatinWord(sgm)) keepAll.push(sgm);
+      else keepAll.push(...Array.from(sgm).filter((ch) => !JOIN.test(ch)));
+    }
+    if (keepAll.length > 1 && keepAll.length <= GATE_MAX_UNITS) out = keepAll;
+  }
   if (out.length === 0 || out.length > GATE_MAX_UNITS) return null;
   return out;
 }

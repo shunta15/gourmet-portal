@@ -15,6 +15,9 @@ import type { ListShop } from "@/lib/portal/listShop";
 import { BUDGET_BANDS } from "@/lib/portal/facetDefs";
 import { FACT_ATOMS, ATOM_BIT, OMAKASE_PREFS, WHO_OPTIONS, type OState, type OmakaseRow, type Relax } from "@/lib/portal/omakaseDefs";
 import SaveButton from "../SaveButton";
+import { BlockCard } from "../noren/BlockSearchParts";
+import type { SearchItem } from "@/lib/regions";
+import type { FactTag } from "@/lib/portal/omakaseFacts";
 import { useShops } from "./useShops";
 
 const NUMERALS = ["壱", "弐", "参"] as const;
@@ -55,9 +58,15 @@ interface Props {
   onReveal?: (revealed: boolean) => void;
   /** カードを指している店（ふるいの点を大きく見せる用） */
   onHot?: (id: string | null) => void;
+  /**
+   * 周りのページの新しい見た目（RELEASE_PERIPHERY）: 店の札を /search の結果の札（BlockCard）にする。factsOf は札に添える事実の行（予算・設備・特徴。/search と同じ作り方）。
+   * 札の事実の行は、答えた条件（選んだ条件。先頭・橙の点）に、店の事実を続ける。渡さないとき（false）は今までの札。
+   */
+  blockCards?: boolean;
+  factsOf?: (id: string) => FactTag[];
 }
 
-export default function Results({ ids, rowById, st, total, page, pages, onMore, relax, onRelax, onReveal, onHot }: Props) {
+export default function Results({ ids, rowById, st, total, page, pages, onMore, relax, onRelax, onReveal, onHot, blockCards = false, factsOf }: Props) {
   const [shown, setShown] = useState<string[]>(ids);
   const [curtain, setCurtain] = useState<Curtain>("drop");
   const [revealedOnce, setRevealedOnce] = useState(false);
@@ -198,7 +207,20 @@ export default function Results({ ids, rowById, st, total, page, pages, onMore, 
       </div>
 
       <div className="om-cards-wrap">
-        {shown.length > 0 && (
+        {shown.length > 0 && blockCards && (
+          <ol className="om-cards vBk om-bk" data-visible={cardsVisible ? "1" : "0"} aria-label="条件に合う店">
+            {list.map(({ id, shop }, i) => {
+              const row = rowById.get(id);
+              // 選んだ条件（その店に当てはまった答え）を先頭に、続けて店の事実（重なる語は 1 つに）。最大 5 つ
+              const why = reasonsOf(shop, row, st).map((w) => ({ label: w.replace(/^予算は /, "予算 "), on: true }));
+              const seen = new Set(why.map((w) => w.label));
+              const tags = [...why, ...(factsOf?.(id) ?? []).filter((t) => !seen.has(t.label))];
+              const item = { id, name: shop.name, cuisine: shop.category, area: shop.area, region: "", address: "", desc: "", tags: [], shape: "", image: shop.photo?.src ?? "" } as unknown as SearchItem;
+              return <BlockCard key={id} r={item} tags={tags.slice(0, 5)} tagsTotal={tags.length} eager={i < 3} />;
+            })}
+          </ol>
+        )}
+        {shown.length > 0 && !blockCards && (
           <ol className="om-cards" data-visible={cardsVisible ? "1" : "0"} aria-label="条件に合う店">
             {list.map(({ id, shop }, i) => {
               const row = rowById.get(id);

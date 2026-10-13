@@ -22,6 +22,17 @@ import { FEATURED_SINGLE_IDS } from "./featureSingle";
  */
 export const NOREN_ONE_PAGE = RELEASE_FEATURE;
 
+/**
+ * 特集記事の無い店（店 1 軒の記事の対を持たない店）の 1 ページ（2026-10-13。第 2 段）。切り替えは NOREN_ONE_PAGE と同じ RELEASE_FEATURE（false で全部が今までの店ページに戻る）。
+ * 記事の本文が無いので、店のデータ（紹介文 desc・本文 body・特徴 highlights・写真・基本情報）から、同じ部品で「入口の暖簾 → 巻頭 → 紹介文 → 本文に写真を添えて → 特徴 → 店舗情報」を組む（lib/portal/photoFeature/build.ts の buildShopPage）。
+ * 形になる条件: 本文（body）に 1 段落以上ある（紹介文 desc は、あれば巻頭の下に出す）。写真の枚数は問わない（0 枚なら暖簾 + 文 + 店舗情報の形）。
+ * 条件に合わない店は、今までの店ページのまま。
+ */
+export const NOREN_SHOP_ONE_PAGE = RELEASE_FEATURE;
+export function shopOnePageEligible(r: { desc?: string; body?: string[] }): boolean {
+  return Array.isArray(r.body) && r.body.some((t) => typeof t === "string" && t.trim().length > 0);
+}
+
 /** 記事 ID → 店 ID（先頭の 50 本 = FEATURED_SINGLE_IDS の 50 本（先頭の 20 本が先頭の 20 本）。続きは 2026-10-13 に足した分） */
 export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "スペインバルPALLO": "r361", // スペインバルPALLO

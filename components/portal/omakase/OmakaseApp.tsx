@@ -45,6 +45,7 @@ import {
   type Relax,
   type StepId,
 } from "@/lib/portal/omakaseDefs";
+import { makeFactsOf } from "@/lib/portal/omakaseFacts";
 import CountRoll from "./CountRoll";
 import Pool from "./Pool";
 import Results from "./Results";
@@ -160,8 +161,9 @@ function Opt({ label, note, count, selected, picked, dim, any, expanded, control
 
 /* ───────────────────────── 本体 ───────────────────────── */
 
-export default function OmakaseApp({ data }: { data: OmakaseData }) {
+export default function OmakaseApp({ data, blockCards = false }: { data: OmakaseData; blockCards?: boolean }) {
   const sp = useSearchParams();
+  const factsOf = useMemo(() => (blockCards ? makeFactsOf(data) : undefined), [blockCards, data]);
   const parsed = useMemo(() => parseOmakase((k) => sp.get(k), data.shownBands), [sp, data.shownBands]);
   const { st, edit, seed, page } = parsed;
   const rows = data.rows;
@@ -615,6 +617,8 @@ export default function OmakaseApp({ data }: { data: OmakaseData }) {
               onRelax={(r: Relax) => go(r.next, { edit: null, seed, page: 0 })}
               onReveal={setRevealed}
               onHot={setHot}
+              blockCards={blockCards}
+              factsOf={factsOf}
             />
             <div className="om-r-actions">
               {total > 0 && (

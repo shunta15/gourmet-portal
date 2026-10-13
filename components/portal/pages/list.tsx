@@ -10,6 +10,10 @@ import { Suspense } from "react";
 import { buildMetadata } from "@/lib/seo/meta";
 import ListView, { ListSkeleton } from "../ListView";
 import { PageFrame, type Tone } from "./frame";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない）
+const ListPageView = dynamic(() => import("../periphery/ListPageView"));
 
 const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "候" };
 
@@ -28,6 +32,8 @@ export function generateMetadata(): Metadata {
 }
 
 export default function Page() {
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY）。保存・共有の仕組み・字は同じ
+  if (RELEASE_PERIPHERY) return <ListPageView />;
   return (
     <PageFrame
       tone={TONE}

@@ -15,6 +15,10 @@ import { buildMetadata } from "@/lib/seo/meta";
 import Breadcrumbs from "../Breadcrumbs";
 import PortalFonts from "../PortalFonts";
 import OmakaseApp from "../omakase/OmakaseApp";
+import dynamic from "next/dynamic";
+import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
+// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない）
+const OmakaseView = dynamic(() => import("../periphery/OmakaseView"));
 
 type SP = Record<string, string | string[] | undefined>;
 type Props = { searchParams: Promise<SP> };
@@ -45,6 +49,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 export default async function Page() {
   assertPortalLive();
   const data = await loadOmakaseData();
+  // 周りのページの新しい見た目（RELEASE_PERIPHERY）。質問・結果の仕組み・字は同じ
+  if (RELEASE_PERIPHERY) return <OmakaseView data={data} />;
   return (
     <div className="om-page">
       <PortalFonts />

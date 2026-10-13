@@ -7,12 +7,12 @@ import { REGIONS } from "@/lib/regions";
 import { getRestaurantById, getAllRestaurantIds } from "@/lib/db/restaurants";
 import { buildRestaurantJsonLd, buildBreadcrumbJsonLd, buildArticleJsonLd } from "@/lib/jsonld";
 import { getFeatureArticleById } from "@/lib/db/features";
-import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { ARTICLE_STORE_FEATURE_IDS, ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
-import { onePageFeatureOf } from "@/lib/portal/noren/onePage";
+import { NOREN_SHOP_ONE_PAGE, onePageFeatureOf, shopOnePageEligible } from "@/lib/portal/noren/onePage";
 import { NOREN_FEATURE_PHOTO, isDummyFeatureImage, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
 import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
-import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
+import { buildPhotoFeature, buildShopPage } from "@/lib/portal/photoFeature/build";
 import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { getShopInfo } from "@/lib/portal/photoFeature/shopInfo";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
@@ -113,6 +113,45 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(onePageBreadcrumb) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <PhotoFeatureShell>
+          <PhotoFeaturePage
+            data={data}
+            shopHref={null}
+            listHref="/feature"
+            topHref={LIVE_LINKS.top}
+            searchHref="/search"
+            related={related}
+            shopInfo={shopInfo}
+            onePage
+            shopFeatures={shopFeatures}
+          />
+        </PhotoFeatureShell>
+      </>
+    );
+  }
+
+  // 特集記事の無い店（第 2 段。2026-10-13）: 対の特集記事を持たない店は、店のデータ（紹介文・本文・特徴・写真・基本情報）から、同じ部品で「入口の暖簾 → 巻頭 → 紹介文 → 写真と本文 → 特徴 → 店舗情報」の 1 ページを出す。
+  // 切り替えは NOREN_SHOP_ONE_PAGE（RELEASE_FEATURE と同じ。false で今までの店ページ）。形になる条件（紹介文と本文がある）に合わない店・記事の対を持つ店（上の分岐に入らなかったとき）は、今までの店ページ。
+  const hasPair = !!(r.featureId ?? ARTICLE_STORE_FEATURE_IDS[r.id]);
+  if (NOREN_SHOP_ONE_PAGE && !featureId && !hasPair && shopOnePageEligible(r)) {
+    const page = `/restaurant/${r.id}`;
+    const data = buildShopPage(r);
+    const shopInfo = await getShopInfo(r, LIVE_LINKS, page);
+    const related = await getRelatedFeatured("", { region: r.region, cuisine: r.cuisine });
+    const shopFeatures = (await featuresOfShop(r.id))
+      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_FEATURE && isDummyFeatureImage(f.image)) ? f.image : "" }));
+    // 1 ページ版は点数・口コミ件数を画面に出さないので、構造化データにも評価（aggregateRating）を入れない。地域のパンくずは「さがす」へ
+    const { aggregateRating: _omit, ...restaurantLd } = restaurantJsonLd as Record<string, unknown>;
+    void _omit;
+    const onePageBreadcrumb = buildBreadcrumbJsonLd([
+      { name: "トップ", url: BASE },
+      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
+      { name: r.name, url: `${BASE}/restaurant/${r.id}` },
+    ]);
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(onePageBreadcrumb) }} />
         <PhotoFeatureShell>
           <PhotoFeaturePage
             data={data}

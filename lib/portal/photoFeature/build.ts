@@ -63,7 +63,11 @@ export type PfBlock =
   /** 写真の多い視点（または写真だけの面）。画面に留めて、重なった写真をスクロールで 1 枚ずつ入れ替える（紙芝居）。photos[i] の小見出しは views[owner[i]]（無ければ -1） */
   | { kind: "stack"; views: PfView[]; photos: PfPhoto[]; owner: number[] }
   /** 写真が 1 枚ずつの視点が 3 つ続くとき、その 3 つの写真を、画面に留めて横へ流れる帯にする（スマホは横にはらう帯）。小見出しは写真の上、文は帯の下 */
-  | { kind: "film"; views: PfView[]; photos: PfPhoto[] };
+  | { kind: "film"; views: PfView[]; photos: PfPhoto[] }
+  /** 特集記事の無い店（店のデータだけで組む 1 ページ）: 小見出しの無い、写真の列（0〜3 枚）+ 文。写真が 0 枚なら、和紙の面に文だけ（筆の線と朱の印で区切る） */
+  | { kind: "plain"; photos: PfPhoto[]; text: PfText; variant: "A" | "B" | "C" | "D" | "E"; rv: Rv }
+  /** 特集記事の無い店: 店のデータの「特徴」（短い箇条）。和紙の面に、朱の点を打って並べる */
+  | { kind: "points"; items: string[] };
 
 export type PfData = {
   id: string;
@@ -83,6 +87,8 @@ export type PfData = {
   closing: PfText;
   /** 入口の暖簾に染める字（featured.ts の GATE_UNITS。表にない記事は null = 店名から自動で割る） */
   gate: string[] | null;
+  /** 巻頭の「特集」の札を出すか（特集記事の 1 ページは true。特集記事の無い店は false） */
+  tag: boolean;
   /** 使った写真の枚数（主役 + 視点 + 写真だけの面） */
   photoCount: number;
   /** そのうち、店ページから足した枚数 */
@@ -215,7 +221,7 @@ function phraseCols(chars: string[], emAt: number, maxPer: number, cuts?: Set<nu
 }
 
 /** titleHTML（<br>・<em> だけ意味を持つ）から、題の縦書きの列と、強調の範囲を取り出す */
-export function titleColumns(titleHTML: string, fallback: string): PfData["title"] {
+export function titleColumns(titleHTML: string, fallback: string, words = false): PfData["title"] {
   const html = titleHTML || fallback;
   let text = "";
   const breaks: number[] = [];
@@ -238,7 +244,14 @@ export function titleColumns(titleHTML: string, fallback: string): PfData["title
   const byBr = br.length > 0 ? cuts.slice(1).map((b, i) => chars.slice(cuts[i], b).join("")) : [];
   let cols: string[];
   if (byBr.length > 0 && byBr.length <= 4 && byBr.every((c) => Array.from(c).length <= MAXPER + 3)) cols = byBr;
-  else cols = phraseCols(chars, emFrom >= 0 && emTo > emFrom ? emFrom : -1, MAXPER) ?? splitBalanced(chars, Math.min(4, Math.max(2, Math.ceil(len / 10))));
+  else {
+    // words が true（特集記事の無い店の店名）のときは、語（空白で分かれた欧文の語など）の途中で列が切れないようにする
+    const wcuts = words ? wordCuts(plain) : undefined;
+    cols =
+      phraseCols(chars, emFrom >= 0 && emTo > emFrom ? emFrom : -1, MAXPER, wcuts) ??
+      splitBalanced(chars, Math.min(4, Math.max(2, Math.ceil(len / 10))), wcuts && wcuts.size > 0 ? (i) => wcuts.has(i) : undefined);
+    if (words) cols = cols.map((c) => c.trim()).filter((c) => c.length > 0);
+  }
   const em: [number, number] | null = emFrom >= 0 && emTo > emFrom && emTo <= len ? [emFrom, emTo] : null;
   return { cols, per: Math.max(...cols.map((c) => Array.from(c).length)), em, plain };
 }
@@ -491,7 +504,102 @@ export function buildPhotoFeature(A: FeatureArticle, store: Restaurant | null, o
     mapsUrl: mapsUrlOf(A),
     quote: A.quote ? paragraphs(stripTabelogScore(A.quote), 90) : [],
     closing: A.closing ? splitExcerpt(stripTabelogScore(A.closing)) : { head: "", rest: [] },
+    tag: true,
     photoCount: used,
     fromShop,
+  };
+}
+
+/* ───────── 特集記事の無い店の 1 ページ ───────── */
+
+/**
+ * 特集記事の無い店（対の特集記事を持たない店）の 1 ページ。記事の本文が無いので、店のデータにある文・写真だけで、同じ部品で組む:
+ *   入口の暖簾 → 巻頭（主役の写真 + 店名の札。写真が無ければ和紙の面に店名を大きく）→ 紹介文（desc）→ 本文の段落（body）に写真を添えて → 特徴（highlights）→ 店舗情報
+ * 見どころ（視点）は作らない。小見出し・題・締めの文は作らない（無いものは出さない）。店名・文・写真は店のデータそのまま（新しい事実・文は足さない）。
+ * 写真: 店ページの実物の写真（image・heroImages・gallery。使えないもの・重複は除く）。1 つめが巻頭、残りは本文の段落に 1〜3 枚ずつ、あふれた分は写真だけの面へ。写真が 0 枚なら文だけ。
+ */
+/** 店名の題。縦書きでは、欧文・数字（横に倒れて並ぶ）は 1 字の長さが日本語の字の約 0.6 なので、1 列の長さ（per）はその重みで数える（題の大きさ・札の高さが、欧文の店名で余らないように） */
+function shopTitle(name: string): PfData["title"] {
+  const t = titleColumns(name, name, true);
+  const wlen = (c: string) => Array.from(c).reduce((n, ch) => n + (/[\x20-\x7e]/.test(ch) ? 0.6 : 1), 0);
+  return { ...t, per: Math.max(2, Math.ceil(Math.max(...t.cols.map(wlen)))) };
+}
+
+export function buildShopPage(store: Restaurant): PfData {
+  const c = collectPhotos({ heroImage: store.image, ranking: [] }, store);
+  let hero = c.hero;
+  let pool: Photo[] = [...c.shop];
+  if (!hero && pool.length > 0) hero = pool.shift() ?? null;
+  const alt = (what: string) => `${store.name}（${what}）`;
+  pool = pool.slice(0, Math.max(0, PHOTO_BUDGET - (hero ? 1 : 0)));
+  const used = (hero ? 1 : 0) + pool.length;
+  // 主役の写真が小さい（元の幅 × 1.3 が 900px 未満）とき: 次の写真（横長）があれば、巻頭で主役の横に接して並べる（特集記事と同じ coverPair。小見出しは無い）。
+  // 次の写真が無い・縦長のときは、小さな写真を巻頭に置かず、巻頭は和紙の面に店名を大きく見せて、その写真は最初の写真の列に回す。
+  let heroPf = hero ? toPf(hero, alt("主役の写真")) : null;
+  let coverPair: PfView | null = null;
+  if (hero && heroPf && heroPf.cap < 900) {
+    const next = pool[0] ? toPf(pool[0], alt("店の写真")) : null;
+    if (next && !next.port) {
+      pool.shift();
+      coverPair = { no: "", name: "", cols: [], big: [], heading: "", head: "", rest: [], photos: [next], nr: [] };
+    } else {
+      pool.unshift(hero);
+      hero = null;
+      heroPf = null;
+    }
+  }
+
+  // 文: 本文の段落（点数・口コミの文は店のデータを読む層で取り除いてある。念のため、暖簾の表示の直前と同じ関数を通す）
+  const paras = (store.body ?? []).map((t) => stripTabelogScore(t ?? "").trim()).filter((t) => t.length > 0);
+  const m = paras.length;
+  // 写真を段落に配る: 1 段落に最大 3 枚。あふれた分は写真だけの面（2 枚以上）か、最後の段落（1 枚）へ
+  const per = m > 0 ? Math.min(PER_VIEW_MAX, Math.ceil(pool.length / m)) : 0;
+  const groups: Photo[][] = paras.map((_, i) => pool.slice(i * per, (i + 1) * per));
+  let leftover = pool.slice(m * per);
+  if (leftover.length === 1 && m > 0 && groups[m - 1].length < PER_VIEW_MAX) {
+    groups[m - 1].push(leftover[0]);
+    leftover = [];
+  }
+  const blocks: PfBlock[] = [];
+  const SINGLE: Rv[] = ["curtain", "tilt", "flow", "paper"];
+  let si = 0;
+  paras.forEach((t, i) => {
+    const ph = groups[i].map((p) => toPf(p, alt("店の写真")));
+    const rv: Rv = ph.length >= 2 ? "converge" : ph.length === 1 ? SINGLE[si++ % SINGLE.length] : "none";
+    if (rv === "flow") for (const p of ph) { p.cap = Math.round((p.cap * 1.04) / 1.12); p.z = 1.12; }
+    blocks.push({ kind: "plain", photos: ph, text: { head: t, rest: [] }, variant: VARIANTS[i % VARIANTS.length], rv });
+  });
+  if (leftover.length >= 2) {
+    const nb = leftover.length >= 7 ? 2 : 1;
+    const perBand = Math.ceil(leftover.length / nb);
+    let at = Math.max(0, Math.ceil(m / 2));
+    for (let k = 0; k < nb; k++) {
+      const band: PfBlock = { kind: "band", photos: leftover.slice(k * perBand, (k + 1) * perBand).map((p) => toPf(p, alt("店の写真"))), no: k + 1, rv: "converge" };
+      blocks.splice(Math.min(at, blocks.length), 0, band);
+      at = blocks.length;
+    }
+  }
+  const hl = (store.highlights ?? []).map((t) => stripTabelogScore(t ?? "").trim()).filter((t) => t.length > 0);
+  if (hl.length > 0) blocks.push({ kind: "points", items: hl });
+
+  const desc = stripTabelogScore(store.desc ?? "").trim();
+  return {
+    id: store.id,
+    title: shopTitle(store.name),
+    subCols: [],
+    lede: desc ? splitExcerpt(desc) : { head: "", rest: [] },
+    hero: heroPf,
+    heroAlt: alt("主役の写真"),
+    coverPair,
+    gate: gateUnitsFor(null, { id: store.id, name: store.name, area: store.area }),
+    shop: { id: store.id, name: store.name, cuisine: store.cuisine, area: store.area },
+    blocks,
+    info: infoRows(store),
+    mapsUrl: "",
+    quote: [],
+    closing: { head: "", rest: [] },
+    tag: false,
+    photoCount: used,
+    fromShop: used,
   };
 }
