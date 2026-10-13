@@ -51,7 +51,7 @@ function wmNearest(w: number): number {
 /**
  * Wikimedia Commons の画像を、画面に出す幅に近い標準幅の thumb にする（同じ写真の小さい版だけ。写真は変えない）。
  * - thumb の URL（…/thumb/a/ab/File.jpg/1280px-File.jpg）: 幅の数字だけを、欲しい幅に近い標準幅へ（元の幅より大きくしない）
- * - 元の画像の URL（…/commons/a/ab/File.jpg。jpg / png だけ）: thumb の URL にする（元の画像が標準幅より狭いと 400 になることがあるので、1280 までにする）
+ * - 元の画像の URL（…/commons/a/ab/File.jpg。jpg / png だけ）: 欲しい幅が 500 以下のときだけ thumb の URL にする（元の画像が 960・1280 より狭いと 400 になるので、それ以上は元の URL のまま）
  * - それ以外（svg・tif・webp・クエリ付きなど）は、そのまま
  */
 export function wikimediaSized(url: string, w: number): string {
@@ -64,6 +64,7 @@ export function wikimediaSized(url: string, w: number): string {
     return use === n ? url : `${th[1]}/${use}px-${th[3]}`;
   }
   const og = url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[a-z-]+)\/([0-9a-f]\/[0-9a-f]{2}\/([^/?#]+\.(?:jpe?g|png)))$/i);
-  if (og) return `${og[1]}/thumb/${og[2]}/${want}px-${og[3]}`;
+  // 元の画像が狭いと、その幅の thumb は 400 になる。確認の済んでいない幅（501 以上）へは上げず、元の URL のまま返す
+  if (og) return want <= 500 ? `${og[1]}/thumb/${og[2]}/${want}px-${og[3]}` : url;
   return url;
 }
