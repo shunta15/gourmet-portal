@@ -145,7 +145,7 @@ export function BsFacts({ shop }: { shop: BsShop }) {
 function Mini({ m, v }: { m: BsMini; v: number }) {
   return (
     <li>
-      <Link href={`/bodycare/shop/${m.id}?v=${v}`} className="bs-mini" style={{ ["--mat" as string]: m.color }}>
+      <Link href={v ? `/bodycare/shop/${m.id}?v=${v}` : `/bodycare/shop/${m.id}`} className="bs-mini" style={{ ["--mat" as string]: m.color }}>
         {m.photo ? (
           <span className="bs-mini-ph">
             <BsImg p={m.photo} sizes="(max-width: 700px) 50vw, 25vw" />
@@ -164,7 +164,7 @@ function Mini({ m, v }: { m: BsMini; v: number }) {
   );
 }
 
-/** 同じエリアの店・同じ種類の店。見本では、行き先も同じ案(?v=)のまま */
+/** 同じエリアの店・同じ種類の店。見本では、行き先も同じ案(?v=)のまま。公開版(v=0)は引数なし */
 export function BsMoreShops({ shop, v, title }: { shop: BsShop; v: number; title?: (kind: "area" | "kind") => ReactNode }) {
   const t = title ?? ((k) => (k === "area" ? `${shop.prefShort}の店` : `${shop.kindName}の店`));
   return (

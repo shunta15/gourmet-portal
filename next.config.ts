@@ -1,8 +1,10 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
 import { BODYSHOP_PREVIEW } from "./lib/portal/vert/bodyshopPreview";
+import { BODYCARE_SHOP_DESIGN } from "./lib/portal/vert/bodycareStructure";
 // ── scene ここから
 import { NOREN_SCENE_REWRITE, NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
@@ -45,7 +47,23 @@ const PORTAL_OFF_SOURCES = [
   "/proto-noren/:path*", // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用。本番は ON でも 404）
 ];
 
+// ボディケアの店のページの案(lib/portal/vert/bodycareStructure.ts の BODYCARE_SHOP_DESIGN)。選んだ 1 案の部品だけを、"bodyshop-design" の行き先にする
+// (選ばなかった案の JS・CSS は、店のページの依存に入らない)。"legacy" は何も出さない部品(今までの店のページを使う)。
+const BODYSHOP_DESIGN_FILE = {
+  legacy: "ShopNone",
+  a: "ShopA",
+  b: "ShopB",
+  c: "ShopC",
+}[BODYCARE_SHOP_DESIGN];
+const BODYSHOP_DESIGN_PATH = `./components/portal/vert/bodyshop/${BODYSHOP_DESIGN_FILE}.tsx`;
+
 const nextConfig: NextConfig = {
+  turbopack: { resolveAlias: { "bodyshop-design": BODYSHOP_DESIGN_PATH } },
+  webpack: (config) => {
+    config.resolve = config.resolve ?? {};
+    config.resolve.alias = { ...(config.resolve.alias ?? {}), "bodyshop-design": path.resolve(process.cwd(), BODYSHOP_DESIGN_PATH) };
+    return config;
+  },
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },

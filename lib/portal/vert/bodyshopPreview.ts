@@ -3,4 +3,5 @@
  * 見本・ローカルだけ true(VERCEL_ENV が preview、またはローカルの next dev。lib/portal/launch.ts の isPreviewOrLocal と同じ条件)。
  * 本番(VERCEL_ENV=production・next build)では false: ?v= は読まれず、/bodycare/shop/<id> は今の店のページのまま(出力も静的生成もそのまま)。
  */
-export const BODYSHOP_PREVIEW = process.env.VERCEL_ENV === "preview" || process.env.NODE_ENV !== "production";
+// BODYSHOP_PREVIEW_OFF=1 は、ローカルの dev で「本番の条件(?v= を読まない)」を再現して確かめるためだけの引数(本番・プレビューでは設定しない)。
+export const BODYSHOP_PREVIEW = (process.env.VERCEL_ENV === "preview" || process.env.NODE_ENV !== "production") && process.env.BODYSHOP_PREVIEW_OFF !== "1";
