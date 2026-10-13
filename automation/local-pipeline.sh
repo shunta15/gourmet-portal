@@ -176,6 +176,30 @@ else
   PROCESS_LIST=$(echo "$CANDIDATES_JSON" | jq -c ".feature[:$MAX][]")
 fi
 
+# === 店ページ化の段（既定は無効・オーナー承認後に MACHINOWA_STORE_PAGE=1 で有効にする） ===
+# 新しい記事ができたら、その店のデータ（lib/articleStores.ts ほか）も作り、記事 /feature/<記事ID> と対の店ページ
+# /restaurant/<店ID> にする。店の追加になるので、既定では入れない（automation/申し送り.md「店ページ化の段」）。
+# 有効にする前の準備: ① build-stores.mjs の再生成で既存の店の画像欄が変わる（2026-10-13 実測 6 店）ので、一度再生成して
+# commit しておく ② 1 店 1 ページの表（lib/portal/noren/onePage.ts）に行を足す仕組みを lib/portal の持ち主と決める。
+# 有効でも、失敗（GBP が取れない・除外・生成器のずれ）したら店ページ化せず記事だけで続行する。
+STORE_PAGE_STEP=""
+if [ "${MACHINOWA_STORE_PAGE:-0}" = "1" ]; then
+  log "🏪 店ページ化の段: 有効 (MACHINOWA_STORE_PAGE=1)"
+  STORE_PAGE_STEP=$(cat <<'STEP_EOF'
+7b. 店ページ化（失敗しても記事は成立している。失敗したら commit せず 8 へ進む）:
+     node automation/stores500/add-article-store.mjs --id=__SAFE_NAME__ --sheetName=__SHEET_NAME_QUOTED__ --mapsUrl='__MAPS_URL__'
+   - 終了コード0（店ページを作れた）: npm run build を実行。通ったら次の対象ファイルだけを add して commit/push（git add -A は禁止）:
+       git add lib/articleStores.ts lib/articleRegions.ts lib/geo.ts automation/stores500/ids.json automation/stores500/map.json automation/stores500/gbp/__SAFE_NAME__.json automation/stores500/excluded.json automation/stores500/tag-evidence.json automation/stores500/warnings.json automation/stores500/region-mismatch.json
+       git commit -m feat(stores)店ページを自動生成
+       git pull --rebase origin main
+       git push origin main
+     build が通らなかったら commit せず、git checkout -- lib/articleStores.ts lib/articleRegions.ts lib/geo.ts automation/stores500/ids.json automation/stores500/map.json automation/stores500/excluded.json automation/stores500/tag-evidence.json automation/stores500/warnings.json automation/stores500/region-mismatch.json で戻す（gbp のファイルは残してよい）。
+   - 終了コード4（除外された。閉業・住所の食い違い等）: 店ページは作らない。上と同じ対象ファイルのうち変わった物だけを commit/push（記録を残して次回また取りに行かないため）。
+   - 終了コード2・3・5（記事が無い・GBP が取れない・生成器のずれ）: 何も commit しない。変わっている物は git checkout -- で元に戻す。記事だけで続行する。
+STEP_EOF
+)
+fi
+
 while IFS= read -r CANDIDATE; do
   [ -z "$CANDIDATE" ] && continue
   ROW=$(echo "$CANDIDATE" | jq -r '.sourceRow')
@@ -399,6 +423,7 @@ __GBP_PHOTO_BLOCK__
      git reset --hard HEAD~1
      rm -rf public/restaurants/teleapo-__SAFE_NAME__
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --status=error --reason=git push失敗
+__STORE_PAGE_STEP__
 8. スプシ書き戻し:
      node scripts/sheets-mark-done.mjs --type=feature --row=__ROW__ --url=https://machinowa.tokyo/feature/__SAFE_NAME__
 
@@ -424,6 +449,12 @@ PROMPT_EOF
 )
 
   # プレースホルダ → 実値 置換
+  # （店ページ化の段は、中に別のプレースホルダを含むので最初に差し込む。無効のときは空文字になる）
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__STORE_PAGE_STEP__/$STORE_PAGE_STEP}"
+  # 店名はシェルの引数として安全な形（シングルクォートで囲み、中の ' は '\'' に）にする
+  SQ="'"
+  SHEET_NAME_QUOTED="'${NAME//$SQ/$SQ\\$SQ$SQ}'"
+  CLAUDE_PROMPT="${CLAUDE_PROMPT//__SHEET_NAME_QUOTED__/$SHEET_NAME_QUOTED}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__ROW__/$ROW}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__NAME__/$NAME}"
   CLAUDE_PROMPT="${CLAUDE_PROMPT//__MAPS_URL__/$MAPS_URL}"
