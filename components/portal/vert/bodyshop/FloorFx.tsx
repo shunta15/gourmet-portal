@@ -14,7 +14,7 @@ import { useEffect } from "react";
 const clamp = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
 
 type Kind = "mat" | "ball" | "bamboo";
-type Ob = { hx: number; x: number; y: number; vx: number; vy: number; r: number; ang: number; w: number; kind: Kind; color: string; grab: boolean };
+type Ob = { pend: number; hx: number; x: number; y: number; vx: number; vy: number; r: number; ang: number; w: number; kind: Kind; color: string; grab: boolean };
 
 export default function FloorFx() {
   useEffect(() => {
@@ -76,7 +76,7 @@ export default function FloorFx() {
       obs = spec.map(([kind, k, color], i) => {
         const r = base * k;
         const hx = W * ((i + 0.5) / spec.length);
-        return { hx, x: clamp(hx, r + 2, W - r - 2), y: floorY - r, vx: 0, vy: 0, r, ang: i * 1.3, w: 0, kind, color, grab: false };
+        return { pend: 0, hx, x: clamp(hx, r + 2, W - r - 2), y: floorY - r, vx: 0, vy: 0, r, ang: i * 1.3, w: 0, kind, color, grab: false };
       });
     };
     const resize = () => {
@@ -111,6 +111,15 @@ export default function FloorFx() {
           o.x = clamp(o.x, o.r, W - o.r);
           o.y = clamp(o.y, o.r, floorY - o.r);
           continue;
+        }
+        // 送った量(pend)を、数コマかけて物の動きにする(一度に動かして重ならない)
+        if (o.pend !== 0) {
+          const take = o.pend * Math.min(1, dt * 16);
+          o.pend -= take;
+          const nx = clamp(o.x + take, o.r, W - o.r);
+          o.ang += (nx - o.x) / o.r;
+          o.x = nx;
+          o.vx = clamp(o.vx + (take / Math.max(dt, 0.004)) * 0.1, -1500, 1500);
         }
         // 床の傾き(スクロール)+ ゆっくりした揺れ(静かでも転がり続ける)+ 浅い鉢(元の場所へ戻ろうとして、行き来する)
         const kHome = scrolling ? 0.22 : 0.85;
@@ -149,11 +158,34 @@ export default function FloorFx() {
         for (let j = i + 1; j < obs.length; j++) {
           const a = obs[i];
           const b = obs[j];
-          const dx = b.x - a.x;
-          const dy = b.y - a.y;
-          const d = Math.hypot(dx, dy) || 0.001;
+          let dx = b.x - a.x;
+          let dy = b.y - a.y;
           const min = a.r + b.r;
+          let d = Math.hypot(dx, dy) || 0.001;
           if (d >= min) continue;
+          // 床の上にいる物どうしは、横だけで押し合う(重なっても跳ね上がらない)
+          if (a.y + a.r >= floorY - 3 && b.y + b.r >= floorY - 3) {
+            const eff = Math.sqrt(Math.max(1, min * min - dy * dy));
+            if (Math.abs(dx) >= eff) continue;
+            dx = dx >= 0 ? eff : -eff;
+            dy = 0;
+            d = eff;
+            const push = eff - Math.abs(b.x - a.x);
+            const sg = b.x >= a.x ? 1 : -1;
+            const ka = a.grab ? 0 : 0.5;
+            const kb = b.grab ? 0 : 0.5;
+            a.x = clamp(a.x - sg * push * (ka || 0), a.r, W - a.r);
+            b.x = clamp(b.x + sg * push * (kb || 0), b.r, W - b.r);
+            const rvx = (b.vx - a.vx) * sg;
+            if (rvx < 0) {
+              const ma0 = a.r * a.r;
+              const mb0 = b.r * b.r;
+              const imp0 = (-(1 + 0.3) * rvx) / (1 / ma0 + 1 / mb0);
+              if (!a.grab) a.vx -= (sg * imp0) / ma0;
+              if (!b.grab) b.vx += (sg * imp0) / mb0;
+            }
+            continue;
+          }
           const nx = dx / d;
           const ny = dy / d;
           const ma = a.r * a.r;
@@ -306,12 +338,7 @@ export default function FloorFx() {
       if (dS !== 0) {
         const dd = clamp(dS, -260, 260);
         obs.forEach((o, oi) => {
-          if (o.grab) return;
-          const dx = dd * (0.24 + 0.05 * oi);
-          const nx = clamp(o.x + dx, o.r, W - o.r);
-          o.ang += (nx - o.x) / o.r;
-          o.x = nx;
-          o.vx = clamp(o.vx + (dx / Math.max(dt, 0.008)) * 0.18, -1500, 1500);
+          if (!o.grab) o.pend += dd * (0.24 + 0.05 * oi);
         });
       }
       scrolling = Math.abs(scrollVel) > 60;
