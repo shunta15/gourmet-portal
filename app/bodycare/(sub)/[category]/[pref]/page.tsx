@@ -1,6 +1,8 @@
 import { categoryAreaPage } from "@/components/portal/pages/category-area";
+import { categoryAreaRedirectPage } from "@/components/portal/vert/bodyshop/redirects";
 
-const page = categoryAreaPage("bodycare");
+// ボディケアが「さがす」にまとまる構成のとき(lib/portal/vert/bodycareStructure.ts)だけ、さがす/店のページへ恒久の転送。そうでなければ元のページ。
+const page = categoryAreaRedirectPage(categoryAreaPage("bodycare"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

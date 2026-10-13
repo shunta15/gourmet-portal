@@ -1,0 +1,71 @@
+/* ボディケアの「さがす」。木の床・紙の帯・明朝・落ち着いた 5 色 */
+.bq{padding-top:56px}
+.bq-top{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--sumi);border-radius:999px;font:700 13px/1 var(--sans);letter-spacing:.06em;background:var(--paper);white-space:nowrap}
+.bq-hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) var(--gut) clamp(60px,8vw,96px)}
+.bq-hero-in{position:relative;z-index:2;max-width:1100px;margin:0 auto}
+.bq-eyebrow{font:500 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:#3d3a34;margin-bottom:14px}
+.bq-h1{font:800 clamp(34px,6vw,76px)/1.15 var(--min);letter-spacing:.04em;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+.bq-lead{margin-top:14px;font:500 15px/1.9 var(--sans);color:#2a2823;max-width:34em}
+.bq-form{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) auto;gap:0;margin-top:clamp(22px,3vw,34px);background:var(--paper);box-shadow:0 18px 30px -18px rgba(30,20,8,.8),0 0 0 1px rgba(28,27,25,.2)}
+.bq-field{display:grid;gap:4px;padding:12px 16px;border-right:1px solid rgba(28,27,25,.2);min-width:0}
+.bq-field span{font:700 11px/1 var(--sans);letter-spacing:.2em;color:var(--ink3)}
+.bq-field input,.bq-field select{width:100%;min-height:36px;border:0;background:transparent;font:800 18px/1.3 var(--min);color:var(--sumi);outline:none;padding:0;border-radius:0;-webkit-appearance:none;appearance:none}
+.bq-field select{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%231c1b19' stroke-width='1.6'/></svg>") right 2px center no-repeat}
+.bq-field:focus-within{box-shadow:inset 0 -3px 0 var(--sumi)}
+.bq-field input::placeholder{color:#8a847a;font-weight:500}
+.bq-go{min-height:64px;padding:0 30px;border:0;background:var(--sumi);color:var(--paper);font:800 17px/1 var(--min);letter-spacing:.14em;cursor:pointer}
+.bq-go:hover{background:#3b3d40}
+.bq-go:focus-visible{outline:2px solid var(--sumi);outline-offset:3px}
+@media (max-width:900px){.bq-form{grid-template-columns:1fr 1fr}.bq-field-q{grid-column:1/-1;border-right:0;border-bottom:1px solid rgba(28,27,25,.2)}.bq-go{grid-column:1/-1}}
+@media (max-width:520px){.bq-form{grid-template-columns:1fr}.bq-field{border-right:0;border-bottom:1px solid rgba(28,27,25,.2)}}
+/* 床の上で転がる丸めたマット(飾り。動きを減らす設定では止める) */
+.bq-rollers{position:absolute;left:0;right:0;bottom:8px;height:44px;z-index:1;pointer-events:none}
+.bq-rollers i{position:absolute;bottom:0;width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 36% 34%,rgba(255,255,255,.4),rgba(255,255,255,0) 55%,rgba(20,12,4,.4)),repeating-radial-gradient(circle,rgba(20,14,8,.3) 0 2px,transparent 2px 6px),var(--c);box-shadow:0 8px 8px -6px rgba(40,26,10,.7)}
+.bq-rollers i:nth-child(1){left:6%;animation:bq-roll 14s ease-in-out infinite alternate}
+.bq-rollers i:nth-child(2){left:30%;width:30px;height:30px;animation:bq-roll 11s ease-in-out -4s infinite alternate-reverse}
+.bq-rollers i:nth-child(3){left:58%;width:34px;height:34px;animation:bq-roll 17s ease-in-out -8s infinite alternate}
+@keyframes bq-roll{from{transform:translateX(0) rotate(0)}to{transform:translateX(min(34vw,420px)) rotate(900deg)}}
+@media (prefers-reduced-motion:reduce){.bq-rollers i{animation:none}}
+
+.bq-body{background:var(--wall);padding:clamp(24px,3.6vw,48px) var(--gut) clamp(48px,6vw,88px);box-shadow:0 -14px 24px -18px rgba(40,26,10,.7)}
+.bq-body>*{max-width:1180px;margin-left:auto;margin-right:auto}
+.bq-kinds{display:flex;flex-wrap:wrap;gap:10px}
+.bq-kind{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 24px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(0,0,0,0) 40%,rgba(0,0,0,.22)),var(--c);color:#fff!important;box-shadow:0 10px 18px -12px rgba(40,28,14,.6);transition:transform .25s}
+.bq-kind:nth-child(2){color:#2a2620!important}
+.bq-kind b{font:800 17px/1 var(--min);letter-spacing:.04em}
+.bq-kind small{font:500 12px/1 var(--sans);letter-spacing:.06em;opacity:.9}
+.bq-kind:hover{transform:translateY(-2px)}
+.bq-kind.is-on{outline:3px solid var(--sumi);outline-offset:3px}
+.bq-areas{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(28,27,25,.25)}
+.bq-areas>b{font:700 12px/1 var(--sans);letter-spacing:.2em;color:var(--ink3)}
+.bq-areas ul{display:flex;flex-wrap:wrap;gap:6px 8px}
+.bq-areas ul a,.bq-areas summary{display:inline-flex;align-items:center;gap:.5em;min-height:44px;padding:0 16px;border:1px solid rgba(28,27,25,.3);border-radius:999px;font:500 15px/1 var(--sans);cursor:pointer;list-style:none}
+.bq-areas summary::-webkit-details-marker{display:none}
+.bq-areas ul a small{font-size:12px;color:var(--ink3)}
+.bq-areas ul a:hover,.bq-areas ul a.is-on{background:var(--sumi);color:var(--wall)}
+.bq-areas ul a.is-on small,.bq-areas ul a:hover small{color:inherit}
+.bq-areas-more{flex-basis:100%}
+.bq-areas-more[open] summary{margin-bottom:10px}
+.bq-sort{margin-left:auto;display:inline-flex;align-items:center;gap:8px;font:500 13px/1 var(--sans);color:var(--ink3)}
+.bq-sort a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;border-bottom:2px solid transparent}
+.bq-sort a.is-on{border-bottom-color:var(--sumi);color:var(--sumi)}
+.bq-scope{margin-top:26px;font:800 clamp(20px,2.4vw,30px)/1.4 var(--min);letter-spacing:.04em}
+.bq-count{margin-top:12px;font:500 14px/1.7 var(--sans);color:var(--ink2)}
+.bq-count b{font:800 24px/1 var(--min);margin:0 .15em}
+.bq-count span{margin-left:.6em;color:var(--ink3)}
+.bq-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:clamp(18px,2.4vw,32px);margin-top:22px}
+.bq-card{display:block}
+.bq-ph{display:block;position:relative;aspect-ratio:16/11;overflow:hidden;background:var(--c)}
+.bq-ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.92);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.bq-card:hover .bq-ph img{transform:scale(1.04)}
+.bq-ph-no{display:grid;place-items:center;padding:16px;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(0,0,0,0) 40%,rgba(0,0,0,.22)),var(--c)}
+.bq-ph-no b{display:block;max-width:100%;padding:14px 16px;background:var(--paper);font:800 16px/1.5 var(--min);text-align:center;letter-spacing:.03em;box-shadow:0 4px 10px -6px rgba(0,0,0,.5);overflow-wrap:anywhere}
+.bq-band{display:flex;align-items:baseline;gap:.8em;margin-top:-1px;padding:8px 12px;background:var(--paper);border-bottom:3px solid var(--c);position:relative}
+.bq-band i{font:800 13px/1 var(--min);font-style:normal;letter-spacing:.06em}
+.bq-band em{font:500 12.5px/1.4 var(--sans);font-style:normal;color:var(--ink3)}
+.bq-name{display:block;margin-top:10px;font:800 18px/1.5 var(--min);letter-spacing:.02em;overflow-wrap:anywhere}
+.bq-card:hover .bq-name{text-decoration:underline;text-underline-offset:4px}
+.bq-empty{margin-top:30px;font:500 15px/1.9 var(--sans);color:var(--ink2)}
+.bq-more{margin-top:32px;text-align:center}
+.bq-more a{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border:1px solid var(--sumi);border-radius:999px;font:800 15px/1 var(--min);letter-spacing:.08em;background:var(--paper)}
+.bq-more a:hover{background:var(--sumi);color:var(--paper)}

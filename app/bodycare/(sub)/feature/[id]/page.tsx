@@ -1,6 +1,8 @@
 import { featurePage } from "@/components/portal/pages/feature";
+import { featureRedirectPage } from "@/components/portal/vert/bodyshop/redirects";
 
-const page = featurePage("bodycare");
+// ボディケアが「さがす」にまとまる構成のとき(lib/portal/vert/bodycareStructure.ts)だけ、さがす/店のページへ恒久の転送。そうでなければ元のページ。
+const page = featureRedirectPage(featurePage("bodycare"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

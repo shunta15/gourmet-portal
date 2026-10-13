@@ -9,6 +9,9 @@ import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { countPlaces } from "@/lib/places";
 import { HAS_CLAIM_POLICY } from "@/lib/portal/meta";
+import { bodycareSearchOn } from "@/lib/portal/vert/bodycareStructure";
+import { BODYCARE_SITE } from "@/lib/portal/vert/bodysearch/site";
+import { searchHref } from "@/lib/portal/colorplay/search";
 
 const VERTICAL = "bodycare" as const;
 const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
@@ -23,7 +26,9 @@ const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure",
 export default async function KorogashiPage() {
   const { v, all } = await loadVertical(VERTICAL);
   const total = all.length;
-  const kinds = koroKinds(v, all);
+  // 「さがす」にまとまる構成のとき(lib/portal/vert/bodycareStructure.ts。本番は今のまま)は、種類・エリア・利用シーンの行き先を、さがすの絞り込みにする
+  const searchOn = bodycareSearchOn();
+  const kinds = koroKinds(v, all, searchOn ? (slug) => searchHref(BODYCARE_SITE, { kind: slug }) : undefined);
   const shops = pickShops(all);
   const prefs = PREFECTURES.flatMap((p) => {
     const count = pick(all, { pref: p.slug }).length;
@@ -31,7 +36,9 @@ export default async function KorogashiPage() {
   });
   const scenes = v.scenes.flatMap((s) => {
     const count = pick(all, { scene: s }).length;
-    return count > 0 ? [{ slug: s.slug, name: s.name, count }] : [];
+    // さがすの「こだわり」(店のタグ)。シーンに対応するタグがデータにあるもの
+    const tag = s.matchTags.find((t) => all.some((p) => p.tags.includes(t)));
+    return count > 0 ? [{ slug: s.slug, name: s.name, count, href: searchOn && tag ? searchHref(BODYCARE_SITE, { tag }) : `${v.path}/scene/${s.slug}` }] : [];
   });
   // ほかの業種: 掲載が 1 件以上あるものだけ（グルメは常に掲載あり）
   const others = (
@@ -109,7 +116,7 @@ export default async function KorogashiPage() {
           <ul className="kz-areas">
             {prefs.map((p) => (
               <li key={p.slug}>
-                <Link href={`${v.path}/area/${p.slug}`}>
+                <Link href={searchOn ? searchHref(BODYCARE_SITE, { pref: p.slug }) : `${v.path}/area/${p.slug}`}>
                   {p.name}
                   <small>{p.count}</small>
                 </Link>
@@ -131,7 +138,7 @@ export default async function KorogashiPage() {
             <ul className="kz-areas">
               {scenes.map((s) => (
                 <li key={s.slug}>
-                  <Link href={`${v.path}/scene/${s.slug}`}>
+                  <Link href={s.href}>
                     {s.name}
                     <small>{s.count}</small>
                   </Link>

@@ -13,6 +13,7 @@ import { absUrl } from "@/lib/seo/util";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { getGeneratedFeatures } from "@/lib/places/features";
 import { VERTICAL_DESIGN } from "@/lib/portal/verticalDesign";
+import { bodycareSearchOn } from "@/lib/portal/vert/bodycareStructure";
 import { loadVertical, pick, type PortalVertical } from "./data";
 
 export function verticalSitemap(key: PortalVertical) {
@@ -25,7 +26,9 @@ export function verticalSitemap(key: PortalVertical) {
     };
 
     add(v.path, all.length);
-    if ((key === "beauty" || key === "bodycare") && VERTICAL_DESIGN[key] === "colorplay") {
+    // 「さがす」にまとまる構成か。ビューティー: VERTICAL_DESIGN が colorplay。ボディケア: lib/portal/vert/bodycareStructure.ts(本番は今のまま=false)
+    const cp = (key === "beauty" || key === "bodycare") && (VERTICAL_DESIGN[key] === "colorplay" || (key === "bodycare" && bodycareSearchOn()));
+    if (cp) {
       // COLOR PLAY: 種類・エリアのページは「さがす」へ転送するので載せない。転送先（種類・エリアだけの絞り込み）を載せる（件数は同じ gate）
       add(`${v.path}/search`, all.length);
       for (const p of PREFECTURES) add(`${v.path}/search?pref=${p.slug}`, pick(all, { pref: p.slug }).length);
@@ -40,7 +43,7 @@ export function verticalSitemap(key: PortalVertical) {
         for (const p of PREFECTURES) add(`${v.path}/${c.slug}/${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
       }
     }
-    if ((key === "beauty" || key === "bodycare") && VERTICAL_DESIGN[key] === "colorplay") {
+    if (cp) {
       // COLOR PLAY: 利用シーンのページは「さがす」の「こだわり」(店のタグ)へ転送するので載せない。転送先を載せる(件数は同じ gate)
       const tags = new Set<string>();
       for (const s of v.scenes) {
@@ -53,7 +56,7 @@ export function verticalSitemap(key: PortalVertical) {
     }
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
     // COLOR PLAY: 特集記事は店のページと一緒（/feature/{id} は店のページへ転送）なので、特集の URL は載せない
-    if ((key === "beauty" || key === "bodycare") && !(VERTICAL_DESIGN[key] === "colorplay")) {
+    if ((key === "beauty" || key === "bodycare") && !cp) {
       for (const f of await getGeneratedFeatures(key)) add(`${v.path}/feature/${encodeURIComponent(f.id)}`, all.length);
     }
 

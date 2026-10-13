@@ -29,13 +29,13 @@ export const POLE_COUNT = 6;
  * 掲載が 1 件以上ある種類だけを、lib/verticals/bodycare.ts の並びのまま、1 から振り直した番号で返す（0 件の種類は出さない）。
  * 件数の数え方は、行き先のページ（components/portal/pages/data.ts の pick）と同じ。
  */
-export function koroKinds(v: Vertical, all: Place[]): KoroKind[] {
+export function koroKinds(v: Vertical, all: Place[], hrefOf?: (slug: string) => string): KoroKind[] {
   const out: KoroKind[] = [];
   for (const c of v.categories) {
     const count = all.filter((p) => p.category === c.slug).length;
     if (count === 0 || out.length >= POLE_COUNT) continue;
     const i = out.length;
-    out.push({ n: i + 1, slug: c.slug, name: c.name, en: EN[c.slug] ?? c.slug, href: `${v.path}/${c.slug}`, color: POLE_COLORS[i], count });
+    out.push({ n: i + 1, slug: c.slug, name: c.name, en: EN[c.slug] ?? c.slug, href: hrefOf ? hrefOf(c.slug) : `${v.path}/${c.slug}`, color: POLE_COLORS[i], count });
   }
   return out;
 }
