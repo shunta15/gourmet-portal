@@ -146,7 +146,7 @@ export function cpTopPage(site: CpSite) {
                       {img && (
                         <span className="kp-ph">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={img.src} alt="" loading="lazy" width={img.w} height={img.h} />
+                          <img src={img.src} alt="" loading="lazy" width={img.w} height={img.h} style={img.pos ? { objectPosition: img.pos } : undefined} />
                         </span>
                       )}
                       <span className="kp-t">

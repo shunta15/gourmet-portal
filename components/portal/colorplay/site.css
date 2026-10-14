@@ -81,6 +81,7 @@
 .kp-i.no-ph .kp-t b{font-size:clamp(40px,4.6vw,76px)}
 .kp-i.no-ph .kp-t{padding-bottom:30px}
 .kp-i.no-ph.lg .kp-t b{font-size:clamp(32px,3.3vw,54px)}
+.kp-i.has-ph.lg .kp-t b{font-size:clamp(26px,2.4vw,38px)} /* 写真のある札で長い語(ESTHETIC・REMOVAL)が札の幅からはみ出さないように */
 
 /* エリアを選ぶ所 */
 .cp-area-sec{padding-top:64px; padding-bottom:24px}
