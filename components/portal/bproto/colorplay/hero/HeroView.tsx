@@ -14,7 +14,8 @@ import HeroStage from "./HeroStage";
 
 export type HeroVariant = 1 | 2 | 3;
 
-export const IMG = "/_portal/bproto/colorplay/ref-hero.jpg";
+// 2026-10-14 オーナー提供の高解像度の画像に差し替え(元 532×632 → 1100×1306。比率は同じなので width/height はそのまま)
+export const IMG = "/_portal/bproto/colorplay/hero-photo.jpg";
 export const LINES = ["この街で、", "わたしは", "もっとカワイイ。"];
 const css = (o: Record<string, string | number>) => o as CSSProperties;
 
