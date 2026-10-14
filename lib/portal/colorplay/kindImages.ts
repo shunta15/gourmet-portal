@@ -7,7 +7,7 @@
 export type KindImage = { src: string; w: number; h: number };
 
 export const KIND_IMAGES: Record<string, KindImage | undefined> = {
-  hair: { src: "/_portal/bproto/colorplay/ref-hair.jpg", w: 296, h: 264 },
+  hair: { src: "/_portal/bproto/colorplay/hair-panel.jpg", w: 802, h: 820 }, // 2026-10-14 オーナー提供の画像に差し替え(元 1600×1636 を縮小)
   nail: { src: "/_portal/bproto/colorplay/own-nails.jpg", w: 380, h: 282 },
   // esthetic・hair-removal・eyelash: 合う写真がまだ無い(色面と大きな字だけ)
 };
