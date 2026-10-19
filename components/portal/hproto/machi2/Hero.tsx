@@ -6,6 +6,7 @@ import { IMG } from "./const";
 import SeasonStage from "./SeasonStage";
 import { seasonSrc, type Season } from "./season";
 import { HEAD, P1_ONE, P3_ONE, MIHON_HEAD, MIHON_SUB } from "./copy";
+import { PROD_SEARCH } from "./prodData";
 import "./hero.css";
 
 const H = `${IMG}/hero`;
@@ -19,7 +20,7 @@ const COLS: Record<string, string[]> = {
 };
 const ROT = [-4, 3, -2, 4, -3, 2, 0, -2];
 
-export default function Hero({ mihon, season }: { mihon: boolean; season: Season }) {
+export default function Hero({ mihon, season, prod = false }: { mihon: boolean; season: Season; prod?: boolean }) {
   // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)
   preload(seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
   const lines = (mihon ? MIHON_HEAD : HEAD).map((t, i) => ({ k: i, chars: Array.from(t), col: COLS[(mihon ? "m" : "c") + (i + 1)] }));
@@ -62,7 +63,7 @@ export default function Hero({ mihon, season }: { mihon: boolean; season: Season
             ))}</span>
           ))}
         </p>
-        <form className="h2-search" role="search" action="/search">
+        <form className="h2-search" role="search" action={prod ? PROD_SEARCH : "/search"}>
           <svg className="h2-s-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.6" fill="none" stroke="#7f95b4" strokeWidth="2" /><path d="m15.4 15.4 5 5" stroke="#7f95b4" strokeWidth="2.2" strokeLinecap="round" /></svg>
           <input type="search" name="q" placeholder="エリア・駅名・お店やスポットの名前などで検索" aria-label="検索" />
           <button type="submit" className="h2-s-go h2-press"><span>検索</span></button>

@@ -1,11 +1,18 @@
 import "@/components/portal/portal.css";
 import PortalLayout from "@/components/portal/PortalLayout";
+import MachiShell from "@/components/portal/hproto/machi2/MachiShell";
+import { HOME_DESIGN } from "@/lib/portal/homeDesign";
+import { assertPortalLive } from "@/lib/portal/launch";
 
 // 総合トップ（公開スイッチ ON のときの `/`。next.config.ts の rewrites で `/` がここに来る）。
-// 総合サイト用の CSS（フッターの見た目を含む portal.css）を読み、フッターを出す。にぎわいの輪の CSS は NigiwaiPage が読む。
-// ヘッダーは共通のものを出さない（輪の画面の中に、ロゴと検索の入口がある）。
-// フッターの色をにぎわいの輪の配色に合わせる指定（nigiwai.css の body:has(.ngp)）は、`/` でも効く。
-// OFF のあいだは PortalLayout が 404 にする（/portal-home という URL は公開しない）。
+// 見た目は lib/portal/homeDesign.ts の HOME_DESIGN で選ぶ（この 1 つの定数で戻せる）。
+//   "machi2": 「まち」改（自前のヘッダー・フッターを持つので、共通のヘッダー・フッター・PortalMotion は出さない）。
+//   "nigiwai": 従来の「にぎわいの輪」（総合サイト用の CSS portal.css と、共通フッターを PortalLayout が出す）。
+// どちらも、公開スイッチ OFF のあいだは 404（assertPortalLive。/portal-home という URL は公開しない）。
 export default function Layout({ children }: { children: React.ReactNode }) {
+  if (HOME_DESIGN === "machi2") {
+    assertPortalLive();
+    return <MachiShell prod>{children}</MachiShell>;
+  }
   return <PortalLayout hub>{children}</PortalLayout>;
 }

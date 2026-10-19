@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import PortalHome from "@/components/portal/pages/home";
+import Machi2Page from "@/components/portal/hproto/machi2/Page";
+import { latestNews } from "@/components/portal/hproto/machi2/news";
+import { seasonNowJst } from "@/components/portal/hproto/machi2/season";
+import { HOME_DESIGN } from "@/lib/portal/homeDesign";
 import { buildMetadata } from "@/lib/seo/meta";
 
 // 総合トップ。公開スイッチ ON のとき `/` として出る（next.config.ts の rewrites）。検索エンジンに載せる（index）。
@@ -20,6 +24,11 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+// 見た目は lib/portal/homeDesign.ts の HOME_DESIGN で選ぶ（"machi2" = 「まち」改・"nigiwai" = 従来の輪）。
+// machi2 は最初の季節を日本時間の今日の月で決めるので、1 時間ごとに作り直す（revalidate）。
+export const revalidate = 3600;
+
 export default function Page() {
+  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} />;
   return <PortalHome />;
 }

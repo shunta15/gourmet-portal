@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Slider from "./Slider";
 import { IMG } from "./const";
+import type { NewsRow } from "./news";
+import { PROD_FOOT } from "./prodData";
 import "./lower.css";
 
 const B = `${IMG}/lower/`;
@@ -32,7 +34,19 @@ const CARDS = [
   { k: "pet", x: 591, w: 267, t: "ペットと楽しめるお店", d: ["一緒に入れるカフェ・おでかけスポット・", "ペットサービスをご紹介"], href: "/pet", b: { x: 150, y: 7, w: 120, h: 60, l: ["いつもまちから", "もっと楽しい!"], f: 10.2 } },
 ];
 
-export default function Lower() {
+const DEMO_FOOT = {
+  l: [["マチノワについて", "/about"], ["掲載をご検討の方へ", "/contact"], ["お知らせ", "/feature"], ["よくあるご質問", "/contact"]] as [string, string][],
+  r: [["利用規約", "/terms"], ["プライバシーポリシー", "/privacy"], ["お問い合わせ", "/contact"]] as [string, string][],
+  copy: "© 2025 マチノワ Machinowa. All rights reserved.",
+};
+const NEWS_Y = [722, 764, 806, 850];
+
+/** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。 */
+export default function Lower({ prod = false, news }: { prod?: boolean; news?: NewsRow[] }) {
+  const foot = prod ? PROD_FOOT : DEMO_FOOT;
+  const rows = prod && news
+    ? news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href, real: true }))
+    : NEWS.map((n) => ({ src: `${B}${n.img}`, date: n.date, t: n.t, y: n.y, href: "/feature", real: false }));
   return (
     <>
       {/* 1. 業種の札 6 枚(間に花のつる) */}
@@ -69,12 +83,12 @@ export default function Lower() {
           <b className="h2-a h2-nt" style={P(44, 695, 200, 24)}>まちの最新情報</b>
           <Link href="/feature" className="h2-a h2-more h2-press" style={P(333, 697, 100, 20)}>もっと見る <span aria-hidden>→</span></Link>
           <ul>
-            {NEWS.map((n, i) => (
+            {rows.map((n, i) => (
               <li key={i} className="h2-a h2-nrow" style={{ ...P(7, n.y, 436, 40), ["--i" as string]: i }}>
-                <Link href="/feature" className="h2-nlink">
-                  <span className="h2-nth"><img src={`${B}${n.img}`} alt="" /></span>
-                  <span className="h2-nd">{n.date}</span>
-                  <span className="h2-nti">{n.t.map((t, j) => <span key={j}>{t}</span>)}</span>
+                <Link href={n.href} className="h2-nlink">
+                  <span className="h2-nth"><img src={n.src} alt="" {...(n.real ? { loading: "lazy" as const, decoding: "async" as const } : {})} /></span>
+                  {n.date && <span className="h2-nd">{n.date}</span>}
+                  <span className={n.real ? "h2-nti h2-nti-real" : "h2-nti"}>{n.t.map((t, j) => <span key={j}>{t}</span>)}</span>
                   <i className="h2-nchev" aria-hidden="true">›</i>
                 </Link>
               </li>
@@ -127,10 +141,10 @@ export default function Lower() {
         <img className="h2-a h2-flogo" style={P(40, 1244, 164, 42)} src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" />
         <p className="h2-a h2-fsub" style={P(219, 1250, 220, 40)}>まちの人・お店・くらしがつながる<br />ローカルポータルサイト</p>
         <i className="h2-a h2-fvr" style={P(440, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={P(502, 1240, 220, 70)}><li><Link href="/about">マチノワについて</Link></li><li><Link href="/contact">掲載をご検討の方へ</Link></li><li><Link href="/feature">お知らせ</Link></li><li><Link href="/contact">よくあるご質問</Link></li></ul>
+        <ul className="h2-a h2-fl" style={P(502, 1240, 220, 70)}>{foot.l.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
         <i className="h2-a h2-fvr" style={P(743, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={P(789, 1240, 220, 70)}><li><Link href="/terms">利用規約</Link></li><li><Link href="/privacy">プライバシーポリシー</Link></li><li><Link href="/contact">お問い合わせ</Link></li></ul>
-        <p className="h2-a h2-copy" style={P(291, 1305, 600, 16)}>© 2025 マチノワ Machinowa. All rights reserved.</p>
+        <ul className="h2-a h2-fl" style={P(789, 1240, 220, 70)}>{foot.r.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
+        <p className="h2-a h2-copy" style={P(291, 1305, 600, 16)}>{foot.copy}</p>
       </footer>
     </>
   );
