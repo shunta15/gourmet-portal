@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://machinowa.tokyo"),
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
-  // app/icon.tsx と app/apple-icon.tsx が自動登録されるが、
+  // app/icon.png(512)・app/apple-icon.png(180)・app/favicon.ico の静的ファイルが自動登録されるが、
   // 確実に Google / SNS が拾うように明示しておく
   icons: {
-    icon: [{ url: "/icon", type: "image/png", sizes: "64x64" }],
-    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: "マチノワ — 街の輪",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     siteName: "マチノワ",
-    images: [{ url: "/apple-icon", width: 180, height: 180, alt: "マチノワ" }],
+    images: [{ url: "/apple-icon.png", width: 180, height: 180, alt: "マチノワ" }],
   },
   twitter: {
     card: "summary",
     title: "マチノワ — 街の輪",
     description: DEFAULT_SOCIAL_DESCRIPTION,
-    images: ["/apple-icon"],
+    images: ["/apple-icon.png"],
   },
   // Google Search Console の所有権確認。
   // Vercel の環境変数 GOOGLE_SITE_VERIFICATION に
