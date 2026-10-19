@@ -33,7 +33,7 @@ export default function Slider() {
       {SL.map((s, k) => (
         <div key={k} className={`h2-sl${i === k ? " is-on" : ""}`} aria-hidden={i !== k}>
           <img className="h2-slimg" src={`${B}${s.img}`} alt="" />
-          {k > 0 && <div className="h2-slwash" />}
+          <img className="h2-slhaze" src={`${B}slide-haze.webp`} alt="" />
           <h2 className="h2-sh h2-press"><span className="h2-sh1"><b>{s.t1}</b>{s.t1b}</span><span className="h2-sh2">{s.t2}</span></h2>
           <p className="h2-ssub">{s.sub[0]}<br />{s.sub[1]}</p>
           <a className="h2-sbtn h2-press" href={s.href} tabIndex={i === k ? 0 : -1}>{s.btn} <span aria-hidden>→</span></a>

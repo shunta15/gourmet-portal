@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { preload } from "react-dom";
 import { IMG } from "./const";
+import SeasonStage from "./SeasonStage";
+import { seasonSrc, type Season } from "./season";
 import { HEAD, P1_ONE, P3_ONE, MIHON_HEAD, MIHON_SUB } from "./copy";
 import "./hero.css";
 
@@ -23,8 +25,9 @@ const BUBBLES = [
   { k: "b4", x: 930, y: 214, w: 112, h: 52, cx: 52, cy: 28, rot: -6, lines: ["このまち、", "やっぱり好き!"], fs: 11.4, d: 1.3, ox: 10 },
 ];
 
-export default function Hero({ mihon }: { mihon: boolean }) {
-  preload(`${H}/bg.webp`, { as: "image", fetchPriority: "high" });
+export default function Hero({ mihon, season }: { mihon: boolean; season: Season }) {
+  // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)
+  preload(seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
   const lines = (mihon ? MIHON_HEAD : HEAD).map((t, i) => ({ k: i, chars: Array.from(t), col: COLS[(mihon ? "m" : "c") + (i + 1)] }));
   const hlLine = mihon ? 0 : 1, hlChar = mihon ? 3 : 4;
   const subs = mihon ? [...MIHON_SUB] : [P1_ONE, P3_ONE];
@@ -32,20 +35,20 @@ export default function Hero({ mihon }: { mihon: boolean }) {
   const sub = subs.map((t) => Array.from(t).map((c) => ({ c, n: n++ })));
   const lastN = n - 1;
   return (
-    <section className="h2-hero" aria-label="ヒーロー">
+    <section className="h2-hero" aria-label="ヒーロー" data-season={season}>
       <div className="h2-hero-stage">
-        {/* 層 1: 背景の絵(ゆっくり寄る+マウスでいちばん小さく動く) */}
-        <div className="h2-bgwrap"><img className="h2-bg" src={`${H}/bg.webp`} alt="" width={2000} height={667} fetchPriority="high" /></div>
+        {/* 層 1: 背景の絵(春夏秋冬・「輪」で切り替わる・ゆっくり寄る+マウスでいちばん小さく動く)と季節の札 */}
+        <SeasonStage initial={season} />
         <div className="h2-clouds" aria-hidden="true"><i /><i /><i /></div>
         {/* 流れる鳥・ふわふわの風船(背景の絵の気球とは別の位置) */}
         <img className="h2-fly h2-bird b1" style={{ left: "calc(430 * var(--u))", top: "calc(54 * var(--u))" }} src={`${H}/bird1.webp`} alt="" width={56} height={53} />
         <img className="h2-fly h2-bird b2" style={{ left: "calc(470 * var(--u))", top: "calc(74 * var(--u))" }} src={`${H}/bird2.webp`} alt="" width={56} height={53} />
-        <img className="h2-fly h2-bird b3" style={{ left: "calc(520 * var(--u))", top: "calc(20 * var(--u))" }} src={`${H}/bird3.webp`} alt="" width={51} height={46} />
-        <img className="h2-balloon" style={{ left: "calc(668 * var(--u))", top: "calc(10 * var(--u))" }} src={`${H}/balloon.webp`} alt="" width={64} height={82} />
+        <img className="h2-fly h2-bird b3" style={{ left: "calc(520 * var(--u))", top: "calc(46 * var(--u))" }} src={`${H}/bird3.webp`} alt="" width={51} height={46} />
+        <img className="h2-balloon" style={{ left: "calc(668 * var(--u))", top: "calc(58 * var(--u))" }} src={`${H}/balloon.webp`} alt="" width={64} height={82} />
         {/* 層 2: 吹き出し・看板 */}
         {BUBBLES.map((b) => (
-          <button type="button" key={b.k} className="h2-bub h2-jump" aria-label={b.lines.join("")}
-            style={{ left: `calc(${b.x} * var(--u))`, top: `calc(${b.y} * var(--u))`, width: `calc(${b.w} * var(--u))`, height: `calc(${b.h} * var(--u))`, animationDelay: `${b.d}s, ${b.d + 0.8}s`, ["--ox" as string]: `${b.ox}%` }}>
+          <button type="button" key={b.k} className={`h2-bub h2-jump ${b.k}`} aria-label={b.lines.join("")}
+            style={{ left: `calc((${b.x} + var(--sx, 0)) * var(--u))`, top: `calc((${b.y} + var(--sy, 0)) * var(--u))`, width: `calc(${b.w} * var(--u))`, height: `calc(${b.h} * var(--u))`, animationDelay: `${b.d}s, ${b.d + 0.8}s`, ["--ox" as string]: `${b.ox}%` }}>
             <img src={`${H}/${b.k}.webp`} alt="" width={Math.round(b.w * 1.283)} height={Math.round(b.h * 1.283)} />
             <span className="h2-bt h2-kure" style={{ left: `calc(${b.cx} * var(--u))`, top: `calc(${b.cy} * var(--u))`, fontSize: `calc(${b.fs} * var(--u))`, lineHeight: `calc(${b.fs * 1.6} * var(--u))`, rotate: `${b.rot}deg` }}>{b.lines.map((l) => <span key={l}>{l}</span>)}</span>
           </button>

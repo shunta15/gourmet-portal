@@ -3,8 +3,35 @@
 .h2-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: calc(30 * var(--u)); background: linear-gradient(transparent, rgba(255, 249, 214, .85)); pointer-events: none; z-index: 2; }
 .h2-hero-stage { position: absolute; inset: 0; }
 .h2-bgwrap { position: absolute; inset: 0; overflow: hidden; }
-.h2-bg { position: absolute; left: 0; top: 0; width: calc(1182 * var(--u)); height: calc(394 * var(--u)); animation: h2-kb 18s ease-in-out infinite alternate; transform-origin: 50% 38%; scale: 1.03; translate: calc(var(--px, 0) * -7 * var(--u)) calc(var(--py, 0) * -4 * var(--u)); }
-@keyframes h2-kb { from { transform: scale(1); } to { transform: scale(1.06); } }
+.h2-seasonroot { display: contents; }
+/* 背景の絵(季節ごとの層)。切り替わる絵は中央(川と橋)から「輪」の形に広がって前の絵を覆う */
+.h2-sbg { position: absolute; left: 0; top: 0; width: calc(1182 * var(--u)); height: calc(394 * var(--u)); overflow: hidden; }
+.h2-sbg.is-new { animation: h2-ring-open 1.6s cubic-bezier(.65, 0, .35, 1) backwards; clip-path: circle(calc(704 * var(--u)) at calc(591 * var(--u)) calc(244 * var(--u))); }
+@keyframes h2-ring-open { from { clip-path: circle(0px at calc(591 * var(--u)) calc(244 * var(--u))); } }
+.h2-bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; animation: h2-kb 9s cubic-bezier(.2, .6, .3, 1) both; transform-origin: 50% 38%; scale: 1.03; translate: calc(var(--px, 0) * -7 * var(--u)) calc(var(--py, 0) * -4 * var(--u)); }
+/* 夏だけ縦横比が違う(2:1)。上の花火と左上・右上の楕円写真が切れないよう、上寄せで見せる(下のひまわりは検索の箱の下) */
+.h2-sbg[data-s="summer"] .h2-bg { object-position: 50% 9%; }
+@keyframes h2-kb { from { transform: scale(1); } to { transform: scale(1.07); } }
+.h2-ring { position: absolute; z-index: 3; left: calc((591 - 704) * var(--u)); top: calc((244 - 704) * var(--u)); width: calc(1408 * var(--u)); height: calc(1408 * var(--u)); border-radius: 50%; pointer-events: none;
+  border: calc(5 * var(--u)) solid rgba(255, 255, 255, .96); box-shadow: 0 0 calc(16 * var(--u)) calc(3 * var(--u)) rgba(255, 255, 255, .85), inset 0 0 calc(34 * var(--u)) rgba(255, 255, 255, .55);
+  animation: h2-ring-run 1.6s cubic-bezier(.65, 0, .35, 1) forwards, h2-ring-fade 1.6s linear forwards; }
+@keyframes h2-ring-run { from { transform: scale(0); } to { transform: scale(1); } }
+@keyframes h2-ring-fade { 0%, 78% { opacity: 1; } 100% { opacity: 0; } }
+/* 季節の札(春 夏 秋 冬)。右下の隅に小さく。いまの季節が色づき、下に進み具合の線が伸びる */
+.h2-seasons { position: absolute; z-index: 6; right: calc(8 * var(--u)); bottom: calc(6 * var(--u)); display: flex; gap: calc(4 * var(--u)); padding: calc(3 * var(--u)); border-radius: 999px; background: rgba(255, 255, 255, .62); backdrop-filter: blur(4px); box-shadow: 0 0 0 1px rgba(255, 255, 255, .8), 0 2px 8px rgba(60, 80, 100, .14); }
+.h2-st { --c: #888; position: relative; width: calc(31 * var(--u)); min-width: 30px; height: calc(22 * var(--u)); min-height: 24px; border-radius: 999px; font-family: var(--h2-maru), sans-serif; font-weight: 700; font-size: max(12px, calc(10.4 * var(--u))); line-height: 1; color: #6a7482; display: grid; place-items: center; overflow: hidden; transition: background .35s, color .35s, transform .25s cubic-bezier(.3, 1.6, .5, 1); }
+.h2-st:hover { transform: translateY(-2px); color: var(--c); }
+.h2-st-spring { --c: #e8648e; } .h2-st-summer { --c: #1f86dc; } .h2-st-autumn { --c: #e0502a; } .h2-st-winter { --c: #3aa6d4; }
+.h2-st.is-on { background: var(--c); color: #fff; }
+.h2-st-bar { position: absolute; left: 14%; right: 14%; bottom: 3px; height: 2.5px; border-radius: 2px; background: rgba(255, 255, 255, .95); transform-origin: 0 50%; transform: scaleX(0); animation: h2-stbar var(--season-dur, 6s) linear forwards; }
+.h2-hero-stage[data-pause] .h2-st-bar { animation-play-state: paused; }
+@keyframes h2-stbar { to { transform: scaleX(1); } }
+/* 季節ごとに吹き出しを少しずらす(人・犬の顔にかからないように。切り替えの間に滑って動く) */
+.h2-bub { transition: left .9s cubic-bezier(.5, 0, .2, 1), top .9s cubic-bezier(.5, 0, .2, 1); }
+.h2-hero[data-season="summer"] .h2-bub.b1 { --sx: 34; --sy: 2; }
+.h2-hero[data-season="summer"] .h2-bub.b2 { --sx: 62; --sy: 8; }
+.h2-hero[data-season="summer"] .h2-bub.b3 { --sx: -6; --sy: 20; }
+.h2-hero[data-season="summer"] .h2-bub.b4 { --sx: 0; --sy: 8; }
 .h2-clouds { translate: calc(var(--px, 0) * -14 * var(--u)) calc(var(--py, 0) * -8 * var(--u)); position: absolute; left: calc(330 * var(--u)); top: calc(14 * var(--u)); width: calc(520 * var(--u)); height: calc(120 * var(--u)); overflow: hidden; pointer-events: none;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); }
 .h2-clouds i { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.9), rgba(255,255,255,0)); animation: h2-cloud 34s linear infinite; }
@@ -35,9 +62,10 @@
 @keyframes h2-marker { to { transform: scaleX(1); } }
 
 /* 下の 2 行: 1 文字ずつ打たれる(タイプライター)。カーソルは最後に点滅して消える */
-.h2-sub { position: absolute; left: 0; top: calc(176 * var(--u)); width: calc(1040 * var(--u)); text-align: center; margin: 0; font-size: calc(12.4 * var(--u)); font-weight: 400; color: #2c2c2c; white-space: nowrap; z-index: 3; -webkit-text-stroke: calc(.5 * var(--u)) #2c2c2c; letter-spacing: .02em; text-shadow: 0 0 calc(5 * var(--u)) rgba(255,255,255,.95), 0 0 calc(10 * var(--u)) rgba(255,255,255,.85);
+.h2-sub { position: absolute; left: 0; top: calc(176 * var(--u)); width: calc(1040 * var(--u)); text-align: center; margin: 0; font-size: calc(12.4 * var(--u)); font-weight: 400; color: #232323; white-space: nowrap; z-index: 3; -webkit-text-stroke: calc(.5 * var(--u)) #232323; letter-spacing: .02em;
+  text-shadow: calc(-1.6 * var(--u)) 0 #fff, calc(1.6 * var(--u)) 0 #fff, 0 calc(-1.6 * var(--u)) #fff, 0 calc(1.6 * var(--u)) #fff, calc(-1.2 * var(--u)) calc(-1.2 * var(--u)) #fff, calc(1.2 * var(--u)) calc(1.2 * var(--u)) #fff, calc(-1.2 * var(--u)) calc(1.2 * var(--u)) #fff, calc(1.2 * var(--u)) calc(-1.2 * var(--u)) #fff, 0 0 calc(6 * var(--u)) #fff, 0 0 calc(12 * var(--u)) rgba(255,255,255,.95);
   translate: calc(var(--px, 0) * -20 * var(--u)) calc(var(--py, 0) * -10 * var(--u)); }
-.h2-sln { display: block; line-height: calc(19 * var(--u)); margin-bottom: calc(3 * var(--u)); } .h2-sln > i { background: rgba(255,255,255,.62); padding: calc(1.5 * var(--u)) 0; } .h2-sln > i:first-child { padding-left: calc(8 * var(--u)); border-radius: 99px 0 0 99px; } .h2-sln > i:last-child { padding-right: calc(8 * var(--u)); border-radius: 0 99px 99px 0; }
+.h2-sln { display: block; line-height: calc(19 * var(--u)); margin-bottom: calc(3 * var(--u)); } .h2-sln > i { background: rgba(255,255,255,.8); padding: calc(1.5 * var(--u)) 0; box-shadow: 0 0 calc(8 * var(--u)) calc(2 * var(--u)) rgba(255,255,255,.7); } .h2-sln > i:first-child { padding-left: calc(8 * var(--u)); border-radius: 99px 0 0 99px; } .h2-sln > i:last-child { padding-right: calc(8 * var(--u)); border-radius: 0 99px 99px 0; }
 .h2-sub i { font-style: normal; position: relative; --d: calc(1.55s + var(--n) * 55ms); animation: h2-type .01s steps(1) var(--d) backwards; }
 .h2-sub i::after { content: ""; position: absolute; right: calc(-2 * var(--u)); top: 8%; width: calc(1.6 * var(--u)); height: 1.1em; background: #ee5a7a; opacity: 0; animation: h2-caret .07s linear var(--d); }
 .h2-sub i.h2-last::after { animation: h2-caret-end .9s steps(1) var(--d) 3 forwards; }
@@ -87,12 +115,26 @@
 @keyframes h2-slide-r { from { opacity: 0; transform: translateX(calc(110 * var(--u))); } to { opacity: 1; transform: none; } }
 @keyframes h2-slide-b { from { opacity: 0; transform: translateY(calc(40 * var(--u))); } to { opacity: 1; transform: none; } }
 
-/* スマホ: 見本の中央(x 140〜1040)を画面いっぱいに */
+/* 中くらいの幅(701〜900): 札が下の 3 つのボタンにかかるので、スマホと同じく絵の下の帯に置く */
+@media (min-width: 701px) and (max-width: 900px) {
+  .h2-hero { height: calc(394 * var(--u) + 40px); background: #fff7dc; }
+  .h2-hero::after { bottom: 40px; }
+  .h2-seasons { right: auto; left: calc(50% - 79px); bottom: 8px; padding: 3px; gap: 4px; }
+  .h2-st { width: 35px; height: 26px; font-size: 12.5px; }
+}
+/* スマホ: 見本の中央(x 140〜1040)を画面いっぱいに。ヘッダー(54px)のぶん中身を下げ、絵の下に細い帯をつけて季節の札を 1 列で置く */
 @media (max-width: 700px) {
-  .h2-hero { --u: calc(100cqw / 640); height: calc(394 * var(--u)); }
+  .h2-hero { --u: calc(100cqw / 640); --hd: 38px; height: calc(394 * var(--u) + var(--hd) + 40px); background: #fff7dc; }
+  .h2-hero::after { bottom: 40px; }
   .h2-hero-stage { left: calc(-270 * var(--u)); right: auto; width: calc(1182 * var(--u)); }
+  .h2-sbg { height: calc(394 * var(--u) + var(--hd)); }
+  .h2-title, .h2-sub, .h2-search, .h2-bub, .h2-pills { margin-top: var(--hd); }
   .h2-fly, .h2-board { display: none; }
+  .h2-bub.b1, .h2-bub.b2, .h2-bub.b4 { display: none; }
+  .h2-bub.b3 { --sx: -100; }
   .h2-search { left: calc(300 * var(--u)); width: calc(584 * var(--u)); }
   .h2-pill { padding-left: calc(18 * var(--u)); }
+  .h2-seasons { right: auto; left: calc(270 * var(--u) + 50cqw - 79px); bottom: 8px; padding: 3px; gap: 4px; }
+  .h2-st { width: 35px; height: 26px; font-size: 12.5px; }
 }
-@media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } .h2-st-bar { display: none; } .h2-ring { display: none; } }

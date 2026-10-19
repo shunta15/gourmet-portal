@@ -17,12 +17,19 @@ export default function Motion() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const cleanups: (() => void)[] = [];
 
-    // 1. 入ったら .is-in / 見えている間だけ .is-live
-    const once = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); once.unobserve(e.target); } }), { threshold: 0.18, rootMargin: "0px 0px -6% 0px" });
+    // 1. 入ったら .is-in(出る動き)→ 3.5 秒後に .is-done(動きの記録を外す。書き出し・全体スクショでやり直しにならないように) / 見えている間だけ .is-live
+    const timers: number[] = [];
+    const reveal = (el: Element) => { el.classList.add("is-in"); timers.push(window.setTimeout(() => el.classList.add("is-done"), 3500)); };
+    const once = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { reveal(e.target); once.unobserve(e.target); } }), { threshold: 0.18, rootMargin: "0px 0px -6% 0px" });
     root.querySelectorAll("[data-io]").forEach((el) => once.observe(el));
+    // 折り返しのすぐ下にある大きな箱(特集スライド・最新情報)は、ちらっと見えた時点で出す
+    const early = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { reveal(e.target); early.unobserve(e.target); } }), { threshold: 0.04 });
+    root.querySelectorAll("[data-io-early]").forEach((el) => early.observe(el));
     const live = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("is-live", e.isIntersecting)));
     root.querySelectorAll("[data-live]").forEach((el) => live.observe(el));
-    cleanups.push(() => { once.disconnect(); live.disconnect(); });
+    // 画面に入らないまま長く置かれても、動きの最後の状態に必ずなる(全体スクショ・タブ復帰・遅い回線用)。10 秒で残りを全部出す。
+    const fb = window.setTimeout(() => root.querySelectorAll("[data-io]:not(.is-in), [data-io-early]:not(.is-in)").forEach((el) => { reveal(el); once.unobserve(el); early.unobserve(el); }), 10000);
+    cleanups.push(() => { window.clearTimeout(fb); timers.forEach((t) => window.clearTimeout(t)); once.disconnect(); early.disconnect(); live.disconnect(); });
 
     // 2. パララックス(最初の画面・マウスのみ)
     const stage = root.querySelector<HTMLElement>(".h2-hero-stage");
@@ -52,6 +59,18 @@ export default function Motion() {
       const dv = () => { if (!document.hidden) kick(); };
       document.addEventListener("visibilitychange", dv);
       cleanups.push(() => { cancelAnimationFrame(raf); hero.removeEventListener("pointermove", move); hero.removeEventListener("pointerleave", leave); vio.disconnect(); document.removeEventListener("visibilitychange", dv); });
+    }
+
+    // 2b. 街の絵の奥行き(--bp: 帯が画面の下から上へ抜けるあいだ +1 → -1。奥と手前が逆向きに少しずれる。rAF は見えている間だけ)
+    const band = root.querySelector<HTMLElement>(".h2-band");
+    if (band) {
+      let rb = 0, shown = false;
+      const upd = () => { rb = 0; if (document.hidden || !shown) return; const r = band.getBoundingClientRect(), vh = window.innerHeight; band.style.setProperty("--bp", Math.max(-1, Math.min(1, (r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2))).toFixed(3)); };
+      const on = () => { if (!rb) rb = requestAnimationFrame(upd); };
+      const bio = new IntersectionObserver((es) => { shown = es.some((e) => e.isIntersecting); if (shown) on(); });
+      bio.observe(band);
+      window.addEventListener("scroll", on, { passive: true }); window.addEventListener("resize", on);
+      cleanups.push(() => { cancelAnimationFrame(rb); bio.disconnect(); window.removeEventListener("scroll", on); window.removeEventListener("resize", on); });
     }
 
     // 3. 進みバー

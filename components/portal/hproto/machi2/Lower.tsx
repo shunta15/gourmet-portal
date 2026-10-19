@@ -11,12 +11,12 @@ const P = (x: number, y: number, w?: number, h?: number) =>
 const OY = (y: number) => ({ "--oy": y }) as React.CSSProperties;
 
 const CATS = [
-  { k: "gourmet", name: "グルメ", sub: ["おいしいお店を", "見つける"], href: "/gourmet", px: 63, pw: 134, cx: 130, col: "#f27b2f", ay: 645 },
-  { k: "beauty", name: "ビューティー", sub: ["キレイを楽しむ"], href: "/beauty", px: 220, pw: 138, cx: 289, col: "#ee5d8e", ay: 639 },
-  { k: "bodycare", name: "ボディケア", sub: ["からだを整える"], href: "/bodycare", px: 384, pw: 173, cx: 473, col: "#4aa84a", ay: 639 },
-  { k: "pet", name: "ペット", sub: ["ペットと一緒に"], href: "/pet", px: 583, pw: 162, cx: 662, col: "#8b6cf0", ay: 639 },
-  { k: "leisure", name: "おでかけ", sub: ["遊ぶ・体験する"], href: "/leisure", px: 769, pw: 158, cx: 845, col: "#2f8de0", ay: 639 },
-  { k: "stay", name: "ステイ", sub: ["泊まる・くつろぐ"], href: "/stay", px: 952, pw: 162, cx: 1034, col: "#f6b620", ay: 639 },
+  { k: "gourmet", name: "グルメ", sub: ["おいしいお店を", "見つける"], href: "/gourmet", px: 63, pw: 134, cx: 130, col: "#f27b2f", ay: 645, op: "50% 88%" },
+  { k: "beauty", name: "ビューティー", sub: ["キレイを楽しむ"], href: "/beauty", px: 220, pw: 138, cx: 289, col: "#ee5d8e", ay: 639, op: "50% 24%" },
+  { k: "bodycare", name: "ボディケア", sub: ["からだを整える"], href: "/bodycare", px: 384, pw: 173, cx: 473, col: "#4aa84a", ay: 639, op: "50% 22%" },
+  { k: "pet", name: "ペット", sub: ["ペットと一緒に"], href: "/pet", px: 583, pw: 162, cx: 662, col: "#8b6cf0", ay: 639, op: "50% 9%" },
+  { k: "leisure", name: "おでかけ", sub: ["遊ぶ・体験する"], href: "/leisure", px: 769, pw: 158, cx: 845, col: "#2f8de0", ay: 639, op: "50% 42%" },
+  { k: "stay", name: "ステイ", sub: ["泊まる・くつろぐ"], href: "/stay", px: 952, pw: 162, cx: 1034, col: "#f6b620", ay: 639, op: "50% 46%" },
 ];
 const VINES = [["v0", 24, 425, 52, 265], ["v1", 190, 566, 46, 124], ["v2", 350, 548, 52, 142], ["v3", 538, 554, 54, 136], ["v4", 726, 548, 52, 142], ["v5", 912, 562, 54, 128], ["v6", 1104, 415, 52, 275]] as const;
 const TTL = [..."今日はどんな"].map((c) => ({ c, k: 0 })).concat([..."楽しみ"].map((c) => ({ c, k: 1 })), [..."を見つける？"].map((c) => ({ c, k: 0 })));
@@ -48,23 +48,23 @@ export default function Lower() {
           {CATS.map((c, i) => (
             <Link key={c.k} href={c.href} className="h2-cat h2-press" style={{ ["--i" as string]: i, ["--x0" as string]: c.px - 10, ["--w0" as string]: c.pw + 20 }}>
               <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
-              <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" /></span>
+              <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
               <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
-              <span className="h2-a h2-catn" style={P(c.cx - 85, 592, 170, 26)}>{c.name}</span>
-              <span className="h2-a h2-cats-sub" style={P(c.cx - 85, 621, 170, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
+              <span className="h2-a h2-catn" style={P(c.cx - 85, 586, 170, 26)}>{c.name}</span>
+              <span className="h2-a h2-cats-sub" style={P(c.cx - 85, 613.5, 170, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
               <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
             </Link>
           ))}
         </div>
         {VINES.map(([k, x, y, w, h], i) => (
-          <img key={k} className="h2-a h2-vine" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }} src={`${B}${k}.webp`} alt="" />
+          <span key={k} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
         ))}
       </section>
 
       {/* 2. 春の特集+まちの最新情報 */}
       <section className="h2-feat" style={OY(692)} aria-label="春の特集とまちの最新情報">
-        <div className="h2-a h2-slidewrap" data-rv style={P(38, 692, 644, 201)}><Slider /></div>
-        <div className="h2-a h2-news" data-rv data-io style={P(697, 692, 451, 201)}>
+        <div className="h2-a h2-slidewrap" data-io-early style={P(38, 692, 644, 201)}><Slider /></div>
+        <div className="h2-a h2-news" data-io-early style={P(697, 692, 451, 201)}>
           <img className="h2-a h2-nicon" style={P(0, 692, 38, 36)} src={`${B}news-icon.webp`} alt="" />
           <b className="h2-a h2-nt" style={P(44, 695, 200, 24)}>まちの最新情報</b>
           <Link href="/feature" className="h2-a h2-more h2-press" style={P(333, 697, 100, 20)}>もっと見る <span aria-hidden>→</span></Link>
@@ -85,7 +85,7 @@ export default function Lower() {
 
       {/* 3. 下の 4 枚のカード */}
       <section className="h2-cards" style={OY(900)} aria-label="読みもの">
-        <div className="h2-cardlist" data-io>
+        <div className="h2-cardlist h2-strip" data-io>
           {CARDS.map((c, i) => (
             <Link key={c.k} href={c.href} className="h2-a h2-card h2-press" style={{ ...P(c.x, 902, c.w, 141), ["--i" as string]: i }}>
               <span className="h2-cph"><img src={`${B}card-${c.k}.webp`} alt="" /></span>
