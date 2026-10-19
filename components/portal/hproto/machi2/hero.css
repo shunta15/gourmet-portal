@@ -1,0 +1,98 @@
+/* ヒーロー。見本の座標(1182 基準・y 0〜394)。 */
+.h2-hero { position: relative; height: calc(394 * var(--u)); overflow: hidden; background: #cfe6f6; }
+.h2-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: calc(30 * var(--u)); background: linear-gradient(transparent, rgba(255, 249, 214, .85)); pointer-events: none; z-index: 2; }
+.h2-hero-stage { position: absolute; inset: 0; }
+.h2-bgwrap { position: absolute; inset: 0; overflow: hidden; }
+.h2-bg { position: absolute; left: 0; top: 0; width: calc(1182 * var(--u)); height: calc(394 * var(--u)); animation: h2-kb 18s ease-in-out infinite alternate; transform-origin: 50% 38%; scale: 1.03; translate: calc(var(--px, 0) * -7 * var(--u)) calc(var(--py, 0) * -4 * var(--u)); }
+@keyframes h2-kb { from { transform: scale(1); } to { transform: scale(1.06); } }
+.h2-clouds { translate: calc(var(--px, 0) * -14 * var(--u)) calc(var(--py, 0) * -8 * var(--u)); position: absolute; left: calc(330 * var(--u)); top: calc(14 * var(--u)); width: calc(520 * var(--u)); height: calc(120 * var(--u)); overflow: hidden; pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); }
+.h2-clouds i { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.9), rgba(255,255,255,0)); animation: h2-cloud 34s linear infinite; }
+.h2-clouds i:nth-child(1) { width: calc(170 * var(--u)); height: calc(46 * var(--u)); top: calc(6 * var(--u)); left: calc(-170 * var(--u)); }
+.h2-clouds i:nth-child(2) { width: calc(220 * var(--u)); height: calc(56 * var(--u)); top: calc(50 * var(--u)); left: calc(-220 * var(--u)); animation-duration: 46s; animation-delay: -20s; opacity: .8; }
+.h2-clouds i:nth-child(3) { width: calc(140 * var(--u)); height: calc(40 * var(--u)); top: calc(84 * var(--u)); left: calc(-140 * var(--u)); animation-duration: 40s; animation-delay: -9s; opacity: .7; }
+@keyframes h2-cloud { to { transform: translateX(calc(760 * var(--u))); } }
+.h2-fly { transform: translate(calc(var(--px, 0) * -16 * var(--u)), calc(var(--py, 0) * -9 * var(--u))); position: absolute; width: calc(34 * var(--u)); height: auto; pointer-events: none; animation: h2-flyx var(--dur, 26s) linear infinite; animation-delay: var(--dl, 0s); }
+.h2-bird.b1 { --dur: 30s; --dl: -3s; } .h2-bird.b2 { --dur: 36s; --dl: -9s; } .h2-bird.b3 { --dur: 24s; --dl: -4s; width: calc(30 * var(--u)); }
+@keyframes h2-flyx { 0% { translate: calc(-120 * var(--u)) calc(6 * var(--u)); } 25% { translate: calc(80 * var(--u)) calc(-10 * var(--u)); } 50% { translate: calc(260 * var(--u)) calc(8 * var(--u)); } 75% { translate: calc(440 * var(--u)) calc(-8 * var(--u)); } 100% { translate: calc(640 * var(--u)) calc(4 * var(--u)); } }
+.h2-balloon { transform: translate(calc(var(--px, 0) * -18 * var(--u)), calc(var(--py, 0) * -10 * var(--u))); position: absolute; width: calc(34 * var(--u)); height: auto; transform-origin: 50% 100%; animation: h2-float 7s ease-in-out infinite; pointer-events: none; }
+@keyframes h2-float { 0%, 100% { translate: 0 0; rotate: -2.5deg; } 50% { translate: calc(8 * var(--u)) calc(-12 * var(--u)); rotate: 2.5deg; } }
+
+/* 大見出し(3 行): 行ごとのスタガー+オーバーシュートでせり上がり、1 文字ずつバウンス、出そろったら小さくシェイク、「輪」の下をマーカーが走る */
+.h2-title { position: absolute; left: 0; top: calc(34 * var(--u)); width: calc(1040 * var(--u)); margin: 0; font-family: var(--h2-yusei), var(--h2-maru), sans-serif; font-weight: 400; z-index: 3; pointer-events: none; text-align: center;
+  translate: calc(var(--px, 0) * -26 * var(--u)) calc(var(--py, 0) * -14 * var(--u)); animation: h2-shake .7s ease-in-out 2.75s; }
+.h2-ln { display: block; white-space: nowrap; font-size: calc(38.5 * var(--u)); line-height: calc(44 * var(--u)); letter-spacing: calc(-2 * var(--u)); animation: h2-lnrise .95s cubic-bezier(.25, .9, .35, 1) backwards; }
+.h2-l1 { rotate: -2deg; } .h2-l2 { rotate: -1deg; } .h2-l3 { rotate: .8deg; }
+.h2-title i { font-style: normal; display: inline-block; pointer-events: auto; position: relative; animation: h2-char .7s cubic-bezier(.3,1.6,.5,1) backwards; transition: transform .2s; -webkit-text-stroke: calc(2.4 * var(--u)) currentColor; paint-order: stroke fill; stroke-linejoin: round; text-shadow: 0 calc(2 * var(--u)) 0 rgba(255,255,255,.9), 0 0 calc(8 * var(--u)) rgba(255,255,255,.8); }
+.h2-title i:hover { animation: h2-hop .5s cubic-bezier(.3,1.6,.5,1); }
+@keyframes h2-lnrise { 0% { opacity: 0; transform: translateY(calc(70 * var(--u))); } 60% { opacity: 1; transform: translateY(calc(-10 * var(--u))); } 100% { opacity: 1; transform: none; } }
+@keyframes h2-char { from { opacity: 0; transform: scale(.45) rotate(-14deg); } to { opacity: 1; transform: none; } }
+@keyframes h2-hop { 0% { transform: none; } 40% { transform: translateY(calc(-12 * var(--u))) rotate(var(--r, 4deg)) scale(1.14); } 100% { transform: none; } }
+@keyframes h2-shake { 0%, 100% { transform: none; } 18% { transform: translate(calc(-5 * var(--u)), 0) rotate(-.5deg); } 36% { transform: translate(calc(5 * var(--u)), 0) rotate(.5deg); } 54% { transform: translate(calc(-3 * var(--u)), 0) rotate(-.3deg); } 72% { transform: translate(calc(2 * var(--u)), 0); } }
+.h2-hl { isolation: isolate; }
+.h2-title i.h2-pc { margin-right: calc(-10 * var(--u)); }
+.h2-hl::before { content: ""; position: absolute; z-index: -1; left: calc(-5 * var(--u)); right: calc(-2 * var(--u)); bottom: calc(-5 * var(--u)); height: calc(12 * var(--u)); border-radius: calc(7 * var(--u)); background: #ffd23f; box-shadow: 0 0 0 calc(1.5 * var(--u)) rgba(255,255,255,.8); transform-origin: 0 50%; transform: scaleX(0); animation: h2-marker .75s cubic-bezier(.5, 0, .2, 1) 1.95s forwards; }
+@keyframes h2-marker { to { transform: scaleX(1); } }
+
+/* 下の 2 行: 1 文字ずつ打たれる(タイプライター)。カーソルは最後に点滅して消える */
+.h2-sub { position: absolute; left: 0; top: calc(176 * var(--u)); width: calc(1040 * var(--u)); text-align: center; margin: 0; font-size: calc(12.4 * var(--u)); font-weight: 400; color: #2c2c2c; white-space: nowrap; z-index: 3; -webkit-text-stroke: calc(.5 * var(--u)) #2c2c2c; letter-spacing: .02em; text-shadow: 0 0 calc(5 * var(--u)) rgba(255,255,255,.95), 0 0 calc(10 * var(--u)) rgba(255,255,255,.85);
+  translate: calc(var(--px, 0) * -20 * var(--u)) calc(var(--py, 0) * -10 * var(--u)); }
+.h2-sln { display: block; line-height: calc(19 * var(--u)); margin-bottom: calc(3 * var(--u)); } .h2-sln > i { background: rgba(255,255,255,.62); padding: calc(1.5 * var(--u)) 0; } .h2-sln > i:first-child { padding-left: calc(8 * var(--u)); border-radius: 99px 0 0 99px; } .h2-sln > i:last-child { padding-right: calc(8 * var(--u)); border-radius: 0 99px 99px 0; }
+.h2-sub i { font-style: normal; position: relative; --d: calc(1.55s + var(--n) * 55ms); animation: h2-type .01s steps(1) var(--d) backwards; }
+.h2-sub i::after { content: ""; position: absolute; right: calc(-2 * var(--u)); top: 8%; width: calc(1.6 * var(--u)); height: 1.1em; background: #ee5a7a; opacity: 0; animation: h2-caret .07s linear var(--d); }
+.h2-sub i.h2-last::after { animation: h2-caret-end .9s steps(1) var(--d) 3 forwards; }
+@keyframes h2-type { from { opacity: 0; } to { opacity: 1; } }
+@keyframes h2-caret { from, to { opacity: 1; } }
+@keyframes h2-caret-end { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+
+/* 吹き出し 4 つ(順にぽんと出る・ふわふわ・押すと跳ねる) */
+.h2-bub { position: absolute; padding: 0; z-index: 4; transform: translate(calc(var(--px, 0) * -30 * var(--u)), calc(var(--py, 0) * -16 * var(--u))); transform-origin: var(--ox, 10%) 95%; animation: h2-bubin .7s cubic-bezier(.3,1.7,.5,1) backwards, h2-bob 5.5s ease-in-out infinite; }
+.h2-bub img { width: 100%; height: 100%; display: block; filter: drop-shadow(0 calc(2 * var(--u)) calc(3 * var(--u)) rgba(60,70,60,.18)); }
+.h2-bt { position: absolute; transform: translate(-50%, -50%); text-align: center; color: #333; white-space: nowrap; display: flex; flex-direction: column; align-items: center; font-weight: 400; -webkit-text-stroke: calc(.3 * var(--u)) #333; }
+@keyframes h2-bubin { from { opacity: 0; transform: scale(0) rotate(-12deg); } to { opacity: 1; transform: none; } }
+.h2-bub.h2-jumping { animation: h2-bubjump .7s cubic-bezier(.3,1.6,.5,1), h2-bob 5.5s ease-in-out infinite; animation-delay: 0s, 0s !important; }
+@keyframes h2-bubjump { 0% { transform: none; } 30% { transform: translateY(calc(-16 * var(--u))) rotate(-7deg) scale(1.12); } 60% { transform: translateY(0) rotate(4deg) scale(.96); } 100% { transform: none; } }
+
+/* 黒板の看板「Good Local Life」: 振り子のようにゆっくり揺れる。乗せると大きく揺れる */
+.h2-board { position: absolute; left: calc(1036 * var(--u)); top: calc(258 * var(--u)); width: calc(64 * var(--u)); height: calc(76 * var(--u)); z-index: 4; transform-origin: 50% 0; animation: h2-swing 4.6s ease-in-out infinite; translate: calc(var(--px, 0) * -24 * var(--u)) calc(var(--py, 0) * -12 * var(--u)); }
+.h2-board::before { content: ""; position: absolute; inset: 0; border-radius: calc(5 * var(--u)); background: #263238; border: calc(4 * var(--u)) solid #b48a56; box-shadow: 0 calc(3 * var(--u)) calc(6 * var(--u)) rgba(0,0,0,.28), inset 0 0 calc(10 * var(--u)) rgba(0,0,0,.4); }
+.h2-board-in { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; color: #f6f4ea; font-family: var(--h2-script), cursive; font-weight: 700; font-size: calc(14 * var(--u)); line-height: 1.12; rotate: -4deg; }
+.h2-board:hover { animation: h2-swing-big 1.6s ease-in-out infinite; }
+@keyframes h2-swing { 0%, 100% { rotate: 3.5deg; } 50% { rotate: -3.5deg; } }
+@keyframes h2-swing-big { 0%, 100% { rotate: 12deg; } 50% { rotate: -12deg; } }
+
+/* 検索の箱: 左から拭くように現れる。フォーカスで伸びて縁が光る。「検索」には光がときどき走る */
+.h2-search { position: absolute; left: calc(281 * var(--u)); top: calc(266 * var(--u)); width: calc(614 * var(--u)); height: calc(54 * var(--u)); border-radius: 999px; background: #fff; border: calc(3 * var(--u)) solid rgba(255,255,255,.95); box-shadow: 0 0 0 calc(2 * var(--u)) #e8eef5, 0 calc(4 * var(--u)) calc(12 * var(--u)) rgba(80,110,130,.2); display: flex; align-items: center; z-index: 5; margin: 0; animation: h2-wipe 1s cubic-bezier(.5, 0, .2, 1) 1.2s backwards; transition: left .45s cubic-bezier(.3, 1.3, .5, 1), width .45s cubic-bezier(.3, 1.3, .5, 1), box-shadow .3s; }
+.h2-search:focus-within { left: calc(251 * var(--u)); width: calc(674 * var(--u)); box-shadow: 0 0 0 calc(3 * var(--u)) #f58a4a, 0 0 calc(18 * var(--u)) rgba(245,138,74,.55), 0 calc(6 * var(--u)) calc(16 * var(--u)) rgba(245,138,74,.3); }
+@keyframes h2-wipe { from { clip-path: inset(-12px 100% -12px -12px); } to { clip-path: inset(-12px -12px -12px -12px); } }
+.h2-s-ico { position: absolute; left: calc(26 * var(--u)); top: calc(14 * var(--u)); width: calc(20 * var(--u)); height: calc(20 * var(--u)); }
+.h2-search input { position: absolute; left: calc(58 * var(--u)); right: calc(150 * var(--u)); top: 0; bottom: 0; border: 0; background: none; outline: none; font: inherit; font-size: calc(14.4 * var(--u)); color: #333; letter-spacing: .03em; min-width: 0; }
+.h2-search input::placeholder { color: #8091a8; }
+.h2-s-go { position: absolute; right: calc(0 * var(--u)); top: calc(0 * var(--u)); width: calc(140 * var(--u)); height: calc(48 * var(--u)); border-radius: 999px; background: linear-gradient(#f79a5a, #ee6a2c); color: #fff; font-size: calc(21 * var(--u)); font-weight: 700; letter-spacing: .12em; box-shadow: 0 calc(2 * var(--u)) 0 rgba(200,90,30,.3); overflow: hidden; }
+.h2-s-go::after { content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 30%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.65), transparent); transform: skewX(-18deg); animation: h2-shimmer 3.6s ease-in-out 2.6s infinite; }
+@keyframes h2-shimmer { 0% { left: -40%; } 38%, 100% { left: 130%; } }
+.h2-pills { position: absolute; left: 0; top: calc(326 * var(--u)); z-index: 5; }
+.h2-pill { position: absolute; top: 0; height: calc(66 * var(--u)); border-radius: 999px; display: flex; align-items: center; gap: calc(14 * var(--u)); padding-left: calc(30 * var(--u)); background: linear-gradient(rgba(255,253,243,.96), rgba(255,250,228,.92)); box-shadow: 0 0 0 calc(3 * var(--u)) rgba(255,255,255,.85), 0 calc(4 * var(--u)) calc(10 * var(--u)) rgba(120,130,100,.18); animation: h2-slide-l .9s cubic-bezier(.3,1.25,.5,1) backwards; }
+.h2-pill svg { width: calc(46 * var(--u)); height: calc(46 * var(--u)); flex: none; }
+.h2-pill span { display: flex; flex-direction: column; gap: calc(2 * var(--u)); }
+.h2-pill b { font-size: calc(17.4 * var(--u)); font-weight: 700; line-height: 1.25; }
+.h2-pill small { font-size: calc(10.6 * var(--u)); color: #4f6078; line-height: 1.3; white-space: nowrap; }
+.h2-p-map { left: calc(168 * var(--u)); width: calc(284 * var(--u)); animation-delay: 1.35s; } .h2-p-map b { color: #1f8a4c; }
+.h2-p-stn { left: calc(458 * var(--u)); width: calc(270 * var(--u)); animation-name: h2-slide-b; animation-delay: 1.5s; } .h2-p-stn b { color: #1f6fc4; }
+.h2-p-mov { left: calc(735 * var(--u)); width: calc(281 * var(--u)); animation-name: h2-slide-r; animation-delay: 1.65s; } .h2-p-mov b { color: #e8531f; }
+.h2-pill:hover { box-shadow: 0 0 0 calc(3 * var(--u)) rgba(255,255,255,.95), 0 calc(8 * var(--u)) calc(16 * var(--u)) rgba(100,130,100,.28); }
+.h2-pill:hover svg { animation: h2-wiggle .5s ease-in-out infinite; }
+@keyframes h2-wiggle { 0%, 100% { transform: rotate(0); } 20% { transform: rotate(-14deg) scale(1.08); } 50% { transform: rotate(12deg) scale(1.08); } 80% { transform: rotate(-7deg); } }
+@keyframes h2-slide-l { from { opacity: 0; transform: translateX(calc(-110 * var(--u))); } to { opacity: 1; transform: none; } }
+@keyframes h2-slide-r { from { opacity: 0; transform: translateX(calc(110 * var(--u))); } to { opacity: 1; transform: none; } }
+@keyframes h2-slide-b { from { opacity: 0; transform: translateY(calc(40 * var(--u))); } to { opacity: 1; transform: none; } }
+
+/* スマホ: 見本の中央(x 140〜1040)を画面いっぱいに */
+@media (max-width: 700px) {
+  .h2-hero { --u: calc(100cqw / 640); height: calc(394 * var(--u)); }
+  .h2-hero-stage { left: calc(-270 * var(--u)); right: auto; width: calc(1182 * var(--u)); }
+  .h2-fly, .h2-board { display: none; }
+  .h2-search { left: calc(300 * var(--u)); width: calc(584 * var(--u)); }
+  .h2-pill { padding-left: calc(18 * var(--u)); }
+}
+@media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } }
