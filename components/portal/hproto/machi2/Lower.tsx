@@ -29,9 +29,9 @@ const NEWS = [
   { img: "news4.webp", date: "2025.03.28", t: ["ペットと楽しめる公園特集を追加しました"], y: 850 },
 ];
 const CARDS = [
-  { k: "story", x: 41, w: 252, t: "まちのストーリー", d: ["お店の人・地域でがんばる人、", "まちで見つけた好きな話を紹介"], href: "/feature", b: { x: 117, y: 12, w: 134, h: 56, l: ["このまちの", "好きなことに出会える!"], f: 10.2 } },
-  { k: "family", x: 310, w: 267, t: "家族でおでかけ", d: ["公園・体験・レジャー施設など", "家族で楽しめるスポットを紹介"], href: "/leisure", b: { x: 148, y: 9, w: 124, h: 62, l: ["家族で見つかる", "休日のたのしみ。"], f: 10.2 } },
-  { k: "pet", x: 591, w: 267, t: "ペットと楽しめるお店", d: ["一緒に入れるカフェ・おでかけスポット・", "ペットサービスをご紹介"], href: "/pet", b: { x: 150, y: 7, w: 120, h: 60, l: ["いつもまちから", "もっと楽しい!"], f: 10.2 } },
+  { k: "story", x: 41, w: 252, t: "まちのストーリー", d: ["宮崎・高岡町で34年続くうどん屋を", "お孫さんが受け継ぐ話をご紹介"], href: "/feature/花見うどん・ラーメン", b: { x: 168, y: 5, w: 84, h: 50, l: ["34年続く店を", "孫が受け継ぐ"], f: 10.2 } },
+  { k: "family", x: 310, w: 267, t: "家族でおでかけ", d: ["上野動物園や葛西臨海公園など、", "東京の子連れスポットを5つご紹介"], href: "/feature/new-tokyo-family", b: { x: 189, y: 4, w: 74, h: 46, l: ["年齢で選べる", "定番の施設。"], f: 10.2 } },
+  { k: "pet", x: 591, w: 267, t: "ペットと楽しめるお店", d: ["愛犬と食事できるドッグレストランの", "区画がある、旭川のカフェをご紹介"], href: "/restaurant/r304", b: { x: 188, y: 3, w: 76, h: 46, l: ["愛犬と一緒に", "食事できる。"], f: 10.2 } },
 ];
 
 const DEMO_FOOT = {
@@ -109,10 +109,10 @@ export default function Lower({ prod = false, news }: { prod?: boolean; news?: N
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" style={{ ...P(876, 902, 266, 139), ["--i" as string]: 3 }}>
+          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, 139), ["--i" as string]: 3 }}>
+            {/* オーナー作の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。再生ボタンの位置に光の輪だけ重ねる */}
             <span className="h2-cph h2-vph"><img src={`${B}card-video.webp`} alt="" /></span>
-            <b className="h2-vt h2-hand"><span>動画で見つかる</span><span>まちの新しい魅力</span></b>
-            <span className="h2-vbtn"><i className="h2-play"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4.500 15.500 10 7 15.500Z" fill="#fff" /></svg></i><span>動画で見る</span><em aria-hidden="true">→</em></span>
+            <i className="h2-vring" aria-hidden="true" />
           </Link>
         </div>
       </section>
