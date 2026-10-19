@@ -1,5 +1,6 @@
 import Fx from "./Fx";
 import Petals from "./Petals";
+import Motion from "./Motion";
 import { maru, mplus, yusei, kure, script, pop } from "./fonts";
 import "./base.css";
 
@@ -8,9 +9,11 @@ export default function MachiShell({ children }: { children: React.ReactNode }) 
   return (
     <>
       <Petals />
+      <div className="hm-progress" aria-hidden="true" />
       <div className={`hm-root ${maru.variable} ${mplus.variable} ${yusei.variable} ${kure.variable} ${script.variable} ${pop.variable}`}>
         <p className="hm-notice">見本(デザイン確認用。店名・数字・記事名は仮の内容です)</p>
         <Fx />
+        <Motion />
         <div className="hm-page">{children}</div>
       </div>
     </>

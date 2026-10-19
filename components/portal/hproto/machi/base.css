@@ -43,3 +43,8 @@ body:has(.hm-root), body:has(.hm-root) main { cursor: auto; background: #fff; pa
 .hm-mplus { font-family: var(--hm-mplus), var(--hm-maru), sans-serif; }
 @media (prefers-reduced-motion: reduce) { .hm-root * { animation: none !important; transition: none !important; } }
 /* 狭い画面(〜700px)では見本の横並びをそのまま縮めず、各節が縦積み・横スクロールに組み替える(節ごとに css で指定) */
+
+/* スクロールの進みバー(上端。差し色=ピンク) */
+.hm-progress { position: fixed; left: 0; top: 0; right: 0; height: 4px; z-index: 70; pointer-events: none; --sp: 0; }
+.hm-progress::before { content: ""; position: absolute; inset: 0; transform-origin: 0 50%; transform: scaleX(var(--sp)); background: linear-gradient(90deg, #f4789a, #ee5a7a 55%, #f08a3c); border-radius: 0 4px 4px 0; box-shadow: 0 1px 6px rgba(238, 90, 122, .45); }
+@media (prefers-reduced-motion: reduce) { .hm-progress { display: none; } }

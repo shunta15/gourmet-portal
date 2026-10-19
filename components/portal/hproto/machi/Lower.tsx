@@ -1,6 +1,7 @@
 import Counter from "./Counter";
 import Slider from "./Slider";
 import Bubble from "./Bubble";
+import { P2, P3 } from "./copy";
 import "./lower.css";
 
 const B = "/_portal/hproto/machi/lower/";
@@ -29,18 +30,18 @@ const ROWS = [
 
 export default function Lower() {
   return (
-    <section className="hm-lower" style={{ height: "calc(932 * var(--u))" }}>
+    <section className="hm-lower" style={{ height: "calc(1112 * var(--u))" }}>
       {/* 1. 業種アイコン列+統計 */}
       <div className="hm-l-cats">
         {CATS.map((c, i) => (
-          <a key={c.k} href={c.href} className="hm-l-a hm-l-cat hm-press" style={{ ...P(c.x, 0, 112.5, 119), animationDelay: `${i * 70}ms` }}>
+          <a key={c.k} href={c.href} className="hm-l-a hm-l-cat hm-press" data-io style={{ ...P(c.x, 0, 112.5, 119), ["--i" as string]: i }}>
             <span className="hm-l-ic"><img src={`${B}ic-${c.k}.webp`} alt="" width={64} height={64} /></span>
             <span className="hm-l-cn">{c.name}</span>
             <span className="hm-l-cs">{c.sub}</span>
           </a>
         ))}
-        <div className="hm-l-a hm-l-stat" data-rv style={P(775, 15, 314, 103)}>
-          <span className="hm-l-pen hm-mplus">マチノワで見つかる、<br />まちのいろいろ</span>
+        <div className="hm-l-a hm-l-stat" data-rv data-io style={P(775, 15, 314, 103)}>
+          <span className="hm-l-pen hm-mplus hm-wipe">マチノワで見つかる、<br />まちのいろいろ</span>
           <img className="hm-l-a hm-l-sprig" style={P(29, -25, 26, 48)} src={`${B}st-sprig.webp`} alt="" />
           <img className="hm-l-a hm-l-tree" style={P(247, -11, 22, 36)} src={`${B}st-tree.webp`} alt="" />
           <img className="hm-l-a hm-l-spark" style={P(277, 31, 26, 32)} src={`${B}st-spark.webp`} alt="" />
@@ -52,22 +53,38 @@ export default function Lower() {
         </div>
       </div>
 
+
+      {/* コンセプトの帯(第 2・3 段落)。下から文字が現れる(マスク)・流れる光(スウィープ) */}
+      <div className="hm-l-a hm-l-concept" data-io data-live style={P(31, 140, 1060, 164)}>
+        <i className="hm-l-a hm-l-cglow" style={P(0, 0)} />
+        <img className="hm-l-a hm-l-tree hm-l-cd1" style={P(46, 70, 44, 72)} src={`${B}st-tree.webp`} alt="" />
+        <img className="hm-l-a hm-l-sprig hm-l-cd2" style={P(98, 88, 36, 66)} src={`${B}st-sprig.webp`} alt="" />
+        <img className="hm-l-a hm-l-fx hm-l-fx-b1 hm-l-cd3" style={P(950, 26, 50, 66)} src={`${B}fx-balloon.webp`} alt="" />
+        <img className="hm-l-a hm-l-fx hm-l-fx-b2 hm-l-cd4" style={P(1004, 80, 36, 32)} src={`${B}fx-balloon2.webp`} alt="" />
+        <img className="hm-l-a hm-l-spark hm-l-cd5" style={P(900, 88, 28, 34)} src={`${B}st-spark.webp`} alt="" />
+        <p className="hm-l-p2 hm-hand">{P2.split("\n").map((t, i) => <span key={i} className="hm-l-mk" style={{ ["--k" as string]: i }}><span>{t}</span></span>)}</p>
+        <i className="hm-l-cdiv" aria-hidden="true" />
+        <p className="hm-l-p3">{P3.split("\n").map((t, i) => <span key={i} className="hm-l-mk" style={{ ["--k" as string]: i + 2 }}><span>{t}</span></span>)}</p>
+        <i className="hm-l-sweep" aria-hidden="true" />
+      </div>
+
+      <div className="hm-l-b">
       {/* 2. 特集スライド+右の 2 枚 */}
       <div className="hm-l-a hm-l-slidewrap" data-rv style={P(19, 142, 636, 270)}><Slider /></div>
       <div className="hm-l-strip">
-      <a href="/gourmet" data-rv className="hm-l-a hm-l-card hm-l-top hm-press" style={P(657, 142, 213, 258)}>
+      <a href="/gourmet" data-io data-st className="hm-l-a hm-l-card hm-l-top hm-press" style={{ ...P(657, 142, 213, 258), ["--i" as string]: 0 }}>
         <span className="hm-l-ph" style={{ "--ph": 154 } as React.CSSProperties}><img src={`${B}card-pasta.webp`} alt="" /><Bubble img="b-pasta.webp" w={106} h={72} x={106} y={2} lines={["地元で人気の", "あのお店も！"]} f={11} /></span>
         <span className="hm-l-pn">
-          <b className="hm-l-ct">いま行きたい！<br />おすすめのお店</b>
+          <b className="hm-l-ct hm-wipe">いま行きたい！<br />おすすめのお店</b>
           <span className="hm-l-cd">地元で愛される話題のお店を<br />ピックアップ！</span>
           <i className="hm-l-arr" style={{ color: "#ec6d8d" }}>→</i>
           <img className="hm-l-a hm-l-dec" style={P(163, 11, 26, 25)} src={`${B}dec-note.webp`} alt="" />
         </span>
       </a>
-      <a href="/leisure" data-rv className="hm-l-a hm-l-card hm-l-top hm-press" style={P(882, 142, 207, 258)}>
+      <a href="/leisure" data-io data-st className="hm-l-a hm-l-card hm-l-top hm-press" style={{ ...P(882, 142, 207, 258), ["--i" as string]: 1 }}>
         <span className="hm-l-ph" style={{ "--ph": 154 } as React.CSSProperties}><img src={`${B}card-family.webp`} alt="" /><Bubble img="b-family.webp" w={120} h={62} x={62} y={4} lines={["家族で楽しめる", "スポットがいっぱい！"]} f={11} /></span>
         <span className="hm-l-pn">
-          <b className="hm-l-ct">家族でおでかけ<br />スポット</b>
+          <b className="hm-l-ct hm-wipe">家族でおでかけ<br />スポット</b>
           <span className="hm-l-cd">公園・体験・レジャー施設など<br />週末のおでかけ先に</span>
           <i className="hm-l-arr" style={{ color: "#c0925a" }}>→</i>
           <img className="hm-l-a hm-l-dec" style={P(162, 9, 28, 36)} src={`${B}dec-hand.webp`} alt="" />
@@ -78,21 +95,21 @@ export default function Lower() {
 
       {/* 3. 4 枚の列 */}
       <div className="hm-l-strip hm-l-strip2">
-      {ROWS.map((c) => (
-        <a key={c.k} href={c.href} data-rv className="hm-l-a hm-l-card hm-l-row hm-press" style={P(c.x, 417, c.w, 241)}>
+      {ROWS.map((c, i) => (
+        <a key={c.k} href={c.href} data-io data-st className="hm-l-a hm-l-card hm-l-row hm-press" style={{ ...P(c.x, 417, c.w, 241), ["--i" as string]: i }}>
           <span className="hm-l-ph" style={{ "--ph": 159 } as React.CSSProperties}><img src={`${B}card-${c.k}.webp`} alt="" /><Bubble img={c.b.img} w={c.b.w} h={c.b.h} x={c.b.x} y={c.b.y} lines={c.b.lines} f={c.b.f} /></span>
           <span className="hm-l-pn hm-l-pn2">
-            <b className="hm-l-ct">{c.t}</b>
+            <b className="hm-l-ct hm-wipe">{c.t}</b>
             <span className="hm-l-cd">{c.d[0]}<br />{c.d[1]}</span>
             <i className="hm-l-arr" style={{ color: "#ec6d8d" }}>→</i>
           </span>
         </a>
       ))}
       </div>
-      <div className="hm-l-a hm-l-news" data-rv style={P(868, 417, 224, 241)}>
+      <div className="hm-l-a hm-l-news" data-rv data-io style={P(868, 417, 224, 241)}>
         <div className="hm-l-nh">
           <img className="hm-l-a" style={P(12, 7, 22, 26)} src={`${B}news-house.webp`} alt="" />
-          <b className="hm-l-a hm-l-nt hm-mplus" style={P(39, 10)}>まちの最新情報</b>
+          <b className="hm-l-a hm-l-nt hm-mplus hm-wipe" style={P(39, 10)}>まちの最新情報</b>
           <img className="hm-l-a hm-l-bird" style={P(186, -1, 30, 28)} src={`${B}news-bird.webp`} alt="" />
         </div>
         <ul>
@@ -146,6 +163,7 @@ export default function Lower() {
         </form>
         <p className="hm-l-a hm-l-copy" style={P(561, 90)}>© 2025 マチノワ Machinowa. All rights reserved.</p>
       </footer>
+      </div>
     </section>
   );
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { BASE, IMG } from "./const";
+import { P3 } from "./copy";
 import "./header.css";
 
 const NAV: [string, string][] = [["お店を探す", "/search"], ["特集記事", "/feature"], ["まちのニュース", "/feature"], ["エリアガイド", "/search"], ["マチノワについて", "/gourmet"]];
@@ -13,11 +14,20 @@ export default function Header() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    let on = false;
-    const f = () => { const s = window.scrollY > 30; if (s !== on) { on = s; el.classList.toggle("is-stuck", s); } };
+    let on = false, away = false, lastY = window.scrollY, raf = 0;
+    const f = () => {
+      raf = 0;
+      const y = window.scrollY;
+      const s = y > 30; if (s !== on) { on = s; el.classList.toggle("is-stuck", s); }
+      // 下へ進むと上に隠れ、上へ戻るときだけスライドダウンで再表示
+      const hide = y > 220 && y > lastY + 3 ? true : (y < lastY - 3 || y <= 220 ? false : away);
+      if (hide !== away) { away = hide; el.classList.toggle("is-away", hide); }
+      if (Math.abs(y - lastY) > 3) lastY = y;
+    };
+    const on_ = () => { if (!raf) raf = requestAnimationFrame(f); };
     f();
-    window.addEventListener("scroll", f, { passive: true });
-    return () => window.removeEventListener("scroll", f);
+    window.addEventListener("scroll", on_, { passive: true });
+    return () => { window.removeEventListener("scroll", on_); cancelAnimationFrame(raf); };
   }, []);
   return (
     <div className="hm-headwrap" ref={ref}>
@@ -26,7 +36,7 @@ export default function Header() {
           <Link href={BASE} className="hm-logo hm-press" aria-label="マチノワ(見本)のトップ">
             <img src={`${IMG}/common/logo.webp`} alt="マチノワ Machinowa" width={264} height={85} />
           </Link>
-          <p className="hm-tag">まちの人・お店・くらしがつながる ローカルポータルサイト</p>
+          <p className="hm-tag">{P3.replace("\n", "")}</p>
           <nav className="hm-nav" aria-label="メインメニュー">
             <Link href={BASE} className="is-on hm-press"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 1 8h2v6h4v-4h2v4h4V8h2L8 1.5Z" fill="currentColor" /></svg>ホーム</Link>
             {NAV.map(([t, h]) => <Link key={t} href={h} className="hm-press">{t}</Link>)}

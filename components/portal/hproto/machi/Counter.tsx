@@ -19,6 +19,7 @@ export default function Counter({ to, className }: { to: number; className?: str
         const p = Math.min(1, (t - t0) / dur);
         setV(Math.round(to * (1 - Math.pow(1 - p, 3))));
         if (p < 1) raf = requestAnimationFrame(tick);
+        else { el.classList.remove("hm-numpop"); void el.offsetWidth; el.classList.add("hm-numpop"); }
       };
       raf = requestAnimationFrame(tick);
     };

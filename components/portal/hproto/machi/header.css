@@ -38,3 +38,7 @@
   .hm-headwrap.is-stuck { --hs: 1; }
 }
 @media (max-width: 700px) { .hm-head::before { background: #fff; } .hm-headwrap.is-stuck .hm-head { box-shadow: 0 3px 12px rgba(80,110,130,.14); } }
+/* 下へ進むと上に隠れ、上へ戻るとスライドダウンで出てくる */
+.hm-head { transition: background .3s, box-shadow .3s, transform .45s cubic-bezier(.3, 1.25, .5, 1); }
+.hm-headwrap.is-away .hm-head { transform: translateY(-120%); transition: background .3s, box-shadow .3s, transform .3s ease-in; }
+@media (prefers-reduced-motion: reduce) { .hm-headwrap.is-away .hm-head { transform: none; } }

@@ -2,12 +2,22 @@
 import Link from "next/link";
 import { preload } from "react-dom";
 import { IMG } from "./const";
+import { HEAD, P1_LINES } from "./copy";
 import "./hero.css";
 
 const H = `${IMG}/hero`;
 const G = "#3f9e5a", O = "#f28a2a", P = "#ee5a7a", B = "#1f93d6";
-const L1: [string, string][] = [["ま", O], ["ち", O], ["の", G], ["楽", P], ["し", O], ["さ", O], ["、", G]];
-const L2: [string, string][] = [["ま", G], ["る", G], ["ご", G], ["と", G], ["見", B], ["つ", B], ["か", B], ["る", B], ["。", O]];
+const COL: Record<string, string[]> = {
+  l1: [O, O, G, G, P, O, O, G],
+  l2: [G, G, G, B, P, B, B],
+  l3: [O, O, G, G, B, B, O],
+};
+const LINES = HEAD.map((t, i) => ({ k: `l${i + 1}`, chars: Array.from(t), col: COL[`l${i + 1}`] }));
+const ROT = [-4, 3, -2, 4, -3, 2, 0, -2];
+/** リード(第 1 段落)の 1 文字ずつの通し番号 */
+let n = 0;
+const LEAD_LINES = P1_LINES.map((t) => Array.from(t).map((c) => ({ c, n: n++ })));
+const LEAD_N = n;
 
 const BUBBLES = [
   { k: "b1", x: 152, y: 100, w: 130, h: 68, cx: 66, cy: 29, rot: -9, lines: ["お気に入りの", "お店が見つかる!"], fs: 12.6, d: 0.55 },
@@ -29,11 +39,20 @@ export default function Hero() {
         <img className="hm-fly hm-bird b3" style={{ left: "calc(823 * var(--u))", top: "calc(237 * var(--u))" }} src={`${H}/bird3.webp`} alt="" width={51} height={46} />
         <img className="hm-balloon" style={{ left: "calc(815 * var(--u))", top: "calc(63 * var(--u))" }} src={`${H}/balloon.webp`} alt="" width={64} height={82} />
 
-        <h1 className="hm-title" aria-label="まちの楽しさ、まるごと見つかる。">
-          <span className="hm-l1" aria-hidden="true">{L1.map(([c, col], i) => <i key={i} style={{ color: col, animationDelay: `${0.2 + i * 0.08}s`, ["--r" as string]: `${[-4, 3, -2, 4, -3, 2, 0][i]}deg` }}>{c}</i>)}</span>
-          <span className="hm-l2" aria-hidden="true">{L2.map(([c, col], i) => <i key={i} style={{ color: col, animationDelay: `${0.8 + i * 0.08}s`, ["--r" as string]: `${[3, -3, 2, -2, 4, -3, 2, -2, 0][i]}deg` }}>{c}</i>)}</span>
+        <h1 className="hm-title">
+          {LINES.map((l, li) => (
+            <span key={l.k} className={`hm-ln hm-${l.k}`} style={{ animationDelay: `${0.15 + li * 0.12}s` }}>
+              {l.chars.map((c, i) => (
+                <i key={i} className={li === 1 && i === 4 ? "hm-hl" : c === "、" ? "hm-pc" : undefined} style={{ color: l.col[i], animationDelay: `${0.15 + li * 0.12 + i * 0.05}s`, ["--r" as string]: `${ROT[i % ROT.length]}deg` }}>{c}</i>
+              ))}
+            </span>
+          ))}
         </h1>
-        <p className="hm-sub hm-kure">人も、お店も、まちの魅力も。ぜんぶ、つながる。</p>
+        <p className="hm-sub hm-kure">
+          {LEAD_LINES.map((ln, li) => (
+            <span key={li} className="hm-sl">{ln.map((x) => <i key={x.n} className={x.n === LEAD_N - 1 ? "hm-last" : undefined} style={{ ["--n" as string]: x.n }}>{x.c}</i>)}</span>
+          ))}
+        </p>
 
         {BUBBLES.map((b) => (
           <button type="button" key={b.k} className="hm-bub hm-jump" aria-label={b.lines.join("")}

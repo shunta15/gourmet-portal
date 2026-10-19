@@ -26,7 +26,7 @@ export default function Petals() {
       cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); cv.style.width = W + "px"; cv.style.height = H + "px";
     };
     resize();
-    const N = small ? 8 : 14;
+    const N = small ? 10 : 20;
     for (let i = 0; i < N; i++) ps.push(mk(Math.random() * W, Math.random() * H));
     let lx = -99, ly = -99, acc = 0;
     const move = (e: PointerEvent) => {
