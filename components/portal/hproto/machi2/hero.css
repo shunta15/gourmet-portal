@@ -26,12 +26,6 @@
 .h2-st-bar { position: absolute; left: 14%; right: 14%; bottom: 3px; height: 2.5px; border-radius: 2px; background: rgba(255, 255, 255, .95); transform-origin: 0 50%; transform: scaleX(0); animation: h2-stbar var(--season-dur, 6s) linear forwards; }
 .h2-hero-stage[data-pause] .h2-st-bar { animation-play-state: paused; }
 @keyframes h2-stbar { to { transform: scaleX(1); } }
-/* 季節ごとに吹き出しを少しずらす(人・犬の顔にかからないように。切り替えの間に滑って動く) */
-.h2-bub { transition: left .9s cubic-bezier(.5, 0, .2, 1), top .9s cubic-bezier(.5, 0, .2, 1); }
-.h2-hero[data-season="summer"] .h2-bub.b1 { --sx: 34; --sy: 2; }
-.h2-hero[data-season="summer"] .h2-bub.b2 { --sx: 62; --sy: -22; }
-.h2-hero[data-season="summer"] .h2-bub.b3 { --sx: -6; --sy: 20; }
-.h2-hero[data-season="summer"] .h2-bub.b4 { --sx: 0; --sy: 8; }
 .h2-clouds { translate: calc(var(--px, 0) * -14 * var(--u)) calc(var(--py, 0) * -8 * var(--u)); position: absolute; left: calc(330 * var(--u)); top: calc(14 * var(--u)); width: calc(520 * var(--u)); height: calc(120 * var(--u)); overflow: hidden; pointer-events: none;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); }
 .h2-clouds i { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.9), rgba(255,255,255,0)); animation: h2-cloud 34s linear infinite; }
@@ -74,13 +68,6 @@
 @keyframes h2-caret { from, to { opacity: 1; } }
 @keyframes h2-caret-end { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
 
-/* 吹き出し 4 つ(順にぽんと出る・ふわふわ・押すと跳ねる) */
-.h2-bub { position: absolute; padding: 0; z-index: 4; transform: translate(calc(var(--px, 0) * -30 * var(--u)), calc(var(--py, 0) * -16 * var(--u))); transform-origin: var(--ox, 10%) 95%; animation: h2-bubin .7s cubic-bezier(.3,1.7,.5,1) backwards, h2-bob 5.5s ease-in-out infinite; }
-.h2-bub img { width: 100%; height: 100%; display: block; filter: drop-shadow(0 calc(2 * var(--u)) calc(3 * var(--u)) rgba(60,70,60,.18)); }
-.h2-bt { position: absolute; transform: translate(-50%, -50%); text-align: center; color: #333; white-space: nowrap; display: flex; flex-direction: column; align-items: center; font-weight: 400; -webkit-text-stroke: calc(.3 * var(--u)) #333; }
-@keyframes h2-bubin { from { opacity: 0; transform: scale(.3) rotate(-12deg); } to { opacity: 1; transform: none; } }
-.h2-bub.h2-jumping { animation: h2-bubjump .7s cubic-bezier(.3,1.6,.5,1), h2-bob 5.5s ease-in-out infinite; animation-delay: 0s, 0s !important; }
-@keyframes h2-bubjump { 0% { transform: none; } 30% { transform: translateY(calc(-16 * var(--u))) rotate(-7deg) scale(1.12); } 60% { transform: translateY(0) rotate(4deg) scale(.96); } 100% { transform: none; } }
 
 /* 黒板の看板「Good Local Life」: 振り子のようにゆっくり揺れる。乗せると大きく揺れる */
 .h2-board { position: absolute; left: calc(1036 * var(--u)); top: calc(258 * var(--u)); width: calc(64 * var(--u)); height: calc(76 * var(--u)); z-index: 4; transform-origin: 50% 0; animation: h2-swing 4.6s ease-in-out infinite; translate: calc(var(--px, 0) * -24 * var(--u)) calc(var(--py, 0) * -12 * var(--u)); }
@@ -130,11 +117,10 @@
   .h2-hero::after { bottom: 50px; }
   .h2-hero-stage { left: calc(-270 * var(--u)); right: auto; width: calc(1182 * var(--u)); }
   .h2-sbg { height: calc(394 * var(--u) + var(--hd)); }
-  .h2-title, .h2-sub, .h2-search, .h2-bub, .h2-pills { margin-top: var(--hd); }
+  .h2-title, .h2-sub, .h2-search, .h2-pills { margin-top: var(--hd); }
   /* 隠す絵は display:none にせず visibility:hidden(大きさを持ったまま。0×0 の画像にならない) */
-  .h2-fly, .h2-bub.b1, .h2-bub.b2, .h2-bub.b4 { visibility: hidden; pointer-events: none; animation: none; }
+  .h2-fly { visibility: hidden; pointer-events: none; animation: none; }
   .h2-board { display: none; }
-  .h2-bub.b3 { --sx: -100; }
   /* 見える窓(見本の x 270〜910)の中央に文字をそろえる */
   .h2-title, .h2-sub { left: calc(70 * var(--u)); }
   .h2-sub { font-size: calc(17 * var(--u)); }

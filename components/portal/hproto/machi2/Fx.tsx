@@ -12,15 +12,8 @@ export default function Fx() {
       el.classList.remove("h2-pop"); void el.offsetWidth; el.classList.add("h2-pop");
       window.setTimeout(() => el.classList.remove("h2-pop"), 600);
     };
-    const jump = (e: Event) => {
-      const el = (e.target as Element | null)?.closest?.(".h2-jump") as HTMLElement | null;
-      if (!el) return;
-      el.classList.remove("h2-jumping"); void el.offsetWidth; el.classList.add("h2-jumping");
-      window.setTimeout(() => el.classList.remove("h2-jumping"), 760);
-    };
     root.addEventListener("pointerdown", down, { passive: true });
-    root.addEventListener("click", jump);
-    return () => { root.removeEventListener("pointerdown", down); root.removeEventListener("click", jump); };
+    return () => root.removeEventListener("pointerdown", down);
   }, []);
   return null;
 }

@@ -19,13 +19,6 @@ const COLS: Record<string, string[]> = {
 };
 const ROT = [-4, 3, -2, 4, -3, 2, 0, -2];
 
-const BUBBLES = [
-  { k: "b1", x: 184, y: 52, w: 124, h: 65, cx: 63, cy: 28, rot: -9, lines: ["お気に入りの", "お店が見つかる!"], fs: 11.4, d: 0.55, ox: 8 },
-  { k: "b2", x: 190, y: 164, w: 114, h: 66, cx: 56, cy: 31, rot: -7, lines: ["今日は", "どこへ行こう?"], fs: 11.4, d: 0.8, ox: 8 },
-  { k: "b3", x: 858, y: 150, w: 138, h: 62, cx: 84, cy: 30, rot: -7, lines: ["ペットと一緒に", "楽しめるお店も!"], fs: 10.6, d: 1.05, ox: 55 },
-  { k: "b4", x: 930, y: 214, w: 112, h: 52, cx: 52, cy: 28, rot: -6, lines: ["このまち、", "やっぱり好き!"], fs: 11.4, d: 1.3, ox: 10 },
-];
-
 export default function Hero({ mihon, season }: { mihon: boolean; season: Season }) {
   // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)
   preload(seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
@@ -47,14 +40,7 @@ export default function Hero({ mihon, season }: { mihon: boolean; season: Season
         <img className="h2-fly h2-bird b2" style={{ left: "calc(470 * var(--u))", top: "calc(74 * var(--u))" }} src={`${H}/bird2.webp`} alt="" width={56} height={53} />
         <img className="h2-fly h2-bird b3" style={{ left: "calc(520 * var(--u))", top: "calc(46 * var(--u))" }} src={`${H}/bird3.webp`} alt="" width={51} height={46} />
         <img className="h2-balloon" style={{ left: "calc(668 * var(--u))", top: "calc(58 * var(--u))" }} src={`${H}/balloon.webp`} alt="" width={64} height={82} />
-        {/* 層 2: 吹き出し・看板 */}
-        {BUBBLES.map((b) => (
-          <button type="button" key={b.k} className={`h2-bub h2-jump ${b.k}`} aria-label={b.lines.join("")}
-            style={{ left: `calc((${b.x} + var(--sx, 0)) * var(--u))`, top: `calc((${b.y} + var(--sy, 0)) * var(--u))`, width: `calc(${b.w} * var(--u))`, height: `calc(${b.h} * var(--u))`, animationDelay: `${b.d}s, ${b.d + 0.8}s`, ["--ox" as string]: `${b.ox}%` }}>
-            <img src={`${H}/${b.k}.webp`} alt="" width={Math.round(b.w * 1.283)} height={Math.round(b.h * 1.283)} />
-            <span className="h2-bt h2-kure" style={{ left: `calc(${b.cx} * var(--u))`, top: `calc(${b.cy} * var(--u))`, fontSize: `calc(${b.fs} * var(--u))`, lineHeight: `calc(${b.fs * 1.6} * var(--u))`, rotate: `${b.rot}deg` }}>{b.lines.map((l) => <span key={l}>{l}</span>)}</span>
-          </button>
-        ))}
+        {/* 層 2: 看板 */}
         <div className="h2-board" aria-label="Good Local Life"><span className="h2-board-in h2-script">Good<br />Local<br />Life</span></div>
         {/* 層 3: 文字・検索 */}
         <h1 className="h2-title">
