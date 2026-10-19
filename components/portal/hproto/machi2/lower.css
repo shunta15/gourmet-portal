@@ -242,3 +242,8 @@
   .h2-fl { font-size: 11.5px; line-height: 22px; }
   .h2-copy { grid-column: 1 / -1; font-size: 10px; margin-top: 4px; }
 }
+/* 動画のカード(オーナー作の画像)。画像の再生ボタンの中心(横 66.7%・縦 84.8%)に光の輪を重ねて脈打たせる */
+.h2-vring { position: absolute; left: 66.7%; top: 84.8%; width: calc(18 * var(--u)); height: calc(18 * var(--u)); margin: calc(-9 * var(--u)) 0 0 calc(-9 * var(--u)); border-radius: 50%; z-index: 2; pointer-events: none; }
+.h2-vring::before, .h2-vring::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: calc(2 * var(--u)) solid rgba(255,255,255,.85); animation: h2-pulse 1.9s ease-out infinite; }
+.h2-vring::after { animation-delay: .95s; }
+@media (prefers-reduced-motion: reduce) { .h2-vring::before, .h2-vring::after { animation: none; opacity: 0; } }

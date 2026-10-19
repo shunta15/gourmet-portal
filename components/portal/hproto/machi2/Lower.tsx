@@ -95,10 +95,10 @@ export default function Lower() {
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" style={{ ...P(876, 902, 266, 139), ["--i" as string]: 3 }}>
+          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, 139), ["--i" as string]: 3 }}>
+            {/* オーナー作の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。再生ボタンの位置に光の輪だけ重ねる */}
             <span className="h2-cph h2-vph"><img src={`${B}card-video.webp`} alt="" /></span>
-            <b className="h2-vt h2-hand"><span>動画で見つかる</span><span>まちの新しい魅力</span></b>
-            <span className="h2-vbtn"><i className="h2-play"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4.500 15.500 10 7 15.500Z" fill="#fff" /></svg></i><span>動画で見る</span><em aria-hidden="true">→</em></span>
+            <i className="h2-vring" aria-hidden="true" />
           </Link>
         </div>
       </section>
