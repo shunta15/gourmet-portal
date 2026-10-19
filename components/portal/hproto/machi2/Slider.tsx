@@ -2,19 +2,48 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { IMG } from "./const";
+import { seasonNowJst, type Season } from "./season";
+import { getSeason, subscribeSeason } from "./seasonStore";
 
 const B = `${IMG}/lower/`;
-const SL = [
-  { img: "slide1.webp", t1: "春", t1b: "のまちで、", t2: "新しい好きに出会う。", sub: ["花とグルメと、心はずむおでかけ。", "この季節に行きたい、まちのおすすめスポット。"], btn: "春の特集を見る", href: "/feature" },
-  { img: "slide2.webp", t1: "水", t1b: "辺のまちで、", t2: "ゆったり過ごそう。", sub: ["川ぞいのカフェと散歩道で、", "ほっとひと息つけるおすすめスポット。"], btn: "水辺の特集を見る", href: "/leisure" },
-  { img: "slide3.webp", t1: "市", t1b: "のまちで、", t2: "人と店に出会おう。", sub: ["マルシェとイベントで、", "店と人がつながるまちの週末。"], btn: "市とイベントを見る", href: "/feature" },
+
+/**
+ * 特集スライド 7 枚: ①季節の特集(最初の画面の季節と連動)+②〜⑦ 業種の特集。
+ *  - side = 文字を置く側。写真の人や見せ所の反対側に置く(l=左 / r=右)
+ *  - op = 写真の縦の切り取り位置(object-position の y)
+ *  - リンク先は本番 https://machinowa.tokyo で 200 になる実在のページだけ(2026-10-20 確認)。文はリンク先の中身に合わせる
+ */
+type Slide = {
+  img: string; side: "l" | "r"; op: number; col: string; ink?: string;
+  t1: string; t1b: string; t2: string; sub: [string, string]; btn: string; href: string;
+};
+
+// 季節の色は最初の画面の季節の札(hero.css .h2-st-*)と同じ
+const SEASON_SLIDE: Record<Season, Slide> = {
+  spring: { img: "sl-s-spring.webp", side: "r", op: 70, col: "#e8648e", t1: "春", t1b: "のまちで、", t2: "新しい好きに出会う。", sub: ["東京・中目黒、目黒川の桜並木へ。", "見頃は3月末から4月初旬が目安。"], btn: "春の特集を見る", href: "/feature/new-nakameguro-walk" },
+  summer: { img: "sl-s-summer.webp", side: "r", op: 40, col: "#1f86dc", t1: "夏", t1b: "のまちで、", t2: "浴衣で夜のまちへ。", sub: ["兵庫・城崎温泉、柳並木の川ぞいを", "浴衣で歩く、七つの外湯めぐり。"], btn: "夏の特集を見る", href: "/feature/hyogo-kinosaki-onsen-soto" },
+  autumn: { img: "sl-s-autumn.webp", side: "r", op: 45, col: "#e0502a", t1: "秋", t1b: "のまちで、", t2: "紅葉の道をたどろう。", sub: ["大阪・箕面、渓谷ぞいの滝みち。", "紅葉の盛りは11月後半から12月初旬が目安。"], btn: "秋の特集を見る", href: "/feature/osaka-minoo-falls" },
+  winter: { img: "sl-s-winter.webp", side: "r", op: 12, col: "#3aa6d4", t1: "冬", t1b: "のまちで、", t2: "ぬくもりに出会う。", sub: ["湯けむりの町を歩く特集など、", "まち歩きの記事を一覧から探せます。"], btn: "冬の特集を見る", href: "/feature" },
+};
+const VSL: Slide[] = [
+  { img: "sl-v-gourmet.webp", side: "r", op: 60, col: "#f27b2f", t1: "グルメ", t1b: "で、", t2: "今日の一軒を探そう。", sub: ["ランチ・個室・宴会など、シーン別の", "まとめ記事と街歩きを読めます。"], btn: "グルメの特集を見る", href: "/feature" },
+  { img: "sl-v-beauty.webp", side: "r", op: 15, col: "#ee5d8e", t1: "ビューティー", t1b: "で、", t2: "ヘッドスパを知る。", sub: ["鹿児島・上之園町の美容室を紹介。", "カットやカラーのほか、ヘッドスパも。"], btn: "美容室の特集を見る", href: "/beauty/shop/be0001" },
+  { img: "sl-v-bodycare.webp", side: "l", op: 10, col: "#4aa84a", t1: "ボディケア", t1b: "で、", t2: "個室の整体を知る。", sub: ["新潟・長岡市の整体サロンを紹介。", "施術はオール個室と案内する店です。"], btn: "整体の特集を見る", href: "/bodycare/shop/bo0018" },
+  { img: "sl-v-pet.webp", side: "r", op: 50, col: "#8b6cf0", t1: "ペット", t1b: "と、", t2: "過ごす場所を探す。", sub: ["トリミングやドッグカフェなどを", "種類とエリアから。掲載は準備中です。"], btn: "ペットを見る", href: "/pet" },
+  { img: "sl-v-leisure.webp", side: "r", op: 40, col: "#2f8de0", t1: "おでかけ", t1b: "で、", t2: "景色に会いにいこう。", sub: ["観光スポットや日帰り温泉、公園など。", "種類とエリアから。掲載は準備中です。"], btn: "おでかけを見る", href: "/leisure" },
+  { img: "sl-v-stay.webp", side: "l", op: 40, col: "#f6b620", ink: "#4a3200", t1: "ステイ", t1b: "で、", t2: "窓の景色を楽しむ。", sub: ["ホテルや旅館、グランピングなど。", "種類とエリアから。掲載は準備中です。"], btn: "ステイを見る", href: "/stay" },
 ];
-const N = SL.length;
+const N = 1 + VSL.length;
 const INTERVAL = 4500;
 
-/** 春の特集の大きなスライド。4.5 秒ごとに自動で切り替え(乗せている間は止まる)。矢印・丸で切り替え。丸は進み具合が伸びる。 */
+type Layer = { id: number; season: Season };
+
+/** 特集の大きなスライド。①は最初の画面の季節(seasonStore)に合わせて入れ替わる。4.5 秒ごとに自動で切り替え(乗せている間は止まる)。矢印・丸で切り替え。丸は進み具合が伸びる。 */
 export default function Slider() {
   const [i, setI] = useState(0);
+  // サーバーの最初の季節と同じ決め方(日本時間の今日の月)。最初の画面の季節が分かったら合わせる
+  const [layers, setLayers] = useState<Layer[]>(() => [{ id: 0, season: seasonNowJst() }]);
+  const nid = useRef(0);
   const hover = useRef(false);
   const last = useRef(0);
   const go = useCallback((n: number) => { last.current = performance.now(); setI(((n % N) + N) % N); }, []);
@@ -28,18 +57,39 @@ export default function Slider() {
     }, 500);
     return () => window.clearInterval(id);
   }, []);
+  useEffect(() => {
+    const cur = getSeason();
+    if (cur) setLayers((l) => (l[l.length - 1].season === cur ? l : [{ id: 0, season: cur }]));
+    let t = 0;
+    const un = subscribeSeason((s) => {
+      setLayers((l) => (l[l.length - 1].season === s ? l : [l[l.length - 1], { id: ++nid.current, season: s }]));
+      window.clearTimeout(t);
+      t = window.setTimeout(() => setLayers((l) => l.slice(-1)), 1300);
+    });
+    return () => { un(); window.clearTimeout(t); };
+  }, []);
+
+  const top = layers[layers.length - 1];
+  const slides: Slide[] = [SEASON_SLIDE[top.season], ...VSL];
   return (
-    <div className="h2-slider" onPointerEnter={() => { hover.current = true; }} onPointerLeave={() => { hover.current = false; last.current = performance.now(); }} data-slide={i}>
-      {SL.map((s, k) => (
-        <div key={k} className={`h2-sl${i === k ? " is-on" : ""}`} aria-hidden={i !== k}>
-          <img className="h2-slimg" src={`${B}${s.img}`} alt="" />
-          <img className="h2-slhaze" src={`${B}slide-haze.webp`} alt="" />
-          <h2 className="h2-sh h2-press"><span className="h2-sh1"><b>{s.t1}</b>{s.t1b}</span><span className="h2-sh2">{s.t2}</span></h2>
-          <p className="h2-ssub">{s.sub[0]}<br />{s.sub[1]}</p>
-          <a className="h2-sbtn h2-press" href={s.href} tabIndex={i === k ? 0 : -1}>{s.btn} <span aria-hidden>→</span></a>
-        </div>
-      ))}
-      <p className="h2-sbub h2-kure h2-jump2"><span>いつものまちが</span><span>もっと特別に見える。</span></p>
+    <div className="h2-slider" onPointerEnter={() => { hover.current = true; }} onPointerLeave={() => { hover.current = false; last.current = performance.now(); }} data-slide={i} data-season={top.season}>
+      {slides.map((s, k) => {
+        const lay = k === 0 ? layers : null;
+        return (
+          <div key={k} className={`h2-sl h2-sl-${s.side}${i === k ? " is-on" : ""}${s.t1.length >= 5 ? " is-long" : ""}`} aria-hidden={i !== k} style={{ ["--c" as string]: s.col, ["--op" as string]: `${s.op}%`, ...(s.ink ? { ["--btc" as string]: s.ink } : {}) }}>
+            <span className="h2-slm">
+              {lay
+                ? lay.map((l, j) => <img key={l.id} className={`h2-slimg${lay.length > 1 && j === lay.length - 1 ? " is-new" : ""}`} src={`${B}${SEASON_SLIDE[l.season].img}`} alt="" style={{ objectPosition: `50% ${SEASON_SLIDE[l.season].op}%` }} />)
+                : <img className="h2-slimg" src={`${B}${s.img}`} alt="" />}
+            </span>
+            <img className="h2-slhaze" src={`${B}slide-haze.webp`} alt="" />
+            <h2 key={k === 0 ? `h${top.season}` : undefined} className="h2-sh h2-press"><span className="h2-sh1"><b>{s.t1}</b>{s.t1b}</span><span className="h2-sh2">{s.t2}</span></h2>
+            <p key={k === 0 ? `p${top.season}` : undefined} className="h2-ssub">{s.sub[0]}<br />{s.sub[1]}</p>
+            <a key={k === 0 ? `a${top.season}` : undefined} className="h2-sbtn h2-press" href={s.href} tabIndex={i === k ? 0 : -1}>{s.btn} <span aria-hidden>→</span></a>
+          </div>
+        );
+      })}
+      <p className="h2-sbub h2-kure h2-jump2" aria-hidden={i !== 0}><span>いつものまちが</span><span>もっと特別に見える。</span></p>
       <button type="button" aria-label="前の特集" className="h2-arrow h2-prev h2-press" onClick={() => go(i - 1)}>‹</button>
       <button type="button" aria-label="次の特集" className="h2-arrow h2-next h2-press" onClick={() => go(i + 1)}>›</button>
       <div className="h2-dots">

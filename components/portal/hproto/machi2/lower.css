@@ -72,21 +72,32 @@
 /* 2. 特集スライド+最新情報 */
 .h2-slidewrap { border-radius: calc(16 * var(--u)); box-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(150, 110, 120, .25); background: #f9d6de; overflow: hidden; }
 .h2-slider { position: absolute; inset: 0; }
-.h2-sl { position: absolute; inset: 0; opacity: 0; transition: opacity .9s ease; pointer-events: none; }
+.h2-sl { --c: #ee5a82; --btc: #fff; position: absolute; inset: 0; opacity: 0; transition: opacity .9s ease; pointer-events: none; }
 .h2-sl.is-on { opacity: 1; pointer-events: auto; }
-.h2-slimg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 60% 50%; }
+.h2-slm { position: absolute; inset: 0; display: block; overflow: hidden; }
+.h2-slimg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% var(--op, 50%); transform-origin: 40% 50%; }
+.h2-sl-r .h2-slimg { transform-origin: 30% 50%; } .h2-sl-l .h2-slimg { transform-origin: 70% 50%; }
 .h2-sl.is-on .h2-slimg { animation: h2-kbs 7s ease-out both; }
 @keyframes h2-kbs { from { transform: scale(1); } to { transform: scale(1.09); } }
+/* 季節の入れ替え: 新しい写真が輪(円形のマスク)で広がって前の写真を覆う */
+.h2-sl.is-on .h2-slimg.is-new { animation: h2-kbs 7s ease-out both, h2-sring 1.1s cubic-bezier(.55, 0, .25, 1) both; }
+@keyframes h2-sring { from { clip-path: circle(0% at 62% 52%); } to { clip-path: circle(150% at 62% 52%); } }
 .h2-slhaze { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.h2-sl-r .h2-slhaze { transform: scaleX(-1); }
 .h2-sh { position: absolute; left: calc(44 * var(--u)); top: calc(8 * var(--u)); margin: 0; font-family: var(--h2-yusei), var(--h2-maru), sans-serif; font-weight: 400; color: #26386b; text-shadow: 0 0 calc(5 * var(--u)) #fff, 0 0 calc(10 * var(--u)) #fff, 0 0 calc(16 * var(--u)) #fff; -webkit-text-stroke: calc(.6 * var(--u)) #26386b; }
-.h2-sh1 { display: block; font-size: calc(30 * var(--u)); line-height: calc(52 * var(--u)); color: #f27a2c; -webkit-text-stroke-color: #f27a2c; } .h2-sh1 b { font-weight: 400; font-size: calc(50 * var(--u)); color: #ee5a82; -webkit-text-stroke: calc(1 * var(--u)) #ee5a82; }
+.h2-sh1 { display: block; font-size: calc(30 * var(--u)); line-height: calc(52 * var(--u)); color: #f27a2c; -webkit-text-stroke-color: #f27a2c; } .h2-sh1 b { font-weight: 400; font-size: calc(50 * var(--u)); color: var(--c); -webkit-text-stroke: calc(1 * var(--u)) var(--c); }
+.h2-sl.is-long .h2-sh1 b { font-size: calc(38 * var(--u)); }
+/* 文字を右に置くスライド(人や見せ所が左にある写真) */
+.h2-sl-r .h2-sh, .h2-sl-r .h2-ssub { left: calc(326 * var(--u)); } .h2-sl-r .h2-sbtn { left: calc(324 * var(--u)); }
 .h2-sh2 { display: block; font-size: calc(27 * var(--u)); line-height: calc(38 * var(--u)); }
 .h2-sl.is-on .h2-sh1 { animation: h2-rise .8s cubic-bezier(.25,.9,.3,1.2) .15s backwards; } .h2-sl.is-on .h2-sh2 { animation: h2-rise .8s cubic-bezier(.25,.9,.3,1.2) .3s backwards; }
 .h2-ssub { position: absolute; left: calc(44 * var(--u)); top: calc(111 * var(--u)); margin: 0; font-size: calc(12.8 * var(--u)); line-height: calc(19 * var(--u)); color: #26386b; font-weight: 500; text-shadow: 0 0 calc(4 * var(--u)) #fff, 0 0 calc(8 * var(--u)) #fff, 0 0 calc(12 * var(--u)) #fff; }
 .h2-sl.is-on .h2-ssub { animation: h2-rise .8s ease .5s backwards; }
-.h2-sbtn { position: absolute; left: calc(42 * var(--u)); top: calc(148 * var(--u)); width: calc(176 * var(--u)); height: calc(36 * var(--u)); border-radius: 999px; background: linear-gradient(#f9809f, #ee5a82); color: #fff; font-weight: 700; font-size: calc(15 * var(--u)); display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); box-shadow: 0 calc(3 * var(--u)) calc(8 * var(--u)) rgba(238,90,130,.45); overflow: hidden; border: calc(1.5 * var(--u)) solid rgba(255,255,255,.7); white-space: nowrap; }
+.h2-sbtn { position: absolute; left: calc(42 * var(--u)); top: calc(148 * var(--u)); min-width: calc(176 * var(--u)); padding: 0 calc(20 * var(--u)); height: calc(36 * var(--u)); border-radius: 999px; background: linear-gradient(color-mix(in srgb, var(--c) 70%, #fff), var(--c)); color: var(--btc); font-weight: 700; font-size: calc(15 * var(--u)); display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); box-shadow: 0 calc(3 * var(--u)) calc(8 * var(--u)) color-mix(in srgb, var(--c) 45%, transparent); overflow: hidden; border: calc(1.5 * var(--u)) solid rgba(255,255,255,.7); white-space: nowrap; }
+.h2-root a.h2-sbtn { color: var(--btc); } /* .h2-root a { color: inherit } より強く */
 .h2-sbtn::after { content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 28%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.7), transparent); transform: skewX(-18deg); animation: h2-shimmer 3.2s ease-in-out 1s infinite; }
-.h2-sbub { position: absolute; left: calc(487 * var(--u)); top: calc(4 * var(--u)); width: calc(160 * var(--u)); height: calc(72 * var(--u)); margin: 0; background: #fff; border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: calc(13.4 * var(--u)); line-height: calc(20 * var(--u)); color: #26386b; rotate: -9deg; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(120,80,100,.2); z-index: 3; animation: h2-bubin .7s cubic-bezier(.3,1.7,.5,1) .4s backwards, h2-bob 5s ease-in-out 1.2s infinite; pointer-events: none; }
+.h2-sbub { position: absolute; left: calc(6 * var(--u)); top: calc(2 * var(--u)); width: calc(120 * var(--u)); height: calc(52 * var(--u)); margin: 0; background: #fff; border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: calc(10.8 * var(--u)); line-height: calc(15.5 * var(--u)); color: #26386b; rotate: -9deg; transition: opacity .45s; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(120,80,100,.2); z-index: 3; animation: h2-bubin .7s cubic-bezier(.3,1.7,.5,1) .4s backwards, h2-bob 5s ease-in-out 1.2s infinite; pointer-events: none; }
+.h2-slider:not([data-slide="0"]) .h2-sbub { opacity: 0; }
 .h2-sbub::after { content: ""; position: absolute; left: calc(18 * var(--u)); bottom: calc(-6 * var(--u)); width: calc(16 * var(--u)); height: calc(16 * var(--u)); background: #fff; border-radius: 0 0 calc(10 * var(--u)) 0; transform: skewX(-20deg) rotate(35deg); }
 .h2-arrow { position: absolute; top: calc(80 * var(--u)); width: calc(30 * var(--u)); height: calc(30 * var(--u)); border-radius: 50%; background: rgba(255,255,255,.97); color: #26386b; font-size: calc(23 * var(--u)); line-height: 1; display: grid; place-items: center; box-shadow: 0 calc(1 * var(--u)) calc(4 * var(--u)) rgba(0,0,0,.2); z-index: 4; padding-bottom: calc(2 * var(--u)); }
 .h2-prev { left: calc(-1 * var(--u)); } .h2-next { right: calc(-1 * var(--u)); }
@@ -183,19 +194,21 @@
 
   /* 2. 特集 + 最新情報: 縦積み */
   .h2-feat { padding: 2px 14px 4px; display: grid; gap: 14px; }
-  .h2-slidewrap { position: relative; left: auto; top: auto; width: auto; height: 238px; }
+  .h2-slidewrap { position: relative; left: auto; top: auto; width: auto; height: 372px; }
+  /* スマホ: 写真は上、文字は写真の下の白地(顔・見せ所に文字がかからない) */
+  .h2-sl { background: #fffdf8; }
+  .h2-slm { inset: 0 0 auto 0; height: 164px; }
   .h2-slhaze { display: none; }
-  .h2-sl::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 92% 80% at 36% 46%, rgba(255,252,252,.96) 0 52%, rgba(255,252,252,0) 100%); pointer-events: none; }
-  .h2-slimg { object-position: 50% 50%; }
-  .h2-sh { left: 20px; top: 12px; }
-  .h2-sh1 { font-size: 26px; line-height: 44px; } .h2-sh1 b { font-size: 44px; }
-  .h2-sh2 { font-size: 22px; line-height: 34px; }
-  .h2-ssub { left: 20px; top: 122px; font-size: 12px; line-height: 18px; }
-  .h2-sbtn { left: 18px; top: 170px; width: 168px; height: 36px; font-size: 14px; }
-  .h2-sbub { left: auto; right: 6px; top: 6px; width: 132px; height: 52px; font-size: 10.5px; line-height: 16px; }
-  .h2-arrow { top: 204px; width: 28px; height: 28px; font-size: 22px; }
-  .h2-prev { left: auto; right: 44px; } .h2-next { right: 10px; }
-  .h2-dots { left: 50%; top: 216px; }
+  .h2-sh, .h2-sl-r .h2-sh { left: 20px; top: 170px; }
+  .h2-sh1 { font-size: 26px; line-height: 40px; } .h2-sh1 b { font-size: 42px; } .h2-sl.is-long .h2-sh1 b { font-size: 32px; }
+  .h2-sh2 { font-size: 22px; line-height: 32px; }
+  .h2-ssub, .h2-sl-r .h2-ssub { left: 20px; top: 246px; font-size: 12px; line-height: 18px; text-shadow: none; }
+  .h2-sh { text-shadow: none; }
+  .h2-sbtn, .h2-sl-r .h2-sbtn { left: 18px; top: 292px; min-width: 168px; height: 36px; font-size: 14px; padding: 0 18px; }
+  .h2-sbub { left: auto; right: 38px; top: 6px; width: 118px; height: 46px; font-size: 9.6px; line-height: 14px; }
+  .h2-arrow { top: 68px; width: 28px; height: 28px; font-size: 22px; }
+  .h2-prev { left: 6px; right: auto; } .h2-next { right: 6px; }
+  .h2-dots { left: 50%; top: 344px; }
   .h2-news { position: relative; left: auto; top: auto; width: auto; height: auto; padding: 48px 8px 10px; }
   .h2-news ul { display: grid; gap: 8px; }
   .h2-nrow { position: relative; left: auto; top: auto; width: auto; height: 44px; }
