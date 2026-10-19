@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Fragment } from "react";
 import Link from "next/link";
 import { preload } from "react-dom";
 import { IMG } from "./const";
@@ -32,7 +33,8 @@ export default function Hero({ mihon, season }: { mihon: boolean; season: Season
   const hlLine = mihon ? 0 : 1, hlChar = mihon ? 3 : 4;
   const subs = mihon ? [...MIHON_SUB] : [P1_ONE, P3_ONE];
   let n = 0;
-  const sub = subs.map((t) => Array.from(t).map((c) => ({ c, n: n++ })));
+  // スマホでは 2 段落目を最後の「、」で 2 行に折る(字は変えない。折る印は css が出すだけ)
+  const sub = subs.map((t, si) => { const cs = Array.from(t); return { bi: si === 1 ? cs.lastIndexOf("、") : -1, cs: cs.map((c) => ({ c, n: n++ })) }; });
   const lastN = n - 1;
   return (
     <section className="h2-hero" aria-label="ヒーロー" data-season={season}>
@@ -66,7 +68,12 @@ export default function Hero({ mihon, season }: { mihon: boolean; season: Season
         </h1>
         <p className="h2-sub h2-kure">
           {sub.map((ln, li) => (
-            <span key={li} className="h2-sln">{ln.map((x) => <i key={x.n} className={x.n === lastN ? "h2-last" : undefined} style={{ ["--n" as string]: x.n }}>{x.c}</i>)}</span>
+            <span key={li} className="h2-sln">{ln.cs.map((x, xi) => (
+              <Fragment key={x.n}>
+                <i className={[x.n === lastN ? "h2-last" : "", xi === ln.bi ? "h2-brk-a" : "", ln.bi >= 0 && xi === ln.bi + 1 ? "h2-brk-b" : ""].filter(Boolean).join(" ") || undefined} style={{ ["--n" as string]: x.n }}>{x.c}</i>
+                {xi === ln.bi && <br className="h2-mbr" />}
+              </Fragment>
+            ))}</span>
           ))}
         </p>
         <form className="h2-search" role="search" action="/search">

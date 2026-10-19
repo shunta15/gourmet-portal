@@ -109,8 +109,8 @@ export default function Lower() {
           <img className="h2-far" src={`${B}art.webp`} alt="" />
           <img className="h2-a h2-fx h2-fx-sun" style={P(326, 1064, 32, 32)} src={`${B}fx-sun.webp`} alt="" />
           <img className="h2-a h2-fx h2-fx-balloon" style={P(852, 1054, 36, 50)} src={`${B}fx-balloon.webp`} alt="" />
-          <img className="h2-a h2-fx h2-fx-bird b1" style={P(232, 1070, 24, 22)} src="/_portal/hproto/machi2/hero/bird3.webp" alt="" />
-          <img className="h2-a h2-fx h2-fx-bird b2" style={P(740, 1072, 24, 22)} src="/_portal/hproto/machi2/hero/bird2.webp" alt="" />
+          <img className="h2-a h2-fx h2-fx-bird b1" style={P(232, 1070, 24, 22)} src="/_portal/hproto/machi2/hero/bird3.webp" alt="" width={51} height={46} />
+          <img className="h2-a h2-fx h2-fx-bird b2" style={P(740, 1072, 24, 22)} src="/_portal/hproto/machi2/hero/bird2.webp" alt="" width={56} height={53} />
           <img className="h2-near" src={`${B}art-near.webp`} alt="" />
         </div>
         <p className="h2-a h2-tag h2-hand" data-io style={P(390, 1062, 400, 74)}>

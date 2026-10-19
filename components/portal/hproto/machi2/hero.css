@@ -29,7 +29,7 @@
 /* 季節ごとに吹き出しを少しずらす(人・犬の顔にかからないように。切り替えの間に滑って動く) */
 .h2-bub { transition: left .9s cubic-bezier(.5, 0, .2, 1), top .9s cubic-bezier(.5, 0, .2, 1); }
 .h2-hero[data-season="summer"] .h2-bub.b1 { --sx: 34; --sy: 2; }
-.h2-hero[data-season="summer"] .h2-bub.b2 { --sx: 62; --sy: 8; }
+.h2-hero[data-season="summer"] .h2-bub.b2 { --sx: 62; --sy: -22; }
 .h2-hero[data-season="summer"] .h2-bub.b3 { --sx: -6; --sy: 20; }
 .h2-hero[data-season="summer"] .h2-bub.b4 { --sx: 0; --sy: 8; }
 .h2-clouds { translate: calc(var(--px, 0) * -14 * var(--u)) calc(var(--py, 0) * -8 * var(--u)); position: absolute; left: calc(330 * var(--u)); top: calc(14 * var(--u)); width: calc(520 * var(--u)); height: calc(120 * var(--u)); overflow: hidden; pointer-events: none;
@@ -65,6 +65,7 @@
 .h2-sub { position: absolute; left: 0; top: calc(176 * var(--u)); width: calc(1040 * var(--u)); text-align: center; margin: 0; font-size: calc(12.4 * var(--u)); font-weight: 400; color: #232323; white-space: nowrap; z-index: 3; -webkit-text-stroke: calc(.5 * var(--u)) #232323; letter-spacing: .02em;
   text-shadow: calc(-1.6 * var(--u)) 0 #fff, calc(1.6 * var(--u)) 0 #fff, 0 calc(-1.6 * var(--u)) #fff, 0 calc(1.6 * var(--u)) #fff, calc(-1.2 * var(--u)) calc(-1.2 * var(--u)) #fff, calc(1.2 * var(--u)) calc(1.2 * var(--u)) #fff, calc(-1.2 * var(--u)) calc(1.2 * var(--u)) #fff, calc(1.2 * var(--u)) calc(-1.2 * var(--u)) #fff, 0 0 calc(6 * var(--u)) #fff, 0 0 calc(12 * var(--u)) rgba(255,255,255,.95);
   translate: calc(var(--px, 0) * -20 * var(--u)) calc(var(--py, 0) * -10 * var(--u)); }
+.h2-mbr { display: none; }
 .h2-sln { display: block; line-height: calc(19 * var(--u)); margin-bottom: calc(3 * var(--u)); } .h2-sln > i { background: rgba(255,255,255,.8); padding: calc(1.5 * var(--u)) 0; box-shadow: 0 0 calc(8 * var(--u)) calc(2 * var(--u)) rgba(255,255,255,.7); } .h2-sln > i:first-child { padding-left: calc(8 * var(--u)); border-radius: 99px 0 0 99px; } .h2-sln > i:last-child { padding-right: calc(8 * var(--u)); border-radius: 0 99px 99px 0; }
 .h2-sub i { font-style: normal; position: relative; --d: calc(1.55s + var(--n) * 55ms); animation: h2-type .01s steps(1) var(--d) backwards; }
 .h2-sub i::after { content: ""; position: absolute; right: calc(-2 * var(--u)); top: 8%; width: calc(1.6 * var(--u)); height: 1.1em; background: #ee5a7a; opacity: 0; animation: h2-caret .07s linear var(--d); }
@@ -77,7 +78,7 @@
 .h2-bub { position: absolute; padding: 0; z-index: 4; transform: translate(calc(var(--px, 0) * -30 * var(--u)), calc(var(--py, 0) * -16 * var(--u))); transform-origin: var(--ox, 10%) 95%; animation: h2-bubin .7s cubic-bezier(.3,1.7,.5,1) backwards, h2-bob 5.5s ease-in-out infinite; }
 .h2-bub img { width: 100%; height: 100%; display: block; filter: drop-shadow(0 calc(2 * var(--u)) calc(3 * var(--u)) rgba(60,70,60,.18)); }
 .h2-bt { position: absolute; transform: translate(-50%, -50%); text-align: center; color: #333; white-space: nowrap; display: flex; flex-direction: column; align-items: center; font-weight: 400; -webkit-text-stroke: calc(.3 * var(--u)) #333; }
-@keyframes h2-bubin { from { opacity: 0; transform: scale(0) rotate(-12deg); } to { opacity: 1; transform: none; } }
+@keyframes h2-bubin { from { opacity: 0; transform: scale(.3) rotate(-12deg); } to { opacity: 1; transform: none; } }
 .h2-bub.h2-jumping { animation: h2-bubjump .7s cubic-bezier(.3,1.6,.5,1), h2-bob 5.5s ease-in-out infinite; animation-delay: 0s, 0s !important; }
 @keyframes h2-bubjump { 0% { transform: none; } 30% { transform: translateY(calc(-16 * var(--u))) rotate(-7deg) scale(1.12); } 60% { transform: translateY(0) rotate(4deg) scale(.96); } 100% { transform: none; } }
 
@@ -117,24 +118,38 @@
 
 /* 中くらいの幅(701〜900): 札が下の 3 つのボタンにかかるので、スマホと同じく絵の下の帯に置く */
 @media (min-width: 701px) and (max-width: 900px) {
-  .h2-hero { height: calc(394 * var(--u) + 40px); background: #fff7dc; }
-  .h2-hero::after { bottom: 40px; }
-  .h2-seasons { right: auto; left: calc(50% - 79px); bottom: 8px; padding: 3px; gap: 4px; }
+  .h2-hero { height: calc(394 * var(--u) + 48px); background: #fff7dc; }
+  .h2-hero::after { bottom: 48px; }
+  .h2-seasons { right: auto; left: calc(50% - 79px); bottom: 6px; padding: 3px; gap: 4px; }
+  .h2-pill { height: max(44px, calc(66 * var(--u))); }
   .h2-st { width: 35px; height: 26px; font-size: 12.5px; }
 }
 /* スマホ: 見本の中央(x 140〜1040)を画面いっぱいに。ヘッダー(54px)のぶん中身を下げ、絵の下に細い帯をつけて季節の札を 1 列で置く */
 @media (max-width: 700px) {
-  .h2-hero { --u: calc(100cqw / 640); --hd: 38px; height: calc(394 * var(--u) + var(--hd) + 40px); background: #fff7dc; }
-  .h2-hero::after { bottom: 40px; }
+  .h2-hero { --u: calc(100cqw / 640); --hd: 38px; height: calc(394 * var(--u) + var(--hd) + 50px); background: #fff7dc; }
+  .h2-hero::after { bottom: 50px; }
   .h2-hero-stage { left: calc(-270 * var(--u)); right: auto; width: calc(1182 * var(--u)); }
   .h2-sbg { height: calc(394 * var(--u) + var(--hd)); }
   .h2-title, .h2-sub, .h2-search, .h2-bub, .h2-pills { margin-top: var(--hd); }
-  .h2-fly, .h2-board { display: none; }
-  .h2-bub.b1, .h2-bub.b2, .h2-bub.b4 { display: none; }
+  /* 隠す絵は display:none にせず visibility:hidden(大きさを持ったまま。0×0 の画像にならない) */
+  .h2-fly, .h2-bub.b1, .h2-bub.b2, .h2-bub.b4 { visibility: hidden; pointer-events: none; animation: none; }
+  .h2-board { display: none; }
   .h2-bub.b3 { --sx: -100; }
+  /* 見える窓(見本の x 270〜910)の中央に文字をそろえる */
+  .h2-title, .h2-sub { left: calc(70 * var(--u)); }
+  .h2-sub { font-size: calc(17 * var(--u)); }
+  .h2-sln { line-height: calc(25 * var(--u)); }
+  .h2-mbr { display: inline; }
+  .h2-sln > i.h2-brk-a { padding-right: calc(8 * var(--u)); border-radius: 0 99px 99px 0; }
+  .h2-sln > i.h2-brk-b { padding-left: calc(8 * var(--u)); border-radius: 99px 0 0 99px; }
   .h2-search { left: calc(300 * var(--u)); width: calc(584 * var(--u)); }
-  .h2-pill { padding-left: calc(18 * var(--u)); }
-  .h2-seasons { right: auto; left: calc(270 * var(--u) + 50cqw - 79px); bottom: 8px; padding: 3px; gap: 4px; }
+  /* 3 つのボタン: 見える窓の中に横 1 列。アイコンと名前だけ(説明は隠す)・高さ 46px */
+  .h2-pills { left: calc(270 * var(--u) + 10px); width: calc(100cqw - 20px); top: calc(329 * var(--u)); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .h2-pills .h2-pill { position: relative; left: auto; top: auto; width: auto; min-width: 0; height: 46px; padding: 0 5px; gap: 4px; justify-content: center; }
+  .h2-pills .h2-pill svg { width: 22px; height: 22px; }
+  .h2-pills .h2-pill small { display: none; }
+  .h2-pills .h2-pill b { font-size: clamp(11px, 3.2cqw, 13px); white-space: nowrap; line-height: 1.2; }
+  .h2-seasons { right: auto; left: calc(270 * var(--u) + 50cqw - 79px); bottom: 6px; padding: 3px; gap: 4px; }
   .h2-st { width: 35px; height: 26px; font-size: 12.5px; }
 }
 @media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } .h2-st-bar { display: none; } .h2-ring { display: none; } }
