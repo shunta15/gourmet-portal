@@ -1,0 +1,118 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { IMG } from "./const";
+import { SEASONS, SEASON_LABEL, seasonSrc, type Season } from "./season";
+import { setSeason } from "./seasonStore";
+
+const SIZE: Record<Season, [number, number]> = { spring: [2000, 667], summer: [1774, 887], autumn: [2000, 667], winter: [2000, 667] };
+type Layer = { id: number; season: Season };
+
+/**
+ * 最初の画面の背景の絵(春夏秋冬)と季節の札。
+ *  - 最初の季節は親(サーバー)が日本時間の月から決めて渡す。ここは続きを受け持つ
+ *  - 約 6 秒ごとに次の季節へ。「輪」が中央(川と橋)から円形に広がって前の絵を覆う(clip-path)。縁に白い光の輪が 1 本走る
+ *  - 札を押すと同じ動きでその季節へ。札の上(や画面外・非表示タブ)では自動の切り替えと進み具合の線が止まる(戻ると続きから)
+ *  - 切り替え前に次の絵を decode まで済ませる。最初の季節の絵だけ優先、ほかは表示後に順に読む
+ *  - prefers-reduced-motion: 自動の切り替えなし(css のアニメーションが止まるので終了イベントが来ない)。札を押すと一瞬で切り替わる
+ */
+export default function SeasonStage({ initial }: { initial: Season }) {
+  const [layers, setLayers] = useState<Layer[]>([{ id: 0, season: initial }]);
+  const [cur, setCur] = useState<Season>(initial);
+  const [tick, setTick] = useState(0);
+  const root = useRef<HTMLDivElement>(null);
+  const curRef = useRef<Season>(initial);
+  const busy = useRef(false);
+  const pending = useRef<Season | null>(null);
+  const goRef = useRef<(t: Season) => Promise<void>>(async () => {});
+  const nid = useRef(0);
+  const cache = useRef(new Map<Season, Promise<void>>());
+  const flags = useRef({ hold: false, off: false, hid: false });
+  const reduced = useRef(false);
+
+  const stage = () => root.current?.closest<HTMLElement>(".h2-hero-stage") ?? null;
+  const applyPause = useCallback(() => {
+    const f = flags.current, st = stage();
+    if (st) st.toggleAttribute("data-pause", f.hold || f.off || f.hid);
+  }, []);
+
+  const warm = useCallback((s: Season) => {
+    let p = cache.current.get(s);
+    if (!p) {
+      const im = new Image();
+      im.src = seasonSrc(IMG, s);
+      p = (typeof im.decode === "function" ? im.decode() : Promise.resolve()).catch(() => {});
+      cache.current.set(s, p);
+    }
+    return p;
+  }, []);
+
+  const go = useCallback(async (target: Season) => {
+    // 切り替えの最中に押された札は、終わってから(最後に押したものだけ)続けて切り替える
+    if (busy.current) { pending.current = target; return; }
+    if (target === curRef.current) return;
+    busy.current = true; pending.current = null;
+    await Promise.race([warm(target), new Promise((r) => setTimeout(r, 4000))]);
+    const id = ++nid.current;
+    curRef.current = target;
+    setLayers((l) => [l[l.length - 1], { id, season: target }]);
+    setCur(target); setTick((t) => t + 1); setSeason(target);
+    const hero = stage()?.closest<HTMLElement>(".h2-hero");
+    if (hero) hero.dataset.season = target;
+    window.setTimeout(() => {
+      setLayers((l) => l.slice(-1)); busy.current = false;
+      const p = pending.current; pending.current = null;
+      if (p && p !== curRef.current) void goRef.current(p);
+    }, reduced.current ? 0 : 1750);
+  }, [warm]);
+  useEffect(() => { goRef.current = go; }, [go]);
+
+  const next = useCallback(() => {
+    const i = SEASONS.indexOf(curRef.current);
+    void go(SEASONS[(i + 1) % SEASONS.length]);
+  }, [go]);
+
+  useEffect(() => {
+    reduced.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setSeason(initial);
+    const hero = stage()?.closest<HTMLElement>(".h2-hero");
+    if (hero) hero.dataset.season = curRef.current;
+    // 次の絵は表示後に順に読む(最初の 1 枚だけが優先)
+    const order: Season[] = [];
+    const i0 = SEASONS.indexOf(initial);
+    for (let k = 1; k < 4; k++) order.push(SEASONS[(i0 + k) % 4]);
+    const timers = order.map((s, k) => window.setTimeout(() => { void warm(s); }, 900 + k * 1400));
+    // 画面外・非表示タブでは進み具合の線(=自動の切り替え)を止める
+    let io: IntersectionObserver | undefined;
+    if (hero) { io = new IntersectionObserver((es) => { flags.current.off = !es.some((e) => e.isIntersecting); applyPause(); }); io.observe(hero); }
+    const vis = () => { flags.current.hid = document.hidden; applyPause(); };
+    document.addEventListener("visibilitychange", vis); vis();
+    return () => { timers.forEach(clearTimeout); io?.disconnect(); document.removeEventListener("visibilitychange", vis); };
+  }, [initial, warm, applyPause]);
+
+  const top = layers[layers.length - 1];
+  return (
+    <div ref={root} className="h2-seasonroot">
+      <div className="h2-bgwrap" aria-hidden="true">
+        {layers.map((l, i) => (
+          <div key={l.id} className={`h2-sbg${layers.length > 1 && i === layers.length - 1 ? " is-new" : ""}`} data-s={l.season}>
+            <img className="h2-bg" src={seasonSrc(IMG, l.season)} alt="" width={SIZE[l.season][0]} height={SIZE[l.season][1]} fetchPriority={l.id === 0 ? "high" : undefined} />
+          </div>
+        ))}
+        {layers.length > 1 && <i key={`r${top.id}`} className="h2-ring" />}
+      </div>
+      <div className="h2-seasons" role="group" aria-label="季節の絵の切り替え"
+        onPointerEnter={() => { flags.current.hold = true; applyPause(); }}
+        onPointerLeave={() => { flags.current.hold = false; applyPause(); }}
+        onFocus={() => { flags.current.hold = true; applyPause(); }}
+        onBlur={() => { flags.current.hold = false; applyPause(); }}>
+        {SEASONS.map((s) => (
+          <button type="button" key={s} className={`h2-st h2-st-${s}${cur === s ? " is-on" : ""}`} aria-pressed={cur === s} aria-label={`${SEASON_LABEL[s]}の絵にする`} onClick={() => { void go(s); }}>
+            <span>{SEASON_LABEL[s]}</span>
+            {cur === s && <i key={tick} className="h2-st-bar" onAnimationEnd={(e) => { if (e.animationName === "h2-stbar") next(); }} />}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}

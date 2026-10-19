@@ -1,0 +1,44 @@
+/* ヘッダー。見本の座標(1122 基準)。高さ 70。ヒーローの絵の上に重なる(下の白い波はヒーローの絵に含む)。 */
+@property --hs { syntax: "<number>"; inherits: true; initial-value: 1; }
+.hm-headwrap { position: sticky; top: 0; height: 0; z-index: 50; --hs: 1; --hu: calc(var(--u) * var(--hs)); transition: --hs .35s cubic-bezier(.3,1,.4,1); }
+.hm-headwrap.is-stuck { --hs: .74; }
+.hm-head { position: absolute; left: 0; right: 0; top: 0; height: calc(70 * var(--hu)); transition: background .3s, box-shadow .3s; }
+.hm-head::before { content: ""; position: absolute; inset: 0 0 -6px; background: rgba(255,255,255,0); transition: background .3s; z-index: -1; }
+.hm-headwrap.is-stuck .hm-head { box-shadow: 0 4px 18px rgba(80,110,130,.16); border-radius: 0 0 calc(18 * var(--u)) calc(18 * var(--u)); }
+.hm-headwrap.is-stuck .hm-head::before { background: rgba(255,255,255,.96); border-radius: inherit; backdrop-filter: blur(6px); }
+.hm-head-in { height: 100%; display: flex; align-items: center; padding: 0 calc(30 * var(--u)) 0 calc(28 * var(--u)); position: relative; }
+.hm-logo { display: block; flex: none; width: calc(206 * var(--hu)); height: calc(66 * var(--hu)); margin-top: calc(-2 * var(--hu)); }
+.hm-logo img { width: 100%; height: 100%; }
+.hm-tag { position: absolute; left: calc(104 * var(--u)); top: calc(9 * var(--hu)); font-size: calc(9.6 * var(--hu)); font-weight: 700; letter-spacing: .02em; color: #3c3c3c; white-space: nowrap; transition: opacity .25s; }
+.hm-headwrap.is-stuck .hm-tag { opacity: 0; }
+.hm-nav { position: absolute; left: calc(277 * var(--u)); top: calc(40 * var(--hu)); display: flex; gap: calc(31 * var(--hu)); font-size: calc(11.6 * var(--hu)); font-weight: 700; color: #333; white-space: nowrap; }
+.hm-headwrap.is-stuck .hm-nav { top: calc(40 * var(--hu)); }
+.hm-nav a { position: relative; display: flex; align-items: center; gap: calc(3 * var(--hu)); padding: calc(3 * var(--hu)) 0 calc(6 * var(--hu)); }
+.hm-nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: calc(2.2 * var(--hu)); border-radius: 2px; background: #ee5a7a; transform: scaleX(0); transform-origin: left; transition: transform .3s cubic-bezier(.3,1.2,.5,1); }
+.hm-nav a:hover::after, .hm-nav a.is-on::after { transform: scaleX(1); }
+.hm-nav a.is-on { color: #ee5a7a; }
+.hm-nav svg { width: calc(12 * var(--hu)); height: calc(12 * var(--hu)); }
+.hm-head-r { position: absolute; right: calc(30 * var(--u)); top: calc(17 * var(--hu)); height: calc(24 * var(--hu)); display: flex; align-items: center; gap: 0; }
+.hm-ico svg { width: calc(18 * var(--hu)); height: calc(18 * var(--hu)); display: block; }
+.hm-div { width: 1px; height: calc(18 * var(--hu)); background: #e3e8ea; margin: 0 calc(12 * var(--hu)); }
+.hm-div + .hm-ico + .hm-div { margin: 0 calc(9 * var(--hu)); }
+.hm-fav { height: calc(24 * var(--hu)); padding: 0 calc(11 * var(--hu)) 0 calc(9 * var(--hu)); border-radius: 999px; background: #3aa579; color: #fff; font-size: calc(10.6 * var(--hu)); font-weight: 700; display: flex; align-items: center; gap: calc(4 * var(--hu)); box-shadow: 0 2px 0 rgba(30,110,80,.25); white-space: nowrap; }
+.hm-fav svg { width: calc(12 * var(--hu)); height: calc(12 * var(--hu)); }
+.hm-menu { display: flex; align-items: center; gap: calc(5 * var(--hu)); font-size: calc(10.4 * var(--hu)); font-weight: 700; color: #333; margin-left: calc(17 * var(--hu)); white-space: nowrap; }
+.hm-menu svg { width: calc(16 * var(--hu)); height: calc(13 * var(--hu)); }
+@media (max-width: 700px) {
+  .hm-headwrap { --hu: 1px; }
+  .hm-head { height: 54px; }
+  .hm-head-in { padding: 0 14px; }
+  .hm-logo { width: 150px; height: 48px; margin-top: 0; }
+  .hm-tag, .hm-nav, .hm-fav, .hm-div { display: none; }
+  .hm-head-r { right: 14px; top: 15px; height: 24px; gap: 12px; }
+  .hm-ico svg { width: 22px; height: 22px; }
+  .hm-menu { font-size: 10px; margin-left: 4px; } .hm-menu svg { width: 18px; height: 14px; }
+  .hm-headwrap.is-stuck { --hs: 1; }
+}
+@media (max-width: 700px) { .hm-head::before { background: #fff; } .hm-headwrap.is-stuck .hm-head { box-shadow: 0 3px 12px rgba(80,110,130,.14); } }
+/* 下へ進むと上に隠れ、上へ戻るとスライドダウンで出てくる */
+.hm-head { transition: background .3s, box-shadow .3s, transform .45s cubic-bezier(.3, 1.25, .5, 1); }
+.hm-headwrap.is-away .hm-head { transform: translateY(-120%); transition: background .3s, box-shadow .3s, transform .3s ease-in; }
+@media (prefers-reduced-motion: reduce) { .hm-headwrap.is-away .hm-head { transform: none; } }
