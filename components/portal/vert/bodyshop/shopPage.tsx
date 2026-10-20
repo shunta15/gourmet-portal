@@ -10,7 +10,7 @@ import { loadBsShop } from "@/lib/portal/vert/bodyshop/model";
 import { BODYCARE_DESIGN } from "@/lib/portal/vert/bodycareDesign";
 import { BODYCARE_SHOP_DESIGN } from "@/lib/portal/vert/bodycareStructure";
 import { socialLinks } from "@/lib/portal/sns";
-import { localBusiness } from "@/lib/seo/jsonld";
+import { breadcrumb, localBusiness } from "@/lib/seo/jsonld";
 import { SITE_URL, absUrl } from "@/lib/seo/util";
 import { safeDecode } from "@/lib/stations/query";
 
@@ -52,6 +52,15 @@ export function bodyShopPage() {
         <>
           {BODYCARE_DESIGN === "green" ? <GreenShopPage shop={shop} /> : <ShopDesign shop={shop} v={0} />}
           <JsonLd data={ld} />
+          {BODYCARE_DESIGN === "green" && (
+            <JsonLd
+              data={breadcrumb([
+                { name: "マチノワ", url: absUrl("/") },
+                { name: v.name, url: absUrl(v.path) },
+                { name: place.name, url: absUrl(`${v.path}/shop/${place.id}`) },
+              ])}
+            />
+          )}
         </>
       );
     },

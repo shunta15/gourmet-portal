@@ -94,7 +94,7 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
 .gr-root:has([data-gr-page="top"], [data-gr-page="search"]) .gr-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(255, 255, 255, 0.08) 100%); box-shadow: none; }
 .gr-head.is-scrolled { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 6px 18px rgba(40, 60, 45, 0.06); }
 .gr-head.is-hidden { translate: 0 -105%; }
-.gr-head-in { height: 100%; max-width: var(--gr-hw); margin: 0 auto; display: flex; align-items: center; }
+.gr-head-in { height: 100%; width: min(var(--gr-hw), calc(100% - 40px)); margin: 0 auto; display: flex; align-items: center; } /* 画面が --gr-hw+40px より狭い(1081〜1314px)ときは左右に20pxの余白を残す(右の「エリアを選ぶ」が画面の端に付かない) */
 .gr-logo { flex: none; width: 282px; display: block; line-height: 0; }
 .gr-logo img { width: 222px; height: 47.7px; margin-left: 8px; mix-blend-mode: multiply; transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1); transform-origin: 14% 50%; }
 .gr-logo:hover img { transform: scale(1.04) rotate(-1deg); }
