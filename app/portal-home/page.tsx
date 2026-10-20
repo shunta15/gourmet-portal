@@ -3,7 +3,7 @@ import PortalHome from "@/components/portal/pages/home";
 import Machi2Page from "@/components/portal/hproto/machi2/Page";
 import { latestNews } from "@/components/portal/hproto/machi2/news";
 import { seasonNowJst } from "@/components/portal/hproto/machi2/season";
-import { HOME_DESIGN } from "@/lib/portal/homeDesign";
+import { HOME_AIRY, HOME_DESIGN } from "@/lib/portal/homeDesign";
 import { buildMetadata } from "@/lib/seo/meta";
 
 // 総合トップ。公開スイッチ ON のとき `/` として出る（next.config.ts の rewrites）。検索エンジンに載せる（index）。
@@ -29,6 +29,6 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 export default function Page() {
-  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} />;
+  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} airy={HOME_AIRY} />;
   return <PortalHome />;
 }
