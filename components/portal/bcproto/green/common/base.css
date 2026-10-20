@@ -1,0 +1,255 @@
+/* ボディケア試作「グリーン案」(オーナーの見本 3 枚の完全再現)の共通 CSS。1440px で見本の 1448px 画面とほぼ等倍。
+   接頭辞は全部 gr-。ページごとの CSS(top.css など)は、ここの変数・部品を使う。
+   動き: 出現 data-rv / 端の若葉のそよぎ+パララックス / 上端の進み具合の線 / ヘッダーの隠れる・現れる /
+         持ち上がるカード gr-lift / 矢印の丸 gr-arrow / 染まる丸札 gr-chip / 押すと縮む gr-press / 光が走る gr-shimmer /
+         ポップイン gr-pop+浮く gr-float / ゆっくり寄る gr-kb / 線が描き直される gr-draw / ハート gr-heart / 星 gr-stars / 追従タブ gr-tabs */
+
+.gr-root {
+  /* 色 */
+  --gr-g: #2f5a3d; /* 深い緑(ボタン・縦線・チェック) */
+  --gr-gd: #234a31; /* 濃い緑(押したとき・影) */
+  --gr-g2: #4a7a5a; /* 明るい緑(ホバー・染め) */
+  --gr-gl: #eaf1e5; /* 淡い緑の面(お悩みの帯など) */
+  --gr-gl2: #f3f7ef; /* さらに淡い緑 */
+  --gr-paper: #fcfcf9; /* ページの地 */
+  --gr-cream: #f6f2e8; /* 生成りの面 */
+  --gr-ink: #2a2e2b; /* 本文 */
+  --gr-mut: #6a6e6a; /* 補助の文字 */
+  --gr-line: #e5e3da; /* 罫線・カードの縁 */
+  --gr-star: #f2a516; /* 星 */
+  --gr-red: #e0526a; /* ハート */
+  --gr-btn: linear-gradient(96deg, #45664a 0%, #2c5439 100%); /* 緑のボタンの面 */
+  /* 影・角丸 */
+  --gr-sh: 0 2px 10px rgba(40, 60, 45, 0.08);
+  --gr-sh2: 0 10px 26px rgba(40, 60, 45, 0.16);
+  --gr-r: 10px;
+  /* 書体 */
+  --gr-ff-jp: var(--gr-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --gr-ff-min: var(--gr-min), "Shippori Mincho", "Hiragino Mincho ProN", serif;
+  --gr-ff-hand: var(--gr-hand), "Klee One", "Zen Kurenaido", "Hiragino Maru Gothic ProN", cursive;
+  /* 寸法 */
+  --gr-hh: 52px; /* ヘッダーの高さ(ページごとに下で上書き) */
+  --gr-hw: 1200px; /* ヘッダー中身の幅(ページごとに下で上書き) */
+  --gr-hy: var(--gr-hh); /* 今のヘッダーの下端(隠れると 0)。追従の物の top に使う */
+  --gr-edge-w: 132px;
+
+  position: relative;
+  background: var(--gr-paper);
+  color: var(--gr-ink);
+  font-family: var(--gr-ff-jp);
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+/* ページごとの外枠の幅と高さ(ページの一番外側の要素に data-gr-page="top|search|shop|article" を付ける) */
+.gr-root:has([data-gr-page="top"]) { --gr-hh: 54px; --gr-hw: 1274px; }
+.gr-root:has([data-gr-page="search"]) { --gr-hh: 52px; --gr-hw: 1294px; }
+.gr-root:has([data-gr-page="shop"]) { --gr-hh: 48px; --gr-hw: 1200px; }
+.gr-root:has([data-gr-page="article"]) { --gr-hh: 52px; --gr-hw: 1200px; }
+
+:where(.gr-root) *, :where(.gr-root) *::before, :where(.gr-root) *::after { box-sizing: border-box; }
+:where(.gr-root) a { color: inherit; text-decoration: none; }
+:where(.gr-root) img { display: block; max-width: 100%; }
+:where(.gr-root) :is(h1, h2, h3, h4, p, ul, ol, dl, dd, figure) { margin: 0; padding: 0; }
+:where(.gr-root) :is(ul, ol) { list-style: none; }
+:where(.gr-root) button { font-family: inherit; }
+.gr-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.gr-main { position: relative; z-index: 1; display: block; }
+
+/* 書体のかたまり */
+.gr-jp { font-family: var(--gr-ff-jp); }
+.gr-min { font-family: var(--gr-ff-min); }
+.gr-hand { font-family: var(--gr-ff-hand); }
+
+/* 共通の枠(グルメのサイドラベル・丸いカーソル・上の進み具合の線)は見本に無いので、この試作の中だけ隠す */
+body:has(.gr-root) > nav.nav,
+body:has(.gr-root) .side-label,
+body:has(.gr-root) .cursor-dot,
+body:has(.gr-root) .cursor-ring,
+body:has(.gr-root) .progress-bar { display: none !important; }
+body:has(.gr-root) { cursor: auto; }
+body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
+
+/* ---------- 見本の帯(各ページの一番上・28px) ---------- */
+.gr-demo-bar { height: 28px; line-height: 28px; text-align: center; font-size: 12px; color: #6b6a5c; background: #efeadb; border-bottom: 1px solid #e0d9c4; position: relative; z-index: 2; }
+
+/* ---------- 上端の進み具合の線 ---------- */
+.gr-progress { position: fixed; left: 0; top: 0; width: 100%; height: 3px; transform: scaleX(0); transform-origin: 0 50%; background: linear-gradient(90deg, #5b9a6c, #2c5439); z-index: 120; pointer-events: none; }
+
+/* ---------- 端の若葉(見本の縁のぼかしの葉。固定・そよぐ・奥行きでパララックス) ---------- */
+.gr-edge { position: fixed; top: -70px; bottom: -70px; width: var(--gr-edge-w); pointer-events: none; z-index: 0; mix-blend-mode: multiply; }
+.gr-edge-l { left: 0; }
+.gr-edge-r { right: 0; --gr-edge-w: 82px; }
+.gr-edge i { position: absolute; inset: 0; background-repeat: no-repeat; background-size: cover; will-change: translate, rotate; }
+.gr-edge-l i { -webkit-mask-image: linear-gradient(90deg, #000 50%, transparent 100%); mask-image: linear-gradient(90deg, #000 50%, transparent 100%); background-image: url(/_portal/bcproto/green/common/edge-l.webp); background-position: left top; transform-origin: 0 30%; }
+.gr-edge-r i { -webkit-mask-image: linear-gradient(270deg, #000 50%, transparent 100%); mask-image: linear-gradient(270deg, #000 50%, transparent 100%); background-image: url(/_portal/bcproto/green/common/edge-r.webp); background-position: right top; transform-origin: 100% 30%; }
+.gr-edge .near { translate: 0 calc(var(--sy, 0) * -0.035px); animation: gr-sway 9s ease-in-out infinite alternate; }
+.gr-edge .far { translate: 0 calc(var(--sy, 0) * -0.012px); scale: 1 -1; opacity: 0.5; filter: blur(4px); animation: gr-sway 13s ease-in-out -4s infinite alternate-reverse; }
+@keyframes gr-sway { from { rotate: -1.2deg; } to { rotate: 1.8deg; } }
+
+/* ---------- ヘッダー(最初・探す=ヒーローの上に重なる / 店舗詳細=白い帯) ---------- */
+.gr-head { position: sticky; top: 0; z-index: 100; height: var(--gr-hh); margin-bottom: calc(var(--gr-hh) * -1); transition: translate 0.38s cubic-bezier(0.3, 0.7, 0.2, 1), background-color 0.3s, box-shadow 0.3s; background: rgba(255, 255, 255, 0.95); }
+.gr-root:has([data-gr-page="top"], [data-gr-page="search"]) .gr-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(255, 255, 255, 0.08) 100%); box-shadow: none; }
+.gr-head.is-scrolled { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 6px 18px rgba(40, 60, 45, 0.06); }
+.gr-head.is-hidden { translate: 0 -105%; }
+.gr-head-in { height: 100%; max-width: var(--gr-hw); margin: 0 auto; display: flex; align-items: center; }
+.gr-logo { flex: none; width: 282px; display: block; line-height: 0; }
+.gr-logo img { width: 222px; height: 47.7px; margin-left: 8px; mix-blend-mode: multiply; transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1); transform-origin: 14% 50%; }
+.gr-logo:hover img { transform: scale(1.04) rotate(-1deg); }
+.gr-nav { display: flex; gap: 30px; flex: 1; font-size: 11.8px; font-weight: 500; white-space: nowrap; }
+.gr-nav a { position: relative; padding: 6px 0; transition: color 0.2s; }
+.gr-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px; background: var(--gr-g2); transition: right 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.gr-nav a:hover { color: var(--gr-g); }
+.gr-nav a:hover::after { right: 0; }
+.gr-head-r { display: flex; align-items: center; gap: 26px; margin-left: auto; font-size: 10.5px; }
+.gr-hr-i { display: inline-flex; align-items: center; gap: 6px; color: #3a3e3b; transition: transform 0.2s, color 0.2s; }
+.gr-hr-i:hover { transform: translateY(-2px); color: var(--gr-g); }
+.gr-area-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 150px; height: 36px; margin-left: -2px; background: var(--gr-btn); color: #fff !important; font-size: 12.5px; font-weight: 500; letter-spacing: 0.02em; border-radius: 11px; box-shadow: 0 2px 6px rgba(30, 60, 40, 0.18); }
+.gr-area-btn svg:first-child { color: #fff; }
+.gr-caret { opacity: 0.9; }
+.gr-menu-btn { display: none; width: 38px; height: 36px; border: 0; background: transparent; padding: 0; position: relative; }
+.gr-menu-btn span { position: absolute; left: 9px; right: 9px; height: 2px; background: var(--gr-ink); border-radius: 2px; }
+.gr-menu-btn span:nth-child(1) { top: 12px; }
+.gr-menu-btn span:nth-child(2) { top: 17px; }
+.gr-menu-btn span:nth-child(3) { top: 22px; }
+.gr-drawer { display: none; }
+
+/* ---------- フッター(見本に無い。ヘッダーと同じ見た目の控えめな帯) ---------- */
+.gr-root .gr-foot { position: relative; z-index: 1; margin-top: 56px; padding: 0; color: var(--gr-ink); background: rgba(255, 255, 255, 0.78); border-top: 1px solid var(--gr-line); } /* グルメ共通の footer{} の色・余白を打ち消す */
+.gr-foot-in { max-width: 1200px; margin: 0 auto; padding: 22px 16px 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.gr-foot-logo { line-height: 0; flex: none; }
+.gr-foot-logo img { width: 176px; height: auto; mix-blend-mode: multiply; }
+.gr-foot-nav { display: flex; gap: 8px 26px; flex-wrap: wrap; font-size: 11.8px; font-weight: 500; flex: 1; }
+.gr-foot-nav a { transition: color 0.2s; }
+.gr-foot-nav a:hover { color: var(--gr-g); }
+.gr-foot-c { font-size: 11px; color: var(--gr-mut); margin-left: auto; }
+
+/* ---------- 部品 ---------- */
+/* 見出しの縦線(見本の「施術の種類から探す」など) */
+.gr-vbar { position: relative; padding-left: 13px; }
+.gr-vbar::before { content: ""; position: absolute; left: 0; top: 0.12em; bottom: 0.12em; width: 3px; border-radius: 2px; background: var(--gr-g); }
+/* ボタン */
+.gr-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 38px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--gr-btn); color: #fff; font-weight: 700; font-size: 13px; cursor: pointer; }
+.gr-btn--line { background: #fff; color: var(--gr-g); border: 1.5px solid var(--gr-g); }
+/* 押すと縮んで戻る */
+.gr-press { transition: transform 0.14s cubic-bezier(0.3, 1.6, 0.5, 1), filter 0.2s, box-shadow 0.2s; }
+.gr-press:hover { filter: brightness(1.08); }
+.gr-press:active { transform: scale(0.94); }
+/* 光が走る(緑のボタン。ときどき) */
+.gr-shimmer { position: relative; overflow: hidden; isolation: isolate; }
+.gr-shimmer::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 38%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.5), transparent); transform: skewX(-18deg); animation: gr-shimmer 4.6s ease-in-out 1.6s infinite; pointer-events: none; z-index: 1; }
+@keyframes gr-shimmer { 0% { left: -60%; } 28%, 100% { left: 160%; } }
+/* 持ち上がるカード・札(写真は中でズーム。写真の入れ物には gr-zoom) */
+.gr-lift { transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+.gr-lift:hover { transform: translateY(-5px); box-shadow: var(--gr-sh2); }
+.gr-zoom { overflow: hidden; }
+.gr-zoom img { transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.gr-lift:hover .gr-zoom img, .gr-zoom:hover img { transform: scale(1.07); }
+/* 矢印の丸(親が gr-lift か gr-hov のとき、触ると矢印が右へ滑る)。中身は <svg> か文字 */
+.gr-arrow { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--gr-line); background: #fff; color: var(--gr-g); overflow: hidden; transition: background 0.25s, color 0.25s, border-color 0.25s; }
+.gr-arrow > * { transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.gr-lift:hover .gr-arrow, .gr-hov:hover .gr-arrow, .gr-arrow:hover { background: var(--gr-g); color: #fff; border-color: var(--gr-g); }
+.gr-lift:hover .gr-arrow > *, .gr-hov:hover .gr-arrow > *, .gr-arrow:hover > * { animation: gr-arrow-go 0.5s cubic-bezier(0.3, 0.7, 0.2, 1); }
+@keyframes gr-arrow-go { 0% { transform: translateX(0); } 45% { transform: translateX(160%); opacity: 0; } 46% { transform: translateX(-160%); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+/* キーワードの丸札(触ると緑に染まる) */
+.gr-chip { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: #fff; border: 1px solid var(--gr-line); color: var(--gr-ink); transition: background 0.28s, color 0.28s, border-color 0.28s, transform 0.2s; }
+.gr-chip:hover { background: var(--gr-g); color: #fff; border-color: var(--gr-g); transform: translateY(-2px); }
+.gr-chip:active { transform: scale(0.94); }
+/* ポップイン+ゆっくり浮く(丸い札「あなたにぴったりの…」)。gr-pop は出現、gr-float は浮遊。両方付けて使う */
+.gr-pop { animation: gr-pop 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) 0.9s both; }
+@keyframes gr-pop { 0% { scale: 0.2; opacity: 0; } 100% { scale: 1; opacity: 1; } }
+.gr-float { animation: gr-float 5.5s ease-in-out infinite alternate; }
+.gr-pop.gr-float { animation: gr-pop 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) 0.9s both, gr-float 5.5s ease-in-out 1.8s infinite alternate; }
+@keyframes gr-float { from { translate: 0 0; } to { translate: 0 -8px; } }
+/* 写真がゆっくり寄る(Ken Burns。写真の入れ物は overflow: hidden) */
+.gr-kb { animation: gr-kb 24s ease-in-out infinite alternate; transform-origin: 62% 42%; }
+@keyframes gr-kb { from { scale: 1; } to { scale: 1.09; } }
+/* 若葉・小さな飾りのそよぎ(根元を支点に揺れる) */
+.gr-sway { transform-origin: 50% 100%; animation: gr-sway2 6s ease-in-out infinite alternate; }
+@keyframes gr-sway2 { from { rotate: -4deg; } to { rotate: 5deg; } }
+/* 線のアイコンが触ると描き直される(svg に gr-draw。path/line/circle などに線がある物)+ 親が触られたとき小さく弾む */
+.gr-draw :is(path, line, circle, rect, polyline, ellipse) { stroke-dasharray: 220; stroke-dashoffset: 0; }
+.gr-hov:hover .gr-draw :is(path, line, circle, rect, polyline, ellipse), .gr-draw:hover :is(path, line, circle, rect, polyline, ellipse) { animation: gr-draw 0.9s ease-out both; }
+@keyframes gr-draw { from { stroke-dashoffset: 220; } to { stroke-dashoffset: 0; } }
+.gr-hov:hover .gr-bounce { animation: gr-bounce 0.55s cubic-bezier(0.3, 1.8, 0.5, 1); }
+@keyframes gr-bounce { 0% { transform: scale(1); } 40% { transform: scale(1.14) translateY(-3px); } 100% { transform: scale(1); } }
+/* ハート(押すと赤く弾む) */
+.gr-heart { display: inline-grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; transition: transform 0.15s; }
+.gr-heart svg { fill: rgba(255, 255, 255, 0.12); stroke: #fff; transition: fill 0.2s, stroke 0.2s; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25)); }
+.gr-heart.gr-heart--ink svg { stroke: #8a8e8a; filter: none; fill: none; }
+.gr-heart:hover { transform: scale(1.14); }
+.gr-heart.is-on svg { fill: var(--gr-red); stroke: var(--gr-red); animation: gr-heart-pop 0.5s cubic-bezier(0.3, 1.8, 0.5, 1); }
+@keyframes gr-heart-pop { 0% { scale: 1; } 40% { scale: 1.45; } 100% { scale: 1; } }
+/* 星(スクロールで左から塗られる) */
+.gr-stars { position: relative; display: inline-block; line-height: 1; letter-spacing: 1px; white-space: nowrap; vertical-align: middle; }
+.gr-stars-b { color: #e2e0d6; }
+.gr-stars-f { position: absolute; left: 0; top: 0; overflow: hidden; width: calc(var(--v, 5) / 5 * 100%); color: var(--gr-star); }
+.gr-stars-f { clip-path: inset(0 100% 0 0); }
+.gr-stars.is-in .gr-stars-f { clip-path: inset(0 0 0 0); transition: clip-path 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) var(--d, 0ms); }
+
+/* ---------- 追従タブ(ScrollSpyTabs) ---------- */
+.gr-tabs { position: sticky; top: var(--gr-hy, 0px); z-index: 50; display: flex; gap: 8px; transition: top 0.38s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.gr-tab { position: relative; z-index: 1; flex: 1; height: 34px; border: 1px solid var(--gr-line); border-radius: 999px; background: rgba(255, 255, 255, 0.92); font-size: 12px; font-weight: 500; color: var(--gr-ink); cursor: pointer; transition: color 0.3s, border-color 0.3s; }
+.gr-tab.is-on { color: #fff; border-color: transparent; }
+.gr-tabs-ind { position: absolute; z-index: 0; left: 0; top: 0; translate: var(--ix, 0px) var(--iy, 0px); width: var(--iw, 0px); height: var(--ih, 34px); border-radius: 999px; background: var(--gr-btn); transition: translate 0.45s cubic-bezier(0.3, 0.8, 0.2, 1), width 0.45s cubic-bezier(0.3, 0.8, 0.2, 1); pointer-events: none; }
+.gr-tabs--line { gap: 0; background: rgba(255, 255, 255, 0.94); border-bottom: 1px solid var(--gr-line); }
+.gr-tabs--line .gr-tab { height: 44px; border: 0; border-radius: 0; background: transparent; }
+.gr-tabs--line .gr-tab.is-on { color: var(--gr-g); font-weight: 700; }
+.gr-tabs--line .gr-tabs-ind { top: auto; bottom: 0; height: 2px; translate: var(--ix, 0px) 0; border-radius: 2px; }
+
+/* ---------- 出現(GreenFx が .is-in を付ける)。JS が動くとき・動きを減らす設定でないときだけ、最初は隠す ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .gr-root [data-rv] { opacity: 0; translate: 0 30px; transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .gr-root [data-rv="fade"] { translate: none; }
+  .gr-root [data-rv="left"] { translate: -34px 0; }
+  .gr-root [data-rv="right"] { translate: 34px 0; }
+  .gr-root [data-rv="zoom"] { translate: none; scale: 0.93; }
+  .gr-root [data-rv].is-in { opacity: 1; translate: none; scale: none; }
+  /* hover で動く物と一緒に使うときの transition(外側に data-rv、内側に gr-lift が安全。同じ要素に付けるときはこれ) */
+  .gr-root [data-rv].gr-lift { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+  /* 大見出しの 1 行ずつ(MaskLines)・手書き(Write)・星・CountUp は、自分の中身を動かすので外側は動かさない */
+  .gr-root [data-rv="mask"], .gr-root [data-rv="write"], .gr-root [data-rv="stars"] { opacity: 1; translate: none; transition: none; }
+  .gr-ml-i { translate: 0 108%; }
+  .gr-mask.is-in .gr-ml-i { translate: 0 0; transition: translate 1.05s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 110ms)); }
+  .gr-wl-i { clip-path: inset(-0.2em 100% -0.2em 0); }
+  .gr-write.is-in .gr-wl-i { clip-path: inset(-0.2em -0.4em -0.2em 0); transition: clip-path 1.1s cubic-bezier(0.45, 0.1, 0.3, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 650ms)); }
+}
+.gr-mask { display: block; }
+.gr-ml { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.gr-ml-i { display: block; }
+.gr-write { display: inline-block; }
+.gr-wl { display: block; }
+.gr-wl-i { display: inline-block; }
+
+/* ---------- スマホ・狭い画面 ---------- */
+@media (max-width: 1080px) {
+  .gr-nav { display: none; }
+  .gr-hr-i { display: none; }
+  .gr-head-in { padding: 0 10px 0 14px; }
+  .gr-logo { width: auto; flex: 1; }
+  .gr-logo img { width: 168px; height: auto; margin-left: 0; }
+  .gr-menu-btn { display: block; }
+  .gr-area-btn { width: 118px; height: 34px; font-size: 12px; margin-left: 0; }
+  .gr-head-r { gap: 4px; }
+  .gr-drawer { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; background: rgba(255, 255, 255, 0.98); border-top: 1px solid var(--gr-line); box-shadow: 0 12px 24px rgba(40, 60, 45, 0.12); padding: 6px 16px 12px; }
+  .gr-drawer[data-open="1"] { display: flex; }
+  .gr-drawer a { padding: 13px 4px; border-bottom: 1px solid var(--gr-line); font-size: 14px; font-weight: 500; }
+  .gr-drawer a:last-child { border-bottom: 0; }
+  .gr-edge { opacity: 0.55; --gr-edge-w: 56px; }
+  .gr-edge-r { --gr-edge-w: 40px; }
+  .gr-foot-in { padding: 20px 16px 22px; gap: 14px; }
+  .gr-foot-c { margin-left: 0; width: 100%; }
+}
+
+/* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .gr-root *, .gr-root *::before, .gr-root *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .gr-root [data-rv] { opacity: 1; translate: none; scale: none; }
+  .gr-ml-i { translate: none; }
+  .gr-wl-i { clip-path: none; }
+  .gr-stars-f { clip-path: none; }
+  .gr-edge i { translate: none !important; }
+  .gr-head.is-hidden { translate: none; }
+}
