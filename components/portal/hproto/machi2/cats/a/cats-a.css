@@ -1,0 +1,110 @@
+/* 総合トップ「業種の節」案A「誌面(エディトリアル)」(試作 /proto-home/cat-a 専用。CatsA.tsx の中だけに効く)。
+   カードの代わりに、雑誌の目次のような組み: 番号 / 実写の正方形 / 明朝の業種名 / 細いゴシックのサブ文 / 細い下線と矢印。
+   項目の間は 1px の罫線(#d9d2c5)。丸いアイコン・光の粒・影・グラデーション・「//」の飾りは無し。
+   広い画面(1180〜)は横 6 列、中くらい(701〜1179)は 3×2、スマホ(〜700)は縦の目次(右に小さな写真)。 */
+
+/* ── 節の箱(Prep の口 .h2-cats-x) ──
+   1180 以上: 箱の高さは本番と同じ(330 × u = 1440 で 402px。1441〜は 368.5px)を下限にして、中身が多いときだけ伸ばす。
+   それ未満: 中身の高さ(height:auto)。写真の周りの余白(padding)は中身(.ca)側に持たせる */
+.h2-root .h2-cats.h2-cats-x { height: auto; padding: 0; background: none; }
+@media (min-width: 1180px) {
+  .h2-root .h2-cats.h2-cats-x { min-height: calc(330 * var(--u)); }
+}
+
+/* 次の節(特集のスライド)の上に出る、薄いピンクの波線(動く区切り)は、この案では消す(紙の罫線の組みに合わない)。この案の節があるときだけ効く */
+.h2-root .h2-cats.h2-cats-x + .h2-feat::before { display: none; }
+
+.ca {
+  --ca-ink: #1f2b46;
+  --ca-rule: #d9d2c5;
+  --ca-mute: #6e6a60;
+  --ca-no: #7d7668;
+  --ca-ph: #ece7db;
+  --ca-gap: 44px;
+  position: relative;
+  color: var(--ca-ink);
+  font-family: var(--ca-gothic), "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+  padding: 0 48px;
+}
+.ca *, .ca *::before, .ca *::after { box-sizing: border-box; }
+
+/* 見出し: 上に小さなゴシックの添え、本体は明朝の大きめ・左寄せ */
+.ca-head { padding-top: 0; margin-bottom: 14px; }
+.ca-eye { margin: 0 0 6px; font-size: 11px; line-height: 1.2; font-weight: 500; letter-spacing: .32em; color: var(--ca-no); }
+.ca-h2 {
+  margin: 0; font-family: var(--ca-mincho), "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif; font-weight: 500;
+  font-size: clamp(26px, 2.25vw, 36px); line-height: 1.35; letter-spacing: .05em; font-feature-settings: "palt"; color: var(--ca-ink);
+}
+
+/* 6 列(1180〜): 上に 1px の罫線、項目の間に縦の罫線(上の罫線に T 字でつながる) */
+.ca-row { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: var(--ca-gap); border-top: 1px solid var(--ca-rule); padding-top: 12px; list-style: none; margin: 0; }
+.ca-item { position: relative; min-width: 0; }
+.ca-item + .ca-item::before { content: ""; position: absolute; left: calc(var(--ca-gap) / -2); top: -12px; bottom: 0; width: 1px; background: var(--ca-rule); }
+.ca-a { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+.ca-a:focus-visible { outline: 1px solid var(--ca-ink); outline-offset: 6px; }
+
+.ca-no { font-family: var(--ca-num), "Cormorant Garamond", "Times New Roman", serif; font-weight: 300; font-size: 15px; line-height: 1; letter-spacing: .12em; color: var(--ca-no); font-variant-numeric: lining-nums; margin-bottom: 6px; }
+
+/* 写真: 角丸なし・ごく薄い縁・少し粒子感(印刷の網のような静かなざらつき)・彩度をほんの少し落として 6 枚の色味を揃える */
+.ca-ph { position: relative; display: block; aspect-ratio: 1 / 1; overflow: hidden; background: var(--ca-ph); border: 1px solid rgba(31, 43, 70, .12); }
+.ca-ph img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(.98); transition: filter .6s ease; }
+.ca-ph::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .13; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.5 -.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+.ca-name { margin-top: 12px; font-family: var(--ca-mincho), "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif; font-weight: 600; font-size: clamp(17px, 1.5vw, 22px); line-height: 1.3; letter-spacing: .08em; font-feature-settings: "palt"; color: var(--ca-ink); white-space: nowrap; }
+.ca-sub { margin-top: 3px; font-weight: 400; font-size: 12.5px; line-height: 1.6; letter-spacing: .04em; color: var(--ca-mute); }
+
+/* 細い下線と小さな矢印: 薄い罫線の上に、濃い短い線(28px)。ホバーで右端まで伸びる */
+.ca-ln { position: relative; display: flex; align-items: center; width: 100%; height: 10px; margin-top: 8px; color: var(--ca-ink); }
+.ca-ln::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--ca-rule); }
+.ca-ln i { position: relative; display: block; flex: none; width: 28px; height: 1px; background: currentColor; transition: width .6s cubic-bezier(.2, .7, .2, 1); }
+.ca-ln svg { position: relative; flex: none; margin-left: -1px; transition: translate .6s cubic-bezier(.2, .7, .2, 1); }
+
+@media (hover: hover) {
+  .ca-a:hover .ca-ph img, .ca-a:focus-visible .ca-ph img { filter: saturate(.9) contrast(.98) brightness(.9); }
+  .ca-a:hover .ca-ln i, .ca-a:focus-visible .ca-ln i { width: calc(100% - 6px); }
+}
+
+/* 入るときだけの動き: 見出し → 項目の順に、下から 10px をゆっくり(控えめなスタガー)。Motion.tsx が [data-io] に .is-in を付ける。
+   常に動く物は無し。prefers-reduced-motion では何も起きない(最終の状態のまま) */
+@media (prefers-reduced-motion: no-preference) {
+  .ca[data-io] .ca-head, .ca[data-io] .ca-item {
+    transition: opacity .9s cubic-bezier(.2, .6, .2, 1), translate .9s cubic-bezier(.2, .6, .2, 1);
+    transition-delay: calc(var(--i, 0) * 80ms + 60ms);
+  }
+  .ca[data-io]:not(.is-in) .ca-head, .ca[data-io]:not(.is-in) .ca-item { opacity: 0; translate: 0 10px; }
+}
+
+/* 中くらいの画面(701〜1179): 3×2。写真は横長に(4:3)して高さを抑える。段の間にも横の罫線 */
+@media (min-width: 701px) and (max-width: 1179px) {
+  .ca { --ca-gap: 40px; padding: 0 40px 8px; }
+  .ca-head { margin-bottom: 22px; }
+  .ca-row { grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 0; padding-top: 0; }
+  .ca-item { border-top: 1px solid var(--ca-rule); padding: 16px 0 30px; }
+  .ca-item::before { top: 0 !important; }
+  .ca-item:nth-child(3n + 1)::before { display: none; }
+  .ca-item + .ca-item::before { top: 0; }
+  .ca-ph { aspect-ratio: 4 / 3; }
+  .ca-name { font-size: 20px; }
+}
+
+/* スマホ(〜700): 縦の目次。左に番号、中に名前とサブ文、右に小さな正方形の写真。行の間は 1px の罫線 */
+@media (max-width: 700px) {
+  .ca { padding: 40px 20px 36px; }
+  .ca-head { padding-top: 0; margin-bottom: 20px; }
+  .ca-eye { font-size: 10.5px; margin-bottom: 7px; }
+  .ca-h2 { font-size: clamp(19px, 5.5vw, 26px); letter-spacing: .04em; text-wrap: balance; }
+  .ca-row { display: block; border-top: 1px solid var(--ca-rule); padding-top: 0; }
+  .ca-item { border-bottom: 1px solid var(--ca-rule); }
+  .ca-item + .ca-item::before { display: none; }
+  .ca-a { display: grid; grid-template-columns: 30px minmax(0, 1fr) 64px; grid-template-areas: "no name ph" "no sub ph" "no ln ph"; column-gap: 8px; align-content: center; align-items: start; padding: 12px 0; height: auto; }
+  .ca-no { grid-area: no; margin: 3px 0 0; font-size: 14px; }
+  .ca-ph { grid-area: ph; align-self: center; }
+  .ca-name { grid-area: name; margin-top: 0; font-size: 19px; align-self: end; }
+  .ca-sub { grid-area: sub; margin-top: 2px; font-size: 12px; line-height: 1.5; }
+  .ca-ln { grid-area: ln; width: 100%; margin-top: 8px; align-self: start; }
+  .ca-ln i { width: 24px; }
+}
