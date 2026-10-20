@@ -115,10 +115,8 @@ export default function Lower({ prod = false, news }: { prod?: boolean; news?: N
             </Link>
           ))}
           <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
-            {/* オーナー作の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。全体を見せ(contain)、上下の余白は画像の上端・下端の色を引き伸ばしてぼかして埋める。再生ボタンの位置に光の輪だけ重ねる */}
+            {/* オーナー作の正方形の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。カードもほぼ正方形なので枠いっぱいに出し、再生ボタンの位置に光の輪だけ重ねる */}
             <span className="h2-cph h2-vph">
-              <span className="h2-vedge h2-vedge-t" aria-hidden="true"><img src={`${B}card-video.webp`} alt="" /></span>
-              <span className="h2-vedge h2-vedge-b" aria-hidden="true"><img src={`${B}card-video.webp`} alt="" /></span>
               <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /><i className="h2-vring" aria-hidden="true" /></span>
             </span>
           </Link>
