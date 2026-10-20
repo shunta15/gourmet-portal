@@ -11,3 +11,9 @@ export const HOME_DESIGN: "machi2" | "nigiwai" = "machi2";
  * 2026-10-20 オーナー「圧迫感無くしたのはデフォでOK」で true。false にすれば 10/20 午前の見た目(飾りの多い版)に戻る。
  */
 export const HOME_AIRY = true;
+
+/**
+ * machi2 の「文字色をシンプルにした版」(simple.css。キャッチコピー・見出し・帯・スライド見出し・ボタンの文字を紺 1 色+「輪」だけ橙)を本番の `/` で使うか。
+ * 2026-10-20 オーナー「文字シンプルは確定」で true。false にすれば 4 色のキャッチコピーに戻る。
+ */
+export const HOME_SIMPLE = true;

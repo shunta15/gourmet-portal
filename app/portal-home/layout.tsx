@@ -2,7 +2,8 @@ import "@/components/portal/portal.css";
 import PortalLayout from "@/components/portal/PortalLayout";
 import MachiShell from "@/components/portal/hproto/machi2/MachiShell";
 import "@/components/portal/hproto/machi2/airy.css";
-import { HOME_AIRY, HOME_DESIGN } from "@/lib/portal/homeDesign";
+import "@/components/portal/hproto/machi2/simple.css";
+import { HOME_AIRY, HOME_DESIGN, HOME_SIMPLE } from "@/lib/portal/homeDesign";
 import { assertPortalLive } from "@/lib/portal/launch";
 
 // 総合トップ（公開スイッチ ON のときの `/`。next.config.ts の rewrites で `/` がここに来る）。
@@ -13,8 +14,8 @@ import { assertPortalLive } from "@/lib/portal/launch";
 export default function Layout({ children }: { children: React.ReactNode }) {
   if (HOME_DESIGN === "machi2") {
     assertPortalLive();
-    // airy.css は .h2-airy の下の規則だけなので、HOME_AIRY=false のときは読み込んでも見た目は変わらない
-    return <MachiShell prod airy={HOME_AIRY}>{children}</MachiShell>;
+    // airy.css / simple.css は .h2-airy / .h2-simple の下の規則だけなので、定数が false のときは読み込んでも見た目は変わらない
+    return <MachiShell prod airy={HOME_AIRY} simple={HOME_SIMPLE}>{children}</MachiShell>;
   }
   return <PortalLayout hub>{children}</PortalLayout>;
 }
