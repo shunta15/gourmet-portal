@@ -2,6 +2,7 @@ import { jp, min, hand } from "./fonts";
 import Header from "./Header";
 import Footer from "./Footer";
 import GreenFx from "./GreenFx";
+import MotionPlus from "./MotionPlus";
 import "./base.css";
 
 /**
@@ -31,6 +32,7 @@ export default function GreenShell({ children }: { children: React.ReactNode }) 
       </main>
       <Footer />
       <GreenFx />
+      <MotionPlus />
     </div>
   );
 }

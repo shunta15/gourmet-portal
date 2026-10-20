@@ -1,0 +1,112 @@
+/* ボディケア案4(緑)の追加の動き(MotionPlus.tsx と対)。既存のクラスを外から指すだけで、ページの文・データには触らない。
+   - 動きを減らす設定(prefers-reduced-motion)では、JS も何も足さず、下の動きの CSS も効かない(最終の状態のまま)。
+   - 流れる帯(KindMarquee)だけはサーバーで出る部品なので、動きを減らす設定では止めて並べるだけにする。
+   - 文字の上に物を重ねない: ヒーローの層(光の筋・光の粒・若葉)は背景画像のすぐ上・文字の下。特集記事の本文の中は見出しと写真の出方だけ。 */
+
+/* =============================================================== 流れる帯(種類の名前) */
+.mp-marquee { position: relative; z-index: 1; overflow: hidden; padding: 13px 0 12px; background: linear-gradient(180deg, #f6f9f2 0%, #fcfcf9 100%); border-top: 1px solid var(--gr-line); border-bottom: 1px solid var(--gr-line); -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%); }
+.mp-marquee-track { display: flex; width: max-content; animation: mp-marq 46s linear infinite; will-change: transform; }
+.mp-marquee ul { display: flex; flex: none; align-items: center; }
+.mp-marquee li { display: flex; flex: none; align-items: center; gap: 30px; padding-right: 30px; white-space: nowrap; font-family: var(--gr-ff-min); font-weight: 600; font-size: 30px; line-height: 1.2; letter-spacing: 0.08em; color: #2f5a3d; }
+.mp-marquee li.is-o span { color: transparent; -webkit-text-stroke: 1px #4a7a5a; }
+.mp-marquee li svg { color: #8cc09b; flex: none; animation: mp-leaf-spin 7s ease-in-out infinite alternate; transform-origin: 50% 100%; }
+.mp-marquee li:nth-child(3n) svg { color: #b4d4a2; animation-delay: -2s; }
+.mp-marquee:hover .mp-marquee-track { animation-play-state: paused; }
+.mp-marquee.mp-off .mp-marquee-track, .mp-marquee.mp-off li svg { animation-play-state: paused; }
+@keyframes mp-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes mp-leaf-spin { from { rotate: -14deg; } to { rotate: 16deg; } }
+@media (max-width: 700px) { .mp-marquee { padding: 10px 0 9px; } .mp-marquee li { font-size: 21px; gap: 20px; padding-right: 20px; } .mp-marquee-track { animation-duration: 34s; } }
+@media (prefers-reduced-motion: reduce) {
+  .mp-marquee { -webkit-mask-image: none; mask-image: none; }
+  .mp-marquee-track { width: auto; flex-wrap: wrap; justify-content: center; animation: none; }
+  .mp-marquee ul:nth-child(2) { display: none; }
+  .mp-marquee ul { flex-wrap: wrap; justify-content: center; }
+  .mp-marquee li:nth-child(n + 6) { display: none; }
+}
+
+/* =============================================================== 動きを減らさない設定のときだけ(JS が動くとき) */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* ------------------------------------------------ ヒーローの層: 光の筋・光の粒・舞う若葉 */
+  .gr-root .mp-host { position: relative; isolation: isolate; }
+  .mp-layer--top { bottom: auto; height: min(100%, 820px); }
+  .gr-root .ar-page.mp-host > .ar-wrap { position: relative; z-index: 1; }
+  .mp-layer { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+  .mp-leaves { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .mp-rays { position: absolute; inset: -12% -8%; }
+  .mp-rays i { position: absolute; top: -30%; height: 170%; border-radius: 40px; background: linear-gradient(90deg, rgba(255, 252, 226, 0) 0%, rgba(255, 252, 226, 0.62) 50%, rgba(255, 252, 226, 0) 100%); filter: blur(9px); mix-blend-mode: soft-light; rotate: 24deg; opacity: 0.8; will-change: translate, opacity; }
+  .mp-rays i:nth-child(1) { left: 6%; width: 9%; animation: mp-ray 15s ease-in-out infinite alternate; }
+  .mp-rays i:nth-child(2) { left: 30%; width: 15%; animation: mp-ray 21s ease-in-out -7s infinite alternate-reverse; }
+  .mp-rays i:nth-child(3) { left: 62%; width: 11%; animation: mp-ray 18s ease-in-out -3s infinite alternate; }
+  @keyframes mp-ray { 0% { translate: -6% 0; opacity: 0.35; } 50% { opacity: 0.95; } 100% { translate: 12% 0; opacity: 0.45; } }
+  .mp-bokeh { position: absolute; inset: 0; }
+  .mp-bokeh i { position: absolute; border-radius: 50%; background: radial-gradient(circle at 38% 34%, rgba(255, 255, 240, 0.95), rgba(214, 238, 196, 0.5) 52%, rgba(214, 238, 196, 0) 72%); opacity: var(--bo, 0.5); filter: blur(1.5px); animation: mp-bokeh var(--bd, 10s) ease-in-out var(--bl, 0s) infinite alternate; will-change: translate, opacity; }
+  @keyframes mp-bokeh { 0% { translate: 0 0; scale: 0.85; opacity: calc(var(--bo, 0.5) * 0.4); } 100% { translate: 22px -34px; scale: 1.15; opacity: var(--bo, 0.5); } }
+
+  /* ヒーローの写真がゆっくり呼吸するように寄る(既存の gr-kb を重ねて置き換え) */
+  .gr-root .gr-kb, .gr-root .gs-kb { animation: mp-breathe 10s ease-in-out infinite alternate; }
+  @keyframes mp-breathe { 0% { scale: 1; filter: saturate(1) brightness(1); } 100% { scale: 1.085; filter: saturate(1.1) brightness(1.03); } }
+
+  /* 最初の画面の文字はスクロールで写真よりゆっくり動く(奥行き) */
+  .gr-root .gt-hero-in { translate: 0 calc(var(--mp-hy, 0) * 1px); }
+
+  /* ------------------------------------------------ 見出しの 1 字ずつ+下線のワイプ */
+  .mp-split { position: relative; }
+  mp-chs { display: inline; }
+  mp-ch { display: inline-block; opacity: 0; translate: 0 0.7em; rotate: 9deg; transform-origin: 0 100%; filter: blur(3px); transition: opacity 0.6s ease calc(var(--i, 0) * 42ms), translate 0.85s cubic-bezier(0.2, 0.85, 0.2, 1) calc(var(--i, 0) * 42ms), rotate 0.85s cubic-bezier(0.2, 0.85, 0.2, 1) calc(var(--i, 0) * 42ms), filter 0.6s ease calc(var(--i, 0) * 42ms); }
+  .mp-split.mp-in mp-ch { opacity: 1; translate: 0 0; rotate: 0deg; filter: blur(0); }
+  .mp-split::after { content: ""; position: absolute; left: 0; bottom: -9px; width: min(100%, 15em); height: 2px; border-radius: 2px; background: linear-gradient(90deg, #4a7a5a 0%, rgba(74, 122, 90, 0.55) 55%, rgba(74, 122, 90, 0) 100%); transform: scaleX(0); transform-origin: 0 50%; transition: transform 1.2s cubic-bezier(0.6, 0, 0.2, 1) 0.4s; pointer-events: none; }
+  .mp-split.gr-vbar::after { left: 13px; width: min(calc(100% - 13px), 15em); }
+  .mp-split.mp-in::after { transform: scaleX(1); }
+
+  /* ------------------------------------------------ 写真が左から拭かれて現れる+ゆっくり寄る */
+  .mp-wipe:not(.mp-in) { clip-path: inset(0 100% 0 0); }
+  .mp-wipe { clip-path: inset(0 0 0 0); transition: clip-path 1.15s cubic-bezier(0.65, 0, 0.2, 1) var(--mp-d, 0ms); }
+  .mp-wipe:not(.mp-in) img { transform: scale(1.22); }
+  .mp-wipe img { transition: transform 1.6s cubic-bezier(0.2, 0.75, 0.2, 1) var(--mp-d, 0ms); }
+  /* 写真がスクロールでわずかに動く(入れ物は overflow: hidden。少し拡大して端を見せない) */
+  .gr-root img[data-mp-par] { scale: 1.13; translate: 0 calc(var(--mp-p, 0) * 5.5%); will-change: translate; }
+
+  /* ------------------------------------------------ 札・カードが順に、少し 3D で立ち上がる */
+  .gr-root :is(.gt-types-grid, .gt-worry-row, .gt-rec-grid, .gt-area-grid, .gs-cards, .sh-rel-g, .ar-kinds, .ar-wks, .ar-words, .ar-idx-g) { perspective: 1200px; }
+  .gr-root :is(.gt-types-grid, .gt-worry-row, .gt-rec-grid, .gt-area-grid, .gs-cards, .sh-rel-g, .ar-kinds, .ar-wks, .ar-words, .ar-idx-g) > [data-rv] { transform-origin: 50% 100%; transition: opacity 0.9s ease var(--d, 0ms), translate 1.05s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 1.05s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), rotate 1.05s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .gr-root :is(.gt-types-grid, .gt-worry-row, .gt-rec-grid, .gt-area-grid, .sh-rel-g, .ar-kinds, .ar-wks, .ar-words, .ar-idx-g) > [data-rv]:not(.is-in) { translate: 0 56px; rotate: x 26deg; scale: 0.94; }
+  /* 探すの結果のカードは右から順に滑り込む */
+  .gr-root .gs-cards > [data-rv] { transform-origin: 100% 50%; }
+  .gr-root .gs-cards > [data-rv]:not(.is-in) { translate: 84px 14px; rotate: y -14deg; scale: 0.96; }
+  /* 特集記事の帯は左右からスライドイン */
+  .gr-root .gt-bn-grid > [data-rv] { transition: opacity 0.9s ease var(--d, 0ms), translate 1.1s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), rotate 1.1s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 1.1s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .gr-root .gt-bn-grid > [data-rv]:nth-child(1):not(.is-in) { translate: -110px 0; rotate: -2.5deg; }
+  .gr-root .gt-bn-grid > [data-rv]:nth-child(3):not(.is-in) { translate: 110px 0; rotate: 2.5deg; }
+
+  /* ------------------------------------------------ 店ページの「予約の箱」の呼吸 */
+  .gr-root .sh-rsv.is-in { animation: mp-box 3.8s ease-in-out 1.2s infinite; }
+  @keyframes mp-box { 0%, 100% { box-shadow: 0 2px 12px rgba(40, 60, 45, 0.05), 0 0 0 0 rgba(74, 122, 90, 0); } 50% { box-shadow: 0 10px 30px rgba(47, 90, 61, 0.2), 0 0 0 5px rgba(74, 122, 90, 0.13); } }
+
+  /* ------------------------------------------------ 節の境目の若葉のつる(線画が描かれていく) */
+  .mp-vine-host { position: relative; }
+  .mp-vine { position: absolute; left: 0; right: 0; top: -9px; height: 30px; z-index: 0; pointer-events: none; opacity: 0.85; }
+  .mp-vine--up { top: -34px; }
+  .mp-vine svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .mp-vine .v { fill: none; stroke: #5f9a72; stroke-width: 1.7; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 2.6s cubic-bezier(0.55, 0, 0.2, 1); }
+  .mp-vine.mp-in .v { stroke-dashoffset: 0; }
+  .mp-vine .lf { fill: #8cc09b; opacity: 0; transform-box: fill-box; transform-origin: 0 50%; scale: 0; transition: scale 0.7s cubic-bezier(0.3, 1.7, 0.5, 1) calc(var(--x, 0) * 2.3s + 0.15s), opacity 0.4s ease calc(var(--x, 0) * 2.3s + 0.15s); }
+  .mp-vine g:nth-of-type(2n) .lf { fill: #b4d4a2; }
+  .mp-vine.mp-in .lf { scale: 1; opacity: 0.92; }
+
+  /* ------------------------------------------------ 触ったとき: 傾き・吸い寄せ・波紋 */
+  .gr-root [data-mp-tilt][data-mp-tilt] { transform: perspective(900px) rotateX(var(--mp-rx, 0deg)) rotateY(var(--mp-ry, 0deg)) translateY(-5px); transition: transform 0.14s linear, box-shadow 0.35s; box-shadow: var(--gr-sh2); }
+  .gr-root [data-mp-mag] { transition: translate 0.5s cubic-bezier(0.3, 1.5, 0.5, 1), transform 0.14s cubic-bezier(0.3, 1.6, 0.5, 1), filter 0.2s, box-shadow 0.2s, background-color 0.25s, color 0.25s, border-color 0.25s; }
+  .mp-ring { position: fixed; z-index: 9999; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; border: 1.5px solid rgba(74, 122, 90, 0.8); background: radial-gradient(circle, rgba(126, 192, 144, 0.4), rgba(126, 192, 144, 0) 72%); pointer-events: none; animation: mp-ring 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
+  @keyframes mp-ring { from { transform: scale(0.6); opacity: 1; } to { transform: scale(10); opacity: 0; } }
+
+  /* スマホ・狭い画面では軽くする */
+  @media (max-width: 700px) {
+    .mp-rays i:nth-child(3) { display: none; }
+    .mp-bokeh i { filter: none; }
+    .gr-root .gt-bn-grid > [data-rv]:nth-child(1):not(.is-in) { translate: -46px 0; }
+    .gr-root .gt-bn-grid > [data-rv]:nth-child(3):not(.is-in) { translate: 46px 0; }
+    .gr-root .gs-cards > [data-rv]:not(.is-in) { translate: 40px 10px; rotate: none; }
+    mp-ch { transition-duration: 0.5s, 0.7s, 0.7s, 0.5s; }
+    .mp-vine { top: -7px; height: 24px; }
+  }
+}
