@@ -1,6 +1,6 @@
-import TopPage from "@/components/portal/bcproto/green/top/TopPage";
+import GreenTop from "@/components/portal/bcproto/green/top/GreenTop";
 
-// 最初のページ(見本 mock-top の完全再現)。共通の枠・ヘッダー・フッターは layout.tsx。
+// 最初のページ(本番 /bodycare と同じ部品。実データ)。共通の枠・ヘッダー・フッターは layout.tsx。
 export default function Page() {
-  return <TopPage />;
+  return <GreenTop />;
 }

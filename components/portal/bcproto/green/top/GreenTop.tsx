@@ -1,56 +1,65 @@
-import Link from "next/link";
-import ShopCard from "../common/ShopCard";
-import { SEARCH_HREF, searchHref } from "../common/site";
+import { PREFECTURES } from "@/lib/areas/prefectures";
+import { getGeneratedPlaces } from "@/lib/places/newVerticals";
+import { pickShops } from "@/lib/portal/vert/korogashi/data";
 import { greenFacets, loadGreenShops, pickGreenShops } from "@/lib/portal/vert/bodygreen/shops";
+import type { GreenShop } from "@/lib/portal/vert/bodygreen/types";
+import { IMG, searchHref } from "../common/site";
+import TopPage, { type TopArea, type TopData } from "./TopPage";
+
+/** 見本の写真の札の 5 都府県(店がある所だけ出す)。写真は見本から切り出した業種の飾り */
+const AREA_CARDS: Array<{ slug: string; label: string; en: string; img: string }> = [
+  { slug: "tokyo", label: "東京", en: "Tokyo", img: "area1" },
+  { slug: "kanagawa", label: "神奈川", en: "Kanagawa", img: "area2" },
+  { slug: "osaka", label: "大阪", en: "Osaka", img: "area3" },
+  { slug: "kyoto", label: "京都", en: "Kyoto", img: "area4" },
+  { slug: "fukuoka", label: "福岡", en: "Fukuoka", img: "area5" },
+];
 
 /**
- * 【W0 の仮のページ。W1(最初のページ)が、見本 mock-top の再現(TopPage.tsx を本番のデータで)に置き換える】
- * app/bodycare/(top)/page.tsx が BODYCARE_DESIGN === "green" のときに出す。データの渡し方・ShopCard の使い方の見本を兼ねる。
- * 節の飛び先: ヘッダー・フッターが /bodycare#gr-kind・#gr-area・#gr-tag に飛ぶので、W1 は該当の節に id を付けること。
+ * 最初のページ(/bodycare)の「案4(緑)」。app/bodycare/(top)/page.tsx が BODYCARE_DESIGN === "green" のときに出す。
+ * 店・件数は本番のデータ(loadGreenShops)から数える。星・点数・口コミ・料金・順位は出さない(データに無い)。
+ * 節の飛び先: ヘッダー・フッターが /bodycare#gr-kind・#gr-area・#gr-tag に飛ぶ(各節に id を付けてある)。
  */
 export default async function GreenTop() {
-  const shops = await loadGreenShops();
+  const [shops, places] = await Promise.all([loadGreenShops(), getGeneratedPlaces("bodycare")]);
   const facets = greenFacets(shops);
-  // 写真つき 3 店 + 写真なし 1 店(bo0013)で、ShopCard の 2 つの見え方を確かめる
-  const picks = pickGreenShops(shops, ["bo0030", "bo0003", "bo0044", "bo0013"]);
-  return (
-    <div data-gr-page="top" style={{ maxWidth: 1180, margin: "0 auto", padding: "calc(var(--gr-hh) + 28px) 16px 24px" }}>
-      <h1 style={{ fontFamily: "var(--gr-ff-min)", fontSize: 30, margin: "0 0 12px" }}>ボディケアの店を探す(仮のページ)</h1>
-      <p>掲載 {facets.total} 件・{facets.prefs.length} 都道府県。</p>
-      <p id="gr-kind">
-        種類:
-        {facets.kinds.map((k) => (
-          <Link key={k.slug} href={searchHref({ kind: k.slug })} style={{ marginLeft: 12 }}>
-            {k.name}({k.count})
-          </Link>
-        ))}
-      </p>
-      <p id="gr-area">
-        都道府県:
-        {facets.prefs.slice(0, 5).map((p) => (
-          <Link key={p.slug} href={searchHref({ pref: p.slug })} style={{ marginLeft: 12 }}>
-            {p.short}({p.count})
-          </Link>
-        ))}
-      </p>
-      <p id="gr-tag">
-        こだわり:
-        {facets.tags.map((t) => (
-          <Link key={t.name} href={searchHref({ tag: t.name })} style={{ marginLeft: 12 }}>
-            {t.name}({t.count})
-          </Link>
-        ))}
-      </p>
-      <ul style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", gap: 16, margin: "24px 0" }}>
-        {picks.map((s, i) => (
-          <li key={s.id}>
-            <ShopCard shop={s} eager={i === 0} />
-          </li>
-        ))}
-      </ul>
-      <p>
-        <Link href={SEARCH_HREF}>すべての店を見る</Link>
-      </p>
-    </div>
-  );
+
+  // 掲載中の店 = 下の段の店(SHOP_PICKS。写真は分類済みの 1 枚)の先頭 5 店。並びは順位ではない
+  const picked = pickShops(places).slice(0, 5);
+  const picks: GreenShop[] = pickGreenShops(
+    shops,
+    picked.map((p) => p.id),
+  ).map((s) => {
+    const k = picked.find((p) => p.id === s.id);
+    return k ? { ...s, photo: { src: k.photo, alt: `${k.name} — ${k.what}`, w: k.width, h: k.height } } : s;
+  });
+
+  const order = new Map(PREFECTURES.map((p, i) => [p.slug, i]));
+  const byCode = <T extends { slug: string }>(a: T[]) => [...a].sort((x, y) => (order.get(x.slug) ?? 99) - (order.get(y.slug) ?? 99));
+  const prefCount = new Map(facets.prefs.map((p) => [p.slug, p]));
+
+  const areas: TopArea[] = AREA_CARDS.filter((a) => (prefCount.get(a.slug)?.count ?? 0) > 0).map((a) => ({
+    slug: a.slug,
+    label: a.label,
+    en: a.en,
+    count: prefCount.get(a.slug)?.count ?? 0,
+    img: `${IMG}/top/${a.img}.webp`,
+  }));
+  const inCards = new Set(areas.map((a) => a.slug));
+
+  const data: TopData = {
+    total: facets.total,
+    prefTotal: facets.prefs.length,
+    leadA: `${facets.kinds.map((k) => k.name).join("、")}の店を、`,
+    leadB: "エリア・種類・こだわりから探せる入口です。",
+    kinds: facets.kinds,
+    tags: facets.tags,
+    prefOptions: byCode(facets.prefs).map((p) => ({ slug: p.slug, name: p.name, count: p.count })),
+    areas,
+    morePrefs: byCode(facets.prefs)
+      .filter((p) => !inCards.has(p.slug))
+      .map((p) => ({ slug: p.slug, short: p.short, count: p.count, href: searchHref({ pref: p.slug }) })),
+    picks,
+  };
+  return <TopPage d={data} />;
 }

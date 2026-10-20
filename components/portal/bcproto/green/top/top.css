@@ -3,203 +3,229 @@
 .gt-w { width: 1366px; max-width: 100%; margin: 0 auto; position: relative; }
 .gt a { color: inherit; }
 
-/* ---------- ヒーロー(高さ 355。ヘッダーが上に重なる) ---------- */
-.gt-hero { position: relative; height: 355px; overflow: hidden; background: #f3eee4; }
+/* ---------- ヒーロー(見本は高さ 355。ヘッダーが上に重なる)。中身は流れの組み(絶対配置は手書きの添え書きと丸い札だけ) ---------- */
+.gt { --gt-pl: 106px; --gt-sw: 957px; }
+.gt-hero { position: relative; min-height: 355px; overflow: hidden; background: #f3eee4; }
 .gt-hero-bg { position: absolute; inset: 0; overflow: hidden; }
 .gt-hero-bg img { position: absolute; left: 50%; top: 0; translate: -50% 0; width: max(100%, 1448px); height: 100%; object-fit: cover; object-position: 50% 0; max-width: none; transform-origin: 62% 42%; }
-.gt-hero-in { position: absolute; left: 50%; top: 0; width: 1448px; height: 355px; margin-left: -724px; }
-.gt-h1 { position: absolute; left: 106px; top: 77px; margin: 0; font-weight: 600; font-size: 47px; line-height: 60px; letter-spacing: 0em; color: #1f2320; white-space: nowrap; text-shadow: 0 0 18px rgba(255, 255, 255, 0.5); }
-.gt-lead { position: absolute; left: 108px; top: 201px; margin: 0; font-size: 14.2px; line-height: 22px; letter-spacing: 0.1em; color: #3c4340; white-space: nowrap; }
-.gt-search { position: absolute; left: 103px; top: 257px; width: 957px; height: 50px; padding: 4px; display: flex; gap: 6px; border-radius: 20px; background: rgba(255, 255, 255, 0.62); box-shadow: 0 3px 16px rgba(70, 58, 40, 0.16), 0 0 0 1px rgba(255, 255, 255, 0.7) inset; margin: 0; }
-.gt-area { flex: none; width: 254px; height: 42px; display: flex; align-items: center; gap: 14px; padding: 0 18px 0 22px; border-radius: 15px; background: #fff; border: 1px solid #e8e6de; font-size: 13px; font-weight: 500; color: #1d2b45; }
-.gt-area span { flex: 1; letter-spacing: 0.04em; }
+.gt-hero-in { position: relative; width: 1448px; max-width: 100%; margin: 0 auto; min-height: 355px; padding: 74px 0 12px var(--gt-pl); display: flex; flex-direction: column; align-items: flex-start; }
+.gt-h1 { margin: 0; font-weight: 600; font-size: 47px; line-height: 60px; letter-spacing: 0em; color: #1f2320; white-space: nowrap; text-shadow: 0 0 18px rgba(255, 255, 255, 0.5); }
+.gt-lead span { display: block; }
+.gt-lead { margin: 7px 0 0 2px; max-width: 600px; font-size: 14.2px; line-height: 22px; letter-spacing: 0.1em; color: #3c4340; text-wrap: pretty; word-break: auto-phrase; }
+.gt-search { position: relative; width: min(var(--gt-sw), calc(100% - var(--gt-pl) - 270px)); min-width: 560px; height: 50px; margin: 12px 0 0 -3px; padding: 4px; display: flex; gap: 6px; border-radius: 20px; background: rgba(255, 255, 255, 0.62); box-shadow: 0 3px 16px rgba(70, 58, 40, 0.16), 0 0 0 1px rgba(255, 255, 255, 0.7) inset; flex: none; }
+.gt-area { position: relative; flex: none; width: 254px; height: 42px; display: flex; align-items: center; gap: 14px; padding: 0 18px 0 22px; border-radius: 15px; background: #fff; border: 1px solid #e8e6de; font-size: 13px; font-weight: 500; color: #1d2b45; cursor: pointer; }
+.gt-area svg { flex: none; }
+.gt-area select { flex: 1; min-width: 0; height: 100%; appearance: none; -webkit-appearance: none; border: 0; outline: 0; background: transparent; font: inherit; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; color: #1d2b45; cursor: pointer; padding: 0; }
+.gt-area:has(select:focus-visible) { outline: 2px solid var(--gr-g); outline-offset: 2px; }
 .gt-input { flex: 1; height: 42px; display: flex; align-items: center; gap: 14px; padding: 0 2px 0 12px; border-radius: 15px; background: #fff; border: 1px solid #e8e6de; min-width: 0; }
+.gt-input svg { flex: none; }
 .gt-input input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 12.8px; color: var(--gr-ink); letter-spacing: 0.04em; height: 100%; }
 .gt-input input::placeholder { color: #9a9d9a; opacity: 1; }
 .gt-go { flex: none; width: 176px; height: 38px; border: 0; display: inline-flex; align-items: center; justify-content: center; gap: 24px; border-radius: 13px; background: linear-gradient(95deg, #3f6648 0%, #2c5439 100%); color: #fff; font-size: 12.4px; font-weight: 500; letter-spacing: 0.1em; cursor: pointer; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.55), 0 3px 8px rgba(30, 60, 40, 0.22); }
-.gt-kw { position: absolute; left: 109px; top: 318px; height: 25px; width: 1000px; display: flex; align-items: center; margin: 0; }
-.gt-kw b { position: absolute; left: 0; top: 4px; font-size: 10.6px; font-weight: 700; color: #2e3330; white-space: nowrap; letter-spacing: 0.02em; }
-.gt-kw ul { position: absolute; left: 99px; top: 0; display: flex; gap: 7px; }
-.gt-kw .gr-chip { height: 25px; font-size: 11.2px; font-weight: 500; letter-spacing: 0.02em; background: rgba(255, 255, 255, 0.96); border-color: rgba(60, 50, 30, 0.07); box-shadow: 0 1px 5px rgba(70, 50, 30, 0.12); white-space: nowrap; }
+.gt-kw { width: min(var(--gt-sw), calc(100% - var(--gt-pl) - 270px)); margin: 11px 0 0 3px; display: flex; align-items: flex-start; gap: 14px; flex: none; }
+.gt-kw b { flex: none; margin-top: 5px; font-size: 10.6px; font-weight: 700; color: #2e3330; white-space: nowrap; letter-spacing: 0.02em; }
+.gt-kw ul { display: flex; flex-wrap: wrap; gap: 7px; }
+.gt-kw .gr-chip { height: 25px; padding: 0 15px; font-size: 11.2px; font-weight: 500; letter-spacing: 0.02em; background: rgba(255, 255, 255, 0.96); border-color: rgba(60, 50, 30, 0.07); box-shadow: 0 1px 5px rgba(70, 50, 30, 0.12); white-space: nowrap; }
 .gt-kw .gr-chip:hover { background: var(--gr-g); color: #fff; border-color: var(--gr-g); }
-.gt-hand { position: absolute; left: 1250px; top: 70px; width: 156px; rotate: -12deg; transform-origin: 50% 50%; font-size: 24px; line-height: 35px; font-weight: 600; letter-spacing: 0.04em; color: #26292a; pointer-events: none; }
+.gt-hand { position: absolute; right: 34px; top: 70px; width: 156px; rotate: -12deg; transform-origin: 50% 50%; font-size: 24px; line-height: 35px; font-weight: 600; letter-spacing: 0.04em; color: #26292a; pointer-events: none; }
 .gt-hand .gr-wl:nth-child(2) { margin-left: -4px; }
 .gt-hand .gr-wl:nth-child(3) { margin-left: 18px; }
-.gt-badge { position: absolute; left: 1214px; top: 214px; width: 194px; height: 142px; }
+.gt-badge { position: absolute; right: 40px; bottom: -1px; width: 194px; height: 142px; }
 .gt-badge img { width: 194px; height: 142px; max-width: none; }
 .gt-badge p { position: absolute; left: 40px; top: 36px; width: 125px; margin: 0; text-align: center; font-size: 13.2px; line-height: 19.2px; letter-spacing: 0.05em; font-weight: 600; color: #3b3a2c; }
 
 /* ---------- 共通の節の見出し ---------- */
 .gt h2 { margin: 0; font-weight: 700; color: #232825; }
 
-/* ---------- 施術の種類から探す(y 355〜508) ---------- */
-.gt-types { height: 153px; display: flex; gap: 11px; padding-top: 14px; }
+/* ---------- 施術の種類から探す(見本は y 355〜508) ---------- */
+.gt-types { display: flex; gap: 11px; padding: 14px 0 10px; scroll-margin-top: calc(var(--gr-hh) + 8px); }
 .gt-types-h { position: relative; width: 230px; flex: none; }
 .gt-types-h h2 { font-size: 20.4px; letter-spacing: 0.07em; margin-top: 5px; line-height: 28px; margin-left: 3px; padding-left: 14px; }
 .gt-types-h h2::before { top: 1px; bottom: 1px; }
 .gt-types-h p { margin: 8px 0 0 19px; font-size: 12px; line-height: 17.5px; color: #66696a; letter-spacing: 0.06em; }
 .gt-types-go { position: absolute; left: 186px; top: 87px; width: 32px; height: 32px; box-shadow: 0 1px 5px rgba(40, 60, 45, 0.1); }
-.gt-types-grid { display: grid; grid-template-columns: 207px 209px 215px 222px 225px; gap: 11px; align-items: start; }
-.gt-type { display: block; height: 129px; border-radius: 8px; background: #fff; box-shadow: 0 1px 7px rgba(40, 50, 40, 0.1); overflow: hidden; }
-.gt-type-ph { display: block; height: 76px; }
+.gt-types-grid { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(var(--n, 5), minmax(0, 1fr)); gap: 11px; align-items: stretch; }
+.gt-types-grid > li { min-width: 0; }
+.gt-type { display: flex; flex-direction: column; height: 100%; border-radius: 8px; background: #fff; box-shadow: 0 1px 7px rgba(40, 50, 40, 0.1); overflow: hidden; }
+.gt-type-ph { display: block; height: 76px; flex: none; }
 .gt-type-ph img { width: 100%; height: 100%; object-fit: cover; }
-.gt-type-b { display: flex; align-items: center; justify-content: space-between; height: 53px; padding: 0 11px 0 14px; }
-.gt-type-t b { display: block; font-size: 13.4px; font-weight: 700; letter-spacing: 0.04em; line-height: 17px; color: #1f2421; }
+.gt-type-b { display: flex; align-items: center; justify-content: space-between; gap: 6px; flex: 1; min-height: 53px; padding: 6px 11px 6px 14px; }
+.gt-type-t { min-width: 0; }
+.gt-type-t b { display: block; font-size: 13.4px; font-weight: 700; letter-spacing: 0.04em; line-height: 17px; color: #1f2421; overflow-wrap: anywhere; }
 .gt-type-t small { display: block; font-size: 10.8px; color: #6e716f; letter-spacing: 0.04em; margin-top: 4px; line-height: 15px; }
 .gt-type-b .gr-arrow { width: 31px; height: 31px; flex: none; margin-right: 0; }
 
-/* ---------- お悩みから探す(y 508〜612 の淡い緑の帯) ---------- */
-.gt-worry { height: 103.5px; background: linear-gradient(90deg, #e8efe3 0%, #eef3ea 46%, #f3f7f0 100%); position: relative; }
-.gt-worry::before, .gt-worry::after { content: ""; position: absolute; left: 0; right: 0; height: 8px; pointer-events: none; }
-.gt-worry::before { top: -4px; background: linear-gradient(180deg, transparent, rgba(236, 243, 231, 0.7)); }
-.gt-worry-in { height: 100%; display: flex; align-items: flex-start; }
+/* ---------- こだわりから探す(見本は y 508〜612 の淡い緑の帯) ---------- */
+.gt-worry { min-height: 103.5px; background: #f0f5ee; position: relative; scroll-margin-top: calc(var(--gr-hh) + 8px); }
+.gt-worry-in { display: flex; align-items: center; gap: 0; padding-top: 10px; padding-bottom: 10px; min-height: 103px; }
 .gt-worry-h { width: 243px; flex: none; position: relative; }
-.gt-worry-h h2 { font-size: 21px; letter-spacing: 0.075em; line-height: 28px; margin: 20px 0 0 3px; padding-left: 15px; }
+.gt-worry-h h2 { font-size: 22px; letter-spacing: 0.065em; line-height: 28px; margin: 0 0 0 3px; padding-left: 15px; }
 .gt-worry-h p { margin: 8px 0 0 20px; font-size: 12px; line-height: 16.5px; color: #66696a; letter-spacing: 0.06em; }
-.gt-worry-row { display: flex; gap: 8.6px; margin: 11.5px 0 0 0; padding: 0; width: 884px; }
-.gt-wc { display: flex; flex-direction: column; align-items: center; height: 82px; border-radius: 50%; background: #fff; box-shadow: 0 2px 9px rgba(40, 60, 45, 0.06); padding-top: 2px; }
-.gt-wc-ic { display: block; width: 68px; height: 48px; }
-.gt-wc-ic img { width: 68px; height: 48px; max-width: none; }
-.gt-wc-l { margin-top: 7.5px; font-size: 10px; font-weight: 500; letter-spacing: 0.04em; color: #3f4441; white-space: nowrap; line-height: 14px; }
-.gt-wc:hover { box-shadow: 0 8px 18px rgba(40, 60, 45, 0.16); translate: 0 -3px; transition: box-shadow 0.3s, translate 0.3s; }
-.gt-wc:hover .gt-wc-ic img { animation: gt-redraw 0.9s cubic-bezier(0.4, 0, 0.2, 1) both; }
+.gt-worry-row { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 9px; margin: 0; padding: 0; }
+.gt-wc { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 84px; height: 82px; padding: 3px 14px 0; border-radius: 41px; background: #fff; box-shadow: 0 2px 9px rgba(40, 60, 45, 0.06); color: #5a7062; }
+.gt-wc-ic { display: block; width: 38px; height: 38px; flex: none; }
+.gt-wc-ic svg { display: block; }
+.gt-wc-l { margin-top: 4px; font-size: 10.4px; font-weight: 500; letter-spacing: 0.04em; color: #3f4441; white-space: nowrap; line-height: 14px; }
+.gt-wc-n { font-size: 9.6px; letter-spacing: 0.04em; color: #7a7f7c; line-height: 12px; white-space: nowrap; }
+.gt-wc:hover { box-shadow: 0 8px 18px rgba(40, 60, 45, 0.16); translate: 0 -3px; transition: box-shadow 0.3s, translate 0.3s; color: #2f5a3d; }
+.gt-wc:hover .gt-wc-ic svg { animation: gt-redraw 0.9s cubic-bezier(0.4, 0, 0.2, 1) both; }
 @keyframes gt-redraw { 0% { clip-path: inset(0 100% 0 0); } 100% { clip-path: inset(0 0 0 0); } }
-.gt-worry-all { margin: 31.5px 11px 0 auto; display: inline-flex; align-items: center; justify-content: space-between; gap: 8px; width: 193px; height: 42.5px; padding: 0 15px 0 21px; white-space: nowrap; border-radius: 999px; border: 1.5px solid #3b6347; background: rgba(255, 255, 255, 0.9); box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); color: #2f5a3d; font-size: 12.8px; font-weight: 700; letter-spacing: 0.05em; flex: none; }
+.gt-worry-all { margin: 0 11px 0 18px; display: inline-flex; align-items: center; justify-content: space-between; gap: 8px; width: 193px; height: 42.5px; padding: 0 15px 0 21px; white-space: nowrap; border-radius: 999px; border: 1.5px solid #3b6347; background: rgba(255, 255, 255, 0.9); box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); color: #2f5a3d; font-size: 12.8px; font-weight: 700; letter-spacing: 0.05em; flex: none; }
 .gt-worry-arrow { width: 24px; height: 24px; border: 0; background: transparent; color: #2f5a3d; }
 .gt-worry-all:hover { background: #2f5a3d; color: #fff; }
 .gt-worry-all:hover .gt-worry-arrow { background: transparent; color: #fff; }
 
-/* ---------- おすすめの整体院・サロン(y 626〜850) ---------- */
-.gt-rec { padding-top: 14px; height: 238px; }
-.gt-rec-h { display: flex; align-items: center; height: 24px; gap: 8px; margin-left: 0; position: relative; top: 0; }
-.gt-crown { flex: none; margin-top: -2px; }
-.gt-rec-h h2 { font-size: 17.4px; letter-spacing: 0.06em; line-height: 24px; white-space: nowrap; }
-.gt-rec-h span { font-size: 11px; color: #5d625f; letter-spacing: 0.05em; margin-left: 8px; margin-top: 2px; }
-.gt-rec-all { position: absolute; right: 206px; top: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 11.4px; font-weight: 700; color: #2f5a3d; letter-spacing: 0.06em; padding-bottom: 2px; border-bottom: 1.5px solid rgba(47, 90, 61, 0.7); transition: gap 0.25s; }
+/* ---------- 掲載中の店(見本は y 626〜850) ---------- */
+.gt-rec { padding-top: 14px; padding-bottom: 6px; }
+.gt-rec-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 24px; padding-right: 206px; }
+.gt-rec-h { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; }
+.gt-rec-h h2 { font-size: 18px; letter-spacing: 0.055em; line-height: 24px; white-space: nowrap; }
+.gt-rec-h span { font-size: 11px; color: #5d625f; letter-spacing: 0.05em; }
+.gt-rec-all { flex: none; display: inline-flex; align-items: center; gap: 6px; font-size: 11.4px; font-weight: 700; color: #2f5a3d; letter-spacing: 0.06em; padding-bottom: 2px; border-bottom: 1.5px solid rgba(47, 90, 61, 0.7); transition: gap 0.25s; }
 .gt-rec-all:hover { gap: 11px; }
-.gt-rec-grid { display: grid; grid-template-columns: 233px 229px 223px 221px 215px 195px; gap: 10px; margin-top: 11px; align-items: start; }
-.gt-rec-grid > div:last-child { margin-left: 15px; margin-top: -29px; }
-.gt-shop { position: relative; height: 190px; border-radius: 8px; background: #fff; box-shadow: 0 1px 8px rgba(40, 50, 40, 0.11); overflow: hidden; }
-.gt-shop-a { display: block; height: 100%; }
-.gt-shop-ph { display: block; height: 96px; }
-.gt-shop-ph img { width: 100%; height: 100%; object-fit: cover; }
-.gt-shop-b { display: block; padding: 4px 9px 0; }
-.gt-shop-n { display: block; font-size: 12.7px; font-weight: 700; letter-spacing: 0.05em; line-height: 17px; color: #22271f; white-space: nowrap; margin-top: 2px; }
-.gt-shop-st { display: flex; align-items: center; gap: 4px; margin-top: 4.5px; font-size: 9.9px; color: #70746f; letter-spacing: 0.03em; line-height: 14px; }
-.gt-shop-rt { display: flex; align-items: center; gap: 0; margin-top: 3px; height: 14px; }
-.gt-shop-rt .gr-stars { margin-right: 10px; }
-.gt-shop-rt em { font-style: normal; color: #d8283b; font-weight: 700; font-size: 12.5px; margin-right: 7px; }
-.gt-shop-rt small { font-size: 10.2px; color: #777b78; }
-.gt-shop-tags { display: flex; gap: 5px; margin-top: 5.5px; }
-.gt-shop-tags i { font-style: normal; display: inline-block; height: 21px; line-height: 21px; padding: 0 8px; border-radius: 5px; background: #f1f2f4; font-size: 10px; color: #65696a; white-space: nowrap; letter-spacing: 0.02em; }
-.gt-shop-tags i:first-child { min-width: 40px; text-align: center; }
-.gt-shop-heart { position: absolute; right: 10px; top: 5px; width: 26px; height: 26px; }
-.gt-shop-heart svg { width: 20px; height: 20px; }
-.gt-guide { height: 219px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 1px 9px rgba(40, 50, 40, 0.14); }
-.gt-guide-a { display: block; height: 100%; }
-.gt-guide-h { display: flex; align-items: center; gap: 12px; height: 44px; padding: 0 0 0 21px; background: radial-gradient(120% 140% at 80% 20%, #4b7656 0%, #3b6447 55%, #34593f 100%); color: #fff; }
+.gt-rec-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)) 195px; gap: 10px; margin-top: 11px; align-items: stretch; }
+.gt-rec-grid > div { min-width: 0; }
+.gt-rec-grid > .gt-guide-w { margin-left: 15px; margin-top: -29px; }
+.gt-guide { height: 100%; min-height: 219px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 1px 9px rgba(40, 50, 40, 0.14); }
+.gt-guide-a { display: flex; flex-direction: column; height: 100%; }
+.gt-guide-h { flex: none; display: flex; align-items: center; gap: 12px; height: 44px; padding: 0 0 0 21px; background: radial-gradient(120% 140% at 80% 20%, #4b7656 0%, #3b6447 55%, #34593f 100%); color: #fff; }
 .gt-guide-h b { font-size: 15px; font-weight: 700; letter-spacing: 0.1em; }
-.gt-guide-b { display: block; position: relative; height: 175px; }
-.gt-guide-b img { position: absolute; left: 0; top: 2px; width: 100%; height: 173px; object-fit: cover; max-width: none; }
+.gt-guide-b { display: block; position: relative; flex: 1; min-height: 175px; }
+.gt-guide-b img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; max-width: none; }
 .gt-guide-t { position: absolute; left: 12px; top: 8px; display: block; }
-.gt-guide-t small { display: block; font-size: 10.8px; color: #2c302e; letter-spacing: 0.02em; line-height: 17px; margin-top: 1px; }
-.gt-guide-t b { display: block; font-size: 14.2px; font-weight: 700; letter-spacing: 0.06em; line-height: 22px; margin-top: 2px; color: #1e2220; }
+.gt-guide-t small { display: block; font-size: 12px; color: #2a2e2c; letter-spacing: -0.04em; line-height: 17px; margin-top: 1px; }
+.gt-guide-t b { display: block; font-size: 15.4px; letter-spacing: -0.03em; font-weight: 500; line-height: 22px; margin-top: 2px; color: #1e2220; }
 .gt-guide-btn { position: absolute; left: 24px; bottom: 10px; width: 138px; height: 27px; display: inline-flex; align-items: center; justify-content: center; gap: 22px; border-radius: 999px; background: linear-gradient(95deg, #44684c, #2c5439); color: #fff; font-size: 11.3px; font-weight: 700; letter-spacing: 0.08em; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 3px 8px rgba(30, 60, 40, 0.28); transition: gap 0.3s; }
 .gt-guide:hover .gt-guide-btn { gap: 30px; }
 
-/* ---------- エリアから探す(y 866〜982) ---------- */
-.gt-area-sec { padding-top: 16px; margin-top: 0; }
+/* ---------- エリアから探す(見本は y 866〜982) ---------- */
+.gt-area-sec { padding-top: 16px; scroll-margin-top: calc(var(--gr-hh) + 8px); }
 .gt-area-h { display: flex; align-items: center; height: 24px; gap: 11px; }
-.gt-area-h h2 { font-size: 17.4px; letter-spacing: 0.06em; line-height: 24px; }
+.gt-area-h h2 { font-size: 18px; letter-spacing: -0.04em; line-height: 24px; }
 .gt-area-h span { font-size: 11px; color: #5d625f; letter-spacing: 0.05em; margin: 2px 0 0 7px; }
 .gt-area-h svg { margin: 0 0 0 3px; }
-.gt-area-grid { display: grid; grid-template-columns: 236px 240px 215px 196px 231px 196px; column-gap: 10.2px; margin-top: 6px; align-items: start; }
+.gt-area-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)) 196px; column-gap: 10.2px; row-gap: 10px; margin-top: 6px; align-items: start; }
+.gt-area-grid > div { min-width: 0; }
 .gt-ac { position: relative; display: block; height: 86px; border-radius: 8px; overflow: hidden; background: #1f3050; }
 .gt-ac-ph { display: block; height: 100%; }
 .gt-ac-ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
 .gt-ac-t { position: absolute; left: 14px; bottom: 7px; color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45); }
 .gt-ac-t b { display: block; font-size: 13.6px; font-weight: 700; letter-spacing: 0.05em; line-height: 20px; }
-.gt-ac-t small { display: block; font-size: 9.5px; letter-spacing: 0.06em; line-height: 12px; opacity: 0.92; }
+.gt-ac-t small { display: block; font-size: 9.5px; letter-spacing: 0.06em; line-height: 12px; opacity: 0.95; }
 .gt-ac-ar { position: absolute; right: 8px; bottom: 7px; width: 28px; height: 28px; border: 0; background: transparent; color: #fff; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5)); }
 .gt-ac:hover .gt-ac-ar { background: rgba(255, 255, 255, 0.22); color: #fff; }
-.gt-map { position: relative; display: block; height: 86.5px; border-radius: 8px; background: #fcfcfa; border: 1px solid #ece9df; box-shadow: 0 1px 5px rgba(40, 50, 40, 0.04); overflow: visible; }
-.gt-map-img { position: absolute; left: 77px; top: -33px; width: 114px; height: 122px; max-width: none; scale: calc(1 + var(--p, 0) * 0.08); transform-origin: 60% 60%; }
-.gt-map > svg { position: absolute; left: 15px; top: 25px; }
+.gt-map { position: relative; display: block; width: 100%; height: 86.5px; padding: 0; text-align: left; font: inherit; cursor: pointer; border-radius: 8px; background: #fcfcfa; border: 1px solid #ece9df; box-shadow: 0 1px 5px rgba(40, 50, 40, 0.04); overflow: visible; }
+.gt-map-clip { position: absolute; inset: -34px 0 0 0; overflow: hidden; border-radius: 0 8px 8px 0; pointer-events: none; }
+.gt-map-img { position: absolute; left: 77px; top: 1px; width: 114px; height: 122px; max-width: none; scale: calc(1 + var(--p, 0) * 0.08); transform-origin: 60% 60%; }
+.gt-map-pin { position: absolute; left: 15px; top: 25px; }
 .gt-map-t { position: absolute; left: 39px; top: 18px; font-size: 11px; line-height: 17px; letter-spacing: 0.04em; color: #4a4e4c; }
 .gt-map-t b { display: block; font-weight: 700; color: #2a2e2b; }
+.gt-more { grid-column: 1 / -1; padding: 14px 16px 16px; border-radius: 8px; background: #fff; border: 1px solid #e3e8e0; box-shadow: 0 2px 10px rgba(40, 60, 45, 0.07); }
+.gt-more[hidden] { display: none; }
+.gt-more-h { font-size: 12px; font-weight: 700; color: #2f5a3d; letter-spacing: 0.06em; margin-bottom: 10px; }
+.gt-more ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.gt-more-a { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 14px; border-radius: 999px; background: #f4f7f2; border: 1px solid #e1e8dd; font-size: 12px; color: #33382f; letter-spacing: 0.04em; transition: background 0.25s, color 0.25s, border-color 0.25s; }
+.gt-more-a em { font-style: normal; font-size: 10.5px; color: #6c7a70; }
+.gt-more-a:hover { background: var(--gr-g); border-color: var(--gr-g); color: #fff; }
+.gt-more-a:hover em { color: #fff; }
 
-/* ---------- 3 つの帯(y 989〜。見本はここで切れている) ---------- */
-.gt-bn-sec { margin-top: 7px; }
-.gt-bn-grid { display: grid; grid-template-columns: 443px 465px 438px; column-gap: 9.5px; }
-.gt-bn { position: relative; display: block; height: 100px; border-radius: 8px; overflow: hidden; background: #f7f4ea; }
-.gt-bn-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 0 0; max-width: none; }
-.gt-bn:hover .gt-bn-img { transform: scale(1.04); transition: transform 0.9s cubic-bezier(0.25, 0.8, 0.25, 1); }
-.gt-bn-img { transition: transform 0.9s cubic-bezier(0.25, 0.8, 0.25, 1); transform-origin: 70% 50%; }
-.gt-bn-t { position: absolute; left: 15px; top: 11px; display: block; }
+/* ---------- 特集記事の帯(見本は y 989〜。見本はここで切れている) ---------- */
+.gt-bn-sec { margin-top: 12px; padding-bottom: 8px; }
+.gt-bn-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 9.5px; }
+.gt-bn-grid > div { min-width: 0; }
+.gt-bn { position: relative; display: block; min-height: 100px; height: 100%; border-radius: 8px; overflow: hidden; background: #f7f4ea; }
+.gt-bn-img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: 100% 0; max-width: none; transition: transform 0.9s cubic-bezier(0.25, 0.8, 0.25, 1); transform-origin: 70% 50%; }
+.gt-bn--3 .gt-bn-img { object-position: 100% 0; }
+.gt-bn:hover .gt-bn-img { transform: scale(1.04); }
+.gt-bn-t { position: relative; display: block; max-width: 60%; padding: 11px 15px 13px; }
 .gt-bn-tag { display: flex; align-items: center; gap: 5px; font-size: 10.6px; font-weight: 700; letter-spacing: 0.05em; line-height: 16px; }
-.gt-bn-t b { display: block; margin-top: 3px; font-family: var(--gr-ff-min); font-size: 13.2px; font-weight: 500; letter-spacing: 0; line-height: 22px; color: #2a2e2b; white-space: nowrap; }
-.gt-bn-t small { display: block; margin-top: 5px; font-size: 10.6px; line-height: 15.5px; color: #6c706d; letter-spacing: 0.05em; white-space: nowrap; }
-.gt-bn-ar { position: absolute; right: 22px; top: 63px; width: 23px; height: 23px; border: 1.2px solid rgba(255, 255, 255, 0.85); background: rgba(255, 255, 255, 0.18); color: #fff; }
+.gt-bn-t b, .gt-bn-t small { word-break: auto-phrase; text-wrap: balance; }
+.gt-bn-t b { display: block; margin-top: 3px; font-family: var(--gr-ff-min); font-size: 13.2px; font-weight: 500; letter-spacing: 0; line-height: 21px; color: #2a2e2b; overflow-wrap: anywhere; }
+.gt-bn-t small { display: block; margin-top: 4px; font-size: 10.6px; line-height: 15.5px; color: #5e625f; letter-spacing: 0.04em; }
+.gt-bn::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(252, 250, 242, 0.88) 0%, rgba(252, 250, 242, 0.7) 42%, rgba(252, 250, 242, 0) 68%); }
+.gt-bn-t, .gt-bn-ar { z-index: 2; }
+.gt-bn--1 .gt-bn-t { max-width: 58%; }
+.gt-bn--2 .gt-bn-t, .gt-bn--3 .gt-bn-t { max-width: 50%; }
+.gt-bn-ar { position: absolute; right: 22px; bottom: 12px; width: 23px; height: 23px; border: 1.2px solid rgba(255, 255, 255, 0.85); background: rgba(255, 255, 255, 0.18); color: #fff; }
+.gt { padding-bottom: 20px; }
 
 /* 見本の下半分は左に 1.5px ずれている(1366 幅の中央寄せとの差) */
-@media (min-width: 1081px) { .gt-rec, .gt-area-sec, .gt-bn-sec { left: 1.5px; } }
+@media (min-width: 1400px) { .gt-rec, .gt-area-sec, .gt-bn-sec { left: 1.5px; } }
+@media (min-width: 1081px) and (max-width: 1399px) { .gt-w { padding-left: 20px; padding-right: 20px; } .gt-worry-in { padding-left: 20px; padding-right: 20px; } }
+
+/* ---------- 狭い PC(1081〜1300)はヒーローの左余白をつめる ---------- */
+@media (min-width: 1081px) and (max-width: 1300px) {
+  .gt { --gt-pl: 5vw; }
+  .gt-types-h { width: 200px; }
+  .gt-types-h h2, .gt-worry-h h2 { font-size: 17.5px; letter-spacing: 0.03em; white-space: nowrap; }
+  .gt-types-h p { margin-left: 15px; }
+  .gt-types-go { left: 158px; top: 96px; }
+  .gt-worry-h { width: 205px; }
+  .gt-guide-h { padding-left: 14px; gap: 8px; }
+  .gt-guide-h b { font-size: 13px; letter-spacing: 0.03em; white-space: nowrap; }
+  .gt-worry-all { width: 168px; margin-left: 10px; }
+  .gt-rec-top { padding-right: 0; }
+  .gt-rec-grid { grid-template-columns: repeat(5, minmax(0, 1fr)) 160px; }
+  .gt-rec-grid > .gt-guide-w { margin-left: 6px; margin-top: 0; }
+  .gt-area-grid { grid-template-columns: repeat(5, minmax(0, 1fr)) 150px; }
+}
 
 /* ---------- スマホ・狭い画面 ---------- */
 @media (max-width: 1080px) {
   .gt-w { width: auto; padding-left: 16px; padding-right: 16px; }
-  .gt-hero { height: auto; background: #fcfcf9; padding-bottom: 14px; overflow: visible; }
+  .gt-hero { background: #fcfcf9; padding-bottom: 14px; overflow: visible; min-height: 0; }
   .gt-hero-bg { bottom: auto; height: 372px; }
   .gt-hero-bg img { object-position: 76% 0; width: 100%; min-width: 0; height: 372px; }
   .gt-hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(252, 252, 249, 0.9) 0%, rgba(252, 252, 249, 0.6) 40%, rgba(252, 252, 249, 0) 62%, rgba(252, 252, 249, 0.85) 90%, #fcfcf9 100%); }
-  .gt-hero-in { position: relative; left: 0; top: 0; margin-left: 0; width: 100%; height: auto; padding: 78px 16px 0; }
-  .gt-h1 { position: relative; left: 0; top: 0; font-size: 27px; line-height: 38px; }
-  .gt-lead { position: relative; left: 0; top: 0; margin-top: 10px; font-size: 12.2px; line-height: 19px; letter-spacing: 0.04em; white-space: normal; max-width: 340px; }
-  .gt-search { position: relative; left: 0; top: 0; margin-top: 128px; width: 100%; height: auto; flex-direction: column; padding: 6px; gap: 6px; border-radius: 18px; z-index: 2; }
+  .gt-hero-in { width: 100%; min-height: 0; padding: 78px 16px 0; display: block; }
+  .gt-h1 { font-size: 27px; line-height: 38px; }
+  .gt-lead { margin: 10px 0 0; font-size: 12.2px; line-height: 19px; letter-spacing: 0.04em; max-width: 340px; width: fit-content; padding: 5px 9px; margin-left: -9px; border-radius: 10px; background: rgba(255, 255, 255, 0.72); }
+  .gt-search { margin: 110px 0 0; width: 100%; min-width: 0; height: auto; flex-direction: column; padding: 6px; gap: 6px; border-radius: 18px; z-index: 2; }
   .gt-area { width: 100%; height: 42px; }
   .gt-input { height: 44px; padding-left: 14px; gap: 8px; }
   .gt-input input { font-size: 12px; letter-spacing: 0; }
   .gt-go { width: 104px; gap: 8px; height: 36px; }
-  .gt-kw { position: relative; left: 0; top: 0; margin: 12px -16px 0; width: auto; height: auto; display: block; }
-  .gt-kw b { position: static; display: block; padding: 0 16px; margin-bottom: 7px; }
-  .gt-kw ul { position: static; width: 100%; padding: 0 16px 4px; overflow-x: auto; scrollbar-width: none; }
+  .gt-kw { display: block; width: auto; margin: 12px -16px 0; }
+  .gt-kw b { display: block; padding: 0 16px; margin: 0 0 7px; }
+  .gt-kw ul { flex-wrap: nowrap; padding: 0 16px 4px; overflow-x: auto; scrollbar-width: none; }
   .gt-kw ul::-webkit-scrollbar { display: none; }
   .gt-kw li { flex: none; }
   .gt-hand { display: none; }
-  .gt-badge { left: auto; right: 6px; top: 236px; width: 112px; height: 82px; z-index: 1; }
+  .gt-badge { right: 6px; bottom: auto; top: 236px; width: 112px; height: 82px; z-index: 1; }
   .gt-badge img { width: 112px; height: 82px; }
-  .gt-badge p { left: 23px; top: 21px; width: 70px; font-size: 7.4px; line-height: 11.2px; }
-  .gt-types { height: auto; display: block; padding-top: 22px; }
+  .gt-badge p { left: 21px; top: 19px; width: 74px; font-size: 8.4px; line-height: 11.6px; }
+  .gt-types { display: block; padding-top: 22px; }
   .gt-types-h { width: auto; }
   .gt-types-h h2 { font-size: 19px; }
   .gt-types-go { display: none; }
   .gt-types-grid { margin: 14px -16px 0; padding: 4px 16px 14px; display: flex; gap: 11px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 16px; scrollbar-width: none; }
-  .gt-types-grid > div { flex: none; width: 214px; scroll-snap-align: start; }
-  .gt-worry { height: auto; padding: 22px 0 24px; }
-  .gt-worry-in { display: block; height: auto; }
+  .gt-types-grid > li { flex: none; width: 214px; scroll-snap-align: start; }
+  .gt-worry { padding: 22px 0 24px; }
+  .gt-worry-in { display: block; padding-top: 0; padding-bottom: 0; min-height: 0; }
   .gt-worry-h { width: auto; }
-  .gt-worry-h h2 { margin-top: 0; font-size: 19px; }
-  .gt-worry-row { width: auto; margin: 14px -16px 0; padding: 4px 16px 10px; overflow-x: auto; scrollbar-width: none; gap: 9px; }
+  .gt-worry-h h2 { font-size: 19px; }
+  .gt-worry-row { margin: 14px -16px 0; padding: 4px 16px 10px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
   .gt-worry-row li { flex: none; }
   .gt-worry-all { margin: 10px auto 0; display: flex; }
-  .gt-rec { height: auto; padding-top: 26px; }
-  .gt-rec-h { flex-wrap: wrap; height: auto; row-gap: 2px; }
-  .gt-rec-h span { margin: 0 0 0 34px; width: 100%; }
-  .gt-rec-all { position: static; margin: 8px 0 0 auto; display: flex; width: max-content; }
-  .gt-rec-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; margin: 10px -16px 0; padding: 4px 16px 14px; gap: 11px; scroll-snap-type: x mandatory; scroll-padding-left: 16px; scrollbar-width: none; }
+  .gt-rec { padding-top: 26px; }
+  .gt-rec-top { display: block; padding-right: 0; }
+  .gt-rec-h { display: block; }
+  .gt-rec-h span { display: block; margin-top: 2px; }
+  .gt-rec-all { margin: 8px 0 0 auto; display: flex; width: max-content; }
+  .gt-rec-grid { display: flex; overflow-x: auto; margin: 10px -16px 0; padding: 4px 16px 14px; gap: 11px; scroll-snap-type: x mandatory; scroll-padding-left: 16px; scrollbar-width: none; }
   .gt-rec-grid > div { flex: none; width: 240px; scroll-snap-align: start; }
-  .gt-rec-grid > div:last-child { margin: 0; width: 190px; }
+  .gt-rec-grid > .gt-guide-w { margin: 0; width: 190px; }
   .gt-area-sec { padding-top: 26px; }
-  .gt-area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+  .gt-area-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
   .gt-area-h { flex-wrap: wrap; height: auto; row-gap: 2px; }
   .gt-area-h span { width: 100%; margin: 0 0 0 27px; }
   .gt-ac { height: 100px; }
   .gt-map { height: 100px; }
-  .gt-map-img { left: auto; right: 4px; top: -8px; }
+  .gt-map-img { left: auto; right: 4px; }
   .gt-bn-sec { margin-top: 14px; }
   .gt-bn-grid { grid-template-columns: 1fr; row-gap: 10px; }
-  .gt-bn { height: 104px; }
-  .gt-bn-img { object-position: 100% 0; }
-  .gt-bn--3 .gt-bn-img { object-position: 0 0; }
+  .gt-bn { min-height: 104px; }
+  .gt-bn-t { max-width: 54%; }
 }
 @media (max-width: 420px) {
   .gt-h1 { font-size: 25.5px; }
@@ -207,41 +233,31 @@
 
 /* ---------- 端の若葉(この見本の位置の切り出し。ゆっくりそよぐ+スクロールでずれる)。共通の端の若葉はこのページでは隠す ---------- */
 .gr-root:has([data-gr-page="top"]) .gr-edge { display: none; }
+.gt-sprigs { position: relative; height: 0; pointer-events: none; } /* z-index を付けない(付けると重ね合わせの枠ができ、若葉の multiply が背景に効かず白い四角が出る) */
 .gt-sprig { position: absolute; z-index: 3; pointer-events: none; mix-blend-mode: multiply; }
 .gt-sprig img { display: block; max-width: none; transform-origin: 0% 50%; animation: gt-sprig 7s ease-in-out infinite alternate; }
-.gt-sprig--l { left: calc(50% - 724px); top: 447px; }
-.gt-sprig--r { left: calc(50% - 724px + 1376px); top: 358px; }
+.gt-sprig--l { left: calc(50% - 724px); top: 92px; }
+.gt-sprig--r { left: calc(50% - 724px + 1376px); top: 3px; }
 .gt-sprig--r img { transform-origin: 100% 30%; animation-duration: 9s; animation-delay: -3s; }
 @keyframes gt-sprig { from { rotate: -1.6deg; } to { rotate: 2.2deg; } }
-@media (max-width: 1080px) { .gt-sprig { opacity: 0.4; } .gt-sprig--l { left: -30px; } .gt-sprig--r { left: auto; right: -18px; } }
+@media (max-width: 1080px) { .gt-sprig { opacity: 0.4; } .gt-sprig--l { left: -30px; top: 112px; } .gt-sprig--r { left: auto; right: -18px; visibility: hidden; } }
 @media (prefers-reduced-motion: reduce) { .gt-sprig img { animation: none; } }
 
 /* ---------- 見比べ後の補正(見本との差を詰める) ---------- */
 .gr-root:has([data-gr-page="top"]) { --gr-paper: #fdfdfd; background: #fdfdfd; }
 .gt { --gt-ls1: -0.03em; --gt-ls2: -0.06em; }
 .gt .gt-h1, .gt h2, .gt .gt-bn-t b { font-family: var(--gt-ser), var(--gr-ff-min); }
-.gt-worry { background: #f0f5ee; }
-.gt-worry::before { display: none; }
-@media (max-width: 1080px) { .gt-sprig--r { visibility: hidden; } }
 @media (min-width: 1081px) {
   .gt { --gt-ls1: -0.069em; --gt-ls2: -0.131em; }
-  .gt .gt-h1 { font-size: 50px; top: 74px; }
+  .gt .gt-h1 { font-size: 50px; }
   /* ヘッダー: 見本は左端の若葉が見え、白い面は右の「お気に入り」の手前でほぼ切れる */
   .gr-root:has([data-gr-page="top"]) .gr-head.gr-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.96) 96px, rgba(255, 255, 255, 0.96) 61.5%, rgba(255, 255, 255, 0) 63.5%); }
-  .gr-root:has([data-gr-page="top"]) .gr-head:not(.is-scrolled) .gr-head-r .gr-hr-i:nth-child(2) { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
   .gr-root:has([data-gr-page="top"]) .gr-head:not(.is-scrolled) .gr-area-btn { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.92), 0 3px 10px rgba(30, 50, 35, 0.2); }
   /* 手書き・丸い札の文字は見本のほうが濃くて太い */
-  .gt-hand { left: 1258px; top: 72px; font-size: 27px; letter-spacing: -0.2em; line-height: 36px; rotate: -15deg; color: #191b1c; -webkit-text-stroke: 0.3px #191b1c; }
+  .gt-hand { right: auto; left: auto; margin-left: 0; top: 72px; right: 34px; font-size: 27px; letter-spacing: -0.2em; line-height: 36px; rotate: -15deg; color: #191b1c; -webkit-text-stroke: 0.3px #191b1c; }
   .gt-hand .gr-wl:nth-child(2) { margin-left: -2px; }
   .gt-hand .gr-wl:nth-child(3) { margin-left: 12px; }
   .gt-badge p { color: #2b2a22; -webkit-text-stroke: 0.4px #2b2a22; }
   /* 節の見出し(見本の書体・字の大きさに合わせる) */
   .gt-types-h h2 { letter-spacing: 0.052em; }
-  .gt-worry-h h2 { font-size: 22px; letter-spacing: 0.065em; }
-  .gt-rec-h { gap: 6px; }
-  .gt-rec-h h2 { font-size: 18px; letter-spacing: 0.055em; }
-  .gt-area-h h2 { font-size: 18px; letter-spacing: -0.04em; }
-  .gt-shop-n { margin-top: 1px; }
-  .gt-guide-t small { font-size: 12px; letter-spacing: -0.055em; color: #2a2e2c; font-weight: 400; }
-  .gt-guide-t b { font-size: 15.4px; letter-spacing: -0.07em; font-weight: 500; }
 }

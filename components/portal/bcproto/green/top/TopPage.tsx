@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { Noto_Serif_JP } from "next/font/google";
-import { Reveal, MaskLines, Write, Heart, Stars } from "@/components/portal/bcproto/green/common/Motion";
-import { IMG, SEARCH_HREF, SHOP_HREF, GUIDE_HREF, SCENE_HREF } from "@/components/portal/bcproto/green/common/site";
+import { Reveal, MaskLines, Write } from "@/components/portal/bcproto/green/common/Motion";
+import ShopCard from "@/components/portal/bcproto/green/common/ShopCard";
+import { IMG, SEARCH_HREF, SPECIAL_HREF, searchHref } from "@/components/portal/bcproto/green/common/site";
+import type { GreenFacets, GreenShop } from "@/lib/portal/vert/bodygreen/types";
+import { TagIcon } from "./icons";
+import { SPECIAL_BANDS, bandTitle } from "./bands";
+import MorePrefs, { type MorePref } from "./MorePrefs";
 import "./top.css";
 
 // 見本の見出しは標準的な明朝(Noto Serif JP の中太)に近い。この最初のページの大見出しと節の見出しだけに使う。
@@ -20,46 +25,57 @@ const Pin = ({ w = 14, h = 18, c = "currentColor" }: { w?: number; h?: number; c
     <circle cx="12" cy="10.6" r="3.7" fill="#fff" />
   </svg>
 );
-const Shield = ({ c }: { c: string }) => (
-  <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
-    <path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.300 8-5 8-10V5l-8-3Z" fill={c} />
-    <path d="m8.500 11.800 2.600 2.600 4.600-5" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
+const BandIcon = ({ kind, c }: { kind: "shield" | "calendar" | "book"; c: string }) => {
+  if (kind === "calendar")
+    return (
+      <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3.500" y="5" width="17" height="15" rx="2.500" />
+        <path d="M3.500 10h17M8 3v4M16 3v4" />
+      </svg>
+    );
+  if (kind === "book")
+    return (
+      <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 6C9.500 4.500 6 4.200 3 5v13c3-.8 6.500-.5 9 1 2.500-1.500 6-1.800 9-1V5c-3-.8-6.500-.5-9 1ZM12 6v13" />
+      </svg>
+    );
+  return (
+    <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
+      <path d="M12 2 4 5v6c0 5 3.400 8.700 8 10 4.600-1.300 8-5 8-10V5l-8-3Z" fill={c} />
+      <path d="m8.500 11.800 2.600 2.600 4.600-5" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+};
 
-const KEYWORDS: Array<[string, number]> = [["肩こり", 63], ["腰痛", 57], ["マッサージ", 79], ["骨盤矯正", 75], ["猫背矯正", 74], ["産後ケア", 75], ["鍼灸", 56], ["ヘッドスパ", 87], ["もみほぐし", 87], ["ストレッチ", 80], ["姿勢改善", 79]];
+/** 施術の種類の札の写真(見本から切り出した業種の飾り)。種類の slug → type1〜5 */
+const KIND_IMG: Record<string, string> = { seitai: "type1", sekkotsu: "type2", shinkyu: "type3", massage: "type4", relaxation: "type5" };
 
-const TYPES = [
-  { n: "整体院", s: "からだのバランスを整える" },
-  { n: "接骨院・整骨院", s: "痛みの改善・ケガの施術" },
-  { n: "鍼灸院", s: "自然治癒力を高める" },
-  { n: "マッサージ", s: "疲れを癒すリラクゼーション" },
-  { n: "リラクゼーション", s: "心とからだをリフレッシュ" },
-];
+export type TopArea = { slug: string; label: string; en: string; count: number; img: string };
+export type TopPref = { slug: string; name: string; count: number };
 
-const WORRIES: Array<[string, number]> = [["肩こり", 80], ["腰痛", 79], ["頭痛", 79], ["姿勢のゆがみ", 79], ["骨盤の悩み", 79], ["眼の疲れ", 79], ["冷え・むくみ", 79], ["ストレス", 78], ["産後ケア", 79], ["スポーツの不調", 98]];
+export type TopData = {
+  total: number;
+  prefTotal: number;
+  /** ヒーローのリード(2 行。1 行目は種類名を実データから並べる) */
+  leadA: string;
+  leadB: string;
+  kinds: GreenFacets["kinds"];
+  tags: GreenFacets["tags"];
+  /** 検索窓の都道府県の選択肢(0 件の県は無い・都道府県コード順) */
+  prefOptions: TopPref[];
+  /** 写真の札のエリア(店がある所だけ) */
+  areas: TopArea[];
+  /** 写真の札に無い都道府県(0 件は無い・都道府県コード順) */
+  morePrefs: MorePref[];
+  /** 掲載中の店(5 店。並びは順位ではない) */
+  picks: GreenShop[];
+};
 
-const SHOPS = [
-  { n: "マチノワ整体院 渋谷本院", st: "徒歩3分", v: 4.8, sv: 4.5, c: 128, tags: ["整体", "姿勢改善", "肩こり", "腰痛"] },
-  { n: "はる鍼灸院 渋谷院", st: "徒歩5分", v: 4.7, sv: 4.5, c: 86, tags: ["鍼灸", "美容鍼", "自律神経", "冷え性"] },
-  { n: "渋谷カラダバランス接骨院", st: "徒歩5分", v: 4.6, sv: 4.5, c: 92, tags: ["接骨院", "骨盤矯正", "スポーツ整体"] },
-  { n: "リラクゼーションサロン 紬", st: "徒歩4分", v: 4.5, sv: 4.5, c: 104, tags: ["マッサージ", "ヘッドスパ", "アロマ"] },
-  { n: "めぐりリラクゼーションサロン", st: "徒歩4分", v: 4.6, sv: 4, c: 78, tags: ["もみほぐし", "ストレッチ", "眼精疲労"] },
-];
-
-const AREAS = [
-  { n: "東京エリア", e: "Tokyo" },
-  { n: "神奈川エリア", e: "Kanagawa" },
-  { n: "大阪エリア", e: "Osaka" },
-  { n: "京都エリア", e: "Kyoto" },
-  { n: "福岡エリア", e: "Fukuoka" },
-];
-
-export default function TopPage() {
+export default function TopPage({ d }: { d: TopData }) {
   return (
     <div data-gr-page="top" className={`gt ${ser.variable}`}>
       {/* ================= ヒーロー ================= */}
-      <section className="gt-hero">
+      <section className="gt-hero" aria-label="マチノワ ボディケア">
         <div className="gt-hero-bg" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="gr-kb" src={`${T}/hero.webp`} width={1448} height={355} alt="" fetchPriority="high" />
@@ -67,24 +83,30 @@ export default function TopPage() {
         <div className="gt-hero-in">
           <MaskLines as="h1" className="gt-h1 gr-min" lines={[<span key="1" style={{ letterSpacing: "var(--gt-ls1)" }}>からだが整うと、</span>, <span key="2" style={{ letterSpacing: "var(--gt-ls2)" }}>毎日がもっと好きになる。</span>]} step={190} delay={150} />
           <p className="gt-lead" data-rv style={{ ["--d" as string]: "450ms" }}>
-            渋谷エリアの整体院・接骨院・鍼灸院・マッサージ・
-            <br />
-            リラクゼーションサロンを探せるポータルサイトです。
+            <span>{d.leadA}</span>
+            <span>{d.leadB}</span>
           </p>
-          <form className="gt-search" action={SEARCH_HREF} method="get" data-rv style={{ ["--d" as string]: "500ms" }}>
-            <Link href={SEARCH_HREF} className="gt-area gr-press">
+          <form className="gt-search" action={SEARCH_HREF} method="get" role="search" data-rv style={{ ["--d" as string]: "500ms" }}>
+            <label className="gt-area gr-press">
               <Pin w={14} h={18} c="#1d2b45" />
-              <span>エリアを選択</span>
+              <select name="pref" defaultValue="" aria-label="都道府県を選ぶ">
+                <option value="">エリアを選択</option>
+                {d.prefOptions.map((p) => (
+                  <option key={p.slug} value={p.slug}>
+                    {p.name}({p.count})
+                  </option>
+                ))}
+              </select>
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#2a3548" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="gt-caret">
                 <path d="m6 9 6 6 6-6" />
               </svg>
-            </Link>
+            </label>
             <div className="gt-input">
               <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#2a3548" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
                 <circle cx="10.500" cy="10.500" r="6.500" />
                 <path d="m15.500 15.500 5 5" />
               </svg>
-              <input type="text" name="q" placeholder="駅名・サロン名・お悩みなどで検索" aria-label="キーワード" />
+              <input type="text" name="q" placeholder="エリア・店名で検索" aria-label="エリア・店名で検索" autoComplete="off" />
               <button type="submit" className="gt-go gr-shimmer gr-press">
                 <span>検索する</span>
                 <Arrow s={17} />
@@ -92,12 +114,12 @@ export default function TopPage() {
             </div>
           </form>
           <div className="gt-kw" data-rv style={{ ["--d" as string]: "600ms" }}>
-            <b>注目のキーワード</b>
+            <b>条件から探す</b>
             <ul>
-              {KEYWORDS.map(([k, w]) => (
-                <li key={k}>
-                  <Link href={SEARCH_HREF} className="gr-chip gr-press" style={{ width: w }}>
-                    {k}
+              {d.tags.map((t) => (
+                <li key={t.name}>
+                  <Link href={searchHref({ tag: t.name })} className="gr-chip gr-press">
+                    {t.name}
                   </Link>
                 </li>
               ))}
@@ -110,80 +132,98 @@ export default function TopPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={`${T}/badge.png`} width={194} height={142} alt="" />
             <p className="gr-hand">
-              あなたに
+              全国
               <br />
-              ぴったりの
+              {d.prefTotal}都道府県の
               <br />
-              施術がきっと
+              {d.total}店を
               <br />
-              見つかる
+              掲載中
             </p>
           </div>
         </div>
       </section>
 
+      {/* 端の若葉(ヒーローの下端が基準。ゆっくりそよぐ+スクロールでずれる) */}
+      <div className="gt-sprigs" aria-hidden="true">
+        <div className="gt-sprig gt-sprig--l" data-par="-0.04">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`${T}/sprig-l.png`} width={134} height={80} alt="" />
+        </div>
+        <div className="gt-sprig gt-sprig--r" data-par="-0.03">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`${T}/sprig-r.png`} width={72} height={272} alt="" />
+        </div>
+      </div>
+
       {/* ================= 施術の種類から探す ================= */}
-      <section className="gt-w gt-types">
+      <section className="gt-w gt-types" id="gr-kind" aria-labelledby="gt-h-kind">
         <Reveal className="gt-types-h">
-          <h2 className="gr-vbar gr-min">施術の種類から探す</h2>
+          <h2 id="gt-h-kind" className="gr-vbar gr-min">
+            施術の種類から探す
+          </h2>
           <p>
-            ライフスタイルやお悩みに合わせて
+            施術の種類ごとに、
             <br />
-            最適な施術を見つけましょう。
+            掲載している店を見られます。
           </p>
-          <Link href={SEARCH_HREF} className="gr-arrow gt-types-go gr-press" aria-label="施術の種類から探す">
+          <Link href={SEARCH_HREF} className="gr-arrow gt-types-go gr-press" aria-label="店を探す">
             <Arrow s={14} />
           </Link>
         </Reveal>
-        <div className="gt-types-grid" data-rv-group>
-          {TYPES.map((t, i) => (
-            <div key={t.n} data-rv>
-              <Link href={SEARCH_HREF} className="gt-type gr-lift gr-hov">
-                <span className="gt-type-ph gr-zoom">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`${T}/type${i + 1}.webp`} width={207} height={75} alt="" loading="lazy" />
+        <ul className="gt-types-grid" data-rv-group style={{ ["--n" as string]: d.kinds.length }}>
+          {d.kinds.map((k) => (
+            <li key={k.slug} data-rv>
+              <Link href={searchHref({ kind: k.slug })} className="gt-type gr-lift gr-hov">
+                <span className="gt-type-ph gr-zoom" style={{ background: k.color }}>
+                  {KIND_IMG[k.slug] && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={`${T}/${KIND_IMG[k.slug]}.webp`} width={207} height={75} alt="" loading="lazy" />
+                  )}
                 </span>
                 <span className="gt-type-b">
                   <span className="gt-type-t">
-                    <b>{t.n}</b>
-                    <small>{t.s}</small>
+                    <b>{k.name}</b>
+                    <small>{k.count} 店を掲載</small>
                   </span>
                   <span className="gr-arrow">
                     <Arrow s={13} />
                   </span>
                 </span>
               </Link>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
-      {/* ================= お悩みから探す ================= */}
-      <section className="gt-worry">
+      {/* ================= こだわりから探す ================= */}
+      <section className="gt-worry" id="gr-tag" aria-labelledby="gt-h-tag">
         <div className="gt-w gt-worry-in">
           <Reveal className="gt-worry-h">
-            <h2 className="gr-vbar gr-min">お悩みから探す</h2>
+            <h2 id="gt-h-tag" className="gr-vbar gr-min">
+              こだわりから探す
+            </h2>
             <p>
-              気になる症状から、
+              営業日や予約のしかたなど、
               <br />
-              ぴったりの施術を見つけましょう。
+              条件から探せます。
             </p>
           </Reveal>
           <ul className="gt-worry-row" data-rv-group>
-            {WORRIES.map(([n, w], i) => (
-              <li key={n} data-rv="zoom">
-                <Link href={SEARCH_HREF} className={`gt-wc gr-hov gr-press${i === 9 ? " gt-wc--wide" : ""}`} style={{ width: w }}>
+            {d.tags.map((t) => (
+              <li key={t.name} data-rv="zoom">
+                <Link href={searchHref({ tag: t.name })} className="gt-wc gr-hov gr-press">
                   <span className="gt-wc-ic gr-bounce">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`${T}/ic${i + 1}.png`} width={68} height={48} alt="" loading="lazy" />
+                    <TagIcon name={t.name} />
                   </span>
-                  <span className="gt-wc-l">{n}</span>
+                  <span className="gt-wc-l">{t.name}</span>
+                  <span className="gt-wc-n">{t.count} 店</span>
                 </Link>
               </li>
             ))}
           </ul>
           <Link href={SEARCH_HREF} className="gt-worry-all gr-hov gr-press">
-            <span>お悩み一覧を見る</span>
+            <span>条件の一覧を見る</span>
             <span className="gr-arrow gt-worry-arrow">
               <Arrow s={20} />
             </span>
@@ -191,54 +231,29 @@ export default function TopPage() {
         </div>
       </section>
 
-      {/* ================= おすすめの整体院・サロン ================= */}
-      <section className="gt-w gt-rec">
-        <Reveal className="gt-rec-h">
-          <svg viewBox="0 0 28 22" width="26" height="21" aria-hidden="true" className="gt-crown">
-            <path d="M2 6.500 8 11l6-9 6 9 6-4.500L24 19H4L2 6.500Z" fill="#f2b21b" />
-            <rect x="4" y="19.500" width="20" height="2" rx="1" fill="#e49a0e" />
-          </svg>
-          <h2 className="gr-min">おすすめの整体院・サロン</h2>
-          <span>口コミ評価の高い、人気の整体院・サロンをご紹介します。</span>
-        </Reveal>
-        <Link href={SHOP_HREF} className="gt-rec-all gr-arrow-link">
-          <span>すべて見る</span>
-          <Arrow s={17} />
-        </Link>
+      {/* ================= 掲載中の店 ================= */}
+      <section className="gt-w gt-rec" aria-labelledby="gt-h-rec">
+        <div className="gt-rec-top">
+          <Reveal className="gt-rec-h">
+            <h2 id="gt-h-rec" className="gr-min">
+              掲載中の店
+            </h2>
+            <span>掲載店の一部を紹介します。並びは順位ではありません。</span>
+          </Reveal>
+          <Link href={SEARCH_HREF} className="gt-rec-all gr-arrow-link">
+            <span>すべて見る</span>
+            <Arrow s={17} />
+          </Link>
+        </div>
         <div className="gt-rec-grid" data-rv-group>
-          {SHOPS.map((s, i) => (
-            <div key={s.n} data-rv>
-              <article className="gt-shop gr-lift gr-hov">
-                <Link href={SHOP_HREF} className="gt-shop-a" aria-label={s.n}>
-                  <span className="gt-shop-ph gr-zoom">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`${T}/shop${i + 1}.webp`} width={232} height={95} alt="" loading="lazy" />
-                  </span>
-                  <span className="gt-shop-b">
-                    <b className="gt-shop-n">{s.n}</b>
-                    <span className="gt-shop-st">
-                      <Pin w={8} h={10} c="#7a7e7a" />
-                      東京都 渋谷駅 {s.st}
-                    </span>
-                    <span className="gt-shop-rt">
-                      <Stars value={s.sv} size={11.5} />
-                      <em>{s.v.toFixed(1)}</em>
-                      <small>({s.c}件)</small>
-                    </span>
-                    <span className="gt-shop-tags">
-                      {s.tags.map((t) => (
-                        <i key={t}>{t}</i>
-                      ))}
-                    </span>
-                  </span>
-                </Link>
-                <Heart className="gt-shop-heart" />
-              </article>
+          {d.picks.map((s) => (
+            <div key={s.id} data-rv>
+              <ShopCard shop={s} eager={false} hours={false} as="h3" />
             </div>
           ))}
-          <div data-rv>
+          <div data-rv className="gt-guide-w">
             <aside className="gt-guide gr-lift gr-hov">
-              <Link href={GUIDE_HREF} aria-label="初めての方へ 使い方ガイド" className="gt-guide-a">
+              <Link href={SPECIAL_HREF} aria-label="特集記事の一覧を見る" className="gt-guide-a">
                 <span className="gt-guide-h">
                   <svg viewBox="0 0 32 28" width="30" height="26" fill="none" stroke="#fff" strokeWidth="1.700" strokeLinejoin="round" strokeLinecap="round" aria-hidden="true">
                     <path d="M16 6.500C12.500 4 7.500 3.500 3 4.500v18c4.500-1 9.500-.5 13 2 3.500-2.500 8.500-3 13-2v-18c-4.500-1-9.500-.5-13 2Z" />
@@ -250,11 +265,11 @@ export default function TopPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={`${T}/guide.webp`} width={179} height={173} alt="" loading="lazy" />
                   <span className="gt-guide-t">
-                    <small>マチノワ.Body Careの</small>
-                    <b>使い方ガイド</b>
+                    <small>マチノワ Body Care の</small>
+                    <b>特集記事</b>
                   </span>
                   <span className="gt-guide-btn">
-                    詳しく見る
+                    読んでみる
                     <Arrow s={16} />
                   </span>
                 </span>
@@ -265,23 +280,27 @@ export default function TopPage() {
       </section>
 
       {/* ================= エリアから探す ================= */}
-      <section className="gt-w gt-area-sec">
+      <section className="gt-w gt-area-sec" id="gr-area" aria-labelledby="gt-h-area">
         <Reveal className="gt-area-h">
           <Pin w={13} h={19} c="#2c5439" />
-          <h2 className="gr-min">エリアから探す</h2>
-          <span>お住まいのエリアから整体院・サロンを探せます。</span>
+          <h2 id="gt-h-area" className="gr-min">
+            エリアから探す
+          </h2>
+          <span>お住まいの都道府県から店を探せます。</span>
         </Reveal>
         <div className="gt-area-grid" data-rv-group>
-          {AREAS.map((a, i) => (
-            <div key={a.n} data-rv>
-              <Link href={SEARCH_HREF} className="gt-ac gr-lift gr-hov">
+          {d.areas.map((a) => (
+            <div key={a.slug} data-rv>
+              <Link href={searchHref({ pref: a.slug })} className="gt-ac gr-lift gr-hov">
                 <span className="gr-zoom gt-ac-ph">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`${T}/area${i + 1}.webp`} width={234} height={84} alt="" loading="lazy" />
+                  <img src={a.img} width={234} height={84} alt="" loading="lazy" />
                 </span>
                 <span className="gt-ac-t">
-                  <b>{a.n}</b>
-                  <small>{a.e}</small>
+                  <b>{a.label}エリア</b>
+                  <small>
+                    {a.en} ・ {a.count}店
+                  </small>
                 </span>
                 <span className="gt-ac-ar gr-arrow">
                   <Arrow s={20} />
@@ -289,47 +308,24 @@ export default function TopPage() {
               </Link>
             </div>
           ))}
-          <div data-rv>
-            <Link href={SEARCH_HREF} className="gt-map gr-lift gr-hov" data-scrollp>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="gt-map-img" src={`${T}/map.png`} width={114} height={122} alt="" loading="lazy" />
-              <Pin w={16} h={24} c="#2c5439" />
-              <span className="gt-map-t">
-                <b>その他のエリア</b>
-                <span>から探す</span>
-              </span>
-            </Link>
-          </div>
+          {d.morePrefs.length > 0 && <MorePrefs prefs={d.morePrefs} mapSrc={`${T}/map.png`} />}
         </div>
       </section>
 
-      <div className="gt-sprig gt-sprig--l" data-par="-0.04" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`${T}/sprig-l.png`} width={134} height={80} alt="" />
-      </div>
-      <div className="gt-sprig gt-sprig--r" data-par="-0.03" aria-hidden="true">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`${T}/sprig-r.png`} width={72} height={272} alt="" />
-      </div>
-
-      {/* ================= 3 つの帯 ================= */}
-      <section className="gt-w gt-bn-sec">
+      {/* ================= 特集記事の帯 ================= */}
+      <section className="gt-w gt-bn-sec" aria-label="特集記事">
         <div className="gt-bn-grid" data-rv-group>
           <div data-rv>
-            <Link href={GUIDE_HREF} className="gt-bn gt-bn--1 gr-lift gr-hov">
+            <Link href={SPECIAL_BANDS.difference.href} className="gt-bn gt-bn--1 gr-lift gr-hov">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="gt-bn-img gr-zoom" src={`${T}/banner1.webp`} width={443} height={97} alt="" loading="lazy" />
               <span className="gt-bn-t">
                 <span className="gt-bn-tag" style={{ color: "#2f5a3d" }}>
-                  <Shield c="#2f7d4d" />
+                  <BandIcon kind="shield" c="#2f7d4d" />
                   はじめての方へ
                 </span>
-                <b>失敗しないサロン選びのポイント</b>
-                <small>
-                  自分に合った施術を見つけるための
-                  <br />
-                  ヒントをご紹介します。
-                </small>
+                <b>{bandTitle("difference")}</b>
+                <small>名前のちがいと、施術する人の免許のちがい。</small>
               </span>
               <span className="gt-bn-ar gr-arrow">
                 <Arrow s={13} />
@@ -337,47 +333,33 @@ export default function TopPage() {
             </Link>
           </div>
           <div data-rv>
-            <Link href={SCENE_HREF} className="gt-bn gt-bn--2 gr-lift gr-hov">
+            <Link href={SPECIAL_BANDS.weekend.href} className="gt-bn gt-bn--2 gr-lift gr-hov">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="gt-bn-img gr-zoom" src={`${T}/banner2.webp`} width={465} height={97} alt="" loading="lazy" />
               <span className="gt-bn-t">
-                <span className="gt-bn-tag" style={{ color: "#d4476f" }}>
-                  <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
-                    <g fill="#e8688a">
-                      <circle cx="12" cy="6" r="4.500" />
-                      <circle cx="18" cy="11" r="4.500" />
-                      <circle cx="15.800" cy="18" r="4.500" />
-                      <circle cx="8.200" cy="18" r="4.500" />
-                      <circle cx="6" cy="11" r="4.500" />
-                    </g>
-                    <circle cx="12" cy="12" r="2.600" fill="#fff" />
-                  </svg>
-                  季節のおすすめ特集
+                <span className="gt-bn-tag" style={{ color: "#c0446a" }}>
+                  <BandIcon kind="calendar" c="#d4476f" />
+                  特集記事
                 </span>
-                <b>春の不調を整える</b>
-                <small>
-                  新生活で乱れがちな心とからだを
-                  <br />
-                  やさしくリセット。
-                </small>
+                <b>{bandTitle("weekend")}</b>
+                <small>営業時間は店のデータのとおり。店のページへのリンクつき。</small>
+              </span>
+              <span className="gt-bn-ar gr-arrow">
+                <Arrow s={13} />
               </span>
             </Link>
           </div>
           <div data-rv>
-            <Link href={GUIDE_HREF} className="gt-bn gt-bn--3 gr-lift gr-hov">
+            <Link href={SPECIAL_BANDS.choose.href} className="gt-bn gt-bn--3 gr-lift gr-hov">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="gt-bn-img gr-zoom" src={`${T}/banner3.webp`} width={438} height={97} alt="" loading="lazy" />
               <span className="gt-bn-t">
                 <span className="gt-bn-tag" style={{ color: "#8a4b2c" }}>
-                  <Shield c="#a65b36" />
-                  お役立ちコラム
+                  <BandIcon kind="book" c="#a65b36" />
+                  特集記事
                 </span>
-                <b>からだと暮らしを整えるヒント</b>
-                <small>
-                  専門家監修のコラムで、
-                  <br />
-                  日々のセルフケアに役立つ情報をお届け。
-                </small>
+                <b>{bandTitle("choose")}</b>
+                <small>営業時間・予約・場所・免許の表示など、確かめられる点。</small>
               </span>
               <span className="gt-bn-ar gr-arrow">
                 <Arrow s={13} />
