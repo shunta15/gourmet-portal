@@ -54,7 +54,7 @@ function vineSvg(flip: boolean): string {
   const lf = leaves
     .map(([x, y, a, s]) => `<g transform="translate(${x} ${y}) rotate(${a}) scale(${s})"><path class="lf" style="--x:${(x / 1200).toFixed(3)}" d="M0 0 C 6 -9 20 -10 30 0 C 20 10 6 9 0 0 Z"/></g>`)
     .join("");
-  return `<svg viewBox="0 0 1200 40" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"${flip ? ' style="transform:scaleX(-1)"' : ""}><path class="v" pathLength="1" d="M0 22 C 120 8 220 34 360 20 S 600 6 720 20 S 980 34 1200 18"/>${lf}</svg>`;
+  return `<svg viewBox="0 0 1200 40" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false"${flip ? ' style="transform:scaleX(-1)"' : ""}><path class="v" pathLength="1" d="M0 22 C 120 8 220 34 360 20 S 600 6 720 20 S 980 34 1200 18"/>${lf}</svg>`;
 }
 
 export default function MotionPlus() {
@@ -256,6 +256,44 @@ export default function MotionPlus() {
       let px = -999;
       let py = -999;
 
+      // 文字を避ける: ヒーローの中の文字の矩形(層の座標)を 0.3 秒ごとに取り直し、葉は文字に近づくと薄くなり、重なる前に消える(文字の上に葉が乗らない)
+      let avoid: Array<[number, number, number, number]> = [];
+      let avoidAt = -1e9;
+      let candAt = -1e9;
+      let cand: Text[] = [];
+      const refreshAvoid = (now: number) => {
+        if (now - avoidAt < 300) return;
+        avoidAt = now;
+        const lr = layer.getBoundingClientRect();
+        const rg = document.createRange();
+        // 層に掛かる文字の候補(ヘッダーの文字も含む。3 秒ごとに拾い直す)
+        if (now - candAt > 3000) {
+          candAt = now;
+          cand = [];
+          const tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+          let n: Node | null;
+          while ((n = tw.nextNode())) {
+            if (!(n as Text).data.trim()) continue;
+            const pe = n.parentElement;
+            if (!pe || pe.closest(".mp-layer,.mp-vine,script,style,noscript")) continue;
+            rg.selectNodeContents(n);
+            const rb = rg.getBoundingClientRect();
+            if (rb.bottom < lr.top - 80 || rb.top > lr.bottom + 80) continue;
+            cand.push(n as Text);
+          }
+        }
+        const out: Array<[number, number, number, number]> = [];
+        for (const n of cand) {
+          if (!n.isConnected) continue;
+          rg.selectNodeContents(n);
+          for (const r of Array.from(rg.getClientRects())) {
+            if (r.width < 2 || r.height < 4 || r.bottom < lr.top - 60 || r.top > lr.bottom + 60) continue;
+            out.push([r.left - lr.left, r.top - lr.top, r.right - lr.left, r.bottom - lr.top]);
+          }
+        }
+        avoid = out;
+      };
+
       const step = (now: number) => {
         raf = 0;
         if (dead || !host.isConnected) {
@@ -265,6 +303,7 @@ export default function MotionPlus() {
         if (!visible || document.hidden) return;
         const dt = Math.min(0.05, (now - last) / 1000 || 0.016);
         last = now;
+        refreshAvoid(now);
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         ctx.clearRect(0, 0, W, H);
         for (let i = leaves.length - 1; i >= 0; i--) {
@@ -292,7 +331,17 @@ export default function MotionPlus() {
             if (l.x > W + 30) l.x = -30;
             else if (l.x < -30) l.x = W + 30;
           }
-          const fade = l.trail ? clamp(l.life / 1.2, 0, 1) : 1;
+          let fade = l.trail ? clamp(l.life / 1.2, 0, 1) : 1;
+          // 文字の矩形からの距離(縦横の遠い方)。葉の外接の正方形が文字に触れる手前から薄くし、触れる所では描かない
+          const rr = l.s * 1.7 + 4;
+          for (const a of avoid) {
+            const d = Math.max(a[0] - l.x, 0, l.x - a[2], a[1] - l.y, 0, l.y - a[3]);
+            if (d < rr + 24) {
+              fade = Math.min(fade, clamp((d - rr) / 24, 0, 1));
+              if (fade <= 0) break;
+            }
+          }
+          if (fade < 0.03) continue;
           ctx.save();
           ctx.translate(l.x, l.y);
           ctx.rotate(l.r);
@@ -439,11 +488,13 @@ export default function MotionPlus() {
         if (el.querySelector(":scope > .mp-vine")) return;
         if (narrow() && el.matches(".gs-res")) return; // スマホの探すは結果の見出しが節の一番上にあり、つるが文字に重なるので出さない
         const v = document.createElement("div");
-        v.className = el.matches(".sh-rel") ? "mp-vine mp-vine--up" : "mp-vine"; // 見出しが節の一番上にある所は、つるを少し上(節の隙間)に出す
+        v.className = "mp-vine"; // 置き場所と高さは layoutVine が決める(節と節の隙間にだけ。隙間が狭ければ描かない)
         v.setAttribute("aria-hidden", "true");
         v.innerHTML = vineSvg(vi++ % 2 === 1);
         el.classList.add("mp-vine-host");
         el.insertBefore(v, el.firstChild);
+        vineList.push([v, el]);
+        layoutVine(v, el);
         onEnter(v, () => v.classList.add("mp-in"));
       });
       // 流れる帯は画面の外では止める
@@ -455,6 +506,97 @@ export default function MotionPlus() {
         cleanups.push(() => mio.disconnect());
       });
     };
+
+    // ------------------------------------------------------------------ つるは節と節の「隙間」にだけ置く
+    // 隙間 = 前の節の下端(兄弟の下端)から、この節の一番上の文字(または子)の上端まで。transform の影響を受けない offsetTop で測る。
+    const vineList: Array<[HTMLElement, HTMLElement]> = [];
+    const relTop = (el: HTMLElement, host: HTMLElement): number | null => {
+      let t = 0;
+      let cur: HTMLElement | null = el;
+      while (cur && cur !== host) {
+        t += cur.offsetTop;
+        cur = cur.offsetParent as HTMLElement | null;
+      }
+      return cur === host ? t : null;
+    };
+    const layoutVine = (v: HTMLElement, host: HTMLElement) => {
+      if (!host.isConnected) return;
+      // この節の一番上 = 文字の最初の行の上端(要素の位置は offsetTop=変形に左右されない値、要素の中での文字の位置は今の見かけ)と、画像・ボタンなど文字の無い物の上端のうち一番上
+      let T = Infinity;
+      const tw = document.createTreeWalker(host, NodeFilter.SHOW_TEXT);
+      const rg = document.createRange();
+      let n: Node | null;
+      while ((n = tw.nextNode())) {
+        if (!(n as Text).data.trim()) continue;
+        const pe = n.parentElement;
+        if (!pe || pe.closest(".mp-vine") || pe.offsetParent === null) continue;
+        const base = relTop(pe, host);
+        if (base === null) continue;
+        rg.selectNodeContents(n);
+        const r0 = rg.getClientRects()[0];
+        if (!r0) continue;
+        T = Math.min(T, base + (r0.top - pe.getBoundingClientRect().top));
+      }
+      for (const c of Array.from(host.querySelectorAll<HTMLElement>("img, svg, picture, video, canvas, button, select, input, textarea"))) {
+        if (c.closest(".mp-vine") || c.offsetParent === null) continue;
+        const t = relTop(c, host);
+        if (t !== null) T = Math.min(T, t);
+      }
+      if (!isFinite(T)) T = 0;
+      // 前の節の下端(高さ 0 の飾りの要素は飛ばす)
+      let B = -10;
+      let prev = host.previousElementSibling as HTMLElement | null;
+      while (prev && (prev.offsetHeight === 0 || prev.classList.contains("mp-layer"))) prev = prev.previousElementSibling as HTMLElement | null;
+      if (prev) {
+        const pt = prev.offsetParent === host.offsetParent ? prev.offsetTop : null;
+        if (pt !== null) B = pt + prev.offsetHeight - host.offsetTop;
+        else {
+          const pr = prev.getBoundingClientRect();
+          const hr = host.getBoundingClientRect();
+          B = pr.bottom - hr.top;
+        }
+      }
+      const gap = T - B;
+      const margin = 2;
+      const h = Math.min(34, gap - margin * 2);
+      if (h < 12) {
+        v.style.display = "none";
+        v.classList.add("mp-lay");
+        return;
+      }
+      v.style.display = "";
+      v.style.top = `${(B + (gap - h) / 2).toFixed(1)}px`;
+      v.style.height = `${h.toFixed(1)}px`;
+      v.classList.add("mp-lay");
+    };
+    const layoutVines = () => {
+      for (const [v, h] of vineList) layoutVine(v, h);
+    };
+    {
+      let lr = 0;
+      const soon = () => {
+        if (lr || dead) return;
+        lr = requestAnimationFrame(() => {
+          lr = 0;
+          layoutVines();
+        });
+      };
+      window.addEventListener("resize", soon);
+      window.addEventListener("load", soon);
+      const lro = new ResizeObserver(soon);
+      lro.observe(root);
+      const t1 = window.setTimeout(soon, 700);
+      const t2 = window.setTimeout(soon, 2500);
+      document.fonts?.ready.then(soon).catch(() => {});
+      cleanups.push(() => {
+        window.removeEventListener("resize", soon);
+        window.removeEventListener("load", soon);
+        lro.disconnect();
+        clearTimeout(t1);
+        clearTimeout(t2);
+        if (lr) cancelAnimationFrame(lr);
+      });
+    }
 
     let scanRaf = 0;
     const scanSoon = () => {

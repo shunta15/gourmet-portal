@@ -30,7 +30,9 @@
   .gr-root .mp-host { position: relative; isolation: isolate; }
   .mp-layer--top { bottom: auto; height: min(100%, 820px); }
   .gr-root .ar-page.mp-host > .ar-wrap { position: relative; z-index: 1; }
-  .mp-layer { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+  /* ヒーローの層は、背景(-2)のすぐ上(-1)=文字・ラベル・バッジ・副題など中身のすべての後ろ */
+  .mp-host > :is(.gt-hero-bg, .gs-hero-bg, .sh-hero-bg) { z-index: -2; }
+  .mp-layer { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
   .mp-leaves { position: absolute; inset: 0; width: 100%; height: 100%; }
   .mp-rays { position: absolute; inset: -12% -8%; }
   .mp-rays i { position: absolute; top: -30%; height: 170%; border-radius: 40px; background: linear-gradient(90deg, rgba(255, 252, 226, 0) 0%, rgba(255, 252, 226, 0.62) 50%, rgba(255, 252, 226, 0) 100%); filter: blur(9px); mix-blend-mode: soft-light; rotate: 24deg; opacity: 0.8; will-change: translate, opacity; }
@@ -84,9 +86,10 @@
 
   /* ------------------------------------------------ 節の境目の若葉のつる(線画が描かれていく) */
   .mp-vine-host { position: relative; }
-  .mp-vine { position: absolute; left: 0; right: 0; top: -9px; height: 30px; z-index: 0; pointer-events: none; opacity: 0.85; }
-  .mp-vine--up { top: -34px; }
-  .mp-vine svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  /* つるは節と節の隙間にだけ(位置と高さは MotionPlus の layoutVine が決める。決まるまでは見せない・隙間が狭ければ出さない)。はみ出す分は箱で切る */
+  .mp-vine { position: absolute; left: 0; right: 0; top: -9px; height: 24px; z-index: 0; pointer-events: none; opacity: 0.85; overflow: hidden; }
+  .mp-vine:not(.mp-lay) { visibility: hidden; }
+  .mp-vine svg { display: block; width: 100%; height: 100%; overflow: hidden; }
   .mp-vine .v { fill: none; stroke: #5f9a72; stroke-width: 1.7; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 2.6s cubic-bezier(0.55, 0, 0.2, 1); }
   .mp-vine.mp-in .v { stroke-dashoffset: 0; }
   .mp-vine .lf { fill: #8cc09b; opacity: 0; transform-box: fill-box; transform-origin: 0 50%; scale: 0; transition: scale 0.7s cubic-bezier(0.3, 1.7, 0.5, 1) calc(var(--x, 0) * 2.3s + 0.15s), opacity 0.4s ease calc(var(--x, 0) * 2.3s + 0.15s); }
@@ -107,6 +110,5 @@
     .gr-root .gt-bn-grid > [data-rv]:nth-child(3):not(.is-in) { translate: 46px 0; }
     .gr-root .gs-cards > [data-rv]:not(.is-in) { translate: 40px 10px; rotate: none; }
     mp-ch { transition-duration: 0.5s, 0.7s, 0.7s, 0.5s; }
-    .mp-vine { top: -7px; height: 24px; }
   }
 }
