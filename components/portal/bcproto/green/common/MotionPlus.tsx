@@ -407,7 +407,8 @@ export default function MotionPlus() {
       root.querySelectorAll<HTMLElement>(WIPE_SEL).forEach((el) => {
         if (registered.has(el)) return;
         registered.add(el);
-        // 画面の最初から見えている物は、少し遅らせて 1 度だけ拭く
+        // 拭き出しの中の拭き出しは付けない(外側が clip-path で隠れている間、内側は IntersectionObserver に「見えていない」と判定され、いつまでも出ない)
+        if (el.parentElement?.closest(".mp-wipe")) return;
         el.classList.add("mp-wipe");
         el.style.setProperty("--mp-d", `${(wi++ % 5) * 90}ms`);
         // 自分は clip-path で隠れているので、IntersectionObserver には親(隠れていない枠)を見張らせる
@@ -436,6 +437,7 @@ export default function MotionPlus() {
         if (registered.has(el)) return;
         registered.add(el);
         if (el.querySelector(":scope > .mp-vine")) return;
+        if (narrow() && el.matches(".gs-res")) return; // スマホの探すは結果の見出しが節の一番上にあり、つるが文字に重なるので出さない
         const v = document.createElement("div");
         v.className = el.matches(".sh-rel") ? "mp-vine mp-vine--up" : "mp-vine"; // 見出しが節の一番上にある所は、つるを少し上(節の隙間)に出す
         v.setAttribute("aria-hidden", "true");
