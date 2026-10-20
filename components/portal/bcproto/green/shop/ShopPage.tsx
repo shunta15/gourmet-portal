@@ -102,7 +102,7 @@ export default function ShopPage() {
                 </li>
               ))}
             </ul>
-            <MaskLines as="h1" className="sh-abs sh-h1" lines={["マチノワ整体院 渋谷本院"]} delay={80} />
+            <MaskLines as="h1" className="sh-abs sh-h1" lines={[<span key="h1"><span className="sh-kt">マチノワ</span>整体院 渋谷本院</span>]} delay={80} />
             <MaskLines as="p" className="sh-abs sh-sub" lines={["からだが整うと、", "毎日がもっと軽やかになる。"]} delay={260} step={140} />
             <p className="sh-abs sh-lead" data-rv="fade" style={{ ["--d" as string]: "700ms" }}>
               渋谷駅から徒歩3分。 その場のリラクゼーションだけでなく、
