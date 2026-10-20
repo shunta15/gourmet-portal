@@ -1,10 +1,20 @@
 import Link from "next/link";
-import { IMG, SEARCH_HREF, FEATURE_HREF, SHOP_HREF } from "../common/site";
-import { MaskLines, Write, CountUp, Stars } from "../common/Motion";
+import type { CSSProperties } from "react";
+import type { BsShop } from "@/lib/portal/vert/bodyshop/model";
+import type { GreenShop } from "@/lib/portal/vert/bodygreen/types";
+import { BASE, IMG, searchHref } from "../common/site";
+import { MaskLines, Write } from "../common/Motion";
+import ShopCard from "../common/ShopCard";
 import ShopTabs from "./ShopTabs";
+import TapLink from "./TapLink";
 import "./shop.css";
 
-// 店舗詳細(見本 mock-shop の完全再現)。店名・評価・料金・文章は見本どおりの仮の内容。画像は見本から切り出し(public/_portal/bcproto/green/shop/)。
+/**
+ * 店の詳細 + 特集記事(1 店 1 ページ。見本 mock-shop の見た目を、本番のデータ loadBsShop の中身で出す)。
+ * 店の詳細と店の特集記事は同じページ: 「特集記事」の節に、店の記事(panels)をそのまま回して出す。記事の無い店は節とタブごと出さない。
+ * データに無い物(星・点数・口コミ・料金・スタッフ・設備・徒歩分・支払い方法・〒)は出さない。写真は実在の店の写真だけ(0 枚の店は種類の色の面+店名)。
+ * 画像: 飾り(端の若葉・葉)だけ public/_portal/bcproto/green/shop/ の AI 画像。店の写真は shop.photos(本番の写真)。
+ */
 const P = `${IMG}/shop`;
 
 const ArrowSvg = () => (
@@ -30,407 +40,471 @@ const CalSvg = () => (
     <path d="M8 13.5h1.5M11.3 13.5h1.5M14.6 13.5h1.5M8 16.8h1.5M11.3 16.8h1.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
   </svg>
 );
-const CamSvg = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-    <path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1.2-1.8h6.6L16.5 7h2A1.5 1.5 0 0 1 20 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5z" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
-    <circle cx="12" cy="12.7" r="3.2" fill="none" stroke="currentColor" strokeWidth="1.7" />
+const GlobeSvg = () => (
+  <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" strokeWidth="1.7" />
+    <path d="M3.5 12h17M12 3.5c2.6 2.4 3.9 5.2 3.9 8.5s-1.3 6.1-3.9 8.5c-2.6-2.4-3.9-5.2-3.9-8.5S9.4 5.9 12 3.5z" fill="none" stroke="currentColor" strokeWidth="1.5" />
   </svg>
 );
-const LeafSvg = () => (
-  <svg viewBox="0 0 28 28" width="24" height="24" aria-hidden="true" className="gr-sway">
+const LeafSvg = ({ s = 24 }: { s?: number }) => (
+  <svg viewBox="0 0 28 28" width={s} height={s} aria-hidden="true" className="gr-sway">
     <path d="M4 24C5 13 12 5 24 4c0 11-6 19-17 20" fill="#7fae86" opacity=".85" />
     <path d="M4 24C9 17 14 12 21 8" stroke="#2f5a3d" strokeWidth="1.3" fill="none" strokeLinecap="round" />
     <path d="M8 18c-2.2-.2-3.6.6-4.4 1.8M12 14c-.2-2.2.3-3.6 1.4-4.6" stroke="#2f5a3d" strokeWidth="1" fill="none" strokeLinecap="round" />
   </svg>
 );
+const CheckSvg = () => (
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" fill="#eaf1e5" />
+    <path d="M7.5 12.4l3 3 6-6.6" fill="none" stroke="#2f5a3d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 
-const TABS = [
-  { id: "sh-top", label: "トップ" },
-  { id: "sh-menu", label: "メニュー・料金" },
-  { id: "sh-staff", label: "スタッフ" },
-  { id: "sh-feature", label: "院の特徴" },
-  { id: "sh-review", label: "口コミ", spy: false, flash: "sh-rating" },
-  { id: "sh-article", label: "特集記事" },
-  { id: "sh-access", label: "アクセス" },
-];
-const CONCERNS = ["肩こり", "腰痛", "頭痛", "姿勢のゆがみ", "骨盤の歪み", "眼の疲れ", "冷え・むくみ", "ストレス", "産後ケア", "スポーツの不調"];
-const MENUS = [
-  { img: "m1", t: "全身整体コース", d: ["全身のバランスを整え、", "不調を根本から改善します。"], p: "6,600" },
-  { img: "m2", t: "肩こり集中コース", d: ["つらい肩こり・首こりを", "丁寧にほぐします。"], p: "5,500" },
-  { img: "m3", t: "骨盤矯正コース", d: ["骨盤の歪みを整え、", "姿勢やスタイルの改善をサポート。"], p: "6,600" },
-];
-const POINTS = [
-  ["渋谷のデスクワーカーに多い", "肩こり・腰痛の原因"],
-  ["マチノワ整体院の根本改善の考え方"],
-  ["実際の施術の流れとビフォーアフター"],
-  ["自宅でできるセルフケアのポイント"],
-];
-const MINI = [["当日予約OK"], ["渋谷駅", "徒歩3分"], ["個室あり"], ["クレジットカード", "対応"]];
+/** 「2026-10-09」→「2026.10.09」 */
+const dotDate = (s?: string) => (s && /^\d{4}-\d{2}-\d{2}$/.test(s) ? s.replace(/-/g, ".") : "");
+const httpOnly = (u: string) => /^https?:\/\//i.test(u);
 
-export default function ShopPage() {
+export default function ShopPage({ shop, gs, sameArea, sameKind }: { shop: BsShop; gs?: GreenShop; sameArea: GreenShop[]; sameKind: GreenShop[] }) {
+  const photos = shop.photos;
+  const hero = photos[0] ?? null;
+  const gal = photos.slice(1, 6);
+  const link = (k: string) => shop.links.find((l) => l.kind === k);
+  const phoneLink = link("phone");
+  const mapLink = link("map");
+  const reserveLink = link("reserve");
+  const siteLink = link("website");
+  const snsLinks = shop.links.filter((l) => ["instagram", "tiktok", "x", "facebook", "line"].includes(l.kind));
+  const phoneText = shop.facts.find((f) => f.k === "電話")?.v[0] ?? "";
+  const hoursLines = shop.facts.find((f) => f.k === "営業時間")?.v ?? [];
+  const tags = gs?.tags ?? [];
+  const second = reserveLink ?? siteLink ?? null;
+
+  // 記事: panels[0] = 店の紹介(紹介文)。panels[1..] = 特集記事の本文(特集のある店は引用・結びも)
+  const intro = shop.panels[0];
+  const body = shop.panels.slice(1);
+  const hasArticle = body.length > 0 || !!shop.quote || shop.closing.length > 0;
+  const checked = dotDate(shop.checkedAt);
+  const sources = shop.sources.filter((s) => httpOnly(s.url));
+
+  const hasLeft = !!intro || shop.menus.length > 0 || hasArticle;
+
+  const TABS = [
+    { id: "sh-top", label: "トップ" },
+    ...(intro ? [{ id: "sh-intro", label: "店の紹介" }] : []),
+    ...(shop.menus.length > 0 ? [{ id: "sh-menu", label: "メニュー" }] : []),
+    ...(hasArticle ? [{ id: "sh-article", label: "特集記事" }] : []),
+    { id: "sh-access", label: "店舗情報" },
+  ];
+
+  const area = shop.city || shop.prefName;
+  const nameSize = shop.name.length <= 13 ? "l" : shop.name.length <= 21 ? "m" : "s";
+  const galN = gal.length;
+  const darkFace = gs?.kindDark ?? false;
+
   return (
     <div data-gr-page="shop" className="sh">
       {/* ========== ヒーロー ========== */}
       <section className="sh-hero" id="sh-top">
         <div className="sh-hero-bg" aria-hidden="true" />
-        <div className="sh-w">
-          <div className="sh-abs sh-hero-ph">
-            <div className="sh-heroimg">
-              <img className="gr-kb" src={`${P}/hero.webp`} alt="" width={526} height={295} />
-            </div>
-            <div className="sh-hand-wrap">
-              <Write lines={["整うって、", "こんなに気持ちいい。"]} className="gr-hand sh-hand" delay={900} step={700} />
-            </div>
-          </div>
-
+        <div className={`sh-w sh-hero-grid${galN > 0 ? " has-gal" : ""}`}>
           <div className="sh-hero-txt">
-            <nav className="sh-abs sh-crumb" aria-label="パンくず" data-rv="fade">
-              <Link href={SEARCH_HREF}>TOP</Link>
+            <nav className="sh-crumb" aria-label="パンくず" data-rv="fade">
+              <Link href={BASE}>TOP</Link>
               <i />
-              <Link href={SEARCH_HREF}>東京都</Link>
+              <Link href={searchHref({ pref: shop.prefSlug })}>{shop.prefName}</Link>
+              {shop.city && (
+                <>
+                  <i />
+                  <span>{shop.city}</span>
+                </>
+              )}
               <i />
-              <Link href={SEARCH_HREF}>渋谷エリア</Link>
-              <i />
-              <span>マチノワ整体院 渋谷本院</span>
+              <span aria-current="page">{shop.name}</span>
             </nav>
-            <ul className="sh-abs sh-tags" data-rv-group>
-              {["整体", "骨盤矯正", "肩こり", "腰痛", "マッサージ"].map((t) => (
-                <li key={t} data-rv="fade">
-                  <Link href={SEARCH_HREF} className="gr-chip sh-tag">
-                    {t}
-                  </Link>
-                </li>
-              ))}
+            <ul className="sh-tags" data-rv-group>
+              <li data-rv="fade">
+                <Link href={searchHref({ kind: shop.kindSlug })} className="gr-chip sh-tag">
+                  {shop.kindName}
+                </Link>
+              </li>
+              <li data-rv="fade">
+                <Link href={searchHref({ pref: shop.prefSlug })} className="gr-chip sh-tag">
+                  {shop.prefName}
+                </Link>
+              </li>
             </ul>
-            <MaskLines as="h1" className="sh-abs sh-h1" lines={[<span key="h1"><span className="sh-kt">マチノワ</span>整体院 渋谷本院</span>]} delay={80} />
-            <MaskLines as="p" className="sh-abs sh-sub" lines={["からだが整うと、", "毎日がもっと軽やかになる。"]} delay={260} step={140} />
-            <p className="sh-abs sh-lead" data-rv="fade" style={{ ["--d" as string]: "700ms" }}>
-              渋谷駅から徒歩3分。 その場のリラクゼーションだけでなく、
-              <br />
-              根本からの改善を目指すオーダーメイドの整体院です。
-            </p>
-            <div className="sh-abs sh-rating" id="sh-rating">
-              <Stars value={4} size={17} />
-              <b className="sh-score">
-                <CountUp to={4.8} decimals={1} duration={1300} />
-              </b>
-              <span className="sh-cnt">
-                (<CountUp to={128} duration={1500} />件)
-              </span>
-            </div>
-            <div className="sh-abs sh-badge gr-pop gr-float">
-              <img className="lau-l" src={`${P}/lau-l.webp`} alt="" width={70} height={38} />
-              <span className="bt">
-                渋谷エリア
-                <br />
-                人気の整体院
-              </span>
-              <img className="lau-r" src={`${P}/lau-r.webp`} alt="" width={24} height={38} />
-            </div>
-            <p className="sh-abs sh-addr" data-rv="fade" style={{ ["--d" as string]: "900ms" }}>
+            <MaskLines as="h1" className={`sh-h1 sh-h1--${nameSize}`} lines={[shop.name]} delay={80} />
+            {shop.headline && <MaskLines as="p" className="sh-sub" lines={[shop.headline]} delay={260} />}
+            <p className="sh-addr" data-rv="fade" style={{ ["--d" as string]: "700ms" } as CSSProperties}>
               <PinSvg />
-              <span>東京都渋谷区渋谷1-12-8 渋谷東ビル4F</span>
-              <span className="st">渋谷駅から徒歩3分</span>
+              <span>{shop.address}</span>
+            </p>
+            <p className="sh-badge gr-pop gr-float">
+              <LeafSvg s={18} />
+              <span>
+                {shop.prefName} / {shop.kindName}
+              </span>
             </p>
           </div>
 
-          <div className="sh-abs sh-gal" data-rv-group>
-            {[
-              ["g1", 323, 121],
-              ["g2", 155, 81],
-              ["g3", 163, 81],
-              ["g4", 95, 83],
-              ["g5", 112, 83],
-              ["g6", 106, 83],
-            ].map(([k, w, h]) => (
-              <figure key={k as string} className={`sh-g sh-${k}`} data-rv="zoom">
-                <div className="gr-zoom sh-gin">
-                  <img src={`${P}/${k}.webp`} alt="" width={w as number} height={h as number} />
-                </div>
-                {k === "g6" && (
-                  <Link href={SHOP_HREF} className="sh-allpic gr-press">
-                    <CamSvg />
-                    全12枚を見る
-                  </Link>
-                )}
-              </figure>
-            ))}
+          <div className="sh-hero-ph">
+            {hero ? (
+              <div className="sh-heroimg">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="gr-kb" src={hero.src} alt={hero.alt} width={hero.w} height={hero.h} fetchPriority="high" decoding="async" />
+              </div>
+            ) : (
+              <div className={`sh-noph${darkFace ? " is-dark" : ""}`} style={{ ["--kc" as string]: gs?.kindColor ?? shop.color } as CSSProperties} role="img" aria-label={`${shop.name}(写真なし)`}>
+                <span className="sh-noph-n">{shop.name}</span>
+                <span className="sh-noph-k">{shop.kindName}</span>
+              </div>
+            )}
+            {hero && (
+              <div className="sh-hand-wrap">
+                <Write lines={[`${area}の`, shop.kindName]} className="gr-hand sh-hand" delay={900} step={700} />
+              </div>
+            )}
           </div>
+
+          {galN > 0 && (
+            <div className={`sh-gal sh-gal--${galN}`} data-rv-group>
+              {gal.map((ph, i) => (
+                <figure key={ph.src} className={`sh-g sh-g${i + 1}`} data-rv="zoom">
+                  <div className="gr-zoom sh-gin">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={ph.src} alt={ph.alt} width={ph.w} height={ph.h} loading="lazy" decoding="async" />
+                  </div>
+                </figure>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
       {/* ========== 本体 ========== */}
       <div className="sh-w sh-bodyw">
         <ShopTabs items={TABS} />
-        <div className="sh-grid">
-          {/* ----- 左の大きな白い箱 ----- */}
-          <div className="sh-left">
-            <section className="sh-concept" id="sh-staff">
-              <div className="sh-cphoto" data-rv="fade">
-                <img src={`${P}/concept.webp`} alt="" width={528} height={199} />
-              </div>
-              <h2 className="sh-hd" data-rv>
-                院のコンセプト
-              </h2>
-              <p className="sh-h2" data-rv style={{ ["--d" as string]: "80ms" }}>
-                からだとこころが整う、
-                <br />
-                暮らしのパートナーに。
-              </p>
-              <p className="sh-cp" data-rv style={{ ["--d" as string]: "160ms" }}>
-                マチノワ整体院 渋谷本院は、ただのリラクゼーションではなく、
-                <br />
-                不調の根本に向き合い、再発しにくいからだづくりを目指す整体院です。
-                <br />
-                一人ひとりの生活習慣やお悩みに寄り添い、オーダーメイドの施術で
-                <br />
-                健康で快適な毎日をサポートします。
-              </p>
-              <div className="sh-hand-wrap sh-hand2">
-                <Write lines={["一人ひとりに", "寄り添った施術を", "ご提案します。"]} className="gr-hand sh-hand" delay={300} step={600} />
-              </div>
-            </section>
-
-            <section className="sh-concern" id="sh-feature">
-              <h2 className="sh-hd" data-rv>
-                こんなお悩みに対応しています
-              </h2>
-              <ul className="sh-circles" data-rv-group>
-                {CONCERNS.map((c, i) => (
-                  <li key={c} data-rv="zoom">
-                    <Link href={SEARCH_HREF} className="sh-circ gr-hov">
-                      <span className="sh-ic gr-bounce">
-                        <img src={`${P}/ic${i + 1}.webp`} alt="" width={38} height={36} />
-                      </span>
-                      <span className="sh-cl">{c}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
-            <section className="sh-menus" id="sh-menu">
-              <div className="sh-mhead" data-rv>
-                <h2 className="sh-hd">人気のメニュー・料金</h2>
-                <img className="sh-leaf gr-sway" src={`${P}/leaf-menu.webp`} alt="" width={50} height={40} />
-                <Link href={SHOP_HREF} className="sh-more gr-hov">
-                  すべてのメニューを見る
-                  <ArrowSvg />
-                </Link>
-              </div>
-              <ul className="sh-mlist" data-rv-group>
-                {MENUS.map((m) => (
-                  <li key={m.t} data-rv>
-                    <Link href={SHOP_HREF} className="sh-mcard gr-lift">
-                      <span className="gr-zoom sh-mph">
-                        <img src={`${P}/${m.img}.webp`} alt="" width={285} height={60} />
-                      </span>
-                      <span className="sh-mt">{m.t}</span>
-                      <span className="sh-md">
-                        {m.d[0]}
-                        <br />
-                        {m.d[1]}
-                      </span>
-                      <span className="sh-mp">
-                        <i>60分</i>
-                        <b>{m.p}</b>
-                        <u>円</u>
-                      </span>
-                      <span className="gr-arrow sh-marr">
-                        <ArrowSvg />
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
-            <section className="sh-articles" id="sh-article">
-              <div className="sh-mhead" data-rv>
-                <h2 className="sh-hd">
-                  特集記事<s>|</s>マチノワ整体院 渋谷本院の考え方
+        <div className={`sh-grid${hasLeft ? "" : " sh-grid--solo"}`}>
+          {/* ----- 左の大きな白い箱(紹介・メニュー・記事のどれも無い店は出さない) ----- */}
+          {hasLeft && <div className="sh-left">
+            {intro && (
+              <section className="sh-intro" id="sh-intro">
+                <h2 className="sh-hd" data-rv>
+                  店の紹介
                 </h2>
-                <Link href={FEATURE_HREF} className="sh-more gr-hov">
-                  すべての特集記事を見る
-                  <ArrowSvg />
-                </Link>
-              </div>
-              <div className="sh-feat gr-lift" data-rv>
-                <Link href={FEATURE_HREF} className="sh-fphoto gr-zoom" aria-label="デスクワークによる肩こり・腰痛を根本から整える方法">
-                  <img src={`${P}/feat.webp`} alt="" width={275} height={146} />
-                  <div className="sh-fhand-wrap">
-                    <Write lines={["デスクワークでも", "軽やかに生きる、", "その先の毎日へ。"]} className="gr-hand sh-hand" delay={200} step={600} />
-                  </div>
-                </Link>
-                <div className="sh-fbody">
-                  <span className="sh-ftag">マチノワ整体院 渋谷本院の特集</span>
-                  <Link href={FEATURE_HREF} className="sh-ft">
-                    デスクワークによる肩こり・腰痛を
-                    <br />
-                    根本から整える方法
-                  </Link>
-                  <time className="sh-fdate">2024.04.12</time>
-                  <p className="sh-fex">
-                    渋谷で働く多くの方が抱える、デスクワークによる肩こりや腰痛。
-                    <br />
-                    マチノワ整体院 渋谷本院では、単にほぐすだけでなく、姿勢・
-                    <br />
-                    生活習慣・からだの使い方まで含めた根本改善を大切にしています。
-                    <br />
-                    実際の施術の流れや、改善事例、セルフケアのポイントもご紹介します。
+                {shop.hasStory && intro.heading && (
+                  <p className="sh-h2" data-rv style={{ ["--d" as string]: "80ms" } as CSSProperties}>
+                    {intro.heading}
                   </p>
-                  <Link href={FEATURE_HREF} className="sh-fbtn gr-press">
-                    記事を読む
-                    <ArrowSvg />
-                  </Link>
+                )}
+                {intro.sub && (
+                  <p className="sh-isub" data-rv>
+                    {intro.sub}
+                  </p>
+                )}
+                <div className="sh-cp" data-rv style={{ ["--d" as string]: "120ms" } as CSSProperties}>
+                  {[...intro.open, ...intro.rest].map((t, i) => (
+                    <p key={i}>{t}</p>
+                  ))}
                 </div>
-                <aside className="sh-fpts">
-                  <p className="sh-fpt-h">
-                    <LeafSvg />
-                    この記事のポイント
-                  </p>
-                  <ol>
-                    {POINTS.map((p, i) => (
-                      <li key={i} className="sh-pt">
-                        <em>{`0${i + 1}`}</em>
-                        <span>
-                          {p[0]}
-                          {p[1] && (
-                            <>
-                              <br />
-                              {p[1]}
-                            </>
-                          )}
-                        </span>
-                      </li>
+              </section>
+            )}
+
+            {shop.menus.length > 0 && (
+              <section className="sh-menus" id="sh-menu">
+                <div className="sh-mhead" data-rv>
+                  <h2 className="sh-hd">メニュー</h2>
+                  <img className="sh-leaf gr-sway" src={`${P}/leaf-menu.webp`} alt="" width={50} height={40} />
+                </div>
+                <ul className="sh-mlist" data-rv-group>
+                  {shop.menus.slice(0, 8).map((m, i) => (
+                    <li key={`${m}-${i}`} data-rv>
+                      <span className="sh-mcard gr-lift">
+                        <i className="sh-mno">{String(i + 1).padStart(2, "0")}</i>
+                        <span className="sh-mt">{m}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {hasArticle && (
+              <section className="sh-articles" id="sh-article">
+                <div className="sh-mhead" data-rv>
+                  <h2 className="sh-hd">
+                    特集記事<s>|</s>
+                    {shop.headline || `${shop.name}について`}
+                  </h2>
+                </div>
+                <div className="sh-art">
+                  <div className="sh-art-main">
+                    {body.map((pn, bi) => (
+                      <article key={pn.no} className="sh-pn" id={`sh-p-${pn.no}`} data-rv>
+                        <h3 className="sh-pn-h">
+                          <em>{String(bi + 1).padStart(2, "0")}</em>
+                          <span>{pn.heading}</span>
+                        </h3>
+                        {pn.sub && <p className="sh-pn-sub">{pn.sub}</p>}
+                        {pn.open.map((t, i) => (
+                          <p key={i} className="sh-pn-p">
+                            {t}
+                          </p>
+                        ))}
+                        {pn.rest.length > 0 && (
+                          <details className="sh-more-d">
+                            <summary>
+                              <span className="sh-more-open">続きを読む</span>
+                              <span className="sh-more-close">閉じる</span>
+                            </summary>
+                            {pn.rest.map((t, i) => (
+                              <p key={i} className="sh-pn-p">
+                                {t}
+                              </p>
+                            ))}
+                          </details>
+                        )}
+                        {pn.specs.length > 0 && (
+                          <dl className="sh-specs">
+                            {pn.specs.map((sp) => (
+                              <div key={sp.k}>
+                                <dt>{sp.k}</dt>
+                                <dd>{sp.v}</dd>
+                              </div>
+                            ))}
+                          </dl>
+                        )}
+                      </article>
                     ))}
-                  </ol>
-                </aside>
-              </div>
-            </section>
-          </div>
+                    {shop.quote && (
+                      <blockquote className="sh-quote" data-rv>
+                        <p>{shop.quote}</p>
+                        {shop.quoteCite && <cite>{shop.quoteCite}</cite>}
+                      </blockquote>
+                    )}
+                    {shop.closing.length > 0 && (
+                      <div className="sh-closing" data-rv>
+                        {shop.closing.map((t, i) => (
+                          <p key={i} className="sh-pn-p">
+                            {t}
+                          </p>
+                        ))}
+                      </div>
+                    )}
+                    {checked && <p className="sh-checked">情報の確認日 {checked}</p>}
+                  </div>
+                  {body.length > 0 && (
+                    <aside className="sh-toc" aria-label="この記事の内容">
+                      <p className="sh-toc-h">
+                        <LeafSvg />
+                        この記事の内容
+                      </p>
+                      <ol>
+                        {body.map((pn, bi) => (
+                          <li key={pn.no}>
+                            <a href={`#sh-p-${pn.no}`} className="sh-pt">
+                              <em>{String(bi + 1).padStart(2, "0")}</em>
+                              <span>{pn.heading}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ol>
+                    </aside>
+                  )}
+                </div>
+              </section>
+            )}
+          </div>}
 
           {/* ----- 右の列 ----- */}
           <div className="sh-right">
-            <section className="sh-card sh-rsv" data-rv>
-              <a href="tel:0364550123" className="sh-call gr-shimmer gr-press">
-                <PhoneSvg s={19} />
-                電話で予約する
-              </a>
-              <p className="sh-tel">
-                <PhoneSvg s={21} c="#1d211e" />
-                03-6455-0123
-              </p>
-              <p className="sh-hours">受付時間 9:00〜21:00</p>
-              <Link href={SHOP_HREF} className="sh-web gr-press">
-                <CalSvg />
-                WEBで予約する
-                <svg viewBox="0 0 24 24" width="12" height="12" className="chev" aria-hidden="true">
-                  <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-              <ul className="sh-mini" data-rv-group>
-                {MINI.map((m, i) => (
-                  <li key={i} className="gr-hov" data-rv="zoom">
-                    <img className="gr-bounce" src={`${P}/mi${i + 1}.webp`} alt="" width={28} height={28} />
-                    <span>
-                      {m[0]}
-                      {m[1] && (
-                        <>
-                          <br />
-                          {m[1]}
-                        </>
-                      )}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            <section className="sh-card sh-rsv" aria-label="電話・予約" data-rv>
+              {phoneLink ? (
+                <TapLink href={phoneLink.href} kind="phone" storeId={shop.id} className="sh-call gr-shimmer gr-press">
+                  <PhoneSvg s={19} />
+                  電話する
+                </TapLink>
+              ) : null}
+              {phoneText && (
+                <p className="sh-tel">
+                  <PhoneSvg s={21} c="#1d211e" />
+                  {phoneText}
+                </p>
+              )}
+              {hoursLines[0] && <p className="sh-hours">営業時間 {hoursLines[0]}{hoursLines.length > 1 ? " ほか" : ""}</p>}
+              {second && (
+                <TapLink href={second.href} kind={second.kind === "reserve" ? "reserve" : "website"} storeId={shop.id} external={second.external} className="sh-web gr-press">
+                  {second.kind === "reserve" ? <CalSvg /> : <GlobeSvg />}
+                  {second.kind === "reserve" ? "予約ページを開く" : "公式サイトを開く"}
+                  <svg viewBox="0 0 24 24" width="12" height="12" className="chev" aria-hidden="true">
+                    <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </TapLink>
+              )}
+              {tags.length > 0 && (
+                <ul className="sh-mini" data-rv-group>
+                  {tags.slice(0, 3).map((t) => (
+                    <li key={t} className="gr-hov" data-rv="zoom">
+                      <span className="gr-bounce">
+                        <CheckSvg />
+                      </span>
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
 
             <section className="sh-card sh-info" id="sh-access" data-rv>
-              <h2 className="sh-hd">基本情報</h2>
+              <h2 className="sh-hd">店舗情報</h2>
               <dl className="sh-tbl">
                 <div>
-                  <dt>院名</dt>
-                  <dd>マチノワ整体院 渋谷本院</dd>
+                  <dt>店名</dt>
+                  <dd>{shop.name}</dd>
                 </div>
-                <div>
-                  <dt>住所</dt>
-                  <dd>
-                    〒150-0002
-                    <br />
-                    東京都渋谷区渋谷1-12-8 渋谷東ビル4F
-                  </dd>
-                  <span className="pin">
-                    <PinSvg w={12} h={16} />
-                  </span>
-                </div>
-                <div>
-                  <dt>アクセス</dt>
-                  <dd>
-                    JR渋谷駅 東口から徒歩3分
-                    <br />
-                    東京メトロ B1出口から徒歩2分
-                  </dd>
-                </div>
-                <div>
-                  <dt>営業時間</dt>
-                  <dd>9:00〜21:00 (最終受付 20:00)</dd>
-                </div>
-                <div>
-                  <dt>定休日</dt>
-                  <dd>不定休</dd>
-                </div>
-                <div>
-                  <dt>支払い方法</dt>
-                  <dd>現金 / クレジットカード / 電子マネー / QR決済</dd>
-                </div>
+                {shop.facts
+                  .filter((f) => f.k !== "電話")
+                  .map((f) => (
+                    <div key={f.k}>
+                      <dt>{f.k}</dt>
+                      <dd>
+                        {f.v.map((line, i) => (
+                          <span key={i} className="sh-ln">
+                            {line}
+                          </span>
+                        ))}
+                      </dd>
+                    </div>
+                  ))}
+                {phoneText && (
+                  <div>
+                    <dt>電話</dt>
+                    <dd>{phoneText}</dd>
+                  </div>
+                )}
+                {siteLink && (
+                  <div>
+                    <dt>公式サイト</dt>
+                    <dd>
+                      <TapLink href={siteLink.href} kind="website" storeId={shop.id} external className="sh-ext">
+                        公式サイトを開く
+                      </TapLink>
+                    </dd>
+                  </div>
+                )}
+                {snsLinks.length > 0 && (
+                  <div>
+                    <dt>SNS</dt>
+                    <dd className="sh-sns">
+                      {snsLinks.map((l) => (
+                        <TapLink key={l.kind} href={l.href} kind={l.kind as "instagram" | "tiktok" | "x" | "facebook" | "line"} storeId={shop.id} external={l.external} className="sh-ext">
+                          {l.label}
+                        </TapLink>
+                      ))}
+                    </dd>
+                  </div>
+                )}
+                {sources.length > 0 && (
+                  <div>
+                    <dt>情報の出どころ</dt>
+                    <dd className="sh-sns">
+                      {sources.map((s) => (
+                        <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer" className="sh-ext">
+                          {s.label}
+                          <span className="gr-sr">(別のタブで開きます)</span>
+                        </a>
+                      ))}
+                    </dd>
+                  </div>
+                )}
+                {checked && (
+                  <div>
+                    <dt>確認日</dt>
+                    <dd>{checked}</dd>
+                  </div>
+                )}
               </dl>
-              <div className="sh-map">
-                <div className="sh-mapimg" data-scrollp>
-                  <img src={`${P}/map.webp`} alt="" width={290} height={136} />
-                </div>
-                <div className="sh-mapcard gr-float">
-                  <PinSvg w={20} h={27} />
-                  <span>
-                    <b>マチノワ整体院 渋谷本院</b>
-                    <i>渋谷駅から徒歩3分</i>
+              {mapLink && (
+                <TapLink href={mapLink.href} kind="map" storeId={shop.id} external={mapLink.external} className="sh-map gr-press">
+                  <span className="sh-mapcard gr-float">
+                    <PinSvg w={20} h={27} />
+                    <span>
+                      <b>{shop.name}</b>
+                      <i>{shop.address}</i>
+                    </span>
                   </span>
-                </div>
-              </div>
-            </section>
-
-            <section className="sh-card sh-eq" data-rv>
-              <div className="sh-mhead">
-                <h2 className="sh-hd">院の設備・雰囲気</h2>
-                <Link href={SHOP_HREF} className="sh-more gr-hov">
-                  もっと見る
-                  <ArrowSvg />
-                </Link>
-              </div>
-              <div className="sh-eqs" data-rv-group>
-                {["eq1", "eq2"].map((k, i) => (
-                  <figure key={k} className="gr-zoom sh-eqp" data-rv="zoom">
-                    <img src={`${P}/${k}.webp`} alt="" width={i ? 144 : 134} height={80} />
-                  </figure>
-                ))}
-              </div>
+                  <span className="sh-mapbtn">
+                    地図を開く
+                    <ArrowSvg />
+                  </span>
+                </TapLink>
+              )}
             </section>
           </div>
         </div>
+
+        {/* ----- あわせて読む(同じ県・同じ種類の店) ----- */}
+        {sameArea.length > 0 && (
+          <section className="sh-rel" aria-labelledby="sh-rel-a">
+            <h2 className="sh-hd" id="sh-rel-a" data-rv>
+              同じ県の店<s>|</s>
+              {shop.prefName}
+            </h2>
+            <ul className="sh-rel-g" data-rv-group>
+              {sameArea.map((s) => (
+                <li key={s.id} data-rv>
+                  <ShopCard shop={s} hours={false} as="h3" />
+                </li>
+              ))}
+            </ul>
+            <p className="sh-rel-more" data-rv>
+              <Link href={searchHref({ pref: shop.prefSlug })} className="sh-more gr-hov">
+                {shop.prefName}の店をすべて見る
+                <ArrowSvg />
+              </Link>
+            </p>
+          </section>
+        )}
+        {sameKind.length > 0 && (
+          <section className="sh-rel" aria-labelledby="sh-rel-k">
+            <h2 className="sh-hd" id="sh-rel-k" data-rv>
+              同じ種類の店<s>|</s>
+              {shop.kindName}
+            </h2>
+            <ul className="sh-rel-g" data-rv-group>
+              {sameKind.map((s) => (
+                <li key={s.id} data-rv>
+                  <ShopCard shop={s} hours={false} as="h3" />
+                </li>
+              ))}
+            </ul>
+            <p className="sh-rel-more" data-rv>
+              <Link href={searchHref({ kind: shop.kindSlug })} className="sh-more gr-hov">
+                {shop.kindName}の店をすべて見る
+                <ArrowSvg />
+              </Link>
+            </p>
+          </section>
+        )}
       </div>
 
-      {/* スマホ: 下に固定の細い帯(電話・WEB 予約) */}
-      <div className="sh-fixbar" aria-label="予約">
-        <a href="tel:0364550123" className="sh-fix-call gr-press">
-          <PhoneSvg s={17} />
-          電話で予約
-        </a>
-        <Link href={SHOP_HREF} className="sh-fix-web gr-press">
-          <CalSvg />
-          WEB予約
-        </Link>
-      </div>
+      {/* スマホ: 下に固定の細い帯(電話・予約ページ/公式サイト)。上の予約の箱と同じ出し分け */}
+      {(phoneLink || second) && (
+        <div className="sh-fixbar" aria-label="電話・予約">
+          {phoneLink && (
+            <TapLink href={phoneLink.href} kind="phone" storeId={shop.id} className="sh-fix-call gr-press">
+              <PhoneSvg s={17} />
+              電話する
+            </TapLink>
+          )}
+          {second && (
+            <TapLink href={second.href} kind={second.kind === "reserve" ? "reserve" : "website"} storeId={shop.id} external={second.external} className="sh-fix-web gr-press">
+              {second.kind === "reserve" ? <CalSvg /> : <GlobeSvg />}
+              {second.kind === "reserve" ? "予約ページ" : "公式サイト"}
+            </TapLink>
+          )}
+        </div>
+      )}
     </div>
   );
 }
