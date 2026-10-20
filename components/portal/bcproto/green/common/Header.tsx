@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BASE, SEARCH_HREF, SCENE_HREF, GUIDE_HREF, IMG_COMMON } from "./site";
+import { BASE, SEARCH_HREF, SPECIAL_HREF, PORTAL_HREF, TOP_AREA_HREF, TOP_KIND_HREF, TOP_TAG_HREF, IMG_COMMON } from "./site";
 
+// 本番の行き先。お気に入り・閲覧履歴は本番に機能が無いので置かない。最初のページの節(id="gr-area" など)へ飛ぶ。
 const NAV: Array<{ label: string; href: string }> = [
-  { label: "エリアから探す", href: SEARCH_HREF },
-  { label: "施術の種類から探す", href: SEARCH_HREF },
-  { label: "お悩みから探す", href: SEARCH_HREF },
-  { label: "特集", href: SCENE_HREF },
-  { label: "お役立ちコラム", href: GUIDE_HREF },
+  { label: "エリアから探す", href: TOP_AREA_HREF },
+  { label: "施術の種類から探す", href: TOP_KIND_HREF },
+  { label: "こだわりから探す", href: TOP_TAG_HREF },
+  { label: "特集記事", href: SPECIAL_HREF },
 ];
 
 /**
  * 3 枚の見本に共通の上の帯(高さは --gr-hh。最初・探す=54/52px、店舗詳細=48px)。
- * ロゴ(見本から切り出した画像)+ ナビ + お気に入り・閲覧履歴 + 緑の「エリアを選ぶ」。
+ * ロゴ(見本から切り出した画像)+ ナビ + 緑の「エリアを選ぶ」(= 探す)。
  * 隠れる/現れる・上端の線は GreenFx が受け持つ([data-gr-head])。
  */
 export default function Header() {
@@ -34,19 +34,6 @@ export default function Header() {
           ))}
         </nav>
         <div className="gr-head-r">
-          <Link href={SEARCH_HREF} className="gr-hr-i">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M12 20.5s-8-4.9-8-11A4.6 4.6 0 0 1 12 6.6 4.6 4.6 0 0 1 20 9.5c0 6.1-8 11-8 11z" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
-            </svg>
-            <span>お気に入り</span>
-          </Link>
-          <Link href={SEARCH_HREF} className="gr-hr-i">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" strokeWidth="1.7" />
-              <path d="M12 7.2V12l3.2 2" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span>閲覧履歴</span>
-          </Link>
           <Link href={SEARCH_HREF} className="gr-area-btn gr-press gr-shimmer">
             <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
               <path d="M12 21.2s-6.6-6-6.6-11.3a6.6 6.6 0 0 1 13.2 0C18.6 15.2 12 21.2 12 21.2z" fill="currentColor" />
@@ -71,7 +58,10 @@ export default function Header() {
           </Link>
         ))}
         <Link href={SEARCH_HREF} onClick={() => setOpen(false)}>
-          お気に入り・閲覧履歴
+          店を探す
+        </Link>
+        <Link href={PORTAL_HREF} onClick={() => setOpen(false)}>
+          マチノワ トップ
         </Link>
       </nav>
     </header>

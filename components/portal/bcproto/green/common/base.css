@@ -253,3 +253,8 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
   .gr-edge i { translate: none !important; }
   .gr-head.is-hidden { translate: none; }
 }
+
+/* 本番の枠(GreenShell)の「本文へ移動」。ふだんは画面の外、フォーカスで現れる */
+.gr-skip { position: absolute; left: 12px; top: -72px; z-index: 200; padding: 12px 18px; background: var(--gr-g); color: #fff; font-size: 14px; line-height: 1; border-radius: 4px; transition: top 0.2s; }
+.gr-skip:focus { top: 12px; outline: 2px solid #fff; outline-offset: 2px; }
+.gr-main:focus { outline: none; }
