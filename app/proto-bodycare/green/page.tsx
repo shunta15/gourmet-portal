@@ -1,7 +1,6 @@
+import TopPage from "@/components/portal/bcproto/green/top/TopPage";
+
+// 最初のページ(見本 mock-top の完全再現)。共通の枠・ヘッダー・フッターは layout.tsx。
 export default function Page() {
-  return (
-    <section data-gr-page="top" style={{ padding: "140px 24px 100px", textAlign: "center", fontSize: 16 }}>
-      準備中(最初のページ)
-    </section>
-  );
+  return <TopPage />;
 }
