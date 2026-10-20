@@ -215,3 +215,33 @@
 @keyframes gt-sprig { from { rotate: -1.6deg; } to { rotate: 2.2deg; } }
 @media (max-width: 1080px) { .gt-sprig { opacity: 0.4; } .gt-sprig--l { left: -30px; } .gt-sprig--r { left: auto; right: -18px; } }
 @media (prefers-reduced-motion: reduce) { .gt-sprig img { animation: none; } }
+
+/* ---------- 見比べ後の補正(見本との差を詰める) ---------- */
+.gr-root:has([data-gr-page="top"]) { --gr-paper: #fdfdfd; background: #fdfdfd; }
+.gt { --gt-ls1: -0.03em; --gt-ls2: -0.06em; }
+.gt .gt-h1, .gt h2, .gt .gt-bn-t b { font-family: var(--gt-ser), var(--gr-ff-min); }
+.gt-worry { background: #f0f5ee; }
+.gt-worry::before { display: none; }
+@media (max-width: 1080px) { .gt-sprig--r { visibility: hidden; } }
+@media (min-width: 1081px) {
+  .gt { --gt-ls1: -0.069em; --gt-ls2: -0.131em; }
+  .gt .gt-h1 { font-size: 50px; top: 74px; }
+  /* ヘッダー: 見本は左端の若葉が見え、白い面は右の「お気に入り」の手前でほぼ切れる */
+  .gr-root:has([data-gr-page="top"]) .gr-head.gr-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.96) 96px, rgba(255, 255, 255, 0.96) 61.5%, rgba(255, 255, 255, 0) 63.5%); }
+  .gr-root:has([data-gr-page="top"]) .gr-head:not(.is-scrolled) .gr-head-r .gr-hr-i:nth-child(2) { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+  .gr-root:has([data-gr-page="top"]) .gr-head:not(.is-scrolled) .gr-area-btn { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.92), 0 3px 10px rgba(30, 50, 35, 0.2); }
+  /* 手書き・丸い札の文字は見本のほうが濃くて太い */
+  .gt-hand { left: 1258px; top: 72px; font-size: 27px; letter-spacing: -0.2em; line-height: 36px; rotate: -15deg; color: #191b1c; -webkit-text-stroke: 0.3px #191b1c; }
+  .gt-hand .gr-wl:nth-child(2) { margin-left: -2px; }
+  .gt-hand .gr-wl:nth-child(3) { margin-left: 12px; }
+  .gt-badge p { color: #2b2a22; -webkit-text-stroke: 0.4px #2b2a22; }
+  /* 節の見出し(見本の書体・字の大きさに合わせる) */
+  .gt-types-h h2 { letter-spacing: 0.052em; }
+  .gt-worry-h h2 { font-size: 22px; letter-spacing: 0.065em; }
+  .gt-rec-h { gap: 6px; }
+  .gt-rec-h h2 { font-size: 18px; letter-spacing: 0.055em; }
+  .gt-area-h h2 { font-size: 18px; letter-spacing: -0.04em; }
+  .gt-shop-n { margin-top: 1px; }
+  .gt-guide-t small { font-size: 12px; letter-spacing: -0.055em; color: #2a2e2c; font-weight: 400; }
+  .gt-guide-t b { font-size: 15.4px; letter-spacing: -0.07em; font-weight: 500; }
+}

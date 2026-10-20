@@ -1,7 +1,11 @@
 import Link from "next/link";
+import { Noto_Serif_JP } from "next/font/google";
 import { Reveal, MaskLines, Write, Heart, Stars } from "@/components/portal/bcproto/green/common/Motion";
 import { IMG, SEARCH_HREF, SHOP_HREF, GUIDE_HREF, SCENE_HREF } from "@/components/portal/bcproto/green/common/site";
 import "./top.css";
+
+// 見本の見出しは標準的な明朝(Noto Serif JP の中太)に近い。この最初のページの大見出しと節の見出しだけに使う。
+const ser = Noto_Serif_JP({ weight: ["500", "600", "700"], variable: "--gt-ser", display: "swap", preload: false });
 
 const T = `${IMG}/top`;
 
@@ -53,7 +57,7 @@ const AREAS = [
 
 export default function TopPage() {
   return (
-    <div data-gr-page="top" className="gt">
+    <div data-gr-page="top" className={`gt ${ser.variable}`}>
       {/* ================= ヒーロー ================= */}
       <section className="gt-hero">
         <div className="gt-hero-bg" aria-hidden="true">
@@ -61,7 +65,7 @@ export default function TopPage() {
           <img className="gr-kb" src={`${T}/hero.webp`} width={1448} height={355} alt="" fetchPriority="high" />
         </div>
         <div className="gt-hero-in">
-          <MaskLines as="h1" className="gt-h1 gr-min" lines={[<span key="1" style={{ letterSpacing: "-0.02em" }}>からだが整うと、</span>, <span key="2" style={{ letterSpacing: "-0.077em" }}>毎日がもっと好きになる。</span>]} step={190} delay={150} />
+          <MaskLines as="h1" className="gt-h1 gr-min" lines={[<span key="1" style={{ letterSpacing: "var(--gt-ls1)" }}>からだが整うと、</span>, <span key="2" style={{ letterSpacing: "var(--gt-ls2)" }}>毎日がもっと好きになる。</span>]} step={190} delay={150} />
           <p className="gt-lead" data-rv style={{ ["--d" as string]: "450ms" }}>
             渋谷エリアの整体院・接骨院・鍼灸院・マッサージ・
             <br />
