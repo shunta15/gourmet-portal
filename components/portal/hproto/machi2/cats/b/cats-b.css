@@ -1,0 +1,91 @@
+/* 総合トップの業種の節 案 B「線画(タイポ主体)」(試作 /proto-home/cat-b 専用。CatsB.tsx が使う)。
+   写真なし。紙のような生成りの地(#f7f3ea)・hairline(#d9d2c5)の格子・線画のアイコン(紺 #1f3d73・1.5px)・太めのゴシック。
+   箱は Lower の `.h2-cats.h2-cats-x`(1440 で 1182u × 330u)。701 以上は .cb がその箱いっぱい(absolute)、〜700 は中身の高さ。
+   寸法は他の部品と同じく「見本の画素 × var(--u)」。小さい文字だけ下限(px)を持たせて、タブレット幅でも読めるようにする */
+
+.cb {
+  --cb-paper: #f7f3ea; --cb-rule: #d9d2c5; --cb-ink: #1f3d73; --cb-sub: #566078;
+  position: absolute; inset: 0; isolation: isolate;
+  display: flex; flex-direction: column;
+  padding: calc(24 * var(--u)) calc(40 * var(--u)) 0;
+  font-family: var(--cb-kaku), "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  color: var(--cb-ink);
+}
+/* 地は画面の左右いっぱい(1441 以上でも箱の外まで)。上下に hairline */
+.cb::before { content: ""; position: absolute; inset: 0 -50vw; z-index: -1; background: var(--cb-paper); border-block: 1px solid var(--cb-rule); }
+
+/* 見出し: 左寄せ。右端に小さな添え(事実だけ) */
+.cb-head { display: flex; align-items: baseline; justify-content: space-between; gap: calc(24 * var(--u)); padding-bottom: calc(15 * var(--u)); }
+.cb-ttl { margin: 0; font-size: max(19px, calc(30 * var(--u))); font-weight: 700; line-height: 1.3; letter-spacing: .02em; font-feature-settings: "palt"; white-space: nowrap; }
+.cb-note { margin: 0; font-size: max(11px, calc(13 * var(--u))); font-weight: 500; letter-spacing: .1em; color: var(--cb-sub); white-space: nowrap; }
+
+/* 格子: 横の罫は各行の下、縦の罫は 2・3 列目の左。外側の左右には罫を引かない(下は地の hairline が閉じる) */
+.cb-grid { flex: 1; min-height: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--cb-rule); }
+.cb-grid > li { min-width: 0; }
+.cb-grid > li:nth-child(-n+3) { border-bottom: 1px solid var(--cb-rule); }
+.cb-grid > li:not(:nth-child(3n+1)) { border-left: 1px solid var(--cb-rule); }
+
+/* 1 項目: [線画] 業種名 … 見る → / サブ文 */
+.cb-cell {
+  position: relative; display: grid; height: 100%;
+  grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "ic name go" "ic sub go";
+  align-content: center; align-items: center; column-gap: calc(22 * var(--u)); row-gap: calc(3 * var(--u));
+  padding: 0 calc(28 * var(--u)); color: inherit; text-decoration: none;
+}
+.cb-grid > li:nth-child(3n+1) .cb-cell { padding-left: 0; }
+.cb-grid > li:nth-child(3n) .cb-cell { padding-right: 0; }
+.cb-cell:focus-visible { outline: 2px solid var(--cb-ink); outline-offset: -4px; }
+
+.cb-ic { grid-area: ic; width: max(32px, calc(52 * var(--u))); height: max(32px, calc(52 * var(--u))); overflow: visible; stroke-width: 1.5px; transition: stroke-width .25s ease; }
+.cb-ic * { vector-effect: non-scaling-stroke; }
+.cb-name { grid-area: name; align-self: end; font-size: max(15px, calc(27 * var(--u))); font-weight: 900; line-height: 1.25; letter-spacing: .03em; font-feature-settings: "palt"; text-decoration: underline 1.5px transparent; text-underline-offset: .22em; transition: text-decoration-color .25s ease; }
+.cb-sub { grid-area: sub; align-self: start; font-size: max(11px, calc(13 * var(--u))); font-weight: 500; line-height: 1.45; letter-spacing: .02em; color: var(--cb-sub); }
+.cb-go { grid-area: go; align-self: end; white-space: nowrap; font-size: max(11px, calc(13 * var(--u))); font-weight: 700; letter-spacing: .06em; line-height: 1.45; }
+.cb-arr { display: inline-block; transition: transform .25s ease; }
+
+/* ホバー: 線のまま太く+下線(押している間は少し沈む) */
+@media (hover: hover) {
+  .cb-cell:hover .cb-ic, .cb-cell:focus-visible .cb-ic { stroke-width: 2.2px; }
+  .cb-cell:hover .cb-name, .cb-cell:focus-visible .cb-name { text-decoration-color: currentColor; }
+  .cb-cell:hover .cb-arr, .cb-cell:focus-visible .cb-arr { transform: translateX(calc(4 * var(--u))); }
+}
+.cb-cell:active { opacity: .8; }
+
+/* 開いた瞬間(.cb が見えたとき): 見出し → 6 項目の順に、少しだけ下から。常時動く物はない */
+@media (prefers-reduced-motion: no-preference) {
+  .cb[data-io]:not(.is-in) :is(.cb-head, .cb-cell) { opacity: 0; }
+  .cb.is-in .cb-head { animation: cb-in .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .cb.is-in .cb-cell { animation: cb-in .8s cubic-bezier(.2, .7, .2, 1) calc(140ms + var(--i, 0) * 70ms) backwards; }
+}
+@keyframes cb-in { from { opacity: 0; transform: translateY(calc(10 * var(--u))); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .cb-ic, .cb-name, .cb-arr { transition: none; }
+}
+
+/* タブレット(701〜860): 項目の幅が狭いので「見る →」をサブ文の下に置き、アイコンを少し小さく・間を詰める(業種名・サブ文は 1 行のまま) */
+@media (min-width: 701px) and (max-width: 860px) {
+  .cb-cell { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "ic name" "ic sub" "ic go"; column-gap: calc(18 * var(--u)); padding: 0 calc(18 * var(--u)); }
+  .cb-name { white-space: nowrap; }
+  .cb-go { align-self: start; margin-top: 2px; }
+}
+
+/* スマホ(〜700): 箱は中身の高さ(Lower 側の padding は .cb に移す)。2 列×3 行、項目は縦に積む */
+@media (max-width: 700px) {
+  .h2-root .h2-cats.h2-cats-x:has(> .cb) { padding: 0; }
+  .cb { position: relative; inset: auto; padding: 30px 14px 0; }
+  .cb-head { flex-wrap: wrap; gap: 2px 12px; padding-bottom: 16px; }
+  .cb-ttl { font-size: 19px; }
+  .cb-note { font-size: 11px; }
+  .cb-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; }
+  .cb-grid > li, .cb-grid > li:nth-child(-n+3) { border-bottom: 1px solid var(--cb-rule); }
+  .cb-grid > li:nth-child(n+5) { border-bottom: 0; }
+  .cb-grid > li:nth-child(odd) { border-left: 0; }
+  .cb-grid > li:nth-child(even) { border-left: 1px solid var(--cb-rule); }
+  .cb-cell { height: auto; grid-template-columns: minmax(0, 1fr); grid-template-areas: "ic" "name" "sub" "go"; justify-items: start; align-content: start; row-gap: 0; padding: 18px 12px 16px 0; }
+  .cb-grid > li:nth-child(even) .cb-cell { padding-left: 16px; padding-right: 0; }
+  .cb-grid > li:nth-child(odd) .cb-cell { padding-left: 0; padding-right: 12px; }
+  .cb-ic { width: 36px; height: 36px; margin-bottom: 10px; }
+  .cb-name { align-self: start; font-size: 20px; }
+  .cb-sub { font-size: 11.5px; margin-top: 3px; }
+  .cb-go { align-self: start; font-size: 12px; margin-top: 10px; }
+}
