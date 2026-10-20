@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Page from "@/components/portal/hproto/machi2/Page";
+import { cardPhotos } from "@/components/portal/hproto/machi2/cards";
 import { CATCH, P2, P3 } from "@/components/portal/hproto/machi2/copy";
 import { latestNews } from "@/components/portal/hproto/machi2/news";
 import { seasonNowJst } from "@/components/portal/hproto/machi2/season";
@@ -9,6 +10,6 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = { title: CATCH, description: `${P2.replace("\n", "")}${P3.replace("\n", "")}`, robots: { index: false, follow: false } };
 
-export default function Route() {
-  return <Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} airy />;
+export default async function Route() {
+  return <Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} cards={await cardPhotos()} airy />;
 }

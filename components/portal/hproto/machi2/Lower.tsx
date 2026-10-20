@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Slider from "./Slider";
-import { IMG } from "./const";
+import { CARD_FEATURE, IMG } from "./const";
+import type { CardPhotos } from "./cards";
 import type { NewsRow } from "./news";
 import { PROD_FOOT } from "./prodData";
 import "./lower.css";
@@ -34,10 +35,13 @@ const NEWS = [
   { img: "news4.webp", date: "2025.03.28", t: ["ペットと楽しめる公園特集を追加しました"], y: 850 },
 ];
 const CARDS = [
-  { k: "story", x: 41, w: 252, t: "まちのストーリー", d: ["宮崎・高岡町で34年続くうどん屋を", "お孫さんが受け継ぐ話をご紹介"], href: "/feature/花見うどん・ラーメン", b: { x: 168, y: 5, w: 84, h: 50, l: ["34年続く店を", "孫が受け継ぐ"], f: 10.2 } },
-  { k: "family", x: 310, w: 267, t: "家族でおでかけ", d: ["上野動物園や葛西臨海公園など、", "東京の子連れスポットを5つご紹介"], href: "/feature/new-tokyo-family", b: { x: 189, y: 4, w: 74, h: 46, l: ["年齢で選べる", "定番の施設。"], f: 10.2 } },
+  { k: "story", x: 41, w: 252, t: "まちのストーリー", d: ["宮崎・高岡町で34年続くうどん屋を", "お孫さんが受け継ぐ話をご紹介"], href: `/feature/${CARD_FEATURE.story}`, op: "50% 50%", b: { x: 168, y: 5, w: 84, h: 50, l: ["34年続く店を", "孫が受け継ぐ"], f: 10.2 } },
+  { k: "family", x: 310, w: 267, t: "家族でおでかけ", d: ["上野動物園や葛西臨海公園など、", "東京の子連れスポットを5つご紹介"], href: `/feature/${CARD_FEATURE.family}`, op: "50% 50%", b: { x: 189, y: 4, w: 74, h: 46, l: ["年齢で選べる", "定番の施設。"], f: 10.2 } },
   { k: "pet", x: 591, w: 267, t: "ペットと楽しめるお店", d: ["愛犬と食事できるドッグレストランの", "区画がある、旭川のカフェをご紹介"], href: "/restaurant/r304", b: { x: 188, y: 3, w: 76, h: 46, l: ["愛犬と一緒に", "食事できる。"], f: 10.2 } },
 ];
+
+/** 記事の実際の写真を出すカード(story・family)の写真。渡されていない・他のカードは undefined(= 今までの画像) */
+const ph = (k: string, cards?: CardPhotos) => (k === "story" || k === "family" ? cards?.[k] : undefined);
 
 const DEMO_FOOT = {
   l: [["マチノワについて", "/about"], ["掲載をご検討の方へ", "/contact"], ["お知らせ", "/feature"], ["よくあるご質問", "/contact"]] as [string, string][],
@@ -47,7 +51,7 @@ const DEMO_FOOT = {
 const NEWS_Y = [722, 764, 806, 850];
 
 /** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。 */
-export default function Lower({ prod = false, news }: { prod?: boolean; news?: NewsRow[] }) {
+export default function Lower({ prod = false, news, cards }: { prod?: boolean; news?: NewsRow[]; cards?: CardPhotos }) {
   const foot = prod ? PROD_FOOT : DEMO_FOOT;
   const rows = prod && news
     ? news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href, real: true }))
@@ -107,7 +111,7 @@ export default function Lower({ prod = false, news }: { prod?: boolean; news?: N
         <div className="h2-cardlist h2-strip" data-io>
           {CARDS.map((c, i) => (
             <Link key={c.k} href={c.href} className="h2-a h2-card h2-press" style={{ ...P(c.x, 902, c.w, CH), ["--i" as string]: i }}>
-              <span className="h2-cph"><img src={`${B}card-${c.k}.webp`} alt="" /></span>
+              <span className="h2-cph">{ph(c.k, cards) ? <img src={ph(c.k, cards)} alt="" decoding="async" style={{ objectPosition: c.op }} /> : <img src={`${B}card-${c.k}.webp`} alt="" />}</span>
               <span className="h2-cbub h2-kure" style={{ left: `calc(${c.b.x} * var(--u))`, top: `calc(${c.b.y} * var(--u))`, width: `calc(${c.b.w} * var(--u))`, height: `calc(${c.b.h} * var(--u))`, fontSize: `calc(${c.b.f} * var(--u))`, animationDelay: `${0.5 + i * 0.15}s, ${i * 0.7}s` }}><span>{c.b.l[0]}</span><span>{c.b.l[1]}</span></span>
               <b className="h2-ctt">{c.t}</b>
               <span className="h2-cdd">{c.d[0]}<br />{c.d[1]}</span>

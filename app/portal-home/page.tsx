@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PortalHome from "@/components/portal/pages/home";
 import Machi2Page from "@/components/portal/hproto/machi2/Page";
+import { cardPhotos } from "@/components/portal/hproto/machi2/cards";
 import { latestNews } from "@/components/portal/hproto/machi2/news";
 import { seasonNowJst } from "@/components/portal/hproto/machi2/season";
 import { HOME_AIRY, HOME_DESIGN } from "@/lib/portal/homeDesign";
@@ -28,7 +29,8 @@ export const metadata: Metadata = {
 // machi2 は最初の季節を日本時間の今日の月で決めるので、1 時間ごとに作り直す（revalidate）。
 export const revalidate = 3600;
 
-export default function Page() {
-  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} airy={HOME_AIRY} />;
+export default async function Page() {
+  // 「読みもの」カードの 2 枚(まちのストーリー・家族でおでかけ)は、リンク先の記事の実際の写真(記事ページと同じ取り方)
+  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} cards={await cardPhotos()} airy={HOME_AIRY} />;
   return <PortalHome />;
 }
