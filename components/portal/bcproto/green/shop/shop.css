@@ -23,6 +23,7 @@
 .sh-crumb i { width: 5px; height: 5px; border-top: 1px solid #777; border-right: 1px solid #777; rotate: 45deg; margin: 0 4px 0 -3px; }
 .sh-tags { left: 13px; top: 88px; display: flex; gap: 10px; }
 .sh .sh-tag { height: 22px; padding: 0 10px; font-size: 10.5px; border-radius: 9px; background: rgba(255, 255, 255, 0.92); border-color: #e4e2da; color: #444; box-shadow: 0 1px 2px rgba(40, 60, 45, 0.04); }
+.sh .sh-tag:hover { background: var(--gr-g); color: #fff; border-color: var(--gr-g); }
 .sh-h1 { left: 13px; top: 125px; margin: 0; font: 700 33px/40px var(--gr-ff-min); letter-spacing: -0.02em; color: #1d211e; white-space: nowrap; }
 .sh-sub { left: 13px; top: 169px; margin: 0; font: 600 20.5px/28px var(--gr-ff-min); letter-spacing: -0.035em; color: #222; white-space: nowrap; }
 .sh-lead { left: 13px; top: 229px; font-size: 13px; line-height: 21px; color: #666; white-space: nowrap; }
@@ -33,7 +34,7 @@
 .sh .sh-rating .gr-stars-b { color: #fff; -webkit-text-stroke: 1px #efc15e; }
 .sh-score { margin-left: 11px; font-size: 20px; font-weight: 700; color: #c4281f; line-height: 1; letter-spacing: 0.01em; }
 .sh-cnt { margin-left: 6px; font-size: 13px; color: #666; }
-.sh-badge { left: 202px; top: 278px; width: 168px; height: 38px; mix-blend-mode: multiply; }
+.sh-badge { left: 202px; top: 278px; width: 168px; height: 38px; }
 .sh-badge .lau-l { position: absolute; left: 0; top: 0; }
 .sh-badge .lau-r { position: absolute; left: 143px; top: 0; }
 .sh-badge .bt { position: absolute; left: 73px; top: 3px; font-size: 10.5px; line-height: 15px; font-weight: 500; color: #a67629; white-space: nowrap; }
@@ -98,7 +99,7 @@
 
 /* 人気のメニュー */
 .sh-menus { margin-top: 12px; }
-.sh-menus .sh-leaf { position: absolute; left: 183px; top: -12px; mix-blend-mode: multiply; pointer-events: none; transform-origin: 20% 90%; }
+.sh-menus .sh-leaf { position: absolute; left: 183px; top: -12px; pointer-events: none; transform-origin: 20% 90%; }
 .sh-mlist { display: grid; grid-template-columns: 285fr 279fr 278fr; gap: 11px; margin: 5px -3px 0; }
 .sh-mcard { position: relative; display: block; height: 150px; border: 1px solid #ebe9e1; border-radius: 10px; background: #fff; overflow: hidden; box-shadow: 0 1px 6px rgba(40, 60, 45, 0.04); }
 .sh-mph { display: block; height: 60px; }
@@ -242,6 +243,8 @@
   .sh-hd { white-space: normal; font-size: 14.5px; }
   .sh-feat { height: auto; display: flex; flex-direction: column; }
   .sh-fphoto { position: relative; width: auto; height: 190px; }
+  .sh-fhand-wrap { left: 20px; top: 62px; }
+  .sh-fhand-wrap .sh-hand { font-size: 15px; line-height: 22px; }
   .sh-fbody { position: relative; left: auto; right: auto; bottom: auto; padding: 12px 14px 0; display: flex; flex-direction: column; gap: 6px; }
   .sh-fbody > * { position: static; }
   .sh-ftag { align-self: flex-start; }
