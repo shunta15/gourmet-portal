@@ -6,7 +6,7 @@ import TocLinks from "./TocLinks";
 import { Arrow, Leaf } from "./parts";
 import "./article.css";
 
-export type Kind = "feature" | "scene" | "guide";
+export type Kind = "feature" | "scene" | "guide" | "special";
 
 export type ArticleProps = {
   kind: Kind;
