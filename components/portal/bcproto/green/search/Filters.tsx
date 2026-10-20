@@ -98,8 +98,8 @@ function Icon({ k }: { k: string }) {
     return (
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
         <circle cx="12" cy="12" r="11" fill={c} />
-        <path d="M12 6.4c3 0 5 2.4 5 5.2 0 2.8-2.2 5-5 5s-5-2.2-5-5c0-2.8 2-5.2 5-5.2z" fill="#fff" />
-        <circle cx="12" cy="12" r="1.8" fill={c} />
+        <path d="M12 5.2v6M9.4 8.8 12 11.4l2.6-2.6" fill="none" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M6.2 12.9c0 3.1 2.5 5.1 5.8 5.1s5.8-2 5.8-5.1c-1.4.9-3.5 1.4-5.8 1.4s-4.4-.5-5.8-1.4z" fill="#fff" />
       </svg>
     );
   return null;

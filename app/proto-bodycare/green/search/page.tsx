@@ -99,13 +99,13 @@ export default function Page() {
             <span aria-current="page">整体院・接骨院・鍼灸院</span>
           </nav>
           <h1 id="gs-h1" className="gs-h1">
-            <MaskLines lines={["渋谷エリアの", "整体院・接骨院・鍼灸院"]} as="span" step={140} delay={120} />
+            <MaskLines lines={["渋谷エリアの", <span key="l2">整体院<span className="gs-dot">・</span>接骨院<span className="gs-dot">・</span>鍼灸院</span>]} as="span" step={140} delay={120} />
           </h1>
           <p className="gs-lead">
             <span data-rv="fade" style={{ ["--d" as string]: "700ms" } as CSSProperties}>
-              渋谷エリアで、からだの不調をケアできる整体院・接骨院・鍼灸院を探せます。
+              <span className="gs-l1">渋谷エリアで、からだの不調をケアできる整体院・接骨院・鍼灸院を探せます。</span>
               <br />
-              あなたにぴったりの院・サロンを見つけて、心もからだも軽やかな毎日を。
+              <span className="gs-l2">あなたにぴったりの院・サロンを見つけて、心もからだも軽やかな毎日を。</span>
             </span>
           </p>
           <Write className="gr-hand gs-hand" lines={["こころも、", "からだも、", "軽やかに。"]} delay={900} step={520} as="p" />

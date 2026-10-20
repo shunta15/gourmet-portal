@@ -135,6 +135,8 @@
 /* ================= PC(見本の 1448px 画面を、画面幅に合わせて等倍〜縮小) ================= */
 @media (min-width: 1081px) {
   .gr-root:has([data-gr-page="search"]) .gr-nav { gap: 26.2px; }
+  .gr-root:has([data-gr-page="search"]) .gr-logo img { width: 213.5px; height: auto; margin-left: 0; }
+  .gr-root:has([data-gr-page="search"]) .gr-area-btn { width: 153.5px; margin-left: -10px; margin-right: 3.5px; padding-right: 14px; gap: 6px; font-size: 12px; border-radius: 18px; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9), 0 0 0 3px rgba(40, 80, 55, 0.35), 0 2px 6px rgba(30, 60, 40, 0.18); }
   .gs-page { --u: clamp(0.75px, calc(100vw / 1448), 1px); }
   .gs-w { width: calc(1448 * var(--u)); margin: 0 auto; }
 
@@ -148,12 +150,19 @@
   .gs-crumb { position: absolute; left: 88u; top: 63u; gap: 0 26u; font-size: 11.5u; line-height: 18u; margin: 0; }
   .gs-crumb > *:not(:first-child)::before { left: -17u; width: 5u; height: 5u; }
   .gs-h1 { position: absolute; left: 88u; top: 94.5u; margin: 0; font-size: 40u; line-height: 53u; font-weight: 600; letter-spacing: 0; white-space: nowrap; }
+  .gs-h1 .gr-ml:nth-child(2) .gr-ml-i { font-size: 43u; }
+  .gs-dot { margin: 0 -9.25u; }
   .gs-lead { position: absolute; left: 88u; top: 204u; margin: 0; font-size: 14.6u; line-height: 22u; width: 640u; }
-  .gs-hand { position: absolute; left: 1290u; top: 84u; z-index: 4; margin: 0; font-size: 23.4u; line-height: 28.5u; color: #2a2d2c; rotate: -12.5deg; transform-origin: 0 0; font-weight: 600; letter-spacing: 0.02em; }
+  .gs-hand { position: absolute; left: 1288u; top: 84u; z-index: 4; margin: 0; font-size: 23.4u; line-height: 28.5u; color: #2a2d2c; rotate: -12.5deg; transform-origin: 0 0; font-weight: 400; letter-spacing: 0.02em; }
+  .gs-hand .gr-wl:nth-child(1) .gr-wl-i { letter-spacing: -0.24em; }
+  .gs-hand .gr-wl:nth-child(2) .gr-wl-i { letter-spacing: -0.17em; }
+  .gs-hand .gr-wl:nth-child(3) .gr-wl-i { letter-spacing: -0.14em; }
+  .gs-hand .gr-wl-i { -webkit-text-stroke: 0.4px currentColor; }
+  .gs-l1 { letter-spacing: 0.25u; } .gs-l2 { letter-spacing: -0.3u; }
   .gs-hand::before { content: ""; position: absolute; left: -46u; top: -52u; width: 250u; height: 200u; z-index: -1; background: radial-gradient(closest-side, rgba(255, 255, 255, 0.93) 0%, rgba(255, 255, 255, 0.88) 55%, rgba(255, 255, 255, 0) 100%); rotate: 12.5deg; pointer-events: none; filter: blur(5px); }
-  .gs-hand .gr-wl:nth-child(2) { margin-left: 3u; }
-  .gs-hand .gr-wl:nth-child(3) { margin-left: 14u; }
-  .gs-badge { left: 1226.5u; top: 181u; right: auto; width: 127u; height: 127u; font-size: 13.9u; line-height: 19.7u; font-weight: 600; color: #3f4a55; z-index: 3; box-shadow: 0 3px 12px rgba(120, 95, 50, 0.14); }
+  .gs-hand .gr-wl:nth-child(2) { margin-left: 0.5u; }
+  .gs-hand .gr-wl:nth-child(3) { margin-left: 9.5u; }
+  .gs-badge { left: 1226.5u; top: 181u; right: auto; width: 127u; height: 127u; font-size: 13.9u; line-height: 19.7u; font-weight: 600; color: #35404b; z-index: 3; box-shadow: 0 3px 12px rgba(120, 95, 50, 0.14); }
   .gs-panel { position: absolute; left: 73u; top: 253u; width: 1130u; height: 67u; display: block; padding: 0; border-radius: 34u; z-index: 2; backdrop-filter: blur(3px); }
   .gs-area { position: absolute; left: 16u; top: 12u; width: 302u; height: 43u; border-radius: 22u; box-shadow: 0 1px 4px rgba(60, 60, 40, 0.06); }
   .gs-area-pin { left: 23u; width: 19u; height: 24u; }
@@ -165,10 +174,10 @@
   .gs-go { position: absolute; right: 1.5u; top: -0.5u; width: 288u; height: 43.5u; margin: 0; border-radius: 22u; font-size: 15u; gap: 0; }
   .gs-go svg { position: absolute; right: 25u; top: 50%; translate: 0 -50%; width: 19u; height: 9u; }
   .gs-kw { position: absolute; left: 82u; top: 323u; height: 25u; margin: 0; display: flex; align-items: center; z-index: 2; }
-  .gs-kw-l { font-size: 11.5u; margin: 0; white-space: nowrap; }
-  .gs-kw ul { gap: 9.5u; margin: 0 0 0 11u; padding: 0; overflow: visible; }
+  .gs-kw-l { font-size: 11.2u; margin: 0; white-space: nowrap; }
+  .gs-kw ul { gap: 9.3u; margin: 0 0 0 12u; padding: 0; overflow: visible; }
   .gs-kw li { width: calc(var(--w) * var(--u)); }
-  .gs-kw .gr-chip { width: 100%; height: 25u; padding: 0; font-size: 12u; }
+  .gs-kw .gr-chip { width: 100%; height: 25u; padding: 0; font-size: 10.6u; font-weight: 600; color: #3b3f3c; }
 
   .gs-eg { opacity: 1; }
   .gs-eg-l { left: 0; top: 340u; width: 44u; height: 330u; transform-origin: 0 20%; }
@@ -191,14 +200,16 @@
   .gs-fsel + .gs-fl { margin-top: 6.6u; }
   .gs-fl--3.gs-fl--wide { grid-template-columns: 89.5u 88.5u 1fr; margin-top: 7.4u; }
   .gs-fs--worry { padding-top: 10u !important; } .gs-fs--worry .gs-fl { margin-top: 4.8u; }
-  .gs-fs--kind { padding-top: 11.5u !important; } .gs-fs--kind .gs-fl { margin-top: 6.3u; }
-  .gs-fs--price { padding-top: 8u !important; } .gs-fs--price .gs-fl { margin-top: 6.4u; }
-  .gs-fs--hours { padding-top: 6u !important; }
-  .gs-fs--etc { padding-top: 5u !important; }
+  .gs-fs--kind { padding-top: 10.5u !important; } .gs-fs--kind .gs-fl { margin-top: 6.3u; }
+  .gs-fs--price { padding-top: 7u !important; } .gs-fs--price .gs-fl { margin-top: 6.4u; }
+  .gs-fs--hours { padding-top: 5u !important; }
+  .gs-fs--etc { padding-top: 4u !important; }
   .gs-fl--3.gs-fl--tiny { grid-template-columns: 117u 112.5u 1fr; margin-top: 3.2u; }
   .gs-ck { gap: 7u; min-height: 22.4u; font-size: 12.3u; white-space: nowrap; }
   .gs-fl--3 .gs-ck { gap: 7.5u; }
-  .gs-fl--tiny .gs-ck { gap: 5.5u; min-height: 21.5u; font-size: 10.8u; white-space: nowrap; }
+  .gs-fl--3.gs-fl--wide .gs-ck { font-size: 10.8u; }
+  .gs-fl--tiny .gs-ck { gap: 3.5u; min-height: 21.5u; font-size: 9.5u; white-space: nowrap; color: #6c706c; }
+  .gs-fs--etc .gs-fs-t { font-size: 13.2u; }
   .gs-ck i { width: 16.5u; height: 16.5u; border-radius: 4.5u; }
   .gs-ck i svg { width: 10u; height: 8u; }
   .gs-fbtns { gap: 7u; margin: 7u -5u 0; }
@@ -209,16 +220,16 @@
   .gs-res { padding-top: 7u; }
   .gs-rh { height: 34u; flex-wrap: nowrap; gap: 0; margin: 0 0 3u; padding-left: 4u; }
   .gs-count { gap: 0; }
-  .gs-count-t { font-size: 17.6u; margin-right: 13u; }
-  .gs-count-n { font-size: 27u; font-weight: 700; }
+  .gs-count-t { font-size: 18u; font-weight: 600; margin-right: 12u; }
+  .gs-count-n { font-size: 27u; font-weight: 700; -webkit-text-stroke: 0.3px currentColor; }
   .gs-count-u { font-size: 15u; margin-left: 1u; }
   .gs-rh-r { gap: 0; margin-right: 1u; }
-  .gs-map { width: 175u; height: 33u; gap: 3u; padding-left: 17u; border-radius: 10u; font-size: 12.2u; }
-  .gs-map svg { width: 19u; height: 19u; }
+  .gs-map { width: 175u; height: 33u; gap: 5.5u; padding-left: 11u; border-radius: 10u; font-size: 12.2u; }
+  .gs-map svg { width: 21u; height: 21u; }
   .gs-map-i { width: 70u; }
-  .gs-sort-l { display: block; margin-left: 21u; margin-right: 14u; font-size: 10.8u; color: var(--gr-mut); }
+  .gs-sort-l { display: block; margin-left: 21u; margin-right: 14u; font-size: 10.8u; font-weight: 500; color: #6d716d; }
   .gs-sort-sel { width: 142u; height: 32u; border-radius: 8u; }
-  .gs-sort-sel select { padding: 0 28u 0 12u; font-size: 12.2u; border-radius: 8u; }
+  .gs-sort-sel select { padding: 0 28u 0 14.5u; font-size: 11.2u; font-weight: 500; color: #555; border-radius: 8u; }
   .gs-sort-sel svg { right: 15u; }
 
   .gs-cards { display: block; }
