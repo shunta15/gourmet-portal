@@ -123,3 +123,12 @@
   .h2-pills .h2-pill b { font-size: clamp(11px, 3.2cqw, 13px); white-space: nowrap; line-height: 1.2; }
 }
 @media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } .h2-ring { display: none; } }
+
+/* still(試作 /proto-home/still)だけ: 1 枚の絵の上でも見出し・説明が読めるよう、文字の後ろにごく薄い白のぼかしを敷く(絵そのものは加工しない)。
+   見出し(x 386〜640・y 40〜172)と説明(x 283〜755・y 196〜240)を包む楕円。中心は文字の中心(x 520・y 140)。.h2-veil が出るのは still のときだけ=本番は変わらない */
+.h2-veil { position: absolute; left: calc(150 * var(--u)); top: calc(8 * var(--u)); width: calc(740 * var(--u)); height: calc(268 * var(--u)); z-index: 2; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, .34), rgba(255, 255, 255, .28) 55%, rgba(255, 255, 255, 0)); }
+@media (max-width: 700px) {
+  /* スマホ: 文字は見える窓(見本の x 270〜910)の中央(x 590)。ヘッダーのぶん(--hd)下げる */
+  .h2-veil { left: calc(260 * var(--u)); width: calc(660 * var(--u)); margin-top: var(--hd); }
+}
