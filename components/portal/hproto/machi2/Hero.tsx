@@ -36,6 +36,11 @@ export default function Hero({ mihon, season, prod = false }: { mihon: boolean; 
         {/* 層 1: 背景の絵(春夏秋冬・「輪」で切り替わる・ゆっくり寄る+マウスでいちばん小さく動く)と季節の札 */}
         <SeasonStage initial={season} />
         <div className="h2-clouds" aria-hidden="true"><i /><i /><i /></div>
+        {/* 光の筋(斜めに流れる)・光の粒(ボケ。ゆっくり漂う) */}
+        <div className="h2p-amb" aria-hidden="true">
+          <i className="h2p-ray" /><i className="h2p-ray r2" />
+          {Array.from({ length: 10 }, (_, k) => <i key={k} className="h2p-bk" />)}
+        </div>
         {/* 流れる鳥・ふわふわの風船(背景の絵の気球とは別の位置) */}
         <img className="h2-fly h2-bird b1" style={{ left: "calc(430 * var(--u))", top: "calc(54 * var(--u))" }} src={`${H}/bird1.webp`} alt="" width={56} height={53} />
         <img className="h2-fly h2-bird b2" style={{ left: "calc(470 * var(--u))", top: "calc(74 * var(--u))" }} src={`${H}/bird2.webp`} alt="" width={56} height={53} />

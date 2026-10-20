@@ -1,0 +1,86 @@
+/* 追加の動き(MotionPlus)。既存のクラス名を外から指す。transform ではなく individual な translate / rotate / scale を使い、既存の動きと重ねる。 */
+.h2-root { --h2p-v: 0; --h2p-hp: 0; }
+
+/* ① 流れる帯(マーキー) */
+.h2p-marq { position: relative; z-index: 3; overflow: hidden; height: clamp(30px, calc(34 * var(--u)), 46px); display: flex; align-items: center; background: linear-gradient(90deg, #fff1c4, #ffe3ec 34%, #e3f2fc 68%, #fff1c4); box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 2px 8px rgba(150,130,90,.12); font-size: clamp(13px, calc(15 * var(--u)), 19px); }
+.h2p-track { display: flex; flex: none; width: max-content; animation: h2p-marq 34s linear infinite; transform: skewX(calc(var(--h2p-v, 0) * -9deg)); }
+.h2p-set { display: flex; flex: none; }
+.h2p-mi { display: inline-flex; align-items: center; gap: .55em; padding: 0 1.5em; font-weight: 700; letter-spacing: .14em; color: var(--c); white-space: nowrap; }
+.h2p-mi i { width: .62em; height: .62em; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 .22em color-mix(in srgb, var(--c) 22%, transparent); animation: h2p-dot 2.4s ease-in-out infinite; }
+.h2p-mi:nth-child(even) i { animation-delay: -1.2s; }
+@keyframes h2p-marq { to { translate: -25% 0; } }
+@keyframes h2p-dot { 0%, 100% { scale: 1; } 50% { scale: 1.45; } }
+.h2p-marq:not(.h2p-vis) .h2p-track, .h2p-marq:not(.h2p-vis) .h2p-mi i { animation-play-state: paused; }
+
+/* ② 最初の画面: 光の筋(斜めに流れる)・光の粒(ボケ) */
+.h2p-amb { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+.h2p-ray { position: absolute; left: -10%; top: -35%; width: 60%; height: 190%; rotate: 24deg; transform-origin: 50% 0; mix-blend-mode: screen; opacity: .5;
+  background: repeating-linear-gradient(90deg, transparent 0 6%, rgba(255,255,226,.55) 10%, transparent 15% 27%);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 78%); mask-image: linear-gradient(180deg, #000, transparent 78%); animation: h2p-ray 15s ease-in-out infinite alternate; }
+.h2p-ray.r2 { left: 22%; width: 46%; opacity: .38; background: repeating-linear-gradient(90deg, transparent 0 9%, rgba(255,255,236,.5) 12%, transparent 16% 33%); animation-duration: 21s; animation-direction: alternate-reverse; }
+@keyframes h2p-ray { from { translate: -8% 0; opacity: .2; } to { translate: 46% 0; opacity: .62; } }
+.h2p-bk { position: absolute; left: calc(var(--x) * var(--u)); top: calc(var(--y) * var(--u)); width: calc(var(--s) * var(--u)); height: calc(var(--s) * var(--u)); border-radius: 50%; opacity: 0;
+  background: radial-gradient(circle at 36% 34%, rgba(255,255,255,.95), rgba(255,250,214,.55) 42%, rgba(255,255,255,0) 70%); animation: h2p-bk var(--dur, 10s) ease-in-out var(--del, 0s) infinite; }
+@keyframes h2p-bk { 0%, 100% { translate: 0 0; opacity: 0; scale: .8; } 22% { opacity: .85; } 50% { translate: calc(18 * var(--u)) calc(-40 * var(--u)); opacity: .95; scale: 1.15; } 80% { opacity: .5; } }
+.h2-hero-stage[data-pause] .h2p-amb i { animation-play-state: paused; }
+.h2p-bk:nth-child(3) { --x: 330; --y: 60; --s: 34; --dur: 9s; --del: -5.1s; }
+.h2p-bk:nth-child(4) { --x: 420; --y: 250; --s: 20; --dur: 11s; --del: -6.8s; }
+.h2p-bk:nth-child(5) { --x: 520; --y: 90; --s: 46; --dur: 13s; --del: -8.5s; }
+.h2p-bk:nth-child(6) { --x: 610; --y: 300; --s: 26; --dur: 8s; --del: -2.2s; }
+.h2p-bk:nth-child(7) { --x: 700; --y: 40; --s: 30; --dur: 12s; --del: -11.9s; }
+.h2p-bk:nth-child(8) { --x: 780; --y: 230; --s: 40; --dur: 10s; --del: -3.6s; }
+.h2p-bk:nth-child(9) { --x: 860; --y: 110; --s: 24; --dur: 9s; --del: -6.3s; }
+.h2p-bk:nth-child(10) { --x: 470; --y: 330; --s: 36; --dur: 14s; --del: -3.0s; }
+.h2p-bk:nth-child(11) { --x: 980; --y: 200; --s: 28; --dur: 11s; --del: -7.7s; }
+.h2p-bk:nth-child(12) { --x: 250; --y: 150; --s: 22; --dur: 12s; --del: -8.4s; }
+
+/* ③ 季節が変わる瞬間: 季節の物が画面の端から一斉に吹き抜ける */
+.h2p-gust { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 4; }
+.h2p-g { position: absolute; left: 0; top: var(--y0); width: calc(18 * var(--z) * var(--u)); height: calc(18 * var(--z) * var(--u)); opacity: 0; animation: h2p-gust var(--t) cubic-bezier(.3, .1, .5, 1) var(--d) both; will-change: translate, rotate; }
+@keyframes h2p-gust { 0% { translate: -14cqw 0; rotate: 0deg; opacity: 0; } 10% { opacity: 1; } 88% { opacity: 1; } 100% { translate: 114cqw var(--dy); rotate: var(--r); opacity: 0; } }
+.h2p-g-spring { border-radius: 80% 0 80% 0; background: linear-gradient(135deg, #ffd6e2, #ff8fb4); box-shadow: 0 0 6px rgba(255,160,190,.5); }
+.h2p-g-summer { width: calc(40 * var(--z) * var(--u)); height: calc(40 * var(--z) * var(--u)); border-radius: 50%; background: radial-gradient(circle, #fff 0, rgba(255,238,150,.85) 32%, rgba(255,238,150,0) 70%); mix-blend-mode: screen; }
+.h2p-g-autumn { border-radius: 0 100% 0 100%; background: linear-gradient(135deg, #f7ab3e, #d9482a); box-shadow: 0 0 5px rgba(217,72,42,.35); }
+.h2p-g-winter { width: calc(10 * var(--z) * var(--u)); height: calc(10 * var(--z) * var(--u)); border-radius: 50%; background: #fff; box-shadow: 0 0 7px 1px rgba(255,255,255,.95); }
+
+/* ④ スクロール連動: 最初の画面がじわっと寄る(Hero Zoom)・カード列が速さで傾く(Velocity Skew)・スライド/最新情報が下から拭かれて拡大して入る(Mask Reveal) */
+.h2-bgwrap { scale: calc(1 + var(--h2p-hp, 0) * .1); transform-origin: 50% 85%; }
+.h2-root .h2-cardlist { transform: skewY(calc(var(--h2p-v, 0) * -2.6deg)); }
+.h2-root .h2p-wipe { clip-path: inset(calc((1 - var(--h2p-p, 1)) * 48%) 0 0 0 round calc(16 * var(--u))); scale: calc(.9 + var(--h2p-p, 1) * .1); }
+
+/* ⑤ 触ったとき: 3D チルトの奥行き・光の輪(カーソルハロー) */
+.h2-root .h2-cardrow, .h2-root .h2-cardlist, .h2-root .h2-feat { perspective: 900px; }
+.h2p-halo { position: fixed; left: -19px; top: -19px; width: 38px; height: 38px; border-radius: 50%; pointer-events: none; z-index: 90; opacity: 0; scale: .5;
+  border: 2px solid rgba(255,255,255,.95); box-shadow: 0 0 0 1px rgba(238,90,122,.4), 0 0 18px 4px rgba(255,214,150,.65), inset 0 0 12px rgba(255,255,255,.7);
+  transition: opacity .25s, scale .3s cubic-bezier(.3, 1.5, .5, 1), background-color .25s; }
+.h2p-halo.is-on { opacity: 1; scale: 1; }
+.h2p-halo.is-on.is-link { scale: 1.75; background-color: rgba(255,226,160,.28); }
+
+/* ⑥ 節の境目の波の線(ゆっくり流れる) */
+.h2-root .h2-cats::before, .h2-root .h2-feat::before, .h2-root .h2-cards::after { --wv: clamp(130px, calc(240 * var(--u)), 300px); content: ""; position: absolute; left: 0; right: 0; height: clamp(10px, calc(18 * var(--u)), 22px); pointer-events: none; z-index: 2; background-repeat: repeat-x; background-size: var(--wv) 100%; animation: h2p-wv 11s linear infinite; }
+.h2-root .h2-cats::before { top: calc(-14 * var(--u)); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 18' preserveAspectRatio='none'%3E%3Cpath d='M0 9Q30 1 60 9T120 9T180 9T240 9' fill='none' stroke='%23f5b25c' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.h2-root .h2-feat::before { top: calc(-9 * var(--u)); animation-direction: reverse; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 18' preserveAspectRatio='none'%3E%3Cpath d='M0 9Q30 1 60 9T120 9T180 9T240 9' fill='none' stroke='%23f08aa6' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.h2-root .h2-cards::after { bottom: calc(-9 * var(--u)); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 18' preserveAspectRatio='none'%3E%3Cpath d='M0 9Q30 1 60 9T120 9T180 9T240 9' fill='none' stroke='%2358b0e0' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E"); }
+@keyframes h2p-wv { to { background-position-x: var(--wv); } }
+
+/* ⑦ 見出しの字がずっと波打つ(Wave Loop。入場が終わった .is-done から。見えている間だけ) */
+@media (prefers-reduced-motion: no-preference) {
+  .h2-root .h2-ttl.is-done .h2-ttl-t i { animation: h2p-hw 2.8s ease-in-out calc(var(--c) * .1s) infinite; }
+  .h2-root .h2-ttl.is-done .h2-ttl-t i.h2-tk { animation: h2-flow 3.4s linear 1s infinite, h2p-hw 2.8s ease-in-out calc(var(--c) * .1s) infinite; }
+  .h2-root .h2-ttl:not(.h2p-vis) .h2-ttl-t i { animation-play-state: paused; }
+}
+@keyframes h2p-hw { 0%, 55%, 100% { translate: 0 0; } 22% { translate: 0 calc(-6 * var(--u)); } 38% { translate: 0 calc(1.6 * var(--u)); } }
+
+/* スマホ(〜700): 重い物を減らす */
+@media (max-width: 700px) {
+  .h2p-bk:nth-child(n + 8), .h2p-ray.r2 { display: none; }
+  .h2p-gust { left: calc(270 * var(--u)); right: auto; width: 100cqw; }
+  .h2-root .h2-cardlist { transform: none; }
+  .h2-root .h2-cats::before, .h2-root .h2-feat::before, .h2-root .h2-cards::after { animation-duration: 16s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .h2p-amb, .h2p-gust, .h2p-halo { display: none; }
+  .h2p-track, .h2p-mi i { animation: none; }
+  .h2-root .h2-cats::before, .h2-root .h2-feat::before, .h2-root .h2-cards::after { animation: none; }
+  .h2-bgwrap { scale: none; } .h2-root .h2-cardlist { transform: none; }
+}

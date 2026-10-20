@@ -11,6 +11,11 @@ const B = `${IMG}/lower/`;
 const P = (x: number, y: number, w?: number, h?: number) =>
   ({ "--x": x, "--y": y, ...(w !== undefined ? { "--w": w } : {}), ...(h !== undefined ? { "--h": h } : {}) }) as React.CSSProperties;
 const OY = (y: number) => ({ "--oy": y }) as React.CSSProperties;
+/** カードの写真の枠を 82 → 196 に広げた分 114 + 下の波の線(motion-plus.css の .h2-cards::after)が説明の文字にかからないための余白 12 = 126(見本の画素)。カードの高さと、その下の節(街の絵・フッター)のずれはこの値だけ。lower.css の .h2-cards の高さ(140 + D)と必ず合わせる */
+const D = 126;
+const CH = 141 + D;
+/** カードより下の節用: 見本の y に D を足して置く */
+const PD = (x: number, y: number, w?: number, h?: number) => P(x, y + D, w, h);
 
 const CATS = [
   { k: "gourmet", name: "グルメ", sub: ["おいしいお店を", "見つける"], href: "/gourmet", px: 63, pw: 134, cx: 130, col: "#f27b2f", ay: 645, op: "50% 88%" },
@@ -101,7 +106,7 @@ export default function Lower({ prod = false, news }: { prod?: boolean; news?: N
       <section className="h2-cards" style={OY(900)} aria-label="読みもの">
         <div className="h2-cardlist h2-strip" data-io>
           {CARDS.map((c, i) => (
-            <Link key={c.k} href={c.href} className="h2-a h2-card h2-press" style={{ ...P(c.x, 902, c.w, 141), ["--i" as string]: i }}>
+            <Link key={c.k} href={c.href} className="h2-a h2-card h2-press" style={{ ...P(c.x, 902, c.w, CH), ["--i" as string]: i }}>
               <span className="h2-cph"><img src={`${B}card-${c.k}.webp`} alt="" /></span>
               <span className="h2-cbub h2-kure" style={{ left: `calc(${c.b.x} * var(--u))`, top: `calc(${c.b.y} * var(--u))`, width: `calc(${c.b.w} * var(--u))`, height: `calc(${c.b.h} * var(--u))`, fontSize: `calc(${c.b.f} * var(--u))`, animationDelay: `${0.5 + i * 0.15}s, ${i * 0.7}s` }}><span>{c.b.l[0]}</span><span>{c.b.l[1]}</span></span>
               <b className="h2-ctt">{c.t}</b>
@@ -109,42 +114,45 @@ export default function Lower({ prod = false, news }: { prod?: boolean; news?: N
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, 139), ["--i" as string]: 3 }}>
-            {/* オーナー作の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。再生ボタンの位置に光の輪だけ重ねる */}
-            <span className="h2-cph h2-vph"><img src={`${B}card-video.webp`} alt="" /></span>
-            <i className="h2-vring" aria-hidden="true" />
+          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
+            {/* オーナー作の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。全体を見せ(contain)、上下の余白は画像の上端・下端の色を引き伸ばしてぼかして埋める。再生ボタンの位置に光の輪だけ重ねる */}
+            <span className="h2-cph h2-vph">
+              <span className="h2-vedge h2-vedge-t" aria-hidden="true"><img src={`${B}card-video.webp`} alt="" /></span>
+              <span className="h2-vedge h2-vedge-b" aria-hidden="true"><img src={`${B}card-video.webp`} alt="" /></span>
+              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /><i className="h2-vring" aria-hidden="true" /></span>
+            </span>
           </Link>
         </div>
       </section>
 
       {/* 4. 街の絵の帯 */}
-      <section className="h2-band" style={OY(1040)} data-live aria-label="街の絵">
+      <section className="h2-band" style={OY(1040 + D)} data-live aria-label="街の絵">
         <div className="h2-bandclip">
           <img className="h2-far" src={`${B}art.webp`} alt="" />
-          <img className="h2-a h2-fx h2-fx-sun" style={P(326, 1064, 32, 32)} src={`${B}fx-sun.webp`} alt="" />
-          <img className="h2-a h2-fx h2-fx-balloon" style={P(852, 1054, 36, 50)} src={`${B}fx-balloon.webp`} alt="" />
-          <img className="h2-a h2-fx h2-fx-bird b1" style={P(232, 1070, 24, 22)} src="/_portal/hproto/machi2/hero/bird3.webp" alt="" width={51} height={46} />
-          <img className="h2-a h2-fx h2-fx-bird b2" style={P(740, 1072, 24, 22)} src="/_portal/hproto/machi2/hero/bird2.webp" alt="" width={56} height={53} />
+          <img className="h2-a h2-fx h2-fx-sun" style={PD(326, 1064, 32, 32)} src={`${B}fx-sun.webp`} alt="" />
+          <img className="h2-a h2-fx h2-fx-balloon" style={PD(852, 1054, 36, 50)} src={`${B}fx-balloon.webp`} alt="" />
+          <img className="h2-a h2-fx h2-fx-bird b1" style={PD(232, 1070, 24, 22)} src="/_portal/hproto/machi2/hero/bird3.webp" alt="" width={51} height={46} />
+          <img className="h2-a h2-fx h2-fx-bird b2" style={PD(740, 1072, 24, 22)} src="/_portal/hproto/machi2/hero/bird2.webp" alt="" width={56} height={53} />
           <img className="h2-near" src={`${B}art-near.webp`} alt="" />
         </div>
-        <p className="h2-a h2-tag h2-hand" data-io style={P(390, 1062, 400, 74)}>
+        <p className="h2-a h2-tag h2-hand" data-io style={PD(390, 1062, 400, 74)}>
           <span className="h2-tl"><span>このまちで、もっとつながる。</span></span>
           <span className="h2-tl h2-tl2"><span>もっと<b>好き</b>になる。</span></span>
         </p>
-        <div className="h2-a h2-sign" style={P(962, 1086, 174, 122)}>
+        <div className="h2-a h2-sign" style={PD(962, 1086, 174, 122)}>
           <p className="h2-hand"><span>日常が、</span><span>ちょっと特別になる</span><span>まちのポータルサイト</span><b>マチノワ</b></p>
         </div>
       </section>
 
       {/* 5. フッター */}
-      <footer className="h2-foot" style={OY(1228)}>
-        <img className="h2-a h2-flogo" style={P(40, 1244, 164, 42)} src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" />
-        <p className="h2-a h2-fsub" style={P(219, 1250, 220, 40)}>まちの人・お店・くらしがつながる<br />ローカルポータルサイト</p>
-        <i className="h2-a h2-fvr" style={P(440, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={P(502, 1240, 220, 70)}>{foot.l.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
-        <i className="h2-a h2-fvr" style={P(743, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={P(789, 1240, 220, 70)}>{foot.r.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
-        <p className="h2-a h2-copy" style={P(291, 1305, 600, 16)}>{foot.copy}</p>
+      <footer className="h2-foot" style={OY(1228 + D)}>
+        <img className="h2-a h2-flogo" style={PD(40, 1244, 164, 42)} src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" />
+        <p className="h2-a h2-fsub" style={PD(219, 1250, 220, 40)}>まちの人・お店・くらしがつながる<br />ローカルポータルサイト</p>
+        <i className="h2-a h2-fvr" style={PD(440, 1245, 1, 55)} />
+        <ul className="h2-a h2-fl" style={PD(502, 1240, 220, 70)}>{foot.l.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
+        <i className="h2-a h2-fvr" style={PD(743, 1245, 1, 55)} />
+        <ul className="h2-a h2-fl" style={PD(789, 1240, 220, 70)}>{foot.r.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
+        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>{foot.copy}</p>
       </footer>
     </>
   );
