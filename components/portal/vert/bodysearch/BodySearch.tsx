@@ -57,7 +57,7 @@ export async function bodySearchMetadata(sp: SP): Promise<Metadata> {
   return buildMetadata({
     vertical: "bodycare",
     title,
-    description: `${f.kind || pref || f.tag ? scope : v.name}の店を、種類・エリア・こだわり・キーワードで探せます。${count > 0 ? `掲載${count}件。` : ""}`,
+    description: `${f.kind ? `${scope}の店` : pref || f.tag ? scope : `${v.name}の店`}を、種類・エリア・こだわり・キーワードで探せます。${count > 0 ? `掲載${count}件。` : ""}`,
     path: canonical,
     count: plain ? count : 0,
   });
