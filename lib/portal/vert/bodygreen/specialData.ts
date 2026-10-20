@@ -5,6 +5,7 @@
 import "server-only";
 import { cache } from "react";
 import { getGeneratedPlaces } from "@/lib/places/newVerticals";
+import { getGeneratedFeatures } from "@/lib/places/features";
 import { greenFacets, loadGreenShops } from "./shops";
 import type { GreenFacets, GreenShop } from "./types";
 
@@ -36,18 +37,28 @@ function expandDays(token: string): Set<string> {
   return out;
 }
 
-/** 営業時間の文字列(「月-金 08:00 - 11:30, 15:00 - 20:30 / 土日 08:00 - 12:00」)から、曜日ごとの時間を取り出す */
-export function hoursByDay(hours: string): Map<string, string> {
+/** 営業時間の文字列(「月-金 08:00 - 11:30, 15:00 - 20:30 / 土日 08:00 - 12:00」)から、曜日ごとの時間を取り出す。
+ * 読めない書き方・同じ曜日が 2 回出る書き方・時刻の書き方でない値があるときは null(あいまいなので呼ぶ側は店を入れない) */
+export function hoursByDayStrict(hours: string): Map<string, string> | null {
   const m = new Map<string, string>();
-  for (const seg of hours.split(" / ")) {
-    const sp = seg.trim().indexOf(" ");
-    if (sp < 0) continue;
-    const days = expandDays(seg.trim().slice(0, sp));
-    const times = seg.trim().slice(sp + 1).trim();
-    for (const d of days) m.set(d, times);
+  for (const raw of hours.split(" / ")) {
+    const seg = raw.trim();
+    if (!seg) continue;
+    const sp = seg.indexOf(" ");
+    if (sp < 0) return null;
+    const days = expandDays(seg.slice(0, sp));
+    const times = seg.slice(sp + 1).trim();
+    if (days.size === 0 || !TIMES.test(times)) return null;
+    for (const d of days) {
+      if (m.has(d)) return null;
+      m.set(d, times);
+    }
   }
   return m;
 }
+
+/** 「09:00 - 12:00」「09:00 - 12:00, 15:00 - 19:00」の形(HH:MM - HH:MM をコンマで並べた物)だけを時刻の書き方とみなす */
+const TIMES = /^\d{1,2}:\d{2} - \d{1,2}:\d{2}(, \d{1,2}:\d{2} - \d{1,2}:\d{2})*$/;
 
 export type WeekendShop = {
   shop: GreenShop;
@@ -77,28 +88,34 @@ export type SpecialStats = {
   tag: Record<string, number>;
   /** 確認日の一番古い物(YYYY-MM-DD。無ければ "") */
   checkedAtMin: string;
-  /** 「土日営業」のこだわりが付いた店(並びは都道府県順 → ID 順。順位ではない) */
+  /** 営業時間の行に土曜と日曜の両方の営業時間がある店(定休日に土・日が入る店と、営業時間の書き方があいまいな店は入れない)。並びは都道府県順 → ID 順で、順位ではない */
   weekend: WeekendShop[];
-  /** 「土日営業」の店のうち、土・日のどちらかの営業時間を読み取れなかった数(0 が正常。0 でなければ元の文字列を出す) */
-  weekendUnparsed: number;
 };
 
 export const loadSpecialStats = cache(async (): Promise<SpecialStats> => {
-  const [shops, places] = await Promise.all([loadGreenShops(), getGeneratedPlaces("bodycare")]);
+  const [shops, places, features] = await Promise.all([loadGreenShops(), getGeneratedPlaces("bodycare"), getGeneratedFeatures("bodycare")]);
   const byId = new Map(places.map((p) => [p.id, p]));
+  // 店ページに出る「情報の出どころ・確認日」は、紹介記事の物。紹介記事の無い店(特集だけの店)は特集ファイルの物(lib/portal/vert/bodyshop/model.ts と同じ決め方)
+  const featById = new Map(features.map((f) => [f.placeId, f]));
+  const srcOf = (p: (typeof places)[number]) => (p.article?.sources?.length ? p.article.sources : featById.get(p.id)?.sources) ?? [];
+  const checkedOf = (p: (typeof places)[number]) => p.article?.checkedAt ?? featById.get(p.id)?.checkedAt ?? "";
   const facets = greenFacets(shops);
   const count = (f: (p: (typeof places)[number]) => boolean) => places.filter(f).length;
-  const checked = places.map((p) => p.article?.checkedAt ?? "").filter(Boolean).sort();
+  const checked = places.map(checkedOf).filter(Boolean).sort();
   const tag: Record<string, number> = {};
   for (const t of facets.tags) tag[t.name] = t.count;
 
-  const weekend: WeekendShop[] = shops
-    .filter((s) => s.tags.includes("土日営業"))
-    .map((s) => {
-      const raw = byId.get(s.id)?.hours ?? "";
-      const day = hoursByDay(raw);
-      return { shop: s, sat: day.get("土") ?? "", sun: day.get("日") ?? "", raw, holidays: s.holidays };
-    });
+  const weekend: WeekendShop[] = [];
+  for (const s of shops) {
+    const raw = byId.get(s.id)?.hours ?? "";
+    const day = hoursByDayStrict(raw);
+    if (!day) continue;
+    const sat = day.get("土") ?? "";
+    const sun = day.get("日") ?? "";
+    if (!sat || !sun) continue;
+    if (/[土日]/.test(s.holidays)) continue; // 定休日に土・日が入る店は入れない
+    weekend.push({ shop: s, sat, sun, raw, holidays: s.holidays });
+  }
 
   return {
     total: shops.length,
@@ -110,12 +127,11 @@ export const loadSpecialStats = cache(async (): Promise<SpecialStats> => {
     withWebsite: count((p) => !!p.website),
     withMap: count((p) => !!p.mapUrl),
     withAddress: count((p) => !!p.address),
-    withSources: count((p) => (p.article?.sources?.length ?? 0) > 0),
-    withCheckedAt: count((p) => !!p.article?.checkedAt),
+    withSources: count((p) => srcOf(p).length > 0),
+    withCheckedAt: count((p) => !!checkedOf(p)),
     tag,
     checkedAtMin: checked[0] ?? "",
     weekend,
-    weekendUnparsed: weekend.filter((w) => !w.sat || !w.sun).length,
   };
 });
 

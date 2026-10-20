@@ -106,6 +106,8 @@ export default async function GreenSearch({ sp }: { sp: SP }) {
   const f = parseGreenFilters(sp, facets);
   const list = filterGreenShops(shops, f);
   const shown = list.slice(0, f.n);
+  // 丸い札の「○都道府県から探す」の数: いま出ている店が載っている都道府県の数(条件なしなら掲載のある都道府県の数)
+  const listPrefCount = new Set(list.map((x) => x.pref)).size;
   const left = list.length - shown.length;
 
   const prefShort = f.pref ? (facets.prefs.find((p) => p.slug === f.pref)?.short ?? "") : "";
@@ -201,9 +203,9 @@ export default async function GreenSearch({ sp }: { sp: SP }) {
           <Write className="gr-hand gs-hand" lines={["こころも、", "からだも、", "軽やかに。"]} delay={900} step={520} as="p" />
           <div className="gs-badge gr-pop gr-float" aria-hidden="true">
             <span>
-              {prefShort || "全国"}で
+              {prefShort ? `${prefShort}で` : `${listPrefCount}都道府県`}
               <br />
-              見つける
+              {prefShort ? "見つける" : "から探す"}
               <br />
               掲載 {list.length} 件
             </span>

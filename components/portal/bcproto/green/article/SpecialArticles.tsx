@@ -182,7 +182,7 @@ function IconTiles() {
   );
 }
 
-/** 土日の記事の見出しの写真(実在の店の写真。土日営業の店のうち写真のある最初の 3 店。店名と店ページへのリンク付き) */
+/** 土日の記事の見出しの写真(実在の店の写真。土日も開いている店のうち写真のある最初の 3 店。店名と店ページへのリンク付き) */
 function PhotoTiles({ stats }: { stats: SpecialStats }) {
   const withPhoto = stats.weekend.filter((w) => w.shop.photo).slice(0, 3);
   return (
@@ -190,7 +190,9 @@ function PhotoTiles({ stats }: { stats: SpecialStats }) {
       {withPhoto.map(({ shop }, i) => (
         <Link key={shop.id} href={shopHref(shop.id)} className={`ar-ph ar-pt p${i} gr-zoom`} data-rv="zoom" style={d(120 + i * 140)}>
           <ShopPhoto shop={shop} eager={i === 0} sizes="(min-width: 960px) 300px, 60vw" />
-          <span className="cap">{shop.name}</span>
+          <span className="cap">
+            <span>{shop.name}</span>
+          </span>
         </Link>
       ))}
     </div>
@@ -239,7 +241,7 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
   const dark = (slug: string) => kindIsDark(slug);
   const nameOf = (slug: string, fallback: string) => kind(slug)?.name ?? fallback;
   const countOf = (slug: string) => kind(slug)?.count;
-  const sub = (slug: string) => (countOf(slug) != null ? `掲載 ${countOf(slug)}店` : undefined);
+  const sub = (slug: string) => (countOf(slug) != null ? `マチノワの分類 ${countOf(slug)}店` : undefined);
 
   return (
     <ArticleShell
@@ -252,10 +254,10 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
         </>
       }
       title={meta.titleLines}
-      sub="名前のちがいと、施術する人の免許のちがい"
+      sub="名前によって、関わる法律の決まりがちがいます"
       date={`出典の確認日 ${SOURCES_CHECKED_AT_DOT}`}
       read="読むのにかかる時間 約5分"
-      lead="店の看板や紹介ページには、似た名前がいくつも並びます。名前のちがいは、施術する人の免許と、法律のうえでの決まりのちがいにつながっています。ここでは、法令と国の資料で確かめられたことだけを整理します。"
+      lead="店の看板や紹介ページには、似た名前がいくつも並びます。名前によって、関わる法律の決まりがちがいます。ただし名前だけでは、施術する人の免許は分かりません。ここでは、法令と国の資料で確かめられたことだけを整理します。"
       vis={<KindTiles stats={stats} />}
       note={["呼び名のちがいを、", "ひとつずつ。"]}
       badge={["資料で", "確かめた", "ことだけ"]}
@@ -294,7 +296,7 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
         <P>整体については、国民生活センターが2012年8月の報道発表で、整体やカイロプラクティックなどには法的な資格制度がない、と述べています。</P>
       </Sec>
 
-      <Sec id="words" no="02" title="五つの呼び名と、免許のちがい">
+      <Sec id="words" no="02" title="五つの呼び名と、法律のうえでの決まり">
         <div className="ar-count" data-rv>
           <b>
             <CountUp to={5} />
@@ -318,9 +320,9 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
             sub={sub("sekkotsu")}
             color={color("sekkotsu")}
             dark={dark("sekkotsu")}
-            lic={{ ok: true, text: "国家資格あり(柔道整復師)" }}
+            lic={{ ok: true, text: "免許が必要な業(柔道整復師)" }}
             rows={[
-              ["免許", "柔道整復師が施術します。柔道整復師は、厚生労働大臣の免許を受けて柔道整復を業とする人です(柔道整復師法 第2条)。"],
+              ["免許", "柔道整復を業として行うには、柔道整復師の免許が必要です(柔道整復師法 第15条。医師を除く)。名前が整骨院・接骨院でも、施術する人の免許は店で確かめます。"],
               ["決まり", "脱臼や骨折の患部への施術は、医師の同意を得た場合のほか、してはならないと定められています。応急手当は除かれます(同法 第17条)。"],
             ]}
           />
@@ -329,9 +331,9 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
             sub={sub("shinkyu")}
             color={color("shinkyu")}
             dark={dark("shinkyu")}
-            lic={{ ok: true, text: "国家資格あり(はり師・きゅう師)" }}
+            lic={{ ok: true, text: "免許が必要な業(はり師・きゅう師)" }}
             rows={[
-              ["免許", "はり(鍼)を業として行うにははり師、きゅう(灸)を業として行うにはきゅう師の免許が必要です(あん摩マッサージ指圧師、はり師、きゅう師等に関する法律 第1条)。"],
+              ["免許", "はり(鍼)を業として行うにははり師、きゅう(灸)を業として行うにはきゅう師の免許が必要です(あん摩マッサージ指圧師、はり師、きゅう師等に関する法律 第1条。医師を除く)。名前が鍼灸院でも、施術する人の免許は店で確かめます。"],
               ["健康保険", "条件つきで使える場合があります。「健康保険が使える場合」で説明します。"],
             ]}
           />
@@ -340,9 +342,9 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
             sub={sub("massage")}
             color={color("massage")}
             dark={dark("massage")}
-            lic={{ ok: true, text: "国家資格あり(あん摩マッサージ指圧師)" }}
+            lic={{ ok: true, text: "免許が必要な業(あん摩マッサージ指圧師)" }}
             rows={[
-              ["免許", "あん摩・マッサージ・指圧を業として行うには、あん摩マッサージ指圧師の免許が必要です(同法 第1条)。"],
+              ["免許", "あん摩・マッサージ・指圧を業として行うには、あん摩マッサージ指圧師の免許が必要です(同法 第1条。医師を除く)。名前がマッサージでも、施術する人の免許は店で確かめます。"],
               ["確かめ方", "施術する人の免許が、店のページや店内の表示に書かれているかを見ます。"],
             ]}
           />
@@ -378,7 +380,7 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
             color="#e4ecdd"
             rows={[
               ["使える場合", "主として神経痛、リウマチ、頸腕症候群、五十肩、腰痛症、頸椎捻挫後遺症などの、慢性的な疼痛を主な症状とする病気で施術を受けたとき。"],
-              ["注意", "あらかじめ医師の発行した同意書または診断書が必要です。同じ病気で病院や診療所にかかっている間は、保険の対象になりません。"],
+              ["注意", "あらかじめ医師の発行した同意書または診断書が必要です。詳しくは、はり・きゅう施術所などに尋ねるよう案内されています。同じ病気で病院や診療所にかかっている間は、保険の対象になりません。"],
             ]}
           />
           <WordCard
@@ -386,11 +388,11 @@ function DifferenceArticle({ stats }: { stats: SpecialStats }) {
             color="#e4ecdd"
             rows={[
               ["使える場合", "筋麻痺や関節拘縮などで、医療上マッサージを必要とする場合。"],
-              ["注意", "あらかじめ医師の発行した同意書または診断書が必要です。疲労回復や慰安が目的のもの、病気の予防のためのマッサージは、保険の対象になりません。"],
+              ["注意", "あらかじめ医師の発行した同意書または診断書が必要です。詳しくは、マッサージ施術所などに尋ねるよう案内されています。疲労回復や慰安が目的のもの、病気の予防のためのマッサージは、保険の対象になりません。"],
             ]}
           />
         </ul>
-        <Note>保険が使えるかどうかは、けがや病気の内容と、医師の同意書などで決まります。くわしくは施術所に尋ねるよう、厚生労働省も案内しています。</Note>
+        <Note>あらかじめ医師の同意書または診断書が要るのは、はり・きゅうとマッサージです。柔道整復で医師の同意が要るのは、骨折と脱臼です(緊急の場合を除く)。</Note>
       </Sec>
 
       <Sec id="listed" no="04" title="掲載している店の種類">
@@ -503,7 +505,7 @@ function ChooseArticle({ stats }: { stats: SpecialStats }) {
 
       <Sec id="source" no="04" title="情報の出どころと確認日">
         <P>
-          店のページには、情報の出どころ(公式サイトと Google マップ)と確認日を載せています。出どころが載っている店は{stats.withSources}店、確認日が載っている店は{stats.withCheckedAt}店です
+          店のページには、情報の出どころ(公式サイトや Google マップなど)と確認日を載せています。出どころが載っている店は{stats.withSources}店、確認日が載っている店は{stats.withCheckedAt}店です
           {stats.checkedAtMin ? `(いちばん古い確認日は${dotDate(stats.checkedAtMin)})` : ""}。営業時間や定休日は変わることがあります。出かける前に、公式サイトか電話で確かめてください。
         </P>
       </Sec>
@@ -522,7 +524,7 @@ function ChooseArticle({ stats }: { stats: SpecialStats }) {
 
 function WeekendShopRow({ w }: { w: WeekendShop }) {
   const { shop } = w;
-  const hours = w.sat && w.sun ? (w.sat === w.sun ? [["土・日", w.sat]] : [["土", w.sat], ["日", w.sun]]) : [["営業時間", w.raw]];
+  const hours = w.sat === w.sun ? [["土・日", w.sat]] : [["土", w.sat], ["日", w.sun]];
   const tags = shop.tags.filter((x) => x !== "土日営業").slice(0, 2);
   return (
     <li data-rv>
@@ -578,6 +580,8 @@ function WeekendArticle({ stats }: { stats: SpecialStats }) {
   }
   const prefLine = prefs.map((p) => `${p.name}${p.count}店`).join("、");
   const reserveFree = stats.weekend.filter((w) => w.shop.tags.includes("予約なし可")).length;
+  const tagged = stats.weekend.filter((w) => w.shop.tags.includes("土日営業")).length;
+  const tagAll = stats.tag["土日営業"] ?? 0;
 
   return (
     <ArticleShell
@@ -590,10 +594,10 @@ function WeekendArticle({ stats }: { stats: SpecialStats }) {
         </>
       }
       title={meta.titleLines}
-      sub={`『土日営業』のこだわりが付いた${n}店を、店のデータのとおりに`}
+      sub={`土曜と日曜の営業時間がある${n}店を、店のデータのとおりに`}
       date={stats.checkedAtMin ? `店の情報の確認日 ${dotDate(stats.checkedAtMin)}〜` : undefined}
       read="読むのにかかる時間 約3分"
-      lead="平日は行けない人のために、『土日営業』のこだわりが付いた店を集めました。土曜・日曜の営業時間と定休日は、店のデータにあるとおりに写しています。並びは都道府県順で、順位ではありません。"
+      lead="平日は行けない人のために、営業時間に土曜と日曜の両方がある店を集めました。土曜・日曜の営業時間と定休日は、店のデータにあるとおりに写しています。並びは都道府県順で、順位ではありません。"
       vis={<PhotoTiles stats={stats} />}
       note={["土日に行ける店を、", "ならべました。"]}
       badge={["営業時間は", "店のデータの", "とおり"]}
@@ -622,7 +626,7 @@ function WeekendArticle({ stats }: { stats: SpecialStats }) {
           items={[
             { t: "営業時間と定休日は変わることがあります", d: "店のページの下にある確認日と、公式サイトの案内を見比べます。" },
             { t: "予約が必要かどうか", d: reserveFree > 0 ? `『予約なし可』が付いているのは、この${n}店のうち${reserveFree}店です。ほかの店は、行く前に電話か予約ページで確かめます。` : "予約が必要かどうかは、行く前に電話か予約ページで確かめます。" },
-            { t: "このこだわりが付いていない店もあります", d: "『土日営業』が付いていなくても、店のページの営業時間に土曜・日曜が載っている店があります。探すページから店のページを開いて確かめてください。" },
+            { t: "載せた店の決めかた", d: "店の営業時間の行に、土曜と日曜の両方の時間がある店だけを載せました。定休日に土曜・日曜が入っている店や、営業時間の書き方を読み取れない店は載せていません。" },
             { t: "営業時間が分かれている店", d: "営業時間が複数の時間帯に分かれている店もあります。店のページの営業時間を、そのまま見てください。" },
           ]}
         />
@@ -635,7 +639,7 @@ function WeekendArticle({ stats }: { stats: SpecialStats }) {
 
       <Sec id="more" no="04" title="ほかの条件で探す">
         <P>
-          探すページでは、種類・都道府県・こだわり・キーワードで店を絞れます。『土日営業』は、こだわりから選べます。
+          探すページでは、種類・都道府県・こだわり・キーワードで店を絞れます。『土日営業』は、こだわりから選べます。{tagAll > 0 && tagged === tagAll ? `『土日営業』のこだわりが付いた${tagAll}店は、すべてこの記事に載っています。` : ""}
         </P>
         <div className="ar-cta ar-cta--row">
           <Link href={searchHref({ tag: "土日営業" })} className="gr-btn gr-press gr-shimmer">

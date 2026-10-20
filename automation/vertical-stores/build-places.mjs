@@ -139,6 +139,8 @@ export function normalizeAddress(raw) {
     .trim();
 }
 
+const DOUBLE_SHI = new Set(["四日市", "廿日市", "野々市"]);
+
 /** 住所から 都道府県（lib/areas の slug）と 市区町村名 を決める。決められなければ null（推測しない） */
 export function areaOfAddress(address) {
   const a = normalizeAddress(address).replace(/^〒?\s*\d{3}-?\d{4}\s*/, "");
@@ -156,7 +158,8 @@ export function areaOfAddress(address) {
     const gun = /^(.+?郡)(.+?[町村])/.exec(rest);
     const shi = /^(.+?市)/.exec(rest);
     if (gun && !(shi && shi[1].length < gun[1].length)) city = gun[2];
-    else if (shi) city = shi[1] + (rest[shi[1].length] === "市" ? "市" : "");
+    // 名前が「○○市」で終わる市(四日市市・廿日市市・野々市市)だけ、2つめの「市」まで含める。「市川市市川南」のように町名が「市」で始まる所は足さない
+    else if (shi) city = shi[1] + (DOUBLE_SHI.has(shi[1]) && rest[shi[1].length] === "市" ? "市" : "");
     else {
       const cho = /^(.+?[町村])/.exec(rest);
       if (cho) city = cho[1];

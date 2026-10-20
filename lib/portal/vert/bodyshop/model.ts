@@ -214,8 +214,9 @@ export async function loadBsShop(id: string): Promise<BsShop | null> {
     menus,
     facts,
     links,
-    sources: p.article?.sources ?? [],
-    checkedAt: p.article?.checkedAt,
+    // 紹介記事の無い店(特集だけの店)は、特集ファイルの出どころ・確認日を出す
+    sources: (p.article?.sources?.length ? p.article.sources : feat?.sources) ?? [],
+    checkedAt: p.article?.checkedAt ?? feat?.checkedAt,
     sameArea: sameArea.map(mini),
     sameKind: sameKind.map(mini),
     total: places.length,

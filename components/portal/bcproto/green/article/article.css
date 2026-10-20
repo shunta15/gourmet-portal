@@ -318,7 +318,9 @@
 .ar-pt { display: block; padding: 0; overflow: hidden; }
 .ar-pt .gr-sph { height: 100%; aspect-ratio: auto; }
 .ar-pt.p0 { grid-row: span 2; }
-.ar-pt .cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 22px 12px 9px; font-size: 11.5px; font-weight: 500; line-height: 1.5; color: #fff; letter-spacing: 0.03em; background: linear-gradient(0deg, rgba(20, 30, 22, 0.66), rgba(20, 30, 22, 0)); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
+.ar-pt .cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 22px 12px 9px; font-size: 11.5px; font-weight: 500; line-height: 1.5; color: #fff; letter-spacing: 0.03em; background: linear-gradient(0deg, rgba(20, 30, 22, 0.66), rgba(20, 30, 22, 0)); overflow-wrap: anywhere; }
+/* 2 行で切る箱は内側の span に持たせる(外側の padding-bottom に 3 行目が半分見えるのを防ぐ) */
+.ar-pt .cap > span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 .ar-sv-photos.n1 { grid-template-columns: 1fr; }
 .ar-sv-photos.n1 .ar-pt.p0 { grid-row: span 2; }
 .ar-sv-photos.n2 .ar-pt.p0 { grid-row: span 2; }
