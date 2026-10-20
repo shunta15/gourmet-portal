@@ -1,0 +1,134 @@
+/* 総合トップ「圧迫感を減らす版」(試作 /proto-home/airy 専用)。
+   本番の machi2 の部品はそのまま使い、この 1 枚を上に重ねるだけ(.h2-airy が付いたときだけ効く。本番の見た目は変わらない)。
+   寸法は machi2 と同じく「見本の画素 × var(--u)」。--ag = 節と節の間(見本の画素)。
+   手当て: ①余白 ②最初の画面の密度と飾り ③色(地を白に近い生成り・影を薄く・文字の縁取りを弱める) ④動き(常に動く物を減らす・出る動きをゆっくり) ⑤幅(1441 以上は中身 1320 まで) */
+
+.h2-root.h2-airy { --airy-bg: #fffdf8; --ag: 64; background: var(--airy-bg); }
+.h2-airy .h2-page { background: var(--airy-bg); }
+
+/* ⑤ 幅: 1440 まではそのまま。1441 以上は中身を最大 1320 に収めて左右を空ける */
+@media (min-width: 1441px) {
+  .h2-root.h2-airy { --u: calc(1320px / 1182); }
+  .h2-airy .h2-page { max-width: 1320px; }
+}
+
+/* ③ 色: 節の地は全部、白に近い生成りに(黄色のグラデーションをやめる)。街の絵とフッターはそのまま */
+.h2-airy .h2-cats, .h2-airy .h2-feat, .h2-airy .h2-cards { background: none; }
+.h2-airy .h2-foot { background: var(--airy-bg); }
+
+/* ① 余白: 節と節の間を広げる(今は 9〜36 → 64 / 56 / 56)。ヒーローは下に 86 広げる */
+.h2-airy .h2-feat { margin-top: calc(var(--ag) * var(--u)); }
+.h2-airy .h2-cards { margin-top: calc(56 * var(--u)); }
+.h2-airy .h2-band { margin-top: calc(56 * var(--u)); }
+
+/* ② 最初の画面: 高さ 394 → 480。絵は上の 394 のまま、下の端は生成りへ溶かす。見出し・説明・検索・3 つのボタンの間を広げる */
+.h2-airy .h2-hero { height: calc(480 * var(--u)); background: var(--airy-bg); }
+.h2-airy .h2-hero::after { display: none; }
+.h2-airy .h2-bgwrap { -webkit-mask-image: linear-gradient(#000 calc(290 * var(--u)), transparent calc(394 * var(--u))); mask-image: linear-gradient(#000 calc(290 * var(--u)), transparent calc(394 * var(--u))); }
+.h2-airy .h2-title { top: calc(40 * var(--u)); }
+.h2-airy .h2-sub { top: calc(196 * var(--u)); }
+.h2-airy .h2-search { top: calc(296 * var(--u)); }
+.h2-airy .h2-pills { top: calc(388 * var(--u)); }
+/* 見出し・説明の縁取りとにじみを弱める */
+.h2-airy .h2-title i { -webkit-text-stroke-width: calc(1.8 * var(--u)); text-shadow: 0 calc(2 * var(--u)) 0 rgba(255, 255, 255, .85), 0 0 calc(7 * var(--u)) rgba(255, 255, 255, .65); }
+.h2-airy .h2-sub { -webkit-text-stroke-width: calc(.2 * var(--u)); text-shadow: 0 0 calc(5 * var(--u)) rgba(255, 255, 255, .95), 0 0 calc(10 * var(--u)) rgba(255, 255, 255, .6); }
+.h2-airy .h2-sln > i { background: rgba(255, 255, 255, .72); box-shadow: 0 0 calc(10 * var(--u)) calc(3 * var(--u)) rgba(255, 255, 255, .55); }
+.h2-airy .h2-search { box-shadow: 0 0 0 calc(2 * var(--u)) #eef2f7, 0 calc(4 * var(--u)) calc(16 * var(--u)) rgba(80, 110, 130, .13); }
+.h2-airy .h2-pill { box-shadow: 0 0 0 calc(3 * var(--u)) rgba(255, 255, 255, .9), 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(120, 130, 100, .14); }
+
+/* ②④ 飾りを減らす: 光の筋 2→1(動かさず淡く)・光の粒 10→4(ゆっくり)・雲 3→1(ゆっくり)・鳥 3→1。隠す絵は visibility:hidden(大きさを持ったまま。0×0 の画像にならない) */
+.h2-airy .h2p-ray.r2 { display: none; }
+.h2-airy .h2p-ray { animation: none; opacity: .24; translate: 14% 0; }
+.h2-airy .h2p-bk:nth-child(4), .h2-airy .h2p-bk:nth-child(5), .h2-airy .h2p-bk:nth-child(7), .h2-airy .h2p-bk:nth-child(8), .h2-airy .h2p-bk:nth-child(10), .h2-airy .h2p-bk:nth-child(12) { display: none; }
+.h2-airy .h2p-bk { animation-duration: calc(var(--dur, 10s) * 1.8); }
+.h2-airy .h2-clouds i:nth-child(1), .h2-airy .h2-clouds i:nth-child(3) { display: none; }
+.h2-airy .h2-clouds i:nth-child(2) { animation-duration: 80s; opacity: .6; }
+.h2-airy .h2-bird.b2, .h2-airy .h2-bird.b3 { visibility: hidden; animation: none; }
+.h2-airy .h2-board { animation-name: h2-airy-swing; animation-duration: 9s; }
+.h2-airy .h2-board:hover { animation-name: h2-swing; animation-duration: 3s; }
+@keyframes h2-airy-swing { 0%, 100% { rotate: 1.6deg; } 50% { rotate: -1.6deg; } }
+.h2-airy .h2-s-go::after { animation-duration: 9s; }
+.h2-airy .h2-sbtn::after { animation: none; }
+.h2-airy .h2-balloon, .h2-airy .h2-fx-balloon { animation-duration: 14s; }
+
+/* 1. 業種の札: 見出しと札の間・札と札の間を広げる。左右の花のつる(7 本+見出し脇の 2 枚)を消す/淡くする */
+.h2-airy .h2-vinew { visibility: hidden; }
+.h2-airy .h2-vine { animation: none; }
+.h2-airy .h2-decor { visibility: hidden; animation: none; }
+.h2-airy .h2-ttl-t i { -webkit-text-stroke-width: calc(.3 * var(--u)); }
+.h2-airy .h2-catbg { box-shadow: 0 calc(2 * var(--u)) calc(12 * var(--u)) rgba(150, 140, 110, .09); }
+.h2-airy .h2-cat:hover .h2-catbg { box-shadow: 0 calc(8 * var(--u)) calc(20 * var(--u)) rgba(150, 140, 110, .18); }
+.h2-airy .h2-cats::before { display: none; }
+
+/* 2. 特集+最新情報 / 3. 4 枚のカード */
+.h2-airy .h2-slidewrap { box-shadow: 0 calc(3 * var(--u)) calc(14 * var(--u)) rgba(150, 110, 120, .13); }
+.h2-airy .h2-news { box-shadow: 0 calc(2 * var(--u)) calc(12 * var(--u)) rgba(150, 140, 120, .09); }
+.h2-airy .h2-card { box-shadow: 0 calc(2 * var(--u)) calc(10 * var(--u)) rgba(110, 120, 140, .09); }
+.h2-airy .h2-card:hover { box-shadow: 0 calc(8 * var(--u)) calc(18 * var(--u)) rgba(110, 120, 140, .17); }
+.h2-airy .h2-sh { text-shadow: 0 0 calc(6 * var(--u)) rgba(255, 255, 255, .92); -webkit-text-stroke-width: calc(.3 * var(--u)); }
+.h2-airy .h2-sh1 b { -webkit-text-stroke-width: calc(.5 * var(--u)); }
+.h2-airy .h2-ssub { text-shadow: 0 0 calc(6 * var(--u)) rgba(255, 255, 255, .95); }
+/* 吹き出しは入る動きだけ(ふわふわ上下は止める) */
+.h2-airy .h2-cbub { animation: h2-bubin .9s cubic-bezier(.3, 1.7, .5, 1) backwards; }
+.h2-airy .h2-sbub { animation: h2-bubin .9s cubic-bezier(.3, 1.7, .5, 1) .4s backwards; }
+
+/* 波の線: 節の境目から、広げた余白のまん中へ移す。細く淡く */
+.h2-root.h2-airy .h2-feat::before, .h2-root.h2-airy .h2-cards::after { height: clamp(7px, calc(11 * var(--u)), 14px); opacity: .42; animation-duration: 24s; }
+.h2-root.h2-airy .h2-feat::before { top: calc(-1 * (var(--ag) / 2 + 6) * var(--u)); }
+.h2-root.h2-airy .h2-cards::after { bottom: calc(-1 * (31 + 6) * var(--u)); }
+
+/* 街の絵: 上の端を生成りへ溶かす(本番ではカードが重なって隠れていた、絵の上端に残るカードの影の輪郭が見えるため)。鳥 2→1。太陽の回転は止める */
+.h2-airy .h2-band { background: var(--airy-bg); }
+.h2-airy .h2-bandclip { -webkit-mask-image: linear-gradient(transparent, #000 calc(38 * var(--u))); mask-image: linear-gradient(transparent, #000 calc(38 * var(--u))); }
+.h2-airy .h2-fx-bird.b2 { visibility: hidden; animation: none; }
+.h2-airy .h2-fx-sun { animation: none; }
+.h2-airy .h2-sign { animation-duration: 14s; }
+
+/* ④ スクロールで出る動きは残して、ゆっくりめに(1.4〜1.5 倍。出てくる距離もやわらかく) */
+@keyframes h2-airy-rise { from { opacity: 0; transform: translateY(calc(18 * var(--u))); } to { opacity: 1; transform: none; } }
+@keyframes h2-airy-in { from { opacity: 0; transform: translateY(calc(24 * var(--u))); } to { opacity: 1; transform: none; } }
+.h2-airy .h2-cardrow.is-in .h2-cat { animation-name: h2-airy-rise; animation-duration: 1.2s; }
+.h2-airy .h2-cardlist.is-in .h2-card { animation-name: h2-airy-rise; animation-duration: 1.2s; }
+.h2-airy .h2-slidewrap.is-in, .h2-airy .h2-news.is-in { animation-name: h2-airy-in; animation-duration: 1.2s; }
+.h2-airy .h2-news.is-in .h2-nrow { animation-duration: 1s; }
+.h2-airy .h2-ttl.is-in .h2-ttl-t i { animation-duration: .9s; }
+.h2-airy .h2-tag.is-in .h2-tl > span { animation-duration: 1.3s; }
+/* 見出しの字が波打ち続ける動きは止める(虹色の流れだけ、ゆっくり残す) */
+@media (prefers-reduced-motion: no-preference) {
+  .h2-root.h2-airy .h2-ttl.is-done .h2-ttl-t i { animation: none; }
+  .h2-root.h2-airy .h2-ttl.is-done .h2-ttl-t i.h2-tk { animation: h2-flow 10s linear infinite; }
+}
+
+/* 広い画面(701 以上): 札の間・カードの間・スライドと最新情報の間を広げる */
+@media (min-width: 701px) {
+  .h2-airy .h2-cats { margin-top: calc(34 * var(--u)); height: calc((298 + 32) * var(--u)); }
+  /* 札 6 枚: 少し小さく(0.94)して、真ん中から外へ 11 ずつ開く。札の間 3〜6 → 22〜28 */
+  .h2-airy .h2-cat { translate: calc((var(--i) - 2.5) * 11 * var(--u)) calc(32 * var(--u)); scale: .94; }
+  /* 特集のスライドを 644 → 620 に(右の最新情報との間 15 → 39) */
+  .h2-airy .h2-slidewrap { width: calc(620 * var(--u)); }
+  .h2-airy .h2-dots { left: 50%; }
+  /* 4 枚のカード: 幅を少し狭めて間を 14〜18 → 34 に */
+  .h2-airy .h2-cardlist > .h2-card:nth-child(1) { left: calc(41 * var(--u)); width: calc(236 * var(--u)); }
+  .h2-airy .h2-cardlist > .h2-card:nth-child(2) { left: calc(311 * var(--u)); width: calc(250 * var(--u)); }
+  .h2-airy .h2-cardlist > .h2-card:nth-child(3) { left: calc(595 * var(--u)); width: calc(250 * var(--u)); }
+  .h2-airy .h2-cardlist > .h2-card:nth-child(4) { left: calc(879 * var(--u)); width: calc(263 * var(--u)); }
+  .h2-airy .h2-cbub { left: auto !important; right: calc(3 * var(--u)); }
+}
+
+/* スマホ(〜700): 見本の座標置きではなく縦積みなので、縦の余白だけ広げる */
+@media (max-width: 700px) {
+  .h2-airy .h2-hero { height: calc(394 * var(--u) + var(--hd) + 74 * var(--u)); background: var(--airy-bg); }
+  .h2-airy .h2-bgwrap { -webkit-mask-image: linear-gradient(#000 calc(290 * var(--u) + var(--hd)), transparent calc(394 * var(--u) + var(--hd))); mask-image: linear-gradient(#000 calc(290 * var(--u) + var(--hd)), transparent calc(394 * var(--u) + var(--hd))); }
+  .h2-airy .h2-sub { top: calc(190 * var(--u)); }
+  .h2-airy .h2-search { top: calc(290 * var(--u)); }
+  .h2-airy .h2-pills { top: calc(386 * var(--u)); }
+  .h2-airy .h2-cats { padding: 36px 14px 40px; }
+  .h2-airy .h2-cats > .h2-ttl { margin-bottom: 24px; }
+  .h2-airy .h2-cardrow { gap: 14px 12px; }
+  .h2-airy .h2-feat { margin-top: 24px; padding: 2px 14px 4px; gap: 28px; }
+  .h2-airy .h2-cards { margin-top: 36px; }
+  .h2-airy .h2-cardlist { gap: 16px; }
+  .h2-airy .h2-band { margin-top: 28px; }
+  .h2-root.h2-airy .h2-feat::before { top: -26px; }
+  .h2-root.h2-airy .h2-cards::after { bottom: -24px; }
+}

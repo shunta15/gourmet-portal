@@ -11,17 +11,18 @@ import "./prod.css";
  * season = 最初の画面の最初の季節(サーバーが日本時間の今日の月から決めて渡す)
  * prod = 本番の形(app/portal-home が true で呼ぶ)。試作 /proto-home/machi2 と /mihon は渡さない(今のまま)。
  * news = 本番の形の「まちの最新情報」4 行(特集記事の実データ。news.ts の latestNews)
+ * airy = 試作 /proto-home/airy 用。流れる帯(マーキー)を出さない(本番は渡さない=今のまま)
  */
 const MARQ: [string, string][] = [["グルメ", "#f27b2f"], ["ビューティー", "#ee5d8e"], ["ボディケア", "#4aa84a"], ["ペット", "#8b6cf0"], ["おでかけ", "#2f8de0"], ["ステイ", "#e9a410"]];
 
-export default function Page({ mihon, season, prod = false, news }: { mihon: boolean; season: Season; prod?: boolean; news?: NewsRow[] }) {
+export default function Page({ mihon, season, prod = false, news, airy = false }: { mihon: boolean; season: Season; prod?: boolean; news?: NewsRow[]; airy?: boolean }) {
   return (
     <>
       <Header base={prod ? "/" : mihon ? "/proto-home/machi2/mihon" : "/proto-home/machi2"} prod={prod} />
       <main className="h2-main">
         <Hero mihon={mihon} season={season} prod={prod} />
         {/* 流れる帯(マーキー): 業種の名前が絶えず流れる。画面外では止まる */}
-        <div className="h2p-marq" aria-hidden="true">
+        {!airy && <div className="h2p-marq" aria-hidden="true">
           <div className="h2p-track">
             {[0, 1, 2, 3].map((k) => (
               <span key={k} className="h2p-set">
@@ -29,7 +30,7 @@ export default function Page({ mihon, season, prod = false, news }: { mihon: boo
               </span>
             ))}
           </div>
-        </div>
+        </div>}
         <Lower prod={prod} news={news} />
         <MotionPlus />
       </main>
