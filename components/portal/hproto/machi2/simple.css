@@ -1,0 +1,32 @@
+/* 総合トップ「文字の色をシンプルに」版(試作 /proto-home/simple 専用)。
+   本番の machi2 の部品はそのまま使い、この 1 枚を上に重ねるだけ(.h2-simple が付いたときだけ効く。本番の見た目は変わらない)。
+   色数を減らすのは「文字」だけ: キャッチコピー・見出し・帯の文字・特集スライドの見出し・3 つのボタンの文字を紺 1 色(#1f3d73)に。
+   強調は、キャッチコピーの「輪」1 字だけ橙(#e8531f)。ほかの強調は色でなく字の太さ(縁取りの幅)。
+   検索ボタンの橙・業種の丸いアイコン・矢印の丸・見出し脇の花の絵・飾り・写真はそのまま。
+   寸法は machi2 と同じく「見本の画素 × var(--u)」。どの規則も本番の規則より優先度を高くしてある(読み込み順に頼らない) */
+
+/* 1. 最初の画面のキャッチコピー: 1 字ずつ付いているインラインの色(4 色)を上書き。紺 1 色+「輪」だけ橙。
+   白い縁取り(影)は読みやすさのため残すが、細く・薄く(本番: 下に 2 +ぼかし 8 → 下に 1.2 +ぼかし 4)。字の太さ(縁取りは文字色)は本番の 2.4 → 2.0 */
+.h2-simple .h2-title i { color: #1f3d73 !important; -webkit-text-stroke-width: calc(2 * var(--u)); text-shadow: 0 calc(1.2 * var(--u)) 0 rgba(255, 255, 255, .88), 0 0 calc(4 * var(--u)) rgba(255, 255, 255, .85); }
+.h2-simple .h2-title i.h2-hl { color: #e8531f !important; }
+
+/* 2. 見出し「今日はどんな楽しみを見つける？」: 「楽しみ」の虹色の流れ(グラデーションの文字)をやめて同じ紺に。強調は字をほんの少し太く */
+.h2-simple .h2-ttl { color: #1f3d73; }
+.h2-simple .h2-ttl-t i { -webkit-text-stroke-color: #1f3d73; }
+.h2-simple .h2-ttl-t i.h2-tk { color: #1f3d73; background: none; -webkit-text-fill-color: #1f3d73; -webkit-text-stroke: calc(1.1 * var(--u)) #1f3d73 !important; }
+/* 流れる動きは見えなくなるので止める(入る動き・波打つ動きは他の字と同じ) */
+@media (prefers-reduced-motion: no-preference) {
+  .h2-root.h2-simple .h2-ttl.is-in .h2-ttl-t i.h2-tk { animation: h2-wavein .6s cubic-bezier(.3, 1.6, .5, 1) calc(var(--c) * 45ms) backwards; }
+  .h2-root.h2-simple .h2-ttl.is-done .h2-ttl-t i.h2-tk { animation: h2p-hw 2.8s ease-in-out calc(var(--c) * .1s) infinite; }
+  .h2-root.h2-simple .h2-ttl:not(.h2p-vis) .h2-ttl-t i.h2-tk { animation-play-state: paused; }
+}
+
+/* 3. 街の絵の帯「このまちで、もっとつながる。もっと好きになる。」: 「好き」も同じ紺(ピンクをやめる)。強調は字をほんの少し太く */
+.h2-simple .h2-tag { color: #1f3d73; -webkit-text-stroke-color: #1f3d73; }
+.h2-simple .h2-tl b { color: #1f3d73; -webkit-text-stroke-color: #1f3d73; -webkit-text-stroke-width: calc(1.1 * var(--u)); }
+
+/* 4. 特集スライドの見出し: 業種ごとの色(橙・各業種の色)をやめて紺 1 色。白いにじみ(読みやすさ)はそのまま。サブ文・ボタンはそのまま */
+.h2-simple .h2-sh, .h2-simple .h2-sh1, .h2-simple .h2-sh1 b, .h2-simple .h2-sh2 { color: #1f3d73; -webkit-text-stroke-color: #1f3d73; }
+
+/* 5. 3 つのボタン(地図から探す / 駅から探す / 動画で探す)の文字: 緑・青・橙 → 紺。アイコンの色はそのまま */
+.h2-simple .h2-pill b { color: #1f3d73; }
