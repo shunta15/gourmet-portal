@@ -61,7 +61,7 @@ export default function TopPage() {
           <img className="gr-kb" src={`${T}/hero.webp`} width={1448} height={355} alt="" fetchPriority="high" />
         </div>
         <div className="gt-hero-in">
-          <MaskLines as="h1" className="gt-h1 gr-min" lines={["からだが整うと、", "毎日がもっと好きになる。"]} step={190} delay={150} />
+          <MaskLines as="h1" className="gt-h1 gr-min" lines={[<span key="1" style={{ letterSpacing: "-0.02em" }}>からだが整うと、</span>, <span key="2" style={{ letterSpacing: "-0.077em" }}>毎日がもっと好きになる。</span>]} step={190} delay={150} />
           <p className="gt-lead" data-rv style={{ ["--d" as string]: "450ms" }}>
             渋谷エリアの整体院・接骨院・鍼灸院・マッサージ・
             <br />
