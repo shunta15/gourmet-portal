@@ -4,7 +4,7 @@ import Slider from "./Slider";
 import { CARD_FEATURE, IMG } from "./const";
 import type { CardPhotos } from "./cards";
 import type { NewsRow } from "./news";
-import { PROD_FOOT, type Foot } from "./prodData";
+import { PROD_FOOT } from "./prodData";
 import { CATS } from "./catsData";
 import "./lower.css";
 
@@ -36,9 +36,9 @@ const CARDS = [
 /** 記事の実際の写真を出すカード(story・family)の写真。渡されていない・他のカードは undefined(= 今までの画像) */
 const ph = (k: string, cards?: CardPhotos) => (k === "story" || k === "family" ? cards?.[k] : undefined);
 
-const DEMO_FOOT: Foot = {
-  l: [["マチノワについて", "/about"], ["掲載をご検討の方へ", "/contact"], ["お知らせ", "/feature"], ["よくあるご質問", "/contact"]],
-  r: [["利用規約", "/terms"], ["プライバシーポリシー", "/privacy"], ["お問い合わせ", "/contact"]],
+const DEMO_FOOT = {
+  l: [["マチノワについて", "/about"], ["掲載をご検討の方へ", "/contact"], ["お知らせ", "/feature"], ["よくあるご質問", "/contact"]] as [string, string][],
+  r: [["利用規約", "/terms"], ["プライバシーポリシー", "/privacy"], ["お問い合わせ", "/contact"]] as [string, string][],
   copy: "© 2025 マチノワ Machinowa. All rights reserved.",
 };
 const NEWS_Y = [722, 764, 806, 850];
@@ -160,11 +160,7 @@ export default function Lower({ prod = false, news, cards, cats }: { prod?: bool
         <ul className="h2-a h2-fl" style={PD(502, 1240, 220, 70)}>{foot.l.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
         <i className="h2-a h2-fvr" style={PD(743, 1245, 1, 55)} />
         <ul className="h2-a h2-fl" style={PD(789, 1240, 220, 70)}>{foot.r.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
-        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>
-          {foot.copy}
-          {/* 写真の出典(Wikimedia Commons)のページへの小さなリンク。著作権表示と同じ大きさ・色 */}
-          {foot.credits && <Link href={foot.credits[1]} className="h2-fcred">{foot.credits[0]}</Link>}
-        </p>
+        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>{foot.copy}</p>
       </footer>
     </>
   );
