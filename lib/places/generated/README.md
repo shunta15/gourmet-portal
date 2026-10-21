@@ -1,6 +1,7 @@
 # lib/places/generated
 
-`beauty.json` と `bodycare.json` は **自動生成**です。手で編集しないでください。
+`beauty.json`・`bodycare.json`・`pet.json` は **自動生成**です。手で編集しないでください。
+（`pet.json` と `features-pet.json` は、ペットの実在の店・特集が入るまでは空配列。読む側は `lib/places/newVerticals.ts` / `lib/places/features.ts`。店 0 件でも /pet/search・/pet/shop は壊れない）
 
 - 作る道具: `automation/vertical-stores/build-places.mjs`
   - 材料: `automation/vertical-stores/gbp/*.json`（Google マップで特定した店。`verdict` が「一致」だけ）と `automation/vertical-stores/articles/<キー>.json`（紹介記事）

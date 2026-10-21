@@ -1,5 +1,5 @@
 /**
- * 新業種（ビューティー・ボディケア）の実在の店の特集記事。lib/places/generated/features-{beauty,bodycare}.json を読む。
+ * 新業種（ビューティー・ボディケア・ペット）の実在の店の特集記事。lib/places/generated/features-{beauty,bodycare,pet}.json を読む。
  * JSON は automation/vertical-stores/build-features.mjs の自動生成（手で編集しない）。
  * 確認用の facts・notes は JSON に入っていない。
  * サーバー専用（動的 import で読む）。クライアント部品から import しない。
@@ -44,7 +44,12 @@ export const VERTICAL_FEATURES_ENABLED = true;
 
 export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise<PlaceFeature[]> {
   if (!VERTICAL_FEATURES_ENABLED) return [];
-  const mod = vertical === 'beauty' ? await import('./generated/features-beauty.json') : await import('./generated/features-bodycare.json');
+  const mod =
+    vertical === 'beauty'
+      ? await import('./generated/features-beauty.json')
+      : vertical === 'bodycare'
+        ? await import('./generated/features-bodycare.json')
+        : await import('./generated/features-pet.json');
   return (mod.default as unknown as { features: PlaceFeature[] }).features;
 }
 
