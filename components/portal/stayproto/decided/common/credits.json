@@ -30,7 +30,7 @@
   },
   {
     "page": "search",
-    "file": "/Users/shunta/claude/gp-k-shindai/public/_portal/stayproto/decided/search/hero.webp",
+    "file": "/_portal/stayproto/decided/search/hero.webp",
     "slot": "hero",
     "commonsTitle": "File:Fuji Kawaguchi 457.JPG",
     "pageUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_457.JPG",
@@ -56,5 +56,45 @@
     },
     "tier": "free",
     "credit": "own photo --- Contact: User:Mediocrity"
+  },
+  {
+    "page": "article-list",
+    "file": "/_portal/stayproto/decided/articlelist/hero.webp",
+    "slot": "hero",
+    "commonsTitle": "File:Shirahama-kaigan (Izu).JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Shirahama-kaigan_(Izu).JPG",
+    "author": "Saigen Jiro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Shirahama-kaigan_%28Izu%29.JPG",
+    "srcW": 6016,
+    "srcH": 4000,
+    "outW": 2400,
+    "outH": 880,
+    "note": "宿の記事の一覧のヒーロー背景(伊豆・白浜海岸の海と山。宿ではない飾りの写真)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 368,
+      "width": 3840,
+      "height": 1408,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/stayproto/decided/top/hero.webp",
+    "slot": "hero",
+    "author": "オーナー提供(2026-10-22)",
+    "license": "オーナー提供",
+    "note": "reports/machinowa-design/mockups/ステイ_見本_2026-10-22/素材_最初の画面_2026-10-22.webp",
+    "srcW": 1671,
+    "srcH": 941,
+    "tier": "owner"
   }
 ]

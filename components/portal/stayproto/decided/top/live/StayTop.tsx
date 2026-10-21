@@ -35,7 +35,7 @@ function Hero({ areas, kinds }: { areas: Array<{ label: string; prefs: Array<{ s
   return (
     <section className="sy-t-hero" aria-label="マチノワステイ">
       <div className="sy-t-photo sy-live">
-        <img className="sy-kb" src={`${T}/hero.webp`} width={1245} height={779} alt="" fetchPriority="high" />
+        <img className="sy-kb" src={`${T}/hero.webp`} width={1671} height={941} alt="" fetchPriority="high" />
         <p className="sy-t-vert" aria-hidden="true">
           何気ない一泊が、
           <br />
