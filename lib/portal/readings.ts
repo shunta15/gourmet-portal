@@ -61,8 +61,10 @@ export const VERTICAL_KANA: Record<string, string> = {
   beauty: "びゅーてぃー",
   bodycare: "ぼでぃけあ",
   pet: "ぺっと",
-  leisure: "おでかけ",
   stay: "すてい",
+  activity: "あくてぃびてぃ|たいけん|おでかけ", // 旧「おでかけ」で探す人のために、おでかけも読みに入れる
+  sports: "すぽーつ|ふぃっとねす|じむ",
+  life: "くらし|らいふ|らいふすたいる",
 };
 
 /** 新業種の種類（`${業種key}/${slug}`）→ 読み（複数あれば「|」区切り） */
@@ -85,17 +87,28 @@ export const CATEGORY_KANA: Record<string, string> = {
   "pet/dog-cafe": "かふぇ|いんしょくてん|どっぐかふぇ|いぬかふぇ|ねこかふぇ|どうぶつかふぇ",
   "pet/dog-run": "どっぐらん",
   "pet/pet-shop": "ぺっとしょっぷ",
-  "leisure/sightseeing": "かんこう|かんこうすぽっと",
-  "leisure/experience": "たいけん|あくてぃびてぃ",
-  "leisure/onsen": "おんせん|ひがえりおんせん|すぱ",
-  "leisure/park": "てーまぱーく|こうえん",
-  "leisure/outdoor": "あうとどあ",
-  "leisure/museum": "びじゅつかん|はくぶつかん",
   "stay/hotel": "ほてる",
   "stay/ryokan": "りょかん",
   "stay/pension": "みんしゅく|ぺんしょん|げすとはうす",
   "stay/glamping": "ぐらんぴんぐ|きゃんぷ",
   "stay/rental": "ひとむねがし|いっとうがし|かしべっそう",
+  "activity/sea-river": "うみ|かわ|だいびんぐ|さっぷ|らふてぃんぐ|つり",
+  "activity/mountain-sky": "やま|そら|ぱらぐらいだー|あすれちっく|ばぎー",
+  "activity/craft": "ものづくり|ものづくりたいけん|とうげい|そめもの|れじん|れざー",
+  "activity/sightseeing": "かんこう|けんがく|ていえん|ぎゃらりー",
+  "sports/gym": "じむ|ふぃっとねす|ぱーそなるじむ|くらいみんぐ",
+  "sports/yoga-pilates": "よが|ぴらてぃす",
+  "sports/martial-arts": "かくとうぎ|ぶどう|からて|じゅうどう|きっくぼくしんぐ",
+  "sports/dance": "だんす",
+  "sports/golf": "ごるふ",
+  "sports/facility-goods": "すぽーつしせつ|すぽーつようひん|ふっとさる|じょうば",
+  "life/lesson": "ならいごと|きょうしつ|じゅく|えいかいわ|おんがく|ぱそこん",
+  "life/shrine-temple": "じんじゃ|おてら|てら",
+  "life/fashion-craft": "ふぁっしょん|ざっか|こうげい|ふく|じゅえりー",
+  "life/photo-marriage": "しゃしんかん|けっこんそうだん|けっこんそうだんしょ",
+  "life/car-repair": "くるま|じどうしゃ|しゅうり|くりーにんぐ|かいとり|じてんしゃ",
+  "life/flower-farm": "はなや|のうえん|ふらわー",
+  "life/fortune": "うらない",
 };
 
 /** グルメの業態（lib/cuisineGroups.ts の label）→ 読み */

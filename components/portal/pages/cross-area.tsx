@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     vertical: "portal",
     title: `${area.short}の店を業種から探す｜マチノワ`,
-    description: `${area.short}のグルメ・ビューティー・ボディケア・ペット・おでかけ・ステイ。業種をまたいで、街の店を探せます。`,
+    description: `${area.short}のグルメ・ビューティー・ボディケア・ペット・ステイ・アクティビティ・スポーツ・くらし。業種をまたいで、街の店を探せます。`,
     path: `/area/${pref}`,
     count: newCount,
   });
@@ -87,7 +87,7 @@ export default async function Page({ params }: Props) {
       ]}
       kicker="Machinowa — Area"
       heading={`${area.short}の店を業種から探す`}
-      lead={`${area.short}のグルメ・ビューティー・ボディケア・ペット・おでかけ・ステイを、業種ごとに見渡せます。`}
+      lead={`${area.short}のグルメ・ビューティー・ボディケア・ペット・ステイ・アクティビティ・スポーツ・くらしを、業種ごとに見渡せます。`}
       count={total}
     >
       <Block id="mp-xv-h" kicker="Verticals" title={`${area.short}の業種別の掲載`}>

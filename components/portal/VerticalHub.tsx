@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import PortalFonts from "./PortalFonts";
 import Breadcrumbs from "./Breadcrumbs";
 import AreaBlocks from "./AreaBlocks";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { countPlaces } from "@/lib/places";
@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo/meta";
 import { fillTitle } from "@/lib/seo/util";
 import { HAS_CLAIM_POLICY, VERTICAL_FACE } from "@/lib/portal/meta";
 
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 
 /** 新業種の入口ページの metadata。件数 0 なら noindex（判定は lib/seo/gate.ts の1か所）。 */
 export async function verticalHubMetadata(key: VerticalKey): Promise<Metadata> {
@@ -28,7 +28,7 @@ export async function verticalHubMetadata(key: VerticalKey): Promise<Metadata> {
 }
 
 /**
- * 新業種（beauty / bodycare / pet / leisure / stay）の入口ページの中身（サーバー）。
+ * 新業種（beauty / bodycare / pet / stay / activity / sports / life）の入口ページの中身（サーバー）。
  * 件数は countPlaces の実数。掲載 0 件のあいだは「掲載準備中」と正直に出す。
  */
 export default async function VerticalHub({ vertical }: { vertical: VerticalKey }) {

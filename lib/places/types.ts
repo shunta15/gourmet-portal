@@ -119,13 +119,33 @@ export interface PetAttributes {
 }
 
 /**
- * Leisure（おでかけ）の attributes
+ * Activity（体験・アクティビティ。旧おでかけ）の attributes
+ * 料金・入場料は載せない決まり（2026-10-22）なので fee は持たない
  */
-export interface LeisureAttributes {
-  fee?: string;              // 入場料（例: '¥1,000', '無料'）
+export interface ActivityAttributes {
   duration?: string;         // 所要時間（例: '2〜3時間'）
   ageTarget?: string;        // 対象年齢
   indoor?: string;           // '屋内', '屋外', '両方'
+  parking?: boolean;
+}
+
+/**
+ * Sports（スポーツ・フィットネス）の attributes
+ */
+export interface SportsAttributes {
+  programs?: string[];       // プログラム・クラスの名前（例: ['パーソナル', 'ヨガ']）
+  trial?: boolean;           // 体験の有無
+  hours?: string;
+  parking?: boolean;
+}
+
+/**
+ * Life（くらし・ライフスタイル）の attributes
+ */
+export interface LifeAttributes {
+  services?: string[];       // サービス内容・教室の種類
+  reservation?: string;      // 予約の決まり（例: '予約制'）
+  hours?: string;
   parking?: boolean;
 }
 
@@ -161,7 +181,9 @@ export type Place = PlaceBase &
     | { vertical: 'beauty'; attributes?: BeautyAttributes }
     | { vertical: 'bodycare'; attributes?: BodycareAttributes }
     | { vertical: 'pet'; attributes?: PetAttributes }
-    | { vertical: 'leisure'; attributes?: LeisureAttributes }
     | { vertical: 'stay'; attributes?: StayAttributes }
+    | { vertical: 'activity'; attributes?: ActivityAttributes }
+    | { vertical: 'sports'; attributes?: SportsAttributes }
+    | { vertical: 'life'; attributes?: LifeAttributes }
     | { vertical: 'gourmet'; attributes?: GourmetAttributes }
   );

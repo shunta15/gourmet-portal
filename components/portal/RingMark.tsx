@@ -1,7 +1,7 @@
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 const C = 100;
 const R = 74;
 const rad = (d: number) => (d * Math.PI) / 180;

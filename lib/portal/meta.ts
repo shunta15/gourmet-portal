@@ -18,8 +18,10 @@ export const VERTICAL_FACE: Record<VerticalKey, VerticalFace> = {
   beauty: { en: 'Beauty', glyph: '美', verb: '整える' },
   bodycare: { en: 'Bodycare', glyph: '整', verb: 'ほぐす' },
   pet: { en: 'Pet', glyph: '友', verb: '連れていく' },
-  leisure: { en: 'Leisure', glyph: '遊', verb: '出かける' },
   stay: { en: 'Stay', glyph: '泊', verb: '泊まる' },
+  activity: { en: 'Activity', glyph: '遊', verb: '体験する' },
+  sports: { en: 'Sports', glyph: '動', verb: '体を動かす' },
+  life: { en: 'Life', glyph: '暮', verb: '暮らす' },
 };
 
 /** 地方ブロックの表示名とローマ字 */
@@ -35,4 +37,4 @@ export const BLOCK_FACE: Record<string, { label: string; en: string }> = {
 };
 
 /** 業種の入口で、効果効能をうたわない旨を掲載方針として示す業種 */
-export const HAS_CLAIM_POLICY: ReadonlySet<VerticalKey> = new Set<VerticalKey>(['beauty', 'bodycare', 'pet']);
+export const HAS_CLAIM_POLICY: ReadonlySet<VerticalKey> = new Set<VerticalKey>(['beauty', 'bodycare', 'pet', 'sports']);

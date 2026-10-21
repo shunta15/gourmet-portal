@@ -8,15 +8,15 @@
  */
 import { getPlaces } from "@/lib/places";
 import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/db/features";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "./meta";
 
 /** 輪に並べる順（時計まわり）。 */
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 
-/** いまあるページへ入れる業種（掲載中でも準備中でもページがあるもの）。ペット・おでかけ・ステイは入れない。「掲載中」かどうかは件数で決まる（HubItem.live）。 */
-const ENTERABLE: ReadonlySet<VerticalKey> = new Set<VerticalKey>(["gourmet", "beauty", "bodycare"]);
+/** いまあるページへ入れる業種（掲載中でも準備中でもページがあるもの）。体験・スポーツ・くらしもページがあるので入れる（掲載 0 件のあいだは「掲載準備中」と出る）。「掲載中」かどうかは件数で決まる（HubItem.live）。 */
+const ENTERABLE: ReadonlySet<VerticalKey> = new Set<VerticalKey>(["gourmet", "beauty", "bodycare", "pet", "stay", "activity", "sports", "life"]);
 
 /** スマホで名前を2行に折るときの区切り（3文字以内ずつ）。PC では折らない。 */
 const LINES: Record<VerticalKey, string[]> = {
@@ -24,8 +24,10 @@ const LINES: Record<VerticalKey, string[]> = {
   beauty: ["ビュー", "ティー"],
   bodycare: ["ボディ", "ケア"],
   pet: ["ペット"],
-  leisure: ["おで", "かけ"],
   stay: ["ステイ"],
+  activity: ["アクティ", "ビティ"],
+  sports: ["スポーツ"],
+  life: ["くらし"],
 };
 
 export interface HubItem {
@@ -74,7 +76,7 @@ export async function getHubData(): Promise<HubData> {
       light: v.accent.lightColor,
       count: counts[k],
       live: counts[k] > 0,
-      // 掲載中の業種は、いつでも入れる（ペット・おでかけ・ステイに店が入ったら、リンクになる）
+      // 掲載中の業種は、いつでも入れる（ENTERABLE の業種は掲載 0 件でも入れる）
       enter: ENTERABLE.has(k) || counts[k] > 0,
       cats: v.categories.map((c) => c.name),
       lines: LINES[k],

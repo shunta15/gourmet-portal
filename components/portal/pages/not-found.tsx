@@ -1,5 +1,5 @@
 /**
- * 総合サイトの 404 ページ（サーバー）。各セグメント（app/{beauty,bodycare,pet,leisure,stay,area,station,videos}/not-found.tsx）から出す。
+ * 総合サイトの 404 ページ（サーバー）。各セグメント（app/{beauty,bodycare,pet,stay,activity,sports,life,area,station,videos}/not-found.tsx）から出す。
  *
  * 総合サイトのページ（例: /beauty/nosuch・/area/nosuch）が notFound() を呼ぶと、ルートの app/not-found.tsx（グルメの見た目）が
  * セグメントのレイアウトの外側で出てしまい、総合サイトの CSS（portal.css）もフッターも付かなかった。

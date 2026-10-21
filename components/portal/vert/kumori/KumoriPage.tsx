@@ -2,14 +2,14 @@ import KumoriHero from "./KumoriHero";
 import KumoriBelow from "./KumoriBelow";
 import { KUMORI_ENTRIES, KUMORI_LEAD } from "@/lib/portal/vert/kumori/data";
 import { kuren, mincho } from "@/lib/portal/vert/kumori/fonts";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { countPlaces } from "@/lib/places";
 import { BLOCK_FACE, HAS_CLAIM_POLICY, VERTICAL_FACE } from "@/lib/portal/meta";
 
 const VERTICAL: VerticalKey = "beauty";
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 const BLOCK_ORDER = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州沖縄"];
 
 /**

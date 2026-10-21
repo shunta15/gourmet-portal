@@ -18,7 +18,7 @@ export const OG_SIZE = { width: 1200, height: 630 } as const;
 /** 共有画像のデザインを変えたら上げる（CDN・SNS のキャッシュを切るためのクエリ） */
 export const OG_VERSION = "2";
 
-const NEW_VERTICALS = ["beauty", "bodycare", "pet", "leisure", "stay"];
+const NEW_VERTICALS = ["beauty", "bodycare", "pet", "stay", "activity", "sports", "life"];
 
 function seg(s: string): string {
   return encodeURIComponent(s);

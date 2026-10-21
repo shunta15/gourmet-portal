@@ -5,7 +5,7 @@ import { assertPortalLive } from "@/lib/portal/launch";
 
 /**
  * 総合サイトの各セグメントのレイアウト共通部品（サーバー）。専用ヘッダー・本文（<main>）・フッターを出す。
- * 使うのは app/{area,station,map,videos,find,beauty,bodycare,pet,leisure,stay,portal-home}/layout.tsx。
+ * 使うのは app/{area,station,map,videos,find,beauty,bodycare,pet,stay,activity,sports,life,portal-home}/layout.tsx。
  * hub: 総合トップ（輪）だけ true。共通ヘッダーと PortalMotion を出さない（1 画面の中に自前のロゴ・検索の入口がある）。
  *
  * ヘッダー（クライアント部品）をルートの SiteShell ではなくここで出すのは、グルメの全ページの JS に

@@ -4,7 +4,7 @@ import { countPlaces } from "@/lib/places";
 import { assertPortalLive } from "@/lib/portal/launch";
 import type { VerticalKey } from "@/lib/verticals/types";
 
-// 業種トップの共有画像（/og/v/{beauty|bodycare|pet|leisure|stay}）。件数は実データ
+// 業種トップの共有画像（/og/v/{beauty|bodycare|pet|stay|activity|sports|life}）。件数は実データ
 export async function GET(_req: Request, { params }: { params: Promise<{ key: string }> }) {
   assertPortalLive(); // 公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）
   const { key } = await params;

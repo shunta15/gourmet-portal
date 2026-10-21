@@ -23,10 +23,10 @@ import { NOREN_REGION_REWRITE } from "@/lib/portal/noren/rewrites";
  *   /gourmet/restaurant/<id>・/gourmet/feature/<id> に差し替わる。ブラウザ（クライアント）のパスは /restaurant/<id> のまま、プリレンダー済みの HTML は内部のパスで作られるので、両方を含める。
  *   暖簾の枠だけを出し、グルメの共通の枠（SiteShell）は出さない。
  * - /feature（一覧）・/feature/search・/feature/region/<key>（NOREN_FEATURE_INDEX_REWRITE）: 同じ仕組みで /gourmet/feature・/gourmet/feature/search・/gourmet/feature/region/<key> に差し替わる。
- * - 新業種（/beauty /bodycare /pet /leisure /stay）とその配下
+ * - 新業種（/beauty /bodycare /pet /stay /activity /sports /life）とその配下
  * グルメの既存のそれ以外のルート（/region・/scene・/search など）は false（従来の SiteShell）。
  */
-const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/leisure', '/stay'];
+const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/stay', '/activity', '/sports', '/life'];
 
 export function isPortalPath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;

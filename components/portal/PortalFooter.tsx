@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import { AREA_TO_SEARCH, areaIndexHref } from "@/lib/portal/noren/areaLinks";
 import { SCENE_TO_SEARCH, sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
 import type { VerticalKey } from "@/lib/verticals/types";
@@ -8,7 +8,7 @@ import { BLOCK_FACE } from "@/lib/portal/meta";
 import { getStationIndex, stationHref } from "@/lib/stations/query";
 import FooterAreas, { type FooterAreaGroup } from "./FooterAreas";
 
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 const BLOCK_ORDER = ["北海道", "東北", "関東", "中部", "近畿", "中国", "四国", "九州沖縄"];
 
 /** フッターに出す、店の多い駅エリアの数 */

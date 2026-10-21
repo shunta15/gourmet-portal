@@ -9,8 +9,8 @@ import { getGeneratedPlaces } from './newVerticals';
 
 /**
  * 業種別に Place データを取得
- * データ投入：gourmet（DB）・beauty / bodycare / pet / stay（lib/places/generated/*.json。自動生成。stay.json は実在の宿 8 軒）
- * leisure は外枠の段階では空配列
+ * データ投入：gourmet（DB）・beauty / bodycare / pet / stay / activity / sports / life（lib/places/generated/*.json。自動生成）
+ * activity / sports / life は店のデータが入るまで places が空（0 件の画面は「掲載準備中」と正直に出る）
  */
 export async function getPlaces(
   vertical: VerticalKey,
@@ -26,11 +26,10 @@ export async function getPlaces(
     case 'bodycare':
     case 'pet':
     case 'stay':
+    case 'activity':
+    case 'sports':
+    case 'life':
       places = await getGeneratedPlaces(vertical);
-      break;
-    case 'leisure':
-      // 外枠の段階ではデータなし
-      places = [];
       break;
     default:
       const _exhaustive: never = vertical;

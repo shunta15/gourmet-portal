@@ -5,7 +5,7 @@ import { KZ_FONT_CLASSES } from "./fonts";
 import { koroKinds, koroLead, pickShops } from "@/lib/portal/vert/korogashi/data";
 import { loadVertical, pick } from "@/components/portal/pages/data";
 import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { countPlaces } from "@/lib/places";
 import { HAS_CLAIM_POLICY } from "@/lib/portal/meta";
@@ -14,7 +14,7 @@ import { BODYCARE_SITE } from "@/lib/portal/vert/bodysearch/site";
 import { searchHref } from "@/lib/portal/colorplay/search";
 
 const VERTICAL = "bodycare" as const;
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 
 /**
  * ボディケア入口「転がし(KOROGASHI)」の中身（サーバー）。本物の /bodycare（app/bodycare/(top)/page.tsx）と、

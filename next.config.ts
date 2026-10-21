@@ -28,8 +28,10 @@ const PORTAL_OFF_SOURCES = [
   "/beauty/:path*",
   "/bodycare/:path*",
   "/pet/:path*",
-  "/leisure/:path*",
   "/stay/:path*",
+  "/activity/:path*", // 体験・アクティビティ（旧おでかけ /leisure）
+  "/sports/:path*", // スポーツ・フィットネス
+  "/life/:path*", // くらし・ライフスタイル
   "/area/:path*",
   "/station/:path*",
   "/map/:path*",
@@ -88,6 +90,9 @@ const nextConfig: NextConfig = {
       // 総合トップの実体ルート /portal-home は、URL としては公開しない（`/` に集約。重複 URL を作らない）。
       // 公開スイッチが OFF のあいだは、このルートは 404（redirect も出さない）。
       ...(PORTAL_LIVE ? [{ source: "/portal-home", destination: "/", permanent: false }] : []),
+      // 旧「おでかけ」(/leisure)は「体験・アクティビティ」(/activity)に置き換えた(2026-10-22 オーナー決定)。配下も同じパスのまま 308 で転送する(`:path*` は /leisure そのものにも当たる)。
+      // 公開スイッチが OFF のあいだは /leisure も /activity も 404 のまま(redirect を出さない)
+      ...(PORTAL_LIVE ? [{ source: "/leisure/:path*", destination: "/activity/:path*", permanent: true }] : []),
       // 暖簾の店ページ・特集記事ページの内部のパス（/gourmet/restaurant/<id>・/gourmet/feature/<id>）は、直接開かれたら本物の URL へ恒久リダイレクトする。
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),

@@ -2,13 +2,13 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { VERTICALS } from "@/lib/verticals";
+import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import SearchSuggest from "./SearchSuggest";
 import { useSiteSearch } from "./useSiteSearch";
 
-const ORDER: VerticalKey[] = ["gourmet", "beauty", "bodycare", "pet", "leisure", "stay"];
+const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/verticals/index.ts の VERTICAL_ORDER の 1 か所
 
 /**
  * 総合サイト用ヘッダー。ロゴ「マチノワ」＋業種の切り替え＋検索。
