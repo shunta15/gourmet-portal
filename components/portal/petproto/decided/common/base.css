@@ -1,0 +1,406 @@
+/* ペット試作「決定案」(オーナーの見本 4 枚の完全再現)の共通 CSS。接頭辞は全部 pt-(出現だけは .io)。
+   見本の px はそのまま calc(N * var(--u)) で置く。--u = ページ幅 ÷ 948(見本の画像の幅)。1440px の画面でちょうど等倍(×1.519)。
+   デスクトップ = min-width: 860px(--u の寸法)/ スマホ = max-width: 859px(px で自分で組む。--u は使わない)。
+   動き: 出現 .io / 上端の進み具合の線 / ヘッダーの隠れる・現れる / 持ち上がるカード pt-lift / 矢印の丸 pt-arrow / 染まる丸札 pt-chip /
+         押すと縮む pt-press / 光が走る pt-shimmer・pt-shine / ポップイン pt-pop+浮く pt-float / ゆっくり寄る pt-kb / 線が描き直される pt-draw /
+         弾む pt-bounce / ハート pt-heart / 星 pt-stars / 追従タブ pt-tabs / 1 行ずつ現れる pt-mask / 書かれる pt-write */
+
+/* 今のヘッダーの下端(隠れると 0)。追従の物の top に使う。値が変わるとき滑らかに追従する */
+@property --pt-hy {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+.pt-root {
+  --u: calc(min(100vw, 1600px) / 948); /* Motion が、スクロールバーを除いた幅で上書きする */
+  /* 色 */
+  --pt-brown: #86694e; /* 差し色の茶(ボタン・丸・アクティブ) */
+  --pt-brown-d: #6e553d; /* 濃い茶(押したとき・影) */
+  --pt-brown-l: #a58a70; /* 明るい茶(ホバー) */
+  --pt-brown-bg: #f1ebe3; /* 薄い茶の面(タグ・チップの地) */
+  --pt-paper: #fefefe; /* ページの地(ほぼ白) */
+  --pt-sec: #f8f7f4; /* 節の地(薄いベージュ) */
+  --pt-cream: #f5f3ef; /* 帯・カードの地(ベージュ) */
+  --pt-ink: #2a2622; /* 本文 */
+  --pt-ink2: #4a443e; /* 見出しに次ぐ濃さ */
+  --pt-mut: #7a746d; /* 補助の文字 */
+  --pt-line: #e6e2db; /* 罫線・カードの縁 */
+  --pt-star: #f2a516; /* ★ */
+  --pt-red: #e0526a; /* ハート */
+  --pt-btn: linear-gradient(180deg, #907559 0%, #7d634a 100%); /* 茶のボタンの面 */
+  /* 影・角丸(角丸は小さめ) */
+  --pt-r: calc(4 * var(--u));
+  --pt-r2: calc(7 * var(--u));
+  --pt-sh: 0 calc(2 * var(--u)) calc(10 * var(--u)) rgba(80, 60, 40, 0.08);
+  --pt-sh2: 0 calc(10 * var(--u)) calc(26 * var(--u)) rgba(80, 60, 40, 0.16);
+  /* 書体のかたまり */
+  --pt-ff-jp: var(--pt-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --pt-ff-min: var(--pt-min), "Shippori Mincho", "Hiragino Mincho ProN", serif;
+  --pt-ff-hand: var(--pt-hand), "Zen Kurenaido", "Klee One", "Hiragino Maru Gothic ProN", cursive;
+  --pt-ff-en: var(--pt-en), "Noto Serif", "Times New Roman", serif;
+
+  position: relative;
+  background: var(--pt-paper);
+  color: var(--pt-ink);
+  font-family: var(--pt-ff-jp);
+  font-size: calc(8 * var(--u));
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shell(ページごと)。ヘッダーの寸法はページごとに見本が少し違うので、page で切り替える(--pt-lx など = 見本 948 幅での px) */
+.pt-shell {
+  --pt-hh: calc(48 * var(--u));
+  --pt-hy: var(--pt-hh);
+  --hs: 1; /* ヘッダーのロゴ・アイコンの拡大率 */
+  --pt-lx: 45; /* 肉球の左端 */
+  --pt-nx: 235; /* ナビの左端 */
+  --pt-nfs: 8.6; /* ナビの字 */
+  --pt-ngap: 22; /* ナビの間隔 */
+  --pt-iw: 51.5; /* 右のアイコン 1 つぶんの幅 */
+  --pt-rx: 24.25; /* 右のアイコン群の右の余白 */
+  position: relative;
+  transition: --pt-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.pt-shell[data-pt-page="top"] { --pt-hh: calc(48 * var(--u)); --hs: 1; --pt-lx: 45; --pt-nx: 235; --pt-nfs: 8.6; --pt-ngap: 22; --pt-iw: 51.5; --pt-rx: 24.25; }
+.pt-shell[data-pt-page="search"] { --pt-hh: calc(52.5 * var(--u)); --hs: 1.02; --pt-lx: 50; --pt-nx: 236; --pt-nfs: 8.8; --pt-ngap: 23.5; --pt-iw: 58; --pt-rx: 25; }
+.pt-shell[data-pt-page="shop"] { --pt-hh: calc(43 * var(--u)); --hs: 0.84; --pt-lx: 39; --pt-nx: 194; --pt-nfs: 7.4; --pt-ngap: 20; --pt-iw: 54.5; --pt-rx: 28.75; }
+.pt-shell[data-pt-page="article"] { --pt-hh: calc(56 * var(--u)); --hs: 1.09; --pt-lx: 48; --pt-nx: 248; --pt-nfs: 9.5; --pt-ngap: 25; --pt-iw: 59.5; --pt-rx: 25.25; }
+
+:where(.pt-root) *, :where(.pt-root) *::before, :where(.pt-root) *::after { box-sizing: border-box; }
+:where(.pt-root) a { color: inherit; text-decoration: none; }
+:where(.pt-root) img { display: block; max-width: 100%; }
+:where(.pt-root) :is(h1, h2, h3, h4, p, ul, ol, dl, dd, figure) { margin: 0; padding: 0; }
+:where(.pt-root) :is(ul, ol) { list-style: none; }
+:where(.pt-root) button { font-family: inherit; }
+.pt-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pt-main { position: relative; z-index: 1; display: block; }
+.pt-shell [id] { scroll-margin-top: calc(var(--pt-hh) + 14 * var(--u)); }
+
+/* 書体のかたまり */
+.pt-jp { font-family: var(--pt-ff-jp); }
+.pt-min { font-family: var(--pt-ff-min); }
+.pt-hand { font-family: var(--pt-ff-hand); }
+.pt-en { font-family: var(--pt-ff-en); }
+
+/* 共通の枠(グルメのサイドラベル・丸いカーソル・上の進み具合の線・上のナビ)は見本に無いので、この試作の中だけ隠す */
+body:has(.pt-root) > nav.nav,
+body:has(.pt-root) .side-label,
+body:has(.pt-root) .cursor-dot,
+body:has(.pt-root) .cursor-ring,
+body:has(.pt-root) .progress-bar { display: none !important; }
+body:has(.pt-root) { cursor: auto; }
+body:has(.pt-root) button, body:has(.pt-root) a { cursor: pointer; }
+
+/* ---------- 見本の帯(各ページの一番上・28px。layout が出す) ---------- */
+.pt-demo-bar { height: 28px; line-height: 28px; text-align: center; font-size: 12px; color: #6b6a5c; background: #efeadb; border-bottom: 1px solid #e0d9c4; position: relative; z-index: 2; }
+
+/* ---------- 上端の進み具合の線(茶) ---------- */
+.pt-progress { position: fixed; left: 0; top: 0; width: 100%; height: 3px; transform: scaleX(0); transform-origin: 0 50%; background: linear-gradient(90deg, #b59a7e, var(--pt-brown) 60%, var(--pt-brown-d)); z-index: 120; pointer-events: none; }
+
+/* ---------- ロゴ(肉球+「マチノワPet」。文字は本物の文字) ---------- */
+.pt-logo { display: inline-flex; align-items: center; gap: calc(9 * var(--u) * var(--hs, 1)); line-height: 1; color: #1d1a17; white-space: nowrap; }
+.pt-logo-paw { flex: none; width: calc(22 * var(--u) * var(--hs, 1)); height: auto; aspect-ratio: 104 / 100; transition: transform 0.5s cubic-bezier(0.3, 1.7, 0.5, 1); transform-origin: 50% 70%; }
+.pt-logo-t { font-size: calc(17.5 * var(--u) * var(--hs, 1)); }
+.pt-logo-jp { font-family: var(--pt-ff-min); font-weight: 600; font-size: 1.04em; letter-spacing: -0.1em; }
+.pt-logo-en { font-family: var(--pt-ff-en); font-weight: 400; font-size: 0.95em; margin-left: 0.14em; }
+a:hover > .pt-logo .pt-logo-paw { transform: rotate(-14deg) scale(1.1); }
+
+/* ---------- ヘッダー(最初=ヒーローの上に重なる半透明 / 他=白い帯) ---------- */
+.pt-head { position: sticky; top: 0; z-index: 100; height: var(--pt-hh); background: rgba(255, 255, 255, 0.985); border-bottom: 1px solid rgba(60, 40, 20, 0.05); transition: translate 0.38s cubic-bezier(0.3, 0.7, 0.2, 1), background-color 0.3s, box-shadow 0.3s; }
+.pt-shell[data-pt-page="top"] .pt-head { margin-bottom: calc(var(--pt-hh) * -1); }
+.pt-shell[data-pt-page="top"] .pt-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.06) 100%); border-bottom-color: transparent; }
+.pt-head.is-scrolled { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(60, 40, 20, 0.05), 0 6px 18px rgba(80, 60, 40, 0.06); }
+.pt-head.is-hidden { translate: 0 -105%; }
+.pt-head-in { position: relative; width: calc(948 * var(--u)); max-width: 100%; height: 100%; margin: 0 auto; }
+.pt-head-logo { position: absolute; left: calc(var(--pt-lx) * var(--u)); top: 50%; translate: 0 -50%; display: block; }
+.pt-head-nav { position: absolute; left: calc(var(--pt-nx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; gap: calc(var(--pt-ngap) * var(--u)); font-size: calc(var(--pt-nfs) * var(--u)); font-weight: 500; letter-spacing: 0.08em; white-space: nowrap; }
+.pt-head-nav a { position: relative; padding: calc(5 * var(--u)) 0; transition: color 0.2s; }
+.pt-head-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: calc(1 * var(--u)); height: max(1px, calc(1 * var(--u))); background: var(--pt-brown); transition: right 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.pt-head-nav a:hover { color: var(--pt-brown); }
+.pt-head-nav a:hover::after { right: 0; }
+.pt-head-ic { position: absolute; right: calc(var(--pt-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; }
+.pt-hi { width: calc(var(--pt-iw) * var(--u)); display: flex; flex-direction: column; align-items: center; gap: calc(4 * var(--u) * var(--hs)); padding: 0; border: 0; background: transparent; color: #26221e; transition: color 0.2s; }
+.pt-hi:hover { color: var(--pt-brown); }
+.pt-hi-i { display: block; width: calc(17.5 * var(--u) * var(--hs)); height: calc(17.5 * var(--u) * var(--hs)); }
+.pt-hi-i svg { stroke-width: 1.8; }
+.pt-hi-i svg { width: 100%; height: 100%; display: block; }
+.pt-hi-l { font-size: calc(7.1 * var(--u) * var(--hs)); font-weight: 500; letter-spacing: 0.04em; line-height: 1.2; white-space: nowrap; }
+.pt-hi.is-on { color: var(--pt-red); }
+.pt-hi.is-on .pt-hi-i path { fill: var(--pt-red); }
+/* メニューの開閉(三本線 → 閉じる) */
+.pt-hi[aria-expanded="true"] .pt-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
+.pt-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: calc(200 * var(--u)); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgba(255, 255, 255, 0.985); border: 1px solid var(--pt-line); border-radius: var(--pt-r2); box-shadow: var(--pt-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
+.pt-drawer[data-open="1"] { opacity: 1; visibility: visible; translate: 0 calc(4 * var(--u)); pointer-events: auto; }
+.pt-drawer a { padding: calc(8 * var(--u)) calc(16 * var(--u)); font-size: calc(8.4 * var(--u)); font-weight: 500; letter-spacing: 0.06em; transition: background 0.2s, color 0.2s; }
+.pt-drawer a:hover { background: var(--pt-cream); color: var(--pt-brown); }
+
+/* ---------- フッター(最初の見本の下:2 枚の帯+フッター本体) ---------- */
+.pt-root .pt-foot { position: relative; z-index: 1; margin: 0; padding: 0; background: #fbfaf9; color: var(--pt-ink); } /* グルメ共通の footer{} の色・余白を打ち消す */
+.pt-foot-in { width: calc(870 * var(--u)); margin: 0 auto; translate: calc(1 * var(--u)) 0; }
+.pt-foot-top { background: var(--pt-cream); padding: calc(4 * var(--u)) 0 calc(5 * var(--u)); }
+.pt-foot-ban { display: grid; grid-template-columns: calc(434 * var(--u)) 1fr; gap: calc(4 * var(--u)); height: calc(81 * var(--u)); }
+.pt-fb-brand { position: relative; overflow: hidden; border-radius: var(--pt-r); color: #fff; background: linear-gradient(172deg, #70513a 0%, #7d5f46 50%, #87694e 100%); }
+.pt-fb-photo { position: absolute; right: 0; top: 0; width: calc(244 * var(--u)); height: 100%; object-fit: cover; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 38%); mask-image: linear-gradient(90deg, transparent 0, #000 38%); transition: transform 1.2s cubic-bezier(0.25, 0.8, 0.25, 1); transform-origin: 70% 60%; }
+.pt-fb-brand:hover .pt-fb-photo { transform: scale(1.05); }
+.pt-fb-t { position: absolute; left: calc(21.5 * var(--u)); top: calc(12.5 * var(--u)); display: grid; font-size: calc(14 * var(--u)); line-height: calc(18.5 * var(--u)); letter-spacing: 0.08em; font-weight: 500; text-shadow: 0 1px 3px rgba(40, 20, 0, 0.18); }
+.pt-fb-s { position: absolute; left: calc(21.5 * var(--u)); top: calc(58.5 * var(--u)); font-size: calc(8.2 * var(--u)); line-height: calc(10 * var(--u)); letter-spacing: 0.1em; text-shadow: 0 1px 3px rgba(40, 20, 0, 0.2); }
+.pt-fb-about { position: relative; }
+.pt-fb-about-txt { position: absolute; inset: 0; }
+.pt-fb-about h2 { position: absolute; left: calc(19.5 * var(--u)); top: calc(9.5 * var(--u)); font-size: calc(10.3 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.06em; font-weight: 700; color: #26221e; }
+.pt-fb-about p { position: absolute; left: calc(19.5 * var(--u)); top: calc(27 * var(--u)); font-size: calc(7.4 * var(--u)); line-height: calc(12.7 * var(--u)); letter-spacing: 0.07em; color: #6d6862; }
+.pt-fb-btn { position: absolute; left: calc(19 * var(--u)); top: calc(56.5 * var(--u)); width: calc(127.5 * var(--u)); height: calc(20.5 * var(--u)); display: inline-flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); border-radius: 999px; background: #fff; border: 1px solid #c9c4bc; font-size: calc(7.2 * var(--u)); font-weight: 500; letter-spacing: 0.08em; color: #3a342e; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+.pt-fb-btn-a { width: calc(10 * var(--u)); height: auto; transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.pt-fb-btn:hover { border-color: var(--pt-brown); color: var(--pt-brown); }
+.pt-fb-btn:hover .pt-fb-btn-a { transform: translateX(calc(3 * var(--u))); }
+.pt-fb-about-img { position: absolute; right: 0; top: 0; width: calc(129.5 * var(--u)); height: 100%; object-fit: cover; border-radius: var(--pt-r); }
+.pt-foot-main { background: #fbfaf9; height: calc(71 * var(--u)); }
+.pt-foot-grid { position: relative; display: grid; grid-template-columns: calc(196 * var(--u)) calc(115 * var(--u)) calc(132 * var(--u)) calc(268.5 * var(--u)) calc(158.5 * var(--u)); height: 100%; }
+.pt-fg-brand { padding-top: calc(17.5 * var(--u)); }
+.pt-foot-logo { --hs: 1; gap: calc(7.5 * var(--u)); }
+.pt-foot-logo .pt-logo-paw { width: calc(19.5 * var(--u)); }
+.pt-foot-logo .pt-logo-t { font-size: calc(14.5 * var(--u)); }
+.pt-foot-logo-link { display: inline-block; margin-left: calc(0.75 * var(--u)); }
+.pt-fg-tag { margin: calc(4.2 * var(--u)) 0 0 calc(27.5 * var(--u)); font-size: calc(7.3 * var(--u)); line-height: calc(10 * var(--u)); letter-spacing: 0.08em; color: #6d6862; }
+.pt-fg-col { display: flex; flex-direction: column; padding-top: calc(11 * var(--u)); font-size: calc(7.3 * var(--u)); }
+.pt-fg-col h3 { font-size: calc(7.4 * var(--u)); line-height: calc(10 * var(--u)); letter-spacing: 0.06em; font-weight: 700; color: #3a342e; margin-bottom: calc(2.9 * var(--u)); }
+.pt-fg-col a { line-height: calc(12.3 * var(--u)); letter-spacing: 0.06em; color: #78726b; transition: color 0.2s, translate 0.25s; align-self: flex-start; }
+.pt-fg-col a:hover { color: var(--pt-brown); translate: calc(2 * var(--u)) 0; }
+.pt-fg-about { display: grid; grid-template-columns: calc(96 * var(--u)) 1fr; grid-auto-flow: column; grid-template-rows: auto auto auto; align-content: start; }
+.pt-fg-about h3 { grid-column: 1 / -1; grid-row: 1; margin-bottom: calc(5.25 * var(--u)); }
+.pt-fg-about a { line-height: calc(13.5 * var(--u)); }
+.pt-fg-r { position: relative; }
+.pt-fg-sns { position: absolute; left: 0; top: calc(12.5 * var(--u)); display: flex; }
+.pt-sns { display: grid; place-items: center; width: calc(28 * var(--u)); height: calc(20 * var(--u)); color: #1d1a17; transition: color 0.2s, translate 0.25s; }
+.pt-sns svg { width: calc(14.5 * var(--u)); height: calc(14.5 * var(--u)); }
+.pt-sns--ig svg { width: calc(17.4 * var(--u)); height: calc(17.4 * var(--u)); }
+.pt-sns--x svg { width: calc(16 * var(--u)); height: calc(16 * var(--u)); }
+.pt-sns--yt svg { width: calc(17 * var(--u)); height: calc(17 * var(--u)); }
+.pt-sns:hover { color: var(--pt-brown); translate: 0 calc(-2 * var(--u)); }
+.pt-totop { position: absolute; left: calc(134.5 * var(--u)); top: calc(11.5 * var(--u)); width: calc(26 * var(--u)); height: calc(26 * var(--u)); display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: #86715a; color: #fff; transition: background 0.2s, translate 0.25s; }
+.pt-totop svg { width: calc(10 * var(--u)); height: calc(10 * var(--u)); }
+.pt-totop:hover { background: var(--pt-brown-d); translate: 0 calc(-3 * var(--u)); }
+.pt-fg-copy { position: absolute; right: calc(0.5 * var(--u)); top: calc(47 * var(--u)); font-size: calc(7.3 * var(--u)); line-height: calc(9 * var(--u)); letter-spacing: 0.07em; color: #7a746d; white-space: nowrap; }
+
+/* ---------- 部品(各ページが使う) ---------- */
+/* ページの中身の幅(見本 948 幅のまま。1600px を超える画面では中央に寄る) */
+.pt-wrap { position: relative; width: calc(948 * var(--u)); max-width: 100%; margin: 0 auto; }
+/* 節の見出し(「Category カテゴリから探す … すべてのカテゴリを見る →」)。英字の大 + 日本語の小 + 右に「すべて見る」 */
+.pt-sechead { display: flex; align-items: baseline; gap: calc(14 * var(--u)); }
+.pt-h2 { font-family: var(--pt-ff-en); font-weight: 400; font-size: calc(20 * var(--u)); line-height: 1.2; letter-spacing: 0.01em; color: var(--pt-ink); }
+.pt-h2-sub { font-size: calc(8.4 * var(--u)); font-weight: 500; letter-spacing: 0.14em; color: #3a342e; }
+.pt-h2--jp { font-family: var(--pt-ff-min); font-weight: 500; font-size: calc(15 * var(--u)); letter-spacing: 0.06em; } /* 「特集記事」「専門家コラム」などの日本語の見出し */
+.pt-sechead .pt-more { margin-left: auto; align-self: center; }
+/* 「すべての〜を見る →」 */
+.pt-more { display: inline-flex; align-items: center; gap: calc(7 * var(--u)); font-size: calc(6.8 * var(--u)); font-weight: 700; letter-spacing: 0.1em; color: #3a342e; white-space: nowrap; transition: color 0.2s; }
+.pt-more svg { width: calc(10 * var(--u)); height: auto; transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.pt-more:hover { color: var(--pt-brown); }
+.pt-more:hover svg { transform: translateX(calc(4 * var(--u))); }
+/* 手書き風の添え書き */
+.pt-note { font-family: var(--pt-ff-hand); letter-spacing: 0.06em; }
+/* ボタン(茶の塗り。丸い) */
+.pt-btn { display: inline-flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); height: calc(34 * var(--u)); padding: 0 calc(20 * var(--u)); border: 0; border-radius: 999px; background: var(--pt-btn); color: #fff; font-weight: 500; font-size: calc(8.4 * var(--u)); letter-spacing: 0.08em; cursor: pointer; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(90, 65, 40, 0.18); }
+.pt-btn--line { background: #fff; color: #3a342e; border: 1px solid #c9c4bc; box-shadow: none; }
+.pt-btn--rect { border-radius: calc(10 * var(--u)); } /* 探すの「この条件で検索」のような角丸の四角 */
+.pt-btn svg { width: calc(12 * var(--u)); height: auto; }
+/* カード(白い面。縁と薄い影) */
+.pt-card { background: #fff; border: 1px solid var(--pt-line); border-radius: var(--pt-r2); box-shadow: var(--pt-sh); }
+/* タグ(「テラスOK」「カフェ・飲食店」など。灰色の小さな札) */
+.pt-tag { display: inline-flex; align-items: center; height: calc(13 * var(--u)); padding: 0 calc(6 * var(--u)); border-radius: calc(3 * var(--u)); background: #efeeec; color: #6d6862; font-size: calc(6.2 * var(--u)); letter-spacing: 0.04em; white-space: nowrap; }
+/* 押すと縮んで戻る */
+.pt-press { transition: transform 0.14s cubic-bezier(0.3, 1.6, 0.5, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s; }
+.pt-press:hover { filter: brightness(1.06); }
+.pt-press:active { transform: scale(0.94); }
+/* 光が走る(茶のボタン。ときどき) */
+.pt-shimmer { position: relative; overflow: hidden; isolation: isolate; }
+.pt-shimmer::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 38%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent); transform: skewX(-18deg); animation: pt-shimmer 4.6s ease-in-out 1.6s infinite; pointer-events: none; z-index: 1; }
+@keyframes pt-shimmer { 0% { left: -60%; } 28%, 100% { left: 160%; } }
+/* 写真の縁に光がひと筋走る(犬の写真など。入れ物に position: relative; overflow: hidden と pt-shine) */
+.pt-shine { position: relative; overflow: hidden; isolation: isolate; }
+.pt-shine::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 38%, rgba(255, 252, 244, 0.5) 49%, rgba(255, 252, 244, 0.1) 54%, transparent 62%); translate: -120% 0; animation: pt-shine 7s ease-in-out 1.2s infinite; pointer-events: none; z-index: 2; mix-blend-mode: soft-light; }
+@keyframes pt-shine { 0% { translate: -120% 0; } 22%, 100% { translate: 120% 0; } }
+/* 持ち上がるカード・札(写真は中でズーム。写真の入れ物には pt-zoom) */
+.pt-lift { transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+.pt-lift:hover { transform: translateY(calc(-5 * var(--u))); box-shadow: var(--pt-sh2); }
+.pt-zoom { overflow: hidden; }
+.pt-zoom img { transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.pt-lift:hover .pt-zoom img, .pt-zoom:hover img, .pt-hov:hover .pt-zoom img { transform: scale(1.07); }
+/* 矢印の丸(親が pt-lift か pt-hov のとき、触ると矢印が右へ滑る)。中身は <svg> */
+.pt-arrow { display: inline-grid; place-items: center; width: calc(18 * var(--u)); height: calc(18 * var(--u)); border-radius: 50%; border: 1px solid var(--pt-line); background: #fff; color: #5a5148; overflow: hidden; transition: background 0.25s, color 0.25s, border-color 0.25s; }
+.pt-arrow > * { width: calc(8 * var(--u)); height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.pt-lift:hover .pt-arrow, .pt-hov:hover .pt-arrow, .pt-arrow:hover { background: var(--pt-brown); color: #fff; border-color: var(--pt-brown); }
+.pt-lift:hover .pt-arrow > *, .pt-hov:hover .pt-arrow > *, .pt-arrow:hover > * { animation: pt-arrow-go 0.5s cubic-bezier(0.3, 0.7, 0.2, 1); }
+@keyframes pt-arrow-go { 0% { transform: translateX(0); } 45% { transform: translateX(160%); opacity: 0; } 46% { transform: translateX(-160%); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+/* 丸札・チップ(触ると茶に染まる。「ドッグラン」「ペットと泊まれる宿」など) */
+.pt-chip { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: #fff; border: 1px solid var(--pt-line); color: var(--pt-ink); transition: background 0.28s, color 0.28s, border-color 0.28s, transform 0.2s; }
+.pt-chip:hover { background: var(--pt-brown); color: #fff; border-color: var(--pt-brown); transform: translateY(calc(-2 * var(--u))); }
+.pt-chip:active { transform: scale(0.94); }
+/* ポップイン+ゆっくり浮く(検索の箱・丸い札)。pt-pop は出現、pt-float は浮遊。両方付けて使う */
+.pt-pop { animation: pt-pop 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) 0.9s both; }
+@keyframes pt-pop { 0% { scale: 0.2; opacity: 0; } 100% { scale: 1; opacity: 1; } }
+.pt-float { animation: pt-float 5.5s ease-in-out infinite alternate; }
+.pt-pop.pt-float { animation: pt-pop 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) 0.9s both, pt-float 5.5s ease-in-out 1.8s infinite alternate; }
+@keyframes pt-float { from { translate: 0 0; } to { translate: 0 calc(-4 * var(--u)); } }
+/* 写真がゆっくり寄る(Ken Burns。写真の入れ物は overflow: hidden) */
+.pt-kb { animation: pt-kb 24s ease-in-out infinite alternate; transform-origin: 62% 42%; }
+@keyframes pt-kb { from { scale: 1; } to { scale: 1.09; } }
+/* 線のアイコンが触ると描き直される(svg に pt-draw)+ 親(pt-hov)が触られたとき小さく弾む(pt-bounce) */
+.pt-draw :is(path, line, circle, rect, polyline, ellipse) { stroke-dasharray: 220; stroke-dashoffset: 0; }
+.pt-hov:hover .pt-draw :is(path, line, circle, rect, polyline, ellipse), .pt-draw:hover :is(path, line, circle, rect, polyline, ellipse) { animation: pt-draw 0.9s ease-out both; }
+@keyframes pt-draw { from { stroke-dashoffset: 220; } to { stroke-dashoffset: 0; } }
+.pt-hov:hover .pt-bounce { animation: pt-bounce 0.55s cubic-bezier(0.3, 1.8, 0.5, 1); }
+@keyframes pt-bounce { 0% { transform: scale(1); } 40% { transform: scale(1.16) translateY(calc(-3 * var(--u))); } 100% { transform: scale(1); } }
+/* ハート(押すと赤く弾む)。写真の上は白抜き、白い地の上は pt-heart--ink */
+.pt-heart { display: inline-grid; place-items: center; width: calc(20 * var(--u)); height: calc(20 * var(--u)); padding: 0; border: 0; border-radius: 50%; background: rgba(60, 45, 30, 0.28); backdrop-filter: blur(2px); cursor: pointer; transition: transform 0.15s, background 0.2s; }
+.pt-heart svg { width: calc(11 * var(--u)); height: calc(11 * var(--u)); fill: none; stroke: #fff; transition: fill 0.2s, stroke 0.2s; }
+.pt-heart.pt-heart--ink { background: transparent; backdrop-filter: none; }
+.pt-heart.pt-heart--ink svg { stroke: #8a847c; }
+.pt-heart:hover { transform: scale(1.14); }
+.pt-heart.is-on { background: rgba(255, 255, 255, 0.92); }
+.pt-heart.is-on svg { fill: var(--pt-red); stroke: var(--pt-red); animation: pt-heart-pop 0.5s cubic-bezier(0.3, 1.8, 0.5, 1); }
+@keyframes pt-heart-pop { 0% { scale: 1; } 40% { scale: 1.45; } 100% { scale: 1; } }
+/* 星(スクロールで左から塗られる)。字の大きさは親(font-size)で */
+.pt-stars { position: relative; display: inline-block; line-height: 1; letter-spacing: 0.05em; white-space: nowrap; vertical-align: middle; }
+.pt-stars-b { color: #e6e1d6; }
+.pt-stars-f { position: absolute; left: 0; top: 0; overflow: hidden; width: calc(var(--v, 5) / 5 * 100%); color: var(--pt-star); clip-path: inset(0 100% 0 0); }
+.pt-stars.is-in .pt-stars-f { clip-path: inset(0 0 0 0); transition: clip-path 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) var(--d, 0ms); }
+
+/* ---------- 追従タブ(ScrollSpyTabs。about / Menu / Facility …) ---------- */
+.pt-tabs { position: sticky; top: var(--pt-hy, 0px); z-index: 50; display: flex; gap: 0; background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--pt-line); backdrop-filter: blur(6px); }
+.pt-tab { position: relative; z-index: 1; flex: 1; display: grid; justify-items: center; align-content: center; gap: calc(1 * var(--u)); min-height: calc(30 * var(--u)); padding: 0 calc(8 * var(--u)); border: 0; background: transparent; font-size: calc(8 * var(--u)); font-weight: 500; letter-spacing: 0.06em; color: var(--pt-ink); cursor: pointer; transition: color 0.3s; }
+.pt-tab-en { font-family: var(--pt-ff-en); font-size: calc(8.4 * var(--u)); letter-spacing: 0.02em; }
+.pt-tab-jp { font-size: calc(6.4 * var(--u)); color: var(--pt-mut); }
+.pt-tab.is-on { color: var(--pt-brown); font-weight: 700; }
+.pt-tabs-ind { position: absolute; z-index: 0; left: 0; bottom: -1px; width: var(--iw, 0px); height: max(2px, calc(2 * var(--u))); translate: var(--ix, 0px) 0; border-radius: 2px; background: var(--pt-brown); transition: translate 0.45s cubic-bezier(0.3, 0.8, 0.2, 1), width 0.45s cubic-bezier(0.3, 0.8, 0.2, 1); pointer-events: none; }
+.pt-tabs--pill { gap: calc(8 * var(--u)); background: transparent; border-bottom: 0; backdrop-filter: none; }
+.pt-tabs--pill .pt-tab { border: 1px solid var(--pt-line); border-radius: 999px; background: rgba(255, 255, 255, 0.92); min-height: calc(26 * var(--u)); }
+.pt-tabs--pill .pt-tab.is-on { color: #fff; border-color: transparent; }
+.pt-tabs--pill .pt-tabs-ind { top: 0; bottom: auto; height: var(--ih, 26px); translate: var(--ix, 0px) var(--iy, 0px); border-radius: 999px; background: var(--pt-btn); }
+
+/* ---------- 出現(.io。Motion が .is-in を付ける)。JS が動くとき・動きを減らす設定でないときだけ、最初は隠す ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .pt-root .io { opacity: 0; translate: 0 calc(22 * var(--u)); transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .pt-root .io[data-io="fade"] { translate: none; }
+  .pt-root .io[data-io="left"] { translate: calc(-24 * var(--u)) 0; }
+  .pt-root .io[data-io="right"] { translate: calc(24 * var(--u)) 0; }
+  .pt-root .io[data-io="zoom"] { translate: none; scale: 0.93; }
+  .pt-root .io.is-in { opacity: 1; translate: none; scale: none; }
+  /* hover で動く物と一緒に使うときの transition(外側に .io、内側に pt-lift が安全。同じ要素に付けるときはこれ) */
+  .pt-root .io.pt-lift { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+  /* 大見出しの 1 行ずつ(MaskLines)・手書き(Write)・星は、自分の中身を動かすので外側は動かさない */
+  .pt-root .io.io-self { opacity: 1; translate: none; scale: none; transition: none; }
+  .pt-ml-i { translate: 0 108%; }
+  .pt-mask.is-in .pt-ml-i { translate: 0 0; transition: translate 1.05s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 110ms)); }
+  .pt-wl-i { clip-path: inset(-0.2em 100% -0.2em 0); }
+  .pt-write.is-in .pt-wl-i { clip-path: inset(-0.2em -0.4em -0.2em 0); transition: clip-path 1.1s cubic-bezier(0.45, 0.1, 0.3, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 650ms)); }
+}
+.pt-mask { display: block; }
+.pt-ml { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.pt-ml-i { display: block; }
+.pt-write { display: inline-block; }
+.pt-wl { display: block; }
+.pt-wl-i { display: inline-block; }
+
+/* 画面の外・非表示タブでは、ずっと動く物を止める(Motion が is-off / data-pt-hidden を付ける) */
+.pt-live.is-off, .pt-live.is-off *, .pt-live.is-off *::before, .pt-live.is-off *::after { animation-play-state: paused !important; }
+.pt-root[data-pt-hidden] *, .pt-root[data-pt-hidden] *::before, .pt-root[data-pt-hidden] *::after { animation-play-state: paused !important; }
+
+/* ---------- スマホ・狭い画面(860px 未満)。--u は使わず px で組む ---------- */
+@media (max-width: 859px) {
+  .pt-root { font-size: 14px; line-height: 1.7; }
+  .pt-shell, .pt-shell[data-pt-page] { --pt-hh: 54px; --hs: 1; }
+  .pt-demo-bar { font-size: 11px; line-height: 26px; height: 26px; }
+  .pt-logo { gap: 8px; }
+  .pt-logo-paw { width: 24px; }
+  .pt-logo-t { font-size: 19px; }
+  .pt-head { border-bottom-color: rgba(60, 40, 20, 0.06); }
+  .pt-shell[data-pt-page="top"] .pt-head:not(.is-scrolled) { background: rgba(255, 255, 255, 0.94); }
+  .pt-head-in { width: 100%; }
+  .pt-head-logo { left: 14px; }
+  .pt-head-nav { display: none; }
+  .pt-head-ic { right: 6px; }
+  .pt-hi { width: 44px; gap: 1px; }
+  .pt-hi-i { width: 22px; height: 22px; }
+  .pt-hi-l { display: none; }
+  .pt-drawer { left: 0; right: 0; width: auto; border-radius: 0 0 12px 12px; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
+  .pt-drawer a { padding: 13px 10px; font-size: 15px; border-bottom: 1px solid var(--pt-line); }
+  .pt-drawer a:last-child { border-bottom: 0; }
+  .pt-shell [id] { scroll-margin-top: 66px; }
+
+  .pt-wrap { width: 100%; padding: 0 16px; }
+  .pt-sechead { gap: 10px; flex-wrap: wrap; }
+  .pt-h2 { font-size: 24px; }
+  .pt-h2-sub { font-size: 12px; }
+  .pt-h2--jp { font-size: 20px; }
+  .pt-more { font-size: 12px; gap: 6px; }
+  .pt-more svg { width: 14px; }
+  .pt-btn { height: 46px; padding: 0 26px; font-size: 14px; gap: 10px; }
+  .pt-btn svg { width: 16px; }
+  .pt-tag { height: 20px; padding: 0 8px; font-size: 11px; border-radius: 4px; }
+  .pt-arrow { width: 28px; height: 28px; }
+  .pt-arrow > * { width: 12px; }
+  .pt-heart { width: 32px; height: 32px; }
+  .pt-heart svg { width: 17px; height: 17px; }
+  .pt-lift:hover { transform: none; }
+  .pt-tab { min-height: 44px; font-size: 13px; }
+  .pt-tab-en { font-size: 14px; }
+  .pt-tab-jp { font-size: 10px; }
+  .pt-tabs { overflow-x: auto; scrollbar-width: none; }
+  .pt-tabs::-webkit-scrollbar { display: none; }
+  .pt-tabs .pt-tab { flex: 0 0 auto; padding: 0 16px; }
+  .pt-root .io { translate: 0 18px; }
+  .pt-root .io[data-io="left"] { translate: -18px 0; }
+  .pt-root .io[data-io="right"] { translate: 18px 0; }
+
+  /* フッター */
+  .pt-foot-in { width: 100%; padding: 0 16px; }
+  .pt-foot-top { padding: 14px 0 16px; }
+  .pt-foot-ban { grid-template-columns: 1fr; height: auto; gap: 12px; }
+  .pt-fb-brand { height: 128px; border-radius: 8px; }
+  .pt-fb-photo { width: 62%; }
+  .pt-fb-t { left: 18px; top: 18px; font-size: 19px; line-height: 27px; letter-spacing: 0.08em; }
+  .pt-fb-s { left: 18px; right: 12px; top: auto; bottom: 14px; font-size: 11.5px; line-height: 16px; white-space: nowrap; }
+  .pt-fb-about p br { display: none; }
+  .pt-fb-about { display: grid; grid-template-columns: 1fr 112px; gap: 14px; align-items: center; padding: 4px 0; }
+  .pt-fb-about-txt { position: static; }
+  .pt-fb-about h2, .pt-fb-about p, .pt-fb-btn { position: static; }
+  .pt-fb-about h2 { font-size: 16px; line-height: 24px; }
+  .pt-fb-about p { margin-top: 6px; font-size: 12px; line-height: 20px; }
+  .pt-fb-btn { margin-top: 12px; width: auto; max-width: 100%; height: 36px; padding: 0 18px; gap: 10px; font-size: 12px; }
+  .pt-fb-btn-a { width: 14px; }
+  .pt-fb-about-img { position: static; width: 112px; height: 96px; border-radius: 8px; }
+  .pt-foot-main { height: auto; padding: 22px 0 26px; }
+  .pt-foot-grid { grid-template-columns: 1fr 1fr; height: auto; gap: 22px 16px; }
+  .pt-fg-brand { grid-column: 1 / -1; padding-top: 0; }
+  .pt-foot-logo { gap: 9px; }
+  .pt-foot-logo .pt-logo-paw { width: 26px; }
+  .pt-foot-logo .pt-logo-t { font-size: 20px; }
+  .pt-foot-logo-link { margin-left: 0; }
+  .pt-fg-tag { margin: 10px 0 0; font-size: 12px; line-height: 18px; }
+  .pt-fg-col { padding-top: 0; font-size: 13px; }
+  .pt-fg-col h3 { font-size: 13px; line-height: 20px; margin-bottom: 6px; }
+  .pt-fg-col a { line-height: 20px; padding: 5px 0; font-size: 13px; }
+  .pt-fg-about { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
+  .pt-fg-about h3 { margin-bottom: 6px; }
+  .pt-fg-about a { line-height: 20px; }
+  .pt-fg-r { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+  .pt-fg-sns, .pt-totop, .pt-fg-copy { position: static; }
+  .pt-sns { width: 44px; height: 44px; }
+  .pt-sns svg { width: 22px; height: 22px; }
+  .pt-totop { width: 44px; height: 44px; margin-left: auto; }
+  .pt-totop svg { width: 16px; height: 16px; }
+  .pt-fg-copy { flex-basis: 100%; font-size: 11px; line-height: 16px; white-space: normal; }
+}
+
+/* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .pt-root *, .pt-root *::before, .pt-root *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .pt-root .io { opacity: 1; translate: none; scale: none; }
+  .pt-ml-i { translate: none; }
+  .pt-wl-i { clip-path: none; }
+  .pt-stars-f { clip-path: none; }
+  .pt-head.is-hidden { translate: none; }
+}
