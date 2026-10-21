@@ -6,20 +6,39 @@ import { safeDecode } from "@/lib/stations/query";
 import { VERTICALS } from "@/lib/verticals";
 import { loadStayShops, stayLine, stayLineOk, visualLen, type LivePhoto, type LiveShop } from "../common/live";
 import { syLinks } from "../common/site";
+import { STAY_COPY, type FactBox, type PKind, type SecCopy, type ShopCopy } from "./copy";
+import type { FacKey, RowIcon } from "./FacIcons";
 
 /**
  * 宿の紹介(本番 /stay/shop/{id})に出すものを、1 軒ぶん用意する(サーバー専用)。実在の宿(getPlaces('stay'))の実在のデータだけ。
  * 値が無い欄は空にして、画面側で出さない。文は出す前に 1 文ずつ点検する(common/live.ts の stayLineOk =
  * 料金・評価・「おすすめ」「人気」・〇選・最上級・効き目や癒し・泊まった体験の言い回しを含む文は落とす)。料金・星・口コミは持たない。
  *
- * 紹介記事(Place.article)の節は、見出しの言葉で 客室 / 温泉 / お食事 / アクセス に振り分ける(どれにも当たらない節は、この画面には出さない。
- * 記事のページ /stay/article/{id} にある)。写真は、写真の説明(what)の言葉で 客室 / 温泉 / お食事 に振り分け、当たらない写真は
- * ヒーロー・「この宿について」の背景に回す。説明の無い写真は、振り分けずヒーロー・背景にだけ使う(別の欄に誤って載せない)。
+ * 見本「2_店舗紹介」どおりの短さ(見出し 2 行・本文 3〜4 行)の文は、宿ごとに記事の事実から書いた copy.ts を使う。無い宿は、記事の文から自動で短く取る(autoCopy)。
+ * 長い説明は、各節の「〇〇の詳細を見る」で開く(記事の節の全文。detail)。
+ *
+ * 写真(1 軒 10〜14 枚)は、1 枚ずつの「種類」(外観・景色・客室・風呂・料理・共用)で、ヒーロー・「この宿で過ごす時間」の背景・客室・温泉(お風呂)・お食事・紹介記事に振り分ける。
+ *  - 種類は、写真の記録の kind(stay.json の photos[].kind。外観/客室/風呂/料理/共用/景色。英字でも読む)があればそれ。無ければ写真の説明(what)の最初の 1 文の言葉で見分ける。
+ *  - 同じ写真を同じページで 2 回は使わない。足りないときは、節の写真の枚数を減らす(形は崩れない。節に写真が 1 枚も無ければ、客室以外の節は出さない)。
  */
 
-export type SPhoto = LivePhoto & { what: string };
-export type Block = { heading: string; text: string[] };
-export type Group = { blocks: Block[]; photos: SPhoto[] };
+export type SPhoto = LivePhoto & { what: string; kind: PKind };
+
+export type Sec = {
+  slot: "a" | "b" | "c";
+  /** 追従タブの飛び先 id(sh-rooms / sh-bath / sh-dining) */
+  id: string;
+  label: string;
+  en: string;
+  h: string[];
+  p: string[];
+  /** 「〇〇の詳細を見る」で開く全文(段落。点検済み) */
+  detail: string[];
+  btn: string;
+  photos: SPhoto[];
+};
+
+export type Row = { k: string; v: string; note?: string; kind?: "tel" | "url"; href?: string };
 
 export type ShopDetail = {
   shop: LiveShop;
@@ -28,61 +47,116 @@ export type ShopDetail = {
   schemaType: string;
   /** ヒーローの写真(最大 3 枚。1 枚目が大) */
   hero: SPhoto[];
-  /** 「この宿について」の背景(無ければ null) */
+  /** 「この宿で過ごす時間」の背景(横長の景色・外観。無ければ null) */
   banner: SPhoto | null;
-  /** 「この宿について」の本文(段落。点検済み。無ければ空) */
-  intro: string[];
-  /** ヒーローの 1 行(宿の紹介の 1 行。短いときだけ。無ければ空) */
+  /** ヒーローの 1 行(短い事実の 1 文。無ければ空) */
   tagline: string;
-  rooms: Group;
-  onsen: Group;
-  dining: Group;
-  /** 客室タイプの名前(あれば) */
-  roomTypes: string[];
-  /** 施設・サービスの札(タグ・温泉・ペット同伴。最大 8) */
-  facilities: string[];
+  /** 右上の箱(種類・札・事実の欄) */
+  panel: { cap: string; big: string; pills: string[]; boxes: FactBox[] };
+  intro: { h: string[]; p: string[] };
+  secs: Sec[];
+  /** 施設・サービスのアイコン(事実のあるものだけ。最大 8) */
+  facilities: Array<{ k: FacKey; t: string }>;
   /** 基本情報の表(値があるものだけ) */
-  rows: Array<{ k: string; v: string; kind?: "tel" | "url"; href?: string }>;
-  /** アクセスの行(駅・車などの事実の文。最大 4) */
-  access: Array<{ icon: "train" | "car" | "pin"; label: string; text: string }>;
+  rows: Row[];
+  /** アクセスの行(最大 3) */
+  access: Array<{ icon: RowIcon; label: string; text: string }>;
+  /** 「詳しいアクセス情報を見る」で開く全文 */
+  accessDetail: string[];
+  /** Google マップの埋め込み(キー不要)と、地図のリンク */
+  mapSrc: string;
   mapHref: string;
-  /** 宿の紹介記事のページ(写真のある宿だけ。無ければ null) */
-  article: { href: string; title: string; photo: SPhoto } | null;
-  /** 記事のページがあるとき、節の本文は最初の 2 文までにして続きは記事へ(true)/ 全文をここに出す(false) */
-  excerpt: boolean;
+  /** 宿の紹介記事のページ(写真のある宿だけ。無ければ null)。photo は他の欄で使っていない写真(無ければ null) */
+  article: { href: string; title: string; photo: SPhoto | null } | null;
 };
 
-// ---- 振り分け ----
-const RE_ONSEN = /温泉|露天|風呂|浴場|サウナ|湯/;
-const RE_DINING = /食事|料理|夕食|朝食|ディナー|ランチ|ダイニング|レストラン|バーベキュー|BBQ|ご飯|グルメ/i;
-const RE_ROOMS = /客室|部屋|ルーム|ベッド|和室|洋室|寝室|スイート|コテージ|テント|ドーム|ヴィラ|キャビン|バンガロー|ドミトリー|キャンプサイト|フリーサイト|区画サイト|オートサイト|サイト|宿泊/;
-const RE_ACCESS = /場所|アクセス|行き方|交通|周辺|所在地/;
-
-/** 見出しの振り分け。複数の語が入る見出し(「客室とお風呂」)は、いちばん先に出る語の欄にする */
-function kindOfHeading(h: string): "onsen" | "dining" | "rooms" | "access" | "other" {
-  const cand: Array<["onsen" | "dining" | "rooms" | "access", number]> = [
-    ["access", h.search(RE_ACCESS)],
-    ["onsen", h.search(RE_ONSEN)],
-    ["dining", h.search(RE_DINING)],
-    ["rooms", h.search(RE_ROOMS)],
-  ];
-  const hit = cand.filter(([, i]) => i >= 0).sort((a, b) => a[1] - b[1])[0];
-  return hit ? hit[0] : "other";
+// ---------------------------------------------------------------- 写真の種類
+const KIND_FIELD: Array<[RegExp, PKind]> = [
+  [/外観|exterior|facade|outside|building/i, "exterior"],
+  [/景色|景観|眺|view|scenery|landscape|nature/i, "view"],
+  [/客室|部屋|room|bedroom/i, "rooms"],
+  [/風呂|温泉|浴|bath|onsen|spa/i, "bath"],
+  [/料理|食事|dining|food|meal|dish|cuisine/i, "dining"],
+  [/共用|共有|館内|common|lobby|lounge|facility|interior|shared/i, "common"],
+];
+/** 写真の記録の kind(日本語でも英字でも)→ 種類。読めなければ null */
+function kindFromField(raw: unknown): PKind | null {
+  if (typeof raw !== "string" || !raw.trim()) return null;
+  for (const [re, k] of KIND_FIELD) if (re.test(raw)) return k;
+  return null;
 }
-/** 写真の説明(what)の言葉 → 欄。説明の無い写真・どれにも当たらない写真は "other"(ヒーロー・「この宿について」の背景に回す) */
-const PH_ONSEN = /温泉|露天|風呂|浴場|浴室|浴槽|湯船|サウナ/;
-const PH_DINING = /食事|料理|夕食|朝食|ディナー|ランチ|レストラン|バーベキュー|BBQ|ごはん|ご飯|サラダ|膳|串焼き|ビュッフェ/;
-const PH_ROOMS = /客室|部屋|ルーム|ベッド|寝具|布団|寝室|ロフト|ツイン|和室|洋室|座卓|畳敷き|スイート|ドミトリー|テント|ドーム|キャビン|バンガロー|コテージ(の|内)|キャンプサイト|フリーサイト|区画サイト|オートサイト/;
-function kindOfPhoto(whatFull: string): "onsen" | "dining" | "rooms" | "other" {
-  // 説明の最初の 1 文(写っているものの主題)の言葉で見る。2 文め以降の補足(「…客室の建物が点在している」など)には引きずられない
-  const what = whatFull.split("。")[0];
+/** 写真の説明(what)の最初の 1 文の言葉 → 種類(kind が無い写真の見分け方。当たらなければ other) */
+const W_BATH = /温泉|露天|風呂|浴場|浴室|浴槽|湯船|サウナ/;
+const W_DINING = /食事|料理|夕食|朝食|ディナー|ランチ|バーベキュー|BBQ|ごはん|ご飯|サラダ|膳|串焼き|ビュッフェ|ベーコンエッグ|トースト|レストランの店内|ラーメン|ピザ/;
+const W_EXTERIOR = /外観|玄関|正面|入口|建物|看板|上空/;
+const W_ROOMS = /客室|部屋|ルーム|ベッド|寝具|布団|寝室|ロフト|ツイン|和室|洋室|スイート|ドミトリー/;
+const W_COMMON = /居間|リビング|広間|食堂|ダイニング|ラウンジ|ロビー|共有|共用|談話|キッチン|トイレ|ハンモック|フロント|売店|暖炉/;
+const W_VIEW = /景色|眺|富士山|山|海|空|夕暮れ|夕焼け|サイト|芝|庭|敷地|森|川|滝|湖|雪|星|夜景|桜|紅葉|プール|テラス|デッキ|東屋/;
+function kindFromWhat(whatFull: string): PKind {
+  const what = (whatFull ?? "").split("。")[0];
   if (!what) return "other";
-  if (PH_ONSEN.test(what)) return "onsen";
-  if (PH_DINING.test(what)) return "dining";
-  if (PH_ROOMS.test(what)) return "rooms";
+  if (W_BATH.test(what)) return "bath";
+  if (W_DINING.test(what)) return "dining";
+  if (W_EXTERIOR.test(what)) return "exterior";
+  if (W_ROOMS.test(what)) return "rooms";
+  if (W_COMMON.test(what)) return "common";
+  if (W_VIEW.test(what)) return "view";
   return "other";
 }
 
+const ratio = (p: SPhoto) => (p.h > 0 ? p.w / p.h : 1);
+
+/**
+ * 写真の振り分け。順番 = ヒーロー大 → 背景(横長のみ)→ 各節の最初の 1 枚(客室・2 つめ・3 つめ)→ ヒーローの小 2 枚 → 各節を上限まで → 紹介記事。
+ * 各節は、kinds の先頭の種類(主)から取り、主が 0 枚のときだけ 2 つめ以降の種類(代わり)から 1 枚取る。写真は 1 度使ったら二度と使わない。
+ */
+function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPhoto | null; bySlot: Record<"a" | "b" | "c", SPhoto[]>; article: SPhoto | null } {
+  const used = new Set<string>();
+  const free = (k: PKind) => all.filter((p) => !used.has(p.src) && p.kind === k);
+  const use = (p: SPhoto | undefined | null): SPhoto | null => {
+    if (!p) return null;
+    used.add(p.src);
+    return p;
+  };
+  /** 種類の順に見て、最初に見つかった 1 枚(横長優先 = 比率 1.2 以上があればそれ) */
+  const pickOne = (order: PKind[], minRatio = 0): SPhoto | null => {
+    for (const k of order) {
+      const c = free(k).filter((p) => ratio(p) >= minRatio);
+      if (c.length) return use(c[0]);
+    }
+    return null;
+  };
+
+  const heroOrder: PKind[] = ["exterior", "view", "rooms", "common", "bath", "dining", "other"];
+  const smallOrder: PKind[] = ["view", "exterior", "common", "bath", "dining", "rooms", "other"];
+  // ヒーロー大: 外観・景色の横長 → 外観・景色のほぼ正方形 → ほかの種類の横長 → なんでも(外観・景色が先。料理や客室の写真は、外観・景色が無いときだけ)
+  const h0 = pickOne(["exterior", "view"], 1.2) ?? pickOne(["exterior", "view"], 0.9) ?? pickOne(heroOrder, 1.2) ?? pickOne(heroOrder);
+  const banner = pickOne(["view", "exterior", "common", "other"], 1.3);
+
+  const bySlot: Record<"a" | "b" | "c", SPhoto[]> = { a: [], b: [], c: [] };
+  const CAP = { a: 4, b: 3, c: 3 } as const;
+  // 各節の最初の 1 枚
+  for (const s of secs) {
+    const [main, ...alt] = s.kinds;
+    const first = pickOne([main]) ?? pickOne(alt);
+    if (first) bySlot[s.slot].push(first);
+  }
+  // ヒーローの小 2 枚
+  const h1 = pickOne(smallOrder);
+  const h2 = h1 ? pickOne(smallOrder) : null;
+  // 各節を上限まで(主の種類だけ)
+  for (const s of secs) {
+    const main = s.kinds[0];
+    for (const p of free(main)) {
+      if (bySlot[s.slot].length >= CAP[s.slot]) break;
+      bySlot[s.slot].push(use(p)!);
+    }
+  }
+  const article = pickOne(["view", "exterior", "common", "other", "rooms", "bath", "dining"]);
+  return { hero: [h0, h1, h2].filter((x): x is SPhoto => !!x), banner, bySlot, article };
+}
+
+// ---------------------------------------------------------------- 文
 /** 文の並びを点検する(1 文ずつ。通らない文は落とす)。段落ごとの配列で返す */
 export function checkedParagraphs(body: string | undefined): string[] {
   return (body ?? "")
@@ -107,6 +181,116 @@ function httpHost(u: string): string {
   return u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 }
 
+/** 記事の節(見出しの名前で選ぶ)の全文(点検済みの段落) */
+function detailOf(place: Place, headings: string[]): string[] {
+  const secs = place.article?.sections ?? [];
+  const out: string[] = [];
+  for (const h of headings) {
+    const sec = secs.find((s) => s.heading === h);
+    if (sec) out.push(...checkedParagraphs(sec.body));
+  }
+  return out;
+}
+
+// ---------------------------------------------------------------- 自動の短文(copy.ts に無い宿)
+const RE_ONSEN = /温泉|露天|風呂|浴場|サウナ|湯/;
+const RE_DINING = /食事|料理|夕食|朝食|ディナー|ランチ|ダイニング|レストラン|バーベキュー|BBQ|ご飯|グルメ|キッチン|自炊/i;
+const RE_ROOMS = /客室|部屋|ルーム|ベッド|和室|洋室|寝室|スイート|コテージ|テント|ドーム|ヴィラ|キャビン|バンガロー|ドミトリー|サイト|宿泊棟|宿泊/;
+const RE_ACCESS = /場所|アクセス|行き方|交通|周辺|所在地/;
+function kindOfHeading(h: string): "bath" | "dining" | "rooms" | "access" | "other" {
+  const cand: Array<["bath" | "dining" | "rooms" | "access", number]> = [
+    ["access", h.search(RE_ACCESS)],
+    ["bath", h.search(RE_ONSEN)],
+    ["dining", h.search(RE_DINING)],
+    ["rooms", h.search(RE_ROOMS)],
+  ];
+  const hit = cand.filter(([, i]) => i >= 0).sort((a, b) => a[1] - b[1])[0];
+  return hit ? hit[0] : "other";
+}
+/** 文を 1 つずつ足して、総字数が max を超える手前で止める(最低 1 文) */
+function clip(sents: string[], max: number): string[] {
+  const out: string[] = [];
+  let n = 0;
+  for (const s of sents) {
+    if (out.length > 0 && n + s.length > max) break;
+    out.push(s);
+    n += s.length;
+  }
+  return out;
+}
+/** 1 文を 2 行の見出しにする(1 行 14 字ほど。真ん中あたりの読点・助詞のあとで切る。30 字を超えるぶんは読点のところで切り捨てる) */
+function twoLines(t: string): [string, string] {
+  let s = t.replace(/[。.]+$/, "");
+  if (s.length > 30) {
+    const cut = s.slice(0, 30).lastIndexOf("、");
+    s = cut > 8 ? s.slice(0, cut) : s.slice(0, 30);
+  }
+  if (s.length <= 15) return [s, ""];
+  const mid = Math.floor(s.length / 2);
+  let best = -1;
+  for (let i = Math.max(6, mid - 5); i <= Math.min(s.length - 4, mid + 5); i++) {
+    const ch = s[i - 1];
+    if (ch === "、" || /[のにでとをはが]/.test(ch)) {
+      if (best < 0 || Math.abs(i - mid) < Math.abs(best - mid) || ch === "、") best = i;
+    }
+  }
+  if (best < 0) best = mid;
+  return [s.slice(0, best), s.slice(best)];
+}
+
+function autoCopy(shop: LiveShop, place: Place, attrs: StayAttributes): ShopCopy {
+  const headline = shop.article?.headline ?? "";
+  const lede = sentences(checkedParagraphs(place.article?.lede ?? place.intro));
+  const groups: Record<"bath" | "dining" | "rooms", Array<{ heading: string; text: string[] }>> = { bath: [], dining: [], rooms: [] };
+  for (const sec of place.article?.sections ?? []) {
+    const heading = stayLine(sec.heading);
+    const text = checkedParagraphs(sec.body);
+    if (!heading || text.length === 0) continue;
+    const k = kindOfHeading(heading);
+    if (k === "bath" || k === "dining" || k === "rooms") groups[k].push({ heading, text });
+  }
+  const mk = (slot: "a" | "b" | "c", label: string, en: string, key: "rooms" | "bath" | "dining", kinds: PKind[]): SecCopy | null => {
+    const g = groups[key][0];
+    if (!g) return null;
+    return { slot, label, en, h: twoLines(g.heading), p: clip(sentences(g.text), 90), from: groups[key].map((x) => x.heading), kinds };
+  };
+  const onsen = shop.tags.includes("温泉");
+  const secs = [
+    mk("a", "客室", "ROOMS", "rooms", ["rooms", "exterior"]),
+    mk("b", onsen ? "温泉" : "お風呂", onsen ? "ONSEN" : "BATH", "bath", ["bath"]),
+    mk("c", "お食事", "DINING", "dining", ["dining"]),
+  ].filter((x): x is SecCopy => !!x);
+  const boxes: FactBox[] = [];
+  if (shop.checkIn) boxes.push({ icon: "calendar", l: "チェックイン", v: shop.checkIn });
+  if (shop.checkOut) boxes.push({ icon: "calendar", l: "チェックアウト", v: shop.checkOut });
+  if (shop.station) boxes.push({ icon: "train", l: "最寄り駅", v: shop.station });
+  if (shop.area) boxes.push({ icon: "pin", l: "所在地", v: shop.area });
+  if (shop.phone) boxes.push({ icon: "clock", l: "電話", v: shop.phone });
+  const fac: ShopCopy["fac"] = [];
+  if (shop.tags.some((t) => RE_ONSEN.test(t)) || attrs.onsen === true) fac.push({ k: "onsen", t: "温泉" });
+  if (shop.tags.some((t) => /ペット/.test(t)) || attrs.petsAllowed === true) fac.push({ k: "paw", t: "ペット同伴" });
+  const text = [place.article?.lede ?? "", ...(place.article?.sections ?? []).map((s) => s.body)].join("\n");
+  const has = (re: RegExp) => sentences(checkedParagraphs(text)).some((s) => re.test(s) && !/なく|ない|不可|ません|できない|禁止|お断り/.test(s));
+  if (has(/Wi-?Fi/i)) fac.push({ k: "wifi", t: "Wi-Fi" });
+  if (has(/駐車場/)) fac.push({ k: "parking", t: "駐車場" });
+  if (has(/バーベキュー|BBQ/i)) fac.push({ k: "bbq", t: "バーベキュー" });
+  if (has(/キッチン/)) fac.push({ k: "kitchen", t: "キッチン" });
+  const addr = shop.address || shop.area;
+  return {
+    tag: headline && visualLen(headline) <= 30 ? headline : "",
+    big: shop.kindName,
+    pills: shop.tags.slice(0, 2),
+    boxes: boxes.slice(0, 3),
+    intro: { h: twoLines(stayLine(headline).split("。")[0] || "この宿について"), p: clip(lede, 120) },
+    secs,
+    fac: fac.slice(0, 8),
+    rows: [{ k: "種類" }, { k: "所在地" }, { k: "最寄り駅" }, { k: "電話番号" }, { k: "チェックイン" }, { k: "チェックアウト" }, { k: "公式サイト" }],
+    access: [...(shop.station ? [{ icon: "train" as RowIcon, label: "最寄り駅", text: shop.station }] : []), ...(addr ? [{ icon: "pin" as RowIcon, label: "所在地", text: "@addr" }] : [])],
+    accessFrom: (place.article?.sections ?? []).map((s) => s.heading).filter((h) => kindOfHeading(h) === "access"),
+  };
+}
+
+// ---------------------------------------------------------------- 読み込み
 export async function loadStayShopDetail(rawId: string): Promise<ShopDetail | null> {
   const id = safeDecode(rawId);
   const [shops, places] = await Promise.all([loadStayShops(), getPlaces("stay")]);
@@ -121,95 +305,86 @@ export function buildShopDetail(shop: LiveShop, place: Place): ShopDetail {
   const L = syLinks("live");
   const attrs = ((place as { attributes?: StayAttributes }).attributes ?? {}) as StayAttributes;
   const cat = VERTICALS.stay.categories.find((c) => c.slug === shop.kind);
+  const copy: ShopCopy = STAY_COPY[shop.id] ?? autoCopy(shop, place, attrs);
 
-  // 写真: shop.photos(使える・人物が主役でないもの)に、元の説明(what)を戻す
-  const whatOf = new Map((place.photos ?? []).map((ph) => [ph.path, (ph.what ?? "").trim()]));
-  const all: SPhoto[] = shop.photos.map((ph) => ({ ...ph, what: stayLine(whatOf.get(ph.src)) }));
-  const hero = all.slice(0, 3);
-  const rest = all.slice(3);
-  const used = new Set<string>();
-  const take = (kind: "onsen" | "dining" | "rooms", max: number): SPhoto[] => {
-    const out = rest.filter((ph) => !used.has(ph.src) && kindOfPhoto(ph.what) === kind).slice(0, max);
-    out.forEach((ph) => used.add(ph.src));
-    return out;
-  };
-  const roomPh = take("rooms", 8);
-  const onsenPh = take("onsen", 3);
-  const diningPh = take("dining", 3);
-  const banner = rest.find((ph) => !used.has(ph.src) && kindOfPhoto(ph.what) === "other") ?? null;
+  // 写真: shop.photos(使える・人物が主役でないもの)に、元の説明(what)と種類(kind)を戻す
+  const meta = new Map((place.photos ?? []).map((ph) => [ph.path, { what: (ph.what ?? "").trim(), kind: kindFromField((ph as { kind?: unknown }).kind) }]));
+  const all: SPhoto[] = shop.photos.map((ph) => {
+    const m = meta.get(ph.src);
+    const what = stayLine(m?.what);
+    return { ...ph, what, kind: m?.kind ?? kindFromWhat(m?.what ?? "") };
+  });
 
-  // 節の振り分け
-  const groups: Record<"onsen" | "dining" | "rooms" | "access", Block[]> = { onsen: [], dining: [], rooms: [], access: [] };
-  for (const sec of place.article?.sections ?? []) {
-    const heading = stayLine(sec.heading);
-    const text = checkedParagraphs(sec.body);
-    if (!heading || text.length === 0) continue;
-    const k = kindOfHeading(heading);
-    if (k !== "other") groups[k].push({ heading, text });
-  }
+  // 節: 本文を点検に通し、通る文が無い節は出さない。写真の振り分けは出す節だけ
+  const secsCopy = copy.secs
+    .map((s) => ({ ...s, h: s.h.map((x) => (stayLineOk(x) ? x : "")).filter(Boolean) as [string, string], p: s.p.filter((x) => stayLineOk(x)) }))
+    .filter((s) => s.p.length > 0);
+  const alloc = allocate(all, secsCopy);
 
-  // 「この宿について」の本文: 導入の文(点検済み。5 文まで)
-  const introAll = checkedParagraphs(place.article?.lede ?? place.intro);
-  const introSents = sentences(introAll).slice(0, 5);
-  const intro = introSents.length ? [introSents.join("")] : [];
+  const secs: Sec[] = secsCopy
+    .map((s) => {
+      const photos = alloc.bySlot[s.slot];
+      const id = s.slot === "a" ? "sh-rooms" : s.slot === "b" ? "sh-bath" : "sh-dining";
+      return { slot: s.slot, id, label: s.label, en: s.en, h: s.h, p: s.p, detail: detailOf(place, s.from), btn: `${s.label}の詳細を見る`, photos };
+    })
+    // 客室(a)は本文があれば出す。2 つめ・3 つめは写真があるときだけ(写真の無い節で形を崩さない)
+    .filter((s) => s.slot === "a" || s.photos.length > 0);
 
-  const headline = shop.article?.headline ?? "";
-  const tagline = headline && visualLen(headline) <= 46 ? headline : "";
-
-  // 客室タイプ(名前だけ)
-  const roomTypes = (attrs.roomTypes ?? []).map((x) => stayLine(x)).filter(Boolean).slice(0, 10);
-
-  // 施設・サービスの札
-  const fac: string[] = [...shop.tags];
-  if (attrs.onsen === true && !fac.some((t) => RE_ONSEN.test(t))) fac.push("温泉");
-  if (attrs.petsAllowed === true && !fac.some((t) => /ペット/.test(t))) fac.push("ペット同伴");
-  const facilities = [...new Set(fac)].slice(0, 8);
+  // 右上の箱
+  const panel = { cap: shop.area, big: copy.big || shop.kindName, pills: (copy.pills ?? []).filter((x) => stayLineOk(x)), boxes: copy.boxes.filter((b) => stayLineOk(b.v)) };
 
   // 基本情報
-  const rows: ShopDetail["rows"] = [];
-  const add = (k: string, v: string | undefined, extra?: Partial<ShopDetail["rows"][number]>) => {
-    const t = (v ?? "").trim();
-    if (t) rows.push({ k, v: t, ...extra });
-  };
-  add("種類", shop.kindName);
-  add("所在地", shop.address || shop.area);
-  add("最寄り駅", shop.station);
-  add("電話番号", shop.phone, { kind: "tel" });
-  add("チェックイン", shop.checkIn);
-  add("チェックアウト", shop.checkOut);
-  add("客室タイプ", roomTypes.join("・"));
-  if (shop.officialUrl) add("公式サイト", httpHost(shop.officialUrl), { kind: "url", href: shop.officialUrl });
-
-  // アクセス(事実の文: 駅・IC・バス・空港・徒歩・車での行き方の語を含む文。ゲートの閉門・定休・予約の文は除く)
-  const accessSents = sentences(groups.access.flatMap((b) => b.text)).filter((s) => /駅|IC|インター|バス|空港|港|徒歩|車で|キロ|km/.test(s) && !/ゲート|閉門|クワイエット|定休|予約|電話/.test(s));
-  const access: ShopDetail["access"] = [];
-  if (shop.station) access.push({ icon: "train", label: "最寄り駅", text: shop.station });
-  for (const s of accessSents.slice(0, 3)) {
-    const pub = /駅|電車|バス|徒歩/.test(s);
-    access.push({ icon: pub ? "train" : "car", label: pub ? "電車・バスでお越しの方" : "お車でお越しの方", text: s });
-  }
   const addr = shop.address || shop.area;
-  if (addr) access.push({ icon: "pin", label: "所在地", text: addr });
+  const rows: Row[] = [];
+  for (const r of copy.rows) {
+    const note = r.note && stayLineOk(r.note) ? r.note : undefined;
+    if (r.k === "種類") {
+      const v = r.v ?? shop.kindName;
+      if (v) rows.push({ k: r.k, v });
+    } else if (r.k === "所在地") {
+      if (addr) rows.push({ k: r.k, v: addr });
+    } else if (r.k === "最寄り駅") {
+      if (shop.station) rows.push({ k: r.k, v: shop.station });
+    } else if (r.k === "電話番号") {
+      if (shop.phone) rows.push({ k: r.k, v: shop.phone, note, kind: "tel" });
+    } else if (r.k === "チェックイン") {
+      const v = r.v ?? shop.checkIn;
+      if (v) rows.push({ k: r.k, v });
+    } else if (r.k === "チェックアウト") {
+      const v = r.v ?? shop.checkOut;
+      if (v) rows.push({ k: r.k, v });
+    } else if (r.k === "公式サイト") {
+      if (shop.officialUrl) rows.push({ k: r.k, v: httpHost(shop.officialUrl), kind: "url", href: shop.officialUrl });
+    } else if (r.v && stayLineOk(r.v)) {
+      rows.push({ k: r.k, v: r.v });
+    }
+  }
 
+  const access = copy.access
+    .map((a) => ({ ...a, text: a.text === "@addr" ? addr : a.text }))
+    .filter((a) => a.text && stayLineOk(a.text))
+    .slice(0, 3);
+
+  const headline = shop.article?.headline ?? "";
   const hasArticlePage = !!shop.photo && hasArticleBody(place);
   return {
     shop,
     place,
     path: `${VERTICALS.stay.path}/shop/${shop.id}`,
     schemaType: cat?.schemaType ?? "LodgingBusiness",
-    hero,
-    banner,
-    intro,
-    tagline,
-    rooms: { blocks: groups.rooms, photos: roomPh },
-    onsen: { blocks: groups.onsen, photos: onsenPh },
-    dining: { blocks: groups.dining, photos: diningPh },
-    roomTypes,
-    facilities,
+    hero: alloc.hero,
+    banner: alloc.banner,
+    tagline: stayLineOk(copy.tag) ? copy.tag : "",
+    panel,
+    intro: { h: copy.intro.h.filter((x) => x && stayLineOk(x)), p: copy.intro.p.filter((x) => stayLineOk(x)) },
+    secs,
+    // 事実のある設備が 1 つだけのときは、列にならないので出さない
+    facilities: copy.fac.length >= 2 ? copy.fac.slice(0, 8) : [],
     rows,
-    access: access.slice(0, 5),
-    mapHref: shop.mapUrl ?? mapsSearchUrl(shop.name, shop.address || shop.area),
-    article: hasArticlePage ? { href: L.article(shop.id), title: headline || [shop.area, shop.kindName].filter(Boolean).join("の"), photo: all[1] ?? all[0] } : null,
-    excerpt: hasArticlePage,
+    access,
+    accessDetail: detailOf(place, copy.accessFrom),
+    mapSrc: `https://www.google.com/maps?q=${encodeURIComponent(addr)}&output=embed&hl=ja`,
+    mapHref: shop.mapUrl ?? mapsSearchUrl(shop.name, addr),
+    article: hasArticlePage ? { href: L.article(shop.id), title: headline || [shop.area, shop.kindName].filter(Boolean).join("の"), photo: alloc.article } : null,
   };
 }

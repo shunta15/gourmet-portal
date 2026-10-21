@@ -8,7 +8,7 @@ import type { SPhoto } from "./data";
  * 客室の写真の列(見本は 2 枚並びで、右下に「‹ 1/4 ›」)。横にスクロールして 1 枚ずつ送れる(スクロールの止まりは写真の左端)。
  * 矢印は、写真が 1 画面に入りきらないときだけ。写真の下の短い字は、写真の説明(あるときだけ)。
  */
-export default function PhotoRail({ photos, name }: { photos: SPhoto[]; name: string }) {
+export default function PhotoRail({ photos, name, label = "客室" }: { photos: SPhoto[]; name: string; label?: string }) {
   const rail = useRef<HTMLUListElement>(null);
   const [idx, setIdx] = useState(0);
   const [overflow, setOverflow] = useState(false);
@@ -49,7 +49,7 @@ export default function PhotoRail({ photos, name }: { photos: SPhoto[]; name: st
 
   return (
     <div className="sh-rail">
-      <ul className="sh-rail-list" ref={rail} aria-label={`${name}の客室の写真`}>
+      <ul className="sh-rail-list" ref={rail} aria-label={`${name}の${label}の写真`}>
         {photos.map((p, i) => (
           <li key={p.src} className="sh-rail-i sy-hov">
             <div className="sh-rail-ph sy-zoom">
