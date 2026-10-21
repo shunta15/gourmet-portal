@@ -1,0 +1,58 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 2242,
+  "sheet": {
+    "name": "フォレストアドベンチャー・湯の山",
+    "address": "",
+    "url": "",
+    "type": "専門サービス",
+    "d1": "アウトドア・マリン",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "アウトドア・マリン",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "フォレストアドベンチャー・湯の山"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E6%B9%AF%E3%81%AE%E5%B1%B1/@35.009993,136.4731777,17z/data=!3m1!4b1!4m6!3m5!1s0x6003ede8e7965917:0xb05ad764ecea4ff4!8m2!3d35.009993!4d136.4731777!16s%2Fg%2F11gw1rc5wt",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒510-1233 三重県三重郡菰野町菰野4958)と電話(059-340-7739)が公式サイトと一致し、ウェブサイトも公式サイト(mori-kaori.jp)。店名は完全一致。",
+  "identity": [
+    "住所: Google マップ「〒510-1233 三重県三重郡菰野町菰野４９５８」＝公式サイト「〒510-1233 三重県三重郡菰野町菰野4958」",
+    "電話: Google マップ 059-340-7739 ＝ 公式サイト TEL 059-340-7739",
+    "ウェブサイト: Google マップ https://www.mori-kaori.jp/ ＝ 公式サイト",
+    "店名: 一覧「フォレストアドベンチャー・湯の山」＝Google マップ(完全一致)"
+  ],
+  "nameRelation": "exact",
+  "place": {
+    "name": "フォレストアドベンチャー・湯の山",
+    "address": "三重県三重郡菰野町菰野４９５８",
+    "category": "テーマ パーク",
+    "lat": 35.009993,
+    "lng": 136.4731777,
+    "gbpUrl": "https://maps.google.com/?cid=12707706127050756084",
+    "phone": "059-340-7739",
+    "website": "https://www.mori-kaori.jp/",
+    "hours": {
+      "月": "09:30–17:00",
+      "火": "09:30–17:00",
+      "水": "09:30–17:00",
+      "木": "定休日",
+      "金": "09:30–17:00",
+      "土": "08:30–17:00",
+      "日": "08:30–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-22T08:45:00.000Z"
+}

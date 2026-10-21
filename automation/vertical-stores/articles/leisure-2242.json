@@ -1,0 +1,554 @@
+{
+  "key": "leisure-2242",
+  "headline": "三重県菰野町の自然共生型アウトドアパーク。樹上のアスレチックとジップスライドを体験できる",
+  "lede": "三重県三重郡菰野町菰野にある「フォレストアドベンチャー・湯の山」です。公式サイトでは、アドベンチャーパーク「オドルの森」の施設として案内され、三重県初の自然共生型アウトドアパークとされています。自然の立木の地上2〜15mの位置に設けた足場を渡り、ジップスライドなど40種類以上のアクティビティを樹上で体験します。",
+  "sections": [
+    {
+      "heading": "場所と行き方",
+      "body": "住所は三重県三重郡菰野町菰野4958、電話は059-340-7739です。電車は近鉄湯の山線の湯の山温泉駅から約550m、徒歩で約10分です。車は新名神高速道路の菰野ICから約10分、東名阪自動車道の四日市ICから約20分で、送迎はありません。運営は株式会社 森の香りです。営業日は、公式サイトの営業日カレンダーで案内されています。"
+    },
+    {
+      "heading": "3つのコース",
+      "body": "アドベンチャーコースは、樹上のアクティビティが40以上、ジップスライドが4本のコースで、体験時間は平均1時間30分から2時間です。クイックアドベンチャーは、約1時間で4本のジップスライドを滑れるショートコースです。ジップトリップコースは、ジップスライド2本のコースで、身長110cmから遊べ、平均30分から40分です。アドベンチャーコースとジップトリップコースには、手をつないで一緒に滑れる「ダブルジップスライド」があります。"
+    },
+    {
+      "heading": "利用の条件と流れ",
+      "body": "アドベンチャーコースは小学4年生以上または身長140cm以上、体重110kgまでが条件で、小学生までは18歳以上の保護者と一緒に参加します。手袋の着用は必須で、動きやすい長袖長ズボンと運動靴で来場します。予約がすすめられ(ジップトリップコースは予約不要)、受付のあと、参加者全員が安全講習を受けてからコースに出発します。安全講習は30分ごとで、各回は基本15名までです。"
+    },
+    {
+      "heading": "ほかの遊び",
+      "body": "同じ敷地には、運転免許が不要な四輪バギーの「カモシカバギー」があります。そのほか、巨大トランポリン、電動ウォーターガンで水のバトルをするスプラッシュウォーズ、森でとれた切り株でキーホルダーをつくるクラフト体験、モルックやハンモックなどの遊びが案内されています。"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの名称は「フォレストアドベンチャー・湯の山」",
+      "source": "https://maps.google.com/?cid=12707706127050756084",
+      "quote": "フォレストアドベンチャー・湯の山",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの業種の表示は「テーマ パーク」",
+      "source": "https://maps.google.com/?cid=12707706127050756084",
+      "quote": "テーマ パーク",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの住所は三重県三重郡菰野町菰野4958",
+      "source": "https://maps.google.com/?cid=12707706127050756084",
+      "quote": "〒510-1233 三重県三重郡菰野町菰野４９５８",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの電話番号は059-340-7739",
+      "source": "https://maps.google.com/?cid=12707706127050756084",
+      "quote": "電話番号: 059-340-7739",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(mori-kaori.jp)",
+      "source": "https://maps.google.com/?cid=12707706127050756084",
+      "quote": "ウェブサイト: https://www.mori-kaori.jp/",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "公式サイトの所在地は〒510-1233 三重県三重郡菰野町菰野4958",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "〒510-1233 三重県三重郡菰野町菰野4958",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "公式サイトの電話番号は059-340-7739(Google マップと同じ)",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "059-340-7739",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "運営は株式会社 森の香り",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "運営 : 株式会社 森の香り",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "車は新名神高速道路の菰野ICから約10分",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "新名神高速道路 菰野ICより約10分。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "車は東名阪自動車道の四日市ICから約20分",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "東名阪自動車道 四日市ICより約20分。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "近鉄「湯の山温泉駅」からパークまで約550m、徒歩で約10分",
+      "source": "https://www.mori-kaori.jp/access/",
+      "quote": "近鉄電車「湯の山温泉駅」から、パークまでの距離が約550m（徒歩で約10分）。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "送迎はない",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "送迎はございません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "公共機関なら近鉄湯の山線。湯の山温泉駅から徒歩10分",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "公共機関でお越しの場合は近鉄湯の山線をご利用ください。(湯の山温泉駅から徒歩10分)",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "日本では2006年8月に第一号施設が開業した",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "自然の樹木 や地形を生かした自然共生型施設として、日本では2006年8月にFUJIが第一号施設としてオープンいたしました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "パーク直通電話は059-340-7739",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "パーク直通電話 059-340-7739",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業日カレンダーのページがある",
+      "source": "https://www.mori-kaori.jp/calendar/",
+      "quote": "ODOR NO MORI 営業日カレンダー",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "フォレストアドベンチャー・湯の山は三重県初の自然共生型アウトドアパーク",
+      "source": "https://www.mori-kaori.jp/",
+      "quote": "三重県初の自然共生型アウトドアパーク。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "立木の地上2〜15mの足場から樹間を空中散歩",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "自然の立木の地上から2～15ｍの位置に設置された足場から",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アクティビティは40種類以上",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "などアクティビティは40種類以上。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オドルの森はもとは里山林だった",
+      "source": "https://www.mori-kaori.jp/odor-no-mori/",
+      "quote": "もとは里山林でした。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "長く放置され、倒木や自然災害が危惧される状態だった",
+      "source": "https://www.mori-kaori.jp/odor-no-mori/",
+      "quote": "長く放置されていたため、倒木や自然災害が危惧される状態となっていました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「オドルの森プロジェクト」を立ち上げた",
+      "source": "https://www.mori-kaori.jp/odor-no-mori/",
+      "quote": "「オドルの森プロジェクト」を立ち上げました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "2024年7月に「アドベンチャーパーク オドルの森」として運営を開始",
+      "source": "https://www.mori-kaori.jp/odor-no-mori/",
+      "quote": "2024年7月に「アドベンチャーパーク オドルの森」として運営を開始しました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「オドル」はラテン語で香りの意味",
+      "source": "https://www.mori-kaori.jp/odor-no-mori/",
+      "quote": "オドル【Odor】はラテン語で「香り」という意味です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「自分の身の安全は、自分で責任を持つ」という大前提のもとで遊ぶ施設",
+      "source": "https://www.mori-kaori.jp/learning/",
+      "quote": "オドルの森は【自分の身の安全は、自分で責任を持つ】という大前提のもと、遊んでいただく施設です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "年齢・目的・能力に合わせた学習・研修プログラムがある",
+      "source": "https://www.mori-kaori.jp/learning/",
+      "quote": "オドルの森では年齢・目的・能力など、条件に合わせた様々な学習・研修プログラムをご用意しております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "フォレストアドベンチャーは森の中の空中を渡っていくフランス発祥のアウトドアパーク",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "フォレストアドベンチャーとは、森の中の空中を渡っていくフランス発祥のアウトドアパークです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "利用者は専用のハーネスを着用し、ルールを守って自己責任で樹の上を渡る",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "利用者は専用のハーネスを着用し、定められたルールを守って、自己責任で樹の上にのぼり、わたり、滑り降ります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アドベンチャーコースは森の特徴を活かした難易度の高いコース",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "アドベンチャーコース 森の特徴を活かした ダイナミックで難易度の高いコース",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アドベンチャーコースは樹上のアクティビティ40以上、ジップスライド4本",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "樹上で楽しめるアクティビティは40以上！4本のジップスライドで爽快に滑れる本格コース。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アドベンチャーコースに手をつないで滑れるダブルジップスライド",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "手をつないで一緒に滑れる「ダブルジップスライド」",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アドベンチャーコースの体験時間は平均1時間30分〜2時間",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "平均1時間30分〜2時間",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アドベンチャーコースの条件は小学4年生以上または身長140cm以上、体重110kgまで",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "小学４年生以上または身長140cm以上 、体重110kgまで",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "クイックアドベンチャーはアドベンチャー2コースとジップトリップ2コースを組み合わせたショートコース",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "を組み合わせたショートコース。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "クイックアドベンチャーはジップスライド4本",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "ジップスライドは4本滑ることができます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "クイックアドベンチャーの体験時間は約1時間(安全講習を含む)",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "約1時間 ※安全講習を含む",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ジップトリップコースは身長110cmから遊べるジップスライド2本のコース",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "身長110cmの小さなお子さまから遊べる、ジップスライド2本のお手軽コースです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ジップトリップコースでもダブルジップスライドを体験できる",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "最後には、このコースでも「ダブルジップスライド」を体験できます♪",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ジップトリップコースの体験時間は平均30分〜40分(安全講習を含む)",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "平均30分～40分 ※安全講習を含む",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ジップトリップコースの条件は身長110cm以上、体重110kgまで",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "身長110cm以上 、体重110kgまで",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "小学生までは18歳以上の保護者と一緒に参加",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "小学生までは18歳以上の保護者と一緒にご参加ください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "中学生以上は保護者の同伴は不要だが、地上からの見守りをお願いしている",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "中学生以上については保護者の同伴は必要ありませんが、地上からの見守りをお願いします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "保護者1名につき小人3名まで同伴可能",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "保護者の方 1名につき小人3名 まで同伴可能です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "高校生は、事前予約・保護者同意書の当日持参などの条件を満たす利用プランなら高校生だけでも利用できる",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "高校生の来場について特定の条件（専用フォームからの事前予約、保護者同意書の当日持参など）を満たす利用プランでは、高校生のみでのご来場やご利用も可能となります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アルコール・薬物の影響を受けている人、妊娠中の人、自分の体を支えられない人は利用を控える",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "アルコールや薬物の影響を受けている方、妊娠中の方、自分で自分の体を支えることができない方のご利用はご遠慮いただいております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "手袋の着用が必須",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "当パークは手袋の着用必須となります",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "服装は汚れても良い動きやすい服装。長袖長ズボン推奨、スカートはNG",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "汚れても良い動きやすい服装で (長袖長ズボン推奨、スカートはNG)",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "履き慣れた運動靴。ハイヒール・サンダルなどはNG",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "履き慣れた運動靴を着用してご来場ください（ハイヒール・サンダルなどはNG）。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "髪が長い場合は結ぶ",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "髪が長い場合はゴムなどで縛ってください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カメラは原則OK。落下や衝撃による故障は利用者の責任",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "原則としてOKですが、落下や衝撃による故障等はすべてお客様の責任で御願いいたしております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "両手が使えるウエストポーチなどがあると便利",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "また両手が使えるよう、ウエストポーチなどの用意があると便利です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "更衣室・貴重品ボックスはあるが大きな鍵付きロッカーはない",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "更衣室・貴重品ボックスはございます。大きな鍵付きロッカーのご用意はありません",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "飲み物の販売はあるが食べ物の販売はない",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "飲み物の販売はしておりますが、食べ物の販売はございません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "食べ物の持ち込みはコース開始前か終了後に",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "食べ物など、持ち込んでパーク内で食べて頂くことは可能ですが、コース開始前、もしくは終了後にお願いいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約をすすめている。ジップトリップコースは予約不要",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "ご来場には事前のご予約をお勧めしております。（ジップトリップコースは予約不要）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約時間までに来場する",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "ご予約時間までのご来場をお願いします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ハーネス着用後、参加者全員が安全講習を受講する",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "ハーネス着用を済ませていただいたら、参加者の方全員にセーフティブリーフィング（安全講習）を受講していただきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "安全講習は30分ごと、各回は基本15名まで",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "30分ごとに実施される各回のセーフティブリーフィング（安全講習）は基本15名様までとなっております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "利用誓約書に署名する",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "施設指定のご利用誓約書に署名していただきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "自己責任のもとで楽しむ森林冒険施設",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "当施設はお客様の自己責任の下、楽しんでいただく森林冒険施設です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "足が地面から離れてから着くまで、常にハーネスで体をコースにつなげておく",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "地面から足がはなれた瞬間から、また足が地面につくまで、常に自分の体をハーネスでコースにつなげておきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ルールを守らない場合は落下する可能性がある",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "ルールを守らない場合は、落下する可能性があります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "非常にリスクのあるアクティビティと明記",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "フォレスとアドベンチャーは非常にリスクのあるアクティビティです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "安全講習のあとは参加者だけでコースを回り、インストラクターは付き添わない",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "事前の安全講習をパスしたら、お客様たちだけでコースを回ります。インストラクターは付き添いません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "保護者が同伴できない18歳未満にはガイドパックがある。事前に問い合わせる",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "18歳未満の方に保護者の方が同伴できない場合は、ガイドパックのお申し込みの必要があります。必ず事前にお問い合わせください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "通常の雨ならオープン。雹・雷・強風はクローズ",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "通常の雨であればオープン可能ですが、雹、雷、強風の場合は安全のためクローズいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "きついアイテムを避けられる迂回路がある",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "あまりにもきついアイテムは避けられるように迂回路がありますので",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約時間の15分前までオンラインでキャンセルできる",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "予約時間の15分前までオンラインでのキャンセルが可能です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オンライン予約は16名以上は不可、電話で受ける",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "オンライン予約では16名様以上は承れませんが、電話でお取りすることができます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "集合時間はコースによって異なる。予約時間より余裕を持つ",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "集合時間は体験するコースによって異なります。予約時間より余裕を持ってお越しください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "コース条件に届かない子が遊べるスペースがある",
+      "source": "https://www.mori-kaori.jp/faq/",
+      "quote": "アドベンチャーコース、ジップトリップコースへの参加条件を満たしていないお子様が遊べるスペースはありますが、一部有料のものもあります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カモシカバギーは運転免許不要の四輪バギー",
+      "source": "https://www.mori-kaori.jp/activity/kamoshika-buggy/",
+      "quote": "運転免許が不要で、四輪車なので安定感があり気軽に楽しむことができます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "バギーは砂利道コースや林間コースなどを走る",
+      "source": "https://www.mori-kaori.jp/",
+      "quote": "砂利道コース、林間コースなど、山の地形をダイレクトに感じながら森の中を冒険しましょう。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "バギーの体験時間は約45分(ブリーフィング含む)",
+      "source": "https://www.mori-kaori.jp/activity/kamoshika-buggy/",
+      "quote": "約45分 ※ブリーフィング含む",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "1人乗りバギーは14歳以上かつ140cm以上",
+      "source": "https://www.mori-kaori.jp/activity/kamoshika-buggy/",
+      "quote": "14歳以上かつ140cm以上、65歳以下110kgまで。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "巨大トランポリン",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "巨大トランポリン",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "スプラッシュウォーズは電動ウォーターガンで水のバトル",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "電動ウォーターガンで水のバトル対戦！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "クラフト体験は切り株でキーホルダーをつくる",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "森でとれた切り株を使ってお気に入りのキーホルダーをつくろう！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "モルックはフィンランドの伝統的なゲーム",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "フィンランドの伝統的なゲーム。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ハンモックで森の中でくつろぐ",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "森の中でゆったりとくつろごう！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "スイングラインはブランコや吊り輪",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "ブランコや吊り輪で遊ぼう！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "森の黒板がある",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "大きな黒板にチョークでいっぱい書こう！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ロックバランシングがある",
+      "source": "https://www.mori-kaori.jp/activity/sub-contents/",
+      "quote": "バランスよく石を積み上げていこう。",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(オドルの森)",
+      "url": "https://www.mori-kaori.jp/"
+    },
+    {
+      "label": "公式サイト(フォレストアドベンチャー・湯の山)",
+      "url": "https://www.mori-kaori.jp/activity/fa-yunoyama/"
+    },
+    {
+      "label": "公式サイト(その他のコンテンツ)",
+      "url": "https://www.mori-kaori.jp/activity/sub-contents/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://www.mori-kaori.jp/faq/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.mori-kaori.jp/access/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12707706127050756084"
+    }
+  ],
+  "placeOverride": {
+    "hours": null
+  },
+  "notes": "【種類】アウトドアパーク(おでかけ・アウトドア・マリン)。業種の細かい分類(sub)は「アウトドア・マリン」(sure=true)。【営業時間】公式サイトは月ごとの営業日カレンダーで営業日を案内し、常設の営業時間・定休日の記載は確認できなかった。Google マップは木曜定休・平日9:30-17:00・土日8:30-17:00と表示しているが、公式サイトで確かめられないため、店データには営業時間・定休日を載せない(placeOverride.hours = null)。gbp の place.hours には Google マップの表示を残してある。【店名】Google マップは「フォレストアドベンチャー・湯の山」。公式サイトでは「オドルの森/フォレストアドベンチャー・湯の山」の表記もある。【書かなかったこと】コース・バギー・サブコンテンツ・手袋の金額、割引・早割・キャンペーン、団体割引、「人気」「おすすめ」の語、ガイドパックの内容、求人、SNSの投稿(インスタグラムのギャラリー)、丹波ささやま(別のパーク)の情報、雨天時のキャンセルの規定。【確かめていないこと】当日の営業・クローズ(営業日カレンダーは月ごとに変わる)、混雑、ガイドパックの詳細。"
+}

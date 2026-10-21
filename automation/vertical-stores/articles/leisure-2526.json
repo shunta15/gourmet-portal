@@ -1,0 +1,580 @@
+{
+  "key": "leisure-2526",
+  "headline": "広島県福山市多治米町の革工房。約30分で完成するレザークラフト体験を、予約制でおこなう",
+  "lede": "広島県福山市多治米町にある「レザースタジオ サード」(Leather Studio Third)です。福山市を拠点とするレザークラフトのブランド・工房で、財布や鞄などのオーダーメイド製作のほか、天然藍で染めた革「福山レザー」の開発、子どもの思い出のランドセルを革小物に仕立て直すリメイクを手がけています。ワークショップは予約制で、約30分で完成するレザークラフト体験です。",
+  "sections": [
+    {
+      "heading": "場所と営業の時間",
+      "body": "住所は広島県福山市多治米町6-3-17、電話は084-971-7356で、駐車場は4台分あります。営業時間は10時から18時で、休みは毎週水曜日と年末年始(要確認)です。"
+    },
+    {
+      "heading": "ワークショップの体験",
+      "body": "ワークショップは予約制で、初心者歓迎、2名からと案内されています。メニューは3つで、お名前や絵柄の刻印を入れるコインケース(約20分)、藍染の革でバラの形に仕上げるバラキーホルダー(約30分)、お名前を刻印して金具でとめるマルチケース(約30分)です。受付は10時から15時まで1時間おきの6つの時間帯から選べ、予約はフォーム、電話、メール、LINEでできます。当日選べるオプションには、革の色選び、金具追加、コバ処理磨きがあります。"
+    },
+    {
+      "heading": "福山レザーと工房の仕事",
+      "body": "福山レザーは天然藍で染めた革で、「瀬戸内の空」と「瀬戸内の海」の2色があります。染色から製作、販売までを自社の職人が手作業でおこなうと公式サイトにあります。ほかに、子どものランドセルを財布やキーホルダーなどに仕立て直す「ランドセルリメイク」があり、店に来なくても、ランドセルを発送して申し込めます。企業向けの記念品製作のページもあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "コインケース",
+      "minutes": 20
+    },
+    {
+      "name": "バラキーホルダー",
+      "minutes": 30
+    },
+    {
+      "name": "マルチケース",
+      "minutes": 30
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの名称は「レザースタジオ サード Leather studio Third」",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "レザースタジオ サード Leather studio Third",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの業種の表示は「革製品専門店」",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "革製品専門店",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの住所は広島県福山市多治米町6丁目3-17",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "〒720-0824 広島県福山市多治米町６丁目３−１７",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの電話番号は084-971-7356",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "電話番号: 084-971-7356",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイトと同じ(leatherstudiothird.com)",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "ウェブサイト: https://leatherstudiothird.com/",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの営業時間は10時から18時、水曜日は定休日",
+      "source": "https://maps.google.com/?cid=15279321513939332539",
+      "quote": "水曜日 定休日",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "公式サイトの所在地は〒720-0824 広島県福山市多治米町6-3-17",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "〒720-0824広島県福山市多治米町6-3-17",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "公式サイトの電話番号は084-971-7356(Google マップと同じ)",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "TEL 084-971-7356",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業時間は10時から18時",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "営業時間 10:00～18:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "店休日は毎週水曜日と年末年始(要確認)",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "店休日 毎週水曜日 年末年始 (要確認)",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "駐車場は4台",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "P４台",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ランドセルリメイクの案内ページにも所在地(多治米町6-3-17)・電話・10:00-18:00・毎週水曜定休が載る",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "10:00 – 18:00 / 毎週水曜定休",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トップページのワークショップは予約制で約30分で完成するレザークラフト体験",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "ワークショップ 予約制。約30分で完成するレザークラフト体験",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トップページに福山レザー(藍染めが生んだオリジナルレザー)の案内がある",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "藍染めが生んだオリジナルレザー",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トップページにランドセルリメイクの案内がある",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "6年間の思い出を、一生ものの革小物に",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トップページにYouTubeチャンネルの案内。ものづくりの舞台裏を配信",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "ものづくりの舞台裏を配信中",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "その場で仕上がるお名前刻印などのメニューを用意している",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "お名前刻印など、その場で仕上がるメニューをご用意しています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ワークショップは約30分で完成するレザークラフト体験",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "約30分で完成する、レザークラフト体験です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約制",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "予約制",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "初心者歓迎",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "初心者歓迎",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "2名様から",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "2名様〜",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "コインケースはボタンを事前に打ち付けてあり、お名前刻印・絵刻印を入れる体験",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "どこからでも小銭が取り出せるコインケース。ボタンは事前に打ち付けているので、お名前刻印・絵刻印を入れるワークショップです。2名様より。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "コインケースの所要時間は約20分",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "所要時間 約20分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "バラキーホルダーは藍染の革で作る薔薇のキーホルダー。1枚の革を立体的に仕上げる",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "藍染の革で作る薔薇キーホルダー。1枚の革を立体的に仕上げていきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "バラキーホルダーは葉の部分にお名前や日付を刻印できる",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "葉っぱの部分にはお名前や日付を刻印可能。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "マルチケースはお名前刻印をして金具でとめる、シンプルな見た目のキーホルダー",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "お名前刻印をして金具でとめます。シンプルな見た目なのでオールマイティに使えます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "バラキーホルダーとマルチケースの所要時間は約30分",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "バラキーホルダー¥2,750(税込)所要時間 約30分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "当日選べるオプションがあり、組み合わせは自由",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "表示価格は税込です。組み合わせは自由にお選びいただけます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オプションに革の色選び",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "革の色選び",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オプションに金具追加",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "金具追加",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オプションにコバ処理磨き",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "コバ処理磨き",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約はフォーム、電話、メールで事前に連絡",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "ご予約制となっておりますので、下記フォーム、またはお電話・メールにて事前にご連絡ください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "LINEで予約するボタンがある",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "LINEで予約する",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "定休日は毎週水曜日",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "定休日：毎週水曜日",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "受付は10時から15時まで1時間おき",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "10:00〜 11:00〜 12:00〜 13:00〜 14:00〜 15:00〜",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "6つの時間帯から選べる",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "6つの時間帯からお選びできます",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "団体での利用は専用の問い合わせフォームがある",
+      "source": "https://leatherstudiothird.com/pages/workshop-experience",
+      "quote": "ご予約希望の方・団体でのご利用はこちら",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "福山は約400年前に水野勝成が城を築き、塩害に強い綿花の栽培を奨励して繊維産業が花開いた",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "約400年前、徳川家康の縁者・水野勝成がこの地に城を築き、塩害に強い綿花の栽培を奨励したことから、繊維産業が花開きました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "藍色の幾何学模様の伝統工芸「備後絣」が生まれた",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "そこから生まれたのが、藍色の幾何学模様が美しい伝統工芸「備後絣（びんごがすり）」です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "備後絣の藍染めに導かれて福山レザーの開発が始まった",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "備後絣の藍染めに導かれるようにして、福山レザーの開発が始まりました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "自社で染色から製作、販売までを職人の手で一貫して行う",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "自社で染色から製作、販売までを、職人の手で一貫して行う。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "福山レザーには二つの色がある",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "福山レザーには、二つの色があります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「瀬戸内の空」は濃淡の効いた明るいブルー",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "一つは「瀬戸内の空」。雲の切れ間から光が差し込むような、濃淡の効いた明るいブルー。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「瀬戸内の海」は静かで落ち着いたブルー",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "もう一つは「瀬戸内の海」。深く沈み込むような、静かで落ち着いたブルー。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "どちらも同じ天然藍で、下ごしらえや漬け込みの回数で表情が変わる",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "どちらも同じ天然藍で染めていますが、下ごしらえや漬け込みの回数が違うだけで、まったく違う表情に仕上がります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "染める前に国産のヌメ革を水に浸けてタンニンを抜く下処理",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "染める前には、まず国産のヌメ革を水に浸け、タンニンを抜く下処理から。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "藍の粉を水に溶かして発酵させると泡が浮かぶ。これを「藍の華」と呼ぶ",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "これを「藍の華」と呼びます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「瀬戸内の空」だけに革へ手作業でシワを入れる工程がある",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "「瀬戸内の空」だけに施される、ある工程があります。革を一枚一枚、手作業でシワを入れていくのです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "空は下ごしらえした革を藍に一度漬け込む",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "こうして下ごしらえをした革を、藍に一度、漬け込みます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「瀬戸内の海」は同じ藍に二度漬け込む",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "「瀬戸内の海」は、同じ藍に、二度漬け込みます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "漬け込んだ直後の革は緑色で、空気に触れると緑から青へ変わる",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "漬け込んだ直後の革は、実は緑色をしています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "引き上げて絞り、空気に触れさせるとみるみる緑から青へ",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "すると、みるみるうちに緑から青へと色が変わっていきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "染め上がった革は直射日光を避け、丸一日弱かけて乾かす",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "染め上がった革は、直射日光を避けながら、丸一日弱かけてじっくりと乾かします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "同じ藍で染めても同じ表情の革は二つとない",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "同じ藍で染めても、同じ表情の革は二つとありません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "福山レザーの商品に名刺入れ、マルチケース、ペンケース、キーホルダーなど",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "名刺入れ ポム",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "通常60%程度の革の歩留まりを80%まで高めている",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "命を無駄にしないよう、通常60%程度と言われる革の歩留まりを、サードでは80%まで高めています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "革を通常の方法で藍染めすると硬くなってしまう難しさがあった",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "革を通常の方法で藍染めすると、革本来のしなやかさが失われ、まるでプラスチックのように硬くなってしまう。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "染料の専門家から、革をしなやかなまま藍色に染める技術を授けてもらった",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "革をしなやかなまま美しい藍色に染め上げるための技術を、惜しみなく授けてくれました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "「藍の華」が咲いたら染まる合図",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "この華が咲いたら、染まる合図。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ランドセルリメイクのページの対応サービス(革小物・財布・バッグ・修理・供養、リメイク以外のオーダーも)",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "対応サービス名刺入れ・キーホルダー・その他革小物長財布・二つ折り財布・バッグなど修理ランドセルリメイク以外のオーダーも承ります",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "YouTubeチャンネル「Life with leather」でものづくりの舞台裏を配信",
+      "source": "https://leatherstudiothird.com/",
+      "quote": "「Life with leather」。ものづくりの舞台裏を配信中",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "広島県福山市を拠点とするレザークラフトブランド・工房",
+      "source": "https://leatherstudiothird.com/pages/about-third",
+      "quote": "レザースタジオサードは、広島県福山市を拠点とするレザークラフトブランド・工房です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "オーダーメイド製作のほか、ランドセルリメイク、企業向け記念品、藍染レザー・竹炭レザーの開発",
+      "source": "https://leatherstudiothird.com/pages/about-third",
+      "quote": "財布や鞄などのオーダーメイド製作にとどまらず、お子様の思い出を新しい革小物に変える「ランドセルリメイク」、企業向けの記念品製作、そして福山市の地場産業から着想を得た「藍染レザー」「竹炭レザー」などオリジナル素材の開発にも取り組んでいます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "理念は「Life with leather」",
+      "source": "https://leatherstudiothird.com/pages/about-third",
+      "quote": "サードの理念は「Life with leather」。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "革のある生活、革と共に生きる、革は命",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "革のある生活、革と共に生きる、革は命。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "大切にしている言葉「五分五分」。革と職人も対等",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "私たちが大切にしている言葉に、「五分五分（ごぶごぶ）」があります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "革と職人である私たち自身も対等な関係にある",
+      "source": "https://leatherstudiothird.com/pages/fukuyamaleather",
+      "quote": "そして、革と職人である私たち自身も、対等な関係にある",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "法人向けのページ。企業・団体・スポーツチーム・ホテル・学校など多様なシーンの依頼に対応",
+      "source": "https://leatherstudiothird.com/pages/corporate_gift",
+      "quote": "企業・団体・スポーツチーム・ホテル・学校など、多様なシーンのご依頼に対応しています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "コーポレートカラーやチームカラーに合わせたカラーオーダーも可能",
+      "source": "https://leatherstudiothird.com/pages/corporate_gift",
+      "quote": "コーポレートカラーやチームカラーに合わせたカラーオーダーも可能です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ランドセルを発送して申し込める。店舗に来なくてもよい",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "店舗に来なくてもご注文可能",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "申し込みの流れの1段目はWEBから申し込み",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "WEBから簡単お申し込み",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "2段目はお見積り",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "お見積りをいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "3段目はランドセルを送る。状態を確認して最終的な金額を知らせ、納得したら製作",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "ランドセルの状態を確認して最終的な金額をお知らせいたします。ご納得いただけたら、お支払いをしていただき納期が確定いたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "4段目は職人が手作業で仕立てる。納期は最長で三か月",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "※納期は最長で三か月いただいております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "5段目は自宅へ届ける",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "ご自宅へお届け",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "繁忙期(3月〜7月)は納期が延びる可能性",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "※繁忙期(3月～7月)あたりは納期が延びる可能性があります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ランドセルに合わせる革の色は7色から選べる",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "ランドセルに合わせる革の色を7色からお選びいただけます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "フタに紙を乗せて収まった数だけ作れる",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "欲しいアイテムのサイズに切った紙を、ランドセルのフタ部分の上に乗せてみてください。フタの中に収まった数だけ製作可能です（紙は何でもOK）。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "作れる品は8種類(01キーホルダーから08長財布まで)",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "08長財布",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "刺繍や校章などの特別な部分はできる限り活かす",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "刺繍や校章など、ランドセルに施された特別な部分はできる限り活かす形でリメイクいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "申し込み前のセルフチェックとして、フタを強く折り曲げて1分ほど様子を見る",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "ランドセルのフタ部分を、写真のように強くつまむように折り曲げて1分ほど様子を見てください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "天然皮革のためシワ・色むら・小さな傷がある",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "天然皮革のため、シワ・色むら・小さな傷などがございます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "天然の革は水に弱く、シミや変形の原因になる",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "天然の革は水に弱く、シミや変形の原因になります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "使わなかった残りの部分は福山市沼隈町の阿伏兎観音で供養",
+      "source": "https://leatherstudiothird.com/pages/randoseru-hp",
+      "quote": "リメイクに使用しなかった残りの部分は、広島県福山市沼隈町の阿伏兎観音にて丁寧に供養いたします",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://leatherstudiothird.com/"
+    },
+    {
+      "label": "公式サイト(ワークショップ)",
+      "url": "https://leatherstudiothird.com/pages/workshop-experience"
+    },
+    {
+      "label": "公式サイト(サードについて)",
+      "url": "https://leatherstudiothird.com/pages/about-third"
+    },
+    {
+      "label": "公式サイト(福山レザー)",
+      "url": "https://leatherstudiothird.com/pages/fukuyamaleather"
+    },
+    {
+      "label": "公式サイト(ランドセルリメイク)",
+      "url": "https://leatherstudiothird.com/pages/randoseru-hp"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15279321513939332539"
+    }
+  ],
+  "placeOverride": {
+    "hoursByDay": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "定休日",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "holidays": "毎週水曜・年末年始(要確認)",
+    "name": "レザースタジオ サード"
+  },
+  "notes": "【種類】革の工房のワークショップ(おでかけ・体験工房)。業種の細かい分類(sub)は「体験工房」(sure=false)。一覧の業種ラベルは「小売業」だが、公式サイトのトップとワークショップのページに予約制のレザークラフト体験が載っているため、体験工房として扱った。革製品の販売・オーダーメイド・ランドセルリメイクが中心の工房である点は本文にも書いた。【営業時間】公式サイトの店舗情報(10:00-18:00・毎週水曜休・年末年始は要確認)とGoogle マップ(月火木〜日10:00-18:00・水曜定休)は一致。【店名】Google マップは「レザースタジオ サード Leather studio Third」、公式サイトは「レザースタジオサード」「Leather Studio Third」。placeOverride.name は「レザースタジオ サード」とした。【書かなかったこと】体験・商品・リメイク・修理の金額、オプションの追加金額、「人気」「おすすめ」の語、メディア掲載の実績(テレビ・新聞)、10,000件以上のオーダー実績(「仮の下書き」の注記があるセクション)、代表・職人の氏名、ふるさと納税返礼品の案内。【確かめていないこと】最寄り駅からの徒歩時間(確認した公式サイトのページに記載なし)、体験の当日の混み具合、ワークショップの空き状況。"
+}

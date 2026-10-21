@@ -1,0 +1,58 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 85,
+  "sheet": {
+    "name": "藤森神社",
+    "address": "",
+    "url": "",
+    "type": "神社",
+    "d1": "神社・寺",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "神社・寺",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "藤森神社 京都"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E8%97%A4%E6%A3%AE%E7%A5%9E%E7%A4%BE/@34.9513617,135.7717092,17z/data=!3m1!4b1!4m6!3m5!1s0x60010f0ac60e5937:0x996ab9caafffc710!8m2!3d34.9513617!4d135.7717092!16s%2Fg%2F1239_9xr",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒612-0864 京都市伏見区深草鳥居崎町609)と電話(075-641-1045)が公式サイトと一致し、ウェブサイトのドメイン(fujinomorijinjya.or.jp)も一致。店名は完全一致。",
+  "identity": [
+    "住所: Google マップ「〒612-0864 京都府京都市伏見区深草鳥居崎町６０９」＝公式サイト「〒612-0864 京都市伏見区深草鳥居崎町609」",
+    "電話: Google マップ 075-641-1045 ＝ 公式サイト TEL 075-641-1045",
+    "ウェブサイト: Google マップの表示 fujinomorijinjya.or.jp ＝ 公式サイトのドメイン",
+    "店名: 一覧「藤森神社」＝Google マップ「藤森神社」(完全一致)"
+  ],
+  "nameRelation": "exact",
+  "place": {
+    "name": "藤森神社",
+    "address": "京都府京都市伏見区深草鳥居崎町６０９",
+    "category": "神社",
+    "lat": 34.9513617,
+    "lng": 135.7717092,
+    "gbpUrl": "https://maps.google.com/?cid=11054852515521611536",
+    "phone": "075-641-1045",
+    "website": "http://www.fujinomorijinjya.or.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-22T08:35:00.000Z"
+}
