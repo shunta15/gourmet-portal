@@ -20,7 +20,7 @@ import "../top.css";
 const L = syLinks("live");
 const SEARCH_HINT = "宿名・地名で探す";
 
-/** 種類の札(5 枠の並び。英字は common/live.ts の KIND_EN)。写真は見本の素材(kind-N.webp。一棟貸し・貸別荘は kind-5 を仮に使う。オーナーの素材が来たら替える) */
+/** 種類の札(5 枠の並び。英字は common/live.ts の KIND_EN)。写真は kind-N.webp(ホテル・旅館・グランピング・一棟貸しはオーナー提供の素材) */
 const KIND_UI: Record<string, { en: string; img: number }> = {
   hotel: { en: KIND_EN.hotel, img: 1 },
   ryokan: { en: KIND_EN.ryokan, img: 2 },
