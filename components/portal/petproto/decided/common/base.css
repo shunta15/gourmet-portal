@@ -3,7 +3,9 @@
    デスクトップ = min-width: 860px(--u の寸法)/ スマホ = max-width: 859px(px で自分で組む。--u は使わない)。
    動き: 出現 .io / 上端の進み具合の線 / ヘッダーの隠れる・現れる / 持ち上がるカード pt-lift / 矢印の丸 pt-arrow / 染まる丸札 pt-chip /
          押すと縮む pt-press / 光が走る pt-shimmer・pt-shine / ポップイン pt-pop+浮く pt-float / ゆっくり寄る pt-kb / 線が描き直される pt-draw /
-         弾む pt-bounce / ハート pt-heart / 星 pt-stars / 追従タブ pt-tabs / 1 行ずつ現れる pt-mask / 書かれる pt-write */
+         弾む pt-bounce / ハート pt-heart / 星 pt-stars / 追従タブ pt-tabs / 1 行ずつ現れる pt-mask / 書かれる pt-write /
+         (2026-10-21 追加)ポップイン pt-popin / ブラーイン pt-blurin / 写真のワイプ pt-wipe / ティルト pt-tilt / マグネット pt-magnet / 逃げる飾り pt-flee /
+         スクロール速度の傾き pt-skew / カラーフィル pt-fill・pt-fillh / 流れる帯 pt-marquee / 足あと pt-paws / 背景色の変化 pt-bgshift / 写真の拡大 pt-scale-scroll */
 
 /* 今のヘッダーの下端(隠れると 0)。追従の物の top に使う。値が変わるとき滑らかに追従する */
 @property --pt-hy {
@@ -308,6 +310,104 @@ a:hover > .pt-logo .pt-logo-paw { transform: rotate(-14deg) scale(1.1); }
 .pt-live.is-off, .pt-live.is-off *, .pt-live.is-off *::before, .pt-live.is-off *::after { animation-play-state: paused !important; }
 .pt-root[data-pt-hidden] *, .pt-root[data-pt-hidden] *::before, .pt-root[data-pt-hidden] *::after { animation-play-state: paused !important; }
 
+/* =====================================================================================================
+   動きの部品 2(2026-10-21 追加)。JS 側は Motion.tsx の MotionFx(--p / is-in / is-on / is-tilting / --rx --ry / --mx --my / --fx --fy / --sk)。
+   隠す状態は「JS が動く・動きを減らす設定でない」ときだけ(.io と同じ条件)。それ以外(JS なし・reduced-motion)は最初から最終の状態。
+   ===================================================================================================== */
+
+/* ---------- 出現系: ポップイン .pt-popin / ブラーイン .pt-blurin / ワイプ .pt-wipe(画面に入ると is-in。.io と同じスタガー) ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* ポップイン(小さく透明 → オーバーシュートして定位置)。Reveal variant="pop" / data-io="pop" も同じ */
+  .pt-root .pt-popin, .pt-root .io[data-io="pop"] { opacity: 0; scale: 0.5; translate: 0 calc(10 * var(--u)); transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms); }
+  .pt-root .pt-popin.is-in, .pt-root .io[data-io="pop"].is-in { opacity: 1; scale: none; translate: none; }
+  /* ブラーイン(ぼけた状態からピントが合う)。Reveal variant="blur" / data-io="blur" も同じ */
+  .pt-root .pt-blurin, .pt-root .io[data-io="blur"] { opacity: 0; filter: blur(14px); translate: 0 calc(8 * var(--u)); transition: opacity 0.9s ease var(--d, 0ms), filter 1.05s ease var(--d, 0ms), translate 1.05s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .pt-root .pt-blurin.is-in, .pt-root .io[data-io="blur"].is-in { opacity: 1; filter: none; translate: none; }
+  /* hover で動く物(pt-lift / pt-press / pt-chip)と同じ要素に付けたときの transition。ほかの独自の hover transition を持つ要素には、外側の入れ物に付ける */
+  .pt-root .pt-popin.pt-lift { transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+  .pt-root .pt-popin.pt-press { transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), transform 0.14s cubic-bezier(0.3, 1.6, 0.5, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s; }
+  .pt-root .pt-popin.pt-chip { transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), background 0.28s, color 0.28s, border-color 0.28s, transform 0.2s; }
+  .pt-root .pt-blurin.pt-lift { transition: opacity 0.9s ease var(--d, 0ms), filter 1.05s ease var(--d, 0ms), translate 1.05s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
+  /* 写真のワイプ(入れ物 .pt-wipe の直接の子 = 画像のクリップが広がって現れる。中の画像は大きい状態から収まる)。data-wipe="left"(既定。左から右へ)| right | up(下から上へ)| down
+     クリップは子に掛ける(入れ物自身に掛けると IntersectionObserver が「見えていない」と数えて永遠に出ない) */
+  .pt-root .pt-wipe > * { clip-path: inset(-40px calc(100% + 40px) -40px -40px); }
+  .pt-root .pt-wipe[data-wipe="right"] > * { clip-path: inset(-40px -40px -40px calc(100% + 40px)); }
+  .pt-root .pt-wipe[data-wipe="up"] > * { clip-path: inset(calc(100% + 40px) -40px -40px -40px); }
+  .pt-root .pt-wipe[data-wipe="down"] > * { clip-path: inset(-40px -40px calc(100% + 40px) -40px); }
+  .pt-root .pt-wipe.is-in > * { clip-path: inset(-40px -40px -40px -40px); }
+  .pt-root .pt-wipe > *, .pt-root .pt-wipe img { transition: clip-path 1.2s cubic-bezier(0.7, 0, 0.2, 1) var(--d, 0ms), scale 1.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0ms), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .pt-root .pt-wipe img { scale: 1.22; }
+  .pt-root .pt-wipe.is-in img { scale: none; }
+  /* 足あと(PawTrail): 隠す → スクロールで is-on(mode="scroll")/ 画面に入って時間差(mode="auto") */
+  .pt-root .pt-paws .pt-paw { opacity: 0; scale: 1.6; }
+  .pt-root .pt-paws .pt-paw.is-on, .pt-root .pt-paws--auto.is-in .pt-paw { opacity: var(--paw-o, 0.9); scale: none; }
+  .pt-root .pt-paws .pt-paw { transition: opacity 0.22s ease, scale 0.42s cubic-bezier(0.3, 1.5, 0.6, 1); }
+  .pt-root .pt-paws--auto .pt-paw { transition: opacity 0.3s ease calc(var(--d, 0ms) + var(--i, 0) * 170ms), scale 0.5s cubic-bezier(0.3, 1.5, 0.6, 1) calc(var(--d, 0ms) + var(--i, 0) * 170ms); }
+  /* スクロール連動の最初の値(JS が --p を上書きする。JS が無ければ最終の状態) */
+  .pt-root .pt-fillh, .pt-root .pt-fill, .pt-root .pt-bgshift, .pt-root .pt-scale-scroll { --p: 0; }
+  /* カラーフィル(.pt-fillh の中の .pt-fill-t / 単独の .pt-fill): 文字を背景で塗る。--p で background-size(左から右・行の順) */
+  .pt-fill, .pt-fill-t {
+    background: linear-gradient(90deg, var(--fill-to, var(--pt-ink)) calc(100% - var(--fill-feather, 0.9em)), transparent) no-repeat 0 0 / calc(var(--p, 1) * (100% + var(--fill-feather, 0.9em))) 100%, var(--fill-from, color-mix(in srgb, var(--fill-to, var(--pt-ink)) 18%, transparent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: background-size 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+}
+/* カラーフィルの単独 .pt-fill は文字の入れ物(inline / inline-block)に付ける。折り返しても行の順に塗られる */
+.pt-fill, .pt-fill-t { box-decoration-break: slice; -webkit-box-decoration-break: slice; }
+
+/* ---------- 節の背景色がじわっと変わる(.pt-bgshift。--bg-from → --bg-to。--bg-to が見本の色=最終の色) ---------- */
+.pt-root .pt-bgshift { background-color: color-mix(in srgb, var(--bg-to, var(--pt-sec)) calc(var(--p, 1) * 100%), var(--bg-from, var(--pt-paper))); transition: background-color 0.45s ease; }
+
+/* ---------- 写真がスクロールで少し拡大/ずれる(.pt-scale-scroll。入れ物に overflow: hidden。--ss 拡大量 0.08、--sy ずれ px) ---------- */
+.pt-scale-scroll { scale: calc(1 + var(--p, 0) * var(--ss, 0.08)); translate: 0 calc((0.5 - var(--p, 0.5)) * var(--sy, 0px)); }
+
+/* ---------- 足あと(PawTrail。大きさは --paw、間隔は --paw-gap、色は --paw-c、濃さは --paw-o) ---------- */
+.pt-paws { --paw: calc(14 * var(--u)); --paw-gap: calc(12 * var(--u)); display: inline-flex; align-items: center; gap: var(--paw-gap); color: var(--paw-c, var(--pt-brown-l)); pointer-events: none; }
+.pt-paws--right { flex-direction: row; padding: calc(var(--paw) * 0.55) 0; }
+.pt-paws--left { flex-direction: row-reverse; padding: calc(var(--paw) * 0.55) 0; }
+.pt-paws--down { flex-direction: column; padding: 0 calc(var(--paw) * 0.55); }
+.pt-paws--up { flex-direction: column-reverse; padding: 0 calc(var(--paw) * 0.55); }
+.pt-paw { display: block; flex: none; width: var(--paw); aspect-ratio: 104 / 100; rotate: var(--rot, 0deg); opacity: var(--paw-o, 0.9); }
+.pt-paws--right .pt-paw, .pt-paws--left .pt-paw { translate: 0 calc(var(--alt, 0) * var(--paw) * 0.42); }
+.pt-paws--down .pt-paw, .pt-paws--up .pt-paw { translate: calc(var(--alt, 0) * var(--paw) * 0.42) 0; }
+.pt-paw-i { display: block; width: 100%; height: auto; }
+
+/* ---------- ティルト(.pt-tilt / TiltCard。JS が --rx --ry と is-tilting を付ける) ---------- */
+.pt-tilt { transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.pt-tilt.is-tilting { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1); will-change: transform; }
+.pt-root .pt-tilt.pt-lift { transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+.pt-root .pt-tilt.pt-lift.is-tilting { transform: perspective(900px) translateY(calc(-5 * var(--u))) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+:where(.pt-tilt--glare) { position: relative; }
+.pt-tilt-glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 58%); transition: opacity 0.4s; z-index: 3; }
+.pt-tilt.is-tilting .pt-tilt-glare { opacity: 1; }
+
+/* ---------- マグネット(.pt-magnet。カーソルが近づくとボタンが吸い寄る。JS が --mx --my と is-mag を付ける。inline-flex / block などの箱に) ---------- */
+.pt-magnet { transform: translate3d(var(--mx, 0px), var(--my, 0px), 0); transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.pt-magnet.is-mag { transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.pt-root .pt-magnet.pt-press { transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s, border-color 0.2s, translate 0.25s; }
+.pt-root .pt-magnet.pt-press.is-mag { transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s, border-color 0.2s, translate 0.25s; }
+.pt-root .pt-magnet.pt-press:active { transform: translate3d(var(--mx, 0px), var(--my, 0px), 0) scale(0.94); transition-duration: 0.12s; }
+.pt-root .pt-magnet.pt-lift:hover { transform: translate3d(var(--mx, 0px), var(--my, 0px), 0) translateY(calc(-5 * var(--u))); }
+
+/* ---------- カーソルが近づくと逃げる飾り(.pt-flee / Flee。位置は自分で指定。本体は中に) ---------- */
+.pt-flee { transform: translate3d(var(--fx, 0px), var(--fy, 0px), 0); transition: transform 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.15); pointer-events: none; }
+
+/* ---------- スクロール速度に応じた傾き(.pt-skew。速くスクロールすると一瞬傾いて戻る。大きな入れ物の外側に。transform を使う物とは別の要素に) ---------- */
+.pt-skew.is-skewing { transform: skewY(var(--sk, 0deg)); will-change: transform; }
+
+/* ---------- マーキー(Marquee。2 組を並べて -50% 動かす=切れ目なし。JS がホバーで playbackRate を下げる) ---------- */
+.pt-marquee { display: flex; overflow: hidden; --mq-gap: 3em; }
+.pt-marquee[data-fade] { -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+.pt-marquee-track { display: flex; flex: none; width: max-content; animation: pt-marquee var(--mq-dur, 40s) linear infinite; }
+.pt-marquee--rev .pt-marquee-track { animation-direction: reverse; }
+.pt-marquee-grp { display: flex; flex: none; align-items: center; gap: var(--mq-gap); padding-right: var(--mq-gap); white-space: nowrap; }
+.pt-marquee-rep { display: contents; }
+.pt-marquee-it, .pt-marquee-sep { display: inline-flex; flex: none; align-items: center; }
+@keyframes pt-marquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+
 /* ---------- スマホ・狭い画面(860px 未満)。--u は使わず px で組む ---------- */
 @media (max-width: 859px) {
   .pt-root { font-size: 14px; line-height: 1.7; }
@@ -395,8 +495,21 @@ a:hover > .pt-logo .pt-logo-paw { transform: rotate(-14deg) scale(1.1); }
   .pt-fg-copy { flex-basis: 100%; font-size: 11px; line-height: 16px; white-space: normal; }
 }
 
+/* ---------- 動きの部品 2: スマホ・狭い画面 ---------- */
+@media (max-width: 859px) {
+  .pt-paws { --paw: 22px; --paw-gap: 14px; }
+  .pt-marquee { --mq-gap: 2em; }
+  .pt-root .pt-popin, .pt-root .io[data-io="pop"], .pt-root .pt-blurin, .pt-root .io[data-io="blur"] { translate: 0 8px; }
+}
+
+
 /* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
 @media (prefers-reduced-motion: reduce) {
+  .pt-marquee { overflow: visible; }
+  .pt-marquee-track { width: auto; }
+  .pt-marquee-grp { flex-wrap: wrap; justify-content: center; padding-right: 0; row-gap: 0.5em; }
+  .pt-marquee-grp[aria-hidden="true"], .pt-marquee-rep[aria-hidden="true"] { display: none; }
+  .pt-bgshift { transition: none; }
   .pt-root *, .pt-root *::before, .pt-root *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
   .pt-root .io { opacity: 1; translate: none; scale: none; }
   .pt-ml-i { translate: none; }

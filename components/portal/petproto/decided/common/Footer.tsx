@@ -31,7 +31,7 @@ export default function Footer() {
                 <br />
                 もっと楽しく暮らせる社会を目指す地域密着型のポータルサイトです。
               </p>
-              <a href="#" className="pt-fb-btn pt-press pt-hov">
+              <a href="#" className="pt-fb-btn pt-press pt-hov pt-magnet">
                 <span>マチノワPetについて</span>
                 <IconArrow className="pt-fb-btn-a" />
               </a>
@@ -42,26 +42,26 @@ export default function Footer() {
         </div>
       </div>
       <div className="pt-foot-main">
-        <div className="pt-foot-in pt-foot-grid">
-          <div className="pt-fg-brand">
+        <div className="pt-foot-in pt-foot-grid" data-io-group>
+          <div className="pt-fg-brand io">
             <Link href={BASE} aria-label="マチノワPet トップ" className="pt-foot-logo-link">
               <Logo className="pt-foot-logo" />
             </Link>
             <p className="pt-fg-tag">ペットと、この街で、もっと豊かに。</p>
           </div>
-          <nav className="pt-fg-col" aria-label="サービスを探す">
+          <nav className="pt-fg-col io" aria-label="サービスを探す">
             <h3>サービスを探す</h3>
             <Link href={SEARCH_HREF}>エリアから探す</Link>
             <Link href={SEARCH_HREF}>カテゴリから探す</Link>
             <Link href={SHOP_HREF}>おすすめのお店</Link>
           </nav>
-          <nav className="pt-fg-col" aria-label="読みもの">
+          <nav className="pt-fg-col io" aria-label="読みもの">
             <h3>読みもの</h3>
             <Link href={ARTICLES_HREF}>特集記事</Link>
             <Link href={ARTICLES_HREF}>ペット業界の記事</Link>
             <Link href={ARTICLES_HREF}>暮らしのシーン記事</Link>
           </nav>
-          <nav className="pt-fg-col pt-fg-about" aria-label="マチノワPetについて">
+          <nav className="pt-fg-col pt-fg-about io" aria-label="マチノワPetについて">
             <h3>マチノワPetについて</h3>
             <a href="#">運営について</a>
             <a href="#">お問い合わせ</a>
@@ -69,7 +69,7 @@ export default function Footer() {
             <a href="#">プライバシーポリシー</a>
           </nav>
           <div className="pt-fg-r">
-            <div className="pt-fg-sns">
+            <div className="pt-fg-sns pt-popin">
               <a href="#" aria-label="Instagram" className="pt-sns pt-sns--ig pt-press">
                 <IconInstagram />
               </a>

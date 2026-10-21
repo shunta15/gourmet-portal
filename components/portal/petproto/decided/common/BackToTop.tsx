@@ -7,7 +7,7 @@ export default function BackToTop() {
   return (
     <button
       type="button"
-      className="pt-totop pt-press"
+      className="pt-totop pt-press pt-magnet"
       aria-label="ページの先頭へ戻る"
       onClick={() => {
         const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
