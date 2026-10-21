@@ -1,6 +1,7 @@
 # lib/places/generated
 
-`beauty.json`・`bodycare.json`・`pet.json` は **自動生成**です。手で編集しないでください。
+`beauty.json`・`bodycare.json`・`pet.json`・`stay.json` は **自動生成**です。手で編集しないでください。
+（`stay.json` はステイ（宿）の実在の宿 8 軒（st0001〜st0008。材料は `automation/vertical-stores/stay-resolve.json` と gbp / articles / photos の `lodging-*.json`。キーはシートのタブ「宿泊施設」の gbp が `lodging` のため `lodging-<行>`、店データの業種は `stay`）。客室・サイトの種類名は `attributes.roomTypes`。読む側は `lib/places/newVerticals.ts`。特集記事（`features-stay.json`）はまだ無い）
 （`pet.json` はペットの実在の店 17 店（pe0001〜pe0017。材料は `automation/vertical-stores/pet-resolve.json` と gbp / articles / photos の `pet-*.json`）。`features-pet.json` は特集記事がまだ無いので空配列。読む側は `lib/places/newVerticals.ts` / `lib/places/features.ts`。店 0 件でも /pet/search・/pet/shop は壊れない）
 
 - 作る道具: `automation/vertical-stores/build-places.mjs`

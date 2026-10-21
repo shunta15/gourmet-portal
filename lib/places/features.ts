@@ -44,6 +44,8 @@ export const VERTICAL_FEATURES_ENABLED = true;
 
 export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise<PlaceFeature[]> {
   if (!VERTICAL_FEATURES_ENABLED) return [];
+  // ステイは特集記事がまだ無い（features-stay.json は未作成。ペットの特集を誤って返さない）
+  if (vertical === 'stay') return [];
   const mod =
     vertical === 'beauty'
       ? await import('./generated/features-beauty.json')

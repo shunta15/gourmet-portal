@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * build-places.mjs  —  vertical-stores（ビューティー・ボディケア・ペット）
+ * build-places.mjs  —  vertical-stores（ビューティー・ボディケア・ペット・ステイ）
  *
  * gbp/<タブ>-<行>.json（Google マップで特定した店。verdict が「一致」だけ）＋ articles/<キー>.json（紹介記事）から、
- * サイトが読む店データ lib/places/generated/{beauty,bodycare,pet}.json を作る。型は lib/places/types.ts の Place。
+ * サイトが読む店データ lib/places/generated/{beauty,bodycare,pet,stay}.json を作る。型は lib/places/types.ts の Place。
  * 出力は自動生成。手で編集しない（直すなら gbp / articles / このスクリプトを直して作り直す）。
  *
  * 既定: pilot.json にあるキーの店と、特集記事（features/<キー>.json）がある店のうち、紹介記事（articles/<キー>.json）か特集記事がある店だけを出す。
@@ -18,7 +18,7 @@
  *          その業種の種類の slug（lib/verticals/<業種>.ts）に無い値は無効（使わない）。決められない店は、今までどおり unmapped.json へ（理由に無効の旨を足す）。
  *  - 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json（キーの配列）にある店は、どのモードでも出さない。
  * --rows : 対象の行の範囲を絞る（例: --rows beauty:2-129,bodycare:2-133。オーナーが指定した範囲）。
- *          書き方は <beauty|bodycare|pet>:<開始行>-<終了行>（1 行だけなら <業種>:<行>）。範囲の外の店は、出さない・ID も払い出さない・
+ *          書き方は <beauty|bodycare|pet|stay>:<開始行>-<終了行>（1 行だけなら <業種>:<行>）。範囲の外の店は、出さない・ID も払い出さない・
  *          unmapped.json にも入れない。--rows に書いていない業種は絞らない。指定しなければ今までと同じ（全行が対象）。
  *
  * 使い方:
@@ -30,7 +30,7 @@
  *   --pilot <file> --articles <dir> --ids <file> --out <dir> --unmapped <file>  # 場所の差し替え（試験用）
  *   --photos <dir> --public <dir> --category-overrides <dir> --skipped <dir> --exclude <file> --basic <file>  # 同上（試験用）
  *
- * 店 ID: ids.json（業種ごとに Google マップの cid → 店 ID）。ビューティー be0001〜、ボディケア bo0001〜、ペット pe0001〜。
+ * 店 ID: ids.json（業種ごとに Google マップの cid → 店 ID）。ビューティー be0001〜、ボディケア bo0001〜、ペット pe0001〜、ステイ st0001〜。
  *        一度払い出した ID は変えない（追記だけ）。シートの行がずれても、同じ店（同じ cid）は同じ ID。
  * 除外: 種類を決められない店・都道府県を決められない店・cid が無い／重複の店は、理由つきで unmapped.json に書く
  *       （推測で振り分けない）。unmapped.json は既定でも「一致」の全店を点検した結果。
@@ -39,11 +39,18 @@
  *         シートの全行を持つ gbp/pet-*.json のうち、判定で種類が決まらない店（category が null）は unmapped.json に理由つきで書く。
  *         タグは付けない（pet.ts の場面タグに当たる事実が無いため。ALLOWED_TAGS.pet は空）。
  *
+ * ステイ（宿）: シートのタブ「宿泊施設」の gbp は tabEn が lodging（キー lodging-<行>）。店データの業種は stay（出力は stay.json）。
+ *         種類と店 ID は stay-resolve.json（decisions[].category と idLedger。シートの業種ラベルを軸に公式サイトで確かめた判定）から読む。
+ *         タグは 温泉・ペット同伴・素泊まり・一人旅・記念日 だけ（lib/verticals/stay.ts の場面）。根拠の factIndex が要る。
+ *         客室・サイトの種類名（記事の rooms）は attributes.roomTypes に入れる（名前だけ）。
+ *         Google マップの予約リンク（reserveLinks）は広告の転送 URL で料金つきなので、宿には使わない（reservationUrl は付けない）。
+ *
  * 紹介記事の placeOverride（任意）: Google マップの表示と公式サイトが食い違う店で、公式サイトの値を店データに使うときに書く（監査で確かめたものだけ）。
  *   phone        : 電話番号（Google マップの番号が公式サイトのどこにも無いとき）
  *   hoursByDay   : { 月: "09:00–12:00, 15:00–18:00", 金: "定休日", ... }（営業時間の曜日別。Google マップの hours の代わりに formatHours に渡す）
  *   hours: null  : 営業時間が決められない店は店データに営業時間を載せない（定休日も載せない。holidays を別に書けば載せる）
  *   holidays     : 定休日の文字列（"不定休"、"第1・3月曜・火曜" など。null で載せない）
+ *   name         : 店名（Google マップの名前が検索語つきで長いとき、公式サイトの呼び方に直す。例: ウルベビレッジ）
  *
  * サイトのデータに入れないもの: 記事の facts / quote / notes / placeOverride（確認用）、星・口コミ・価格帯、写真の取得元 URL（imageUrl・pageUrl）、ownerPost。
  */
@@ -89,11 +96,19 @@ const VERTICALS = {
   beauty: { prefix: "be", tab: "ビューティ" },
   bodycare: { prefix: "bo", tab: "ボディケア" },
   pet: { prefix: "pe", tab: "ペット" },
+  stay: { prefix: "st", tab: "宿泊施設" },
 };
+// gbp の tabEn（シートのタブの英名）→ 店データの業種。ここに無いものは tabEn がそのまま業種
+const TAB_TO_VERTICAL = { lodging: "stay" };
+const verticalOfTab = (tabEn) => TAB_TO_VERTICAL[tabEn] ?? tabEn;
 // ペットの種類と店 ID（pet-resolve.json）。無ければ空（その場合ペットは全店が unmapped になる）
 const PET_RESOLVE_FILE = path.join(HERE, "pet-resolve.json");
 const PET_RESOLVE = existsSync(PET_RESOLVE_FILE) ? JSON.parse(readFileSync(PET_RESOLVE_FILE, "utf8")) : { decisions: [], idLedger: {} };
 const PET_DECISIONS = new Map((PET_RESOLVE.decisions || []).map((x) => [x.key, x]));
+// ステイの種類と店 ID（stay-resolve.json）。無ければ空（その場合ステイは全店が unmapped になる）
+const STAY_RESOLVE_FILE = path.join(HERE, "stay-resolve.json");
+const STAY_RESOLVE = existsSync(STAY_RESOLVE_FILE) ? JSON.parse(readFileSync(STAY_RESOLVE_FILE, "utf8")) : { decisions: [], idLedger: {} };
+const STAY_DECISIONS = new Map((STAY_RESOLVE.decisions || []).map((x) => [x.key, x]));
 
 const warnings = [];
 const warn = (key, msg) => warnings.push(`${key}: ${msg}`);
@@ -103,11 +118,11 @@ export function parseRows(spec) {
   if (spec === undefined) return null;
   const ranges = {};
   for (const part of String(spec).split(",").map((x) => x.trim()).filter(Boolean)) {
-    const m = /^(beauty|bodycare|pet):(\d+)(?:-(\d+))?$/.exec(part);
+    const m = /^(beauty|bodycare|pet|stay):(\d+)(?:-(\d+))?$/.exec(part);
     const from = m ? Number(m[2]) : NaN;
     const to = m ? Number(m[3] ?? m[2]) : NaN;
     if (!m || from < 1 || to < from) {
-      console.error(`--rows の書き方が違います: 「${part}」（例: --rows beauty:2-129,bodycare:2-133,pet:2-33）`);
+      console.error(`--rows の書き方が違います: 「${part}」（例: --rows beauty:2-129,bodycare:2-133,pet:2-33,stay:2-14）`);
       process.exit(1);
     }
     (ranges[m[1]] ??= []).push([from, to]);
@@ -209,6 +224,12 @@ export function categoryOf(vertical, d) {
     if (!dec.category) return { reason: dec.reason || "pet-resolve.json で種類が決まっていない（category が null）" };
     return { category: dec.category };
   }
+  if (vertical === "stay") {
+    const dec = STAY_DECISIONS.get(`lodging-${d.row}`);
+    if (!dec) return { reason: "stay-resolve.json に この行の判定が無く、種類を決められない" };
+    if (!dec.category) return { reason: dec.reason || "stay-resolve.json で種類が決まっていない（category が null）" };
+    return { category: dec.category };
+  }
   if (vertical === "beauty") {
     const labels = [d.sheet?.d1, d.sheet?.d2].map((s) => (s || "").trim()).filter(Boolean);
     const found = new Set();
@@ -238,7 +259,7 @@ function loadCategorySlugs(vertical) {
   if (out.size === 0) throw new Error(`lib/verticals/${vertical}.ts から種類の slug を読めませんでした`);
   return out;
 }
-const CATEGORY_SLUGS = { beauty: loadCategorySlugs("beauty"), bodycare: loadCategorySlugs("bodycare") };
+const CATEGORY_SLUGS = { beauty: loadCategorySlugs("beauty"), bodycare: loadCategorySlugs("bodycare"), stay: loadCategorySlugs("stay") };
 
 // ------------------------------------------------------------------ 営業時間
 const DAYS = ["月", "火", "水", "木", "金", "土", "日"];
@@ -344,6 +365,7 @@ const ALLOWED_TAGS = {
   beauty: ["当日予約可", "夜遅くまで営業", "個室あり", "メンズ歓迎", "子連れ可", "駅近"],
   bodycare: ["夜遅くまで営業", "土日営業", "予約なし可", "女性スタッフ", "駅近"],
   pet: [], // ペットはタグを付けない（場面タグに当たる事実が無い）
+  stay: ["温泉", "ペット同伴", "一人旅", "記念日", "素泊まり"], // lib/verticals/stay.ts の場面。公式サイトの事実の根拠（factIndex）があるものだけ
 };
 const FORBIDDEN = [
   "治る", "治す", "治療", "改善", "効果", "若返る", "痩せる", "医療", "医学的",
@@ -351,6 +373,8 @@ const FORBIDDEN = [
 ];
 // ペットだけの追加（料金・特典の表現。監査で外した語）
 const FORBIDDEN_PET = ["無料", "無償", "割引", "特典", "プレゼント", "お得", "円", "税込", "口コミ", "★", "☆"];
+// ステイだけの追加（料金・評価・癒し・絶景などの表現。ステイの決まり）
+const FORBIDDEN_STAY = ["無料", "無償", "割引", "特典", "プレゼント", "お得", "円", "税込", "料金", "ベストレート", "口コミ", "評価", "★", "☆", "癒", "絶景", "贅沢", "至福", "宿泊記"];
 
 function isHttp(u) {
   try {
@@ -423,7 +447,7 @@ function buildArticle(vertical, d, article, key) {
   }
 
   const text = [headline, lede, ...sections.flatMap((s) => [s.heading, s.body]), ...menus.map((m) => m.name)].join("\n");
-  for (const w of vertical === "pet" ? [...FORBIDDEN, ...FORBIDDEN_PET] : FORBIDDEN) if (text.includes(w)) warn(key, `記事に禁止語「${w}」が含まれています（確認してください）`);
+  for (const w of vertical === "pet" ? [...FORBIDDEN, ...FORBIDDEN_PET] : vertical === "stay" ? [...FORBIDDEN, ...FORBIDDEN_STAY] : FORBIDDEN) if (text.includes(w)) warn(key, `記事に禁止語「${w}」が含まれています（確認してください）`);
 
   return {
     article: { headline, lede, sections, ...(menus.length > 0 ? { menus } : {}), sources, ...(checkedAt ? { checkedAt } : {}) },
@@ -480,8 +504,8 @@ const gbp = new Map();
 const outOfRows = new Set(); // 「一致」だが --rows の範囲の外の店
 for (const f of readdirSync(GBP_DIR).filter((x) => x.endsWith(".json")).sort(natural)) {
   const d = readJson(path.join(GBP_DIR, f));
-  if (!VERTICALS[d.tabEn] || d.verdict !== "一致" || !d.place) continue;
-  if (!inRows(d.tabEn, Number(d.row))) {
+  if (!VERTICALS[verticalOfTab(d.tabEn)] || d.verdict !== "一致" || !d.place) continue;
+  if (!inRows(verticalOfTab(d.tabEn), Number(d.row))) {
     outOfRows.add(`${d.tabEn}-${d.row}`);
     continue;
   }
@@ -495,6 +519,8 @@ const ledger = {
 for (const v of Object.keys(VERTICALS)) ledger[v] ??= {};
 // ペットの店 ID は pet-resolve.json の idLedger（払い出し済み）を台帳に写す（台帳に既にある cid は変えない）
 for (const [cid, id] of Object.entries(PET_RESOLVE.idLedger || {})) ledger.pet[cid] ??= id;
+// ステイの店 ID は stay-resolve.json の idLedger（払い出し済み）を台帳に写す（台帳に既にある cid は変えない）
+for (const [cid, id] of Object.entries(STAY_RESOLVE.idLedger || {})) ledger.stay[cid] ??= id;
 
 // 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json にある店（どのモードでも出さない。ID も払い出さない）
 const notListed = new Set(existsSync(EXCLUDE_FILE) ? readJson(EXCLUDE_FILE) : []);
@@ -512,7 +538,7 @@ const seenCid = new Map();
 const resolved = new Map(); // key -> { vertical, category, area, cid }
 for (const [key, d] of [...gbp].sort((a, b) => natural(a[0], b[0]))) {
   if (notListed.has(key)) continue;
-  const vertical = d.tabEn;
+  const vertical = verticalOfTab(d.tabEn);
   const item = { key, vertical, name: d.place.name, sheetName: d.sheet?.name, address: d.place.address };
   const cid = /[?&]cid=(\d+)/.exec(d.place.gbpUrl || "")?.[1];
   if (!cid) {
@@ -579,7 +605,7 @@ if (ALL) {
   });
 }
 
-const places = { beauty: [], bodycare: [], pet: [] };
+const places = { beauty: [], bodycare: [], pet: [], stay: [] };
 const issued = [];
 for (const key of wanted) {
   const d = gbp.get(key);
@@ -608,15 +634,18 @@ for (const key of wanted) {
   const hours = fmt.hours;
   const holidays = "holidays" in ov ? (ov.holidays ? String(ov.holidays) : undefined) : fmt.holidays;
   const web = classifyWebsite(p.website, key);
-  const reserve = Array.isArray(p.reserveLinks) ? p.reserveLinks.find((l) => l && isHttp(l.url)) : null;
+  // ステイは Google マップの予約リンク（広告の転送 URL・料金つき）を使わない
+  const reserve = r.vertical !== "stay" && Array.isArray(p.reserveLinks) ? p.reserveLinks.find((l) => l && isHttp(l.url)) : null;
   const reservationUrl = reserve ? cleanUrl(reserve.url)?.toString() : undefined;
   const built = hasArticle ? buildArticle(r.vertical, d, articleData, key) : { article: undefined, tags: [] };
   const photos = loadPhotos(key);
+  // ステイ: 記事の rooms（客室・サイトの種類名）→ attributes.roomTypes（名前だけ・重複なし）
+  const roomTypes = [...new Set((Array.isArray(articleData?.rooms) ? articleData.rooms : []).map((x) => (typeof x?.name === "string" ? x.name.trim() : "")).filter(Boolean))];
   const place = {
     id,
     vertical: r.vertical,
     category: r.category,
-    name: String(p.name).trim(),
+    name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).trim(),
     pref: r.area.pref,
     ...(r.area.cityName ? { cityName: r.area.cityName } : {}),
     address: normalizeAddress(p.address),
@@ -637,6 +666,7 @@ for (const key of wanted) {
     ...(photos.length > 0 ? { photos } : {}),
     tags: built.tags,
     ...(built.article ? { article: built.article } : {}),
+    ...(r.vertical === "stay" && roomTypes.length > 0 ? { attributes: { roomTypes } } : {}),
   };
   places[r.vertical].push(place);
 }
@@ -653,7 +683,7 @@ if (!DRY) {
   writeFileSync(UNMAPPED_FILE, JSON.stringify({ _note: "種類・都道府県・cid を決められず除外した店（gbp の「一致」の全店を点検した結果）。推測で振り分けない。build-places.mjs が毎回作り直す。", items: unmapped }, null, 2) + "\n");
 }
 
-console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : LISTED ? "listed" : "pilot"}${ROWS ? `  rows=${rawOpt("rows")}（範囲の外の「一致」の店=${outOfRows.size}）` : ""}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  pet=${places.pet.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
+console.log(`${DRY ? "[dry] " : ""}mode=${ALL ? "all" : LISTED ? "listed" : "pilot"}${ROWS ? `  rows=${rawOpt("rows")}（範囲の外の「一致」の店=${outOfRows.size}）` : ""}  beauty=${places.beauty.length}  bodycare=${places.bodycare.length}  pet=${places.pet.length}  stay=${places.stay.length}  除外(unmapped)=${unmapped.length}  新しい ID=${issued.length}`);
 for (const i of issued) console.log(`  ID 払い出し: ${i}`);
 for (const u of unmapped) console.log(`  除外: ${u.key} 「${u.name}」 — ${u.reason}`);
 for (const w of warnings) console.log(`  注意: ${w}`);

@@ -1,0 +1,1018 @@
+{
+  "_note": "自動生成（automation/vertical-stores/build-places.mjs）。手で編集しない。直すときは gbp / articles / build-places.mjs を直して作り直す。",
+  "places": [
+    {
+      "id": "st0001",
+      "vertical": "stay",
+      "category": "guesthouse",
+      "name": "MAGONDO",
+      "pref": "ishikawa",
+      "cityName": "加賀市",
+      "address": "石川県加賀市橋立町ム2",
+      "lat": 36.3511956,
+      "lng": 136.3101328,
+      "phone": "0761-71-2810",
+      "url": "https://magondo.com/",
+      "website": "https://magondo.com/",
+      "mapUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "image": "/_portal/vshops/lodging-4/g1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-4/g1.jpg",
+        "/_portal/vshops/lodging-4/g2.jpg",
+        "/_portal/vshops/lodging-4/g3.jpg",
+        "/_portal/vshops/lodging-4/g4.jpg",
+        "/_portal/vshops/lodging-4/g5.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-4/g1.jpg",
+          "what": "板塀と瓦屋根の古民家の外観。入口に暖簾が掛かっている",
+          "width": 987,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/g2.jpg",
+          "what": "太い梁と板張りの壁が見える客室。ベッドと緑色のベンチがある",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/g3.jpg",
+          "what": "畳敷きの広間。障子の窓とテレビ、ソファのある居間",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/g4.jpg",
+          "what": "長いダイニングテーブルのある、梁の見える広い居間とキッチン",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/g5.jpg",
+          "what": "障子と襖のある和室に、2台のベッドが並ぶ寝室",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "石川県加賀市橋立町、古民家を改装した一棟貸しの宿。MAGOICHI・MAGONI・MAGOSANの3つの宿がある",
+        "lede": "石川県加賀市橋立町にある「MAGONDO」(KAKUREGA STAY)です。北前船で栄えた橋立の、築百年以上の古民家を改装した一棟貸しの宿で、MAGOICHI・MAGONI・MAGOSANの3つの宿があります。宿のキッチンで自炊でき、公式サイトにはカフェの案内も載っています。",
+        "sections": [
+          {
+            "heading": "場所と利用の条件",
+            "body": "住所は石川県加賀市橋立町ム-2、電話は0761-71-2810で、電話の受付は9時から18時までです。JR加賀温泉駅から車で15分、片山津ICから車で10分で、駐車場は敷地内にあり、台数に限りがあります。チェックインは15時からで、滞在は1泊から30泊までです。公式サイトには、届出審査済みとして石川県指令南加保第393号の表示があります。ペットと喫煙は不可で、イベント・パーティは可とされ、静かな滞在のため近隣への配慮が求められています。"
+          },
+          {
+            "heading": "3つの宿",
+            "body": "MAGOICHIは、囲炉裏を再利用した空間のある一棟貸しで、広さ112㎡の1LDK、定員は1〜2名です。MAGONIは、古い蔵を改装した一棟貸しで、広さ100㎡の1LDK、定員は1〜2名です。MAGOSANは、最大5名まで泊まれる一棟貸しで、広さ190㎡の2LDK、定員は1〜5名です。公式サイトの設備の欄には、キッチン、洗濯機、冷蔵庫、調理器具、食器、電子レンジ、コンロ、Wi-Fi、エアコン、ヘアドライヤーなどが載っています。"
+          },
+          {
+            "heading": "自炊とカフェの案内",
+            "body": "公式サイトでは、近くの市場や直売所で選んだ食材を、完全にプライベートなキッチンで調理する滞在が案内されています。カフェ情報として、「MAGONDOカフェ」は10時から16時まで(定休日は月曜と金曜)、「MAGONDO夜カフェ」は19時から23時までで、要予約と載っています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://magondo.com/index2.html"
+          },
+          {
+            "label": "公式サイト(MAGOICHI)",
+            "url": "https://magondo.com/dining.html"
+          },
+          {
+            "label": "公式サイト(MAGONI)",
+            "url": "https://magondo.com/rooms.html"
+          },
+          {
+            "label": "公式サイト(MAGOSAN)",
+            "url": "https://magondo.com/sightseeing.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5279461319941939557"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "MAGOICHI",
+          "MAGONI",
+          "MAGOSAN"
+        ]
+      }
+    },
+    {
+      "id": "st0002",
+      "vertical": "stay",
+      "category": "glamping",
+      "name": "富士見の丘オートキャンプ場",
+      "pref": "shizuoka",
+      "cityName": "富士市",
+      "address": "静岡県富士市大淵1297",
+      "lat": 35.2179438,
+      "lng": 138.7025481,
+      "phone": "090-3003-0100",
+      "url": "https://fujimicamp.jp/",
+      "website": "https://fujimicamp.jp/",
+      "mapUrl": "https://maps.google.com/?cid=16609400822903289520",
+      "image": "/_portal/vshops/lodging-5/s1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-5/s1.jpg",
+        "/_portal/vshops/lodging-5/s2.jpg",
+        "/_portal/vshops/lodging-5/s3.jpg",
+        "/_portal/vshops/lodging-5/s4.jpg",
+        "/_portal/vshops/lodging-5/s5.jpg",
+        "/_portal/vshops/lodging-5/s6.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-5/s1.jpg",
+          "what": "夕暮れの富士山と、テントや車が並ぶキャンプサイト",
+          "width": 1200,
+          "height": 693
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s2.jpg",
+          "what": "広い芝のフリーサイトの先に見える富士山",
+          "width": 1200,
+          "height": 693
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s3.jpg",
+          "what": "ウッドデッキと黄色い屋根のあるコテージの外観",
+          "width": 1200,
+          "height": 742
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s4.jpg",
+          "what": "木の壁に囲まれた、木の浴槽の露天風呂",
+          "width": 1107,
+          "height": 684
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s5.jpg",
+          "what": "ベッドのあるコテージの寝室",
+          "width": 1107,
+          "height": 684
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s6.jpg",
+          "what": "プールと、パラソルのあるウッドデッキのテラス。向こうに海と山が見える",
+          "width": 1200,
+          "height": 844
+        }
+      ],
+      "tags": [
+        "ペット同伴",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "静岡県富士市大淵のオートキャンプ場。区画サイトとフリーサイトのほか、露天風呂付きのコテージが2棟ある",
+        "lede": "静岡県富士市大淵にある「富士見の丘オートキャンプ場」です。キャンプサイトは区画サイトとフリーサイトの2種類で、敷地には露天風呂付きのコテージ「GRAND HILLS駿河」「GRAND HILLS富士」の2棟があります。新富士ICから約10分の場所で、公式サイトでは、富士山と駿河湾、富士市の夜景を一望できると案内されています。",
+        "sections": [
+          {
+            "heading": "場所と利用できる時間",
+            "body": "住所は〒417-0801 静岡県富士市大淵1297、電話は090-3003-0100です。電話では予約を受け付けておらず、予約は予約サイト(RESERVA)から行います。新富士ICから約10分(5km)で、チェックインは管理棟で行い、管理棟は10時から18時までです(よくあるご質問には、受付・売店は8時30分から18時とも書かれています)。チェックインとチェックアウトの時間は、区画サイトが12時から17時・翌8時から12時、フリーサイトが11時から17時・翌8時から11時、コテージが14時から17時・翌8時から10時です。受付は17時までで、それより遅くなる場合は事前の連絡が必要です。18時から8時のゲート閉門後は、場内への出入りや車の移動ができません。デイキャンプは11時から17時です。"
+          },
+          {
+            "heading": "キャンプサイト",
+            "body": "区画サイトは、コンセント(15A・1500Wまで)が備わる「100万だらぁサイト」(10区画・定員5名)、「50万だらぁサイト」(2区画・定員7名)、「プレミアム100万だらぁサイト」(2区画・定員10名)の3種類です。区画の中に収まれば、テントや車の数に制限はないと案内されています。フリーサイトは、広い敷地から好きな場所を選んで設営するサイトで、1区画の目安はテント1張、タープ1張、車1台です。フリーサイトのうち、ハンモックサイトは木々にハンモックを掛けられるサイトで、離れサイトはトイレや炊事場まで約230mと少し遠い位置にあります。キャンプサイトはペットと一緒に泊まれ、場内ではリードの着用が決まりです。リードなしで遊べる場所や、ペット用のシャワーはありません。"
+          },
+          {
+            "heading": "コテージ",
+            "body": "コテージは「GRAND HILLS駿河」「GRAND HILLS富士」の2棟で、定員は5名です。寝具はダブルベッド1台とシングルベッド2台で、露天風呂、シャワー、キッチン(冷蔵庫・電子レンジ・電気ポット)、冷暖房エアコンなどがあります。公式サイトによると、露天風呂からは「GRAND HILLS駿河」で駿河湾と夜景を、「GRAND HILLS富士」で富士山を一望できます。素泊まりプランでは調理器具を自分で用意する決まりで、BBQセットのコースを予約すると、手ぶらで泊まれます。夕食は静岡牛、朝食はトーストや目玉焼きなどです。コテージ内は禁煙で、ペット同伴は原則お断りとされ、希望する場合は事前に問い合わせます。"
+          },
+          {
+            "heading": "場内の設備とレンタル",
+            "body": "場内には、温水便座の洋式トイレ、お湯が出る炊事場、シャワールーム(8時30分から24時)、パウダールーム(女性専用と男女共用の2か所)があり、夏にはプールも使えます。管理棟では薪や花火などを販売していて、週末にはキッチンカーの軽食販売が来ることもあると案内されています。焚き火台やバーベキューコンロセット、シュラフ、コットなどのレンタルがあり、テントやタープのレンタルは専用サイト(hinataレンタル)で予約して、場内で受け取りと返却を行います。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://fujimicamp.jp/"
+          },
+          {
+            "label": "公式サイト(キャンプサイト)",
+            "url": "https://fujimicamp.jp/camp/"
+          },
+          {
+            "label": "公式サイト(コテージ)",
+            "url": "https://fujimicamp.jp/cottage/"
+          },
+          {
+            "label": "公式サイト(施設・レンタル)",
+            "url": "https://fujimicamp.jp/facility/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://fujimicamp.jp/access/"
+          },
+          {
+            "label": "公式サイト(ご利用ルール)",
+            "url": "https://fujimicamp.jp/rule/"
+          },
+          {
+            "label": "公式サイト(よくあるご質問)",
+            "url": "https://fujimicamp.jp/faq/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16609400822903289520"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "100万だらぁサイト",
+          "50万だらぁサイト",
+          "プレミアム100万だらぁサイト",
+          "フリーサイト",
+          "離れサイト",
+          "コテージ GRAND HILLS駿河",
+          "コテージ GRAND HILLS富士"
+        ]
+      }
+    },
+    {
+      "id": "st0003",
+      "vertical": "stay",
+      "category": "guesthouse",
+      "name": "ウルベビレッジ",
+      "pref": "gunma",
+      "cityName": "嬬恋村",
+      "address": "群馬県吾妻郡嬬恋村大前2263",
+      "lat": 36.4772734,
+      "lng": 138.5350691,
+      "holidays": "管理棟は毎週火曜(連休やオフシーズン以外の火曜日は営業)",
+      "phone": "0279-86-2104",
+      "url": "https://urube.co.jp/",
+      "website": "https://urube.co.jp/",
+      "mapUrl": "https://maps.google.com/?cid=12706866627527098383",
+      "image": "/_portal/vshops/lodging-6/g1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-6/g1.jpg",
+        "/_portal/vshops/lodging-6/g2.jpg",
+        "/_portal/vshops/lodging-6/g3.jpg",
+        "/_portal/vshops/lodging-6/g4.jpg",
+        "/_portal/vshops/lodging-6/g5.jpg",
+        "/_portal/vshops/lodging-6/g6.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-6/g1.jpg",
+          "what": "丸太を組んだログハウスの外観。ウッドデッキが付いている",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g2.jpg",
+          "what": "石積みの暖炉とソファのあるログハウスのリビング",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g3.jpg",
+          "what": "大きなダイニングテーブルのある、板張りのログハウスの食堂",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g4.jpg",
+          "what": "屋根裏の傾いた天井の下に並ぶベッドの寝室",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g5.jpg",
+          "what": "ログハウスの屋根付きのウッドデッキとテーブル席",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g6.jpg",
+          "what": "雪をかぶったログハウスの外観",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "群馬県嬬恋村の貸別荘。大型ログハウス6棟、ログハウス、ロッジの3種類の宿泊棟を1棟まるごと借りられる",
+        "lede": "群馬県吾妻郡嬬恋村大前にある「ウルベビレッジ」(軽井沢レンタルログコテージ)です。1棟を貸し切る貸別荘で、定員12〜15名の大型ログハウスが6棟、定員8名のログハウスが1棟、定員24名のロッジがあります。公式サイトによると、標高1,100mの浅間高原にある別荘地、プリンスランド内に建っています。",
+        "sections": [
+          {
+            "heading": "場所と受付",
+            "body": "住所は群馬県吾妻郡嬬恋村大前細原2263、電話は0279-86-2104です。管理棟の営業時間は9時から12時までと14時30分から17時までで、12時から14時30分は昼休みで管理棟は無人になります。公式サイトの最初のページの交通アクセスの欄には、電話の受付時間として9時から18時と書かれています。定休日は毎週火曜日ですが、連休やオフシーズン以外の火曜日は営業しています。予約は、電話か予約申込みフォームで受け付けていて、フォームを送っただけでは確定せず、後日メールで届く「予約手続」で確定します。"
+          },
+          {
+            "heading": "3種類の宿泊棟",
+            "body": "大型ログハウスは1号棟から6号棟まで(ヤマセミ・オオルリ・カッコウ・アカゲラ・キビタキ・フクロウ)の6棟で、定員は12〜15名、洋寝室2室と和寝室があり、6名から借りられます。建坪は50坪で、リビングは18畳の吹き抜けです。基本の間取りは、1階にリビング・ダイニング・洋寝室・トイレ・洗面所・岩風呂、2階に洋寝室・和室・トイレで、棟ごとにレイアウトが違います。ログハウス(8号棟・コマドリ)は定員8名で、2段ベッドが2つずつある2室があり、4名から借りられます。2023年7月に1階を改装し、リビングとダイニングの間を行き来できるようになりました。ロッジは定員24名で、4名の和室が6室あり、15名から借りられます。ロッジは、冬季(11月下旬から3月末)は貸し出しを休止しています。"
+          },
+          {
+            "heading": "施設とペットの扱い",
+            "body": "宿泊棟の屋外テラスで使える炭焼きバーベキューの設備は、貸し出しがあります。貸し出しの時期は、施設の紹介のページでは4月から11月、予約のページでは4月から10月と書かれています。全天候型のテニスコートが1面あり、冬季は貸し出しを休止していて、休止の始まりは施設の紹介のページでは11月中旬、予約のページでは11月下旬、終わりはどちらも4月中旬と書かれています。管理棟にはビリヤード台が3台あり、営業は9時から21時まで、事前の予約が必要です。ペット同伴の宿泊はできません。公式サイトでは、車で2〜3分の近くのホテルが運営するドッグホテルに夜間は預ける方法が案内されていて、昼間は居間やテラスで一緒に過ごせます。ドッグホテルが休みの期間が増えていて、預けられない場合は相談するよう書かれています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://urube.co.jp/"
+          },
+          {
+            "label": "公式サイト(貸別荘の紹介)",
+            "url": "https://urube.co.jp/condominium/"
+          },
+          {
+            "label": "公式サイト(大型ログハウス)",
+            "url": "https://urube.co.jp/condominium/biglog/"
+          },
+          {
+            "label": "公式サイト(営業時間・ペットの案内)",
+            "url": "https://urube.co.jp/price/"
+          },
+          {
+            "label": "公式サイト(施設の紹介)",
+            "url": "https://urube.co.jp/facility/"
+          },
+          {
+            "label": "公式サイト(ご予約)",
+            "url": "https://urube.co.jp/reservation/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12706866627527098383"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "大型ログハウス(1〜6号棟)",
+          "ログハウス(8号棟)",
+          "ロッジ"
+        ]
+      }
+    },
+    {
+      "id": "st0004",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "民宿水分村",
+      "pref": "oita",
+      "cityName": "九重町",
+      "address": "大分県玖珠郡九重町野上3735-2",
+      "lat": 33.2524123,
+      "lng": 131.2861549,
+      "holidays": "水曜(祭日や大型連休は営業)",
+      "phone": "0973-77-6752",
+      "url": "https://mizuwakemura.com/",
+      "website": "https://mizuwakemura.com/",
+      "mapUrl": "https://maps.google.com/?cid=7795331415199820761",
+      "image": "/_portal/vshops/lodging-7/g1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-7/g1.jpg",
+        "/_portal/vshops/lodging-7/g2.jpg",
+        "/_portal/vshops/lodging-7/s1.jpg",
+        "/_portal/vshops/lodging-7/g3.jpg",
+        "/_portal/vshops/lodging-7/g4.jpg",
+        "/_portal/vshops/lodging-7/s2.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-7/g1.jpg",
+          "what": "「山法師」の木札がある、離れ客室の玄関まわり",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/g2.jpg",
+          "what": "岩で囲まれた半露天の風呂",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s1.jpg",
+          "what": "座卓と広縁のある、畳敷きの客室",
+          "width": 1200,
+          "height": 840
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/g3.jpg",
+          "what": "2台のベッドが並ぶ洋室タイプの客室",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/g4.jpg",
+          "what": "肉や野菜、魚が皿に盛られた夕食",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s2.jpg",
+          "what": "敷地を上空から見た写真。道路沿いに客室の建物が点在している",
+          "width": 1200,
+          "height": 750
+        }
+      ],
+      "tags": [
+        "温泉",
+        "ペット同伴"
+      ],
+      "article": {
+        "headline": "大分県九重町野上の宿。天然温泉付きの離れ5棟と旧館の民宿があり、ペットと一緒に泊まれる",
+        "lede": "大分県玖珠郡九重町野上にある「民宿水分村」です。公式サイトでは「離れ水分村・民宿水分」の名前で、一棟貸しの天然温泉付き離れ客室が5棟と、旧館の民宿の客室があり、ペットと泊まれる宿と案内されています。旧館の隣には、食事処の「水分茶屋」があります。",
+        "sections": [
+          {
+            "heading": "場所と時間",
+            "body": "住所は〒879-4802 大分県玖珠郡九重町野上3735-2です。電話は、離れ水分村(一般宿泊)が0973-77-6752、仕事宿泊・一般宿泊とドライブイン水分茶屋が0973-77-7383で、電話の対応は8時から21時までです。休館日は毎週水曜日で、祭日や大型連休は営業しています。チェックインは15時から18時、チェックアウトは10時30分までです。駐車場は30台まで予約なしで使え、離れに泊まる場合は部屋に車を横づけできます。食堂と客室ではWi-Fiも使えますが、部屋によって電波が悪い場合があるとされています。"
+          },
+          {
+            "heading": "離れ水分村",
+            "body": "離れ水分村は、一棟貸しの天然温泉付き離れ客室で、5棟あります。客室は、半露天の岩風呂が付く「花水木」、「山法師」「紅葉」「辛夷」、ツインベッド付きの和洋室「朴木」の5棟で、設備は天然温泉、トイレ、エアコン、ベッドがあり、定員は最大5名です。「山法師」「紅葉」「辛夷」は敷布団で、ペットと一緒に眠れます。温泉の泉質は単純硫黄泉です。食事は、お食事処「水分庵」でとります。夕食は17時から19時までの開始(30分刻み)で、メニューには和牛の炭火焼き、地鶏の炭火焼き、すき焼き、黒毛和牛ステーキがあります。朝食は7時から9時までの開始です。"
+          },
+          {
+            "heading": "民宿水分(旧館)",
+            "body": "民宿水分(旧館)は、温泉マークの白い建物が目印の、大通り沿いにある客室です。客室は、和室(4畳・1〜2名・4部屋)、洋室(6畳・1〜3名・2部屋)、特別室(8畳・1〜3名・2部屋)で、屋内大浴場は7時から22時まで、日帰り入浴は10時から16時までです。旧館の泊まり客の食事は、隣にある水分茶屋に用意されます。水分茶屋は不定期営業で、営業時間は11時から15時と書かれていますが、食事だけで訪れる場合は営業時間も曜日も一定しないため、来店前に問い合わせるよう案内されています。"
+          },
+          {
+            "heading": "ペットと泊まる",
+            "body": "公式サイトでは、室内で飼えるペットなら種類を問わないとされ、これまでに宿泊したペットとして、小型犬から大型犬、猫、ウサギ、フェレット、鳥、サルなどが挙げられています。種類によっては断る場合があるため、事前の連絡が必要です。旧館は小型犬のみの受け入れです。ペット用の設備として、ドッグラン、シャンプー・タオル・ドライヤーのあるペット洗い場、夏に温泉を開放するペット水遊び場、山の散歩道が案内されています。お食事処の水分庵には、無駄吠えしない犬なら、小型・中型・大型犬とも一緒に入れます。客室のお風呂にはペットを入れず、ペットの食事・トイレ・シーツは持参します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "和牛炭火焼き"
+          },
+          {
+            "name": "地鶏炭火焼き"
+          },
+          {
+            "name": "すき焼き"
+          },
+          {
+            "name": "黒毛和牛ステーキ"
+          },
+          {
+            "name": "焼肉定食"
+          },
+          {
+            "name": "団子汁定食"
+          },
+          {
+            "name": "炭火焼き豊後牛"
+          },
+          {
+            "name": "温泉地獄蒸し定食"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.mizuwake.jp/"
+          },
+          {
+            "label": "公式サイト(離れ水分村)",
+            "url": "https://www.mizuwake.jp/hanare/"
+          },
+          {
+            "label": "公式サイト(民宿水分)",
+            "url": "https://www.mizuwake.jp/minsyuku/"
+          },
+          {
+            "label": "公式サイト(水分茶屋)",
+            "url": "https://www.mizuwake.jp/mizuwake-chaya/"
+          },
+          {
+            "label": "公式サイト(ペットと楽しむ)",
+            "url": "https://www.mizuwake.jp/pet/"
+          },
+          {
+            "label": "公式サイト(よくある質問)",
+            "url": "https://www.mizuwake.jp/faq/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7795331415199820761"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "花水木",
+          "山法師・紅葉・辛夷",
+          "朴木",
+          "民宿水分(旧館) 和室",
+          "民宿水分(旧館) 洋室",
+          "民宿水分(旧館) 特別室"
+        ]
+      }
+    },
+    {
+      "id": "st0005",
+      "vertical": "stay",
+      "category": "hotel",
+      "name": "山のホテル大瀧",
+      "pref": "nagano",
+      "cityName": "野沢温泉村",
+      "address": "長野県下高井郡野沢温泉村豊郷7821-1",
+      "lat": 36.920916,
+      "lng": 138.452121,
+      "phone": "0269-85-4000",
+      "url": "https://hotelohtaki.com/",
+      "website": "https://hotelohtaki.com/",
+      "mapUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "image": "/_portal/vshops/lodging-8/s1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-8/s1.jpg",
+        "/_portal/vshops/lodging-8/s2.jpg",
+        "/_portal/vshops/lodging-8/s3.jpg",
+        "/_portal/vshops/lodging-8/g1.jpg",
+        "/_portal/vshops/lodging-8/g2.jpg",
+        "/_portal/vshops/lodging-8/g3.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-8/s1.jpg",
+          "what": "木のバルコニーとレストランの看板が見える、ホテルの正面外観",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s2.jpg",
+          "what": "ツインベッドと座卓のある客室",
+          "width": 1200,
+          "height": 674
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s3.jpg",
+          "what": "ベッドの手前に黒いソファのある客室",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g1.jpg",
+          "what": "刺身や肉料理、小鉢が並ぶ夕食の膳",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g2.jpg",
+          "what": "大きな窓と木の椅子が並ぶ、レストランの店内",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g3.jpg",
+          "what": "トーストやベーコンエッグ、フルーツのある朝食",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "長野県野沢温泉村、長坂ゴンドラ乗り場の目の前にある小さなホテル。洋室・和室・和洋室と、宿泊以外でも使えるレストランがある",
+        "lede": "長野県下高井郡野沢温泉村豊郷にある「山のホテル大瀧」です。野沢温泉スキー場の長坂ゴンドラリフト乗り場の目の前に建つ、料理を出したくて始めたという小さなホテルで、客室は洋室・和室・和洋室の3タイプがあります。公式サイトには喫茶・レストランの案内があり、宿泊しない人も利用できます。",
+        "sections": [
+          {
+            "heading": "場所と予約",
+            "body": "住所は〒389-2502 長野県下高井郡野沢温泉村豊郷7821-1、電話は0269-85-4000です。公式サイトでは、野沢温泉スキー場の長坂ゴンドラリフト乗り場の目の前と案内されています。予約は、公式サイトの予約ページ(日本語・English)から行います。電話番号は、お問い合わせ先として載っています。宿泊プランは、朝・夕の2食付き、朝食付き、素泊りの3種類です。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、洋室・和室・和洋室の各タイプです。VIPルームとSPルームは2022年に、スペシャル和室は2024年にリニューアルされていて、この3部屋にはシャワーとトイレが付いています。2022年にリニューアルされたファミリー向けのVIPルームもあります。グループで使えるミーティングルームが設けられ、各部屋には炭俵が置かれています。お風呂は「ミネラルお風呂」と案内されています。"
+          },
+          {
+            "heading": "食事と喫茶・レストラン",
+            "body": "料理を出したくて始めた小さなホテルで、手作りで無添加の食品にこだわった料理を出すと案内されています。オーナーが地元の山や清流で採った山菜や川魚も料理の素材になり、グリーンシーズンには山菜やイワナを予約できます。喫茶・レストランは、喫茶、和食、洋食、中華を揃えていて、宿泊以外の人も利用できます。レストランには靴を脱いで上がるお座敷があり、時間外の予約や、1日1組のお食事会も受け付けています。メニューには、オムライス、カレーラーメン、道祖神丼、カツ重定食、ハンバーグステーキセット、手作りミックスピザなどがあります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "オムライス"
+          },
+          {
+            "name": "カレーラーメン"
+          },
+          {
+            "name": "道祖神丼"
+          },
+          {
+            "name": "カツ重定食"
+          },
+          {
+            "name": "ラーメンミニカレー"
+          },
+          {
+            "name": "ハンバーグステーキセット"
+          },
+          {
+            "name": "ステーキライスセット"
+          },
+          {
+            "name": "手作りミックスピザ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://hotelohtaki.com/"
+          },
+          {
+            "label": "公式サイト(おもてなし)",
+            "url": "https://hotelohtaki.com/service/"
+          },
+          {
+            "label": "公式サイト(ご宿泊)",
+            "url": "https://hotelohtaki.com/stay/"
+          },
+          {
+            "label": "公式サイト(喫茶・レストラン)",
+            "url": "https://hotelohtaki.com/restaurant/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://hotelohtaki.com/access/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3955455056126352421"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "VIPルーム",
+          "SPルーム",
+          "スペシャル和室",
+          "ファミリー向けVIPルーム",
+          "和洋室",
+          "洋室"
+        ]
+      }
+    },
+    {
+      "id": "st0006",
+      "vertical": "stay",
+      "category": "glamping",
+      "name": "Wonderful Garden(ワンダフルガーデン柏)",
+      "pref": "chiba",
+      "cityName": "柏市",
+      "address": "千葉県柏市布施736",
+      "lat": 35.8907939,
+      "lng": 139.9922186,
+      "holidays": "火曜(変更になる場合あり)",
+      "phone": "070-4711-1550",
+      "url": "https://www.wonderfulgarden.jp/",
+      "website": "https://www.wonderfulgarden.jp/",
+      "mapUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "image": "/_portal/vshops/lodging-12/g1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-12/g1.jpg",
+        "/_portal/vshops/lodging-12/s1.jpg",
+        "/_portal/vshops/lodging-12/s2.jpg",
+        "/_portal/vshops/lodging-12/s3.jpg",
+        "/_portal/vshops/lodging-12/g2.jpg",
+        "/_portal/vshops/lodging-12/s4.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-12/g1.jpg",
+          "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s1.jpg",
+          "what": "森に隣接する芝地に張られたテントとタープ。手前に車が停まっている",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s2.jpg",
+          "what": "柵と門で区切られた、芝のフリーDogサイト",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s3.jpg",
+          "what": "RVサイトに停まるキャンピングカーとトレーラー",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/g2.jpg",
+          "what": "木立の前に置かれたハンモック",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s4.jpg",
+          "what": "男女の表示のある、板張りのトイレ棟",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "ペット同伴"
+      ],
+      "article": {
+        "headline": "千葉県柏市布施のオートキャンプ場・RVパーク。オートサイト、ドッグサイト、車中泊専用のRVサイトがある",
+        "lede": "千葉県柏市布施にある「Wonderful Garden(ワンダフルガーデン柏オートキャンプ場＆RV車中泊スポット)」です。公式サイトでは、大工が作ったオートキャンプ場と車中泊スポットと案内されていて、サイトは、オートサイト、プライベートドッグランのフリーDogサイト、車中泊専用のRVサイトがあります。柏インターから15分です。",
+        "sections": [
+          {
+            "heading": "場所と時間",
+            "body": "住所は〒277-0825 千葉県柏市布施736、電話は070-4711-1550で、電話の受付は8時30分から17時まで、定休日は火曜日です(定休日は変わる場合があり、カレンダーで確認します)。柏インターから15分、都心から約50分と案内されています。当日の予約は電話で受け付けています。チェックインとチェックアウトの時間は、オートサイトが12時から16時・翌10時、RVサイトが12時から18時・翌11時です。デイキャンプは11時から17時で、休前日(土曜日)は利用できません。23時から翌朝6時はクワイエットタイムです。"
+          },
+          {
+            "heading": "サイト",
+            "body": "RVサイト(RV1〜RV5)は車中泊専用で、テントは張れません。電源は15Aで、焚火ができ、サイドオーニングやテーブルセットを出して使えます。オートサイトは、電源なしの中サイト(T1〜6・約80㎡・定員4名)、電源ありの中サイト(T11・T12・約78㎡・定員4名)、約150㎡で定員6名の大サイト(T-7)、森に隣接して午前中は日陰になる木陰サイト(約78㎡・定員4名)があります。フリーDogサイトは、プライベートドッグランのサイトで、サイト内は柵を閉じればノーリードで過ごせます。大サイト(T-8・T-9・約150㎡・ペット2匹まで)と、芝生の特大サイト(T-10・約170㎡・ペット3匹まで)の2種類です。場内では、ペットはリードでつなぎます。"
+          },
+          {
+            "heading": "設備とレンタル",
+            "body": "トイレはウォシュレット付きで、男性用と女性用の個室が各2室あり、手洗いにはお湯が出ます。炊事場にはお湯と水の流し台が2か所あり、場内の水道は井戸水で、飲用にはできません。外水道が2か所あり、愛犬の足洗い場やキャンピングカーの水くみに使えます。シャワールームとドライヤーがあり、シャンプー類は持参するか、売店で買います。売店は8時30分から17時までで、薪などを販売しています。受付の共有スペースには、自由に使えるハンモックがあります。貸し出し品は、タープ、テーブル、チェア、BBQコンロ、焚火台、テント(大人4人ほどと2人ほどの2種類)で、焚き火シートと電源コードリールも借りられます。焚火は、焚火台と焚き火シートを使い、直火は禁止です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.wonderfulgarden.jp/"
+          },
+          {
+            "label": "公式サイト(サイト・設備)",
+            "url": "https://www.wonderfulgarden.jp/facility/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.wonderfulgarden.jp/access/"
+          },
+          {
+            "label": "公式サイト(ご利用上の注意)",
+            "url": "https://www.wonderfulgarden.jp/form/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1822476741946991543"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "RVサイト(RV1〜RV5)",
+          "オートサイト(中)",
+          "オートサイト(大)",
+          "木陰サイト",
+          "フリーDogサイト(大)",
+          "フリーDogサイト(特大)"
+        ]
+      }
+    },
+    {
+      "id": "st0007",
+      "vertical": "stay",
+      "category": "guesthouse",
+      "name": "Dog-cottage 西野納屋",
+      "pref": "chiba",
+      "cityName": "九十九里町",
+      "address": "千葉県山武郡九十九里町西野1850",
+      "lat": 35.5122376,
+      "lng": 140.4330164,
+      "phone": "090-3141-4027",
+      "url": "https://www.nishinonaya.com/",
+      "website": "https://www.nishinonaya.com/",
+      "mapUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "image": "/_portal/vshops/lodging-13/s1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-13/s1.jpg",
+        "/_portal/vshops/lodging-13/g1.jpg",
+        "/_portal/vshops/lodging-13/g2.jpg",
+        "/_portal/vshops/lodging-13/g3.jpg",
+        "/_portal/vshops/lodging-13/g4.jpg",
+        "/_portal/vshops/lodging-13/g5.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-13/s1.jpg",
+          "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g1.jpg",
+          "what": "夕暮れに明かりがともるコテージの外観と庭",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g2.jpg",
+          "what": "青い寝具の2台のベッドと木の梁のある寝室",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g3.jpg",
+          "what": "青い壁と木の梁、吹き抜けのあるコテージの居間",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g4.jpg",
+          "what": "照明を飾った木組みの東屋とテーブル席のある庭の夜景",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g5.jpg",
+          "what": "天井の低いロフトに並ぶ青い寝具のベッド",
+          "width": 800,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "ペット同伴",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "千葉県九十九里町、犬と一緒に泊まれる1日1組限定の一棟貸しコテージ。ベッドルームまで犬と過ごせる",
+        "lede": "千葉県山武郡九十九里町西野にある「Dog-cottage 西野納屋」です。九十九里浜から通りを一本挟んだ路地にある、1日1組限定の一棟貸しコテージで、庭はもちろん、部屋の中やベッドルームまで犬と一緒に過ごせます。食事の提供はなく、持ち込んだ食材で、キッチンでの調理や屋外でのバーベキューができます。",
+        "sections": [
+          {
+            "heading": "場所と利用のしかた",
+            "body": "住所は千葉県山武郡九十九里町西野1850、電話は090-3141-4027です。都心から車で1時間半の場所で、京葉道路・湾岸道路から千葉東金道路の東金ICを出て下道で約20分、または九十九里有料道路の九十九里ICから3分と案内されています。オフ会などの日帰り利用は、別途の相談になります。ふるさと納税の返礼品としても宿泊できます。"
+          },
+          {
+            "heading": "コテージと食事",
+            "body": "家族や友人と過ごすための、1日1組限定の一棟貸しコテージで、大人4名と犬4頭までが基本の人数で、5頭目以降は追加の取り扱いが別に案内されています。食事の提供はなく、食材を持ち込んで、キッチンでの調理や屋外でのバーベキューをします。夜8時以降のバーベキューは控えるよう案内されています。全室禁煙で、たばこはデッキで吸います。"
+          },
+          {
+            "heading": "犬と泊まるときの決まり",
+            "body": "室内は全室で犬と過ごせ、ベッドやソファーに上げる場合は、布団の上にマットやブランケットを敷きます。狂犬病などの予防接種を受けていない犬の同伴は、遠慮するよう求められています。発情中の犬やマーキングのくせがある犬は、マナーパンツやベルトを着けます。ペットシーツ、水飲み、タオル、ドライヤーは備えがあり、フードやおやつは持参します。犬だけを残しての外出は遠慮するよう求められています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.nishinonaya.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17216032074410806401"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "一棟貸しコテージ"
+        ]
+      }
+    },
+    {
+      "id": "st0008",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "滝の湯旅館",
+      "pref": "fukushima",
+      "cityName": "須賀川市",
+      "address": "福島県須賀川市滝赤土63",
+      "lat": 37.3127532,
+      "lng": 140.1893204,
+      "holidays": "毎週月曜(祝日の場合は開館し翌火曜が休館)、毎月第3月曜・火曜(連休)。祝日が重なる場合は変更あり",
+      "phone": "0248-67-2615",
+      "url": "http://takinoyuryokan.com/",
+      "website": "http://takinoyuryokan.com/",
+      "mapUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "image": "/_portal/vshops/lodging-14/g1.jpg",
+      "images": [
+        "/_portal/vshops/lodging-14/g1.jpg",
+        "/_portal/vshops/lodging-14/g2.jpg",
+        "/_portal/vshops/lodging-14/g3.jpg",
+        "/_portal/vshops/lodging-14/g4.jpg",
+        "/_portal/vshops/lodging-14/g5.jpg",
+        "/_portal/vshops/lodging-14/s1.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/lodging-14/g1.jpg",
+          "what": "川にかかる橋の向こうに建つ、赤い屋根の旅館の建物",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g2.jpg",
+          "what": "「滝の湯旅館」の木の看板と、積まれた薪のある玄関まわり",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g3.jpg",
+          "what": "黄色い布団の掛かった2台のベッドがある客室",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g4.jpg",
+          "what": "串焼きやサラダ、煮物、ごはん、味噌汁が並ぶ夕食",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g5.jpg",
+          "what": "ベーコンエッグとサラダの朝食",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/s1.jpg",
+          "what": "石を組んだ湯船のある浴室",
+          "width": 590,
+          "height": 600
+        }
+      ],
+      "tags": [
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "福島県須賀川市滝の山あいにある一軒宿。薪で沸かす湧水のお風呂と、川俣シャモ鍋などの料理を出す旅館",
+        "lede": "福島県須賀川市滝字赤土にある「滝の湯旅館」です。須賀川市西部の山あいにある一軒宿で、お風呂は自然に湧き出る水を薪で沸かす沸かし湯です。料理は、旅館で採れた野菜や山菜、川俣シャモ、馬肉、麓山高原豚を中心に、地産地消にこだわって出すと案内されています。",
+        "sections": [
+          {
+            "heading": "場所と時間",
+            "body": "住所は〒962-0211 福島県須賀川市滝字赤土63、電話は0248-67-2615です。休館日は毎週月曜日(祝日の場合は開館し、翌火曜日が休館)と、毎月第3月曜日・火曜日(連休)です。祝日が重なる場合は、振替などで変更になることがあります。チェックインは15時からで、日帰り入浴の人が利用するため、15時前のチェックインは控えるよう案内されています。東北自動車道の須賀川ICから国道118号線を長沼方面へ約15km進み、長沼歴史民俗資料館のある交差点を右折して約2km、滝集落からさらに約2kmの道順と案内されていて、屋根付きの駐車場があります。冬期は冬タイヤやチェーンの装着が案内されています。交通アクセスのページには、猪苗代湖が約30分、会津大内宿と会津若松市内が約50分、裏磐梯が約60分と載っています。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、1階の、お風呂に近く段差の少ない部屋と、4.5畳の和室が2間続く部屋、2階の、窓の外に滝を眺められる洋室のツインルームと、ロフト付きの洋室ツインの部屋があり、どれもエアコン、ウォシュレット、洗面が付いています。館内は全館禁煙で、客室に冷蔵庫はなく、フロントのショーケースの一部を貸し出します。お風呂は、旅館の水が自然に湧き出るもので、湧出量は毎分25.0リットル、無色透明・無味無臭です。公式サイトでは、温泉成分の基準には達していないと説明されていて、泉温が15.4℃のため、特注の薪の釜で沸かしています。ボディソープとリンスインシャンプーが常設され、宿泊客にはタオルとバスタオルが用意されます。食堂は、大食堂(24名)、いろり(4名)、小食堂(12名)があり、玄関には冬季限定で薪暖炉が置かれます。"
+          },
+          {
+            "heading": "料理",
+            "body": "旅館で採れた野菜や山菜、福島県川俣町の地鶏の川俣シャモ、馬肉、麓山高原豚がメインの料理で、メインの料理は「川俣シャモ鍋」と案内されています。10月から3月の冬期間(4月も気候による)は鍋料理で、川俣シャモ、麓山高原豚、馬肉から肉を選べます。茶碗蒸しには自家製の銀杏や椎茸、竹の子を使い、ごはんは栽培した米をガス釜で炊き、自家製の味噌を使った味噌汁と自家製のうめぼしが付きます。馬肉の料理や串焼きは追加で注文でき、館主が自ら獲ったジビエ料理も、季節によっては用意できない場合があるため、事前の問い合わせが必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "川俣シャモ鍋"
+          },
+          {
+            "name": "馬肉のすき焼き(桜鍋)"
+          },
+          {
+            "name": "馬肉のしゃぶしゃぶ"
+          },
+          {
+            "name": "馬肉のサイコロステーキ"
+          },
+          {
+            "name": "ジビエ料理"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://takinoyuryokan.com/"
+          },
+          {
+            "label": "公式サイト(料理)",
+            "url": "https://takinoyuryokan.com/cuisine.html"
+          },
+          {
+            "label": "公式サイト(館内施設)",
+            "url": "https://takinoyuryokan.com/facilities.html"
+          },
+          {
+            "label": "公式サイト(チェックインの案内)",
+            "url": "https://takinoyuryokan.com/price.html"
+          },
+          {
+            "label": "公式サイト(交通アクセス)",
+            "url": "https://takinoyuryokan.com/access.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14879500034659827393"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      },
+      "attributes": {
+        "roomTypes": [
+          "1階 段差の少ない部屋",
+          "1階 和室2間続きの部屋",
+          "2階 洋室ツインルーム",
+          "2階 ロフト付き洋室ツイン"
+        ]
+      }
+    }
+  ]
+}
