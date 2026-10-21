@@ -20,6 +20,7 @@
   .tp-hero-photo img { width: 100%; height: 100%; object-fit: cover; }
   .tp-hero-photo .pt-kb { transform-origin: 6% 88%; animation: tp-kb 26s ease-in-out infinite alternate; }
   @keyframes tp-kb { from { scale: 1; } to { scale: 1.06; } }
+  .tp-bun { position: absolute; left: calc(578 * var(--u)); top: 0; width: calc(194 * var(--u)); height: calc(48 * var(--u)); background: url("/_portal/petproto/decided/top/hero-bun.png") 0 0 / calc(194 * var(--u)) calc(50 * var(--u)) no-repeat; pointer-events: none; z-index: 1; }
   .tp-h1 { position: absolute; left: calc(56.8 * var(--u)); top: calc(86 * var(--u)); z-index: 2; margin: 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: calc(32 * var(--u)); line-height: calc(41.5 * var(--u)); letter-spacing: 0.005em; color: #25211d; }
   .tp-lead { position: absolute; left: calc(58.5 * var(--u)); top: calc(220.7 * var(--u)); z-index: 2; margin: 0; font-weight: 600; font-size: calc(11.8 * var(--u)); line-height: calc(19.4 * var(--u)); letter-spacing: 0.035em; color: #2b2724; white-space: nowrap; }
   .tp-search { position: absolute; left: calc(54 * var(--u)); top: calc(303.8 * var(--u)); width: calc(493.5 * var(--u)); height: calc(40.4 * var(--u)); z-index: 3; margin: 0; border-radius: 999px; background: #fff; box-shadow: 0 calc(2 * var(--u)) calc(12 * var(--u)) rgba(60, 45, 30, 0.1); }
@@ -30,13 +31,13 @@
   .tp-search-go { position: absolute; right: calc(5.2 * var(--u)); top: 50%; translate: 0 -50%; width: calc(33 * var(--u)); height: calc(33 * var(--u)); padding: 0; border: 0; border-radius: 50%; background: linear-gradient(180deg, #86725f, #7a6654); color: #fff; display: grid; place-items: center; cursor: pointer; }
   .tp-search-go svg { width: calc(11.5 * var(--u)); height: auto; stroke-width: 1.3; transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
   .tp-search-go:hover svg { transform: translateX(calc(2.5 * var(--u))); }
-  .tp-hand { position: absolute; left: calc(764 * var(--u)); top: calc(305 * var(--u)); z-index: 2; margin: 0; font-size: calc(10.6 * var(--u)); line-height: calc(17.5 * var(--u)); letter-spacing: 0.05em; color: #4a3a2e; rotate: -3.4deg; transform-origin: 0 50%; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6); white-space: nowrap; }
+  .tp-hand { position: absolute; left: calc(764 * var(--u)); top: calc(305 * var(--u)); z-index: 2; margin: 0; font-size: calc(10.6 * var(--u)); line-height: calc(17.5 * var(--u)); letter-spacing: 0.05em; color: #f8ecda; rotate: -3.4deg; transform-origin: 0 50%; text-shadow: 0 1px 4px rgba(40, 20, 0, 0.35); white-space: nowrap; }
   .tp-hand .pt-wl:nth-child(2) { margin-left: calc(7 * var(--u)); }
-  .tp-scroll { position: absolute; left: calc(884 * var(--u)); top: calc(347.5 * var(--u)); width: calc(40 * var(--u)); height: calc(33 * var(--u)); z-index: 2; text-align: center; font-family: var(--pt-ff-jp); font-weight: 500; font-size: calc(6.9 * var(--u)); line-height: calc(9 * var(--u)); letter-spacing: 0.14em; color: #4a3a2e; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6); }
-  .tp-scroll i { position: absolute; left: 50%; top: calc(11.5 * var(--u)); width: max(1px, calc(0.9 * var(--u))); height: calc(19 * var(--u)); margin-left: calc(-0.5 * var(--u)); background: rgba(74, 58, 46, 0.8); transform-origin: 50% 0; animation: tp-scroll 2.4s cubic-bezier(0.5, 0, 0.3, 1) infinite; }
+  .tp-scroll { position: absolute; left: calc(884 * var(--u)); top: calc(347.5 * var(--u)); width: calc(40 * var(--u)); height: calc(33 * var(--u)); z-index: 2; text-align: center; font-family: var(--pt-ff-jp); font-weight: 500; font-size: calc(6.9 * var(--u)); line-height: calc(9 * var(--u)); letter-spacing: 0.14em; color: #f6ead9; text-shadow: 0 1px 3px rgba(40, 20, 0, 0.35); }
+  .tp-scroll i { position: absolute; left: 50%; top: calc(11.5 * var(--u)); width: max(1px, calc(0.9 * var(--u))); height: calc(19 * var(--u)); margin-left: calc(-0.5 * var(--u)); background: rgba(255, 240, 220, 0.9); transform-origin: 50% 0; animation: tp-scroll 2.4s cubic-bezier(0.5, 0, 0.3, 1) infinite; }
   @keyframes tp-scroll { 0% { transform: scaleY(0); opacity: 1; } 55% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
 
-  /* 最初のページはヘッダーを透明にして、ヒーロー自身の白い帯(上 48)を見せる(フリー素材の hero には見本のお団子が無いので hero-bun は廃止) */
+  /* 最初のページはヘッダーを透明にして、ヒーロー自身の白い帯(上 48)とお団子の切り抜きを見せる(見本はお団子がヘッダーの上に出る) */
   .pt-shell[data-pt-page="top"] .pt-head:not(.is-scrolled) { background: transparent; }
   /* ---------- 節の見出し(英字 + 日本語 + 右に「すべて見る」) ---------- */
   .tp-sh { position: absolute; left: calc(45 * var(--u)); right: calc(47.6 * var(--u)); top: 0; gap: 0; align-items: baseline; }
@@ -167,7 +168,7 @@
   .tp-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 92% 50%; }
   .tp-hero-photo .pt-kb { transform-origin: 70% 60%; animation: tp-kb-m 26s ease-in-out infinite alternate; }
   @keyframes tp-kb-m { from { scale: 1; } to { scale: 1.08; } }
-  .tp-scroll { display: none; }
+  .tp-bun, .tp-scroll { display: none; }
   .tp-h1 { position: static; margin: 0; padding: 22px 20px 0; font-weight: 600; font-size: clamp(26px, 7.4vw, 40px); line-height: 1.45; letter-spacing: 0.02em; color: #25211d; }
   .tp-lead { position: static; margin: 0; padding: 14px 20px 0; font-weight: 600; font-size: clamp(13px, 3.5vw, 17px); line-height: 1.9; letter-spacing: 0.03em; color: #2b2724; white-space: normal; }
   .tp-lead br { display: none; }
@@ -178,7 +179,7 @@
   .tp-search:focus-within { box-shadow: 0 4px 16px rgba(60, 45, 30, 0.16), 0 0 0 2px rgba(134, 105, 78, 0.55); }
   .tp-search-go { position: absolute; right: 6px; top: 50%; translate: 0 -50%; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; background: linear-gradient(180deg, #86725f, #7a6654); color: #fff; display: grid; place-items: center; cursor: pointer; }
   .tp-search-go svg { width: 16px; height: auto; stroke-width: 1.3; }
-  .tp-hand { position: absolute; right: 14px; top: calc(var(--ph) - 62px); margin: 0; text-align: right; font-size: clamp(12.5px, 3.4vw, 17px); line-height: 1.55; letter-spacing: 0.04em; color: #4a3a2e; rotate: -3.4deg; transform-origin: 100% 50%; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6); }
+  .tp-hand { position: absolute; right: 14px; top: calc(var(--ph) - 62px); margin: 0; text-align: right; font-size: clamp(12.5px, 3.4vw, 17px); line-height: 1.55; letter-spacing: 0.04em; color: #f8ecda; rotate: -3.4deg; transform-origin: 100% 50%; text-shadow: 0 1px 4px rgba(40, 20, 0, 0.45); }
 
   .tp-sec { width: 100%; }
   .tp-flow .pt-more { font-family: var(--pt-ff-min); }
