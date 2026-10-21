@@ -1,0 +1,33 @@
+{
+  "key": "pet-22",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-22/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QA1kwHc959Oi1zKXXp9SjPA-L7VLiQkjoVC513M7JSV-I0AW26GoWeZDpdP91vsIeV5ws7BytR0pHqdA4EaypqY_bLGZI2I-h8XgpwSH7qagwk-jPZ4nvUZJbtOa3UPaeYRYng=s1200",
+      "pageUrl": "https://maps.google.com/?cid=270343687346285307",
+      "what": "京町家の店先の外観",
+      "width": 1200,
+      "height": 801,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-22/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rmww3pS97pMNuVfOnnZfZavsbVfV4fzMLRjhiww14Z1Gg0GX5_Atm2tBsNVzVZ3mw6XtZN3HS5uC5PrwgUB6YvxbpCNmoRYDdlEa9LxNYZnLesLPkTU0u7NJGqmk6w-LlKYb68jA1rRzYG=s1200",
+      "pageUrl": "https://maps.google.com/?cid=270343687346285307",
+      "what": "フリースペースで過ごす犬たち",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-22/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S6EklWUZX4LejFYGi5sG4M8f1AfPDUGizFf5LSnTaitiO46MorhF5VwUIvV3guApLqomh9CVOFsl7JtEILO33N8L7D4iYjl8YVBdfkgnl3mOKehpSeJbbXLZk4uRAEtT5ZhCo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=270343687346285307",
+      "what": "坪庭に面した室内",
+      "width": 1200,
+      "height": 801,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

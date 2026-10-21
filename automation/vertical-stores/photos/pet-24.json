@@ -1,0 +1,24 @@
+{
+  "key": "pet-24",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-24/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QppOt_xQ1wETILrGlzOevEVHm_hQjpjLCUiLW2p9z9LGOgmtIa4Q8s-2N-MvG_Z-AgH8rm-XzcDdkoR9vxkE_iHMuBsnLw9Yf9wf--EKv-J5QUkUbl5YTuLx5Ncflyh2gr2Fpd=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10146221632134921928",
+      "what": "「Pet Sitter KAWAI」の看板が付いた建物の外観",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-24/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeM0RuIdCzl3-3xEhSfItkJ7hfZxj4XjuZJ8_o0-u_E6xEWvjI1MNai861AvVNBqugRq7o523k0R8F3JucWj7Js0rJn-Px2u6v10Uawpxd6XWEuxyORNTn0qpJYxEo5w6Avs5s=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10146221632134921928",
+      "what": "犬とうさぎ",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

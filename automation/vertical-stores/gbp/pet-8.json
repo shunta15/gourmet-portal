@@ -1,0 +1,54 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 8,
+  "sheet": {
+    "name": "333 DogCare",
+    "address": "埼玉県坂戸市西坂戸３丁目１２−１",
+    "url": "https://share.google/yedvL8d6RnLgONPbm",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=415e83c541284ed9&sxsrf=AE3TifO3BPIHhTODwTJrYiTtCujWWkNoqQ:1760597183898&kgmid=/g/11h03dsxmj&q=333+Dog-Care&shndl=30&shem=dlvs3,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=c1f50998b61863f9&utm_source=dlvs3,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11h03dsxmj",
+  "queries": [
+    "333 Dog-Care"
+  ],
+  "candidates": [
+    {
+      "name": "333 Dog-Care （ｻﾝｻﾝｻﾝﾄﾞｯｸﾞｹｱ）",
+      "address": "埼玉県坂戸市西坂戸３丁目２−１２",
+      "url": "https://www.google.com/maps/place/333+Dog-Care+%EF%BC%88%EF%BD%BB%EF%BE%9D%EF%BD%BB%EF%BE%9D%EF%BD%BB%EF%BE%9D%EF%BE%84%EF%BE%9E%EF%BD%AF%EF%BD%B8%EF%BE%9E%EF%BD%B9%EF%BD%B1%EF%BC%89/@35.9311752,139.3309508,17z/data=!3m1!4b1!4m6!3m5!1s0x601929b1b612e7b3:0xa8ec15c83ed7358f!8m2!3d35.9311752!4d139.3309508!16s%2Fg%2F11h03dsxmj",
+      "addressLevel": "none",
+      "addressDetail": "番地がちがう（シート:3-12-1 / マップ:3-2-12）",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/333+Dog-Care+%EF%BC%88%EF%BD%BB%EF%BE%9D%EF%BD%BB%EF%BE%9D%EF%BD%BB%EF%BE%9D%EF%BE%84%EF%BE%9E%EF%BD%AF%EF%BD%B8%EF%BE%9E%EF%BD%B9%EF%BD%B1%EF%BC%89/@35.9311752,139.3309508,17z/data=!3m1!4b1!4m6!3m5!1s0x601929b1b612e7b3:0xa8ec15c83ed7358f!8m2!3d35.9311752!4d139.3309508!16s%2Fg%2F11h03dsxmj?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "番地がちがう（シート:3-12-1 / マップ:3-2-12）（シート:埼玉県坂戸市西坂戸３丁目１２−１ / マップ:埼玉県坂戸市西坂戸３丁目２−１２）／店名: シート「333 DogCare」マップ「333 Dog-Care （ｻﾝｻﾝｻﾝﾄﾞｯｸﾞｹｱ）」(exact)",
+  "addressCompare": {
+    "sheet": "埼玉県坂戸市西坂戸３丁目１２−１",
+    "place": "埼玉県坂戸市西坂戸３丁目２−１２",
+    "sheetNorm": "埼玉県坂戸市西坂戸3-12-1",
+    "placeNorm": "埼玉県坂戸市西坂戸3-2-12",
+    "level": "none",
+    "detail": "番地がちがう（シート:3-12-1 / マップ:3-2-12）"
+  },
+  "nameRelation": "exact",
+  "place": null,
+  "landedPlace": {
+    "name": "333 Dog-Care （ｻﾝｻﾝｻﾝﾄﾞｯｸﾞｹｱ）",
+    "address": "埼玉県坂戸市西坂戸３丁目２−１２",
+    "category": "トリミングサロン",
+    "lat": 35.9311752,
+    "lng": 139.3309508,
+    "gbpUrl": "https://maps.google.com/?cid=12172127842667541903"
+  },
+  "fetchedAt": "2026-10-21T14:49:05.822Z",
+  "seconds": 7
+}

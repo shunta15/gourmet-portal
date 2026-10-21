@@ -1,7 +1,7 @@
 # lib/places/generated
 
 `beauty.json`・`bodycare.json`・`pet.json` は **自動生成**です。手で編集しないでください。
-（`pet.json` と `features-pet.json` は、ペットの実在の店・特集が入るまでは空配列。読む側は `lib/places/newVerticals.ts` / `lib/places/features.ts`。店 0 件でも /pet/search・/pet/shop は壊れない）
+（`pet.json` はペットの実在の店 17 店（pe0001〜pe0017。材料は `automation/vertical-stores/pet-resolve.json` と gbp / articles / photos の `pet-*.json`）。`features-pet.json` は特集記事がまだ無いので空配列。読む側は `lib/places/newVerticals.ts` / `lib/places/features.ts`。店 0 件でも /pet/search・/pet/shop は壊れない）
 
 - 作る道具: `automation/vertical-stores/build-places.mjs`
   - 材料: `automation/vertical-stores/gbp/*.json`（Google マップで特定した店。`verdict` が「一致」だけ）と `automation/vertical-stores/articles/<キー>.json`（紹介記事）
@@ -9,7 +9,8 @@
 - 店 ID の台帳: `automation/vertical-stores/ids.json`（追記だけ。一度払い出した ID は変えない）
 - 除外した店と理由: `automation/vertical-stores/unmapped.json`
 - 直したいとき: 材料（gbp / articles）か build-places.mjs を直して、作り直す
-- 読む側: `lib/places/newVerticals.ts`（`getPlaces('beauty' | 'bodycare')` から使う）
+- 読む側: `lib/places/newVerticals.ts`（`getPlaces('beauty' | 'bodycare' | 'pet')` から使う）
+- ペットだけの材料: `pet-resolve.json`（種類と店 ID の判定）・紹介記事の `placeOverride`（公式サイトの値で店データを差し替える店。確認用で、サイトのデータには入らない）
 
 ## 特集記事（features-beauty.json / features-bodycare.json）
 

@@ -1,0 +1,24 @@
+{
+  "key": "pet-11",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-11/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQzRGODPkMFxkMbs9ifuXNrQd__cCeKUMYEMYH8E29pgajmRL8aEFyeuYwTQP2SGCFsFUdAE1TyNr1AmVMUQQBeNUrJN2wBzhckVpwWypTDk3QU_dv9i2UGLq0mUHK9jZlV1DB=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4415303687862918409",
+      "what": "ASH BLONDE poodleの看板が見える店頭",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-11/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SK01m0CVAKUjaHxp-zWqoUfmIhe-x4Lee3p7p89Ix1DVtxpHYvvZitelhv9iqclUMABWSABy2co_MoOQt25QvFnD-Gsfoya__BdiqBqOQYIaHdr14A__KNd3c5UJ_aWt79-u0C=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4415303687862918409",
+      "what": "写真パネルが並ぶ店内の事務スペース",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真 [監査 2026-10-22] g2.jpg を外した: 棚の前に置かれた子犬の価格カード(53万円台の金額の数字が読める)が写っており、料金を載せない決まりに合わないため"
+}

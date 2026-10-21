@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 9,
+  "sheet": {
+    "name": "オズキャット",
+    "address": "〒819-0012 福岡県福岡市西区能古１１８２−１",
+    "url": "https://share.google/ReTLeo3tYiviOqt5z",
+    "type": "ペット",
+    "d1": "ペットショップ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?client=safari&sca_esv=4e5aa3d412f255e2&rls=en&sxsrf=AE3TifMpOwRNFqC6rlm0wyNui2mvQkMmXg:1760924040754&kgmid=/g/11rjw88wzp&q=%E7%8C%AB%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC+%E3%82%AA%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88+/+%E5%AD%90%E7%8C%AB%E8%B2%A9%E5%A3%B2&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=cf5c5ca61fa732a4&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rjw88wzp",
+  "queries": [
+    "猫ブリーダー オズキャット / 子猫販売"
+  ],
+  "candidates": [
+    {
+      "name": "猫ブリーダー オズキャット / 子猫販売",
+      "address": "福岡県福岡市西区能古１１８２−１",
+      "url": "https://www.google.com/maps/place/%E7%8C%AB%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC+%E3%82%AA%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88+%2F+%E5%AD%90%E7%8C%AB%E8%B2%A9%E5%A3%B2/@33.6102158,130.3022889,17z/data=!3m1!4b1!4m6!3m5!1s0x3541ed1568c736fb:0x6d55c09bf77c5cf9!8m2!3d33.6102158!4d130.3022889!16s%2Fg%2F11rjw88wzp",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%8C%AB%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC+%E3%82%AA%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88+%2F+%E5%AD%90%E7%8C%AB%E8%B2%A9%E5%A3%B2/@33.6102158,130.3022889,17z/data=!3m1!4b1!4m6!3m5!1s0x3541ed1568c736fb:0x6d55c09bf77c5cf9!8m2!3d33.6102158!4d130.3022889!16s%2Fg%2F11rjw88wzp?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "〒819-0012 福岡県福岡市西区能古１１８２−１",
+    "place": "福岡県福岡市西区能古１１８２−１",
+    "sheetNorm": "福岡県福岡市西区能古1182-1",
+    "placeNorm": "福岡県福岡市西区能古1182-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "猫ブリーダー オズキャット / 子猫販売",
+    "address": "福岡県福岡市西区能古１１８２−１",
+    "category": "猫ブリーダー",
+    "lat": 33.6102158,
+    "lng": 130.3022889,
+    "gbpUrl": "https://maps.google.com/?cid=7878414899259137273",
+    "phone": "090-6421-5291",
+    "website": "https://ozcat3.com/",
+    "hours": {
+      "月": "11:00–18:00",
+      "火": "11:00–18:00",
+      "水": "11:00–18:00",
+      "木": "11:00–18:00",
+      "金": "11:00–18:00",
+      "土": "11:00–18:00",
+      "日": "11:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:49:16.136Z",
+  "seconds": 6.3
+}

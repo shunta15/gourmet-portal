@@ -1,0 +1,33 @@
+{
+  "key": "pet-17",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-17/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7w6XpZSDVwYbNfe4atqGeaKJJmRzDl7EvCl1AqHNvgm9YTY6EXnqhyEbjz1OS0AyCNcNlBmNTlqTmv4VNb-xavBXKLtQ9NnLvj3SVwbb1cWsADB0Wr6nWcJQBZz0Wyrh2oRyJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14803010105084982366",
+      "what": "階段と看板のある建物の外観",
+      "width": 962,
+      "height": 653,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-17/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TDW-HFspf3ZPM5R438pWWhwQLztv1Jri8LfD8pLf-zbYLyK5MMUNHJKO-0aw7sFgyiqW4m8qIT55zr4XJWF5AynCvX4y-XbaUKvxIM6jfHoDP817Ux50hG-MDvjxOOxZOLoisp0MnjkJon=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14803010105084982366",
+      "what": "遊具とサークルのある室内の犬",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-17/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNL3ou33uywfa638bMnlNmJL-rkHH0rm6YwoOaQBb8nzKaMj109AZEfO-9x0_pkp2RnYjOiejLKIpZxJwl42us9LTR69bvMMdFKeKKVTTG5iCW9KPsPRZe5GTgVIuFyGzB6pU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14803010105084982366",
+      "what": "木の床の広い室内",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

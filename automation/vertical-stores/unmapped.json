@@ -8,6 +8,102 @@
       "sheetName": "niini CELLULAM",
       "address": "東京都三鷹市上連雀２丁目３−１８ エブロス 101",
       "reason": "Google マップの業種表示「エステティック サロン」が基準の語（整体／整骨・接骨／鍼・灸・はり／マッサージ／リラクゼーション／ストレッチ）に当たらない（種類の上書き「esthetic」は bodycare の種類の slug（seitai・sekkotsu・shinkyu・massage・relaxation・stretch）に無いので無効）"
+    },
+    {
+      "key": "pet-2",
+      "vertical": "pet",
+      "name": "ミント",
+      "sheetName": "ミント",
+      "address": "岐阜県美濃加茂市太田町４３６７",
+      "reason": "Googleマップに公式サイトの登録なし(自前なし)"
+    },
+    {
+      "key": "pet-7",
+      "vertical": "pet",
+      "name": "ネザーランドドワーフ専門店うさんぽ＆うさカフェ",
+      "sheetName": "ネザーランドドワーフ専門店うさんぽ&うさカフェ",
+      "address": "福井県福井市和田東２丁目２２２３ うさんぽ&うさカフェ",
+      "reason": "うさぎカフェ併設のネザーランドドワーフ専門店(うさぎ販売・ホテル・グルーミングもあり)。シートは動物カフェだがドッグカフェではなく、マップはペットショップ。pet.ts の種類(犬のカフェ限定)に確実に当たると言えず保留。案: pet-shop。要オーナー判断"
+    },
+    {
+      "key": "pet-10",
+      "vertical": "pet",
+      "name": "Wanvoice",
+      "sheetName": "Wanvoice",
+      "address": "岐阜県加茂郡八百津町八百津３７０１−１",
+      "reason": "ドッグトレーニング(しつけ)のみで施設なし。シートはペット訓練所で pet.ts に当たる種類なし"
+    },
+    {
+      "key": "pet-15",
+      "vertical": "pet",
+      "name": "プラムケンネル",
+      "sheetName": "プラムケンネル",
+      "address": "兵庫県神戸市西区神出町南５７４ 266",
+      "reason": "シートはペット訓練所だが、公式サイトは犬のブリーダー(子犬販売)。シートの種類(訓練所)は pet.ts に当たらず、サイト内容(ブリーダー)なら pet-shop の可能性あり。食い違いのため保留。要オーナー判断"
+    },
+    {
+      "key": "pet-18",
+      "vertical": "pet",
+      "name": "LaughingDogs",
+      "sheetName": "LaughingDogs",
+      "address": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+      "reason": "公式サイト(店舗ページ)に「2026.12.31にて閉店、境川店統合」の告知。閉業予定の店は載せない。統合先は pet-17"
+    },
+    {
+      "key": "pet-20",
+      "vertical": "pet",
+      "name": "Dog Salon Meira",
+      "sheetName": "Dog Salon Meira",
+      "address": "愛知県一宮市島村江向８３−１",
+      "reason": "マップ登録のサイトが Instagram のみ(自前なし)"
+    },
+    {
+      "key": "pet-21",
+      "vertical": "pet",
+      "name": "SHELLFISH dogservice",
+      "sheetName": "SHELLFISH dogservice",
+      "address": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+      "reason": "ドッグトレーニング(しつけ教室)が主でシートはペット訓練所。ペットホテルも提供するが主ではなく、pet.ts に確実に当たる種類なし。要オーナー判断(案: pet-hotel)"
+    },
+    {
+      "key": "pet-23",
+      "vertical": "pet",
+      "name": "オオトカゲ生体展示館MonitorParkNeo",
+      "sheetName": "オオトカゲ生体展示館MonitorParkNeo",
+      "address": "神奈川県相模原市南区麻溝台７丁目１４−１ グランディールS 1階",
+      "reason": "公式サイトで「生体の販売は行っておりません」。入場料のある展示館(予約制)でペットショップではない。シートはペットショップだが実態が合わず pet.ts に当たる種類なし"
+    },
+    {
+      "key": "pet-27",
+      "vertical": "pet",
+      "name": "ドッグヘアーサロン to do",
+      "sheetName": "ドッグヘアーサロン to do",
+      "address": "長野県上田市中之条３２３−８",
+      "reason": "マップ登録のサイトは予約サービス(coubic → STORES の予約ページ。確認画面が出るため中身は見ていない)。自前なし"
+    },
+    {
+      "key": "pet-28",
+      "vertical": "pet",
+      "name": "古民家ドッグカフェおかげさんで",
+      "sheetName": "古民家ドッグカフェおかげさんで",
+      "address": "京都府南丹市日吉町四ツ谷西畑２０",
+      "reason": "Googleマップに公式サイトの登録なし(自前なし)"
+    },
+    {
+      "key": "pet-29",
+      "vertical": "pet",
+      "name": "猫・夢空間 気ままなみーこ",
+      "sheetName": "猫・夢空間 気ままなみーこ",
+      "address": "和歌山県和歌山市湊１丁目４−２６",
+      "reason": "猫カフェ(猫・うさぎ・ハリネズミ)。pet.ts のカフェはドッグカフェのみで当たる種類なし(猫ホテル・猫美容もあるが主は猫カフェ)"
+    },
+    {
+      "key": "pet-30",
+      "vertical": "pet",
+      "name": "ドッグスキャンセラピー ペロボニート",
+      "sheetName": "ドッグスキャンセラピー ペロボニート",
+      "address": "東京都渋谷区富ケ谷１丁目５０−１０",
+      "reason": "公式サイトは犬の波動セラピーサロンで、飲食・カフェの記載なし(マップ業種だけがドッグカフェ)。動物カフェに当たらず、健康効果をうたう内容のため載せない"
     }
   ]
 }

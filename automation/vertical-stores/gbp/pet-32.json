@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 32,
+  "sheet": {
+    "name": "CROWNDOG",
+    "address": "東京都足立区小台２丁目１０−１８",
+    "url": "https://share.google/SiZOWdgle7OJtgTgV",
+    "type": "ペット",
+    "d1": "ペットホテル",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e87159d74800ab24&sxsrf=ANbL-n4Nlp2xd1db_RYXdooiTJ4JOH8QQQ:1769567586267&kgmid=/g/11ryh1chsf&q=CROWNDOG&shem=bdsle,epsd1,ptotple,shrtsdl&shndl=30&source=sh/x/loc/uni/m1/1&kgs=b02f0fa40a1815aa&utm_source=bdsle,epsd1,ptotple,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11ryh1chsf",
+  "queries": [
+    "CROWNDOG"
+  ],
+  "candidates": [
+    {
+      "name": "CROWNDOG",
+      "address": "東京都足立区小台２丁目１０−１８",
+      "url": "https://www.google.com/maps/place/CROWNDOG/@35.7562766,139.7602443,17z/data=!3m1!4b1!4m6!3m5!1s0x60188db0c950adeb:0x394034a873dad6f8!8m2!3d35.7562766!4d139.7602443!16s%2Fg%2F11ryh1chsf",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/CROWNDOG/@35.7562766,139.7602443,17z/data=!3m1!4b1!4m6!3m5!1s0x60188db0c950adeb:0x394034a873dad6f8!8m2!3d35.7562766!4d139.7602443!16s%2Fg%2F11ryh1chsf?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都足立区小台２丁目１０−１８",
+    "place": "東京都足立区小台２丁目１０−１８",
+    "sheetNorm": "東京都足立区小台2-10-18",
+    "placeNorm": "東京都足立区小台2-10-18",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "CROWNDOG",
+    "address": "東京都足立区小台２丁目１０−１８",
+    "category": "ペット ホテル業",
+    "lat": 35.7562766,
+    "lng": 139.7602443,
+    "gbpUrl": "https://maps.google.com/?cid=4125355156774246136",
+    "phone": "03-3911-9271",
+    "website": "https://crown-dog.com/",
+    "hours": {
+      "月": "08:00–20:00",
+      "火": "08:00–20:00",
+      "水": "08:00–20:00",
+      "木": "08:00–20:00",
+      "金": "08:00–20:00",
+      "土": "08:00–20:00",
+      "日": "08:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:53:19.352Z",
+  "seconds": 5.8
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 2,
+  "sheet": {
+    "name": "ミント",
+    "address": "〒505-0041 岐阜県美濃加茂市太田町４３６７",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=2f32eac133bcd00b&hl=ja&sxsrf=AE3TifNJMQGh-WVmLqsB7antNQ6C1176Fw:1758168392241&kgmid=/g/1thxk_23&q=%E3%83%9F%E3%83%B3%E3%83%88&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=87cd03f7a62e81e9&utm_source=lcuae,lsptbl1,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1thxk_23",
+  "queries": [
+    "ミント 岐阜県美濃加茂市太田町４３６７"
+  ],
+  "candidates": [
+    {
+      "name": "ミント",
+      "address": "岐阜県美濃加茂市太田町４３６７",
+      "url": "https://www.google.com/maps/place/%E3%83%9F%E3%83%B3%E3%83%88/@35.4402001,137.0195869,17z/data=!3m1!4b1!4m6!3m5!1s0x600310ff8bcb2e13:0x5ff9e7084f71f57a!8m2!3d35.4402001!4d137.0195869!16s%2Fg%2F1thxk_23",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%9F%E3%83%B3%E3%83%88/@35.4402001,137.0195869,17z/data=!3m1!4b1!4m6!3m5!1s0x600310ff8bcb2e13:0x5ff9e7084f71f57a!8m2!3d35.4402001!4d137.0195869!16s%2Fg%2F1thxk_23?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒505-0041 岐阜県美濃加茂市太田町４３６７",
+    "place": "岐阜県美濃加茂市太田町４３６７",
+    "sheetNorm": "岐阜県美濃加茂市太田町4367",
+    "placeNorm": "岐阜県美濃加茂市太田町4367",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ミント",
+    "address": "岐阜県美濃加茂市太田町４３６７",
+    "category": "ペットショップ",
+    "lat": 35.4402001,
+    "lng": 137.0195869,
+    "gbpUrl": "https://maps.google.com/?cid=6915812725682730362",
+    "phone": "090-2180-5496",
+    "website": null,
+    "hours": {
+      "月": "09:30–15:00",
+      "火": "09:30–15:00",
+      "水": "09:30–15:00",
+      "木": "09:30–15:00",
+      "金": "09:30–15:00",
+      "土": "09:30–15:00",
+      "日": "09:30–15:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:48:10.402Z",
+  "seconds": 5.9
+}

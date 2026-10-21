@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 21,
+  "sheet": {
+    "name": "SHELLFISH dogservice",
+    "address": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=753d27767aefc527&hl=ja&kgmid=/g/11c2q89zm8&q=SHELLFISH+dogservice&shndl=30&shem=bdsle,damc,lcuae,ptotplc,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=21b2d704fd6ddcb1&utm_source=bdsle,damc,lcuae,ptotplc,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "ペット",
+    "d1": "ペット訓練所",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11c2q89zm8",
+  "queries": [
+    "SHELLFISH dogservice 神奈川県鎌倉市七里ガ浜東２丁目２３−８"
+  ],
+  "candidates": [
+    {
+      "name": "SHELLFISH dogservice",
+      "address": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+      "url": "https://www.google.com/maps/place/SHELLFISH+dogservice/@35.3088102,139.5131915,17z/data=!3m1!4b1!4m6!3m5!1s0x60184f69fd0baaab:0x197d66799df3905b!8m2!3d35.3088102!4d139.5131915!16s%2Fg%2F11c2q89zm8",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/SHELLFISH+dogservice/@35.3088102,139.5131915,17z/data=!3m1!4b1!4m6!3m5!1s0x60184f69fd0baaab:0x197d66799df3905b!8m2!3d35.3088102!4d139.5131915!16s%2Fg%2F11c2q89zm8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+    "place": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+    "sheetNorm": "神奈川県鎌倉市七里ガ浜東2-23-8",
+    "placeNorm": "神奈川県鎌倉市七里ガ浜東2-23-8",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "SHELLFISH dogservice",
+    "address": "神奈川県鎌倉市七里ガ浜東２丁目２３−８",
+    "category": "ペット トレーナー",
+    "lat": 35.3088102,
+    "lng": 139.5131915,
+    "gbpUrl": "https://maps.google.com/?cid=1836736895564091483",
+    "phone": null,
+    "website": "http://www.shellfish.jp/",
+    "hours": {
+      "月": "10:30–18:00",
+      "火": "10:30–18:00",
+      "水": "10:30–18:00",
+      "木": "10:30–18:00",
+      "金": "10:30–18:00",
+      "土": "10:30–18:00",
+      "日": "10:30–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "新しく事始めましょう\n2026/09/26"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:51:21.731Z",
+  "seconds": 8.7
+}

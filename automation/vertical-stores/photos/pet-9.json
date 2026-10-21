@@ -1,0 +1,33 @@
+{
+  "key": "pet-9",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-9/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QfyPfZOSwyKGr_xrRXu7CS_QJOsD5YPthAf2mjE_tticjE4sjOryJDX4eGDrNUPCbpMgYRo4ABxJwLfJl90BuD6qS7O3OYKUsV0KRfasFVC6kOIKp8c21Dki4T7MSHgr_3hzo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7878414899259137273",
+      "what": "青い板張りの猫舎の外観と庭",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-9/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWu3nMrLWlphFfFdT3_xRmreJapVfjwh7rVUBV26fuqVA-kA3IMKKZ5OQfH9yXMbN3s5VJRy6qMIwz0tAZTc0Ou3gjepumtdIyadlYiL10UJ2EFIUDO71qVNZCsktsrOxNGYAZEA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7878414899259137273",
+      "what": "木の棚やキャットタワーのある飼育室",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-9/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TT-F5v7uQ0R9OQN5mVZaRetuu6s1bbF5x2QduFCNQkq1FpeKfIHJzYFqnKHemRMTr5mg7iFGwohINbwudHU0G1-5Iab0IbNHTNNec08tHu2Wqn-GmPNygmEBr_N8CRcXiUh036=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7878414899259137273",
+      "what": "木のデッキとパラソル、OZ CATの看板",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

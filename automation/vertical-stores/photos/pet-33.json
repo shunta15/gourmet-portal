@@ -1,0 +1,24 @@
+{
+  "key": "pet-33",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-33/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RjTBBhxH0N6gkDpM0jTt-o8cjef1bSMPNTjn9ALhOuIvicfIo-WmyfoW4ufTccwQWv4Sp5wf2suoqZy5sAncmRCPzGRUGjG662nuM2FYTmmLQzcVMhTlptJo7GzK1Z9DOGl6GU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11360375277361448352",
+      "what": "院内の受付まわり",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-33/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5boJVfDeotHK_yksspZzAfI3-6MVkzzM0EWVt4bRyVHMFMjQ5-m1TY6aGgkhKwhpaTwJdLopuCnMViJ8biYTHnbJ7Z7yMQTkcHW1OgN5IoyR8ouyNtuad0AokJ986wMR-nYlP=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11360375277361448352",
+      "what": "台の上の猫",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

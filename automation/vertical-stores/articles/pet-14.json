@@ -1,0 +1,257 @@
+{
+  "key": "pet-14",
+  "headline": "大阪市東成区中道の犬の保育園。JR玉造駅から徒歩約3分、平日10時から19時",
+  "lede": "大阪府大阪市東成区中道にある「犬の保育園 Pee-Ka-Boo 玉造店」です。通園保育(犬の保育園)のほか、一時預かりやお泊まり、しつけのレッスンも行っています。JR玉造駅から徒歩約3分で、駐車スペースがあります。玉造店は土日祝が休業です。",
+  "sections": [
+    {
+      "heading": "場所と営業日",
+      "body": "ペピイ・ハッピープレイスTAMATSUKURIの1階にあり、JR玉造駅から徒歩約3分、地下鉄長堀鶴見緑地線の玉造駅から約5分と案内されています。営業時間は10時から19時で、朝8時からのチェックインがオプションで選べます。玉造店は土日祝が休業です。駐車スペースがあり、満車のときは近隣のコインパーキングを使います。大阪市内の送迎エリアなら、送迎バスも利用できます(料金は公式サイトで案内されています)。"
+    },
+    {
+      "heading": "通園保育",
+      "body": "通常の保育時間は、平日(月曜から金曜)の朝10時から夕方5時までです。1日は、登園、レッスンとプレイタイム、ランチ、お昼寝、お散歩、グルーミング、お迎えの順に進み、その日の様子は保育ノートで渡されます。ハウストレーニングや、おすわり・ふせ・おいで・ついてなどの基本動作、人や犬、環境に慣れる社会化を学び、レッスンは複数の犬と一緒に行うのが中心です。入園前には、予約制の見学とカウンセリング、体験保育があります。最終のワクチン接種が済んでから入園できます。"
+    },
+    {
+      "heading": "一時預かりとお泊まり",
+      "body": "3時間までの一時預かりから、長期のお泊まりまで利用できます。預かりには、1年以内の混合ワクチン接種証明書(5種以上)、1年以内の狂犬病予防注射済証、飼い主の本人確認証のコピーが必要です。原則として15kgを超える犬と、ヒート中の犬は預かれません。夜間はスタッフが常駐していません。予約は、電話、メール、LINEで受け付けています。施設には、テラス付きの広いプレイルーム、ルームタイプとマンションタイプの宿泊スペース、屋上のドッグラン(約75.28平方メートル)があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "通園保育(保育プラン)"
+    },
+    {
+      "name": "ショート預かり(3時間まで)"
+    },
+    {
+      "name": "ハーフ預かり(5時間まで)"
+    },
+    {
+      "name": "ステイ(24時間まで)"
+    },
+    {
+      "name": "レッスン・合宿"
+    },
+    {
+      "name": "スクールバスの送迎"
+    },
+    {
+      "name": "早朝チェックイン(朝8時から)"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「ペット トレーナー」",
+      "source": "https://maps.google.com/?cid=2338841990760043391",
+      "quote": "ペット トレーナー",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "玉造店の住所は大阪市東成区中道3-8-21 ペピイ・ハッピープレイスTAMATSUKURI 1F",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "〒537-0025 大阪府大阪市東成区中道3-8-21",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "玉造店の電話番号は06-4306-3255(公式サイト。Google マップは0120-819-158)",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "06-4306-3255",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業時間は10:00〜19:00で、朝8:00からオプションでチェックインできる",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "営業時間 10：00 〜 19：00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "朝8時からのオプションのチェックイン",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "（ AM8：00からオプションでチェックイン可能 ）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "玉造店は土日祝を休業している",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "玉造店は土日祝を休業しております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの営業時間は月〜金10:00–19:00、土日は定休日",
+      "source": "https://maps.google.com/?cid=2338841990760043391",
+      "quote": "10:00–19:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "JR玉造駅から徒歩で約3分、地下鉄長堀鶴見緑地線玉造駅から約5分",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "JR玉造駅から徒歩で約3分、 地下鉄長堀鶴見緑地線 玉造駅から約5分。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "玉造店は駐車スペースがあり、満車なら近隣のコインパーキングを利用",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "駐車スペースが満車の場合は、近隣のコインパーキングをご利用ください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "大阪市内の送迎エリアなら送迎バスも利用できる",
+      "source": "https://www.pee-ka-boo.net/access_location/tamatsukuri/",
+      "quote": "大阪市内の送迎エリアなら送迎バスもご利用いただけます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "通常保育時間は平日(月〜金)の朝10時〜夕方5時",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "通常保育時間は土・日・祝を除く平日（月曜〜金曜）の朝10時〜夕方5時まです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "入園前の見学とカウンセリングは予約制",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "入園前の無料見学＆カウンセリングは予約制とし",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "最終のワクチン接種が済んでから入園できる",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "最終のワクチン接種が済んでからの入園が可能です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "基本動作や社会化を学べる",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "ハウストレーニングや、おすわり・ふせ・おいで・ついてなどの基本動作をはじめ、主にヒトやイヌ、環境なれなど社会化の学習ができます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "レッスンは一対多数が中心",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "一対多数でのレッスンが中心です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "保育ノートでその日の出来事を渡す",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "保育園で今日あった出来事や課題などを保育ノートに書いてお渡しします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "3時間までの一時預かりから長期のお泊まりまで利用できる",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "３時間までの一時預かりから、長期のお泊りまで、ご都合に合わせてご利用いただけます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "預かりの必要書類は1年以内の混合ワクチン接種証明書(5種以上)など",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "(1)1年以内の混合ワクチン接種証明書（5種以上）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "原則15キロを超える犬は預かれない",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "※原則15キロを超えるワンちゃんはお預かりできません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ヒート中は預かれない",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "ヒート中はお預かりできません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "夜間はスタッフが常駐していない",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "夜間もスタッフは常駐してるんですか？ 行なっておりません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約は電話・メール・LINE",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "事前にお電話やメール、LINEにてご予約頂きますようお願いいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "早朝チェックインは朝8時から30分ごとの料金(前日までの予約が必要)",
+      "source": "https://www.pee-ka-boo.net/service/stay_hotel/",
+      "quote": "朝8時から（550円/30分）可能です。前日の営業時間内までに事前ご予約が必要となります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ホテルはマンションタイプのほかルームタイプの部屋がある(玉造店)",
+      "source": "https://www.pee-ka-boo.net/facility/",
+      "quote": "マンションタイプの他にルームタイプのお部屋をご用意しました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "屋上に約75.28平方メートルのドッグランがある(玉造店)",
+      "source": "https://www.pee-ka-boo.net/facility/",
+      "quote": "約75.28m2の広々としたドッグランを完備。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "テラス付きの広いプレイルームがある(玉造店)",
+      "source": "https://www.pee-ka-boo.net/facility/",
+      "quote": "テラス付きの広々としたプレイルームには",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "レッスン・合宿ではオスワリ、フセ、マテ、ツイテなどの基本動作を教える",
+      "source": "https://www.pee-ka-boo.net/service/traning_camp/",
+      "quote": "Pee-Ka-Booではオスワリ、フセ、マテ、ツイテなどの基本動作をはじめ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "スクールバスで送迎(有料)",
+      "source": "https://www.pee-ka-boo.net/service/pickup/",
+      "quote": "車が無い方や、ワンちゃんを連れて行くことが出来ない方は、ご自宅前までスクールバスがお迎えに伺います。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "玉造店の動物取扱業登録(訓練・保管)がある",
+      "source": "https://www.pee-ka-boo.net/aboutus/",
+      "quote": "170119D（訓練）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "1日の流れにレッスン&プレイタイムなどがある",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "レッスン&プレイタイム",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "無料の見学会や体験保育がある",
+      "source": "https://www.pee-ka-boo.net/service/nursing/",
+      "quote": "無料の見学会や体験保育でワンちゃんと一緒に、Pee-Ka-Booへ遊びにきませんか？",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.pee-ka-boo.net/index.html"
+    },
+    {
+      "label": "公式サイト(玉造店 アクセス)",
+      "url": "https://www.pee-ka-boo.net/access_location/tamatsukuri/"
+    },
+    {
+      "label": "公式サイト(お泊まり・預かり)",
+      "url": "https://www.pee-ka-boo.net/service/stay_hotel/"
+    },
+    {
+      "label": "公式サイト(施設のご紹介)",
+      "url": "https://www.pee-ka-boo.net/facility/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2338841990760043391"
+    }
+  ],
+  "notes": "種類はペットホテル(pet-hotel): シートがペットホテルで、公式サイトに「お泊まり・預かり」のページがあるが、店の中心は通園保育(犬の保育園)で、Google マップの業種はペット トレーナー。resolve の判定どおりにした。店の特定: 住所(東成区中道3-8-21)と店名(玉造店)が公式サイトとGoogle マップで一致。電話は、公式サイトの玉造店が06-4306-3255、Google マップが0120-819-158(フリーダイヤルと思われる)で一致しないため、本文には電話番号を書かなかった。公式サイトは九条店と玉造店の両方を載せており、玉造店についての記述(アクセス・施設・営業日)だけを使った。料金・割引・お客様の声・スタッフの氏名・ブログは載せていない。『問題行動の改善』『成長記録』など改善・効き目を思わせる語、トイレのしつけ合宿の内容は書かず、レッスン・合宿はメニュー名だけにした。営業時間は公式サイト(10-19・玉造店は土日祝休)とGoogle マップ(月〜金10-19・土日定休)が一致。写真は、Google マップの写真は九条店か玉造店か判別しにくいものがあったため、玉造店の公式サイト(施設のご紹介の玉造店)の実物写真4枚(受付・プレイルーム・ホテルの部屋・屋上ドッグラン)にした。人が写る写真(スタッフの顔が主役のもの)は選んでいない。 [監査 2026-10-22] Google マップの電話 0120-819-158 は公式サイトのどのページにも無く、公式サイト(玉造店のtelリンク)は 06-4306-3255。店ページの電話は公式サイトの番号を使う(article.phone)。『無料見学』の『無料』は料金表現のため外した。",
+  "placeOverride": {
+    "phone": "06-4306-3255"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 18,
+  "sheet": {
+    "name": "LaughingDogs",
+    "address": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+    "url": "https://share.google/6xEeMIlnmqoAOVzP3",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=e2fb2748a0591637&rlz=1C1ONGR_jaJP1183JP1183&sxsrf=AE3TifNE2x20xWNleAOywGZgTMrwbM7Jtg:1765502283008&kgmid=/g/11fnwgw9l5&q=LaughingDogs&shndl=30&shem=damc,lcuae,ptotple,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=548f778662cc3bf0&utm_source=damc,lcuae,ptotple,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11fnwgw9l5",
+  "queries": [
+    "LaughingDogs"
+  ],
+  "candidates": [
+    {
+      "name": "LaughingDogs",
+      "address": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+      "url": "https://www.google.com/maps/place/LaughingDogs/data=!4m7!3m6!1s0x3543c7c4454d68e7:0x8df72abd5dbfb52!8m2!3d33.8631106!4d130.8263928!16s%2Fg%2F11fnwgw9l5!19sChIJ52hNRcTHQzURUvvb1aty3wg",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/LaughingDogs/data=!4m7!3m6!1s0x3543c7c4454d68e7:0x8df72abd5dbfb52!8m2!3d33.8631106!4d130.8263928!16s%2Fg%2F11fnwgw9l5!19sChIJ52hNRcTHQzURUvvb1aty3wg?authuser=0&hl=ja&g_ep=EgoyMDI2MTAxOC4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+    "place": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+    "sheetNorm": "福岡県北九州市八幡東区祝町1-16-17",
+    "placeNorm": "福岡県北九州市八幡東区祝町1-16-17",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "LaughingDogs",
+    "address": "福岡県北九州市八幡東区祝町１丁目１６−１７",
+    "category": "犬の一時預かり",
+    "lat": 33.8631106,
+    "lng": 130.8263928,
+    "gbpUrl": "https://maps.google.com/?cid=639355754462837586",
+    "phone": "093-777-6331",
+    "website": "https://laughingdogs.jp/",
+    "hours": {
+      "月": "07:00–19:00",
+      "火": "07:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:51:00.719Z",
+  "seconds": 4.2
+}

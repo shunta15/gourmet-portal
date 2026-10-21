@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 10,
+  "sheet": {
+    "name": "Wanvoice",
+    "address": "岐阜県加茂郡八百津町八百津３７０１−１",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=fbaa7d3b9c35fdd6&hl=ja&sxsrf=AE3TifNUX21oCi0w_KW9JM8rjyQO01c17w:1761036264310&kgmid=/g/11r9t9q78l&q=Wanvoice&shndl=30&shem=lcuae,uaasie,shrtn&source=sh/x/loc/uni/m1/1&kgs=3ac8633893487638&utm_source=lcuae,uaasie,shrtn,sh/x/loc/uni/m1/1",
+    "type": "ペット",
+    "d1": "ペット訓練所",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11r9t9q78l",
+  "queries": [
+    "Wanvoice 岐阜県加茂郡八百津町八百津３７０１−１"
+  ],
+  "candidates": [
+    {
+      "name": "Wanvoice",
+      "address": "岐阜県加茂郡八百津町八百津３７０１−１",
+      "url": "https://www.google.com/maps/place/Wanvoice/@35.4719893,137.1411595,17z/data=!3m1!4b1!4m6!3m5!1s0x60033d0f95dfdf99:0x1d80939939bfe2d7!8m2!3d35.4719893!4d137.1411595!16s%2Fg%2F11r9t9q78l",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Wanvoice/@35.4719893,137.1411595,17z/data=!3m1!4b1!4m6!3m5!1s0x60033d0f95dfdf99:0x1d80939939bfe2d7!8m2!3d35.4719893!4d137.1411595!16s%2Fg%2F11r9t9q78l?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "岐阜県加茂郡八百津町八百津３７０１−１",
+    "place": "岐阜県加茂郡八百津町八百津３７０１−１",
+    "sheetNorm": "岐阜県加茂郡八百津町八百津3701-1",
+    "placeNorm": "岐阜県加茂郡八百津町八百津3701-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Wanvoice",
+    "address": "岐阜県加茂郡八百津町八百津３７０１−１",
+    "category": "ペット トレーナー",
+    "lat": 35.4719893,
+    "lng": 137.1411595,
+    "gbpUrl": "https://maps.google.com/?cid=2125861310427030231",
+    "phone": "090-4156-8682",
+    "website": "https://wanvoice.jp/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:49:26.421Z",
+  "seconds": 5.9
+}

@@ -1,0 +1,54 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 3,
+  "sheet": {
+    "name": "Graceful Dog【サロン＆ホテル・駒沢】",
+    "address": "東京都世田谷区駒沢３丁目２−５ ノーブル駒沢 １F",
+    "url": "https://share.google/AHuaOyh2iyd4rgZ1F",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3cba3ff7c6207a53&rlz=1C1RXMK_jaJP1164JP1164&sxsrf=AE3TifOwwYV3bWLUup8LKnQhgozuv5KHOg:1758534362779&kgmid=/g/1ptw641s5&q=%E6%B4%A5%E7%94%B0%E6%B2%BC+Belle+Amie&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=d2ae143f5f6c9882&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1ptw641s5",
+  "queries": [
+    "津田沼 Belle Amie"
+  ],
+  "candidates": [
+    {
+      "name": "津田沼 Belle Amie",
+      "address": "千葉県船橋市前原西２丁目２１−１８ セブンビル ２F",
+      "url": "https://www.google.com/maps/place/%E6%B4%A5%E7%94%B0%E6%B2%BC+Belle+Amie/@35.6929754,140.0230396,17z/data=!3m1!4b1!4m6!3m5!1s0x6022802143b0a5ad:0xdb62b39d44dc5e5b!8m2!3d35.6929754!4d140.0230396!16s%2Fg%2F1ptw641s5",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:東京都世田谷区駒沢 / マップ:千葉県船橋市前原西）",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%B4%A5%E7%94%B0%E6%B2%BC+Belle+Amie/@35.6929754,140.0230396,17z/data=!3m1!4b1!4m6!3m5!1s0x6022802143b0a5ad:0xdb62b39d44dc5e5b!8m2!3d35.6929754!4d140.0230396!16s%2Fg%2F1ptw641s5?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "不一致",
+  "verdictReason": "町名までがちがう（シート:東京都世田谷区駒沢 / マップ:千葉県船橋市前原西）（シート:東京都世田谷区駒沢３丁目２−５ ノーブル駒沢 １F / マップ:千葉県船橋市前原西２丁目２１−１８ セブンビル ２F）／店名: シート「Graceful Dog【サロン＆ホテル・駒沢】」マップ「津田沼 Belle Amie」(different)",
+  "addressCompare": {
+    "sheet": "東京都世田谷区駒沢３丁目２−５ ノーブル駒沢 １F",
+    "place": "千葉県船橋市前原西２丁目２１−１８ セブンビル ２F",
+    "sheetNorm": "東京都世田谷区駒沢3-2-5ノーブル駒沢1F",
+    "placeNorm": "千葉県船橋市前原西2-21-18セブンビル2F",
+    "level": "none",
+    "detail": "町名までがちがう（シート:東京都世田谷区駒沢 / マップ:千葉県船橋市前原西）"
+  },
+  "nameRelation": "different",
+  "place": null,
+  "landedPlace": {
+    "name": "津田沼 Belle Amie",
+    "address": "千葉県船橋市前原西２丁目２１−１８ セブンビル ２F",
+    "category": "ガールズバー",
+    "lat": 35.6929754,
+    "lng": 140.0230396,
+    "gbpUrl": "https://maps.google.com/?cid=15808395130070392411"
+  },
+  "fetchedAt": "2026-10-21T14:48:22.495Z",
+  "seconds": 6.9
+}

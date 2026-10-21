@@ -1,0 +1,203 @@
+{
+  "key": "pet-16",
+  "headline": "函館市美原の爬虫類専門店。ヤモリ・ヘビ・カメなどを扱い、見るだけの来店もできる",
+  "lede": "北海道函館市美原4丁目にある爬虫類の専門店「エキゾアシス」です。爬虫類、両生類、奇蟲、小動物などの販売のほか、飼育用品の販売、ペットの引き取り、ペットホテルも行っています。営業は毎日11時から19時で、定休日はありません。",
+  "sections": [
+    {
+      "heading": "取り扱う生き物",
+      "body": "公式サイトの取扱生体の一覧には、ヤモリ、ヘビ、トカゲ、カメ、両生類(カエル・サンショウウオなど)、奇蟲(クモ・サソリ・ムカデなど)が並んでいます。公式サイトの紹介文は、このほかに鳥類や小動物も扱うとしています。最新の入荷はInstagramで案内されていて、遠方の人には中継販売(遠方発送)も行っています。取り寄せにも対応しています。見るだけの来店でも大丈夫と案内されています。"
+    },
+    {
+      "heading": "サービスの内容",
+      "body": "サービスは、ペットの販売、ペットの引き取り、飼育用品の販売、飼育用品の引き取り、ペットホテルの5つです。ペットの引き取りは、やむを得ない事情で飼育が難しくなった場合に応じるとされています。ペットホテルは、出張や旅行のときの一時預かりで、爬虫類、両生類、小動物、奇蟲が対象です。飼育や在庫の相談は、電話かInstagramのDMで受け付けています。店の前には、昆虫食の自動販売機があり、24時間購入できます。"
+    },
+    {
+      "heading": "場所と営業時間",
+      "body": "住所は函館市美原4丁目30-19で、電話番号は0138-76-1437です。営業時間は11時から19時で、定休日はありません。Instagramのアカウントは@exoasis.repです。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ヤモリ"
+    },
+    {
+      "name": "ヘビ"
+    },
+    {
+      "name": "トカゲ"
+    },
+    {
+      "name": "カメ"
+    },
+    {
+      "name": "両生類"
+    },
+    {
+      "name": "奇蟲"
+    },
+    {
+      "name": "飼育用品の販売"
+    },
+    {
+      "name": "ペットホテル"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「爬虫類専門店」",
+      "source": "https://maps.google.com/?cid=11144623317593028495",
+      "quote": "爬虫類専門店",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "住所は北海道函館市美原4丁目30-19",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "北海道函館市美原4丁目30-19",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電話番号は0138-76-1437",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "0138-76-1437",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業時間は11:00〜19:00、定休日なし",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "営業時間 11:00–19:00 ／ 定休日なし",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日11:00–19:00",
+      "source": "https://maps.google.com/?cid=11144623317593028495",
+      "quote": "11:00–19:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "見るだけの来店でも大丈夫",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "見るだけのご来店でも大丈夫。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "爬虫類・両生類・鳥類・奇蟲・小動物を取り扱うと案内している",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "爬虫類・両生類はもちろん、鳥類・奇蟲・小動物まで、函館ではなかなか出会えないユニークな生き物を取り扱っています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "取扱生体の一覧にヤモリの項目がある",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "Geckos ヤモリ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "取扱生体の一覧にヘビの項目がある",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "Snakes ヘビ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "取扱生体の一覧にトカゲの項目がある",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "Lizards トカゲ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "取扱生体の一覧にカメの項目がある",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "Turtles / Tortoises カメ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "両生類はカエル・サンショウウオなど",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "カエル・サンショウウオなど、両生類も各種取り扱っています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "奇蟲はクモ・サソリ・ムカデなど",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "クモ・サソリ・ムカデなど、珍しい奇蟲も取り扱っています。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "本店の取扱は爬虫類・両生類・奇蟲・活エサ・冷凍エサ",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "取扱 爬虫類・両生類・奇蟲・活エサ・冷凍エサ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "提携業者からの取り寄せにも対応する",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "提携業者からの取り寄せにも対応します。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペットの引き取りに、やむを得ない事情で飼育が難しくなった場合に応じる",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "やむを得ない事情で飼育が難しくなった場合は当店が引き取ります。原則無償で対応します。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "飼育用品の販売(取り寄せにも対応)",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "爬虫類から小動物まで、飼育に必要な用品を豊富に取り揃え。取り寄せにも対応します。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "飼育用品の引き取りも行う",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "必要が無くなった飼育用品も当店が引き取ります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペットホテルは爬虫類・両生類・小動物・奇蟲が対象",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "出張や旅行でお世話ができない時は一時的にお預かり。爬虫類・両生類・小動物・奇蟲が対象です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "生体・飼育の相談や在庫の問い合わせは電話かInstagramのDM。中継販売(遠方発送)も行う",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "生体・飼育のご相談、在庫のお問い合わせはお電話またはInstagramのDMへ。中継販売（遠方発送）も承ります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "価格は店頭・Instagramで案内している",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "価格は店頭・Instagramにてご案内しております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "店舗前に昆虫食の自動販売機があり、24時間購入できる",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "函館に上陸した昆虫食自販機を店舗前に設置。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Instagramのアカウントは@exoasis.rep",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "Instagram @exoasis.rep",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "第一種動物取扱業の登録がある(第022010284号)",
+      "source": "https://exoasis.netlify.app/",
+      "quote": "動物取扱業第一種動物取扱業 第022010284号",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://exoasis.netlify.app/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11144623317593028495"
+    }
+  ],
+  "notes": "種類はペットショップ(pet-shop): シートがペットショップ、Google マップの業種は爬虫類専門店で、公式サイトに生体の販売あり(resolve の判定どおり)。公式サイトは netlify.app の無料サブドメインだが店の自前サイト(連絡先・住所・電話がGoogle マップと一致)。公式サイトは1ページ(アンカーで分かれる)のため、出典URLはトップのみ。料金・価格表・新着生体の個体名(ニシアフリカトカゲモドキ等)・昆虫食自販機の価格は載せていない。公式サイトの「函館で唯一の爬虫類専門店」「ONLY 1」「豊富な種類を状態よく」「経験豊富なスタッフが親身に対応」などの自己評価・順位を思わせる表現、代表者・取扱責任者の氏名は使っていない。公式サイトは鳥類も取り扱うとしているが、取扱生体一覧(本店)には鳥類がなく、一覧にある分類(ヤモリ・ヘビ・トカゲ・カメ・両生類・奇蟲)をメニュー欄にした。写真は外観・店内・カメの展示の3枚(Google マップ)。 [監査 2026-10-22] 『原則無償』は料金表現のため外した。『在庫は店頭とInstagramで案内』は公式サイトの『価格は店頭・Instagramにて』を在庫に読み替えた言い過ぎだったため、『最新の入荷はInstagramで案内』(公式『最新の入荷を Instagram で見る』)に直した。写真g1〜g3は看板『EXOASIS』『株式会社MAR』が写り同店と確認。"
+}

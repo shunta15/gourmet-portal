@@ -1,0 +1,33 @@
+{
+  "key": "pet-26",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-26/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIq9w_wTwaj5kK150TvxXP7cEwgOQ8brg73lVbXFzOUssvKcshmIuyIJ-4pAnQ2aOZgZ0puZSheNWBuJc4JSethx8H1mmz79xyXjUcXPX_iv7_PXpJurlidovUehJdpY3Zr1taCuvPUBhl=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11076115219919138407",
+      "what": "芝の上で遊ぶボストンテリア",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-26/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ToWDkhebtgwXfMfNlf8lQXAfQc5JG4BK6_HC1XfL0UpAsAyjGOhxF1xv0DHswandNWq0hASv93pLGxTvg3R56RkfwTTH0hrZhSOk-qk7q56IAgJugbBeK9P_ZpcC38VdG0nRzYN4bk7h8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11076115219919138407",
+      "what": "芝の上の子犬",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-26/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGmS126gdVrzTdjY4gHiqawJpMpA8Im5sjLJX91wRLjqONWpg4cgDIxHaHeWzSb2J0WfVCBdktZk4Sp4ju4aauEwxpIfs49_yKV9QlH757ABmmLrDKEyPznj8g9ApKZCctVIh0qORa_JZT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11076115219919138407",
+      "what": "毛布の上の子犬",
+      "width": 1179,
+      "height": 1094,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

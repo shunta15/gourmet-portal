@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 22,
+  "sheet": {
+    "name": "わんこのお宿・幼稚園・さろん” るぴこむ”",
+    "address": "京都府京都市中京区松下町１３０",
+    "url": "https://share.google/P00faBn17k2u2hSC3",
+    "type": "ペット",
+    "d1": "ペットホテル",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=d49a4369f0d2dc0b&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11rg8l54xn&q=%E3%82%8F%E3%82%93%E3%81%93%E3%81%AE%E3%81%8A%E5%AE%BF%E3%83%BB%E5%B9%BC%E7%A8%9A%E5%9C%92%E3%83%BB%E3%81%95%E3%82%8D%E3%82%93%E2%80%9D+%E3%82%8B%E3%81%B4%E3%81%93%E3%82%80%E2%80%9D&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=a65b1d47f49121f1&utm_source=damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rg8l54xn",
+  "queries": [
+    "わんこのお宿・幼稚園・さろん” るぴこむ”"
+  ],
+  "candidates": [
+    {
+      "name": "わんこのお宿・幼稚園・さろん” るぴこむ”",
+      "address": "京都府京都市中京区松下町１３０",
+      "url": "https://www.google.com/maps/place/%E3%82%8F%E3%82%93%E3%81%93%E3%81%AE%E3%81%8A%E5%AE%BF%E3%83%BB%E5%B9%BC%E7%A8%9A%E5%9C%92%E3%83%BB%E3%81%95%E3%82%8D%E3%82%93%E2%80%9D+%E3%82%8B%E3%81%B4%E3%81%93%E3%82%80%E2%80%9D/@35.010153,135.7649298,17z/data=!3m1!4b1!4m6!3m5!1s0x600109f068c16751:0x3c07426bb8b6afb!8m2!3d35.010153!4d135.7649298!16s%2Fg%2F11rg8l54xn",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%8F%E3%82%93%E3%81%93%E3%81%AE%E3%81%8A%E5%AE%BF%E3%83%BB%E5%B9%BC%E7%A8%9A%E5%9C%92%E3%83%BB%E3%81%95%E3%82%8D%E3%82%93%E2%80%9D+%E3%82%8B%E3%81%B4%E3%81%93%E3%82%80%E2%80%9D/@35.010153,135.7649298,17z/data=!3m1!4b1!4m6!3m5!1s0x600109f068c16751:0x3c07426bb8b6afb!8m2!3d35.010153!4d135.7649298!16s%2Fg%2F11rg8l54xn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "京都府京都市中京区松下町１３０",
+    "place": "京都府京都市中京区松下町１３０",
+    "sheetNorm": "京都府京都市中京区松下町130",
+    "placeNorm": "京都府京都市中京区松下町130",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "わんこのお宿・幼稚園・さろん” るぴこむ”",
+    "address": "京都府京都市中京区松下町１３０",
+    "category": "ペット ホテル業",
+    "lat": 35.010153,
+    "lng": 135.7649298,
+    "gbpUrl": "https://maps.google.com/?cid=270343687346285307",
+    "phone": "075-256-1155",
+    "website": "https://lupicom.com/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:51:32.500Z",
+  "seconds": 5.9
+}

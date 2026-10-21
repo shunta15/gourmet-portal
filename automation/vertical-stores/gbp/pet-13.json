@@ -1,0 +1,79 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 13,
+  "sheet": {
+    "name": "Anifaペットカフェ",
+    "address": "大阪府大阪市北区中崎西１丁目１１−２",
+    "url": "https://share.google/A1qNZieMBrz6LjtEN",
+    "type": "ペット",
+    "d1": "動物カフェ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=6b4d902e84856ab1&rlz=1C1NDCM_jaJP1185JP1185&sxsrf=AE3TifO7NWH8N96N0o-Fy278sXNixhPrkg:1762501503993&kgmid=/g/11vx0_pb29&q=Anifa%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%95%E3%82%A7&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=ad1b29b0b5996730&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11vx0_pb29",
+  "queries": [
+    "Anifaペットカフェ",
+    "Anifaペットカフェ 大阪府大阪市北区中崎西１丁目１１−２"
+  ],
+  "candidates": [
+    {
+      "name": "アネラカフェ 川崎駅前店",
+      "address": "神奈川県川崎市川崎区貝塚２丁目２−１ ディザイア パレス 1F",
+      "url": "https://www.google.com/maps/place/%E3%82%A2%E3%83%8D%E3%83%A9%E3%82%AB%E3%83%95%E3%82%A7+%E5%B7%9D%E5%B4%8E%E9%A7%85%E5%89%8D%E5%BA%97/@35.5251917,139.7052979,17z/data=!3m1!4b1!4m6!3m5!1s0x601861512954862f:0x571ffe5f286ec633!8m2!3d35.5251917!4d139.7052979!16s%2Fg%2F11msf2ff97",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:大阪府大阪市北区中崎西 / マップ:神奈川県川崎市川崎区貝塚）",
+      "nameRelation": "different",
+      "kgmidMatch": false
+    },
+    {
+      "name": "Anifaアニマルカフェ",
+      "address": "大阪府大阪市北区中崎西１丁目１１−２",
+      "url": "https://www.google.com/maps/place/Anifa%E3%82%A2%E3%83%8B%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%95%E3%82%A7/@34.7082317,135.5045805,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e70060aab72d:0x17721d52c4d5a6b9!8m2!3d34.7082317!4d135.5045805!16s%2Fg%2F11vx0_pb29",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "different",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Anifa%E3%82%A2%E3%83%8B%E3%83%9E%E3%83%AB%E3%82%AB%E3%83%95%E3%82%A7/@34.7082317,135.5045805,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e70060aab72d:0x17721d52c4d5a6b9!8m2!3d34.7082317!4d135.5045805!16s%2Fg%2F11vx0_pb29?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "住所は一致で店名がちがう",
+  "verdictReason": "住所一致（町名・番地とも一致）。シート「Anifaペットカフェ」とマップ「Anifaアニマルカフェ」で店名が合わない（改称・同じ建物の別店・シートの表記ゆれのいずれか未確認）",
+  "addressCompare": {
+    "sheet": "大阪府大阪市北区中崎西１丁目１１−２",
+    "place": "大阪府大阪市北区中崎西１丁目１１−２",
+    "sheetNorm": "大阪府大阪市北区中崎西1-11-2",
+    "placeNorm": "大阪府大阪市北区中崎西1-11-2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "different",
+  "place": {
+    "name": "Anifaアニマルカフェ",
+    "address": "大阪府大阪市北区中崎西１丁目１１−２",
+    "category": "観光名所",
+    "lat": 34.7082317,
+    "lng": 135.5045805,
+    "gbpUrl": "https://maps.google.com/?cid=1689445051544217273",
+    "phone": "080-5169-0739",
+    "website": null,
+    "hours": {
+      "月": "13:00–18:00",
+      "火": "13:00–18:00",
+      "水": "定休日",
+      "木": "13:00–18:00",
+      "金": "13:00–18:00",
+      "土": "13:00–18:00",
+      "日": "13:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:50:07.896Z",
+  "seconds": 14.4
+}

@@ -1,0 +1,24 @@
+{
+  "key": "pet-19",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-19/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5tYehKx8s_IgmpvJWwuyPuG8DEzfPDuBA8Cp-YOOaPatg3oAIegU8nw8M-CT1a1puv6GfSE6QMtuoyML1MdQtb9ST4c66W1tCHPFuHXtVBVDhmPGoKu7KqoVVIT2kX3AXA6QC=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4764692014808200215",
+      "what": "店先の外観。ピンクの看板が見える",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-19/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QRJeZf_AUaxduDroqIN6YPuzces8KJByryyCHnSf2Q_-0FQ3u_x1agkOV2LXnO4ADD0pU0cFeJQnvOfLXqnzjQWGsYo_ZddhXzy6hHQ2movwo1N4drbaDmu46E6TNuGAU8dy4L=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4764692014808200215",
+      "what": "トリミング中のトイプードル",
+      "width": 600,
+      "height": 450,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

@@ -1,0 +1,24 @@
+{
+  "key": "pet-32",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-32/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QM6xvvl_EWbbU-Ots7Y5TNPd0YmSUKD7jSoLXFZtRN3ZZ6ZRadRDZtURekZoSP5zp3-k1KaDh5VFj_DsrvuXP4li5e9_AdhRyCqI0KIR6sLjeGDxvfH2MSMh_WOu3xIaAC5IMX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4125355156774246136",
+      "what": "室内ドッグランの内部",
+      "width": 1008,
+      "height": 756,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-32/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sj1Ip50TXisJrkdXrykGB9IloWpa9SOtLvvWE8MfKC_gHknW1yDYMt_F4ooTLmqof7kMYQeUWvItK9zmC8BK7P89Qn5ozdsb6blUu3rje5cNEzO3zI0GbmcJUHjMQwuociWND3Xw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4125355156774246136",
+      "what": "撮影コーナーの犬",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

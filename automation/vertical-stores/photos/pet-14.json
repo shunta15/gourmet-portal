@@ -1,0 +1,38 @@
+{
+  "key": "pet-14",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-14/s1.jpg",
+      "imageUrl": "https://www.pee-ka-boo.net/facility/images/tamatsukuri/front_photo01.jpg",
+      "pageUrl": "https://www.pee-ka-boo.net/facility/",
+      "what": "Pee-Ka-Booの看板がある受付",
+      "width": 700,
+      "height": 466
+    },
+    {
+      "path": "/_portal/vshops/pet-14/s2.jpg",
+      "imageUrl": "https://www.pee-ka-boo.net/facility/images/tamatsukuri/playroom_photo01.jpg",
+      "pageUrl": "https://www.pee-ka-boo.net/facility/",
+      "what": "窓の大きなプレイルーム",
+      "width": 700,
+      "height": 466
+    },
+    {
+      "path": "/_portal/vshops/pet-14/s3.jpg",
+      "imageUrl": "https://www.pee-ka-boo.net/facility/images/tamatsukuri/hotel_photo01.jpg",
+      "pageUrl": "https://www.pee-ka-boo.net/facility/",
+      "what": "ベッドと玩具のあるホテルの部屋",
+      "width": 700,
+      "height": 466
+    },
+    {
+      "path": "/_portal/vshops/pet-14/s4.jpg",
+      "imageUrl": "https://www.pee-ka-boo.net/facility/images/tamatsukuri/dogrun_photo01.jpg",
+      "pageUrl": "https://www.pee-ka-boo.net/facility/",
+      "what": "人工芝の屋上ドッグラン",
+      "width": 700,
+      "height": 466
+    }
+  ],
+  "note": ""
+}

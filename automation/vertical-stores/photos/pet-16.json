@@ -1,0 +1,33 @@
+{
+  "key": "pet-16",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-16/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QlVhsYOEwx9gU3K1n_UNHTotukYm3NDTZOzcfw9S4l5AgzlepgaBehhDjwtChIw5ek71RNmJwLbN8upVjWwHwN6YNlhshhv-NSQZFKieSKeFHpNmoo7PcolP-tTnMVMRZbSdVr=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11144623317593028495",
+      "what": "レンガと木の外壁の店舗外観(夜)",
+      "width": 1200,
+      "height": 857,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-16/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tqo2DUsvrm6X4mE4viLbJWMkzt9trxMtGZDnWkzuiF_4G5YJwMRDaHa25MFQV8OyamuSTlO3DL10LsJB6kkWBDmVYiwKdnRq0asnbDwKr-Vms-2HzrdszLXORbVENbof8_vLZEGg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11144623317593028495",
+      "what": "木の棚や水槽が並ぶ店内",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-16/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCZoTGzDVRGPRg1c0zKG-p2Fbya7DzbauLjEyOE0hRdF6nD4UKmhG4bTh9r4vuZk7mt-gGqVbTqvrEXhSswxovTwpXbwwPzyoQoA-Z_w2qbBsfyU-7Sxnga3SKmrmjQraA1DYygg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11144623317593028495",
+      "what": "草を敷いた展示ケースのリクガメ",
+      "width": 908,
+      "height": 908,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

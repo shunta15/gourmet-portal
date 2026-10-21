@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 15,
+  "sheet": {
+    "name": "プラムケンネル",
+    "address": "兵庫県神戸市西区神出町南５７４ 266",
+    "url": "https://share.google/8dxeQRFEEfOHxNYXf",
+    "type": "ペット",
+    "d1": "ペット訓練所",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=3cd975bbb46e3c4b&rlz=1C1NDCM_jaJP1185JP1185&sxsrf=AE3TifPFraQ07VTCKIn1QLzStFm3y3kjcg:1763376835346&kgmid=/g/11b6hx_1t3&q=%E3%83%97%E3%83%A9%E3%83%A0%E3%82%B1%E3%83%B3%E3%83%8D%E3%83%AB&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=5a3f8983c37b91b6&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b6hx_1t3",
+  "queries": [
+    "プラムケンネル"
+  ],
+  "candidates": [
+    {
+      "name": "プラムケンネル",
+      "address": "兵庫県神戸市西区神出町南５７４ 266",
+      "url": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%83%A0%E3%82%B1%E3%83%B3%E3%83%8D%E3%83%AB/@34.7419786,134.9909376,17z/data=!3m1!4b1!4m6!3m5!1s0x35552b28813985a5:0x938a4773661264cd!8m2!3d34.7419786!4d134.9909376!16s%2Fg%2F11b6hx_1t3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%97%E3%83%A9%E3%83%A0%E3%82%B1%E3%83%B3%E3%83%8D%E3%83%AB/@34.7419786,134.9909376,17z/data=!3m1!4b1!4m6!3m5!1s0x35552b28813985a5:0x938a4773661264cd!8m2!3d34.7419786!4d134.9909376!16s%2Fg%2F11b6hx_1t3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "兵庫県神戸市西区神出町南５７４ 266",
+    "place": "兵庫県神戸市西区神出町南５７４ 266",
+    "sheetNorm": "兵庫県神戸市西区神出町南574266",
+    "placeNorm": "兵庫県神戸市西区神出町南574266",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "プラムケンネル",
+    "address": "兵庫県神戸市西区神出町南５７４ 266",
+    "category": "犬のブリーダー",
+    "lat": 34.7419786,
+    "lng": 134.9909376,
+    "gbpUrl": "https://maps.google.com/?cid=10631388431320769741",
+    "phone": "078-965-2902",
+    "website": "https://plumkennel.jp/",
+    "hours": {
+      "月": "11:00–22:00",
+      "火": "11:00–22:00",
+      "水": "11:00–22:00",
+      "木": "11:00–22:00",
+      "金": "11:00–22:00",
+      "土": "11:00–22:00",
+      "日": "11:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "Pocky's owner traveled all the way from China to pick her up✈️ Thank you, Mr. Zhang. Please take good care of her🙏 ロジャーパパとラムママの間に生まれたポッキーを中国からオーナーさんが迎えに来てくれました😊 家族写真も撮って、今日は関空からお見送りです✈️上海まで気をつけてお帰りください🙏 ポッキー幸せにね✨✨ 神戸でブリーダーをお探しなら、ブリーダー歴25年のプラムケンネルに相談してみませんか？ 兵庫県神戸市西区のプラムケンネルは、緑が丘駅から車で13分ほどの場所に拠点を置き、健康で質の良い犬を育てるミニチュアダックス・カニンヘンダックスフンドの専門ブリーダーです。 神戸エリアでダックス専門ブリーダーをお探しの方や、ペットショップで子犬のお迎えを検討中の方は、ぜひお問い合わせ下さい！"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:50:31.350Z",
+  "seconds": 8.7
+}

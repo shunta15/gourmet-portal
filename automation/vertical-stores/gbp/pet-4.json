@@ -1,0 +1,74 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 4,
+  "sheet": {
+    "name": "Cafe Maera",
+    "address": "栃木県鹿沼市日吉町８４６",
+    "url": "https://share.google/toKAqQH4kijYUMB8y",
+    "type": "ペット",
+    "d1": "動物カフェ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=60d58b6df421f955&rlz=1C5CHFA_enJP978JP978&sxsrf=AE3TifO23JOOKGu1ixNcCkXu6NAVR2OaBA:1760683820920&kgmid=/g/11b6n9f5vn&q=Cafe+Maera&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=40a0abb0093b00b2&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11b6n9f5vn",
+  "queries": [
+    "Cafe Maera"
+  ],
+  "candidates": [
+    {
+      "name": "Cafe Maera",
+      "address": "栃木県鹿沼市日吉町８４６",
+      "url": "https://www.google.com/maps/place/Cafe+Maera/@36.5667653,139.7284205,17z/data=!3m1!4b1!4m6!3m5!1s0x601f6cf4c1380a93:0x745658b71cc7d394!8m2!3d36.5667653!4d139.7284205!16s%2Fg%2F11b6n9f5vn",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Cafe+Maera/@36.5667653,139.7284205,17z/data=!3m1!4b1!4m6!3m5!1s0x601f6cf4c1380a93:0x745658b71cc7d394!8m2!3d36.5667653!4d139.7284205!16s%2Fg%2F11b6n9f5vn?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "栃木県鹿沼市日吉町８４６",
+    "place": "栃木県鹿沼市日吉町８４６",
+    "sheetNorm": "栃木県鹿沼市日吉町846",
+    "placeNorm": "栃木県鹿沼市日吉町846",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Cafe Maera",
+    "address": "栃木県鹿沼市日吉町８４６",
+    "category": "カフェテリア",
+    "lat": 36.5667653,
+    "lng": 139.7284205,
+    "gbpUrl": "https://maps.google.com/?cid=8382985299881874324",
+    "phone": "0289-60-6055",
+    "website": "https://maera.jp/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "11:00–17:00",
+      "木": "11:00–17:00",
+      "金": "11:00–17:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [
+      {
+        "label": "席を予約するhotpepper.jp",
+        "url": "https://www.hotpepper.jp/strJ002650014/yoyaku/?vos=othpporgzzzzx00000001"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "🍁 今年も開催！Cafe Maera恒例の芋煮会 11月15日（日）、毎年恒例の秋の芋煮会を開催します。 秋の自然に囲まれたカフェで、セラピードッグたちと過ごしながら、あつあつの芋煮を楽しみませんか？ 焼きサンマも提供予定です。 開催日：2026年11月15日（日） 会場：Cafe Maera（栃木県鹿沼市） 開催時間・料金・参加方法は決まり次第お知らせします。皆さまのご来店をお待ちしています。\n2026/10/13"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:48:33.822Z",
+  "seconds": 6.4
+}

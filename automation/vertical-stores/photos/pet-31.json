@@ -1,0 +1,33 @@
+{
+  "key": "pet-31",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-31/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta1eJqZHnpVLEvLYYO_U0pydthvNIEnIcpgSoujGBfNehKG4lQRffP6frhjv65s2hHoi46OVHSKmUEeq1hoMUHplUehlPUuTqlXtoTdGH-WhxFUS8NBE3SH1Z4TWQksV_sV0M=s1200",
+      "pageUrl": "https://maps.google.com/?cid=178641640681033002",
+      "what": "柵で囲んだ芝の運動場にいる犬",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-31/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIHxyzRzAWDrdeeeBotQ2StMQ5IwnnvLX0HBAqtUafybcqAifh92VHl3TUyueYRtI0MlW1sxSi7bkK0ygeMpAVU7OR1FIdF0eDfCwfFEaCzripDnEvvoMa_kFFJyVLt8pvh_ie=s1200",
+      "pageUrl": "https://maps.google.com/?cid=178641640681033002",
+      "what": "芝の上で遊ぶ子犬",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-31/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-oN3V4ybkAcYCQc-tXilWVqQxk52oaH2oMbtcs3LtAeHHLE6xjGCuY7u6lRYQZRMLXlFtYk8t1bZPXyPyUx3ZGNY58ggSrt7MTlG3maZrQBVlNsfEYQPGE0FioDnkuvR6Zpam=s1200",
+      "pageUrl": "https://maps.google.com/?cid=178641640681033002",
+      "what": "芝の上を走る子犬",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

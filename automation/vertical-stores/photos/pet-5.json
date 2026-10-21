@@ -1,0 +1,33 @@
+{
+  "key": "pet-5",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-5/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtLNJSktcrSCZpc1BoD5JlTU9sOueAN54Veg_90-6XGcEl_8F5E6iau7srvXN9TpBAoh0pb7Ll0t0_LUy9MK8cun9hwFMy2k7CJJGVWrcB9IbS2pzbQoqve7NQ5GBkgzXy0RmZmXqVpLr_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14204607486810631305",
+      "what": "切妻屋根の動物病院の外観",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-5/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXZRPvlH0pWuuMeHvOthVZJfPpTQGKFY09ZwmYHR7mORbm68FIrl6pfkUvs7OAGz669njMAVOK7cdc_BkOAtH-4t2Keda_coEnCuef5QMtRZe4X9dDjjbZQiL0LMrkUIwouoxKUsQOzSsT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14204607486810631305",
+      "what": "受付カウンターと待合室",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-5/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYTCIweoruBF9snLzz0ns9401s4ph1bsGKpYtM1DbP6DJW3yLDc3n5mkLpVDqHgJWQKajEwo0bqKZcKd-IHuqwF4ERfJHWqWXVwuxH_GAtMFgnFqIpiHk77pA80j5cr2L2IVIOECoYhtTF=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14204607486810631305",
+      "what": "診察台のある診察室",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

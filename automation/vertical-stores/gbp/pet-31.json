@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 31,
+  "sheet": {
+    "name": "株式会社MISAKO犬舎【ブリーダー・子犬販売】",
+    "address": "茨城県石岡市東成井７−８３",
+    "url": "https://share.google/jMalR8Vy1JaEelEhK",
+    "type": "ペット",
+    "d1": "ペットショップ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=262b8e8005cfc964&sxsrf=ANbL-n4KIWDJvbypxfDlB5bvqeie8PrlmQ:1769414778415&kgmid=/g/11rgwwhvmh&q=%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEMISAKO%E7%8A%AC%E8%88%8E%E3%80%90%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E5%AD%90%E7%8A%AC%E8%B2%A9%E5%A3%B2%E3%80%91&shem=bdsle,epsd1,ptotple,shrtsdl&shndl=30&source=sh/x/loc/uni/m1/1&kgs=a18595257764637d&utm_source=bdsle,epsd1,ptotple,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11rgwwhvmh",
+  "queries": [
+    "株式会社MISAKO犬舎【ブリーダー・子犬販売】"
+  ],
+  "candidates": [
+    {
+      "name": "株式会社MISAKO犬舎【ブリーダー・子犬販売】",
+      "address": "茨城県石岡市東成井７−８３",
+      "url": "https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEMISAKO%E7%8A%AC%E8%88%8E%E3%80%90%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E5%AD%90%E7%8A%AC%E8%B2%A9%E5%A3%B2%E3%80%91/@36.2622694,140.2656922,17z/data=!3m1!4b1!4m6!3m5!1s0x602219c4cb3f6157:0x27aa9a02ee2cd2a!8m2!3d36.2622694!4d140.2656922!16s%2Fg%2F11rgwwhvmh",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEMISAKO%E7%8A%AC%E8%88%8E%E3%80%90%E3%83%96%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%BB%E5%AD%90%E7%8A%AC%E8%B2%A9%E5%A3%B2%E3%80%91/@36.2622694,140.2656922,17z/data=!3m1!4b1!4m6!3m5!1s0x602219c4cb3f6157:0x27aa9a02ee2cd2a!8m2!3d36.2622694!4d140.2656922!16s%2Fg%2F11rgwwhvmh?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "茨城県石岡市東成井７−８３",
+    "place": "茨城県石岡市東成井７−８３",
+    "sheetNorm": "茨城県石岡市東成井7-83",
+    "placeNorm": "茨城県石岡市東成井7-83",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "株式会社MISAKO犬舎【ブリーダー・子犬販売】",
+    "address": "茨城県石岡市東成井７−８３",
+    "category": "ペットショップ",
+    "lat": 36.2622694,
+    "lng": 140.2656922,
+    "gbpUrl": "https://maps.google.com/?cid=178641640681033002",
+    "phone": "090-5555-7286",
+    "website": "https://misako-kennel.com/",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:53:09.839Z",
+  "seconds": 6.4
+}

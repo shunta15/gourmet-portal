@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 28,
+  "sheet": {
+    "name": "古民家ドッグカフェおかげさんで",
+    "address": "京都府南丹市日吉町四ツ谷西畑２０",
+    "url": "https://share.google/Mn8AyUvnx98JfzmOP",
+    "type": "ペット",
+    "d1": "動物カフェ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=540cd09fb70162eb&kgmid=/g/1tgd6cz0&q=%E5%8F%A4%E6%B0%91%E5%AE%B6%E3%83%89%E3%83%83%E3%82%B0%E3%82%AB%E3%83%95%E3%82%A7%E3%81%8A%E3%81%8B%E3%81%92%E3%81%95%E3%82%93%E3%81%A7&shem=bdsle,epsd1,ptotple,shrtsdl&shndl=30&source=sh/x/loc/uni/m1/1&kgs=6a80391ab6301ae4&utm_source=bdsle,epsd1,ptotple,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/1tgd6cz0",
+  "queries": [
+    "古民家ドッグカフェおかげさんで"
+  ],
+  "candidates": [
+    {
+      "name": "古民家ドッグカフェおかげさんで",
+      "address": "京都府南丹市日吉町四ツ谷西畑２０",
+      "url": "https://www.google.com/maps/place/%E5%8F%A4%E6%B0%91%E5%AE%B6%E3%83%89%E3%83%83%E3%82%B0%E3%82%AB%E3%83%95%E3%82%A7%E3%81%8A%E3%81%8B%E3%81%92%E3%81%95%E3%82%93%E3%81%A7/@35.202327,135.525651,17z/data=!3m1!4b1!4m6!3m5!1s0x60004a278d1ce6e7:0x36ce33db50e08d66!8m2!3d35.202327!4d135.525651!16s%2Fg%2F1tgd6cz0",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%8F%A4%E6%B0%91%E5%AE%B6%E3%83%89%E3%83%83%E3%82%B0%E3%82%AB%E3%83%95%E3%82%A7%E3%81%8A%E3%81%8B%E3%81%92%E3%81%95%E3%82%93%E3%81%A7/@35.202327,135.525651,17z/data=!3m1!4b1!4m6!3m5!1s0x60004a278d1ce6e7:0x36ce33db50e08d66!8m2!3d35.202327!4d135.525651!16s%2Fg%2F1tgd6cz0?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "京都府南丹市日吉町四ツ谷西畑２０",
+    "place": "京都府南丹市日吉町四ツ谷西畑２０",
+    "sheetNorm": "京都府南丹市日吉町四ツ谷西畑20",
+    "placeNorm": "京都府南丹市日吉町四ツ谷西畑20",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "古民家ドッグカフェおかげさんで",
+    "address": "京都府南丹市日吉町四ツ谷西畑２０",
+    "category": "ドッグカフェ",
+    "lat": 35.202327,
+    "lng": 135.525651,
+    "gbpUrl": "https://maps.google.com/?cid=3949150940298251622",
+    "phone": "090-3491-5513",
+    "website": null,
+    "hours": {
+      "月": "10:30–17:00",
+      "火": "10:30–17:00",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "定休日",
+      "土": "10:30–17:00",
+      "日": "10:30–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:52:37.487Z",
+  "seconds": 6.3
+}

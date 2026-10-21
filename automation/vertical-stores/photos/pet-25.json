@@ -1,0 +1,15 @@
+{
+  "key": "pet-25",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-25/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QNK4-GS4lCG4v3rbvrfZ7tA_buK2sE7i1O7L86_7E-kaC2R7Ifi_6_Pd5UhguDYCiD6h_uw0DLaG0Du29ddCPw_E0XJYHK6P6xnp6h3TH-FlSClsMy6Lmjk-vgl7dwObigRcFH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=866924465633251878",
+      "what": "店の入口と赤い看板",
+      "width": 867,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真 [監査 2026-10-22] g1.jpg を外した: 建物の窓に同じ建物の別の店(学習塾)の電話番号『(011)832-0930』と『無料体験受付中』が読め、この店の電話(011-822-8170)と食い違って見えるため"
+}

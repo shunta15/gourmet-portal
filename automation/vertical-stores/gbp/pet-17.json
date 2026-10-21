@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 17,
+  "sheet": {
+    "name": "犬の保育園LaughingDogs alpha",
+    "address": "福岡県北九州市戸畑区境川２丁目４−１０",
+    "url": "https://share.google/rlw01FRjjMS6OZ1lm",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=73e86a78892c9231&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11v66fycc3&q=%E7%8A%AC%E3%81%AE%E4%BF%9D%E8%82%B2%E5%9C%92LaughingDogs+alpha&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=3f026108f9428787&utm_source=damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11v66fycc3",
+  "queries": [
+    "犬の保育園LaughingDogs alpha"
+  ],
+  "candidates": [
+    {
+      "name": "犬の保育園LaughingDogs alpha",
+      "address": "福岡県北九州市戸畑区境川２丁目４−１０",
+      "url": "https://www.google.com/maps/place/%E7%8A%AC%E3%81%AE%E4%BF%9D%E8%82%B2%E5%9C%92LaughingDogs+alpha/@33.8923275,130.8456016,17z/data=!3m1!4b1!4m6!3m5!1s0x3543b99f444db22d:0xcd6edb42c81bb45e!8m2!3d33.8923275!4d130.8456016!16s%2Fg%2F11v66fycc3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E7%8A%AC%E3%81%AE%E4%BF%9D%E8%82%B2%E5%9C%92LaughingDogs+alpha/@33.8923275,130.8456016,17z/data=!3m1!4b1!4m6!3m5!1s0x3543b99f444db22d:0xcd6edb42c81bb45e!8m2!3d33.8923275!4d130.8456016!16s%2Fg%2F11v66fycc3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福岡県北九州市戸畑区境川２丁目４−１０",
+    "place": "福岡県北九州市戸畑区境川２丁目４−１０",
+    "sheetNorm": "福岡県北九州市戸畑区境川2-4-10",
+    "placeNorm": "福岡県北九州市戸畑区境川2-4-10",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "犬の保育園LaughingDogs alpha",
+    "address": "福岡県北九州市戸畑区境川２丁目４−１０",
+    "category": "ペット トレーナー",
+    "lat": 33.8923275,
+    "lng": 130.8456016,
+    "gbpUrl": "https://maps.google.com/?cid=14803010105084982366",
+    "phone": "093-883-6663",
+    "website": "https://laughingdogs.jp/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:50:53.150Z",
+  "seconds": 6.2
+}

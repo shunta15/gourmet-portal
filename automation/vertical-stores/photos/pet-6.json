@@ -1,0 +1,24 @@
+{
+  "key": "pet-6",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-6/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzO03r1PxYeHOvmVIWCHYDZ0jRWVeHO8T8IiYHy8h9H_7S1lN2bC_ZVP-f2BDc2qrtooJThC3Opx-wQ9HnVWPWcTd_HZBv_A0PiNUtm9QFOJgDc_gmUiaPm-tj8ZQu8xUzqA-PxpfNfNGO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8561450866066001886",
+      "what": "シャンプーの泡をのせた犬と手元",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-6/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4wgjjSRH2WbCs79qIB3fI7kLcqRUxSJdjTPmTaZsxsm5VjBPbKeWjohhYk4mss-hdxPRa2FzdSwEQe8dUui2-2brlE6UbBRVi90L8iX9ktOgRocUouT8um36uogcMrE4Wmfd68e0y9qSp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8561450866066001886",
+      "what": "花柄の背景布の前に立つトリミング後の犬",
+      "width": 1200,
+      "height": 1199,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

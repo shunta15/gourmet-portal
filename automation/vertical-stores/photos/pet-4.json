@@ -1,0 +1,33 @@
+{
+  "key": "pet-4",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-4/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwIy0ZVZRJMMAyjzk318-DwZ4LIW5NdCPkwGVG2g38A2sXhCIqI_pDR-abmYZmhvLfWeXEl2D5AEh7RnblSjntl7DC9paAtSk5L7E7HyfsP8dv0yB7aE6VppAo0FRZj4Nh5sI9YA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8382985299881874324",
+      "what": "ニットを着たプードルやコリーなど、床に集まる犬たち",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-4/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZqhbFVmN06PF0k8XJRd2W-S--mYtW4jqjM_MGP1H36L8PhkGQ6MrLNv994zv3p6NhJLxUnIKpOzZaPOVou6jsBI8o2IaPuQkk-HDrXpsi3jePZGSZEZgS8Pjq24LJ8A2pJkGacpiXQ8s=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8382985299881874324",
+      "what": "木の壁の席に座るラブラドール",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-4/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QM7ATcIM-_OYitIEVo3068vxYtZFFubQOBn1zBJexH8RISn6aKxWAPWStbeKQBPRKdlTHr-7uj-PmIu4EF3jZSP9HAoqXgfDQAqRPREO6rv6A_vqBahaJhRNBRh6rbSf3mb6R5dGJn7mRg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8382985299881874324",
+      "what": "足あとの形のソースを添えたブルーベリーのチーズケーキ",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

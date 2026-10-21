@@ -1,0 +1,283 @@
+{
+  "key": "pet-17",
+  "headline": "北九州市戸畑区境川の犬の総合施設。犬の保育園とペットホテルを備え、平日9時から17時",
+  "lede": "福岡県北九州市戸畑区境川2丁目にある「Laughing Dogs alpha(境川)」です。犬の保育園(お預かりトレーニング)を中心に、カウンセリング、ペットホテル、トリミング、ペットシッターを行う、犬専用の総合施設です。ラーメン店の2階にあり、営業は平日9時から17時、定休日は土日祝です。",
+  "sections": [
+    {
+      "heading": "場所と営業日",
+      "body": "住所は戸畑区境川2-4-10の2階で、ラーメン店の上にあります。日明ICから車で約5分で、駐車場は10台分ですが、ラーメン店と共用です。近隣にはコインパーキングもあります。営業日は平日で、時間は9時から17時です。早朝と延長の受け入れもあり、保育園のページでは早朝が7時から9時、延長が17時から19時とされていますが、境川店のページには延長18時までとあり、公式サイトの中で食い違っています。利用前に確かめてください。定休日は土日祝で、土曜の保育園は月2回です。予約は公式LINEで受け付け、平日9時から17時は電話でも受け付けています。電話番号は093-883-6663です。"
+    },
+    {
+      "heading": "犬の保育園とペットホテル",
+      "body": "犬の保育園は、朝預けて夕方に迎えに行く形です。基礎的なトレーニングや、道具を使ったトレーニング、トリックなどに取り組むと案内されています。利用にあたっては、ワクチン接種が必須で、狂犬病予防注射は年1回の接種の証明をLINEで送ります。ノミ・ダニ・フィラリアの予防の確認書類も求められます。ペットホテルは保育園の延長のサービスで、月2回以上の登園を3か月以上続けている会員が対象です。ホテルだけの利用はできません。宿泊は犬舎ではなく、サークルにクレート・ベッド・トイレ・水飲み器を置いたスペースで、24時間スタッフが常駐しているわけではないと案内されています。"
+    },
+    {
+      "heading": "会員制とカウンセリング",
+      "body": "サービスは会員制で、初回はカウンセリングを受けます。カウンセリングは、境川店の施設内で行う来店と、自宅へ伺う訪問の2通りで、時間は120分から180分の予定です。予約は公式LINEの登録から申し込みます。ワクチンと予防の証明書の提示が必要で、首輪の着用が求められ、ハーネスは遠慮するよう案内されています。トリミングは、月2回以上・3か月以上続けて登園している会員のサービスで、トリミングだけの予約は受け付けていません。ペットシッターも、犬の場合は同じ条件の会員に限られます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カウンセリング(来店・訪問)"
+    },
+    {
+      "name": "犬の保育園(お預かりトレーニング)"
+    },
+    {
+      "name": "ペットホテル(会員向け)"
+    },
+    {
+      "name": "トリミング(会員向け)"
+    },
+    {
+      "name": "ペットシッター(会員向け)"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「ペット トレーナー」",
+      "source": "https://maps.google.com/?cid=14803010105084982366",
+      "quote": "ペット トレーナー",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "住所は福岡県北九州市戸畑区境川2-4-10 2F",
+      "source": "https://laughingdogs.jp/",
+      "quote": "福岡県北九州市戸畑区境川2-4-10 2F",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ラーメン秀光の2階",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "※ラーメン秀光さんの2階",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電話番号は093-883-6663",
+      "source": "https://laughingdogs.jp/",
+      "quote": "093-883-6663",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "定休日は土日祝",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "■定休日 土日祝",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業日は平日9時から17時(境川店のページには延長18時までとある)",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "平日9時から17時（延長18時まで）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "境川は9時〜17時で、早朝7時〜9時、延長17時〜19時(保育園のページ)",
+      "source": "https://laughingdogs.jp/dog-nursery",
+      "quote": "9時～17時（早朝7時～9時 延長17時～19時）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの営業時間は月〜金09:00–18:00、土日は定休日",
+      "source": "https://maps.google.com/?cid=14803010105084982366",
+      "quote": "09:00–18:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "日明ICから車で約5分",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "日明IC降りて車で約5分。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "駐車場は10台でラーメン店と共用、近隣にコインパーキングあり",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "駐車場10台",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "近隣コインパーキングあり",
+      "source": "https://laughingdogs.jp/laughingdogs-alpha",
+      "quote": "近隣コインパーキングあり",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "土曜の保育園は月2回",
+      "source": "https://laughingdogs.jp/dog-nursery",
+      "quote": "月2回土曜日保育園",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約は公式LINE(平日9時〜17時は電話でも)",
+      "source": "https://laughingdogs.jp/",
+      "quote": "お電話でのご予約が確実です！(平日９時～１７時)",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "犬専用の総合施設",
+      "source": "https://laughingdogs.jp/",
+      "quote": "わんちゃん専用の総合施設です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "犬の保育園は朝預けて夕方お迎えする形",
+      "source": "https://laughingdogs.jp/",
+      "quote": "朝預けて夕方お迎え（ひとの保育園と同じ）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "基礎的なトレーニング、道具を使ったトレーニング、トリックに取り組む",
+      "source": "https://laughingdogs.jp/",
+      "quote": "基礎的なトレーニング、様々な道具、頭を使ったトレーニングやトリックなど、わんちゃんが楽しむことができるように取り組んでいます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "サービス利用時はワクチン接種が必須",
+      "source": "https://laughingdogs.jp/dog-nursery",
+      "quote": "Laughing Dogsでは、サービスをご利用の際ワクチン接種厳守となっております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "狂犬病は年に一回の接種が必要で、証明書や鑑札の写真をLINEで送る",
+      "source": "https://laughingdogs.jp/dog-nursery",
+      "quote": "接種後、official LINEにて証明書や鑑札のお写真をお送りください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ノミ・ダニ・フィラリアの予防のお薬や領収書の写真をLINEで送る",
+      "source": "https://laughingdogs.jp/dog-nursery",
+      "quote": "official LINEにて、お薬や領収書のお写真をお送りください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペットホテルは保育園の延長のサービス",
+      "source": "https://laughingdogs.jp/pethotel",
+      "quote": "保育園の延長のサービスなので、ストレスが最小限！",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ホテルは月2回以上の登園、3か月以上継続の会員に限定",
+      "source": "https://laughingdogs.jp/pethotel",
+      "quote": "月に２回以上の登園及び３か月以上継続の会員様に限定させていただきます",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ホテルのみの利用はできない",
+      "source": "https://laughingdogs.jp/pethotel",
+      "quote": "ホテルのみの利用はできません",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "宿泊は犬舎ではなくサークルにクレート・ベッド・トイレ・水飲み器を置いたスペース",
+      "source": "https://laughingdogs.jp/pethotel",
+      "quote": "犬舎ではなくサークルにクレート・ベッド・トイレ・水飲み器が確保できるスペースでのお泊りとなります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "24時間スタッフ常駐ではない",
+      "source": "https://laughingdogs.jp/pethotel",
+      "quote": "当店は24時間スタッフ常駐ではありません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "会員制",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "当店は深いサービスを行うため、会員制となっております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カウンセリングのみの利用も歓迎",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "もちろん、カウンセリングのみのご利用も大歓迎です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カウンセリングは120〜180分の予定",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "カウンセリング時間は120分〜180分（2〜3時間）を予定しております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "来店カウンセリングと訪問カウンセリングがある",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "来店カウンセリング（施設内カウンセリングルーム）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "来店カウンセリングの場所はLaughing Dogs alpha 戸畑区境川2-4-10 2階",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "Laughing Dogs alpha 戸畑区境川2-4-10 2階（ラーメン秀光さんの上）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "初回カウンセリングはofficial account(LINE)の登録から予約",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "official account（LINE）の登録からのご予約をお願いします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "首輪着用、ハーネスは遠慮してもらう",
+      "source": "https://laughingdogs.jp/counseling",
+      "quote": "必ず首輪着用 ハーネスはご遠慮いただいております。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トリミングは月2回以上・3か月以上継続の登園会員へのサービス",
+      "source": "https://laughingdogs.jp/trimming",
+      "quote": "定期的（月2回以上・3ヶ月以上継続）な登園の会員様へのサービスとなります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トリミングのみの予約は受け付けていない",
+      "source": "https://laughingdogs.jp/trimming",
+      "quote": "トリミングのみのご予約は受け付けておりません。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペットシッター(犬)は月2回以上・3か月以上継続の登園会員に限定",
+      "source": "https://laughingdogs.jp/pet-sitter",
+      "quote": "わんちゃんの場合は月に２回以上の登園及び３か月以上継続の会員様に限定させていただきます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "境川店の動物取扱業登録(保管・訓練)がある",
+      "source": "https://laughingdogs.jp/",
+      "quote": "保管 第23018（令和10年8月4日まで）",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://laughingdogs.jp/"
+    },
+    {
+      "label": "公式サイト(Laughing Dogs alpha 境川)",
+      "url": "https://laughingdogs.jp/laughingdogs-alpha"
+    },
+    {
+      "label": "公式サイト(犬の保育園)",
+      "url": "https://laughingdogs.jp/dog-nursery"
+    },
+    {
+      "label": "公式サイト(ペットホテル)",
+      "url": "https://laughingdogs.jp/pethotel"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14803010105084982366"
+    }
+  ],
+  "notes": "店の特定: Google マップの住所(戸畑区境川2-4-10)と電話(093-883-6663)が公式サイトのLaughing Dogs alpha(境川)と一致。公式サイトは祝町店と境川店の両方を載せ、サービス内容のページは両店共通のため、境川店に関する記述(住所・営業・アクセス・カウンセリングの会場・保育園の境川の時間)と、両店共通のサービス内容だけを使った。公式サイトの営業時間は、境川店のページが『延長18時まで』、保育園のページとトップが『早朝7時〜・延長19時まで』、Google マップは月〜金9:00-18:00で食い違うため、本文に食い違いを明記した(タグなし)。種類はresolve の判定どおりトリミング(trimming)としたが、公式サイトのトリミングは保育園の会員(月2回以上・3か月以上継続)向けで『トリミングのみの予約は受け付けていない』ため、種類の割り当て(trimming か pet-hotel か)は発注者の確認をお願いしたい。Google マップの業種はペット トレーナー。料金・入会金・保育園料金、スタッフの氏名・資格、セミナー、公式サイトの『介護・リハビリ(機能回復サポート)』『犬の整体』『温灸・刺さない鍼』『EMS/TENS電気治療具』などの効き目を思わせる内容は載せていない。『ラーメン秀光』は店の場所を示す公式サイトの記載としてだけ使った。写真はGoogle マップの3枚(外観・遊具のある室内・広い室内)。看板やバナーのみの画像は選んでいない。 [監査 2026-10-22] 系列の祝町店(閉店予定)の記述は別の店の情報で、閉店後は古くなるため本文から外し、factも削除した。 [監査 2026-10-22] 営業時間は、Googleマップが月〜金9:00-18:00(延長を含む)、公式サイトが9:00-17:00(延長18時または19時まで)のため、店データは公式の基本の時間(9:00-17:00)にした(placeOverride.hoursByDay)。",
+  "placeOverride": {
+    "hoursByDay": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "定休日",
+      "日": "定休日"
+    }
+  }
+}

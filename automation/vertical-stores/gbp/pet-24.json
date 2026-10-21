@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 24,
+  "sheet": {
+    "name": "ペットシッターかわい",
+    "address": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=c0761affebde73b0&hl=ja&sxsrf=AE3TifOdT8Eo_-3smK1LuXjjEB7z2VoNzA:1766567894304&kgmid=/g/1hd_mxllm&q=%E3%83%9A%E3%83%83%E3%83%88%E3%82%B7%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8B%E3%82%8F%E3%81%84&shndl=30&shem=ptotplc,shrtn&source=sh/x/loc/uni/m1/1&kgs=1e3e46c8e790694c&utm_source=ptotplc,shrtn,sh/x/loc/uni/m1/1",
+    "type": "ペット",
+    "d1": "ペットホテル",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/1hd_mxllm",
+  "queries": [
+    "ペットシッターかわい 兵庫県神戸市兵庫区下沢通３丁目２−１６"
+  ],
+  "candidates": [
+    {
+      "name": "ペットシッターかわい",
+      "address": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+      "url": "https://www.google.com/maps/place/%E3%83%9A%E3%83%83%E3%83%88%E3%82%B7%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8B%E3%82%8F%E3%81%84/@34.6760096,135.1645374,17z/data=!3m1!4b1!4m6!3m5!1s0x60008f73ea86e1cb:0x8cce9ed143c93ec8!8m2!3d34.6760096!4d135.1645374!16s%2Fg%2F1hd_mxllm",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%9A%E3%83%83%E3%83%88%E3%82%B7%E3%83%83%E3%82%BF%E3%83%BC%E3%81%8B%E3%82%8F%E3%81%84/@34.6760096,135.1645374,17z/data=!3m1!4b1!4m6!3m5!1s0x60008f73ea86e1cb:0x8cce9ed143c93ec8!8m2!3d34.6760096!4d135.1645374!16s%2Fg%2F1hd_mxllm?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+    "place": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+    "sheetNorm": "兵庫県神戸市兵庫区下沢通3-2-16",
+    "placeNorm": "兵庫県神戸市兵庫区下沢通3-2-16",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ペットシッターかわい",
+    "address": "兵庫県神戸市兵庫区下沢通３丁目２−１６",
+    "category": "ペット ホテル業",
+    "lat": 34.6760096,
+    "lng": 135.1645374,
+    "gbpUrl": "https://maps.google.com/?cid=10146221632134921928",
+    "phone": "078-575-2085",
+    "website": "http://sitterkawai.com/",
+    "hours": {
+      "月": "08:00–20:00",
+      "火": "08:00–20:00",
+      "水": "08:00–20:00",
+      "木": "08:00–20:00",
+      "金": "08:00–20:00",
+      "土": "08:00–20:00",
+      "日": "08:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:51:54.402Z",
+  "seconds": 5.5
+}

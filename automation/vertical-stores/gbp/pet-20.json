@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 20,
+  "sheet": {
+    "name": "Dog Salon Meira",
+    "address": "愛知県一宮市島村江向８３−１",
+    "url": "https://share.google/3LeTMRP4J8BMdd838",
+    "type": "ペット",
+    "d1": "ペット(トリミング)サロン",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=bdf989aec2a32a28&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11kbwn335l&q=Dog+Salon+Meira&shndl=30&shem=bdsle,damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=4d5389756bbe3e06&utm_source=bdsle,damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11kbwn335l",
+  "queries": [
+    "Dog Salon Meira"
+  ],
+  "candidates": [
+    {
+      "name": "Dog Salon Meira",
+      "address": "愛知県一宮市島村江向８３−１",
+      "url": "https://www.google.com/maps/place/Dog+Salon+Meira/data=!4m7!3m6!1s0x6003a775dc15e13d:0xd1bbf50b459fbef9!8m2!3d35.3431326!4d136.8179169!16s%2Fg%2F11kbwn335l!19sChIJPeEV3HWnA2AR-b6fRQv1u9E",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Dog+Salon+Meira/data=!4m7!3m6!1s0x6003a775dc15e13d:0xd1bbf50b459fbef9!8m2!3d35.3431326!4d136.8179169!16s%2Fg%2F11kbwn335l!19sChIJPeEV3HWnA2AR-b6fRQv1u9E?authuser=0&hl=ja&g_ep=EgoyMDI2MTAxOC4wIJJjKgBIAVAD&rclk=1",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県一宮市島村江向８３−１",
+    "place": "愛知県一宮市島村江向８３−１",
+    "sheetNorm": "愛知県一宮市島村江向83-1",
+    "placeNorm": "愛知県一宮市島村江向83-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Dog Salon Meira",
+    "address": "愛知県一宮市島村江向８３−１",
+    "category": "トリミングサロン",
+    "lat": 35.3431326,
+    "lng": 136.8179169,
+    "gbpUrl": "https://maps.google.com/?cid=15112942403333373689",
+    "phone": "080-2620-6101",
+    "website": "https://instagram.com/dog_salon_meira?igshid=YmMyMTA2M2Y=",
+    "hours": {
+      "月": "10:00–15:00",
+      "火": "10:00–15:00",
+      "水": "10:00–15:00",
+      "木": "10:00–15:00",
+      "金": "10:00–15:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "先週、カットの仕方を勉強しに行ってきました〜😄🙏 ニュアンスベアだったり、アフロヘア、マッシュルームカットが苦手なのでしっかりと勉強せねば！！と思い、Dog Salon Senchiさんに行ってたくさんのことを学んできました❣️ カットの事だけでなく、写真の撮り方も上手な方なので写真の撮り方、うちで飼ってる子の事など何でも相談にのっていただいたので色々納得して帰ってくる事ができました。 カットのポイントもいくつか、重要なところのポイントも教えていただいたのでこれからはそこも生かしてもっともっとみなさんに喜んでいただけるように技術をあげて行こうと思います❣️ 勉強させていただいたDog Salon Senchiさんありがとうございました😆🙌 今度はカットしてるところを見てもらって、私の癖だったり、調整を見てもらおうと思います。 これからも技術、歯磨きの事、わんちゃんの事たくさんたくさん勉強してもっと飼い主様に寄り添えるように頑張っていこうと思ってますのでよろしくお願いします。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:51:08.526Z",
+  "seconds": 4.3
+}

@@ -1,0 +1,69 @@
+{
+  "tab": "ペット",
+  "tabEn": "pet",
+  "row": 26,
+  "sheet": {
+    "name": "ブギ・ドギー BOOGIE DOGGY",
+    "address": "愛知県西尾市吉良町下横須賀荒子６３−１",
+    "url": "https://share.google/4qkva39KdSyoHbWvs",
+    "type": "ペット",
+    "d1": "ペットショップ",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=4ba3af865432350d&rlz=1C1TMBY_jaJP997JP997&kgmid=/g/11twp_0tsd&q=%E3%83%96%E3%82%AE%E3%83%BB%E3%83%89%E3%82%AE%E3%83%BC+BOOGIE+DOGGY&shem=bdsle,epsd1,ptotple,shrtsdl&shndl=30&source=sh/x/loc/uni/m1/1&kgs=b9c071a900d98023&utm_source=bdsle,epsd1,ptotple,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11twp_0tsd",
+  "queries": [
+    "ブギ・ドギー BOOGIE DOGGY"
+  ],
+  "candidates": [
+    {
+      "name": "ブギ・ドギー BOOGIE DOGGY",
+      "address": "愛知県西尾市吉良町下横須賀荒子６３−１",
+      "url": "https://www.google.com/maps/place/%E3%83%96%E3%82%AE%E3%83%BB%E3%83%89%E3%82%AE%E3%83%BC+BOOGIE+DOGGY/@34.8203158,137.0574578,17z/data=!3m1!4b1!4m6!3m5!1s0x600493bb7c06958f:0x99b6441bd693ee67!8m2!3d34.8203158!4d137.0574578!16s%2Fg%2F11twp_0tsd",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%83%96%E3%82%AE%E3%83%BB%E3%83%89%E3%82%AE%E3%83%BC+BOOGIE+DOGGY/@34.8203158,137.0574578,17z/data=!3m1!4b1!4m6!3m5!1s0x600493bb7c06958f:0x99b6441bd693ee67!8m2!3d34.8203158!4d137.0574578!16s%2Fg%2F11twp_0tsd?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "愛知県西尾市吉良町下横須賀荒子６３−１",
+    "place": "愛知県西尾市吉良町下横須賀荒子６３−１",
+    "sheetNorm": "愛知県西尾市吉良町下横須賀荒子63-1",
+    "placeNorm": "愛知県西尾市吉良町下横須賀荒子63-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ブギ・ドギー BOOGIE DOGGY",
+    "address": "愛知県西尾市吉良町下横須賀荒子６３−１",
+    "category": "犬のブリーダー",
+    "lat": 34.8203158,
+    "lng": 137.0574578,
+    "gbpUrl": "https://maps.google.com/?cid=11076115219919138407",
+    "phone": "090-8672-1685",
+    "website": "https://boogiedoggy.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "10:30–17:00",
+      "火": "10:30–17:00",
+      "水": "10:30–17:00",
+      "木": "10:30–17:00",
+      "金": "10:30–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "黒と白のボストンテリア健康管理の秘訣 黒と白のボストンテリアは、その愛らしい見た目と活発な性格で多くの愛犬家に愛されています。ブリーダーとして、この特別な犬種の健康管理には細心の注意が求められます。本ブログでは、黒と白のボストンテリアの健康を維持するための基本的なケア方法から、遺伝的な健康リスクの理解、適切な食事管理、運動習慣の確立、定期的な獣医検診の重要性まで、多角的に解説します。また、ブリーダーとして実際の経験をもとに、健康的な個体を育てるためのポイントや注意事項を共有し、愛犬の寿命と生活… 愛知県西尾市でブリーダーをお探しの方はブギ・ドギーまでご相談ください。 愛知県西尾市の上横須賀駅から車で5分のところにあるブギ・ドギー(BOOGIE DOGGY)は、西尾市エリアでボストンテリアを中心にトイプードル、フレンチブルドッグなどを育てている犬舎です。少数頭飼育で1頭1頭しっかり管理をして家族として暮らし、日中はドッグランでのびのびと運動させています。"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T14:52:18.701Z",
+  "seconds": 8.1
+}
