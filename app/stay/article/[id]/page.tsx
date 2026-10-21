@@ -4,19 +4,17 @@ import StayArticle from "@/components/portal/stayproto/decided/article/live/Stay
 import { loadStayArticle } from "@/components/portal/stayproto/decided/article/live/articleData";
 import { stayLine } from "@/components/portal/stayproto/decided/common/live";
 import { notFoundMetadata } from "@/components/portal/pages/data";
-import { isStayDecided } from "@/lib/portal/stayDesign";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { countPlaces, getPlaces } from "@/lib/places";
 import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICALS } from "@/lib/verticals";
 
 // 宿の記事(決定デザイン ①。実在の宿 1 軒ずつの紹介記事)。/stay/article/{id}(id = 宿の ID。リンク先の宿ページは /stay/shop/{id})
-// STAY_DESIGN が "legacy" のあいだは 404。宿が無い・紹介記事が無い宿も 404(その宿のページ /stay/shop/{id} は残る)。
+// 宿が無い・紹介記事が無い宿は 404(その宿のページ /stay/shop/{id} は残る)。
 // 文は Place.article の事実だけ(articleData.ts)。metadata(title・description・canonical・OGP・robots)は宿のページと同じ作り。
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => {
-  if (!isStayDecided()) return [];
   return (await getPlaces("stay")).filter((p) => p.article).map((p) => ({ id: p.id }));
 });
 
@@ -32,7 +30,6 @@ function decode(id: string): string {
 
 export async function generateMetadata({ params }: Props) {
   assertPortalLive();
-  if (!isStayDecided()) return notFoundMetadata();
   const id = decode((await params).id);
   const v = await loadStayArticle(id);
   if (!v) return notFoundMetadata();
@@ -51,7 +48,6 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function Page({ params }: Props) {
   assertPortalLive();
-  if (!isStayDecided()) notFound();
   const id = decode((await params).id);
   const v = await loadStayArticle(id);
   if (!v) notFound();
