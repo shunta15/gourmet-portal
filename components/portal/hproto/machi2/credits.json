@@ -119,30 +119,30 @@
     "page": "hub",
     "file": "public/_portal/hproto/machi2/lower/sl-s-summer.webp",
     "slot": "sl-s-summer",
-    "commonsTitle": "File:Ginzan Onsen in blue hour.jpg",
-    "pageUrl": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_in_blue_hour.jpg",
-    "author": "lumoplank",
+    "commonsTitle": "File:Kinosaki onsen Kita-yanagi street.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kinosaki_onsen_Kita-yanagi_street.jpg",
+    "author": "Drivephotographer",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ginzan_Onsen_in_blue_hour.jpg",
-    "srcW": 5237,
-    "srcH": 3927,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Kinosaki_onsen_Kita-yanagi_street.jpg",
+    "srcW": 4000,
+    "srcH": 2250,
     "outW": 1600,
     "outH": 667,
-    "note": "代替: 山形・銀山温泉の夕暮れ(川・灯り・温泉街)。城崎温泉の CC0 は読める店名入りのため不採用",
+    "note": "城崎温泉・北柳通り(柳・石灯籠・石橋・大谿川ぞいの道)。全幅の切り抜きは店名「赤石屋」「COFFEE」「DRIP&DROP」と路面の「止まれ」が読めるため、原寸 4000×2250 の左側 2350×979 だけを sharp で切り出して 1600×667 に縮小(拡大なし)。看板・幟・標識の文字は 2 倍拡大で判読不能を確認",
     "crop": {
-      "fetchedW": 3840,
+      "fetchedW": 4000,
       "left": 0,
-      "top": 985,
-      "width": 3840,
-      "height": 1600,
+      "top": 640,
+      "width": 2350,
+      "height": 979,
       "focus": [
-        0.5,
-        0.62
+        0.294,
+        0.502
       ]
     },
     "tier": "free",
-    "credit": "https://www.flickr.com/photos/199350666@N08/55148700158"
+    "credit": "Own work"
   },
   {
     "page": "hub",
