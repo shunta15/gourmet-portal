@@ -8,10 +8,13 @@ export function Gallery() {
     <section className="sp-strip" aria-label="写真" data-io-group>
       <ul className="sp-strip-in">
         {STRIP.map((p, i) => (
-          <li key={p.src} className="sp-ph pt-lift pt-zoom io" style={{ ["--w" as string]: p.w }}>
-            <img src={p.src} width={p.w * 2} height={220} alt={p.alt} loading={i < 5 ? "eager" : "lazy"} />
+          <li key={p.src} className="sp-ph pt-lift pt-zoom pt-tilt" data-tilt="6" style={{ ["--w" as string]: p.w }}>
+            <div className="sp-ph-w pt-wipe" data-wipe={i % 2 ? "up" : "left"}>
+              <img src={p.src} width={p.w * 2} height={220} alt={p.alt} loading={i < 5 ? "eager" : "lazy"} />
+            </div>
+            <i className="pt-tilt-glare" aria-hidden="true" />
             {i === STRIP.length - 1 ? (
-              <a href="#" className="sp-allph pt-press" aria-label="すべての写真を見る(24枚)">
+              <a href="#" className="sp-allph pt-press pt-popin" style={{ ["--d" as string]: "1500ms" }} aria-label="すべての写真を見る(24枚)">
                 <IcGallery aria-hidden="true" />
                 <span>
                   すべての写真を見る（<CountUp to={24} />枚）

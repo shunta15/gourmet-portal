@@ -107,11 +107,11 @@ export function FilterBar({ filters }: { filters: FilterDef[] }) {
             ×
           </button>
         </div>
-        <div className="sr-fgrid" data-io-group>
+        <div className="sr-fgrid">
           {filters.map((f, i) => {
             const I = ICONS[f.icon];
             return (
-              <div key={f.key} className={`sr-fp sr-fp${i + 1} io`}>
+              <div key={f.key} className={`sr-fp sr-fp${i + 1} pt-popin`} style={{ ["--d" as string]: `${760 + i * 100}ms` }}>
                 <Dropdown label={f.label} options={f.options} value={vals[f.key]} onChange={(v) => setVals((s) => ({ ...s, [f.key]: v }))} className="sr-fdd" menuClassName="sr-fmenu">
                   {() => (
                     <span className="sr-pill pt-hov pt-press">
@@ -139,10 +139,36 @@ export function FilterBar({ filters }: { filters: FilterDef[] }) {
 }
 
 // ------------------------------------------------------------------ 検索の箱
+/** 見本の例文を、箱がポップインしたあとにタイプライターで打つ(打ち終わると見本どおり)。動きを減らす設定では打たずに最初から全文。start = 打ち始める ms */
+function useTypewriter(full: string, start: number, speed: number): string {
+  const [t, setT] = useState(full);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let i = 0;
+    let iv = 0;
+    setT("");
+    const to = window.setTimeout(() => {
+      iv = window.setInterval(() => {
+        i++;
+        setT(full.slice(0, i));
+        if (i >= full.length) window.clearInterval(iv);
+      }, speed);
+    }, start);
+    return () => {
+      window.clearTimeout(to);
+      window.clearInterval(iv);
+      setT(full);
+    };
+  }, [full, start, speed]);
+  return t;
+}
+
 const CATEGORIES = ["すべて", "カフェ・飲食店", "ペットホテル・宿泊", "ドッグラン", "動物病院・クリニック", "ペット用品・ショップ"];
 export function SearchBox() {
   const [area, setArea] = useState("");
   const [cat, setCat] = useState<string | null>(null);
+  const ph1 = useTypewriter("(例：東京、横浜、鎌倉)", 1250, 85);
+  const ph2 = useTypewriter("(例：カフェ、宿泊、ドッグラン)", 2500, 70);
   const go = (e: FormEvent) => {
     e.preventDefault();
     const el = document.getElementById("sr-results");
@@ -150,15 +176,15 @@ export function SearchBox() {
   };
   return (
     <form className="sr-box" role="search" onSubmit={go}>
-      <span className="sr-box-ic1" aria-hidden="true">
+      <span className="sr-box-ic1 pt-popin" style={{ ["--d" as string]: "900ms" }} aria-hidden="true">
         <IconSearch />
       </span>
       <label className="sr-bf sr-bf1">
         <span className="sr-bf-l">エリア・駅名</span>
-        <input type="text" className="sr-bf-in" placeholder="(例：東京、横浜、鎌倉)" value={area} onChange={(e) => setArea(e.target.value)} autoComplete="off" />
+        <input type="text" className="sr-bf-in" placeholder={ph1 || " "} value={area} onChange={(e) => setArea(e.target.value)} autoComplete="off" />
       </label>
       <i className="sr-box-div" aria-hidden="true" />
-      <span className="sr-box-ic2" aria-hidden="true">
+      <span className="sr-box-ic2 pt-popin" style={{ ["--d" as string]: "1000ms" }} aria-hidden="true">
         <IconCategory />
       </span>
       <div className="sr-bf sr-bf2">
@@ -166,13 +192,13 @@ export function SearchBox() {
           {() => (
             <span className="sr-cbtn">
               <span className="sr-bf-l">カテゴリ</span>
-              <span className={`sr-bf-in ${cat ? "is-set" : ""}`}>{cat ?? "(例：カフェ、宿泊、ドッグラン)"}</span>
+              <span className={`sr-bf-in ${cat ? "is-set" : ""}`}>{cat ?? (ph2 || "\u00a0")}</span>
               <IconChevronDown className="sr-cchev" />
             </span>
           )}
         </Dropdown>
       </div>
-      <button type="submit" className="sr-go pt-press pt-shimmer pt-hov">
+      <button type="submit" className="sr-go pt-press pt-shimmer pt-hov pt-magnet">
         <IconSearch className="sr-go-i" />
         <span>この条件で検索</span>
       </button>
@@ -205,21 +231,21 @@ export function Pager({ total = 125 }: { total?: number }) {
   const nums = [1, 2, 3, 4, 5];
   return (
     <nav className="sr-pager" aria-label="ページ送り">
-      <button type="button" className="sr-pg sr-pg-arrow sr-pg-prev pt-press" aria-label="前のページ" disabled={cur === 1} onClick={() => go(cur - 1)}>
+      <button type="button" className="sr-pg sr-pg-arrow sr-pg-prev pt-press pt-magnet" data-magnet="0.55" data-magnet-r="16" aria-label="前のページ" disabled={cur === 1} onClick={() => go(cur - 1)}>
         <IconChevronLR dir="left" />
       </button>
       {nums.map((n) => (
-        <button key={n} type="button" className={`sr-pg sr-pg-n sr-pg-n${n} pt-press ${cur === n ? "is-on" : ""}`} aria-current={cur === n ? "page" : undefined} onClick={() => go(n)}>
+        <button key={n} type="button" className={`sr-pg sr-pg-n sr-pg-n${n} pt-press pt-magnet ${cur === n ? "is-on" : ""}`} data-magnet="0.55" data-magnet-r="16" aria-current={cur === n ? "page" : undefined} onClick={() => go(n)}>
           {n}
         </button>
       ))}
       <span className="sr-pg-dots" aria-hidden="true">
         …
       </span>
-      <button type="button" className={`sr-pg sr-pg-last pt-press ${cur === total ? "is-on" : ""}`} aria-current={cur === total ? "page" : undefined} onClick={() => go(total)}>
+      <button type="button" className={`sr-pg sr-pg-last pt-press pt-magnet ${cur === total ? "is-on" : ""}`} data-magnet="0.55" data-magnet-r="16" aria-current={cur === total ? "page" : undefined} onClick={() => go(total)}>
         {total}
       </button>
-      <button type="button" className="sr-pg sr-pg-arrow sr-pg-next pt-press" aria-label="次のページ" disabled={cur === total} onClick={() => go(cur + 1)}>
+      <button type="button" className="sr-pg sr-pg-arrow sr-pg-next pt-press pt-magnet" data-magnet="0.55" data-magnet-r="16" aria-label="次のページ" disabled={cur === total} onClick={() => go(cur + 1)}>
         <IconChevronLR dir="right" />
       </button>
     </nav>

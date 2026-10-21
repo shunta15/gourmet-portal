@@ -1,5 +1,5 @@
 import Shell from "@/components/portal/petproto/decided/common/Shell";
-import { Hero, FilterRow, Crumb, ResultHead, Cards, Side, SearchFooter } from "@/components/portal/petproto/decided/search/SearchPage";
+import { Hero, FilterRow, Crumb, ResultHead, Cards, Side, SearchFooter, Trail } from "@/components/portal/petproto/decided/search/SearchPage";
 import { Pager } from "@/components/portal/petproto/decided/search/Controls";
 import "@/components/portal/petproto/decided/search/search.css";
 
@@ -14,6 +14,7 @@ export default function Page() {
         <ResultHead />
         <Cards />
         <Pager />
+        <Trail />
         <Side />
       </div>
       <SearchFooter />

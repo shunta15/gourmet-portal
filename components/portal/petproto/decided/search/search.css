@@ -23,13 +23,38 @@
 .pt-root .sr-foot { padding: 0; color: var(--pt-ink); }
 
 @keyframes sr-rise { from { opacity: 0; translate: 0 22px; } to { opacity: 1; translate: 0 0; } }
+/* スマホの common は [data-io="left|right"] の translate が .is-in より後ろで勝って、出たあとも 18px ずれたままになる。ここで .is-in を優先し直す */
+.pt-root .sr .io[data-io="left"].is-in, .pt-root .sr .io[data-io="right"].is-in { translate: none; }
+/* 検索の箱: 小さく下から、少し行き過ぎて収まるポップイン */
+@keyframes sr-popbox { from { opacity: 0; scale: 0.8; translate: 0 calc(34 * var(--u)); } to { opacity: 1; scale: 1; translate: 0 0; } }
+@keyframes sr-popbox-m { from { opacity: 0; scale: 0.88; translate: 0 26px; } to { opacity: 1; scale: 1; translate: 0 0; } }
+
+/* ---------- 動き(2026-10-21)。common の組み合わせの取りこぼしを、この 2 ページの中だけで足し直す ---------- */
+.sr-photo-w { position: absolute; inset: 0; }
+.sr-photo .pt-tilt-glare { background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 62%); }
+/* 写真の光沢(触ると、ひと筋の光が左から右へ走る) */
+.sr-photo::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(105deg, transparent 34%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0.2) 54%, transparent 64%); translate: -130% 0; }
+.sr-card:hover .sr-photo::after { translate: 130% 0; transition: translate 1.15s cubic-bezier(0.45, 0.05, 0.35, 1); }
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* 出現(io)+ 持ち上がり(pt-lift)+ ティルト(pt-tilt)を同じ要素に重ねるので、出現の transition をここで残す */
+  .pt-root .sr-card.io.pt-lift.pt-tilt { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  .pt-root .sr-card.io.pt-lift.pt-tilt.is-tilting { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  /* 右の列: 出現(io)+ 背景色(pt-bgshift) */
+  .pt-root .sr-side.io.pt-bgshift { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), background-color 0.45s ease; }
+  /* ハート: 写真のワイプのあとにポップイン(押したときの拡大・色の切り替えは残す) */
+  .pt-root .sr .sr-heart.pt-popin { --d: calc(var(--c, 0ms) + 900ms); transition: opacity 0.5s ease var(--d), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d), transform 0.15s, background 0.2s; }
+}
 
 @media (min-width: 860px) {
   .sr { width: calc(948 * var(--u)); max-width: 100%; margin: 0 auto; height: calc(1403 * var(--u)); }
 
   /* ---------- ヒーロー(見本の 53〜277) ---------- */
   .sr-hero { position: absolute; left: 0; top: 0; width: 100%; height: calc(224 * var(--u)); overflow: hidden; background: #f6f4ef; }
+  .sr-hero-par { position: absolute; inset: 0; transform-origin: 50% 100%; scale: calc(1 + var(--hp, 0) * 0.12); translate: 0 calc(var(--hp, 0) * 22 * var(--u)); }
   .sr-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 74% 38%; }
+  /* 文字の層(見本の位置のまま。先頭では 0)。写真より速く上へ抜ける */
+  .sr-h1-w, .sr-sub-w { position: relative; z-index: 2; translate: 0 calc(var(--hp, 0) * -30 * var(--u)); }
+  .sr-sub-w { translate: 0 calc(var(--hp, 0) * -46 * var(--u)); }
   .sr .sr-hero-sh { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
   .sr-h1-w { margin: 0; font: inherit; }
   .sr-h1 { position: absolute; left: calc(60 * var(--u)); top: calc((81.1 - 52.5) * var(--u)); z-index: 2; font-family: var(--pt-ff-min); font-weight: 500; font-size: calc(30.2 * var(--u)); line-height: calc(45 * var(--u)); letter-spacing: 0.113em; color: #1a1613; white-space: nowrap; }
@@ -37,7 +62,7 @@
   .sr-sub { position: absolute; left: calc(60 * var(--u)); top: calc((181.6 - 52.5) * var(--u)); z-index: 2; margin: 0; font-size: calc(10.8 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.17em; font-weight: 500; color: #2f2a25; white-space: nowrap; }
 
   /* ---------- 検索の箱(246〜304) ---------- */
-  .sr-boxw { position: absolute; left: calc(50 * var(--u)); top: calc((246.3 - 52.5) * var(--u)); width: calc(849 * var(--u)); height: calc(58.3 * var(--u)); z-index: 5; animation: sr-rise 0.95s cubic-bezier(0.2, 0.75, 0.2, 1) 0.55s both; }
+  .sr-boxw { position: absolute; left: calc(50 * var(--u)); top: calc((246.3 - 52.5) * var(--u)); width: calc(849 * var(--u)); height: calc(58.3 * var(--u)); z-index: 5; animation: sr-popbox 1.1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.55s both; }
   .sr-box { position: absolute; inset: 0; margin: 0; background: #fff; border-radius: calc(26 * var(--u)); box-shadow: 0 0 0 calc(3 * var(--u)) rgba(255, 255, 255, 0.55), 0 calc(5 * var(--u)) calc(20 * var(--u)) rgba(70, 50, 30, 0.13); }
   .sr-boxw .sr-box.pt-float { animation: pt-float 5.5s ease-in-out 1.6s infinite alternate; }
   .sr-box-ic1 { position: absolute; left: calc(22.5 * var(--u)); top: calc(19.6 * var(--u)); width: calc(19 * var(--u)); height: calc(19 * var(--u)); color: #2a2622; }
@@ -157,6 +182,9 @@
   .sr-pg-n5 { left: calc(377 * var(--u)); }
   .sr-pg-dots { position: absolute; left: calc(417 * var(--u)); top: calc(11 * var(--u)); width: calc(12.6 * var(--u)); text-align: center; font-size: calc(9 * var(--u)); line-height: calc(14 * var(--u)); color: #8a847c; letter-spacing: 0.05em; }
   .sr-pg-last { left: calc(436 * var(--u)); top: calc(3.3 * var(--u)); width: calc(30 * var(--u)); height: calc(30 * var(--u)); border-color: transparent; background: transparent; }
+  .sr-trail-h { position: absolute; left: calc(282 * var(--u)); top: calc(19 * var(--u)); translate: 0 -50%; }
+  .sr-trail-w { position: absolute; left: calc(556 * var(--u)); top: calc((1392 - 52.5 + 18) * var(--u)); height: 0; z-index: 2; pointer-events: none; }
+  .sr-trail-w .pt-paws { position: absolute; left: 0; top: 0; translate: 0 -50%; }
 
   /* ---------- 右の列(419.5〜1382) ---------- */
   .sr-side { position: absolute; left: calc(662 * var(--u)); top: calc((419.5 - 52.5) * var(--u)); width: calc(265 * var(--u)); height: calc(962 * var(--u)); border-radius: calc(10 * var(--u)); background: #faf8f6; z-index: 2; }
@@ -175,8 +203,8 @@
 
   .sr-map { position: absolute; left: calc(12.4 * var(--u)); top: calc(46.3 * var(--u)); width: calc(242 * var(--u)); height: calc(201 * var(--u)); border-radius: calc(8 * var(--u)); }
   .sr-map-clip { position: absolute; inset: 0; overflow: hidden; border-radius: calc(8 * var(--u)); }
-  .sr-map-img { width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 55%; scale: calc(1 + max(0, var(--p, 0) - 0.35) * 0.12); transition: scale 0.2s linear; }
-  .sr-pin { position: absolute; left: calc((var(--x) - 13.5) * var(--u)); top: calc((var(--y) - 12.8) * var(--u)); width: calc(27 * var(--u)); height: calc(34.9 * var(--u)); display: block; }
+  .sr-map-img { width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 55%; scale: calc(1 + max(0, var(--p, 0) - 0.08) * 0.14); transition: scale 0.2s linear; }
+  .sr-pin { transform-origin: 50% 100%; position: absolute; left: calc((var(--x) - 13.5) * var(--u)); top: calc((var(--y) - 12.8) * var(--u)); width: calc(27 * var(--u)); height: calc(34.9 * var(--u)); display: block; }
   .sr-pin-i { display: block; width: 100%; height: 100%; filter: drop-shadow(0 calc(2 * var(--u)) calc(3 * var(--u)) rgba(50, 35, 20, 0.28)); transition: translate 0.35s cubic-bezier(0.3, 1.7, 0.5, 1); }
   .sr-pin:hover .sr-pin-i { translate: 0 calc(-4 * var(--u)); }
   .sr-pin-l { position: absolute; left: 50%; top: calc((var(--ly) - var(--y) + 12.8) * var(--u)); translate: -50% -50%; padding: calc(2.4 * var(--u)) calc(8 * var(--u)) calc(2.4 * var(--u)) calc(8 * var(--u) + 0.08em); border-radius: calc(99 * var(--u)); background: rgba(255, 255, 255, 0.5); box-shadow: 0 0 calc(7 * var(--u)) calc(4 * var(--u)) rgba(255, 255, 255, 0.55); font-family: var(--pt-ff-min); font-weight: 700; font-size: calc(11 * var(--u)); line-height: calc(13 * var(--u)); letter-spacing: 0.08em; color: #26221e; white-space: nowrap; }
@@ -268,6 +296,9 @@
 @media (max-width: 859px) {
   .sr { width: 100%; }
   .sr-hero { position: relative; height: 358px; overflow: hidden; background: linear-gradient(180deg, #f8f6f1 0%, #f8f6f1 55%, #fefefe 100%); }
+  .sr-hero-par { position: absolute; inset: 0; transform-origin: 50% 100%; scale: calc(1 + var(--hp, 0) * 0.12); translate: 0 calc(var(--hp, 0) * 26px); }
+  .sr-h1-w, .sr-sub-w { position: relative; z-index: 2; translate: 0 calc(var(--hp, 0) * -24px); }
+  .sr-sub-w { translate: 0 calc(var(--hp, 0) * -40px); }
   .sr-hero-img { position: absolute; left: 0; right: 0; bottom: 0; top: auto; width: 100%; height: 208px; object-fit: cover; object-position: 87% 30%; transform-origin: 70% 40%; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 36%, #000 74%, transparent 84%); mask-image: linear-gradient(180deg, transparent 0, #000 36%, #000 74%, transparent 84%); }
   .sr .sr-hero-sh { position: absolute; left: 0; right: 0; bottom: 0; top: 150px; pointer-events: none; z-index: 1; }
   .sr-h1-w { margin: 0; font: inherit; }
@@ -275,7 +306,7 @@
   .sr-sub { position: absolute; left: 16px; right: 16px; top: 126px; z-index: 2; margin: 0; font-size: 12.5px; line-height: 1.85; letter-spacing: 0.03em; font-weight: 500; color: #2f2a25; }
   .sr-sub .pt-wl { display: block; }
 
-  .sr-boxw { position: relative; z-index: 5; margin: -52px 14px 0; animation: sr-rise 0.95s cubic-bezier(0.2, 0.75, 0.2, 1) 0.5s both; }
+  .sr-boxw { position: relative; z-index: 5; margin: -52px 14px 0; animation: sr-popbox-m 1.05s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s both; }
   .sr-box { position: relative; display: grid; gap: 0; margin: 0; padding: 6px 14px 14px; background: #fff; border-radius: 18px; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.55), 0 8px 24px rgba(70, 50, 30, 0.14); }
   .sr-box-ic1, .sr-box-ic2 { position: absolute; left: 14px; top: 0; width: 20px; height: 20px; color: #2a2622; }
   .sr-box-ic1 { top: 21px; }
@@ -368,6 +399,10 @@
   .sr-pg-last { border-color: transparent; background: transparent; width: 44px; }
   .sr-pg-last.is-on { background: var(--pt-brown); border-color: var(--pt-brown); }
   .sr-pg-dots { color: #8a847c; font-size: 14px; }
+  .sr-trail-h { display: none; }
+  .sr-trail-w { position: relative; height: 0; margin: 10px 0 0; pointer-events: none; }
+  .sr-trail-w .pt-paws { position: absolute; left: 50%; top: 2px; translate: -50% 0; --paw: 10px; --paw-gap: 9px; }
+  .sr-fp1 { --d: 100ms !important; } .sr-fp2 { --d: 160ms !important; } .sr-fp3 { --d: 220ms !important; } .sr-fp4 { --d: 280ms !important; } .sr-fp5 { --d: 340ms !important; } .sr-fp6 { --d: 400ms !important; }
   .sr-pg-n5 { display: none; }
   .sr-pg-n4 { display: none; }
 
@@ -379,8 +414,8 @@
   .sr-sd-more svg { width: 14px; }
   .sr-map { position: relative; margin-top: 14px; height: 0; padding-top: 83%; border-radius: 12px; }
   .sr-map-clip { position: absolute; inset: 0; overflow: hidden; border-radius: 12px; }
-  .sr-map-img { width: 100%; height: 100%; object-fit: cover; }
-  .sr-pin { position: absolute; left: calc(var(--x) / 242 * 100% - 17px); top: calc(var(--y) / 201 * 100% - 17px); width: 34px; height: 44px; display: block; }
+  .sr-map-img { width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 55%; scale: calc(1 + max(0, var(--p, 0) - 0.08) * 0.14); transition: scale 0.2s linear; }
+  .sr-pin { transform-origin: 50% 100%; position: absolute; left: calc(var(--x) / 242 * 100% - 17px); top: calc(var(--y) / 201 * 100% - 17px); width: 34px; height: 44px; display: block; }
   .sr-pin-i { display: block; width: 100%; height: 100%; filter: drop-shadow(0 2px 3px rgba(50, 35, 20, 0.28)); }
   .sr-pin-l { position: absolute; left: 50%; top: calc((var(--ly) - var(--y)) / 201 * 100% * 4.2 + 17px); translate: -50% -50%; padding: 3px 10px; border-radius: 99px; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(3px); font-family: var(--pt-ff-min); font-weight: 700; font-size: 13px; line-height: 1.2; color: #2d2925; white-space: nowrap; }
   .sr-areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 10px; margin: 16px 0 0; padding: 0; list-style: none; }

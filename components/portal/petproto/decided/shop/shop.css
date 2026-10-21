@@ -27,6 +27,40 @@
 .sp .sp-ghost:hover svg { transform: translateX(4px); }
 .sp .sp-tabs-sent { display: block; height: 0; }
 
+/* ---- 動き(2026-10-21)。common の組み合わせの取りこぼしを、この 1 ページの中だけで足し直す ---- */
+/* スマホの common は [data-io="left|right"] の translate が .is-in より後ろで勝って、出たあとも 18px ずれたままになる。ここで .is-in を優先し直す */
+.pt-root .sp .io[data-io="left"].is-in, .pt-root .sp .io[data-io="right"].is-in { translate: none; }
+@media (max-width: 859px) and (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .pt-root .sp .sp-about-p.io-self { opacity: 0; transition: opacity 0.9s ease var(--d, 0ms); }
+  .pt-root .sp .sp-about-p.io-self.is-in { opacity: 1; }
+}
+/* ヒーロー写真: 外側 = スクロールで寄りながら遅れて動く(先頭では見本どおり)/ 内側の img = ゆっくり寄り続ける(pt-kb) */
+.sp .sp-hero-zoom { position: absolute; inset: 0; transform-origin: 50% 100%; scale: calc(1 + var(--hp, 0) * 0.12); translate: 0 calc(var(--hp, 0) * 10%); }
+.sp .sp-hero-wr { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.sp .sp-ph-w { position: absolute; inset: 0; }
+.sp .sp-ph .pt-tilt-glare { background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 62%); }
+.sp .sp-mi-ph, .sp .sp-si-ph, .sp .sp-ra-ph { position: relative; }
+/* 写真の光沢(触ると、ひと筋の光が左から右へ走る) */
+.sp .sp-ph::after, .sp .sp-mi-ph::after, .sp .sp-si-ph::after, .sp .sp-ra-ph::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(105deg, transparent 34%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0.2) 54%, transparent 64%); translate: -130% 0; }
+.sp .sp-ph:hover::after, .sp .sp-mi:hover .sp-mi-ph::after, .sp .sp-si:hover .sp-si-ph::after, .sp .sp-ra:hover .sp-ra-ph::after { translate: 130% 0; transition: translate 1.15s cubic-bezier(0.45, 0.05, 0.35, 1); }
+/* 追従タブの下線: 行き過ぎて収まるスライド */
+.sp .sp-tabs .pt-tabs-ind { transition: translate 0.55s cubic-bezier(0.34, 1.4, 0.64, 1), width 0.55s cubic-bezier(0.34, 1.4, 0.64, 1); }
+/* 節の背景色(白〜生成り): 節ごとに、画面の中ほどへ来るあいだに --bg-from から --bg-to(見本の色)へじわっと変わる */
+.pt-root .sp .pt-bgshift { background-color: color-mix(in srgb, var(--bg-to, #f8f8f6) calc(var(--p, 1) * 100%), var(--bg-from, #fefefe)); }
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* 出現(io / popin)+ 持ち上がり(pt-lift)+ ティルト(pt-tilt)を同じ要素に重ねるので、出現の transition をここで残す */
+  .pt-root .sp .io.pt-lift.pt-tilt { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  .pt-root .sp .io.pt-lift.pt-tilt.is-tilting { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  .pt-root .sp .pt-popin.pt-lift.pt-tilt { transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  .pt-root .sp .pt-popin.pt-lift.pt-tilt.is-tilting { transition: opacity 0.5s ease var(--d, 0ms), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d, 0ms), transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
+  /* 予約・問い合わせのボタン: 出現(io)+ 押すと縮む(pt-press)+ マグネット(pt-magnet) */
+  .pt-root .sp .sp-cta.io.pt-magnet.pt-press { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s, border-color 0.2s; }
+  .pt-root .sp .sp-cta.io.pt-magnet.pt-press.is-mag { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s, border-color 0.2s; }
+  /* 施設の線画アイコン: 札のポップインのあと、少し回りながらぴょこっと弾んで収まる */
+  .sp .sp-fi .sp-fi-ic { scale: 0.3; rotate: -20deg; transition: scale 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--d, 0ms) + 300ms), rotate 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--d, 0ms) + 300ms), background 0.3s; }
+  .sp .sp-fi.is-in .sp-fi-ic { scale: 1; rotate: 0deg; }
+}
+
 /* ===================== デスクトップ ===================== */
 @media (min-width: 860px) {
   .sp { width: calc(948 * var(--u)); max-width: 100%; margin: 0 auto; }
@@ -44,6 +78,7 @@
   .sp .sp-hero-img { width: 100%; height: 100%; object-fit: cover; }
   .sp .sp-hero-write { position: absolute; z-index: 3; left: calc(44.5 * var(--u)); top: calc(227 * var(--u)); transform: rotate(-7deg); transform-origin: 0 0; color: #fff; font-size: calc(23 * var(--u)); line-height: calc(39 * var(--u)); letter-spacing: 0.035em; -webkit-text-stroke: calc(0.45 * var(--u)) #fff; text-shadow: 0 1px 8px rgba(40, 24, 8, 0.25); white-space: nowrap; pointer-events: none; }
   .sp .sp-hero-write .pt-wl:nth-child(2) { margin-left: calc(3.5 * var(--u)); }
+  .sp .sp-hero-wr { translate: 0 calc(var(--hp, 0) * -34 * var(--u)); }
   .sp .sp-hero-info { position: relative; }
   .sp .sp-cat { position: absolute; left: calc(28 * var(--u)); top: calc(8 * var(--u)); height: calc(14 * var(--u)); padding: 0 calc(7 * var(--u)); border-radius: calc(7 * var(--u)); background: #ecebe8; color: #6b665f; font-size: calc(6.7 * var(--u)); letter-spacing: 0.16em; font-weight: 500; }
   .sp .sp-hero-heart { position: absolute; left: calc(274.5 * var(--u)); top: calc(5 * var(--u)); width: calc(26 * var(--u)); height: calc(26 * var(--u)); }
@@ -172,7 +207,7 @@
   .sp .sp-ghost--map { position: absolute; left: calc(-1 * var(--u)); top: calc(146 * var(--u)); width: calc(153 * var(--u)); height: calc(28 * var(--u)); font-size: calc(8.2 * var(--u)); letter-spacing: 0.1em; }
   .sp .sp-map { position: absolute; left: calc(331 * var(--u)); top: 0; width: calc(286 * var(--u)); height: calc(173 * var(--u)); }
   .sp .sp-map-clip { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: calc(6 * var(--u)); background: #e7e5e0; box-shadow: 0 0 0 1px rgba(120, 110, 95, 0.08); }
-  .sp .sp-map-img { width: 100%; height: 100%; object-fit: cover; scale: calc(1 + var(--p, 0) * 0.07); transform-origin: 47% 55%; }
+  .sp .sp-map-img { width: 100%; height: 100%; object-fit: cover; scale: calc(1 + max(0, var(--p, 0) - 0.05) * 0.15); transform-origin: 47% 55%; }
   .sp .sp-pin { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; }
   .sp .sp-pin-svg { z-index: 2; position: absolute; left: calc(125.7 * var(--u)); top: calc(70 * var(--u)); width: calc(16.6 * var(--u)); height: calc(23.6 * var(--u)); transform-origin: 50% 100%; animation: sp-pin-bob 3.2s ease-in-out 1.2s infinite; filter: drop-shadow(0 calc(1 * var(--u)) calc(1.5 * var(--u)) rgba(0, 0, 0, 0.25)); }
   .sp .sp-pin-ring { position: absolute; left: calc(134 * var(--u)); top: calc(93.5 * var(--u)); width: calc(20 * var(--u)); height: calc(20 * var(--u)); margin: calc(-10 * var(--u)) 0 0 calc(-10 * var(--u)); border-radius: 50%; border: 1.5px solid rgba(217, 58, 58, 0.5); animation: sp-ring 2.8s ease-out 1.2s infinite; }
@@ -200,6 +235,10 @@
   .sp .sp-rc-s .pt-stars { font-size: calc(11 * var(--u)); letter-spacing: 0.06em; }
   .sp .sp-rc-v { font-size: calc(9.4 * var(--u)); font-weight: 500; color: #3b3631; font-family: var(--pt-ff-jp); }
   .sp .sp-rc-t { position: absolute; left: calc(8 * var(--u)); top: calc(45.2 * var(--u)); font-size: calc(8.5 * var(--u)); line-height: calc(13.5 * var(--u)); letter-spacing: 0.14em; font-weight: 500; color: #46423c; white-space: nowrap; }
+
+  /* シーンの帯の足あと(左の列の下の余白。スクロールに合わせて順に歩く) */
+  .sp .sp-scene { position: relative; }
+  .sp .sp-paws-scene { position: absolute; left: calc(24 * var(--u)); top: calc(124 * var(--u)); }
 
   /* 関連記事(1561〜1659) */
   .sp .sp-rel { position: relative; margin-top: calc(13 * var(--u)); height: calc(98 * var(--u)); }
@@ -241,6 +280,8 @@
   .sp .sp-hero-img { width: 100%; height: 100%; object-fit: cover; }
   .sp .sp-hero-write { position: absolute; z-index: 3; left: 6.5%; top: 63%; transform: rotate(-7deg); transform-origin: 0 0; color: #fff; font-size: 4.9vw; line-height: 8.6vw; letter-spacing: 0.035em; -webkit-text-stroke: 0.3px #fff; text-shadow: 0 1px 8px rgba(40, 24, 8, 0.25); white-space: nowrap; pointer-events: none; }
   .sp .sp-hero-write .pt-wl:nth-child(2) { margin-left: 0.8vw; }
+  .sp .sp-hero-wr { translate: 0 calc(var(--hp, 0) * -26px); }
+  .sp .sp-paws-scene { display: none; }
   .sp .sp-hero-info { position: relative; padding: 18px 16px 6px; }
   .sp .sp-cat { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #ecebe8; color: #6b665f; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; }
   .sp .sp-hero-heart { position: absolute; right: 10px; top: 12px; width: 40px; height: 40px; }
@@ -280,6 +321,9 @@
   .sp .sp-about .sp-ttl { margin-top: 4px; }
   .sp .sp-about-p { margin-top: 12px; font-size: 14px; line-height: 1.95; letter-spacing: 0.04em; font-weight: 500; color: #3f3b36; }
   .sp .sp-about-p br { display: none; }
+  /* 行ごとのマスク(デスクトップ)は、スマホでは文を続けて折り返す元の組みに戻し、まとめてふわっと出す */
+  .sp .sp-about-p .pt-ml { display: inline; overflow: visible; padding: 0; margin: 0; }
+  .sp .sp-about-p .pt-ml-i { display: inline; translate: none; }
   .sp .sp-info { padding: 6px 16px 8px; }
   .sp .sp-ir { display: grid; grid-template-columns: 26px 84px 1fr; align-items: start; padding: 13px 0; border-bottom: 1px solid #ece9e4; }
   .sp .sp-ir:last-child { border-bottom: 0; }
@@ -341,7 +385,7 @@
   .sp .sp-ghost--map { position: relative; left: auto; top: auto; margin-top: 18px; width: auto; height: 42px; }
   .sp .sp-map { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: 286 / 173; margin-top: 22px; }
   .sp .sp-map-clip { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 10px; background: #e7e5e0; box-shadow: 0 0 0 1px rgba(120, 110, 95, 0.08); }
-  .sp .sp-map-img { width: 100%; height: 100%; object-fit: cover; scale: calc(1 + var(--p, 0) * 0.07); transform-origin: 47% 55%; }
+  .sp .sp-map-img { width: 100%; height: 100%; object-fit: cover; scale: calc(1 + max(0, var(--p, 0) - 0.05) * 0.15); transform-origin: 47% 55%; }
   .sp .sp-pin { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; }
   .sp .sp-pin-svg { z-index: 2; position: absolute; left: calc(46.9% - 12px); top: calc(54% - 34px); width: 24px; height: 34px; transform-origin: 50% 100%; animation: sp-pin-bob 3.2s ease-in-out 1.2s infinite; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25)); }
   .sp .sp-pin-ring { position: absolute; left: 46.9%; top: 54%; width: 32px; height: 32px; margin: -16px 0 0 -16px; border-radius: 50%; border: 1.5px solid rgba(217, 58, 58, 0.5); animation: sp-ring 2.8s ease-out 1.2s infinite; }

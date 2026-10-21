@@ -1,21 +1,24 @@
 import Link from "next/link";
 import { IconArrow } from "../common/Icons";
+import { FillHeading, PawTrail } from "../common/Motion";
 import { ARTICLE_HREF } from "../common/site";
 import { ACCESS, IMG, SCENE, SHOP, TABLE } from "./data";
 
 /** おすすめのシーン 4 つ(ベージュの帯) */
 export function Scene() {
   return (
-    <section className="sp-scene" id="scene" aria-label="おすすめのシーン" data-io-group>
+    <section className="sp-scene pt-bgshift pt-skew" data-skew="0.5" id="scene" aria-label="おすすめのシーン" data-io-group style={{ ["--bg-to" as string]: "#f4f2ee", ["--bg-from" as string]: "#ebe3d6" }}>
       <div className="sp-lcol">
         <p className="sp-lab">Scene</p>
-        <h2 className="sp-ttl">おすすめのシーン</h2>
+        <FillHeading as="h2" className="sp-ttl">
+          おすすめのシーン
+        </FillHeading>
         <p className="sp-ldesc">{SCENE.desc[0]}</p>
       </div>
       <div className="sp-items">
       {SCENE.items.map((s) => (
-        <Link key={s.title} href={ARTICLE_HREF} className="sp-si pt-lift io">
-          <div className="sp-si-ph pt-zoom">
+        <Link key={s.title} href={ARTICLE_HREF} className="sp-si pt-lift pt-tilt pt-popin" data-tilt="6">
+          <div className="sp-si-ph pt-zoom pt-wipe" data-wipe="left">
             <img src={s.src} width={310} height={178} alt={s.title} loading="lazy" />
           </div>
           <h3 className="sp-si-t">{s.title}</h3>
@@ -30,6 +33,7 @@ export function Scene() {
         </Link>
       ))}
       </div>
+      <PawTrail count={6} direction="right" size={13} gap="calc(9 * var(--u))" className="sp-paws-scene" />
     </section>
   );
 }
@@ -37,12 +41,14 @@ export function Scene() {
 /** アクセス(電車・車)+ 地図 + 店舗情報の表 */
 export function Access() {
   return (
-    <section className="sp-acc" id="access" aria-label="アクセスと店舗情報">
-      <div className="sp-acc-l io">
+    <section className="sp-acc pt-bgshift pt-skew" data-skew="0.4" data-from="0.99" data-to="0.62" id="access" aria-label="アクセスと店舗情報" style={{ ["--bg-to" as string]: "#f8f8f6", ["--bg-from" as string]: "#efe8dc" }}>
+      <div className="sp-acc-l io" data-io="left">
         <p className="sp-lab">Access</p>
-        <h2 className="sp-ttl sp-ttl--acc">アクセス</h2>
-        <div className="sp-way sp-way--train">
-          <span className="sp-way-ic" aria-hidden="true">
+        <FillHeading as="h2" className="sp-ttl sp-ttl--acc" start={1.0} end={0.6}>
+          アクセス
+        </FillHeading>
+        <div className="sp-way sp-way--train pt-hov">
+          <span className="sp-way-ic pt-bounce" aria-hidden="true">
             <i style={{ ["--m" as string]: `url(${IMG}/ic-train.png)`, ["--w" as string]: 18.2, ["--h" as string]: 23.8 }} />
           </span>
           <h3>{ACCESS.train.title}</h3>
@@ -55,8 +61,8 @@ export function Access() {
             ))}
           </p>
         </div>
-        <div className="sp-way sp-way--car">
-          <span className="sp-way-ic" aria-hidden="true">
+        <div className="sp-way sp-way--car pt-hov">
+          <span className="sp-way-ic pt-bounce" aria-hidden="true">
             <i style={{ ["--m" as string]: `url(${IMG}/ic-carb.png)`, ["--w" as string]: 25.2, ["--h" as string]: 21.1 }} />
           </span>
           <h3>{ACCESS.car.title}</h3>
@@ -69,13 +75,13 @@ export function Access() {
             ))}
           </p>
         </div>
-        <a href="#" className="sp-ghost sp-ghost--map pt-press pt-hov">
+        <a href="#" className="sp-ghost sp-ghost--map pt-press pt-hov pt-magnet">
           <span>Googleマップで見る</span>
           <IconArrow aria-hidden="true" />
         </a>
       </div>
 
-      <div className="sp-map io" data-io="fade">
+      <div className="sp-map io" data-io="zoom">
         <div className="sp-map-clip" data-scrollp>
           <img className="sp-map-img" src={`${IMG}/map.webp`} width={568} height={342} alt="sora cafe の周辺地図" loading="lazy" />
         </div>
@@ -90,9 +96,11 @@ export function Access() {
         </span>
       </div>
 
-      <div className="sp-acc-r io">
+      <div className="sp-acc-r io" data-io="right">
         <p className="sp-lab">Information</p>
-        <h2 className="sp-ttl sp-ttl--info">店舗情報</h2>
+        <FillHeading as="h2" className="sp-ttl sp-ttl--info" start={1.0} end={0.6}>
+          店舗情報
+        </FillHeading>
         <dl className="sp-tbl">
           {TABLE.map((r) => (
             <div key={r.k} className="sp-tr">
