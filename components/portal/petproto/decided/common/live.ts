@@ -21,7 +21,7 @@ export type LivePhoto = { src: string; w: number; h: number; alt: string };
 export type LiveShop = {
   id: string;
   name: string;
-  /** 種類のスラッグ(trimming・pet-hotel・vet・dog-cafe・dog-run・pet-shop) */
+  /** 種類のスラッグ(trimming・pet-hotel・vet・dog-cafe・dog-run・pet-shop)。dog-cafe は表示名「カフェ・飲食店」(犬カフェ・猫カフェなどの動物カフェと、ペットと入れるカフェ・飲食店。URL・データの値は dog-cafe のまま) */
   kind: string;
   kindName: string;
   /** 都道府県のスラッグ・名前・市区町村・「東京都世田谷区」形式の所在地 */

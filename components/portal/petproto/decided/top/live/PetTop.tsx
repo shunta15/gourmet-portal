@@ -80,7 +80,8 @@ function SecHead({ id, en, jp, more, href, children }: { id: string; en: string;
 
 /** 種類ごとの札の中身(見本の札の写真・線画・説明。写真は 1〜6 が見本の並びの番号) */
 const CAT_UI: Record<string, { icon: string; img: number; l1: string; l2: string }> = {
-  "dog-cafe": { icon: "cafe", img: 1, l1: "ペットと一緒に楽しめる", l2: "カフェやレストラン" },
+  // 「カフェ・飲食店」: 犬カフェ・猫カフェなどの動物カフェと、ペットと一緒に入れるカフェ・飲食店の両方(2026-10-22 オーナー指示)。1 行 11 字まで
+  "dog-cafe": { icon: "cafe", img: 1, l1: "犬カフェ・猫カフェや", l2: "ペットと入れるお店" },
   trimming: { icon: "trim", img: 2, l1: "大切な家族を", l2: "キレイに、健やかに" },
   "dog-run": { icon: "run", img: 3, l1: "のびのび遊べる", l2: "屋外・屋内ドッグラン" },
   "pet-hotel": { icon: "hotel", img: 4, l1: "旅行やおでかけも", l2: "安心して預けられる" },

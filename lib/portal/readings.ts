@@ -82,7 +82,7 @@ export const CATEGORY_KANA: Record<string, string> = {
   "pet/trimming": "とりみんぐ",
   "pet/pet-hotel": "ぺっとほてる",
   "pet/vet": "どうぶつびょういん",
-  "pet/dog-cafe": "どっぐかふぇ",
+  "pet/dog-cafe": "かふぇ|いんしょくてん|どっぐかふぇ|いぬかふぇ|ねこかふぇ|どうぶつかふぇ",
   "pet/dog-run": "どっぐらん",
   "pet/pet-shop": "ぺっとしょっぷ",
   "leisure/sightseeing": "かんこう|かんこうすぽっと",

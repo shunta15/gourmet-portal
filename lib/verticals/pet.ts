@@ -17,7 +17,9 @@ export const pet: Vertical = {
     { slug: 'trimming', name: 'トリミング', schemaType: 'LocalBusiness' },
     { slug: 'pet-hotel', name: 'ペットホテル', schemaType: 'LocalBusiness' },
     { slug: 'vet', name: '動物病院', schemaType: 'VeterinaryCare' },
-    { slug: 'dog-cafe', name: 'ドッグカフェ', schemaType: 'LocalBusiness' },
+    // slug の dog-cafe は URL・データの category 値なので変えない。表示名は、犬カフェ・猫カフェなどの動物カフェと、
+    // ペットと一緒に入れるカフェ・飲食店の両方を入れられる「カフェ・飲食店」(2026-10-22 オーナー指示:「飲食店のところを犬カフェとか猫カフェも入れられるように」)。
+    { slug: 'dog-cafe', name: 'カフェ・飲食店', schemaType: 'LocalBusiness' },
     { slug: 'dog-run', name: 'ドッグラン', schemaType: 'LocalBusiness' },
     { slug: 'pet-shop', name: 'ペットショップ', schemaType: 'PetStore' },
   ],
@@ -35,7 +37,10 @@ export const pet: Vertical = {
   ],
   titleTemplates: {
     top: '{name}の店をエリア・種類から探す｜マチノワ{brand}',
-    area: '{area}の{category}{count}選｜マチノワ{brand}',
+    // 「〇選」「{count}選」は使わない(ペットは件数を題名に入れない)。{category} は、エリアのページでは「ペット」・種類のページでは種類名
+    area: '{area}の{category}一覧｜マチノワ{brand}',
+    // 利用シーンのページの題名(「〇選」なし)。{scene} はシーン名。ほかの業種は scene を持たないので、これまでどおり
+    scene: '「{scene}」で探す{name}の店｜マチノワ{brand}',
   },
   copyRules: [
     {

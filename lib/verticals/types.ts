@@ -45,6 +45,8 @@ export interface Vertical {
   titleTemplates: {
     top: string;       // "{name}の店をエリア・種類から探す｜マチノワ{brand}"
     area: string;      // "{area}の{category}{count}選｜マチノワ{brand}"
+    /** 利用シーンのページの題名("「{scene}」で探す{name}の店｜マチノワ{brand}")。無い業種は components/portal/pages/scene.tsx の既定(件数つき) */
+    scene?: string;
   };
   copyRules: CopyRule[];
   legalNote?: string;

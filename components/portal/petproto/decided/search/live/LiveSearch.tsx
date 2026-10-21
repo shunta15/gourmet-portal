@@ -59,7 +59,7 @@ function Hero({ f, facets, areaEx, kindEx }: { f: PetFilters; facets: PetFacets;
           <MaskLines as="span" className="lsr-h1" lines={["ペットのお店を", "エリアから探す"]} step={170} delay={120} />
         </h1>
         <div className="lsr-sub-w">
-          <Write as="p" className="lsr-sub" lines={["ペットホテル・動物病院・ドッグランなど、", "エリアや種類から近くのお店を探せます。"]} delay={650} step={520} />
+          <Write as="p" className="lsr-sub" lines={["犬カフェ・猫カフェ・ペットホテルなど、", "エリアや種類から近くのお店を探せます。"]} delay={650} step={520} />
         </div>
       </section>
       <HeroScroll target=".lsr-hero" />

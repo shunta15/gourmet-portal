@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { getVertical } from "@/lib/verticals";
 import type { Scene, Vertical } from "@/lib/verticals/types";
 import { buildMetadata } from "@/lib/seo/meta";
+import { fillTitle } from "@/lib/seo/util";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
 import { loadVertical, notFoundMetadata, pick, type PortalVertical } from "./data";
 import { PageFrame, Listing, CategoryLinks, SceneLinks, PrefLinks, baseCrumbs, toneOf } from "./frame";
@@ -33,7 +34,10 @@ export function scenePage(key: PortalVertical) {
       const count = pick(all, { scene }).length;
       return buildMetadata({
         vertical: key,
-        title: `「${scene.name}」で探す${v.name}の店${count > 0 ? `${count}選` : ""}｜${v.brand}`,
+        // 業種が scene の題名の型(titleTemplates.scene)を持つなら、それを使う(ペット。「〇選」なし)。持たない業種は、これまでどおり件数つき
+        title: v.titleTemplates.scene
+          ? fillTitle(v.titleTemplates.scene, { name: v.name, brand: v.brand }).replace("{scene}", () => scene.name)
+          : `「${scene.name}」で探す${v.name}の店${count > 0 ? `${count}選` : ""}｜${v.brand}`,
         description: `「${scene.name}」で使える${v.name}の店を、エリア・種類とあわせて探せます。`,
         path: `${v.path}/scene/${slug}`,
         count,
