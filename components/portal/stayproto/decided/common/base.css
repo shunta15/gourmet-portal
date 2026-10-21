@@ -1,0 +1,374 @@
+/* ステイ決定案(オーナーの見本 4 枚。最初のページ・探す・宿の紹介・記事)の共通 CSS。接頭辞は全部 sy-(出現だけは .io)。
+   見本の px はそのまま calc(N * var(--u)) で置く。--u = ページ幅 ÷ 見本の画像の幅(--sy-ref。最初・探す・記事 = 1024、宿の紹介 = 864。Shell の page が決める)。
+   デスクトップ = min-width: 1000px(--u の寸法)/ スマホ・タブレット = max-width: 999px(px で自分で組む。--u は使わない)。
+   小さな字は、読めなくならないよう max(NNpx, calc(N * var(--u))) の床を入れる(下の --sy-fs-* を使うとそろう)。
+   動き(静かな宿に合う 3 つだけ): ふわっと出る .io / 写真のゆっくりした寄り .sy-kb(ずっと)・.sy-scroll-zoom(スクロールで)/ 見出しのワイプ .sy-mask(MaskLines)
+   部品: sy-wrap / sy-lab / sy-h2 / sy-lead / sy-num / sy-more / sy-btn(--gold・--line・--pill)/ sy-tag / sy-chip / sy-card / sy-arrow / sy-zoom / sy-heart / sy-tabs / sy-crumbs */
+
+/* 今のヘッダーの下端(隠れると 0)。追従の物の top に使う。値が変わるとき滑らかに追従する */
+@property --sy-hy {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+.sy-root {
+  --u: calc(min(100vw, 1600px) / 1024); /* Shell が --sy-ref で見本の幅を決め、Motion がスクロールバーを除いた幅で上書きする */
+  /* 色(見本の画像から読み取った値) */
+  --sy-paper: #faf8f3; /* ページの地(生成りの白) */
+  --sy-cream: #f6f4ec; /* 左の面・フッター・節の地 */
+  --sy-sand: #f1ece1; /* 一段濃い面(タイムラインなどの帯) */
+  --sy-white: #fffefb; /* カード・検索の箱 */
+  --sy-ink: #15130f; /* 大見出し・数字 */
+  --sy-text: #2b2a26; /* ナビ・カードの見出し・濃い本文 */
+  --sy-text2: #55524b; /* リード文 */
+  --sy-body: #6b6862; /* 本文(見本の灰色より少し濃くして読めるように) */
+  --sy-mut: #8b887f; /* 補助の文字(日付・パンくず) */
+  --sy-line: #e4dfd2; /* 罫線・カードの縁 */
+  --sy-gold: #9a8246; /* 差し色の金茶(ボタン・アクティブ) */
+  --sy-gold-d: #7f6a36; /* 押したとき・濃い金茶 */
+  --sy-gold-l: #b49d62; /* ホバー・明るい金茶 */
+  --sy-deep: #13201f; /* 濃い緑がかった黒(「この条件で検索する」「施設詳細を見る」のボタン) */
+  --sy-night: #0f1a1d; /* 宿の紹介のヘッダーの濃い紺 */
+  --sy-heart: #a94a43; /* ハートを押したとき */
+  /* 影・角丸(見本は角丸がほぼ無い。ボタンだけ少し) */
+  --sy-r: calc(2 * var(--u));
+  --sy-r2: calc(4 * var(--u));
+  --sy-sh: 0 calc(2 * var(--u)) calc(14 * var(--u)) rgba(40, 32, 18, 0.07);
+  --sy-sh2: 0 calc(14 * var(--u)) calc(34 * var(--u)) rgba(40, 32, 18, 0.14);
+  /* 書体のかたまり */
+  --sy-ff-jp: var(--sy-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --sy-ff-min: var(--sy-min), "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sy-ff-en: var(--sy-en), "Cormorant Garamond", "Times New Roman", serif;
+  --sy-ff-lab: var(--sy-lab), "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  position: relative;
+  background: var(--sy-paper);
+  color: var(--sy-text);
+  font-family: var(--sy-ff-jp);
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shell(ページごと)。ヘッダーの寸法はページごとに見本が少し違うので、page で切り替える(--sy-lx など = 見本の幅での px)。--u はここで決める(--sy-ref は Shell が style で渡す) */
+.sy-shell {
+  --u: calc(min(100vw, 1600px) / var(--sy-ref, 1024));
+  /* 文字の大きさ(見本の px + 読める下限)。ページの CSS はこれを使うと、1000〜1100px 幅でも字が潰れない */
+  --sy-fs-2xs: max(10px, calc(7.4 * var(--u))); /* 小さな英字ラベル・日付・注記 */
+  --sy-fs-xs: max(11px, calc(8.6 * var(--u))); /* ナビ・タグ・補助 */
+  --sy-fs-s: max(12px, calc(9.6 * var(--u))); /* カードの説明・本文(小) */
+  --sy-fs-m: max(13px, calc(10.6 * var(--u))); /* 本文 */
+  --sy-gut: calc(20 * var(--u)); /* ページの左右の余白(最初のページのカード列が見本で左右 20px) */
+  --sy-hh: max(48px, calc(57 * var(--u)));
+  --sy-hy: var(--sy-hh);
+  --hs: 1; /* ヘッダーのロゴ・アイコンの拡大率 */
+  --sy-lx: 34; /* ロゴの左端 */
+  --sy-nx: 305; /* ナビの左端 */
+  --sy-nfs: 9.8; /* ナビの字 */
+  --sy-ngap: 22; /* ナビの間隔 */
+  --sy-iw: 58; /* 右のアイコン 1 つぶんの幅 */
+  --sy-rx: 24; /* 右のアイコン群の右の余白 */
+  --sy-ctaw: max(96px, calc(92 * var(--u))); /* 最初のページの「宿を探す →」の幅 */
+  --sy-cut: max(65%, calc(var(--sy-nx) * var(--u) + 40 * max(11px, calc(var(--sy-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
+  position: relative;
+  font-size: var(--sy-fs-m);
+  transition: --sy-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.sy-shell[data-sy-page="top"] { --sy-hh: max(52px, calc(57 * var(--u))); --hs: 1; --sy-lx: 34; --sy-nx: 305; --sy-nfs: 9.8; --sy-ngap: 22; --sy-iw: 58; --sy-rx: 27; }
+.sy-shell[data-sy-page="search"] { --sy-hh: max(52px, calc(54 * var(--u))); --hs: 0.97; --sy-lx: 31; --sy-nx: 246; --sy-nfs: 9.8; --sy-ngap: 25; --sy-iw: 58; --sy-rx: 24; }
+.sy-shell[data-sy-page="shop"] { --sy-hh: max(52px, calc(49 * var(--u))); --hs: 0.82; --sy-lx: 33; --sy-nx: 231; --sy-nfs: 8.3; --sy-ngap: 22; --sy-iw: 62; --sy-rx: 28; }
+.sy-shell[data-sy-page="article"] { --sy-hh: max(48px, calc(40 * var(--u))); --hs: 0.8; --sy-lx: 40; --sy-nx: 259; --sy-nfs: 9.4; --sy-ngap: 38; --sy-iw: 62; --sy-rx: 27; }
+
+:where(.sy-root) *, :where(.sy-root) *::before, :where(.sy-root) *::after { box-sizing: border-box; }
+:where(.sy-root) a { color: inherit; text-decoration: none; }
+:where(.sy-root) img { display: block; max-width: 100%; }
+:where(.sy-root) :is(h1, h2, h3, h4, p, ul, ol, dl, dd, figure) { margin: 0; padding: 0; }
+:where(.sy-root) :is(ul, ol) { list-style: none; }
+:where(.sy-root) button { font-family: inherit; }
+.sy-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sy-main { position: relative; z-index: 1; display: block; }
+.sy-shell [id] { scroll-margin-top: calc(var(--sy-hh) + 14px); }
+
+/* 書体のかたまり */
+.sy-jp { font-family: var(--sy-ff-jp); }
+.sy-min { font-family: var(--sy-ff-min); }
+.sy-en { font-family: var(--sy-ff-en); }
+/* 字間の広い英字(Jost)のラベルは .sy-lab(下の部品。書体と大文字・字間をまとめて持つ) */
+
+/* 共通の枠(グルメのサイドラベル・丸いカーソル・上の進み具合の線・上のナビ)は見本に無いので、この外枠の中だけ隠す */
+body:has(.sy-root) > nav.nav,
+body:has(.sy-root) .side-label,
+body:has(.sy-root) .cursor-dot,
+body:has(.sy-root) .cursor-ring,
+body:has(.sy-root) .progress-bar { display: none !important; }
+body:has(.sy-root) { cursor: auto; }
+body:has(.sy-root) button, body:has(.sy-root) a { cursor: pointer; }
+
+/* ---------- 見本の帯(試作の各ページの一番上・28px。proto の layout が出す) ---------- */
+.sy-demo-bar { height: 28px; line-height: 28px; text-align: center; font-size: 12px; color: #6b6a5c; background: #efeadb; border-bottom: 1px solid #e0d9c4; position: relative; z-index: 2; }
+
+/* ---------- ロゴ(山の印+「マチノワステイ」+「MACHINOWA STAY」。文字は本物の文字) ---------- */
+.sy-logo { display: inline-flex; align-items: center; gap: calc(11 * var(--u) * var(--hs, 1)); line-height: 1; color: currentColor; white-space: nowrap; }
+.sy-logo-mark { flex: none; width: max(34px, calc(38 * var(--u) * var(--hs, 1))); height: auto; aspect-ratio: 54 / 32; }
+.sy-logo-t { display: grid; gap: calc(4.5 * var(--u) * var(--hs, 1)); }
+.sy-logo-jp { font-family: var(--sy-ff-min); font-weight: 500; font-size: max(16px, calc(16.6 * var(--u) * var(--hs, 1))); letter-spacing: 0.04em; line-height: 1.1; }
+.sy-logo-en { font-family: var(--sy-ff-lab); font-weight: 400; font-size: max(7.5px, calc(7.4 * var(--u) * var(--hs, 1))); letter-spacing: 0.34em; line-height: 1; opacity: 0.86; }
+
+/* ---------- ヘッダー(最初 = ヒーローに重なる透け / 探す = 左だけ明るい帯 / 宿の紹介 = 濃い紺 / 記事 = 明るい帯) ---------- */
+.sy-head { position: sticky; top: 0; z-index: 100; height: var(--sy-hh); background: rgba(250, 248, 243, 0.98); color: var(--sy-text); border-bottom: 1px solid rgba(60, 50, 30, 0.08); transition: translate 0.38s cubic-bezier(0.3, 0.7, 0.2, 1), background-color 0.3s, box-shadow 0.3s, color 0.3s; }
+.sy-shell[data-sy-page="top"] .sy-head, .sy-shell[data-sy-page="search"] .sy-head { margin-bottom: calc(var(--sy-hh) * -1); }
+.sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) { background: transparent; border-bottom-color: transparent; color: #fff; }
+.sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) .sy-head-logo { color: var(--sy-ink); text-shadow: none; }
+.sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi, .sy-head-cta) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(250, 248, 243, 0.98) 0, rgba(250, 248, 243, 0.98) var(--sy-cut), transparent var(--sy-cut)); border-bottom-color: transparent; }
+.sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { color: #fff; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.sy-shell[data-sy-page="shop"] .sy-head { background: rgba(15, 26, 29, 0.98); color: #f1ede4; border-bottom-color: rgba(255, 255, 255, 0.06); }
+.sy-shell[data-sy-page="article"] .sy-head { border-bottom-color: rgba(60, 50, 30, 0.1); }
+.sy-head.is-scrolled { background: rgba(250, 248, 243, 0.96); color: var(--sy-text); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(60, 50, 30, 0.06), 0 6px 18px rgba(40, 32, 18, 0.06); }
+.sy-shell[data-sy-page="shop"] .sy-head.is-scrolled { background: rgba(15, 26, 29, 0.96); color: #f1ede4; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); }
+.sy-head.is-hidden { translate: 0 -105%; }
+.sy-head-in { position: relative; width: calc(var(--sy-ref, 1024) * var(--u)); max-width: 100%; height: 100%; margin: 0 auto; }
+.sy-head-logo { position: absolute; left: calc(var(--sy-lx) * var(--u)); top: 50%; translate: 0 -50%; display: block; color: inherit; }
+.sy-head-nav { position: absolute; left: calc(var(--sy-nx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; gap: calc(var(--sy-ngap) * var(--u)); font-size: max(11px, calc(var(--sy-nfs) * var(--u))); font-weight: 500; letter-spacing: 0.08em; white-space: nowrap; }
+.sy-head-nav a { position: relative; padding: calc(6 * var(--u)) 0; transition: color 0.25s, opacity 0.25s; }
+.sy-head-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background: currentColor; opacity: 0.7; transition: right 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-head-nav a:hover::after { right: 0; }
+/* 記事は、ナビの間に細い縦線(見本)。各リンクの左右に間隔の半分ずつ余白を持たせ、縦線はリンクの左端。ナビの左端は半分ぶん戻す */
+.sy-shell[data-sy-page="article"] .sy-head-nav { gap: 0; left: calc((var(--sy-nx) - var(--sy-ngap) / 2) * var(--u)); }
+.sy-shell[data-sy-page="article"] .sy-head-nav a { padding-inline: calc(var(--sy-ngap) / 2 * var(--u)); }
+.sy-shell[data-sy-page="article"] .sy-head-nav a + a::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: calc(10 * var(--u)); min-height: 10px; translate: 0 -50%; background: rgba(60, 50, 30, 0.22); }
+.sy-shell[data-sy-page="article"] .sy-head-nav a::after { left: calc(var(--sy-ngap) / 2 * var(--u)); right: auto; width: 0; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-shell[data-sy-page="article"] .sy-head-nav a:hover::after { width: calc(100% - var(--sy-ngap) * var(--u)); }
+.sy-head-ic { position: absolute; right: calc(var(--sy-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; align-items: center; }
+.sy-hi { width: calc(var(--sy-iw) * var(--u)); min-width: 46px; display: flex; flex-direction: column; align-items: center; gap: calc(4 * var(--u) * var(--hs)); padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
+.sy-hi:hover { opacity: 0.7; }
+.sy-hi-i { display: block; width: max(17px, calc(15 * var(--u) * var(--hs))); height: max(17px, calc(15 * var(--u) * var(--hs))); }
+.sy-hi-i svg { width: 100%; height: 100%; display: block; }
+.sy-hi-l { font-size: max(10px, calc(7 * var(--u) * var(--hs))); font-weight: 500; letter-spacing: 0.06em; line-height: 1.2; white-space: nowrap; }
+.sy-hi.is-on { color: var(--sy-heart); }
+.sy-hi.is-on .sy-hi-i path { fill: currentColor; }
+/* 記事・最初のページは、アイコンの横に字(見本) */
+.sy-shell[data-sy-page="article"] .sy-hi, .sy-shell[data-sy-page="top"] .sy-hi { flex-direction: row; width: auto; min-width: 0; gap: calc(7 * var(--u)); margin-left: calc(26 * var(--u)); }
+.sy-shell[data-sy-page="top"] .sy-hi { margin-left: calc(20 * var(--u)); }
+.sy-shell[data-sy-page="top"] .sy-head-ic { right: calc(var(--sy-rx) * var(--u) + var(--sy-ctaw) + 22 * var(--u)); }
+.sy-shell[data-sy-page="top"] .sy-hi--menu, .sy-shell[data-sy-page="top"] .sy-hi:first-child .sy-hi-l { display: none; } /* 最初の見本は 検索(アイコンだけ)・お気に入り・「宿を探す」の枠だけ */
+/* 最初のページの右端「宿を探す →」(枠だけのボタン) */
+.sy-head-cta { position: absolute; right: calc(var(--sy-rx) * var(--u)); top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; justify-content: center; gap: calc(9 * var(--u)); width: var(--sy-ctaw); height: max(30px, calc(29 * var(--u))); border: 1px solid currentColor; border-radius: 999px; font-size: max(11px, calc(8.8 * var(--u))); font-weight: 500; letter-spacing: 0.1em; color: inherit; background: rgba(15, 20, 20, 0.28); backdrop-filter: blur(3px); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.sy-head-cta svg { width: calc(11 * var(--u)); min-width: 11px; height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-head-cta:hover { background: rgba(15, 20, 20, 0.5); }
+.sy-head-cta:hover svg { transform: translateX(calc(3 * var(--u))); }
+.sy-head.is-scrolled .sy-head-cta { background: transparent; border-color: rgba(21, 19, 15, 0.45); }
+.sy-head.is-scrolled .sy-head-cta:hover { background: var(--sy-deep); color: #fff; border-color: var(--sy-deep); }
+/* 1000〜1199px 幅は、最初・記事のアイコンの字(お気に入りなど)をやめてアイコンだけにする(ナビと重ならないように) */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .sy-shell[data-sy-page="top"] .sy-hi-l, .sy-shell[data-sy-page="article"] .sy-hi-l { display: none; }
+  .sy-shell[data-sy-page="top"] .sy-hi, .sy-shell[data-sy-page="article"] .sy-hi { margin-left: calc(14 * var(--u)); }
+}
+/* 宿の紹介は、アイコン群の左に細い縦線(見本) */
+.sy-shell[data-sy-page="shop"] .sy-head-ic { padding-left: calc(18 * var(--u)); border-left: 1px solid rgba(255, 255, 255, 0.12); height: calc(var(--sy-hh) * 0.72); }
+/* メニューの開閉(三本線 → 閉じる) */
+.sy-hi[aria-expanded="true"] .sy-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
+.sy-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgba(250, 248, 243, 0.99); color: var(--sy-text); border: 1px solid var(--sy-line); box-shadow: var(--sy-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
+.sy-drawer[data-open="1"] { opacity: 1; visibility: visible; translate: 0 calc(4 * var(--u)); pointer-events: auto; }
+.sy-drawer a { padding: max(11px, calc(8 * var(--u))) calc(18 * var(--u)); font-size: max(13px, calc(9 * var(--u))); font-weight: 500; letter-spacing: 0.08em; transition: background 0.2s, color 0.2s; }
+.sy-drawer a:hover { background: var(--sy-cream); color: var(--sy-gold-d); }
+
+/* ---------- フッター(見本の記事ページの最後の帯: ロゴ+ナビ+SNS。下に小さな 2 行目) ---------- */
+.sy-root .sy-foot { position: relative; z-index: 1; margin: 0; padding: 0; background: var(--sy-cream); color: var(--sy-text); border-top: 1px solid var(--sy-line); } /* グルメ共通の footer{} の色・余白を打ち消す */
+.sy-foot-in { width: min(100%, calc((var(--sy-ref, 1024) - 40) * var(--u))); margin: 0 auto; padding: calc(30 * var(--u)) 0 calc(20 * var(--u)); }
+.sy-foot-row { display: flex; align-items: center; gap: calc(40 * var(--u)); }
+.sy-foot-logo-link { display: inline-block; color: var(--sy-ink); flex: none; }
+.sy-foot-logo { --hs: 0.98; }
+.sy-foot-nav { display: flex; flex: 1; justify-content: center; gap: calc(34 * var(--u)); font-size: var(--sy-fs-xs); font-weight: 500; letter-spacing: 0.1em; white-space: nowrap; }
+.sy-foot-nav a { position: relative; padding: 4px 0; transition: color 0.25s; }
+.sy-foot-nav a:hover { color: var(--sy-gold-d); }
+.sy-foot-r { display: flex; align-items: center; gap: calc(18 * var(--u)); flex: none; }
+.sy-foot-sns { display: flex; gap: calc(6 * var(--u)); }
+.sy-sns { display: grid; place-items: center; width: max(32px, calc(26 * var(--u))); height: max(32px, calc(26 * var(--u))); color: var(--sy-ink); transition: color 0.25s, translate 0.3s; }
+.sy-sns svg { width: max(16px, calc(14 * var(--u))); height: max(16px, calc(14 * var(--u))); }
+.sy-sns:hover { color: var(--sy-gold-d); translate: 0 -2px; }
+.sy-totop { display: grid; place-items: center; width: max(34px, calc(28 * var(--u))); height: max(34px, calc(28 * var(--u))); padding: 0; border: 1px solid #cdc6b4; border-radius: 50%; background: transparent; color: var(--sy-ink); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.sy-totop svg { width: max(11px, calc(9 * var(--u))); height: max(11px, calc(9 * var(--u))); }
+.sy-totop:hover { background: var(--sy-ink); color: #fff; border-color: var(--sy-ink); }
+.sy-foot-sub { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: calc(22 * var(--u)); padding-top: calc(14 * var(--u)); border-top: 1px solid var(--sy-line); font-size: var(--sy-fs-2xs); letter-spacing: 0.08em; color: var(--sy-mut); }
+.sy-foot-links { display: flex; flex-wrap: wrap; gap: 6px calc(22 * var(--u)); }
+.sy-foot-links a { transition: color 0.25s; }
+.sy-foot-links a:hover { color: var(--sy-gold-d); }
+.sy-foot-copy { white-space: nowrap; }
+
+/* ---------- パンくず(見本は小さな薄い字。区切りは細い「>」) ---------- */
+.sy-crumbs { font-size: var(--sy-fs-2xs); letter-spacing: 0.06em; color: var(--sy-mut); }
+.sy-crumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }
+.sy-crumbs li { display: inline-flex; align-items: center; }
+.sy-crumbs a { transition: color 0.25s; }
+.sy-crumbs a:hover { color: var(--sy-gold-d); }
+.sy-crumbs-sep { width: 6px; height: 9px; margin: 0 max(8px, calc(8 * var(--u))); opacity: 0.7; flex: none; }
+.sy-crumbs [aria-current="page"] { color: var(--sy-text2); }
+
+/* ---------- 部品(各ページが使う) ---------- */
+/* ページの中身の幅(見本の幅 − 左右 20px。1600px を超える画面では中央に寄る) */
+.sy-wrap { position: relative; width: min(100%, calc((var(--sy-ref, 1024) - 40) * var(--u))); margin: 0 auto; }
+/* 字間の広い英字のラベル(THE STAY EDITION / SPECIAL FEATURE / RECOMMEND STAY …。大文字・細い) */
+.sy-lab { font-family: var(--sy-ff-lab); font-weight: 400; font-size: var(--sy-fs-2xs); letter-spacing: 0.3em; text-transform: uppercase; color: #6f6a5e; line-height: 1.4; }
+/* 明朝の見出し(大きさは各ページが指定する。字間・行間・色だけ決めておく) */
+.sy-h2 { font-family: var(--sy-ff-min); font-weight: 400; font-size: calc(24 * var(--u)); line-height: 1.5; letter-spacing: 0.06em; color: var(--sy-ink); }
+/* リード文(明朝の灰色。「泊まることで、街がもっと好きになる。」) */
+.sy-lead { font-family: var(--sy-ff-min); font-weight: 400; font-size: var(--sy-fs-m); line-height: 1.95; letter-spacing: 0.1em; color: var(--sy-text2); }
+/* 大きな斜体の数字(「01」「02」。Cormorant Garamond Italic)と、小さな英字(HOTEL・RYOKAN) */
+.sy-num { font-family: var(--sy-ff-en); font-style: italic; font-weight: 400; font-size: calc(30 * var(--u)); line-height: 1; letter-spacing: 0.01em; color: var(--sy-ink); }
+.sy-kind { font-family: var(--sy-ff-en); font-weight: 500; font-size: var(--sy-fs-2xs); letter-spacing: 0.24em; text-transform: uppercase; color: #6f6a5e; }
+/* 「詳細を見る →」「特集記事をみる →」(細い字+細い矢印。下に細い線) */
+.sy-more { display: inline-flex; align-items: center; gap: calc(9 * var(--u)); padding-bottom: 3px; font-size: var(--sy-fs-xs); font-weight: 700; letter-spacing: 0.1em; color: var(--sy-text); border-bottom: 1px solid rgba(21, 19, 15, 0.3); white-space: nowrap; transition: color 0.25s, border-color 0.25s; }
+.sy-more svg { width: max(14px, calc(13 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-more:hover { color: var(--sy-gold-d); border-color: var(--sy-gold); }
+.sy-more:hover svg { transform: translateX(calc(4 * var(--u))); }
+.sy-more--plain { border-bottom: 0; padding-bottom: 0; }
+/* ボタン(濃い緑がかった黒の面。角は少しだけ丸い)。--gold = 金茶 / --line = 枠だけ / --pill = 丸い */
+.sy-btn { display: inline-flex; align-items: center; justify-content: center; gap: calc(10 * var(--u)); height: max(44px, calc(40 * var(--u))); padding: 0 calc(28 * var(--u)); border: 1px solid var(--sy-deep); border-radius: var(--sy-r2); background: var(--sy-deep); color: #fff; font-weight: 500; font-size: var(--sy-fs-xs); letter-spacing: 0.12em; cursor: pointer; transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.sy-btn svg { width: max(14px, calc(12 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-btn:hover { background: #22332f; border-color: #22332f; }
+.sy-btn:hover svg { transform: translateX(calc(3 * var(--u))); }
+.sy-btn--gold { background: var(--sy-gold); border-color: var(--sy-gold); }
+.sy-btn--gold:hover { background: var(--sy-gold-d); border-color: var(--sy-gold-d); }
+.sy-btn--line { background: transparent; color: var(--sy-text); border-color: rgba(21, 19, 15, 0.4); }
+.sy-btn--line:hover { background: var(--sy-deep); color: #fff; border-color: var(--sy-deep); }
+.sy-btn--pill { border-radius: 999px; }
+/* タグ(「海が見える」「ホテル」。アイコン+字、枠なし)・札(灰色の小さな面) */
+.sy-tag { display: inline-flex; align-items: center; gap: calc(7 * var(--u)); font-size: var(--sy-fs-2xs); letter-spacing: 0.05em; color: #77746d; white-space: nowrap; }
+.sy-tag svg { width: max(14px, calc(11 * var(--u))); height: max(14px, calc(11 * var(--u))); flex: none; }
+.sy-chip { display: inline-flex; align-items: center; height: max(24px, calc(17 * var(--u))); padding: 0 max(10px, calc(8 * var(--u))); border-radius: 999px; background: #eeebe2; color: #6f6c64; font-size: var(--sy-fs-2xs); letter-spacing: 0.05em; white-space: nowrap; }
+/* カード(白い面。細い縁、影はほぼ無い) */
+.sy-card { background: var(--sy-white); border: 1px solid var(--sy-line); border-radius: var(--sy-r); }
+/* 矢印の丸(カードの右下。親が .sy-hov のとき、触ると矢印が小さく滑る)。中身は <svg> */
+.sy-arrow { display: inline-grid; place-items: center; width: max(28px, calc(18 * var(--u))); height: max(28px, calc(18 * var(--u))); border-radius: 50%; border: 1px solid #cdc6b4; background: transparent; color: var(--sy-text); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.sy-arrow > * { width: max(12px, calc(10 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-hov:hover .sy-arrow, .sy-arrow:hover { background: var(--sy-deep); color: #fff; border-color: var(--sy-deep); }
+.sy-hov:hover .sy-arrow > *, .sy-arrow:hover > * { transform: translateX(2px); }
+/* 写真(入れ物 .sy-zoom の中の img が、触るとゆっくり寄る。親が .sy-hov のカードでも効く) */
+.sy-zoom { overflow: hidden; }
+.sy-zoom img { transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.sy-hov:hover .sy-zoom img, .sy-zoom:hover img { transform: scale(1.04); }
+/* 写真のゆっくりした寄り(ずっと。入れ物に overflow: hidden と sy-live。最初のヒーローなど)。24〜32 秒かけて 1 → 1.07 */
+.sy-kb { animation: sy-kb 30s ease-in-out infinite alternate; transform-origin: 58% 46%; }
+@keyframes sy-kb { from { scale: 1; } to { scale: 1.07; } }
+/* 写真のゆっくりした寄り(スクロールで。入れ物に overflow: hidden。--ss で寄る量) */
+.sy-scroll-zoom { scale: calc(1 + var(--p, 0) * var(--ss, 0.06)); }
+/* ハート(お気に入り。写真の上は白抜き、明るい地の上は sy-heart--ink) */
+.sy-heart { display: inline-grid; place-items: center; width: max(34px, calc(22 * var(--u))); height: max(34px, calc(22 * var(--u))); padding: 0; border: 0; border-radius: 50%; background: rgba(21, 19, 15, 0.3); backdrop-filter: blur(2px); cursor: pointer; transition: transform 0.2s, background 0.3s; }
+.sy-heart svg { width: max(16px, calc(11 * var(--u))); height: max(16px, calc(11 * var(--u))); fill: none; stroke: #fff; transition: fill 0.25s, stroke 0.25s; }
+.sy-heart.sy-heart--ink { background: transparent; backdrop-filter: none; }
+.sy-heart.sy-heart--ink svg { stroke: var(--sy-text); }
+.sy-heart:hover { transform: scale(1.08); }
+.sy-heart.is-on { background: rgba(255, 255, 255, 0.92); }
+.sy-heart.is-on svg { fill: var(--sy-heart); stroke: var(--sy-heart); }
+
+/* ---------- 追従タブ(ScrollSpyTabs。トップ / 客室 / 温泉 / …)。見本は字の間に「/」、今の節に黒い下線 ---------- */
+.sy-tabs { position: sticky; top: var(--sy-hy, 0px); z-index: 50; display: flex; justify-content: center; background: rgba(250, 248, 243, 0.96); border-bottom: 1px solid var(--sy-line); backdrop-filter: blur(6px); }
+.sy-tab { position: relative; z-index: 1; display: grid; justify-items: center; align-content: center; gap: 1px; min-height: max(46px, calc(34 * var(--u))); padding: 0 calc(22 * var(--u)); border: 0; background: transparent; font-size: var(--sy-fs-xs); font-weight: 500; letter-spacing: 0.1em; color: var(--sy-text2); cursor: pointer; transition: color 0.3s; }
+.sy-tab + .sy-tab::before { content: "/"; position: absolute; left: 0; top: 50%; translate: -50% -50%; color: #b3ab99; font-weight: 300; }
+.sy-tab-sub { font-family: var(--sy-ff-lab); font-size: var(--sy-fs-2xs); letter-spacing: 0.2em; color: var(--sy-mut); text-transform: uppercase; }
+.sy-tab:hover { color: var(--sy-ink); }
+.sy-tab.is-on { color: var(--sy-ink); font-weight: 700; }
+.sy-tabs-ind { position: absolute; z-index: 0; left: 0; bottom: -1px; width: var(--iw, 0px); height: 2px; translate: var(--ix, 0px) 0; background: var(--sy-ink); transition: translate 0.5s cubic-bezier(0.3, 0.8, 0.2, 1), width 0.5s cubic-bezier(0.3, 0.8, 0.2, 1); pointer-events: none; }
+
+/* ---------- 出現(.io。Motion が .is-in を付ける)。JS が動くとき・動きを減らす設定でないときだけ、最初は隠す。ふわっと(小さく・ゆっくり) ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .sy-root .io { opacity: 0; translate: 0 calc(14 * var(--u)); transition: opacity 1.15s ease var(--d, 0ms), translate 1.25s cubic-bezier(0.22, 0.7, 0.2, 1) var(--d, 0ms); }
+  .sy-root .io[data-io="fade"] { translate: none; }
+  .sy-root .io[data-io="left"] { translate: calc(-18 * var(--u)) 0; }
+  .sy-root .io[data-io="right"] { translate: calc(18 * var(--u)) 0; }
+  .sy-root .io.is-in { opacity: 1; translate: none; }
+  /* 大見出しの 1 行ずつ(MaskLines)は、自分の中身を動かすので外側は動かさない */
+  .sy-root .io.io-self { opacity: 1; translate: none; transition: none; }
+  .sy-ml-i { translate: 0 108%; }
+  .sy-mask.is-in .sy-ml-i { translate: 0 0; transition: translate 1.25s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 140ms)); }
+}
+.sy-mask { display: block; }
+.sy-ml { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.sy-ml-i { display: block; }
+
+/* 画面の外・非表示タブでは、ずっと動く物を止める(Motion が is-off / data-sy-hidden を付ける) */
+.sy-live.is-off, .sy-live.is-off *, .sy-live.is-off *::before, .sy-live.is-off *::after { animation-play-state: paused !important; }
+.sy-root[data-sy-hidden] *, .sy-root[data-sy-hidden] *::before, .sy-root[data-sy-hidden] *::after { animation-play-state: paused !important; }
+
+/* ---------- スマホ・タブレット(1000px 未満)。--u は使わず px で組む ---------- */
+@media (max-width: 999px) {
+  .sy-root { font-size: 14px; line-height: 1.7; }
+  .sy-shell, .sy-shell[data-sy-page] { --sy-hh: 56px; --hs: 1; --sy-gut: 16px; --sy-fs-2xs: 11px; --sy-fs-xs: 12px; --sy-fs-s: 13px; --sy-fs-m: 14px; }
+  .sy-demo-bar { font-size: 11px; line-height: 26px; height: 26px; }
+  .sy-logo { gap: 9px; }
+  .sy-logo-mark { width: 34px; }
+  .sy-logo-t { gap: 4px; }
+  .sy-logo-jp { font-size: 16px; }
+  .sy-logo-en { font-size: 7px; }
+  /* 帯は全ページ、地のある帯(最初・探すも重ねない)。宿の紹介だけ濃い紺 */
+  .sy-shell[data-sy-page="top"] .sy-head, .sy-shell[data-sy-page="search"] .sy-head { margin-bottom: 0; }
+  .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled), .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) { background: rgba(250, 248, 243, 0.98); color: var(--sy-text); border-bottom-color: rgba(60, 50, 30, 0.08); }
+  .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi, .sy-head-cta), .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { text-shadow: none; }
+  .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { color: inherit; }
+  .sy-head-in { width: 100%; }
+  .sy-head-logo { left: 16px; }
+  .sy-head-nav, .sy-head-cta { display: none; }
+  .sy-head-ic, .sy-shell[data-sy-page="top"] .sy-head-ic, .sy-shell[data-sy-page="shop"] .sy-head-ic { right: 6px; padding-left: 0; border-left: 0; height: auto; }
+  .sy-shell[data-sy-page] .sy-hi { flex-direction: column; justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; margin-left: 0; }
+  .sy-shell[data-sy-page="top"] .sy-hi--menu { display: flex; }
+  .sy-hi-i { width: 22px; height: 22px; }
+  .sy-hi-l { display: none; }
+  .sy-drawer { left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
+  .sy-drawer a { padding: 14px 10px; font-size: 15px; border-bottom: 1px solid var(--sy-line); }
+  .sy-drawer a:last-child { border-bottom: 0; }
+  .sy-shell [id] { scroll-margin-top: 66px; }
+
+  .sy-wrap { width: 100%; padding: 0 16px; }
+  .sy-h2 { font-size: 24px; }
+  .sy-lead { font-size: 14px; line-height: 1.9; }
+  .sy-num { font-size: 28px; }
+  .sy-more { font-size: 12px; gap: 8px; }
+  .sy-more svg { width: 15px; }
+  .sy-btn { height: 48px; padding: 0 26px; font-size: 13px; gap: 10px; }
+  .sy-btn svg { width: 15px; }
+  .sy-chip { height: 24px; padding: 0 10px; }
+  .sy-arrow { width: 32px; height: 32px; }
+  .sy-arrow > * { width: 13px; }
+  .sy-heart { width: 36px; height: 36px; }
+  .sy-heart svg { width: 17px; height: 17px; }
+  .sy-tab { min-height: 46px; padding: 0 18px; font-size: 13px; }
+  .sy-tabs { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+  .sy-tabs::-webkit-scrollbar { display: none; }
+  .sy-tabs .sy-tab { flex: 0 0 auto; }
+  .sy-root .io { translate: 0 12px; }
+  .sy-root .io[data-io="left"] { translate: -14px 0; }
+  .sy-root .io[data-io="right"] { translate: 14px 0; }
+  .sy-root .io[data-io="fade"] { translate: none; }
+  .sy-root .io.is-in { translate: none; }
+  .sy-root .io.io-self { translate: none; }
+  .sy-crumbs-sep { margin: 0 8px; }
+
+  /* フッター */
+  .sy-foot-in { width: 100%; padding: 26px 16px 20px; }
+  .sy-foot-row { flex-wrap: wrap; gap: 18px 16px; }
+  .sy-foot-logo { --hs: 1; }
+  .sy-foot-nav { order: 3; flex-basis: 100%; flex-wrap: wrap; justify-content: flex-start; gap: 4px 22px; font-size: 13px; }
+  .sy-foot-nav a { padding: 8px 0; }
+  .sy-foot-r { margin-left: auto; gap: 12px; }
+  .sy-sns { width: 44px; height: 44px; }
+  .sy-sns svg { width: 20px; height: 20px; }
+  .sy-totop { width: 44px; height: 44px; }
+  .sy-totop svg { width: 15px; height: 15px; }
+  .sy-foot-sub { flex-direction: column; align-items: flex-start; margin-top: 18px; padding-top: 14px; font-size: 11px; }
+  .sy-foot-links { gap: 4px 18px; }
+  .sy-foot-links a { padding: 6px 0; }
+  .sy-foot-copy { white-space: normal; }
+}
+
+/* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .sy-root *, .sy-root *::before, .sy-root *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .sy-root .io { opacity: 1; translate: none; }
+  .sy-ml-i { translate: none; }
+  .sy-scroll-zoom { scale: none; }
+  .sy-head.is-hidden { translate: none; }
+}

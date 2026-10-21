@@ -1,0 +1,11 @@
+/* 決定デザインの 404(StayNotFound)。接頭辞 sy-nf。ヘッダーの下から始まる明るい面に、短い案内だけ */
+.sy-nf { width: min(100% - 32px, 640px); margin: 0 auto; padding: 96px 0 120px; text-align: center; }
+.sy-nf-en { margin: 0; font-family: var(--sy-ff-en); font-style: italic; font-size: 48px; line-height: 1; letter-spacing: 0.04em; color: #c9bea4; }
+.sy-nf-h { margin: 14px 0 0; font-family: var(--sy-ff-min); font-weight: 500; font-size: 24px; line-height: 1.5; letter-spacing: 0.08em; color: var(--sy-ink); }
+.sy-nf-p { margin: 16px 0 0; font-size: 14px; line-height: 1.9; letter-spacing: 0.05em; color: var(--sy-body); }
+.sy-nf-links { margin: 28px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; }
+.sy-nf-links a { color: var(--sy-text); border-bottom: 1px solid rgba(21, 19, 15, 0.3); padding-bottom: 2px; transition: color 0.25s, border-color 0.25s; }
+.sy-nf-links a:hover { color: var(--sy-gold-d); border-color: var(--sy-gold); }
+@media (min-width: 1000px) {
+  .sy-nf { padding-top: calc(110 * var(--u)); }
+}
