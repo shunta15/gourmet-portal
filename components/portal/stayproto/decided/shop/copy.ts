@@ -11,7 +11,8 @@ import type { FacKey, RowIcon } from "./FacIcons";
  * 「共用スペース」「庭」など・3 つめは「お食事」→ 食事を出さない宿は「キッチン」「BBQ」など。2 つめ・3 つめは、その節に使える写真があるときだけ出す。
  */
 
-export type PKind = "exterior" | "view" | "rooms" | "bath" | "dining" | "common" | "other";
+/** 写真の種類。living = 客室の写真のうち居間・リビング・食堂・広間(寝室ではないもの。一棟貸しの宿の「居間」の節に使う) */
+export type PKind = "exterior" | "view" | "rooms" | "living" | "bath" | "dining" | "common" | "other";
 
 export type SecCopy = {
   /** 節の位置(a = 客室 / b = 温泉・お風呂・共用 / c = お食事・キッチン)。タブの飛び先 id にもなる */
@@ -25,7 +26,7 @@ export type SecCopy = {
   p: string[];
   /** 「〇〇の詳細を見る」で開く全文の元になる、記事の節の見出し(stay.json の article.sections[].heading) */
   from: string[];
-  /** 写真の種類の優先順(先に書いた種類から使う) */
+  /** 写真の種類の優先順(先に書いた種類から、上限の枚数まで使う。ここに書いた種類は、その節の写真として合う) */
   kinds: PKind[];
 };
 
@@ -60,7 +61,7 @@ export const STAY_COPY: Record<string, ShopCopy> = {
       { icon: "clock", l: "電話の受付", v: "9:00〜18:00" },
     ],
     intro: {
-      h: ["築百年以上の古民家を改装した、", "一棟貸しの宿。"],
+      h: ["築百年以上の古民家を", "改装した一棟貸しの宿。"],
       p: ["北前船で栄えた橋立にある、加賀の宿です。", "MAGOICHI・MAGONI・MAGOSANの3つの宿があります。", "キッチンで自炊でき、公式サイトにはカフェの案内も載っています。"],
     },
     secs: [
@@ -74,7 +75,7 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "c", label: "キッチン・居間", en: "KITCHEN",
         h: ["市場や直売所の食材を、", "宿のキッチンで調理。"],
         p: ["キッチン・冷蔵庫・調理器具・食器・電子レンジ・コンロの設備があります。", "MAGONDOカフェは10時から16時(月・金は定休日)です。"],
-        from: ["自炊とカフェの案内"], kinds: ["common", "dining"],
+        from: ["自炊とカフェの案内"], kinds: ["common", "living", "dining"],
       },
     ],
     fac: [
@@ -117,7 +118,7 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "a", label: "サイト・コテージ", en: "SITES",
         h: ["区画サイトとフリーサイト、", "コテージの3タイプ。"],
         p: ["区画サイトは、コンセント付きで定員5名・7名・10名の3種類です。", "フリーサイトは好きな場所を選んで設営します。", "コテージは2棟で、定員は5名です。"],
-        from: ["キャンプサイト"], kinds: ["rooms", "view", "exterior"],
+        from: ["キャンプサイト"], kinds: ["rooms", "exterior"],
       },
       {
         slot: "b", label: "お風呂", en: "BATH",
@@ -129,7 +130,7 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "c", label: "場内の設備", en: "GROUNDS",
         h: ["トイレ・炊事場・シャワー、", "夏はプールもあります。"],
         p: ["温水便座の洋式トイレ、お湯が出る炊事場、シャワールームがあります。", "管理棟では薪や花火などを販売しています。", "焚き火台やBBQコンロセットのレンタルもあります。"],
-        from: ["場内の設備とレンタル"], kinds: ["common", "view", "other"],
+        from: ["場内の設備とレンタル"], kinds: ["common", "view"],
       },
     ],
     fac: [
@@ -179,13 +180,13 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "b", label: "リビング・お風呂", en: "LIVING",
         h: ["1階にリビングと", "ダイニング、岩風呂。"],
         p: ["大型ログハウスの1階に、リビング・ダイニング・洋寝室・トイレ・洗面所・岩風呂があります。", "2階には洋寝室と和室があり、棟ごとにレイアウトが違います。"],
-        from: ["3種類の宿泊棟"], kinds: ["common", "bath"],
+        from: ["3種類の宿泊棟"], kinds: ["living", "bath"],
       },
       {
         slot: "c", label: "テラス・敷地内", en: "GROUNDS",
-        h: ["屋外のテラスで、", "バーベキューができます。"],
-        p: ["炭焼きバーベキューの設備は、貸し出しがあります。", "全天候型のテニスコート(1面)と、管理棟のビリヤード台(3台)があります。"],
-        from: ["施設とペットの扱い"], kinds: ["view", "other", "exterior"],
+        h: ["テニスコートとビリヤード、", "屋外ではバーベキュー。"],
+        p: ["全天候型のテニスコート(1面)と、管理棟のビリヤード台(3台)があります。", "宿泊棟の屋外テラスで使う炭焼きバーベキューの設備は、貸し出しがあります。"],
+        from: ["施設とペットの扱い"], kinds: ["common", "exterior", "view"],
       },
     ],
     fac: [
@@ -338,7 +339,7 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "a", label: "サイト", en: "SITES",
         h: ["オートサイト、ドッグサイト、", "RVサイトの3種類。"],
         p: ["RVサイトは車中泊専用で、テントは張れません。", "フリーDogサイトは、柵を閉じればノーリードで過ごせるプライベートドッグランです。"],
-        from: ["サイト"], kinds: ["rooms", "view", "exterior"],
+        from: ["サイト"], kinds: ["rooms", "exterior"],
       },
       {
         slot: "b", label: "共用スペース", en: "COMMON",
@@ -391,16 +392,16 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["rooms", "exterior"],
       },
       {
-        slot: "b", label: "庭", en: "GARDEN",
+        slot: "b", label: "庭と周辺", en: "GARDEN",
         h: ["庭でも、", "犬と一緒に過ごせます。"],
         p: ["庭、部屋の中、ベッドルームまで、犬と一緒に過ごせます。", "夜8時以降のバーベキューは控えるよう案内されています。"],
-        from: ["コテージと食事"], kinds: ["view", "exterior", "common"],
+        from: ["コテージと食事"], kinds: ["view", "common", "exterior"],
       },
       {
         slot: "c", label: "キッチン・BBQ", en: "KITCHEN",
         h: ["食事の提供はなく、", "キッチンとBBQで調理。"],
         p: ["食材を持ち込み、キッチンでの調理や屋外でのバーベキューをします。", "ペットシーツ・水飲み・タオル・ドライヤーは備えがあります。"],
-        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["dining", "common"],
+        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["dining", "common", "living"],
       },
     ],
     fac: [

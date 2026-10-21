@@ -104,11 +104,20 @@ function kindFromWhat(whatFull: string): PKind {
   return "other";
 }
 
+/** 客室の写真のうち、寝室ではなく居間・リビング・食堂・広間が写っているもの(説明の最初の 1 文で見る)は living にする */
+const W_LIVING = /居間|リビング|広間|食堂|ダイニング|キッチン/;
+const W_BED = /寝室|ベッド|布団|寝具|ロフト/;
+function refine(kind: PKind, whatFull: string): PKind {
+  if (kind !== "rooms") return kind;
+  const w = (whatFull ?? "").split("。")[0];
+  return W_LIVING.test(w) && !W_BED.test(w) ? "living" : kind;
+}
+
 const ratio = (p: SPhoto) => (p.h > 0 ? p.w / p.h : 1);
 
 /**
  * 写真の振り分け。順番 = ヒーロー大 → 背景(横長のみ)→ 各節の最初の 1 枚(客室・2 つめ・3 つめ)→ ヒーローの小 2 枚 → 各節を上限まで → 紹介記事。
- * 各節は、kinds の先頭の種類(主)から取り、主が 0 枚のときだけ 2 つめ以降の種類(代わり)から 1 枚取る。写真は 1 度使ったら二度と使わない。
+ * 各節は、kinds に書いた種類の順に、上限の枚数まで取る(最初の 1 枚は、先頭の種類に 0 枚のときだけ 2 つめ以降の種類から)。写真は 1 度使ったら二度と使わない。
  */
 function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPhoto | null; bySlot: Record<"a" | "b" | "c", SPhoto[]>; article: SPhoto | null } {
   const used = new Set<string>();
@@ -119,19 +128,26 @@ function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPh
     return p;
   };
   /** 種類の順に見て、最初に見つかった 1 枚(横長優先 = 比率 1.2 以上があればそれ) */
-  const pickOne = (order: PKind[], minRatio = 0): SPhoto | null => {
+  const pickOne = (order: PKind[], minRatio = 0, ok: (p: SPhoto) => boolean = () => true): SPhoto | null => {
     for (const k of order) {
-      const c = free(k).filter((p) => ratio(p) >= minRatio);
+      const c = free(k).filter((p) => ratio(p) >= minRatio && ok(p));
       if (c.length) return use(c[0]);
     }
     return null;
   };
+  // 文字・看板・のぼりが主に写っている写真は、見出しを重ねるヒーロー大・「この宿で過ごす時間」の背景には使わない(使える写真が他に無いときのヒーロー大だけ許す)
+  const plain = (p: SPhoto) => !/文字|のぼり|看板|ロゴ|横断幕/.test((p.what ?? "").split("。")[0]);
 
-  const heroOrder: PKind[] = ["exterior", "view", "rooms", "common", "bath", "dining", "other"];
-  const smallOrder: PKind[] = ["view", "exterior", "common", "bath", "dining", "rooms", "other"];
-  // ヒーロー大: 外観・景色の横長 → 外観・景色のほぼ正方形 → ほかの種類の横長 → なんでも(外観・景色が先。料理や客室の写真は、外観・景色が無いときだけ)
-  const h0 = pickOne(["exterior", "view"], 1.2) ?? pickOne(["exterior", "view"], 0.9) ?? pickOne(heroOrder, 1.2) ?? pickOne(heroOrder);
-  const banner = pickOne(["view", "exterior", "common", "other"], 1.3);
+  const heroOrder: PKind[] = ["exterior", "view", "rooms", "living", "common", "bath", "dining", "other"];
+  const smallOrder: PKind[] = ["view", "exterior", "common", "bath", "dining", "rooms", "living", "other"];
+  // ヒーロー大: 外観・景色のうち、横長か正方形(縦長でない)ものを、写真の並びの先頭から → 縦長でも外観・景色 → ほかの種類の横長 → なんでも(料理や客室の写真は、外観・景色が無いときだけ)
+  // 大きく出す写真は、幅が足りない(ぼやける)ものを避ける: ヒーロー大は 700px 以上・背景は 900px 以上(足りなければ背景の写真なし)
+  const big = (p: SPhoto) => plain(p) && p.w >= 700;
+  const h0 =
+    pickOne(["exterior", "view"], 0.95, big) ?? pickOne(["exterior", "view"], 0, big) ?? pickOne(heroOrder, 1.2, big) ??
+    pickOne(["exterior", "view"], 0.95, plain) ?? pickOne(["exterior", "view"], 0, plain) ?? pickOne(heroOrder, 1.2, plain) ??
+    pickOne(["exterior", "view"], 0.95) ?? pickOne(["exterior", "view"]) ?? pickOne(heroOrder, 1.2) ?? pickOne(heroOrder);
+  const banner = pickOne(["view", "exterior", "common", "other"], 1.3, (p) => plain(p) && p.w >= 900);
 
   const bySlot: Record<"a" | "b" | "c", SPhoto[]> = { a: [], b: [], c: [] };
   const CAP = { a: 4, b: 3, c: 3 } as const;
@@ -144,15 +160,17 @@ function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPh
   // ヒーローの小 2 枚
   const h1 = pickOne(smallOrder);
   const h2 = h1 ? pickOne(smallOrder) : null;
-  // 各節を上限まで(主の種類だけ)
+  // 各節を上限まで(kinds の先頭の種類から順に)
   for (const s of secs) {
-    const main = s.kinds[0];
-    for (const p of free(main)) {
-      if (bySlot[s.slot].length >= CAP[s.slot]) break;
-      bySlot[s.slot].push(use(p)!);
+    for (const k of s.kinds) {
+      for (const p of free(k)) {
+        if (bySlot[s.slot].length >= CAP[s.slot]) break;
+        bySlot[s.slot].push(use(p)!);
+      }
     }
   }
-  const article = pickOne(["view", "exterior", "common", "other", "rooms", "bath", "dining"]);
+  const lastOrder: PKind[] = ["view", "exterior", "common", "other", "living", "rooms", "bath", "dining"];
+  const article = pickOne(lastOrder, 0, plain) ?? pickOne(lastOrder);
   return { hero: [h0, h1, h2].filter((x): x is SPhoto => !!x), banner, bySlot, article };
 }
 
@@ -312,7 +330,7 @@ export function buildShopDetail(shop: LiveShop, place: Place): ShopDetail {
   const all: SPhoto[] = shop.photos.map((ph) => {
     const m = meta.get(ph.src);
     const what = stayLine(m?.what);
-    return { ...ph, what, kind: m?.kind ?? kindFromWhat(m?.what ?? "") };
+    return { ...ph, what, kind: refine(m?.kind ?? kindFromWhat(m?.what ?? ""), m?.what ?? "") };
   });
 
   // 節: 本文を点検に通し、通る文が無い節は出さない。写真の振り分けは出す節だけ
