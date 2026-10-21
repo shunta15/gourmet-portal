@@ -554,30 +554,30 @@
     "page": "top",
     "file": "/_portal/petproto/decided/top/hero.webp",
     "slot": "hero",
-    "commonsTitle": "File:Andrew Branch 2016-09-11 (Unsplash O-fFmWLVAE4).jpg",
-    "pageUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Branch_2016-09-11_(Unsplash_O-fFmWLVAE4).jpg",
-    "author": "Andrew Branch denae_andrew",
+    "commonsTitle": "File:Small dog (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Small_dog_(Unsplash).jpg",
+    "author": "Pete Bellis petebellis",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Andrew_Branch_2016-09-11_%28Unsplash_O-fFmWLVAE4%29.jpg",
-    "srcW": 5616,
-    "srcH": 3744,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Small_dog_%28Unsplash%29.jpg",
+    "srcW": 6016,
+    "srcH": 4000,
     "outW": 1800,
     "outH": 630,
-    "note": "ソファで眠るキャバリア(室内・窓の光)。見本の女性+トイプードルは Commons に許諾の明確な同等写真が無く、犬を主役にした室内写真に置き換え。被写体は右半分、左はソファと床で落ち着いた明るさ",
+    "note": "明るいカフェのテラスで、白い椅子に座るジャックラッセルテリア(赤いリボン)が、隣で赤い飲み物を持つ女性を見上げる。女性は胸から下だけで顔は写らない。犬は右半分、左は白いシャツと脚で明るい",
     "crop": {
       "fetchedW": 3840,
       "left": 0,
-      "top": 352,
+      "top": 605,
       "width": 3840,
       "height": 1344,
       "focus": [
-        0.6,
-        0.4
+        0.5,
+        0.5
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/O-fFmWLVAE4 archive copy at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/OjuwZq13RH0 Image at the Wayback Machine Gallery at the Wayback Machine"
   },
   {
     "page": "top",
