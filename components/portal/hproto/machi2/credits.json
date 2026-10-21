@@ -293,30 +293,30 @@
     "page": "hub",
     "file": "public/_portal/hproto/machi2/lower/sl-v-pet.webp",
     "slot": "sl-v-pet",
-    "commonsTitle": "File:Dog Stylin' (3406880422).jpg",
-    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_Stylin%27_(3406880422).jpg",
-    "author": "japanese_craft_construction",
+    "commonsTitle": "File:2020-09-22 Shiba Inu running.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:2020-09-22_Shiba_Inu_running.jpg",
+    "author": "whity",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Dog_Stylin%27_%283406880422%29.jpg",
-    "srcW": 3008,
-    "srcH": 2000,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/2020-09-22_Shiba_Inu_running.jpg",
+    "srcW": 6240,
+    "srcH": 4160,
     "outW": 1600,
     "outH": 667,
-    "note": "大きな窓のトリミングサロンで台の上の小型犬をドライヤーで乾かす場面。トリマーは横顔で小さく、犬が主役(日本)",
+    "note": "赤いハーネスの柴犬が土の広場を左へ駆ける。犬だけで人は写らない(背景はぼけ)。犬は左〜中央、右は背景のぼけ(文字を右に載せる)。頭の上に余白を残す切り抜き(スライドの拡大で耳が切れないように)",
     "crop": {
-      "fetchedW": 3008,
+      "fetchedW": 3840,
       "left": 0,
-      "top": 274,
-      "width": 3008,
-      "height": 1253,
+      "top": 173,
+      "width": 3840,
+      "height": 1600,
       "focus": [
-        0.45,
-        0.45
+        0.5,
+        0.38
       ]
     },
     "tier": "free",
-    "credit": "Dog Stylin'"
+    "credit": "https://www.flickr.com/photos/whitefield_d/50385365192/"
   },
   {
     "page": "hub",
@@ -380,29 +380,29 @@
     "page": "hub",
     "file": "public/_portal/hproto/machi2/lower/card-video.webp",
     "slot": "card-video",
-    "commonsTitle": "File:Nighttime on the shotengai (238464174).jpg",
-    "pageUrl": "https://commons.wikimedia.org/wiki/File:Nighttime_on_the_shotengai_(238464174).jpg",
-    "author": "Ryan McBride",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Nighttime_on_the_shotengai_%28238464174%29.jpg",
-    "srcW": 2816,
-    "srcH": 2112,
+    "commonsTitle": "File:Streets of Gion, Kyoto - Gion7709.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Streets_of_Gion,_Kyoto_-_Gion7709.jpg",
+    "author": "lumoplank",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Streets_of_Gion%2C_Kyoto_-_Gion7709.jpg",
+    "srcW": 5105,
+    "srcH": 3403,
     "outW": 720,
     "outH": 720,
-    "note": "夜の商店街。提灯の明かりと本屋の店先、奥へ続く通り(日本)",
+    "note": "京都・祇園新橋の夜の石畳の通り。柳と行灯の明かり、奥に紅葉。右端の店の看板と行灯の文字は切り抜きで外した。通りの奥の人は遠景の豆粒",
     "crop": {
-      "fetchedW": 2816,
-      "left": 352,
+      "fetchedW": 3840,
+      "left": 640,
       "top": 0,
-      "width": 2112,
-      "height": 2112,
+      "width": 2560,
+      "height": 2560,
       "focus": [
         0.5,
         0.5
       ]
     },
     "tier": "free",
-    "credit": "nighttime on the shotengai"
+    "credit": "https://www.flickr.com/photos/199350666@N08/55198512986"
   }
 ]

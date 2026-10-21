@@ -118,10 +118,16 @@ export default function Lower({ prod = false, news, cards, cats }: { prod?: bool
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
-            {/* オーナー作の正方形の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。カードもほぼ正方形なので枠いっぱいに出し、再生ボタンの位置に光の輪だけ重ねる */}
+          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
+            {/* 写真(card-video.webp・Wikimedia Commons。出典は credits.json)を枠いっぱいに敷き、見出し・説明・「動画で見る」のボタン・再生アイコンは HTML で重ねる(2026-10-21。以前はオーナー作の正方形の画像に文字まで描かれていた)。
+                下 55% の黒→透明のグラデーション(.h2-vshade)で白い文字を読めるようにする。光の輪(.h2-vring)は再生アイコンの中心に重ねる */}
             <span className="h2-cph h2-vph">
-              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /><i className="h2-vring" aria-hidden="true" /></span>
+              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /></span>
+              <span className="h2-vshade" aria-hidden="true" />
+              <i className="h2-vplay" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#fff" /><path d="M16 12.500 29 20l-13 7.500Z" fill="#f26a2a" /></svg><i className="h2-vring" /></i>
+              <b className="h2-vt"><span>動画で見つかる</span><span>まちの新しい魅力</span></b>
+              <span className="h2-vsub">まちの魅力を動画でチェック</span>
+              <span className="h2-vbtn"><span>動画で見る</span><em aria-hidden="true">→</em></span>
             </span>
           </Link>
         </div>

@@ -136,14 +136,26 @@
 .h2-cdd { position: absolute; left: calc(12 * var(--u)); top: calc((var(--ph) + 26) * var(--u)); font-size: calc(10.4 * var(--u)); line-height: calc(14 * var(--u)); color: #3b4d78; white-space: nowrap; }
 .h2-carr { position: absolute; right: calc(12 * var(--u)); top: calc((var(--ph) + 20) * var(--u)); width: calc(24 * var(--u)); height: calc(24 * var(--u)); border-radius: 50%; background: #fde5d4; color: #f08a3c; font-style: normal; display: grid; place-items: center; font-size: calc(13 * var(--u)); font-weight: 700; transition: translate .3s cubic-bezier(.3,1.5,.5,1), background .3s; }
 .h2-card:hover .h2-carr { translate: calc(5 * var(--u)) 0; background: #f9c9a8; }
-.h2-vcard { background: none; overflow: hidden; border-radius: calc(14 * var(--u)); }
+/* 動画のカード(2026-10-21): 写真(card-video.webp・正方形・Wikimedia Commons)を枠いっぱいに敷き、見出し・説明・「動画で見る」のボタン・再生アイコンは HTML で重ねる(以前はオーナー作の画像に文字まで描かれていた) */
+.h2-vcard { background: #1b2740; overflow: hidden; border-radius: calc(14 * var(--u)); color: #fff; }
 .h2-vph { top: 0; height: 100%; border-radius: calc(14 * var(--u)); }
-.h2-vt { position: absolute; left: 0; right: 0; top: calc(14 * var(--u)); text-align: center; font-size: calc(17 * var(--u)); line-height: calc(22 * var(--u)); color: #1f3a6e; font-weight: 400; rotate: -3deg; display: flex; flex-direction: column; -webkit-text-stroke: calc(3 * var(--u)) #fff; paint-order: stroke fill; z-index: 2; }
-.h2-vbtn { position: absolute; left: calc(36 * var(--u)); right: calc(26 * var(--u)); top: calc(108 * var(--u)); height: calc(28 * var(--u)); background: #fff; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); font-size: calc(12.8 * var(--u)); font-weight: 700; color: #1f3d73; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(0,0,0,.2); z-index: 2; }
-.h2-vbtn em { font-style: normal; margin-left: calc(10 * var(--u)); transition: translate .3s; } .h2-vcard:hover .h2-vbtn em { translate: calc(6 * var(--u)) 0; }
-.h2-play { position: relative; width: calc(21 * var(--u)); height: calc(21 * var(--u)); border-radius: 50%; background: #f26a2a; display: grid; place-items: center; } .h2-play svg { width: 60%; height: 60%; }
-.h2-play::before, .h2-play::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: calc(2 * var(--u)) solid rgba(242,106,42,.7); animation: h2-pulse 1.9s ease-out infinite; }
-.h2-play::after { animation-delay: .95s; }
+.h2-vph .h2-vbox { position: absolute; inset: 0; z-index: 1; }
+.h2-vph .h2-vbox img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+/* 下 55% を黒→透明に(白い文字を読めるように) */
+.h2-vshade { position: absolute; left: 0; right: 0; bottom: 0; height: 55%; background: linear-gradient(to top, rgba(0,0,0,.82) 0, rgba(0,0,0,.62) 50%, rgba(0,0,0,.3) 80%, rgba(0,0,0,0) 100%); z-index: 2; pointer-events: none; }
+/* 再生アイコン: 白い丸に橙(#f26a2a = 最初の画面の「動画で探す」の丸と同じ色)の三角。写真の上の部分の中央。光の輪(.h2-vring)はこの丸の中心に重ねる */
+.h2-vplay { position: absolute; left: 50%; top: calc(50 * var(--u)); width: calc(46 * var(--u)); height: calc(46 * var(--u)); margin-left: calc(-23 * var(--u)); border-radius: 50%; box-shadow: 0 calc(3 * var(--u)) calc(10 * var(--u)) rgba(0,0,0,.35); z-index: 3; transition: transform .3s cubic-bezier(.3,1.6,.5,1); }
+.h2-vplay svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.h2-vcard:hover .h2-vplay { transform: scale(1.08); }
+.h2-vring { position: absolute; inset: 0; border-radius: 50%; pointer-events: none; }
+.h2-vring::before, .h2-vring::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: calc(2 * var(--u)) solid rgba(255,255,255,.85); animation: h2-pulse 1.9s ease-out infinite; }
+.h2-vring::after { animation-delay: .95s; }
+@media (prefers-reduced-motion: reduce) { .h2-vring::before, .h2-vring::after { animation: none; opacity: 0; } }
+/* 見出し 2 行・説明 1 行・ボタン(下から積む。他のカードの見出し 16.5/説明 10.4 と同じ大きさ感) */
+.h2-vt { position: absolute; left: calc(16 * var(--u)); right: calc(10 * var(--u)); bottom: calc(74 * var(--u)); margin: 0; display: flex; flex-direction: column; font-size: calc(17 * var(--u)); line-height: calc(22 * var(--u)); font-weight: 700; color: #fff; text-shadow: 0 calc(1 * var(--u)) calc(4 * var(--u)) rgba(0,0,0,.5); white-space: nowrap; z-index: 3; }
+.h2-vsub { position: absolute; left: calc(16 * var(--u)); bottom: calc(56 * var(--u)); font-size: calc(10.4 * var(--u)); line-height: calc(14 * var(--u)); color: rgba(255,255,255,.92); text-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0,0,0,.5); white-space: nowrap; z-index: 3; }
+.h2-vbtn { position: absolute; left: calc(16 * var(--u)); bottom: calc(16 * var(--u)); height: calc(28 * var(--u)); padding: 0 calc(14 * var(--u)) 0 calc(16 * var(--u)); background: #fff; border-radius: 999px; display: inline-flex; align-items: center; gap: calc(6 * var(--u)); font-size: calc(12.8 * var(--u)); font-weight: 700; color: #1f3d73; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(0,0,0,.25); white-space: nowrap; z-index: 3; }
+.h2-vbtn em { font-style: normal; color: #f26a2a; transition: translate .3s; } .h2-vcard:hover .h2-vbtn em { translate: calc(5 * var(--u)) 0; }
 @keyframes h2-pulse { from { transform: scale(1); opacity: .9; } to { transform: scale(2.4); opacity: 0; } }
 
 /* 4. 街の絵 */
@@ -245,23 +257,3 @@
   .h2-fl { font-size: 11.5px; line-height: 22px; }
   .h2-copy { grid-column: 1 / -1; font-size: 10px; margin-top: 4px; }
 }
-/* video card: contain + blurred edge fill */
-.h2-vph { --vh: 133; }
-.h2-vph .h2-vbox { position: absolute; left: 0; top: 50%; width: 100%; height: calc(var(--vh) * var(--u)); translate: 0 -50%; z-index: 1; }
-.h2-vph .h2-vbox img { width: 100%; height: 100%; object-fit: contain; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 92%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 92%, transparent); }
-.h2-vph .h2-vedge { position: absolute; left: calc(-30 * var(--u)); right: calc(-30 * var(--u)); overflow: hidden; filter: blur(calc(14 * var(--u))); opacity: .9; }
-.h2-vph .h2-vedge-t { top: calc(-30 * var(--u)); bottom: calc(50% + (var(--vh) / 2 - 12) * var(--u)); }
-.h2-vph .h2-vedge-b { bottom: calc(-30 * var(--u)); top: calc(50% + (var(--vh) / 2 - 12) * var(--u)); }
-.h2-vph .h2-vedge img { position: absolute; left: 0; width: 100%; height: calc(var(--vh) * var(--u)); object-fit: fill; scale: 1 40; }
-.h2-vph .h2-vedge-t img { top: 0; transform-origin: 50% 0; }
-.h2-vph .h2-vedge-b img { bottom: 0; transform-origin: 50% 100%; }
-.h2-card:hover .h2-vph img { transform: none; }
-/* 光の輪: 画像の再生ボタンの中心(画像の横 66.7%・縦 84.8%)。.h2-vbox(画像と同じ大きさ)の中に置く */
-.h2-vring { position: absolute; left: 66.7%; top: 84.8%; width: calc(18 * var(--u)); height: calc(18 * var(--u)); margin: calc(-9 * var(--u)) 0 0 calc(-9 * var(--u)); border-radius: 50%; z-index: 2; pointer-events: none; }
-.h2-vring::before, .h2-vring::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: calc(2 * var(--u)) solid rgba(255,255,255,.85); animation: h2-pulse 1.9s ease-out infinite; }
-.h2-vring::after { animation-delay: .95s; }
-@media (prefers-reduced-motion: reduce) { .h2-vring::before, .h2-vring::after { animation: none; opacity: 0; } }
-/* 動画のカード: オーナー作の正方形の画像(2026-10-20 09:37)。枠いっぱい(cover)。光の輪は画像の再生ボタンの中心(横 63.0%・縦 90.3%) */
-.h2-vph .h2-vbox { top: 0; height: 100%; translate: none; }
-.h2-vph .h2-vbox img { object-fit: cover; -webkit-mask-image: none; mask-image: none; }
-.h2-vring { left: 63%; top: 90.3%; width: calc(23 * var(--u)); height: calc(23 * var(--u)); margin: calc(-11.5 * var(--u)) 0 0 calc(-11.5 * var(--u)); }
