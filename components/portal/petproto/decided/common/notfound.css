@@ -1,0 +1,11 @@
+/* 決定デザインの 404(PetNotFound)。接頭辞 pt-nf。ヘッダーの下から始まる白い面に、短い案内だけ */
+.pt-nf { width: min(100% - 32px, 640px); margin: 0 auto; padding: 96px 0 120px; text-align: center; }
+.pt-nf-en { margin: 0; font-family: var(--pt-ff-en); font-size: 44px; line-height: 1; letter-spacing: 0.06em; color: #cbb8a2; }
+.pt-nf-h { margin: 14px 0 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: 24px; line-height: 1.5; letter-spacing: 0.06em; color: #25211d; }
+.pt-nf-p { margin: 16px 0 0; font-size: 14px; line-height: 1.9; letter-spacing: 0.04em; color: #625c56; }
+.pt-nf-links { margin: 28px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; }
+.pt-nf-links a { color: var(--pt-brown); border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.pt-nf-links a:hover { color: var(--pt-brown-d); }
+@media (min-width: 860px) {
+  .pt-nf { padding-top: calc(110 * var(--u)); }
+}

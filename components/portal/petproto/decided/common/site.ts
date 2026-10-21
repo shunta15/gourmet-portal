@@ -18,3 +18,63 @@ export const IMG_TOP = `${IMG}/top`;
 export const IMG_SEARCH = `${IMG}/search`;
 export const IMG_SHOP = `${IMG}/shop`;
 export const IMG_ARTICLE = `${IMG}/article`;
+
+/**
+ * 画面の行き先を試作と本番で切り替える(2026-10-21)。
+ *   "proto" … 試作(/proto-pet/decided 以下。上の定数と同じ。既定。試作の見た目・行き先は 1 つも変えない)
+ *   "live"  … 本番(/pet 以下)。最初 /pet・探す /pet/search・店 /pet/shop/{id}・記事の一覧 /pet/article
+ * Shell / Header / Footer は mode を受け取り、中のリンクを ptLinks(mode) で決める。純関数なのでサーバー・クライアントのどちらからも呼べる。
+ * 探すページの引数は、ビューティー(COLOR PLAY)と同じ名前(kind=種類のスラッグ・pref=都道府県のスラッグ・q=文字)。
+ */
+export type PtMode = "proto" | "live";
+
+export const LIVE_BASE = "/pet";
+
+export type PtSearchArgs = { kind?: string; pref?: string; q?: string };
+
+export type PtLinks = {
+  /** 最初のページ */
+  home: string;
+  /** 探すページ(引数なし) */
+  search: string;
+  /** 記事の一覧 */
+  articles: string;
+  /** 最初のページの節への飛び先 */
+  areaAnchor: string;
+  categoryAnchor: string;
+  /** 探すページ(引数つき。空の項目は付けない) */
+  searchWith: (f: PtSearchArgs) => string;
+  /** 店のページ。proto は見本の 1 枚(id は無視)、live は /pet/shop/{id} */
+  shop: (id?: string) => string;
+};
+
+export function ptLinks(mode: PtMode = "proto"): PtLinks {
+  if (mode === "live") {
+    const search = `${LIVE_BASE}/search`;
+    return {
+      home: LIVE_BASE,
+      search,
+      articles: `${LIVE_BASE}/article`,
+      areaAnchor: `${LIVE_BASE}#pt-area`,
+      categoryAnchor: `${LIVE_BASE}#pt-category`,
+      searchWith: (f) => {
+        const p = new URLSearchParams();
+        if (f.kind) p.set("kind", f.kind);
+        if (f.pref) p.set("pref", f.pref);
+        if (f.q) p.set("q", f.q);
+        const s = p.toString();
+        return s ? `${search}?${s}` : search;
+      },
+      shop: (id) => (id ? `${LIVE_BASE}/shop/${encodeURIComponent(id)}` : search),
+    };
+  }
+  return {
+    home: BASE,
+    search: SEARCH_HREF,
+    articles: ARTICLES_HREF,
+    areaAnchor: TOP_AREA_HREF,
+    categoryAnchor: TOP_CATEGORY_HREF,
+    searchWith: () => SEARCH_HREF,
+    shop: () => SHOP_HREF,
+  };
+}
