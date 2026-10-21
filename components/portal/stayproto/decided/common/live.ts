@@ -152,7 +152,8 @@ function httpUrl(u: string | undefined): string | null {
   return /^https?:\/\//i.test(x) ? x : null;
 }
 
-function toShop(p: Place): LiveShop {
+/** Place → LiveShop(loadStayShops が使う。確認用に fixture の Place から作るときにも使えるよう export) */
+export function toShop(p: Place): LiveShop {
   const attrs = ((p as { attributes?: StayAttributes }).attributes ?? {}) as StayAttributes;
   const photos = photosOf(p);
   const head = stayLine(p.article?.headline);
