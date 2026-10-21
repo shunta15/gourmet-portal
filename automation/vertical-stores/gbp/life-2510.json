@@ -1,0 +1,47 @@
+{
+  "tab": "くらし",
+  "tabEn": "life",
+  "row": 2510,
+  "sheet": {
+    "name": "中島清吉商店",
+    "address": "",
+    "url": "",
+    "type": "小売業",
+    "d1": "工芸品店(将棋駒)",
+    "d2": ""
+  },
+  "urlKind": "none",
+  "route": "店名",
+  "queries": [
+    "中島清吉商店 天童"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E4%B8%AD%E5%B3%B6%E6%B8%85%E5%90%89%E5%95%86%E5%BA%97/@38.3543041,140.3696779,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8bc5a36c7d22d9:0x76d2e7f5521d8161!8m2!3d38.3543041!4d140.3696779!16s%2Fg%2F1thvgrvx",
+  "verdict": "一致",
+  "verdictReason": "Googleマップの住所(山形県天童市田鶴町2丁目2-2)・電話(023-653-2262)が、公式サイト(shogi-koma.com)の店舗・工房情報の住所・電話と一致／Googleマップの業種は工芸品店で、一覧の業種(将棋駒を扱う小売業)と合う／店名: 完全一致",
+  "nameRelation": "exact",
+  "place": {
+    "name": "中島清吉商店",
+    "address": "山形県天童市田鶴町２丁目２−２",
+    "category": "工芸品店",
+    "lat": 38.3543041,
+    "lng": 140.3696779,
+    "gbpUrl": "https://maps.google.com/?cid=8562160882415403361",
+    "phone": "023-653-2262",
+    "website": "https://www.shogi-koma.com/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-22T00:00:00.000Z"
+}

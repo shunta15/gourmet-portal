@@ -1,0 +1,87 @@
+{
+  "key": "life-2510",
+  "images": [
+    {
+      "path": "/_portal/vshops/life-2510/s1.jpg",
+      "imageUrl": "https://www.shogi-koma.com/about/images/img01.jpg",
+      "pageUrl": "https://www.shogi-koma.com/about/",
+      "what": "木の看板と格子戸の入口が見える店の外観。軒先に店名の看板が掛かっている",
+      "width": 1200,
+      "height": 566,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s2.jpg",
+      "imageUrl": "https://www.shogi-koma.com/about/images/img02.jpg",
+      "pageUrl": "https://www.shogi-koma.com/about/",
+      "what": "壁一面に額や扇、将棋駒の飾りが並ぶ店内",
+      "width": 1200,
+      "height": 566,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s3.jpg",
+      "imageUrl": "https://www.shogi-koma.com/images/img07.jpg",
+      "pageUrl": "https://www.shogi-koma.com/",
+      "what": "木の梁と機械が見える工房の内部。人は写っていない",
+      "width": 780,
+      "height": 720,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s4.jpg",
+      "imageUrl": "https://www.shogi-koma.com/history/images/img03.jpg",
+      "pageUrl": "https://www.shogi-koma.com/history/",
+      "what": "印刀と将棋駒の木地が盤の上に置かれている",
+      "width": 1200,
+      "height": 566,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s5.jpg",
+      "imageUrl": "https://www.shogi-koma.com/history/images/img05.jpg",
+      "pageUrl": "https://www.shogi-koma.com/history/",
+      "what": "手のひらに乗せた将棋駒の木地",
+      "width": 1200,
+      "height": 566,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s6.jpg",
+      "imageUrl": "https://www.shogi-koma.com/kodawari/images/img01.jpg",
+      "pageUrl": "https://www.shogi-koma.com/kodawari/",
+      "what": "箱の中に40枚そろって並ぶ将棋駒",
+      "width": 1200,
+      "height": 566,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s7.jpg",
+      "imageUrl": "https://www.shogi-koma.com/kodawari/images/img02.jpg",
+      "pageUrl": "https://www.shogi-koma.com/kodawari/",
+      "what": "板状に切り出した駒の木地が並ぶ",
+      "width": 959,
+      "height": 550,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s8.jpg",
+      "imageUrl": "https://www.shogi-koma.com/kodawari/images/img04.jpg",
+      "pageUrl": "https://www.shogi-koma.com/kodawari/",
+      "what": "筆で駒に文字を入れる手元",
+      "width": 959,
+      "height": 551,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/life-2510/s9.jpg",
+      "imageUrl": "https://www.shogi-koma.com/shop/images/img03.jpg",
+      "pageUrl": "https://www.shogi-koma.com/shop/",
+      "what": "印刀で駒に文字を彫る手元",
+      "width": 1200,
+      "height": 567,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイトの写真9枚(Googleマップの写真は使っていない)。外観1・店内1・工房1・駒と道具・手元・体験の写真。人物の顔が中心の写真は使っていない。"
+}

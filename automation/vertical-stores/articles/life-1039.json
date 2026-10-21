@@ -1,0 +1,218 @@
+{
+  "key": "life-1039",
+  "headline": "東京都港区白金の陶芸教室。電動ろくろと手びねりで、会員コースのほか1日体験や出張陶芸教室もある",
+  "lede": "東京都港区白金5丁目にある「白金陶芸教室」です。2010年4月に開業した陶芸教室で、運営は株式会社むいです。会員コースはカリキュラムがなく、電動ろくろと手びねりで作りたいものを自由に作ります。初めての人向けの体験コースや、希望の場所へ出向く出張陶芸教室もあります。",
+  "sections": [
+    {
+      "heading": "場所と営業時間",
+      "body": "住所は東京都港区白金5-13-4、電話は03-6318-5858です。営業時間は毎日10時から19時で、土日祝日も営業していると公式サイトにあります。日比谷線の広尾駅と、南北線・三田線の白金高輪駅がいずれも徒歩10分、恵比寿駅の東口が徒歩15分です。教室前は私道のため、車は近くのコインパーキングを使うよう案内されていて、自転車は教室前に2台ほど置けます。"
+    },
+    {
+      "heading": "会員コース",
+      "body": "会員コースは、作りたいものや好きなものを提案する形で、カリキュラムはなく自由に作品を作れます。電動ろくろでは菊練りから中心出し、成形まで自分でできるようサポートし、手びねりは希望の形がすぐに作れると書かれています。3か月、6か月、12か月のコースがあり、月2回のコースもあります。授業は毎日4つの時間枠があり、曜日・時間・回数は毎回変えられ、月内なら振替もできます。道具とエプロンは教室にあり、手ぶらで通えます。"
+    },
+    {
+      "heading": "体験と出張",
+      "body": "初めての人向けの体験は、手びねりか電動ろくろを選び、60分で茶碗、湯呑み、パスタ皿、どんぶり、コーヒーカップ、急須、土鍋などを作ります。ほかに、絵付け、季節の品、貸切、家族での体験(3歳から)、犬猫のフードボウルなどのメニューがあります。作品は焼き上がりまで1か月ほどかかります。東京近郊の希望の場所へ陶芸教室をまるごと出張する、出張陶芸教室もあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "会員コース(電動ろくろ・手びねり)"
+    },
+    {
+      "name": "1日陶芸体験"
+    },
+    {
+      "name": "絵付け体験"
+    },
+    {
+      "name": "季節の品を創る体験"
+    },
+    {
+      "name": "貸切り陶芸体験"
+    },
+    {
+      "name": "出張陶芸教室"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "所在地は〒108-0072 東京都港区白金5-13-4",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "〒108-0072 東京都港区白金5-13-4",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電話は03-6318-5858",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "TEL：03-6318-5858",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業時間は毎日10:00-19:00で、土日祝日も営業",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "毎日 10:00～19:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "東京メトロ日比谷線の広尾駅から徒歩10分",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "東京メトロ日比谷線「広尾駅」（出口1・2）徒歩10分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "東京メトロ南北線・都営三田線の白金高輪駅から徒歩10分",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "東京メトロ南北線／都営三田線「白金高輪駅」（出口1）徒歩10分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "JR・日比谷線の恵比寿駅東口から徒歩15分",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "東京メトロ日比谷線／JR「恵比寿駅」（東口）徒歩15分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "教室前は私道で、車の駐車を断っている",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "教室前は私道ですので駐車しないようお願い致します。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "教室前に2台程度駐輪できる",
+      "source": "https://www.sirokanetougei.com/access/",
+      "quote": "教室前に２台程度駐輪可能です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "2010年4月に白金で開業した",
+      "source": "https://www.sirokanetougei.com/aboutschool/",
+      "quote": "2010年4月に白金の場所にご縁を頂き開業いたしました。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "運営は株式会社むい",
+      "source": "https://www.sirokanetougei.com/aboutschool/",
+      "quote": "株式会社むい 白金陶芸教室について",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カリキュラムはなく自由に作品が作れる",
+      "source": "https://www.sirokanetougei.com/member/",
+      "quote": "カリキュラムは無いので自由に作品が作れます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "会員コースは3ヶ月・6ヶ月・12ヶ月コースがある",
+      "source": "https://www.sirokanetougei.com/member/",
+      "quote": "3ヶ月コース、6ヶ月コースと12ヶ月コースがあります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電動ろくろでは菊練りから中心出し、成形まで自力でできるようサポート",
+      "source": "https://www.sirokanetougei.com/member/",
+      "quote": "電動ろくろの場合は菊練りから中心出し、成形までご自身の力で出来るようにサポートいたします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "手びねりではご希望の形がすぐに作れる",
+      "source": "https://www.sirokanetougei.com/member/",
+      "quote": "手びねりの場合はご希望の形がすぐに作れます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "授業は毎日4つの時間枠(10:00-12:30/13:30-16:00/16:00-18:30/18:00-20:30)",
+      "source": "https://www.sirokanetougei.com/member/",
+      "quote": "毎日：①10：00～12：30②13：30～16：00③16：00～18：30④18：00～20：30",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "授業の振替・変更は月内なら自由",
+      "source": "https://www.sirokanetougei.com/aboutschool/qanda/",
+      "quote": "授業の振替、変更に関しては月内であれば自由に出来ます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "月2回コースもある",
+      "source": "https://www.sirokanetougei.com/aboutschool/qanda/",
+      "quote": "月2回コースもあります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "道具・エプロンは教室に揃っていて手ぶらで行ける",
+      "source": "https://www.sirokanetougei.com/aboutschool/qanda/",
+      "quote": "道具、エプロンは教室に全て揃っていますので、手ぶらでお越し下さい。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "体験は手びねりか電動ろくろの60分の体験でうつわを作る",
+      "source": "https://www.sirokanetougei.com/taiken/",
+      "quote": "初めての方も「手びねり」で、あるいは「電動ろくろ」を使って60分の体験で、簡単に様々なうつわが創れるようになります。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "体験で作れるのは茶碗・湯呑み・パスタ皿・どんぶり・コーヒーカップ・急須・土鍋など",
+      "source": "https://www.sirokanetougei.com/taiken/",
+      "quote": "お茶碗、お湯呑み、パスタ皿、どんぶり、コーヒーカップ、急須、土鍋等が制作できます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "作品の焼き上がりまで1ヶ月程度かかる",
+      "source": "https://www.sirokanetougei.com/taiken/",
+      "quote": "＊作品の焼き上がりまで1ヶ月程度かかりますので、お急ぎの方はお早めに申し込み下さい。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "家族体験は3歳から参加できる",
+      "source": "https://www.sirokanetougei.com/aboutschool/qanda/",
+      "quote": "3歳から参加できます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "東京近郊の希望の場所へ陶芸教室をまるごと出張する",
+      "source": "https://www.sirokanetougei.com/taiken/shuchou/",
+      "quote": "東京近郊のご希望場所で陶芸教室をまるごと出張いたします。",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.sirokanetougei.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.sirokanetougei.com/access/"
+    },
+    {
+      "label": "公式サイト(白金陶芸教室について)",
+      "url": "https://www.sirokanetougei.com/aboutschool/"
+    },
+    {
+      "label": "公式サイト(会員コース)",
+      "url": "https://www.sirokanetougei.com/member/"
+    },
+    {
+      "label": "公式サイト(Q&A)",
+      "url": "https://www.sirokanetougei.com/aboutschool/qanda/"
+    },
+    {
+      "label": "公式サイト(陶芸体験コース)",
+      "url": "https://www.sirokanetougei.com/taiken/"
+    }
+  ],
+  "placeOverride": {
+    "hoursByDay": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "10:00–19:00"
+    }
+  },
+  "notes": "確認日2026-10-22。営業日の表記が公式サイト内で分かれる(アクセス「毎日10:00-19:00・土日祝日も営業」、体験のページ「定休日:なし。18時以降の授業の予約が入っていない場合は19時まで営業」、Q&Aの一部に「水曜定休」)。Googleマップは毎日10:00-19:00(別表示に土曜が定休日の週の表示もあり、通常の営業時間の表を採用)。店データは毎日10:00-19:00とし、定休日は載せない。本文は、会員コース・体験のメニュー・アクセスを公式サイトの記載どおり書き、水曜定休の記載があることも書いた。料金(会員コース・体験・焼成費・貸切・出張)、割引、キャンセル料、人気の表現、講師の経歴・氏名は載せていない。Googleマップには予約サイトasoview.comのリンクもあるが、公式サイトではないので使っていない。写真は公式サイトのもの(教室内・作品)で、Googleマップの写真は使っていない。人物が写る写真と、AIで生成された画像(公式サイトの2026年9月の画像)は使っていない。"
+}
