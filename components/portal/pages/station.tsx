@@ -12,7 +12,7 @@ import JsonLd from "../JsonLd";
 import { getPrefBySlug } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
 import { VERTICAL_FACE } from "@/lib/portal/meta";
-import { isUsableImage } from "@/lib/portal/home";
+import { isUsableImage } from "@/lib/portal/photoRules";
 import { shopPhoto } from "@/lib/portal/photos";
 import { sized } from "@/lib/imageUrl";
 import { isBlockedImage } from "@/lib/imageBlocklist";

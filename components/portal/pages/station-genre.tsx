@@ -13,7 +13,7 @@ import { notFound } from "next/navigation";
 import JsonLd from "../JsonLd";
 import { getPrefBySlug } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
-import { isUsableImage } from "@/lib/portal/home";
+import { isUsableImage } from "@/lib/portal/photoRules";
 import { sized } from "@/lib/imageUrl";
 import { isBlockedImage } from "@/lib/imageBlocklist";
 import { buildMetadata } from "@/lib/seo/meta";

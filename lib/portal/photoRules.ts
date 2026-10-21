@@ -1,7 +1,7 @@
 /**
  * 総合サイトで使ってよい店写真かどうかの判定（純関数。サーバー・クライアント・生成スクリプトのどれからも読める）。
  * 食べログ系の画像・検閲済み画像・プレースホルダは使わない。
- * lib/portal/home.ts（総合トップ）と automation/portal/build-images.mjs（事前生成）が同じ判定を使う。
+ * 総合サイトの駅ページ（pages/station*.tsx）と automation/portal/build-images.mjs（事前生成）が同じ判定を使う。
  */
 import { isBlockedImage } from '@/lib/imageBlocklist';
 
