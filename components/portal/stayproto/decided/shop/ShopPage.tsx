@@ -23,14 +23,14 @@ import "./shop.css";
 
 /**
  * 宿の紹介ページ(本番 /stay/shop/{id})。オーナーの見本「2_店舗紹介」と同じ組み立て・大きさ・余白で、中身は実在の宿(getPlaces('stay'))。
- *   濃紺の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで空室・料金を確認」・お気に入り・シェア)→ 追従タブ →
+ *   濃紺の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで空室を確認」・お気に入り・シェア)→ 追従タブ →
  *   「この宿で過ごす時間」(横長の大きな写真に見出し 2 行+文を重ねる)→ 客室(左に文・右に写真の横送り)→ 温泉(左に文・右に大 1+小 2)→ お食事(同)→
  *   施設・サービス(アイコンが横に並ぶ)→ 基本情報・アクセス・Google マップ → 紹介記事。
  * 文は copy.ts(宿ごとに記事の事実から書いた短い文)。長い説明は各節の「〇〇の詳細を見る」で開く。CSS は shop.css(接頭辞 sh-)。
  * 値が無い欄・節は出さない(空の枠・空の見出しを出さない)。写真が少ない宿でも、節の写真の枚数が減るだけで形は崩れない。
  *
  * 見本から置き換えた・外した欄(規約: 料金・星・評価・口コミ・おすすめ・架空の宿名・泊まった体験・仮の値は出さない):
- *  - 右の箱の「28,000円〜」「ベストレート」・日付と人数の選択 → 宿の種類・札・事実の欄(チェックイン/アウトの時刻・所在地・客室など。選べない表示)と「公式サイトで空室・料金を確認」の外部リンク
+ *  - 右の箱の「28,000円〜」「ベストレート」・日付と人数の選択 → 宿の種類・札・事実の欄(チェックイン/アウトの時刻・所在地・客室など。選べない表示)と「公式サイトで空室を確認」の外部リンク
  *  - 「口コミ」のタブと節 → 外した / 「特集記事」→「紹介記事」(その宿の記事のページへ。特集のデータは未整備)
  *  - 客室・温泉・お食事の詩的な見出しと文 → 紹介記事の事実だけで書いた短い見出しと文。温泉の札が無い宿は「お風呂」、お風呂が無ければ共用スペース・庭など、食事を出さない宿はキッチン・BBQ など事実のある節
  *  - 「閲覧履歴」(ヘッダー)は共通部品の帯のまま(検索・お気に入り・メニュー)
@@ -49,7 +49,7 @@ function Hero({ d }: { d: ShopDetail }) {
   const s = d.shop;
   const [p0, p1, p2] = d.hero;
   const kick = [s.prefName, s.city].filter(Boolean).join("・");
-  const primary = s.officialUrl ? { href: s.officialUrl, kind: "website" as const, label: "公式サイトで空室・料金を確認", ext: true } : s.phone ? { href: `tel:${s.phone.replace(/[^\d+]/g, "")}`, kind: "phone" as const, label: "電話で問い合わせる", ext: false } : { href: d.mapHref, kind: "map" as const, label: "Googleマップで見る", ext: true };
+  const primary = s.officialUrl ? { href: s.officialUrl, kind: "website" as const, label: "公式サイトで空室を確認", ext: true } : s.phone ? { href: `tel:${s.phone.replace(/[^\d+]/g, "")}`, kind: "phone" as const, label: "電話で問い合わせる", ext: false } : { href: d.mapHref, kind: "map" as const, label: "Googleマップで見る", ext: true };
   const pn = d.panel;
   return (
     <section className="sh-hero" data-n={d.hero.length} aria-label={s.name}>
@@ -84,7 +84,7 @@ function Hero({ d }: { d: ShopDetail }) {
           <Photo p={p2} eager />
         </div>
       ) : null}
-      <aside className="sh-panel io" data-io="right" aria-label="宿のご案内と空室・料金の確認">
+      <aside className="sh-panel io" data-io="right" aria-label="宿のご案内と空室の確認">
         {pn.cap ? <p className="sh-panel-cap">{pn.cap}</p> : null}
         {pn.big ? <p className={`sh-panel-big sh-panel-big--${bigSize(pn.big)}`}>{pn.big}</p> : null}
         {pn.pills.length > 0 ? (
@@ -400,7 +400,7 @@ export function ShopView({ d }: { d: ShopDetail }) {
         <Facility d={d} />
         <Info d={d} />
         <Special d={d} />
-        <p className="sh-note">宿の情報は変わることがあります。空室・料金・最新の案内は、公式サイトなどでご確認ください。</p>
+        <p className="sh-note">宿の情報は変わることがあります。空室・最新の案内は、公式サイトなどでご確認ください。</p>
       </div>
     </Shell>
   );

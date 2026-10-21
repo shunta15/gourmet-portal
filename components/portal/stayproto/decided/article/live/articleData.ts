@@ -124,7 +124,7 @@ function withKinds(shop: LiveShop, place: Place): KPhoto[] {
 }
 
 /** 文字入りの看板・ロゴ・バナーが主役の写真(ヒーロー・帯には選ばない) */
-const TEXT_LED = /文字|ロゴ|バナー|「[^」]+」の[^、。]*看板/;
+const TEXT_LED = /文字|ロゴ|バナー|のぼり|幟|横断幕|「[^」]+」の[^、。]*看板/;
 const aspect = (p: LivePhoto) => p.w / Math.max(1, p.h);
 const shapeOf = (p: LivePhoto): "wide" | "sq" | "tall" => (aspect(p) >= 1.2 ? "wide" : aspect(p) >= 0.95 ? "sq" : "tall");
 /** 横長 > 正方形 > 縦長 の順で、同じ形なら大きい方 */
@@ -134,10 +134,10 @@ function score(p: KPhoto): number {
 }
 
 /** 種類を順に見て、まだ使っていない写真のうち、その種類でいちばん良い 1 枚。どの種類にも無ければ null(説明の無い使い回しはしない) */
-function pick(photos: KPhoto[], used: Set<string>, kinds: PhotoKind[], opts: { wideOnly?: boolean; notText?: boolean } = {}): KPhoto | null {
+function pick(photos: KPhoto[], used: Set<string>, kinds: PhotoKind[], opts: { wideOnly?: boolean; notText?: boolean; minW?: number } = {}): KPhoto | null {
   for (const k of kinds) {
     const pool = photos
-      .filter((p) => !used.has(p.src) && p.kind === k && (!opts.wideOnly || shapeOf(p) === "wide") && (!opts.notText || !TEXT_LED.test(p.what)))
+      .filter((p) => !used.has(p.src) && p.kind === k && (!opts.wideOnly || shapeOf(p) === "wide") && (!opts.notText || !TEXT_LED.test(p.what)) && p.w >= (opts.minW ?? 0))
       .sort((a, b) => score(b) - score(a));
     if (pool[0]) {
       used.add(pool[0].src);
@@ -193,22 +193,27 @@ function pickSection(photos: KPhoto[], used: Set<string>, kind: PhotoKind, head:
   return best;
 }
 
-/** ヒーロー: 景色・外観の横長 → 景色・外観の正方形に近いもの →(無ければ)ほかの種類の横長 → 縦長。文字入りは選ばない */
+/**
+ * ヒーロー(画面いっぱいに広がる): 景色・外観のうち、幅 1000px 以上 → 700px 以上 → 幅の指定なしの順に、それぞれ「横長 → 正方形に近いもの」。
+ * それも無ければ、客室・共用・風呂・料理の横長 → 縦長。文字入り(看板・のぼり・バナー)は選ばない。幅の足りない写真を広げてぼやけさせないため
+ */
 function pickHero(photos: KPhoto[], used: Set<string>): KPhoto | null {
   const nearSquare = photos.filter((p) => aspect(p) >= 0.95);
+  for (const minW of [1000, 700, 0]) {
+    const hit = pick(photos, used, ["view", "exterior"], { wideOnly: true, notText: true, minW }) ?? pick(nearSquare, used, ["view", "exterior"], { notText: true, minW });
+    if (hit) return hit;
+  }
   return (
-    pick(photos, used, ["view", "exterior"], { wideOnly: true, notText: true }) ??
-    pick(nearSquare, used, ["view", "exterior"], { notText: true }) ??
-    pick(photos, used, ["common", "room", "bath", "food"], { wideOnly: true, notText: true }) ??
+    pick(photos, used, ["room", "common", "bath", "food"], { wideOnly: true, notText: true }) ??
     pick(photos, used, ["view", "exterior"], { notText: true }) ??
-    pick(photos, used, ["common", "room", "bath", "food"], { notText: true })
+    pick(photos, used, ["room", "common", "bath", "food"], { notText: true })
   );
 }
 
 /** 記事のカード用の写真(外観・景色の横長)。used は呼び出しごとに新しく */
 function cardPhoto(photos: KPhoto[]): LivePhoto | null {
   const used = new Set<string>();
-  const p = pick(photos, used, ["exterior", "view"], { wideOnly: true, notText: true }) ?? pick(photos, used, ["common", "room"], { wideOnly: true, notText: true }) ?? pick(photos, used, ["exterior", "view", "common", "room", "bath", "food"], { notText: true });
+  const p = pick(photos, used, ["exterior", "view"], { wideOnly: true, notText: true }) ?? pick(photos, used, ["room", "common"], { wideOnly: true, notText: true }) ?? pick(photos, used, ["exterior", "view", "room", "common", "bath", "food"], { notText: true });
   return p ? { src: p.src, w: p.w, h: p.h, alt: p.alt } : null;
 }
 
@@ -365,8 +370,8 @@ export async function loadStayArticle(id: string, given?: Place[]): Promise<Arti
 
   // ---- 掲載している宿 ----
   const infoPh =
-    pick(photos, used, ["exterior", "view", "common"], { notText: true, wideOnly: true }) ??
-    pick(photos, used, ["exterior", "view", "common"], { notText: true }) ??
+    pick(photos, used, ["exterior", "view", "room", "common"], { notText: true, wideOnly: true }) ??
+    pick(photos, used, ["exterior", "view", "room", "common"], { notText: true }) ??
     pick(photos, used, ["room", "food", "bath"], { notText: true, wideOnly: true }) ??
     pick(photos, used, ["room", "food", "bath"], { notText: true });
   const info: Array<{ k: string; v: string }> = [];

@@ -389,19 +389,19 @@ export const STAY_COPY: Record<string, ShopCopy> = {
         slot: "a", label: "コテージ", en: "COTTAGE",
         h: ["1日1組限定の、", "一棟貸しコテージ。"],
         p: ["大人4名と犬4頭までが基本の人数です。", "室内は全室で犬と過ごせ、全室禁煙です(たばこはデッキで)。", "5頭目以降の取り扱いは、別に案内されています。"],
-        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["rooms", "exterior"],
+        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["rooms", "living", "exterior"],
       },
       {
         slot: "b", label: "庭と周辺", en: "GARDEN",
         h: ["庭でも、", "犬と一緒に過ごせます。"],
         p: ["庭、部屋の中、ベッドルームまで、犬と一緒に過ごせます。", "夜8時以降のバーベキューは控えるよう案内されています。"],
-        from: ["コテージと食事"], kinds: ["view", "common", "exterior"],
+        from: ["コテージと食事"], kinds: ["view", "exterior"],
       },
       {
         slot: "c", label: "キッチン・BBQ", en: "KITCHEN",
         h: ["食事の提供はなく、", "キッチンとBBQで調理。"],
         p: ["食材を持ち込み、キッチンでの調理や屋外でのバーベキューをします。", "ペットシーツ・水飲み・タオル・ドライヤーは備えがあります。"],
-        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["dining", "common", "living"],
+        from: ["コテージと食事", "犬と泊まるときの決まり"], kinds: ["dining", "common"],
       },
     ],
     fac: [

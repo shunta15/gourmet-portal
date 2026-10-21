@@ -116,8 +116,9 @@ function refine(kind: PKind, whatFull: string): PKind {
 const ratio = (p: SPhoto) => (p.h > 0 ? p.w / p.h : 1);
 
 /**
- * 写真の振り分け。順番 = ヒーロー大 → 背景(横長のみ)→ 各節の最初の 1 枚(客室・2 つめ・3 つめ)→ ヒーローの小 2 枚 → 各節を上限まで → 紹介記事。
- * 各節は、kinds に書いた種類の順に、上限の枚数まで取る(最初の 1 枚は、先頭の種類に 0 枚のときだけ 2 つめ以降の種類から)。写真は 1 度使ったら二度と使わない。
+ * 写真の振り分け。順番 = ヒーロー大 → 背景(横長のみ)→ 各節の最初の 1 枚(客室・2 つめ・3 つめ)→ 各節を上限まで(1 回目: 先頭の種類と、外観・景色以外の種類)→
+ * 温泉・お食事が 1 枚だけなら近い写真で 2 枚目 → ヒーローの小 2 枚(景色・外観 → 残り)→ 各節の 2 回目(外観・景色の代わり取り)→ 紹介記事。
+ * 各節は、kinds に書いた種類の順に、上限の枚数まで取る(同じ種類の中では、写真の説明に節の名前の語が入っているものを先に)。写真は 1 度使ったら二度と使わない。
  */
 function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPhoto | null; bySlot: Record<"a" | "b" | "c", SPhoto[]>; article: SPhoto | null } {
   const used = new Set<string>();
@@ -157,20 +158,51 @@ function allocate(all: SPhoto[], secs: SecCopy[]): { hero: SPhoto[]; banner: SPh
     const first = pickOne([main]) ?? pickOne(alt);
     if (first) bySlot[s.slot].push(first);
   }
-  // ヒーローの小 2 枚
-  const h1 = pickOne(smallOrder);
-  const h2 = h1 ? pickOne(smallOrder) : null;
-  // 各節を上限まで(kinds の先頭の種類から順に)
-  for (const s of secs) {
-    for (const k of s.kinds) {
-      for (const p of free(k)) {
-        if (bySlot[s.slot].length >= CAP[s.slot]) break;
-        bySlot[s.slot].push(use(p)!);
+  // 各節を上限まで(1 回目 = kinds の先頭の種類と、外観・景色以外の種類。外観・景色の代わり取りは、ヒーローの小 2 枚を決めたあとの 2 回目)。
+  // ヒーローの小が風呂・料理の写真を持っていって節が 1 枚だけにならないよう、節の写真を先に取る
+  const FALLBACK = new Set<PKind>(["exterior", "view"]);
+  // 同じ種類の中では、写真の説明(what)の最初の 1 文に、節の名前の語(「キッチン」「客室」など)が入っているものを先に取る
+  const calm = (p: SPhoto) => !/のぼり|バナー|横断幕|ロゴ/.test((p.what ?? "").split("。")[0]);
+  const fill = (pass: 1 | 2) => {
+    for (const s of secs) {
+      const toks = s.label.match(/[ァ-ヶー]{2,}|[一-龠]{2,}|[A-Za-z]{2,}/g) ?? [];
+      const rel = (p: SPhoto) => toks.filter((t) => (p.what ?? "").split("。")[0].includes(t)).length;
+      for (const k of s.kinds) {
+        const fallback = FALLBACK.has(k) && k !== s.kinds[0];
+        if ((pass === 1) === fallback) continue;
+        const cands = free(k)
+          .filter((p) => !fallback || calm(p))
+          .map((p, i) => ({ p, i }))
+          .sort((x, y) => rel(y.p) - rel(x.p) || x.i - y.i)
+          .map((x) => x.p);
+        for (const p of cands) {
+          if (bySlot[s.slot].length >= CAP[s.slot]) break;
+          bySlot[s.slot].push(use(p)!);
+        }
       }
     }
+  };
+  fill(1);
+  // 温泉(お風呂)・お食事の節が 1 枚だけのときは、右が空いて見えるので、その宿の近い写真(景色・外観・共用)から 2 枚目を足す
+  for (const s of secs) {
+    if (s.slot === "a" || bySlot[s.slot].length !== 1) continue;
+    const extra = pickOne(s.slot === "b" ? ["view", "exterior", "common"] : ["common", "view", "exterior"], 0, plain);
+    if (extra) bySlot[s.slot].push(extra);
   }
+  // ヒーローの小 2 枚: 景色・外観から(のぼり・バナー・ロゴが主役の写真は除く。建物の名前の木の看板は宿の実物なので可)→ 残りの写真 → 3 枚以上ある節の最後の 1 枚
+  const rest: PKind[] = ["common", "bath", "dining", "rooms", "living", "other"];
+  const lend = (order: Array<"a" | "b" | "c"> = ["a", "c", "b"]): SPhoto | null => {
+    const donor = order.filter((k) => bySlot[k].length >= 3).sort((x, y) => bySlot[y].length - bySlot[x].length)[0];
+    return donor ? (bySlot[donor].pop() ?? null) : null;
+  };
+  const sm1 = pickOne(["view", "exterior"], 0, calm);
+  const sm2 = sm1 ? pickOne(["view", "exterior"], 0, calm) : null;
+  const h1 = sm1 ?? pickOne(rest, 0, calm) ?? lend();
+  const h2 = h1 ? (sm2 ?? pickOne(rest, 0, calm) ?? lend()) : null;
+  fill(2);
   const lastOrder: PKind[] = ["view", "exterior", "common", "other", "living", "rooms", "bath", "dining"];
-  const article = pickOne(lastOrder, 0, plain) ?? pickOne(lastOrder);
+  // 紹介記事の写真: 残りの写真から。残りが無いときは、3 枚以上ある節の最後の 1 枚(料理・客室の写真。見本の「特集記事」にも写真がある)
+  const article = pickOne(lastOrder, 0, plain) ?? pickOne(lastOrder) ?? lend(["c", "a", "b"]);
   return { hero: [h0, h1, h2].filter((x): x is SPhoto => !!x), banner, bySlot, article };
 }
 
@@ -318,6 +350,17 @@ export async function loadStayShopDetail(rawId: string): Promise<ShopDetail | nu
   return buildShopDetail(shop, place);
 }
 
+/**
+ * 「この宿で過ごす時間」(見本と同じ固定の見出し 2 行)と、その下の短い文。見出しに使っていた事実の 1 文(copy の intro.h)は、
+ * ヒーローの 1 行(tag)と同じ文でなければ、本文の最初の 1 文にする。
+ */
+function introOf(copy: ShopCopy): { h: string[]; p: string[] } {
+  const norm = (t: string) => t.replace(/[、。\s]/g, "");
+  const head = copy.intro.h.filter(Boolean).join("");
+  const lead = head && stayLineOk(head) && norm(head) !== norm(copy.tag ?? "") ? [head.endsWith("。") ? head : `${head}。`] : [];
+  return { h: ["この宿で", "過ごす時間"], p: [...lead, ...copy.intro.p.filter((x) => stayLineOk(x))] };
+}
+
 /** 1 軒ぶんの画面用データ(loadStayShopDetail が使う純関数。確認用の fixture の宿でも使える) */
 export function buildShopDetail(shop: LiveShop, place: Place): ShopDetail {
   const L = syLinks("live");
@@ -394,7 +437,7 @@ export function buildShopDetail(shop: LiveShop, place: Place): ShopDetail {
     banner: alloc.banner,
     tagline: stayLineOk(copy.tag) ? copy.tag : "",
     panel,
-    intro: { h: copy.intro.h.filter((x) => x && stayLineOk(x)), p: copy.intro.p.filter((x) => stayLineOk(x)) },
+    intro: introOf(copy),
     secs,
     // 事実のある設備が 1 つだけのときは、列にならないので出さない
     facilities: copy.fac.length >= 2 ? copy.fac.slice(0, 8) : [],
