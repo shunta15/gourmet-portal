@@ -13,7 +13,7 @@ import { IconTag } from "./LiveIcons";
  * 選択肢は <a> として HTML に入っている(検索エンジンも辿れる)。
  *  - LinkDropdown : 開くプルダウン(選択肢はリンク)。外を押す/Esc で閉じる
  *  - FilterBar    : 条件(最大 4 つ)。スマホでは「条件で絞る」ボタンで開く引き出し
- *  - SearchBox    : ヒーローの下の検索の箱(エリア・駅名・店名 / 種類 / この条件で検索)
+ *  - SearchBox    : ヒーローの下の検索の箱(エリア・店名 / 種類 / この条件で検索)
  *  - SortSelect   : 並び替え(エリア順・店名順)
  */
 type Icon = ComponentType<SVGProps<SVGSVGElement>>;
@@ -208,7 +208,7 @@ export function SearchBox({ action, q, kind, keep, kinds, areaEx, kindEx }: BoxP
         <IconSearch />
       </span>
       <label className="lsr-bf lsr-bf1">
-        <span className="lsr-bf-l">エリア・駅名・店名</span>
+        <span className="lsr-bf-l">エリア・店名</span>
         <input type="text" name="q" className="lsr-bf-in" placeholder={ph1 || " "} value={area} onChange={(e) => setArea(e.target.value)} autoComplete="off" maxLength={40} />
       </label>
       <i className="lsr-box-div" aria-hidden="true" />
