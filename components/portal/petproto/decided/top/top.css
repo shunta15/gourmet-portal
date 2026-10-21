@@ -12,15 +12,59 @@
 .tp-hv { display: block; }
 .tp-up { transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
 
+/* ヒーロー写真の層(PC・スマホ共通。変形は scale と translate だけ=別々のプロパティなので重ねられる) */
+.tp-ph-push, .tp-ph-breathe { position: absolute; inset: 0; transform-origin: 50% 0; }
+.tp-ph-push { animation: tp-push 2.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.tp-ph-breathe { animation: tp-breathe 24s ease-in-out 2.8s infinite alternate; }
+@keyframes tp-push { from { scale: 1; } to { scale: 1.05; } }
+@keyframes tp-breathe { from { scale: 1; } to { scale: 1.045; } }
+
+/* ---- 光沢(触ると写真を斜めの光がひと筋走る。pt-tilt-glare はカーソルに付く反射) ---- */
+.tp-sheen { position: relative; }
+.tp-sheen::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 36%, rgba(255, 255, 255, 0.62) 50%, transparent 64%); translate: -130% 0; pointer-events: none; z-index: 2; }
+.tp-hv:hover .tp-sheen::after, .tp-arow:hover .tp-sheen::after { translate: 130% 0; transition: translate 1.1s cubic-bezier(0.45, 0.05, 0.25, 1); }
+
+/* ---- 飾りの葉と足あと(カーソルが近づくと包み .pt-flee が逃げる。本体はゆらゆら) ---- */
+.tp-deco { position: absolute; pointer-events: none; z-index: 1; }
+.tp-leaf { display: block; width: 100%; height: auto; color: #a9bb97; opacity: 0.85; transform-origin: 50% 100%; animation: tp-sway 5.5s ease-in-out infinite alternate; }
+.tp-leaf--b { animation-delay: -2.6s; transform: scaleX(-1); }
+@keyframes tp-sway { from { rotate: -7deg; } to { rotate: 7deg; } }
+.tp-dpaw { display: block; width: 100%; height: auto; color: #cbb8a2; opacity: 0.9; rotate: var(--r, 0deg); }
+.pt-paws.tp-trail { --paw-c: #c7b29b; --paw-o: 0.9; }
+
+/* ---- 節の間に流れる業種名の帯(薄い色) ---- */
+.pt-marquee.tp-mq { font-family: var(--pt-ff-min); font-weight: 600; letter-spacing: 0.2em; color: #cfc2b1; }
+.tp-mq .tp-mq-paw { height: auto; color: #d8cbb9; }
+
+/* 出現後・動きを減らす設定・JS なしでは必ず元の位置。共通の base.css のスマホ用の [data-io="left"|"right"](translate: ±18px)は .is-in や動きを減らす設定より優先されて、ずれたままになるため、この 2 つの並びは自分で打ち消す。
+   出現前のずれは下の「:not(.is-in)」の規則(詳細度がこれより高い)が、動きを減らさない・JS ありのときだけ当てる */
+.pt-root .tp-cat .tp-cat-li.io, .pt-root .tp-art .tp-arow-li.io { translate: none; }
+
+/* ---- マグネット + 出現(.io)の同居: 出現の transition に transform(吸い寄り)を足す ---- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .pt-root .pt-shell .io.pt-magnet { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s; }
+  .pt-root .pt-shell .io.pt-magnet.is-mag { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s; }
+  /* 飾りの葉と足あとも見出しと一緒に出る(出現の transition に、カーソルから逃げる transform を足す) */
+  .pt-root .tp-deco.io { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.15); }
+  /* カテゴリの札: 外側から中央へ寄ってくる(左 3 枚は左から・右 3 枚は右から。少しオーバーシュートして止まる) */
+  .pt-root .tp-cat .tp-cat-li.io { transition: opacity 0.7s ease var(--d, 0ms), translate 1.15s cubic-bezier(0.22, 1.18, 0.36, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  /* 縦の仕切り線は上から伸びる */
+  .tp-vdiv { transform-origin: 50% 0; }
+  .pt-root .tp-art .tp-vdiv.io { transition: opacity 0.6s ease var(--d, 0ms), scale 1.5s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms); }
+  .pt-root .tp-art .tp-vdiv.io:not(.is-in) { scale: 1 0; }
+}
+
 @media (min-width: 860px) {
   /* ---------- ヒーロー(上端から 380。ヘッダーの下に重なる) ---------- */
   .tp-hero { position: relative; height: calc(380 * var(--u)); background: #fff; }
   .tp-hero-in { position: relative; width: calc(948 * var(--u)); max-width: 100%; height: 100%; margin: 0 auto; }
-  .tp-hero-photo { position: absolute; left: 0; top: calc(48 * var(--u)); width: 100%; height: calc(332 * var(--u)); }
+  .tp-hero-in { --th-x: 0; --th-y: 0; --th-s: 0; }
+  /* 写真の枠: 左右と下は切る。上だけ、お団子の切り抜きが上の白い帯へはみ出せるよう開けておく(写真の層ごと同じ変形で動くので、寄っても・ずれても写真とお団子は離れない) */
+  .tp-hero .tp-hero-photo { position: absolute; left: 0; top: calc(48 * var(--u)); width: 100%; height: calc(332 * var(--u)); overflow: visible; clip-path: inset(calc(-60 * var(--u)) 0 0 0); }
   .tp-hero-photo img { width: 100%; height: 100%; object-fit: cover; }
-  .tp-hero-photo .pt-kb { transform-origin: 6% 88%; animation: tp-kb 26s ease-in-out infinite alternate; }
-  @keyframes tp-kb { from { scale: 1; } to { scale: 1.06; } }
-  .tp-bun { position: absolute; left: calc(578 * var(--u)); top: 0; width: calc(194 * var(--u)); height: calc(48 * var(--u)); background: url("/_portal/petproto/decided/top/hero-bun.png") 0 0 / calc(194 * var(--u)) calc(50 * var(--u)) no-repeat; pointer-events: none; z-index: 1; }
+  /* 写真の層: 上端を軸に寄る(上端は動かないので、お団子とのつなぎ目が開かない)。最初に 5% 寄り、そのあと息をするようにゆっくり寄ったり戻ったり。マウスでは左右に ±10 だけ逆向きにずれる(寄った分の余白の中) */
+  .tp-ph-push { translate: calc(var(--th-x) * -10 * var(--u)) 0; }
+  .tp-bun { position: absolute; left: calc(578 * var(--u)); top: calc(-48 * var(--u)); width: calc(194 * var(--u)); height: calc(48 * var(--u)); background: url("/_portal/petproto/decided/top/hero-bun.png") 0 0 / calc(194 * var(--u)) calc(50 * var(--u)) no-repeat; pointer-events: none; }
   .tp-h1 { position: absolute; left: calc(56.8 * var(--u)); top: calc(86 * var(--u)); z-index: 2; margin: 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: calc(32 * var(--u)); line-height: calc(41.5 * var(--u)); letter-spacing: 0.005em; color: #25211d; }
   .tp-lead { position: absolute; left: calc(58.5 * var(--u)); top: calc(220.7 * var(--u)); z-index: 2; margin: 0; font-weight: 600; font-size: calc(11.8 * var(--u)); line-height: calc(19.4 * var(--u)); letter-spacing: 0.035em; color: #2b2724; white-space: nowrap; }
   .tp-search { position: absolute; left: calc(54 * var(--u)); top: calc(303.8 * var(--u)); width: calc(493.5 * var(--u)); height: calc(40.4 * var(--u)); z-index: 3; margin: 0; border-radius: 999px; background: #fff; box-shadow: 0 calc(2 * var(--u)) calc(12 * var(--u)) rgba(60, 45, 30, 0.1); }
@@ -36,6 +80,15 @@
   .tp-scroll { position: absolute; left: calc(884 * var(--u)); top: calc(347.5 * var(--u)); width: calc(40 * var(--u)); height: calc(33 * var(--u)); z-index: 2; text-align: center; font-family: var(--pt-ff-jp); font-weight: 500; font-size: calc(6.9 * var(--u)); line-height: calc(9 * var(--u)); letter-spacing: 0.14em; color: #f6ead9; text-shadow: 0 1px 3px rgba(40, 20, 0, 0.35); }
   .tp-scroll i { position: absolute; left: 50%; top: calc(11.5 * var(--u)); width: max(1px, calc(0.9 * var(--u))); height: calc(19 * var(--u)); margin-left: calc(-0.5 * var(--u)); background: rgba(255, 240, 220, 0.9); transform-origin: 50% 0; animation: tp-scroll 2.4s cubic-bezier(0.5, 0, 0.3, 1) infinite; }
   @keyframes tp-scroll { 0% { transform: scaleY(0); opacity: 1; } 55% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
+
+  /* 文字の層(写真と別の速さで動く。マウス: 手書きは写真と逆向きに速く / スクロール: 見出し→検索の箱→手書きの順に先に上へ抜ける)。位置は変えない(動いているときだけずれる) */
+  .tp-h1, .tp-lead { transform: translate3d(calc(var(--th-x) * 4 * var(--u)), calc(var(--th-s) * -20 * var(--u)), 0); }
+  .tp-search { transform: translate3d(calc(var(--th-x) * 7 * var(--u)), calc(var(--th-s) * -8 * var(--u)), 0); }
+  .tp-hand { transform: translate3d(calc(var(--th-x) * 18 * var(--u)), calc(var(--th-y) * 7 * var(--u) + var(--th-s) * -34 * var(--u)), 0); }
+  /* 検索の箱の中身が順にポップ(箱 0.9s → 虫めがね 1.3s → ボタン 1.5s) */
+  .tp-search-ic { animation: tp-pip 0.7s cubic-bezier(0.3, 1.7, 0.5, 1) 1.3s both; }
+  .tp-search-go { animation: tp-pip 0.8s cubic-bezier(0.3, 1.7, 0.5, 1) 1.5s both; }
+  @keyframes tp-pip { 0% { scale: 0.1; opacity: 0; } 100% { scale: 1; opacity: 1; } }
 
   /* 最初のページはヘッダーを透明にして、ヒーロー自身の白い帯(上 48)とお団子の切り抜きを見せる(見本はお団子がヘッダーの上に出る) */
   .pt-shell[data-pt-page="top"] .pt-head:not(.is-scrolled) { background: transparent; }
@@ -62,7 +115,7 @@
   .tp-cat-s { position: absolute; left: calc(var(--tl, 35.5) * var(--u)); top: calc(124.8 * var(--u)); font-weight: 700; font-size: calc(7.7 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.085em; color: #706a63; white-space: nowrap; }
 
   /* ---------- Feature(上端 615・高さ 260。地は薄いベージュ) ---------- */
-  .tp-band--feat { height: calc(260 * var(--u)); background: #f8f7f5; }
+  .tp-band--feat { height: calc(260 * var(--u)); } /* 地(#f8f7f5)は pt-bgshift の --bg-to(TopPage.tsx) */
   .tp-feat { height: 100%; }
   .tp-feat .tp-sh { top: calc(13.3 * var(--u)); }
   .tp-feat .tp-h2 { font-size: calc(20 * var(--u)); }
@@ -135,7 +188,7 @@
   /* ---------- Area Search(上端 1372・高さ 128。写真の帯) ---------- */
   .tp-area { position: relative; width: 100%; height: calc(128 * var(--u)); background: #2a2e2b; overflow: hidden; }
   .tp-area-in { position: relative; width: calc(948 * var(--u)); max-width: 100%; height: 100%; margin: 0 auto; }
-  .tp-area-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 0 50%; scale: calc(1 + var(--p, 0) * 0.04); }
+  .tp-area-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 0 50%; } /* 拡大・ずれは pt-scale-scroll(--ss / --sy は TopPage.tsx) */
   .tp-pcard-n a { display: block; }
   .tp-pcard-n a:hover { color: var(--pt-brown); }
   .tp-area-txt { position: absolute; left: 0; top: 0; width: calc(300 * var(--u)); height: 100%; }
@@ -155,6 +208,48 @@
   .tp-circle:hover .tp-circle-ph { transform: translateY(calc(-3 * var(--u))) scale(1.04); border-color: rgba(255, 255, 255, 0.95); }
   .tp-circle-jp { position: absolute; left: 50%; top: calc(52.6 * var(--u)); translate: -50% 0; font-weight: 600; font-size: calc(7.8 * var(--u)); line-height: calc(11 * var(--u)); letter-spacing: 0.05em; color: #2a2f36; white-space: nowrap; text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7); }
   .tp-circle-en { position: absolute; left: 50%; top: calc(65.7 * var(--u)); translate: -50% 0; font-family: var(--pt-ff-jp); font-weight: 500; font-size: calc(5.6 * var(--u)); line-height: calc(7 * var(--u)); letter-spacing: 0.13em; color: #4a5058; white-space: nowrap; text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7); }
+
+  /* ======================================================================
+     動き(2026-10-21)。PC の位置。位置は見本の余白の中だけ(既存の要素の高さ・位置は変えない)
+     ====================================================================== */
+  /* Category: 見出しの右の空きに葉と足あと(.tp-sh は節の上端 11 / 左 45 を基準に置いてある) */
+  .tp-deco--leaf-a { left: calc(318 * var(--u)); top: calc(-5 * var(--u)); width: calc(26 * var(--u)); }
+  .tp-deco--paw-a { left: calc(398 * var(--u)); top: calc(12 * var(--u)); width: calc(14 * var(--u)); --r: -18deg; }
+  .tp-deco--paw-b { left: calc(424 * var(--u)); top: calc(1 * var(--u)); width: calc(11 * var(--u)); --r: 14deg; }
+  .tp-deco--paw-c { left: calc(466 * var(--u)); top: calc(11 * var(--u)); width: calc(14 * var(--u)); --r: -12deg; }
+  .tp-deco--paw-d { left: calc(492 * var(--u)); top: calc(-1 * var(--u)); width: calc(11 * var(--u)); --r: 16deg; }
+  .tp-deco--leaf-b { left: calc(560 * var(--u)); top: calc(-6 * var(--u)); width: calc(26 * var(--u)); }
+  /* 足あとの列(スクロールで 1 つずつ。Category の下の余白 / Feature の見出しとカードの間) */
+  .pt-paws.tp-trail { --paw: calc(7 * var(--u)); position: absolute; left: calc(45 * var(--u)); width: calc(859 * var(--u)); justify-content: space-between; }
+  .pt-paws.tp-trail--cat { top: calc(213 * var(--u)); }
+  .pt-paws.tp-trail--feat { --paw: calc(8 * var(--u)); top: calc(46 * var(--u)); }
+  /* 流れる帯(Pick up の下の余白。高さ 14) */
+  .tp-mq-wrap { position: absolute; left: 0; width: 100%; top: calc(208 * var(--u)); height: calc(14 * var(--u)); overflow: hidden; }
+  .pt-marquee.tp-mq { --mq-gap: calc(24 * var(--u)); font-size: calc(8.6 * var(--u)); line-height: calc(14 * var(--u)); }
+  .tp-mq .tp-mq-paw { width: calc(8 * var(--u)); }
+
+  /* カテゴリの札・特集・おすすめ: 写真の上のカーソルの反射と、触ったときの光沢(.tp-sheen / .pt-tilt-glare は写真の入れ物の中) */
+  .tp-cat-ph { position: relative; }
+  .tp-cat-card.pt-tilt, .tp-fcard.pt-tilt, .tp-pcard.pt-tilt { transform-style: flat; }
+
+  /* Industry / Scene: 行が順にスライドインしたあと、触ると矢印が滑りサムネが拡大する */
+  .tp-art .tp-arow:hover .tp-arow-ph img { transform: scale(1.14); }
+  .tp-arow-t { transition: color 0.2s, translate 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  .tp-arow-d { transition: translate 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  .tp-arow:hover .tp-arow-t, .tp-arow:hover .tp-arow-d { translate: calc(4 * var(--u)) 0; }
+  .tp-arow:hover .tp-arow-c { animation: tp-chev 0.6s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  @keyframes tp-chev { 0% { transform: translateX(0); opacity: 1; } 45% { transform: translateX(calc(10 * var(--u))); opacity: 0; } 46% { transform: translateX(calc(-8 * var(--u))); opacity: 0; } 100% { transform: translateX(calc(4 * var(--u))); opacity: 1; } }
+  .tp-amark svg { transform-origin: 50% 80%; }
+  .tp-acol:hover .tp-amark svg { animation: tp-wiggle 0.7s ease-in-out; }
+  @keyframes tp-wiggle { 0%, 100% { rotate: 0deg; } 25% { rotate: -9deg; } 60% { rotate: 7deg; } }
+}
+
+/* 出現前の位置(動きを減らす設定のときは当てない=最初から最終の状態) */
+@media (min-width: 860px) and (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .pt-root .tp-cat .tp-cat-li[data-io="left"]:not(.is-in) { translate: calc(var(--io-x, 40) * -1 * var(--u)) 0; }
+  .pt-root .tp-cat .tp-cat-li[data-io="right"]:not(.is-in) { translate: calc(var(--io-x, 40) * var(--u)) 0; }
+  .pt-root .tp-art .tp-arow-li[data-io="left"]:not(.is-in) { translate: calc(-40 * var(--u)) 0; }
+  .pt-root .tp-art .tp-arow-li[data-io="right"]:not(.is-in) { translate: calc(40 * var(--u)) 0; }
 }
 
 /* ======================================================================
@@ -166,8 +261,10 @@
   .tp-hero-in { position: relative; width: 100%; }
   .tp-hero-photo { position: relative; width: 100%; height: var(--ph); }
   .tp-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 92% 50%; }
-  .tp-hero-photo .pt-kb { transform-origin: 70% 60%; animation: tp-kb-m 26s ease-in-out infinite alternate; }
-  @keyframes tp-kb-m { from { scale: 1; } to { scale: 1.08; } }
+  .tp-ph-push, .tp-ph-breathe { transform-origin: 70% 60%; }
+  .tp-search-ic { animation: tp-pip 0.7s cubic-bezier(0.3, 1.7, 0.5, 1) 1.3s both; }
+  .tp-search-go { animation: tp-pip 0.8s cubic-bezier(0.3, 1.7, 0.5, 1) 1.5s both; }
+  @keyframes tp-pip { 0% { scale: 0.1; opacity: 0; } 100% { scale: 1; opacity: 1; } }
   .tp-bun, .tp-scroll { display: none; }
   .tp-h1 { position: static; margin: 0; padding: 22px 20px 0; font-weight: 600; font-size: clamp(26px, 7.4vw, 40px); line-height: 1.45; letter-spacing: 0.02em; color: #25211d; }
   .tp-lead { position: static; margin: 0; padding: 14px 20px 0; font-weight: 600; font-size: clamp(13px, 3.5vw, 17px); line-height: 1.9; letter-spacing: 0.03em; color: #2b2724; white-space: normal; }
@@ -201,7 +298,7 @@
   .tp-cat-t { position: static; grid-column: 2; font-weight: 700; font-size: 13.5px; line-height: 24px; letter-spacing: 0.03em; color: #2a2622; }
   .tp-cat-s { position: static; grid-column: 1 / -1; margin-top: 4px; font-weight: 600; font-size: 12px; line-height: 1.65; letter-spacing: 0.05em; color: #77716a; white-space: normal; }
 
-  .tp-band--feat { background: #f8f7f5; padding-bottom: 34px; }
+  .tp-band--feat { padding-bottom: 34px; }
   .tp-feat .tp-h2 { font-size: 26px; }
   .tp-h2-jp { margin: 0; font-weight: 600; font-size: 19px; letter-spacing: 0.05em; color: #25211d; }
   .tp-feat-desc { position: static; flex-basis: 100%; margin: 6px 0 0; font-weight: 600; font-size: 12.5px; line-height: 1.8; letter-spacing: 0.05em; color: #6d6862; white-space: normal; }
@@ -272,6 +369,26 @@
   .tp-circle-jp { position: static; translate: none; margin-top: 4px; font-weight: 600; font-size: 13px; line-height: 1.3; letter-spacing: 0.05em; color: rgba(255, 255, 255, 0.95); text-align: center; }
   .tp-circle-en { position: static; translate: none; margin-top: -2px; font-family: var(--pt-ff-jp); font-weight: 500; font-size: 9.5px; line-height: 1.2; letter-spacing: 0.12em; color: rgba(255, 255, 255, 0.85); }
 }
+
+/* 動き(スマホ)。葉と足あとの飾り・Feature の足あとは出さない。足あとの列とマーキーは既存の下の余白(34px)の中に収める */
+@media (max-width: 859px) {
+  .tp-deco, .pt-paws.tp-trail--feat { display: none; }
+  .pt-paws.tp-trail { --paw: 13px; }
+  .pt-paws.tp-trail--cat { position: absolute; left: 24px; right: 24px; bottom: 5px; width: auto; justify-content: space-between; }
+  .tp-mq-wrap { position: absolute; left: 0; right: 0; bottom: 6px; height: 24px; overflow: hidden; }
+  .pt-marquee.tp-mq { font-size: 12.5px; line-height: 24px; --mq-gap: 22px; }
+  .tp-mq .tp-mq-paw { width: 11px; }
+  .tp-feats.pt-skew.is-skewing, .tp-picks.pt-skew.is-skewing { transform: none; }
+  .tp-cat-ph { position: relative; }
+}
+@media (max-width: 859px) and (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .pt-root .tp-cat .tp-cat-li:nth-child(odd):not(.is-in) { translate: -26px 0; }
+  .pt-root .tp-cat .tp-cat-li:nth-child(even):not(.is-in) { translate: 26px 0; }
+  .pt-root .tp-art .tp-arow-li[data-io="left"]:not(.is-in) { translate: -26px 0; }
+  .pt-root .tp-art .tp-arow-li[data-io="right"]:not(.is-in) { translate: 26px 0; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .tp-scroll i, .tp-hero-photo .pt-kb { animation: none !important; }
+  .tp-scroll i, .tp-ph-push, .tp-ph-breathe { animation: none !important; }
+  .tp-mq-wrap { display: none; } /* 流れる帯は止めると折り返して見切れるので、動きを減らす設定では出さない */
+  .pt-root .tp-circle-li.pt-popin { translate: none; } /* 共通のスマホ用ポップイン(translate: 0 8px)が動きを減らす設定でも残るのを打ち消す */
 }

@@ -80,3 +80,17 @@ export function PetMark({ kind, ...p }: { kind: "dog" | "cat" } & P) {
     </svg>
   );
 }
+
+/** 飾りの葉(細い枝に葉が 4 枚。塗り + 枝は線。currentColor。逃げる飾り・揺れる飾りに使う) */
+export function Leaf(p: P) {
+  const l = "M0 0C5-5.2 12.5-5.2 17.5 0 12.5 5.2 5 5.2 0 0z";
+  return (
+    <svg viewBox="0 0 40 58" aria-hidden="true" {...p}>
+      <path d="M19 56C19.6 40 20.4 24 23 5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d={l} fill="currentColor" transform="translate(23 6) rotate(-84) scale(.95)" />
+      <path d={l} fill="currentColor" transform="translate(21.6 24) rotate(-148) scale(1.05)" />
+      <path d={l} fill="currentColor" transform="translate(21 33) rotate(-24) scale(1.05)" />
+      <path d={l} fill="currentColor" transform="translate(19.8 46) rotate(-152) scale(.9)" />
+    </svg>
+  );
+}

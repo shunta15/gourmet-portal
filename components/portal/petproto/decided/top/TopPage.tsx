@@ -1,24 +1,33 @@
 import Link from "next/link";
 import Shell from "../common/Shell";
-import { Reveal, MaskLines, Write, Heart } from "../common/Motion";
-import { IconSearch, IconArrow, IconChevron } from "../common/Icons";
+import { Reveal, MaskLines, Write, Heart, FillHeading, Marquee, PawTrail, Flee } from "../common/Motion";
+import { IconSearch, IconArrow, IconChevron, Paw } from "../common/Icons";
 import { SEARCH_HREF, SHOP_HREF, ARTICLES_HREF, ARTICLE_HREF } from "../common/site";
-import { CatIcon, PetMark } from "./icons";
+import { CatIcon, PetMark, Leaf } from "./icons";
 import { T, CATS, FEATURES, STORES, INDUSTRY, SCENES, AREAS } from "./data";
+import HeroFx from "./HeroFx";
 import "./top.css";
 
 /* eslint-disable @next/next/no-img-element */
 
 // ペット決定案 ①最初のページ(見本 最初.webp の完全再現)。寸法は見本 948 幅の px を --u で置く(top.css)。
+// 動き(2026-10-21): ヒーローの視差(HeroFx)・ポップイン・スタガー・マスク・ワイプ・ティルト・マグネット・カラーフィル・マーキー・足あと・逃げる飾り・背景色の変化・スクロール拡大。
+
+const d = (ms: number) => ({ ["--d" as string]: `${ms}ms` });
 
 function Hero() {
   return (
     <section className="tp-hero" aria-label="マチノワPet">
       <div className="tp-hero-in">
+        {/* 写真の層(最初に 5% 寄ったあと息をするように寄り・マウスで逆向きにずれる)。お団子の切り抜きも同じ層に入れて、寄っても写真とずれない */}
         <div className="tp-hero-photo pt-live pt-shine">
-          <img className="pt-kb" src={`${T}/hero.webp`} width={948} height={332} alt="" fetchPriority="high" />
+          <div className="tp-ph-push">
+            <div className="tp-ph-breathe">
+              <img src={`${T}/hero.webp`} width={948} height={332} alt="" fetchPriority="high" />
+              <div className="tp-bun" aria-hidden="true" />
+            </div>
+          </div>
         </div>
-        <div className="tp-bun" aria-hidden="true" />
         <MaskLines as="h1" className="tp-h1" lines={["ペットと、", "この街で、", "もっと豊かに。"]} delay={120} step={150} />
         <Reveal as="p" variant="fade" delay={650} className="tp-lead">
           マチノワPetは、ペットと一緒に行けるお店や
@@ -32,7 +41,7 @@ function Hero() {
         <form className="tp-search pt-pop pt-float pt-live" action={SEARCH_HREF} method="get" role="search">
           <IconSearch className="tp-search-ic" />
           <input className="tp-search-in" type="text" name="q" placeholder="エリア・駅名・お店の名前で探す" aria-label="エリア・駅名・お店の名前で探す" autoComplete="off" />
-          <button type="submit" className="tp-search-go pt-press pt-shimmer" aria-label="検索する">
+          <button type="submit" className="tp-search-go pt-press pt-shimmer pt-magnet" data-magnet="0.12" data-magnet-r="40" aria-label="検索する">
             <IconArrow />
           </button>
         </form>
@@ -50,11 +59,11 @@ function SecHead({ id, en, jp, more, href, children }: { id: string; en: string;
   return (
     <div className="pt-sechead tp-sh">
       <h2 id={id} className="pt-h2 tp-h2 io">
-        {en}
+        <FillHeading as="span">{en}</FillHeading>
       </h2>
       <span className="pt-h2-sub tp-sub io">{jp}</span>
       {children}
-      <Link className="pt-more tp-more pt-press io" href={href}>
+      <Link className="pt-more tp-more pt-press pt-magnet io" href={href} data-magnet="0.5" data-magnet-r="60">
         {more}
         <IconArrow />
       </Link>
@@ -62,16 +71,36 @@ function SecHead({ id, en, jp, more, href, children }: { id: string; en: string;
   );
 }
 
+/** カテゴリの札は左右から中央へ寄る(左 3 枚は左から、右 3 枚は右から)。同じ距離で、中央に近い札から順に動く(外側の札が先に動くと、後ろの札と重なって交差する) */
+const CAT_DELAY = [320, 190, 60, 60, 190, 320];
+const CAT_SHIFT = 40;
+
 function Category() {
   return (
     <section className="tp-sec tp-cat" id="pt-category" aria-labelledby="tp-cat-h">
-      <SecHead id="tp-cat-h" en="Category" jp="カテゴリから探す" more="すべてのカテゴリを見る" href={SEARCH_HREF} />
-      <ul className="tp-cats" data-io-group>
-        {CATS.map((c) => (
-          <li key={c.title} className="tp-cat-li io" style={{ ["--x" as string]: c.x - 45, ["--w" as string]: c.w, ["--tl" as string]: c.tl }}>
-            <Link href={SEARCH_HREF} className="tp-cat-card pt-hov tp-hv">
-              <span className="tp-cat-ph tp-up pt-zoom">
-                <img src={`${T}/cat-${CATS.indexOf(c) + 1}.webp`} width={c.w} height={97} alt="" loading="lazy" />
+      <SecHead id="tp-cat-h" en="Category" jp="カテゴリから探す" more="すべてのカテゴリを見る" href={SEARCH_HREF}>
+        <Flee className="tp-deco tp-deco--leaf-a io" style={d(260)} radius={150} strength={46}>
+          <Leaf className="tp-leaf pt-live" />
+        </Flee>
+        <Flee className="tp-deco tp-deco--paw-a io" style={d(380)} radius={140} strength={42}>
+          <Paw className="tp-dpaw pt-float pt-live" />
+        </Flee>
+        <Flee className="tp-deco tp-deco--paw-b io" style={d(480)} radius={140} strength={42}>
+          <Paw className="tp-dpaw pt-float pt-live" style={{ animationDelay: "-2.4s" }} />
+        </Flee>
+      </SecHead>
+      <ul className="tp-cats pt-skew" data-skew="0.4" data-io-group>
+        {CATS.map((c, i) => (
+          <li
+            key={c.title}
+            className="tp-cat-li io"
+            data-io={i < 3 ? "left" : "right"}
+            style={{ ["--x" as string]: c.x - 45, ["--w" as string]: c.w, ["--tl" as string]: c.tl, ["--d" as string]: `${CAT_DELAY[i]}ms`, ["--io-x" as string]: CAT_SHIFT }}
+          >
+            <Link href={SEARCH_HREF} className="tp-cat-card pt-hov tp-hv pt-tilt" data-tilt="7">
+              <span className="tp-cat-ph tp-up pt-zoom tp-sheen">
+                <img src={`${T}/cat-${i + 1}.webp`} width={c.w} height={97} alt="" loading="lazy" />
+                <i className="pt-tilt-glare" aria-hidden="true" />
               </span>
               <span className={`tp-cat-ic pt-bounce ${c.icon === "run" ? "tp-cat-ic--run" : ""}`}>
                 <CatIcon name={c.icon} />
@@ -86,35 +115,41 @@ function Category() {
           </li>
         ))}
       </ul>
+      {/* カテゴリの下の余白を、足あとが右へ歩いていく(スクロールで 1 つずつ) */}
+      <PawTrail className="tp-trail tp-trail--cat" count={15} direction="right" />
     </section>
   );
 }
 
 function Feature() {
   return (
-    <div className="tp-band tp-band--feat">
+    <div className="tp-band tp-band--feat pt-bgshift" style={{ ["--bg-to" as string]: "#f8f7f5", ["--bg-from" as string]: "#efe5d8" }}>
       <section className="tp-sec tp-feat" aria-labelledby="tp-feat-h">
         <div className="pt-sechead tp-sh">
           <h2 id="tp-feat-h" className="pt-h2 tp-h2 io">
-            Feature
+            <FillHeading as="span">Feature</FillHeading>
           </h2>
-          <span className="tp-h2-jp pt-min io">特集記事</span>
+          <span className="tp-h2-jp pt-min io">
+            <FillHeading as="span">特集記事</FillHeading>
+          </span>
           <p className="tp-feat-desc io">
             ペットとのおでかけがもっと楽しくなるおすすめの特集をご紹介。
             <br />
             季節のスポットや、テーマに合わせた特集で、今すぐ行きたくなる情報をお届けします。
           </p>
-          <Link className="pt-more tp-more pt-press io" href={ARTICLES_HREF}>
+          <Link className="pt-more tp-more pt-press pt-magnet io" href={ARTICLES_HREF} data-magnet="0.5" data-magnet-r="60">
             すべての特集記事を見る
             <IconArrow />
           </Link>
         </div>
-        <ul className="tp-feats" data-io-group>
+        {/* 見出しとカードの間を、足あとが左へ戻っていく */}
+        <PawTrail className="tp-trail tp-trail--feat" count={15} direction="left" />
+        <ul className="tp-feats pt-skew" data-skew="0.4" data-io-group>
           {FEATURES.map((f, i) => (
-            <li key={f.t1} className="tp-feat-li io" style={{ ["--x" as string]: f.x - 45, ["--w" as string]: f.w }}>
-              <Link href={ARTICLE_HREF} className="tp-fcard pt-hov tp-hv">
+            <li key={f.t1} className="tp-feat-li io" style={{ ["--x" as string]: f.x - 45, ["--w" as string]: f.w, ...d(i * 110) }}>
+              <Link href={ARTICLE_HREF} className="tp-fcard pt-hov tp-hv pt-tilt" data-tilt="5">
                 <span className="tp-fcard-in tp-up">
-                  <span className="tp-fcard-ph pt-zoom">
+                  <span className="tp-fcard-ph pt-zoom pt-wipe tp-sheen" data-wipe={i % 2 ? "right" : "left"} style={d(i * 110 + 260)}>
                     <img src={`${T}/feat-${i + 1}.webp`} width={f.w} height={99} alt="" loading="lazy" />
                   </span>
                   <span className="tp-fcard-tag" style={{ ["--tw" as string]: f.tagw }}>
@@ -126,6 +161,7 @@ function Feature() {
                     {f.t2}
                   </span>
                   <time className="tp-fcard-d">{f.date}</time>
+                  <i className="pt-tilt-glare" aria-hidden="true" />
                 </span>
               </Link>
             </li>
@@ -139,14 +175,25 @@ function Feature() {
 function Pickup() {
   return (
     <section className="tp-sec tp-pick" aria-labelledby="tp-pick-h">
-      <SecHead id="tp-pick-h" en="Pick up Stores" jp="おすすめのお店" more="すべてのお店を見る" href={SEARCH_HREF} />
-      <ul className="tp-picks" data-io-group>
+      <SecHead id="tp-pick-h" en="Pick up Stores" jp="おすすめのお店" more="すべてのお店を見る" href={SEARCH_HREF}>
+        <Flee className="tp-deco tp-deco--paw-c io" style={d(260)} radius={140} strength={42}>
+          <Paw className="tp-dpaw pt-float pt-live" style={{ animationDelay: "-1.2s" }} />
+        </Flee>
+        <Flee className="tp-deco tp-deco--paw-d io" style={d(360)} radius={140} strength={42}>
+          <Paw className="tp-dpaw pt-float pt-live" style={{ animationDelay: "-3.6s" }} />
+        </Flee>
+        <Flee className="tp-deco tp-deco--leaf-b io" style={d(460)} radius={150} strength={46}>
+          <Leaf className="tp-leaf tp-leaf--b pt-live" />
+        </Flee>
+      </SecHead>
+      <ul className="tp-picks pt-skew" data-skew="0.4" data-io-group>
         {STORES.map((s, i) => (
-          <li key={s.name} className="tp-pick-li io" style={{ ["--x" as string]: s.x - 45, ["--w" as string]: s.w }}>
-            <article className="tp-pcard pt-hov tp-hv">
+          <li key={s.name} className="tp-pick-li io" style={{ ["--x" as string]: s.x - 45, ["--w" as string]: s.w, ...d(i * 100) }}>
+            <article className="tp-pcard pt-hov tp-hv pt-tilt" data-tilt="6">
               <Link href={SHOP_HREF} className="tp-pcard-link" tabIndex={-1} aria-hidden="true">
-                <span className="tp-pcard-ph tp-up pt-zoom">
+                <span className="tp-pcard-ph tp-up pt-zoom pt-wipe tp-sheen" data-wipe={i % 2 ? "right" : "left"} style={d(i * 100 + 240)}>
                   <img src={`${T}/pick-${i + 1}.webp`} width={s.w} height={90} alt="" loading="lazy" />
+                  <i className="pt-tilt-glare" aria-hidden="true" />
                 </span>
               </Link>
               <Heart className="tp-pheart" label={`${s.name}をお気に入りに追加`} size={11} />
@@ -163,6 +210,10 @@ function Pickup() {
           </li>
         ))}
       </ul>
+      {/* 節の間に業種名が流れる薄い帯(Pick up の下の余白に収める。高さは変えない) */}
+      <div className="tp-mq-wrap" aria-hidden="true">
+        <Marquee className="tp-mq" items={CATS.map((c) => c.title)} sep={<Paw className="tp-mq-paw" />} repeat={2} duration={46} fade />
+      </div>
     </section>
   );
 }
@@ -172,12 +223,14 @@ function ArticleCol({ kind, items }: { kind: "ind" | "scene"; items: typeof INDU
   return (
     <div className={`tp-acol tp-acol--${kind}`}>
       <div className="tp-ahead">
-        <span className="tp-amark io">
+        <span className="tp-amark pt-popin" style={d(120)}>
           <PetMark kind={ind ? "dog" : "cat"} />
         </span>
-        <h2 className="pt-h2 tp-h2 tp-ah2 io">{ind ? "Industry" : "Scene"}</h2>
+        <h2 className="pt-h2 tp-h2 tp-ah2 io">
+          <FillHeading as="span">{ind ? "Industry" : "Scene"}</FillHeading>
+        </h2>
         <span className="pt-h2-sub tp-sub tp-asub io">{ind ? "ペット業界の記事" : "ペットとの暮らしのシーン記事"}</span>
-        <Link className="pt-more tp-more pt-press io" href={ARTICLES_HREF}>
+        <Link className="pt-more tp-more pt-press pt-magnet io" href={ARTICLES_HREF} data-magnet="0.5" data-magnet-r="60">
           すべての記事を見る
           <IconArrow />
         </Link>
@@ -199,9 +252,9 @@ function ArticleCol({ kind, items }: { kind: "ind" | "scene"; items: typeof INDU
       </div>
       <ul className="tp-arows" data-io-group>
         {items.map((a, i) => (
-          <li key={a.t1} className="tp-arow-li io">
+          <li key={a.t1} className="tp-arow-li io" data-io={ind ? "left" : "right"} style={d(i * 140 + 140)}>
             <Link href={ARTICLE_HREF} className="tp-arow pt-hov">
-              <span className="tp-arow-ph pt-zoom">
+              <span className="tp-arow-ph pt-zoom tp-sheen">
                 <img src={`${T}/${ind ? "ind" : "scene"}-${i + 1}.webp`} width={98} height={52} alt="" loading="lazy" />
               </span>
               <span className="tp-arow-t">
@@ -223,7 +276,7 @@ function Articles() {
   return (
     <section className="tp-sec tp-art" aria-label="業界の記事とシーン記事">
       <ArticleCol kind="ind" items={INDUSTRY} />
-      <i className="tp-vdiv" aria-hidden="true" />
+      <i className="tp-vdiv io" data-io="fade" aria-hidden="true" style={d(200)} />
       <ArticleCol kind="scene" items={SCENES} />
     </section>
   );
@@ -231,20 +284,22 @@ function Articles() {
 
 function Area() {
   return (
-    <section className="tp-area" id="pt-area" aria-labelledby="tp-area-h" data-scrollp>
+    <section className="tp-area" id="pt-area" aria-labelledby="tp-area-h">
       <div className="tp-area-in">
-        <img className="tp-area-bg" src={`${T}/area-bg.webp`} width={948} height={128} alt="" loading="lazy" />
+        <img className="tp-area-bg pt-scale-scroll" style={{ ["--ss" as string]: 0.18, ["--sy" as string]: "calc(-14 * var(--u))" }} src={`${T}/area-bg.webp`} width={948} height={128} alt="" loading="lazy" />
         <div className="tp-area-txt">
           <p className="tp-area-en io">Area Search</p>
           <h2 id="tp-area-h" className="tp-area-h io">
-            エリアから探す
+            <FillHeading as="span" start={0.99} end={0.76}>
+              エリアから探す
+            </FillHeading>
           </h2>
           <p className="tp-area-p io">
             お住まいの地域から、ペットと一緒に行ける
             <br />
             お店やサービスを見つけられます。
           </p>
-          <Link href={SEARCH_HREF} className="tp-area-btn pt-press pt-shimmer io">
+          <Link href={SEARCH_HREF} className="tp-area-btn pt-press pt-shimmer pt-magnet io" data-magnet="0.4" data-magnet-r="56">
             エリア一覧を見る
             <IconArrow />
           </Link>
@@ -252,7 +307,7 @@ function Area() {
         <Write className="tp-area-hand pt-hand" lines={["ペットと行ける場所が、", "きっと見つかる。"]} delay={300} step={700} />
         <ul className="tp-circles" data-io-group>
           {AREAS.map((a, i) => (
-            <li key={a.en} className="tp-circle-li io" style={{ ["--cx" as string]: a.cx }}>
+            <li key={a.en} className="tp-circle-li pt-popin" style={{ ["--cx" as string]: a.cx, ...d(180 + i * 120) }}>
               <Link href={SEARCH_HREF} className="tp-circle pt-hov">
                 <span className="tp-circle-ph pt-zoom">
                   <img src={`${T}/area-${i + 1}.webp`} width={43} height={43} alt="" loading="lazy" />
@@ -275,10 +330,15 @@ export default function TopPage() {
       <div className="tp-flow">
         <Category />
         <Feature />
-        <Pickup />
-        <Articles />
+        <div className="tp-band tp-band--pick pt-bgshift" style={{ ["--bg-to" as string]: "#fefefe", ["--bg-from" as string]: "#f7f0e6" }}>
+          <Pickup />
+        </div>
+        <div className="tp-band tp-band--art pt-bgshift" style={{ ["--bg-to" as string]: "#fefefe", ["--bg-from" as string]: "#f1f5ee" }}>
+          <Articles />
+        </div>
         <Area />
       </div>
+      <HeroFx />
     </Shell>
   );
 }
