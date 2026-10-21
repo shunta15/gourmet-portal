@@ -1,6 +1,6 @@
 import Link from "next/link";
-import "@/app/proto-noren/feature.css";
-import "@/app/proto-noren/feature-single.css";
+import "./feature.css";
+import "./feature-single.css";
 import FeatureIndex from "@/components/portal/noren/FeatureIndex";
 import DoorLift from "@/components/portal/noren/DoorLift";
 import PairSwitch from "@/components/portal/noren/PairSwitch";

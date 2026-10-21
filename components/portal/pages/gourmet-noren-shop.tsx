@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import "@/app/proto-noren/shop.css";
+import "@/components/portal/noren/shop.css";
 import LeafletMap from "@/components/LeafletMap";
 import ShopHero from "@/components/portal/noren/ShopHero";
 import ShopActionsNoren from "@/components/portal/noren/ShopActionsNoren";
@@ -33,7 +33,6 @@ import { NOREN_STRIP_OTHER_RATINGS, RELEASE_REST } from "@/lib/portal/noren/rele
 
 /**
  * 暖簾のデザインの店ページの中身（サーバーコンポーネント）。今の /restaurant/[id] と同じデータ・同じ取り方で、同じ中身を出す。
- * - 見本 /proto-noren/restaurant/[id]（app/proto-noren/restaurant/[id]/page.tsx。プレビュー・ローカル専用）: links = SAMPLE_LINKS（行き先は見本のページ）
  * - 本番 /restaurant/[id]（公開スイッチ ON のとき next.config.ts の rewrites で app/gourmet/restaurant/[id]/page.tsx に差し替わる）: links = LIVE_LINKS（行き先は本物のページ）
  * 枠（ヘッダー・フッター）は components/portal/noren/NorenFrame.tsx（各ルートのレイアウト）。メタ情報・構造化データは呼び出し側のページが出す。
  */

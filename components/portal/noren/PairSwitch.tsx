@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "@/app/proto-noren/pair-switch.css";
+import "./pair-switch.css";
 import type { PairNote } from "@/lib/portal/noren/pair";
 
 /**

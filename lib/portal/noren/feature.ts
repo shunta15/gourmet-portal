@@ -2,18 +2,8 @@ import { kanjiNum } from "./lamp";
 import { nameTokens } from "./shop";
 
 /**
- * 暖簾の見本（特集記事ページ）用の純関数。サーバー・クライアントのどちらからも使える（データは読まない）。
+ * 暖簾の特集記事ページ用の純関数。サーバー・クライアントのどちらからも使える（データは読まない）。
  */
-
-/** 今のサイト内の行き先のうち、見本にある店ページ・特集ページは見本の行き先に付け替える（それ以外は今の本物のページのまま） */
-export function protoHref(h: string): string {
-  if (h.startsWith("/restaurant/") || h.startsWith("/feature/")) {
-    // /feature/search・/feature/region/... は見本に無いので、そのまま
-    if (/^\/feature\/(search|region)(\/|$)/.test(h)) return h;
-    return `/proto-noren${h}`;
-  }
-  return h;
-}
 
 // 号の名前（"2026年 10月号"）と年のラベル。暖簾・旧デザインの両方が使うので、import のない軽いファイルに置いてある
 export { issueLabel, yearLabel } from "../../issueLabel";

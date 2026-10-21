@@ -1,10 +1,5 @@
 import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "@/lib/portal/noren/rewrites";
-// ── scene ここから
-import { NOREN_SCENE_REWRITE, NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
-// ── scene ここまで
-// ── area ここから
-import { NOREN_REGION_REWRITE } from "@/lib/portal/noren/rewrites";
-// ── area ここまで
+import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
 
 /**
  * 総合サイト用のヘッダー・フッターを出すパスかどうか。
@@ -43,13 +38,6 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (NOREN_SHOP_REWRITE && pathname.startsWith('/restaurant/')) return true; // 暖簾の店ページ（本物の URL）
   if (NOREN_FEATURE_REWRITE && /^\/feature\/[^/]+$/.test(pathname) && pathname !== '/feature/search') return true; // 暖簾の特集記事ページ（本物の URL）
   if (NOREN_FEATURE_INDEX_REWRITE && (pathname === '/feature' || pathname === '/feature/search' || /^\/feature\/region\/[^/]+$/.test(pathname))) return true; // 暖簾の特集記事のトップ（一覧・特集を探す・地域別。本物の URL）
-  // ── scene ここから
-  if (NOREN_SCENE_REWRITE && (pathname === '/scene' || /^\/scene\/[^/]+$/.test(pathname))) return true; // 暖簾のシーンのページ（一覧・シーンごと。本物の URL）
   if (NOREN_SEARCH_REWRITE && pathname === '/search') return true; // 暖簾の店をさがす（本物の URL）
-  // ── scene ここまで
-  // ── area ここから
-  if (NOREN_REGION_REWRITE && /^\/region(\/[^/]+){0,2}$/.test(pathname)) return true; // 暖簾のエリアのページ（エリア一覧・エリアごと・街ごと。本物の URL。/region/<key>/opengraph-image は 3 段なので当たらない）
-  // ── area ここまで
-  if (pathname === '/proto-noren' || pathname.startsWith('/proto-noren/')) return true; // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用）。グルメの共通ヘッダーは出さない
   return NEW_VERTICAL_PATHS.some((p) => pathname === p || pathname.startsWith(p + '/'));
 }

@@ -1,32 +1,17 @@
 /* ====================================================================
-   地（暖簾のページの背景）の色と、紙の節の色の切り替え。
+   地（暖簾のページの背景）の色の切り替え。
    NorenFrame が、地の色が墨以外のとき（lib/portal/noren/realTop.ts の NOREN_REAL_GROUND）だけ、枠（.vN）に data-ground="…" を付ける。
    付いていない（既定の墨）ときは、このファイルの規則はどれも効かない＝今までの見た目のまま。
-   見本 /proto-noren/real の操作盤（DyePanel.tsx）は、?ground= ?paper= を読んで、枠の data-ground / data-paper を付け替える（見本だけ）。
    4 段の濃淡は、今の墨（#0f0c0a・+7・+15・−4 の明るさ差）と同じ差の付け方: --sumi（地）・--sumi-2（一段明るい）・--sumi-3（札の地）・--sumi-4（フッター）。
    --sumi-rgb は --sumi の R,G,B（noren.css 以下の半透明の墨 rgba(var(--sumi-rgb),α) が追従する）。
    生成りの字・朱の字の読みやすさ（コントラスト）: 生成り・生成りの中 4.5 以上、朱の字(--shu-hi)は 地・--sumi-2・--sumi-4 の上で 4.5 以上
-   （鉄紺・灰墨の --sumi-3 の上の朱の字だけ 4.1〜4.2 だが、--sumi-3 の上には朱の字を置いていない）。
+   （灰墨の --sumi-3 の上の朱の字だけ 4.1〜4.2 だが、--sumi-3 の上には朱の字を置いていない）。
    ==================================================================== */
 .vN[data-ground="sumi"]{--sumi:#0f0c0a;--sumi-2:#181310;--sumi-3:#231b15;--sumi-4:#0a0806;--sumi-rgb:15,12,10}
-/* 藍墨: 紺がかった黒 */
-.vN[data-ground="aizumi"]{--sumi:#0b1018;--sumi-2:#12171f;--sumi-3:#1a1f27;--sumi-4:#070c14;--sumi-rgb:11,16,24}
-/* 焦茶: 赤みのある茶 */
-.vN[data-ground="kogecha"]{--sumi:#20160f;--sumi-2:#271d16;--sumi-3:#2f251e;--sumi-4:#1c120b;--sumi-rgb:32,22,15}
-/* 鉄紺: 明るめの紺 */
-.vN[data-ground="tetsukon"]{--sumi:#14203a;--sumi-2:#1b2741;--sumi-3:#232f49;--sumi-4:#101c36;--sumi-rgb:20,32,58}
 /* 灰墨: 明るめの墨 */
 .vN[data-ground="haizumi"]{--sumi:#26221f;--sumi-2:#2d2926;--sumi-3:#35312e;--sumi-4:#221e1b;--sumi-rgb:38,34,31}
-
-/* 紙の節（--paper・--paper-hi）。生成りは今のまま（付けない・または kinari） */
-.vN[data-paper="kinari"]{--paper:#efe6d6;--paper-hi:#f8f2e5}
-.vN[data-paper="shirocha"]{--paper:#e8dcc4;--paper-hi:#f3ead6}
-.vN[data-paper="haijiro"]{--paper:#e3e1db;--paper-hi:#f0efeb}
 
 /* 入口だけの地の色（RELEASE_REST が false のあいだの公開）。NorenFrame が枠に data-ground-top を付け、入口（最初の画面 .vR-hero を含むページ）だけに効かせる。
    入口以外のページ（店・特集・エリアなど）の色は変わらない。RELEASE_REST が true になると、NorenFrame が全ページに data-ground を付けるので、上の規則が全ページに効く */
 .vN[data-ground-top="sumi"]:has(.vR-hero){--sumi:#0f0c0a;--sumi-2:#181310;--sumi-3:#231b15;--sumi-4:#0a0806;--sumi-rgb:15,12,10}
-.vN[data-ground-top="aizumi"]:has(.vR-hero){--sumi:#0b1018;--sumi-2:#12171f;--sumi-3:#1a1f27;--sumi-4:#070c14;--sumi-rgb:11,16,24}
-.vN[data-ground-top="kogecha"]:has(.vR-hero){--sumi:#20160f;--sumi-2:#271d16;--sumi-3:#2f251e;--sumi-4:#1c120b;--sumi-rgb:32,22,15}
-.vN[data-ground-top="tetsukon"]:has(.vR-hero){--sumi:#14203a;--sumi-2:#1b2741;--sumi-3:#232f49;--sumi-4:#101c36;--sumi-rgb:20,32,58}
 .vN[data-ground-top="haizumi"]:has(.vR-hero){--sumi:#26221f;--sumi-2:#2d2926;--sumi-3:#35312e;--sumi-4:#221e1b;--sumi-rgb:38,34,31}

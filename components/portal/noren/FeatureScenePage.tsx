@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_HREF } from "@/lib/portal/noren/featureKinds";
-import "@/app/proto-noren/feature.css";
-import "@/app/proto-noren/feature-scene.css";
+import "./feature.css";
+import "./feature-scene.css";
 import FeatureMap from "@/components/portal/FeatureMap";
 import FeatureHero, { type StreetItem } from "@/components/portal/noren/FeatureHero";
 import FeatureIndex from "@/components/portal/noren/FeatureIndex";

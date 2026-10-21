@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import GourmetNorenHome from "@/components/portal/pages/gourmet-noren-home";
 import GourmetNorenHomeReal from "@/components/portal/noren-real/GourmetNorenHomeReal";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
-import { NOREN_REAL_DYE, NOREN_REAL_TOP } from "@/lib/portal/noren/realTop";
-import { OPEN_SEARCH_LOOK, resolveLook, resolveOpen } from "@/lib/portal/noren/looks";
+import { NOREN_REAL_DYE } from "@/lib/portal/noren/realTop";
+import { resolveOpen } from "@/lib/portal/noren/looks";
 
 // グルメのトップ（公開スイッチ ON のときだけ。2026-10-09 から暖簾のデザイン。枠は app/gourmet/layout.tsx）。
-// 中身は components/portal/pages/gourmet-noren-home.tsx（見本 /proto-noren と共通。行き先だけ本物のページ）。
-// 旧トップ（components/portal/pages/gourmet-home.tsx）は OFF のときの `/` がそのまま使う。
-// 公開スイッチ OFF のあいだは 404（本番は今のまま `/` がグルメのトップ。lib/portal/launch.ts）。
+// 中身は components/portal/noren-real/GourmetNorenHomeReal.tsx（リアル版の暖簾）。
+// 公開スイッチ OFF のあいだは 404（lib/portal/launch.ts）。
 // ON のあいだだけの URL なので、canonical は自分自身の /gourmet。title・description は旧 /gourmet と同じ。
 export const metadata: Metadata = {
   title: "グルメの店をエリア・特集・シーンから探す｜マチノワグルメ",
@@ -20,15 +18,12 @@ export const metadata: Metadata = {
 
 export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
-  // 最初の画面だけ、リアル版の暖簾に替えられる（lib/portal/noren/realTop.ts のスイッチ。false なら今までの暖簾）。色は固定で、URL では替わらない
+  // 最初の画面はリアル版の暖簾。色は固定で、URL では替わらない
   // スマホ幅の暖簾の丈の案は URL の ?sp=、見出し・リードの候補は ?copy=1〜5 で替えられる（見比べ用）。本番（VERCEL_ENV が production）では URL の指定を無視する（サーバーで判定して渡す）
-  // 「店を、さがす。」の節の見た目（block = 参考画像 1 枚目の形 / noren = 今までの暗い札）。URL の ?look=noren|block は見本でだけ効く（本番は読まない）
   const allowUrl = process.env.VERCEL_ENV !== "production";
   const sp = allowUrl ? await searchParams : {};
   const one = (v: string | string[] | undefined) => (([] as string[]).concat(v ?? [])[0] ?? "");
-  const look = resolveLook(OPEN_SEARCH_LOOK, allowUrl ? one(sp.look) : "", allowUrl);
   // 「店を、さがす。」の色（block のとき）: ?open=dark（既定。暖簾の灰墨）|block（白と橙）、?tiles=1（業種のタイル）、?band=e|g（帯の地図）。見本でだけ効く
   const open = resolveOpen({ open: one(sp.open), tiles: one(sp.tiles), band: one(sp.band), box: one(sp.box) }, allowUrl);
-  if (NOREN_REAL_TOP) return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={allowUrl} allowCopyUrl={allowUrl} searchLook={look} searchOpen={open} />;
-  return <GourmetNorenHome links={LIVE_LINKS} />;
+  return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={allowUrl} allowCopyUrl={allowUrl} searchOpen={open} />;
 }

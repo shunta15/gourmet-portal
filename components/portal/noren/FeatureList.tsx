@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import "@/app/proto-noren/feature.css";
+import "./feature.css";
 import "./featlist.css";
 import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
 import { GOURMET_TOP } from "@/lib/portal/noren/nav";

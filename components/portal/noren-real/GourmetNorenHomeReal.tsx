@@ -10,11 +10,10 @@ import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
 import { RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
 import { FEATURE_KIND_ROUNDUP, FEATURE_KIND_SINGLE, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
-import OpenSearch from "@/components/portal/noren/OpenSearch";
 import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import { buildBlockTop } from "@/lib/portal/noren/blockTop";
-import { resolveOpen, type Look, type OpenView } from "@/lib/portal/noren/looks";
+import { resolveOpen, type OpenView } from "@/lib/portal/noren/looks";
 import "../noren/top.css";
 import "./real.css";
 import { NOREN_HERO_KEYS, type NorenLinks } from "@/lib/portal/noren/nav";
@@ -22,9 +21,7 @@ import type { NorenRealSpShape } from "@/lib/portal/noren/realTop";
 import type { DyeKind } from "./clothReal";
 
 /**
- * 暖簾のグルメのトップ（リアル版の試作）。components/portal/pages/gourmet-noren-home.tsx を写して、
- * 最初の画面（NorenHero）だけを NorenHeroReal に差し替えたもの。最初の画面より下は、いまの入口と同じ中身。
- * 見本（/proto-noren/real。allowUrlOverride で URL の ?dye= などを許す）と、本番の /gourmet（lib/portal/noren/realTop.ts のスイッチが true のときだけ。色は固定）で使う。
+ * 暖簾のグルメのトップ（リアル版）。最初の画面は NorenHeroReal。本番の /gourmet（app/gourmet/page.tsx。色は固定）が使う。
  */
 
 function splitTitle(t: string): [string, string] {
@@ -46,7 +43,6 @@ export default async function GourmetNorenHomeReal({
   spShape,
   allowSpUrl = false,
   allowCopyUrl = false,
-  searchLook = "noren",
   searchOpen,
 }: {
   links: NorenLinks;
@@ -58,9 +54,7 @@ export default async function GourmetNorenHomeReal({
   allowSpUrl?: boolean;
   /** URL の ?copy=1〜5 で見出し・リードの候補に替えられるか（?sp= と同じ。本番でないときだけ true） */
   allowCopyUrl?: boolean;
-  /** 「店を、さがす。」の節の見た目（lib/portal/noren/looks.ts。app/gourmet/page.tsx が決めて渡す）。省略は今までの暖簾の見た目 */
-  searchLook?: Look;
-  /** block のときの節の色・タイルの有無・帯の地図（lib/portal/noren/looks.ts の resolveOpen。省略は既定） */
+  /** 「店を、さがす。」の節の色・タイルの有無・帯の地図（lib/portal/noren/looks.ts の resolveOpen。省略は既定） */
   searchOpen?: OpenView;
 }) {
   const restaurants = await getAllRestaurants();
@@ -69,7 +63,7 @@ export default async function GourmetNorenHomeReal({
 
   const chapters = buildChapters(restaurants, regionName);
   const openSearchData = buildOpenSearchData(restaurants);
-  const blockTop = searchLook === "block" ? buildBlockTop(restaurants, openSearchData.cuisines, openSearchData.regions) : null;
+  const blockTop = buildBlockTop(restaurants, openSearchData.cuisines, openSearchData.regions);
 
   const heroShop = byId.get(HERO_PICK[0]);
   const heroPhoto = sized((heroShop && photoFor(heroShop, HERO_PICK[1])) || chapters[3].shops[0].img, 1600);
@@ -111,7 +105,7 @@ export default async function GourmetNorenHomeReal({
       />
 
       {/* 2 店をさがす(2026-10-11 オーナー指示。暖簾の直後、章の入口の前。件数はここ=サーバーで数える) */}
-      {blockTop ? <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandAreas={blockTop.bandAreas} view={searchOpen ?? resolveOpen({}, false)} /> : <OpenSearch data={openSearchData} />}
+      <OpenSearchBlock data={openSearchData} tiles={blockTop.tiles} bandAreas={blockTop.bandAreas} view={searchOpen ?? resolveOpen({}, false)} />
 
       {/* 3 章 */}
       {/* 章の前置き（「七つの章」の見出し・説明・7 つの目次）は置かない（2026-10-12 オーナー指示「ここいらないかな」）。「店を、さがす。」の節のすぐ下から、和食の章が始まる */}

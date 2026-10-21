@@ -3,19 +3,16 @@ import { areaIndexHref, regionHref } from "./areaLinks";
 import { featureHrefOf } from "./onePage";
 
 /**
- * 暖簾の見本（/proto-noren/**）の行き先。グルメの今のヘッダー・フッターと同じ行き先（行き先は今の本物のページ）。
+ * フッターのナビゲーションの「トップ」の目印の行き先。NorenFooter・periphery/parts.tsx が、実際のトップの行き先（本番は /gourmet）に付け替えて使う。
  * サーバー・クライアントのどちらからも使える（軽い定数だけ）。
  */
 export const NOREN_TOP = "/proto-noren";
-export const noRestaurant = (id: string) => `/proto-noren/restaurant/${id}`;
-export const noFeature = (id: string) => `/proto-noren/feature/${encodeURIComponent(id)}`;
 
 /** 本番のグルメのトップ（公開スイッチ ON のとき暖簾のトップが出る URL） */
 export const GOURMET_TOP = "/gourmet";
 
 /**
- * 暖簾のトップ（components/portal/pages/gourmet-noren-home.tsx）が出す行き先。
- * 見本（/proto-noren）は見本の店ページ・特集記事へ、本番（/gourmet）は本物のページ（/restaurant/<id>・/feature/<id>）へ。
+ * 暖簾のトップ・店ページ・特集記事が出す行き先。本番（/gourmet）は本物のページ（/restaurant/<id>・/feature/<id>）へ。
  * shopBase は店ページの手前（`${shopBase}/${id}`）。サーバーコンポーネントの中でだけ使う（関数を含むのでクライアント部品へは渡さない）。
  */
 export type NorenLinks = {
@@ -23,7 +20,6 @@ export type NorenLinks = {
   shopBase: string;
   feature: (id: string) => string;
 };
-export const SAMPLE_LINKS: NorenLinks = { top: NOREN_TOP, shopBase: "/proto-noren/restaurant", feature: noFeature };
 export const LIVE_LINKS: NorenLinks = {
   top: GOURMET_TOP,
   shopBase: "/restaurant",
@@ -65,7 +61,7 @@ export const FOOT_NAV = RELEASE_SEARCH
 
 /**
  * 本番の /gourmet のフッターのナビゲーションだけに足す入口。今のグルメのトップ（暖簾に替える前）にあって、暖簾のトップに無かった行き先。
- * ラベルは今のグルメのトップにある言葉（おまかせ提案・写真から探す・ショート動画）。ショート動画の行き先は総合サイトの動画のページ /videos（公開スイッチ ON で開ける）。見本（/proto-noren）のフッターには足さない。
+ * ラベルは今のグルメのトップにある言葉（おまかせ提案・写真から探す・ショート動画）。ショート動画の行き先は総合サイトの動画のページ /videos（公開スイッチ ON で開ける）。
  * 「総合トップ」は、今のグルメのヘッダーのロゴ（`/`）が公開スイッチ ON で総合トップへ行っていたぶん。
  */
 export const FOOT_NAV_LIVE_EXTRA = [
