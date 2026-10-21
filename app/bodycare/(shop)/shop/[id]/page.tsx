@@ -1,6 +1,6 @@
 import { bodyShopPage } from "@/components/portal/vert/bodyshop/shopPage";
 
-// ボディケアの店のページ。案は lib/portal/vert/bodycareStructure.ts の BODYCARE_SHOP_DESIGN で選ぶ(静的に出る。引数は読まない)。
+// ボディケアの店のページ(案4「グリーン」。静的に出る。引数は読まない)。
 const page = bodyShopPage();
 
 export const revalidate = 3600;

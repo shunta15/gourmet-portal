@@ -7,7 +7,6 @@ import { article, breadcrumb } from "@/lib/seo/jsonld";
 import { ogImage } from "@/lib/seo/og";
 import { absUrl } from "@/lib/seo/util";
 import { notFoundMetadata } from "@/components/portal/pages/data";
-import { BODYCARE_DESIGN } from "@/lib/portal/vert/bodycareDesign";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { VERTICALS } from "@/lib/verticals";
 
@@ -22,7 +21,7 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   assertPortalLive();
   const meta = specialBySlug((await params).slug);
-  if (!meta || BODYCARE_DESIGN !== "green") return notFoundMetadata();
+  if (!meta) return notFoundMetadata();
   return buildMetadata({
     vertical: "bodycare",
     title: `${meta.title}｜マチノワ ボディケア`,
@@ -36,7 +35,7 @@ export default async function Page({ params }: Props) {
   assertPortalLive();
   const slug = (await params).slug;
   const meta = specialBySlug(slug);
-  if (!meta || BODYCARE_DESIGN !== "green") notFound(); // 定数を "current" に戻したら 404
+  if (!meta) notFound();
   const v = VERTICALS.bodycare;
   const path = `/bodycare/special/${meta.slug}`;
   return (

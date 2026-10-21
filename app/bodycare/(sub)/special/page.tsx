@@ -1,11 +1,8 @@
-import { notFound } from "next/navigation";
 import JsonLd from "@/components/portal/JsonLd";
 import SpecialIndex from "@/components/portal/bcproto/green/article/SpecialIndex";
 import { buildMetadata } from "@/lib/seo/meta";
 import { breadcrumb } from "@/lib/seo/jsonld";
 import { absUrl } from "@/lib/seo/util";
-import { notFoundMetadata } from "@/components/portal/pages/data";
-import { BODYCARE_DESIGN } from "@/lib/portal/vert/bodycareDesign";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { VERTICALS } from "@/lib/verticals";
 
@@ -19,14 +16,12 @@ const DESCRIPTION = "ボディケアの店を探すときに役立つ特集記�
 
 export function generateMetadata() {
   assertPortalLive();
-  if (BODYCARE_DESIGN !== "green") return notFoundMetadata();
   // 件数ゲートの対象外の静的ページ。index にするので count は十分な値(3 以上)を渡す
   return buildMetadata({ vertical: "bodycare", title: TITLE, description: DESCRIPTION, path: PATH, count: 3 });
 }
 
 export default function Page() {
   assertPortalLive();
-  if (BODYCARE_DESIGN !== "green") notFound(); // 定数を "current" に戻したら、これまでどおり 404(特集記事は案4 の見た目でだけ作ってある)
   const v = VERTICALS.bodycare;
   return (
     <>
