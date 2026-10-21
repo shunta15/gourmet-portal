@@ -86,7 +86,7 @@ const CAT_UI: Record<string, { icon: string; img: number; l1: string; l2: string
   "dog-run": { icon: "run", img: 3, l1: "のびのび遊べる", l2: "屋外・屋内ドッグラン" },
   "pet-hotel": { icon: "hotel", img: 4, l1: "旅行やおでかけも", l2: "安心して預けられる" },
   vet: { icon: "clinic", img: 5, l1: "お住まいの地域の", l2: "動物病院を探す" },
-  "pet-shop": { icon: "shop", img: 6, l1: "お住まいの地域の", l2: "ペットショップを探す" },
+  "pet-shop": { icon: "shop", img: 6, l1: "新しい家族に出会える", l2: "ショップ・ブリーダー" },
 };
 const CAT_W = 135.5;
 const CAT_STEP = (859 - CAT_W) / 5; // 6 枚のとき見本の幅いっぱい(0〜859)。少ないときは中央に寄せる

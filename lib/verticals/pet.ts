@@ -21,7 +21,8 @@ export const pet: Vertical = {
     // ペットと一緒に入れるカフェ・飲食店の両方を入れられる「カフェ・飲食店」(2026-10-22 オーナー指示:「飲食店のところを犬カフェとか猫カフェも入れられるように」)。
     { slug: 'dog-cafe', name: 'カフェ・飲食店', schemaType: 'LocalBusiness' },
     { slug: 'dog-run', name: 'ドッグラン', schemaType: 'LocalBusiness' },
-    { slug: 'pet-shop', name: 'ペットショップ', schemaType: 'PetStore' },
+    // 表示名は「ペットショップ・ブリーダー」(2026-10-22 オーナー決定。今入る店はどれも動物を迎える店で、用品の店はまだ無い)
+    { slug: 'pet-shop', name: 'ペットショップ・ブリーダー', schemaType: 'PetStore' },
   ],
   scenes: [
     { slug: 'large-dog-ok', name: '大型犬OK', matchTags: ['大型犬対応'] },
