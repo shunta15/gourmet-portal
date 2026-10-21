@@ -50,7 +50,6 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   // ── area ここから
   if (NOREN_REGION_REWRITE && /^\/region(\/[^/]+){0,2}$/.test(pathname)) return true; // 暖簾のエリアのページ（エリア一覧・エリアごと・街ごと。本物の URL。/region/<key>/opengraph-image は 3 段なので当たらない）
   // ── area ここまで
-  if (pathname === '/proto-hub' || pathname.startsWith('/proto-hub/')) return true; // 総合トップ「にぎわいの輪」の色を固定して見るルート（プレビュー・ローカル専用）
   if (pathname === '/proto-noren' || pathname.startsWith('/proto-noren/')) return true; // グルメの暖簾デザインの見本（店ページ・特集記事。プレビュー・ローカル専用）。グルメの共通ヘッダーは出さない
   return NEW_VERTICAL_PATHS.some((p) => pathname === p || pathname.startsWith(p + '/'));
 }
