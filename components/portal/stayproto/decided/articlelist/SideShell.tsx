@@ -1,0 +1,26 @@
+"use client";
+
+import { useId, useState, type ReactNode } from "react";
+import { IconChevronDown } from "../common/Icons";
+
+/**
+ * 宿の記事の一覧の左の絞り込み(サイドバー)の入れ物(search/SideShell.tsx を写して、クラス名の接頭辞を sal- にしたもの)。デスクトップでは常に開いて見え、スマホ・タブレット(1000px 未満)では
+ * 「条件で絞り込む」のボタンで開閉する(最初は閉じている)。中身はサーバーで描いた要素をそのまま受け取る。
+ * JS が動かないときも、ボタンを押せないだけで中身は CSS で隠れたまま(→ スマホでは検索ボックスから絞れる)。
+ */
+export default function SideShell({ children, summary }: { children: ReactNode; summary: string }) {
+  const [open, setOpen] = useState(false);
+  const id = useId();
+  return (
+    <aside className="sal-side" data-open={open ? "1" : "0"} aria-label="絞り込み">
+      <button type="button" className="sal-side-btn" aria-expanded={open} aria-controls={id} onClick={() => setOpen((v) => !v)}>
+        <span>条件で絞り込む</span>
+        {summary ? <span className="sal-side-sum">{summary}</span> : null}
+        <IconChevronDown className="sal-side-chev" />
+      </button>
+      <div className="sal-side-body" id={id}>
+        {children}
+      </div>
+    </aside>
+  );
+}
