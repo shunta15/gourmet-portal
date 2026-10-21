@@ -10,7 +10,7 @@
       "不一致": 2,
       "店名ちがい": 1
     },
-    "writable": 19
+    "writable": 20
   },
   "writable": [
     "pet-4",
@@ -21,6 +21,7 @@
     "pet-11",
     "pet-12",
     "pet-14",
+    "pet-15",
     "pet-16",
     "pet-17",
     "pet-19",
@@ -52,7 +53,8 @@
     "4125355156774246136": "pe0016",
     "11360375277361448352": "pe0017",
     "13971686593288919274": "pe0018",
-    "1482200613885738245": "pe0019"
+    "1482200613885738245": "pe0019",
+    "10631388431320769741": "pe0020"
   },
   "selfDecided": [
     "pet.ts の種類への対応は、シートの業種ラベルを軸に、公式サイトの内容で確かめた。トリミング→trimming、ペットホテル→pet-hotel、ペットショップ→pet-shop、動物病院→vet、動物カフェ→犬連れ・犬のカフェと公式サイトが示すものだけ dog-cafe",
@@ -67,7 +69,8 @@
     "店ID の接頭辞を pe とした(be=beauty、bo=bodycare に合わせ英名の頭2文字)。宿泊施設は未決のまま",
     "既に保存されていた gbp/pet-7.json と gbp/pet-19.json は取り直さず(resolve.mjs の既定どおり)、内容を点検して採用した",
     "[2026-10-22] pet-7(うさぎカフェ)と pet-29(猫カフェ)は、オーナー指示(カフェの枠を犬カフェ・猫カフェなど動物カフェまで広げる)で category を dog-cafe にした。種類の slug は変えていない(名前の変更は lib/verticals/pet.ts 側の別作業)。店 ID は pe0018(pet-7)・pe0019(pet-29)を払い出した(払い出し済みの pe0001〜pe0017 は変えず追記)",
-    "[2026-10-22] pet-15(ブリーダー)と pet-21(しつけ教室+ホテル)は記事・写真だけ用意し、category は null のまま(オーナー確認待ち。案は proposedCategoryNeedsOwner のとおり pet-shop / pet-hotel)。ID も払い出していない"
+    "[2026-10-22] pet-15(ブリーダー)と pet-21(しつけ教室+ホテル)は記事・写真だけ用意し、category は null のまま(オーナー確認待ち。案は proposedCategoryNeedsOwner のとおり pet-shop / pet-hotel)。ID も払い出していない",
+    "[2026-10-22] オーナー決定(ペットショップの枠は「ペットショップ・ブリーダー」)で pet-15 プラムケンネル(犬のブリーダー)を category=pet-shop に確定し、店 ID pe0020 を払い出した(払い出し済みの pe0001〜pe0019 は変えず追記。pe0012 は欠番のまま)。writable に追加。pet-21(SHELLFISH)は自宅営業の件でオーナー確認待ちのため、category は null・ID なしのまま載せない"
   ],
   "supplementary": {
     "pet-3": {
@@ -391,12 +394,11 @@
       "website": "https://plumkennel.jp/",
       "siteKind": "own",
       "ownSite": true,
-      "category": null,
-      "proposedCategoryNeedsOwner": "pet-shop",
-      "writable": false,
-      "id": null,
-      "reason": "シートはペット訓練所だが、公式サイトは犬のブリーダー(子犬販売)。シートの種類(訓練所)は pet.ts に当たらず、サイト内容(ブリーダー)なら pet-shop の可能性あり。食い違いのため保留。要オーナー判断 [2026-10-22] 記事・写真は用意済み(articles/pet-15.json・photos/pet-15.json)。オーナーがペットショップ扱いを確認したら category に pet-shop を入れ、pe の ID を払い出す(それまで店データには出ない)",
-      "articleReady": true
+      "category": "pet-shop",
+      "writable": true,
+      "id": "pe0020",
+      "reason": "シートはペット訓練所だが、公式サイトは犬のブリーダー(ミニチュアダックスフンド・カニンヘンダックスフンドの子犬を自家繁殖で直接販売)。オーナー決定で pet-shop(「ペットショップ・ブリーダー」)に入れる",
+      "ownerDecision": "2026-10-22 オーナー決定: ペットショップの枠は「ペットショップ・ブリーダー」。プラムケンネル(犬のブリーダー)をこの枠(slug pet-shop)で載せる。記事・写真は articles/pet-15.json・photos/pet-15.json"
     },
     {
       "key": "pet-16",
