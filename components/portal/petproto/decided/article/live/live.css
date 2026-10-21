@@ -1,0 +1,80 @@
+/* ④ 記事の一覧(本番 /pet/article)だけの上書き。接頭辞 arl-。見本(../article.css)は長さの決まった文字・件数を想定していないので、
+   長い文字は折り返して行数で止める / 件数が変わる並びは左から詰める、写真なしの札を足す。
+   見本の高さ・位置は変えない(試作 /proto-pet/decided は ../article.css だけを使う)。 */
+
+.arl-clamp2, .arl-clamp3, .arl-clamp4 { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; white-space: normal !important; text-overflow: ellipsis; overflow-wrap: anywhere; }
+.arl-clamp2 { -webkit-line-clamp: 2; line-clamp: 2; }
+.arl-clamp3 { -webkit-line-clamp: 3; line-clamp: 3; }
+.arl-clamp4 { -webkit-line-clamp: 4; line-clamp: 4; }
+
+/* 写真なしの札(利用シーン。ストック写真で埋めない) */
+.arl-nophoto { display: grid !important; place-items: center; background: linear-gradient(160deg, #efe5d8, #e2d3c0); }
+.arl-nophoto-ic { width: 26%; height: auto; color: #fbf7f1; stroke: none !important; }
+
+/* 掲載 0 件のあいだの案内 */
+.arl-prep { padding: 56px 20px 64px; text-align: center; }
+.arl-prep-h { margin: 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: 20px; letter-spacing: 0.08em; color: #25211d; }
+.arl-prep-p { margin: 12px 0 0; font-size: 13.5px; line-height: 1.9; letter-spacing: 0.04em; color: #625c56; }
+.arl-prep-l { margin: 18px 0 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; }
+.arl-prep-l a { color: var(--pt-brown); border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+
+/* 一覧: 本数・「もっと見る」 */
+.arl-count { font-size: 12px; letter-spacing: 0.08em; color: #8a847c; }
+.arl-more { margin: 28px 0 0; text-align: center; }
+.arl-more-btn { min-width: 200px; height: 44px; padding: 0 28px; border: 1px solid var(--pt-brown); border-radius: 999px; background: #fff; color: var(--pt-brown); font-family: var(--pt-ff-min); font-weight: 700; font-size: 14px; letter-spacing: 0.08em; cursor: pointer; transition: background 0.25s, color 0.25s; }
+.arl-more-btn:hover { background: var(--pt-brown); color: #fff; }
+
+@media (min-width: 860px) {
+  /* ページの最後の節がフッターの帯にくっつかないように(見本は一覧のあとに専門家コラム・おすすめが続くので余白が要らなかった) */
+  .pt-main > .arl-feat:last-child, .pt-main > .ar-pick:last-child { padding-bottom: calc(48 * var(--u)); }
+  .arl-lt { padding-bottom: calc(46 * var(--u)); }
+  .arl-prep { padding: calc(64 * var(--u)) 0 calc(72 * var(--u)); }
+  .arl-prep-h { font-size: calc(18 * var(--u)); }
+  .arl-prep-p { font-size: calc(9 * var(--u)); }
+  .arl-prep-l { font-size: calc(9 * var(--u)); }
+  .arl-count { font-size: calc(8 * var(--u)); }
+  .arl-more { margin-top: calc(26 * var(--u)); }
+  .arl-more-btn { min-width: calc(190 * var(--u)); height: calc(30 * var(--u)); font-size: calc(9 * var(--u)); }
+
+  /* カテゴリ・シーン: 件数で列数が変わる。見本の幅(154)で左から並べ、6 つのときは幅いっぱいに縮める */
+  .ar-grid5.arl-grid { grid-template-columns: repeat(var(--n, 5), minmax(0, calc(154 * var(--u)))); justify-content: start; gap: calc(14 * var(--u)); }
+
+  /* 特集記事(大): 写真は右の 56%、左は薄い面に文字。実在の店の写真は文字を重ねると読めないため */
+  .arl-fb .ar-fb-photo { inset: 0 0 0 44%; }
+  .arl-fb .ar-fb-photo img { object-position: center; }
+  .arl-fb .ar-fb-photo::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 14%; z-index: 1; background: linear-gradient(90deg, #f5f4f0, rgba(245, 244, 240, 0)); pointer-events: none; }
+  .arl-fb .ar-fb-txt { right: auto; width: 44%; display: flex; flex-direction: column; padding: calc(26 * var(--u)) calc(12 * var(--u)) calc(20 * var(--u)) calc(21 * var(--u)); z-index: 2; }
+  .arl-fb .ar-fb-label, .arl-fb .ar-fb-t, .arl-fb .ar-fb-d, .arl-fb .ar-fb-date { position: static; }
+  .arl-fb .ar-fb-t { margin-top: calc(8 * var(--u)); font-size: calc(14.4 * var(--u)); line-height: calc(23 * var(--u)); letter-spacing: 0.05em; }
+  .arl-fb .ar-fb-d { margin-top: calc(10 * var(--u)); font-size: calc(8.2 * var(--u)); line-height: calc(15.5 * var(--u)); letter-spacing: 0.06em; font-weight: 500; color: #5f5952; }
+  .arl-fb .ar-fb-date { margin-top: auto; }
+  .arl-feat-grid--1 { grid-template-columns: minmax(0, 1fr); }
+  .arl-feat-grid--1 .ar-fb-wrap { margin-top: calc(2 * var(--u)); }
+
+  /* 特集記事(小): 見出しは 3 行まで・説明は出さない(幅が狭く、見出しが長いため) */
+  .arl-fs .ar-fs-t { width: 100%; font-size: calc(9.6 * var(--u)); line-height: calc(16 * var(--u)); letter-spacing: 0.05em; }
+  .arl-fs .ar-fs-body { right: calc(34 * var(--u)); }
+  .arl-fs-col--1 { grid-template-rows: calc(237.5 * var(--u)); }
+  .arl-fs-col--1 .ar-fs-img { width: calc(160 * var(--u)); }
+  .arl-fs-col--1 .ar-fs-body { left: calc(177 * var(--u)); }
+
+  /* 一覧のカード: 見出し 3 行・説明 2 行 */
+  .arl-lt .ar-lt-t { font-size: calc(10.4 * var(--u)); line-height: calc(18 * var(--u)); letter-spacing: 0.06em; }
+  .arl-lt .ar-lt-d { font-size: calc(8 * var(--u)); line-height: calc(15 * var(--u)); letter-spacing: 0.06em; font-weight: 500; color: #8d877f; }
+  .arl-lt .ar-lt-grid { row-gap: calc(24 * var(--u)); }
+}
+
+@media (max-width: 859px) {
+  .pt-root .pt-main > .arl-feat:last-child, .pt-root .pt-main > .ar-pick:last-child { padding-bottom: 36px; }
+  .pt-root .arl-lt { padding-bottom: 40px; }
+  .arl-lt .arl-count { display: none; }
+  .pt-root .arl-fb .ar-fb-photo { inset: auto; }
+  .pt-root .arl-fb .ar-fb-photo::before { display: none; }
+  .pt-root .arl-fb .ar-fb-txt { width: auto; display: block; }
+  .pt-root .arl-fb .ar-fb-t { font-size: 18px; line-height: 1.6; }
+  .pt-root .arl-fb .ar-fb-d { font-size: 13px; }
+  .pt-root .arl-fs .ar-fs-t { font-size: 14px; line-height: 1.55; }
+  .pt-root .arl-fs-col--1 .ar-fs-img { width: 112px; }
+  .pt-root .arl-fs .ar-fs-body { right: auto; left: auto; }
+  .pt-root .arl-more-btn { height: 46px; font-size: 14px; }
+}

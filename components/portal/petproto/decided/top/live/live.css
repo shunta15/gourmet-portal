@@ -1,0 +1,48 @@
+/* 最初のページ(本番 /pet)だけの上書き。接頭辞 tpl-。見本(../top.css)は実在の店の長い名前・変わる件数を想定していないので、
+   長い文字は切る / 行数を決める、件数が変わる並びは中央に寄せる、写真なしの丸・札を足す。
+   見本の高さ・位置は変えない(試作 /proto-pet/decided は ../top.css だけを使う)。 */
+
+/* ---- 2 行で止める(特集記事の見出し) ---- */
+.tpl-clamp2 { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; white-space: normal; text-overflow: ellipsis; }
+
+/* ---- 写真なしの丸・札(エリアの丸・利用シーンの行。ストック写真で埋めない) ---- */
+.tpl-nophoto { display: grid; place-items: center; background: linear-gradient(160deg, #efe5d8, #e2d3c0); }
+.tpl-nophoto-paw { width: 46%; height: auto; color: #fbf7f1; opacity: 0.95; }
+
+/* ---- 掲載 0 件のあいだの案内(Category の代わり) ---- */
+.tpl-prep { width: min(100% - 32px, 560px); margin: 0 auto; padding: 56px 0 64px; text-align: center; }
+.tpl-prep-h { font-family: var(--pt-ff-min); font-weight: 600; font-size: 20px; letter-spacing: 0.08em; color: #25211d; margin: 0; }
+.tpl-prep-p { margin: 12px 0 0; font-size: 13.5px; line-height: 1.9; letter-spacing: 0.04em; color: #625c56; }
+
+@media (min-width: 860px) {
+  .tpl-prep { padding: calc(64 * var(--u)) 0 calc(72 * var(--u)); }
+  .tpl-prep-h { font-size: calc(18 * var(--u)); }
+  .tpl-prep-p { font-size: calc(9 * var(--u)); }
+
+  /* ---- Feature の見出し: 2 行で止める(見本は 2 行・幅 カード幅 − 26。日付の上まで) ---- */
+  .tp-fcard-t.tpl-clamp2 { width: calc((var(--w) - 26) * var(--u)); height: calc(35.6 * var(--u)); }
+
+  /* ---- Stores: 店名・所在地・タグは長くても札の幅の中で切る ---- */
+  .tp-pcard-n { max-width: calc(100% - 4 * var(--u)); overflow: hidden; }
+  .tp-pcard-n a { overflow: hidden; text-overflow: ellipsis; }
+  .tp-pcard-a { max-width: calc(100% - 4 * var(--u)); overflow: hidden; text-overflow: ellipsis; }
+  .tp-pcard-tags { max-width: calc(100% - 8 * var(--u)); overflow: hidden; }
+  .tp-pcard-tags li { flex: 0 0 auto; }
+
+  /* ---- Scene だけの帯: 中央に 1 列(見本は Industry と 2 列)。行の数で高さが決まる(見出し 82 + 行 62.5) ---- */
+  .tpl-art { height: calc((82 + 62.5 * var(--rows, 3)) * var(--u)); }
+  .tpl-acol { left: calc(272 * var(--u)); }
+  .tpl-art .tp-arow-t { top: calc(15 * var(--u)); }
+
+  /* ---- 写真なしの丸(エリア) ---- */
+  .tp-circle-ph.tpl-nophoto { background: linear-gradient(160deg, #cdbfae, #a89683); }
+}
+
+@media (max-width: 859px) {
+  /* スマホ: 長い名前は 2 行まで */
+  .tp-pcard-n, .tp-fcard-t { overflow-wrap: anywhere; }
+  .tp-pcard-n a { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+  .tp-fcard-t.tpl-clamp2 { -webkit-line-clamp: 3; line-clamp: 3; }
+  .tp-circle-ph.tpl-nophoto { background: linear-gradient(160deg, #cdbfae, #a89683); }
+  .tpl-acol { padding-top: 34px; }
+}

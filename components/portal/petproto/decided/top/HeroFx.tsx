@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const PLACEHOLDER = "エリア・駅名・お店の名前で探す";
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
 
-export default function HeroFx() {
+export default function HeroFx({ placeholder = PLACEHOLDER }: { placeholder?: string } = {}) {
   useEffect(() => {
     const hero = document.querySelector<HTMLElement>(".tp-hero-in");
     if (!hero) return;
@@ -26,17 +26,17 @@ export default function HeroFx() {
       input.placeholder = "";
       const type = () => {
         if (input.value || document.activeElement === input) {
-          input.placeholder = PLACEHOLDER;
+          input.placeholder = placeholder;
           return;
         }
         i += 1;
-        input.placeholder = PLACEHOLDER.slice(0, i);
-        if (i < PLACEHOLDER.length) timer = window.setTimeout(type, 58);
+        input.placeholder = placeholder.slice(0, i);
+        if (i < placeholder.length) timer = window.setTimeout(type, 58);
       };
       timer = window.setTimeout(type, 1500);
       cleanups.push(() => {
         window.clearTimeout(timer);
-        input.placeholder = PLACEHOLDER;
+        input.placeholder = placeholder;
       });
     }
 
@@ -111,6 +111,6 @@ export default function HeroFx() {
     });
 
     return () => cleanups.forEach((f) => f());
-  }, []);
+  }, [placeholder]);
   return null;
 }
