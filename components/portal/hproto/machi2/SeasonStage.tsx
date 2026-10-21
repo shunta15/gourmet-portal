@@ -5,7 +5,8 @@ import { IMG, STILL_SRC } from "./const";
 import { SEASONS, SEASON_SEC, seasonSrc, type Season } from "./season";
 import { setSeason } from "./seasonStore";
 
-const SIZE: Record<Season, [number, number]> = { spring: [2000, 667], summer: [1774, 887], autumn: [2000, 667], winter: [2000, 667] };
+// 2026-10-21 オーナーの新しい季節の絵 4 枚(川辺の公園。楕円の写真なし)は 4 枚とも 2000×667
+const SIZE: Record<Season, [number, number]> = { spring: [2000, 667], summer: [2000, 667], autumn: [2000, 667], winter: [2000, 667] };
 type Layer = { id: number; season: Season };
 
 /**

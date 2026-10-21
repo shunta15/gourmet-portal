@@ -36,7 +36,8 @@ export default function Hero({ mihon, season, prod = false, still = false }: { m
       <div className="h2-hero-stage">
         {/* 層 1: 背景の絵(春夏秋冬・「輪」で切り替わる・ゆっくり寄る+マウスでいちばん小さく動く)と季節の札 */}
         <SeasonStage initial={season} still={still} />
-        {still && <div className="h2-veil" aria-hidden="true" />}
+        {/* 文字の後ろの薄い白のぼかし。新しい季節の絵(川辺の公園)は中央が街並みなので、季節版でも敷く */}
+        <div className="h2-veil" aria-hidden="true" />
         <div className="h2-clouds" aria-hidden="true"><i /><i /><i /></div>
         {/* 光の筋(斜めに流れる)・光の粒(ボケ。ゆっくり漂う) */}
         <div className="h2p-amb" aria-hidden="true">
