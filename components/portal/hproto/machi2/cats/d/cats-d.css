@@ -1,0 +1,76 @@
+/* 総合トップ 業種の節 案D「写真なし・大きな色の丸アイコン」(/proto-home/cat-d 専用。CatsD.tsx だけに効く)。
+   寸法は他の部品と同じく「見本の画素 × var(--u)」(--u: 1440 で 1.218、390 で 1px)。--u は cqw を含むので、このファイルでは container-type を使わない。
+   札の位置・大きさ = 今の本番の札の最終の姿(広い画面: 上 78.5u・高さ 235u・幅は CatsD.tsx の GEO。スマホ: 3×2・112.66×207.52 @390)。
+   箱(.h2-cats)の高さ・余白は airy.css のまま(ここでは上書きしない)。 */
+
+.cd {
+  --k: .77;                               /* 見本の 1 画素 = 0.77u(札の高さ 305 → 235u) */
+  --c-d: 92; --c-top: 14;                 /* 丸: 直径・上の余白(札の最も狭い幅の 64%) */
+  --n-fs: 21; --n-lh: 26; --n-top: 110;   /* 業種名 */
+  --s-fs: 15.8; --s-lh: 20.4; --s-top: 138; /* サブ文(2 行) */
+  --a-d: 29; --a-b: 29.3;                 /* 矢印: 直径・中心の下からの高さ(見本と同じ 38 画素 × 0.77) */
+  --ink: #0e2260; --ink2: #243777; --pink: #fd6789; --rule: rgba(240, 232, 190, .95);
+  position: absolute; inset: 0;
+}
+.cd-row { display: contents; }
+
+/* 札 */
+.cd-card {
+  position: absolute; left: calc(var(--l) * var(--u)); top: calc(78.5 * var(--u)); width: calc(var(--w) * var(--u)); height: calc(235 * var(--u));
+  display: block; overflow: hidden; border-radius: calc(22 * var(--u)); background: #fff;
+  box-shadow: 0 0 0 1px var(--rule), 0 calc(3 * var(--u)) calc(13 * var(--u)) rgba(150, 140, 90, .15);
+  text-align: center;
+}
+.cd-card:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* 札の下の水彩の飾り: 左右の端を等倍で置き、間(ほぼ余白)だけ横に伸ばす(札の幅が違ってもえがおが崩れない) */
+.cd-band {
+  position: absolute; left: 0; right: 0; bottom: 0; height: calc(107 * var(--k) * var(--u));
+  border-style: solid; border-color: transparent; border-width: 0 calc(78 * var(--k) * var(--u));
+  border-image-source: var(--bd); border-image-slice: 0 156 fill; border-image-width: 0 calc(78 * var(--k) * var(--u)); border-image-repeat: stretch;
+  pointer-events: none;
+}
+
+/* 丸 + 白い絵 */
+.cd-ic {
+  position: absolute; left: 0; right: 0; margin: 0 auto; top: calc(var(--c-top) * var(--u)); width: calc(var(--c-d) * var(--u)); height: calc(var(--c-d) * var(--u));
+  border-radius: 50%; background: var(--c); box-shadow: 0 calc(3 * var(--u)) calc(9 * var(--u)) rgba(70, 50, 30, .17);
+}
+.cd-ic img { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* 業種名 / サブ文 */
+.cd-name { position: absolute; left: 0; right: 0; top: calc(var(--n-top) * var(--u)); font-size: calc(var(--n-fs) * var(--u)); line-height: calc(var(--n-lh) * var(--u)); font-weight: 900; letter-spacing: .01em; color: var(--ink); white-space: nowrap; }
+.cd-sub { position: absolute; left: 0; right: 0; top: calc(var(--s-top) * var(--u)); display: flex; flex-direction: column; align-items: center; font-size: calc(var(--s-fs) * var(--u)); line-height: calc(var(--s-lh) * var(--u)); font-weight: 500; letter-spacing: 0; color: var(--ink2); white-space: nowrap; }
+
+/* ピンクの丸い矢印(白い縁つき。見本の矢印を消した上に重ねる) */
+.cd-arr {
+  position: absolute; left: 0; right: 0; margin: 0 auto; bottom: calc((var(--a-b) - var(--a-d) / 2) * var(--u)); width: calc(var(--a-d) * var(--u)); height: calc(var(--a-d) * var(--u));
+  display: grid; place-items: center; border-radius: 50%; background: var(--pink); box-shadow: 0 0 0 calc(2.5 * var(--u)) #fff;
+}
+.cd-arr svg { width: 56%; height: 56%; display: block; }
+
+/* 札と札の間のつる(札の上に重なる) */
+.cd-vine { position: absolute; z-index: 3; left: calc(var(--l) * var(--u)); top: calc((78.5 - 4 * var(--k)) * var(--u)); width: calc(var(--w) * var(--u)); height: calc(210 * var(--k) * var(--u)); pointer-events: none; }
+
+/* 動き: 開いた瞬間のスタガー(控えめ)とホバーだけ。常時動く物は無し。reduce では何もしない(最初から最終の状態) */
+@media (prefers-reduced-motion: no-preference) {
+  .cd:not(.is-in) .cd-card, .cd:not(.is-in) .cd-vine { opacity: 0; }
+  .cd.is-in .cd-card { animation: cd-in .8s cubic-bezier(.2, .7, .2, 1) calc(var(--i) * 70ms) both; }
+  .cd.is-in .cd-vine { animation: cd-fade 1.2s ease-out calc(260ms + var(--i) * 50ms) both; }
+  .cd-card { transition: box-shadow .35s; }
+  .cd-ic { transition: translate .35s cubic-bezier(.3, 1.4, .5, 1), box-shadow .35s; }
+  .cd-arr { transition: translate .35s cubic-bezier(.3, 1.5, .5, 1); }
+  .cd-card:hover, .cd-card:focus-visible { box-shadow: 0 0 0 1px var(--rule), 0 calc(8 * var(--u)) calc(22 * var(--u)) rgba(150, 140, 90, .26); }
+  .cd-card:hover .cd-ic, .cd-card:focus-visible .cd-ic { translate: 0 calc(-4 * var(--u)); box-shadow: 0 calc(8 * var(--u)) calc(14 * var(--u)) rgba(70, 50, 30, .2); }
+  .cd-card:hover .cd-arr, .cd-card:focus-visible .cd-arr { translate: calc(5 * var(--u)) 0; }
+}
+@keyframes cd-in { from { opacity: 0; transform: translateY(calc(14 * var(--u))); } to { opacity: 1; transform: none; } }
+@keyframes cd-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* スマホ(〜700): 本番と同じ 3×2(列間 12・行間 14・札 112.66 × 207.52 @390)。つるは本番どおり出さない。飾りは札の幅に合わせて縮める */
+@media (max-width: 700px) {
+  .cd { position: static; --k: .64; --c-d: 70; --c-top: 13; --n-fs: 14.6; --n-lh: 18; --n-top: 90; --s-fs: 11; --s-lh: 14; --s-top: 110; --a-d: 22; --a-b: 24.3; }
+  .cd-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 12px; }
+  .cd-card { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 112.66 / 207.52; border-radius: 16px; }
+  .cd-vine { display: none; }
+}

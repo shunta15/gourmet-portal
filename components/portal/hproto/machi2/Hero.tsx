@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import { preload } from "react-dom";
-import { IMG } from "./const";
+import { IMG, STILL_SRC } from "./const";
 import SeasonStage from "./SeasonStage";
 import { seasonSrc, type Season } from "./season";
 import { HEAD, P1_ONE, P3_ONE, MIHON_HEAD, MIHON_SUB } from "./copy";
@@ -20,9 +20,10 @@ const COLS: Record<string, string[]> = {
 };
 const ROT = [-4, 3, -2, 4, -3, 2, 0, -2];
 
-export default function Hero({ mihon, season, prod = false }: { mihon: boolean; season: Season; prod?: boolean }) {
-  // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)
-  preload(seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
+/** still = 試作 /proto-home/still 用。背景を 1 枚の絵に(季節の切り替えなし)。文字の後ろに薄い白のぼかし(.h2-veil)を敷く。本番は渡さない=今のまま */
+export default function Hero({ mihon, season, prod = false, still = false }: { mihon: boolean; season: Season; prod?: boolean; still?: boolean }) {
+  // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)。still は 1 枚の絵だけ
+  preload(still ? STILL_SRC : seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
   const lines = (mihon ? MIHON_HEAD : HEAD).map((t, i) => ({ k: i, chars: Array.from(t), col: COLS[(mihon ? "m" : "c") + (i + 1)] }));
   const hlLine = mihon ? 0 : 1, hlChar = mihon ? 3 : 4;
   const subs = mihon ? [...MIHON_SUB] : [P1_ONE, P3_ONE];
@@ -34,7 +35,9 @@ export default function Hero({ mihon, season, prod = false }: { mihon: boolean; 
     <section className="h2-hero" aria-label="ヒーロー" data-season={season}>
       <div className="h2-hero-stage">
         {/* 層 1: 背景の絵(春夏秋冬・「輪」で切り替わる・ゆっくり寄る+マウスでいちばん小さく動く)と季節の札 */}
-        <SeasonStage initial={season} />
+        <SeasonStage initial={season} still={still} />
+        {/* 文字の後ろの薄い白のぼかし。新しい季節の絵(川辺の公園)は中央が街並みなので、季節版でも敷く */}
+        <div className="h2-veil" aria-hidden="true" />
         <div className="h2-clouds" aria-hidden="true"><i /><i /><i /></div>
         {/* 光の筋(斜めに流れる)・光の粒(ボケ。ゆっくり漂う) */}
         <div className="h2p-amb" aria-hidden="true">

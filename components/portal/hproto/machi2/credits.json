@@ -1,0 +1,408 @@
+[
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-gourmet.webp",
+    "slot": "cat-gourmet",
+    "commonsTitle": "File:Sakura Teishoku - Sakura Japanese Restaurant 2025-07-28.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg",
+    "srcW": 8160,
+    "srcH": 6144,
+    "outW": 560,
+    "outH": 700,
+    "note": "定食の膳を上から(刺身・牛肉炒め・豆腐・サラダ・ご飯・味噌汁)。店名の看板なし",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 764,
+      "top": 1,
+      "width": 2312,
+      "height": 2890,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-beauty.webp",
+    "slot": "cat-beauty",
+    "commonsTitle": "File:Hair salon - Arlington, MA.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Hair_salon_-_Arlington,_MA.jpg",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Hair_salon_-_Arlington%2C_MA.jpg",
+    "srcW": 4032,
+    "srcH": 2268,
+    "outW": 560,
+    "outH": 700,
+    "note": "美容室の店内(椅子と鏡、人なし)。米マサチューセッツ州アーリントン",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 1056,
+      "top": 0,
+      "width": 1728,
+      "height": 2160,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-stay.webp",
+    "slot": "cat-stay",
+    "commonsTitle": "File:Kasumi room - Takahan ryokan - Gala Yuzawa, Niigata Prefecture, Japan - DSC09382.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kasumi_room_-_Takahan_ryokan_-_Gala_Yuzawa,_Niigata_Prefecture,_Japan_-_DSC09382.JPG",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Kasumi_room_-_Takahan_ryokan_-_Gala_Yuzawa%2C_Niigata_Prefecture%2C_Japan_-_DSC09382.JPG",
+    "srcW": 3648,
+    "srcH": 5472,
+    "outW": 560,
+    "outH": 700,
+    "note": "旅館の和室(畳・朱塗りの座卓・掛け軸・障子風の窓)。新潟・越後湯沢。人物なし",
+    "crop": {
+      "fetchedW": 3648,
+      "left": 0,
+      "top": 456,
+      "width": 3648,
+      "height": 4560,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-s-spring.webp",
+    "slot": "sl-s-spring",
+    "commonsTitle": "File:Cherry blossom 2025 around Meguro river (54570).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Cherry_blossom_2025_around_Meguro_river_(54570).jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cherry_blossom_2025_around_Meguro_river_%2854570%29.jpg",
+    "srcW": 4080,
+    "srcH": 3072,
+    "outW": 1600,
+    "outH": 667,
+    "note": "東京・目黒川の桜並木(2025-04-05)。主題は左の桜のトンネル",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 646,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-s-summer.webp",
+    "slot": "sl-s-summer",
+    "commonsTitle": "File:Kinosaki onsen Kita-yanagi street.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kinosaki_onsen_Kita-yanagi_street.jpg",
+    "author": "Drivephotographer",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Kinosaki_onsen_Kita-yanagi_street.jpg",
+    "srcW": 4000,
+    "srcH": 2250,
+    "outW": 1600,
+    "outH": 667,
+    "note": "城崎温泉・北柳通り(柳・石灯籠・石橋・大谿川ぞいの道)。全幅の切り抜きは店名「赤石屋」「COFFEE」「DRIP&DROP」と路面の「止まれ」が読めるため、原寸 4000×2250 の左側 2350×979 だけを sharp で切り出して 1600×667 に縮小(拡大なし)。看板・幟・標識の文字は 2 倍拡大で判読不能を確認",
+    "crop": {
+      "fetchedW": 4000,
+      "left": 0,
+      "top": 640,
+      "width": 2350,
+      "height": 979,
+      "focus": [
+        0.294,
+        0.502
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-s-autumn.webp",
+    "slot": "sl-s-autumn",
+    "commonsTitle": "File:Minoh - Minoh6688.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Minoh_-_Minoh6688.jpg",
+    "author": "lumoplank",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Minoh_-_Minoh6688.jpg",
+    "srcW": 5092,
+    "srcH": 3395,
+    "outW": 1600,
+    "outH": 667,
+    "note": "代替: 大阪・箕面公園 瀧安寺の朱橋と紅葉(2025-11-26)。箕面大滝そのものの紅葉は CC0/PD 無し",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 352,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/199350666@N08/55063876984"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-s-winter.webp",
+    "slot": "sl-s-winter",
+    "commonsTitle": "File:251128 Yubatake, Kusatsu 09.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:251128_Yubatake,_Kusatsu_09.jpg",
+    "author": "Aspere",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/251128_Yubatake%2C_Kusatsu_09.jpg",
+    "srcW": 4032,
+    "srcH": 2268,
+    "outW": 1600,
+    "outH": 667,
+    "note": "群馬・草津温泉の湯畑(湯樋と湯けむり、2025-11-28)。雪なし。下寄りに切り抜き、上部の建物の看板(7-ELEVEN等)を外した。右端の通路の人は遠景",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 560,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        1
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-gourmet.webp",
+    "slot": "sl-v-gourmet",
+    "commonsTitle": "File:Quality izakaya in Ebisu 8.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Quality_izakaya_in_Ebisu_8.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Quality_izakaya_in_Ebisu_8.jpg",
+    "srcW": 4080,
+    "srcH": 3072,
+    "outW": 1600,
+    "outH": 667,
+    "note": "東京・恵比寿の居酒屋の卓に出た刺身の盛り合わせ(鰤・鮪・鯛など)。人物・文字なし",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 646,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-beauty.webp",
+    "slot": "sl-v-beauty",
+    "commonsTitle": "File:Hair salon - Arlington, MA.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Hair_salon_-_Arlington,_MA.jpg",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Hair_salon_-_Arlington%2C_MA.jpg",
+    "srcW": 4032,
+    "srcH": 2268,
+    "outW": 1600,
+    "outH": 667,
+    "note": "美容室の店内(茶革のセット椅子と鏡が並ぶ木床のフロア)。米国マサチューセッツ州アーリントン。人物なし・読める文字なし",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 388,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.45,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-bodycare.webp",
+    "slot": "sl-v-bodycare",
+    "commonsTitle": "File:So Thai Spa Bangkok (252701005).jpeg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:So_Thai_Spa_Bangkok_(252701005).jpeg",
+    "author": "Paulus Josal",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/So_Thai_Spa_Bangkok_%28252701005%29.jpeg",
+    "srcW": 1900,
+    "srcH": 1268,
+    "outW": 1600,
+    "outH": 667,
+    "note": "タイ式マッサージサロンの施術室(左右に施術ベッドと畳んだタオル・木の椅子・暖色の照明)。バンコク。人物・文字なし",
+    "crop": {
+      "fetchedW": 1900,
+      "left": 0,
+      "top": 238,
+      "width": 1900,
+      "height": 792,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Imported from 500px ( archived version ) by the Archive Team . ( detail page )"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-pet.webp",
+    "slot": "sl-v-pet",
+    "commonsTitle": "File:Treat for the good boy (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Treat_for_the_good_boy_(Unsplash).jpg",
+    "author": "Pete Bellis petebellis",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Treat_for_the_good_boy_%28Unsplash%29.jpg",
+    "srcW": 6016,
+    "srcH": 4000,
+    "outW": 1600,
+    "outH": 667,
+    "note": "手元からおやつを受け取る小型犬(頭の上に余白を取った切り直し)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 0,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.22
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/E8LxrpUjW7Q archive copy at the Wayback Machine Image at the Wayback Machine"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-leisure.webp",
+    "slot": "sl-v-leisure",
+    "commonsTitle": "File:Kodai-ji, Kyoto - Kodaiji7301.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kodai-ji,_Kyoto_-_Kodaiji7301.jpg",
+    "author": "lumoplank",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kodai-ji%2C_Kyoto_-_Kodaiji7301.jpg",
+    "srcW": 5444,
+    "srcH": 3629,
+    "outW": 1600,
+    "outH": 667,
+    "note": "京都・高台寺の庭園。紅葉した楓と池(臥龍池)。人は写っていない",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 352,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/199350666@N08/55135549898"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-stay.webp",
+    "slot": "sl-v-stay",
+    "commonsTitle": "File:View from the Kasumi room - Takahan ryokan - Gala Yuzawa, Niigata Prefecture, Japan -.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Kasumi_room_-_Takahan_ryokan_-_Gala_Yuzawa,_Niigata_Prefecture,_Japan_-.JPG",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/View_from_the_Kasumi_room_-_Takahan_ryokan_-_Gala_Yuzawa%2C_Niigata_Prefecture%2C_Japan_-.JPG",
+    "srcW": 5472,
+    "srcH": 3648,
+    "outW": 1600,
+    "outH": 667,
+    "note": "新潟・湯沢の旅館(高半)の客室から見た雪の山並みと杉林",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 224,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/card-video.webp",
+    "slot": "card-video",
+    "commonsTitle": "File:Streets of Gion, Kyoto - Gion7709.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Streets_of_Gion,_Kyoto_-_Gion7709.jpg",
+    "author": "lumoplank",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Streets_of_Gion%2C_Kyoto_-_Gion7709.jpg",
+    "srcW": 5105,
+    "srcH": 3403,
+    "outW": 720,
+    "outH": 720,
+    "note": "京都・祇園新橋の夜の石畳の通り。柳と行灯の明かり、奥に紅葉。右端の店の看板と行灯の文字は切り抜きで外した。通りの奥の人は遠景の豆粒",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 640,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/199350666@N08/55198512986"
+  }
+]

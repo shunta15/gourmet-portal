@@ -5,6 +5,7 @@ import { CARD_FEATURE, IMG } from "./const";
 import type { CardPhotos } from "./cards";
 import type { NewsRow } from "./news";
 import { PROD_FOOT } from "./prodData";
+import { CATS } from "./catsData";
 import "./lower.css";
 
 const B = `${IMG}/lower/`;
@@ -18,14 +19,6 @@ const CH = 141 + D;
 /** カードより下の節用: 見本の y に D を足して置く */
 const PD = (x: number, y: number, w?: number, h?: number) => P(x, y + D, w, h);
 
-const CATS = [
-  { k: "gourmet", name: "グルメ", sub: ["おいしいお店を", "見つける"], href: "/gourmet", px: 63, pw: 134, cx: 130, col: "#f27b2f", ay: 645, op: "50% 88%" },
-  { k: "beauty", name: "ビューティー", sub: ["キレイを楽しむ"], href: "/beauty", px: 220, pw: 138, cx: 289, col: "#ee5d8e", ay: 639, op: "50% 24%" },
-  { k: "bodycare", name: "ボディケア", sub: ["からだを整える"], href: "/bodycare", px: 384, pw: 173, cx: 473, col: "#4aa84a", ay: 639, op: "50% 22%" },
-  { k: "pet", name: "ペット", sub: ["ペットと一緒に"], href: "/pet", px: 583, pw: 162, cx: 662, col: "#8b6cf0", ay: 639, op: "50% 9%" },
-  { k: "leisure", name: "おでかけ", sub: ["遊ぶ・体験する"], href: "/leisure", px: 769, pw: 158, cx: 845, col: "#2f8de0", ay: 639, op: "50% 42%" },
-  { k: "stay", name: "ステイ", sub: ["泊まる・くつろぐ"], href: "/stay", px: 952, pw: 162, cx: 1034, col: "#f6b620", ay: 639, op: "50% 46%" },
-];
 const VINES = [["v0", 24, 425, 52, 265], ["v1", 190, 566, 46, 124], ["v2", 350, 548, 52, 142], ["v3", 538, 554, 54, 136], ["v4", 726, 548, 52, 142], ["v5", 912, 562, 54, 128], ["v6", 1104, 415, 52, 275]] as const;
 const TTL = [..."今日はどんな"].map((c) => ({ c, k: 0 })).concat([..."楽しみ"].map((c) => ({ c, k: 1 })), [..."を見つける？"].map((c) => ({ c, k: 0 })));
 const NEWS = [
@@ -50,8 +43,11 @@ const DEMO_FOOT = {
 };
 const NEWS_Y = [722, 764, 806, 850];
 
-/** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。 */
-export default function Lower({ prod = false, news, cards }: { prod?: boolean; news?: NewsRow[]; cards?: CardPhotos }) {
+/** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。
+ *  cats = 試作用。渡されたら、業種の節(見出し+札 6 枚+つる)の代わりに `<section class="h2-cats h2-cats-x" style="--oy:394">` の中に描く(節の箱=位置・幅・高さ・上の余白は既定のまま)。渡さなければ今まで通り。 */
+export default function Lower({ prod = false, news, cards, cats }: { prod?: boolean; news?: NewsRow[]; cards?: CardPhotos; cats?: React.ReactNode }) {
+  /** 業種の節を丸ごと差し替える(試作用)。渡さなければ今まで通り(見出し+札 6 枚+つる) */
+  const custom = cats != null && cats !== false;
   const foot = prod ? PROD_FOOT : DEMO_FOOT;
   const rows = prod && news
     ? news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href, real: true }))
@@ -59,29 +55,33 @@ export default function Lower({ prod = false, news, cards }: { prod?: boolean; n
   return (
     <>
       {/* 1. 業種の札 6 枚(間に花のつる) */}
-      <section className="h2-cats" style={OY(394)} aria-label="業種から探す">
-        <h2 className="h2-a h2-ttl" data-io style={P(330, 399, 522, 44)} aria-label="今日はどんな楽しみを見つける？">
-          <svg className="h2-tick h2-tick-l" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 20 12 4M14 21l8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
-          <span className="h2-ttl-t" aria-hidden="true">{TTL.map((x, i) => <i key={i} className={x.k ? "h2-tk" : undefined} style={{ ["--c" as string]: i }}>{x.c}</i>)}</span>
-          <svg className="h2-tick h2-tick-r" viewBox="0 0 30 24" aria-hidden="true"><path d="M27 20 18 4M16 21l-8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
-        </h2>
-        <img className="h2-a h2-decor h2-sway" style={P(168, 396, 140, 44)} src={`${B}decor-l.webp`} alt="" />
-        <img className="h2-a h2-decor h2-sway h2-sway2" style={P(836, 396, 280, 44)} src={`${B}decor-r.webp`} alt="" />
-        <div className="h2-cardrow" data-io>
-          {CATS.map((c, i) => (
-            <Link key={c.k} href={c.href} className="h2-cat h2-press" style={{ ["--i" as string]: i, ["--x0" as string]: c.px - 10, ["--w0" as string]: c.pw + 20 }}>
-              <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
-              <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
-              <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
-              <span className="h2-a h2-catn" style={P(c.cx - 85, 586, 170, 26)}>{c.name}</span>
-              <span className="h2-a h2-cats-sub" style={P(c.cx - 85, 613.5, 170, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
-              <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
-            </Link>
-          ))}
-        </div>
-        {VINES.map(([k, x, y, w, h], i) => (
-          <span key={k} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
-        ))}
+      <section className={custom ? "h2-cats h2-cats-x" : "h2-cats"} style={OY(394)} aria-label="業種から探す">
+        {custom ? cats : (
+          <>
+            <h2 className="h2-a h2-ttl" data-io style={P(330, 399, 522, 44)} aria-label="今日はどんな楽しみを見つける？">
+              <svg className="h2-tick h2-tick-l" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 20 12 4M14 21l8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
+              <span className="h2-ttl-t" aria-hidden="true">{TTL.map((x, i) => <i key={i} className={x.k ? "h2-tk" : undefined} style={{ ["--c" as string]: i }}>{x.c}</i>)}</span>
+              <svg className="h2-tick h2-tick-r" viewBox="0 0 30 24" aria-hidden="true"><path d="M27 20 18 4M16 21l-8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
+            </h2>
+            <img className="h2-a h2-decor h2-sway" style={P(168, 396, 140, 44)} src={`${B}decor-l.webp`} alt="" />
+            <img className="h2-a h2-decor h2-sway h2-sway2" style={P(836, 396, 280, 44)} src={`${B}decor-r.webp`} alt="" />
+            <div className="h2-cardrow" data-io>
+              {CATS.map((c, i) => (
+                <Link key={c.k} href={c.href} className="h2-cat h2-press" style={{ ["--i" as string]: i, ["--x0" as string]: c.px - 10, ["--w0" as string]: c.pw + 20 }}>
+                  <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
+                  <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
+                  <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
+                  <span className="h2-a h2-catn" style={P(c.cx - 85, 586, 170, 26)}>{c.name}</span>
+                  <span className="h2-a h2-cats-sub" style={P(c.cx - 85, 613.5, 170, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
+                  <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
+                </Link>
+              ))}
+            </div>
+            {VINES.map(([k, x, y, w, h], i) => (
+              <span key={k} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
+            ))}
+          </>
+        )}
       </section>
 
       {/* 2. 春の特集+まちの最新情報 */}
@@ -118,10 +118,16 @@ export default function Lower({ prod = false, news, cards }: { prod?: boolean; n
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" aria-label="動画で見つかる まちの新しい魅力 — 動画で見る" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
-            {/* オーナー作の正方形の画像(見出し・説明・「動画で見る」のボタンは画像に描かれている)。カードもほぼ正方形なので枠いっぱいに出し、再生ボタンの位置に光の輪だけ重ねる */}
+          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
+            {/* 写真(card-video.webp・Wikimedia Commons。出典は credits.json)を枠いっぱいに敷き、見出し・説明・「動画で見る」のボタン・再生アイコンは HTML で重ねる(2026-10-21。以前はオーナー作の正方形の画像に文字まで描かれていた)。
+                下 55% の黒→透明のグラデーション(.h2-vshade)で白い文字を読めるようにする。光の輪(.h2-vring)は再生アイコンの中心に重ねる */}
             <span className="h2-cph h2-vph">
-              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /><i className="h2-vring" aria-hidden="true" /></span>
+              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /></span>
+              <span className="h2-vshade" aria-hidden="true" />
+              <i className="h2-vplay" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#fff" /><path d="M16 12.500 29 20l-13 7.500Z" fill="#f26a2a" /></svg><i className="h2-vring" /></i>
+              <b className="h2-vt"><span>動画で見つかる</span><span>まちの新しい魅力</span></b>
+              <span className="h2-vsub">まちの魅力を動画でチェック</span>
+              <span className="h2-vbtn"><span>動画で見る</span><em aria-hidden="true">→</em></span>
             </span>
           </Link>
         </div>
