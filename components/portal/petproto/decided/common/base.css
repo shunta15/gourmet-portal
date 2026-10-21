@@ -499,6 +499,9 @@ a:hover > .pt-logo .pt-logo-paw { transform: rotate(-14deg) scale(1.1); }
 @media (max-width: 859px) {
   .pt-paws { --paw: 22px; --paw-gap: 14px; }
   .pt-marquee { --mq-gap: 2em; }
+}
+/* 出る前の 8px の下げは、動きが有効なときだけ(動きを減らす設定・JS なしでは最終の位置のまま) */
+@media (max-width: 859px) and (scripting: enabled) and (prefers-reduced-motion: no-preference) {
   .pt-root .pt-popin, .pt-root .io[data-io="pop"], .pt-root .pt-blurin, .pt-root .io[data-io="blur"] { translate: 0 8px; }
 }
 
