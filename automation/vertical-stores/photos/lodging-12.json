@@ -2,39 +2,33 @@
   "key": "lodging-12",
   "images": [
     {
-      "path": "/_portal/vshops/lodging-12/g1.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWgyR6wM3WVyA6LRK6lcQOeTmvspAJ3rTTOK1uPI3uPalDVUDyLwsrA92b_9SEr-F_9KX37h5882W3ltvUyfNZqKH77mhbzUdn8PjbntL5L2CCIGNT0vEkELddOlIUTR-I-mWBWscbjRc=s1200",
-      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
-      "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
-      "width": 1200,
-      "height": 900,
-      "source": "Google マップ"
-    },
-    {
       "path": "/_portal/vshops/lodging-12/s1.jpg",
       "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/07/S__6799425-1024x768.jpg",
       "pageUrl": "https://www.wonderfulgarden.jp/facility/",
       "what": "森に隣接する芝地に張られたテントとタープ。手前に車が停まっている",
-      "width": 1024,
-      "height": 768,
+      "kind": "room",
+      "width": 1000,
+      "height": 750,
       "source": "公式サイト"
     },
     {
-      "path": "/_portal/vshops/lodging-12/s2.jpg",
-      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/06/IMG_1083-scaled.jpg",
-      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
-      "what": "柵と門で区切られた、芝のフリーDogサイト",
-      "width": 1200,
-      "height": 900,
-      "source": "公式サイト"
+      "path": "/_portal/vshops/lodging-12/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWgyR6wM3WVyA6LRK6lcQOeTmvspAJ3rTTOK1uPI3uPalDVUDyLwsrA92b_9SEr-F_9KX37h5882W3ltvUyfNZqKH77mhbzUdn8PjbntL5L2CCIGNT0vEkELddOlIUTR-I-mWBWscbjRc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
+      "kind": "exterior",
+      "width": 1000,
+      "height": 750,
+      "source": "Google マップ"
     },
     {
-      "path": "/_portal/vshops/lodging-12/s3.jpg",
-      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/IMG_20240518_135439-1024x1024.jpg",
+      "path": "/_portal/vshops/lodging-12/s5.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2026/05/IMG_9046-scaled.jpg",
       "pageUrl": "https://www.wonderfulgarden.jp/facility/",
-      "what": "RVサイトに停まるキャンピングカーとトレーラー",
-      "width": 1024,
-      "height": 1024,
+      "what": "パラソルとテーブルが置かれた芝の広場。奥に平屋の建物が並ぶ",
+      "kind": "common",
+      "width": 1100,
+      "height": 825,
       "source": "公式サイト"
     },
     {
@@ -42,8 +36,59 @@
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6pDMAKDSRoXNDWmsw6xjFl1gHbpjUZS7N89iNmzskE0wRxIqNu72oVaDf_LyHNodnSQiE8ZPLjRDHxjszI7Ab7GMWtE_prh_brgseqfLsU8eGDArdc37Wlh9r0cI-n0I4gpkOGShH-uJE=s1200",
       "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
       "what": "木立の前に置かれたハンモック",
-      "width": 1200,
+      "kind": "common",
+      "width": 900,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s2.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/06/IMG_1083-scaled.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "キャンプサイトにある、柵と門で区切られた芝のフリーDogサイト",
+      "kind": "room",
+      "width": 900,
+      "height": 675,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s3.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/IMG_20240518_135439-1024x1024.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "キャンプサイトにあるRVサイト。キャンピングカーとトレーラーが停まっている",
+      "kind": "room",
+      "width": 900,
       "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s6.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2026/07/IMG_0317-scaled.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "木の柵で区切られた、芝のオートサイト",
+      "kind": "room",
+      "width": 900,
+      "height": 675,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ToF41QKEkoMZQYf8_UeilQ9BY3crQqETe_AZi_TsPR6MTbEC2Cf2mHU4tI1T4lhnKuMLXV-YyT22_VByjSmzA3SuyGpJH8buaf2LtBZU7L05wpyh-yXatVVNVEXNiD7FIfg3repmukRVgH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "what": "木の壁に囲まれた浴室。白いシャワーブースの扉と、壁の時計、カゴが見える",
+      "kind": "bath",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt08BDdmMBQbYTHK4HwsuGGNfSsCz406l3R0VoMqQIXBMgeb26D2vgNC9PIxHdTR6jtDpi1x1cqZYlIeMCBXpF6Cub1aQIhXMDEOxTIfswl2LBVqyqFFug1cnduwogTMmXdvQkp0JwPdSL=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "what": "夕暮れに照明で照らされた、「WONDERFUL GARDEN」の文字の木の看板",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
       "source": "Google マップ"
     },
     {
@@ -51,10 +96,41 @@
       "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/S__6307879.jpg",
       "pageUrl": "https://www.wonderfulgarden.jp/facility/",
       "what": "男女の表示のある、板張りのトイレ棟",
+      "kind": "common",
       "width": 1200,
       "height": 900,
       "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s7.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/LINE_ALBUM_20240421.%E3%83%97%E3%83%AC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3_240504_7.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "木の壁に囲まれた炊事場。流し台が並ぶ",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s8.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2026/05/IMG_9830-2048x1536.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "「生ビール」ののぼりが立つ、小さな売店の建物",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s9.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/LINE_ALBUM_20240421.%E3%83%97%E3%83%AC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3_240504_10.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "黄色い壁と木のカウンターの洗面所。鏡と洗面台が並ぶ",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
     }
   ],
-  "note": "Google マップの写真2枚・公式サイトの写真4枚"
+  "note": "Google マップの写真4枚・公式サイトの写真9枚。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }

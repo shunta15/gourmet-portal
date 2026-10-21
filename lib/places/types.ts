@@ -23,6 +23,9 @@ export interface PlaceArticle {
   checkedAt?: string;
 }
 
+/** 店の写真の種類（ステイの宿で使う。exterior 外観 / room 客室 / bath 風呂 / meal 料理 / common 共用 / view 周辺の景色） */
+export type PlacePhotoKind = "exterior" | "room" | "bath" | "meal" | "common" | "view";
+
 /**
  * 店の写真 1 枚（新業種の実在の店。build-places.mjs が automation/vertical-stores/photos/<キー>.json から作る）。
  * path は public/ 以下のサイト内パス。取得元の URL（imageUrl・pageUrl）はデータに入れない。
@@ -31,6 +34,11 @@ export interface PlacePhoto {
   path: string;
   /** 写っているもの（alt に使う。「店名 — 写っているもの」） */
   what?: string;
+  /**
+   * 写真の種類（任意。ステイの宿の写真に付ける）。exterior 外観 / room 客室(宿泊の場所・サイトを含む) / bath 風呂 /
+   * meal 料理・食事の場 / common 共用(キッチン・炊事場・食堂・施設) / view 周辺の景色。ページが種類で写真を振り分けるための印
+   */
+  kind?: PlacePhotoKind;
   width?: number;
   height?: number;
 }

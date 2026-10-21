@@ -2,28 +2,51 @@
   "key": "lodging-4",
   "images": [
     {
+      "path": "/_portal/vshops/lodging-4/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rgu56I_1LHGnavN99DlG9bNZAIkvREeqPGPgjh3KIRy6q4w3C-vrayR_ND-d7SoQyhs2d8l839YgsVhPDZY85zZZJehm0N_GITwQopIIju4tZ35feA_NNhRUcDcTaUSHBgIkmK=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "太い梁と板張りの壁が見える客室。ベッドと緑色のベンチがある",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s1.jpg",
+      "imageUrl": "https://magondo.com/images/room205.jpg",
+      "pageUrl": "https://magondo.com/dining.html",
+      "what": "杉板の壁に囲まれた浴室。シャワーと浴槽が見える",
+      "kind": "bath",
+      "width": 1200,
+      "height": 1200,
+      "source": "公式サイト"
+    },
+    {
       "path": "/_portal/vshops/lodging-4/g1.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7Gm2zU4Dgo92b6jWmXvDf8B2IbGOH2xrdOlmppAk2pVuGk7f97KE9uC6mFc8SLCXy4-dKIq66lj3FIVafxOcS15Y-_GoKzfX4K1_BPgLtfsPTEDNAN7qB8fzPU6u6ELMnKHpTKsAX0iKT=s1200",
       "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
       "what": "板塀と瓦屋根の古民家の外観。入口に暖簾が掛かっている",
+      "kind": "exterior",
       "width": 987,
       "height": 1200,
       "source": "Google マップ"
     },
     {
-      "path": "/_portal/vshops/lodging-4/g2.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rgu56I_1LHGnavN99DlG9bNZAIkvREeqPGPgjh3KIRy6q4w3C-vrayR_ND-d7SoQyhs2d8l839YgsVhPDZY85zZZJehm0N_GITwQopIIju4tZ35feA_NNhRUcDcTaUSHBgIkmK=s1200",
-      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
-      "what": "太い梁と板張りの壁が見える客室。ベッドと緑色のベンチがある",
-      "width": 1200,
-      "height": 800,
-      "source": "Google マップ"
+      "path": "/_portal/vshops/lodging-4/s2.jpg",
+      "imageUrl": "https://magondo.com/images/g/gallery_5.jpg",
+      "pageUrl": "https://magondo.com/index2.html",
+      "what": "夕日の見える海辺。手前に柵がある",
+      "kind": "view",
+      "width": 1179,
+      "height": 663,
+      "source": "公式サイト"
     },
     {
       "path": "/_portal/vshops/lodging-4/g3.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIfxgfoVa-WlMcUdCZbYbJJUnIuHyyuFF7QEVO2ljYNAr06b1TvypgIAGNEZegQjcUKyvNFXwWDshje3BPmdm5-CvBxwUnl3jNhJZcduuvE-MzmRqf6UG9MtKjo15hMitcdjvn=s1200",
       "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
       "what": "畳敷きの広間。障子の窓とテレビ、ソファのある居間",
+      "kind": "room",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
@@ -32,20 +55,92 @@
       "path": "/_portal/vshops/lodging-4/g4.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRlVL5rD1SVSyiddNpwRMKiB6WkSTxZNiVxA99hVNtkYJKcQkHu7JoO1SoYomFihJblc9QBV8M4t13J8iDyDmw8qyrfxrGxuiVgD745po3ozQhllJTLktEUfKnYwmgRHi0vWw9=s1200",
       "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
-      "what": "長いダイニングテーブルのある、梁の見える広い居間とキッチン",
+      "what": "客室の広い居間。梁が見え、長いダイニングテーブルとキッチンがある",
+      "kind": "room",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s3.jpg",
+      "imageUrl": "https://magondo.com/images/room102.jpg",
+      "pageUrl": "https://magondo.com/rooms.html",
+      "what": "丸い窓と障子のある和室の寝室。茶色の寝具のベッドが並ぶ",
+      "kind": "room",
+      "width": 1179,
+      "height": 1179,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s4.jpg",
+      "imageUrl": "https://magondo.com/images/room310.jpg",
+      "pageUrl": "https://magondo.com/sightseeing.html",
+      "what": "客室の居間。ソファとテレビがあり、木の天井と欄間が見える",
+      "kind": "room",
+      "width": 1179,
+      "height": 1179,
+      "source": "公式サイト"
     },
     {
       "path": "/_portal/vshops/lodging-4/g5.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJXmVuWkdeCRmdYRRAnk2Jea7lUiAiCTYAYwUUefjicBERvyInfHGjSVZcoPzO9xXKQ9tll4NYaVQ1F-XxJ9CrrrUCKT3GcljHlHFrg04V7JMgONHLYCpcdU1iXUOQVVGITCW9FA=s1200",
       "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
       "what": "障子と襖のある和室に、2台のベッドが並ぶ寝室",
+      "kind": "room",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s5.jpg",
+      "imageUrl": "https://magondo.com/images/room308.jpg",
+      "pageUrl": "https://magondo.com/sightseeing.html",
+      "what": "白い壁の浴室。浴槽とシャワーがある",
+      "kind": "bath",
+      "width": 1196,
+      "height": 1200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s6.jpg",
+      "imageUrl": "https://magondo.com/images/room104.jpg",
+      "pageUrl": "https://magondo.com/rooms.html",
+      "what": "洗面台の横にガラス戸の浴室がある洗面所。浴室にはシャワーと浴槽が見える",
+      "kind": "bath",
+      "width": 1179,
+      "height": 1179,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s7.jpg",
+      "imageUrl": "https://magondo.com/images/room214.jpg",
+      "pageUrl": "https://magondo.com/dining.html",
+      "what": "板張りの壁と赤茶色の瓦屋根が続く建物の外観。手前に砂利と飛び石がある",
+      "kind": "exterior",
+      "width": 1100,
+      "height": 1100,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s8.jpg",
+      "imageUrl": "https://magondo.com/images/room301.jpg",
+      "pageUrl": "https://magondo.com/sightseeing.html",
+      "what": "石灯籠と格子戸の引き戸がある、古民家の玄関まわり",
+      "kind": "exterior",
+      "width": 1179,
+      "height": 1179,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/s9.jpg",
+      "imageUrl": "https://magondo.com/images/room206.jpg",
+      "pageUrl": "https://magondo.com/dining.html",
+      "what": "木の壁のキッチン。流し台とコンロがある",
+      "kind": "common",
+      "width": 1200,
+      "height": 1200,
+      "source": "公式サイト"
     }
   ],
-  "note": "Google マップの写真5枚"
+  "note": "Google マップの写真5枚・公式サイトの写真9枚。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }

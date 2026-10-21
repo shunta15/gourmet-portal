@@ -2,12 +2,43 @@
   "key": "lodging-8",
   "images": [
     {
-      "path": "/_portal/vshops/lodging-8/s1.jpg",
-      "imageUrl": "https://hotelohtaki.com/cms/wp-content/uploads/2023/01/20221231_140758-scaled.jpg",
-      "pageUrl": "https://hotelohtaki.com/",
-      "what": "木のバルコニーとレストランの看板が見える、ホテルの正面外観",
+      "path": "/_portal/vshops/lodging-8/s3.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/VIProom/DSC02725.JPG",
+      "pageUrl": "https://hotelohtaki.com/stay/",
+      "what": "ベッドの手前に黒いソファのある客室",
+      "kind": "room",
       "width": 1200,
-      "height": 900,
+      "height": 675,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SiABYqH9GDhJgfQ74GmOimcYfYfdmNbncux_u1qbSOuYES2nZsLdu4OeQMlhu70eZiWaggaLrmD-3xDZW4nS48bsBgEQEuvsnWlPsxtUhhwY__KVu-e33w1smepAeOATgeIKDfaHou4XV8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "木目調の壁の浴室。ガラスの仕切りのシャワーと、洗面台、トイレがある",
+      "kind": "bath",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxlaN3wfOk59693vI-l9eQA7Ak4t48KIm1RWyElZZjT0Klnn0TOzv4Qzcj6QYwhAtMAA3N7gAMPhczIAqlKbaItyzKJXggEFg6OiDIKw2HJe4cu-Yt3wxGqUnCayHLe7wTdDxF5fMYCbmF=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "刺身や肉料理、小鉢が並ぶ夕食の膳",
+      "kind": "meal",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s4.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/uploads/2023/12/top-mv01-2.jpg",
+      "pageUrl": "https://hotelohtaki.com/",
+      "what": "夜に明かりがともるホテルの外観。木のバルコニーが見える",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 667,
       "source": "公式サイト"
     },
     {
@@ -15,24 +46,47 @@
       "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/SProom/DSC02801.JPG",
       "pageUrl": "https://hotelohtaki.com/stay/",
       "what": "ツインベッドと座卓のある客室",
+      "kind": "room",
       "width": 1200,
       "height": 674,
       "source": "公式サイト"
     },
     {
-      "path": "/_portal/vshops/lodging-8/s3.jpg",
-      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/VIProom/DSC02725.JPG",
+      "path": "/_portal/vshops/lodging-8/s5.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/familyVIProom/DSC02799.JPG",
       "pageUrl": "https://hotelohtaki.com/stay/",
-      "what": "ベッドの手前に黒いソファのある客室",
+      "what": "畳敷きの客室。座卓とソファ、壁掛けのテレビがある",
+      "kind": "room",
       "width": 1200,
-      "height": 675,
+      "height": 674,
       "source": "公式サイト"
     },
     {
-      "path": "/_portal/vshops/lodging-8/g1.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxlaN3wfOk59693vI-l9eQA7Ak4t48KIm1RWyElZZjT0Klnn0TOzv4Qzcj6QYwhAtMAA3N7gAMPhczIAqlKbaItyzKJXggEFg6OiDIKw2HJe4cu-Yt3wxGqUnCayHLe7wTdDxF5fMYCbmF=s1200",
+      "path": "/_portal/vshops/lodging-8/g5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R9naAxQoTmZOFUrjOUjHEUCrb8kFoj5nT_z9H3uOhHVI4jRDEoHTg6L0K4MvGr34zpSykEp7jxo-_n1bpV5tVIDz1gvGxvxxN0LOGcdmONGcNeOiClkSSV9G8jxT8UDbUJN4KIBByipRr0=s1200",
       "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
-      "what": "刺身や肉料理、小鉢が並ぶ夕食の膳",
+      "what": "茶色の寝具のベッドが2台並ぶ客室",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s6.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/img-onsen.png",
+      "pageUrl": "https://hotelohtaki.com/stay/",
+      "what": "石で囲まれた湯船のある浴室。窓があり、洗い場にシャワーが並ぶ",
+      "kind": "bath",
+      "width": 600,
+      "height": 351,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnuSUqCKB68p8YsGH6FBSXDoztar-dvWoXxC4K7dFnMjx0TBtZrHlTXKC-m3rq7RFwr5LF3fwsTm6aTaEk8CmQViInl7AuQoDGHVuh_exmHRQnRlvrx1VtGFjb_62M3tn-yhshybhG4Zw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "トーストやベーコンエッグ、フルーツのある朝食",
+      "kind": "meal",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
@@ -42,19 +96,51 @@
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvblvAvBgIIjAfL2fSvLEGzKUjjs61L2ODG7WujShc1umIHFxhuN79IzMrOTxUdL9HCToqPEk4_1aSgjuPcTOHYwnEDkh7XLn9P3Br9Y2RZMhXzDVaC3BDLsOUQU_vfGKnAFYfZ1yrWeFX=s1200",
       "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
       "what": "大きな窓と木の椅子が並ぶ、レストランの店内",
+      "kind": "meal",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
     },
     {
-      "path": "/_portal/vshops/lodging-8/g3.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnuSUqCKB68p8YsGH6FBSXDoztar-dvWoXxC4K7dFnMjx0TBtZrHlTXKC-m3rq7RFwr5LF3fwsTm6aTaEk8CmQViInl7AuQoDGHVuh_exmHRQnRlvrx1VtGFjb_62M3tn-yhshybhG4Zw=s1200",
+      "path": "/_portal/vshops/lodging-8/s7.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/uploads/2023/12/top-mv02-2.jpg",
+      "pageUrl": "https://hotelohtaki.com/",
+      "what": "サラダを添えたトマトソースの料理と、赤ワインのグラス",
+      "kind": "meal",
+      "width": 1200,
+      "height": 667,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s1.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/uploads/2023/01/20221231_140758-scaled.jpg",
+      "pageUrl": "https://hotelohtaki.com/",
+      "what": "木のバルコニーのあるホテルの正面外観。1階にレストランの看板が見える",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g6.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2pPdoKu2dN9mQb4qxyDepvC3L6PzHxXV4luAO8_yZ1x7VmboqE_5dUJP3VGW8mahpf4ns4mbToOs49_w6p5vv9noAtQnceQ00hBvBxnf9Jure65W7q09baHlaRRT1QDuP3-SQrhqx-p4=s1200",
       "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
-      "what": "トーストやベーコンエッグ、フルーツのある朝食",
+      "what": "「山のホテル大瀧」の文字が掲げられた、ホテルの入口",
+      "kind": "exterior",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s8.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/familyVIProom/DSC02787.JPG",
+      "pageUrl": "https://hotelohtaki.com/stay/",
+      "what": "窓の外に見える、山あいの町並みと赤い屋根",
+      "kind": "view",
+      "width": 1200,
+      "height": 674,
+      "source": "公式サイト"
     }
   ],
-  "note": "Google マップの写真3枚・公式サイトの写真3枚"
+  "note": "Google マップの写真6枚・公式サイトの写真8枚。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }

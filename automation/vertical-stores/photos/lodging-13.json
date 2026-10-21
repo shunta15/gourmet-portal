@@ -2,28 +2,21 @@
   "key": "lodging-13",
   "images": [
     {
-      "path": "/_portal/vshops/lodging-13/s1.jpg",
-      "imageUrl": "https://static.wixstatic.com/media/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg",
+      "path": "/_portal/vshops/lodging-13/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_10ca2262c7bd442e90ab9cfb9a1e2572~mv2.jpg",
       "pageUrl": "https://www.nishinonaya.com/",
-      "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
-      "width": 1200,
-      "height": 900,
-      "source": "公式サイト"
-    },
-    {
-      "path": "/_portal/vshops/lodging-13/g1.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qap5eq47V3b6eI3t4w4UveSvl6VtrPjypPzVm_dAL716Q4WdaisBmOlh74FhUakd69WhmXLcbKYEPr-2s70CvB32cpZfc6Ne7YdbAF6xsYaChQ6W6epV0_H3Z5S1XfX3LkHCY=s1200",
-      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
-      "what": "夕暮れに明かりがともるコテージの外観と庭",
+      "what": "芝の庭に建つ、ウッドデッキとあずまやのある平屋の外観",
+      "kind": "exterior",
       "width": 1200,
       "height": 800,
-      "source": "Google マップ"
+      "source": "公式サイト"
     },
     {
       "path": "/_portal/vshops/lodging-13/g2.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzcOU-uHNbzfZThg-CIW929f0mPlPfHZa2gNjkMJR5IN9n0U76BS_b2LqSvTsXj1Pwm9x_IWgoGhpYorkS6QDzZxifEVa8Dro2V-C7jWqGzpEd3FAEs7L130-XqAA1Zz2L6Myi5g=s1200",
       "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
       "what": "青い寝具の2台のベッドと木の梁のある寝室",
+      "kind": "room",
       "width": 1200,
       "height": 900,
       "source": "Google マップ"
@@ -33,6 +26,77 @@
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZAlpN9dd2FVMCuPyuHGZtXUteZR2xZ7a-o6sgpStUjIvlsG3wrxbMYltXFaJTxiJm4Dv65Sf6-8tNUnvKahHmXu0jlctVXQg73nB_b_50P8goa41ukw0H-Gs-fJKik5sRh-Jz=s1200",
       "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
       "what": "青い壁と木の梁、吹き抜けのあるコテージの居間",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
+      "kind": "exterior",
+      "width": 1000,
+      "height": 750,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TThufAOs-ZpfOp9V7vM7195aV1KCz3cFAcYK06mYYfFZ4-EoLPqra4TopiwozPbXh7nBnBs6WnwG_0b_tr6bJtYWDDup6Q6uGrsWf-V4qrZ4DmoXZmpzP0xywrr3WyDJOZNtOHfw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "天井の低いロフトに並ぶ青い寝具のベッド",
+      "kind": "room",
+      "width": 800,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_4e4fe37f84ef455c9f24012b3f4be3a3~mv2.jpg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "コテージの居間。ソファとダイニングテーブルがあり、天井が高い",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s4.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_b537db8217194c6f9fb4ae9d6d44752f~mv2.jpg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "白いタイルの浴室。レインシャワーとシャワーのホースがある",
+      "kind": "bath",
+      "width": 800,
+      "height": 1200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s5.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_1b8e5a8a6579482e8ce8c4504a16dbae~mv2.jpeg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "肉と野菜、サラダが並んだテーブルの料理",
+      "kind": "meal",
+      "width": 898,
+      "height": 1100,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s6.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_11218c461ded4c2aab62c4632a315e5f~mv2.jpg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "バーベキューコンロの網の上で焼かれる貝と肉。奥に犬が写っている",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qap5eq47V3b6eI3t4w4UveSvl6VtrPjypPzVm_dAL716Q4WdaisBmOlh74FhUakd69WhmXLcbKYEPr-2s70CvB32cpZfc6Ne7YdbAF6xsYaChQ6W6epV0_H3Z5S1XfX3LkHCY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "夕暮れに明かりがともるコテージと庭",
+      "kind": "exterior",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
@@ -42,19 +106,41 @@
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rlk-R9ZCOJ8X1xBTFBbSQf6eSdpcGA71kNbwPkQMMuuBQ_Uu3oxPFq5pCZJm1e5gLjZjsHix9mSfqEj66OtSMatTFq3kVmNLQuVL6rp65gudjK0WkSO1dnQMfojLmxM1mu0J4RTw=s1200",
       "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
       "what": "照明を飾った木組みの東屋とテーブル席のある庭の夜景",
+      "kind": "common",
       "width": 900,
       "height": 1200,
       "source": "Google マップ"
     },
     {
-      "path": "/_portal/vshops/lodging-13/g5.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TThufAOs-ZpfOp9V7vM7195aV1KCz3cFAcYK06mYYfFZ4-EoLPqra4TopiwozPbXh7nBnBs6WnwG_0b_tr6bJtYWDDup6Q6uGrsWf-V4qrZ4DmoXZmpzP0xywrr3WyDJOZNtOHfw=s1200",
+      "path": "/_portal/vshops/lodging-13/s7.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_23993741922b445e930bb355adba20fb~mv2.jpeg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "青灰色のタイルの壁のキッチン。冷蔵庫と電子レンジ、コンロ、木のカウンターがある",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/s8.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_befd0df8a2254f1ebd8d1103cc8d7594~mv2.jpg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "海に昇る朝日と、砂浜に寄せる波",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g6.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TEReYC4JndYlRFRsIY_K8rgyx0nV9LBgzHekmGiyUpkEEIQ-qYXUN1mUTl_u-cLv7QiPJjyvF_nINry9L5F1cQExN3WVir4SfvfYO2ekRJALB1vpxgkadOyyRFq5JHTMbVRagD=s1200",
       "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
-      "what": "天井の低いロフトに並ぶ青い寝具のベッド",
-      "width": 800,
+      "what": "夜に電球が飾られた庭の木と、柵に囲まれた芝の庭",
+      "kind": "view",
+      "width": 900,
       "height": 1200,
       "source": "Google マップ"
     }
   ],
-  "note": "Google マップの写真5枚・公式サイトの写真1枚"
+  "note": "Google マップの写真6枚・公式サイトの写真8枚。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }

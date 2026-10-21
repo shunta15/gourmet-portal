@@ -2,28 +2,51 @@
   "key": "lodging-6",
   "images": [
     {
-      "path": "/_portal/vshops/lodging-6/g1.jpg",
-      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZZacF6S7dWuTrskx1witzWI-Ax8DBRUsBy41GU186JoFtXvtsHZZUpvcsPKjM-YeKQi92ddGoS_cO3ts_dhSpF7Yfd1KRsUua8NsBp76G2MzOSV1ArFymafSsBTG0yeQwAuT4BUz1yf0=s1200",
-      "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
-      "what": "丸太を組んだログハウスの外観。ウッドデッキが付いている",
-      "width": 1200,
-      "height": 800,
-      "source": "Google マップ"
-    },
-    {
       "path": "/_portal/vshops/lodging-6/g2.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ToYLidS455XNXd759a6KhCAbpnSXrH7uxIZSUIYDtVShLh_pa6MyXLm3TZ_urK_oMsjm3Wff19x1NuLwLK8cJmAfTux7w8GOUV6LKAGVaXSUUvY3lRbKw8W55eyQ_P_o4kaXsLKr7DE9o=s1200",
       "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
-      "what": "石積みの暖炉とソファのあるログハウスのリビング",
+      "what": "ログハウスの客室のリビング。石積みの暖炉とソファがある",
+      "kind": "room",
       "width": 1200,
       "height": 675,
       "source": "Google マップ"
     },
     {
+      "path": "/_portal/vshops/lodging-6/s1.jpg",
+      "imageUrl": "http://urube.co.jp/wp-content/uploads/2023/08/pic_biglog_12.jpg",
+      "pageUrl": "http://www.urube.co.jp/condominium/biglog/",
+      "what": "丸太と石積みの壁に囲まれた浴室。浴槽に木の板のふたが掛かっている",
+      "kind": "bath",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZZacF6S7dWuTrskx1witzWI-Ax8DBRUsBy41GU186JoFtXvtsHZZUpvcsPKjM-YeKQi92ddGoS_cO3ts_dhSpF7Yfd1KRsUua8NsBp76G2MzOSV1ArFymafSsBTG0yeQwAuT4BUz1yf0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
+      "what": "丸太を組んだログハウスの外観。ウッドデッキが付いている",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s2.jpg",
+      "imageUrl": "https://urube.co.jp/wp-content/uploads/2023/08/pic_kibikita_n01.jpg",
+      "pageUrl": "https://urube.co.jp/condominium/",
+      "what": "丸太の壁と大きな屋根のログハウスの外観。まわりに木々と芝生がある",
+      "kind": "exterior",
+      "width": 1100,
+      "height": 733,
+      "source": "公式サイト"
+    },
+    {
       "path": "/_portal/vshops/lodging-6/g3.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLFa7bWqZ7DT6wstqhx0JS46lBbjONE2H9Q3mtwOETagk74_QB6jC7NBNpqWIVaachyEwRGj4TYw_qPuF9pArR89roAFvn3N5-jMYoMPTyrpRpXzr1S89XdY99CIJZjJW_3bKQlvI7PTQ=s1200",
       "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
-      "what": "大きなダイニングテーブルのある、板張りのログハウスの食堂",
+      "what": "ログハウスの客室の食堂。大きなダイニングテーブルのある、板張りの部屋",
+      "kind": "room",
       "width": 1200,
       "height": 675,
       "source": "Google マップ"
@@ -33,28 +56,81 @@
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJ-FkBV64ZJOz9N0gW45tn-mV9w1BtwhEj524LaH17DW4IIC0-MwiBO4nb6fCJVXM9762yaON7ceDSajO2AJPUa1ST2CXMr0RZ35P4aJFU-0juPRAEk5YhB3rHhpAxJ3Pc_zoL3YDn4O8B=s1200",
       "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
       "what": "屋根裏の傾いた天井の下に並ぶベッドの寝室",
+      "kind": "room",
       "width": 1200,
       "height": 675,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s3.jpg",
+      "imageUrl": "http://urube.co.jp/wp-content/uploads/2023/08/pic_inside_Largelog06.jpg",
+      "pageUrl": "http://www.urube.co.jp/condominium/biglog/",
+      "what": "ベッドが2台並ぶ、丸太の壁のログハウスの寝室。窓にカーテンがある",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s4.jpg",
+      "imageUrl": "https://urube.co.jp/wp-content/uploads/2023/08/pic_inside_log05.jpg",
+      "pageUrl": "https://urube.co.jp/condominium/log/",
+      "what": "窓のある浴室。浴槽とシャワーがある",
+      "kind": "bath",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
     },
     {
       "path": "/_portal/vshops/lodging-6/g5.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RJe8RbdO7Io9xwJjIQANmb0hl0YZH06vpU1UR3H5_a69b1jmW4S_y1TrkJEoS83OG1PsTvs77xNsmoTyT3eZom3eu9EdDjhsNvt6r6y8bg_6c_qQZVLLcKLzz_G5u6xpsqJl3nrrxyo2Fe=s1200",
       "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
       "what": "ログハウスの屋根付きのウッドデッキとテーブル席",
+      "kind": "exterior",
       "width": 1200,
       "height": 800,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s5.jpg",
+      "imageUrl": "https://urube.co.jp/wp-content/uploads/2023/08/pic_78_n01.jpg",
+      "pageUrl": "https://urube.co.jp/condominium/",
+      "what": "三角屋根と2階のバルコニーのあるログハウスの外観",
+      "kind": "exterior",
+      "width": 1100,
+      "height": 733,
+      "source": "公式サイト"
     },
     {
       "path": "/_portal/vshops/lodging-6/g6.jpg",
       "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYiAGNzkr0BnYx9wmgrjJS4rpDCKnTVD3owuy8u8OzerjdvQl0hJw0U_3sCkmXIIFpGgqX74IAXdQmbL2m0QSVPQcIUqxh7hJbn2r7dznIlxRLm4PF5XCXOA1yfd3UIhsECnBbylcszcxy=s1200",
       "pageUrl": "https://maps.google.com/?cid=12706866627527098383",
       "what": "雪をかぶったログハウスの外観",
+      "kind": "exterior",
       "width": 1200,
       "height": 900,
       "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s6.jpg",
+      "imageUrl": "https://urube.co.jp/wp-content/uploads/2024/01/PICT0174-2048x1536.jpg",
+      "pageUrl": "https://urube.co.jp/facility/",
+      "what": "ビリヤード場。台が複数並んでいる",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-6/s7.jpg",
+      "imageUrl": "http://www.urube.co.jp/wp-content/uploads/2017/06/rent-tennis_a.jpg",
+      "pageUrl": "https://urube.co.jp/facility/",
+      "what": "緑と赤茶色の面が並ぶテニスコート。奥にログハウスの屋根が見える",
+      "kind": "common",
+      "width": 1200,
+      "height": 801,
+      "source": "公式サイト"
     }
   ],
-  "note": "Google マップの写真6枚"
+  "note": "Google マップの写真6枚・公式サイトの写真7枚。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }

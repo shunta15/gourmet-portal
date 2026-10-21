@@ -11,8 +11,9 @@
  * --listed : 既定の店（紹介文つき）に加えて、basic.json（キーの配列。紹介文なし・基本情報だけで載せる店）にある店も出す。
  *
  * どのモードでも次は適用する（引数で場所を差し替えられる）:
- *  - 写真: photos/<キー>.json（{ key, images: [ { path, imageUrl, pageUrl, what, width, height } ], note }）があれば、
- *          public/ に実在する画像だけを Place の image（1 枚め）・images（全部）・photos（説明と寸法）に入れる。imageUrl・pageUrl は入れない。
+ *  - 写真: photos/<キー>.json（{ key, images: [ { path, imageUrl, pageUrl, what, kind, width, height } ], note }）があれば、
+ *          public/ に実在する画像だけを Place の image（1 枚め）・images（全部）・photos（説明・種類・寸法）に入れる。imageUrl・pageUrl は入れない。
+ *          kind（写真の種類: exterior 外観 / room 客室 / bath 風呂 / meal 料理 / common 共用 / view 周辺の景色）は書いてあれば photos[].kind に入れる。
  *          店の写真の記録が無い・空（使える画像が 0 枚）の店は、公開する特集（--features のフォルダの features/<キー>.json）の images（hero・p1・p2）を使う。
  *  - 種類の上書き: category-overrides/<キー>.json（{ key, category, evidence }）があれば、その種類を使う。
  *          その業種の種類の slug（lib/verticals/<業種>.ts）に無い値は無効（使わない）。決められない店は、今までどおり unmapped.json へ（理由に無効の旨を足す）。
@@ -457,6 +458,8 @@ function buildArticle(vertical, d, article, key) {
 
 // ------------------------------------------------------------------ 本体
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
+/** 写真の種類（photos/<キー>.json の images[].kind）。ページが種類で写真を振り分けるための印 */
+const PHOTO_KINDS = new Set(["exterior", "room", "bath", "meal", "common", "view"]);
 /**
  * 写真の記録（photos/<キー>.json または features/<キー>.json）の images → public/ に実在する画像だけの { path, what, width, height }。
  * 記録が無い・0 枚なら []。
@@ -484,7 +487,9 @@ function loadImagesFrom(f, key, fillDims = false) {
       const d = readJpeg(readFileSync(path.join(PUBLIC_DIR, rel)));
       if (!d.error) { w = d.width; h = d.height; }
     }
-    out.push({ path: `/${rel}`, ...(what ? { what } : {}), ...(w && h ? { width: w, height: h } : {}) });
+    // 写真の種類（任意）。外観 exterior・客室 room・風呂 bath・料理 meal・共用 common・周辺の景色 view。これ以外の値は入れない
+    const kind = typeof im?.kind === "string" && PHOTO_KINDS.has(im.kind.trim()) ? im.kind.trim() : undefined;
+    out.push({ path: `/${rel}`, ...(what ? { what } : {}), ...(kind ? { kind } : {}), ...(w && h ? { width: w, height: h } : {}) });
   }
   return out;
 }

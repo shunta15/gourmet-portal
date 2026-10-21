@@ -15,44 +15,121 @@
       "url": "https://magondo.com/",
       "website": "https://magondo.com/",
       "mapUrl": "https://maps.google.com/?cid=5279461319941939557",
-      "image": "/_portal/vshops/lodging-4/g1.jpg",
+      "image": "/_portal/vshops/lodging-4/g2.jpg",
       "images": [
-        "/_portal/vshops/lodging-4/g1.jpg",
         "/_portal/vshops/lodging-4/g2.jpg",
+        "/_portal/vshops/lodging-4/s1.jpg",
+        "/_portal/vshops/lodging-4/g1.jpg",
+        "/_portal/vshops/lodging-4/s2.jpg",
         "/_portal/vshops/lodging-4/g3.jpg",
         "/_portal/vshops/lodging-4/g4.jpg",
-        "/_portal/vshops/lodging-4/g5.jpg"
+        "/_portal/vshops/lodging-4/s3.jpg",
+        "/_portal/vshops/lodging-4/s4.jpg",
+        "/_portal/vshops/lodging-4/g5.jpg",
+        "/_portal/vshops/lodging-4/s5.jpg",
+        "/_portal/vshops/lodging-4/s6.jpg",
+        "/_portal/vshops/lodging-4/s7.jpg",
+        "/_portal/vshops/lodging-4/s8.jpg",
+        "/_portal/vshops/lodging-4/s9.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-4/g1.jpg",
-          "what": "板塀と瓦屋根の古民家の外観。入口に暖簾が掛かっている",
-          "width": 987,
-          "height": 1200
-        },
-        {
           "path": "/_portal/vshops/lodging-4/g2.jpg",
           "what": "太い梁と板張りの壁が見える客室。ベッドと緑色のベンチがある",
+          "kind": "room",
           "width": 1200,
           "height": 800
         },
         {
+          "path": "/_portal/vshops/lodging-4/s1.jpg",
+          "what": "杉板の壁に囲まれた浴室。シャワーと浴槽が見える",
+          "kind": "bath",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/g1.jpg",
+          "what": "板塀と瓦屋根の古民家の外観。入口に暖簾が掛かっている",
+          "kind": "exterior",
+          "width": 987,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s2.jpg",
+          "what": "夕日の見える海辺。手前に柵がある",
+          "kind": "view",
+          "width": 1179,
+          "height": 663
+        },
+        {
           "path": "/_portal/vshops/lodging-4/g3.jpg",
           "what": "畳敷きの広間。障子の窓とテレビ、ソファのある居間",
+          "kind": "room",
           "width": 1200,
           "height": 800
         },
         {
           "path": "/_portal/vshops/lodging-4/g4.jpg",
-          "what": "長いダイニングテーブルのある、梁の見える広い居間とキッチン",
+          "what": "客室の広い居間。梁が見え、長いダイニングテーブルとキッチンがある",
+          "kind": "room",
           "width": 1200,
           "height": 800
         },
         {
+          "path": "/_portal/vshops/lodging-4/s3.jpg",
+          "what": "丸い窓と障子のある和室の寝室。茶色の寝具のベッドが並ぶ",
+          "kind": "room",
+          "width": 1179,
+          "height": 1179
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s4.jpg",
+          "what": "客室の居間。ソファとテレビがあり、木の天井と欄間が見える",
+          "kind": "room",
+          "width": 1179,
+          "height": 1179
+        },
+        {
           "path": "/_portal/vshops/lodging-4/g5.jpg",
           "what": "障子と襖のある和室に、2台のベッドが並ぶ寝室",
+          "kind": "room",
           "width": 1200,
           "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s5.jpg",
+          "what": "白い壁の浴室。浴槽とシャワーがある",
+          "kind": "bath",
+          "width": 1196,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s6.jpg",
+          "what": "洗面台の横にガラス戸の浴室がある洗面所。浴室にはシャワーと浴槽が見える",
+          "kind": "bath",
+          "width": 1179,
+          "height": 1179
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s7.jpg",
+          "what": "板張りの壁と赤茶色の瓦屋根が続く建物の外観。手前に砂利と飛び石がある",
+          "kind": "exterior",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s8.jpg",
+          "what": "石灯籠と格子戸の引き戸がある、古民家の玄関まわり",
+          "kind": "exterior",
+          "width": 1179,
+          "height": 1179
+        },
+        {
+          "path": "/_portal/vshops/lodging-4/s9.jpg",
+          "what": "木の壁のキッチン。流し台とコンロがある",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
         }
       ],
       "tags": [],
@@ -122,48 +199,118 @@
       "image": "/_portal/vshops/lodging-5/s1.jpg",
       "images": [
         "/_portal/vshops/lodging-5/s1.jpg",
-        "/_portal/vshops/lodging-5/s2.jpg",
-        "/_portal/vshops/lodging-5/s3.jpg",
         "/_portal/vshops/lodging-5/s4.jpg",
+        "/_portal/vshops/lodging-5/s3.jpg",
+        "/_portal/vshops/lodging-5/s7.jpg",
+        "/_portal/vshops/lodging-5/s2.jpg",
         "/_portal/vshops/lodging-5/s5.jpg",
-        "/_portal/vshops/lodging-5/s6.jpg"
+        "/_portal/vshops/lodging-5/s8.jpg",
+        "/_portal/vshops/lodging-5/s9.jpg",
+        "/_portal/vshops/lodging-5/s10.jpg",
+        "/_portal/vshops/lodging-5/s11.jpg",
+        "/_portal/vshops/lodging-5/g1.jpg",
+        "/_portal/vshops/lodging-5/s6.jpg",
+        "/_portal/vshops/lodging-5/s12.jpg",
+        "/_portal/vshops/lodging-5/s13.jpg"
       ],
       "photos": [
         {
           "path": "/_portal/vshops/lodging-5/s1.jpg",
           "what": "夕暮れの富士山と、テントや車が並ぶキャンプサイト",
+          "kind": "room",
           "width": 1200,
           "height": 693
-        },
-        {
-          "path": "/_portal/vshops/lodging-5/s2.jpg",
-          "what": "広い芝のフリーサイトの先に見える富士山",
-          "width": 1200,
-          "height": 693
-        },
-        {
-          "path": "/_portal/vshops/lodging-5/s3.jpg",
-          "what": "ウッドデッキと黄色い屋根のあるコテージの外観",
-          "width": 1200,
-          "height": 742
         },
         {
           "path": "/_portal/vshops/lodging-5/s4.jpg",
           "what": "木の壁に囲まれた、木の浴槽の露天風呂",
+          "kind": "bath",
           "width": 1107,
           "height": 684
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s3.jpg",
+          "what": "ウッドデッキと黄色い屋根のあるコテージ。外観を斜めから写している",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 742
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s7.jpg",
+          "what": "雪をかぶった富士山と、草地の向こうに並ぶ杉林",
+          "kind": "view",
+          "width": 1200,
+          "height": 725
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s2.jpg",
+          "what": "広い芝のフリーサイトの先に見える富士山",
+          "kind": "room",
+          "width": 1200,
+          "height": 693
         },
         {
           "path": "/_portal/vshops/lodging-5/s5.jpg",
           "what": "ベッドのあるコテージの寝室",
+          "kind": "room",
           "width": 1107,
           "height": 684
         },
         {
-          "path": "/_portal/vshops/lodging-5/s6.jpg",
-          "what": "プールと、パラソルのあるウッドデッキのテラス。向こうに海と山が見える",
+          "path": "/_portal/vshops/lodging-5/s8.jpg",
+          "what": "テントとタープが並ぶ区画サイトの夕暮れ。ランタンの明かりがともっている",
+          "kind": "room",
+          "width": 1200,
+          "height": 693
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s9.jpg",
+          "what": "赤土の地面が広がる区画サイト。夕焼けの空が見える",
+          "kind": "room",
+          "width": 1200,
+          "height": 693
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s10.jpg",
+          "what": "ガラス戸のシャワーブースがある浴室",
+          "kind": "bath",
           "width": 1200,
           "height": 844
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s11.jpg",
+          "what": "天の川の見える星空と富士山。手前の杉林の下にテントの明かりが並ぶ",
+          "kind": "view",
+          "width": 930,
+          "height": 693
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/g1.jpg",
+          "what": "夜の高台に灯るランタンと、遠くに広がる街の明かり",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s6.jpg",
+          "what": "プールと、パラソルのあるウッドデッキのテラス。向こうに海と山が見える",
+          "kind": "common",
+          "width": 1200,
+          "height": 844
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s12.jpg",
+          "what": "ステンレスの流し台が並ぶ炊事場",
+          "kind": "common",
+          "width": 1042,
+          "height": 782
+        },
+        {
+          "path": "/_portal/vshops/lodging-5/s13.jpg",
+          "what": "管理棟の外観。ベンチが置かれた木造の入口",
+          "kind": "exterior",
+          "width": 800,
+          "height": 566
         }
       ],
       "tags": [
@@ -254,51 +401,113 @@
       "url": "https://urube.co.jp/",
       "website": "https://urube.co.jp/",
       "mapUrl": "https://maps.google.com/?cid=12706866627527098383",
-      "image": "/_portal/vshops/lodging-6/g1.jpg",
+      "image": "/_portal/vshops/lodging-6/g2.jpg",
       "images": [
-        "/_portal/vshops/lodging-6/g1.jpg",
         "/_portal/vshops/lodging-6/g2.jpg",
+        "/_portal/vshops/lodging-6/s1.jpg",
+        "/_portal/vshops/lodging-6/g1.jpg",
+        "/_portal/vshops/lodging-6/s2.jpg",
         "/_portal/vshops/lodging-6/g3.jpg",
         "/_portal/vshops/lodging-6/g4.jpg",
+        "/_portal/vshops/lodging-6/s3.jpg",
+        "/_portal/vshops/lodging-6/s4.jpg",
         "/_portal/vshops/lodging-6/g5.jpg",
-        "/_portal/vshops/lodging-6/g6.jpg"
+        "/_portal/vshops/lodging-6/s5.jpg",
+        "/_portal/vshops/lodging-6/g6.jpg",
+        "/_portal/vshops/lodging-6/s6.jpg",
+        "/_portal/vshops/lodging-6/s7.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-6/g1.jpg",
-          "what": "丸太を組んだログハウスの外観。ウッドデッキが付いている",
-          "width": 1200,
-          "height": 800
-        },
-        {
           "path": "/_portal/vshops/lodging-6/g2.jpg",
-          "what": "石積みの暖炉とソファのあるログハウスのリビング",
+          "what": "ログハウスの客室のリビング。石積みの暖炉とソファがある",
+          "kind": "room",
           "width": 1200,
           "height": 675
         },
         {
+          "path": "/_portal/vshops/lodging-6/s1.jpg",
+          "what": "丸太と石積みの壁に囲まれた浴室。浴槽に木の板のふたが掛かっている",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g1.jpg",
+          "what": "丸太を組んだログハウスの外観。ウッドデッキが付いている",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/s2.jpg",
+          "what": "丸太の壁と大きな屋根のログハウスの外観。まわりに木々と芝生がある",
+          "kind": "exterior",
+          "width": 1100,
+          "height": 733
+        },
+        {
           "path": "/_portal/vshops/lodging-6/g3.jpg",
-          "what": "大きなダイニングテーブルのある、板張りのログハウスの食堂",
+          "what": "ログハウスの客室の食堂。大きなダイニングテーブルのある、板張りの部屋",
+          "kind": "room",
           "width": 1200,
           "height": 675
         },
         {
           "path": "/_portal/vshops/lodging-6/g4.jpg",
           "what": "屋根裏の傾いた天井の下に並ぶベッドの寝室",
+          "kind": "room",
           "width": 1200,
           "height": 675
         },
         {
-          "path": "/_portal/vshops/lodging-6/g5.jpg",
-          "what": "ログハウスの屋根付きのウッドデッキとテーブル席",
+          "path": "/_portal/vshops/lodging-6/s3.jpg",
+          "what": "ベッドが2台並ぶ、丸太の壁のログハウスの寝室。窓にカーテンがある",
+          "kind": "room",
           "width": 1200,
           "height": 800
         },
         {
+          "path": "/_portal/vshops/lodging-6/s4.jpg",
+          "what": "窓のある浴室。浴槽とシャワーがある",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/g5.jpg",
+          "what": "ログハウスの屋根付きのウッドデッキとテーブル席",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/s5.jpg",
+          "what": "三角屋根と2階のバルコニーのあるログハウスの外観",
+          "kind": "exterior",
+          "width": 1100,
+          "height": 733
+        },
+        {
           "path": "/_portal/vshops/lodging-6/g6.jpg",
           "what": "雪をかぶったログハウスの外観",
+          "kind": "exterior",
           "width": 1200,
           "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/s6.jpg",
+          "what": "ビリヤード場。台が複数並んでいる",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-6/s7.jpg",
+          "what": "緑と赤茶色の面が並ぶテニスコート。奥にログハウスの屋根が見える",
+          "kind": "common",
+          "width": 1200,
+          "height": 801
         }
       ],
       "tags": [],
@@ -374,51 +583,105 @@
       "url": "https://mizuwakemura.com/",
       "website": "https://mizuwakemura.com/",
       "mapUrl": "https://maps.google.com/?cid=7795331415199820761",
-      "image": "/_portal/vshops/lodging-7/g1.jpg",
+      "image": "/_portal/vshops/lodging-7/s1.jpg",
       "images": [
-        "/_portal/vshops/lodging-7/g1.jpg",
-        "/_portal/vshops/lodging-7/g2.jpg",
         "/_portal/vshops/lodging-7/s1.jpg",
-        "/_portal/vshops/lodging-7/g3.jpg",
+        "/_portal/vshops/lodging-7/g2.jpg",
         "/_portal/vshops/lodging-7/g4.jpg",
-        "/_portal/vshops/lodging-7/s2.jpg"
+        "/_portal/vshops/lodging-7/s2.jpg",
+        "/_portal/vshops/lodging-7/g3.jpg",
+        "/_portal/vshops/lodging-7/s3.jpg",
+        "/_portal/vshops/lodging-7/s4.jpg",
+        "/_portal/vshops/lodging-7/s5.jpg",
+        "/_portal/vshops/lodging-7/s6.jpg",
+        "/_portal/vshops/lodging-7/s7.jpg",
+        "/_portal/vshops/lodging-7/g1.jpg",
+        "/_portal/vshops/lodging-7/s8.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-7/g1.jpg",
-          "what": "「山法師」の木札がある、離れ客室の玄関まわり",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/lodging-7/g2.jpg",
-          "what": "岩で囲まれた半露天の風呂",
-          "width": 675,
-          "height": 1200
-        },
-        {
           "path": "/_portal/vshops/lodging-7/s1.jpg",
           "what": "座卓と広縁のある、畳敷きの客室",
+          "kind": "room",
           "width": 1200,
           "height": 840
         },
         {
-          "path": "/_portal/vshops/lodging-7/g3.jpg",
-          "what": "2台のベッドが並ぶ洋室タイプの客室",
-          "width": 900,
+          "path": "/_portal/vshops/lodging-7/g2.jpg",
+          "what": "岩で囲まれた半露天の風呂",
+          "kind": "bath",
+          "width": 675,
           "height": 1200
         },
         {
           "path": "/_portal/vshops/lodging-7/g4.jpg",
           "what": "肉や野菜、魚が皿に盛られた夕食",
+          "kind": "meal",
           "width": 1200,
           "height": 900
         },
         {
           "path": "/_portal/vshops/lodging-7/s2.jpg",
           "what": "敷地を上空から見た写真。道路沿いに客室の建物が点在している",
+          "kind": "view",
           "width": 1200,
           "height": 750
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/g3.jpg",
+          "what": "2台のベッドが並ぶ洋室タイプの客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s3.jpg",
+          "what": "ツインベッドと座卓のある和洋室。畳の部屋の奥に、大きな窓と椅子が見える",
+          "kind": "room",
+          "width": 1200,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s4.jpg",
+          "what": "曇った大きな窓のある浴室。濃い色の石の浴槽から湯気が立っている",
+          "kind": "bath",
+          "width": 1200,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s5.jpg",
+          "what": "炭火で焼く肉と野菜の料理。丸い網の上でキャベツと肉が焼かれている",
+          "kind": "meal",
+          "width": 1200,
+          "height": 840
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s6.jpg",
+          "what": "皿に盛られた薄切りの肉の料理。豆腐やそば、野菜が添えられている",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s7.jpg",
+          "what": "お食事処の店内。畳敷きの小上がりと、テーブル席がある",
+          "kind": "meal",
+          "width": 1200,
+          "height": 672
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/g1.jpg",
+          "what": "「山法師」の木札がある、離れの玄関まわり",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/lodging-7/s8.jpg",
+          "what": "「水分村」の看板が掛かる、平屋の建物の入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
         }
       ],
       "tags": [
@@ -529,51 +792,121 @@
       "url": "https://hotelohtaki.com/",
       "website": "https://hotelohtaki.com/",
       "mapUrl": "https://maps.google.com/?cid=3955455056126352421",
-      "image": "/_portal/vshops/lodging-8/s1.jpg",
+      "image": "/_portal/vshops/lodging-8/s3.jpg",
       "images": [
-        "/_portal/vshops/lodging-8/s1.jpg",
-        "/_portal/vshops/lodging-8/s2.jpg",
         "/_portal/vshops/lodging-8/s3.jpg",
+        "/_portal/vshops/lodging-8/g4.jpg",
         "/_portal/vshops/lodging-8/g1.jpg",
+        "/_portal/vshops/lodging-8/s4.jpg",
+        "/_portal/vshops/lodging-8/s2.jpg",
+        "/_portal/vshops/lodging-8/s5.jpg",
+        "/_portal/vshops/lodging-8/g5.jpg",
+        "/_portal/vshops/lodging-8/s6.jpg",
+        "/_portal/vshops/lodging-8/g3.jpg",
         "/_portal/vshops/lodging-8/g2.jpg",
-        "/_portal/vshops/lodging-8/g3.jpg"
+        "/_portal/vshops/lodging-8/s7.jpg",
+        "/_portal/vshops/lodging-8/s1.jpg",
+        "/_portal/vshops/lodging-8/g6.jpg",
+        "/_portal/vshops/lodging-8/s8.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-8/s1.jpg",
-          "what": "木のバルコニーとレストランの看板が見える、ホテルの正面外観",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/lodging-8/s2.jpg",
-          "what": "ツインベッドと座卓のある客室",
-          "width": 1200,
-          "height": 674
-        },
-        {
           "path": "/_portal/vshops/lodging-8/s3.jpg",
           "what": "ベッドの手前に黒いソファのある客室",
+          "kind": "room",
           "width": 1200,
           "height": 675
         },
         {
+          "path": "/_portal/vshops/lodging-8/g4.jpg",
+          "what": "木目調の壁の浴室。ガラスの仕切りのシャワーと、洗面台、トイレがある",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
           "path": "/_portal/vshops/lodging-8/g1.jpg",
           "what": "刺身や肉料理、小鉢が並ぶ夕食の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s4.jpg",
+          "what": "夜に明かりがともるホテルの外観。木のバルコニーが見える",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s2.jpg",
+          "what": "ツインベッドと座卓のある客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 674
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s5.jpg",
+          "what": "畳敷きの客室。座卓とソファ、壁掛けのテレビがある",
+          "kind": "room",
+          "width": 1200,
+          "height": 674
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g5.jpg",
+          "what": "茶色の寝具のベッドが2台並ぶ客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s6.jpg",
+          "what": "石で囲まれた湯船のある浴室。窓があり、洗い場にシャワーが並ぶ",
+          "kind": "bath",
+          "width": 600,
+          "height": 351
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g3.jpg",
+          "what": "トーストやベーコンエッグ、フルーツのある朝食",
+          "kind": "meal",
           "width": 1200,
           "height": 800
         },
         {
           "path": "/_portal/vshops/lodging-8/g2.jpg",
           "what": "大きな窓と木の椅子が並ぶ、レストランの店内",
+          "kind": "meal",
           "width": 1200,
           "height": 800
         },
         {
-          "path": "/_portal/vshops/lodging-8/g3.jpg",
-          "what": "トーストやベーコンエッグ、フルーツのある朝食",
+          "path": "/_portal/vshops/lodging-8/s7.jpg",
+          "what": "サラダを添えたトマトソースの料理と、赤ワインのグラス",
+          "kind": "meal",
+          "width": 1200,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s1.jpg",
+          "what": "木のバルコニーのあるホテルの正面外観。1階にレストランの看板が見える",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/g6.jpg",
+          "what": "「山のホテル大瀧」の文字が掲げられた、ホテルの入口",
+          "kind": "exterior",
           "width": 1200,
           "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-8/s8.jpg",
+          "what": "窓の外に見える、山あいの町並みと赤い屋根",
+          "kind": "view",
+          "width": 1200,
+          "height": 674
         }
       ],
       "tags": [
@@ -676,51 +1009,113 @@
       "url": "https://www.wonderfulgarden.jp/",
       "website": "https://www.wonderfulgarden.jp/",
       "mapUrl": "https://maps.google.com/?cid=1822476741946991543",
-      "image": "/_portal/vshops/lodging-12/g1.jpg",
+      "image": "/_portal/vshops/lodging-12/s1.jpg",
       "images": [
-        "/_portal/vshops/lodging-12/g1.jpg",
         "/_portal/vshops/lodging-12/s1.jpg",
+        "/_portal/vshops/lodging-12/g1.jpg",
+        "/_portal/vshops/lodging-12/s5.jpg",
+        "/_portal/vshops/lodging-12/g2.jpg",
         "/_portal/vshops/lodging-12/s2.jpg",
         "/_portal/vshops/lodging-12/s3.jpg",
-        "/_portal/vshops/lodging-12/g2.jpg",
-        "/_portal/vshops/lodging-12/s4.jpg"
+        "/_portal/vshops/lodging-12/s6.jpg",
+        "/_portal/vshops/lodging-12/g3.jpg",
+        "/_portal/vshops/lodging-12/g4.jpg",
+        "/_portal/vshops/lodging-12/s4.jpg",
+        "/_portal/vshops/lodging-12/s7.jpg",
+        "/_portal/vshops/lodging-12/s8.jpg",
+        "/_portal/vshops/lodging-12/s9.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-12/g1.jpg",
-          "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
-          "width": 1200,
-          "height": 900
-        },
-        {
           "path": "/_portal/vshops/lodging-12/s1.jpg",
           "what": "森に隣接する芝地に張られたテントとタープ。手前に車が停まっている",
-          "width": 1024,
-          "height": 768
+          "kind": "room",
+          "width": 1000,
+          "height": 750
         },
         {
-          "path": "/_portal/vshops/lodging-12/s2.jpg",
-          "what": "柵と門で区切られた、芝のフリーDogサイト",
-          "width": 1200,
-          "height": 900
+          "path": "/_portal/vshops/lodging-12/g1.jpg",
+          "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
         },
         {
-          "path": "/_portal/vshops/lodging-12/s3.jpg",
-          "what": "RVサイトに停まるキャンピングカーとトレーラー",
-          "width": 1024,
-          "height": 1024
+          "path": "/_portal/vshops/lodging-12/s5.jpg",
+          "what": "パラソルとテーブルが置かれた芝の広場。奥に平屋の建物が並ぶ",
+          "kind": "common",
+          "width": 1100,
+          "height": 825
         },
         {
           "path": "/_portal/vshops/lodging-12/g2.jpg",
           "what": "木立の前に置かれたハンモック",
-          "width": 1200,
+          "kind": "common",
+          "width": 900,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s2.jpg",
+          "what": "キャンプサイトにある、柵と門で区切られた芝のフリーDogサイト",
+          "kind": "room",
+          "width": 900,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s3.jpg",
+          "what": "キャンプサイトにあるRVサイト。キャンピングカーとトレーラーが停まっている",
+          "kind": "room",
+          "width": 900,
           "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s6.jpg",
+          "what": "木の柵で区切られた、芝のオートサイト",
+          "kind": "room",
+          "width": 900,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/g3.jpg",
+          "what": "木の壁に囲まれた浴室。白いシャワーブースの扉と、壁の時計、カゴが見える",
+          "kind": "bath",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/g4.jpg",
+          "what": "夕暮れに照明で照らされた、「WONDERFUL GARDEN」の文字の木の看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
         },
         {
           "path": "/_portal/vshops/lodging-12/s4.jpg",
           "what": "男女の表示のある、板張りのトイレ棟",
+          "kind": "common",
           "width": 1200,
           "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s7.jpg",
+          "what": "木の壁に囲まれた炊事場。流し台が並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s8.jpg",
+          "what": "「生ビール」ののぼりが立つ、小さな売店の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-12/s9.jpg",
+          "what": "黄色い壁と木のカウンターの洗面所。鏡と洗面台が並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
         }
       ],
       "tags": [
@@ -792,50 +1187,120 @@
       "url": "https://www.nishinonaya.com/",
       "website": "https://www.nishinonaya.com/",
       "mapUrl": "https://maps.google.com/?cid=17216032074410806401",
-      "image": "/_portal/vshops/lodging-13/s1.jpg",
+      "image": "/_portal/vshops/lodging-13/s2.jpg",
       "images": [
-        "/_portal/vshops/lodging-13/s1.jpg",
-        "/_portal/vshops/lodging-13/g1.jpg",
+        "/_portal/vshops/lodging-13/s2.jpg",
         "/_portal/vshops/lodging-13/g2.jpg",
         "/_portal/vshops/lodging-13/g3.jpg",
+        "/_portal/vshops/lodging-13/s1.jpg",
+        "/_portal/vshops/lodging-13/g5.jpg",
+        "/_portal/vshops/lodging-13/s3.jpg",
+        "/_portal/vshops/lodging-13/s4.jpg",
+        "/_portal/vshops/lodging-13/s5.jpg",
+        "/_portal/vshops/lodging-13/s6.jpg",
+        "/_portal/vshops/lodging-13/g1.jpg",
         "/_portal/vshops/lodging-13/g4.jpg",
-        "/_portal/vshops/lodging-13/g5.jpg"
+        "/_portal/vshops/lodging-13/s7.jpg",
+        "/_portal/vshops/lodging-13/s8.jpg",
+        "/_portal/vshops/lodging-13/g6.jpg"
       ],
       "photos": [
         {
-          "path": "/_portal/vshops/lodging-13/s1.jpg",
-          "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/lodging-13/g1.jpg",
-          "what": "夕暮れに明かりがともるコテージの外観と庭",
+          "path": "/_portal/vshops/lodging-13/s2.jpg",
+          "what": "芝の庭に建つ、ウッドデッキとあずまやのある平屋の外観",
+          "kind": "exterior",
           "width": 1200,
           "height": 800
         },
         {
           "path": "/_portal/vshops/lodging-13/g2.jpg",
           "what": "青い寝具の2台のベッドと木の梁のある寝室",
+          "kind": "room",
           "width": 1200,
           "height": 900
         },
         {
           "path": "/_portal/vshops/lodging-13/g3.jpg",
           "what": "青い壁と木の梁、吹き抜けのあるコテージの居間",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s1.jpg",
+          "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g5.jpg",
+          "what": "天井の低いロフトに並ぶ青い寝具のベッド",
+          "kind": "room",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s3.jpg",
+          "what": "コテージの居間。ソファとダイニングテーブルがあり、天井が高い",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s4.jpg",
+          "what": "白いタイルの浴室。レインシャワーとシャワーのホースがある",
+          "kind": "bath",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s5.jpg",
+          "what": "肉と野菜、サラダが並んだテーブルの料理",
+          "kind": "meal",
+          "width": 898,
+          "height": 1100
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s6.jpg",
+          "what": "バーベキューコンロの網の上で焼かれる貝と肉。奥に犬が写っている",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g1.jpg",
+          "what": "夕暮れに明かりがともるコテージと庭",
+          "kind": "exterior",
           "width": 1200,
           "height": 800
         },
         {
           "path": "/_portal/vshops/lodging-13/g4.jpg",
           "what": "照明を飾った木組みの東屋とテーブル席のある庭の夜景",
+          "kind": "common",
           "width": 900,
           "height": 1200
         },
         {
-          "path": "/_portal/vshops/lodging-13/g5.jpg",
-          "what": "天井の低いロフトに並ぶ青い寝具のベッド",
-          "width": 800,
+          "path": "/_portal/vshops/lodging-13/s7.jpg",
+          "what": "青灰色のタイルの壁のキッチン。冷蔵庫と電子レンジ、コンロ、木のカウンターがある",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/s8.jpg",
+          "what": "海に昇る朝日と、砂浜に寄せる波",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-13/g6.jpg",
+          "what": "夜に電球が飾られた庭の木と、柵に囲まれた芝の庭",
+          "kind": "view",
+          "width": 900,
           "height": 1200
         }
       ],
@@ -896,48 +1361,110 @@
       "image": "/_portal/vshops/lodging-14/g1.jpg",
       "images": [
         "/_portal/vshops/lodging-14/g1.jpg",
-        "/_portal/vshops/lodging-14/g2.jpg",
-        "/_portal/vshops/lodging-14/g3.jpg",
         "/_portal/vshops/lodging-14/g4.jpg",
+        "/_portal/vshops/lodging-14/g3.jpg",
+        "/_portal/vshops/lodging-14/g2.jpg",
+        "/_portal/vshops/lodging-14/s2.jpg",
+        "/_portal/vshops/lodging-14/s3.jpg",
+        "/_portal/vshops/lodging-14/s1.jpg",
         "/_portal/vshops/lodging-14/g5.jpg",
-        "/_portal/vshops/lodging-14/s1.jpg"
+        "/_portal/vshops/lodging-14/s4.jpg",
+        "/_portal/vshops/lodging-14/s5.jpg",
+        "/_portal/vshops/lodging-14/s6.jpg",
+        "/_portal/vshops/lodging-14/g6.jpg",
+        "/_portal/vshops/lodging-14/g7.jpg"
       ],
       "photos": [
         {
           "path": "/_portal/vshops/lodging-14/g1.jpg",
           "what": "川にかかる橋の向こうに建つ、赤い屋根の旅館の建物",
+          "kind": "exterior",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g4.jpg",
+          "what": "串焼きやサラダ、煮物、ごはん、味噌汁が並ぶ夕食",
+          "kind": "meal",
           "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g3.jpg",
+          "what": "黄色い布団の掛かった2台のベッドがある客室",
+          "kind": "room",
+          "width": 675,
           "height": 1200
         },
         {
           "path": "/_portal/vshops/lodging-14/g2.jpg",
           "what": "「滝の湯旅館」の木の看板と、積まれた薪のある玄関まわり",
+          "kind": "exterior",
           "width": 1200,
           "height": 1200
         },
         {
-          "path": "/_portal/vshops/lodging-14/g3.jpg",
-          "what": "黄色い布団の掛かった2台のベッドがある客室",
-          "width": 675,
-          "height": 1200
+          "path": "/_portal/vshops/lodging-14/s2.jpg",
+          "what": "畳敷きの和室。座卓とテレビがあり、障子の窓がある",
+          "kind": "room",
+          "width": 540,
+          "height": 340
         },
         {
-          "path": "/_portal/vshops/lodging-14/g4.jpg",
-          "what": "串焼きやサラダ、煮物、ごはん、味噌汁が並ぶ夕食",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/lodging-14/g5.jpg",
-          "what": "ベーコンエッグとサラダの朝食",
-          "width": 1200,
-          "height": 675
+          "path": "/_portal/vshops/lodging-14/s3.jpg",
+          "what": "ロフト付きの洋室ツインルーム。ベッドと階段が見える",
+          "kind": "room",
+          "width": 540,
+          "height": 340
         },
         {
           "path": "/_portal/vshops/lodging-14/s1.jpg",
           "what": "石を組んだ湯船のある浴室",
+          "kind": "bath",
           "width": 590,
           "height": 600
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g5.jpg",
+          "what": "ベーコンエッグとサラダの朝食",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/s4.jpg",
+          "what": "ごはんと味噌汁、薄切りの肉、天ぷら、小鉢が並ぶお膳の料理",
+          "kind": "meal",
+          "width": 590,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/s5.jpg",
+          "what": "薄切りの鶏肉と野菜、豆腐を盛った鍋料理の材料。生卵の小鉢が添えられている",
+          "kind": "meal",
+          "width": 550,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/s6.jpg",
+          "what": "囲炉裏のある小さなお食事処。テーブルと椅子があり、赤い照明が下がっている",
+          "kind": "meal",
+          "width": 590,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g6.jpg",
+          "what": "玄関へ続く段差と手すりのある旅館の外観",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/lodging-14/g7.jpg",
+          "what": "木々に囲まれた小さな滝と、岩の間を流れる沢",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
         }
       ],
       "tags": [

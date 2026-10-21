@@ -6,26 +6,9 @@
       "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/topcamp.jpg",
       "pageUrl": "https://fujimicamp.jp/",
       "what": "夕暮れの富士山と、テントや車が並ぶキャンプサイト",
+      "kind": "room",
       "width": 1200,
       "height": 693,
-      "source": "公式サイト"
-    },
-    {
-      "path": "/_portal/vshops/lodging-5/s2.jpg",
-      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/campsite_freesite.jpg",
-      "pageUrl": "https://fujimicamp.jp/camp/",
-      "what": "広い芝のフリーサイトの先に見える富士山",
-      "width": 1200,
-      "height": 693,
-      "source": "公式サイト"
-    },
-    {
-      "path": "/_portal/vshops/lodging-5/s3.jpg",
-      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_cottage.png",
-      "pageUrl": "https://fujimicamp.jp/cottage/",
-      "what": "ウッドデッキと黄色い屋根のあるコテージの外観",
-      "width": 1200,
-      "height": 742,
       "source": "公式サイト"
     },
     {
@@ -33,8 +16,39 @@
       "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_furo.png",
       "pageUrl": "https://fujimicamp.jp/cottage/",
       "what": "木の壁に囲まれた、木の浴槽の露天風呂",
+      "kind": "bath",
       "width": 1107,
       "height": 684,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s3.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_cottage.png",
+      "pageUrl": "https://fujimicamp.jp/cottage/",
+      "what": "ウッドデッキと黄色い屋根のあるコテージ。外観を斜めから写している",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 742,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s7.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/top_hero1.jpg",
+      "pageUrl": "https://fujimicamp.jp/",
+      "what": "雪をかぶった富士山と、草地の向こうに並ぶ杉林",
+      "kind": "view",
+      "width": 1200,
+      "height": 725,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s2.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/campsite_freesite.jpg",
+      "pageUrl": "https://fujimicamp.jp/camp/",
+      "what": "広い芝のフリーサイトの先に見える富士山",
+      "kind": "room",
+      "width": 1200,
+      "height": 693,
       "source": "公式サイト"
     },
     {
@@ -42,19 +56,91 @@
       "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_bed.png",
       "pageUrl": "https://fujimicamp.jp/cottage/",
       "what": "ベッドのあるコテージの寝室",
+      "kind": "room",
       "width": 1107,
       "height": 684,
       "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s8.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/campsite_100man_1.jpg",
+      "pageUrl": "https://fujimicamp.jp/camp/",
+      "what": "テントとタープが並ぶ区画サイトの夕暮れ。ランタンの明かりがともっている",
+      "kind": "room",
+      "width": 1200,
+      "height": 693,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s9.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/campsite_premium100.jpg",
+      "pageUrl": "https://fujimicamp.jp/camp/",
+      "what": "赤土の地面が広がる区画サイト。夕焼けの空が見える",
+      "kind": "room",
+      "width": 1200,
+      "height": 693,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s10.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/facility_shower.png",
+      "pageUrl": "https://fujimicamp.jp/",
+      "what": "ガラス戸のシャワーブースがある浴室",
+      "kind": "bath",
+      "width": 1200,
+      "height": 844,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s11.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/photogal_7.png",
+      "pageUrl": "https://fujimicamp.jp/",
+      "what": "天の川の見える星空と富士山。手前の杉林の下にテントの明かりが並ぶ",
+      "kind": "view",
+      "width": 930,
+      "height": 693,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3QP-wJJGmYIDRPtpvk1XL4Z4ujAFPH4BZ1E2qGwQuCfft5lG_tmFY21sNEXHMe_vpMcUnHjvr3MZTlRzhTZwhkuIYCX_F4h_8hV4uFbBgnEPUyHzKntIou7gREC3HEG56zgiwZg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16609400822903289520",
+      "what": "夜の高台に灯るランタンと、遠くに広がる街の明かり",
+      "kind": "view",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
     },
     {
       "path": "/_portal/vshops/lodging-5/s6.jpg",
       "imageUrl": "https://fujimicamp.jp/wp-content/uploads/2026/08/IMG_8740.jpeg",
       "pageUrl": "https://fujimicamp.jp/",
       "what": "プールと、パラソルのあるウッドデッキのテラス。向こうに海と山が見える",
+      "kind": "common",
       "width": 1200,
       "height": 844,
       "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s12.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/facility_suiziba.png",
+      "pageUrl": "https://fujimicamp.jp/camp/",
+      "what": "ステンレスの流し台が並ぶ炊事場",
+      "kind": "common",
+      "width": 1042,
+      "height": 782,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s13.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/facility_kanri.png",
+      "pageUrl": "https://fujimicamp.jp/facility/",
+      "what": "管理棟の外観。ベンチが置かれた木造の入口",
+      "kind": "exterior",
+      "width": 800,
+      "height": 566,
+      "source": "公式サイト"
     }
   ],
-  "note": "公式サイトの写真6枚(プールの写真は、Google マップの写真の水が濁って見えたため、同じ場所を写した公式サイトの写真に差し替え)"
+  "note": "Google マップの写真1枚・公式サイトの写真13枚(プールの写真は、Google マップの写真の水が濁って見えたため、同じ場所を写した公式サイトの写真に差し替え)。kind は写真の種類(exterior 外観・room 客室・bath 風呂・meal 料理・common 共用・view 周辺の景色)"
 }
