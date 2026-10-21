@@ -18,7 +18,6 @@ function Hero() {
         <div className="tp-hero-photo pt-live pt-shine">
           <img className="pt-kb" src={`${T}/hero.webp`} width={948} height={332} alt="" fetchPriority="high" />
         </div>
-        <div className="tp-bun" aria-hidden="true" />
         <MaskLines as="h1" className="tp-h1" lines={["ペットと、", "この街で、", "もっと豊かに。"]} delay={120} step={150} />
         <Reveal as="p" variant="fade" delay={650} className="tp-lead">
           マチノワPetは、ペットと一緒に行けるお店や
