@@ -1,0 +1,188 @@
+{
+  "key": "lodging-4",
+  "headline": "石川県加賀市橋立町、古民家を改装した一棟貸しの宿。MAGOICHI・MAGONI・MAGOSANの3つの宿がある",
+  "lede": "石川県加賀市橋立町にある「MAGONDO」(KAKUREGA STAY)です。北前船で栄えた橋立の、築百年以上の古民家を改装した一棟貸しの宿で、MAGOICHI・MAGONI・MAGOSANの3つの宿があります。宿のキッチンで自炊でき、併設のカフェもあります。",
+  "sections": [
+    {
+      "heading": "場所と利用の条件",
+      "body": "住所は石川県加賀市橋立町ム-2、電話は0761-71-2810で、電話の受付は9時から18時までです。JR加賀温泉駅から車で15分、片山津ICから車で10分で、駐車場は敷地内にあり、台数に限りがあります。チェックインは15時からで、滞在は1泊から30泊までです。公式サイトには、届出審査済みとして石川県指令南加保第393号の表示があります。ペットと喫煙は不可で、イベント・パーティは可とされ、静かな滞在のため近隣への配慮が求められています。"
+    },
+    {
+      "heading": "3つの宿",
+      "body": "MAGOICHIは、囲炉裏を再利用した空間のある一棟貸しで、広さ112㎡の1LDK、定員は1〜2名です。MAGONIは、古い蔵を改装した一棟貸しで、広さ100㎡の1LDK、定員は1〜2名です。MAGOSANは、最大5名まで泊まれる一棟貸しで、広さ190㎡の2LDK、定員は1〜5名です。公式サイトの設備の欄には、キッチン、洗濯機、冷蔵庫、調理器具、食器、電子レンジ、コンロ、Wi-Fi、エアコン、ヘアドライヤーなどが載っています。"
+    },
+    {
+      "heading": "自炊と併設のカフェ",
+      "body": "公式サイトでは、近くの市場や直売所で選んだ食材を、完全にプライベートなキッチンで調理する滞在が案内されています。併設の「MAGONDOカフェ」は10時から16時まで(定休日は月曜と金曜)、「MAGONDO夜カフェ」は19時から23時までで、要予約です。"
+    }
+  ],
+  "rooms": [
+    { "name": "MAGOICHI" },
+    { "name": "MAGONI" },
+    { "name": "MAGOSAN" }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの電話番号は0761-71-2810",
+      "source": "https://maps.google.com/?cid=5279461319941939557",
+      "quote": "0761-71-2810",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの住所は石川県加賀市橋立町ム２",
+      "source": "https://maps.google.com/?cid=5279461319941939557",
+      "quote": "石川県加賀市橋立町ム２",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "住所は石川県加賀市橋立町ム-2",
+      "source": "https://magondo.com/index2.html",
+      "quote": "MAGONDO 石川県加賀市橋立町ム-2",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電話は0761-71-2810で、受付は9:00〜18:00",
+      "source": "https://magondo.com/index2.html",
+      "quote": "受付 9:00–18:00 TEL：0761-71-2810",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "JR加賀温泉駅から車で15分",
+      "source": "https://magondo.com/index2.html",
+      "quote": "TRAIN JR加賀温泉駅から車で15分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "片山津ICから10分",
+      "source": "https://magondo.com/index2.html",
+      "quote": "CAR 片山津ICから10分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "駐車場は敷地内にあり、台数限定",
+      "source": "https://magondo.com/index2.html",
+      "quote": "敷地内に無料駐車場をご用意しています（台数限定）。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "北前船で栄えた加賀・橋立の築百年以上の古民家を改装した一棟貸しの宿",
+      "source": "https://magondo.com/index2.html",
+      "quote": "「MAGONDO」は、 北前船で栄えた加賀・橋立の 築百年以上の古民家を改装した 一棟貸しの宿です。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "三つの宿(MAGOICHI・MAGONI・MAGOSAN)がある",
+      "source": "https://magondo.com/index2.html",
+      "quote": "設えや空気感の異なる三つの宿。 過ごし方に合わせて、滞在のかたちをお選びください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "チェックインは15:00から",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "コンドミニアム IN 15:00〜23:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "滞在は最短1泊、最長30泊",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "最短滞在1泊 最長滞在30泊",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "届出審査済みとして石川県指令南加保第393号の表示がある",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "届出審査済み石川県指令南加保第３９３号",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペット不可、喫煙不可、イベント・パーティ可",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "ハウスルール ペット 不可 喫煙 不可 イベント・パーティ 可",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "静かな滞在のため、近隣への配慮を求めている",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "静かな滞在のため、近隣へのご配慮をお願いします。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGOICHIは囲炉裏を再利用した空間のある、キッチン付きの一棟貸し",
+      "source": "https://magondo.com/dining.html",
+      "quote": "ほのかに香る畳の香り、囲炉裏を再利用した美空間。キッチン付きの一棟貸しで",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGOICHIは定員1〜2名、広さ112㎡、1LDK",
+      "source": "https://magondo.com/dining.html",
+      "quote": "定員 1〜2名 広さ 112㎡ 間取り 1LDK",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGONIは古い蔵を改装した宿",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "古い蔵をモダンな雰囲気に改装した、",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGONIは一棟貸しのコンドミニアム",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "一棟貸しのコンドミニアムで、日常を少し離れた、くつろぎのひとときを。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGONIは定員1〜2名、広さ100㎡、1LDK",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "定員 1〜2名 広さ 100㎡ 間取り 1LDK",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGOSANは最大5名まで泊まれる一棟貸しのコンドミニアム",
+      "source": "https://magondo.com/sightseeing.html",
+      "quote": "最大5名まで泊まれる、一棟貸しのコンドミニアム。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGOSANは定員1〜5名、広さ190㎡、2LDK",
+      "source": "https://magondo.com/sightseeing.html",
+      "quote": "定員 1〜5名 広さ 190㎡ 間取り 2LDK",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "設備の欄にキッチン、洗濯機、冷蔵庫、調理器具、食器、電子レンジ、コンロ、Wi-Fi、エアコン、ヘアドライヤーなどが載っている",
+      "source": "https://magondo.com/sightseeing.html",
+      "quote": "キッチン 洗濯機 ソープ、シャンプー、歯ブラシ 冷蔵庫 TV タオル、石鹸、トイレットペーパー、洗剤 調理器具 Wi-Fiネット接続 掃除用具 食器 エアコン 窓あり 電子レンジ ヘアドライヤー 畳 コンロ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "近くの市場や直売所で選んだ食材を、完全プライベートなキッチンで調理する滞在を案内している",
+      "source": "https://magondo.com/index2.html",
+      "quote": "近くの市場や直売所で選んだ食材を、 完全プライベートなキッチンで調理する。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGONDOカフェは10:00〜16:00(定休日は月・金)",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "MAGONDOカフェ 10:00〜16:00（定休日：月・金）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "MAGONDO夜カフェは19:00〜23:00で、要予約",
+      "source": "https://magondo.com/rooms.html",
+      "quote": "MAGONDO夜カフェ 19:00〜23:00（要予約）",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    { "label": "公式サイト", "url": "https://magondo.com/index2.html" },
+    { "label": "公式サイト(MAGOICHI)", "url": "https://magondo.com/dining.html" },
+    { "label": "公式サイト(MAGONI)", "url": "https://magondo.com/rooms.html" },
+    { "label": "公式サイト(MAGOSAN)", "url": "https://magondo.com/sightseeing.html" },
+    { "label": "Google マップ", "url": "https://maps.google.com/?cid=5279461319941939557" }
+  ],
+  "notes": "種類は guesthouse(ゲストハウス)で、オーナー確認待ち(案は hotel)。シートの業種ラベルと Google マップの業種の表示は「ホテル」だが、公式サイトは「古民家を改装した一棟貸しの宿」「コンドミニアム」と書いていて、シートが貸別荘を入れている「ゲストハウス・貸別荘」のほうが近いと判断した(stay.ts に貸別荘の種類が無いため)。公式サイトの食い違いは載せない側に倒した: チェックアウトは宿ごとのページで「翌10時」、トップのFAQで「11時(仮)」と違い、キャンセルポリシーにも「(仮)」の表記があるため、チェックアウト・キャンセルは書いていない。フッターの住所(橋立町1-2-3)は他の表記(ム-2)・Google マップと合わないため使わず、住所は ム-2 とした。3つの宿の設備の欄はほぼ同じ文面(寝室の寝具の表記が宿の定員と合わない)で、宿ごとの設備としては確かめられないため、宿ごとの寝具・設備は書かず、設備の欄に載っている項目だけをまとめて書いた。料金(追加ゲスト料金・キャンセル料)、「ベストレート保証」「公式予約が最もお得」「おすすめ」「特別な時間」などの表現、宿泊記のような過ごし方の提案(STAY GUIDE のモデルコース)は載せていない。写真は Google マップと公式サイトの実物写真で、人が主役の写真と文字入りの写真は選んでいない。",
+  "placeOverride": {
+    "hours": null
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 6,
+  "sheet": {
+    "name": "ウルベビレッジ",
+    "address": "群馬県吾妻郡嬬恋村大前２２６３",
+    "url": "https://maps.app.goo.gl/NaAWdMDZ7PjeTpZz6",
+    "type": "宿泊施設",
+    "d1": "ホテル",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%88%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%AD%E3%82%B0%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8+%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%89/@36.4772734,138.5350691,1276m/data=!3m2!1e3!4b1!4m9!3m8!1s0x601dc49715f5f239:0xb057dbdfb604c00f!5m2!4m1!1i2!8m2!3d36.4772734!4d138.5350691!16s%2Fg%2F1tngqc94?entry=tts&g_ep=EgoyMDI1MTIwMi4wIPu8ASoASAFQAw%3D%3D&skid=f453a580-7cfb-4c39-85d8-9732391dd622",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "ウルベビレッジ（軽井沢レンタルログコテージ ウルベビレッジ）",
+      "address": "群馬県吾妻郡嬬恋村大前２２６３",
+      "url": "https://www.google.com/maps/place/%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%88%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%AD%E3%82%B0%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8+%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%89/@36.4772734,138.5350691,1276m/data=!3m2!1e3!4b1!4m9!3m8!1s0x601dc49715f5f239:0xb057dbdfb604c00f!5m2!4m1!1i2!8m2!3d36.4772734!4d138.5350691!16s%2Fg%2F1tngqc94",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%88%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%AD%E3%82%B0%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8+%E3%82%A6%E3%83%AB%E3%83%99%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%EF%BC%89/@36.4772734,138.5350691,1276m/data=!3m2!1e3!4b1!4m9!3m8!1s0x601dc49715f5f239:0xb057dbdfb604c00f!5m2!4m1!1i2!8m2!3d36.4772734!4d138.5350691!16s%2Fg%2F1tngqc94?entry=tts&g_ep=EgoyMDI1MTIwMi4wIPu8ASoASAFQAw%3D%3D&skid=f453a580-7cfb-4c39-85d8-9732391dd622",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "群馬県吾妻郡嬬恋村大前２２６３",
+    "place": "群馬県吾妻郡嬬恋村大前２２６３",
+    "sheetNorm": "群馬県吾妻郡嬬恋村大前2263",
+    "placeNorm": "群馬県吾妻郡嬬恋村大前2263",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "ウルベビレッジ（軽井沢レンタルログコテージ ウルベビレッジ）",
+    "address": "群馬県吾妻郡嬬恋村大前２２６３",
+    "category": null,
+    "lat": 36.4772734,
+    "lng": 138.5350691,
+    "gbpUrl": "https://maps.google.com/?cid=12706866627527098383",
+    "phone": "0279-86-2104",
+    "website": "https://urube.co.jp/",
+    "hours": null,
+    "reserveLinks": [
+      {
+        "label": "Booking.com, ￥39,342, 今すぐ予約",
+        "url": "https://www.google.com/aclk?sa=L&ai=DChsSEwintp6-xMuXAxXN4xYFHXwQDfYYACICCAEQDxoCdGw&co=1&ase=2&gclid=EAIaIQobChMIp7aevsTLlwMVzeMWBR18EA32EAoYASABEgJWZPD_BwE&cid=CAASywHkaOqJ6SGTtTQJwW8iboDyX4vgrUbZ764qOERfuY8jCyMM7DuwhW11dwD1I5DrXS-ebQ2g622vhSbBsflLcwP-Xx32qVBRazMZQ3FFIuNcL0t4mh_RS9xLXrtbCuwsKbMK8O4rygjYeIp12UAsW6zItxvuRitI9G1XMT4-q1azyMRFtEUm7-_1c_EStPr2GLP-AHwNKbBf0TUMTVrquLM2slro9E8eZmYnb0bfugdi_03T_i9Gvi-JWbN6OBiCwxxw_8uRbd8_2hVMQA&cce=2&category=acrcp_v1_32&sig=AOD64_1gZQdfJKWjosaUuwzHOmswbP7kDg&adurl=&ved=0EKPKFA"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "大人数で９月の宿泊をご検討されているならウルベビレッジの大型ログハウスをお勧めします。（写真は１号棟（ヤマセミ）です） 大人数グループでの宿泊に最適な宿泊施設であるウルベビレッジでは現在大変お得に宿泊できるオータムキャンペーンを実施中です。 ９月宿泊なら最大２０％割引されます。（キャンペーンの詳細はウルべビレッジの公式HPのオススメ情報でご確認ください） 大人数グーループや三世代ファミリー、或は仲良し２～３家族の旅行では、ホテルや旅館に宿泊しますと２名～４名用の部屋に複数室に分かれての宿泊となりますが、皆様が一堂に会して集まれる場所が無いのでホテルや旅館に滞在している時間帯に皆で楽しめないとお悩みでないですか？ 大人数グループや大人数グーループや三世代ファミリー、或は仲良し２～３家族の旅行では、複数のお部屋があり広いリビングルームやダイニングルームのある一棟貸しの貸別荘のご利用が最適です！ ウルベビレッジの大型ログハウスは、建坪５０坪もある総２階の本格的カナディアンログハウスで、寝室が３部屋（洋寝室×２室、和寝室×１室）あり、６名～１５名まで宿泊可能です。リビングルームは総吹き抜けで１１帖もの広さがあり、隣り合うダイニングルームとの間に壁の仕切りが無く、大人数の方が一堂に会して会食、団らん可能となっております。 ９月に軽井沢、草津温泉、万座温泉、八ッ場近隣で、大人数グループ、三世代"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:31:38.059Z",
+  "seconds": 4.9
+}

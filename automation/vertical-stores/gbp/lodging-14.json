@@ -1,0 +1,64 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 14,
+  "sheet": {
+    "name": "滝の湯旅館",
+    "address": "福島県須賀川市滝赤土６３",
+    "url": "https://maps.app.goo.gl/xqA7RrteAUuTeLfL7",
+    "type": "宿泊施設",
+    "d1": "旅館",
+    "d2": ""
+  },
+  "urlKind": "maps.app",
+  "route": "direct",
+  "followedUrl": "https://www.google.com/maps/place/%E6%BB%9D%E3%81%AE%E6%B9%AF%E6%97%85%E9%A4%A8/@37.3127532,140.1893204,695m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6020175343f09191:0xce7e9a72514fbec1!5m2!4m1!1i2!8m2!3d37.3127532!4d140.1893204!16s%2Fg%2F11b6j85_05?entry=tts&g_ep=EgoyMDI2MDEwNy4wIPu8ASoASAFQAw%3D%3D&skid=4a41fcf8-1fe9-4f0f-91c1-6b2e5c86ff20",
+  "kgmidHint": null,
+  "queries": [],
+  "candidates": [
+    {
+      "name": "滝の湯旅館",
+      "address": "福島県須賀川市滝赤土６３",
+      "url": "https://www.google.com/maps/place/%E6%BB%9D%E3%81%AE%E6%B9%AF%E6%97%85%E9%A4%A8/@37.3127532,140.1893204,695m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6020175343f09191:0xce7e9a72514fbec1!5m2!4m1!1i2!8m2!3d37.3127532!4d140.1893204!16s%2Fg%2F11b6j85_05",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%BB%9D%E3%81%AE%E6%B9%AF%E6%97%85%E9%A4%A8/@37.3127532,140.1893204,695m/data=!3m2!1e3!4b1!4m9!3m8!1s0x6020175343f09191:0xce7e9a72514fbec1!5m2!4m1!1i2!8m2!3d37.3127532!4d140.1893204!16s%2Fg%2F11b6j85_05?entry=tts&g_ep=EgoyMDI2MDEwNy4wIPu8ASoASAFQAw%3D%3D&skid=4a41fcf8-1fe9-4f0f-91c1-6b2e5c86ff20",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "福島県須賀川市滝赤土６３",
+    "place": "福島県須賀川市滝赤土６３",
+    "sheetNorm": "福島県須賀川市滝赤土63",
+    "placeNorm": "福島県須賀川市滝赤土63",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "滝の湯旅館",
+    "address": "福島県須賀川市滝赤土６３",
+    "category": null,
+    "lat": 37.3127532,
+    "lng": 140.1893204,
+    "gbpUrl": "https://maps.google.com/?cid=14879500034659827393",
+    "phone": "0248-67-2615",
+    "website": "http://takinoyuryokan.com/",
+    "hours": null,
+    "reserveLinks": [
+      {
+        "label": "Yahoo!トラベル, ￥13,328, 今すぐ予約",
+        "url": "https://www.google.com/aclk?sa=L&ai=DChsSEwjy9YrgxMuXAxUi6hYFHWjQBoAYACICCAEQGxoCdGw&co=1&ase=2&gclid=EAIaIQobChMI8vWK4MTLlwMVIuoWBR1o0AaAEAoYASABEgJfgfD_BwE&cid=CAASywHkaG8Irb_LQDuo3xwPgCwD6N-FwESYPB60BPqbd9g6oSNRi_T9UC0U1-NJrl2CoKqpkeHLHovLZuLq0j9oasK5u9nWh5zezdUEAzo4HVxhg5w594xFLFJnpuSOPYe4kLEvF6vb6CEFrQmnfdYMftZiv1K7RFutn9ypumgTATNDt-sdKgEaRPYI_5sf_wz4fszTWvazsk-wTeRXkDS--CzIrRCrh32L_GN2mC5uFJstMO_YhiDo2i3IXoUtK8o57ZeoNpLEXw_vPzjNlA&cce=2&category=acrcp_v1_32&sig=AOD64_3-K0vEbQ92gMU5ffuh7Mh1_fyD9Q&adurl=&ved=0EKPKFA"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:32:48.831Z",
+  "seconds": 4.6
+}

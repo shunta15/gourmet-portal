@@ -1,0 +1,66 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 5,
+  "sheet": {
+    "name": "富士見の丘オートキャンプ場",
+    "address": "静岡県富士市大淵１２９７",
+    "url": "https://www.google.com/search?q=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A%E5%A0%B4&rlz=1C1ONGR_jaJP1183JP1183&oq=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%95%E3%82%9A%E5%A0%B4&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQABiDARixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzM0N2owajmoAgawAgHxBYR4PR5uiCox&sourceid=chrome&ie=UTF-8",
+    "type": "宿泊施設",
+    "d1": "ゲストハウス・貸別荘",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "富士見の丘オートキャンプ場 静岡県富士市大淵１２９７"
+  ],
+  "candidates": [
+    {
+      "name": "富士見の丘オートキャンプ場",
+      "address": "静岡県富士市大淵１２９７",
+      "url": "https://www.google.com/maps/place/%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/@35.2179438,138.7025481,17z/data=!4m9!3m8!1s0x601bd5749e08b1d1:0xe680720c4d3b36b0!5m2!4m1!1i2!8m2!3d35.2179438!4d138.7025481!16s%2Fg%2F11qpswg4_h",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%AE%E4%B8%98%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/@35.2179438,138.7025481,17z/data=!4m9!3m8!1s0x601bd5749e08b1d1:0xe680720c4d3b36b0!5m2!4m1!1i2!8m2!3d35.2179438!4d138.7025481!16s%2Fg%2F11qpswg4_h?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "静岡県富士市大淵１２９７",
+    "place": "静岡県富士市大淵１２９７",
+    "sheetNorm": "静岡県富士市大淵1297",
+    "placeNorm": "静岡県富士市大淵1297",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "富士見の丘オートキャンプ場",
+    "address": "静岡県富士市大淵１２９７",
+    "category": null,
+    "lat": 35.2179438,
+    "lng": 138.7025481,
+    "gbpUrl": "https://maps.google.com/?cid=16609400822903289520",
+    "phone": "090-3003-0100",
+    "website": "https://fujimicamp.jp/",
+    "hours": null,
+    "reserveLinks": [
+      {
+        "label": "楽天トラベル, ￥24,000, 今すぐ予約",
+        "url": "https://www.google.com/aclk?sa=L&ai=DChsSEwijzOa4xMuXAxX1bA8CHe9ZDfoYACICCAEQARoCdGI&co=1&ase=2&gclid=EAIaIQobChMIo8zmuMTLlwMV9WwPAh3vWQ36EAoYASABEgLkQPD_BwE&cid=CAASywHkaFbyj3pKtBxqLhde7XEDaubTToaGBM_c2vyHAWWXwZGf3Xc_O_7WNWBJSkl2kj5YKEi4-UAmZ8aDD9nUNOLRsnrgeK75keD821k5RcFCvtqCP-SkQx4gn730un4KpcN6JXj9n2qyD6YBbrFI4cOzdvVXKCnqevi_MxEhA2SNioQ-765WBEuFgpkpMcGiz-SPqWnW_dfgPKdsXw9v-MCKSk5MY1UI4jkia9Xq_EnTb8NtKQM_vXKQJiLbt1IEuCI7ZtOHhfQpFqG1lg&cce=2&category=acrcp_v1_37&sig=AOD64_2xoB1OLIerT94ytF7uQx5V_frzAg&adurl=&ved=0EKPKFA"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:31:28.406Z",
+  "seconds": 7
+}

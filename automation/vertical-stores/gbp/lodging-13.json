@@ -1,0 +1,61 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 13,
+  "sheet": {
+    "name": "Dog-cottage 西野納屋",
+    "address": "千葉県山武郡九十九里町西野１８５０",
+    "url": "https://www.google.com/search?q=Dog-cottage%E8%A5%BF%E9%87%8E%E7%B4%8D%E5%B1%8B+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B1%B1%E6%AD%A6%E9%83%A1%E4%B9%9D%E5%8D%81%E4%B9%9D%E9%87%8C%E7%94%BA%E8%A5%BF%E9%87%8E1850&rlz=1C1TMBY_jaJP997JP997&oq=&aqs=chrome.1.69i57j69i59j0i751j0i512i546j0i751l2.856j0j7&sourceid=chrome&ie=UTF-8",
+    "type": "宿泊施設",
+    "d1": "ゲストハウス・貸別荘",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "Dog-cottage 西野納屋 千葉県山武郡九十九里町西野１８５０"
+  ],
+  "candidates": [
+    {
+      "name": "Dog-cottage 西野納屋",
+      "address": "千葉県山武郡九十九里町西野１８５０",
+      "url": "https://www.google.com/maps/place/Dog-cottage+%E8%A5%BF%E9%87%8E%E7%B4%8D%E5%B1%8B/@35.5122376,140.4330164,874m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6022c305e6a01817:0xeeeba1f50cfccc81!8m2!3d35.5122376!4d140.4330164!16s%2Fg%2F11sbhd3_ny",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Dog-cottage+%E8%A5%BF%E9%87%8E%E7%B4%8D%E5%B1%8B/@35.5122376,140.4330164,874m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6022c305e6a01817:0xeeeba1f50cfccc81!8m2!3d35.5122376!4d140.4330164!16s%2Fg%2F11sbhd3_ny?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県山武郡九十九里町西野１８５０",
+    "place": "千葉県山武郡九十九里町西野１８５０",
+    "sheetNorm": "千葉県山武郡九十九里町西野1850",
+    "placeNorm": "千葉県山武郡九十九里町西野1850",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Dog-cottage 西野納屋",
+    "address": "千葉県山武郡九十九里町西野１８５０",
+    "category": "家具付き宿泊施設",
+    "lat": 35.5122376,
+    "lng": 140.4330164,
+    "gbpUrl": "https://maps.google.com/?cid=17216032074410806401",
+    "phone": "090-3141-4027",
+    "website": "https://www.nishinonaya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:32:39.811Z",
+  "seconds": 7.2
+}

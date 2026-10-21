@@ -1,0 +1,66 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 8,
+  "sheet": {
+    "name": "山のホテル大瀧",
+    "address": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+    "url": "https://www.google.com/search?q=0269-85-4000&rlz=1C1TMBY_jaJP997JP997&oq=0269-85-4000&aqs=chrome.0.69i59j69i60.402j0j7&sourceid=chrome&ie=UTF-8",
+    "type": "宿泊施設",
+    "d1": "ホテル",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "山のホテル大瀧 長野県下高井郡野沢温泉村豊郷７８２１−１"
+  ],
+  "candidates": [
+    {
+      "name": "山のホテル大瀧",
+      "address": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+      "url": "https://www.google.com/maps/place/%E5%B1%B1%E3%81%AE%E3%83%9B%E3%83%86%E3%83%AB%E5%A4%A7%E7%80%A7/@36.920916,138.452121,858m/data=!3m1!1e3!4m9!3m8!1s0x5ff60529a7ac6415:0x36e4996aa96f1c25!5m2!4m1!1i2!8m2!3d36.920916!4d138.452121!16s%2Fg%2F1tvdjn2s",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%B1%B1%E3%81%AE%E3%83%9B%E3%83%86%E3%83%AB%E5%A4%A7%E7%80%A7/@36.920916,138.452121,858m/data=!3m1!1e3!4m9!3m8!1s0x5ff60529a7ac6415:0x36e4996aa96f1c25!5m2!4m1!1i2!8m2!3d36.920916!4d138.452121!16s%2Fg%2F1tvdjn2s?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+    "place": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+    "sheetNorm": "長野県下高井郡野沢温泉村豊郷7821-1",
+    "placeNorm": "長野県下高井郡野沢温泉村豊郷7821-1",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "山のホテル大瀧",
+    "address": "長野県下高井郡野沢温泉村豊郷７８２１−１",
+    "category": null,
+    "lat": 36.920916,
+    "lng": 138.452121,
+    "gbpUrl": "https://maps.google.com/?cid=3955455056126352421",
+    "phone": "0269-85-4000",
+    "website": "https://hotelohtaki.com/",
+    "hours": null,
+    "reserveLinks": [
+      {
+        "label": "楽天トラベル, ￥27,379, 今すぐ予約",
+        "url": "https://www.google.com/aclk?sa=L&ai=DChsSEwjvtcXDxMuXAxXMWg8CHTDYDhIYACICCAEQAxoCdGI&co=1&ase=2&gclid=EAIaIQobChMI77XFw8TLlwMVzFoPAh0w2A4SEAoYASABEgLbUfD_BwE&cid=CAASywHkaOlQoVHgpCKowgd4c0qIvqvEGxzi2_EOtk5PjQtanHvuzWSRu-LqyIBG_iIg-2xWA4AgZBjQbb-i4siNuJ5o5hbgTWvxk4V_0QPSN43gpti5zcYA0ThHT7Z7qxW6tJz4xjLZH0lHg7bQwc0Un9Y-MzmUWRW1eeV_LXMyw11TLV8Sgy74mxQIaPJ8-5sR8Ssoc_RGYQLxeUPCYdiELLHeSZh5ij3_4z3t1gqGnyHTF5zF1HHE1g21S14PQCJmxGfG4WPbgbdDpJsxGg&cce=2&category=acrcp_v1_37&sig=AOD64_3BsjpQynDrGgwgaLH0mSEAEElg7Q&adurl=&ved=0EKPKFA"
+      }
+    ],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "色づく山々と心地よい秋風。外湯巡りと高原の自然を気ままに味わう素泊まり滞在。 野沢温泉スキー場のメインアクセス、長坂ゴンドラまで徒歩約2分40秒（わずか110m）。山のホテル大瀧は、周囲の木々が鮮やかに色づき始め、穏やかな秋の深まりを感じられる野沢温泉 宿です。 「朝晩の涼しさが心地よいこの季節、混雑を避けて静かな温泉街をのんびり歩きたい」 「小さな子どもと一緒に色づく自然を眺めながら、時間を気にせずゆったり過ごしたい」 と感じていませんか？ 秋が深まる10月下旬の野沢温泉は、澄んだ空気と情緒ある街並みが広がり、心からリラックスできる季節です。 当館では、ご自身のスケジュールに合わせて自由に行動できる「素泊まりプラン」をご用意しております。 チェックイン後は、湯けむり漂う温泉街へ出かけて名物の温かい温泉まんじゅうを頬張ったり、13箇所ある歴史豊かな外湯を巡って体を温めたりと、思い思いのペースで秋の風情をお楽しみいただけます。 お部屋は、小さなお子様連れでも安心しておくつろぎいただける広々とした清潔な和室や、2022年にリニューアルした心地よい客室をご用意。村内散策をたっぷり楽しんだ後は、清潔なお風呂で一日の疲れを優しく癒やしていただけます。 食事の時間に縛られない素泊まりだからこそ、夕暮れ時の美しい紅葉をゆっくり眺めたり、夜の温泉街で地元の味覚をじっくり探したりと、贅沢な余白のある"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:31:51.323Z",
+  "seconds": 7.3
+}

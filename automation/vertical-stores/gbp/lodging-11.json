@@ -1,0 +1,69 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 11,
+  "sheet": {
+    "name": "Grow garden toriyama",
+    "address": "東京都東大和市蔵敷１丁目３９１",
+    "url": "https://share.google/lfLNBAd7rP2LNGL1H",
+    "type": "宿泊施設",
+    "d1": "ゲストハウス・貸別荘",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=7b0828787f02e929&rlz=1C1NDCM_jaJP1185JP1185&sxsrf=AE3TifPZKardi0oQ8k1H0qB6KVv73tg0Cw:1765522478654&kgmid=/g/11px9fmf7b&q=Grow+Garden+Toriyama&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=56f66a165f8d7029&utm_source=damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11px9fmf7b",
+  "queries": [
+    "Grow Garden Toriyama"
+  ],
+  "candidates": [
+    {
+      "name": "Grow Garden Toriyama",
+      "address": "東京都東大和市蔵敷１丁目３９１",
+      "url": "https://www.google.com/maps/place/Grow+Garden+Toriyama/@35.7570149,139.4199242,871m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6018e1da6255ff65:0x5efd1391267d92be!8m2!3d35.7570149!4d139.4199242!16s%2Fg%2F11px9fmf7b",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Grow+Garden+Toriyama/@35.7570149,139.4199242,871m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6018e1da6255ff65:0x5efd1391267d92be!8m2!3d35.7570149!4d139.4199242!16s%2Fg%2F11px9fmf7b?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "東京都東大和市蔵敷１丁目３９１",
+    "place": "東京都東大和市蔵敷１丁目３９１",
+    "sheetNorm": "東京都東大和市蔵敷1-391",
+    "placeNorm": "東京都東大和市蔵敷1-391",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Grow Garden Toriyama",
+    "address": "東京都東大和市蔵敷１丁目３９１",
+    "category": "バーベキュー場",
+    "lat": 35.7570149,
+    "lng": 139.4199242,
+    "gbpUrl": "https://maps.google.com/?cid=6844648522809971390",
+    "phone": "080-5659-5215",
+    "website": "https://6nv2j.hp.peraichi.com/",
+    "hours": {
+      "月": "11:00–21:00",
+      "火": "11:00–21:00",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "11:00–21:00",
+      "土": "11:00–21:00",
+      "日": "11:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "【営業一時休止のお知らせ】 いつもGrow Garden TORIYAMAをご利用いただき、ありがとうございます。 今後の施設運営について関係者との協議・調整が必要となったため、 2026年10月1日（木）～10月31日（土） の期間、営業を一時休止させていただきます。 突然のご案内となり、ご利用を楽しみにしてくださっていた皆様にはご迷惑をおかけいたしますこと、心よりお詫び申し上げます。 なお、今回の営業一時休止は、Grow Gardenを終了するためのものではありません。 今後の営業方法や施設のあり方について協議・調整を進めており、方向性が決まり次第、公式サイトやSNS等で改めてお知らせいたします。 10月以降にすでにご予約をいただいているお客様には、個別にご連絡をさせていただきます。 詳細は掲載のお知らせをご確認ください。 今後ともGrow Garden TORIYAMAをよろしくお願いいたします。\n2026/09/24"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:32:15.686Z",
+  "seconds": 8.8
+}

@@ -1,0 +1,60 @@
+{
+  "key": "lodging-13",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-13/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/ab57ee_2cad1050fb7a42cd874c55836bf59ef2%7Emv2.jpeg",
+      "pageUrl": "https://www.nishinonaya.com/",
+      "what": "芝の庭の奥に建つ、濃い灰色の屋根のコテージ",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qap5eq47V3b6eI3t4w4UveSvl6VtrPjypPzVm_dAL716Q4WdaisBmOlh74FhUakd69WhmXLcbKYEPr-2s70CvB32cpZfc6Ne7YdbAF6xsYaChQ6W6epV0_H3Z5S1XfX3LkHCY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "夕暮れに明かりがともるコテージの外観と庭",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TzcOU-uHNbzfZThg-CIW929f0mPlPfHZa2gNjkMJR5IN9n0U76BS_b2LqSvTsXj1Pwm9x_IWgoGhpYorkS6QDzZxifEVa8Dro2V-C7jWqGzpEd3FAEs7L130-XqAA1Zz2L6Myi5g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "青い寝具の2台のベッドと木の梁のある寝室",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZAlpN9dd2FVMCuPyuHGZtXUteZR2xZ7a-o6sgpStUjIvlsG3wrxbMYltXFaJTxiJm4Dv65Sf6-8tNUnvKahHmXu0jlctVXQg73nB_b_50P8goa41ukw0H-Gs-fJKik5sRh-Jz=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "青い壁と木の梁、吹き抜けのあるコテージの居間",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rlk-R9ZCOJ8X1xBTFBbSQf6eSdpcGA71kNbwPkQMMuuBQ_Uu3oxPFq5pCZJm1e5gLjZjsHix9mSfqEj66OtSMatTFq3kVmNLQuVL6rp65gudjK0WkSO1dnQMfojLmxM1mu0J4RTw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "照明を飾った木組みの東屋とテーブル席のある庭の夜景",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-13/g5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TThufAOs-ZpfOp9V7vM7195aV1KCz3cFAcYK06mYYfFZ4-EoLPqra4TopiwozPbXh7nBnBs6WnwG_0b_tr6bJtYWDDup6Q6uGrsWf-V4qrZ4DmoXZmpzP0xywrr3WyDJOZNtOHfw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17216032074410806401",
+      "what": "天井の低いロフトに並ぶ青い寝具のベッド",
+      "width": 800,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真5枚・公式サイトの写真1枚"
+}

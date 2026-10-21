@@ -1,0 +1,60 @@
+{
+  "key": "lodging-8",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-8/s1.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/uploads/2023/01/20221231_140758-scaled.jpg",
+      "pageUrl": "https://hotelohtaki.com/",
+      "what": "木のバルコニーとレストランの看板が見える、ホテルの正面外観",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s2.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/SProom/DSC02801.JPG",
+      "pageUrl": "https://hotelohtaki.com/stay/",
+      "what": "ツインベッドと座卓のある客室",
+      "width": 1200,
+      "height": 674,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/s3.jpg",
+      "imageUrl": "https://hotelohtaki.com/cms/wp-content/themes/ohtaki_themes/common/img/stay/VIProom/DSC02725.JPG",
+      "pageUrl": "https://hotelohtaki.com/stay/",
+      "what": "ベッドの手前に黒いソファのある客室",
+      "width": 1200,
+      "height": 675,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxlaN3wfOk59693vI-l9eQA7Ak4t48KIm1RWyElZZjT0Klnn0TOzv4Qzcj6QYwhAtMAA3N7gAMPhczIAqlKbaItyzKJXggEFg6OiDIKw2HJe4cu-Yt3wxGqUnCayHLe7wTdDxF5fMYCbmF=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "刺身や肉料理、小鉢が並ぶ夕食の膳",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvblvAvBgIIjAfL2fSvLEGzKUjjs61L2ODG7WujShc1umIHFxhuN79IzMrOTxUdL9HCToqPEk4_1aSgjuPcTOHYwnEDkh7XLn9P3Br9Y2RZMhXzDVaC3BDLsOUQU_vfGKnAFYfZ1yrWeFX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "大きな窓と木の椅子が並ぶ、レストランの店内",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-8/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnuSUqCKB68p8YsGH6FBSXDoztar-dvWoXxC4K7dFnMjx0TBtZrHlTXKC-m3rq7RFwr5LF3fwsTm6aTaEk8CmQViInl7AuQoDGHVuh_exmHRQnRlvrx1VtGFjb_62M3tn-yhshybhG4Zw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3955455056126352421",
+      "what": "トーストやベーコンエッグ、フルーツのある朝食",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真3枚・公式サイトの写真3枚"
+}

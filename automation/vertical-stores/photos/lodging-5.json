@@ -1,0 +1,60 @@
+{
+  "key": "lodging-5",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-5/s1.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/topcamp.jpg",
+      "pageUrl": "https://fujimicamp.jp/",
+      "what": "夕暮れの富士山と、テントや車が並ぶキャンプサイト",
+      "width": 1200,
+      "height": 693,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s2.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/campsite_freesite.jpg",
+      "pageUrl": "https://fujimicamp.jp/camp/",
+      "what": "広い芝のフリーサイトの先に見える富士山",
+      "width": 1200,
+      "height": 693,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s3.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_cottage.png",
+      "pageUrl": "https://fujimicamp.jp/cottage/",
+      "what": "ウッドデッキと黄色い屋根のあるコテージの外観",
+      "width": 1200,
+      "height": 742,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s4.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_furo.png",
+      "pageUrl": "https://fujimicamp.jp/cottage/",
+      "what": "木の壁に囲まれた、木の浴槽の露天風呂",
+      "width": 1107,
+      "height": 684,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/s5.jpg",
+      "imageUrl": "https://fujimicamp.jp/wp-content/themes/fujimino-hillautocampfield/assets/img/cottage_bed.png",
+      "pageUrl": "https://fujimicamp.jp/cottage/",
+      "what": "ベッドのあるコテージの寝室",
+      "width": 1107,
+      "height": 684,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-5/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Su8qnBRTzPgIZB-bRw851TbiCK5y5zmS72WMGqGdm6fk8s-zuj3PiFLCU_f_lC1ipW37RytxurrZ5qbjKr2IMBQvcXMvzclM0AIWrMse-bta3ySen5gdKhDx_ltA4UsN1F42taWA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16609400822903289520",
+      "what": "プールと、パラソルのあるウッドデッキのテラス",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真1枚・公式サイトの写真5枚"
+}

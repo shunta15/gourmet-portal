@@ -1,0 +1,51 @@
+{
+  "key": "lodging-4",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-4/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7Gm2zU4Dgo92b6jWmXvDf8B2IbGOH2xrdOlmppAk2pVuGk7f97KE9uC6mFc8SLCXy4-dKIq66lj3FIVafxOcS15Y-_GoKzfX4K1_BPgLtfsPTEDNAN7qB8fzPU6u6ELMnKHpTKsAX0iKT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "板塀と瓦屋根の古民家の外観。入口に暖簾が掛かっている",
+      "width": 987,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rgu56I_1LHGnavN99DlG9bNZAIkvREeqPGPgjh3KIRy6q4w3C-vrayR_ND-d7SoQyhs2d8l839YgsVhPDZY85zZZJehm0N_GITwQopIIju4tZ35feA_NNhRUcDcTaUSHBgIkmK=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "太い梁と板張りの壁が見える客室。ベッドと緑色のベンチがある",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIfxgfoVa-WlMcUdCZbYbJJUnIuHyyuFF7QEVO2ljYNAr06b1TvypgIAGNEZegQjcUKyvNFXwWDshje3BPmdm5-CvBxwUnl3jNhJZcduuvE-MzmRqf6UG9MtKjo15hMitcdjvn=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "畳敷きの広間。障子の窓とテレビ、ソファのある居間",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRlVL5rD1SVSyiddNpwRMKiB6WkSTxZNiVxA99hVNtkYJKcQkHu7JoO1SoYomFihJblc9QBV8M4t13J8iDyDmw8qyrfxrGxuiVgD745po3ozQhllJTLktEUfKnYwmgRHi0vWw9=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "長いダイニングテーブルのある、梁の見える広い居間とキッチン",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-4/g5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJXmVuWkdeCRmdYRRAnk2Jea7lUiAiCTYAYwUUefjicBERvyInfHGjSVZcoPzO9xXKQ9tll4NYaVQ1F-XxJ9CrrrUCKT3GcljHlHFrg04V7JMgONHLYCpcdU1iXUOQVVGITCW9FA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5279461319941939557",
+      "what": "障子と襖のある和室に、2台のベッドが並ぶ寝室",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真5枚"
+}

@@ -1,0 +1,61 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 12,
+  "sheet": {
+    "name": "Wonderful Gardenオートキャンプ場／RVパークワンダフルガーデン柏",
+    "address": "千葉県柏市布施７３６",
+    "url": "https://www.google.co.jp/search?kgmid=/g/11y2m21ws8&hl=ja-JP&q=Wonderful+Garden%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%EF%BC%8FRV%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AF%E3%83%B3%E3%83%80%E3%83%95%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E6%9F%8F&shndl=17&source=sh/x/kp/osrp/m5/1&kgs=0dac1de5808520eb&shem=shrtn&utm_source=shrtn,sh/x/kp/osrp/m5/1",
+    "type": "宿泊施設",
+    "d1": "民宿",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11y2m21ws8",
+  "queries": [
+    "Wonderful Gardenオートキャンプ場／RVパークワンダフルガーデン柏 千葉県柏市布施７３６"
+  ],
+  "candidates": [
+    {
+      "name": "Wonderful Gardenオートキャンプ場／RVパークワンダフルガーデン柏",
+      "address": "千葉県柏市布施７３６",
+      "url": "https://www.google.com/maps/place/Wonderful+Garden%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%EF%BC%8FRV%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AF%E3%83%B3%E3%83%80%E3%83%95%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E6%9F%8F/@35.8907939,139.9922186,870m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60189d0028bbc19b:0x194abcf0df2963b7!8m2!3d35.8907939!4d139.9922186!16s%2Fg%2F11y2m21ws8",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/Wonderful+Garden%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4%EF%BC%8FRV%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AF%E3%83%B3%E3%83%80%E3%83%95%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E6%9F%8F/@35.8907939,139.9922186,870m/data=!3m2!1e3!4b1!4m6!3m5!1s0x60189d0028bbc19b:0x194abcf0df2963b7!8m2!3d35.8907939!4d139.9922186!16s%2Fg%2F11y2m21ws8?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "千葉県柏市布施７３６",
+    "place": "千葉県柏市布施７３６",
+    "sheetNorm": "千葉県柏市布施736",
+    "placeNorm": "千葉県柏市布施736",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "Wonderful Gardenオートキャンプ場／RVパークワンダフルガーデン柏",
+    "address": "千葉県柏市布施７３６",
+    "category": "キャンプ場",
+    "lat": 35.8907939,
+    "lng": 139.9922186,
+    "gbpUrl": "https://maps.google.com/?cid=1822476741946991543",
+    "phone": "070-4711-1550",
+    "website": "https://www.wonderfulgarden.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:32:27.401Z",
+  "seconds": 7.2
+}

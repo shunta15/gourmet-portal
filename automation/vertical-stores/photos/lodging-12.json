@@ -1,0 +1,60 @@
+{
+  "key": "lodging-12",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-12/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWgyR6wM3WVyA6LRK6lcQOeTmvspAJ3rTTOK1uPI3uPalDVUDyLwsrA92b_9SEr-F_9KX37h5882W3ltvUyfNZqKH77mhbzUdn8PjbntL5L2CCIGNT0vEkELddOlIUTR-I-mWBWscbjRc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s1.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/07/S__6799425-1024x768.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "森に隣接する芝地に張られたテントとタープ。手前に車が停まっている",
+      "width": 1024,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s2.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/06/IMG_1083-scaled.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "柵と門で区切られた、芝のフリーDogサイト",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s3.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/IMG_20240518_135439-1024x1024.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "RVサイトに停まるキャンピングカーとトレーラー",
+      "width": 1024,
+      "height": 1024,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6pDMAKDSRoXNDWmsw6xjFl1gHbpjUZS7N89iNmzskE0wRxIqNu72oVaDf_LyHNodnSQiE8ZPLjRDHxjszI7Ab7GMWtE_prh_brgseqfLsU8eGDArdc37Wlh9r0cI-n0I4gpkOGShH-uJE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1822476741946991543",
+      "what": "木立の前に置かれたハンモック",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-12/s4.jpg",
+      "imageUrl": "https://www.wonderfulgarden.jp/wp-content/uploads/2024/05/S__6307879.jpg",
+      "pageUrl": "https://www.wonderfulgarden.jp/facility/",
+      "what": "男女の表示のある、板張りのトイレ棟",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "Google マップの写真2枚・公式サイトの写真4枚"
+}

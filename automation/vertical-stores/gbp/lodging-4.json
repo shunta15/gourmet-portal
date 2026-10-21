@@ -1,0 +1,79 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 4,
+  "sheet": {
+    "name": "MAGONDO",
+    "address": "〒922-0554 石川県加賀市橋立町ム２",
+    "url": "https://www.google.co.jp/search?hl=ja&q=MAGONDO%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E5%8A%A0%E8%B3%80%E5%B8%82&lr=lang_ja",
+    "type": "宿泊施設",
+    "d1": "ホテル",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "MAGONDO 石川県加賀市橋立町ム２"
+  ],
+  "candidates": [
+    {
+      "name": "ホテルアローレ",
+      "address": "石川県加賀市柴山町と５−１",
+      "url": "https://www.google.com/maps/place/%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%AD%E3%83%BC%E3%83%AC/@36.3583843,136.3760632,17z/data=!3m1!4b1!4m9!3m8!1s0x5ff857ae5a8b5d5d:0xf1921d074e74c164!5m2!4m1!1i2!8m2!3d36.3583843!4d136.3760632!16s%2Fg%2F1tgg9tz1",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:石川県加賀市橋立町ム / マップ:石川県加賀市柴山町と）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "山代温泉 加賀百万石",
+      "address": "石川県加賀市山代温泉１１−２−１",
+      "url": "https://www.google.com/maps/place/%E5%B1%B1%E4%BB%A3%E6%B8%A9%E6%B3%89+%E5%8A%A0%E8%B3%80%E7%99%BE%E4%B8%87%E7%9F%B3/@36.2863436,136.3533512,17z/data=!3m1!4b1!4m9!3m8!1s0x5ff8f730edbdf353:0x166a364a5f58ddcc!5m2!4m1!1i2!8m2!3d36.2863436!4d136.3533512!16s%2Fg%2F1td2mbmm",
+      "addressLevel": "none",
+      "addressDetail": "町名までがちがう（シート:石川県加賀市橋立町ム / マップ:石川県加賀市山代温泉）",
+      "nameRelation": "different",
+      "kgmidMatch": null
+    },
+    {
+      "name": "MAGONDO",
+      "address": "石川県加賀市橋立町ム２",
+      "url": "https://www.google.com/maps/place/MAGONDO/@36.3511956,136.3101328,17z/data=!3m1!4b1!4m9!3m8!1s0x5ff8f9c3dc5cc69b:0x49446a19448de165!5m2!4m1!1i2!8m2!3d36.3511956!4d136.3101328!16s%2Fg%2F11l20c0ljf",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/MAGONDO/@36.3511956,136.3101328,17z/data=!3m1!4b1!4m9!3m8!1s0x5ff8f9c3dc5cc69b:0x49446a19448de165!5m2!4m1!1i2!8m2!3d36.3511956!4d136.3101328!16s%2Fg%2F11l20c0ljf?authuser=0&hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "〒922-0554 石川県加賀市橋立町ム２",
+    "place": "石川県加賀市橋立町ム２",
+    "sheetNorm": "石川県加賀市橋立町ム2",
+    "placeNorm": "石川県加賀市橋立町ム2",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "MAGONDO",
+    "address": "石川県加賀市橋立町ム２",
+    "category": null,
+    "lat": 36.3511956,
+    "lng": 136.3101328,
+    "gbpUrl": "https://maps.google.com/?cid=5279461319941939557",
+    "phone": "0761-71-2810",
+    "website": "https://magondo.com/?fbclid=PAZXh0bgNhZW0CMTEAAaYVE60xsjbVEZLIL2N7z_qMguHrtwUPMKHHDXoX8Hnbi-rSgYTsrh_p5ik_aem_gOhVYuJRRltHh9dwRQysHA",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:31:16.743Z",
+  "seconds": 81
+}

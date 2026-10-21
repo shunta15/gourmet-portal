@@ -1,0 +1,60 @@
+{
+  "key": "lodging-14",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-14/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TePqi4YIBVxxQTc2gFxl0zzQg6pQPNRuH4XCPCQjp9dXlYiHaiA2W09GxkgxgDSoOBG0XMR-v4xamboFZooKl60uxIjMdicvsl18AzVmCV9ROoOx26teu957s1GGQHrdMx5LOdZQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "what": "川にかかる橋の向こうに建つ、赤い屋根の旅館の建物",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-14/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuRacdvCrlLAqSecA0kNt7FzN4UFyD8ex69d9oH6-uB0ugWHG6iJLBpDDuklbReh5C0e1OHnX1V9wnGvsdqNfuqC1Row_rs_liPXQ9Gzow4u_h646w8w1e5xwOceq1isZaZLUL=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "what": "「滝の湯旅館」の木の看板と、積まれた薪のある玄関まわり",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-14/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rp6vpnrDQQcq30WODSvyhh0TVM3vD-8f4kw5_5owRZvjd9theqr3rQPGVFMnKZ6GEZXmbSbBWwK7Xh7bpojBgQTwMgaApwRtIyPNwK1qq6JPexdLx7GDb1d7oJKPd6mZwmbXpRIg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "what": "黄色い布団の掛かった2台のベッドがある客室",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-14/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnIPXANd6QVbf6Qs-aGqDvTu21JUlJI8rhvNMMTYeGGc5owr4gZ7FotdX76oshFDAzd0JA-_xyVs-WoydB_rxgLULBMaV9Lv4lGrYjICILqcOKsAqaySczswDtxa57GmCL4el0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "what": "串焼きやサラダ、煮物、ごはん、味噌汁が並ぶ夕食",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-14/g5.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RB679Q9YZhyh99RIFGNKjb_z37N-VqJhy5E35LJG9ZcAEDFxZuDkSt6rb7ak3aazQJvd6S_ytmkeTO0qaw5UvUg0dNSFX_9d_I3HD8z3iMS6KaMOtyiJVIb6BsBdmCKv_FHLw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14879500034659827393",
+      "what": "ベーコンエッグとサラダの朝食",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-14/s1.jpg",
+      "imageUrl": "https://takinoyuryokan.com/img/page3/page3-2_img.jpg",
+      "pageUrl": "https://takinoyuryokan.com/facilities.html",
+      "what": "石を組んだ湯船のある浴室",
+      "width": 590,
+      "height": 600,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "Google マップの写真5枚・公式サイトの写真1枚"
+}

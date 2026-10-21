@@ -1,0 +1,60 @@
+{
+  "key": "lodging-7",
+  "images": [
+    {
+      "path": "/_portal/vshops/lodging-7/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHTKuMQpjZGq1kTwZZ2MUx68WpFRPobzwoBu3nsEkEGFAUvy5pX8LNoC35BdyODdHHQivtne43nKi8CIgQ_POpHTHiyRCSQ-jWuFYEoy2lUNDsKqw-N2YD0eD9wALyaElHgSHLnQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7795331415199820761",
+      "what": "「山法師」の木札がある、離れ客室の玄関まわり",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-7/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBnxktJS9uUnB4tUkZ7tP-tSqac1YuLSRJh_NAB2ffxpI1JIuC2Sj96fAYPFpsjHR8lFwmDkSd0ebDojUlvoovGwcYaaUZEPnrss9hnaWpl5ZT6AR2t_1udI1SkVQKsmnBeRly=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7795331415199820761",
+      "what": "岩で囲まれた半露天の風呂",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-7/s1.jpg",
+      "imageUrl": "https://www.mizuwake.jp/wp/wp-content/uploads/2025/10/b353c995632bac2775f71cc6db74dc84.jpg",
+      "pageUrl": "https://www.mizuwake.jp/",
+      "what": "座卓と広縁のある、畳敷きの客室",
+      "width": 1200,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/lodging-7/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8ER-gmVpJ0ed-HvWHF3USr58NR4JRHZ3V_3LV-t6LJtmSmowCWRWwnzI5uNfXxwS8x2QcYgFATBfIVJFM0Z30JXvyD7JIuTpY8eHnCHz08wDX4LAjf7zjFc4nBFJw1zG_-Morfg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7795331415199820761",
+      "what": "2台のベッドが並ぶ洋室タイプの客室",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-7/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuczMp-k_ZRkm27mNlj7deg8R8V_njj70BKXRM5nFs4T6vgYIdCUhGRxyPOUAomYBGEjYXZwAF9AEOnqOEEhuc2YxFBH6ORgN5pvMcAQ6IT_Xu81lZklarkmpy-xuVxbTU91dJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7795331415199820761",
+      "what": "肉や野菜、魚が皿に盛られた夕食",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/lodging-7/s2.jpg",
+      "imageUrl": "http://www.mizuwake.jp/wp/wp-content/uploads/2026/08/602e9bb51fe2a313ac4c1ab0a3a68a69.jpg",
+      "pageUrl": "https://www.mizuwake.jp/",
+      "what": "敷地を上空から見た写真。道路沿いに客室の建物が点在している",
+      "width": 1200,
+      "height": 750,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "Google マップの写真4枚・公式サイトの写真2枚"
+}

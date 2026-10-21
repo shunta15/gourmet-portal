@@ -1,0 +1,61 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 2,
+  "sheet": {
+    "name": "長井小学校跡地キャンプ場",
+    "address": "栃木県矢板市長井１２４８",
+    "url": "https://www.google.co.jp/search?lr=lang_ja&sca_esv=d02a222cc2498b7b&hl=ja&sxsrf=AE3TifNtw_l-M5VLt8YMHQNzwTTHoPpXJQ:1755666619091&kgmid=/g/11ks2nds5z&q=%E9%95%B7%E4%BA%95%E5%B0%8F%E5%AD%A6%E6%A0%A1%E8%B7%A1%E5%9C%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4&shndl=30&shem=lcuae,lsptbl1,uaasie&source=sh/x/loc/uni/m1/1&kgs=176828dfa12b41d5&utm_source=lcuae,lsptbl1,uaasie,sh/x/loc/uni/m1/1",
+    "type": "宿泊施設",
+    "d1": "ゲストハウス・貸別荘",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "店名+住所",
+  "followedUrl": null,
+  "kgmidHint": "/g/11ks2nds5z",
+  "queries": [
+    "長井小学校跡地キャンプ場 栃木県矢板市長井１２４８"
+  ],
+  "candidates": [
+    {
+      "name": "長井小学校跡地キャンプ場",
+      "address": "栃木県矢板市長井１２４８",
+      "url": "https://www.google.com/maps/place/%E9%95%B7%E4%BA%95%E5%B0%8F%E5%AD%A6%E6%A0%A1%E8%B7%A1%E5%9C%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/@36.8269809,139.8914361,17z/data=!3m1!4b1!4m9!3m8!1s0x601f79c6c862985f:0x86cea94adc06ecc!5m2!4m1!1i2!8m2!3d36.8269809!4d139.8914361!16s%2Fg%2F11ks2nds5z",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "exact",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%95%B7%E4%BA%95%E5%B0%8F%E5%AD%A6%E6%A0%A1%E8%B7%A1%E5%9C%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4/@36.8269809,139.8914361,17z/data=!3m1!4b1!4m9!3m8!1s0x601f79c6c862985f:0x86cea94adc06ecc!5m2!4m1!1i2!8m2!3d36.8269809!4d139.8914361!16s%2Fg%2F11ks2nds5z?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 完全一致（記号・括弧書きをならして）",
+  "addressCompare": {
+    "sheet": "栃木県矢板市長井１２４８",
+    "place": "栃木県矢板市長井１２４８",
+    "sheetNorm": "栃木県矢板市長井1248",
+    "placeNorm": "栃木県矢板市長井1248",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "exact",
+  "place": {
+    "name": "長井小学校跡地キャンプ場",
+    "address": "栃木県矢板市長井１２４８",
+    "category": null,
+    "lat": 36.8269809,
+    "lng": 139.8914361,
+    "gbpUrl": "https://maps.google.com/?cid=607117974079303372",
+    "phone": "080-7969-9752",
+    "website": "https://www.nap-camp.com/tochigi/15992",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:29:34.250Z",
+  "seconds": 32.4
+}

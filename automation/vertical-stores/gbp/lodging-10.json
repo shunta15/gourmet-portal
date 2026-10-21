@@ -1,0 +1,61 @@
+{
+  "tab": "宿泊施設",
+  "tabEn": "lodging",
+  "row": 10,
+  "sheet": {
+    "name": "キャンプ番長ASAHIBASE",
+    "address": "千葉県旭市上永井１２５５",
+    "url": "https://share.google/Z9RvdSuva5kKdDl27",
+    "type": "宿泊施設",
+    "d1": "ゲストハウス・貸別荘",
+    "d2": ""
+  },
+  "urlKind": "share",
+  "route": "kgmid→住所",
+  "followedUrl": "https://www.google.com/search?sca_esv=ac0834c4b5f7f19c&rlz=1C1NDCM_jaJP1185JP1185&sxsrf=AE3TifM3GIb6cG_BpaQVo4BsMV_9F8nhuA:1765508023975&kgmid=/g/11n0l0mbg3&q=ASAHI+BASE+%EF%BC%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E7%95%AA%E9%95%B7%EF%BC%89&shndl=30&shem=damc,lcuae,ptotplc,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=e09bd8a3f54f7d75&utm_source=damc,lcuae,ptotplc,uaasie,shrtsdl,sh/x/loc/uni/m1/1",
+  "kgmidHint": "/g/11n0l0mbg3",
+  "queries": [
+    "ASAHI BASE （キャンプ番長）"
+  ],
+  "candidates": [
+    {
+      "name": "ASAHI BASE （キャンプ番長）",
+      "address": "千葉県旭市上永井１２５５",
+      "url": "https://www.google.com/maps/place/ASAHI+BASE+%EF%BC%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E7%95%AA%E9%95%B7%EF%BC%89/@35.6953246,140.7424023,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6023215c1fb10069:0x92336fb2a7ceab8d!8m2!3d35.6953246!4d140.7424023!16s%2Fg%2F11n0l0mbg3",
+      "addressLevel": "exact",
+      "addressDetail": "町名・番地とも一致",
+      "nameRelation": "contains",
+      "kgmidMatch": true
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/ASAHI+BASE+%EF%BC%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E7%95%AA%E9%95%B7%EF%BC%89/@35.6953246,140.7424023,872m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6023215c1fb10069:0x92336fb2a7ceab8d!8m2!3d35.6953246!4d140.7424023!16s%2Fg%2F11n0l0mbg3?hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+  "verdict": "一致",
+  "verdictReason": "住所一致（町名・番地とも一致）／店名: 一方が他方を含む（住所一致が決め手）",
+  "addressCompare": {
+    "sheet": "千葉県旭市上永井１２５５",
+    "place": "千葉県旭市上永井１２５５",
+    "sheetNorm": "千葉県旭市上永井1255",
+    "placeNorm": "千葉県旭市上永井1255",
+    "level": "exact",
+    "detail": "町名・番地とも一致"
+  },
+  "nameRelation": "contains",
+  "place": {
+    "name": "ASAHI BASE （キャンプ番長）",
+    "address": "千葉県旭市上永井１２５５",
+    "category": "キャンプ場",
+    "lat": 35.6953246,
+    "lng": 140.7424023,
+    "gbpUrl": "https://maps.google.com/?cid=10534886766459923341",
+    "phone": "080-7239-1114",
+    "website": "https://www.nap-camp.com/chiba/14572",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-21T16:32:03.133Z",
+  "seconds": 7.6
+}
