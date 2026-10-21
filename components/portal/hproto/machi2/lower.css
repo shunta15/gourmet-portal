@@ -170,6 +170,9 @@
 .h2-fsub { margin: 0; line-height: calc(15 * var(--u)); } .h2-fvr { background: #d5dbea; }
 .h2-fl { line-height: calc(15.5 * var(--u)); } .h2-fl a { transition: color .2s; } .h2-fl a:hover { color: #ee5a7a; }
 .h2-copy { margin: 0; text-align: center; font-size: calc(9.8 * var(--u)); color: #8a8f9c; }
+/* 著作権表示の横の「写真の出典」。同じ大きさ・色で、下線だけ付ける */
+.h2-fcred { margin-left: .9em; color: inherit; text-decoration: underline; text-decoration-color: #c9ccd6; text-underline-offset: .2em; transition: color .2s; }
+.h2-fcred:hover { color: #ee5a7a; }
 
 /* スマホ(〜700px): 見本の座標置きをやめて、節ごとに縦積み・3×2・横スクロールへ組み替える(--u は 390 で 1px) */
 @media (max-width: 700px) {
