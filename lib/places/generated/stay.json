@@ -4,7 +4,7 @@
     {
       "id": "st0001",
       "vertical": "stay",
-      "category": "guesthouse",
+      "category": "rental",
       "name": "MAGONDO",
       "pref": "ishikawa",
       "cityName": "加賀市",
@@ -389,7 +389,7 @@
     {
       "id": "st0003",
       "vertical": "stay",
-      "category": "guesthouse",
+      "category": "rental",
       "name": "ウルベビレッジ",
       "pref": "gunma",
       "cityName": "嬬恋村",
@@ -1176,7 +1176,7 @@
     {
       "id": "st0007",
       "vertical": "stay",
-      "category": "guesthouse",
+      "category": "rental",
       "name": "Dog-cottage 西野納屋",
       "pref": "chiba",
       "cityName": "九十九里町",

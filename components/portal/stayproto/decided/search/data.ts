@@ -1,7 +1,7 @@
 import "server-only";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
-import { REGIONS, kindsWithShops, loadStayShops, prefsWithShops, regionOfPref, regionsWithShops, scenesWithShops, sortShops, type LiveShop } from "../common/live";
+import { KIND_EN, REGIONS, kindsWithShops, loadStayShops, prefsWithShops, regionOfPref, regionsWithShops, scenesWithShops, sortShops, type LiveShop } from "../common/live";
 import { syLinks } from "../common/site";
 
 /**
@@ -110,8 +110,8 @@ export function scopeOf(f: SearchFilters, facets: Facets): string {
   return [pref ?? region, kinds.join("・"), scenes.join("・"), f.q ? `「${f.q}」` : ""].filter(Boolean).join("・");
 }
 
-/** 宿の種類のスラッグ → 英字のラベル(カードの HOTEL / RYOKAN …) */
-export const KIND_EN: Record<string, string> = { hotel: "HOTEL", ryokan: "RYOKAN", pension: "PENSION", glamping: "GLAMPING", guesthouse: "GUEST HOUSE" };
+/** 宿の種類のスラッグ → 英字のラベル(カードの HOTEL / RYOKAN …)。本体は common/live.ts(3 か所で同じ物を使う) */
+export { KIND_EN };
 
 /** 都道府県の短い名前(「長野」)。表に無ければ空 */
 export function prefShort(slug: string): string {

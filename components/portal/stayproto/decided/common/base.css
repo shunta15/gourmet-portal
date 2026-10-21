@@ -219,6 +219,8 @@ body:has(.sy-root) button, body:has(.sy-root) a { cursor: pointer; }
 .sy-lead { font-family: var(--sy-ff-min); font-weight: 400; font-size: var(--sy-fs-m); line-height: 1.95; letter-spacing: 0.1em; color: var(--sy-text2); }
 /* 大きな斜体の数字(「01」「02」。Cormorant Garamond Italic)と、小さな英字(HOTEL・RYOKAN) */
 .sy-num { font-family: var(--sy-ff-en); font-style: italic; font-weight: 400; font-size: calc(30 * var(--u)); line-height: 1; letter-spacing: 0.01em; color: var(--sy-ink); }
+/* 種類の名前(common/KindName.tsx)。「・」の所だけで折れる */
+.sy-kn { display: inline-block; }
 .sy-kind { font-family: var(--sy-ff-en); font-weight: 500; font-size: var(--sy-fs-2xs); letter-spacing: 0.24em; text-transform: uppercase; color: #6f6a5e; }
 /* 「詳細を見る →」「特集記事をみる →」(細い字+細い矢印。下に細い線) */
 .sy-more { display: inline-flex; align-items: center; gap: calc(9 * var(--u)); padding-bottom: 3px; font-size: var(--sy-fs-xs); font-weight: 700; letter-spacing: 0.1em; color: var(--sy-text); border-bottom: 1px solid rgba(21, 19, 15, 0.3); white-space: nowrap; transition: color 0.25s, border-color 0.25s; }

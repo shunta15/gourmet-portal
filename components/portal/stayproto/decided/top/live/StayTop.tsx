@@ -3,8 +3,9 @@ import Link from "next/link";
 import Shell from "../../common/Shell";
 import { Reveal, MaskLines } from "../../common/Motion";
 import { IconArrow } from "../../common/Icons";
+import KindName from "../../common/KindName";
 import { IMG_TOP as T, syLinks } from "../../common/site";
-import { dotDate, interleave, kindsWithShops, loadStayArticles, loadStayShops, regionsWithShops, REGIONS, type LiveArticle, type LiveShop } from "../../common/live";
+import { KIND_EN, dotDate, interleave, kindsWithShops, loadStayArticles, loadStayShops, regionsWithShops, REGIONS, type LiveArticle, type LiveShop } from "../../common/live";
 import HeroSearch from "../HeroSearch";
 import FeatureSlider, { type FeatureSlide } from "../FeatureSlider";
 import "../top.css";
@@ -19,13 +20,13 @@ import "../top.css";
 const L = syLinks("live");
 const SEARCH_HINT = "宿名・地名で探す";
 
-/** 種類の札(見本の並び・英字)。写真は見本の素材(kind-N.webp) */
+/** 種類の札(5 枠の並び。英字は common/live.ts の KIND_EN)。写真は見本の素材(kind-N.webp。一棟貸し・貸別荘は kind-5 を仮に使う。オーナーの素材が来たら替える) */
 const KIND_UI: Record<string, { en: string; img: number }> = {
-  hotel: { en: "HOTEL", img: 1 },
-  ryokan: { en: "RYOKAN", img: 2 },
-  pension: { en: "PENSION", img: 3 },
-  glamping: { en: "GLAMPING", img: 4 },
-  guesthouse: { en: "GUEST HOUSE", img: 5 },
+  hotel: { en: KIND_EN.hotel, img: 1 },
+  ryokan: { en: KIND_EN.ryokan, img: 2 },
+  pension: { en: KIND_EN.pension, img: 3 },
+  glamping: { en: KIND_EN.glamping, img: 4 },
+  rental: { en: KIND_EN.rental, img: 5 },
 };
 
 /** エリアの札の写真(見本 area-N.webp。見本に無い北陸は甲信越の写真を使う) */
@@ -51,7 +52,7 @@ function Hero({ areas, kinds }: { areas: Array<{ label: string; prefs: Array<{ s
           街がもっと好きになる。
         </Reveal>
         <Reveal as="p" variant="fade" delay={800} className="sy-t-p">
-          マチノワステイは、地域の宿泊施設を紹介するポータルサイトです。ホテル・旅館・民宿・ペンション・グランピング・キャンプ・ゲストハウスなど、実在の宿を、確認できた情報で一軒ずつ紹介します。
+          マチノワステイは、地域の宿泊施設を紹介するポータルサイトです。<span className="sy-kn">ホテル・旅館</span>、<span className="sy-kn">民宿・ペンション・ゲストハウス</span>、<span className="sy-kn">グランピング・キャンプ</span>、<span className="sy-kn">一棟貸し・貸別荘</span>など、実在の宿を、確認できた情報で一軒ずつ紹介します。
         </Reveal>
       </div>
       <HeroSearch action={L.search} areas={areas} kinds={kinds} hint={SEARCH_HINT} />
@@ -73,7 +74,9 @@ function Kinds({ kinds }: { kinds: ReturnType<typeof kindsWithShops> }) {
                   <img src={`${T}/kind-${ui.img}.webp`} width={564} height={354} alt="" loading="lazy" decoding="async" />
                 </span>
                 <span className="sy-t-kc-b">
-                  <span className="sy-t-kc-n">{k.name}</span>
+                  <span className="sy-t-kc-n">
+                    <KindName name={k.name} />
+                  </span>
                   <span className="sy-t-kc-e">{ui.en}</span>
                   <IconArrow className="sy-t-kc-a" />
                 </span>

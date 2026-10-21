@@ -33,7 +33,7 @@
 - bodycare: seitai 整体 / sekkotsu 整骨院・接骨院 / shinkyu 鍼灸院 / massage マッサージ / relaxation リラクゼーション / stretch ストレッチ
 - pet: trimming トリミング / pet-hotel ペットホテル / vet 動物病院 / dog-cafe ドッグカフェ / dog-run ドッグラン / pet-shop ペットショップ
 - leisure: sightseeing 観光スポット / experience 体験・アクティビティ / onsen 日帰り温泉・スパ / park テーマパーク・公園 / outdoor アウトドア / museum 美術館・博物館
-- stay: hotel ホテル / ryokan 旅館 / pension 民宿・ペンション / glamping グランピング・キャンプ / guesthouse ゲストハウス
+- stay: hotel ホテル / ryokan 旅館 / pension 民宿・ペンション・ゲストハウス / glamping グランピング・キャンプ / rental 一棟貸し・貸別荘(2026-10-22 のオーナー決定。旧 guesthouse は廃止)
 - gourmet: 既存の業態分類（lib/cuisineGroups.ts 等）をそのまま参照する。新しく作らない。
 
 ### schema.org の型（店ページの JSON-LD）
@@ -42,7 +42,7 @@
 - bodycare: すべて HealthAndBeautyBusiness（整骨院・鍼灸も医療系の型は使わない。効果効能を主張しないため）
 - pet: vet→VeterinaryCare, pet-shop→PetStore, それ以外→LocalBusiness
 - leisure: museum→Museum, park→AmusementPark（公園は Park）, それ以外→TouristAttraction
-- stay: hotel→Hotel, guesthouse→Hostel, glamping→Campground, ryokan/pension→LodgingBusiness
+- stay: hotel→Hotel, glamping→Campground, ryokan/pension/rental→LodgingBusiness
 
 ### 店の項目（共通＋業種ごと）
 共通 Place: id, vertical, category, name, nameKana?, pref(slug), city(slug)?, cityName?, address, lat?, lng?, station?, hours?, holidays?, phone?, url?, image?, images[], tags[], priceRange?, intro?, updatedAt?

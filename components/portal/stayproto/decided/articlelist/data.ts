@@ -1,6 +1,6 @@
 import "server-only";
 import { VERTICALS } from "@/lib/verticals";
-import { kindsWithShops, loadStayShops, prefsWithShops, regionOfPref, regionsWithShops, scenesWithShops, sortShops, type LiveShop } from "../common/live";
+import { KIND_EN, kindsWithShops, loadStayShops, prefsWithShops, regionOfPref, regionsWithShops, scenesWithShops, sortShops, type LiveShop } from "../common/live";
 import { syLinks } from "../common/site";
 import { cardCopyText } from "./copy";
 
@@ -119,5 +119,5 @@ export function scopeOf(f: ListFilters, facets: Facets): string {
   return [pref ?? region, kinds.join("・"), scenes.join("・"), f.q ? `「${f.q}」` : ""].filter(Boolean).join("・");
 }
 
-/** 宿の種類のスラッグ → 英字のラベル(カードの HOTEL / RYOKAN …) */
-export const KIND_EN: Record<string, string> = { hotel: "HOTEL", ryokan: "RYOKAN", pension: "PENSION", glamping: "GLAMPING", guesthouse: "GUEST HOUSE" };
+/** 宿の種類のスラッグ → 英字のラベル(カードの HOTEL / RYOKAN …)。本体は common/live.ts(3 か所で同じ物を使う) */
+export { KIND_EN };

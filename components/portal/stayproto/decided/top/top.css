@@ -34,12 +34,14 @@
 .sy-t-kinds { background: var(--t-a); padding: 30px 16px 28px; }
 .sy-t-kinds ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .sy-t-kinds li:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.sy-t-kc { display: block; background: #f9f7ef; box-shadow: 0 1px 10px rgba(40, 32, 18, 0.07); }
+/* 札は同じ高さにそろえる(「民宿・ペンション・ゲストハウス」のように名前が 2 行になる札があっても、写真の下の箱が枠からはみ出さない) */
+.sy-t-kinds li { display: flex; }
+.sy-t-kc { display: flex; flex-direction: column; width: 100%; background: #f9f7ef; box-shadow: 0 1px 10px rgba(40, 32, 18, 0.07); }
 .sy-t-kc-ph { display: block; aspect-ratio: 190 / 120; overflow: hidden; }
 .sy-t-kc-ph img { width: 100%; height: 100%; object-fit: cover; }
-.sy-t-kc-b { position: relative; display: block; padding: 12px 12px 12px; }
+.sy-t-kc-b { position: relative; display: block; flex: 1; padding: 12px 12px 12px; }
 .sy-t-kc-n { display: block; font-family: var(--sy-ff-min); font-weight: 500; font-size: 14px; line-height: 1.35; letter-spacing: 0.1em; color: var(--sy-ink); }
-.sy-t-kc-e { display: block; margin-top: 4px; font-family: var(--sy-ff-en); font-weight: 500; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #6f6a5e; }
+.sy-t-kc-e { display: block; margin-top: 4px; padding-right: 18px; font-family: var(--sy-ff-en); font-weight: 500; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #6f6a5e; }
 .sy-t-kc-a { position: absolute; right: 12px; bottom: 14px; width: 15px; height: auto; color: #8c7650; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
 .sy-t-kc:hover .sy-t-kc-a { transform: translateX(4px); }
 
@@ -176,9 +178,9 @@
   .sy-t-kinds li { flex: 0 0 calc(190.4 * var(--u)); }
   .sy-t-kinds li:last-child:nth-child(odd) { grid-column: auto; }
   .sy-t-kc-ph { aspect-ratio: auto; height: calc(120 * var(--u)); }
-  .sy-t-kc-b { height: calc(52 * var(--u)); padding: calc(13 * var(--u)) calc(16 * var(--u)); }
-  .sy-t-kc-n { font-size: max(12px, calc(10.8 * var(--u))); letter-spacing: 0.1em; }
-  .sy-t-kc-e { margin-top: calc(6 * var(--u)); font-size: max(10px, calc(7.4 * var(--u))); }
+  .sy-t-kc-b { min-height: calc(52 * var(--u)); padding: calc(13 * var(--u)) calc(16 * var(--u)); }
+  .sy-t-kc-n { padding-right: calc(16 * var(--u)); font-size: max(12px, calc(10.8 * var(--u))); letter-spacing: 0.1em; }
+  .sy-t-kc-e { margin-top: calc(6 * var(--u)); padding-right: 0; font-size: max(10px, calc(7.4 * var(--u))); }
   .sy-t-kc-a { right: calc(18 * var(--u)); bottom: auto; top: calc(22 * var(--u)); width: max(14px, calc(13 * var(--u))); }
 
   .sy-t-feat { height: calc(306 * var(--u)); margin-top: calc(6 * var(--u)); padding: 0; }

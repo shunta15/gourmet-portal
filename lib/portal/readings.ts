@@ -93,9 +93,9 @@ export const CATEGORY_KANA: Record<string, string> = {
   "leisure/museum": "びじゅつかん|はくぶつかん",
   "stay/hotel": "ほてる",
   "stay/ryokan": "りょかん",
-  "stay/pension": "みんしゅく|ぺんしょん",
+  "stay/pension": "みんしゅく|ぺんしょん|げすとはうす",
   "stay/glamping": "ぐらんぴんぐ|きゃんぷ",
-  "stay/guesthouse": "げすとはうす",
+  "stay/rental": "ひとむねがし|いっとうがし|かしべっそう",
 };
 
 /** グルメの業態（lib/cuisineGroups.ts の label）→ 読み */

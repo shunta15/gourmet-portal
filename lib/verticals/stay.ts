@@ -16,9 +16,9 @@ export const stay: Vertical = {
   categories: [
     { slug: 'hotel', name: 'ホテル', schemaType: 'Hotel' },
     { slug: 'ryokan', name: '旅館', schemaType: 'LodgingBusiness' },
-    { slug: 'pension', name: '民宿・ペンション', schemaType: 'LodgingBusiness' },
+    { slug: 'pension', name: '民宿・ペンション・ゲストハウス', schemaType: 'LodgingBusiness' },
     { slug: 'glamping', name: 'グランピング・キャンプ', schemaType: 'Campground' },
-    { slug: 'guesthouse', name: 'ゲストハウス', schemaType: 'Hostel' },
+    { slug: 'rental', name: '一棟貸し・貸別荘', schemaType: 'LodgingBusiness' },
   ],
   scenes: [
     { slug: 'onsen', name: '温泉', matchTags: ['温泉'] },

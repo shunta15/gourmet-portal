@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../common/Shell";
 import Crumbs from "../common/Crumbs";
+import KindName from "../common/KindName";
 import { IconArrow, IconChevron, IconChevronDown, IconChevronLeft, IconMinus, IconPin, IconPlus, IconSearch, StayTypeIcon } from "../common/Icons";
 import { MaskLines, Reveal } from "../common/Motion";
 import { IMG, syLinks } from "../common/site";
@@ -209,7 +210,9 @@ function Sidebar({ f, facets }: { f: ListFilters; facets: Facets }) {
                   <label className="sal-opt">
                     <input type="checkbox" name="kind" value={k.slug} defaultChecked={f.kinds.includes(k.slug)} />
                     <StayTypeIcon slug={k.slug} className="sal-opt-i" />
-                    <span className="sal-opt-l">{k.name}</span>
+                    <span className="sal-opt-l">
+                      <KindName name={k.name} />
+                    </span>
                   </label>
                 </li>
               ))}
@@ -305,7 +308,7 @@ function Card({ s, n, i }: { s: LiveShop; n: number; i: number }) {
             {c.feats.map((t) => (
               <li key={t.key} className="sy-tag">
                 {t.kind === "pin" ? <IconPin /> : t.kind === "type" ? <StayTypeIcon slug={s.kind} /> : <TagIcon label={t.label} />}
-                <span>{t.label}</span>
+                <span>{t.kind === "type" ? <KindName name={t.label} /> : t.label}</span>
               </li>
             ))}
           </ul>

@@ -22,7 +22,7 @@ export type LivePhoto = { src: string; w: number; h: number; alt: string };
 export type LiveShop = {
   id: string;
   name: string;
-  /** 種類のスラッグ(hotel・ryokan・pension・glamping・guesthouse) */
+  /** 種類のスラッグ(hotel・ryokan・pension・glamping・rental) */
   kind: string;
   kindName: string;
   /** 都道府県のスラッグ・名前・市区町村・「長野県諏訪市」形式の所在地 */
@@ -69,8 +69,17 @@ export type LiveArticle = {
   photo: LivePhoto;
 };
 
-/** 見本の宿の種類の並び(ホテル・旅館・民宿・ペンション・グランピング・キャンプ・ゲストハウス)。最初のページの種類の札・ラウンドロビンの順 */
-export const KIND_ORDER = ["hotel", "ryokan", "pension", "glamping", "guesthouse"] as const;
+/** 宿の種類の並び(ホテル・旅館・民宿・ペンション・ゲストハウス・グランピング・キャンプ・一棟貸し・貸別荘 の 5 枠。オーナー決定 2026-10-22)。最初のページの種類の札・ラウンドロビンの順 */
+export const KIND_ORDER = ["hotel", "ryokan", "pension", "glamping", "rental"] as const;
+
+/** 宿の種類のスラッグ → 英字のラベル(2 行に収まる短さ。最初のページの札・探す・記事の一覧のカードの HOTEL / RYOKAN …)。3 か所で同じ物を使う */
+export const KIND_EN: Record<string, string> = {
+  hotel: "HOTEL",
+  ryokan: "RYOKAN",
+  pension: "MINSHUKU・PENSION",
+  glamping: "GLAMPING",
+  rental: "VILLA・COTTAGE",
+};
 
 const KIND_NAME: Record<string, string> = Object.fromEntries(VERTICALS.stay.categories.map((c) => [c.slug, c.name]));
 const PREF_NAME: Record<string, string> = Object.fromEntries(PREFECTURES.map((p) => [p.slug, p.name]));

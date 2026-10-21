@@ -5,7 +5,7 @@ import type { SVGProps } from "react";
  * import { IconSearch, IconHeart, IconMenu, IconArrow, IconArrowLeft, IconChevron, IconChevronLeft, IconChevronDown, IconPlus, IconMinus,
  *          IconCheck, IconPin, IconBed, IconExternal, IconArrowUp, StayTypeIcon, Mark, IconInstagram, IconX, IconYoutube } from "@/components/portal/stayproto/decided/common/Icons";
  * 線のアイコンは stroke=currentColor・線幅 1.4(細い線。見本のアイコンに合わせる)。
- * 宿の種類のアイコンは <StayTypeIcon slug="hotel" />(slug = lib/verticals/stay.ts の categories: hotel / ryokan / pension / glamping / guesthouse。知らない slug は何も出さない)。
+ * 宿の種類のアイコンは <StayTypeIcon slug="hotel" />(slug = lib/verticals/stay.ts の categories: hotel / ryokan / pension / glamping / rental。知らない slug は何も出さない)。
  */
 type P = SVGProps<SVGSVGElement>;
 const line = { fill: "none", stroke: "currentColor", strokeWidth: 1.4, strokeLinecap: "round", strokeLinejoin: "round" } as const;
@@ -126,7 +126,7 @@ export function IconArrowUp(p: P) {
   );
 }
 
-// ---- 宿の種類(ホテル・旅館・民宿・ペンション・グランピング・キャンプ・ゲストハウス) ----
+// ---- 宿の種類(ホテル・旅館・民宿・ペンション・ゲストハウス・グランピング・キャンプ・一棟貸し・貸別荘 の 5 枠) ----
 export function IconHotel(p: P) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...line} {...p}>
@@ -162,13 +162,15 @@ export function IconGlamping(p: P) {
     </svg>
   );
 }
-export function IconGuesthouse(p: P) {
+/** 一棟貸し・貸別荘(1 軒の家と庭の木。敷地の線が横に伸びる = 一棟まるごと) */
+export function IconRental(p: P) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...line} {...p}>
-      <path d="M3.5 11 12 4l8.5 7" />
-      <path d="M5.5 10v10.5h13V10" />
-      <rect x="10.5" y="14" width="3" height="6.5" />
-      <path d="M7.5 12.8h1.8M14.7 12.8h1.8" />
+      <path d="M2.5 20.5h19" />
+      <path d="M3.4 11.8 9.4 6l6 5.8" />
+      <path d="M5 10.4v10.1h8.8V10.4" />
+      <rect x="8" y="14.4" width="2.8" height="6.1" />
+      <path d="M19 20.5v-4.6M19 15.9c-2.1 0-3.2-1.5-3.2-3.3 0-1.7 1.5-3 3.2-4.3 1.7 1.3 3.2 2.6 3.2 4.3 0 1.8-1.1 3.3-3.2 3.3z" />
     </svg>
   );
 }
@@ -183,8 +185,8 @@ export function StayTypeIcon({ slug, ...p }: { slug: string } & P) {
       return <IconPension {...p} />;
     case "glamping":
       return <IconGlamping {...p} />;
-    case "guesthouse":
-      return <IconGuesthouse {...p} />;
+    case "rental":
+      return <IconRental {...p} />;
     default:
       return null;
   }
