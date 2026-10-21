@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Noto_Serif_JP } from "next/font/google";
 import { Reveal, MaskLines, Write } from "@/components/portal/bcproto/green/common/Motion";
 import ShopCard from "@/components/portal/bcproto/green/common/ShopCard";
-import KindMarquee from "@/components/portal/bcproto/green/common/KindMarquee";
 import { IMG, SEARCH_HREF, SPECIAL_HREF, searchHref } from "@/components/portal/bcproto/green/common/site";
 import type { GreenFacets, GreenShop } from "@/lib/portal/vert/bodygreen/types";
 import { TagIcon } from "./icons";
@@ -233,7 +232,6 @@ export default function TopPage({ d }: { d: TopData }) {
       </section>
 
       {/* 施術の種類の名前が流れる帯(装飾。名前は上の種類と同じ) */}
-      <KindMarquee names={d.kinds.map((k) => k.name)} />
 
       {/* ================= 掲載中の店 ================= */}
       <section className="gt-w gt-rec" aria-labelledby="gt-h-rec">
