@@ -425,7 +425,7 @@ export function SearchView({ shops, sp }: { shops: LiveShop[]; sp: SP }) {
         <div className="sq-body" data-side={shops.length > 0 ? "1" : "0"}>
           {shops.length > 0 ? <Sidebar f={f} facets={facets} /> : null}
           <div className="sq-main">
-            <ResultHead f={f} count={list.length} />
+            {shops.length > 0 ? <ResultHead f={f} count={list.length} /> : null}
             {shown.length > 0 ? (
               <div className="sq-rows" data-io-group>
                 {shown.map((s, i) => (

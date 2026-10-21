@@ -69,11 +69,17 @@ function kindOfHeading(h: string): "onsen" | "dining" | "rooms" | "access" | "ot
   const hit = cand.filter(([, i]) => i >= 0).sort((a, b) => a[1] - b[1])[0];
   return hit ? hit[0] : "other";
 }
-function kindOfPhoto(what: string): "onsen" | "dining" | "rooms" | "other" {
+/** 写真の説明(what)の言葉 → 欄。説明の無い写真・どれにも当たらない写真は "other"(ヒーロー・「この宿について」の背景に回す) */
+const PH_ONSEN = /温泉|露天|風呂|浴場|浴室|浴槽|湯船|サウナ/;
+const PH_DINING = /食事|料理|夕食|朝食|ディナー|ランチ|レストラン|バーベキュー|BBQ|ごはん|ご飯|サラダ|膳|串焼き|ビュッフェ/;
+const PH_ROOMS = /客室|部屋|ルーム|ベッド|寝具|布団|寝室|ロフト|ツイン|和室|洋室|座卓|畳敷き|スイート|ドミトリー|テント|ドーム|キャビン|バンガロー|コテージ(の|内)|キャンプサイト|フリーサイト|区画サイト|オートサイト/;
+function kindOfPhoto(whatFull: string): "onsen" | "dining" | "rooms" | "other" {
+  // 説明の最初の 1 文(写っているものの主題)の言葉で見る。2 文め以降の補足(「…客室の建物が点在している」など)には引きずられない
+  const what = whatFull.split("。")[0];
   if (!what) return "other";
-  if (RE_ONSEN.test(what)) return "onsen";
-  if (RE_DINING.test(what)) return "dining";
-  if (/客室|部屋|ルーム|ベッド|和室|洋室|寝室|スイート|コテージ|テント|ドーム|ヴィラ|キャビン|バンガロー|ドミトリー|キャンプサイト|フリーサイト|区画サイト|オートサイト/.test(what)) return "rooms";
+  if (PH_ONSEN.test(what)) return "onsen";
+  if (PH_DINING.test(what)) return "dining";
+  if (PH_ROOMS.test(what)) return "rooms";
   return "other";
 }
 

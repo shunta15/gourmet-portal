@@ -209,7 +209,7 @@
   .sh-rail-list:has(.sh-rail-i:only-child) .sh-rail-i { flex-basis: 100%; }
   .sh-rail-cap { font-size: 13px; margin-top: 8px; }
   .sh-rail-n { font-size: 14px; }
-  .sh-mos { grid-template-rows: auto auto; gap: 3px; grid-template-columns: 1fr 1fr; }
+  .sh-mos { max-width: none; grid-template-rows: auto auto; gap: 3px; grid-template-columns: 1fr 1fr; }
   .sh-mos-i--0 { grid-column: 1 / 3; grid-row: 1; aspect-ratio: 16 / 10; }
   .sh-mos-i--1, .sh-mos-i--2 { grid-row: 2; aspect-ratio: 3 / 2; }
   .sh-mos[data-n="1"] { grid-template-columns: 1fr; }

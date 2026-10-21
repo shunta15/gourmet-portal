@@ -111,10 +111,10 @@
 .sq-name a { color: inherit; }
 .sq-name a::after { content: ""; position: absolute; inset: 0; }
 .sq-name a:focus-visible { outline: 2px solid var(--sy-gold); outline-offset: 3px; }
-.sq-desc { margin-top: calc(11 * var(--u)); font-family: var(--sy-ff-min); font-size: var(--sy-fs-s); line-height: 1.95; letter-spacing: 0.06em; color: #7b776d; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; }
+.sq-desc { margin-top: calc(11 * var(--u)); font-family: var(--sy-ff-min); font-size: var(--sy-fs-s); line-height: 1.95; letter-spacing: 0.06em; color: #6c685e; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; }
 .sq-tags { display: grid; grid-template-columns: repeat(2, minmax(0, auto)); justify-content: start; gap: calc(9 * var(--u)) calc(22 * var(--u)); margin-top: calc(14 * var(--u)); }
 @container (max-width: 270px) { .sq-tags { grid-template-columns: minmax(0, 1fr); } }
-.sq-tags .sy-tag { min-width: 0; white-space: normal; align-items: flex-start; line-height: 1.5; }
+.sq-tags .sy-tag { color: #67635a; min-width: 0; white-space: normal; align-items: flex-start; line-height: 1.5; }
 .sq-tags .sy-tag svg { margin-top: 1px; }
 .sq-more { margin-top: calc(16 * var(--u)); }
 .sq-row:hover .sq-more { color: var(--sy-gold-d); border-color: var(--sy-gold); }
