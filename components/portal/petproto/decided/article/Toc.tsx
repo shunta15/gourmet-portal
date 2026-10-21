@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { Paw } from "../common/Icons";
 
-/** 本文の脇に追従する目次。今読んでいる節に印が滑って移る。クリックでその節へなめらかに移動 */
+/** 本文の脇に追従する目次。今読んでいる節に印(茶の線+肉球)が弾みながら滑って移る。項目は順に寄ってくる。クリックでその節へなめらかに移動 */
 export default function Toc({ items }: { items: Array<{ id: string; no: string; label: string }> }) {
   const nav = useRef<HTMLElement>(null);
   const [active, setActive] = useState(items[0]?.id ?? "");
@@ -57,12 +58,16 @@ export default function Toc({ items }: { items: Array<{ id: string; no: string; 
   };
 
   return (
-    <nav ref={nav} className="ab-toc" aria-label="この記事の目次">
+    <nav ref={nav} className="ab-toc pt-blurin" aria-label="この記事の目次">
       <p className="ab-toc-h pt-en">Contents</p>
       <ol className="ab-toc-list">
-        <i className="ab-toc-ind" aria-hidden="true" />
-        {items.map((it) => (
-          <li key={it.id} data-toc={it.id} className={active === it.id ? "is-on" : ""}>
+        <i className="ab-toc-ind" aria-hidden="true">
+          <span className="ab-toc-paw" key={active}>
+            <Paw />
+          </span>
+        </i>
+        {items.map((it, i) => (
+          <li key={it.id} data-toc={it.id} className={active === it.id ? "is-on" : ""} style={{ ["--i" as string]: i } as CSSProperties}>
             <a href={`#${it.id}`} onClick={(e) => go(e, it.id)} aria-current={active === it.id ? "true" : undefined}>
               {it.no ? <span className="ab-toc-no pt-en">{it.no}</span> : null}
               <span className="ab-toc-t">{it.label}</span>

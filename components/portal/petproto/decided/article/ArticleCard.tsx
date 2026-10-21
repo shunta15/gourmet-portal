@@ -16,12 +16,15 @@ export function Lines({ lines }: { lines: string[] }) {
   );
 }
 
-/** 新着などの記事カード(写真+タグ+見出し+説明+日付+矢印の丸)。外側の li は .io(せり上がる)、中のリンクが持ち上がる */
-export default function ArticleCard({ c, eager = false }: { c: Card; eager?: boolean }) {
+/**
+ * 新着などの記事カード(写真+タグ+見出し+説明+日付+矢印の丸)。外側の li は .io(dir で左・右から寄ってくる。無指定はせり上がる)、
+ * 中のリンクが持ち上がり、マウスに合わせて 3D に傾く(ティルト)。
+ */
+export default function ArticleCard({ c, eager = false, dir }: { c: Card; eager?: boolean; dir?: "left" | "right" }) {
   return (
-    <li className="io">
-      <Link href={c.href} className="ar-lt-card pt-hov">
-        <span className="ar-lt-img pt-zoom pt-shine">
+    <li className="io" data-io={dir}>
+      <Link href={c.href} className="ar-lt-card ar-lift pt-hov pt-tilt" data-tilt="6">
+        <span className="ar-lt-img pt-zoom pt-shine ar-sheen">
           <Img src={c.img} w={c.w} h={c.h} alt="" eager={eager} />
         </span>
         <span className="ar-lt-body">

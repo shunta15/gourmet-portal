@@ -32,8 +32,8 @@
 .ar-pick .ar-rowhead { margin-right: calc(-11 * var(--u)); }
 .ar-grid5 { display: grid; grid-template-columns: calc(154 * var(--u)) calc(154 * var(--u)) calc(156 * var(--u)) calc(155.5 * var(--u)) calc(158 * var(--u)); justify-content: space-between; margin: calc(12 * var(--u)) 0 0; padding: 0; list-style: none; }
 .ar-pick--scene .ar-grid5 { margin-top: calc(15 * var(--u)); }
-.ar-cc { display: block; background: #fff; border-radius: calc(5 * var(--u)); box-shadow: 0 calc(1 * var(--u)) calc(7 * var(--u)) rgba(80, 60, 40, 0.07); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
-.ar-cc:hover { transform: translateY(calc(-5 * var(--u))); box-shadow: var(--pt-sh2); }
+.ar-cc { display: block; background: #fff; border-radius: calc(5 * var(--u)); box-shadow: 0 calc(1 * var(--u)) calc(7 * var(--u)) rgba(80, 60, 40, 0.07); }
+.ar-cc:hover { box-shadow: var(--pt-sh2); }
 .ar-cc-img { display: block; height: calc(81 * var(--u)); border-radius: calc(5 * var(--u)) calc(5 * var(--u)) 0 0; overflow: hidden; }
 .ar-pick--scene .ar-cc-img { height: calc(87 * var(--u)); }
 .ar-cc-img img { width: 100%; height: 100%; object-fit: cover; }
@@ -50,8 +50,8 @@
 .ar-feat .ar-h2--lg { line-height: calc(22 * var(--u)); }
 .ar-feat-grid { display: grid; grid-template-columns: calc(479.5 * var(--u)) minmax(0, 1fr); gap: calc(21 * var(--u)); margin-top: calc(14.5 * var(--u)); align-items: start; }
 .ar-fb-wrap { margin-top: calc(2 * var(--u)); }
-.ar-fb { position: relative; display: block; height: calc(237.5 * var(--u)); border-radius: calc(5 * var(--u)); overflow: hidden; background: #f5f4f0; box-shadow: 0 calc(1 * var(--u)) calc(8 * var(--u)) rgba(80, 60, 40, 0.07); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s; }
-.ar-fb:hover { transform: translateY(calc(-5 * var(--u))); box-shadow: var(--pt-sh2); }
+.ar-fb { position: relative; display: block; height: calc(237.5 * var(--u)); border-radius: calc(5 * var(--u)); overflow: hidden; background: #f5f4f0; box-shadow: 0 calc(1 * var(--u)) calc(8 * var(--u)) rgba(80, 60, 40, 0.07); }
+.ar-fb:hover { box-shadow: var(--pt-sh2); }
 .ar-fb-photo { position: absolute; inset: 0; display: block; overflow: hidden; }
 .ar-fb-photo img { width: 100%; height: 100%; object-fit: cover; object-position: right center; }
 .ar-fb-txt { position: absolute; inset: 0; display: block; pointer-events: none; }
@@ -63,8 +63,8 @@
 .ar-fb:hover .ar-fb-arrow { opacity: 1; scale: 1; }
 .ar-fs-col { display: grid; grid-template-rows: calc(113.5 * var(--u)) calc(115.5 * var(--u)); gap: calc(11 * var(--u)); margin: 0; padding: 0; list-style: none; }
 .ar-fs-col > li { height: 100%; }
-.ar-fs { position: relative; display: block; height: 100%; border-radius: calc(5 * var(--u)); background: #f5f3ef; transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s, background 0.3s; }
-.ar-fs:hover { transform: translateY(calc(-4 * var(--u))); box-shadow: var(--pt-sh2); background: #f8f6f2; }
+.ar-fs { position: relative; display: block; height: 100%; border-radius: calc(5 * var(--u)); background: #f5f3ef; }
+.ar-fs:hover { box-shadow: var(--pt-sh2); background: #f8f6f2; }
 .ar-fs-img { position: absolute; left: calc(0.5 * var(--u)); top: calc(4 * var(--u)); bottom: calc(3 * var(--u)); width: calc(147 * var(--u)); display: block; border-radius: calc(5 * var(--u)); overflow: hidden; }
 .ar-fs-img img { width: 100%; height: 100%; object-fit: cover; }
 .ar-fs-body { position: absolute; left: calc(164 * var(--u)); top: 0; right: calc(30 * var(--u)); bottom: 0; display: block; }
@@ -78,14 +78,25 @@
 .ar-lt { padding: calc(31 * var(--u)) calc(41.5 * var(--u)) 0 calc(43 * var(--u)); }
 .ar-tabs-row { display: flex; align-items: center; justify-content: space-between; height: calc(39 * var(--u)); border-bottom: 1px solid #ece9e4; margin-right: calc(-0.5 * var(--u)); }
 .ar-tabs { position: relative; display: flex; height: 100%; }
-.ar-tab { position: relative; z-index: 1; flex: none; height: 100%; padding: 0; border: 0; background: transparent; font-family: var(--pt-ff-min); font-size: calc(11.2 * var(--u)); font-weight: 500; letter-spacing: 0.1em; color: #8a847c; cursor: pointer; transition: color 0.3s; }
-.ar-tab:hover { color: var(--pt-brown); }
-.ar-tab.is-on { color: #1d1a17; font-weight: 700; font-size: calc(12.1 * var(--u)); }
+.ar-tab { position: relative; z-index: 1; flex: none; height: 100%; padding: 0; border: 0; background: transparent; font-family: var(--pt-ff-min); letter-spacing: 0.1em; cursor: pointer; }
+/* 文字は「選ばれていない見た目(a)」と「選ばれた見た目(b)」の 2 枚を重ね、切り替えると 1 文字ずつ縦に回って入れ替わる(フリップ)。幅を取るのは表に出ている 1 枚だけ */
+.ar-tab-t { position: relative; display: block; }
+.ar-tab-a, .ar-tab-b { display: block; white-space: nowrap; }
+.ar-tab-a { font-size: calc(11.2 * var(--u)); font-weight: 500; color: #8a847c; transition: color 0.3s; }
+.ar-tab-b { font-size: calc(12.1 * var(--u)); font-weight: 700; color: #1d1a17; }
+.ar-tab:hover .ar-tab-a { color: var(--pt-brown); }
+.ar-tab:not(.is-on) .ar-tab-b, .ar-tab.is-on .ar-tab-a { position: absolute; left: 50%; top: 50%; translate: -50% -50%; }
+.ar-ch { display: inline-block; transform-origin: 50% 55%; transition: transform 0.55s cubic-bezier(0.3, 0.8, 0.2, 1) calc(var(--i, 0) * 40ms), opacity 0.28s ease calc(var(--i, 0) * 40ms); }
+.ar-tab-a .ar-ch { transform: perspective(420px) rotateX(0deg); transition-delay: calc(var(--i, 0) * 40ms + 170ms); }
+.ar-tab-b .ar-ch { transform: perspective(420px) rotateX(-92deg); opacity: 0; transition-delay: calc(var(--i, 0) * 40ms); }
+.ar-tab.is-on .ar-tab-a .ar-ch { transform: perspective(420px) rotateX(92deg); opacity: 0; transition-delay: calc(var(--i, 0) * 40ms); }
+.ar-tab.is-on .ar-tab-b .ar-ch { transform: perspective(420px) rotateX(0deg); opacity: 1; transition-delay: calc(var(--i, 0) * 40ms + 170ms); }
+.ar-tab:not(.is-on):hover .ar-tab-a .ar-ch { animation: ar-wave 0.6s cubic-bezier(0.3, 0.8, 0.2, 1) calc(var(--i, 0) * 38ms) both; }
+@keyframes ar-wave { 0% { transform: perspective(420px) rotateX(0deg); } 45% { transform: perspective(420px) rotateX(-84deg); } 100% { transform: perspective(420px) rotateX(0deg); } }
 .ar-tabs-ind { position: absolute; left: 0; bottom: calc(-1 * var(--u)); width: var(--iw, calc(108.5 * var(--u))); height: max(2px, calc(2 * var(--u))); translate: var(--ix, 0px) 0; background: #1d1a17; transition: translate 0.45s cubic-bezier(0.3, 0.8, 0.2, 1), width 0.45s cubic-bezier(0.3, 0.8, 0.2, 1); pointer-events: none; }
 .ar-lt .pt-more { margin-right: calc(6 * var(--u)); }
 .ar-lt-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(20.5 * var(--u)); margin: calc(19 * var(--u)) 0 0; padding: 0; list-style: none; align-items: start; }
-.ar-lt-card { position: relative; display: block; transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1); }
-.ar-lt-card:hover { transform: translateY(calc(-5 * var(--u))); }
+.ar-lt-card { position: relative; display: block; }
 .ar-lt-img { display: block; height: calc(105 * var(--u)); border-radius: calc(5 * var(--u)); overflow: hidden; transition: box-shadow 0.35s; }
 .ar-lt-card:hover .ar-lt-img { box-shadow: var(--pt-sh2); }
 .ar-lt-img img { width: 100%; height: 100%; object-fit: cover; }
@@ -99,14 +110,13 @@
 
 /* ---------- 専門家コラム ---------- */
 .ar-ex { margin-top: calc(12.5 * var(--u)); }
-.ar-ex-in { position: relative; width: calc(877 * var(--u)); max-width: 100%; height: calc(132.5 * var(--u)); margin: 0 auto; border-radius: calc(8 * var(--u)); background: var(--pt-cream); }
+.ar-ex-in { position: relative; width: calc(877 * var(--u)); max-width: 100%; height: calc(132.5 * var(--u)); margin: 0 auto; border-radius: calc(8 * var(--u)); }
 .ar-ex-head { position: absolute; left: calc(29 * var(--u)); top: calc(30 * var(--u)); }
 .ar-ex-h { margin: 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: calc(20.2 * var(--u)); line-height: calc(25 * var(--u)); letter-spacing: 0.1em; color: #26221e; }
 .ar-ex-p { margin: calc(17 * var(--u)) 0 0; font-weight: 700; font-size: calc(8.6 * var(--u)); line-height: calc(17 * var(--u)); letter-spacing: 0.115em; color: #6f6962; white-space: nowrap; }
 .ar-ex-more { position: absolute; right: calc(14 * var(--u)); top: calc(10.5 * var(--u)); }
 .ar-ex-list { position: absolute; left: calc(262.5 * var(--u)); top: calc(32 * var(--u)); right: calc(14 * var(--u)); display: grid; grid-template-columns: calc(202 * var(--u)) calc(216.5 * var(--u)) minmax(0, 1fr); margin: 0; padding: 0; list-style: none; }
-.ar-exc { display: flex; gap: calc(11 * var(--u)); height: calc(80.5 * var(--u)); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1); }
-.ar-exc:hover { transform: translateY(calc(-4 * var(--u))); }
+.ar-exc { display: flex; gap: calc(11 * var(--u)); height: calc(80.5 * var(--u)); }
 .ar-exc-img { flex: none; width: calc(76 * var(--u)); height: 100%; display: block; border-radius: calc(4 * var(--u)); overflow: hidden; transition: box-shadow 0.35s; }
 .ar-exc:hover .ar-exc-img { box-shadow: var(--pt-sh2); }
 .ar-exc-img img { width: 100%; height: 100%; object-fit: cover; }
@@ -117,11 +127,10 @@
 
 /* ---------- こんな記事もおすすめ ---------- */
 .ar-rc { margin-top: calc(16.5 * var(--u)); padding-bottom: calc(22 * var(--u)); }
-.ar-rc-in { position: relative; width: calc(877 * var(--u)); max-width: 100%; height: calc(154 * var(--u)); margin: 0 auto; border-radius: calc(8 * var(--u)); background: var(--pt-cream); }
+.ar-rc-in { position: relative; width: calc(877 * var(--u)); max-width: 100%; height: calc(154 * var(--u)); margin: 0 auto; border-radius: calc(8 * var(--u)); }
 .ar-rc-in .ar-rowhead { position: absolute; left: calc(21.5 * var(--u)); right: calc(18 * var(--u)); top: calc(15 * var(--u)); }
 .ar-rc-grid { position: absolute; left: calc(20.5 * var(--u)); top: calc(46.5 * var(--u)); width: calc(836.5 * var(--u)); display: grid; grid-template-columns: calc(158.5 * var(--u)) calc(154.5 * var(--u)) calc(153.5 * var(--u)) calc(154.5 * var(--u)) calc(158.5 * var(--u)); justify-content: space-between; margin: 0; padding: 0; list-style: none; }
-.ar-rcc { display: block; transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1); }
-.ar-rcc:hover { transform: translateY(calc(-4 * var(--u))); }
+.ar-rcc { display: block; }
 .ar-rcc-img { display: block; height: calc(54 * var(--u)); border-radius: calc(4 * var(--u)); overflow: hidden; transition: box-shadow 0.35s; }
 .ar-rcc:hover .ar-rcc-img { box-shadow: var(--pt-sh2); }
 .ar-rcc-img img { width: 100%; height: 100%; object-fit: cover; }
@@ -159,7 +168,7 @@
 .ab-side { position: sticky; top: calc(var(--pt-hy, 56px) + 18 * var(--u)); transition: top 0.38s cubic-bezier(0.3, 0.7, 0.2, 1); }
 
 /* この記事のポイント */
-.ab-points { position: relative; padding: calc(18 * var(--u)) calc(22 * var(--u)) calc(14 * var(--u)); border-radius: calc(7 * var(--u)); background: var(--pt-cream); }
+.ab-points { position: relative; padding: calc(18 * var(--u)) calc(22 * var(--u)) calc(14 * var(--u)); border-radius: calc(7 * var(--u)); }
 .ab-points-en { margin: 0; font-family: var(--pt-ff-en); font-size: calc(7.6 * var(--u)); letter-spacing: 0.16em; color: var(--pt-brown); }
 .ab-points-h { margin: calc(2 * var(--u)) 0 calc(8 * var(--u)); font-family: var(--pt-ff-min); font-weight: 700; font-size: calc(13 * var(--u)); letter-spacing: 0.08em; color: #26221e; }
 .ab-points-list { margin: 0; padding: 0; list-style: none; }
@@ -192,14 +201,14 @@
 .ab-toc { padding: calc(16 * var(--u)) calc(14 * var(--u)) calc(12 * var(--u)); border: 1px solid var(--pt-line); border-radius: calc(7 * var(--u)); background: #fff; box-shadow: var(--pt-sh); }
 .ab-toc-h { margin: 0 0 calc(8 * var(--u)); font-family: var(--pt-ff-en); font-size: calc(8 * var(--u)); letter-spacing: 0.16em; color: #8a847c; }
 .ab-toc-list { position: relative; margin: 0; padding: 0; list-style: none; }
-.ab-toc-ind { position: absolute; left: 0; top: 0; width: max(2px, calc(2 * var(--u))); height: var(--th, 0px); translate: 0 var(--ty, 0px); border-radius: 2px; background: var(--pt-brown); transition: translate 0.4s cubic-bezier(0.3, 0.8, 0.2, 1), height 0.4s cubic-bezier(0.3, 0.8, 0.2, 1); }
+.ab-toc-ind { position: absolute; left: 0; top: 0; width: max(2px, calc(2 * var(--u))); height: var(--th, 0px); translate: 0 var(--ty, 0px); border-radius: 2px; background: var(--pt-brown); transition: translate 0.6s cubic-bezier(0.34, 1.45, 0.64, 1), height 0.45s cubic-bezier(0.3, 0.8, 0.2, 1); }
 .ab-toc-list li a { display: flex; gap: calc(6 * var(--u)); padding: calc(6 * var(--u)) 0 calc(6 * var(--u)) calc(10 * var(--u)); font-size: calc(7.8 * var(--u)); line-height: 1.55; letter-spacing: 0.04em; color: #8a847c; transition: color 0.25s, padding 0.3s; }
 .ab-toc-list li a:hover { color: var(--pt-brown); }
 .ab-toc-list li.is-on a { padding-left: calc(14 * var(--u)); color: #26221e; font-weight: 700; }
 .ab-toc-no { flex: none; font-family: var(--pt-ff-en); font-size: calc(8 * var(--u)); color: var(--pt-brown); }
 
 /* まとめ */
-.ab-sum { margin-top: calc(48 * var(--u)); padding: calc(22 * var(--u)) calc(24 * var(--u)); border-radius: calc(7 * var(--u)); background: var(--pt-cream); }
+.ab-sum { margin-top: calc(48 * var(--u)); padding: calc(22 * var(--u)) calc(24 * var(--u)); border-radius: calc(7 * var(--u)); }
 .ab-sum-h { margin: 0 0 calc(8 * var(--u)); font-family: var(--pt-ff-min); font-weight: 700; font-size: calc(13.5 * var(--u)); letter-spacing: 0.08em; color: #26221e; }
 .ab-cta { display: flex; flex-wrap: wrap; gap: calc(10 * var(--u)); margin-top: calc(16 * var(--u)); }
 
@@ -290,8 +299,9 @@
   .pt-root .ar-tabs-row { flex-wrap: wrap; height: auto; margin: 0; padding: 0; border-bottom: 0; gap: 4px 12px; }
   .pt-root .ar-tabs { flex: 1 1 100%; height: 46px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid #ece9e4; }
   .pt-root .ar-tabs::-webkit-scrollbar { display: none; }
-  .pt-root .ar-tab { width: auto !important; padding: 0 16px; font-size: 14px; white-space: nowrap; }
-  .pt-root .ar-tab.is-on { font-size: 14.5px; }
+  .pt-root .ar-tab { width: auto !important; padding: 0 16px; white-space: nowrap; }
+  .pt-root .ar-tab-a { font-size: 14px; }
+  .pt-root .ar-tab-b { font-size: 14.5px; }
   .pt-root .ar-tabs-ind { height: 2px; bottom: 0; }
   .pt-root .ar-lt .pt-more { margin: 4px 0 0 auto; }
   .pt-root .ar-lt-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 16px; }
@@ -390,10 +400,88 @@
   .pt-root .ab-back-link { align-self: flex-start; font-size: 13px; padding-bottom: 3px; }
 }
 
+/* 共通 base.css のスマホ用 .pt-popin / .pt-blurin の translate: 0 8px は「動きを減らす設定」「JS なし」でも残る(戻す .is-in の規則は動きありのときだけ)ので、この試作の中だけ戻す */
+@media (max-width: 859px) and (prefers-reduced-motion: reduce) {
+  .pt-root .pt-popin, .pt-root .pt-blurin, .pt-root .io[data-io="pop"], .pt-root .io[data-io="blur"] { translate: none; }
+}
+@media (max-width: 859px) and (scripting: none) {
+  .pt-root .pt-popin, .pt-root .pt-blurin, .pt-root .io[data-io="pop"], .pt-root .io[data-io="blur"] { translate: none; }
+}
 /* 共通 base.css のスマホ用 .io[data-io="left|right"] が .is-in・動きを減らす設定でも translate を戻さないので、この試作の中だけ戻す */
 @media (max-width: 859px) {
   .pt-root .io.is-in[data-io] { translate: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .pt-root .io[data-io] { translate: none; scale: none; }
+}
+
+
+/* =====================================================================
+   動き(2026-10-21 追加)。レイアウト(位置・大きさ・文字)は変えず、動きだけを足す。共通の部品は common/base.css(.pt-popin .pt-wipe .pt-tilt .pt-skew .pt-bgshift .pt-fillh .pt-paws ほか)
+   隠す状態は「JS が動く・動きを減らす設定でない」ときだけ。それ以外は最初から最終の状態。
+   ===================================================================== */
+
+/* ---------- 持ち上がり+ティルト(.pt-tilt と同じ要素に付ける。影・背景の hover は各カードの :hover で) ---------- */
+.pt-root .ar-lift { --lift: -5; transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s, background-color 0.3s; }
+.pt-root .ar-fs.ar-lift, .pt-root .ar-exc.ar-lift, .pt-root .ar-rcc.ar-lift { --lift: -4; }
+.pt-root .ar-lift:hover { transform: translateY(calc(var(--lift) * var(--u))); transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s, background-color 0.3s; }
+.pt-root .ar-lift.is-tilting { transform: perspective(900px) translateY(calc(var(--lift) * var(--u))) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s, background-color 0.3s; }
+
+/* ---------- 写真に触ると光がひと筋走る(ホバーのシャイン) ---------- */
+:where(.ar-sheen) { position: relative; }
+.ar-sheen::before { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0; translate: -120% 0; background: linear-gradient(105deg, transparent 32%, rgba(255, 255, 255, 0.5) 47%, rgba(255, 255, 255, 0.14) 55%, transparent 68%); }
+.pt-hov:hover .ar-sheen::before, .ar-sheen:hover::before { animation: ar-sheen 0.95s cubic-bezier(0.3, 0.6, 0.3, 1); }
+@keyframes ar-sheen { 0% { translate: -120% 0; opacity: 0; } 12% { opacity: 1; } 100% { translate: 120% 0; opacity: 0; } }
+
+/* ---------- ヒーローの写真(視差の層。上下に少しはみ出させる) ---------- */
+.ar-hero-par { position: absolute; left: 0; right: 0; top: -3%; bottom: -3%; display: block; }
+
+/* ---------- 節の間を歩く足あと(PawRun。大きさ・間隔・濃さは変数。節の余白のなかに置く) ---------- */
+.pt-root .ar-paws { position: absolute; z-index: 0; --paw: calc(11 * var(--u)); --paw-gap: calc(46 * var(--u)); --paw-o: 0.55; }
+.pt-root .ar-paws--scene { top: calc(3 * var(--u)); left: calc(150 * var(--u)); }
+.pt-root .ar-paws--feat { top: calc(11 * var(--u)); right: calc(120 * var(--u)); --paw: calc(12 * var(--u)); --paw-gap: calc(38 * var(--u)); }
+.pt-root .ar-paws--lt { top: calc(4 * var(--u)); left: calc(110 * var(--u)); --paw: calc(10 * var(--u)); --paw-gap: calc(40 * var(--u)); }
+.ab-ch { position: relative; }
+.pt-root .ar-paws--ab-r { top: calc(100% + 11 * var(--u)); left: calc(46 * var(--u)); --paw-gap: calc(36 * var(--u)); }
+.pt-root .ar-paws--ab-l { top: calc(100% + 11 * var(--u)); right: calc(46 * var(--u)); --paw-gap: calc(36 * var(--u)); }
+
+/* ---------- 節の背景(cream)がじわっと変わる(.pt-bgshift。--bg-to が見本の色=最終の色) ---------- */
+.ar-ex-in, .ar-rc-in, .ab-points, .ab-sum { --bg-to: var(--pt-cream); --bg-from: #ebe3d6; }
+
+/* ---------- 本文: 数字・図版・文章・目次・タイプライター ---------- */
+.ab-num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+.ab-fig-sc { display: block; width: 100%; height: 100%; --ss: 0.1; }
+.ab-tw-rest { opacity: 0; }
+.ab-p.is-typing .ab-tw-done::after { content: ""; display: inline-block; width: 2px; height: 1.05em; margin: 0 -2px 0 0; vertical-align: -0.16em; background: var(--pt-brown); animation: ar-caret 0.7s steps(1) infinite; }
+@keyframes ar-caret { 50% { opacity: 0; } }
+.ab-toc-paw { position: absolute; right: calc(100% + 3 * var(--u)); top: 50%; width: calc(8.5 * var(--u)); translate: 0 -50%; color: var(--pt-brown); animation: ab-pawhop 0.7s cubic-bezier(0.3, 1.8, 0.5, 1) both; }
+.ab-toc-paw svg { display: block; width: 100%; height: auto; rotate: 90deg; }
+@keyframes ab-pawhop { 0% { scale: 0.2; opacity: 0; } 55% { scale: 1.3; opacity: 1; } 100% { scale: 1; opacity: 1; } }
+
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* カテゴリ・シーンの札: 札がポップインしたあと、アイコンがぴょこっと弾んで現れる */
+  .pt-root .ar-cc-ic { scale: 0.2; rotate: -35deg; transition: color 0.25s, scale 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--d, 0ms) + 420ms), rotate 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--d, 0ms) + 420ms); }
+  .pt-root .pt-popin.is-in .ar-cc-ic { scale: none; rotate: none; }
+  /* 章の見出しの下の茶の線が伸びる */
+  .pt-root .ab-ch-head.io::after { scale: 0 1; transform-origin: 0 50%; transition: scale 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s; }
+  .pt-root .ab-ch-head.io.is-in::after { scale: 1 1; }
+  /* 図版: ワイプのクリップは拭く入れ物の直接の子(.ab-fig-sc)に掛かる。スクロールの拡大(scale)は遅れずに追う */
+  .pt-root .pt-wipe > .ab-fig-sc { transition: clip-path 1.2s cubic-bezier(0.7, 0, 0.2, 1) var(--d, 0ms), scale 0.25s linear; }
+  /* スポットの札: 左右から寄ってくる(.io の transition を入れ替えず、ホバーの持ち上がりも残す) */
+  .pt-root .ab-spots li.io { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s, border-color 0.3s; }
+  /* 目次: 箱がピントを結び、項目が順に右から寄る */
+  .pt-root .ab-toc:not(.is-in) .ab-toc-list li { opacity: 0; translate: calc(14 * var(--u)) 0; }
+  .pt-root .ab-toc-list li { transition: opacity 0.6s ease calc(var(--i, 0) * 70ms + 300ms), translate 0.7s cubic-bezier(0.2, 0.75, 0.2, 1) calc(var(--i, 0) * 70ms + 300ms); }
+}
+
+@media (max-width: 859px) {
+  .pt-root .ar-lift:hover { transform: none; }
+  .pt-root .ar-paws { --paw: 10px; --paw-gap: 22px; }
+  .pt-root .ar-paws--scene { top: 3px; left: 16px; }
+  .pt-root .ar-paws--feat { top: 6px; right: 16px; --paw-gap: 17px; }
+  .pt-root .ar-paws--lt { top: 7px; left: 16px; --paw-gap: 17px; }
+  .pt-root .ar-paws--ab-r { top: calc(100% + 8px); left: 4px; --paw-gap: 26px; }
+  .pt-root .ar-paws--ab-l { top: calc(100% + 8px); right: 4px; --paw-gap: 26px; }
+  .pt-root .ab-fig { translate: none !important; } /* 視差はスマホでは図版と文章が重なるので止める */
+  .pt-root .ab-toc-paw { width: 12px; right: calc(100% + 4px); }
 }
