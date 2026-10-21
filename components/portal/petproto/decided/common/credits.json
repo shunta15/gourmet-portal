@@ -1,0 +1,1801 @@
+[
+  {
+    "page": "common",
+    "file": "/_portal/petproto/decided/common/footer-about.webp",
+    "slot": "footer-about",
+    "commonsTitle": "File:A puppy in a man's arms.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:A_puppy_in_a_man%27s_arms.jpg",
+    "author": "Aerous",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/A_puppy_in_a_man%27s_arms.jpg",
+    "srcW": 4032,
+    "srcH": 3024,
+    "outW": 381,
+    "outH": 237,
+    "note": "男性の腕に抱かれた子犬(顔は写らない)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 246,
+      "width": 3840,
+      "height": 2388,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "common",
+    "file": "/_portal/petproto/decided/common/footer-banner.webp",
+    "slot": "footer-banner",
+    "commonsTitle": "File:Friends (42295336811).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Friends_(42295336811).jpg",
+    "author": "Mike McBey",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Friends_%2842295336811%29.jpg",
+    "srcW": 4049,
+    "srcH": 2465,
+    "outW": 732,
+    "outH": 237,
+    "note": "毛布の上で寄り添うチワワと猫(帯の右側。下端の毛布の文字は切り抜きの外)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 360,
+      "width": 3840,
+      "height": 1243,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    "tier": "free",
+    "credit": "Friends"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-1.webp",
+    "slot": "area-1",
+    "commonsTitle": "File:Tokyo Tower and Roppongi Hills Mori Tower seen from Hamamatsucho.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
+    "srcW": 3072,
+    "srcH": 4080,
+    "outW": 129,
+    "outH": 129,
+    "note": "東京タワー(東京)",
+    "crop": {
+      "fetchedW": 3072,
+      "left": 0,
+      "top": 0,
+      "width": 3072,
+      "height": 3072,
+      "focus": [
+        0.5,
+        0.3
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-2.webp",
+    "slot": "area-2",
+    "commonsTitle": "File:Minato Mirai In Blue.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Minato_Mirai_In_Blue.jpg",
+    "author": "akumach from Kawasaki City, Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Minato_Mirai_In_Blue.jpg",
+    "srcW": 3872,
+    "srcH": 2592,
+    "outW": 129,
+    "outH": 129,
+    "note": "横浜みなとみらいの夜景(神奈川)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 443,
+      "top": 0,
+      "width": 2571,
+      "height": 2571,
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Flickr"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-3.webp",
+    "slot": "area-3",
+    "commonsTitle": "File:Ioka Beach, Chiba 04.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Ioka_Beach,_Chiba_04.jpg",
+    "author": "Σ64",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Ioka_Beach%2C_Chiba_04.jpg",
+    "srcW": 5865,
+    "srcH": 3910,
+    "outW": 129,
+    "outH": 129,
+    "note": "千葉の海岸(飯岡)の波打ち際(千葉)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 1024,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-4.webp",
+    "slot": "area-4",
+    "commonsTitle": "File:Nagatoro Iwadatami Rocks (11043462444).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Nagatoro_Iwadatami_Rocks_(11043462444).jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Nagatoro_Iwadatami_Rocks_%2811043462444%29.jpg",
+    "srcW": 3648,
+    "srcH": 2736,
+    "outW": 129,
+    "outH": 129,
+    "note": "長瀞の岩畳と荒川の川下り(埼玉)",
+    "crop": {
+      "fetchedW": 3648,
+      "left": 456,
+      "top": 0,
+      "width": 2736,
+      "height": 2736,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Nagatoro Iwadatami Rocks"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-5.webp",
+    "slot": "area-5",
+    "commonsTitle": "File:20190121 Osaka Castle-2.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:20190121_Osaka_Castle-2.jpg",
+    "author": "Balon Greyjoy",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/20190121_Osaka_Castle-2.jpg",
+    "srcW": 5760,
+    "srcH": 3840,
+    "outW": 129,
+    "outH": 129,
+    "note": "大阪城天守(関西)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 640,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-6.webp",
+    "slot": "area-6",
+    "commonsTitle": "File:Mount Fuji at sunset, March 2025.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg",
+    "author": "Romain Guy from San Francisco, USA",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg",
+    "srcW": 11650,
+    "srcH": 7767,
+    "outW": 129,
+    "outH": 129,
+    "note": "夕暮れの富士山と湖(その他のエリア)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 640,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "富士山"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/area-bg.webp",
+    "slot": "area-bg",
+    "commonsTitle": "File:Dog inspects snow (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_inspects_snow_(Unsplash).jpg",
+    "author": "Wil Stewart wilstewart3",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Dog_inspects_snow_%28Unsplash%29.jpg",
+    "srcW": 6000,
+    "srcH": 4000,
+    "outW": 1800,
+    "outH": 243,
+    "note": "雪原で鼻先を雪に寄せる茶色の犬(中央)。左右は白い雪原で、左に載る見出し・説明・手書き文字と右のエリアの丸がどちらも読める。横 7.4:1 の帯で犬が中央に収まり、文字側が明るい写真はこれだけだった(車の窓の犬・丘の 3 頭・公園のキャバリアは文字側が暗く不採用)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1354,
+      "width": 3840,
+      "height": 518,
+      "focus": [
+        0.6,
+        0.63
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/kDf1BWSRCWE archive copy at the Wayback Machine"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-1.webp",
+    "slot": "cat-1",
+    "commonsTitle": "File:Dog resting peacefully closeup.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_resting_peacefully_closeup.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dog_resting_peacefully_closeup.jpg",
+    "srcW": 6048,
+    "srcH": 4032,
+    "outW": 411,
+    "outH": 291,
+    "note": "カフェの椅子の下のラグで休む犬(カフェ・飲食店)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 113,
+      "top": 1,
+      "width": 3615,
+      "height": 2559,
+      "focus": [
+        0.5,
+        0.65
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-2.webp",
+    "slot": "cat-2",
+    "commonsTitle": "File:トリマーさん (8006136951).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_(8006136951).jpg",
+    "author": "Ikusuki",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_%288006136951%29.jpg",
+    "srcW": 1709,
+    "srcH": 1281,
+    "outW": 405,
+    "outH": 291,
+    "note": "トリミングサロンでカット中のプードルとトリマー(後ろ姿)",
+    "crop": {
+      "fetchedW": 1709,
+      "left": 0,
+      "top": 0,
+      "width": 1709,
+      "height": 1227,
+      "focus": [
+        0.55,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Dog's fashion"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-3.webp",
+    "slot": "cat-3",
+    "commonsTitle": "File:2020-09-22 Shiba Inu running.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:2020-09-22_Shiba_Inu_running.jpg",
+    "author": "whity",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/2020-09-22_Shiba_Inu_running.jpg",
+    "srcW": 6240,
+    "srcH": 4160,
+    "outW": 405,
+    "outH": 291,
+    "note": "広場を駆ける柴犬(ドッグラン)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1,
+      "width": 3562,
+      "height": 2559,
+      "focus": [
+        0.42,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/whitefield_d/50385365192/"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-4.webp",
+    "slot": "cat-4",
+    "commonsTitle": "File:Motel-6-dog-on-bed.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Motel-6-dog-on-bed.jpg",
+    "author": "Original photo: Rusty Clark on Flickr Modified by Gazebo on May 16, 2014 with the removal of the IFD1 (thumbnail) EXIF metadata and the addition of comment and XMP-cc:License metadata.",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Motel-6-dog-on-bed.jpg",
+    "srcW": 2048,
+    "srcH": 1536,
+    "outW": 402,
+    "outH": 291,
+    "note": "ホテルのベッドに座る小型犬(ペットホテル・宿泊)",
+    "crop": {
+      "fetchedW": 2048,
+      "left": 0,
+      "top": 54,
+      "width": 2048,
+      "height": 1482,
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    "tier": "free",
+    "credit": "motel 6"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-5.webp",
+    "slot": "cat-5",
+    "commonsTitle": "File:Dog portrait with a veterinarian in blue uniform holding a stethoscope - 51647083727.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_portrait_with_a_veterinarian_in_blue_uniform_holding_a_stethoscope_-_51647083727.jpg",
+    "author": "Nenad Stojkovic",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dog_portrait_with_a_veterinarian_in_blue_uniform_holding_a_stethoscope_-_51647083727.jpg",
+    "srcW": 6016,
+    "srcH": 4016,
+    "outW": 408,
+    "outH": 291,
+    "note": "聴診器を持つ獣医と白い犬(動物病院。人の顔は写らない)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1,
+      "width": 3593,
+      "height": 2562,
+      "focus": [
+        0.4,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/nenadstojkovic/51647083727/"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/cat-6.webp",
+    "slot": "cat-6",
+    "commonsTitle": "File:Dog with shopping cart isolated on white (33235359588).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_with_shopping_cart_isolated_on_white_(33235359588).jpg",
+    "author": "Jernej Furman from Slovenia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dog_with_shopping_cart_isolated_on_white_%2833235359588%29.jpg",
+    "srcW": 4022,
+    "srcH": 3303,
+    "outW": 405,
+    "outH": 291,
+    "note": "ショッピングカートに乗った子犬(ペット用品・ショップ)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 198,
+      "width": 3840,
+      "height": 2759,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Dog with shopping cart isolated on white"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/feat-1.webp",
+    "slot": "feat-1",
+    "commonsTitle": "File:Kenzie Dog Perseverance Lake-Tongass-BLL-014 (52502174067).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kenzie_Dog_Perseverance_Lake-Tongass-BLL-014_(52502174067).jpg",
+    "author": "Forest Service Alaska Region, USDA",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA-FS",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Kenzie_Dog_Perseverance_Lake-Tongass-BLL-014_%2852502174067%29.jpg",
+    "srcW": 4869,
+    "srcH": 3247,
+    "outW": 636,
+    "outH": 297,
+    "note": "山に囲まれた湖を眺める犬(おでかけ・ドッグスポット)(licenseUrl は extmetadata に無く、ページ本文の {{PD-USGov-USDA-FS}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 384,
+      "width": 3840,
+      "height": 1793,
+      "focus": [
+        0.3,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Kenzie Dog Perseverance Lake-Tongass-BLL-014"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/feat-2.webp",
+    "slot": "feat-2",
+    "commonsTitle": "File:Cat resting on a couch (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Cat_resting_on_a_couch_(Unsplash).jpg",
+    "author": "Erik-Jan Leusink ejleusink",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Cat_resting_on_a_couch_%28Unsplash%29.jpg",
+    "srcW": 4272,
+    "srcH": 2848,
+    "outW": 624,
+    "outH": 297,
+    "note": "ソファで寝そべるキジトラ猫(猫と過ごせるカフェ)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 367,
+      "width": 3840,
+      "height": 1827,
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/tzzpfLiRPlA Image at the Wayback Machine Gallery at the Wayback Machine"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/feat-3.webp",
+    "slot": "feat-3",
+    "commonsTitle": "File:Dog stroller in Yunlin 2014-12-05.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_stroller_in_Yunlin_2014-12-05.jpg",
+    "author": "褒忠國中 雲端網",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Dog_stroller_in_Yunlin_2014-12-05.jpg",
+    "srcW": 3872,
+    "srcH": 2592,
+    "outW": 630,
+    "outH": 297,
+    "note": "芝生でペットカートに乗ったトイプードル(ペットと泊まれる宿)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 123,
+      "width": 3840,
+      "height": 1810,
+      "focus": [
+        0.45,
+        0.4
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/pcjh/15763083478/"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/feat-4.webp",
+    "slot": "feat-4",
+    "commonsTitle": "File:Maltese dog enjoying the fall leaves, Nov. 2004-2.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Maltese_dog_enjoying_the_fall_leaves,_Nov._2004-2.jpg",
+    "author": "Toby Weisenhaus",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Maltese_dog_enjoying_the_fall_leaves%2C_Nov._2004-2.jpg",
+    "srcW": 2165,
+    "srcH": 1215,
+    "outW": 600,
+    "outH": 297,
+    "note": "落ち葉の中の白い小型犬(紅葉スポット)",
+    "crop": {
+      "fetchedW": 2165,
+      "left": 0,
+      "top": 72,
+      "width": 2165,
+      "height": 1071,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/hero.webp",
+    "slot": "hero",
+    "commonsTitle": "File:Andrew Branch 2016-09-11 (Unsplash O-fFmWLVAE4).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Branch_2016-09-11_(Unsplash_O-fFmWLVAE4).jpg",
+    "author": "Andrew Branch denae_andrew",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Andrew_Branch_2016-09-11_%28Unsplash_O-fFmWLVAE4%29.jpg",
+    "srcW": 5616,
+    "srcH": 3744,
+    "outW": 1800,
+    "outH": 630,
+    "note": "ソファで眠るキャバリア(室内・窓の光)。見本の女性+トイプードルは Commons に許諾の明確な同等写真が無く、犬を主役にした室内写真に置き換え。被写体は右半分、左はソファと床で落ち着いた明るさ",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 352,
+      "width": 3840,
+      "height": 1344,
+      "focus": [
+        0.6,
+        0.4
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/O-fFmWLVAE4 archive copy at the Wayback Machine"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/ind-1.webp",
+    "slot": "ind-1",
+    "commonsTitle": "File:Cat-on-couch.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Cat-on-couch.jpg",
+    "author": "Christoffer G. Thomsen",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Cat-on-couch.jpg",
+    "srcW": 4288,
+    "srcH": 2848,
+    "outW": 297,
+    "outH": 156,
+    "note": "ソファでくつろぐ灰色の猫(Industry)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 267,
+      "width": 3840,
+      "height": 2016,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/ind-2.webp",
+    "slot": "ind-2",
+    "commonsTitle": "File:A cat pauses over a bowl of food, 2011.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:A_cat_pauses_over_a_bowl_of_food,_2011.jpg",
+    "author": "Linda Hosek",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/A_cat_pauses_over_a_bowl_of_food%2C_2011.jpg",
+    "srcW": 4341,
+    "srcH": 2894,
+    "outW": 297,
+    "outH": 156,
+    "note": "ドライフードの入ったボウルと子猫(ペットフード)(licenseUrl は extmetadata に無く、ページ本文の {{PD-USGov-Military}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 272,
+      "width": 3840,
+      "height": 2016,
+      "focus": [
+        0.55,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "This image was released by the United States Department of Defense with the ID 111110-D-0653H-010 (next) . This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Bahasa Indonesia ∙ Bahaso Jambi ∙ Deutsch ∙ Deutsch (Sie-Form) ∙ English ∙ español ∙ euskara ∙ فارسی ∙ français ∙ italiano ∙ 日本語 ∙ 한국어 ∙ македонски ∙ മലയാളം ∙ Plattdüütsch ∙ Nederlands ∙ polski ∙ پښتو ∙ português ∙ русский ∙ slovenščina ∙ svenska ∙ Türkçe ∙ українська ∙ 简体中文 ∙ 繁體中文 ∙ +/− photo essay http://www.defense.gov/photoessays/photoessayss.aspx?id=2549"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/ind-3.webp",
+    "slot": "ind-3",
+    "commonsTitle": "File:Andrew Branch 2016-09-11 (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Branch_2016-09-11_(Unsplash).jpg",
+    "author": "Andrew Branch denae_andrew",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Andrew_Branch_2016-09-11_%28Unsplash%29.jpg",
+    "srcW": 5129,
+    "srcH": 3339,
+    "outW": 297,
+    "outH": 156,
+    "note": "ソファに座る子どもの脚と犬(人の顔は写らない。ペットと暮らす家)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 0,
+      "width": 3840,
+      "height": 2016,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/9X7x_96BlrI archive copy at the Wayback Machine"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/scene-1.webp",
+    "slot": "scene-1",
+    "commonsTitle": "File:Provolt Recreation Site (49066632442).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Provolt_Recreation_Site_(49066632442).jpg",
+    "author": "BLM Oregon & Washington",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-BLM",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Provolt_Recreation_Site_%2849066632442%29.jpg",
+    "srcW": 4392,
+    "srcH": 2928,
+    "outW": 294,
+    "outH": 156,
+    "note": "屋外のピクニックテーブルと白い犬(キャンプ)(licenseUrl は extmetadata に無く、ページ本文の {{PD-USGov-BLM}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 390,
+      "width": 3840,
+      "height": 2037,
+      "focus": [
+        0.6,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Provolt Recreation Site"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/scene-2.webp",
+    "slot": "scene-2",
+    "commonsTitle": "File:Golden Mountain Doodle Laying On Couch.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Golden_Mountain_Doodle_Laying_On_Couch.jpg",
+    "author": "Sir MemeGod",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Golden_Mountain_Doodle_Laying_On_Couch.jpg",
+    "srcW": 4032,
+    "srcH": 3024,
+    "outW": 294,
+    "outH": 156,
+    "note": "ソファでくつろぐ黒い犬(インテリア)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 422,
+      "width": 3840,
+      "height": 2037,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "top",
+    "file": "/_portal/petproto/decided/top/scene-3.webp",
+    "slot": "scene-3",
+    "commonsTitle": "File:Careful You Don't Fall.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Careful_You_Don%27t_Fall.jpg",
+    "author": "Charlie From Bristol",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Careful_You_Don%27t_Fall.jpg",
+    "srcW": 6720,
+    "srcH": 4480,
+    "outW": 294,
+    "outH": 156,
+    "note": "海を望む断崖に座る人と犬(旅行先ガイド)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 518,
+      "width": 3840,
+      "height": 2037,
+      "focus": [
+        0.3,
+        0.6
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/100915417@N07/52059574856/"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-chiba.webp",
+    "slot": "area-chiba",
+    "commonsTitle": "File:北条海岸 - panoramio (1).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%9D%A1%E6%B5%B7%E5%B2%B8_-_panoramio_(1).jpg",
+    "author": "くろふね",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E5%8C%97%E6%9D%A1%E6%B5%B7%E5%B2%B8_-_panoramio_%281%29.jpg",
+    "srcW": 4752,
+    "srcH": 3168,
+    "outW": 216,
+    "outH": 216,
+    "note": "館山・北条海岸の青い海と波(房総)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 640,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://web.archive.org/web/20161024013747/http://www.panoramio.com/photo/67047986"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-kanagawa.webp",
+    "slot": "area-kanagawa",
+    "commonsTitle": "File:20250105 Minato Mirai 21 (Landmark Tower, Queen's Square Yokohama, Cosmo Clock 21) 080219.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:20250105_Minato_Mirai_21_(Landmark_Tower,_Queen%27s_Square_Yokohama,_Cosmo_Clock_21)_080219.jpg",
+    "author": "Matthide127",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/20250105_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Cosmo_Clock_21%29_080219.jpg",
+    "srcW": 4032,
+    "srcH": 2268,
+    "outW": 216,
+    "outH": 216,
+    "note": "横浜みなとみらいの昼景",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 840,
+      "top": 0,
+      "width": 2160,
+      "height": 2160,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-saitama.webp",
+    "slot": "area-saitama",
+    "commonsTitle": "File:Nagatoro Iwadatami Rocks (11043462444).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Nagatoro_Iwadatami_Rocks_(11043462444).jpg",
+    "author": "Guilhem Vellut from Annecy, France",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Nagatoro_Iwadatami_Rocks_%2811043462444%29.jpg",
+    "srcW": 3648,
+    "srcH": 2736,
+    "outW": 216,
+    "outH": 216,
+    "note": "長瀞の岩畳と荒川・紅葉・川下りの舟",
+    "crop": {
+      "fetchedW": 3648,
+      "left": 456,
+      "top": 0,
+      "width": 2736,
+      "height": 2736,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Nagatoro Iwadatami Rocks"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-shizuoka.webp",
+    "slot": "area-shizuoka",
+    "commonsTitle": "File:Mount Fuji 20120909 b.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_20120909_b.jpg",
+    "author": "Batholith",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mount_Fuji_20120909_b.jpg",
+    "srcW": 1830,
+    "srcH": 1220,
+    "outW": 216,
+    "outH": 216,
+    "note": "茶畑越しの富士山(静岡)(extmetadata: License=pd, Copyrighted=False, AttributionRequired=false。テンプレート {{PD-self}}。licenseUrl はテンプレート頁を手で記入)",
+    "crop": {
+      "fetchedW": 1830,
+      "left": 305,
+      "top": 0,
+      "width": 1220,
+      "height": 1220,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-tokyo.webp",
+    "slot": "area-tokyo",
+    "commonsTitle": "File:Tokyo Tower and Roppongi Hills Mori Tower seen from Hamamatsucho.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
+    "srcW": 3072,
+    "srcH": 4080,
+    "outW": 216,
+    "outH": 216,
+    "note": "青空の東京タワー",
+    "crop": {
+      "fetchedW": 3072,
+      "left": 0,
+      "top": 300,
+      "width": 3072,
+      "height": 3072,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/area-yamanashi.webp",
+    "slot": "area-yamanashi",
+    "commonsTitle": "File:Fuji Kawaguchi 475.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_475.JPG",
+    "author": "Marion & Christoph Aistleitner",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Fuji_Kawaguchi_475.JPG",
+    "srcW": 4320,
+    "srcH": 2880,
+    "outW": 216,
+    "outH": 216,
+    "note": "河口湖に映る富士山",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 640,
+      "top": 0,
+      "width": 2560,
+      "height": 2560,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "own photo --- Contact: User:Mediocrity"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/feature.webp",
+    "slot": "feature",
+    "commonsTitle": "File:Portrait of a golden retriever on the grass.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_golden_retriever_on_the_grass.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Portrait_of_a_golden_retriever_on_the_grass.jpg",
+    "srcW": 4912,
+    "srcH": 7360,
+    "outW": 711,
+    "outH": 612,
+    "note": "芝生に伏せるゴールデンレトリバー(顔を下、上は芝生のぼけ。文字は濃色なので上の芝生の明るさで読める)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1052,
+      "width": 3840,
+      "height": 3305,
+      "focus": [
+        0.5,
+        0.47
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/foot-band.webp",
+    "slot": "foot-band",
+    "commonsTitle": "File:Mt.Asama from Mt.Yatsugatake 02.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Mt.Asama_from_Mt.Yatsugatake_02.jpg",
+    "author": "Σ64",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Mt.Asama_from_Mt.Yatsugatake_02.jpg",
+    "srcW": 3825,
+    "srcH": 2550,
+    "outW": 1800,
+    "outH": 144,
+    "note": "八ヶ岳から望む浅間山方面の青い山並みと淡い空(稜線を下寄りに。帯の文字は濃色なので淡い空に載る)。Tanzawa パノラマは町が写り込んで騒がしく、Utsugidake 01 は霞が強すぎたので差し替え",
+    "crop": {
+      "fetchedW": 3825,
+      "left": 0,
+      "top": 689,
+      "width": 3825,
+      "height": 306,
+      "focus": [
+        0.5,
+        0.33
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "search",
+    "file": "/_portal/petproto/decided/search/hero.webp",
+    "slot": "hero",
+    "commonsTitle": "File:Dog waiting by a coffee shop (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_waiting_by_a_coffee_shop_(Unsplash).jpg",
+    "author": "Ross Sokolovski ross_sokolovski",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Dog_waiting_by_a_coffee_shop_%28Unsplash%29.jpg",
+    "srcW": 5402,
+    "srcH": 3601,
+    "outW": 1800,
+    "outH": 425,
+    "note": "コーヒーショップの窓際のベンチで待つ犬(帯の切り抜きで店内の人の顔は外す)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1083,
+      "width": 3840,
+      "height": 906,
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/QHI4_13y9Tk Image at the Wayback Machine Gallery at the Wayback Machine"
+  },
+  {
+    "page": "shop",
+    "file": "/_portal/petproto/decided/shop/rel-1.webp",
+    "slot": "rel-1",
+    "commonsTitle": "File:Dog Park Fun - 15160599977.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_Park_Fun_-_15160599977.jpg",
+    "author": "Bob Haarmans",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Dog_Park_Fun_-_15160599977.jpg",
+    "srcW": 6016,
+    "srcH": 4016,
+    "outW": 522,
+    "outH": 138,
+    "note": "海辺で玩具をくわえるゴールデンレトリバー(鎌倉のドッグフレンドリーなカフェ5選)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 851,
+      "width": 3840,
+      "height": 1015,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/24204960@N03/15160599977/"
+  },
+  {
+    "page": "shop",
+    "file": "/_portal/petproto/decided/shop/rel-2.webp",
+    "slot": "rel-2",
+    "commonsTitle": "File:Lido Cafe in Autumn (8185338179).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Lido_Cafe_in_Autumn_(8185338179).jpg",
+    "author": "Garry Knight from London, England",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Lido_Cafe_in_Autumn_%288185338179%29.jpg",
+    "srcW": 4772,
+    "srcH": 3161,
+    "outW": 510,
+    "outH": 138,
+    "note": "紅葉の木に囲まれた池のほとりのカフェとテラス席(テラスで楽しむ秋のカフェ時間)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 625,
+      "width": 3840,
+      "height": 1039,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Lido Cafe in Autumn"
+  },
+  {
+    "page": "shop",
+    "file": "/_portal/petproto/decided/shop/rel-3.webp",
+    "slot": "rel-3",
+    "commonsTitle": "File:Running Dachshund at the beach.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Running_Dachshund_at_the_beach.jpg",
+    "author": "Dan Bennett",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Running_Dachshund_at_the_beach.jpg",
+    "srcW": 2156,
+    "srcH": 1557,
+    "outW": 519,
+    "outH": 138,
+    "note": "砂浜を走るダックスフント(鎌倉のおでかけスポット10選)",
+    "crop": {
+      "fetchedW": 2156,
+      "left": 0,
+      "top": 726,
+      "width": 2156,
+      "height": 573,
+      "focus": [
+        0.45,
+        0.65
+      ]
+    },
+    "tier": "free",
+    "credit": "Flickr : star wars land speeder"
+  },
+  {
+    "page": "shop",
+    "file": "/_portal/petproto/decided/shop/rel-4.webp",
+    "slot": "rel-4",
+    "commonsTitle": "File:Dog resting peacefully closeup.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_resting_peacefully_closeup.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dog_resting_peacefully_closeup.jpg",
+    "srcW": 6048,
+    "srcH": 4032,
+    "outW": 561,
+    "outH": 138,
+    "note": "カフェのテーブルの下でおとなしく伏せる犬(カフェのマナーと過ごし方)。最初の候補 Cute dog on table.jpg は写真内に epSos.de の文字があり不可",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 1269,
+      "width": 3840,
+      "height": 944,
+      "focus": [
+        0.35,
+        0.68
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/cat-cafe.webp",
+    "slot": "cat-cafe",
+    "commonsTitle": "File:Dog resting peacefully closeup.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_resting_peacefully_closeup.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dog_resting_peacefully_closeup.jpg",
+    "srcW": 6048,
+    "srcH": 4032,
+    "outW": 465,
+    "outH": 237,
+    "note": "カフェのテーブルの下で伏せる犬(人は写らない)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 603,
+      "width": 3840,
+      "height": 1957,
+      "focus": [
+        0.5,
+        0.62
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/cat-grooming.webp",
+    "slot": "cat-grooming",
+    "commonsTitle": "File:トリマーさん (8006136951).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_(8006136951).jpg",
+    "author": "Ikusuki",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_%288006136951%29.jpg",
+    "srcW": 1709,
+    "srcH": 1281,
+    "outW": 462,
+    "outH": 237,
+    "note": "トリミング台の犬をカットするトリマー(後ろ姿)",
+    "crop": {
+      "fetchedW": 1709,
+      "left": 0,
+      "top": 138,
+      "width": 1709,
+      "height": 876,
+      "focus": [
+        0.55,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Dog's fashion"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/cat-hospital.webp",
+    "slot": "cat-hospital",
+    "commonsTitle": "File:Veterinary Office with dog.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Veterinary_Office_with_dog.JPG",
+    "author": "MarkBuckawicki",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Veterinary_Office_with_dog.JPG",
+    "srcW": 2048,
+    "srcH": 1536,
+    "outW": 462,
+    "outH": 237,
+    "note": "動物病院の診察台に座る小型犬",
+    "crop": {
+      "fetchedW": 2048,
+      "left": 0,
+      "top": 320,
+      "width": 2048,
+      "height": 1050,
+      "focus": [
+        0.6,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/cat-hotel.webp",
+    "slot": "cat-hotel",
+    "commonsTitle": "File:Staffy Pup.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Staffy_Pup.jpg",
+    "author": "Pete2711",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Staffy_Pup.jpg",
+    "srcW": 3264,
+    "srcH": 2448,
+    "outW": 456,
+    "outH": 237,
+    "note": "丸いベッドでくつろぐ白い子犬(Commons の extmetadata: License=pd / UsageTerms=Public domain / Credit=Own work。LicenseUrl は無いので PD-self テンプレートの URL を記載)",
+    "crop": {
+      "fetchedW": 3264,
+      "left": 0,
+      "top": 376,
+      "width": 3264,
+      "height": 1696,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/cat-outing.webp",
+    "slot": "cat-outing",
+    "commonsTitle": "File:Showa Memorial Park.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Showa_Memorial_Park.jpg",
+    "author": "ajari from Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Showa_Memorial_Park.jpg",
+    "srcW": 4288,
+    "srcH": 2848,
+    "outW": 471,
+    "outH": 237,
+    "note": "芝生を歩く柴犬(昭和記念公園。人は脚だけ)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 182,
+      "width": 3840,
+      "height": 1932,
+      "focus": [
+        0.3,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Showa kinen park_14"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/feature.webp",
+    "slot": "feature",
+    "commonsTitle": "File:Autumn S Dog C (88335701).jpeg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Autumn_S_Dog_C_(88335701).jpeg",
+    "author": "Alexander Kochkadaev",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Autumn_S_Dog_C_%2888335701%29.jpeg",
+    "srcW": 2048,
+    "srcH": 1365,
+    "outW": 1428,
+    "outH": 702,
+    "note": "秋の公園、落ち葉の中に座るスプリンガースパニエル。犬が右 7 割の位置、左は明るい落ち葉で見出しが載る",
+    "crop": {
+      "fetchedW": 2048,
+      "left": 15,
+      "top": 300,
+      "width": 1500,
+      "height": 737,
+      "focus": [
+        0.7,
+        0.5
+      ],
+      "manual": "道具の最大切り抜きだと犬が中央に来るので、右寄せのため幅 1500 で手で切り抜き(sharp, webp q82)"
+    },
+    "tier": "free",
+    "credit": "Imported from 500px ( archived version ) by the Archive Team . ( detail page )"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/fs-senior.webp",
+    "slot": "fs-senior",
+    "commonsTitle": "File:Beagle Scout.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Beagle_Scout.jpg",
+    "author": "Hollakr",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Beagle_Scout.jpg",
+    "srcW": 2304,
+    "srcH": 1728,
+    "outW": 438,
+    "outH": 318,
+    "note": "ソファの毛布に伏せる白髪のシニアのビーグル(licenseUrl は extmetadata に無く、ページ本文の {{PD-self}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 2304,
+      "left": 0,
+      "top": 28,
+      "width": 2304,
+      "height": 1672,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/fs-trip.webp",
+    "slot": "fs-trip",
+    "commonsTitle": "File:Dog In Car Stock (32932657847).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_In_Car_Stock_(32932657847).jpg",
+    "author": "Reba Spike",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Dog_In_Car_Stock_%2832932657847%29.jpg",
+    "srcW": 2408,
+    "srcH": 1605,
+    "outW": 438,
+    "outH": 312,
+    "note": "車の窓から顔を出す犬(初めての犬連れ旅行ガイド)",
+    "crop": {
+      "fetchedW": 2408,
+      "left": 0,
+      "top": 1,
+      "width": 2253,
+      "height": 1604,
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Dog In Car Stock"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/hero.webp",
+    "slot": "hero",
+    "commonsTitle": "File:Sleeping? (15357806042).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sleeping%3F_(15357806042).jpg",
+    "author": "cogdogblog",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Sleeping%3F_%2815357806042%29.jpg",
+    "srcW": 4659,
+    "srcH": 3106,
+    "outW": 1800,
+    "outH": 463,
+    "note": "白い壁を背にしたゴールデンレトリバーの横顔。被写体は右、左は明るい壁で見出しが載る",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 582,
+      "width": 3840,
+      "height": 987,
+      "focus": [
+        0.65,
+        0.42
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/cogdog/15357806042/"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/lt-cafe.webp",
+    "slot": "lt-cafe",
+    "commonsTitle": "File:Newfoundland 2012 (8208302317).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Newfoundland_2012_(8208302317).jpg",
+    "author": "Jeremy T. Hetzel from Boston, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Newfoundland_2012_%288208302317%29.jpg",
+    "srcW": 3008,
+    "srcH": 2000,
+    "outW": 603,
+    "outH": 312,
+    "note": "ウッドデッキのテラス席の椅子の下で休む犬",
+    "crop": {
+      "fetchedW": 3008,
+      "left": 0,
+      "top": 422,
+      "width": 3008,
+      "height": 1556,
+      "focus": [
+        0.3,
+        0.6
+      ]
+    },
+    "tier": "free",
+    "credit": "Newfoundland 2012"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/lt-hiking.webp",
+    "slot": "lt-hiking",
+    "commonsTitle": "File:Hiker and dog in Goat Rocks Wilderness.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Hiker_and_dog_in_Goat_Rocks_Wilderness.jpg",
+    "author": "Mattsjc",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Hiker_and_dog_in_Goat_Rocks_Wilderness.jpg",
+    "srcW": 4032,
+    "srcH": 3024,
+    "outW": 594,
+    "outH": 312,
+    "note": "山の展望地に立つハイカーと犬(後ろ姿)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 778,
+      "width": 3840,
+      "height": 2016,
+      "focus": [
+        0.5,
+        0.62
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/lt-hotel.webp",
+    "slot": "lt-hotel",
+    "commonsTitle": "File:A spoiled dog tucked in bed.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:A_spoiled_dog_tucked_in_bed.jpg",
+    "author": "Fawn-under-stars",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/A_spoiled_dog_tucked_in_bed.jpg",
+    "srcW": 4608,
+    "srcH": 3456,
+    "outW": 594,
+    "outH": 312,
+    "note": "白い寝具にくるまる犬(明るい部屋。FancyCoton2 はフラッシュで目が光っていたので差し替え)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 432,
+      "width": 3840,
+      "height": 2016,
+      "focus": [
+        0.35,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/lt-trimming.webp",
+    "slot": "lt-trimming",
+    "commonsTitle": "File:トリマーさん (8006136951).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_(8006136951).jpg",
+    "author": "Ikusuki",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/%E3%83%88%E3%83%AA%E3%83%9E%E3%83%BC%E3%81%95%E3%82%93_%288006136951%29.jpg",
+    "srcW": 1709,
+    "srcH": 1281,
+    "outW": 594,
+    "outH": 312,
+    "note": "サロンの台の上の犬をトリミングするトリマー(後ろ姿)",
+    "crop": {
+      "fetchedW": 1709,
+      "left": 0,
+      "top": 90,
+      "width": 1709,
+      "height": 897,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    "tier": "free",
+    "credit": "Dog's fashion"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/rc-bousai.webp",
+    "slot": "rc-bousai",
+    "commonsTitle": "File:Backpacking with Shelby-Custer Gallatin National Forest- Shelby (53298386709).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Backpacking_with_Shelby-Custer_Gallatin_National_Forest-_Shelby_(53298386709).jpg",
+    "author": "Forest Service - Northern Region",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA-FS",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Backpacking_with_Shelby-Custer_Gallatin_National_Forest-_Shelby_%2853298386709%29.jpg",
+    "srcW": 4032,
+    "srcH": 3024,
+    "outW": 459,
+    "outH": 159,
+    "note": "リュック(ドッグパック)を着けて山道にいる犬(licenseUrl は extmetadata に無く、ページ本文の {{PD-USGov-USDA-FS}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 833,
+      "width": 3840,
+      "height": 1330,
+      "focus": [
+        0.5,
+        0.52
+      ]
+    },
+    "tier": "free",
+    "credit": "Backpacking with Shelby-Custer Gallatin National Forest- Shelby"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/rc-multi.webp",
+    "slot": "rc-multi",
+    "commonsTitle": "File:Looking over the sofa (8549380166).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Looking_over_the_sofa_(8549380166).jpg",
+    "author": "Ivan Bandura",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Looking_over_the_sofa_%288549380166%29.jpg",
+    "srcW": 3872,
+    "srcH": 2592,
+    "outW": 471,
+    "outH": 159,
+    "note": "並んで顔をのぞかせる3匹の子犬(見本は2匹。多頭飼いの意味に合わせた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 766,
+      "width": 3840,
+      "height": 1296,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Looking over the sofa"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/rc-rain.webp",
+    "slot": "rc-rain",
+    "commonsTitle": "File:Dog o helo thar.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_o_helo_thar.JPG",
+    "author": "MonicaDoesPhotography",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Dog_o_helo_thar.JPG",
+    "srcW": 4000,
+    "srcH": 3000,
+    "outW": 471,
+    "outH": 159,
+    "note": "室内のソファに顎を乗せて寝そべる犬(licenseUrl は extmetadata に無く、ページ本文の {{PD-self}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 792,
+      "width": 3840,
+      "height": 1296,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/rc-season.webp",
+    "slot": "rc-season",
+    "commonsTitle": "File:Taiwan Dog (cropped).jpeg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Taiwan_Dog_(cropped).jpeg",
+    "author": "Cho Hsun Lu",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Taiwan_Dog_%28cropped%29.jpeg",
+    "srcW": 1186,
+    "srcH": 839,
+    "outW": 456,
+    "outH": 159,
+    "note": "黄色い花畑に立つ犬",
+    "crop": {
+      "fetchedW": 1186,
+      "left": 0,
+      "top": 213,
+      "width": 1186,
+      "height": 413,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Imported from 500px ( archived version ) by the Archive Team . ( detail page )"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/rc-stay.webp",
+    "slot": "rc-stay",
+    "commonsTitle": "File:Odie-the-Golden-Retriever.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Odie-the-Golden-Retriever.JPG",
+    "author": "Catherin 888",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Odie-the-Golden-Retriever.JPG",
+    "srcW": 2048,
+    "srcH": 1536,
+    "outW": 459,
+    "outH": 159,
+    "note": "ソファに伏せるゴールデンレトリバー(licenseUrl は extmetadata に無く、ページ本文の {{PD-self}} の Template ページを入れた)",
+    "crop": {
+      "fetchedW": 2048,
+      "left": 0,
+      "top": 490,
+      "width": 2048,
+      "height": 709,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/scene-indoor.webp",
+    "slot": "scene-indoor",
+    "commonsTitle": "File:Dog o helo thar.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_o_helo_thar.JPG",
+    "author": "MonicaDoesPhotography",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Dog_o_helo_thar.JPG",
+    "srcW": 4000,
+    "srcH": 3000,
+    "outW": 462,
+    "outH": 255,
+    "note": "明るい部屋のソファで頭を乗せる犬(Commons の extmetadata: License=pd / UsageTerms=Public domain / Credit=Own work。LicenseUrl は無いので PD-self テンプレートの URL を記載)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 381,
+      "width": 3840,
+      "height": 2119,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/scene-large.webp",
+    "slot": "scene-large",
+    "commonsTitle": "File:Golden retriever alert (30190754125).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Golden_retriever_alert_(30190754125).jpg",
+    "author": "David Whelan",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Golden_retriever_alert_%2830190754125%29.jpg",
+    "srcW": 4153,
+    "srcH": 2811,
+    "outW": 468,
+    "outH": 255,
+    "note": "草むらのゴールデンレトリバー(大型犬)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 254,
+      "width": 3840,
+      "height": 2092,
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/davidpwhelan/30190754125/"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/scene-rain.webp",
+    "slot": "scene-rain",
+    "commonsTitle": "File:Rainy Day Blues (3041712622).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Rainy_Day_Blues_(3041712622).jpg",
+    "author": "cogdogblog",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Rainy_Day_Blues_%283041712622%29.jpg",
+    "srcW": 2000,
+    "srcH": 1500,
+    "outW": 459,
+    "outH": 255,
+    "note": "雨の日に窓の外を眺める犬(後ろ姿)",
+    "crop": {
+      "fetchedW": 2000,
+      "left": 0,
+      "top": 345,
+      "width": 2000,
+      "height": 1111,
+      "focus": [
+        0.45,
+        0.6
+      ]
+    },
+    "tier": "free",
+    "credit": "https://www.flickr.com/photos/cogdog/3041712622/"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/scene-senior.webp",
+    "slot": "scene-senior",
+    "commonsTitle": "File:Cute Small Senior Mixed-Breed Dog.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Cute_Small_Senior_Mixed-Breed_Dog.jpg",
+    "author": "Twawri",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cute_Small_Senior_Mixed-Breed_Dog.jpg",
+    "srcW": 4032,
+    "srcH": 3024,
+    "outW": 471,
+    "outH": 255,
+    "note": "毛布のベッドで伏せる白い口元のシニア犬",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 257,
+      "width": 3840,
+      "height": 2078,
+      "focus": [
+        0.45,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "Own work"
+  },
+  {
+    "page": "article",
+    "file": "/_portal/petproto/decided/article/scene-trip.webp",
+    "slot": "scene-trip",
+    "commonsTitle": "File:Dog in car (Unsplash).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dog_in_car_(Unsplash).jpg",
+    "author": "Andrew Pons a_pons",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Dog_in_car_%28Unsplash%29.jpg",
+    "srcW": 5184,
+    "srcH": 3456,
+    "outW": 459,
+    "outH": 255,
+    "note": "車の窓から顔を出す犬",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 86,
+      "width": 3840,
+      "height": 2133,
+      "focus": [
+        0.4,
+        0.45
+      ]
+    },
+    "tier": "free",
+    "credit": "https://unsplash.com/photos/QsmGE0P2-B8 Image at the Wayback Machine Gallery at the Wayback Machine"
+  }
+]

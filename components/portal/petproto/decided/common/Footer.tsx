@@ -84,7 +84,11 @@ export default function Footer() {
               </a>
             </div>
             <BackToTop />
-            <p className="pt-fg-copy">© 2024 マチノワPet. All rights reserved.</p>
+            <p className="pt-fg-copy">
+              © 2024 マチノワPet. All rights reserved.
+              <span aria-hidden="true"> ｜ </span>
+              <Link href={`${BASE}/credits`}>写真の出典</Link>
+            </p>
           </div>
         </div>
       </div>
