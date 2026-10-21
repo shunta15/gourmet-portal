@@ -18,13 +18,14 @@ type FW = { x: number; y: number; r: number; age: number; life: number; n: numbe
 const LEAFCOL = ["#d6402b", "#e8602a", "#f08a2a", "#f2b52e", "#c4372a", "#e9742c"];
 const FWCOL: [string, string][] = [["#ff5fa8", "#ffd1e8"], ["#ffc83a", "#fff0b0"], ["#ff4d6d", "#ffd1d9"], ["#ffffff", "#ffe29a"], ["#b6ff6a", "#f4ffd0"]];
 
-/** airy = 試作 /proto-home/airy 用。舞う物の数を 4 割に、空の花火の間隔を 2 倍にする(本番は渡さない=今のまま) */
-export default function Petals({ airy = false }: { airy?: boolean }) {
+/** airy = 試作 /proto-home/airy 用。舞う物の数を 4 割に、空の花火の間隔を 2 倍にする(本番は渡さない=今のまま)
+ *  still = 試作 /proto-home/still 用。季節が切り替わらない 1 枚の絵なので、何も舞わせない(本番は渡さない=今のまま) */
+export default function Petals({ airy = false, still = false }: { airy?: boolean; still?: boolean }) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const cv = ref.current; if (!cv) return;
     const ctx = cv.getContext("2d"); if (!ctx) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (still || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const small = window.innerWidth < 700;
     const PETAL = new Path2D("M0,-1 C.7,-.7 .85,.3 .1,1 L0,.78 L-.1,1 C-.85,.3 -.7,-.7 0,-1 Z");
     const LEAF = new Path2D("M0,-1 C.95,-.55 .95,.5 0,1 C-.95,.5 -.95,-.55 0,-1 Z");
@@ -161,6 +162,6 @@ export default function Petals({ airy = false }: { airy?: boolean }) {
     window.addEventListener("resize", resize);
     document.addEventListener("visibilitychange", vis);
     return () => { un(); cancelAnimationFrame(raf); window.removeEventListener("pointermove", move); window.removeEventListener("pointerdown", down); window.removeEventListener("resize", resize); document.removeEventListener("visibilitychange", vis); };
-  }, [airy]);
+  }, [airy, still]);
   return <canvas ref={ref} aria-hidden="true" style={{ position: "fixed", inset: 0, zIndex: 60, pointerEvents: "none" }} />;
 }

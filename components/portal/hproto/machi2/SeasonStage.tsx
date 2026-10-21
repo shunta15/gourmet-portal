@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { IMG } from "./const";
+import { IMG, STILL_SRC } from "./const";
 import { SEASONS, SEASON_SEC, seasonSrc, type Season } from "./season";
 import { setSeason } from "./seasonStore";
 
-const SIZE: Record<Season, [number, number]> = { spring: [2000, 667], summer: [1774, 887], autumn: [2000, 667], winter: [2000, 667] };
+// 2026-10-21 オーナーの新しい季節の絵 4 枚(川辺の公園。楕円の写真なし)は 4 枚とも 2000×667
+const SIZE: Record<Season, [number, number]> = { spring: [2000, 667], summer: [2000, 667], autumn: [2000, 667], winter: [2000, 667] };
 type Layer = { id: number; season: Season };
 
 /**
@@ -15,8 +16,41 @@ type Layer = { id: number; season: Season };
  *  - 自動の切り替えは setInterval(250ms) で経過を数える。画面外・非表示タブでは数えない(戻ると続きから)
  *  - 切り替え前に次の絵を decode まで済ませる。最初の季節の絵だけ優先、ほかは表示後に順に読む
  *  - prefers-reduced-motion: 自動の切り替えなし
+ *  - still(試作 /proto-home/still 用。本番は渡さない=今のまま): 季節の絵の代わりに 1 枚の絵(hero-still.webp)だけを出す。切り替え・輪・タイマーは動かさない
  */
-export default function SeasonStage({ initial }: { initial: Season }) {
+export default function SeasonStage({ initial, still = false }: { initial: Season; still?: boolean }) {
+  return still ? <StillStage initial={initial} /> : <SeasonCycle initial={initial} />;
+}
+
+/** 1 枚の絵だけの背景。絵の位置・切り出し(.h2-sbg / .h2-bg)は季節の絵と同じ。季節は最初の 1 回だけ seasonStore に知らせる(特集スライドの 1 枚目は今まで通りその季節) */
+function StillStage({ initial }: { initial: Season }) {
+  const root = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setSeason(initial);
+    const st = root.current?.closest<HTMLElement>(".h2-hero-stage") ?? null;
+    const hero = st?.closest<HTMLElement>(".h2-hero") ?? null;
+    if (hero) hero.dataset.season = initial;
+    // 画面外・非表示タブでは飾りの動き(光の筋・粒)を止める(季節の切り替えと同じ)
+    const f = { off: false, hid: false };
+    const pause = () => { if (st) st.toggleAttribute("data-pause", f.off || f.hid); };
+    let io: IntersectionObserver | undefined;
+    if (hero) { io = new IntersectionObserver((es) => { f.off = !es.some((e) => e.isIntersecting); pause(); }); io.observe(hero); }
+    const vis = () => { f.hid = document.hidden; pause(); };
+    document.addEventListener("visibilitychange", vis); vis();
+    return () => { io?.disconnect(); document.removeEventListener("visibilitychange", vis); };
+  }, [initial]);
+  return (
+    <div ref={root} className="h2-seasonroot">
+      <div className="h2-bgwrap" aria-hidden="true">
+        <div className="h2-sbg" data-s="still">
+          <img className="h2-bg" src={STILL_SRC} alt="" width={2000} height={667} fetchPriority="high" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SeasonCycle({ initial }: { initial: Season }) {
   const [layers, setLayers] = useState<Layer[]>([{ id: 0, season: initial }]);
   const root = useRef<HTMLDivElement>(null);
   const curRef = useRef<Season>(initial);

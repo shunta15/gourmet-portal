@@ -10,7 +10,7 @@
 @keyframes h2-ring-open { from { clip-path: circle(0px at calc(591 * var(--u)) calc(244 * var(--u))); } }
 .h2-bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; animation: h2-kb 9s cubic-bezier(.2, .6, .3, 1) both; transform-origin: 50% 38%; scale: 1.03; translate: calc(var(--px, 0) * -7 * var(--u)) calc(var(--py, 0) * -4 * var(--u)); }
 /* 夏だけ縦横比が違う(2:1)。上の花火と左上・右上の楕円写真が切れないよう、上寄せで見せる(下のひまわりは検索の箱の下) */
-.h2-sbg[data-s="summer"] .h2-bg { object-position: 50% 9%; }
+.h2-sbg[data-s="summer"] .h2-bg { object-position: 50% 50%; } /* 新しい夏の絵は他の季節と同じ 2000×667 */
 @keyframes h2-kb { from { transform: scale(1); } to { transform: scale(1.07); } }
 .h2-ring { position: absolute; z-index: 3; left: calc((591 - 704) * var(--u)); top: calc((244 - 704) * var(--u)); width: calc(1408 * var(--u)); height: calc(1408 * var(--u)); border-radius: 50%; pointer-events: none;
   border: calc(5 * var(--u)) solid rgba(255, 255, 255, .96); box-shadow: 0 0 calc(16 * var(--u)) calc(3 * var(--u)) rgba(255, 255, 255, .85), inset 0 0 calc(34 * var(--u)) rgba(255, 255, 255, .55);
@@ -123,3 +123,12 @@
   .h2-pills .h2-pill b { font-size: clamp(11px, 3.2cqw, 13px); white-space: nowrap; line-height: 1.2; }
 }
 @media (prefers-reduced-motion: reduce) { .h2-hl::before { transform: none; } .h2-bg { scale: 1; translate: none; } .h2-board { animation: none; } .h2-ring { display: none; } }
+
+/* still(試作 /proto-home/still)だけ: 1 枚の絵の上でも見出し・説明が読めるよう、文字の後ろにごく薄い白のぼかしを敷く(絵そのものは加工しない)。
+   見出し(x 386〜640・y 40〜172)と説明(x 283〜755・y 196〜240)を包む楕円。中心は文字の中心(x 520・y 140)。.h2-veil が出るのは still のときだけ=本番は変わらない */
+.h2-veil { position: absolute; left: calc(150 * var(--u)); top: calc(8 * var(--u)); width: calc(740 * var(--u)); height: calc(268 * var(--u)); z-index: 2; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, .34), rgba(255, 255, 255, .28) 55%, rgba(255, 255, 255, 0)); }
+@media (max-width: 700px) {
+  /* スマホ: 文字は見える窓(見本の x 270〜910)の中央(x 590)。ヘッダーのぶん(--hd)下げる */
+  .h2-veil { left: calc(260 * var(--u)); width: calc(660 * var(--u)); margin-top: var(--hd); }
+}
