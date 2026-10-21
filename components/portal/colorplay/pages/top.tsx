@@ -1,6 +1,6 @@
 /**
- * 最初のページ(/beauty)。COLOR PLAY(試作 app/proto-beauty/colorplay/page.tsx の本番版)。
- * 上から: 赤い画面(動きの案は lib/portal/verticalDesign.ts の BEAUTY_HERO。本番は URL の ?hero= を読まない)
+ * 最初のページ(/beauty)。COLOR PLAY。
+ * 上から: 赤い画面(動きは「塗る」。オーナー決定 2026-10-13)
  *   → 3 つのボタン(お店を探す・エリア・種類) → 種類を選ぶ色の札 → エリアを選ぶ所 → 店の写真の札。
  * リンクは本物のページ(/beauty/search ほか)へ。件数はすべてデータから数える。
  * 飾りの画像(/_portal/bproto/colorplay/*.jpg)は、同じファイル名で差し替えるだけで済む(幅・高さは比率だけを使い、固定の大きさにしない)。
@@ -10,14 +10,12 @@ import JsonLd from "@/components/portal/JsonLd";
 import Header from "../Header";
 import Footer from "../Footer";
 import { IconAll, IconArrow, IconPin, IconSearch } from "@/components/portal/bproto/colorplay/Icons";
-import HeroView, { type HeroVariant } from "@/components/portal/bproto/colorplay/hero/HeroView";
-import HeroViewB, { type HeroVariantB } from "@/components/portal/bproto/colorplay/hero/HeroViewB";
+import HeroView from "@/components/portal/bproto/colorplay/hero/HeroView";
 import { loadShops } from "@/lib/portal/colorplay/data";
 import { KIND_IMAGES } from "@/lib/portal/colorplay/kindImages";
 import { searchHref, shopHref } from "@/lib/portal/colorplay/search";
 import type { CpShop } from "@/lib/portal/colorplay/types";
 import type { CpSite } from "@/lib/portal/colorplay/site";
-import { BEAUTY_HERO, heroOverrideAllowed } from "@/lib/portal/verticalDesign";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
 import { breadcrumb } from "@/lib/seo/jsonld";
@@ -30,9 +28,6 @@ const RIB_A = rep(["COLOR PLAY", "●", "HAIR", "●", "NAIL", "●", "BEAUTY", 
 const RIB_B = rep(["Machinowa Beauty", "●", "キレイで、あそぼう。", "●"]);
 const TILT = [-9, 6, -6, 9];
 const SHOP_TILES = 8;
-
-type SP = { [key: string]: string | string[] | undefined };
-type Hero = HeroVariant | HeroVariantB;
 
 /** 種類の札: 英字・色。写真は lib/portal/colorplay/kindImages.ts の表(種類と合うものだけ。無い種類は色面と大きな字だけ) */
 const PANELS: Record<string, { en: string[]; cls: string }> = {
@@ -60,11 +55,10 @@ function pickShops(shops: CpShop[], kinds: string[], n: number): CpShop[] {
   return out;
 }
 
-/** 3 つの丸薬形のボタン。stage=true は案 2(最初の画面の中でせり上がる)で、スクロール連動の印(data-sp)を付けない */
-function Pills({ site, total, stage = false }: { site: CpSite; total: number; stage?: boolean }) {
-  const sp = stage ? {} : { "data-sp": "o", "data-sp-src": "cp-hero" };
+/** 3 つの丸薬形のボタン */
+function Pills({ site, total }: { site: CpSite; total: number }) {
   return (
-    <nav className="cp-pills" id="cp-pills" {...sp} aria-label="入口">
+    <nav className="cp-pills" id="cp-pills" data-sp="o" data-sp-src="cp-hero" aria-label="入口">
       <Link href={`${site.base}/search`} className="cp-pill p-pink" style={{ ["--p" as string]: 0 }}>
         <IconSearch size={30} />
         <span><b>お店を探す</b><small>全国{total}店を、種類・エリアから</small></span>
@@ -82,14 +76,7 @@ function Pills({ site, total, stage = false }: { site: CpSite; total: number; st
 }
 
 export function cpTopPage(site: CpSite) {
-  return async function Page({ searchParams }: { searchParams?: Promise<SP> }) {
-    // 見本(production 以外)でだけ、URL の ?hero=1〜6 で最初の画面の動きを見比べられる。本番は読まない(静的なまま)
-    let hero: Hero = BEAUTY_HERO;
-    if (heroOverrideAllowed() && searchParams) {
-      const sp = await searchParams;
-      const x = Array.isArray(sp.hero) ? sp.hero[0] : sp.hero;
-      if (x && /^[1-6]$/.test(x)) hero = Number(x) as Hero;
-    }
+  return async function Page() {
     const shops = await loadShops(site);
     const v = VERTICALS[site.key];
     const ld = breadcrumb([
@@ -115,24 +102,16 @@ export function cpTopPage(site: CpSite) {
         <JsonLd data={ld} />
         <Header base={site.base} logoA={site.logoA} logoB={site.logoB} onColor />
         <main id="cp-main" tabIndex={-1}>
-          {hero >= 4 ? (
-            <HeroViewB variant={hero as HeroVariantB} />
-          ) : (
-            <HeroView variant={hero as HeroVariant} pills={hero === 2 ? <Pills site={site} total={shops.length} stage /> : undefined} />
-          )}
+          <HeroView />
 
-          {hero !== 2 && (
-            <>
-              <div className="cp-wrap">
-                <Pills site={site} total={shops.length} />
-              </div>
-              <nav className="cp-mini-pills" data-sp="o" data-sp-src="cp-pills" data-sp-show aria-label="入口(スクロール中に上に残る帯)">
-                <Link href={`${site.base}/search`} className="mp-pink"><IconSearch size={18} />お店を探す</Link>
-                <Link href="#area" className="mp-blue"><IconPin size={18} />エリア</Link>
-                <Link href="#kinds" className="mp-black"><IconAll size={18} />種類</Link>
-              </nav>
-            </>
-          )}
+          <div className="cp-wrap">
+            <Pills site={site} total={shops.length} />
+          </div>
+          <nav className="cp-mini-pills" data-sp="o" data-sp-src="cp-pills" data-sp-show aria-label="入口(スクロール中に上に残る帯)">
+            <Link href={`${site.base}/search`} className="mp-pink"><IconSearch size={18} />お店を探す</Link>
+            <Link href="#area" className="mp-blue"><IconPin size={18} />エリア</Link>
+            <Link href="#kinds" className="mp-black"><IconAll size={18} />種類</Link>
+          </nav>
 
           <section className="cp-kinds-sec" id="kinds" aria-labelledby="cp-kinds-h">
             <div className="cp-wrap"><h2 className="cp-h2 cp-rv" id="cp-kinds-h">種類を、選ぶ。<IconArrow size={22} /></h2></div>

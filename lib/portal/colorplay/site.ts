@@ -2,7 +2,8 @@
  * COLOR PLAY(本番のビューティー・ボディケア)の業種ごとの設定。純粋な定数(サーバー・クライアントのどちらからも読める)。
  * 色・言葉・種類の定義を業種ごとにここへ置き、部品(components/portal/colorplay/)は設定だけを見る。
  */
-import type { CpVerticalKey } from "@/lib/portal/verticalDesign";
+/** COLOR PLAY を使う業種(URL の頭 /beauty・/bodycare) */
+export type CpVerticalKey = "beauty" | "bodycare";
 
 export type CpKind = { slug: string; name: string };
 

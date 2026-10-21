@@ -3,17 +3,13 @@
  * index 対象（判定は lib/seo/gate.ts の1か所）のURLだけを出す。載せるもの: 業種のトップ・都道府県・種類・種類×都道府県・シーン・店ページ（/shop/{id}）。
  * 各ページの robots は件数で決まる（buildMetadata の count）。ここでも同じ件数を gate に通す:
  *   店ページの count はその業種の掲載数（components/portal/pages/shop.tsx）、ほかは絞り込んだあとの件数。掲載数が 3 件未満なら店ページも載せない。
- * 特集ページ（/{v}/feature/{id}。ビューティー・ボディケアだけ）は、lib/places/features.ts の VERTICAL_FEATURES_ENABLED が true のあいだ載せる
- * （false のあいだは getGeneratedFeatures が空を返すので 1 本も載らない）。特集ページの robots の件数は店ページと同じ（その業種の掲載数）。
+ * ビューティー・ボディケアの特集ページ（/{v}/feature/{id}）は店のページへ転送するので載せない。
  */
 import type { MetadataRoute } from "next";
 import { PREFECTURES } from "@/lib/areas/prefectures";
 import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { assertPortalLive } from "@/lib/portal/launch";
-import { getGeneratedFeatures } from "@/lib/places/features";
-import { VERTICAL_DESIGN } from "@/lib/portal/verticalDesign";
-import { bodycareSearchOn } from "@/lib/portal/vert/bodycareStructure";
 import { loadVertical, pick, type PortalVertical } from "./data";
 
 export function verticalSitemap(key: PortalVertical) {
@@ -26,8 +22,8 @@ export function verticalSitemap(key: PortalVertical) {
     };
 
     add(v.path, all.length);
-    // 「さがす」にまとまる構成か。ビューティー: VERTICAL_DESIGN が colorplay。ボディケア: lib/portal/vert/bodycareStructure.ts(本番は今のまま=false)
-    const cp = (key === "beauty" || key === "bodycare") && (VERTICAL_DESIGN[key] === "colorplay" || (key === "bodycare" && bodycareSearchOn()));
+    // 「さがす」にまとまる構成か。ビューティー(COLOR PLAY)・ボディケアは「さがす」にまとまっている
+    const cp = key === "beauty" || key === "bodycare";
     if (cp) {
       // COLOR PLAY: 種類・エリアのページは「さがす」へ転送するので載せない。転送先（種類・エリアだけの絞り込み）を載せる（件数は同じ gate）
       add(`${v.path}/search`, all.length);
@@ -56,9 +52,6 @@ export function verticalSitemap(key: PortalVertical) {
     }
     for (const p of all) add(`${v.path}/shop/${encodeURIComponent(p.id)}`, all.length);
     // COLOR PLAY: 特集記事は店のページと一緒（/feature/{id} は店のページへ転送）なので、特集の URL は載せない
-    if ((key === "beauty" || key === "bodycare") && !cp) {
-      for (const f of await getGeneratedFeatures(key)) add(`${v.path}/feature/${encodeURIComponent(f.id)}`, all.length);
-    }
 
     // Next.js は <loc> を XML エスケープしないので、クエリの & は自分で &amp; にする(さがすの絞り込み URL に & がある)
     return paths.map((path) => ({ url: absUrl(path).replace(/&/g, "&amp;") }));
