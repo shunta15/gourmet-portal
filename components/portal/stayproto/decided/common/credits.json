@@ -27,5 +27,34 @@
     },
     "tier": "free",
     "credit": "https://www.flickr.com/photos/199350666@N08/55026598540"
+  },
+  {
+    "page": "search",
+    "file": "/Users/shunta/claude/gp-k-shindai/public/_portal/stayproto/decided/search/hero.webp",
+    "slot": "hero",
+    "commonsTitle": "File:Fuji Kawaguchi 457.JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_457.JPG",
+    "author": "Marion & Christoph Aistleitner",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Fuji_Kawaguchi_457.JPG",
+    "srcW": 4320,
+    "srcH": 2880,
+    "outW": 2400,
+    "outH": 880,
+    "note": "河口湖と富士山(探すページのヒーロー背景。宿ではない飾りの写真)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 320,
+      "width": 3840,
+      "height": 1408,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    "tier": "free",
+    "credit": "own photo --- Contact: User:Mediocrity"
   }
 ]

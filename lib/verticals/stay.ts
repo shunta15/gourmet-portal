@@ -33,11 +33,15 @@ export const stay: Vertical = {
     { key: 'checkOut', label: 'チェックアウト' },
     { key: 'onsen', label: '温泉・浴場' },
     { key: 'petsAllowed', label: 'ペット同伴' },
-    { key: 'priceFrom', label: '料金目安' },
+    // 料金目安(priceFrom)は載せない(料金・金額は出さない決まり。2026-10-22)
   ],
   titleTemplates: {
-    top: '{name}の店をエリア・種類から探す｜マチノワ{brand}',
-    area: '{area}の{category}{count}選｜マチノワ{brand}',
+    // 「ステイの店」ではなく「宿」と呼ぶ(決定デザインの言い方。2026-10-22)
+    top: '宿をエリア・種類から探す｜マチノワ{brand}',
+    // 「〇選」「{count}選」は使わない(ペットと同じ。件数を題名に入れない)。{category} は、エリアのページでは「ステイ」・種類のページでは種類名(ホテル・旅館 など)
+    area: '{area}の{category}一覧｜マチノワ{brand}',
+    // 利用シーン(温泉・ペット同伴・一人旅・記念日・素泊まり)のページの題名(「〇選」なし)。{scene} はシーン名
+    scene: '「{scene}」で探す宿｜マチノワ{brand}',
   },
   copyRules: [
     {
