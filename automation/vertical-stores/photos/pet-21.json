@@ -1,0 +1,33 @@
+{
+  "key": "pet-21",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-21/s1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/953003_b7acf1a76975437398bce9a96f9f1558~mv2_d_4032_3024_s_4_2.jpg",
+      "pageUrl": "https://www.shellfish.jp/dog-training",
+      "what": "白い板壁の前に並ぶ白黒の犬3匹",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/pet-21/s2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/953003_8142fa549bac45daa36a1cd95e36fb9c~mv2_d_2048_1536_s_2.jpg",
+      "pageUrl": "https://www.shellfish.jp/pet-hotel",
+      "what": "住宅街の道を複数の犬と歩く散歩の様子(後ろ姿)",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/pet-21/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TDiQE3J2WHEQCGaEGApJdwp6MzVjs8lyzEHgejhj_uowoyzzht6hsNZib3iNZh48nLcVikAPdk2shxr13SqmqQ4HFCpdvjDdcHbJ4gD9Nr4cSFz9nl2y14tctzxHU5GQuPHi0LeA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1836736895564091483",
+      "what": "草地に伏せる黒と白の犬。奥に湖と山が見える",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "公式サイトの写真2枚・Google マップの写真1枚"
+}

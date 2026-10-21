@@ -1,0 +1,337 @@
+{
+  "key": "pet-21",
+  "headline": "鎌倉市七里ガ浜東の犬のしつけ教室。ペットホテルでは先住犬と同じ家で過ごす",
+  "lede": "神奈川県鎌倉市七里ガ浜東にある「SHELLFISH dogservice」です。犬のしつけ教室(ドッグトレーニング)が中心で、ペットホテルも運営しています。営業時間は毎日10時30分から18時です。",
+  "sections": [
+    {
+      "heading": "場所と営業時間",
+      "body": "住所は鎌倉市七里ガ浜東2丁目23-8です。営業時間は月曜から日曜、祝日も10時30分から18時で、公式サイトではトリミング以外の業務は年中無休と案内されています。電話は店の0467-31-8877で、公式サイトには、店は不在にすることが多いため移動中の連絡先として携帯電話も載せている、と注記されています。メールはdog@shellfish.jpです。動物取扱業は、訓練・保管・貸出・販売の登録があると記載されています。"
+    },
+    {
+      "heading": "ドッグトレーニング(しつけ教室)",
+      "body": "生活に密着したトレーニングで、飼い主へのカウンセリングと座学を行い、飼い主のレッスンと犬のレッスンを組み合わせる方式です。お留守番、インターフォンへの無駄吠え、車酔い、リードの引っ張り、甘噛み、拾い食いなどの相談を扱います。メニューは、電話かリモートの予備レッスン(約60分)、自宅で受けるリモート授業(6回)、実践レッスン(45分)などです。レッスンの内容には、基本のリードワーク、呼び戻し、ボール投げのレッスンがあります。おやつは基本的に使わないと案内されています。コースには、2か月からのパピートレーニング、保護犬やアダルト犬のトレーニング、強化レッスンがあり、シニア犬のケアの相談もあります。ボーダーコリー限定で、山梨県河口湖のフィールドで行う牧羊犬の基礎レッスンもあります。公式サイトのLINEはトレーニング申込者専用で、ペットホテルを希望する人は電話かメールで連絡します。"
+    },
+    {
+      "heading": "ペットホテル",
+      "body": "預かり方は、店の犬たちと、店の自宅の中で一緒に過ごす形です。先住犬はボーダーコリーとそのミックスの犬たちで、1階のリビングを共有します。夏はエアコン、冬は薪ストーブで温度を管理すると案内されています。散歩も先住犬と一緒に行い、他の犬が苦手な犬はゆっくり慣らしていきます。コースは、住宅街、近隣の山と海、牧場までのドライブ、広場などです。車が苦手な犬は、宿泊中に車での移動の練習もします。1日の流れは、起床、庭とデッキでのトイレ、朝の散歩、朝ごはん、昼寝、夕方の散歩、夜ごはん、就寝の順で、トイレの促しは1日平均5〜6回です。ワンデイは10時30分から18時で、アーリーチェックイン(6時から)とレイトチェックアウト(22時まで)は時間外の扱いになります。予約は前金制で、予約から3日以内に、PayPay、銀行振込(ゆうちょ)、現金で支払います。キャンセルの規定は公式サイトで案内されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "予備レッスン"
+    },
+    {
+      "name": "リモート授業"
+    },
+    {
+      "name": "実践レッスン"
+    },
+    {
+      "name": "パピートレーニング"
+    },
+    {
+      "name": "保護犬トレーニング"
+    },
+    {
+      "name": "牧羊犬トレーニング(ボーダーコリー限定)"
+    },
+    {
+      "name": "ペットホテル(ワンデイ)"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「ペット トレーナー」",
+      "source": "https://maps.google.com/?cid=1836736895564091483",
+      "quote": "ペット トレーナー",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "住所は神奈川県鎌倉市七里ヶ浜東2-23-8(公式サイトの表記は「七里ヶ浜」)",
+      "source": "http://www.shellfish.jp/",
+      "quote": "神奈川県鎌倉市七里ヶ浜東2-23-8",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "電話は080-4660-1610(移動中)と0467-31-8877(不在にする場合が多い)",
+      "source": "http://www.shellfish.jp/",
+      "quote": "Tel: )080-4660-1610(移動中) 0467-31-8877(不在にする場合が多い為）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "メールアドレスはdog@shellfish.jp",
+      "source": "http://www.shellfish.jp/",
+      "quote": "dog@shellfish.jp",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "営業時間は月〜日・祭日10:30〜18:00",
+      "source": "http://www.shellfish.jp/",
+      "quote": "Opening Hours:月火水木金土日祭日: 10:30am-6:00pm",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トリミング以外の業務は年中無休",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "トリミング以外の業務は年中無休です",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日10:30–18:00",
+      "source": "https://maps.google.com/?cid=1836736895564091483",
+      "quote": "10:30–18:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "動物取扱業は訓練・保管・貸出・販売の登録がある",
+      "source": "http://www.shellfish.jp/",
+      "quote": "動物取扱業 訓練240157、保管240156、貸出240158、販売240159",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "生活に密着したトレーニングを座学とあわせて行う",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "生活密着型トレーニングプログラム(湘南ドッグスクール）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "カウンセリングとトレーニング(オーナーのレッスンと犬のレッスン)をする方式",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "カウンセリング及びトレーニング（オーナーのレッスンと犬のレッスン）をするシステムです",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "お留守番・インターフォン・車酔いなどの生活に密着した内容を扱う",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "お留守番、インターフォン無駄吠え、車酔い、小さいお子様への威嚇など",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "リードワーク・噛み癖・拾い食いなどを扱う",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "リードワーク（引っ張り癖）、噛み癖（甘噛み）拾い食いなど",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予備レッスンは電話またはリモートで約60分",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "所要時間約６０分",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "リモート授業は自宅で6回",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "ご自宅でリモート授業６回",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "実践レッスンは45分",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "実践レッスン（４５分）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "基本リードワークレッスンがある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "基本リードワークレッスン",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "呼び戻しレッスンがある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "呼び戻しレッスン",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ボール投げエナジーレッスンがある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "ボール投げエナジーレッスン",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "おやつを基本使用しない",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "当店はおやつを基本使用しません",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "パピートレーニングは2か月から",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "PUPPY TRAINING（２ヶ月からの赤ちゃん）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "保護犬トレーニングがある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "保護犬TRAINING",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アダルト犬のトレーニングがある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "ADULT TRAINING",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "強化レッスン(多頭飼い向けの案内あり)がある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "STRENGTHENING TRAINING（強化レッスン）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "シニアのケア(生活環境のアドバイスとカウンセリング)がある",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "シニア ケア",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "牧羊犬トレーニングはボーダーコリー限定(ケルピーも同様)",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "ボーダーコリー限定（ケルピーも同様）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "牧羊犬の基礎レッスンは河口湖のフィールドで行う",
+      "source": "https://www.shellfish.jp/dog-training",
+      "quote": "牧羊犬基礎レッスンを行います（河口湖 SHEEP CONSEPT SPACE フィールドにて）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "牧羊犬トレーニングセンターは山梨県南都留郡鳴沢村にある",
+      "source": "http://www.shellfish.jp/",
+      "quote": "山梨県南都留郡鳴沢村5203-1",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "LINEはトレーニング申込者専用",
+      "source": "http://www.shellfish.jp/",
+      "quote": "こちらはトレーニング申込者専用LINEです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ペットホテルを希望する人は電話またはメールで連絡する",
+      "source": "http://www.shellfish.jp/",
+      "quote": "※ペットホテルご希望者はお電話またはメールでご連絡下さい。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "預かり方は店の犬たちと自宅内で同居するスタイル",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "当店のお預かり方法は、当店の犬達とshellfish自宅内で同居してもらうというスタイルです。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "散歩も先住犬たちと一緒に行う",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "お預かり中の散歩等も当店の先住犬達と一緒に行きます。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "先住犬はボーダーコリーとミックス",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "BorderCollie&mix",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "1階のリビングを先住犬と共有する",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "１階のリビングを先住犬達と共有します",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "他犬が苦手な犬は先住犬が散歩に同行しゆっくり慣らす",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "当店先住犬が一緒にお散歩同行しますゆっくりと他犬に慣らして行きながら協調性をつけます",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "冬は薪ストーブ、夏はエアコンで温度管理",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "冬は薪ストーブ 夏はエアコンで温度管理",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "車が苦手な犬は宿泊中に車で移動の訓練をする",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "お泊まり中に当店の車で移動",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "散歩コースに住宅街・山・海・牧場ドライブ・広場がある",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "牧場ドライブ",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "1日の流れ(朝の散歩・夕方の散歩など)を案内している",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "夕方の散歩",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "トイレの促しは1日平均5〜6回",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "1日平均5回から6回のトイレ促しをします",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "ワンデイは10:30〜18:00",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "ワンデイ 10:30〜18:00",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "アーリーチェックインは6:00から",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "アーリーチェックイン（6:00〜8:00）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "レイトチェックアウトは22:00まで",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "レイトチェックアウト（18:00〜22:00）",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "予約後3日以内に支払う前金制",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "ご予約後3日以内にお支払いをお願い致します",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "支払い方法はPayPay・銀行振込(ゆうちょ)・現金",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "PayPay（QR決済） / 銀行振込（ゆうちょ） / 現金",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "claim": "キャンセルポリシーが公式サイトにある",
+      "source": "https://www.shellfish.jp/pet-hotel",
+      "quote": "キャンセルポリシー",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.shellfish.jp/"
+    },
+    {
+      "label": "公式サイト(ドッグトレーニング)",
+      "url": "https://www.shellfish.jp/dog-training"
+    },
+    {
+      "label": "公式サイト(ペットホテル)",
+      "url": "https://www.shellfish.jp/pet-hotel"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1836736895564091483"
+    }
+  ],
+  "notes": "種類は pet-hotel(オーナー確認待ちの案。シートはペット訓練所、Google マップの業種はペット トレーナー、店の中心はしつけ教室でペットホテルも運営。pet.ts にしつけ教室の種類がないため、pet-resolve.json の category は null のままにして proposedCategoryNeedsOwner=pet-hotel を残した。載せるかどうかが決まるまで店データには出ない)。そのため本文はしつけ教室を先に、ペットホテルを後に書いた。【オーナー判断の材料】ペットホテルは公式サイトに『shellfish自宅内で同居』とある自宅での営業で、住所は番地まで載る(Google マップ・公式サイトとも)。『ペットシッターかわい』(自宅営業・番地あり)を外すと決めたときの基準に近いため、載せるかどうかの判断で見てほしい。住所の表記は、Google マップ・シートが「七里ガ浜東」、公式サイトが「七里ヶ浜東」で、本文は Google マップ・シートの表記に合わせた。電話: Google マップに電話番号がなく、公式サイトは店の固定電話(0467-31-8877・不在が多い)と移動中の携帯(080-4660-1610)の2つを載せるため、店データの電話は固定電話(placeOverride.phone)にした。携帯電話の番号は、自宅でホテルを運営する個人事業の連絡先のため本文には書かず『携帯電話も載せている』とだけ書いた(公式サイトには番号が載っている。載せるかはオーナー判断)。営業時間は公式サイトと Google マップが一致(毎日10:30〜18:00)。料金(トレーニング・ホテル・時間外・トップシーズン・キャンセル料の割合)、人名(店主・訓練士・先住犬の名前)、『問題行動を改善』『協調性をつけます』『筋骨格から整う DOGFits』『保険』『タレント犬募集』などの効き目・別事業の内容、トリミング(別事業者のリンク)、河口湖のキャンプ場、ドッグウォーカーは載せていない。キャンセルの規定は割合を書かず『公式サイトで案内』とだけ書いた。写真は公式サイトの実物写真2枚(先住犬・散歩)とGoogle マップ1枚(草地の犬)。トレーニング募集のバナー(文字入り)・スタッフの顔が写る写真・加工(スタンプ)入りの画像は選んでいない。",
+  "placeOverride": {
+    "phone": "0467-31-8877"
+  }
+}

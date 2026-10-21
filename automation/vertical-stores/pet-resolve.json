@@ -10,12 +10,13 @@
       "不一致": 2,
       "店名ちがい": 1
     },
-    "writable": 17
+    "writable": 19
   },
   "writable": [
     "pet-4",
     "pet-5",
     "pet-6",
+    "pet-7",
     "pet-9",
     "pet-11",
     "pet-12",
@@ -27,6 +28,7 @@
     "pet-24",
     "pet-25",
     "pet-26",
+    "pet-29",
     "pet-31",
     "pet-32",
     "pet-33"
@@ -48,7 +50,9 @@
     "11076115219919138407": "pe0014",
     "178641640681033002": "pe0015",
     "4125355156774246136": "pe0016",
-    "11360375277361448352": "pe0017"
+    "11360375277361448352": "pe0017",
+    "13971686593288919274": "pe0018",
+    "1482200613885738245": "pe0019"
   },
   "selfDecided": [
     "pet.ts の種類への対応は、シートの業種ラベルを軸に、公式サイトの内容で確かめた。トリミング→trimming、ペットホテル→pet-hotel、ペットショップ→pet-shop、動物病院→vet、動物カフェ→犬連れ・犬のカフェと公式サイトが示すものだけ dog-cafe",
@@ -61,7 +65,9 @@
     "「自前の公式サイト」は、Googleマップに登録されたサイトで判定。登録なし(pet-2, 13, 28)・Instagramだけ(pet-20)・予約サービスだけ(pet-27)は自前なし。ウェブ検索で別の公式サイトを探すことはしていない",
     "pet-8 は店名・町名が同じで番地だけ入れ替わっている(3-12-1 と 3-2-12)が、基準どおり不一致のまま。pet-3 はシートのリンク先が別の店のため不一致のまま(別検索で見つかった店は supplementary に記録)",
     "店ID の接頭辞を pe とした(be=beauty、bo=bodycare に合わせ英名の頭2文字)。宿泊施設は未決のまま",
-    "既に保存されていた gbp/pet-7.json と gbp/pet-19.json は取り直さず(resolve.mjs の既定どおり)、内容を点検して採用した"
+    "既に保存されていた gbp/pet-7.json と gbp/pet-19.json は取り直さず(resolve.mjs の既定どおり)、内容を点検して採用した",
+    "[2026-10-22] pet-7(うさぎカフェ)と pet-29(猫カフェ)は、オーナー指示(カフェの枠を犬カフェ・猫カフェなど動物カフェまで広げる)で category を dog-cafe にした。種類の slug は変えていない(名前の変更は lib/verticals/pet.ts 側の別作業)。店 ID は pe0018(pet-7)・pe0019(pet-29)を払い出した(払い出し済みの pe0001〜pe0017 は変えず追記)",
+    "[2026-10-22] pet-15(ブリーダー)と pet-21(しつけ教室+ホテル)は記事・写真だけ用意し、category は null のまま(オーナー確認待ち。案は proposedCategoryNeedsOwner のとおり pet-shop / pet-hotel)。ID も払い出していない"
   ],
   "supplementary": {
     "pet-3": {
@@ -208,11 +214,11 @@
       "website": "https://usanpo-usagicafe.com/",
       "siteKind": "own",
       "ownSite": true,
-      "category": null,
-      "proposedCategoryNeedsOwner": "pet-shop",
-      "writable": false,
-      "id": null,
-      "reason": "うさぎカフェ併設のネザーランドドワーフ専門店(うさぎ販売・ホテル・グルーミングもあり)。シートは動物カフェだがドッグカフェではなく、マップはペットショップ。pet.ts の種類(犬のカフェ限定)に確実に当たると言えず保留。案: pet-shop。要オーナー判断"
+      "category": "dog-cafe",
+      "writable": true,
+      "id": "pe0018",
+      "reason": "うさぎカフェ併設のネザーランドドワーフ専門店(うさぎ販売・ホテル・グルーミングもある)。シート: 動物カフェ。オーナー指示で動物カフェは dog-cafe に入れる",
+      "ownerDecision": "2026-10-22 オーナー指示: カフェの枠(dog-cafe)を犬カフェ・猫カフェなど動物カフェまで広げる。うさぎカフェ・猫カフェもこの種類に入れる"
     },
     {
       "key": "pet-8",
@@ -389,7 +395,8 @@
       "proposedCategoryNeedsOwner": "pet-shop",
       "writable": false,
       "id": null,
-      "reason": "シートはペット訓練所だが、公式サイトは犬のブリーダー(子犬販売)。シートの種類(訓練所)は pet.ts に当たらず、サイト内容(ブリーダー)なら pet-shop の可能性あり。食い違いのため保留。要オーナー判断"
+      "reason": "シートはペット訓練所だが、公式サイトは犬のブリーダー(子犬販売)。シートの種類(訓練所)は pet.ts に当たらず、サイト内容(ブリーダー)なら pet-shop の可能性あり。食い違いのため保留。要オーナー判断 [2026-10-22] 記事・写真は用意済み(articles/pet-15.json・photos/pet-15.json)。オーナーがペットショップ扱いを確認したら category に pet-shop を入れ、pe の ID を払い出す(それまで店データには出ない)",
+      "articleReady": true
     },
     {
       "key": "pet-16",
@@ -523,7 +530,8 @@
       "proposedCategoryNeedsOwner": "pet-hotel",
       "writable": false,
       "id": null,
-      "reason": "ドッグトレーニング(しつけ教室)が主でシートはペット訓練所。ペットホテルも提供するが主ではなく、pet.ts に確実に当たる種類なし。要オーナー判断(案: pet-hotel)"
+      "reason": "ドッグトレーニング(しつけ教室)が主でシートはペット訓練所。ペットホテルも提供するが主ではなく、pet.ts に確実に当たる種類なし。要オーナー判断(案: pet-hotel) [2026-10-22] 記事・写真は用意済み(articles/pet-21.json・photos/pet-21.json)。オーナーがペットホテル扱いを確認したら category に pet-hotel を入れ、pe の ID を払い出す(それまで店データには出ない)。自宅内で預かる自宅営業で番地が載るため、載せるかも合わせて判断が要る(ペットシッターかわいを外した基準に近い)",
+      "articleReady": true
     },
     {
       "key": "pet-22",
@@ -696,10 +704,11 @@
       "website": "https://kimamana-miiko.jp/",
       "siteKind": "own",
       "ownSite": true,
-      "category": null,
-      "writable": false,
-      "id": null,
-      "reason": "猫カフェ(猫・うさぎ・ハリネズミ)。pet.ts のカフェはドッグカフェのみで当たる種類なし(猫ホテル・猫美容もあるが主は猫カフェ)"
+      "category": "dog-cafe",
+      "writable": true,
+      "id": "pe0019",
+      "reason": "猫カフェ(猫・うさぎ・ハリネズミ。猫美容・ペットホテル・里親募集もある)。シート: 動物カフェ。オーナー指示で動物カフェは dog-cafe に入れる",
+      "ownerDecision": "2026-10-22 オーナー指示: カフェの枠(dog-cafe)を犬カフェ・猫カフェなど動物カフェまで広げる。うさぎカフェ・猫カフェもこの種類に入れる"
     },
     {
       "key": "pet-30",

@@ -1,0 +1,33 @@
+{
+  "key": "pet-29",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-29/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYIyfzDC-KBIH-ddLrAwf5SeZM11flKAY1O3nifwT8ubMFGjXxRzUyA6_pa04VO0hlEjJEq7vLtP_SXU_WWFbX1CJOJThLNEZlPr5JGd3jUfK5Ui66OGO3OMprxaiTDMPduSkbJFtDd4ee=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1482200613885738245",
+      "what": "丸い寝床に寄り添う2匹の猫",
+      "width": 1109,
+      "height": 1108,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-29/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw2dhM66z1u-fOC1IETsvsWZ8ZVjTDugXUaGGI7j5Q4V1z-IQExhaKGGLsF8a8YRehnU9E7hCzLJyj0hpnkfEeMv7_0kBYMX0BL-PPz0idkPlxY86ikn6AJiMeEelXCwzTF5I7hA2ySNcp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1482200613885738245",
+      "what": "台の上で正面を見る長毛の猫",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-29/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rbfv-8-EO0yf4AEf8zkkknECyPyQRfuYsxxDuI_Wm3W_AMXiPLo-gxo4ziP5u0rzigV65x9SP6GkWSpjFEWURLMwADp4Ez6Hs0zHQ-IVZX_MH_343s9NnBdhJPnXXe6Av7jE7QAGeVheI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1482200613885738245",
+      "what": "台の上で上を見る灰色の猫",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

@@ -1,0 +1,42 @@
+{
+  "key": "pet-7",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-7/g1.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8LlzSjw_aBsv_C0AY0J84XM5mYAPDmtWSRc-_CURbkf8k8nLDkinpb3EJ6P4dZ_GOWRaVQZ_fNOnTv4qIEJv576ksN5a8RjIipWglsF1M1eSV3fQg8wOhUr5_yeEHWiKmjr12=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13971686593288919274",
+      "what": "「うさカフェ USANPO」の文字がある店の外観と駐車場",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-7/g2.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxJWAPX38K_VKoeq7gqYhGLuvJkjM1Jeb0Wn5PH83tMDXhMX3HxXeHx4FtSjU3bcT2QA7rlUQ19N8hFfLjO95-2U2yW3fCnCyM0SF5oeo0FbJDukARe1-BfQaCz0F589wE1Vx8MA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13971686593288919274",
+      "what": "カウンターと商品棚のある店内。うさぎのぬいぐるみが飾られている",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-7/g3.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFa0XykA2nDqX0ObnjK17QOryqtwW-ZcPYw9WkbMXQVDWmE_tjIQ9rhlc0bajMHHUrg_VOEWhgMXrv2AfaEl7Fdt84lRMzA3niXa5qlv0bMVE2tnkcAWrkgOGwu2pTWn0o0sGo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13971686593288919274",
+      "what": "木の棚に並ぶうさぎのケージ",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/pet-7/g4.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCPY_bcJ-w_zmCqi9BVrbZJ0QBQrYJRjeSa7bERyJCUDejS1vF7sFrklAAJoCBAgcXrxjZIkPVCNtcq8McprIV0v8o6zDUduIhIy1pjhEAt_VoIFoO-Kd_p95zCl32bqQhz9Zi_g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13971686593288919274",
+      "what": "木の小屋の上にいるうさぎ",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "Google マップの写真"
+}

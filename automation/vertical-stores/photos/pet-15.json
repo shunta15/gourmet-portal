@@ -1,0 +1,33 @@
+{
+  "key": "pet-15",
+  "images": [
+    {
+      "path": "/_portal/vshops/pet-15/s1.jpg",
+      "imageUrl": "https://plumkennel.jp/images/convert/plumkenneljp/20240624115604.jpg/image.webp",
+      "pageUrl": "https://plumkennel.jp/",
+      "what": "おもちゃのそばに並ぶダックスフンドの子犬4匹",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/pet-15/s2.jpg",
+      "imageUrl": "https://plumkennel.jp/images/convert/plumkenneljp/20240624120123.jpg/image.webp",
+      "pageUrl": "https://plumkennel.jp/",
+      "what": "ふわふわの敷物に集まる黒とタンのダックスフンドの子犬",
+      "width": 1200,
+      "height": 900,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/pet-15/s3.jpg",
+      "imageUrl": "https://plumkennel.jp/images/convert/plumkenneljp/20240717102129.jpg/image.webp",
+      "pageUrl": "https://plumkennel.jp/feature/",
+      "what": "編み目の敷物に並んで伏せるダックスフンドの子犬2匹",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイトの写真"
+}
