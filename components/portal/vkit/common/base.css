@@ -93,7 +93,7 @@
   --vk-iw: 58; /* 右のアイコン 1 つぶんの幅 */
   --vk-rx: 24; /* 右のアイコン群の右の余白 */
   --vk-ctaw: max(96px, calc(var(--vk-cta-n, 92) * var(--u))); /* 最初のページの「〇〇を探す →」の幅 */
-  --vk-cut: max(65%, calc(var(--vk-nx) * var(--u) + var(--vk-ncc, 40) * max(11px, calc(var(--vk-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
+  --vk-cut: max(65%, calc(max(0px, (100% - 1600px) / 2) + var(--vk-nx) * var(--u) + var(--vk-ncc, 40) * max(11px, calc(var(--vk-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
   position: relative;
   font-size: var(--vk-fs-m);
   transition: --vk-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
