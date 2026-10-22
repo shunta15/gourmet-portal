@@ -1,0 +1,11 @@
+/* 決定デザインの 404(VkNotFound)。接頭辞 vk-nf。ヘッダーの下から始まる明るい面に、短い案内だけ */
+.vk-nf { width: min(100% - 32px, 640px); margin: 0 auto; padding: 96px 0 120px; text-align: center; }
+.vk-nf-en { margin: 0; font-family: var(--vk-ff-en); font-style: italic; font-size: 48px; line-height: 1; letter-spacing: 0.04em; color: var(--vk-bd); }
+.vk-nf-h { margin: 14px 0 0; font-family: var(--vk-ff-min); font-weight: 500; font-size: 24px; line-height: 1.5; letter-spacing: 0.08em; color: var(--vk-ink); }
+.vk-nf-p { margin: 16px 0 0; font-size: 14px; line-height: 1.9; letter-spacing: 0.05em; color: var(--vk-body); }
+.vk-nf-links { margin: 28px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; }
+.vk-nf-links a { color: var(--vk-text); border-bottom: 1px solid rgb(var(--vk-ink-rgb) / 0.3); padding-bottom: 2px; transition: color 0.25s, border-color 0.25s; }
+.vk-nf-links a:hover { color: var(--vk-gold-d); border-color: var(--vk-gold); }
+@media (min-width: 1000px) {
+  .vk-nf { padding-top: calc(110 * var(--u)); }
+}

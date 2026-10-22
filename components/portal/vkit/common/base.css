@@ -1,0 +1,394 @@
+/* 新業種(体験・アクティビティ / スポーツ・フィットネス / くらし・ライフスタイル)の共通 CSS(ステイの決定デザインの共通 CSS を、業種ごとの色で切り替えられるようにしたもの)。接頭辞は全部 vk-(出現だけは .io)。
+   見本の px はそのまま calc(N * var(--u)) で置く。--u = ページ幅 ÷ 見本の画像の幅(--vk-ref。最初・探す・記事 = 1024、店の紹介 = 864。Shell の page が決める)。
+   デスクトップ = min-width: 1000px(--u の寸法)/ スマホ・タブレット = max-width: 999px(px で自分で組む。--u は使わない)。
+   小さな字は、読めなくならないよう max(NNpx, calc(N * var(--u))) の床を入れる(下の --vk-fs-* を使うとそろう)。
+   動き(静かな 3 つだけ): ふわっと出る .io / 写真のゆっくりした寄り .vk-kb(ずっと)・.vk-scroll-zoom(スクロールで)/ 見出しのワイプ .vk-mask(MaskLines)
+   部品: vk-wrap / vk-lab / vk-h2 / vk-lead / vk-num / vk-more / vk-btn(--gold・--line・--pill)/ vk-tag / vk-chip / vk-card / vk-arrow / vk-zoom / vk-heart / vk-tabs / vk-crumbs */
+
+/* 今のヘッダーの下端(隠れると 0)。追従の物の top に使う。値が変わるとき滑らかに追従する */
+@property --vk-hy {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+.vk-root {
+  --u: calc(min(100vw, 1600px) / 1024); /* Shell が --vk-ref で見本の幅を決め、Motion がスクロールバーを除いた幅で上書きする */
+  /* 色(業種ごとの値は components/portal/vkit/configs/*.ts の theme が、VkRoot でこの要素の style に入れる。ここは下書きの既定値) */
+  --vk-paper: #faf8f3; /* ページの地 */
+  --vk-paper2: #fbf9f5; /* 一段明るい節・カードの地 */
+  --vk-cream: #f6f4ec; /* 左の面・フッター・節の地 */
+  --vk-sand: #f1ece1; /* 一段濃い面(帯・写真の枠の地) */
+  --vk-white: #fffefb; /* カード・検索の箱 */
+  --vk-chip: #eeebe2; /* 札(chip)の地 */
+  --vk-ink: #15130f; /* 大見出し・数字 */
+  --vk-text: #2b2a26; /* ナビ・カードの見出し・濃い本文 */
+  --vk-text2: #55524b; /* リード文 */
+  --vk-body: #6b6862; /* 本文 */
+  --vk-mut: #8b887f; /* 補助の文字(日付・パンくず) */
+  --vk-labc: #6f6a5e; /* 小さな英字ラベルの字 */
+  --vk-dim: #a8a395; /* 薄い字・点・目盛り */
+  --vk-line: #e4dfd2; /* 罫線・カードの縁 */
+  --vk-bd: #cdc6b4; /* 枠(ボタン・丸) */
+  --vk-gold: #9a8246; /* 差し色(ボタン・アクティブ)。業種の色 */
+  --vk-gold-d: #7f6a36; /* 押したとき・濃い差し色 */
+  --vk-gold-l: #b49d62; /* ホバー・明るい差し色 */
+  --vk-gold-pale: #d3c7a8; /* 暗い帯の上の見出しの小さな字 */
+  --vk-deep: #13201f; /* ボタンの濃い面 */
+  --vk-deep-h: #22332f; /* ボタンのホバー */
+  --vk-deep2: #1d2a2c; /* 最初のページの検索の箱 */
+  --vk-night: #0f1a1d; /* 店の紹介のヘッダーの濃い面 */
+  --vk-onnight: #f1ede4; /* 濃い面の上の字 */
+  --vk-dark: #1f1c17; /* 記事の暗い帯 */
+  --vk-dark2: #2a2218; /* 記事の暗い帯(写真なし) */
+  --vk-onband: #efe9dc; /* 暗い帯の上の字 */
+  --vk-onband2: #dcd5c5; /* 暗い帯の上の本文 */
+  --vk-heart: #a94a43; /* ハートを押したとき */
+  /* rgb の 3 つ組(rgb(var(--vk-paper-rgb) / 0.9) の形で透けさせる) */
+  --vk-paper-rgb: 250 248 243;
+  --vk-white-rgb: 255 254 251;
+  --vk-ink-rgb: 21 19 15;
+  --vk-shade-rgb: 50 42 24; /* 影・細い線の色 */
+  --vk-gold-rgb: 154 130 70;
+  --vk-night-rgb: 15 26 29;
+  --vk-dark-rgb: 31 28 23;
+  /* 影・角丸(見本は角丸がほぼ無い。ボタンだけ少し) */
+  --vk-r: calc(2 * var(--u));
+  --vk-r2: calc(4 * var(--u));
+  --vk-sh: 0 calc(2 * var(--u)) calc(14 * var(--u)) rgb(var(--vk-shade-rgb) / 0.07);
+  --vk-sh2: 0 calc(14 * var(--u)) calc(34 * var(--u)) rgb(var(--vk-shade-rgb) / 0.14);
+  /* 書体のかたまり */
+  --vk-ff-jp: var(--vk-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --vk-ff-min: var(--vk-min), "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --vk-ff-en: var(--vk-en), "Cormorant Garamond", "Times New Roman", serif;
+  --vk-ff-lab: var(--vk-lab), "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  position: relative;
+  background: var(--vk-paper);
+  color: var(--vk-text);
+  font-family: var(--vk-ff-jp);
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shell(ページごと)。ヘッダーの寸法はページごとに見本が少し違うので、page で切り替える(--vk-lx など = 見本の幅での px)。--u はここで決める(--vk-ref は Shell が style で渡す) */
+.vk-shell {
+  --u: calc(min(100vw, 1600px) / var(--vk-ref, 1024));
+  /* 文字の大きさ(見本の px + 読める下限)。ページの CSS はこれを使うと、1000〜1100px 幅でも字が潰れない */
+  --vk-fs-2xs: max(10px, calc(7.4 * var(--u))); /* 小さな英字ラベル・日付・注記 */
+  --vk-fs-xs: max(11px, calc(8.6 * var(--u))); /* ナビ・タグ・補助 */
+  --vk-fs-s: max(12px, calc(9.6 * var(--u))); /* カードの説明・本文(小) */
+  --vk-fs-m: max(13px, calc(10.6 * var(--u))); /* 本文 */
+  --vk-gut: calc(20 * var(--u)); /* ページの左右の余白(最初のページのカード列が見本で左右 20px) */
+  --vk-hh: max(48px, calc(57 * var(--u)));
+  --vk-hy: var(--vk-hh);
+  --hs: 1; /* ヘッダーのロゴ・アイコンの拡大率 */
+  --vk-lx: 34; /* ロゴの左端 */
+  --vk-nx: 305; /* ナビの左端 */
+  --vk-nfs: 9.8; /* ナビの字 */
+  --vk-ngap: 22; /* ナビの間隔 */
+  --vk-iw: 58; /* 右のアイコン 1 つぶんの幅 */
+  --vk-rx: 24; /* 右のアイコン群の右の余白 */
+  --vk-ctaw: max(96px, calc(var(--vk-cta-n, 92) * var(--u))); /* 最初のページの「〇〇を探す →」の幅 */
+  --vk-cut: max(65%, calc(var(--vk-nx) * var(--u) + var(--vk-ncc, 40) * max(11px, calc(var(--vk-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
+  position: relative;
+  font-size: var(--vk-fs-m);
+  transition: --vk-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.vk-shell[data-vk-page="top"] { --vk-hh: max(52px, calc(57 * var(--u))); --hs: 1; --vk-lx: 34; --vk-nx: 305; --vk-nfs: 9.8; --vk-ngap: 22; --vk-iw: 58; --vk-rx: 27; }
+.vk-shell[data-vk-page="search"] { --vk-hh: max(52px, calc(54 * var(--u))); --hs: 0.97; --vk-lx: 31; --vk-nx: calc(246 + var(--vk-ns, 0)); --vk-nfs: 9.8; --vk-ngap: 25; --vk-iw: 58; --vk-rx: 24; }
+.vk-shell[data-vk-page="shop"] { --vk-hh: max(52px, calc(49 * var(--u))); --hs: 0.82; --vk-lx: 33; --vk-nx: calc(231 + var(--vk-ns, 0)); --vk-nfs: 8.3; --vk-ngap: 22; --vk-iw: 62; --vk-rx: 28; }
+.vk-shell[data-vk-page="article"] { --vk-hh: max(48px, calc(40 * var(--u))); --hs: 0.8; --vk-lx: 40; --vk-nx: calc(259 + var(--vk-ns, 0)); --vk-nfs: 9.4; --vk-ngap: 38; --vk-iw: 62; --vk-rx: 27; }
+
+:where(.vk-root) *, :where(.vk-root) *::before, :where(.vk-root) *::after { box-sizing: border-box; }
+:where(.vk-root) a { color: inherit; text-decoration: none; }
+:where(.vk-root) img { display: block; max-width: 100%; }
+:where(.vk-root) :is(h1, h2, h3, h4, p, ul, ol, dl, dd, figure) { margin: 0; padding: 0; }
+:where(.vk-root) :is(ul, ol) { list-style: none; }
+:where(.vk-root) button { font-family: inherit; }
+.vk-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.vk-main { position: relative; z-index: 1; display: block; }
+.vk-shell [id] { scroll-margin-top: calc(var(--vk-hh) + 14px); }
+
+/* 書体のかたまり */
+.vk-jp { font-family: var(--vk-ff-jp); }
+.vk-min { font-family: var(--vk-ff-min); }
+.vk-en { font-family: var(--vk-ff-en); }
+/* 字間の広い英字(Jost)のラベルは .vk-lab(下の部品。書体と大文字・字間をまとめて持つ) */
+
+/* 共通の枠(グルメのサイドラベル・丸いカーソル・上の進み具合の線・上のナビ)は見本に無いので、この外枠の中だけ隠す */
+body:has(.vk-root) > nav.nav,
+body:has(.vk-root) .side-label,
+body:has(.vk-root) .cursor-dot,
+body:has(.vk-root) .cursor-ring,
+body:has(.vk-root) .progress-bar { display: none !important; }
+body:has(.vk-root) { cursor: auto; }
+body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
+
+
+/* ---------- ロゴ(山の印+「マチノワステイ」+「MACHINOWA STAY」。文字は本物の文字) ---------- */
+.vk-logo { display: inline-flex; align-items: center; gap: calc(11 * var(--u) * var(--hs, 1)); line-height: 1; color: currentColor; white-space: nowrap; }
+.vk-logo-mark { flex: none; width: max(34px, calc(38 * var(--u) * var(--hs, 1))); height: auto; aspect-ratio: 54 / 32; }
+.vk-logo-t { display: grid; gap: calc(4.5 * var(--u) * var(--hs, 1)); }
+.vk-logo-jp { font-family: var(--vk-ff-min); font-weight: 500; font-size: max(16px, calc(16.6 * var(--u) * var(--hs, 1))); letter-spacing: 0.04em; line-height: 1.1; }
+.vk-logo-en { font-family: var(--vk-ff-lab); font-weight: 400; font-size: max(7.5px, calc(7.4 * var(--u) * var(--hs, 1))); letter-spacing: 0.34em; line-height: 1; opacity: 0.86; }
+
+/* ---------- ヘッダー(最初 = ヒーローに重なる透け / 探す = 左だけ明るい帯 / 店の紹介 = 濃い面 / 記事 = 明るい帯) ---------- */
+.vk-head { position: sticky; top: 0; z-index: 100; height: var(--vk-hh); background: rgb(var(--vk-paper-rgb) / 0.98); color: var(--vk-text); border-bottom: 1px solid rgb(var(--vk-shade-rgb) / 0.08); transition: translate 0.38s cubic-bezier(0.3, 0.7, 0.2, 1), background-color 0.3s, box-shadow 0.3s, color 0.3s; }
+.vk-shell[data-vk-page="top"] .vk-head, .vk-shell[data-vk-page="search"] .vk-head { margin-bottom: calc(var(--vk-hh) * -1); }
+.vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) { background: transparent; border-bottom-color: transparent; color: #fff; }
+.vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) .vk-head-logo { color: var(--vk-ink); text-shadow: none; }
+.vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: linear-gradient(90deg, rgb(var(--vk-paper-rgb) / 0.98) 0, rgb(var(--vk-paper-rgb) / 0.98) var(--vk-cut), transparent var(--vk-cut)); border-bottom-color: transparent; }
+.vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { color: #fff; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.vk-shell[data-vk-page="shop"] .vk-head { background: rgb(var(--vk-night-rgb) / 0.98); color: var(--vk-onnight); border-bottom-color: rgba(255, 255, 255, 0.06); }
+.vk-shell[data-vk-page="article"] .vk-head { border-bottom-color: rgb(var(--vk-shade-rgb) / 0.1); }
+.vk-head.is-scrolled { background: rgb(var(--vk-paper-rgb) / 0.96); color: var(--vk-text); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgb(var(--vk-shade-rgb) / 0.06), 0 6px 18px rgb(var(--vk-shade-rgb) / 0.06); }
+.vk-shell[data-vk-page="shop"] .vk-head.is-scrolled { background: rgb(var(--vk-night-rgb) / 0.96); color: var(--vk-onnight); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); }
+.vk-head.is-hidden { translate: 0 -105%; }
+.vk-head-in { position: relative; width: calc(var(--vk-ref, 1024) * var(--u)); max-width: 100%; height: 100%; margin: 0 auto; }
+.vk-head-logo { position: absolute; left: calc(var(--vk-lx) * var(--u)); top: 50%; translate: 0 -50%; display: block; color: inherit; }
+.vk-head-nav { position: absolute; left: calc(var(--vk-nx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; gap: calc(var(--vk-ngap) * var(--u)); font-size: max(11px, calc(var(--vk-nfs) * var(--u))); font-weight: 500; letter-spacing: 0.08em; white-space: nowrap; }
+.vk-head-nav a { position: relative; padding: calc(6 * var(--u)) 0; transition: color 0.25s, opacity 0.25s; }
+.vk-head-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background: currentColor; opacity: 0.7; transition: right 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-head-nav a:hover::after { right: 0; }
+/* 記事は、ナビの間に細い縦線(見本)。各リンクの左右に間隔の半分ずつ余白を持たせ、縦線はリンクの左端。ナビの左端は半分ぶん戻す */
+.vk-shell[data-vk-page="article"] .vk-head-nav { gap: 0; left: calc((var(--vk-nx) - var(--vk-ngap) / 2) * var(--u)); }
+.vk-shell[data-vk-page="article"] .vk-head-nav a { padding-inline: calc(var(--vk-ngap) / 2 * var(--u)); }
+.vk-shell[data-vk-page="article"] .vk-head-nav a + a::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: calc(10 * var(--u)); min-height: 10px; translate: 0 -50%; background: rgb(var(--vk-shade-rgb) / 0.22); }
+.vk-shell[data-vk-page="article"] .vk-head-nav a::after { left: calc(var(--vk-ngap) / 2 * var(--u)); right: auto; width: 0; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-shell[data-vk-page="article"] .vk-head-nav a:hover::after { width: calc(100% - var(--vk-ngap) * var(--u)); }
+.vk-head-ic { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; align-items: center; }
+.vk-hi { width: calc(var(--vk-iw) * var(--u)); min-width: 46px; display: flex; flex-direction: column; align-items: center; gap: calc(4 * var(--u) * var(--hs)); padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
+.vk-hi:hover { opacity: 0.7; }
+.vk-hi-i { display: block; width: max(17px, calc(15 * var(--u) * var(--hs))); height: max(17px, calc(15 * var(--u) * var(--hs))); }
+.vk-hi-i svg { width: 100%; height: 100%; display: block; }
+.vk-hi-l { font-size: max(10px, calc(7 * var(--u) * var(--hs))); font-weight: 500; letter-spacing: 0.06em; line-height: 1.2; white-space: nowrap; }
+.vk-hi.is-on { color: var(--vk-heart); }
+.vk-hi.is-on .vk-hi-i path { fill: currentColor; }
+/* 記事・最初のページは、アイコンの横に字(見本) */
+.vk-shell[data-vk-page="article"] .vk-hi, .vk-shell[data-vk-page="top"] .vk-hi { flex-direction: row; width: auto; min-width: 0; gap: calc(7 * var(--u)); margin-left: calc(26 * var(--u)); }
+.vk-shell[data-vk-page="top"] .vk-hi { margin-left: calc(20 * var(--u)); }
+.vk-shell[data-vk-page="top"] .vk-head-ic { right: calc(var(--vk-rx) * var(--u) + var(--vk-ctaw) + 22 * var(--u)); }
+.vk-shell[data-vk-page="top"] .vk-hi--menu, .vk-shell[data-vk-page="top"] .vk-hi:first-child .vk-hi-l { display: none; } /* 最初の見本は 検索(アイコンだけ)・お気に入り・「〇〇を探す」の枠だけ */
+/* 最初のページの右端「〇〇を探す →」(枠だけのボタン) */
+.vk-head-cta { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; justify-content: center; gap: calc(9 * var(--u)); width: var(--vk-ctaw); height: max(30px, calc(29 * var(--u))); border: 1px solid currentColor; border-radius: 999px; font-size: max(11px, calc(8.8 * var(--u))); font-weight: 500; letter-spacing: 0.1em; color: inherit; background: rgba(15, 20, 20, 0.28); backdrop-filter: blur(3px); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.vk-head-cta svg { width: calc(11 * var(--u)); min-width: 11px; height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-head-cta:hover { background: rgba(15, 20, 20, 0.5); }
+.vk-head-cta:hover svg { transform: translateX(calc(3 * var(--u))); }
+.vk-head.is-scrolled .vk-head-cta { background: transparent; border-color: rgb(var(--vk-ink-rgb) / 0.45); }
+.vk-head.is-scrolled .vk-head-cta:hover { background: var(--vk-deep); color: #fff; border-color: var(--vk-deep); }
+/* 1000〜1199px 幅は、最初・記事のアイコンの字(お気に入りなど)をやめてアイコンだけにする(ナビと重ならないように) */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .vk-shell[data-vk-page="top"] .vk-hi-l, .vk-shell[data-vk-page="article"] .vk-hi-l { display: none; }
+  .vk-shell[data-vk-page="top"] .vk-hi, .vk-shell[data-vk-page="article"] .vk-hi { margin-left: calc(14 * var(--u)); }
+}
+/* 店の紹介は、アイコン群の左に細い縦線(見本) */
+.vk-shell[data-vk-page="shop"] .vk-head-ic { padding-left: calc(18 * var(--u)); border-left: 1px solid rgba(255, 255, 255, 0.12); height: calc(var(--vk-hh) * 0.72); }
+/* メニューの開閉(三本線 → 閉じる) */
+.vk-hi[aria-expanded="true"] .vk-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
+.vk-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgb(var(--vk-paper-rgb) / 0.99); color: var(--vk-text); border: 1px solid var(--vk-line); box-shadow: var(--vk-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
+.vk-drawer[data-open="1"] { opacity: 1; visibility: visible; translate: 0 calc(4 * var(--u)); pointer-events: auto; }
+.vk-drawer a { padding: max(11px, calc(8 * var(--u))) calc(18 * var(--u)); font-size: max(13px, calc(9 * var(--u))); font-weight: 500; letter-spacing: 0.08em; transition: background 0.2s, color 0.2s; }
+.vk-drawer a:hover { background: var(--vk-cream); color: var(--vk-gold-d); }
+
+/* ---------- フッター(見本の記事ページの最後の帯: ロゴ+ナビ+SNS。下に小さな 2 行目) ---------- */
+.vk-root .vk-foot { position: relative; z-index: 1; margin: 0; padding: 0; background: var(--vk-cream); color: var(--vk-text); border-top: 1px solid var(--vk-line); } /* グルメ共通の footer{} の色・余白を打ち消す */
+.vk-foot-in { width: min(100%, calc((var(--vk-ref, 1024) - 40) * var(--u))); margin: 0 auto; padding: calc(30 * var(--u)) 0 calc(20 * var(--u)); }
+.vk-foot-row { display: flex; align-items: center; gap: calc(40 * var(--u)); }
+.vk-foot-logo-link { display: inline-block; color: var(--vk-ink); flex: none; }
+.vk-foot-logo { --hs: 0.98; }
+.vk-foot-nav { display: flex; flex: 1; justify-content: center; gap: calc(34 * var(--u)); font-size: var(--vk-fs-xs); font-weight: 500; letter-spacing: 0.1em; white-space: nowrap; }
+.vk-foot-nav a { position: relative; padding: 4px 0; transition: color 0.25s; }
+.vk-foot-nav a:hover { color: var(--vk-gold-d); }
+.vk-foot-r { display: flex; align-items: center; gap: calc(18 * var(--u)); flex: none; }
+.vk-foot-sns { display: flex; gap: calc(6 * var(--u)); }
+.vk-sns { display: grid; place-items: center; width: max(32px, calc(26 * var(--u))); height: max(32px, calc(26 * var(--u))); color: var(--vk-ink); transition: color 0.25s, translate 0.3s; }
+.vk-sns svg { width: max(16px, calc(14 * var(--u))); height: max(16px, calc(14 * var(--u))); }
+.vk-sns:hover { color: var(--vk-gold-d); translate: 0 -2px; }
+.vk-totop { display: grid; place-items: center; width: max(34px, calc(28 * var(--u))); height: max(34px, calc(28 * var(--u))); padding: 0; border: 1px solid var(--vk-bd); border-radius: 50%; background: transparent; color: var(--vk-ink); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.vk-totop svg { width: max(11px, calc(9 * var(--u))); height: max(11px, calc(9 * var(--u))); }
+.vk-totop:hover { background: var(--vk-ink); color: #fff; border-color: var(--vk-ink); }
+.vk-foot-sub { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: calc(22 * var(--u)); padding-top: calc(14 * var(--u)); border-top: 1px solid var(--vk-line); font-size: var(--vk-fs-2xs); letter-spacing: 0.08em; color: var(--vk-mut); }
+.vk-foot-links { display: flex; flex-wrap: wrap; gap: 6px calc(22 * var(--u)); }
+.vk-foot-links a { transition: color 0.25s; }
+.vk-foot-links a:hover { color: var(--vk-gold-d); }
+.vk-foot-copy { white-space: nowrap; }
+
+/* ---------- パンくず(見本は小さな薄い字。区切りは細い「>」) ---------- */
+.vk-crumbs { font-size: var(--vk-fs-2xs); letter-spacing: 0.06em; color: var(--vk-mut); }
+.vk-crumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; }
+.vk-crumbs li { display: inline-flex; align-items: center; }
+.vk-crumbs a { transition: color 0.25s; }
+.vk-crumbs a:hover { color: var(--vk-gold-d); }
+.vk-crumbs-sep { width: 6px; height: 9px; margin: 0 max(8px, calc(8 * var(--u))); opacity: 0.7; flex: none; }
+.vk-crumbs [aria-current="page"] { color: var(--vk-text2); }
+
+/* ---------- 部品(各ページが使う) ---------- */
+/* ページの中身の幅(見本の幅 − 左右 20px。1600px を超える画面では中央に寄る) */
+.vk-wrap { position: relative; width: min(100%, calc((var(--vk-ref, 1024) - 40) * var(--u))); margin: 0 auto; }
+/* 字間の広い英字のラベル(THE ACTIVITY EDITION / SPECIAL FEATURE …。大文字・細い) */
+.vk-lab { font-family: var(--vk-ff-lab); font-weight: 400; font-size: var(--vk-fs-2xs); letter-spacing: 0.3em; text-transform: uppercase; color: var(--vk-labc); line-height: 1.4; }
+/* 明朝の見出し(大きさは各ページが指定する。字間・行間・色だけ決めておく) */
+.vk-h2 { font-family: var(--vk-ff-min); font-weight: 400; font-size: calc(24 * var(--u)); line-height: 1.5; letter-spacing: 0.06em; color: var(--vk-ink); }
+/* リード文(明朝の灰色。「泊まることで、街がもっと好きになる。」) */
+.vk-lead { font-family: var(--vk-ff-min); font-weight: 400; font-size: var(--vk-fs-m); line-height: 1.95; letter-spacing: 0.1em; color: var(--vk-text2); }
+/* 大きな斜体の数字(「01」「02」。Cormorant Garamond Italic)と、小さな英字(HOTEL・RYOKAN) */
+.vk-num { font-family: var(--vk-ff-en); font-style: italic; font-weight: 400; font-size: calc(30 * var(--u)); line-height: 1; letter-spacing: 0.01em; color: var(--vk-ink); }
+/* 種類の名前(common/KindName.tsx)。「・」の所だけで折れる */
+.vk-kn { display: inline-block; }
+.vk-kind { font-family: var(--vk-ff-en); font-weight: 500; font-size: var(--vk-fs-2xs); letter-spacing: 0.24em; text-transform: uppercase; color: var(--vk-labc); }
+/* 「詳細を見る →」「特集記事をみる →」(細い字+細い矢印。下に細い線) */
+.vk-more { display: inline-flex; align-items: center; gap: calc(9 * var(--u)); padding-bottom: 3px; font-size: var(--vk-fs-xs); font-weight: 700; letter-spacing: 0.1em; color: var(--vk-text); border-bottom: 1px solid rgb(var(--vk-ink-rgb) / 0.3); white-space: nowrap; transition: color 0.25s, border-color 0.25s; }
+.vk-more svg { width: max(14px, calc(13 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-more:hover { color: var(--vk-gold-d); border-color: var(--vk-gold); }
+.vk-more:hover svg { transform: translateX(calc(4 * var(--u))); }
+.vk-more--plain { border-bottom: 0; padding-bottom: 0; }
+/* ボタン(濃い緑がかった黒の面。角は少しだけ丸い)。--gold = 金茶 / --line = 枠だけ / --pill = 丸い */
+.vk-btn { display: inline-flex; align-items: center; justify-content: center; gap: calc(10 * var(--u)); height: max(44px, calc(40 * var(--u))); padding: 0 calc(28 * var(--u)); border: 1px solid var(--vk-deep); border-radius: var(--vk-r2); background: var(--vk-deep); color: #fff; font-weight: 500; font-size: var(--vk-fs-xs); letter-spacing: 0.12em; cursor: pointer; transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.vk-btn svg { width: max(14px, calc(12 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-btn:hover { background: var(--vk-deep-h); border-color: var(--vk-deep-h); }
+.vk-btn:hover svg { transform: translateX(calc(3 * var(--u))); }
+.vk-btn--gold { background: var(--vk-gold); border-color: var(--vk-gold); }
+.vk-btn--gold:hover { background: var(--vk-gold-d); border-color: var(--vk-gold-d); }
+.vk-btn--line { background: transparent; color: var(--vk-text); border-color: rgb(var(--vk-ink-rgb) / 0.4); }
+.vk-btn--line:hover { background: var(--vk-deep); color: #fff; border-color: var(--vk-deep); }
+.vk-btn--pill { border-radius: 999px; }
+/* タグ(「海が見える」「ホテル」。アイコン+字、枠なし)・札(灰色の小さな面) */
+.vk-tag { display: inline-flex; align-items: center; gap: calc(7 * var(--u)); font-size: var(--vk-fs-2xs); letter-spacing: 0.05em; color: var(--vk-labc); white-space: nowrap; }
+.vk-tag svg { width: max(14px, calc(11 * var(--u))); height: max(14px, calc(11 * var(--u))); flex: none; }
+.vk-chip { display: inline-flex; align-items: center; height: max(24px, calc(17 * var(--u))); padding: 0 max(10px, calc(8 * var(--u))); border-radius: 999px; background: var(--vk-chip); color: var(--vk-labc); font-size: var(--vk-fs-2xs); letter-spacing: 0.05em; white-space: nowrap; }
+/* カード(白い面。細い縁、影はほぼ無い) */
+.vk-card { background: var(--vk-white); border: 1px solid var(--vk-line); border-radius: var(--vk-r); }
+/* 矢印の丸(カードの右下。親が .vk-hov のとき、触ると矢印が小さく滑る)。中身は <svg> */
+.vk-arrow { display: inline-grid; place-items: center; width: max(28px, calc(18 * var(--u))); height: max(28px, calc(18 * var(--u))); border-radius: 50%; border: 1px solid var(--vk-bd); background: transparent; color: var(--vk-text); transition: background 0.3s, color 0.3s, border-color 0.3s; }
+.vk-arrow > * { width: max(12px, calc(10 * var(--u))); height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.vk-hov:hover .vk-arrow, .vk-arrow:hover { background: var(--vk-deep); color: #fff; border-color: var(--vk-deep); }
+.vk-hov:hover .vk-arrow > *, .vk-arrow:hover > * { transform: translateX(2px); }
+/* 写真(入れ物 .vk-zoom の中の img が、触るとゆっくり寄る。親が .vk-hov のカードでも効く) */
+.vk-zoom { overflow: hidden; }
+.vk-zoom img { transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.vk-hov:hover .vk-zoom img, .vk-zoom:hover img { transform: scale(1.04); }
+/* 写真のゆっくりした寄り(ずっと。入れ物に overflow: hidden と vk-live。最初のヒーローなど)。24〜32 秒かけて 1 → 1.07 */
+.vk-kb { animation: vk-kb 30s ease-in-out infinite alternate; transform-origin: 58% 46%; }
+@keyframes vk-kb { from { scale: 1; } to { scale: 1.07; } }
+/* 写真のゆっくりした寄り(スクロールで。入れ物に overflow: hidden。--ss で寄る量) */
+.vk-scroll-zoom { scale: calc(1 + var(--p, 0) * var(--ss, 0.06)); }
+/* ハート(お気に入り。写真の上は白抜き、明るい地の上は vk-heart--ink) */
+.vk-heart { display: inline-grid; place-items: center; width: max(34px, calc(22 * var(--u))); height: max(34px, calc(22 * var(--u))); padding: 0; border: 0; border-radius: 50%; background: rgb(var(--vk-ink-rgb) / 0.3); backdrop-filter: blur(2px); cursor: pointer; transition: transform 0.2s, background 0.3s; }
+.vk-heart svg { width: max(16px, calc(11 * var(--u))); height: max(16px, calc(11 * var(--u))); fill: none; stroke: #fff; transition: fill 0.25s, stroke 0.25s; }
+.vk-heart.vk-heart--ink { background: transparent; backdrop-filter: none; }
+.vk-heart.vk-heart--ink svg { stroke: var(--vk-text); }
+.vk-heart:hover { transform: scale(1.08); }
+.vk-heart.is-on { background: rgba(255, 255, 255, 0.92); }
+.vk-heart.is-on svg { fill: var(--vk-heart); stroke: var(--vk-heart); }
+
+/* ---------- 追従タブ(ScrollSpyTabs。トップ / 客室 / 温泉 / …)。見本は字の間に「/」、今の節に黒い下線 ---------- */
+.vk-tabs { position: sticky; top: var(--vk-hy, 0px); z-index: 50; display: flex; justify-content: center; background: rgb(var(--vk-paper-rgb) / 0.96); border-bottom: 1px solid var(--vk-line); backdrop-filter: blur(6px); }
+.vk-tab { position: relative; z-index: 1; display: grid; justify-items: center; align-content: center; gap: 1px; min-height: max(46px, calc(34 * var(--u))); padding: 0 calc(22 * var(--u)); border: 0; background: transparent; font-size: var(--vk-fs-xs); font-weight: 500; letter-spacing: 0.1em; color: var(--vk-text2); cursor: pointer; transition: color 0.3s; }
+.vk-tab + .vk-tab::before { content: "/"; position: absolute; left: 0; top: 50%; translate: -50% -50%; color: var(--vk-dim); font-weight: 300; }
+.vk-tab-sub { font-family: var(--vk-ff-lab); font-size: var(--vk-fs-2xs); letter-spacing: 0.2em; color: var(--vk-mut); text-transform: uppercase; }
+.vk-tab:hover { color: var(--vk-ink); }
+.vk-tab.is-on { color: var(--vk-ink); font-weight: 700; }
+.vk-tabs-ind { position: absolute; z-index: 0; left: 0; bottom: -1px; width: var(--iw, 0px); height: 2px; translate: var(--ix, 0px) 0; background: var(--vk-ink); transition: translate 0.5s cubic-bezier(0.3, 0.8, 0.2, 1), width 0.5s cubic-bezier(0.3, 0.8, 0.2, 1); pointer-events: none; }
+
+/* ---------- 出現(.io。Motion が .is-in を付ける)。JS が動くとき・動きを減らす設定でないときだけ、最初は隠す。ふわっと(小さく・ゆっくり) ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .vk-root .io { opacity: 0; translate: 0 calc(14 * var(--u)); transition: opacity 1.15s ease var(--d, 0ms), translate 1.25s cubic-bezier(0.22, 0.7, 0.2, 1) var(--d, 0ms); }
+  .vk-root .io[data-io="fade"] { translate: none; }
+  .vk-root .io[data-io="left"] { translate: calc(-18 * var(--u)) 0; }
+  .vk-root .io[data-io="right"] { translate: calc(18 * var(--u)) 0; }
+  .vk-root .io.is-in { opacity: 1; translate: none; }
+  /* 大見出しの 1 行ずつ(MaskLines)は、自分の中身を動かすので外側は動かさない */
+  .vk-root .io.io-self { opacity: 1; translate: none; transition: none; }
+  .vk-ml-i { translate: 0 108%; }
+  .vk-mask.is-in .vk-ml-i { translate: 0 0; transition: translate 1.25s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--d, 0ms) + var(--i, 0) * var(--step, 140ms)); }
+}
+.vk-mask { display: block; }
+.vk-ml { display: block; overflow: hidden; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.vk-ml-i { display: block; }
+
+/* 画面の外・非表示タブでは、ずっと動く物を止める(Motion が is-off / data-vk-hidden を付ける) */
+.vk-live.is-off, .vk-live.is-off *, .vk-live.is-off *::before, .vk-live.is-off *::after { animation-play-state: paused !important; }
+.vk-root[data-vk-hidden] *, .vk-root[data-vk-hidden] *::before, .vk-root[data-vk-hidden] *::after { animation-play-state: paused !important; }
+
+/* ---------- スマホ・タブレット(1000px 未満)。--u は使わず px で組む ---------- */
+@media (max-width: 999px) {
+  .vk-root { font-size: 14px; line-height: 1.7; }
+  .vk-shell, .vk-shell[data-vk-page] { --vk-hh: 56px; --hs: 1; --vk-gut: 16px; --vk-fs-2xs: 11px; --vk-fs-xs: 12px; --vk-fs-s: 13px; --vk-fs-m: 14px; }
+  .vk-logo { gap: 9px; }
+  .vk-logo-mark { width: 34px; }
+  .vk-logo-t { gap: 4px; }
+  .vk-logo-jp { font-size: 16px; }
+  .vk-logo-en { font-size: 7px; }
+  /* 帯は全ページ、地のある帯(最初・探すも重ねない)。店の紹介だけ濃い面 */
+  .vk-shell[data-vk-page="top"] .vk-head, .vk-shell[data-vk-page="search"] .vk-head { margin-bottom: 0; }
+  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled), .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: rgb(var(--vk-paper-rgb) / 0.98); color: var(--vk-text); border-bottom-color: rgb(var(--vk-shade-rgb) / 0.08); }
+  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta), .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { text-shadow: none; }
+  .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { color: inherit; }
+  .vk-head-in { width: 100%; }
+  .vk-head-logo { left: 16px; }
+  .vk-head-nav, .vk-head-cta { display: none; }
+  .vk-head-ic, .vk-shell[data-vk-page="top"] .vk-head-ic, .vk-shell[data-vk-page="shop"] .vk-head-ic { right: 6px; padding-left: 0; border-left: 0; height: auto; }
+  .vk-shell[data-vk-page] .vk-hi { flex-direction: column; justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; margin-left: 0; }
+  .vk-shell[data-vk-page="top"] .vk-hi--menu { display: flex; }
+  .vk-hi-i { width: 22px; height: 22px; }
+  .vk-hi-l { display: none; }
+  .vk-drawer { left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
+  .vk-drawer a { padding: 14px 10px; font-size: 15px; border-bottom: 1px solid var(--vk-line); }
+  .vk-drawer a:last-child { border-bottom: 0; }
+  .vk-shell [id] { scroll-margin-top: 66px; }
+
+  .vk-wrap { width: 100%; padding: 0 16px; }
+  .vk-h2 { font-size: 24px; }
+  .vk-lead { font-size: 14px; line-height: 1.9; }
+  .vk-num { font-size: 28px; }
+  .vk-more { font-size: 12px; gap: 8px; }
+  .vk-more svg { width: 15px; }
+  .vk-btn { height: 48px; padding: 0 26px; font-size: 13px; gap: 10px; }
+  .vk-btn svg { width: 15px; }
+  .vk-chip { height: 24px; padding: 0 10px; }
+  .vk-arrow { width: 32px; height: 32px; }
+  .vk-arrow > * { width: 13px; }
+  .vk-heart { width: 36px; height: 36px; }
+  .vk-heart svg { width: 17px; height: 17px; }
+  .vk-tab { min-height: 46px; padding: 0 18px; font-size: 13px; }
+  .vk-tabs { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+  .vk-tabs::-webkit-scrollbar { display: none; }
+  .vk-tabs .vk-tab { flex: 0 0 auto; }
+  .vk-root .io { translate: 0 12px; }
+  .vk-root .io[data-io="left"] { translate: -14px 0; }
+  .vk-root .io[data-io="right"] { translate: 14px 0; }
+  .vk-root .io[data-io="fade"] { translate: none; }
+  .vk-root .io.is-in { translate: none; }
+  .vk-root .io.io-self { translate: none; }
+  .vk-crumbs-sep { margin: 0 8px; }
+
+  /* フッター */
+  .vk-foot-in { width: 100%; padding: 26px 16px 20px; }
+  .vk-foot-row { flex-wrap: wrap; gap: 18px 16px; }
+  .vk-foot-logo { --hs: 1; }
+  .vk-foot-nav { order: 3; flex-basis: 100%; flex-wrap: wrap; justify-content: flex-start; gap: 4px 22px; font-size: 13px; }
+  .vk-foot-nav a { padding: 8px 0; }
+  .vk-foot-r { margin-left: auto; gap: 12px; }
+  .vk-sns { width: 44px; height: 44px; }
+  .vk-sns svg { width: 20px; height: 20px; }
+  .vk-totop { width: 44px; height: 44px; }
+  .vk-totop svg { width: 15px; height: 15px; }
+  .vk-foot-sub { flex-direction: column; align-items: flex-start; margin-top: 18px; padding-top: 14px; font-size: 11px; }
+  .vk-foot-links { gap: 4px 18px; }
+  .vk-foot-links a { padding: 6px 0; }
+  .vk-foot-copy { white-space: normal; }
+}
+
+/* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .vk-root *, .vk-root *::before, .vk-root *::after { animation: none !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .vk-root .io { opacity: 1; translate: none; }
+  .vk-ml-i { translate: none; }
+  .vk-scroll-zoom { scale: none; }
+  .vk-head.is-hidden { translate: none; }
+}
