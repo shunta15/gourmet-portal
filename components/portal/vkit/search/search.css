@@ -16,8 +16,8 @@
 .vq-hero-in .vk-crumbs a, .vq-hero-in .vk-crumbs [aria-current="page"] { color: inherit; }
 .vq-hero-in .vk-crumbs-sep { opacity: 0.9; }
 .vq-h1 { font-family: var(--vk-ff-min); font-weight: 500; font-size: calc(56 * var(--u)); line-height: 1.4; letter-spacing: 0.04em; color: var(--vk-ink); }
-.vq-sub { margin-top: calc(8 * var(--u)); font-family: var(--vk-ff-min); font-size: max(13px, calc(12.6 * var(--u))); letter-spacing: 0.18em; color: var(--vk-text); }
-.vq-hero-note { position: absolute; z-index: 2; right: calc(34 * var(--u)); top: calc(148 * var(--u)); font-family: var(--vk-ff-min); font-size: max(12px, calc(10 * var(--u))); line-height: 1.9; letter-spacing: 0.1em; color: #fff; text-shadow: 0 1px 10px rgba(10, 14, 20, 0.55); text-align: left; }
+.vq-sub { margin-top: calc(8 * var(--u)); font-family: var(--vk-ff-min); font-size: max(13px, calc(12.6 * var(--u))); letter-spacing: 0.18em; color: var(--vk-text); word-break: auto-phrase; text-wrap: balance; }
+.vq-hero-note { position: absolute; z-index: 2; right: calc(34 * var(--u)); top: calc(148 * var(--u)); font-family: var(--vk-ff-min); font-size: max(12px, calc(10 * var(--u))); line-height: 1.9; letter-spacing: 0.1em; color: #fff; text-shadow: 0 0 3px rgba(10, 14, 20, 0.8), 0 1px 14px rgba(10, 14, 20, 0.7); text-align: left; }
 
 /* 検索の箱 */
 .vq-box { position: absolute; z-index: 3; left: calc(35 * var(--u)); right: calc(35 * var(--u)); bottom: calc(21 * var(--u)); display: flex; align-items: stretch; min-height: max(54px, calc(50 * var(--u))); padding: calc(6 * var(--u)) calc(6 * var(--u)) calc(6 * var(--u)) calc(14 * var(--u)); background: rgb(var(--vk-white-rgb) / 0.98); border-radius: calc(12 * var(--u)); box-shadow: 0 calc(6 * var(--u)) calc(26 * var(--u)) rgba(30, 36, 44, 0.2); }
@@ -113,6 +113,7 @@
 .vq-kind { font-size: var(--vk-fs-2xs); }
 /* 文字の大きさは文字の欄の幅に合わせる(cqw。記事の一覧の .val-name と同じ作り)。欄が狭いと、9〜10 字のカタカナの店名(「ダイビングセンター」)が 1 行に入らず、語の途中で折れていた */
 .vq-name { margin-top: calc(12 * var(--u)); font-family: var(--vk-ff-min); font-weight: 500; font-size: clamp(14px, 9.4cqw, calc(15.5 * var(--u))); line-height: 1.6; letter-spacing: 0.05em; color: var(--vk-ink); overflow-wrap: anywhere; }
+.vq-name { text-wrap: pretty; } /* 最後の行に 1〜2 字だけ残らないようにする(balance は overflow-wrap: anywhere と組むと塊の途中で折れるので使わない) */
 .vq-name a { color: inherit; }
 .vq-name a::after { content: ""; position: absolute; inset: 0; }
 .vq-name a:focus-visible { outline: 2px solid var(--vk-gold); outline-offset: 3px; }

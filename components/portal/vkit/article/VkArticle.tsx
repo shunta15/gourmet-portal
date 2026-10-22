@@ -73,7 +73,7 @@ function Section({ s }: { s: ArtSection }) {
         {s.extra && s.extra.length > 0 ? (
           <div className="vk-a-xps io" data-n={s.extra.length} style={{ ["--d" as string]: "220ms" }}>
             {s.extra.map((p) => (
-              <figure key={p.src} className="vk-a-xp vk-zoom">
+              <figure key={p.src} className="vk-a-xp vk-zoom" style={{ maxWidth: Math.round(p.w * 1.5) }}>
                 <img src={p.src} width={p.w} height={p.h} alt={p.alt} loading="lazy" decoding="async" />
               </figure>
             ))}

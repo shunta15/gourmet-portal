@@ -16,7 +16,7 @@
 .vk-a-story { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0; font-size: 12px; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.88); }
 .vk-a-story .vk-lab { color: #fff; font-size: 11px; }
 .vk-a-kick { padding-left: 14px; border-left: 1px solid rgba(255, 255, 255, 0.4); }
-.vk-a-h1 { font-feature-settings: "palt" 1; margin: 16px 0 0; font-family: var(--vk-ff-min); font-weight: 400; line-height: 1.32; letter-spacing: 0.04em; color: #fff; overflow-wrap: anywhere; }
+.vk-a-h1 { font-feature-settings: "palt" 1; margin: 16px 0 0; font-family: var(--vk-ff-min); font-weight: 400; line-height: 1.32; letter-spacing: 0.04em; color: #fff; overflow-wrap: anywhere; word-break: auto-phrase; }
 .vk-a-h1--s1 { font-size: 36px; }
 .vk-a-h1--s2 { font-size: 30px; }
 .vk-a-h1--s3 { font-size: 23px; }
@@ -30,7 +30,7 @@
 .vk-a-no { display: flex; align-items: baseline; gap: 14px; margin: 0; line-height: 1; }
 .vk-a-no .vk-num { font-size: 24px; color: var(--a-gold); }
 .vk-a-kk { font-family: var(--vk-ff-min); font-size: 12px; letter-spacing: 0.12em; color: var(--vk-gold-d); }
-.vk-a-h2 { margin: 12px 0 0; font-family: var(--vk-ff-min); font-weight: 400; font-size: 22px; line-height: 1.5; letter-spacing: 0.08em; color: var(--vk-ink); overflow-wrap: anywhere; }
+.vk-a-h2 { margin: 12px 0 0; font-family: var(--vk-ff-min); font-weight: 400; font-size: 22px; line-height: 1.5; letter-spacing: 0.08em; color: var(--vk-ink); overflow-wrap: anywhere; word-break: auto-phrase; }
 .vk-a-bd { margin-top: 14px; font-size: 14px; line-height: 1.95; letter-spacing: 0.04em; color: var(--vk-body); word-break: auto-phrase; text-wrap: pretty; }
 .vk-a-bd p + p { margin-top: 10px; }
 .vk-a-ph { position: relative; margin: 0; overflow: hidden; background: var(--vk-line); }
@@ -164,6 +164,10 @@
   .vk-a-sec--band .vk-a-ph { position: absolute; top: 0; right: 0; bottom: 0; width: 72%; min-height: 0; }
   .vk-a-sec--band .vk-a-ph::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--vk-dark) 0, rgb(var(--vk-dark-rgb) / 0.94) 16%, rgb(var(--vk-dark-rgb) / 0.6) 34%, rgb(var(--vk-dark-rgb) / 0.14) 56%, transparent 74%); }
   .vk-a-sec--band .vk-a-tx { position: relative; z-index: 2; width: calc(400 * var(--u)); padding: calc(26 * var(--u)) calc(30 * var(--u)) calc(28 * var(--u)) calc(38 * var(--u)); }
+  /* 店の特集は 1 節が長い(本文 600 字ほど)。写真を節の高さまで引き伸ばすと、小さな写真が何倍にも広がってぼやけるので、写真の枠の高さに上限を置く
+     (帯は上から上限の高さまで・右/左の写真は上限の高さのまま、本文を読むあいだ画面の上に付いてくる)。短い節(紹介記事)は今までどおり節の高さに合わせる */
+  .vk-a-sec--band .vk-a-ph { bottom: auto; height: min(100%, calc(380 * var(--u))); -webkit-mask-image: linear-gradient(180deg, #000 0, #000 84%, transparent 100%); mask-image: linear-gradient(180deg, #000 0, #000 84%, transparent 100%); }
+  .vk-a-sec--right .vk-a-ph, .vk-a-sec--left .vk-a-ph { max-height: calc(380 * var(--u)); position: sticky; top: calc(var(--vk-hh) + 16 * var(--u)); }
   .vk-a-sec--band .vk-a-no { gap: calc(18 * var(--u)); }
   .vk-a-sec--band .vk-a-h2 { margin-top: calc(14 * var(--u)); }
   .vk-a-sec--band .vk-a-bd { color: var(--vk-line); }

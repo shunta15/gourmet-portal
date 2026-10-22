@@ -21,7 +21,7 @@
 .val-hero-in .vk-crumbs a, .val-hero-in .vk-crumbs [aria-current="page"] { color: inherit; }
 .val-hero-in .vk-crumbs-sep { opacity: 0.9; }
 .val-h1 { font-family: var(--vk-ff-min); font-weight: 500; font-size: calc(56 * var(--u)); line-height: 1.4; letter-spacing: 0.04em; color: var(--vk-ink); }
-.val-sub { margin-top: calc(8 * var(--u)); font-family: var(--vk-ff-min); font-size: max(13px, calc(12.6 * var(--u))); letter-spacing: 0.18em; color: var(--vk-text); }
+.val-sub { margin-top: calc(8 * var(--u)); font-family: var(--vk-ff-min); font-size: max(13px, calc(12.6 * var(--u))); letter-spacing: 0.18em; color: var(--vk-text); word-break: auto-phrase; text-wrap: balance; }
 .val-hero-note { position: absolute; z-index: 2; right: calc(34 * var(--u)); top: calc(148 * var(--u)); font-family: var(--vk-ff-min); font-size: max(12px, calc(10 * var(--u))); line-height: 1.9; letter-spacing: 0.1em; color: #fff; text-shadow: 0 1px 10px rgba(10, 14, 20, 0.55); text-align: left; }
 
 /* 検索の箱 */
@@ -117,7 +117,7 @@
 .val-n { font-size: calc(36 * var(--u)); font-variant-numeric: lining-nums; }
 .val-kind { font-size: var(--vk-fs-2xs); }
 .val-name { margin-top: calc(12 * var(--u)); font-family: var(--vk-ff-min); font-weight: 500; font-size: clamp(14px, 7.1cqw, calc(15.5 * var(--u))); line-height: 1.6; letter-spacing: 0.04em; color: var(--vk-ink); overflow-wrap: anywhere; }
-.val-l1, .val-l2 { display: block; }
+.val-l1, .val-l2 { display: block; text-wrap: pretty; } /* 「湯の / 山」のように最後の行に 1 字だけ残らないようにする(balance は overflow-wrap: anywhere と組むと塊の途中で折れるので使わない) */
 .val-name a { color: inherit; }
 .val-name a::after { content: ""; position: absolute; inset: 0; }
 .val-name a:focus-visible { outline: 2px solid var(--vk-gold); outline-offset: 3px; }

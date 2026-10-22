@@ -15,7 +15,7 @@ export const sportsCfg: VkConfig = {
   noun: "施設",
   nounEn: "Places",
   ctaW: 100,
-  fx: { photoDim: 0.96, heroDim: 1, areaDim: 0.3, navShift: 8, navChars: 42 },
+  fx: { photoDim: 0.8, heroDim: 1.8, areaDim: 0.3, navShift: 8, navChars: 42 },
   theme: {
     paper: "#f4f6f6",
     paper2: "#f8f9f9",

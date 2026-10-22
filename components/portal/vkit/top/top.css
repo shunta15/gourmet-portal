@@ -86,7 +86,7 @@
 .vk-t-sc-ph { display: block; aspect-ratio: 200 / 112; overflow: hidden; }
 .vk-t-sc-ph img { width: 100%; height: 100%; object-fit: cover; }
 .vk-t-sc-b { display: block; padding: 10px 28px 12px 10px; }
-.vk-t-sc-n { display: block; font-family: var(--vk-ff-min); font-size: 13.5px; line-height: 1.5; letter-spacing: 0.06em; color: var(--vk-text); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
+.vk-t-sc-n { display: block; font-family: var(--vk-ff-min); font-size: 13.5px; line-height: 1.5; letter-spacing: 0.06em; color: var(--vk-text); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; word-break: auto-phrase; }
 .vk-t-sc-a { display: block; margin-top: 5px; font-size: 11.5px; letter-spacing: 0.06em; color: var(--vk-mut); }
 .vk-t-sc-ar { position: absolute; right: 10px; bottom: 13px; width: 14px; height: auto; color: var(--vk-gold); transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
 .vk-t-sc:hover .vk-t-sc-ar { transform: translateX(4px); }
@@ -120,7 +120,7 @@
 .vk-t-ac { display: grid; grid-template-columns: 112px 1fr; gap: 14px; align-items: start; }
 .vk-t-ac-ph { display: block; aspect-ratio: 3 / 2; overflow: hidden; }
 .vk-t-ac-ph img { width: 100%; height: 100%; object-fit: cover; }
-.vk-t-ac-n { display: block; font-family: var(--vk-ff-min); font-size: 14.5px; line-height: 1.55; letter-spacing: 0.06em; color: var(--vk-text); overflow-wrap: anywhere; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.vk-t-ac-n { display: block; font-family: var(--vk-ff-min); font-size: 14.5px; line-height: 1.55; letter-spacing: 0.06em; color: var(--vk-text); overflow-wrap: anywhere; word-break: auto-phrase; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
 .vk-t-ac-s { display: block; margin-top: 6px; font-size: 11.5px; letter-spacing: 0.05em; color: var(--vk-body); }
 .vk-t-ac-d { display: block; margin-top: 8px; font-family: var(--vk-ff-lab); font-size: 11px; letter-spacing: 0.12em; color: var(--vk-mut); }
 
@@ -221,7 +221,7 @@
   .vk-t-stays-jp { margin-top: calc(14 * var(--u)); font-size: max(13px, calc(10.6 * var(--u))); }
   .vk-t-stays ul { margin: 0; gap: calc(11 * var(--u)); grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .vk-t-sc-b { padding: calc(8 * var(--u)) calc(30 * var(--u)) calc(11 * var(--u)) calc(14 * var(--u)); }
-  .vk-t-sc-n { font-size: max(13px, calc(10.4 * var(--u))); -webkit-line-clamp: 1; line-clamp: 1; overflow-wrap: normal; }
+  .vk-t-sc-n { font-size: max(13px, calc(10.4 * var(--u))); -webkit-line-clamp: 2; line-clamp: 2; overflow-wrap: anywhere; text-wrap: pretty; } /* 長い店名(「フォレストアドベンチャー・湯の山」)が「…」で切れないよう 2 行まで */
   .vk-t-sc-a { margin-top: calc(4 * var(--u)); font-size: max(11px, calc(7.8 * var(--u))); }
   .vk-t-sc-ar { right: calc(14 * var(--u)); bottom: calc(19 * var(--u)); width: max(14px, calc(11 * var(--u))); }
   .vk-t-stays-more { width: calc(984 * var(--u)); margin: calc(8 * var(--u)) auto 0; padding: 0 calc(24 * var(--u)) calc(8 * var(--u)) 0; }

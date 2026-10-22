@@ -194,12 +194,16 @@ function chunkSentences(sents: string[], max = 150): string[] {
   return out;
 }
 
+/** 節の大きな写真に使う写真の幅(px)の下限。これより小さい写真は、節の大きな枠ではなく本文の下の小さな並びに出す(広げてぼやけさせない) */
+const SECTION_PHOTO_MIN_W = 600;
+
 /**
  * 店の特集(features-*.json)から、記事の節を作る。
  *   5 つのポイント = 見出し(ポイントの名前そのまま)・小さな札(ポイントの分類)・本文(150 字ほどずつの段落)・事実の表・写真(店の写真として使えるもの。1 枚目は節の写真、2 枚目以降は本文の下)
  *   + 編集部のひとこと + 最後に確かめたいこと。どれも文は 1 文ずつ vkLineOk に通し、通らない文だけ落とす(言い換えない)。本文が 1 文も残らない節は出さない。
  * 写真は店の写真(photos = 人物が主役でない・使えるもの)にあるものだけ。同じ写真を同じページで 2 回は使わない(used)。
  * 写真のある節は 帯 → 右に写真 → 左に写真 の順に 3 つの組みを回し、写真の無い節は文だけの組み(右)にする。
+ * 節の大きな写真は幅 SECTION_PHOTO_MIN_W 以上のものだけ。それより小さい写真は本文の下の小さな並び(extra)に出す。
  */
 function featureSections(f: PlaceFeature, photos: KPhoto[], used: Set<string>): ArtSection[] {
   const A = f.article;
@@ -215,7 +219,10 @@ function featureSections(f: PlaceFeature, photos: KPhoto[], used: Set<string>): 
   const push = (v: { kicker: string; heading: string; paras: string[]; specs?: Array<{ k: string; v: string }>; images?: string[] }) => {
     if (v.paras.length === 0) return;
     const imgs = (v.images ?? []).map(take).filter((x): x is LivePhoto => !!x);
-    const photo = imgs[0] ?? null;
+    // 節の大きな写真 = 幅が足りる(SECTION_PHOTO_MIN_W 以上)写真のうち、特集で先に挙がっているもの。幅の足りない写真(公式サイトの 300px の縮小画像など)は、
+    // 大きな枠に広げてぼやけるので、本文の下の小さな並び(extra)に回す(元の並びは保つ)。足りる写真が 1 枚も無い節は、文だけの組みになる
+    const photo = imgs.find((x) => x.w >= SECTION_PHOTO_MIN_W) ?? null;
+    const rest = imgs.filter((x) => x !== photo);
     const k = out.length;
     out.push({
       no: String(k + 1).padStart(2, "0"),
@@ -228,7 +235,7 @@ function featureSections(f: PlaceFeature, photos: KPhoto[], used: Set<string>): 
       shape: photo ? (photo.w / Math.max(1, photo.h) >= 1.2 ? "wide" : photo.w / Math.max(1, photo.h) >= 0.95 ? "sq" : "tall") : "wide",
       quote: null,
       ...(v.specs && v.specs.length > 0 ? { specs: v.specs } : {}),
-      ...(imgs.length > 1 ? { extra: imgs.slice(1) } : {}),
+      ...(rest.length > 0 ? { extra: rest } : {}),
       ...(v.heading.length > 20 ? { longHeading: true } : {}),
     });
   };
