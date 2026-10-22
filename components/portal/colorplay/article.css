@@ -31,7 +31,6 @@
 .art-go{margin-top:auto; align-self:flex-end; width:38px; height:38px; border-radius:50%; background:#111; color:#fff; display:grid; place-items:center; transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 .art-card.t-black .art-go,.art-card.t-red .art-go{background:#fff; color:#111}
 .art-card:hover .art-go{transform:translateX(4px) scale(1.1)}
-.art-more-links{display:flex; flex-wrap:wrap; justify-content:center; gap:12px}
 
 /* ===== 記事のページ ===== */
 .art-hero .art-shop{margin-top:18px; font-size:clamp(16px,1.6vw,20px)}
