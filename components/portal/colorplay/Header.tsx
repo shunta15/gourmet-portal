@@ -24,6 +24,7 @@ export default function Header({ base, logoA, logoB, onColor = false, ink = fals
     { href: `${base}/search`, label: "お店を探す" },
     { href: `${base}#area`, label: "エリア" },
     { href: `${base}#kinds`, label: "種類" },
+    { href: `${base}/article`, label: "特集記事" },
   ];
   useEffect(() => {
     if (!open) return;

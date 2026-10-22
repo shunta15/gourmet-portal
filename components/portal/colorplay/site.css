@@ -1,6 +1,12 @@
 /* COLOR PLAY(本番のビューティー・ボディケア)で、見本の CSS(bproto/colorplay/colorplay.css)に足す分。
    見本の CSS はそのまま使い、ここは「本番で増えた部品」と「業種ごとの色」だけ。 */
 
+/* メニューの全画面: 先頭の 4 つのリンク(お店を探す・エリア・種類・特集記事)を同じ大きさに(colorplay.css は 4 つめ以降を小さくする) */
+.cp-overlay li:nth-child(4) a{font-size:clamp(28px,5vw,48px); font-weight:900; opacity:1}
+/* メニューを開いている間、ヘッダーのぼかし(backdrop-filter)を外す。ぼかしがあると、中の position:fixed の全画面が画面ではなくヘッダーの高さ(96px)に収まってしまう
+   (色面に重ねる onColor のヘッダーはぼかしが無いので元から全画面。さがす・特集記事の一覧のように白い帯のヘッダーのページで直る) */
+.cp-header:has(.cp-overlay){backdrop-filter:none}
+
 /* 本文へ移動 / 読み上げだけの字 */
 .cp-skip{position:absolute; left:8px; top:-80px; z-index:200; padding:10px 16px; border-radius:999px; background:#111; color:#fff; font-weight:900; font-size:14px}
 .cp-skip:focus{top:8px}
@@ -104,6 +110,8 @@
 .cp-tile-t strong{display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; font-size:16px; font-weight:900; line-height:1.4; overflow-wrap:anywhere}
 .cp-tile-t small{display:block; margin-top:4px; font-size:12px; font-weight:500; opacity:.92}
 .cp-features .cp-more{margin-top:34px}
+/* 最初のページ: 「すべてのお店を見る」と「特集記事を読む」の 2 つの丸いボタン(幅が足りなければ折り返す) */
+.cp-more-pair{display:flex; flex-wrap:wrap; justify-content:center; gap:12px}
 
 @media (max-width:900px){
   .cp-kinds-sec{padding-top:36px}
