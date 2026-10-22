@@ -196,7 +196,10 @@ export function cpTopPage(site: CpSite) {
                   </li>
                 ))}
               </ul>
-              <p className="cp-more"><Link href={`${site.base}/search`}>すべてのお店を見る({shops.length}店)</Link></p>
+              <p className="cp-more cp-more-pair">
+                <Link href={`${site.base}/search`}>すべてのお店を見る({shops.length}店)</Link>
+                <Link href={`${site.base}/article`}>特集記事を読む</Link>
+              </p>
             </section>
           )}
         </main>

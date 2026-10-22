@@ -1,0 +1,75 @@
+/* COLOR PLAY(本番のビューティー)の特集記事(/beauty/article・/beauty/article/{id})。
+   見本の CSS(bproto/colorplay/colorplay.css)と店のページの CSS(site.css の .sh-*)の部品をそのまま使い、ここは「記事の一覧の札」と「記事の写真・最後の帯」だけ。
+   動きは transform・opacity だけ(新しい帯・流れる文字・飾りは足さない)。動きを減らす設定・JS なしでは、動かない完成形のまま読める。 */
+
+/* ===== 記事の一覧: 種類の色面の札 ===== */
+.art-list{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px}
+.art-card{--ab:#0a0a0a; --af:#fff; --fe:clamp(0, calc(var(--sp-e,1)*1.25), 1);
+  position:relative; display:flex; flex-direction:column; border-radius:30px; overflow:hidden; background:var(--ab); color:var(--af);
+  box-shadow:0 8px 24px rgba(0,0,0,.12); transition:box-shadow .3s;
+  translate:0 calc((1 - var(--fe))*40px); scale:calc(.95 + var(--fe)*.05); opacity:calc(.3 + var(--fe)*.7)}
+.art-card:hover{box-shadow:0 14px 34px rgba(0,0,0,.2)}
+.art-card.t-red{--ab:var(--red); --af:#fff}
+.art-card.t-pink{--ab:var(--pink); --af:#111}
+.art-card.t-sky{--ab:var(--sky); --af:#111}
+.art-card.t-blue{--ab:var(--blue); --af:#111}
+.art-card.t-black{--ab:#0a0a0a; --af:#fff}
+.art-card-ph{position:relative; display:block; aspect-ratio:4/3; overflow:hidden; background:#f1f2f6}
+.art-card-ph img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s}
+.art-card:hover .art-card-ph img{transform:scale(1.06)}
+.art-card-body{position:relative; flex:1; display:flex; flex-direction:column; gap:10px; min-width:0; padding:22px 24px 24px}
+.art-card .cp-tag{background:#fff; color:#111}
+.art-card .art-feat{background:transparent; color:inherit; box-shadow:inset 0 0 0 1.5px currentColor; font-weight:900}
+.art-card h3{font-size:clamp(18px,1.55vw,21px); font-weight:900; line-height:1.55; overflow-wrap:anywhere}
+.art-card h3 a::after{content:""; position:absolute; inset:0; z-index:1}
+.art-card h3 a:focus-visible{outline:none}
+.art-card:has(h3 a:focus-visible){outline:3px solid #111; outline-offset:3px}
+.art-shop{font-size:15px; font-weight:700; line-height:1.5; overflow-wrap:anywhere}
+.art-where{display:flex; align-items:flex-start; gap:6px; font-size:14px; line-height:1.5; opacity:.92}
+.art-where svg{flex:none; margin-top:2px}
+.art-lede{font-size:14px; line-height:1.75; opacity:.95; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden}
+.art-go{margin-top:auto; align-self:flex-end; width:38px; height:38px; border-radius:50%; background:#111; color:#fff; display:grid; place-items:center; transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.art-card.t-black .art-go,.art-card.t-red .art-go{background:#fff; color:#111}
+.art-card:hover .art-go{transform:translateX(4px) scale(1.1)}
+
+/* ===== 記事のページ ===== */
+.art-hero .art-shop{margin-top:18px; font-size:clamp(16px,1.6vw,20px)}
+.art-hero .sh-name{margin-top:20px}
+.art-hero .cp-addr-l{margin-top:14px}
+/* 記事の見出しは文のように長い(店のページは店名・短い見出し)ので、店のページより一回り小さくして読みやすくする */
+.art-sec .sh-h{font-size:clamp(24px,2.7vw,38px); line-height:1.5; max-width:20em}
+.art-sec .sh-sub{font-size:clamp(14px,1.2vw,16px)}
+/* 引用(特集の「編集部のまとめ」)は 1 段落ぶんの長さがあるので、大きすぎない字で横に広く */
+.art-quote .sh-bq{max-width:44em}
+.art-quote .sh-bq p{font-size:clamp(20px,2.3vw,32px); line-height:1.7}
+/* 節の中の写真(特集のポイントに付いた写真) */
+.art-fig{margin:0 0 22px; border-radius:22px; overflow:hidden; aspect-ratio:4/3; background:#eee}
+.art-fig img{width:100%; height:100%; object-fit:cover}
+/* 最後の帯: この店(店のページへ進む) */
+.art-end .sh-h{margin-bottom:22px}
+.art-end-box{max-width:760px}
+.art-end-name{margin-top:16px; font-size:clamp(24px,3vw,40px); font-weight:900; line-height:1.35; overflow-wrap:anywhere}
+.art-end .cp-addr{margin-top:14px; color:inherit}
+.art-end .cp-addr svg{color:inherit}
+.art-end .cp-tag{background:#fff; color:#111}
+.art-end .art-end-cta{margin:26px 0 0; max-width:560px}
+.art-end-cta .cp-red{width:100%}
+.art-end .sh-src{margin-top:34px}
+.art-end .sh-src a{color:inherit}
+.cp-mini-t.art-mini-t strong{display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; font-size:15px}
+
+@media (max-width:1000px){
+  .art-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .art-list{gap:16px}
+  .art-card-body{padding:18px 18px 20px}
+  .art-fig{border-radius:18px}
+}
+@media (max-width:640px){
+  .art-list{grid-template-columns:1fr}
+  .art-card h3{font-size:18px}
+}
+@media (prefers-reduced-motion: reduce){
+  .art-card{translate:none !important; scale:1 !important; opacity:1 !important}
+}

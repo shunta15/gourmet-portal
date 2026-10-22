@@ -11,6 +11,7 @@ export default function Footer({ site }: { site: CpSite }) {
           <li><Link href={`${site.base}/search`}>お店を探す</Link></li>
           <li><Link href={`${site.base}#area`}>エリア</Link></li>
           <li><Link href={`${site.base}#kinds`}>種類</Link></li>
+          <li><Link href={`${site.base}/article`}>特集記事</Link></li>
           <li><Link href="/">マチノワ トップ</Link></li>
           <li><Link href="/about">編集部について</Link></li>
           <li><Link href="/editorial/guidelines">掲載基準</Link></li>

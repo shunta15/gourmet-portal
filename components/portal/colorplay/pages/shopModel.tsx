@@ -329,6 +329,7 @@ export function MoreShops({ m }: { m: M }) {
           <div className="cp-minis">{sameKind.map((x, i) => (<MiniCard key={x.id} site={site} s={x} i={i} />))}</div>
         </section>
       )}
+      <p className="cp-wrap cp-more"><Link href={`${site.base}/article`}>特集記事を読む</Link></p>
     </>
   );
 }
