@@ -798,7 +798,7 @@ body:has(.ng) .cursor-ring {
     --H: max(100svh, 800px); /* 背の低い端末では、少し縦に長くして、重ならないようにする（輪の真ん中の表示が、回る写真に重ならない大きさを保つ） */
     --h1f: calc((100vw - 2 * var(--gut)) / 8.4); /* 見出しの大きさ（8 文字の行が幅の 9 割ほど） */
     --mt: calc(76px + var(--h1f) * 3.48 + 14px + 80px + 22px); /* 輪の上端: 見出し（3 行）・リード（3 行）の下 */
-    --mb: calc(var(--H) - 140px - env(safe-area-inset-bottom, 0px)); /* 輪の下端: ボタンの上 */
+    --mb: calc(var(--H) - 188px - env(safe-area-inset-bottom, 0px)); /* 輪の下端: ボタンの上(業種が 8 つになり、ボタンは 4 つ×2 段。1 段ぶん 48px 上げた: 余白 66 + 2 段 110 + すき間 12) */
     --cy: calc((var(--mt) + var(--mb)) / 2); /* 輪の中心の高さ */
   }
   .ng {
@@ -861,9 +861,15 @@ body:has(.ng) .cursor-ring {
   .ng-btns {
     margin-top: auto;
     gap: 6px;
+    /* 業種が 8 つ: 1 段に並べると 390px の幅に入らないので、4 つずつ 2 段にする */
+    flex-wrap: wrap;
+    justify-content: center;
+    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 62px); /* 下の .ng-b と同じ値(幅の計算に使う) */
+    width: calc(4 * var(--b) + 3 * 6px);
+    margin-inline: auto;
   }
   .ng-b {
-    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 62px);
+    --b: clamp(46px, calc((100vw - 2 * var(--gut) - 30px) / 6), 62px); /* 4 つ並ぶ幅(下の .ng-btns)なので、6 つのときの大きさのままで入る */
     font-size: 12px;
   }
   /* 輪の真ん中: 状態・数字・入口 */
@@ -924,7 +930,7 @@ body:has(.ng) .cursor-ring {
     --h1f: min(calc((100vw - 2 * var(--gut)) / 8.4), 4.7svh);
     --lead: clamp(12.5px, 3.4vw, 13.5px);
     --mt: calc(58px + var(--h1f) * 3.45 + 8px + var(--lead) * 4.65 + 12px); /* 見出し 3 行・リード 3 行（行の高さ 1.55）の下 */
-    --mb: calc(var(--H) - 82px - env(safe-area-inset-bottom, 0px)); /* 帯（高さ 48px ほど）の上 */
+    --mb: calc(var(--H) - 132px - env(safe-area-inset-bottom, 0px)); /* 帯（4 つ×2 段で高さ 98px ほど）の上 */
   }
   .ng {
     --d: calc(var(--Dout) * 0.158); /* 写真を少し小さくして、輪の真ん中に空きを作る */
@@ -939,6 +945,9 @@ body:has(.ng) .cursor-ring {
     margin-top: 8px;
     font-size: var(--lead);
     line-height: 1.55;
+  }
+  .ng-btns {
+    --b: clamp(42px, calc((100vw - 2 * var(--gut) - 30px) / 6), 52px); /* 下の .ng-b と同じ値(4 つ並ぶ幅の計算に使う) */
   }
   .ng-b {
     --b: clamp(42px, calc((100vw - 2 * var(--gut) - 30px) / 6), 52px);

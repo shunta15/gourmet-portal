@@ -132,7 +132,7 @@ export default function PortalHeader() {
               <li key={k} style={{ ["--i" as string]: i, ["--ac" as string]: v.accent.color }}>
                 <Link href={v.path} tabIndex={menu ? 0 : -1}>
                   <small>0{i + 1}</small>
-                  <b>{v.name}</b>
+                  <b>{VERTICAL_FACE[k].short ?? v.name}</b>
                   <em>{VERTICAL_FACE[k].en}</em>
                 </Link>
               </li>

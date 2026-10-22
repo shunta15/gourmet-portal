@@ -107,6 +107,8 @@
 .mp-menu-search input::placeholder{color:rgba(244,239,230,.5)}
 .mp-menu-search button{font:500 13px/1 var(--sans); letter-spacing:.1em; padding:8px 4px}
 .mp-menu-open{overflow:hidden}
+/* 業種が 8 つになった(2026-10-22): 背の低い画面(iPhone SE など)でも、8 行と検索欄が 1 画面に収まるように行を詰める */
+@media (max-height:760px){.mp-menu{gap:20px; padding-bottom:24px}.mp-menu li a{padding:11px 0}.mp-menu b{font-size:26px}.mp-menu em{font-size:19px}}
 .mp-menu-open .mp-hd, .mp-menu-open.mp-scrolled .mp-hd{color:var(--ivory); background:transparent; box-shadow:none; -webkit-backdrop-filter:none; backdrop-filter:none}
 .mp-menu-open .mp-hd-logo .en{color:rgba(244,239,230,.7)}
 .mp-menu-open .mp-hd-burger i{background:var(--ivory)}
