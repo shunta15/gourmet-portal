@@ -1,0 +1,3 @@
+/* 最初のページ(/beauty)の「お店を、のぞく。」の札は、出てくるときに傾けない(今の本番の見た目)。
+   以前は別のページの CSS がこの登録を持ち込んでいて、それで傾きが止まっていた。その CSS を消したので、同じ登録をここに置く。 */
+@property --r { syntax: "<percentage>"; inherits: false; initial-value: 0%; }

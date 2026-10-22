@@ -6,6 +6,7 @@
  * 飾りの画像(/_portal/bproto/colorplay/*.jpg)は、同じファイル名で差し替えるだけで済む(幅・高さは比率だけを使い、固定の大きさにしない)。
  */
 import Link from "next/link";
+import "./top-tiles.css";
 import JsonLd from "@/components/portal/JsonLd";
 import Header from "../Header";
 import Footer from "../Footer";
