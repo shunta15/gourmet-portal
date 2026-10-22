@@ -225,7 +225,7 @@ curl -s https://machinowa.tokyo/ | grep -o '<title>[^<]*</title>\|name="robots" 
 curl -s https://machinowa.tokyo/gourmet | grep -o '<title>[^<]*</title>\|rel="canonical" href="[^"]*"'
 curl -s https://machinowa.tokyo/robots.txt
 curl -s https://machinowa.tokyo/sitemap.xml | grep -c '<loc>https://machinowa.tokyo/gourmet</loc>'
-for p in station videos beauty bodycare pet leisure stay; do curl -s -o /dev/null -w "$p/sitemap.xml %{http_code}\n" https://machinowa.tokyo/$p/sitemap.xml; done
+for p in station videos beauty bodycare pet stay activity sports life; do curl -s -o /dev/null -w "$p/sitemap.xml %{http_code}\n" https://machinowa.tokyo/$p/sitemap.xml; done
 curl -sI https://machinowa.tokyo/og/home | head -3                 # 200 / image/png
 curl -sI https://machinowa.tokyo/portal-home | head -3             # 307 → /
 ```

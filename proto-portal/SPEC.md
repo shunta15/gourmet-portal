@@ -28,6 +28,10 @@
 | leisure | /leisure | おでかけ | マチノワおでかけ | スカイブルー |
 | stay | /stay | ステイ | マチノワステイ | インディゴ |
 
+> **2026-10-22 の変更(8 業種)**: 上の表は最初の仕様(6 業種)。オーナー決定で、`leisure`(おでかけ)は **`activity`(/activity・体験・アクティビティ・マチノワアクティビティ・種類 sea-river / mountain-sky / craft / sightseeing)に置き換え**(旧 /leisure/** は /activity/** へ 308)、
+> **`sports`(/sports・スポーツ・フィットネス・マチノワスポーツ・種類 gym / yoga-pilates / martial-arts / dance / golf / facility-goods)** と **`life`(/life・くらし・ライフスタイル・マチノワライフ・種類 lesson / shrine-temple / fashion-craft / photo-marriage / car-repair / flower-farm / fortune)** を追加。
+> 並びは `lib/verticals/index.ts` の `VERTICAL_ORDER`(グルメ・ビューティー・ボディケア・ペット・ステイ・アクティビティ・スポーツ・くらし)。種類・場面の正本は `lib/verticals/{activity,sports,life}.ts`。以下の leisure の記述は古い。
+
 ### 種類（category。slug は英小文字とハイフン。予約語 area/shop/feature/scene/search/sitemap は使わない）
 - beauty: hair 美容室・ヘアサロン / nail ネイル / eyelash まつげ・眉 / esthetic エステ / hair-removal 脱毛 / headspa ヘッドスパ
 - bodycare: seitai 整体 / sekkotsu 整骨院・接骨院 / shinkyu 鍼灸院 / massage マッサージ / relaxation リラクゼーション / stretch ストレッチ

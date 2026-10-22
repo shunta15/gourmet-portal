@@ -58,7 +58,7 @@ const verticalIndexContent = fs.readFileSync(
 const verticalIndexExports = parseExports(verticalIndexContent);
 
 // 各業種ファイルをチェック
-const verticalFiles = ['gourmet', 'beauty', 'bodycare', 'pet', 'leisure', 'stay'];
+const verticalFiles = ['gourmet', 'beauty', 'bodycare', 'pet', 'stay', 'activity', 'sports', 'life'];
 const allCategorySlugs = new Set();
 const allSceneSlugs = new Set();
 const RESERVED_SLUGS = new Set(['area', 'shop', 'feature', 'scene', 'search', 'sitemap']);
