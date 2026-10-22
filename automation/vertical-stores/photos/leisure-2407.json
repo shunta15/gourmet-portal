@@ -1,0 +1,96 @@
+{
+  "key": "leisure-2407",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2407/hero.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2026/03/aa098ac574b274766fe92637c5be44a4.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/blog/fish/%e3%83%93%e3%83%bc%e3%83%81%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88%e3%81%9f%e3%81%8a%e9%ad%9a%e3%81%9f%e3%81%a1/",
+      "what": "青い海の中を、銀色の魚が大きな群れになって泳いでいる(公式サイトの「ビーチポイントから見えたおさかな」の写真)",
+      "width": 1280,
+      "height": 720,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/p1.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2016/06/diving1-4.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/diving/",
+      "what": "砂地の海底の上を、白と黒の縞模様で背びれの長い魚が3匹泳いでいる(公式サイトの体験ダイビングのページの写真)",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/p2.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2017/02/diving2-1.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/fundiving/",
+      "what": "海底の岩場の上を、スクーバ器材を着けた3人のダイバーが泳いでいる(公式サイトのファンダイビングのページの写真。後ろ姿と遠景)",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s4.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2025/01/8e8239574d4e964d16bba396fdca831f.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/blog/fish/%e3%83%9c%e3%83%bc%e3%83%88%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88%e3%81%9f%e3%81%8a%e9%ad%9a%e3%81%9f%e3%81%a1/",
+      "what": "黒と白の縞模様で、ひれの縁が黄緑色の魚が、群れになって岩場の近くを泳いでいる(公式サイトの「ボートポイントから見えたおさかな」の写真)",
+      "width": 300,
+      "height": 225,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s5.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_03.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "休憩スペースBのオープンテラス。木の柱と屋根の下に、白いテーブルと椅子が並ぶ",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s6.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_05.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "シャワー室。カーテンで仕切られたブースが並び、床は青い",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s7.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_06.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "コインロッカーと休憩スペースA。緑色の扉のロッカーが壁ぎわに並び、手前に白いテーブルがある",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s8.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_08.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "レンタルタンクの置き場。グレーの本体で下が黄色のタンクが、コンクリートの壁の前にずらりと並ぶ",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s9.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_04.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "休憩スペースC。木の床と木のテーブルが並ぶ、天井の高い落ち着いた部屋",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2407/s10.jpg",
+      "imageUrl": "https://yawatano.rgr.jp/wp/wp-content/uploads/2023/09/facility_09.jpg",
+      "pageUrl": "https://www.yawatano.co.jp/facilities/",
+      "what": "駐車スペース。海沿いの舗装された広場で、奥に灯台のある防波堤が見える",
+      "width": 300,
+      "height": 200,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(yawatano.co.jp)の写真10枚(Google マップの写真・SNS の投稿は使わない)。顔が大きく写る写真(体験の参加者・スタッフ・受付の人・子ども)と、文字の入ったバナーは除いた。水中の写真は魚・遠景のダイバーだけで、顔は判別できない。"
+}

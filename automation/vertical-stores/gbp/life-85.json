@@ -1,6 +1,6 @@
 {
-  "tab": "おでかけ",
-  "tabEn": "leisure",
+  "tab": "くらし",
+  "tabEn": "life",
   "row": 85,
   "sheet": {
     "name": "藤森神社",
@@ -11,7 +11,7 @@
     "d2": ""
   },
   "classification": {
-    "vertical": "おでかけ",
+    "vertical": "くらし",
     "sub": "神社・寺",
     "sure": true,
     "source": "reports/業種分類_2026-10-22/classified.json"

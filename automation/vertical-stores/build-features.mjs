@@ -1,19 +1,23 @@
 #!/usr/bin/env node
 /**
- * build-features.mjs  —  vertical-stores（ビューティー・ボディケア）の特集記事
+ * build-features.mjs  —  vertical-stores（ビューティー・ボディケア・体験・アクティビティ・スポーツ・くらし）の特集記事
  *
  * features/<キー>.json（実在の店の特集記事。形は FEATURE.md の「出力」）から、サイトが読む特集のデータ
- * lib/places/generated/features-{beauty,bodycare}.json を作る。型は lib/places/features.ts の PlaceFeature。
+ * lib/places/generated/features-{beauty,bodycare,activity,sports,life}.json を作る。型は lib/places/features.ts の PlaceFeature。
+ *
+ * キーと業種: beauty-<行> → beauty、bodycare-<行> → bodycare、leisure-<行> → activity（体験・アクティビティ。シートのタブ名 leisure のまま。
+ *             features/<キー>.json の vertical は leisure でも activity でもよい）、sports-<行> → sports、life-<行> → life。
+ *             体験・スポーツ・くらしは 2026-10-22 の追加。ビューティー・ボディケアの出力は変えていない。
  * 出力は自動生成。手で編集しない（直すなら features/<キー>.json かこのスクリプトを直して作り直す）。
  *
  * サイトのデータに入れないもの: facts（事実の一覧）・notes・images の元 URL／載っていたページ（どれも確認用）。
  * 入れるもの: article（グルメの特集記事と同じ型 FeatureArticle）・summary・tags・sources・確認日・店 ID・業種・
  *             写真の寸法と説明（<img> の width/height/alt に使う）。
  *
- * 店 ID（placeId）: gbp/<キー>.json の Google マップの cid を ids.json（build-places.mjs の台帳）で引く。
+ * 店 ID（placeId）: gbp/<キー>.json の Google マップの cid を ids.json（build-places.mjs の台帳。業種ごと）で引く。
  *                   台帳に無ければ付けない（その店の店ページがまだ無い。特集ページは単独で出る）。
  *                   → 先に build-places.mjs を回して ID を払い出してから、このスクリプトを回す（順序が逆だと placeId が付かない）。
- *                   ページ側は、placeId の店が lib/places/generated/{beauty,bodycare}.json に実在するときだけ相互リンクを出す。
+ *                   ページ側は、placeId の店が lib/places/generated/{業種}.json に実在するときだけ相互リンクを出す。
  *
  * 載せない記事（理由つきで標準出力に出す）: 必須の項目が無い・id が URL に使えない・id の重複・
  *                   hero の写真のファイルが public/ に無い。5 つのポイントの写真が無ければ、その写真だけ外す。
@@ -44,7 +48,11 @@ const IDS_FILE = opt("ids", path.join(HERE, "ids.json"));
 const PUBLIC_DIR = opt("public", path.join(REPO, "public"));
 const GBP_DIR = path.join(HERE, "gbp");
 
-const VERTICALS = ["beauty", "bodycare"];
+const VERTICALS = ["beauty", "bodycare", "activity", "sports", "life"];
+// キーの接頭辞（シートのタブ名）→ 業種。体験・アクティビティだけ、タブ名は leisure（旧おでかけ）
+const KEY_PREFIX_TO_VERTICAL = { beauty: "beauty", bodycare: "bodycare", leisure: "activity", sports: "sports", life: "life" };
+const KEY_FORMS = Object.keys(KEY_PREFIX_TO_VERTICAL).map((p) => `${p}-<行>`).join(" / ");
+// 業種ごとの出力（features-<業種>.json）。体験・スポーツ・くらしは、特集のデータが入ったときだけ読まれる（lib/places/features.ts）
 const messages = [];
 const note = (key, msg) => messages.push(`${key}: ${msg}`);
 
@@ -54,6 +62,11 @@ const FORBIDDEN = [
   "最高", "絶対", "絶品", "必ず", "No.1", "日本一", "おすすめ", "人気", "話題", "評判",
   "口コミ", "お客様の声", "ビフォーアフター",
 ];
+// 体験・アクティビティ / スポーツ / くらしだけの追加（料金・評価・癒し・絶景・占いの的中などの表現。決まり 2026-10-22。build-places.mjs の FORBIDDEN_NEW と同じ）
+const FORBIDDEN_NEW = [
+  "無料", "無償", "割引", "特典", "プレゼント", "お得", "円", "税込", "料金", "評価", "★", "☆", "癒", "絶景", "贅沢", "至福", "運気", "開運", "当たる",
+];
+const NEW_VERTICALS = ["activity", "sports", "life"];
 
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8"));
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
@@ -133,10 +146,18 @@ function safeTitleHTML(html) {
   return /[<>]/.test(rest) ? null : s;
 }
 
+/** キー（beauty-98・leisure-85 など）→ 業種。形が違えば null */
+function verticalOfKey(key) {
+  const m = /^([a-z]+)-\d+$/.exec(key);
+  return m ? (KEY_PREFIX_TO_VERTICAL[m[1]] ?? null) : null;
+}
+
 function buildFeature(key, d) {
-  const vertical = str(d.vertical) || key.replace(/-\d+$/, "");
-  if (!VERTICALS.includes(vertical) || !new RegExp(`^${vertical}-\\d+$`).test(key)) {
-    note(key, "載せません: key / vertical が beauty-<行> / bodycare-<行> の形ではない");
+  // 業種はキーの接頭辞で決まる。features/<キー>.json の vertical は、その業種の名前（leisure は activity と同じ扱い）と合っていること
+  const vertical = verticalOfKey(key);
+  const declared = str(d.vertical) ? (KEY_PREFIX_TO_VERTICAL[str(d.vertical)] ?? str(d.vertical)) : vertical;
+  if (!vertical || declared !== vertical) {
+    note(key, `載せません: key / vertical が ${KEY_FORMS} の形ではない、または key と vertical が合わない（vertical=${JSON.stringify(d.vertical)}）`);
     return null;
   }
   const a = d.article;
@@ -232,7 +253,7 @@ function buildFeature(key, d) {
 
   // ---- 注意だけ出す
   const text = [article.title, article.subtitle, article.lede, str(d.summary), ...ranking.flatMap((r) => [r.name, r.cuisine, r.desc, ...r.specs.flatMap((s) => [s.k, s.v])]), article.quote, article.closing].join("\n");
-  for (const w of FORBIDDEN) if (text.includes(w)) note(key, `注意: 禁止の語「${w}」が含まれています（確認してください）`);
+  for (const w of NEW_VERTICALS.includes(vertical) ? [...FORBIDDEN, ...FORBIDDEN_NEW] : FORBIDDEN) if (text.includes(w)) note(key, `注意: 禁止の語「${w}」が含まれています（確認してください）`);
   const chars = charsOf(article);
   if (chars < 3000) note(key, `注意: 本文が ${chars} 字（3000 字未満）`);
   if (Number.isFinite(d.charCount) && Math.abs(d.charCount - chars) > 5) note(key, `注意: charCount ${d.charCount} と実測 ${chars} がずれています`);
@@ -276,7 +297,7 @@ function buildFeature(key, d) {
 }
 
 // ------------------------------------------------------------------ 本体
-const out = { beauty: [], bodycare: [] };
+const out = Object.fromEntries(VERTICALS.map((v) => [v, []]));
 const files = existsSync(FEATURES_DIR) ? readdirSync(FEATURES_DIR).filter((f) => f.endsWith(".json")).sort(natural) : [];
 const seen = new Map();
 for (const f of files) {
@@ -313,6 +334,6 @@ if (!DRY) {
   }
 }
 
-console.log(`${DRY ? "[dry] " : ""}features/*.json=${files.length}  beauty=${out.beauty.length}  bodycare=${out.bodycare.length}`);
+console.log(`${DRY ? "[dry] " : ""}features/*.json=${files.length}  ${VERTICALS.map((v) => `${v}=${out[v].length}`).join("  ")}`);
 for (const v of VERTICALS) for (const f of out[v]) console.log(`  ${f.key}  ${f.id}  placeId=${f.placeId ?? "-"}  POINT=${f.article.ranking.length}  写真=${Object.keys(f.photos).length}`);
 for (const m of messages) console.log(`  ${m}`);

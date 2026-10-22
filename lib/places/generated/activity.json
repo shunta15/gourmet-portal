@@ -1,4 +1,437 @@
 {
   "_note": "自動生成（automation/vertical-stores/build-places.mjs）。手で編集しない。直すときは gbp / articles / build-places.mjs を直して作り直す。",
-  "places": []
+  "places": [
+    {
+      "id": "ac0001",
+      "vertical": "activity",
+      "category": "mountain-sky",
+      "name": "フォレストアドベンチャー・湯の山",
+      "pref": "mie",
+      "cityName": "菰野町",
+      "address": "三重県三重郡菰野町菰野4958",
+      "lat": 35.009993,
+      "lng": 136.4731777,
+      "phone": "059-340-7739",
+      "url": "https://www.mori-kaori.jp/",
+      "website": "https://www.mori-kaori.jp/",
+      "mapUrl": "https://maps.google.com/?cid=12707706127050756084",
+      "image": "/_portal/vshops/leisure-2242/hero.jpg",
+      "images": [
+        "/_portal/vshops/leisure-2242/hero.jpg",
+        "/_portal/vshops/leisure-2242/p1.jpg",
+        "/_portal/vshops/leisure-2242/p2.jpg",
+        "/_portal/vshops/leisure-2242/s4.jpg",
+        "/_portal/vshops/leisure-2242/s5.jpg",
+        "/_portal/vshops/leisure-2242/s6.jpg",
+        "/_portal/vshops/leisure-2242/s7.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/leisure-2242/hero.jpg",
+          "what": "高い木が並ぶ森の上空で、緑のヘルメットの人がジップスライドで滑っている",
+          "width": 1160,
+          "height": 774
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/p1.jpg",
+          "what": "色とりどりのホールドが付いた木の板の壁を、ハーネスを着けた人が登っている(後ろ姿)",
+          "width": 1160,
+          "height": 774
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/p2.jpg",
+          "what": "芝の上に、1から12の数字が書かれた木のピンと、投げる木の棒が置かれたモルックの道具",
+          "width": 912,
+          "height": 588
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/s4.jpg",
+          "what": "林の上空を、2人が手をつないでジップスライドで並んで滑っている",
+          "width": 1160,
+          "height": 774
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/s5.jpg",
+          "what": "林の中の高い所に張られたロープを、2人がハーネスを着けて渡っている(遠景)",
+          "width": 1160,
+          "height": 774
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/s6.jpg",
+          "what": "林の中の広場に吊られたハンモックと、奥に網のついた遊具",
+          "width": 912,
+          "height": 588
+        },
+        {
+          "path": "/_portal/vshops/leisure-2242/s7.jpg",
+          "what": "太い綱から吊り輪とブランコが下がるスイングラインのある広場",
+          "width": 912,
+          "height": 588
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "三重県菰野町の自然共生型アウトドアパーク。樹上のアスレチックとジップスライドを体験できる",
+        "lede": "三重県三重郡菰野町菰野にある「フォレストアドベンチャー・湯の山」です。公式サイトでは、アドベンチャーパーク「オドルの森」の施設として案内され、三重県初の自然共生型アウトドアパークとされています。自然の立木の地上2〜15mの位置に設けた足場を渡り、ジップスライドなど40種類以上のアクティビティを樹上で体験します。",
+        "sections": [
+          {
+            "heading": "場所と行き方",
+            "body": "住所は三重県三重郡菰野町菰野4958、電話は059-340-7739です。電車は近鉄湯の山線の湯の山温泉駅から約550m、徒歩で約10分です。車は新名神高速道路の菰野ICから約10分、東名阪自動車道の四日市ICから約20分で、送迎はありません。運営は株式会社 森の香りです。営業日は、公式サイトの営業日カレンダーで案内されています。"
+          },
+          {
+            "heading": "3つのコース",
+            "body": "アドベンチャーコースは、樹上のアクティビティが40以上、ジップスライドが4本のコースで、体験時間は平均1時間30分から2時間です。クイックアドベンチャーは、約1時間で4本のジップスライドを滑れるショートコースです。ジップトリップコースは、ジップスライド2本のコースで、身長110cmから遊べ、平均30分から40分です。アドベンチャーコースとジップトリップコースには、手をつないで一緒に滑れる「ダブルジップスライド」があります。"
+          },
+          {
+            "heading": "利用の条件と流れ",
+            "body": "アドベンチャーコースは小学4年生以上または身長140cm以上、体重110kgまでが条件で、小学生までは18歳以上の保護者と一緒に参加します。手袋の着用は必須で、動きやすい長袖長ズボンと運動靴で来場します。予約がすすめられ(ジップトリップコースは予約不要)、受付のあと、参加者全員が安全講習を受けてからコースに出発します。安全講習は30分ごとで、各回は基本15名までです。"
+          },
+          {
+            "heading": "ほかの遊び",
+            "body": "同じ敷地には、運転免許が不要な四輪バギーの「カモシカバギー」があります。そのほか、巨大トランポリン、電動ウォーターガンで水のバトルをするスプラッシュウォーズ、森でとれた切り株でキーホルダーをつくるクラフト体験、モルックやハンモックなどの遊びが案内されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(オドルの森)",
+            "url": "https://www.mori-kaori.jp/"
+          },
+          {
+            "label": "公式サイト(フォレストアドベンチャー・湯の山)",
+            "url": "https://www.mori-kaori.jp/activity/fa-yunoyama/"
+          },
+          {
+            "label": "公式サイト(その他のコンテンツ)",
+            "url": "https://www.mori-kaori.jp/activity/sub-contents/"
+          },
+          {
+            "label": "公式サイト(よくある質問)",
+            "url": "https://www.mori-kaori.jp/faq/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.mori-kaori.jp/access/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12707706127050756084"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "ac0002",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "レザースタジオ サード",
+      "pref": "hiroshima",
+      "cityName": "福山市",
+      "address": "広島県福山市多治米町6丁目3-17",
+      "lat": 34.46674,
+      "lng": 133.3719153,
+      "hours": "月火木-日 10:00 - 18:00",
+      "holidays": "毎週水曜・年末年始(要確認)",
+      "phone": "084-971-7356",
+      "url": "https://leatherstudiothird.com/",
+      "website": "https://leatherstudiothird.com/",
+      "mapUrl": "https://maps.google.com/?cid=15279321513939332539",
+      "image": "/_portal/vshops/leisure-2526/hero.jpg",
+      "images": [
+        "/_portal/vshops/leisure-2526/hero.jpg",
+        "/_portal/vshops/leisure-2526/p1.jpg",
+        "/_portal/vshops/leisure-2526/p2.jpg",
+        "/_portal/vshops/leisure-2526/s4.jpg",
+        "/_portal/vshops/leisure-2526/s5.jpg",
+        "/_portal/vshops/leisure-2526/s6.jpg",
+        "/_portal/vshops/leisure-2526/s7.jpg",
+        "/_portal/vshops/leisure-2526/s8.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/leisure-2526/hero.jpg",
+          "what": "白い壁に「Third」の文字がある2階建ての店の外観。アーチ形の窓と螺旋階段があり、手前に駐車場がある",
+          "width": 1500,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/p1.jpg",
+          "what": "木のハンマーと金属の刻印棒、藍染めの革で作ったバラ形のキーホルダー2つが、木の盆の上に並ぶ",
+          "width": 1600,
+          "height": 1069
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/p2.jpg",
+          "what": "藍染めの革の長財布やペンケース、キーホルダー、定期入れなどが、木の板の上に並ぶ",
+          "width": 1600,
+          "height": 1069
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/s4.jpg",
+          "what": "動物や楽器、自転車などの図柄の刻印が押された革の小片が並ぶ",
+          "width": 1088,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/s5.jpg",
+          "what": "黒い革のコインケースと小銭、牛の図柄の刻印が押された革片",
+          "width": 1088,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/s6.jpg",
+          "what": "藍染めの革の小銭入れ2つと、横に置かれたワインボトル",
+          "width": 1600,
+          "height": 1069
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/s7.jpg",
+          "what": "ベージュの革を両手でひだ状に寄せている手元(染める前の下ごしらえの工程)",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/leisure-2526/s8.jpg",
+          "what": "白い桶の中の緑がかった染め液と革。長靴の足元が写る(顔は写っていない)",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "広島県福山市多治米町の革工房。約30分で完成するレザークラフト体験を、予約制でおこなう",
+        "lede": "広島県福山市多治米町にある「レザースタジオ サード」(Leather Studio Third)です。福山市を拠点とするレザークラフトのブランド・工房で、財布や鞄などのオーダーメイド製作のほか、天然藍で染めた革「福山レザー」の開発、子どもの思い出のランドセルを革小物に仕立て直すリメイクを手がけています。ワークショップは予約制で、約30分で完成するレザークラフト体験です。",
+        "sections": [
+          {
+            "heading": "場所と営業の時間",
+            "body": "住所は広島県福山市多治米町6-3-17、電話は084-971-7356で、駐車場は4台分あります。営業時間は10時から18時で、休みは毎週水曜日と年末年始(要確認)です。"
+          },
+          {
+            "heading": "ワークショップの体験",
+            "body": "ワークショップは予約制で、初心者歓迎、2名からと案内されています。メニューは3つで、お名前や絵柄の刻印を入れるコインケース(約20分)、藍染の革でバラの形に仕上げるバラキーホルダー(約30分)、お名前を刻印して金具でとめるマルチケース(約30分)です。受付は10時から15時まで1時間おきの6つの時間帯から選べ、予約はフォーム、電話、メール、LINEでできます。当日選べるオプションには、革の色選び、金具追加、コバ処理磨きがあります。"
+          },
+          {
+            "heading": "福山レザーと工房の仕事",
+            "body": "福山レザーは天然藍で染めた革で、「瀬戸内の空」と「瀬戸内の海」の2色があります。染色から製作、販売までを自社の職人が手作業でおこなうと公式サイトにあります。ほかに、子どものランドセルを財布やキーホルダーなどに仕立て直す「ランドセルリメイク」があり、店に来なくても、ランドセルを発送して申し込めます。企業向けの記念品製作のページもあります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "コインケース",
+            "minutes": 20
+          },
+          {
+            "name": "バラキーホルダー",
+            "minutes": 30
+          },
+          {
+            "name": "マルチケース",
+            "minutes": 30
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://leatherstudiothird.com/"
+          },
+          {
+            "label": "公式サイト(ワークショップ)",
+            "url": "https://leatherstudiothird.com/pages/workshop-experience"
+          },
+          {
+            "label": "公式サイト(サードについて)",
+            "url": "https://leatherstudiothird.com/pages/about-third"
+          },
+          {
+            "label": "公式サイト(福山レザー)",
+            "url": "https://leatherstudiothird.com/pages/fukuyamaleather"
+          },
+          {
+            "label": "公式サイト(ランドセルリメイク)",
+            "url": "https://leatherstudiothird.com/pages/randoseru-hp"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15279321513939332539"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "ac0003",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "八幡野ダイビングセンター",
+      "pref": "shizuoka",
+      "cityName": "伊東市",
+      "address": "静岡県伊東市八幡野826",
+      "lat": 34.8699249,
+      "lng": 139.1022978,
+      "phone": "0557-53-3711",
+      "url": "https://yawatano.co.jp/",
+      "website": "https://yawatano.co.jp/",
+      "mapUrl": "https://maps.google.com/?cid=16395759189622962827",
+      "image": "/_portal/vshops/leisure-2407/hero.jpg",
+      "images": [
+        "/_portal/vshops/leisure-2407/hero.jpg",
+        "/_portal/vshops/leisure-2407/p1.jpg",
+        "/_portal/vshops/leisure-2407/p2.jpg",
+        "/_portal/vshops/leisure-2407/s4.jpg",
+        "/_portal/vshops/leisure-2407/s5.jpg",
+        "/_portal/vshops/leisure-2407/s6.jpg",
+        "/_portal/vshops/leisure-2407/s7.jpg",
+        "/_portal/vshops/leisure-2407/s8.jpg",
+        "/_portal/vshops/leisure-2407/s9.jpg",
+        "/_portal/vshops/leisure-2407/s10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/leisure-2407/hero.jpg",
+          "what": "青い海の中を、銀色の魚が大きな群れになって泳いでいる(公式サイトの「ビーチポイントから見えたおさかな」の写真)",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/p1.jpg",
+          "what": "砂地の海底の上を、白と黒の縞模様で背びれの長い魚が3匹泳いでいる(公式サイトの体験ダイビングのページの写真)",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/p2.jpg",
+          "what": "海底の岩場の上を、スクーバ器材を着けた3人のダイバーが泳いでいる(公式サイトのファンダイビングのページの写真。後ろ姿と遠景)",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s4.jpg",
+          "what": "黒と白の縞模様で、ひれの縁が黄緑色の魚が、群れになって岩場の近くを泳いでいる(公式サイトの「ボートポイントから見えたおさかな」の写真)",
+          "width": 300,
+          "height": 225
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s5.jpg",
+          "what": "休憩スペースBのオープンテラス。木の柱と屋根の下に、白いテーブルと椅子が並ぶ",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s6.jpg",
+          "what": "シャワー室。カーテンで仕切られたブースが並び、床は青い",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s7.jpg",
+          "what": "コインロッカーと休憩スペースA。緑色の扉のロッカーが壁ぎわに並び、手前に白いテーブルがある",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s8.jpg",
+          "what": "レンタルタンクの置き場。グレーの本体で下が黄色のタンクが、コンクリートの壁の前にずらりと並ぶ",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s9.jpg",
+          "what": "休憩スペースC。木の床と木のテーブルが並ぶ、天井の高い落ち着いた部屋",
+          "width": 300,
+          "height": 200
+        },
+        {
+          "path": "/_portal/vshops/leisure-2407/s10.jpg",
+          "what": "駐車スペース。海沿いの舗装された広場で、奥に灯台のある防波堤が見える",
+          "width": 300,
+          "height": 200
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "静岡県伊東市八幡野の、ショップの目の前が海のダイビングショップ。体験ダイビングやファンダイビング、スクール、磯釣りを案内している",
+        "lede": "静岡県伊東市八幡野にある「八幡野ダイビングセンター」です。公式サイトでは、1989年創業と案内され、365日年中無休で、体験ダイビング、シュノーケリング、ファンダイビング、ダイビングスクール、磯釣りを扱っています。お店の目の前が海で、更衣室・トイレ・温水シャワーを備えています。",
+        "sections": [
+          {
+            "heading": "場所と行き方",
+            "body": "住所は静岡県伊東市八幡野826、電話は0557-53-3711です。電車は伊豆急行の伊豆高原駅で降り、体験ダイビングやシュノーケリングの予約フォームで送迎を選ぶと、スタッフが改札口で待っています。車は東京方面から東名厚木ICと小田原厚木道路を通り、R135に入って約2時間30分で、八幡野港に有料の駐車場があります。運営は株式会社 ワイ・エス・エスで、年中無休と案内されています。"
+          },
+          {
+            "heading": "初めての体験メニュー",
+            "body": "体験ダイビングは、ライセンスがなくても参加できる初心者向けのメニューです。午前(9時集合・11時解散)と午後(12時30分集合・14時30分解散)の毎日2回で、最大水深は12mまで、潜水時間は20〜40分ほどです。10歳以上が条件で、持ち物は水着とタオルです。シュノーケリングは、1時間ほどのレクチャーのあと自由に海遊びをする内容で、身長120cm以上が条件です。磯釣りは、釣り具と餌が用意され、年齢制限はありません。"
+          },
+          {
+            "heading": "ファンダイビングとスクール",
+            "body": "ファンダイビングは、ビーチから入るビーチガイドパックと、ボートでポイントへ向かうボートガイドパックの2種類で、毎日9時集合です。ボートダイビングは2名以上の申し込みが条件です。ほかに、自分たちだけで潜るプライベートガイドと、ブランクのある人が練習し直すための別メニューがあります。スクールは、NAUIのCカードが取れるオープンウォーターコースで、15歳以上(ジュニアは10歳以上)、講習日数は3日間、1人から開催されます。"
+          },
+          {
+            "heading": "施設と設備",
+            "body": "受付にはAEDと緊急用酸素が置かれています。休憩スペースはA・B・Cの3つで、コインロッカー、電子レンジ・お湯ポット・冷蔵庫、喫煙コーナーなどがあります。シャワーは男性用が受付棟の2階、女性用が1階です。器材洗い場は器材専用とカメラ専用に分かれ、レンタルタンクは10リットルのほか12・14リットルとナイトロックスがあり、事前の予約が要ります。各種クレジットカードと電子決済、店内のWiFiが使えると案内されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://www.yawatano.co.jp/"
+          },
+          {
+            "label": "公式サイト(体験ダイビング)",
+            "url": "https://www.yawatano.co.jp/diving/"
+          },
+          {
+            "label": "公式サイト(シュノーケリング)",
+            "url": "https://www.yawatano.co.jp/snorkeling/"
+          },
+          {
+            "label": "公式サイト(ファンダイビング)",
+            "url": "https://www.yawatano.co.jp/fundiving/"
+          },
+          {
+            "label": "公式サイト(ダイビングスクール)",
+            "url": "https://www.yawatano.co.jp/school/"
+          },
+          {
+            "label": "公式サイト(磯釣り)",
+            "url": "https://www.yawatano.co.jp/fishing/"
+          },
+          {
+            "label": "公式サイト(施設・設備)",
+            "url": "https://www.yawatano.co.jp/facilities/"
+          },
+          {
+            "label": "公式サイト(交通アクセス)",
+            "url": "https://www.yawatano.co.jp/access/"
+          },
+          {
+            "label": "公式サイト(ショップ案内)",
+            "url": "https://www.yawatano.co.jp/company/"
+          },
+          {
+            "label": "公式サイト(ご予約フォーム)",
+            "url": "https://www.yawatano.co.jp/reservation/"
+          },
+          {
+            "label": "公式サイト(修学旅行・体験学習)",
+            "url": "https://www.yawatano.co.jp/excursion/"
+          },
+          {
+            "label": "公式サイト(八幡野の生物情報 ビーチポイント)",
+            "url": "https://www.yawatano.co.jp/blog/fish/%e3%83%93%e3%83%bc%e3%83%81%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88%e3%81%9f%e3%81%8a%e9%ad%9a%e3%81%9f%e3%81%a1/"
+          },
+          {
+            "label": "公式サイト(八幡野の生物情報 ボートポイント)",
+            "url": "https://www.yawatano.co.jp/blog/fish/%e3%83%9c%e3%83%bc%e3%83%88%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%81%8b%e3%82%89%e8%a6%8b%e3%81%88%e3%81%9f%e3%81%8a%e9%ad%9a%e3%81%9f%e3%81%a1/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16395759189622962827"
+          }
+        ],
+        "checkedAt": "2026-10-22"
+      }
+    }
+  ]
 }
