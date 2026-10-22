@@ -73,7 +73,7 @@ export default function PortalHeader() {
                 data-cursor={VERTICAL_FACE[k].en.toUpperCase()}
               >
                 <i aria-hidden="true" />
-                {v.name}
+                {VERTICAL_FACE[k].short ?? v.name}
               </Link>
             );
           })}

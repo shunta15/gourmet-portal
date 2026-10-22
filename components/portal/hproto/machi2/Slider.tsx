@@ -8,7 +8,7 @@ import { getSeason, subscribeSeason } from "./seasonStore";
 const B = `${IMG}/lower/`;
 
 /**
- * 特集スライド 7 枚: ①季節の特集(最初の画面の季節と連動)+②〜⑦ 業種の特集。
+ * 特集スライド 9 枚: ①季節の特集(最初の画面の季節と連動)+②〜⑨ 業種の特集(8 業種)。
  *  - side = 文字を置く側。写真の人や見せ所の反対側に置く(l=左 / r=右)
  *  - op = 写真の縦の切り取り位置(object-position の y)
  *  - リンク先は本番 https://machinowa.tokyo で 200 になる実在のページだけ(2026-10-20 確認)。文はリンク先の中身に合わせる
@@ -30,8 +30,11 @@ const VSL: Slide[] = [
   { img: "sl-v-beauty.webp", side: "r", op: 15, col: "#ee5d8e", t1: "ビューティー", t1b: "で、", t2: "ヘッドスパを知る。", sub: ["鹿児島・上之園町の美容室を紹介。", "カットやカラーのほか、ヘッドスパも。"], btn: "美容室の特集を見る", href: "/beauty/shop/be0001" },
   { img: "sl-v-bodycare.webp", side: "l", op: 10, col: "#4aa84a", t1: "ボディケア", t1b: "で、", t2: "個室の整体を知る。", sub: ["新潟・長岡市の整体サロンを紹介。", "施術はオール個室と案内する店です。"], btn: "整体の特集を見る", href: "/bodycare/shop/bo0018" },
   { img: "sl-v-pet.webp", side: "r", op: 50, col: "#8b6cf0", t1: "ペット", t1b: "と、", t2: "過ごす場所を探す。", sub: ["トリミングやドッグカフェなどを", "種類とエリアから。掲載は準備中です。"], btn: "ペットを見る", href: "/pet" },
-  { img: "sl-v-leisure.webp", side: "r", op: 40, col: "#2f8de0", t1: "おでかけ", t1b: "で、", t2: "景色に会いにいこう。", sub: ["観光スポットや日帰り温泉、公園など。", "種類とエリアから。掲載は準備中です。"], btn: "おでかけを見る", href: "/leisure" },
   { img: "sl-v-stay.webp", side: "l", op: 40, col: "#f6b620", ink: "#4a3200", t1: "ステイ", t1b: "で、", t2: "窓の景色を楽しむ。", sub: ["ホテルや旅館、グランピングなど。", "種類とエリアから。掲載は準備中です。"], btn: "ステイを見る", href: "/stay" },
+  // 体験・スポーツ・くらし(2026-10-22 追加。並びは lib/verticals の VERTICAL_ORDER)。掲載の件数は文に入れない(件数が変わっても嘘にならない言い方)。写真は credits.json(CC0・パブリックドメイン)
+  { img: "sl-v-activity.webp", side: "r", op: 50, col: "#2f8de0", t1: "アクティビティ", t1b: "で、", t2: "体験の場所を探す。", sub: ["海・山・ものづくりなどの体験を、", "種類とエリアから探せます。"], btn: "アクティビティを見る", href: "/activity" },
+  { img: "sl-v-sports.webp", side: "r", op: 50, col: "#17a398", t1: "スポーツ", t1b: "で、", t2: "体を動かしにいこう。", sub: ["ジム・ヨガ・格闘技・ダンスなどを、", "種類とエリアから探せます。"], btn: "スポーツを見る", href: "/sports" },
+  { img: "sl-v-life.webp", side: "l", op: 50, col: "#7fa82f", t1: "くらし", t1b: "で、", t2: "身近な店や教室を探す。", sub: ["習い事・神社・写真館・花屋などを、", "種類とエリアから探せます。"], btn: "くらしを見る", href: "/life" },
 ];
 const N = 1 + VSL.length;
 const INTERVAL = 4500;
@@ -76,7 +79,7 @@ export default function Slider() {
       {slides.map((s, k) => {
         const lay = k === 0 ? layers : null;
         return (
-          <div key={k} className={`h2-sl h2-sl-${s.side}${i === k ? " is-on" : ""}${s.t1.length >= 5 ? " is-long" : ""}`} aria-hidden={i !== k} style={{ ["--c" as string]: s.col, ["--op" as string]: `${s.op}%`, ...(s.ink ? { ["--btc" as string]: s.ink } : {}) }}>
+          <div key={k} className={`h2-sl h2-sl-${s.side}${i === k ? " is-on" : ""}${s.t1.length >= 5 ? " is-long" : ""}${s.t1.length >= 7 ? " is-xlong" : ""}`} aria-hidden={i !== k} style={{ ["--c" as string]: s.col, ["--op" as string]: `${s.op}%`, ...(s.ink ? { ["--btc" as string]: s.ink } : {}) }}>
             <span className="h2-slm">
               {lay
                 ? lay.map((l, j) => <img key={l.id} className={`h2-slimg${lay.length > 1 && j === lay.length - 1 ? " is-new" : ""}`} src={`${B}${SEASON_SLIDE[l.season].img}`} alt="" style={{ objectPosition: `50% ${SEASON_SLIDE[l.season].op}%` }} />)

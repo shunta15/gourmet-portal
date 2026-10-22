@@ -35,6 +35,7 @@
 .h2-cat:hover .h2-caticon { animation: h2-spin .8s cubic-bezier(.3,1.3,.5,1); }
 @keyframes h2-spin { to { transform: rotate(360deg) scale(1.08); } }
 .h2-catn { text-align: center; font-weight: 700; font-size: calc(19.5 * var(--u)); color: #1f3d73; line-height: calc(26 * var(--u)); letter-spacing: .01em; }
+.h2-catn.is-long { font-size: calc(16.4 * var(--u)); white-space: nowrap; } /* 7 文字(アクティビティ)を札の幅に収める */
 .h2-cats-sub { text-align: center; font-size: calc(11.6 * var(--u)); color: #36497a; font-weight: 500; letter-spacing: -.01em; line-height: calc(15 * var(--u)); display: flex; flex-direction: column; align-items: center; }
 .h2-catarr { display: grid; place-items: center; border-radius: 50%; color: #fff; font-style: normal; font-size: calc(15 * var(--u)); font-weight: 700; box-shadow: 0 calc(2 * var(--u)) calc(4 * var(--u)) rgba(0,0,0,.15); transition: translate .3s cubic-bezier(.3,1.5,.5,1); }
 .h2-cat:hover .h2-catarr { translate: calc(8 * var(--u)) 0; }
@@ -87,6 +88,7 @@
 .h2-sh { position: absolute; left: calc(44 * var(--u)); top: calc(8 * var(--u)); margin: 0; font-family: var(--h2-yusei), var(--h2-maru), sans-serif; font-weight: 400; color: #26386b; text-shadow: 0 0 calc(5 * var(--u)) #fff, 0 0 calc(10 * var(--u)) #fff, 0 0 calc(16 * var(--u)) #fff; -webkit-text-stroke: calc(.6 * var(--u)) #26386b; }
 .h2-sh1 { display: block; font-size: calc(30 * var(--u)); line-height: calc(52 * var(--u)); color: #f27a2c; -webkit-text-stroke-color: #f27a2c; } .h2-sh1 b { font-weight: 400; font-size: calc(50 * var(--u)); color: var(--c); -webkit-text-stroke: calc(1 * var(--u)) var(--c); }
 .h2-sl.is-long .h2-sh1 b { font-size: calc(38 * var(--u)); }
+.h2-sl.is-xlong .h2-sh1 b { font-size: calc(30 * var(--u)); } /* 7 文字(アクティビティ)。「で、」まで 1 行に収める */
 /* 文字を右に置くスライド(人や見せ所が左にある写真) */
 .h2-sl-r .h2-sh, .h2-sl-r .h2-ssub { left: calc(326 * var(--u)); } .h2-sl-r .h2-sbtn { left: calc(324 * var(--u)); }
 .h2-sh2 { display: block; font-size: calc(27 * var(--u)); line-height: calc(38 * var(--u)); }
@@ -188,12 +190,15 @@
   .h2-root { --u: calc(100cqw / 390); }
   .h2-cats, .h2-feat, .h2-cards, .h2-band, .h2-foot { height: auto; }
 
-  /* 1. 業種: 3×2 */
+  /* 1. 業種: 3 列(8 枚 = 3+3+2。最後の 2 枚は中央寄せ) */
   .h2-cats { padding: 20px 14px 24px; }
   .h2-cats > .h2-ttl { position: relative; left: auto; top: auto; width: auto; height: auto; font-size: 19.5px; gap: 7px; margin-bottom: 16px; }
   .h2-tick { width: 17px; height: 14px; }
   .h2-decor, .h2-vinew { display: none; }
-  .h2-cardrow { position: relative; inset: auto; pointer-events: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .h2-cardrow { position: relative; inset: auto; pointer-events: auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+  .h2-cat { grid-column: span 2; }
+  .h2-cat:nth-child(7) { grid-column: 2 / span 2; } .h2-cat:nth-child(8) { grid-column: 4 / span 2; }
+  .h2-catn.is-long { font-size: 12.5px; }
   .h2-cat { position: relative; left: auto; top: auto; width: auto; height: auto; padding: 6px 6px 10px; display: flex; flex-direction: column; align-items: center; transform-origin: 50% 60%; }
   .h2-cat > .h2-a:not(.h2-catbg) { position: relative; left: auto; top: auto; width: auto; height: auto; }
   .h2-catbg { border-radius: 16px; }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Zen_Kaku_Gothic_New } from "next/font/google";
-import { CATS, CATS_HEADING } from "../../catsData";
+import { CATS_PROTO as CATS, CATS_HEADING } from "../../catsData";
 import "./cats-b.css";
 
 /**

@@ -12,8 +12,10 @@
 .h2-root.h2-icons .h2-cat[href="/beauty"] { --tone: 238, 93, 142; --ic2: url("/_portal/hproto/machi2/lower/ic2-beauty.webp"); }
 .h2-root.h2-icons .h2-cat[href="/bodycare"] { --tone: 74, 168, 74; --ic2: url("/_portal/hproto/machi2/lower/ic2-bodycare.webp"); }
 .h2-root.h2-icons .h2-cat[href="/pet"] { --tone: 139, 108, 240; --ic2: url("/_portal/hproto/machi2/lower/ic2-pet.webp"); }
-.h2-root.h2-icons .h2-cat[href="/leisure"] { --tone: 47, 141, 224; --ic2: url("/_portal/hproto/machi2/lower/ic2-leisure.webp"); }
 .h2-root.h2-icons .h2-cat[href="/stay"] { --tone: 246, 182, 32; --ic2: url("/_portal/hproto/machi2/lower/ic2-stay.webp"); }
+.h2-root.h2-icons .h2-cat[href="/activity"] { --tone: 47, 141, 224; --ic2: url("/_portal/hproto/machi2/lower/ic2-activity.webp"); }
+.h2-root.h2-icons .h2-cat[href="/sports"] { --tone: 23, 163, 152; --ic2: url("/_portal/hproto/machi2/lower/ic2-sports.webp"); }
+.h2-root.h2-icons .h2-cat[href="/life"] { --tone: 127, 168, 47; --ic2: url("/_portal/hproto/machi2/lower/ic2-life.webp"); }
 
 /* 札の中: 1 列のグリッド。部品はどれも「流れの中」に戻す(見本の left/top/width/height 置きをやめる) */
 .h2-root.h2-icons .h2-cat { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; align-content: start; }

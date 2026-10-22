@@ -11,6 +11,8 @@ export interface VerticalFace {
   glyph: string;
   /** 暮らしの動詞（総合トップの宣言文で使う） */
   verb: string;
+  /** 狭い所（ヘッダーの業種の並び・総合トップの札）に出す短い名前。業種名(VERTICALS[k].name)が長い 3 業種だけ短くする。無ければ業種名 */
+  short?: string;
 }
 
 export const VERTICAL_FACE: Record<VerticalKey, VerticalFace> = {
@@ -19,9 +21,9 @@ export const VERTICAL_FACE: Record<VerticalKey, VerticalFace> = {
   bodycare: { en: 'Bodycare', glyph: '整', verb: 'ほぐす' },
   pet: { en: 'Pet', glyph: '友', verb: '連れていく' },
   stay: { en: 'Stay', glyph: '泊', verb: '泊まる' },
-  activity: { en: 'Activity', glyph: '遊', verb: '体験する' },
-  sports: { en: 'Sports', glyph: '動', verb: '体を動かす' },
-  life: { en: 'Life', glyph: '暮', verb: '暮らす' },
+  activity: { en: 'Activity', glyph: '遊', verb: '体験する', short: 'アクティビティ' },
+  sports: { en: 'Sports', glyph: '動', verb: '体を動かす', short: 'スポーツ' },
+  life: { en: 'Life', glyph: '暮', verb: '暮らす', short: 'くらし' },
 };
 
 /** 地方ブロックの表示名とローマ字 */

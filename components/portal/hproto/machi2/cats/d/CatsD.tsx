@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { CATS, CATS_HEADING } from "../../catsData";
+import { CATS_PROTO as CATS, CATS_HEADING } from "../../catsData";
 import "./cats-d.css";
 
 /**

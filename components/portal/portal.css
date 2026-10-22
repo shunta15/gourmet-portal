@@ -444,7 +444,8 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
 .mp-st-entry .mp-area-list{margin-bottom:clamp(24px,3vw,40px)}
 
 /* ─────────── responsive ─────────── */
-@media (max-width: 1000px){
+/* 業種が 8 つになった(2026-10-22)ので、ヘッダーの業種の並びが収まらない 1140px 以下から、三本線のメニューにする(それまでは 1000px) */
+@media (max-width: 1140px){
   .mp-hd{grid-template-columns:1fr auto}
   .mp-hd-nav{display:none}
   .mp-hd-burger{display:block}

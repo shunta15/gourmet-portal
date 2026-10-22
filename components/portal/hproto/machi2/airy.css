@@ -102,8 +102,8 @@
 /* 広い画面(701 以上): 札の間・カードの間・スライドと最新情報の間を広げる */
 @media (min-width: 701px) {
   .h2-airy .h2-cats { margin-top: calc(34 * var(--u)); height: calc((298 + 32) * var(--u)); }
-  /* 札 6 枚: 少し小さく(0.94)して、真ん中から外へ 11 ずつ開く。札の間 3〜6 → 22〜28 */
-  .h2-airy .h2-cat { translate: calc((var(--i) - 2.5) * 11 * var(--u)) calc(32 * var(--u)); scale: .94; }
+  /* 札 8 枚: 少し小さく(0.94)して、真ん中から外へ 11 ずつ開く(真ん中は (8 − 1) / 2 = 3.5 番め)。札の間 6 → 17 */
+  .h2-airy .h2-cat { translate: calc((var(--i) - 3.5) * 11 * var(--u)) calc(32 * var(--u)); scale: .94; }
   /* 特集のスライドを 644 → 620 に(右の最新情報との間 15 → 39) */
   .h2-airy .h2-slidewrap { width: calc(620 * var(--u)); }
   .h2-airy .h2-dots { left: 50%; }

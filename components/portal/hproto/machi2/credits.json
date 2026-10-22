@@ -320,35 +320,6 @@
   },
   {
     "page": "hub",
-    "file": "public/_portal/hproto/machi2/lower/sl-v-leisure.webp",
-    "slot": "sl-v-leisure",
-    "commonsTitle": "File:Kodai-ji, Kyoto - Kodaiji7301.jpg",
-    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kodai-ji,_Kyoto_-_Kodaiji7301.jpg",
-    "author": "lumoplank",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Kodai-ji%2C_Kyoto_-_Kodaiji7301.jpg",
-    "srcW": 5444,
-    "srcH": 3629,
-    "outW": 1600,
-    "outH": 667,
-    "note": "京都・高台寺の庭園。紅葉した楓と池(臥龍池)。人は写っていない",
-    "crop": {
-      "fetchedW": 3840,
-      "left": 0,
-      "top": 352,
-      "width": 3840,
-      "height": 1600,
-      "focus": [
-        0.5,
-        0.45
-      ]
-    },
-    "tier": "free",
-    "credit": "https://www.flickr.com/photos/199350666@N08/55135549898"
-  },
-  {
-    "page": "hub",
     "file": "public/_portal/hproto/machi2/lower/sl-v-stay.webp",
     "slot": "sl-v-stay",
     "commonsTitle": "File:View from the Kasumi room - Takahan ryokan - Gala Yuzawa, Niigata Prefecture, Japan -.JPG",
@@ -404,5 +375,157 @@
     },
     "tier": "free",
     "credit": "https://www.flickr.com/photos/199350666@N08/55198512986"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-sports.webp",
+    "slot": "sl-v-sports",
+    "commonsTitle": "File:Gorliz sports center climbing gym.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Gorliz_sports_center_climbing_gym.jpg",
+    "author": "Vatealyo",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Gorliz_sports_center_climbing_gym.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "srcW": 6890,
+    "srcH": 3296,
+    "outW": 1600,
+    "outH": 667,
+    "note": "都道府県を問わない一般的な屋内クライミングジム(ボルダリング)の壁とホールド。人は写っていない",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 230,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Vatealyo"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-sports.webp",
+    "slot": "cat-sports",
+    "commonsTitle": "File:Schriever SFB Fitness Center Ribbon Cutting Ceremony Marks Expansion (9347526).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Schriever_SFB_Fitness_Center_Ribbon_Cutting_Ceremony_Marks_Expansion_(9347526).jpg",
+    "author": "U.S. Space Force photo by Tiana Williams",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Schriever_SFB_Fitness_Center_Ribbon_Cutting_Ceremony_Marks_Expansion_%289347526%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "srcW": 8256,
+    "srcH": 5504,
+    "outW": 560,
+    "outH": 700,
+    "note": "屋内のフィットネスジム(マシンとダンベルのラック、人工芝のトレーニングエリア)。人は写っていない",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 1365,
+      "top": 321,
+      "width": 1792,
+      "height": 2239,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "U.S. Space Force photo by Tiana Williams"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-life.webp",
+    "slot": "cat-life",
+    "commonsTitle": "File:Flower & Green Catereedan (One of Fuji Television Flower Net Participating Stores).JPG",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Flower_%26_Green_Catereedan_(One_of_Fuji_Television_Flower_Net_Participating_Stores).JPG",
+    "author": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flower_%26_Green_Catereedan_%28One_of_Fuji_Television_Flower_Net_Participating_Stores%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "srcW": 2510,
+    "srcH": 1852,
+    "outW": 560,
+    "outH": 700,
+    "note": "住宅街の角の花屋の店先(鉢植えと入口)。店名の看板は切り落とした。人は写っていない",
+    "crop": {
+      "fetchedW": 2510,
+      "left": 637,
+      "top": 869,
+      "width": 695,
+      "height": 869,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Tokumeigakarinoaoshima"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-life.webp",
+    "slot": "sl-v-life",
+    "commonsTitle": "File:Shinmei Shrine (Suechō) 20210826 04.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_(Suech%C5%8D)_20210826_04.jpg",
+    "author": "先従隗始",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Shinmei_Shrine_%28Suech%C5%8D%29_20210826_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "srcW": 4608,
+    "srcH": 3456,
+    "outW": 1600,
+    "outH": 667,
+    "note": "住宅地の小さな神社の拝殿と鳥居・石灯籠。人は写っていない",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 760,
+      "width": 3000,
+      "height": 1250,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "先従隗始"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/sl-v-activity.webp",
+    "slot": "sl-v-activity",
+    "commonsTitle": "File:Paddle-boarding Lake Ontario (51260309151).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Paddle-boarding_Lake_Ontario_(51260309151).jpg",
+    "author": "Mustang Joe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Paddle-boarding_Lake_Ontario_%2851260309151%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "srcW": 5920,
+    "srcH": 3330,
+    "outW": 1600,
+    "outH": 667,
+    "note": "スタンドアップパドル(SUP)を楽しむ 2 人の遠景(シルエット・顔は分からない)",
+    "crop": {
+      "fetchedW": 3840,
+      "left": 0,
+      "top": 560,
+      "width": 3840,
+      "height": 1600,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    "tier": "free",
+    "credit": "Mustang Joe"
+  },
+  {
+    "page": "hub",
+    "file": "public/_portal/hproto/machi2/lower/cat-activity.webp",
+    "slot": "cat-activity",
+    "tier": "owner",
+    "note": "オーナー提供の写真(海と船・バナナボートとジェット。2026-10-20 に旧おでかけの札 cat-leisure.webp として入れたもの。2026-10-22 にアクティビティの札へ名前を変えた)。出典の記録は不要"
   }
 ]

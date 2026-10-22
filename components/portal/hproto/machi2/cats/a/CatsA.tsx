@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Shippori_Mincho, Zen_Kaku_Gothic_New, Cormorant_Garamond } from "next/font/google";
-import { CATS, CATS_HEADING } from "../../catsData";
+import { CATS_PROTO as CATS, CATS_HEADING } from "../../catsData";
 import { sized } from "@/lib/imageUrl";
 import "./cats-a.css";
 

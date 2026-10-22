@@ -5,7 +5,7 @@
 .h2-menupanel { position: absolute; right: calc(-6 * var(--u)); top: calc(100% + 10 * var(--u)); width: calc(150 * var(--u)); padding: calc(8 * var(--u)) calc(6 * var(--u)); border-radius: calc(14 * var(--u)); background: rgba(255,255,255,.98); box-shadow: 0 calc(6 * var(--u)) calc(26 * var(--u)) rgba(60,80,110,.22); opacity: 0; visibility: hidden; transform: translateY(calc(-8 * var(--u))) scale(.96); transform-origin: 90% 0; transition: opacity .2s, transform .3s cubic-bezier(.3,1.4,.5,1), visibility 0s .3s; z-index: 5; }
 .h2-menupanel.is-open { opacity: 1; visibility: visible; transform: none; transition: opacity .2s, transform .3s cubic-bezier(.3,1.4,.5,1), visibility 0s; }
 .h2-menupanel ul { display: grid; }
-.h2-menupanel li:nth-child(6), .h2-menupanel li:nth-child(11) { border-bottom: 1px solid #e6eaf2; margin-bottom: calc(4 * var(--u)); padding-bottom: calc(4 * var(--u)); }
+.h2-menupanel li:nth-child(8), .h2-menupanel li:nth-child(13) { border-bottom: 1px solid #e6eaf2; margin-bottom: calc(4 * var(--u)); padding-bottom: calc(4 * var(--u)); }
 .h2-menupanel a { display: block; padding: calc(6 * var(--u)) calc(10 * var(--u)); border-radius: calc(8 * var(--u)); font-size: calc(10.4 * var(--u)); font-weight: 700; color: #26386b; white-space: nowrap; transition: background .2s, color .2s; }
 .h2-menupanel a:hover, .h2-menupanel a:focus-visible { background: #fff1e0; color: #ee5a7a; }
 
@@ -17,7 +17,7 @@
   .h2-head-r { position: absolute; }
   .h2-menupanel { position: fixed; left: 10px; right: 10px; top: 58px; width: auto; padding: 10px 8px; border-radius: 16px; transform-origin: 90% 0; }
   .h2-menupanel ul { grid-template-columns: 1fr 1fr; }
-  .h2-menupanel li:nth-child(6), .h2-menupanel li:nth-child(11) { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .h2-menupanel li:nth-child(8), .h2-menupanel li:nth-child(13) { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
   .h2-menupanel a { font-size: 13.5px; padding: 11px 12px; }
   .h2-nti.h2-nti-real { width: auto; right: 34px; font-size: 11.5px; line-height: 14px; }
 }

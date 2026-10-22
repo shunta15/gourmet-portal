@@ -19,7 +19,16 @@ const CH = 141 + D;
 /** カードより下の節用: 見本の y に D を足して置く */
 const PD = (x: number, y: number, w?: number, h?: number) => P(x, y + D, w, h);
 
-const VINES = [["v0", 24, 425, 52, 265], ["v1", 190, 566, 46, 124], ["v2", 350, 548, 52, 142], ["v3", 538, 554, 54, 136], ["v4", 726, 548, 52, 142], ["v5", 912, 562, 54, 128], ["v6", 1104, 415, 52, 275]] as const;
+/** 札の間のつる(airy では見えない)。左端 v0・右端 v6 と、札と札の間(札の数 − 1 か所)に v1〜v5 の絵を順に使いまわす。位置は札(catsData の CATS)の左右の端から決める */
+const VINE_MID = [["v1", 46, 566, 124], ["v2", 52, 548, 142], ["v3", 54, 554, 136], ["v4", 52, 548, 142], ["v5", 54, 562, 128]] as const;
+const VINES: readonly (readonly [string, number, number, number, number])[] = [
+  ["v0", CATS[0].px - 10 - 29, 425, 52, 265],
+  ...CATS.slice(0, -1).map((c, i) => {
+    const [k, w, y, h] = VINE_MID[i % VINE_MID.length];
+    return [k, c.px + c.pw + 10 + 3 + 4 - w / 2, y, w, h] as const; // 札の右の端 + 間の半分(3) + 見本の寄り(4) が、つるの中心
+  }),
+  ["v6", CATS[CATS.length - 1].px + CATS[CATS.length - 1].pw + 10 - 20, 415, 52, 275],
+];
 const TTL = [..."今日はどんな"].map((c) => ({ c, k: 0 })).concat([..."楽しみ"].map((c) => ({ c, k: 1 })), [..."を見つける？"].map((c) => ({ c, k: 0 })));
 const NEWS = [
   { img: "news1.webp", date: "2025.04.12", t: ["春のまちでおすすめスポットを開催！"], y: 722 },
@@ -44,9 +53,9 @@ const DEMO_FOOT = {
 const NEWS_Y = [722, 764, 806, 850];
 
 /** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。
- *  cats = 試作用。渡されたら、業種の節(見出し+札 6 枚+つる)の代わりに `<section class="h2-cats h2-cats-x" style="--oy:394">` の中に描く(節の箱=位置・幅・高さ・上の余白は既定のまま)。渡さなければ今まで通り。 */
+ *  cats = 試作用。渡されたら、業種の節(見出し+札 8 枚+つる)の代わりに `<section class="h2-cats h2-cats-x" style="--oy:394">` の中に描く(節の箱=位置・幅・高さ・上の余白は既定のまま)。渡さなければ今まで通り。 */
 export default function Lower({ prod = false, news, cards, cats }: { prod?: boolean; news?: NewsRow[]; cards?: CardPhotos; cats?: React.ReactNode }) {
-  /** 業種の節を丸ごと差し替える(試作用)。渡さなければ今まで通り(見出し+札 6 枚+つる) */
+  /** 業種の節を丸ごと差し替える(試作用)。渡さなければ今まで通り(見出し+札 8 枚+つる) */
   const custom = cats != null && cats !== false;
   const foot = prod ? PROD_FOOT : DEMO_FOOT;
   const rows = prod && news
@@ -54,7 +63,7 @@ export default function Lower({ prod = false, news, cards, cats }: { prod?: bool
     : NEWS.map((n) => ({ src: `${B}${n.img}`, date: n.date, t: n.t, y: n.y, href: "/feature", real: false }));
   return (
     <>
-      {/* 1. 業種の札 6 枚(間に花のつる) */}
+      {/* 1. 業種の札 8 枚(間に花のつる) */}
       <section className={custom ? "h2-cats h2-cats-x" : "h2-cats"} style={OY(394)} aria-label="業種から探す">
         {custom ? cats : (
           <>
@@ -71,14 +80,14 @@ export default function Lower({ prod = false, news, cards, cats }: { prod?: bool
                   <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
                   <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
                   <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
-                  <span className="h2-a h2-catn" style={P(c.cx - 85, 586, 170, 26)}>{c.name}</span>
-                  <span className="h2-a h2-cats-sub" style={P(c.cx - 85, 613.5, 170, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
+                  <span className={c.long ? "h2-a h2-catn is-long" : "h2-a h2-catn"} style={P(c.px - 10, 586, c.pw + 20, 26)}>{c.name}</span>
+                  <span className="h2-a h2-cats-sub" style={P(c.px - 10, 613.5, c.pw + 20, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
                   <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
                 </Link>
               ))}
             </div>
             {VINES.map(([k, x, y, w, h], i) => (
-              <span key={k} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
+              <span key={`${k}-${i}`} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
             ))}
           </>
         )}
