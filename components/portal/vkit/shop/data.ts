@@ -1,5 +1,6 @@
 import "server-only";
 import { getPlaces } from "@/lib/places";
+import { findFeatureForPlace } from "@/lib/places/features";
 import type { Place } from "@/lib/places/types";
 import { mapsSearchUrl } from "@/lib/maps";
 import { safeDecode } from "@/lib/stations/query";
@@ -278,7 +279,9 @@ export async function loadShopDetail(cfg: VkConfig, rawId: string): Promise<Shop
   const shop = shops.find((s) => s.id === id);
   const place = places.find((p) => p.id === id);
   if (!shop || !place) return null;
-  return buildShopDetail(cfg, shop, place);
+  // 店の特集記事(features-{業種}.json)があれば、その本文は店の記事のページに出る(articleData.ts)。紹介記事のリンクはそこへ
+  const hasFeature = !!(await findFeatureForPlace(cfg.key, place.id));
+  return buildShopDetail(cfg, shop, place, hasFeature);
 }
 
 const BOX: Record<VkBoxKey, { icon: RowIcon; l: string }> = {
@@ -290,7 +293,7 @@ const BOX: Record<VkBoxKey, { icon: RowIcon; l: string }> = {
 };
 
 /** 1 軒ぶんの画面用データ(loadShopDetail が使う純関数) */
-export function buildShopDetail(cfg: VkConfig, shop: LiveShop, place: Place): ShopDetail {
+export function buildShopDetail(cfg: VkConfig, shop: LiveShop, place: Place, hasFeature = false): ShopDetail {
   const L = vkLinks(cfg);
   const cat = VERTICALS[cfg.key].categories.find((c) => c.slug === shop.kind);
   const art = place.article;
@@ -387,7 +390,7 @@ export function buildShopDetail(cfg: VkConfig, shop: LiveShop, place: Place): Sh
   const lede = clip(sentences(checkedParagraphs(art?.lede ?? place.intro)), 120);
   const intro = { h: [...cfg.introH], p: lede };
 
-  const hasArticlePage = !!shop.photo && hasArticleBody(place);
+  const hasArticlePage = !!shop.photo && (hasArticleBody(place) || hasFeature);
   return {
     shop,
     place,

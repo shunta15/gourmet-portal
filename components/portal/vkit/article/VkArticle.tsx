@@ -1,8 +1,10 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import Shell from "../common/Shell";
 import { IconArrow, IconExternal } from "../common/Icons";
 import { vkLinks, type VkConfig } from "../config";
 import { dotDate, visualLen } from "../common/live";
+import Nm from "../common/Nm";
 import IndexNav from "./IndexNav";
 import type { ArticleView, ArtSection, Row4 } from "./articleData";
 import "./article.css";
@@ -26,7 +28,7 @@ function Lines({ lines }: { lines: string[] }) {
     <>
       {lines.map((l, i) => (
         <span key={i} className="vk-a-ln">
-          {l}
+          <Nm text={l} />
         </span>
       ))}
     </>
@@ -35,7 +37,7 @@ function Lines({ lines }: { lines: string[] }) {
 
 function Section({ s }: { s: ArtSection }) {
   return (
-    <section id={s.id} className={`vk-a-sec vk-a-sec--${s.layout} is-${s.shape}${s.photo ? "" : " is-nophoto"}${s.quote ? " has-q" : ""}`} aria-labelledby={`${s.id}-h`}>
+    <section id={s.id} className={`vk-a-sec vk-a-sec--${s.layout} is-${s.shape}${s.photo ? "" : " is-nophoto"}${s.quote ? " has-q" : ""}${s.longHeading ? " is-longh" : ""}`} aria-labelledby={`${s.id}-h`}>
       {s.photo ? (
         <figure className="vk-a-ph vk-zoom io" data-io="fade">
           <img src={s.photo.src} width={s.photo.w} height={s.photo.h} alt={s.photo.alt} loading="lazy" decoding="async" />
@@ -54,6 +56,29 @@ function Section({ s }: { s: ArtSection }) {
             <p key={k}>{p}</p>
           ))}
         </div>
+        {s.specs && s.specs.length > 0 ? (
+          <dl className="vk-a-sp io" style={{ ["--d" as string]: "180ms" }}>
+            {s.specs.map((x) => (
+              <div key={x.k}>
+                <dt>
+                  <Nm text={x.k} />
+                </dt>
+                <dd>
+                  <Nm text={x.v} />
+                </dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
+        {s.extra && s.extra.length > 0 ? (
+          <div className="vk-a-xps io" data-n={s.extra.length} style={{ ["--d" as string]: "220ms" }}>
+            {s.extra.map((p) => (
+              <figure key={p.src} className="vk-a-xp vk-zoom">
+                <img src={p.src} width={p.w} height={p.h} alt={p.alt} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        ) : null}
       </div>
       {s.quote ? (
         <blockquote className="vk-a-q io" style={{ ["--d" as string]: "220ms" }}>
@@ -61,6 +86,20 @@ function Section({ s }: { s: ArtSection }) {
         </blockquote>
       ) : null}
     </section>
+  );
+}
+
+/** 公式サイトのホスト名(www.sirokanetougei.com など)。狭い欄で「…co / m」と途中で折れないよう、「.」「-」の後ろで折れるようにする */
+function Host({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/(?<=[.\-])/).map((t, i) => (
+        <Fragment key={i}>
+          {i > 0 ? <wbr /> : null}
+          {t}
+        </Fragment>
+      ))}
+    </>
   );
 }
 
@@ -84,7 +123,7 @@ function Row({ r }: { r: Row4 }) {
           <li key={i}>
             <i aria-hidden="true" />
             <span className="vk-a-r4-a">{it.a}</span>
-            <span className="vk-a-r4-b">{it.b}</span>
+            <span className="vk-a-r4-b">{it.a === "公式サイト" ? <Host text={it.b} /> : it.b}</span>
             {it.c ? <span className="vk-a-r4-c">{it.c}</span> : null}
           </li>
         ))}
@@ -117,9 +156,11 @@ export default function VkArticle({ cfg, v }: { cfg: VkConfig; v: ArticleView })
             <h1 className={`vk-a-h1 vk-a-h1--${titleSize(v.h1)}`}>
               <Lines lines={v.h1} />
             </h1>
-            <p className="vk-a-sub">{v.sub}</p>
+            <p className="vk-a-sub">
+              <Nm text={v.sub} />
+            </p>
             {v.lede ? (
-              <p id="vk-a-lead" className="vk-a-lede">
+              <p id="vk-a-lead" className={`vk-a-lede${v.ledeLong ? " is-long" : ""}`}>
                 {v.lede}
               </p>
             ) : null}
@@ -150,10 +191,14 @@ export default function VkArticle({ cfg, v }: { cfg: VkConfig; v: ArticleView })
               <div className="vk-a-info-m io" style={{ ["--d" as string]: "80ms" }}>
                 {kicker ? <p className="vk-a-info-k">{kicker}</p> : null}
                 <p className={`vk-a-info-n vk-a-info-n--${nameCls}`}>
-                  {v.nameMain}
+                  <Nm text={v.nameMain} />
                   {v.nameReading ? <span className="vk-a-info-y">{v.nameReading}</span> : null}
                 </p>
-                {v.blurb ? <p className="vk-a-info-d">{v.blurb}</p> : null}
+                {v.blurb ? (
+                  <p className="vk-a-info-d">
+                    <Nm text={v.blurb} />
+                  </p>
+                ) : null}
               </div>
               <div className="vk-a-info-r io" style={{ ["--d" as string]: "160ms" }}>
                 {v.info.length > 0 ? (
@@ -217,8 +262,12 @@ export default function VkArticle({ cfg, v }: { cfg: VkConfig; v: ArticleView })
                       </span>
                       <span className="vk-a-rc-b">
                         <span className="vk-a-rc-k">{a.shop.kindName}</span>
-                        <span className="vk-a-rc-t">{a.shop.name}</span>
-                        <span className="vk-a-rc-d">{a.title}</span>
+                        <span className="vk-a-rc-t">
+                          <Nm text={a.shop.name} />
+                        </span>
+                        <span className="vk-a-rc-d">
+                          <Nm text={a.title} />
+                        </span>
                       </span>
                     </Link>
                   </li>

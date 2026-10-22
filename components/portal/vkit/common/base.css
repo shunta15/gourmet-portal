@@ -240,6 +240,9 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-num { font-family: var(--vk-ff-en); font-style: italic; font-weight: 400; font-size: calc(30 * var(--u)); line-height: 1; letter-spacing: 0.01em; color: var(--vk-ink); }
 /* 種類の名前(common/KindName.tsx)。「・」の所だけで折れる */
 .vk-kn { display: inline-block; }
+/* 店名・見出しの中のカタカナ・英字の連なり(common/Nm.tsx)。語の途中では折らない(keep-all)。1 行より長い塊だけ、はみ出さないよう塊の中で折る(anywhere)。
+   inline のまま(inline-block にしない): 塊の直後の「。」「、」が行の頭に来ない禁則を、ふつうの文と同じに保つため */
+.vk-nb { word-break: keep-all; overflow-wrap: anywhere; }
 .vk-kind { font-family: var(--vk-ff-en); font-weight: 500; font-size: var(--vk-fs-2xs); letter-spacing: 0.24em; text-transform: uppercase; color: var(--vk-labc); }
 /* 「詳細を見る →」「特集記事をみる →」(細い字+細い矢印。下に細い線) */
 .vk-more { display: inline-flex; align-items: center; gap: calc(9 * var(--u)); padding-bottom: 3px; font-size: var(--vk-fs-xs); font-weight: 700; letter-spacing: 0.1em; color: var(--vk-text); border-bottom: 1px solid rgb(var(--vk-ink-rgb) / 0.3); white-space: nowrap; transition: color 0.25s, border-color 0.25s; }

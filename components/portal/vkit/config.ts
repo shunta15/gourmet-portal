@@ -163,6 +163,8 @@ export type VkConfig = {
     boxQ: string;
     kwEx: string;
     heroFocus: number;
+    /** 飾りの写真を左右反転する(写真の人・物が見出しの文字に重なるとき。体験: パラグライダーが「休日を見つける。」に重なる) */
+    heroFlip?: boolean;
     emptyNone: [string, string];
   };
   shop: {

@@ -11,6 +11,10 @@
 .vq-hero-wash { position: absolute; inset: 0; background: linear-gradient(180deg, rgb(var(--vk-night-rgb) / calc(0.5 * var(--vk-hero-dim, 1))) 0, rgb(var(--vk-night-rgb) / calc(0.18 * var(--vk-hero-dim, 1))) calc(var(--vk-hh) * 1.7), rgb(var(--vk-night-rgb) / 0) calc(var(--vk-hh) * 3.4)), linear-gradient(270deg, rgb(var(--vk-night-rgb) / calc(0.34 * var(--vk-hero-dim, 1))) 0, rgb(var(--vk-night-rgb) / calc(0.12 * var(--vk-hero-dim, 1))) 22%, rgb(var(--vk-night-rgb) / 0) 40%), linear-gradient(90deg, rgb(var(--vk-paper-rgb) / 0.94) 0, rgb(var(--vk-paper-rgb) / 0.82) 24%, rgb(var(--vk-paper-rgb) / 0.34) 50%, rgb(var(--vk-paper-rgb) / 0) 68%); }
 .vq-hero-in { position: absolute; z-index: 2; left: calc(57 * var(--u)); top: calc(var(--vk-hh) + 11 * var(--u)); right: calc(300 * var(--u)); }
 .vq-hero-in .vq-crumbs { margin-bottom: calc(14 * var(--u)); }
+/* パンくずは写真の上に置くので、既定の薄い小さな字(--vk-mut)では読めない。濃い字(--vk-ink)・やや大きく・明るい縁取りの影で、どの写真の上でも読めるようにする */
+.vq-hero-in .vk-crumbs { font-size: max(12px, calc(9.2 * var(--u))); font-weight: 500; letter-spacing: 0.05em; color: var(--vk-ink); text-shadow: 0 0 5px rgb(var(--vk-paper-rgb) / 0.95), 0 0 12px rgb(var(--vk-paper-rgb) / 0.85); }
+.vq-hero-in .vk-crumbs a, .vq-hero-in .vk-crumbs [aria-current="page"] { color: inherit; }
+.vq-hero-in .vk-crumbs-sep { opacity: 0.9; }
 .vq-h1 { font-family: var(--vk-ff-min); font-weight: 500; font-size: calc(56 * var(--u)); line-height: 1.4; letter-spacing: 0.04em; color: var(--vk-ink); }
 .vq-sub { margin-top: calc(8 * var(--u)); font-family: var(--vk-ff-min); font-size: max(13px, calc(12.6 * var(--u))); letter-spacing: 0.18em; color: var(--vk-text); }
 .vq-hero-note { position: absolute; z-index: 2; right: calc(34 * var(--u)); top: calc(148 * var(--u)); font-family: var(--vk-ff-min); font-size: max(12px, calc(10 * var(--u))); line-height: 1.9; letter-spacing: 0.1em; color: #fff; text-shadow: 0 1px 10px rgba(10, 14, 20, 0.55); text-align: left; }
@@ -107,7 +111,8 @@
 .vq-head { display: flex; align-items: baseline; gap: calc(26 * var(--u)); }
 .vq-n { font-size: calc(36 * var(--u)); font-variant-numeric: lining-nums; }
 .vq-kind { font-size: var(--vk-fs-2xs); }
-.vq-name { margin-top: calc(12 * var(--u)); font-family: var(--vk-ff-min); font-weight: 500; font-size: max(16px, calc(15.5 * var(--u))); line-height: 1.6; letter-spacing: 0.05em; color: var(--vk-ink); overflow-wrap: anywhere; }
+/* 文字の大きさは文字の欄の幅に合わせる(cqw。記事の一覧の .val-name と同じ作り)。欄が狭いと、9〜10 字のカタカナの店名(「ダイビングセンター」)が 1 行に入らず、語の途中で折れていた */
+.vq-name { margin-top: calc(12 * var(--u)); font-family: var(--vk-ff-min); font-weight: 500; font-size: clamp(14px, 9.4cqw, calc(15.5 * var(--u))); line-height: 1.6; letter-spacing: 0.05em; color: var(--vk-ink); overflow-wrap: anywhere; }
 .vq-name a { color: inherit; }
 .vq-name a::after { content: ""; position: absolute; inset: 0; }
 .vq-name a:focus-visible { outline: 2px solid var(--vk-gold); outline-offset: 3px; }

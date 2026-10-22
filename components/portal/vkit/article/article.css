@@ -48,6 +48,20 @@
 .vk-a-q { margin: 6px 6px 14px; padding: 4px 0 4px 18px; border-left: 1px solid rgb(var(--vk-gold-rgb) / 0.7); }
 .vk-a-q p { margin: 0; font-family: var(--vk-ff-min); font-size: 15px; line-height: 2.1; letter-spacing: 0.12em; color: var(--vk-labc); text-wrap: balance; word-break: auto-phrase; }
 
+/* 店の特集のポイント(articleData.ts の featureSections): 事実の表・2 枚目以降の写真・長い見出し */
+.vk-a-sp { margin: 14px 0 0; padding-top: 4px; border-top: 1px solid var(--vk-line); font-size: 12.5px; line-height: 1.8; letter-spacing: 0.03em; }
+.vk-a-sp > div { display: grid; grid-template-columns: 11em minmax(0, 1fr); gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--vk-line); }
+.vk-a-sp dt { color: var(--vk-gold-d); letter-spacing: 0.08em; overflow-wrap: anywhere; }
+.vk-a-sp dd { margin: 0; color: var(--vk-text); overflow-wrap: anywhere; word-break: auto-phrase; text-wrap: pretty; }
+.vk-a-sec--band .vk-a-sp, .vk-a-sec--band .vk-a-sp > div { border-color: rgba(255, 255, 255, 0.24); }
+.vk-a-sec--band .vk-a-sp dt { color: var(--vk-gold-pale); }
+.vk-a-sec--band .vk-a-sp dd { color: var(--vk-onband); }
+.vk-a-xps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.vk-a-xps[data-n="1"] { grid-template-columns: minmax(0, 1fr); }
+.vk-a-xp { position: relative; margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: var(--vk-line); }
+.vk-a-xp img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vk-a-sec.is-longh .vk-a-h2 { font-size: 19px; line-height: 1.6; text-wrap: balance; word-break: auto-phrase; }
+
 /* ============ 04 基本情報の横並び(スマホは縦) ============ */
 .vk-a-r4 { position: relative; margin-top: 18px; padding: 26px 20px 28px; background: var(--vk-sand); }
 .vk-a-r4-n { margin: 12px 0 0; font-size: 12.5px; line-height: 1.9; letter-spacing: 0.05em; color: var(--vk-body); }
@@ -138,6 +152,12 @@
   .vk-a-sec.is-tall .vk-a-ph { aspect-ratio: auto; min-height: calc(270 * var(--u)); }
   .vk-a-sec .vk-a-tx { padding: 0; }
 
+  .vk-a-lede.is-long { max-width: calc(500 * var(--u)); }
+  .vk-a-sp { margin-top: calc(14 * var(--u)); padding-top: calc(4 * var(--u)); font-size: max(12px, calc(8.6 * var(--u))); }
+  .vk-a-sp > div { grid-template-columns: 11em minmax(0, 1fr); gap: calc(10 * var(--u)); padding: calc(6 * var(--u)) 0; }
+  .vk-a-xps { gap: calc(6 * var(--u)); margin-top: calc(14 * var(--u)); }
+  .vk-a-sec.is-longh .vk-a-h2 { font-size: max(17px, calc(17.5 * var(--u))); line-height: 1.6; }
+
   /* 01: 横長の写真に暗い文字箱 */
   .vk-a-sec--band { position: relative; display: block; min-height: calc(198 * var(--u)); overflow: hidden; }
   .vk-a-sec--band.is-tall { min-height: calc(260 * var(--u)); }
@@ -161,6 +181,7 @@
   .vk-a-sec--left .vk-a-q { grid-column: 3; grid-row: 1; align-self: center; margin: 0 calc(8 * var(--u)) 0 0; padding: calc(8 * var(--u)) 0 calc(8 * var(--u)) calc(26 * var(--u)); }
   .vk-a-q p { font-size: max(13px, calc(11.6 * var(--u))); line-height: 2.15; letter-spacing: 0.14em; }
   .vk-a-sec.is-nophoto { display: block; padding: calc(20 * var(--u)) calc(38 * var(--u)); }
+  .vk-a-sec.is-nophoto .vk-a-tx { max-width: calc(560 * var(--u)); }
 
   /* 04: 基本情報の横並び */
   .vk-a-r4 { display: grid; grid-template-columns: calc(262 * var(--u)) minmax(0, 1fr); align-items: start; margin-top: calc(15 * var(--u)); padding: calc(24 * var(--u)) calc(28 * var(--u)) calc(26 * var(--u)) calc(38 * var(--u)); }

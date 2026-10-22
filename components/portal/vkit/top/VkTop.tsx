@@ -4,6 +4,7 @@ import Shell from "../common/Shell";
 import { Reveal, MaskLines } from "../common/Motion";
 import { IconArrow } from "../common/Icons";
 import KindName from "../common/KindName";
+import Nm from "../common/Nm";
 import { vkImg, vkLinks, type VkConfig } from "../config";
 import { dotDate, interleave, kindsWithShops, loadArticles, loadShops, regionsWithShops, REGIONS, type LiveArticle, type LiveShop } from "../common/live";
 import HeroSearch from "./HeroSearch";
@@ -40,7 +41,7 @@ function Hero({ cfg, areas, kinds }: { cfg: VkConfig; areas: Array<{ label: stri
           {t.lead[1]}
         </Reveal>
         <Reveal as="p" variant="fade" delay={800} className="vk-t-p">
-          {t.intro}
+          <Nm text={t.intro} />
         </Reveal>
       </div>
       <HeroSearch action={L.search} areas={areas} kinds={kinds} hint={t.hint} noun={cfg.noun} icon={cfg.kinds[0].icon} />
@@ -145,7 +146,9 @@ function Listed({ cfg, shops }: { cfg: VkConfig; shops: LiveShop[] }) {
                     <img src={s.photo!.src} width={s.photo!.w} height={s.photo!.h} alt="" loading="lazy" decoding="async" />
                   </span>
                   <span className="vk-t-sc-b">
-                    <span className="vk-t-sc-n">{s.name}</span>
+                    <span className="vk-t-sc-n">
+                      <Nm text={s.name} />
+                    </span>
                     {s.area ? <span className="vk-t-sc-a">{s.area}</span> : null}
                   </span>
                   <IconArrow className="vk-t-sc-ar" />
@@ -272,8 +275,12 @@ function Articles({ cfg, items }: { cfg: VkConfig; items: LiveArticle[] }) {
                   <img src={a.photo.src} width={a.photo.w} height={a.photo.h} alt="" loading="lazy" decoding="async" />
                 </span>
                 <span>
-                  <span className="vk-t-ac-n">{a.shop.name}</span>
-                  <span className="vk-t-ac-s">{[a.shop.area, a.shop.kindName].filter(Boolean).join("・")}</span>
+                  <span className="vk-t-ac-n">
+                    <Nm text={a.shop.name} />
+                  </span>
+                  <span className="vk-t-ac-s">
+                    <Nm text={[a.shop.area, a.shop.kindName].filter(Boolean).join("・")} />
+                  </span>
                   {a.date ? <time className="vk-t-ac-d" dateTime={a.date}>{dotDate(a.date)} 確認</time> : null}
                 </span>
               </Link>

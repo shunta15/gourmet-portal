@@ -1,5 +1,6 @@
 import "server-only";
 import { getPlaces } from "@/lib/places";
+import { findFeatureForPlace, type PlaceFeature } from "@/lib/places/features";
 import type { Place } from "@/lib/places/types";
 import { interleave, loadArticles, vkLineOk, vkLine, toShop, type LiveArticle, type LivePhoto, type LiveShop } from "../common/live";
 import { kindFromField, kindFromWhat, plain, shortLabel, tokensOf, twoLines, type PKind } from "../shop/data";
@@ -10,6 +11,11 @@ import type { VkConfig } from "../config";
  * 組み立て = 最初の画面(大きな写真・見出し 2 行・副題 1 行・リード 4 行)/ 01 帯 / 02 右に写真 / 03 左に写真 / 04 基本情報の横並び / 掲載している店 / あわせて読みたい。
  * 文は Place.article の事実だけ。足さない・言い換えない(落とすだけ)。体験した言い回し・モデルプラン・おすすめ・料金・評価は出さない。点検に通らない文は、その 1 文だけ落とす(vkLineOk)。
  * ステイの宿ごとの編集表(articleEdit.ts)は持たない。節は 記事の節のうち場所・時間・アクセスの節を除いた先頭の 3 つ(各節の先頭の文から 140 字まで)。
+ *
+ * 店の特集記事(lib/places/generated/features-{activity,sports,life}.json。1 本 3000 字以上)がある店は、このページが特集の本文の置き場所になる
+ * (1 店 1 本の記事ページ。/{業種}/feature/{id} はここへ恒久の転送。特集の本文が 2 つの URL に出ない = canonical はこのページ)。
+ * その店は、ヒーローのリード = 特集の導入 / 節 = 特集の 5 つのポイント(見出し・本文・事実の表・写真)+ 編集部のひとこと + 最後に確かめたいこと / 出どころ = 特集の出どころ。
+ * 文は 1 文ずつ vkLineOk で点検し、通らない文はその 1 文だけ落とす(言い換えない)。特集が無い店は、これまでどおり店のデータの紹介記事(Place.article)から作る。
  */
 
 export type ArtSection = {
@@ -25,6 +31,12 @@ export type ArtSection = {
   shape: "wide" | "sq" | "tall";
   /** 03 の右の一言(使わない。null) */
   quote: string | null;
+  /** 特集のポイントの事実の表(体験時間・服装など。無ければ省略) */
+  specs?: Array<{ k: string; v: string }>;
+  /** 特集のポイントの 2 枚目以降の写真(本文の下に並べる。無ければ省略) */
+  extra?: LivePhoto[];
+  /** 見出しが長い(20 字より長い)。見出しの字を少し小さくする */
+  longHeading?: boolean;
 };
 
 /** 04 の 1 点(a = 上の語 / b = 次の見出し / c = 補足) */
@@ -63,6 +75,10 @@ export type ArticleView = {
   sources: Array<{ label: string; url: string }>;
   checkedAt?: string;
   related: LiveArticle[];
+  /** 店の特集記事があるとき、その題名・ページの説明・日付(metadata・構造化データ用)。無ければ null */
+  feature: { title: string; summary: string; date: string } | null;
+  /** リードが長い(特集の導入。160 字より長い)。ヒーローのリードの幅を広げる */
+  ledeLong: boolean;
 };
 
 /** 文(「。」で終わる単位)に分ける。「。」の直後に閉じ括弧が続くときは切らない */
@@ -163,18 +179,92 @@ function splitName(name: string): { main: string; reading: string } {
   return m && m[1] ? { main: m[1].trim(), reading: m[2].trim() } : { main: name, reading: "" };
 }
 
+/** 文を、1 つのまとまりが max 字ほどになるように段落に分ける(長い 1 段落を読みやすくする。文は切らない) */
+function chunkSentences(sents: string[], max = 150): string[] {
+  const out: string[] = [];
+  let cur = "";
+  for (const t of sents) {
+    if (cur && cur.length + t.length > max) {
+      out.push(cur);
+      cur = "";
+    }
+    cur += t;
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+
+/**
+ * 店の特集(features-*.json)から、記事の節を作る。
+ *   5 つのポイント = 見出し(ポイントの名前そのまま)・小さな札(ポイントの分類)・本文(150 字ほどずつの段落)・事実の表・写真(店の写真として使えるもの。1 枚目は節の写真、2 枚目以降は本文の下)
+ *   + 編集部のひとこと + 最後に確かめたいこと。どれも文は 1 文ずつ vkLineOk に通し、通らない文だけ落とす(言い換えない)。本文が 1 文も残らない節は出さない。
+ * 写真は店の写真(photos = 人物が主役でない・使えるもの)にあるものだけ。同じ写真を同じページで 2 回は使わない(used)。
+ * 写真のある節は 帯 → 右に写真 → 左に写真 の順に 3 つの組みを回し、写真の無い節は文だけの組み(右)にする。
+ */
+function featureSections(f: PlaceFeature, photos: KPhoto[], used: Set<string>): ArtSection[] {
+  const A = f.article;
+  const take = (src: string): LivePhoto | null => {
+    const p = photos.find((x) => x.src === src);
+    if (!p || used.has(src)) return null;
+    used.add(src);
+    return { src, w: p.w, h: p.h, alt: f.photos[src]?.alt ?? p.alt };
+  };
+  const LAYOUTS = ["band", "right", "left"] as const;
+  const out: ArtSection[] = [];
+  let withPhoto = 0;
+  const push = (v: { kicker: string; heading: string; paras: string[]; specs?: Array<{ k: string; v: string }>; images?: string[] }) => {
+    if (v.paras.length === 0) return;
+    const imgs = (v.images ?? []).map(take).filter((x): x is LivePhoto => !!x);
+    const photo = imgs[0] ?? null;
+    const k = out.length;
+    out.push({
+      no: String(k + 1).padStart(2, "0"),
+      id: `vk-a-s${k + 1}`,
+      kicker: v.kicker,
+      heading: [v.heading],
+      paras: v.paras,
+      photo,
+      layout: photo ? LAYOUTS[withPhoto++ % 3] : "right",
+      shape: photo ? (photo.w / Math.max(1, photo.h) >= 1.2 ? "wide" : photo.w / Math.max(1, photo.h) >= 0.95 ? "sq" : "tall") : "wide",
+      quote: null,
+      ...(v.specs && v.specs.length > 0 ? { specs: v.specs } : {}),
+      ...(imgs.length > 1 ? { extra: imgs.slice(1) } : {}),
+      ...(v.heading.length > 20 ? { longHeading: true } : {}),
+    });
+  };
+  const body = (t: string) => chunkSentences(sentences(t).filter((x) => vkLineOk(x)));
+  for (const r of A.ranking) {
+    if (!r.name || !vkLineOk(r.name)) continue;
+    push({
+      kicker: vkLine(r.cuisine),
+      heading: r.name,
+      paras: body(r.desc),
+      specs: (r.specs ?? []).filter((x) => x.k && x.v && vkLineOk(`${x.k}${x.v}`)),
+      images: r.images,
+    });
+  }
+  if (A.quote) push({ kicker: "ひとこと", heading: "編集部のひとこと", paras: body(A.quote) });
+  if (A.closing) push({ kicker: "最後に", heading: "訪ねる前に確かめたいこと", paras: body(A.closing) });
+  return out;
+}
+
 /** 店の ID から記事の表示用データを作る。店が無い・紹介記事が無い・使える文が 1 つも無ければ null(404)。places を渡すと、その店の集まりで作る(確認用) */
 export async function loadArticle(cfg: VkConfig, id: string, given?: Place[]): Promise<ArticleView | null> {
   const places = given ?? (await getPlaces(cfg.key));
   const place = places.find((p) => p.id === id);
-  if (!place?.article) return null;
+  // 特集(店 ID = 特集の placeId)があれば、それが記事の本文。無ければ店のデータの紹介記事(Place.article)
+  const feature = place ? ((await findFeatureForPlace(cfg.key, place.id)) ?? null) : null;
+  if (!place || (!place.article && !feature)) return null;
   const shop = toShop(cfg, place);
-  const a = place.article;
+  const a: Partial<Place["article"] & object> = place.article ?? {};
   const photos = withKinds(shop, place);
   const used = new Set<string>();
 
   // ---- ヒーロー・見出し・副題・リード ----
-  const hero = pickHero(photos, used);
+  // ヒーローの写真: 特集があれば特集のヒーロー(店の写真として使える・文字が主役でないもの)。無ければ、これまでどおりの選び方
+  const featHero = feature ? photos.find((p) => p.src === feature.article.heroImage && plain(p)) : undefined;
+  if (featHero) used.add(featHero.src);
+  const hero = featHero ?? pickHero(photos, used);
   const { main: nameMain, reading: nameReading } = splitName(shop.name);
   const h1 = shop.area ? [`${shop.area}の`, nameMain] : [nameMain];
 
@@ -183,14 +273,14 @@ export async function loadArticle(cfg: VkConfig, id: string, given?: Place[]): P
   const clauses = headline.split("。").map((s) => s.trim()).filter(Boolean);
   const sub = (clauses.length > 1 ? clauses[1] : (clauses[0] ?? [shop.area, shop.kindName].filter(Boolean).join("の"))).replace(/。$/, "");
 
-  // リード = 導入の文のうち、最初の「〜にある「店名」です」を除いた文を、130 字までの範囲で(1 文は必ず)
-  const ledeSents = sentences(a.lede ?? "").filter((s) => vkLineOk(s));
-  const intro = ledeSents[0] ?? "";
-  const rest = ledeSents.slice(/」(\(.+\))?です。$/.test(intro) ? 1 : 0);
+  // リード = 導入の文のうち、最初の「〜にある「店名」です」を除いた文を、130 字までの範囲で(1 文は必ず)。特集があるときは、特集の導入を全部(点検に通った文)
+  const ledeSents = sentences(feature ? feature.article.lede : (a.lede ?? "")).filter((s) => vkLineOk(s));
+  const intro = sentences(a.lede ?? "").filter((s) => vkLineOk(s))[0] ?? ledeSents[0] ?? "";
+  const rest = feature ? ledeSents : ledeSents.slice(/」(\(.+\))?です。$/.test(intro) ? 1 : 0);
   const ledeOut: string[] = [];
   let ledeLen = 0;
   for (const s of rest.length > 0 ? rest : ledeSents) {
-    if (ledeOut.length > 0 && ledeLen + s.length > 118) break;
+    if (!feature && ledeOut.length > 0 && ledeLen + s.length > 118) break;
     ledeOut.push(s);
     ledeLen += s.length;
   }
@@ -200,8 +290,8 @@ export async function loadArticle(cfg: VkConfig, id: string, given?: Place[]): P
   const secs = (a.sections ?? []).filter((s) => s.heading && vkLineOk(s.heading));
   const use = (secs.filter((s) => !placeRe.test(s.heading)).length > 0 ? secs.filter((s) => !placeRe.test(s.heading)) : secs).slice(0, 3);
   const LAYOUTS = ["band", "right", "left"] as const;
-  const sections: ArtSection[] = [];
-  for (const s of use) {
+  const sections: ArtSection[] = feature ? featureSections(feature, photos, used) : [];
+  for (const s of feature ? [] : use) {
     const picked: string[] = [];
     let n = 0;
     for (const t of sentences(s.body ?? "")) {
@@ -286,8 +376,10 @@ export async function loadArticle(cfg: VkConfig, id: string, given?: Place[]): P
     blurb: intro && vkLineOk(intro) ? intro : "",
     info,
     index,
-    sources: (a.sources ?? []).filter((s) => /^https?:\/\//.test(s.url) && s.label),
-    checkedAt: a.checkedAt,
+    sources: (feature ? feature.sources : (a.sources ?? [])).filter((s) => /^https?:\/\//.test(s.url) && s.label),
+    checkedAt: feature?.checkedAt ?? a.checkedAt,
     related,
+    feature: feature ? { title: feature.article.title, summary: vkLine(feature.summary), date: feature.article.date } : null,
+    ledeLong: feature ? ledeLen > 160 : false,
   };
 }

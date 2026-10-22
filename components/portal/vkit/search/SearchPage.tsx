@@ -4,6 +4,7 @@ import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../common/Shell";
 import Crumbs from "../common/Crumbs";
 import KindName from "../common/KindName";
+import Nm from "../common/Nm";
 import { IconArrow, IconChevron, IconChevronDown, IconChevronLeft, IconMinus, IconPin, IconPlus, IconSearch, KindIcon } from "../common/Icons";
 import { MaskLines, Reveal } from "../common/Motion";
 import { iconOf, vkImg, vkLinks, type VkConfig } from "../config";
@@ -296,10 +297,14 @@ function Row({ cfg, s, n, i }: { cfg: VkConfig; s: LiveShop; n: number; i: numbe
         </p>
         <h3 className="vq-name">
           <Link href={L.shop(s.id)} prefetch={false}>
-            {s.name}
+            <Nm text={s.name} />
           </Link>
         </h3>
-        {desc ? <p className="vq-desc">{desc}</p> : null}
+        {desc ? (
+          <p className="vq-desc">
+            <Nm text={desc} />
+          </p>
+        ) : null}
         {tags.length > 0 ? (
           <ul className="vq-tags">
             {tags.map((t) => (

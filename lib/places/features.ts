@@ -1,5 +1,5 @@
 /**
- * 新業種（ビューティー・ボディケア・ペット）の実在の店の特集記事。lib/places/generated/features-{beauty,bodycare,pet}.json を読む。
+ * 新業種（ビューティー・ボディケア・ペット・体験・スポーツ・くらし）の実在の店の特集記事。lib/places/generated/features-{beauty,bodycare,pet,activity,sports,life}.json を読む。
  * JSON は automation/vertical-stores/build-features.mjs の自動生成（手で編集しない）。
  * 確認用の facts・notes は JSON に入っていない。
  * サーバー専用（動的 import で読む）。クライアント部品から import しない。
@@ -44,14 +44,20 @@ export const VERTICAL_FEATURES_ENABLED = true;
 
 export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise<PlaceFeature[]> {
   if (!VERTICAL_FEATURES_ENABLED) return [];
-  // ステイ・体験・スポーツ・くらしは特集記事のファイルがまだ無い（features-<業種>.json は未作成。ペットの特集を誤って返さない）
-  if (vertical === 'stay' || vertical === 'activity' || vertical === 'sports' || vertical === 'life') return [];
+  // ステイは特集記事のファイルがまだ無い（features-stay.json は未作成。ほかの業種の特集を誤って返さない）
+  if (vertical === 'stay') return [];
   const mod =
     vertical === 'beauty'
       ? await import('./generated/features-beauty.json')
       : vertical === 'bodycare'
         ? await import('./generated/features-bodycare.json')
-        : await import('./generated/features-pet.json');
+        : vertical === 'activity'
+          ? await import('./generated/features-activity.json')
+          : vertical === 'sports'
+            ? await import('./generated/features-sports.json')
+            : vertical === 'life'
+              ? await import('./generated/features-life.json')
+              : await import('./generated/features-pet.json');
   return (mod.default as unknown as { features: PlaceFeature[] }).features;
 }
 

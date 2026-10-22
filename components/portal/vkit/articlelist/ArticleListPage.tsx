@@ -4,6 +4,7 @@ import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../common/Shell";
 import Crumbs from "../common/Crumbs";
 import KindName from "../common/KindName";
+import Nm from "../common/Nm";
 import { IconArrow, IconChevron, IconChevronDown, IconChevronLeft, IconMinus, IconPin, IconPlus, IconSearch, KindIcon } from "../common/Icons";
 import { MaskLines, Reveal } from "../common/Motion";
 import { iconOf, vkImg, vkLinks, type VkConfig } from "../config";
@@ -41,7 +42,7 @@ function Hero({ cfg, f, facets, scope, total }: { cfg: VkConfig; f: ListFilters;
     <section className="val-hero" aria-label={`${cfg.noun}の記事`}>
       <div className="val-hero-clip vk-live" aria-hidden="true">
         {/* 飾りの写真(Wikimedia Commons の CC0・パブリックドメイン。店そのものではない。出典は configs/credits.json)。ゆっくり寄り続ける */}
-        <img className="val-hero-img vk-kb" src={`${vkImg(cfg).list}/hero.webp`} width={2400} height={880} alt="" fetchPriority="high" decoding="async" style={{ objectPosition: `50% ${c.heroFocus}%` }} />
+        <img className={`val-hero-img vk-kb${c.heroFlip ? " val-hero-img--flip" : ""}`} src={`${vkImg(cfg).list}/hero.webp`} width={2400} height={880} alt="" fetchPriority="high" decoding="async" style={{ objectPosition: `50% ${c.heroFocus}%` }} />
         <span className="val-hero-wash" />
       </div>
       <div className="val-hero-in">
@@ -288,11 +289,19 @@ function Card({ cfg, s, n, i }: { cfg: VkConfig; s: LiveShop; n: number; i: numb
         </p>
         <h3 className="val-name">
           <Link href={L.article(s.id)} prefetch={false}>
-            <span className="val-l1">{c.l1}</span>
-            <span className="val-l2">{c.l2}</span>
+            <span className="val-l1">
+              <Nm text={c.l1} />
+            </span>
+            <span className="val-l2">
+              <Nm text={c.l2} />
+            </span>
           </Link>
         </h3>
-        {c.text ? <p className="val-desc">{c.text}</p> : null}
+        {c.text ? (
+          <p className="val-desc">
+            <Nm text={c.text} />
+          </p>
+        ) : null}
         {c.feats.length > 0 ? (
           <ul className="val-tags">
             {c.feats.map((t) => (

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { IconArrow, IconArrowLeft } from "../common/Icons";
+import Nm from "../common/Nm";
 
 /**
  * 最初のページの「SPECIAL FEATURE」の切り替え(見本の 01 / 02 / 03 と ← →)。実在の店の記事 1〜3 本。
@@ -39,8 +40,12 @@ export default function FeatureSlider({ slides }: { slides: FeatureSlide[] }) {
               <span className="vk-t-fs-no">{String(k + 1).padStart(2, "0")}</span>
               <span className="vk-t-fs-area">{s.area}</span>
             </p>
-            <h3 className="vk-t-fs-t">{s.title}</h3>
-            <p className="vk-t-fs-d">{s.desc}</p>
+            <h3 className="vk-t-fs-t">
+              <Nm text={s.title} />
+            </h3>
+            <p className="vk-t-fs-d">
+              <Nm text={s.desc} />
+            </p>
             <Link href={s.href} tabIndex={k === i ? 0 : -1} className="vk-t-fs-more">
               VIEW MORE
               <IconArrow />

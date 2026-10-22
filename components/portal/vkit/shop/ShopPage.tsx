@@ -3,6 +3,7 @@ import type { CSSProperties, ReactNode } from "react";
 import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../common/Shell";
 import Crumbs from "../common/Crumbs";
+import Nm from "../common/Nm";
 import { IconArrow, IconExternal } from "../common/Icons";
 import { MaskLines, Reveal } from "../common/Motion";
 import { vkLinks, type VkConfig } from "../config";
@@ -64,11 +65,11 @@ function Hero({ cfg, d }: { cfg: VkConfig; d: ShopDetail }) {
         <div className="vs-hero-cap">
           {kick ? <p className="vs-hero-kick">{kick}</p> : null}
           <h1 className={`vs-hero-name vs-hero-name--${nameSize(s.name.length)}`}>
-            <MaskLines lines={[s.name]} delay={120} />
+            <MaskLines lines={[<Nm key="n" text={s.name} />]} delay={120} />
           </h1>
           {d.tagline ? (
             <Reveal as="p" variant="fade" className="vs-hero-tag" delay={520}>
-              {d.tagline}
+              <Nm text={d.tagline} />
             </Reveal>
           ) : null}
         </div>
@@ -136,7 +137,7 @@ function Intro({ d }: { d: ShopDetail }) {
       ) : null}
       <div className="vs-intro-in">
         <h2 id="vs-intro-h" className="vs-intro-h">
-          <MaskLines lines={d.intro.h.length ? d.intro.h : [d.shop.name]} step={120} />
+          <MaskLines lines={(d.intro.h.length ? d.intro.h : [d.shop.name]).map((t) => <Nm key={t} text={t} />)} step={120} />
         </h2>
         <div className="vs-intro-ps">
           {d.intro.p.map((t, i) => (
@@ -202,7 +203,7 @@ function Section({ d, s }: { d: ShopDetail; s: Sec }) {
           <h3 className="vs-blk-h">
             {s.h.map((t, i) => (
               <span key={i} className="vs-blk-hl">
-                {t}
+                <Nm text={t} />
               </span>
             ))}
           </h3>
@@ -340,7 +341,9 @@ function Special({ d, noun }: { d: ShopDetail; noun: string }) {
         ) : null}
         <span className="vs-sp-t">
           <span className="vs-sp-k">この{noun}の紹介</span>
-          <span className="vs-sp-title">{a.title}</span>
+          <span className="vs-sp-title">
+            <Nm text={a.title} />
+          </span>
         </span>
         <span className="vk-arrow vs-sp-arrow" aria-hidden="true">
           <IconArrow />

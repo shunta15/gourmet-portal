@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IconChevron } from "./Icons";
+import Nm from "./Nm";
 
 /**
  * パンくず(探す・店の紹介の上の「ホーム > 体験を探す」「トップ > 京都府 > …」)。小さな薄い字で、区切りは細い「>」。
@@ -14,7 +15,15 @@ export default function Crumbs({ items, className = "" }: { items: Array<{ label
           const last = i === items.length - 1;
           return (
             <li key={`${i}-${it.label}`}>
-              {it.href && !last ? <Link href={it.href}>{it.label}</Link> : <span aria-current={last ? "page" : undefined}>{it.label}</span>}
+              {it.href && !last ? (
+                <Link href={it.href}>
+                  <Nm text={it.label} />
+                </Link>
+              ) : (
+                <span aria-current={last ? "page" : undefined}>
+                  <Nm text={it.label} />
+                </span>
+              )}
               {last ? null : <IconChevron className="vk-crumbs-sep" />}
             </li>
           );

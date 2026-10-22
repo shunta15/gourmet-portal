@@ -1,1 +1,11 @@
-export { default } from "@/components/portal/pages/stub";
+import { sportsCfg } from "@/components/portal/vkit/configs";
+import { vkFeatureRedirectRoute } from "@/components/portal/vkit/article/route";
+
+// 店の特集記事の旧 URL(/sports/feature/{id})。本文は店の記事のページ(/sports/article/{店 ID})にあるので、そこへ恒久の転送(同じ本文を 2 つの URL に出さない)。
+const route = vkFeatureRedirectRoute(sportsCfg);
+
+export const revalidate = 3600;
+export const dynamicParams = true;
+export const generateStaticParams = route.generateStaticParams;
+export const generateMetadata = route.generateMetadata;
+export default route.Page;
