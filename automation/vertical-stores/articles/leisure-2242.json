@@ -23,6 +23,12 @@
   "tags": [],
   "facts": [
     {
+      "claim": "ジップトリップコースは小学3年生までは18歳以上の保護者と一緒に参加し、小学4年生以上は保護者の参加は不要で地上からの見守りが必要",
+      "source": "https://www.mori-kaori.jp/activity/fa-yunoyama/",
+      "quote": "小学3年生までは18歳以上の保護者と一緒にご参加ください。",
+      "checkedAt": "2026-10-22"
+    },
+    {
       "claim": "Google マップの名称は「フォレストアドベンチャー・湯の山」",
       "source": "https://maps.google.com/?cid=12707706127050756084",
       "quote": "フォレストアドベンチャー・湯の山",
