@@ -1,0 +1,60 @@
+{
+  "key": "sports-2297",
+  "images": [
+    {
+      "path": "/_portal/vshops/sports-2297/hero.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_01_.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "2階ボクシングフロアの全景。リングとサンドバッグが見える",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-2297/p1.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_03.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "2階のリング(5m×5mと案内されている)。赤い支柱とロープが見える",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-2297/p2.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_09.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "3階のボクシングフロア。サンドバッグとリングが見える",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-2297/p3.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_13.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "3階トレーニングルームのスミスマシンとラットプルマシン",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-2297/p4.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_14.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "3階トレーニングルームのルームランナーとエアロバイク",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-2297/p5.jpg",
+      "imageUrl": "https://hiromasa0084.com/wp/wp-content/themes/nagoyaoohashi/common/image/facilities/facilities_16.webp",
+      "pageUrl": "https://hiromasa0084.com/facilities/",
+      "what": "3階トレーニングルームの床に並ぶダンベル、バーベル、プレート",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(hiromasa0084.com)の「施設紹介」の写真。Google マップの写真は使っていない。人物が写らない6枚を選び、元の webp(600×600)を JPEG に再保存(1枚200KB以下)。"
+}

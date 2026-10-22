@@ -1,0 +1,73 @@
+{
+  "tab": "スポーツ",
+  "tabEn": "sports",
+  "row": 1084,
+  "sheet": {
+    "name": "コーヅ・ゴルフショップ",
+    "address": "",
+    "url": "",
+    "type": "スポーツ",
+    "d1": "スポーツ用品",
+    "d2": ""
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)→公式サイトの住所・電話で照合",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "コーヅ・ゴルフショップ"
+  ],
+  "candidates": [
+    {
+      "name": "コーヅ・ゴルフショップ",
+      "address": "埼玉県所沢市下富１００１",
+      "url": "https://www.google.com/maps/place/%E3%82%B3%E3%83%BC%E3%83%85%E3%83%BB%E3%82%B4%E3%83%AB%E3%83%95%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/@35.8404137,139.4594379,17z/data=!3m1!4b1!4m6!3m5!1s0x6018de7b35366b4d:0x4d2edf46aa0e3e6!8m2!3d35.8404137!4d139.4594379!16s%2Fg%2F1tf7gpmq",
+      "addressLevel": "official",
+      "addressDetail": "公式サイトの所在地(〒359-0001 埼玉県所沢市下富1001 新富ゴルフプラザ練習場内)と一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E3%82%B3%E3%83%BC%E3%83%85%E3%83%BB%E3%82%B4%E3%83%AB%E3%83%95%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/@35.8404137,139.4594379,17z/data=!3m1!4b1!4m6!3m5!1s0x6018de7b35366b4d:0x4d2edf46aa0e3e6!8m2!3d35.8404137!4d139.4594379!16s%2Fg%2F1tf7gpmq?hl=ja",
+  "verdict": "一致",
+  "verdictReason": "シートは店名のみ。店名が Google マップの表示名と完全一致し、公式サイト(kozu-golf.com)の所在地(所沢市下富1001 新富ゴルフプラザ練習場内)・電話(090-7287-4368)と Google マップの住所・電話・website 欄が一致",
+  "nameRelation": "exact",
+  "place": {
+    "name": "コーヅ・ゴルフショップ",
+    "address": "埼玉県所沢市下富１００１",
+    "category": "ゴルフ ショップ",
+    "lat": 35.8404137,
+    "lng": 139.4594379,
+    "gbpUrl": "https://maps.google.com/?cid=347601755277681638",
+    "phone": "090-7287-4368",
+    "website": "https://kozu-golf.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–16:00",
+      "水": "定休日",
+      "木": "10:00–16:00",
+      "金": "10:00–16:00",
+      "土": "10:00–16:00",
+      "日": "10:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-22T10:00:00.000Z",
+  "seconds": 0,
+  "classification": {
+    "vertical": "スポーツ",
+    "sub": "スポーツ用品",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "identity": [
+    "住所: Google マップ「〒359-0001 埼玉県所沢市下富１００１(所在施設: 新富ゴルフプラザ)」＝公式サイト「〒359-0001 埼玉県所沢市下富1001（新富ゴルフプラザ練習場内）」",
+    "電話: Google マップ 090-7287-4368 ＝ 公式サイト 電話番号 090-7287-4368",
+    "ウェブサイト: Google マップの表示 kozu-golf.com ＝ 公式サイトのドメイン",
+    "店名: 一覧「コーヅ・ゴルフショップ」＝Google マップ「コーヅ・ゴルフショップ」(完全一致。公式サイトの呼び方は「コーヅゴルフ」)"
+  ]
+}

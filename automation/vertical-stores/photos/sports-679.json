@@ -1,0 +1,51 @@
+{
+  "key": "sports-679",
+  "images": [
+    {
+      "path": "/_portal/vshops/sports-679/hero.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/086e84_c882ed838f7447ea966d906a017cc864~mv2.jpg",
+      "pageUrl": "https://www.m-be1988.com/",
+      "what": "赤とピンクのマシンが並ぶトレーニングルームの全景",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-679/p1.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/086e84_90882a6bef4b45278868abb19c12bad5~mv2.jpg",
+      "pageUrl": "https://www.m-be1988.com/womenstudio",
+      "what": "女性専用スタジオの全景。白い壁の部屋にマシンとマットが並ぶ",
+      "width": 1000,
+      "height": 667,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-679/p2.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/086e84_571b3f8d05c24b18a08fe333baf1b2a8~mv2.jpg",
+      "pageUrl": "https://www.m-be1988.com/tanning",
+      "what": "青い壁の部屋に置かれた日焼けマシン(シルバーと青の本体)",
+      "width": 1000,
+      "height": 667,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-679/p3.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/086e84_68132e4436a3484a95acf5a408dbda58~mv2.jpg",
+      "pageUrl": "https://www.m-be1988.com/tanning",
+      "what": "オレンジの本体の日焼けマシン",
+      "width": 1000,
+      "height": 667,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-679/p4.jpg",
+      "imageUrl": "https://static.wixstatic.com/media/086e84_09a62af6968c4ca398c33e726eef99da~mv2.jpg",
+      "pageUrl": "https://www.m-be1988.com/about",
+      "what": "棚に並ぶ大会のトロフィー",
+      "width": 1000,
+      "height": 667,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(m-be1988.com)の画像。Google マップの写真は使っていない。人物が主役でないものだけを選び、長辺はそのまま、1枚200KB以下のJPEGに再保存(hero は元3000×2000を1200×800に縮小)。"
+}

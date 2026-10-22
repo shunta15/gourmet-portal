@@ -1,0 +1,73 @@
+{
+  "tab": "スポーツ",
+  "tabEn": "sports",
+  "row": 2297,
+  "sheet": {
+    "name": "名古屋 大橋ボクシングジム＆フィットネス",
+    "address": "",
+    "url": "",
+    "type": "スポーツ",
+    "d1": "格闘技・武道",
+    "d2": ""
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)→公式サイトの住所・電話で照合",
+  "followedUrl": null,
+  "kgmidHint": null,
+  "queries": [
+    "名古屋 大橋ボクシングジム＆フィットネス"
+  ],
+  "candidates": [
+    {
+      "name": "名古屋 大橋ボクシングジム＆フィットネス",
+      "address": "愛知県名古屋市西区押切２丁目８−１４ 小川ビル ２階",
+      "url": "https://www.google.com/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B+%E5%A4%A7%E6%A9%8B%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A0%EF%BC%86%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9/@35.1880083,136.8863506,17z/data=!3m1!4b1!4m6!3m5!1s0x600376bc3051aa23:0xc38d1f79229d2c1a!8m2!3d35.1880083!4d136.8863506!16s%2Fg%2F11dzddm3g5",
+      "addressLevel": "official",
+      "addressDetail": "公式サイトの住所(〒451-0063 愛知県名古屋市西区押切2丁目8-14 小川ビル2Ｆ)と一致",
+      "nameRelation": "exact",
+      "kgmidMatch": null
+    }
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E5%90%8D%E5%8F%A4%E5%B1%8B+%E5%A4%A7%E6%A9%8B%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A0%EF%BC%86%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9/@35.1880083,136.8863506,17z/data=!3m1!4b1!4m6!3m5!1s0x600376bc3051aa23:0xc38d1f79229d2c1a!8m2!3d35.1880083!4d136.8863506!16s%2Fg%2F11dzddm3g5?hl=ja",
+  "verdict": "一致",
+  "verdictReason": "シートは店名のみ。店名が Google マップの表示名と完全一致し、公式サイト(hiromasa0084.com)のフッターの住所(愛知県名古屋市西区押切2丁目8-14 小川ビル2F)・電話(052-532-0084)と Google マップの住所・電話・website 欄が一致",
+  "nameRelation": "exact",
+  "place": {
+    "name": "名古屋 大橋ボクシングジム＆フィットネス",
+    "address": "愛知県名古屋市西区押切２丁目８−１４ 小川ビル ２階",
+    "category": "ボクシング ジム",
+    "lat": 35.1880083,
+    "lng": 136.8863506,
+    "gbpUrl": "https://maps.google.com/?cid=14090953414244379674",
+    "phone": "052-532-0084",
+    "website": "https://hiromasa0084.com/",
+    "hours": {
+      "月": "16:00–21:30",
+      "火": "13:00–21:30",
+      "水": "13:00–21:30",
+      "木": "13:00–21:30",
+      "金": "13:00–21:30",
+      "土": "13:00–20:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": "(オーナーの投稿・2026-10-22取得)地下鉄鶴舞線 浄心駅・浅間町駅 下車徒歩10分/名古屋市バス 名駅15 押切町 下車徒歩3分 ほか(営業案内の文章。効き目をうたう箇所は使っていない)"
+  },
+  "landedPlace": null,
+  "fetchedAt": "2026-10-22T09:30:00.000Z",
+  "seconds": 0,
+  "classification": {
+    "vertical": "スポーツ",
+    "sub": "格闘技・武道",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "identity": [
+    "住所: Google マップ「〒451-0063 愛知県名古屋市西区押切２丁目８−１４ 小川ビル ２階」＝公式サイト「〒451-0063 愛知県名古屋市西区押切2丁目8-14 小川ビル2Ｆ」",
+    "電話: Google マップ 052-532-0084 ＝ 公式サイト TEL 052-532-0084",
+    "ウェブサイト: Google マップの表示 hiromasa0084.com ＝ 公式サイトのドメイン",
+    "店名: 一覧「名古屋 大橋ボクシングジム＆フィットネス」＝Google マップ「名古屋 大橋ボクシングジム＆フィットネス」(完全一致)"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "key": "sports-1084",
+  "images": [
+    {
+      "path": "/_portal/vshops/sports-1084/hero.jpg",
+      "imageUrl": "https://kozu-golf.com/images/contents/koubou1.2.jpg",
+      "pageUrl": "https://kozu-golf.com/shop.html",
+      "what": "木目の壁に「KOZU MAN」の看板がかかる工房の入り口",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-1084/p1.jpg",
+      "imageUrl": "https://kozu-golf.com/images/contents/shop2.jpg",
+      "pageUrl": "https://kozu-golf.com/shop.html",
+      "what": "グリップやゴルフバッグが並ぶ店内",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-1084/p2.jpg",
+      "imageUrl": "https://kozu-golf.com/images/contents/shop3.jpg",
+      "pageUrl": "https://kozu-golf.com/shop.html",
+      "what": "工具や部品が並ぶ工房の作業台",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-1084/p3.jpg",
+      "imageUrl": "https://kozu-golf.com/img/sns/202610/18027417986870603.jpg",
+      "pageUrl": "https://kozu-golf.com/",
+      "what": "クラブヘッドのフェース面を固定し、刃で溝を加工している作業",
+      "width": 860,
+      "height": 860,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-1084/p4.jpg",
+      "imageUrl": "https://kozu-golf.com/img/sns/202610/17961408444000101.jpg",
+      "pageUrl": "https://kozu-golf.com/",
+      "what": "パターヘッドをのせた緑色の治具と、目盛りのついた金属の板",
+      "width": 860,
+      "height": 860,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/sports-1084/p5.jpg",
+      "imageUrl": "https://kozu-golf.com/img/sns/202608/18120477043987566.jpg",
+      "pageUrl": "https://kozu-golf.com/",
+      "what": "2本のパターが芝の上に置かれ、フェース面の加工が見える",
+      "width": 860,
+      "height": 860,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(kozu-golf.com)の店舗案内の写真3枚と、トップページに載る作業の写真3枚(1080×1080を860×860に縮小)。Google マップの写真は使っていない。人物は写っていない。元画像が600×400と小さいものは拡大していない。"
+}
