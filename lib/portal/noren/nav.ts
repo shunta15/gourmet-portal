@@ -43,7 +43,7 @@ export const HEADER_NAV = RELEASE_SEARCH
       { href: "/search", ja: "さがす", en: "Search" },
     ] as const);
 
-/** フッターのナビゲーション。RELEASE_SEARCH が true のときはヘッダーと同じ「トップ・特集・さがす」（エリアの一覧は下の「地域」の列にある）。false は今までの 5 つ */
+/** フッターのナビゲーション。RELEASE_SEARCH が true のときはヘッダーと同じ「トップ・特集・さがす」の 3 つ（2026-10-23。地域の列・おまかせ提案などは外した）。false は今までの 5 つ */
 export const FOOT_NAV = RELEASE_SEARCH
   ? ([
       // 「トップ」(/gourmet。グルメのトップ)と「総合トップ」(/。マチノワ全体のトップ)は行き先が違うので、RELEASE_PERIPHERY のあいだは違いが分かる呼び名にする
@@ -60,54 +60,18 @@ export const FOOT_NAV = RELEASE_SEARCH
     ] as const);
 
 /**
- * 本番の /gourmet のフッターのナビゲーションだけに足す入口。今のグルメのトップ（暖簾に替える前）にあって、暖簾のトップに無かった行き先。
- * ラベルは今のグルメのトップにある言葉（おまかせ提案・写真から探す・ショート動画）。ショート動画の行き先は総合サイトの動画のページ /videos（公開スイッチ ON で開ける）。
- * 「総合トップ」は、今のグルメのヘッダーのロゴ（`/`）が公開スイッチ ON で総合トップへ行っていたぶん。
+ * フッターの小さな文字の 1 行（メニューではない。components/portal/FootSmall が全ページのフッターに出す）。
+ * 2026-10-23 オーナー決定「各業種 4 ページに収める」: ヘッダー・フッターのメニューは「トップ・さがす・特集」の 3 つだけにし、サイトとして必要なこの 5 つだけを小さな案内として残す。
+ * 「マチノワ トップ」は総合トップ（/）。グルメのトップ（/gourmet）はメニュー（ロゴ・FOOT_NAV の先頭）。
+ * 外したもの（ページは消えていない）: 章の暖簾 5（麺・鮨・肉・酒・蕎）・地域 5（さがすの絞り込みと同じ行き先）・おまかせ提案・写真から探す・ショート動画（入口は「さがす」のページの中。lib/portal/noren/searchOther.ts）。
  */
-export const FOOT_NAV_LIVE_EXTRA = [
-  { href: "/omakase", ja: "おまかせ提案" },
-  { href: "/photos", ja: "写真から探す" },
-  { href: RELEASE_REST ? "/videos" : "/nazatu", ja: "ショート動画" },
-  { href: "/", ja: "総合トップ" },
-] as const;
-
-/** フッターの地域。表示名は行き先の地域データ（lib/regions.ts の REGIONS[key].name）と同じにする */
-export const FOOT_REGIONS = [
-  { href: regionHref("tokyo"), ja: RELEASE_REST ? "東京" : "東京・下町" },
-  { href: regionHref("kyoto"), ja: "京都" },
-  { href: regionHref("osaka"), ja: RELEASE_REST ? "大阪" : "大阪・ミナミ" },
-  { href: regionHref("fukuoka"), ja: RELEASE_REST ? "福岡" : "博多" },
-  { href: regionHref("hokkaido"), ja: RELEASE_REST ? "北海道" : "札幌" },
-] as const;
-
-export const FOOT_INFO = [
-  { href: "/about", ja: "編集部" },
+export const FOOT_SMALL = [
+  { href: "/", ja: "マチノワ トップ" },
+  { href: "/about", ja: "編集部について" },
   { href: "/editorial/guidelines", ja: "掲載基準" },
   { href: "/contact", ja: "お問い合わせ" },
   { href: "/owner", ja: "店舗登録" },
 ] as const;
-
-/**
- * フッターの暖簾（トップの章の漢字。押すとトップのその章へ）。フッターは入口以外のページにも出るので、RELEASE_REST が false のあいだは今の本番の 5 つ（麺・鮨・肉・酒・蕎）のまま。
- * 鮨・蕎の行き先 #ch-sushi・#ch-soba は、入口（7 つの章）の「和」の章の手前に置いた別名の目印に着く。true で 7 つ（lib/cuisineBroad.ts の大分類と同じ並び）。
- */
-export const FOOT_NOREN: readonly { key: string; kanji: string; ja: string }[] = RELEASE_REST
-  ? [
-      { key: "wa", kanji: "和", ja: "和食" },
-      { key: "yo", kanji: "洋", ja: "洋食" },
-      { key: "chu", kanji: "中", ja: "中華・アジア" },
-      { key: "men", kanji: "麺", ja: "ラーメン" },
-      { key: "niku", kanji: "肉", ja: "焼肉・焼鳥" },
-      { key: "sake", kanji: "酒", ja: "居酒屋・バー" },
-      { key: "cha", kanji: "茶", ja: "カフェ・甘味" },
-    ]
-  : [
-      { key: "men", kanji: "麺", ja: "ラーメン" },
-      { key: "sushi", kanji: "鮨", ja: "鮨・寿司" },
-      { key: "niku", kanji: "肉", ja: "焼肉" },
-      { key: "sake", kanji: "酒", ja: "居酒屋" },
-      { key: "soba", kanji: "蕎", ja: "蕎麦・うどん" },
-    ];
 
 /**
  * 入口のいちばん上の暖簾（最初の画面。本物の暖簾 NorenHeroReal と、WebGL が使えないときの暖簾 NorenHero）に出す章（この順）。

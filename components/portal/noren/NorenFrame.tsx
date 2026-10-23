@@ -28,15 +28,13 @@ const NOREN_NOSCRIPT_CSS =
 /**
  * 暖簾の枠（紙・提灯・ヘッダー・フッター・<main>）。見本 /proto-noren と、公開スイッチ ON の本番 /gourmet が共通で使う。
  * 公開の判定（404 にするか）は呼び出し側のレイアウトが行う。ここは枠だけ。
- * top: トップの行き先（ロゴ・フッターの「トップ」と章への飛び先）。footExtra: フッターのナビゲーションに足すリンク（見本は無し）。
+ * top: トップの行き先（ロゴ・フッターの「トップ」）。
  */
 export default function NorenFrame({
   top,
-  footExtra,
   children,
 }: {
   top: string;
-  footExtra?: readonly { href: string; ja: string }[];
   children: React.ReactNode;
 }) {
   return (
@@ -51,7 +49,7 @@ export default function NorenFrame({
       <main id="vN-main" tabIndex={-1}>{children}</main>
       {/* 押した瞬間に分かる表示と、特集の一覧の先読み（RELEASE_PERIPHERY。components/portal/periphery/NavPending） */}
       {RELEASE_PERIPHERY && <NavPending />}
-      <NorenFooter top={top} extraNav={footExtra} />
+      <NorenFooter top={top} />
     </div>
   );
 }

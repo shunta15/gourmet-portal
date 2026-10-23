@@ -16,7 +16,6 @@
 /* --cl-e・--cl-h は「実際に使う縁・中ほどの色」。明るさ 1 のとき（data-lit なし）は --cl-edge・--cl-mid そのまま（今までと同じ）。下の「明るさ」で明るくする */
 .vN[data-dye]{--cl-e:var(--cl-edge);--cl-h:var(--cl-mid);--cloth:linear-gradient(90deg,var(--cl-e),var(--cl-h) 48%,var(--cl-e))}
 /* 直接色を書いている所 */
-.vN[data-dye] .vN-ft-noren a{background:linear-gradient(90deg,var(--cl-e),var(--cl-h) 48%,var(--cl-e))}
 .vN[data-dye] .vS-fb-p,.vN[data-dye] .vN-fb-p{background:linear-gradient(90deg,var(--cl-e),var(--cl-h) 45%,var(--cl-e))}
 .vN[data-dye] .vH-roll{background:repeating-linear-gradient(90deg,rgba(0,0,0,.34) 0 3px,transparent 3px 26px),linear-gradient(180deg,var(--cl-h),var(--cl-e))}
 
