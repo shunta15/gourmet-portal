@@ -12,6 +12,11 @@ const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) 
 
 export { PAGE_SIZE, PAGE_MAX };
 
+/** 店舗紹介の一覧(/bodycare/shop)の URL の引数 n → 正しい件数(知らない値は 1 ページぶん) */
+export function parseGreenListN(sp: SP): number {
+  return Math.min(Math.max(parseInt(one(sp.n)) || PAGE_SIZE, PAGE_SIZE), PAGE_MAX);
+}
+
 /** URL の引数 → 正しい値だけの Filters */
 export function parseGreenFilters(sp: SP, facets: GreenFacets): Required<Filters> {
   const k = one(sp.kind);

@@ -3,13 +3,16 @@
 // 注意: /bodycare/<種類>・/bodycare/area/<県> などの旧 URL は 308 転送になる。探すへは必ず searchHref() で /bodycare/search?… に直接貼る。
 export const BASE = "/bodycare";
 export const SEARCH_HREF = `${BASE}/search`; // 探すページ
-export const SPECIAL_HREF = `${BASE}/special`; // 業種の特集記事の一覧
+export const SHOPS_HREF = `${BASE}/shop`; // 店舗紹介の一覧(掲載中の全店の札。メニューの「店舗紹介」の行き先)
+export const SPECIAL_HREF = `${BASE}/special`; // 特集(業種の特集記事の一覧。メニューの「特集」の行き先)
 export const PORTAL_HREF = "/"; // マチノワ トップ(総合トップ)
 
-// メモ: 最初のページの節 id="gr-kind" / "gr-area" / "gr-tag" は残してある。ヘッダー・フッターからの飛び先(TOP_*_HREF)は、メニューを「トップ・探す・特集記事」の 3 つにした(2026-10-23)ので外した。
+// メモ: 最初のページの節 id="gr-kind" / "gr-area" / "gr-tag" は残してある。ヘッダー・フッターからの飛び先(TOP_*_HREF)は、メニューを「トップ・探す・店舗紹介・特集」の 4 つにした(2026-10-24)ので外した。
 
-/** 店のページ(1 店 1 ページ)。id は bo0030 など(日本語を含まない) */
+/** 店舗紹介のページ(1 店 1 ページ。店の詳細+店の特集記事)。id は bo0030 など(日本語を含まない) */
 export const shopHref = (id: string) => `${BASE}/shop/${encodeURIComponent(id)}`;
+/** 店舗紹介の一覧の URL(n は 1 ページぶん=20 を超えるときだけ付ける。lib/portal/vert/bodygreen/filter.ts の PAGE_SIZE と同じ) */
+export const shopListHref = (n?: number) => `${SHOPS_HREF}${n && n > 20 ? `?n=${n}` : ""}`;
 /** 業種の特集記事(一覧 = SPECIAL_HREF。slug は半角英数とハイフン) */
 export const specialHref = (slug: string) => `${SPECIAL_HREF}/${encodeURIComponent(slug)}`;
 
