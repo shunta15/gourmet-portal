@@ -9,7 +9,7 @@ import { getAllFeatureArticleIdsWithUpdatedAt, isFeatureIndexable } from "@/lib/
 import { isRegionHubIndexable, isRestaurantIndexable, isTownIndexable } from "@/lib/restaurantIndexable";
 import { getAllTowns } from "@/lib/db/towns";
 import { isPortalLive } from "@/lib/portal/launch";
-import { NOREN_REGION_TO_SEARCH, NOREN_SCENE_TO_SEARCH } from "@/lib/portal/noren/rewrites";
+import { NOREN_FEATURE_INDEX_REWRITE, NOREN_REGION_TO_SEARCH, NOREN_SCENE_TO_SEARCH, NOREN_SHOP_REWRITE } from "@/lib/portal/noren/rewrites";
 
 const BASE = "https://machinowa.tokyo";
 
@@ -44,6 +44,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     // /gourmet（旧トップの移設先）は公開スイッチ ON のときだけ存在する。OFF では 404 なので載せない（出力は従来と同一）
     ...(isPortalLive() ? [{ url: `${BASE}/gourmet`, changeFrequency: "daily" as const, priority: 0.9, ...entranceUpdated }] : []),
+    // 店舗紹介の一覧（2026-10-24 新設。1 ページ目だけ。2 ページ目以降の ?page= は noindex なので載せない）。公開スイッチ ON のときだけ存在する
+    ...(isPortalLive() && NOREN_SHOP_REWRITE ? [{ url: `${BASE}/restaurant`, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
   ];
 
   // 店舗 ID は DB から取得し、updated_at がある場合は lastModified に反映
@@ -111,11 +113,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  // 地域別の特集（/feature/region/<key>）は、2026-10-24 から /feature?region=<key> へ 308 するので載せない（公開スイッチ ON のとき）
+  const featureRegionsRedirected = NOREN_FEATURE_INDEX_REWRITE && isPortalLive();
   const featureCounts = getFeatureCountsByRegion();
   const featureRegionHubs: MetadataRoute.Sitemap = (
     Object.keys(REGIONS) as RegionKey[]
   )
-    .filter((k) => featureCounts[k] > 0)
+    .filter((k) => !featureRegionsRedirected && featureCounts[k] > 0)
     .map((k) => ({
       url: `${BASE}/feature/region/${k}`,
       changeFrequency: "weekly",

@@ -10,6 +10,8 @@ import type { PfRelated } from "@/lib/portal/photoFeature/related";
 import type { PfShopInfo } from "@/lib/portal/photoFeature/shopInfo";
 import JumpLink from "./JumpLink";
 import FootSmall from "../FootSmall";
+import FootMenu from "./FootMenu";
+import { menuWithTop } from "@/lib/portal/noren/nav";
 import { ShopActions, ShopFeatures, ShopMap, ShopMore, ShopVideoBlock, type PfShopFeature } from "./ShopInfoParts";
 
 // 写真が主役の特集記事（試作）の中身（サーバーコンポーネント）。見た目は photofeature.css。
@@ -594,10 +596,11 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         <Link href={topHref} className="pf-logo" aria-label={proto ? "マチノワ グルメ 特集（試作）の入口" : "マチノワ グルメのトップへ"}>
           マチノワ<small>グルメ</small>
         </Link>
-        {/* メニューは「トップ（ロゴ）・特集・さがす」の 3 つ（2026-10-23 オーナー決定）。店ページへは巻頭の「店ページを見る」から行く（店ごとのページなのでメニューに置かない） */}
+        {/* メニューは「トップ・さがす・店舗紹介・特集」の 4 つ（2026-10-24 オーナー決定。lib/portal/noren/nav.ts の GOURMET_MENU。ロゴもトップへ）。この店のページへは巻頭の「店ページを見る」から行く（店ごとのページなのでメニューに置かない） */}
         <nav aria-label="主なリンク">
-          <Link href={listHref}>特集</Link>
-          {searchHref && <Link href={searchHref}>さがす</Link>}
+          {menuWithTop(topHref).map((n) => (
+            <Link key={n.ja} href={n.href}>{n.ja}</Link>
+          ))}
         </nav>
       </header>
 
@@ -723,6 +726,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
 
       <footer className="pf-ft">
         <p className="pf-ft__l">マチノワ</p>
+        <FootMenu top={topHref} />
         <FootSmall className="pf-ft__nav" />
         <p className="pf-ft__s">{proto ? "© 2026 マチノワ / 街の輪（試作 — 非公開のページです）" : "© 2026 マチノワ / 街の輪"}</p>
       </footer>
@@ -737,9 +741,9 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       {/* ページの上端の竿と、読み進みに合わせて横へ進む小さな布（JS が動いたときだけ） */}
       <div className={jumpOn ? "pf-rod pf-rod--one" : "pf-rod"}>
         <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
-          <Link href={topHref}>グルメ</Link>
-          <Link href={listHref}>特集</Link>
-          {searchHref && <Link href={searchHref}>さがす</Link>}
+          {menuWithTop(topHref).map((n) => (
+            <Link key={n.ja} href={n.href}>{n.ja}</Link>
+          ))}
         </nav>
         <span className="pf-rod__tr" aria-hidden="true"><span className="pf-rod__cl"><b /></span></span>
         <i className="pf-rod__bar" aria-hidden="true" />

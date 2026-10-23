@@ -104,6 +104,13 @@
 .rp-fl { margin-top: 26px; }
 .rp-fl h3 { font-size: 15px; font-weight: 800; letter-spacing: 0.16em; line-height: 1.5; margin: 0 0 12px; color: var(--ink2); }
 .rp-fl + .rp-fl { margin-top: 22px; }
+/* キーワードの検索欄（特集の一覧の中。旧 /feature/search の検索。periphery.css の .pp-fld と同じ作り: 角のない白い箱・墨の枠・朱の焦点） */
+.rp-search { display: flex; gap: 10px; align-items: stretch; max-width: 640px; margin: 0; }
+.rp-search__in { flex: 1 1 auto; min-width: 0; display: block; width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink); font: 500 16px/1.4 "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; letter-spacing: 0.02em; -webkit-appearance: none; appearance: none; }
+.rp-search__in::placeholder { color: rgba(25, 24, 21, 0.45); }
+.rp-search__in:focus-visible { outline: 3px solid var(--shu); outline-offset: 2px; }
+.rp-search__go { flex: none; justify-content: center; min-height: 48px; padding: 0 26px; cursor: pointer; font-family: inherit; white-space: nowrap; -webkit-appearance: none; appearance: none; }
+.rp-hero .rp-search { margin-top: 22px; }
 .rp-tiles { display: flex; flex-wrap: wrap; gap: 10px; }
 .rp-tile { display: inline-flex; align-items: baseline; gap: 8px; min-height: 44px; padding: 8px 16px; border: 1px solid var(--line); background: var(--paper2); line-height: 1.4; transition: background 0.3s, border-color 0.3s; }
 .rp-tile:hover { background: #fff; border-color: var(--ink); }

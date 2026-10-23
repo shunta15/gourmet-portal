@@ -28,7 +28,6 @@ export default async function RoundupArticle({ article }: { article: FeatureArti
         areaLabel={meta?.areaLabel ?? ""}
         listHref="/feature"
         topHref={LIVE_LINKS.top}
-        searchHref="/search"
         sceneSearch={meta ? { href: `/search?scene=${encodeURIComponent(meta.scene)}`, label: `${tag}の店をさがす` } : null}
         regionSearch={regionName ? { href: `/search?region=${encodeURIComponent(regionKey)}`, label: `${regionName}の店をさがす` } : null}
         related={related}

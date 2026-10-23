@@ -1,5 +1,3 @@
-import { RELEASE_PERIPHERY, RELEASE_REST, RELEASE_SEARCH } from "./release";
-import { areaIndexHref, regionHref } from "./areaLinks";
 import { featureHrefOf } from "./onePage";
 
 /**
@@ -28,40 +26,40 @@ export const LIVE_LINKS: NorenLinks = {
 };
 
 /**
- * ヘッダーの行き先（トップはロゴ）。RELEASE_SEARCH が true のとき「特集・さがす」の 2 つ（エリア・シーンは「さがす」のページから入る）。
- * false のときは今までの 4 つ（特集・エリア・シーン・さがす。今の本番と同じ）。
+ * グルメのメニュー（4 つ。この順）。ヘッダーのナビ（PC・スマホ）・上端の竿の帯・フッターのナビが、すべてこの 1 つの表を読む。
+ * 2026-10-23〜24 オーナー決定「各業種 4 ページに収める」: 全 8 業種のメニューは「トップ」「探す」「店舗紹介」「特集」の 4 つ。
+ * 「探す」は業種の今の呼び名のまま（グルメは「さがす」）。「店舗紹介」「特集」は全業種この文字。ロゴの行き先は業種のトップのまま。
+ * - トップ: グルメのトップ。href は NOREN_TOP（見本の目印）。本番の枠は GOURMET_TOP に付け替えて使う（menuWithTop）。
+ * - さがす: 店をさがす /search（noindex）
+ * - 店舗紹介: 掲載中の全店の札の一覧 /restaurant（app/gourmet/restaurant/page.tsx）
+ * - 特集: シーン別まとめ記事・街歩き・コースの一覧 /feature（店 1 軒の記事は並べない。店は「店舗紹介」にいる）
+ * 外したもの（ページは消えていない）: 地域・利用シーンのページ（さがすの絞り込みへ統合済み）・おまかせ提案・写真から探す・ショート動画（入口は「さがす」のページの中）。
+ * 軽い定数だけ（サーバー・クライアントのどちらからも使える）。
  */
-export const HEADER_NAV = RELEASE_SEARCH
-  ? ([
-      { href: "/feature", ja: "特集", en: "Features" },
-      { href: "/search", ja: "さがす", en: "Search" },
-    ] as const)
-  : ([
-      { href: "/feature", ja: "特集", en: "Features" },
-      { href: regionHref("tokyo"), ja: "エリア", en: "Area" },
-      { href: "/scene/date", ja: "シーン", en: "Scene" },
-      { href: "/search", ja: "さがす", en: "Search" },
-    ] as const);
+export const MENU_SEARCH = "/search";
+export const MENU_SHOPS = "/restaurant";
+export const MENU_FEATURE = "/feature";
+export const GOURMET_MENU = [
+  { href: NOREN_TOP, ja: "トップ", en: "Top" },
+  { href: MENU_SEARCH, ja: "さがす", en: "Search" },
+  { href: MENU_SHOPS, ja: "店舗紹介", en: "Shops" },
+  { href: MENU_FEATURE, ja: "特集", en: "Features" },
+] as const;
 
-/** フッターのナビゲーション。RELEASE_SEARCH が true のときはヘッダーと同じ「トップ・特集・さがす」の 3 つ（2026-10-23。地域の列・おまかせ提案などは外した）。false は今までの 5 つ */
-export const FOOT_NAV = RELEASE_SEARCH
-  ? ([
-      // 「トップ」(/gourmet。グルメのトップ)と「総合トップ」(/。マチノワ全体のトップ)は行き先が違うので、RELEASE_PERIPHERY のあいだは違いが分かる呼び名にする
-      { href: NOREN_TOP, ja: RELEASE_PERIPHERY ? "グルメのトップ" : "トップ" },
-      { href: "/feature", ja: "特集" },
-      { href: "/search", ja: "さがす" },
-    ] as const)
-  : ([
-      { href: NOREN_TOP, ja: "トップ" },
-      { href: "/feature", ja: "特集" },
-      { href: areaIndexHref(), ja: "エリア" },
-      { href: "/scene", ja: "シーン" },
-      { href: "/search", ja: "検索" },
-    ] as const);
+/** メニューの「トップ」の目印（NOREN_TOP）を、実際のトップの行き先に付け替える */
+export function menuWithTop(top: string): { href: string; ja: string; en: string }[] {
+  return GOURMET_MENU.map((n) => (n.href === NOREN_TOP ? { ...n, href: top } : { ...n }));
+}
+
+/** ヘッダーのナビ（PC・スマホとも。トップはロゴと、先頭の「トップ」の両方）。GOURMET_MENU と同じ 4 つ */
+export const HEADER_NAV = GOURMET_MENU;
+
+/** フッターのナビゲーション。GOURMET_MENU と同じ 4 つ（NorenFooter・周りのページの Footer が、先頭の目印を実際のトップに付け替えて使う） */
+export const FOOT_NAV = GOURMET_MENU;
 
 /**
  * フッターの小さな文字の 1 行（メニューではない。components/portal/FootSmall が全ページのフッターに出す）。
- * 2026-10-23 オーナー決定「各業種 4 ページに収める」: ヘッダー・フッターのメニューは「トップ・さがす・特集」の 3 つだけにし、サイトとして必要なこの 5 つだけを小さな案内として残す。
+ * 2026-10-23 オーナー決定「各業種 4 ページに収める」: ヘッダー・フッターのメニューは GOURMET_MENU の 4 つだけにし、サイトとして必要なこの 5 つだけを小さな案内として残す。
  * 「マチノワ トップ」は総合トップ（/）。グルメのトップ（/gourmet）はメニュー（ロゴ・FOOT_NAV の先頭）。
  * 外したもの（ページは消えていない）: 章の暖簾 5（麺・鮨・肉・酒・蕎）・地域 5（さがすの絞り込みと同じ行き先）・おまかせ提案・写真から探す・ショート動画（入口は「さがす」のページの中。lib/portal/noren/searchOther.ts）。
  */

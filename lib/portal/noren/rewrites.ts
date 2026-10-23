@@ -10,7 +10,10 @@
 
 import { RELEASE_SEARCH } from "./release";
 
-/** 店ページ（/restaurant/<id>）を暖簾にする。app/gourmet/restaurant/[id] */
+/**
+ * 店ページ（/restaurant/<id>）を暖簾にする。app/gourmet/restaurant/[id]
+ * 店舗紹介の一覧（/restaurant。メニューの「店舗紹介」の行き先。2026-10-24 新設。app/gourmet/restaurant/page.tsx）も同じ切り替えに連動する（/restaurant → /gourmet/restaurant の書き換えと、内部のパスの恒久リダイレクト）。
+ */
 export const NOREN_SHOP_REWRITE = true;
 
 /**
@@ -23,13 +26,23 @@ export const NOREN_SHOP_REWRITE = true;
 export const NOREN_FEATURE_REWRITE = true;
 
 /**
- * 特集記事のトップ（/feature・地域別 /feature/region/<key>・特集を探す /feature/search）を暖簾にする。
- * 内部のパスは app/gourmet/feature/page.tsx・app/gourmet/feature/region/[key]/page.tsx・app/gourmet/feature/search/page.tsx。
- * true のあいだ、公開スイッチ ON では /feature → /gourmet/feature、/feature/region/:key → /gourmet/feature/region/:key、/feature/search → /gourmet/feature/search に差し替わり
- * （ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
- * 元に戻すなら false（/feature・/feature/region/<key>・/feature/search は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
+ * 特集のトップ（/feature）を暖簾にする。内部のパスは app/gourmet/feature/page.tsx。
+ * true のあいだ、公開スイッチ ON では /feature → /gourmet/feature に差し替わり（ブラウザの URL・canonical は本物の URL のまま）、内部のパスを直接開くと本物の URL へ恒久リダイレクトされる。
+ * 元に戻すなら false（/feature は今のグルメのページ、内部のパスは 404）。公開スイッチ OFF ではこの定数に関係なく今のグルメのまま。
+ * 【2026-10-24 オーナー決定「各業種 4 ページに収める」】/feature/search（特集を探す）は /feature の中の検索欄（?q=）へ、/feature/region/<キー>（19 ページ）は /feature の地域の絞り込み（?region=<キー>）へ、
+ * それぞれ 308（恒久）で転送する（next.config.ts の redirects。転送先は同じ /feature なので、このスイッチで切り替わる）。
  */
 export const NOREN_FEATURE_INDEX_REWRITE = true;
+
+/**
+ * 旧 /feature/region/<キー> があった 19 地域のキー（2026-10-24 時点。特集 178 本のうち、地域に 1 本以上ある地域）。
+ * 転送（/feature/region/<キー> → /feature?region=<キー>）は、この 19 本だけに掛ける（元から 404 だったキーは 404 のまま）。
+ * 地域が増えても、転送は旧 URL があった 19 本で足りる（新しい地域の絞り込みは /feature?region=<キー> が自動で出す）。軽い定数だけ（next.config.ts が読む）。
+ */
+export const FEATURE_REGION_KEYS_OLD = [
+  "tokyo", "kanagawa", "osaka", "nagoya", "kyoto", "hyogo", "shizuoka", "hokkaido", "fukuoka", "nara",
+  "hiroshima", "shiga", "wakayama", "saitama", "gunma", "kagoshima", "mie", "nagano", "yamaguchi",
+] as const;
 
 // ── scene ここから（シーンのページ・店をさがす。統括が合流するときはこの 1 かたまりをそのまま取り込む）
 /**

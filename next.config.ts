@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
-import { NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
+import { FEATURE_REGION_KEYS_OLD, NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
 // ── scene ここから
 import { NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
@@ -75,7 +75,6 @@ const nextConfig: NextConfig = {
       // 暖簾の店ページ・特集記事ページの内部のパス（/gourmet/restaurant/<id>・/gourmet/feature/<id>）は、直接開かれたら本物の URL へ恒久リダイレクトする。
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),
-      ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE ? [{ source: "/gourmet/feature/:id", destination: "/feature/:id", permanent: true }] : []),
       // 1 店 1 ページ（見本）: 写真が主役の特集記事（対象は lib/portal/noren/onePage.ts の表）の URL /feature/<記事 ID> は、同じ店の /restaurant/<店の ID> へ恒久リダイレクト（308・1 回）。
       // 対象を、記事 ID の完全一致（1 本ずつ）で書く。サイト内のリンクははじめから /restaurant/<店の ID> を指す（lib/portal/noren/onePage.ts の featureHrefOf）。
       // source は path-to-regexp の書き方なので、百分率エンコードしたあと、( ) { } : * + ? が残っていたら \\ で打ち消す（今の 53 本の ID には無い。入れ忘れの保険）。
@@ -87,14 +86,21 @@ const nextConfig: NextConfig = {
             permanent: true,
           }))
         : []),
-      // 特集記事のトップ（一覧・地域別・特集を探す）の内部のパスも同じ。/gourmet/feature/search は上の :id にも当たるが、同じ行き先（/feature/search）になる
+      // 店舗紹介の一覧（/restaurant。2026-10-24 新設）の内部のパス /gourmet/restaurant も、直接開かれたら本物の URL へ（?page= もそのまま渡る）
+      ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant", destination: "/restaurant", permanent: true }] : []),
+      // 特集のトップの内部のパス（/gourmet/feature）も同じ。/gourmet/feature/search と /gourmet/feature/region/:key は、旧 URL の転送先（下）と同じ行き先へ 1 回で（:id より前に置く）
       ...(PORTAL_LIVE && NOREN_FEATURE_INDEX_REWRITE
         ? [
             { source: "/gourmet/feature", destination: "/feature", permanent: true },
-            { source: "/gourmet/feature/search", destination: "/feature/search", permanent: true },
-            { source: "/gourmet/feature/region/:key", destination: "/feature/region/:key", permanent: true },
+            { source: "/gourmet/feature/search", destination: "/feature", permanent: true },
+            { source: `/gourmet/feature/region/:key(${FEATURE_REGION_KEYS_OLD.join("|")})`, destination: "/feature?region=:key", permanent: true },
+            // 【2026-10-24 オーナー決定】特集を探す /feature/search は、/feature の中の検索欄へ（?q= ?region= ?tag= はそのまま渡る）。
+            // 地域別 /feature/region/<キー>（19 ページ）は、/feature の地域の絞り込み ?region=<キー> へ。旧 URL があった 19 キーだけ（元から 404 のキーは 404 のまま）
+            { source: "/feature/search", destination: "/feature", permanent: true },
+            { source: `/feature/region/:key(${FEATURE_REGION_KEYS_OLD.join("|")})`, destination: "/feature?region=:key", permanent: true },
           ]
         : []),
+      ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE ? [{ source: "/gourmet/feature/:id", destination: "/feature/:id", permanent: true }] : []),
       // ── scene ここから（シーン・店をさがすの内部のパスを直接開いたら本物の URL へ）
       // 利用シーンのページは「さがす」へ統合（2026-10-12 オーナー決定。lib/portal/noren/rewrites.ts の NOREN_SCENE_TO_SEARCH）。1 回の恒久転送で /search の絞り込みに着く:
       //   /scene → /search、/scene/:slug → /search?scene=:slug。暖簾版の内部のパス（/gourmet/scene/**）も同じ行き先へ 1 回で。
@@ -129,7 +135,7 @@ const nextConfig: NextConfig = {
     // 公開スイッチ ON: `/` を総合トップ（app/portal-home）に差し替える（URL は `/` のまま）。
     // 公開スイッチ OFF: `/` は app/page.tsx（グルメのトップ）のまま（main と同一）。総合サイトの URL は 404 にする。
     // 公開スイッチ ON のとき、暖簾の店ページ・特集記事ページも同じ仕組みで差し替える（URL は /restaurant/<id>・/feature/<id> のまま）。
-    //   - /feature/search は検索の専用ルートなので書き換えない（/feature/:id に当たってしまうため除く）。/feature/region/<key> は 2 階層なので当たらない
+    //   - /feature/search は redirects で /feature へ転送するので、書き換えない（/feature/:id に当たってしまうため除く）。/feature/region/<key> は 2 階層なので当たらない
     // OFF では、これらの行は 1 行も使われない（/restaurant/<id>・/feature/<id> は今のグルメのページ。/gourmet/** は上の 404）。
     return {
       beforeFiles: PORTAL_LIVE
@@ -137,14 +143,10 @@ const nextConfig: NextConfig = {
             { source: "/", destination: "/portal-home" },
             ...(NOREN_SHOP_REWRITE ? [{ source: "/restaurant/:id", destination: "/gourmet/restaurant/:id" }] : []),
             ...(NOREN_FEATURE_REWRITE ? [{ source: "/feature/:id((?!search$)[^/]+)", destination: "/gourmet/feature/:id" }] : []),
-            // 特集記事のトップ（一覧・特集を探す・地域別）も同じ仕組み（URL は /feature・/feature/search・/feature/region/<key> のまま）
-            ...(NOREN_FEATURE_INDEX_REWRITE
-              ? [
-                  { source: "/feature", destination: "/gourmet/feature" },
-                  { source: "/feature/search", destination: "/gourmet/feature/search" },
-                  { source: "/feature/region/:key", destination: "/gourmet/feature/region/:key" },
-                ]
-              : []),
+            // 店舗紹介の一覧（/restaurant）と特集のトップ（/feature）も同じ仕組み（URL は /restaurant・/feature のまま）。
+            // /feature/search と /feature/region/<キー> は、上の redirects で /feature へ転送するので、書き換えは持たない
+            ...(NOREN_SHOP_REWRITE ? [{ source: "/restaurant", destination: "/gourmet/restaurant" }] : []),
+            ...(NOREN_FEATURE_INDEX_REWRITE ? [{ source: "/feature", destination: "/gourmet/feature" }] : []),
             // ── scene ここから（シーン一覧・シーンごと・店をさがす。URL は /scene・/scene/<slug>・/search のまま）
             ...(NOREN_SEARCH_REWRITE ? [{ source: "/search", destination: "/gourmet/search" }] : []),
             // ── scene ここまで

@@ -4,7 +4,7 @@ import { REGIONS } from "@/lib/regions";
 import { getFeatureRegions } from "@/lib/featureRegions";
 import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import type { FeatureCardItem } from "@/lib/portal/noren/featureCard";
-import { getFeaturedSingleCards, getRoundupGroups, toCardItem } from "@/lib/portal/noren/featureList";
+import { getRoundupGroups, toCardItem } from "@/lib/portal/noren/featureList";
 import type { Feature } from "@/lib/regions";
 
 /** 特集の一覧（写真が主役の形）の札 1 枚。写真・題・地域（と一言）。行き先は記事ページ（LIVE_LINKS.feature = 特集記事のリンク先を作っている関数） */
@@ -37,29 +37,21 @@ export function toListCard(f: Feature): RpCard {
 }
 
 export type RpShelves = {
-  singles: RpCard[];
   scene: RpCard[];
   walk: RpCard[];
   /** シーン別まとめ記事 + 街歩き・コース の本数（変更前の「まとめ記事」の本数と同じ） */
   roundupTotal: number;
 };
 
-/** 3 つの棚の札: 特集記事（FEATURED_SINGLE_IDS の並び）→ シーン別まとめ記事 → 街歩き・コース（どちらも lib/data の FEATURES の並び） */
-export async function getRoundupShelves(): Promise<RpShelves> {
-  const singles = await getFeaturedSingleCards();
+/**
+ * 2 つの棚の札: シーン別まとめ記事 → 街歩き・コース（どちらも lib/data の FEATURES の並び）。
+ * 【2026-10-24 オーナー決定「各業種 4 ページに収める」】店 1 軒の記事（旧「特集記事」の棚の 50 枚）は /feature に並べない。店は「店舗紹介」（/restaurant）にいる。
+ */
+export function getRoundupShelves(): RpShelves {
   const g = getRoundupGroups();
   return {
-    singles: singles.map((s) => ({
-      id: s.id,
-      href: LIVE_LINKS.feature(s.id),
-      img: s.img,
-      title: s.shopName,
-      sub: s.title,
-      line: [s.area, s.cuisine].filter(Boolean).join("　"),
-    })),
     scene: g.scene.map(toRoundupCard),
     walk: g.walk.map(toRoundupCard),
     roundupTotal: g.total,
   };
 }
-

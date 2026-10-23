@@ -66,6 +66,11 @@ body:has(.pf-root) main { display: contents; }
 .pf-hd-bar nav a:hover { border-color: var(--ink); }
 .pf-ft { margin-top: clamp(40px, 5vw, 70px); background: var(--paper2); border-top: 1px solid var(--line); padding: 36px var(--gutter) 30px; text-align: center; }
 .pf-root .pf-ft__l { color: var(--ink); font-weight: 800; font-size: 22px; letter-spacing: 0.06em; }
+/* ナビゲーション（トップ・さがす・店舗紹介・特集。メニューと同じ 4 つ。components/portal/photoFeature/FootMenu） */
+.pf-root .pf-ft__menu { margin-top: 6px; }
+.pf-root .pf-ft__menu ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 clamp(16px, 2.6vw, 34px); }
+.pf-root .pf-ft__menu a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 2px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; color: var(--ink); border-bottom: 1px solid transparent; }
+.pf-root .pf-ft__menu a:hover { color: var(--shu); border-color: var(--shu); }
 /* 小さな文字の 1 行（マチノワ トップ・編集部について・掲載基準・お問い合わせ・店舗登録。components/portal/FootSmall）。メニューではない。 */
 .pf-root .pf-ft__nav { margin-top: 8px; }
 .pf-root .pf-ft__nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 clamp(14px, 2vw, 26px); }
@@ -577,7 +582,8 @@ body:has(.pf-root) main { display: contents; }
 }
 
 /* 11. ページの上端の細い帯: 竿 + 読み進みに合わせて横へ進む小さな藍の布 + いまの視点の番号（右はし）。帯の中だけに収め、本文・見出し・写真の上には掛からない（帯の下に本文が潜る） */
-.pf-rod { display: block; position: fixed; left: 0; right: 0; top: 0; height: var(--rodh, 22px); z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
+/* --rodnav: 左のメニュー（トップ・さがす・店舗紹介・特集の 4 つ）の右端。進みの布の道は、ここから右に引く */
+.pf-rod { --rodnav: 226px; display: block; position: fixed; left: 0; right: 0; top: 0; height: var(--rodh, 22px); z-index: 56; pointer-events: none; background: var(--paper); transition: background-color 0.5s linear; }
 .pf-rod__nav { position: absolute; left: 6px; top: 0; height: calc(var(--rodh, 22px) - 5px); display: flex; gap: 0; pointer-events: auto; }
 .pf-rod__nav a { display: inline-flex; align-items: center; height: calc(var(--rodh, 22px) - 5px); padding: 0 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; line-height: 1; color: var(--ink); border-bottom: 1px solid transparent; }
 .pf-rod__nav a { position: relative; }
@@ -586,10 +592,12 @@ body:has(.pf-root) main { display: contents; }
 .is-dark .pf-rod__nav a { color: #efe6d6; }
 .is-dark .pf-rod { background: #26221f; }
 .pf-rod__bar { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: linear-gradient(#92724a, #4a3220); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
-.pf-rod__tr { display: none; position: absolute; left: 152px; right: 52px; top: 0; height: 17px; }
+.pf-rod__tr { display: none; position: absolute; left: var(--rodnav); right: 52px; top: 0; height: 17px; }
 .pf-js .pf-rod__tr { display: block; }
-.pf-rod__cl { position: absolute; top: 2px; left: 0; width: 26px; height: 13px; transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 52px - 26px)), 0, 0); }
+.pf-rod__cl { position: absolute; top: 2px; left: 0; width: 26px; height: 13px; transform: translate3d(calc(var(--pp, 0) * (100vw - var(--rodnav) - 52px - 26px)), 0, 0); }
 .pf-rod__cl b { display: block; width: 100%; height: 100%; transform-origin: 50% 0; transform: skewX(var(--rs, 0deg)); border-bottom-width: 2px; box-shadow: none; }
+@media (max-width: 760px) { .pf-rod { --rodnav: 208px; } .pf-rod__nav a { padding: 0 5px; } }
+@media (max-width: 380px) { .pf-rod { --rodnav: 180px; } .pf-rod__nav a { padding: 0 3px; font-size: 11px; } }
 .pf-hud__no { display: none; position: absolute; right: 10px; top: 1px; width: 32px; height: 15px; perspective: 120px; }
 .pf-js .pf-hud__no { display: block; }
 .pf-hud__no b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--shu); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; line-height: 1; transform-origin: 50% 50%; }
@@ -671,7 +679,7 @@ body:has(.pf-root) main { display: contents; }
 .pf-jump::after { content: ""; position: absolute; left: -4px; right: -4px; top: 0; bottom: -12px; }
 .pf-jump:hover { background: var(--ink); }
 .pf-rod--one .pf-rod__tr { right: 196px; }
-.pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 196px - 26px)), 0, 0); }
+.pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - var(--rodnav) - 196px - 26px)), 0, 0); }
 .pf-sec__t { font-weight: 800; font-size: clamp(22px, 2.4vw, 32px); letter-spacing: 0.1em; line-height: 1.3; }
 
 /* PC の「店舗情報のみ見る」: 一目で分かり、押しやすい大きさ（高さ 36px・字 14px）。ページの上端の帯を 22px → 40px にして、その右はし（暖簾・屋号の字・題・ヘッダーの文字に重ならない所）に掛ける。スマホは上の 44px のまま */
@@ -683,7 +691,7 @@ body:has(.pf-root) main { display: contents; }
   .pf-root:has(.pf-jump) .pf-rod__tr { top: calc(var(--rodh) - 22px); }
   .pf-root:has(.pf-jump) .pf-hud__no { top: 11px; }
   .pf-rod--one .pf-rod__tr { right: 236px; }
-  .pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - 152px - 236px - 26px)), 0, 0); }
+  .pf-rod--one .pf-rod__cl { transform: translate3d(calc(var(--pp, 0) * (100vw - var(--rodnav) - 236px - 26px)), 0, 0); }
 }
 
 /* 基本情報の下: タグ・行動ボタン・候補に入れる（店ページの ShopActionsNoren などの部品を、特集記事の世界の見た目で） */
@@ -787,6 +795,8 @@ body:has(.pf-root) main { display: contents; }
   .pf-mc__b b { font-size: 14px; }
   .pf-night { padding: 56px 0; }
 }
+/* 幅 340px 以下（小さな端末）: 上端の竿のメニュー 4 つと「店舗情報のみ見る」が重ならないよう、ボタンを少し小さく */
+@media (max-width: 340px) { .pf-jump { right: 40px; padding: 0 8px 5px; font-size: 11px; letter-spacing: 0.04em; } }
 
 /* 店ページの部品（shop.css の丸い形）を、特集記事の世界の角のある形にそろえる */
 .pf-sa .vS-act, .pf-sa .vS-act .dsc, .pf-sa .vS-sh, .pf-sa .vS-sh .dsc, .pf-save .vS-save, .pf-map .vS-btn-ink { border-radius: 0; }
