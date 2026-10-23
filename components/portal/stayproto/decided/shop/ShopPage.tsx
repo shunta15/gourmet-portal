@@ -26,7 +26,8 @@ import "./shop.css";
  *   濃紺の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで空室を確認」・シェア。お気に入りのハートは外した)→ 追従タブ →
  *   「この宿で過ごす時間」(横長の大きな写真に見出し 2 行+文を重ねる)→ 客室(左に文・右に写真の横送り)→ 温泉(左に文・右に大 1+小 2)→ お食事(同)→
  *   施設・サービス(アイコンが横に並ぶ)→ 基本情報・アクセス・Google マップ → 紹介記事。
- * 文は copy.ts(宿ごとに記事の事実から書いた短い文)。長い説明は各節の「〇〇の詳細を見る」で開く。CSS は shop.css(接頭辞 sh-)。
+ * 文は copy.ts(宿ごとに記事の事実から書いた短い文)。記事と同じ長い文は店のページに入れない(2026-10-24 オーナー決定)。長い文は宿の記事 /stay/article/{id} にあり、
+ * ヒーローの店名の下の「特集記事を読む」ボタンと、いちばん下の「紹介記事」の札から行ける。CSS は shop.css(接頭辞 sh-)。
  * 値が無い欄・節は出さない(空の枠・空の見出しを出さない)。写真が少ない宿でも、節の写真の枚数が減るだけで形は崩れない。
  *
  * 見本から置き換えた・外した欄(規約: 料金・星・評価・口コミ・おすすめ・架空の宿名・泊まった体験・仮の値は出さない):
@@ -71,6 +72,12 @@ function Hero({ d }: { d: ShopDetail }) {
             <Reveal as="p" variant="fade" className="sh-hero-tag" delay={520}>
               {d.tagline}
             </Reveal>
+          ) : null}
+          {d.article ? (
+            <a href={d.article.href} className="sh-art-btn">
+              <span>特集記事を読む</span>
+              <IconArrow />
+            </a>
           ) : null}
         </div>
       </div>
@@ -151,7 +158,7 @@ function Intro({ d }: { d: ShopDetail }) {
 }
 
 // ------------------------------------------------------------------ 客室・温泉・お食事
-/** 「〇〇の詳細を見る」(押すと、記事の節の全文がその場で開く) */
+/** 「〇〇を見る」(押すと、その場で開く。詳しいアクセス情報に使う) */
 function More({ label, children }: { label: string; children: ReactNode }) {
   return (
     <details className="sh-more">
@@ -161,25 +168,6 @@ function More({ label, children }: { label: string; children: ReactNode }) {
       </summary>
       <div className="sh-more-b">{children}</div>
     </details>
-  );
-}
-
-function MoreLinks({ d }: { d: ShopDetail }) {
-  const s = d.shop;
-  return (
-    <p className="sh-more-l">
-      {d.article ? (
-        <a href={d.article.href} className="sh-link">
-          紹介記事で読む
-        </a>
-      ) : null}
-      {s.officialUrl ? (
-        <TrackedA href={s.officialUrl} kind="website" storeId={s.id} page={d.path} className="sh-link">
-          公式サイトで見る
-          <IconExternal />
-        </TrackedA>
-      ) : null}
-    </p>
   );
 }
 
@@ -210,10 +198,6 @@ function Section({ d, s }: { d: ShopDetail; s: Sec }) {
         <div className="sh-blk-ps">
           <p className="sh-blk-p">{s.p.join("")}</p>
         </div>
-        <More label={s.btn}>
-          {s.detail.length > 0 ? s.detail.map((t, i) => <p key={i}>{t}</p>) : <p>{s.p.join("")}</p>}
-          <MoreLinks d={d} />
-        </More>
       </div>
       {hasPh ? (
         <div className="sh-sm">

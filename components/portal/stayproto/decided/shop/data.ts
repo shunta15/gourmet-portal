@@ -15,7 +15,8 @@ import type { FacKey, RowIcon } from "./FacIcons";
  * 料金・評価・「おすすめ」「人気」・〇選・最上級・効き目や癒し・泊まった体験の言い回しを含む文は落とす)。料金・星・口コミは持たない。
  *
  * 見本「2_店舗紹介」どおりの短さ(見出し 2 行・本文 3〜4 行)の文は、宿ごとに記事の事実から書いた copy.ts を使う。無い宿は、記事の文から自動で短く取る(autoCopy)。
- * 長い説明は、各節の「〇〇の詳細を見る」で開く(記事の節の全文。detail)。
+ * 記事の節の全文は店のページに入れない(2026-10-24 オーナー決定: 記事と同じ長い文は外して、店のページを短くする。長い文は記事のページ /stay/article/{id} にあり、
+ * 店のページの上のほうの「特集記事を読む」ボタンから読める)。残すのは、宿の事実(基本情報の表・時間・アクセス・「詳しいアクセス情報を見る」)。
  *
  * 写真(1 軒 10〜14 枚)は、1 枚ずつの「種類」(外観・景色・客室・風呂・料理・共用)で、ヒーロー・「この宿で過ごす時間」の背景・客室・温泉(お風呂)・お食事・紹介記事に振り分ける。
  *  - 種類は、写真の記録の kind(stay.json の photos[].kind。外観/客室/風呂/料理/共用/景色。英字でも読む)があればそれ。無ければ写真の説明(what)の最初の 1 文の言葉で見分ける。
@@ -32,9 +33,6 @@ export type Sec = {
   en: string;
   h: string[];
   p: string[];
-  /** 「〇〇の詳細を見る」で開く全文(段落。点検済み) */
-  detail: string[];
-  btn: string;
   photos: SPhoto[];
 };
 
@@ -386,7 +384,7 @@ export function buildShopDetail(shop: LiveShop, place: Place): ShopDetail {
     .map((s) => {
       const photos = alloc.bySlot[s.slot];
       const id = s.slot === "a" ? "sh-rooms" : s.slot === "b" ? "sh-bath" : "sh-dining";
-      return { slot: s.slot, id, label: s.label, en: s.en, h: s.h, p: s.p, detail: detailOf(place, s.from), btn: `${s.label}の詳細を見る`, photos };
+      return { slot: s.slot, id, label: s.label, en: s.en, h: s.h, p: s.p, photos };
     })
     // 客室(a)は本文があれば出す。2 つめ・3 つめは写真があるときだけ(写真の無い節で形を崩さない)
     .filter((s) => s.slot === "a" || s.photos.length > 0);

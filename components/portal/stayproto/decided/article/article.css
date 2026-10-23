@@ -24,6 +24,13 @@
 .sy-a-sub { word-break: auto-phrase; text-wrap: pretty; margin: 14px 0 0; font-family: var(--sy-ff-min); font-size: 14.5px; line-height: 1.8; letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.95); }
 .sy-a-lede { word-break: auto-phrase; text-wrap: pretty; margin: 18px 0 0; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.3); font-size: 13px; line-height: 2.05; letter-spacing: 0.07em; color: rgba(255, 255, 255, 0.92); }
 .sy-a-idx, .sy-a-scroll { display: none; }
+/* 「店舗詳細を見る」(ヒーローのリードの下。写真の上に載る白い丸ボタン) */
+.sy-a-top-act { margin: 22px 0 0; }
+.sy-a-shopbtn { display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 20px 0 22px; border-radius: 999px; background: #fff; color: var(--sy-deep); font-size: 14px; font-weight: 700; letter-spacing: 0.1em; box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3); transition: background 0.3s, color 0.3s; }
+.sy-a-shopbtn svg { flex: none; width: 14px; height: auto; transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.sy-a-shopbtn:hover { background: var(--sy-gold); color: #fff; }
+.sy-a-shopbtn:hover svg { transform: translateX(3px); }
+.sy-a-shopbtn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
 /* ============ 本文の枠(スマホ) ============ */
 .sy-a-body { width: 100%; padding: 20px 16px 8px; }
@@ -113,6 +120,8 @@
   .sy-a-h1--s3 { font-size: max(27px, calc(36 * var(--u))); }
   .sy-a-h1--s4 { font-size: max(23px, calc(30 * var(--u))); }
   .sy-a-sub { max-width: calc(620 * var(--u)); margin-top: calc(12 * var(--u)); font-size: max(13px, calc(14.5 * var(--u))); line-height: 1.7; letter-spacing: 0.1em; }
+  .sy-a-top-act { margin-top: calc(18 * var(--u)); }
+  .sy-a-shopbtn { min-height: max(44px, calc(34 * var(--u))); padding: 0 calc(20 * var(--u)) 0 calc(22 * var(--u)); font-size: max(13px, calc(9.4 * var(--u))); gap: calc(9 * var(--u)); }
   .sy-a-lede { max-width: calc(344 * var(--u)); margin-top: calc(16 * var(--u)); padding-top: calc(16 * var(--u)); font-size: max(12px, calc(10.4 * var(--u))); line-height: 2.1; letter-spacing: 0.1em; }
   .sy-a-idx { display: block; position: absolute; z-index: 3; right: max(16px, calc((100% - 1024 * var(--u)) / 2 + 38 * var(--u))); top: calc(70 * var(--u)); width: calc(112 * var(--u)); min-width: 132px; padding: calc(10 * var(--u)) calc(12 * var(--u)); background: rgba(14, 10, 6, 0.3); backdrop-filter: blur(3px); color: #fff; }
   .sy-a-idx-h { margin: 0 0 calc(6 * var(--u)); font-family: var(--sy-ff-lab); font-size: max(10px, calc(8.4 * var(--u))); letter-spacing: 0.16em; }

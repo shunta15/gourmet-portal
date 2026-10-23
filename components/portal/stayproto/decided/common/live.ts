@@ -1,5 +1,5 @@
 /**
- * ステイ決定デザインの本番ページ(最初 /stay・探す /stay/search・宿 /stay/shop/{id}・記事 /stay/article)が使う、実在の宿のデータの取り出し方(サーバー専用)。
+ * ステイ決定デザインの本番ページ(最初 /stay・探す /stay/search・店舗紹介の一覧 /stay/shop・宿 /stay/shop/{id}・特集 /stay/special・宿の記事 /stay/article/{id})が使う、実在の宿のデータの取り出し方(サーバー専用)。
  * 元は getPlaces("stay")(lib/places。宿のデータ lib/places/generated/stay.json はまだ無く、今は空の配列)。クライアントの部品から import しない。
  * ペットの common/live.ts と同じ作り。宿が 0 件でも壊れないように、取り出す関数はどれも空の配列を返せる(呼ぶ側が空の欄を出さない)。
  *

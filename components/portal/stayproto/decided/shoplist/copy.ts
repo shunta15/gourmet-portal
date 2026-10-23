@@ -1,7 +1,7 @@
 import { stayLine, stayLineOk, type LiveShop } from "../common/live";
 
 /**
- * 宿の記事の一覧(/stay/article)の各カードの文言(見本「3_探す」の 見出し 2 行・3 行の文・アイコンつきの特徴)。
+ * 店舗紹介の一覧(/stay/shop。もとは宿の記事の一覧 /stay/article)の各カードの文言(見本「3_探す」の 見出し 2 行・3 行の文・アイコンつきの特徴)。
  *
  * 決まり: 全部、その宿の紹介記事(lib/places/generated/stay.json の article。lede・sections)に書いてある事実だけから作る。
  * 料金・金額・星・口コミ・「おすすめ」「人気」「〇選」・癒し・効き目・泊まったような書き方・順位づけは書かない。

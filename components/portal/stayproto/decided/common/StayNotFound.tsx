@@ -17,7 +17,8 @@ export default function StayNotFound() {
         <p className="sy-nf-links">
           <Link href={L.home}>マチノワステイのトップへ</Link>
           <Link href={L.search}>宿を探す</Link>
-          <Link href={L.articles}>記事を見る</Link>
+          <Link href={L.shops}>店舗紹介を見る</Link>
+          <Link href={L.specials}>特集を見る</Link>
         </p>
       </section>
     </Shell>

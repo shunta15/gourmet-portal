@@ -3,7 +3,8 @@
 export const BASE = "/proto-stay/decided"; // 最初のページ
 export const SEARCH_HREF = `${BASE}/search`; // 探すページ(検索・宿の種類・エリアの行き先)
 export const SHOP_HREF = `${BASE}/shop/sample`; // 宿の紹介(宿のカードの行き先)
-export const ARTICLES_HREF = `${BASE}/article`; // 宿の記事の一覧(「特集記事」の行き先)
+export const SHOPS_HREF = `${BASE}/shop`; // 店舗紹介の一覧(メニューの「店舗紹介」の行き先)
+export const SPECIALS_HREF = `${BASE}/special`; // 特集の一覧(メニューの「特集」の行き先)
 export const ARTICLE_HREF = `${BASE}/article/sample`; // 記事の本文
 export const PORTAL_HREF = "/"; // マチノワ 総合トップ
 
@@ -18,7 +19,7 @@ export const IMG_ARTICLE = `${IMG}/article`;
 /**
  * 画面の行き先を試作と本番で切り替える。
  *   "proto" … 試作(/proto-stay/decided 以下。上の定数と同じ。既定)
- *   "live"  … 本番(/stay 以下)。最初 /stay・探す /stay/search・宿 /stay/shop/{id}・記事の一覧 /stay/article・記事 /stay/article/{id}
+ *   "live"  … 本番(/stay 以下)。最初 /stay・探す /stay/search・店舗紹介の一覧 /stay/shop・宿 /stay/shop/{id}・特集の一覧 /stay/special・特集の記事 /stay/special/{slug}・宿の記事 /stay/article/{id}
  * Shell / Header / Footer は mode を受け取り、中のリンクを syLinks(mode) で決める。純関数なのでサーバー・クライアントのどちらからも呼べる。
  * 探すページの引数は、ほかの新業種と同じ名前(kind=宿の種類のスラッグ・pref=都道府県のスラッグ・q=文字)。
  */
@@ -33,8 +34,12 @@ export type SyLinks = {
   home: string;
   /** 探すページ(引数なし) */
   search: string;
-  /** 記事の一覧 */
-  articles: string;
+  /** 店舗紹介の一覧(全宿の札。メニューの「店舗紹介」) */
+  shops: string;
+  /** 特集の一覧(利用シーン記事・業種の特集記事。メニューの「特集」) */
+  specials: string;
+  /** 特集の記事 1 本。proto は一覧と同じ(slug は無視)、live は /stay/special/{slug} */
+  special: (slug?: string) => string;
   /** 編集部について(総合サイトの /about。proto は行き先が無いので #) */
   about: string;
   /** 探すページ(引数つき。空の項目は付けない) */
@@ -51,7 +56,9 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
     return {
       home: LIVE_BASE,
       search,
-      articles: `${LIVE_BASE}/article`,
+      shops: `${LIVE_BASE}/shop`,
+      specials: `${LIVE_BASE}/special`,
+      special: (slug) => (slug ? `${LIVE_BASE}/special/${encodeURIComponent(slug)}` : `${LIVE_BASE}/special`),
       about: "/about",
       searchWith: (f) => {
         const p = new URLSearchParams();
@@ -68,7 +75,9 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
   return {
     home: BASE,
     search: SEARCH_HREF,
-    articles: ARTICLES_HREF,
+    shops: SHOPS_HREF,
+    specials: SPECIALS_HREF,
+    special: () => SPECIALS_HREF,
     about: "#",
     searchWith: () => SEARCH_HREF,
     shop: () => SHOP_HREF,
