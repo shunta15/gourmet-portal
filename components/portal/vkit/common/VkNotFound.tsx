@@ -17,7 +17,8 @@ export default function VkNotFound({ cfg }: { cfg: VkConfig }) {
         <p className="vk-nf-links">
           <Link href={L.home}>{cfg.brand}のトップへ</Link>
           <Link href={L.search}>{cfg.noun}を探す</Link>
-          <Link href={L.articles}>記事を見る</Link>
+          <Link href={L.shops}>店舗紹介</Link>
+          <Link href={L.special}>特集</Link>
         </p>
       </section>
     </Shell>

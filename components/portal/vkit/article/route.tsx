@@ -74,7 +74,7 @@ export function vkArticleRoute(cfg: VkConfig) {
             data={breadcrumb([
               { name: "マチノワ", url: absUrl("/") },
               { name: b.name, url: absUrl(b.path) },
-              { name: "記事", url: absUrl(`${b.path}/article`) },
+              { name: "店舗紹介", url: absUrl(vkLinks(cfg).shops) },
               { name: v.shop.name, url },
             ])}
           />

@@ -111,7 +111,7 @@ export type VkConfig = {
    * 飾りの写真まわりの調整(写真の明るさに合わせる)。
    *   photoDim: 飾りの写真の明るさ(1 = そのまま)/ heroDim: 探す・記事の一覧のヒーローの上と右の暗い霞の濃さ(1 = ステイと同じ)/
    *   areaDim: 最初のページのエリア帯の暗い霞の濃さ(0.3 = ステイと同じ)/ navShift: ヘッダーのナビの左端を右へずらす量(見本の px。ロゴの字数が多い業種用。探す・店・記事のページ)/
-   *   navChars: ナビの字数の見積もり(探すのヘッダーの明るい帯の幅に使う。ナビ 3 つ(トップ・〇〇を探す・特集記事)で 18。ステイは旧ナビ 4 つの 40)
+   *   navChars: ナビの字数の見積もり(探すのヘッダーの明るい帯の幅に使う。ナビ 4 つ(トップ・〇〇を探す・店舗紹介・特集)で 23。ステイは旧ナビ 4 つの 40)
    */
   fx: { photoDim: number; heroDim: number; areaDim: number; navShift: number; navChars: number };
   /** 種類の並び(最初のページの札・ラウンドロビンの順)。lib/verticals の categories の slug と同じ */
@@ -189,19 +189,30 @@ export type VkSearchArgs = { kind?: string; pref?: string; q?: string };
 export type VkLinks = {
   home: string;
   search: string;
+  /** 店舗紹介の一覧(メニューの「店舗紹介」の行き先)。/{業種}/shop */
+  shops: string;
+  /** 特集のページ(メニューの「特集」の行き先)。スポーツ・くらしは /{業種}/special、アクティビティは A 組の /activity/article */
+  special: string;
+  /** 店の記事の一覧だった URL(/{業種}/article)。いまは店舗紹介の一覧(shops)へ 308 で転送している。新しいリンクには使わない */
   articles: string;
   searchWith: (f: VkSearchArgs) => string;
   shop: (id?: string) => string;
   article: (id?: string) => string;
 };
 
-/** 画面の行き先(最初 /{業種}・探す /{業種}/search・店 /{業種}/shop/{id}・記事の一覧 /{業種}/article・記事 /{業種}/article/{id})。純関数 */
+/**
+ * 画面の行き先(最初 /{業種}・探す /{業種}/search・店舗紹介の一覧 /{業種}/shop・店 /{業種}/shop/{id}・特集 /{業種}/special・店の記事 /{業種}/article/{id})。純関数。
+ * メニューは全業種「トップ・探す・店舗紹介・特集」の 4 つ(オーナー決定 2026-10-23)。
+ */
 export function vkLinks(cfg: Pick<VkConfig, "base">): VkLinks {
   const base = cfg.base;
   const search = `${base}/search`;
   return {
     home: base,
     search,
+    shops: `${base}/shop`,
+    // アクティビティの特集は、A 組のデザインの /activity/article(季節・読みもの・ガイド)。ほかの新業種は /{業種}/special
+    special: base === "/activity" ? `${base}/article` : `${base}/special`,
     articles: `${base}/article`,
     searchWith: (f) => {
       const p = new URLSearchParams();

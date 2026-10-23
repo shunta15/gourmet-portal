@@ -159,6 +159,13 @@ export default function VkArticle({ cfg, v }: { cfg: VkConfig; v: ArticleView })
             <p className="vk-a-sub">
               <Nm text={v.sub} />
             </p>
+            {/* 店の記事から、その店の店舗紹介のページへ(上のほうに置く。オーナー決定 2026-10-23)。下の「{noun}の詳細を見る」も残す */}
+            <p className="vk-a-top-cta">
+              <Link href={L.shop(shop.id)} className="vk-btn vk-btn--gold vk-btn--pill vk-a-top-btn">
+                店舗詳細を見る
+                <IconArrow />
+              </Link>
+            </p>
             {v.lede ? (
               <p id="vk-a-lead" className={`vk-a-lede${v.ledeLong ? " is-long" : ""}`}>
                 {v.lede}
@@ -248,8 +255,8 @@ export default function VkArticle({ cfg, v }: { cfg: VkConfig; v: ArticleView })
                 <h2 id="vk-a-rel-h" className="vk-a-rel-h io">
                   あわせて読みたい <span className="vk-lab">Related Articles</span>
                 </h2>
-                <Link href={L.articles} className="vk-more vk-more--plain io">
-                  記事の一覧を見る
+                <Link href={L.shops} className="vk-more vk-more--plain io">
+                  店舗紹介の一覧を見る
                   <IconArrow />
                 </Link>
               </div>
