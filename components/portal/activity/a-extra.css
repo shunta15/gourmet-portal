@@ -201,3 +201,18 @@
 @media (min-width: 860px) {
   .y-panel.is-solo { min-height: calc(220 * var(--u)); padding-right: calc(28 * var(--u)); }
 }
+
+/* ---- 記事のページの手直し ---- */
+/* 写真に重ねた白い手書き文字が、明るい写真の上でも読めるよう、左上に暗い霞を重ねる */
+.y-photo:has(figcaption)::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(150deg, rgba(0, 30, 80, 0.55) 0%, rgba(0, 30, 80, 0.22) 40%, rgba(0, 30, 80, 0) 68%); }
+.y-photo figcaption, .y-stamp { z-index: 2; }
+/* 題・見出しは、言葉の切れ目で折り返し、1 字だけ次の行に残らないようにする(対応していない環境では今までどおり) */
+.y-h1 span, .y-sec-h h2 { text-wrap: balance; word-break: auto-phrase; }
+/* 店の札が 1〜2 枚の節は、文の右がわに札を置く(a-extra の .y-sec-b の 2 段) */
+.y-sec-b.has-cards .y-cards { margin-top: 0; }
+@media (min-width: 860px) {
+  .y-sec-b.has-cards { grid-template-columns: minmax(0, 1fr) auto; }
+  .y-sec-b.has-cards .y-cards { grid-template-columns: repeat(var(--c, 1), calc(176 * var(--u))); }
+  /* 写真も札も無い節(ガイドなど)は、1 行が長くなりすぎないよう、文の幅をせまくする */
+  .y-sec-b:not(.has-ph):not(.has-cards) .y-sec-t { max-width: calc(660 * var(--u)); }
+}

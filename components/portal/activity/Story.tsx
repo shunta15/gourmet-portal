@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import Banner from "./Banner";
 import ShopCard, { type CardShop } from "./ShopCard";
 import { Flag, IcArrow, IcCheck, IcClock, IcDoc, IcExternal, Mountain, Pines, Stamp } from "./Deco";
@@ -127,14 +128,18 @@ export default function Story({ d }: { d: StoryData }) {
         </section>
 
         {/* ---- 節(旗の番号 + 白い面。文と写真は左右交互) ---- */}
-        {d.secs.map((s, i) => (
+        {d.secs.map((s, i) => {
+          // 店の札が 1〜2 枚で写真が無い節は、文の右がわに札を置く(札が左に寄って右が空かないように)。3 枚以上は文の下に並べる
+          const nCards = s.cards?.length ?? 0;
+          const side = !s.photo && nCards > 0 && nCards <= 2;
+          return (
           <section key={s.no + s.heading} className={`y-sec${i % 2 === 1 ? " is-flip" : ""}`} id={s.id} aria-labelledby={`${s.id ?? `y-s${i}`}-h`}>
             <header className="y-sec-h">
               <Flag n={s.no} className="y-flag" />
               <h2 id={`${s.id ?? `y-s${i}`}-h`}>{s.heading}</h2>
               {i === 0 ? <Mountain className="y-sec-deco" /> : null}
             </header>
-            <div className={`y-sec-b${s.photo ? " has-ph" : ""}`}>
+            <div className={`y-sec-b${s.photo ? " has-ph" : ""}${side ? " has-cards" : ""}`}>
               <div className="y-sec-t">
                 {s.paras.map((p) => (
                   <p key={p}>{p}</p>
@@ -168,6 +173,13 @@ export default function Story({ d }: { d: StoryData }) {
                   <Photo p={s.photo} />
                 </figure>
               ) : null}
+              {side ? (
+                <div className="s-grid y-cards" style={{ ["--c" as string]: nCards } as CSSProperties}>
+                  {s.cards!.map((c) => (
+                    <ShopCard key={c.id} s={c} variant="list" />
+                  ))}
+                </div>
+              ) : null}
             </div>
             {s.extra?.length ? (
               <div className="y-extra">
@@ -178,15 +190,16 @@ export default function Story({ d }: { d: StoryData }) {
                 ))}
               </div>
             ) : null}
-            {s.cards?.length ? (
+            {!side && nCards > 0 ? (
               <div className="s-grid y-cards">
-                {s.cards.map((c) => (
+                {s.cards!.map((c) => (
                   <ShopCard key={c.id} s={c} variant="list" />
                 ))}
               </div>
             ) : null}
           </section>
-        ))}
+          );
+        })}
 
         {/* ---- 基本情報 ---- */}
         {d.facts?.length ? (

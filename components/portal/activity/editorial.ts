@@ -22,7 +22,7 @@ export type EdSeasonId = "spring" | "summer" | "autumn" | "winter";
 export type EdSeason = { id: EdSeasonId; title: string; lead: string; date: string; imageFile: string; sections: EdSection[] };
 export type EdMag = { id: string; tag: string; title: string; lead: string; date: string; imageFile: string; sections: EdSection[] };
 export type EdGuideItem = { q: string; a: string; storeNotes: Array<{ storeId: string; text: string }> };
-export type EdGuide = { title: string; lead: string; items: EdGuideItem[] };
+export type EdGuide = { title: string; lead: string; imageFile: string; items: EdGuideItem[] };
 export type Editorial = { seasons: EdSeason[]; magazine: EdMag[]; guide: EdGuide | null };
 export type Video = { id: string; storeId: string; title: string; durationSec: number; src: string; poster: string };
 
@@ -40,10 +40,17 @@ function clean(t: unknown): string {
     .join("");
 }
 
-/** 飾り画像のファイル名(public/_portal/activity/ の中のファイルだけ。パスの区切りや .. は受け付けない) */
+/**
+ * 記事の写真。editorial.json の imageFile は次のどちらか(パスの区切りや .. は、この 2 つの形以外は受け付けない)。
+ *  - 飾り画像のファイル名(public/_portal/activity/ の中のファイル)
+ *  - 実在の店の写真(vshops/leisure-<番号>/<ファイル名>。public/_portal/vshops/ の中。その記事に出てくる店の写真を使う)
+ * 返すのはサイト内のパス(/_portal/…)。
+ */
 function imageFile(v: unknown, fallback: string): string {
   const f = str(v);
-  return /^[A-Za-z0-9][A-Za-z0-9._-]*\.(webp|jpg|jpeg|png)$/.test(f) ? f : fallback;
+  if (/^[A-Za-z0-9][A-Za-z0-9._-]*\.(webp|jpg|jpeg|png)$/.test(f)) return `/_portal/activity/${f}`;
+  if (/^vshops\/leisure-\d+\/[A-Za-z0-9][A-Za-z0-9._-]*\.(webp|jpg|jpeg|png)$/.test(f)) return `/_portal/${f}`;
+  return `/_portal/activity/${fallback}`;
 }
 
 function sectionsOf(v: unknown, ok: Set<string>): EdSection[] {
@@ -121,7 +128,7 @@ export async function loadEditorial(okIds: string[]): Promise<Editorial> {
         : [];
       items.push({ q, a, storeNotes: notes });
     }
-    if (items.length > 0) guide = { title: str(g.title) || "はじめての方へ", lead: clean(g.lead), items };
+    if (items.length > 0) guide = { title: str(g.title) || "はじめての方へ", lead: clean(g.lead), imageFile: imageFile(g.imageFile, "ar-guide.webp"), items };
   }
   return { seasons, magazine, guide };
 }

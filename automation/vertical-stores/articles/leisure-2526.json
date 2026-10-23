@@ -30,7 +30,16 @@
       "minutes": 30
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 19
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 10
+    }
+  ],
   "facts": [
     {
       "claim": "Google マップの名称は「レザースタジオ サード Leather studio Third」",

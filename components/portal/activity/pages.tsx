@@ -207,18 +207,18 @@ export async function activityEditorialMetadata(kind: EdKind, rawId?: string): P
     if (!s) return { robots: { index: false, follow: false } };
     title = `${s.title}｜${b.brand}`;
     description = s.lead || `${SEASON_CHAR[s.id]}の特集。実在のスポットの情報をまとめています。`;
-    image = `/_portal/activity/${s.imageFile}`;
+    image = s.imageFile;
   } else if (kind === "magazine") {
     const m = editorial.magazine.find((x) => x.id === id);
     if (!m) return { robots: { index: false, follow: false } };
     title = `${m.title}｜${b.brand}`;
     description = m.lead || `${m.tag}。実在のスポットの情報をまとめています。`;
-    image = `/_portal/activity/${m.imageFile}`;
+    image = m.imageFile;
   } else {
     if (!editorial.guide) return { robots: { index: false, follow: false } };
     title = `${editorial.guide.title}｜${b.brand}`;
     description = editorial.guide.lead || "はじめて体験に参加する人向けの、服装・持ち物・申し込み・安全のガイドです。";
-    image = "/_portal/activity/ar-guide.webp";
+    image = editorial.guide.imageFile;
   }
   return buildMetadata({
     vertical: "activity",

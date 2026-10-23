@@ -202,13 +202,13 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
       {/* ---- 03 季節の特集 ---- */}
       <section className="f-sec f-s03" aria-label="季節の特集">
         <div className="f-card-bg" />
-        <Head n="03" t="季節の特集" sub="その季節にしか味わえない、特別な体験を見つけよう。" />
+        <Head n="03" t="季節の特集" sub="季節ごとの営業と開催の期間から、体験を探そう。" />
         <ul className="f-cards f-seasons">
           {seasons.map((s, i) => (
             <li key={s.id} className={`f-c f-se f-c-${i + 1}`}>
               <Link href={aLinks.season(s.id)} className="f-c-a">
                 <span className="f-c-ph">
-                  <img src={`${IMG}${s.imageFile}`} alt="" loading="lazy" />
+                  <img src={s.imageFile} alt="" loading="lazy" />
                   <span className={`f-se-c f-se-${s.id}`}>{SEASON_CHAR[s.id]}</span>
                 </span>
                 <span className="f-se-t">
@@ -283,7 +283,7 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
               <li key={m.id} className={`f-m f-m-${i + 1}`}>
                 <Link href={aLinks.mag(m.id)} className="f-m-a">
                   <span className="f-m-ph">
-                    <img src={`${IMG}${m.imageFile}`} alt="" loading="lazy" />
+                    <img src={m.imageFile} alt="" loading="lazy" />
                     <span className="f-m-tag">{m.tag}</span>
                   </span>
                   <span className="f-m-t">

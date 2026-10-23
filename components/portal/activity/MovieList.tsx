@@ -10,6 +10,8 @@ import { IcArrow, IcPlay } from "./Deco";
 export type MovieItem = { id: string; lines: string[]; dur: string; poster: string; src: string; title: string; shopName: string; shopHref: string };
 
 export default function MovieList({ items }: { items: MovieItem[] }) {
+  // 題の字の大きさは、その題のいちばん長い行に合わせて、全部の行で同じにする(行ごとに大きさが違って見えないように)
+  const widest = (m: MovieItem) => Math.max(1, ...m.lines.map((l) => l.length));
   const [cur, setCur] = useState<MovieItem | null>(null);
   const dlg = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -33,8 +35,8 @@ export default function MovieList({ items }: { items: MovieItem[] }) {
               </span>
               <span className="t-movie-t">
                 {m.lines.map((l) => (
-                  // --n = その行の字数。長い行は、札の幅に収まるよう字を小さくする(a-extra.css)。札の幅・並びは見本のまま
-                  <span key={l} style={{ ["--n" as string]: l.length } as CSSProperties}>
+                  // --n = 題のいちばん長い行の字数(全部の行で同じ)。長い題は、札の幅に収まるよう字を小さくする(a-extra.css)。札の幅・並びは見本のまま
+                  <span key={l} style={{ ["--n" as string]: widest(m) } as CSSProperties}>
                     {l}
                   </span>
                 ))}

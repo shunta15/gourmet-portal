@@ -85,7 +85,7 @@ const CAP: Record<string, string> = {
   "/_portal/vshops/leisure-625/hero.jpg": "白い棚に並ぶ、レジンアート",
   "/_portal/vshops/leisure-625/p1.jpg": "エイの形の、海の時計",
   "/_portal/vshops/leisure-625/p2.jpg": "海と波を描いた、ボード",
-  "/_portal/vshops/leisure-625/s4.jpg": "貝殻と琉球ガラスの、フォトフレーム",
+  "/_portal/vshops/leisure-625/s4.jpg": "貝殻の、フォトフレーム",
   "/_portal/vshops/leisure-625/s5.jpg": "ヒートガンで、白い波を",
   "/_portal/vshops/leisure-625/s6.jpg": "海を描いた、シーサー",
   "/_portal/vshops/leisure-625/s7.jpg": "海の色の、コースター",
@@ -94,7 +94,7 @@ const CAP: Record<string, string> = {
   "/_portal/vshops/leisure-2604/p2.jpg": "薪の火が燃える、石窯",
   "/_portal/vshops/leisure-2604/s4.jpg": "夜の森の、テント",
   "/_portal/vshops/leisure-2604/s5.jpg": "燃える焚き火",
-  "/_portal/vshops/leisure-2604/s6.jpg": "草地の斜面を、下る軽トラック",
+  "/_portal/vshops/leisure-2604/s6.jpg": "草地を下る、軽トラック",
   "/_portal/vshops/leisure-2604/s7.jpg": "ショベルカーの運転席",
   "/_portal/vshops/leisure-542/hero.jpg": "白い波の急流を、下る",
   "/_portal/vshops/leisure-542/p1.jpg": "桟橋に並ぶ、ゴムボート",
@@ -238,14 +238,14 @@ const CURATED: Record<string, Curated> = {
     plans: [
       { name: "ラフティング", desc: "8〜10人乗りのゴムボートで川を下る。インストラクターが同乗する。", time: "半日は午前・午後・夕方から選べる", cond: "4歳以上", photo: `${V}leisure-542/hero.jpg` },
       { name: "ダッキー", desc: "2人乗りの、空気で膨らませて使うカヤックを自分たちで操る川下り。", cond: "10歳以上", photo: `${V}leisure-542/p1.jpg` },
-      { name: "1日コース", desc: "川辺のカルディアキャンプ場で、BBQのランチが付く。", time: "9時45分集合・16時ごろ解散", cond: "最少催行は3名", photo: `${V}leisure-542/p2.jpg` },
+      { name: "1日コース", desc: "カルディアキャンプ場で、BBQのランチが付く。", time: "9時45分集合・16時ごろ解散", cond: "最少催行は3名", photo: `${V}leisure-542/p2.jpg` },
     ],
     blocks: [
       { key: "point", title: "体験のポイント", en: "HIGHLIGHTS", items: ["吉野川のラフティング・ダッキーは4月1日から11月末まで", "半日コースと1日コースがある", "コースは当日の水量や川の状態で、上流か下流に決まる", "途中に、高さ約3.0mの飛び込みポイントがある", "ツアー中に撮った写真も提供される"] },
       { key: "bring", title: "装備・参加の条件", en: "CONDITIONS", items: ["ヘルメットとライフジャケットは用意される", "ラフティングは4歳以上・ダッキーは10歳以上", "中学生以下は保護者の同伴・18歳未満は保護者の同意が必要", "最少催行は半日コースが2名・1日コースが3名"] },
       { key: "safety", title: "安全のための決まり", en: "SAFETY", items: ["ラフティングはインストラクターが同乗する", "雨天でも実施されるが、風や増水などで中止になる場合がある", "妊娠中の人と飲酒している人は参加できない"] },
     ],
-    extraRows: [{ k: "hours", label: "電話の受付", lines: ["9:00 〜 18:00"] }],
+    extraRows: [{ k: "hours", label: "営業時間", lines: ["9:00 〜 18:00(公式サイトの表示)"] }],
     course: { title: "吉野川のラフティングとダッキー", badge: "2コース", tags: ["ラフティング", "ダッキー", "BBQランチ"], place: "奈良県・大淀町" },
   },
   ac0007: {
@@ -302,8 +302,8 @@ const CURATED: Record<string, Curated> = {
     access: ["新白河駅から車で約20分", "那須フラワーワールドから2分(送迎なし)"],
     heroText: ["一般の人が立ち入れない", "森と草原を、馬で歩く。"],
     plans: [
-      { name: "ホーストレッキング", desc: "クラブが管理する私有地で行う。コーヒーブレイク付き。一般向けは歩く速さの並歩だけ。", time: "約2時間・9時か13時に集合", cond: "11歳以上70歳未満(通常の対応)", photo: `${V}leisure-2878/hero.jpg` },
-      { name: "乗馬レッスン", desc: "ブリティッシュ・ウエスタン・エンデュランスのレッスン。穏やかな性格のポニーから乗り始めることもできる。", cond: "習っている人は4歳から70代", photo: `${V}leisure-2878/p1.jpg` },
+      { name: "ホーストレッキング", desc: "クラブが管理する私有地で行う。コーヒーブレイク付き。一般向けは並歩(馬が歩く速さ)だけ。", time: "約2時間・9時か13時に集合", cond: "11歳以上70歳未満(通常の対応)", photo: `${V}leisure-2878/hero.jpg` },
+      { name: "乗馬レッスン", desc: "ブリティッシュとウエスタンのレッスン。穏やかな性格のポニーから乗り始めることもできる。", cond: "習っている人は4歳から70代", photo: `${V}leisure-2878/p1.jpg` },
       { name: "上級者専用プラン", desc: "速歩・駈歩は、上級者専用プランとして用意されている。", cond: "事前の問い合わせが要る", photo: `${V}leisure-2878/s4.jpg` },
     ],
     blocks: [
