@@ -24,6 +24,10 @@
 .vs-hero-name--m { font-size: calc(22 * var(--u)); }
 .vs-hero-name--s { font-size: calc(18 * var(--u)); }
 .vs-hero-tag { margin-top: calc(7 * var(--u)); font-family: var(--vk-ff-min); font-size: var(--vk-fs-s); line-height: 1.7; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.92); }
+/* 「特集記事を読む」(店の記事への入口。店名の下) */
+.vs-hero-story { margin-top: calc(12 * var(--u)); }
+.vs-story-btn { text-shadow: none; height: auto; min-height: max(44px, calc(34 * var(--u))); padding: calc(6 * var(--u)) max(22px, calc(22 * var(--u))); font-size: max(13px, calc(9.6 * var(--u))); font-weight: 700; letter-spacing: 0.1em; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35); }
+.vs-story-btn:hover { box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45); }
 .vs-hero-s1, .vs-hero-s2 { position: relative; overflow: hidden; background: var(--vk-sand); min-height: 0; }
 .vs-hero-s1 { grid-column: 2; grid-row: 1; }
 .vs-hero-s2 { grid-column: 2; grid-row: 2; }

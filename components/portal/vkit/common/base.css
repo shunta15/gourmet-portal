@@ -158,7 +158,7 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-shell[data-vk-page="article"] .vk-head-nav a + a::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: calc(10 * var(--u)); min-height: 10px; translate: 0 -50%; background: rgb(var(--vk-shade-rgb) / 0.22); }
 .vk-shell[data-vk-page="article"] .vk-head-nav a::after { left: calc(var(--vk-ngap) / 2 * var(--u)); right: auto; width: 0; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
 .vk-shell[data-vk-page="article"] .vk-head-nav a:hover::after { width: calc(100% - var(--vk-ngap) * var(--u)); }
-/* 右端のハンバーガー(スマホだけ。PC は上のナビ 3 つをそのまま並べるので出さない) */
+/* 右端のハンバーガー(スマホだけ。PC は上のナビ 4 つをそのまま並べるので出さない) */
 .vk-head-ic { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; align-items: center; }
 .vk-hi { display: flex; flex-direction: column; align-items: center; padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
 .vk-hi:hover { opacity: 0.7; }
@@ -171,7 +171,7 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-drawer a { padding: max(11px, calc(8 * var(--u))) calc(18 * var(--u)); font-size: max(13px, calc(9 * var(--u))); font-weight: 500; letter-spacing: 0.08em; transition: background 0.2s, color 0.2s; }
 .vk-drawer a:hover { background: var(--vk-cream); color: var(--vk-gold-d); }
 @media (min-width: 1000px) {
-  .vk-head-ic, .vk-drawer { display: none; } /* PC はナビ 3 つをそのまま並べる。ハンバーガーとその中身はスマホ(999px 以下)だけ */
+  .vk-head-ic, .vk-drawer { display: none; } /* PC はナビ 4 つをそのまま並べる。ハンバーガーとその中身はスマホ(999px 以下)だけ */
 }
 
 /* ---------- フッター(見本の記事ページの最後の帯: ロゴ+ナビ+SNS。下に小さな 2 行目) ---------- */

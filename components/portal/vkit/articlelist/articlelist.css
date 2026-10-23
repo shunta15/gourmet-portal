@@ -9,6 +9,8 @@
 
 /* ---------- ヒーロー(見本は帯の下まで写真・左に大きな明朝・下に検索の箱) ---------- */
 .val-hero { position: relative; height: calc(376 * var(--u)); min-height: 330px; background: var(--vk-sand); }
+/* 店舗紹介の一覧(shoplist/ShopListPage.tsx)は検索の箱が無いので、その分だけ低く(見出し 2 行+一言が収まる高さ) */
+.val-hero--plain { height: calc(318 * var(--u)); min-height: 300px; }
 .val-hero-clip { position: absolute; inset: 0; overflow: hidden; }
 .val-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; filter: brightness(var(--vk-photo-dim, 1)); object-position: 60% 42%; transform-origin: 62% 46%; }
 .val-hero-img--flip { transform: scaleX(-1); transform-origin: 50% 46%; }

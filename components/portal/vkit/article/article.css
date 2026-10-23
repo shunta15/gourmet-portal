@@ -23,6 +23,9 @@
 .vk-a-h1--s4 { font-size: 20px; }
 .vk-a-sub { word-break: auto-phrase; text-wrap: pretty; margin: 14px 0 0; font-family: var(--vk-ff-min); font-size: 14.5px; line-height: 1.8; letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.95); }
 .vk-a-lede { word-break: auto-phrase; text-wrap: pretty; margin: 18px 0 0; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.3); font-size: 13px; line-height: 2.05; letter-spacing: 0.07em; color: rgba(255, 255, 255, 0.92); }
+/* 店舗詳細を見る(ヒーローの中・リードの下。店の店舗紹介のページへ) */
+.vk-a-top-cta { margin: 18px 0 0; }
+.vk-a-top-btn { width: auto; min-height: 46px; padding: 0 26px; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35); }
 .vk-a-idx, .vk-a-scroll { display: none; }
 
 /* ============ 本文の枠(スマホ) ============ */
@@ -153,6 +156,8 @@
   .vk-a-sec .vk-a-tx { padding: 0; }
 
   .vk-a-lede.is-long { max-width: calc(500 * var(--u)); }
+  .vk-a-top-cta { margin-top: calc(16 * var(--u)); }
+  .vk-a-top-btn { height: max(44px, calc(32 * var(--u))); min-height: 0; padding: 0 calc(22 * var(--u)); font-size: max(13px, calc(9.6 * var(--u))); }
   .vk-a-sp { margin-top: calc(14 * var(--u)); padding-top: calc(4 * var(--u)); font-size: max(12px, calc(8.6 * var(--u))); }
   .vk-a-sp > div { grid-template-columns: 11em minmax(0, 1fr); gap: calc(10 * var(--u)); padding: calc(6 * var(--u)) 0; }
   .vk-a-xps { gap: calc(6 * var(--u)); margin-top: calc(14 * var(--u)); }

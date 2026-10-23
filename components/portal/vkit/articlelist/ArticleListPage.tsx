@@ -23,7 +23,11 @@ import "./articlelist.css";
 /* eslint-disable @next/next/no-img-element */
 
 /**
- * 記事の一覧(本番 /activity/article・/sports/article・/life/article)。ステイの決定デザインの「記事の一覧」と同じ組み立て(ヒーロー+検索の帯 → 左に絞り込み・右に 01 02 … の記事の一覧)で、
+ * 【2026-10-23 以降】スポーツ・くらしの /{業種}/article は店舗紹介の一覧(/{業種}/shop)へ 308 で転送するので、この一覧の画面は本番では出さない。
+ * 部品の Card・Pager は店舗紹介の一覧(../shoplist/ShopListPage.tsx)が使う。アクティビティの /activity/article は A 組の特集ページ(metadata だけ vkArticleListPage を使う)。
+ * 以下は転送する前の作りの説明。
+ *
+ * 記事の一覧(/activity/article・/sports/article・/life/article)。ステイの決定デザインの「記事の一覧」と同じ組み立て(ヒーロー+検索の帯 → 左に絞り込み・右に 01 02 … の記事の一覧)で、
  * 中身は実在の店の紹介記事(紹介記事と実物の写真のある店。common/live.ts の loadShops → data.ts の articleShops)。カードは各店の記事 /{業種}/article/{id} へ。
  * 探す(search/SearchPage.tsx)の部品と CSS を写して直したもの。CSS は articlelist.css(接頭辞 val-)。
  * 状態は URL の引数(data.ts の冒頭)。サーバーが絞り込んで描くので、JS が無くても、リンクとフォーム(GET)で絞れる。
@@ -276,7 +280,7 @@ function ResultHead({ cfg, f, count }: { cfg: VkConfig; f: ListFilters; count: n
 }
 
 /** 一覧の 1 行 = 1 本の記事(見本は 01 02 … の連番・種類の英字・2 行の見出し・3 行の文・小さな札 4 つ・「詳細を見る」。写真は左右交互。リンク先は店の記事) */
-function Card({ cfg, s, n, i }: { cfg: VkConfig; s: LiveShop; n: number; i: number }) {
+export function Card({ cfg, s, n, i, href }: { cfg: VkConfig; s: LiveShop; n: number; i: number; href?: string }) {
   const L = vkLinks(cfg);
   const c = cardCopyOf(cfg, s);
   const ph = s.photo;
@@ -288,7 +292,7 @@ function Card({ cfg, s, n, i }: { cfg: VkConfig; s: LiveShop; n: number; i: numb
           {kindEn(cfg, s.kind) ? <span className="vk-kind val-kind">{kindEn(cfg, s.kind)}</span> : null}
         </p>
         <h3 className="val-name">
-          <Link href={L.article(s.id)} prefetch={false}>
+          <Link href={href ?? L.article(s.id)} prefetch={false}>
             <span className="val-l1">
               <Nm text={c.l1} />
             </span>
@@ -332,13 +336,12 @@ function Card({ cfg, s, n, i }: { cfg: VkConfig; s: LiveShop; n: number; i: numb
 }
 
 /** ページ送り(リンク)。7 ページまでは全部、それ以上は 先頭・今のページの前後・最後 */
-function Pager({ cfg, f, pages }: { cfg: VkConfig; f: ListFilters; pages: number }) {
+export function Pager({ page, pages, hrefOf }: { page: number; pages: number; hrefOf: (n: number) => string }) {
   if (pages <= 1) return null;
-  const hrefOf = (n: number) => listHref(cfg, { ...f, page: n }, "#val-results");
   const nums: Array<number | "…"> = [];
   if (pages <= 7) for (let n = 1; n <= pages; n++) nums.push(n);
   else {
-    const sorted = [...new Set([1, pages, f.page - 1, f.page, f.page + 1].filter((n) => n >= 1 && n <= pages))].sort((a, b) => a - b);
+    const sorted = [...new Set([1, pages, page - 1, page, page + 1].filter((n) => n >= 1 && n <= pages))].sort((a, b) => a - b);
     sorted.forEach((n, i) => {
       if (i > 0 && n - sorted[i - 1] > 1) nums.push("…");
       nums.push(n);
@@ -346,8 +349,8 @@ function Pager({ cfg, f, pages }: { cfg: VkConfig; f: ListFilters; pages: number
   }
   return (
     <nav className="val-pager" aria-label="ページ送り">
-      {f.page > 1 ? (
-        <Link href={hrefOf(f.page - 1)} prefetch={false} className="val-pg val-pg--arrow" aria-label="前のページ" rel="prev">
+      {page > 1 ? (
+        <Link href={hrefOf(page - 1)} prefetch={false} className="val-pg val-pg--arrow" aria-label="前のページ" rel="prev">
           <IconChevronLeft />
         </Link>
       ) : (
@@ -361,13 +364,13 @@ function Pager({ cfg, f, pages }: { cfg: VkConfig; f: ListFilters; pages: number
             …
           </span>
         ) : (
-          <Link key={n} href={hrefOf(n)} prefetch={false} className={`val-pg ${f.page === n ? "is-on" : ""}`} aria-label={`${n}ページ`} aria-current={f.page === n ? "page" : undefined}>
+          <Link key={n} href={hrefOf(n)} prefetch={false} className={`val-pg ${page === n ? "is-on" : ""}`} aria-label={`${n}ページ`} aria-current={page === n ? "page" : undefined}>
             {n}
           </Link>
         ),
       )}
-      {f.page < pages ? (
-        <Link href={hrefOf(f.page + 1)} prefetch={false} className="val-pg val-pg--arrow" aria-label="次のページ" rel="next">
+      {page < pages ? (
+        <Link href={hrefOf(page + 1)} prefetch={false} className="val-pg val-pg--arrow" aria-label="次のページ" rel="next">
           <IconChevron />
         </Link>
       ) : (
@@ -444,7 +447,7 @@ export function ArticleListView({ cfg, shops: all, sp }: { cfg: VkConfig; shops:
             ) : (
               <Empty cfg={cfg} total={shops.length} />
             )}
-            <Pager cfg={cfg} f={f} pages={pages} />
+            <Pager page={f.page} pages={pages} hrefOf={(n) => listHref(cfg, { ...f, page: n }, "#val-results")} />
             {shown.length > 0 ? <p className="val-note">{cfg.shop.note}</p> : null}
           </div>
         </div>

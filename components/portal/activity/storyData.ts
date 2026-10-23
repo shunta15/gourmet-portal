@@ -64,9 +64,10 @@ export function storyOfShop(v: ArticleView, shop: AShop, all: AShop[]): StoryDat
     // 出どころの名前に「その他」(公式サイトのページ名)があれば「ほか」に(「その他」の語は使わない決まり)
     sources: v.sources.map((x) => ({ ...x, label: x.label.replace(/その他/g, "ほか") })),
     checkedAt: v.checkedAt,
+    // 上のほうの 2 つのボタン。1 つ目は、その店の店舗紹介のページへ(オーナー決定 2026-10-23「記事のページの上のほうに「店舗詳細を見る」ボタン」)。公式サイトは 2 つ目
     actions: [
-      ...(official ? [{ label: "公式サイトで確認する", href: official, external: true }] : []),
-      { label: "店のページを見る", href: aLinks.shop(shop.id), ghost: !!official },
+      { label: "店舗詳細を見る", href: aLinks.shop(shop.id) },
+      ...(official ? [{ label: "公式サイトで確認する", href: official, external: true, ghost: true }] : []),
     ],
     banner: { v: "shop", href: official ?? aLinks.shop(shop.id), external: !!official },
   };

@@ -110,7 +110,7 @@ function Feature({ cfg, items }: { cfg: VkConfig; items: LiveArticle[] }) {
             <br />
             {t.featP[3]}
           </p>
-          <Link href={L.articles} className="vk-more vk-t-feat-link io" style={{ ["--d" as string]: "240ms" }}>
+          <Link href={L.special} className="vk-more vk-t-feat-link io" style={{ ["--d" as string]: "240ms" }}>
             特集記事をみる
             <IconArrow />
           </Link>
@@ -262,8 +262,8 @@ function Articles({ cfg, items }: { cfg: VkConfig; items: LiveArticle[] }) {
             <br />
             記事
           </h2>
-          <Link href={L.articles} className="vk-more vk-more--plain vk-t-arts-more io" style={{ ["--d" as string]: "100ms" }}>
-            記事をもっと見る
+          <Link href={L.shops} className="vk-more vk-more--plain vk-t-arts-more io" style={{ ["--d" as string]: "100ms" }}>
+            店舗紹介をもっと見る
             <IconArrow />
           </Link>
         </div>

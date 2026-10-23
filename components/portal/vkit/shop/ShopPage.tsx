@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { CSSProperties, ReactNode } from "react";
 import JsonLd from "@/components/portal/JsonLd";
@@ -70,6 +71,15 @@ function Hero({ cfg, d }: { cfg: VkConfig; d: ShopDetail }) {
           {d.tagline ? (
             <Reveal as="p" variant="fade" className="vs-hero-tag" delay={520}>
               <Nm text={d.tagline} />
+            </Reveal>
+          ) : null}
+          {/* 店の特集記事(店の記事のページ /{業種}/article/{id})への入口。店名・写真のすぐそばに目立つように置く(オーナー決定 2026-10-23「簡単な店舗詳細ページから店舗特集記事に飛べる」)。下の「紹介記事」の札も残す */}
+          {d.article ? (
+            <Reveal as="div" variant="fade" className="vs-hero-story" delay={640}>
+              <Link href={d.article.href} className="vk-btn vk-btn--gold vk-btn--pill vs-story-btn">
+                <span>特集記事を読む</span>
+                <IconArrow />
+              </Link>
             </Reveal>
           ) : null}
         </div>

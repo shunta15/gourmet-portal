@@ -1,6 +1,6 @@
 /**
  * アクティビティの画面の間のリンクと、探すの絞り込みの URL(純関数。サーバーの部品もクライアントの部品も import してよい)。
- * 行き先は本物のページ: 最初 /activity・探す /activity/search・店 /activity/shop/{id}・特集 /activity/article・店の記事 /activity/article/{id}。
+ * 行き先は本物のページ: 最初 /activity・探す /activity/search・店舗紹介の一覧 /activity/shop・店 /activity/shop/{id}・特集 /activity/article・店の記事 /activity/article/{id}。
  * 季節・読みもの・はじめての方へは /activity/article の下(season/{id}・magazine/{id}・guide)。店の記事 /activity/article/{id}(id は ac+数字)とはぶつからない。
  */
 export const A = "/activity";
@@ -36,6 +36,8 @@ export function searchUrl(a: SearchArgs = {}, hash = ""): string {
 export const aLinks = {
   top: A,
   search: `${A}/search`,
+  /** 店舗紹介の一覧(メニューの「店舗紹介」の行き先)。1 店ごとのページは shop(id) */
+  shops: `${A}/shop`,
   course: `${A}/search#course`,
   article: `${A}/article`,
   magazine: `${A}/article#magazine`,

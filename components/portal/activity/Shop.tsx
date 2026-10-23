@@ -113,6 +113,14 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
             <path d="M30 14v-8M12 32H4M18 20l-6-6M44 20l5-6M48 32h8M18 44l-5 5M42 44l6 6" />
           </svg>
           <Stamp id="hb" className="h-big-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
+          {/* 店の特集記事(/activity/article/{店 ID})への入口。店名・写真のすぐそばに目立つように置く(オーナー決定 2026-10-23「簡単な店舗詳細ページから店舗特集記事に飛べる」)。下の「特集記事」の札も残す */}
+          {shop.feat ? (
+            <Link href={aLinks.story(shop.id)} className="h-story-btn">
+              <IcDoc />
+              特集記事を読む
+              <IcArrow />
+            </Link>
+          ) : null}
         </figure>
         <Pine className="h-pine h-pine-a" />
         <Pine className="h-pine h-pine-b" />

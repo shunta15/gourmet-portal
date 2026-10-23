@@ -220,3 +220,18 @@
 @media (max-width: 859px) {
   .apa-story .y-sec, .apa-story .y-toc { scroll-margin-top: 62px; }
 }
+
+/* ===== 店舗紹介の一覧(/activity/shop。ShopList.tsx)。ヒーローは特集の f-、札は探すの s-grid / apa-card-list をそのまま使う ===== */
+.sl-main { position: relative; }
+.sl-main .s-res-n { margin: 0; }
+@media (max-width: 859px) {
+  .sl-main { padding: 6px 14px 40px; }
+  .sl-main .s-res-head { margin-bottom: 4px; }
+  .sl-main .s-pager { margin-bottom: 8px; }
+}
+@media (min-width: 860px) {
+  .sl-main { padding: calc(14 * var(--u)) calc(145 * var(--u)) calc(76 * var(--u)); }
+  .sl-main .s-res-head { height: calc(48 * var(--u)); }
+  .sl-main .s-res-n { font-size: calc(16 * var(--u)); }
+  .sl-main .s-pager { margin-left: 0; margin-top: calc(22 * var(--u)); }
+}
