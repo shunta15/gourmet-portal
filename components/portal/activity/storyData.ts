@@ -132,6 +132,7 @@ export function storyOfGuide(g: EdGuide, shops: AShop[]): StoryData {
     title: titleLines(g.title),
     lead: g.lead ? [g.lead] : [],
     photo: { src: g.imageFile, alt: "" },
+    toc: { id: "faq", heading: "よくある質問", en: "QUESTIONS", items: g.items.map((it, i) => ({ label: it.q, href: `#q${i + 1}` })) },
     secs: g.items.map((it, i) => ({
       no: String(i + 1).padStart(2, "0"),
       id: `q${i + 1}`,

@@ -216,3 +216,7 @@
   /* 写真も札も無い節(ガイドなど)は、1 行が長くなりすぎないよう、文の幅をせまくする */
   .y-sec-b:not(.has-ph):not(.has-cards) .y-sec-t { max-width: calc(660 * var(--u)); }
 }
+/* スマホは上に付いて回るヘッダー(高さ 54px)があるので、#q… ・#faq へ飛んだとき、見出しがヘッダーの下に隠れないようにする */
+@media (max-width: 859px) {
+  .apa-story .y-sec, .apa-story .y-toc { scroll-margin-top: 62px; }
+}

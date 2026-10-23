@@ -46,6 +46,8 @@ export const aLinks = {
   mag: (id: string) => `${A}/article/magazine/${encodeURIComponent(id)}`,
   guide: `${A}/article/guide`,
   guideAt: (n: number) => `${A}/article/guide#q${n}`,
+  /** ガイドの質問の一覧(目次) */
+  guideFaq: `${A}/article/guide#faq`,
   /** お気に入りに入れた体験だけの探す */
   favs: `${A}/search?fav=1`,
   about: "/about",

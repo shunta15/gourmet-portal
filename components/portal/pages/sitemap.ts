@@ -4,6 +4,7 @@
  * 各ページの robots は件数で決まる（buildMetadata の count）。ここでも同じ件数を gate に通す:
  *   店ページの count はその業種の掲載数（components/portal/pages/shop.tsx）、ほかは絞り込んだあとの件数。掲載数が 3 件未満なら店ページも載せない。
  * ビューティー・ボディケアの特集ページ（/{v}/feature/{id}）は店のページへ転送するので載せない。
+ * アクティビティも「さがす」の絞り込みへ転送する構成(2026-10-23): 種類・エリア・利用シーンの旧 URL は載せず、転送先(種類・都道府県だけの絞り込み)を載せる。利用シーンは「こだわり」の絞り込みで noindex なので載せない。
  */
 import type { MetadataRoute } from "next";
 import { PREFECTURES } from "@/lib/areas/prefectures";
@@ -24,7 +25,8 @@ export function verticalSitemap(key: PortalVertical) {
     add(v.path, all.length);
     // 「さがす」にまとまる構成か。ビューティー(COLOR PLAY)・ボディケアは「さがす」にまとまっている
     const cp = key === "beauty" || key === "bodycare";
-    if (cp) {
+    const toSearch = cp || key === "activity";
+    if (toSearch) {
       // COLOR PLAY: 種類・エリアのページは「さがす」へ転送するので載せない。転送先（種類・エリアだけの絞り込み）を載せる（件数は同じ gate）
       add(`${v.path}/search`, all.length);
       for (const p of PREFECTURES) add(`${v.path}/search?pref=${p.slug}`, pick(all, { pref: p.slug }).length);
@@ -39,7 +41,9 @@ export function verticalSitemap(key: PortalVertical) {
         for (const p of PREFECTURES) add(`${v.path}/${c.slug}/${p.slug}`, pick(all, { category: c.slug, pref: p.slug }).length);
       }
     }
-    if (cp) {
+    if (key === "activity") {
+      // アクティビティ: 利用シーンのページは「さがす」の scene 引数へ転送する。こだわりの絞り込みは noindex なので、旧 URL も転送先も載せない
+    } else if (cp) {
       // COLOR PLAY: 利用シーンのページは「さがす」の「こだわり」(店のタグ)へ転送するので載せない。転送先を載せる(件数は同じ gate)
       const tags = new Set<string>();
       for (const s of v.scenes) {

@@ -12,6 +12,9 @@
   .b-btn-t small { display: block; font-family: var(--ff-lab); font-size: 10px; letter-spacing: 0.2em; }
   .b-btn-t span { display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 17px; }
   .b-btn-ar { width: 18px; height: 18px; }
+  /* 最初のページの下の帯(オーナーが用意した 1 枚の画像)。スマホでは幅いっぱいにすると字が読めないので、高さを決めて中央(赤いボタンの所)を見せる。左右の手書きの文は画面の外 */
+  .apa-banner-top.is-pic { display: block; min-height: 0; height: 136px; padding: 0; }
+  .apa-banner-top.is-pic::before { display: none; }
 }
 @media (min-width: 860px) {
   .apa-banner { position: relative; width: 100%; overflow: hidden; color: #fff; }
@@ -30,14 +33,8 @@
   .b-waves { position: absolute; color: rgba(255, 255, 255, 0.85); width: calc(42 * var(--u)); height: calc(30 * var(--u)); z-index: 1; }
   .b-stamp { position: absolute; color: #fff; width: calc(96 * var(--u)); height: calc(96 * var(--u)); z-index: 1; filter: drop-shadow(0 0 calc(2 * var(--u)) rgba(0, 60, 100, 0.4)); }
 
-  /* top: 見本 y 1404〜1536 */
+  /* top: 見本 y 1404〜1536。1 枚の画像(2170×274)を高さに合わせて中央に置き、赤いボタンの範囲(画像の 35.94%・18.61%・27.83%・54.74%)に透明なリンクを重ねる */
   .apa-banner-top { --b: 1404; height: calc(132 * var(--u)); }
-  .apa-banner-top .b-left { left: calc(18 * var(--u)); top: calc(33 * var(--u)); font-size: calc(21.06 * var(--u)); line-height: calc(32.4 * var(--u)); transform: rotate(-10deg); }
-  .apa-banner-top .b-left::first-line { letter-spacing: 0.1em; }
-  .apa-banner-top .b-btn { left: calc(372 * var(--u)); top: calc(26 * var(--u)); width: calc(281 * var(--u)); height: calc(74 * var(--u)); }
-  .apa-banner-top .b-right { left: calc(744 * var(--u)); top: calc(56 * var(--u)); font-size: calc(16.74 * var(--u)); line-height: calc(28.08 * var(--u)); transform: rotate(-6deg); }
-  .apa-banner-top .b-waves { left: calc(655 * var(--u)); top: calc(28 * var(--u)); }
-  .apa-banner-top .b-stamp { left: calc(927 * var(--u)); top: calc(-5 * var(--u)); }
   /* shop: 見本 y 1440〜1536 */
   .apa-banner-shop { height: calc(98 * var(--u)); }
   .apa-banner-shop .b-left { left: calc(96 * var(--u)); top: calc(20 * var(--u)); font-size: calc(18.9 * var(--u)); line-height: calc(30.24 * var(--u)); transform: rotate(-7deg); }
@@ -56,3 +53,7 @@
   .apa-banner-article .b-waves { display: none; }
   .apa-banner-article .b-stamp { left: calc(918 * var(--u)); top: calc(4 * var(--u)); width: calc(98 * var(--u)); height: calc(98 * var(--u)); }
 }
+/* ---- 最初のページの下の帯(画像 1 枚)。スマホ・PC 共通 ---- */
+.apa-banner-top .b-pic { position: absolute; left: 50%; top: 0; height: 100%; aspect-ratio: 2170 / 274; transform: translateX(-50%); }
+.apa-banner-top .b-pic .b-img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; max-width: none; object-fit: fill; object-position: 50% 50%; }
+.apa-banner-top .b-hit { position: absolute; left: 35.94%; top: 18.61%; width: 27.83%; height: 54.74%; display: block; border-radius: 4px; z-index: 2; }

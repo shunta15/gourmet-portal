@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { hand, jp, lab, maru } from "./fonts";
 import Header from "./Header";
@@ -12,7 +13,8 @@ import "./a-extra.css";
 /**
  * アクティビティの最初・探す・店・特集・記事のページの外枠(サーバー)。青と黄の切手・チケット風・上に横メニュー(オーナーが決めた「A組」のデザイン)。
  * 書体 4 つの変数・紙の縁のざらつきの SVG フィルター・共通ヘッダーを出す。公開スイッチ OFF のあいだは 404(ほかの新業種の外枠 VkRoot と同じ)。
- * 共通のポータルのヘッダー・フッターは出さない(種類・エリア・利用シーンのページ app/activity/(sub)/ は、これまでどおり共通の外枠)。
+ * 共通のポータルのヘッダー・フッターは出さない。A組にはフッターが無いので、全ページの一番下(下の帯より下)に、小さな文字の 1 行(マチノワ トップ・編集部について・掲載基準・お問い合わせ)だけ置く。
+ * (種類・エリア・利用シーンの旧ページ app/activity/(sub)/ は、探すの絞り込みへ 308 で転送するので、外枠は使わない)
  */
 export default function ActivityFrame({ children }: { children: React.ReactNode }) {
   assertPortalLive();
@@ -28,6 +30,14 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
         </svg>
         <Header />
         {children}
+        <footer className="apa-foot">
+          <nav aria-label="サイトの案内">
+            <Link href="/">マチノワ トップ</Link>
+            <Link href="/about">編集部について</Link>
+            <Link href="/editorial/guidelines">掲載基準</Link>
+            <Link href="/contact">お問い合わせ</Link>
+          </nav>
+        </footer>
       </div>
     </div>
   );

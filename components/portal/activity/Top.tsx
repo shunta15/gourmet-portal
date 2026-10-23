@@ -3,23 +3,25 @@ import Banner from "./Banner";
 import HeroSearch from "./HeroSearch";
 import MovieList, { type MovieItem } from "./MovieList";
 import ShopCard from "./ShopCard";
-import { Flag, IcArrow, IcBook, IcCamera, IcCheck, Mountain, Pine, Pines, Plane, Stamp, Waves } from "./Deco";
+import { Flag, IcArrow, IcCamera, Mountain, Pine, Pines, Plane, Stamp, Waves } from "./Deco";
 import { aLinks, searchUrl } from "./links";
 import { PICKS, pickShops, prefShort, toCard, type AShop } from "./data";
 import { REGION_GROUPS, regionArg, regionKeyOf } from "./filters";
-import { durationLabel, twoLines, type Video } from "./editorial";
+import { durationLabel, twoLines, type EdGuide, type Video } from "./editorial";
 
 const IMG = "/_portal/activity/";
 
 /**
- * 最初に並ぶ 4 枚の写真の札。見本の英字(HIKING・POTTERY・CYCLING・CAMP)は、実在の店の種類に合わせて替えた
- * (MOUNTAIN = 山・空 / CRAFT = ものづくり体験 / WATER = 海・川 / CAMP = キャンプができる店)。k は並びの位置の名前。写真は見本の飾りの画像(店の写真ではない)。
+ * 最初に並ぶ 4 枚の写真の札(右上)。写真はオーナーが用意した画像(文字・縁の切り込みまで画像に入っている)で、札の外枠(位置・大きさ)は見本のまま。
+ * 英字の印は見本どおり HIKING・POTTERY・CYCLING・CAMP。番号は見本どおり(01・02・03・02)。k は並びの位置の名前。
+ * 札を押すと、実在の店で絞り込める探すへ: HIKING = 山・空 / POTTERY = ものづくり体験。
+ * CYCLING と CAMP は、合う種類・キーワード(「サイクリング」「キャンプ」)で探すと 0 件になるので、嘘にならないよう探すのトップへ。
  */
 const TILES = [
-  { k: "hiking", img: "top-hiking.webp", n: "01", en: "MOUNTAIN", cap: ["歩くたび、", "好きがふえる。"] },
-  { k: "pottery", img: "top-pottery.webp", n: "02", en: "CRAFT", cap: ["つくる時間が、", "旅になる。"] },
-  { k: "cycling", img: "top-movie-1.webp", n: "03", en: "WATER", cap: ["風と、どこまでも。"] },
-  { k: "camp", img: "top-camp.webp", n: "02", en: "CAMP", cap: ["家族の時間が、", "もっと特別に。"] },
+  { k: "hiking", img: "top-tile-hiking.webp", n: "01", en: "HIKING", alt: "歩くたび、好きがふえる。", to: searchUrl({ kind: ["mountain-sky"] }) },
+  { k: "pottery", img: "top-tile-pottery.webp", n: "02", en: "POTTERY", alt: "つくる時間が、旅になる。", to: searchUrl({ kind: ["craft"] }) },
+  { k: "cycling", img: "top-tile-cycling.webp", n: "03", en: "CYCLING", alt: "風と、どこまでも。", to: aLinks.search },
+  { k: "camp", img: "top-tile-camp.webp", n: "02", en: "CAMP", alt: "家族の時間を、もっと特別に。", to: aLinks.search },
 ];
 
 /**
@@ -48,8 +50,18 @@ const THEMES = [
   { k: "family", t: ["子連れ"], to: searchUrl({ scene: ["with-children"] }) },
 ];
 
-/** はじめての方へ(4 つの質問。ガイドのページ /activity/article/guide の同じ質問へ) */
-const GUIDE = ["服装・持ち物は?", "どんな準備が必要?", "申し込みの流れは?", "安全に楽しむポイント"];
+/**
+ * はじめての方へ(オーナーが用意した 1 枚の画像の中の質問 4 つ。画像の上に透明な押せる範囲を重ねる)。
+ * 質問は、ガイドのページ /activity/article/guide の同じ質問の答え(#q…)へ。「よくある質問」は、ガイドの質問の一覧(#faq)へ。
+ * 答えの番号は lib/activity/editorial.json の guide の並びから、質問の文で探す(見つからないときはガイドのページの先頭)。
+ */
+const GUIDE = [
+  { t: "持ち物は?", q: "持ち物は?" },
+  { t: "どんな服装がいい?", q: "どんな服装がいい?" },
+  { t: "ひとりでも参加できる?", q: "ひとりでも参加できる?" },
+  { t: "よくある質問", q: null },
+];
+const GUIDE_ALT = "はじめての体験が、きっと好きになる。 はじめてでも安心 持ち物は？ どんな服装がいい？ ひとりでも参加できる？ よくある質問";
 
 function Head({ n, t, en, sub, more }: { n: string; t: string; en: string; sub?: string; more?: boolean }) {
   return (
@@ -68,7 +80,7 @@ function Head({ n, t, en, sub, more }: { n: string; t: string; en: string; sub?:
 }
 
 /** 最初のページ(見本 84)。実在の店は「掲載中の体験」の札・エリアの札・動画・写真の格子だけ(架空の店で埋めない) */
-export default function Top({ shops, videos }: { shops: AShop[]; videos: Video[] }) {
+export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: Video[]; guide: EdGuide | null }) {
   // エリアの札の文字は、データから(その地方の都道府県と、店の数)
   const areaOf = (group: string) => {
     const g = REGION_GROUPS.find((x) => x.key === group)!;
@@ -82,7 +94,10 @@ export default function Top({ shops, videos }: { shops: AShop[]; videos: Video[]
     if (!s) return [];
     return [{ id: v.id, lines: twoLines(v.title, 12), dur: durationLabel(v.durationSec), poster: v.poster, src: v.src, title: v.title, shopName: s.name, shopHref: aLinks.shop(s.id) }];
   });
-  const guideQs = GUIDE.map((g, i) => ({ t: g, n: i + 1 }));
+  const guideQs = GUIDE.map((g) => {
+    const i = g.q ? (guide?.items.findIndex((x) => x.q === g.q) ?? -1) : -1;
+    return { t: g.t, to: !g.q ? aLinks.guideFaq : i >= 0 ? aLinks.guideAt(i + 1) : aLinks.guide };
+  });
   // 写真の格子(6 枚)は、掲載中の店の写真(店ごとに 2 枚目)
   const grid = pickShops(shops, PICKS.top).flatMap((s) => {
     const p = s.photoList[1] ?? s.photoList[0];
@@ -92,20 +107,12 @@ export default function Top({ shops, videos }: { shops: AShop[]; videos: Video[]
     <div className="apa-page apa-top">
       {/* ---- ヒーロー ---- */}
       <section className="t-hero" aria-label="マチノワ アクティビティ">
-        <i className="t-yel t-yel-1" />
         <i className="t-yel t-yel-2" />
         <i className="t-yel t-yel-3" />
         <i className="t-yel t-yel-4" />
-        <figure className="t-hero-photo apa-perf">
-          <img src={`${IMG}top-hero-lake.webp`} alt="" />
-          <figcaption className="apa-hand">
-            漕ぎ出そう、
-            <br />
-            いつもの毎日から。
-          </figcaption>
-          <Stamp id="hero" className="t-hero-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
+        <figure className="t-hero-photo">
+          <img src={`${IMG}top-hero-kayak.webp`} alt="漕ぎ出そう、いつもの毎日から。 ACTIVITY ACTIVITY" />
         </figure>
-        <Pine className="t-pine t-pine-a" />
 
         <div className="t-ticket">
           <div className="t-ticket-in">
@@ -134,20 +141,15 @@ export default function Top({ shops, videos }: { shops: AShop[]; videos: Video[]
         </div>
 
         {TILES.map((t) => (
-          <div key={t.k} className={`t-tile t-tile-${t.k}`}>
+          <Link key={t.k} href={t.to} className={`t-tile t-tile-${t.k}`}>
             <figure className="t-tile-ph">
-              <img src={`${IMG}${t.img}`} alt="" />
-              <figcaption className="apa-hand">
-                {t.cap.map((l) => (
-                  <span key={l}>{l}</span>
-                ))}
-              </figcaption>
+              <img src={`${IMG}${t.img}`} alt={t.alt} />
             </figure>
             <span className="t-tile-tab">
               <b>{t.n}</b>
               <i>{t.en}</i>
             </span>
-          </div>
+          </Link>
         ))}
       </section>
 
@@ -232,33 +234,21 @@ export default function Top({ shops, videos }: { shops: AShop[]; videos: Video[]
           <Link href={aLinks.guide} className="t-guide-btn">
             はじめてガイドを見る <IcArrow />
           </Link>
-          <i className="t-guide-yel" />
-          <img className="t-guide-img" src={`${IMG}top-guide.webp`} alt="" loading="lazy" />
-          <p className="t-guide-hand apa-hand">
-            はじめての
-            <br />
-            体験が、
-            <br />
-            きっと好きになる。
-          </p>
-          <span className="t-guide-sticker">
-            <span className="apa-hand">
-              はじめて
-              <br />
-              の方へ
-            </span>
-            <IcBook className="t-guide-sticker-ic" />
-          </span>
-          <ul className="t-guide-list">
-            {guideQs.map((g) => (
-              <li key={g.n}>
-                <Link href={aLinks.guideAt(g.n)}>
-                  <IcCheck />
-                  {g.t}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="t-guide-pic">
+            <div className="t-guide-m1">
+              <img src={`${IMG}top-hajimete.webp`} alt={GUIDE_ALT} loading="lazy" />
+            </div>
+            <div className="t-guide-m2">
+              <img src={`${IMG}top-hajimete.webp`} alt="" aria-hidden="true" loading="lazy" />
+              <ul className="t-guide-list">
+                {guideQs.map((g) => (
+                  <li key={g.t}>
+                    <Link href={g.to} aria-label={g.t} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

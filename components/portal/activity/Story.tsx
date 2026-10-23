@@ -37,6 +37,8 @@ export type StoryData = {
   /** 写真に重ねる手書きの文(2〜3 行) */
   hand?: string[];
   secs: StorySec[];
+  /** 質問の一覧(目次)。ガイドだけ。最初の画面の下に置き、id へ(最初のページの「よくある質問」の行き先) */
+  toc?: { id: string; heading: string; en: string; items: Array<{ label: string; href: string }> };
   facts?: Array<{ k: string; v: string }>;
   factsTitle?: string;
   /** 一番下の「あわせて読みたい」の札(店) */
@@ -126,6 +128,29 @@ export default function Story({ d }: { d: StoryData }) {
             <Pines className="y-pines" />
           </div>
         </section>
+
+        {/* ---- 質問の一覧(ガイドの目次。情報の出どころと同じ白い面・同じ行の並び) ---- */}
+        {d.toc?.items.length ? (
+          <section className="y-facts y-toc" id={d.toc.id} aria-labelledby={`${d.toc.id}-h`}>
+            <header className="y-sec-h">
+              <span className="y-icon">
+                <IcCheck />
+              </span>
+              <h2 id={`${d.toc.id}-h`}>{d.toc.heading}</h2>
+              <small>{d.toc.en}</small>
+            </header>
+            <ul className="y-src-list">
+              {d.toc.items.map((x) => (
+                <li key={x.href}>
+                  <Link href={x.href}>
+                    <IcArrow />
+                    {x.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         {/* ---- 節(旗の番号 + 白い面。文と写真は左右交互) ---- */}
         {d.secs.map((s, i) => {

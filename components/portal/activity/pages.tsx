@@ -42,10 +42,10 @@ async function loadAll() {
 
 /** 最初のページ(/activity) */
 export async function ActivityTopPage() {
-  const { shops, videos } = await loadAll();
+  const { shops, videos, editorial } = await loadAll();
   return (
     <ActivityFrame>
-      <Top shops={shops} videos={videos} />
+      <Top shops={shops} videos={videos} guide={editorial.guide} />
     </ActivityFrame>
   );
 }
