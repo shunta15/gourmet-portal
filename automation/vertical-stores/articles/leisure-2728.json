@@ -1,0 +1,428 @@
+{
+  "key": "leisure-2728",
+  "headline": "沖縄県宜野座村のマリンショップ。シュノーケル、カヤック、体験ダイビング、洞窟探検などを案内していて、2歳から参加できるメニューがある",
+  "lede": "沖縄県国頭郡宜野座村にある「ハピネスマリン倶楽部」です。公式サイトでは、那覇空港から車で1時間の沖縄本島北部(東海岸)にあり、1グループ貸切制のビーチで遊ぶマリンショップと案内されています。シュノーケル、カヤック、体験ダイビング、SUPのレンタル、バナナボートなどのマリンスポーツ、洞窟探検ツアーを扱っています。",
+  "sections": [
+    {
+      "heading": "場所と営業の時間",
+      "body": "住所は沖縄県国頭郡宜野座村字松田1048-2、電話は090-3016-2723です。営業時間は8時から18時で、定休日は不定休です。沖縄自動車道の宜野座から車で約4分、国道329号線沿いで、駐車場は30台分あります。"
+    },
+    {
+      "heading": "海のメニュー",
+      "body": "シュノーケルとカヤックは、どちらも2歳から参加でき、集合から解散まで約2時間です。体験ダイビングは10歳から60歳までが対象で、約2時間、器材とウェットスーツの貸し出しがあります。SUPは60分のレンタルで、2歳から参加できます。マリンスポーツは、バナナボート、マーブル、ハーフパイプ、ブッパ、Gフォースのほか、12歳からのウェイクボードがあり、初心者は陸上で説明を受けられます。"
+    },
+    {
+      "heading": "洞窟探検とセットメニュー",
+      "body": "洞窟探検ツアーは5歳から参加できます。シュノーケルやカヤックと組み合わせるメニューは約3時間、SUPと組み合わせるメニューは約2.5時間です。シュノーケル、カヤック、SUPにバナナボートなどを組み合わせる半日のセットメニューもあり、バーベキューをオプションで追加できます。"
+    },
+    {
+      "heading": "参加の前に",
+      "body": "集合は開催時間の30分前で、水着は先に着て、バスタオルは各自で持っていきます。温水が出るシャワー施設があり、メニュー中に撮った写真はデータで受け取れます。飲酒している人、総入れ歯、てんかん、妊娠中の人は参加できません。クレジットカードが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "シュノーケルツアー",
+      "minutes": 120
+    },
+    {
+      "name": "カヤックアドベンチャーツアー",
+      "minutes": 120
+    },
+    {
+      "name": "体験ダイビング",
+      "minutes": 120
+    },
+    {
+      "name": "洞窟探検ツアー",
+      "minutes": 120
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 16
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 40
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの名称は「ハピネスマリン倶楽部」",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "ハピネスマリン倶楽部",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの業種の表示は「ツアー業者」",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "ツアー業者",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの住所は沖縄県国頭郡宜野座村松田1048-2",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "〒904-1301 沖縄県国頭郡宜野座村松田１０４８−２",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの電話番号は090-3016-2723",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "090-3016-2723",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(hmcginoza.jp)",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "hmcginoza.jp",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの営業時間は9時から17時",
+      "source": "https://maps.google.com/?cid=14999282619977063535",
+      "quote": "営業中 · 営業終了: 17:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの店舗名はハピネスマリン倶楽部",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "店舗名 ハピネスマリン倶楽部",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの住所は〒904-1301 沖縄県国頭郡宜野座村字松田1048-2",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "〒904-1301 沖縄県国頭郡宜野座村字松田1048-2",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの電話番号は090-3016-2723(Google マップと同じ)",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "電話 090-3016-2723",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "営業時間は8:00～18:00",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "営業時間 8:00～18:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "定休日 不定休",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "駐車場は30台",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "駐車場 有り（30台）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "沖縄自動車道の宜野座から車で約4分、国道329号線沿い",
+      "source": "https://www.hmcginoza.jp/shop",
+      "quote": "沖縄自動車道 宜野座から車で約4分。国道329号線沿い",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "那覇空港から車で1時間、沖縄本島北部(東海岸)の宜野座村にある",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "沖縄本島北部（東海岸）にある宜野座村（ぎのざそん）那覇空港から車で1時間の場所にあります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "プライバシーのあるビーチを使い、1グループ貸切制",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "ワングループ貸切制なので思いっきり楽しめます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ダイビング・シュノーケル・カヤックなどを案内している",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "沖縄でカヤック・ダイビング・シュノーケル ウエイクボード・バナナボート等なら",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "2歳から親子で楽しめるシュノーケルツアー",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "2歳から親子で楽しめる シュノーケルツアー",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "シュノーケルの開催時間は9:00・11:00・13:00・15:00",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "開催時間 9:00・11:00・13:00・15:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "シュノーケルは集合から解散まで約2時間",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "所要時間 集合～解散まで約2時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "参加対象は2歳から",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※参加者対象者年齢：2歳～元気で健康な方。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "開催時間の30分前に集合",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※開催時間の30分前に集合してください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バスタオルは各自持参",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※バスタオルは各自持参でお願いします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "温水が出るシャワー施設がある",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※温水が出るシャワー施設もあります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "メニュー中に撮影した写真をデータで渡す",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※メニュー中に、撮影した写真のデータは無料で差し上げています。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "オプションでバーベキューができる",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※オプションでバーベキューもできますよ！",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "クレジットカードが使える",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "※料金はクレジットカードのお支払いOKです。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "水着はあらかじめ着用して参加する",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "水着はあらかじめ着用してご参加ください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "飲酒している人は参加できない",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "飲酒されている方は、固くお断りいたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "総入れ歯・てんかん・妊娠中の人は参加できない",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "総入れ歯、てんかん、妊娠中の方の参加はお断りいたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "2歳から親子で楽しめるカヤックアドベンチャーツアー",
+      "source": "https://www.hmcginoza.jp/kayak",
+      "quote": "2歳から親子で楽しめる カヤックアドベンチャーツアー",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "カヤックは集合から解散まで約2時間",
+      "source": "https://www.hmcginoza.jp/kayak",
+      "quote": "所要時間 集合～解散まで約2時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングがある",
+      "source": "https://www.hmcginoza.jp/diving",
+      "quote": "気軽に楽しめる体験ダイビング",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの対象は10歳から60歳",
+      "source": "https://www.hmcginoza.jp/diving",
+      "quote": "※参加者対象者：10歳～60才で元気な方。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは集合から解散まで約2時間",
+      "source": "https://www.hmcginoza.jp/diving",
+      "quote": "所要時間 集合～解散まで約2時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの器材・ウェットスーツは貸し出す",
+      "source": "https://www.hmcginoza.jp/diving",
+      "quote": "※器材・ウエットスーツは無料レンタルです。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "SUPのレンタルは60分",
+      "source": "https://www.hmcginoza.jp/sup",
+      "quote": "SUP 1本 （60分）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "SUPレンタルの対象は2歳から",
+      "source": "https://www.hmcginoza.jp/sup",
+      "quote": "※参加者対象者年齢：2歳～元気で健康な方。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バナナボート・マーブル・ハーフパイプのマリンスポーツがある",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "バナナボート、マーブル、ハーフパイプをご用意しております",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ウェイクボードはスクールから経験者まで",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "ウェイクボードは、スクールから経験者まで楽しめます",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ウェイクボードの対象は12歳から",
+      "source": "https://www.hmcginoza.jp/marine",
+      "quote": "※参加者対象者年齢：12歳～元気で健康な方。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ウェイクボードは初心者に陸上で説明する",
+      "source": "https://www.hmcginoza.jp/marine",
+      "quote": "※初心者の方は陸上でしっかりレクチャーしますので安心してください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ブッパがある",
+      "source": "https://www.hmcginoza.jp/marine",
+      "quote": "ブッパ 料金",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Gフォースがある",
+      "source": "https://www.hmcginoza.jp/marine",
+      "quote": "Gフォース 料金",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "洞窟探検ツアーは5歳から",
+      "source": "https://www.hmcginoza.jp/adventure",
+      "quote": "※参加者対象者年齢：5歳～元気で健康な方。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "洞窟探検ツアーは集合から解散まで約2時間",
+      "source": "https://www.hmcginoza.jp/adventure",
+      "quote": "開催時間 9:00・10:00・11:00・13:00・14:00・15:00 所要時間 集合～解散まで約２時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "洞窟探検ツアーとシュノーケルの組み合わせは約3時間",
+      "source": "https://www.hmcginoza.jp/adventure",
+      "quote": "◎洞窟探検ツアー◎シュノーケル 料金 ◎子ども（5～9歳）Web価格￥6,500- ◎大人 （10歳～）Web価格￥8,500- オプションでBBQも追加できます。 開催時間 9:00・10:00・11:00・13:00・14:00・15:00 所要時間 集合～解散まで約３時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "洞窟探検ツアーとカヤックの組み合わせは約3時間",
+      "source": "https://www.hmcginoza.jp/adventure",
+      "quote": "◎洞窟探検ツアー◎カヤック 料金 ◎子ども（5～9歳）Web価格￥6,500- ◎大人 （10歳～） Web価格￥8,500- オプションでBBQも追加できます。 開催時間 9:00・10:00・11:00・13:00・14:00・15:00 所要時間 集合～解散まで約３時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "洞窟探検ツアーとSUPの組み合わせは約2.5時間",
+      "source": "https://www.hmcginoza.jp/adventure",
+      "quote": "◎洞窟探検ツアー◎SUP 料金 ◎子ども（5～9歳）Web価格￥6,000- ◎大人 （10歳～） Web価格￥7,000- オプションでBBQも追加できます。 開催時間 9:00・10:00・11:00・13:00・14:00・15:00 所要時間 集合～解散まで約2.5時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "半日のセットメニュー(シュノーケル+バナナボートなど)がある",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "気軽に楽しめる！半日満喫マリン 【シュノーケル】セットメニュー",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "シュノーケルのセットメニューは約2.5時間",
+      "source": "https://www.hmcginoza.jp/snorkel",
+      "quote": "開催時間 9:00便・10:00便・11:00便 13:00便・14:00便・15:00便 所要時間 集合～解散まで約2.5時間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "鍾乳洞探検ツアーがある",
+      "source": "https://www.hmcginoza.jp/",
+      "quote": "鍾乳洞探検ツアー 異次元の世界へタイムスリップ",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "同じ敷地にヒーピィーキャンプ場がある(予約はホームページ)",
+      "source": "https://www.hmcginoza.jp/lodging",
+      "quote": "※ホームページから予約を入れて下さい",
+      "checkedAt": "2026-10-23"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://www.hmcginoza.jp/"
+    },
+    {
+      "label": "公式サイト(店舗案内)",
+      "url": "https://www.hmcginoza.jp/shop"
+    },
+    {
+      "label": "公式サイト(シュノーケル)",
+      "url": "https://www.hmcginoza.jp/snorkel"
+    },
+    {
+      "label": "公式サイト(カヤック)",
+      "url": "https://www.hmcginoza.jp/kayak"
+    },
+    {
+      "label": "公式サイト(ダイビング)",
+      "url": "https://www.hmcginoza.jp/diving"
+    },
+    {
+      "label": "公式サイト(SUP)",
+      "url": "https://www.hmcginoza.jp/sup"
+    },
+    {
+      "label": "公式サイト(マリンスポーツ)",
+      "url": "https://www.hmcginoza.jp/marine"
+    },
+    {
+      "label": "公式サイト(洞窟探検ツアー)",
+      "url": "https://www.hmcginoza.jp/adventure"
+    },
+    {
+      "label": "公式サイト(セットメニュー)",
+      "url": "https://www.hmcginoza.jp/set"
+    },
+    {
+      "label": "公式サイト(キャンプ場)",
+      "url": "https://www.hmcginoza.jp/lodging"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14999282619977063535"
+    }
+  ],
+  "placeOverride": {
+    "hoursByDay": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    },
+    "holidays": "不定休"
+  },
+  "notes": "【種類】マリンショップ(おでかけ→体験・アクティビティ・海・川)。シュノーケル・カヤック・体験ダイビング・SUP・洞窟探検の海の店なので category は sea-river。【同じ店の確認】Google マップの住所(〒904-1301 沖縄県国頭郡宜野座村松田1048-2。公式サイトは「字」つき)・電話(090-3016-2723)・ウェブサイト(hmcginoza.jp)が公式サイトの店舗案内と一致。cid https://maps.google.com/?cid=14999282619977063535 を開くと同じ店の画面になる。店名は一覧「ハピネスマリン倶楽部」＝Google マップ＝公式サイト(完全一致)。【営業時間】公式サイトの店舗案内は 8:00～18:00・定休日 不定休。Google マップは毎日9:00-17:00と表示していて食い違うため、店データは公式サイトの表記を使った(placeOverride.hoursByDay・holidays)。gbp の place.hours には Google マップの表示を残してある。【食い違い】公式サイトのトップの受付時間は 8:00～20:00(電話の受付時間。営業時間とは別として扱った)。【書かなかったこと】各メニュー・レンタル・キャンプ場の金額、Web価格、オプション・クレジットカードごとの条件、「リピーター率No.1」「お得」「絶叫系」「プレゼント」などの語、お客様の声(Google・公式サイトの口コミ・星)、スタッフの紹介・資格・ニックネーム、ヒーピィーキャンプ場の中身(宿泊施設として別扱い。予約はホームページだけ・人数制限ありと案内されているが、変わりやすいので書かない)、漢那ビーチ(準備中の表示)、Instagram。【確かめていないこと】当日の営業・催行(天候・海況)、空き状況、洞窟(鍾乳洞)の場所の詳細、ビーチ・シャワーの利用条件。【写真】すべて公式サイト(hmcginoza.jp)の写真。参加者が笑顔で写る写真・ダイバーの正面の写真・スタッフの写真・文字入りのチラシは使わない。使った写真は、海面で泳ぐ人を水中から見上げた写真(顔は見えない)、集合の場所に当たる海辺の芝生の広場、ビーチ内のテントサイトの3枚。画像が小さい(最大幅は646〜1040ピクセル)。"
+}

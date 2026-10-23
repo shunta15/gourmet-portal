@@ -1,0 +1,33 @@
+{
+  "key": "leisure-2728",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2728/hero.jpg",
+      "imageUrl": "https://www.hmcginoza.jp/wp-content/uploads/P9060041-e1552045259707.jpg",
+      "pageUrl": "https://www.hmcginoza.jp/",
+      "what": "海面を泳ぐ2人を、水中から見上げた写真。サンゴとイソギンチャク、クマノミ、黄色や黒の魚が写っている",
+      "width": 646,
+      "height": 610,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2728/p1.jpg",
+      "imageUrl": "https://www.hmcginoza.jp/wp-content/uploads/005.jpg",
+      "pageUrl": "https://www.hmcginoza.jp/lodging",
+      "what": "芝生の広場に車とテントが並び、道路の向こうに海岸が見える海辺の広場",
+      "width": 1040,
+      "height": 651,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2728/p2.jpg",
+      "imageUrl": "https://www.hmcginoza.jp/wp-content/uploads/78731293_204081173968797_8334421907312207608_n.jpg",
+      "pageUrl": "https://www.hmcginoza.jp/",
+      "what": "木立の下に木のテーブルとベンチがあり、奥にテントが張られているビーチ内のテントサイト",
+      "width": 640,
+      "height": 480,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(hmcginoza.jp)の写真3枚(Google マップの写真・インスタグラムの投稿は使わない)。参加者が笑顔で写る写真・ダイバーの正面の写真・スタッフの写真・文字入りのチラシは除いた。画像が小さい(最大幅は646〜1040ピクセル)。"
+}
