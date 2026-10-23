@@ -90,8 +90,7 @@
   --vk-nx: 305; /* ナビの左端 */
   --vk-nfs: 9.8; /* ナビの字 */
   --vk-ngap: 22; /* ナビの間隔 */
-  --vk-rx: 24; /* 右端の余白(最初のページの「〇〇を探す →」の右の余白) */
-  --vk-ctaw: max(96px, calc(var(--vk-cta-n, 92) * var(--u))); /* 最初のページの「〇〇を探す →」の幅 */
+  --vk-rx: 24; /* 右端の余白(スマホのハンバーガーの右) */
   --vk-cut: max(65%, calc(max(0px, (100% - 1600px) / 2) + var(--vk-nx) * var(--u) + var(--vk-ncc, 40) * max(11px, calc(var(--vk-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
   position: relative;
   font-size: var(--vk-fs-m);
@@ -140,7 +139,7 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-shell[data-vk-page="top"] .vk-head, .vk-shell[data-vk-page="search"] .vk-head { margin-bottom: calc(var(--vk-hh) * -1); }
 .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) { background: transparent; border-bottom-color: transparent; color: #fff; }
 .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) .vk-head-logo { color: var(--vk-ink); text-shadow: none; }
-.vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: linear-gradient(90deg, rgb(var(--vk-paper-rgb) / 0.98) 0, rgb(var(--vk-paper-rgb) / 0.98) var(--vk-cut), transparent var(--vk-cut)); border-bottom-color: transparent; }
 .vk-shell[data-vk-page="shop"] .vk-head { background: rgb(var(--vk-night-rgb) / 0.98); color: var(--vk-onnight); border-bottom-color: rgba(255, 255, 255, 0.06); }
 .vk-shell[data-vk-page="article"] .vk-head { border-bottom-color: rgb(var(--vk-shade-rgb) / 0.1); }
@@ -165,13 +164,6 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-hi:hover { opacity: 0.7; }
 .vk-hi-i { display: block; width: 22px; height: 22px; }
 .vk-hi-i svg { width: 100%; height: 100%; display: block; }
-/* 最初のページの右端「〇〇を探す →」(枠だけのボタン) */
-.vk-head-cta { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; justify-content: center; gap: calc(9 * var(--u)); width: var(--vk-ctaw); height: max(30px, calc(29 * var(--u))); border: 1px solid currentColor; border-radius: 999px; font-size: max(11px, calc(8.8 * var(--u))); font-weight: 500; letter-spacing: 0.1em; color: inherit; background: rgba(15, 20, 20, 0.28); backdrop-filter: blur(3px); transition: background 0.3s, color 0.3s, border-color 0.3s; }
-.vk-head-cta svg { width: calc(11 * var(--u)); min-width: 11px; height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
-.vk-head-cta:hover { background: rgba(15, 20, 20, 0.5); }
-.vk-head-cta:hover svg { transform: translateX(calc(3 * var(--u))); }
-.vk-head.is-scrolled .vk-head-cta { background: transparent; border-color: rgb(var(--vk-ink-rgb) / 0.45); }
-.vk-head.is-scrolled .vk-head-cta:hover { background: var(--vk-deep); color: #fff; border-color: var(--vk-deep); }
 /* メニューの開閉(三本線 → 閉じる) */
 .vk-hi[aria-expanded="true"] .vk-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
 .vk-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgb(var(--vk-paper-rgb) / 0.99); color: var(--vk-text); border: 1px solid var(--vk-line); box-shadow: var(--vk-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
@@ -317,10 +309,10 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
   /* 帯は全ページ、地のある帯(最初・探すも重ねない)。店の紹介だけ濃い面 */
   .vk-shell[data-vk-page="top"] .vk-head, .vk-shell[data-vk-page="search"] .vk-head { margin-bottom: 0; }
   .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled), .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: rgb(var(--vk-paper-rgb) / 0.98); color: var(--vk-text); border-bottom-color: rgb(var(--vk-shade-rgb) / 0.08); }
-  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta) { text-shadow: none; }
+  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi) { text-shadow: none; }
   .vk-head-in { width: 100%; }
   .vk-head-logo { left: 16px; }
-  .vk-head-nav, .vk-head-cta { display: none; }
+  .vk-head-nav { display: none; }
   .vk-head-ic { right: 6px; }
   .vk-hi { justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; }
   .vk-drawer { left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
