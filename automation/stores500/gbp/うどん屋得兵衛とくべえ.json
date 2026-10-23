@@ -1,0 +1,22 @@
+{
+  "name": "うどん屋 得兵衛（とくべえ）",
+  "address": "京都府綾部市大島町沓田２７−４",
+  "lat": 35.3027853,
+  "lng": 135.2334419,
+  "category": "うどん屋",
+  "hours": {
+    "月": "11:30–14:30, 17:30–20:30",
+    "火": "11:30–14:30, 17:30–20:30",
+    "水": "11:30–14:30, 17:30–20:30",
+    "木": "定休日",
+    "金": "11:30–14:30, 17:30–20:30",
+    "土": "11:30–14:30, 17:30–20:30",
+    "日": "11:30–14:30, 17:30–20:30"
+  },
+  "phone": "0773-42-6141",
+  "website": "https://udonyatokubee.com/?utm_medium=referral&utm_source=google&utm_campaign=mm&utm_content=hp",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=8338364973557206501",
+  "fetchedAt": "2026-10-23T18:23:43.943Z"
+}

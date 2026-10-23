@@ -1,0 +1,22 @@
+{
+  "name": "炭焼き日本料理三ツ井",
+  "address": "岡山県岡山市北区柳町１丁目１−６ 116ビル １F",
+  "lat": 34.6600914,
+  "lng": 133.9200073,
+  "category": "会席・懐石料理店",
+  "hours": {
+    "月": "12:00–14:00, 17:00–22:00",
+    "火": "12:00–14:00, 17:00–22:00",
+    "水": "定休日",
+    "木": "12:00–14:00, 17:00–22:00",
+    "金": "12:00–14:00, 17:00–22:00",
+    "土": "12:00–14:00, 17:00–22:00",
+    "日": "12:00–14:00, 17:00–22:00"
+  },
+  "phone": "050-8883-0832",
+  "website": "https://sumiyaki-mitsui.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12936915443276532285",
+  "fetchedAt": "2026-10-23T18:11:36.065Z"
+}

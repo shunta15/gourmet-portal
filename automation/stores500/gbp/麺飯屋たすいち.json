@@ -1,0 +1,22 @@
+{
+  "name": "麺飯屋たすいち",
+  "address": "新潟県柏崎市安田２０７５−４",
+  "lat": 37.3452879,
+  "lng": 138.6110057,
+  "category": "ラーメン屋",
+  "hours": {
+    "月": "定休日",
+    "火": "11:00–14:30",
+    "水": "11:00–14:30",
+    "木": "11:00–14:30",
+    "金": "11:00–14:30",
+    "土": "11:00–14:30, 17:00–19:30",
+    "日": "定休日"
+  },
+  "phone": "0257-41-4046",
+  "website": "https://www.instagram.com/menhanyatasu1?igsh=MWluZTA1MnFmNDQ1Mw==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12286612880953570162",
+  "fetchedAt": "2026-10-23T18:24:25.102Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "新中国料理 大三元",
+  "address": "山梨県笛吹市石和町市部７８９−９８",
+  "lat": 35.650787,
+  "lng": 138.632533,
+  "category": "中華料理店",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "11:30–14:30, 17:00–22:00",
+    "木": "11:30–14:30, 17:00–22:00",
+    "金": "11:30–14:30, 17:00–22:00",
+    "土": "11:30–14:30, 17:00–22:00",
+    "日": "11:30–14:30, 17:00–22:00"
+  },
+  "phone": "055-262-6534",
+  "website": "https://nowvelle-chinois-daisangen.com/?utm_medium=referral&utm_source=google&utm_campaign=mm&utm_content=hp",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16256939708382737077",
+  "fetchedAt": "2026-10-23T18:36:49.630Z"
+}
