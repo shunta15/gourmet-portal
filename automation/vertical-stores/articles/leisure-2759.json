@@ -1,0 +1,367 @@
+{
+  "key": "leisure-2759",
+  "headline": "沖縄県石垣市のツアーショップ。幻の島(浜島)への上陸と、青の洞窟・ウミガメのシュノーケリングを、送迎つきで案内している",
+  "lede": "沖縄県石垣市登野城にある「SeaChan石垣島」(シーチャン)です。公式サイトでは、幻の島(浜島)に上陸するツアーと、青の洞窟・ウミガメのシュノーケリングツアーの専門店と案内されています。島への上陸は泳がなくても参加でき、シュノーケリングは初心者にも講習をおこなうと案内されています。",
+  "sections": [
+    {
+      "heading": "場所と営業の時間",
+      "body": "住所は沖縄県石垣市登野城653-5、電話は080-1225-0665です。営業時間は8時から18時で、受付は年中無休と案内されています。集合場所はツアーによって異なります。送迎は、西はフサキリゾートホテル、東はANAインターコンチネンタルホテル、北はアートホテルまでの範囲で受けています。"
+    },
+    {
+      "heading": "幻の島のツアー",
+      "body": "幻の島(浜島)は、竹富島と小浜島の間にあり、石垣島から西へ約10kmの無人島で、潮の満ち引きで姿を現します。石垣島から小さな船で片道約20〜30分です。上陸のみのツアーは0歳から参加でき、約2時間で1日4便です。シュノーケリングを加えるツアーは0〜65歳が対象です。島での自由時間は約60分で、泳がない人も参加できますが、まったく濡れないわけではないため、濡れても良い服装で参加します。船には日よけテントとトイレがあります。"
+    },
+    {
+      "heading": "青の洞窟とウミガメのツアー",
+      "body": "青の洞窟探検とウミガメのシュノーケリングは、3歳から65歳までが参加でき、約2.5時間で1日4便です。洞窟は石垣空港から車で約30分、川平湾・米原方面の北西にあります。船酔いの心配がないビーチエントリーで、シュノーケルの器材3点セットとライフジャケットを用意していて、11月から4月末はウェットスーツの貸し出しもあります。予約のときに泳ぎの得意・不得意を伝え、グループ分けをします。ウミガメは自然の生き物なので、会えない場合もあります。"
+    },
+    {
+      "heading": "参加の前に",
+      "body": "持ち物は、サンダル、バスタオル、着替えなどです。1名から予約でき、雨でも開催しますが、波や風が強すぎるときは中止になります。5歳未満の子には浮き輪や箱メガネが用意され、保護者が泳ぎが得意なことやシュノーケルの経験者であることが条件です。度付きのレンズもあり、予約のときに申し出ます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "幻の島(浜島)上陸のみ",
+      "minutes": 120
+    },
+    {
+      "name": "幻の島＋シュノーケルツアー",
+      "minutes": 120
+    },
+    {
+      "name": "青の洞窟探検＆星砂探し ウミガメシュノーケリング",
+      "minutes": 150
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 41
+    },
+    {
+      "tag": "子連れ",
+      "factIndex": 31
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 17
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの名称は「SeaChan石垣島」",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "SeaChan石垣島",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの業種の表示は「ツアー業者」",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "ツアー業者",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの住所は沖縄県石垣市登野城653-5",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "〒907-0004 沖縄県石垣市登野城６５３−５",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの電話番号は080-1225-0665",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "080-1225-0665",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(seachan-ishigakijima.com)",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "seachan-ishigakijima.com",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの営業時間は19時まで",
+      "source": "https://maps.google.com/?cid=14077900834792966097",
+      "quote": "営業中 · 営業終了: 19:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの住所・営業時間・電話",
+      "source": "https://seachan-ishigakijima.com/company/",
+      "quote": "〒907-0004 石垣市登野城653-5 営業時間：8：00〜18：00 TEL：080-1225-0665",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "電話の受付は8:00〜18:00、年中無休",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "受 付 8：00 〜 18：00（年中無休）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "店名はSeaChan石垣島(シーチャン)",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "SeaChan石垣島（シーチャン）です",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "幻の島上陸と青の洞窟・ウミガメシュノーケリングの専門店",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "【幻の島上陸】＆【青の洞窟・ウミガメシュノーケリング】専門店",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "沖縄県石垣島にある幻の島・青の洞窟ツアー専門店",
+      "source": "https://seachan-ishigakijima.com/company/",
+      "quote": "SeaChan(シーチャン)石垣島は沖縄県石垣島にある幻の島・青の洞窟ツアー専門店です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "2006年に離島でショップを運営、2015年に幻の島上陸ツアーを石垣島で初開催しショップを新たに立ち上げた",
+      "source": "https://seachan-ishigakijima.com/company/",
+      "quote": "2006年に離島にてショップを運営後、2015年にお客様のお声から生まれた 幻の島上陸ツアーを石垣島で初開催しショップを新たに立ち上げました。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ツアーによって集合場所が異なる",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "ツアーによって集合場所が異なります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "送迎の範囲は西はフサキリゾートホテル、東はANAインターコンチネンタルホテル、北はアートホテル",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "以下の範囲内であれば送迎可能です。 西側：フサキリゾートホテル 東側：ANAインターコンチネンタルホテル 北側：アートホテル",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "1名から予約できる",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "1名様からご予約可能です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "持ち物はサンダル、バスタオル、着替えなど",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "サンダル、バスタオル、着替え等です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "雨でも開催し、波や風が強すぎるときは中止",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "はい。開催致します。 余程の波や風が強すぎるとお客様の安全確保の為中止します。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "雨だけならツアーに影響はない",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "雨のみの場合全くツアーに影響はございません。ご安心ください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "船に日よけテントがある",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "船に日よけテントはありますか？ はい、あります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "船にトイレがある",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "船にトイレはありますか？ はい、あります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "5歳未満の子には浮き輪・箱メガネを用意している",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "5才未満のお子様には、無料で浮いて居られる浮き輪・箱メガネをご用意しております。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "幼児の参加は保護者が泳ぎが得意なことやシュノーケル経験者であることが条件",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "保護者の方が遊泳が得意である事やシュノーケルの経験者である事を条件としております。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "度付きレンズがあり、予約時に申し出る",
+      "source": "https://seachan-ishigakijima.com/faq/",
+      "quote": "度付きレンズございます。 必要な方はご予約時にお申し出下さい。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "幻の島は竹富島と小浜島の間、石垣島から西へ約10kmの無人島",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "竹富島と小浜島の間にあり石垣島から西へ約10km程度の場所にある無人島です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "潮の満ち引きで姿を現す",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "潮の満ち引きにより姿を現すことで幻の島と呼ばれていますよ。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "石垣島から船で片道約20〜30分",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "干潮時にだけ現れる幻の島は、石垣島から船で片道約20分～30分で到着します。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "小さい船で向かう",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "大きい船では幻の島の近くまでは行けないので、小さい船で向かいます",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "泳がなくても参加できるが、全く濡れないことはない",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "泳がない方もご参加できますが、ツアー中は、全く濡れないことはありません。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "濡れても良い格好で参加する",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "なので濡れても良い格好でご参加ください",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "浅瀬でシュノーケルができ、初心者も挑戦しやすい",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "浅瀬でのシュノーケルなので初心者の方でもTRYしやすいです。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "島での自由時間は約60分",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "フリータイム(滞在時間)は約60分",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "お子様連れでも参加できる",
+      "source": "https://seachan-ishigakijima.com/phantomisland/",
+      "quote": "はい、お子様連れでも安心してご参加いただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "上陸のみのツアーは0歳から",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "0歳～元気なご年配の方まで",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "上陸のみのツアーは約2時間、1日4便",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "約2時間（1日4便・送迎無料）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "幻の島+シュノーケルのツアーは0〜65歳",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "0～65歳（66歳〜要相談）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "幻の島+シュノーケルのツアーの名称",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "幻の島＋シュノーケルツアー",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "青の洞窟のツアーは3〜65歳",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "3～65歳（体力・足腰の丈夫な方◎）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "青の洞窟のツアーは約2.5時間、1日4便",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "約2.5時間（1日4便・送迎無料）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "青の洞窟はビーチエントリーで船酔いの心配がなく、初心者も参加できる",
+      "source": "https://seachan-ishigakijima.com/",
+      "quote": "青の洞窟探検＆星砂探し│ウミガメシュノーケリング 大人気のウミガメ高遭遇率＆船酔い心配なしのビーチエントリー！ 初心者の方も大歓迎です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "青の洞窟は石垣空港から車で約30分",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "石垣空港から約15km、車で約30分。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "川平湾・米原方面の北西にある",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "川平湾・米原方面の北西位置にあります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "初心者にも丁寧に講習する",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "初心者の方でも丁寧に講習いたしますのでご安心ください♪",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "シュノーケル器材3点セットとライフジャケットを用意し、11〜4月末はウェットスーツを貸し出す",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "シュノーケル器材3点セット無料、ライフジャケット無料、ウェットスーツ(11月～4月末)貸出しております。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "予約時に泳ぎの得意・不得意を聞いてグループ分けする",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "当ショップでは予約時に泳ぎについて得意か不得意かを事前にご報告いただき、グループ分けして対応いたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ウミガメは自然の生き物なので見られない場合もある",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "ウミガメと出会える確率は現段階では高いです。ですが、自然の生き物なので観られない場合もあります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "青の洞窟ツアーの年齢は3〜65歳",
+      "source": "https://seachan-ishigakijima.com/blue_cave/",
+      "quote": "3歳～65歳までご参加可とさせて頂いております。",
+      "checkedAt": "2026-10-23"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://seachan-ishigakijima.com/"
+    },
+    {
+      "label": "公式サイト(ショップ紹介)",
+      "url": "https://seachan-ishigakijima.com/company/"
+    },
+    {
+      "label": "公式サイト(幻の島とは？)",
+      "url": "https://seachan-ishigakijima.com/phantomisland/"
+    },
+    {
+      "label": "公式サイト(青の洞窟とは？)",
+      "url": "https://seachan-ishigakijima.com/blue_cave/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://seachan-ishigakijima.com/faq/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14077900834792966097"
+    }
+  ],
+  "placeOverride": {
+    "hoursByDay": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    }
+  },
+  "notes": "【種類】ツアーショップ(おでかけ→体験・アクティビティ・海・川)。島への上陸・シュノーケリングの海のツアーなので category は sea-river。【同じ店の確認】Google マップの住所(〒907-0004 沖縄県石垣市登野城653-5)・電話(080-1225-0665)・ウェブサイト(seachan-ishigakijima.com)が公式サイトのショップ紹介のページ・トップと一致。cid https://maps.google.com/?cid=14077900834792966097 を開くと同じ店の画面になる。店名は一覧「SeaChan(シーチャン)石垣島」＝Google マップ「SeaChan石垣島」＝公式サイト「SeaChan石垣島（シーチャン）」。【営業時間】公式サイトのショップ紹介・トップは 8:00〜18:00(受付は年中無休)。Google マップは毎日9:00-19:00と表示していて食い違うため、店データは公式サイトの表記を使った(placeOverride.hoursByDay)。gbp の place.hours には Google マップの表示を残してある。【集合場所と住所】集合場所はツアーごとに異なり(公式サイトのトップに地図が3つある)、記事の住所は登録のショップ(受付)の所在地。Google マップの印の周りは住宅の多い区画で、店先の看板・外観は確認していない(個人宅兼用の可能性を否定できないため、要オーナー確認)。【書かなかったこと】各ツアー・レンタル・貸切の金額、送迎・器材・写真・ドローン撮影の「無料」の語、「No.1」「第1位」「人気」「絶景」「おすすめ」「高遭遇率」「11年連続」「約11万人が参加」などの語(公式サイトの表現は使わない)、Google の口コミ・星、スタッフの紹介、星空ナイトジャングルツアー(夜のツアー。条件の確認が足りないため載せない)、完全貸切プランの金額、予約サイト(jcation)の中身、ブログ・コラム、Instagram・Facebook・TikTok。【確かめていないこと】当日の催行(天候・潮位・海況。公式サイトも中止基準は非公開)、空き状況、ウミガメに会える確率の実数(公式サイトは「高い」とだけ)、集合場所ごとの住所。【食い違い】なし(青の洞窟ツアーの年齢は、トップ・青の洞窟のページとも3〜65歳)。【写真】すべて公式サイト(seachan-ishigakijima.com)の写真。色の加工が強い宣伝用の画像だが、人物が主役の写真(笑顔の参加者・スタッフ・ジャンプの写真)・文字入りのバナーは使わない。使った写真は、幻の島の砂州と海、島に着けた小さな船、海に立つ人の後ろ姿(顔は見えない)、ウミガメ2枚。元はPNGなのでJPEGに変換した。"
+}
