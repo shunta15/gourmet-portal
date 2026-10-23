@@ -1,0 +1,51 @@
+{
+  "key": "leisure-2759",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2759/hero.jpg",
+      "imageUrl": "https://seachan-ishigakijima.com/wp-content/uploads/2025/11/phantomisland_01_seachan.png",
+      "pageUrl": "https://seachan-ishigakijima.com/phantomisland/",
+      "what": "青空の下、白い砂州と遠くの島影が見える、透きとおった浅い海",
+      "width": 1068,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2759/p1.jpg",
+      "imageUrl": "https://seachan-ishigakijima.com/wp-content/uploads/2025/11/phantomisland_03_seachan.png",
+      "pageUrl": "https://seachan-ishigakijima.com/phantomisland/",
+      "what": "青い海の浅瀬に、屋根つきの小さな船が着けてある",
+      "width": 1068,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2759/p2.jpg",
+      "imageUrl": "https://seachan-ishigakijima.com/wp-content/uploads/2025/11/bluecave_03_seachan.png",
+      "pageUrl": "https://seachan-ishigakijima.com/blue_cave/",
+      "what": "サンゴ礁の上を泳ぐウミガメ。水面近くに、シュノーケルをする人たちが小さく見える",
+      "width": 1068,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2759/s4.jpg",
+      "imageUrl": "https://seachan-ishigakijima.com/wp-content/uploads/2025/11/plan_04_03_seachan.png",
+      "pageUrl": "https://seachan-ishigakijima.com/",
+      "what": "サンゴの上に乗るウミガメを、近くから写した水中の写真",
+      "width": 1068,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2759/s5.jpg",
+      "imageUrl": "https://seachan-ishigakijima.com/wp-content/uploads/2025/11/phantomisland_02_seachan.png",
+      "pageUrl": "https://seachan-ishigakijima.com/phantomisland/",
+      "what": "澄んだ浅い海に腰まで浸かり、両手を上げている人の後ろ姿",
+      "width": 1068,
+      "height": 600,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(seachan-ishigakijima.com)の写真5枚(Google マップの写真・インスタグラムの投稿は使わない)。色の加工が強い宣伝用の画像。人物が主役の写真(笑顔の参加者・スタッフ・ジャンプの写真)と文字入りのバナーは除いた。元の画像は PNG なので JPEG に変換した。"
+}

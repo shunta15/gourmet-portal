@@ -1,0 +1,62 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 2759,
+  "sheet": {
+    "name": "SeaChan(シーチャン)石垣島",
+    "address": "",
+    "url": "",
+    "type": "専門サービス",
+    "d1": "アウトドア・マリン",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "アウトドア・マリン",
+    "sure": false,
+    "source": "reports/業種分類_2026-10-22/classified.json",
+    "checked": "公式サイトに幻の島上陸・青の洞窟ウミガメシュノーケリングのツアーがあることを確認して採用"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "SeaChan シーチャン 石垣島",
+    "SeaChan石垣島"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/SeaChan%E7%9F%B3%E5%9E%A3%E5%B3%B6/@24.337639,124.1671665,17z/data=!3m1!4b1!4m6!3m5!1s0x34600bb167b5422d:0xc35ec038a90287d1!8m2!3d24.337639!4d124.1671665!16s%2Fg%2F11rmx08ty0",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒907-0004 沖縄県石垣市登野城653-5)と電話(080-1225-0665)が公式サイトのショップ紹介のページと一致し、ウェブサイトも公式サイト(seachan-ishigakijima.com)。店名は一覧「SeaChan(シーチャン)石垣島」と Google マップ「SeaChan石垣島」が一致(公式サイトは「SeaChan石垣島（シーチャン）」)。営業時間は食い違い(Google マップ 9:00-19:00、公式サイト 8:00〜18:00)があり、店データは公式サイトの表記を使う。住所の印の周りは住宅の多い区画で、個人宅兼用の可能性は否定できないため、要オーナー確認。",
+  "identity": [
+    "住所: Google マップ「〒907-0004 沖縄県石垣市登野城６５３−５」＝公式サイト「〒907-0004 石垣市登野城653-5」",
+    "電話: Google マップ 080-1225-0665 ＝ 公式サイト TEL 080-1225-0665",
+    "ウェブサイト: Google マップ seachan-ishigakijima.com ＝ 公式サイト https://seachan-ishigakijima.com/",
+    "店名: 一覧「SeaChan(シーチャン)石垣島」＝Google マップ「SeaChan石垣島」(表記ゆれ)＝公式サイト「SeaChan石垣島（シーチャン）」",
+    "業種: 一覧のラベル「アウトドア・マリン」(分類)＝Google マップ「ツアー業者」＝公式サイト(幻の島上陸・青の洞窟ウミガメシュノーケリング)",
+    "cid: https://maps.google.com/?cid=14077900834792966097 を開くと同じ店の画面になることを確認"
+  ],
+  "nameRelation": "different",
+  "place": {
+    "name": "SeaChan石垣島",
+    "address": "沖縄県石垣市登野城６５３−５",
+    "category": "ツアー業者",
+    "lat": 24.337639,
+    "lng": 124.1671665,
+    "gbpUrl": "https://maps.google.com/?cid=14077900834792966097",
+    "phone": "080-1225-0665",
+    "website": "https://seachan-ishigakijima.com/",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-23T07:40:00.000Z"
+}

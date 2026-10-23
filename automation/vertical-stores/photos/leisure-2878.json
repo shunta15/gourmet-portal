@@ -1,0 +1,42 @@
+{
+  "key": "leisure-2878",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2878/hero.jpg",
+      "imageUrl": "https://jobard.net/_img/ja/cms/44082/bg_image/_/image.webp",
+      "pageUrl": "https://jobard.net/concept/",
+      "what": "新緑の林の中の砂利道を、馬に乗った人たちが列になって進んでいる(後ろ姿)",
+      "width": 920,
+      "height": 690,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2878/p1.jpg",
+      "imageUrl": "https://jobard.net/_img/ja/cms/44086/image/_/image.webp",
+      "pageUrl": "https://jobard.net/concept/",
+      "what": "青空と山並みの下、緑の放牧地で馬が草を食べている",
+      "width": 760,
+      "height": 480,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2878/p2.jpg",
+      "imageUrl": "https://jobard.net/_img/ja/article/1472/image/_/image.webp",
+      "pageUrl": "https://jobard.net/friends/",
+      "what": "青空の下、草の上で黒い馬が頭を下げて草を食べている(顔のアップ)",
+      "width": 1040,
+      "height": 780,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2878/s4.jpg",
+      "imageUrl": "https://jobard.net/_img/ja/article/1465/image/_/image.webp",
+      "pageUrl": "https://jobard.net/friends/",
+      "what": "青空の下、雪の残る放牧地に黒い小柄な馬が立っている",
+      "width": 1000,
+      "height": 667,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(jobard.net)の写真4枚(Google マップの写真・インスタグラムの投稿は使わない)。顔が大きく写る写真(ガイド・参加者・スタッフ・子ども)と文字入りのバナーは除いた。公式サイトの画像は webp なので JPEG に変換し、幅を縮めて 200KB 以下にした(雪の中の子馬の写真は縦長の元画像から横長に切り出した)。"
+}
