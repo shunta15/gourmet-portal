@@ -38,7 +38,7 @@
 .psp-toc a { display: flex; align-items: baseline; gap: 12px; padding: 10px 2px; border-top: 1px solid var(--pt-line); font-size: 14px; line-height: 1.7; letter-spacing: 0.04em; color: var(--pt-ink2); transition: color 0.2s; }
 .psp-toc li:first-child a { border-top: 0; }
 .psp-toc a:hover { color: var(--pt-brown); }
-.psp-no { flex: none; font-family: var(--pt-ff-en); font-size: 15px; line-height: 1; color: var(--pt-brown-l); }
+.psp-no { flex: none; min-width: 1.9em; font-family: var(--pt-ff-en); font-size: 15px; line-height: 1; color: var(--pt-brown-l); }
 .psp-toc-t { min-width: 0; overflow-wrap: anywhere; }
 
 .psp-sec { margin-top: 42px; }
