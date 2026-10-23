@@ -1,19 +1,18 @@
-import VkFrame from "@/components/portal/vkit/common/VkFrame";
-import { vkArticleListPage } from "@/components/portal/vkit/articlelist/ArticleListPage";
+import { permanentRedirect } from "next/navigation";
+import { notFoundMetadata } from "@/components/portal/pages/data";
 import { sportsCfg } from "@/components/portal/vkit/configs";
+import { vkLinks } from "@/components/portal/vkit/config";
 import { assertPortalLive } from "@/lib/portal/launch";
 
-// 記事の一覧(/sports/article)。中身は実在の店の紹介記事(紹介記事と実物の写真のある店)。カードのリンク先は店の記事 /sports/article/{id}。
-// 状態は URL の引数(kind・region・pref・scene・q・sort・page。探す /sports/search と同じ名前)。引数つきの URL は noindex(正本は引数なしの /sports/article)。
-// robots は他の新業種ページと同じ gate(業種の掲載が 3 件未満なら noindex。buildMetadata の count)。
-const live = vkArticleListPage(sportsCfg);
-
-export async function generateMetadata(props: Parameters<typeof live.generateMetadata>[0]) {
+// 店の記事のカードの一覧だった /sports/article は、店舗紹介の一覧 /sports/shop へ恒久の転送(308。オーナー決定 2026-10-23。ページは消さずに転送)。
+// 店 1 軒の記事のページ /sports/article/{店 ID} は、これまでどおり残る(店のページの「特集記事を読む」の行き先)。特集のページは /sports/special。
+// 転送するページなので検索エンジンには載せない。公開スイッチ OFF のあいだは 404(assertPortalLive)。
+export function generateMetadata() {
   assertPortalLive();
-  return live.generateMetadata(props);
+  return notFoundMetadata();
 }
 
-export default async function Page(props: Parameters<typeof live.Page>[0]) {
+export default function Page(): never {
   assertPortalLive();
-  return <VkFrame cfg={sportsCfg}>{await live.Page(props)}</VkFrame>;
+  permanentRedirect(vkLinks(sportsCfg).shops);
 }
