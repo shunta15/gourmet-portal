@@ -1,0 +1,45 @@
+/* COLOR PLAY(本番のビューティー)の特集(/beauty/special・/beauty/special/{slug})。
+   札は記事の一覧の札(article.css の .art-card)、記事は店のページの部品(site.css の .sh-*)をそのまま使い、ここは「写真の無い札の色面(番号)」と「節の中の店へのリンク」だけ。
+   動きは transform・opacity だけ(新しい帯・流れる文字・飾りは足さない)。 */
+
+/* ===== 一覧の札: 写真の代わりに、色面に大きな番号 ===== */
+.sp-card .sp-face{aspect-ratio:16/7; display:grid; place-items:center; background:rgba(255,255,255,.2)}
+.sp-card.t-pink .sp-face,.sp-card.t-sky .sp-face,.sp-card.t-blue .sp-face{background:rgba(255,255,255,.4)}
+.sp-card .sp-no{font-size:clamp(76px,8vw,112px); line-height:.9; color:transparent; -webkit-text-stroke:2px var(--af); opacity:.7; transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.sp-card:hover .sp-no{transform:scale(1.08)}
+.sp-card .art-lede{-webkit-line-clamp:6}
+/* 日本語の行は、文節の切れ目で折り返す(未対応のブラウザは今までどおり) */
+.sp-card h3,.sp-card .art-lede,.sp-lead,.sp-closing,.sp-sec .sh-card p,.sp-stores strong{word-break:auto-phrase}
+.sp-card h3{font-size:clamp(19px,1.7vw,23px)}
+
+/* ===== 記事の入口 ===== */
+.sp-hero .sh-name{margin-top:20px; word-break:auto-phrase; text-wrap:balance}
+.sp-lead{margin-top:22px; max-width:34em; font-size:clamp(15px,1.4vw,18px); font-weight:700; line-height:1.9}
+.sp-date{margin-top:14px; font-size:14px; opacity:.88}
+.sp-hero .cp-tag{background:#fff; color:#111}
+
+/* ===== 節の中: 出てくる店への店舗紹介リンク ===== */
+.sp-stores{margin-top:26px; padding-top:20px; border-top:1px solid var(--line)}
+.sp-stores h3{font-size:15px; font-weight:900; margin-bottom:12px}
+.sp-stores ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px}
+.sp-stores li{display:flex}
+.sp-stores a{flex:1; min-width:0; display:flex; align-items:center; gap:10px; min-height:52px; padding:8px 12px 8px 14px; border-radius:18px; background:#f1f2f6; color:#111; transition:background .2s, color .2s}
+.sp-stores a:hover{background:#111; color:#fff}
+.sp-stores .sp-sn{flex:1; min-width:0; display:flex; flex-direction:column; gap:2px}
+.sp-stores .sp-sn strong{font-size:15px; font-weight:900; line-height:1.4; overflow-wrap:anywhere}
+.sp-stores .sp-sn small{font-size:13px; opacity:.75; line-height:1.4}
+.sp-stores .sp-go{flex:none; width:28px; height:28px; border-radius:50%; background:#111; color:#fff; display:grid; place-items:center}
+.sp-stores a:hover .sp-go{background:#fff; color:#111}
+
+/* ===== おわりの文 / ほかの特集 ===== */
+.sp-closing{max-width:40em; font-size:clamp(16px,1.6vw,20px); font-weight:700; line-height:2}
+.sp-others{grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:22px}
+.sp-others-wrap{padding-top:52px}
+
+@media (max-width:1000px){
+  .sp-others{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .sp-stores ul{grid-template-columns:1fr}
+  .sp-others{grid-template-columns:1fr}
+}

@@ -1,5 +1,5 @@
 /**
- * 特集記事のページ(/{v}/article/{店 ID})。COLOR PLAY の店のページ(pages/shop.tsx・shopModel.tsx)と同じ部品・同じ CSS(.sh-*)で、読む向きに組んだもの。
+ * 店の特集記事・紹介記事のページ(/{v}/article/{店 ID})。COLOR PLAY の店のページ(pages/shop.tsx・shopModel.tsx)と同じ部品・同じ CSS(.sh-*)で、読む向きに組んだもの。
  *
  * 組み: 入口(種類の色面が開いて、記事の題と写真が出てくる。「店舗紹介を見る」の赤いボタン) → 本文(見出しごとに色面が替わる節。特集のポイントの写真は節の中に)
  *       → 店の写真 → 引用・おわりの文(黒) → メニュー(名前だけ) → 最後の帯(この店。店のページへ進むボタン・情報の出どころ) → ほかの記事。
@@ -16,8 +16,9 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { ArticleMini } from "../ArticleCards";
 import { IconArrow, IconChevron, IconPin } from "@/components/portal/bproto/colorplay/Icons";
-import { articleHref, articleListHref, loadArticle, loadArticleItems, type CpArticle, type CpArticleSection } from "@/lib/portal/colorplay/articles";
+import { articleHref, loadArticle, loadArticleItems, type CpArticle, type CpArticleSection } from "@/lib/portal/colorplay/articles";
 import { shopHref } from "@/lib/portal/colorplay/search";
+import { shopListHref } from "@/lib/portal/colorplay/shopList";
 import { loadShops } from "@/lib/portal/colorplay/data";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 import { getGeneratedFeatures } from "@/lib/places/features";
@@ -91,7 +92,7 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
   const ld = breadcrumb([
     { name: "マチノワ", url: absUrl("/") },
     { name: getVertical(site.key).name, url: absUrl(getVertical(site.key).path) },
-    { name: "特集記事", url: absUrl(articleListHref(site)) },
+    { name: "店舗紹介", url: absUrl(shopListHref(site)) },
     { name: s.name, url: absUrl(articleHref(site, item.id)) },
   ]);
   const hero = a.hero;
@@ -109,8 +110,7 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
           <div className="cp-wrap sh-hero-in">
             <nav className="cp-crumb" aria-label="パンくず">
               <Link href={site.base}>TOP</Link><IconChevron size={12} />
-              <Link href={articleListHref(site)}>特集記事</Link><IconChevron size={12} />
-              <Link href={articleListHref(site, { kind: s.kind })}>{s.kindName}</Link><IconChevron size={12} />
+              <Link href={shopListHref(site)}>店舗紹介</Link><IconChevron size={12} />
               <span aria-current="page">{s.name}</span>
             </nav>
             <div className="sh-hero-grid">
@@ -207,7 +207,7 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
           <section className="cp-wrap cp-more-shops" aria-labelledby="art-more-h">
             <h2 className="cp-h2 cp-rv" id="art-more-h">ほかの記事</h2>
             <div className="cp-minis">{a.more.map((x, i) => (<ArticleMini key={x.id} site={site} a={x} i={i} />))}</div>
-            <p className="cp-more"><Link href={articleListHref(site)}>特集記事の一覧を見る</Link></p>
+            <p className="cp-more"><Link href={shopListHref(site)}>店舗紹介の一覧を見る</Link></p>
           </section>
         )}
       </main>

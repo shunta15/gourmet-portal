@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BASE, SEARCH_HREF, SPECIAL_HREF, IMG_COMMON } from "./site";
+import { BASE, SEARCH_HREF, SHOPS_HREF, SPECIAL_HREF, IMG_COMMON } from "./site";
 
-// メニューは「トップ」「探す」「特集記事」の 3 つだけ(2026-10-23 オーナー決定)。お気に入り・閲覧履歴は本番に機能が無いので置かない。
+// メニューは「トップ」「探す」「店舗紹介」「特集」の 4 つだけ(2026-10-24 オーナー決定。業種のページは「最初・探す・店舗紹介・特集」の 4 種類)。お気に入り・閲覧履歴は本番に機能が無いので置かない。
 // 最初のページの節へ飛ぶだけだった「エリアから探す」「施術の種類から探す」「こだわりから探す」は外した(同じ絞り込みは最初のページ本体と探すページにある)。
-// PC は、右の緑のボタン「エリアを選ぶ」が「探す」の入口を兼ねる(同じ行き先を 2 つ並べない)ので、文字のナビは pcHide の「店を探す」を除いた 2 つ。
-// スマホは、メニューを開くと 3 つ全部。マチノワ トップ・運営の案内はフッターの小さな 1 行。
-const NAV: Array<{ label: string; href: string; pcHide?: boolean }> = [
+// PC もスマホも 4 つ全部をメニューに出す(PC は横に 4 つ、スマホはメニューを開くと 4 つ)。PC の右の緑のボタン「エリアを選ぶ」は見本にあるボタンで、メニューの数には入れない(行き先は「店を探す」と同じ。オーナー判断待ち)。
+// 「店舗紹介」は /bodycare/shop(掲載中の全店の札の一覧)、「特集」は /bodycare/special(業種の特集記事)。マチノワ トップ・運営の案内はフッターの小さな 1 行。
+const NAV: Array<{ label: string; href: string }> = [
   { label: "トップ", href: BASE },
-  { label: "店を探す", href: SEARCH_HREF, pcHide: true },
-  { label: "特集記事", href: SPECIAL_HREF },
+  { label: "店を探す", href: SEARCH_HREF },
+  { label: "店舗紹介", href: SHOPS_HREF },
+  { label: "特集", href: SPECIAL_HREF },
 ];
 
 /**
@@ -29,7 +30,7 @@ export default function Header() {
           <img src={`${IMG_COMMON}/logo.webp`} width={214} height={46} alt="マチノワ.Body Care からだが整うと、毎日が変わる。" />
         </Link>
         <nav className="gr-nav" aria-label="主なページ">
-          {NAV.filter((n) => !n.pcHide).map((n) => (
+          {NAV.map((n) => (
             <Link key={n.label} href={n.href}>
               {n.label}
             </Link>
