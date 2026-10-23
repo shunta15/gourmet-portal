@@ -66,9 +66,9 @@ function Hero({ f, facets, scope, total }: { f: ListFilters; facets: Facets; sco
         </Reveal>
       </div>
       <Reveal as="p" variant="fade" className="sal-hero-note" delay={800}>
-        公式サイトなどで確認できた
+        実在の宿の情報を
         <br />
-        情報をまとめた記事です。
+        まとめた記事です。
       </Reveal>
       {total > 0 ? <SearchBox f={f} facets={facets} /> : null}
     </section>
@@ -387,7 +387,7 @@ function Empty({ total }: { total: number }) {
       {total === 0 ? (
         <>
           <p className="sal-empty-t">宿の記事は、いま準備をしています。</p>
-          <p className="sal-empty-d">公式サイトなどで確認できた宿から、順に載せていきます。</p>
+          <p className="sal-empty-d">準備ができた宿から、順に載せていきます。</p>
           <Link href={L.search} className="sy-more">
             <span>宿を探す</span>
             <IconArrow />
@@ -469,7 +469,7 @@ export function stayArticleListPage() {
     return buildMetadata({
       vertical: "stay",
       title: `${scope ? `${scope}の` : ""}宿の記事｜${v.brand}`,
-      description: "実在の宿を一軒ずつ紹介する記事の一覧です。所在地やチェックイン・チェックアウトなど、公式サイトなどで確認できた情報をまとめています。",
+      description: "実在の宿を一軒ずつ紹介する記事の一覧です。所在地やチェックイン・チェックアウトなどの情報をまとめています。",
       path: syLinks("live").articles,
       count: plain ? await countPlaces("stay") : 0,
     });

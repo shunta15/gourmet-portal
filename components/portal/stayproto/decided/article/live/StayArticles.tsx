@@ -25,7 +25,7 @@ function Hero({ count }: { count: number }) {
         <p className="sy-lab sy-al-lab">Articles</p>
         <MaskLines as="h1" className="sy-al-h1" lines={["宿の記事"]} delay={80} />
         <Reveal as="p" variant="fade" delay={420} className="sy-al-sub">
-          実在の宿を一軒ずつ、公式サイトなどで確認できた情報でまとめた記事です。{count > 0 ? `いま ${count} 本を掲載しています。` : ""}
+          実在の宿を一軒ずつ、確かめた情報でまとめた記事です。{count > 0 ? `いま ${count} 本を掲載しています。` : ""}
         </Reveal>
       </div>
     </header>
@@ -73,7 +73,7 @@ export default async function StayArticles({ shops: given }: { shops?: LiveShop[
           ) : (
             <section className="sy-al-empty" aria-labelledby="sy-al-empty-h">
               <h2 id="sy-al-empty-h">記事は準備中です</h2>
-              <p>宿の記事は、まだありません。公式サイトなどで確認できた宿から、順に載せていきます。</p>
+              <p>宿の記事は、まだありません。準備ができた宿から、順に載せていきます。</p>
               <p className="sy-al-empty-l">
                 <Link href={L.search} className="sy-more">
                   宿を探す
