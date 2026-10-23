@@ -1,0 +1,51 @@
+{
+  "key": "leisure-542",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-542/hero.jpg",
+      "imageUrl": "https://nature-cocoro.com/wp-content/themes/cocoro-original/img/tab01.webp",
+      "pageUrl": "https://nature-cocoro.com/",
+      "what": "急流の白い波の中を、青いゴムボート2艘が下っている(人は小さく写る)",
+      "width": 1160,
+      "height": 617,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-542/p1.jpg",
+      "imageUrl": "https://nature-cocoro.com/wp-content/themes/cocoro-original/img/about-tour2.webp",
+      "pageUrl": "https://nature-cocoro.com/",
+      "what": "山に囲まれた川辺の桟橋に、青いゴムボートが並んで置かれている",
+      "width": 960,
+      "height": 1126,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-542/p2.jpg",
+      "imageUrl": "https://nature-cocoro.com/wp-content/themes/cocoro-original/img/top-swiper05.webp",
+      "pageUrl": "https://nature-cocoro.com/",
+      "what": "緑の川面の上で、ライフジャケットの人が飛び込み、青いボートが浮かぶ(人は小さく写る)",
+      "width": 1160,
+      "height": 690,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-542/s4.jpg",
+      "imageUrl": "https://nature-cocoro.com/wp-content/themes/cocoro-original/img/top-swiper01.webp",
+      "pageUrl": "https://nature-cocoro.com/",
+      "what": "木々に囲まれた岩の上から、人が川に飛び込もうとしている(人は小さく写る)",
+      "width": 1160,
+      "height": 690,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-542/s5.jpg",
+      "imageUrl": "https://nature-cocoro.com/wp-content/themes/cocoro-original/img/top-swiper03.webp",
+      "pageUrl": "https://nature-cocoro.com/",
+      "what": "ライフジャケットを着た4人が、澄んだ浅瀬の水面にあおむけで浮かんでいる(上からの写真)",
+      "width": 1160,
+      "height": 690,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(nature-cocoro.com)の写真5枚(Google マップの写真は使わない)。客の顔が大きく写る写真(ボートの上の笑顔・ハートのポーズ・スタッフの集合写真)と、子どもを含む大人数の集合写真は除いた。人物は小さく写るものだけ。"
+}
