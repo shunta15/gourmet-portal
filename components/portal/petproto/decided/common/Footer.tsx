@@ -66,6 +66,7 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
             {live ? (
               <>
                 <a href={PORTAL_HREF}>マチノワ トップ</a>
+                <a href="/videos">動画</a>
                 <a href="/about">編集部について</a>
                 <a href="/editorial/guidelines">掲載基準</a>
                 <a href="/contact">お問い合わせ</a>
