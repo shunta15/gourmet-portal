@@ -1,6 +1,8 @@
 import { scenePage } from "@/components/portal/pages/scene";
+import { sceneRedirectPage } from "@/components/portal/activity/redirects";
 
-const page = scenePage("activity");
+// アクティビティの旧ページ。探す(/activity/search)の絞り込みへの恒久の転送(308)。components/portal/activity/redirects.ts(ボディケアと同じ作り)。
+const page = sceneRedirectPage(scenePage("activity"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

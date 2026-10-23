@@ -1,0 +1,52 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 2620,
+  "sheet": {
+    "name": "釣り場 恵比寿",
+    "address": "",
+    "url": "",
+    "type": "専門サービス",
+    "d1": "アウトドア・マリン",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "アウトドア・マリン",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "釣り場 恵比寿"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E9%87%A3%E3%82%8A%E5%A0%B4+%E6%81%B5%E6%AF%94%E5%AF%BF/@36.5505302,139.2447861,17z/data=!3m1!4b1!4m6!3m5!1s0x601ef9c8d8549ca5:0xce74791d08f9afdd!8m2!3d36.5505302!4d139.2447861!16s%2Fg%2F11tssqtv76",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒376-0144 群馬県桐生市黒保根町下田沢1667-2)と電話(090-8772-1666)が公式サイトのアクセスと一致し、ウェブサイトのドメイン(tsuriba-ebisu.jp)も一致。店名は完全一致。店名の検索結果は 1 件だけで、同名の別の店はない。",
+  "identity": [
+    "住所: Google マップ「〒376-0144 群馬県桐生市黒保根町下田沢１６６７−２」＝公式サイト「〒376-0144 群馬県桐生市黒保根町 下田沢１６６７-２」",
+    "電話: Google マップ 090-8772-1666 ＝ 公式サイト 090-8772-1666",
+    "ウェブサイト: Google マップ tsuriba-ebisu.jp ＝ 公式サイトのドメイン",
+    "店名: 一覧「釣り場 恵比寿」＝Google マップ「釣り場 恵比寿」(完全一致)",
+    "業種: 一覧のラベル「アウトドア・マリン」(分類)＝Google マップ「釣り堀」＝公式サイト(釣り堀つきのキャンプ場)",
+    "cid: https://maps.google.com/?cid=14876648634723184605 を開くと同じ店の画面(データID 0x601ef9c8d8549ca5:0xce74791d08f9afdd)になることを確認"
+  ],
+  "nameRelation": "exact",
+  "place": {
+    "name": "釣り場 恵比寿",
+    "address": "群馬県桐生市黒保根町下田沢１６６７−２",
+    "category": "釣り堀",
+    "lat": 36.5505302,
+    "lng": 139.2447861,
+    "gbpUrl": "https://maps.google.com/?cid=14876648634723184605",
+    "phone": "090-8772-1666",
+    "website": "https://tsuriba-ebisu.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-23T06:55:15.000Z"
+}

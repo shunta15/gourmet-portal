@@ -1,0 +1,549 @@
+{
+  "key": "leisure-1251",
+  "vertical": "leisure",
+  "storeName": "三依渓流つり場",
+  "article": {
+    "id": "三依渓流つり場",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "MIYORI KEIRYU TSURIBA NIKKO",
+    "title": "栃木県日光市・三依渓流つり場。800mの川を60区画に区切った管理つり場の釣り方と、食事・バーベキュー",
+    "titleHTML": "栃木県日光市中三依の渓流の管理つり場<br><em>三依渓流つり場</em>の釣りのしくみと食事・バーベキュー",
+    "subtitle": "管理つり場 / 栃木県日光市中三依 / イワナ・ヤマメ・マスの渓流釣り",
+    "lede": "栃木県日光市中三依の三依渓流つり場は、全長800mの自然な流れの川を、自然石で60区画に区切った渓流のつり場だ。イワナ、ヤマメ、マスの中から選んだ魚を、好きな場所に放流してもらうしくみで、釣りの時間にも釣り上げ数にも制限はない。食堂とバーベキュー場、芝生の広場、お花畑があり、営業は3月21日から11月30日まで、冬季は休業する。足場のよい渓流釣り場なので、初心者や子どもも楽しめると、公式サイトは案内している。",
+    "date": "2026-10-23",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/leisure-1251/hero.jpg",
+    "ogImage": "/_portal/vshops/leisure-1251/hero.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "受付から放流まで、60区画の川での釣りのしくみ",
+        "cuisine": "釣りのしくみ",
+        "area": "日光市",
+        "purpose": "どうやって釣るのかを、先に知りたい人へ",
+        "desc": "受付でエリアの番号札と放流の引換券を受け取り、イワナ、ヤマメ、マスの中から魚を選ぶと、好きな場所に1人分5匹が放流される。川は全長800mで、自然石を利用して60区画に区切られている。餌釣りだけでなく、ルアーやフライ、テンカラもできる。釣りの時間にも、釣り上げ数にも、制限はない。リリースは禁止で、釣った魚は預かる決まりだ。餌釣り用の貸し竿があるので、手ぶらでも釣りができる。ルアーやフライ用の竿のレンタルはない。夏季の7月中旬から9月上旬には、つかみどりも限定で行っている。",
+        "images": [
+          "/_portal/vshops/leisure-1251/p2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "放流",
+            "v": "1人分5匹・イワナ/ヤマメ/マスから選ぶ・好きな場所に放流"
+          },
+          {
+            "k": "釣り方",
+            "v": "餌釣り・ルアー・フライ・テンカラ(時間・釣り上げ数の制限なし)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "囲炉裏の塩焼きと、食堂のそば",
+        "cuisine": "食事",
+        "area": "日光市",
+        "purpose": "釣った魚や食事のしかたを、知りたい人へ",
+        "desc": "受付の手前にある囲炉裏では、釣った魚を塩焼きにできる。炭火焼き、唐揚げ、刺身の調理も受け付けていて、調理の時間は10時から15時。混雑時には提供できない場合がある。食堂は、室内で食事ができ、座敷がある。薪ストーブもあり、寒い日には温まれる。食事には、四季そば、本わさびそば、イワナそばなどがあり、食事の注文は15時まで。",
+        "images": [
+          "/_portal/vshops/leisure-1251/p1.jpg"
+        ],
+        "specs": [
+          {
+            "k": "魚の調理",
+            "v": "囲炉裏の塩焼き・炭火焼き・唐揚げ・刺身(調理は10時〜15時)"
+          },
+          {
+            "k": "食堂",
+            "v": "座敷・薪ストーブ・四季そば/本わさびそば/イワナそば・注文は15時まで"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "川のそばと屋根つきの小屋。2か所のバーベキュー場",
+        "cuisine": "バーベキュー",
+        "area": "日光市",
+        "purpose": "バーベキューの条件を、知りたい人へ",
+        "desc": "バーベキュー場は2か所ある。第1バーベキュー場は川のそばにあり、釣りをしながらバーベキューができる。第2バーベキュー場は屋根のある小屋で、天候に左右されずに楽しめる。時間は7時から15時で、食材と器具一式は持ち込みになる。釣りをせずに、バーベキューだけを利用することはできない。バーベキュー場の施設利用と、中三依温泉駅からの送迎は、予約が必要だ。",
+        "images": [
+          "/_portal/vshops/leisure-1251/s5.jpg"
+        ],
+        "specs": [
+          {
+            "k": "場所",
+            "v": "川のそば(第1)・屋根つきの小屋(第2)"
+          },
+          {
+            "k": "条件",
+            "v": "7:00〜15:00・食材と器具一式は持ち込み・釣りとセット・要予約"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "芝生の広場、お花畑、ペットの決まり",
+        "cuisine": "広場・施設",
+        "area": "日光市",
+        "purpose": "釣りのほかの過ごし方や、決まりを知りたい人へ",
+        "desc": "広い芝生の広場では、キャッチボールやバドミントン、サッカーなどを自由にできる。ハンモック、ボール遊び、バドミントンなど、置いてある遊具は自由に使える。受付の前はお花畑で、季節によって、さまざまな花を見られる。ペットの同伴はできるが、リードを外しての散歩と、食堂内の同伴はできない。釣り場で泳ぐのは、禁止されている。",
+        "images": [
+          "/_portal/vshops/leisure-1251/s6.jpg"
+        ],
+        "specs": [
+          {
+            "k": "広場",
+            "v": "芝生・キャッチボール/バドミントン/サッカーなど"
+          },
+          {
+            "k": "ペット",
+            "v": "同伴可・リードを外した散歩と食堂内は不可"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 05",
+        "rankNum": 5,
+        "name": "営業の期間と時間、行き方、予約のしかた",
+        "cuisine": "営業・アクセス",
+        "area": "日光市",
+        "purpose": "行く日と行き方を、決めたい人へ",
+        "desc": "所在地は栃木県日光市中三依1293、電話は0288-79-0110で、Googleマップの番号と同じだ。営業は3月21日から11月30日までで、冬季は休業する。大雨の影響などで休業する場合もある。施設と釣りは7時から16時、受付は7時から12時、放流は8時から12時だ。電車では、会津鬼怒川線の中三依温泉駅から徒歩30分で、駅からの送迎もあり、予約が要る。車では、日光宇都宮道路の今市ICから国道121号線経由で約60分、東北自動車道の西那須野・塩原ICから国道400号線経由で約40分。駐車場は50台ほどで、大型バスも停められるが、前もって連絡が要る。予約は、ホームページのオンライン予約かLINEでできる。当日は現地受付のみなので、前日までの予約が案内されている。支払いは、現金のみ。",
+        "images": [
+          "/_portal/vshops/leisure-1251/s4.jpg",
+          "/_portal/vshops/leisure-1251/s7.jpg"
+        ],
+        "specs": [
+          {
+            "k": "営業",
+            "v": "3月21日〜11月30日・冬季休業・施設7:00〜16:00(受付7:00〜12:00)"
+          },
+          {
+            "k": "行き方",
+            "v": "中三依温泉駅から徒歩30分(送迎は要予約)・駐車場50台ほど"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "800mの川は自然石で60区画に区切られ、イワナ、ヤマメ、マスから魚を選ぶと、好きな場所に1人分5匹が放流される。釣りの時間にも釣り上げ数にも制限はなく、餌釣り用の貸し竿があるので、手ぶらでも釣りができる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "営業は3月21日から11月30日までで、冬季は休業、大雨で休業することもある。当日は現地受付のみなので、出かける日が決まったら、前日までに予約を入れる。受付は7時から12時だ。手ぶらで行くなら、餌釣り用の貸し竿を借りる。ルアーやフライの竿は、貸し出しがない。釣った魚は、囲炉裏で塩焼きにするか、炭火焼き、唐揚げ、刺身の調理を頼める。調理は10時から15時で、混雑時には提供できない場合がある。バーベキューは、釣りとセットで、食材と器具一式を持ち込み、予約を入れる。電車は中三依温泉駅から徒歩30分で、駅からの送迎は予約が要る。車は今市ICから約60分、西那須野・塩原ICから約40分で、駐車場は50台ほど。支払いは現金のみだ。"
+  },
+  "summary": "栃木県日光市中三依の三依渓流つり場を、公式サイトの記載から整理。800mの川を60区画に区切った釣りのしくみ、囲炉裏の塩焼きと食堂、2か所のバーベキュー場、広場とペットの決まり、営業の期間と行き方、予約のしかたをまとめた特集。",
+  "tags": [
+    "管理つり場",
+    "日光市",
+    "渓流釣り",
+    "イワナ",
+    "ヤマメ",
+    "バーベキュー",
+    "手ぶらでOK",
+    "子連れ",
+    "駐車場あり"
+  ],
+  "charCount": 1694,
+  "facts": [
+    {
+      "claim": "Google マップの名称は「三依渓流つり場」",
+      "source": "https://maps.google.com/?cid=204229922774346361",
+      "quote": "三依渓流つり場",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの業種の表示は「釣り堀」",
+      "source": "https://maps.google.com/?cid=204229922774346361",
+      "quote": "釣り堀",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの住所は栃木県日光市中三依1293",
+      "source": "https://maps.google.com/?cid=204229922774346361",
+      "quote": "〒321-2803 栃木県日光市中三依１２９３",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの電話番号は0288-79-0110",
+      "source": "https://maps.google.com/?cid=204229922774346361",
+      "quote": "0288-79-0110",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(miyorikeiryutsuriba.jp)と同じ",
+      "source": "https://maps.google.com/?cid=204229922774346361",
+      "quote": "miyorikeiryutsuriba.jp",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの所在地は栃木県日光市中三依1293(郵便番号321-2803)",
+      "source": "https://miyorikeiryutsuriba.jp/",
+      "quote": "〒321-2803 栃木県日光市中三依1293",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの電話番号は0288-79-0110(Google マップと同じ)",
+      "source": "https://miyorikeiryutsuriba.jp/",
+      "quote": "TEL 0288-79-0110",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "営業期間は3月21日から11月30日まで",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "3月21日から11月30日まで営業いたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "冬季は休業",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "冬季は休業となります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "大雨の影響などで休業する場合がある",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "大雨の影響などにより休業する場合がございます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "施設・釣りは7時から16時",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "施設 7時～16時",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付は7時から12時",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "受付 7時～12時",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "放流は8時から12時",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "放流 8時～12時",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "調理は10時から15時",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "調理 10時～15時",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "2026年9月の大雨で休業したのち、9月12日に営業を再開した",
+      "source": "https://miyorikeiryutsuriba.jp/",
+      "quote": "9月12日より営業を再開することとなりました。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "電車は会津鬼怒川線の中三依温泉駅から徒歩30分",
+      "source": "https://miyorikeiryutsuriba.jp/access/",
+      "quote": "会津鬼怒川線中三依温泉駅より徒歩30分",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "中三依温泉駅からの送迎は予約が要る",
+      "source": "https://miyorikeiryutsuriba.jp/access/",
+      "quote": "中三依温泉駅より送迎あり・要予約",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "車は日光宇都宮道路の今市ICから国道121号線経由で約60分",
+      "source": "https://miyorikeiryutsuriba.jp/access/",
+      "quote": "日光宇都宮道路今市I.Cより国道121号線経由45km。 約60分",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "車は東北自動車道の西那須野・塩原ICから国道400号線経由で約40分",
+      "source": "https://miyorikeiryutsuriba.jp/access/",
+      "quote": "東北自動車道西那須野・塩原I.Cより国道400号線経由35km。約40分",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "駐車場は50台ほど",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "50台ほど駐車することができます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "大型バスも駐車できるが、事前の連絡が要る",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "大型バスも駐車できますが、お越しの際には前もってご連絡下さい。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "川は全長800mで、自然石で60区画に区切られている",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "全長800ｍの自然な流れの川を自然石を利用し、60区画に区切ってあります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "餌釣りのほか、ルアー・フライ・テンカラもできる",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "餌釣りだけでなく、ルアーやフライ、テンカラもお楽しみいただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣りの時間に制限はない",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "釣りの時間制限はありません。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣り上げ数に制限はない",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "釣り上げ数に制限はありません。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "リリースは禁止で、釣った魚は預かる",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "リリースは禁止です、お預かりいたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "イワナ・ヤマメ・マスから魚種を選び、好きな場所に1人分5匹が放流される",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "1人分の放流量5匹／イワナ、ヤマメ、マスの中から選んでいただいた魚をお好きな場所に放流いたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付でエリアの番号札と放流の引換券を受け取る",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "受付時にエリアの番号札と放流の引換券をお受け取りください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "餌釣り用の貸し竿があり、手ぶらでも釣りができる",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "エサ釣り用の貸し竿がありますので手ぶらでも可能です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ルアー・フライ用の竿のレンタルはない",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "ルアーやフライなどの竿のレンタルはありません",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "足場がよく、初心者や子どもも楽しめると案内している",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "足場の良い渓流釣り場ですので、初心者やお子様にも楽しんでいただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付の手前の囲炉裏で、釣った魚を塩焼きにできる",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "手前の囲炉裏では釣った魚を塩焼きにすることができます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣った魚の調理は炭火焼き・唐揚げ・刺身",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "炭火焼き",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "調理は混雑時に提供できない場合がある",
+      "source": "https://miyorikeiryutsuriba.jp/fishing/",
+      "quote": "混雑時にはご提供できない場合がございます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "食堂は室内で食事ができ、座敷がある",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "室内で食事をすることができます。座敷もありますのでゆっくりお休み下さい。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "食堂には薪ストーブがある",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "薪ストーブもありますので寒い日には温まって下さい。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "食事に四季そば・本わさびそば・イワナそばなどがある",
+      "source": "https://miyorikeiryutsuriba.jp/food/",
+      "quote": "イワナそば",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "食事の注文は15時まで",
+      "source": "https://miyorikeiryutsuriba.jp/food/",
+      "quote": "食事の注文は午後3時までとなっております。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "川のそばで、釣りをしながらバーベキューができる(第1バーベキュー場)",
+      "source": "https://miyorikeiryutsuriba.jp/bbq/",
+      "quote": "川のそばで釣りをしながらバーベキューを行えます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バーベキュー小屋は屋根があり、天候に左右されない(第2バーベキュー場)",
+      "source": "https://miyorikeiryutsuriba.jp/bbq/",
+      "quote": "屋根がついているため、天候に左右されずにバーベキューを楽しむことができます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バーベキュー場の時間は7時から15時",
+      "source": "https://miyorikeiryutsuriba.jp/bbq/",
+      "quote": "7時～15時",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バーベキューは食材と器具一式の持ち込み",
+      "source": "https://miyorikeiryutsuriba.jp/bbq/",
+      "quote": "食材、器具一式持ち込みのご利用となります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣りをせずにバーベキューだけの利用はできない",
+      "source": "https://miyorikeiryutsuriba.jp/bbq/",
+      "quote": "釣りをせずにバーベキューのみのご利用はできません。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "バーベキュー場の利用と駅からの送迎は予約が必要",
+      "source": "https://miyorikeiryutsuriba.jp/",
+      "quote": "バーベキュー場施設利用・中三依温泉駅からの送迎は予約が必要です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "広い芝生の広場で、キャッチボールやバドミントン、サッカーなどが自由にできる",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "広い芝生の上でキャッチボールやバトミントン、バスケット、サッカーなど、ご自由にお楽しみ下さい。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "広場にハンモックなどの遊具がある",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "ハンモック、ボール遊び、バドミントンなど置いてある遊具はご自由にお使いください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付の前のお花畑で、季節の花を見られる",
+      "source": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "quote": "受付の前では、季節によって様々な花をご覧になることができます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ペットの同伴ができる",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "ペットの同伴は可能です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "リードを外しての散歩と食堂内の同伴はできない",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "リードを外しての散歩や食堂内の同伴はご遠慮ください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "現金のみのお支払いとなります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "予約はオンラインかLINEででき、当日は現地受付のみのため前日までに予約する",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "ホームページからのオンライン予約や、LINE予約が可能です。当日は現地受付のみとなりますので、前日までにご予約ください。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "夏季(7月中旬から9月上旬)限定でつかみどりを行っている",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "夏季（７月中旬～９月上旬）限定で行っています。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣り場で泳ぐのは禁止",
+      "source": "https://miyorikeiryutsuriba.jp/question/",
+      "quote": "釣り場で泳ぐのは禁止とさせていただいています。",
+      "checkedAt": "2026-10-23"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-1251/hero.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2019/07/88657d80ad005ccec67a86e113bb0885.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "what": "木々に囲まれた緑の渓流。石で区切られた浅い流れの川原で、釣りをする人たちが遠くに小さく見える(公式サイトの施設紹介の「釣り場」の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/p2.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2020/03/IMG_2781-1.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/fishing/",
+      "what": "木々に囲まれた川原の浅い流れのそばで、数人が釣りをしている。人物は遠景で顔は判別できない(公式サイトの釣りのページの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/p1.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2018/04/uketuke2.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "what": "山あいに建つ黒い屋根の建物を、紫色のルピナスの花畑ごしに見る。右が受付とお食事の施設、左が食堂(公式サイトの施設紹介の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/s5.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2018/04/bq4.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/bbq/",
+      "what": "屋根の下に、中央に火床のある木のテーブルが並ぶバーベキュー小屋の内側。丸太のいすが置かれている(公式サイトの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/s6.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2018/04/hana.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "what": "緑の木々を背にした草地に、紫色のルピナスの花が咲いている(公式サイトの施設紹介の「お花畑」の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/s4.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2018/04/uketuke.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "what": "木の柱と大きな屋根の下に、受付のカウンターとベンチが見える。手前は砂利の地面(公式サイトの施設紹介の「受付」の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-1251/s7.jpg",
+      "imageUrl": "https://miyorikeiryutsuriba.jp/wp-content/uploads/2018/04/iriguchi.jpg",
+      "pageUrl": "https://miyorikeiryutsuriba.jp/sisetu/",
+      "what": "山の緑に囲まれた草地の間を、舗装された細い道が奥へ延びている(公式サイトの施設紹介の「入り口」の写真)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://miyorikeiryutsuriba.jp/"
+    },
+    {
+      "label": "公式サイト(施設紹介)",
+      "url": "https://miyorikeiryutsuriba.jp/sisetu/"
+    },
+    {
+      "label": "公式サイト(釣り)",
+      "url": "https://miyorikeiryutsuriba.jp/fishing/"
+    },
+    {
+      "label": "公式サイト(食事)",
+      "url": "https://miyorikeiryutsuriba.jp/food/"
+    },
+    {
+      "label": "公式サイト(バーベキュー)",
+      "url": "https://miyorikeiryutsuriba.jp/bbq/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://miyorikeiryutsuriba.jp/access/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://miyorikeiryutsuriba.jp/question/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=204229922774346361"
+    }
+  ],
+  "notes": "【出どころ】articles/leisure-1251.json の facts(公式サイト7ページ・Google マップ)・gbp/leisure-1251.json・photos/leisure-1251.json だけ。本文の各文は facts の番号に結び付けて書いた。【営業時間】Google マップに営業時間の表示は無い(季節営業)。公式サイトの釣りのページ(施設7時-16時・受付7時-12時・営業期間3月21日-11月30日)を本文に使った。サイト共通のフッターなどには別の書き方もあるため、ページごとに表記が異なる。【書かなかったこと】入漁料・貸し竿・エサ・調理代・バーベキュー施設利用料などの金額、会員カードのポイント、「栃木県で唯一」「オススメ」の語、メディア掲載、お客様の声、ライブカメラ、素泊りの宿、2026年9月の大雨による休業と再開のお知らせ(日付が移り変わるため)。facts[32] の quote は、金額を含む部分を除いて「炭火焼き」だけにした。【写真】公式サイト(miyorikeiryutsuriba.jp)の写真。人物が主役の写真、客が写る食堂の内部は使わない。"
+}

@@ -1,0 +1,61 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 2604,
+  "sheet": {
+    "name": "OUTDOOR FIELD CIMAX × 東京バギー村",
+    "address": "",
+    "url": "",
+    "type": "専門サービス",
+    "d1": "アウトドア・マリン",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "アウトドア・マリン",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "OUTDOOR FIELD CIMAX 東京バギー村"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E6%9D%B1%E4%BA%AC%E3%83%90%E3%82%AE%E3%83%BC%E6%9D%91+%C3%97+CIMAX/@35.7662504,140.1836834,17z/data=!3m1!4b1!4m6!3m5!1s0x602288085330c4a7:0xa46a1afb57eba0b8!8m2!3d35.7662504!4d140.1836834!16s%2Fg%2F1tfzs0s6",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒270-1615 千葉県印西市師戸2300)と電話(080-2730-0416)が公式サイトの会社情報と一致し、公式サイトに書かれた座標(35.7662 N・140.1836 E)も Google マップの位置と一致、ウェブサイトのドメイン(cimax.jp)も一致。店名は、一覧が「OUTDOOR FIELD CIMAX × 東京バギー村」、Google マップが「東京バギー村 × CIMAX」、公式サイトの屋号が「CIMAX × 東京バギー村」と表記が違うが、同じ名前の組み合わせ(CIMAX と東京バギー村)。店名の検索結果は 1 件だけ。",
+  "identity": [
+    "住所: Google マップ「〒270-1615 千葉県印西市師戸２３００」＝公式サイト「所在地 千葉県印西市師戸2300」",
+    "電話: Google マップ 080-2730-0416 ＝ 公式サイト 電話 080-2730-0416",
+    "座標: Google マップ(35.7662504, 140.1836834)＝公式サイトのアクセス欄「35.7662 N／140.1836 E」",
+    "ウェブサイト: Google マップの表示 cimax.jp ＝ 公式サイトのドメイン",
+    "店名: 一覧「OUTDOOR FIELD CIMAX × 東京バギー村」＝Google マップ「東京バギー村 × CIMAX」＝公式サイトの屋号「CIMAX × 東京バギー村」(表記ゆれ。CIMAX と東京バギー村の組み合わせは同じ)",
+    "業種: 一覧のラベル「アウトドア・マリン」(分類)＝Google マップ「アミューズメント センター」＝公式サイト(バギー・泥あそび・射的・サバイバルゲーム・BBQ・キャンプ)",
+    "cid: https://maps.google.com/?cid=11847311436565684408 を開くと同じ店の画面になることを確認"
+  ],
+  "nameRelation": "different",
+  "place": {
+    "name": "東京バギー村 × CIMAX",
+    "address": "千葉県印西市師戸２３００",
+    "category": "アミューズメント センター",
+    "lat": 35.7662504,
+    "lng": 140.1836834,
+    "gbpUrl": "https://maps.google.com/?cid=11847311436565684408",
+    "phone": "080-2730-0416",
+    "website": "https://cimax.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-23T07:10:00.000Z"
+}

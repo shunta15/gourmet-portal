@@ -1,18 +1,15 @@
 import { shopPage } from "@/components/portal/pages/shop";
-import VkFrame from "@/components/portal/vkit/common/VkFrame";
-import { vkShopPage } from "@/components/portal/vkit/shop/ShopPage";
-import { activityCfg } from "@/components/portal/vkit/configs";
+import { ActivityShopPage } from "@/components/portal/activity/pages";
 
-// 店の紹介(/activity/shop/{id})。ステイの決定デザインと同じ組み立て(components/portal/vkit/shop/。料金・口コミは出さず、外へ出るリンクは公式サイトだけ)。外枠は VkFrame。
+// 店の紹介(/activity/shop/{id})。オーナーが決めたデザイン(components/portal/activity/Shop.tsx。料金・口コミは出さず、外へ出るリンクは公式サイトだけ)。外枠は ActivityFrame。
 // URL・generateStaticParams・metadata(title・description・canonical・OGP・robots)は、共通の店ページ(components/portal/pages/shop.tsx)のもの。ステイの app/stay/shop/[id] と同じ作り。
 const common = shopPage("activity");
-const live = vkShopPage(activityCfg);
 
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
 export const generateMetadata = common.generateMetadata;
 
-export default async function Page(props: Parameters<typeof live.Page>[0]) {
-  return <VkFrame cfg={activityCfg}>{await live.Page(props)}</VkFrame>;
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+  return <ActivityShopPage id={(await params).id} />;
 }

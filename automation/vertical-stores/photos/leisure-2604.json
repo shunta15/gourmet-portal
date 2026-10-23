@@ -1,0 +1,69 @@
+{
+  "key": "leisure-2604",
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2604/hero.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/buggy/card-corporate.jpg",
+      "pageUrl": "https://cimax.jp/buggy/",
+      "what": "木立の奥の小屋の前で、四輪バギーが一列に並んで出発を待っている(人は小さく写る)",
+      "width": 900,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/p1.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/buggy/course-forest.jpg",
+      "pageUrl": "https://cimax.jp/buggy/",
+      "what": "杉林の中の土の道を、黄色い四輪バギーが走る",
+      "width": 900,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/p2.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/bbq/pizza-01.jpg",
+      "pageUrl": "https://cimax.jp/bbq/",
+      "what": "薪の火が燃える石窯。奥にピザが入っている",
+      "width": 1160,
+      "height": 773,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/s4.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/camp/hero-1.jpg",
+      "pageUrl": "https://cimax.jp/plan/",
+      "what": "夜の森で、橙色に光るテントと折りたたみ椅子、焚き火台",
+      "width": 1160,
+      "height": 870,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/s5.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/bbq/bbq-04.jpg",
+      "pageUrl": "https://cimax.jp/bbq/",
+      "what": "燃える焚き火と、その縁に置かれたやかん",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/s6.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/buggy/gallery-6.jpg",
+      "pageUrl": "https://cimax.jp/buggy/",
+      "what": "荷台に人を乗せた軽トラックが、土ぼこりを上げて草地の斜面を下りる(人は小さく写る)",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2604/s7.jpg",
+      "imageUrl": "https://cimax.jp/assets/img/activity/act-01.jpg",
+      "pageUrl": "https://cimax.jp/activity/",
+      "what": "黄色いショベルカーの運転席に人が座っている(人は小さく写る)",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "公式サイト(cimax.jp)の写真7枚(Google マップの写真は使わない)。客の顔が大きく写る写真(笑顔のバギー運転者・泥遊び・記念撮影)は除いた。人物は小さく写るものだけ。"
+}

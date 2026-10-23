@@ -1,0 +1,462 @@
+{
+  "key": "leisure-170",
+  "vertical": "leisure",
+  "storeName": "アモアナダイビングスクール",
+  "article": {
+    "id": "アモアナダイビングスクール",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "AMOANA DIVING SCHOOL NUMAZU",
+    "title": "静岡県沼津市・アモアナダイビングスクール。体験ダイビングとライセンス講習、伊豆の海のファンダイビング",
+    "titleHTML": "静岡県沼津市のダイビングショップ<br><em>アモアナダイビングスクール</em>の体験ダイビングと講習",
+    "subtitle": "ダイビングショップ / 静岡県沼津市岡宮 / 体験ダイビング・OWD講習・ファンダイビング",
+    "lede": "静岡県沼津市岡宮のアモアナダイビングスクールは、公式サイトが「PADI5スターダイブセンター」と案内しているダイビングショップだ。扱っているのは、体験ダイビング、オープン・ウォーター・ダイバー(OWD)のライセンス講習、伊豆のファンダイビングで、沖縄でもダイビングができると案内されている。沼津ICから車で2分の場所にあり、電車なら三島駅か沼津駅が最寄りで、行きも帰りも駅まで送迎がある。定休日は、年中無休と案内されている。",
+    "date": "2026-10-23",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/leisure-170/hero.jpg",
+    "ogImage": "/_portal/vshops/leisure-170/hero.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "10歳から参加できる、伊豆の海の体験ダイビング",
+        "cuisine": "体験ダイビング",
+        "area": "沼津市",
+        "purpose": "初めて潜る人が、体験の中身を知りたいとき",
+        "desc": "体験ダイビングは10歳以上が対象で、1人から参加でき、少人数制で実施される。海洋実習地は伊豆の海で、平沢ビーチと黄金崎ビーチが挙げられている。時間は、陸でのレクチャー30分と、体験1ダイブ1時間で、合計1.5時間だ。内容は、ダイビングについての説明、器材の説明、水中での呼吸の練習で、後半は水中ツアーで魚を見る。潜る深さは、水深5mまでだ。1日に1本から2本潜るメニューがあり、2回潜る場合は休憩がある。",
+        "images": [],
+        "specs": [
+          {
+            "k": "対象",
+            "v": "10歳以上・1人から・少人数制"
+          },
+          {
+            "k": "時間",
+            "v": "レクチャー30分+体験1ダイブ1時間(合計1.5時間)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "持ち物・集合場所・申し込み方法と、支払い方法",
+        "cuisine": "体験の準備",
+        "area": "沼津市",
+        "purpose": "当日の持ち物や集合場所を、知りたい人へ",
+        "desc": "持ち物は、水着、ハンドタオル、バスタオル、サンダル、シャンプー・リンス、昼ご飯だ。集合は、電車で来る人は沼津駅北口まで。車で来る人は、当店、ゲートウェイ函南、現地集合のいずれかだ。申し込みは、電話、LINE、ホームページから受け付けていて、希望の日程を決める。支払いは、現金のほか、QR決済、クレジットカード、電子マネーが使える。公式サイトは、初心者にもわかりやすく楽しく講習すると案内している。",
+        "images": [],
+        "specs": [
+          {
+            "k": "集合",
+            "v": "電車は沼津駅北口・車は店・ゲートウェイ函南・現地のいずれか"
+          },
+          {
+            "k": "申し込み",
+            "v": "電話・LINE・ホームページ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "学科2時間弱、海洋実習2日間。オープン・ウォーター・ダイバー講習",
+        "cuisine": "ライセンス講習",
+        "area": "沼津市",
+        "purpose": "ダイビングのライセンスを取りたい人へ",
+        "desc": "オープン・ウォーター・ダイバー(OWD)の講習は、学科が2時間弱、海洋実習が2日間(4ダイブ)だ。学科は海洋実習のあとにおこない、オンラインのデジタルビデオでも受けられる。海洋実習地は、伊豆の海全般で、主に平沢、大瀬崎、黄金崎だ。1人から参加でき、少人数制で実施される。連続で通わなくても大丈夫なので、自分のペースで講習を受けられる。",
+        "images": [],
+        "specs": [
+          {
+            "k": "学科",
+            "v": "2時間弱(オンラインのデジタルビデオでも可)"
+          },
+          {
+            "k": "海洋実習",
+            "v": "2日間(4ダイブ)・伊豆の海全般"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "平沢・大瀬崎・黄金崎など、伊豆のファンダイビング",
+        "cuisine": "ファンダイビング",
+        "area": "沼津市",
+        "purpose": "ライセンスを持っていて、潜る場所を探す人へ",
+        "desc": "伊豆のファンダイビングは、基本2ダイブで、1人から実施される。ポイントは、獅子浜、平沢、大瀬崎、井田、黄金崎、川奈、富戸、IOP、菖蒲沢、浮島などだ。1ダイブ60分を超えるロングダイビングもできる。本栖湖で潜るファンダイビングも、案内されている。天気のよい日には、富士山を撮影しながらダイビングポイントまで行く「富士山＆ダイビングツアー」が、時折開かれている。公式サイトは、沖縄でダイビングもできると案内している。",
+        "images": [
+          "/_portal/vshops/leisure-170/s4.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ポイント",
+            "v": "獅子浜・平沢・大瀬崎・井田・黄金崎・川奈・富戸・IOP・菖蒲沢・浮島ほか"
+          },
+          {
+            "k": "形式",
+            "v": "基本2ダイブ・1人から・1ダイブ60分を超えるロングダイビングも可"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 05",
+        "rankNum": 5,
+        "name": "沼津ICから車で2分。店の場所と、駅からの送迎",
+        "cuisine": "店・アクセス",
+        "area": "沼津市",
+        "purpose": "行き方と、店の様子を知りたい人へ",
+        "desc": "所在地は静岡県沼津市岡宮954-35、電話は050-3570-0300で、Googleマップの番号と同じだ。店は、沼津ICから車で2分の場所にある。電車で来る人は、三島駅か沼津駅が最寄りで、行きも帰りも駅まで送迎する。店内は、リゾートをイメージした落ち着く空間と案内されている。定休日は、年中無休だ。",
+        "images": [
+          "/_portal/vshops/leisure-170/p1.jpg",
+          "/_portal/vshops/leisure-170/p2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "場所",
+            "v": "沼津ICから車で2分"
+          },
+          {
+            "k": "送迎",
+            "v": "三島駅・沼津駅へ(行きも帰りも)"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "体験ダイビングは10歳から参加でき、陸でのレクチャー30分と体験1ダイブ1時間で、合計1.5時間。水深は5mまでで、後半は水中ツアーで魚を見る。店は沼津ICから車で2分、駅からの送迎もある。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "体験ダイビングの申し込みは、電話、LINE、ホームページのいずれかで、希望の日程を決める。持ち物は、水着、ハンドタオル、バスタオル、サンダル、シャンプー・リンス、昼ご飯だ。集合は、電車なら沼津駅北口、車なら店かゲートウェイ函南、現地のいずれかになる。ライセンスを取るなら、学科は2時間弱、海洋実習は2日間で、連続で通わなくても自分のペースで受けられる。支払いは、現金のほか、QR決済、クレジットカード、電子マネーが使える。年中無休と案内されているが、日程は申し込みのときに決める形なので、行きたい日が決まったら、先に電話かLINEで相談したい。"
+  },
+  "summary": "静岡県沼津市岡宮のアモアナダイビングスクールを、公式サイトの記載から整理。10歳から参加できる体験ダイビング、持ち物と集合場所、オープン・ウォーター・ダイバー講習、伊豆のファンダイビング、沼津ICから車で2分の場所と駅からの送迎をまとめた特集。",
+  "tags": [
+    "ダイビングショップ",
+    "沼津市",
+    "体験ダイビング",
+    "ライセンス講習",
+    "ファンダイビング",
+    "PADI",
+    "伊豆",
+    "初心者歓迎"
+  ],
+  "charCount": 1503,
+  "facts": [
+    {
+      "claim": "Google マップの名称は「アモアナダイビングスクール」",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "アモアナダイビングスクール",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの業種の表示は「ダイビング ショップ」",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "ダイビング ショップ",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの住所は静岡県沼津市岡宮954-35",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "〒410-0011 静岡県沼津市岡宮９５４−３５",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの電話番号は050-3570-0300",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "050-3570-0300",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(amoana.jiyusha.net)と同じ",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "amoana.jiyusha.net",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの営業時間は毎日9時から18時",
+      "source": "https://maps.google.com/?cid=16050739416356471965",
+      "quote": "月曜日 9時00分～18時00分",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの所在地は静岡県沼津市岡宮954-35(郵便番号410-0011)",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "〒410-0011 静岡県沼津市岡宮954-35",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの電話番号は050-3570-0300(Google マップと同じ)",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "050-3570-0300",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "定休日は年中無休と案内している(ショップ紹介)",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "年中無休",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付時間はショップ紹介では8時から22時と書かれている",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "受付時間　8：00～22：00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付時間はトップページでは10時から22時と書かれている(ショップ紹介と異なる)",
+      "source": "https://amoana.jiyusha.net/",
+      "quote": "受付時間 10:00〜22：00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "店は沼津ICから車で2分の場所にある",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "当ショップまで沼津ICから車で2分の場所です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "電車の最寄りは三島駅か沼津駅",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "電車でお越しのお客様も三島駅か沼津駅が最寄ですので",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "行きも帰りも駅まで送迎する",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "行も帰りも駅まで送迎いたします。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "店内はリゾートをイメージした空間と案内している",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "店内はリゾートをイメージした落ち着く空間",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "PADIの5スター・ダイブセンターと案内している",
+      "source": "https://amoana.jiyusha.net/",
+      "quote": "PADI5スターダイブセンターについて",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "沖縄でもダイビングができると案内している",
+      "source": "https://amoana.jiyusha.net/",
+      "quote": "沖縄でダイビングもできます",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "初心者にもわかりやすく楽しく講習すると案内している",
+      "source": "https://amoana.jiyusha.net/",
+      "quote": "初心者の方にもわかりやすく楽しく講習等いたしますので、安心してダイビングをお楽しみいただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの海洋実習地は伊豆の海(平沢ビーチ、黄金崎ビーチ)",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "伊豆の海（平沢ビーチ、黄金崎ビーチ）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは陸でのレクチャー30分と体験1ダイブ1時間で、合計1.5時間",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "陸でのレクチャ-30分 体験１ダイブ1時間 合計（1.5時間）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは10歳から",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "■年齢 10歳～",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの内容は、ダイビングと器材の説明、水中での呼吸の練習",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "ダイビングについての説明、器材の説明、水中で呼吸の練習",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの後半は水中ツアーで魚を見る",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "後半は水中ツアーでお魚鑑賞など",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングの持ち物は水着、ハンドタオル、バスタオル、サンダル",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "水着、ハンドタオル、バスタオル、サンダル",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "持ち物にはシャンプー・リンスと昼食もある",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "シャンプーリンス、お昼ご飯",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "集合は電車なら沼津駅北口",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "電車でお越しの方 沼津駅北口まで",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "車での集合は店、ゲートウェイ函南、現地のいずれか",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "お車でお越しの方 ①当店 ②ゲートウェイ函南 ③現地集合",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは1人から参加でき、少人数制",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "お１人様からご参加いただけます。少人数制実施",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは水深5mまで潜る",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "それでも水深5ｍまで潜ります。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "体験ダイビングは1日に1〜2本で、2回潜る場合は休憩がある",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "1日に1本～2本潜ります（1時間×2回）2回潜る場合は休憩あり",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "申し込みは電話、LINE、ホームページ",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "電話、Line＠、ホームページよりお申し込みして頂き、ご希望の日程を決めます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "現金のほか、QR決済、クレジットカード、電子マネーが使える",
+      "source": "https://amoana.jiyusha.net/dsd",
+      "quote": "現金はもちろん上記のＱＲ、クレジットカード、電子マネー使えます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習は学科が2時間弱、海洋実習が2日",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "【学科】2時間弱（海洋実習後）、【海洋】2日",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習の海洋実習は2日間で4ダイブ",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "講習時間 2日間（4DIVE）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習の海洋実習地は伊豆の海全般(主に平沢、大瀬崎、黄金崎)",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "伊豆の海全般（主に平沢、大瀬崎、黄金崎）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習は連続で通わなくても、自分のペースで受けられる",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "連続で通わなくても大丈夫なのでお客様のペースで講習可。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習の学科はオンラインのデジタルビデオでも受けられる",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "学科はオンラインデジタルビデオでも可能。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "OWD講習は1人から参加でき、少人数制",
+      "source": "https://amoana.jiyusha.net/owd",
+      "quote": "お１人様からご参加いただけます。少人数制実施",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "伊豆のファンダイビングは基本2ダイブで、1人から実施",
+      "source": "https://amoana.jiyusha.net/fun_diving",
+      "quote": "お1人様から実施",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ファンダイビングのポイントに獅子浜・平沢・大瀬崎・井田・黄金崎がある",
+      "source": "https://amoana.jiyusha.net/fun_diving",
+      "quote": "獅子浜・平沢・大瀬崎・井田・黄金崎",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ファンダイビングのポイントに川奈・富戸・IOP・菖蒲沢・浮島がある",
+      "source": "https://amoana.jiyusha.net/fun_diving",
+      "quote": "川奈・富戸・IOP・菖蒲沢・浮島",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "1ダイブ60分を超えるロングダイビングもできる",
+      "source": "https://amoana.jiyusha.net/fun_diving",
+      "quote": "ロングダイビングも可能！1ダイブ60分越えも可♪",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "本栖湖でのファンダイビングを案内している",
+      "source": "https://amoana.jiyusha.net/fun_diving",
+      "quote": "本栖湖で潜ろう！",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "天気のよい日に、富士山を撮影しながらポイントへ向かう「富士山＆ダイビングツアー」を時々開いている",
+      "source": "https://amoana.jiyusha.net/shop",
+      "quote": "富士山を撮影しながらダイビングポイントまで行く富士山＆ダイビングツアーも時折開催しています。",
+      "checkedAt": "2026-10-23"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-170/hero.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/5fbfa479-0430-4f5f-ad77-3f010a000054/img/6361ec08436b1/original.jpg",
+      "pageUrl": "https://amoana.jiyusha.net/shop",
+      "what": "茶色い2階建ての建物の外観。入口の階段とウッドデッキにダイビングの旗が立ち、右手前に青い車が停まっている(公式サイトのショップ紹介の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-170/s4.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/5fbfa479-0430-4f5f-ad77-3f010a000054/img/6361f5e22af36/original.jpg",
+      "pageUrl": "https://amoana.jiyusha.net/shop",
+      "what": "青い海の向こうに雪をかぶった富士山が見え、手前に緑の岬が突き出している(公式サイトのショップ紹介の、立地を説明する欄の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-170/p1.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/5fbfa479-0430-4f5f-ad77-3f010a000054/img/64842523938ea/original.jpeg",
+      "pageUrl": "https://amoana.jiyusha.net/shop",
+      "what": "石目調の白い壁に、海のモニターとPADIの看板、器材のカタログ棚がある店内。手前に観葉植物と椅子が見える(公式サイトのショップ紹介の写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-170/p2.jpg",
+      "imageUrl": "https://cdn.peraichi.com/userData/5fbfa479-0430-4f5f-ad77-3f010a000054/img/64842514afe3a/original.jpeg",
+      "pageUrl": "https://amoana.jiyusha.net/shop",
+      "what": "木のカウンターと革のソファ、カタログの並ぶ棚がある店内。壁は石目調の白(公式サイトのショップ紹介の写真)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://amoana.jiyusha.net/"
+    },
+    {
+      "label": "公式サイト(ショップ紹介)",
+      "url": "https://amoana.jiyusha.net/shop"
+    },
+    {
+      "label": "公式サイト(体験ダイビング)",
+      "url": "https://amoana.jiyusha.net/dsd"
+    },
+    {
+      "label": "公式サイト(OWDライセンス取得)",
+      "url": "https://amoana.jiyusha.net/owd"
+    },
+    {
+      "label": "公式サイト(ファンダイビング)",
+      "url": "https://amoana.jiyusha.net/fun_diving"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16050739416356471965"
+    }
+  ],
+  "notes": "【出どころ】articles/leisure-170.json の facts(公式サイト5ページ・Google マップ)・gbp/leisure-170.json・photos/leisure-170.json だけ。本文の各文は facts の番号に結び付けて書いた。【営業時間】公式サイトの受付時間はトップが10:00-22:00、ショップ紹介が8:00-22:00で食い違い、Google マップ(9:00-18:00)とも合わないため、本文には時刻を書かず、定休日(年中無休)だけを書いた。【書かなかったこと】体験・講習・ファンダイビング・レンタルの金額、キャンセル規定、「人気」「おすすめ」「日本一」の語、PADIの表彰、代表者名、グループの飲食部門、ダイビング後の特典、機材メーカー、外部の予約サイト、駐車場(どこの駐車場かが書かれていない)。体験ダイビングの集合場所は、申し込みの経路で異なる可能性があるが、本文は公式サイトの記載だけ。【写真】公式サイト(amoana.jiyusha.net)の外観・店内・景色の写真。人物が主役の写真や水中の写真は使わない。"
+}

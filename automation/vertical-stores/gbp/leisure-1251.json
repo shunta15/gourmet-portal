@@ -1,0 +1,52 @@
+{
+  "tab": "おでかけ",
+  "tabEn": "leisure",
+  "row": 1251,
+  "sheet": {
+    "name": "三依渓流つり場",
+    "address": "",
+    "url": "",
+    "type": "専門サービス",
+    "d1": "アウトドア・マリン",
+    "d2": ""
+  },
+  "classification": {
+    "vertical": "おでかけ",
+    "sub": "アウトドア・マリン",
+    "sure": true,
+    "source": "reports/業種分類_2026-10-22/classified.json"
+  },
+  "urlKind": "none",
+  "route": "店名+Google マップ検索(内蔵ブラウザ)",
+  "queries": [
+    "三依渓流つり場"
+  ],
+  "finalUrl": "https://www.google.com/maps/place/%E4%B8%89%E4%BE%9D%E6%B8%93%E6%B5%81%E3%81%A4%E3%82%8A%E5%A0%B4/@37.000859,139.684176,17z/data=!3m1!4b1!4m6!3m5!1s0x601fbfd3325d768b:0x2d592085f786a79!8m2!3d37.000859!4d139.684176!16s%2Fg%2F1tlqq2df",
+  "verdict": "一致",
+  "verdictReason": "一覧には店名と業種ラベルしか無いため、Google マップの住所・電話・ウェブサイトを公式サイトの記載と突き合わせて同じ店と確認。住所(〒321-2803 栃木県日光市中三依1293)と電話(0288-79-0110)が公式サイトと一致し、ウェブサイトのドメイン(miyorikeiryutsuriba.jp)も一致。店名は完全一致。店名の検索結果は 1 件だけで、同名の別の店はない。",
+  "identity": [
+    "住所: Google マップ「〒321-2803 栃木県日光市中三依１２９３」＝公式サイト「〒321-2803 栃木県日光市中三依1293」",
+    "電話: Google マップ 0288-79-0110 ＝ 公式サイト TEL 0288-79-0110",
+    "ウェブサイト: Google マップ miyorikeiryutsuriba.jp ＝ 公式サイトのドメイン",
+    "店名: 一覧「三依渓流つり場」＝Google マップ「三依渓流つり場」(完全一致)",
+    "業種: 一覧のラベル「アウトドア・マリン」(分類)＝Google マップ「釣り堀」＝公式サイト(渓流の管理つり場)",
+    "cid: https://maps.google.com/?cid=204229922774346361 を開くと同じ店の画面(データID 0x601fbfd3325d768b:0x2d592085f786a79)になることを確認"
+  ],
+  "nameRelation": "exact",
+  "place": {
+    "name": "三依渓流つり場",
+    "address": "栃木県日光市中三依１２９３",
+    "category": "釣り堀",
+    "lat": 37.000859,
+    "lng": 139.684176,
+    "gbpUrl": "https://maps.google.com/?cid=204229922774346361",
+    "phone": "0288-79-0110",
+    "website": "https://miyorikeiryutsuriba.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false,
+    "ownerPost": null
+  },
+  "fetchedAt": "2026-10-23T06:50:53.000Z"
+}

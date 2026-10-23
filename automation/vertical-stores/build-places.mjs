@@ -60,6 +60,7 @@
  *   hours: null  : 営業時間が決められない店は店データに営業時間を載せない（定休日も載せない。holidays を別に書けば載せる）
  *   holidays     : 定休日の文字列（"不定休"、"第1・3月曜・火曜" など。null で載せない）
  *   name         : 店名（Google マップの名前が検索語つきで長いとき、公式サイトの呼び方に直す。例: ウルベビレッジ）
+ *   website      : 公式サイトの URL（Google マップの表示が開けない URL のとき、公式サイトの実在するページに直す。例: yawatano.co.jp → www.yawatano.co.jp）
  *
  * サイトのデータに入れないもの: 記事の facts / quote / notes / placeOverride（確認用）、星・口コミ・価格帯、写真の取得元 URL（imageUrl・pageUrl）、ownerPost。
  */
@@ -96,6 +97,9 @@ const OUT_DIR = opt("out", path.join(REPO, "lib/places/generated"));
 const UNMAPPED_FILE = opt("unmapped", path.join(HERE, "unmapped.json"));
 const PHOTOS_DIR = opt("photos", path.join(HERE, "photos"));
 const PUBLIC_DIR = opt("public", path.join(REPO, "public"));
+// 保留の店(lib/places/newVerticals.ts の HELD_PLACE_IDS)の写真の置き場。public/ に置くと URL を知っていれば開けてしまうため、公開まではここに置く。
+// 店の写真の記録(photos/<キー>.json)の path は「/_portal/vshops/<キー>/…」のままで、ここにあれば「ある」と見なす(生成物は変わらない)。公開するときは held-photos/<キー>/ を public/_portal/vshops/ へ戻す
+const HELD_PHOTOS_DIR = path.join(HERE, "held-photos");
 const OVERRIDES_DIR = opt("category-overrides", path.join(HERE, "category-overrides"));
 const SKIPPED_DIR = opt("skipped", path.join(HERE, "skipped"));
 const EXCLUDE_FILE = opt("exclude", path.join(HERE, "exclude.json"));
@@ -502,7 +506,7 @@ function loadImagesFrom(f, key, fillDims = false) {
     // 記録の path は「/_portal/vshops/…」でも「public/_portal/vshops/…」でもよい。サイト内パス（/ で始まる）にそろえる
     const rel = String(im?.path ?? "").trim().replace(/^\.?\/?public\//, "").replace(/^\/+/, "");
     if (!rel || rel.includes("..") || seen.has(rel)) continue;
-    if (!existsSync(path.join(PUBLIC_DIR, rel))) {
+    if (!existsSync(path.join(PUBLIC_DIR, rel)) && !existsSync(path.join(HELD_PHOTOS_DIR, rel.replace(/^_portal\/vshops\//, "")))) {
       warn(key, `写真 ${rel} が public/ に無いので入れない`);
       continue;
     }
@@ -513,7 +517,7 @@ function loadImagesFrom(f, key, fillDims = false) {
     let h = dim(im?.height);
     if (fillDims && !(w && h)) {
       // 特集の写真の記録には寸法が無い。og:image:width などのため、画像ファイルの JPEG のヘッダから読む（読めなければ寸法なし）
-      const d = readJpeg(readFileSync(path.join(PUBLIC_DIR, rel)));
+      const d = readJpeg(readFileSync(existsSync(path.join(PUBLIC_DIR, rel)) ? path.join(PUBLIC_DIR, rel) : path.join(HELD_PHOTOS_DIR, rel.replace(/^_portal\/vshops\//, ""))));
       if (!d.error) { w = d.width; h = d.height; }
     }
     // 写真の種類（任意）。外観 exterior・客室 room・風呂 bath・料理 meal・共用 common・周辺の景色 view。これ以外の値は入れない
@@ -667,7 +671,7 @@ for (const key of wanted) {
   const fmt = ov.hours === null ? { hours: undefined, holidays: undefined } : formatHours(ov.hoursByDay ?? p.hours, key);
   const hours = fmt.hours;
   const holidays = "holidays" in ov ? (ov.holidays ? String(ov.holidays) : undefined) : fmt.holidays;
-  const web = classifyWebsite(p.website, key);
+  const web = classifyWebsite(ov.website ? String(ov.website).trim() : p.website, key);
   // ステイは Google マップの予約リンク（広告の転送 URL・料金つき）を使わない
   const reserve = r.vertical !== "stay" && Array.isArray(p.reserveLinks) ? p.reserveLinks.find((l) => l && isHttp(l.url)) : null;
   const reservationUrl = reserve ? cleanUrl(reserve.url)?.toString() : undefined;
