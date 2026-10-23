@@ -6,10 +6,7 @@ export const SEARCH_HREF = `${BASE}/search`; // 探すページ
 export const SPECIAL_HREF = `${BASE}/special`; // 業種の特集記事の一覧
 export const PORTAL_HREF = "/"; // マチノワ トップ(総合トップ)
 
-/** 最初のページの節への飛び先(ヘッダー・フッター用)。最初のページ側の節に id="gr-kind" / "gr-area" / "gr-tag" を付ける(W1) */
-export const TOP_KIND_HREF = `${BASE}#gr-kind`;
-export const TOP_AREA_HREF = `${BASE}#gr-area`;
-export const TOP_TAG_HREF = `${BASE}#gr-tag`;
+// メモ: 最初のページの節 id="gr-kind" / "gr-area" / "gr-tag" は残してある。ヘッダー・フッターからの飛び先(TOP_*_HREF)は、メニューを「トップ・探す・特集記事」の 3 つにした(2026-10-23)ので外した。
 
 /** 店のページ(1 店 1 ページ)。id は bo0030 など(日本語を含まない) */
 export const shopHref = (id: string) => `${BASE}/shop/${encodeURIComponent(id)}`;

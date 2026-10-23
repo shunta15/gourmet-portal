@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BASE, SEARCH_HREF, SPECIAL_HREF, PORTAL_HREF, TOP_AREA_HREF, TOP_KIND_HREF, TOP_TAG_HREF, IMG_COMMON } from "./site";
+import { BASE, SEARCH_HREF, SPECIAL_HREF, IMG_COMMON } from "./site";
 
-// 本番の行き先。お気に入り・閲覧履歴は本番に機能が無いので置かない。最初のページの節(id="gr-area" など)へ飛ぶ。
-const NAV: Array<{ label: string; href: string }> = [
-  { label: "エリアから探す", href: TOP_AREA_HREF },
-  { label: "施術の種類から探す", href: TOP_KIND_HREF },
-  { label: "こだわりから探す", href: TOP_TAG_HREF },
+// メニューは「トップ」「探す」「特集記事」の 3 つだけ(2026-10-23 オーナー決定)。お気に入り・閲覧履歴は本番に機能が無いので置かない。
+// 最初のページの節へ飛ぶだけだった「エリアから探す」「施術の種類から探す」「こだわりから探す」は外した(同じ絞り込みは最初のページ本体と探すページにある)。
+// PC は、右の緑のボタン「エリアを選ぶ」が「探す」の入口を兼ねる(同じ行き先を 2 つ並べない)ので、文字のナビは pcHide の「店を探す」を除いた 2 つ。
+// スマホは、メニューを開くと 3 つ全部。マチノワ トップ・運営の案内はフッターの小さな 1 行。
+const NAV: Array<{ label: string; href: string; pcHide?: boolean }> = [
+  { label: "トップ", href: BASE },
+  { label: "店を探す", href: SEARCH_HREF, pcHide: true },
   { label: "特集記事", href: SPECIAL_HREF },
 ];
 
@@ -27,7 +29,7 @@ export default function Header() {
           <img src={`${IMG_COMMON}/logo.webp`} width={214} height={46} alt="マチノワ.Body Care からだが整うと、毎日が変わる。" />
         </Link>
         <nav className="gr-nav" aria-label="主なページ">
-          {NAV.map((n) => (
+          {NAV.filter((n) => !n.pcHide).map((n) => (
             <Link key={n.label} href={n.href}>
               {n.label}
             </Link>
@@ -57,12 +59,6 @@ export default function Header() {
             {n.label}
           </Link>
         ))}
-        <Link href={SEARCH_HREF} onClick={() => setOpen(false)}>
-          店を探す
-        </Link>
-        <Link href={PORTAL_HREF} onClick={() => setOpen(false)}>
-          マチノワ トップ
-        </Link>
       </nav>
     </header>
   );

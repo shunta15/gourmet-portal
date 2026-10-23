@@ -125,6 +125,10 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
 .gr-foot-nav a { transition: color 0.2s; }
 .gr-foot-nav a:hover { color: var(--gr-g); }
 .gr-foot-c { font-size: 11px; color: var(--gr-mut); margin-left: auto; }
+/* サイトの案内(マチノワ トップ・編集部について・掲載基準・お問い合わせ)。メニューの 3 つより小さく控えめな 1 行 */
+.gr-foot-sub { display: flex; gap: 2px 20px; flex-wrap: wrap; flex-basis: 100%; margin-top: -14px; font-size: 11px; color: var(--gr-mut); }
+.gr-foot-sub a { padding: 5px 0; transition: color 0.2s; }
+.gr-foot-sub a:hover { color: var(--gr-g); }
 
 /* ---------- 部品 ---------- */
 /* 見出しの縦線(見本の「施術の種類から探す」など) */
@@ -240,7 +244,8 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
   .gr-edge { opacity: 0.55; --gr-edge-w: 56px; }
   .gr-edge-r { --gr-edge-w: 40px; }
   .gr-foot-in { padding: 20px 16px 22px; gap: 14px; }
-  .gr-foot-c { margin-left: 0; width: 100%; }
+  .gr-foot-c { margin-left: 0; width: 100%; order: 2; }
+  .gr-foot-sub { order: 1; margin-top: -6px; }
 }
 
 /* ---------- 動きを減らす設定: 全部止めて最終の状態 ---------- */
