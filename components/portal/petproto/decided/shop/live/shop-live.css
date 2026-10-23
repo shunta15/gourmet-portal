@@ -81,9 +81,6 @@
   .lsp .lsp-hero-wr { translate: 0 calc(var(--hp, 0) * -34 * var(--u)); }
   .lsp .lsp-hero-info { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-height: calc(347 * var(--u)); padding: calc(8 * var(--u)) calc(36 * var(--u)) calc(10 * var(--u)) calc(28 * var(--u)); }
   .lsp .lsp-cat { display: inline-flex; align-items: center; max-width: 100%; height: calc(14 * var(--u)); padding: 0 calc(7 * var(--u)); border-radius: calc(7 * var(--u)); background: #ecebe8; color: #6b665f; font-size: calc(6.7 * var(--u)); letter-spacing: 0.16em; font-weight: 500; white-space: nowrap; }
-  .lsp .lsp-hero-heart { position: absolute; left: calc(274.5 * var(--u)); top: calc(5 * var(--u)); width: calc(26 * var(--u)); height: calc(26 * var(--u)); }
-  .lsp .lsp-hero-heart svg { width: calc(22.5 * var(--u)); height: calc(22.5 * var(--u)); stroke: #26231f; overflow: visible; }
-  .lsp .lsp-hero-heart svg path { stroke-width: 1.35; }
   .lsp .lsp-name { margin: calc(5 * var(--u)) 0 0; max-width: 100%; padding-right: calc(8 * var(--u)); font-family: var(--pt-ff-min); font-weight: 400; font-size: calc(26 * var(--u)); line-height: calc(36 * var(--u)); letter-spacing: 0.01em; color: #111; overflow-wrap: anywhere; }
   .lsp .lsp-name--l { font-size: calc(21 * var(--u)); line-height: calc(29 * var(--u)); }
   .lsp .lsp-name--m { font-size: calc(17 * var(--u)); line-height: calc(25 * var(--u)); letter-spacing: 0.02em; }
@@ -284,9 +281,6 @@
   .lsp .lsp-nophoto span { font-size: 13px; letter-spacing: 0.3em; padding-left: 0.3em; font-weight: 500; }
   .lsp .lsp-hero-info { position: relative; padding: 18px 16px 6px; }
   .lsp .lsp-cat { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 11px; background: #ecebe8; color: #6b665f; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; }
-  .lsp .lsp-hero-heart { position: absolute; right: 10px; top: 12px; width: 40px; height: 40px; }
-  .lsp .lsp-hero-heart svg { width: 28px; height: 28px; stroke: #26231f; overflow: visible; }
-  .lsp .lsp-hero-heart svg path { stroke-width: 1.35; }
   .lsp .lsp-name { margin: 10px 44px 0 0; font-family: var(--pt-ff-min); font-weight: 400; font-size: 34px; line-height: 44px; letter-spacing: 0.01em; color: #111; overflow-wrap: anywhere; }
   .lsp .lsp-name--l { font-size: 29px; line-height: 38px; }
   .lsp .lsp-name--m { font-size: 24px; line-height: 33px; }

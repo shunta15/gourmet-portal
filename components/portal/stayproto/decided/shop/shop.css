@@ -30,7 +30,7 @@
 .sh-hero[data-n="2"] .sh-hero-s1 { grid-row: 1 / 3; }
 .sh-hero-s1 img, .sh-hero-s2 img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
-/* 右の箱(見本は 1泊の料金・日付・人数・予約の箱。ここは 種類・事実の欄・「公式サイトで空室を確認」・お気に入り・シェア。見本と同じ大きさ 185 × 319) */
+/* 右の箱(見本は 1泊の料金・日付・人数・予約の箱。ここは 種類・事実の欄・「公式サイトで空室を確認」・シェア。見本と同じ大きさ 185 × 319) */
 .sh-panel { grid-column: 3; grid-row: 1 / 3; align-self: start; margin: 0 calc(15 * var(--u)) 0 calc(9 * var(--u)); padding: calc(13 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u)); min-height: calc(319 * var(--u)); background: #fbfaf6; display: flex; flex-direction: column; min-width: 0; }
 .sh-hero[data-n="1"] .sh-panel, .sh-hero[data-n="0"] .sh-panel { grid-column: 3; }
 .sh-panel-cap { font-size: var(--sy-fs-2xs); letter-spacing: 0.06em; color: var(--sy-mut); line-height: 1.5; }
@@ -55,8 +55,6 @@
 .sh-act { position: relative; display: inline-flex; align-items: center; gap: calc(5 * var(--u)); min-height: 44px; padding: 0 calc(4 * var(--u)); border: 0; background: transparent; font: inherit; font-size: var(--sy-fs-2xs); letter-spacing: 0.04em; color: var(--sy-text); cursor: pointer; transition: color 0.25s; white-space: nowrap; }
 .sh-act svg { width: max(15px, calc(12 * var(--u))); height: max(15px, calc(12 * var(--u))); flex: none; }
 .sh-act:hover { color: var(--sy-gold-d); }
-.sh-act.is-on { color: var(--sy-heart); }
-.sh-act.is-on svg path { fill: currentColor; }
 .sh-act-msg { position: absolute; left: 0; top: calc(100% - 8px); font-size: var(--sy-fs-2xs); color: var(--sy-gold-d); }
 .sh-act-msg:empty { display: none; }
 

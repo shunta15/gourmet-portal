@@ -11,7 +11,7 @@ import { searchHref } from "../search/data";
 import TrackedA from "./Track";
 import ShopTabs, { type ShopTab } from "./ShopTabs";
 import PhotoRail from "./PhotoRail";
-import { FavButton, ShareButton } from "./Actions";
+import { ShareButton } from "./Actions";
 import { FacIcon, RowIconEl } from "./FacIcons";
 import { loadStayShopDetail, type Sec, type SPhoto, type ShopDetail } from "./data";
 import { localBusiness, breadcrumb } from "@/lib/seo/jsonld";
@@ -23,7 +23,7 @@ import "./shop.css";
 
 /**
  * 宿の紹介ページ(本番 /stay/shop/{id})。オーナーの見本「2_店舗紹介」と同じ組み立て・大きさ・余白で、中身は実在の宿(getPlaces('stay'))。
- *   濃紺の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで空室を確認」・お気に入り・シェア)→ 追従タブ →
+ *   濃紺の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで空室を確認」・シェア。お気に入りのハートは外した)→ 追従タブ →
  *   「この宿で過ごす時間」(横長の大きな写真に見出し 2 行+文を重ねる)→ 客室(左に文・右に写真の横送り)→ 温泉(左に文・右に大 1+小 2)→ お食事(同)→
  *   施設・サービス(アイコンが横に並ぶ)→ 基本情報・アクセス・Google マップ → 紹介記事。
  * 文は copy.ts(宿ごとに記事の事実から書いた短い文)。長い説明は各節の「〇〇の詳細を見る」で開く。CSS は shop.css(接頭辞 sh-)。
@@ -33,7 +33,7 @@ import "./shop.css";
  *  - 右の箱の「28,000円〜」「ベストレート」・日付と人数の選択 → 宿の種類・札・事実の欄(チェックイン/アウトの時刻・所在地・客室など。選べない表示)と「公式サイトで空室を確認」の外部リンク
  *  - 「口コミ」のタブと節 → 外した / 「特集記事」→「紹介記事」(その宿の記事のページへ。特集のデータは未整備)
  *  - 客室・温泉・お食事の詩的な見出しと文 → 紹介記事の事実だけで書いた短い見出しと文。温泉の札が無い宿は「お風呂」、お風呂が無ければ共用スペース・庭など、食事を出さない宿はキッチン・BBQ など事実のある節
- *  - 「閲覧履歴」(ヘッダー)は共通部品の帯のまま(検索・お気に入り・メニュー)
+ *  - 「お気に入りに追加」(押しても保存されない見た目だけのボタン)と「閲覧履歴」(ヘッダー)は外した(2026-10-23 オーナー決定。ヘッダーはメニュー 3 つだけ)
  */
 
 const nameSize = (n: number) => (n <= 10 ? "xl" : n <= 18 ? "l" : n <= 30 ? "m" : "s");
@@ -115,7 +115,6 @@ function Hero({ d }: { d: ShopDetail }) {
           {primary.ext ? <IconExternal /> : <IconArrow />}
         </TrackedA>
         <div className="sh-acts">
-          <FavButton name={s.name} />
           <ShareButton url={shareTarget(d.path)} title={`${s.name}｜${VERTICALS.stay.brand}`} storeId={s.id} page={d.path} />
         </div>
       </aside>

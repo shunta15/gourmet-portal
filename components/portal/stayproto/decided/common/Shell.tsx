@@ -26,7 +26,7 @@ export const REF_WIDTH: Record<StayPage, number> = { top: 1024, search: 1024, sh
 export default function Shell({ page = "top", footer = true, mode = "proto", children }: { page?: StayPage; footer?: boolean; mode?: SyMode; children: React.ReactNode }) {
   return (
     <div className="sy-shell" data-sy-page={page} style={{ ["--sy-ref" as string]: REF_WIDTH[page] } as CSSProperties}>
-      <Header mode={mode} page={page} />
+      <Header mode={mode} />
       <div className="sy-main" id="sy-main">
         {children}
       </div>

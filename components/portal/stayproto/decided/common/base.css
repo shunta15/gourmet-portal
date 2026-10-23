@@ -71,8 +71,7 @@
   --sy-ngap: 22; /* ナビの間隔 */
   --sy-iw: 58; /* 右のアイコン 1 つぶんの幅 */
   --sy-rx: 24; /* 右のアイコン群の右の余白 */
-  --sy-ctaw: max(96px, calc(92 * var(--u))); /* 最初のページの「宿を探す →」の幅 */
-  --sy-cut: max(65%, calc(var(--sy-nx) * var(--u) + 40 * max(11px, calc(var(--sy-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
+  --sy-cut: 65%; /* 探すの帯の明るい部分の右端(見本は 65%。ナビは 3 つで短いので、この中に収まる) */
   position: relative;
   font-size: var(--sy-fs-m);
   transition: --sy-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
@@ -122,9 +121,8 @@ body:has(.sy-root) button, body:has(.sy-root) a { cursor: pointer; }
 .sy-shell[data-sy-page="top"] .sy-head, .sy-shell[data-sy-page="search"] .sy-head { margin-bottom: calc(var(--sy-hh) * -1); }
 .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) { background: transparent; border-bottom-color: transparent; color: #fff; }
 .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) .sy-head-logo { color: var(--sy-ink); text-shadow: none; }
-.sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi, .sy-head-cta) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+.sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) { background: linear-gradient(90deg, rgba(250, 248, 243, 0.98) 0, rgba(250, 248, 243, 0.98) var(--sy-cut), transparent var(--sy-cut)); border-bottom-color: transparent; }
-.sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { color: #fff; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .sy-shell[data-sy-page="shop"] .sy-head { background: rgba(15, 26, 29, 0.98); color: #f1ede4; border-bottom-color: rgba(255, 255, 255, 0.06); }
 .sy-shell[data-sy-page="article"] .sy-head { border-bottom-color: rgba(60, 50, 30, 0.1); }
 .sy-head.is-scrolled { background: rgba(250, 248, 243, 0.96); color: var(--sy-text); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(60, 50, 30, 0.06), 0 6px 18px rgba(40, 32, 18, 0.06); }
@@ -142,36 +140,16 @@ body:has(.sy-root) button, body:has(.sy-root) a { cursor: pointer; }
 .sy-shell[data-sy-page="article"] .sy-head-nav a + a::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: calc(10 * var(--u)); min-height: 10px; translate: 0 -50%; background: rgba(60, 50, 30, 0.22); }
 .sy-shell[data-sy-page="article"] .sy-head-nav a::after { left: calc(var(--sy-ngap) / 2 * var(--u)); right: auto; width: 0; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
 .sy-shell[data-sy-page="article"] .sy-head-nav a:hover::after { width: calc(100% - var(--sy-ngap) * var(--u)); }
-.sy-head-ic { position: absolute; right: calc(var(--sy-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; align-items: center; }
+/* メニューの開閉ボタン(ハンバーガー)は、ナビを出さないスマホ(999px 以下。下の media)だけ。PC は 3 つのナビが並ぶので出さない(2026-10-23) */
+.sy-head-ic { position: absolute; right: calc(var(--sy-rx) * var(--u)); top: 50%; translate: 0 -50%; display: none; align-items: center; }
 .sy-hi { width: calc(var(--sy-iw) * var(--u)); min-width: 46px; display: flex; flex-direction: column; align-items: center; gap: calc(4 * var(--u) * var(--hs)); padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
 .sy-hi:hover { opacity: 0.7; }
 .sy-hi-i { display: block; width: max(17px, calc(15 * var(--u) * var(--hs))); height: max(17px, calc(15 * var(--u) * var(--hs))); }
 .sy-hi-i svg { width: 100%; height: 100%; display: block; }
 .sy-hi-l { font-size: max(10px, calc(7 * var(--u) * var(--hs))); font-weight: 500; letter-spacing: 0.06em; line-height: 1.2; white-space: nowrap; }
-.sy-hi.is-on { color: var(--sy-heart); }
-.sy-hi.is-on .sy-hi-i path { fill: currentColor; }
-/* 記事・最初のページは、アイコンの横に字(見本) */
-.sy-shell[data-sy-page="article"] .sy-hi, .sy-shell[data-sy-page="top"] .sy-hi { flex-direction: row; width: auto; min-width: 0; gap: calc(7 * var(--u)); margin-left: calc(26 * var(--u)); }
-.sy-shell[data-sy-page="top"] .sy-hi { margin-left: calc(20 * var(--u)); }
-.sy-shell[data-sy-page="top"] .sy-head-ic { right: calc(var(--sy-rx) * var(--u) + var(--sy-ctaw) + 22 * var(--u)); }
-.sy-shell[data-sy-page="top"] .sy-hi--menu, .sy-shell[data-sy-page="top"] .sy-hi:first-child .sy-hi-l { display: none; } /* 最初の見本は 検索(アイコンだけ)・お気に入り・「宿を探す」の枠だけ */
-/* 最初のページの右端「宿を探す →」(枠だけのボタン) */
-.sy-head-cta { position: absolute; right: calc(var(--sy-rx) * var(--u)); top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; justify-content: center; gap: calc(9 * var(--u)); width: var(--sy-ctaw); height: max(30px, calc(29 * var(--u))); border: 1px solid currentColor; border-radius: 999px; font-size: max(11px, calc(8.8 * var(--u))); font-weight: 500; letter-spacing: 0.1em; color: inherit; background: rgba(15, 20, 20, 0.28); backdrop-filter: blur(3px); transition: background 0.3s, color 0.3s, border-color 0.3s; }
-.sy-head-cta svg { width: calc(11 * var(--u)); min-width: 11px; height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
-.sy-head-cta:hover { background: rgba(15, 20, 20, 0.5); }
-.sy-head-cta:hover svg { transform: translateX(calc(3 * var(--u))); }
-.sy-head.is-scrolled .sy-head-cta { background: transparent; border-color: rgba(21, 19, 15, 0.45); }
-.sy-head.is-scrolled .sy-head-cta:hover { background: var(--sy-deep); color: #fff; border-color: var(--sy-deep); }
-/* 1000〜1199px 幅は、最初・記事のアイコンの字(お気に入りなど)をやめてアイコンだけにする(ナビと重ならないように) */
-@media (min-width: 1000px) and (max-width: 1199px) {
-  .sy-shell[data-sy-page="top"] .sy-hi-l, .sy-shell[data-sy-page="article"] .sy-hi-l { display: none; }
-  .sy-shell[data-sy-page="top"] .sy-hi, .sy-shell[data-sy-page="article"] .sy-hi { margin-left: calc(14 * var(--u)); }
-}
-/* 宿の紹介は、アイコン群の左に細い縦線(見本) */
-.sy-shell[data-sy-page="shop"] .sy-head-ic { padding-left: calc(18 * var(--u)); border-left: 1px solid rgba(255, 255, 255, 0.12); height: calc(var(--sy-hh) * 0.72); }
 /* メニューの開閉(三本線 → 閉じる) */
 .sy-hi[aria-expanded="true"] .sy-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
-.sy-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgba(250, 248, 243, 0.99); color: var(--sy-text); border: 1px solid var(--sy-line); box-shadow: var(--sy-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
+.sy-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: none; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgba(250, 248, 243, 0.99); color: var(--sy-text); border: 1px solid var(--sy-line); box-shadow: var(--sy-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
 .sy-drawer[data-open="1"] { opacity: 1; visibility: visible; translate: 0 calc(4 * var(--u)); pointer-events: auto; }
 .sy-drawer a { padding: max(11px, calc(8 * var(--u))) calc(18 * var(--u)); font-size: max(13px, calc(9 * var(--u))); font-weight: 500; letter-spacing: 0.08em; transition: background 0.2s, color 0.2s; }
 .sy-drawer a:hover { background: var(--sy-cream); color: var(--sy-gold-d); }
@@ -309,17 +287,15 @@ body:has(.sy-root) button, body:has(.sy-root) a { cursor: pointer; }
   /* 帯は全ページ、地のある帯(最初・探すも重ねない)。宿の紹介だけ濃い紺 */
   .sy-shell[data-sy-page="top"] .sy-head, .sy-shell[data-sy-page="search"] .sy-head { margin-bottom: 0; }
   .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled), .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) { background: rgba(250, 248, 243, 0.98); color: var(--sy-text); border-bottom-color: rgba(60, 50, 30, 0.08); }
-  .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi, .sy-head-cta), .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { text-shadow: none; }
-  .sy-shell[data-sy-page="search"] .sy-head:not(.is-scrolled) .sy-head-ic { color: inherit; }
+  .sy-shell[data-sy-page="top"] .sy-head:not(.is-scrolled) :is(.sy-head-nav a, .sy-hi) { text-shadow: none; }
   .sy-head-in { width: 100%; }
   .sy-head-logo { left: 16px; }
-  .sy-head-nav, .sy-head-cta { display: none; }
-  .sy-head-ic, .sy-shell[data-sy-page="top"] .sy-head-ic, .sy-shell[data-sy-page="shop"] .sy-head-ic { right: 6px; padding-left: 0; border-left: 0; height: auto; }
+  .sy-head-nav { display: none; }
+  .sy-head-ic { display: flex; right: 6px; }
   .sy-shell[data-sy-page] .sy-hi { flex-direction: column; justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; margin-left: 0; }
-  .sy-shell[data-sy-page="top"] .sy-hi--menu { display: flex; }
   .sy-hi-i { width: 22px; height: 22px; }
   .sy-hi-l { display: none; }
-  .sy-drawer { left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
+  .sy-drawer { display: flex; left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
   .sy-drawer a { padding: 14px 10px; font-size: 15px; border-bottom: 1px solid var(--sy-line); }
   .sy-drawer a:last-child { border-bottom: 0; }
   .sy-shell [id] { scroll-margin-top: 66px; }
