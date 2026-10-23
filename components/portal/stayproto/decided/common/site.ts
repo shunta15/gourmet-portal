@@ -7,10 +7,6 @@ export const ARTICLES_HREF = `${BASE}/article`; // 宿の記事の一覧(「特�
 export const ARTICLE_HREF = `${BASE}/article/sample`; // 記事の本文
 export const PORTAL_HREF = "/"; // マチノワ 総合トップ
 
-/** 最初のページの節への飛び先(ヘッダー・フッター用)。最初のページ側の節に id="sy-area" / "sy-type" を付ける */
-export const TOP_AREA_HREF = `${BASE}#sy-area`;
-export const TOP_TYPE_HREF = `${BASE}#sy-type`;
-
 /** 画像の置き場(public)。共通は ${IMG}/common/、ページごとは ${IMG}/top/・search/・shop/・article/ */
 export const IMG = "/_portal/stayproto/decided";
 export const IMG_COMMON = `${IMG}/common`;
@@ -39,10 +35,7 @@ export type SyLinks = {
   search: string;
   /** 記事の一覧 */
   articles: string;
-  /** 最初のページの節への飛び先 */
-  areaAnchor: string;
-  typeAnchor: string;
-  /** マチノワステイについて(proto は行き先が無いので #) */
+  /** 編集部について(総合サイトの /about。proto は行き先が無いので #) */
   about: string;
   /** 探すページ(引数つき。空の項目は付けない) */
   searchWith: (f: SySearchArgs) => string;
@@ -59,8 +52,6 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
       home: LIVE_BASE,
       search,
       articles: `${LIVE_BASE}/article`,
-      areaAnchor: `${LIVE_BASE}#sy-area`,
-      typeAnchor: `${LIVE_BASE}#sy-type`,
       about: "/about",
       searchWith: (f) => {
         const p = new URLSearchParams();
@@ -78,8 +69,6 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
     home: BASE,
     search: SEARCH_HREF,
     articles: ARTICLES_HREF,
-    areaAnchor: TOP_AREA_HREF,
-    typeAnchor: TOP_TYPE_HREF,
     about: "#",
     searchWith: () => SEARCH_HREF,
     shop: () => SHOP_HREF,

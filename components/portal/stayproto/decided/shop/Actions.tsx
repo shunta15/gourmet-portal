@@ -2,19 +2,7 @@
 
 import { useState } from "react";
 import { trackTap } from "@/lib/portal/track";
-import { IconHeart } from "../common/Icons";
 import { IconShare } from "../search/StayIcons";
-
-/** 「お気に入りに追加」(見た目だけの切り替え。保存はしない。ヘッダー・一覧のハートと同じ) */
-export function FavButton({ name }: { name: string }) {
-  const [on, setOn] = useState(false);
-  return (
-    <button type="button" className={`sh-act ${on ? "is-on" : ""}`} aria-pressed={on} aria-label={`${name}をお気に入りに追加`} onClick={() => setOn((v) => !v)}>
-      <IconHeart />
-      <span>お気に入りに追加</span>
-    </button>
-  );
-}
 
 /**
  * 「この宿をシェア」。スマホなどで共有シートが使えるときはそれ、使えないときはリンクのコピー(コピーできなければ何もしない)。

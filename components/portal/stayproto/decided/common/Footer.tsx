@@ -2,11 +2,11 @@ import Link from "next/link";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconInstagram, IconX, IconYoutube } from "./Icons";
-import { syLinks, type SyMode } from "./site";
+import { PORTAL_HREF, syLinks, type SyMode } from "./site";
 
 /**
- * 下の帯(見本の記事ページの最後の帯: ロゴ+ナビ 4 つ+SNS)。全ページ共通。
- * 本番 live は、SNS(公式アカウントが無い)を出さず、代わりに 編集部について・掲載基準・お問い合わせ(総合サイトの実在のページ)と © を 2 行目に出す。
+ * 下の帯(見本の記事ページの最後の帯: ロゴ+ナビ+SNS)。全ページ共通。ナビはヘッダーのメニューと同じ 3 つ(ステイ トップ・宿を探す・特集記事。2026-10-23 オーナー決定)。
+ * 本番 live は、SNS(公式アカウントが無い)を出さず、代わりに 小さな案内の 1 行(マチノワ トップ・編集部について・掲載基準・お問い合わせ。総合サイトの実在のページ。メニューの数には数えない)と © を 2 行目に出す。
  * 試作 proto は見本どおり SNS 3 つ(行き先は #)。
  */
 export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
@@ -19,11 +19,10 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
           <Link href={L.home} aria-label="マチノワステイ トップ" className="sy-foot-logo-link">
             <Logo className="sy-foot-logo" />
           </Link>
-          <nav className="sy-foot-nav" aria-label="サイトの案内">
-            <Link href={L.areaAnchor}>エリアから探す</Link>
-            <Link href={L.typeAnchor}>宿の種類から探す</Link>
+          <nav className="sy-foot-nav" aria-label="マチノワステイ">
+            <Link href={L.home}>ステイ トップ</Link>
+            <Link href={L.search}>宿を探す</Link>
             <Link href={L.articles}>特集記事</Link>
-            <a href={L.about}>マチノワステイについて</a>
           </nav>
           <div className="sy-foot-r">
             {live ? null : (
@@ -46,6 +45,7 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
           <p className="sy-foot-links">
             {live ? (
               <>
+                <a href={PORTAL_HREF}>マチノワ トップ</a>
                 <a href="/about">編集部について</a>
                 <a href="/editorial/guidelines">掲載基準</a>
                 <a href="/contact">お問い合わせ</a>

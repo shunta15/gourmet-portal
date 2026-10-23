@@ -3,35 +3,35 @@
 import { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { IconSearch, IconHeart, IconMenu, IconArrow } from "./Icons";
+import { IconMenu } from "./Icons";
 import { syLinks, type SyMode } from "./site";
 
-// 見本のナビ 4 つ(エリアから探す・宿の種類から探す・特集記事・マチノワステイについて)。
+// メニューは「トップ」「探す」「特集記事」の 3 つだけ(2026-10-23 オーナー決定: 業種のページは 4 種類 = 最初・店舗紹介・探す・記事。
+// 宿の紹介は 1 軒ごとのページなので、メニューには置かない。最初のページ・探す・記事に並ぶ宿の札から入る)。
+// 以前の「エリアから探す」「宿の種類から探す」(最初のページの中の節へ飛ぶだけ)・「マチノワステイについて」(/about。フッターに残す)・
+// 検索のアイコンと最初のページの「宿を探す →」の枠(どちらも探すと同じ行き先)・お気に入りのハート(押しても保存されない見た目だけのボタン)・PC のメニューのドロワーは外した。
 function navOf(mode: SyMode): Array<{ label: string; href: string }> {
   const L = syLinks(mode);
   return [
-    { label: "エリアから探す", href: L.areaAnchor },
-    { label: "宿の種類から探す", href: L.typeAnchor },
+    { label: "ステイ トップ", href: L.home },
+    { label: "宿を探す", href: L.search },
     { label: "特集記事", href: L.articles },
-    { label: "マチノワステイについて", href: L.about },
   ];
 }
 
 /**
- * 4 枚の見本に共通の上の帯。左にロゴ、ナビ 4 つ、右に 検索・お気に入り・メニュー(アイコン+小さな字)。
- * 4 枚の見本は帯の高さ・地の色・ナビの位置・アイコンの並べ方が少しずつ違うので、Shell の page で base.css が切り替える:
- *   top     … 地が透けてヒーローの上に重なる。ロゴは濃い字、ナビと右のアイコンは白(写真の上)。右端に「宿を探す →」の枠だけのボタン。スクロールすると明るい帯になる
- *   search  … 左 65% が明るい帯、右は透けてヒーローの写真の上(白いアイコン)。アイコンは字が下。スクロールすると全面が明るい帯になる
- *   shop    … 濃い紺の帯(明るい字)。アイコンは字が下
- *   article … 明るい帯(濃い字)。アイコンの横に字
+ * 4 枚の見本に共通の上の帯。左にロゴ、ナビ 3 つ(PC)。スマホ(999px 以下)はナビの代わりに右にメニュー(ハンバーガー)だけで、開くと同じ 3 つ。
+ * 4 枚の見本は帯の高さ・地の色・ナビの位置が少しずつ違うので、Shell の page で base.css が切り替える:
+ *   top     … 地が透けてヒーローの上に重なる。ロゴは濃い字、ナビは白(写真の上)。スクロールすると明るい帯になる
+ *   search  … 左 65% が明るい帯、右は透けてヒーローの写真の上。スクロールすると全面が明るい帯になる
+ *   shop    … 濃い紺の帯(明るい字)
+ *   article … 明るい帯(濃い字)。ナビの間に細い縦線
  * 隠れる/現れる・今のヘッダーの下端(--sy-hy)は Motion の MotionFx が受け持つ([data-sy-head])。
- * お気に入りは見た目だけの切り替え(ペットと同じ。保存はしない)。
  */
-export default function Header({ mode = "proto", page = "top" }: { mode?: SyMode; page?: "top" | "search" | "shop" | "article" }) {
+export default function Header({ mode = "proto" }: { mode?: SyMode }) {
   const L = syLinks(mode);
   const NAV = navOf(mode);
   const [open, setOpen] = useState(false);
-  const [fav, setFav] = useState(false);
   return (
     <header className="sy-head" data-sy-head>
       <div className="sy-head-in">
@@ -46,18 +46,6 @@ export default function Header({ mode = "proto", page = "top" }: { mode?: SyMode
           ))}
         </nav>
         <div className="sy-head-ic">
-          <Link href={L.search} className="sy-hi" aria-label="検索" onClick={() => setOpen(false)}>
-            <span className="sy-hi-i">
-              <IconSearch />
-            </span>
-            <span className="sy-hi-l">検索</span>
-          </Link>
-          <button type="button" className={`sy-hi ${fav ? "is-on" : ""}`} aria-pressed={fav} aria-label="お気に入り" onClick={() => setFav((v) => !v)}>
-            <span className="sy-hi-i">
-              <IconHeart />
-            </span>
-            <span className="sy-hi-l">お気に入り</span>
-          </button>
           <button type="button" className="sy-hi sy-hi--menu" aria-label="メニュー" aria-expanded={open} aria-controls="sy-drawer" onClick={() => setOpen((v) => !v)}>
             <span className="sy-hi-i">
               <IconMenu />
@@ -65,12 +53,6 @@ export default function Header({ mode = "proto", page = "top" }: { mode?: SyMode
             <span className="sy-hi-l">メニュー</span>
           </button>
         </div>
-        {page === "top" ? (
-          <Link href={L.search} className="sy-head-cta" onClick={() => setOpen(false)}>
-            <span>宿を探す</span>
-            <IconArrow />
-          </Link>
-        ) : null}
       </div>
       <nav id="sy-drawer" className="sy-drawer" aria-label="メニュー" data-open={open ? "1" : "0"}>
         {NAV.map((n) => (
@@ -78,12 +60,6 @@ export default function Header({ mode = "proto", page = "top" }: { mode?: SyMode
             {n.label}
           </Link>
         ))}
-        <Link href={L.search} onClick={() => setOpen(false)}>
-          宿を探す
-        </Link>
-        <Link href={L.home} onClick={() => setOpen(false)}>
-          マチノワステイ トップ
-        </Link>
       </nav>
     </header>
   );
