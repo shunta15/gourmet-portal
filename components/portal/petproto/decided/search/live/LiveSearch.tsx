@@ -347,7 +347,7 @@ function Side({ facets, hasFeatures }: { facets: PetFacets; hasFeatures: boolean
             <span>ペットのお店の特集記事を</span>
             <span>まとめて読めます。</span>
           </p>
-          <Link href={L.articles} className="lsr-feat-btn pt-press pt-magnet">
+          <Link href={L.specials} className="lsr-feat-btn pt-press pt-magnet">
             <span>特集を見る</span>
             <IconArrow />
           </Link>
@@ -359,7 +359,7 @@ function Side({ facets, hasFeatures }: { facets: PetFacets; hasFeatures: boolean
 
 /**
  * 青空の帯のフッター(見本の探すのもの)。行き先は実在のページだけ。SNS・利用規約など行き先のない物は出さない。
- * ナビの部分はヘッダーのメニューと同じ 3 つ(ペット トップ・お店を探す・特集記事)。エリア・種類の飛び先は外した(探すの中の絞り込みに同じものがある。2026-10-23 オーナー決定)。
+ * ナビの部分はヘッダーのメニューと同じ 4 つ(トップ・お店を探す・店舗紹介・特集)。エリア・種類の飛び先は外した(探すの中の絞り込みに同じものがある。2026-10-24 オーナー決定)。
  * もう 1 つの列は、サイトとして必要な小さな案内の 1 行(マチノワ トップ・編集部について・掲載基準・お問い合わせ)。メニューの数には数えない。
  */
 function SearchFooter() {
@@ -383,13 +383,16 @@ function SearchFooter() {
             <h3>マチノワPet</h3>
             <ul>
               <li>
-                <Link href={L.home}>ペット トップ</Link>
+                <Link href={L.home}>トップ</Link>
               </li>
               <li>
                 <Link href={L.search}>お店を探す</Link>
               </li>
               <li>
-                <Link href={L.articles}>特集記事</Link>
+                <Link href={L.shops}>店舗紹介</Link>
+              </li>
+              <li>
+                <Link href={L.specials}>特集</Link>
               </li>
             </ul>
           </nav>

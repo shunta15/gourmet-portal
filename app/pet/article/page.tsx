@@ -1,27 +1,9 @@
-import PetFrame from "@/components/portal/petproto/decided/common/PetFrame";
-import PetArticles from "@/components/portal/petproto/decided/article/live/PetArticles";
-import { countPlaces } from "@/lib/places";
-import { buildMetadata } from "@/lib/seo/meta";
-import { VERTICALS } from "@/lib/verticals";
+import { permanentRedirect } from "next/navigation";
+import { assertPortalLive } from "@/lib/portal/launch";
 
-// ペットの記事の一覧(決定デザイン ④。店の特集記事・紹介記事と、種類・利用シーンの入口)。/pet/article
-// 記事のリンク先は店のページ /pet/shop/{id}(店の詳細と特集記事は同じページ)。外枠は PetFrame。
-// robots は他の新業種ページと同じ gate(業種の掲載が 3 件未満なら noindex。buildMetadata の count)。
-export async function generateMetadata() {
-  const v = VERTICALS.pet;
-  return buildMetadata({
-    vertical: "pet",
-    title: `ペットの記事・利用シーン｜${v.brand}`,
-    description: "ペットと行けるお店の紹介記事と、種類・利用シーンから探せるページです。メニューや設備、行き方など、確認できた情報をまとめています。",
-    path: `${v.path}/article`,
-    count: await countPlaces("pet"),
-  });
-}
-
+// 店の記事の一覧 /pet/article は、店舗紹介の一覧 /pet/shop へ恒久の転送(308)。2026-10-24 オーナー決定: 店 1 軒の記事は店のページの中にあり、一覧は店舗紹介にまとめる。
+// ペットは店の記事が店のページ /pet/shop/{id} の中に入っているので、記事ごとの URL は無い(転送はこの一覧だけ)。公開スイッチ OFF のあいだは 404(assertPortalLive)。
 export default function Page() {
-  return (
-    <PetFrame>
-      <PetArticles />
-    </PetFrame>
-  );
+  assertPortalLive();
+  permanentRedirect("/pet/shop");
 }

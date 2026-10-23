@@ -17,7 +17,8 @@ export default function PetNotFound() {
         <p className="pt-nf-links">
           <Link href={L.home}>マチノワPetのトップへ</Link>
           <Link href={L.search}>お店を探す</Link>
-          <Link href={L.articles}>記事を見る</Link>
+          <Link href={L.shops}>店舗紹介を見る</Link>
+          <Link href={L.specials}>特集を見る</Link>
         </p>
       </section>
     </Shell>

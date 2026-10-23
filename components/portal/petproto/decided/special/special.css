@@ -1,0 +1,90 @@
+/* ペットの特集(本番 /pet/special・/pet/special/{slug})。接頭辞 psp-。色・書体は共通(../common/base.css)の --pt-* を使う。
+   ボディケアの特集(一覧 + 目次つきの記事 + あわせて読む + 戻る導線)を手本にした作り。見本の画像が無いページなので、--u の寸法でなく px で組む(読む幅 880px)。 */
+
+.psp { background: var(--pt-paper); color: var(--pt-ink); }
+.psp-in { width: min(880px, calc(100% - 40px)); margin: 0 auto; }
+
+/* ---------- 見出しの帯 ---------- */
+.psp-hero { padding: 30px 0 42px; background: var(--pt-sec); border-bottom: 1px solid var(--pt-line); }
+.psp-crumb { display: flex; flex-wrap: wrap; gap: 4px 0; font-size: 12px; line-height: 1.7; letter-spacing: 0.08em; color: var(--pt-mut); }
+.psp-crumb-i { display: inline-flex; align-items: center; }
+.psp-crumb i { font-style: normal; margin: 0 10px; opacity: 0.55; }
+.psp-crumb a { transition: color 0.2s; }
+.psp-crumb a:hover { color: var(--pt-brown); }
+.psp-label { margin: 26px 0 0; font-family: var(--pt-ff-en); font-size: 13px; line-height: 1; letter-spacing: 0.16em; color: var(--pt-brown); }
+.psp-h1 { text-wrap: balance; margin: 12px 0 0; font-family: var(--pt-ff-min); font-weight: 600; font-size: 26px; line-height: 1.6; letter-spacing: 0.06em; color: #26221e; overflow-wrap: anywhere; }
+.psp-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 14px 0 0; font-size: 12.5px; letter-spacing: 0.08em; color: var(--pt-mut); }
+.psp-lead { margin: 20px 0 0; font-size: 14.5px; line-height: 2; letter-spacing: 0.04em; color: var(--pt-ink2); }
+
+/* ---------- 一覧のカード(一覧ページと、記事の「あわせて読む」) ---------- */
+.psp-list { padding: 36px 0 12px; }
+.psp-list ul, .psp-rel ul { display: grid; gap: 16px; }
+.psp-card { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 12px; padding: 22px 20px 20px; background: #fff; border: 1px solid var(--pt-line); border-radius: 10px; box-shadow: 0 2px 10px rgba(80, 60, 40, 0.06); }
+.psp-card-n { font-family: var(--pt-ff-en); font-size: 28px; line-height: 1.1; color: var(--pt-brown-l); }
+.psp-card-b { display: block; min-width: 0; }
+.psp-card-k { display: inline-flex; align-items: center; height: 22px; padding: 0 10px; border-radius: 999px; background: var(--pt-brown-bg); color: var(--pt-brown-d); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
+.psp-card-t { text-wrap: balance; margin: 10px 0 0; font-family: var(--pt-ff-min); font-weight: 700; font-size: 17px; line-height: 1.65; letter-spacing: 0.05em; color: #26221e; overflow-wrap: anywhere; }
+.psp-card-d { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; margin-top: 8px; font-size: 13px; line-height: 1.9; letter-spacing: 0.03em; color: #625c56; }
+.psp-card-go { display: inline-flex; align-items: center; gap: 10px; margin-top: 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: var(--pt-brown); }
+.psp-card-ar { width: 26px; height: 26px; }
+.psp-card-ar > * { width: 11px; }
+.psp-card:hover { border-color: #d8cdbf; }
+
+/* ---------- 記事の本体 ---------- */
+.psp-body { padding: 34px 0 8px; }
+.psp-toc { padding: 20px 20px 14px; background: var(--pt-sec); border: 1px solid var(--pt-line); border-radius: 10px; }
+.psp-toc-h { margin: 0 0 6px; font-family: var(--pt-ff-min); font-weight: 700; font-size: 15px; letter-spacing: 0.08em; color: #26221e; }
+.psp-toc ol { display: grid; }
+.psp-toc a { display: flex; align-items: baseline; gap: 12px; padding: 10px 2px; border-top: 1px solid var(--pt-line); font-size: 14px; line-height: 1.7; letter-spacing: 0.04em; color: var(--pt-ink2); transition: color 0.2s; }
+.psp-toc li:first-child a { border-top: 0; }
+.psp-toc a:hover { color: var(--pt-brown); }
+.psp-no { flex: none; font-family: var(--pt-ff-en); font-size: 15px; line-height: 1; color: var(--pt-brown-l); }
+.psp-toc-t { min-width: 0; overflow-wrap: anywhere; }
+
+.psp-sec { margin-top: 42px; }
+.psp-h2 { display: flex; align-items: baseline; gap: 12px; margin: 0; padding-bottom: 12px; border-bottom: 2px solid var(--pt-brown-bg); font-family: var(--pt-ff-min); font-weight: 700; font-size: 20px; line-height: 1.6; letter-spacing: 0.06em; color: #26221e; overflow-wrap: anywhere; }
+.psp-h2 .psp-no { font-size: 20px; }
+.psp-p { margin: 16px 0 0; font-size: 15px; line-height: 2.05; letter-spacing: 0.035em; color: #3a342e; overflow-wrap: anywhere; }
+.psp-p + .psp-p { margin-top: 12px; }
+
+.psp-stores { margin-top: 20px; padding: 16px 16px 14px; background: var(--pt-sec); border-radius: 8px; }
+.psp-stores-h { margin: 0 0 10px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; color: var(--pt-mut); }
+.psp-stores ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.psp-store { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; min-height: 40px; padding: 6px 12px 6px 14px; background: #fff; border: 1px solid var(--pt-line); border-radius: 999px; font-size: 13px; line-height: 1.5; letter-spacing: 0.03em; color: var(--pt-ink); transition: border-color 0.2s, color 0.2s, background 0.2s; }
+.psp-store-n { min-width: 0; font-weight: 700; overflow-wrap: anywhere; }
+.psp-store-k { flex: none; padding: 1px 8px; border-radius: 999px; background: var(--pt-brown-bg); font-size: 11px; color: var(--pt-brown-d); letter-spacing: 0.06em; }
+.psp-store svg { flex: none; width: 12px; height: auto; color: var(--pt-brown); transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
+.psp-store:hover { border-color: var(--pt-brown); color: var(--pt-brown); }
+.psp-store:hover svg { transform: translateX(3px); }
+
+.psp-closing { margin: 44px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--pt-brown-l); font-family: var(--pt-ff-min); font-size: 15px; line-height: 2; letter-spacing: 0.05em; color: #4a443e; }
+
+/* ---------- あわせて読む・戻る導線 ---------- */
+.psp-rel { padding-top: 54px; }
+.psp-rel-h { margin: 0 0 16px; font-family: var(--pt-ff-min); font-weight: 700; font-size: 18px; letter-spacing: 0.08em; color: #26221e; }
+.psp-back { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: 46px 0 0; padding: 22px 0 60px; border-top: 1px solid var(--pt-line); }
+.psp-back-l { width: 100%; font-size: 12.5px; letter-spacing: 0.1em; color: var(--pt-mut); }
+.psp-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-width: 170px; height: 46px; padding: 0 22px; border: 1px solid var(--pt-brown); border-radius: 999px; background: var(--pt-brown); color: #fff; font-family: var(--pt-ff-min); font-size: 14px; font-weight: 700; letter-spacing: 0.08em; transition: background 0.25s, color 0.25s; }
+.psp-btn svg { width: 13px; height: auto; }
+.psp-btn:hover { background: var(--pt-brown-d); border-color: var(--pt-brown-d); }
+.psp-btn--line { background: #fff; color: var(--pt-brown); }
+.psp-btn--line:hover { background: var(--pt-brown); color: #fff; border-color: var(--pt-brown); }
+
+@media (min-width: 860px) {
+  .psp-hero { padding: 40px 0 54px; }
+  .psp-h1 { font-size: 34px; }
+  .psp-lead { font-size: 15.5px; }
+  .psp-list { padding-top: 48px; }
+  .psp-list ul, .psp-rel ul { gap: 20px; }
+  .psp-card { grid-template-columns: 84px minmax(0, 1fr); gap: 6px 16px; padding: 28px 32px 26px 28px; }
+  .psp-card-n { font-size: 42px; }
+  .psp-card-t { font-size: 21px; }
+  .psp-card-d { font-size: 14px; }
+  .psp-body { padding-top: 46px; }
+  .psp-toc { padding: 24px 30px 18px; }
+  .psp-sec { margin-top: 56px; }
+  .psp-h2 { font-size: 23px; }
+  .psp-h2 .psp-no { font-size: 22px; }
+  .psp-p { font-size: 16px; }
+  .psp-stores { padding: 18px 22px 16px; }
+}

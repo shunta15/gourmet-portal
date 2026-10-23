@@ -171,8 +171,8 @@ function Feature({ items }: { items: LiveArticle[] }) {
             <br />
             メニューや設備、行き方など、確認できた情報をまとめています。
           </p>
-          <Link className="pt-more tp-more pt-press pt-magnet io" href={L.articles} data-magnet="0.5" data-magnet-r="60">
-            すべての特集記事を見る
+          <Link className="pt-more tp-more pt-press pt-magnet io" href={L.shops} data-magnet="0.5" data-magnet-r="60">
+            すべての店舗紹介を見る
             <IconArrow />
           </Link>
         </div>
@@ -290,7 +290,7 @@ function Scenes({ scenes }: { scenes: ReturnType<typeof scenesWithShops> }) {
             <FillHeading as="span">Scene</FillHeading>
           </h2>
           <span className="pt-h2-sub tp-sub tp-asub io">利用シーンから探す</span>
-          <Link className="pt-more tp-more pt-press pt-magnet io" href={`${L.articles}#ar-scene`} data-magnet="0.5" data-magnet-r="60">
+          <Link className="pt-more tp-more pt-press pt-magnet io" href={L.specials} data-magnet="0.5" data-magnet-r="60">
             すべてのシーンを見る
             <IconArrow />
           </Link>
