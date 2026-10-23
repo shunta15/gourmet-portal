@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   if (HOME_DESIGN === "machi2") {
     assertPortalLive();
     // airy.css / simple.css は .h2-airy / .h2-simple の下の規則だけなので、定数が false のときは読み込んでも見た目は変わらない
-    return <MachiShell prod airy={HOME_AIRY} simple={HOME_SIMPLE}>{children}</MachiShell>;
+    return <MachiShell airy={HOME_AIRY} simple={HOME_SIMPLE}>{children}</MachiShell>;
   }
   return <PortalLayout hub>{children}</PortalLayout>;
 }

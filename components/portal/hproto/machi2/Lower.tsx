@@ -30,12 +30,6 @@ const VINES: readonly (readonly [string, number, number, number, number])[] = [
   ["v6", CATS[CATS.length - 1].px + CATS[CATS.length - 1].pw + 10 - 20, 415, 52, 275],
 ];
 const TTL = [..."今日はどんな"].map((c) => ({ c, k: 0 })).concat([..."楽しみ"].map((c) => ({ c, k: 1 })), [..."を見つける？"].map((c) => ({ c, k: 0 })));
-const NEWS = [
-  { img: "news1.webp", date: "2025.04.12", t: ["春のまちでおすすめスポットを開催！"], y: 722 },
-  { img: "news2.webp", date: "2025.04.08", t: ["駅前に新しいカフェがオープンしました"], y: 764 },
-  { img: "news3.webp", date: "2025.04.01", t: ["ゴールデンウィークの", "おすすめ特集を公開！"], y: 806 },
-  { img: "news4.webp", date: "2025.03.28", t: ["ペットと楽しめる公園特集を追加しました"], y: 850 },
-];
 const CARDS = [
   { k: "story", x: 41, w: 252, t: "まちのストーリー", d: ["宮崎・高岡町で34年続くうどん屋を", "お孫さんが受け継ぐ話をご紹介"], href: `/feature/${CARD_FEATURE.story}`, op: "50% 50%", b: { x: 168, y: 5, w: 84, h: 50, l: ["34年続く店を", "孫が受け継ぐ"], f: 10.2 } },
   { k: "family", x: 310, w: 267, t: "家族でおでかけ", d: ["上野動物園や葛西臨海公園など、", "東京の子連れスポットを5つご紹介"], href: `/feature/${CARD_FEATURE.family}`, op: "50% 50%", b: { x: 189, y: 4, w: 74, h: 46, l: ["年齢で選べる", "定番の施設。"], f: 10.2 } },
@@ -45,52 +39,38 @@ const CARDS = [
 /** 記事の実際の写真を出すカード(story・family)の写真。渡されていない・他のカードは undefined(= 今までの画像) */
 const ph = (k: string, cards?: CardPhotos) => (k === "story" || k === "family" ? cards?.[k] : undefined);
 
-const DEMO_FOOT = {
-  l: [["マチノワについて", "/about"], ["掲載をご検討の方へ", "/contact"], ["お知らせ", "/feature"], ["よくあるご質問", "/contact"]] as [string, string][],
-  r: [["利用規約", "/terms"], ["プライバシーポリシー", "/privacy"], ["お問い合わせ", "/contact"]] as [string, string][],
-  copy: "© 2025 マチノワ Machinowa. All rights reserved.",
-};
 const NEWS_Y = [722, 764, 806, 850];
 
-/** prod = 本番の形（最新情報は news の実データ・フッターは実在するページだけ）。試作は渡さない。
- *  cats = 試作用。渡されたら、業種の節(見出し+札 8 枚+つる)の代わりに `<section class="h2-cats h2-cats-x" style="--oy:394">` の中に描く(節の箱=位置・幅・高さ・上の余白は既定のまま)。渡さなければ今まで通り。 */
-export default function Lower({ prod = false, news, cards, cats }: { prod?: boolean; news?: NewsRow[]; cards?: CardPhotos; cats?: React.ReactNode }) {
-  /** 業種の節を丸ごと差し替える(試作用)。渡さなければ今まで通り(見出し+札 8 枚+つる) */
-  const custom = cats != null && cats !== false;
-  const foot = prod ? PROD_FOOT : DEMO_FOOT;
-  const rows = prod && news
-    ? news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href, real: true }))
-    : NEWS.map((n) => ({ src: `${B}${n.img}`, date: n.date, t: n.t, y: n.y, href: "/feature", real: false }));
+/** news = 「まちの最新情報」(特集記事の実データ。news.ts の latestNews)。フッターは実在するページだけ(prodData.ts の PROD_FOOT)。 */
+export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPhotos }) {
+  const foot = PROD_FOOT;
+  const rows = news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href }));
   return (
     <>
       {/* 1. 業種の札 8 枚(間に花のつる) */}
-      <section className={custom ? "h2-cats h2-cats-x" : "h2-cats"} style={OY(394)} aria-label="業種から探す">
-        {custom ? cats : (
-          <>
-            <h2 className="h2-a h2-ttl" data-io style={P(330, 399, 522, 44)} aria-label="今日はどんな楽しみを見つける？">
-              <svg className="h2-tick h2-tick-l" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 20 12 4M14 21l8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
-              <span className="h2-ttl-t" aria-hidden="true">{TTL.map((x, i) => <i key={i} className={x.k ? "h2-tk" : undefined} style={{ ["--c" as string]: i }}>{x.c}</i>)}</span>
-              <svg className="h2-tick h2-tick-r" viewBox="0 0 30 24" aria-hidden="true"><path d="M27 20 18 4M16 21l-8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
-            </h2>
-            <img className="h2-a h2-decor h2-sway" style={P(168, 396, 140, 44)} src={`${B}decor-l.webp`} alt="" />
-            <img className="h2-a h2-decor h2-sway h2-sway2" style={P(836, 396, 280, 44)} src={`${B}decor-r.webp`} alt="" />
-            <div className="h2-cardrow" data-io>
-              {CATS.map((c, i) => (
-                <Link key={c.k} href={c.href} className="h2-cat h2-press" style={{ ["--i" as string]: i, ["--x0" as string]: c.px - 10, ["--w0" as string]: c.pw + 20 }}>
-                  <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
-                  <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
-                  <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
-                  <span className={c.long ? "h2-a h2-catn is-long" : "h2-a h2-catn"} style={P(c.px - 10, 586, c.pw + 20, 26)}>{c.name}</span>
-                  <span className="h2-a h2-cats-sub" style={P(c.px - 10, 613.5, c.pw + 20, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
-                  <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
-                </Link>
-              ))}
-            </div>
-            {VINES.map(([k, x, y, w, h], i) => (
-              <span key={`${k}-${i}`} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
-            ))}
-          </>
-        )}
+      <section className="h2-cats" style={OY(394)} aria-label="業種から探す">
+        <h2 className="h2-a h2-ttl" data-io style={P(330, 399, 522, 44)} aria-label="今日はどんな楽しみを見つける？">
+          <svg className="h2-tick h2-tick-l" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 20 12 4M14 21l8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
+          <span className="h2-ttl-t" aria-hidden="true">{TTL.map((x, i) => <i key={i} className={x.k ? "h2-tk" : undefined} style={{ ["--c" as string]: i }}>{x.c}</i>)}</span>
+          <svg className="h2-tick h2-tick-r" viewBox="0 0 30 24" aria-hidden="true"><path d="M27 20 18 4M16 21l-8-15" stroke="#f08a3c" strokeWidth="2.4" strokeLinecap="round" /></svg>
+        </h2>
+        <img className="h2-a h2-decor h2-sway" style={P(168, 396, 140, 44)} src={`${B}decor-l.webp`} alt="" />
+        <img className="h2-a h2-decor h2-sway h2-sway2" style={P(836, 396, 280, 44)} src={`${B}decor-r.webp`} alt="" />
+        <div className="h2-cardrow" data-io>
+          {CATS.map((c, i) => (
+            <Link key={c.k} href={c.href} className="h2-cat h2-press" style={{ ["--i" as string]: i, ["--x0" as string]: c.px - 10, ["--w0" as string]: c.pw + 20 }}>
+              <span className="h2-a h2-catbg" style={{ width: "100%", height: "100%" }} />
+              <span className="h2-a h2-catph" style={P(c.px, 437, c.pw, 121)}><img src={`${B}cat-${c.k}.webp`} alt="" style={{ objectPosition: c.op }} /></span>
+              <img className="h2-a h2-caticon" style={P(c.cx - 27, 532, 54, 54)} src={`${B}ic-${c.k}.webp`} alt="" />
+              <span className={c.long ? "h2-a h2-catn is-long" : "h2-a h2-catn"} style={P(c.px - 10, 586, c.pw + 20, 26)}>{c.name}</span>
+              <span className="h2-a h2-cats-sub" style={P(c.px - 10, 613.5, c.pw + 20, 34)}>{c.sub.map((t, j) => <span key={j}>{t}</span>)}</span>
+              <i className="h2-a h2-catarr" style={{ ...P(c.cx - 14, c.ay, 28, 28), background: c.col }}>→</i>
+            </Link>
+          ))}
+        </div>
+        {VINES.map(([k, x, y, w, h], i) => (
+          <span key={`${k}-${i}`} className="h2-a h2-vinew" data-io style={{ ...P(x, y, w, h), ["--i" as string]: i }}><img className="h2-vine" src={`${B}${k}.webp`} alt="" /></span>
+        ))}
       </section>
 
       {/* 2. 春の特集+まちの最新情報 */}
@@ -104,9 +84,9 @@ export default function Lower({ prod = false, news, cards, cats }: { prod?: bool
             {rows.map((n, i) => (
               <li key={i} className="h2-a h2-nrow" style={{ ...P(7, n.y, 436, 40), ["--i" as string]: i }}>
                 <Link href={n.href} className="h2-nlink">
-                  <span className="h2-nth"><img src={n.src} alt="" {...(n.real ? { loading: "lazy" as const, decoding: "async" as const } : {})} /></span>
+                  <span className="h2-nth"><img src={n.src} alt="" loading="lazy" decoding="async" /></span>
                   {n.date && <span className="h2-nd">{n.date}</span>}
-                  <span className={n.real ? "h2-nti h2-nti-real" : "h2-nti"}>{n.t.map((t, j) => <span key={j}>{t}</span>)}</span>
+                  <span className="h2-nti h2-nti-real">{n.t.map((t, j) => <span key={j}>{t}</span>)}</span>
                   <i className="h2-nchev" aria-hidden="true">›</i>
                 </Link>
               </li>

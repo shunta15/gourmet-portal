@@ -4,17 +4,15 @@ import Motion from "./Motion";
 import { maru, mplus, yusei, kure, script, pop } from "./fonts";
 import "./base.css";
 
-/** 共通の枠。試作では、いちばん上に細い帯(見本であることの表示)を 1 本だけ付ける。prod(本番の形)では帯を出さない。 */
-/** airy = 圧迫感を減らす版(airy.css が .h2-airy を指す)。本番の総合トップは airy と simple を渡している */
-/** still = 試作 /proto-home/still 用(最初の画面が 1 枚の絵で季節の切り替えなし → 季節の舞う物 Petals を出さない)。本番は渡さない=今のまま */
+/** 共通の枠(総合トップ app/portal-home の layout が使う)。 */
+/** airy = 圧迫感を減らす版(airy.css が .h2-airy を指す) */
 /** simple = 文字色をシンプルに(simple.css が .h2-simple を指す) */
-export default function MachiShell({ children, prod = false, airy = false, simple = false, still = false }: { children: React.ReactNode; prod?: boolean; airy?: boolean; simple?: boolean; still?: boolean }) {
+export default function MachiShell({ children, airy = false, simple = false }: { children: React.ReactNode; airy?: boolean; simple?: boolean }) {
   return (
     <>
-      <Petals airy={airy} still={still} />
+      <Petals airy={airy} />
       <div className="h2-progress" aria-hidden="true" />
       <div className={`h2-root${airy ? " h2-airy" : ""}${simple ? " h2-simple" : ""} ${maru.variable} ${mplus.variable} ${yusei.variable} ${kure.variable} ${script.variable} ${pop.variable}`}>
-        {!prod && <p className="h2-notice">見本(デザイン確認用。お知らせ・日付・記事名は仮の内容です)</p>}
         <Fx />
         <Motion />
         <div className="h2-page">{children}</div>

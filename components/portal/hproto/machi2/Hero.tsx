@@ -2,31 +2,28 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import { preload } from "react-dom";
-import { IMG, STILL_SRC } from "./const";
+import { IMG } from "./const";
 import SeasonStage from "./SeasonStage";
 import { seasonSrc, type Season } from "./season";
-import { HEAD, P1_ONE, P3_ONE, MIHON_HEAD, MIHON_SUB } from "./copy";
+import { HEAD, P1_ONE, P3_ONE } from "./copy";
 import { PROD_SEARCH } from "./prodData";
 import "./hero.css";
 
 const H = `${IMG}/hero`;
-const G = "#3f9e5a", O = "#f28a2a", P = "#ee5a7a", B = "#1f93d6", R = "#e8503a", T = "#2a8f78", T2 = "#1d8aa6";
+const G = "#3f9e5a", O = "#f28a2a", P = "#ee5a7a", B = "#1f93d6";
 const COLS: Record<string, string[]> = {
   c1: [O, O, G, G, P, O, O, G],
   c2: [G, G, G, B, P, B, B],
   c3: [O, O, G, G, B, B, O],
-  m1: [O, O, T, R, T, T, T],
-  m2: [T, T, T, T2, T2, T, T, T, T, T, T, T],
 };
 const ROT = [-4, 3, -2, 4, -3, 2, 0, -2];
 
-/** still = 試作 /proto-home/still 用。背景を 1 枚の絵に(季節の切り替えなし)。文字の後ろに薄い白のぼかし(.h2-veil)を敷く。本番は渡さない=今のまま */
-export default function Hero({ mihon, season, prod = false, still = false }: { mihon: boolean; season: Season; prod?: boolean; still?: boolean }) {
-  // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)。still は 1 枚の絵だけ
-  preload(still ? STILL_SRC : seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
-  const lines = (mihon ? MIHON_HEAD : HEAD).map((t, i) => ({ k: i, chars: Array.from(t), col: COLS[(mihon ? "m" : "c") + (i + 1)] }));
-  const hlLine = mihon ? 0 : 1, hlChar = mihon ? 3 : 4;
-  const subs = mihon ? [...MIHON_SUB] : [P1_ONE, P3_ONE];
+export default function Hero({ season }: { season: Season }) {
+  // 最初の季節の絵だけ優先して読む(ほかの季節は表示後にクライアントで順に読む)
+  preload(seasonSrc(IMG, season), { as: "image", fetchPriority: "high" });
+  const lines = HEAD.map((t, i) => ({ k: i, chars: Array.from(t), col: COLS["c" + (i + 1)] }));
+  const hlLine = 1, hlChar = 4;
+  const subs = [P1_ONE, P3_ONE];
   let n = 0;
   // スマホでは 2 段落目を最後の「、」で 2 行に折る(字は変えない。折る印は css が出すだけ)
   const sub = subs.map((t, si) => { const cs = Array.from(t); return { bi: si === 1 ? cs.lastIndexOf("、") : -1, cs: cs.map((c) => ({ c, n: n++ })) }; });
@@ -35,7 +32,7 @@ export default function Hero({ mihon, season, prod = false, still = false }: { m
     <section className="h2-hero" aria-label="ヒーロー" data-season={season}>
       <div className="h2-hero-stage">
         {/* 層 1: 背景の絵(春夏秋冬・「輪」で切り替わる・ゆっくり寄る+マウスでいちばん小さく動く)と季節の札 */}
-        <SeasonStage initial={season} still={still} />
+        <SeasonStage initial={season} />
         {/* 文字の後ろの薄い白のぼかし。新しい季節の絵(川辺の公園)は中央が街並みなので、季節版でも敷く */}
         <div className="h2-veil" aria-hidden="true" />
         <div className="h2-clouds" aria-hidden="true"><i /><i /><i /></div>
@@ -71,7 +68,7 @@ export default function Hero({ mihon, season, prod = false, still = false }: { m
             ))}</span>
           ))}
         </p>
-        <form className="h2-search" role="search" action={prod ? PROD_SEARCH : "/search"}>
+        <form className="h2-search" role="search" action={PROD_SEARCH}>
           <svg className="h2-s-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.6" fill="none" stroke="#7f95b4" strokeWidth="2" /><path d="m15.4 15.4 5 5" stroke="#7f95b4" strokeWidth="2.2" strokeLinecap="round" /></svg>
           <input type="search" name="q" placeholder="エリア・駅名・お店やスポットの名前などで検索" aria-label="検索" />
           <button type="submit" className="h2-s-go h2-press"><span>検索</span></button>

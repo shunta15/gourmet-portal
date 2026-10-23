@@ -13,13 +13,11 @@
 .h2-head-r { position: absolute; left: calc(810 * var(--u)); top: calc(10 * var(--u)); height: calc(30 * var(--u)); display: flex; align-items: center; gap: calc(9 * var(--u)); }
 .h2-hsearch { width: calc(27 * var(--u)); height: calc(27 * var(--u)); border-radius: 50%; background: #fff; border: calc(1.8 * var(--u)) solid #d6a35c; display: grid; place-items: center; box-shadow: 0 calc(1 * var(--u)) calc(4 * var(--u)) rgba(0,0,0,.12); }
 .h2-hsearch svg { width: calc(14 * var(--u)); height: calc(14 * var(--u)); }
-.h2-fav { display: flex; align-items: center; gap: calc(3 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 700; color: #26386b; white-space: nowrap; text-shadow: 0 0 calc(4 * var(--u)) rgba(255,255,255,.95); }
-.h2-fav svg { width: calc(13 * var(--u)); height: calc(13 * var(--u)); }
 .h2-menu svg { width: calc(17 * var(--u)); height: calc(14 * var(--u)); display: block; }
 @media (max-width: 700px) {
   .h2-head { height: 54px; }
   .h2-logo { left: 12px; top: 5px; width: 150px; height: 44px; }
-  .h2-nav, .h2-fav { display: none; }
+  .h2-nav { display: none; }
   .h2-head-r { left: auto; right: 14px; top: 11px; gap: 12px; }
   .h2-hsearch { width: 32px; height: 32px; } .h2-hsearch svg { width: 18px; height: 18px; }
   .h2-menu svg { width: 22px; height: 18px; }

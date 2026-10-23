@@ -1,4 +1,4 @@
-/* 本番の形（app/portal-home）だけで使う部品の見た目。試作（/proto-home/machi2・/mihon）では使わない。 */
+/* 総合トップ（app/portal-home）のメニュー・最新情報の見た目。 */
 
 /* ヘッダー右: メニュー（三本線）を開くと出る一覧 */
 .h2-menuwrap { position: relative; display: flex; align-items: center; }

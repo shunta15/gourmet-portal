@@ -31,6 +31,6 @@ export const revalidate = 3600;
 
 export default async function Page() {
   // 「読みもの」カードの 2 枚(まちのストーリー・家族でおでかけ)は、リンク先の記事の実際の写真(記事ページと同じ取り方)
-  if (HOME_DESIGN === "machi2") return <Machi2Page mihon={false} season={seasonNowJst()} prod news={latestNews(4)} cards={await cardPhotos()} airy={HOME_AIRY} />;
+  if (HOME_DESIGN === "machi2") return <Machi2Page season={seasonNowJst()} news={latestNews(4)} cards={await cardPhotos()} airy={HOME_AIRY} />;
   return <PortalHome />;
 }
