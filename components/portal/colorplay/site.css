@@ -1,8 +1,14 @@
 /* COLOR PLAY(本番のビューティー・ボディケア)で、見本の CSS(bproto/colorplay/colorplay.css)に足す分。
    見本の CSS はそのまま使い、ここは「本番で増えた部品」と「業種ごとの色」だけ。 */
 
-/* メニューの全画面: 先頭の 4 つのリンク(お店を探す・エリア・種類・特集記事)を同じ大きさに(colorplay.css は 4 つめ以降を小さくする) */
-.cp-overlay li:nth-child(4) a{font-size:clamp(28px,5vw,48px); font-weight:900; opacity:1}
+/* メニューは 3 つ(トップ・お店を探す・特集記事)。全画面メニューは 3 つとも大きい字(colorplay.css が小さくするのは 4 つめ以降なので、3 つなら全部大きい)。
+   PC(901px〜)は 3 つをヘッダーに横に並べるので、全画面メニューを開くボタンはスマホ(〜900px。ヘッダーの文字リンクが消える幅)だけに出す */
+@media (min-width:901px){ .cp-menu-btn-sp{display:none} }
+/* フッター: サイトの案内(マチノワ トップ・編集部について・掲載基準・お問い合わせ)は、メニューの 3 つより小さく控えめに */
+.cp-footer ul.cp-foot-sub{margin:-8px 0 20px; gap:0 20px}
+.cp-footer .cp-foot-sub a{min-height:36px; font-size:13px; font-weight:500; opacity:.78}
+.cp-footer .cp-foot-sub a:hover{opacity:1}
+@media (max-width:900px){ .cp-footer ul.cp-foot-sub{gap:0 14px} .cp-footer .cp-foot-sub a{font-size:12px} }
 /* メニューを開いている間、ヘッダーのぼかし(backdrop-filter)を外す。ぼかしがあると、中の position:fixed の全画面が画面ではなくヘッダーの高さ(96px)に収まってしまう
    (色面に重ねる onColor のヘッダーはぼかしが無いので元から全画面。さがす・特集記事の一覧のように白い帯のヘッダーのページで直る) */
 .cp-header:has(.cp-overlay){backdrop-filter:none}
