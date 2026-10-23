@@ -1,11 +1,13 @@
 /**
  * ショート動画のデータ取得（サーバー専用。クライアントコンポーネントから import しない）。
+ *  - アクティビティの動画 6 本: lib/videos/activity.json（activity.ts。店に紐づく・横長・投稿日あり。/activity の「動画でみる」欄も同じデータを読む）
  *  - 動画ファイル: lib/regions.ts の SHORT_VIDEOS を Video に変換（file.ts）
  *  - TikTok: lib/videos/tiktok.json（automation/videos/ingest.mjs --apply が書く）
  * 店 → 駅の対応は lib/stations（駅ページと同じ規則: 店の案内に書かれた駅、または駅から直線 800m 以内）。
  */
 import type { Video } from "./types";
 import { getFileVideos } from "./file";
+import { getActivityVideos } from "./activity";
 import tiktokJson from "./tiktok.json";
 import { STORE_STATIONS } from "@/lib/stations";
 import { NEARBY_MAX_METERS } from "@/lib/stations/query";
@@ -18,7 +20,7 @@ const TIKTOK = tiktokJson as unknown as Video[];
 
 let memo: Video[] | null = null;
 
-/** 全動画。TikTok（投稿日が新しい順。投稿日が無いものは取り込み順で最後）→ 動画ファイル */
+/** 全動画。TikTok（投稿日が新しい順。投稿日が無いものは取り込み順で最後）→ アクティビティの動画（投稿日あり。データの並び）→ 動画ファイル（投稿日なし） */
 export function getAllVideos(): Video[] {
   if (memo) return memo;
   const tiktok = TIKTOK.map((v, i) => ({ v, i })).sort((a, b) => {
@@ -27,7 +29,7 @@ export function getAllVideos(): Video[] {
     if (ta !== tb) return tb - ta;
     return a.i - b.i;
   });
-  memo = [...tiktok.map((x) => x.v), ...getFileVideos()];
+  memo = [...tiktok.map((x) => x.v), ...getActivityVideos(), ...getFileVideos()];
   return memo;
 }
 
