@@ -38,6 +38,9 @@ const abs = (...p) => path.join(ROOT, ...p);
 const readJson = (p, d) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : d);
 
 const FIRST_ID = 299; // r299 から
+const NO_PRICE_FROM_ID = 526; // r526 以降は料金（budget）を出力しない
+const NG_HIGHLIGHT_RE =
+  /[0-9０-９,，千万]+円|円台|円前後|円から|予算|価格|値付け|ワンコイン|格安|お得|無料|人気|おすすめ|オススメ|お勧め|[0-9０-９]+選|No\.?\s*1|ナンバーワン|その他|癒|リフレッシュ|整える|整う|効く|効果|改善|ミシュラン|食べログ|ぐるなび|星[0-9０-９]|[0-9０-９]星|★|☆|評価|口コミ|クチコミ|レビュー/;
 const SOURCE_LABEL = "Google ビジネスプロフィール";
 const UNKNOWN_CONFIRM = "—（訪問前に公式確認）";
 const DAYS = ["月", "火", "水", "木", "金", "土", "日"];
@@ -548,7 +551,10 @@ function buildStore(entry, gbp, article, storeId) {
   const nearSpec = pickSpec(specs, SPEC_KEYS.nearest, (v) => !isVague(v) && cleanNearest(v).length > 0);
   const nearest = nearSpec ? cleanNearest(nearSpec.v) : "—";
   const budgetSpec = pickSpec(specs, SPEC_KEYS.budget, (v) => /\d|[０-９]|[千万]円|¥|￥/.test(v) && !isVague(v));
-  const budget = budgetSpec ? budgetSpec.v : undefined;
+  // r526 以降（2026-10-24 オーナー承認の追加分）は料金を店データに入れない（オーナー指示: 評価・口コミ・料金は書かない）。
+  // r525 以前は従来どおり（既存の店のデータを変えない）。
+  const noPrice = parseInt(String(storeId).slice(1), 10) >= NO_PRICE_FROM_ID;
+  const budget = budgetSpec && !noPrice ? budgetSpec.v : undefined;
 
   // --- 画像
   const imgs = listImages(entry.articleId);
@@ -557,9 +563,13 @@ function buildStore(entry, gbp, article, storeId) {
   const gallery = imgs.real.length ? imgs.real.slice(0, 6) : [...PH_GALLERY];
 
   // --- highlights
+  // r526 以降（オーナー承認の追加分）は、料金・人気・効能・他サイトの評価を含む見出しを highlights から外す
+  // （オーナー指示: 評価・口コミ・料金は書かない／おすすめ・人気・〇選・No.1・その他・癒し等の語を使わない）。
+  // r525 以前は従来どおり（既存の店のデータを変えない）。
   const highlights = (article.ranking || [])
     .map((r) => String(r.name || "").trim())
     .filter(Boolean)
+    .filter((h) => !noPrice || !NG_HIGHLIGHT_RE.test(h))
     .slice(0, 5);
 
   // --- desc
