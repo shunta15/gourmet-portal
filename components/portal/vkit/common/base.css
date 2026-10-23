@@ -90,18 +90,17 @@
   --vk-nx: 305; /* ナビの左端 */
   --vk-nfs: 9.8; /* ナビの字 */
   --vk-ngap: 22; /* ナビの間隔 */
-  --vk-iw: 58; /* 右のアイコン 1 つぶんの幅 */
-  --vk-rx: 24; /* 右のアイコン群の右の余白 */
+  --vk-rx: 24; /* 右端の余白(最初のページの「〇〇を探す →」の右の余白) */
   --vk-ctaw: max(96px, calc(var(--vk-cta-n, 92) * var(--u))); /* 最初のページの「〇〇を探す →」の幅 */
   --vk-cut: max(65%, calc(max(0px, (100% - 1600px) / 2) + var(--vk-nx) * var(--u) + var(--vk-ncc, 40) * max(11px, calc(var(--vk-nfs) * var(--u))) + 24px)); /* 探すの帯の明るい部分の右端(見本は 65%。ナビがはみ出さないよう、ナビの右端の見積もりより右に) */
   position: relative;
   font-size: var(--vk-fs-m);
   transition: --vk-hy 0.38s cubic-bezier(0.3, 0.7, 0.2, 1);
 }
-.vk-shell[data-vk-page="top"] { --vk-hh: max(52px, calc(57 * var(--u))); --hs: 1; --vk-lx: 34; --vk-nx: 305; --vk-nfs: 9.8; --vk-ngap: 22; --vk-iw: 58; --vk-rx: 27; }
-.vk-shell[data-vk-page="search"] { --vk-hh: max(52px, calc(54 * var(--u))); --hs: 0.97; --vk-lx: 31; --vk-nx: calc(246 + var(--vk-ns, 0)); --vk-nfs: 9.8; --vk-ngap: 25; --vk-iw: 58; --vk-rx: 24; }
-.vk-shell[data-vk-page="shop"] { --vk-hh: max(52px, calc(49 * var(--u))); --hs: 0.82; --vk-lx: 33; --vk-nx: calc(231 + var(--vk-ns, 0)); --vk-nfs: 8.3; --vk-ngap: 22; --vk-iw: 62; --vk-rx: 28; }
-.vk-shell[data-vk-page="article"] { --vk-hh: max(48px, calc(40 * var(--u))); --hs: 0.8; --vk-lx: 40; --vk-nx: calc(259 + var(--vk-ns, 0)); --vk-nfs: 9.4; --vk-ngap: 38; --vk-iw: 62; --vk-rx: 27; }
+.vk-shell[data-vk-page="top"] { --vk-hh: max(52px, calc(57 * var(--u))); --hs: 1; --vk-lx: 34; --vk-nx: 305; --vk-nfs: 9.8; --vk-ngap: 22; --vk-rx: 27; }
+.vk-shell[data-vk-page="search"] { --vk-hh: max(52px, calc(54 * var(--u))); --hs: 0.97; --vk-lx: 31; --vk-nx: calc(246 + var(--vk-ns, 0)); --vk-nfs: 9.8; --vk-ngap: 25; --vk-rx: 24; }
+.vk-shell[data-vk-page="shop"] { --vk-hh: max(52px, calc(49 * var(--u))); --hs: 0.82; --vk-lx: 33; --vk-nx: calc(231 + var(--vk-ns, 0)); --vk-nfs: 8.3; --vk-ngap: 22; --vk-rx: 28; }
+.vk-shell[data-vk-page="article"] { --vk-hh: max(48px, calc(40 * var(--u))); --hs: 0.8; --vk-lx: 40; --vk-nx: calc(259 + var(--vk-ns, 0)); --vk-nfs: 9.4; --vk-ngap: 38; --vk-rx: 27; }
 
 :where(.vk-root) *, :where(.vk-root) *::before, :where(.vk-root) *::after { box-sizing: border-box; }
 :where(.vk-root) a { color: inherit; text-decoration: none; }
@@ -143,7 +142,6 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) .vk-head-logo { color: var(--vk-ink); text-shadow: none; }
 .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta) { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: linear-gradient(90deg, rgb(var(--vk-paper-rgb) / 0.98) 0, rgb(var(--vk-paper-rgb) / 0.98) var(--vk-cut), transparent var(--vk-cut)); border-bottom-color: transparent; }
-.vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { color: #fff; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 .vk-shell[data-vk-page="shop"] .vk-head { background: rgb(var(--vk-night-rgb) / 0.98); color: var(--vk-onnight); border-bottom-color: rgba(255, 255, 255, 0.06); }
 .vk-shell[data-vk-page="article"] .vk-head { border-bottom-color: rgb(var(--vk-shade-rgb) / 0.1); }
 .vk-head.is-scrolled { background: rgb(var(--vk-paper-rgb) / 0.96); color: var(--vk-text); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgb(var(--vk-shade-rgb) / 0.06), 0 6px 18px rgb(var(--vk-shade-rgb) / 0.06); }
@@ -161,19 +159,12 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-shell[data-vk-page="article"] .vk-head-nav a + a::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: calc(10 * var(--u)); min-height: 10px; translate: 0 -50%; background: rgb(var(--vk-shade-rgb) / 0.22); }
 .vk-shell[data-vk-page="article"] .vk-head-nav a::after { left: calc(var(--vk-ngap) / 2 * var(--u)); right: auto; width: 0; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
 .vk-shell[data-vk-page="article"] .vk-head-nav a:hover::after { width: calc(100% - var(--vk-ngap) * var(--u)); }
+/* 右端のハンバーガー(スマホだけ。PC は上のナビ 3 つをそのまま並べるので出さない) */
 .vk-head-ic { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: flex; align-items: center; }
-.vk-hi { width: calc(var(--vk-iw) * var(--u)); min-width: 46px; display: flex; flex-direction: column; align-items: center; gap: calc(4 * var(--u) * var(--hs)); padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
+.vk-hi { display: flex; flex-direction: column; align-items: center; padding: 0; border: 0; background: transparent; color: inherit; transition: opacity 0.25s, color 0.25s; }
 .vk-hi:hover { opacity: 0.7; }
-.vk-hi-i { display: block; width: max(17px, calc(15 * var(--u) * var(--hs))); height: max(17px, calc(15 * var(--u) * var(--hs))); }
+.vk-hi-i { display: block; width: 22px; height: 22px; }
 .vk-hi-i svg { width: 100%; height: 100%; display: block; }
-.vk-hi-l { font-size: max(10px, calc(7 * var(--u) * var(--hs))); font-weight: 500; letter-spacing: 0.06em; line-height: 1.2; white-space: nowrap; }
-.vk-hi.is-on { color: var(--vk-heart); }
-.vk-hi.is-on .vk-hi-i path { fill: currentColor; }
-/* 記事・最初のページは、アイコンの横に字(見本) */
-.vk-shell[data-vk-page="article"] .vk-hi, .vk-shell[data-vk-page="top"] .vk-hi { flex-direction: row; width: auto; min-width: 0; gap: calc(7 * var(--u)); margin-left: calc(26 * var(--u)); }
-.vk-shell[data-vk-page="top"] .vk-hi { margin-left: calc(20 * var(--u)); }
-.vk-shell[data-vk-page="top"] .vk-head-ic { right: calc(var(--vk-rx) * var(--u) + var(--vk-ctaw) + 22 * var(--u)); }
-.vk-shell[data-vk-page="top"] .vk-hi--menu, .vk-shell[data-vk-page="top"] .vk-hi:first-child .vk-hi-l { display: none; } /* 最初の見本は 検索(アイコンだけ)・お気に入り・「〇〇を探す」の枠だけ */
 /* 最初のページの右端「〇〇を探す →」(枠だけのボタン) */
 .vk-head-cta { position: absolute; right: calc(var(--vk-rx) * var(--u)); top: 50%; translate: 0 -50%; display: inline-flex; align-items: center; justify-content: center; gap: calc(9 * var(--u)); width: var(--vk-ctaw); height: max(30px, calc(29 * var(--u))); border: 1px solid currentColor; border-radius: 999px; font-size: max(11px, calc(8.8 * var(--u))); font-weight: 500; letter-spacing: 0.1em; color: inherit; background: rgba(15, 20, 20, 0.28); backdrop-filter: blur(3px); transition: background 0.3s, color 0.3s, border-color 0.3s; }
 .vk-head-cta svg { width: calc(11 * var(--u)); min-width: 11px; height: auto; transition: transform 0.35s cubic-bezier(0.3, 0.7, 0.2, 1); }
@@ -181,19 +172,15 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
 .vk-head-cta:hover svg { transform: translateX(calc(3 * var(--u))); }
 .vk-head.is-scrolled .vk-head-cta { background: transparent; border-color: rgb(var(--vk-ink-rgb) / 0.45); }
 .vk-head.is-scrolled .vk-head-cta:hover { background: var(--vk-deep); color: #fff; border-color: var(--vk-deep); }
-/* 1000〜1199px 幅は、最初・記事のアイコンの字(お気に入りなど)をやめてアイコンだけにする(ナビと重ならないように) */
-@media (min-width: 1000px) and (max-width: 1199px) {
-  .vk-shell[data-vk-page="top"] .vk-hi-l, .vk-shell[data-vk-page="article"] .vk-hi-l { display: none; }
-  .vk-shell[data-vk-page="top"] .vk-hi, .vk-shell[data-vk-page="article"] .vk-hi { margin-left: calc(14 * var(--u)); }
-}
-/* 店の紹介は、アイコン群の左に細い縦線(見本) */
-.vk-shell[data-vk-page="shop"] .vk-head-ic { padding-left: calc(18 * var(--u)); border-left: 1px solid rgba(255, 255, 255, 0.12); height: calc(var(--vk-hh) * 0.72); }
 /* メニューの開閉(三本線 → 閉じる) */
 .vk-hi[aria-expanded="true"] .vk-menu-lines { d: path("M5 5l14 14M5 19L19 5"); }
 .vk-drawer { position: absolute; z-index: 5; right: calc(20 * var(--u)); top: 100%; width: max(220px, calc(210 * var(--u))); display: flex; flex-direction: column; padding: calc(6 * var(--u)) 0; background: rgb(var(--vk-paper-rgb) / 0.99); color: var(--vk-text); border: 1px solid var(--vk-line); box-shadow: var(--vk-sh2); opacity: 0; visibility: hidden; translate: 0 calc(-8 * var(--u)); pointer-events: none; transition: opacity 0.25s, translate 0.3s cubic-bezier(0.3, 0.7, 0.2, 1), visibility 0.25s; }
 .vk-drawer[data-open="1"] { opacity: 1; visibility: visible; translate: 0 calc(4 * var(--u)); pointer-events: auto; }
 .vk-drawer a { padding: max(11px, calc(8 * var(--u))) calc(18 * var(--u)); font-size: max(13px, calc(9 * var(--u))); font-weight: 500; letter-spacing: 0.08em; transition: background 0.2s, color 0.2s; }
 .vk-drawer a:hover { background: var(--vk-cream); color: var(--vk-gold-d); }
+@media (min-width: 1000px) {
+  .vk-head-ic, .vk-drawer { display: none; } /* PC はナビ 3 つをそのまま並べる。ハンバーガーとその中身はスマホ(999px 以下)だけ */
+}
 
 /* ---------- フッター(見本の記事ページの最後の帯: ロゴ+ナビ+SNS。下に小さな 2 行目) ---------- */
 .vk-root .vk-foot { position: relative; z-index: 1; margin: 0; padding: 0; background: var(--vk-cream); color: var(--vk-text); border-top: 1px solid var(--vk-line); } /* グルメ共通の footer{} の色・余白を打ち消す */
@@ -330,16 +317,12 @@ body:has(.vk-root) button, body:has(.vk-root) a { cursor: pointer; }
   /* 帯は全ページ、地のある帯(最初・探すも重ねない)。店の紹介だけ濃い面 */
   .vk-shell[data-vk-page="top"] .vk-head, .vk-shell[data-vk-page="search"] .vk-head { margin-bottom: 0; }
   .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled), .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) { background: rgb(var(--vk-paper-rgb) / 0.98); color: var(--vk-text); border-bottom-color: rgb(var(--vk-shade-rgb) / 0.08); }
-  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta), .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { text-shadow: none; }
-  .vk-shell[data-vk-page="search"] .vk-head:not(.is-scrolled) .vk-head-ic { color: inherit; }
+  .vk-shell[data-vk-page="top"] .vk-head:not(.is-scrolled) :is(.vk-head-nav a, .vk-hi, .vk-head-cta) { text-shadow: none; }
   .vk-head-in { width: 100%; }
   .vk-head-logo { left: 16px; }
   .vk-head-nav, .vk-head-cta { display: none; }
-  .vk-head-ic, .vk-shell[data-vk-page="top"] .vk-head-ic, .vk-shell[data-vk-page="shop"] .vk-head-ic { right: 6px; padding-left: 0; border-left: 0; height: auto; }
-  .vk-shell[data-vk-page] .vk-hi { flex-direction: column; justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; margin-left: 0; }
-  .vk-shell[data-vk-page="top"] .vk-hi--menu { display: flex; }
-  .vk-hi-i { width: 22px; height: 22px; }
-  .vk-hi-l { display: none; }
+  .vk-head-ic { right: 6px; }
+  .vk-hi { justify-content: center; width: 44px; min-width: 44px; height: 44px; gap: 1px; }
   .vk-drawer { left: 0; right: 0; width: auto; border-left: 0; border-right: 0; padding: 4px 8px 10px; }
   .vk-drawer a { padding: 14px 10px; font-size: 15px; border-bottom: 1px solid var(--vk-line); }
   .vk-drawer a:last-child { border-bottom: 0; }

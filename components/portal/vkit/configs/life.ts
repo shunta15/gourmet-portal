@@ -15,7 +15,7 @@ export const lifeCfg: VkConfig = {
   noun: "場所",
   nounEn: "Places",
   ctaW: 100,
-  fx: { photoDim: 0.94, heroDim: 1.3, areaDim: 0.58, navShift: 0, navChars: 40 },
+  fx: { photoDim: 0.94, heroDim: 1.3, areaDim: 0.58, navShift: 0, navChars: 18 },
   theme: {
     paper: "#fbf8f1",
     paper2: "#fdfbf6",
