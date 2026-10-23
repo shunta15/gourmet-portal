@@ -1,7 +1,6 @@
 import { verticalSitemap } from "@/components/portal/pages/sitemap";
 import { loadArticleItems, articleListHref } from "@/lib/portal/colorplay/articles";
 import { BEAUTY_SITE } from "@/lib/portal/colorplay/site";
-import { isColorplay } from "@/lib/portal/verticalDesign";
 import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 
@@ -14,7 +13,6 @@ const base = verticalSitemap("beauty");
 // 一覧の件数は、一覧ページの robots と同じ(引数なしの一覧は記事 3 本以上で index)。"legacy" のあいだは一覧が 404 なので載せない。
 export default async function sitemap() {
   const list = await base();
-  if (!isColorplay("beauty")) return list;
   const items = await loadArticleItems(BEAUTY_SITE);
   return isIndexable(items.length) ? [...list, { url: absUrl(articleListHref(BEAUTY_SITE)) }] : list;
 }

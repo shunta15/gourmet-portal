@@ -1,7 +1,7 @@
 import { categoryPage } from "@/components/portal/pages/category";
 import { categoryRedirectPage } from "@/components/portal/colorplay/pages/redirects";
 
-// COLOR PLAY（lib/portal/verticalDesign.ts）のあいだは /beauty/search?kind=… へ恒久の転送。"legacy" なら元の種類ページ。
+// /beauty/search?kind=… へ恒久の転送（COLOR PLAY）。
 const page = categoryRedirectPage("beauty", categoryPage("beauty"));
 
 export const revalidate = 3600;
