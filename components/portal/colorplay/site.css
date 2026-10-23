@@ -1,9 +1,11 @@
 /* COLOR PLAY(本番のビューティー・ボディケア)で、見本の CSS(bproto/colorplay/colorplay.css)に足す分。
    見本の CSS はそのまま使い、ここは「本番で増えた部品」と「業種ごとの色」だけ。 */
 
-/* メニューは 3 つ(トップ・お店を探す・特集記事)。全画面メニューは 3 つとも大きい字(colorplay.css が小さくするのは 4 つめ以降なので、3 つなら全部大きい)。
-   PC(901px〜)は 3 つをヘッダーに横に並べるので、全画面メニューを開くボタンはスマホ(〜900px。ヘッダーの文字リンクが消える幅)だけに出す */
+/* メニューは 4 つ(トップ・お店を探す・店舗紹介・特集)。全画面メニューは 4 つとも同じ大きい字にする
+   (colorplay.css は 4 つめ以降の字を小さくする=見本の「補助のメニュー」の決まりなので、ここで 4 つめも大きい字に戻す)。
+   PC(901px〜)は 4 つをヘッダーに横に並べるので、全画面メニューを開くボタンはスマホ(〜900px。ヘッダーの文字リンクが消える幅)だけに出す */
 @media (min-width:901px){ .cp-menu-btn-sp{display:none} }
+.cp-overlay li:nth-child(n+4) a{font-size:clamp(28px,5vw,48px); font-weight:900; opacity:1}
 /* フッター: サイトの案内(マチノワ トップ・編集部について・掲載基準・お問い合わせ)は、メニューの 3 つより小さく控えめに */
 .cp-footer ul.cp-foot-sub{margin:-8px 0 20px; gap:0 20px}
 .cp-footer .cp-foot-sub a{min-height:36px; font-size:13px; font-weight:500; opacity:.78}

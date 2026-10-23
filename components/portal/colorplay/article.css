@@ -1,4 +1,4 @@
-/* COLOR PLAY(本番のビューティー)の特集記事(/beauty/article・/beauty/article/{id})。
+/* COLOR PLAY(本番のビューティー)の店の記事のページ(/beauty/article/{id})と、特集・記事の札(/beauty/special の札も .art-card を使う)。
    見本の CSS(bproto/colorplay/colorplay.css)と店のページの CSS(site.css の .sh-*)の部品をそのまま使い、ここは「記事の一覧の札」と「記事の写真・最後の帯」だけ。
    動きは transform・opacity だけ(新しい帯・流れる文字・飾りは足さない)。動きを減らす設定・JS なしでは、動かない完成形のまま読める。 */
 

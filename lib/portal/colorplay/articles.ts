@@ -1,5 +1,6 @@
 /**
- * COLOR PLAY(本番のビューティー)の「特集記事」(/{v}/article と /{v}/article/{id})のデータ読み込み。サーバー専用。
+ * COLOR PLAY(本番のビューティー)の「店の特集記事・紹介記事」(/{v}/article/{id})のデータ読み込み。サーバー専用。
+ * (記事の一覧ページ /{v}/article は、2026-10-24 のオーナー決定で店舗紹介の一覧 /{v}/shop へ 308 転送。一覧用の URL・絞り込みはここに無い)
  * 店の紹介文・事実は既存のデータ(lib/places の JSON)をそのまま使い、新しい事実・数字を足さない。文は店のページと同じ点検(./text.ts)に通す。
  *
  * 記事になる店 = 特集記事(features-{v}.json。店 ID が placeId と完全に一致するもの)がある店、または店の紹介記事(Place.article)で
@@ -11,7 +12,6 @@ import { getGeneratedFeatures, type PlaceFeature } from "@/lib/places/features";
 import { getGeneratedPlaces } from "@/lib/places/newVerticals";
 import { isUsableImage } from "@/lib/portal/photoRules";
 import { loadDetail, loadShops } from "./data";
-import { PAGE_SIZE } from "./search";
 import type { CpSite } from "./site";
 import { cleanLine, cleanParagraphs, firstSentence } from "./text";
 import type { CpPhoto, CpShop } from "./types";
@@ -62,27 +62,6 @@ export type CpArticle = {
 };
 
 export const articleHref = (site: CpSite, id: string) => `${site.base}/article/${encodeURIComponent(id)}`;
-
-export type ArticleFilters = { kind?: string; n?: number };
-
-/** 記事の一覧の URL(空の項目は付けない) */
-export function articleListHref(site: CpSite, f: ArticleFilters = {}, hash = ""): string {
-  const p = new URLSearchParams();
-  if (f.kind) p.set("kind", f.kind);
-  if (f.n && f.n > PAGE_SIZE) p.set("n", String(f.n));
-  const s = p.toString();
-  return `${site.base}/article${s ? `?${s}` : ""}${hash}`;
-}
-
-type SP = Record<string, string | string[] | undefined>;
-const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) ?? "";
-
-/** URL の引数 → 正しい値だけ(知らない種類は捨てる) */
-export function parseArticleFilters(sp: SP, kindSlugs: Set<string>): { kind: string; n: number } {
-  const k = one(sp.kind);
-  const n = Math.min(Math.max(parseInt(one(sp.n)) || PAGE_SIZE, PAGE_SIZE), 200);
-  return { kind: kindSlugs.has(k) ? k : "", n };
-}
 
 /** 種類を 1 つずつ順番に回して並べる(種類の中は店 ID の順)。順位に見せないための並べ方 */
 function interleave(items: CpArticleItem[], kindOrder: string[]): CpArticleItem[] {
