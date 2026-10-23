@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { Brush, Seal } from "../photoFeature/parts";
 import PeripheryNewsletter from "./PeripheryNewsletter";
-import { FOOT_INFO, FOOT_NAV, FOOT_NAV_LIVE_EXTRA, FOOT_REGIONS, GOURMET_TOP, NOREN_TOP } from "@/lib/portal/noren/nav";
+import { FOOT_NAV, GOURMET_TOP, NOREN_TOP } from "@/lib/portal/noren/nav";
+import FootSmall from "../FootSmall";
 
 /**
  * 周りのページ（動画・店舗登録・お問い合わせ・編集部・掲載基準・見つからない・エラー）の共通の部品（サーバー・クライアントのどちらからも使える。fs・process・データは読まない）。
@@ -161,11 +162,12 @@ export function Rod() {
 }
 
 /**
- * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション・地域・サイト情報）と、ニュースレター（newsletter が true のとき。今まで付いていたページだけ）。
- * リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。地域の行き先は areaLinks 経由（/search?region=）。
+ * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション = メニューと同じ「トップ・特集・さがす」の 3 つ）と、小さな文字の 1 行（FootSmall）、
+ * ニュースレター（newsletter が true のとき。今まで付いていたページだけ）。リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。
+ * 2026-10-23 オーナー決定「各業種 4 ページに収める」: 地域の列・おまかせ提案・写真から探す・ショート動画・総合トップ・サイト情報の列は外した（サイト情報と総合トップは小さな 1 行へ）。
  */
 export function Footer({ newsletter = false }: { newsletter?: boolean }) {
-  const nav = [...FOOT_NAV.map((n) => (n.href === NOREN_TOP ? { ...n, href: GOURMET_TOP } : n)), ...FOOT_NAV_LIVE_EXTRA];
+  const nav = FOOT_NAV.map((n) => (n.href === NOREN_TOP ? { ...n, href: GOURMET_TOP } : n));
   return (
     <footer className="pf-ft pp-ft">
       <div className="pp-ft__in">
@@ -194,28 +196,9 @@ export function Footer({ newsletter = false }: { newsletter?: boolean }) {
                 ))}
               </ul>
             </nav>
-            <nav aria-label="地域">
-              <h2>地域</h2>
-              <ul>
-                {FOOT_REGIONS.map((n) => (
-                  <li key={n.href}>
-                    <Link href={n.href}>{n.ja}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <nav aria-label="サイト情報">
-              <h2>サイト情報</h2>
-              <ul>
-                {FOOT_INFO.map((n) => (
-                  <li key={n.href}>
-                    <Link href={n.href}>{n.ja}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
           </div>
         </div>
+        <FootSmall className="pp-ft__sm" />
         <p className="pp-ft__bot">
           <span>© 2026 マチノワ / 街の輪 · 無断転載禁止</span>
           <span>日本 全国 — 2026年</span>

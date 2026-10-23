@@ -47,6 +47,12 @@
 .vBk-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:28px 0 22px;padding:4px;background:var(--bk-bg2);border-radius:12px}
 .vBk-tab{min-height:58px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 6px;border-radius:9px;color:var(--bk-navy);font:700 17px/1.2 var(--bk-sans);white-space:nowrap;transition:background .2s,color .2s}
 .vBk-tab svg{flex:none}
+/* ほかの探し方（タブの下の小さな 1 行。おまかせ提案・写真から探す・ショート動画）。押す所は 44px */
+.vBk-other{display:flex;flex-wrap:wrap;align-items:center;gap:0 20px;margin:-14px 6px 12px}
+.vBk-other__l{font:500 12.5px/1.6 var(--bk-sans);color:var(--bk-mute);letter-spacing:.04em}
+.vBk-other ul{display:flex;flex-wrap:wrap;gap:0 4px}
+.vBk-other a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border-radius:8px;font:600 13.5px/1.4 var(--bk-sans);color:var(--bk-navy);letter-spacing:.02em;transition:background .2s,color .2s}
+.vBk-other a:hover{background:var(--bk-or-t);color:var(--bk-or-ink)}
 .vBk-tab:hover{background:#fff}
 .vBk-tab[aria-current="true"]{background:var(--bk-or);color:#fff;box-shadow:0 4px 12px rgba(242,106,16,.3)}
 
@@ -184,6 +190,7 @@
   .vBk-ban{min-height:0;padding:22px 0 24px}
   .vBk-ban p{font-size:14px}
   .vBk-tabs{grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0}
+  .vBk-other{margin:-8px 2px 8px;gap:0 10px}
   .vBk-tab{font-size:13px;gap:4px;padding:0 2px}
   .vBk-tab svg{display:none}
   .vBk-tab:last-child svg{display:block}

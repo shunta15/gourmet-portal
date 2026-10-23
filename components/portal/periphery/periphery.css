@@ -158,12 +158,18 @@
 .pp-ft__nlh { margin: 6px 0 0; font-size: clamp(18px, 1.6vw, 22px); font-weight: 800; letter-spacing: 0.06em; line-height: 1.7; }
 .pp-ft__nlh em { font-style: normal; color: var(--indigo); }
 .pp-ft__nls { margin: 6px 0 0; font-size: 14px; line-height: 1.9; letter-spacing: 0.05em; color: var(--ink2); }
-.pp-ft__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px clamp(14px, 2.4vw, 36px); align-content: start; }
+.pp-ft__cols { display: grid; grid-template-columns: minmax(0, 300px); justify-content: end; gap: 8px clamp(14px, 2.4vw, 36px); align-content: start; }
 .pp-ft__cols > nav { min-width: 0; }
 .pp-ft__cols h2 { margin: 0 0 4px; font-size: 13px; font-weight: 800; letter-spacing: 0.2em; color: var(--ink2); line-height: 2.2; }
 .pp-ft__cols ul { display: grid; }
 .pp-ft__cols a { display: flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; border-bottom: 1px solid transparent; }
 .pp-ft__cols a:hover { color: var(--shu); }
+/* 小さな文字の 1 行（マチノワ トップ・編集部について・掲載基準・お問い合わせ・店舗登録。components/portal/FootSmall）。メニューではない。 */
+.pp-ft__sm { margin-top: clamp(24px, 3vw, 40px); padding-top: 6px; border-top: 1px solid var(--line); }
+.pp-ft__sm ul { display: flex; flex-wrap: wrap; gap: 0 clamp(16px, 2.2vw, 30px); }
+.pp-ft__sm a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--ink2); }
+.pp-ft__sm a:hover { color: var(--shu); }
+.pp-ft__sm + .pp-ft__bot { margin-top: 0; padding-top: 0; border-top: 0; }
 .pp-ft__bot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; margin-top: clamp(24px, 3vw, 40px); padding-top: 18px; border-top: 1px solid var(--line); font-size: 12px; letter-spacing: 0.08em; color: var(--ink2); }
 .pp-ft__bot span { line-height: 1.8; }
 /* ニュースレター（今のフッターと同じ API・同じ文言。見た目だけ和紙の面に） */
@@ -180,8 +186,7 @@
 
 @media (max-width: 760px) {
   .pp-ft__top { grid-template-columns: 1fr; }
-  .pp-ft__cols { grid-template-columns: 1fr 1fr; }
-  .pp-ft__cols > nav[aria-label="サイト情報"]:last-child { grid-column: 1 / -1; }
+  .pp-ft__cols { grid-template-columns: minmax(0, 1fr); justify-content: stretch; }
   .pp-vd { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 12px; }
   .pp-vtitle { font-size: 14px; }
   .pp-vstore { font-size: 12px; }

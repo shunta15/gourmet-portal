@@ -9,6 +9,7 @@ import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import type { FacetExt, FacetPayload } from "@/lib/portal/facetDefs";
 import { OPEN_NOW_ON } from "@/lib/portal/noren/release";
 import { AREA_TO_SEARCH } from "@/lib/portal/noren/areaLinks";
+import { SEARCH_OTHER_WAYS } from "@/lib/portal/noren/searchOther";
 import { orderSceneRoundups, type SceneRoundupCard } from "@/lib/portal/noren/sceneRoundupOrder";
 import SceneRoundups from "./SceneRoundups";
 import SaveButton from "@/components/portal/SaveButton";
@@ -449,6 +450,17 @@ export default function NorenSearch({
                       <span>{t.label}</span>
                     </Link>
                   ))}
+                </nav>
+                {/* ほかの探し方（おまかせ提案・写真から探す・ショート動画）。以前はフッターのナビゲーションにあった入口（2026-10-23 オーナー決定「探すページの中に入口を移す」）。タブの下の小さな 1 行 */}
+                <nav className="vBk-other" aria-label="ほかの探し方">
+                  <span className="vBk-other__l">ほかの探し方</span>
+                  <ul>
+                    {SEARCH_OTHER_WAYS.map((n) => (
+                      <li key={n.href}>
+                        <Link href={n.href}>{n.ja}</Link>
+                      </li>
+                    ))}
+                  </ul>
                 </nav>
 
                 {/* 箱: 左にイラストの地図・右にそのタブの一覧 */}

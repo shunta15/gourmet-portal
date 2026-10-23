@@ -3,6 +3,7 @@ import type { CSSProperties, ReactNode } from "react";
 import { sized } from "@/lib/imageUrl";
 import { rowOf, type PfPhoto, type PfText, type Rv } from "@/lib/portal/photoFeature/build";
 import type { RpUnit } from "@/lib/portal/photoFeature/roundupMark";
+import FootSmall from "../../FootSmall";
 
 /**
  * シーン別まとめ記事・特集の一覧（写真が主役の形）の小さな部品（サーバーコンポーネント）。
@@ -115,18 +116,19 @@ export function HeaderBar({ topHref, listHref, searchHref, current }: { topHref:
         マチノワ<small>グルメ</small>
       </Link>
       <nav aria-label="主なリンク">
-        <Link href={listHref} aria-current={current === "list" ? "page" : undefined}>特集の一覧</Link>
+        <Link href={listHref} aria-current={current === "list" ? "page" : undefined}>特集</Link>
         <Link href={searchHref}>さがす</Link>
       </nav>
     </header>
   );
 }
 
-/** ページの下端 */
+/** ページの下端（ロゴ・小さな文字の 1 行（FootSmall）・© の行） */
 export function FooterBar() {
   return (
     <footer className="pf-ft">
       <p className="pf-ft__l">マチノワ</p>
+      <FootSmall className="pf-ft__nav" />
       <p className="pf-ft__s">© 2026 マチノワ / 街の輪</p>
     </footer>
   );
