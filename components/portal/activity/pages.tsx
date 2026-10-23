@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import JsonLd from "@/components/portal/JsonLd";
 import { activityCfg } from "@/components/portal/vkit/configs";
 import { loadShopDetail } from "@/components/portal/vkit/shop/data";
+import { sortShops } from "@/components/portal/vkit/common/live";
 import { loadArticle } from "@/components/portal/vkit/article/articleData";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { countPlaces } from "@/lib/places";
@@ -17,6 +18,7 @@ import Top from "./Top";
 import Search from "./Search";
 import Article from "./Article";
 import Shop from "./Shop";
+import ShopList, { SHOP_PAGE_SIZE } from "./ShopList";
 import Story from "./Story";
 import type { SearchInit } from "./SearchBody";
 import { loadAData } from "./data";
@@ -106,6 +108,41 @@ export async function ActivityArticleListPage() {
     <ActivityFrame>
       <JsonLd data={ld} />
       <Article shops={shops} editorial={editorial} />
+    </ActivityFrame>
+  );
+}
+
+// ------------------------------------------------------------------ 店舗紹介の一覧(/activity/shop)
+const pageOf = (sp: SP) => Math.min(Math.max(parseInt(one(sp.page)) || 1, 1), 500);
+
+/** 店舗紹介の一覧の metadata。title「店舗紹介 | マチノワアクティビティ」・canonical は自分自身(2 ページ目以降も正本は引数なしの URL)・robots は他の一覧と同じ gate(掲載 3 件未満は noindex。2 ページ目以降は noindex) */
+export async function activityShopListMetadata(sp: SP): Promise<Metadata> {
+  assertPortalLive();
+  return buildMetadata({
+    vertical: "activity",
+    title: `店舗紹介 | ${b.brand}`,
+    description: `${b.brand}に掲載している体験の一覧です。体験を選ぶと、所在地・営業時間・体験の内容をまとめた店舗紹介のページが開きます。`,
+    path: aLinks.shops,
+    count: pageOf(sp) === 1 ? await countPlaces("activity") : 0,
+  });
+}
+
+export async function ActivityShopListPage({ searchParams }: { searchParams: Promise<SP> }) {
+  assertPortalLive();
+  const sp = await searchParams;
+  const { shops } = await loadAData();
+  const sorted = sortShops(shops, "area") as typeof shops;
+  const pages = Math.max(1, Math.ceil(sorted.length / SHOP_PAGE_SIZE));
+  const cur = Math.min(pageOf(sp), pages);
+  const ld = breadcrumb([
+    { name: "マチノワ", url: absUrl("/") },
+    { name: b.name, url: absUrl(b.path) },
+    { name: "店舗紹介", url: absUrl(aLinks.shops) },
+  ]);
+  return (
+    <ActivityFrame>
+      <JsonLd data={ld} />
+      <ShopList shops={sorted.slice((cur - 1) * SHOP_PAGE_SIZE, cur * SHOP_PAGE_SIZE)} page={cur} pages={pages} total={sorted.length} />
     </ActivityFrame>
   );
 }
