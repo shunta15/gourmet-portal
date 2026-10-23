@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../../common/Shell";
-import { Heart, MaskLines, Write, FillHeading, PawTrail } from "../../common/Motion";
+import { MaskLines, Write, FillHeading, PawTrail } from "../../common/Motion";
 import { IconArrow, IconChevron, IconFacebook, IconPin, IconX, Paw } from "../../common/Icons";
 import { IMG_SHOP, ptLinks } from "../../common/site";
 import HeroScroll from "../../search/HeroScroll";
@@ -113,7 +113,6 @@ function Hero({ d }: { d: ShopDetail }) {
       {ph ? <HeroScroll target=".lsp-hero-ph" /> : null}
       <div className="lsp-hero-info">
         <span className="lsp-cat pt-tag pt-pop">{s.kindName}</span>
-        <Heart tone="ink" className="lsp-hero-heart" label="お気に入りに追加" size={17} />
         <h1 className={`lsp-name lsp-name--${nameSize(s.name.length)}`}>
           <MaskLines lines={[s.name]} delay={150} />
         </h1>

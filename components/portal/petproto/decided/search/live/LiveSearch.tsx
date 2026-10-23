@@ -5,7 +5,7 @@ import Shell from "../../common/Shell";
 import Logo from "../../common/Logo";
 import { IconArrow, IconPin } from "../../common/Icons";
 import { Heart, CountUp, MaskLines, Write, FillHeading, PawTrail } from "../../common/Motion";
-import { IMG_SEARCH, ptLinks } from "../../common/site";
+import { IMG_SEARCH, PORTAL_HREF, ptLinks } from "../../common/site";
 import { IconChevronLR } from "../SearchIcons";
 import HeroScroll from "../HeroScroll";
 import { FilterBar, SearchBox, SortSelect, type LinkOption, type PillDef } from "./LiveControls";
@@ -357,10 +357,13 @@ function Side({ facets, hasFeatures }: { facets: PetFacets; hasFeatures: boolean
   );
 }
 
-/** 青空の帯のフッター(見本の探すのもの)。行き先は実在のページだけ。SNS・利用規約など行き先のない物は出さない */
-function SearchFooter({ facets }: { facets: PetFacets }) {
+/**
+ * 青空の帯のフッター(見本の探すのもの)。行き先は実在のページだけ。SNS・利用規約など行き先のない物は出さない。
+ * ナビの部分はヘッダーのメニューと同じ 3 つ(ペット トップ・お店を探す・特集記事)。エリア・種類の飛び先は外した(探すの中の絞り込みに同じものがある。2026-10-23 オーナー決定)。
+ * もう 1 つの列は、サイトとして必要な小さな案内の 1 行(マチノワ トップ・編集部について・掲載基準・お問い合わせ)。メニューの数には数えない。
+ */
+function SearchFooter() {
   const L = ptLinks("live");
-  const prefs = facets.prefs.slice(0, 6);
   return (
     <footer className="lsr-foot">
       <div className="lsr-fband pt-live">
@@ -376,42 +379,26 @@ function SearchFooter({ facets }: { facets: PetFacets }) {
       </div>
       <div className="lsr-fbody pt-bgshift" data-from="1.02" data-to="0.9" style={{ ["--bg-to" as string]: "#fafaf8", ["--bg-from" as string]: "#f1ebe1" }}>
         <div className="lsr-fcols" data-io-group>
-          {prefs.length > 0 ? (
-            <nav className="lsr-fc lsr-fc1 io" aria-label="エリアから探す">
-              <h3>エリアから探す</h3>
-              <ul>
-                {prefs.map((a) => (
-                  <li key={a.pref.slug}>
-                    <Link href={searchHref({ pref: a.pref.slug }, "#lsr-results")} prefetch={false}>
-                      {a.pref.short}
-                    </Link>
-                  </li>
-                ))}
-                {facets.prefs.length > prefs.length ? (
-                  <li className="lsr-fc-more">
-                    <Link href={L.areaAnchor}>ほかのエリア</Link>
-                  </li>
-                ) : null}
-              </ul>
-            </nav>
-          ) : null}
-          {facets.kinds.length > 0 ? (
-            <nav className="lsr-fc lsr-fc2 io" aria-label="種類から探す">
-              <h3>種類から探す</h3>
-              <ul>
-                {facets.kinds.map((k) => (
-                  <li key={k.slug}>
-                    <Link href={searchHref({ kind: k.slug }, "#lsr-results")} prefetch={false}>
-                      {k.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ) : null}
-          <nav className="lsr-fc lsr-fc3 io" aria-label="マチノワについて">
+          <nav className="lsr-fc lsr-fc1 io" aria-label="マチノワPet">
+            <h3>マチノワPet</h3>
+            <ul>
+              <li>
+                <Link href={L.home}>ペット トップ</Link>
+              </li>
+              <li>
+                <Link href={L.search}>お店を探す</Link>
+              </li>
+              <li>
+                <Link href={L.articles}>特集記事</Link>
+              </li>
+            </ul>
+          </nav>
+          <nav className="lsr-fc lsr-fc2 io" aria-label="サイトの案内">
             <h3>マチノワについて</h3>
             <ul>
+              <li>
+                <a href={PORTAL_HREF}>マチノワ トップ</a>
+              </li>
               <li>
                 <a href="/about">編集部について</a>
               </li>
@@ -424,7 +411,6 @@ function SearchFooter({ facets }: { facets: PetFacets }) {
             </ul>
           </nav>
           <i className="lsr-fdiv lsr-fdiv1" aria-hidden="true" />
-          <i className="lsr-fdiv lsr-fdiv2" aria-hidden="true" />
         </div>
         <p className="lsr-copy">© マチノワPet</p>
       </div>
@@ -510,7 +496,7 @@ export function petSearchPage() {
             <Side facets={facets} hasFeatures={hasFeatures} />
           </div>
         </div>
-        <SearchFooter facets={facets} />
+        <SearchFooter />
       </Shell>
     );
   }

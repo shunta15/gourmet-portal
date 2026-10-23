@@ -1,6 +1,8 @@
 import { categoryPage } from "@/components/portal/pages/category";
+import { petLegacy } from "@/components/portal/petproto/decided/redirects";
 
-const page = categoryPage("pet");
+// 探すの絞り込みへ恒久の転送(308)。業種のページは 4 種類(最初・店舗紹介・探す・記事)にまとめた(2026-10-23 オーナー決定。ボディケアと同じやり方)。知らない種類・県は今までどおり 404。
+const page = petLegacy.categoryRedirectPage(categoryPage("pet"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;

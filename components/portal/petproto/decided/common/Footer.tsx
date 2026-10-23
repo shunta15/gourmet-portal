@@ -2,12 +2,13 @@ import Link from "next/link";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconArrow, IconInstagram, IconFacebook, IconX, IconYoutube } from "./Icons";
-import { IMG_COMMON, ptLinks, type PtMode } from "./site";
+import { IMG_COMMON, PORTAL_HREF, ptLinks, type PtMode } from "./site";
 
 /**
  * 最初の見本の下の部分(2 枚の帯「ペットとの暮らしを もっと豊かに。」「マチノワPetについて」+ フッター本体)。最初・店舗紹介・記事が使う。
  * 探すの見本の青空の帯のフッターは使わない(探すページ担当が自分で作る。Shell に footer={false} を渡す)。
  * 見本の SNS・運営について・お問い合わせ・利用規約・プライバシーポリシーは試作に行き先が無いので # にしてある。
+ * ナビの部分はヘッダーのメニューと同じ 3 つ(ペット トップ・お店を探す・特集記事。2026-10-23 オーナー決定)。エリア・カテゴリ・利用シーンの飛び先は外した。
  */
 export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
   const L = ptLinks(mode);
@@ -53,25 +54,29 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
             </Link>
             <p className="pt-fg-tag">ペットと、この街で、もっと豊かに。</p>
           </div>
-          <nav className="pt-fg-col io" aria-label="サービスを探す">
-            <h3>サービスを探す</h3>
-            <Link href={live ? L.areaAnchor : L.search}>エリアから探す</Link>
-            <Link href={live ? L.categoryAnchor : L.search}>カテゴリから探す</Link>
-            <Link href={live ? L.search : L.shop()}>{live ? "お店を探す" : "おすすめのお店"}</Link>
-          </nav>
-          <nav className="pt-fg-col io" aria-label="読みもの">
-            <h3>読みもの</h3>
+          <nav className="pt-fg-col io" aria-label="マチノワPet">
+            <h3>マチノワPet</h3>
+            <Link href={L.home}>ペット トップ</Link>
+            <Link href={L.search}>{live ? "お店を探す" : "おすすめのお店"}</Link>
             <Link href={L.articles}>特集記事</Link>
-            {live ? null : <Link href={L.articles}>ペット業界の記事</Link>}
-            <Link href={live ? `${L.articles}#ar-scene` : L.articles}>{live ? "利用シーンから探す" : "暮らしのシーン記事"}</Link>
           </nav>
-          <nav className="pt-fg-col pt-fg-about io" aria-label="マチノワPetについて">
-            <h3>マチノワPetについて</h3>
-            <a href={aboutHref}>{live ? "編集部について" : "運営について"}</a>
-            {live ? <a href="/editorial/guidelines">掲載基準</a> : null}
-            <a href={live ? "/contact" : "#"}>お問い合わせ</a>
-            {live ? null : <a href="#">利用規約</a>}
-            {live ? null : <a href="#">プライバシーポリシー</a>}
+          {/* サイトとして必要な小さな案内(メニューの数には数えない)。本番はマチノワ トップ・編集部について・掲載基準・お問い合わせ(総合サイトの実在のページ) */}
+          <nav className="pt-foot-small" aria-label="サイトの案内">
+            {live ? (
+              <>
+                <a href={PORTAL_HREF}>マチノワ トップ</a>
+                <a href="/about">編集部について</a>
+                <a href="/editorial/guidelines">掲載基準</a>
+                <a href="/contact">お問い合わせ</a>
+              </>
+            ) : (
+              <>
+                <a href="#">運営について</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">利用規約</a>
+                <a href="#">プライバシーポリシー</a>
+              </>
+            )}
           </nav>
           <div className="pt-fg-r">
             {live ? null : (
