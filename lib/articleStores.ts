@@ -7604,14 +7604,12 @@ export const ARTICLE_STORES: Restaurant[] = [
     "area": "山口県・防府市",
     "region": "yamaguchi",
     "shape": "square",
-    "image": "/restaurants/_placeholder/feature-hero.jpg",
+    "image": "/restaurants/teleapo-みや乃家/hero.jpg",
     "heroImages": [
-      "/restaurants/_placeholder/feature-hero.jpg"
+      "/restaurants/teleapo-みや乃家/hero.jpg"
     ],
     "gallery": [
-      "/restaurants/_placeholder/feature-hero.jpg",
-      "/restaurants/_placeholder/feature-point.jpg",
-      "/restaurants/_placeholder/feature-og.jpg"
+      "/restaurants/teleapo-みや乃家/hero.jpg"
     ],
     "desc": "山口県防府市のお好み焼き店。",
     "address": "山口県防府市田島319-6-102",
@@ -8168,13 +8166,11 @@ export const ARTICLE_STORES: Restaurant[] = [
     "image": "/restaurants/teleapo-チャー車ラーメン/hero.jpg",
     "heroImages": [
       "/restaurants/teleapo-チャー車ラーメン/hero.jpg",
-      "/restaurants/teleapo-チャー車ラーメン/point2.jpg",
-      "/restaurants/teleapo-チャー車ラーメン/point3.jpg"
+      "/restaurants/teleapo-チャー車ラーメン/point2.jpg"
     ],
     "gallery": [
       "/restaurants/teleapo-チャー車ラーメン/hero.jpg",
-      "/restaurants/teleapo-チャー車ラーメン/point2.jpg",
-      "/restaurants/teleapo-チャー車ラーメン/point3.jpg"
+      "/restaurants/teleapo-チャー車ラーメン/point2.jpg"
     ],
     "desc": "岐阜県可児郡御嵩町のラーメン・韓国料理。最寄りは明智駅 徒歩10分。",
     "address": "岐阜県可児郡御嵩町伏見825-3",
@@ -8409,13 +8405,11 @@ export const ARTICLE_STORES: Restaurant[] = [
     "image": "/restaurants/teleapo-焼肉87ハナ/hero.jpg",
     "heroImages": [
       "/restaurants/teleapo-焼肉87ハナ/hero.jpg",
-      "/restaurants/teleapo-焼肉87ハナ/point2.jpg",
-      "/restaurants/teleapo-焼肉87ハナ/point3.jpg"
+      "/restaurants/teleapo-焼肉87ハナ/point2.jpg"
     ],
     "gallery": [
       "/restaurants/teleapo-焼肉87ハナ/hero.jpg",
-      "/restaurants/teleapo-焼肉87ハナ/point2.jpg",
-      "/restaurants/teleapo-焼肉87ハナ/point3.jpg"
+      "/restaurants/teleapo-焼肉87ハナ/point2.jpg"
     ],
     "desc": "埼玉県越谷市の焼肉店。最寄りは北越谷駅から徒歩約37分。",
     "address": "埼玉県越谷市花田4丁目19-1",
@@ -8455,14 +8449,16 @@ export const ARTICLE_STORES: Restaurant[] = [
     "area": "青森県・弘前市",
     "region": "aomori",
     "shape": "square",
-    "image": "/restaurants/_placeholder/feature-hero.jpg",
+    "image": "/restaurants/teleapo-貝焼酒場樹/hero.jpg",
     "heroImages": [
-      "/restaurants/_placeholder/feature-hero.jpg"
+      "/restaurants/teleapo-貝焼酒場樹/hero.jpg",
+      "/restaurants/teleapo-貝焼酒場樹/point2.jpg",
+      "/restaurants/teleapo-貝焼酒場樹/point3.jpg"
     ],
     "gallery": [
-      "/restaurants/_placeholder/feature-hero.jpg",
-      "/restaurants/_placeholder/feature-point.jpg",
-      "/restaurants/_placeholder/feature-og.jpg"
+      "/restaurants/teleapo-貝焼酒場樹/hero.jpg",
+      "/restaurants/teleapo-貝焼酒場樹/point2.jpg",
+      "/restaurants/teleapo-貝焼酒場樹/point3.jpg"
     ],
     "desc": "青森県弘前市の居酒屋。最寄りは中央弘前駅 徒歩4分。",
     "address": "青森県弘前市新鍛冶町4-8",
@@ -8502,14 +8498,16 @@ export const ARTICLE_STORES: Restaurant[] = [
     "area": "滋賀県・近江八幡市",
     "region": "shiga",
     "shape": "square",
-    "image": "/restaurants/_placeholder/feature-hero.jpg",
+    "image": "/restaurants/teleapo-近江牛日本料理ひょうたんや/hero.jpg",
     "heroImages": [
-      "/restaurants/_placeholder/feature-hero.jpg"
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/hero.jpg",
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/point2.jpg",
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/point3.jpg"
     ],
     "gallery": [
-      "/restaurants/_placeholder/feature-hero.jpg",
-      "/restaurants/_placeholder/feature-point.jpg",
-      "/restaurants/_placeholder/feature-og.jpg"
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/hero.jpg",
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/point2.jpg",
+      "/restaurants/teleapo-近江牛日本料理ひょうたんや/point3.jpg"
     ],
     "desc": "近江牛 日本料理 ひょうたんやは1949年の創業以来、看板料理のつゆしゃぶを守り続けてきた店だ。",
     "address": "滋賀県近江八幡市鷹飼町560-1",
@@ -8689,14 +8687,10 @@ export const ARTICLE_STORES: Restaurant[] = [
     "shape": "square",
     "image": "/restaurants/teleapo-山麓園/hero.jpg",
     "heroImages": [
-      "/restaurants/teleapo-山麓園/hero.jpg",
-      "/restaurants/teleapo-山麓園/point2.jpg",
-      "/restaurants/teleapo-山麓園/point3.jpg"
+      "/restaurants/teleapo-山麓園/hero.jpg"
     ],
     "gallery": [
-      "/restaurants/teleapo-山麓園/hero.jpg",
-      "/restaurants/teleapo-山麓園/point2.jpg",
-      "/restaurants/teleapo-山麓園/point3.jpg"
+      "/restaurants/teleapo-山麓園/hero.jpg"
     ],
     "desc": "愛知県蒲郡市のマトン焼き肉店。最寄りは三河鹿島駅から車で6分。",
     "address": "愛知県蒲郡市金平町上ノ坊20",
