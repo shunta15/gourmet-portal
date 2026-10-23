@@ -1,11 +1,14 @@
 "use client";
 /**
- * COLOR PLAY(本番)のヘッダー。ロゴ・3 つのリンク・虫めがね・ハート(候補リスト)・メニュー。
+ * COLOR PLAY(本番)のヘッダー。ロゴ・メニュー 3 つ(トップ・お店を探す・特集記事)・ハート(候補リスト)。
+ * メニューは 3 つだけ(2026-10-23 オーナー決定)。PC は 3 つを横に並べ、スマホだけ全画面メニュー(同じ 3 つ)を開く。
+ * 最初のページの節へ飛ぶだけの「エリア」「種類」、探すと同じ行き先の虫めがね・「候補リスト」の文字、「マチノワ トップ」は外した
+ * (マチノワ トップ・運営の案内はフッターの小さな 1 行)。ハートは実際に保存した店へ戻る道具なので残す。
  * 業種ごとの違い(行き先・ロゴ)は props で受ける。リンクは本物のページへ。JS が無くてもリンクは使える(メニューの全画面だけ JS)。
  */
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { IconClose, IconHeart, IconMenu, IconSearch } from "@/components/portal/bproto/colorplay/Icons";
+import { IconClose, IconHeart, IconMenu } from "@/components/portal/bproto/colorplay/Icons";
 
 export type CpHeaderProps = {
   base: string;
@@ -21,9 +24,8 @@ export type CpHeaderProps = {
 export default function Header({ base, logoA, logoB, onColor = false, ink = false, invert = false }: CpHeaderProps) {
   const [open, setOpen] = useState(false);
   const links = [
+    { href: base, label: "トップ" },
     { href: `${base}/search`, label: "お店を探す" },
-    { href: `${base}#area`, label: "エリア" },
-    { href: `${base}#kinds`, label: "種類" },
     { href: `${base}/article`, label: "特集記事" },
   ];
   useEffect(() => {
@@ -44,9 +46,8 @@ export default function Header({ base, logoA, logoB, onColor = false, ink = fals
           ))}
         </nav>
         <div className="cp-hicons">
-          <Link href={`${base}/search`} aria-label="お店を探す" className="cp-ic"><IconSearch size={22} /></Link>
           <Link href="/list" prefetch={false} aria-label="候補リストを見る" className="cp-ic"><IconHeart size={22} /></Link>
-          <button type="button" className="cp-menu-btn" aria-label="メニューを開く" aria-expanded={open} onClick={() => setOpen(true)}>
+          <button type="button" className="cp-menu-btn cp-menu-btn-sp" aria-label="メニューを開く" aria-expanded={open} onClick={() => setOpen(true)}>
             <IconMenu size={22} />
           </button>
         </div>
@@ -61,8 +62,6 @@ export default function Header({ base, logoA, logoB, onColor = false, ink = fals
                 <Link href={l.href} onClick={() => setOpen(false)}>{l.label}</Link>
               </li>
             ))}
-            <li style={{ ["--i" as string]: links.length }}><Link href="/list" prefetch={false} onClick={() => setOpen(false)}>候補リスト</Link></li>
-            <li style={{ ["--i" as string]: links.length + 1 }}><Link href="/" onClick={() => setOpen(false)}>マチノワ トップ</Link></li>
           </ul>
         </div>
       )}
