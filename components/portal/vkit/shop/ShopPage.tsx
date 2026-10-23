@@ -12,7 +12,7 @@ import { searchHref } from "../search/data";
 import TrackedA from "./Track";
 import ShopTabs, { type ShopTab } from "./ShopTabs";
 import PhotoRail from "./PhotoRail";
-import { FavButton, ShareButton } from "./Actions";
+import { ShareButton } from "./Actions";
 import { FacIcon, RowIconEl } from "./FacIcons";
 import { loadShopDetail, type Sec, type SPhoto, type ShopDetail } from "./data";
 import { localBusiness, breadcrumb } from "@/lib/seo/jsonld";
@@ -24,7 +24,7 @@ import "./shop.css";
 
 /**
  * 店の紹介ページ(本番 /activity/shop/{id}・/sports/shop/{id}・/life/shop/{id})。ステイの決定デザイン「店舗紹介」と同じ組み立て・大きさ・余白で、中身は実在の店(getPlaces(業種))。
- *   濃い面の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで確認」・お気に入り・シェア)→ 追従タブ →
+ *   濃い面の帯 → パンくず → 写真 3 枚+右の箱(種類・事実の欄・「公式サイトで確認」・シェア)→ 追従タブ →
  *   「ご案内」(横長の大きな写真に見出し 2 行+文を重ねる)→ 紹介記事の節 3 つ(1 つめは左に文・右に写真の横送り、2・3 つめは左に文・右に大 1+小 2)→
  *   設備・サービス(アイコンが横に並ぶ)→ 基本情報・アクセス・Google マップ → 紹介記事。
  * 文は紹介記事(Place.article)の事実だけ(data.ts)。長い説明は各節の「〇〇の詳細を見る」で開く。CSS は shop.css(接頭辞 vs-)。
@@ -115,7 +115,6 @@ function Hero({ cfg, d }: { cfg: VkConfig; d: ShopDetail }) {
           {primary.ext ? <IconExternal /> : <IconArrow />}
         </TrackedA>
         <div className="vs-acts">
-          <FavButton name={s.name} />
           <ShareButton noun={cfg.noun} url={shareTarget(d.path)} title={`${s.name}｜${cfg.brand}`} storeId={s.id} page={d.path} />
         </div>
       </aside>

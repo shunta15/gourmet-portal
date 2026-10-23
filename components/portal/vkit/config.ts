@@ -111,7 +111,7 @@ export type VkConfig = {
    * 飾りの写真まわりの調整(写真の明るさに合わせる)。
    *   photoDim: 飾りの写真の明るさ(1 = そのまま)/ heroDim: 探す・記事の一覧のヒーローの上と右の暗い霞の濃さ(1 = ステイと同じ)/
    *   areaDim: 最初のページのエリア帯の暗い霞の濃さ(0.3 = ステイと同じ)/ navShift: ヘッダーのナビの左端を右へずらす量(見本の px。ロゴの字数が多い業種用。探す・店・記事のページ)/
-   *   navChars: ナビの字数の見積もり(探すのヘッダーの明るい帯の幅に使う。ステイは 40)
+   *   navChars: ナビの字数の見積もり(探すのヘッダーの明るい帯の幅に使う。ナビ 3 つ(トップ・〇〇を探す・特集記事)で 18。ステイは旧ナビ 4 つの 40)
    */
   fx: { photoDim: number; heroDim: number; areaDim: number; navShift: number; navChars: number };
   /** 種類の並び(最初のページの札・ラウンドロビンの順)。lib/verticals の categories の slug と同じ */
@@ -190,9 +190,6 @@ export type VkLinks = {
   home: string;
   search: string;
   articles: string;
-  areaAnchor: string;
-  typeAnchor: string;
-  about: string;
   searchWith: (f: VkSearchArgs) => string;
   shop: (id?: string) => string;
   article: (id?: string) => string;
@@ -206,9 +203,6 @@ export function vkLinks(cfg: Pick<VkConfig, "base">): VkLinks {
     home: base,
     search,
     articles: `${base}/article`,
-    areaAnchor: `${base}#vk-area`,
-    typeAnchor: `${base}#vk-type`,
-    about: "/about",
     searchWith: (f) => {
       const p = new URLSearchParams();
       if (f.kind) p.set("kind", f.kind);

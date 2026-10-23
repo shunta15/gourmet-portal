@@ -30,7 +30,7 @@
 .vs-hero[data-n="2"] .vs-hero-s1 { grid-row: 1 / 3; }
 .vs-hero-s1 img, .vs-hero-s2 img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
-/* 右の箱(見本は 1泊の料金・日付・人数・予約の箱。ここは 種類・事実の欄・「公式サイトで空室を確認」・お気に入り・シェア。見本と同じ大きさ 185 × 319) */
+/* 右の箱(見本は 1泊の料金・日付・人数・予約の箱。ここは 種類・事実の欄・「公式サイトで空室を確認」・シェア。見本と同じ大きさ 185 × 319) */
 .vs-panel { grid-column: 3; grid-row: 1 / 3; align-self: start; margin: 0 calc(15 * var(--u)) 0 calc(9 * var(--u)); padding: calc(13 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u)); min-height: calc(319 * var(--u)); background: var(--vk-paper2); display: flex; flex-direction: column; min-width: 0; }
 .vs-hero[data-n="1"] .vs-panel, .vs-hero[data-n="0"] .vs-panel { grid-column: 3; }
 .vs-panel-cap { font-size: var(--vk-fs-2xs); letter-spacing: 0.06em; color: var(--vk-mut); line-height: 1.5; }
@@ -55,8 +55,6 @@
 .vs-act { position: relative; display: inline-flex; align-items: center; gap: calc(5 * var(--u)); min-height: 44px; padding: 0 calc(4 * var(--u)); border: 0; background: transparent; font: inherit; font-size: var(--vk-fs-2xs); letter-spacing: 0.04em; color: var(--vk-text); cursor: pointer; transition: color 0.25s; white-space: nowrap; }
 .vs-act svg { width: max(15px, calc(12 * var(--u))); height: max(15px, calc(12 * var(--u))); flex: none; }
 .vs-act:hover { color: var(--vk-gold-d); }
-.vs-act.is-on { color: var(--vk-heart); }
-.vs-act.is-on svg path { fill: currentColor; }
 .vs-act-msg { position: absolute; left: 0; top: calc(100% - 8px); font-size: var(--vk-fs-2xs); color: var(--vk-gold-d); }
 .vs-act-msg:empty { display: none; }
 
