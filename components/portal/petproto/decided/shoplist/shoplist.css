@@ -1,0 +1,22 @@
+/* ペットの店舗紹介の一覧(本番 /pet/shop)だけの上書き。接頭辞 psl-。札・ヒーローは記事の一覧(../article/article.css・../article/live/live.css)のものをそのまま使う。 */
+
+.psl-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.psl-count { margin: 0; font-size: 12px; letter-spacing: 0.08em; color: #8a847c; }
+.psl-count b { font-family: var(--pt-ff-en); font-weight: 400; font-size: 22px; letter-spacing: 0; color: var(--pt-brown); margin-right: 2px; }
+.psl-area { font-weight: 500; letter-spacing: 0.06em; }
+
+@media (min-width: 860px) {
+  /* 見出しが 1 行なので、副題を 2 行見出しの見本の位置(173)から詰める */
+  .psl-hero .ar-hero-sub { top: calc(136 * var(--u)); }
+  .psl { padding-top: calc(34 * var(--u)); padding-bottom: calc(52 * var(--u)); }
+  .psl-count { font-size: calc(8.6 * var(--u)); }
+  .psl-count b { font-size: calc(17 * var(--u)); margin-right: calc(2 * var(--u)); }
+  .ar-lt-grid { row-gap: calc(28 * var(--u)); }
+  .psl-area { font-size: calc(7.8 * var(--u)); line-height: calc(14 * var(--u)); color: #8d877f; }
+}
+
+@media (max-width: 859px) {
+  .pt-root .psl { padding: 26px 16px 44px; }
+  .pt-root .psl .ar-lt-d.psl-area { display: block; margin-top: 4px; font-size: 12px; line-height: 1.6; letter-spacing: 0.04em; color: #8d877f; }
+  .pt-root .psl .ar-lt-grid { margin-top: 14px; }
+}

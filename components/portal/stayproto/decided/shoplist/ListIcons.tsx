@@ -2,7 +2,7 @@ import type { SVGProps } from "react";
 import { IconHeart } from "../common/Icons";
 
 /**
- * 宿の記事の一覧(/stay/article)が使う線のアイコン。search/StayIcons.tsx(別の係の持ち物)を写して、特徴の札用に絵を足したもの
+ * 店舗紹介の一覧(/stay/shop。もとは宿の記事の一覧 /stay/article)が使う線のアイコン。search/StayIcons.tsx(別の係の持ち物)を写して、特徴の札用に絵を足したもの
  * (一棟貸し・コテージ・ログハウス = 家 / ドッグラン = 足あと / 自炊・キッチン = ナイフとフォーク)。
  * 宿の種類・検索・ハート・ピン・矢印などは common/Icons.tsx のものを使う。currentColor・線幅 1.4・サーバーでも使える。
  */

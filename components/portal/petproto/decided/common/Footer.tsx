@@ -8,7 +8,7 @@ import { IMG_COMMON, PORTAL_HREF, ptLinks, type PtMode } from "./site";
  * 最初の見本の下の部分(2 枚の帯「ペットとの暮らしを もっと豊かに。」「マチノワPetについて」+ フッター本体)。最初・店舗紹介・記事が使う。
  * 探すの見本の青空の帯のフッターは使わない(探すページ担当が自分で作る。Shell に footer={false} を渡す)。
  * 見本の SNS・運営について・お問い合わせ・利用規約・プライバシーポリシーは試作に行き先が無いので # にしてある。
- * ナビの部分はヘッダーのメニューと同じ 3 つ(ペット トップ・お店を探す・特集記事。2026-10-23 オーナー決定)。エリア・カテゴリ・利用シーンの飛び先は外した。
+ * ナビの部分はヘッダーのメニューと同じ 4 つ(トップ・お店を探す・店舗紹介・特集。2026-10-24 オーナー決定)。エリア・カテゴリ・利用シーンの飛び先は外した。
  */
 export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
   const L = ptLinks(mode);
@@ -56,9 +56,10 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
           </div>
           <nav className="pt-fg-col io" aria-label="マチノワPet">
             <h3>マチノワPet</h3>
-            <Link href={L.home}>ペット トップ</Link>
+            <Link href={L.home}>トップ</Link>
             <Link href={L.search}>{live ? "お店を探す" : "おすすめのお店"}</Link>
-            <Link href={L.articles}>特集記事</Link>
+            <Link href={L.shops}>店舗紹介</Link>
+            <Link href={L.specials}>特集</Link>
           </nav>
           {/* サイトとして必要な小さな案内(メニューの数には数えない)。本番はマチノワ トップ・編集部について・掲載基準・お問い合わせ(総合サイトの実在のページ) */}
           <nav className="pt-foot-small" aria-label="サイトの案内">

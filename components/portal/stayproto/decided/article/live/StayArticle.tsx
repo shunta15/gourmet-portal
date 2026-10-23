@@ -124,6 +124,13 @@ export default function StayArticle({ v }: { v: ArticleView }) {
                 {v.lede}
               </p>
             ) : null}
+            {/* 店のページへ(2026-10-24 オーナー決定: 店の特集記事のページの上のほうに「店舗詳細を見る」を置く) */}
+            <p className="sy-a-top-act">
+              <Link href={L.shop(shop.id)} prefetch={false} className="sy-a-shopbtn">
+                <span>店舗詳細を見る</span>
+                <IconArrow />
+              </Link>
+            </p>
           </div>
           <IndexNav items={v.index} />
           <p className="sy-a-scroll" aria-hidden="true">
@@ -204,8 +211,8 @@ export default function StayArticle({ v }: { v: ArticleView }) {
                 <h2 id="sy-a-rel-h" className="sy-a-rel-h io">
                   あわせて読みたい <span className="sy-lab">Related Articles</span>
                 </h2>
-                <Link href={L.articles} className="sy-more sy-more--plain io">
-                  記事の一覧を見る
+                <Link href={L.shops} className="sy-more sy-more--plain io">
+                  店舗紹介を見る
                   <IconArrow />
                 </Link>
               </div>

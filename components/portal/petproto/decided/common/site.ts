@@ -3,7 +3,8 @@
 export const BASE = "/proto-pet/decided"; // 最初のページ
 export const SEARCH_HREF = `${BASE}/search`; // 探すページ(検索・カテゴリ・エリアの行き先)
 export const SHOP_HREF = `${BASE}/shop/sample`; // 店舗紹介(店のカードの行き先。sora cafe)
-export const ARTICLES_HREF = `${BASE}/article`; // 業種の記事の一覧(「すべての〜を見る」「特集記事」の行き先)
+export const SHOPS_HREF = `${BASE}/shop`; // 店舗紹介の一覧(メニューの「店舗紹介」の行き先)
+export const SPECIALS_HREF = `${BASE}/special`; // 特集の一覧(メニューの「特集」の行き先)
 export const ARTICLE_HREF = `${BASE}/article/sample`; // 記事の本文(特集・Industry・Scene・関連記事の行き先)
 export const PORTAL_HREF = "/"; // マチノワ 総合トップ(試作では使わない。必要なら)
 
@@ -22,7 +23,7 @@ export const IMG_ARTICLE = `${IMG}/article`;
 /**
  * 画面の行き先を試作と本番で切り替える(2026-10-21)。
  *   "proto" … 試作(/proto-pet/decided 以下。上の定数と同じ。既定。試作の見た目・行き先は 1 つも変えない)
- *   "live"  … 本番(/pet 以下)。最初 /pet・探す /pet/search・店 /pet/shop/{id}・記事の一覧 /pet/article
+ *   "live"  … 本番(/pet 以下)。最初 /pet・探す /pet/search・店舗紹介の一覧 /pet/shop・店 /pet/shop/{id}・特集の一覧 /pet/special・特集の記事 /pet/special/{slug}
  * Shell / Header / Footer は mode を受け取り、中のリンクを ptLinks(mode) で決める。純関数なのでサーバー・クライアントのどちらからも呼べる。
  * 探すページの引数は、ビューティー(COLOR PLAY)と同じ名前(kind=種類のスラッグ・pref=都道府県のスラッグ・q=文字)。
  */
@@ -37,8 +38,12 @@ export type PtLinks = {
   home: string;
   /** 探すページ(引数なし) */
   search: string;
-  /** 記事の一覧 */
-  articles: string;
+  /** 店舗紹介の一覧(全店の札。メニューの「店舗紹介」) */
+  shops: string;
+  /** 特集の一覧(利用シーン記事・業種の特集記事。メニューの「特集」) */
+  specials: string;
+  /** 特集の記事 1 本。proto は一覧と同じ(slug は無視)、live は /pet/special/{slug} */
+  special: (slug?: string) => string;
   /** 最初のページの節への飛び先 */
   areaAnchor: string;
   categoryAnchor: string;
@@ -54,7 +59,9 @@ export function ptLinks(mode: PtMode = "proto"): PtLinks {
     return {
       home: LIVE_BASE,
       search,
-      articles: `${LIVE_BASE}/article`,
+      shops: `${LIVE_BASE}/shop`,
+      specials: `${LIVE_BASE}/special`,
+      special: (slug) => (slug ? `${LIVE_BASE}/special/${encodeURIComponent(slug)}` : `${LIVE_BASE}/special`),
       areaAnchor: `${LIVE_BASE}#pt-area`,
       categoryAnchor: `${LIVE_BASE}#pt-category`,
       searchWith: (f) => {
@@ -71,7 +78,9 @@ export function ptLinks(mode: PtMode = "proto"): PtLinks {
   return {
     home: BASE,
     search: SEARCH_HREF,
-    articles: ARTICLES_HREF,
+    shops: SHOPS_HREF,
+    specials: SPECIALS_HREF,
+    special: () => SPECIALS_HREF,
     areaAnchor: TOP_AREA_HREF,
     categoryAnchor: TOP_CATEGORY_HREF,
     searchWith: () => SEARCH_HREF,

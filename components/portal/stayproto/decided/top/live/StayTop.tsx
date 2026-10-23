@@ -117,7 +117,7 @@ function Feature({ items }: { items: LiveArticle[] }) {
             <br />
             確認できた情報で紹介します。
           </p>
-          <Link href={L.articles} className="sy-more sy-t-feat-link io" style={{ ["--d" as string]: "240ms" }}>
+          <Link href={L.specials} className="sy-more sy-t-feat-link io" style={{ ["--d" as string]: "240ms" }}>
             特集記事をみる
             <IconArrow />
           </Link>
@@ -258,8 +258,8 @@ function Articles({ items }: { items: LiveArticle[] }) {
             <br />
             記事
           </h2>
-          <Link href={L.articles} className="sy-more sy-more--plain sy-t-arts-more io" style={{ ["--d" as string]: "100ms" }}>
-            記事をもっと見る
+          <Link href={L.shops} className="sy-more sy-more--plain sy-t-arts-more io" style={{ ["--d" as string]: "100ms" }}>
+            店舗紹介をもっと見る
             <IconArrow />
           </Link>
         </div>

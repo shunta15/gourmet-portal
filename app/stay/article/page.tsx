@@ -1,19 +1,9 @@
-import StayFrame from "@/components/portal/stayproto/decided/common/StayFrame";
-import { stayArticleListPage } from "@/components/portal/stayproto/decided/articlelist/ArticleListPage";
+import { permanentRedirect } from "next/navigation";
 import { assertPortalLive } from "@/lib/portal/launch";
 
-// 宿の記事の一覧(決定デザイン・見本「3_探す」と同じ組み立て)。/stay/article
-// 中身は実在の宿の紹介記事(紹介記事と実物の写真のある宿)。カードのリンク先は宿の記事 /stay/article/{id}。外枠は StayFrame。
-// 状態は URL の引数(kind・region・pref・scene・q・sort・page。探す /stay/search と同じ名前)。引数つきの URL は noindex(正本は引数なしの /stay/article)。
-// robots は他の新業種ページと同じ gate(業種の掲載が 3 件未満なら noindex。buildMetadata の count)。
-const live = stayArticleListPage();
-
-export async function generateMetadata(props: Parameters<typeof live.generateMetadata>[0]) {
+// 宿の記事の一覧 /stay/article は、店舗紹介の一覧 /stay/shop へ恒久の転送(308)。2026-10-24 オーナー決定: 店 1 軒の記事のカードの一覧は作らず、店舗紹介にまとめる。
+// 宿ごとの記事 /stay/article/{id} は残す(店のページの「特集記事を読む」・記事のページの「店舗詳細を見る」で行き来する)。公開スイッチ OFF のあいだは 404(assertPortalLive)。
+export default function Page() {
   assertPortalLive();
-  return live.generateMetadata(props);
-}
-
-export default async function Page(props: Parameters<typeof live.Page>[0]) {
-  assertPortalLive();
-  return <StayFrame>{await live.Page(props)}</StayFrame>;
+  permanentRedirect("/stay/shop");
 }
