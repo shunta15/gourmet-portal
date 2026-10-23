@@ -28,7 +28,7 @@ export function cpShopListPage(site: CpSite) {
     const v = getVertical(site.key);
     return buildMetadata({
       vertical: site.key,
-      title: `店舗紹介｜${v.brand}`,
+      title: `店舗紹介 | ${v.brand}`,
       description: `${v.name}に掲載している${site.noun}を、すべて並べた一覧です。掲載${shops.length}件。`,
       // 「もっと見る」の付いた URL の正本は、引数なしの一覧
       path: shopListHref(site),

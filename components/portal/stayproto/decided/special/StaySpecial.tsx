@@ -73,7 +73,7 @@ export function StaySpecialIndex() {
             <Crumbs items={[{ label: "トップ", href: L.home }, { label: "特集記事" }]} />
             <p className="sy-lab ssp-label">Special</p>
             <h1 className="ssp-h1">ステイの特集記事</h1>
-            <p className="ssp-lead">宿を選ぶときに読む記事です。書いてあるのは、マチノワステイに載っている宿のデータと、宿の案内で確かめられた事実だけです。</p>
+            <p className="ssp-lead">宿を選ぶときに読む記事です。マチノワステイに載っている宿を例に、種類のちがいや見るところをまとめています。</p>
           </div>
         </header>
         <section className="ssp-in ssp-list" aria-label="特集記事の一覧">

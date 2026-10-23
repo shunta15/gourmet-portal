@@ -20,7 +20,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const total = (await loadGreenShops()).length;
   return buildMetadata({
     vertical: "bodycare",
-    title: `店舗紹介｜${v.brand}`,
+    title: `店舗紹介 | ${v.brand}`,
     description: `${v.name}に掲載している店を、すべて並べた一覧です。掲載${total}件。`,
     path: shopListHref(),
     count: n === PAGE_SIZE ? total : 0,

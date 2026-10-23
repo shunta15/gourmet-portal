@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return buildMetadata({
     vertical: "pet",
     title: `ペットの特集記事｜${v.brand}`,
-    description: "ペットと行けるお店を探すときに読む特集記事の一覧です。ペットショップ・トリミング・ペットホテル・カフェ・動物病院のちがい、お店を選ぶときに見るところ、動物とふれあえるお店。お店のデータと案内で確かめられた事実だけを載せています。",
+    description: "ペットと行けるお店を探すときに読む特集記事の一覧です。ペットショップ・トリミング・ペットホテル・カフェ・動物病院のちがい、お店を選ぶときに見るところ、動物とふれあえるお店。",
     path: "/pet/special",
     count: await countPlaces("pet"),
   });

@@ -160,13 +160,13 @@ export async function StayShopList({ shops: given }: { shops?: LiveShop[] } = {}
   );
 }
 
-/** metadata。title は「店舗紹介｜サイト名」、canonical は自分自身。robots は他の一覧と同じ gate(掲載が 3 件未満なら noindex) */
+/** metadata。title は「店舗紹介 | サイト名」、canonical は自分自身。robots は他の一覧と同じ gate(掲載が 3 件未満なら noindex) */
 export async function stayShopListMetadata(): Promise<Metadata> {
   const v = VERTICALS.stay;
   const count = await countPlaces("stay");
   return buildMetadata({
     vertical: "stay",
-    title: `店舗紹介｜${v.brand}`,
+    title: `店舗紹介 | ${v.brand}`,
     description: `実在の宿${count > 0 ? `${count}軒` : ""}の紹介の一覧です。所在地やチェックイン・チェックアウトなど、確認できた情報をまとめています。`,
     path: syLinks("live").shops,
     count,

@@ -71,7 +71,7 @@ export function PetSpecialIndex() {
             <Crumbs items={[{ label: "マチノワペット", href: L.home }, { label: "特集記事" }]} />
             <p className="psp-label">SPECIAL</p>
             <h1 className="psp-h1">ペットの特集記事</h1>
-            <p className="psp-lead">ペットと行けるお店を探すときに読む記事です。書いてあるのは、マチノワペットに載っているお店のデータと、お店の案内で確かめられた事実だけです。</p>
+            <p className="psp-lead">ペットと行けるお店を探すときに読む記事です。マチノワペットに載っているお店を例に、種類のちがいや見るところをまとめています。</p>
           </div>
         </header>
         <section className="psp-in psp-list" aria-label="特集記事の一覧">

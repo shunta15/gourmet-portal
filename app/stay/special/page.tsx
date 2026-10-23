@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return buildMetadata({
     vertical: "stay",
     title: `ステイの特集記事｜${v.brand}`,
-    description: "宿を選ぶときに読む特集記事の一覧です。一棟貸し・キャンプ場・民宿・ホテル・旅館のちがい、宿を選ぶときに見るところ、ペットと泊まれる宿。宿のデータと案内で確かめられた事実だけを載せています。",
+    description: "宿を選ぶときに読む特集記事の一覧です。一棟貸し・キャンプ場・民宿・ホテル・旅館のちがい、宿を選ぶときに見るところ、ペットと泊まれる宿。",
     path: "/stay/special",
     count: await countPlaces("stay"),
   });

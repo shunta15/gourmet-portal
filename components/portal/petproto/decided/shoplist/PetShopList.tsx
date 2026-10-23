@@ -109,13 +109,13 @@ export default async function PetShopList() {
   );
 }
 
-/** metadata。title は「店舗紹介｜サイト名」、canonical は自分自身。robots は他の一覧と同じ gate(掲載が 3 件未満なら noindex) */
+/** metadata。title は「店舗紹介 | サイト名」、canonical は自分自身。robots は他の一覧と同じ gate(掲載が 3 件未満なら noindex) */
 export async function petShopListMetadata(): Promise<Metadata> {
   const v = VERTICALS.pet;
   const count = await countPlaces("pet");
   return buildMetadata({
     vertical: "pet",
-    title: `店舗紹介｜${v.brand}`,
+    title: `店舗紹介 | ${v.brand}`,
     description: `ペットと行けるお店${count > 0 ? `${count}店` : ""}の紹介の一覧です。カフェ・飲食店、トリミング、ペットホテル、動物病院、ペットショップ・ブリーダー。メニューや設備、行き方など、確認できた情報をまとめています。`,
     path: L.shops,
     count,
