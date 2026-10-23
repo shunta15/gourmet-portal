@@ -17,6 +17,22 @@ html:has(.navp-bar) .vN-ft-logo em[data-ja] { font-size: clamp(16px, 1.8vw, 26px
 @media (max-width: 820px) { html:has(.navp-bar) .vN-logo em[data-ja] { display: inline; font-size: 12px; } }
 html:has(.navp-bar) .pf-root .pf-hd-bar nav a { min-width: 44px; justify-content: center; }
 html:has(.navp-bar) .pf-root .pp-crumbs a { min-width: 44px; justify-content: center; }
+/* メニュー 4 つ（トップ・さがす・店舗紹介・特集。lib/portal/noren/nav.ts の GOURMET_MENU）を、スマホの幅（390px 前後）でもロゴと一緒に 1 行に収める（ロゴの「グルメ」が折り返さない・押す所は 44px のまま） */
+@media (max-width: 420px) {
+  .vN-logo { flex-shrink: 0; white-space: nowrap; }
+  html:has(.navp-bar) .vN-logo em[data-ja] { font-size: 11px; letter-spacing: 0.06em; }
+  .vN-nav a { padding: 0 3px; }
+  .vN-nav .ja { letter-spacing: 0.04em; padding-left: 0.04em; }
+}
+@media (max-width: 350px) { html:has(.navp-bar) .vN-logo em[data-ja] { display: none; } }
+/* 写真が主役のページ・周りのページの上端の帯（.pf-hd-bar）も同じ: ロゴとメニュー 4 つが折り返さず 1 行に収まるように（押す所は 44px のまま） */
+@media (max-width: 420px) {
+  .pf-root .pf-hd-bar .pf-logo { flex: none; white-space: nowrap; font-size: 18px; }
+  .pf-root .pf-hd-bar .pf-logo small { font-size: 11px; letter-spacing: 0.08em; margin-left: 6px; white-space: nowrap; }
+  .pf-root .pf-hd-bar nav { gap: 0; flex: none; }
+  .pf-root .pf-hd-bar nav a { white-space: nowrap; padding: 0 4px; font-size: 12.5px; letter-spacing: 0.02em; }
+}
+@media (max-width: 350px) { .pf-root .pf-hd-bar .pf-logo small { display: none; } }
 html:has(.navp-bar) .leaflet-control-zoom a { width: 44px !important; height: 44px !important; line-height: 44px !important; font-size: 22px; text-indent: 0; }
 html:has(.navp-bar) .leaflet-control-attribution a { display: inline-block; min-height: 24px; line-height: 24px; }
 /* 先読み用の見えない Link（画面の隅の 1px。Link は画面に入ると行き先を先読みする） */

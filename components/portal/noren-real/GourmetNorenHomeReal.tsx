@@ -9,7 +9,7 @@ import NorenHeroReal from "./NorenHeroReal";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
 import { RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
-import { FEATURE_KIND_ROUNDUP, FEATURE_KIND_SINGLE, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
+import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
 import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
 import { buildBlockTop } from "@/lib/portal/noren/blockTop";
@@ -140,7 +140,7 @@ export default async function GourmetNorenHomeReal({
       </section>
 
       {/* 5 特集（お品書き） */}
-      {/* 節の見出し・「すべて見る」の言い方は、特集の 3 棚（RELEASE_FEATURE）に合わせる。false のあいだは今の本番の「まとめ記事」「特集記事・まとめ記事」 */}
+      {/* 節の見出し・「すべて見る」の言い方は、特集の 2 棚（シーン別まとめ記事・街歩き・コース。RELEASE_FEATURE）に合わせる。false のあいだは今の本番の「まとめ記事」「特集記事・まとめ記事」 */}
       <section className="vN-menu" id="features" aria-label={RELEASE_FEATURE ? "特集" : "まとめ記事"}>
         <div className="vN-menu-head vN-rv">
           <h2 className="vN-tate-h">{RELEASE_FEATURE ? "特集" : "まとめ記事"}</h2>
@@ -171,7 +171,7 @@ export default async function GourmetNorenHomeReal({
           })}
         </ol>
         <p className="vN-menu-more vN-rv">
-          <Link href="/feature" data-cursor="ALL">{RELEASE_FEATURE ? `${FEATURE_KIND_SINGLE}・${FEATURE_KIND_ROUNDUP}・${FEATURE_ROUNDUP_WALK}` : "特集記事・まとめ記事"}をすべて見る <span aria-hidden="true">→</span></Link>
+          <Link href="/feature" data-cursor="ALL">{RELEASE_FEATURE ? `${FEATURE_KIND_ROUNDUP}・${FEATURE_ROUNDUP_WALK}` : "特集記事・まとめ記事"}をすべて見る <span aria-hidden="true">→</span></Link>
         </p>
       </section>
 

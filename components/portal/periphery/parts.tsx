@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { Brush, Seal } from "../photoFeature/parts";
 import PeripheryNewsletter from "./PeripheryNewsletter";
-import { FOOT_NAV, GOURMET_TOP, NOREN_TOP } from "@/lib/portal/noren/nav";
+import { GOURMET_TOP, menuWithTop } from "@/lib/portal/noren/nav";
 import FootSmall from "../FootSmall";
 
 /**
@@ -125,7 +125,7 @@ export function Dash({ items, label }: { items: ReactNode[]; label?: string }) {
 
 // ───────── 上端の帯・竿・フッター ─────────
 
-/** 上端の帯（ロゴ + 主なリンク）。ロゴは「マチノワ グルメ」→ グルメのトップ（周りのページはどれも同じ） */
+/** 上端の帯（ロゴ + メニュー 4 つ: トップ・さがす・店舗紹介・特集。lib/portal/noren/nav.ts の GOURMET_MENU）。ロゴは「マチノワ グルメ」→ グルメのトップ（周りのページはどれも同じ） */
 export function Header() {
   return (
     <header className="pf-hd-bar">
@@ -133,22 +133,23 @@ export function Header() {
         マチノワ<small>グルメ</small>
       </Link>
       <nav aria-label="主なリンク">
-        <Link href="/feature">特集</Link>
-        <Link href="/search">さがす</Link>
+        {menuWithTop(GOURMET_TOP).map((n) => (
+          <Link key={n.ja} href={n.href}>{n.ja}</Link>
+        ))}
       </nav>
     </header>
   );
 }
 
-/** ページの上端の竿（グルメ・特集・さがす）と、読み進みの布・読み進みの印（どれも JS が動いたときだけ動く。Motion が動かす） */
+/** ページの上端の竿（メニュー 4 つ: トップ・さがす・店舗紹介・特集）と、読み進みの布・読み進みの印（どれも JS が動いたときだけ動く。Motion が動かす） */
 export function Rod() {
   return (
     <>
       <div className="pf-rod">
         <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
-          <Link href={GOURMET_TOP}>グルメ</Link>
-          <Link href="/feature">特集</Link>
-          <Link href="/search">さがす</Link>
+          {menuWithTop(GOURMET_TOP).map((n) => (
+            <Link key={n.ja} href={n.href}>{n.ja}</Link>
+          ))}
         </nav>
         <span className="pf-rod__tr" aria-hidden="true"><span className="pf-rod__cl"><b /></span></span>
         <i className="pf-rod__bar" aria-hidden="true" />
@@ -162,12 +163,12 @@ export function Rod() {
 }
 
 /**
- * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション = メニューと同じ「トップ・特集・さがす」の 3 つ）と、小さな文字の 1 行（FootSmall）、
+ * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション = メニューと同じ「トップ・さがす・店舗紹介・特集」の 4 つ）と、小さな文字の 1 行（FootSmall）、
  * ニュースレター（newsletter が true のとき。今まで付いていたページだけ）。リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。
  * 2026-10-23 オーナー決定「各業種 4 ページに収める」: 地域の列・おまかせ提案・写真から探す・ショート動画・総合トップ・サイト情報の列は外した（サイト情報と総合トップは小さな 1 行へ）。
  */
 export function Footer({ newsletter = false }: { newsletter?: boolean }) {
-  const nav = FOOT_NAV.map((n) => (n.href === NOREN_TOP ? { ...n, href: GOURMET_TOP } : n));
+  const nav = menuWithTop(GOURMET_TOP);
   return (
     <footer className="pf-ft pp-ft">
       <div className="pp-ft__in">

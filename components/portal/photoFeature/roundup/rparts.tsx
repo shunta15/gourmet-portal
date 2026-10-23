@@ -4,6 +4,8 @@ import { sized } from "@/lib/imageUrl";
 import { rowOf, type PfPhoto, type PfText, type Rv } from "@/lib/portal/photoFeature/build";
 import type { RpUnit } from "@/lib/portal/photoFeature/roundupMark";
 import FootSmall from "../../FootSmall";
+import FootMenu from "../FootMenu";
+import { GOURMET_TOP, menuWithTop } from "@/lib/portal/noren/nav";
 
 /**
  * シーン別まとめ記事・特集の一覧（写真が主役の形）の小さな部品（サーバーコンポーネント）。
@@ -108,26 +110,28 @@ export function Dark({ children }: { children: ReactNode }) {
   );
 }
 
-/** 上端の帯（ロゴ + 主なリンク） */
-export function HeaderBar({ topHref, listHref, searchHref, current }: { topHref: string; listHref: string; searchHref: string; current?: "list" }) {
+/** 上端の帯（ロゴ + メニュー 4 つ: トップ・さがす・店舗紹介・特集。lib/portal/noren/nav.ts の GOURMET_MENU）。current が "list" のとき、「特集」に aria-current を付ける */
+export function HeaderBar({ topHref, current }: { topHref: string; current?: "list" }) {
   return (
     <header className="pf-hd-bar">
       <Link href={topHref} className="pf-logo" aria-label="マチノワ グルメのトップへ">
         マチノワ<small>グルメ</small>
       </Link>
       <nav aria-label="主なリンク">
-        <Link href={listHref} aria-current={current === "list" ? "page" : undefined}>特集</Link>
-        <Link href={searchHref}>さがす</Link>
+        {menuWithTop(topHref).map((n) => (
+          <Link key={n.ja} href={n.href} aria-current={current === "list" && n.ja === "特集" ? "page" : undefined}>{n.ja}</Link>
+        ))}
       </nav>
     </header>
   );
 }
 
-/** ページの下端（ロゴ・小さな文字の 1 行（FootSmall）・© の行） */
-export function FooterBar() {
+/** ページの下端（ロゴ・ナビゲーション（メニューと同じ 4 つ）・小さな文字の 1 行（FootSmall）・© の行） */
+export function FooterBar({ topHref = GOURMET_TOP }: { topHref?: string }) {
   return (
     <footer className="pf-ft">
       <p className="pf-ft__l">マチノワ</p>
+      <FootMenu top={topHref} />
       <FootSmall className="pf-ft__nav" />
       <p className="pf-ft__s">© 2026 マチノワ / 街の輪</p>
     </footer>
@@ -135,14 +139,14 @@ export function FooterBar() {
 }
 
 /** ページの上端の竿と、読み進みの布・読み進みの印（どれも JS が動いたときだけ動く） */
-export function RodAndHud({ topHref, listHref, searchHref }: { topHref: string; listHref: string; searchHref: string }) {
+export function RodAndHud({ topHref }: { topHref: string }) {
   return (
     <>
       <div className="pf-rod">
         <nav className="pf-rod__nav" aria-label="サイト内の主なリンク">
-          <Link href={topHref}>グルメ</Link>
-          <Link href={listHref}>特集</Link>
-          <Link href={searchHref}>さがす</Link>
+          {menuWithTop(topHref).map((n) => (
+            <Link key={n.ja} href={n.href}>{n.ja}</Link>
+          ))}
         </nav>
         <span className="pf-rod__tr" aria-hidden="true"><span className="pf-rod__cl"><b /></span></span>
         <i className="pf-rod__bar" aria-hidden="true" />

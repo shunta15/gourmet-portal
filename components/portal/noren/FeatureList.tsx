@@ -8,7 +8,7 @@ import { featureHrefOf } from "@/lib/portal/noren/onePage";
 import { clothChars, clothFs, splitTitle, type FeatureCardItem } from "@/lib/portal/noren/featureCard";
 import { nameCore } from "@/lib/portal/noren/shop";
 
-// 暖簾の特集記事のトップ（/feature・/feature/region/<key>・/feature/search）の部品。サーバー・クライアントのどちらからも使える（データは読まない）。
+// 暖簾の特集のトップ（/feature。旧 /feature/region/<key>・/feature/search は 2026-10-24 から /feature へ 308）の部品。サーバー・クライアントのどちらからも使える（データは読まない）。
 // 見た目は暖簾の特集ページ・/gourmet と同じ文法（布・竿・紙・書体・カードの形）。CSS は featlist.css（vI-）と、特集ページの feature.css（布の変数・パンくず・見出し）。
 
 /** 特集のカード 1 枚。特集ページの「関連」（vH-ac）と同じ、竿に掛かった暖簾が写真を隠し、触れると上がる。下に、題名・副題 */

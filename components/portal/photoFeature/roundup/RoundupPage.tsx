@@ -116,10 +116,9 @@ export type RoundupPageProps = {
   data: RoundupData;
   /** 利用シーンの語（「ランチ」など）+ 地域の言い方（「大阪」など）。巻頭の札に出す */
   areaLabel: string;
-  /** 特集の一覧・グルメの入口・さがすの行き先 */
+  /** 特集の一覧・グルメの入口の行き先（メニューの 4 つは lib/portal/noren/nav.ts の GOURMET_MENU が決める） */
   listHref: string;
   topHref: string;
-  searchHref: string;
   /** その利用シーンで絞ったさがす（/search?scene=<slug>）。無ければ出さない */
   sceneSearch?: { href: string; label: string } | null;
   /** その地域で絞ったさがす（/search?region=<キー>）。無ければ出さない */
@@ -128,7 +127,7 @@ export type RoundupPageProps = {
   related?: RoundupRelatedItem[];
 };
 
-export default function RoundupPage({ data: D, areaLabel, listHref, topHref, searchHref, sceneSearch, regionSearch, related = [] }: RoundupPageProps) {
+export default function RoundupPage({ data: D, areaLabel, listHref, topHref, sceneSearch, regionSearch, related = [] }: RoundupPageProps) {
   const T = D.title;
   const hero: PfPhoto | null = D.hero;
   const cover: Fx = { "--per": T.per, "--cols": T.cols.length, "--nh": hero && hero.nh ? Math.round(hero.nh * 1.3) : 9999, "--hcap": `${hero ? hero.cap : 1200}px` };
@@ -147,7 +146,7 @@ export default function RoundupPage({ data: D, areaLabel, listHref, topHref, sea
       <Gate name={D.tag} units={D.gate} />
       <div className="pf-open">
         <div className="pf-open__in">
-          <HeaderBar topHref={topHref} listHref={listHref} searchHref={searchHref} />
+          <HeaderBar topHref={topHref} />
 
           {/* 巻頭: 主役の写真（大きく）+ 縦書きの題の札が重なる + 朱の丸 */}
           <section className={`pf-cover rp-cover${hero ? "" : " pf-cover--nophoto"}${small ? " rp-cover--sm" : ""}`} style={cover} aria-label="巻頭">
@@ -244,8 +243,8 @@ export default function RoundupPage({ data: D, areaLabel, listHref, topHref, sea
         </section>
       )}
 
-      <FooterBar />
-      <RodAndHud topHref={topHref} listHref={listHref} searchHref={searchHref} />
+      <FooterBar topHref={topHref} />
+      <RodAndHud topHref={topHref} />
 
       {/* 動き・大きく見る幕 */}
       <Motion />

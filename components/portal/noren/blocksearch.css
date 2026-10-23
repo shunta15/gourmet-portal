@@ -26,6 +26,11 @@
 .vN:has(.vBk-page) .vN-nav em{color:#6b7280}
 .vN:has(.vBk-page) .vN-nav a::after{background:#f26a10;height:2px}
 .vN:has(.vBk-page) .vN-skip{background:#1c2541;color:#fff}
+/* スマホ: メニュー 4 つ（トップ・さがす・店舗紹介・特集）がロゴと一緒に 1 行に収まるよう、白いヘッダーの字を少し小さく */
+@media (max-width:420px){
+  .vN:has(.vBk-page) .vN-logo .ja{font-size:20px}
+  .vN:has(.vBk-page) .vN-nav .ja{font-size:13.5px;letter-spacing:.02em}
+}
 
 /* ---------- 地 ---------- */
 .vBk-page{padding-top:var(--hd);background:#fff;min-height:70vh}
@@ -119,6 +124,8 @@
 /* ---------- 検索結果の見出し ---------- */
 .vBk-reshead{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin:40px 0 18px}
 .vBk-reshead h2{font:900 24px/1.3 var(--bk-maru);color:var(--bk-navy)}
+/* 店舗紹介の一覧（/restaurant）の見出し。「さがす」の結果の見出し（h2）と同じ書体で、ページの題なので h1 */
+.vBk-reshead h1{font:900 28px/1.3 var(--bk-maru);color:var(--bk-navy)}
 .vBk-count{font:400 16px/1.3 var(--bk-sans);color:var(--bk-ink)}
 .vBk-count strong{font:500 20px/1 var(--bk-sans);font-variant-numeric:tabular-nums}
 .vBk-chosen{display:inline-flex;align-items:center;gap:2px;min-height:36px;padding:0 4px 0 14px;border-radius:999px;background:var(--bk-or-t);color:var(--bk-or-ink);font:700 13px/1 var(--bk-sans)}
