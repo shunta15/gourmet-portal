@@ -1,0 +1,58 @@
+/* A組の試作(青と黄の切手・チケット風)。数字の u は見本の画像(幅 1024px)の 1px = calc(N * var(--u))。--u = ページ幅 ÷ 1024(最大 1920px)。Y(n) = 見本の y 座標 n を、節の上端 --b からの位置にする。
+   このファイルは scratch の *.src.css(u 記法)から展開した物。接頭辞 apa-(共通)/ t-(最初)/ s-(探す)/ h-(店舗紹介)/ f-(特集) */
+/* ===== 各ページの一番下の帯(山と空の写真に、手書き・赤い切手のボタン・丸いスタンプ) ===== */
+@media (max-width: 859px) {
+  .apa-banner { position: relative; margin-top: 28px; min-height: 230px; display: grid; align-content: center; justify-items: center; gap: 14px; padding: 24px 16px; overflow: hidden; color: #fff; text-align: center; }
+  .b-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
+  .apa-banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 50, 100, 0.55), rgba(8, 50, 100, 0.25)); z-index: 0; }
+  .b-left, .b-btn { z-index: 1; }
+  .b-left, .b-right { position: relative; font-size: 19px; line-height: 1.5; text-shadow: 0 1px 6px rgba(0, 40, 80, 0.55); }
+  .b-right, .b-waves, .b-stamp, .b-compass { display: none; }
+  .b-btn { position: relative; display: block; padding: 12px 22px; border-radius: 4px; background: #f4514e; color: #fff; outline: 1.5px dashed rgba(255, 255, 255, 0.7); outline-offset: -4px; }
+  .b-btn-t small { display: block; font-family: var(--ff-lab); font-size: 10px; letter-spacing: 0.2em; }
+  .b-btn-t span { display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 17px; }
+  .b-btn-ar { width: 18px; height: 18px; }
+}
+@media (min-width: 860px) {
+  .apa-banner { position: relative; width: 100%; overflow: hidden; color: #fff; }
+  .b-img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+  .b-left, .b-right { position: absolute; color: #fff; text-shadow: 0 0 calc(5 * var(--u)) rgba(0, 50, 100, 0.4); white-space: nowrap; transform-origin: 0 0; letter-spacing: 0.06em; }
+  .b-btn { position: absolute; display: block; background: #f4514e; box-shadow: 0 calc(2 * var(--u)) calc(6 * var(--u)) rgba(150, 30, 30, 0.35); color: #fff; z-index: 2;
+    -webkit-mask: radial-gradient(circle calc(3.2 * var(--u)) at 0 calc(5 * var(--u)), #0000 96%, #000) left / 51% calc(10 * var(--u)) repeat-y, radial-gradient(circle calc(3.2 * var(--u)) at 100% calc(5 * var(--u)), #0000 96%, #000) right / 51% calc(10 * var(--u)) repeat-y;
+    mask: radial-gradient(circle calc(3.2 * var(--u)) at 0 calc(5 * var(--u)), #0000 96%, #000) left / 51% calc(10 * var(--u)) repeat-y, radial-gradient(circle calc(3.2 * var(--u)) at 100% calc(5 * var(--u)), #0000 96%, #000) right / 51% calc(10 * var(--u)) repeat-y; }
+  .b-btn::before { content: ""; position: absolute; inset: calc(4 * var(--u)); border: calc(1.2 * var(--u)) dashed rgba(255, 255, 255, 0.6); border-radius: calc(2 * var(--u)); pointer-events: none; }
+  .b-compass { position: absolute; left: calc(38 * var(--u)); top: calc(20 * var(--u)); width: calc(46 * var(--u)); height: calc(46 * var(--u)); border: calc(1.5 * var(--u)) solid rgba(255, 255, 255, 0.9); border-radius: 50%; display: grid; place-items: center; }
+  .b-compass svg { width: calc(27 * var(--u)); height: calc(27 * var(--u)); stroke-width: 1.5; }
+  .b-btn-t { position: absolute; left: calc(94 * var(--u)); top: calc(18 * var(--u)); display: block; }
+  .b-btn-t small { display: block; font-family: var(--ff-lab); font-weight: 400; font-size: calc(6.84 * var(--u)); letter-spacing: 0.22em; line-height: calc(9.44 * var(--u)); }
+  .b-btn-t span { display: flex; align-items: center; gap: calc(8 * var(--u)); margin-top: calc(8 * var(--u)); font-weight: 700; font-size: calc(13.18 * var(--u)); letter-spacing: 0.06em; white-space: nowrap; line-height: calc(19.44 * var(--u)); }
+  .b-btn-ar { width: calc(13 * var(--u)); height: calc(13 * var(--u)); stroke-width: 2.2; }
+  .b-waves { position: absolute; color: rgba(255, 255, 255, 0.85); width: calc(42 * var(--u)); height: calc(30 * var(--u)); z-index: 1; }
+  .b-stamp { position: absolute; color: #fff; width: calc(96 * var(--u)); height: calc(96 * var(--u)); z-index: 1; filter: drop-shadow(0 0 calc(2 * var(--u)) rgba(0, 60, 100, 0.4)); }
+
+  /* top: 見本 y 1404〜1536 */
+  .apa-banner-top { --b: 1404; height: calc(132 * var(--u)); }
+  .apa-banner-top .b-left { left: calc(18 * var(--u)); top: calc(33 * var(--u)); font-size: calc(21.06 * var(--u)); line-height: calc(32.4 * var(--u)); transform: rotate(-10deg); }
+  .apa-banner-top .b-left::first-line { letter-spacing: 0.1em; }
+  .apa-banner-top .b-btn { left: calc(372 * var(--u)); top: calc(26 * var(--u)); width: calc(281 * var(--u)); height: calc(74 * var(--u)); }
+  .apa-banner-top .b-right { left: calc(744 * var(--u)); top: calc(56 * var(--u)); font-size: calc(16.74 * var(--u)); line-height: calc(28.08 * var(--u)); transform: rotate(-6deg); }
+  .apa-banner-top .b-waves { left: calc(655 * var(--u)); top: calc(28 * var(--u)); }
+  .apa-banner-top .b-stamp { left: calc(927 * var(--u)); top: calc(-5 * var(--u)); }
+  /* shop: 見本 y 1440〜1536 */
+  .apa-banner-shop { height: calc(98 * var(--u)); }
+  .apa-banner-shop .b-left { left: calc(96 * var(--u)); top: calc(20 * var(--u)); font-size: calc(18.9 * var(--u)); line-height: calc(30.24 * var(--u)); transform: rotate(-7deg); }
+  .apa-banner-shop .b-btn { left: calc(562 * var(--u)); top: calc(2 * var(--u)); width: calc(301 * var(--u)); height: calc(77 * var(--u)); }
+  .apa-banner-shop .b-btn .b-compass { top: calc(23 * var(--u)); }
+  .apa-banner-shop .b-btn-t { top: calc(20 * var(--u)); }
+  .apa-banner-shop .b-waves { left: calc(862 * var(--u)); top: calc(14 * var(--u)); }
+  .apa-banner-shop .b-stamp { left: calc(908 * var(--u)); top: calc(-8 * var(--u)); width: calc(104 * var(--u)); height: calc(104 * var(--u)); }
+  /* article: 見本 y 1456〜1536 */
+  .apa-banner-article { height: calc(80 * var(--u)); }
+  .apa-banner-article .b-left { left: calc(24 * var(--u)); top: calc(14 * var(--u)); font-size: calc(17.82 * var(--u)); line-height: calc(28.08 * var(--u)); transform: rotate(-8deg); }
+  .apa-banner-article .b-btn { left: calc(372 * var(--u)); top: calc(1 * var(--u)); width: calc(280 * var(--u)); height: calc(69 * var(--u)); }
+  .apa-banner-article .b-btn .b-compass { top: calc(11 * var(--u)); }
+  .apa-banner-article .b-btn-t { top: calc(11 * var(--u)); }
+  .apa-banner-article .b-right { left: calc(740 * var(--u)); top: calc(22 * var(--u)); font-size: calc(16.42 * var(--u)); line-height: calc(27 * var(--u)); transform: rotate(-6deg); }
+  .apa-banner-article .b-waves { display: none; }
+  .apa-banner-article .b-stamp { left: calc(918 * var(--u)); top: calc(4 * var(--u)); width: calc(98 * var(--u)); height: calc(98 * var(--u)); }
+}

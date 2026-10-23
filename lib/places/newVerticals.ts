@@ -7,6 +7,14 @@ import type { Place } from './types';
 
 export type GeneratedVertical = 'beauty' | 'bodycare' | 'pet' | 'stay' | 'activity' | 'sports' | 'life';
 
+/**
+ * 保留の店 ID(オーナー確認待ちのため、サイトのどこにも出さない店)。この 1 行が唯一の入口で、ここに入れた店は
+ * 店データ(getGeneratedPlaces)・店の特集記事(getGeneratedFeatures)から外れる。
+ * = 一覧・店のページ(404)・サイトマップ・件数・総合トップの件数・記事・探すの絞り込みのどれにも出ない。リストから消せば全部戻る。
+ * ac0012 = SeaChan石垣島(住所の確認がオーナー判断。2026-10-23 保留)
+ */
+export const HELD_PLACE_IDS: readonly string[] = ['ac0012'];
+
 export async function getGeneratedPlaces(vertical: GeneratedVertical): Promise<Place[]> {
   // activity / sports / life の JSON は、店のデータがまだ無いあいだは places が空の入れ物(build-places.mjs が店ごと作り直す)。ファイルが無いと import が落ちるので、空でも置いておく
   const mod =
@@ -23,5 +31,5 @@ export async function getGeneratedPlaces(vertical: GeneratedVertical): Promise<P
               : vertical === 'life'
                 ? await import('./generated/life.json')
                 : await import('./generated/stay.json');
-  return (mod.default as unknown as { places: Place[] }).places;
+  return (mod.default as unknown as { places: Place[] }).places.filter((p) => !HELD_PLACE_IDS.includes(p.id));
 }

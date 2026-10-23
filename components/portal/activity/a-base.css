@@ -1,0 +1,107 @@
+/* A組の試作(青と黄の切手・チケット風)。数字の u は見本の画像(幅 1024px)の 1px = calc(N * var(--u))。--u = ページ幅 ÷ 1024(最大 1920px)。Y(n) = 見本の y 座標 n を、節の上端 --b からの位置にする。
+   このファイルは scratch の *.src.css(u 記法)から展開した物。接頭辞 apa-(共通)/ t-(最初)/ s-(探す)/ h-(店舗紹介)/ f-(特集) */
+/* ===== 共通(ヘッダー・旗・手書き・スマホの土台) ===== */
+.apa-root {
+  --navy: #0d4580;
+  --navy-d: #083a69;
+  --ink: #15385f;
+  --red: #f2524e;
+  --red-d: #e24a46;
+  --yel: #fbee6c;
+  --sky: #e4f2f6;
+  --sky2: #d3e8ef;
+  --cream: #fbf8ec;
+  --paper: #fbfaf2;
+  --teal: #2a9a9f;
+  --blue: #2f84be;
+  --line: #d6e2e6;
+  --mut: #61768c;
+  --ff-jp: var(--apa-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --ff-maru: var(--apa-maru), "Hiragino Maru Gothic ProN", var(--apa-jp), sans-serif;
+  --ff-hand: var(--apa-hand), "Zen Kurenaido", "Hiragino Maru Gothic ProN", cursive;
+  --ff-lab: var(--apa-lab), "Jost", system-ui, sans-serif;
+  container-type: inline-size;
+  position: relative;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--ff-jp);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+.apa-in { --u: calc(min(100cqw, 1920px) / 1024); max-width: 1920px; margin: 0 auto; position: relative; }
+.apa-root *, .apa-root *::before, .apa-root *::after { box-sizing: border-box; }
+:where(.apa-root) a { color: inherit; text-decoration: none; }
+:where(.apa-root) img { display: block; max-width: 100%; }
+:where(.apa-root) :is(h1, h2, h3, h4, p, ul, ol, dl, dd, figure) { margin: 0; padding: 0; }
+:where(.apa-root) :is(ul, ol) { list-style: none; }
+:where(.apa-root) :is(button, select) { font-family: inherit; }
+:where(.apa-root) svg { display: block; }
+.apa-hand { font-family: var(--ff-hand); font-weight: 400; -webkit-text-stroke: calc(0.75 * var(--u)) currentColor; paint-order: stroke fill; }
+.apa-maru { font-family: var(--ff-maru); }
+.apa-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* 共通のグルメ用の枠(上のナビ・縦のラベル・丸いカーソル・進み具合の線)は、この試作の中だけ隠す */
+body:has(.apa-root) > nav.nav,
+body:has(.apa-root) .side-label,
+body:has(.apa-root) .cursor-dot,
+body:has(.apa-root) .cursor-ring,
+body:has(.apa-root) .progress-bar { display: none !important; }
+body:has(.apa-root) { cursor: auto; }
+body:has(.apa-root) button, body:has(.apa-root) a { cursor: pointer; }
+body:has(.apa-root) main { display: contents; }
+
+/* ---- 旗の番号 ---- */
+.apa-flag { position: relative; display: block; }
+.apa-flag-cloth { display: grid; place-items: center; width: 100%; height: 100%; background: var(--navy); color: #fff; font-family: var(--ff-maru); font-weight: 900; letter-spacing: 0.04em; clip-path: polygon(0 0, 98% 4%, 94% 28%, 100% 52%, 95% 76%, 99% 100%, 0 100%); }
+.apa-flag-pole { position: absolute; left: 0; top: 0; width: 2px; height: 128%; background: #0a2f55; }
+
+/* ---- 紙のふちの切り欠き(切手のぎざぎざ)。左右 ---- */
+.apa-perf {
+  -webkit-mask: radial-gradient(circle calc(3.4 * var(--u)) at 0 calc(6 * var(--u)), #0000 96%, #000) left / 51% calc(12 * var(--u)) repeat-y, radial-gradient(circle calc(3.4 * var(--u)) at 100% calc(6 * var(--u)), #0000 96%, #000) right / 51% calc(12 * var(--u)) repeat-y;
+  mask: radial-gradient(circle calc(3.4 * var(--u)) at 0 calc(6 * var(--u)), #0000 96%, #000) left / 51% calc(12 * var(--u)) repeat-y, radial-gradient(circle calc(3.4 * var(--u)) at 100% calc(6 * var(--u)), #0000 96%, #000) right / 51% calc(12 * var(--u)) repeat-y;
+}
+
+/* ===== スマホ(860px 未満)。1 列・px で組む ===== */
+@media (max-width: 859px) {
+  .apa-in { --u: calc(100cqw / 390); }
+  .apa-head { position: sticky; top: 0; z-index: 40; background: #fff; box-shadow: 0 1px 0 rgba(13, 69, 128, 0.08); }
+  .apa-head-in { display: flex; align-items: center; justify-content: space-between; height: 54px; padding: 0 14px; position: relative; }
+  .apa-logo { display: flex; align-items: center; gap: 7px; }
+  .apa-logo-mark { width: 30px; height: auto; }
+  .apa-logo-t { font-family: var(--ff-maru); font-weight: 900; font-size: 20px; color: var(--navy); line-height: 1; }
+  .apa-head-tag, .apa-nav, .apa-head-ic { display: none; }
+  .apa-burger { position: static; }
+  .apa-burger summary { list-style: none; display: grid; gap: 4px; width: 40px; height: 40px; place-content: center; cursor: pointer; }
+  .apa-burger summary::-webkit-details-marker { display: none; }
+  .apa-burger summary i { display: block; width: 22px; height: 2px; border-radius: 2px; background: var(--navy); }
+  .apa-burger-list { position: absolute; left: 0; right: 0; top: 54px; display: grid; background: #fff; box-shadow: 0 10px 24px rgba(13, 69, 128, 0.14); border-top: 1px solid var(--line); }
+  .apa-burger-list a { padding: 14px 18px; font-weight: 500; border-bottom: 1px solid var(--line); }
+  .apa-flag { width: 38px; height: 30px; flex: none; }
+  .apa-flag-cloth { font-size: 15px; }
+}
+@media (min-width: 860px) {
+  .apa-burger { display: none; }
+  .apa-head { position: relative; z-index: 30; height: calc(45 * var(--u)); background: #fff; box-shadow: 0 1px 0 rgba(13, 69, 128, 0.06); }
+  .apa-head-in { position: relative; height: 100%; }
+  .apa-logo { position: absolute; left: calc(29 * var(--u)); top: calc(9 * var(--u)); display: flex; align-items: center; gap: calc(7 * var(--u)); }
+  .apa-logo-mark { width: calc(30 * var(--u)); height: auto; }
+  .apa-logo-t { font-family: var(--ff-maru); font-weight: 900; font-size: calc(21.6 * var(--u)); line-height: 1; color: var(--navy); letter-spacing: 0.02em; }
+  .apa-head-tag { position: absolute; left: calc(168 * var(--u)); top: calc(17 * var(--u)); font-size: calc(8.14 * var(--u)); line-height: 1.2; letter-spacing: 0.05em; color: var(--navy); font-weight: 500; white-space: nowrap; }
+  .apa-nav a { position: absolute; top: calc(16 * var(--u)); font-size: calc(9.68 * var(--u)); font-weight: 500; line-height: 1.4; white-space: nowrap; letter-spacing: 0.04em; }
+  .apa-nav .apa-nav-spot { left: calc(361 * var(--u)); }
+  .apa-nav .apa-nav-act { left: calc(419 * var(--u)); }
+  .apa-nav .apa-nav-course { left: calc(502 * var(--u)); }
+  .apa-nav .apa-nav-feature { left: calc(553 * var(--u)); }
+  .apa-nav .apa-nav-magazine { left: calc(598 * var(--u)); }
+  .apa-nav a.is-on::after { content: ""; position: absolute; left: calc(-1 * var(--u)); right: calc(-1 * var(--u)); bottom: calc(-5 * var(--u)); height: calc(2 * var(--u)); background: var(--red); border-radius: calc(1 * var(--u)); }
+  .apa-hi { position: absolute; top: calc(8 * var(--u)); width: calc(42 * var(--u)); display: grid; justify-items: center; gap: calc(2 * var(--u)); color: var(--navy); font-size: calc(6.84 * var(--u)); font-weight: 500; line-height: 1.2; }
+  .apa-hi svg { width: calc(14.5 * var(--u)); height: calc(14.5 * var(--u)); stroke-width: 2.1; }
+  .apa-hi-search { left: calc(769 * var(--u)); }
+  .apa-hi-fav { left: calc(817 * var(--u)); }
+  .apa-hi-user { left: calc(868 * var(--u)); }
+  .apa-signup { position: absolute; left: calc(927 * var(--u)); top: calc(10 * var(--u)); width: calc(75 * var(--u)); height: calc(26 * var(--u)); display: grid; place-items: center; border-radius: calc(3 * var(--u)); background: var(--red); color: #fff; font-size: calc(8.38 * var(--u)); font-weight: 700; letter-spacing: 0.08em; box-shadow: 0 calc(1 * var(--u)) calc(2 * var(--u)) rgba(226, 74, 70, 0.3); }
+  .apa-flag-cloth { font-size: calc(14.58 * var(--u)); }
+}

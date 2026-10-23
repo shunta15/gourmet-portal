@@ -60,6 +60,7 @@
  *   hours: null  : 営業時間が決められない店は店データに営業時間を載せない（定休日も載せない。holidays を別に書けば載せる）
  *   holidays     : 定休日の文字列（"不定休"、"第1・3月曜・火曜" など。null で載せない）
  *   name         : 店名（Google マップの名前が検索語つきで長いとき、公式サイトの呼び方に直す。例: ウルベビレッジ）
+ *   website      : 公式サイトの URL（Google マップの表示が開けない URL のとき、公式サイトの実在するページに直す。例: yawatano.co.jp → www.yawatano.co.jp）
  *
  * サイトのデータに入れないもの: 記事の facts / quote / notes / placeOverride（確認用）、星・口コミ・価格帯、写真の取得元 URL（imageUrl・pageUrl）、ownerPost。
  */
@@ -667,7 +668,7 @@ for (const key of wanted) {
   const fmt = ov.hours === null ? { hours: undefined, holidays: undefined } : formatHours(ov.hoursByDay ?? p.hours, key);
   const hours = fmt.hours;
   const holidays = "holidays" in ov ? (ov.holidays ? String(ov.holidays) : undefined) : fmt.holidays;
-  const web = classifyWebsite(p.website, key);
+  const web = classifyWebsite(ov.website ? String(ov.website).trim() : p.website, key);
   // ステイは Google マップの予約リンク（広告の転送 URL・料金つき）を使わない
   const reserve = r.vertical !== "stay" && Array.isArray(p.reserveLinks) ? p.reserveLinks.find((l) => l && isHttp(l.url)) : null;
   const reservationUrl = reserve ? cleanUrl(reserve.url)?.toString() : undefined;

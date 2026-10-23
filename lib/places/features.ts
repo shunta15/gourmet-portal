@@ -5,7 +5,7 @@
  * サーバー専用（動的 import で読む）。クライアント部品から import しない。
  */
 import type { FeatureArticle } from '@/lib/regions';
-import type { GeneratedVertical } from './newVerticals';
+import { HELD_PLACE_IDS, type GeneratedVertical } from './newVerticals';
 
 /** 特集の写真 1 枚の寸法と説明（<img> の width / height / alt に使う） */
 export interface FeaturePhoto {
@@ -58,7 +58,8 @@ export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise
             : vertical === 'life'
               ? await import('./generated/features-life.json')
               : await import('./generated/features-pet.json');
-  return (mod.default as unknown as { features: PlaceFeature[] }).features;
+  // 保留の店(newVerticals.ts の HELD_PLACE_IDS)の特集は出さない
+  return (mod.default as unknown as { features: PlaceFeature[] }).features.filter((f) => !(f.placeId && HELD_PLACE_IDS.includes(f.placeId)));
 }
 
 /** URL の ID（日本語。パーセントエンコードのままでも可）から特集を探す */

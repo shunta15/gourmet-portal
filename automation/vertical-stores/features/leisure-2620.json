@@ -1,0 +1,436 @@
+{
+  "key": "leisure-2620",
+  "vertical": "leisure",
+  "storeName": "釣り場 恵比寿",
+  "article": {
+    "id": "釣り場恵比寿",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TSURIBA EBISU KIRYU GUNMA",
+    "title": "群馬県桐生市・釣り場 恵比寿。5つの釣り池でのルアー・フライの釣りと、キャンプ・BBQのコース",
+    "titleHTML": "群馬県桐生市黒保根町の釣り堀つきキャンプ場<br><em>釣り場 恵比寿</em>のコースと釣り池",
+    "subtitle": "釣り堀・キャンプ場 / 群馬県桐生市黒保根町 / ルアー・フライフィッシング",
+    "lede": "群馬県桐生市黒保根町の釣り場 恵比寿は、公式サイトが、赤城山のふもと、標高750mにあるキャンプ場と案内している場所だ。赤城山のふもとのオートキャンプ場で、釣り堀は全部で5つあり、餌釣りではなく、ルアーとフライフィッシングを採用している。コースはキャンプ、BBQ、フィッシングの3種類で、キャンプとBBQのコースでは、釣り堀をオプションで追加できる。各サイトには、釣った魚をその場で焼き魚にできる、囲炉裏完備の東屋が設けられている。",
+    "date": "2026-10-23",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/leisure-2620/hero.jpg",
+    "ogImage": "/_portal/vshops/leisure-2620/hero.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "FISHING・BBQ・CAMP。3つのコースと入場・退場の時間",
+        "cuisine": "コース",
+        "area": "桐生市",
+        "purpose": "どのコースにするかを、決めたい人へ",
+        "desc": "コースは、キャンプ、BBQ、フィッシングの3つだ。FISHINGコースは、8時から16時。BBQコースは、11時に入場して17時に退場する。CAMPコースは、13時に入場して翌日の11時に退場する。キャンプとBBQのコースでは、釣り堀をオプションで追加できる。釣り堀は、通常営業日は予約が要らない。",
+        "images": [
+          "/_portal/vshops/leisure-2620/p2.jpg"
+        ],
+        "specs": [
+          {
+            "k": "FISHINGコース",
+            "v": "8:00〜16:00"
+          },
+          {
+            "k": "BBQ・CAMPコース",
+            "v": "BBQは11:00入場〜17:00退場・CAMPは13:00入場〜翌日11:00退場"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "棚田の水路跡を活かした5つの釣り池と、ルアー・フライの釣り",
+        "cuisine": "釣り池",
+        "area": "桐生市",
+        "purpose": "どんな池で、どんな釣りをするのかを知りたい人へ",
+        "desc": "釣り堀は、全部で5つある。かつて棚田だった頃の水路跡を活かして再整備し、上流の方から水を引いている。放流している魚は、ニジマス、ヤマメ、イワナなどだ。餌釣りではなく、ルアーとフライフィッシングを採用した釣り堀だ。",
+        "images": [
+          "/_portal/vshops/leisure-2620/s6.jpg"
+        ],
+        "specs": [
+          {
+            "k": "魚",
+            "v": "ニジマス・ヤマメ・イワナなど"
+          },
+          {
+            "k": "釣り方",
+            "v": "ルアー・フライフィッシング(餌釣りではない)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "1日券・4時間券・2時間券・イブニング券。持ち帰りの匹数とレンタル",
+        "cuisine": "釣り券・レンタル",
+        "area": "桐生市",
+        "purpose": "釣りの時間と、持ち帰りの匹数を知りたい人へ",
+        "desc": "釣り券には、1日券、4時間券、午後限定の2時間券、イブニング券がある。持ち帰りは、1日券が10匹まで、4時間券が7匹まで、2時間券が5匹まで、イブニング券が5匹までだ。イブニング券は14時から17時。ほかに、7時から8時のアーリーがあり、金土日祝のみだ。レンタルは、釣竿とリリーサー、ランディングネットのセットで、ルアーは受付で購入する。",
+        "images": [],
+        "specs": [
+          {
+            "k": "持ち帰り",
+            "v": "1日券10匹・4時間券7匹・2時間券5匹・イブニング券5匹"
+          },
+          {
+            "k": "時間",
+            "v": "イブニング券14:00〜17:00・アーリー7:00〜8:00(金土日祝のみ)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "東屋の囲炉裏で焼き魚、受付棟の横の捌き場",
+        "cuisine": "東屋・焼き魚",
+        "area": "桐生市",
+        "purpose": "釣った魚を、その場で食べたい人へ",
+        "desc": "各サイトには、釣った魚をその場で焼き魚にできる、囲炉裏完備の東屋が設けられている。東屋には、シンクや囲炉裏テーブルなどの設備があり、屋根があるので、突然雨が降っても使える。受付棟の横には、魚の捌き場がある。台風など危険のある場合以外は、雨でも営業している。",
+        "images": [
+          "/_portal/vshops/leisure-2620/s4.jpg",
+          "/_portal/vshops/leisure-2620/s7.jpg"
+        ],
+        "specs": [
+          {
+            "k": "東屋",
+            "v": "囲炉裏・シンク・屋根つき"
+          },
+          {
+            "k": "捌き場",
+            "v": "受付棟の横"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 05",
+        "rankNum": 5,
+        "name": "木曜定休。場所と、子ども・ペット・設備",
+        "cuisine": "営業・設備",
+        "area": "桐生市",
+        "purpose": "行く日と、設備や決まりを知りたい人へ",
+        "desc": "所在地は群馬県桐生市黒保根町下田沢1667-2、電話は090-8772-1666で、Googleマップの番号と同じだ。定休日は毎週木曜日で、祝日の翌日は営業する。不定休のため、営業はSNSで確かめるよう案内されている。保護者の監督があれば、未就学児も利用できる。ペットは、全施設で同伴できる。サイトの横には車をつけられ、水洗のトイレ棟がある。ソロテントのレンタルが、2張りある。",
+        "images": [
+          "/_portal/vshops/leisure-2620/p1.jpg"
+        ],
+        "specs": [
+          {
+            "k": "定休日",
+            "v": "毎週木曜日(祝日の翌日は営業)・不定休のためSNSで要確認"
+          },
+          {
+            "k": "設備",
+            "v": "サイトの横に車を付けられる・水洗トイレ棟・ソロテントのレンタル2張り"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "釣り堀は5つあり、棚田だった頃の水路跡を再整備して、上流から水を引いている。釣り方はルアーとフライで、1日券は持ち帰り10匹まで、釣った魚は東屋の囲炉裏でその場で焼き魚にできる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "FISHINGコースは8時から16時で、釣り堀は通常営業日なら予約が要らない。BBQは11時に入場、キャンプは13時に入場し、キャンプの退場は翌日の11時だ。金土日祝には、7時から8時のアーリーも利用できる。ルアーは受付で買い、竿はセットで借りられる。定休日は毎週木曜日で、祝日の翌日は営業するが、不定休のためSNSで確かめるよう案内されている。雨でも、台風など危険のある場合を除いて営業している。未就学児は保護者の監督があれば利用でき、ペットも全施設で同伴できる。電話は090-8772-1666だ。"
+  },
+  "summary": "群馬県桐生市黒保根町の釣り場 恵比寿を、公式サイトの記載から整理。FISHING・BBQ・CAMPの3つのコース、棚田の水路跡を活かした5つの釣り池、釣り券と持ち帰りの匹数、東屋の囲炉裏で焼く魚、定休日と設備をまとめた特集。",
+  "tags": [
+    "釣り堀",
+    "キャンプ場",
+    "桐生市",
+    "ルアー",
+    "フライフィッシング",
+    "BBQ",
+    "子連れ",
+    "ペット同伴"
+  ],
+  "charCount": 1296,
+  "facts": [
+    {
+      "claim": "Google マップの名称は「釣り場 恵比寿」",
+      "source": "https://maps.google.com/?cid=14876648634723184605",
+      "quote": "釣り場 恵比寿",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの業種の表示は「釣り堀」",
+      "source": "https://maps.google.com/?cid=14876648634723184605",
+      "quote": "釣り堀",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの住所は群馬県桐生市黒保根町下田沢1667-2",
+      "source": "https://maps.google.com/?cid=14876648634723184605",
+      "quote": "〒376-0144 群馬県桐生市黒保根町下田沢１６６７−２",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップの電話番号は090-8772-1666",
+      "source": "https://maps.google.com/?cid=14876648634723184605",
+      "quote": "090-8772-1666",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "Google マップのウェブサイトは公式サイト(tsuriba-ebisu.jp)と同じ",
+      "source": "https://maps.google.com/?cid=14876648634723184605",
+      "quote": "tsuriba-ebisu.jp",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの所在地は群馬県桐生市黒保根町下田沢1667-2(郵便番号376-0144)",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "〒376-0144 群馬県桐生市黒保根町 下田沢１６６７-２",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "公式サイトの電話番号は090-8772-1666(Google マップと同じ)",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "090-8772-1666",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "FISHINGコースは8時から16時",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "FISHINGコース 8:00~16:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "CAMPコースは13時入場・翌11時退場",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "CAMPコース IN13:00~OUT11:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "BBQコースは11時入場・17時退場",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "BBQコース IN11:00~OUT17:00",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "定休日は毎週木曜日",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "毎週木曜日",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "祝日の翌日は営業する",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "＊祝日の翌日は営業",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "不定休のため、営業はSNSで確認するよう案内している",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "＊不定休のためSNSでご確認ください",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "赤城山のふもとにあるオートキャンプ場",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "赤城山のふもとにある群馬の豊かな自然に抱かれたオートキャンプ場で",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "標高750mにあり、赤城山の麓にある",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "標高750mと高い位置にあり、赤城山の麓に釣りやキャンプなどを楽しめるキャンプ場を開きました。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "コースはキャンプ・BBQ・フィッシングの3種類で、キャンプとBBQでは釣り堀をオプションで追加できる",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "キャンプコースにBBQコース、自然の中で釣り堀を楽しめるフィッシングコースがあり、キャンプとBBQのコースでは釣り堀をオプションで追加いただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣り堀は全部で5つ",
+      "source": "https://tsuriba-ebisu.jp/fishing_pond1/",
+      "quote": "釣り堀は全部で5つあり",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "かつて棚田だった頃の水路跡を再整備し、上流から水を引いている",
+      "source": "https://tsuriba-ebisu.jp/fishing_pond1/",
+      "quote": "かつて棚田だった頃の水路跡を活かして再整備し、上流の方から水を引いています。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "放流している魚はニジマス・ヤマメ・イワナなど",
+      "source": "https://tsuriba-ebisu.jp/fishing_pond1/",
+      "quote": "放流している魚はニジマス・ヤマメ・イワナなどの種類で",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "餌釣りではなく、ルアー・フライフィッシングを採用している",
+      "source": "https://tsuriba-ebisu.jp/fishing_pond1/",
+      "quote": "餌釣りではなくルアー・フライフィッシングを採用した釣り堀で",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "1日券は持ち帰り10匹まで",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "1日券（持ち帰り10匹まで）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "4時間券は持ち帰り7匹まで",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "4時間券（持ち帰り7匹まで）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "2時間券は午後限定で、持ち帰り5匹まで",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "2時間券（持ち帰り5匹まで）*午後限定",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "イブニング券は14時から17時で、持ち帰り5匹まで",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "イブニング券14:00~17:00（持ち帰り5匹まで）",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "アーリー(7時から8時)は金土日祝のみ",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "アーリー7:00~8:00は金土日祝のみ",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "レンタルは釣竿・リリーサー・ランディングネットのセット",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "釣竿+リリーサー+ランディングネット",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ルアーは受付で購入する",
+      "source": "https://tsuriba-ebisu.jp/menu/",
+      "quote": "ルアーは受付で購入してください",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣り堀は通常営業日は予約不要",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "通常営業日は予約不要です。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "釣った魚を焼き魚にできる囲炉裏完備の東屋が、各サイトにある",
+      "source": "https://tsuriba-ebisu.jp/access/",
+      "quote": "釣った魚をその場で焼き魚にできる囲炉裏完備の東屋を各サイトに設けています。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "東屋にはシンクや囲炉裏テーブルがあり、屋根がある",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "東屋にはシンクや囲炉裏テーブルなどの設備面に加えて、屋根があるので突然雨が降っても安心できます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "受付棟の横に、魚の捌き場がある",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "受付棟の横に捌き場がございます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "雨でも、台風など危険のある場合以外は営業している",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "台風など危険のある場合以外は営業しております。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "保護者の監督があれば未就学児も利用できる",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "保護者の監督があれば未就学児の方でも問題ありません。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "全施設ペット同伴が可能",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "全施設ペット同伴が可能で",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "サイトの横に車をつけられる",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "サイトの横につけていただけます。",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "水洗トイレ棟がある",
+      "source": "https://tsuriba-ebisu.jp/",
+      "quote": "お手洗いも水洗トイレ棟を完備して",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "claim": "ソロテントのレンタルが2張りある",
+      "source": "https://tsuriba-ebisu.jp/faq/",
+      "quote": "現状はソロテントのレンタル2張りがございます。",
+      "checkedAt": "2026-10-23"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/leisure-2620/hero.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/cms/6322/image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/access/",
+      "what": "赤城山のふもとの釣り池。水面に木造の建物と緑の山が映り、池のほとりに釣りをする人が遠くに小さく見える(公式サイトのアクセスのページの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2620/p2.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/cms/6408/bg_image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/menu/",
+      "what": "新緑の木の下に、テントと屋根つきの東屋が並ぶ区画サイト。人物は写っていない(公式サイトのメニューのページの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2620/s6.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/article/403/image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/gallery/",
+      "what": "雪の積もった釣り池。中ほどの島に雪が残り、奥に冬枯れの山が広がる。人影は遠景(公式サイトのギャラリーの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2620/s4.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/cms/6385/bg_image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/menu/",
+      "what": "串に刺した魚が、網の上で塩焼きにされている(公式サイトのメニューのページの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2620/s7.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/cms/6293/image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/",
+      "what": "新緑の木々の下に、屋根つきの東屋と石のテーブルがある(公式サイトのトップページの写真)"
+    },
+    {
+      "path": "/_portal/vshops/leisure-2620/p1.jpg",
+      "imageUrl": "https://tsuriba-ebisu.jp/_img/ja/cms/7098/image/_/image.webp",
+      "pageUrl": "https://tsuriba-ebisu.jp/access/",
+      "what": "真っ赤に色づいたモミジの下に、青い屋根の東屋と砂利の広場が見える秋の園内(公式サイトのアクセスのページの写真)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://tsuriba-ebisu.jp/"
+    },
+    {
+      "label": "公式サイト(メニュー)",
+      "url": "https://tsuriba-ebisu.jp/menu/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://tsuriba-ebisu.jp/access/"
+    },
+    {
+      "label": "公式サイト(釣り堀)",
+      "url": "https://tsuriba-ebisu.jp/fishing_pond1/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://tsuriba-ebisu.jp/faq/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14876648634723184605"
+    }
+  ],
+  "notes": "【出どころ】articles/leisure-2620.json の facts(公式サイト5ページ・Google マップ)・gbp/leisure-2620.json・photos/leisure-2620.json だけ。本文の各文は facts の番号に結び付けて書いた。【営業時間】Google マップに営業時間の表示は無い。公式サイトはコースごとに時間が違うため、コースの時間と定休日(毎週木曜日・祝日の翌日は営業・不定休のためSNSで確認)を書いた。【書かなかったこと】券・キャンプ・BBQ・レンタル・ルアーの金額、入場料、小学生以下の扱い(料金の話)、「頂鱒」の語、キャンプ場の予約サイト、夜釣り・星空・イベント、代表者名、最寄り駅・道順・駐車場の台数。【写真】公式サイト(tsuriba-ebisu.jp)の写真。人物が主役の写真、夜景・星空の暗い写真は使わない。"
+}
