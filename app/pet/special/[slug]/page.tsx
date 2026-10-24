@@ -8,7 +8,7 @@ import { countPlaces } from "@/lib/places";
 import { buildMetadata } from "@/lib/seo/meta";
 import { VERTICALS } from "@/lib/verticals";
 
-// ペットの特集記事 1 本(/pet/special/{slug})。lib/specials/pet.json の 3 本だけ(それ以外の slug は 404)。
+// ペットの特集記事 1 本(/pet/special/{slug})。lib/specials/pet.json の 4 本だけ(それ以外の slug は 404)。
 // 記事の節に出てくる店は、店舗紹介ページ(/pet/shop/{id})へのリンク。robots は他の一覧と同じ gate。
 export const revalidate = 3600;
 export const dynamicParams = false;
