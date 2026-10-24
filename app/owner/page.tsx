@@ -5,9 +5,13 @@ import { buttonVariants } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 import { RELEASE_PERIPHERY, RELEASE_REST } from "@/lib/portal/noren/release";
 import dynamic from "next/dynamic";
+import { isPortalLive } from "@/lib/portal/launch";
 import OwnerPortalLegacy, { legacyMetadata } from "./OwnerPortalLegacy";
 // 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
 const OwnerView = dynamic(() => import("@/components/portal/periphery/OwnerView"));
+
+// 総合サイトの共通の枠で出す版（公開スイッチ ON のとき。業種に寄らない共通ページ。components/portal/pages/common-pages.tsx）
+const CommonOwner = dynamic(() => import("@/components/portal/pages/common-pages").then((m) => m.CommonOwner));
 
 // フッターの「店舗登録」の行き先。訪問者向けに、準備中であることとお問い合わせへの案内だけを出す
 // RELEASE_REST が false のあいだは、今の本番の店舗登録ページ（OwnerPortalLegacy）を出す
@@ -19,6 +23,7 @@ export const metadata = RELEASE_REST
   : legacyMetadata;
 
 export default function OwnerPortal() {
+  if (isPortalLive()) return <CommonOwner rest={RELEASE_REST} />;
   // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ（RELEASE_REST の版ごと）
   if (RELEASE_PERIPHERY) return <OwnerView rest={RELEASE_REST} />;
   if (!RELEASE_REST) return <OwnerPortalLegacy />;

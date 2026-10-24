@@ -839,3 +839,26 @@ a.mp-xv-card:hover{transform:translateY(-4px)}
   .mp-gal[data-n="2"] .mp-gal-s{grid-column:1 / -1; aspect-ratio:3/2}
   .mp-gal[data-n="1"]{grid-template-columns:minmax(0,1fr)}
 }
+
+/* ─────────── 共通ページ（編集部について・掲載基準・お問い合わせ・店舗登録。2026-10-24）───────────
+   業種に寄らない総合サイトの共通の枠（PortalLayout）の中に置く、字だけのページの部品。新しい色・飾りは足さず、既存の変数（--ink --ink-2 --rule --paper --ac）だけで組む */
+.mp-cm-prose{max-width:36em}
+.mp-cm-prose p{font:400 15px/2.05 var(--sans); color:var(--ink-2); margin:0 0 1.4em; text-wrap:pretty}
+.mp-cm-prose p:last-child{margin-bottom:0}
+.mp-cm-prose a, .mp-cm-note a{color:var(--ink); border-bottom:1px solid var(--rule); padding-bottom:2px; margin:0 6px; transition:border-color .3s}
+.mp-cm-prose a:hover, .mp-cm-note a:hover{border-color:var(--ink)}
+.mp-cm-list{list-style:none; margin:0; padding:0; max-width:46em}
+.mp-cm-list li{position:relative; padding:12px 0 12px 26px; border-bottom:1px solid var(--rule); font:400 15px/1.95 var(--sans); color:var(--ink-2)}
+.mp-cm-list li:first-child{border-top:1px solid var(--rule)}
+.mp-cm-list li::before{content:""; position:absolute; left:4px; top:calc(12px + .975em - 4px); width:8px; height:8px; border-radius:50%; background:var(--ac)}
+.mp-cm-note{margin-top:clamp(20px,2.4vw,32px); max-width:46em; font:400 13px/1.9 var(--sans); color:var(--ink-3)}
+.mp-cm-card{max-width:46em; margin-top:clamp(18px,2.4vw,28px); padding:clamp(20px,2.4vw,28px) clamp(20px,2.6vw,32px); border:1px solid var(--rule); background:var(--paper)}
+.mp-cm-card .k{font:500 11px/1.6 var(--mono); letter-spacing:.28em; color:var(--ink-3); margin:0 0 6px}
+.mp-cm-card a{font:500 clamp(18px,1.6vw,22px)/1.6 var(--serif); color:var(--ink); border-bottom:1px solid var(--rule); overflow-wrap:anywhere; transition:border-color .3s}
+.mp-cm-card a:hover{border-color:var(--ink)}
+.mp-cm-dl{max-width:46em; margin:0}
+.mp-cm-dl > div{display:grid; grid-template-columns:7em minmax(0,1fr); gap:12px; padding:13px 0; border-bottom:1px solid var(--rule)}
+.mp-cm-dl > div:first-child{border-top:1px solid var(--rule)}
+.mp-cm-dl dt{font:500 12.5px/1.9 var(--sans); color:var(--ink-3)}
+.mp-cm-dl dd{margin:0; font:400 15px/1.9 var(--sans); color:var(--ink-2); overflow-wrap:anywhere}
+.mp-cm-acts{display:flex; flex-wrap:wrap; gap:14px; margin-top:clamp(18px,2.4vw,28px)}

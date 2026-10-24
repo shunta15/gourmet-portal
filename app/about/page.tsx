@@ -2,8 +2,12 @@ import Footer from "@/components/Footer";
 import { REGIONS } from "@/lib/regions";
 import { RELEASE_PERIPHERY, RELEASE_REST } from "@/lib/portal/noren/release";
 import dynamic from "next/dynamic";
+import { isPortalLive } from "@/lib/portal/launch";
 // 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
 const AboutView = dynamic(() => import("@/components/portal/periphery/AboutView"));
+
+// 総合サイトの共通の枠で出す版（公開スイッチ ON のとき。業種に寄らない共通ページ。components/portal/pages/common-pages.tsx）
+const CommonAbout = dynamic(() => import("@/components/portal/pages/common-pages").then((m) => m.CommonAbout));
 
 export const metadata = {
   title: "編集部について | マチノワ",
@@ -12,6 +16,7 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  if (isPortalLive()) return <CommonAbout regionCount={RELEASE_REST ? Object.keys(REGIONS).length : 16} />;
   // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ
   if (RELEASE_PERIPHERY) return <AboutView regionCount={RELEASE_REST ? Object.keys(REGIONS).length : 16} />;
   return (
