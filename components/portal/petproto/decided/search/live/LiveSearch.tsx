@@ -403,6 +403,9 @@ function SearchFooter() {
                 <a href={PORTAL_HREF}>マチノワ トップ</a>
               </li>
               <li>
+                <a href="/videos">動画</a>
+              </li>
+              <li>
                 <a href="/about">編集部について</a>
               </li>
               <li>

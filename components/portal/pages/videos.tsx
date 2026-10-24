@@ -1,13 +1,12 @@
 /**
- * 動画で探す。/videos
+ * 動画で探す。/videos（全業種共通の動画ページ。枠は app/videos/layout.tsx の総合サイトの共通の枠）
  * スマホは縦スワイプ（scroll-snap で1本ずつ画面いっぱい）、PC はグリッド。
  * 業種（?v=）・都道府県（?pref=）で絞り込む（クエリ。サーバーで絞る）。
  * index 判定: 投稿日が分かる動画（VideoObject を出せる動画）が 3 本以上あるときだけ。絞り込み表示は常に noindex。
  */
 import type { Metadata } from "next";
 import Link from "next/link";
-import { GOURMET_REGION_BY_PREF, PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
-import { regionHref } from "@/lib/portal/noren/areaLinks";
+import { PREFECTURES, getPrefBySlug } from "@/lib/areas/prefectures";
 import { VERTICALS } from "@/lib/verticals";
 import type { VerticalKey } from "@/lib/verticals/types";
 import { buildMetadata } from "@/lib/seo/meta";
@@ -16,11 +15,7 @@ import type { Video } from "@/lib/videos/types";
 import { getVideoStores, type VideoStore } from "@/lib/videos/stores";
 import { isVideoIndexable } from "@/lib/videos/display";
 import VideoCard from "@/components/portal/video/VideoCard";
-import dynamic from "next/dynamic";
-import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 import { Block, PageFrame, type Tone } from "./frame";
-// 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
-const VideosView = dynamic(() => import("@/components/portal/periphery/VideosView"));
 
 const TONE: Tone = { color: "#15110e", lightColor: "#e7dfd0", glyph: "動" };
 
@@ -36,7 +31,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   return buildMetadata({
     vertical: "portal",
     title: "動画で探す｜マチノワ",
-    description: "店を紹介する縦型のショート動画を、業種・都道府県から探せます。動画から店のページ、最寄りの駅の周辺へ進めます。",
+    description: "店を紹介するショート動画を、業種をまたいでまとめて、業種・都道府県から探せます。動画から店のページ、最寄りの駅の周辺へ進めます。",
     path: "/videos",
     // 絞り込み表示は薄いページになるので index にしない（canonical は /videos）
     count: filtered ? 0 : indexable,
@@ -97,37 +92,6 @@ export default async function Page({ searchParams }: Props) {
   );
   const filtered = !!(cur.v || cur.pref);
 
-  // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。データ・絞り込み・メタ情報は上のまま、字・リンク先も同じ
-  if (RELEASE_PERIPHERY) {
-    return (
-      <VideosView
-        shown={shown.map((r) => ({ video: r.video, stores: r.stores }))}
-        verticalLinks={verticalOptions.map((k) => ({
-          key: k,
-          name: VERTICALS[k].name,
-          count: verticalCount.get(k),
-          href: href({ v: k, pref: cur.pref }),
-          current: cur.v === k,
-        }))}
-        verticalAllHref={href({ pref: cur.pref })}
-        verticalAllCurrent={!cur.v}
-        prefLinks={prefOptions.map((p) => ({
-          key: p.slug,
-          name: p.short,
-          count: prefCount.get(p.slug),
-          href: href({ v: cur.v, pref: p.slug }),
-          current: cur.pref === p.slug,
-        }))}
-        prefAllHref={href({ v: cur.v })}
-        prefAllCurrent={!cur.pref}
-        filtered={filtered}
-        curLabel={curLabel}
-        curPrefShort={cur.pref ? (getPrefBySlug(cur.pref)?.short ?? null) : null}
-        curRegionHref={cur.pref && GOURMET_REGION_BY_PREF[cur.pref] ? regionHref(GOURMET_REGION_BY_PREF[cur.pref]) : null}
-      />
-    );
-  }
-
   return (
     <PageFrame
       className="mp-vd-page"
@@ -138,7 +102,7 @@ export default async function Page({ searchParams }: Props) {
       ]}
       kicker="Machinowa — Video"
       heading="動画で探す"
-      lead="店を紹介する縦型のショート動画です。タップで再生して、気になった店のページや、最寄りの駅の周辺へ進めます。"
+      lead="店を紹介するショート動画を、業種をまたいでまとめて載せています。業種や都道府県で絞り込み、タップで再生して、気になった店のページや、最寄りの駅の周辺へ進めます。"
       count={shown.length}
       unit="本"
       extra={
@@ -224,7 +188,7 @@ export default async function Page({ searchParams }: Props) {
               <p className="mp-note-links">
                 {filtered && <Link href="/videos">すべての動画を見る</Link>}
                 <Link href="/station">駅から探す</Link>
-                <Link href="/gourmet">グルメを探す</Link>
+                <Link href="/map">地図から探す</Link>
               </p>
             </div>
           </div>
@@ -245,7 +209,7 @@ export default async function Page({ searchParams }: Props) {
               </li>
             )}
             <li>
-              <Link href="/gourmet" prefetch={false} data-cursor="GOURMET">グルメを探す</Link>
+              <Link href="/map" prefetch={false} data-cursor="MAP">地図から探す</Link>
             </li>
           </ul>
         </Block>
