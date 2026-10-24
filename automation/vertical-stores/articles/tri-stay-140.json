@@ -1,0 +1,296 @@
+{
+  "key": "tri-stay-140",
+  "headline": "兵庫県香美町、ハチ北高原のリフト乗り場まで徒歩1分にある旅館。但馬牛のすき焼きやしゃぶしゃぶなど、鍋料理を出す和室の宿",
+  "lede": "兵庫県美方郡香美町にある「旅館 なかや」です。ハチ北高原にあり、冬季はスキー・スノーボードのリフト乗り場まで徒歩1分です。客室は和室で、食事は但馬牛を使ったすき焼き、しゃぶしゃぶを中心に、いろいろな鍋料理があります。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "ハチ北高原にあり、冬季はリフト乗り場まで徒歩1分です。車の場合は、八鹿氷ノ山ICで降りて最初の信号を左折し、鳥取方面へ向かいます。公共交通機関の場合は、JR山陰本線の八鹿駅で降り、村岡方面行きのバスで「ハチ北口」で下車して、乗り換えて「ハチ北」へ向かいます。周辺は、たじま高原植物園まで車で約5分、猿尾滝まで約10分、竹田城まで約40分です。"
+    },
+    {
+      "heading": "客室とお風呂",
+      "body": "客室は、人数に合わせて案内される和室です。グリーンシーズンには炬燵はありません。備品には、湯沸かしポット、羽毛布団、シャンプー・リンス、ボディーソープがあり、コインロッカーもあります。お風呂は男女各1ヶ所で、温泉ではありません。入浴時間は16時から22時までです。館内には、ロビー、寛ぎコーナー、自販機、漫画スペース、洗面所があります。"
+    },
+    {
+      "heading": "食事",
+      "body": "食事は、但馬牛を使ったすき焼き、しゃぶしゃぶが中心です。すき焼きとしゃぶしゃぶは、和牛・但馬牛・特選但馬牛の3種類から選べます。ほかに、かも鍋(しょうゆ・みそ)、ぶた鍋(みそ)、ぶたしゃぶ、とり鍋があり、秘伝の味噌だれで食べる鍋もあります。春から秋にかけては、BBQプランも実施しています。"
+    },
+    {
+      "heading": "予約と利用",
+      "body": "チェックインは15時から、チェックアウトは10時までです。予約は、公式サイトのオンライン予約から行えます。ビジネスや林間学校、さまざまな合宿にも使えます。スキー、スノーボードのレンタルショップが併設されています。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和室"
+    }
+  ],
+  "menus": [
+    {
+      "name": "すき焼き"
+    },
+    {
+      "name": "しゃぶしゃぶ"
+    },
+    {
+      "name": "かも鍋(しょうゆ)"
+    },
+    {
+      "name": "かも鍋(みそ)"
+    },
+    {
+      "name": "ぶた鍋(みそ)"
+    },
+    {
+      "name": "ぶたしゃぶ"
+    },
+    {
+      "name": "とり鍋"
+    },
+    {
+      "name": "BBQ"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "ハチ北高原にある",
+      "source": "https://h-nakaya.com/",
+      "quote": "アクセスしやすいハチ北高原にあります",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "冬季はリフト乗り場まで徒歩1分",
+      "source": "https://h-nakaya.com/",
+      "quote": "リフト乗り場まで徒歩１分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "冬季はスキー・スノーボードを楽しめる",
+      "source": "https://h-nakaya.com/",
+      "quote": "スキー・スノーボードを思い切り楽しむことができ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ビジネス、林間学校、合宿にも利用できる",
+      "source": "https://h-nakaya.com/",
+      "quote": "ビジネスや林間学校、さまざまな合宿にもご利用いただけます",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "スキー・スノボのレンタルショップが併設されている",
+      "source": "https://h-nakaya.com/",
+      "quote": "スキー、スノボのレンタルショップ併設",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "車は八鹿氷ノ山ICで降り、最初の信号を左折して鳥取方面へ向かう",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "八鹿氷ノ山ICで降り、最初の信号を左折、鳥取方面へ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "公共交通機関はJR山陰本線の八鹿駅で降りる",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "JR山陰本線八鹿（ようか）駅下車",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "八鹿駅から村岡方面行きバスで「ハチ北口」で下車する",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "八鹿駅から村岡方面行きバスにて「ハチ北口」バス下車",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "たじま高原植物園は車で約5分",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "…車で約5分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "猿尾滝は車で約10分",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "…車で約10分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "竹田城は車で約40分",
+      "source": "https://h-nakaya.com/access.php",
+      "quote": "…車で約40分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室は和室",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "落ち着きのある和室でゆっくりおくつろぎいただけます",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室は人数に合わせて案内される",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "人数に合わせてご案内致します",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "グリーンシーズンには炬燵はない",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "グリーンシーズンには、炬燵はございません",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "備品に湯沸かしポットがある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "湯沸かしポット",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "備品に羽毛布団がある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "羽毛布団",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "コインロッカーがある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "コインロッカー",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "備品にシャンプー・リンスがある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "シャンプー・リンス",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "備品にボディーソープがある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "ボディーソープ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "お風呂は男女各1ヶ所",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "男女各１ヶ所ずつの広々お風呂",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "お風呂は温泉ではない",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "温泉ではありません。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "入浴時間は16時から22時",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "16 : 00 ~ 22 : 00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "館内にロビー・寛ぎコーナー・自販機・漫画スペース・洗面所がある",
+      "source": "https://h-nakaya.com/facilities.php",
+      "quote": "漫画スペース",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "いろいろな種類の鍋料理がある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "いろんな種類の鍋料理がございます",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "但馬牛を使ったすき焼き、しゃぶしゃぶが中心",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "但馬牛を使ったすき焼き、しゃぶしゃぶ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "すき焼きは和牛・但馬牛・特選但馬牛の3種類",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "和牛・但馬牛・特選但馬牛の３種類が御座います",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "かも鍋がある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "かも鍋",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ぶた鍋がある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "ぶた鍋",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "とり鍋がある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "とり鍋",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ぶたしゃぶがある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "ぶたしゃぶ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "秘伝の味噌だれで食べる鍋がある",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "秘伝の味噌だれで食べる鍋",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "春から秋にBBQプランを実施している",
+      "source": "https://h-nakaya.com/cuisine.php",
+      "quote": "BBQプランを実施中",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックインは15時から",
+      "source": "https://h-nakaya.com/",
+      "quote": "チェックイン 15：00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックアウトは10時まで",
+      "source": "https://h-nakaya.com/",
+      "quote": "チェックアウト ～ 10：00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "公式サイトにオンライン予約がある",
+      "source": "https://h-nakaya.com/",
+      "quote": "オンライン予約",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は兵庫県美方郡香美町村岡区大笹755-1",
+      "source": "https://maps.google.com/?cid=5568108720677451699",
+      "quote": "兵庫県美方郡香美町村岡区大笹７５５−１",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://h-nakaya.com/"
+    },
+    {
+      "label": "公式サイト(お食事)",
+      "url": "https://h-nakaya.com/cuisine.php"
+    },
+    {
+      "label": "公式サイト(館内の案内)",
+      "url": "https://h-nakaya.com/facilities.php"
+    },
+    {
+      "label": "公式サイト(アクセス・観光)",
+      "url": "https://h-nakaya.com/access.php"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5568108720677451699"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 36/36 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

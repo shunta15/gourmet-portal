@@ -37,9 +37,9 @@ const DAYS = ["月", "火", "水", "木", "金", "土", "日"];
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36";
 
-class CaptchaError extends Error {}
+export class CaptchaError extends Error {}
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /** share.google などの短縮URLを HTTP だけで辿り、検索URLの q / kgmid を返す（ブラウザでは開かない） */
 async function resolveShareUrl(u) {
@@ -94,7 +94,7 @@ function normalizeHoursText(t) {
 }
 
 /** 曜日行 → { 月: "...", ... }。7曜日そろわない（描画途中の可能性）ものは部分値を出さず null */
-function hoursFromRows(rows) {
+export function hoursFromRows(rows) {
   if (!rows.length) return null;
   const days = new Set(rows.map((r) => r.day));
   if (days.size < 7) {
@@ -117,7 +117,7 @@ function hoursFromRows(rows) {
  * 営業時間の表がページ内に複数ある店がある（通常営業 / イートイン・テイクアウト別 / ランチ・ディナー別など）。
  * 文書順で最初に出る「曜日行を持つ表」＝通常の営業時間だけを読む（先の表を採る。混ぜない）。
  */
-const readHoursRows = (page) =>
+export const readHoursRows = (page) =>
   page.evaluate(() => {
     const txt = (el) => (el?.textContent || "").replace(/\s+/g, " ").trim();
     for (const table of document.querySelectorAll("table")) {
@@ -218,14 +218,14 @@ export async function extractFromPanel(page) {
   };
 }
 
-async function assertNotCaptcha(page) {
+export async function assertNotCaptcha(page) {
   if (/\/sorry\//.test(page.url()) || /consent\.google/.test(page.url())) {
     throw new CaptchaError(`Google が確認ページを返した: ${page.url().slice(0, 80)}`);
   }
 }
 
 /** 店舗パネルが描画されるまで待つ。place URL になり、住所 or 営業時間が出たら描画済みとみなす */
-async function waitForPanel(page) {
+export async function waitForPanel(page) {
   try {
     await page.waitForURL(/\/maps\/place\//, { timeout: 25_000 });
   } catch {
@@ -266,7 +266,7 @@ async function pollDayRows(page, ms) {
  * 店名・住所などは必ずこの関数を呼ぶ「前」に読み終えておくこと。
  * 営業時間が未登録の店は押すものが無く、hours は null のまま。
  */
-async function expandHours(page) {
+export async function expandHours(page) {
   if ((await countDayRows(page)) >= 7) return;
   for (const sel of [
     'button[data-item-id="oh"]',
@@ -299,7 +299,7 @@ async function expandHours(page) {
  *   簡易: タブが「概要/クチコミ/基本情報」、価格帯は出ない（営業時間・住所・電話などは同じ）
  * 同じセッション（Cookie）なら何度開いても同じ表示のまま。フル表示のしるしを返す。
  */
-const isFullVariant = (page) =>
+export const isFullVariant = (page) =>
   page.evaluate(
     () =>
       !!document.querySelector("table.rqRH4d") ||

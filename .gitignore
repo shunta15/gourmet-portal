@@ -65,3 +65,7 @@ automation/verify-manifest*.json
 
 # 自動化のヘルスアラート（ローカル状態ファイル）
 automation/HEALTH-ALERT.md
+
+# 記事の自動作成(新)の作業フォルダ・ログ(店ごとの材料・写真の候補・claude のログ)
+/automation/v2/work/
+/automation/v2/out/*.log

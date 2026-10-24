@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "date": "2026-10-25",
+    "startedAt": "2026-10-24T23:00:28.191Z",
+    "verifyFile": "automation/v2/out/verify-2026-10-25.json",
+    "args": "--only-row 140 --skip-claude --reintegrate",
+    "updatedAt": "2026-10-24T23:10:46.387Z"
+  },
+  "environment": null,
+  "results": {
+    "tri-gourmet-130": {
+      "key": "tri-gourmet-130",
+      "row": 130,
+      "name": "季節料理 はせ部",
+      "vertical": "グルメ",
+      "articleId": "季節料理はせ部",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-24T23:00:28.230Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 26,
+        "maps": 10,
+        "official": 16,
+        "rejectedByMachine": 2,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 53,
+          "verified": 53
+        }
+      },
+      "storeId": "r671",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/季節料理はせ部",
+        "shop": "/restaurant/r671"
+      },
+      "finishedAt": "2026-10-24T23:05:15.899Z"
+    },
+    "tri-stay-140": {
+      "key": "tri-stay-140",
+      "row": 140,
+      "name": "旅館 なかや",
+      "vertical": "ステイ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-24T23:01:11.863Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 17,
+        "maps": 10,
+        "official": 7,
+        "rejectedByMachine": 11,
+        "used": 12,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 36,
+          "verified": 36
+        }
+      },
+      "placeId": "st0009",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0009",
+        "article": "/stay/article/st0009"
+      },
+      "finishedAt": "2026-10-24T23:10:46.386Z"
+    }
+  }
+}

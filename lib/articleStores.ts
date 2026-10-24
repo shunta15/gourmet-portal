@@ -17156,6 +17156,59 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "カフェマイクアンドシャーリー"
+  },
+  {
+    "id": "r671",
+    "name": "季節料理 はせ部",
+    "cuisine": "定食屋",
+    "area": "東京都・千代田区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-季節料理はせ部/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-季節料理はせ部/hero.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point1.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point2.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point3.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-季節料理はせ部/hero.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point1.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point2.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point3.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point4.jpg",
+      "/restaurants/teleapo-季節料理はせ部/point5.jpg"
+    ],
+    "desc": "東京都千代田区の定食屋。最寄りは神保町駅A9出口から徒歩約4分。",
+    "address": "東京都千代田区神田神保町1丁目39",
+    "hours": "月・火・木・金 11:30–13:30, 17:00–20:00 / 水 11:30–13:30",
+    "closed": "土曜・日曜",
+    "seats": "24席",
+    "nearest": "神保町駅A9出口から徒歩約4分",
+    "phone": "03-3291-6558",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17699141400206361415"
+    },
+    "body": [
+      "季節料理 はせ部は、東京都千代田区にあるお店です。業態は「定食屋」、所在地は東京都千代田区神田神保町1丁目39、最寄りは神保町駅A9出口から徒歩約4分です。マチノワ編集部の特集記事では、「毎朝の豊洲市場で仕入れる生本マグロ」・「焼き・煮・酢・刺身で選ぶ、魚の昼定食9種」などを取り上げています。",
+      "営業時間は月・火・木・金 11:30–13:30, 17:00–20:00 / 水 11:30–13:30、定休日は土曜・日曜です。席は24席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "毎朝の豊洲市場で仕入れる生本マグロ",
+      "焼き・煮・酢・刺身で選ぶ、魚の昼定食9種",
+      "産地を添えた刺身・焼き魚・煮魚と一品料理",
+      "24席の店内、夜は小人数の商談や編集会議にも",
+      "神保町駅A9出口から徒歩約4分、予約は電話で"
+    ],
+    "tags": [
+      "定食屋",
+      "千代田区",
+      "神保町駅",
+      "ランチ"
+    ],
+    "featureId": "季節料理はせ部"
   }
 ];
 
@@ -17527,7 +17580,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r667": "いけす料理史",
   "r668": "翠陽",
   "r669": "perte",
-  "r670": "カフェマイクアンドシャーリー"
+  "r670": "カフェマイクアンドシャーリー",
+  "r671": "季節料理はせ部"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -17898,5 +17952,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "いけす料理史": "r667",
   "翠陽": "r668",
   "perte": "r669",
-  "カフェマイクアンドシャーリー": "r670"
+  "カフェマイクアンドシャーリー": "r670",
+  "季節料理はせ部": "r671"
 };

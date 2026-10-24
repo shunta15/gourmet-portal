@@ -1540,6 +1540,199 @@
           "2階 ロフト付き洋室ツイン"
         ]
       }
+    },
+    {
+      "id": "st0009",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旅館 なかや",
+      "pref": "hyogo",
+      "cityName": "香美町",
+      "address": "兵庫県美方郡香美町村岡区大笹755-1",
+      "lat": 35.404539,
+      "lng": 134.558449,
+      "phone": "0796-96-0231",
+      "url": "https://h-nakaya.com/",
+      "website": "https://h-nakaya.com/",
+      "mapUrl": "https://maps.google.com/?cid=5568108720677451699",
+      "image": "/_portal/vshops/tri-stay-140/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-140/g01.jpg",
+        "/_portal/vshops/tri-stay-140/g02.jpg",
+        "/_portal/vshops/tri-stay-140/g03.jpg",
+        "/_portal/vshops/tri-stay-140/g04.jpg",
+        "/_portal/vshops/tri-stay-140/g05.jpg",
+        "/_portal/vshops/tri-stay-140/g06.jpg",
+        "/_portal/vshops/tri-stay-140/g07.jpg",
+        "/_portal/vshops/tri-stay-140/g08.jpg",
+        "/_portal/vshops/tri-stay-140/g09.jpg",
+        "/_portal/vshops/tri-stay-140/g10.jpg",
+        "/_portal/vshops/tri-stay-140/s02.jpg",
+        "/_portal/vshops/tri-stay-140/s05.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-140/g01.jpg",
+          "what": "オレンジ色の瓦屋根の庇と看板がある旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g02.jpg",
+          "what": "炬燵とテレビがある畳敷きの和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g03.jpg",
+          "what": "白いタイル張りの広い浴槽と洗い場が並ぶ浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g04.jpg",
+          "what": "洗面台が3つ並ぶ明るい洗面所",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g05.jpg",
+          "what": "受付カウンターと木のテーブルがあるロビー",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g06.jpg",
+          "what": "革張りのソファとレンガ壁のテレビがあるくつろぎ空間",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g07.jpg",
+          "what": "棚に漫画が並ぶ漫画スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g08.jpg",
+          "what": "飲料やカップ麺の自動販売機が並ぶコーナー",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g09.jpg",
+          "what": "木の絵が壁に描かれた窓のある浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g10.jpg",
+          "what": "シャワーと風呂椅子が並ぶ洗い場と浴槽",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/s02.jpg",
+          "what": "階段と赤い瓦屋根の入口がある旅館の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/s05.jpg",
+          "what": "皿に盛った薄切りの牛肉と薬味入りのたれ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "兵庫県香美町、ハチ北高原のリフト乗り場まで徒歩1分にある旅館。但馬牛のすき焼きやしゃぶしゃぶなど、鍋料理を出す和室の宿",
+        "lede": "兵庫県美方郡香美町にある「旅館 なかや」です。ハチ北高原にあり、冬季はスキー・スノーボードのリフト乗り場まで徒歩1分です。客室は和室で、食事は但馬牛を使ったすき焼き、しゃぶしゃぶを中心に、いろいろな鍋料理があります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "ハチ北高原にあり、冬季はリフト乗り場まで徒歩1分です。車の場合は、八鹿氷ノ山ICで降りて最初の信号を左折し、鳥取方面へ向かいます。公共交通機関の場合は、JR山陰本線の八鹿駅で降り、村岡方面行きのバスで「ハチ北口」で下車して、乗り換えて「ハチ北」へ向かいます。周辺は、たじま高原植物園まで車で約5分、猿尾滝まで約10分、竹田城まで約40分です。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、人数に合わせて案内される和室です。グリーンシーズンには炬燵はありません。備品には、湯沸かしポット、羽毛布団、シャンプー・リンス、ボディーソープがあり、コインロッカーもあります。お風呂は男女各1ヶ所で、温泉ではありません。入浴時間は16時から22時までです。館内には、ロビー、寛ぎコーナー、自販機、漫画スペース、洗面所があります。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は、但馬牛を使ったすき焼き、しゃぶしゃぶが中心です。すき焼きとしゃぶしゃぶは、和牛・但馬牛・特選但馬牛の3種類から選べます。ほかに、かも鍋(しょうゆ・みそ)、ぶた鍋(みそ)、ぶたしゃぶ、とり鍋があり、秘伝の味噌だれで食べる鍋もあります。春から秋にかけては、BBQプランも実施しています。"
+          },
+          {
+            "heading": "予約と利用",
+            "body": "チェックインは15時から、チェックアウトは10時までです。予約は、公式サイトのオンライン予約から行えます。ビジネスや林間学校、さまざまな合宿にも使えます。スキー、スノーボードのレンタルショップが併設されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "すき焼き"
+          },
+          {
+            "name": "しゃぶしゃぶ"
+          },
+          {
+            "name": "かも鍋(しょうゆ)"
+          },
+          {
+            "name": "かも鍋(みそ)"
+          },
+          {
+            "name": "ぶた鍋(みそ)"
+          },
+          {
+            "name": "ぶたしゃぶ"
+          },
+          {
+            "name": "とり鍋"
+          },
+          {
+            "name": "BBQ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://h-nakaya.com/"
+          },
+          {
+            "label": "公式サイト(お食事)",
+            "url": "https://h-nakaya.com/cuisine.php"
+          },
+          {
+            "label": "公式サイト(館内の案内)",
+            "url": "https://h-nakaya.com/facilities.php"
+          },
+          {
+            "label": "公式サイト(アクセス・観光)",
+            "url": "https://h-nakaya.com/access.php"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5568108720677451699"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室"
+        ]
+      }
     }
   ]
 }

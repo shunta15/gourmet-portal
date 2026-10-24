@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 140,
+  "sheet": {
+    "name": "旅館 なかや",
+    "address": "",
+    "url": "https://www.google.com/maps/place/%E6%97%85%E9%A4%A8+%E3%81%AA%E3%81%8B%E3%82%84/@35.404539,134.558449,825m/data=!3m1!1e3!4m9!3m8!1s0x35556357483b4f9f:0x4d45e5615ebbf7b3!5m2!4m1!1i2!8m2!3d35.404539!4d134.558449!16s%2Fg%2F1v6l5bgq?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「旅館 なかや」/ マップ「旅館 なかや」)",
+  "place": {
+    "name": "旅館 なかや",
+    "address": "兵庫県美方郡香美町村岡区大笹７５５−１",
+    "category": null,
+    "lat": 35.404539,
+    "lng": 134.558449,
+    "gbpUrl": "https://maps.google.com/?cid=5568108720677451699",
+    "phone": "0796-96-0231",
+    "website": "https://h-nakaya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-24T23:01:28.599Z"
+}
