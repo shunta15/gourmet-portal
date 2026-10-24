@@ -52,7 +52,7 @@ function Hero({ areas, kinds }: { areas: Array<{ label: string; prefs: Array<{ s
           街がもっと好きになる。
         </Reveal>
         <Reveal as="p" variant="fade" delay={800} className="sy-t-p">
-          マチノワステイは、地域の宿泊施設を紹介するポータルサイトです。<span className="sy-kn">ホテル・旅館</span>、<span className="sy-kn">民宿・ペンション・ゲストハウス</span>、<span className="sy-kn">グランピング・キャンプ</span>、<span className="sy-kn">一棟貸し・貸別荘</span>など、実在の宿を、確認できた情報で一軒ずつ紹介します。
+          マチノワステイは、地域の宿泊施設を紹介するポータルサイトです。<span className="sy-kn">ホテル・旅館</span>、<span className="sy-kn">民宿・ペンション・ゲストハウス</span>、<span className="sy-kn">グランピング・キャンプ</span>、<span className="sy-kn">一棟貸し・貸別荘</span>など、実在の宿を、一軒ずつ紹介します。
         </Reveal>
       </div>
       <HeroSearch action={L.search} areas={areas} kinds={kinds} hint={SEARCH_HINT} />
@@ -113,9 +113,9 @@ function Feature({ items }: { items: LiveArticle[] }) {
             <br />
             人と出会い、いつもと違う時間が流れる。
             <br />
-            実在の宿を一軒ずつ、
+            実在の宿を、
             <br />
-            確認できた情報で紹介します。
+            一軒ずつ紹介します。
           </p>
           <Link href={L.articles} className="sy-more sy-t-feat-link io" style={{ ["--d" as string]: "240ms" }}>
             特集記事をみる

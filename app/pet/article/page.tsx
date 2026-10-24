@@ -12,7 +12,7 @@ export async function generateMetadata() {
   return buildMetadata({
     vertical: "pet",
     title: `ペットの記事・利用シーン｜${v.brand}`,
-    description: "ペットと行けるお店の紹介記事と、種類・利用シーンから探せるページです。メニューや設備、行き方など、確認できた情報をまとめています。",
+    description: "ペットと行けるお店の紹介記事と、種類・利用シーンから探せるページです。メニューや設備、行き方など、お店の情報をまとめています。",
     path: `${v.path}/article`,
     count: await countPlaces("pet"),
   });

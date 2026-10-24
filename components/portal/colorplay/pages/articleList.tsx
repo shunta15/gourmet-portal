@@ -38,7 +38,7 @@ export function cpArticleListPage(site: CpSite) {
     return buildMetadata({
       vertical: site.key,
       title: kindName ? `${kindName}の特集記事｜${v.name}｜${v.brand}` : `${v.name}の特集記事｜${v.brand}`,
-      description: `${v.name}の実在のサロンを、一軒ずつ紹介する記事の一覧です。メニューや設備、行き方など、公式サイトなどで確認できた情報をまとめています。${list.length > 0 ? `掲載${list.length}本。` : ""}`,
+      description: `${v.name}の実在のサロンを、一軒ずつ紹介する記事の一覧です。メニューや設備、行き方など、お店の情報をまとめています。${list.length > 0 ? `掲載${list.length}本。` : ""}`,
       // 引数つきの URL の正本は、引数なしの一覧
       path: articleListHref(site),
       // 引数なしの一覧だけ index(記事が 3 本以上のとき)。それ以外は noindex(件数 0 を渡す)

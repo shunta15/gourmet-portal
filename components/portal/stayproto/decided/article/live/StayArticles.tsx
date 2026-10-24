@@ -25,7 +25,7 @@ function Hero({ count }: { count: number }) {
         <p className="sy-lab sy-al-lab">Articles</p>
         <MaskLines as="h1" className="sy-al-h1" lines={["宿の記事"]} delay={80} />
         <Reveal as="p" variant="fade" delay={420} className="sy-al-sub">
-          実在の宿を一軒ずつ、確かめた情報でまとめた記事です。{count > 0 ? `いま ${count} 本を掲載しています。` : ""}
+          実在の宿を一軒ずつ、まとめた記事です。{count > 0 ? `いま ${count} 本を掲載しています。` : ""}
         </Reveal>
       </div>
     </header>

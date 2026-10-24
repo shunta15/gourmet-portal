@@ -46,7 +46,7 @@ function Hero() {
           ARTICLE
         </Reveal>
         <MaskLines as="h1" className="ar-hero-h1" lines={["ペットとの暮らしを、", "もっと豊かに。"]} delay={180} step={160} />
-        <Write as="p" className="ar-hero-sub" lines={["お店の紹介記事と、種類・利用シーンから探せるページをまとめています。", "メニューや設備、行き方など、確認できた情報をお届けします。"]} delay={700} step={420} />
+        <Write as="p" className="ar-hero-sub" lines={["お店の紹介記事と、種類・利用シーンから探せるページをまとめています。", "メニューや設備、行き方など、お店の情報をお届けします。"]} delay={700} step={420} />
       </div>
     </section>
   );
