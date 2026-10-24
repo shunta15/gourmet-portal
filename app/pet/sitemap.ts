@@ -9,7 +9,7 @@ import { VERTICALS } from "@/lib/verticals";
 
 export const revalidate = 3600;
 
-// 共通のサイトマップ(最初・エリア・種類・利用シーン・店ページ)に、決定デザインの /pet/search(探す)・/pet/shop(店舗紹介の一覧)・/pet/special(特集の一覧)と特集の 3 本を足す。
+// 共通のサイトマップ(最初・エリア・種類・利用シーン・店ページ)に、決定デザインの /pet/search(探す)・/pet/shop(店舗紹介の一覧)・/pet/special(特集の一覧)と特集の 4 本を足す。
 // 店の記事の一覧 /pet/article は 308 で /pet/shop へ転送するので載せない(2026-10-24 オーナー決定)。
 // 旧ページ(エリア・種類・種類×県・利用シーン)は探すの絞り込みへ 308 転送するので載せず、転送先の探すの URL(種類・県だけ)に替える(components/portal/vert/legacyToSearch.ts)。
 // 載せるかは他のページと同じ gate(掲載が 3 件未満なら載せない)。

@@ -4,7 +4,7 @@ import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../../common/Shell";
 import Logo from "../../common/Logo";
 import { IconArrow, IconPin } from "../../common/Icons";
-import { Heart, CountUp, MaskLines, Write, FillHeading, PawTrail } from "../../common/Motion";
+import { CountUp, MaskLines, Write, FillHeading, PawTrail } from "../../common/Motion";
 import { IMG_SEARCH, PORTAL_HREF, ptLinks } from "../../common/site";
 import { IconChevronLR } from "../SearchIcons";
 import HeroScroll from "../HeroScroll";
@@ -28,7 +28,7 @@ import "./search-live.css";
  *  - 「地図から探す」(東京周辺の地図画像と架空のピン)を外した(実在の地図の素材が無い)
  *  - 条件の 6 つ(犬のサイズ・店内OK・テラスOK・駐車場あり・予約可・予算)は、データにある 種類・エリア・対応動物・こだわり に替えた
  *  - 「よく使われる条件」は「条件から探す」に(データにあるこだわり・対応動物。多い順)。「特集から探す」は、特集記事があるときだけ
- *  - 「おすすめ順」は「エリア順・店名順」に。ハートは見た目だけ(保存はしない)
+ *  - 「おすすめ順」は「エリア順・店名順」に。保存されないお気に入りのハートは外した(2026-10-24)
  */
 
 type SP = Record<string, string | string[] | undefined>;
@@ -177,7 +177,6 @@ function Cards({ shops }: { shops: PetShop[] }) {
                 </div>
               )}
               <i className="pt-tilt-glare" aria-hidden="true" />
-              <Heart className="lsr-heart pt-popin" label={`${c.name}をお気に入りに追加`} size={17} />
             </div>
             <h3 className="lsr-card-t">{c.name}</h3>
             <p className="lsr-card-cat">
