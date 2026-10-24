@@ -2,7 +2,6 @@ import Link from "next/link";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { hand, jp, lab, maru } from "./fonts";
 import Header from "./Header";
-import { aMenu } from "./links";
 import "./a-base.css";
 import "./a-banner.css";
 import "./a-top.css";
@@ -32,12 +31,6 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
         <Header />
         {children}
         <footer className="apa-foot">
-          {/* フッターのナビ: ヘッダーと同じ 4 つ(オーナー決定 2026-10-23。トップ・探す・店舗紹介・特集)。下の小さな 1 行の上に、同じ紙の面・同じ書体で 1 行だけ足す */}
-          <nav className="apa-foot-menu" aria-label="メニュー">
-            {aMenu.map((m) => (
-              <Link key={m.k} href={m.href}>{m.t}</Link>
-            ))}
-          </nav>
           <nav aria-label="サイトの案内">
             <Link href="/">マチノワ トップ</Link>
             <Link href="/about">編集部について</Link>
