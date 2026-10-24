@@ -18,8 +18,8 @@ type FW = { x: number; y: number; r: number; age: number; life: number; n: numbe
 const LEAFCOL = ["#d6402b", "#e8602a", "#f08a2a", "#f2b52e", "#c4372a", "#e9742c"];
 const FWCOL: [string, string][] = [["#ff5fa8", "#ffd1e8"], ["#ffc83a", "#fff0b0"], ["#ff4d6d", "#ffd1d9"], ["#ffffff", "#ffe29a"], ["#b6ff6a", "#f4ffd0"]];
 
-/** airy = 舞う物の数を 4 割に、空の花火の間隔を 2 倍にする */
-export default function Petals({ airy = false }: { airy?: boolean }) {
+/** 圧迫感を減らす版: 舞う物の数を 4 割に、空の花火の間隔を 2 倍にする */
+export default function Petals() {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const cv = ref.current; if (!cv) return;
@@ -31,7 +31,7 @@ export default function Petals({ airy = false }: { airy?: boolean }) {
     let W = 0, H = 0, dpr = 1, raf = 0, last = 0, t = 0, season: Season | null = null, fwT = 1.2, fwSlot = 0;
     const ps: P[] = [];
     const fws: FW[] = [];
-    const N = Math.round((small ? 12 : 22) * (airy ? 0.4 : 1));
+    const N = Math.round((small ? 12 : 22) * 0.4);
     const R = Math.random;
 
     const mk = (k: Season, x: number, y: number, trail = false): P => {
@@ -130,7 +130,7 @@ export default function Petals({ airy = false }: { airy?: boolean }) {
         const fout = p.out >= 0 ? Math.max(0, 1 - p.out / 1.1) : 1;
         draw(p, base * fin * fout);
       }
-      if (season === "summer") { fwT -= dt; if (fwT <= 0) { fwT = (1.5 + R() * 1.6) * (airy ? 2 : 1); skyFW(); } }
+      if (season === "summer") { fwT -= dt; if (fwT <= 0) { fwT = (1.5 + R() * 1.6) * 2; skyFW(); } }
       for (let i = fws.length - 1; i >= 0; i--) {
         const f = fws[i]; f.age += dt;
         if (f.age > f.life) { fws.splice(i, 1); continue; }
@@ -161,6 +161,6 @@ export default function Petals({ airy = false }: { airy?: boolean }) {
     window.addEventListener("resize", resize);
     document.addEventListener("visibilitychange", vis);
     return () => { un(); cancelAnimationFrame(raf); window.removeEventListener("pointermove", move); window.removeEventListener("pointerdown", down); window.removeEventListener("resize", resize); document.removeEventListener("visibilitychange", vis); };
-  }, [airy]);
+  }, []);
   return <canvas ref={ref} aria-hidden="true" style={{ position: "fixed", inset: 0, zIndex: 60, pointerEvents: "none" }} />;
 }
