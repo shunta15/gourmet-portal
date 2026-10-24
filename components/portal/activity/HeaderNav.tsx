@@ -3,19 +3,14 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { aLinks } from "./links";
+import { aLinks, aMenu } from "./links";
 
 /**
  * ヘッダーのメニュー 4 つ(オーナー決定 2026-10-23): トップ・探す・店舗紹介・特集(この順。全業種共通)。
  * いま開いているページの項目に、赤い下線(is-on)と aria-current を付ける(トップ = /activity / 探す = /activity/search / 店舗紹介 = /activity/shop と店のページ /activity/shop/{id} / 特集 = /activity/article の下)。
  * スマホのメニュー(details)は、リンクを押してページが替わったら閉じる(ページが替わっても details の開閉は残るため)。
  */
-export const NAV = [
-  { t: "トップ", href: aLinks.top, k: "top" },
-  { t: "探す", href: aLinks.search, k: "search" },
-  { t: "店舗紹介", href: aLinks.shops, k: "shops" },
-  { t: "特集", href: aLinks.article, k: "feature" },
-] as const;
+export const NAV = aMenu;
 
 function isOn(k: (typeof NAV)[number]["k"], path: string): boolean {
   if (k === "top") return path === aLinks.top || path === `${aLinks.top}/`;

@@ -33,6 +33,17 @@ export function searchUrl(a: SearchArgs = {}, hash = ""): string {
   return `${A}/search${qs ? `?${qs}` : ""}${hash}`;
 }
 
+/**
+ * メニュー 4 つ(オーナー決定 2026-10-23。全業種共通: トップ・探す・店舗紹介・特集。この順)。ヘッダー(PC)・スマホのメニュー・フッターのナビが、この 1 つの表を読む。
+ * k は目印(いま開いているページの項目を決めるのに使う。HeaderNav)。純関数だけのこのファイルに置くので、サーバーの部品(フッター)もクライアントの部品(ヘッダー)も import してよい。
+ */
+export const aMenu = [
+  { t: "トップ", href: A, k: "top" },
+  { t: "探す", href: `${A}/search`, k: "search" },
+  { t: "店舗紹介", href: `${A}/shop`, k: "shops" },
+  { t: "特集", href: `${A}/article`, k: "feature" },
+] as const;
+
 export const aLinks = {
   top: A,
   search: `${A}/search`,

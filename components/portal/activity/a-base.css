@@ -105,5 +105,8 @@ body:has(.apa-root) main { display: contents; }
 /* ---- 一番下の小さな 1 行(全ページ共通。地は A組の紙の色、字は紺) ---- */
 .apa-foot { background: var(--paper); color: var(--navy); text-align: center; padding: 16px 14px 20px; font-size: max(11px, calc(8.2 * var(--u))); line-height: 1.6; letter-spacing: 0.04em; }
 .apa-foot nav { display: flex; flex-wrap: wrap; justify-content: center; }
+.apa-foot .apa-foot-menu { gap: 2px 26px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dotted #d3dde3; font-size: max(13px, calc(9.4 * var(--u))); font-weight: 700; letter-spacing: 0.08em; }
+.apa-foot .apa-foot-menu a { padding: 6px 2px; }
+.apa-foot .apa-foot-menu a + a::before { content: none; }
 .apa-foot a { white-space: nowrap; }
 .apa-foot a + a::before { content: "・"; display: inline-block; margin: 0 0.45em; }

@@ -46,6 +46,8 @@ export type StoryData = {
   sources?: Array<{ label: string; url: string }>;
   checkedAt?: string;
   actions: Array<{ label: string; href: string; external?: boolean; ghost?: boolean }>;
+  /** true = スマホで、ボタン(actions)を題・一言の直後(導入文より上)に出す。店の記事の「店舗詳細を見る」を最初の画面に入れるため。PC は札の下のまま */
+  actionsFirst?: boolean;
   banner: { v: "shop" | "article"; href: string; external?: boolean };
 };
 
@@ -87,7 +89,7 @@ export default function Story({ d }: { d: StoryData }) {
               <Stamp id="story" className="y-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
             </figure>
           ) : null}
-          <div className={`y-panel${d.photo ? "" : " is-solo"}`}>
+          <div className={`y-panel${d.photo ? "" : " is-solo"}${d.actionsFirst ? " is-act-top" : ""}`}>
             <p className="y-tag">
               <span>{d.tag}</span>
               <small>{d.tagEn}</small>

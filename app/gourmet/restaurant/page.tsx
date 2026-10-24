@@ -18,7 +18,7 @@ import "@/components/portal/noren/blocksearch.css";
 // 中身: 見出し「店舗紹介」と件数（実数）、掲載中の全店の札。札を押すと、その店の店舗紹介ページ（/restaurant/<店 ID>）を開く。絞り込みは付けない。
 // 札・並べ方・ページ送りは「さがす」（components/portal/noren/NorenSearch.tsx の block の見た目）と同じ部品・同じ作法: BlockCard・.vBk-grid・.vBk-pager・1 ページ 24 店・?page=。
 // 店の並びは店 ID の番号の順（ページ送りの途中で順番が入れ替わらないように決めておく）。非表示の店（lib/hiddenStores.ts）は getAllRestaurants が外している。
-// robots: 1 ページ目は index、2 ページ目以降（?page=2〜）は noindex,follow（他の業種の一覧と同じ決まり）。canonical は、どのページも自分自身。
+// robots: 1 ページ目は index、2 ページ目以降（?page=2〜）は noindex,follow（他の業種の一覧と同じ決まり）。canonical は、どのページも引数なしの /restaurant（他の業種の店舗紹介の一覧と同じ）。
 // 公開スイッチ OFF のあいだは 404（レイアウトとここで assertPortalLive）。
 
 /** 1 ページに出す店の数（「さがす」と同じ） */
@@ -62,10 +62,11 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     vertical: "gourmet",
     title: `店舗紹介${cur > 1 ? `（${cur} ページ目）` : ""} | ${BRAND}`,
     description: `${BRAND}に掲載している全 ${items.length} 店の一覧です。店名・エリア・種類を見て、1 店ずつの紹介ページへ進めます。`,
-    path: hrefOf(cur),
+    // canonical は、どのページも引数なしの /restaurant（ほかの業種の店舗紹介の一覧、/search の ?page= と同じ作法）
+    path: MENU_SHOPS,
     count: items.length,
   });
-  // 2 ページ目以降は noindex,follow（1 ページ目だけ index。canonical は自分自身）
+  // 2 ページ目以降は noindex,follow（1 ページ目だけ index）
   return cur > 1 ? { ...base, robots: { index: false, follow: true } } : base;
 }
 

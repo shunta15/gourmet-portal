@@ -69,6 +69,7 @@ export function storyOfShop(v: ArticleView, shop: AShop, all: AShop[]): StoryDat
       { label: "店舗詳細を見る", href: aLinks.shop(shop.id) },
       ...(official ? [{ label: "公式サイトで確認する", href: official, external: true, ghost: true }] : []),
     ],
+    actionsFirst: true,
     banner: { v: "shop", href: official ?? aLinks.shop(shop.id), external: !!official },
   };
 }

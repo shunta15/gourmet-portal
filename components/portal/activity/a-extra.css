@@ -107,6 +107,12 @@
 .y-btn svg { width: 15px; height: 15px; }
 .y-btn.is-ghost { background: #fff; color: var(--navy); border: 1px solid #a9cde6; box-shadow: none; }
 .y-pines { position: absolute; right: 14px; top: 12px; width: 34px; height: 28px; color: var(--teal); }
+/* 店の記事(is-act-top): スマホでは「店舗詳細を見る」を題・一言の直後に出す(導入文が長く、導入文の下だと最初の画面に入らないため)。PC(860px〜)は今のまま */
+@media (max-width: 859px) {
+  .y-panel.is-act-top { display: flex; flex-direction: column; }
+  .y-panel.is-act-top > .y-actions { order: 1; margin-top: 14px; margin-bottom: 2px; }
+  .y-panel.is-act-top > .y-lead, .y-panel.is-act-top > .y-date { order: 2; }
+}
 .y-waves { display: none; }
 .y-sec, .y-facts, .y-more, .y-src { position: relative; background: #fff; border-radius: 6px; padding: 16px 16px 20px; box-shadow: 0 1px 6px rgba(13, 69, 128, 0.1); border: 1px dotted #d3dde3; }
 .y-sec-h { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 12px; }

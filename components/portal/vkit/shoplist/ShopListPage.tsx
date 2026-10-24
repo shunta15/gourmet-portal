@@ -47,9 +47,11 @@ function Hero({ cfg }: { cfg: VkConfig }) {
       </div>
       <div className="val-hero-in">
         <Crumbs items={[{ label: "ホーム", href: L.home }, { label: "店舗紹介" }]} className="val-crumbs" />
+        {/* h1 は「店舗紹介」だけ(オーナー決定の見出し)。その業種の一言は、同じ大きさ・同じ動きの p に分けて、見た目は 2 行の大見出しのまま */}
         <h1 className="val-h1">
-          <MaskLines lines={["店舗紹介", c.h1[1]]} step={170} delay={100} />
+          <MaskLines lines={["店舗紹介"]} delay={100} />
         </h1>
+        <MaskLines as="p" className="val-h1" lines={[c.h1[1]]} delay={270} />
         <Reveal as="p" variant="fade" className="val-sub" delay={600}>
           {c.sub}
         </Reveal>
