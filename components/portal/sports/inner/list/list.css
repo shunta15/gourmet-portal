@@ -1,0 +1,27 @@
+/* 店舗紹介の一覧(ShopListPage)。story.css の部品に、ページ送りと「店がまだ無い」のときの文だけを足す */
+.s2b-ls-body { min-height: calc(260 * var(--u)); }
+.s2b-ls-empty { margin-top: calc(26 * var(--u)); font-size: calc(12.5 * var(--u)); line-height: 1.9; color: #555; }
+.s2b-pager { display: flex; flex-wrap: wrap; justify-content: center; gap: calc(8 * var(--u)); padding: calc(26 * var(--u)) 0 calc(6 * var(--u)); }
+.s2b-pager a { min-width: calc(30 * var(--u)); height: calc(30 * var(--u)); padding: 0 calc(8 * var(--u)); display: grid; place-items: center; border: 1px solid #c9d3e0; background: #fff; color: #2f4f7f; font-size: calc(11.5 * var(--u)); font-family: var(--s2b-ffj); }
+.s2b-pager a[aria-current="page"] { background: var(--s2b-blue); border-color: var(--s2b-blue); color: #fff; }
+@container (max-width: 759px) {
+  .s2b-ls-body { min-height: 0; }
+  .s2b-ls-empty { font-size: 14px; margin-top: 18px; }
+  .s2b-pager { gap: 8px; padding: 20px 0 4px; }
+  .s2b-pager a { min-width: 36px; height: 36px; font-size: 14px; }
+}
+
+/* 404 */
+.s2b-nf { min-height: calc(480 * var(--u)); }
+.s2b-nf-t { padding-top: calc(70 * var(--u)); }
+.s2b-nf-d { margin: calc(18 * var(--u)) auto 0; max-width: calc(520 * var(--u)); font-size: calc(12.5 * var(--u)); line-height: 1.9; color: #444; letter-spacing: 0.05em; }
+.s2b-nf-go { display: flex; flex-wrap: wrap; justify-content: center; gap: calc(12 * var(--u)); padding: calc(10 * var(--u)) calc(40 * var(--u)) calc(70 * var(--u)); }
+.s2b-story .s2b-nf-go a { display: block; padding: calc(11 * var(--u)) calc(22 * var(--u)); background: var(--s2b-blue); color: #fff; font-family: var(--s2b-ffj); font-size: calc(11.5 * var(--u)); letter-spacing: 0.06em; }
+.s2b-story .s2b-nf-go a:hover { background: #4f7fb8; }
+@container (max-width: 759px) {
+  .s2b-nf { min-height: 0; }
+  .s2b-nf-t { padding-top: 40px; }
+  .s2b-nf-d { font-size: 14px; margin-top: 14px; }
+  .s2b-nf-go { gap: 10px; padding: 8px 16px 44px; }
+  .s2b-story .s2b-nf-go a { font-size: 14px; padding: 12px 18px; }
+}

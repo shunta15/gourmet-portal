@@ -1,0 +1,153 @@
+/* 見本2「3_店舗紹介」(1024 幅)の再現。--u = ページ幅 ÷ 1024。座標は見本の画像の px。 */
+.s2b-shop { --u: calc(100cqw / 1024); position: relative; font-family: var(--s2b-ffs); font-size: calc(12 * var(--u)); line-height: 1.6; background: #fefefe; padding-bottom: calc(26 * var(--u)); }
+.s2b-shop section { position: relative; }
+.s2b-shop h1, .s2b-shop h2 { font-weight: 600; }
+
+/* パンくず(45〜75) */
+.s2b-sh-crumb { height: calc(30 * var(--u)); padding: calc(10 * var(--u)) 0 0 calc(54 * var(--u)); display: flex; align-items: flex-start; gap: calc(9 * var(--u)); font-size: calc(10.2 * var(--u)); letter-spacing: 0.08em; color: #444; line-height: 1.5; }
+.s2b-sh-crumb .s2b-ci { width: calc(7 * var(--u)); height: calc(10 * var(--u)); margin-top: calc(2 * var(--u)); color: #666; }
+.s2b-sh-crumb span { color: #444; }
+
+/* 店名(75〜190) */
+.s2b-sh-title { height: calc(115 * var(--u)); text-align: center; }
+.s2b-sh-kicker { position: absolute; left: 0; right: 0; top: calc(5 * var(--u)); font-size: calc(10.5 * var(--u)); letter-spacing: 0.34em; color: #6b8fbf; line-height: 1.4; padding-left: 0.34em; }
+.s2b-sh-title h1 { position: absolute; left: calc(20 * var(--u)); right: calc(20 * var(--u)); top: calc(26 * var(--u)); font-size: calc(34 * var(--u)); line-height: 1.5; letter-spacing: 0.04em; color: #121212; }
+.s2b-sh-loc { position: absolute; left: 0; right: 0; top: calc(83 * var(--u)); display: flex; justify-content: center; align-items: center; gap: calc(8 * var(--u)); font-size: calc(10.5 * var(--u)); letter-spacing: 0.06em; color: #444; line-height: 1.4; }
+.s2b-sh-loc i { width: calc(34 * var(--u)); height: 1px; background: #b5bcc7; margin: 0 calc(14 * var(--u)); }
+.s2b-sh-loc .s2b-ci { width: calc(10 * var(--u)); height: calc(13 * var(--u)); color: #4f86c6; vertical-align: 0; }
+
+/* ヒーローの写真(190〜550) */
+.s2b-sh-hero { height: calc(360 * var(--u)); background: #fff; }
+.s2b-sh-hero > div { position: absolute; overflow: hidden; background: #ddd; }
+.s2b-sh-h-main { left: 0; top: 0; width: calc(711 * var(--u)); height: 100%; }
+.s2b-sh-h-top { left: calc(718 * var(--u)); top: 0; width: calc(306 * var(--u)); height: calc(178 * var(--u)); }
+.s2b-sh-h-bot { left: calc(718 * var(--u)); top: calc(185 * var(--u)); width: calc(306 * var(--u)); height: calc(175 * var(--u)); }
+
+/* 共通: 小さな英字ラベル + 線 */
+.s2b-lab { display: flex; align-items: center; gap: calc(9 * var(--u)); font-size: calc(9.5 * var(--u)); letter-spacing: 0.16em; line-height: 1; }
+.s2b-lab i { width: calc(28 * var(--u)); height: 1px; background: currentColor; opacity: 0.7; }
+
+/* ABOUT(550〜754) */
+.s2b-sh-about { height: calc(204 * var(--u)); background: #fce9db; z-index: 1; }
+.s2b-sh-about .s2b-lab { position: absolute; left: calc(100 * var(--u)); top: calc(18 * var(--u)); color: #666; }
+.s2b-sh-about h2 { position: absolute; left: calc(100 * var(--u)); top: calc(36 * var(--u)); font-size: calc(24 * var(--u)); line-height: calc(31 * var(--u)); letter-spacing: 0.06em; color: #1c1c1c; white-space: nowrap; }
+.s2b-sh-about h2 span { display: block; }
+.s2b-sh-about-p { position: absolute; left: calc(100 * var(--u)); top: calc(105 * var(--u)); width: calc(470 * var(--u)); font-size: calc(12.5 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.08em; color: #444; }
+.s2b-sh-script { position: absolute; left: calc(800 * var(--u)); top: calc(18 * var(--u)); width: calc(175 * var(--u)); height: auto; }
+.s2b-sh-vline { position: absolute; left: calc(750 * var(--u)); top: calc(72 * var(--u)); height: calc(108 * var(--u)); width: 1px; background: #777; }
+.s2b-sh-about-r { position: absolute; left: calc(783 * var(--u)); top: calc(105 * var(--u)); font-size: calc(12.5 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.08em; color: #444; }
+
+/* FEATURE 01(734〜983。ABOUT の下端に 20 かぶせる) */
+.s2b-sh-f1 { height: calc(249 * var(--u)); margin-top: calc(-20 * var(--u)); z-index: 2; }
+.s2b-sh-f1-tx { position: absolute; left: 0; top: 0; width: calc(437 * var(--u)); height: 100%; background: #fff; clip-path: polygon(0 0, 100% calc(20 * var(--u)), calc(100% - 100 * var(--u)) 100%, 0 100%); }
+.s2b-sh-f1-ph { position: absolute; left: calc(337 * var(--u)); top: calc(20 * var(--u)); width: calc(687 * var(--u)); height: calc(229 * var(--u)); overflow: hidden; background: #ddd; clip-path: polygon(calc(100 * var(--u)) 0, 100% 0, 100% 100%, 0 100%); }
+.s2b-sh-f1 .s2b-lab { position: absolute; left: calc(52 * var(--u)); top: calc(46 * var(--u)); color: #4f7fb8; }
+.s2b-sh-f1 h2 { position: absolute; left: calc(52 * var(--u)); top: calc(64 * var(--u)); font-size: calc(var(--hs, 28) * var(--u)); line-height: 1.3; letter-spacing: 0.05em; color: #151515; white-space: nowrap; }
+.s2b-sh-f1 .s2b-sh-f-p { position: absolute; left: calc(52 * var(--u)); top: calc(114 * var(--u)); width: calc(305 * var(--u)); }
+.s2b-sh-f1 .s2b-arrow { position: absolute; left: calc(243 * var(--u)); top: calc(240 * var(--u)); }
+.s2b-sh-f-p { font-size: calc(11.6 * var(--u)); line-height: calc(20.5 * var(--u)); letter-spacing: 0.06em; color: #444; }
+
+/* FEATURE 02(989〜1223) */
+.s2b-sh-f2 { height: calc(234 * var(--u)); margin-top: calc(6 * var(--u)); background: #fff; }
+.s2b-sh-f2-tx { position: absolute; left: 0; top: 0; width: calc(392 * var(--u)); height: 100%; background: #fbeede; clip-path: polygon(0 0, 100% 0, calc(100% - 62 * var(--u)) 100%, 0 100%); }
+.s2b-sh-f2-ph { position: absolute; left: calc(330 * var(--u)); top: 0; width: calc(694 * var(--u)); height: 100%; overflow: hidden; background: #ddd; clip-path: polygon(calc(62 * var(--u)) 0, 100% 0, 100% 100%, 0 100%); }
+.s2b-sh-f2 .s2b-lab { position: absolute; left: calc(59 * var(--u)); top: calc(39 * var(--u)); color: #4f7fb8; }
+.s2b-sh-f2 h2 { position: absolute; left: calc(59 * var(--u)); top: calc(58 * var(--u)); font-size: calc(var(--hs, 28) * var(--u)); line-height: 1.3; letter-spacing: 0.05em; color: #151515; white-space: nowrap; }
+.s2b-sh-f2 .s2b-sh-f-p { position: absolute; left: calc(59 * var(--u)); top: calc(109 * var(--u)); width: calc(290 * var(--u)); }
+.s2b-sh-f2 .s2b-arrow { position: absolute; left: calc(264 * var(--u)); top: calc(204 * var(--u)); }
+
+/* FACILITY INFO(1223〜1298) */
+.s2b-sh-info { height: calc(75 * var(--u)); background: var(--s2b-blue); color: #fff; }
+.s2b-sh-info > * { position: absolute; }
+.s2b-sh-info-h { left: calc(59 * var(--u)); top: calc(27 * var(--u)); font-size: calc(11 * var(--u)); letter-spacing: 0.2em; line-height: 1.4; }
+.s2b-sh-info-vl { left: calc(202 * var(--u)); top: calc(22 * var(--u)); width: 1px; height: calc(32 * var(--u)); background: rgba(255, 255, 255, 0.55); }
+.s2b-sh-info-c { top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.s2b-sh-info-c1 { left: calc(277 * var(--u)); width: calc(120 * var(--u)); }
+.s2b-sh-info-c2 { left: calc(440 * var(--u)); width: calc(150 * var(--u)); }
+.s2b-sh-info-c3 { left: calc(632 * var(--u)); width: calc(165 * var(--u)); }
+.s2b-sh-info-c dt { font-size: calc(8.5 * var(--u)); font-weight: 600; letter-spacing: 0.06em; opacity: 0.92; line-height: 1.4; margin-bottom: calc(3 * var(--u)); font-family: var(--s2b-ffj); }
+.s2b-sh-info-c dd { font-size: calc(11.5 * var(--u)); letter-spacing: 0.05em; line-height: 1.4; }
+.s2b-sh-info-c dd.is-multi { font-size: calc(9.5 * var(--u)); line-height: 1.3; letter-spacing: 0.03em; }
+.s2b-sh-info-c dd span { display: block; white-space: nowrap; }
+.s2b-sh-info-ic { position: absolute !important; top: 50%; transform: translateY(-50%); color: #fff; }
+.s2b-sh-ic-pin { left: calc(-27 * var(--u)); width: calc(11 * var(--u)); height: calc(15 * var(--u)); margin-top: calc(-1 * var(--u)); }
+.s2b-sh-ic-pin :is(circle) { fill: var(--s2b-blue); }
+.s2b-sh-ic-db { left: calc(-35 * var(--u)); width: calc(22 * var(--u)); height: calc(16 * var(--u)); margin-top: calc(-1 * var(--u)); }
+.s2b-sh-ic-ck { left: calc(-27 * var(--u)); width: calc(16 * var(--u)); height: calc(16 * var(--u)); margin-top: calc(-1 * var(--u)); }
+.s2b-sh-official { left: calc(809 * var(--u)); top: calc(22 * var(--u)); width: calc(161 * var(--u)); height: calc(36 * var(--u)); background: #fff; color: #2f4f7f !important; display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); font-size: calc(10.5 * var(--u)); letter-spacing: 0.06em; font-family: var(--s2b-ffj); }
+.s2b-sh-official .s2b-ci { width: calc(11 * var(--u)); height: calc(11 * var(--u)); }
+
+/* 関連記事(1298〜) */
+.s2b-sh-rel { padding: calc(24 * var(--u)) calc(49 * var(--u)) 0 calc(53 * var(--u)); background: #fff; }
+.s2b-sh-rel-h { display: flex; align-items: center; height: calc(20 * var(--u)); padding-left: calc(1 * var(--u)); }
+.s2b-sh-rel-en { font-size: calc(9.5 * var(--u)); letter-spacing: 0.16em; color: #555; margin-right: calc(24 * var(--u)); }
+.s2b-sh-rel-h b { font-size: calc(12.5 * var(--u)); font-weight: 600; letter-spacing: 0.05em; margin-right: calc(12 * var(--u)); white-space: nowrap; }
+.s2b-sh-rel-h i { flex: 1; height: 1px; background: linear-gradient(90deg, #444, #aab); margin-right: calc(36 * var(--u)); }
+.s2b-sh-rel-h a { display: flex; align-items: center; gap: calc(6 * var(--u)); font-family: var(--s2b-ffj); font-size: calc(8.5 * var(--u)); font-weight: 700; letter-spacing: 0.1em; color: #4f86c6; }
+.s2b-sh-rel-va { width: calc(16 * var(--u)); height: calc(6 * var(--u)); color: #444; }
+.s2b-shop .s2b-sh-rel-l { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: calc(32 * var(--u)); margin-top: calc(15 * var(--u)); }
+.s2b-sh-rel-l li a { position: relative; display: block; padding-bottom: calc(26 * var(--u)); }
+.s2b-sh-rel-ph { display: block; height: calc(95 * var(--u)); overflow: hidden; background: #ddd; }
+.s2b-tag { display: inline-block; margin-top: calc(7 * var(--u)); padding: calc(1 * var(--u)) calc(7 * var(--u)); border: 1px solid #9bbbe0; background: #e4f0fb; color: #3b6aa6; font-family: var(--s2b-ffs); font-size: calc(8.5 * var(--u)); letter-spacing: 0.1em; line-height: 1.5; }
+.s2b-tag.is-sp { border-color: #f0a3ab; background: #fde3e6; color: #c4485a; }
+.s2b-sh-rel-t { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin-top: calc(4 * var(--u)); padding-right: calc(40 * var(--u)); font-size: calc(13.5 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.04em; color: #222; font-weight: 400; }
+.s2b-sh-rel-ar { position: absolute; right: calc(6 * var(--u)); bottom: calc(10 * var(--u)); width: calc(26 * var(--u)); height: calc(9 * var(--u)); color: #444; }
+
+/* ---------- スマホ: 1 列に組み替える(見本の飾り・色・書体はそのまま) ---------- */
+@container (max-width: 759px) {
+  .s2b-shop { --u: 1px; font-size: 13px; padding-bottom: 20px; }
+  .s2b-sh-crumb { height: auto; padding: 10px 16px 6px; flex-wrap: wrap; gap: 6px; font-size: 11px; }
+  .s2b-sh-crumb .s2b-ci { width: 7px; height: 10px; margin-top: 3px; }
+  .s2b-sh-title { height: auto; padding: 14px 16px 18px; }
+  .s2b-sh-title > * { position: static !important; }
+  .s2b-sh-kicker { font-size: 11px; margin-bottom: 8px; }
+  .s2b-sh-title h1 { font-size: 24px; line-height: 1.4; margin-bottom: 10px; }
+  .s2b-sh-loc { font-size: 12px; }
+  .s2b-sh-loc i { width: 28px; margin: 0 8px; }
+  .s2b-sh-loc .s2b-ci { width: 10px; height: 13px; }
+  .s2b-sh-hero { height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+  .s2b-sh-hero > div { position: relative; left: auto !important; top: auto !important; width: auto !important; height: 150px !important; }
+  .s2b-sh-h-main { grid-column: 1 / 3; height: 56vw !important; max-height: 330px; }
+  .s2b-sh-about { height: auto; padding: 24px 20px 28px; display: flex; flex-direction: column; }
+  .s2b-sh-about > * { position: static !important; }
+  .s2b-sh-about .s2b-lab { margin-bottom: 10px; font-size: 10px; }
+  .s2b-sh-about h2 { font-size: 21px; line-height: 1.5; white-space: normal; margin-bottom: 12px; }
+  .s2b-sh-about-p { width: auto; font-size: 13px; line-height: 1.95; letter-spacing: 0.05em; }
+  .s2b-sh-script { width: 150px; margin: 18px 0 0 auto; }
+  .s2b-sh-vline { display: none; }
+  .s2b-sh-about-r { font-size: 12.5px; line-height: 1.8; margin-top: 14px; padding-left: 0; text-align: right; }
+  .s2b-sh-f1, .s2b-sh-f2 { height: auto; margin-top: 0; display: flex; flex-direction: column; }
+  .s2b-sh-f2 { margin-top: 4px; }
+  .s2b-sh-f1-ph, .s2b-sh-f2-ph { position: relative; left: auto; top: auto; width: 100%; height: 56vw; max-height: 300px; clip-path: none; order: -1; }
+  .s2b-sh-f1-tx, .s2b-sh-f2-tx { position: relative; width: auto; height: auto; padding: 22px 20px 26px; clip-path: none; }
+  .s2b-sh-f2-tx { background: #fbeede; }
+  .s2b-sh-f1-tx .s2b-lab, .s2b-sh-f2-tx .s2b-lab, .s2b-sh-f1-tx h2, .s2b-sh-f2-tx h2, .s2b-sh-f1-tx .s2b-sh-f-p, .s2b-sh-f2-tx .s2b-sh-f-p, .s2b-sh-f1 .s2b-arrow, .s2b-sh-f2 .s2b-arrow { position: static !important; width: auto; }
+  .s2b-sh-f1 .s2b-lab, .s2b-sh-f2 .s2b-lab { margin-bottom: 8px; font-size: 10px; }
+  .s2b-sh-f1 h2, .s2b-sh-f2 h2 { font-size: 22px !important; white-space: normal; margin-bottom: 10px; }
+  .s2b-sh-f-p { font-size: 13px; line-height: 1.9; }
+  .s2b-sh-f1 .s2b-arrow, .s2b-sh-f2 .s2b-arrow { width: 54px; margin-top: 12px; }
+  .s2b-sh-info { height: auto; padding: 18px 20px 22px; display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .s2b-sh-info > * { position: relative !important; left: auto !important; top: auto !important; width: auto !important; height: auto !important; }
+  .s2b-sh-info-vl { display: none; }
+  .s2b-sh-info-h { font-size: 12px; }
+  .s2b-sh-info-c { padding-left: 34px; justify-content: flex-start; }
+  .s2b-sh-info-c dt { font-size: 10px; }
+  .s2b-sh-info-c dd { font-size: 13px; }
+  .s2b-sh-info-c dd.is-multi { font-size: 12.5px; }
+  .s2b-sh-info-ic { left: 0 !important; width: 20px !important; height: 20px !important; margin-top: 0 !important; }
+  .s2b-sh-info-c .s2b-sh-ic-pin { width: 13px !important; left: 3px !important; }
+  .s2b-sh-official { display: flex !important; height: 42px !important; font-size: 13px; gap: 8px; }
+  .s2b-sh-official .s2b-ci { width: 13px; height: 13px; }
+  .s2b-sh-rel { padding: 24px 16px 0; }
+  .s2b-sh-rel-h { height: auto; flex-wrap: wrap; gap: 4px 10px; }
+  .s2b-sh-rel-en { font-size: 10px; margin-right: 0; }
+  .s2b-sh-rel-h b { font-size: 14px; margin-right: 0; }
+  .s2b-sh-rel-h i { margin-right: 10px; min-width: 20px; }
+  .s2b-sh-rel-h a { font-size: 10px; }
+  .s2b-sh-rel-va { width: 16px; height: 6px; }
+  .s2b-shop .s2b-sh-rel-l { grid-template-columns: 1fr; row-gap: 22px; margin-top: 16px; }
+  .s2b-sh-rel-ph { height: 44vw; max-height: 200px; }
+  .s2b-tag { font-size: 10.5px; padding: 1px 8px; margin-top: 8px; }
+  .s2b-sh-rel-t { font-size: 15px; line-height: 1.55; margin-top: 6px; padding-right: 46px; }
+  .s2b-sh-rel-ar { width: 30px; height: 10px; right: 8px; bottom: 12px; }
+}

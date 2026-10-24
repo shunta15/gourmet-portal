@@ -1,0 +1,75 @@
+/* 特集の記事・店の特集記事(StoryPage)。店舗紹介(shop.css)・特集(special.css)の部品に、長い文を載せるための縦の組みを足したもの。--u = ページ幅 ÷ 1024 */
+.s2b-story { padding-bottom: 0; }
+/* ヘッダーは、見本ごとの座標(店舗紹介 = 1024 幅・特集 = 937 幅)で組んであるので、その幅の --u に戻す */
+.s2b-hdw--shop { --u: calc(100cqw / 1024); }
+.s2b-hdw--special { --u: calc(100cqw / 937); }
+
+.s2b-st-crumb { height: auto; min-height: calc(30 * var(--u)); flex-wrap: wrap; }
+.s2b-st-crumb-i { display: inline-flex; align-items: flex-start; gap: calc(9 * var(--u)); }
+.s2b-st-crumb a:hover { text-decoration: underline; }
+
+/* 見出し */
+.s2b-st-title { text-align: center; padding: calc(10 * var(--u)) calc(110 * var(--u)) calc(30 * var(--u)); }
+.s2b-st-title .s2b-sh-kicker { position: static; margin-bottom: calc(10 * var(--u)); }
+.s2b-st-title h1 { position: static; font-size: calc(26 * var(--u)); line-height: 1.55; letter-spacing: 0.04em; color: #121212; text-wrap: balance; word-break: auto-phrase; }
+.s2b-st-title .s2b-sh-loc { position: static; margin-top: calc(16 * var(--u)); }
+
+/* 写真 */
+.s2b-st-hero { height: calc(360 * var(--u)); background: #ddd; overflow: hidden; }
+.s2b-st-hero .s2b-ph { width: 100%; height: 100%; object-fit: cover; }
+
+/* 導入・結び(桃色の面) */
+.s2b-st-lead { background: #fce9db; padding: calc(34 * var(--u)) 0 calc(38 * var(--u)); }
+.s2b-st-closing { margin-top: 0; }
+.s2b-st-in { width: calc(660 * var(--u)); margin: 0 auto; }
+.s2b-st-lead .s2b-lab { color: #666; margin-bottom: calc(14 * var(--u)); }
+.s2b-st-p { font-size: calc(12.6 * var(--u)); line-height: calc(23 * var(--u)); letter-spacing: 0.06em; color: #444; text-align: justify; }
+.s2b-st-p + .s2b-st-p { margin-top: calc(12 * var(--u)); }
+
+/* 節 */
+.s2b-st-sec { background: #fff; padding: calc(40 * var(--u)) 0 calc(42 * var(--u)); }
+.s2b-st-sec[data-alt="1"] { background: #fdf3ea; }
+.s2b-st-sec .s2b-lab { color: #4f7fb8; margin-bottom: calc(10 * var(--u)); }
+.s2b-st-sec h2 { font-size: calc(21 * var(--u)); line-height: 1.5; letter-spacing: 0.05em; color: #151515; margin-bottom: calc(18 * var(--u)); text-wrap: balance; word-break: auto-phrase; }
+.s2b-st-ph { width: 100%; max-height: calc(380 * var(--u)); overflow: hidden; background: #ddd; margin-bottom: calc(18 * var(--u)); }
+.s2b-st-ph .s2b-ph { width: 100%; height: 100%; object-fit: cover; }
+.s2b-st-specs { margin: calc(16 * var(--u)) 0 0; border-top: 1px solid #c9d3e0; font-family: var(--s2b-ffj); }
+.s2b-st-specs > div { display: flex; gap: calc(16 * var(--u)); padding: calc(8 * var(--u)) 0; border-bottom: 1px solid #dfe5ee; font-size: calc(11 * var(--u)); line-height: 1.7; }
+.s2b-st-specs dt { flex: none; width: calc(96 * var(--u)); font-weight: 700; color: #3b6aa6; letter-spacing: 0.05em; }
+.s2b-st-specs dd { color: #444; }
+.s2b-st-extra { display: flex; flex-wrap: wrap; gap: calc(8 * var(--u)); margin-top: calc(16 * var(--u)); }
+.s2b-st-extra li { width: calc(120 * var(--u)); height: calc(90 * var(--u)); overflow: hidden; background: #ddd; }
+.s2b-st-extra .s2b-ph { width: 100%; height: 100%; object-fit: cover; }
+.s2b-st-stores { display: flex; flex-wrap: wrap; gap: calc(8 * var(--u)); margin-top: calc(16 * var(--u)); }
+.s2b-st-stores .s2b-tag { margin-top: 0; font-size: calc(10.5 * var(--u)); padding: calc(3 * var(--u)) calc(10 * var(--u)); }
+.s2b-st-stores .s2b-tag:hover { background: #d3e7f8; }
+
+/* この記事に出てくる店(特集の「PICK UP」の札を、横 3 列で折り返す) */
+.s2b-st-stores-sec { padding-bottom: calc(30 * var(--u)); }
+.s2b-story .s2b-st-shops { margin-top: calc(16 * var(--u)); row-gap: calc(18 * var(--u)); column-gap: calc(19 * var(--u)); }
+
+.s2b-story .s2b-sh-rel { padding-bottom: calc(10 * var(--u)); }
+
+@container (max-width: 759px) {
+  .s2b-st-title { padding: 12px 16px 20px; }
+  .s2b-st-title h1 { font-size: 21px; line-height: 1.5; }
+  .s2b-st-title .s2b-sh-loc { margin-top: 12px; font-size: 12px; }
+  .s2b-st-hero { height: 56vw; max-height: 300px; }
+  .s2b-st-in { width: auto; margin: 0; padding: 0 18px; }
+  .s2b-st-lead { padding: 24px 0 28px; }
+  .s2b-st-lead .s2b-lab { margin-bottom: 10px; font-size: 10px; }
+  .s2b-st-p { font-size: 14px; line-height: 1.95; letter-spacing: 0.04em; text-align: left; }
+  .s2b-st-p + .s2b-st-p { margin-top: 12px; }
+  .s2b-st-sec { padding: 26px 0 28px; }
+  .s2b-st-sec .s2b-lab { font-size: 10px; margin-bottom: 8px; }
+  .s2b-st-sec h2 { font-size: 19px; margin-bottom: 14px; }
+  .s2b-st-ph { max-height: 240px; margin-bottom: 14px; }
+  .s2b-st-specs > div { font-size: 13px; gap: 12px; padding: 8px 0; }
+  .s2b-st-specs dt { width: 84px; }
+  .s2b-st-extra li { width: calc(50% - 4px); height: 100px; }
+  .s2b-st-extra { gap: 8px; margin-top: 14px; }
+  .s2b-st-stores { gap: 8px; margin-top: 14px; }
+  .s2b-st-stores .s2b-tag { font-size: 12px; padding: 3px 10px; }
+  .s2b-story .s2b-st-shops { margin-top: 14px; row-gap: 14px; }
+  .s2b-st-stores-sec { padding-bottom: 20px; }
+}

@@ -22,7 +22,7 @@ import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
  * - 新業種（/beauty /bodycare /pet /stay /activity /sports /life）とその配下
  * グルメの既存のそれ以外のルート（/region・/scene・/search など）は false（従来の SiteShell）。
  */
-const NEW_VERTICAL_PATHS = ['/proto-sports', '/beauty', '/bodycare', '/pet', '/stay', '/activity', '/sports', '/life'];
+const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/stay', '/activity', '/sports', '/life'];
 
 export function isPortalPath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;
