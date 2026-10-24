@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
   return buildMetadata({
     vertical: "stay",
     title: `${shop.name}の紹介記事｜${where}${shop.kindName || b.name}｜${b.brand}`,
-    description: stayLine(v.headline) || `${shop.name}の紹介記事。所在地やチェックイン・チェックアウトなど、公式サイトなどで確認できた情報をまとめています。`,
+    description: stayLine(v.headline) || `${shop.name}の紹介記事。所在地やチェックイン・チェックアウトなどの情報をまとめています。`,
     path: `${b.path}/article/${shop.id}`,
     count: await countPlaces("stay"),
     ...(v.hero ? { image: { url: v.hero.src, width: v.hero.w, height: v.hero.h, alt: `${shop.name}の写真` } } : {}),

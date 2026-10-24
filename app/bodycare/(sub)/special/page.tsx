@@ -12,7 +12,7 @@ export const revalidate = 3600;
 
 const PATH = "/bodycare/special";
 const TITLE = "ボディケアの特集記事｜マチノワ ボディケア";
-const DESCRIPTION = "ボディケアの店を探すときに役立つ特集記事の一覧です。整体・整骨院・鍼灸院・マッサージ・リラクゼーションのちがい、店を選ぶときに見るところ、土日も開いている店。法令と国の資料、店のデータで確かめた事実だけを載せています。";
+const DESCRIPTION = "ボディケアの店を探すときに役立つ特集記事の一覧です。整体・整骨院・鍼灸院・マッサージ・リラクゼーションのちがい、店を選ぶときに見るところ、土日も開いている店。法律の決まりと、店のデータにある事実だけを載せています。";
 
 export function generateMetadata() {
   assertPortalLive();
