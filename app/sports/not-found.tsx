@@ -1,15 +1,9 @@
 import { notFoundMetadata } from "@/components/portal/pages/data";
-import VkFrame from "@/components/portal/vkit/common/VkFrame";
-import VkNotFound from "@/components/portal/vkit/common/VkNotFound";
-import { sportsCfg } from "@/components/portal/vkit/configs";
+import { SportsNotFoundPage } from "@/components/portal/sports/pages";
 
-// 最初・探す・店・記事(決定デザインのページ)の 404。外枠は VkFrame。
-// 種類・エリア・利用シーンのページの 404 は app/sports/(sub)/not-found.tsx。検索エンジンには載せない
+// 最初・探す・店・特集・記事(オーナーが決めたデザイン。見本2)の 404。外枠は InnerFrame(components/portal/sports/pages.tsx の SportsNotFoundPage)。
+// 種類・エリア・利用シーンのページの 404 も app/sports/(sub)/not-found.tsx で同じ見た目。検索エンジンには載せない
 export const metadata = notFoundMetadata();
 export default function NotFound() {
-  return (
-    <VkFrame cfg={sportsCfg}>
-      <VkNotFound cfg={sportsCfg} />
-    </VkFrame>
-  );
+  return <SportsNotFoundPage />;
 }

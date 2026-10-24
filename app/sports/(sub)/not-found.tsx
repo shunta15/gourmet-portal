@@ -1,6 +1,10 @@
-import PortalNotFound from "@/components/portal/pages/not-found";
 import { notFoundMetadata } from "@/components/portal/pages/data";
+import { SportsNotFoundPage } from "@/components/portal/sports/pages";
 
-// 総合サイトのセグメント内の 404（レイアウトの CSS・フッターの内側で出す）。検索エンジンには載せない
+// 種類・エリア・利用シーンのページ(app/sports/(sub)/(portal)/ の下。総合サイトの外枠)の 404。
+// 存在しない URL(/sports/zzz など)がここに来ても、スポーツの見本の 404 を出す(外枠は InnerFrame)。
+// (portal) のレイアウトの外に置いているので、総合サイトのヘッダー・フッターは出ない。検索エンジンには載せない
 export const metadata = notFoundMetadata();
-export default PortalNotFound;
+export default function NotFound() {
+  return <SportsNotFoundPage />;
+}
