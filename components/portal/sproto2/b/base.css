@@ -1,0 +1,82 @@
+/* スポーツ試作 B 案・見本2(店舗紹介・特集)の共通 CSS。接頭辞 s2b-。
+   見本の px は calc(N * var(--u)) でそのまま置く。--u = ページ幅 ÷ 見本の画像の幅(店舗紹介 = 1024・特集 = 937。各ページの CSS で決める)。
+   .s2b-box が 1920px で止めて中央寄せ(それより広い画面は左右が余白)。
+   デスクトップ = 容器の幅 760px 以上 / スマホ = 760px 未満(1 列に組み替え。px で組む)。 */
+.s2b-root {
+  --s2b-blue: #6996c8;
+  --s2b-ink: #1f1f24;
+  --s2b-ffj: var(--s2b-jp), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --s2b-ffs: var(--s2b-sf), "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  --s2b-ffe: var(--s2b-en), "Cormorant Garamond", "Times New Roman", serif;
+  background: #fff;
+  color: var(--s2b-ink);
+  font-family: var(--s2b-ffj);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  min-height: 100vh;
+}
+/* グルメの共通ヘッダー・カーソル等は出さない(ステイ・ペットの試作と同じ作法) */
+body:has(.s2b-root) > nav.nav,
+body:has(.s2b-root) .side-label,
+body:has(.s2b-root) .cursor-dot,
+body:has(.s2b-root) .cursor-ring,
+body:has(.s2b-root) .progress-bar { display: none !important; }
+body:has(.s2b-root) { cursor: auto; }
+.s2b-root *, .s2b-root *::before, .s2b-root *::after { box-sizing: border-box; }
+.s2b-root a { color: inherit; text-decoration: none; }
+.s2b-root ul, .s2b-root ol { list-style: none; margin: 0; padding: 0; }
+.s2b-root h1, .s2b-root h2, .s2b-root p, .s2b-root dl, .s2b-root dd, .s2b-root dt { margin: 0; }
+.s2b-root img { display: block; max-width: none; }
+.s2b-root i, .s2b-root em { font-style: normal; }
+.s2b-box { container-type: inline-size; max-width: 1920px; margin: 0 auto; background: #fff; }
+.s2b-ph { width: 100%; height: 100%; object-fit: cover; }
+.s2b-ci { width: 1em; height: 1em; vertical-align: -0.12em; flex: none; }
+.s2b-arrow path { vector-effect: non-scaling-stroke; stroke-width: 1; }
+.s2b-arrow { display: block; width: calc(66 * var(--u)); height: calc(7.5 * var(--u)); color: #444; }
+
+/* ---------- ヘッダー(デスクトップ) ---------- */
+.s2b-hd { position: relative; z-index: 5; }
+.s2b-hd > * { position: absolute; }
+.s2b-hd-logo img { height: auto; }
+.s2b-hd-search svg { width: 100%; height: 100%; }
+/* 店舗紹介の見本(明朝のロゴ・青い丸) */
+.s2b-hd--shop { height: calc(45 * var(--u)); background: #fefefe; border-bottom: 1px solid #e3e8ef; }
+.s2b-hd--shop .s2b-hd-logo { left: calc(48 * var(--u)); top: calc(4 * var(--u)); width: calc(356 * var(--u)); }
+.s2b-hd--shop .s2b-hd-logo img { width: 100%; }
+.s2b-hd--shop .s2b-hd-nav { left: calc(587 * var(--u)); top: 0; height: calc(44 * var(--u)); display: flex; align-items: center; font-family: var(--s2b-ffs); font-size: calc(10.5 * var(--u)); letter-spacing: 0.1em; color: #222; font-weight: 500; }
+.s2b-hd--shop .s2b-hd-item { display: flex; align-items: center; }
+.s2b-hd--shop .s2b-hd-item i { margin: 0 calc(19 * var(--u)); color: #666; font-weight: 400; letter-spacing: 0; }
+.s2b-hd--shop .s2b-hd-nav a { white-space: nowrap; line-height: 1; }
+.s2b-hd--shop .s2b-hd-search { left: calc(934 * var(--u)); top: calc(3 * var(--u)); width: calc(36 * var(--u)); height: calc(36 * var(--u)); border-radius: 50%; background: #6e9ac4; color: #fff; display: grid; place-items: center; }
+.s2b-hd--shop .s2b-hd-search svg { width: 56%; height: 56%; }
+/* 特集の見本(ゴシックのロゴ・一言・虫眼鏡) */
+.s2b-hd--special { height: calc(56 * var(--u)); background: #fdfdfd; }
+.s2b-hd--special .s2b-hd-logo { left: calc(44 * var(--u)); top: calc(8 * var(--u)); width: calc(222 * var(--u)); }
+.s2b-hd--special .s2b-hd-logo img { width: 100%; }
+.s2b-hd--special .s2b-hd-tag { left: calc(275 * var(--u)); top: calc(13 * var(--u)); height: calc(29 * var(--u)); padding-left: calc(14 * var(--u)); border-left: 1px solid #bbb; color: #444; font-size: calc(10.5 * var(--u)); line-height: 1.45; }
+.s2b-hd--special .s2b-hd-nav { inset: 0; pointer-events: none; font-size: calc(11.2 * var(--u)); font-weight: 500; color: #222; }
+.s2b-hd--special .s2b-hd-item { position: absolute; top: calc(21 * var(--u)); pointer-events: auto; }
+.s2b-hd--special .s2b-hd-item:nth-child(1) { left: calc(530 * var(--u)); }
+.s2b-hd--special .s2b-hd-item:nth-child(2) { left: calc(605 * var(--u)); }
+.s2b-hd--special .s2b-hd-item:nth-child(3) { left: calc(705 * var(--u)); }
+.s2b-hd--special .s2b-hd-item:nth-child(4) { left: calc(794 * var(--u)); }
+.s2b-hd--special .s2b-hd-nav a { display: block; line-height: 1.2; white-space: nowrap; letter-spacing: 0.02em; }
+.s2b-hd--special .s2b-hd-nav a.is-cur { font-weight: 700; box-shadow: 0 calc(5 * var(--u)) 0 -0.0px #222; border-bottom: 0; padding-bottom: calc(5 * var(--u)); }
+.s2b-hd--special .s2b-hd-search { left: calc(862 * var(--u)); top: calc(16 * var(--u)); width: calc(23 * var(--u)); height: calc(23 * var(--u)); color: #5b8bc0; }
+
+/* ---------- スマホ(共通) ---------- */
+@container (max-width: 759px) {
+  .s2b-hd { height: auto !important; padding: 8px 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+  .s2b-hd > *, .s2b-hd--special .s2b-hd-item { position: static !important; }
+  .s2b-hd--shop .s2b-hd-logo, .s2b-hd--special .s2b-hd-logo { width: 210px; }
+  .s2b-hd--special .s2b-hd-logo { width: 180px; }
+  .s2b-hd--special .s2b-hd-tag { display: none; }
+  .s2b-hd-search { order: 2; margin-left: auto; width: 34px !important; height: 34px !important; }
+  .s2b-hd--special .s2b-hd-search { padding: 5px; }
+  .s2b-hd-nav { order: 3; width: 100%; height: auto !important; display: flex !important; justify-content: space-between; margin-top: 2px; border-top: 1px solid #e9edf2; font-size: 12.5px !important; pointer-events: auto !important; }
+  .s2b-hd--shop .s2b-hd-nav { padding-top: 8px; letter-spacing: 0.04em; }
+  .s2b-hd--shop .s2b-hd-item i { margin: 0 8px; }
+  .s2b-hd--special .s2b-hd-nav { padding-top: 6px; }
+  .s2b-hd--special .s2b-hd-nav a.is-cur { padding-bottom: 3px; box-shadow: 0 2px 0 #222; }
+  .s2b-arrow { width: 54px; height: 6px; }
+}
