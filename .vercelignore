@@ -30,8 +30,8 @@ supabase/.temp/
 #   （読んでいるコードは、コメントと、robots.ts の「/agent-teams/ を検索に載せない」という URL の文字列だけ）。
 # ・package.json の build / postbuild（scripts/check-client-bundle.sh は .next/static だけを見る）にも使われない。
 # ・.ts / .tsx のファイルが無いので、next build の型検査の範囲（tsconfig の include）も変わらない。
-# 毎日の自動処理（automation/local-pipeline.sh）は手元の main で動く。ここで外すのは Vercel に送るコピーだけで、
-# 手元・git のファイルは変わらない（パイプラインが読むファイルは消えない）。
+# （毎日の自動処理 automation/local-pipeline.sh は 2026-10-24 に廃止・削除した。）ここで外すのは Vercel に送るコピーだけで、
+# 手元・git のファイルは変わらない。
 /agent-teams/
 /proto-portal/
 /.claude/
