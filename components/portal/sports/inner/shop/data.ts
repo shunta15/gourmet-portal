@@ -45,6 +45,24 @@ export function fmtHours(s: string): string[] {
     .filter(Boolean);
 }
 
+/**
+ * 営業時間の終わりの時刻が、店の案内とGoogle マップで食い違っている店(特集「夜まで開いている・土曜に行けるスポーツの店」に同じ内容)。
+ * 食い違う方を選ばず、営業時間の欄の最後に「電話で確認」の一言を足す(行数が 3 行の店は最後の行の後ろに続ける。枠の大きさは変えない)。
+ */
+const HOURS_NOTE: Record<string, string> = {
+  sp0002: "※電話で確認",
+  sp0003: "※終わりの時刻は電話で確認",
+};
+
+/** 店の営業時間の行(fmtHours に、食い違いのある店は「電話で確認」の一言を足す) */
+export function shopHours(id: string, raw: string): string[] {
+  const lines = fmtHours(raw);
+  const note = HOURS_NOTE[id];
+  if (!note || lines.length === 0) return lines;
+  if (lines.length >= 3) return [...lines.slice(0, -1), `${lines[lines.length - 1]} ${note}`];
+  return [...lines, note];
+}
+
 const KICKER: Record<string, string> = { gym: "GYM & FITNESS", "yoga-pilates": "YOGA & PILATES", "martial-arts": "MARTIAL ARTS", dance: "DANCE", golf: "GOLF", "facility-goods": "FACILITY & GOODS" };
 
 /** 文(「。」で終わる単位)のうち点検を通るものを、max 字を超えない範囲で先頭から集める(1 文は必ず入れる) */
@@ -101,7 +119,7 @@ export async function loadShopView(id: string): Promise<ShopView> {
     copy,
     kindName,
     area: `${prefName(place.pref)}${place.cityName ?? ""}`,
-    hours: fmtHours(place.hours ?? ""),
+    hours: shopHours(place.id, place.hours ?? ""),
     photos,
     official: /^https?:\/\//.test(web) ? web : null,
     rel: rel.slice(0, 3),

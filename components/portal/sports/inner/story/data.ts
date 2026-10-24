@@ -4,7 +4,7 @@ import { loadSpecials, specialBySlug, type Special } from "@/components/portal/v
 import { loadArticle, type ArticleView } from "@/components/portal/vkit/article/articleData";
 import { sportsCfg } from "@/components/portal/vkit/configs";
 import { SPL } from "../../links";
-import { fmtHours } from "../shop/data";
+import { shopHours } from "../shop/data";
 
 /**
  * 特集の記事(/sports/special/{slug})と店の特集記事(/sports/article/{店 ID})を、見本2の部品で描くための形(サーバー専用)。
@@ -148,7 +148,7 @@ export async function loadArticleStory(id: string): Promise<StoryView | null> {
       extra: s.extra?.map((e) => ph(e)!).filter(Boolean),
     })),
     closing: "",
-    info: { area: sh.area, kind: sh.kindName, hours: fmtHours(sh.hours), official: sh.officialUrl, shopHref: SPL.shop(sh.id), shopName: sh.name },
+    info: { area: sh.area, kind: sh.kindName, hours: shopHours(sh.id, sh.hours), official: sh.officialUrl, shopHref: SPL.shop(sh.id), shopName: sh.name },
     stores: [],
     related: v.related.map((r) => ({ href: SPL.article(r.id), title: r.title, tag: "店の特集", photo: ph(r.photo) })),
     relatedHead: { en: "RELATED ARTICLES", ja: "あわせて読む", all: { label: "VIEW ALL", href: SPL.shops } },
