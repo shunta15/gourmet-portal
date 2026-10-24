@@ -1,0 +1,22 @@
+{
+  "name": "パイクとそら",
+  "address": "兵庫県芦屋市東芦屋町５−８",
+  "lat": 34.7371534,
+  "lng": 135.3016161,
+  "category": "ベーカリー",
+  "hours": {
+    "月": "定休日",
+    "火": "10:30–19:00",
+    "水": "10:30–19:00",
+    "木": "10:30–19:00",
+    "金": "10:30–19:00",
+    "土": "10:30–19:00",
+    "日": "10:30–19:00"
+  },
+  "phone": "0797-61-5835",
+  "website": "https://www.instagram.com/paikutosora?igsh=MWJ5Zml1YXVtcDhudg==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=15947047120727136506",
+  "fetchedAt": "2026-10-23T18:35:52.881Z"
+}

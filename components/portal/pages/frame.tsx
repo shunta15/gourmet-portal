@@ -61,7 +61,8 @@ export function PageFrame({
   crumbs: Crumb[];
   kicker: string;
   heading: string;
-  lead: string;
+  /** 導入の文。無い（空）ときは出さない */
+  lead?: string;
   /** 掲載数。渡さないとき（視聴ページなど）は「掲載中」と件数の行を出さない */
   count?: number;
   /** 件数の単位（既定は「件」） */
@@ -81,7 +82,7 @@ export function PageFrame({
           <Breadcrumbs items={crumbs} />
           <p className="mp-kicker">{kicker}</p>
           <h1 className="mp-pg-title">{heading}</h1>
-          <p className="mp-pg-lead">{lead}</p>
+          {lead && <p className="mp-pg-lead">{lead}</p>}
           {count !== undefined && (
             <div className="mp-pg-state">
               <p className="mp-state"><i aria-hidden="true" />{count > 0 ? "掲載中" : "掲載準備中"}</p>

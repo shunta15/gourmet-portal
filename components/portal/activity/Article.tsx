@@ -20,14 +20,14 @@ const SCENES: Scene[] = [
   { k: "couple", t: "初心者歓迎の体験", slug: "beginner", tag: "初心者歓迎", red: true, lines: (n) => ["はじめてでも参加できる体験を", `${n}件、掲載しています。`] },
   { k: "family", t: "子連れで楽しむ", slug: "with-children", tag: "子連れ", red: true, lines: (n) => ["子どもも参加できる体験を", `${n}件、掲載しています。`] },
   { k: "solo", t: "手ぶらでOKの体験", slug: "hands-free", tag: "手ぶらでOK", red: true, lines: (n) => ["手ぶらで参加できる体験を", `${n}件、掲載しています。`] },
-  { k: "rain", t: "雨の日に楽しむ", slug: "rainy-day", tag: "雨の日", red: false, lines: (n) => ["雨の日も行えると案内された", `体験を${n}件、掲載しています。`] },
+  { k: "rain", t: "雨の日に楽しむ", slug: "rainy-day", tag: "雨の日", red: false, lines: (n) => ["雨の日も行える", `体験を${n}件、掲載しています。`] },
 ];
 type Genre = { k: string; img: string; t: string; to: string; lines: (n: number) => [string, string]; count: (s: AShop) => boolean };
 const GENRES: Genre[] = [
   { k: "water", img: "ar-genre-water.webp", t: "海・川の体験", to: searchUrl({ kind: ["sea-river"] }), count: (s) => s.kind === "sea-river", lines: () => ["ダイビング・川下り・釣りなど、", "水辺で楽しむ体験。"] },
   { k: "mountain", img: "ar-genre-mountain.webp", t: "山・空の体験", to: searchUrl({ kind: ["mountain-sky"] }), count: (s) => s.kind === "mountain-sky", lines: () => ["森のアスレチック・バギー・乗馬など、", "外で体を動かす体験。"] },
   { k: "craft", img: "ar-genre-craft.webp", t: "ものづくり体験", to: searchUrl({ kind: ["craft"] }), count: (s) => s.kind === "craft", lines: () => ["レザークラフト・レジンアートなど、", "手でつくる体験。"] },
-  { k: "indoor", img: "top-area-tokai.webp", t: "駐車場のある体験", to: searchUrl({ scene: ["parking"] }), count: (s) => s.tags.includes("駐車場あり"), lines: (n) => ["駐車場があると案内された体験を", `${n}件、掲載しています。`] },
+  { k: "indoor", img: "top-area-tokai.webp", t: "駐車場のある体験", to: searchUrl({ scene: ["parking"] }), count: (s) => s.tags.includes("駐車場あり"), lines: (n) => ["駐車場がある体験を", `${n}件、掲載しています。`] },
 ];
 const GUIDE = ["服装・持ち物は?", "どんな準備が必要?", "申し込みの流れは?", "安全に楽しむためのポイント"];
 

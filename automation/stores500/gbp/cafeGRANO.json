@@ -1,0 +1,22 @@
+{
+  "name": "cafe GRANO",
+  "address": "青森県八戸市妙大開８３−５",
+  "lat": 40.4807153,
+  "lng": 141.5668385,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "定休日",
+    "火": "10:00–15:30",
+    "水": "10:00–15:30",
+    "木": "10:00–15:30",
+    "金": "10:00–15:30",
+    "土": "10:00–15:30",
+    "日": "10:00–15:30"
+  },
+  "phone": "050-8883-0996",
+  "website": "https://www.instagram.com/cafegrano?igsh=MTFsdmZhNTJrbXM1aA==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=17884293533299558846",
+  "fetchedAt": "2026-10-23T17:58:07.770Z"
+}

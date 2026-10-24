@@ -1,7 +1,7 @@
 # ショート動画の取り込み（TikTok）
 
 TikTok に投稿した動画を、マチノワの「動画で探す」（`/videos`）に載せる手順です。
-動画ファイル（`public/videos/nazatu/*.mp4`）は `lib/regions.ts` の `SHORT_VIDEOS` から自動で入ります（ここでの作業は不要）。
+動画ファイル（`public/videos/nazatu/*.mp4`）は `lib/regions.ts` の `SHORT_VIDEOS` から、アクティビティの動画 6 本は `lib/videos/activity.json` から自動で入ります（ここでの作業は不要）。
 
 ## 手順
 

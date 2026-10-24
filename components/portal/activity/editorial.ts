@@ -2,10 +2,12 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { vkLineOk } from "@/components/portal/vkit/common/live";
+import { activityVideoRows } from "@/lib/videos/activity";
 
 /**
- * 季節の特集・読みもの・はじめての方へのガイド(lib/activity/editorial.json)と、写真から作った動画(lib/activity/videos.json)の読み込み(サーバー専用)。
- * 2 つのファイルは別の担当が作る。ファイルが無い・壊れているあいだは、空として扱う(ビルドは落ちない。画面は、空の欄の中身を出さない)。
+ * 季節の特集・読みもの・はじめての方へのガイド(lib/activity/editorial.json)と、写真から作った動画(lib/videos/activity.json)の読み込み(サーバー専用)。
+ * editorial.json は別の担当が作る。ファイルが無い・壊れているあいだは、空として扱う(ビルドは落ちない。画面は、空の欄の中身を出さない)。
+ * 動画のデータは /videos(総合の動画ページ)と同じ 1 か所(lib/videos/activity.json。読み込みは lib/videos/activity.ts)。この欄用に別のデータは持たない。
  * 文は 1 文ずつ vkLineOk(料金・評価・おすすめ・人気・〇選・効き目をうたう語・体験した言い回しの点検)に通し、通らない文はその 1 文だけ落とす(言い換えない)。
  * 店の ID は、いま載っている店(保留の店を除く)だけ残す。
  *
@@ -13,8 +15,7 @@ import { vkLineOk } from "@/components/portal/vkit/common/live";
  *  { seasons: [{ id: spring|summer|autumn|winter, title, lead, date, imageFile, sections: [{ heading, text, storeIds }] }],
  *    magazine: [{ id, tag: コラム|エリア特集|店の紹介, title, lead, date, imageFile, sections }],
  *    guide: { title, lead, items: [{ q, a, storeNotes: [{ storeId, text }] }] } }
- * videos.json の形:
- *  [{ id, storeId, title, durationSec, src: /_portal/activity/videos/{id}.mp4, poster: /_portal/activity/videos/{id}.webp }]
+ * 動画(lib/videos/activity.json)の形は lib/videos/activity.ts の冒頭を参照。
  */
 
 export type EdSection = { heading: string; text: string; storeIds: string[] };
@@ -74,13 +75,6 @@ async function readEditorialJson(): Promise<unknown> {
     return null;
   }
 }
-async function readVideosJson(): Promise<unknown> {
-  try {
-    return JSON.parse(await readFile(path.join(process.cwd(), "lib/activity/videos.json"), "utf8"));
-  } catch {
-    return null;
-  }
-}
 
 const DEF_MAG_IMG = ["ar-mag-1.webp", "ar-mag-2.webp", "ar-mag-3.webp"];
 
@@ -133,22 +127,12 @@ export async function loadEditorial(okIds: string[]): Promise<Editorial> {
   return { seasons, magazine, guide };
 }
 
-/** 動画(写真から作った短い動画)。店の ID は載っている店だけ。ファイルが無いあいだは空 */
+/** 動画(写真から作った短い動画)。/videos と同じデータ(lib/videos/activity.json)。店の ID は載っている店だけ。並びはデータの並び */
 export async function loadVideos(okIds: string[]): Promise<Video[]> {
-  const raw = await readVideosJson();
-  if (!Array.isArray(raw)) return [];
   const ok = new Set(okIds);
-  const out: Video[] = [];
-  for (const x of raw as Array<Record<string, unknown>>) {
-    const id = str(x?.id);
-    const storeId = str(x?.storeId);
-    const src = str(x?.src);
-    const poster = str(x?.poster);
-    const sec = Number(x?.durationSec);
-    if (!/^[A-Za-z0-9][A-Za-z0-9_-]*$/.test(id) || !ok.has(storeId) || !src.startsWith("/_portal/activity/videos/") || !poster.startsWith("/_portal/activity/videos/") || !(sec > 0)) continue;
-    out.push({ id, storeId, title: str(x.title), durationSec: Math.round(sec), src, poster });
-  }
-  return out;
+  return activityVideoRows()
+    .filter((r) => ok.has(r.storeId))
+    .map((r) => ({ id: r.id, storeId: r.storeId, title: r.title, durationSec: Math.round(r.durationSec), src: r.src, poster: r.poster }));
 }
 
 export function durationLabel(sec: number): string {

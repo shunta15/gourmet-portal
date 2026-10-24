@@ -34,6 +34,16 @@ export const HIDDEN_STORES: readonly HiddenStore[] = [
   { id: "r277", name: "OWL(営業時間状況で変わります)", featureIds: [] },
   { id: "r330", name: "Nulla", featureIds: ["ヌーラNulla"] },
   { id: "r368", name: "「野菜が主役のレストラン」やさいやVege TABLEベジテーブル", featureIds: ["「野菜が主役のレストラン」やさいやVegeTABLEベジテーブル"] },
+  // 2026-10-24: 店ページを足さなかった 7 店（lib/portal/noren/onePage.ts の注記と同じ）。店のデータは記事の取り込みで作られているが、
+  // 営業時間か実写の写真が無い（r553・r557・r558）、写真がすべて表示禁止（r578・r599・r601・r602）ので、写真なしの店ページ・一覧のカードを出さない。
+  // 記事は /feature/<記事 ID> のまま残す（featureIds は空）。写真が付いたら、この行を消して onePage.ts の表に足す。
+  { id: "r553", name: "コミュニティスペースほぼのら", featureIds: [] },
+  { id: "r557", name: "ナナンテア nananthea", featureIds: [] },
+  { id: "r558", name: "炭焼き日本料理三ツ井", featureIds: [] },
+  { id: "r578", name: "牛久春木屋", featureIds: [] },
+  { id: "r599", name: "クゥーしんぼう", featureIds: [] },
+  { id: "r601", name: "かいしんのいちげき！", featureIds: [] },
+  { id: "r602", name: "本格焼肉レストラン 家族亭", featureIds: [] },
 ];
 
 export const HIDDEN_STORE_IDS: ReadonlySet<string> = new Set(HIDDEN_STORES.map((s) => s.id));

@@ -44,7 +44,7 @@ export function vkArticleRoute(cfg: VkConfig) {
         vertical: cfg.key,
         // 特集のある店は、特集の題名と説明(店の特集記事。ほかの業種の特集ページと同じ形)
         title: v.feature ? `${v.feature.title}｜${b.brand}` : `${shop.name}の紹介記事｜${where}${shop.kindName || b.name}｜${b.brand}`,
-        description: (v.feature && v.feature.summary) || vkLine(v.headline) || `${shop.name}の紹介記事。所在地や営業時間など、公式サイトなどで確認できた情報をまとめています。`,
+        description: (v.feature && v.feature.summary) || vkLine(v.headline) || `${shop.name}の紹介記事。所在地や営業時間などの情報をまとめています。`,
         path: `${b.path}/article/${shop.id}`,
         count: await countPlaces(cfg.key),
         ...(v.hero ? { image: { url: v.hero.src, width: v.hero.w, height: v.hero.h, alt: `${shop.name}の写真` } } : {}),

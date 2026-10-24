@@ -6,4 +6,4 @@ import { Noto_Sans_JP, Shippori_Mincho, Zen_Kurenaido, Noto_Serif } from "next/f
 export const jp = Noto_Sans_JP({ weight: ["400", "500", "700"], variable: "--pt-jp", display: "swap", preload: false });
 export const min = Shippori_Mincho({ weight: ["400", "500", "600", "700"], variable: "--pt-min", display: "swap", preload: false });
 export const hand = Zen_Kurenaido({ weight: "400", variable: "--pt-hand", display: "swap", preload: false });
-export const en = Noto_Serif({ weight: ["400", "500", "600"], subsets: ["latin"], variable: "--pt-en", display: "swap", preload: false });
+export const en = Noto_Serif({ weight: "variable", subsets: ["latin"], variable: "--pt-en", display: "swap", preload: false });

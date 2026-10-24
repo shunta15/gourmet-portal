@@ -1,8 +1,12 @@
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
+import { isPortalLive } from "@/lib/portal/launch";
 import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 // 新しい見た目の部品は、描画するとき（RELEASE_PERIPHERY が true）だけ読み込む（false のとき JS は読まない。CSS はこのページの入口にだけ載り、ほかのページには載らない）
 const ContactView = dynamic(() => import("@/components/portal/periphery/ContactView"));
+
+// 総合サイトの共通の枠で出す版（公開スイッチ ON のとき。業種に寄らない共通ページ。components/portal/pages/common-pages.tsx）
+const CommonContact = dynamic(() => import("@/components/portal/pages/common-pages").then((m) => m.CommonContact));
 
 export const metadata = {
   title: "お問い合わせ | マチノワ",
@@ -11,6 +15,7 @@ export const metadata = {
 };
 
 export default function ContactPage() {
+  if (isPortalLive()) return <CommonContact />;
   // 周りのページの新しい見た目（RELEASE_PERIPHERY。/feature と同じ世界）。字・リンク先は同じ
   if (RELEASE_PERIPHERY) return <ContactView />;
   return (

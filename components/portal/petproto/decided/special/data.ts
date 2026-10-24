@@ -1,7 +1,7 @@
 import raw from "@/lib/specials/pet.json";
 
 /**
- * ペットの特集記事(利用シーン記事・業種の特集記事)の読み込み。中身は lib/specials/pet.json(オーナー承認済みの 3 本。ここでは書き換えない)。
+ * ペットの特集記事(利用シーン記事・業種の特集記事)の読み込み。中身は lib/specials/pet.json(オーナー承認済みの 3 本 + 2026-10-24 追記の預かりの 1 本。既存の 3 本はここでは書き換えない)。
  * 文字は JSON のとおりに出す。節の storeIds の店は、画面で店舗紹介ページ /pet/shop/{id} へのリンクにする。
  */
 export type SpecialSection = { heading: string; text: string; storeIds: string[] };

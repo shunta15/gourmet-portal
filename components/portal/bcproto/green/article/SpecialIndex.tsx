@@ -25,7 +25,7 @@ export default function SpecialIndex() {
           </span>
           <MaskLines as="h1" className="ar-h1" lines={["ボディケアの", "特集記事"]} delay={120} />
           <p className="ar-lead" data-rv="fade" style={{ ["--d" as string]: "560ms" } as React.CSSProperties}>
-            ボディケアの店を探すときに役立つ記事です。書いてあるのは、法令や国の資料で確かめたことと、マチノワに載っている店のデータにある事実だけです。
+            ボディケアの店を探すときに役立つ記事です。書いてあるのは、法律で決まっていることと、マチノワに載っている店のデータにある事実だけです。
           </p>
           <div className="ar-note gr-hand ar-idx-note">
             <Write lines={["ゆっくり、", "読んでみてください。"]} delay={800} />

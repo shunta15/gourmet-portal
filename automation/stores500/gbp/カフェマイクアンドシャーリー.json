@@ -1,0 +1,22 @@
+{
+  "name": "カフェ マイク アンド シャーリー",
+  "address": "広島県三次市上川立町２２７１−２",
+  "lat": 34.7258148,
+  "lng": 132.7848983,
+  "category": "イギリス料理店",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "11:30–17:00",
+    "木": "11:30–17:00",
+    "金": "11:30–17:00",
+    "土": "11:30–17:00",
+    "日": "定休日"
+  },
+  "phone": "070-1874-8939",
+  "website": "https://www.instagram.com/cafemikeandshirley?igsh=MTkycjBlMWs0cHVxMg==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=15681036869257149123",
+  "fetchedAt": "2026-10-23T18:38:13.733Z"
+}

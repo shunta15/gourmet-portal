@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Shell from "../../common/Shell";
-import { Reveal, MaskLines, Write, Heart, FillHeading, Marquee, PawTrail, Flee } from "../../common/Motion";
+import { Reveal, MaskLines, Write, FillHeading, Marquee, PawTrail, Flee } from "../../common/Motion";
 import { IconSearch, IconArrow, IconChevron, Paw } from "../../common/Icons";
-import { IMG_TOP as T, ptLinks } from "../../common/site";
-import { dotDate, interleave, kindsWithShops, loadPetArticles, loadPetShops, prefsWithShops, scenesWithShops, visualLen, type LiveArticle, type LiveShop } from "../../common/live";
+import { IMG_ARTICLE, IMG_TOP as T, ptLinks } from "../../common/site";
+import { dotDate, interleave, kindsWithShops, loadPetShops, prefsWithShops, scenesWithShops, visualLen, type LiveShop } from "../../common/live";
+import { PET_SPECIALS, type PetSpecial } from "../../special/data";
 import { CatIcon, PetMark, Leaf } from "../icons";
 import HeroFx from "../HeroFx";
 import "../top.css";
@@ -13,7 +14,9 @@ import "./live.css";
 
 // ペットの最初のページ(本番 /pet。決定デザイン)。見本の再現(../TopPage.tsx)と同じ骨格・動きで、中身を実在の店(getPlaces("pet"))に置き換えてある。
 // 見本の架空の店名・日付・記事・「おすすめ」「人気」は出さない。実データが無い欄は出さない(店が 0 件でも壊れない)。
-// 飾りの写真(ヒーロー・カテゴリの札・エリアの丸)は見本の素材(AI 生成・CC0)のまま。店の写真は店の実物の写真だけ。
+// 飾りの写真(ヒーロー・カテゴリの札・エリアの丸・特集記事の札)は見本の素材(AI 生成・CC0・オーナー提供)のまま。店の写真は店の実物の写真だけ。
+// 「Feature 特集記事」は店 1 軒の紹介ではなく、ペットの特集記事(lib/specials/pet.json。利用シーン・ペット業界の記事)の 4 枚(2026-10-24 オーナー指示)。
+// 保存されないお気に入りのハートは店の札から外した(2026-10-24 オーナー指示)。
 
 const L = ptLinks("live");
 const d = (ms: number) => ({ ["--d" as string]: `${ms}ms` });
@@ -146,7 +149,15 @@ function Category({ kinds }: { kinds: Array<{ slug: string; name: string }> }) {
   );
 }
 
-/* ---------- Feature: 実在の店の特集記事・紹介記事(写真のある店。特集記事のある店が先) ---------- */
+/* ---------- Feature: ペットの特集記事(利用シーン記事・ペット業界の記事。lib/specials/pet.json。店 1 軒の紹介は並べない) ---------- */
+
+/** 特集記事の札の飾り(写真・札の文字)。写真は店の写真ではなく、決定デザインの飾りの素材(article/ の cat-*)。札の題は長い題だけ短くし、2 行に収まる題は切れ目を決める(1 文字だけ次の行に落ちないように) */
+const FEAT_CARD: Record<string, { img: string; w: number; h: number; tag: string; title?: string; lines?: string[] }> = {
+  difference: { img: "cat-hospital", w: 462, h: 237, tag: "ペット業界", title: "ペットの店の種類とちがい" },
+  choose: { img: "cat-grooming", w: 462, h: 237, tag: "利用シーン", lines: ["ペットの店を選ぶときに", "見るところ"] },
+  "meet-animals": { img: "cat-cafe", w: 465, h: 237, tag: "利用シーン" },
+  boarding: { img: "cat-hotel", w: 456, h: 237, tag: "利用シーン", lines: ["ペットを預けるときに", "確かめること"] },
+};
 
 const FEAT_SLOT = [
   { x: 45, w: 212 },
@@ -155,7 +166,7 @@ const FEAT_SLOT = [
   { x: 704, w: 200 },
 ];
 
-function Feature({ items }: { items: LiveArticle[] }) {
+function Feature({ items }: { items: PetSpecial[] }) {
   return (
     <div className="tp-band tp-band--feat pt-bgshift" style={{ ["--bg-to" as string]: "#f8f7f5", ["--bg-from" as string]: "#efe5d8" }}>
       <section className="tp-sec tp-feat" aria-labelledby="tp-feat-h">
@@ -167,12 +178,12 @@ function Feature({ items }: { items: LiveArticle[] }) {
             <FillHeading as="span">特集記事</FillHeading>
           </span>
           <p className="tp-feat-desc io">
-            掲載しているお店を、一軒ずつ記事で紹介します。
+            利用シーンやペットのお店のことを、特集記事にまとめています。
             <br />
-            メニューや設備、行き方など、確認できた情報をまとめています。
+            お店の種類、選ぶときの見かた、ふれあい、預かりなどを整理しました。
           </p>
-          <Link className="pt-more tp-more pt-press pt-magnet io" href={L.shops} data-magnet="0.5" data-magnet-r="60">
-            すべての店舗紹介を見る
+          <Link className="pt-more tp-more pt-press pt-magnet io" href={L.specials} data-magnet="0.5" data-magnet-r="60">
+            すべての特集を見る
             <IconArrow />
           </Link>
         </div>
@@ -180,22 +191,31 @@ function Feature({ items }: { items: LiveArticle[] }) {
         <ul className="tp-feats pt-skew" data-skew="0.4" data-io-group>
           {items.map((a, i) => {
             const slot = FEAT_SLOT[i];
-            const ph = a.photo;
-            const kindName = a.shop.kindName;
+            const ui = FEAT_CARD[a.slug];
+            const title = ui.title ?? a.title;
             return (
-              <li key={a.id} className="tp-feat-li io" style={{ ["--x" as string]: slot.x - 45, ["--w" as string]: slot.w, ...d(i * 110) }}>
-                <Link href={L.shop(a.id)} className="tp-fcard pt-hov tp-hv pt-tilt" data-tilt="5">
+              <li key={a.slug} className="tp-feat-li io" style={{ ["--x" as string]: slot.x - 45, ["--w" as string]: slot.w, ...d(i * 110) }}>
+                <Link href={L.special(a.slug)} prefetch={false} className="tp-fcard pt-hov tp-hv pt-tilt" data-tilt="5">
                   <span className="tp-fcard-in tp-up">
                     <span className="tp-fcard-ph pt-zoom pt-wipe tp-sheen" data-wipe={i % 2 ? "right" : "left"} style={d(i * 110 + 260)}>
-                      <img src={ph.src} width={ph.w} height={ph.h} alt="" loading="lazy" decoding="async" />
+                      <img src={`${IMG_ARTICLE}/${ui.img}.webp`} width={ui.w} height={ui.h} alt="" loading="lazy" decoding="async" />
                     </span>
-                    {kindName ? (
-                      <span className="tp-fcard-tag" style={{ ["--tw" as string]: Math.round(21 + 7.3 * visualLen(kindName)) }}>
-                        {kindName}
-                      </span>
-                    ) : null}
-                    <span className="tp-fcard-t tpl-clamp2">{a.title}</span>
-                    {a.date ? <time className="tp-fcard-d" dateTime={a.date}>確認 {dotDate(a.date)}</time> : null}
+                    <span className="tp-fcard-tag" style={{ ["--tw" as string]: Math.round(21 + 7.3 * visualLen(ui.tag)) }}>
+                      {ui.tag}
+                    </span>
+                    <span className="tp-fcard-t tpl-clamp2">
+                      {ui.lines
+                        ? ui.lines.map((ln, k) => (
+                            <span key={ln}>
+                              {k > 0 ? <br /> : null}
+                              {ln}
+                            </span>
+                          ))
+                        : title}
+                    </span>
+                    <time className="tp-fcard-d" dateTime={a.date}>
+                      {dotDate(a.date)}
+                    </time>
                     <i className="pt-tilt-glare" aria-hidden="true" />
                   </span>
                 </Link>
@@ -249,7 +269,6 @@ function Pickup({ shops, kindNames }: { shops: LiveShop[]; kindNames: string[] }
                     <i className="pt-tilt-glare" aria-hidden="true" />
                   </span>
                 </Link>
-                <Heart className="tp-pheart" label={`${s.name}をお気に入りに追加`} size={11} />
                 <h3 className={`tp-pcard-n ${isLatin(s.name) ? "tp-pcard-n--en" : ""}`}>
                   <Link href={L.shop(s.id)}>{s.name}</Link>
                 </h3>
@@ -401,8 +420,8 @@ export default async function PetTop({ shops: given }: { shops?: LiveShop[] } = 
   const shops = given ?? (await loadPetShops());
   const kinds = kindsWithShops(shops);
   const withPhoto = shops.filter((s) => s.photo);
-  const feats = (await loadPetArticles(shops)).slice(0, FEAT_SLOT.length);
-  const picks = take(interleave(withPhoto), feats.map((a) => a.shop), PICK_SLOT.length);
+  const feats = PET_SPECIALS.filter((s) => FEAT_CARD[s.slug]).slice(0, FEAT_SLOT.length);
+  const picks = take(interleave(withPhoto), [], PICK_SLOT.length);
   const scenes = scenesWithShops(shops);
   const prefs = prefsWithShops(shops);
 
