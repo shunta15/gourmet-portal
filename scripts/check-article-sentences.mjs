@@ -9,7 +9,7 @@
 //   → 生成の時点で、同じ型を機械的に見つけて、公開前に書き直させる／その文を落とす。
 //
 // 型（thin_dropped_sentences の実例に合わせた）:
-//   R  他サイト（食べログ・Google の口コミ・SNS など）の評価・口コミ・点数に触れる文
+//   R  他サイト（食べログ・Google の口コミ・SNS など）の評価・口コミ・点数・賞（百名店・ミシュラン・受賞）に触れる文
 //   A  分からなかった・確認できなかったことを書く文
 //   B  調べ方の舞台裏を書く文
 //   C  どの店にも言える決まり文句・締めの定型・記事の案内文（「編集部イチオシ」「これ、地味に効く。」 など）
@@ -45,8 +45,8 @@ import { fileURLToPath, pathToFileURL } from 'url';
 
 const re = (parts) => new RegExp(parts.join('|'));
 
-/** 賞・選出（残す。口コミ語の判定には当てない） */
-const AWARD = /百名店|ミシュラン|ビブグルマン|Bib|アワード|Award|受賞|選出|選ばれ/i;
+/** 賞・選出（2026-10-24 から書かない。他サイトの評価と同じ型 R。spec §14-0 の R・E 行と §14-1 に合わせた） */
+const AWARD = /百名店|ミシュラン|ビブグルマン|Bib\s*Gourmand|アワード|Award|受賞|入賞|金賞|銀賞|銅賞|グランプリ|表彰|選出/i;
 
 /** A: 分からなかった・確認できなかったことを書く */
 const A_STRONG = re([
@@ -172,7 +172,7 @@ const E_WEAK = re([
 // 実用の注意（「…をお勧めする」）・メニュー名や黒板の「おすすめ」は事実なので weak にも当てない
 const E_FACT_CONTEXT = /(?:お勧め|おすすめ|お薦め|オススメ)(?:する|します|したい|いたします)|(?:その日|季節|今月|本日|日替わり)の?(?:お勧め|おすすめ)|「(?:お勧め|おすすめ)」|(?:おすすめ|お勧め)[ぁ-んァ-ヶー一-龥]{0,6}(?:コース|セット|メニュー|ランチ|三種|定食|ドリンク|宴会|品|一品)/;
 
-/** R2: 口コミ・レビューの中身を引く文（賞・選出の語があれば当てない） */
+/** R2: 口コミ・レビューの中身を引く文 */
 const R2_RE = /口コミ|クチコミ|レビュー|書き込み/;
 
 /** Q: 出どころを語る言い回し（2026-10-24 オーナー指示「公式ページからの引用ですみたいなのも全部やめて」。spec §14-1）
@@ -212,7 +212,7 @@ const W_WEAK = re([
 ]);
 
 const TYPE_LABEL = {
-  R: '他サイトの評価・口コミ',
+  R: '他サイトの評価・口コミ・賞',
   A: '分からなかったことを書く文',
   B: '調べ方の舞台裏',
   C: '決まり文句・締めの定型・記事の案内文',
@@ -243,7 +243,8 @@ export function classifySentence(sentence) {
     try { stripped = stripRating(s); } catch { stripped = s; }
     if (stripped !== s) return { type: 'R', word: '他サイトの点数・評価・件数', auto: true };
   }
-  if (R2_RE.test(s) && !AWARD.test(s)) return { type: 'R', word: s.match(R2_RE)[0], auto: true };
+  if (AWARD.test(s)) return { type: 'R', word: s.match(AWARD)[0], auto: true }; // 賞・選出も書かない（他サイトの評価）
+  if (R2_RE.test(s)) return { type: 'R', word: s.match(R2_RE)[0], auto: true };
   // 2026-10-24: 出どころを語る言い回し(Q)・使わない言葉(W)・料金(P)は、A〜E より先に調べる（Q は言い切りに直す必要があるので機械では落とさない）
   const qm = s.match(Q_STRONG);
   if (qm) return { type: 'Q', word: qm[0], auto: false };
