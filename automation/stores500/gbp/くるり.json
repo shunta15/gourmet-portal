@@ -1,0 +1,22 @@
+{
+  "name": "くるり",
+  "address": "岩手県北上市本通り１丁目８−４",
+  "lat": 39.2870761,
+  "lng": 141.1148227,
+  "category": "居酒屋",
+  "hours": {
+    "月": "11:00–14:00",
+    "火": "11:00–14:00",
+    "水": "11:00–14:00",
+    "木": "11:00–14:00",
+    "金": "11:00–14:00",
+    "土": "定休日",
+    "日": "定休日"
+  },
+  "phone": "070-1160-9696",
+  "website": "https://www.instagram.com/tasukukikuti?igsh=dnNuY290NXF6YXVt",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=14240973812915984976",
+  "fetchedAt": "2026-10-23T18:23:58.069Z"
+}

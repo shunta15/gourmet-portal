@@ -1,0 +1,22 @@
+{
+  "name": "珈琲香房 伽羅",
+  "address": "岐阜県羽島市堀津町前谷７",
+  "lat": 35.30567,
+  "lng": 136.677292,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "07:00–15:00",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "07:00–15:00",
+    "金": "07:00–15:00",
+    "土": "08:00–15:00",
+    "日": "08:00–15:00"
+  },
+  "phone": "058-398-1141",
+  "website": "https://www.instagram.com/cafe.kyara?igsh=MWo0aHR4YjZ4N241bw==&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12629575601361220913",
+  "fetchedAt": "2026-10-23T18:31:19.539Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "KOPILULU CAFE/コピルルカフェ/犬入店OKカフェ",
+  "address": "長野県茅野市玉川１０１０５",
+  "lat": 35.9911608,
+  "lng": 138.2051881,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "11:30–17:00",
+    "火": "11:30–17:00",
+    "水": "定休日",
+    "木": "定休日",
+    "金": "11:30–17:00",
+    "土": "11:30–14:00",
+    "日": "11:30–17:00"
+  },
+  "phone": "080-1584-0533",
+  "website": "https://www.instagram.com/kopilulu.cafe?igsh=ejZvNmZuZndhZmNq",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=3901892228499252352",
+  "fetchedAt": "2026-10-23T18:32:03.921Z"
+}

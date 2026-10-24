@@ -38,6 +38,9 @@ const abs = (...p) => path.join(ROOT, ...p);
 const readJson = (p, d) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : d);
 
 const FIRST_ID = 299; // r299 から
+const NO_PRICE_FROM_ID = 526; // r526 以降は料金（budget）を出力しない
+const NG_HIGHLIGHT_RE =
+  /[0-9０-９,，千万]+円|円台|円前後|円から|予算|価格|値付け|ワンコイン|格安|お得|無料|人気|おすすめ|オススメ|お勧め|[0-9０-９]+選|No\.?\s*1|ナンバーワン|その他|癒|リフレッシュ|整える|整う|効く|効果|改善|ミシュラン|食べログ|ぐるなび|星[0-9０-９]|[0-9０-９]星|★|☆|評価|口コミ|クチコミ|レビュー/;
 const SOURCE_LABEL = "Google ビジネスプロフィール";
 const UNKNOWN_CONFIRM = "—（訪問前に公式確認）";
 const DAYS = ["月", "火", "水", "木", "金", "土", "日"];
@@ -51,6 +54,11 @@ const SCENES = (await import(new URL("../../lib/scenes.ts", import.meta.url).hre
 const SCENE_VOCAB = new Set(SCENES.flatMap((s) => s.matchTags));
 
 const ids = readJson(abs("automation/stores500/ids.json"), {});
+
+// 店のページを作らない記事（営業スプレッドシートで掲載NG・入口NG・TG外。オーナー指示 2026-10-24）。
+// map.json に入っていても店データを作らず、ids.json にも払い出さない。記事（/feature/<記事ID>）は消さない・転送しない。
+const NG_ARTICLES = readJson(abs("automation/stores500/ng-articles.json"), []);
+const NG_BY_ARTICLE = new Map(NG_ARTICLES.map((e) => [String(e.articleId).normalize("NFC"), e]));
 
 // 実写かどうかの判定: プレースホルダ3枚と中身が同じ画像は実写ではない（ファイルサイズでなく md5 で比べる）
 const md5 = (p) => createHash("md5").update(readFileSync(p)).digest("hex");
@@ -271,7 +279,7 @@ function summarizeHours(hoursObj) {
     .map(([t, ds]) => `${ds.length === 7 ? "毎日" : dayLabel(ds)} ${t}`);
   const closed =
     closedDays.length === 0
-      ? "なし（Googleマップの営業時間による）"
+      ? "なし"
       : closedDays.length === 1
         ? `${DAYS[closedDays[0]]}曜日`
         : closedDays.map((d) => `${DAYS[d]}曜`).join("・");
@@ -407,10 +415,13 @@ function stationOf(nearest) {
   if (!nearest) return null;
   const q = nearest.match(/「([^」]{1,10})」駅/);
   if (q) return `${q[1]}駅`;
-  const m = nearest.match(/([一-龥々ァ-ヶー]{1,12}駅)/);
+  // 駅名の手前の漢字・カタカナの連なりを丸ごと取る（上限の字数で切ると先頭が欠ける:「東武スカイツリーライン草加駅」→「武スカイツリーライン草加駅」）
+  const m = nearest.match(/([一-龥々ァ-ヶー]+駅)/);
   if (!m) return null;
-  const bare = m[1].replace(OPERATOR_PREFIX, "");
-  return bare.replace(/駅$/, "").length >= 2 ? bare : m[1];
+  // 路線名が付いているときは落とす（「東武スカイツリーライン草加駅」→「草加駅」「南海高野線河内長野駅」→「河内長野駅」）
+  const noLine = m[1].replace(/^.*(?:線|ライン|ライナー)(?=.{2,}駅$)/, "");
+  const bare = noLine.replace(OPERATOR_PREFIX, "");
+  return bare.replace(/駅$/, "").length >= 2 ? bare : noLine;
 }
 
 // ============================================================ 文章
@@ -548,7 +559,10 @@ function buildStore(entry, gbp, article, storeId) {
   const nearSpec = pickSpec(specs, SPEC_KEYS.nearest, (v) => !isVague(v) && cleanNearest(v).length > 0);
   const nearest = nearSpec ? cleanNearest(nearSpec.v) : "—";
   const budgetSpec = pickSpec(specs, SPEC_KEYS.budget, (v) => /\d|[０-９]|[千万]円|¥|￥/.test(v) && !isVague(v));
-  const budget = budgetSpec ? budgetSpec.v : undefined;
+  // r526 以降（2026-10-24 オーナー承認の追加分）は料金を店データに入れない（オーナー指示: 評価・口コミ・料金は書かない）。
+  // r525 以前は従来どおり（既存の店のデータを変えない）。
+  const noPrice = parseInt(String(storeId).slice(1), 10) >= NO_PRICE_FROM_ID;
+  const budget = budgetSpec && !noPrice ? budgetSpec.v : undefined;
 
   // --- 画像
   const imgs = listImages(entry.articleId);
@@ -557,9 +571,13 @@ function buildStore(entry, gbp, article, storeId) {
   const gallery = imgs.real.length ? imgs.real.slice(0, 6) : [...PH_GALLERY];
 
   // --- highlights
+  // r526 以降（オーナー承認の追加分）は、料金・人気・効能・他サイトの評価を含む見出しを highlights から外す
+  // （オーナー指示: 評価・口コミ・料金は書かない／おすすめ・人気・〇選・No.1・その他・癒し等の語を使わない）。
+  // r525 以前は従来どおり（既存の店のデータを変えない）。
   const highlights = (article.ranking || [])
     .map((r) => String(r.name || "").trim())
     .filter(Boolean)
+    .filter((h) => !noPrice || !NG_HIGHLIGHT_RE.test(h))
     .slice(0, 5);
 
   // --- desc
@@ -583,16 +601,21 @@ function buildStore(entry, gbp, article, storeId) {
       : "");
   const p2parts = [];
   if (hs.perDay) {
-    const closedPlain = hs.closed.replace(/（Googleマップ.*）$/, "");
+    // 出どころ（「Googleマップの営業時間による」など）は文に書かない（オーナー指示 2026-10-24: 引用の言い回しはやめる）。出どころは店の「情報の出どころ」（source）に出る。
     p2parts.push(
-      closedPlain === "なし"
-        ? `営業時間は${hs.hours}で、定休日はありません（Googleマップの営業時間による）。`
-        : `営業時間は${hs.hours}、定休日は${closedPlain}です（Googleマップの営業時間による）。`,
+      hs.closed === "なし"
+        ? `営業時間は${hs.hours}で、定休日はありません。`
+        : `営業時間は${hs.hours}、定休日は${hs.closed}です。`,
     );
   } else p2parts.push("営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。");
   if (seatSpec) p2parts.push(`席は${seats}。`);
   if (budget) p2parts.push(`予算の目安は${budget}。`);
-  p2parts.push("営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。");
+  // r526 以降は料金を本文に出さない（NO_PRICE_FROM_ID）ので、「価格」にも触れない
+  p2parts.push(
+    noPrice
+      ? "営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+      : "営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。",
+  );
   const body = [p1, p2parts.join("")];
 
   // --- 電話 / Instagram
@@ -749,6 +772,11 @@ const usedNums = Object.values(ids).map((v) => parseInt(String(v).slice(1), 10))
 let nextNum = Math.max(FIRST_ID - 1, ...usedNums) + 1;
 
 for (const entry of map) {
+  const ng = NG_BY_ARTICLE.get(String(entry.articleId).normalize("NFC"));
+  if (ng) {
+    excluded.push({ articleId: entry.articleId, name: ng.name || null, reason: `店のページを作らない記事（${ng.reason}）` });
+    continue;
+  }
   const gbpPath = abs("automation/stores500/gbp", `${entry.articleId}.json`);
   if (!existsSync(gbpPath)) {
     pending++;
@@ -885,6 +913,7 @@ const geoHead = geoSrc.slice(0, geoSrc.indexOf("export const GEO"));
 const geoBody = geoSrc.slice(geoSrc.indexOf("= ", geoSrc.indexOf("export const GEO")) + 2).trim().replace(/;$/, "");
 const geoObj = JSON.parse(geoBody);
 for (const id of Object.values(ids)) delete geoObj[id];
+for (const e of NG_ARTICLES) if (e.formerStoreId) delete geoObj[e.formerStoreId];
 Object.assign(geoObj, geoAdds);
 const geoSorted = Object.fromEntries(Object.keys(geoObj).sort().map((k) => [k, geoObj[k]]));
 const geoTs = `${geoHead}export const GEO: Record<string, GeoPoint> = ${JSON.stringify(geoSorted, null, 2)};

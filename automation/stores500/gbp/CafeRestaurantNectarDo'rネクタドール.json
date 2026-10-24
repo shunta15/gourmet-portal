@@ -1,0 +1,22 @@
+{
+  "name": "Cafe&Restaurant NectarDo'r ネクタドール",
+  "address": "福島県南相馬市原町区栄町３丁目４４ 旭パークサイドビル 1F",
+  "lat": 37.6374622,
+  "lng": 140.9644831,
+  "category": "イタリア料理店",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "11:00–14:00, 18:00–22:00",
+    "木": "11:00–14:00, 18:00–22:00",
+    "金": "11:00–14:00, 18:00–22:00",
+    "土": "11:00–14:00, 18:00–22:00",
+    "日": "11:00–14:00, 18:00–22:00"
+  },
+  "phone": "0244-32-1689",
+  "website": "https://www.instagram.com/nectardor0212/profilecard/?igsh=MWcxbDdrZ280cmVlaw==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=17904724556401007208",
+  "fetchedAt": "2026-10-23T18:29:33.474Z"
+}

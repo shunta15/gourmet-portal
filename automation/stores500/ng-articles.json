@@ -1,0 +1,37 @@
+[
+  {
+    "articleId": "ごはん家さんCOCORU",
+    "formerStoreId": "r560",
+    "name": "ごはん家さん COCORU",
+    "reason": "営業スプレッドシートの詰めステータスが「TG外 既存顧客」",
+    "decided": "2026-10-24 オーナー指示"
+  },
+  {
+    "articleId": "そば処美やじま",
+    "formerStoreId": "r561",
+    "name": "そば処 美やじま",
+    "reason": "営業スプレッドシートの詰めステータスが「TG外 既存顧客」",
+    "decided": "2026-10-24 オーナー指示"
+  },
+  {
+    "articleId": "ベルエポック",
+    "formerStoreId": "r562",
+    "name": "ベルエポック",
+    "reason": "営業スプレッドシートの詰めステータスが「入口NG」・詰め備考に「掲載NG」",
+    "decided": "2026-10-24 オーナー指示"
+  },
+  {
+    "articleId": "ふじ",
+    "formerStoreId": "r563",
+    "name": "ふじ",
+    "reason": "営業スプレッドシートの詰めステータスが「入口NG」",
+    "decided": "2026-10-24 オーナー指示"
+  },
+  {
+    "articleId": "HotPotChai",
+    "formerStoreId": "r629",
+    "name": "HotPot Chai",
+    "reason": "営業スプレッドシートに「入口NG（重複案件）」と「詰めOK」の重複行がある",
+    "decided": "2026-10-24 オーナー指示"
+  }
+]

@@ -1,0 +1,3525 @@
+{
+ "note": "2026-10-24 グルメ187本(店ページが無かった記事)の同一性確認結果。確定=別々の手がかり2つ以上で記事の店とGoogleマップの店が一致。保留は店データを作っていない。手がかりの点数: 番地=2,電話=2,公式サイト=2,建物名=1.5,最寄駅の徒歩距離=1,町名+丁目番号=1,出所(生成台帳のcid)=1。合計3以上かつ番地/電話/公式サイト/建物名のどれかを含み、種類が2以上、食い違い・移転・閉業が無いものを確定とした。",
+ "count": 145,
+ "stores": [
+  {
+   "storeId": "r526",
+   "articleId": "フランス料理の総菜食堂パ・マル",
+   "name": "フランス料理の総菜食堂 パ・マル",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r527",
+   "articleId": "和ダイニングしろべえ",
+   "name": "和ダイニングしろべえ",
+   "evidence": [
+    "建物",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "電話一致",
+    "建物名が記事本文に出る"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r528",
+   "articleId": "くすの樹",
+   "name": "四季彩菜 くすの樹",
+   "evidence": [
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r529",
+   "articleId": "小梟シャオシャオ",
+   "name": "小梟 シャオシャオ",
+   "evidence": [
+    "出所",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r530",
+   "articleId": "麺屋ふくじゅ",
+   "name": "麺屋ふくじゅ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r531",
+   "articleId": "焼肉遊",
+   "name": "焼肉遊",
+   "evidence": [
+    "出所",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r532",
+   "articleId": "焼肉ホルモン牛に恋したブタ野郎",
+   "name": "焼肉ホルモン 牛に恋したブタ野郎",
+   "evidence": [
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r533",
+   "articleId": "ラーメンまるひら",
+   "name": "ラーメン まるひら",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r534",
+   "articleId": "寿司の松よし",
+   "name": "寿司の松よし",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r535",
+   "articleId": "炭火焼肉絆繁（はんはん）",
+   "name": "炭火焼肉 絆繁（はんはん）",
+   "evidence": [
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r536",
+   "articleId": "おばんざい処のりっぺ",
+   "name": "おばんざい処 のりっぺ",
+   "evidence": [
+    "出所",
+    "番地"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r537",
+   "articleId": "花見うどん・ラーメン",
+   "name": "花見うどん・ラーメン",
+   "evidence": [
+    "出所",
+    "番地"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r538",
+   "articleId": "cafeGRANO",
+   "name": "cafe GRANO",
+   "evidence": [
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r539",
+   "articleId": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
+   "name": "土鍋ご飯 AOI",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名が記事本文に出る",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r540",
+   "articleId": "キッチンケン",
+   "name": "キッチンケン",
+   "evidence": [
+    "出所",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r541",
+   "articleId": "すすきの浪花亭｜札幌和食",
+   "name": "すすきの浪花亭｜札幌 和食",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "駅距離整合[すすきの駅 徒歩1分 / 直線57m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r542",
+   "articleId": "Ristorantet.v.b",
+   "name": "Ristorante t.v.b",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "駅距離整合[祇園四条駅 徒歩7分 / 直線341m]",
+    "駅距離整合[京都河原町駅 徒歩12分 / 直線341m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r543",
+   "articleId": "大阪福島鮨ふみ",
+   "name": "大阪福島 鮨ふみ",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "駅距離整合[福島駅 徒歩3分 / 直線181m]",
+    "駅距離整合[新福島駅 徒歩5分 / 直線181m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r544",
+   "articleId": "寿司美奈吉",
+   "name": "寿司 美奈吉",
+   "evidence": [
+    "出所",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "電話一致",
+    "駅距離整合[大和田駅 徒歩8分 / 直線450m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r545",
+   "articleId": "麺屋工藤",
+   "name": "麺屋 工藤",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r546",
+   "articleId": "おばんざいと酒の店信～shin～",
+   "name": "おばんざいと酒の店 信～shin～",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r547",
+   "articleId": "彩りダイニング陽まわり〜himawari〜",
+   "name": "彩りダイニング 陽まわり〜himawari〜",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r548",
+   "articleId": "牛かつなかざき",
+   "name": "牛かつ なかざき",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r549",
+   "articleId": "炭火の華艶",
+   "name": "炭火の華艶",
+   "evidence": [
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r550",
+   "articleId": "ピノッキオ",
+   "name": "ピノッキオ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r551",
+   "articleId": "こあの助",
+   "name": "こあの助",
+   "evidence": [
+    "出所",
+    "建物",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "建物名が記事本文に出る",
+    "駅距離整合[出町柳駅 徒歩10分 / 直線568m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r552",
+   "articleId": "炭焼き鳥一の屋",
+   "name": "炭焼き鳥一の屋",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r553",
+   "articleId": "コミュニティスペースほぼのら",
+   "name": "コミュニティスペースほぼのら",
+   "evidence": [
+    "出所",
+    "番地"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": false,
+    "complete": false
+   }
+  },
+  {
+   "storeId": "r554",
+   "articleId": "小料理木下",
+   "name": "小料理 木下",
+   "evidence": [
+    "出所",
+    "番地"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r555",
+   "articleId": "酒蔵たから屋",
+   "name": "酒蔵 たから屋",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "建物名が記事本文に出る",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r556",
+   "articleId": "大衆酒場げっとら",
+   "name": "大衆酒場 げっとら",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "建物名一致",
+    "駅距離整合[大宮駅 徒歩4分 / 直線399m]",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r557",
+   "articleId": "ナナンテアnananthea",
+   "name": "ナナンテア nananthea",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": false,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": false
+   }
+  },
+  {
+   "storeId": "r558",
+   "articleId": "炭焼き日本料理三ツ井",
+   "name": "炭焼き日本料理三ツ井",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid"
+   ],
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "sheetStatus": null,
+   "materials": {
+    "realPhoto": false,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": false
+   }
+  },
+  {
+   "storeId": "r559",
+   "articleId": "天ぷらわかやま立川本店",
+   "name": "天ぷら わかやま 立川本店",
+   "evidence": [
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "駅距離整合[立川駅 徒歩3分 / 直線265m]"
+   ],
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r560",
+   "articleId": "ごはん家さんCOCORU",
+   "name": "ごはん家さん COCORU",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "TG外　既存顧客",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r561",
+   "articleId": "そば処美やじま",
+   "name": "そば処 美やじま",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "TG外　既存顧客",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r562",
+   "articleId": "ベルエポック",
+   "name": "ベルエポック",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "入口NG",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r563",
+   "articleId": "ふじ",
+   "name": "ふじ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "入口NG",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r564",
+   "articleId": "お料理茶寮きぶん",
+   "name": "お料理茶寮 きぶん",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r565",
+   "articleId": "麺場よしき",
+   "name": "麺場よしき",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r566",
+   "articleId": "まるよ茶屋可睡の杜",
+   "name": "まるよ茶屋 可睡の杜",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r567",
+   "articleId": "個室居酒屋LOCCA",
+   "name": "個室居酒屋LOCCA",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r568",
+   "articleId": "きままな小料理屋ほんのきもち",
+   "name": "きままな小料理屋 ほんのきもち",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r569",
+   "articleId": "喜想菴",
+   "name": "喜想菴",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r570",
+   "articleId": "Diningcafeプティポワ",
+   "name": "Diningcafe プティポワ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 4,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r571",
+   "articleId": "アラモード",
+   "name": "アラモード",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r572",
+   "articleId": "洋食レストランキッチンいのうえ",
+   "name": "洋食レストランキッチンいのうえ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r573",
+   "articleId": "あそび心",
+   "name": "あそび心",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r574",
+   "articleId": "マルカツ小樽水産",
+   "name": "マルカツ小樽水産",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r575",
+   "articleId": "リトルシェフにんにく",
+   "name": "リトルシェフにんにく",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r576",
+   "articleId": "RESTAURANT風味庭",
+   "name": "RESTAURANT風味庭",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r577",
+   "articleId": "花のや",
+   "name": "花のや",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r578",
+   "articleId": "牛久春木屋",
+   "name": "牛久春木屋",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r579",
+   "articleId": "CafeDiningオレンジ",
+   "name": "Cafe Dining オレンジ",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r580",
+   "articleId": "ますます増田",
+   "name": "ますます増田",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r581",
+   "articleId": "やく味屋",
+   "name": "やく味屋",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "駅距離整合[有栖川駅 徒歩3分 / 直線238m]",
+    "駅距離整合[帷子ノ辻駅 徒歩3分 / 直線368m]",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r582",
+   "articleId": "阿波酔処しずく",
+   "name": "阿波酔処 しずく",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r583",
+   "articleId": "とんかつ林",
+   "name": "とんかつ 林",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r584",
+   "articleId": "三ちゃん",
+   "name": "三ちゃん",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r585",
+   "articleId": "韃靼蕎麦吉川",
+   "name": "韃靼蕎麦 吉川",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r586",
+   "articleId": "ガルーダ",
+   "name": "ガルーダ",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r587",
+   "articleId": "タヌキ寿司",
+   "name": "タヌキ寿司",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r588",
+   "articleId": "カフェグリーンハット",
+   "name": "カフェグリーンハット",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r589",
+   "articleId": "ラーメンさつま路",
+   "name": "ラーメンさつま路",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r590",
+   "articleId": "吉左右きっそう",
+   "name": "吉左右 きっそう",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r591",
+   "articleId": "はまや",
+   "name": "はまや",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r592",
+   "articleId": "割烹松きち",
+   "name": "割烹 松きち",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r593",
+   "articleId": "CRAPESTANDYAMAKI",
+   "name": "CRAPE STAND YAMAKI",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r594",
+   "articleId": "FrenchRestaurantrêveレーヴ",
+   "name": "French Restaurant rêve （レーヴ）",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r595",
+   "articleId": "麺家市政",
+   "name": "麺家市政",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r596",
+   "articleId": "中華そば店一しな",
+   "name": "中華そば店 一しな",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r597",
+   "articleId": "食堂屋光陽",
+   "name": "食堂屋 光陽",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r598",
+   "articleId": "王様の食卓",
+   "name": "王様の食卓",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r599",
+   "articleId": "クゥーしんぼう",
+   "name": "クゥーしんぼう",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r600",
+   "articleId": "GARDENCAFE",
+   "name": "GARDEN CAFE",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r601",
+   "articleId": "かいしんのいちげき！",
+   "name": "かいしんのいちげき！",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r602",
+   "articleId": "本格焼肉レストラン家族亭",
+   "name": "本格焼肉レストラン 家族亭",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r603",
+   "articleId": "三六九蕎麦",
+   "name": "三六九蕎麦",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r604",
+   "articleId": "焙煎工房大山",
+   "name": "焙煎工房大山",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r605",
+   "articleId": "やなぎや緑町本店",
+   "name": "やなぎや 緑町本店",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r606",
+   "articleId": "PizzeriaHAIJI",
+   "name": "Pizzeria HAIJI",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r607",
+   "articleId": "うどん屋得兵衛とくべえ",
+   "name": "うどん屋 得兵衛（とくべえ）",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r608",
+   "articleId": "くるり",
+   "name": "くるり",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r609",
+   "articleId": "お食事処絆",
+   "name": "お食事処絆",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r610",
+   "articleId": "麺飯屋たすいち",
+   "name": "麺飯屋たすいち",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r611",
+   "articleId": "本格中華料理チャイナキッチン和",
+   "name": "本格中華料理 チャイナキッチン 和",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r612",
+   "articleId": "アイビー",
+   "name": "アイビー",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r613",
+   "articleId": "播州ラーメン竹馬",
+   "name": "播州ラーメン 竹馬",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r614",
+   "articleId": "酒邸吟乃香",
+   "name": "酒邸 吟乃香",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r615",
+   "articleId": "ごはん屋たんたん",
+   "name": "ごはん屋たんたん",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r616",
+   "articleId": "シノワ・縷縷るる",
+   "name": "シノワ・縷縷（るる）",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r617",
+   "articleId": "キッチン＆カフェひまわり",
+   "name": "キッチン＆カフェ ひまわり",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r618",
+   "articleId": "和diningcafe靖浩",
+   "name": "和 diningcafe 靖浩",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r619",
+   "articleId": "神野々麦酒醸造所",
+   "name": "神野々麦酒醸造所",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r620",
+   "articleId": "関内バル自家製パンとパスタファクトリー",
+   "name": "関内バル 自家製パンとパスタファクトリー",
+   "evidence": [
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致"
+   ],
+   "mapsUrlSource": "sheet row (short url)",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r621",
+   "articleId": "caffésconeVENTI",
+   "name": "caffé & scone VENTI",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r622",
+   "articleId": "やまめの郷",
+   "name": "やまめの郷",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r623",
+   "articleId": "カフェ・イースト",
+   "name": "カフェ・イースト",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r624",
+   "articleId": "KANAECAFE",
+   "name": "KANAE CAFE",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r625",
+   "articleId": "青竹手打らーめん夢現",
+   "name": "青竹手打らーめん 夢現",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r626",
+   "articleId": "創作イタリア料理DENsumica",
+   "name": "創作イタリア料理 DEN sumica",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r627",
+   "articleId": "千代田饂飩",
+   "name": "千代田饂飩",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r628",
+   "articleId": "まいづる茶屋",
+   "name": "まいづる茶屋",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r629",
+   "articleId": "HotPotChai",
+   "name": "HotPot Chai",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r630",
+   "articleId": "手打ち蕎麦切り蓼山亭りょうざんてい",
+   "name": "手打ち蕎麦切り蓼山亭(りょうざんてい)",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r631",
+   "articleId": "夕日レストラン",
+   "name": "夕日レストラン",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r632",
+   "articleId": "CafeRestaurantNectarDo'rネクタドール",
+   "name": "Cafe&Restaurant NectarDo'r ネクタドール",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r633",
+   "articleId": "食工房一徹",
+   "name": "食工房 一徹",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r634",
+   "articleId": "あつたや",
+   "name": "あつたや",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r635",
+   "articleId": "古民家かもすや",
+   "name": "古民家 かもすや",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r636",
+   "articleId": "セルドール",
+   "name": "セルドール",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r637",
+   "articleId": "魚甚閣常若うおじんかくとこわか",
+   "name": "魚甚閣 常若（うおじんかく とこわか）",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r638",
+   "articleId": "炭火焼鳥とり笑",
+   "name": "炭火焼鳥 とり笑",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r639",
+   "articleId": "そば房かみや",
+   "name": "そば房 かみや",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r640",
+   "articleId": "珈琲香房伽羅",
+   "name": "珈琲香房 伽羅",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r641",
+   "articleId": "ハワイアンカフェクイポ",
+   "name": "ハワイアンカフェ クイポ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "駅距離整合[水沢駅 徒歩8分 / 直線543m]",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r642",
+   "articleId": "地魚寿司逸品おどろき",
+   "name": "地魚 寿司 逸品 おどろき",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r643",
+   "articleId": "KOPILULUCAFEコピルルカフェ犬入店OKカフェ",
+   "name": "KOPILULU CAFE/コピルルカフェ/犬入店OKカフェ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r644",
+   "articleId": "麺処三虎みとら",
+   "name": "麺処 三虎（みとら）",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r645",
+   "articleId": "NOODLEBAR9",
+   "name": "NOODLE BAR 9",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r646",
+   "articleId": "珈琲家族",
+   "name": "珈琲家族",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r647",
+   "articleId": "ruteyuルテーユ",
+   "name": "ruteyu（ルテーユ）",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r648",
+   "articleId": "一花総社",
+   "name": "一花 総社",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r649",
+   "articleId": "鳥善",
+   "name": "鳥善",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r650",
+   "articleId": "フルーツカフェツルザワノバティながの",
+   "name": "フルーツカフェツルザワ ノバティながの",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r651",
+   "articleId": "南風",
+   "name": "南風",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r652",
+   "articleId": "grillandwineじゅー",
+   "name": "grill and wine じゅー",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r653",
+   "articleId": "MaronCafe",
+   "name": "MaronCafe",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r654",
+   "articleId": "BAR竹",
+   "name": "BAR 竹",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r655",
+   "articleId": "Ａｎｇｅｌｏｰｃａｆｅアンジェロ",
+   "name": "Ａｎｇｅｌｏｰｃａｆｅ（アンジェロ）",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r656",
+   "articleId": "寿し金",
+   "name": "寿し金",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r657",
+   "articleId": "上田ん家",
+   "name": "上田ん家",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r658",
+   "articleId": "CafeMealBAROQUE",
+   "name": "Cafe Meal BAROQUE",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r659",
+   "articleId": "焼肉とんとり",
+   "name": "焼肉 とんとり",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 1,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r660",
+   "articleId": "パイクとそら",
+   "name": "パイクとそら",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r661",
+   "articleId": "たこ焼き居酒屋もりもり",
+   "name": "たこ焼き居酒屋もりもり",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話",
+    "駅"
+   ],
+   "evidenceDetail": [
+    "番地一致[記事specs]",
+    "電話一致",
+    "駅距離整合[伊丹駅 徒歩35分 / 直線2497m]",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r662",
+   "articleId": "おうちごはんなないろ",
+   "name": "おうちごはん なないろ",
+   "evidence": [
+    "出所",
+    "建物",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "建物名一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r663",
+   "articleId": "わがせ",
+   "name": "わがせ",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r664",
+   "articleId": "新中国料理大三元",
+   "name": "新中国料理 大三元",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r665",
+   "articleId": "ジンギスカンT.T",
+   "name": "ジンギスカン T.T",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r666",
+   "articleId": "夢の一歩本店",
+   "name": "夢の一歩 本店",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 2,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r667",
+   "articleId": "いけす料理史",
+   "name": "いけす料理 史",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r668",
+   "articleId": "翠陽",
+   "name": "翠陽",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r669",
+   "articleId": "perte",
+   "name": "perte",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  },
+  {
+   "storeId": "r670",
+   "articleId": "カフェマイクアンドシャーリー",
+   "name": "カフェ マイク アンド シャーリー",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "evidenceDetail": [
+    "番地一致[スプシ]",
+    "電話一致",
+    "出所:台帳cid+スプシ行"
+   ],
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "sheetStatus": "詰めOK",
+   "materials": {
+    "realPhoto": true,
+    "photoCount": 3,
+    "address": true,
+    "hours": true,
+    "complete": true
+   }
+  }
+ ]
+}

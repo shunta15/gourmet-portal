@@ -1153,5 +1153,710 @@
     "articleId": "イタリア料理エンメ",
     "sheetName": "イタリア料理 エンメ",
     "mapsUrl": "https://share.google/ArRZlF55MIP6AGoYt"
+  },
+  {
+    "articleId": "フランス料理の総菜食堂パ・マル",
+    "sheetName": "フランス料理の総菜食堂 パ・マル",
+    "mapsUrl": "https://maps.google.com/?cid=5314990208310413407"
+  },
+  {
+    "articleId": "OWL",
+    "sheetName": "OWL(営業時間状況で変わります)",
+    "mapsUrl": "https://maps.google.com/?cid=14895514644312441782"
+  },
+  {
+    "articleId": "和ダイニングしろべえ",
+    "sheetName": "和ダイニングしろべえ",
+    "mapsUrl": "https://maps.google.com/?cid=6193978190566594057"
+  },
+  {
+    "articleId": "くすの樹",
+    "sheetName": "くすの樹",
+    "mapsUrl": "https://maps.google.com/?cid=17210475269973045603"
+  },
+  {
+    "articleId": "小梟シャオシャオ",
+    "sheetName": "小梟 シャオシャオ",
+    "mapsUrl": "https://maps.google.com/?cid=10803674182130306061"
+  },
+  {
+    "articleId": "麺屋ふくじゅ",
+    "sheetName": "麺屋ふくじゅ",
+    "mapsUrl": "https://maps.google.com/?cid=110876597903634853"
+  },
+  {
+    "articleId": "焼肉遊",
+    "sheetName": "焼肉遊",
+    "mapsUrl": "https://maps.google.com/?cid=4241048860575039587"
+  },
+  {
+    "articleId": "焼肉ホルモン牛に恋したブタ野郎",
+    "sheetName": "焼肉ホルモン牛に恋したブタ野郎",
+    "mapsUrl": "https://maps.google.com/?cid=11028635218601068579"
+  },
+  {
+    "articleId": "ラーメンまるひら",
+    "sheetName": "ラーメン まるひら",
+    "mapsUrl": "https://maps.google.com/?cid=2822197413936929150"
+  },
+  {
+    "articleId": "寿司の松よし",
+    "sheetName": "寿司の松よし",
+    "mapsUrl": "https://maps.google.com/?cid=14060950304472482581"
+  },
+  {
+    "articleId": "炭火焼肉絆繁（はんはん）",
+    "sheetName": "炭火焼肉絆繁（はんはん）",
+    "mapsUrl": "https://maps.google.com/?cid=5060542656129345881"
+  },
+  {
+    "articleId": "おばんざい処のりっぺ",
+    "sheetName": "おばんざい処 のりっぺ",
+    "mapsUrl": "https://maps.google.com/?cid=13918187431078879720"
+  },
+  {
+    "articleId": "花見うどん・ラーメン",
+    "sheetName": "花見うどん・ラーメン",
+    "mapsUrl": "https://maps.google.com/?cid=8038975938456885477"
+  },
+  {
+    "articleId": "cafeGRANO",
+    "sheetName": "cafe GRANO",
+    "mapsUrl": "https://maps.google.com/?cid=17884293533299558846"
+  },
+  {
+    "articleId": "【ランチ】土鍋ご飯AOI【金土祝前の夜】BistroAOI",
+    "sheetName": "【ランチ】土鍋ご飯 AOI 【金土祝前の夜】Bistro AOI",
+    "mapsUrl": "https://maps.google.com/?cid=5876097050879920000"
+  },
+  {
+    "articleId": "キッチンケン",
+    "sheetName": "キッチンケン",
+    "mapsUrl": "https://maps.google.com/?cid=15326704449191015793"
+  },
+  {
+    "articleId": "すすきの浪花亭｜札幌和食",
+    "sheetName": "すすきの浪花亭｜札幌 和食",
+    "mapsUrl": "https://maps.google.com/?cid=13379602417916809317"
+  },
+  {
+    "articleId": "Ristorantet.v.b",
+    "sheetName": "Ristorante t.v.b",
+    "mapsUrl": "https://maps.google.com/?cid=16940955999781249743"
+  },
+  {
+    "articleId": "大阪福島鮨ふみ",
+    "sheetName": "大阪福島 鮨ふみ",
+    "mapsUrl": "https://maps.google.com/?cid=12689292597289228486"
+  },
+  {
+    "articleId": "寿司美奈吉",
+    "sheetName": "寿司 美奈吉",
+    "mapsUrl": "https://maps.google.com/?cid=14482200956822530367"
+  },
+  {
+    "articleId": "麺屋工藤",
+    "sheetName": "麺屋 工藤",
+    "mapsUrl": "https://maps.google.com/?cid=17704986994448685354"
+  },
+  {
+    "articleId": "おばんざいと酒の店信～shin～",
+    "sheetName": "おばんざいと酒の店 信～shin～",
+    "mapsUrl": "https://maps.google.com/?cid=6094770487314710787"
+  },
+  {
+    "articleId": "彩りダイニング陽まわり〜himawari〜",
+    "sheetName": "彩りダイニング 陽まわり〜himawari〜",
+    "mapsUrl": "https://maps.google.com/?cid=3949955534733588749"
+  },
+  {
+    "articleId": "牛かつなかざき",
+    "sheetName": "牛かつ なかざき",
+    "mapsUrl": "https://maps.google.com/?cid=7993497626918928503"
+  },
+  {
+    "articleId": "炭火の華艶",
+    "sheetName": "炭火の華艶",
+    "mapsUrl": "https://maps.google.com/?cid=11940462522549229006"
+  },
+  {
+    "articleId": "ピノッキオ",
+    "sheetName": "ピノッキオ",
+    "mapsUrl": "https://maps.google.com/?cid=6737924594162092744"
+  },
+  {
+    "articleId": "こあの助",
+    "sheetName": "こあの助",
+    "mapsUrl": "https://maps.google.com/?cid=11032026794092343869"
+  },
+  {
+    "articleId": "炭焼き鳥一の屋",
+    "sheetName": "炭焼き鳥一の屋",
+    "mapsUrl": "https://maps.google.com/?cid=15216364806194072029"
+  },
+  {
+    "articleId": "コミュニティスペースほぼのら",
+    "sheetName": "コミュニティスペースほぼのら",
+    "mapsUrl": "https://maps.google.com/?cid=3245065226670738198"
+  },
+  {
+    "articleId": "小料理木下",
+    "sheetName": "小料理 木下",
+    "mapsUrl": "https://maps.google.com/?cid=3164246742828393274"
+  },
+  {
+    "articleId": "酒蔵たから屋",
+    "sheetName": "酒蔵 たから屋",
+    "mapsUrl": "https://maps.google.com/?cid=13306594136080839443"
+  },
+  {
+    "articleId": "大衆酒場げっとら",
+    "sheetName": "大衆酒場 げっとら",
+    "mapsUrl": "https://maps.google.com/?cid=3245837304602003893"
+  },
+  {
+    "articleId": "ナナンテアnananthea",
+    "sheetName": "ナナンテア nananthea",
+    "mapsUrl": "https://maps.google.com/?cid=11882550835159026239"
+  },
+  {
+    "articleId": "炭焼き日本料理三ツ井",
+    "sheetName": "炭焼き日本料理三ツ井",
+    "mapsUrl": "https://maps.google.com/?cid=12936915443276532285"
+  },
+  {
+    "articleId": "天ぷらわかやま立川本店",
+    "sheetName": "天ぷら わかやま 立川本店",
+    "mapsUrl": "https://maps.google.com/?cid=7405683450640320054"
+  },
+  {
+    "articleId": "お料理茶寮きぶん",
+    "sheetName": "お料理茶寮 きぶん",
+    "mapsUrl": "https://maps.google.com/?cid=9407068452668696203"
+  },
+  {
+    "articleId": "麺場よしき",
+    "sheetName": "麺場よしき",
+    "mapsUrl": "https://maps.google.com/?cid=10894365362635760592"
+  },
+  {
+    "articleId": "まるよ茶屋可睡の杜",
+    "sheetName": "まるよ茶屋 可睡の杜",
+    "mapsUrl": "https://maps.google.com/?cid=18164054583942627703"
+  },
+  {
+    "articleId": "個室居酒屋LOCCA",
+    "sheetName": "個室居酒屋LOCCA",
+    "mapsUrl": "https://maps.google.com/?cid=5119995600646686060"
+  },
+  {
+    "articleId": "きままな小料理屋ほんのきもち",
+    "sheetName": "きままな小料理屋 ほんのきもち",
+    "mapsUrl": "https://maps.google.com/?cid=8825419113623050384"
+  },
+  {
+    "articleId": "喜想菴",
+    "sheetName": "喜想菴",
+    "mapsUrl": "https://maps.google.com/?cid=15768247938456832374"
+  },
+  {
+    "articleId": "Diningcafeプティポワ",
+    "sheetName": "Diningcafe プティポワ",
+    "mapsUrl": "https://maps.google.com/?cid=13393960202218679818"
+  },
+  {
+    "articleId": "アラモード",
+    "sheetName": "アラモード",
+    "mapsUrl": "https://maps.google.com/?cid=10806057150576626744"
+  },
+  {
+    "articleId": "洋食レストランキッチンいのうえ",
+    "sheetName": "洋食レストランキッチンいのうえ",
+    "mapsUrl": "https://maps.google.com/?cid=15409412958695090727"
+  },
+  {
+    "articleId": "あそび心",
+    "sheetName": "あそび心",
+    "mapsUrl": "https://maps.google.com/?cid=4211881474016852186"
+  },
+  {
+    "articleId": "マルカツ小樽水産",
+    "sheetName": "マルカツ小樽水産",
+    "mapsUrl": "https://maps.google.com/?cid=13520421308216697494"
+  },
+  {
+    "articleId": "リトルシェフにんにく",
+    "sheetName": "リトルシェフにんにく",
+    "mapsUrl": "https://maps.google.com/?cid=16740011234691762257"
+  },
+  {
+    "articleId": "RESTAURANT風味庭",
+    "sheetName": "RESTAURANT風味庭",
+    "mapsUrl": "https://maps.google.com/?cid=6505356896084740541"
+  },
+  {
+    "articleId": "花のや",
+    "sheetName": "花のや",
+    "mapsUrl": "https://maps.google.com/?cid=13683991552536752128"
+  },
+  {
+    "articleId": "牛久春木屋",
+    "sheetName": "牛久春木屋",
+    "mapsUrl": "https://maps.google.com/?cid=1811260483060898074"
+  },
+  {
+    "articleId": "CafeDiningオレンジ",
+    "sheetName": "Cafe Dining オレンジ",
+    "mapsUrl": "https://maps.google.com/?cid=8595957219255407279"
+  },
+  {
+    "articleId": "ますます増田",
+    "sheetName": "ますます増田",
+    "mapsUrl": "https://maps.google.com/?cid=15451099585429063905"
+  },
+  {
+    "articleId": "やく味屋",
+    "sheetName": "やく味屋",
+    "mapsUrl": "https://maps.google.com/?cid=393474786718321504"
+  },
+  {
+    "articleId": "阿波酔処しずく",
+    "sheetName": "阿波酔処 しずく",
+    "mapsUrl": "https://maps.google.com/?cid=8338190228988953470"
+  },
+  {
+    "articleId": "とんかつ林",
+    "sheetName": "とんかつ 林",
+    "mapsUrl": "https://maps.google.com/?cid=14707701037535183278"
+  },
+  {
+    "articleId": "三ちゃん",
+    "sheetName": "三ちゃん",
+    "mapsUrl": "https://maps.google.com/?cid=7828646119385541379"
+  },
+  {
+    "articleId": "韃靼蕎麦吉川",
+    "sheetName": "韃靼蕎麦 吉川",
+    "mapsUrl": "https://maps.google.com/?cid=7047603978948531502"
+  },
+  {
+    "articleId": "ガルーダ",
+    "sheetName": "ガルーダ",
+    "mapsUrl": "https://maps.google.com/?cid=17968278436891232935"
+  },
+  {
+    "articleId": "タヌキ寿司",
+    "sheetName": "タヌキ寿司",
+    "mapsUrl": "https://maps.google.com/?cid=14887214880345625515"
+  },
+  {
+    "articleId": "カフェグリーンハット",
+    "sheetName": "カフェグリーンハット",
+    "mapsUrl": "https://maps.google.com/?cid=9475827425642324727"
+  },
+  {
+    "articleId": "ラーメンさつま路",
+    "sheetName": "ラーメンさつま路",
+    "mapsUrl": "https://maps.google.com/?cid=13692327186591858012"
+  },
+  {
+    "articleId": "吉左右きっそう",
+    "sheetName": "吉左右 きっそう",
+    "mapsUrl": "https://maps.google.com/?cid=7507826897047469530"
+  },
+  {
+    "articleId": "はまや",
+    "sheetName": "はまや",
+    "mapsUrl": "https://maps.google.com/?cid=2223223487328647391"
+  },
+  {
+    "articleId": "割烹松きち",
+    "sheetName": "割烹 松きち",
+    "mapsUrl": "https://maps.google.com/?cid=1713741967323217280"
+  },
+  {
+    "articleId": "CRAPESTANDYAMAKI",
+    "sheetName": "CRAPE STAND YAMAKI",
+    "mapsUrl": "https://maps.google.com/?cid=11441170173837554254"
+  },
+  {
+    "articleId": "FrenchRestaurantrêveレーヴ",
+    "sheetName": "French Restaurant rêve （レーヴ）",
+    "mapsUrl": "https://maps.google.com/?cid=8265402758032544535"
+  },
+  {
+    "articleId": "麺家市政",
+    "sheetName": "麺家市政",
+    "mapsUrl": "https://maps.google.com/?cid=1906213051281702263"
+  },
+  {
+    "articleId": "中華そば店一しな",
+    "sheetName": "中華そば店 一しな",
+    "mapsUrl": "https://maps.google.com/?cid=10563323111551555022"
+  },
+  {
+    "articleId": "食堂屋光陽",
+    "sheetName": "食堂屋 光陽",
+    "mapsUrl": "https://maps.google.com/?cid=17903300412562369335"
+  },
+  {
+    "articleId": "王様の食卓",
+    "sheetName": "王様の食卓",
+    "mapsUrl": "https://maps.google.com/?cid=486503718997403100"
+  },
+  {
+    "articleId": "クゥーしんぼう",
+    "sheetName": "クゥーしんぼう",
+    "mapsUrl": "https://maps.google.com/?cid=6109075781953186512"
+  },
+  {
+    "articleId": "GARDENCAFE",
+    "sheetName": "GARDEN CAFE",
+    "mapsUrl": "https://maps.google.com/?cid=7285286505476581852"
+  },
+  {
+    "articleId": "かいしんのいちげき！",
+    "sheetName": "かいしんのいちげき！",
+    "mapsUrl": "https://maps.google.com/?cid=8092137051904739658"
+  },
+  {
+    "articleId": "本格焼肉レストラン家族亭",
+    "sheetName": "本格焼肉レストラン 家族亭",
+    "mapsUrl": "https://maps.google.com/?cid=13091601638180397469"
+  },
+  {
+    "articleId": "三六九蕎麦",
+    "sheetName": "三六九蕎麦",
+    "mapsUrl": "https://maps.google.com/?cid=9468413452923422954"
+  },
+  {
+    "articleId": "焙煎工房大山",
+    "sheetName": "焙煎工房大山",
+    "mapsUrl": "https://maps.google.com/?cid=15002820068428351907"
+  },
+  {
+    "articleId": "やなぎや緑町本店",
+    "sheetName": "やなぎや 緑町本店",
+    "mapsUrl": "https://maps.google.com/?cid=16097142329095175356"
+  },
+  {
+    "articleId": "PizzeriaHAIJI",
+    "sheetName": "Pizzeria HAIJI",
+    "mapsUrl": "https://maps.google.com/?cid=13712664659175272011"
+  },
+  {
+    "articleId": "うどん屋得兵衛とくべえ",
+    "sheetName": "うどん屋 得兵衛（とくべえ）",
+    "mapsUrl": "https://maps.google.com/?cid=8338364973557206501"
+  },
+  {
+    "articleId": "くるり",
+    "sheetName": "くるり",
+    "mapsUrl": "https://maps.google.com/?cid=14240973812915984976"
+  },
+  {
+    "articleId": "お食事処絆",
+    "sheetName": "お食事処絆",
+    "mapsUrl": "https://maps.google.com/?cid=9128247410989174601"
+  },
+  {
+    "articleId": "麺飯屋たすいち",
+    "sheetName": "麺飯屋たすいち",
+    "mapsUrl": "https://maps.google.com/?cid=12286612880953570162"
+  },
+  {
+    "articleId": "本格中華料理チャイナキッチン和",
+    "sheetName": "本格中華料理 チャイナキッチン 和",
+    "mapsUrl": "https://maps.google.com/?cid=6748617545015114516"
+  },
+  {
+    "articleId": "アイビー",
+    "sheetName": "アイビー",
+    "mapsUrl": "https://maps.google.com/?cid=14568379756961489718"
+  },
+  {
+    "articleId": "播州ラーメン竹馬",
+    "sheetName": "播州ラーメン 竹馬",
+    "mapsUrl": "https://maps.google.com/?cid=2052090644084016611"
+  },
+  {
+    "articleId": "酒邸吟乃香",
+    "sheetName": "酒邸 吟乃香",
+    "mapsUrl": "https://maps.google.com/?cid=2063534324404706504"
+  },
+  {
+    "articleId": "ごはん屋たんたん",
+    "sheetName": "ごはん屋たんたん",
+    "mapsUrl": "https://maps.google.com/?cid=15434092434116720525"
+  },
+  {
+    "articleId": "シノワ・縷縷るる",
+    "sheetName": "シノワ・縷縷（るる）",
+    "mapsUrl": "https://maps.google.com/?cid=12116948025745334783"
+  },
+  {
+    "articleId": "キッチン＆カフェひまわり",
+    "sheetName": "キッチン＆カフェ ひまわり",
+    "mapsUrl": "https://maps.google.com/?cid=6630958837083451804"
+  },
+  {
+    "articleId": "和diningcafe靖浩",
+    "sheetName": "和 diningcafe 靖浩",
+    "mapsUrl": "https://maps.google.com/?cid=7741154742844201806"
+  },
+  {
+    "articleId": "神野々麦酒醸造所",
+    "sheetName": "神野々麦酒醸造所",
+    "mapsUrl": "https://maps.google.com/?cid=5299428715515259152"
+  },
+  {
+    "articleId": "関内バル自家製パンとパスタファクトリー",
+    "sheetName": "関内バル 自家製パンとパスタファクトリー",
+    "mapsUrl": "https://maps.app.goo.gl/1bhX143PLzozNC3NA?g_st=ic"
+  },
+  {
+    "articleId": "caffésconeVENTI",
+    "sheetName": "caffé & scone VENTI",
+    "mapsUrl": "https://maps.google.com/?cid=12529507158016837450"
+  },
+  {
+    "articleId": "やまめの郷",
+    "sheetName": "やまめの郷",
+    "mapsUrl": "https://maps.google.com/?cid=8987949557019596950"
+  },
+  {
+    "articleId": "カフェ・イースト",
+    "sheetName": "カフェ・イースト",
+    "mapsUrl": "https://maps.google.com/?cid=10217502972662499287"
+  },
+  {
+    "articleId": "KANAECAFE",
+    "sheetName": "KANAE CAFE",
+    "mapsUrl": "https://maps.google.com/?cid=3251702103333575279"
+  },
+  {
+    "articleId": "青竹手打らーめん夢現",
+    "sheetName": "青竹手打らーめん 夢現",
+    "mapsUrl": "https://maps.google.com/?cid=5868121640690540284"
+  },
+  {
+    "articleId": "創作イタリア料理DENsumica",
+    "sheetName": "創作イタリア料理 DEN sumica",
+    "mapsUrl": "https://maps.google.com/?cid=1702329635256904698"
+  },
+  {
+    "articleId": "千代田饂飩",
+    "sheetName": "千代田饂飩",
+    "mapsUrl": "https://maps.google.com/?cid=1708088789349478345"
+  },
+  {
+    "articleId": "まいづる茶屋",
+    "sheetName": "まいづる茶屋",
+    "mapsUrl": "https://maps.google.com/?cid=16067360568579382307"
+  },
+  {
+    "articleId": "手打ち蕎麦切り蓼山亭りょうざんてい",
+    "sheetName": "手打ち蕎麦切り蓼山亭(りょうざんてい)",
+    "mapsUrl": "https://maps.google.com/?cid=11775822492534603209"
+  },
+  {
+    "articleId": "夕日レストラン",
+    "sheetName": "夕日レストラン",
+    "mapsUrl": "https://maps.google.com/?cid=13869150581332654350"
+  },
+  {
+    "articleId": "CafeRestaurantNectarDo'rネクタドール",
+    "sheetName": "Cafe&Restaurant NectarDo'r ネクタドール",
+    "mapsUrl": "https://maps.google.com/?cid=17904724556401007208"
+  },
+  {
+    "articleId": "食工房一徹",
+    "sheetName": "食工房 一徹",
+    "mapsUrl": "https://maps.google.com/?cid=2555274874696688501"
+  },
+  {
+    "articleId": "あつたや",
+    "sheetName": "あつたや",
+    "mapsUrl": "https://maps.google.com/?cid=14029886495303435582"
+  },
+  {
+    "articleId": "古民家かもすや",
+    "sheetName": "古民家 かもすや",
+    "mapsUrl": "https://maps.google.com/?cid=3943131606289103749"
+  },
+  {
+    "articleId": "セルドール",
+    "sheetName": "セルドール",
+    "mapsUrl": "https://maps.google.com/?cid=14349695662476584364"
+  },
+  {
+    "articleId": "魚甚閣常若うおじんかくとこわか",
+    "sheetName": "魚甚閣 常若（うおじんかく とこわか）",
+    "mapsUrl": "https://maps.google.com/?cid=2691210885687176315"
+  },
+  {
+    "articleId": "炭火焼鳥とり笑",
+    "sheetName": "炭火焼鳥 とり笑",
+    "mapsUrl": "https://maps.google.com/?cid=5116288458217887056"
+  },
+  {
+    "articleId": "そば房かみや",
+    "sheetName": "そば房 かみや",
+    "mapsUrl": "https://maps.google.com/?cid=17299082434978961445"
+  },
+  {
+    "articleId": "珈琲香房伽羅",
+    "sheetName": "珈琲香房 伽羅",
+    "mapsUrl": "https://maps.google.com/?cid=12629575601361220913"
+  },
+  {
+    "articleId": "ハワイアンカフェクイポ",
+    "sheetName": "ハワイアンカフェ クイポ",
+    "mapsUrl": "https://maps.google.com/?cid=13199110523532675782"
+  },
+  {
+    "articleId": "地魚寿司逸品おどろき",
+    "sheetName": "地魚 寿司 逸品 おどろき",
+    "mapsUrl": "https://maps.google.com/?cid=14038338544471819886"
+  },
+  {
+    "articleId": "KOPILULUCAFEコピルルカフェ犬入店OKカフェ",
+    "sheetName": "KOPILULU CAFE/コピルルカフェ/犬入店OKカフェ",
+    "mapsUrl": "https://maps.google.com/?cid=3901892228499252352"
+  },
+  {
+    "articleId": "麺処三虎みとら",
+    "sheetName": "麺処 三虎（みとら）",
+    "mapsUrl": "https://maps.google.com/?cid=1581383239050913304"
+  },
+  {
+    "articleId": "NOODLEBAR9",
+    "sheetName": "NOODLE BAR 9",
+    "mapsUrl": "https://maps.google.com/?cid=9342063956058377987"
+  },
+  {
+    "articleId": "珈琲家族",
+    "sheetName": "珈琲家族",
+    "mapsUrl": "https://maps.google.com/?cid=2317735906009535790"
+  },
+  {
+    "articleId": "ruteyuルテーユ",
+    "sheetName": "ruteyu（ルテーユ）",
+    "mapsUrl": "https://maps.google.com/?cid=7658864889498239634"
+  },
+  {
+    "articleId": "一花総社",
+    "sheetName": "一花 総社",
+    "mapsUrl": "https://maps.google.com/?cid=17526750079708117854"
+  },
+  {
+    "articleId": "鳥善",
+    "sheetName": "鳥善",
+    "mapsUrl": "https://maps.google.com/?cid=16509955209797321228"
+  },
+  {
+    "articleId": "フルーツカフェツルザワノバティながの",
+    "sheetName": "フルーツカフェツルザワ ノバティながの",
+    "mapsUrl": "https://maps.google.com/?cid=14103138368487692376"
+  },
+  {
+    "articleId": "南風",
+    "sheetName": "南風",
+    "mapsUrl": "https://maps.google.com/?cid=12945422850871557171"
+  },
+  {
+    "articleId": "grillandwineじゅー",
+    "sheetName": "grill and wine じゅー",
+    "mapsUrl": "https://maps.google.com/?cid=13407530285143909364"
+  },
+  {
+    "articleId": "MaronCafe",
+    "sheetName": "MaronCafe",
+    "mapsUrl": "https://maps.google.com/?cid=96018390743499277"
+  },
+  {
+    "articleId": "BAR竹",
+    "sheetName": "BAR 竹",
+    "mapsUrl": "https://maps.google.com/?cid=18314547352071977601"
+  },
+  {
+    "articleId": "Ａｎｇｅｌｏｰｃａｆｅアンジェロ",
+    "sheetName": "Ａｎｇｅｌｏｰｃａｆｅ（アンジェロ）",
+    "mapsUrl": "https://maps.google.com/?cid=10331724016110145679"
+  },
+  {
+    "articleId": "寿し金",
+    "sheetName": "寿し金",
+    "mapsUrl": "https://maps.google.com/?cid=11929202990285461880"
+  },
+  {
+    "articleId": "上田ん家",
+    "sheetName": "上田ん家",
+    "mapsUrl": "https://maps.google.com/?cid=1735400646411514689"
+  },
+  {
+    "articleId": "CafeMealBAROQUE",
+    "sheetName": "Cafe Meal BAROQUE",
+    "mapsUrl": "https://maps.google.com/?cid=17010462999833250160"
+  },
+  {
+    "articleId": "焼肉とんとり",
+    "sheetName": "焼肉 とんとり",
+    "mapsUrl": "https://maps.google.com/?cid=18217632213580026036"
+  },
+  {
+    "articleId": "パイクとそら",
+    "sheetName": "パイクとそら",
+    "mapsUrl": "https://maps.google.com/?cid=15947047120727136506"
+  },
+  {
+    "articleId": "たこ焼き居酒屋もりもり",
+    "sheetName": "たこ焼き居酒屋もりもり",
+    "mapsUrl": "https://maps.google.com/?cid=16865471943271516034"
+  },
+  {
+    "articleId": "おうちごはんなないろ",
+    "sheetName": "おうちごはん なないろ",
+    "mapsUrl": "https://maps.google.com/?cid=7089694290890037662"
+  },
+  {
+    "articleId": "わがせ",
+    "sheetName": "わがせ",
+    "mapsUrl": "https://maps.google.com/?cid=12785002678172430938"
+  },
+  {
+    "articleId": "新中国料理大三元",
+    "sheetName": "新中国料理 大三元",
+    "mapsUrl": "https://maps.google.com/?cid=16256939708382737077"
+  },
+  {
+    "articleId": "ジンギスカンT.T",
+    "sheetName": "ジンギスカン T.T",
+    "mapsUrl": "https://maps.google.com/?cid=1781582173670998336"
+  },
+  {
+    "articleId": "夢の一歩本店",
+    "sheetName": "夢の一歩 本店",
+    "mapsUrl": "https://maps.google.com/?cid=1565250352061295026"
+  },
+  {
+    "articleId": "いけす料理史",
+    "sheetName": "いけす料理 史",
+    "mapsUrl": "https://maps.google.com/?cid=16903538406757132670"
+  },
+  {
+    "articleId": "翠陽",
+    "sheetName": "翠陽",
+    "mapsUrl": "https://maps.google.com/?cid=5586189759400128309"
+  },
+  {
+    "articleId": "perte",
+    "sheetName": "perte",
+    "mapsUrl": "https://maps.google.com/?cid=5181467420914129928"
+  },
+  {
+    "articleId": "カフェマイクアンドシャーリー",
+    "sheetName": "カフェ マイク アンド シャーリー",
+    "mapsUrl": "https://maps.google.com/?cid=15681036869257149123"
   }
 ]

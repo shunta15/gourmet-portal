@@ -1,0 +1,727 @@
+{
+ "note": "2026-10-24 グルメ187本のうち店データを作らなかったもの(保留)。map.json / ids.json には入れていない。GBP の取得結果はこの表の gbp 欄だけに残す。",
+ "count": 42,
+ "articles": [
+  {
+   "articleId": "OWL",
+   "name": "OWL(営業時間状況で変わります)",
+   "category": "既存の店ページと同一(店の追加ではない)",
+   "reason": "Googleマップの店(cid)が既存の店ページ r277 と同じ。build-stores が除外した（既存の店舗ページ（r277 OWL(営業時間状況で変わります)）と同じ店）。この記事は「既存店ページあり」型として扱う（店の追加は不要）",
+   "evidence": [
+    "出所",
+    "番地",
+    "駅"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": null,
+    "category": null,
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=14895514644312441782"
+   }
+  },
+  {
+   "articleId": "お食事処魚の光家",
+   "name": "お食事処 魚の光家",
+   "category": "手がかり不足",
+   "reason": "電話は一致したが、番地など2つ目の手がかりが取れない(記事に番地の記載なし・出所の記録もなし)。Googleマップは「福岡県北九州市小倉南区徳力２丁目３−１ 103号」",
+   "evidence": [
+    "電話"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "gbp": {
+    "address": "福岡県北九州市小倉南区徳力２丁目３−１ 103号",
+    "category": "定食屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=3238253892082436919"
+   }
+  },
+  {
+   "articleId": "和洋創作料理楓",
+   "name": "和洋創作料理 楓",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: なし)。記事側に番地・電話の記載なし。Googleマップは「福岡県北九州市八幡西区熊手１丁目１−４４ 阿部ビル 1F」",
+   "evidence": [],
+   "sheetStatus": null,
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "gbp": {
+    "address": "福岡県北九州市八幡西区熊手１丁目１−４４ 阿部ビル 1F",
+    "category": "創作料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=17389765076481563986"
+   }
+  },
+  {
+   "articleId": "梟",
+   "name": "梟",
+   "category": "一致しない",
+   "reason": "記事の住所(花畑町9-16 一楽ビル2F)・電話(096-356-2343)とGoogleマップ(花畑町11-29 RS-5ビル3階A・携帯番号)が食い違う。移転または別の店の可能性",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "熊本県熊本市中央区花畑町１１−２９ RS−5ビル ３階A",
+    "category": "居酒屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=13295539867152089996"
+   }
+  },
+  {
+   "articleId": "梁山泊",
+   "name": "梁山泊",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、駅)。記事側に番地・電話の記載なし。Googleマップは「奈良県奈良市西城戸町１３」",
+   "evidence": [
+    "出所",
+    "駅"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "奈良県奈良市西城戸町１３",
+    "category": "会席・懐石料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10387702323465373679"
+   }
+  },
+  {
+   "articleId": "自家製手作りダレが自慢の店焼肉タカ屋",
+   "name": "自家製手作りダレが自慢の店 焼肉タカ屋",
+   "category": "一致しない",
+   "reason": "番地は一致(曙町3丁目2-46)だが、記事の電話(025-383-0033)とGoogleマップの電話(025-384-8588)が違う",
+   "evidence": [
+    "出所",
+    "番地"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "新潟県新潟市江南区曙町３丁目２−４６",
+    "category": "焼肉店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=15083073175131145322"
+   }
+  },
+  {
+   "articleId": "Giselleジゼル雑貨屋&カフェ",
+   "name": "Giselle ジゼル 雑貨屋&カフェ",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、駅)。記事側に番地・電話の記載なし。Googleマップは「福岡県久留米市花畑３丁目3−１４」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所",
+    "駅"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "福岡県久留米市花畑３丁目3−１４",
+    "category": "雑貨店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10401234633422317734"
+   }
+  },
+  {
+   "articleId": "paspa!",
+   "name": "paspa!",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「沖縄県那覇市東町１１−１２ 清洲第２ビル 1階」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市東町１１−１２ 清洲第２ビル 1階",
+    "category": "イタリア料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=16422379295317450589"
+   }
+  },
+  {
+   "articleId": "２代目ラーメンイエロー",
+   "name": "２代目ラーメンイエロー",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「新潟県新潟市西区大野186ｰ1」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "新潟県新潟市西区大野186ｰ1",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=12748324639842110373"
+   }
+  },
+  {
+   "articleId": "麺屋野条",
+   "name": "麺屋野条",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県西宮市門戸荘１７−４８−１０１」。補足: 住所が集合住宅の部屋番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県西宮市門戸荘１７−４８−１０１",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=11223590373908912668"
+   }
+  },
+  {
+   "articleId": "鮨寄宮たいら",
+   "name": "鮨寄宮たいら",
+   "category": "手がかり不足",
+   "reason": "記事の所在は「那覇市寄宮2丁目・県道46号線沿い」までで番地・電話の記載なし(取れた手がかり: 丁目、出所)。Googleマップは「沖縄県那覇市寄宮２丁目３４−２３」",
+   "evidence": [
+    "丁目",
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市寄宮２丁目３４−２３",
+    "category": "寿司店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10193787696427238011"
+   }
+  },
+  {
+   "articleId": "SUNABAR",
+   "name": "SUNABAR",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「福岡県北九州市小倉南区日の出町１丁目６−５７」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "福岡県北九州市小倉南区日の出町１丁目６−５７",
+    "category": "蕎麦店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=8597491688335334960"
+   }
+  },
+  {
+   "articleId": "道後ハイボール酒場",
+   "name": "道後ハイボール酒場",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「愛媛県松山市道後湯之町１４−１６」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "愛媛県松山市道後湯之町１４−１６",
+    "category": "居酒屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=5987997713088355407"
+   }
+  },
+  {
+   "articleId": "蕎麦処一閑人",
+   "name": "蕎麦処 一閑人",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: なし)。記事側に番地・電話の記載なし。Googleマップは「福岡県久留米市宮ノ陣町１５７７−７」",
+   "evidence": [],
+   "sheetStatus": null,
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "gbp": {
+    "address": "福岡県久留米市宮ノ陣町１５７７−７",
+    "category": "蕎麦店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10237843843244650901"
+   }
+  },
+  {
+   "articleId": "ラーメンうずまき",
+   "name": "ラーメンうずまき",
+   "category": "手がかり不足(自宅営業の疑いも)",
+   "reason": "記事の所在は「那覇市前島2丁目（国道58号沿い）」までで番地・電話の記載なし(取れた手がかり: 丁目、出所)。Googleマップは「沖縄県那覇市前島２丁目１１−１５ ライオンズマンション前島第2 103号室」。補足: 住所が集合住宅の部屋番号・電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "丁目",
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市前島２丁目１１−１５ ライオンズマンション前島第2 103号室",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=11571194906779829068"
+   }
+  },
+  {
+   "articleId": "信ちゃんママ",
+   "name": "信ちゃんママ",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「北海道札幌市白石区北郷３条２丁目１３−２７ トータクビル 2階」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "北海道札幌市白石区北郷３条２丁目１３−２７ トータクビル 2階",
+    "category": "定食屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=4175652724656242446"
+   }
+  },
+  {
+   "articleId": "麺家本倉",
+   "name": "麺家本倉",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県姫路市砥堀２３６−１」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県姫路市砥堀２３６−１",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=9602384154327649504"
+   }
+  },
+  {
+   "articleId": "沖縄ラーメンいっと",
+   "name": "沖縄ラーメン いっと",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「沖縄県那覇市久茂地３丁目２５−１２」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市久茂地３丁目２５−１２",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=13820621134796774659"
+   }
+  },
+  {
+   "articleId": "ジョージレストラン",
+   "name": "ジョージレストラン",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「Matsufuji, ２丁目-１-９ 辻 那覇市 沖縄県 900-0037」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "Matsufuji, ２丁目-１-９ 辻 那覇市 沖縄県 900-0037",
+    "category": "アメリカ料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=14960217579893553635"
+   }
+  },
+  {
+   "articleId": "川内珈琲bycampgear12",
+   "name": "川内珈琲 by camp gear 12",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「福岡県福岡市城南区友泉亭６−３０ B」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "福岡県福岡市城南区友泉亭６−３０ B",
+    "category": "カフェ・喫茶",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=7979293208690090397"
+   }
+  },
+  {
+   "articleId": "名代肉まぶし焼肉つむぎ",
+   "name": "焼肉 つむぎ",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: なし)。記事側に番地・電話の記載なし。Googleマップは「愛媛県松山市高井町７２９−１」",
+   "evidence": [],
+   "sheetStatus": null,
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "gbp": {
+    "address": "愛媛県松山市高井町７２９−１",
+    "category": "焼肉店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=15123703203446879270"
+   }
+  },
+  {
+   "articleId": "sakuraya",
+   "name": "sakuraya",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: なし)。記事側に番地・電話の記載なし。Googleマップは「福岡県福岡市城南区堤１丁目１１−１７ スコーレ堤 １０３」",
+   "evidence": [],
+   "sheetStatus": null,
+   "mapsUrlSource": "feature-spot-photos placeUrl (検索一致・シート/台帳に URL なし)",
+   "gbp": {
+    "address": "福岡県福岡市城南区堤１丁目１１−１７ スコーレ堤 １０３",
+    "category": "モダン居酒屋レストラン",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=8661579545350057680"
+   }
+  },
+  {
+   "articleId": "一食一笑小鉄",
+   "name": "一食一笑小鉄",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 丁目、出所)。記事側に番地・電話の記載なし。Googleマップは「大阪府吹田市昭和町１４−２３」",
+   "evidence": [
+    "丁目",
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "大阪府吹田市昭和町１４−２３",
+    "category": "居酒屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=7615606413428839589"
+   }
+  },
+  {
+   "articleId": "お食事処親味",
+   "name": "お食事処親味",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「大阪府吹田市内本町１丁目１０−１１ 旭ファイブ 1F」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "大阪府吹田市内本町１丁目１０−１１ 旭ファイブ 1F",
+    "category": "蕎麦店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=3881946857930388409"
+   }
+  },
+  {
+   "articleId": "おじゃったもん屋",
+   "name": "おじゃったもん屋",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、建物)。記事側に番地・電話の記載なし。Googleマップは「鹿児島県鹿児島市千日町１ センテラス2階」",
+   "evidence": [
+    "出所",
+    "建物"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "鹿児島県鹿児島市千日町１ センテラス2階",
+    "category": "和食店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=8588279011282068017"
+   }
+  },
+  {
+   "articleId": "野菜の酒場。クサワケセカンド",
+   "name": "野菜で飲める店 クサワケセカンド",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「沖縄県那覇市牧志１丁目８−３ FAN緑ヶ丘ビル 1F」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市牧志１丁目８−３ FAN緑ヶ丘ビル 1F",
+    "category": "居酒屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=13234321035517455194"
+   }
+  },
+  {
+   "articleId": "とりえもん",
+   "name": "宮崎地鶏 郷土料理 個室居酒屋 とりえもん",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、建物)。記事側に番地・電話の記載なし。Googleマップは「宮崎県宮崎市橘通西３丁目５−４ 高山 ビル 1F」",
+   "evidence": [
+    "出所",
+    "建物"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "宮崎県宮崎市橘通西３丁目５−４ 高山 ビル 1F",
+    "category": "居酒屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=17163765547193032668"
+   }
+  },
+  {
+   "articleId": "牧志プリースト",
+   "name": "ワインと洋食 牧志プリースト",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「沖縄県那覇市牧志２丁目２１−１ 小湾共同住宅」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "沖縄県那覇市牧志２丁目２１−１ 小湾共同住宅",
+    "category": "イタリア料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=13596116044478572013"
+   }
+  },
+  {
+   "articleId": "カフェ・トム・トム",
+   "name": "カフェ・トム・トム",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県西宮市六湛寺町１２−１２ hu」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県西宮市六湛寺町１２−１２ hu",
+    "category": "カフェ・喫茶",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=3286523333722393973"
+   }
+  },
+  {
+   "articleId": "大幸亭",
+   "name": "大幸亭",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「和歌山県和歌山市西浜１６６０−４０１」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "和歌山県和歌山市西浜１６６０−４０１",
+    "category": "和食店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=16744228995901439075"
+   }
+  },
+  {
+   "articleId": "ヤマビコホルモン焼肉大阪豊中",
+   "name": "ヤマビコホルモン",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、駅)。記事側に番地・電話の記載なし。Googleマップは「大阪府豊中市曽根南町２丁目５−５５」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所",
+    "駅"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "大阪府豊中市曽根南町２丁目５−５５",
+    "category": "焼肉店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=4862905181244877488"
+   }
+  },
+  {
+   "articleId": "CafeLABOUQUET",
+   "name": "Cafe LA BOUQUET",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「栃木県宇都宮市峰１丁目１３−１７」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "栃木県宇都宮市峰１丁目１３−１７",
+    "category": "ファースト フード店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=2495987597464195273"
+   }
+  },
+  {
+   "articleId": "BlissBurgerHawaii",
+   "name": "Bliss Burger Hawaii",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県西宮市北名次町１５−１１ 白井マンション １０１」。補足: 住所が集合住宅の部屋番号・電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県西宮市北名次町１５−１１ 白井マンション １０１",
+    "category": "ハンバーガー店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=6856611560120790687"
+   }
+  },
+  {
+   "articleId": "魚幸処にしかわ",
+   "name": "魚幸処 にしかわ",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県西宮市門戸荘１５−３」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県西宮市門戸荘１５−３",
+    "category": "和食店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=6404997950677161588"
+   }
+  },
+  {
+   "articleId": "ほたる翔",
+   "name": "ほたる翔",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「大阪府豊中市螢池東町２丁目５−１」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "大阪府豊中市螢池東町２丁目５−１",
+    "category": "焼肉店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10636570974977983641"
+   }
+  },
+  {
+   "articleId": "麺diningだいふく",
+   "name": "麺diningだいふく",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県姫路市辻井１丁目１２−２８」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県姫路市辻井１丁目１２−２８",
+    "category": "ラーメン屋",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=12422026119725580642"
+   }
+  },
+  {
+   "articleId": "レストランマキ",
+   "name": "レストランマキ",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所、駅)。記事側に番地・電話の記載なし。Googleマップは「兵庫県尼崎市昭和通２丁目６−６８」",
+   "evidence": [
+    "出所",
+    "駅"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県尼崎市昭和通２丁目６−６８",
+    "category": "日本式洋食レストラン",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=10470318657299531936"
+   }
+  },
+  {
+   "articleId": "日本料理吉晶(きっしょう)",
+   "name": "日本料理 吉晶(きっしょう)",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「岡山県岡山市北区丸の内１丁目４−１２−２」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "岡山県岡山市北区丸の内１丁目４−１２−２",
+    "category": "会席・懐石料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=8261630839826862824"
+   }
+  },
+  {
+   "articleId": "じゃがじゃが",
+   "name": "じゃがじゃが",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県姫路市広畑区東新町１丁目６４ 二階」。補足: 電話が携帯番号(自宅営業の疑いは記事に根拠なし)",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県姫路市広畑区東新町１丁目６４ 二階",
+    "category": "鉄板焼き店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=5075658792353357927"
+   }
+  },
+  {
+   "articleId": "vegeeggLABO",
+   "name": "vege egg LABO.",
+   "category": "手がかり不足",
+   "reason": "同じ店と言える手がかりが2つに届かない(取れた手がかり: 出所)。記事側に番地・電話の記載なし。Googleマップは「兵庫県姫路市飾磨区今在家北１丁目79」",
+   "evidence": [
+    "出所"
+   ],
+   "sheetStatus": null,
+   "mapsUrlSource": "generated-ledger cid (sheet row gone)",
+   "gbp": {
+    "address": "兵庫県姫路市飾磨区今在家北１丁目79",
+    "category": "サラダ ショップ",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=17368981155642921469"
+   }
+  },
+  {
+   "articleId": "銀しゃも鶏焼肉玄",
+   "name": "銀しゃも鶏焼肉と鶏料理 玄",
+   "category": "一致しない",
+   "reason": "スプシ住所の番地(二又町3丁目2-682-1)とGoogleマップ(3丁目2-29)が違う(電話は一致)。スプシの詰めステータスが「詰めNG 不信」(掲載合意なしの可能性)",
+   "evidence": [
+    "出所",
+    "電話"
+   ],
+   "sheetStatus": "詰めNG　不信",
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "gbp": {
+    "address": "大分県大分市二又町３丁目２−２９",
+    "category": "鶏料理店",
+    "status": null,
+    "gbpUrl": "https://maps.google.com/?cid=9278042191510488089"
+   }
+  },
+  {
+   "articleId": "麺やJUNKFACTORY",
+   "name": "麺やJUNK FACTORY",
+   "category": "移転・閉業・臨時休業",
+   "reason": "Googleマップの状態が「移転」(スプシ住所の番地・電話はGoogleマップと一致)",
+   "evidence": [
+    "出所",
+    "番地",
+    "電話"
+   ],
+   "sheetStatus": "詰めOK",
+   "mapsUrlSource": "generated-ledger cid + sheet row",
+   "gbp": {
+    "address": "長崎県大村市玖島１丁目４９−６",
+    "category": "ラーメン屋",
+    "status": "移転",
+    "gbpUrl": "https://maps.google.com/?cid=17131884593521971814"
+   }
+  }
+ ]
+}
