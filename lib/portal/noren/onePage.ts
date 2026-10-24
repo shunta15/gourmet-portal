@@ -15,7 +15,7 @@ import { FEATURED_SINGLE_IDS } from "./featureSingle";
  * 対の店ページが無い記事は対象外（今までの枠のまま）。
  * 先頭の 50 本は、2026-10-11/12 に「写真が 6 枚以上」で選んだ本（特集の一覧の「特集記事」の棚 FEATURED_SINGLE_IDS の 50 本と同じ。棚は 50 本のまま）。
  * 続く本は、2026-10-13 に写真の枚数を問わず足した本（店 ID の番号順。GOGUMI.・蕎亭う月・かき小屋匠ちゃんの 3 本も、新しい組み方で崩れないことを確かめて戻した）。
- * 表の末尾の 138 本（r526〜）は、2026-10-24 に足した本。店ページが無かった記事 187 本のうち店ページを新しく作った店から、検索に出す条件（lib/restaurantIndexable.ts）を満たす店だけを入れた（検索から消えるのを避けるため。条件に合わない店の記事は /feature/<記事 ID> のまま）。
+ * 表の末尾の 133 本（r526〜）は、2026-10-24 に足した本。店ページが無かった記事 187 本のうち店ページを新しく作った店から、検索に出す条件（lib/restaurantIndexable.ts）を満たす店だけを入れた（検索から消えるのを避けるため。条件に合わない店の記事は /feature/<記事 ID> のまま）。営業スプレッドシートで掲載NG・入口NG・TG外の 5 店（ベルエポック・ふじ・HotPot Chai・ごはん家さんCOCORU・そば処美やじま。automation/stores500/ng-articles.json）は店のページを作らず、表にも入れない（記事の URL は /feature/<記事 ID> のまま・転送しない・消さない）。
  *
  * 軽いファイル（lib/data・lib/articleStores を読まない。クライアントの部品から import される nav.ts・next.config.ts からも使う）。
  * 記事 ID → 店 ID の対応は、既存の対応表 ARTICLE_STORE_ID_BY_FEATURE（lib/articleStores.ts）の対象ぶんの写し。ID の完全一致だけで引く（店名・題の部分一致は使わない）。
@@ -262,7 +262,7 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "caféonitonカフェオニトン": "r523", // café oniton カフェ オニトン
   "鮨若丸": "r524", // 鮨若丸
   "イタリア料理エンメ": "r525", // イタリア料理 エンメ
-  // ── ここから 2026-10-24 に足した 138 本（記事 187 本のうち店ページを新しく作った r526〜r670 の 145 店から、検索に出す条件 passesStoreQualityGate（実写の写真・住所・営業時間。lib/restaurantIndexable.ts）を満たし、かつ表示禁止リスト（lib/imageBlocklist.ts）を通したあとも実写の写真が 1 枚以上残る店だけ。店 ID の番号順）──
+  // ── ここから 2026-10-24 に足した 133 本（記事 187 本のうち店ページを新しく作った r526〜r670 の 145 店から、検索に出す条件 passesStoreQualityGate（実写の写真・住所・営業時間。lib/restaurantIndexable.ts）を満たし、かつ表示禁止リスト（lib/imageBlocklist.ts）を通したあとも実写の写真が 1 枚以上残る店だけ。店 ID の番号順）──
   // 足さなかった 7 店（記事は /feature/<記事 ID> のまま）: r553・r557・r558（営業時間か実写の写真が無い）、r578・r599・r601・r602（写真がすべて表示禁止）。
   "フランス料理の総菜食堂パ・マル": "r526", // フランス料理の総菜食堂 パ・マル
   "和ダイニングしろべえ": "r527", // 和ダイニングしろべえ
@@ -295,10 +295,6 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "酒蔵たから屋": "r555", // 酒蔵 たから屋
   "大衆酒場げっとら": "r556", // 大衆酒場 げっとら
   "天ぷらわかやま立川本店": "r559", // 天ぷら わかやま 立川本店
-  "ごはん家さんCOCORU": "r560", // ごはん家さん COCORU
-  "そば処美やじま": "r561", // そば処 美やじま
-  "ベルエポック": "r562", // ベルエポック
-  "ふじ": "r563", // ふじ
   "お料理茶寮きぶん": "r564", // お料理茶寮 きぶん
   "麺場よしき": "r565", // 麺場よしき
   "まるよ茶屋可睡の杜": "r566", // まるよ茶屋 可睡の杜
@@ -360,7 +356,6 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "創作イタリア料理DENsumica": "r626", // 創作イタリア料理 DEN sumica
   "千代田饂飩": "r627", // 千代田饂飩
   "まいづる茶屋": "r628", // まいづる茶屋
-  "HotPotChai": "r629", // HotPot Chai
   "手打ち蕎麦切り蓼山亭りょうざんてい": "r630", // 手打ち蕎麦切り蓼山亭(りょうざんてい)
   "夕日レストラン": "r631", // 夕日レストラン
   "CafeRestaurantNectarDo'rネクタドール": "r632", // Cafe&Restaurant NectarDo'r ネクタドール

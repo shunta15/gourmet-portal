@@ -58,6 +58,10 @@ const featSrc = readFileSync(abs("lib/teleapo-features.ts"), "utf8");
 const articleIds = new Set([...featSrc.matchAll(/^\s*id:\s*"([^"]+)"\s*,/gm)].map((m) => nfc(m[1])));
 if (!articleIds.has(id)) die(2, `記事ID「${id}」が lib/teleapo-features.ts に無い`);
 
+// ---- 店のページを作らない記事（営業スプレッドシートで掲載NG・入口NG・TG外。automation/stores500/ng-articles.json）
+const ngEntry = JSON.parse(readFileSync(abs("automation/stores500/ng-articles.json"), "utf8")).find((e) => nfc(e.articleId) === id);
+if (ngEntry) die(2, `記事ID「${id}」は店のページを作らない記事（${ngEntry.reason}）`);
+
 // ---- Maps URL: cid があれば正準形に（map.json の既存形式 https://maps.google.com/?cid=NNN）
 const cid = (rawUrl.match(/[?&]cid=(\d+)/) || [])[1];
 const mapsUrl = cid ? `https://maps.google.com/?cid=${cid}` : rawUrl;

@@ -15,6 +15,9 @@
 //   C  どの店にも言える決まり文句・締めの定型・記事の案内文（「編集部イチオシ」「これ、地味に効く。」 など）
 //   D  行ったふり（来店したかのような体験・感想）
 //   E  裏付けの無い評価・人気（「支持されている」「評判」「人気」「親しまれている」「おすすめ」 など）
+//   Q  出どころを語る言い回し（「公式サイトによると」「〜と案内されている」「Googleマップの表示では」「〜とのこと」 など。2026-10-24 オーナー指示・spec §14-1）
+//   P  料金（円の表記・価格帯・予算・コース料金・「手頃」「コスパ」「無料」 など。2026-10-24・spec §14-1）
+//   W  使わない言葉（おすすめ・人気・〇選・No.1・その他・癒し・リフレッシュ・整える。「効く」は weak。2026-10-24・spec §14-1）
 //
 // 使い方:
 //   node scripts/check-article-sentences.mjs <記事ID>             検査。当たりがあれば exit 1
@@ -172,6 +175,42 @@ const E_FACT_CONTEXT = /(?:お勧め|おすすめ|お薦め|オススメ)(?:す�
 /** R2: 口コミ・レビューの中身を引く文（賞・選出の語があれば当てない） */
 const R2_RE = /口コミ|クチコミ|レビュー|書き込み/;
 
+/** Q: 出どころを語る言い回し（2026-10-24 オーナー指示「公式ページからの引用ですみたいなのも全部やめて」。spec §14-1）
+ *  事実は変えず言い切りにする。残すのは公式サイト等へのリンク・「情報の出どころ」・「公式サイトで確認を」のような行き先の案内・看板などの実際の文字・歴史の伝承の言い方 */
+const Q_STRONG = re([
+  '(?:公式|オフィシャル)(?:サイト|ページ|ホームページ|HP|SNS|Instagram|インスタグラム|インスタ|ブログ|案内|情報|発信|発表|紹介|説明|表示|記載)?[^。「」]{0,8}?(?:によると|によれば|では|には|でも|にも|上で|上では|に(?:は)?(?:書|記|載|掲|明記|示)|が(?:案内|紹介|明記|発表|謳)|で(?:は)?(?:案内|紹介|明記|謳|公開))',
+  '(?:Google|グーグル)(?:マップ|ビジネスプロフィール)?[^。「」]{0,6}?(?:によると|によれば|では|の表示|の情報|上の|上で|に(?:は)?(?:記|載|ある)|の営業時間による)',
+  '(?:と|という|との)(?:案内(?!がスムーズ)|情報(?!交換)|声)',
+  'と(?:紹介|案内|記載|明記|表記|報じ|伝え)(?:され|さ)れ?(?:て|る|ます)',
+  'と(?:書か|記さ)れ(?:て(?:いる|おり|い)|ます|る)',
+  '引用|掲載媒体|掲載先|情報源|によると(?!ころ)|によれば|とのこと',
+  '(?:地元|地域)(?:メディア|紙|テレビ)',
+  '媒体',
+]);
+
+/** P: 料金（2026-10-24。spec §14-1）。円の表記・価格帯・予算・コース料金・値段の評価語。営業時間・席・予約は書いてよい */
+const P_STRONG = re([
+  '[0-9０-９][0-9０-９,，.]*\\s*万?円',
+  '[一二三四五六七八九十百千万]+円',
+  '[¥￥]\\s*[0-9０-９]',
+  '予算|価格|料金|値段|値付け|金額|コース代|サービス料|税込|税抜|チャージ|お通し代',
+  '円(?:台|前後|ほど|程度|から|以上|以下)',
+  'ワンコイン|リーズナブル|お手頃|手頃|格安|お得|割安|コスパ|コストパフォーマンス|無料|安価',
+]);
+
+/** W: 使わない言葉（2026-10-24。spec §14-1）。「効く」系は料理の味の言い方（出汁が効く）と区別がつかないので weak */
+const W_STRONG = re([
+  'おすすめ|オススメ|お勧め|お薦め|イチオシ|一押し',
+  '人気',
+  '[0-9０-９]+選|No\\.?\\s*[1１]|ナンバー(?:ワン|1)',
+  'その他',
+  '癒し|癒や|癒さ|癒え|いやし|リフレッシュ|ヒーリング',
+  '整える|整え(?:て|た|られ|やす|ない)|整う|整っ',
+]);
+const W_WEAK = re([
+  '効く|効き(?!目)|効い(?:て|た)|効かせ|効かす|効果|効能',
+]);
+
 const TYPE_LABEL = {
   R: '他サイトの評価・口コミ',
   A: '分からなかったことを書く文',
@@ -179,6 +218,9 @@ const TYPE_LABEL = {
   C: '決まり文句・締めの定型・記事の案内文',
   D: '行ったふり',
   E: '裏付けの無い評価・人気',
+  Q: '出どころを語る言い回し',
+  P: '料金',
+  W: '使わない言葉',
 };
 
 // ------------------------------------------------------------------
@@ -202,6 +244,15 @@ export function classifySentence(sentence) {
     if (stripped !== s) return { type: 'R', word: '他サイトの点数・評価・件数', auto: true };
   }
   if (R2_RE.test(s) && !AWARD.test(s)) return { type: 'R', word: s.match(R2_RE)[0], auto: true };
+  // 2026-10-24: 出どころを語る言い回し(Q)・使わない言葉(W)・料金(P)は、A〜E より先に調べる（Q は言い切りに直す必要があるので機械では落とさない）
+  const qm = s.match(Q_STRONG);
+  if (qm) return { type: 'Q', word: qm[0], auto: false };
+  for (const [type, r] of [['W', W_STRONG], ['P', P_STRONG]]) {
+    const m = s.match(r);
+    if (m) return { type, word: m[0], auto: true };
+  }
+  const wk = s.match(W_WEAK);
+  if (wk) return { type: 'W', word: wk[0], auto: false };
   // strong を型の順に、見つからなければ weak を型の順に
   const strong = [['A', A_STRONG], ['B', B_STRONG], ['D', D_STRONG], ['C', C_STRONG], ['E', E_STRONG]];
   for (const [type, r] of strong) {
@@ -224,7 +275,9 @@ export function classifySentence(sentence) {
 
 const DEFAULT_FILE = fileURLToPath(new URL('../lib/teleapo-features.ts', import.meta.url));
 // 文章欄: 記事本体の lede / quote / closing / subtitle、視点の name（見出し）と desc
-const FIELD_RE = /^(\s*)(lede|quote|closing|subtitle|desc|name):(\s*)"((?:[^"\\]|\\.)*)"/gm;
+const FIELD_RE = /^(\s*)(lede|quote|closing|subtitle|desc|name|title|purpose|cuisine):(\s*)"((?:[^"\\]|\\.)*)"/gm;
+// 見どころの表（specs）の値: `{ k: "営業時間", v: "…" }`
+const SPEC_V_RE = /\bv:(\s*)"((?:[^"\\]|\\.)*)"/g;
 
 function articleBlocks(src) {
   const marks = [];
@@ -246,6 +299,11 @@ function fieldsOf(src, block) {
   while ((m = FIELD_RE.exec(body))) {
     const valueStart = block.start + m.index + m[0].length - m[4].length - 1; // 先頭の " の次
     out.push({ field: m[2], raw: m[4], valueStart, valueEnd: valueStart + m[4].length });
+  }
+  SPEC_V_RE.lastIndex = 0;
+  while ((m = SPEC_V_RE.exec(body))) {
+    const valueStart = block.start + m.index + m[0].length - m[2].length - 1;
+    out.push({ field: 'specs.v', raw: m[2], valueStart, valueEnd: valueStart + m[2].length });
   }
   return out;
 }
@@ -270,7 +328,7 @@ export function inspectArticle(src, id) {
     for (const h of hits.filter((x) => x.fieldStart === f.valueStart)) {
       let reason = null;
       if (!h.auto) reason = '語だけでは事実（メニュー名・実用の注意）と区別がつかないので、機械では落とさない（書き直しで対応）';
-      else if (f.field === 'name' || f.field === 'subtitle') reason = '見出し・サブタイトルは取ると欄ごと消えるので書き直しが必要';
+      else if (['name', 'subtitle', 'title', 'purpose', 'cuisine', 'specs.v'].includes(f.field)) reason = '見出し・サブタイトル・見どころの表の値は取ると欄や行が壊れるので書き直しが必要';
       else if (sentences.length === hitIdx.size) reason = 'この欄の文が全部当たっていて、取ると欄が空になる';
       else {
         // この文（と、続けて当たっている文）を取った後に最初に残る文
@@ -346,7 +404,7 @@ async function main() {
 
   if (flags.all) {
     const want = typeof flags.types === 'string' ? new Set(flags.types.split(',')) : null;
-    const total = { R: 0, A: 0, B: 0, C: 0, D: 0, E: 0 };
+    const total = { R: 0, A: 0, B: 0, C: 0, D: 0, E: 0, Q: 0, P: 0, W: 0 };
     let articlesHit = 0;
     const blocks = articleBlocks(src);
     const examples = [];
@@ -384,7 +442,7 @@ async function main() {
 
   if (flags.json) console.log(JSON.stringify(result));
   if (result.hits.length === 0) {
-    if (!flags.json) console.log('✅ 型 R/A/B/C/D/E に当たる文なし');
+    if (!flags.json) console.log('✅ 型 R/A/B/C/D/E/Q/P/W に当たる文なし');
     return 0;
   }
   return 1;

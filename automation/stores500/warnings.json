@@ -2027,37 +2027,6 @@
       "cuisine は GBPカテゴリ"
     ]
   },
-  "r560": {
-    "articleId": "ごはん家さんCOCORU",
-    "name": "ごはん家さん COCORU",
-    "warnings": [
-      "desc は lede から事実の文を選べず、事実から作った定型文",
-      "cuisine は GBPカテゴリ"
-    ]
-  },
-  "r561": {
-    "articleId": "そば処美やじま",
-    "name": "そば処 美やじま",
-    "warnings": [
-      "desc は lede から事実の文を選べず、事実から作った定型文",
-      "cuisine は GBPカテゴリ"
-    ]
-  },
-  "r562": {
-    "articleId": "ベルエポック",
-    "name": "ベルエポック",
-    "warnings": [
-      "desc は lede から事実の文を選べず、事実から作った定型文",
-      "cuisine は GBPカテゴリ"
-    ]
-  },
-  "r563": {
-    "articleId": "ふじ",
-    "name": "ふじ",
-    "warnings": [
-      "cuisine は GBPカテゴリ"
-    ]
-  },
   "r564": {
     "articleId": "お料理茶寮きぶん",
     "name": "お料理茶寮 きぶん",
@@ -2545,13 +2514,6 @@
     "warnings": [
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
-    ]
-  },
-  "r629": {
-    "articleId": "HotPotChai",
-    "name": "HotPot Chai",
-    "warnings": [
-      "desc は lede から事実の文を選べず、事実から作った定型文"
     ]
   },
   "r630": {
