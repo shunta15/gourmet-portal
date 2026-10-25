@@ -3,8 +3,8 @@
     "date": "2026-10-25",
     "startedAt": "2026-10-24T23:00:28.191Z",
     "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--from-row 80 --limit 1",
-    "updatedAt": "2026-10-25T00:19:19.146Z"
+    "args": "--from-row 80 --prepare-only",
+    "updatedAt": "2026-10-25T00:37:07.764Z"
   },
   "environment": null,
   "results": {
@@ -129,6 +129,967 @@
         "shop": "/restaurant/r672"
       },
       "finishedAt": "2026-10-25T00:19:19.124Z"
+    },
+    "tri-gourmet-82": {
+      "key": "tri-gourmet-82",
+      "row": 82,
+      "name": "伊酒家 VERDE",
+      "vertical": "グルメ",
+      "articleId": "伊酒家VERDE",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:20:42.736Z",
+      "seconds": {
+        "total": 46
+      },
+      "photos": {
+        "candidates": 27,
+        "maps": 10,
+        "official": 17,
+        "rejectedByMachine": 1
+      }
+    },
+    "tri-beauty-83": {
+      "key": "tri-beauty-83",
+      "row": 83,
+      "name": "脱毛×エステサロン Nefer",
+      "vertical": "ビューティー",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:21:28.443Z",
+      "seconds": {
+        "total": 52
+      },
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5
+      }
+    },
+    "tri-gourmet-84": {
+      "key": "tri-gourmet-84",
+      "row": 84,
+      "name": "宿カフェ Hale Liko",
+      "vertical": "グルメ",
+      "articleId": "宿カフェHaleLiko",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:22:20.242Z",
+      "seconds": {
+        "total": 36
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-85": {
+      "key": "tri-gourmet-85",
+      "row": 85,
+      "name": "むぎぞう",
+      "vertical": "グルメ",
+      "articleId": "むぎぞう",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:22:56.141Z",
+      "seconds": {
+        "total": 34
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-86": {
+      "key": "tri-gourmet-86",
+      "row": 86,
+      "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
+      "vertical": "グルメ",
+      "articleId": "GATEAUORANGE（ガトーオランジュ）",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:23:30.210Z",
+      "seconds": {
+        "total": 43
+      },
+      "photos": {
+        "candidates": 20,
+        "maps": 10,
+        "official": 10,
+        "rejectedByMachine": 8
+      }
+    },
+    "tri-gourmet-87": {
+      "key": "tri-gourmet-87",
+      "row": 87,
+      "name": "TiBURON Cafe",
+      "vertical": "グルメ",
+      "articleId": "TiBURONCAFE",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:24:13.543Z",
+      "seconds": {
+        "total": 37
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-pet-91": {
+      "key": "tri-pet-91",
+      "row": 91,
+      "name": "BARBER DOG PRECIOUS WAN",
+      "vertical": "ペット",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:24:50.696Z",
+      "seconds": {
+        "total": 32
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-94": {
+      "key": "tri-gourmet-94",
+      "row": 94,
+      "name": "居酒屋宝泉北区王子駅前店",
+      "vertical": "グルメ",
+      "articleId": "居酒屋宝泉北区王子駅前店",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:25:22.247Z",
+      "seconds": {
+        "total": 32
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-102": {
+      "key": "tri-gourmet-102",
+      "row": 102,
+      "name": "満天や",
+      "vertical": "グルメ",
+      "articleId": "満天や",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:25:54.120Z",
+      "seconds": {
+        "total": 31
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-104": {
+      "key": "tri-gourmet-104",
+      "row": 104,
+      "name": "Dining&Bar CURIOUS キュリアス",
+      "vertical": "グルメ",
+      "articleId": "DiningBarCURIOUSキュリアス",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:26:24.852Z",
+      "seconds": {
+        "total": 45
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 13
+      }
+    },
+    "tri-gourmet-105": {
+      "key": "tri-gourmet-105",
+      "row": 105,
+      "name": "鉄板居酒屋 縁 en",
+      "vertical": "グルメ",
+      "articleId": "鉄板居酒屋縁-en-",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:27:09.980Z",
+      "seconds": {
+        "total": 34
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-108": {
+      "key": "tri-gourmet-108",
+      "row": 108,
+      "name": "鉄板焼 輝",
+      "vertical": "グルメ",
+      "articleId": "鉄板焼輝",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:27:43.900Z",
+      "seconds": {
+        "total": 43
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-pet-109": {
+      "key": "tri-pet-109",
+      "row": 109,
+      "name": "ペットホテル ALOHA MIMITAN アロハミミタン",
+      "vertical": "ペット",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:28:26.942Z",
+      "seconds": {
+        "total": 46
+      },
+      "photos": {
+        "candidates": 24,
+        "maps": 10,
+        "official": 14,
+        "rejectedByMachine": 4
+      }
+    },
+    "tri-gourmet-110": {
+      "key": "tri-gourmet-110",
+      "row": 110,
+      "name": "Dining Bar marib",
+      "vertical": "グルメ",
+      "articleId": "DiningBarMarib四条烏丸",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-25T00:29:12.701Z",
+      "seconds": {
+        "total": 36
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-activity-112": {
+      "key": "tri-activity-112",
+      "row": 112,
+      "name": "遊漁船美羽",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:29:48.925Z",
+      "seconds": {
+        "total": 25
+      },
+      "reason": "Google マップを読めなかった: page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-113": {
+      "key": "tri-gourmet-113",
+      "row": 113,
+      "name": "cafe温",
+      "vertical": "グルメ",
+      "articleId": "cafe温−on−",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:13.989Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-114": {
+      "key": "tri-activity-114",
+      "row": 114,
+      "name": "AriHana Kyoto -Japanese traditional play experience in Kyoto",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:22.929Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-115": {
+      "key": "tri-stay-115",
+      "row": 115,
+      "name": "民泊 セカンドライフ",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:31.875Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-116": {
+      "key": "tri-stay-116",
+      "row": 116,
+      "name": "湯平温泉　旅館いづもや",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:40.376Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-118": {
+      "key": "tri-gourmet-118",
+      "row": 118,
+      "name": "ボードゲームカフェCARIVAN",
+      "vertical": "グルメ",
+      "articleId": "ボードゲームカフェCARIVAN",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:50.335Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-122": {
+      "key": "tri-stay-122",
+      "row": 122,
+      "name": "旬魚と地どりの宿 料理旅館井筒屋",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:30:59.543Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-124": {
+      "key": "tri-gourmet-124",
+      "row": 124,
+      "name": "ツバメ珈琲 -swallow coffee-",
+      "vertical": "グルメ",
+      "articleId": "ツバメ珈琲-swallowcoffee-",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:08.579Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-125": {
+      "key": "tri-gourmet-125",
+      "row": 125,
+      "name": "メイプル",
+      "vertical": "グルメ",
+      "articleId": "カナデアンコーヒーハウスメイプル",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:16.188Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-126": {
+      "key": "tri-gourmet-126",
+      "row": 126,
+      "name": "そば処 ひふみ",
+      "vertical": "グルメ",
+      "articleId": "そば処ひふみ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:25.473Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-127": {
+      "key": "tri-gourmet-127",
+      "row": 127,
+      "name": "ヒツジとビール",
+      "vertical": "グルメ",
+      "articleId": "HITSUJItoBEER（ヒツジとビール）",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:34.282Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-128": {
+      "key": "tri-gourmet-128",
+      "row": 128,
+      "name": "焼き鳥居酒屋 さつき",
+      "vertical": "グルメ",
+      "articleId": "焼き鳥居酒屋さつき",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:43.961Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-129": {
+      "key": "tri-gourmet-129",
+      "row": 129,
+      "name": "炭火串焼きとおばんざい鶏ぴん",
+      "vertical": "グルメ",
+      "articleId": "炭火串焼きとおばんざい鶏ぴん",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:50.867Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-131": {
+      "key": "tri-gourmet-131",
+      "row": 131,
+      "name": "日本料理 蓮 Ren (れん)",
+      "vertical": "グルメ",
+      "articleId": "日本料理蓮Ren(れん)",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:31:57.930Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-134": {
+      "key": "tri-gourmet-134",
+      "row": 134,
+      "name": "たこ焼き酒場 TARVO",
+      "vertical": "グルメ",
+      "articleId": "たこ焼き酒場TARVO",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:04.971Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-135": {
+      "key": "tri-stay-135",
+      "row": 135,
+      "name": "古民家宿&お食事処-庵木瓜 Iorimokkou",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:12.768Z",
+      "seconds": {
+        "total": 6
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-136": {
+      "key": "tri-gourmet-136",
+      "row": 136,
+      "name": "和食処つきやま",
+      "vertical": "グルメ",
+      "articleId": "和食処つきやま",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:19.075Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-137": {
+      "key": "tri-gourmet-137",
+      "row": 137,
+      "name": "キッチンカーKAMUI（カムイ）",
+      "vertical": "グルメ",
+      "articleId": "キッチンカーKAMUI（カムイ）",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:26.201Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-142": {
+      "key": "tri-activity-142",
+      "row": 142,
+      "name": "Blue Corn",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:35.584Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-146": {
+      "key": "tri-gourmet-146",
+      "row": 146,
+      "name": "BAR Lyric",
+      "vertical": "グルメ",
+      "articleId": "BARLyric",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:44.646Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-149": {
+      "key": "tri-stay-149",
+      "row": 149,
+      "name": "離れの宿 和楽",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:32:53.404Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-150": {
+      "key": "tri-gourmet-150",
+      "row": 150,
+      "name": "食パン本舗",
+      "vertical": "グルメ",
+      "articleId": "食パン本舗",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:01.487Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-151": {
+      "key": "tri-gourmet-151",
+      "row": 151,
+      "name": "腹ペコ酒場西荻ペッコリーノ",
+      "vertical": "グルメ",
+      "articleId": "西荻ペッコリーノ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:11.003Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-154": {
+      "key": "tri-gourmet-154",
+      "row": 154,
+      "name": "おもちびより",
+      "vertical": "グルメ",
+      "articleId": "おもちびより",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:19.871Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-sports-155": {
+      "key": "tri-sports-155",
+      "row": 155,
+      "name": "MAPLE LEAF HOCKEY SCHOOL",
+      "vertical": "スポーツ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:28.512Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-156": {
+      "key": "tri-activity-156",
+      "row": 156,
+      "name": "Rakuoli（ラクオリ）",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:36.571Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-158": {
+      "key": "tri-gourmet-158",
+      "row": 158,
+      "name": "くろしお弁当",
+      "vertical": "グルメ",
+      "articleId": "くろしお弁当",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:46.359Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-159": {
+      "key": "tri-gourmet-159",
+      "row": 159,
+      "name": "日常のパン、aqui",
+      "vertical": "グルメ",
+      "articleId": "aqui",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:33:55.909Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-160": {
+      "key": "tri-gourmet-160",
+      "row": 160,
+      "name": "FOGcoffee",
+      "vertical": "グルメ",
+      "articleId": "FOGcoffee",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:03.931Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-162": {
+      "key": "tri-gourmet-162",
+      "row": 162,
+      "name": "内灘市場",
+      "vertical": "グルメ",
+      "articleId": "炭火焼内灘市場",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:13.799Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-stay-163": {
+      "key": "tri-stay-163",
+      "row": 163,
+      "name": "渓流の宿 蔵之助",
+      "vertical": "ステイ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:20.611Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-164": {
+      "key": "tri-gourmet-164",
+      "row": 164,
+      "name": "我が家 おてちき屋",
+      "vertical": "グルメ",
+      "articleId": "我が家おてちき屋",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:28.920Z",
+      "seconds": {
+        "total": 6
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-167": {
+      "key": "tri-activity-167",
+      "row": 167,
+      "name": "ダイブハウス富戸",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:35.297Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-168": {
+      "key": "tri-gourmet-168",
+      "row": 168,
+      "name": "璃夢 -Rim-",
+      "vertical": "グルメ",
+      "articleId": "璃夢Rim",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:44.249Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-169": {
+      "key": "tri-activity-169",
+      "row": 169,
+      "name": "スキューバプロショップ　富戸",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:34:53.357Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-beauty-172": {
+      "key": "tri-beauty-172",
+      "row": 172,
+      "name": "整体院Derive",
+      "vertical": "ビューティー",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:00.398Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-173": {
+      "key": "tri-gourmet-173",
+      "row": 173,
+      "name": "餃子＆珈琲 おにCafe",
+      "vertical": "グルメ",
+      "articleId": "おにCafe",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:09.781Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-174": {
+      "key": "tri-gourmet-174",
+      "row": 174,
+      "name": "KiKi",
+      "vertical": "グルメ",
+      "articleId": "KiKi",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:19.082Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-activity-175": {
+      "key": "tri-activity-175",
+      "row": 175,
+      "name": "海の音色",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:28.318Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-176": {
+      "key": "tri-gourmet-176",
+      "row": 176,
+      "name": "えび福",
+      "vertical": "グルメ",
+      "articleId": "天ぷらえび福",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:36.987Z",
+      "seconds": {
+        "total": 6
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-178": {
+      "key": "tri-gourmet-178",
+      "row": 178,
+      "name": "ダモンデ",
+      "vertical": "グルメ",
+      "articleId": "ダモンデ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:43.134Z",
+      "seconds": {
+        "total": 10
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-180": {
+      "key": "tri-gourmet-180",
+      "row": 180,
+      "name": "焼肉なが井",
+      "vertical": "グルメ",
+      "articleId": "焼肉なが井",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:35:53.014Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-182": {
+      "key": "tri-gourmet-182",
+      "row": 182,
+      "name": "シャトー クワナ",
+      "vertical": "グルメ",
+      "articleId": "シャトークワナ",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:01.519Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-bodycare-188": {
+      "key": "tri-bodycare-188",
+      "row": 188,
+      "name": "BASE溝の口接骨院",
+      "vertical": "ボディケア",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:08.500Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-192": {
+      "key": "tri-gourmet-192",
+      "row": 192,
+      "name": "Bar NEWYORK MIDTOWN 44 STREET",
+      "vertical": "グルメ",
+      "articleId": "BarNEWYORKMIDTOWN44STREET",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:15.040Z",
+      "seconds": {
+        "total": 6
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-195": {
+      "key": "tri-gourmet-195",
+      "row": 195,
+      "name": "マル信 緑香園",
+      "vertical": "グルメ",
+      "articleId": "マル信緑香園",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:21.308Z",
+      "seconds": {
+        "total": 6
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-196": {
+      "key": "tri-gourmet-196",
+      "row": 196,
+      "name": "Bar DOPENESS",
+      "vertical": "グルメ",
+      "articleId": "BarDOPENESS",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:27.508Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-197": {
+      "key": "tri-gourmet-197",
+      "row": 197,
+      "name": "Bar & Dining Jammin",
+      "vertical": "グルメ",
+      "articleId": "BarDiningJammin",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:36.193Z",
+      "seconds": {
+        "total": 9
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-198": {
+      "key": "tri-gourmet-198",
+      "row": 198,
+      "name": "Boulangerie Reve想",
+      "vertical": "グルメ",
+      "articleId": "BoulangerieReve想",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:45.622Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-199": {
+      "key": "tri-gourmet-199",
+      "row": 199,
+      "name": "おうち酒場BoNono",
+      "vertical": "グルメ",
+      "articleId": "おうち酒場BoNono",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:36:52.586Z",
+      "seconds": {
+        "total": 8
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+    },
+    "tri-gourmet-200": {
+      "key": "tri-gourmet-200",
+      "row": 200,
+      "name": "Beach bar Calypso",
+      "vertical": "グルメ",
+      "articleId": "BeachbarCalypso",
+      "status": "失敗",
+      "stage": "maps",
+      "startedAt": "2026-10-25T00:37:00.611Z",
+      "seconds": {
+        "total": 7
+      },
+      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
     }
   }
 }

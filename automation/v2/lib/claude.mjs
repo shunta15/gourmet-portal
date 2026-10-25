@@ -11,11 +11,22 @@
  *  - 完了はログの「COMPLETED」でなく、出力ファイルの実在と中身で判定する(呼び出し側)
  */
 import { spawn } from "node:child_process";
-import { mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import os from "node:os";
 import path from "node:path";
 
 const CLEAN_CWD = path.join(os.tmpdir(), "machinowa-v2-claude-cwd");
+
+// API のクレジットで回すとき: オーナーが automation/secrets/anthropic-api-key に API キーを置く(git には入らない・画面に出さない)。
+// ファイルがあれば claude -p にだけ ANTHROPIC_API_KEY として渡す。無ければ端末の claude のログインを使う。
+const KEY_FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), "../../secrets/anthropic-api-key");
+export const usingApiKey = () => existsSync(KEY_FILE);
+function childEnv() {
+  if (!existsSync(KEY_FILE)) return process.env;
+  const key = readFileSync(KEY_FILE, "utf8").trim();
+  return key ? { ...process.env, ANTHROPIC_API_KEY: key } : process.env;
+}
 
 export const AUTH_HELP =
   "claude が認証切れです。端末で `claude setup-token`(ブラウザで承認)を実行し、表示された長期トークンを " +
@@ -38,7 +49,7 @@ export function runClaude({ prompt, addDirs = [], model = "sonnet", tools = "Rea
   for (const d of addDirs) args.push("--add-dir", d);
   return new Promise((resolve) => {
     const t0 = Date.now();
-    const child = spawn(bin, args, { cwd: CLEAN_CWD, env: process.env, stdio: ["pipe", "pipe", "pipe"] });
+    const child = spawn(bin, args, { cwd: CLEAN_CWD, env: childEnv(), stdio: ["pipe", "pipe", "pipe"] });
     let out = "";
     let err = "";
     let timedOut = false;
