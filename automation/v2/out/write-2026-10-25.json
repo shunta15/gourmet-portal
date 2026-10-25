@@ -203,7 +203,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/beauty/shop/be0106",
-        "article": "/beauty/article/be0106"
+        "article": null
       },
       "finishedAt": "2026-10-25T01:15:46.911Z"
     },
@@ -333,7 +333,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/pet/shop/pe0021",
-        "article": "/pet/article/pe0021"
+        "article": null
       },
       "finishedAt": "2026-10-25T01:16:37.694Z"
     },
@@ -547,7 +547,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/pet/shop/pe0022",
-        "article": "/pet/article/pe0022"
+        "article": null
       },
       "finishedAt": "2026-10-25T01:17:19.845Z"
     },
@@ -1904,7 +1904,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/bodycare/shop/bo0114",
-        "article": "/bodycare/article/bo0114"
+        "article": null
       },
       "finishedAt": "2026-10-25T01:22:10.662Z"
     },

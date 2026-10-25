@@ -219,7 +219,8 @@ export async function integrateVertical({ store, result, manifest, work, verifie
     featureSkipped: empty.featureSkipped,
     urls: {
       shop: `/${vEn}/shop/${place.id}`,
-      article: `/${vEn}/article/${place.id}`,
+      // 店の特集記事のページがあるのはアクティビティ・スポーツ・ステイ・くらしだけ(ビューティー・ボディケア・ペットは店のページ 1 枚)
+      article: hasFeature && ["activity", "sports", "stay", "life"].includes(vEn) ? `/${vEn}/article/${place.id}` : null,
     },
   };
 }
