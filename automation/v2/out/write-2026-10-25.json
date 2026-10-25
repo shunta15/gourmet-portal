@@ -3,8 +3,8 @@
     "date": "2026-10-25",
     "startedAt": "2026-10-24T23:00:28.191Z",
     "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--only-row 140 --skip-claude --reintegrate",
-    "updatedAt": "2026-10-24T23:10:46.387Z"
+    "args": "--from-row 80 --limit 1",
+    "updatedAt": "2026-10-25T00:19:19.146Z"
   },
   "environment": null,
   "results": {
@@ -83,6 +83,52 @@
         "article": "/stay/article/st0009"
       },
       "finishedAt": "2026-10-24T23:10:46.386Z"
+    },
+    "tri-gourmet-80": {
+      "key": "tri-gourmet-80",
+      "row": 80,
+      "name": "洋菓子素材工房 ぴゅあハウス",
+      "vertical": "グルメ",
+      "articleId": "洋菓子素材工房ぴゅあハウス",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-25T00:13:00.523Z",
+      "seconds": {
+        "claude": 339,
+        "total": 379
+      },
+      "photos": {
+        "candidates": 17,
+        "maps": 10,
+        "official": 7,
+        "rejectedByMachine": 11,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "claude": {
+        "ok": true,
+        "costUsd": 1.9126744000000002,
+        "turns": 27,
+        "tail": "COMPLETED tri-gourmet-80"
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 24,
+          "verified": 24
+        }
+      },
+      "storeId": "r672",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/洋菓子素材工房ぴゅあハウス",
+        "shop": "/restaurant/r672"
+      },
+      "finishedAt": "2026-10-25T00:19:19.124Z"
     }
   }
 }

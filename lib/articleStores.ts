@@ -17209,6 +17209,57 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "季節料理はせ部"
+  },
+  {
+    "id": "r672",
+    "name": "洋菓子素材工房 ぴゅあハウス",
+    "cuisine": "ケーキ屋",
+    "area": "広島県・呉市",
+    "region": "hiroshima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/hero.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point1.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point3.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point4.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/hero.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point1.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point3.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point4.jpg",
+      "/restaurants/teleapo-洋菓子素材工房ぴゅあハウス/point5.jpg"
+    ],
+    "desc": "広島県呉市のケーキ屋。",
+    "address": "広島県呉市広塩焼2丁目1-17",
+    "hours": "金〜日 10:00–18:30",
+    "closed": "月曜・火曜・水曜・木曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0823-55-4546",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5211910997482803546"
+    },
+    "body": [
+      "洋菓子素材工房 ぴゅあハウスは、広島県呉市にあるお店です。業態は「ケーキ屋」、所在地は広島県呉市広塩焼2丁目1-17です。マチノワ編集部の特集記事では、「生の林檎をじっくり煮込んだアップルパイ」・「殺虫剤・除草剤を使わない約800坪の自家農園」などを取り上げています。",
+      "営業時間は金〜日 10:00–18:30、定休日は月曜・火曜・水曜・木曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "生の林檎をじっくり煮込んだアップルパイ",
+      "殺虫剤・除草剤を使わない約800坪の自家農園",
+      "八朔パイや山栗のモンブランなど季節の品",
+      "築約80年の古民家を改装した手作りの工房",
+      "金土日のみの営業、商品は通信販売でも購入可能"
+    ],
+    "tags": [
+      "ケーキ屋",
+      "呉市",
+      "ランチ"
+    ],
+    "featureId": "洋菓子素材工房ぴゅあハウス"
   }
 ];
 
@@ -17581,7 +17632,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r668": "翠陽",
   "r669": "perte",
   "r670": "カフェマイクアンドシャーリー",
-  "r671": "季節料理はせ部"
+  "r671": "季節料理はせ部",
+  "r672": "洋菓子素材工房ぴゅあハウス"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -17953,5 +18005,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "翠陽": "r668",
   "perte": "r669",
   "カフェマイクアンドシャーリー": "r670",
-  "季節料理はせ部": "r671"
+  "季節料理はせ部": "r671",
+  "洋菓子素材工房ぴゅあハウス": "r672"
 };

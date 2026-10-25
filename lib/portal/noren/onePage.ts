@@ -399,6 +399,7 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "カフェマイクアンドシャーリー": "r670", // カフェ マイク アンド シャーリー
   // ── 2026-10-25 に記事の自動作成(automation/v2/write.mjs)で足した本。店ページを検索に出す条件(実写の写真・住所・営業時間)を満たす店だけ ──
   "季節料理はせ部": "r671", // 季節料理 はせ部
+  "洋菓子素材工房ぴゅあハウス": "r672", // 洋菓子素材工房 ぴゅあハウス
 };
 
 const NFC = (s: string) => s.normalize("NFC");
