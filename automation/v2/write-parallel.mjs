@@ -31,6 +31,8 @@ if (pf && pf.ok === false) {
 // --watch: 取得(--prepare-only)が終わるまで、新しくできた prompt.md を拾い続ける。
 // 取得が終わったら WORK_DIR/.prepare-done を置く(下の run-all.sh が置く)。
 const watch = argv.includes("--watch");
+// --research: 公式サイトが無く材料が足りなかった店の書き直し用(オーナー 2026-10-25「もっと検索かけて現状でわかる情報で作成してみて」)
+const research = argv.includes("--research");
 const taken = new Set();
 const pending = () =>
   readdirSync(WORK_DIR)
@@ -39,6 +41,14 @@ const pending = () =>
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 console.log(`[${t()}] 認証: ${usingApiKey() ? "API キー(Console のクレジット)" : "端末の claude のログイン"}・予算 ${budget === Infinity ? "なし" : "$" + budget}`);
 console.log(`[${t()}] 開始(同時 ${conc}${watch ? "・取得の完了を待ちながら" : ""})`);
+
+const RESEARCH = `- この店は公式サイトが無く、材料のフォルダだけでは事実が足りなかった店です。今回は WebSearch と WebFetch で、今ネットで分かる事実を集めて書きます(下の「食べログ・ホットペッパー…は使わない」の決まりは、この節の決まりに置き換えます)。
+- 検索は必ず「店名 市区町村」か「電話番号」で行います。ページの住所か電話番号が store.json と一致したページだけを使います(どちらも無いページ・違うページは同名の別の店として無視)。
+- 使ってよい出どころ: 店の公式の SNS・ブログの公開ページ、自治体・観光協会・商店街・地域の情報サイト・新聞の記事、グルメ・予約サイトの店の基本情報(ジャンル・メニューの名前・席・設備・営業の形)。
+- 使ってはいけないもの: 口コミ・評価・点数・ランキング・料金・価格、ほかのサイトの文の書き写し(事実だけ拾い、文は自分で書く)。
+- facts の source には、実際に開いたページの URL を入れ、quote にはそのページの文字をそのまま入れます(あとで機械がそのページを開いて照合します)。
+- WebSearch と WebFetch は合わせて 8 回までにします。事実が少なければ、そのぶん短い記事にします(POINT などの数は事実がある分だけ。足りない所は水増しせず空にする)。それでも書ける事実が店名・住所・営業時間しか無いときだけ、失敗の出口で終えます。
+`;
 
 let ok = 0;
 let ng = 0;
@@ -61,8 +71,7 @@ async function worker() {
     const sheet = path.join(work, "sheet.jpg");
     const saving = existsSync(sheet)
       ? `# 🚨 使う量を減らす決まり(下のどの決まりより優先)
-- 道具は Read と Write だけです。Web 検索・Web の取得はできません。材料のフォルダのファイルだけで書きます。
-- 写真は ${sheet} (候補をすべて番号つきで並べた一覧画像)を 1 回だけ Read して判断します。個別の cand/*.jpg は開きません。一覧で見分けられない写真は使いません。
+${research ? RESEARCH : "- 道具は Read と Write だけです。Web 検索・Web の取得はできません。材料のフォルダのファイルだけで書きます。\n"}- 写真は ${sheet} (候補をすべて番号つきで並べた一覧画像)を 1 回だけ Read して判断します。個別の cand/*.jpg は開きません。一覧で見分けられない写真は使いません。
 - 材料のファイルは、1 回の手番でまとめて(同時に)Read します。同じファイルを読み直しません。machinowa-article-spec.md など、材料のフォルダの外のファイルは読みません(必要な決まりはこの指示文にそろっています)。
 - 結果の JSON を書いたら、読み直しや確認はせず、すぐ「COMPLETED」で終えます。
 
@@ -70,7 +79,7 @@ async function worker() {
       : "";
     const prompt = saving + readFileSync(path.join(work, "prompt.md"), "utf8");
     console.log(`[${t()}] ▶ ${key}`);
-    const c = await runClaude({ prompt, tools: "Read,Write", addDirs: [work, abs("agent-teams/decisions")] });
+    const c = await runClaude({ prompt, tools: research ? "Read,Write,WebSearch,WebFetch" : "Read,Write", addDirs: [work, abs("agent-teams/decisions")] });
     spent += c.costUsd || 0;
     writeFileSync(path.join(work, "claude-1.log"), `${c.text}\n\n--- stderr ---\n${c.stderr}\n`);
     const done = existsSync(path.join(work, "result.json"));
